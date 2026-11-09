@@ -1770,6 +1770,28 @@
         }
       ],
       "note": "In 1842–1845 the separate polygon here (Nuevo México) was a department of the Centralist Republic and is shown as part of it."
+    },
+    "Maurya Empire": {
+      "crop": [
+        {
+          "from": -330,
+          "to": -180,
+          "box": [
+            55,
+            13.8,
+            100,
+            40
+          ]
+        }
+      ],
+      "note": "The data's polygon reaches the far south, but Ashoka's own Rock Edicts II and XIII name the Cholas, Pandyas, Satiyaputras and Keralaputras as peoples beyond his frontier; the southernmost Ashokan inscriptions (Maski, Brahmagiri, Siddapur) lie around 14–15°N. The empire is drawn north of about 13.8°N.",
+      "sources": [
+        {
+          "title": "Wikipedia: Edicts of Ashoka",
+          "url": "https://en.wikipedia.org/wiki/Edicts_of_Ashoka"
+        }
+      ],
+      "log": "Sangam reconstruction review"
     }
   },
   "base": {

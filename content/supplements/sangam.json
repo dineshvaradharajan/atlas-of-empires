@@ -1,0 +1,2017 @@
+{
+ "id": "sangam-tamilakam",
+ "title": "Tamilakam in the Sangam age",
+ "from": -300,
+ "to": 300,
+ "replaces": [
+  "Early Cholas",
+  "Early Pandyas",
+  "Early Cheras"
+ ],
+ "summary": "Sangam poetry (the Purananuru, Akananuru, Ten Idylls and Patirruppattu) describes a Tamil country running from the Venkatam hills to Cape Kumari. It was shared by three 'crowned kings' and a ring of Velir chiefs in the hills between them. The Cholas held the Kaveri delta, the Pandyas the Vaigai and Tamirabarani basins, and the Cheras the Malabar coast and later Kongu. Ashoka's edicts, the Hathigumpha inscription, the Periplus, Pliny, Ptolemy, Tamil-Brahmi inscriptions and digs at Keezhadi, Kodumanal, Arikamedu and Pattanam confirm the kingdoms, capitals and ports. No source draws a frontier, though: these borders are inferred from where named places, rivers and hills cluster, and they are approximate. The changes over time follow Nilakanta Sastri's dating, which puts most named kings in c. 100–250 CE. Other scholars place them a century or more earlier.",
+ "regions": [
+  {
+   "name": "Chola kingdom (Chola Nadu)",
+   "key": "Early Cholas",
+   "kind": "kingdom",
+   "from": -300,
+   "to": 300,
+   "rulers": [
+    {
+     "name": "Ilanjetcenni",
+     "when": "father of Karikala; date unknown"
+    },
+    {
+     "name": "Karikal Valavan (Karikala)",
+     "when": "c. 1st–2nd century CE (disputed; Sastri c. 190 CE)"
+    },
+    {
+     "name": "Killivalavan",
+     "when": "after Karikala; attacked Madurai and Vanji (Kanakasabhai); date unknown"
+    }
+   ],
+   "capital": "Uraiyur (Ptolemy's 'Orthoura'); port and later seat Kaveripattinam (Puhar)",
+   "ports": [
+    "Kaveripattinam (Puhar; Ptolemy's Khaberis, probably the Periplus' Camara)"
+   ],
+   "attested": "Ashoka RE II and XIII ('Cholas'); Pattinappalai and Porunararruppadai (Karikala's battles of Venni and Vahaipparandalai); Purananuru; Ptolemy",
+   "note": "The core of the kingdom is the Kaveri delta and Uraiyur. The western edge near Kulithalai, where Kongu begins, and the northern edge on the Vellar river are conventions taken from later Chola geography. The southern frontier with the Pudukkottai chiefs is not described anywhere. Karikala's victories gave the Cholas leadership over the other kings, but the poems do not show any permanent annexation beyond the delta.",
+   "coords": [
+    [
+     78.3,
+     10.8
+    ],
+    [
+     78.3,
+     11.05
+    ],
+    [
+     78.22,
+     11.15
+    ],
+    [
+     78.48,
+     11.12
+    ],
+    [
+     78.52,
+     11.4
+    ],
+    [
+     78.85,
+     11.5
+    ],
+    [
+     79.4,
+     11.5
+    ],
+    [
+     79.76,
+     11.5
+    ],
+    [
+     80.15,
+     11.5
+    ],
+    [
+     80.2,
+     10.9
+    ],
+    [
+     80.05,
+     10.2
+    ],
+    [
+     79.35,
+     10.3
+    ],
+    [
+     79.0,
+     10.45
+    ],
+    [
+     78.75,
+     10.72
+    ],
+    [
+     78.3,
+     10.8
+    ]
+   ]
+  },
+  {
+   "name": "Aruva Nadu (lower Pennai valley)",
+   "key": "Tondai Nadu",
+   "kind": "region",
+   "from": -300,
+   "to": 190,
+   "rulers": [
+    {
+     "name": "Aruvalar chiefs (unnamed)",
+     "when": "before Karikala"
+    }
+   ],
+   "capital": "unknown",
+   "ports": [
+    "Arikamedu (Poduke of the Periplus and Ptolemy, probably)"
+   ],
+   "attested": "Pattinappalai (the Aruvalar); Ptolemy's 'Aruvarnoi' (as read by Kanakasabhai); Arikamedu excavations (Wheeler 1945; Begley 1989–92)",
+   "note": "Sastri places the Aruvalar's country in the lower Pennai valley, north of the Kaveri delta. Kanakasabhai uses Aruva Nadu more widely, for the whole country around Kanchi, so this region is grouped with Tondai Nadu. Its southern edge on the Vellar and its northern edge near Marakkanam are approximate.",
+   "coords": [
+    [
+     79.4,
+     11.5
+    ],
+    [
+     79.425,
+     11.725
+    ],
+    [
+     79.45,
+     11.95
+    ],
+    [
+     79.55,
+     12.2
+    ],
+    [
+     79.75,
+     12.225
+    ],
+    [
+     79.95,
+     12.25
+    ],
+    [
+     80.25,
+     12.25
+    ],
+    [
+     80.225,
+     12.0625
+    ],
+    [
+     80.2,
+     11.875
+    ],
+    [
+     80.15,
+     11.5
+    ],
+    [
+     79.955,
+     11.5
+    ],
+    [
+     79.76,
+     11.5
+    ],
+    [
+     79.4,
+     11.5
+    ]
+   ]
+  },
+  {
+   "name": "Aruva Nadu under Chola overlordship",
+   "key": "Early Cholas",
+   "kind": "region",
+   "from": 190,
+   "to": 300,
+   "rulers": [
+    {
+     "name": "Karikal Valavan (overlord)",
+     "when": "c. 190 CE on Sastri's chronology (disputed)"
+    }
+   ],
+   "capital": "unknown",
+   "ports": [
+    "Arikamedu (Poduke)"
+   ],
+   "attested": "Pattinappalai: 'the ancient Aruvalar carried out his behests' (as summarised by Sastri)",
+   "note": "The poem records the Aruvalar submitting to Karikala, not being annexed. The change is dated to c. 190 CE only because that is Sastri's date for Karikala; other scholars place Karikala anywhere from the 1st century BCE to the 2nd century CE.",
+   "coords": [
+    [
+     79.4,
+     11.5
+    ],
+    [
+     79.425,
+     11.725
+    ],
+    [
+     79.45,
+     11.95
+    ],
+    [
+     79.55,
+     12.2
+    ],
+    [
+     79.75,
+     12.225
+    ],
+    [
+     79.95,
+     12.25
+    ],
+    [
+     80.25,
+     12.25
+    ],
+    [
+     80.225,
+     12.0625
+    ],
+    [
+     80.2,
+     11.875
+    ],
+    [
+     80.15,
+     11.5
+    ],
+    [
+     79.955,
+     11.5
+    ],
+    [
+     79.76,
+     11.5
+    ],
+    [
+     79.4,
+     11.5
+    ]
+   ]
+  },
+  {
+   "name": "Tondai Nadu (Kanchi and the Tiraiyar)",
+   "key": "Tondai Nadu",
+   "kind": "chiefdom",
+   "from": -300,
+   "to": 282,
+   "rulers": [
+    {
+     "name": "Tondaiman Ilandiraiyan of the Tiraiyar line",
+     "when": "contemporary of Karikala (Sastri)"
+    }
+   ],
+   "capital": "Kanchi (Kachchi)",
+   "ports": [
+    "Sopatma of the Periplus (location uncertain; Kanakasabhai's Eyil-pattinam)"
+   ],
+   "attested": "Perumbanarruppadai (on Ilandiraiyan); Tolkappiyam preface and Akananuru (Venkatam as the northern limit, beyond it the Vadugar); Ptolemy's Malanga (Kanchi, per Kanakasabhai)",
+   "note": "The northern line follows the Venkatam (Tirupati) hills, with Pulicat on the coast. These are the limits given by the Tolkappiyam preface, which is a later addition to the text, and by medieval commentators. Sastri finds no sign that Ilandiraiyan was subject to the Cholas. The claim that Karikala settled Tondai rests on a medieval document. The Pallavas held Kanchi by the late 3rd century.",
+   "coords": [
+    [
+     79.95,
+     12.25
+    ],
+    [
+     79.55,
+     12.2
+    ],
+    [
+     79.45,
+     11.95
+    ],
+    [
+     79.25,
+     12.12
+    ],
+    [
+     79.3,
+     12.4
+    ],
+    [
+     78.95,
+     12.65
+    ],
+    [
+     78.55,
+     12.62
+    ],
+    [
+     78.55,
+     12.8
+    ],
+    [
+     78.65,
+     13.15
+    ],
+    [
+     79.0,
+     13.55
+    ],
+    [
+     79.45,
+     13.75
+    ],
+    [
+     80.2,
+     13.62
+    ],
+    [
+     80.4,
+     13.6
+    ],
+    [
+     80.45,
+     13.0
+    ],
+    [
+     80.25,
+     12.25
+    ],
+    [
+     79.95,
+     12.25
+    ]
+   ]
+  },
+  {
+   "name": "Malaiyaman Nadu (Kari of Kovalur)",
+   "key": "Velir chiefdoms",
+   "kind": "chiefdom",
+   "from": -300,
+   "to": 300,
+   "rulers": [
+    {
+     "name": "Malaiyaman Tirumudi Kari",
+     "when": "contemporary of Kapilar and Pari"
+    },
+    {
+     "name": "Kannan, son of Kari",
+     "when": "later a minister of the Cholas (Kanakasabhai)"
+    }
+   ],
+   "capital": "Kovalur (Tirukkoyilur) on the Pennai; hill fort of Mullur",
+   "ports": [],
+   "attested": "Purananuru (Kapilar's songs on Kari); Akananuru 208 (Kari kills Ori); Jambai Tamil-Brahmi inscription of Adiyaman Anji, near Tirukkoyilur (1st century CE)",
+   "note": "This region covers the middle Pennai valley between the Chola delta and Tondai Nadu. Kanakasabhai treats the Malaiyaman as a Chola vassal: when Kari took the crown, the Cholas invaded. Adiyaman also stormed Kovalur, and his inscription at Jambai shows how much the chiefs' territories overlapped.",
+   "coords": [
+    [
+     78.85,
+     11.5
+    ],
+    [
+     78.825,
+     11.675
+    ],
+    [
+     78.8,
+     11.85
+    ],
+    [
+     78.85,
+     12.05
+    ],
+    [
+     79.05,
+     12.085
+    ],
+    [
+     79.25,
+     12.12
+    ],
+    [
+     79.45,
+     11.95
+    ],
+    [
+     79.425,
+     11.725
+    ],
+    [
+     79.4,
+     11.5
+    ],
+    [
+     79.2625,
+     11.5
+    ],
+    [
+     79.125,
+     11.5
+    ],
+    [
+     78.9875,
+     11.5
+    ],
+    [
+     78.85,
+     11.5
+    ]
+   ]
+  },
+  {
+   "name": "Nannan of Chenkanma (Cheyyar valley)",
+   "key": "Velir chiefdoms",
+   "kind": "chiefdom",
+   "from": -300,
+   "to": 300,
+   "rulers": [
+    {
+     "name": "Nannan, son of Nannan",
+     "when": "patron of the Malaipadukadam (c. 2nd–3rd century CE)"
+    }
+   ],
+   "capital": "Chenkanma (Chengam), in the valley of the Cheyyar",
+   "ports": [],
+   "attested": "Malaipadukadam of Perunkausikanar (Kanakasabhai's reading)",
+   "note": "This is a different chief from Nannan of Ezhimalai. Kanakasabhai places him in the Chengam valley of the Cheyyar. Others put the Malaipadukadam's Nannan in Tondai Nadu, which is the same general area. The boundary is a rough box around the Javadi hills and the Chengam pass.",
+   "coords": [
+    [
+     78.55,
+     12.0
+    ],
+    [
+     78.55,
+     12.31
+    ],
+    [
+     78.55,
+     12.465
+    ],
+    [
+     78.55,
+     12.62
+    ],
+    [
+     78.75,
+     12.635
+    ],
+    [
+     78.95,
+     12.65
+    ],
+    [
+     79.125,
+     12.525
+    ],
+    [
+     79.3,
+     12.4
+    ],
+    [
+     79.25,
+     12.12
+    ],
+    [
+     79.05,
+     12.085
+    ],
+    [
+     78.85,
+     12.05
+    ],
+    [
+     78.8,
+     11.85
+    ],
+    [
+     78.55,
+     12.0
+    ]
+   ]
+  },
+  {
+   "name": "Adiyaman chiefdom (Tagadur)",
+   "key": "Velir chiefdoms",
+   "kind": "chiefdom",
+   "from": -300,
+   "to": 190,
+   "rulers": [
+    {
+     "name": "Adiyaman Neduman Anji",
+     "when": "1st century CE by the Jambai inscription; c. 190 CE on Sastri's chronology"
+    },
+    {
+     "name": "Pokuttelini, son of Anji",
+     "when": "next generation"
+    }
+   ],
+   "capital": "Tagadur (Dharmapuri)",
+   "ports": [],
+   "attested": "Ashoka RE II 'Satiyaputa' (equated with the Adiyaman by Burrow and Sastri); Jambai inscription 'Satiyaputo Atiyan Neduman Anji'; Purananuru (Auvaiyar's songs on Anji)",
+   "note": "The heartland is the Dharmapuri plateau, between the Kaveri gorge and the Javadi hills. The Jambai inscription gives Anji the title 'Satiyaputa', which strongly supports identifying Ashoka's Satiyaputras with the Adiyaman line. Some still doubt the inscription; R. Nagaswamy defended it.",
+   "coords": [
+    [
+     78.55,
+     12.0
+    ],
+    [
+     78.325,
+     11.94
+    ],
+    [
+     78.1,
+     11.88
+    ],
+    [
+     77.925,
+     11.965
+    ],
+    [
+     77.75,
+     12.05
+    ],
+    [
+     77.775,
+     12.25
+    ],
+    [
+     77.8,
+     12.45
+    ],
+    [
+     78.0,
+     12.55
+    ],
+    [
+     78.2,
+     12.65
+    ],
+    [
+     78.375,
+     12.635
+    ],
+    [
+     78.55,
+     12.62
+    ],
+    [
+     78.55,
+     12.31
+    ],
+    [
+     78.55,
+     12.0
+    ]
+   ]
+  },
+  {
+   "name": "Tagadur under Chera suzerainty",
+   "key": "Early Cheras",
+   "kind": "chiefdom",
+   "from": 190,
+   "to": 300,
+   "rulers": [
+    {
+     "name": "Perunjeral Irumporai (overlord)",
+     "when": "c. 190 CE (Sastri)"
+    }
+   ],
+   "capital": "Tagadur (Dharmapuri)",
+   "ports": [],
+   "attested": "Patirruppattu (Arisil Kilar's decad on Perunjeral Irumporai, who took Tagadur); the lost Tagadur Yattirai",
+   "note": "After Tagadur fell, the Adiyaman acknowledged Chera overlordship and died fighting Nannan at Pali on the Cheras' behalf (Sastri). The date of the change depends on Sastri's chronology, and the inscriptions may point earlier.",
+   "coords": [
+    [
+     78.55,
+     12.0
+    ],
+    [
+     78.325,
+     11.94
+    ],
+    [
+     78.1,
+     11.88
+    ],
+    [
+     77.925,
+     11.965
+    ],
+    [
+     77.75,
+     12.05
+    ],
+    [
+     77.775,
+     12.25
+    ],
+    [
+     77.8,
+     12.45
+    ],
+    [
+     78.0,
+     12.55
+    ],
+    [
+     78.2,
+     12.65
+    ],
+    [
+     78.375,
+     12.635
+    ],
+    [
+     78.55,
+     12.62
+    ],
+    [
+     78.55,
+     12.31
+    ],
+    [
+     78.55,
+     12.0
+    ]
+   ]
+  },
+  {
+   "name": "Kongu Nadu (Kosar and local chiefs)",
+   "key": "Kongu Nadu",
+   "kind": "region",
+   "from": -300,
+   "to": 150,
+   "rulers": [
+    {
+     "name": "Kosar clans and local chiefs (unnamed)",
+     "when": "early Sangam period"
+    }
+   ],
+   "capital": "Kodumanal (industrial centre, not a known capital)",
+   "ports": [],
+   "attested": "Sangam poems on the Kosar of Kongu (Sastri); Kodumanal excavations (bead-making and iron working, c. 5th–1st century BCE); Roman coin finds around Karur and Coimbatore",
+   "note": "Kongu is the upper Kaveri, Bhavani, Noyyal and Amaravati country, roughly the Salem and Coimbatore districts. It lies between the Nilgiris, the Palghat gap and the Kolli hills. No early dynasty is attested here. The Kosar, once thought to be Ashoka's Satiyaputras, are linked to Kongu in the poems.",
+   "coords": [
+    [
+     76.05,
+     11.8
+    ],
+    [
+     76.6,
+     11.65
+    ],
+    [
+     77.2,
+     11.75
+    ],
+    [
+     77.6,
+     11.95
+    ],
+    [
+     77.75,
+     12.05
+    ],
+    [
+     78.1,
+     11.88
+    ],
+    [
+     78.55,
+     12.0
+    ],
+    [
+     78.8,
+     11.85
+    ],
+    [
+     78.85,
+     11.5
+    ],
+    [
+     78.52,
+     11.4
+    ],
+    [
+     78.28,
+     11.48
+    ],
+    [
+     78.22,
+     11.15
+    ],
+    [
+     78.3,
+     11.05
+    ],
+    [
+     78.3,
+     10.8
+    ],
+    [
+     78.1,
+     10.62
+    ],
+    [
+     77.7,
+     10.58
+    ],
+    [
+     77.3,
+     10.6
+    ],
+    [
+     77.05,
+     10.35
+    ],
+    [
+     76.9,
+     10.55
+    ],
+    [
+     76.85,
+     10.85
+    ],
+    [
+     76.65,
+     11.15
+    ],
+    [
+     76.4,
+     11.45
+    ],
+    [
+     76.05,
+     11.8
+    ]
+   ]
+  },
+  {
+   "name": "Kongu under the Irumporai Cheras (Karuvur)",
+   "key": "Early Cheras",
+   "kind": "region",
+   "from": 150,
+   "to": 300,
+   "rulers": [
+    {
+     "name": "Ko Atan Cheral Irumporai, Perunkadungon, Ilankadungo",
+     "when": "three generations named at Pugalur (c. 2nd century CE)"
+    },
+    {
+     "name": "Selvakkadungo Vali Adan; Perunjeral Irumporai",
+     "when": "c. 2nd century CE (Sastri)"
+    }
+   ],
+   "capital": "Karuvur (Karur) on the Amaravati, identified as Vanji by Sastri",
+   "ports": [],
+   "attested": "Pugalur Tamil-Brahmi inscriptions (Mahadevan 2003); Patirruppattu (Irumporai decads); Ptolemy's 'Karoura, royal seat of Kerobothros'",
+   "note": "Sastri credits 'Kuttuvan of many elephants' with conquering Kongu, so the change is placed c. 150 CE. The Pugalur inscriptions, dated 1st–2nd century CE, could put it earlier. Whether Vanji, the Chera capital, was Karur or a site in Kerala is still debated.",
+   "coords": [
+    [
+     76.05,
+     11.8
+    ],
+    [
+     76.6,
+     11.65
+    ],
+    [
+     77.2,
+     11.75
+    ],
+    [
+     77.6,
+     11.95
+    ],
+    [
+     77.75,
+     12.05
+    ],
+    [
+     78.1,
+     11.88
+    ],
+    [
+     78.55,
+     12.0
+    ],
+    [
+     78.8,
+     11.85
+    ],
+    [
+     78.85,
+     11.5
+    ],
+    [
+     78.52,
+     11.4
+    ],
+    [
+     78.28,
+     11.48
+    ],
+    [
+     78.22,
+     11.15
+    ],
+    [
+     78.3,
+     11.05
+    ],
+    [
+     78.3,
+     10.8
+    ],
+    [
+     78.1,
+     10.62
+    ],
+    [
+     77.7,
+     10.58
+    ],
+    [
+     77.3,
+     10.6
+    ],
+    [
+     77.05,
+     10.35
+    ],
+    [
+     76.9,
+     10.55
+    ],
+    [
+     76.85,
+     10.85
+    ],
+    [
+     76.65,
+     11.15
+    ],
+    [
+     76.4,
+     11.45
+    ],
+    [
+     76.05,
+     11.8
+    ]
+   ]
+  },
+  {
+   "name": "Kolli hills (Ori)",
+   "key": "Velir chiefdoms",
+   "kind": "chiefdom",
+   "from": -300,
+   "to": 170,
+   "rulers": [
+    {
+     "name": "Valvil Ori",
+     "when": "contemporary of Kari and Kapilar"
+    }
+   ],
+   "capital": "Kolli hills",
+   "ports": [],
+   "attested": "Akananuru 208; Kapilar's songs (Sastri)",
+   "note": "This is the Kolli massif itself. The chiefdom ended when Malaiyaman Kari killed Ori.",
+   "coords": [
+    [
+     78.22,
+     11.15
+    ],
+    [
+     78.235,
+     11.2325
+    ],
+    [
+     78.25,
+     11.315
+    ],
+    [
+     78.265,
+     11.3975
+    ],
+    [
+     78.28,
+     11.48
+    ],
+    [
+     78.4,
+     11.44
+    ],
+    [
+     78.52,
+     11.4
+    ],
+    [
+     78.51,
+     11.33
+    ],
+    [
+     78.5,
+     11.26
+    ],
+    [
+     78.49,
+     11.19
+    ],
+    [
+     78.48,
+     11.12
+    ],
+    [
+     78.35,
+     11.135
+    ],
+    [
+     78.22,
+     11.15
+    ]
+   ]
+  },
+  {
+   "name": "Kolli hills under the Cheras",
+   "key": "Early Cheras",
+   "kind": "region",
+   "from": 170,
+   "to": 300,
+   "rulers": [
+    {
+     "name": "Perunjeral Irumporai, 'lord of Kolli'",
+     "when": "c. 190 CE (Sastri)"
+    }
+   ],
+   "capital": "Kolli hills",
+   "ports": [],
+   "attested": "Kapilar via Sastri: Kari 'transferred his mountain, Kollimalai, to the Cheras'; Patirruppattu titles",
+   "note": "The date is set between Kapilar's floruit and Irumporai's reign on Sastri's chronology, and is approximate.",
+   "coords": [
+    [
+     78.22,
+     11.15
+    ],
+    [
+     78.235,
+     11.2325
+    ],
+    [
+     78.25,
+     11.315
+    ],
+    [
+     78.265,
+     11.3975
+    ],
+    [
+     78.28,
+     11.48
+    ],
+    [
+     78.4,
+     11.44
+    ],
+    [
+     78.52,
+     11.4
+    ],
+    [
+     78.51,
+     11.33
+    ],
+    [
+     78.5,
+     11.26
+    ],
+    [
+     78.49,
+     11.19
+    ],
+    [
+     78.48,
+     11.12
+    ],
+    [
+     78.35,
+     11.135
+    ],
+    [
+     78.22,
+     11.15
+    ]
+   ]
+  },
+  {
+   "name": "Pekan of the Avi clan (Palani hills)",
+   "key": "Velir chiefdoms",
+   "kind": "chiefdom",
+   "from": -300,
+   "to": 300,
+   "rulers": [
+    {
+     "name": "Pekan (Vel Avi family)",
+     "when": "patron visited by Sangam bards (Kanakasabhai); date unknown"
+    }
+   ],
+   "capital": "Avinankudi / Pothini (Palani)",
+   "ports": [],
+   "attested": "Purananuru (songs on Pekan); Tirumurugarruppadai (Avinankudi)",
+   "note": "Identifying Pekan's country with Palani rests on tradition, linking Avinankudi and Pothini with Palani. The sources consulted support this only weakly. The boundary is drawn around the Palani hills.",
+   "coords": [
+    [
+     77.05,
+     10.35
+    ],
+    [
+     77.175,
+     10.475
+    ],
+    [
+     77.3,
+     10.6
+    ],
+    [
+     77.5,
+     10.59
+    ],
+    [
+     77.7,
+     10.58
+    ],
+    [
+     77.775,
+     10.465
+    ],
+    [
+     77.85,
+     10.35
+    ],
+    [
+     77.75,
+     10.235
+    ],
+    [
+     77.65,
+     10.12
+    ],
+    [
+     77.425,
+     10.135
+    ],
+    [
+     77.2,
+     10.15
+    ],
+    [
+     77.125,
+     10.25
+    ],
+    [
+     77.05,
+     10.35
+    ]
+   ]
+  },
+  {
+   "name": "Irukkuvel chiefdom (Kodumbalur)",
+   "key": "Velir chiefdoms",
+   "kind": "chiefdom",
+   "from": -300,
+   "to": 300,
+   "rulers": [
+    {
+     "name": "Irungovel line",
+     "when": "Karikala 'uprooted' the family (Pattinappalai)"
+    }
+   ],
+   "capital": "Kodumbalur",
+   "ports": [],
+   "attested": "Pattinappalai; Purananuru (Kapilar offers Pari's daughters to Irungovel)",
+   "note": "This is the Pudukkottai buffer between the Cholas and Pandyas. It is not certain that the Sangam Irungovel is the same as the later Irukkuvels of Kodumbalur, and some scholars place him further north-west.",
+   "coords": [
+    [
+     78.3,
+     10.8
+    ],
+    [
+     78.4125,
+     10.78
+    ],
+    [
+     78.525,
+     10.76
+    ],
+    [
+     78.6375,
+     10.74
+    ],
+    [
+     78.75,
+     10.72
+    ],
+    [
+     78.875,
+     10.585
+    ],
+    [
+     79.0,
+     10.45
+    ],
+    [
+     78.875,
+     10.415
+    ],
+    [
+     78.75,
+     10.38
+    ],
+    [
+     78.55,
+     10.415
+    ],
+    [
+     78.35,
+     10.45
+    ],
+    [
+     78.325,
+     10.625
+    ],
+    [
+     78.3,
+     10.8
+    ]
+   ]
+  },
+  {
+   "name": "Parambu (Pari)",
+   "key": "Velir chiefdoms",
+   "kind": "chiefdom",
+   "from": -300,
+   "to": 170,
+   "rulers": [
+    {
+     "name": "Vel Pari",
+     "when": "contemporary of Kapilar; killed when the three kings besieged Parambu"
+    }
+   ],
+   "capital": "Parambu hill (Piranmalai / Kodungunram)",
+   "ports": [],
+   "attested": "Purananuru c. 105–120 (Kapilar's songs and the lament of Pari's daughters)",
+   "note": "Sastri places Parambu at Piranmalai, in the Pandya country. The poems give it 300 villages around a fortified hill. The boundary is a small notional area.",
+   "coords": [
+    [
+     78.35,
+     10.45
+    ],
+    [
+     78.45,
+     10.4325
+    ],
+    [
+     78.55,
+     10.415
+    ],
+    [
+     78.65,
+     10.3975
+    ],
+    [
+     78.75,
+     10.38
+    ],
+    [
+     78.675,
+     10.24
+    ],
+    [
+     78.6,
+     10.1
+    ],
+    [
+     78.45,
+     10.11
+    ],
+    [
+     78.3,
+     10.12
+    ],
+    [
+     78.3125,
+     10.2025
+    ],
+    [
+     78.325,
+     10.285
+    ],
+    [
+     78.3375,
+     10.3675
+    ],
+    [
+     78.35,
+     10.45
+    ]
+   ]
+  },
+  {
+   "name": "Parambu after Pari's fall",
+   "key": "Early Pandyas",
+   "kind": "region",
+   "from": 170,
+   "to": 300,
+   "rulers": [],
+   "capital": "Parambu hill (Piranmalai)",
+   "ports": [],
+   "attested": "Purananuru (siege by the three crowned kings)",
+   "note": "All three kings besieged Parambu, and no source says who kept it. It is assigned to the Pandyas only because Piranmalai lies in Pandya country.",
+   "coords": [
+    [
+     78.35,
+     10.45
+    ],
+    [
+     78.45,
+     10.4325
+    ],
+    [
+     78.55,
+     10.415
+    ],
+    [
+     78.65,
+     10.3975
+    ],
+    [
+     78.75,
+     10.38
+    ],
+    [
+     78.675,
+     10.24
+    ],
+    [
+     78.6,
+     10.1
+    ],
+    [
+     78.45,
+     10.11
+    ],
+    [
+     78.3,
+     10.12
+    ],
+    [
+     78.3125,
+     10.2025
+    ],
+    [
+     78.325,
+     10.285
+    ],
+    [
+     78.3375,
+     10.3675
+    ],
+    [
+     78.35,
+     10.45
+    ]
+   ]
+  },
+  {
+   "name": "Pandya kingdom (Pandya Nadu)",
+   "key": "Early Pandyas",
+   "kind": "kingdom",
+   "from": -300,
+   "to": 300,
+   "rulers": [
+    {
+     "name": "Palyagasalai Mudukudumi Peruvaludi",
+     "when": "early; date unknown"
+    },
+    {
+     "name": "Nedunjeliyan, 'victor over the Aryan army'",
+     "when": "before Talaiyalanganam (Silappadikaram)"
+    },
+    {
+     "name": "Nedunjeliyan of Talaiyalanganam",
+     "when": "c. 210 CE (Sastri; disputed)"
+    }
+   ],
+   "capital": "Madurai (Kudal); Korkai, the pearl port where the heir apparent lived",
+   "ports": [
+    "Korkai (Kolkhoi / Colchi)",
+    "Saliyur (unidentified)"
+   ],
+   "attested": "Ashoka RE II and XIII ('Pandyas'); Hathigumpha inscription of Kharavela (pearls from the Pandya); Maduraikkanchi; Pliny ('Pandion' at Madura); Periplus (Colchi, Nelcynda); Ptolemy",
+   "note": "The core is the Vaigai and Tamirabarani basins, bounded on the west by the crest of the Ghats at Podiyil. The northern line, against Palani, Kongu and the Pudukkottai chiefs, is a guess. Nedunjeliyan's annexation of the Milalai and Mutturu districts (Sastri) is not drawn.",
+   "coords": [
+    [
+     77.2,
+     10.15
+    ],
+    [
+     77.65,
+     10.12
+    ],
+    [
+     77.85,
+     10.35
+    ],
+    [
+     77.7,
+     10.58
+    ],
+    [
+     78.1,
+     10.62
+    ],
+    [
+     78.3,
+     10.8
+    ],
+    [
+     78.35,
+     10.45
+    ],
+    [
+     78.3,
+     10.12
+    ],
+    [
+     78.6,
+     10.1
+    ],
+    [
+     78.75,
+     10.38
+    ],
+    [
+     79.0,
+     10.45
+    ],
+    [
+     79.35,
+     10.3
+    ],
+    [
+     79.6,
+     10.0
+    ],
+    [
+     79.55,
+     9.2
+    ],
+    [
+     78.4,
+     8.35
+    ],
+    [
+     77.85,
+     8.0
+    ],
+    [
+     77.62,
+     8.0
+    ],
+    [
+     77.6,
+     8.12
+    ],
+    [
+     77.5,
+     8.25
+    ],
+    [
+     77.45,
+     8.45
+    ],
+    [
+     77.4,
+     8.85
+    ],
+    [
+     77.2,
+     9.0
+    ],
+    [
+     77.2,
+     9.4
+    ],
+    [
+     77.2,
+     9.75
+    ],
+    [
+     77.2,
+     10.15
+    ]
+   ]
+  },
+  {
+   "name": "Kuttanad (attribution unknown)",
+   "key": "Early Cheras",
+   "kind": "region",
+   "from": -300,
+   "to": 0,
+   "rulers": [],
+   "capital": "unknown",
+   "ports": [],
+   "attested": "Kanakasabhai counts Kuttanad among the five Chera nadus (based on later sources)",
+   "note": "No early evidence names the ruler of the backwater coast south of Muziris. It is shaded Chera only by default.",
+   "coords": [
+    [
+     75.9,
+     9.85
+    ],
+    [
+     76.2,
+     9.85
+    ],
+    [
+     76.5,
+     9.85
+    ],
+    [
+     76.85,
+     9.8
+    ],
+    [
+     77.2,
+     9.75
+    ],
+    [
+     77.2,
+     9.4
+    ],
+    [
+     77.2,
+     9.0
+    ],
+    [
+     76.95,
+     9.025
+    ],
+    [
+     76.7,
+     9.05
+    ],
+    [
+     76.45,
+     9.05
+    ],
+    [
+     76.2,
+     9.05
+    ],
+    [
+     75.95,
+     9.4
+    ],
+    [
+     75.9,
+     9.85
+    ]
+   ]
+  },
+  {
+   "name": "Nelcynda coast under the Pandyas",
+   "key": "Early Pandyas",
+   "kind": "region",
+   "from": 0,
+   "to": 100,
+   "rulers": [
+    {
+     "name": "'Pandion' (Pliny); the Pandyan king (Periplus)",
+     "when": "1st century CE"
+    }
+   ],
+   "capital": "ruled from Madurai",
+   "ports": [
+    "Nelcynda (Niranam area?)",
+    "Bacare (Becare)"
+   ],
+   "attested": "Periplus 54 ('Nelcynda ... of another kingdom, the Pandian'); Pliny NH 6.26 (Becare, of the Neacyndi, king Pandion at Madura)",
+   "note": "Both 1st-century Roman sources put the pepper port of Nelcynda under the Pandyas, across the Ghats from Madurai. Where exactly Nelcynda was is disputed.",
+   "coords": [
+    [
+     75.9,
+     9.85
+    ],
+    [
+     76.2,
+     9.85
+    ],
+    [
+     76.5,
+     9.85
+    ],
+    [
+     76.85,
+     9.8
+    ],
+    [
+     77.2,
+     9.75
+    ],
+    [
+     77.2,
+     9.4
+    ],
+    [
+     77.2,
+     9.0
+    ],
+    [
+     76.95,
+     9.025
+    ],
+    [
+     76.7,
+     9.05
+    ],
+    [
+     76.45,
+     9.05
+    ],
+    [
+     76.2,
+     9.05
+    ],
+    [
+     75.95,
+     9.4
+    ],
+    [
+     75.9,
+     9.85
+    ]
+   ]
+  },
+  {
+   "name": "Kuttanad in the country of the Aioi",
+   "key": "Velir chiefdoms",
+   "kind": "region",
+   "from": 100,
+   "to": 300,
+   "rulers": [
+    {
+     "name": "Ay chiefs ('Aioi')",
+     "when": "c. 150 CE (Ptolemy)"
+    }
+   ],
+   "capital": "ruled from the Ay country",
+   "ports": [
+    "Melkynda (Nelcynda)"
+   ],
+   "attested": "Ptolemy, Geography VII.1 (Melkynda listed in the country of the Aioi; as quoted by Kanakasabhai)",
+   "note": "By Ptolemy's time, Nelcynda (his 'Melkynda') lies in the Ay country. This may be a real change or just a different source. The exact frontier with the Cheras is unknown.",
+   "coords": [
+    [
+     75.9,
+     9.85
+    ],
+    [
+     76.2,
+     9.85
+    ],
+    [
+     76.5,
+     9.85
+    ],
+    [
+     76.85,
+     9.8
+    ],
+    [
+     77.2,
+     9.75
+    ],
+    [
+     77.2,
+     9.4
+    ],
+    [
+     77.2,
+     9.0
+    ],
+    [
+     76.95,
+     9.025
+    ],
+    [
+     76.7,
+     9.05
+    ],
+    [
+     76.45,
+     9.05
+    ],
+    [
+     76.2,
+     9.05
+    ],
+    [
+     75.95,
+     9.4
+    ],
+    [
+     75.9,
+     9.85
+    ]
+   ]
+  },
+  {
+   "name": "Ay chiefdom (Podiyil and Nanjil Nadu)",
+   "key": "Velir chiefdoms",
+   "kind": "chiefdom",
+   "from": -300,
+   "to": 300,
+   "rulers": [
+    {
+     "name": "Ay Andiran",
+     "when": "patron of the poet of Uraiyur (Sastri)"
+    },
+    {
+     "name": "Titiyan",
+     "when": "fought Nedunjeliyan at Talaiyalanganam (Kanakasabhai)"
+    },
+    {
+     "name": "Ay Eyinan",
+     "when": "Chera feudatory killed at Pali (Sastri)"
+    }
+   ],
+   "capital": "Aykudi (site uncertain), around the Podiyil hill",
+   "ports": [
+    "Kottiara (Kottar?)",
+    "Komaria (Cape Kumari)"
+   ],
+   "attested": "Purananuru 127–136 (Ay); 137–140 (Nanjil Nadu); Ptolemy's 'Aioi', with Cape Komaria and Mount Bettigo",
+   "note": "This region covers the southern end of the Ghats and the coast to Kanyakumari, including Porunan's Nanjil Nadu. The Periplus instead puts the coast from Comari eastward under the Pandyas, so the line near the cape is contested.",
+   "coords": [
+    [
+     76.2,
+     9.05
+    ],
+    [
+     76.7,
+     9.05
+    ],
+    [
+     77.2,
+     9.0
+    ],
+    [
+     77.4,
+     8.85
+    ],
+    [
+     77.45,
+     8.45
+    ],
+    [
+     77.5,
+     8.25
+    ],
+    [
+     77.6,
+     8.12
+    ],
+    [
+     77.62,
+     8.0
+    ],
+    [
+     77.3,
+     8.0
+    ],
+    [
+     76.95,
+     8.175
+    ],
+    [
+     76.6,
+     8.35
+    ],
+    [
+     76.4,
+     8.7
+    ],
+    [
+     76.2,
+     9.05
+    ]
+   ]
+  },
+  {
+   "name": "Chera kingdom (Kuda Nadu, Malabar coast)",
+   "key": "Early Cheras",
+   "kind": "kingdom",
+   "from": -300,
+   "to": 300,
+   "rulers": [
+    {
+     "name": "Udiyanjeral",
+     "when": "c. 130 CE (Sastri)"
+    },
+    {
+     "name": "Nedunjeral Adan 'Imayavaramban'",
+     "when": "son of Udiyanjeral; capital Marandai"
+    },
+    {
+     "name": "Senguttuvan",
+     "when": "c. 180 CE (Gajabahu synchronism; disputed)"
+    },
+    {
+     "name": "Narmudicheral (Kalangaykkanni)",
+     "when": "brother of Senguttuvan; fought Nannan"
+    }
+   ],
+   "capital": "Vanji: Tiruvanchikulam near Kodungallur, Tiru-Karur on the Periyar (Kanakasabhai), or Karur in Kongu (Sastri) — disputed",
+   "ports": [
+    "Muziris (Muciri; probably Pattanam)",
+    "Tondi (Tyndis)"
+   ],
+   "attested": "Ashoka RE II ('Kelalaputa'); Patirruppattu; Akananuru 149 (Yavana ships at Muziris); Periplus 54 (Tyndis and Muziris in the kingdom of Cerobothra); Pliny (Muziris, king Coelobothras)",
+   "note": "Sastri and Gurukkal see two Chera lines: one on the coast, and the Irumporai at Karur. The northern limit at Badagara follows the Periplus' White Island, as Kanakasabhai reads it. The eastern limit is the Ghats crest, with the Palghat gap included. Pattanam's link to Muziris is strong but not certain.",
+   "coords": [
+    [
+     75.1,
+     11.62
+    ],
+    [
+     75.7,
+     11.62
+    ],
+    [
+     76.05,
+     11.8
+    ],
+    [
+     76.4,
+     11.45
+    ],
+    [
+     76.65,
+     11.15
+    ],
+    [
+     76.85,
+     10.85
+    ],
+    [
+     76.9,
+     10.55
+    ],
+    [
+     77.05,
+     10.35
+    ],
+    [
+     77.2,
+     10.15
+    ],
+    [
+     77.2,
+     9.75
+    ],
+    [
+     76.5,
+     9.85
+    ],
+    [
+     75.9,
+     9.85
+    ],
+    [
+     75.3,
+     10.8
+    ],
+    [
+     75.1,
+     11.62
+    ]
+   ]
+  },
+  {
+   "name": "Nannan of Ezhimalai (Pali)",
+   "key": "Velir chiefdoms",
+   "kind": "chiefdom",
+   "from": -300,
+   "to": 300,
+   "rulers": [
+    {
+     "name": "Nannan (title borne by several rulers)",
+     "when": "killed by Narmudicheral (Patirruppattu 40); his general killed Adiyaman Anji at Pali"
+    }
+   ],
+   "capital": "Pali, on the slopes of Ezhimalai (Ezhil hill)",
+   "ports": [
+    "Naravu (probably the Periplus' Naura)"
+   ],
+   "attested": "Akananuru 152, 199, 396; Natrinai 270; Patirruppattu 40 and 4th decad; Sastri ('north of Malabar, in the Tulu country')",
+   "note": "This is the north-western edge of Tamilakam, from Badagara to about Kasaragod and inland to Coorg. Sources disagree on which Nannan ruled which lands, and the Kosar of Chellur also raided Ezhimalai.",
+   "coords": [
+    [
+     74.6,
+     12.7
+    ],
+    [
+     75.05,
+     12.7
+    ],
+    [
+     75.5,
+     12.7
+    ],
+    [
+     75.75,
+     12.35
+    ],
+    [
+     75.95,
+     12.0
+    ],
+    [
+     76.05,
+     11.8
+    ],
+    [
+     75.7,
+     11.62
+    ],
+    [
+     75.4,
+     11.62
+    ],
+    [
+     75.1,
+     11.62
+    ],
+    [
+     74.975,
+     11.89
+    ],
+    [
+     74.85,
+     12.16
+    ],
+    [
+     74.725,
+     12.43
+    ],
+    [
+     74.6,
+     12.7
+    ]
+   ]
+  }
+ ],
+ "sites": [
+  {
+   "name": "Keezhadi",
+   "lonlat": [
+    78.18,
+    9.86
+   ],
+   "what": "urban settlement on the Vaigai near Madurai; the excavator's report claims 8th c. BCE–3rd c. CE, and the ASI (2025) asked for justification of the pre-5th-century-BCE phase (contested)"
+  },
+  {
+   "name": "Madurai",
+   "lonlat": [
+    78.12,
+    9.92
+   ],
+   "what": "Pandya capital (Kudal), described in the Maduraikkanchi"
+  },
+  {
+   "name": "Korkai",
+   "lonlat": [
+    78.07,
+    8.63
+   ],
+   "what": "Pandya pearl-fishing port at the Tamirabarani mouth (Ptolemy's Kolkhoi); now inland"
+  },
+  {
+   "name": "Uraiyur",
+   "lonlat": [
+    78.68,
+    10.83
+   ],
+   "what": "early Chola capital on the Kaveri (Ptolemy's Orthoura)"
+  },
+  {
+   "name": "Kaveripattinam (Puhar)",
+   "lonlat": [
+    79.85,
+    11.15
+   ],
+   "what": "Chola port at the Kaveri mouth, subject of the Pattinappalai"
+  },
+  {
+   "name": "Arikamedu",
+   "lonlat": [
+    79.82,
+    11.9
+   ],
+   "what": "Indo-Roman trading port, probably Poduke; Wheeler (1945) dated it to the late 1st c. BCE–2nd c. CE, Begley (1989–92) to the 2nd c. BCE onward"
+  },
+  {
+   "name": "Kanchipuram",
+   "lonlat": [
+    79.7,
+    12.83
+   ],
+   "what": "seat of Tondaiman Ilandiraiyan (Perumbanarruppadai)"
+  },
+  {
+   "name": "Venkatam (Tirupati hills)",
+   "lonlat": [
+    79.35,
+    13.68
+   ],
+   "what": "traditional northern limit of Tamilakam (Tolkappiyam preface)"
+  },
+  {
+   "name": "Tirukkoyilur and Jambai",
+   "lonlat": [
+    79.13,
+    11.98
+   ],
+   "what": "Kovalur, seat of Malaiyaman Kari; nearby Jambai has the 1st-century CE inscription of 'Satiyaputo' Adiyaman Anji"
+  },
+  {
+   "name": "Tagadur (Dharmapuri)",
+   "lonlat": [
+    78.16,
+    12.13
+   ],
+   "what": "seat of the Adiyaman chiefs, taken by Perunjeral Irumporai"
+  },
+  {
+   "name": "Karur and Pugalur",
+   "lonlat": [
+    78.05,
+    10.99
+   ],
+   "what": "Karuvur, the Irumporai Cheras' seat (possibly Vanji); Pugalur Tamil-Brahmi inscriptions naming three Chera generations (c. 2nd c. CE)"
+  },
+  {
+   "name": "Kodumanal",
+   "lonlat": [
+    77.51,
+    11.1
+   ],
+   "what": "bead-making and iron-working centre on the Noyyal, c. 5th–1st c. BCE (uncalibrated dates, debated)"
+  },
+  {
+   "name": "Pattanam (Muziris?)",
+   "lonlat": [
+    76.21,
+    10.16
+   ],
+   "what": "probable site of Muziris; Roman amphorae of the 1st c. BCE–1st c. CE, earlier habitation"
+  },
+  {
+   "name": "Ezhimalai",
+   "lonlat": [
+    75.2,
+    12.03
+   ],
+   "what": "hill of Nannan's chiefdom; Pali lay on its slopes"
+  }
+ ],
+ "sources": [
+  {
+   "title": "V. Kanakasabhai, The Tamils Eighteen Hundred Years Ago (1904; 1956 reprint), archive.org",
+   "url": "https://archive.org/details/TheTamilsEighteenHundredYearsAgo1956"
+  },
+  {
+   "title": "K. A. Nilakanta Sastri, A History of South India (1958), archive.org",
+   "url": "https://archive.org/details/dli.ernet.505532"
+  },
+  {
+   "title": "The Periplus of the Erythraean Sea, tr. W. H. Schoff (1912), Fordham Internet Ancient History Sourcebook",
+   "url": "https://sourcebooks.fordham.edu/ancient/periplus.asp"
+  },
+  {
+   "title": "Wikipedia: Major Rock Edicts (RE II in Hultzsch's 1925 translation)",
+   "url": "https://en.wikipedia.org/wiki/Major_Rock_Edicts"
+  },
+  {
+   "title": "Wikipedia: Chera dynasty (Pugalur inscriptions, Mahadevan 2003; Gurukkal)",
+   "url": "https://en.wikipedia.org/wiki/Chera_dynasty"
+  },
+  {
+   "title": "Wikipedia: Mushika dynasty (Nannan of Ezhimala; Sastri, Ferenczi, Selvakumar)",
+   "url": "https://en.wikipedia.org/wiki/Mushika_dynasty"
+  },
+  {
+   "title": "Wikipedia: Jambai, Kallakurichi (Satiyaputo inscription)",
+   "url": "https://en.wikipedia.org/wiki/Jambai,_Kallakurichi"
+  },
+  {
+   "title": "Wikipedia: Muziris (Pattanam excavations, Akananuru 149)",
+   "url": "https://en.wikipedia.org/wiki/Muziris"
+  },
+  {
+   "title": "Wikipedia: Arikamedu (Wheeler 1945; Begley and Raman 1989–92)",
+   "url": "https://en.wikipedia.org/wiki/Arikamedu"
+  },
+  {
+   "title": "Scroll.in (23 May 2025): ASI asks Amarnath Ramakrishna to rework his Keeladi report",
+   "url": "https://scroll.in/latest/1082714/asi-asks-archaeologist-amarnath-ramakrishna-to-rework-his-keeladi-excavation-report"
+  }
+ ]
+}

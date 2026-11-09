@@ -91,7 +91,11 @@ function sourcesList(list, title = "Sources") {
   return `<h3 class="sec">${title}</h3><ol class="refs">${ok.map((x) => `<li><a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title || x.url)}</a></li>`).join("")}</ol>`;
 }
 const vivid = () => (theme.dark ? VIVID_DARK : VIVID_LIGHT);
+const RECON_COLORS = ["#C0662F", "#2F7D6D", "#7A5FB0", "#A67C00", "#5E8FC4", "#B5487A", "#3B6E3B", "#8C4A2F"];
 function colorOf(key) {
+  if (S.reconKeys?.has(key) && key !== S.sel) { // reconstruction groups: distinct, stable inks (e.g. all Chola lands share one)
+    const ks = [...S.reconKeys]; return RECON_COLORS[ks.indexOf(key) % RECON_COLORS.length];
+  }
   if (S.journey) return chainKeys(S.journey, S.year).has(key) ? theme.highlight : [theme.other1, theme.other2, theme.other3][hash(clean(key)) % 3];
   if (key === S.sel) return theme.highlight;
   const i = S.featured.get(key);
@@ -199,6 +203,13 @@ function correctFeature(f, y) {
     if (!byName) relabelCache.set(f, (byName = {}));
     return (byName["people:" + ap.name] ||= { type: "Feature", geometry: f.geometry, properties: { ...f.properties, n: ap.name, people: true, fixed: f.properties.n } });
   }
+  const cr = c.crop && c.crop.find((r) => inRange(y, [r.from, r.to]));
+  if (cr) { // draw only the part of the shape inside a lon/lat box (shape overreaches; see the note)
+    cr.box2 ||= boxFeature(cr.box);
+    let byName = relabelCache.get(f);
+    if (!byName) relabelCache.set(f, (byName = {}));
+    f = byName["crop:" + cr.box.join(",")] ||= { type: "Feature", geometry: f.geometry, properties: { ...f.properties, crop: cr.box2 } };
+  }
   const rl = c.relabel && c.relabel.find((r) => inRange(y, [r.from, r.to]));
   if (!rl) return f;
   let byName = relabelCache.get(f);
@@ -206,6 +217,21 @@ function correctFeature(f, y) {
   // A member of an empire group (k ≠ n) stays in its group unless the correction names a group itself ("(…)").
   const k = f.properties.k !== f.properties.n && !String(rl.key).startsWith("(") ? f.properties.k : rl.key;
   return (byName[rl.name] ||= { type: "Feature", geometry: f.geometry, properties: { ...f.properties, n: rl.name, k, fixed: f.properties.n } });
+}
+function boxFeature([w, s, e, n]) { // a lon/lat rectangle as a densified, correctly wound polygon
+  const ring = [];
+  for (let x = w; x <= e; x += 1) ring.push([x, s]);
+  for (let y = s; y <= n; y += 1) ring.push([e, y]);
+  for (let x = e; x >= w; x -= 1) ring.push([x, n]);
+  for (let y = n; y >= s; y -= 1) ring.push([w, y]);
+  ring.push(ring[0]);
+  const g = { type: "Feature", geometry: { type: "Polygon", coordinates: [ring] }, properties: {} };
+  if (d3.geoArea(g) > 2 * Math.PI) ring.reverse();
+  return g;
+}
+function clipFor(c, it) { // apply the clip a feature needs (coastline for reconstructions, box for crops)
+  if (it.p.recon) c.clip(S.landClip);
+  if (it.p.crop) c.clip(pathOf(it.p.crop));
 }
 function splitRows(tl, a, b) { // rows inside [a,b] and outside it, cutting rows that straddle the edges
   const inside = [], outside = [];
@@ -253,6 +279,7 @@ const corrOf = (key) => S.corr.realms[key] || null;
 // content/supplements/*.json: scholarly reconstructions where the border data is missing or too crude
 // (e.g. Sangam-age Tamilakam). Regions are clipped to the coastline when drawn and marked as reconstructed.
 function prepareSupplements(list) {
+  S.reconKeys = new Set(list.flatMap((sp) => sp.regions.map((rg) => rg.key || rg.name)));
   for (const sp of list) {
     sp.feats = sp.regions.map((rg) => {
       const ring = rg.coords.map(([x, y]) => [x, y]);
@@ -476,14 +503,16 @@ function draw() {
   const sel = S.sel;
   theme.hatch.setTransform(new DOMMatrix().scale(1 / t.k)); // constant stripe width at any zoom
   for (const it of S.items) {
-    ctx.fillStyle = it.kind === "land" ? theme.unknown : it.kind === "culture" ? theme.hatch : S.journey && inJourney(it) ? theme.highlight : colorOf(it.key);
-    if (it.p.recon) { ctx.save(); ctx.clip(S.landClip); ctx.fill(pathOf(it.f)); ctx.restore(); }
+    ctx.fillStyle = it.kind === "land" ? theme.unknown : it.kind === "culture" ? theme.hatch : S.journey && inJourney(it) ? theme.highlight
+      : it.p.recon && it.p.n === S.sel ? theme.highlight : colorOf(it.key);
+    if (it.p.recon || it.p.crop) { ctx.save(); clipFor(ctx, it); ctx.fill(pathOf(it.f)); ctx.restore(); }
     else ctx.fill(pathOf(it.f));
   }
   ctx.lineJoin = "round";
   ctx.strokeStyle = theme.border; ctx.lineWidth = 0.7 / t.k;
   for (const it of S.items) {
     if (it.kind !== "state") continue;
+    if (it.p.crop && !it.p.recon) { ctx.save(); clipFor(ctx, it); ctx.stroke(pathOf(it.f)); ctx.restore(); continue; }
     if (!it.p.recon) { ctx.stroke(pathOf(it.f)); continue; }
     ctx.save(); ctx.clip(S.landClip); ctx.setLineDash([3 / t.k, 2.5 / t.k]); ctx.strokeStyle = theme.ink3; ctx.stroke(pathOf(it.f)); ctx.restore();
     ctx.strokeStyle = theme.border;
@@ -519,7 +548,7 @@ function drawLabels() {
   ctx.textAlign = "center"; ctx.textBaseline = "middle";
   for (const it of cand) {
     const r = Math.sqrt(it.p.a) * pxPerKm;
-    const strong = it.kind === "state" && (S.journey ? inJourney(it) : S.featured.has(it.key) || it.key === S.sel);
+    const strong = it.kind === "state" && (S.journey ? inJourney(it) : S.featured.has(it.key) || it.key === S.sel || it.p.recon);
     if (r < (strong ? 26 : it.kind === "state" ? 34 : 60)) continue;
     const [x0, y0] = projection(it.p.l);
     const x = t.applyX(x0), y = t.applyY(y0);
@@ -527,7 +556,7 @@ function drawLabels() {
     const culture = it.kind !== "state";
     if (culture) { const top = S.items[pickAt(x, y)]; if (top && top.kind === "state") continue; }
     const size = Math.max(10, Math.min(r / 6, strong ? 18 : 13));
-    let text = clean(it.p.n);
+    let text = it.p.recon ? it.p.n.replace(/\s*\(.*\)$/, "") : clean(it.p.n);
     ctx.font = culture ? `italic 500 ${size}px Inter, sans-serif` : `${strong ? 800 : 600} ${size}px Archivo, "Helvetica Neue", sans-serif`;
     ctx.letterSpacing = culture ? "0px" : `${(size * 0.05).toFixed(1)}px`;
     if (!culture) text = text.toUpperCase();
@@ -549,7 +578,7 @@ function drawLabels() {
     const box = [x - w / 2 - 4, y - h / 2 - 3, x + w / 2 + 4, y + h / 2 + 3];
     if (placed.some((b) => box[0] < b[2] && box[2] > b[0] && box[1] < b[3] && box[3] > b[1])) continue;
     placed.push(box);
-    if (it.key === S.sel || (S.journey && inJourney(it))) { // red chip, like the design's highlighted realm
+    if (it.key === S.sel || (it.p.recon && it.p.n === S.sel) || (S.journey && inJourney(it))) { // red chip, like the design's highlighted realm
       ctx.fillStyle = theme.highlight; ctx.fillRect(box[0], box[1], box[2] - box[0], box[3] - box[1]);
       ctx.fillStyle = "#ffffff";
       lines.forEach((ln, k) => ctx.fillText(ln, x, y + (k - (lines.length - 1) / 2) * size * 1.1));
@@ -575,7 +604,7 @@ function drawPick() {
   S.items.forEach((it, i) => {
     const id = i + 1;
     pctx.fillStyle = `rgb(${id & 255},${(id >> 8) & 255},${(id >> 16) & 255})`;
-    if (it.p.recon) { pctx.save(); pctx.clip(S.landClip); pctx.fill(pathOf(it.f)); pctx.restore(); }
+    if (it.p.recon || it.p.crop) { pctx.save(); clipFor(pctx, it); pctx.fill(pathOf(it.f)); pctx.restore(); }
     else pctx.fill(pathOf(it.f));
   });
 }
@@ -977,7 +1006,7 @@ function momentsListHTML() {
   return h + (last ? "</ul>" : "");
 }
 function drawSites() { // capitals, ports and excavations of active reconstruction layers, once zoomed in
-  if (S.t.k < 2.5) return;
+  if (S.t.k < 5) return;
   const act = S.supps.filter((sp) => sp.from <= S.year && S.year <= sp.to);
   ctx.save(); ctx.textAlign = "left"; ctx.textBaseline = "middle"; ctx.font = '600 11px Inter, sans-serif';
   for (const sp of act) for (const st of sp.sites || []) {
