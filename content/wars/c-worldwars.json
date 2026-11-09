@@ -1,1188 +1,1206 @@
 [
-  {
-    "id": "world-war-i",
-    "name": "First World War",
-    "moment": "world-war-i",
-    "span": [
-      1914,
-      1918
-    ],
-    "dateLabel": "28 July 1914 – 11 November 1918",
-    "summary": "The First World War began a month after the assassination of Archduke Franz Ferdinand in Sarajevo on 28 June 1914. Austria-Hungary declared war on Serbia, and within days the alliance system drew in the great powers. Germany and Austria-Hungary, joined by the Ottoman Empire in 1914 and Bulgaria in 1915, formed the Central Powers. Serbia, Russia, France, Belgium and the British Empire formed the Allies, or Entente, joined by Japan (1914), Italy (1915), Portugal and Romania (1916), and the United States, Greece, Siam, China and Brazil (1917). After the Marne the Western Front froze into trench warfare, while fighting spread to Eastern Europe, the Alps, the Balkans, the Middle East, Africa, East Asia and the oceans. Revolution took Russia out of the war in 1917–18. Germany's spring offensive of 1918 failed, Allied counter-offensives followed, and the Central Powers signed armistices between September and 11 November 1918. Four empires collapsed, and the peace treaties redrew the map of Europe and the Middle East.",
-    "casualties": "An estimated 15 to 22 million soldiers and civilians died, with many millions more wounded.",
-    "sides": [
-      {
-        "name": "Allies (Entente)",
-        "members": [
-          {
-            "clio": "(British Empire)",
-            "from": 1914,
-            "to": 1918
-          },
-          {
-            "clio": "(French Third Republic)",
-            "from": 1914,
-            "to": 1918
-          },
-          {
-            "clio": "Russian Empire",
-            "from": 1914,
-            "to": 1916
-          },
-          {
-            "clio": "Russian Republic",
-            "from": 1917,
-            "to": 1917
-          },
-          {
-            "clio": "Serbs",
-            "from": 1914,
-            "to": 1915
-          },
-          {
-            "clio": "Serbia",
-            "from": 1918,
-            "to": 1918
-          },
-          {
-            "clio": "Montenegro",
-            "from": 1914,
-            "to": 1915
-          },
-          {
-            "clio": "Kingdom of Belgium",
-            "from": 1914,
-            "to": 1918
-          },
-          {
-            "clio": "Belgian Congo",
-            "from": 1914,
-            "to": 1918
-          },
-          {
-            "clio": "Empire of Japan",
-            "from": 1914,
-            "to": 1918
-          },
-          {
-            "clio": "Commonwealth of Australia",
-            "from": 1914,
-            "to": 1918
-          },
-          {
-            "clio": "Kingdom of Italy",
-            "from": 1915,
-            "to": 1918
-          },
-          {
-            "clio": "Italian Africa",
-            "from": 1915,
-            "to": 1918
-          },
-          {
-            "clio": "Portuguese Republic",
-            "from": 1916,
-            "to": 1918
-          },
-          {
-            "clio": "United Principalities of Moldavia and Wallachia",
-            "from": 1916,
-            "to": 1916
-          },
-          {
-            "clio": "Kingdom of Hejaz",
-            "from": 1916,
-            "to": 1918
-          },
-          {
-            "clio": "United States of America",
-            "from": 1917,
-            "to": 1918
-          },
-          {
-            "clio": "First Hellenic Republic",
-            "from": 1917,
-            "to": 1918
-          },
-          {
-            "clio": "Rattanakosin Kingdom",
-            "from": 1917,
-            "to": 1918
-          },
-          {
-            "clio": "Kuomintang",
-            "from": 1917,
-            "to": 1918
-          },
-          {
-            "clio": "Brazilian Republic",
-            "from": 1917,
-            "to": 1918
-          },
-          {
-            "clio": "Republic of Liberia",
-            "from": 1917,
-            "to": 1918
-          }
-        ]
-      },
-      {
-        "name": "Central Powers",
-        "members": [
-          {
-            "clio": "German Empire",
-            "from": 1914,
-            "to": 1918
-          },
-          {
-            "clio": "German Africa",
-            "from": 1914,
-            "to": 1918
-          },
-          {
-            "clio": "Austria-Hungary",
-            "from": 1914,
-            "to": 1918
-          },
-          {
-            "clio": "Ottoman Empire",
-            "from": 1914,
-            "to": 1918
-          },
-          {
-            "clio": "Principality of Bulgaria",
-            "from": 1915,
-            "to": 1918
-          }
-        ]
-      }
-    ],
-    "events": [
-      {
-        "date": "1914-06-28",
-        "year": 1914,
-        "label": "28 Jun 1914",
-        "text": "Archduke Franz Ferdinand assassinated in Sarajevo",
-        "detail": "Bosnia had been annexed by Austria-Hungary in 1908, angering Serbian nationalists. On 28 June 1914 Gavrilo Princip, a Bosnian Serb student, shot the heir to the Habsburg throne and his wife in Sarajevo. Austria-Hungary blamed Serbia and, assured of German backing, sent Belgrade an ultimatum it expected to be refused. The crisis of July 1914 turned a regional quarrel into a confrontation between Europe's two armed alliance blocs.",
-        "lonlat": [
-          18.43,
-          43.86
-        ],
-        "kind": "political"
-      },
-      {
-        "date": "1914-07-28",
-        "year": 1914,
-        "label": "28 Jul 1914",
-        "text": "Austria-Hungary declares war on Serbia",
-        "detail": "Serbia accepted most of the ultimatum but not all of it, and on 28 July Austria-Hungary declared war. Russia mobilised in support of Serbia; Germany declared war on Russia on 1 August and on France on 3 August. Mobilisation timetables and alliance commitments meant that a Balkan war became a continental one in under a week, before diplomacy could slow it down.",
-        "lonlat": [
-          20.46,
-          44.82
-        ],
-        "kind": "political"
-      },
-      {
-        "date": "1914-08-04",
-        "year": 1914,
-        "label": "4 Aug 1914",
-        "text": "Germany invades Belgium; Britain declares war",
-        "detail": "Germany's war plan aimed to knock out France quickly by swinging through neutral Belgium before turning east against Russia. German troops crossed the Belgian border on 4 August and besieged the fortresses of Liège. Britain, a guarantor of Belgian neutrality under the 1839 treaty, declared war on Germany the same day, bringing in its whole empire, including India, the dominions and its African colonies.",
-        "lonlat": [
-          5.57,
-          50.63
-        ],
-        "kind": "invasion"
-      },
-      {
-        "date": "1914-08-23",
-        "year": 1914,
-        "label": "23–30 Aug 1914",
-        "text": "Germany crushes a Russian army at Tannenberg",
-        "detail": "Russia attacked East Prussia sooner than Germany expected, forcing it to move troops east. Between 23 and 30 August German forces under Hindenburg and Ludendorff encircled and destroyed the Russian Second Army near Tannenberg, taking a very large number of prisoners. Russia was driven out of East Prussia, but its offensive had drawn German strength away from France at a critical moment.",
-        "lonlat": [
-          20.13,
-          53.5
-        ],
-        "kind": "battle"
-      },
-      {
-        "date": "1914-09-05",
-        "year": 1914,
-        "label": "5–12 Sep 1914",
-        "text": "The First Battle of the Marne halts the German advance",
-        "detail": "German armies sweeping through Belgium and northern France came within reach of Paris by early September. From 5 to 12 September French and British forces counter-attacked along the River Marne, opening a gap between German armies and forcing them to retreat to the Aisne. The quick victory Germany had planned was lost; both sides dug in, and trenches soon ran from the Channel coast to Switzerland.",
-        "lonlat": [
-          3.1,
-          48.95
-        ],
-        "kind": "turning-point"
-      },
-      {
-        "date": "1914-10-29",
-        "year": 1914,
-        "label": "29 Oct 1914",
-        "text": "Ottoman warships raid Russia's Black Sea ports",
-        "detail": "The Ottoman Empire had signed a secret alliance with Germany in August. On 29 October Ottoman warships, led by two ex-German cruisers, shelled Russian ports on the Black Sea. Russia declared war on 1 November and Britain and France followed. Ottoman entry closed the Straits to Allied supplies for Russia and opened new fronts in the Caucasus, Mesopotamia, Sinai and Palestine.",
-        "lonlat": [
-          30.73,
-          46.48
-        ],
-        "kind": "political"
-      },
-      {
-        "date": "1914-11-07",
-        "year": 1914,
-        "label": "7 Nov 1914",
-        "text": "Japan captures Germany's Chinese base at Tsingtao",
-        "detail": "Japan, allied to Britain since 1902, declared war on Germany on 23 August 1914 and moved against German possessions in Asia and the Pacific. Japanese forces, with a smaller British contingent, besieged the German naval base at Tsingtao on China's Shandong peninsula, which fell on 7 November. Japan also took Germany's island colonies north of the equator, extending its reach in East Asia.",
-        "lonlat": [
-          120.38,
-          36.07
-        ],
-        "kind": "battle"
-      },
-      {
-        "date": "1915-04-22",
-        "year": 1915,
-        "label": "22 Apr 1915",
-        "text": "Germany uses poison gas on a large scale at Ypres",
-        "detail": "On the Western Front neither side could break the trench lines. At the start of the Second Battle of Ypres, on 22 April 1915, German troops released chlorine gas against French and Algerian positions, opening a gap they could not exploit. Both sides went on to use chemical weapons throughout the war, and gas became one of the conflict's most feared features.",
-        "lonlat": [
-          2.88,
-          50.85
-        ],
-        "kind": "battle"
-      },
-      {
-        "date": "1915-04-24",
-        "year": 1915,
-        "label": "24 Apr 1915",
-        "text": "Armenian deportations and massacres begin",
-        "detail": "On the night of 23–24 April 1915 Ottoman authorities arrested hundreds of Armenian community leaders in Constantinople. Deportations of Armenians from Anatolia followed, with death marches towards the Syrian desert and mass killings. Estimates of the dead range from about 600,000 to 1.5 million. Almost all historians outside Turkey describe these events as genocide; the Turkish government rejects that term.",
-        "lonlat": [
-          28.98,
-          41.01
-        ],
-        "kind": "atrocity"
-      },
-      {
-        "date": "1915-04-25",
-        "year": 1915,
-        "label": "25 Apr 1915",
-        "text": "Allied landings at Gallipoli",
-        "detail": "Britain and France hoped to force the Dardanelles, take Constantinople and open a sea route to Russia. After a naval attack failed, British, French, Australian, New Zealand and Indian troops landed on the Gallipoli peninsula on 25 April 1915. Ottoman forces held the heights, and months of costly fighting followed. The Allies abandoned the campaign and withdrew their last troops in December 1915 and January 1916.",
-        "lonlat": [
-          26.28,
-          40.23
-        ],
-        "kind": "invasion"
-      },
-      {
-        "date": "1915-05-07",
-        "year": 1915,
-        "label": "7 May 1915",
-        "text": "A German U-boat sinks the liner Lusitania",
-        "detail": "Germany had declared the waters around Britain a war zone in February 1915, using submarines against merchant shipping. On 7 May a U-boat torpedoed the British liner Lusitania off southern Ireland, killing more than a thousand passengers and crew, among them over a hundred Americans. The sinking turned American opinion against Germany, which for a time restricted submarine attacks to avoid war with the United States.",
-        "lonlat": [
-          -8.55,
-          51.42
-        ],
-        "kind": "other"
-      },
-      {
-        "date": "1915-05-23",
-        "year": 1915,
-        "label": "23 May 1915",
-        "text": "Italy declares war on Austria-Hungary",
-        "detail": "Italy had stayed neutral in 1914 despite its prewar alliance with Germany and Austria-Hungary. After the Allies secretly promised it Austrian territory, Italy declared war on Austria-Hungary on 23 May 1915, though not on Germany until August 1916. A new front opened along the Alps and the Isonzo River, where repeated Italian offensives over the next two years gained little ground at great cost.",
-        "lonlat": [
-          13.6,
-          45.95
-        ],
-        "kind": "political"
-      },
-      {
-        "date": "1915-10-14",
-        "year": 1915,
-        "label": "14 Oct 1915",
-        "text": "Bulgaria joins the Central Powers; Serbia is overrun",
-        "detail": "Bulgaria, seeking territory lost in the Balkan Wars, declared war on Serbia on 14 October 1915. Attacked by German and Austro-Hungarian armies from the north and Bulgarians from the east, Serbia was conquered in little more than a month. Its army retreated across the Albanian mountains to the Adriatic coast and was evacuated by Allied ships, later fighting again on the Salonika front.",
-        "lonlat": [
-          23.32,
-          42.7
-        ],
-        "kind": "invasion"
-      },
-      {
-        "date": "1916-02-21",
-        "year": 1916,
-        "label": "21 Feb 1916",
-        "text": "The Battle of Verdun begins",
-        "detail": "Germany attacked the fortress city of Verdun on 21 February 1916, aiming to wear down the French army in a battle France could not refuse. The fighting lasted until 18 December, when French counter-attacks had retaken most of the lost ground. Combined French and German casualties are estimated at roughly 700,000 to 975,000, and Verdun became a symbol of the war's attrition.",
-        "lonlat": [
-          5.39,
-          49.16
-        ],
-        "kind": "battle"
-      },
-      {
-        "date": "1916-05-31",
-        "year": 1916,
-        "label": "31 May–1 Jun 1916",
-        "text": "Britain and Germany fight the naval Battle of Jutland",
-        "detail": "Britain's Royal Navy blockaded Germany, and the German High Seas Fleet hoped to destroy part of the British Grand Fleet. The two fleets met in the North Sea off Denmark on 31 May and 1 June 1916, the war's largest naval battle. Britain lost more ships and men, but the German fleet returned to port and did not seek another major fleet action, so the blockade held.",
-        "lonlat": [
-          6.0,
-          56.7
-        ],
-        "kind": "battle"
-      },
-      {
-        "date": "1916-06-04",
-        "year": 1916,
-        "label": "4 Jun 1916",
-        "text": "Russia's Brusilov Offensive breaks the Austro-Hungarian line",
-        "detail": "To relieve pressure on France and Italy, Russian armies under General Aleksei Brusilov attacked along a wide front in Galicia and Volhynia on 4 June 1916. Short, surprise bombardments broke the Austro-Hungarian lines, and huge numbers of prisoners were taken. Germany had to send reinforcements east, and the offensive's early success encouraged Romania to join the Allies, but Russian losses were also very heavy.",
-        "lonlat": [
-          25.33,
-          50.75
-        ],
-        "kind": "battle"
-      },
-      {
-        "date": "1916-06-10",
-        "year": 1916,
-        "label": "10 Jun 1916",
-        "text": "Sharif Hussein launches the Arab Revolt at Mecca",
-        "detail": "Britain had promised in letters to Sharif Hussein of Mecca to support Arab independence in return for a rising against the Ottomans. On 10 June 1916 his forces attacked the Ottoman garrison at Mecca. Backed by British gold, weapons and officers such as T. E. Lawrence, Arab forces under his son Faisal took Aqaba in July 1917 and reached Damascus at the end of September 1918.",
-        "lonlat": [
-          39.83,
-          21.42
-        ],
-        "kind": "other"
-      },
-      {
-        "date": "1916-07-01",
-        "year": 1916,
-        "label": "1 Jul 1916",
-        "text": "The Battle of the Somme begins",
-        "detail": "Britain and France attacked along the River Somme on 1 July 1916, partly to relieve Verdun. On the first day the British army suffered about 57,500 casualties, including some 19,200 dead, the worst single day in its history. The battle lasted until 18 November and gained only a few miles; British, French and German losses together exceeded a million, and tanks made their first appearance there.",
-        "lonlat": [
-          2.7,
-          50.01
-        ],
-        "kind": "battle"
-      },
-      {
-        "date": "1916-08-27",
-        "year": 1916,
-        "label": "27 Aug 1916",
-        "text": "Romania enters the war on the Allied side",
-        "detail": "Encouraged by the Brusilov Offensive and promised Austro-Hungarian Transylvania, Romania declared war and began hostilities against Austria-Hungary on 27 August 1916. German, Austro-Hungarian, Bulgarian and Ottoman forces counter-attacked from two sides, and Bucharest fell on 6 December. Romania's government and army held on in Moldavia but, isolated after Russia's collapse, signed a separate peace in May 1918, then re-entered the war on 10 November 1918.",
-        "lonlat": [
-          26.1,
-          44.43
-        ],
-        "kind": "political"
-      },
-      {
-        "date": "1917-03-15",
-        "year": 1917,
-        "label": "15 Mar 1917",
-        "text": "Revolution in Petrograd forces the Tsar to abdicate",
-        "detail": "War losses, food shortages and distrust of the government fuelled protests in Petrograd from 8 March 1917 (February in Russia's old calendar). Troops joined the crowds, and Tsar Nicholas II abdicated on 15 March. A Provisional Government kept Russia in the war, but its 1917 summer offensive failed and the army began to disintegrate, while soviets of workers and soldiers competed for power.",
-        "lonlat": [
-          30.32,
-          59.94
-        ],
-        "kind": "political"
-      },
-      {
-        "date": "1917-04-06",
-        "year": 1917,
-        "label": "6 Apr 1917",
-        "text": "The United States declares war on Germany",
-        "detail": "Germany resumed unrestricted submarine warfare on 1 February 1917, gambling that it could starve Britain before American forces arrived. The intercepted Zimmermann telegram, in which Germany proposed an alliance with Mexico, further angered American opinion. The United States declared war on Germany on 6 April 1917 as an 'associated power', and its troops reached the Western Front in growing numbers through 1918.",
-        "lonlat": [
-          -77.01,
-          38.89
-        ],
-        "kind": "political"
-      },
-      {
-        "date": "1917-10-24",
-        "year": 1917,
-        "label": "24 Oct 1917",
-        "text": "Austro-German breakthrough at Caporetto",
-        "detail": "On 24 October 1917 Austro-Hungarian and German divisions, using gas and infiltration tactics, broke the Italian line at Caporetto on the Isonzo. The Italian army fell back to the Piave River, losing very large numbers of men, many of them as prisoners. Britain and France rushed divisions to Italy, General Cadorna was replaced as commander, and the new line on the Piave held through the winter and against a final Austro-Hungarian offensive in June 1918.",
-        "lonlat": [
-          13.56,
-          46.26
-        ],
-        "kind": "battle"
-      },
-      {
-        "date": "1917-11-07",
-        "year": 1917,
-        "label": "7 Nov 1917",
-        "text": "The Bolsheviks seize power in Russia",
-        "detail": "Led by Lenin, the Bolsheviks overthrew the Provisional Government in Petrograd on 7 November 1917 (25 October in the old calendar), promising peace, land and bread. The new government agreed an armistice with the Central Powers on 15 December. Peace talks opened at Brest-Litovsk. Russia's withdrawal let Germany move many divisions to the Western Front for a final offensive, while Russia itself slid into a long civil war between the Bolsheviks and their opponents.",
-        "lonlat": [
-          30.32,
-          59.94
-        ],
-        "kind": "political"
-      },
-      {
-        "date": "1917-12-11",
-        "year": 1917,
-        "label": "11 Dec 1917",
-        "text": "British forces enter Jerusalem",
-        "detail": "After failing twice at Gaza, the British Egyptian Expeditionary Force under General Allenby broke through the Ottoman line at Beersheba and Gaza in autumn 1917. On 11 December Allenby entered Jerusalem on foot. British troops had also taken Baghdad in March, and the Balfour Declaration of 2 November had promised support for a Jewish national home in Palestine, shaping the region's postwar history.",
-        "lonlat": [
-          35.23,
-          31.78
-        ],
-        "kind": "battle"
-      },
-      {
-        "date": "1918-03-03",
-        "year": 1918,
-        "label": "3 Mar 1918",
-        "text": "Russia makes peace at Brest-Litovsk",
-        "detail": "Soviet Russia signed the Treaty of Brest-Litovsk with Germany, Austria-Hungary, the Ottoman Empire and Bulgaria on 3 March 1918. Russia gave up Finland, the Baltic lands, Poland, most of Belarus and Ukraine, and Kars, Ardahan and Batum in the Caucasus. German troops occupied much of this territory, though Germany still kept large forces in the East. The treaty ended the Eastern Front for the Central Powers and was annulled after Germany's defeat in November 1918.",
-        "lonlat": [
-          23.69,
-          52.1
-        ],
-        "kind": "treaty"
-      },
-      {
-        "date": "1918-03-21",
-        "year": 1918,
-        "label": "21 Mar 1918",
-        "text": "Germany launches its Spring Offensive in the West",
-        "detail": "With divisions freed from Russia, Germany tried to win in the West before American strength could tell. Operation Michael began on 21 March 1918 near Saint-Quentin and drove the British back many miles; further offensives followed into July, reaching the Marne again. The attacks gained ground but cost Germany its best troops and failed to break the Allied armies, now under a single commander, Ferdinand Foch.",
-        "lonlat": [
-          3.29,
-          49.85
-        ],
-        "kind": "battle"
-      },
-      {
-        "date": "1918-08-08",
-        "year": 1918,
-        "label": "8 Aug 1918",
-        "text": "Allied victory at Amiens opens the Hundred Days Offensive",
-        "detail": "After stopping the last German attack on the Marne in July, the Allies struck back. On 8 August British, Australian, Canadian and French forces attacked east of Amiens with tanks, aircraft and artillery and advanced several miles in a day. A series of Allied offensives followed, including the American-led Meuse–Argonne offensive from 26 September, pushing German armies back towards their own border.",
-        "lonlat": [
-          2.53,
-          49.85
-        ],
-        "kind": "turning-point"
-      },
-      {
-        "date": "1918-09-19",
-        "year": 1918,
-        "label": "19–25 Sep 1918",
-        "text": "Allenby routs the Ottoman armies at Megiddo",
-        "detail": "In Palestine, British Empire forces under Allenby, with Arab Revolt forces on their flank, attacked the Ottoman line on 19 September 1918. Cavalry broke through and the Ottoman armies in Palestine collapsed within days. Damascus was reached at the end of September, and the Ottoman Empire signed the Armistice of Mudros on 30 October, after Bulgaria had already signed an armistice on 29–30 September.",
-        "lonlat": [
-          35.18,
-          32.58
-        ],
-        "kind": "battle"
-      },
-      {
-        "date": "1918-11-03",
-        "year": 1918,
-        "label": "3 Nov 1918",
-        "text": "Austria-Hungary signs an armistice after Vittorio Veneto",
-        "detail": "Italy launched its offensive at Vittorio Veneto on 24 October 1918 as Austria-Hungary was breaking up into national states. The Austro-Hungarian army disintegrated, and on 3 November an armistice was signed at Villa Giusti near Padua, taking effect the next day. The Habsburg monarchy dissolved within days, as Czechoslovakia, Hungary and the new South Slav state went their own ways. Germany was now the only Central Power still fighting.",
-        "lonlat": [
-          11.88,
-          45.42
-        ],
-        "kind": "treaty"
-      },
-      {
-        "date": "1918-11-11",
-        "year": 1918,
-        "label": "11 Nov 1918",
-        "text": "Germany signs the armistice at Compiègne",
-        "detail": "With its allies gone, its armies in retreat and revolution spreading at home, Germany sought terms. Kaiser Wilhelm II abdicated on 9 November, and German delegates signed the armistice in a railway carriage in the forest of Compiègne early on 11 November; fighting stopped at 11 a.m. The peace treaties followed, including the Treaty of Versailles with Germany on 28 June 1919.",
-        "lonlat": [
-          2.91,
-          49.43
-        ],
-        "kind": "treaty"
-      }
-    ],
-    "sources": [
-      {
-        "title": "Wikipedia: World War I",
-        "url": "https://en.wikipedia.org/wiki/World_War_I"
-      },
-      {
-        "title": "Wikipedia: Timeline of World War I",
-        "url": "https://en.wikipedia.org/wiki/Timeline_of_World_War_I"
-      },
-      {
-        "title": "Wikipedia: Allies of World War I",
-        "url": "https://en.wikipedia.org/wiki/Allies_of_World_War_I"
-      },
-      {
-        "title": "Wikipedia: World War I casualties",
-        "url": "https://en.wikipedia.org/wiki/World_War_I_casualties"
-      },
-      {
-        "title": "Wikipedia: Treaty of Brest-Litovsk",
-        "url": "https://en.wikipedia.org/wiki/Treaty_of_Brest-Litovsk"
-      },
-      {
-        "title": "Wikipedia: Armenian genocide",
-        "url": "https://en.wikipedia.org/wiki/Armenian_genocide"
-      },
-      {
-        "title": "Wikipedia: Arab Revolt",
-        "url": "https://en.wikipedia.org/wiki/Arab_Revolt"
-      }
+ {
+  "id": "world-war-i",
+  "name": "First World War",
+  "moment": "world-war-i",
+  "span": [
+   1914,
+   1918
+  ],
+  "dateLabel": "28 July 1914 – 11 November 1918",
+  "summary": "The First World War began a month after the assassination of Archduke Franz Ferdinand in Sarajevo on 28 June 1914. Austria-Hungary declared war on Serbia, and within days the alliance system drew in the great powers. Germany and Austria-Hungary, joined by the Ottoman Empire in 1914 and Bulgaria in 1915, formed the Central Powers. Serbia, Russia, France, Belgium and the British Empire formed the Allies, or Entente, joined by Japan (1914), Italy (1915), Portugal and Romania (1916), and the United States, Greece, Siam, China and Brazil (1917). After the Marne the Western Front froze into trench warfare, while fighting spread to Eastern Europe, the Alps, the Balkans, the Middle East, Africa, East Asia and the oceans. Revolution took Russia out of the war in 1917–18. Germany's spring offensive of 1918 failed, Allied counter-offensives followed, and the Central Powers signed armistices between September and 11 November 1918. Four empires collapsed, and the peace treaties redrew the map of Europe and the Middle East.",
+  "casualties": "An estimated 15 to 22 million soldiers and civilians died, with many millions more wounded.",
+  "sides": [
+   {
+    "name": "Allies (Entente)",
+    "members": [
+     {
+      "clio": "(British Empire)",
+      "from": 1914,
+      "to": 1918
+     },
+     {
+      "clio": "(French Third Republic)",
+      "from": 1914,
+      "to": 1918
+     },
+     {
+      "clio": "Russian Empire",
+      "from": 1914,
+      "to": 1916
+     },
+     {
+      "clio": "Russian Republic",
+      "from": 1917,
+      "to": 1917,
+      "toDate": "1917-12-15"
+     },
+     {
+      "clio": "Serbs",
+      "from": 1914,
+      "to": 1915
+     },
+     {
+      "clio": "Serbia",
+      "from": 1918,
+      "to": 1918
+     },
+     {
+      "clio": "Montenegro",
+      "from": 1914,
+      "to": 1915
+     },
+     {
+      "clio": "Kingdom of Belgium",
+      "from": 1914,
+      "to": 1918
+     },
+     {
+      "clio": "Belgian Congo",
+      "from": 1914,
+      "to": 1918
+     },
+     {
+      "clio": "Empire of Japan",
+      "from": 1914,
+      "to": 1918,
+      "fromDate": "1914-08-23"
+     },
+     {
+      "clio": "Commonwealth of Australia",
+      "from": 1914,
+      "to": 1918
+     },
+     {
+      "clio": "Kingdom of Italy",
+      "from": 1915,
+      "to": 1918,
+      "fromDate": "1915-05-23"
+     },
+     {
+      "clio": "Italian Africa",
+      "from": 1915,
+      "to": 1918,
+      "fromDate": "1915-05-23"
+     },
+     {
+      "clio": "Portuguese Republic",
+      "from": 1916,
+      "to": 1918,
+      "fromDate": "1916-03-09"
+     },
+     {
+      "clio": "United Principalities of Moldavia and Wallachia",
+      "from": 1916,
+      "to": 1916,
+      "fromDate": "1916-08-27"
+     },
+     {
+      "clio": "Kingdom of Hejaz",
+      "from": 1916,
+      "to": 1918,
+      "fromDate": "1916-06-10"
+     },
+     {
+      "clio": "United States of America",
+      "from": 1917,
+      "to": 1918,
+      "fromDate": "1917-04-06"
+     },
+     {
+      "clio": "First Hellenic Republic",
+      "from": 1917,
+      "to": 1918,
+      "fromDate": "1917-06-30"
+     },
+     {
+      "clio": "Rattanakosin Kingdom",
+      "from": 1917,
+      "to": 1918,
+      "fromDate": "1917-07-22"
+     },
+     {
+      "clio": "Kuomintang",
+      "from": 1917,
+      "to": 1918,
+      "fromDate": "1917-08-14"
+     },
+     {
+      "clio": "Brazilian Republic",
+      "from": 1917,
+      "to": 1918,
+      "fromDate": "1917-10-26"
+     },
+     {
+      "clio": "Republic of Liberia",
+      "from": 1917,
+      "to": 1918,
+      "fromDate": "1917-08-04"
+     }
     ]
-  },
-  {
-    "id": "world-war-ii",
-    "name": "Second World War",
-    "moment": "world-war-ii",
-    "span": [
-      1939,
-      1945
-    ],
-    "dateLabel": "1 September 1939 – 2 September 1945",
-    "summary": "The Second World War began when Nazi Germany invaded Poland on 1 September 1939 and Britain and France declared war; Japan had been at war with China since July 1937. Germany, with the Soviet Union bound to it by a non-aggression pact, overran Poland, Denmark, Norway, the Low Countries and France by June 1940, when Italy joined it. The Tripartite Pact of September 1940 tied Germany, Italy and Japan together as the Axis, later joined by Hungary, Romania, Bulgaria and others. Germany's invasion of the Soviet Union in June 1941 and Japan's attack on Pearl Harbor in December 1941 brought the Soviet Union and the United States into the Allied coalition alongside Britain, China and the exiled governments. After turning points at Midway, Guadalcanal and Stalingrad, the Allies invaded Italy and France while the Red Army advanced from the east. Germany surrendered on 8 May 1945. Japan, after the atomic bombings and the Soviet declaration of war, announced its surrender on 15 August and signed it on 2 September 1945.",
-    "casualties": "An estimated 60 million to more than 75 million people died, most of them civilians, including about six million Jews murdered in the Holocaust.",
-    "sides": [
-      {
-        "name": "Allies",
-        "members": [
-          {
-            "clio": "Second Polish Republic",
-            "from": 1939,
-            "to": 1939
-          },
-          {
-            "clio": "(British Empire)",
-            "from": 1939,
-            "to": 1945
-          },
-          {
-            "clio": "(French Third Republic)",
-            "from": 1939,
-            "to": 1939
-          },
-          {
-            "clio": "Free French",
-            "from": 1940,
-            "to": 1944
-          },
-          {
-            "clio": "French Africa",
-            "from": 1943,
-            "to": 1944
-          },
-          {
-            "clio": "(French Fourth Republic)",
-            "from": 1945,
-            "to": 1945
-          },
-          {
-            "clio": "Commonwealth of Australia",
-            "from": 1939,
-            "to": 1945
-          },
-          {
-            "clio": "Canada",
-            "from": 1939,
-            "to": 1945
-          },
-          {
-            "clio": "South Africa",
-            "from": 1939,
-            "to": 1945
-          },
-          {
-            "clio": "Kingdom of Norway",
-            "from": 1940,
-            "to": 1945
-          },
-          {
-            "clio": "(Netherlands)",
-            "from": 1940,
-            "to": 1942
-          },
-          {
-            "clio": "(Netherlands)",
-            "from": 1945,
-            "to": 1945
-          },
-          {
-            "clio": "Belgian Congo",
-            "from": 1940,
-            "to": 1945
-          },
-          {
-            "clio": "Kingdom of Belgium",
-            "from": 1945,
-            "to": 1945
-          },
-          {
-            "clio": "First Hellenic Republic",
-            "from": 1940,
-            "to": 1940
-          },
-          {
-            "clio": "Kingdom of Greece",
-            "from": 1945,
-            "to": 1945
-          },
-          {
-            "clio": "Yugoslav Partisans",
-            "from": 1944,
-            "to": 1944
-          },
-          {
-            "clio": "Yugoslavia",
-            "from": 1945,
-            "to": 1945
-          },
-          {
-            "clio": "French Mandate for Syria and Lebanon",
-            "from": 1941,
-            "to": 1945
-          },
-          {
-            "clio": "Union of Soviet Socialist Republics",
-            "from": 1941,
-            "to": 1945
-          },
-          {
-            "clio": "United States of America",
-            "from": 1941,
-            "to": 1945
-          },
-          {
-            "clio": "Republic of China",
-            "from": 1939,
-            "to": 1945
-          },
-          {
-            "clio": "Communist Party of China",
-            "from": 1939,
-            "to": 1945
-          },
-          {
-            "clio": "Mexico",
-            "from": 1942,
-            "to": 1945
-          },
-          {
-            "clio": "Unitary State of Brazil",
-            "from": 1942,
-            "to": 1945
-          },
-          {
-            "clio": "Ethiopia",
-            "from": 1942,
-            "to": 1945
-          },
-          {
-            "clio": "Kingdom of Italy",
-            "from": 1944,
-            "to": 1945
-          },
-          {
-            "clio": "Mongolian People's Republic",
-            "from": 1945,
-            "to": 1945
-          }
-        ]
-      },
-      {
-        "name": "Axis",
-        "members": [
-          {
-            "clio": "Nazi Germany",
-            "from": 1939,
-            "to": 1944
-          },
-          {
-            "clio": "Empire of Japan",
-            "from": 1939,
-            "to": 1945
-          },
-          {
-            "clio": "Kingdom of Italy",
-            "from": 1940,
-            "to": 1943
-          },
-          {
-            "clio": "Italian Africa",
-            "from": 1940,
-            "to": 1943
-          },
-          {
-            "clio": "Hungarian Republic",
-            "from": 1941,
-            "to": 1943
-          },
-          {
-            "clio": "Kingdom of Romania",
-            "from": 1941,
-            "to": 1944
-          },
-          {
-            "clio": "Principality of Bulgaria",
-            "from": 1941,
-            "to": 1944
-          },
-          {
-            "clio": "Independent State of Croatia",
-            "from": 1941,
-            "to": 1944
-          },
-          {
-            "clio": "Republic of Finland",
-            "from": 1941,
-            "to": 1944
-          },
-          {
-            "clio": "Kingdom of Thailand",
-            "from": 1942,
-            "to": 1945
-          }
-        ]
-      },
-      {
-        "name": "Vichy France (collaborationist, officially neutral)",
-        "members": [
-          {
-            "clio": "(Vichy France)",
-            "from": 1940,
-            "to": 1942
-          },
-          {
-            "clio": "French Mandate for Syria and Lebanon",
-            "from": 1940,
-            "to": 1940
-          },
-          {
-            "clio": "Vichy France",
-            "from": 1943,
-            "to": 1943
-          },
-          {
-            "clio": "French Indochina",
-            "from": 1943,
-            "to": 1944
-          }
-        ]
-      }
-    ],
-    "events": [
-      {
-        "date": "1939-09-01",
-        "year": 1939,
-        "label": "1 Sep 1939",
-        "text": "Germany invades Poland",
-        "detail": "In August 1939 Germany and the Soviet Union signed a non-aggression pact that secretly divided eastern Europe between them. On 1 September German forces invaded Poland from the west, north and south, using massed armour and air power. Poland's army fought for over a month, but Warsaw surrendered in late September and the last Polish units in early October, and Poland was partitioned.",
-        "lonlat": [
-          21.01,
-          52.23
-        ],
-        "kind": "invasion"
-      },
-      {
-        "date": "1939-09-03",
-        "year": 1939,
-        "label": "3 Sep 1939",
-        "text": "Britain and France declare war on Germany",
-        "detail": "Britain and France had guaranteed Poland's independence, and when Germany ignored their demand to withdraw they declared war on 3 September 1939. Australia, New Zealand, South Africa and Canada followed within days, and India was committed by its viceroy. Little fighting followed in the West for months, the so-called Phoney War, while the war at sea began at once, with U-boats attacking Allied shipping in the Atlantic.",
-        "lonlat": [
-          -0.13,
-          51.5
-        ],
-        "kind": "political"
-      },
-      {
-        "date": "1939-09-17",
-        "year": 1939,
-        "label": "17 Sep 1939",
-        "text": "The Soviet Union invades eastern Poland",
-        "detail": "Under the secret terms of its pact with Germany, the Soviet Union invaded Poland from the east on 17 September 1939, and the two powers divided the country. The Soviet Union went on to force bases on the Baltic states, invade Finland in November 1939 in the Winter War, and annex the Baltic states and parts of Romania in 1940, though it stayed formally neutral in the wider war.",
-        "lonlat": [
-          24.03,
-          49.84
-        ],
-        "kind": "invasion"
-      },
-      {
-        "date": "1940-04-09",
-        "year": 1940,
-        "label": "9 Apr 1940",
-        "text": "Germany invades Denmark and Norway",
-        "detail": "Germany wanted Norway's ports for its navy and U-boats and to protect iron-ore shipments from Sweden through Narvik. On 9 April 1940 it invaded Denmark, which capitulated within hours, and Norway, where British, French and Polish troops landed to help. The Allies withdrew in early June as France collapsed, and the Norwegian army on the mainland surrendered on 10 June; Norway's king and government went into exile in London.",
-        "lonlat": [
-          10.75,
-          59.91
-        ],
-        "kind": "invasion"
-      },
-      {
-        "date": "1940-05-10",
-        "year": 1940,
-        "label": "10 May 1940",
-        "text": "Germany attacks France and the Low Countries",
-        "detail": "On 10 May 1940 Germany invaded the Netherlands, Belgium and Luxembourg. Its main armoured thrust came through the Ardennes, crossing the Meuse at Sedan and racing to the Channel, cutting off the Allied armies in Belgium. The Netherlands surrendered within days and Belgium at the end of May, while more than 340,000 Allied troops were evacuated from Dunkirk by early June.",
-        "lonlat": [
-          4.94,
-          49.7
-        ],
-        "kind": "invasion"
-      },
-      {
-        "date": "1940-06-10",
-        "year": 1940,
-        "label": "10 Jun 1940",
-        "text": "Italy declares war on Britain and France",
-        "detail": "Mussolini's Italy, allied to Germany by the Pact of Steel in 1939, stayed out of the fighting until France was clearly beaten. On 10 June 1940 Italy declared war on Britain and France and attacked in the Alps. Italy's entry spread the war to the Mediterranean, North Africa and East Africa, where Italian colonies bordered British-held Egypt, Sudan and Kenya.",
-        "lonlat": [
-          12.5,
-          41.9
-        ],
-        "kind": "political"
-      },
-      {
-        "date": "1940-06-22",
-        "year": 1940,
-        "label": "22 Jun 1940",
-        "text": "France signs an armistice; the Vichy regime follows",
-        "detail": "With Paris taken on 14 June, Marshal Philippe Pétain's new government sought terms. The armistice was signed on 22 June in the forest of Compiègne, in the carriage used in 1918. Germany occupied the north and the Atlantic coast, while a French government based at Vichy ran the rest and the colonies. In London, General Charles de Gaulle called on the French to keep fighting, founding Free France.",
-        "lonlat": [
-          2.91,
-          49.43
-        ],
-        "kind": "treaty"
-      },
-      {
-        "date": "1940-07-10",
-        "year": 1940,
-        "label": "10 Jul 1940",
-        "text": "The Battle of Britain begins",
-        "detail": "Germany needed control of the air before it could invade Britain. From 10 July to 31 October 1940 the Luftwaffe attacked shipping, airfields and then cities, but the Royal Air Force, aided by radar, was not defeated. Hitler postponed the planned invasion indefinitely. It was Germany's first major defeat of the war. Night bombing of British cities, the Blitz, continued from September 1940 until May 1941.",
-        "lonlat": [
-          -0.13,
-          51.5
-        ],
-        "kind": "battle"
-      },
-      {
-        "date": "1940-09-27",
-        "year": 1940,
-        "label": "27 Sep 1940",
-        "text": "Germany, Italy and Japan sign the Tripartite Pact",
-        "detail": "On 27 September 1940 Germany, Italy and Japan signed the Tripartite Pact in Berlin, pledging to support each other against any new enemy, a warning aimed at the United States. Hungary, Romania and Slovakia joined in November 1940, Bulgaria in March 1941, and Croatia after its creation. Thailand allied with Japan in December 1941 and declared war on Britain and the United States in January 1942.",
-        "lonlat": [
-          13.4,
-          52.52
-        ],
-        "kind": "treaty"
-      },
-      {
-        "date": "1941-04-06",
-        "year": 1941,
-        "label": "6 Apr 1941",
-        "text": "Axis invasion of Yugoslavia and Greece",
-        "detail": "Italy had invaded Greece in October 1940 but was driven back into Albania, and British troops arrived to help Greece. On 6 April 1941 Germany, with Italian and Hungarian forces, invaded Yugoslavia, whose government had just been overthrown for joining the Axis, and Greece. Both were conquered within weeks, Crete fell in May, and Yugoslavia was carved up, including a new Axis-aligned Independent State of Croatia.",
-        "lonlat": [
-          20.46,
-          44.82
-        ],
-        "kind": "invasion"
-      },
-      {
-        "date": "1941-06-22",
-        "year": 1941,
-        "label": "22 Jun 1941",
-        "text": "Germany invades the Soviet Union",
-        "detail": "On 22 June 1941 Germany and its allies, including Romania, Finland and Hungary, launched Operation Barbarossa, a vast invasion along a front from the Baltic to the Black Sea. Huge Soviet armies were encircled and German forces reached the outskirts of Leningrad and Moscow by late 1941, where a Soviet counter-offensive in December pushed them back. The Soviet Union now joined Britain as an ally.",
-        "lonlat": [
-          23.69,
-          52.1
-        ],
-        "kind": "invasion"
-      },
-      {
-        "date": "1941-12-07",
-        "year": 1941,
-        "label": "7 Dec 1941",
-        "text": "Japan attacks Pearl Harbor and Western colonies in Asia",
-        "detail": "After the United States embargoed oil exports over Japan's occupation of French Indochina, Japan struck. On 7 December 1941 its carrier aircraft attacked the US Pacific Fleet at Pearl Harbor, killing 2,403 Americans, while other forces attacked the Philippines, Guam, Wake, Malaya, Thailand and Hong Kong. The United States declared war on Japan the next day, and Germany and Italy declared war on the United States on 11 December.",
-        "lonlat": [
-          -157.95,
-          21.36
-        ],
-        "kind": "battle"
-      },
-      {
-        "date": "1942-01-20",
-        "year": 1942,
-        "label": "20 Jan 1942",
-        "text": "Nazi officials coordinate the 'Final Solution' at Wannsee",
-        "detail": "Mass shootings of Jews by German units in the occupied Soviet Union had begun in 1941. On 20 January 1942 SS General Reinhard Heydrich convened senior officials at a villa at Wannsee in Berlin to coordinate the deportation of Europe's Jews to be killed, mostly in occupied Poland. Through killing centres such as Auschwitz-Birkenau, the Nazis and their collaborators murdered about six million Jews in the Holocaust.",
-        "lonlat": [
-          13.17,
-          52.43
-        ],
-        "kind": "atrocity"
-      },
-      {
-        "date": "1942-02-15",
-        "year": 1942,
-        "label": "15 Feb 1942",
-        "text": "Singapore surrenders to Japan",
-        "detail": "Japanese forces landed in Malaya in December 1941 and advanced rapidly down the peninsula. Singapore, Britain's main base in Asia, surrendered on 15 February 1942, and about 80,000 British, Indian, Australian and local troops became prisoners. Churchill called it the worst disaster in British military history. By May Japan had also taken the Dutch East Indies, the Philippines and most of Burma.",
-        "lonlat": [
-          103.82,
-          1.35
-        ],
-        "kind": "battle"
-      },
-      {
-        "date": "1942-06-04",
-        "year": 1942,
-        "label": "4–7 Jun 1942",
-        "text": "The US Navy defeats Japan at Midway",
-        "detail": "Japan tried to draw the remaining US carriers into a decisive battle by attacking Midway atoll. Forewarned by codebreakers, US aircraft sank all four Japanese fleet carriers in the attacking force, Akagi, Kaga, Sōryū and Hiryū, between 4 and 7 June 1942, for the loss of the carrier Yorktown. Japan could not replace the ships and trained aircrew, and the battle is widely seen as a turning point in the Pacific.",
-        "lonlat": [
-          -177.37,
-          28.21
-        ],
-        "kind": "turning-point"
-      },
-      {
-        "date": "1942-08-07",
-        "year": 1942,
-        "label": "7 Aug 1942",
-        "text": "US Marines land on Guadalcanal",
-        "detail": "Japan was building an airfield on Guadalcanal in the Solomon Islands that threatened links between the United States and Australia. US Marines landed on 7 August 1942 in the first major Allied land offensive against Japan. Months of fighting on land, at sea and in the air followed, until Japan evacuated its last troops on 9 February 1943, ceding the initiative in the Pacific to the Allies.",
-        "lonlat": [
-          160.0,
-          -9.43
-        ],
-        "kind": "battle"
-      },
-      {
-        "date": "1942-11-08",
-        "year": 1942,
-        "label": "8 Nov 1942",
-        "text": "Allied landings in Vichy North Africa (Operation Torch)",
-        "detail": "Days after the British victory at El Alamein in Egypt, American and British forces landed in Vichy-ruled Morocco and Algeria on 8 November 1942. After brief fighting, Admiral Darlan ordered French forces to stop on 10 November, and French North Africa went over to the Allies. Germany responded by occupying the rest of France on 11 November. Axis forces in Tunisia surrendered by 13 May 1943.",
-        "lonlat": [
-          -7.59,
-          33.57
-        ],
-        "kind": "invasion"
-      },
-      {
-        "date": "1943-02-02",
-        "year": 1943,
-        "label": "2 Feb 1943",
-        "text": "The German Sixth Army surrenders at Stalingrad",
-        "detail": "German forces had attacked Stalingrad on the Volga in the summer of 1942 and nearly taken the city by November. On 19 November the Red Army counter-attacked against the Romanian armies on the flanks and encircled the German Sixth Army. Its commander, Friedrich Paulus, surrendered on 2 February 1943, and about 235,000 Axis soldiers were captured. The Soviet Union kept the initiative on the Eastern Front for the rest of the war.",
-        "lonlat": [
-          44.52,
-          48.71
-        ],
-        "kind": "turning-point"
-      },
-      {
-        "date": "1943-07-05",
-        "year": 1943,
-        "label": "5 Jul 1943",
-        "text": "The Battle of Kursk",
-        "detail": "Germany's last major offensive in the East began on 5 July 1943, when its armies attacked the Soviet salient around Kursk from north and south. Soviet forces had prepared deep defences and held, and on 12 July they launched their own counter-offensive. Kursk, which included some of the largest tank battles of the war, ended Germany's ability to mount strategic offensives on the Eastern Front.",
-        "lonlat": [
-          36.19,
-          51.73
-        ],
-        "kind": "battle"
-      },
-      {
-        "date": "1943-07-09",
-        "year": 1943,
-        "label": "9 Jul 1943",
-        "text": "Allied invasion of Sicily; Italy changes sides",
-        "detail": "After victory in North Africa, the Allies invaded Sicily on 9 July 1943. Mussolini was deposed on 25 July, and the new Italian government signed an armistice, announced on 8 September, as the Allies landed on the mainland. Germany occupied most of Italy, freed Mussolini and set up a puppet state in the north, while the royal government joined the Allies as a co-belligerent.",
-        "lonlat": [
-          14.25,
-          37.07
-        ],
-        "kind": "invasion"
-      },
-      {
-        "date": "1944-06-06",
-        "year": 1944,
-        "label": "6 Jun 1944",
-        "text": "D-Day: the Allied landings in Normandy",
-        "detail": "After years of preparation, Allied forces landed on five Normandy beaches, Utah, Omaha, Gold, Juno and Sword, on 6 June 1944, preceded by airborne drops. More than 156,000 soldiers came ashore on the first day in the largest seaborne invasion in history, carried by about 5,000 ships. After weeks of hard fighting the Allies broke out in late July and advanced across France.",
-        "lonlat": [
-          -0.57,
-          49.34
-        ],
-        "kind": "invasion"
-      },
-      {
-        "date": "1944-06-22",
-        "year": 1944,
-        "label": "22 Jun 1944",
-        "text": "Operation Bagration destroys German Army Group Centre",
-        "detail": "Three years to the day after the German invasion, the Red Army launched a massive offensive in Belarus on 22 June 1944. Army Group Centre's front collapsed, Minsk was liberated on 4 July, and by August Soviet forces had reached the Vistula near Warsaw and the border of East Prussia. With about 450,000 German casualties, it was among the heaviest German defeats of the war.",
-        "lonlat": [
-          27.56,
-          53.9
-        ],
-        "kind": "battle"
-      },
-      {
-        "date": "1944-08-25",
-        "year": 1944,
-        "label": "25 Aug 1944",
-        "text": "Paris is liberated; Romania leaves the Axis",
-        "detail": "As Allied armies broke out of Normandy and landed in southern France, the French Resistance rose in Paris, and French and American troops entered the city on 25 August 1944. Two days earlier a coup in Romania had taken it out of the Axis, and Bulgaria followed in September. Romania's oilfields were lost to Germany, and by the autumn it was losing allies and territory on every front.",
-        "lonlat": [
-          2.35,
-          48.86
-        ],
-        "kind": "turning-point"
-      },
-      {
-        "date": "1944-10-23",
-        "year": 1944,
-        "label": "23–26 Oct 1944",
-        "text": "The Battle of Leyte Gulf",
-        "detail": "US forces landed on Leyte in the Philippines on 20 October 1944. Japan sent almost its whole remaining fleet to attack the landings, and from 23 to 26 October the largest naval battle of the war was fought around the islands. The Japanese navy suffered crippling losses and never again sailed in comparable force. The battle also saw the first organised kamikaze attacks.",
-        "lonlat": [
-          125.0,
-          11.0
-        ],
-        "kind": "battle"
-      },
-      {
-        "date": "1944-12-16",
-        "year": 1944,
-        "label": "16 Dec 1944",
-        "text": "Germany's Ardennes offensive: the Battle of the Bulge",
-        "detail": "With the Allies nearing Germany's western border, Hitler gambled on a surprise winter offensive through the Ardennes on 16 December 1944, aiming to split the Allied armies and retake Antwerp. German forces made a deep bulge in the American line but were held at key points such as Bastogne, and the offensive was repulsed by mid-January 1945, using up Germany's last reserves in the West.",
-        "lonlat": [
-          5.72,
-          50.0
-        ],
-        "kind": "battle"
-      },
-      {
-        "date": "1945-04-01",
-        "year": 1945,
-        "label": "1 Apr 1945",
-        "text": "US forces invade Okinawa",
-        "detail": "The Allies needed bases close to Japan for the planned invasion. US forces landed on Okinawa on 1 April 1945 and fought until organised resistance ended on 22 June, under waves of kamikaze attacks at sea. About 94,000 Japanese soldiers and some 12,500 Americans died, and estimates of Okinawan civilian deaths range from 40,000 to 150,000, foreshadowing the cost of invading Japan itself.",
-        "lonlat": [
-          127.68,
-          26.21
-        ],
-        "kind": "battle"
-      },
-      {
-        "date": "1945-05-08",
-        "year": 1945,
-        "label": "8 May 1945",
-        "text": "Germany surrenders unconditionally",
-        "detail": "Soviet forces stormed Berlin in late April 1945 while American and British armies advanced from the west; Hitler killed himself on 30 April. German commanders signed an unconditional surrender at Reims on 7 May and a definitive act in Berlin-Karlshorst, which took effect at 23:01 on 8 May. The Western Allies celebrate Victory in Europe Day on 8 May, while Russia marks Victory Day on 9 May.",
-        "lonlat": [
-          13.53,
-          52.49
-        ],
-        "kind": "treaty"
-      },
-      {
-        "date": "1945-08-06",
-        "year": 1945,
-        "label": "6 Aug 1945",
-        "text": "The United States drops an atomic bomb on Hiroshima",
-        "detail": "Japan rejected the Allied demand for unconditional surrender issued at Potsdam in July. On 6 August 1945 a US bomber dropped an atomic bomb on Hiroshima, and a second destroyed much of Nagasaki on 9 August. Estimates of deaths by the end of 1945 are 90,000–166,000 in Hiroshima and 60,000–80,000 in Nagasaki. Historians still debate whether the bombings were justified.",
-        "lonlat": [
-          132.46,
-          34.39
-        ],
-        "kind": "turning-point"
-      },
-      {
-        "date": "1945-08-09",
-        "year": 1945,
-        "label": "9 Aug 1945",
-        "text": "The Soviet Union invades Japanese-held Manchuria",
-        "detail": "At Yalta in February 1945 Stalin had agreed to join the war against Japan within about three months of Germany's defeat. The Soviet Union declared war on 8 August and invaded Manchuria an hour later, and Mongolia joined on 10 August. Soviet forces quickly overran Manchukuo, Inner Mongolia, northern Korea, southern Sakhalin and the Kuril Islands, removing Japan's last hope of a negotiated peace.",
-        "lonlat": [
-          126.64,
-          45.75
-        ],
-        "kind": "invasion"
-      },
-      {
-        "date": "1945-09-02",
-        "year": 1945,
-        "label": "2 Sep 1945",
-        "text": "Japan signs the instrument of surrender",
-        "detail": "After the atomic bombings and the Soviet attack, Emperor Hirohito ordered acceptance of the Allied terms, and his recorded announcement of surrender was broadcast on 15 August 1945. Japanese representatives signed the instrument of surrender aboard the USS Missouri in Tokyo Bay on 2 September 1945, ending the Second World War. Japan was occupied, and its overseas empire was dismantled.",
-        "lonlat": [
-          139.75,
-          35.35
-        ],
-        "kind": "treaty"
-      }
-    ],
-    "sources": [
-      {
-        "title": "Wikipedia: World War II",
-        "url": "https://en.wikipedia.org/wiki/World_War_II"
-      },
-      {
-        "title": "Wikipedia: Axis powers",
-        "url": "https://en.wikipedia.org/wiki/Axis_powers"
-      },
-      {
-        "title": "Wikipedia: Allies of World War II",
-        "url": "https://en.wikipedia.org/wiki/Allies_of_World_War_II"
-      },
-      {
-        "title": "Wikipedia: Pacific War",
-        "url": "https://en.wikipedia.org/wiki/Pacific_War"
-      },
-      {
-        "title": "USHMM Holocaust Encyclopedia: Wannsee Conference and the \"Final Solution\"",
-        "url": "https://encyclopedia.ushmm.org/content/en/article/wannsee-conference-and-the-final-solution"
-      },
-      {
-        "title": "Wikipedia: Operation Torch",
-        "url": "https://en.wikipedia.org/wiki/Operation_Torch"
-      },
-      {
-        "title": "Wikipedia: Soviet–Japanese War",
-        "url": "https://en.wikipedia.org/wiki/Soviet%E2%80%93Japanese_War"
-      },
-      {
-        "title": "Wikipedia: Atomic bombings of Hiroshima and Nagasaki",
-        "url": "https://en.wikipedia.org/wiki/Atomic_bombings_of_Hiroshima_and_Nagasaki"
-      }
+   },
+   {
+    "name": "Central Powers",
+    "members": [
+     {
+      "clio": "German Empire",
+      "from": 1914,
+      "to": 1918
+     },
+     {
+      "clio": "German Africa",
+      "from": 1914,
+      "to": 1918
+     },
+     {
+      "clio": "Austria-Hungary",
+      "from": 1914,
+      "to": 1918,
+      "toDate": "1918-11-03"
+     },
+     {
+      "clio": "Ottoman Empire",
+      "from": 1914,
+      "to": 1918,
+      "fromDate": "1914-10-29",
+      "toDate": "1918-10-30"
+     },
+     {
+      "clio": "Principality of Bulgaria",
+      "from": 1915,
+      "to": 1918,
+      "fromDate": "1915-10-14",
+      "toDate": "1918-09-29"
+     }
     ]
-  }
+   }
+  ],
+  "events": [
+   {
+    "date": "1914-06-28",
+    "year": 1914,
+    "label": "28 Jun 1914",
+    "text": "Archduke Franz Ferdinand assassinated in Sarajevo",
+    "detail": "Bosnia had been annexed by Austria-Hungary in 1908, angering Serbian nationalists. On 28 June 1914 Gavrilo Princip, a Bosnian Serb student, shot the heir to the Habsburg throne and his wife in Sarajevo. Austria-Hungary blamed Serbia and, assured of German backing, sent Belgrade an ultimatum it expected to be refused. The crisis of July 1914 turned a regional quarrel into a confrontation between Europe's two armed alliance blocs.",
+    "lonlat": [
+     18.43,
+     43.86
+    ],
+    "kind": "political"
+   },
+   {
+    "date": "1914-07-28",
+    "year": 1914,
+    "label": "28 Jul 1914",
+    "text": "Austria-Hungary declares war on Serbia",
+    "detail": "Serbia accepted most of the ultimatum but not all of it, and on 28 July Austria-Hungary declared war. Russia mobilised in support of Serbia; Germany declared war on Russia on 1 August and on France on 3 August. Mobilisation timetables and alliance commitments meant that a Balkan war became a continental one in under a week, before diplomacy could slow it down.",
+    "lonlat": [
+     20.46,
+     44.82
+    ],
+    "kind": "political"
+   },
+   {
+    "date": "1914-08-04",
+    "year": 1914,
+    "label": "4 Aug 1914",
+    "text": "Germany invades Belgium; Britain declares war",
+    "detail": "Germany's war plan aimed to knock out France quickly by swinging through neutral Belgium before turning east against Russia. German troops crossed the Belgian border on 4 August and besieged the fortresses of Liège. Britain, a guarantor of Belgian neutrality under the 1839 treaty, declared war on Germany the same day, bringing in its whole empire, including India, the dominions and its African colonies.",
+    "lonlat": [
+     5.57,
+     50.63
+    ],
+    "kind": "invasion"
+   },
+   {
+    "date": "1914-08-23",
+    "year": 1914,
+    "label": "23–30 Aug 1914",
+    "text": "Germany crushes a Russian army at Tannenberg",
+    "detail": "Russia attacked East Prussia sooner than Germany expected, forcing it to move troops east. Between 23 and 30 August German forces under Hindenburg and Ludendorff encircled and destroyed the Russian Second Army near Tannenberg, taking a very large number of prisoners. Russia was driven out of East Prussia, but its offensive had drawn German strength away from France at a critical moment.",
+    "lonlat": [
+     20.13,
+     53.5
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "1914-09-05",
+    "year": 1914,
+    "label": "5–12 Sep 1914",
+    "text": "The First Battle of the Marne halts the German advance",
+    "detail": "German armies sweeping through Belgium and northern France came within reach of Paris by early September. From 5 to 12 September French and British forces counter-attacked along the River Marne, opening a gap between German armies and forcing them to retreat to the Aisne. The quick victory Germany had planned was lost; both sides dug in, and trenches soon ran from the Channel coast to Switzerland.",
+    "lonlat": [
+     3.1,
+     48.95
+    ],
+    "kind": "turning-point"
+   },
+   {
+    "date": "1914-10-29",
+    "year": 1914,
+    "label": "29 Oct 1914",
+    "text": "Ottoman warships raid Russia's Black Sea ports",
+    "detail": "The Ottoman Empire had signed a secret alliance with Germany in August. On 29 October Ottoman warships, led by two ex-German cruisers, shelled Russian ports on the Black Sea. Russia declared war on 1 November and Britain and France followed. Ottoman entry closed the Straits to Allied supplies for Russia and opened new fronts in the Caucasus, Mesopotamia, Sinai and Palestine.",
+    "lonlat": [
+     30.73,
+     46.48
+    ],
+    "kind": "political"
+   },
+   {
+    "date": "1914-11-07",
+    "year": 1914,
+    "label": "7 Nov 1914",
+    "text": "Japan captures Germany's Chinese base at Tsingtao",
+    "detail": "Japan, allied to Britain since 1902, declared war on Germany on 23 August 1914 and moved against German possessions in Asia and the Pacific. Japanese forces, with a smaller British contingent, besieged the German naval base at Tsingtao on China's Shandong peninsula, which fell on 7 November. Japan also took Germany's island colonies north of the equator, extending its reach in East Asia.",
+    "lonlat": [
+     120.38,
+     36.07
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "1915-04-22",
+    "year": 1915,
+    "label": "22 Apr 1915",
+    "text": "Germany uses poison gas on a large scale at Ypres",
+    "detail": "On the Western Front neither side could break the trench lines. At the start of the Second Battle of Ypres, on 22 April 1915, German troops released chlorine gas against French and Algerian positions, opening a gap they could not exploit. Both sides went on to use chemical weapons throughout the war, and gas became one of the conflict's most feared features.",
+    "lonlat": [
+     2.88,
+     50.85
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "1915-04-24",
+    "year": 1915,
+    "label": "24 Apr 1915",
+    "text": "Armenian deportations and massacres begin",
+    "detail": "On the night of 23–24 April 1915 Ottoman authorities arrested hundreds of Armenian community leaders in Constantinople. Deportations of Armenians from Anatolia followed, with death marches towards the Syrian desert and mass killings. Estimates of the dead range from about 600,000 to 1.5 million. Almost all historians outside Turkey describe these events as genocide; the Turkish government rejects that term.",
+    "lonlat": [
+     28.98,
+     41.01
+    ],
+    "kind": "atrocity"
+   },
+   {
+    "date": "1915-04-25",
+    "year": 1915,
+    "label": "25 Apr 1915",
+    "text": "Allied landings at Gallipoli",
+    "detail": "Britain and France hoped to force the Dardanelles, take Constantinople and open a sea route to Russia. After a naval attack failed, British, French, Australian, New Zealand and Indian troops landed on the Gallipoli peninsula on 25 April 1915. Ottoman forces held the heights, and months of costly fighting followed. The Allies abandoned the campaign and withdrew their last troops in December 1915 and January 1916.",
+    "lonlat": [
+     26.28,
+     40.23
+    ],
+    "kind": "invasion"
+   },
+   {
+    "date": "1915-05-07",
+    "year": 1915,
+    "label": "7 May 1915",
+    "text": "A German U-boat sinks the liner Lusitania",
+    "detail": "Germany had declared the waters around Britain a war zone in February 1915, using submarines against merchant shipping. On 7 May a U-boat torpedoed the British liner Lusitania off southern Ireland, killing more than a thousand passengers and crew, among them over a hundred Americans. The sinking turned American opinion against Germany, which for a time restricted submarine attacks to avoid war with the United States.",
+    "lonlat": [
+     -8.55,
+     51.42
+    ],
+    "kind": "other"
+   },
+   {
+    "date": "1915-05-23",
+    "year": 1915,
+    "label": "23 May 1915",
+    "text": "Italy declares war on Austria-Hungary",
+    "detail": "Italy had stayed neutral in 1914 despite its prewar alliance with Germany and Austria-Hungary. After the Allies secretly promised it Austrian territory, Italy declared war on Austria-Hungary on 23 May 1915, though not on Germany until August 1916. A new front opened along the Alps and the Isonzo River, where repeated Italian offensives over the next two years gained little ground at great cost.",
+    "lonlat": [
+     13.6,
+     45.95
+    ],
+    "kind": "political"
+   },
+   {
+    "date": "1915-10-14",
+    "year": 1915,
+    "label": "14 Oct 1915",
+    "text": "Bulgaria joins the Central Powers; Serbia is overrun",
+    "detail": "Bulgaria, seeking territory lost in the Balkan Wars, declared war on Serbia on 14 October 1915. Attacked by German and Austro-Hungarian armies from the north and Bulgarians from the east, Serbia was conquered in little more than a month. Its army retreated across the Albanian mountains to the Adriatic coast and was evacuated by Allied ships, later fighting again on the Salonika front.",
+    "lonlat": [
+     23.32,
+     42.7
+    ],
+    "kind": "invasion"
+   },
+   {
+    "date": "1916-02-21",
+    "year": 1916,
+    "label": "21 Feb 1916",
+    "text": "The Battle of Verdun begins",
+    "detail": "Germany attacked the fortress city of Verdun on 21 February 1916, aiming to wear down the French army in a battle France could not refuse. The fighting lasted until 18 December, when French counter-attacks had retaken most of the lost ground. Combined French and German casualties are estimated at roughly 700,000 to 975,000, and Verdun became a symbol of the war's attrition.",
+    "lonlat": [
+     5.39,
+     49.16
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "1916-05-31",
+    "year": 1916,
+    "label": "31 May–1 Jun 1916",
+    "text": "Britain and Germany fight the naval Battle of Jutland",
+    "detail": "Britain's Royal Navy blockaded Germany, and the German High Seas Fleet hoped to destroy part of the British Grand Fleet. The two fleets met in the North Sea off Denmark on 31 May and 1 June 1916, the war's largest naval battle. Britain lost more ships and men, but the German fleet returned to port and did not seek another major fleet action, so the blockade held.",
+    "lonlat": [
+     6.0,
+     56.7
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "1916-06-04",
+    "year": 1916,
+    "label": "4 Jun 1916",
+    "text": "Russia's Brusilov Offensive breaks the Austro-Hungarian line",
+    "detail": "To relieve pressure on France and Italy, Russian armies under General Aleksei Brusilov attacked along a wide front in Galicia and Volhynia on 4 June 1916. Short, surprise bombardments broke the Austro-Hungarian lines, and huge numbers of prisoners were taken. Germany had to send reinforcements east, and the offensive's early success encouraged Romania to join the Allies, but Russian losses were also very heavy.",
+    "lonlat": [
+     25.33,
+     50.75
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "1916-06-10",
+    "year": 1916,
+    "label": "10 Jun 1916",
+    "text": "Sharif Hussein launches the Arab Revolt at Mecca",
+    "detail": "Britain had promised in letters to Sharif Hussein of Mecca to support Arab independence in return for a rising against the Ottomans. On 10 June 1916 his forces attacked the Ottoman garrison at Mecca. Backed by British gold, weapons and officers such as T. E. Lawrence, Arab forces under his son Faisal took Aqaba in July 1917 and reached Damascus at the end of September 1918.",
+    "lonlat": [
+     39.83,
+     21.42
+    ],
+    "kind": "other"
+   },
+   {
+    "date": "1916-07-01",
+    "year": 1916,
+    "label": "1 Jul 1916",
+    "text": "The Battle of the Somme begins",
+    "detail": "Britain and France attacked along the River Somme on 1 July 1916, partly to relieve Verdun. On the first day the British army suffered about 57,500 casualties, including some 19,200 dead, the worst single day in its history. The battle lasted until 18 November and gained only a few miles; British, French and German losses together exceeded a million, and tanks made their first appearance there.",
+    "lonlat": [
+     2.7,
+     50.01
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "1916-08-27",
+    "year": 1916,
+    "label": "27 Aug 1916",
+    "text": "Romania enters the war on the Allied side",
+    "detail": "Encouraged by the Brusilov Offensive and promised Austro-Hungarian Transylvania, Romania declared war and began hostilities against Austria-Hungary on 27 August 1916. German, Austro-Hungarian, Bulgarian and Ottoman forces counter-attacked from two sides, and Bucharest fell on 6 December. Romania's government and army held on in Moldavia but, isolated after Russia's collapse, signed a separate peace in May 1918, then re-entered the war on 10 November 1918.",
+    "lonlat": [
+     26.1,
+     44.43
+    ],
+    "kind": "political"
+   },
+   {
+    "date": "1917-03-15",
+    "year": 1917,
+    "label": "15 Mar 1917",
+    "text": "Revolution in Petrograd forces the Tsar to abdicate",
+    "detail": "War losses, food shortages and distrust of the government fuelled protests in Petrograd from 8 March 1917 (February in Russia's old calendar). Troops joined the crowds, and Tsar Nicholas II abdicated on 15 March. A Provisional Government kept Russia in the war, but its 1917 summer offensive failed and the army began to disintegrate, while soviets of workers and soldiers competed for power.",
+    "lonlat": [
+     30.32,
+     59.94
+    ],
+    "kind": "political"
+   },
+   {
+    "date": "1917-04-06",
+    "year": 1917,
+    "label": "6 Apr 1917",
+    "text": "The United States declares war on Germany",
+    "detail": "Germany resumed unrestricted submarine warfare on 1 February 1917, gambling that it could starve Britain before American forces arrived. The intercepted Zimmermann telegram, in which Germany proposed an alliance with Mexico, further angered American opinion. The United States declared war on Germany on 6 April 1917 as an 'associated power', and its troops reached the Western Front in growing numbers through 1918.",
+    "lonlat": [
+     -77.01,
+     38.89
+    ],
+    "kind": "political"
+   },
+   {
+    "date": "1917-10-24",
+    "year": 1917,
+    "label": "24 Oct 1917",
+    "text": "Austro-German breakthrough at Caporetto",
+    "detail": "On 24 October 1917 Austro-Hungarian and German divisions, using gas and infiltration tactics, broke the Italian line at Caporetto on the Isonzo. The Italian army fell back to the Piave River, losing very large numbers of men, many of them as prisoners. Britain and France rushed divisions to Italy, General Cadorna was replaced as commander, and the new line on the Piave held through the winter and against a final Austro-Hungarian offensive in June 1918.",
+    "lonlat": [
+     13.56,
+     46.26
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "1917-11-07",
+    "year": 1917,
+    "label": "7 Nov 1917",
+    "text": "The Bolsheviks seize power in Russia",
+    "detail": "Led by Lenin, the Bolsheviks overthrew the Provisional Government in Petrograd on 7 November 1917 (25 October in the old calendar), promising peace, land and bread. The new government agreed an armistice with the Central Powers on 15 December. Peace talks opened at Brest-Litovsk. Russia's withdrawal let Germany move many divisions to the Western Front for a final offensive, while Russia itself slid into a long civil war between the Bolsheviks and their opponents.",
+    "lonlat": [
+     30.32,
+     59.94
+    ],
+    "kind": "political"
+   },
+   {
+    "date": "1917-12-11",
+    "year": 1917,
+    "label": "11 Dec 1917",
+    "text": "British forces enter Jerusalem",
+    "detail": "After failing twice at Gaza, the British Egyptian Expeditionary Force under General Allenby broke through the Ottoman line at Beersheba and Gaza in autumn 1917. On 11 December Allenby entered Jerusalem on foot. British troops had also taken Baghdad in March, and the Balfour Declaration of 2 November had promised support for a Jewish national home in Palestine, shaping the region's postwar history.",
+    "lonlat": [
+     35.23,
+     31.78
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "1918-03-03",
+    "year": 1918,
+    "label": "3 Mar 1918",
+    "text": "Russia makes peace at Brest-Litovsk",
+    "detail": "Soviet Russia signed the Treaty of Brest-Litovsk with Germany, Austria-Hungary, the Ottoman Empire and Bulgaria on 3 March 1918. Russia gave up Finland, the Baltic lands, Poland, most of Belarus and Ukraine, and Kars, Ardahan and Batum in the Caucasus. German troops occupied much of this territory, though Germany still kept large forces in the East. The treaty ended the Eastern Front for the Central Powers and was annulled after Germany's defeat in November 1918.",
+    "lonlat": [
+     23.69,
+     52.1
+    ],
+    "kind": "treaty"
+   },
+   {
+    "date": "1918-03-21",
+    "year": 1918,
+    "label": "21 Mar 1918",
+    "text": "Germany launches its Spring Offensive in the West",
+    "detail": "With divisions freed from Russia, Germany tried to win in the West before American strength could tell. Operation Michael began on 21 March 1918 near Saint-Quentin and drove the British back many miles; further offensives followed into July, reaching the Marne again. The attacks gained ground but cost Germany its best troops and failed to break the Allied armies, now under a single commander, Ferdinand Foch.",
+    "lonlat": [
+     3.29,
+     49.85
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "1918-08-08",
+    "year": 1918,
+    "label": "8 Aug 1918",
+    "text": "Allied victory at Amiens opens the Hundred Days Offensive",
+    "detail": "After stopping the last German attack on the Marne in July, the Allies struck back. On 8 August British, Australian, Canadian and French forces attacked east of Amiens with tanks, aircraft and artillery and advanced several miles in a day. A series of Allied offensives followed, including the American-led Meuse–Argonne offensive from 26 September, pushing German armies back towards their own border.",
+    "lonlat": [
+     2.53,
+     49.85
+    ],
+    "kind": "turning-point"
+   },
+   {
+    "date": "1918-09-19",
+    "year": 1918,
+    "label": "19–25 Sep 1918",
+    "text": "Allenby routs the Ottoman armies at Megiddo",
+    "detail": "In Palestine, British Empire forces under Allenby, with Arab Revolt forces on their flank, attacked the Ottoman line on 19 September 1918. Cavalry broke through and the Ottoman armies in Palestine collapsed within days. Damascus was reached at the end of September, and the Ottoman Empire signed the Armistice of Mudros on 30 October, after Bulgaria had already signed an armistice on 29–30 September.",
+    "lonlat": [
+     35.18,
+     32.58
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "1918-11-03",
+    "year": 1918,
+    "label": "3 Nov 1918",
+    "text": "Austria-Hungary signs an armistice after Vittorio Veneto",
+    "detail": "Italy launched its offensive at Vittorio Veneto on 24 October 1918 as Austria-Hungary was breaking up into national states. The Austro-Hungarian army disintegrated, and on 3 November an armistice was signed at Villa Giusti near Padua, taking effect the next day. The Habsburg monarchy dissolved within days, as Czechoslovakia, Hungary and the new South Slav state went their own ways. Germany was now the only Central Power still fighting.",
+    "lonlat": [
+     11.88,
+     45.42
+    ],
+    "kind": "treaty"
+   },
+   {
+    "date": "1918-11-11",
+    "year": 1918,
+    "label": "11 Nov 1918",
+    "text": "Germany signs the armistice at Compiègne",
+    "detail": "With its allies gone, its armies in retreat and revolution spreading at home, Germany sought terms. Kaiser Wilhelm II abdicated on 9 November, and German delegates signed the armistice in a railway carriage in the forest of Compiègne early on 11 November; fighting stopped at 11 a.m. The peace treaties followed, including the Treaty of Versailles with Germany on 28 June 1919.",
+    "lonlat": [
+     2.91,
+     49.43
+    ],
+    "kind": "treaty"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia: World War I",
+    "url": "https://en.wikipedia.org/wiki/World_War_I"
+   },
+   {
+    "title": "Wikipedia: Timeline of World War I",
+    "url": "https://en.wikipedia.org/wiki/Timeline_of_World_War_I"
+   },
+   {
+    "title": "Wikipedia: Allies of World War I",
+    "url": "https://en.wikipedia.org/wiki/Allies_of_World_War_I"
+   },
+   {
+    "title": "Wikipedia: World War I casualties",
+    "url": "https://en.wikipedia.org/wiki/World_War_I_casualties"
+   },
+   {
+    "title": "Wikipedia: Treaty of Brest-Litovsk",
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_Brest-Litovsk"
+   },
+   {
+    "title": "Wikipedia: Armenian genocide",
+    "url": "https://en.wikipedia.org/wiki/Armenian_genocide"
+   },
+   {
+    "title": "Wikipedia: Arab Revolt",
+    "url": "https://en.wikipedia.org/wiki/Arab_Revolt"
+   }
+  ]
+ },
+ {
+  "id": "world-war-ii",
+  "name": "Second World War",
+  "moment": "world-war-ii",
+  "span": [
+   1939,
+   1945
+  ],
+  "dateLabel": "1 September 1939 – 2 September 1945",
+  "summary": "The Second World War began when Nazi Germany invaded Poland on 1 September 1939 and Britain and France declared war; Japan had been at war with China since July 1937. Germany, with the Soviet Union bound to it by a non-aggression pact, overran Poland, Denmark, Norway, the Low Countries and France by June 1940, when Italy joined it. The Tripartite Pact of September 1940 tied Germany, Italy and Japan together as the Axis, later joined by Hungary, Romania, Bulgaria and others. Germany's invasion of the Soviet Union in June 1941 and Japan's attack on Pearl Harbor in December 1941 brought the Soviet Union and the United States into the Allied coalition alongside Britain, China and the exiled governments. After turning points at Midway, Guadalcanal and Stalingrad, the Allies invaded Italy and France while the Red Army advanced from the east. Germany surrendered on 8 May 1945. Japan, after the atomic bombings and the Soviet declaration of war, announced its surrender on 15 August and signed it on 2 September 1945.",
+  "casualties": "An estimated 60 million to more than 75 million people died, most of them civilians, including about six million Jews murdered in the Holocaust.",
+  "sides": [
+   {
+    "name": "Allies",
+    "members": [
+     {
+      "clio": "Second Polish Republic",
+      "from": 1939,
+      "to": 1939
+     },
+     {
+      "clio": "(British Empire)",
+      "from": 1939,
+      "to": 1945
+     },
+     {
+      "clio": "(French Third Republic)",
+      "from": 1939,
+      "to": 1939
+     },
+     {
+      "clio": "Free French",
+      "from": 1940,
+      "to": 1944
+     },
+     {
+      "clio": "French Africa",
+      "from": 1943,
+      "to": 1944
+     },
+     {
+      "clio": "(French Fourth Republic)",
+      "from": 1945,
+      "to": 1945
+     },
+     {
+      "clio": "Commonwealth of Australia",
+      "from": 1939,
+      "to": 1945
+     },
+     {
+      "clio": "Canada",
+      "from": 1939,
+      "to": 1945
+     },
+     {
+      "clio": "South Africa",
+      "from": 1939,
+      "to": 1945
+     },
+     {
+      "clio": "Kingdom of Norway",
+      "from": 1940,
+      "to": 1945
+     },
+     {
+      "clio": "(Netherlands)",
+      "from": 1940,
+      "to": 1942
+     },
+     {
+      "clio": "(Netherlands)",
+      "from": 1945,
+      "to": 1945
+     },
+     {
+      "clio": "Belgian Congo",
+      "from": 1940,
+      "to": 1945
+     },
+     {
+      "clio": "Kingdom of Belgium",
+      "from": 1945,
+      "to": 1945
+     },
+     {
+      "clio": "First Hellenic Republic",
+      "from": 1940,
+      "to": 1940
+     },
+     {
+      "clio": "Kingdom of Greece",
+      "from": 1945,
+      "to": 1945
+     },
+     {
+      "clio": "Yugoslav Partisans",
+      "from": 1944,
+      "to": 1944
+     },
+     {
+      "clio": "Yugoslavia",
+      "from": 1945,
+      "to": 1945
+     },
+     {
+      "clio": "French Mandate for Syria and Lebanon",
+      "from": 1941,
+      "to": 1945
+     },
+     {
+      "clio": "Union of Soviet Socialist Republics",
+      "from": 1941,
+      "to": 1945
+     },
+     {
+      "clio": "United States of America",
+      "from": 1941,
+      "to": 1945
+     },
+     {
+      "clio": "Republic of China",
+      "from": 1939,
+      "to": 1945
+     },
+     {
+      "clio": "Communist Party of China",
+      "from": 1939,
+      "to": 1945
+     },
+     {
+      "clio": "Mexico",
+      "from": 1942,
+      "to": 1945
+     },
+     {
+      "clio": "Unitary State of Brazil",
+      "from": 1942,
+      "to": 1945
+     },
+     {
+      "clio": "Ethiopia",
+      "from": 1942,
+      "to": 1945
+     },
+     {
+      "clio": "Kingdom of Italy",
+      "from": 1944,
+      "to": 1945
+     },
+     {
+      "clio": "Mongolian People's Republic",
+      "from": 1945,
+      "to": 1945
+     }
+    ]
+   },
+   {
+    "name": "Axis",
+    "members": [
+     {
+      "clio": "Nazi Germany",
+      "from": 1939,
+      "to": 1944
+     },
+     {
+      "clio": "Empire of Japan",
+      "from": 1939,
+      "to": 1945
+     },
+     {
+      "clio": "Kingdom of Italy",
+      "from": 1940,
+      "to": 1943
+     },
+     {
+      "clio": "Italian Africa",
+      "from": 1940,
+      "to": 1943
+     },
+     {
+      "clio": "Hungarian Republic",
+      "from": 1941,
+      "to": 1943
+     },
+     {
+      "clio": "Kingdom of Romania",
+      "from": 1941,
+      "to": 1944
+     },
+     {
+      "clio": "Principality of Bulgaria",
+      "from": 1941,
+      "to": 1944
+     },
+     {
+      "clio": "Independent State of Croatia",
+      "from": 1941,
+      "to": 1944
+     },
+     {
+      "clio": "Republic of Finland",
+      "from": 1941,
+      "to": 1944
+     },
+     {
+      "clio": "Kingdom of Thailand",
+      "from": 1942,
+      "to": 1945
+     }
+    ]
+   },
+   {
+    "name": "Vichy France (collaborationist, officially neutral)",
+    "members": [
+     {
+      "clio": "(Vichy France)",
+      "from": 1940,
+      "to": 1942
+     },
+     {
+      "clio": "French Mandate for Syria and Lebanon",
+      "from": 1940,
+      "to": 1940
+     },
+     {
+      "clio": "Vichy France",
+      "from": 1943,
+      "to": 1943
+     },
+     {
+      "clio": "French Indochina",
+      "from": 1943,
+      "to": 1944
+     }
+    ]
+   }
+  ],
+  "events": [
+   {
+    "date": "1939-09-01",
+    "year": 1939,
+    "label": "1 Sep 1939",
+    "text": "Germany invades Poland",
+    "detail": "In August 1939 Germany and the Soviet Union signed a non-aggression pact that secretly divided eastern Europe between them. On 1 September German forces invaded Poland from the west, north and south, using massed armour and air power. Poland's army fought for over a month, but Warsaw surrendered in late September and the last Polish units in early October, and Poland was partitioned.",
+    "lonlat": [
+     21.01,
+     52.23
+    ],
+    "kind": "invasion"
+   },
+   {
+    "date": "1939-09-03",
+    "year": 1939,
+    "label": "3 Sep 1939",
+    "text": "Britain and France declare war on Germany",
+    "detail": "Britain and France had guaranteed Poland's independence, and when Germany ignored their demand to withdraw they declared war on 3 September 1939. Australia, New Zealand, South Africa and Canada followed within days, and India was committed by its viceroy. Little fighting followed in the West for months, the so-called Phoney War, while the war at sea began at once, with U-boats attacking Allied shipping in the Atlantic.",
+    "lonlat": [
+     -0.13,
+     51.5
+    ],
+    "kind": "political"
+   },
+   {
+    "date": "1939-09-17",
+    "year": 1939,
+    "label": "17 Sep 1939",
+    "text": "The Soviet Union invades eastern Poland",
+    "detail": "Under the secret terms of its pact with Germany, the Soviet Union invaded Poland from the east on 17 September 1939, and the two powers divided the country. The Soviet Union went on to force bases on the Baltic states, invade Finland in November 1939 in the Winter War, and annex the Baltic states and parts of Romania in 1940, though it stayed formally neutral in the wider war.",
+    "lonlat": [
+     24.03,
+     49.84
+    ],
+    "kind": "invasion"
+   },
+   {
+    "date": "1940-04-09",
+    "year": 1940,
+    "label": "9 Apr 1940",
+    "text": "Germany invades Denmark and Norway",
+    "detail": "Germany wanted Norway's ports for its navy and U-boats and to protect iron-ore shipments from Sweden through Narvik. On 9 April 1940 it invaded Denmark, which capitulated within hours, and Norway, where British, French and Polish troops landed to help. The Allies withdrew in early June as France collapsed, and the Norwegian army on the mainland surrendered on 10 June; Norway's king and government went into exile in London.",
+    "lonlat": [
+     10.75,
+     59.91
+    ],
+    "kind": "invasion"
+   },
+   {
+    "date": "1940-05-10",
+    "year": 1940,
+    "label": "10 May 1940",
+    "text": "Germany attacks France and the Low Countries",
+    "detail": "On 10 May 1940 Germany invaded the Netherlands, Belgium and Luxembourg. Its main armoured thrust came through the Ardennes, crossing the Meuse at Sedan and racing to the Channel, cutting off the Allied armies in Belgium. The Netherlands surrendered within days and Belgium at the end of May, while more than 340,000 Allied troops were evacuated from Dunkirk by early June.",
+    "lonlat": [
+     4.94,
+     49.7
+    ],
+    "kind": "invasion"
+   },
+   {
+    "date": "1940-06-10",
+    "year": 1940,
+    "label": "10 Jun 1940",
+    "text": "Italy declares war on Britain and France",
+    "detail": "Mussolini's Italy, allied to Germany by the Pact of Steel in 1939, stayed out of the fighting until France was clearly beaten. On 10 June 1940 Italy declared war on Britain and France and attacked in the Alps. Italy's entry spread the war to the Mediterranean, North Africa and East Africa, where Italian colonies bordered British-held Egypt, Sudan and Kenya.",
+    "lonlat": [
+     12.5,
+     41.9
+    ],
+    "kind": "political"
+   },
+   {
+    "date": "1940-06-22",
+    "year": 1940,
+    "label": "22 Jun 1940",
+    "text": "France signs an armistice; the Vichy regime follows",
+    "detail": "With Paris taken on 14 June, Marshal Philippe Pétain's new government sought terms. The armistice was signed on 22 June in the forest of Compiègne, in the carriage used in 1918. Germany occupied the north and the Atlantic coast, while a French government based at Vichy ran the rest and the colonies. In London, General Charles de Gaulle called on the French to keep fighting, founding Free France.",
+    "lonlat": [
+     2.91,
+     49.43
+    ],
+    "kind": "treaty"
+   },
+   {
+    "date": "1940-07-10",
+    "year": 1940,
+    "label": "10 Jul 1940",
+    "text": "The Battle of Britain begins",
+    "detail": "Germany needed control of the air before it could invade Britain. From 10 July to 31 October 1940 the Luftwaffe attacked shipping, airfields and then cities, but the Royal Air Force, aided by radar, was not defeated. Hitler postponed the planned invasion indefinitely. It was Germany's first major defeat of the war. Night bombing of British cities, the Blitz, continued from September 1940 until May 1941.",
+    "lonlat": [
+     -0.13,
+     51.5
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "1940-09-27",
+    "year": 1940,
+    "label": "27 Sep 1940",
+    "text": "Germany, Italy and Japan sign the Tripartite Pact",
+    "detail": "On 27 September 1940 Germany, Italy and Japan signed the Tripartite Pact in Berlin, pledging to support each other against any new enemy, a warning aimed at the United States. Hungary, Romania and Slovakia joined in November 1940, Bulgaria in March 1941, and Croatia after its creation. Thailand allied with Japan in December 1941 and declared war on Britain and the United States in January 1942.",
+    "lonlat": [
+     13.4,
+     52.52
+    ],
+    "kind": "treaty"
+   },
+   {
+    "date": "1941-04-06",
+    "year": 1941,
+    "label": "6 Apr 1941",
+    "text": "Axis invasion of Yugoslavia and Greece",
+    "detail": "Italy had invaded Greece in October 1940 but was driven back into Albania, and British troops arrived to help Greece. On 6 April 1941 Germany, with Italian and Hungarian forces, invaded Yugoslavia, whose government had just been overthrown for joining the Axis, and Greece. Both were conquered within weeks, Crete fell in May, and Yugoslavia was carved up, including a new Axis-aligned Independent State of Croatia.",
+    "lonlat": [
+     20.46,
+     44.82
+    ],
+    "kind": "invasion"
+   },
+   {
+    "date": "1941-06-22",
+    "year": 1941,
+    "label": "22 Jun 1941",
+    "text": "Germany invades the Soviet Union",
+    "detail": "On 22 June 1941 Germany and its allies, including Romania, Finland and Hungary, launched Operation Barbarossa, a vast invasion along a front from the Baltic to the Black Sea. Huge Soviet armies were encircled and German forces reached the outskirts of Leningrad and Moscow by late 1941, where a Soviet counter-offensive in December pushed them back. The Soviet Union now joined Britain as an ally.",
+    "lonlat": [
+     23.69,
+     52.1
+    ],
+    "kind": "invasion"
+   },
+   {
+    "date": "1941-12-07",
+    "year": 1941,
+    "label": "7 Dec 1941",
+    "text": "Japan attacks Pearl Harbor and Western colonies in Asia",
+    "detail": "After the United States embargoed oil exports over Japan's occupation of French Indochina, Japan struck. On 7 December 1941 its carrier aircraft attacked the US Pacific Fleet at Pearl Harbor, killing 2,403 Americans, while other forces attacked the Philippines, Guam, Wake, Malaya, Thailand and Hong Kong. The United States declared war on Japan the next day, and Germany and Italy declared war on the United States on 11 December.",
+    "lonlat": [
+     -157.95,
+     21.36
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "1942-01-20",
+    "year": 1942,
+    "label": "20 Jan 1942",
+    "text": "Nazi officials coordinate the 'Final Solution' at Wannsee",
+    "detail": "Mass shootings of Jews by German units in the occupied Soviet Union had begun in 1941. On 20 January 1942 SS General Reinhard Heydrich convened senior officials at a villa at Wannsee in Berlin to coordinate the deportation of Europe's Jews to be killed, mostly in occupied Poland. Through killing centres such as Auschwitz-Birkenau, the Nazis and their collaborators murdered about six million Jews in the Holocaust.",
+    "lonlat": [
+     13.17,
+     52.43
+    ],
+    "kind": "atrocity"
+   },
+   {
+    "date": "1942-02-15",
+    "year": 1942,
+    "label": "15 Feb 1942",
+    "text": "Singapore surrenders to Japan",
+    "detail": "Japanese forces landed in Malaya in December 1941 and advanced rapidly down the peninsula. Singapore, Britain's main base in Asia, surrendered on 15 February 1942, and about 80,000 British, Indian, Australian and local troops became prisoners. Churchill called it the worst disaster in British military history. By May Japan had also taken the Dutch East Indies, the Philippines and most of Burma.",
+    "lonlat": [
+     103.82,
+     1.35
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "1942-06-04",
+    "year": 1942,
+    "label": "4–7 Jun 1942",
+    "text": "The US Navy defeats Japan at Midway",
+    "detail": "Japan tried to draw the remaining US carriers into a decisive battle by attacking Midway atoll. Forewarned by codebreakers, US aircraft sank all four Japanese fleet carriers in the attacking force, Akagi, Kaga, Sōryū and Hiryū, between 4 and 7 June 1942, for the loss of the carrier Yorktown. Japan could not replace the ships and trained aircrew, and the battle is widely seen as a turning point in the Pacific.",
+    "lonlat": [
+     -177.37,
+     28.21
+    ],
+    "kind": "turning-point"
+   },
+   {
+    "date": "1942-08-07",
+    "year": 1942,
+    "label": "7 Aug 1942",
+    "text": "US Marines land on Guadalcanal",
+    "detail": "Japan was building an airfield on Guadalcanal in the Solomon Islands that threatened links between the United States and Australia. US Marines landed on 7 August 1942 in the first major Allied land offensive against Japan. Months of fighting on land, at sea and in the air followed, until Japan evacuated its last troops on 9 February 1943, ceding the initiative in the Pacific to the Allies.",
+    "lonlat": [
+     160.0,
+     -9.43
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "1942-11-08",
+    "year": 1942,
+    "label": "8 Nov 1942",
+    "text": "Allied landings in Vichy North Africa (Operation Torch)",
+    "detail": "Days after the British victory at El Alamein in Egypt, American and British forces landed in Vichy-ruled Morocco and Algeria on 8 November 1942. After brief fighting, Admiral Darlan ordered French forces to stop on 10 November, and French North Africa went over to the Allies. Germany responded by occupying the rest of France on 11 November. Axis forces in Tunisia surrendered by 13 May 1943.",
+    "lonlat": [
+     -7.59,
+     33.57
+    ],
+    "kind": "invasion"
+   },
+   {
+    "date": "1943-02-02",
+    "year": 1943,
+    "label": "2 Feb 1943",
+    "text": "The German Sixth Army surrenders at Stalingrad",
+    "detail": "German forces had attacked Stalingrad on the Volga in the summer of 1942 and nearly taken the city by November. On 19 November the Red Army counter-attacked against the Romanian armies on the flanks and encircled the German Sixth Army. Its commander, Friedrich Paulus, surrendered on 2 February 1943, and about 235,000 Axis soldiers were captured. The Soviet Union kept the initiative on the Eastern Front for the rest of the war.",
+    "lonlat": [
+     44.52,
+     48.71
+    ],
+    "kind": "turning-point"
+   },
+   {
+    "date": "1943-07-05",
+    "year": 1943,
+    "label": "5 Jul 1943",
+    "text": "The Battle of Kursk",
+    "detail": "Germany's last major offensive in the East began on 5 July 1943, when its armies attacked the Soviet salient around Kursk from north and south. Soviet forces had prepared deep defences and held, and on 12 July they launched their own counter-offensive. Kursk, which included some of the largest tank battles of the war, ended Germany's ability to mount strategic offensives on the Eastern Front.",
+    "lonlat": [
+     36.19,
+     51.73
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "1943-07-09",
+    "year": 1943,
+    "label": "9 Jul 1943",
+    "text": "Allied invasion of Sicily; Italy changes sides",
+    "detail": "After victory in North Africa, the Allies invaded Sicily on 9 July 1943. Mussolini was deposed on 25 July, and the new Italian government signed an armistice, announced on 8 September, as the Allies landed on the mainland. Germany occupied most of Italy, freed Mussolini and set up a puppet state in the north, while the royal government joined the Allies as a co-belligerent.",
+    "lonlat": [
+     14.25,
+     37.07
+    ],
+    "kind": "invasion"
+   },
+   {
+    "date": "1944-06-06",
+    "year": 1944,
+    "label": "6 Jun 1944",
+    "text": "D-Day: the Allied landings in Normandy",
+    "detail": "After years of preparation, Allied forces landed on five Normandy beaches, Utah, Omaha, Gold, Juno and Sword, on 6 June 1944, preceded by airborne drops. More than 156,000 soldiers came ashore on the first day in the largest seaborne invasion in history, carried by about 5,000 ships. After weeks of hard fighting the Allies broke out in late July and advanced across France.",
+    "lonlat": [
+     -0.57,
+     49.34
+    ],
+    "kind": "invasion"
+   },
+   {
+    "date": "1944-06-22",
+    "year": 1944,
+    "label": "22 Jun 1944",
+    "text": "Operation Bagration destroys German Army Group Centre",
+    "detail": "Three years to the day after the German invasion, the Red Army launched a massive offensive in Belarus on 22 June 1944. Army Group Centre's front collapsed, Minsk was liberated on 4 July, and by August Soviet forces had reached the Vistula near Warsaw and the border of East Prussia. With about 450,000 German casualties, it was among the heaviest German defeats of the war.",
+    "lonlat": [
+     27.56,
+     53.9
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "1944-08-25",
+    "year": 1944,
+    "label": "25 Aug 1944",
+    "text": "Paris is liberated; Romania leaves the Axis",
+    "detail": "As Allied armies broke out of Normandy and landed in southern France, the French Resistance rose in Paris, and French and American troops entered the city on 25 August 1944. Two days earlier a coup in Romania had taken it out of the Axis, and Bulgaria followed in September. Romania's oilfields were lost to Germany, and by the autumn it was losing allies and territory on every front.",
+    "lonlat": [
+     2.35,
+     48.86
+    ],
+    "kind": "turning-point"
+   },
+   {
+    "date": "1944-10-23",
+    "year": 1944,
+    "label": "23–26 Oct 1944",
+    "text": "The Battle of Leyte Gulf",
+    "detail": "US forces landed on Leyte in the Philippines on 20 October 1944. Japan sent almost its whole remaining fleet to attack the landings, and from 23 to 26 October the largest naval battle of the war was fought around the islands. The Japanese navy suffered crippling losses and never again sailed in comparable force. The battle also saw the first organised kamikaze attacks.",
+    "lonlat": [
+     125.0,
+     11.0
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "1944-12-16",
+    "year": 1944,
+    "label": "16 Dec 1944",
+    "text": "Germany's Ardennes offensive: the Battle of the Bulge",
+    "detail": "With the Allies nearing Germany's western border, Hitler gambled on a surprise winter offensive through the Ardennes on 16 December 1944, aiming to split the Allied armies and retake Antwerp. German forces made a deep bulge in the American line but were held at key points such as Bastogne, and the offensive was repulsed by mid-January 1945, using up Germany's last reserves in the West.",
+    "lonlat": [
+     5.72,
+     50.0
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "1945-04-01",
+    "year": 1945,
+    "label": "1 Apr 1945",
+    "text": "US forces invade Okinawa",
+    "detail": "The Allies needed bases close to Japan for the planned invasion. US forces landed on Okinawa on 1 April 1945 and fought until organised resistance ended on 22 June, under waves of kamikaze attacks at sea. About 94,000 Japanese soldiers and some 12,500 Americans died, and estimates of Okinawan civilian deaths range from 40,000 to 150,000, foreshadowing the cost of invading Japan itself.",
+    "lonlat": [
+     127.68,
+     26.21
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "1945-05-08",
+    "year": 1945,
+    "label": "8 May 1945",
+    "text": "Germany surrenders unconditionally",
+    "detail": "Soviet forces stormed Berlin in late April 1945 while American and British armies advanced from the west; Hitler killed himself on 30 April. German commanders signed an unconditional surrender at Reims on 7 May and a definitive act in Berlin-Karlshorst, which took effect at 23:01 on 8 May. The Western Allies celebrate Victory in Europe Day on 8 May, while Russia marks Victory Day on 9 May.",
+    "lonlat": [
+     13.53,
+     52.49
+    ],
+    "kind": "treaty"
+   },
+   {
+    "date": "1945-08-06",
+    "year": 1945,
+    "label": "6 Aug 1945",
+    "text": "The United States drops an atomic bomb on Hiroshima",
+    "detail": "Japan rejected the Allied demand for unconditional surrender issued at Potsdam in July. On 6 August 1945 a US bomber dropped an atomic bomb on Hiroshima, and a second destroyed much of Nagasaki on 9 August. Estimates of deaths by the end of 1945 are 90,000–166,000 in Hiroshima and 60,000–80,000 in Nagasaki. Historians still debate whether the bombings were justified.",
+    "lonlat": [
+     132.46,
+     34.39
+    ],
+    "kind": "turning-point"
+   },
+   {
+    "date": "1945-08-09",
+    "year": 1945,
+    "label": "9 Aug 1945",
+    "text": "The Soviet Union invades Japanese-held Manchuria",
+    "detail": "At Yalta in February 1945 Stalin had agreed to join the war against Japan within about three months of Germany's defeat. The Soviet Union declared war on 8 August and invaded Manchuria an hour later, and Mongolia joined on 10 August. Soviet forces quickly overran Manchukuo, Inner Mongolia, northern Korea, southern Sakhalin and the Kuril Islands, removing Japan's last hope of a negotiated peace.",
+    "lonlat": [
+     126.64,
+     45.75
+    ],
+    "kind": "invasion"
+   },
+   {
+    "date": "1945-09-02",
+    "year": 1945,
+    "label": "2 Sep 1945",
+    "text": "Japan signs the instrument of surrender",
+    "detail": "After the atomic bombings and the Soviet attack, Emperor Hirohito ordered acceptance of the Allied terms, and his recorded announcement of surrender was broadcast on 15 August 1945. Japanese representatives signed the instrument of surrender aboard the USS Missouri in Tokyo Bay on 2 September 1945, ending the Second World War. Japan was occupied, and its overseas empire was dismantled.",
+    "lonlat": [
+     139.75,
+     35.35
+    ],
+    "kind": "treaty"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia: World War II",
+    "url": "https://en.wikipedia.org/wiki/World_War_II"
+   },
+   {
+    "title": "Wikipedia: Axis powers",
+    "url": "https://en.wikipedia.org/wiki/Axis_powers"
+   },
+   {
+    "title": "Wikipedia: Allies of World War II",
+    "url": "https://en.wikipedia.org/wiki/Allies_of_World_War_II"
+   },
+   {
+    "title": "Wikipedia: Pacific War",
+    "url": "https://en.wikipedia.org/wiki/Pacific_War"
+   },
+   {
+    "title": "USHMM Holocaust Encyclopedia: Wannsee Conference and the \"Final Solution\"",
+    "url": "https://encyclopedia.ushmm.org/content/en/article/wannsee-conference-and-the-final-solution"
+   },
+   {
+    "title": "Wikipedia: Operation Torch",
+    "url": "https://en.wikipedia.org/wiki/Operation_Torch"
+   },
+   {
+    "title": "Wikipedia: Soviet–Japanese War",
+    "url": "https://en.wikipedia.org/wiki/Soviet%E2%80%93Japanese_War"
+   },
+   {
+    "title": "Wikipedia: Atomic bombings of Hiroshima and Nagasaki",
+    "url": "https://en.wikipedia.org/wiki/Atomic_bombings_of_Hiroshima_and_Nagasaki"
+   }
+  ]
+ }
 ]

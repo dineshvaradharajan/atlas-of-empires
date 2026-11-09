@@ -60,7 +60,7 @@ const S = {
   labels: true, peoples: true, playing: null, width: 0, height: 0, dpr: 1, token: 0,
 };
 const $ = (s) => document.querySelector(s);
-window.__atlas = S; S.fx = { setWp: (p) => setWp(p), seek: (t) => setWp(pOf(S.cineK, t), true), scr: (ll) => scr(ll) }; // debugging handles // read-only handle for debugging in the console
+window.__atlas = S; S.fx = { setWp: (p) => setWp(p), seek: (t) => setWp(pOf(S.cineK, t), true), scr: (ll) => scr(ll), story: (t) => setStoryT(t) }; // debugging handles // read-only handle for debugging in the console
 const canvas = $("#map"), ctx = canvas.getContext("2d");
 const pick = document.createElement("canvas"), pctx = pick.getContext("2d", { willReadFrequently: true });
 const projection = d3.geoNaturalEarth1();
@@ -103,7 +103,7 @@ function sourcesList(list, title = "Sources") {
 const vivid = () => (theme.dark ? VIVID_DARK : VIVID_LIGHT);
 const RECON_COLORS = ["#C0662F", "#2F7D6D", "#7A5FB0", "#A67C00", "#5E8FC4", "#B5487A", "#3B6E3B", "#8C4A2F"];
 function colorOf(key) {
-  if (S.war) { const m = S.warMap || warSides(S.war, S.year); return m.has(key) ? SIDE_COLORS[m.get(key) % SIDE_COLORS.length] : [theme.other1, theme.other2, theme.other3][hash(clean(key)) % 3]; }
+  if (S.war) { const m = S.warMap || warSides(S.war, warT()); return m.has(key) ? SIDE_COLORS[m.get(key) % SIDE_COLORS.length] : [theme.other1, theme.other2, theme.other3][hash(clean(key)) % 3]; }
   if (S.reconKeys?.has(key) && key !== S.sel) { // reconstruction groups: distinct, stable inks (e.g. all Chola lands share one)
     const ks = [...S.reconKeys]; return RECON_COLORS[ks.indexOf(key) % RECON_COLORS.length];
   }
@@ -345,7 +345,7 @@ async function go(y, opts = {}) {
 }
 function renderAll() {
   if (!S.base) return;
-  if (S.war) { S.warMap = warSides(S.war, S.year); }
+  if (S.war) { S.warMap = warSides(S.war, warT()); }
   else if (!S.journey) updateWindow();
   else if (S.jRendered !== S.journey.id) renderJourneyChart();
   computeFeatured();
@@ -1079,14 +1079,23 @@ function sourcesHTML() {
 // Play a war event by event: each side's states coloured, each event pinned and explained (content/wars/*.json).
 const SIDE_COLORS = ["#2B59D9", "#E5402A", "#2F7D6D", "#E9A93B"];
 const warById = (id) => S.content.wars.find((w) => w.id === id) || null;
-function warSides(w, y) { // realm/group name -> side index, for members active in year y
+// A member counts from its entry date (fromDate, else 1 Jan of `from`) until its exit date (toDate, else the end of `to`).
+const memberOn = (x, t) => (x.fromDate ? fracDate(x.fromDate) : x.from) <= t + 1e-9 && t < (x.toDate ? fracDate(x.toDate) : x.to + 1);
+function warSides(w, t) { // realm/group name -> side index, for members at war at time t (fractional year)
   const m = new Map();
-  w.sides.forEach((sd, i) => sd.members.forEach((x) => { if (x.from <= y && y <= x.to && !m.has(x.clio)) m.set(x.clio, i); }));
+  w.sides.forEach((sd, i) => sd.members.forEach((x) => { if (memberOn(x, t) && !m.has(x.clio)) m.set(x.clio, i); }));
   return m;
+}
+const warT = () => (S.war && S.wt != null ? S.wt : S.year);
+function syncSides(playing) { // recolour as states enter or leave the war (by day, not by year)
+  const b = warSides(S.war, S.wt), a = S.warMap;
+  const changed = !a || a.size !== b.size || [...b].some(([k, v]) => a.get(k) !== v);
+  if (changed && a && playing) allianceChange(a, b, S.wt);
+  if (changed) S.warMap = b;
 }
 function warSideOf(it) {
   if (!S.war || it.kind !== "state") return -1;
-  const m = S.warMap || (S.warMap = warSides(S.war, S.year));
+  const m = S.warMap || (S.warMap = warSides(S.war, warT()));
   return m.has(it.p.n) ? m.get(it.p.n) : m.has(it.p.k) ? m.get(it.p.k) : -1;
 }
 const fracDate = (s, fallback) => { // "1916-07-01" -> 1916.497 (fractional year)
@@ -1128,7 +1137,7 @@ async function goWarEvent(i, fit) {
   S.warMap = null;
   await go(warYear(S.wt), { keepWar: true });
   if (S.war !== w) return;
-  S.warMap = warSides(w, S.year);
+  S.warMap = warSides(w, warT());
   renderWarChart(); updateHud(); draw(); renderCol(true); writeHash();
   if (fit && S.cine?.shots?.length) { S.shotIdx = -1; camFor(S.wt, e, true); }
   else if (fit && w.events.length) { // frame all the war's events
@@ -1292,7 +1301,7 @@ function drawOccupations() { // inside the map transform: occupied land takes th
     const side = o.side ?? 1, path = new Path2D(), mk = (pts) => { const q = new Path2D(); pts.forEach((p, i) => { const [x, y] = projection(p); i ? q.lineTo(x, y) : q.moveTo(x, y); }); q.closePath(); return q; };
     s.pts.forEach((p, i) => { const [x, y] = projection(p); i ? path.lineTo(x, y) : path.moveTo(x, y); });
     path.closePath();
-    const ch = story() ? S.cine.chapters[S.chap] : null, s0 = ch ? trackAt(o, ch.t0, S.cineK.t1) : null;
+    const chx = story() ? S.cine.chapters[S.chap] : null, ch = chx && s.pts.some((q) => inBox(q, chx.bbox)) ? chx : null, s0 = ch ? trackAt(o, ch.t0, S.cineK.t1) : null;
     if (ch) { // new ground in the occupier's full colour, ground already held at the chapter's start in its tint
       ctx.globalAlpha = 0.62 * s.a; ctx.fillStyle = SIDE_COLORS[side % SIDE_COLORS.length]; ctx.fill(path);
       if (s0) { ctx.save(); ctx.clip(path); ctx.globalAlpha = s.a; ctx.fillStyle = sideTint(side); ctx.fill(mk(s0.pts)); ctx.restore(); }
@@ -1320,11 +1329,13 @@ function drawCinema() { // screen space, above the labels: fronts, offensives, b
   for (const f of C.fronts) {
     const last = f.keys[f.keys.length - 1]?.t ?? 0;
     const s = trackAt(f, t, last >= K.t1 - 0.06 ? K.t1 : last + 0.1); if (!s) continue;
-    const ch = story() ? S.cine.chapters[S.chap] : null, g = ch && t > ch.t0 + 0.01 ? trackAt(f, ch.t0, frontHold(f)) : null;
+    const chx = story() ? S.cine.chapters[S.chap] : null, here = !chx || s.pts.some((q) => inBox(q, chx.bbox)), ch = here ? chx : null;
+    const g = ch && t > ch.t0 + 0.01 ? trackAt(f, ch.t0, frontHold(f)) : null;
     if (g) { polyLine(g.pts.map(scr)); ctx.setLineDash([5, 4]); ctx.globalAlpha = 0.55; ctx.strokeStyle = theme.ink; ctx.lineWidth = 1.5; ctx.stroke(); ctx.setLineDash([]); }
     polyLine(s.pts.map(scr));
-    ctx.globalAlpha = 0.7 * s.a; ctx.strokeStyle = theme.bg; ctx.lineWidth = 4; ctx.stroke();
-    ctx.globalAlpha = s.a; ctx.strokeStyle = theme.ink; ctx.lineWidth = 1.8; ctx.stroke();
+    const fa = here ? s.a : 0.3 * s.a; // fronts outside the chapter's place stay faint
+    ctx.globalAlpha = 0.7 * fa; ctx.strokeStyle = theme.bg; ctx.lineWidth = 4; ctx.stroke();
+    ctx.globalAlpha = fa; ctx.strokeStyle = theme.ink; ctx.lineWidth = 1.8; ctx.stroke();
   }
   // offensives: tapered arrows in the side's full colour, growing while the campaign runs
   const chA = story() ? S.cine.chapters[S.chap].arrowSet : null;
@@ -1426,7 +1437,7 @@ async function openChapter(n, opts = {}) {
   S.subAt = performance.now(); S.warMap = null;
   await go(warYear(S.wt), { keepWar: true });
   if (!story() || S.chap !== n) return;
-  S.warMap = warSides(S.war, S.year);
+  S.warMap = warSides(S.war, warT());
   renderWarChart(); updateHud(); draw(); renderCol(true); writeHash();
   flyTo(boxBounds(ch.bbox), 24, opts.fast ? 700 : 1400, hudInset());
 }
@@ -1435,7 +1446,7 @@ function setStoryT(t) {
   const i = eventAt(t);
   if (i !== S.wIdx) { S.wIdx = i; S.subAt = performance.now(); renderCol(); }
   const y = warYear(t);
-  if (S.cinePlay && y > S.year && y !== S.cineYear) allianceChange(S.year, y);
+  syncSides(S.cinePlay);
   if (y !== S.year && y !== S.cineYear) { S.cineYear = y; go(y, { keepWar: true }).then(() => { S.cineYear = null; }); }
   updateHud(); draw();
 }
@@ -1497,7 +1508,7 @@ async function drawThumbs() { // one small map per chapter: borders, occupied la
       if (S.cine !== C) return;
       const feats = chunk.features.filter((f) => f.properties.f <= y && y <= f.properties.t).map((f) => correctFeature(f, y)).filter((f) => f && !f.properties.people);
       const cv = document.createElement("canvas"); cv.width = 300; cv.height = 180;
-      const m = cv.getContext("2d"), b = ch.bbox, sm = warSides(w, y);
+      const m = cv.getContext("2d"), b = ch.bbox, sm = warSides(w, ch.t1);
       const pj = d3.geoEquirectangular().fitExtent([[4, 4], [296, 176]], { type: "MultiPoint", coordinates: [[b[0], b[1]], [b[2], b[3]], [b[0], b[3]], [b[2], b[1]]] });
       const gp = d3.geoPath(pj, m), ring = (pts, close) => { m.beginPath(); pts.forEach((p, i) => { const [x, yy] = pj(p); i ? m.lineTo(x, yy) : m.moveTo(x, yy); }); if (close) m.closePath(); };
       m.fillStyle = theme.bg; m.fillRect(0, 0, 300, 180);
@@ -1597,12 +1608,13 @@ function setWp(p, playing) {
   }
   if (playing && S.cine?.shots?.length) camFor(S.wt, null, false);
   const y = warYear(S.wt);
-  if (playing && y > S.year && y !== S.cineYear) allianceChange(S.year, y);
+  syncSides(playing);
   if (y !== S.year && y !== S.cineYear) { S.cineYear = y; go(y, { keepWar: true }).then(() => { S.cineYear = null; }); }
   updateHud(); draw();
 }
-function allianceChange(y0, y1) { // who entered or left the war between two years
-  const w = S.war, a = warSides(w, y0), b = warSides(w, y1), msgs = [], keys = new Set();
+function allianceChange(a, b, t) { // who entered or left the war between two side maps (banner + flash)
+  const w = S.war, msgs = [], keys = new Set();
+  const y1 = Math.floor(t), when = t >= 0 && w.span[1] - w.span[0] < 40 ? `${MONTHS[Math.max(0, Math.min(11, Math.floor((t - y1) * 12)))]} ${y1}` : shortYear(y1);
   const named = (ks) => { const u = [...new Set(ks.map(displayName))]; return u.length > 3 ? `${u.slice(0, 3).join(", ")} and ${u.length - 3} more` : u.join(", "); };
   const STOP = /^(the|of|and|empire|kingdom|republic|state|states|union|federal|people's|democratic|united|first|second|third|grand|duchy|principality|socialist|soviet)$/i;
   const words = (k) => new Set(clean(k).split(/[\s,()-]+/).filter((x) => x.length > 3 && !STOP.test(x)));
@@ -1617,7 +1629,7 @@ function allianceChange(y0, y1) { // who entered or left the war between two yea
     if (out.length) msgs.push(`<span class="out"><i style="background:${SIDE_COLORS[i % SIDE_COLORS.length]}"></i>${esc(named(out))}: out of the war</span>`);
   });
   if (!msgs.length) return;
-  const el = $("#cJoin"); el.innerHTML = `<b>${esc(shortYear(y1))}</b>${msgs.join("")}`; el.classList.add("on");
+  const el = $("#cJoin"); el.innerHTML = `<b>${esc(when)}</b>${msgs.join("")}`; el.classList.add("on");
   clearTimeout(S.joinTimer); S.joinTimer = setTimeout(() => el.classList.remove("on"), 4200 / (S.cineSpeed || 1));
   S.flash = { keys, at: performance.now() };
 }
@@ -1642,7 +1654,7 @@ function cineTick(now) {
 
 function warHTML() {
   if (story()) return storyHTML();
-  const w = S.war, e = w.events[S.wIdx], m = S.warMap || warSides(w, S.year);
+  const w = S.war, e = w.events[S.wIdx], m = S.warMap || warSides(w, warT());
   let h = `<button class="back" data-act="exit-war">← Exit war</button>`;
   h += `<div class="kicker">War · ${esc(w.dateLabel || `${shortYear(w.span[0])}–${shortYear(w.span[1])}`)}</div><h2 class="realm">${esc(w.name)}</h2>`;
   if (e) {

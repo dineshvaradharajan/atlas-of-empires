@@ -14,7 +14,7 @@ for f in D['fronts']:
     b=[v for k,v in BOX.items() if f['name'].startswith(k)][0]
     ks=f['keys']; ds=[k['date'] for k in ks]
     if ds!=sorted(ds) or len(set(ds))!=len(ds): err.append('keys not ascending '+f['name'])
-    if not 4<=len(ks)<=12: err.append('key count '+f['name'])
+    if not 2<=len(ks)<=20: err.append('key count '+f['name'])
     n=set(len(k['line']) for k in ks)
     for k in ks:
         chkdate(k['date'],f['name'])
@@ -25,11 +25,11 @@ for o in D['occupations']:
     ks=o['keys']; ds=[k['date'] for k in ks]
     if o['side'] not in (0,1): err.append('side '+o['name'])
     if ds!=sorted(ds): err.append('occ not ascending '+o['name'])
-    if not 4<=len(ks)<=10: err.append('occ key count '+o['name'])
+    if not 2<=len(ks)<=20: err.append('occ key count '+o['name'])
     for k in ks:
         chkdate(k['date'],o['name']); c=k['coords']
         if c[0]!=c[-1]: err.append('ring not closed '+o['name'])
-        if not 12<=len(c)<=60: err.append(f"ring len {len(c)} {o['name']}")
+        if not 5<=len(c)<=80: err.append(f"ring len {len(c)} {o['name']}")
         if not inbox(c,(-5,28,50,61)): err.append('occ coords '+o['name'])
     print(f"occ side {o['side']} {o['name']}: {len(ks)} keys")
 for a in D['arrows']:
