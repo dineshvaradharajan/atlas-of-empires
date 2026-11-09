@@ -229,6 +229,10 @@ function boxFeature([w, s, e, n]) { // a lon/lat rectangle as a densified, corre
   if (d3.geoArea(g) > 2 * Math.PI) ring.reverse();
   return g;
 }
+function strokeItem(c, it) { // outline that respects the coastline/crop clip of reconstructed and cropped realms
+  if (it.p.recon || it.p.crop) { c.save(); clipFor(c, it); c.stroke(pathOf(it.f)); c.restore(); }
+  else c.stroke(pathOf(it.f));
+}
 function clipFor(c, it) { // apply the clip a feature needs (coastline for reconstructions, box for crops)
   if (it.p.recon) c.clip(S.landClip);
   if (it.p.crop) c.clip(pathOf(it.p.crop));
@@ -524,12 +528,12 @@ function draw() {
     ctx.setLineDash([]);
   }
   drawRings();
-  if (S.journey) { ctx.strokeStyle = theme.ink; ctx.lineWidth = 1.4 / t.k; for (const it of S.items) if (inJourney(it)) ctx.stroke(pathOf(it.f)); }
+  if (S.journey) { ctx.strokeStyle = theme.ink; ctx.lineWidth = 1.4 / t.k; for (const it of S.items) if (inJourney(it)) strokeItem(ctx, it); }
   if (sel) {
     ctx.strokeStyle = theme.ink; ctx.lineWidth = 1.4 / t.k;
-    for (const it of S.items) if (it.kind === "state" && matches(it, sel)) ctx.stroke(pathOf(it.f));
+    for (const it of S.items) if (it.kind === "state" && (matches(it, sel) || (it.p.recon && it.p.n === sel))) strokeItem(ctx, it);
   }
-  if (S.hover >= 0) { ctx.strokeStyle = theme.ink; ctx.lineWidth = 2 / t.k; ctx.stroke(pathOf(S.items[S.hover].f)); }
+  if (S.hover >= 0) { ctx.strokeStyle = theme.ink; ctx.lineWidth = 2 / t.k; strokeItem(ctx, S.items[S.hover]); }
   ctx.restore();
   if (S.zooming) { clearTimeout(S.pickTimer); S.pickTimer = setTimeout(drawPick, 100); }
   else drawPick(); // label placement reads the pick buffer, so keep it current when at rest
