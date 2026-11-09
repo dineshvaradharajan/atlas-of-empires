@@ -60,7 +60,7 @@ const S = {
   labels: true, peoples: true, playing: null, width: 0, height: 0, dpr: 1, token: 0,
 };
 const $ = (s) => document.querySelector(s);
-window.__atlas = S; // read-only handle for debugging in the console
+window.__atlas = S; S.fx = { setWp: (p) => setWp(p), seek: (t) => setWp(pOf(S.cineK, t), true) }; // debugging handles // read-only handle for debugging in the console
 const canvas = $("#map"), ctx = canvas.getContext("2d");
 const pick = document.createElement("canvas"), pctx = pick.getContext("2d", { willReadFrequently: true });
 const projection = d3.geoNaturalEarth1();
@@ -695,6 +695,7 @@ function draw() {
     ctx.save(); ctx.clip(S.landClip); ctx.setLineDash([3 / t.k, 2.5 / t.k]); ctx.strokeStyle = theme.ink3; ctx.stroke(pathOf(it.f)); ctx.restore();
     ctx.strokeStyle = theme.border;
   }
+  drawOccupations();
 
   if (S.showGhost && S.ghost && sel === S.ghost.key && S.ghost.year !== S.year) {
     ctx.setLineDash([5 / t.k, 4 / t.k]); ctx.strokeStyle = theme.highlight; ctx.lineWidth = 1.6 / t.k;
@@ -709,9 +710,10 @@ function draw() {
   }
   if (S.hover >= 0) { ctx.strokeStyle = theme.ink; ctx.lineWidth = 2 / t.k; strokeItem(ctx, S.items[S.hover]); }
   ctx.restore();
-  if (S.zooming) { clearTimeout(S.pickTimer); S.pickTimer = setTimeout(drawPick, 100); }
+  if (S.zooming || S.cinePlay) { clearTimeout(S.pickTimer); S.pickTimer = setTimeout(drawPick, 100); }
   else drawPick(); // label placement reads the pick buffer, so keep it current when at rest
   if (S.labels) drawLabels();
+  drawCinema();
   drawSites();
   drawMomentPin();
 }
@@ -731,6 +733,7 @@ function drawGL() {
     if (it.p.recon) { ctx.setLineDash([3 / t.k, 2.5 / t.k]); ctx.strokeStyle = theme.ink3; } else ctx.strokeStyle = theme.border;
     ctx.lineWidth = 0.7 / t.k; ctx.stroke(pathOf(it.f)); ctx.restore();
   }
+  drawOccupations();
   const sel = S.sel;
   if (S.showGhost && S.ghost && sel === S.ghost.key && S.ghost.year !== S.year) {
     ctx.setLineDash([5 / t.k, 4 / t.k]); ctx.strokeStyle = theme.highlight; ctx.lineWidth = 1.6 / t.k;
@@ -742,9 +745,10 @@ function drawGL() {
   if (sel) { ctx.strokeStyle = theme.ink; ctx.lineWidth = 1.4 / t.k; for (const it of S.items) if (it.kind === "state" && (matches(it, sel) || (it.p.recon && it.p.n === sel))) strokeItem(ctx, it); }
   if (S.hover >= 0) { ctx.strokeStyle = theme.ink; ctx.lineWidth = 2 / t.k; strokeItem(ctx, S.items[S.hover]); }
   ctx.restore();
-  if (S.zooming || GL.fading()) { clearTimeout(S.pickTimer); S.pickTimer = setTimeout(drawPick, 120); }
+  if (S.zooming || GL.fading() || S.cinePlay) { clearTimeout(S.pickTimer); S.pickTimer = setTimeout(drawPick, 120); }
   else drawPick();
   if (S.labels) drawLabels();
+  drawCinema();
   drawSites();
   drawMomentPin();
   if (GL.fading()) { cancelAnimationFrame(S.fadeRaf); S.fadeRaf = requestAnimationFrame(draw); } // keep animating the cross-fade
@@ -1072,46 +1076,315 @@ function warSideOf(it) {
   const m = S.warMap || (S.warMap = warSides(S.war, S.year));
   return m.has(it.p.n) ? m.get(it.p.n) : m.has(it.p.k) ? m.get(it.p.k) : -1;
 }
-const evTime = (e) => { const [y, mo, d] = String(e.date || "").split("-").map(Number); return e.year + (e.year >= 0 && mo ? (mo - 1) / 12 + (d ? (d - 1) / 365 : 0) : 0); };
+const fracDate = (s, fallback) => { // "1916-07-01" -> 1916.497 (fractional year)
+  const m = String(s ?? "").match(/^(-?\d{1,4})(?:-(\d{2}))?(?:-(\d{2}))?$/);
+  if (!m) return fallback ?? NaN;
+  const y = +m[1], mo = m[2] ? +m[2] : 0, d = m[3] ? +m[3] : 0;
+  return mo && y >= 0 ? y + ((mo - 1) * 30.4375 + (d ? d - 1 : 0)) / 365.25 : y;
+};
+const evTime = (e) => (e.year >= 0 ? fracDate(e.date, e.year) : e.year);
 async function openWar(id, idx = 0) {
   const w = warById(id);
   if (!w) return;
   stopPlay();
   if (S.journey) exitJourney();
   S.sel = null; S.ghost = null; S.moment = null; S.war = w; S.view = "war"; S.wIdx = Math.max(0, Math.min(w.events.length - 1, idx));
+  S.cine = null; S.shotIdx = -1;
+  try { S.cine = await loadCinema(w); } catch (e) { console.warn("war layers unavailable", e); }
+  if (S.war !== w) return;
+  S.cineK = cineKnots(w, S.cine);
+  $("#cine").hidden = false;
   await goWarEvent(S.wIdx, true);
 }
 async function goWarEvent(i, fit) {
   const w = S.war; if (!w) return;
   S.wIdx = Math.max(0, Math.min(w.events.length - 1, i));
   const e = w.events[S.wIdx];
+  const K = S.cineK;
+  S.wp = e ? K.P[S.wIdx + 1] : 0; S.wt = e ? K.T[S.wIdx + 1] : K.t0;
+  S.subAt = performance.now();
   S.warMap = null;
-  await go(e ? e.year : w.span[0], { keepWar: true });
+  await go(warYear(S.wt), { keepWar: true });
+  if (S.war !== w) return;
   S.warMap = warSides(w, S.year);
-  renderWarChart(); draw(); renderCol(true); writeHash();
+  renderWarChart(); updateHud(); draw(); renderCol(true); writeHash();
   if (fit && w.events.length) { // frame all the war's events
     const pts = w.events.filter((x) => x.lonlat).map((x) => projection(x.lonlat));
     const xs = pts.map((p) => p[0]), ys = pts.map((p) => p[1]);
     const pad = 20;
     flyTo([[Math.min(...xs) - pad, Math.min(...ys) - pad], [Math.max(...xs) + pad, Math.max(...ys) + pad]], 7);
-  }
+    S.shotIdx = -1;
+  } else camFor(S.wt, e, true);
 }
 function exitWar() {
   stopPlay();
-  S.war = null; S.warMap = null; S.view = "world";
+  S.war = null; S.warMap = null; S.cine = null; S.view = "world";
+  $("#cine").hidden = true;
   S.win = null; updateWindow(); computeFeatured(); draw(); updateChartCursor(); renderCol(true); writeHash();
 }
 function renderWarChart() {
   const w = S.war, el = $("#chart"), t0 = w.span[0], t1 = w.span[1] + 1;
-  const X = (t) => (100 * (t - t0)) / Math.max(1, t1 - t0);
+  const X = (S.warX = (t) => (100 * (t - t0)) / Math.max(1, t1 - t0));
   const years = []; for (let y = w.span[0]; y <= w.span[1]; y++) years.push(y);
   const step = Math.max(1, Math.ceil(years.length / 12));
+  const C = S.cine, leg = C ? `<span class="wl"><i class="occ"></i>Occupied</span><span class="wl"><i class="fl"></i>Front line</span><span class="wl"><i class="ar"></i>Offensive</span><span class="wl"><i class="bt"></i>Battle (size = losses)</span>` : "";
   el.innerHTML = `<div class="warbar">${years.map((y, i) => `<span class="wy${i % 2 ? " alt" : ""}" style="left:${X(y)}%;width:${X(y + 1) - X(y)}%">${(i % step === 0) ? shortYear(y) : ""}</span>`).join("")}</div>
-    <div class="wsides">${w.sides.map((sd, i) => `<span><i style="background:${SIDE_COLORS[i % SIDE_COLORS.length]}"></i>${esc(sd.name)}</span>`).join("")}</div>
+    <div class="wsides">${w.sides.map((sd, i) => `<span><i style="background:${SIDE_COLORS[i % SIDE_COLORS.length]}"></i>${esc(sd.name)}</span>`).join("")}${leg}</div>
     <div class="wmarks">${w.events.map((e, i) => `<button class="mk ev wk-${esc(e.kind || "other")}${i === S.wIdx ? " on" : ""}" data-wev="${i}" style="left:${X(evTime(e))}%" aria-label="${esc(e.label || shortYear(e.year))}: ${esc(e.text)}"><span class="tipm">${esc(e.label || shortYear(e.year))} · ${esc(e.text)}</span></button>`).join("")}</div>
+    <div class="wcur" style="left:${X(S.wt ?? t0)}%"></div>
     <div class="wnow"><b>${S.wIdx + 1}</b> / ${w.events.length} · ${esc(w.events[S.wIdx]?.label || "")}</div>`;
-  $("#chartTitle").innerHTML = `${esc(w.name)} · ${esc(w.dateLabel || `${shortYear(w.span[0])}–${shortYear(w.span[1])}`)} <button class="exitj" data-act="exit-war" aria-label="Exit war">× Exit</button>`;
+  $("#chartTitle").innerHTML = `${esc(w.name)} · ${esc(w.dateLabel || `${shortYear(w.span[0])}–${shortYear(w.span[1])}`)} <button class="exitj wspeed" data-act="war-speed" aria-label="Playback speed">${S.cineSpeed || 1}×</button> <button class="exitj" data-act="exit-war" aria-label="Exit war">× Exit</button>`;
 }
+
+// ---------------------------------------------------------------- war cinema
+// Continuous playback: a clock (S.wt, fractional year) drives the borders, front lines, occupied areas, offensive
+// arrows, battle markers, subtitles and the camera. Layers come from content/cinema/<war>.json; wars without one
+// still get the clock, subtitles and a camera that follows the events.
+const warYear = (t) => { const w = S.war; return Math.max(w.span[0], Math.min(w.span[1], Math.floor(t + 1e-9))); };
+function cineKnots(w, C) { // playback seconds <-> war time; half real time, half evenly spaced events (busy months play slower)
+  const ev = w.events.map(evTime), n = ev.length;
+  for (let i = 0; i < n;) { // events known only to the year: spread them through that year so the clock still moves
+    let j = i; while (j < n && ev[j] === ev[i] && !/^\d{3,4}-\d{2}/.test(w.events[j].date || "")) j++;
+    if (j - i > 1 && Number.isInteger(ev[i])) for (let q = i; q < j; q++) ev[q] = ev[i] + (0.9 * (q - i + 0.5)) / (j - i);
+    i = Math.max(j, i + 1);
+  }
+  const t0 = C ? Math.min(fracDate(C.start), n ? ev[0] - 0.02 : Infinity) : Math.max(w.span[0], (n ? ev[0] : w.span[0]) - 0.08);
+  const t1 = C ? fracDate(C.end) + 0.02 : Math.min(w.span[1] + 1, (n ? ev[n - 1] : w.span[1]) + 0.2);
+  const D = Math.max(40, Math.min(110, 24 + 2.4 * n));
+  const T = [t0], P = [0];
+  ev.forEach((t, i) => {
+    const tt = Math.max(T[T.length - 1], Math.min(t1, t));
+    T.push(tt); P.push(Math.max(P[P.length - 1] + 0.9, D * (0.5 * (tt - t0) / Math.max(1e-6, t1 - t0) + 0.5 * (i + 0.5) / n)));
+  });
+  T.push(t1); P.push(Math.max(D, P[P.length - 1] + 2));
+  return { T, P, D: P[P.length - 1], t0, t1 };
+}
+const pOf = (K, t) => { for (let i = 0; i < K.T.length - 1; i++) if (t <= K.T[i + 1]) { const a = K.T[i], b = K.T[i + 1]; return b > a ? K.P[i] + ((K.P[i + 1] - K.P[i]) * (Math.max(a, t) - a)) / (b - a) : K.P[i + 1]; } return K.D; };
+const tOf = (K, p) => { for (let i = 0; i < K.P.length - 1; i++) if (p <= K.P[i + 1]) { const a = K.P[i], b = K.P[i + 1]; return b > a ? K.T[i] + ((K.T[i + 1] - K.T[i]) * (Math.max(a, p) - a)) / (b - a) : K.T[i + 1]; } return K.t1; };
+
+function resample(pts, n, closed) { // n points evenly spaced along a line or ring (lon/lat)
+  const P = pts.map((p) => [p[0], p[1]]);
+  if (closed && P.length > 2 && P[0][0] === P[P.length - 1][0] && P[0][1] === P[P.length - 1][1]) P.pop();
+  if (closed) P.push(P[0]);
+  const L = [0];
+  for (let i = 1; i < P.length; i++) L.push(L[i - 1] + Math.hypot((P[i][0] - P[i - 1][0]) * Math.cos((P[i][1] * Math.PI) / 180), P[i][1] - P[i - 1][1]));
+  const tot = L[L.length - 1] || 1, out = [], m = closed ? n : n - 1;
+  for (let s = 0, j = 0; s < n; s++) {
+    const d = (s / m) * tot;
+    while (j < L.length - 2 && L[j + 1] < d) j++;
+    const u = (d - L[j]) / (L[j + 1] - L[j] || 1);
+    out.push([P[j][0] + (P[j + 1][0] - P[j][0]) * u, P[j][1] + (P[j + 1][1] - P[j][1]) * u]);
+  }
+  return out;
+}
+const d2 = (a, b) => (a[0] - b[0]) ** 2 + (a[1] - b[1]) ** 2;
+const sArea = (r) => r.reduce((s, p, i) => { const q = r[(i + 1) % r.length]; return s + p[0] * q[1] - q[0] * p[1]; }, 0);
+function alignTo(pts, prev, closed) { // match point order to the previous keyframe so shapes morph instead of twisting
+  if (!prev) return pts;
+  if (!closed) return d2(pts[0], prev[0]) + d2(pts[pts.length - 1], prev[prev.length - 1]) > d2(pts[0], prev[prev.length - 1]) + d2(pts[pts.length - 1], prev[0]) ? pts.slice().reverse() : pts;
+  let r = Math.sign(sArea(pts)) !== Math.sign(sArea(prev)) ? pts.slice().reverse() : pts;
+  let best = 0, bestD = Infinity;
+  for (let o = 0; o < r.length; o++) { let s = 0; for (let j = 0; j < r.length; j++) s += d2(r[(j + o) % r.length], prev[j]); if (s < bestD) { bestD = s; best = o; } }
+  return r.map((_, j) => r[(j + best) % r.length]);
+}
+function smoothLL(pts) { // Catmull-Rom through the path's points
+  if (pts.length < 3) return pts.map((p) => [p[0], p[1]]);
+  const out = [];
+  for (let i = 0; i < pts.length - 1; i++) {
+    const p0 = pts[i - 1] || pts[i], p1 = pts[i], p2 = pts[i + 1], p3 = pts[i + 2] || p2;
+    for (let s = 0; s < 10; s++) {
+      const u = s / 10, u2 = u * u, u3 = u2 * u;
+      out.push([0, 1].map((c) => 0.5 * (2 * p1[c] + (-p0[c] + p2[c]) * u + (2 * p0[c] - 5 * p1[c] + 4 * p2[c] - p3[c]) * u2 + (-p0[c] + 3 * p1[c] - 3 * p2[c] + p3[c]) * u3)));
+    }
+  }
+  out.push([pts[pts.length - 1][0], pts[pts.length - 1][1]]);
+  return out;
+}
+async function loadCinema(w) {
+  if (!w.cinema) return null;
+  if (w._cine) return w._cine;
+  const c = await fetch(`data/cinema/${encodeURIComponent(w.id)}.json`).then((r) => r.json());
+  const prep = (x, closed) => {
+    let prev = null;
+    x.keys = (x.keys || []).map((k) => { const pts = alignTo(resample(k.line || k.coords, closed ? 96 : 64, closed), prev, closed); prev = pts; return { t: fracDate(k.date), pts }; });
+    x.tEnd = x.end ? fracDate(x.end) : null;
+  };
+  (c.fronts = c.fronts || []).forEach((f) => prep(f, false));
+  (c.occupations = c.occupations || []).forEach((o) => prep(o, true));
+  (c.arrows = c.arrows || []).forEach((a) => { a.t0 = fracDate(a.start); a.t1 = Math.max(fracDate(a.end), a.t0 + 0.02); a.smooth = smoothLL(a.path); });
+  (c.battles = c.battles || []).forEach((b) => { b.t0 = fracDate(b.start); b.t1 = Math.max(fracDate(b.end || b.start), b.t0 + 0.03); });
+  c.shots = (c.shots || []).map((s) => ({ ...s, t: fracDate(s.date) })).sort((a, b) => a.t - b.t);
+  return (w._cine = c);
+}
+function trackAt(x, t, holdTo) { // interpolated shape of a front or occupied area at time t, with fade in/out
+  const k = x.keys, FADE = 0.05;
+  if (!k.length || t < k[0].t - FADE) return null;
+  const end = x.tEnd ?? holdTo;
+  if (t > end + FADE) return null;
+  const a = t < k[0].t ? 1 - (k[0].t - t) / FADE : t > end ? 1 - (t - end) / FADE : 1;
+  if (t <= k[0].t) return { pts: k[0].pts, a };
+  if (t >= k[k.length - 1].t) return { pts: k[k.length - 1].pts, a };
+  let i = 0; while (k[i + 1].t < t) i++;
+  const u = (t - k[i].t) / (k[i + 1].t - k[i].t), A = k[i].pts, B = k[i + 1].pts;
+  return { pts: A.map((p, j) => [p[0] + (B[j][0] - p[0]) * u, p[1] + (B[j][1] - p[1]) * u]), a };
+}
+const occPat = new Map();
+function occPattern(c) {
+  if (!occPat.has(c)) {
+    const cv = document.createElement("canvas"); cv.width = cv.height = 7;
+    const x = cv.getContext("2d"); x.strokeStyle = c; x.lineWidth = 2.2; x.lineCap = "square";
+    x.beginPath(); x.moveTo(0, 7); x.lineTo(7, 0); x.moveTo(-1, 1); x.lineTo(1, -1); x.moveTo(6, 8); x.lineTo(8, 6); x.stroke();
+    occPat.set(c, ctx.createPattern(cv, "repeat"));
+  }
+  return occPat.get(c);
+}
+function drawOccupations() { // called inside the map transform; hatched in the occupier's colour, clipped to land
+  const C = S.cine; if (!S.war || !C || !C.occupations.length) return;
+  const t = S.wt, k = S.t.k;
+  ctx.save(); ctx.clip(S.landClip);
+  for (const o of C.occupations) {
+    const s = trackAt(o, t, S.cineK.t1); if (!s) continue;
+    const col = SIDE_COLORS[(o.side ?? 1) % SIDE_COLORS.length], path = new Path2D();
+    s.pts.forEach((p, i) => { const [x, y] = projection(p); i ? path.lineTo(x, y) : path.moveTo(x, y); });
+    path.closePath();
+    const pat = occPattern(col); pat.setTransform(new DOMMatrix().scale(1 / k));
+    ctx.globalAlpha = 0.8 * s.a; ctx.fillStyle = pat; ctx.fill(path);
+    ctx.globalAlpha = s.a; ctx.strokeStyle = col; ctx.lineWidth = 1.3 / k; ctx.setLineDash([4 / k, 3 / k]); ctx.stroke(path); ctx.setLineDash([]);
+  }
+  ctx.restore(); ctx.globalAlpha = 1;
+}
+const scr = (ll) => { const [x, y] = projection(ll); return [S.t.applyX(x), S.t.applyY(y)]; };
+function polyLine(pts) { ctx.beginPath(); pts.forEach((p, i) => (i ? ctx.lineTo(p[0], p[1]) : ctx.moveTo(p[0], p[1]))); }
+function drawCinema() { // screen space, above the labels: fronts, offensives, battles
+  const C = S.cine; if (!S.war || !C) return;
+  const t = S.wt, k = S.t.k, K = S.cineK, now = performance.now();
+  ctx.save(); ctx.lineJoin = "round"; ctx.lineCap = "round";
+  // front lines
+  for (const f of C.fronts) {
+    const last = f.keys[f.keys.length - 1]?.t ?? 0;
+    const s = trackAt(f, t, last >= K.t1 - 0.06 ? K.t1 : last + 0.1); if (!s) continue;
+    const pts = s.pts.map(scr);
+    ctx.globalAlpha = s.a;
+    polyLine(pts); ctx.strokeStyle = theme.bg; ctx.lineWidth = 6; ctx.stroke();
+    ctx.strokeStyle = theme.ink; ctx.lineWidth = 2.6; ctx.stroke();
+    if (k >= 2.2 && pts.length > 4) { // name along the middle of the line
+      const m = pts[Math.floor(pts.length / 2)];
+      ctx.font = 'italic 600 11px Inter, sans-serif'; ctx.textAlign = "left"; ctx.textBaseline = "middle";
+      ctx.lineWidth = 3; ctx.strokeStyle = theme.bg; ctx.strokeText(f.name, m[0] + 8, m[1]); ctx.fillStyle = theme.ink; ctx.fillText(f.name, m[0] + 8, m[1]);
+    }
+  }
+  // offensives: arrows that draw themselves while the campaign runs, then fade
+  for (const a of C.arrows) {
+    if (t < a.t0) continue;
+    const after = t - a.t1;
+    const alpha = after <= 0.08 ? 1 : 1 - (after - 0.08) / 0.12;
+    if (alpha <= 0) continue;
+    const prog = Math.min(1, (t - a.t0) / (a.t1 - a.t0)), e = 1 - (1 - prog) ** 2;
+    const P = a.smooth.map(scr), seg = [0];
+    for (let i = 1; i < P.length; i++) seg.push(seg[i - 1] + Math.hypot(P[i][0] - P[i - 1][0], P[i][1] - P[i - 1][1]));
+    const want = seg[seg.length - 1] * e; if (want < 2) continue;
+    const pts = [P[0]];
+    for (let i = 1; i < P.length; i++) {
+      if (seg[i] <= want) { pts.push(P[i]); continue; }
+      const u = (want - seg[i - 1]) / (seg[i] - seg[i - 1]); pts.push([P[i - 1][0] + (P[i][0] - P[i - 1][0]) * u, P[i - 1][1] + (P[i][1] - P[i - 1][1]) * u]); break;
+    }
+    const col = SIDE_COLORS[(a.side ?? 0) % SIDE_COLORS.length], wdt = Math.min(8, 3 + k * 0.9);
+    ctx.globalAlpha = alpha;
+    const tip = pts[pts.length - 1];
+    let back = pts[0]; for (let i = pts.length - 1; i >= 0; i--) if (Math.hypot(tip[0] - pts[i][0], tip[1] - pts[i][1]) > wdt * 2) { back = pts[i]; break; }
+    const ang = Math.atan2(tip[1] - back[1], tip[0] - back[0]), hl = wdt * 2.6;
+    const shaft = pts.slice(); shaft[shaft.length - 1] = [tip[0] - Math.cos(ang) * hl * 0.6, tip[1] - Math.sin(ang) * hl * 0.6];
+    polyLine(shaft); ctx.strokeStyle = theme.bg; ctx.lineWidth = wdt + 4; ctx.stroke();
+    ctx.strokeStyle = col; ctx.lineWidth = wdt; ctx.stroke();
+    ctx.beginPath(); ctx.moveTo(tip[0], tip[1]);
+    ctx.lineTo(tip[0] - Math.cos(ang - 0.5) * hl, tip[1] - Math.sin(ang - 0.5) * hl);
+    ctx.lineTo(tip[0] - Math.cos(ang + 0.5) * hl, tip[1] - Math.sin(ang + 0.5) * hl); ctx.closePath();
+    ctx.fillStyle = col; ctx.fill(); ctx.lineWidth = 2; ctx.strokeStyle = theme.bg; ctx.stroke();
+    if (prog < 1 && k >= 1.8) {
+      ctx.font = '700 11px Inter, sans-serif'; ctx.textAlign = "left"; ctx.textBaseline = "middle";
+      ctx.lineWidth = 3; ctx.strokeStyle = theme.bg; ctx.strokeText(a.name, tip[0] + 10, tip[1] - 10); ctx.fillStyle = col; ctx.fillText(a.name, tip[0] + 10, tip[1] - 10);
+    }
+  }
+  // battles: pulse while fought (size = losses), then leave a small scar
+  for (const b of C.battles) {
+    if (t < b.t0 || !b.lonlat) continue;
+    const [x, y] = scr(b.lonlat);
+    if (t > b.t1) {
+      ctx.globalAlpha = 0.55; ctx.strokeStyle = theme.ink; ctx.lineWidth = 1.6;
+      ctx.beginPath(); ctx.moveTo(x - 3.5, y - 3.5); ctx.lineTo(x + 3.5, y + 3.5); ctx.moveTo(x + 3.5, y - 3.5); ctx.lineTo(x - 3.5, y + 3.5); ctx.stroke();
+      continue;
+    }
+    const r = Math.max(5, Math.min(26, 5 + 19 * Math.sqrt((b.casNum || 50000) / 1.2e6))), ph = ((now / 1400) % 1);
+    ctx.globalAlpha = 1;
+    ctx.beginPath(); ctx.arc(x, y, r, 0, 2 * Math.PI); ctx.fillStyle = "rgba(17,17,17,.22)"; ctx.fill();
+    ctx.lineWidth = 1.5; ctx.strokeStyle = theme.ink; ctx.stroke();
+    if (S.cinePlay) { ctx.globalAlpha = 1 - ph; ctx.beginPath(); ctx.arc(x, y, r * (1 + ph * 0.9), 0, 2 * Math.PI); ctx.lineWidth = 2; ctx.stroke(); }
+    ctx.globalAlpha = 1;
+    ctx.font = '800 11px Archivo, "Helvetica Neue", sans-serif'; ctx.textAlign = "left"; ctx.textBaseline = "middle";
+    const lab = b.name.toUpperCase(), sub = b.casualties || "";
+    ctx.lineWidth = 3; ctx.strokeStyle = theme.bg; ctx.strokeText(lab, x + r + 6, y - 6); ctx.fillStyle = theme.ink; ctx.fillText(lab, x + r + 6, y - 6);
+    if (sub && k >= 2) { ctx.font = '500 10px Inter, sans-serif'; ctx.strokeText(sub, x + r + 6, y + 7); ctx.fillStyle = theme.ink3; ctx.fillText(sub, x + r + 6, y + 7); }
+  }
+  ctx.restore(); ctx.globalAlpha = 1;
+}
+const MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+function updateHud() {
+  const w = S.war; if (!w) return;
+  const t = S.wt, y = warYear(t), monthly = t >= 0 && w.span[1] - w.span[0] < 40 && w.events.some((e) => /^\d{4}-\d{2}/.test(e.date || ""));
+  $("#cMonth").textContent = monthly ? MONTHS[Math.max(0, Math.min(11, Math.floor((t - Math.floor(t)) * 12)))] : "";
+  $("#cYear").textContent = shortYear(y);
+  const shots = S.cine?.shots || [];
+  let sh = null; for (const s of shots) if (s.t <= t + 1e-6) sh = s;
+  $("#cShot").textContent = sh?.caption || "";
+  const e = w.events[S.wIdx], reached = e && S.cineK.T[S.wIdx + 1] <= t + 1e-6;
+  const show = reached && (!S.cinePlay || performance.now() - S.subAt < 5200);
+  const sub = $("#cSub");
+  if (show) { const html = `<b>${esc(e.label || shortYear(e.year))}</b>${esc(e.text)}`; if (sub.dataset.k !== `${w.id}:${S.wIdx}`) { sub.innerHTML = html; sub.dataset.k = `${w.id}:${S.wIdx}`; } }
+  sub.classList.toggle("on", !!show);
+  const cur = $("#chart .wcur"); if (cur && S.warX) cur.style.left = S.warX(t) + "%";
+}
+function flyCenter(ll, k, ms = 1800) {
+  if (!S.width) return;
+  const [x, y] = projection(ll); k = Math.max(1, Math.min(12, k));
+  d3.select(canvas).transition().duration(ms).ease(d3.easeCubicInOut)
+    .call(S.zoom.transform, d3.zoomIdentity.translate(S.width / 2 - k * x, S.height / 2 - k * y).scale(k));
+}
+function camFor(t, e, jump) { // follow the action: the latest camera shot, else keep the current event in view
+  const shots = S.cine?.shots || [];
+  if (shots.length) {
+    let i = -1; shots.forEach((s, j) => { if (s.t <= t + 1e-6) i = j; });
+    if (i >= 0 && (jump || i > S.shotIdx)) { S.shotIdx = i; flyCenter(shots[i].center, shots[i].zoom || 3, jump ? 1100 : 2200); }
+    return;
+  }
+  if (!e?.lonlat) return;
+  const [x, y] = scr(e.lonlat);
+  if (x < S.width * 0.18 || x > S.width * 0.82 || y < S.height * 0.18 || y > S.height * 0.82) flyCenter(e.lonlat, Math.max(S.t.k, 2), 1500);
+}
+function setWp(p, playing) {
+  const w = S.war, K = S.cineK; if (!w) return;
+  S.wp = Math.max(0, Math.min(K.D, p)); S.wt = tOf(K, S.wp);
+  let i = 0; for (let j = 0; j < w.events.length; j++) if (K.P[j + 1] <= S.wp + 1e-9) i = j;
+  if (i !== S.wIdx) {
+    S.wIdx = i; S.subAt = performance.now();
+    renderCol(true); writeHash();
+    document.querySelectorAll("#chart .wmarks .mk").forEach((m, j) => m.classList.toggle("on", j === i));
+    const now = $("#chart .wnow"); if (now) now.innerHTML = `<b>${i + 1}</b> / ${w.events.length} · ${esc(w.events[i]?.label || "")}`;
+    if (playing && !S.cine?.shots?.length) camFor(S.wt, w.events[i], false);
+  }
+  if (playing && S.cine?.shots?.length) camFor(S.wt, null, false);
+  const y = warYear(S.wt);
+  if (y !== S.year && y !== S.cineYear) { S.cineYear = y; go(y, { keepWar: true }).then(() => { S.cineYear = null; }); }
+  updateHud(); draw();
+}
+function cineTick(now) {
+  if (!S.cinePlay || !S.war) return;
+  const dt = S.cineLast ? Math.min(0.1, (now - S.cineLast) / 1000) : 0; S.cineLast = now;
+  const p = S.wp + dt * (S.cineSpeed || 1);
+  if (p >= S.cineK.D) { setWp(S.cineK.D, true); return stopPlay(); }
+  setWp(p, true);
+  S.cineRaf = requestAnimationFrame(cineTick);
+}
+
 function warHTML() {
   const w = S.war, e = w.events[S.wIdx], m = S.warMap || warSides(w, S.year);
   let h = `<button class="back" data-act="exit-war">← Exit war</button>`;
@@ -1324,7 +1597,7 @@ function drawSites() { // capitals, ports and excavations of active reconstructi
 }
 function drawMomentPin() {
   let m = S.view === "moment" && S.moment;
-  if (!m && S.war) { const e = S.war.events[S.wIdx]; if (e && e.lonlat) m = { lonlat: e.lonlat, title: e.text.length > 50 ? e.text.slice(0, 48) + "…" : e.text }; }
+  if (!m && S.war) { const e = S.war.events[S.wIdx]; if (e && e.lonlat && S.cineK.T[S.wIdx + 1] <= S.wt + 1e-6) m = { lonlat: e.lonlat, title: "" }; } // the subtitle carries the text
   if (!m && S.journey) {
     const ev = S.jEvent != null ? S.journey.events[S.jEvent] : currentEvent(S.journey, S.year);
     if (ev && ev.lonlat && S.year - ev.year <= Math.max(3, (S.journey.span[1] - S.journey.span[0]) / 25)) m = { lonlat: ev.lonlat, title: ev.text.length > 48 ? ev.text.slice(0, 46) + "…" : ev.text };
@@ -1337,6 +1610,7 @@ function drawMomentPin() {
   ctx.lineWidth = 2.5; ctx.strokeStyle = "#ffffff"; ctx.stroke();
   ctx.font = '800 14px Archivo, "Helvetica Neue", sans-serif'; ctx.textAlign = "left"; ctx.textBaseline = "middle";
   const label = m.title, w = ctx.measureText(label).width;
+  if (!label) { ctx.restore(); return; }
   const lx = x + 14 + w + 12 > S.width ? x - 18 - w - 8 : x + 18;
   ctx.fillStyle = theme.ink; ctx.fillRect(lx - 6, y - 12, w + 12, 24);
   ctx.fillStyle = theme.bg; ctx.fillText(label, lx, y + 1);
@@ -1351,10 +1625,8 @@ function setupChart() {
   const scrub = (y) => { if (pending == null) setTimeout(() => { go(pending); pending = null; }, 24); pending = y; };
   el.addEventListener("pointerdown", (ev) => {
     const wk = ev.target.closest("[data-wev]");
-    if (S.war) { ev.preventDefault(); stopPlay(); if (wk) return goWarEvent(+wk.dataset.wev); 
-      const r = el.getBoundingClientRect(), t = S.war.span[0] + ((ev.clientX - r.left) / r.width) * (S.war.span[1] + 1 - S.war.span[0]);
-      let best = 0; S.war.events.forEach((x, i) => { if (Math.abs(evTime(x) - t) < Math.abs(evTime(S.war.events[best]) - t)) best = i; });
-      return goWarEvent(best); }
+    if (S.war) { ev.preventDefault(); stopPlay(); if (wk) return goWarEvent(+wk.dataset.wev);
+      drag = { x: ev.clientX, target: ev.target, war: true }; el.setPointerCapture(ev.pointerId); return setWp(pOf(S.cineK, warT(ev))); }
     const mk = ev.target.closest(".mk");
     if (mk && mk.dataset.jev != null) { ev.preventDefault(); const e = S.journey.events[+mk.dataset.jev]; S.jEvent = +mk.dataset.jev; stopPlay(); return go(e.year); }
     if (mk) { ev.preventDefault(); return openMoment(mk.dataset.moment); }
@@ -1362,9 +1634,10 @@ function setupChart() {
     if (rb) { ev.preventDefault(); S.jEvent = null; stopPlay(); return go(+rb.dataset.year); }
     drag = { x: ev.clientX, target: ev.target }; el.setPointerCapture(ev.pointerId); stopPlay(); scrub(toYear(ev));
   });
-  el.addEventListener("pointermove", (ev) => { if (drag) { if (Math.abs(ev.clientX - drag.x) > 3) drag.moved = true; scrub(toYear(ev)); } });
+  const warT = (ev) => { const r = el.getBoundingClientRect(); return S.war.span[0] + Math.max(0, Math.min(1, (ev.clientX - r.left) / r.width)) * (S.war.span[1] + 1 - S.war.span[0]); };
+  el.addEventListener("pointermove", (ev) => { if (drag?.war) { if (S.war) setWp(pOf(S.cineK, warT(ev))); return; } if (drag) { if (Math.abs(ev.clientX - drag.x) > 3) drag.moved = true; scrub(toYear(ev)); } });
   el.addEventListener("pointerup", () => {
-    if (drag && !drag.moved) { const s = drag.target.closest?.("[data-series]"); if (s) select(s.dataset.series); }
+    if (drag && !drag.war && !drag.moved) { const s = drag.target.closest?.("[data-series]"); if (s) select(s.dataset.series); }
     drag = null;
   });
 }
@@ -1436,16 +1709,20 @@ function setPlayIcon(playing) {
   $("#play").innerHTML = playing ? `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h4v14H7zM13 5h4v14h-4z"/></svg>` : `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5l11 7-11 7z"/></svg>`;
   $("#play").setAttribute("aria-label", playing ? "Pause" : "Play");
 }
-function stopPlay() { if (S.playing) { clearInterval(S.playing); S.playing = null; setPlayIcon(false); } }
+function stopPlay() {
+  if (!S.playing) return;
+  clearInterval(S.playing); cancelAnimationFrame(S.cineRaf); S.playing = null; setPlayIcon(false);
+  if (S.cinePlay) { S.cinePlay = false; updateHud(); draw(); }
+}
 function togglePlay() {
   if (S.playing) return stopPlay();
   if (S.journey && S.year >= S.journey.span[1]) go(S.journey.span[0]);
   else if (!S.journey && S.year >= S.range[1]) go(S.range[0]);
   setPlayIcon(true);
   if (S.war) {
-    if (S.wIdx >= S.war.events.length - 1) goWarEvent(0);
-    setPlayIcon(true);
-    S.playing = setInterval(() => { if (!S.war || S.wIdx >= S.war.events.length - 1) return stopPlay(); goWarEvent(S.wIdx + 1); }, 3200);
+    if (S.wp >= S.cineK.D - 0.05) { S.shotIdx = -1; setWp(0); }
+    S.cinePlay = true; S.playing = -1; S.cineLast = 0; S.subAt = performance.now();
+    S.cineRaf = requestAnimationFrame(cineTick);
     return;
   }
   // Journeys last ~25 s whatever the empire's lifespan; the open timeline moves at a steady pace.
@@ -1500,7 +1777,8 @@ function setupUI() {
   $("#sourcesLink").onclick = (ev) => { ev.preventDefault(); S.view = "sources"; renderCol(true); };
   $("#momentsLink").onclick = (ev) => { ev.preventDefault(); if (S.journey) exitJourney(); S.view = "moments"; S.moment = null; draw(); renderCol(true); };
   $("#empiresLink").onclick = (ev) => { ev.preventDefault(); if (S.journey) exitJourney(); S.view = "empires"; S.moment = null; draw(); renderCol(true); };
-  $("#dock").addEventListener("click", (ev) => { if (ev.target.closest("[data-act=exit-journey]")) exitJourney(); if (ev.target.closest("[data-act=exit-war]")) exitWar(); });
+  $("#dock").addEventListener("click", (ev) => { if (ev.target.closest("[data-act=exit-journey]")) exitJourney(); if (ev.target.closest("[data-act=exit-war]")) exitWar();
+    const sp = ev.target.closest("[data-act=war-speed]"); if (sp) { S.cineSpeed = { 1: 2, 2: 0.5, 0.5: 1 }[S.cineSpeed || 1]; sp.textContent = `${S.cineSpeed}×`; } });
   $("#warsLink").onclick = (ev) => { ev.preventDefault(); if (S.journey) exitJourney(); if (S.war) exitWar(); S.view = "wars"; S.moment = null; draw(); renderCol(true); };
   $("#zoomIn").onclick = () => d3.select(canvas).transition().duration(300).call(S.zoom.scaleBy, 1.6);
   $("#zoomOut").onclick = () => d3.select(canvas).transition().duration(300).call(S.zoom.scaleBy, 1 / 1.6);

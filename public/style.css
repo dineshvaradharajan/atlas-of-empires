@@ -283,3 +283,24 @@ ol.jtl details p { margin: 4px 0 2px; font-size: 13.5px; line-height: 1.55; colo
 .mfig img { width: 100%; display: block; border: 1px solid var(--rule); background: #f6f3ea; }
 .mfig.news img { filter: contrast(1.05); }
 .mfig figcaption { font-size: 12.5px; color: var(--ink-2); margin-top: 5px; line-height: 1.45; }
+
+/* ---- war cinema: date clock, scene caption, subtitles, playhead */
+#cine { position: absolute; inset: 0; pointer-events: none; z-index: 2; }
+#cine .cdate { position: absolute; left: 22px; top: 14px; display: flex; align-items: baseline; gap: 12px; font-family: var(--display); color: var(--ink);
+  text-shadow: 0 0 3px var(--bg), 0 0 8px var(--bg), 0 0 14px var(--bg); }
+#cine .cdate b { font-weight: 900; font-size: 44px; line-height: 1; letter-spacing: .01em; text-transform: uppercase; }
+#cine .cdate span { font-weight: 800; font-size: 44px; line-height: 1; color: var(--highlight); font-variant-numeric: tabular-nums; }
+#cShot { position: absolute; left: 24px; top: 66px; max-width: min(520px, 60%); font: 600 13px/1.4 var(--sans); color: var(--ink-2);
+  text-shadow: 0 0 3px var(--bg), 0 0 8px var(--bg); }
+#cSub { position: absolute; left: 50%; bottom: 46px; transform: translate(-50%, 8px); max-width: min(760px, 86%); padding: 10px 16px;
+  background: rgba(17, 17, 17, .86); color: #fff; font: 600 16px/1.35 var(--sans); text-align: center; opacity: 0; transition: opacity .45s, transform .45s; }
+#cSub b { display: block; font: 800 11px/1.4 var(--display); letter-spacing: .1em; text-transform: uppercase; color: #ffb4a8; margin-bottom: 2px; }
+#cSub.on { opacity: 1; transform: translate(-50%, 0); }
+#chart .wcur { position: absolute; top: 34px; height: 46px; width: 2px; margin-left: -1px; background: var(--highlight); pointer-events: none; }
+#chart .wcur::before { content: ""; position: absolute; top: -4px; left: -4px; width: 10px; height: 10px; border-radius: 50%; background: var(--highlight); }
+#chart .wsides .wl { color: var(--ink-3); font-weight: 500; }
+#chart .wsides .wl i.occ { background: repeating-linear-gradient(135deg, #E5402A 0 2px, transparent 2px 5px); outline: 1px dashed #E5402A; }
+#chart .wsides .wl i.fl { height: 3px; width: 16px; background: var(--ink); }
+#chart .wsides .wl i.ar { height: 4px; width: 14px; background: #2B59D9; clip-path: polygon(0 25%, 70% 25%, 70% 0, 100% 50%, 70% 100%, 70% 75%, 0 75%); height: 10px; }
+#chart .wsides .wl i.bt { border-radius: 50%; border: 1.5px solid var(--ink); background: rgba(17, 17, 17, .2); }
+@media (max-width: 760px) { #cine .cdate b, #cine .cdate span { font-size: 28px; } #cShot { top: 48px; font-size: 12px; } #cSub { font-size: 14px; bottom: 16px; } }

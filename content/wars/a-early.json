@@ -1,0 +1,2018 @@
+[
+  {
+    "id": "peloponnesian-war",
+    "name": "Peloponnesian War",
+    "moment": null,
+    "span": [
+      -431,
+      -404
+    ],
+    "dateLabel": "431 BCE – April 404 BCE",
+    "summary": "Thucydides blamed the war on the growth of Athenian power and the fear it caused in Sparta. Athens led the Delian League, a sea empire of Aegean cities paying it tribute; Sparta led the Peloponnesian League, the strongest land alliance in Greece. In the first ten years (the Archidamian War) Sparta ravaged Attica each summer while Athens sheltered behind its Long Walls and raided by sea; a plague killed perhaps a quarter of the crowded city. The Peace of Nicias in 421 BCE did not hold. In 415–413 BCE Athens lost almost its entire expedition against Syracuse in Sicily, and in the final phase Persian money let Sparta build a fleet. After Lysander destroyed the Athenian navy at Aegospotami, a besieged and starving Athens surrendered in April 404 BCE, gave up its walls, fleet and empire, and briefly fell under the Spartan-backed Thirty. Sparta became the leading power in Greece.",
+    "casualties": "No overall total survives; the plague alone is estimated to have killed 75,000–100,000 people in Athens, and the Sicilian expedition lost nearly all of its roughly 40,000 men, killed or enslaved.",
+    "sides": [
+      {
+        "name": "Athens and the Delian League",
+        "members": [
+          {
+            "clio": "Odrysian Kingdom",
+            "from": -431,
+            "to": -429
+          }
+        ]
+      },
+      {
+        "name": "Sparta and the Peloponnesian League",
+        "members": [
+          {
+            "clio": "Peloponnesian League",
+            "from": -431,
+            "to": -404
+          },
+          {
+            "clio": "Achaemenid Empire",
+            "from": -412,
+            "to": -404
+          }
+        ]
+      }
+    ],
+    "events": [
+      {
+        "date": "-431",
+        "year": -431,
+        "label": "4 Apr 431 BCE",
+        "text": "Thebes, Sparta's ally, attacks Athens' ally Plataea",
+        "detail": "Tension had built for years over Corcyra, Potidaea and Athenian trade sanctions on Megara, and in 432 BCE the Spartan assembly declared that Athens had broken the Thirty Years' Peace. The first blow came on 4 April 431 BCE from Thebes, Sparta's ally, which attacked Plataea, a small Boeotian city allied to Athens. The attack opened a war between the two great Greek alliances that would last, with one uneasy pause, for twenty-seven years.",
+        "lonlat": [
+          23.27,
+          38.22
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "-431",
+        "year": -431,
+        "label": "431 BCE",
+        "text": "Archidamus II leads the first Spartan invasion of Attica",
+        "detail": "Sparta's plan was to provoke a decisive land battle by burning the farms of Attica. Pericles instead persuaded the Athenians to abandon the countryside, crowd behind the Long Walls joining Athens to its port of Piraeus, and rely on the fleet and imported grain. The Spartans invaded almost every summer but stayed only weeks at a time, while Athenian ships raided the Peloponnesian coast. That first winter Pericles gave his famous Funeral Oration.",
+        "lonlat": [
+          23.73,
+          38.08
+        ],
+        "kind": "invasion"
+      },
+      {
+        "date": "-430",
+        "year": -430,
+        "label": "430 BCE",
+        "text": "Plague breaks out in overcrowded Athens",
+        "detail": "With the population of Attica packed inside the walls, an epidemic that probably entered through Piraeus swept the city in 430 BCE and returned in 429 and 427/426. Thucydides, who caught it and survived, described its symptoms; the cause is still debated. Estimates put the dead at 75,000–100,000, about a quarter of the population. Pericles, according to Plutarch, died of it in 429, leaving Athens without its leading statesman.",
+        "lonlat": [
+          23.73,
+          37.98
+        ],
+        "kind": "other"
+      },
+      {
+        "date": "-429",
+        "year": -429,
+        "label": "429 BCE",
+        "text": "Athens' Thracian ally Sitalces invades Macedon",
+        "detail": "At the start of the war Sitalces, king of the Odrysian Thracians, allied himself with Athens. In 429 BCE he invaded Macedon, ruled by Perdiccas II, with a huge army that included warriors from independent Thracian and Paeonian tribes. Lacking supplies, he soon withdrew. The episode shows the war reaching far beyond the Greek cities, as both sides sought allies among neighbouring kingdoms.",
+        "lonlat": [
+          22.55,
+          40.95
+        ],
+        "kind": "invasion"
+      },
+      {
+        "date": "-425",
+        "year": -425,
+        "label": "425 BCE",
+        "text": "Athenians force Spartans on Sphacteria to surrender",
+        "detail": "The Athenian general Demosthenes fortified Pylos on the Messenian coast, a base that attracted runaway helots. When Spartan troops were cut off on the island of Sphacteria and peace talks failed, Cleon and Demosthenes stormed it. Some 292 hoplites, about 120 of them full Spartan citizens, surrendered, shocking the Greek world. Athens threatened to kill the prisoners if Sparta invaded Attica again, and the annual invasions stopped.",
+        "lonlat": [
+          21.66,
+          36.94
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "-424",
+        "year": -424,
+        "label": "424 BCE",
+        "text": "Boeotians defeat the Athenian invasion at Delium",
+        "detail": "Hoping to knock Boeotia out of the war, Athenian generals planned a two-pronged invasion that went wrong. Hippocrates fortified the temple at Delium, but as his army turned for home the Boeotian commander Pagondas of Thebes attacked. Theban troops drawn up in an unusually deep formation broke the Athenians, who suffered heavy losses; the philosopher Socrates was among those who retreated. The defeat ended Athenian hopes on land in central Greece.",
+        "lonlat": [
+          23.59,
+          38.36
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "-424",
+        "year": -424,
+        "label": "Winter 424–423 BCE",
+        "text": "Spartan general Brasidas captures Amphipolis",
+        "detail": "Brasidas marched an army of helots and mercenaries the length of Greece to attack Athenian holdings in Thrace. In the winter of 424–423 BCE he took Amphipolis, an Athenian colony on the Strymon river whose region supplied silver to the Athenian war chest, by offering its people generous terms before help could arrive. The Athenian general sent to save it, the historian Thucydides, came too late and was exiled, which gave him time to write his history of the war.",
+        "lonlat": [
+          23.84,
+          40.82
+        ],
+        "kind": "invasion"
+      },
+      {
+        "date": "-422",
+        "year": -422,
+        "label": "422 BCE",
+        "text": "Battle of Amphipolis: Brasidas and Cleon both killed",
+        "detail": "When a one-year armistice ran out in 422 BCE, Cleon, the most forceful advocate of war in Athens, sailed to Thrace and retook Torone and Scione before moving on Amphipolis. Fearing an attack before his reinforcements arrived, he began a badly organised retreat, and Brasidas struck the disordered column. About 600 Athenians died, among them Cleon, while Brasidas was mortally wounded. With the leading hawks on both sides dead, peace talks became possible.",
+        "lonlat": [
+          23.85,
+          40.83
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "-421",
+        "year": -421,
+        "label": "Mar 421 BCE",
+        "text": "Peace of Nicias ends the first ten years of war",
+        "detail": "Negotiated by the Spartan king Pleistoanax and the Athenian general Nicias, the treaty was sworn by seventeen representatives from each side and was meant to last fifty years, with both sides handing back most of their conquests and prisoners. Its terms were never fully carried out: Sparta did not return Amphipolis and Athens kept Pylos. Several of Sparta's allies rejected the peace, and fighting by proxy soon resumed in the Peloponnese.",
+        "lonlat": [
+          23.73,
+          37.98
+        ],
+        "kind": "treaty"
+      },
+      {
+        "date": "-418",
+        "year": -418,
+        "label": "418 BCE",
+        "text": "Sparta defeats Argos, Athens and their allies at Mantinea",
+        "detail": "Encouraged by Alcibiades, Athens backed a coalition of Argos, Mantinea, Elis and other Peloponnesian states against Sparta. Late in 418 BCE, at Mantinea, the largest land battle of the war, the Spartans under King Agis recovered from early setbacks and won a complete victory over Argos, Athens, Mantinea and their Arcadian allies. The coalition broke up, most of its members rejoined Sparta's alliance, and Spartan dominance of the Peloponnese was restored.",
+        "lonlat": [
+          22.38,
+          37.62
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "-416",
+        "year": -416,
+        "label": "416 BCE",
+        "text": "Athens besieges and destroys neutral Melos",
+        "detail": "Melos, a Dorian island with ties to Sparta, had stayed neutral. In summer 416 BCE Athens demanded that it submit and pay tribute; Thucydides' Melian Dialogue portrays the Athenian envoys arguing that the strong do what they can and the weak must suffer. The Melians refused. After a siege the city surrendered that winter, and the Athenians killed its men and sold the women and children into slavery.",
+        "lonlat": [
+          24.42,
+          36.72
+        ],
+        "kind": "atrocity"
+      },
+      {
+        "date": "-415",
+        "year": -415,
+        "label": "415 BCE",
+        "text": "The great Athenian expedition sails for Sicily",
+        "detail": "Answering an appeal from its ally Segesta, and urged on by Alcibiades, Athens sent 134 triremes and thousands of soldiers to Sicily, aiming in practice at powerful Syracuse. On the eve of departure the herms, sacred statues of the god Hermes around the city, were mutilated. Alcibiades, accused of sacrilege, was recalled soon after landing; he fled to Sparta and advised it against Athens. Nicias, who had opposed the venture, was left in command.",
+        "lonlat": [
+          15.28,
+          37.07
+        ],
+        "kind": "invasion"
+      },
+      {
+        "date": "-413",
+        "year": -413,
+        "label": "413 BCE",
+        "text": "Sparta fortifies Decelea in Attica",
+        "detail": "On Alcibiades' advice, Sparta reopened the war in mainland Greece by building a permanent fort at Decelea, within sight of Athens. Athenian farms could no longer be worked, overland supplies were cut, and the Laurion silver mines were crippled when, by one account, some 20,000 slaves fled. Athens now depended entirely on imports by sea while also fighting in Sicily.",
+        "lonlat": [
+          23.78,
+          38.17
+        ],
+        "kind": "turning-point"
+      },
+      {
+        "date": "-413",
+        "year": -413,
+        "label": "Sep 413 BCE",
+        "text": "Athenian army in Sicily destroyed at the Assinarus river",
+        "detail": "Reinforced under Demosthenes but defeated around Syracuse, the Athenians delayed their departure after a lunar eclipse on 28 August, and the Syracusans then blockaded and beat their fleet in the Great Harbour. The army, about 40,000 people with camp followers, retreated overland and was cut down; Nicias's column was massacred at the Assinarus river. The 7,000 prisoners were kept in quarries, Nicias and Demosthenes were executed, and many survivors were sold as slaves.",
+        "lonlat": [
+          15.05,
+          36.85
+        ],
+        "kind": "turning-point"
+      },
+      {
+        "date": "-412",
+        "year": -412,
+        "label": "412 BCE",
+        "text": "Persian satraps ally with Sparta as Ionia revolts",
+        "detail": "After the Sicilian disaster many of Athens' Aegean allies revolted. King Darius II of Persia ordered his satraps in Asia Minor, Tissaphernes and Pharnabazus, to recover tribute from the Greek cities, and they made an alliance with Sparta. Persia regained most of Ionia and began paying for a Peloponnesian fleet, though Tissaphernes at first played the two Greek sides against each other.",
+        "lonlat": [
+          27.28,
+          37.53
+        ],
+        "kind": "treaty"
+      },
+      {
+        "date": "-411",
+        "year": -411,
+        "label": "Jun 411 BCE",
+        "text": "Oligarchs of the Four Hundred seize power in Athens",
+        "detail": "With the treasury nearly empty after Sicily, wealthy Athenians who disliked the democracy, in contact with officers at Samos and with Alcibiades, overthrew it. A council of Four Hundred took power in June 411 BCE and sought peace with Sparta. The fleet at Samos refused to accept the regime and kept fighting in Athens' name; the Four Hundred fell within months and full democracy was restored by 410.",
+        "lonlat": [
+          23.73,
+          37.98
+        ],
+        "kind": "political"
+      },
+      {
+        "date": "-410",
+        "year": -410,
+        "label": "May–Jun 410 BCE",
+        "text": "Alcibiades destroys the Spartan fleet at Cyzicus",
+        "detail": "Recalled by the fleet at Samos, Alcibiades led a combined Athenian force with Thrasybulus and Theramenes against the Spartan admiral Mindarus, who had taken Cyzicus in the Sea of Marmara with the help of the Persian satrap Pharnabazus. The Athenians routed the Peloponnesian fleet and Mindarus was killed. The victory restored Athenian control of the Hellespont, the route of the city's grain supply, and Sparta offered peace, which Athens rejected.",
+        "lonlat": [
+          27.89,
+          40.39
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "-406",
+        "year": -406,
+        "label": "406 BCE",
+        "text": "Athens wins at Arginusae, then executes six of its generals",
+        "detail": "After the Spartan Lysander won a small victory at Notium and Alcibiades went into exile, Athens melted down golden statues and enlisted slaves and resident foreigners to man a new fleet and rescue a squadron blockaded at Mytilene. Off the Arginusae islands it defeated the Spartans under Callicratidas. A storm prevented the rescue of crews from 25 disabled ships, and in the uproar that followed the Assembly tried and executed six of the victorious generals.",
+        "lonlat": [
+          26.85,
+          39.05
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "-405",
+        "year": -405,
+        "label": "405 BCE",
+        "text": "Lysander destroys the Athenian fleet at Aegospotami",
+        "detail": "Funded by the Persian prince Cyrus the Younger, Lysander rebuilt the Spartan fleet and sailed to the Hellespont, through which Athens' grain passed. At Aegospotami he caught the Athenian ships beached and their crews ashore foraging. About 168 ships were destroyed and only a handful escaped; some 3,000 Athenian prisoners were killed. Without a fleet Athens could no longer feed itself or hold its empire.",
+        "lonlat": [
+          26.58,
+          40.33
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "-404",
+        "year": -404,
+        "label": "25 Apr 404 BCE",
+        "text": "Starving Athens surrenders to Sparta",
+        "detail": "Blockaded by land and sea, Athens surrendered. Corinth and Thebes wanted the city destroyed, but Sparta refused. Athens had to pull down its Long Walls and harbour fortifications, give up all but a few ships and its overseas possessions, and follow Sparta in foreign policy. A pro-Spartan oligarchy known as the Thirty ruled until democrats led by Thrasybulus restored democracy in 403 BCE.",
+        "lonlat": [
+          23.73,
+          37.98
+        ],
+        "kind": "treaty"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: Peloponnesian War",
+        "url": "https://en.wikipedia.org/wiki/Peloponnesian_War"
+      },
+      {
+        "title": "Wikipedia: Plague of Athens",
+        "url": "https://en.wikipedia.org/wiki/Plague_of_Athens"
+      },
+      {
+        "title": "Wikipedia: Sicilian Expedition",
+        "url": "https://en.wikipedia.org/wiki/Sicilian_Expedition"
+      },
+      {
+        "title": "Wikipedia: Siege of Melos",
+        "url": "https://en.wikipedia.org/wiki/Siege_of_Melos"
+      },
+      {
+        "title": "Wikipedia: Battle of Amphipolis",
+        "url": "https://en.wikipedia.org/wiki/Battle_of_Amphipolis"
+      },
+      {
+        "title": "Wikipedia: Battle of Aegospotami",
+        "url": "https://en.wikipedia.org/wiki/Battle_of_Aegospotami"
+      },
+      {
+        "title": "Wikipedia: Sitalces",
+        "url": "https://en.wikipedia.org/wiki/Sitalces"
+      },
+      {
+        "title": "Wikipedia: Athenian coup of 411 BC",
+        "url": "https://en.wikipedia.org/wiki/Athenian_coup_of_411_BC"
+      }
+    ]
+  },
+  {
+    "id": "second-punic-war",
+    "name": "Second Punic War",
+    "moment": null,
+    "span": [
+      -218,
+      -201
+    ],
+    "dateLabel": "Spring 218 BCE – spring 201 BCE",
+    "summary": "After losing the First Punic War in 241 BCE, Carthage built a new power base in Iberia under the Barca family. In 219 BCE Hannibal besieged and sacked Saguntum, a city allied to Rome, and in spring 218 Rome declared war. Hannibal marched from Iberia over the Alps into Italy and destroyed Roman armies at the Trebia, Lake Trasimene and Cannae, and much of southern Italy, including Capua, went over to him. Philip V of Macedon and Syracuse also joined Carthage. But Rome refused to make peace, raised new legions and fought a long war of attrition. It retook Syracuse and Capua, while Publius Cornelius Scipio drove the Carthaginians out of Iberia and Hasdrubal's relief army was destroyed at the Metaurus. In 204 Scipio invaded Africa; Hannibal was recalled and defeated at Zama in 202. The peace of 201 stripped Carthage of its overseas lands, its fleet and its freedom to make war, leaving Rome dominant in the western Mediterranean.",
+    "casualties": "No reliable total survives; by ancient figures more than 100,000 Roman and allied soldiers were killed or captured at the Trebia, Lake Trasimene and Cannae alone in 218–216 BCE, with estimates for Cannae ranging from about 48,000 (Livy) to 70,000 (Polybius) killed.",
+    "sides": [
+      {
+        "name": "Rome and allies",
+        "members": [
+          {
+            "clio": "Roman Republic",
+            "from": -218,
+            "to": -201
+          },
+          {
+            "clio": "Aetolian League",
+            "from": -211,
+            "to": -206
+          },
+          {
+            "clio": "Kingdom of Pergamon",
+            "from": -209,
+            "to": -208
+          }
+        ]
+      },
+      {
+        "name": "Carthage and allies",
+        "members": [
+          {
+            "clio": "Carthage",
+            "from": -218,
+            "to": -201
+          },
+          {
+            "clio": "Antigonid Macedonia",
+            "from": -215,
+            "to": -205
+          }
+        ]
+      }
+    ],
+    "events": [
+      {
+        "date": "-218",
+        "year": -218,
+        "label": "Spring 218 BCE",
+        "text": "Rome declares war on Carthage after the fall of Saguntum",
+        "detail": "Carthage had expanded across south-east Iberia after the First Punic War, and a treaty of 226 BCE set the Ebro as the limit of its sphere. Rome, however, had an understanding with Saguntum, well south of the Ebro. In 219 Hannibal besieged the city and took it after eight months. Rome sent an embassy led by Quintus Fabius Maximus to the Carthaginian senate with peremptory demands; when these were rejected, Rome declared war in spring 218 BCE.",
+        "lonlat": [
+          -0.27,
+          39.68
+        ],
+        "kind": "political"
+      },
+      {
+        "date": "-218",
+        "year": -218,
+        "label": "May–Jun 218 BCE",
+        "text": "Hannibal leaves New Carthage and marches for Italy",
+        "detail": "Rome planned to fight in Iberia and Africa, but Hannibal struck first. He assembled his army at New Carthage (Cartagena) and led it north along the coast in May or June, then through southern Gaul by an inland route to avoid Rome's allies. He fought his way across the Rhône and evaded a Roman army that had landed at Massalia (Marseille) on its way to Iberia.",
+        "lonlat": [
+          -0.98,
+          37.6
+        ],
+        "kind": "invasion"
+      },
+      {
+        "date": "-218",
+        "year": -218,
+        "label": "Autumn 218 BCE",
+        "text": "Hannibal crosses the Alps into Italy",
+        "detail": "Reaching the foot of the Alps in late autumn, Hannibal's army crossed in fifteen days, battling cold, terrain and attacks by local tribes; the exact pass is still debated, so the pin here is approximate. He reached Cisalpine Gaul in November with about 20,000 infantry, 6,000 cavalry and the survivors of the 37 elephants he had set out with. His surprise arrival forced Rome to cancel its planned invasion of Africa.",
+        "lonlat": [
+          6.9,
+          45.2
+        ],
+        "kind": "invasion"
+      },
+      {
+        "date": "-218",
+        "year": -218,
+        "label": "Late Nov 218 BCE",
+        "text": "Carthaginian cavalry routs the Romans at the Ticinus",
+        "detail": "The consul Publius Scipio led his cavalry and light infantry against Hannibal's cavalry near the Ticinus river and was soundly beaten; Scipio himself was wounded. The Romans fell back to Placentia. The victory persuaded most of the Gallic tribes of northern Italy to side with Carthage, and Hannibal's army grew to more than 40,000 men. The Senate ordered the army in Sicily under the other consul, Sempronius Longus, to march north and join Scipio, abandoning the planned invasion of Africa.",
+        "lonlat": [
+          9.1,
+          45.2
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "-218",
+        "year": -218,
+        "label": "Late 218 BCE",
+        "text": "Romans land in north-east Iberia and win at Cissa",
+        "detail": "The Roman army Hannibal had evaded at Massalia sailed on and landed in north-east Iberia in the autumn of 218, winning support among local tribes. A Carthaginian attack late in the year was beaten off at Cissa, near Tarraco. The Roman foothold between the Ebro and the Pyrenees, which the Carthaginians never managed to remove, made it very hard to send reinforcements from Iberia to Hannibal.",
+        "lonlat": [
+          1.25,
+          41.12
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "-218",
+        "year": -218,
+        "label": "22 or 23 Dec 218 BCE",
+        "text": "Hannibal traps and destroys a Roman army at the Trebia",
+        "detail": "The army from Sicily under the consul Sempronius Longus joined Scipio's near Placentia. On a cold, snowy morning Hannibal's Numidian cavalry provoked the Romans into crossing the Trebia river to fight on ground of his choosing, while 2,000 men hidden overnight in a watercourse under his brother Mago struck their rear. The Romans were encircled and only about 10,000 of some 40,000 fought their way to safety.",
+        "lonlat": [
+          9.6,
+          45.0
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "-217",
+        "year": -217,
+        "label": "21 Jun 217 BCE",
+        "text": "Roman army ambushed and destroyed at Lake Trasimene",
+        "detail": "In early spring 217 BCE Hannibal crossed the Apennines by an unguarded route and ravaged Etruria to lure the consul Gaius Flaminius into a hasty pursuit. On a misty morning Flaminius's army marched along the narrow north shore of Lake Trasimene into an ambush laid in the hills above. About 15,000 Romans, including Flaminius, were killed and 10,000 captured. Hannibal treated captured Roman citizens harshly but freed many of Rome's Latin allies, hoping to turn Rome's allies against it.",
+        "lonlat": [
+          12.1,
+          43.17
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "-217",
+        "year": -217,
+        "label": "217 BCE",
+        "text": "Fabius Maximus made dictator; adopts a strategy of delay",
+        "detail": "In the panic after Trasimene the Roman Assembly elected Quintus Fabius Maximus dictator. He adopted what became known as the Fabian strategy: avoiding pitched battle and using low-level harassment to wear the invader down until Rome could rebuild its strength. His army shadowed Hannibal and attacked his foragers while the Carthaginians ravaged some of Italy's richest land. The strategy was unpopular, and Romans mocked Fabius as Cunctator, 'the Delayer'; for 216 BCE they elected new consuls who sought a decisive battle.",
+        "lonlat": [
+          12.48,
+          41.89
+        ],
+        "kind": "political"
+      },
+      {
+        "date": "-216",
+        "year": -216,
+        "label": "2 Aug 216 BCE",
+        "text": "Hannibal annihilates the largest Roman army yet at Cannae",
+        "detail": "The consuls Paullus and Varro led some 86,000 men against Hannibal on the open plain near Cannae in Apulia. The Roman infantry pushed into Hannibal's deliberately weak centre, African infantry on the wings closed in on their flanks, and Carthaginian cavalry, having routed the Roman horse, attacked from behind. Surrounded, the Roman army was slaughtered; at least 67,500 were killed or captured. It remains a classic example of a double envelopment.",
+        "lonlat": [
+          16.13,
+          41.31
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "-216",
+        "year": -216,
+        "label": "216 BCE",
+        "text": "Capua and much of southern Italy defect to Hannibal",
+        "detail": "After Cannae, Capua, the second-largest city in Italy, made an alliance with Hannibal when his army marched into Campania. Other southern city-states and two of the major Samnite tribes also joined him; so did the major port of Tarentum. By 214 BCE most of southern Italy had turned against Rome, but most of its allies in central Italy stayed loyal, and Hannibal had to defend his new friends from Roman retribution.",
+        "lonlat": [
+          14.25,
+          41.08
+        ],
+        "kind": "political"
+      },
+      {
+        "date": "-215",
+        "year": -215,
+        "label": "Summer 215 BCE",
+        "text": "Philip V of Macedon allies with Hannibal",
+        "detail": "Hearing of Cannae, Philip V sent ambassadors to Hannibal's camp in Italy, and in summer 215 BCE they agreed a treaty of mutual support. The envoys were captured on their way home by a Roman fleet, which revealed the alliance. Rome reinforced its Adriatic fleet and sent a legion to guard against a Macedonian landing in Italy, beginning the First Macedonian War, which never produced a decisive battle.",
+        "lonlat": [
+          22.52,
+          40.76
+        ],
+        "kind": "treaty"
+      },
+      {
+        "date": "-215",
+        "year": -215,
+        "label": "215 BCE",
+        "text": "Romans defeat Hasdrubal in Iberia at Dertosa",
+        "detail": "Ordered to take his army from Iberia to join Hannibal in Italy, Hannibal's brother Hasdrubal first attacked the Romans near the Ebro. At Dertosa he tried to envelop the Roman centre with his infantry while his cavalry cleared their flanks, but the Romans broke through his centre and then beat each wing in turn. After this defeat Hasdrubal could not reinforce Hannibal for years.",
+        "lonlat": [
+          0.52,
+          40.81
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "-212",
+        "year": -212,
+        "label": "Autumn 212 BCE",
+        "text": "Rome takes Syracuse after a long siege; Archimedes killed",
+        "detail": "After the death of Hiero II, Rome's long-standing ally, in 215, Syracuse's new rulers went over to Carthage. A Roman army under Claudius Marcellus besieged the city from 213, delayed by war machines devised by Archimedes. In spring 212 the Romans stormed part of the city in a night attack, plague crippled a Carthaginian relief army, and the rest of Syracuse fell in the autumn. Archimedes was killed by a Roman soldier.",
+        "lonlat": [
+          15.28,
+          37.07
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "-211",
+        "year": -211,
+        "label": "211 BCE",
+        "text": "Rome allies with the Aetolian League against Macedon",
+        "detail": "To keep Philip V busy in Greece, the Roman commander Laevinus offered an alliance to the Aetolian League, which had fought Macedon before. Under the treaty of 211 BCE the Aetolians fought on land and the Romans at sea; Pergamon, Elis, Messenia and Sparta later joined. The Aetolians made a separate peace with Philip in 206, and Rome ended the war in 205.",
+        "lonlat": [
+          21.67,
+          38.6
+        ],
+        "kind": "treaty"
+      },
+      {
+        "date": "-211",
+        "year": -211,
+        "label": "211 BCE",
+        "text": "Hannibal marches on Rome but fails to save Capua",
+        "detail": "The Romans had besieged Capua, Hannibal's most important ally in Italy, since 212. Hannibal attacked their siege lines without success, then marched toward Rome itself, hoping to draw the besiegers away. The besieging armies stayed in place, and Capua surrendered soon afterwards. It lost its self-government and was put under Roman officials, a warning to other cities that had defected.",
+        "lonlat": [
+          12.55,
+          41.93
+        ],
+        "kind": "turning-point"
+      },
+      {
+        "date": "-211",
+        "year": -211,
+        "label": "211 BCE",
+        "text": "Roman armies in Iberia destroyed at the Upper Baetis",
+        "detail": "Strengthened by 20,000 Celtiberian mercenaries, the Romans in Iberia split their forces to attack three separate Carthaginian armies. Hasdrubal bribed the mercenaries to desert, and in two battles, known together as the battle of the Upper Baetis, both Roman armies were completely defeated. The survivors fell back to their coastal base north of the Ebro, which the Carthaginians again failed to take.",
+        "lonlat": [
+          -3.63,
+          38.04
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "-209",
+        "year": -209,
+        "label": "Early 209 BCE",
+        "text": "Scipio storms New Carthage, the Carthaginian capital in Iberia",
+        "detail": "Publius Cornelius Scipio, sent to Iberia in 210 BCE, struck at the centre of Carthaginian power rather than at its armies. In early 209 his troops attacked New Carthage by land and from the harbour and took the lightly defended city, seizing a vast booty of gold, silver and siege engines. He freed the Iberian hostages held there to win the loyalty of their tribes.",
+        "lonlat": [
+          -0.98,
+          37.6
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "-207",
+        "year": -207,
+        "label": "207 BCE",
+        "text": "Hasdrubal's relief army destroyed at the Metaurus",
+        "detail": "Hasdrubal crossed the Alps with about 35,000 men in 207 BCE to join his brother, but Hannibal did not learn he was coming. The consul Claudius Nero secretly marched north from facing Hannibal to join his colleague Livius Salinator. At the Metaurus river the combined Romans outflanked and routed the Carthaginians, killing Hasdrubal. Hannibal, left without reinforcements, withdrew into Bruttium, the toe of Italy.",
+        "lonlat": [
+          12.95,
+          43.75
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "-206",
+        "year": -206,
+        "label": "206 BCE",
+        "text": "Scipio's victory at Ilipa ends Carthaginian rule in Iberia",
+        "detail": "Near Ilipa, north of modern Seville, Scipio with about 48,000 men, half Italian and half Iberian, faced a Carthaginian army of some 54,500 and 32 elephants. A surprise change in his battle order, often called a reverse Cannae, won a crushing victory. Gades, the last Carthaginian city in Iberia, soon went over to Rome, and Carthage lost the silver and recruits Iberia had provided.",
+        "lonlat": [
+          -5.98,
+          37.52
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "-205",
+        "year": -205,
+        "label": "205 BCE",
+        "text": "Peace of Phoenice ends the war with Macedon",
+        "detail": "After the Aetolians made a separate peace with Philip V in 206, Rome, with no more allies fighting in Greece, was ready to end the First Macedonian War. The treaty drawn up at Phoenice in Epirus in 205 BCE ended it without a decisive result. Rome had achieved its main aim: Philip had been kept from sending help to Hannibal in Italy.",
+        "lonlat": [
+          20.07,
+          39.92
+        ],
+        "kind": "treaty"
+      },
+      {
+        "date": "-204",
+        "year": -204,
+        "label": "204 BCE",
+        "text": "Scipio invades Africa and besieges Utica",
+        "detail": "Made consul in 205 BCE, Scipio trained an army in Sicily, partly of volunteers, for an invasion of Africa. In 204 he landed near the Carthaginian port of Utica with four legions and besieged it. The Numidian prince Masinissa, who had lost his kingdom to the Carthaginian-backed king Syphax, joined him with cavalry, while Syphax and the Carthaginian general Hasdrubal Gisco camped nearby.",
+        "lonlat": [
+          10.06,
+          37.06
+        ],
+        "kind": "invasion"
+      },
+      {
+        "date": "-203",
+        "year": -203,
+        "label": "203 BCE",
+        "text": "Victory at the Great Plains forces Carthage to recall Hannibal",
+        "detail": "After burning the enemy camps outside Utica, Scipio defeated the Carthaginian and Numidian armies of Hasdrubal Gisco and Syphax at the Great Plains. Syphax was pursued and captured by Masinissa, who took most of his kingdom with Roman help. Carthage opened peace talks and recalled Hannibal and Mago from Italy; Hannibal landed with 15,000–20,000 veterans, and Carthage repudiated the draft treaty.",
+        "lonlat": [
+          9.0,
+          36.6
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "-202",
+        "year": -202,
+        "label": "Oct 202 BCE",
+        "text": "Scipio defeats Hannibal at Zama",
+        "detail": "For once the Romans, helped by Masinissa's Numidians, were stronger in cavalry, and Hannibal relied on his infantry and 80 war elephants. The elephants were turned back through his own lines, and the Roman and Numidian cavalry drove the Carthaginian horse from the field, then returned to strike the rear of the Carthaginian infantry, which collapsed. Hannibal escaped, and Carthage sued for peace. The exact battlefield is uncertain, so the pin is approximate.",
+        "lonlat": [
+          9.4,
+          36.2
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "-201",
+        "year": -201,
+        "label": "Spring 201 BCE",
+        "text": "Carthage accepts Rome's peace terms",
+        "detail": "The treaty stripped Carthage of all its overseas territories and some of its African lands, imposed an indemnity of 10,000 silver talents over fifty years, limited its fleet to ten warships, banned war elephants and forbade it to make war without Rome's permission. Hannibal urged acceptance, and the treaty was agreed in spring 201 BCE. Scipio took the name Africanus, and Rome was now the leading power of the western Mediterranean.",
+        "lonlat": [
+          10.32,
+          36.85
+        ],
+        "kind": "treaty"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: Second Punic War",
+        "url": "https://en.wikipedia.org/wiki/Second_Punic_War"
+      },
+      {
+        "title": "Wikipedia: Battle of the Trebia",
+        "url": "https://en.wikipedia.org/wiki/Battle_of_the_Trebia"
+      },
+      {
+        "title": "Wikipedia: Battle of Lake Trasimene",
+        "url": "https://en.wikipedia.org/wiki/Battle_of_Lake_Trasimene"
+      },
+      {
+        "title": "Wikipedia: Battle of Cannae",
+        "url": "https://en.wikipedia.org/wiki/Battle_of_Cannae"
+      },
+      {
+        "title": "Wikipedia: First Macedonian War",
+        "url": "https://en.wikipedia.org/wiki/First_Macedonian_War"
+      },
+      {
+        "title": "Wikipedia: Battle of Ilipa",
+        "url": "https://en.wikipedia.org/wiki/Battle_of_Ilipa"
+      },
+      {
+        "title": "Wikipedia: Battle of Zama",
+        "url": "https://en.wikipedia.org/wiki/Battle_of_Zama"
+      }
+    ]
+  },
+  {
+    "id": "first-crusade",
+    "name": "First Crusade",
+    "moment": "first-crusade",
+    "span": [
+      1096,
+      1099
+    ],
+    "dateLabel": "1096 – 12 August 1099",
+    "summary": "In 1095 the Byzantine emperor Alexios I asked the West for help against the Seljuk Turks, who had overrun most of Anatolia. At the Council of Clermont that November, Pope Urban II called for an armed pilgrimage to aid the Eastern Christians and recover Jerusalem. The first, poorly organised bands attacked Jewish communities in the Rhineland and were destroyed by the Turks in Anatolia. The main armies, led by princes from France, Lorraine and Norman Italy and numbering perhaps 100,000 with non-combatants, gathered at Constantinople, took Nicaea with Byzantine help, beat the Seljuks at Dorylaeum and endured an eight-month siege of Antioch. Divisions and rivalries among the Muslim rulers of Syria helped them. In July 1099 they stormed Jerusalem, then held by Fatimid Egypt, and killed many of its inhabitants. Four crusader states, Edessa, Antioch, Jerusalem and later Tripoli, were founded, and a Fatimid counter-attack was beaten at Ascalon.",
+    "casualties": "No reliable total exists; tens of thousands of crusaders and pilgrims died of battle, hunger and disease, perhaps only about 12,000 fighting men reached Jerusalem, and modern estimates put the dead of the Jerusalem massacre alone at 3,000–10,000.",
+    "sides": [
+      {
+        "name": "Crusaders and Byzantine allies",
+        "members": [
+          {
+            "clio": "Byzantine Empire",
+            "from": 1097,
+            "to": 1098
+          },
+          {
+            "clio": "County of Edessa",
+            "from": 1099,
+            "to": 1099
+          },
+          {
+            "clio": "Principality of Antioch",
+            "from": 1099,
+            "to": 1099
+          },
+          {
+            "clio": "Kingdom of Jerusalem",
+            "from": 1099,
+            "to": 1099
+          }
+        ]
+      },
+      {
+        "name": "Seljuk Turks",
+        "members": [
+          {
+            "clio": "Sultanate of Rum",
+            "from": 1096,
+            "to": 1097
+          },
+          {
+            "clio": "Danishmendids",
+            "from": 1097,
+            "to": 1097
+          },
+          {
+            "clio": "Great Seljuk Empire",
+            "from": 1097,
+            "to": 1098
+          }
+        ]
+      },
+      {
+        "name": "Fatimid Caliphate",
+        "members": [
+          {
+            "clio": "Fatimid Caliphate",
+            "from": 1099,
+            "to": 1099
+          }
+        ]
+      }
+    ],
+    "events": [
+      {
+        "date": "1096-05",
+        "year": 1096,
+        "label": "May 1096",
+        "text": "Crusading bands massacre Jews in the Rhineland",
+        "detail": "Urban II's call at Clermont on 27 November 1095 set off popular preaching across Europe. Months before the official departure date, unofficial bands turned on Jewish communities: in May 1096 followers of Emicho of Flonheim attacked the Jews of Speyer and Worms and destroyed the community of Mainz, and violence followed in Cologne, Trier, Metz and elsewhere. Some bishops tried to protect the Jews. The massacres were never church policy, but they left a lasting scar.",
+        "lonlat": [
+          8.27,
+          50.0
+        ],
+        "kind": "atrocity"
+      },
+      {
+        "date": "1096-10",
+        "year": 1096,
+        "label": "Oct 1096",
+        "text": "People's Crusade destroyed by the Turks at Civetot",
+        "detail": "Thousands of mostly poor pilgrims, with some knights, followed the preacher Peter the Hermit and Walter Sans Avoir to Constantinople, pillaging along the way. Alexios quickly ferried them across the Bosporus, where they raided towards Nicaea, the capital of Kilij Arslan's Seljuk Sultanate of Rum. In October 1096 Turkish archers ambushed and annihilated the main body at Civetot; Walter was killed and only a few survivors later joined the princes' armies.",
+        "lonlat": [
+          29.5,
+          40.7
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1096-11",
+        "year": 1096,
+        "label": "Nov 1096 – Apr 1097",
+        "text": "The princes' armies gather at Constantinople",
+        "detail": "The main armies left in late summer 1096 under Godfrey of Bouillon, Raymond of Toulouse, Bohemond of Taranto, Robert of Normandy, Robert of Flanders and others, and reached Constantinople between November and April. Alexios wanted them in Asia Minor quickly and, in return for supplies, required the leaders to swear fealty and promise to return former Byzantine lands. Most did, after tense clashes outside the city; Raymond only promised to do the empire no harm.",
+        "lonlat": [
+          28.98,
+          41.01
+        ],
+        "kind": "political"
+      },
+      {
+        "date": "1097-06-19",
+        "year": 1097,
+        "label": "14 May – 19 Jun 1097",
+        "text": "Nicaea surrenders to the Byzantines after a crusader siege",
+        "detail": "The crusaders besieged Nicaea while Kilij Arslan was away fighting the Danishmendids; his relief attack on 16 May was driven off. Because the city was supplied across Lake Iznik, Alexios had boats hauled overland to close the lake. Fearing a storm, the Turkish garrison surrendered to the Byzantines instead of the crusaders, who were barred from looting it. The emperor rewarded them with money, but the episode planted distrust between Franks and Greeks.",
+        "lonlat": [
+          29.72,
+          40.43
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1097-07-01",
+        "year": 1097,
+        "label": "1 Jul 1097",
+        "text": "Crusaders defeat Kilij Arslan at Dorylaeum",
+        "detail": "Marching across Anatolia in two groups, the crusaders were attacked near Dorylaeum by Kilij Arslan and his Danishmendid ally with a larger army of mounted archers. Bohemond's vanguard formed a tight defensive camp around its non-combatants and held out until the rear division under Godfrey and Raymond arrived and the legate Adhemar struck the Turks from behind. The Turks fled, burning the country as they went, and the crusaders crossed Anatolia almost unopposed but suffered badly from heat and hunger.",
+        "lonlat": [
+          30.52,
+          39.78
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1097-10-20",
+        "year": 1097,
+        "label": "20 Oct 1097",
+        "text": "Siege of Antioch begins",
+        "detail": "Antioch, a huge walled city held for the Seljuks by its governor Yaghi-Siyan, was too large to surround completely. The siege dragged on through the winter; hundreds or thousands of crusaders died of hunger and many deserted. Relief armies sent separately by the Seljuk brothers Duqaq of Damascus and Ridwan of Aleppo in December and February were beaten, helped by divisions among the Muslim rulers, while supplies arrived through captured ports and by sea.",
+        "lonlat": [
+          36.16,
+          36.2
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1098-03-10",
+        "year": 1098,
+        "label": "10 Mar 1098",
+        "text": "Baldwin of Boulogne becomes the first Count of Edessa",
+        "detail": "Baldwin had left the main army and was invited by the Armenian lord Thoros of Edessa to help him against the Seljuks; Thoros adopted him as son and co-ruler. When local nobles rose and murdered Thoros and his wife on 9 March, Baldwin did nothing to stop them, and the next day the townspeople accepted him as ruler. The County of Edessa, the first crusader state, protected the flank of the army at Antioch and supplied it.",
+        "lonlat": [
+          38.79,
+          37.16
+        ],
+        "kind": "political"
+      },
+      {
+        "date": "1098-06-03",
+        "year": 1098,
+        "label": "3 Jun 1098",
+        "text": "Crusaders take Antioch by treachery and sack it",
+        "detail": "Bohemond arranged with Firouz, an Armenian commander of a stretch of wall, to let a small party in during the night. On 3 June they opened a gate, the city's Christian majority opened others, and the crusaders poured in. In the sack they killed most of the Muslim inhabitants and many Greek, Syrian and Armenian Christians in the confusion. The citadel held out, and within a day a huge relief army was approaching.",
+        "lonlat": [
+          36.17,
+          36.21
+        ],
+        "kind": "atrocity"
+      },
+      {
+        "date": "1098-06-28",
+        "year": 1098,
+        "label": "28 Jun 1098",
+        "text": "Crusaders break Kerbogha's siege of Antioch",
+        "detail": "Kerbogha, the Turkish ruler of Mosul, arrived with a coalition army of perhaps 40,000 from Syria, Iraq and Anatolia and trapped the starving crusaders inside Antioch. Morale was lifted by the claimed discovery of the Holy Lance. On 28 June the crusaders marched out in four divisions; Kerbogha's coalition, divided by rivalries, attacked in disorder and broke. Alexios, told by deserters that all was lost, had turned back, and Bohemond kept Antioch for himself.",
+        "lonlat": [
+          36.2,
+          36.24
+        ],
+        "kind": "turning-point"
+      },
+      {
+        "date": "1098-12",
+        "year": 1098,
+        "label": "Dec 1098",
+        "text": "Siege of Ma'arrat al-Numan; reports of cannibalism",
+        "detail": "The leaders argued for months over Antioch while plague killed many, including the legate Adhemar on 1 August. In December, after besieging and taking Ma'arrat al-Numan in northern Syria, starving crusaders, by the accounts of Latin chroniclers, ate the bodies of the dead; no contemporary Muslim chronicle records this. Restless soldiers threatened to march on without their quarrelling leaders, and in January 1099 Raymond resumed the march south, barefoot as a pilgrim.",
+        "lonlat": [
+          36.67,
+          35.65
+        ],
+        "kind": "atrocity"
+      },
+      {
+        "date": "1099-02-14",
+        "year": 1099,
+        "label": "14 Feb – 13 May 1099",
+        "text": "Crusaders fail to take Arqa and march down the coast",
+        "detail": "Raymond besieged Arqa in northern Lebanon, hoping to win a state of his own around Tripoli, but after three months the crusaders left empty-handed. Local rulers, such as the emir of Tripoli, preferred to supply them rather than fight. The Fatimids of Egypt, who had retaken Jerusalem from the Seljuks the year before, offered free passage to pilgrims if the crusaders stayed out of their lands; the offer was refused, and the army passed Beirut and Tyre in May.",
+        "lonlat": [
+          36.05,
+          34.53
+        ],
+        "kind": "other"
+      },
+      {
+        "date": "1099-06-07",
+        "year": 1099,
+        "label": "7 Jun 1099",
+        "text": "Crusaders begin the siege of Fatimid Jerusalem",
+        "detail": "The Fatimid governor Iftikhar al-Dawla expelled the city's Christians and poisoned wells around it. With perhaps 12,000 men and 1,500 cavalry left, the crusaders could not blockade Jerusalem and had to storm it. A first assault on 13 June failed. Genoese sailors arriving at Jaffa on 17 June brought engineers and timber for siege towers, and on 8 July the army made a barefoot procession around the walls.",
+        "lonlat": [
+          35.23,
+          31.78
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1099-07-15",
+        "year": 1099,
+        "label": "15 Jul 1099",
+        "text": "Jerusalem stormed; much of its population massacred",
+        "detail": "After two days of assault the crusaders captured the inner wall on the north side and the defenders abandoned the walls. Muslims were killed indiscriminately, including people who had sought refuge on the Temple Mount, and Jews died when their synagogue was burned. The governor surrendered the citadel for safe passage. Some inhabitants escaped or were ransomed; modern estimates put the dead at 3,000–10,000, far below the figures in later chronicles.",
+        "lonlat": [
+          35.23,
+          31.78
+        ],
+        "kind": "atrocity"
+      },
+      {
+        "date": "1099-07-22",
+        "year": 1099,
+        "label": "22 Jul 1099",
+        "text": "Godfrey of Bouillon chosen to rule Jerusalem",
+        "detail": "A council in the Church of the Holy Sepulchre met on 22 July to decide how the city would be governed. Raymond of Toulouse refused a crown, saying only Christ could wear one there, and Godfrey of Bouillon, backed by the large army from Lorraine led by him and his brothers, was elected with the title Defender of the Holy Sepulchre. Raymond, angered, tried to hold on to the Tower of David. Pope Urban II died on 29 July, before news of the victory reached Rome.",
+        "lonlat": [
+          35.23,
+          31.78
+        ],
+        "kind": "political"
+      },
+      {
+        "date": "1099-08-12",
+        "year": 1099,
+        "label": "12 Aug 1099",
+        "text": "Crusaders rout the Fatimid army at Ascalon",
+        "detail": "The Fatimid vizier al-Afdal Shahanshah landed an army of about 20,000 at Ascalon to retake Jerusalem. Godfrey led some 10,200 crusaders south and attacked the Egyptian camp at dawn, catching it unprepared, and the Fatimid army fled. Quarrels between Godfrey and Raymond meant Ascalon itself stayed in Fatimid hands. Most crusaders now went home, leaving only a few hundred knights to hold the new kingdom.",
+        "lonlat": [
+          34.55,
+          31.66
+        ],
+        "kind": "battle"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: First Crusade",
+        "url": "https://en.wikipedia.org/wiki/First_Crusade"
+      },
+      {
+        "title": "Wikipedia: Siege of Nicaea",
+        "url": "https://en.wikipedia.org/wiki/Siege_of_Nicaea"
+      },
+      {
+        "title": "Wikipedia: Battle of Dorylaeum (1097)",
+        "url": "https://en.wikipedia.org/wiki/Battle_of_Dorylaeum_(1097)"
+      },
+      {
+        "title": "Wikipedia: Siege of Antioch",
+        "url": "https://en.wikipedia.org/wiki/Siege_of_Antioch"
+      },
+      {
+        "title": "Wikipedia: Siege of Jerusalem (1099)",
+        "url": "https://en.wikipedia.org/wiki/Siege_of_Jerusalem_(1099)"
+      },
+      {
+        "title": "Wikipedia: Battle of Ascalon",
+        "url": "https://en.wikipedia.org/wiki/Battle_of_Ascalon"
+      }
+    ]
+  },
+  {
+    "id": "third-crusade",
+    "name": "Third Crusade",
+    "moment": null,
+    "span": [
+      1189,
+      1192
+    ],
+    "dateLabel": "May 1189 – 9 October 1192",
+    "summary": "In July 1187 Saladin, the Ayyubid sultan of Egypt and Syria, destroyed the army of the Kingdom of Jerusalem at Hattin and went on to take Jerusalem and nearly every crusader town except Tyre. Pope Gregory VIII called a new crusade, and three of Europe's most powerful rulers took the cross: Emperor Frederick Barbarossa, Philip II of France and Richard I of England. Frederick marched overland, fought his way through Byzantine territory and the Seljuk Sultanate of Rum, but drowned in Anatolia in June 1190, and most of his army went home. Richard and Philip came by sea, conquering Cyprus on the way, and in July 1191 joined the two-year siege of Acre, which surrendered. Philip then went home. Richard beat Saladin at Arsuf and twice came close to Jerusalem but did not besiege it. The Treaty of Jaffa (September 1192) left Jerusalem in Muslim hands, restored a coastal crusader kingdom from Tyre to Jaffa and opened the holy places to Christian pilgrims.",
+    "casualties": "No reliable total exists; the two-year siege of Acre alone is estimated to have cost tens of thousands of lives on both sides, many from disease, and about 2,700 Muslim prisoners were executed there in August 1191.",
+    "sides": [
+      {
+        "name": "Crusaders",
+        "members": [
+          {
+            "clio": "Holy Roman Empire",
+            "from": 1189,
+            "to": 1191
+          },
+          {
+            "clio": "Kingdom of Jerusalem",
+            "from": 1189,
+            "to": 1192
+          },
+          {
+            "clio": "Angevin Empire",
+            "from": 1190,
+            "to": 1192
+          },
+          {
+            "clio": "Kingdom of France",
+            "from": 1190,
+            "to": 1191
+          }
+        ]
+      },
+      {
+        "name": "Ayyubid Sultanate (Saladin)",
+        "members": [
+          {
+            "clio": "Ayyubid Sultanate",
+            "from": 1189,
+            "to": 1192
+          }
+        ]
+      },
+      {
+        "name": "Sultanate of Rum (fought the German army)",
+        "members": [
+          {
+            "clio": "Sultanate of Rum",
+            "from": 1190,
+            "to": 1190
+          }
+        ]
+      }
+    ],
+    "events": [
+      {
+        "date": "1189-05",
+        "year": 1189,
+        "label": "May 1189",
+        "text": "Frederick Barbarossa's crusade sets out from Regensburg",
+        "detail": "Saladin's victory at Hattin on 4 July 1187 and his capture of Jerusalem that October left the crusaders holding little but Tyre. Pope Gregory VIII called a new crusade, and Frederick took the cross at the 'Court of Christ' in Mainz in March 1188. The first of the three monarchs to leave, he mustered his army at Regensburg in May 1189 and chose the overland route through Hungary, the Balkans and Anatolia.",
+        "lonlat": [
+          12.1,
+          49.02
+        ],
+        "kind": "other"
+      },
+      {
+        "date": "1189-08",
+        "year": 1189,
+        "label": "Aug 1189",
+        "text": "King Guy of Jerusalem begins the siege of Acre",
+        "detail": "Released by Saladin, King Guy found Conrad of Montferrat in control of Tyre and turned instead to the rich port of Acre. His small army, reinforced by fleets of crusaders from northern Europe and Italy, besieged the city, but Saladin's army in turn surrounded the besiegers. Both sides were supplied by sea, and the siege dragged on for nearly two years amid disease, hunger and repeated battles.",
+        "lonlat": [
+          35.07,
+          32.92
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1189-11-22",
+        "year": 1189,
+        "label": "Aug–Nov 1189",
+        "text": "German crusaders clash with Byzantium in Thrace",
+        "detail": "Emperor Isaac II Angelos distrusted Frederick, refused him the imperial title and held his envoys, while an Ayyubid ambassador was at his court. The crusaders broke with Byzantium, seized Philippopolis (Plovdiv) and its supplies on 26 August and occupied much of the surrounding country into November. Around 22 November they routed a Byzantine force under Manuel Kamytzes that had been sent to ambush their supply train, before eventually crossing into Asia.",
+        "lonlat": [
+          24.75,
+          42.15
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1190-05-18",
+        "year": 1190,
+        "label": "18 May 1190",
+        "text": "Barbarossa takes Iconium, capital of the Sultanate of Rum",
+        "detail": "Although promised safe passage by the Seljuk Sultanate of Rum, the Germans faced constant Turkish hit-and-run attacks as they crossed Anatolia. Short of food and horses, Frederick decided to seize the Seljuk capital, Iconium (Konya), ruled by Kilij Arslan II. On 18 May 1190 the crusaders defeated the Turkish army there and sacked the city, gaining the supplies they needed to continue toward Armenian Cilicia.",
+        "lonlat": [
+          32.49,
+          37.87
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1190-06-10",
+        "year": 1190,
+        "label": "10 Jun 1190",
+        "text": "Frederick Barbarossa drowns in the Saleph river",
+        "detail": "While crossing the Saleph (Göksu) river in Cilicia, the elderly emperor was thrown from his horse and drowned. Much of his army returned to Germany by sea, partly because an imperial election was expected. His son Frederick of Swabia led the remaining few thousand men to Antioch, where fever thinned them further, and then to Acre, where he died in the winter of 1190–91.",
+        "lonlat": [
+          33.93,
+          36.38
+        ],
+        "kind": "turning-point"
+      },
+      {
+        "date": "1190-07-04",
+        "year": 1190,
+        "label": "4 Jul 1190",
+        "text": "Richard I and Philip II set out together from Vézelay",
+        "detail": "Henry II of England and Philip II of France had made peace in January 1188 to go on crusade and raised the 'Saladin tithe', a tax on income and movable goods, to pay for it. Henry died in July 1189 and his son Richard took his place. The two kings left Vézelay together on 4 July 1190 and parted at Lyon, Richard heading for Marseille and Philip for Genoa, agreeing to meet in Sicily.",
+        "lonlat": [
+          3.75,
+          47.47
+        ],
+        "kind": "other"
+      },
+      {
+        "date": "1190-10-04",
+        "year": 1190,
+        "label": "4 Oct 1190",
+        "text": "Richard captures Messina and winters in Sicily",
+        "detail": "King Tancred of Sicily had imprisoned Richard's sister Joan, widow of the previous king. Richard seized Messina on 4 October 1190 and secured her release. The crusaders wintered in Sicily, where Richard and Philip fell out after Richard broke off his betrothal to Philip's half-sister Alys to marry Berengaria of Navarre. Philip sailed for the Holy Land on 30 March 1191; Richard followed on 10 April.",
+        "lonlat": [
+          15.55,
+          38.19
+        ],
+        "kind": "other"
+      },
+      {
+        "date": "1191-05-06",
+        "year": 1191,
+        "label": "May 1191",
+        "text": "Richard conquers Byzantine-ruled Cyprus",
+        "detail": "A storm scattered Richard's fleet, and ships carrying Joan, Berengaria and crusade treasure were driven to Cyprus, whose ruler Isaac Komnenos seized the treasure. Richard landed at Limassol on 6 May, married Berengaria there and, when Isaac turned hostile, conquered the whole island within weeks. Cyprus became a lasting Latin kingdom and a base for the crusader states; Richard later sold it to Guy of Lusignan.",
+        "lonlat": [
+          33.04,
+          34.68
+        ],
+        "kind": "invasion"
+      },
+      {
+        "date": "1191-07-12",
+        "year": 1191,
+        "label": "12 Jul 1191",
+        "text": "Acre surrenders to the crusaders after a two-year siege",
+        "detail": "Leopold V of Austria arrived with the remaining German forces in spring 1191 and Philip with the French in April. Richard reached Acre on 8 June and pressed the siege with new siege engines, and the garrison surrendered on 12 July. The victors quarrelled over the spoils: Richard threw down Leopold's banner, and the kings backed rival claimants, Guy and Conrad, for the crown of Jerusalem.",
+        "lonlat": [
+          35.07,
+          32.92
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1191-08",
+        "year": 1191,
+        "label": "Aug 1191",
+        "text": "Philip II and Leopold of Austria leave the crusade",
+        "detail": "Frustrated with Richard and, in Philip's case, in poor health, the French king and Duke Leopold of Austria took their forces home in August 1191. Philip left behind 7,000 French crusaders and 5,000 silver marks to pay them, under the command of the duke of Burgundy. Richard was left as the sole royal leader of the crusade, with the dispute over the crown of Jerusalem settled for the moment: Guy would reign, and Conrad would succeed him.",
+        "lonlat": [
+          35.08,
+          32.93
+        ],
+        "kind": "political"
+      },
+      {
+        "date": "1191-08-20",
+        "year": 1191,
+        "label": "20 Aug 1191",
+        "text": "Richard executes about 2,700 Muslim prisoners at Acre",
+        "detail": "Saladin tried to negotiate the release of the captured Acre garrison, which included women and children, but the talks dragged on. On 20 August Richard, judging that Saladin was stalling, had about 2,700 Muslim prisoners beheaded in full view of Saladin's army, which tried in vain to rescue them. Saladin responded by killing the Christian prisoners he held. The memory of the massacre embittered the rest of the war, and Muslim soldiers took revenge when they stormed Jaffa a year later.",
+        "lonlat": [
+          35.1,
+          32.9
+        ],
+        "kind": "atrocity"
+      },
+      {
+        "date": "1191-09-07",
+        "year": 1191,
+        "label": "7 Sep 1191",
+        "text": "Richard defeats Saladin at Arsuf",
+        "detail": "Richard marched south along the coast toward Jaffa, the port he needed for any attack on Jerusalem, with his fleet alongside. Saladin harassed the column for days, then committed his army on the plain north of Arsuf. The crusaders kept their formation until the Hospitallers charged, and Richard turned it into a general counter-attack that routed the Ayyubid army. Saladin's army survived, but his reputation suffered and Richard took Jaffa.",
+        "lonlat": [
+          34.82,
+          32.2
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1191-12",
+        "year": 1191,
+        "label": "Dec 1191 – Jan 1192",
+        "text": "First advance on Jerusalem stops at Beit Nuba",
+        "detail": "Talks with Saladin's brother al-Adil, including a proposal that he marry Richard's sister Joan, came to nothing. In winter the crusaders advanced inland, spent Christmas at Latrun and reached Beit Nuba, about 12 miles from Jerusalem, after Saladin had been forced to dismiss much of his army. Cold, rain and hail, and the fear of being trapped by a relief army during a siege, led the leaders to retreat to the coast.",
+        "lonlat": [
+          35.03,
+          31.86
+        ],
+        "kind": "turning-point"
+      },
+      {
+        "date": "1192-04",
+        "year": 1192,
+        "label": "Apr 1192",
+        "text": "Conrad of Montferrat elected king, then murdered in Tyre",
+        "detail": "The nobles of the kingdom chose Conrad of Montferrat as king, and Richard had to accept it, compensating Guy with Cyprus. Before he could be crowned, Conrad was stabbed to death by two Assassins in the streets of Tyre. Eight days later Richard's nephew Henry of Champagne married the heiress Queen Isabella and became ruler. Many suspected that Richard had arranged the killing.",
+        "lonlat": [
+          35.2,
+          33.27
+        ],
+        "kind": "political"
+      },
+      {
+        "date": "1192-05-22",
+        "year": 1192,
+        "label": "22 May 1192",
+        "text": "Crusaders capture Darum on the road to Egypt",
+        "detail": "Through the winter Richard's men refortified Ascalon, which Saladin had demolished, and in spring negotiations and skirmishing continued. On 22 May the crusaders took the fortified town of Darum on the frontier of Egypt after five days of fierce fighting. Richard and most of his council saw Egypt as the base of Saladin's power and favoured attacking it rather than Jerusalem.",
+        "lonlat": [
+          34.35,
+          31.42
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1192-06",
+        "year": 1192,
+        "label": "Jun 1192",
+        "text": "Second advance comes within sight of Jerusalem, then retreats",
+        "detail": "The army again marched inland and came within sight of Jerusalem in June 1192. The leaders were split: Richard and most of the council wanted to strike at Egypt, while the duke of Burgundy, leading the French, insisted on attacking Jerusalem directly. Neither faction was strong enough on its own, and the crusaders withdrew once more without laying siege to the city.",
+        "lonlat": [
+          35.05,
+          31.84
+        ],
+        "kind": "other"
+      },
+      {
+        "date": "1192-08",
+        "year": 1192,
+        "label": "Jul–Aug 1192",
+        "text": "Richard saves Jaffa from Saladin's surprise attack",
+        "detail": "In July Saladin suddenly attacked and took Jaffa, though he lost control of soldiers still angry over the Acre massacre. Richard, about to leave for England, sailed down with a little over 2,000 men, stormed ashore and drove the Ayyubids out. When Saladin counter-attacked at dawn, Richard's crossbowmen inflicted heavy losses on his lightly armoured troops and the attack failed, strengthening the coastal crusader states.",
+        "lonlat": [
+          34.75,
+          32.05
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1192-09-02",
+        "year": 1192,
+        "label": "1 or 2 Sep 1192",
+        "text": "Treaty of Jaffa: a three-year truce ends the crusade",
+        "detail": "Negotiated with the help of Balian of Ibelin, the truce left Jerusalem under Muslim rule but allowed unarmed Christian pilgrims and merchants to visit it, and guaranteed safe passage through Palestine for Christians and Muslims. The crusaders kept the coast from Tyre to Jaffa, while Ascalon, its walls demolished, went back to Saladin. Richard sailed for home on 9 October 1192, leaving Jerusalem in Muslim hands until a later crusade briefly regained it by treaty in 1229.",
+        "lonlat": [
+          34.87,
+          31.93
+        ],
+        "kind": "treaty"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: Third Crusade",
+        "url": "https://en.wikipedia.org/wiki/Third_Crusade"
+      },
+      {
+        "title": "Wikipedia: Siege of Acre (1189–1191)",
+        "url": "https://en.wikipedia.org/wiki/Siege_of_Acre_(1189%E2%80%931191)"
+      },
+      {
+        "title": "Wikipedia: Battle of Iconium (1190)",
+        "url": "https://en.wikipedia.org/wiki/Battle_of_Iconium_(1190)"
+      },
+      {
+        "title": "Wikipedia: Battle of Arsuf",
+        "url": "https://en.wikipedia.org/wiki/Battle_of_Arsuf"
+      },
+      {
+        "title": "Wikipedia: Treaty of Jaffa (1192)",
+        "url": "https://en.wikipedia.org/wiki/Treaty_of_Jaffa_(1192)"
+      }
+    ]
+  },
+  {
+    "id": "hundred-years-war",
+    "name": "Hundred Years' War",
+    "moment": null,
+    "span": [
+      1337,
+      1453
+    ],
+    "dateLabel": "May 1337 – 19 October 1453",
+    "summary": "The kings of England held the Duchy of Aquitaine (Gascony) as vassals of the French crown, a long source of friction. When Philip VI confiscated it in 1337, Edward III answered by claiming the French throne through his mother. The war that followed was a series of campaigns broken by long truces. In the Edwardian phase England won at Sluys, Crécy and Poitiers, captured King John II and gained an enlarged Aquitaine at Brétigny in 1360. Under Charles V the French recovered almost everything. Henry V reopened the war, won at Agincourt in 1415, conquered Normandy and, allied with Burgundy during a French civil war, was named heir to France by the Treaty of Troyes. Joan of Arc's relief of Orléans in 1429 and Burgundy's return to the French side in 1435 turned the tide; with better artillery and a professional army, France took Normandy and Gascony, leaving England only Calais after Castillon in 1453.",
+    "casualties": "Estimates are very uncertain: one widely repeated compilation counts about 185,000 soldiers killed in battle and some 556,000 military deaths in all, while raiding, famine and the Black Death killed far more civilians, especially in France.",
+    "sides": [
+      {
+        "name": "England and allies",
+        "members": [
+          {
+            "clio": "Kingdom of England",
+            "from": 1337,
+            "to": 1453
+          },
+          {
+            "clio": "Duchy of Burgundy",
+            "from": 1419,
+            "to": 1435
+          }
+        ]
+      },
+      {
+        "name": "France and allies",
+        "members": [
+          {
+            "clio": "Kingdom of France",
+            "from": 1337,
+            "to": 1453
+          },
+          {
+            "clio": "Kingdom of Scotland",
+            "from": 1337,
+            "to": 1453
+          },
+          {
+            "clio": "Crown of Castile",
+            "from": 1369,
+            "to": 1389
+          }
+        ]
+      }
+    ],
+    "events": [
+      {
+        "date": "1337-05",
+        "year": 1337,
+        "label": "May 1337",
+        "text": "Philip VI confiscates Aquitaine; Edward III claims France",
+        "detail": "Edward III held Gascony, the remnant of the Duchy of Aquitaine, as a vassal of the French king, and the French crown had long sought to assert its sovereignty there. In May 1337 Philip VI's Great Council declared the duchy forfeit, citing Edward's breach of his duties as vassal and his shelter of Philip's enemy Robert of Artois. Edward replied by reviving his claim to the French throne through his mother Isabella, sister of the last Capetian king.",
+        "lonlat": [
+          2.35,
+          48.86
+        ],
+        "kind": "political"
+      },
+      {
+        "date": "1340-01-26",
+        "year": 1340,
+        "label": "26 Jan 1340",
+        "text": "Flemish towns proclaim Edward III King of France",
+        "detail": "The cloth towns of Flanders depended on English wool, and Edward courted them and other Low Countries princes as allies. On 26 January 1340 he received homage as king of France from Guy, half-brother of the count of Flanders, and the civic authorities of Ghent, Ypres and Bruges proclaimed him their king. Adopting the French title let his Flemish supporters claim they were loyal to the true king of France rather than rebels against their overlord.",
+        "lonlat": [
+          3.72,
+          51.05
+        ],
+        "kind": "political"
+      },
+      {
+        "date": "1340-06-24",
+        "year": 1340,
+        "label": "24 Jun 1340",
+        "text": "English fleet destroys the French navy at Sluys",
+        "detail": "Edward sailed from England with a fleet of some 120–150 ships and found the much larger French fleet drawn up in defensive formation in the inlet off Sluys in Flanders. Attacking in the afternoon with the wind and sun behind them, the English almost destroyed the French fleet. England dominated the Channel for the rest of the war, which kept the fighting on French soil and made a French invasion of England impractical.",
+        "lonlat": [
+          3.4,
+          51.31
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1341",
+        "year": 1341,
+        "label": "1341",
+        "text": "War of the Breton Succession becomes a second front",
+        "detail": "With Edward's money running out, the war might have ended, but the death of the duke of Brittany in 1341 started a succession dispute between John of Montfort and Charles of Blois, nephew of Philip VI. Edward backed Montfort and Philip backed Blois, and for years the war centred on Brittany, where towns such as Vannes changed hands several times. The English-backed Montfort finally won the duchy in 1364.",
+        "lonlat": [
+          -2.76,
+          47.66
+        ],
+        "kind": "other"
+      },
+      {
+        "date": "1346-07-12",
+        "year": 1346,
+        "label": "12 Jul 1346",
+        "text": "Edward III invades Normandy and sacks Caen",
+        "detail": "Edward landed at Saint-Vaast-la-Hougue on the Cotentin peninsula with complete surprise and marched south, his soldiers razing towns and looting as they went. The army captured the rich city of Caen in a single day, then turned north-east, pillaging toward the Low Countries. Finding the Seine bridges destroyed, Edward crossed at Poissy near Paris and then forded the Somme at Blanchetaque, slipping away from Philip's pursuing army.",
+        "lonlat": [
+          -1.27,
+          49.59
+        ],
+        "kind": "invasion"
+      },
+      {
+        "date": "1346-08-26",
+        "year": 1346,
+        "label": "26 Aug 1346",
+        "text": "English longbowmen rout the French at Crécy",
+        "detail": "Unable to outmarch Philip VI, Edward chose a defensive position near Crécy. Genoese mercenary crossbowmen were driven back in an archery duel by English and Welsh longbowmen, and the French knights then launched a series of disordered cavalry charges into arrow fire and dismounted men-at-arms. The French suffered heavy losses, including many nobles, and Philip had allowed the attack to begin before his army was ready.",
+        "lonlat": [
+          1.88,
+          50.25
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1346-10-17",
+        "year": 1346,
+        "label": "17 Oct 1346",
+        "text": "Scots invade England and are defeated at Neville's Cross",
+        "detail": "Scotland had been bound to France by the Auld Alliance since 1295. Philip appealed to the Scots to relieve the pressure by invading northern England, and King David II led an army south. Near Durham, at Neville's Cross, it was defeated and David himself was captured. The defeat greatly reduced the Scottish threat to England for the following years and freed Edward to continue his campaign in France.",
+        "lonlat": [
+          -1.6,
+          54.77
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1347",
+        "year": 1347,
+        "label": "1347",
+        "text": "Calais falls to the English after a long siege",
+        "detail": "After Crécy, Edward marched north unopposed and besieged the Channel port of Calais, which held out until it surrendered in 1347. The town became England's main base in France, letting it land and supply troops safely in the north. Calais stayed English long after the war ended, until the French retook it in 1558. Together with Crécy and Neville's Cross, its capture capped a run of English successes in 1346–1347.",
+        "lonlat": [
+          1.86,
+          50.95
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1348",
+        "year": 1348,
+        "label": "1348",
+        "text": "The Black Death reaches Paris",
+        "detail": "The plague pandemic that swept Europe arrived in Paris in 1348 and killed a very large share of the population of both kingdoms; estimates for France run to 6–12 million deaths, 30–60 percent of the population, and for England 2–3 million. Fighting was largely suspended while the epidemic raged. The losses strained recruitment and royal finances on both sides, and English campaigning on a large scale resumed only in 1355.",
+        "lonlat": [
+          2.35,
+          48.86
+        ],
+        "kind": "other"
+      },
+      {
+        "date": "1355",
+        "year": 1355,
+        "label": "1355",
+        "text": "The Black Prince's great raid from Gascony to Narbonne",
+        "detail": "Edward III's eldest son, Edward of Woodstock, later called the Black Prince, led a chevauchée, a mounted raid designed to ruin the enemy's lands and revenue, from Bordeaux across southern France. His army pillaged Avignonet, Castelnaudary, Carcassonne and Narbonne. Such raids, repeated throughout the war, burned towns and crops and fell hardest on the peasants of France rather than on its armies.",
+        "lonlat": [
+          3.0,
+          43.18
+        ],
+        "kind": "invasion"
+      },
+      {
+        "date": "1356-09-19",
+        "year": 1356,
+        "label": "19 Sep 1356",
+        "text": "Black Prince captures King John II at Poitiers",
+        "detail": "On a second raid the Black Prince was overtaken near Poitiers by King John II. The French, some 14,000–16,000 strong, attacked about 6,000 Anglo-Gascons in a strong defensive position. A mounted force led by the Gascon captal de Buch, hidden in a wood, struck their flank and cut off their retreat, and John and many nobles were captured. With the king a prisoner, his son the Dauphin Charles ruled as regent amid growing disorder.",
+        "lonlat": [
+          0.42,
+          46.53
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1360-04",
+        "year": 1360,
+        "label": "Easter 1360",
+        "text": "Hailstorm devastates Edward's army: 'Black Monday'",
+        "detail": "Edward invaded France a third time, hoping to be crowned at Reims, but the city held out for five weeks, and the Dauphin refused battle. After skirmishes outside Paris the English moved toward Chartres, where a freak hailstorm struck their camp at Easter and killed more than 1,000 men. The disaster pushed Edward to negotiate when the French approached him.",
+        "lonlat": [
+          1.49,
+          48.45
+        ],
+        "kind": "other"
+      },
+      {
+        "date": "1360-05-08",
+        "year": 1360,
+        "label": "8 May 1360",
+        "text": "Treaty of Brétigny gives England a greatly enlarged Aquitaine",
+        "detail": "Drafted at Brétigny near Chartres and ratified at Calais in October, the treaty gave Edward full sovereignty over a much larger Aquitaine, including Gascony, Poitou, Saintonge, Limousin and other lands, plus Calais and Ponthieu. In return he gave up Normandy, Touraine, Anjou and Maine and his claim to the French crown. John II's ransom was set at three million écus, with hostages held as guarantee.",
+        "lonlat": [
+          1.54,
+          48.43
+        ],
+        "kind": "treaty"
+      },
+      {
+        "date": "1369",
+        "year": 1369,
+        "label": "1369",
+        "text": "War resumes as Charles V backs Gascon lords and Castile",
+        "detail": "In Castile's civil war the Black Prince restored Peter of Castile by winning the battle of Nájera, but the campaign left him in debt. His new hearth tax in Aquitaine provoked Gascon lords to appeal to Charles V, who summoned the prince to Paris; the prince refused, and war broke out again in 1369. That year Henry of Trastámara, backed by France, killed Peter, and Castile became an important French naval ally.",
+        "lonlat": [
+          2.35,
+          48.86
+        ],
+        "kind": "political"
+      },
+      {
+        "date": "1372",
+        "year": 1372,
+        "label": "1372",
+        "text": "Castilian fleet defeats the English off La Rochelle",
+        "detail": "Castile's new Trastámara regime repaid French support with naval help. In 1372 a Castilian fleet defeated an English fleet off La Rochelle, an important port in western France. The defeat weakened English control of the sea routes to Aquitaine, and under the cautious strategy of Charles V and his constable Bertrand du Guesclin, who avoided pitched battles, the French steadily took back English-held towns.",
+        "lonlat": [
+          -1.15,
+          46.16
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1380",
+        "year": 1380,
+        "label": "1380",
+        "text": "By Charles V's death, England holds only Calais and a few ports",
+        "detail": "Charles V's small professional army under du Guesclin had pushed the English back so far that when the king died in 1380, the vast lands won at Brétigny had shrunk to Calais and a few coastal towns. The Black Prince had died in 1376 and Edward III in 1377, and England, ruled for the boy king Richard II, faced heavy war taxation and the Peasants' Revolt of 1381.",
+        "lonlat": [
+          2.35,
+          48.86
+        ],
+        "kind": "turning-point"
+      },
+      {
+        "date": "1389-06-18",
+        "year": 1389,
+        "label": "18 Jun 1389",
+        "text": "Truce of Leulinghem begins a long pause in the war",
+        "detail": "With the war unpopular in England and neither side able to pay for major campaigns, negotiations led to the three-year Truce of Leulinghem, signed on 18 June 1389. Renewed several times, it brought a long lull. In the following decades Charles VI of France suffered bouts of madness, and the rivalry of the dukes of Burgundy and Orléans turned into civil war between Burgundians and Armagnacs, both of which sought English help.",
+        "lonlat": [
+          1.71,
+          50.82
+        ],
+        "kind": "treaty"
+      },
+      {
+        "date": "1415-10-25",
+        "year": 1415,
+        "label": "25 Oct 1415",
+        "text": "Henry V wins a crushing victory at Agincourt",
+        "detail": "Henry V landed in August 1415 and took Harfleur after a long siege. Marching toward Calais with a tired, hungry army, he was forced to fight a much larger French army near Agincourt. English archers and men-at-arms on a narrow, muddy field inflicted catastrophic losses, killing many leaders of the Armagnac faction. Fearing an attack, Henry ordered most of the French prisoners, perhaps thousands, to be killed.",
+        "lonlat": [
+          2.14,
+          50.46
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1419-09-10",
+        "year": 1419,
+        "label": "10 Sep 1419",
+        "text": "Murder of John the Fearless drives Burgundy into alliance with England",
+        "detail": "Henry conquered Normandy, taking Caen in 1417 and Rouen in January 1419. Meanwhile the Burgundians had seized Paris in 1418. On 10 September 1419 Duke John the Fearless of Burgundy was killed by one of the Dauphin Charles's attendants during a meeting on the bridge at Montereau, and his son Philip the Good allied formally with England. The Anglo-Burgundian alliance gave Henry control of Paris and much of northern France.",
+        "lonlat": [
+          2.96,
+          48.39
+        ],
+        "kind": "political"
+      },
+      {
+        "date": "1420-05-21",
+        "year": 1420,
+        "label": "21 May 1420",
+        "text": "Treaty of Troyes makes Henry V heir to the French throne",
+        "detail": "Sealed at Troyes with the insane Charles VI, the treaty disinherited the Dauphin Charles and named Henry and his heirs successors to the French crown. Charles VI remained king for life, and Henry married his daughter Catherine of Valois. Henry entered Paris later that year. The Dauphin, holding much of France south of the Loire, rejected the treaty, so the war became a contest between two claimants.",
+        "lonlat": [
+          4.07,
+          48.3
+        ],
+        "kind": "treaty"
+      },
+      {
+        "date": "1424-08-17",
+        "year": 1424,
+        "label": "17 Aug 1424",
+        "text": "English destroy the Dauphin's army at Verneuil",
+        "detail": "Henry V died in August 1422, two months before Charles VI, leaving a baby son, Henry VI, as king of England and, by the treaty, of France. His brother the Duke of Bedford ran English France. At Verneuil in Normandy, Bedford's archers devastated a Franco-Scottish army, virtually destroying the Dauphin's field army and ending the Scots' role as a major force in France for the rest of the war.",
+        "lonlat": [
+          0.93,
+          48.74
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1429-05",
+        "year": 1429,
+        "label": "Apr–May 1429",
+        "text": "Joan of Arc helps lift the English siege of Orléans",
+        "detail": "The English had besieged Orléans, the key to the Loire valley, since October 1428, and hunger threatened to force its surrender. Joan of Arc, a peasant girl who said God had sent her to drive out the English, persuaded the Dauphin to send her there, and she entered the city on 29 April. Within days the revived French attacked the English forts and the siege was lifted, followed by victories along the Loire and at Patay.",
+        "lonlat": [
+          1.91,
+          47.9
+        ],
+        "kind": "turning-point"
+      },
+      {
+        "date": "1429-07-16",
+        "year": 1429,
+        "label": "16 Jul 1429",
+        "text": "The Dauphin is crowned Charles VII at Reims",
+        "detail": "The victory at Patay, where French cavalry broke the English rearguard and captured John Talbot, opened the road through English- and Burgundian-held country to Reims, the traditional coronation city. Charles was crowned there on 16 July 1429, strengthening his claim against the Treaty of Troyes. An attack on Paris in September failed, and Henry VI was crowned king of France in Paris in 1431.",
+        "lonlat": [
+          4.03,
+          49.25
+        ],
+        "kind": "political"
+      },
+      {
+        "date": "1431-05-30",
+        "year": 1431,
+        "label": "30 May 1431",
+        "text": "Joan of Arc is burned at the stake in Rouen",
+        "detail": "Burgundian troops captured Joan at Compiègne in May 1430 and handed her to the English. At Rouen, the seat of English government in France, a church court led by Pierre Cauchon, bishop of Beauvais and an ally of the English, convicted her, and she was burned on 30 May 1431. A later church inquiry overturned the verdict about 25 years afterwards, and she became a lasting French national symbol.",
+        "lonlat": [
+          1.09,
+          49.44
+        ],
+        "kind": "other"
+      },
+      {
+        "date": "1435-09",
+        "year": 1435,
+        "label": "Sep 1435",
+        "text": "Burgundy changes sides at the Congress of Arras",
+        "detail": "England, France and Burgundy met at Arras in the summer of 1435 in what has been called Europe's first real peace congress. The English demands were seen as unrealistic, and after they left, Philip the Good of Burgundy made peace with Charles VII in the Treaty of Arras, recognising him as king. The loss of its main ally was a severe blow to England, and the treaty returned Paris to the French king.",
+        "lonlat": [
+          2.78,
+          50.29
+        ],
+        "kind": "treaty"
+      },
+      {
+        "date": "1450-04-15",
+        "year": 1450,
+        "label": "15 Apr 1450",
+        "text": "French victory at Formigny completes the recovery of Normandy",
+        "detail": "During long truces Charles VII reorganised his army into a professional force with powerful artillery that could take castles in days. The French retook Rouen in 1449. At Formigny an English army marching to relieve Caen was attacked by the Count of Clermont and then struck in flank and rear by Arthur de Richemont. It was the last significant English field army in Normandy, and the remaining strongholds soon fell.",
+        "lonlat": [
+          -0.9,
+          49.34
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1453-07-17",
+        "year": 1453,
+        "label": "17 Jul 1453",
+        "text": "French artillery defeats the English at Castillon",
+        "detail": "Charles VII turned to Gascony, England's last province; Bordeaux surrendered in 1451, but its people, largely sympathetic to the English, welcomed back an army under John Talbot in October 1452. At Castillon, Talbot attacked a French camp laid out by the artillery master Jean Bureau and was cut down by its cannon. Talbot and his son were killed in what is usually considered the last battle of the war.",
+        "lonlat": [
+          -0.04,
+          44.85
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1453-10-19",
+        "year": 1453,
+        "label": "19 Oct 1453",
+        "text": "Bordeaux surrenders, ending English rule in Gascony",
+        "detail": "The fall of Bordeaux ended English rule in Gascony and the fighting of the Hundred Years' War. England kept only Calais. No peace treaty was signed until 1475, when the Treaty of Picquigny formally ended the war, and English and later British monarchs kept the title king of France until the early nineteenth century. Defeat abroad fed the discontent that led to the Wars of the Roses in England.",
+        "lonlat": [
+          -0.58,
+          44.84
+        ],
+        "kind": "turning-point"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: Hundred Years' War",
+        "url": "https://en.wikipedia.org/wiki/Hundred_Years%27_War"
+      },
+      {
+        "title": "Wikipedia: Battle of Sluys",
+        "url": "https://en.wikipedia.org/wiki/Battle_of_Sluys"
+      },
+      {
+        "title": "Wikipedia: Battle of Crécy",
+        "url": "https://en.wikipedia.org/wiki/Battle_of_Cr%C3%A9cy"
+      },
+      {
+        "title": "Wikipedia: Battle of Poitiers",
+        "url": "https://en.wikipedia.org/wiki/Battle_of_Poitiers"
+      },
+      {
+        "title": "Wikipedia: Treaty of Brétigny",
+        "url": "https://en.wikipedia.org/wiki/Treaty_of_Br%C3%A9tigny"
+      },
+      {
+        "title": "Wikipedia: Battle of Agincourt",
+        "url": "https://en.wikipedia.org/wiki/Battle_of_Agincourt"
+      },
+      {
+        "title": "Wikipedia: Treaty of Troyes",
+        "url": "https://en.wikipedia.org/wiki/Treaty_of_Troyes"
+      },
+      {
+        "title": "Wikipedia: Battle of Castillon",
+        "url": "https://en.wikipedia.org/wiki/Battle_of_Castillon"
+      }
+    ]
+  },
+  {
+    "id": "wars-of-the-roses",
+    "name": "Wars of the Roses",
+    "moment": null,
+    "span": [
+      1455,
+      1487
+    ],
+    "dateLabel": "22 May 1455 – 16 June 1487",
+    "summary": "The Wars of the Roses were a series of English civil wars for the throne between two branches of the royal Plantagenet family: the House of Lancaster and the House of York, both descended from Edward III. Defeat in the Hundred Years' War, powerful private retinues and the weak rule of the mentally unstable Lancastrian king Henry VI fed rivalries at court, and Richard, Duke of York, pressed his own claim. Fighting began at St Albans in 1455. York was killed at Wakefield in 1460, but his son seized the crown as Edward IV and crushed the Lancastrians at Towton in 1461. After the Earl of Warwick changed sides, Henry VI was briefly restored in 1470, but Edward won back the throne at Barnet and Tewkesbury in 1471. When Edward's brother took the throne as Richard III in 1483, the Lancastrian heir Henry Tudor defeated and killed him at Bosworth in 1485, married Edward IV's daughter Elizabeth of York, and beat a last Yorkist challenge at Stoke Field in 1487.",
+    "casualties": "Estimates vary widely: one modern compilation suggests about 105,000 killed in battle over the whole period, while many historians think the fighting was more limited, and the 28,000 dead reported after Towton is generally considered an exaggeration.",
+    "sides": [
+      {
+        "name": "House of Lancaster, then Tudor",
+        "members": [
+          {
+            "clio": "Kingdom of England",
+            "from": 1455,
+            "to": 1460
+          },
+          {
+            "clio": "Kingdom of England",
+            "from": 1486,
+            "to": 1487
+          }
+        ]
+      },
+      {
+        "name": "House of York",
+        "members": [
+          {
+            "clio": "Kingdom of England",
+            "from": 1461,
+            "to": 1485
+          }
+        ]
+      }
+    ],
+    "events": [
+      {
+        "date": "1455-05-22",
+        "year": 1455,
+        "label": "22 May 1455",
+        "text": "First Battle of St Albans: York captures Henry VI",
+        "detail": "Henry VI's mental instability and the dominance at court of his Beaufort relatives, above all Edmund Beaufort, Duke of Somerset, drove Richard, Duke of York, and his allies the Neville earls of Salisbury and Warwick to take up arms. They defeated a royal army in the streets of St Albans, north of London. Somerset was killed and the king captured, and a parliament then appointed York Lord Protector. The battle is traditionally taken as the start of the wars.",
+        "lonlat": [
+          -0.34,
+          51.75
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1459-09-23",
+        "year": 1459,
+        "label": "23 Sep 1459",
+        "text": "Yorkists defeat a larger Lancastrian army at Blore Heath",
+        "detail": "Queen Margaret of Anjou, determined to protect the rights of her young son Edward, had been raising support for the Lancastrian cause. When the Earl of Salisbury marched to join York with about 5,000 men, a Lancastrian force twice that size under Lord Audley ambushed him at Blore Heath in Staffordshire. The Lancastrians were defeated and Audley was killed, and open war resumed after four years of uneasy peace.",
+        "lonlat": [
+          -2.43,
+          52.92
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1459-10",
+        "year": 1459,
+        "label": "Autumn 1459",
+        "text": "Yorkist army scatters at Ludford Bridge; leaders flee abroad",
+        "detail": "The Yorkist leaders gathered near Ludlow, but at Ludford Bridge their army fell apart when Warwick's professional troops from Calais, under Andrew Trollope, defected to the king. York fled to Ireland with his second son, Edmund, while Warwick and Salisbury sailed to Calais with York's heir, Edward, Earl of March. The Lancastrians appeared to have won, but the exiles soon prepared to return.",
+        "lonlat": [
+          -2.72,
+          52.36
+        ],
+        "kind": "other"
+      },
+      {
+        "date": "1460-07-10",
+        "year": 1460,
+        "label": "10 Jul 1460",
+        "text": "Yorkists win at Northampton and capture the king again",
+        "detail": "Warwick and Edward of March landed from Calais and marched north against the royal army. At Northampton, by the River Nene, they defeated the forces loyal to Henry VI; the Duke of Buckingham, the Earl of Shrewsbury and other Lancastrian lords were killed defending the king, who was taken prisoner. It was the first battle in England in which artillery was used. Queen Margaret fled north and then to Scotland.",
+        "lonlat": [
+          -0.9,
+          52.22
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1460-10-25",
+        "year": 1460,
+        "label": "25 Oct 1460",
+        "text": "Act of Accord makes York heir to the throne",
+        "detail": "Returning from Ireland, York laid his hand on the empty throne in Parliament to signal his claim, shocking even his allies. Unable to decide the claim on legal grounds, the lords reached a compromise in the Act of Accord: Henry VI would remain king for life, but the throne would then pass to York and his heirs, disinheriting Henry's son, Prince Edward. Queen Margaret and many Lancastrian nobles refused to accept it.",
+        "lonlat": [
+          -0.13,
+          51.5
+        ],
+        "kind": "political"
+      },
+      {
+        "date": "1460-12-30",
+        "year": 1460,
+        "label": "30 Dec 1460",
+        "text": "Richard of York killed at Wakefield",
+        "detail": "Margaret and the Lancastrian lords massed their armies in the north, and York marched to confront them, and was near Sandal Magna, by Wakefield, at the end of December. In what recent research suggests was a small-scale skirmish rather than a full battle, York, his son Edmund, Earl of Rutland, and the Earl of Salisbury were captured and killed. York's claim passed to his eldest son, Edward, Earl of March.",
+        "lonlat": [
+          -1.5,
+          53.66
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1461-02-02",
+        "year": 1461,
+        "label": "2 Feb 1461",
+        "text": "Edward of March wins at Mortimer's Cross",
+        "detail": "In the Welsh Marches, York's son Edward defeated a Lancastrian army at Mortimer's Cross. At dawn a parhelion made three suns appear in the sky; Edward reassured his frightened troops that it stood for the Holy Trinity and showed God's blessing, and he later took the 'sun in splendour' as his personal badge. The captured Owen Tudor, husband of Henry V's widow Catherine of Valois, was executed by his troops.",
+        "lonlat": [
+          -2.86,
+          52.27
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1461-02-17",
+        "year": 1461,
+        "label": "17 Feb 1461",
+        "text": "Lancastrians win the Second Battle of St Albans and free Henry",
+        "detail": "Margaret's army, moving south after Wakefield, met Warwick, who had the captive Henry VI with him, astride Watling Street at St Albans. Warwick's entrenched army was defeated and the king was freed. Yet the Lancastrian cause was unpopular in London, where the queen's army had been promised the freedom to plunder on its march south, and the citizens refused to let it in. Warwick joined Edward, and the two hurried to London, where Edward was proclaimed king as Edward IV.",
+        "lonlat": [
+          -0.34,
+          51.76
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1461-03-29",
+        "year": 1461,
+        "label": "29 Mar 1461",
+        "text": "Edward IV crushes the Lancastrians at Towton",
+        "detail": "Edward marched north to settle the war. On Palm Sunday, near Towton in Yorkshire, perhaps 50,000 men fought for about ten hours in a snowstorm; the wind blew snow into the faces of the Lancastrian archers, whose arrows fell short. It was probably the largest and bloodiest battle ever fought on English soil. Many Lancastrians were killed in the rout, Henry fled the country, and Edward was formally crowned in June.",
+        "lonlat": [
+          -1.27,
+          53.84
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1464-05-15",
+        "year": 1464,
+        "label": "15 May 1464",
+        "text": "Last Lancastrian army in the north destroyed at Hexham",
+        "detail": "Lancastrian resistance continued in the far north, where a rising for Henry broke out in spring 1463. After truces with Scotland and France cut off foreign help, a Yorkist force under John Neville destroyed the main Lancastrian army at Hexham; its commanders, including the Duke of Somerset, were captured and executed. Henry VI was later caught hiding near the River Ribble and imprisoned in the Tower of London.",
+        "lonlat": [
+          -2.1,
+          54.97
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1469-07-26",
+        "year": 1469,
+        "label": "26 Jul 1469",
+        "text": "Warwick turns on Edward IV; royal army beaten at Edgcote",
+        "detail": "Warwick, once Edward's chief supporter, was alienated when the king married Elizabeth Woodville against his advice in 1464, promoted her family and turned away from Warwick's policy of friendship with France. In 1469 Warwick rebelled, hoping to replace Edward with his brother George, Duke of Clarence. Rebels led by 'Robin of Redesdale' defeated a royal army at Edgcote, its commanders were executed, and Edward was held prisoner until Warwick, lacking support, had to let him resume his rule.",
+        "lonlat": [
+          -1.27,
+          52.13
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1470-10-03",
+        "year": 1470,
+        "label": "3 Oct 1470",
+        "text": "Readeption: Warwick restores Henry VI to the throne",
+        "detail": "After a failed rising in 1470, Warwick and Clarence fled to France, where Louis XI reconciled Warwick with his old enemy Queen Margaret. They invaded through Dartmouth and Plymouth in September, Edward was forced to flee abroad, and Warwick freed Henry VI from the Tower. Henry, now too frail to rule unaided, was restored as king on 3 October 1470, with Warwick in effective control. The map keeps the Yorkist colour for this brief restoration.",
+        "lonlat": [
+          -0.08,
+          51.51
+        ],
+        "kind": "political"
+      },
+      {
+        "date": "1471-03-14",
+        "year": 1471,
+        "label": "14 Mar 1471",
+        "text": "Edward IV returns, landing at Ravenspurn",
+        "detail": "With some money, ships and men from his brother-in-law Charles the Bold of Burgundy, and backing from Flemish merchants, Edward landed at Ravenspurn in Yorkshire, his ships scattered by bad weather. Hull refused to let him in, but with the Earl of Northumberland's support he gathered troops as he marched south. The restored Lancastrian regime was divided, and Clarence deserted Warwick to rejoin his brother. Bad weather kept Queen Margaret and her son, with French troops, from crossing the Channel to reinforce Warwick.",
+        "lonlat": [
+          0.11,
+          53.6
+        ],
+        "kind": "invasion"
+      },
+      {
+        "date": "1471-04-14",
+        "year": 1471,
+        "label": "14 Apr 1471",
+        "text": "Warwick 'the Kingmaker' killed at Barnet",
+        "detail": "On Easter Day the armies met near Barnet, north of London, in thick mist. In the confusion, the star badge of the Lancastrian Earl of Oxford was mistaken for Edward's sun, and Lancastrians attacked their own men. Edward's determined assault broke Warwick's army; Warwick and his brother John Neville were killed in the rout. Victory at Barnet began fourteen years of Yorkist rule.",
+        "lonlat": [
+          -0.2,
+          51.66
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1471-05-04",
+        "year": 1471,
+        "label": "4 May 1471",
+        "text": "Lancastrian heir killed at Tewkesbury; Henry VI dies",
+        "detail": "Margaret and Prince Edward landed at Weymouth on the day of Barnet and, with an army raised in the West Country, marched north to join Jasper Tudor's Lancastrians in Wales. Edward IV caught them at Tewkesbury and completely defeated them. Prince Edward, the Lancastrian heir, was killed, and many Lancastrian nobles died in the battle or were executed after it. Henry VI died in the Tower soon afterwards, probably murdered. Edward ruled securely until his death in 1483.",
+        "lonlat": [
+          -2.16,
+          51.98
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1483-06-26",
+        "year": 1483,
+        "label": "26 Jun 1483",
+        "text": "Richard III takes the throne; the princes disappear",
+        "detail": "Edward IV died in April 1483, leaving his twelve-year-old son Edward V, with the boy's uncle Richard, Duke of Gloucester, as Lord Protector. Before the coronation, Edward IV's marriage was declared invalid and his children illegitimate, and an assembly proclaimed Richard king. Edward V and his younger brother, the 'Princes in the Tower', were not seen in public after that summer; their fate remains a mystery.",
+        "lonlat": [
+          -0.08,
+          51.51
+        ],
+        "kind": "political"
+      },
+      {
+        "date": "1483-11-02",
+        "year": 1483,
+        "label": "Oct–Nov 1483",
+        "text": "Buckingham's rebellion fails; the duke is executed",
+        "detail": "Former supporters of Edward IV, joined by Richard's one-time ally the Duke of Buckingham, rose against the new king in October 1483, backed by Edward's widow Elizabeth Woodville and Lady Margaret Beaufort, mother of the exiled Lancastrian claimant Henry Tudor. Storms wrecked Henry's attempt to invade from Brittany, Richard easily put down the revolt, and Buckingham was executed at Salisbury on 2 November.",
+        "lonlat": [
+          -1.8,
+          51.07
+        ],
+        "kind": "other"
+      },
+      {
+        "date": "1485-08-07",
+        "year": 1485,
+        "label": "7 Aug 1485",
+        "text": "Henry Tudor lands in Wales with French support",
+        "detail": "Henry Tudor, descended from Edward III through his mother Margaret Beaufort, had promised to marry Elizabeth of York, Edward IV's eldest daughter, which won over many Yorkists. With French troops he sailed from Harfleur and landed at Mill Bay, near Dale on Milford Haven, in his native Wales. He marched inland gathering support, while Richard III mustered his army to intercept him.",
+        "lonlat": [
+          -5.15,
+          51.7
+        ],
+        "kind": "invasion"
+      },
+      {
+        "date": "1485-08-22",
+        "year": 1485,
+        "label": "22 Aug 1485",
+        "text": "Richard III killed at Bosworth; Henry Tudor becomes king",
+        "detail": "Near Market Bosworth in Leicestershire, Richard's larger army attacked, but the Earl of Northumberland did not join in and the Stanleys held back. Richard gambled on a charge to kill Henry himself; Sir William Stanley's men then intervened and Richard was killed, the last English king to die in battle. Henry was crowned Henry VII, and Bosworth is often seen as the end of the Plantagenet dynasty. The exact battlefield site is disputed.",
+        "lonlat": [
+          -1.41,
+          52.59
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1486-01-18",
+        "year": 1486,
+        "label": "18 Jan 1486",
+        "text": "Henry VII marries Elizabeth of York, uniting the two claims",
+        "detail": "Crowned at Westminster Abbey on 30 October 1485, Henry VII kept his promise and married Elizabeth of York. Their children would inherit both the Lancastrian and Yorkist claims, a union later symbolised by the Tudor rose, which combined the white rose of York with the red rose that Henry adopted for Lancaster. Their first son, Arthur, was born that September. Yet plots by Yorkist sympathisers continued.",
+        "lonlat": [
+          -0.13,
+          51.5
+        ],
+        "kind": "political"
+      },
+      {
+        "date": "1487-05-04",
+        "year": 1487,
+        "label": "May 1487",
+        "text": "Yorkist rebels gather in Ireland around the pretender Lambert Simnel",
+        "detail": "Yorkist plotters presented a boy, Lambert Simnel, as the imprisoned Earl of Warwick, Clarence's son and the male heir of York. John de la Pole, Earl of Lincoln, Richard III's nephew, went to Burgundy, where his aunt Margaret, Duchess of Burgundy, gave him money and soldiers. The rebel fleet reached Dublin on 4 May 1487, where the Earl of Kildare helped recruit Irish troops before the invasion of England.",
+        "lonlat": [
+          -6.26,
+          53.35
+        ],
+        "kind": "political"
+      },
+      {
+        "date": "1487-06-16",
+        "year": 1487,
+        "label": "16 Jun 1487",
+        "text": "Henry VII defeats the last Yorkist rising at Stoke Field",
+        "detail": "Lincoln's army of German and Swiss mercenaries, Irish troops and English Yorkists met Henry at East Stoke in Nottinghamshire. The battle may have been slightly larger than Bosworth, with heavier casualties, and Henry won a crushing victory; Lincoln and most of the other Yorkist commanders fell fighting. Simnel was captured and pardoned, and given work in the royal kitchen. It was the last battle between rival claimants descended from Lancaster and York.",
+        "lonlat": [
+          -0.88,
+          53.03
+        ],
+        "kind": "battle"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: Wars of the Roses",
+        "url": "https://en.wikipedia.org/wiki/Wars_of_the_Roses"
+      },
+      {
+        "title": "Wikipedia: First Battle of St Albans",
+        "url": "https://en.wikipedia.org/wiki/First_Battle_of_St_Albans"
+      },
+      {
+        "title": "Wikipedia: Battle of Towton",
+        "url": "https://en.wikipedia.org/wiki/Battle_of_Towton"
+      },
+      {
+        "title": "Wikipedia: Readeption of Henry VI",
+        "url": "https://en.wikipedia.org/wiki/Readeption_of_Henry_VI"
+      },
+      {
+        "title": "Wikipedia: Battle of Tewkesbury",
+        "url": "https://en.wikipedia.org/wiki/Battle_of_Tewkesbury"
+      },
+      {
+        "title": "Wikipedia: Battle of Bosworth Field",
+        "url": "https://en.wikipedia.org/wiki/Battle_of_Bosworth_Field"
+      },
+      {
+        "title": "Wikipedia: Battle of Stoke Field",
+        "url": "https://en.wikipedia.org/wiki/Battle_of_Stoke_Field"
+      }
+    ]
+  }
+]

@@ -258,6 +258,37 @@ def main():
             wars.append(w)
     wars.sort(key=lambda w: w["span"][0])
 
+    # Cinematic war layers (content/cinema/<war>.json): front lines, occupied areas, offensives, battles, camera shots.
+    cdir = os.path.join(ROOT, "public", "data", "cinema")
+    os.makedirs(cdir, exist_ok=True)
+    by_id = {w["id"]: w for w in wars}
+    iso = re.compile(r"^-?\d{1,4}(-\d{2}(-\d{2})?)?$")
+    for p in sorted(glob.glob(os.path.join(ROOT, "content", "cinema", "*.json"))):
+        c = json.load(open(p))
+        wid = c.get("war")
+        if wid not in by_id:
+            problems.append(f"cinema {os.path.basename(p)}: unknown war {wid!r}"); continue
+        bad = []
+        for grp in ("fronts", "occupations"):
+            for x in c.get(grp, []):
+                ks = x.get("keys", [])
+                if [k["date"] for k in ks] != sorted(k["date"] for k in ks):
+                    bad.append(f"{grp} {x.get('name')}: keyframes not in date order")
+                for k in ks:
+                    if not iso.match(str(k.get("date", ""))):
+                        bad.append(f"{grp} {x.get('name')}: bad date {k.get('date')!r}")
+                    pts = k.get("line") or k.get("coords") or []
+                    if len(pts) < 2 or any(not (-180 <= q[0] <= 180 and -90 <= q[1] <= 90) for q in pts):
+                        bad.append(f"{grp} {x.get('name')} {k.get('date')}: bad coordinates")
+        for a in c.get("arrows", []):
+            if len(a.get("path", [])) < 2 or str(a.get("start")) > str(a.get("end")):
+                bad.append(f"arrow {a.get('name')}: bad path or dates")
+        problems += [f"cinema {wid}: {b}" for b in bad]
+        check_sources(f"cinema {wid}", c)
+        with open(os.path.join(cdir, f"{wid}.json"), "w") as fh:
+            json.dump(c, fh, ensure_ascii=False, separators=(",", ":"))
+        by_id[wid]["cinema"] = True
+
     # Period newspapers and photos (content/media/*.json): only https images with a licence and a source page.
     media = {}
     for p in sorted(glob.glob(os.path.join(ROOT, "content", "media", "*.json"))):

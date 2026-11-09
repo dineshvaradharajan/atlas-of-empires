@@ -12,7 +12,8 @@ Borders come from Cliopatria. `data/clio/realms.txt` lists every realm (name, fi
 `public/data/clio/index.json` gives each realm's year rows (`realms[name].tl` = [[fromYear, toYear, areaKm2], …]). Side members
 must use EXACT realm names from there, with from/to years inside that realm's rows. Names in parentheses are empire groups,
 e.g. "(British Empire)", which colour a whole empire with its colonies; prefer them for colonial powers. Check
-`content/corrections.json` for relabels: e.g. "Kingdom of Great Britain" shows as "United Kingdom" from 1801 but keeps its realm name.
+`content/corrections.json` for relabels: the map matches a side member against the name a state is drawn under AFTER
+corrections (or its empire group). E.g. "Kingdom of Great Britain" is drawn as "United Kingdom" from 1801, so use "(British Empire)" for Britain.
 If a belligerent has no realm (rebels, militias, alliances), leave it out of `members` and describe it in the text.
 Look at `content/moments*.json` for an existing moment about this war and put its `id` in `moment`.
 

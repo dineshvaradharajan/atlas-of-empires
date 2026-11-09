@@ -1,0 +1,2022 @@
+[
+  {
+    "id": "thirty-years-war",
+    "name": "Thirty Years' War",
+    "moment": "westphalia",
+    "span": [
+      1618,
+      1648
+    ],
+    "dateLabel": "23 May 1618 – 24 October 1648",
+    "summary": "The war began as a revolt by Protestant nobles in Bohemia against their Habsburg king, Ferdinand, who was elected Holy Roman Emperor in 1619. It grew into a struggle over religion and power across the Holy Roman Empire, as Denmark, Sweden and finally France intervened against the Austrian and Spanish Habsburgs and the Catholic League led by Bavaria. Imperial armies crushed Bohemia in 1620 and Denmark in 1626, and the Edict of Restitution of 1629 alarmed Protestant rulers. Gustavus Adolphus of Sweden then won at Breitenfeld in 1631 but was killed at Lützen in 1632. After the Swedish defeat at Nördlingen in 1634, most German princes made peace with the emperor in 1635, but Catholic France joined Sweden in open war on the Habsburgs. Exhausting campaigns followed until the Peace of Westphalia in 1648, which recognised Calvinism alongside Catholicism and Lutheranism, gave Sweden and France territory, confirmed Dutch independence from Spain and recognised the Swiss Confederation as independent of the Empire.",
+    "casualties": "An estimated 4.5 to 8 million soldiers and civilians died, most from famine and disease, and the population of Germany is thought to have fallen from about 18–20 million to 11–13 million.",
+    "sides": [
+      {
+        "name": "Habsburgs and Catholic League",
+        "members": [
+          {
+            "clio": "(Habsburg Monarchy)",
+            "from": 1618,
+            "to": 1648
+          },
+          {
+            "clio": "(Spanish Empire)",
+            "from": 1619,
+            "to": 1648
+          },
+          {
+            "clio": "Duchy of Bavaria",
+            "from": 1619,
+            "to": 1648
+          },
+          {
+            "clio": "Electorate of Saxony",
+            "from": 1620,
+            "to": 1620
+          },
+          {
+            "clio": "Electorate of Saxony",
+            "from": 1636,
+            "to": 1645
+          }
+        ]
+      },
+      {
+        "name": "Protestant states, Sweden and France",
+        "members": [
+          {
+            "clio": "Principality of Transylvania",
+            "from": 1619,
+            "to": 1626
+          },
+          {
+            "clio": "(Dutch Republic)",
+            "from": 1621,
+            "to": 1647
+          },
+          {
+            "clio": "Denmark-Norway",
+            "from": 1625,
+            "to": 1629
+          },
+          {
+            "clio": "Swedish Empire",
+            "from": 1630,
+            "to": 1648
+          },
+          {
+            "clio": "Electorate of Saxony",
+            "from": 1631,
+            "to": 1631
+          },
+          {
+            "clio": "Brandenburg-Prussia",
+            "from": 1631,
+            "to": 1634
+          },
+          {
+            "clio": "(Kingdom of France)",
+            "from": 1635,
+            "to": 1648
+          }
+        ]
+      }
+    ],
+    "events": [
+      {
+        "date": "1618-05-23",
+        "year": 1618,
+        "label": "23 May 1618",
+        "text": "Defenestration of Prague: Bohemian Protestants revolt",
+        "detail": "Bohemia's Protestant nobles feared that their new Habsburg king, the devout Catholic Ferdinand, would roll back the religious freedoms they had won. At Prague Castle a group of them threw two of the king's regents and their secretary out of a high window; all three survived. The act was an open challenge to Habsburg rule, and the rebels set up their own government and raised an army. The local revolt became the opening of a thirty-year European war.",
+        "lonlat": [
+          14.4,
+          50.09
+        ],
+        "kind": "political"
+      },
+      {
+        "date": "1619-08",
+        "year": 1619,
+        "label": "Aug 1619",
+        "text": "Bohemia deposes Ferdinand and chooses Frederick V of the Palatinate",
+        "detail": "In August 1619 the Bohemian Estates rescinded Ferdinand's election as their king and offered the crown to Frederick V, the Calvinist Elector Palatine; in the same month Ferdinand was elected Holy Roman Emperor. Frederick entered Prague in October. By accepting, he turned a Bohemian dispute into a quarrel among the Empire's princes. Ferdinand secured help from Maximilian of Bavaria and the Catholic League, and from Spain, while Gabriel Bethlen of Transylvania attacked Habsburg Hungary in support of the rebels.",
+        "lonlat": [
+          14.42,
+          50.09
+        ],
+        "kind": "political"
+      },
+      {
+        "date": "1620-11-08",
+        "year": 1620,
+        "label": "8 Nov 1620",
+        "text": "Battle of White Mountain: the Bohemian revolt is crushed",
+        "detail": "An imperial and Catholic League army under Tilly and Bucquoy, with Spanish troops, met the Bohemian army under Christian of Anhalt on a low plateau outside Prague. The rebels were routed in about an hour and Tilly entered Prague the next day. Frederick fled, mocked as the 'Winter King'. Twenty-seven rebel leaders were later executed in the Old Town Square, and much of the Protestant nobility went into exile as their lands were confiscated and Bohemia was forcibly re-Catholicised.",
+        "lonlat": [
+          14.32,
+          50.08
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1622-05",
+        "year": 1622,
+        "label": "May 1622",
+        "text": "Catholic armies win at Wimpfen and overrun the Palatinate",
+        "detail": "With Bohemia lost, the war moved to Frederick's own lands on the Rhine. Spanish troops had already occupied part of the Palatinate, and in May and June 1622 Tilly defeated Protestant armies at Wimpfen and Höchst; Frankenthal surrendered in March 1623. The emperor rewarded Maximilian of Bavaria with Frederick's title of elector, confirmed in February 1623. Transferring an electoral vote from a Protestant to a Catholic prince alarmed Protestant rulers inside and outside the Empire.",
+        "lonlat": [
+          9.16,
+          49.23
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1626-08-27",
+        "year": 1626,
+        "label": "27 Aug 1626",
+        "text": "Battle of Lutter: Tilly defeats Christian IV of Denmark",
+        "detail": "King Christian IV of Denmark, also a prince of the Empire as Duke of Holstein, had entered the war in 1625 as champion of the Protestant cause in northern Germany. At Lutter am Barenberge Tilly's Catholic League army beat him comprehensively: he lost at least a third of his army, all his artillery and most of his baggage, and many German allies deserted him. Imperial troops under Wallenstein then pushed into Denmark's Jutland peninsula.",
+        "lonlat": [
+          10.27,
+          51.98
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1629-03",
+        "year": 1629,
+        "label": "Mar 1629",
+        "text": "Emperor Ferdinand II issues the Edict of Restitution",
+        "detail": "At the height of his power, Ferdinand II ordered that church lands taken over by Protestant rulers since the Peace of Passau of 1552 be returned to the Catholic Church. Enforcing it would have stripped Lutheran princes of bishoprics and abbeys across northern Germany, and imperial commissioners began confiscations with army backing. The edict turned even moderate, previously loyal Lutheran states such as Saxony and Brandenburg against the emperor and helped open the way for Swedish intervention.",
+        "lonlat": [
+          16.37,
+          48.21
+        ],
+        "kind": "political"
+      },
+      {
+        "date": "1629-06",
+        "year": 1629,
+        "label": "Jun 1629",
+        "text": "Treaty of Lübeck takes Denmark out of the war",
+        "detail": "Defeated on land and with Jutland occupied, Christian IV made peace with the emperor at Lübeck in June 1629. He kept Schleswig and Holstein and recovered his Danish lands, but gave up his claims to the north German bishoprics of Bremen and Verden and promised not to interfere in the Empire again. The Danish phase of the war ended with Habsburg power reaching the Baltic coast, which worried Sweden.",
+        "lonlat": [
+          10.69,
+          53.87
+        ],
+        "kind": "treaty"
+      },
+      {
+        "date": "1630-07",
+        "year": 1630,
+        "label": "Jul 1630",
+        "text": "Gustavus Adolphus of Sweden lands in Pomerania",
+        "detail": "Concerned by imperial power on the Baltic and presenting himself as protector of German Protestants, King Gustavus Adolphus landed in Pomerania with nearly 18,000 troops. By the Treaty of Bärwalde in 1631, Cardinal Richelieu's Catholic France agreed to subsidise the Swedish army, putting rivalry with the Habsburgs ahead of religion. Sweden's well-drilled army, with mobile field artillery, was to change the course of the war.",
+        "lonlat": [
+          13.85,
+          54.14
+        ],
+        "kind": "invasion"
+      },
+      {
+        "date": "1631-05-20",
+        "year": 1631,
+        "label": "20 May 1631",
+        "text": "Sack of Magdeburg: some 20,000 people killed",
+        "detail": "The Protestant city of Magdeburg had allied with Sweden and was besieged by Catholic League forces. On 20 May troops under Pappenheim, part of Tilly's army, stormed the walls; the city burned and was plundered for days. Around 20,000 defenders and civilians are estimated to have died, and of roughly 25,000 inhabitants only about 5,000 survived. The massacre shocked Protestant Europe and helped persuade many rulers to stand against the emperor.",
+        "lonlat": [
+          11.63,
+          52.13
+        ],
+        "kind": "atrocity"
+      },
+      {
+        "date": "1631-09-17",
+        "year": 1631,
+        "label": "17 Sep 1631",
+        "text": "Battle of Breitenfeld: first great Swedish victory",
+        "detail": "Saxony, threatened by Tilly's army, finally allied with Sweden. Near Leipzig the combined Swedish-Saxon army met Tilly; the Saxons were routed early, but the Swedes held and broke the imperial army, which lost about two-thirds of its men. It was the Catholic side's first major defeat of the war. Gustavus marched into southern and western Germany, and several Protestant states joined him.",
+        "lonlat": [
+          12.4,
+          51.4
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1632-11-16",
+        "year": 1632,
+        "label": "16 Nov 1632",
+        "text": "Battle of Lützen: Sweden wins but Gustavus Adolphus is killed",
+        "detail": "The emperor had recalled Wallenstein to raise a new army. At Lützen, southwest of Leipzig, the Swedes narrowly defeated him in a confused, foggy battle, and Wallenstein's cavalry general Pappenheim was mortally wounded. But Gustavus Adolphus, riding to rally his infantry, ran into enemy cavalry and was shot dead. Sweden's chancellor Axel Oxenstierna kept the war going, but without its king the Protestant coalition lost much of its drive.",
+        "lonlat": [
+          12.14,
+          51.24
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1634-02-25",
+        "year": 1634,
+        "label": "25 Feb 1634",
+        "text": "Wallenstein is assassinated at Eger (Cheb)",
+        "detail": "Albrecht von Wallenstein, the emperor's most powerful general, had grown wealthy and independent and was suspected at court of secret talks with the enemy. Ferdinand II dismissed him, and on 25 February 1634 officers of his own army murdered him at Eger (Cheb) in Bohemia. Command of the imperial army passed to the emperor's son, the future Ferdinand III, tightening Habsburg control of the war effort.",
+        "lonlat": [
+          12.37,
+          50.08
+        ],
+        "kind": "political"
+      },
+      {
+        "date": "1634-09-06",
+        "year": 1634,
+        "label": "6 Sep 1634",
+        "text": "Battle of Nördlingen: crushing defeat for Sweden",
+        "detail": "An imperial army under the future Ferdinand III, joined by a Spanish army marching north from Italy, met the Swedes and their German allies at Nördlingen in Swabia. The Protestant army was destroyed. Sweden's position in southern Germany collapsed, and its German allies began to look for terms with the emperor, while France, fearing a Habsburg triumph, prepared to enter the war openly.",
+        "lonlat": [
+          10.49,
+          48.85
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1635-05",
+        "year": 1635,
+        "label": "May 1635",
+        "text": "France declares war on Spain",
+        "detail": "Until now Richelieu had fought the Habsburgs by paying others. After Nördlingen, France declared war on Spain in May 1635 and in March 1636 formally allied with Sweden by the Treaty of Wismar. From this point the conflict was less a German religious war than a contest between Bourbon France and the Habsburgs, fought in the Low Countries, along the Rhine and in Italy as well as Germany.",
+        "lonlat": [
+          2.35,
+          48.86
+        ],
+        "kind": "political"
+      },
+      {
+        "date": "1635-05",
+        "year": 1635,
+        "label": "May 1635",
+        "text": "Peace of Prague: Saxony and most German princes make peace with the emperor",
+        "detail": "Days after France's declaration, the emperor and Saxony agreed the Peace of Prague, and most Lutheran princes, including Brandenburg, soon accepted it. In return the emperor effectively set aside the Edict of Restitution, and the princes merged their forces into an imperial army. The treaty might have ended the German war, but Sweden, now backed by France, fought on, and Saxony found itself at war with its former Swedish ally.",
+        "lonlat": [
+          14.42,
+          50.09
+        ],
+        "kind": "treaty"
+      },
+      {
+        "date": "1636-10",
+        "year": 1636,
+        "label": "Oct 1636",
+        "text": "Battle of Wittstock: Sweden recovers in the north",
+        "detail": "In October 1636 a Swedish army under Johan Banér defeated an imperial and Saxon army at Wittstock in Brandenburg. The victory restored Sweden's position in northern Germany after the disaster of Nördlingen. Campaigning across Brandenburg, Saxony and Pomerania devastated the region, as armies of all sides lived off the land, spreading hunger and disease among civilians. Wittstock also showed that Sweden, now paid by France, could fight on without its German allies.",
+        "lonlat": [
+          12.49,
+          53.16
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1638-12",
+        "year": 1638,
+        "label": "Dec 1638",
+        "text": "Breisach falls to Bernard of Saxe-Weimar",
+        "detail": "Bernard of Saxe-Weimar, a German Protestant general now paid by France, besieged the Rhine fortress of Breisach, which surrendered in December 1638. Breisach guarded the route by which Spain moved troops from Italy to the Netherlands along the Rhine, and its loss made Spanish reinforcement of Flanders much harder. After Bernard's death in 1639 France took over his army and his conquests in Alsace.",
+        "lonlat": [
+          7.58,
+          48.03
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1642-10",
+        "year": 1642,
+        "label": "Oct 1642",
+        "text": "Second Battle of Breitenfeld: Swedish victory near Leipzig",
+        "detail": "On almost the same ground as Gustavus Adolphus's victory of 1631, a Swedish army under Lennart Torstensson defeated an imperial army in October 1642. The win let Sweden occupy Leipzig and much of Saxony and keep up pressure on the Habsburg lands. Peace talks were by now being arranged, but each side fought on to improve its bargaining position. Torstensson, Sweden's ablest general after Gustavus, would lead its armies to their greatest successes over the next three years.",
+        "lonlat": [
+          12.4,
+          51.4
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1643-05-19",
+        "year": 1643,
+        "label": "19 May 1643",
+        "text": "Battle of Rocroi: France defeats Spain's army of Flanders",
+        "detail": "Spain's army in the Netherlands invaded northern France and besieged the fortress of Rocroi. A French army under the young Duke of Enghien, later the Great Condé, attacked and destroyed it, including its famed infantry regiments. Rocroi became a symbol of the end of Spain's military dominance in Europe, though the Franco-Spanish war went on until 1659. The battle was fought just days after the death of King Louis XIII, and it secured the start of the young Louis XIV's reign.",
+        "lonlat": [
+          4.52,
+          49.93
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1645-03",
+        "year": 1645,
+        "label": "Mar 1645",
+        "text": "Battle of Jankau: Swedes rout the imperial army in Bohemia",
+        "detail": "Torstensson's Swedish army invaded Bohemia and in March 1645 destroyed an imperial army at Jankau (Jankov), southeast of Prague. Swedish troops then advanced towards Vienna. The defeat left the emperor with few soldiers, and in the same year Saxony made a truce with Sweden. Ferdinand III's negotiators at Münster and Osnabrück now had to accept far more concessions. Imperial losses were so heavy that the Habsburg lands lay open to Swedish raids.",
+        "lonlat": [
+          14.73,
+          49.65
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1647-03-14",
+        "year": 1647,
+        "label": "14 Mar 1647",
+        "text": "Truce of Ulm: Bavaria pauses its war with France and Sweden",
+        "detail": "With Franco-Swedish armies ravaging his lands, Maximilian of Bavaria, the emperor's most important German ally, agreed a truce with France and Sweden at Ulm. The emperor was left almost alone in Germany. Maximilian broke the truce later that year and rejoined the emperor, but the episode showed how close the Habsburg side was to exhaustion. Bavaria had fought for the Catholic side since 1619, and its wavering showed that even the most loyal allies wanted peace on almost any terms.",
+        "lonlat": [
+          9.99,
+          48.4
+        ],
+        "kind": "treaty"
+      },
+      {
+        "date": "1648-01-30",
+        "year": 1648,
+        "label": "30 Jan 1648",
+        "text": "Peace of Münster: Spain recognises Dutch independence",
+        "detail": "At Münster, Spain and the Dutch Republic signed a separate peace ending the Eighty Years' War, which had resumed alongside the German war in 1621. Spain recognised the United Provinces as a sovereign state. Freed of its Dutch war, Spain kept fighting France, but the treaty removed one strand of the wider conflict months before the main settlement. The Dutch, who had fought Spain on and off for eighty years, emerged as a leading trading and naval power.",
+        "lonlat": [
+          7.63,
+          51.96
+        ],
+        "kind": "treaty"
+      },
+      {
+        "date": "1648-05",
+        "year": 1648,
+        "label": "May 1648",
+        "text": "Battle of Zusmarshausen: last imperial field army defeated",
+        "detail": "A combined French and Swedish army under Turenne and Wrangel caught the retreating imperial and Bavarian army at Zusmarshausen, west of Augsburg, in May 1648 and defeated it. Bavaria lay open to plunder, and the emperor had no army left capable of resisting in southern Germany. The defeat pushed Ferdinand III to settle quickly on the terms being negotiated in Westphalia.",
+        "lonlat": [
+          10.6,
+          48.4
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1648-07",
+        "year": 1648,
+        "label": "Jul 1648",
+        "text": "Swedes storm Prague Castle and the Lesser Town",
+        "detail": "In the war's last months a Swedish force surprised Prague, seizing the castle and the Malá Strana (Lesser Town) on the left bank in July 1648 and carrying off rich booty, including treasures from the imperial collections. The Old Town across the river held out until news of peace arrived. The war thus ended in the city where it had begun thirty years earlier.",
+        "lonlat": [
+          14.4,
+          50.09
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1648-10-24",
+        "year": 1648,
+        "label": "24 Oct 1648",
+        "text": "Peace of Westphalia signed at Münster and Osnabrück",
+        "detail": "Two treaties concluded with France (at Münster) and Sweden (at Osnabrück) ended the war. Calvinism was recognised alongside Catholicism and Lutheranism, with 1624 as the reference year for each territory's religion. Sweden gained Western Pomerania, Bremen-Verden and an indemnity; France gained Metz, Toul, Verdun and lands in Alsace; Brandenburg gained Farther Pomerania; Bavaria kept an electorate and the Palatine heir received a new one; and the Swiss Confederation was recognised as independent of the Empire.",
+        "lonlat": [
+          7.63,
+          51.96
+        ],
+        "kind": "treaty"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Thirty Years' War (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Thirty_Years%27_War"
+      },
+      {
+        "title": "Battle of White Mountain (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Battle_of_White_Mountain"
+      },
+      {
+        "title": "Battle of Lutter (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Battle_of_Lutter"
+      },
+      {
+        "title": "Swedish intervention in the Thirty Years' War (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Swedish_intervention_in_the_Thirty_Years%27_War"
+      },
+      {
+        "title": "Sack of Magdeburg (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Sack_of_Magdeburg"
+      },
+      {
+        "title": "Battle of Breitenfeld (1631) (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Battle_of_Breitenfeld_(1631)"
+      },
+      {
+        "title": "Battle of Lützen (1632) (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Battle_of_L%C3%BCtzen_(1632)"
+      },
+      {
+        "title": "Peace of Westphalia (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Peace_of_Westphalia"
+      }
+    ]
+  },
+  {
+    "id": "seven-years-war",
+    "name": "Seven Years' War",
+    "moment": "seven-years-war",
+    "span": [
+      1756,
+      1763
+    ],
+    "dateLabel": "17 May 1756 – 15 February 1763",
+    "summary": "Two rivalries merged into one global war: Britain and France contested North America and India, while Austria sought to recover Silesia, which Prussia had seized in the 1740s. In the 'Diplomatic Revolution' of 1756 Britain allied with Prussia and France with its old enemy Austria; Russia and Sweden joined Austria, and Spain entered in 1762. Frederick II of Prussia invaded Saxony and survived years of fighting against much larger armies, winning at Rossbach and Leuthen but nearly collapsing after Kunersdorf, until Russia left the war in 1762. Britain subsidised Prussia and defended Hanover, but used its navy to conquer French Canada, beat the French in India and seize Havana and Manila. In India the East India Company also defeated the Nawab of Bengal at Plassey. The Treaty of Paris gave Britain Canada, Florida and dominance in India, while the Treaty of Hubertusburg left Silesia with Prussia. Britain's war debts later fed the quarrel with its American colonies.",
+    "casualties": "Military deaths among the main powers are estimated at close to 900,000 (roughly France 200,000, Prussia 180,000, Austria and the Empire 165,000, Britain 160,000 and Russia 120,000), with heavy civilian losses besides.",
+    "sides": [
+      {
+        "name": "Britain, Prussia and allies",
+        "members": [
+          {
+            "clio": "(British Empire)",
+            "from": 1756,
+            "to": 1763
+          },
+          {
+            "clio": "English Colonial Empire",
+            "from": 1756,
+            "to": 1761
+          },
+          {
+            "clio": "English Colonial Empire",
+            "from": 1763,
+            "to": 1763
+          },
+          {
+            "clio": "Kingdom of Prussia",
+            "from": 1756,
+            "to": 1763
+          },
+          {
+            "clio": "Electorate of Hanover",
+            "from": 1756,
+            "to": 1763
+          },
+          {
+            "clio": "(Portuguese Empire)",
+            "from": 1762,
+            "to": 1763
+          }
+        ]
+      },
+      {
+        "name": "France, Austria and allies",
+        "members": [
+          {
+            "clio": "(Kingdom of France)",
+            "from": 1756,
+            "to": 1763
+          },
+          {
+            "clio": "(Habsburg Monarchy)",
+            "from": 1756,
+            "to": 1763
+          },
+          {
+            "clio": "Russian Empire",
+            "from": 1757,
+            "to": 1762
+          },
+          {
+            "clio": "Swedish Empire",
+            "from": 1757,
+            "to": 1762
+          },
+          {
+            "clio": "(Spanish Empire)",
+            "from": 1762,
+            "to": 1763
+          }
+        ]
+      },
+      {
+        "name": "Nawab of Bengal (against the East India Company)",
+        "members": [
+          {
+            "clio": "Nawabs of Bengal",
+            "from": 1756,
+            "to": 1757
+          }
+        ]
+      }
+    ],
+    "events": [
+      {
+        "date": "1756-05-17",
+        "year": 1756,
+        "label": "17 May 1756",
+        "text": "Britain declares war on France",
+        "detail": "British and French colonists and soldiers had been fighting in the Ohio valley since 1754, where a young George Washington was defeated in the first clashes. Meanwhile the alliances of Europe were reshuffled: in January 1756 Britain agreed the Convention of Westminster with Prussia, and in May France signed the First Treaty of Versailles with Austria. Britain's formal declaration of war on France in May 1756 turned the undeclared colonial conflict into a European and then global war.",
+        "lonlat": [
+          -0.13,
+          51.5
+        ],
+        "kind": "political"
+      },
+      {
+        "date": "1756-06-20",
+        "year": 1756,
+        "label": "20 Jun 1756",
+        "text": "Siraj ud-Daulah, Nawab of Bengal, captures British Calcutta",
+        "detail": "The new Nawab of Bengal, Siraj ud-Daulah, objected to the East India Company fortifying Calcutta without his permission. His forces occupied the town and the garrison of Fort William surrendered on 20 June. Many British prisoners died overnight in a cramped cell remembered as the 'Black Hole of Calcutta', though the numbers given at the time are disputed. The Company sent Robert Clive from Madras to recover the town.",
+        "lonlat": [
+          88.36,
+          22.57
+        ],
+        "kind": "invasion"
+      },
+      {
+        "date": "1756-06-28",
+        "year": 1756,
+        "label": "28 Jun 1756",
+        "text": "Minorca falls to France",
+        "detail": "A French expedition landed on the British-held Mediterranean island of Minorca and besieged Fort St Philip at Port Mahon. A British fleet under Admiral John Byng failed to relieve it, and the garrison surrendered on 28 June. The loss caused outrage in Britain; Byng was court-martialled and shot. It was an early sign that Britain's navy was not yet ready for the war.",
+        "lonlat": [
+          4.27,
+          39.89
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1756-08-29",
+        "year": 1756,
+        "label": "29 Aug 1756",
+        "text": "Prussia invades Saxony",
+        "detail": "Frederick II of Prussia believed Austria, Russia and France were preparing to attack him and decided to strike first. On 29 August his army invaded Austria's ally Saxony, aiming to use it as a base and to seize its resources. The Saxon army was trapped in its camp at Pirna. To much of Europe the invasion made Prussia the aggressor, and it brought Austria, France, Russia and the Holy Roman Empire into the war against him.",
+        "lonlat": [
+          13.74,
+          51.05
+        ],
+        "kind": "invasion"
+      },
+      {
+        "date": "1756-10-01",
+        "year": 1756,
+        "label": "1 Oct 1756",
+        "text": "Battle of Lobositz: Frederick turns back an Austrian relief army",
+        "detail": "An Austrian army marched from Bohemia to rescue the Saxons trapped at Pirna. Frederick met it at Lobositz (Lovosice) on the Elbe on 1 October and forced it to withdraw after a hard fight. Cut off from help, the starving Saxon army surrendered in October, and Frederick forced many of its soldiers into Prussian service. Saxony would be occupied and taxed by Prussia for the rest of the war.",
+        "lonlat": [
+          14.05,
+          50.52
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1757-05-06",
+        "year": 1757,
+        "label": "6 May 1757",
+        "text": "Battle of Prague: costly Prussian victory in Bohemia",
+        "detail": "In spring 1757 Frederick invaded Bohemia and attacked the Austrian army outside Prague on 6 May. The Prussians won, but at heavy cost, and the Austrians retreated inside the city, which Frederick besieged. A relieving Austrian army then defeated him at Kolín later that year, forcing him to lift the siege and leave Bohemia. Meanwhile French and Russian armies were advancing towards Prussia from the west and east.",
+        "lonlat": [
+          14.42,
+          50.09
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1757-06-23",
+        "year": 1757,
+        "label": "23 Jun 1757",
+        "text": "Battle of Plassey: Clive defeats Siraj ud-Daulah",
+        "detail": "After retaking Calcutta in January and capturing the French post of Chandernagore in March, Robert Clive marched on the Nawab with about 3,100 men. At Plassey (Palashi) the Nawab's much larger army, supported by a small French artillery unit, was defeated after his commander Mir Jafar, who had secretly conspired with the British, held back his troops. Mir Jafar was made Nawab as a British client, and the Company gained de facto control of Bengal's revenues.",
+        "lonlat": [
+          88.25,
+          23.8
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1757-11-05",
+        "year": 1757,
+        "label": "5 Nov 1757",
+        "text": "Battle of Rossbach: Frederick routs a Franco-Imperial army",
+        "detail": "A French army joined by troops of the Holy Roman Empire's Reichsarmee advanced into Saxony. At Rossbach Frederick, with a much smaller force, caught them on the march with a rapid cavalry charge and swift infantry fire, and the allied army collapsed. The victory made Frederick a hero in Protestant Britain and ended French attempts to strike directly at Prussia from the west.",
+        "lonlat": [
+          11.9,
+          51.27
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1757-12-05",
+        "year": 1757,
+        "label": "5 Dec 1757",
+        "text": "Battle of Leuthen: Frederick recovers Silesia",
+        "detail": "While Frederick was in Saxony, the Austrians had overrun most of Silesia and taken Breslau. A month after Rossbach he marched east and attacked a far larger Austrian army at Leuthen, west of Breslau, using the 'oblique order' to fall on its flank. The Austrians were heavily defeated and Breslau soon surrendered. Leuthen is often counted Frederick's greatest victory, and it saved his hold on Silesia.",
+        "lonlat": [
+          16.75,
+          51.1
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1758-07-26",
+        "year": 1758,
+        "label": "26 Jul 1758",
+        "text": "Louisbourg surrenders to the British",
+        "detail": "Under William Pitt, Britain poured troops and ships into North America. An expedition under Jeffery Amherst, with James Wolfe as a brigadier and Admiral Boscawen's fleet, besieged the French fortress of Louisbourg on Cape Breton Island from 8 June. Governor Drucour surrendered on 26 July. Its fall opened the St Lawrence River to British fleets and provided the base for the attack on Quebec the next year. Fort Duquesne in the Ohio valley also fell in 1758.",
+        "lonlat": [
+          -59.99,
+          45.92
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1758-08-25",
+        "year": 1758,
+        "label": "25 Aug 1758",
+        "text": "Battle of Zorndorf: bloody clash of Prussians and Russians",
+        "detail": "A Russian army had overrun East Prussia and advanced to the Oder, besieging Küstrin. Frederick attacked it at Zorndorf, northeast of Berlin, on 25 August. The battle was one of the bloodiest of the century, with both armies suffering very heavy losses, and neither was destroyed; the Russians withdrew afterwards. Frederick had stopped the immediate threat to Brandenburg, but his army was being worn down.",
+        "lonlat": [
+          14.67,
+          52.6
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1759-08-01",
+        "year": 1759,
+        "label": "1 Aug 1759",
+        "text": "Battle of Minden: allied army saves Hanover",
+        "detail": "A French army advancing on Hanover met the allied army of British, Hanoverian and other German troops under Ferdinand of Brunswick before Minden on the Weser. Six British and two Hanoverian infantry regiments repulsed repeated attacks by French cavalry, and the allies drove the French from the field. Minden ended French plans against Hanover for 1759 and was counted in Britain's 'year of victories'.",
+        "lonlat": [
+          8.92,
+          52.29
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1759-08-12",
+        "year": 1759,
+        "label": "12 Aug 1759",
+        "text": "Battle of Kunersdorf: Russians and Austrians crush Frederick",
+        "detail": "A combined Russian and Austrian army took position at Kunersdorf, near Frankfurt an der Oder. Frederick attacked on 12 August but his army was shattered, losing a large share of its men, and he briefly despaired of the war. The allies failed to follow up and march on Berlin, and Prussia survived, but with ever-thinner resources. Kunersdorf was Frederick's heaviest defeat of the war.",
+        "lonlat": [
+          14.6,
+          52.35
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1759-09-13",
+        "year": 1759,
+        "label": "13 Sep 1759",
+        "text": "Battle of the Plains of Abraham: the British take Quebec",
+        "detail": "After a summer besieging Quebec, General James Wolfe's troops climbed the cliffs above the St Lawrence at night and formed up on the Plains of Abraham outside the city. The Marquis de Montcalm attacked and was defeated in a short battle; both commanders were mortally wounded. Quebec surrendered days later. Montreal, the last French stronghold, capitulated in 1760, completing Britain's conquest of Canada.",
+        "lonlat": [
+          -71.22,
+          46.8
+        ],
+        "kind": "turning-point"
+      },
+      {
+        "date": "1759-11-20",
+        "year": 1759,
+        "label": "20 Nov 1759",
+        "text": "Battle of Quiberon Bay: Britain destroys a French fleet",
+        "detail": "France had gathered troops and transports to invade Britain. When its Brest fleet put to sea, Admiral Edward Hawke chased it into Quiberon Bay off Brittany in a November gale, among dangerous shoals, and destroyed or scattered it. The invasion plan was abandoned. With Quiberon Bay, Britain controlled the seas for the rest of the war, cutting France off from its colonies in Canada, the Caribbean and India.",
+        "lonlat": [
+          -2.95,
+          47.45
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1760-01-22",
+        "year": 1760,
+        "label": "22 Jan 1760",
+        "text": "Battle of Wandiwash: British defeat the French in southern India",
+        "detail": "In the Carnatic, on India's southeast coast, the French under the Comte de Lally had besieged British Madras without success. At Wandiwash (Vandavasi) a Company army under Sir Eyre Coote decisively defeated Lally. The British then captured French posts across the region and confined the French to their main settlement of Pondicherry. The battle ended France's chances of building an empire in India.",
+        "lonlat": [
+          79.6,
+          12.5
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1761-01",
+        "year": 1761,
+        "label": "Jan 1761",
+        "text": "Pondicherry surrenders to the British",
+        "detail": "After Wandiwash, British forces blockaded Pondicherry by land and sea. The French garrison held out for months before surrendering in January 1761, and the British razed its fortifications. Although the Treaty of Paris returned Pondicherry and other trading posts to France, they had to stay unfortified, leaving Britain the dominant European power in India. The French commander, the Comte de Lally, was later tried in France and executed, blamed for the loss of French India.",
+        "lonlat": [
+          79.81,
+          11.93
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1762-01-05",
+        "year": 1762,
+        "label": "5 Jan 1762",
+        "text": "Empress Elizabeth of Russia dies",
+        "detail": "By late 1761 Prussia was close to collapse. Then Empress Elizabeth, a determined enemy of Frederick, died on 5 January 1762. Her successor, Peter III, admired Frederick and moved at once to end Russia's war with him. The sudden change saved Prussia from likely defeat. Peter III soon made peace and even briefly sent Russian troops to help Prussia. Without Russian armies, Austria could no longer hope to recover Silesia, and Sweden also withdrew from the war.",
+        "lonlat": [
+          30.32,
+          59.94
+        ],
+        "kind": "turning-point"
+      },
+      {
+        "date": "1762-05-05",
+        "year": 1762,
+        "label": "5 May 1762",
+        "text": "Treaty of St Petersburg: Russia makes peace with Prussia",
+        "detail": "Russia and Prussia concluded peace on 5 May. Russia agreed to return all the lands its troops had occupied, including East Prussia, and to help arrange peace between Prussia and Sweden, which also left the war that spring. Peter III was soon overthrown by his wife, Catherine II, who kept the peace but did not rejoin the war. Frederick could now concentrate on Austria.",
+        "lonlat": [
+          30.32,
+          59.94
+        ],
+        "kind": "treaty"
+      },
+      {
+        "date": "1762-08-13",
+        "year": 1762,
+        "label": "13 Aug 1762",
+        "text": "Havana surrenders to a British expedition",
+        "detail": "Spain joined France in 1762 under the Family Compact, and Britain declared war on it in January. A large British force under the Earl of Albemarle and Admiral George Pocock besieged Havana, Cuba, from 6 June; after the Morro fortress fell, the city surrendered on 13 August. In October another British force took Manila in the Philippines. Spain's invasion of Britain's ally Portugal that year failed.",
+        "lonlat": [
+          -82.36,
+          23.14
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1762-10-29",
+        "year": 1762,
+        "label": "29 Oct 1762",
+        "text": "Battle of Freiberg: last major battle in Germany",
+        "detail": "With Russia and Sweden out of the war, Prussia recovered ground against Austria in Silesia and Saxony. On 29 October a Prussian army under Frederick's brother, Prince Henry, defeated Austrian and Reichsarmee troops at Freiberg in Saxony. It was the last major battle of the war in Europe. Exhausted and unable to win, Austria and Prussia opened peace talks soon after.",
+        "lonlat": [
+          13.34,
+          50.91
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1763-02-10",
+        "year": 1763,
+        "label": "10 Feb 1763",
+        "text": "Treaty of Paris: Britain gains Canada, Florida and Indian supremacy",
+        "detail": "Britain, France and Spain signed peace in Paris, with Portugal agreeing the same day. France ceded Canada and its lands east of the Mississippi to Britain; it had already given Louisiana west of the river to Spain. Spain ceded Florida to Britain and recovered Havana and Manila. France kept fishing rights off Newfoundland, regained Guadeloupe and Martinique, and recovered its Indian trading posts but not their fortifications.",
+        "lonlat": [
+          2.35,
+          48.86
+        ],
+        "kind": "treaty"
+      },
+      {
+        "date": "1763-02-15",
+        "year": 1763,
+        "label": "15 Feb 1763",
+        "text": "Treaty of Hubertusburg ends the war in Germany",
+        "detail": "Five days later Austria, Prussia and Saxony signed peace at the Hubertusburg hunting lodge between Dresden and Leipzig. It restored the prewar borders of 1748: Silesia and Glatz stayed Prussian and Saxony was returned to its elector. Prussia agreed to support Archduke Joseph's election as future emperor. Prussia had survived as a great power, at enormous human and economic cost.",
+        "lonlat": [
+          12.92,
+          51.3
+        ],
+        "kind": "treaty"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Seven Years' War (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Seven_Years%27_War"
+      },
+      {
+        "title": "Office of the Historian: French and Indian War / Seven Years' War, 1754–63",
+        "url": "https://history.state.gov/milestones/1750-1775/french-indian-war"
+      },
+      {
+        "title": "Battle of Plassey (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Battle_of_Plassey"
+      },
+      {
+        "title": "Siege of Louisbourg (1758) (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Siege_of_Louisbourg_(1758)"
+      },
+      {
+        "title": "Battle of Minden (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Battle_of_Minden"
+      },
+      {
+        "title": "Battle of Wandiwash (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Battle_of_Wandiwash"
+      },
+      {
+        "title": "Siege of Havana (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Siege_of_Havana"
+      },
+      {
+        "title": "Treaty of Paris (1763) (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Treaty_of_Paris_(1763)"
+      }
+    ]
+  },
+  {
+    "id": "american-revolutionary-war",
+    "name": "American Revolutionary War",
+    "moment": "american-revolution",
+    "span": [
+      1775,
+      1783
+    ],
+    "dateLabel": "19 April 1775 – 3 September 1783",
+    "summary": "After the Seven Years' War, Britain's attempts to tax its Thirteen Colonies and tighten control met growing resistance, and in April 1775 fighting broke out at Lexington and Concord in Massachusetts. The Continental Congress appointed George Washington to command, and on 4 July 1776 it declared independence. Britain took New York and Philadelphia but could not destroy Washington's army, and in 1777 a British army surrendered at Saratoga. The victory helped bring France into the war in 1778, followed by Spain in 1779 and, from 1780, war between Britain and the Dutch Republic, turning a colonial rebellion into a wider war fought from the Caribbean to Gibraltar. British forces then turned south, taking Savannah and Charleston, until Charles Cornwallis was trapped at Yorktown in 1781 by American and French armies and a French fleet. His surrender led Britain to seek peace, and the Treaty of Paris of 1783 recognised the independence of the United States.",
+    "casualties": "An estimated 25,000 American soldiers died (about 6,800 in battle and some 17,000 from disease), and British military deaths are estimated at about 43,600, besides some 7,800 German auxiliaries and 7,000 Loyalists.",
+    "sides": [
+      {
+        "name": "United States and allies",
+        "members": [
+          {
+            "clio": "United States of America",
+            "from": 1776,
+            "to": 1783
+          },
+          {
+            "clio": "(Kingdom of France)",
+            "from": 1778,
+            "to": 1783
+          },
+          {
+            "clio": "(Spanish Empire)",
+            "from": 1779,
+            "to": 1783
+          },
+          {
+            "clio": "(Dutch Republic)",
+            "from": 1780,
+            "to": 1783
+          }
+        ]
+      },
+      {
+        "name": "Great Britain",
+        "members": [
+          {
+            "clio": "(British Empire)",
+            "from": 1775,
+            "to": 1783
+          },
+          {
+            "clio": "Electorate of Hanover",
+            "from": 1775,
+            "to": 1783
+          }
+        ]
+      }
+    ],
+    "events": [
+      {
+        "date": "1775-04-19",
+        "year": 1775,
+        "label": "19 Apr 1775",
+        "text": "Lexington and Concord: the first shots of the war",
+        "detail": "British troops marched from Boston to seize militia weapons stored at Concord. At Lexington they met a small company of colonial militia, and shots were fired; at Concord the troops were driven back, and on their return to Boston thousands of militiamen fired on them from cover along the road. The clashes turned political protest into armed rebellion, and militia from across New England soon surrounded British-held Boston.",
+        "lonlat": [
+          -71.23,
+          42.45
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1775-06-17",
+        "year": 1775,
+        "label": "17 Jun 1775",
+        "text": "Battle of Bunker Hill: costly British victory at Boston",
+        "detail": "During the siege of Boston, colonial forces fortified heights on the Charlestown peninsula overlooking the town. British troops made frontal assaults and took the position on the third attempt, after the defenders ran short of ammunition, but suffered heavy casualties. The battle showed that colonial militia could stand against British regulars. That month Congress had appointed George Washington commander of the new Continental Army.",
+        "lonlat": [
+          -71.06,
+          42.38
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1775-12-31",
+        "year": 1775,
+        "label": "31 Dec 1775",
+        "text": "American assault on Quebec fails",
+        "detail": "Hoping to bring Canada into the rebellion, American forces invaded in 1775 and took Montreal. On the last night of the year, in a snowstorm, Richard Montgomery and Benedict Arnold attacked the walled city of Quebec. Montgomery was killed, Arnold wounded and hundreds of Americans captured. The failure ended hopes of adding Canada to the revolt, and American forces withdrew in 1776.",
+        "lonlat": [
+          -71.21,
+          46.81
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1776-03-17",
+        "year": 1776,
+        "label": "17 Mar 1776",
+        "text": "British forces evacuate Boston",
+        "detail": "Over the winter, cannon captured at Fort Ticonderoga were hauled overland to Boston, and in March Washington placed them on Dorchester Heights, commanding the town and harbour. Unable to hold Boston, the British commander William Howe evacuated his army by sea to Halifax on 17 March. It was an early American success, though Howe would return in force that summer to attack New York.",
+        "lonlat": [
+          -71.06,
+          42.36
+        ],
+        "kind": "other"
+      },
+      {
+        "date": "1776-07-04",
+        "year": 1776,
+        "label": "4 Jul 1776",
+        "text": "Congress adopts the Declaration of Independence",
+        "detail": "On 2 July the Second Continental Congress in Philadelphia voted for independence, and on 4 July it adopted the Declaration of Independence, drafted chiefly by Thomas Jefferson. It listed grievances against King George III and declared the colonies to be free and independent states. The war became a fight for a new nation rather than for colonists' rights within the British Empire.",
+        "lonlat": [
+          -75.15,
+          39.95
+        ],
+        "kind": "political"
+      },
+      {
+        "date": "1776-08-27",
+        "year": 1776,
+        "label": "27 Aug 1776",
+        "text": "Battle of Long Island: Howe defeats Washington",
+        "detail": "Howe landed a large army on Long Island and outflanked Washington's defences on 27 August, inflicting a heavy defeat. Washington evacuated his army across the East River to Manhattan by night, but over the following weeks the British drove him out of New York, which they took and held for the rest of the war. The Continental Army retreated across New Jersey, shrinking as enlistments expired.",
+        "lonlat": [
+          -73.95,
+          40.65
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1776-12-26",
+        "year": 1776,
+        "label": "26 Dec 1776",
+        "text": "Battle of Trenton: Washington crosses the Delaware",
+        "detail": "With his army dwindling, Washington crossed the icy Delaware River on Christmas night and at daybreak on 26 December surprised the Hessian garrison at Trenton, capturing most of it. A week later, on 3 January 1777, he won again at Princeton. The small victories revived the Patriot cause, encouraged soldiers to re-enlist and forced the British to pull back from much of New Jersey.",
+        "lonlat": [
+          -74.76,
+          40.22
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1777-09-11",
+        "year": 1777,
+        "label": "11 Sep 1777",
+        "text": "Battle of Brandywine opens the road to Philadelphia",
+        "detail": "In 1777 Howe sailed his army to Chesapeake Bay to attack the rebel capital, Philadelphia. At Brandywine Creek on 11 September he outflanked and defeated Washington, and British troops occupied Philadelphia on 26 September; Congress had already fled. Washington's army survived a defeat at Germantown and wintered at Valley Forge, while Howe's move left no support for a British army advancing from Canada.",
+        "lonlat": [
+          -75.59,
+          39.87
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1777-10-17",
+        "year": 1777,
+        "label": "17 Oct 1777",
+        "text": "Burgoyne surrenders his army at Saratoga",
+        "detail": "General John Burgoyne led a British army south from Canada along Lake Champlain to cut New England off from the other colonies. American forces under Horatio Gates, with Benedict Arnold, blocked him near Saratoga in two battles in September and October. Surrounded and short of supplies, Burgoyne surrendered his whole army on 17 October. The victory persuaded France that the rebellion could succeed.",
+        "lonlat": [
+          -73.64,
+          43.0
+        ],
+        "kind": "turning-point"
+      },
+      {
+        "date": "1778-02-06",
+        "year": 1778,
+        "label": "6 Feb 1778",
+        "text": "France signs treaties of commerce and alliance with the United States",
+        "detail": "Benjamin Franklin and his fellow commissioners in Paris concluded a Treaty of Amity and Commerce and a Treaty of Alliance with France on 6 February 1778. France recognised American independence and entered the war against Britain, sending money, troops and, above all, a navy. Britain now had to defend its Caribbean islands, India and the home waters as well as fighting in America.",
+        "lonlat": [
+          2.35,
+          48.86
+        ],
+        "kind": "treaty"
+      },
+      {
+        "date": "1778-06-28",
+        "year": 1778,
+        "label": "28 Jun 1778",
+        "text": "Battle of Monmouth: the Continental Army holds its own",
+        "detail": "Facing a French fleet, the British abandoned Philadelphia and marched back to New York. Washington's army, retrained over the winter at Valley Forge, caught the rearguard at Monmouth Court House in New Jersey on 28 June. The hard-fought battle was inconclusive and the British reached New York, but the Continental Army showed it could now meet British regulars in open battle.",
+        "lonlat": [
+          -74.32,
+          40.26
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1778-12-29",
+        "year": 1778,
+        "label": "29 Dec 1778",
+        "text": "British capture Savannah and turn the war south",
+        "detail": "Stalemated in the north, Britain adopted a 'southern strategy', counting on Loyalist support in Georgia and the Carolinas. A seaborne expedition captured Savannah, Georgia, on 29 December 1778. A Franco-American attempt to retake the city in 1779 failed. From here British forces would push into South Carolina, but the war in the south became a brutal civil conflict between Patriots and Loyalists.",
+        "lonlat": [
+          -81.09,
+          32.08
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1779-06-24",
+        "year": 1779,
+        "label": "24 Jun 1779",
+        "text": "Spain joins the war and besieges Gibraltar",
+        "detail": "Spain allied with France by the Treaty of Aranjuez in 1779, hoping to recover Gibraltar and Minorca from Britain, though it did not ally formally with the United States. On 24 June Spanish and later French forces began the Great Siege of Gibraltar, which lasted more than three and a half years. Spanish forces also campaigned against the British along the Gulf of Mexico and the Mississippi.",
+        "lonlat": [
+          -5.35,
+          36.14
+        ],
+        "kind": "invasion"
+      },
+      {
+        "date": "1780-05",
+        "year": 1780,
+        "label": "May 1780",
+        "text": "Charleston surrenders: Britain's greatest victory of the war",
+        "detail": "A British army under Henry Clinton besieged Charleston, South Carolina, in spring 1780. In May the American commander Benjamin Lincoln surrendered the city and an army of several thousand men, the largest American loss of the war. Clinton returned to New York, leaving Charles Cornwallis to conquer the Carolinas. The fall of Charleston left South Carolina open to British occupation, and Loyalist and Patriot militias fought a bitter guerrilla war across the backcountry.",
+        "lonlat": [
+          -79.93,
+          32.78
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1780-08-16",
+        "year": 1780,
+        "label": "16 Aug 1780",
+        "text": "Battle of Camden: Cornwallis routs Gates",
+        "detail": "Horatio Gates, the victor of Saratoga, led a new southern army into South Carolina. At Camden on 16 August Cornwallis attacked and routed it; the militia fled and Gates retreated far to the north. For a time British control of South Carolina seemed secure. But Patriot militia defeated a Loyalist force at Kings Mountain in October, and the new commander Nathanael Greene rebuilt the southern army.",
+        "lonlat": [
+          -80.6,
+          34.25
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1780-12",
+        "year": 1780,
+        "label": "Dec 1780",
+        "text": "Britain declares war on the Dutch Republic",
+        "detail": "Dutch merchants had traded with the Americans and supplied France, and the Republic was about to join Russia's League of Armed Neutrality. In December 1780 Britain declared war, beginning the Fourth Anglo-Dutch War. The Royal Navy seized Dutch ships and colonies, but the war added one more naval opponent to Britain's list as it fought France and Spain around the world.",
+        "lonlat": [
+          4.31,
+          52.08
+        ],
+        "kind": "political"
+      },
+      {
+        "date": "1781-01-17",
+        "year": 1781,
+        "label": "17 Jan 1781",
+        "text": "Battle of Cowpens: Morgan defeats Tarleton",
+        "detail": "Nathanael Greene divided his army, sending Daniel Morgan into western South Carolina. At the Cowpens on 17 January Morgan placed militia in front of his Continentals, and when Banastre Tarleton's British force advanced it was drawn in and enveloped. Most of Tarleton's men were killed or captured. The defeat cost Cornwallis much of his light infantry and drew him into a long chase after Greene.",
+        "lonlat": [
+          -81.81,
+          35.14
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1781-03-15",
+        "year": 1781,
+        "label": "15 Mar 1781",
+        "text": "Battle of Guilford Court House: a costly British victory",
+        "detail": "Cornwallis caught up with Greene at Guilford Court House in North Carolina on 15 March. The British held the field, but lost about a quarter of their force, and Greene withdrew his army intact. Too weak to hold the Carolinas, Cornwallis marched north into Virginia, hoping to cut off supplies to the south, while Greene recovered most of South Carolina and Georgia.",
+        "lonlat": [
+          -79.84,
+          36.13
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1781-09-05",
+        "year": 1781,
+        "label": "5 Sep 1781",
+        "text": "Battle of the Chesapeake: French fleet cuts off Cornwallis",
+        "detail": "Cornwallis fortified Yorktown on Chesapeake Bay, expecting supply and rescue by sea. A French fleet under the Comte de Grasse arrived from the Caribbean, and on 5 September off the Virginia Capes it fought a British fleet under Thomas Graves, which then returned to New York. With the French controlling the bay, Cornwallis was trapped as Washington and Rochambeau marched south with their armies.",
+        "lonlat": [
+          -75.7,
+          36.95
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1781-10-19",
+        "year": 1781,
+        "label": "19 Oct 1781",
+        "text": "Cornwallis surrenders at Yorktown",
+        "detail": "From 28 September an American army under Washington and a French army under Rochambeau besieged Yorktown, digging trenches ever closer and bombarding the town. With no help coming by sea, Cornwallis surrendered on 19 October; more than 7,000 British soldiers were taken prisoner. It was the last major land battle of the war in America, and it broke Britain's will to continue the fight for the colonies.",
+        "lonlat": [
+          -76.51,
+          37.24
+        ],
+        "kind": "turning-point"
+      },
+      {
+        "date": "1782-03-20",
+        "year": 1782,
+        "label": "20 Mar 1782",
+        "text": "Lord North's government resigns",
+        "detail": "News of Yorktown shook Parliament. In March 1782 the House of Commons passed a motion against continuing offensive war in America, and on 20 March the Prime Minister, Lord North, who had led the government through the war, resigned. The new ministry opened peace negotiations with the American commissioners in Paris while still fighting France and Spain. King George III, who had wanted to fight on, accepted that the war in America was lost.",
+        "lonlat": [
+          -0.13,
+          51.5
+        ],
+        "kind": "political"
+      },
+      {
+        "date": "1782-04-12",
+        "year": 1782,
+        "label": "12 Apr 1782",
+        "text": "Battle of the Saintes: Rodney defeats de Grasse",
+        "detail": "France and Spain planned to invade Britain's colony of Jamaica. In fighting from 9 to 12 April near the Îles des Saintes, between Guadeloupe and Dominica, a British fleet under Admiral George Rodney broke the French line, captured four ships of the line and took de Grasse prisoner. The invasion was abandoned, and the victory strengthened Britain's hand in the peace talks.",
+        "lonlat": [
+          -61.6,
+          15.85
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1782-09-13",
+        "year": 1782,
+        "label": "13 Sep 1782",
+        "text": "Grand assault on Gibraltar fails",
+        "detail": "After three years of siege, France and Spain launched a great attack on Gibraltar on 13 September 1782, using specially built floating batteries. The British garrison, which included Hanoverian troops, set them ablaze with red-hot shot, and the assault ended in a costly failure. Gibraltar stayed British, and the siege was lifted in February 1783. A British fleet under Lord Howe resupplied the Rock in October 1782.",
+        "lonlat": [
+          -5.35,
+          36.14
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1782-11-30",
+        "year": 1782,
+        "label": "30 Nov 1782",
+        "text": "Preliminary peace articles signed in Paris",
+        "detail": "Benjamin Franklin, John Adams and John Jay negotiated directly with Britain and signed preliminary articles on 30 November 1782. Britain accepted American independence and boundaries, and the articles dealt with fishing rights off Newfoundland, prewar debts, Loyalist property and the evacuation of British forces. France signed its own preliminary articles with Britain in January 1783. The Americans negotiated separately from France, despite their alliance, securing generous terms.",
+        "lonlat": [
+          2.35,
+          48.86
+        ],
+        "kind": "treaty"
+      },
+      {
+        "date": "1783-09-03",
+        "year": 1783,
+        "label": "3 Sep 1783",
+        "text": "Treaty of Paris recognises the United States",
+        "detail": "The formal peace between Britain and the United States was signed in Paris on 3 September 1783, alongside Britain's treaties with France and Spain. Britain recognised the independence of the United States, whose territory reached west to the Mississippi. Spain recovered Florida and Minorca, while Britain kept Gibraltar. British troops left New York that November. Ratifications were exchanged in 1784, completing the peace.",
+        "lonlat": [
+          2.35,
+          48.86
+        ],
+        "kind": "treaty"
+      }
+    ],
+    "sources": [
+      {
+        "title": "American Revolutionary War (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/American_Revolutionary_War"
+      },
+      {
+        "title": "Office of the Historian: Treaty of Paris, 1783",
+        "url": "https://history.state.gov/milestones/1776-1783/treaty"
+      },
+      {
+        "title": "Siege of Yorktown (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Siege_of_Yorktown"
+      },
+      {
+        "title": "Great Siege of Gibraltar (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Great_Siege_of_Gibraltar"
+      },
+      {
+        "title": "Battle of the Saintes (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Battle_of_the_Saintes"
+      }
+    ]
+  },
+  {
+    "id": "napoleonic-wars",
+    "name": "Napoleonic Wars",
+    "moment": "napoleonic-wars-waterloo",
+    "span": [
+      1803,
+      1815
+    ],
+    "dateLabel": "18 May 1803 – 20 November 1815",
+    "summary": "The brief Peace of Amiens collapsed when Britain declared war on France in May 1803. Napoleon Bonaparte, crowned emperor in 1804, then fought a series of coalitions of European powers. Britain's navy won at Trafalgar in 1805, but on land Napoleon defeated Austria and Russia at Austerlitz in 1805, Prussia at Jena in 1806 and Russia at Friedland in 1807, and made allies or satellites of much of Europe, from Spain to the Duchy of Warsaw. His attempt to impose his brother on Spain from 1808 began a long, draining war in the Iberian Peninsula, and in 1812 his invasion of Russia ended in a disastrous winter retreat. Prussia, Austria and Sweden then joined Russia and Britain, defeated him at Leipzig in 1813 and took Paris in 1814, forcing his abdication and exile to Elba. He returned in 1815 for the Hundred Days but was defeated at Waterloo, and was exiled to Saint Helena. The Congress of Vienna redrew Europe's map.",
+    "casualties": "An estimated 1.8 million or more soldiers died on all sides, over 1 million of them French or French-allied, and civilian deaths, notably in Spain and Russia, added many hundreds of thousands more.",
+    "sides": [
+      {
+        "name": "French Empire and allies",
+        "members": [
+          {
+            "clio": "(French Consulate)",
+            "from": 1803,
+            "to": 1804
+          },
+          {
+            "clio": "(First French Empire)",
+            "from": 1805,
+            "to": 1814
+          },
+          {
+            "clio": "(Bourbon Kingdom of France)",
+            "from": 1815,
+            "to": 1815
+          },
+          {
+            "clio": "(Batavian Republic)",
+            "from": 1803,
+            "to": 1810
+          },
+          {
+            "clio": "Italian Republic",
+            "from": 1803,
+            "to": 1813
+          },
+          {
+            "clio": "Duchy of Bavaria",
+            "from": 1805,
+            "to": 1805
+          },
+          {
+            "clio": "(Spanish Empire)",
+            "from": 1805,
+            "to": 1807
+          },
+          {
+            "clio": "Kingdom of Bavaria",
+            "from": 1806,
+            "to": 1813
+          },
+          {
+            "clio": "Kingdom of Württemberg",
+            "from": 1806,
+            "to": 1813
+          },
+          {
+            "clio": "Grand Duchy of Baden",
+            "from": 1806,
+            "to": 1813
+          },
+          {
+            "clio": "Kingdom of Naples (Napoleonic)",
+            "from": 1806,
+            "to": 1813
+          },
+          {
+            "clio": "Kingdom of Saxony",
+            "from": 1807,
+            "to": 1813
+          },
+          {
+            "clio": "Denmark-Norway",
+            "from": 1807,
+            "to": 1814
+          },
+          {
+            "clio": "Kingdom of Westphalia",
+            "from": 1809,
+            "to": 1813
+          },
+          {
+            "clio": "Duchy of Warsaw",
+            "from": 1809,
+            "to": 1813
+          },
+          {
+            "clio": "Kingdom of Prussia",
+            "from": 1812,
+            "to": 1812
+          },
+          {
+            "clio": "Austrian Empire",
+            "from": 1812,
+            "to": 1812
+          }
+        ]
+      },
+      {
+        "name": "Coalition powers",
+        "members": [
+          {
+            "clio": "(British Empire)",
+            "from": 1803,
+            "to": 1815
+          },
+          {
+            "clio": "Russian Empire",
+            "from": 1805,
+            "to": 1807
+          },
+          {
+            "clio": "Russian Empire",
+            "from": 1812,
+            "to": 1815
+          },
+          {
+            "clio": "(Habsburg Monarchy)",
+            "from": 1805,
+            "to": 1805
+          },
+          {
+            "clio": "Austrian Empire",
+            "from": 1809,
+            "to": 1809
+          },
+          {
+            "clio": "Austrian Empire",
+            "from": 1813,
+            "to": 1815
+          },
+          {
+            "clio": "Swedish Empire",
+            "from": 1805,
+            "to": 1809
+          },
+          {
+            "clio": "Swedish Empire",
+            "from": 1813,
+            "to": 1814
+          },
+          {
+            "clio": "Kingdom of Prussia",
+            "from": 1806,
+            "to": 1807
+          },
+          {
+            "clio": "Kingdom of Prussia",
+            "from": 1813,
+            "to": 1815
+          },
+          {
+            "clio": "Kingdom of Saxony",
+            "from": 1806,
+            "to": 1806
+          },
+          {
+            "clio": "(Portuguese Empire)",
+            "from": 1807,
+            "to": 1815
+          },
+          {
+            "clio": "(Spanish Empire)",
+            "from": 1808,
+            "to": 1814
+          },
+          {
+            "clio": "(Netherlands)",
+            "from": 1815,
+            "to": 1815
+          }
+        ]
+      }
+    ],
+    "events": [
+      {
+        "date": "1803-05-18",
+        "year": 1803,
+        "label": "18 May 1803",
+        "text": "Britain declares war on France, ending the Peace of Amiens",
+        "detail": "The Peace of Amiens of 1802 had briefly ended the wars of the French Revolution. But Britain distrusted First Consul Napoleon Bonaparte's expansion in Italy, Switzerland and the Netherlands, and refused to give up Malta as the treaty required. On 18 May 1803 Britain declared war. Napoleon gathered an army on the Channel coast at Boulogne to invade England, while the Royal Navy blockaded French ports.",
+        "lonlat": [
+          -0.13,
+          51.5
+        ],
+        "kind": "political"
+      },
+      {
+        "date": "1804-12-02",
+        "year": 1804,
+        "label": "2 Dec 1804",
+        "text": "Napoleon is crowned Emperor of the French",
+        "detail": "Napoleon, ruler of France as First Consul since 1799, was proclaimed emperor in May 1804 and crowned at Notre-Dame Cathedral in Paris on 2 December, with Pope Pius VII present; he placed the crown on his own head. The new empire alarmed Europe's monarchies. In 1805 Britain, Austria, Russia and smaller powers, including Sweden and Naples, formed the Third Coalition against him.",
+        "lonlat": [
+          2.35,
+          48.85
+        ],
+        "kind": "political"
+      },
+      {
+        "date": "1805-10-20",
+        "year": 1805,
+        "label": "20 Oct 1805",
+        "text": "Austrian army surrenders at Ulm",
+        "detail": "Abandoning his invasion plan, Napoleon marched the Grande Armée from the Channel to the Danube at great speed. An Austrian army under Karl Mack had advanced into Bavaria, France's ally, ahead of the Russians; Napoleon swept around it and trapped it at Ulm, where Mack surrendered on 20 October with most of his army. The road to Vienna lay open, and French troops entered the city in November.",
+        "lonlat": [
+          9.99,
+          48.4
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1805-10-21",
+        "year": 1805,
+        "label": "21 Oct 1805",
+        "text": "Battle of Trafalgar: Nelson destroys the Franco-Spanish fleet",
+        "detail": "Off Cape Trafalgar in southern Spain, a British fleet under Admiral Horatio Nelson attacked a combined French and Spanish fleet under Admiral Villeneuve, cutting through its line in two columns. The allied fleet lost most of its ships, captured or destroyed, while no British ship was lost; Nelson was killed by a sniper during the battle. Trafalgar ended any French hope of invading Britain and confirmed British naval supremacy for the rest of the war.",
+        "lonlat": [
+          -6.04,
+          36.18
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1805-12-02",
+        "year": 1805,
+        "label": "2 Dec 1805",
+        "text": "Battle of Austerlitz: Napoleon defeats Austria and Russia",
+        "detail": "On the first anniversary of his coronation, Napoleon met the combined Russian and Austrian armies, with both emperors present, near Austerlitz in Moravia. He lured them into attacking his deliberately weakened right, then struck through their centre on the Pratzen Heights and split their army. The 'Battle of the Three Emperors' is often counted his greatest victory. Austria sued for peace and the Russians withdrew.",
+        "lonlat": [
+          16.76,
+          49.13
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1805-12-26",
+        "year": 1805,
+        "label": "26 Dec 1805",
+        "text": "Treaty of Pressburg: Austria makes peace",
+        "detail": "Signed at Pressburg (Bratislava), the treaty took Venetia from Austria and gave it to Napoleon's Kingdom of Italy, and transferred Tyrol and other lands to France's German allies Bavaria and Württemberg, whose rulers became kings. Austria paid a large indemnity. The Third Coalition collapsed, and Napoleon began reorganising Germany around client states. Napoleon's victories in 1805 left Austria humbled, while Prussia, which had stayed neutral, was isolated.",
+        "lonlat": [
+          17.11,
+          48.14
+        ],
+        "kind": "treaty"
+      },
+      {
+        "date": "1806-07",
+        "year": 1806,
+        "label": "Jul 1806",
+        "text": "Napoleon forms the Confederation of the Rhine",
+        "detail": "In July 1806 sixteen German states, including Bavaria, Württemberg and Baden, left the Holy Roman Empire and formed the Confederation of the Rhine under Napoleon's protection, promising him troops. Weeks later Francis II gave up the title of Holy Roman Emperor and dissolved the thousand-year-old Empire, ruling on as Emperor of Austria. Prussia, alarmed at French power in Germany, moved towards war.",
+        "lonlat": [
+          2.35,
+          48.86
+        ],
+        "kind": "political"
+      },
+      {
+        "date": "1806-10-14",
+        "year": 1806,
+        "label": "14 Oct 1806",
+        "text": "Battles of Jena and Auerstedt: Prussia is crushed",
+        "detail": "Prussia joined the Fourth Coalition and declared war in October 1806, before Russian help could arrive. On 14 October Napoleon defeated one Prussian army at Jena while Marshal Davout, though outnumbered, beat the main Prussian army at Auerstedt nearby. The Prussian state collapsed within weeks: fortresses surrendered, and the French entered Berlin later that month. King Frederick William III fled to East Prussia.",
+        "lonlat": [
+          11.59,
+          50.93
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1806-11-21",
+        "year": 1806,
+        "label": "21 Nov 1806",
+        "text": "Berlin Decree launches the Continental System",
+        "detail": "Unable to defeat Britain at sea, Napoleon tried to ruin its economy. His decree issued in Berlin on 21 November 1806 banned trade between Britain and France's allies and dependent states. Britain replied with its own blockade. Enforcing this 'Continental System' drew Napoleon into conflicts with Portugal, Spain and finally Russia, and widespread smuggling undermined it. Neutral shipping, including that of the United States, was caught between the rival British and French blockades.",
+        "lonlat": [
+          13.4,
+          52.52
+        ],
+        "kind": "political"
+      },
+      {
+        "date": "1807-06-14",
+        "year": 1807,
+        "label": "14 Jun 1807",
+        "text": "Battle of Friedland: Napoleon defeats the Russians",
+        "detail": "After a winter campaign in Poland and East Prussia, including the bloody but indecisive battle of Eylau, Napoleon caught the Russian army under Bennigsen with a river at its back at Friedland, in East Prussia, on 14 June. The Russians were heavily defeated and Tsar Alexander I asked for an armistice, leaving Prussia without its last ally. Friedland ended the war of the Fourth Coalition on the continent.",
+        "lonlat": [
+          21.01,
+          54.44
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1807-07-07",
+        "year": 1807,
+        "label": "7 Jul 1807",
+        "text": "Treaties of Tilsit: Napoleon and Alexander I divide Europe",
+        "detail": "Napoleon and Alexander I met on a raft on the Niemen River and agreed peace at Tilsit. Russia joined the Continental System against Britain. Prussia, in a separate treaty, lost about half its territory: its Polish lands became the Duchy of Warsaw and lands west of the Elbe went into the new Kingdom of Westphalia, ruled by Napoleon's brother Jérôme. Napoleon's power on the continent was at its height.",
+        "lonlat": [
+          21.88,
+          55.08
+        ],
+        "kind": "treaty"
+      },
+      {
+        "date": "1807-08",
+        "year": 1807,
+        "label": "Aug 1807",
+        "text": "Britain attacks Copenhagen and seizes the Danish fleet",
+        "detail": "Fearing that Napoleon would take over neutral Denmark's navy, Britain demanded its surrender. When Denmark refused, a British force besieged and bombarded Copenhagen from August 1807, causing heavy civilian losses, and carried off the Danish fleet. Denmark-Norway responded by allying with France, and stayed on Napoleon's side until 1814. The attack, against a neutral state, was controversial even in Britain, but it denied Napoleon a fleet he could have used against British trade and the Royal Navy.",
+        "lonlat": [
+          12.57,
+          55.68
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1807-11",
+        "year": 1807,
+        "label": "Nov 1807",
+        "text": "French troops occupy Lisbon",
+        "detail": "Portugal, Britain's old ally, refused to join the Continental System. A French army under Junot marched through Spain with Spanish agreement and occupied Lisbon in November 1807; the Portuguese royal family sailed for Brazil under British naval escort just before. French troops now stood in both Iberian kingdoms, a prelude to Napoleon's move against Spain itself. Brazil became the seat of the Portuguese monarchy for the rest of the war.",
+        "lonlat": [
+          -9.14,
+          38.72
+        ],
+        "kind": "invasion"
+      },
+      {
+        "date": "1808-05-02",
+        "year": 1808,
+        "label": "2 May 1808",
+        "text": "Dos de Mayo: Madrid rises against the French",
+        "detail": "Napoleon lured the Spanish king and his heir to Bayonne, forced them to give up the throne, and made his brother Joseph King of Spain. On 2 May the people of Madrid rose against French troops; the revolt was put down and many prisoners were shot the next day. Uprisings spread across Spain, local juntas declared war on France, and Spain changed sides to fight alongside Britain and Portugal.",
+        "lonlat": [
+          -3.7,
+          40.42
+        ],
+        "kind": "turning-point"
+      },
+      {
+        "date": "1808-07-19",
+        "year": 1808,
+        "label": "16–19 Jul 1808",
+        "text": "Battle of Bailén: a French army surrenders to Spain",
+        "detail": "In Andalusia, a Spanish army under Castaños trapped a French corps under General Dupont at Bailén. After fighting from 16 to 19 July Dupont negotiated a surrender, and about 17,000 French troops were captured. It was the first open-field defeat of a Napoleonic army. Joseph fled Madrid, encouraging resistance across Europe, and Napoleon came to Spain himself and retook Madrid by November.",
+        "lonlat": [
+          -3.77,
+          38.09
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1809-07-05",
+        "year": 1809,
+        "label": "5–6 Jul 1809",
+        "text": "Battle of Wagram: Napoleon defeats Austria again",
+        "detail": "Encouraged by French difficulties in Spain, Austria formed the Fifth Coalition with Britain in April 1809. Napoleon took Vienna but was checked at Aspern-Essling in May. In July he crossed the Danube and, in a huge two-day battle at Wagram on 5–6 July, defeated Archduke Charles's army. Austria agreed an armistice days later. It was one of the largest battles yet fought in Europe, and casualties on both sides were very heavy.",
+        "lonlat": [
+          16.57,
+          48.3
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1809-10-14",
+        "year": 1809,
+        "label": "14 Oct 1809",
+        "text": "Treaty of Schönbrunn imposes a harsh peace on Austria",
+        "detail": "Austria lost its Adriatic coast to France, Salzburg to Bavaria and Galician lands to the Duchy of Warsaw and Russia, and had to pay an indemnity and limit its army. In 1810 Napoleon married Emperor Francis's daughter Marie-Louise, binding Austria to France. Of the continental powers, only Russia remained independent of Napoleon, and its relations with him were souring. Britain fought on alone with Portugal and the Spanish resistance.",
+        "lonlat": [
+          16.31,
+          48.18
+        ],
+        "kind": "treaty"
+      },
+      {
+        "date": "1812-06-24",
+        "year": 1812,
+        "label": "24 Jun 1812",
+        "text": "The Grande Armée crosses the Niemen to invade Russia",
+        "detail": "Russia had left the Continental System and the two emperors were rivals over Poland. On 24 June Napoleon crossed the Niemen with more than 450,000 men, including contingents from his allies; Prussia and Austria, now forced into alliance with France, also sent corps. The Russian armies retreated rather than give battle, drawing the invaders deep into the country along failing supply lines.",
+        "lonlat": [
+          23.9,
+          54.9
+        ],
+        "kind": "invasion"
+      },
+      {
+        "date": "1812-09-07",
+        "year": 1812,
+        "label": "7 Sep 1812",
+        "text": "Battle of Borodino: bloodiest day of the campaign",
+        "detail": "About 110 km west of Moscow, the Russian army under Mikhail Kutuzov finally stood and fought at Borodino on 7 September. In a day of massed assaults on Russian earthworks, both sides lost tens of thousands of men. Napoleon held the field but failed to destroy the Russian army, which withdrew in order and abandoned Moscow. It is often described as the bloodiest single day of the Napoleonic Wars.",
+        "lonlat": [
+          35.82,
+          55.52
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1812-09-14",
+        "year": 1812,
+        "label": "14 Sep 1812",
+        "text": "Napoleon enters a deserted Moscow, which burns",
+        "detail": "On 14 September the French entered Moscow, which most inhabitants had left. Fires, set on the orders of governor Rostopchin according to many accounts, soon destroyed much of the city. Napoleon waited about five weeks for Alexander to offer peace, but no offer came. On 19 October, with winter approaching and supplies short, he began to retreat. After a defeat at Maloyaroslavets, he was forced back along the ravaged route by which he had come.",
+        "lonlat": [
+          37.62,
+          55.75
+        ],
+        "kind": "turning-point"
+      },
+      {
+        "date": "1812-11-26",
+        "year": 1812,
+        "label": "26–29 Nov 1812",
+        "text": "Crossing of the Berezina: the retreat from Moscow",
+        "detail": "Snow and frost, hunger and Cossack and peasant attacks destroyed the retreating army. At the Berezina River, with Russian armies closing in, French engineers built bridges in icy water, and between 26 and 29 November the remnants, about 49,000 troops plus many stragglers, escaped across at great cost. Of the more than 450,000 men who had invaded, only around 120,000 survived the campaign.",
+        "lonlat": [
+          28.36,
+          54.32
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1813-06-21",
+        "year": 1813,
+        "label": "21 Jun 1813",
+        "text": "Battle of Vitoria: Wellington breaks French rule in Spain",
+        "detail": "While Napoleon rebuilt his army in Germany, where Prussia had changed sides to join Russia, Wellington's British, Portuguese and Spanish army advanced across northern Spain. At Vitoria on 21 June it broke the French army of King Joseph and Marshal Jourdan, capturing its baggage and artillery. The French withdrew to the Pyrenees, and the defeat encouraged Austria to join the coalition that summer.",
+        "lonlat": [
+          -2.67,
+          42.85
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1813-10-16",
+        "year": 1813,
+        "label": "16–19 Oct 1813",
+        "text": "Battle of Leipzig, the 'Battle of the Nations'",
+        "detail": "Russian, Prussian, Austrian and Swedish armies converged on Napoleon at Leipzig in Saxony. Over four days some 560,000 soldiers fought, the largest battle of the Napoleonic Wars, with about 133,000 casualties. The Saxon and Württemberg troops changed sides during the battle. Napoleon was decisively defeated and retreated to France; the Confederation of the Rhine dissolved, and the allies invaded France in early 1814.",
+        "lonlat": [
+          12.37,
+          51.34
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1814-03-31",
+        "year": 1814,
+        "label": "31 Mar 1814",
+        "text": "Coalition armies enter Paris",
+        "detail": "Napoleon fought a skilful defensive campaign in eastern France in early 1814 and won several battles, but he could not stop the much larger allied armies. While he manoeuvred against their supply lines, the coalition marched on Paris, which capitulated after fighting on 30 March; the allied sovereigns entered the city on 31 March. On 2 April the French Senate declared Napoleon deposed.",
+        "lonlat": [
+          2.35,
+          48.86
+        ],
+        "kind": "turning-point"
+      },
+      {
+        "date": "1814-04-06",
+        "year": 1814,
+        "label": "6 Apr 1814",
+        "text": "Napoleon abdicates at Fontainebleau and is exiled to Elba",
+        "detail": "At Fontainebleau, with his marshals unwilling to fight on, Napoleon first offered to abdicate in favour of his son; the allies refused, and on 6 April he gave up the thrones of France and Italy unconditionally. The Treaty of Fontainebleau, signed on 11 April, gave him the island of Elba as a principality for life. The Bourbon king Louis XVIII returned to France, and the powers met at the Congress of Vienna.",
+        "lonlat": [
+          2.7,
+          48.4
+        ],
+        "kind": "political"
+      },
+      {
+        "date": "1815-03-01",
+        "year": 1815,
+        "label": "1 Mar 1815",
+        "text": "Napoleon escapes Elba and lands in France: the Hundred Days",
+        "detail": "Napoleon left Elba in February and landed in southern France on 1 March 1815 with a small force. Troops sent to stop him, including Marshal Ney, went over to him, and he reached Paris on 20 March as Louis XVIII fled. The powers at Vienna declared him an outlaw and Austria, Prussia, Russia and Britain each pledged 150,000 men to the Seventh Coalition.",
+        "lonlat": [
+          7.07,
+          43.57
+        ],
+        "kind": "political"
+      },
+      {
+        "date": "1815-06-18",
+        "year": 1815,
+        "label": "18 Jun 1815",
+        "text": "Battle of Waterloo: Napoleon's final defeat",
+        "detail": "Napoleon struck into the Netherlands before the allies could unite, beating the Prussians at Ligny on 16 June. Two days later, near Waterloo south of Brussels, his army attacked Wellington's British, Dutch-Belgian and German force of about 68,000 men, which held its ridge all day until Blücher's Prussians arrived on the French flank in the evening. The French army broke, losing nearly 40,000 men; allied losses were about 22,000.",
+        "lonlat": [
+          4.41,
+          50.68
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1815-06-22",
+        "year": 1815,
+        "label": "22 Jun 1815",
+        "text": "Napoleon abdicates for the second time",
+        "detail": "Back in Paris after Waterloo, Napoleon abdicated on 22 June. Coalition armies reached Paris in early July and Louis XVIII was restored on 8 July. Napoleon surrendered to the British and was exiled to the remote South Atlantic island of Saint Helena, where he died in 1821. The second Treaty of Paris, on 20 November 1815, formally ended the wars.",
+        "lonlat": [
+          2.35,
+          48.87
+        ],
+        "kind": "political"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Napoleonic Wars (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Napoleonic_Wars"
+      },
+      {
+        "title": "Battle of Bailén (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Battle_of_Bail%C3%A9n"
+      },
+      {
+        "title": "French invasion of Russia (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/French_invasion_of_Russia"
+      },
+      {
+        "title": "Battle of Vitoria (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Battle_of_Vitoria"
+      },
+      {
+        "title": "Battle of Leipzig (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Battle_of_Leipzig"
+      },
+      {
+        "title": "Treaty of Fontainebleau (1814) (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Treaty_of_Fontainebleau_(1814)"
+      },
+      {
+        "title": "Hundred Days (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Hundred_Days"
+      },
+      {
+        "title": "National Army Museum: Battle of Waterloo",
+        "url": "https://www.nam.ac.uk/explore/battle-waterloo"
+      }
+    ]
+  },
+  {
+    "id": "american-civil-war",
+    "name": "American Civil War",
+    "moment": "us-civil-war",
+    "span": [
+      1861,
+      1865
+    ],
+    "dateLabel": "12 April 1861 – 26 May 1865",
+    "summary": "Decades of conflict over slavery and its spread into the western territories came to a head when Abraham Lincoln, who opposed the expansion of slavery, won the presidential election of 1860. South Carolina seceded in December, and in February 1861 seceding slave states formed the Confederate States of America. The war began when Confederate forces bombarded Fort Sumter in April 1861. Early Confederate victories in Virginia showed the war would be long, while Union armies advanced along the rivers of the West. After Antietam in 1862, Lincoln's Emancipation Proclamation made the end of slavery a Union war aim and opened the army to Black soldiers. In July 1863 the Union won at Gettysburg and took Vicksburg, splitting the Confederacy. Ulysses S. Grant pressed Robert E. Lee in Virginia while William T. Sherman took Atlanta and marched to the sea. Lee surrendered at Appomattox in April 1865, days before Lincoln was assassinated, and slavery was abolished by the Thirteenth Amendment.",
+    "casualties": "Estimates of soldiers' deaths range from about 620,000 to 700,000 or more, most of them from disease, plus an undetermined number of civilian deaths.",
+    "sides": [
+      {
+        "name": "Union",
+        "members": [
+          {
+            "clio": "United States of America",
+            "from": 1861,
+            "to": 1865
+          }
+        ]
+      },
+      {
+        "name": "Confederacy",
+        "members": [
+          {
+            "clio": "Confederate States of America",
+            "from": 1861,
+            "to": 1865
+          }
+        ]
+      }
+    ],
+    "events": [
+      {
+        "date": "1861-02-04",
+        "year": 1861,
+        "label": "4 Feb 1861",
+        "text": "Seceding states meet to form the Confederate States of America",
+        "detail": "After Lincoln's election, South Carolina's convention voted unanimously to secede on 20 December 1860, and six more Deep South states followed. On 4 February 1861 their delegates met at Montgomery, Alabama, agreed to form the Confederate States of America, and chose Jefferson Davis as president. The new government began seizing federal forts and arsenals within its borders, while the outgoing administration in Washington hesitated.",
+        "lonlat": [
+          -86.3,
+          32.38
+        ],
+        "kind": "political"
+      },
+      {
+        "date": "1861-04-12",
+        "year": 1861,
+        "label": "12 Apr 1861",
+        "text": "Confederates bombard Fort Sumter: the war begins",
+        "detail": "Fort Sumter, in Charleston harbour, was one of the few federal posts in the South still held by US troops. When Lincoln announced he would send supplies, Confederate batteries opened fire on 12 April, and the garrison surrendered the next day. Lincoln called for volunteers to put down the rebellion, and four more slave states, including Virginia, then joined the Confederacy, which moved its capital to Richmond.",
+        "lonlat": [
+          -79.87,
+          32.75
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1861-07-21",
+        "year": 1861,
+        "label": "21 Jul 1861",
+        "text": "First Battle of Bull Run: a Confederate victory near Washington",
+        "detail": "Under pressure for a quick advance on Richmond, a Union army under Irvin McDowell attacked Confederates under P. G. T. Beauregard near Manassas, Virginia. Confederate reinforcements arrived by rail, and the Union army retreated in disorder towards Washington. It was the first major battle of the war, and it showed both sides that the war would be long and costly. Lincoln called for 500,000 more volunteers.",
+        "lonlat": [
+          -77.52,
+          38.81
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1862-02-16",
+        "year": 1862,
+        "label": "11–16 Feb 1862",
+        "text": "Grant captures Fort Donelson in Tennessee",
+        "detail": "In the western theatre, Union forces under Ulysses S. Grant, supported by river gunboats, captured Fort Henry on the Tennessee River and then besieged Fort Donelson on the Cumberland, which surrendered with its garrison on 16 February. The victories opened Tennessee to Union armies, led to the fall of Nashville and made Grant a national figure. Grant's demand for 'unconditional surrender' earned him a nickname matching his initials.",
+        "lonlat": [
+          -87.86,
+          36.49
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1862-04-06",
+        "year": 1862,
+        "label": "6–7 Apr 1862",
+        "text": "Battle of Shiloh: a shockingly costly Union victory",
+        "detail": "Confederates under Albert Sidney Johnston surprised Grant's army at Pittsburg Landing on the Tennessee River on 6 April. Johnston was killed that afternoon, and with reinforcements overnight the Union counterattacked on 7 April and drove the Confederates south. Nearly 24,000 men were killed, wounded or missing, more than in any earlier American battle. In late April a Union fleet also captured New Orleans.",
+        "lonlat": [
+          -88.32,
+          35.15
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1862-09-17",
+        "year": 1862,
+        "label": "17 Sep 1862",
+        "text": "Battle of Antietam halts Lee's first invasion of the North",
+        "detail": "After victories in Virginia, Robert E. Lee led the Confederate army into Maryland. George B. McClellan's Union army attacked it along Antietam Creek near Sharpsburg on 17 September, in what remains the bloodiest single day in American military history. Lee withdrew to Virginia. The Union success gave Lincoln the moment to announce, five days later, his preliminary Emancipation Proclamation. About 23,000 men were killed, wounded or missing.",
+        "lonlat": [
+          -77.74,
+          39.47
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1863-01-01",
+        "year": 1863,
+        "label": "1 Jan 1863",
+        "text": "Lincoln issues the Emancipation Proclamation",
+        "detail": "Lincoln's proclamation declared that people held as slaves in the states in rebellion were free. It did not apply to the loyal border states or to Confederate areas already under Union control, and its promise depended on Union victory. But it made ending slavery a Union war aim, discouraged Britain and France from recognising the Confederacy, and opened the Union Army and Navy to Black men; almost 200,000 served by the war's end.",
+        "lonlat": [
+          -77.04,
+          38.9
+        ],
+        "kind": "political"
+      },
+      {
+        "date": "1863-04-30",
+        "year": 1863,
+        "label": "30 Apr–6 May 1863",
+        "text": "Battle of Chancellorsville: Lee's boldest victory",
+        "detail": "Joseph Hooker's much larger Union army crossed the Rappahannock to outflank Lee. Lee divided his army and sent Stonewall Jackson on a march around the Union right, which collapsed under a surprise attack. Hooker withdrew across the river. The victory was costly: Jackson was mortally wounded by his own men's fire. Encouraged, Lee decided to invade the North again. Lee lost fewer men than Hooker, but the Confederacy could less afford its losses.",
+        "lonlat": [
+          -77.65,
+          38.31
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1863-07-01",
+        "year": 1863,
+        "label": "1–3 Jul 1863",
+        "text": "Battle of Gettysburg: Lee's invasion of the North fails",
+        "detail": "Lee's army met George Meade's Union army at Gettysburg, Pennsylvania. Over three days the Confederates attacked the Union line on the hills south of the town, ending with the failed assault on the centre known as Pickett's Charge. Gettysburg was the war's costliest battle, with more American soldier casualties than the Revolutionary War and War of 1812 combined. Lee retreated to Virginia and never again invaded the North in force.",
+        "lonlat": [
+          -77.23,
+          39.81
+        ],
+        "kind": "turning-point"
+      },
+      {
+        "date": "1863-07-04",
+        "year": 1863,
+        "label": "4 Jul 1863",
+        "text": "Vicksburg surrenders: the Union controls the Mississippi",
+        "detail": "Vicksburg, on its bluffs above the river, was the last major Confederate stronghold on the Mississippi. Grant besieged it from 18 May, and Pemberton's starving garrison surrendered on 4 July, the day after Gettysburg ended. Port Hudson fell on 9 July, giving the Union the whole river and cutting off Texas, Arkansas and western Louisiana from the rest of the Confederacy.",
+        "lonlat": [
+          -90.88,
+          32.35
+        ],
+        "kind": "turning-point"
+      },
+      {
+        "date": "1864-09-02",
+        "year": 1864,
+        "label": "2 Sep 1864",
+        "text": "Sherman captures Atlanta",
+        "detail": "In 1864 Grant, now commanding all Union armies, attacked Lee in Virginia while William T. Sherman advanced from Tennessee on Atlanta, a vital rail and supply centre. After months of manoeuvre and battles, Atlanta fell on 2 September. With the war in Virginia stalled in costly trench fighting around Petersburg, the victory boosted Northern morale and helped Lincoln win re-election that November.",
+        "lonlat": [
+          -84.39,
+          33.75
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1864-11-15",
+        "year": 1864,
+        "label": "15 Nov 1864",
+        "text": "Sherman begins his March to the Sea",
+        "detail": "Leaving Atlanta in flames, Sherman's army of about 62,000 men cut loose from its supply lines and marched across Georgia, living off the land. Foragers seized food and livestock and the troops wrecked about 300 miles of railroad, factories and farms. Historians debate whether this 'hard war' amounted to total war, but it crippled the Confederate economy and morale. Sherman faced little organised resistance along the way.",
+        "lonlat": [
+          -84.39,
+          33.75
+        ],
+        "kind": "invasion"
+      },
+      {
+        "date": "1864-12-21",
+        "year": 1864,
+        "label": "21 Dec 1864",
+        "text": "Sherman reaches the sea and takes Savannah",
+        "detail": "Sherman's army captured the port of Savannah on 21 December after a march of over a month, and he offered it to Lincoln as a Christmas present. In early 1865 he turned north through the Carolinas, squeezing the Confederacy from the south as Grant held Lee in Virginia. The march showed that the Confederacy could not protect its own heartland, and desertion from Confederate armies grew as soldiers worried about their families at home.",
+        "lonlat": [
+          -81.09,
+          32.08
+        ],
+        "kind": "turning-point"
+      },
+      {
+        "date": "1865-04-01",
+        "year": 1865,
+        "label": "1 Apr 1865",
+        "text": "Battle of Five Forks breaks the siege of Petersburg",
+        "detail": "For more than nine months Grant had besieged Lee's army in trenches around Petersburg, the rail centre protecting Richmond. On 1 April Union troops under Philip Sheridan routed Confederates at Five Forks, cutting one of Lee's last supply lines. The next day Grant attacked all along the line, and Lee told President Davis that Richmond must be abandoned. Petersburg fell on the night of 2 to 3 April.",
+        "lonlat": [
+          -77.39,
+          37.14
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1865-04-03",
+        "year": 1865,
+        "label": "2–3 Apr 1865",
+        "text": "Richmond falls to Union troops",
+        "detail": "The Confederate government fled Richmond on 2 April, and retreating troops set fire to supplies, burning much of the city. Union troops entered the capital on 3 April. Lee's remaining army retreated west, hoping to join Confederate forces in North Carolina. For many Black Americans in the city, Union troops' arrival meant the end of slavery. The fall of the capital, which the Union had sought to capture since 1861, signalled that the Confederacy's end was near. Lee's army now had only days to run.",
+        "lonlat": [
+          -77.44,
+          37.54
+        ],
+        "kind": "turning-point"
+      },
+      {
+        "date": "1865-04-09",
+        "year": 1865,
+        "label": "9 Apr 1865",
+        "text": "Lee surrenders to Grant at Appomattox Court House",
+        "detail": "Cut off and short of food, Lee's army was surrounded near Appomattox Court House, Virginia. Lee met Grant in a private house and surrendered on 9 April on generous terms: his men were paroled and allowed to go home, officers keeping their side arms and soldiers who owned horses keeping them. Other Confederate forces surrendered over the following weeks, and the war is usually dated as ending in May 1865.",
+        "lonlat": [
+          -78.8,
+          37.38
+        ],
+        "kind": "treaty"
+      },
+      {
+        "date": "1865-04-14",
+        "year": 1865,
+        "label": "14 Apr 1865",
+        "text": "President Lincoln is assassinated",
+        "detail": "Five days after Appomattox, Abraham Lincoln was shot by the actor and Confederate sympathiser John Wilkes Booth at Ford's Theatre in Washington, and he died the next morning. Vice President Andrew Johnson became president and faced the task of rebuilding the Union. The Thirteenth Amendment, abolishing slavery throughout the United States, was ratified in December 1865. Booth was cornered and killed in Virginia twelve days later.",
+        "lonlat": [
+          -77.03,
+          38.9
+        ],
+        "kind": "political"
+      }
+    ],
+    "sources": [
+      {
+        "title": "American Civil War (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/American_Civil_War"
+      },
+      {
+        "title": "National Archives: The Emancipation Proclamation",
+        "url": "https://www.archives.gov/exhibits/featured-documents/emancipation-proclamation"
+      },
+      {
+        "title": "American Battlefield Trust: Civil War Casualties",
+        "url": "https://www.battlefields.org/learn/articles/civil-war-casualties"
+      },
+      {
+        "title": "First Battle of Bull Run (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/First_Battle_of_Bull_Run"
+      },
+      {
+        "title": "Battle of Shiloh (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Battle_of_Shiloh"
+      },
+      {
+        "title": "Siege of Vicksburg (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Siege_of_Vicksburg"
+      },
+      {
+        "title": "Sherman's March to the Sea (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Sherman%27s_March_to_the_Sea"
+      }
+    ]
+  }
+]

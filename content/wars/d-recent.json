@@ -1,0 +1,1878 @@
+[
+ {
+  "id": "arab-israeli-war-1948",
+  "name": "1948 Arab–Israeli War",
+  "moment": null,
+  "span": [
+   1947,
+   1949
+  ],
+  "dateLabel": "November 1947 – 20 July 1949",
+  "summary": "On 29 November 1947 the UN General Assembly voted to partition British-ruled Palestine into Jewish and Arab states, with Jerusalem under international control. Jewish leaders accepted the plan; Palestinian Arab leaders and the Arab states rejected it, and civil war broke out between Jewish and Palestinian Arab forces. Israel declared independence on 14 May 1948 as the British Mandate ended, and the next day the armies of Egypt, Transjordan, Syria, Iraq and Lebanon, with a Saudi contingent, entered the country. Fighting alternated with UN truces until early 1949. Israel emerged in control of about 78 percent of former Mandatory Palestine; Transjordan held the West Bank and East Jerusalem, and Egypt the Gaza Strip, along armistice lines later called the Green Line. Israelis remember the war as their War of Independence. For Palestinians it is the Nakba (\"catastrophe\"): about 750,000 people fled or were expelled, over 400 villages were depopulated, and Israel did not allow the refugees to return.",
+  "casualties": "An estimated 6,373 Israelis (about 4,000 soldiers and 2,400 civilians), 3,700–7,000 soldiers of the Arab armies and 3,000–13,000 Palestinian Arab fighters and civilians were killed.",
+  "sides": [
+   {
+    "name": "Israel (Jewish forces before May 1948)",
+    "members": [
+     {
+      "clio": "State of Israel",
+      "from": 1948,
+      "to": 1949
+     }
+    ]
+   },
+   {
+    "name": "Palestinian Arab forces",
+    "members": [
+     {
+      "clio": "Palestinians",
+      "from": 1948,
+      "to": 1948
+     }
+    ]
+   },
+   {
+    "name": "Arab League states",
+    "members": [
+     {
+      "clio": "Kingdom of Egypt",
+      "from": 1948,
+      "to": 1949
+     },
+     {
+      "clio": "Kingdom of Jordan",
+      "from": 1948,
+      "to": 1949
+     },
+     {
+      "clio": "Second Syrian Republic",
+      "from": 1948,
+      "to": 1949
+     },
+     {
+      "clio": "Kingdom of Iraq",
+      "from": 1948,
+      "to": 1949
+     },
+     {
+      "clio": "Lebanon",
+      "from": 1948,
+      "to": 1949
+     },
+     {
+      "clio": "Kingdom of Saudi Arabia",
+      "from": 1948,
+      "to": 1949
+     }
+    ]
+   }
+  ],
+  "events": [
+   {
+    "date": "1947-11",
+    "year": 1947,
+    "label": "Nov 1947",
+    "text": "UN votes to partition Palestine; civil war breaks out",
+    "detail": "Britain, which had ruled Palestine under a League of Nations mandate since the 1920s, handed the question of its future to the United Nations. On 29 November 1947 the General Assembly adopted Resolution 181, dividing the country into a Jewish state and an Arab state with Jerusalem under UN control. Jewish leaders accepted; Palestinian Arab leaders and the Arab states rejected it. Fighting between Jewish and Palestinian Arab militias began immediately and grew into a civil war while British troops prepared to leave.",
+    "lonlat": [
+     35.22,
+     31.78
+    ],
+    "kind": "political"
+   },
+   {
+    "date": "1948-04-05",
+    "year": 1948,
+    "label": "5 Apr 1948",
+    "text": "Operation Nachshon fights to open the road to Jerusalem",
+    "detail": "By early 1948 Palestinian Arab irregulars had cut the road from the coast, leaving Jewish West Jerusalem short of food and arms. From 5 to 20 April the Haganah, the main Jewish militia, launched Operation Nachshon to open the route through the hills, its first brigade-sized offensive. The fighting around Castel, where the Palestinian commander Abd al-Qadir al-Husayni was killed, marked a shift from defence to attack under Plan Dalet, which aimed to secure the territory of the planned Jewish state and its approaches.",
+    "lonlat": [
+     35.14,
+     31.8
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "1948-04-09",
+    "year": 1948,
+    "label": "9 Apr 1948",
+    "text": "Deir Yassin massacre",
+    "detail": "On 9 April fighters of the Irgun and Lehi, right-wing Jewish militias, supported by the Haganah and Palmach, attacked the Arab village of Deir Yassin west of Jerusalem. At least 107 villagers, many of them women, children and elderly people, were killed; for decades a figure of about 254 was widely cited, but recent scholarship puts the toll near 110. News of the killings spread fear across Palestine and greatly accelerated the flight of Arab civilians from their homes.",
+    "lonlat": [
+     35.18,
+     31.79
+    ],
+    "kind": "atrocity"
+   },
+   {
+    "date": "1948-04-13",
+    "year": 1948,
+    "label": "13 Apr 1948",
+    "text": "Hadassah medical convoy ambushed in Jerusalem",
+    "detail": "Four days after Deir Yassin, Arab fighters ambushed a convoy carrying doctors, nurses, patients and Haganah escorts to the Hadassah Hospital on Mount Scopus, an isolated Jewish enclave in north-east Jerusalem. The vehicles were trapped and set alight in the Sheikh Jarrah neighbourhood, and 78 Jews, most of them medical staff, were killed. The attack was described as a reprisal for Deir Yassin and showed how the civil war had become a cycle of attacks on civilians.",
+    "lonlat": [
+     35.23,
+     31.8
+    ],
+    "kind": "atrocity"
+   },
+   {
+    "date": "1948-04-21",
+    "year": 1948,
+    "label": "21 Apr 1948",
+    "text": "Haganah captures Haifa; most Arab residents leave",
+    "detail": "Haifa, a mixed port city of about 140,000 people, roughly half of them Arabs, was a key target as British forces withdrew. On 21–22 April the Haganah's Carmeli Brigade seized the city. Around 15,000 Arabs fled or were expelled during the fighting, and by mid-May only about 4,000 of some 65,000–70,000 Arab residents remained. Jaffa and other Arab towns fell in the following weeks, and the exodus became one of the central events of the Nakba.",
+    "lonlat": [
+     34.99,
+     32.82
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "1948-05-13",
+    "year": 1948,
+    "label": "13 May 1948",
+    "text": "Kfar Etzion falls; massacre of defenders",
+    "detail": "The Etzion bloc, four Jewish settlements between Bethlehem and Hebron, lay deep in territory allotted to the Arab state and had been besieged for months. On 13 May, the day before the Mandate ended, the Arab Legion and local Arab irregulars overran Kfar Etzion. Many of the defenders were killed after they had surrendered, and the other settlements of the bloc surrendered the next day. Israelis came to remember the massacre as one of the war's defining losses.",
+    "lonlat": [
+     35.12,
+     31.65
+    ],
+    "kind": "atrocity"
+   },
+   {
+    "date": "1948-05-14",
+    "year": 1948,
+    "label": "14 May 1948",
+    "text": "Israel declares independence as the Mandate ends",
+    "detail": "With the British Mandate due to expire at midnight, David Ben-Gurion read Israel's Declaration of Independence in Tel Aviv on the afternoon of 14 May 1948. The United States granted the new provisional government de facto recognition the same day, and the Soviet Union soon followed with full recognition. The declaration turned the civil war into an interstate war: Arab governments had announced that their armies would intervene once British rule ended.",
+    "lonlat": [
+     34.77,
+     32.07
+    ],
+    "kind": "political"
+   },
+   {
+    "date": "1948-05-15",
+    "year": 1948,
+    "label": "15 May 1948",
+    "text": "Arab armies enter Palestine",
+    "detail": "On 15 May the armies of Egypt, Transjordan, Syria and Iraq crossed into former Mandatory Palestine, and Lebanon joined on the northern border; a Saudi formation fought under Egyptian command. Transjordan's Arab Legion moved mainly into areas allotted to the Arab state and around Jerusalem. Egyptian columns advanced up the coast towards Tel Aviv and through the Negev. Palestinians commemorate 15 May each year as Nakba Day, marking the loss of their homeland.",
+    "lonlat": [
+     34.25,
+     31.29
+    ],
+    "kind": "invasion"
+   },
+   {
+    "date": "1948-05-20",
+    "year": 1948,
+    "label": "20 May 1948",
+    "text": "Syrian attack on the Deganias is repulsed",
+    "detail": "Syria's army advanced south of the Sea of Galilee and on 20 May attacked Degania Alef and Degania Bet, the oldest kibbutzim in the Jordan Valley. Defenders with few heavy weapons stopped the tanks at the perimeter, and by 21 May the Syrians had pulled back. The Syrian front then settled into a stalemate, with Syria holding small areas west of the old border until the armistice of July 1949.",
+    "lonlat": [
+     35.57,
+     32.71
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "1948-05-25",
+    "year": 1948,
+    "label": "25 May 1948",
+    "text": "Israeli assault on Latrun fails",
+    "detail": "The Arab Legion's hold on the police fort at Latrun again cut the main road to Jerusalem. On 24–25 May the newly formed Israel Defense Forces attacked it in Operation Bin Nun A, using units that included recently arrived immigrants, and were driven back with heavy losses; further attacks in late May and June also failed. Israel instead built a rough bypass, nicknamed the 'Burma Road', to supply West Jerusalem.",
+    "lonlat": [
+     34.98,
+     31.83
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "1948-05-28",
+    "year": 1948,
+    "label": "28 May 1948",
+    "text": "Jewish Quarter of Jerusalem's Old City surrenders",
+    "detail": "From mid-May the Arab Legion fought Jewish forces for control of Jerusalem. The Jewish Quarter of the walled Old City, held by a small garrison, was surrounded and shelled. On 28 May it surrendered; its residents were expelled to West Jerusalem and the defenders taken prisoner. Jerusalem was left divided, with Transjordan holding the Old City and East Jerusalem until 1967.",
+    "lonlat": [
+     35.23,
+     31.77
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "1948-05-29",
+    "year": 1948,
+    "label": "29 May 1948",
+    "text": "Egyptian advance halted near Isdud",
+    "detail": "Egypt's main column pushed up the coastal road and by 28 May reached a destroyed bridge north of the Arab town of Isdud (modern Ashdod), about 30 kilometres from Tel Aviv. From 29 May to 3 June Israeli forces counter-attacked in Operation Pleshet, using Israel's first fighter aircraft. The Egyptians dug in and advanced no further north, and the line held until the first truce.",
+    "lonlat": [
+     34.66,
+     31.8
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "1948-06-11",
+    "year": 1948,
+    "label": "11 Jun 1948",
+    "text": "First UN truce begins",
+    "detail": "The UN Security Council had demanded a ceasefire, and the Swedish diplomat Count Folke Bernadotte, appointed UN Mediator, negotiated a four-week truce that took effect on 11 June. Both sides used the pause to rearm despite an arms embargo; Israel received aircraft and weapons from Czechoslovakia and absorbed thousands of new recruits. When fighting resumed on 8 July, the military balance had shifted in Israel's favour.",
+    "lonlat": [
+     35.22,
+     31.78
+    ],
+    "kind": "treaty"
+   },
+   {
+    "date": "1948-07-12",
+    "year": 1948,
+    "label": "12 Jul 1948",
+    "text": "Lydda and Ramle captured; 50,000–70,000 residents expelled",
+    "detail": "In the 'Ten Days' of fighting between the truces, Israel launched Operation Dani to secure the road from Tel Aviv to Jerusalem. Lydda was captured on 11 July and Ramle on 12 July, and hundreds of people were killed in Lydda. On 12 July Ben-Gurion authorised the expulsion of both towns' civilians, and some 50,000–70,000 people were forced to walk east towards Arab Legion lines in summer heat. It was the largest single expulsion of the war.",
+    "lonlat": [
+     34.89,
+     31.95
+    ],
+    "kind": "atrocity"
+   },
+   {
+    "date": "1948-09",
+    "year": 1948,
+    "label": "Sep 1948",
+    "text": "Arab League sets up the All-Palestine Government in Gaza",
+    "detail": "The second UN truce began on 18 July. In September the Arab League established an All-Palestine Government in Gaza, claiming authority over the whole of Palestine. It was led by figures close to the exiled Palestinian leader Amin al-Husseini but depended entirely on Egypt, which controlled the Gaza Strip. Transjordan's King Abdullah opposed it and moved to absorb the West Bank, which he annexed in 1950.",
+    "lonlat": [
+     34.46,
+     31.5
+    ],
+    "kind": "political"
+   },
+   {
+    "date": "1948-09-17",
+    "year": 1948,
+    "label": "17 Sep 1948",
+    "text": "UN Mediator Folke Bernadotte assassinated",
+    "detail": "Bernadotte had proposed a settlement that would give the Negev to the Arab side and western Galilee to Israel, plans opposed by Israelis and Arabs alike. On 17 September members of Lehi, a militant Jewish group, ambushed his motorcade in Jerusalem's Katamon quarter, killing him and the French officer Colonel André Serot. Israel's government outlawed Lehi, but the killers were never convicted. The UN later handed his duties to a Conciliation Commission.",
+    "lonlat": [
+     35.21,
+     31.76
+    ],
+    "kind": "political"
+   },
+   {
+    "date": "1948-10-21",
+    "year": 1948,
+    "label": "21 Oct 1948",
+    "text": "Israel takes Beersheba in Operation Yoav",
+    "detail": "On 15 October Israel broke the second truce with Operation Yoav, an offensive against Egyptian forces in the south. It cut the Egyptian lines, encircled an Egyptian brigade in the Faluja pocket, where it held out until the armistice, and on 21 October captured Beersheba, the main town of the Negev. Most of the town's Arab population had already fled. The operation opened the route to the southern Negev.",
+    "lonlat": [
+     34.79,
+     31.25
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "1948-10-29",
+    "year": 1948,
+    "label": "29 Oct 1948",
+    "text": "Operation Hiram takes the Upper Galilee",
+    "detail": "Starting on 24 October, Israeli forces attacked the Arab Liberation Army, a force of volunteers from Arab countries, and Syrian and Lebanese units in the Upper Galilee. Within about 60 hours the whole region was in Israeli hands, and Israeli troops briefly occupied villages inside southern Lebanon. Arab losses were estimated at 400 dead and 550 captured; killings of civilians were reported in several villages, and many inhabitants fled north into Lebanon.",
+    "lonlat": [
+     35.4,
+     33.0
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "1948-12-22",
+    "year": 1948,
+    "label": "22 Dec 1948",
+    "text": "Operation Horev drives Egyptian forces from the Negev",
+    "detail": "On 11 December the UN General Assembly passed Resolution 194, saying refugees wishing to return home and live in peace should be allowed to do so, or receive compensation. Days later, on 22 December, Israel launched Operation Horev to expel the Egyptian army from the Negev. Israeli columns crossed briefly into Egyptian Sinai before British pressure forced a withdrawal, and fighting near Rafah in early January 1949 led Egypt to accept armistice talks.",
+    "lonlat": [
+     34.43,
+     30.88
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "1949-02-24",
+    "year": 1949,
+    "label": "24 Feb 1949",
+    "text": "Israel and Egypt sign an armistice at Rhodes",
+    "detail": "Under UN mediator Ralph Bunche, Israeli and Egyptian delegates negotiated on the Greek island of Rhodes and signed the first armistice of the war on 24 February 1949. Egypt kept the Gaza Strip, crowded with refugees; the besieged brigade at Faluja was allowed to go home, and the village passed to Israel. Lebanon signed on 23 March and Transjordan on 3 April; Iraq withdrew its troops without a separate agreement.",
+    "lonlat": [
+     28.22,
+     36.44
+    ],
+    "kind": "treaty"
+   },
+   {
+    "date": "1949-03-10",
+    "year": 1949,
+    "label": "10 Mar 1949",
+    "text": "Israeli forces reach the Red Sea at Umm Rashrash",
+    "detail": "In Operation Uvda, launched on 5 March, Israeli brigades raced south through the Negev, an area allotted to Israel under the partition plan but not yet occupied. On 10 March they reached the abandoned police post of Umm Rashrash on the Gulf of Aqaba and raised a hand-inked flag, a moment Israel regards as the end of the fighting. The site became the port of Eilat, giving Israel access to the Red Sea.",
+    "lonlat": [
+     34.95,
+     29.55
+    ],
+    "kind": "turning-point"
+   },
+   {
+    "date": "1949-07-20",
+    "year": 1949,
+    "label": "20 Jul 1949",
+    "text": "Israel–Syria armistice ends the war",
+    "detail": "The last armistice, with Syria, was signed on 20 July 1949 after months of talks on the Jordan River front; Syria withdrew from most of the land it held west of the border, which became demilitarised zones. The armistice lines, later called the Green Line, held until 1967. About 750,000 Palestinian refugees lived in camps in Gaza, the West Bank, Jordan, Lebanon and Syria, and Israel barred their return. In the following years hundreds of thousands of Jews left or were expelled from Arab countries, many settling in Israel.",
+    "lonlat": [
+     35.63,
+     33.0
+    ],
+    "kind": "treaty"
+   }
+  ],
+  "sources": [
+   {
+    "title": "1948 Arab–Israeli War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/1948_Arab%E2%80%93Israeli_War"
+   },
+   {
+    "title": "Office of the Historian, US State Dept: The Arab-Israeli War of 1948",
+    "url": "https://history.state.gov/milestones/1945-1952/arab-israeli-war"
+   },
+   {
+    "title": "1949 Armistice Agreements (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/1949_Armistice_Agreements"
+   },
+   {
+    "title": "Nakba (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Nakba"
+   },
+   {
+    "title": "Deir Yassin massacre (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Deir_Yassin_massacre"
+   },
+   {
+    "title": "Battle of Haifa (1948) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Haifa_(1948)"
+   },
+   {
+    "title": "United Nations General Assembly Resolution 194 (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/United_Nations_General_Assembly_Resolution_194"
+   },
+   {
+    "title": "Folke Bernadotte (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Folke_Bernadotte"
+   }
+  ]
+ },
+ {
+  "id": "korean-war",
+  "name": "Korean War",
+  "moment": "korean-war",
+  "span": [
+   1950,
+   1953
+  ],
+  "dateLabel": "25 June 1950 – 27 July 1953",
+  "summary": "Korea, a Japanese colony from 1910, was divided at the 38th parallel into Soviet and US occupation zones in 1945, and in 1948 rival governments formed: Kim Il Sung's communist North and Syngman Rhee's South. On 25 June 1950 North Korea invaded the South and quickly took Seoul. The UN Security Council called on members to help South Korea, and a US-led United Nations Command was formed. After being pushed back to a perimeter around Pusan, UN forces landed at Incheon in September, retook Seoul and advanced deep into the North. In October China entered the war, driving the UN back south of Seoul by January 1951. The front then stabilised near the 38th parallel, and from July 1951 two years of trench warfare accompanied armistice talks, stalled largely over the return of prisoners. The armistice of 27 July 1953 left Korea divided along a demilitarised zone; no peace treaty has been signed.",
+  "casualties": "An estimated 2.5 to 4 million people died, including about one million soldiers and 1.5 to 3 million civilians.",
+  "sides": [
+   {
+    "name": "South Korea and the UN Command",
+    "members": [
+     {
+      "clio": "Republic of Korea",
+      "from": 1950,
+      "to": 1953
+     },
+     {
+      "clio": "United States of America",
+      "from": 1950,
+      "to": 1953
+     },
+     {
+      "clio": "Kingdom of Great Britain",
+      "from": 1950,
+      "to": 1953
+     },
+     {
+      "clio": "Canada",
+      "from": 1950,
+      "to": 1953
+     },
+     {
+      "clio": "Commonwealth of Australia",
+      "from": 1950,
+      "to": 1953
+     },
+     {
+      "clio": "New Zealand",
+      "from": 1950,
+      "to": 1953
+     },
+     {
+      "clio": "South Africa",
+      "from": 1950,
+      "to": 1953
+     },
+     {
+      "clio": "French Fourth Republic",
+      "from": 1950,
+      "to": 1953
+     },
+     {
+      "clio": "Kingdom of Belgium",
+      "from": 1950,
+      "to": 1953
+     },
+     {
+      "clio": "Luxembourg",
+      "from": 1950,
+      "to": 1953
+     },
+     {
+      "clio": "Netherlands",
+      "from": 1950,
+      "to": 1953
+     },
+     {
+      "clio": "Kingdom of Greece",
+      "from": 1950,
+      "to": 1953
+     },
+     {
+      "clio": "Republic of Turkey",
+      "from": 1950,
+      "to": 1953
+     },
+     {
+      "clio": "Ethiopia",
+      "from": 1950,
+      "to": 1953
+     },
+     {
+      "clio": "Republic of Colombia",
+      "from": 1950,
+      "to": 1953
+     },
+     {
+      "clio": "Republic of the Philippines",
+      "from": 1950,
+      "to": 1953
+     },
+     {
+      "clio": "Kingdom of Thailand",
+      "from": 1950,
+      "to": 1953
+     }
+    ]
+   },
+   {
+    "name": "North Korea and China",
+    "members": [
+     {
+      "clio": "Democratic People's Republic of Korea",
+      "from": 1950,
+      "to": 1953
+     },
+     {
+      "clio": "People's Republic of China",
+      "from": 1950,
+      "to": 1953
+     }
+    ]
+   }
+  ],
+  "events": [
+   {
+    "date": "1950-06-25",
+    "year": 1950,
+    "label": "25 Jun 1950",
+    "text": "North Korea invades South Korea",
+    "detail": "After years of border clashes, and with Soviet approval and equipment, the Korean People's Army attacked across the 38th parallel before dawn on 25 June 1950 with tanks and artillery. South Korea's smaller, lightly armed army was caught unprepared and fell back along the whole front. The UN Security Council, which the Soviet Union was boycotting, passed resolutions condemning the invasion and calling on members to help repel it.",
+    "lonlat": [
+     127.0,
+     38.0
+    ],
+    "kind": "invasion"
+   },
+   {
+    "date": "1950-06-28",
+    "year": 1950,
+    "label": "28 Jun 1950",
+    "text": "Seoul falls",
+    "detail": "Three days into the invasion, North Korean troops entered Seoul, the South's capital. South Korean engineers blew up the bridges over the Han River while they were still crowded with soldiers and refugees, trapping much of the army north of the river. On 27 June President Truman had ordered US air and naval forces to support South Korea, and he soon committed ground troops from the occupation forces in Japan.",
+    "lonlat": [
+     126.98,
+     37.57
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "1950-07-05",
+    "year": 1950,
+    "label": "5 Jul 1950",
+    "text": "First US ground troops fight at Osan",
+    "detail": "Task Force Smith, a small battalion-sized force flown in from Japan, met the North Korean advance near Osan, south of Seoul, on 5 July. Lacking effective anti-tank weapons, it was overrun by T-34 tanks and infantry and forced into a disorderly retreat. The defeat showed that the US garrison troops in Japan were neither trained nor equipped for the war, and UN forces continued to fall back south through July.",
+    "lonlat": [
+     127.07,
+     37.15
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "1950-08",
+    "year": 1950,
+    "label": "Aug 1950",
+    "text": "UN forces hold the Pusan Perimeter",
+    "detail": "By early August South Korean, US and newly arriving British troops were confined to a corner of south-east Korea around the port of Pusan, behind a line along the Naktong River. For six weeks they fought off repeated North Korean attacks while reinforcements and supplies poured in through the port. The North Korean army, at the end of long supply lines under constant air attack, was steadily worn down.",
+    "lonlat": [
+     128.6,
+     35.87
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "1950-09-15",
+    "year": 1950,
+    "label": "15 Sep 1950",
+    "text": "UN amphibious landing at Incheon",
+    "detail": "General Douglas MacArthur, commander of the UN forces, staged a risky amphibious landing at Incheon, the port of Seoul, far behind North Korean lines, despite its extreme tides. US Marines and army troops came ashore on 15 September, and on 16 September the Eighth Army broke out of the Pusan Perimeter. Caught between the two forces, the North Korean army collapsed and its remnants retreated north.",
+    "lonlat": [
+     126.62,
+     37.47
+    ],
+    "kind": "turning-point"
+   },
+   {
+    "date": "1950-09-25",
+    "year": 1950,
+    "label": "Sep 1950",
+    "text": "UN forces recapture Seoul",
+    "detail": "After a week of hard street fighting, US Marines and South Korean troops retook the ruined capital in late September, and Syngman Rhee's government returned on 29 September. Thousands of North Korean soldiers were cut off in the South. The UN now faced a choice: stop at the 38th parallel, restoring the pre-war border, or pursue the beaten North Korean army and reunify the peninsula by force.",
+    "lonlat": [
+     126.98,
+     37.57
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "1950-10-01",
+    "year": 1950,
+    "label": "1 Oct 1950",
+    "text": "UN forces cross the 38th parallel",
+    "detail": "South Korean troops crossed into the North on the east coast around 1 October, and US-led UN Command forces followed on 7 October after the UN General Assembly endorsed the goal of a unified Korea. China had warned through Indian diplomats that it would intervene if American troops crossed the parallel, but the warnings were largely dismissed in Washington and Tokyo.",
+    "lonlat": [
+     128.6,
+     38.1
+    ],
+    "kind": "invasion"
+   },
+   {
+    "date": "1950-10-19",
+    "year": 1950,
+    "label": "19 Oct 1950",
+    "text": "UN forces capture Pyongyang",
+    "detail": "On 19 October US and South Korean troops, together with the British 27th Commonwealth Brigade, entered Pyongyang, the North Korean capital, as Kim Il Sung's government fled north. UN columns then pushed towards the Yalu River, China's border, spreading out over mountainous terrain as winter approached. Many commanders expected the war to be over by Christmas, and planning began for the occupation of a reunified Korea under the South's government.",
+    "lonlat": [
+     125.75,
+     39.03
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "1950-10-19",
+    "year": 1950,
+    "label": "19 Oct 1950",
+    "text": "Chinese troops cross the Yalu into Korea",
+    "detail": "The same day Pyongyang fell, the first units of the Chinese People's Volunteer Army, commanded by Peng Dehuai, began crossing the Yalu River secretly at night. Mao Zedong had decided to intervene to keep American forces from China's border. On 25 October the Chinese launched their first offensive against South Korean and US units, then briefly withdrew, leaving UN commanders uncertain of their numbers.",
+    "lonlat": [
+     124.4,
+     40.1
+    ],
+    "kind": "turning-point"
+   },
+   {
+    "date": "1950-11-27",
+    "year": 1950,
+    "label": "27 Nov 1950",
+    "text": "Battle of Chosin Reservoir",
+    "detail": "In late November massive Chinese forces struck the UN advance. On 27 November they surrounded the US 1st Marine Division and army units around the Chosin Reservoir in north-east Korea. In temperatures far below freezing, the encircled troops fought their way out over 17 days to the coast. Further west the Eighth Army was routed and made the longest retreat in US Army history.",
+    "lonlat": [
+     127.25,
+     40.45
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "1950-12-24",
+    "year": 1950,
+    "label": "24 Dec 1950",
+    "text": "Hungnam evacuation completed",
+    "detail": "The UN X Corps established a defensive perimeter around the north-eastern port of Hungnam on 11 December. By 24 December some 100,000 troops and tens of thousands of North Korean civilian refugees had been evacuated by sea to the South, and the port facilities were demolished. By the end of December UN forces had abandoned the whole of North Korea.",
+    "lonlat": [
+     127.62,
+     39.83
+    ],
+    "kind": "other"
+   },
+   {
+    "date": "1951-01-04",
+    "year": 1951,
+    "label": "4 Jan 1951",
+    "text": "Communist forces retake Seoul",
+    "detail": "Chinese and North Korean forces launched a New Year offensive across the 38th parallel, and on 4 January 1951 Seoul changed hands for the third time as UN troops withdrew south of the Han River. Hundreds of thousands of civilians fled south again. General Matthew Ridgway, who had taken command of the Eighth Army after its commander was killed in an accident, restored its morale and halted the retreat.",
+    "lonlat": [
+     126.98,
+     37.57
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "1951-03-14",
+    "year": 1951,
+    "label": "14 Mar 1951",
+    "text": "UN forces recapture Seoul in Operation Ripper",
+    "detail": "Ridgway's methodical counter-offensives used massed firepower to inflict heavy losses on the over-extended Chinese forces. Operation Ripper, launched on 7 March, retook Seoul on 14 March, leaving the city in ruins after its fourth change of hands in less than a year. By the end of March UN forces were back near the 38th parallel, roughly where the war had started nine months earlier.",
+    "lonlat": [
+     126.98,
+     37.57
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "1951-04-11",
+    "year": 1951,
+    "label": "11 Apr 1951",
+    "text": "Truman relieves MacArthur of command",
+    "detail": "MacArthur publicly called for expanding the war to China, including attacks on Chinese bases, contradicting Truman's policy of a limited war confined to Korea. On 11 April 1951 Truman dismissed him from all his commands in Tokyo, from which he had directed the war, and replaced him with Ridgway. The decision caused uproar in the United States but confirmed civilian control over military policy.",
+    "lonlat": [
+     139.76,
+     35.68
+    ],
+    "kind": "political"
+   },
+   {
+    "date": "1951-04-22",
+    "year": 1951,
+    "label": "22 Apr 1951",
+    "text": "Chinese spring offensive; Battle of the Imjin River",
+    "detail": "On 22 April the Chinese launched their largest offensive of the war. On the Imjin River north of Seoul, the British 29th Brigade held its positions for three days before retreating; the 1st Battalion, Gloucestershire Regiment, was surrounded on Hill 235 and most of its men captured. At Kapyong, Australian and Canadian battalions also blocked the advance. The offensive failed to retake Seoul.",
+    "lonlat": [
+     126.95,
+     37.95
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "1951-07-10",
+    "year": 1951,
+    "label": "10 Jul 1951",
+    "text": "Armistice talks open at Kaesong",
+    "detail": "With the front stabilised near the 38th parallel, negotiators from both sides met at Kaesong on 10 July 1951; the talks later moved to Panmunjom. They dragged on for two years, deadlocked above all over prisoners of war: thousands of Chinese and North Korean prisoners did not want to go home, and the UN refused forced repatriation. Meanwhile both armies dug in along a front of trenches and fortified hills, fighting costly battles for small gains.",
+    "lonlat": [
+     126.55,
+     37.97
+    ],
+    "kind": "political"
+   },
+   {
+    "date": "1953-07-27",
+    "year": 1953,
+    "label": "27 Jul 1953",
+    "text": "Armistice signed at Panmunjom",
+    "detail": "After the death of Stalin in March 1953 and a compromise on prisoners based on an Indian proposal, the armistice was signed at Panmunjom on 27 July 1953. It created a demilitarised zone about 4 kilometres wide along the final front line, which left the South with a little more territory than before the war. South Korea did not sign. No peace treaty followed, and Korea remains divided.",
+    "lonlat": [
+     126.68,
+     37.96
+    ],
+    "kind": "treaty"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Korean War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Korean_War"
+   },
+   {
+    "title": "National Army Museum: Korean War",
+    "url": "https://www.nam.ac.uk/explore/korean-war"
+   },
+   {
+    "title": "United Nations Command (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/United_Nations_Command"
+   },
+   {
+    "title": "Thailand in the Korean War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Thailand_in_the_Korean_War"
+   }
+  ]
+ },
+ {
+  "id": "vietnam-war",
+  "name": "Vietnam War",
+  "moment": "vietnam-war",
+  "span": [
+   1955,
+   1975
+  ],
+  "dateLabel": "1955 – 30 April 1975",
+  "summary": "The 1954 Geneva Accords ended French rule in Indochina and temporarily divided Vietnam at the 17th parallel, with nationwide elections promised for 1956. They were never held. In the South, Ngo Dinh Diem proclaimed the Republic of Vietnam in 1955 with US backing, while the communist North under Ho Chi Minh supported a southern insurgency led by the National Liberation Front (Viet Cong). Fearing communist expansion across Asia, the United States sent advisers, then, after the Gulf of Tonkin incident in 1964, bombers and combat troops, reaching about 543,000 soldiers in 1969, joined by South Korean, Australian, New Zealand and Thai forces. China and the Soviet Union supplied the North. The 1968 Tet Offensive failed militarily but turned American opinion against the war. Under Nixon's 'Vietnamization' US forces withdrew, leaving after the 1973 Paris Peace Accords. Fighting continued, and on 30 April 1975 North Vietnamese tanks entered Saigon. Vietnam was reunified under communist rule in 1976, and communist movements also took power in Cambodia and Laos in 1975.",
+  "casualties": "An estimated 966,000 to 3 million Vietnamese soldiers and civilians died, more than 58,000 Americans were killed, and total deaths including Cambodia and Laos are estimated at 1.3 to 3.4 million.",
+  "sides": [
+   {
+    "name": "North Vietnam and its allies",
+    "members": [
+     {
+      "clio": "Democratic Republic of Vietnam",
+      "from": 1956,
+      "to": 1975
+     }
+    ]
+   },
+   {
+    "name": "South Vietnam and its allies",
+    "members": [
+     {
+      "clio": "Republic of Vietnam",
+      "from": 1956,
+      "to": 1966
+     },
+     {
+      "clio": "Republic of Vietnam",
+      "from": 1973,
+      "to": 1975
+     },
+     {
+      "clio": "United States of America",
+      "from": 1964,
+      "to": 1973
+     },
+     {
+      "clio": "Republic of Korea",
+      "from": 1965,
+      "to": 1973
+     },
+     {
+      "clio": "Commonwealth of Australia",
+      "from": 1962,
+      "to": 1972
+     },
+     {
+      "clio": "New Zealand",
+      "from": 1965,
+      "to": 1972
+     },
+     {
+      "clio": "Kingdom of Thailand",
+      "from": 1966,
+      "to": 1972
+     },
+     {
+      "clio": "Kingdom of Laos",
+      "from": 1959,
+      "to": 1975
+     },
+     {
+      "clio": "Kingdom of Cambodia",
+      "from": 1970,
+      "to": 1975
+     }
+    ]
+   }
+  ],
+  "events": [
+   {
+    "date": "1955-10",
+    "year": 1955,
+    "label": "Oct 1955",
+    "text": "Diem proclaims the Republic of Vietnam",
+    "detail": "The Geneva Accords of July 1954, which followed the French defeat at Dien Bien Phu, left Ho Chi Minh's communists in control of the North and a non-communist government in the South. In October 1955 the South's prime minister, Ngo Dinh Diem, held a referendum that was rigged to give him 98 percent of the vote, deposed the emperor Bao Dai, and declared the Republic of Vietnam with himself as president. With US support he refused to hold the reunification elections due in 1956.",
+    "lonlat": [
+     106.7,
+     10.78
+    ],
+    "kind": "political"
+   },
+   {
+    "date": "1960-12",
+    "year": 1960,
+    "label": "Dec 1960",
+    "text": "National Liberation Front (Viet Cong) founded",
+    "detail": "Diem's government suppressed communists and other opponents in the South, and from 1959 Hanoi backed armed struggle there, sending men and supplies down what became the Ho Chi Minh Trail. In December 1960 the National Liberation Front was formally created to lead the southern insurgency; its opponents called its fighters the Viet Cong. Its guerrillas spread their control over much of the South's countryside.",
+    "lonlat": [
+     106.1,
+     11.31
+    ],
+    "kind": "political"
+   },
+   {
+    "date": "1963-01",
+    "year": 1963,
+    "label": "Jan 1963",
+    "text": "Viet Cong defeat South Vietnamese troops at Ap Bac",
+    "detail": "In the Mekong Delta village of Ap Bac, a Viet Cong force of a few hundred fought a much larger South Vietnamese army force backed by US helicopters, artillery and armoured carriers. The Viet Cong lost 18 men, while the South Vietnamese lost 83 soldiers and five US helicopters were brought down. American advisers and reporters saw the battle as evidence that the South's army could not defeat the insurgency.",
+    "lonlat": [
+     106.18,
+     10.43
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "1963-11-02",
+    "year": 1963,
+    "label": "2 Nov 1963",
+    "text": "Diem overthrown and killed in a military coup",
+    "detail": "Diem's favouritism towards Catholics provoked the Buddhist crisis of 1963, which began in May when government forces killed nine Buddhists in Hue; protests, including monks' self-immolations, followed. With tacit US approval, South Vietnamese generals overthrew Diem on 1–2 November, and he and his brother were killed. A series of unstable military governments followed in Saigon, and the insurgency gained ground in the countryside, drawing the United States towards direct intervention.",
+    "lonlat": [
+     106.7,
+     10.78
+    ],
+    "kind": "political"
+   },
+   {
+    "date": "1964-08-02",
+    "year": 1964,
+    "label": "2 Aug 1964",
+    "text": "Gulf of Tonkin incident",
+    "detail": "On 2 August the US destroyer Maddox, on an intelligence mission off North Vietnam's coast, exchanged fire with North Vietnamese torpedo boats. A second attack reported on 4 August was later shown not to have happened. President Johnson ordered retaliatory air strikes, and on 7 August Congress passed the Gulf of Tonkin Resolution, giving him broad authority to use military force in Southeast Asia without a declaration of war.",
+    "lonlat": [
+     106.9,
+     19.7
+    ],
+    "kind": "turning-point"
+   },
+   {
+    "date": "1965-03-02",
+    "year": 1965,
+    "label": "2 Mar 1965",
+    "text": "Operation Rolling Thunder begins",
+    "detail": "After Viet Cong attacks on US bases in February 1965, the United States began a sustained bombing campaign against North Vietnam on 2 March. Rolling Thunder aimed to raise southern morale, pressure Hanoi to stop supporting the insurgency, and destroy the North's transport, industry and air defences. It continued, with pauses, until 31 October 1968, but failed to stop the flow of men and supplies south.",
+    "lonlat": [
+     105.9,
+     19.5
+    ],
+    "kind": "other"
+   },
+   {
+    "date": "1965-03-08",
+    "year": 1965,
+    "label": "8 Mar 1965",
+    "text": "US Marines land at Da Nang",
+    "detail": "On 8 March 1965, 3,500 US Marines came ashore near Da Nang, officially to guard the air base: the first American ground combat units in Vietnam. Their role soon expanded to offensive operations, and troop numbers rose rapidly. Allied contingents followed, including South Korean divisions from September 1965 and an Australian battalion, which had arrived in June 1965 alongside a New Zealand artillery battery.",
+    "lonlat": [
+     108.22,
+     16.05
+    ],
+    "kind": "turning-point"
+   },
+   {
+    "date": "1965-11-14",
+    "year": 1965,
+    "label": "14 Nov 1965",
+    "text": "Battle of Ia Drang",
+    "detail": "In the Central Highlands, the US 1st Cavalry Division landed by helicopter in the Ia Drang valley and fought North Vietnamese regulars from 14 to 18 November, the first major battle between the US Army and the People's Army of Vietnam. Both sides suffered heavy losses and both claimed victory. The battle set the pattern of the war: US reliance on helicopters, artillery and air power against an enemy that fought at close range to blunt it.",
+    "lonlat": [
+     107.7,
+     13.55
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "1966-08-18",
+    "year": 1966,
+    "label": "18 Aug 1966",
+    "text": "Australians fight the Battle of Long Tan",
+    "detail": "Australia had sent military advisers to South Vietnam from 1962 and combat troops from 1965, based at Nui Dat in Phuoc Tuy province. On 18 August 1966 a company of about 100 Australian soldiers was caught in a rubber plantation near Long Tan by a much larger Viet Cong and North Vietnamese force. Supported by artillery, they held out through a monsoon storm until relieved. Eighteen Australians were killed; it became Australia's best-known battle of the war.",
+    "lonlat": [
+     107.43,
+     10.48
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "1968-01-30",
+    "year": 1968,
+    "label": "30 Jan 1968",
+    "text": "The Tet Offensive",
+    "detail": "During the Tet lunar new year holiday, about 77,000 North Vietnamese and Viet Cong troops attacked more than 100 towns and cities, including 36 of 44 provincial capitals and Saigon, where they briefly entered the US Embassy grounds. The hoped-for popular uprising did not come, and the attackers were driven back with heavy losses; in Hue, held for 26 days, thousands of civilians were executed. Militarily a defeat for Hanoi, Tet shocked the American public and pushed Johnson towards negotiations, which opened in Paris on 10 May.",
+    "lonlat": [
+     106.7,
+     10.78
+    ],
+    "kind": "turning-point"
+   },
+   {
+    "date": "1968-03-16",
+    "year": 1968,
+    "label": "16 Mar 1968",
+    "text": "My Lai massacre",
+    "detail": "On 16 March 1968 soldiers of Charlie Company, Americal Division, killed between 347 and 504 unarmed villagers, mostly women, children and elderly men, in the hamlets of My Lai and My Khe in Quang Ngai province. The killings were covered up until the journalist Seymour Hersh revealed them in November 1969. Of 26 soldiers charged, only Lieutenant William Calley was convicted, and the massacre deepened opposition to the war.",
+    "lonlat": [
+     108.87,
+     15.18
+    ],
+    "kind": "atrocity"
+   },
+   {
+    "date": "1970-04-30",
+    "year": 1970,
+    "label": "30 Apr 1970",
+    "text": "US and South Vietnamese forces invade Cambodia",
+    "detail": "Under 'Vietnamization', President Nixon began withdrawing US troops in 1969 while building up South Vietnam's army. In March 1970 Cambodia's ruler Prince Sihanouk was overthrown, and the new pro-US Khmer Republic faced North Vietnamese forces and the communist Khmer Rouge. On 30 April Nixon ordered US and South Vietnamese troops to attack North Vietnamese bases inside Cambodia. The expansion of the war set off protests in the United States, where National Guardsmen killed four students at Kent State University on 4 May.",
+    "lonlat": [
+     106.4,
+     11.7
+    ],
+    "kind": "invasion"
+   },
+   {
+    "date": "1972-03",
+    "year": 1972,
+    "label": "Mar 1972",
+    "text": "North Vietnam launches the Easter Offensive",
+    "detail": "With most US ground troops gone, North Vietnam launched a three-pronged conventional invasion of the South in late March 1972, using tanks and artillery across the demilitarised zone into Quang Tri province, in the Central Highlands and north of Saigon. South Vietnamese forces, backed by massive US air power, held most key cities and retook Quang Tri city by September, but the North kept large areas along the border.",
+    "lonlat": [
+     107.19,
+     16.75
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "1972-12",
+    "year": 1972,
+    "label": "Dec 1972",
+    "text": "US B-52s carry out the 'Christmas bombing'",
+    "detail": "Peace talks in Paris had nearly produced an agreement in October 1972, but they broke down over objections from South Vietnam and new demands from both sides. On 14 December President Nixon ordered massive B-52 raids on North Vietnam, carried out in the second half of the month in what became known as the Christmas bombing. Negotiations resumed in early January 1973, and the agreement was quickly concluded.",
+    "lonlat": [
+     105.85,
+     21.03
+    ],
+    "kind": "other"
+   },
+   {
+    "date": "1973-01-27",
+    "year": 1973,
+    "label": "27 Jan 1973",
+    "text": "Ceasefire under the Paris Peace Accords",
+    "detail": "The United States, North Vietnam, South Vietnam and the Provisional Revolutionary Government of the Viet Cong signed the Paris Peace Accords on 27 January 1973, and a ceasefire took effect across Vietnam at midnight GMT that day. US and allied forces were to leave within 60 days and prisoners of war were to be exchanged, but North Vietnamese troops were allowed to remain in the South. The negotiators Henry Kissinger and Le Duc Tho were awarded the Nobel Peace Prize; Tho declined it.",
+    "lonlat": [
+     106.7,
+     10.78
+    ],
+    "kind": "treaty"
+   },
+   {
+    "date": "1973-03",
+    "year": 1973,
+    "label": "Mar 1973",
+    "text": "Last US and South Korean combat troops leave",
+    "detail": "South Korea, whose forces had numbered about 50,000 at their peak, withdrew its last troops on 23 March 1973. Within the 60 days set by the accords, the last US combat troops left South Vietnam at the end of March, and American prisoners came home in Operation Homecoming. The ceasefire never fully held, and fighting between North and South Vietnamese forces resumed while US aid to Saigon was cut back.",
+    "lonlat": [
+     106.66,
+     10.82
+    ],
+    "kind": "political"
+   },
+   {
+    "date": "1975-03-10",
+    "year": 1975,
+    "label": "10 Mar 1975",
+    "text": "North Vietnamese capture Buon Ma Thuot",
+    "detail": "In early 1975 North Vietnam launched an offensive in the Central Highlands. The capture of Buon Ma Thuot on 10 March prompted President Nguyen Van Thieu to order a withdrawal from the highlands, which collapsed into a chaotic retreat under fire, jammed with soldiers and civilians. The speed of the South's disintegration surprised Hanoi, which accelerated its plans to take Saigon before the rainy season.",
+    "lonlat": [
+     108.04,
+     12.67
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "1975-03-28",
+    "year": 1975,
+    "label": "28 Mar 1975",
+    "text": "Hue and Da Nang fall",
+    "detail": "As panic spread in the northern provinces, Hue fell on 25 March and Da Nang, South Vietnam's second city, on 28 March. Hundreds of thousands of refugees and soldiers crowded the roads and beaches trying to escape south by sea. South Vietnamese troops made a last stand at Xuan Loc, east of Saigon, from 9 to 21 April, and Thieu resigned on 21 April.",
+    "lonlat": [
+     108.22,
+     16.05
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "1975-04-17",
+    "year": 1975,
+    "label": "17 Apr 1975",
+    "text": "Khmer Rouge capture Phnom Penh",
+    "detail": "In Cambodia, the communist Khmer Rouge had besieged the capital for months after the US ended its bombing there in 1973. The US embassy evacuated its staff on 12 April, and on 17 April the city's last defences fell. The Khmer Rouge immediately ordered the entire population to leave the city, beginning a regime under which an estimated 1.5 to 2 million Cambodians would die by 1979.",
+    "lonlat": [
+     104.92,
+     11.56
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "1975-04-30",
+    "year": 1975,
+    "label": "30 Apr 1975",
+    "text": "Fall of Saigon",
+    "detail": "North Vietnamese forces encircled Saigon in late April. As the city fell, Operation Frequent Wind evacuated the remaining Americans and tens of thousands of South Vietnamese by helicopter. On the morning of 30 April North Vietnamese tanks broke through the gate of the Presidential Palace, and President Duong Van Minh, in office for two days, surrendered. Vietnam was formally reunified as the Socialist Republic of Vietnam in 1976.",
+    "lonlat": [
+     106.7,
+     10.78
+    ],
+    "kind": "turning-point"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Vietnam War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Vietnam_War"
+   },
+   {
+    "title": "Office of the Historian, US State Dept: Ending the Vietnam War, 1969–1973",
+    "url": "https://history.state.gov/milestones/1969-1976/ending-vietnam"
+   },
+   {
+    "title": "US National Archives: Vietnam War U.S. Military Fatal Casualty Statistics",
+    "url": "https://www.archives.gov/research/military/vietnam-war/casualty-statistics"
+   },
+   {
+    "title": "Free World Military Forces (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Free_World_Military_Forces"
+   },
+   {
+    "title": "Tet Offensive (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Tet_Offensive"
+   },
+   {
+    "title": "My Lai massacre (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/My_Lai_massacre"
+   },
+   {
+    "title": "Paris Peace Accords (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Paris_Peace_Accords"
+   },
+   {
+    "title": "Fall of Saigon (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Fall_of_Saigon"
+   }
+  ]
+ },
+ {
+  "id": "soviet-afghan-war",
+  "name": "Soviet–Afghan War",
+  "moment": "soviet-afghan-war",
+  "span": [
+   1979,
+   1989
+  ],
+  "dateLabel": "24 December 1979 – 15 February 1989",
+  "summary": "In April 1978 the communist People's Democratic Party of Afghanistan seized power in a coup. Its radical reforms and harsh repression provoked uprisings across the country, and its two factions fought each other. In December 1979 the Soviet Union sent its 40th Army into Afghanistan, killed the party leader Hafizullah Amin and installed Babrak Karmal. Soviet and Afghan government forces held the cities and main roads, but could not defeat the mujahideen, Islamic resistance groups operating from the mountains and from refugee camps in Pakistan. The United States, Pakistan, Saudi Arabia, China and others armed and funded the resistance, with Pakistan's intelligence service distributing the aid. After repeated offensives, mounting losses and the arrival of US Stinger anti-aircraft missiles, Mikhail Gorbachev's government sought a way out. Under the Geneva Accords of April 1988 Soviet troops withdrew, the last leaving on 15 February 1989. Najibullah's government survived until 1992, when civil war among the mujahideen followed.",
+  "casualties": "An estimated 1 to 3 million Afghans died, most of them civilians, along with 14,453 Soviet soldiers by official count (other estimates reach 26,000); about 5 million Afghans fled abroad.",
+  "sides": [
+   {
+    "name": "Soviet Union and the Afghan communist government",
+    "members": [
+     {
+      "clio": "Union of Soviet Socialist Republics",
+      "from": 1979,
+      "to": 1989
+     },
+     {
+      "clio": "Afghanistan",
+      "from": 1979,
+      "to": 1986
+     }
+    ]
+   },
+   {
+    "name": "Afghan mujahideen",
+    "members": [
+     {
+      "clio": "Mujahideen",
+      "from": 1987,
+      "to": 1989
+     }
+    ]
+   }
+  ],
+  "events": [
+   {
+    "date": "1979-03-15",
+    "year": 1979,
+    "label": "15 Mar 1979",
+    "text": "Uprising in Herat",
+    "detail": "The communist government that took power in April 1978 pushed land and social reforms by force and arrested and executed thousands of opponents. On 15 March 1979 a popular revolt broke out in the western city of Herat, joined by mutinous soldiers of the army's 17th Division. Communist officials and some Soviet advisers were killed. Government forces retook the city on 20 March and bombed it; estimates of the dead range from 3,000 to 25,000. Taraki asked Moscow for troops, but the Soviet leadership at first refused.",
+    "lonlat": [
+     62.2,
+     34.35
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "1979-09",
+    "year": 1979,
+    "label": "Sep 1979",
+    "text": "Hafizullah Amin seizes power",
+    "detail": "Rivalry within the ruling party ended in September 1979 when Prime Minister Hafizullah Amin overthrew President Nur Muhammad Taraki, who was killed soon afterwards. Amin intensified the repression, while rebellion spread and the army suffered mass desertions and mutinies. Soviet leaders distrusted him, feared that Afghanistan might be lost to Islamist rebels or turn to the West, and began planning an intervention.",
+    "lonlat": [
+     69.17,
+     34.53
+    ],
+    "kind": "political"
+   },
+   {
+    "date": "1979-12-25",
+    "year": 1979,
+    "label": "25 Dec 1979",
+    "text": "Soviet 40th Army enters Afghanistan",
+    "detail": "On 24–25 December 1979 Soviet forces began crossing the Amu Darya from the Uzbek SSR and flying troops into Kabul and the Bagram air base. Ground columns moved south along the main highways, and within weeks tens of thousands of Soviet soldiers were in the country. Moscow presented the operation as assistance requested by the Afghan government under a 1978 friendship treaty.",
+    "lonlat": [
+     67.42,
+     37.22
+    ],
+    "kind": "invasion"
+   },
+   {
+    "date": "1979-12-27",
+    "year": 1979,
+    "label": "27 Dec 1979",
+    "text": "Soviet special forces kill Amin and install Karmal",
+    "detail": "On the evening of 27 December Soviet special forces stormed the Tajbeg Palace outside Kabul in Operation Storm-333, killing Amin, while other units seized key buildings in the capital. Babrak Karmal, leader of the party's rival Parcham faction, was installed as head of government. The UN General Assembly condemned the intervention on 14 January 1980 by 104 votes to 18, and the United States responded with sanctions and a boycott of the 1980 Moscow Olympics.",
+    "lonlat": [
+     69.12,
+     34.46
+    ],
+    "kind": "turning-point"
+   },
+   {
+    "date": "1980-04",
+    "year": 1980,
+    "label": "Apr 1980",
+    "text": "First Soviet offensive into the Panjshir Valley",
+    "detail": "The Panjshir Valley north of Kabul, close to the Salang highway that carried Soviet supplies, was the base of Ahmad Shah Massoud, the most effective mujahideen commander. In April 1980 Soviet and Afghan troops launched the first of nine major offensives there. Each time the guerrillas withdrew into the side valleys and mountains, and returned once the troops left. Further offensives followed in August and December 1980 and September 1981, with the same result.",
+    "lonlat": [
+     69.7,
+     35.35
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "1982-05-16",
+    "year": 1982,
+    "label": "16 May 1982",
+    "text": "Panjshir V, the largest offensive yet",
+    "detail": "On 16 May 1982 about 12,000 Soviet and Afghan troops attacked the Panjshir with hundreds of armoured vehicles and over 100 helicopters, landing some 4,200 airborne troops behind Massoud's defences. They occupied much of the valley floor and set up garrisons, but most of the mujahideen escaped and kept fighting from the heights. Villages were destroyed and much of the valley's population fled.",
+    "lonlat": [
+     69.65,
+     35.3
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "1983-01",
+    "year": 1983,
+    "label": "Jan 1983",
+    "text": "Massoud agrees a truce with Soviet forces",
+    "detail": "After repeated failed offensives, Massoud negotiated the first Soviet–mujahideen ceasefire directly with a Soviet military intelligence officer in January 1983. Soviet forces withdrew from most of the Panjshir, leaving a small garrison, and Massoud used the pause to extend his influence and organisation into neighbouring regions. The truce did not cover the Salang Pass, where fighting went on. Other resistance leaders criticised the deal, and full-scale fighting in the valley resumed in 1984.",
+    "lonlat": [
+     69.7,
+     35.35
+    ],
+    "kind": "treaty"
+   },
+   {
+    "date": "1983-07",
+    "year": 1983,
+    "label": "Jul 1983",
+    "text": "Mujahideen besiege Khost",
+    "detail": "In the eastern province of Paktia, near the Pakistani border, mujahideen forces surrounded the garrison town of Khost in July 1983. Its defenders could be supplied only by air for years. The siege symbolised the war's pattern: the government held the towns, while the resistance controlled much of the countryside and the routes to its bases and supply depots in Pakistan.",
+    "lonlat": [
+     69.92,
+     33.34
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "1984-04-19",
+    "year": 1984,
+    "label": "19 Apr 1984",
+    "text": "Panjshir VII offensive",
+    "detail": "When the 1983 truce collapsed, Soviet commanders launched the seventh and largest Panjshir offensive on 19 April 1984, preceded by heavy bombing that included high-altitude raids. Massoud, forewarned, had evacuated many civilians and fighters. Troops fought through the valley into September, but the mujahideen again survived, and Soviet forces evacuated the valley in September. Two more offensives followed, in September 1984 and June 1985; the last Soviet and Afghan troops left the lower Panjshir in June 1988.",
+    "lonlat": [
+     69.7,
+     35.35
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "1986-05-04",
+    "year": 1986,
+    "label": "4 May 1986",
+    "text": "Najibullah replaces Karmal",
+    "detail": "Mikhail Gorbachev, Soviet leader from 1985, wanted to end a costly war. On 4 May 1986 Karmal was replaced as party leader by Mohammad Najibullah, former head of the secret police. In the same year the United States began supplying the mujahideen with Stinger shoulder-fired anti-aircraft missiles, about 2,300 in all, through its covert programme Operation Cyclone, which made Soviet helicopters and aircraft far more vulnerable.",
+    "lonlat": [
+     69.17,
+     34.53
+    ],
+    "kind": "political"
+   },
+   {
+    "date": "1987-01",
+    "year": 1987,
+    "label": "Jan 1987",
+    "text": "Najibullah launches 'national reconciliation'",
+    "detail": "At the start of 1987 Najibullah announced a policy of national reconciliation, offering a ceasefire, power-sharing and an end to the party's monopoly in an effort to win over opponents and prepare for Soviet withdrawal. The main mujahideen parties, based in Peshawar in Pakistan, rejected the offer. Fighting continued, and the government relied ever more on militias paid with Soviet money.",
+    "lonlat": [
+     69.17,
+     34.53
+    ],
+    "kind": "political"
+   },
+   {
+    "date": "1987-11-19",
+    "year": 1987,
+    "label": "19 Nov 1987",
+    "text": "Operation Magistral relieves Khost",
+    "detail": "From 19 November 1987 to 10 January 1988 Soviet and Afghan forces fought to reopen the road from Gardez to besieged Khost, cut for months by the mujahideen. Soviet troops entered Khost on 30 December and convoys brought in supplies. It was one of the last big Soviet operations; once the main force pulled back, the mujahideen closed the road again.",
+    "lonlat": [
+     69.6,
+     33.5
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "1988-05-15",
+    "year": 1988,
+    "label": "15 May 1988",
+    "text": "Soviet withdrawal begins under the Geneva Accords",
+    "detail": "On 14 April 1988 Afghanistan and Pakistan signed the Geneva Accords at the United Nations in Geneva, with the Soviet Union and the United States as guarantors. They set a timetable for Soviet withdrawal, which began on 15 May. Half the troops had left by mid-August. The mujahideen were not party to the accords, and outside powers kept arming both sides.",
+    "lonlat": [
+     69.17,
+     34.53
+    ],
+    "kind": "treaty"
+   },
+   {
+    "date": "1989-02-15",
+    "year": 1989,
+    "label": "15 Feb 1989",
+    "text": "Last Soviet troops leave Afghanistan",
+    "detail": "The second phase of the withdrawal ran from November 1988, and on 15 February 1989 the last Soviet column crossed the Amu Darya bridge into the Uzbek SSR, led by the 40th Army's commander, General Boris Gromov. About 620,000 Soviet personnel had served in Afghanistan. The war had damaged the Soviet economy and the army's prestige, and it is often counted among the causes of the Soviet Union's collapse.",
+    "lonlat": [
+     67.42,
+     37.22
+    ],
+    "kind": "turning-point"
+   },
+   {
+    "date": "1989-03-05",
+    "year": 1989,
+    "label": "5 Mar 1989",
+    "text": "Mujahideen assault on Jalalabad fails",
+    "detail": "Expecting Najibullah's government to collapse, mujahideen groups backed by Pakistan's intelligence service attacked the eastern city of Jalalabad on 5 March 1989, joined by Arab volunteers. Government forces held the city, and fighting lasted until the end of June. The defeat divided the resistance and showed that the Afghan army could fight without Soviet troops. Najibullah's government survived until April 1992.",
+    "lonlat": [
+     70.45,
+     34.43
+    ],
+    "kind": "battle"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Soviet–Afghan War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Soviet%E2%80%93Afghan_War"
+   },
+   {
+    "title": "Office of the Historian, US State Dept: The Soviet Invasion of Afghanistan and the U.S. Response, 1978–1980",
+    "url": "https://history.state.gov/milestones/1977-1980/soviet-invasion-afghanistan"
+   },
+   {
+    "title": "1979 Herat uprising (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/1979_Herat_uprising"
+   },
+   {
+    "title": "Panjshir offensives (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Panjshir_offensives"
+   },
+   {
+    "title": "Geneva Accords (1988) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Geneva_Accords_(1988)"
+   },
+   {
+    "title": "Operation Cyclone (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Operation_Cyclone"
+   },
+   {
+    "title": "Operation Magistral (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Operation_Magistral"
+   },
+   {
+    "title": "Battle of Jalalabad (1989) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Jalalabad_(1989)"
+   }
+  ]
+ },
+ {
+  "id": "war-in-afghanistan-2001-2021",
+  "name": "War in Afghanistan (2001–2021)",
+  "moment": "september-11-afghanistan",
+  "span": [
+   2001,
+   2021
+  ],
+  "dateLabel": "7 October 2001 – 30 August 2021",
+  "summary": "After al-Qaeda's attacks on the United States on 11 September 2001 killed nearly 3,000 people, the Taliban government of Afghanistan refused to hand over Osama bin Laden. On 7 October US and British forces began air strikes, and with the anti-Taliban Northern Alliance they toppled the Taliban within weeks, though bin Laden escaped. A new government under Hamid Karzai was formed, and a NATO-led force (ISAF), eventually drawing troops from 51 countries, helped build the Afghan state and army. From 2006 the Taliban, regrouping from sanctuaries in Pakistan, waged a growing insurgency, especially in the south and east. A US troop surge in 2009–11 and the killing of bin Laden in 2011 did not end the fighting. ISAF's combat mission ended in 2014, and Afghan forces took the lead. Under the 2020 Doha Agreement the United States agreed to withdraw. As foreign troops left in 2021 the Afghan Republic collapsed, and the Taliban took Kabul on 15 August.",
+  "casualties": "An estimated 176,000 to more than 212,000 people were killed, including about 46,000 Afghan civilians, 66,000–92,000 Afghan security forces and about 3,500 coalition troops, 2,330 of them American.",
+  "sides": [
+   {
+    "name": "US-led coalition, Northern Alliance and Afghan Republic",
+    "members": [
+     {
+      "clio": "United States of America",
+      "from": 2001,
+      "to": 2021
+     },
+     {
+      "clio": "Kingdom of Great Britain",
+      "from": 2001,
+      "to": 2021
+     },
+     {
+      "clio": "Afghanistan",
+      "from": 2001,
+      "to": 2021
+     }
+    ]
+   },
+   {
+    "name": "Taliban and al-Qaeda",
+    "members": [
+     {
+      "clio": "Taliban",
+      "from": 2001,
+      "to": 2005
+     }
+    ]
+   }
+  ],
+  "events": [
+   {
+    "date": "2001-09-09",
+    "year": 2001,
+    "label": "9 Sep 2001",
+    "text": "Northern Alliance commander Massoud assassinated",
+    "detail": "By 2001 the Taliban, in power in Kabul since 1996, controlled most of Afghanistan and sheltered Osama bin Laden's al-Qaeda. The main resistance was the Northern Alliance, led by Ahmad Shah Massoud, which held a corner of the north-east. On 9 September two al-Qaeda operatives posing as journalists killed Massoud with a bomb hidden in their camera. Two days later al-Qaeda hijackers attacked New York and Washington, killing close to 3,000 people.",
+    "lonlat": [
+     69.47,
+     37.37
+    ],
+    "kind": "political"
+   },
+   {
+    "date": "2001-10-07",
+    "year": 2001,
+    "label": "7 Oct 2001",
+    "text": "US and British air strikes begin",
+    "detail": "The Taliban refused US demands to hand over bin Laden. On 18 September Congress authorised the use of force against those responsible for 9/11, and on 7 October US and British forces began bombing Taliban and al-Qaeda targets in Operation Enduring Freedom. Small teams of CIA officers and special forces joined Northern Alliance commanders, directing air strikes onto Taliban front lines.",
+    "lonlat": [
+     69.17,
+     34.53
+    ],
+    "kind": "invasion"
+   },
+   {
+    "date": "2001-11-09",
+    "year": 2001,
+    "label": "9 Nov 2001",
+    "text": "Mazar-i-Sharif falls to the Northern Alliance",
+    "detail": "Supported by US air power and special forces, forces loyal to the Uzbek commander Abdul Rashid Dostum captured the northern city of Mazar-i-Sharif on 9 November. Its fall broke the Taliban's hold on the north, and their front lines began to collapse across the country as commanders defected or retreated. Within days Northern Alliance forces were advancing on Kabul, while Pashtun anti-Taliban leaders, including Hamid Karzai, rallied support in the south.",
+    "lonlat": [
+     67.11,
+     36.71
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "2001-11-13",
+    "year": 2001,
+    "label": "13 Nov 2001",
+    "text": "Taliban abandon Kabul",
+    "detail": "As Northern Alliance troops advanced from the Shomali plain, Taliban fighters withdrew from Kabul overnight, and on 13 November coalition-backed forces entered the capital. Residents greeted the end of Taliban rule with music, shaved beards and uncovered television sets, all banned under the regime. Taliban and al-Qaeda fighters fell back to the south and to the eastern mountains near Pakistan.",
+    "lonlat": [
+     69.17,
+     34.53
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "2001-12-03",
+    "year": 2001,
+    "label": "3 Dec 2001",
+    "text": "Battle of Tora Bora; bin Laden escapes",
+    "detail": "Bin Laden and hundreds of al-Qaeda fighters retreated to the Tora Bora cave complex in the White Mountains near the Pakistani border. From 3 to 17 December Afghan militias, backed by US bombing and small special-forces teams, attacked the complex. Few US ground troops were committed to block escape routes, and bin Laden slipped away, reportedly around 16 December, probably into Pakistan.",
+    "lonlat": [
+     70.25,
+     34.12
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "2001-12-09",
+    "year": 2001,
+    "label": "9 Dec 2001",
+    "text": "Taliban surrender Kandahar; Karzai to lead interim government",
+    "detail": "On 5 December Afghan factions meeting in Bonn, Germany, signed an agreement naming Hamid Karzai, a Pashtun leader from Kandahar, head of an interim administration. Four days later the Taliban surrendered Kandahar, their spiritual capital, and their leader Mullah Omar fled. The UN Security Council then authorised an International Security Assistance Force (ISAF) to help secure Kabul. Within two months of the first air strikes, the Taliban regime had fallen, though its leaders and many fighters survived.",
+    "lonlat": [
+     65.71,
+     31.61
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "2002-03",
+    "year": 2002,
+    "label": "Mar 2002",
+    "text": "Operation Anaconda in the Shah-i-Kot valley",
+    "detail": "In March 2002 US and allied troops, with Afghan forces, attacked Taliban and al-Qaeda fighters gathered in the Shah-i-Kot valley in Paktia province, the first major ground operation since Tora Bora. The fighting in high mountains in winter was fierce and cost US lives, and many fighters escaped to Pakistan. In June a loya jirga, a grand assembly, chose Karzai to head a transitional government.",
+    "lonlat": [
+     69.31,
+     33.37
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "2003-08-11",
+    "year": 2003,
+    "label": "11 Aug 2003",
+    "text": "NATO takes command of ISAF",
+    "detail": "On 11 August 2003 NATO took over command of ISAF, the alliance's first operational commitment outside Europe. Over the next three years ISAF expanded from Kabul across the whole country, completing the process in October 2006, while a separate US-led force continued counter-terrorism operations. At its height ISAF had more than 130,000 personnel from 51 NATO and partner countries, by far the largest contingent coming from the United States, followed by Britain and Germany.",
+    "lonlat": [
+     69.17,
+     34.53
+    ],
+    "kind": "political"
+   },
+   {
+    "date": "2004-10-09",
+    "year": 2004,
+    "label": "9 Oct 2004",
+    "text": "Karzai wins Afghanistan's first presidential election",
+    "detail": "A loya jirga agreed a new constitution with a strong presidency in January 2004. On 9 October millions of Afghans, including many women, voted in the country's first direct presidential election, and Karzai won with a majority. Western governments hailed it as a milestone, but the state remained weak, dependent on foreign aid and troubled by corruption and warlord power.",
+    "lonlat": [
+     69.17,
+     34.53
+    ],
+    "kind": "political"
+   },
+   {
+    "date": "2006-04",
+    "year": 2006,
+    "label": "Apr 2006",
+    "text": "British troops deploy to Helmand as the Taliban resurge",
+    "detail": "Regrouped in Pakistan's border areas, the Taliban stepped up their insurgency; suicide attacks rose from 27 in 2005 to 139 in 2006. As ISAF expanded into the south, Britain sent more than 3,000 troops to Helmand province in April 2006, based at Camp Bastion, while Canadian, Dutch and US forces fought in Kandahar and neighbouring provinces. Fighting in the south soon became far heavier than expected.",
+    "lonlat": [
+     64.22,
+     31.86
+    ],
+    "kind": "other"
+   },
+   {
+    "date": "2009-12-01",
+    "year": 2009,
+    "label": "1 Dec 2009",
+    "text": "US surge: 30,000 more troops ordered to Afghanistan",
+    "detail": "With the Taliban gaining ground, President Barack Obama announced on 1 December 2009 that 30,000 more US troops would be sent, on top of the 68,000 already deployed, but set a date to begin withdrawing them in 2011. US numbers peaked at about 100,000 in 2010–11, with most of the surge forces sent to the south. The surge pushed back the Taliban in parts of Helmand and Kandahar but did not defeat them.",
+    "lonlat": [
+     69.17,
+     34.53
+    ],
+    "kind": "political"
+   },
+   {
+    "date": "2011-05-01",
+    "year": 2011,
+    "label": "1 May 2011",
+    "text": "US special forces kill Osama bin Laden in Pakistan",
+    "detail": "After years of intelligence work, US Navy SEALs raided a compound in Abbottabad, a Pakistani garrison town, on the night of 1–2 May 2011 local time and killed bin Laden. The discovery that he had been living close to Pakistan's military academy strained US–Pakistani relations. Al-Qaeda's founder had evaded capture for almost a decade. In June 2011 Obama announced the withdrawal of 33,000 surge troops by summer 2012, as the focus shifted to handing security over to Afghan forces.",
+    "lonlat": [
+     73.24,
+     34.17
+    ],
+    "kind": "turning-point"
+   },
+   {
+    "date": "2014-10-26",
+    "year": 2014,
+    "label": "26 Oct 2014",
+    "text": "Britain hands over Camp Bastion",
+    "detail": "Security responsibility passed gradually to Afghan forces from July 2011, and they took the lead nationwide in June 2013. On 26 October 2014 British forces handed Camp Bastion to the Afghan army, ending the UK's combat mission in Helmand, where some 9,500 British troops had served at the peak. About 450 British personnel died in Afghanistan, many from improvised explosive devices.",
+    "lonlat": [
+     64.22,
+     31.86
+    ],
+    "kind": "other"
+   },
+   {
+    "date": "2014-12",
+    "year": 2014,
+    "label": "Dec 2014",
+    "text": "ISAF's combat mission ends",
+    "detail": "At the end of 2014 ISAF was wound up and Afghan forces assumed full responsibility for security. From 1 January 2015 a smaller NATO mission, Resolute Support, trained and advised Afghan forces, while US forces kept up counter-terrorism operations. Afghan troops and police took very heavy casualties as the Taliban captured rural districts and briefly seized cities such as Kunduz.",
+    "lonlat": [
+     69.17,
+     34.53
+    ],
+    "kind": "political"
+   },
+   {
+    "date": "2020-02-29",
+    "year": 2020,
+    "label": "29 Feb 2020",
+    "text": "US–Taliban Doha Agreement",
+    "detail": "After talks that excluded the Afghan government, the United States and the Taliban signed an agreement in Doha, Qatar, on 29 February 2020. The US committed to withdraw all its forces, and the Taliban promised to stop al-Qaeda and other groups from using Afghanistan to threaten the US and to negotiate with Kabul. Talks between the Taliban and the Afghan government began in Doha in September but made little progress.",
+    "lonlat": [
+     51.53,
+     25.29
+    ],
+    "kind": "treaty"
+   },
+   {
+    "date": "2021-08-15",
+    "year": 2021,
+    "label": "15 Aug 2021",
+    "text": "Taliban enter Kabul as the Republic collapses",
+    "detail": "On 14 April 2021 President Joe Biden announced that all US troops would leave by 11 September. As foreign forces pulled out, the Taliban launched a rapid offensive, taking rural districts and then provincial capitals, often after local forces surrendered. On 15 August President Ashraf Ghani fled the country and Taliban fighters entered Kabul and the presidential palace, ending the Islamic Republic.",
+    "lonlat": [
+     69.17,
+     34.53
+    ],
+    "kind": "turning-point"
+   },
+   {
+    "date": "2021-08-26",
+    "year": 2021,
+    "label": "26 Aug 2021",
+    "text": "Suicide bombing at Kabul airport",
+    "detail": "Tens of thousands of Afghans crowded around Kabul airport hoping to be evacuated. On 26 August a suicide bomber from the local branch of the Islamic State struck at the Abbey Gate, killing 13 US service members and at least 170 Afghans. The evacuation continued; more than 120,000 people were flown out in the final weeks of the withdrawal. Many Afghans who had worked with foreign forces or the Republic were left behind.",
+    "lonlat": [
+     69.21,
+     34.56
+    ],
+    "kind": "atrocity"
+   },
+   {
+    "date": "2021-08-30",
+    "year": 2021,
+    "label": "30 Aug 2021",
+    "text": "Last US troops leave Afghanistan",
+    "detail": "The last US military aircraft left Kabul airport shortly before midnight on 30 August 2021, ending nearly 20 years of war, the longest in US history. The Taliban declared an interim government of their Islamic Emirate in September, imposing severe restrictions on women and girls, including bans on secondary schooling, while the country faced economic collapse and a humanitarian crisis as foreign aid was cut off.",
+    "lonlat": [
+     69.21,
+     34.56
+    ],
+    "kind": "turning-point"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Council on Foreign Relations: The U.S. War in Afghanistan, 1999–2021 (timeline)",
+    "url": "https://www.cfr.org/timeline/us-war-afghanistan"
+   },
+   {
+    "title": "War in Afghanistan (2001–2021) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/War_in_Afghanistan_(2001%E2%80%932021)"
+   },
+   {
+    "title": "NATO: ISAF's mission in Afghanistan (2001–2014)",
+    "url": "https://www.nato.int/cps/en/natohq/topics_69366.htm"
+   },
+   {
+    "title": "National Army Museum: War in Afghanistan",
+    "url": "https://www.nam.ac.uk/explore/war-afghanistan"
+   }
+  ]
+ },
+ {
+  "id": "russian-invasion-of-ukraine",
+  "name": "Russian invasion of Ukraine",
+  "moment": null,
+  "span": [
+   2022,
+   2024
+  ],
+  "dateLabel": "24 February 2022 – ongoing (shown to 2024)",
+  "summary": "Conflict between Russia and Ukraine began in 2014, when Russia seized and annexed Crimea and backed separatists in the eastern Donbas region. On 24 February 2022 Russia launched a full-scale invasion from the north, east and south, which President Vladimir Putin called a 'special military operation'. Ukrainian resistance defeated the attack on Kyiv, and Russian forces withdrew from the north in April, leaving evidence of war crimes. Russia took Mariupol and much of the south-east, but Ukrainian counteroffensives in late 2022 recaptured large areas around Kharkiv and Kherson. Russia declared the annexation of four Ukrainian regions in September 2022, a move rejected internationally. In 2023 Russia took Bakhmut and a Ukrainian counteroffensive made little progress; in 2024 Russian forces advanced slowly in the east, while Ukraine launched an incursion into Russia's Kursk region, where North Korean troops joined the fighting. In 2023 the International Criminal Court issued an arrest warrant for Putin. The war continues, with Russia occupying about a fifth of Ukraine.",
+  "casualties": "Military killed and wounded are estimated in the hundreds of thousands on each side, and the UN had verified at least 12,340 civilian deaths by 30 November 2024, a figure it says is an undercount.",
+  "sides": [
+   {
+    "name": "Ukraine",
+    "members": [
+     {
+      "clio": "Ukraine",
+      "from": 2022,
+      "to": 2024
+     }
+    ]
+   },
+   {
+    "name": "Russia and North Korea",
+    "members": [
+     {
+      "clio": "Russian Federation",
+      "from": 2022,
+      "to": 2024
+     },
+     {
+      "clio": "Democratic People's Republic of Korea",
+      "from": 2024,
+      "to": 2024
+     }
+    ]
+   }
+  ],
+  "events": [
+   {
+    "date": "2022-02-21",
+    "year": 2022,
+    "label": "21 Feb 2022",
+    "text": "Putin recognises the Donetsk and Luhansk 'people's republics'",
+    "detail": "After massing between 169,000 and 190,000 troops on Ukraine's borders, including in Belarus, Putin recognised the independence of the two Russian-backed separatist entities in eastern Ukraine on 21 February 2022. They had been at war with Ukrainian forces since 2014. The next day Russia sent troops into the areas they held, describing them as peacekeepers. Western governments responded with the first new sanctions.",
+    "lonlat": [
+     37.62,
+     55.75
+    ],
+    "kind": "political"
+   },
+   {
+    "date": "2022-02-24",
+    "year": 2022,
+    "label": "24 Feb 2022",
+    "text": "Russia launches a full-scale invasion",
+    "detail": "At dawn on 24 February Putin announced a 'special military operation', and missile strikes hit cities across Ukraine. Russian forces advanced from Belarus towards Kyiv, from the north-east towards Kharkiv, and from Crimea into the south. Airborne troops attacked Hostomel airfield near the capital. President Volodymyr Zelenskyy declared martial law and general mobilisation and stayed in Kyiv, and millions of Ukrainians began to flee.",
+    "lonlat": [
+     30.52,
+     50.45
+    ],
+    "kind": "invasion"
+   },
+   {
+    "date": "2022-03-16",
+    "year": 2022,
+    "label": "16 Mar 2022",
+    "text": "Russian airstrike destroys the Mariupol drama theatre",
+    "detail": "Russian forces encircled Mariupol, a port city on the Sea of Azov, in the first days of the war and subjected it to constant bombardment, cutting off water, power and food. On 16 March an airstrike destroyed the city's drama theatre, where hundreds of civilians were sheltering; the word 'children' had been painted in large letters outside. The UN confirmed 1,348 civilian deaths in the siege and believes the real toll is thousands higher.",
+    "lonlat": [
+     37.55,
+     47.1
+    ],
+    "kind": "atrocity"
+   },
+   {
+    "date": "2022-04-01",
+    "year": 2022,
+    "label": "1 Apr 2022",
+    "text": "Russian withdrawal from Kyiv region reveals killings in Bucha",
+    "detail": "The advance on Kyiv stalled in early March, and a Ukrainian counteroffensive from late March forced Russian forces to withdraw from the north, completed by 7 April. When Ukrainian troops re-entered the suburb of Bucha on 1 April they found bodies of civilians in the streets. The UN documented at least 73 unlawful killings there, with more under investigation; Ukrainian authorities recovered 458 bodies. Russia denied responsibility.",
+    "lonlat": [
+     30.21,
+     50.55
+    ],
+    "kind": "atrocity"
+   },
+   {
+    "date": "2022-05-20",
+    "year": 2022,
+    "label": "20 May 2022",
+    "text": "Mariupol falls as Azovstal defenders surrender",
+    "detail": "The last Ukrainian defenders of Mariupol held out for weeks in the tunnels of the Azovstal steelworks. After evacuations of civilians and wounded soldiers, the remaining troops surrendered, the last on 20 May, and Russia took full control of the ruined city. Its capture gave Russia a land corridor from the Donbas to Crimea. In the summer Russian forces also took Sievierodonetsk and Lysychansk in Luhansk region.",
+    "lonlat": [
+     37.61,
+     47.1
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "2022-07-22",
+    "year": 2022,
+    "label": "22 Jul 2022",
+    "text": "Black Sea Grain Initiative signed in Istanbul",
+    "detail": "Russia's blockade of Ukraine's Black Sea ports had trapped millions of tonnes of grain and pushed up world food prices. On 22 July Ukraine and Russia signed separate agreements with Turkey and the UN in Istanbul, allowing grain ships to sail through a protected corridor. The deal let Ukraine resume large-scale exports. Russia briefly suspended its participation in October 2022 and finally withdrew on 17 July 2023, after which Ukraine kept shipping grain through its own corridor.",
+    "lonlat": [
+     29.0,
+     41.04
+    ],
+    "kind": "treaty"
+   },
+   {
+    "date": "2022-09-06",
+    "year": 2022,
+    "label": "6 Sep 2022",
+    "text": "Ukraine's Kharkiv counteroffensive",
+    "detail": "On 6 September Ukrainian forces, equipped with Western-supplied weapons including HIMARS rocket launchers, broke through thinly held Russian lines in Kharkiv region. Within days they had retaken Balakliia, Kupiansk and the logistics hub of Izium, recapturing thousands of square kilometres. It was the largest Ukrainian gain since the defence of Kyiv. On 21 September Putin announced a partial mobilisation of 300,000 reservists, and many Russian men fled abroad to avoid the call-up.",
+    "lonlat": [
+     37.26,
+     49.21
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "2022-09-30",
+    "year": 2022,
+    "label": "30 Sep 2022",
+    "text": "Russia proclaims the annexation of four Ukrainian regions",
+    "detail": "After referendums held under occupation and condemned as shams by Ukraine and Western governments, Putin announced on 30 September the annexation of Donetsk, Luhansk, Kherson and Zaporizhzhia regions, even though Russian forces did not control all of them. The UN General Assembly later declared the annexations invalid, and Ukraine and its allies regard them as illegal. Russia had already annexed Crimea in 2014 after a disputed referendum.",
+    "lonlat": [
+     37.62,
+     55.75
+    ],
+    "kind": "political"
+   },
+   {
+    "date": "2022-11-11",
+    "year": 2022,
+    "label": "11 Nov 2022",
+    "text": "Ukrainian troops enter Kherson",
+    "detail": "Kherson was the only regional capital Russia had captured since February. After months of Ukrainian strikes on bridges and supply lines across the Dnipro, Russia announced a withdrawal to the river's east bank, and Ukrainian troops entered the city on 11 November to celebrations. The retreat left all territory west of the Dnipro in Ukrainian hands, but the city remained within range of Russian artillery across the river and was shelled for the rest of the war.",
+    "lonlat": [
+     32.62,
+     46.64
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "2023-05-20",
+    "year": 2023,
+    "label": "20 May 2023",
+    "text": "Wagner Group captures Bakhmut",
+    "detail": "The battle for Bakhmut, a small city in Donetsk region, became the longest and bloodiest of the war. Russia's Wagner Group, a private military company that recruited heavily among prisoners, led months of costly assaults. Wagner claimed full control on 20 May 2023 and Russia declared victory the next day. US officials estimated that Russia suffered about 100,000 casualties in the battle.",
+    "lonlat": [
+     38.0,
+     48.59
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "2023-06",
+    "year": 2023,
+    "label": "Jun 2023",
+    "text": "Ukraine's southern counteroffensive begins",
+    "detail": "In early June Ukraine launched a long-awaited counteroffensive, mainly in Zaporizhzhia and Donetsk regions, aiming to cut the land corridor to Crimea. Its brigades, many trained and equipped by NATO countries, ran into deep minefields, trenches and drones in Russia's prepared defences. After months of fighting and heavy losses on both sides, Ukraine had regained only a few villages, and by late 2023 the front was again largely static.",
+    "lonlat": [
+     35.9,
+     47.45
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "2023-06-06",
+    "year": 2023,
+    "label": "6 Jun 2023",
+    "text": "Destruction of the Kakhovka Dam",
+    "detail": "Early on 6 June the Kakhovka Dam on the Dnipro, then held by Russian forces, was breached, draining its huge reservoir and flooding towns and villages downstream on both banks. About 600 square kilometres were flooded, and dozens to hundreds of people died, many in the Russian-occupied town of Oleshky. Most independent analysts attribute the breach to Russian forces; Russia denied responsibility and blamed Ukraine.",
+    "lonlat": [
+     33.37,
+     46.78
+    ],
+    "kind": "other"
+   },
+   {
+    "date": "2023-06-24",
+    "year": 2023,
+    "label": "24 Jun 2023",
+    "text": "Wagner mutiny in Russia",
+    "detail": "After months of feuding with Russia's defence ministry, Wagner leader Yevgeny Prigozhin led his fighters in a brief armed rebellion on 23–24 June, seizing the military headquarters in Rostov-on-Don and advancing towards Moscow. A deal brokered by Belarus ended the mutiny within a day. Prigozhin was killed when his plane crashed two months later. The mutiny exposed divisions in Russia's war effort, and Wagner's fighters were absorbed into other forces.",
+    "lonlat": [
+     39.72,
+     47.23
+    ],
+    "kind": "political"
+   },
+   {
+    "date": "2024-02-17",
+    "year": 2024,
+    "label": "17 Feb 2024",
+    "text": "Russia captures Avdiivka",
+    "detail": "With Western military aid delayed and Ukrainian forces short of artillery ammunition, Russia regained the initiative. After months of attacks, Ukrainian troops withdrew from the fortified town of Avdiivka, near Donetsk city, which Russian forces captured on 17 February 2024. It was Russia's largest gain since Bakhmut. Russian forces then advanced slowly westward towards the town of Pokrovsk through the year, at heavy cost in men and equipment.",
+    "lonlat": [
+     37.75,
+     48.14
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "2024-05-10",
+    "year": 2024,
+    "label": "10 May 2024",
+    "text": "Russia opens a new offensive in Kharkiv region",
+    "detail": "On 10 May Russian forces crossed the border into northern Kharkiv region, attacking towards Vovchansk and opening a new front that stretched Ukraine's defences. The advance was halted within weeks, after the United States allowed Ukraine to strike Russian forces just across the border with American weapons, but Kharkiv city, Ukraine's second largest, remained under heavy missile and glide-bomb attack throughout the year.",
+    "lonlat": [
+     36.94,
+     50.29
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "2024-08-06",
+    "year": 2024,
+    "label": "6 Aug 2024",
+    "text": "Ukraine launches an incursion into Russia's Kursk region",
+    "detail": "On 6 August about 11,000 Ukrainian troops crossed into Russia's Kursk region, seizing the town of Sudzha and hundreds of square kilometres: the largest foreign attack on Russian territory since the Second World War. Ukraine hoped to divert Russian forces from the Donbas and gain a bargaining chip. Russia assembled around 78,000 troops to push the Ukrainians back, and the fighting in Kursk continued into 2025.",
+    "lonlat": [
+     35.27,
+     51.19
+    ],
+    "kind": "invasion"
+   },
+   {
+    "date": "2024-11",
+    "year": 2024,
+    "label": "Nov 2024",
+    "text": "North Korean troops join the fighting in Kursk",
+    "detail": "About 10,000–12,000 North Korean soldiers were sent to Russia in autumn 2024, arriving in the Kursk region in late October, and the first clashes with Ukrainian forces were reported in early November. Russia and North Korea acknowledged the deployment only in April 2025. At the end of 2024 the war continued, with Russia occupying about a fifth of Ukraine's territory.",
+    "lonlat": [
+     35.5,
+     51.4
+    ],
+    "kind": "battle"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Russian invasion of Ukraine (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Russian_invasion_of_Ukraine"
+   },
+   {
+    "title": "Council on Foreign Relations, Global Conflict Tracker: War in Ukraine",
+    "url": "https://www.cfr.org/global-conflict-tracker/conflict/conflict-ukraine"
+   },
+   {
+    "title": "Kyiv Independent: Over 12,000 civilians killed in Ukraine since Russia's full-scale war, UN says",
+    "url": "https://kyivindependent.com/over-12-000-civilians-killed-in-ukraine-since-russias-full-scale-war-un-says"
+   },
+   {
+    "title": "Siege of Mariupol (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Siege_of_Mariupol"
+   },
+   {
+    "title": "Bucha massacre (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Bucha_massacre"
+   },
+   {
+    "title": "Destruction of the Kakhovka Dam (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Destruction_of_the_Kakhovka_Dam"
+   },
+   {
+    "title": "North Korean involvement in the Russian invasion of Ukraine (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/North_Korean_involvement_in_the_Russian_invasion_of_Ukraine"
+   },
+   {
+    "title": "ICC arrest warrants for Vladimir Putin and Maria Lvova-Belova (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/International_Criminal_Court_arrest_warrants_for_Vladimir_Putin_and_Maria_Lvova-Belova"
+   }
+  ]
+ }
+]
