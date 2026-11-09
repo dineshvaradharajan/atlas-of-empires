@@ -72,7 +72,7 @@ class Track:
         field = "coords" if closed else "line"
         prev, self.keys = None, []
         for k in item.get("keys", []):
-            p = align(resample(k[field], 96 if closed else 64, closed), prev, closed)
+            p = align(resample(k[field], 192 if closed else 128, closed), prev, closed)
             prev = p
             self.keys.append((frac(k["date"]), p))
         last = self.keys[-1][0] if self.keys else 0
@@ -159,6 +159,13 @@ class War:
                     m[x["clio"]] = i
         return m
 
+    def base_year(self, t):
+        """Which year's borders to draw at time t ("baseYears" overrides, e.g. 1917 borders until Brest-Litovsk)."""
+        for o in self.cine.get("baseYears", []):
+            if frac(o["start"]) <= t <= frac(o["end"]):
+                return o["year"]
+        return int(math.floor(t))
+
     def states(self, year):
         start = max(c for c in self.chunk_starts if c <= year)
         if start not in self.chunks:
@@ -176,7 +183,7 @@ class War:
         """Side index holding a point at time t (occupation first, then the state it lies in), or None."""
         sm = self.sides(t)
         base, where = None, None
-        for p, polys in self.states(int(math.floor(t))):
+        for p, polys in self.states(self.base_year(t)):
             if any(point_in_ring(pt, poly[0]) and not any(point_in_ring(pt, h) for h in poly[1:]) for poly in polys):
                 base, where = sm.get(p["n"], sm.get(p.get("k"))), p["n"]
                 break

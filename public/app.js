@@ -1184,7 +1184,10 @@ function renderWarChart() {
 // Continuous playback: a clock (S.wt, fractional year) drives the borders, front lines, occupied areas, offensive
 // arrows, battle markers, subtitles and the camera. Layers come from content/cinema/<war>.json; wars without one
 // still get the clock, subtitles and a camera that follows the events.
-const warYear = (t) => { const w = S.war; return Math.max(w.span[0], Math.min(w.span[1], Math.floor(t + 1e-9))); };
+const warYear = (t) => { // which year's borders to show; a war can override (e.g. 1917 borders until Brest-Litovsk)
+  const w = S.war, o = (S.cine?.baseYears || []).find((b) => fracDate(b.start) <= t && t <= fracDate(b.end));
+  return o ? o.year : Math.max(w.span[0], Math.min(w.span[1], Math.floor(t + 1e-9)));
+};
 function cineKnots(w, C) { // playback seconds <-> war time; half real time, half evenly spaced events (busy months play slower)
   const ev = w.events.map(evTime), n = ev.length;
   for (let i = 0; i < n;) { // events known only to the year: spread them through that year so the clock still moves
@@ -1250,7 +1253,7 @@ async function loadCinema(w) {
   const c = await fetch(`data/cinema/${encodeURIComponent(w.id)}.json`).then((r) => r.json());
   const prep = (x, closed) => {
     let prev = null;
-    x.keys = (x.keys || []).map((k) => { const pts = alignTo(resample(k.line || k.coords, closed ? 96 : 64, closed), prev, closed); prev = pts; return { t: fracDate(k.date), pts }; });
+    x.keys = (x.keys || []).map((k) => { const pts = alignTo(resample(k.line || k.coords, closed ? 192 : 128, closed), prev, closed); prev = pts; return { t: fracDate(k.date), pts }; });
     x.tEnd = x.end ? fracDate(x.end) : null;
   };
   (c.fronts = c.fronts || []).forEach((f) => prep(f, false));

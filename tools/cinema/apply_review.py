@@ -2,7 +2,7 @@
 """Merge chapter-review patches into a war cinema file.
 
 A patch (content/factcheck/chapter-review-*.json, key "patch") may contain:
-  fronts:          {"<front name>": {"add": [{"date", "line"}], "remove": ["<date>", ...]}}
+  fronts:          {"<front name>": {"add": [{"date", "line"}], "remove": ["<date>", ...], "end": "<date>"|null}}
   occupations:     {"<name>": {"add": [{"date", "coords"}], "remove": [...], "end": "<date>"|null, "side": 0|1}}
   new_fronts:      [{"name", "keys": [...]}]
   new_occupations: [{"name", "side", "keys": [...], "end"?}]
@@ -10,6 +10,8 @@ A patch (content/factcheck/chapter-review-*.json, key "patch") may contain:
   new_arrows:      [{"name", "side", "start", "end", "path"}]
   remove_arrows:   ["<arrow name>", ...]
   chapters:        {"<chapter id>": {"text"?, "arrows"?, "start"?, "end"?, "bbox"?}}
+  battles:         {"<battle name>": {"start"?, "end"?, "lonlat"?, "casualties"?, "casNum"?}}
+  new_battles:     [{"name", "start", "end", "lonlat", "casualties", "casNum"}]   (casualties: mainstream range, sourced)
 and the review file's top-level "claims" list is appended to the cinema file's "claims" (deduplicated).
 An "add" keyframe with an existing date replaces it.
 
@@ -34,7 +36,11 @@ def apply(c, review, log):
     for n, ch in (p.get("fronts") or {}).items():
         if n not in fr:
             log.append(f"! unknown front {n!r}"); continue
-        fr[n]["keys"] = merge_keys(fr[n]["keys"], ch.get("add"), ch.get("remove")); log.append(f"front {n}: +{len(ch.get('add') or [])} -{len(ch.get('remove') or [])}")
+        fr[n]["keys"] = merge_keys(fr[n]["keys"], ch.get("add"), ch.get("remove"))
+        if "end" in ch:
+            if ch["end"] is None: fr[n].pop("end", None)
+            else: fr[n]["end"] = ch["end"]
+        log.append(f"front {n}: +{len(ch.get('add') or [])} -{len(ch.get('remove') or [])}" + (f" end {ch['end']}" if "end" in ch else ""))
     for n, ch in (p.get("occupations") or {}).items():
         if n not in oc:
             log.append(f"! unknown occupation {n!r}"); continue
@@ -56,6 +62,13 @@ def apply(c, review, log):
         c["arrows"] = [a for a in c["arrows"] if a["name"] != x["name"]] + [x]; log.append(f"new arrow {x['name']}")
     for n in p.get("remove_arrows") or []:
         c["arrows"] = [a for a in c["arrows"] if a["name"] != n]; log.append(f"removed arrow {n}")
+    bt = {x["name"]: x for x in c.get("battles", [])}
+    for n, ch in (p.get("battles") or {}).items():
+        if n not in bt:
+            log.append(f"! unknown battle {n!r}"); continue
+        bt[n].update({k: v for k, v in ch.items() if k in ("start", "end", "lonlat", "casualties", "casNum")}); log.append(f"battle {n}: {', '.join(ch)}")
+    for x in p.get("new_battles") or []:
+        c["battles"] = [b for b in c.get("battles", []) if b["name"] != x["name"]] + [x]; log.append(f"new battle {x['name']}")
     chs = {x["id"]: x for x in c.get("chapters", [])}
     for i, ch in (p.get("chapters") or {}).items():
         if i not in chs:

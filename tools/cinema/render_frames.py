@@ -82,7 +82,7 @@ def frame(W_, ch, t, label, claims):
     sm = W_.sides(t)
     g = [f'<rect width="{W}" height="{H}" fill="#ffffff"/>']
     labels = []
-    for p, polys in W_.states(int(math.floor(t))):
+    for p, polys in W_.states(W_.base_year(t)):
         d = "".join(path(poly[0], P, True) for poly in polys if any(ext[0] - 4 <= q[0] <= ext[1] + 4 and ext[2] - 4 <= q[1] <= ext[3] + 4 for q in poly[0]))
         if not d:
             continue
@@ -92,7 +92,7 @@ def frame(W_, ch, t, label, claims):
             labels.append((P(p["l"]), p["n"]))
     t0 = ch["t0"]
     for sd in range(len(W_.war["sides"])):  # occupied ground is only drawn on states not on the occupier's side
-        d = "".join(path(poly[0], P, True) for p, polys in W_.states(int(math.floor(t))) if sm.get(p["n"], sm.get(p.get("k"))) != sd for poly in polys if any(ext[0] - 4 <= q[0] <= ext[1] + 4 and ext[2] - 4 <= q[1] <= ext[3] + 4 for q in poly[0]))
+        d = "".join(path(poly[0], P, True) for p, polys in W_.states(W_.base_year(t)) if sm.get(p["n"], sm.get(p.get("k"))) != sd for poly in polys if any(ext[0] - 4 <= q[0] <= ext[1] + 4 and ext[2] - 4 <= q[1] <= ext[3] + 4 for q in poly[0]))
         g.append(f'<clipPath id="notown{sd}"><path d="{d}"/></clipPath>')
     for o in W_.occs:
         r = o.at(t)
