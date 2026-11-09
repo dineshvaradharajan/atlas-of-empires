@@ -345,7 +345,7 @@ async function go(y, opts = {}) {
 }
 function renderAll() {
   if (!S.base) return;
-  if (S.war) { S.warMap = warSides(S.war, S.year); }
+  if (S.war) { S.warMap = warSides(S.war, S.year); drawMini(); }
   else if (!S.journey) updateWindow();
   else if (S.jRendered !== S.journey.id) renderJourneyChart();
   computeFeatured();
@@ -604,6 +604,7 @@ function setupMap() {
   const resize = () => {
     const r = canvas.getBoundingClientRect();
     if (!r.width) return;
+    const keep = S.zoom && S.width ? projection.invert(S.t.invert([S.width / 2, S.height / 2])) : null; // geographic centre to hold across the refit
     S.width = r.width; S.height = r.height; S.dpr = Math.min(2, devicePixelRatio || 1);
     canvas.width = r.width * S.dpr; canvas.height = r.height * S.dpr;
     if (GL) GL.resize(r.width, r.height, S.dpr);
@@ -614,6 +615,11 @@ function setupMap() {
     grat2d = new Path2D(geoPath(d3.geoGraticule10()));
     pathCache = new WeakMap();
     if (S.ghost) S.ghost.paths = S.ghost.feats.map((f) => new Path2D(geoPath(f) || ""));
+    if (keep && isFinite(keep[0])) {
+      const [x, y] = projection(keep), k = S.t.k;
+      d3.select(canvas).interrupt().call(S.zoom.transform, d3.zoomIdentity.translate(S.width / 2 - k * x, S.height / 2 - k * y).scale(k));
+      if (S.war && S.cine?.shots?.length && S.shotIdx >= 0) { S.shotIdx = -1; camFor(S.wt, null, true); } // the map area changed: re-aim the scene
+    }
     draw();
   };
   new ResizeObserver(resize).observe(canvas);
@@ -664,10 +670,11 @@ function fillOf(it) { // the fill for an item; "HATCH" = peoples pattern
   if (it.kind === "culture") return S.war ? theme.unknown : "HATCH";
   if (S.journey && inJourney(it)) return theme.highlight;
   if (it.p.recon && it.p.n === S.sel) return theme.highlight;
-  if (S.war) { const sd = warSideOf(it); return sd >= 0 ? SIDE_COLORS[sd % SIDE_COLORS.length] : theme.unknown; } // only the warring sides keep colour
+  if (S.war) { const sd = warSideOf(it); return sd >= 0 ? sideTint(sd) : theme.unknown; } // only the warring sides keep (soft) colour
   return colorOf(it.key);
 }
 function draw() {
+  S.lens = S.war && S.theatre ? lensRect() : null;
   if (!S.items.length || !sphere2d) return;
   if (GL) return drawGL();
   const { t } = S;
@@ -768,12 +775,13 @@ function drawLabels() {
     const [x0, y0] = projection(it.p.l);
     const x = t.applyX(x0), y = t.applyY(y0);
     if (x < -50 || y < -20 || x > S.width + 50 || y > S.height + 20) continue;
+    if (S.war && !inLens(x, y)) continue;
     const culture = it.kind !== "state";
     if (culture) { const top = S.items[pickAt(x, y)]; if (top && top.kind === "state") continue; }
-    const size = Math.max(10, Math.min(r / 6, strong ? 18 : 13));
+    const size = S.war ? Math.max(9, Math.min(r / 7, 12)) : Math.max(10, Math.min(r / 6, strong ? 18 : 13));
     let text = it.p.recon ? it.p.n.replace(/\s*\(.*\)$/, "") : clean(it.p.n);
-    ctx.font = culture ? `italic 500 ${size}px Inter, sans-serif` : `${strong ? 800 : 600} ${size}px Archivo, "Helvetica Neue", sans-serif`;
-    ctx.letterSpacing = culture ? "0px" : `${(size * 0.05).toFixed(1)}px`;
+    ctx.font = culture ? `italic 500 ${size}px Inter, sans-serif` : `${strong && !S.war ? 800 : 600} ${size}px Archivo, "Helvetica Neue", sans-serif`;
+    ctx.letterSpacing = culture ? "0px" : `${(size * (S.war ? 0.14 : 0.05)).toFixed(1)}px`;
     if (!culture) text = text.toUpperCase();
     let lines = [text], w = ctx.measureText(text).width;
     const maxW = r * 2.6;
@@ -799,8 +807,9 @@ function drawLabels() {
       lines.forEach((ln, k) => ctx.fillText(ln, x, y + (k - (lines.length - 1) / 2) * size * 1.1));
       continue;
     }
+    if (S.war) { ctx.globalAlpha = 0.62; ctx.fillStyle = theme.ink; lines.forEach((ln, k) => ctx.fillText(ln, x, y + (k - (lines.length - 1) / 2) * size * 1.1)); ctx.globalAlpha = 1; continue; } // quiet names under the action
     if (!strong) { ctx.lineWidth = 3; ctx.lineJoin = "round"; ctx.strokeStyle = theme.bg; }
-    ctx.fillStyle = strong ? inkOn(S.war && warSideOf(it) >= 0 ? SIDE_COLORS[warSideOf(it) % SIDE_COLORS.length] : colorOf(it.key)) : theme.labelSoft;
+    ctx.fillStyle = strong ? inkOn(colorOf(it.key)) : theme.labelSoft;
     lines.forEach((ln, k) => {
       const ly = y + (k - (lines.length - 1) / 2) * size * 1.1;
       if (!strong) ctx.strokeText(ln, x, ly);
@@ -1089,7 +1098,7 @@ async function openWar(id, idx = 0) {
   stopPlay();
   if (S.journey) exitJourney();
   S.sel = null; S.ghost = null; S.moment = null; S.war = w; S.view = "war"; S.wIdx = Math.max(0, Math.min(w.events.length - 1, idx));
-  S.cine = null; S.shotIdx = -1;
+  S.cine = null; S.shotIdx = -1; S.theatre = null; S.lensLock = null;
   try { S.cine = await loadCinema(w); } catch (e) { console.warn("war layers unavailable", e); }
   if (S.war !== w) return;
   S.cineK = cineKnots(w, S.cine);
@@ -1103,9 +1112,10 @@ async function goWarEvent(i, fit) {
   const e = w.events[S.wIdx];
   const K = S.cineK;
   S.wp = e ? K.P[S.wIdx + 1] : 0; S.wt = e ? K.T[S.wIdx + 1] : K.t0;
-  S.subAt = performance.now();
+  S.subAt = performance.now(); S.lensLock = null;
   S.warMap = null;
   await go(warYear(S.wt), { keepWar: true });
+  syncTheatre();
   if (S.war !== w) return;
   S.warMap = warSides(w, S.year);
   renderWarChart(); updateHud(); draw(); renderCol(true); writeHash();
@@ -1131,14 +1141,17 @@ function renderWarChart() {
   const years = []; for (let y = w.span[0]; y <= w.span[1]; y++) years.push(y);
   const step = Math.max(1, Math.ceil(years.length / 12));
   const C = S.cine;
-  $("#legend").innerHTML = w.sides.map((sd, i) => `<span><i class="sw" style="background:${SIDE_COLORS[i % SIDE_COLORS.length]}"></i>${esc(sd.name)}</span>`).join("")
+  $("#legend").innerHTML = w.sides.map((sd, i) => `<span><i class="sw" style="background:${sideTint(i)};outline:1.5px solid ${SIDE_COLORS[i % SIDE_COLORS.length]};outline-offset:-1.5px"></i>${esc(sd.name)}</span>`).join("")
     + `<span><i class="sw unknown"></i>Not in the war</span>`
-    + (C ? `<span class="wl"><i class="occ"></i>Occupied</span><span class="wl"><i class="fl"></i>Front line</span><span class="wl"><i class="ar"></i>Offensive</span><span class="wl"><i class="bt"></i>Battle (size = losses)</span>` : "");
-  el.innerHTML = `<div class="warbar">${years.map((y, i) => `<span class="wy${i % 2 ? " alt" : ""}" style="left:${X(y)}%;width:${X(y + 1) - X(y)}%">${(i % step === 0) ? shortYear(y) : ""}</span>`).join("")}</div>
+    + (C ? `<span class="wl"><i class="occ"></i>Occupied (occupier's colour)</span><span class="wl"><i class="fl"></i>Front line</span><span class="wl"><i class="ar"></i>Offensive</span><span class="wl"><i class="bt"></i>Battle under way</span>` : "");
+  const TH = S.cine?.theatres || [];
+  el.classList.toggle("has-the", !!TH.length);
+  el.innerHTML = (TH.length ? `<div class="wthe">${TH.map((th) => `<button type="button" data-the="${esc(th.id)}"><b>${esc(th.name)}</b><span class="st"></span></button>`).join("")}</div>` : "") + `<div class="warbar">${years.map((y, i) => `<span class="wy${i % 2 ? " alt" : ""}" style="left:${X(y)}%;width:${X(y + 1) - X(y)}%">${(i % step === 0) ? shortYear(y) : ""}</span>`).join("")}</div>
     <div class="wmarks">${w.events.map((e, i) => `<button class="mk ev wk-${esc(e.kind || "other")}${i === S.wIdx ? " on" : ""}" data-wev="${i}" style="left:${X(evTime(e))}%" aria-label="${esc(e.label || shortYear(e.year))}: ${esc(e.text)}"><span class="tipm">${esc(e.label || shortYear(e.year))} · ${esc(e.text)}</span></button>`).join("")}</div>
     <div class="wcur" style="left:${X(S.wt ?? t0)}%"></div>
     <div class="wnow"><b>${S.wIdx + 1}</b> / ${w.events.length} · ${esc(w.events[S.wIdx]?.label || "")}</div>`;
   $("#chartTitle").innerHTML = `${esc(w.name)} · ${esc(w.dateLabel || `${shortYear(w.span[0])}–${shortYear(w.span[1])}`)} <button class="exitj wspeed" data-act="war-speed" aria-label="Playback speed">${S.cineSpeed || 1}×</button> <button class="exitj" data-act="exit-war" aria-label="Exit war">× Exit</button>`;
+  updateTheatreTabs();
 }
 
 // ---------------------------------------------------------------- war cinema
@@ -1233,105 +1246,217 @@ function trackAt(x, t, holdTo) { // interpolated shape of a front or occupied ar
   const u = (t - k[i].t) / (k[i + 1].t - k[i].t), A = k[i].pts, B = k[i + 1].pts;
   return { pts: A.map((p, j) => [p[0] + (B[j][0] - p[0]) * u, p[1] + (B[j][1] - p[1]) * u]), a };
 }
+const tintCache = new Map();
+function sideTint(i) { // territory fill: the side colour softened toward the background, so movement on top reads first
+  const c = SIDE_COLORS[i % SIDE_COLORS.length], bg = String(theme.bg).trim(), key = c + bg;
+  if (!tintCache.has(key)) {
+    const p = (h) => [1, 3, 5].map((j) => parseInt(h.slice(j, j + 2), 16)), A = p(c), B = /^#[0-9a-f]{6}$/i.test(bg) ? p(bg) : [255, 255, 255];
+    tintCache.set(key, "#" + A.map((v, j) => Math.round(v * 0.45 + B[j] * 0.55).toString(16).padStart(2, "0")).join(""));
+  }
+  return tintCache.get(key);
+}
 const occPat = new Map();
 function occPattern(c) {
   if (!occPat.has(c)) {
-    const cv = document.createElement("canvas"); cv.width = cv.height = 7;
-    const x = cv.getContext("2d"); x.strokeStyle = c; x.lineWidth = 2.2; x.lineCap = "square";
-    x.beginPath(); x.moveTo(0, 7); x.lineTo(7, 0); x.moveTo(-1, 1); x.lineTo(1, -1); x.moveTo(6, 8); x.lineTo(8, 6); x.stroke();
+    const cv = document.createElement("canvas"); cv.width = cv.height = 8;
+    const x = cv.getContext("2d"); x.strokeStyle = c; x.lineWidth = 1.2;
+    x.beginPath(); x.moveTo(0, 8); x.lineTo(8, 0); x.moveTo(-1, 1); x.lineTo(1, -1); x.moveTo(7, 9); x.lineTo(9, 7); x.stroke();
     occPat.set(c, ctx.createPattern(cv, "repeat"));
   }
   return occPat.get(c);
 }
-function drawOccupations() { // called inside the map transform; hatched in the occupier's colour, clipped to land
+function drawOccupations() { // inside the map transform: occupied land takes the occupier's tint (fine stripes mark it as occupied)
   const C = S.cine; if (!S.war || !C || !C.occupations.length) return;
   const t = S.wt, k = S.t.k;
   ctx.save(); ctx.clip(S.landClip);
   for (const o of C.occupations) {
     const s = trackAt(o, t, S.cineK.t1); if (!s) continue;
-    const col = SIDE_COLORS[(o.side ?? 1) % SIDE_COLORS.length], path = new Path2D();
+    const side = o.side ?? 1, path = new Path2D();
     s.pts.forEach((p, i) => { const [x, y] = projection(p); i ? path.lineTo(x, y) : path.moveTo(x, y); });
     path.closePath();
-    const pat = occPattern(col); pat.setTransform(new DOMMatrix().scale(1 / k));
-    ctx.globalAlpha = 0.8 * s.a; ctx.fillStyle = pat; ctx.fill(path);
-    ctx.globalAlpha = s.a; ctx.strokeStyle = col; ctx.lineWidth = 1.3 / k; ctx.setLineDash([4 / k, 3 / k]); ctx.stroke(path); ctx.setLineDash([]);
+    ctx.globalAlpha = s.a; ctx.fillStyle = sideTint(side); ctx.fill(path);
+    const pat = occPattern(SIDE_COLORS[side % SIDE_COLORS.length]); pat.setTransform(new DOMMatrix().scale(1 / k));
+    ctx.globalAlpha = 0.35 * s.a; ctx.fillStyle = pat; ctx.fill(path);
   }
   ctx.restore(); ctx.globalAlpha = 1;
 }
 const scr = (ll) => { const [x, y] = projection(ll); return [S.t.applyX(x), S.t.applyY(y)]; };
 function polyLine(pts) { ctx.beginPath(); pts.forEach((p, i) => (i ? ctx.lineTo(p[0], p[1]) : ctx.moveTo(p[0], p[1]))); }
+function arrowState(a, t) { // drawn fraction and opacity of an offensive arrow at time t
+  if (t < a.t0) return null;
+  const after = t - a.t1, alpha = after <= 0.03 ? 1 : 1 - (after - 0.03) / 0.07;
+  if (alpha <= 0) return null;
+  const prog = Math.min(1, (t - a.t0) / (a.t1 - a.t0));
+  return { prog, e: 1 - (1 - prog) ** 2, alpha };
+}
 function drawCinema() { // screen space, above the labels: fronts, offensives, battles
   drawFlash();
   const C = S.cine; if (!S.war || !C) return;
   const t = S.wt, k = S.t.k, K = S.cineK, now = performance.now();
   ctx.save(); ctx.lineJoin = "round"; ctx.lineCap = "round";
-  // front lines
+  // front lines: one thin dark line where the two sides meet
   for (const f of C.fronts) {
     const last = f.keys[f.keys.length - 1]?.t ?? 0;
     const s = trackAt(f, t, last >= K.t1 - 0.06 ? K.t1 : last + 0.1); if (!s) continue;
-    const pts = s.pts.map(scr);
-    ctx.globalAlpha = s.a;
-    polyLine(pts); ctx.strokeStyle = theme.bg; ctx.lineWidth = 6; ctx.stroke();
-    ctx.strokeStyle = theme.ink; ctx.lineWidth = 2.6; ctx.stroke();
-    if (k >= 8 && pts.length > 4) { // name along the middle of the line, once zoomed in
-      const m = pts[Math.floor(pts.length / 2)];
-      ctx.font = 'italic 600 11px Inter, sans-serif'; ctx.textAlign = "left"; ctx.textBaseline = "middle";
-      ctx.lineWidth = 3; ctx.strokeStyle = theme.bg; ctx.strokeText(f.name, m[0] + 8, m[1]); ctx.fillStyle = theme.ink; ctx.fillText(f.name, m[0] + 8, m[1]);
-    }
+    polyLine(s.pts.map(scr));
+    ctx.globalAlpha = 0.7 * s.a; ctx.strokeStyle = theme.bg; ctx.lineWidth = 4; ctx.stroke();
+    ctx.globalAlpha = s.a; ctx.strokeStyle = theme.ink; ctx.lineWidth = 1.8; ctx.stroke();
   }
-  // offensives: arrows that draw themselves while the campaign runs, then fade
+  // offensives: tapered arrows in the side's full colour, growing while the campaign runs
   for (const a of C.arrows) {
-    if (t < a.t0) continue;
-    const after = t - a.t1;
-    const alpha = after <= 0.08 ? 1 : 1 - (after - 0.08) / 0.12;
-    if (alpha <= 0) continue;
-    const prog = Math.min(1, (t - a.t0) / (a.t1 - a.t0)), e = 1 - (1 - prog) ** 2;
+    const st = arrowState(a, t); if (!st) continue;
     const P = a.smooth.map(scr), seg = [0];
     for (let i = 1; i < P.length; i++) seg.push(seg[i - 1] + Math.hypot(P[i][0] - P[i - 1][0], P[i][1] - P[i - 1][1]));
-    const want = seg[seg.length - 1] * e; if (want < 2) continue;
+    const want = seg[seg.length - 1] * st.e; if (want < 6) continue;
     const pts = [P[0]];
     for (let i = 1; i < P.length; i++) {
       if (seg[i] <= want) { pts.push(P[i]); continue; }
       const u = (want - seg[i - 1]) / (seg[i] - seg[i - 1]); pts.push([P[i - 1][0] + (P[i][0] - P[i - 1][0]) * u, P[i - 1][1] + (P[i][1] - P[i - 1][1]) * u]); break;
     }
-    const col = SIDE_COLORS[(a.side ?? 0) % SIDE_COLORS.length], wdt = Math.min(8, 3 + k * 0.9);
-    ctx.globalAlpha = alpha;
-    const tip = pts[pts.length - 1];
-    let back = pts[0]; for (let i = pts.length - 1; i >= 0; i--) if (Math.hypot(tip[0] - pts[i][0], tip[1] - pts[i][1]) > wdt * 2) { back = pts[i]; break; }
-    const ang = Math.atan2(tip[1] - back[1], tip[0] - back[0]), hl = wdt * 2.6;
-    const shaft = pts.slice(); shaft[shaft.length - 1] = [tip[0] - Math.cos(ang) * hl * 0.6, tip[1] - Math.sin(ang) * hl * 0.6];
-    polyLine(shaft); ctx.strokeStyle = theme.bg; ctx.lineWidth = wdt + 4; ctx.stroke();
-    ctx.strokeStyle = col; ctx.lineWidth = wdt; ctx.stroke();
-    ctx.beginPath(); ctx.moveTo(tip[0], tip[1]);
-    ctx.lineTo(tip[0] - Math.cos(ang - 0.5) * hl, tip[1] - Math.sin(ang - 0.5) * hl);
-    ctx.lineTo(tip[0] - Math.cos(ang + 0.5) * hl, tip[1] - Math.sin(ang + 0.5) * hl); ctx.closePath();
-    ctx.fillStyle = col; ctx.fill(); ctx.lineWidth = 2; ctx.strokeStyle = theme.bg; ctx.stroke();
-    if (prog < 1 && k >= 1.8) {
-      ctx.font = '700 11px Inter, sans-serif'; ctx.textAlign = "left"; ctx.textBaseline = "middle";
-      ctx.lineWidth = 3; ctx.strokeStyle = theme.bg; ctx.strokeText(a.name, tip[0] + 10, tip[1] - 10); ctx.fillStyle = col; ctx.fillText(a.name, tip[0] + 10, tip[1] - 10);
-    }
+    const W = Math.min(11, 4 + k * 0.45), hl = W * 1.9, tip = pts[pts.length - 1];
+    let back = pts[0]; for (let i = pts.length - 1; i >= 0; i--) if (Math.hypot(tip[0] - pts[i][0], tip[1] - pts[i][1]) > hl) { back = pts[i]; break; }
+    const ang = Math.atan2(tip[1] - back[1], tip[0] - back[0]);
+    const body = pts.filter((p) => Math.hypot(tip[0] - p[0], tip[1] - p[1]) > hl * 0.8);
+    const neck = [tip[0] - Math.cos(ang) * hl * 0.8, tip[1] - Math.sin(ang) * hl * 0.8];
+    body.push(neck);
+    const L = [], R = [];
+    body.forEach((p, i) => {
+      const q = body[Math.min(body.length - 1, i + 1)], o = body[Math.max(0, i - 1)], dx = q[0] - o[0], dy = q[1] - o[1], d = Math.hypot(dx, dy) || 1;
+      const hw = (W / 2) * (0.25 + 0.75 * (i / Math.max(1, body.length - 1)));
+      L.push([p[0] - (dy / d) * hw, p[1] + (dx / d) * hw]); R.push([p[0] + (dy / d) * hw, p[1] - (dx / d) * hw]);
+    });
+    ctx.beginPath();
+    L.forEach((p, i) => (i ? ctx.lineTo(p[0], p[1]) : ctx.moveTo(p[0], p[1])));
+    ctx.lineTo(neck[0] - Math.sin(ang) * hl * 0.62, neck[1] + Math.cos(ang) * hl * 0.62);
+    ctx.lineTo(tip[0], tip[1]);
+    ctx.lineTo(neck[0] + Math.sin(ang) * hl * 0.62, neck[1] - Math.cos(ang) * hl * 0.62);
+    for (let i = R.length - 1; i >= 0; i--) ctx.lineTo(R[i][0], R[i][1]);
+    ctx.closePath();
+    ctx.globalAlpha = 0.92 * st.alpha; ctx.fillStyle = SIDE_COLORS[(a.side ?? 0) % SIDE_COLORS.length]; ctx.fill();
+    ctx.lineWidth = 1.2; ctx.strokeStyle = theme.bg; ctx.stroke();
   }
-  // battles: pulse while fought (size = losses), then leave a small scar
+  // battles: only while fought; a small burst with a short name (losses are listed under the date)
+  const placed = [];
+  ctx.globalAlpha = 1;
   for (const b of C.battles) {
-    if (t < b.t0 || !b.lonlat) continue;
-    const [x, y] = scr(b.lonlat);
-    if (t > b.t1) {
-      ctx.globalAlpha = 0.55; ctx.strokeStyle = theme.ink; ctx.lineWidth = 1.6;
-      ctx.beginPath(); ctx.moveTo(x - 3.5, y - 3.5); ctx.lineTo(x + 3.5, y + 3.5); ctx.moveTo(x + 3.5, y - 3.5); ctx.lineTo(x - 3.5, y + 3.5); ctx.stroke();
-      continue;
-    }
-    const r = Math.max(5, Math.min(26, 5 + 19 * Math.sqrt((b.casNum || 50000) / 1.2e6))), ph = ((now / 1400) % 1);
-    ctx.globalAlpha = 1;
-    ctx.beginPath(); ctx.arc(x, y, r, 0, 2 * Math.PI); ctx.fillStyle = "rgba(17,17,17,.22)"; ctx.fill();
-    ctx.lineWidth = 1.5; ctx.strokeStyle = theme.ink; ctx.stroke();
-    if (S.cinePlay) { ctx.globalAlpha = 1 - ph; ctx.beginPath(); ctx.arc(x, y, r * (1 + ph * 0.9), 0, 2 * Math.PI); ctx.lineWidth = 2; ctx.stroke(); }
-    ctx.globalAlpha = 1;
-    ctx.font = '800 11px Archivo, "Helvetica Neue", sans-serif'; ctx.textAlign = "left"; ctx.textBaseline = "middle";
-    const lab = b.name.toUpperCase(), sub = b.casualties || "";
-    ctx.lineWidth = 3; ctx.strokeStyle = theme.bg; ctx.strokeText(lab, x + r + 6, y - 6); ctx.fillStyle = theme.ink; ctx.fillText(lab, x + r + 6, y - 6);
-    if (sub && k >= 7) { ctx.font = '500 10px Inter, sans-serif'; ctx.strokeText(sub, x + r + 6, y + 7); ctx.fillStyle = theme.ink3; ctx.fillText(sub, x + r + 6, y + 7); }
+    if (t < b.t0 || t > b.t1 || !b.lonlat) continue;
+    const [x, y] = scr(b.lonlat), ph = (now / 1500) % 1;
+    if (x < -20 || y < -20 || x > S.width + 20 || y > S.height + 20 || !inLens(x, y)) continue;
+    if (S.cinePlay) { ctx.globalAlpha = 0.6 * (1 - ph); ctx.beginPath(); ctx.arc(x, y, 6 + 12 * ph, 0, 2 * Math.PI); ctx.strokeStyle = theme.ink; ctx.lineWidth = 1.5; ctx.stroke(); ctx.globalAlpha = 1; }
+    ctx.beginPath();
+    for (let i = 0; i < 12; i++) { const r = i % 2 ? 2.6 : 6.5, a2 = (i * Math.PI) / 6; ctx.lineTo(x + Math.cos(a2) * r, y + Math.sin(a2) * r); }
+    ctx.closePath(); ctx.fillStyle = theme.ink; ctx.fill(); ctx.lineWidth = 1.5; ctx.strokeStyle = theme.bg; ctx.stroke();
+    const lab = b.name.replace(/^(First|Second|Third)?\s*Battle of (the )?/i, (m, n) => (n ? n + " " : "")).replace(/^the /i, "");
+    ctx.font = '700 11px Inter, sans-serif'; ctx.textBaseline = "middle";
+    const w = ctx.measureText(lab).width;
+    let lx = x + 10, box = [lx - 2, y - 8, lx + w + 2, y + 8];
+    if (placed.some((q) => box[0] < q[2] && box[2] > q[0] && box[1] < q[3] && box[3] > q[1])) { lx = x - 10 - w; box = [lx - 2, y - 8, lx + w + 2, y + 8]; }
+    if (placed.some((q) => box[0] < q[2] && box[2] > q[0] && box[1] < q[3] && box[3] > q[1])) continue;
+    placed.push(box);
+    ctx.textAlign = "left"; ctx.lineWidth = 3.5; ctx.strokeStyle = theme.bg; ctx.strokeText(lab, lx, y); ctx.fillStyle = theme.ink; ctx.fillText(lab, lx, y);
   }
   ctx.restore(); ctx.globalAlpha = 1;
+  drawVeil(); placeCallout();
+}
+// ---------------------------------------------------------------- theatre lens
+// The camera holds one theatre (from the current camera shot, or a tab the reader picked); outside it the map fades.
+const inBox = (ll, b) => !!ll && ll[0] >= b[0] && ll[0] <= b[2] && ll[1] >= b[1] && ll[1] <= b[3];
+function theatreAt(t) {
+  const C = S.cine; if (!C?.theatres?.length) return null;
+  if (S.lensLock) return C.theatres.find((x) => x.id === S.lensLock) || null;
+  let sh = null; for (const s of C.shots) if (s.t <= t + 1e-6) sh = s;
+  if (!sh || (sh.zoom || 3) < 3.5) return null; // wide shots show every front
+  return C.theatres.find((x) => inBox(sh.center, x.bbox)) || null;
+}
+function syncTheatre() {
+  const th = theatreAt(S.wt);
+  if (th !== S.theatre) { S.theatre = th; drawMini(); }
+  updateTheatreTabs();
+}
+function lensRect() {
+  const b = S.theatre.bbox, pts = [];
+  for (let i = 0; i <= 4; i++) { const lo = b[0] + ((b[2] - b[0]) * i) / 4; pts.push(scr([lo, b[1]]), scr([lo, b[3]])); }
+  const xs = pts.map((p) => p[0]), ys = pts.map((p) => p[1]), pad = 16;
+  return [Math.min(...xs) - pad, Math.min(...ys) - pad, Math.max(...xs) + pad, Math.max(...ys) + pad];
+}
+const inLens = (x, y) => { const r = S.lens; return !r || (x >= r[0] && x <= r[2] && y >= r[1] && y <= r[3]); };
+function drawVeil() {
+  const r = S.lens; if (!r) return;
+  const w = r[2] - r[0], h = r[3] - r[1];
+  ctx.save();
+  ctx.beginPath(); ctx.rect(0, 0, S.width, S.height); ctx.roundRect(r[0], r[1], w, h, 18);
+  ctx.globalAlpha = 0.74; ctx.fillStyle = theme.bg; ctx.fill("evenodd");
+  ctx.globalAlpha = 1; ctx.beginPath(); ctx.roundRect(r[0], r[1], w, h, 18); ctx.strokeStyle = theme.rule; ctx.lineWidth = 1; ctx.stroke();
+  ctx.restore();
+}
+function placeCallout() { // the current event, pinned where it happened with a leader line
+  const el = $("#cCall"), e = S.war?.events[S.wIdx];
+  S.callPt = null;
+  if (S.callOn && e?.lonlat) {
+    const [x, y] = scr(e.lonlat);
+    if (x > 8 && y > 8 && x < S.width - 8 && y < S.height - 8 && inLens(x, y)) {
+      const w = el.offsetWidth, h = el.offsetHeight, gap = 54, L = S.lens;
+      let left = x - gap - w;
+      if (left < 12 || (L && left < L[0] + 6)) left = x + gap;
+      if (left + w > S.width - 12) left = Math.max(12, x - gap - w);
+      const top = Math.max(118, Math.min(S.height - h - 44, y - h / 2));
+      el.style.transform = `translate(${Math.round(left)}px, ${Math.round(top)}px)`;
+      S.callPt = { x, y, ax: left < x ? left + w : left, ay: Math.max(top + 10, Math.min(top + h - 10, y)) };
+    }
+  }
+  el.classList.toggle("on", !!S.callPt);
+  $("#cSub").classList.toggle("on", !!S.callOn && !S.callPt);
+  if (!S.callPt) return;
+  const { x, y, ax, ay } = S.callPt;
+  ctx.save(); ctx.strokeStyle = theme.ink; ctx.lineWidth = 1.2;
+  ctx.beginPath(); ctx.moveTo(ax, ay); ctx.lineTo(x + (ax < x ? -10 : 10), ay); ctx.lineTo(x, y); ctx.stroke();
+  ctx.beginPath(); ctx.arc(x, y, 4.5, 0, 2 * Math.PI); ctx.fillStyle = theme.highlight; ctx.fill(); ctx.lineWidth = 2; ctx.strokeStyle = theme.bg; ctx.stroke();
+  ctx.restore();
+}
+function theatreStatus(th, t) { // one line per front for the dock tabs
+  const C = S.cine, K = S.cineK, fr = C.fronts.filter((f) => th.fronts.includes(f.name) && f.keys.length);
+  const opened = fr.some((f) => f.keys[0].t <= t + 0.01), end = Math.max(...fr.map((f) => f.keys[f.keys.length - 1].t));
+  let ev = null; S.war.events.forEach((x, i) => { if (K.T[i + 1] <= t + 1e-6 && inBox(x.lonlat, th.bbox)) ev = x; });
+  if (!opened && !ev) return "Not yet opened";
+  if (end < t - 0.08 && end < K.t1 - 0.1) return `Closed since ${MONTHS[Math.floor((end % 1) * 12)].slice(0, 3)} ${Math.floor(end)}`;
+  if (!ev) return "Front holding";
+  return `${ev.label || shortYear(ev.year)}: ${ev.text.length > 46 ? ev.text.slice(0, 44) + "…" : ev.text}`;
+}
+function updateTheatreTabs() {
+  const C = S.cine; if (!C?.theatres?.length) return;
+  document.querySelectorAll("#chart .wthe button").forEach((b) => {
+    const th = C.theatres.find((x) => x.id === b.dataset.the); if (!th) return;
+    b.classList.toggle("on", th === S.theatre);
+    const st = theatreStatus(th, S.wt), sp = b.querySelector(".st");
+    if (sp.textContent !== st) sp.textContent = st;
+  });
+}
+function focusTheatre(id) {
+  const th = S.cine?.theatres?.find((x) => x.id === id); if (!th) return;
+  stopPlay(); S.lensLock = id; S.theatre = th; drawMini(); updateTheatreTabs(); updateHud();
+  const b = th.bbox, pts = [[b[0], b[1]], [b[2], b[3]], [b[0], b[3]], [b[2], b[1]], [(b[0] + b[2]) / 2, b[3]]].map((p) => projection(p));
+  flyTo([[Math.min(...pts.map((p) => p[0])), Math.min(...pts.map((p) => p[1]))], [Math.max(...pts.map((p) => p[0])), Math.max(...pts.map((p) => p[1]))]], 24);
+}
+function drawMini() { // inset: every theatre, the current one boxed
+  const cv = $("#cMini"), C = S.cine;
+  if (!cv) return;
+  if (!S.war || !C?.theatres?.length || !S.items?.length) { cv.hidden = true; return; }
+  cv.hidden = false;
+  const W = 220, H = 140, dpr = S.dpr || 1;
+  cv.width = W * dpr; cv.height = H * dpr;
+  const m = cv.getContext("2d"); m.setTransform(dpr, 0, 0, dpr, 0, 0);
+  const bb = C.theatres.reduce((a, t) => [Math.min(a[0], t.bbox[0]), Math.min(a[1], t.bbox[1]), Math.max(a[2], t.bbox[2]), Math.max(a[3], t.bbox[3])], [180, 90, -180, -90]);
+  const pj = d3.geoEquirectangular().fitExtent([[8, 8], [W - 8, H - 8]], { type: "MultiPoint", coordinates: [[bb[0], bb[1]], [bb[2], bb[3]], [bb[0], bb[3]], [bb[2], bb[1]]] });
+  const gp = d3.geoPath(pj, m);
+  m.fillStyle = theme.bg; m.fillRect(0, 0, W, H);
+  for (const it of S.items) { const f = fillOf(it); m.fillStyle = f === "HATCH" ? theme.unknown : f; m.beginPath(); gp(it.f); m.fill(); }
+  for (const th of C.theatres) {
+    const b = th.bbox, [x0, y0] = pj([b[0], b[3]]), [x1, y1] = pj([b[2], b[1]]);
+    const on = th === S.theatre;
+    m.strokeStyle = on ? theme.highlight : theme.ink; m.globalAlpha = on ? 1 : 0.35; m.lineWidth = on ? 2 : 1;
+    m.strokeRect(x0, y0, x1 - x0, y1 - y0);
+  }
+  m.globalAlpha = 1;
 }
 const MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 function updateHud() {
@@ -1340,27 +1465,39 @@ function updateHud() {
   $("#cMonth").textContent = monthly ? MONTHS[Math.max(0, Math.min(11, Math.floor((t - Math.floor(t)) * 12)))] : "";
   $("#cYear").textContent = shortYear(y);
   const shots = S.cine?.shots || [];
-  let sh = null; for (const s of shots) if (s.t <= t + 1e-6) sh = s;
+  let sh = null; for (const s of shots) if (s.t <= t + 1e-6 && (!S.theatre || inBox(s.center, S.theatre.bbox))) sh = s; // the caption belongs to the theatre on screen
   $("#cShot").textContent = sh?.caption || "";
+  const C = S.cine, now = [];
+  if (C) {
+    for (const a of C.arrows) { const st = arrowState(a, t); if (st && st.prog < 1) now.push(`<span><i class="ar" style="background:${SIDE_COLORS[(a.side ?? 0) % SIDE_COLORS.length]}"></i>${esc(a.name)}</span>`); }
+    for (const b of C.battles) if (t >= b.t0 && t <= b.t1) now.push(`<span><i class="bt"></i><b>${esc(b.name)}</b>${b.casualties ? ` · ${esc(b.casualties)}` : ""}</span>`);
+  }
+  const nowHTML = now.slice(0, 4).join("");
+  const nl = $("#cNow"); if (nl.dataset.h !== nowHTML) { nl.innerHTML = nowHTML; nl.dataset.h = nowHTML; }
   const e = w.events[S.wIdx], reached = e && S.cineK.T[S.wIdx + 1] <= t + 1e-6;
-  const show = reached && (!S.cinePlay || performance.now() - S.subAt < 5200);
+  const show = reached && (!S.cinePlay || performance.now() - S.subAt < 6500);
+  const th = S.theatre, ths = S.cine?.theatres || [];
+  $("#cThe").textContent = th ? `${th.name} · theatre ${ths.indexOf(th) + 1} of ${ths.length}` : ths.length ? "All fronts" : "";
+  S.callOn = !!(show && e?.lonlat && S.cine);
+  const call = $("#cCall"), ck = `${w.id}:${S.wIdx}`;
+  if (S.callOn && call.dataset.k !== ck) { call.innerHTML = `<b>${esc(e.label || shortYear(e.year))}</b>${esc(e.text)}`; call.dataset.k = ck; }
   const sub = $("#cSub");
   if (show) { const html = `<b>${esc(e.label || shortYear(e.year))}</b>${esc(e.text)}`; if (sub.dataset.k !== `${w.id}:${S.wIdx}`) { sub.innerHTML = html; sub.dataset.k = `${w.id}:${S.wIdx}`; } }
-  sub.classList.toggle("on", !!show);
+  sub.classList.toggle("on", !!show && !S.callPt);
   const cur = $("#chart .wcur"); if (cur && S.warX) cur.style.left = S.warX(t) + "%";
 }
 function flyCenter(ll, k, ms = 1800) {
   if (!S.width) return;
-  const [x, y] = projection(ll); k = Math.max(1, Math.min(20, k));
+  const [x, y] = projection(ll); k = Math.max(1, Math.min(24, k));
   d3.select(canvas).transition().duration(ms).ease(d3.easeCubicInOut)
     .call(S.zoom.transform, d3.zoomIdentity.translate(S.width / 2 - k * x, S.height / 2 - k * y).scale(k));
 }
-const SHOT_ZOOM = 2; // shot zoom 1 = whole world; theatre shots (4-7) need about twice the map scale to read fronts
+const shotK = (z) => 2 ** (z - 1); // web-map-style shot zoom: 1 = whole world, each level doubles (3 = a continent, 5 = a front)
 function camFor(t, e, jump) { // follow the action: the latest camera shot, else keep the current event in view
   const shots = S.cine?.shots || [];
   if (shots.length) {
     let i = -1; shots.forEach((s, j) => { if (s.t <= t + 1e-6) i = j; });
-    if (i >= 0 && (jump || i > S.shotIdx)) { S.shotIdx = i; flyCenter(shots[i].center, (shots[i].zoom || 3) * SHOT_ZOOM, jump ? 1100 : 2200); }
+    if (i >= 0 && (jump || i > S.shotIdx)) { S.shotIdx = i; flyCenter(shots[i].center, shotK(shots[i].zoom || 3), jump ? 1100 : 2200); }
     return;
   }
   if (!e?.lonlat) return;
@@ -1378,7 +1515,9 @@ function setWp(p, playing) {
     const now = $("#chart .wnow"); if (now) now.innerHTML = `<b>${i + 1}</b> / ${w.events.length} · ${esc(w.events[i]?.label || "")}`;
     if (playing && !S.cine?.shots?.length) camFor(S.wt, w.events[i], false);
   }
+  if (playing) S.lensLock = null;
   if (playing && S.cine?.shots?.length) camFor(S.wt, null, false);
+  syncTheatre();
   const y = warYear(S.wt);
   if (playing && y > S.year && y !== S.cineYear) allianceChange(S.year, y);
   if (y !== S.year && y !== S.cineYear) { S.cineYear = y; go(y, { keepWar: true }).then(() => { S.cineYear = null; }); }
@@ -1386,10 +1525,16 @@ function setWp(p, playing) {
 }
 function allianceChange(y0, y1) { // who entered or left the war between two years
   const w = S.war, a = warSides(w, y0), b = warSides(w, y1), msgs = [], keys = new Set();
-  const named = (ks) => [...new Set(ks.map(displayName))].join(", ");
+  const named = (ks) => { const u = [...new Set(ks.map(displayName))]; return u.length > 3 ? `${u.slice(0, 3).join(", ")} and ${u.length - 3} more` : u.join(", "); };
+  const STOP = /^(the|of|and|empire|kingdom|republic|state|states|union|federal|people's|democratic|united|first|second|third|grand|duchy|principality|socialist|soviet)$/i;
+  const words = (k) => new Set(clean(k).split(/[\s,()-]+/).filter((x) => x.length > 3 && !STOP.test(x)));
   w.sides.forEach((sd, i) => {
-    const inn = [...b].filter(([k, s]) => s === i && !a.has(k)).map(([k]) => k);
-    const out = [...a].filter(([k, s]) => s === i && !b.has(k)).map(([k]) => k);
+    let inn = [...b].filter(([k, s]) => s === i && !a.has(k)).map(([k]) => k);
+    let out = [...a].filter(([k, s]) => s === i && !b.has(k)).map(([k]) => k);
+    // a state redrawn under a new name (Russian Empire -> Russian Republic) is neither joining nor leaving
+    const same = (x, y) => { const A = words(x); return [...words(y)].some((q) => A.has(q)); };
+    const renamed = new Set(); inn.forEach((x) => out.forEach((y) => { if (same(x, y)) { renamed.add(x); renamed.add(y); } }));
+    inn = inn.filter((x) => !renamed.has(x)); out = out.filter((x) => !renamed.has(x));
     if (inn.length) { msgs.push(`<span><i style="background:${SIDE_COLORS[i % SIDE_COLORS.length]}"></i>${esc(named(inn))} ${inn.length > 1 ? "join" : "joins"} the ${esc(sd.name)}</span>`); inn.forEach((k) => keys.add(k)); }
     if (out.length) msgs.push(`<span class="out"><i style="background:${SIDE_COLORS[i % SIDE_COLORS.length]}"></i>${esc(named(out))}: out of the war</span>`);
   });
@@ -1629,7 +1774,7 @@ function drawSites() { // capitals, ports and excavations of active reconstructi
 }
 function drawMomentPin() {
   let m = S.view === "moment" && S.moment;
-  if (!m && S.war) { const e = S.war.events[S.wIdx]; if (e && e.lonlat && S.cineK.T[S.wIdx + 1] <= S.wt + 1e-6) m = { lonlat: e.lonlat, title: "" }; } // the subtitle carries the text
+  if (!m && S.war && !S.callPt) { const e = S.war.events[S.wIdx]; if (e && e.lonlat && S.cineK.T[S.wIdx + 1] <= S.wt + 1e-6) m = { lonlat: e.lonlat, title: "" }; } // the subtitle carries the text
   if (!m && S.journey) {
     const ev = S.jEvent != null ? S.journey.events[S.jEvent] : currentEvent(S.journey, S.year);
     if (ev && ev.lonlat && S.year - ev.year <= Math.max(3, (S.journey.span[1] - S.journey.span[0]) / 25)) m = { lonlat: ev.lonlat, title: ev.text.length > 48 ? ev.text.slice(0, 46) + "…" : ev.text };
@@ -1637,8 +1782,8 @@ function drawMomentPin() {
   if (!m || !m.lonlat) return;
   const [x0, y0] = projection(m.lonlat), x = S.t.applyX(x0), y = S.t.applyY(y0);
   ctx.save();
-  ctx.beginPath(); ctx.arc(x, y, 14, 0, 2 * Math.PI); ctx.fillStyle = "rgba(229,64,42,.18)"; ctx.fill();
-  ctx.beginPath(); ctx.arc(x, y, 7, 0, 2 * Math.PI); ctx.fillStyle = S.journey ? theme.ink : theme.highlight; ctx.fill();
+  if (!S.war) { ctx.beginPath(); ctx.arc(x, y, 14, 0, 2 * Math.PI); ctx.fillStyle = "rgba(229,64,42,.18)"; ctx.fill(); }
+  ctx.beginPath(); ctx.arc(x, y, S.war ? 5 : 7, 0, 2 * Math.PI); ctx.fillStyle = S.journey ? theme.ink : theme.highlight; ctx.fill();
   ctx.lineWidth = 2.5; ctx.strokeStyle = "#ffffff"; ctx.stroke();
   ctx.font = '800 14px Archivo, "Helvetica Neue", sans-serif'; ctx.textAlign = "left"; ctx.textBaseline = "middle";
   const label = m.title, w = ctx.measureText(label).width;
@@ -1657,6 +1802,7 @@ function setupChart() {
   const scrub = (y) => { if (pending == null) setTimeout(() => { go(pending); pending = null; }, 24); pending = y; };
   el.addEventListener("pointerdown", (ev) => {
     const wk = ev.target.closest("[data-wev]");
+    if (S.war && ev.target.closest("[data-the]")) return; // theatre tabs are buttons, not the scrubber
     if (S.war) { ev.preventDefault(); stopPlay(); if (wk) return goWarEvent(+wk.dataset.wev);
       drag = { x: ev.clientX, target: ev.target, war: true }; el.setPointerCapture(ev.pointerId); return setWp(pOf(S.cineK, warT(ev))); }
     const mk = ev.target.closest(".mk");
@@ -1753,6 +1899,7 @@ function togglePlay() {
   setPlayIcon(true);
   if (S.war) {
     if (S.wp >= S.cineK.D - 0.05) { S.shotIdx = -1; setWp(0); }
+    if (S.lensLock) { S.lensLock = null; S.shotIdx = -1; } // resume the film's own camera
     S.cinePlay = true; S.playing = -1; S.cineLast = 0; S.subAt = performance.now();
     S.cineRaf = requestAnimationFrame(cineTick);
     return;
@@ -1810,6 +1957,7 @@ function setupUI() {
   $("#momentsLink").onclick = (ev) => { ev.preventDefault(); if (S.journey) exitJourney(); S.view = "moments"; S.moment = null; draw(); renderCol(true); };
   $("#empiresLink").onclick = (ev) => { ev.preventDefault(); if (S.journey) exitJourney(); S.view = "empires"; S.moment = null; draw(); renderCol(true); };
   $("#dock").addEventListener("click", (ev) => { if (ev.target.closest("[data-act=exit-journey]")) exitJourney(); if (ev.target.closest("[data-act=exit-war]")) exitWar();
+    const tb = ev.target.closest("[data-the]"); if (tb) focusTheatre(tb.dataset.the);
     const sp = ev.target.closest("[data-act=war-speed]"); if (sp) { S.cineSpeed = { 1: 2, 2: 0.5, 0.5: 1 }[S.cineSpeed || 1]; sp.textContent = `${S.cineSpeed}×`; } });
   $("#warsLink").onclick = (ev) => { ev.preventDefault(); if (S.journey) exitJourney(); if (S.war) exitWar(); S.view = "wars"; S.moment = null; draw(); renderCol(true); };
   $("#zoomIn").onclick = () => d3.select(canvas).transition().duration(300).call(S.zoom.scaleBy, 1.6);
