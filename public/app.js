@@ -60,7 +60,7 @@ const S = {
   labels: true, peoples: true, playing: null, width: 0, height: 0, dpr: 1, token: 0,
 };
 const $ = (s) => document.querySelector(s);
-window.__atlas = S; S.fx = { setWp: (p) => setWp(p), seek: (t) => setWp(pOf(S.cineK, t), true) }; // debugging handles // read-only handle for debugging in the console
+window.__atlas = S; S.fx = { setWp: (p) => setWp(p), seek: (t) => setWp(pOf(S.cineK, t), true), scr: (ll) => scr(ll) }; // debugging handles // read-only handle for debugging in the console
 const canvas = $("#map"), ctx = canvas.getContext("2d");
 const pick = document.createElement("canvas"), pctx = pick.getContext("2d", { willReadFrequently: true });
 const projection = d3.geoNaturalEarth1();
@@ -1273,7 +1273,7 @@ function drawCinema() { // screen space, above the labels: fronts, offensives, b
     ctx.globalAlpha = s.a;
     polyLine(pts); ctx.strokeStyle = theme.bg; ctx.lineWidth = 6; ctx.stroke();
     ctx.strokeStyle = theme.ink; ctx.lineWidth = 2.6; ctx.stroke();
-    if (k >= 2.2 && pts.length > 4) { // name along the middle of the line
+    if (k >= 8 && pts.length > 4) { // name along the middle of the line, once zoomed in
       const m = pts[Math.floor(pts.length / 2)];
       ctx.font = 'italic 600 11px Inter, sans-serif'; ctx.textAlign = "left"; ctx.textBaseline = "middle";
       ctx.lineWidth = 3; ctx.strokeStyle = theme.bg; ctx.strokeText(f.name, m[0] + 8, m[1]); ctx.fillStyle = theme.ink; ctx.fillText(f.name, m[0] + 8, m[1]);
@@ -1329,7 +1329,7 @@ function drawCinema() { // screen space, above the labels: fronts, offensives, b
     ctx.font = '800 11px Archivo, "Helvetica Neue", sans-serif'; ctx.textAlign = "left"; ctx.textBaseline = "middle";
     const lab = b.name.toUpperCase(), sub = b.casualties || "";
     ctx.lineWidth = 3; ctx.strokeStyle = theme.bg; ctx.strokeText(lab, x + r + 6, y - 6); ctx.fillStyle = theme.ink; ctx.fillText(lab, x + r + 6, y - 6);
-    if (sub && k >= 2) { ctx.font = '500 10px Inter, sans-serif'; ctx.strokeText(sub, x + r + 6, y + 7); ctx.fillStyle = theme.ink3; ctx.fillText(sub, x + r + 6, y + 7); }
+    if (sub && k >= 7) { ctx.font = '500 10px Inter, sans-serif'; ctx.strokeText(sub, x + r + 6, y + 7); ctx.fillStyle = theme.ink3; ctx.fillText(sub, x + r + 6, y + 7); }
   }
   ctx.restore(); ctx.globalAlpha = 1;
 }
@@ -1351,15 +1351,16 @@ function updateHud() {
 }
 function flyCenter(ll, k, ms = 1800) {
   if (!S.width) return;
-  const [x, y] = projection(ll); k = Math.max(1, Math.min(12, k));
+  const [x, y] = projection(ll); k = Math.max(1, Math.min(20, k));
   d3.select(canvas).transition().duration(ms).ease(d3.easeCubicInOut)
     .call(S.zoom.transform, d3.zoomIdentity.translate(S.width / 2 - k * x, S.height / 2 - k * y).scale(k));
 }
+const SHOT_ZOOM = 2; // shot zoom 1 = whole world; theatre shots (4-7) need about twice the map scale to read fronts
 function camFor(t, e, jump) { // follow the action: the latest camera shot, else keep the current event in view
   const shots = S.cine?.shots || [];
   if (shots.length) {
     let i = -1; shots.forEach((s, j) => { if (s.t <= t + 1e-6) i = j; });
-    if (i >= 0 && (jump || i > S.shotIdx)) { S.shotIdx = i; flyCenter(shots[i].center, shots[i].zoom || 3, jump ? 1100 : 2200); }
+    if (i >= 0 && (jump || i > S.shotIdx)) { S.shotIdx = i; flyCenter(shots[i].center, (shots[i].zoom || 3) * SHOT_ZOOM, jump ? 1100 : 2200); }
     return;
   }
   if (!e?.lonlat) return;
