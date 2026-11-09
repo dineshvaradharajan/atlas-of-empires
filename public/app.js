@@ -191,6 +191,12 @@ function correctFeature(f, y) {
   if (!c) return f;
   if (c.clip && !inRange(y, c.clip)) return null;
   if (c.hide && c.hide.some((r) => inRange(y, r))) return null;
+  const ap = c.asPeople && c.asPeople.find((r) => inRange(y, [r.from, r.to]));
+  if (ap) { // no state in these years: draw as a people in the hatched layer
+    let byName = relabelCache.get(f);
+    if (!byName) relabelCache.set(f, (byName = {}));
+    return (byName["people:" + ap.name] ||= { type: "Feature", geometry: f.geometry, properties: { ...f.properties, n: ap.name, people: true, fixed: f.properties.n } });
+  }
   const rl = c.relabel && c.relabel.find((r) => inRange(y, [r.from, r.to]));
   if (!rl) return f;
   let byName = relabelCache.get(f);
@@ -224,6 +230,7 @@ function correctTimelines() {
     if (!r) continue;
     if (c.clip) r.tl = splitRows(r.tl, c.clip[0], c.clip[1]).inside;
     for (const h of c.hide || []) r.tl = splitRows(r.tl, h[0], h[1]).outside;
+    for (const ap of c.asPeople || []) r.tl = splitRows(r.tl, ap.from, ap.to).outside;
     for (const rl of c.relabel || []) {
       const { inside, outside } = splitRows(r.tl, rl.from, rl.to);
       r.tl = outside;
@@ -248,7 +255,9 @@ async function go(y, opts = {}) {
   const [chunk, base] = await Promise.all([loadChunk(chunkOf(y)), loadBase(baseYearFor(y))]);
   if (token !== S.token) return; // a newer year was requested while loading
   S.base = base;
-  S.states = chunk.features.filter((f) => f.properties.f <= y && y <= f.properties.t).map((f) => correctFeature(f, y)).filter(Boolean);
+  const fs = chunk.features.filter((f) => f.properties.f <= y && y <= f.properties.t).map((f) => correctFeature(f, y)).filter(Boolean);
+  S.states = fs.filter((f) => !f.properties.people);
+  S.extraPeoples = fs.filter((f) => f.properties.people);
   renderAll();
   writeHash();
   const n = S.clio.chunks, ci = n.indexOf(chunkOf(y));
@@ -354,6 +363,7 @@ function buildItems() {
     else if (p.n && bc.rename?.[p.n]) p = { ...p, n: bc.rename[p.n] };
     items.push({ f, p, kind: S.peoples && p.n ? "culture" : "land" });
   }
+  for (const f of S.extraPeoples || []) items.push({ f, p: { ...f.properties, n: f.properties.n }, kind: "culture", corrected: true });
   const st = [...S.states].sort((a, b) => b.properties.a - a.properties.a); // small realms on top
   for (const f of st) items.push({ f, p: f.properties, kind: "state", key: f.properties.k });
   S.items = items;
@@ -397,7 +407,9 @@ function setupMap() {
       const fix = p.fixed ? `<div class="m">Corrected label (map data says “${esc(clean(p.fixed))}”)</div>` : corrOf(p.n) || corrOf(p.k) ? `<div class="m">Map note: see realm panel</div>` : "";
       tip.innerHTML = `<b>${esc(clean(p.n))}</b>${grp}<div class="m">${fmtArea(p.a)} · borders ${shortYear(p.f)}–${shortYear(p.t)}</div>${fix}`;
     } else if (it.kind === "culture") {
-      tip.innerHTML = `<b>${esc(it.p.n)}</b><div class="m">${isCulture(it.p) ? "People or culture without a state" : "Polity not in the Cliopatria dataset"} · approximate, c. ${plainYear(baseYearFor(S.year))}</div>`;
+      tip.innerHTML = it.corrected
+        ? `<b>${esc(it.p.n)}</b><div class="m">No unified state in ${plainYear(S.year)} (map correction; the data draws “${esc(clean(it.p.fixed))}”)</div>`
+        : `<b>${esc(it.p.n)}</b><div class="m">${isCulture(it.p) ? "People or culture without a state" : "Polity not in the Cliopatria dataset"} · approximate, c. ${plainYear(baseYearFor(S.year))}</div>`;
     } else {
       tip.innerHTML = `<b>Unrecorded</b><div class="m">No state is recorded here in ${plainYear(S.year)}: uninhabited, or beyond the written record.</div>`;
     }
@@ -457,7 +469,7 @@ function drawLabels() {
   const pxPerKm = (projection.scale() * t.k) / 6371;
   const placed = [];
   const rank = (it) => (it.key === S.sel ? 3 : S.featured.has(it.key) ? 2 : it.kind === "state" ? 1 : 0);
-  const cand = S.items.filter((it) => it.p.l && (it.kind === "state" || (it.kind === "culture" && isCulture(it.p))))
+  const cand = S.items.filter((it) => it.p.l && (it.kind === "state" || (it.kind === "culture" && (it.corrected || isCulture(it.p)))))
     .sort((a, b) => rank(b) - rank(a) || b.p.a - a.p.a);
   ctx.textAlign = "center"; ctx.textBaseline = "middle";
   for (const it of cand) {
@@ -665,7 +677,7 @@ function realmHTML() {
     <div><b>${mkm(peak[2])}</b><span>peak, ${shortYear(peak[0])}${peak[1] !== peak[0] ? "–" + shortYear(peak[1]) : ""}</span></div></div>`;
   const mc = corrOf(key) || (now[0] && corrOf(now[0].properties.fixed || now[0].properties.n));
   if (mc && (mc.note || mc.scholarly)) {
-    h += `<aside class="mapnote"><b>Map note</b>${mc.note ? `<p>${esc(mc.note)}</p>` : ""}${mc.scholarly ? `<p>Scholarly peak estimate: <strong>${mkm(mc.scholarly.km2)}M km²</strong>${mc.scholarly.year != null ? ` c. ${shortYear(mc.scholarly.year)}` : ""} (${esc(mc.scholarly.source)}), against ${mkm(peak[2])}M km² drawn on this map.</p>` : ""}</aside>`;
+    h += `<aside class="mapnote"><b>Map note</b>${mc.note ? `<p>${esc(mc.note)}</p>` : ""}${mc.scholarly ? `<p>Scholarly peak estimate: <strong>${mkm(mc.scholarly.km2)}M km²</strong>${mc.scholarly.year != null ? ` c. ${shortYear(mc.scholarly.year)}` : ""} (${esc(mc.scholarly.source)}), against ${mkm(peak[2])}M km² drawn on this map.</p>` : ""}${(mc.sources || []).filter((x) => /^https?:\/\//.test(x.url)).length ? `<p class="msrc">${mc.sources.filter((x) => /^https?:\/\//.test(x.url)).map((x) => `<a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a>`).join(" · ")}</p>` : ""}</aside>`;
   }
   h += `<h3 class="sec">Territory through time</h3>${extentChart(r)}
     <label class="toggle"><input type="checkbox" id="ghostToggle" ${S.showGhost ? "checked" : ""}> Outline greatest extent on the map</label>`;

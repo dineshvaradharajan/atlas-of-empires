@@ -455,6 +455,44 @@
     "Kingdom of Hungary": {
       "note": "Cliopatria ends the Kingdom of Hungary in 1546; under the Habsburgs it continued until 1918.",
       "log": "europe.md"
+    },
+    "Xianbei": {
+      "asPeople": [
+        {
+          "from": 182,
+          "to": 223,
+          "name": "Xianbei tribes (no unified state)"
+        }
+      ],
+      "note": "Tanshihuai unified the Xianbei c. 156 and his confederation reached from the Wusun in the west to the Buyeo in the east, but it splintered after his death in 181; Kebineng's later revival (c. 207–235) was centred near the Great Wall. The data's polygon also runs north into Dingling lands south of Lake Baikal, a people Tanshihuai pushed back rather than ruled. For 182–223 the Xianbei are shown as tribes rather than a state.",
+      "scholarly": {
+        "km2": 4500000,
+        "year": 200,
+        "source": "List of largest empires (Wikipedia), citing an Oxford reference"
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Xianbei",
+          "url": "https://en.wikipedia.org/wiki/Xianbei"
+        },
+        {
+          "title": "Wikipedia: Tanshihuai",
+          "url": "https://en.wikipedia.org/wiki/Tanshihuai"
+        },
+        {
+          "title": "Wikipedia: Kebineng",
+          "url": "https://en.wikipedia.org/wiki/Kebineng"
+        },
+        {
+          "title": "Wikipedia: Dingling",
+          "url": "https://en.wikipedia.org/wiki/Dingling"
+        },
+        {
+          "title": "Wikimedia Commons: Xianbei Confederation c. 160 AD (Zangxuangao, CC0)",
+          "url": "https://commons.wikimedia.org/wiki/File:Xianbei_Confederation_c._160_AD.png"
+        }
+      ],
+      "log": "Reader report: map vs Commons reference map, 2026-11-09"
     }
   },
   "base": {

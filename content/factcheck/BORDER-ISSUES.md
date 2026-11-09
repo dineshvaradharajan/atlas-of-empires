@@ -50,6 +50,7 @@ Fix options: (a) a small `corrections.json` the app applies on load (relabel, cl
 | South Africa | from 1932 | 1910 |
 | Australia | from 1905 | 1901 |
 | New Zealand | from 1948 | 1840/1907 |
+| Xianbei | peak extent held 161–223 | confederation splintered after Tanshihuai's death in 181 (shown as tribes 182–223) |
 | Inca Empire | still drawn 1534–39 and in 1600 | conquered 1532–33 (Neo-Inca to 1572) |
 | Kingdom of Hungary | ends 1546 | 1918/1946 |
 | Greek City-States | to 83 CE | — |
@@ -75,6 +76,7 @@ Fix options: (a) a small `corrections.json` the app applies on load (relabel, cl
 | Republic of China 1950–2023 | 81k km² | ~36k (Taiwan) |
 | Hawaii "allegiance to Britain" 1811–19 | 3.6M km² | ~16.6k |
 | Norte Chico | 294k | a few coastal valleys |
+| Xianbei | 5.22M, north to 56.5°N | c. 4.5M; northern edge = Dingling lands south of Baikal, not Xianbei (reader report vs Commons map c. 160) |
 
 ## Missing polities
 Great Zimbabwe, Mutapa, Tiwanaku, Tuʻi Tonga, Mitanni, Viceroyalty of Peru (1600), any Sri Lankan state before 1072.
