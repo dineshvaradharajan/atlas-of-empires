@@ -1,0 +1,782 @@
+[
+ {
+  "realm": "Rashtrakuta Dynasty",
+  "year": 790,
+  "verdict": "minor",
+  "which_is_right": null,
+  "differences": [
+   "Both run from Kannauj (~27°N, 80°E) south through the Deccan to ~13°N",
+   "Ours reaches the Bay of Bengal coast at ~19°N 85°E (coastal Andhra/Vengi); reference stops inland at ~82°E",
+   "Reference takes in the Pallava country down to Kanchipuram (~12.8°N, 79.7°E); ours leaves the south-east (13–16°N, 78–80°E) outside"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": ""
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Ethiopian Empire",
+  "year": 1550,
+  "verdict": "match",
+  "which_is_right": null,
+  "differences": [
+   "Reference is a 13th–16th c. church-expansion map, but its 'Christian-controlled' zone matches ours: Eritrean highlands (~16°N) south to Gamo/L. Abaya (~6°N), east to Ifat, Dawaro and Bali (~41°E), Red Sea coast and Adal outside in both"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": ""
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Mali Empire",
+  "year": 1438,
+  "verdict": "major",
+  "which_is_right": "reference",
+  "differences": [
+   "Shape matches the reference (Senegambian coast at ~17°W to the Niger bend, ~10–17°N) except that ours runs on east past Gao to ~3.5°E at 15–17°N",
+   "Our polygon for 1415–1462 is larger (~1.11M km²) than the 1241–1414 one, but Mali was shrinking by then: Timbuktu went to the Tuareg in 1433–34 and Oualata c. 1436, and Gao had broken away after the 1370s. Ours still shows the 14th-century peak in 1438"
+  ],
+  "suggested": {
+   "type": "note",
+   "detail": "By the 1430s Mali was in decline: it had lost Gao, and Timbuktu fell to the Tuareg in 1433, so the eastern Niger bend shown here was no longer Malian.",
+   "from": 1415,
+   "to": 1462
+  },
+  "source": {
+   "title": "Mali Empire (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Mali_Empire"
+  },
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "East Turkestan",
+  "year": 1465,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [
+   "Reference is an orthographic locator for the First East Turkestan Republic (1933–34), a different polity and date from our 1463–1474 realm (Tarim Basin, ~36–45°N, 72–92°E)"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": ""
+  },
+  "source": null,
+  "not_comparable_reason": "Locator map of the 1933–34 First East Turkestan Republic, not the 15th-century polity"
+ },
+ {
+  "realm": "Mauritania",
+  "year": 1999,
+  "verdict": "match",
+  "which_is_right": null,
+  "differences": [
+   "Same borders: Atlantic coast ~16–21°N, northern tip ~27.3°N, eastern border ~5°W; Western Sahara outside in both"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": ""
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Palmyrene Empire",
+  "year": 269,
+  "verdict": "minor",
+  "which_is_right": null,
+  "differences": [
+   "Both include Egypt (to ~24°N), the Levant, Syria and central Anatolia up to Ancyra (~40°N, 33°E)",
+   "Reference (271) also includes Arabia Petraea/Hejaz coast down to Dedan (~26.5°N, 38°E) and Sinai; ours stops at ~29.5°N on the Gulf of Aqaba",
+   "Reference reaches Nisibis/Singara (~42–43°E) in Upper Mesopotamia; ours stops ~41°E",
+   "Ours shows Egypt and Anatolia by 269, when they were taken in 270–271 (timing only)"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": ""
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Swedish Empire",
+  "year": 1633,
+  "verdict": "major",
+  "which_is_right": "reference",
+  "differences": [
+   "Baltic core matches the reference's pre-1633 acquisitions: Sweden without Skåne/Halland/Blekinge/Jämtland, Finland with Kexholm and Ingria (1617), Estonia, Livonia (1629)",
+   "Ours adds a large block of Germany (~47.5–54.5°N, 8–15°E: Pomerania/Mecklenburg south through Franconia and Swabia to the Alps), about a quarter of the polygon; the reference shows only the territories kept in 1648 (Pomerania, Wismar, Bremen-Verden)",
+   "That block was wartime military control of allied/conquered states (1631–34), lost after Nördlingen in 1634, not Swedish territory"
+  ],
+  "suggested": {
+   "type": "note",
+   "detail": "The German area shows where Swedish armies held sway in the Thirty Years' War (1631–34); after Nördlingen it was lost, and in 1648 Sweden kept only Pomerania, Wismar and Bremen-Verden.",
+   "from": 1632,
+   "to": 1635
+  },
+  "source": {
+   "title": "Swedish Empire (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Swedish_Empire"
+  },
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Avar Khaganate",
+  "year": 602,
+  "verdict": "match",
+  "which_is_right": null,
+  "differences": [
+   "Both span the Carpathian Basin from ~13°E (Bavarian border) east across the Pontic steppe to ~39°E, south to the Sava/Danube (~44–45°N), north to ~51°N",
+   "Reference includes Crimea and the Kutrigur/Bulgar steppe more explicitly; ours leaves Crimea grey (frontier zone)"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": ""
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Islamic Republic of Pakistan",
+  "year": 1955,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [
+   "Reference is a photograph of date baskets"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": ""
+  },
+  "source": null,
+  "not_comparable_reason": "Not a map (photograph of dates)"
+ },
+ {
+  "realm": "Chen Dynasty",
+  "year": 576,
+  "verdict": "minor",
+  "which_is_right": null,
+  "differences": [
+   "Core matches: Yangtze south to Hainan, Fujian/Zhejiang to Guangxi",
+   "Reference shows Chen holding Huainan up to the Huai River (~33.5°N, 117–120°E), conquered in 573; ours stops near the Yangtze (~31.5–32°N)",
+   "Ours runs west at ~22–23°N to ~103.5°E (south-east Yunnan/northern Vietnam); reference puts that area under Cuanshi and Van Xuan, with Chen ending ~107°E"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": ""
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Republic of Egypt",
+  "year": 1954,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [
+   "Reference shows Egypt under the Muhammad Ali dynasty, 1805–1914 (incl. Sudan, Hejaz, Levant campaigns), a different period and polity"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": ""
+  },
+  "source": null,
+  "not_comparable_reason": "Reference covers 1805–1914 Muhammad Ali dynasty, not the 1953–57 republic"
+ },
+ {
+  "realm": "Kingdom of Egypt",
+  "year": 1923,
+  "verdict": "minor",
+  "which_is_right": null,
+  "differences": [
+   "Egypt proper incl. Sinai (22–31.5°N, 25–35°E) matches",
+   "Reference also shades Anglo-Egyptian Sudan (condominium) and the Halaib/Wadi Halfa area; ours omits the Sudan sphere"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": ""
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Kingdom of Great Britain",
+  "year": 1962,
+  "verdict": "major",
+  "which_is_right": null,
+  "differences": [
+   "Reference is a locator of the island of Great Britain only; ours is the 1962 United Kingdom plus dependencies: Northern Ireland, Malta, Cyprus bases, Gibraltar, Aden and the South Arabian protectorates (~43–52°E), and also Qatar, Bahrain, the Trucial States and apparently Muscat & Oman (~52–60°E), which was formally independent",
+   "Our realm keeps the name 'Kingdom of Great Britain' for 1709–2024, but that state ended on 31 Dec 1800; from 1801 it was the United Kingdom (of GB and Ireland, then GB and Northern Ireland from 1922)"
+  ],
+  "suggested": {
+   "type": "relabel",
+   "detail": "United Kingdom (from 1801; the Kingdom of Great Britain existed 1707–1800)",
+   "from": 1801,
+   "to": 2024
+  },
+  "source": {
+   "title": "Kingdom of Great Britain (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Kingdom_of_Great_Britain"
+  },
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Majapahit",
+  "year": 1382,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [
+   "Reference is an animated GIF whose final frame shows the archipelago after Majapahit's fall, with no territory shaded"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": ""
+  },
+  "source": null,
+  "not_comparable_reason": "GIF final frame shows no Majapahit territory (post-collapse frame)"
+ },
+ {
+  "realm": "First Spanish Republic",
+  "year": 1876,
+  "verdict": "major",
+  "which_is_right": "reference",
+  "differences": [
+   "Territory matches the reference (Spain, Balearics, Canaries, Cuba, Puerto Rico, Philippines, Pacific islands, Fernando Po)",
+   "Our realm runs 1873–1876 (Kingdom of Spain resumes only in 1877), but the Republic lasted 11 Feb 1873–29 Dec 1874; 1875–76 was the Bourbon Restoration under Alfonso XII"
+  ],
+  "suggested": {
+   "type": "relabel",
+   "detail": "Kingdom of Spain (Bourbon Restoration from 29 December 1874)",
+   "from": 1875,
+   "to": 1876
+  },
+  "source": {
+   "title": "First Spanish Republic (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/First_Spanish_Republic"
+  },
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "British Cape Colony",
+  "year": 1850,
+  "verdict": "major",
+  "which_is_right": "reference",
+  "differences": [
+   "Cape core (Orange River ~28.5°S to the coast, 17–27°E) matches the 1850 Tallis map",
+   "Ours runs on north-east to ~31°E, 27–30°S, taking in British Kaffraria and Natal, which were separate colonies (the Cape's eastern line was the Fish/Keiskamma)",
+   "Our polygon also includes Sierra Leone (~8.5°N, 12°W) and the Gambia (~13.5°N, 16.5°W), British West African colonies that had nothing to do with the Cape"
+  ],
+  "suggested": {
+   "type": "note",
+   "detail": "This shape lumps other British possessions with the Cape: Natal and British Kaffraria were separate colonies, and the West African dots are Sierra Leone and the Gambia.",
+   "from": 1796,
+   "to": 1884
+  },
+  "source": {
+   "title": "Cape Colony (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Cape_Colony"
+  },
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Tulunids",
+  "year": 893,
+  "verdict": "match",
+  "which_is_right": null,
+  "differences": [
+   "Both cover Egypt to ~24°N, Barqa west to ~18–20°E, Palestine, Syria and the Thughur up to Tarsus/Raqqa (~37°N)"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": ""
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Kidarites",
+  "year": 400,
+  "verdict": "minor",
+  "which_is_right": null,
+  "differences": [
+   "Both center on Bactria/Tokharistan, Kabul and Gandhara (to ~73°E)",
+   "Reference extends west and north to Merv (~62°E) and Bukhara (~64.4°E, 39.8°N); ours stops at ~64°E and ~39.2°N (Merv was usually Sasanian, so this is a disputed frontier)"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": ""
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Khmer Empire",
+  "year": 1203,
+  "verdict": "minor",
+  "which_is_right": null,
+  "differences": [
+   "Core matches: Cambodia, Mekong delta, central Thailand, Laos north to ~20°N (1185–91), peninsula to ~10°N",
+   "Reference shows Champa (central Vietnamese coast, 107–109°E) annexed in 1203; ours adds it only from 1206 (our 1206–1219 polygon), a 3-year lag",
+   "Reference carries the Malay peninsula further south (~7–8°N) than ours (~10°N)"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": ""
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Polish-Lithuanian Commonwealth",
+  "year": 1619,
+  "verdict": "match",
+  "which_is_right": null,
+  "differences": [
+   "Both cover Poland-Lithuania with Ducal Prussia, Courland and Livonia up to ~58°N, Smolensk/Chernihiv to ~35°E, Podolia to ~48°N",
+   "Ours pokes ~1° too far west near 52°N (to ~14.7°E, into Brandenburg), which doesn't matter at this scale"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": ""
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Almohad Caliphate",
+  "year": 1210,
+  "verdict": "match",
+  "which_is_right": null,
+  "differences": [
+   "Both: Morocco to the Sous/Draa (~28°N), Algerian coast, Ifriqiya to Tripoli/Sirte, al-Andalus from Badajoz to Valencia, Balearics (taken 1203)"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": ""
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Venezuela",
+  "year": 1989,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [
+   "Reference is a line chart of kidnapping numbers"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": ""
+  },
+  "source": null,
+  "not_comparable_reason": "Not a map (statistics chart)"
+ },
+ {
+  "realm": "Austria-Hungary",
+  "year": 1911,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [
+   "Reference is Shepherd's ethnic map 'Distribution of Races in Austria-Hungary'; its outline is consistent with ours (incl. Bosnia-Herzegovina)"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": ""
+  },
+  "source": null,
+  "not_comparable_reason": "Ethnic distribution map"
+ },
+ {
+  "realm": "Gurjara-Pratihara Dynasty",
+  "year": 800,
+  "verdict": "major",
+  "which_is_right": "reference",
+  "differences": [
+   "Ours (800) covers Gujarat/Saurashtra, Rajasthan and Malwa to ~80°E and ~27.5°N",
+   "Reference (c. 800–950) adds the Ganges plain east through Bihar to the Bengal frontier (Mudgagiri/Gauda, ~88°E) and north to Thanesar (~30°N)",
+   "The year 800 itself is roughly fine (Kannauj fell to Nagabhata II after 805), but our polygons never show the 836–910 peak: area falls from ~920k km² (783–87) to ~640k km² for 860–921, and none reach Bihar"
+  ],
+  "suggested": {
+   "type": "note",
+   "detail": "At its height under Mihira Bhoja and Mahendrapala I (c. 836–910) the empire ruled from Kannauj and reached Bihar and the Bengal frontier, wider than shown here.",
+   "from": 836,
+   "to": 910
+  },
+  "source": {
+   "title": "Gurjara-Pratihara dynasty (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Gurjara-Pratihara_dynasty"
+  },
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Yuezhi",
+  "year": -210,
+  "verdict": "major",
+  "which_is_right": "reference",
+  "differences": [
+   "Reference (Qin map, 210 BCE) labels the Yuezhi in the Hexi Corridor/western Gansu (~38–40°N, 94–100°E, west of the Ordos, north of the Qiang)",
+   "Ours (-331 to -204) puts them across the Tarim Basin and Dzungaria/Ili (36.5–47°N, 72–93°E) and leaves out the Gansu corridor east of ~93°E entirely",
+   "Han sources place them 'between Dunhuang and Qilian'; the Ili valley was reached only c. 165 BCE, after the Xiongnu defeat. A minority view puts the homeland north of the Tian Shan, but even that wouldn't run west to 72°E"
+  ],
+  "suggested": {
+   "type": "note",
+   "detail": "Chinese sources place the Yuezhi between Dunhuang and the Qilian Mountains in Gansu; they reached the Ili valley only after the Xiongnu defeated them c. 176 BCE.",
+   "from": -331,
+   "to": -171
+  },
+  "source": {
+   "title": "Yuezhi (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Yuezhi"
+  },
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Federal Republic of Nigeria",
+  "year": 1979,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [
+   "Reference is a linguistic-groups map; its outline matches ours"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": ""
+  },
+  "source": null,
+  "not_comparable_reason": "Language map"
+ },
+ {
+  "realm": "Ottoman Tripolitania",
+  "year": 1871,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [
+   "Reference is the whole Ottoman Empire in 1566 on an orthographic globe"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": ""
+  },
+  "source": null,
+  "not_comparable_reason": "Different polity and date (Ottoman Empire 1566)"
+ },
+ {
+  "realm": "Satavahana Dynasty",
+  "year": 116,
+  "verdict": "minor",
+  "which_is_right": null,
+  "differences": [
+   "Both cover Maharashtra, the northern Deccan and Malwa up to Ujjain/Sanchi",
+   "Reference adds Saurashtra (Girinagara, ~70.5°E) and the Krishna delta/Amaravati (~80.4°E, 16.6°N); ours stops at ~72°E and just short of Amaravati, and instead reaches ~83.5°E at 21.5°N",
+   "The reference is undated; Saurashtra was taken from the Western Satraps only c. 124–125"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": ""
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Tanzania",
+  "year": 1974,
+  "verdict": "match",
+  "which_is_right": null,
+  "differences": [
+   "Same borders incl. Zanzibar and Pemba"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": ""
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Emirate of Afghanistan",
+  "year": 1914,
+  "verdict": "match",
+  "which_is_right": null,
+  "differences": [
+   "Same borders incl. the Wakhan corridor (~37°N, 75°E)"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": ""
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Western Wei",
+  "year": 557,
+  "verdict": "major",
+  "which_is_right": "ours",
+  "differences": [
+   "Reference is undated and predates 553: Sichuan is still Liang. Ours includes the Sichuan basin to ~28°N (conquered 553), which is right for the 550s",
+   "Reference reaches the Ordos to ~40°N (Woye); ours stops at ~38.5°N between 105–110°E (frontier)",
+   "Our realm runs to 560, but Western Wei ended on 14 Feb 557 when Northern Zhou was founded; our Northern Zhou only starts in 561"
+  ],
+  "suggested": {
+   "type": "relabel",
+   "detail": "Northern Zhou (founded February 557)",
+   "from": 557,
+   "to": 560
+  },
+  "source": {
+   "title": "Western Wei (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Western_Wei"
+  },
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "(French Second Republic)",
+  "year": 1848,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [
+   "Reference is the July Monarchy (French Kingdom) in 1839; metropolitan France and Corsica are identical to ours, but polity and date differ"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": ""
+  },
+  "source": null,
+  "not_comparable_reason": "Shows the French Kingdom in 1839, not the Second Republic"
+ },
+ {
+  "realm": "(Bourbon Kingdom of France)",
+  "year": 1846,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [
+   "Reference is Buache's 18th-century ancien-régime map of France by secretaries' departments",
+   "Separately: 1846 falls in the July Monarchy (Orléans, 1830–48), not the Bourbon Restoration (1815–30), so our realm name is wrong for 1830–1848"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": ""
+  },
+  "source": null,
+  "not_comparable_reason": "18th-century ancien-régime map, different date"
+ },
+ {
+  "realm": "Francoist Spain",
+  "year": 1960,
+  "verdict": "match",
+  "which_is_right": null,
+  "differences": [
+   "Both: Spain, Balearics, Canaries, Ceuta/Melilla, Ifni, Spanish Sahara, Río Muni and Fernando Po"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": ""
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Second Spanish Republic",
+  "year": 1933,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [
+   "Reference is the Francoist 'Spanish State'; its territories (Spain, Morocco protectorate, Sahara, Ifni, Guinea) match ours"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": ""
+  },
+  "source": null,
+  "not_comparable_reason": "Different polity (Spanish State, 1936–75)"
+ },
+ {
+  "realm": "Khanate of Khiva",
+  "year": 1860,
+  "verdict": "major",
+  "which_is_right": "unclear",
+  "differences": [
+   "Reference shows only the Khorezm oasis/Amu Darya delta south of the Aral (~40–44°N, 57–62°E)",
+   "Ours is several times larger: the Ustyurt to the Caspian (~52°E), the whole Karakum down to the Persian border incl. Merv (~35.5–37.5°N, 61–63°E), and the Kyzylkum to ~46°N, 65°E",
+   "Khiva did claim tribute from most Turkmen, but 1860 falls within the 1855–67 Turkmen rebellion that followed the khan's death at Sarakhs, and Merv was held by the Teke"
+  ],
+  "suggested": {
+   "type": "note",
+   "detail": "Outside the Khorezm oasis, the Turkmen and Kazakh nomads only loosely acknowledged Khiva, and from 1855 to 1867 the Turkmen were in open revolt.",
+   "from": 1855,
+   "to": 1867
+  },
+  "source": {
+   "title": "Khanate of Khiva (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Khanate_of_Khiva"
+  },
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Western Satraps",
+  "year": 145,
+  "verdict": "minor",
+  "which_is_right": null,
+  "differences": [
+   "Both cover Saurashtra, Gujarat, southern Rajasthan (Pushkar) and western Malwa (Ujjain, Dasapura) down to Nashik (~20°N)",
+   "Ours extends ~3° further east to ~80°E (eastern Malwa/Akara toward Sagar); reference stops ~77°E. Rudradaman's Junagadh inscription supports eastern Malwa, so this is a frontier difference"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": ""
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Northern Qi",
+  "year": 572,
+  "verdict": "match",
+  "which_is_right": null,
+  "differences": [
+   "Both: Shanxi, Hebei, Shandong, Henan and Huaibei to ~31°N, west to ~110°E, plus Liaoxi"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": ""
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Namibia",
+  "year": 2006,
+  "verdict": "match",
+  "which_is_right": null,
+  "differences": [
+   "Same borders incl. the Caprivi Strip and Walvis Bay"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": ""
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Seljuk Dynasty",
+  "year": 1036,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [
+   "Reference is a locator for the Sultanate of Rum in 1190, with battle sites"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": ""
+  },
+  "source": null,
+  "not_comparable_reason": "Different polity and date (Rum Seljuks, 1190)"
+ },
+ {
+  "realm": "Republic of Chile",
+  "year": 1812,
+  "verdict": "minor",
+  "which_is_right": null,
+  "differences": [
+   "Both cover central Chile from ~25°S to the Biobío (~37–38°S)",
+   "Reference (Captaincy General 1810) also shows Valdivia (~40°S), Chiloé and the Juan Fernández Islands, plus hatched Patagonian claims; ours omits them (royalist-held in 1812, so ours is defensible)"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": ""
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Grand Duchy of Lithuania",
+  "year": 1430,
+  "verdict": "minor",
+  "which_is_right": null,
+  "differences": [
+   "Core matches: Samogitia and Vilnius to Smolensk and the upper Oka (~37°E), Volhynia and Kiev",
+   "Reference carries Vytautas's lands south through the Wild Fields to the Black Sea (~46.5°N between Dniester and Dnieper); ours stops at ~48°N",
+   "Ours reaches ~58°N toward Lake Ilmen; reference shows only a joint-control strip with Novgorod to ~57.5°N"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": ""
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Iberian Union",
+  "year": 1582,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [
+   "Reference is Ortelius's 1570 map of the peninsula, made before the 1580 union; it shows none of the Habsburg holdings outside Iberia that ours includes (Netherlands, Franche-Comté, Milan, Naples, Sicily, Sardinia)"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": ""
+  },
+  "source": null,
+  "not_comparable_reason": "1570 period map of Spain, predating the union"
+ },
+ {
+  "realm": "Austrian Empire",
+  "year": 1812,
+  "verdict": "minor",
+  "which_is_right": null,
+  "differences": [
+   "Both show the post-Schönbrunn (1809) shape: Bohemia, Austria, Hungary, Transylvania, Bukovina, East Galicia; Illyrian Provinces south of the Sava excluded",
+   "Ours runs west to ~12°E at 47–48°N (Salzburg/Innviertel, Bavarian 1809–16); reference ends ~13.5°E",
+   "Ours includes the Tarnopol district (~25.6°E, 49.5°N), which was Russian 1809–15"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": ""
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "United Kingdoms of Sweden and Norway",
+  "year": 1815,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [
+   "Reference is the union naval ensign (a flag)"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": ""
+  },
+  "source": null,
+  "not_comparable_reason": "Not a map (flag)"
+ },
+ {
+  "realm": "Khazaria",
+  "year": 765,
+  "verdict": "major",
+  "which_is_right": "reference",
+  "differences": [
+   "Core matches the reference's Khazaria: Pontic-Caspian steppe from the Dnieper/Crimea (~30°E) to beyond the Volga, north to ~50°N",
+   "Ours carries a lobe south of the Caucasus to ~40.4°N, 44–48°E (eastern Georgia, Shirvan/Arran, northern Armenia), well past the Derbent frontier (~42°N). The reference keeps the core north of the Caucasus",
+   "That area was Abbasid; the Khazar incursion of the 760s was a raid, not an occupation",
+   "Reference's wider tributary ring (Volga Bulgars, Burtas, Magyars, East Slavs to ~56°N) is not in ours (acceptable as a sphere)"
+  ],
+  "suggested": {
+   "type": "note",
+   "detail": "The area south of the Caucasus marks the Khazar raid of the 760s into Albania, Iberia and Armenia; the lasting frontier with the Caliphate was at Derbent.",
+   "from": 762,
+   "to": 767
+  },
+  "source": {
+   "title": "Arab–Khazar wars (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Arab–Khazar_wars"
+  },
+  "not_comparable_reason": null
+ }
+]

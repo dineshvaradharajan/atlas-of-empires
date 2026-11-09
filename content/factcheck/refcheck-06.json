@@ -1,0 +1,836 @@
+[
+ {
+  "realm": "(Mahajanapadas)",
+  "year": -500,
+  "verdict": "major",
+  "which_is_right": "reference",
+  "differences": [
+   "Our map shows about 15 small patches (each ~1° across) around capitals between 75-87°E and 19-29°N; the reference shades whole regions such as Avanti (~74-78°E, 22-24°N), Kuru-Panchala and Magadha-Anga",
+   "Gandhara and Kamboja (~71-73°E, 33-35°N) appear in the reference but not ours; ours is right to leave them out at 500 BCE, when they were an Achaemenid satrapy"
+  ],
+  "suggested": {
+   "type": "note",
+   "detail": "Each patch marks only the core around a capital. The sixteen great states (mahajanapadas) were kingdoms and republics that covered much of the Ganges plain, Malwa and the northern Deccan.",
+   "from": -600,
+   "to": -351
+  },
+  "source": {
+   "title": "Mahajanapadas (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Mahajanapadas"
+  },
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "(Kingdom of France)",
+  "year": 1223,
+  "verdict": "minor",
+  "which_is_right": null,
+  "differences": [
+   "Overall outline (crown lands plus dependent fiefs, Flanders to Languedoc, Brittany to the Saône/Rhône) matches the reference's 1223 panel",
+   "Our map has a small red polygon on southern Corsica (~9.2°E, 41.5°N, Bonifacio area); Corsica was Pisan/Genoese, not French, in 1223"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Sokoto Caliphate",
+  "year": 1830,
+  "verdict": "minor",
+  "which_is_right": null,
+  "differences": [
+   "Core (Sokoto-Gwandu to Ilorin, ~3-13°E, 8.5-13.5°N) matches, including the gap around 5-6°E, 9.5-10.5°N",
+   "Our map runs east to ~16.5°E (into today's Chad); the reference is cropped at ~13°E, so the eastern Adamawa limit can't be checked; west edge ~2.5°E vs ~3.5°E in reference"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Burma",
+  "year": 1823,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": "The reference is a present-day locator map of Myanmar in ASEAN, not Burma in 1823. Our 1823 map correctly includes Arakan, Manipur and Assam (to ~89°E), which were Burmese until 1826."
+ },
+ {
+  "realm": "Nanzhao",
+  "year": 839,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": "The reference is a Dali-kingdom painting of a Nanzhao king (Zhang Shengwen scroll), not a map."
+ },
+ {
+  "realm": "French Indochina",
+  "year": 1907,
+  "verdict": "major",
+  "which_is_right": "reference",
+  "differences": [
+   "Mainland (Tonkin, Annam, Cochinchina, Laos, Cambodia incl. the 1904/1907 western provinces) and Guangzhouwan (~110°E, 21°N) match the reference",
+   "Our polygon also includes New Caledonia (~165°E, 21°S), the French Indian posts (Pondicherry ~80°E 12°N, Chandernagore ~88°E 23°N etc.); the data's bounding box also covers Réunion (55°E) and, from 1895, Kerguelen (~70°E, 49°S). None of these were part of Indochina"
+  ],
+  "suggested": {
+   "type": "note",
+   "detail": "Indochina was Vietnam, Laos, Cambodia and the leased port of Guangzhouwan; the far-off islands and Indian ports also shaded here (New Caledonia, Réunion, French India) were separate French colonies.",
+   "from": 1860,
+   "to": 1957
+  },
+  "source": {
+   "title": "French Indochina (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/French_Indochina"
+  },
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Indo-Greeks",
+  "year": -119,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": "The reference is an image of a Brahmi letter (v), not a map."
+ },
+ {
+  "realm": "Mozambique",
+  "year": 1999,
+  "verdict": "match",
+  "which_is_right": null,
+  "differences": [
+   "Modern borders match the reference locator map"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Southern Tang",
+  "year": 964,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [
+   "Not judged against the reference, but flagged for follow-up: our 964 polygon runs west to ~106-107°E and south to ~23°N (Hunan, Guizhou, northern Guangxi) and appears to stop just short of Nanjing (~32°N, 118.8°E), the Southern Tang capital; by 964 the state held Jiangxi, southern Anhui/Jiangsu and western Fujian, not Hunan or Guangxi. Cliopatria also dates it 960-979 (real 937-976)"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": "The reference is a city plan of Nanjing (Jiangning), not a map of the state's territory."
+ },
+ {
+  "realm": "Republic of Turkey",
+  "year": 1941,
+  "verdict": "match",
+  "which_is_right": null,
+  "differences": [
+   "Same as modern borders, including Hatay (annexed 1939); matches the reference"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Khanate of Bukhara",
+  "year": 1527,
+  "verdict": "major",
+  "which_is_right": "reference",
+  "differences": [
+   "Our map runs south to ~34.3°N (60-64.5°E), taking in Herat and Khorasan, and west to ~54-56°E; the reference covers Transoxiana only (~58-71°E, ~37-43°N) and stops at the Amu Darya/Kopet Dag",
+   "In 1527 Herat was held by a Safavid governor; the Uzbeks besieged it in 1527-28 and lost to Tahmasp at Jam (Sept 1528). Cliopatria draws this larger extent only for 1526-1528"
+  ],
+  "suggested": {
+   "type": "note",
+   "detail": "Khorasan and Herat, south of the Amu Darya, were fought over with Safavid Persia; the Uzbeks besieged Herat in 1527-28 but were beaten at Jam in 1528, so they did not firmly rule this area.",
+   "from": 1526,
+   "to": 1528
+  },
+  "source": {
+   "title": "Battle of Jam (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Battle_of_Jam"
+  },
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Indus Valley Civilization",
+  "year": -2600,
+  "verdict": "major",
+  "which_is_right": "reference",
+  "differences": [
+   "Our map shows three small patches (~1.5° across): ~68.4°E 26.5°N (Mohenjo-daro), ~73.7°E 29°N and ~76.1°E 29°N (Rakhigarhi); the reference shades a continuous zone from Baluchistan (~66°E) to Haryana (~77°E) and from Kabul valley (~34°N) to Gujarat (~23°N)"
+  ],
+  "suggested": {
+   "type": "note",
+   "detail": "Only a few major city sites are marked; the Harappan world spread across most of today's Pakistan and northwest India, from Baluchistan to Haryana and south to Gujarat.",
+   "from": -3000,
+   "to": -2501
+  },
+  "source": {
+   "title": "Indus Valley Civilisation (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Indus_Valley_Civilisation"
+  },
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Western Chalukya Empire",
+  "year": 1150,
+  "verdict": "minor",
+  "which_is_right": null,
+  "differences": [
+   "Core (Konkan and western Deccan, ~73-81°E, ~15-22.5°N) matches",
+   "Southern frontier differs: ours stops at ~15-16.5°N east of 76°E (Tungabhadra), the reference reaches ~13.5°N into southern Karnataka (lands of the Hoysala feudatories)"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Indo-Sasanian Empire",
+  "year": 271,
+  "verdict": "major",
+  "which_is_right": "unclear",
+  "differences": [
+   "Our map runs north to ~41.5°N (Sogdiana/Chach, 64-72°E) but stops at ~63.4°E, leaving out Merv (~62°E, 37.6°N) and Herat (~62°E, 34.3°N); the reference includes Marw and Harey and stops at the Amu Darya (~37.5-38°N), leaving out Sogdiana",
+   "Sources support both: the Kushanshahs' realm is described as Bactria, Gandhara and Sogdia, and coins were minted at Merv and Herat"
+  ],
+  "suggested": {
+   "type": "note",
+   "detail": "The Kushano-Sasanian lands are known mostly from coins and Persian inscriptions; besides Bactria and Gandhara they probably took in Sogdiana and the mint cities of Merv and Herat, so the frontiers here are approximate.",
+   "from": 260,
+   "to": 357
+  },
+  "source": {
+   "title": "Kushano-Sasanian Kingdom (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Kushano-Sasanian_Kingdom"
+  },
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Zambia",
+  "year": 1995,
+  "verdict": "match",
+  "which_is_right": null,
+  "differences": [
+   "Modern borders match the reference locator map"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Marinid Sultanate",
+  "year": 1360,
+  "verdict": "major",
+  "which_is_right": "reference",
+  "differences": [
+   "Our map runs along the whole Maghreb from ~11°W to ~18.5°E (Tlemcen, Algiers, Bejaia, Tunis, to Tripolitania); the reference's 1360 map gives the Marinids only Morocco (to ~1.5°W) with the Zayyanids at Tlemcen and the Hafsids in Ifriqiya",
+   "Cliopatria keeps this greatest extent for 1352-1362, but Abu Inan left Tunis in 1357, died in 1358, and the Zayyanids had Tlemcen back by 1359"
+  ],
+  "suggested": {
+   "type": "note",
+   "detail": "Abu Inan took Tlemcen (1352), Bejaia (1353) and briefly Tunis (1357), but he had to pull out of Ifriqiya in 1357 and died in 1358; by 1359 the Zayyanids and Hafsids had their lands back.",
+   "from": 1352,
+   "to": 1362
+  },
+  "source": {
+   "title": "Abu Inan Faris (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Abu_Inan_Faris"
+  },
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Kingdom of Germany",
+  "year": 961,
+  "verdict": "major",
+  "which_is_right": "reference",
+  "differences": [
+   "German duchies (Saxony, Franconia, Swabia, Bavaria with Carinthia/Verona, Lotharingia) match the reference's 972 limits, Bohemia correctly excluded",
+   "Our 961 polygon also takes in northern and central Italy: Piedmont/Liguria (~7-9°E, 44-45°N), Lombardy, Emilia, Tuscany and the Adriatic strip down to ~42°N (~14.7°E); the reference shows this as the separate Kingdom of Italy. Only the March of Verona was joined to Germany (via Bavaria, 952)"
+  ],
+  "suggested": {
+   "type": "note",
+   "detail": "Otto I also took the separate crown of Italy (claimed 951, conquered 961, emperor 962); northern Italy, shaded here with Germany, stayed a distinct kingdom with the same ruler.",
+   "from": 961,
+   "to": 961
+  },
+  "source": {
+   "title": "Kingdom of Italy (Holy Roman Empire) (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Kingdom_of_Italy_(Holy_Roman_Empire)"
+  },
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Kingdom of Sweden",
+  "year": 1280,
+  "verdict": "minor",
+  "which_is_right": null,
+  "differences": [
+   "Sweden proper (Svealand and Götaland, ~11.5-19°E, 56-61.5°N, no Scania/Halland/Blekinge), Gotland, Åland and southwest Finland match",
+   "The reference adds the Norrland coast (Hälsingland to Ångermanland, ~16-19°E, 61.5-64°N) as colonised land; ours stops at ~61.5°N. Ours reaches ~27°E in Finland, a little east of the reference"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "East Franks",
+  "year": 850,
+  "verdict": "minor",
+  "which_is_right": null,
+  "differences": [
+   "Core (Saxony, Franconia, Swabia, Bavaria, Carinthia; ~6-16°E, 46-54.5°N) matches the reference's 843 map",
+   "Ours extends east to ~19°E (Pannonia to the Danube bend, ~16-19°E, 45-47.5°N); the reference stops at ~16.5°E. This was a march under Frankish overlordship, a frontier difference"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Gallic Empire",
+  "year": 261,
+  "verdict": "major",
+  "which_is_right": "reference",
+  "differences": [
+   "Gaul, the Germanies and Britain (to ~55°N) match the reference's core and loyal areas",
+   "Hispania (Tarraconensis, Lusitania, Baetica; ~9°W-3°E, 36-43.5°N) recognised Postumus and is in the reference but is missing from ours",
+   "Separately: Cliopatria draws the empire until 282, but it ended in 274 when Aurelian defeated Tetricus I at Châlons"
+  ],
+  "suggested": {
+   "type": "note",
+   "detail": "Spain also recognised Postumus as emperor from 260 until about 269, so the Gallic Empire briefly reached well beyond what is shaded here.",
+   "from": 261,
+   "to": 269
+  },
+  "source": {
+   "title": "Gallic Empire (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Gallic_Empire"
+  },
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Jalayirid Sultanate",
+  "year": 1400,
+  "verdict": "match",
+  "which_is_right": null,
+  "differences": [
+   "Iraq from upper Mesopotamia (~39.5°E, 37.5°N) to Basra (~48.5°E, 30°N) matches the reference"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Neo-Babylonian Empire",
+  "year": -576,
+  "verdict": "minor",
+  "which_is_right": null,
+  "differences": [
+   "Mesopotamia, Syria and the Levant to Aqaba (~35°E, 29°N) match the reference's broad shape",
+   "Ours runs west into Cilicia (~32-36°E, 36.5-37.5°N), which was an independent kingdom (Hume/Pirindu) in 576 BCE; the low-detail reference stops at the Syrian coast"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Zhou Dynasty",
+  "year": -1000,
+  "verdict": "major",
+  "which_is_right": "reference",
+  "differences": [
+   "Wei-Yellow River core (~107-117°E, 32-36°N) and the Yan outpost near Beijing (~116°E, 40°N) are in both",
+   "Ours fills the whole Hebei plain between them (~114-118°E, 37-39.5°N), the eastern Shandong peninsula to ~122.7°E, and the Huai river lands south to ~31°N (~117-121°E); the reference leaves these out. Eastern Shandong was the Dongyi state of Lai until Qi conquered it in 567 BCE, and the Huai valley belonged to the Huaiyi"
+  ],
+  "suggested": {
+   "type": "note",
+   "detail": "Early Zhou kings ruled the Wei and Yellow River valleys and planted fiefs such as Qi, Lu and Yan, but the eastern Shandong peninsula (Lai) and the Huai River lands stayed with independent Yi peoples.",
+   "from": -1000,
+   "to": -751
+  },
+  "source": {
+   "title": "Lai (state) (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Lai_(state)"
+  },
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Protectorate of the Western Regions",
+  "year": 346,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [
+   "Not judged against the reference, but flagged: Cliopatria draws this polity 117-601 CE, while the Han Protectorate ran 60 BCE-16 CE and 74-107 CE; after that Chinese states kept only a Chief Clerk (zhangshi) at a few posts, so a Tarim-wide polygon labelled 'Protectorate' in 346 overstates it"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": "The reference marks the 1st-century-BCE Tarim oasis states with population squares; it is not a territorial map and shows a date ~400 years earlier."
+ },
+ {
+  "realm": "Visigothic Kingdom",
+  "year": 499,
+  "verdict": "minor",
+  "which_is_right": null,
+  "differences": [
+   "Aquitaine to the Loire, Septimania and Provence (to ~7°E), plus central and southern Iberia, match",
+   "Ours cuts a diagonal from ~6°W 42.7°N to ~9.4°W 39°N, leaving the León-Astorga area and a band of west-central Iberia out; the reference gives these to the Visigoths and only Galicia/northern Portugal to the Suevi"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Konbaung Dynasty",
+  "year": 1767,
+  "verdict": "major",
+  "which_is_right": "ours",
+  "differences": [
+   "The reference shades all of Siam, Lan Na, western Laos and the Malay isthmus as Burmese 'areas of influence' in April 1767; ours shows Burma with Lan Na (to ~100.7°E) only",
+   "Ours is closer for the year: after sacking Ayutthaya the main Burmese army left in June 1767 and Taksin retook the centre by November",
+   "Ours does miss two real items: Luang Prabang and Vientiane were Burmese vassals in 1765-1778, and the Tenasserim coast south of ~14°N (Mergui, taken Jan 1765) appears only from 1769 in our data"
+  ],
+  "suggested": {
+   "type": "note",
+   "detail": "In April 1767 Burmese armies sacked Ayutthaya and held Laos's kingdoms as vassals, but most troops left Siam within months, and Taksin had reunited it by 1770.",
+   "from": 1765,
+   "to": 1768
+  },
+  "source": {
+   "title": "Burmese–Siamese War (1765–1767) (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Burmese–Siamese_War_(1765–1767)"
+  },
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Rattanakosin Kingdom",
+  "year": 1805,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": "The reference is a provinces poster whose faint red boundary lines can't be read at this size."
+ },
+ {
+  "realm": "Vakataka Kingdom",
+  "year": 517,
+  "verdict": "major",
+  "which_is_right": "reference",
+  "differences": [
+   "Deccan core (Vidarbha, Ajanta, Vatsagulma; ~73-83°E, 16-22°N) matches",
+   "Ours also runs north into Malwa (~74-78°E, 22-24.6°N), which Harishena's Ajanta inscription only claims to have conquered; the reference leaves it out",
+   "The year itself is a problem: the dynasty ended around 500-510 (Harishena's unnamed successors fell to the Kalachuris/Kadambas), but Cliopatria keeps the realm until 554 and shows it at its peak in 517"
+  ],
+  "suggested": {
+   "type": "clip",
+   "detail": "The Vakataka dynasty faded out after Harishena (died c. 500-510), so the kingdom is not shown after that.",
+   "from": 260,
+   "to": 510
+  },
+  "source": {
+   "title": "Vakataka dynasty (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Vakataka_dynasty"
+  },
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Songhai Empire",
+  "year": 1579,
+  "verdict": "major",
+  "which_is_right": "reference",
+  "differences": [
+   "The middle Niger from Senegal (~17°W) to Gao matches",
+   "Ours never goes east of ~1.7°E or south of ~14.4°N east of Gao, leaving out the Dendi province and the Niger valley below Gao (~1-4°E, 11.5-14.5°N), and the Air/Agadez and Hausa tributaries (~4-9°E) the reference shows; it also stops at ~18°N, short of the Taghaza salt mines (~23°N) that Askia Muhammad annexed"
+  ],
+  "suggested": {
+   "type": "note",
+   "detail": "At its height Songhai also held the Dendi lands down the Niger below Gao and the Saharan salt mines of Taghaza, and took tribute from Agadez and some Hausa cities, beyond what is shaded here.",
+   "from": 1493,
+   "to": 1591
+  },
+  "source": {
+   "title": "Songhai Empire (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Songhai_Empire"
+  },
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Qocho Kingdom",
+  "year": 1082,
+  "verdict": "match",
+  "which_is_right": null,
+  "differences": [
+   "Turfan-Beshbalik core, Kucha to Hami (~80-97°E, ~39-45°N), matches the reference; northern Dzungarian edge (~46°N) is a fuzzy frontier"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Aquitaine",
+  "year": 760,
+  "verdict": "match",
+  "which_is_right": null,
+  "differences": [
+   "Waifer's Aquitaine from the Loire/Berry to the Pyrenees with Gascony, and Septimania correctly excluded, matches the reference (Aquitaine plus the Vasconia duchy)"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "(French First Republic)",
+  "year": 1795,
+  "verdict": "minor",
+  "which_is_right": null,
+  "differences": [
+   "The reference is dated 1799, ours 1795. Ours shows France roughly within 1792 borders plus Savoy/Nice, without Corsica (correct: it was the Anglo-Corsican Kingdom in 1794-96) and without Belgium (annexed Oct 1795) or the left bank of the Rhine (1797)",
+   "The reference adds the sister republics (Batavian, Helvetic, Cisalpine, Ligurian, Roman, Parthenopean) as satellites; ours shows the overseas colonies, which the reference leaves out. The differences come from the date gap"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Federal Republic of Somalia",
+  "year": 2006,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": "The reference maps the Islamic Courts Union's area of control in December 2006, a different polity, not the territory of the Somali state."
+ },
+ {
+  "realm": "(Dutch Republic)",
+  "year": 1789,
+  "verdict": "minor",
+  "which_is_right": null,
+  "differences": [
+   "The European Netherlands, including the Generality Lands (States Brabant), matches the reference",
+   "Ours also shows VOC/WIC holdings (Cape, Ceylon, Java, Moluccas, Malacca, Elmina), which aren't in the reference, but leaves out Suriname and Essequibo-Demerara-Berbice (~54-59°W, 2-7°N), which were Dutch in 1789"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Kingdom of Afghanistan",
+  "year": 1931,
+  "verdict": "match",
+  "which_is_right": null,
+  "differences": [
+   "Borders (Durand Line, Wakhan corridor to ~74.9°E, Persian frontier) match the 1931 Imperial Gazetteer map"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Afghanistan",
+  "year": 2014,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": "The reference shows Afghanistan's regional emirates in March 1839, not the 2014 state."
+ },
+ {
+  "realm": "Denmark-Norway",
+  "year": 1780,
+  "verdict": "major",
+  "which_is_right": "reference",
+  "differences": [
+   "Norway, Denmark with Schleswig-Holstein, Iceland, the Faroes and Bornholm match",
+   "Greenland is in the reference and missing from ours (and from every year of our data); Dano-Norwegian trading and mission stations were set up along it from 1721. The reference fills the whole island, though the colony was only coastal stations",
+   "Separately: Cliopatria keeps 'Denmark-Norway' until 1940, although the union ended in 1814 (the polygon drops Norway after 1814)"
+  ],
+  "suggested": {
+   "type": "note",
+   "detail": "Greenland was also a Dano-Norwegian colony from 1721, held through trading and mission stations along its west coast; it is not shaded here.",
+   "from": 1721,
+   "to": 1813
+  },
+  "source": {
+   "title": "Danish colonization of the Americas (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Danish_colonization_of_the_Americas"
+  },
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Eastern Wei",
+  "year": 539,
+  "verdict": "match",
+  "which_is_right": null,
+  "differences": [
+   "Hebei, Shanxi (Bingzhou), Shandong and Henan down to ~33°N, plus Youzhou to ~42°N, match the reference"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Nanyue",
+  "year": -149,
+  "verdict": "major",
+  "which_is_right": "reference",
+  "differences": [
+   "Guangdong, Guangxi and northern Vietnam to ~17°N (Jiaozhi, Jiuzhen) match",
+   "Ours adds a northeastern block over Fujian and southern Zhejiang (~115-120°E, 24-30°N) for 170-127 BCE; the reference ends at ~117°E (Jieyang). This was Minyue (and Dong'ou), separate Yue kingdoms that Zhao Tuo only persuaded to submit and that were 'not strictly under Nanyue control'; Minyue attacked Nanyue in 135 BCE",
+   "Ours also stops at ~24.5°N, leaving out the northern Guilin and Cangwu areas (to ~26°N) that the reference includes"
+  ],
+  "suggested": {
+   "type": "note",
+   "detail": "Fujian and southern Zhejiang belonged to the separate Yue kingdoms of Minyue and Dong'ou; Zhao Tuo won their submission for a time, but Nanyue never governed them.",
+   "from": -170,
+   "to": -127
+  },
+  "source": {
+   "title": "Nanyue (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Nanyue"
+  },
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Central African Republic",
+  "year": 1987,
+  "verdict": "match",
+  "which_is_right": null,
+  "differences": [
+   "Modern borders match the reference"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Madagascar",
+  "year": 1991,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": "The reference is an ethno-linguistic map of the island's peoples (the outline matches, as it is the whole island)."
+ },
+ {
+  "realm": "South Sudan",
+  "year": 2018,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": "The reference is an ethnic-groups map (the outline matches modern South Sudan)."
+ },
+ {
+  "realm": "Former Shu",
+  "year": 923,
+  "verdict": "minor",
+  "which_is_right": null,
+  "differences": [
+   "Sichuan basin, Hanzhong and the Qinzhou-Tianshui area (to ~35.5°N, matching Former Shu's gains from Qi), and Kuizhou to ~110°E match the reference",
+   "Ours adds a southern lobe (~101.5-104°E, 26-29°N, the Jianchang/Xichang valley), which belonged to Dali (Dachanghe) south of the Dadu River; the reference stops at ~28-29°N"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Federal League",
+  "year": 1817,
+  "verdict": "match",
+  "which_is_right": null,
+  "differences": [
+   "Banda Oriental, Entre Ríos, Corrientes, Misiones, Santa Fe and Córdoba (~53-64°W, 25.5-35°S) match the reference"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Assyria",
+  "year": -1211,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": "The reference shows the Neo-Assyrian Empire in 824 and 671 BCE, centuries after our Middle Assyrian map of 1211 BCE."
+ },
+ {
+  "realm": "Ukraine",
+  "year": 2007,
+  "verdict": "match",
+  "which_is_right": null,
+  "differences": [
+   "Internationally recognised borders including Crimea match the reference's combined dark/light green; the reference's occupied areas show a later date"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ }
+]

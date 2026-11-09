@@ -47,8 +47,18 @@
           1249
         ]
       ],
-      "note": "The 1241–49 polygon duplicated Ayyubid Egypt and is hidden; the Mamluk sultanate begins in 1250.",
-      "log": "africa.md"
+      "note": "The 1241–49 polygon duplicated Ayyubid Egypt and is hidden; the Mamluk sultanate begins in 1250. The Ottomans conquered Mamluk Syria in 1516 and Egypt in January 1517, ending the sultanate; the Mamluk expedition to Yemen held only parts of the coast.",
+      "log": "africa.md",
+      "sources": [
+        {
+          "title": "Mamluk Sultanate — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Mamluk_Sultanate"
+        }
+      ],
+      "clip": [
+        1250,
+        1516
+      ]
     },
     "Golden Horde": {
       "relabel": [
@@ -59,8 +69,14 @@
           "key": "Golden Horde successor khanates"
         }
       ],
-      "note": "The Golden Horde ended in 1502; later polygons under its name are shown as its successor khanates. The map also starts it only in 1294 (it existed from the 1240s as part of the Mongol Empire).",
-      "log": "islamic-iran-central-asia.md"
+      "note": "The Golden Horde ended in 1502; later polygons under its name are shown as its successor khanates. The map also starts it only in 1294 (it existed from the 1240s as part of the Mongol Empire). Tokhtamysh raided Azerbaijan and sacked Tabriz in 1385 but did not hold it; south of Derbent, Shirvan was ruled by its own Shirvanshahs, vassals of Timur from 1386.",
+      "log": "islamic-iran-central-asia.md",
+      "sources": [
+        {
+          "title": "Shirvanshah (Wikipedia): Ibrahim I (r. 1382-1417), founder of the Darbandid line, was a vassal of Timur",
+          "url": "https://en.wikipedia.org/wiki/Shirvanshah"
+        }
+      ]
     },
     "Inca Empire": {
       "hide": [
@@ -274,8 +290,14 @@
         1819,
         1831
       ],
-      "note": "Gran Colombia dissolved in 1830–31; later polygons are hidden.",
-      "log": "americas.md"
+      "note": "Gran Colombia dissolved in 1830–31; later polygons are hidden. The southern block is Upper Peru, still held by royalists under Olañeta in 1824, which became the Republic of Bolivia in August 1825; it was never part of Gran Colombia.",
+      "log": "americas.md",
+      "sources": [
+        {
+          "title": "Bolivian War of Independence (Wikipedia): royalists under Olañeta held Upper Peru after Ayacucho; independence declared 6 August 1825; Bolívar wanted Charcas to join Peru",
+          "url": "https://en.wikipedia.org/wiki/Bolivian_War_of_Independence"
+        }
+      ]
     },
     "Greek City-States": {
       "clip": [
@@ -393,12 +415,24 @@
         "year": 1312,
         "source": "Taagepera 1997; Turchin, Adams & Hall 2006"
       },
-      "note": "Scholars differ on the peak: Taagepera and Turchin put it in 1312 under Alauddin Khalji; Schwartzberg (pl. V) and this map show the widest extent under Muhammad bin Tughluq in the 1330s.",
-      "log": "south-asia.md"
+      "note": "Scholars differ on the peak: Taagepera and Turchin put it in 1312 under Alauddin Khalji; Schwartzberg (pl. V) and this map show the widest extent under Muhammad bin Tughluq in the 1330s. By 1318 the Sultanate governed Devagiri in the northern Deccan, and the Kakatiyas of Warangal and kingdoms farther south paid it tribute; this map shows only the northern core.",
+      "log": "south-asia.md",
+      "sources": [
+        {
+          "title": "Qutbuddin Mubarak Shah (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Qutbuddin_Mubarak_Shah"
+        }
+      ]
     },
     "Khalji Dynasty": {
-      "note": "Taagepera and Turchin estimate c. 3.2M km² for 1312, far more than drawn here; Schwartzberg (pl. V) shows the Khalji sphere reaching the far south only through tributary raids.",
-      "log": "south-asia.md"
+      "note": "Taagepera and Turchin estimate c. 3.2M km² for 1312, far more than drawn here; Schwartzberg (pl. V) shows the Khalji sphere reaching the far south only through tributary raids. Bengal was not under Khalji rule: Shamsuddin Firuz Shah ruled it as an independent sultan from 1301 to 1322. Devagiri in the Deccan was taken in 1307 and annexed in 1318, and Warangal and Dvarasamudra paid tribute.",
+      "log": "south-asia.md",
+      "sources": [
+        {
+          "title": "Shamsuddin Firoz Shah — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Shamsuddin_Firoz_Shah"
+        }
+      ]
     },
     "British Raj": {
       "note": "The map keeps Burma inside the Raj after its separation in 1937 (except 1943–44), and has no Raj polygon before 1859 (Crown rule began 1858).",
@@ -417,8 +451,14 @@
       "log": "south-asia.md"
     },
     "Republic of China": {
-      "note": "After 1950 the map shows c. 81,000 km², about twice the area of Taiwan and its islands (c. 36,000 km²).",
-      "log": "east-asia.md"
+      "note": "After 1950 the map shows c. 81,000 km², about twice the area of Taiwan and its islands (c. 36,000 km²). Until Japan surrendered in August-September 1945 much of eastern China and Manchuria was under Japanese occupation; afterwards the Republic took back those regions and Taiwan (25 October 1945), while Tibet remained de facto independent.",
+      "log": "east-asia.md",
+      "sources": [
+        {
+          "title": "Retrocession Day (Wikipedia): ROC took control of Taiwan on 25 October 1945",
+          "url": "https://en.wikipedia.org/wiki/Retrocession_Day"
+        }
+      ]
     },
     "Kingdom of Kongo": {
       "note": "The map draws Kongo only for 1440–1669; the kingdom lasted from c. 1390 to 1914.",
@@ -493,6 +533,1243 @@
         }
       ],
       "log": "Reader report: map vs Commons reference map, 2026-11-09"
+    },
+    "(British Empire)": {
+      "note": "Australia was a self-governing Dominion of the British Empire from 1901; it is drawn here as a separate country, but in 1921 it belonged to the Empire just as Canada and South Africa did.",
+      "sources": [
+        {
+          "title": "Dominion (Wikipedia): 'The Commonwealth of Australia was recognised as a Dominion in 1901'",
+          "url": "https://en.wikipedia.org/wiki/Dominion"
+        }
+      ],
+      "log": "reference check (refcheck-01.json)"
+    },
+    "(French Fourth Republic)": {
+      "note": "In 1945 Japan had ended French rule in Indochina (March) and France was only beginning to retake it (from September); from 1946 Indochina, like the Moroccan and Tunisian protectorates, belonged to the French Union until 1954-56.",
+      "sources": [
+        {
+          "title": "French Indochina (Wikipedia): Japanese coup of 9 March 1945, French reconquest of Cochinchina from 23 September 1945, Associated States of the French Union 1949-54",
+          "url": "https://en.wikipedia.org/wiki/French_Indochina"
+        }
+      ],
+      "log": "reference check (refcheck-01.json)"
+    },
+    "United States of America": {
+      "note": "Greenland and Iceland were never US territory: US forces were stationed there under 1941 defence agreements while Denmark was occupied, and the shaded part of Germany is the American occupation zone from 1945.",
+      "sources": [
+        {
+          "title": "Greenland in World War II (Wikipedia): 1941 Kauffmann-Hull agreement allowed US troops; Greenland remained Danish and returned to direct Copenhagen rule after the war",
+          "url": "https://en.wikipedia.org/wiki/Greenland_in_World_War_II"
+        }
+      ],
+      "log": "reference check (refcheck-01.json)"
+    },
+    "(Vichy France)": {
+      "note": "Vichy governed from the unoccupied south of France and ostensibly administered all of France except Alsace-Lorraine; after November 1942 Germany occupied the whole country, and most colonies drawn here had already gone over to Free France.",
+      "sources": [
+        {
+          "title": "Vichy France (Wikipedia): Vichy 'ostensibly' administered all of France except Alsace-Lorraine; after Operation Torch Germany occupied the whole country",
+          "url": "https://en.wikipedia.org/wiki/Vichy_France"
+        }
+      ],
+      "log": "reference check (refcheck-01.json)"
+    },
+    "British Africa": {
+      "note": "Nigeria and the Gold Coast were British colonies in 1914 (Nigeria was amalgamated into a single colony and protectorate on 1 January 1914) but are drawn here as separate states.",
+      "sources": [
+        {
+          "title": "Colonial Nigeria (Wikipedia): Colony and Protectorate of Nigeria formed 1 January 1914",
+          "url": "https://en.wikipedia.org/wiki/Colonial_Nigeria"
+        }
+      ],
+      "log": "reference check (refcheck-01.json)"
+    },
+    "Roman Empire": {
+      "note": "Hadrian gave up Trajan's conquests east of the Euphrates (Armenia, Mesopotamia, Assyria) in 117; Rome did not hold a province of Mesopotamia again until Septimius Severus in 198.",
+      "sources": [
+        {
+          "title": "Mesopotamia (Roman province) (Wikipedia): evacuated 117 by Hadrian, re-established by Severus in 198",
+          "url": "https://en.wikipedia.org/wiki/Mesopotamia_(Roman_province)"
+        }
+      ],
+      "log": "reference check (refcheck-01.json)"
+    },
+    "Xin Dynasty": {
+      "note": "In 23 CE the Xin was collapsing: Han-restorationist rebels from Hubei beat Wang Mang's army at Kunyang and took Chang'an in October, so the gaps show land already lost to rebels; at its height the Xin held the full Han realm.",
+      "sources": [
+        {
+          "title": "Xin dynasty (Wikipedia): Battle of Kunyang (June-July 23), Chang'an captured October 23, Lülin rebels from Hubei",
+          "url": "https://en.wikipedia.org/wiki/Xin_dynasty"
+        }
+      ],
+      "log": "reference check (refcheck-01.json)"
+    },
+    "Western Jin": {
+      "note": "Eastern Jin (317-420), the southern successor state ruled from Jiankang after the Western Jin fell in 316.",
+      "sources": [
+        {
+          "title": "Jin dynasty (266-420) (Wikipedia): Western Jin ended 316; Eastern Jin 317-420 at Jiankang",
+          "url": "https://en.wikipedia.org/wiki/Jin_dynasty_(266%E2%80%93420)"
+        }
+      ],
+      "relabel": [
+        {
+          "from": 317,
+          "to": 420,
+          "name": "Eastern Jin",
+          "key": "Eastern Jin"
+        }
+      ],
+      "log": "reference check (refcheck-01.json)"
+    },
+    "Türgesh": {
+      "note": "Second Turkic Khaganate: in 692–704 this polygon over Mongolia shows the Eastern Türks under Qapaghan Qaghan; the Türgesh khaganate (from 699) lay farther west in Zhetysu, ruling from Suyab and Taraz.",
+      "sources": [
+        {
+          "title": "Türgesh (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/T%C3%BCrgesh"
+        }
+      ],
+      "relabel": [
+        {
+          "from": 692,
+          "to": 704,
+          "name": "Second Turkic Khaganate",
+          "key": "Second Turkic Khaganate"
+        }
+      ],
+      "log": "reference check (refcheck-02.json)"
+    },
+    "Uyghur Khaganate": {
+      "note": "After 766 the Karluks held Zhetysu (the Chu–Talas valleys around Suyab), so the western tip of this shape was outside Uyghur rule.",
+      "sources": [
+        {
+          "title": "Karluks (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Karluks"
+        }
+      ],
+      "log": "reference check (refcheck-02.json)"
+    },
+    "Dzungar Khanate": {
+      "note": "In November 1717 a Dzungar army seized Lhasa and occupied central Tibet until a Qing expedition expelled it in 1720; that occupation is not drawn here.",
+      "sources": [
+        {
+          "title": "Dzungar conquest of Tibet (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Dzungar_conquest_of_Tibet"
+        }
+      ],
+      "log": "reference check (refcheck-02.json)"
+    },
+    "First Mexican Empire": {
+      "note": "Mexico's claimed border ran to 42°N and took in all of Alta California and New Mexico (today's California, Nevada, Utah and Arizona), though most of that interior was controlled by the Comanche, Apache, Ute and other peoples rather than by Mexico.",
+      "sources": [
+        {
+          "title": "First Mexican Empire (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/First_Mexican_Empire"
+        }
+      ],
+      "log": "reference check (refcheck-02.json)"
+    },
+    "Samanid Empire": {
+      "note": "At this date Rayy and the Jibal belonged to the Buyids and Kerman to the effectively independent Ilyasids; Samanid rule in the south and west was nominal at best.",
+      "sources": [
+        {
+          "title": "Ilyasids (Wikipedia); see also Rukn al-Dawla",
+          "url": "https://en.wikipedia.org/wiki/Ilyasids"
+        }
+      ],
+      "log": "reference check (refcheck-02.json)"
+    },
+    "Argentine Confederation": {
+      "note": "Much of the Gran Chaco in the north remained under the control of Indigenous peoples such as the Qom and Wichí until military campaigns from the 1880s, so the Confederation's real reach was smaller than drawn.",
+      "sources": [
+        {
+          "title": "Gran Chaco (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Gran_Chaco"
+        }
+      ],
+      "log": "reference check (refcheck-02.json)"
+    },
+    "British East Africa": {
+      "note": "British colonies in Africa: this shape groups Britain's remaining African dependencies during decolonisation (1961–1968), not the East Africa Protectorate, which was the forerunner of Kenya from 1895 to 1920.",
+      "sources": [
+        {
+          "title": "East Africa Protectorate (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/East_Africa_Protectorate"
+        }
+      ],
+      "relabel": [
+        {
+          "from": 1961,
+          "to": 1972,
+          "name": "British colonies in Africa",
+          "key": "British colonies in Africa"
+        }
+      ],
+      "log": "reference check (refcheck-02.json)"
+    },
+    "Free French": {
+      "note": "In 1940 Chad was the first colony to join Free France (26 August), though the map leaves it out; Gabon joined only after fighting in November, and the Pacific colonies and French India also rallied that summer.",
+      "sources": [
+        {
+          "title": "Free France — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Free_France"
+        }
+      ],
+      "log": "reference check (refcheck-03.json)"
+    },
+    "Emirate of Diriyah": {
+      "note": "At its height the first Saudi state held Najd, the Hejaz, al-Hasa and the Gulf coast, with Asir and Tihama as vassals; the Zaydi imams kept Sanaa and the Yemeni highlands, and the Rub' al Khali was not administered.",
+      "sources": [
+        {
+          "title": "Qasimid state — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Qasimid_state"
+        }
+      ],
+      "log": "reference check (refcheck-03.json)"
+    },
+    "Kushan Empire": {
+      "note": "Kushan power in the Tarim Basin rested on influence in Kashgar, Yarkand and Khotan (coins, a client king in Kashgar); Kucha and Turfan in the northeast belonged to the Han-dominated Western Regions, not to the Kushans.",
+      "sources": [
+        {
+          "title": "Kushan Empire — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Kushan_Empire"
+        }
+      ],
+      "log": "reference check (refcheck-03.json)"
+    },
+    "Median Kingdom": {
+      "note": "Later Greek tradition gives the Medes a realm from northeastern Iran to the Halys River in Anatolia, including Armenia and former Assyrian lands; the map's eastern reach to Bactria is speculative, and some historians doubt a large Median empire existed.",
+      "sources": [
+        {
+          "title": "Medes — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Medes"
+        }
+      ],
+      "log": "reference check (refcheck-03.json)"
+    },
+    "Estado Novo": {
+      "note": "Portugal's Estado Novo ended with the Carnation Revolution of April 1974; Cabinda has been part of Angola since independence in 1975.",
+      "sources": [
+        {
+          "title": "Estado Novo (Portugal) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Estado_Novo_(Portugal)"
+        }
+      ],
+      "clip": [
+        1926,
+        1975
+      ],
+      "log": "reference check (refcheck-03.json)"
+    },
+    "Centralist Mexico": {
+      "note": "Centralist Mexico — the 1842–1845 'Federated Republic of Mexico' polygon (Nuevo México) was a department of the Centralist Republic, not a separate state.",
+      "sources": [
+        {
+          "title": "Centralist Republic of Mexico — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Centralist_Republic_of_Mexico"
+        }
+      ],
+      "log": "reference check (refcheck-03.json)"
+    },
+    "Ghurid Dynasty": {
+      "note": "After Muhammad of Ghor died in 1206 the empire broke apart: Khwarazm took Herat and Ghor, Yildiz held Ghazni, and Qutb al-Din Aibak ruled the Indian conquests from Delhi; the map's 1206–1209 outline still shows the earlier unified realm.",
+      "sources": [
+        {
+          "title": "Ghurid dynasty — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Ghurid_dynasty"
+        }
+      ],
+      "log": "reference check (refcheck-03.json)"
+    },
+    "Qin Dynasty": {
+      "note": "Qin Dynasty — the 'Minyue' polygon of 221–207 BCE (Jiangxi and inland Fujian) lay inside Qin commanderies; Minyue proper was in Fujian.",
+      "sources": [
+        {
+          "title": "Minyue — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Minyue"
+        }
+      ],
+      "log": "reference check (refcheck-03.json)"
+    },
+    "(Eighteen Kingdoms)": {
+      "note": "Jiangxi belonged to the kingdom of Hengshan and northern Hunan to Linjiang; the area shown as Minyue here was not part of Minyue, which lay in Fujian.",
+      "sources": [
+        {
+          "title": "Eighteen Kingdoms — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Eighteen_Kingdoms"
+        }
+      ],
+      "log": "reference check (refcheck-03.json)"
+    },
+    "Liao Dynasty": {
+      "note": "From 1115 the Jurchen Jin broke away in the northeast, taking Huanglong (1115) and everything east of the Liao River (1116) and the Supreme Capital in 1120, so the map overstates Liao after 1115; Liao also kept garrison towns far west on the Mongolian steppe.",
+      "sources": [
+        {
+          "title": "Jin dynasty (1115–1234) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Jin_dynasty_(1115%E2%80%931234)"
+        }
+      ],
+      "log": "reference check (refcheck-03.json)"
+    },
+    "Hotaki Dynasty": {
+      "note": "Ashraf Hotaki ruled central and southern Persia from Isfahan, while Khorasan was held by Tahmasp II and Nader and Herat by the Abdali Afghans; Hussain Hotaki ruled Kandahar. Nader expelled Ashraf from Persia in 1729 and took Kandahar in 1738.",
+      "sources": [
+        {
+          "title": "Hotak dynasty — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Hotak_dynasty"
+        }
+      ],
+      "log": "reference check (refcheck-03.json)"
+    },
+    "Aq Qoyunlu": {
+      "note": "Until Uzun Hasan's victory over the Qara Qoyunlu in 1467, the Aq Qoyunlu held only Diyarbakır and nearby Upper Mesopotamia; Iraq and Khuzestan belonged to others.",
+      "sources": [
+        {
+          "title": "Aq Qoyunlu — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Aq_Qoyunlu"
+        }
+      ],
+      "log": "reference check (refcheck-03.json)"
+    },
+    "Nanda Empire": {
+      "note": "The Nandas ruled the Ganges plain from Magadha. The lands west of the Beas, including Punjab and Sindh, were separate kingdoms when Alexander arrived in 326–325 BCE. The Nanda frontier was the Beas, so the shading across Sindh is too far west.",
+      "sources": [
+        {
+          "title": "Nanda Empire (Wikipedia): Nanda territory lay beyond the Beas; Kalinga in part, Avanti probable, nothing south of the Vindhyas",
+          "url": "https://en.wikipedia.org/wiki/Nanda_Empire"
+        }
+      ],
+      "log": "reference check (refcheck-04.json)"
+    },
+    "Assyrian Egypt": {
+      "note": "Neo-Assyrian Empire (without Egypt); Egypt in 650–616 BCE belongs to the Twenty-sixth (Saite) Dynasty under Psamtik I",
+      "sources": [
+        {
+          "title": "Psamtik I (Wikipedia): unified all of Egypt under his rule by 656 BCE; firmly in control by 654 BCE",
+          "url": "https://en.wikipedia.org/wiki/Psamtik_I"
+        }
+      ],
+      "relabel": [
+        {
+          "from": -650,
+          "to": -616,
+          "name": "Neo-Assyrian Empire",
+          "key": "Neo-Assyrian Empire"
+        }
+      ],
+      "log": "reference check (refcheck-04.json)"
+    },
+    "Neo-Assyrian Empire": {
+      "note": "Assyria conquered Egypt in 671 BCE but lost it within about 15 years. By 656 BCE Psamtik I, first installed as an Assyrian client, ruled a reunited Egypt on his own. From then on, Egypt shown as Assyrian means at most nominal allegiance.",
+      "sources": [
+        {
+          "title": "Psamtik I (Wikipedia): unified all of Egypt by 656 BCE",
+          "url": "https://en.wikipedia.org/wiki/Psamtik_I"
+        }
+      ],
+      "log": "reference check (refcheck-04.json)"
+    },
+    "Moghulistan": {
+      "note": "By 1517 Moghulistan had split. Sultan Said Khan founded the Yarkent Khanate at Kashgar in 1514 and Mansur Khan ruled from Turpan, while the Kyrgyz had driven the Moghuls out of the northern steppe by 1510–11.",
+      "sources": [
+        {
+          "title": "Moghulistan (Wikipedia): Kyrgyz drove out the Moghuls by 1510–11; Yarkent Khanate formed 1514; 1517 division of Yarkent and Turpan",
+          "url": "https://en.wikipedia.org/wiki/Moghulistan"
+        }
+      ],
+      "log": "reference check (refcheck-04.json)"
+    },
+    "Greco-Bactrian Kingdom": {
+      "note": "Demetrius I may have taken Arachosia from the Mauryas around 190–180 BCE ('Demetrias in Arachosia' is attributed to him), but this is uncertain. Some maps include Arachosia and others do not.",
+      "sources": [
+        {
+          "title": "Demetrius I of Bactria (Wikipedia): 'may have first started to recover' Arachosia; invasion of NW India 190–180 BCE",
+          "url": "https://en.wikipedia.org/wiki/Demetrius_I_of_Bactria"
+        }
+      ],
+      "log": "reference check (refcheck-04.json)"
+    },
+    "Pala Empire": {
+      "note": "Kings of Avanti, Madra and Gandhara are listed attending Dharmapala's court. They only recognised his overlordship and kept their own lands, so the Palas never governed Malwa or the Punjab. By the 820s the Pratiharas also held Kannauj.",
+      "sources": [
+        {
+          "title": "Pala Empire (Wikipedia): Avanti, Madra and Gandhara rulers 'maintained their own territories'; Nagabhata II took Kannauj",
+          "url": "https://en.wikipedia.org/wiki/Pala_Empire"
+        }
+      ],
+      "log": "reference check (refcheck-04.json)"
+    },
+    "Mamluk Dynasty": {
+      "note": "In 1272, under Balban, Malwa was still ruled by the Paramara kings. Delhi first conquered it under Alauddin Khalji in 1305.",
+      "sources": [
+        {
+          "title": "Paramara dynasty (Wikipedia): Arjunavarman II ruled Malwa 1274–1285; Alauddin Khalji's forces took Malwa in 1305",
+          "url": "https://en.wikipedia.org/wiki/Paramara_dynasty"
+        }
+      ],
+      "log": "reference check (refcheck-04.json)"
+    },
+    "Kara-Khanids": {
+      "note": "The khanate's eastern core was Kashgar, one of its capitals. In 1006 Yusuf Qadir Khan of Kashgar conquered the Buddhist kingdom of Khotan, so the Tarim basin's western half belonged to the khanate.",
+      "sources": [
+        {
+          "title": "Kara-Khanid Khanate (Wikipedia): capitals included Kashgar; Khotan conquered 1006",
+          "url": "https://en.wikipedia.org/wiki/Kara-Khanid_Khanate"
+        }
+      ],
+      "log": "reference check (refcheck-04.json)"
+    },
+    "(First French Empire)": {
+      "note": "In 1812 the Empire formally annexed only Catalonia, as four departments created on 26 January 1812. The rest of northern Spain was held by French armies but still belonged to Joseph Bonaparte's Kingdom of Spain, and the Russian lands were held only briefly during the 1812 invasion.",
+      "sources": [
+        {
+          "title": "Bouches-de-l'Èbre (Wikipedia): created 26 January 1812 on Catalonia's annexation by the French Empire",
+          "url": "https://en.wikipedia.org/wiki/Bouches-de-l%27%C3%88bre"
+        }
+      ],
+      "log": "reference check (refcheck-04.json)"
+    },
+    "British Gold Coast": {
+      "note": "Lagos was governed from the Gold Coast from 1874 to 1886 and then became a separate colony, so the shapes in southern Nigeria are not part of the 1896 Gold Coast. The Gold Coast itself reached inland toward Ashanti, which was made a British protectorate in 1896.",
+      "sources": [
+        {
+          "title": "Lagos Colony (Wikipedia): administered under the Gold Coast 1874–1886, separate colony from 1886",
+          "url": "https://en.wikipedia.org/wiki/Lagos_Colony"
+        }
+      ],
+      "log": "reference check (refcheck-04.json)"
+    },
+    "Shunga Empire": {
+      "note": "Kalinga regained its independence after the Mauryas fell and was ruled by its own Mahameghavahana kings, such as Kharavela, not by the Shungas. By the early 1st century BCE the Shungas held little beyond the central Ganges plain and Vidisha.",
+      "sources": [
+        {
+          "title": "Kharavela (Wikipedia): Kalinga regained independence after the Maurya Empire; Kharavela dated 2nd–1st century BCE",
+          "url": "https://en.wikipedia.org/wiki/Kharavela"
+        }
+      ],
+      "log": "reference check (refcheck-04.json)"
+    },
+    "Mali Empire": {
+      "note": "By the 1430s Mali was in decline: it had lost Gao, and Timbuktu fell to the Tuareg in 1433, so the eastern Niger bend shown here was no longer Malian.",
+      "sources": [
+        {
+          "title": "Mali Empire (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Mali_Empire"
+        }
+      ],
+      "log": "reference check (refcheck-05.json)"
+    },
+    "Swedish Empire": {
+      "note": "The German area shows where Swedish armies held sway in the Thirty Years' War (1631–34); after Nördlingen it was lost, and in 1648 Sweden kept only Pomerania, Wismar and Bremen-Verden.",
+      "sources": [
+        {
+          "title": "Swedish Empire (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Swedish_Empire"
+        }
+      ],
+      "log": "reference check (refcheck-05.json)"
+    },
+    "Kingdom of Great Britain": {
+      "note": "United Kingdom (from 1801; the Kingdom of Great Britain existed 1707–1800)",
+      "sources": [
+        {
+          "title": "Kingdom of Great Britain (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Kingdom_of_Great_Britain"
+        }
+      ],
+      "relabel": [
+        {
+          "from": 1801,
+          "to": 2024,
+          "name": "United Kingdom",
+          "key": "United Kingdom"
+        }
+      ],
+      "log": "reference check (refcheck-05.json)"
+    },
+    "First Spanish Republic": {
+      "note": "Kingdom of Spain (Bourbon Restoration from 29 December 1874)",
+      "sources": [
+        {
+          "title": "First Spanish Republic (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/First_Spanish_Republic"
+        }
+      ],
+      "relabel": [
+        {
+          "from": 1875,
+          "to": 1876,
+          "name": "Kingdom of Spain",
+          "key": "Kingdom of Spain"
+        }
+      ],
+      "log": "reference check (refcheck-05.json)"
+    },
+    "British Cape Colony": {
+      "note": "This shape lumps other British possessions with the Cape: Natal and British Kaffraria were separate colonies, and the West African dots are Sierra Leone and the Gambia.",
+      "sources": [
+        {
+          "title": "Cape Colony (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Cape_Colony"
+        }
+      ],
+      "log": "reference check (refcheck-05.json)"
+    },
+    "Gurjara-Pratihara Dynasty": {
+      "note": "At its height under Mihira Bhoja and Mahendrapala I (c. 836–910) the empire ruled from Kannauj and reached Bihar and the Bengal frontier, wider than shown here.",
+      "sources": [
+        {
+          "title": "Gurjara-Pratihara dynasty (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Gurjara-Pratihara_dynasty"
+        }
+      ],
+      "log": "reference check (refcheck-05.json)"
+    },
+    "Yuezhi": {
+      "note": "Chinese sources place the Yuezhi between Dunhuang and the Qilian Mountains in Gansu; they reached the Ili valley only after the Xiongnu defeated them c. 176 BCE.",
+      "sources": [
+        {
+          "title": "Yuezhi (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Yuezhi"
+        }
+      ],
+      "log": "reference check (refcheck-05.json)"
+    },
+    "Khanate of Khiva": {
+      "note": "Outside the Khorezm oasis, the Turkmen and Kazakh nomads only loosely acknowledged Khiva, and from 1855 to 1867 the Turkmen were in open revolt.",
+      "sources": [
+        {
+          "title": "Khanate of Khiva (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Khanate_of_Khiva"
+        }
+      ],
+      "log": "reference check (refcheck-05.json)"
+    },
+    "Khazaria": {
+      "note": "The area south of the Caucasus marks the Khazar raid of the 760s into Albania, Iberia and Armenia; the lasting frontier with the Caliphate was at Derbent.",
+      "sources": [
+        {
+          "title": "Arab–Khazar wars (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Arab–Khazar_wars"
+        }
+      ],
+      "log": "reference check (refcheck-05.json)"
+    },
+    "(Mahajanapadas)": {
+      "note": "Each patch marks only the core around a capital. The sixteen great states (mahajanapadas) were kingdoms and republics that covered much of the Ganges plain, Malwa and the northern Deccan.",
+      "sources": [
+        {
+          "title": "Mahajanapadas (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Mahajanapadas"
+        }
+      ],
+      "log": "reference check (refcheck-06.json)"
+    },
+    "French Indochina": {
+      "note": "Indochina was Vietnam, Laos, Cambodia and the leased port of Guangzhouwan; the far-off islands and Indian ports also shaded here (New Caledonia, Réunion, French India) were separate French colonies.",
+      "sources": [
+        {
+          "title": "French Indochina (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/French_Indochina"
+        }
+      ],
+      "log": "reference check (refcheck-06.json)"
+    },
+    "Khanate of Bukhara": {
+      "note": "Khorasan and Herat, south of the Amu Darya, were fought over with Safavid Persia; the Uzbeks besieged Herat in 1527-28 but were beaten at Jam in 1528, so they did not firmly rule this area.",
+      "sources": [
+        {
+          "title": "Battle of Jam (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Battle_of_Jam"
+        }
+      ],
+      "log": "reference check (refcheck-06.json)"
+    },
+    "Indus Valley Civilization": {
+      "note": "Only a few major city sites are marked; the Harappan world spread across most of today's Pakistan and northwest India, from Baluchistan to Haryana and south to Gujarat.",
+      "sources": [
+        {
+          "title": "Indus Valley Civilisation (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Indus_Valley_Civilisation"
+        }
+      ],
+      "log": "reference check (refcheck-06.json)"
+    },
+    "Indo-Sasanian Empire": {
+      "note": "The Kushano-Sasanian lands are known mostly from coins and Persian inscriptions; besides Bactria and Gandhara they probably took in Sogdiana and the mint cities of Merv and Herat, so the frontiers here are approximate.",
+      "sources": [
+        {
+          "title": "Kushano-Sasanian Kingdom (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Kushano-Sasanian_Kingdom"
+        }
+      ],
+      "log": "reference check (refcheck-06.json)"
+    },
+    "Marinid Sultanate": {
+      "note": "Abu Inan took Tlemcen (1352), Bejaia (1353) and briefly Tunis (1357), but he had to pull out of Ifriqiya in 1357 and died in 1358; by 1359 the Zayyanids and Hafsids had their lands back.",
+      "sources": [
+        {
+          "title": "Abu Inan Faris (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Abu_Inan_Faris"
+        }
+      ],
+      "log": "reference check (refcheck-06.json)"
+    },
+    "Kingdom of Germany": {
+      "note": "Otto I also took the separate crown of Italy (claimed 951, conquered 961, emperor 962); northern Italy, shaded here with Germany, stayed a distinct kingdom with the same ruler.",
+      "sources": [
+        {
+          "title": "Kingdom of Italy (Holy Roman Empire) (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Kingdom_of_Italy_(Holy_Roman_Empire)"
+        }
+      ],
+      "log": "reference check (refcheck-06.json)"
+    },
+    "Gallic Empire": {
+      "note": "Spain also recognised Postumus as emperor from 260 until about 269, so the Gallic Empire briefly reached well beyond what is shaded here.",
+      "sources": [
+        {
+          "title": "Gallic Empire (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Gallic_Empire"
+        }
+      ],
+      "log": "reference check (refcheck-06.json)"
+    },
+    "Zhou Dynasty": {
+      "note": "Early Zhou kings ruled the Wei and Yellow River valleys and planted fiefs such as Qi, Lu and Yan, but the eastern Shandong peninsula (Lai) and the Huai River lands stayed with independent Yi peoples.",
+      "sources": [
+        {
+          "title": "Lai (state) (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Lai_(state)"
+        }
+      ],
+      "log": "reference check (refcheck-06.json)"
+    },
+    "Vakataka Kingdom": {
+      "note": "The Vakataka dynasty faded out after Harishena (died c. 500-510), so the kingdom is not shown after that.",
+      "sources": [
+        {
+          "title": "Vakataka dynasty (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Vakataka_dynasty"
+        }
+      ],
+      "clip": [
+        260,
+        510
+      ],
+      "log": "reference check (refcheck-06.json)"
+    },
+    "Songhai Empire": {
+      "note": "At its height Songhai also held the Dendi lands down the Niger below Gao and the Saharan salt mines of Taghaza, and took tribute from Agadez and some Hausa cities, beyond what is shaded here.",
+      "sources": [
+        {
+          "title": "Songhai Empire (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Songhai_Empire"
+        }
+      ],
+      "log": "reference check (refcheck-06.json)"
+    },
+    "Denmark-Norway": {
+      "note": "Greenland was also a Dano-Norwegian colony from 1721, held through trading and mission stations along its west coast; it is not shaded here.",
+      "sources": [
+        {
+          "title": "Danish colonization of the Americas (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Danish_colonization_of_the_Americas"
+        }
+      ],
+      "log": "reference check (refcheck-06.json)"
+    },
+    "Nanyue": {
+      "note": "Fujian and southern Zhejiang belonged to the separate Yue kingdoms of Minyue and Dong'ou; Zhao Tuo won their submission for a time, but Nanyue never governed them.",
+      "sources": [
+        {
+          "title": "Nanyue (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Nanyue"
+        }
+      ],
+      "log": "reference check (refcheck-06.json)"
+    },
+    "Chu": {
+      "note": "In the early 3rd century BCE Chu also held most of Hunan, south to the Nanling hills; Qin took its heartland at Ying in 278 BCE, and this map leaves the southern lands out.",
+      "sources": [
+        {
+          "title": "Wikipedia: Chu (state) (\"included most of the present-day provinces of Hubei and Hunan\")",
+          "url": "https://en.wikipedia.org/wiki/Chu_(state)"
+        }
+      ],
+      "log": "reference check (refcheck-07.json)"
+    },
+    "Kingdom of Pontus": {
+      "note": "By the 1st century CE the Roman client kingdom of Pontus was only the eastern half of the old kingdom; the west (Paphlagonia, Amaseia, Amisus) was part of Roman Galatia and Bithynia-Pontus. Nero annexed the rest in 62 CE.",
+      "sources": [
+        {
+          "title": "Wikipedia: Pontus (region) (\"larger part of Pontus ... included in the province of Galatia ... eastern half ... client kingdom\")",
+          "url": "https://en.wikipedia.org/wiki/Pontus_(region)"
+        }
+      ],
+      "log": "reference check (refcheck-07.json)"
+    },
+    "(Kingdom of England)": {
+      "note": "In 1700 England, Scotland and Ireland shared one monarch but were separate kingdoms; England and Scotland merged into Great Britain only in 1707.",
+      "sources": [
+        {
+          "title": "Wikipedia: Acts of Union 1707 (\"had shared a monarch since the 'personal' Union of the Crowns in 1603\")",
+          "url": "https://en.wikipedia.org/wiki/Acts_of_Union_1707"
+        }
+      ],
+      "log": "reference check (refcheck-07.json)"
+    },
+    "Anti-Kuomintang Coalition": {
+      "note": "In mid-1930 the coalition of Yan Xishan, Feng Yuxiang and the Guangxi clique held most of North China (Shanxi, Hebei with Peiping, Henan, Shaanxi and Gansu) plus Guangxi, and set up a rival government in Peiping; this map shows far less.",
+      "sources": [
+        {
+          "title": "Wikipedia: Central Plains War (coalition held Henan, took Jinan in Shandong, held Guangxi, set up a government in Peiping)",
+          "url": "https://en.wikipedia.org/wiki/Central_Plains_War"
+        }
+      ],
+      "log": "reference check (refcheck-07.json)"
+    },
+    "Talpur Dynasty": {
+      "note": "The Talpur Mirs ruled Sindh (with Khairpur and Mirpur branches) and some border districts; Balochistan, Kalat and Makran were under their own khans.",
+      "sources": [
+        {
+          "title": "Wikipedia: Talpur dynasty (combined area \"over 100,000 square kilometres\")",
+          "url": "https://en.wikipedia.org/wiki/Talpur_dynasty"
+        }
+      ],
+      "log": "reference check (refcheck-07.json)"
+    },
+    "Maukhari Dynasty": {
+      "note": "The Maukharis of Kannauj ruled the Ganges plain from about Thanesar to Magadha; Bengal (Gauda) was a rival kingdom that later took Maukhari land.",
+      "sources": [
+        {
+          "title": "Wikipedia: Maukhari dynasty (\"spread from Thaneshwar in the West to Nalanda district in the east\")",
+          "url": "https://en.wikipedia.org/wiki/Maukhari_dynasty"
+        }
+      ],
+      "log": "reference check (refcheck-07.json)"
+    },
+    "Indo-Parthians": {
+      "note": "At its height under Gondophares, the Indo-Parthian kingdom also held its homeland of Sistan (Drangiana) and Arachosia in what is now south-western Afghanistan, besides Gandhara, Sindh and western Punjab.",
+      "sources": [
+        {
+          "title": "Wikipedia: Indo-Parthian Kingdom (Gondophares originally ruled Seistan; held Arachosia, Sindh and Punjab; Taxila a capital)",
+          "url": "https://en.wikipedia.org/wiki/Indo-Parthian_Kingdom"
+        }
+      ],
+      "log": "reference check (refcheck-07.json)"
+    },
+    "Yadava Dynasty": {
+      "note": "The Seuna Yadavas ruled the western Deccan from Devagiri; their raids into Tripuri and Bhandara in the east were short-lived, and the Raichur doab changed hands with the Kakatiyas.",
+      "sources": [
+        {
+          "title": "Wikipedia: Seuna (Yadava) dynasty (Ramachandra occupied Tripuri, subdued Bhandara; lost Raichur to the Kakatiyas)",
+          "url": "https://en.wikipedia.org/wiki/Seuna_(Yadava)_dynasty"
+        }
+      ],
+      "log": "reference check (refcheck-07.json)"
+    },
+    "Weimar Republic": {
+      "note": "The Weimar Republic ended in 1933 when the Nazis took power; from then on Germany is the Third Reich.",
+      "sources": [
+        {
+          "title": "Wikipedia: Weimar Republic (\"from 9 November 1918 to 23 March 1933\")",
+          "url": "https://en.wikipedia.org/wiki/Weimar_Republic"
+        }
+      ],
+      "clip": [
+        1919,
+        1933
+      ],
+      "log": "reference check (refcheck-07.json)"
+    },
+    "Khanate of Kokand": {
+      "note": "When Shahrukh Biy founded the Kokand Khanate in 1709 it held only part of the Fergana Valley; Tashkent was conquered about a century later, and Samarkand stayed Bukharan.",
+      "sources": [
+        {
+          "title": "Wikipedia: Khanate of Kokand (Tashkent conquered under Alim Khan, r. 1799-1811; Samarkand held only about six months)",
+          "url": "https://en.wikipedia.org/wiki/Khanate_of_Kokand"
+        }
+      ],
+      "log": "reference check (refcheck-07.json)"
+    },
+    "Bahmani Sultanate": {
+      "note": "In 1390 the Bahmani Sultanate held the western and central Deccan; Warangal and eastern Telangana were conquered in the 1420s, and the Konkan coast later still.",
+      "sources": [
+        {
+          "title": "Wikipedia: Bahmani Sultanate (Ahmad Shah I, r. 1422-1436, \"finally captured the remnants of Warangal\")",
+          "url": "https://en.wikipedia.org/wiki/Bahmani_Sultanate"
+        }
+      ],
+      "log": "reference check (refcheck-07.json)"
+    },
+    "Rustamid dynasty": {
+      "note": "The Rustamid imams at Tahert ruled central and western Algeria; Ibadi communities in Jebel Nafusa, Fezzan and oases such as Ouargla recognised them, but the Sahara was not under direct rule.",
+      "sources": [
+        {
+          "title": "Wikipedia: Rustamid dynasty (authority \"over what is now central and western Algeria\"; recognized by the Ibadis of Wargla, Jebel Nafusa, Fezzan)",
+          "url": "https://en.wikipedia.org/wiki/Rustamid_dynasty"
+        }
+      ],
+      "log": "reference check (refcheck-07.json)"
+    },
+    "Minyue": {
+      "note": "Minyue lay in what is now Fujian, east of the Wuyi Mountains; Jiangxi to the west was Han's Yuzhang commandery. In 221–207 BCE the polygon labelled Minyue (Jiangxi and inland Fujian) lay inside Qin commanderies and is shown as Qin; Minyue proper was in Fujian.",
+      "sources": [
+        {
+          "title": "Wikipedia: Minyue (\"an ancient kingdom in what is now the Fujian province\")",
+          "url": "https://en.wikipedia.org/wiki/Minyue"
+        }
+      ],
+      "log": "reference check (refcheck-07.json)",
+      "relabel": [
+        {
+          "from": -221,
+          "to": -207,
+          "name": "Qin Dynasty",
+          "key": "Qin Dynasty"
+        }
+      ]
+    },
+    "North German Confederation": {
+      "note": "In late 1870 German armies occupied much of northern France during the Franco-Prussian War; this was a wartime occupation, not part of the North German Confederation.",
+      "sources": [
+        {
+          "title": "Wikipedia: North German Confederation (map shows Alsace-Lorraine, annexed after the 1870-71 war, separately from the Confederation)",
+          "url": "https://en.wikipedia.org/wiki/North_German_Confederation"
+        }
+      ],
+      "log": "reference check (refcheck-07.json)"
+    },
+    "German Confederation": {
+      "note": "Kingdom of Prussia",
+      "sources": [
+        {
+          "title": "German Confederation — Wikipedia (members incl. Austria, Bavaria; Province of Prussia and Posen only included 1848–1851)",
+          "url": "https://en.wikipedia.org/wiki/German_Confederation"
+        }
+      ],
+      "relabel": [
+        {
+          "from": 1815,
+          "to": 1867,
+          "name": "Kingdom of Prussia",
+          "key": "Kingdom of Prussia"
+        }
+      ],
+      "log": "reference check (refcheck-08.json)"
+    },
+    "Sarbadars": {
+      "note": "In 1345 the Sarbadars held only the area around their capital Sabzevar in western Khorasan (roughly Semnan to Nishapur); the Caspian coast, Gorgan and the Rey district shown here belonged to Togha Temür and other rulers.",
+      "sources": [
+        {
+          "title": "Sarbadars — Wikipedia (after 1344 most conquests lost; Gurgan was Togha Temür's capital; Ray gained only after 1353)",
+          "url": "https://en.wikipedia.org/wiki/Sarbadars"
+        }
+      ],
+      "log": "reference check (refcheck-08.json)"
+    },
+    "Ostrogoths": {
+      "note": "After Odoacer's defeat in 493 the Ostrogothic kingdom held the whole Italian peninsula and Sicily, which are missing from this outline; Provence and Sirmium were added only in 504–508.",
+      "sources": [
+        {
+          "title": "Ostrogothic Kingdom — Wikipedia (after 493 'masters of Italy'; Sirmium 504–505; Provence from 508)",
+          "url": "https://en.wikipedia.org/wiki/Ostrogothic_Kingdom"
+        }
+      ],
+      "log": "reference check (refcheck-08.json)"
+    },
+    "Panthay Rebellion": {
+      "note": "The Panthay (Dali) sultanate was based in western Yunnan and fought across Yunnan province; it never held Sichuan, which this outline wrongly includes.",
+      "sources": [
+        {
+          "title": "Panthay Rebellion — Wikipedia (uprisings across Yunnan; Dali the centre; Sichuan 'not in rebellion')",
+          "url": "https://en.wikipedia.org/wiki/Panthay_Rebellion"
+        }
+      ],
+      "log": "reference check (refcheck-08.json)"
+    },
+    "Zimbabwe Rhodesia": {
+      "note": "Republic of Zimbabwe",
+      "sources": [
+        {
+          "title": "Zimbabwe Rhodesia — Wikipedia (1 June 1979 – 18 April 1980; became Republic of Zimbabwe)",
+          "url": "https://en.wikipedia.org/wiki/Zimbabwe_Rhodesia"
+        }
+      ],
+      "relabel": [
+        {
+          "from": 1981,
+          "to": 1982,
+          "name": "Republic of Zimbabwe",
+          "key": "Republic of Zimbabwe"
+        }
+      ],
+      "log": "reference check (refcheck-08.json)"
+    },
+    "Emirate of Bukhara": {
+      "note": "Around 1800 the emirate was centred on Bukhara and Samarkand between the Amu Darya and the Zarafshan; the eastern hill states (Hisor, Kulob, Karategin, Darvaz) and the Pamirs shown here were only added between the 1820s and the late 19th century.",
+      "sources": [
+        {
+          "title": "Emirate of Bukhara — Wikipedia (core between Amu and Syr Darya; begliks expanded under Nasrullah 1827–1860; Darvaz c.1878; Pamirs late 19th c.)",
+          "url": "https://en.wikipedia.org/wiki/Emirate_of_Bukhara"
+        }
+      ],
+      "log": "reference check (refcheck-08.json)"
+    },
+    "Malaysia": {
+      "note": "From September 1963 to August 1965 Singapore was a state of Malaysia; the island is not shaded here for those years.",
+      "sources": [
+        {
+          "title": "Singapore in Malaysia — Wikipedia (state of Malaysia 16 September 1963 – 9 August 1965)",
+          "url": "https://en.wikipedia.org/wiki/Singapore_in_Malaysia"
+        }
+      ],
+      "log": "reference check (refcheck-08.json)"
+    },
+    "Kingdom of Prussia": {
+      "note": "From 1815 to 1867 most of Prussia's territory is drawn under the German Confederation label; the small area shown here is Neuchâtel, a Swiss principality ruled by the Prussian king.",
+      "sources": [
+        {
+          "title": "German Confederation — Wikipedia (Prussia a member state; Confederation included Austria, Bavaria and others)",
+          "url": "https://en.wikipedia.org/wiki/German_Confederation"
+        }
+      ],
+      "log": "reference check (refcheck-08.json)"
+    },
+    "New Netherland": {
+      "note": "Dutch colonies in the Americas",
+      "sources": [
+        {
+          "title": "New Netherland — Wikipedia (1614–1667 and 1673–1674; Delmarva to Cape Cod; Dutch Brazil a separate colony)",
+          "url": "https://en.wikipedia.org/wiki/New_Netherland"
+        }
+      ],
+      "relabel": [
+        {
+          "from": 1622,
+          "to": 1802,
+          "name": "Dutch colonies in the Americas",
+          "key": "Dutch colonies in the Americas"
+        }
+      ],
+      "log": "reference check (refcheck-08.json)"
+    },
+    "Himyarite Kingdom": {
+      "note": "In the 1st century BCE Himyar was a young highland kingdom around Zafar in south-west Yemen. It did not rule the Red Sea coast north into the Hejaz, and it took Saba only around 25 BCE and Hadramawt around 300 CE.",
+      "sources": [
+        {
+          "title": "Himyarite Kingdom (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Himyarite_Kingdom"
+        }
+      ],
+      "log": "reference check (refcheck-09.json)"
+    },
+    "Sultanate of Muscat and Oman": {
+      "note": "The Qatar peninsula drawn here was never part of Muscat and Oman: from 1916 it was a separate British protectorate under the Al Thani. From 1920 the interior around Nizwa was ruled by the autonomous Imamate of Oman.",
+      "sources": [
+        {
+          "title": "History of Qatar (Wikipedia): 1916 Anglo-Qatari treaty made Qatar a British protectorate",
+          "url": "https://en.wikipedia.org/wiki/History_of_Qatar"
+        }
+      ],
+      "log": "reference check (refcheck-09.json)"
+    },
+    "Southern Han": {
+      "note": "Northern Vietnam (Jinghai, or Annam) was ruled by local Vietnamese governors, not Southern Han. Southern Han held it only briefly around 930–931, and its 938 invasion was defeated at the Bach Dang River.",
+      "sources": [
+        {
+          "title": "Southern Han (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Southern_Han"
+        }
+      ],
+      "log": "reference check (refcheck-09.json)"
+    },
+    "South African Republic": {
+      "note": "The detached block east of Swaziland is Tongaland (Maputaland), a Tsonga kingdom the Transvaal never ruled; Britain annexed it in 1895.",
+      "sources": [
+        {
+          "title": "Maputaland (Wikipedia): Tongaland annexed by Great Britain on 11 June 1895",
+          "url": "https://en.wikipedia.org/wiki/Maputaland"
+        }
+      ],
+      "log": "reference check (refcheck-09.json)"
+    },
+    "Qatar Protectorate": {
+      "note": "Sultanate of Muscat and Oman",
+      "sources": [
+        {
+          "title": "History of Qatar (Wikipedia): British protectorate 1916–1971 on the Qatar peninsula",
+          "url": "https://en.wikipedia.org/wiki/History_of_Qatar"
+        }
+      ],
+      "relabel": [
+        {
+          "from": 1947,
+          "to": 1955,
+          "name": "Sultanate of Muscat and Oman",
+          "key": "Sultanate of Muscat and Oman"
+        }
+      ],
+      "log": "reference check (refcheck-09.json)"
+    },
+    "Late Pallava Empire": {
+      "note": "In the 4th century the Pallavas ruled from Kanchipuram over the northern Tamil country and southern Andhra; the far south around Madurai was under the Kalabhras. The 'Later Pallava' kingdom began with Simhavishnu around 575.",
+      "sources": [
+        {
+          "title": "Kalabhra dynasty (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Kalabhra_dynasty"
+        }
+      ],
+      "log": "reference check (refcheck-09.json)"
+    },
+    "Kingdom of Khotan": {
+      "note": "Khotan ruled the oases of the southern rim of the Tarim Basin. Kashgar and the northern oases such as Aksu belonged to the Kara-Khanids and the Uyghurs; Khotan held Kashgar only briefly after 970.",
+      "sources": [
+        {
+          "title": "Kingdom of Khotan (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Kingdom_of_Khotan"
+        }
+      ],
+      "log": "reference check (refcheck-09.json)"
+    },
+    "Nguyễn dynasty": {
+      "note": "From 1834 to 1841 Emperor Minh Mạng annexed most of Cambodia as the province of Trấn Tây (not shown here), until Siamese-backed revolts forced a withdrawal.",
+      "sources": [
+        {
+          "title": "Trấn Tây Thành (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Tr%E1%BA%A5n_T%C3%A2y_Th%C3%A0nh"
+        }
+      ],
+      "log": "reference check (refcheck-09.json)"
+    },
+    "Confederation of the Rhine": {
+      "note": "Kingdom of Prussia",
+      "sources": [
+        {
+          "title": "Confederation of the Rhine (Wikipedia): excluded Austria, Prussia, Danish Holstein and Swedish Pomerania; area 325,700 km²",
+          "url": "https://en.wikipedia.org/wiki/Confederation_of_the_Rhine"
+        }
+      ],
+      "relabel": [
+        {
+          "from": 1809,
+          "to": 1814,
+          "name": "Kingdom of Prussia",
+          "key": "Kingdom of Prussia"
+        }
+      ],
+      "log": "reference check (refcheck-09.json)"
+    },
+    "Heian Japan": {
+      "note": "Shikoku was part of the Heian state but is missing from this outline; in 1183–85 it was a Taira stronghold, site of the Battle of Yashima. Northern Honshu (Mutsu and Dewa) was ruled autonomously by the Northern Fujiwara in the 12th century.",
+      "sources": [
+        {
+          "title": "Battle of Yashima (Wikipedia): Taira fortress at Yashima, Sanuki Province, Shikoku",
+          "url": "https://en.wikipedia.org/wiki/Battle_of_Yashima"
+        }
+      ],
+      "log": "reference check (refcheck-09.json)"
+    },
+    "Ghana Empire": {
+      "note": "By around 1200 Ghana's former vassals (Sosso, Diara, Mali and others) had grown stronger than the old core, and the Sosso conquered the capital by 1203, so this outline overstates the late kingdom.",
+      "sources": [
+        {
+          "title": "Ghana Empire (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Ghana_Empire"
+        }
+      ],
+      "log": "reference check (refcheck-09.json)"
+    },
+    "Netherlands Antilles": {
+      "note": "Surinam (Dutch colony); hide from 1976, when the Republic of Suriname polygon takes over",
+      "sources": [
+        {
+          "title": "Netherlands Antilles (Wikipedia): existed 1954–2010; Suriname was a separate colony",
+          "url": "https://en.wikipedia.org/wiki/Netherlands_Antilles"
+        }
+      ],
+      "relabel": [
+        {
+          "from": 1820,
+          "to": 1975,
+          "name": "Surinam (Dutch colony)",
+          "key": "Surinam (Dutch colony)"
+        }
+      ],
+      "log": "reference check (refcheck-09.json)",
+      "hide": [
+        [
+          1976,
+          2023
+        ]
+      ]
+    },
+    "Republic of Liberia": {
+      "note": "In 1848 the new republic governed only a coastal strip of settler towns; the interior shown here was claimed later, and Maryland (Cape Palmas) joined only in 1857.",
+      "sources": [
+        {
+          "title": "Republic of Maryland (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Republic_of_Maryland"
+        }
+      ],
+      "log": "reference check (refcheck-10.json)"
+    },
+    "Sayyid Dynasty": {
+      "note": "The Sayyids also claimed Punjab (Lahore, Dipalpur, Multan) until Multan broke away under the Langahs in the late 1430s, though Khokhar chiefs contested it; the map shows only the Delhi core.",
+      "sources": [
+        {
+          "title": "Sayyid dynasty (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Sayyid_dynasty"
+        }
+      ],
+      "log": "reference check (refcheck-10.json)"
+    },
+    "Empire of Haiti": {
+      "note": "Divided Haiti: northern State and southern Republic",
+      "sources": [
+        {
+          "title": "First Empire of Haiti (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/First_Empire_of_Haiti"
+        }
+      ],
+      "relabel": [
+        {
+          "from": 1807,
+          "to": 1820,
+          "name": "Haiti (divided: northern State and southern Republic)",
+          "key": "Haiti (divided: northern State and southern Republic)"
+        }
+      ],
+      "log": "reference check (refcheck-10.json)"
+    },
+    "Portuguese Ceylon": {
+      "note": "Independent Sinhalese kingdoms",
+      "sources": [
+        {
+          "title": "Kingdom of Kandy (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Kingdom_of_Kandy"
+        }
+      ],
+      "relabel": [
+        {
+          "from": 1507,
+          "to": 1686,
+          "name": "Independent Sinhalese kingdoms",
+          "key": "Independent Sinhalese kingdoms"
+        }
+      ],
+      "log": "reference check (refcheck-10.json)"
+    },
+    "Dutch Ceylon": {
+      "note": "Kingdom of Kandy",
+      "sources": [
+        {
+          "title": "Kingdom of Kandy (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Kingdom_of_Kandy"
+        }
+      ],
+      "relabel": [
+        {
+          "from": 1687,
+          "to": 1795,
+          "name": "Kingdom of Kandy",
+          "key": "Kingdom of Kandy"
+        }
+      ],
+      "log": "reference check (refcheck-10.json)"
+    },
+    "British Ceylon": {
+      "note": "Kingdom of Kandy",
+      "sources": [
+        {
+          "title": "Kingdom of Kandy (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Kingdom_of_Kandy"
+        }
+      ],
+      "relabel": [
+        {
+          "from": 1796,
+          "to": 1814,
+          "name": "Kingdom of Kandy",
+          "key": "Kingdom of Kandy"
+        }
+      ],
+      "log": "reference check (refcheck-10.json)"
+    },
+    "British Overseas Territories": {
+      "note": "There are 14 British Overseas Territories; this map draws only the Falklands, South Georgia and the South Sandwich Islands, Bermuda and Gibraltar, leaving out the Caribbean territories, St Helena, Pitcairn, the Indian Ocean Territory and the Cyprus bases.",
+      "sources": [
+        {
+          "title": "British Overseas Territories (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/British_Overseas_Territories"
+        }
+      ],
+      "log": "reference check (refcheck-10.json)"
+    },
+    "French India": {
+      "note": "Comoro sultanates",
+      "sources": [
+        {
+          "title": "French India (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/French_India"
+        }
+      ],
+      "relabel": [
+        {
+          "from": 1815,
+          "to": 1819,
+          "name": "Comoro sultanates",
+          "key": "Comoro sultanates"
+        }
+      ],
+      "log": "reference check (refcheck-10.json)"
+    },
+    "Russian-occupied territories": {
+      "note": "Russian forces have held Transnistria since 1992; Abkhazia and South Ossetia are counted as occupied from 2008, Crimea from 2014, and parts of eastern and southern Ukraine from 2014 and 2022. This outline does not change over time, wrongly includes Moldova's Gagauzia, and leaves out Abkhazia, Crimea and occupied Ukraine.",
+      "sources": [
+        {
+          "title": "Russian-occupied territories (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Russian-occupied_territories"
+        }
+      ],
+      "log": "reference check (refcheck-10.json)"
+    },
+    "Sultanate of Zanzibar": {
+      "note": "The Sultanate (Unguja and Pemba only; Mafia Island had passed to Germany in 1890) was overthrown on 12 January 1964 and Zanzibar joined Tanganyika that April.",
+      "sources": [
+        {
+          "title": "Sultanate of Zanzibar (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Sultanate_of_Zanzibar"
+        }
+      ],
+      "clip": [
+        1963,
+        1963
+      ],
+      "log": "reference check (refcheck-10.json)"
+    },
+    "Danish India": {
+      "note": "Tranquebar on the Coromandel coast, Danish from 1620 to 1845 and the capital of Danish India, is missing from the map before 1800.",
+      "sources": [
+        {
+          "title": "Danish India (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Danish_India"
+        }
+      ],
+      "log": "reference check (refcheck-10.json)"
+    },
+    "Federated Republic of Mexico": {
+      "relabel": [
+        {
+          "from": 1842,
+          "to": 1845,
+          "name": "Centralist Mexico",
+          "key": "Centralist Mexico"
+        }
+      ],
+      "note": "In 1842–1845 the separate polygon here (Nuevo México) was a department of the Centralist Republic and is shown as part of it."
     }
   },
   "base": {

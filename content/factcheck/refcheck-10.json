@@ -1,0 +1,700 @@
+[
+ {
+  "realm": "German Democratic Republic",
+  "year": 1973,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": "Reference is a flag (civil ensign), not a map. Our outline matches East Germany's 1949-90 borders."
+ },
+ {
+  "realm": "Pro-Habsburg Spain",
+  "year": 1707,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [
+   "Not judged: our 1707 outline (Aragon, Catalonia, Valencia, Balearics, a Madrid-area pocket) is a War of the Spanish Succession front, which the 1547 map cannot test."
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": "Reference shows the Habsburg dominions of 1547 (Spain, Netherlands, Austria, Italy), not the Archduke Charles's war-time realm of 1707."
+ },
+ {
+  "realm": "Sumerian City-States",
+  "year": -2401,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [
+   "Observation only: our polygon runs north-west up the Euphrates to ~35°N, 40.5°E (Mari region). The reference's Sumerian cities lie between Eshnunna (~33.5°N) and Eridu (~30.8°N), east of ~44°E."
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": "Reference is a satellite image with city dots and no territorial boundary."
+ },
+ {
+  "realm": "Republic of Liberia",
+  "year": 1848,
+  "verdict": "major",
+  "which_is_right": "reference",
+  "differences": [
+   "Our 1848 polygon is close to modern Liberia (~102,000 km²), reaching inland to ~8.5°N, 7.4°-11.5°W. The reference (1839) shows only a narrow coastal strip of settler colonies, Cape Mount to Cape Palmas.",
+   "Our polygon includes the Cape Palmas/Harper area (~7.7°W, 4.4°N). Maryland stayed a separate colony and then republic until it was annexed in 1857.",
+   "Wikipedia's Liberia article says Americo-Liberian dominance was 'in the coastal areas'. The interior frontiers were set later, after British and French pressure."
+  ],
+  "suggested": {
+   "type": "note",
+   "detail": "In 1848 the new republic governed only a coastal strip of settler towns; the interior shown here was claimed later, and Maryland (Cape Palmas) joined only in 1857.",
+   "from": 1848,
+   "to": 1856
+  },
+  "source": {
+   "title": "Republic of Maryland (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Republic_of_Maryland"
+  },
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Chimu Empire",
+  "year": 1424,
+  "verdict": "match",
+  "which_is_right": null,
+  "differences": [
+   "Both show a narrow coastal strip from ~3.5°S (Tumbes) to ~11-12°S. Ours runs slightly further south and a little wider inland, within frontier tolerance."
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Old Kingdom of Egypt",
+  "year": -2401,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [
+   "Observation only: our outline (Delta plus Nile valley to ~24°N, the First Cataract) fits the Old Kingdom's usual southern limit at Aswan."
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": "Reference is a general site map for all of dynastic Egypt (c. 3150-30 BC), running up the Nile to the fifth cataract. It does not show the Old Kingdom's extent."
+ },
+ {
+  "realm": "Kingdom of Naples (Napoleonic)",
+  "year": 1811,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [
+   "Observation only, needs a fix: our 1811 polygon includes Sicily (~12.5°-15.6°E, 37°-38.3°N). Murat's kingdom held only the mainland; the Bourbons kept Sicily under British protection from 1806 to 1815.",
+   "Observation only: the data uses the name 'Kingdom of Naples (Napoleonic)' for 1762-1805, before Joseph Bonaparte took Naples in 1806."
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": "Reference is a flag (civil ensign), not a map."
+ },
+ {
+  "realm": "Sayyid Dynasty",
+  "year": 1432,
+  "verdict": "major",
+  "which_is_right": "reference",
+  "differences": [
+   "Our polygon covers only the Delhi-Doab-Haryana core, ~74.6°-78.9°E and 26.5°-29.5°N.",
+   "The reference also includes Punjab, with Lahore (~31.5°N, 74.3°E) and Multan (~30.2°N, 71.5°E), reaching north to ~32°N and west to ~71°E. That is a whole province, roughly a third of the reference extent.",
+   "Wikipedia: Khizr Khan held 'charges of Lahore, Dipalpur, Multan and upper Sindh'. Multan broke away under the Langahs only in Muhammad Shah's reign (from 1434). Jasrath Khokhar contested Punjab in the 1420s-30s, so the frontier there was disputed but claimed."
+  ],
+  "suggested": {
+   "type": "note",
+   "detail": "The Sayyids also claimed Punjab (Lahore, Dipalpur, Multan) until Multan broke away under the Langahs in the late 1430s, though Khokhar chiefs contested it; the map shows only the Delhi core.",
+   "from": 1415,
+   "to": 1452
+  },
+  "source": {
+   "title": "Sayyid dynasty (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Sayyid_dynasty"
+  },
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Republic of Austria",
+  "year": 1919,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [
+   "Observation only: our 1919 outline (post-Saint-Germain Austria without Burgenland, which joined in 1921) fits the land actually held."
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": "Reference maps German-Austria's 1918 territorial claims (German Bohemia, Sudetenland, South Tyrol, Lower Styria, German West Hungary), not the territory it controlled."
+ },
+ {
+  "realm": "Second Republic of Austria",
+  "year": 1969,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [
+   "Observation only: our 1969 outline matches modern Austria, including Burgenland."
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": "Reference shows the Austrian Empire's subdivisions for 1816-1867, a different polity and date."
+ },
+ {
+  "realm": "Empire of Haiti",
+  "year": 1809,
+  "verdict": "major",
+  "which_is_right": "reference",
+  "differences": [
+   "The reference dates the Empire to 1804-1806. Dessalines's empire ended with his assassination on 17 October 1806, and Haiti split into Christophe's State (from 1811 Kingdom) of Haiti in the north and Pétion's Republic of Haiti in the south. Our map still labels the whole west of Hispaniola 'Empire of Haiti' in 1809.",
+   "Smaller point: our polygon follows the modern Haiti-DR border, including the Central Plateau (Hinche, ~72°W, 19.1°N). The reference marks that area as Spanish territory under French control, 1795-1809.",
+   "Related, outside this year: the data also uses 'Empire of Haiti' for 1846-1915, but Soulouque's Second Empire lasted only 1849-1859."
+  ],
+  "suggested": {
+   "type": "relabel",
+   "detail": "Divided Haiti: northern State and southern Republic",
+   "from": 1807,
+   "to": 1820
+  },
+  "source": {
+   "title": "First Empire of Haiti (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/First_Empire_of_Haiti"
+  },
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "House of Savoy",
+  "year": 1715,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [
+   "Observation only: our 1715 map, with Piedmont-Savoy-Nice plus Sicily, is right for 1713-1720."
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": "Reference shows Italy in 1796, a different date. By then Savoy held Sardinia (from 1720) instead of Sicily."
+ },
+ {
+  "realm": "Republic of Venice",
+  "year": 1082,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": "Reference maps the Byzantine Empire with the trading privileges the 1082 Golden Bull granted Venice, not Venetian territory."
+ },
+ {
+  "realm": "Sikh Confederacy",
+  "year": 1770,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": "Reference is a decorative detail (a Sikh cavalryman) from an 18th-century map of Lahore Subah, not a territorial map."
+ },
+ {
+  "realm": "Portuguese Ceylon",
+  "year": 1560,
+  "verdict": "major",
+  "which_is_right": "reference",
+  "differences": [
+   "Our red polygon fills the interior and east of Sri Lanka (~80.1°-81.9°E, 6°-9°N). In the reference that area is the independent Kingdom of Kandy (east), the Kingdom of Sitawaka (south-centre) and the Vanni chiefdoms.",
+   "The reference's Portuguese presence is Mannar (NW, ~79.9°E, 9°N) plus the Portuguese client Kingdom of Kotte on the west coast (Colombo, Negombo, Galle). In our data that coast is the grey 'Portuguese Empire' polygon, so the colony's real area is drawn under another name and the colony's label sits on its enemies.",
+   "The same polygon keeps the 'Portuguese Ceylon' name until 1686, after the Dutch had expelled the Portuguese (1658)."
+  ],
+  "suggested": {
+   "type": "relabel",
+   "detail": "Independent Sinhalese kingdoms",
+   "from": 1507,
+   "to": 1686
+  },
+  "source": {
+   "title": "Kingdom of Kandy (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Kingdom_of_Kandy"
+  },
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Kingdom of Belgium",
+  "year": 1892,
+  "verdict": "minor",
+  "which_is_right": "reference",
+  "differences": [
+   "Both show Belgium in Europe. Ours also adds a polygon in the lower Congo (~12.1°-13.7°E, 4.6°-6°S, Boma-Matadi) for 1885-1899. In 1892 that was Leopold II's personal Congo Free State, not Belgian until 1908."
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Dutch Ceylon",
+  "year": 1727,
+  "verdict": "major",
+  "which_is_right": "reference",
+  "differences": [
+   "Our red polygon covers the island's interior and east-centre (~79.7°-81.9°E, 6°-8.9°N). The reference, a Dutch VOC map, draws a red line around that same interior as the Kandyan kingdom and shows the Company's lands as the coastal belt outside it.",
+   "In our data the coastal belt is the grey 'Dutch Republic' polygon. So the 'Dutch Ceylon' label sits on the Kingdom of Kandy, which the Dutch never ruled."
+  ],
+  "suggested": {
+   "type": "relabel",
+   "detail": "Kingdom of Kandy",
+   "from": 1687,
+   "to": 1795
+  },
+  "source": {
+   "title": "Kingdom of Kandy (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Kingdom_of_Kandy"
+  },
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Kingdom of Westphalia",
+  "year": 1812,
+  "verdict": "match",
+  "which_is_right": null,
+  "differences": [
+   "Both show a block centred ~10°E, 52°N, from the Kassel/Marburg area north to the Magdeburg-Altmark-southern Hanover region. The reference is too small-scale to separate finer frontier differences."
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Helvetic Republic",
+  "year": 1799,
+  "verdict": "minor",
+  "which_is_right": "reference",
+  "differences": [
+   "Ours is roughly modern Switzerland, ~6°-10.5°E, including Geneva (~6.1°E, 46.2°N), Neuchâtel (~6.9°E, 47°N) and the Jura/former Bishopric of Basel (~7.1°-7.4°E, 47.4°N). The reference leaves these outside the republic: Geneva and the Jura were French, Neuchâtel was Prussian.",
+   "Otherwise the same: both include Valais, Ticino (Bellinzona/Lugano) and Rätien/Graubünden (joined 1799)."
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Duchy of Prussia",
+  "year": 1568,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": "Reference is a city view of Königsberg (1651), not a territorial map."
+ },
+ {
+  "realm": "Sovereign Principality of the United Netherlands",
+  "year": 1814,
+  "verdict": "match",
+  "which_is_right": null,
+  "differences": [
+   "Both cover Zeeland, Holland, Utrecht, Brabant (to ~51.3°N), Gelderland, Overijssel, Drenthe, Friesland and Groningen. Both leave out the southern governments (Belgium, Lower and Middle Rhine)."
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Haiti",
+  "year": 1795,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [
+   "Observation only: the data uses 'Haiti' for 1792-1802. In those years it was the French colony of Saint-Domingue in revolution, with British and Spanish occupations. The name Haiti dates from independence in 1804."
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": "Reference is a 1925 railway map, a different date."
+ },
+ {
+  "realm": "British Ceylon",
+  "year": 1796,
+  "verdict": "major",
+  "which_is_right": "reference",
+  "differences": [
+   "Our red polygon (~79.9°-81.7°E, 6.6°-8.8°N) matches the reference's red area almost exactly, and the reference labels that area the Kingdom of Kandy.",
+   "The reference shows the British holding the coastal belt (blue, taken from the Dutch in 1795-96), which our data draws as grey 'British Empire'. The British took Kandy only in 1815."
+  ],
+  "suggested": {
+   "type": "relabel",
+   "detail": "Kingdom of Kandy",
+   "from": 1796,
+   "to": 1814
+  },
+  "source": {
+   "title": "Kingdom of Kandy (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Kingdom_of_Kandy"
+  },
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Zululand",
+  "year": 1879,
+  "verdict": "minor",
+  "which_is_right": null,
+  "differences": [
+   "Core matches: Tugela mouth (~31.5°E, 29.2°S) north to the Pongola (~27.4°S), from the Buffalo River (~30.1°E) to the coast.",
+   "Ours leaves out the north-west 'disputed territory' (Vryheid-Utrecht, ~27.4°-28.1°S, 30.2°-31.5°E), which the 1878 boundary commission awarded to the Zulu. It also leaves out the coastal strip north of ~28°S to Kosi Bay (Maputaland), which the reference includes."
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Neo-Hittite states",
+  "year": -951,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": "Reference shows the Hittite Empire of c. 1350-1300 BC, an earlier and different polity."
+ },
+ {
+  "realm": "Kingdom of Hawaï'i",
+  "year": 1815,
+  "verdict": "minor",
+  "which_is_right": null,
+  "differences": [
+   "Main islands match, Hawaiʻi to Niʻihau (~154.8°-160.2°W, 19°-22.2°N). The reference is dated 1830s-1850s and adds a broad maritime envelope with the Northwestern Hawaiian Islands, claimed or annexed after 1815."
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "British Overseas Territories",
+  "year": 2011,
+  "verdict": "major",
+  "which_is_right": "reference",
+  "differences": [
+   "Our polygon has only the Falkland Islands, South Georgia and the South Sandwich Islands, Bermuda and Gibraltar.",
+   "The reference also shows Anguilla, the British Virgin Islands, the Cayman Islands, Montserrat, Turks and Caicos, Saint Helena/Ascension/Tristan da Cunha, the Pitcairn Islands, the British Indian Ocean Territory, and Akrotiri and Dhekelia. That is 9 of the 14 territories (about 2,300 km² in all) missing from our map."
+  ],
+  "suggested": {
+   "type": "note",
+   "detail": "There are 14 British Overseas Territories; this map draws only the Falklands, South Georgia and the South Sandwich Islands, Bermuda and Gibraltar, leaving out the Caribbean territories, St Helena, Pitcairn, the Indian Ocean Territory and the Cyprus bases.",
+   "from": 2000,
+   "to": 2024
+  },
+  "source": {
+   "title": "British Overseas Territories (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/British_Overseas_Territories"
+  },
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "French Colony of Guiana",
+  "year": 1791,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": "Reference is a present-day map of EU special territories, a different date and subject."
+ },
+ {
+  "realm": "French India",
+  "year": 1815,
+  "verdict": "major",
+  "which_is_right": "reference",
+  "differences": [
+   "Our 1815-1819 polygon is four islands at ~43°-45.2°E, 11.3°-13°S: Grande Comore, Mohéli, Anjouan and Mayotte, i.e. the Comoros, off Mozambique.",
+   "The reference shows French India as the five Indian comptoirs: Pondichéry (~79.8°E, 11.9°N), Karikal, Yanaon, Mahé and Chandernagor. None of them appears in our 1815-1819 map.",
+   "The Comoros were independent sultanates in 1815; France took Mayotte only in 1841. The data's other French India snapshots (1677-1845) also reach 43°E, so they probably include the Comoros too, anachronistically."
+  ],
+  "suggested": {
+   "type": "relabel",
+   "detail": "Comoro sultanates",
+   "from": 1815,
+   "to": 1819
+  },
+  "source": {
+   "title": "French India (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/French_India"
+  },
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Olmec Civilization",
+  "year": -509,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": "Reference is an Assyrian relief of a galley at Tyre, not a map."
+ },
+ {
+  "realm": "Thanjavur Maratha Kingdom",
+  "year": 1688,
+  "verdict": "match",
+  "which_is_right": null,
+  "differences": [
+   "Both cover the Kaveri delta (Chola Nadu) from the Trichinopoly border (~78.9°E) to the Bay of Bengal coast (~79.9°E), between the Coleroon (~11.4°N) and Point Calimere / the Pudukkottai border (~10°N)."
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "France Antarctique",
+  "year": 1557,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [
+   "Observation only: our polygon is a ~2°-wide (~200 km) coastal block around ~42°-44°W, 22°-23°S. The colony itself was Fort Coligny on Villegagnon Island, plus alliances with Tupinambá villages around the bay shown in the reference."
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": "Reference is a 1660s pictorial map of Guanabara Bay with no colony boundary."
+ },
+ {
+  "realm": "Russian-occupied territories",
+  "year": 2007,
+  "verdict": "major",
+  "which_is_right": "reference",
+  "differences": [
+   "Our polygon is one fixed outline for 1992-2024: Transnistria (~28.5°-29.9°E, 46.6°-48.1°N), South Ossetia (~44°E, 42.5°N), and two pieces of Gagauzia (Comrat, ~28.6°E, 46.3°N; Vulcănești, ~28.4°E, 45.6°N).",
+   "Gagauzia is a Moldovan autonomous region, not Russian-occupied, and the reference does not mark it.",
+   "The reference adds Abkhazia (~40°-42°E, 43°N, larger than South Ossetia), Crimea, and the occupied parts of Donetsk, Luhansk, Zaporizhzhia and Kherson. Wikipedia dates the occupations: Transnistria from 1992, Abkhazia and South Ossetia from 2008, Crimea and parts of Donbas from 2014, and the rest from 2022. Our map shows none of these changes, and shows South Ossetia before 2008."
+  ],
+  "suggested": {
+   "type": "note",
+   "detail": "Russian forces have held Transnistria since 1992; Abkhazia and South Ossetia are counted as occupied from 2008, Crimea from 2014, and parts of eastern and southern Ukraine from 2014 and 2022. This outline does not change over time, wrongly includes Moldova's Gagauzia, and leaves out Abkhazia, Crimea and occupied Ukraine.",
+   "from": 1992,
+   "to": 2024
+  },
+  "source": {
+   "title": "Russian-occupied territories (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Russian-occupied_territories"
+  },
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Minoan civilization",
+  "year": -1551,
+  "verdict": "match",
+  "which_is_right": null,
+  "differences": [
+   "Both cover Crete, ~23.6°-26.2°E. Ours is a coarse outline that cuts off parts of the far west and the Sitia/east tip, but it is the same extent."
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Sultanate of Zanzibar",
+  "year": 1964,
+  "verdict": "major",
+  "which_is_right": "reference",
+  "differences": [
+   "Our polygon has three islands: Pemba (~39.7°E, 5°-5.5°S), Unguja (~39.3°E, 5.7°-6.5°S) and Mafia (~39.7°E, 7.9°S). The reference shows only Pemba and Unguja.",
+   "Mafia was sold to Germany in 1890 and was never part of the 1963-64 sultanate (Wikipedia, Mafia Island: 'Under a treaty of 1890, Germany took control of Mafia').",
+   "Our realm runs 1963-1966, but the Sultanate was overthrown on 12 January 1964. Zanzibar became a People's Republic and joined Tanganyika in April 1964."
+  ],
+  "suggested": {
+   "type": "clip",
+   "detail": "The Sultanate (Unguja and Pemba only; Mafia Island had passed to Germany in 1890) was overthrown on 12 January 1964 and Zanzibar joined Tanganyika that April.",
+   "from": 1963,
+   "to": 1963
+  },
+  "source": {
+   "title": "Sultanate of Zanzibar (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Sultanate_of_Zanzibar"
+  },
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Freetown Colony",
+  "year": 1791,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": "Reference is a modern street map of Freetown, a city plan."
+ },
+ {
+  "realm": "Tenochtitlan",
+  "year": 1373,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": "Reference is a pictorial city plan (the 1524 Nuremberg map), not a territorial map."
+ },
+ {
+  "realm": "Danish India",
+  "year": 1778,
+  "verdict": "major",
+  "which_is_right": "reference",
+  "differences": [
+   "Our 1757-1799 polygon has only Serampore (~88.3°E, 22.5°N) and two small pieces of the Nicobar Islands (~93.3°-93.9°E, 6.8°-8.1°N).",
+   "It leaves out Tranquebar (~79.85°E, 11°N), the main Danish territory and the colony's capital, which the reference shows as directly owned land. Tranquebar was Danish from 1620 to 1845 (in 1778 under the Danish crown since 1777). The data adds it only from 1800.",
+   "The reference also marks factories and trading posts (Balasore, Calicut, Porto Novo and others) that our map leaves out. Those are minor."
+  ],
+  "suggested": {
+   "type": "note",
+   "detail": "Tranquebar on the Coromandel coast, Danish from 1620 to 1845 and the capital of Danish India, is missing from the map before 1800.",
+   "from": 1757,
+   "to": 1799
+  },
+  "source": {
+   "title": "Danish India (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Danish_India"
+  },
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Roman Kingdom",
+  "year": -726,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": "Reference is an 1839 atlas map of ancient Italy (Roman-era regions), not the Roman Kingdom of the 8th century BCE."
+ }
+]

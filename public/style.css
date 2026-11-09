@@ -247,3 +247,12 @@ ul.rlist li button.linkish { text-decoration: none; font: 600 15px var(--sans); 
 aside.mapnote p.msrc { font-size: 12px; color: var(--ink-3); }
 aside.mapnote p.msrc a { color: var(--ink-3); }
 p.refyear { margin: 0; font-size: 13px; color: var(--ink-2); background: var(--chip); padding: 8px 10px; }
+
+aside.evnow p.evt { font-weight: 600; color: var(--ink); }
+aside.evnow p + p { line-height: 1.55; }
+ol.jtl li > div { min-width: 0; }
+ol.jtl details { margin-top: 4px; }
+ol.jtl details summary { cursor: pointer; font: 600 12px var(--sans); color: var(--highlight); list-style: none; }
+ol.jtl details summary::-webkit-details-marker { display: none; }
+ol.jtl details[open] summary { color: var(--ink-3); }
+ol.jtl details p { margin: 4px 0 2px; font-size: 13.5px; line-height: 1.55; color: var(--ink-2); }

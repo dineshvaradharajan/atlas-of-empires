@@ -1,0 +1,437 @@
+[
+  {
+    "realm": "(British Empire)", "year": 1921, "verdict": "major",
+    "which_is_right": "reference",
+    "differences": [
+      "Australia (110-155°E, 10-44°S) is entirely missing from our map; the reference shows it, and in 1921 it was a self-governing Dominion within the Empire, like Canada and South Africa, which our map does show",
+      "Our map draws Australian-administered Papua/New Guinea and New Zealand, which makes the gap more obvious",
+      "Iraq and Transjordan mandates (35-48°E, 29-37°N) are shown much smaller on our map than on the reference"
+    ],
+    "suggested": { "type": "note", "detail": "Australia was a self-governing Dominion of the British Empire from 1901; it is drawn here as a separate country, but in 1921 it belonged to the Empire just as Canada and South Africa did.", "from": 1901, "to": 1931 },
+    "source": { "title": "Dominion (Wikipedia): 'The Commonwealth of Australia was recognised as a Dominion in 1901'", "url": "https://en.wikipedia.org/wiki/Dominion" },
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "Mongol Empire", "year": 1293, "verdict": "minor",
+    "which_is_right": null,
+    "differences": [
+      "Our map draws one undivided state; the reference (1294) shows the empire already split into four khanates (Golden Horde, Chagatai, Ilkhanate, Yuan). Overall limits are broadly the same",
+      "On our map the western edge runs to about 20°E at 45-55°N, taking in the tributary Rus' principalities; the reference's Golden Horde stops at about 28-30°E",
+      "Our map takes in most of Anatolia (Seljuk Rum, a vassal) to about 27°E; the reference's Ilkhanate stops in eastern Anatolia",
+      "Our map takes in Goryeo Korea (a vassal); the reference does not"
+    ],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "Union of Soviet Socialist Republics", "year": 1970, "verdict": "not-comparable",
+    "which_is_right": null, "differences": [],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": "Reference is an ethnic-groups map of the USSR, not a territorial map (the outline does broadly agree with ours)"
+  },
+  {
+    "realm": "Russian Empire", "year": 1897, "verdict": "not-comparable",
+    "which_is_right": null, "differences": [],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": "Reference is an ethnolinguistic map (1897 census). Its outer border does broadly agree with ours: Finland, Poland, Caucasus and Central Asia are included and Alaska is not"
+  },
+  {
+    "realm": "Russian Republic", "year": 1917, "verdict": "match",
+    "which_is_right": null,
+    "differences": ["Reference also shades the temporary WWI occupations in Ottoman Armenia/northern Persia (light green, ~38-45°E, 36-41°N); our map leaves them out, which is reasonable"],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "(Russian Federation)", "year": 2018, "verdict": "minor",
+    "which_is_right": null,
+    "differences": [
+      "Our map colours Crimea (~33-36°E, 45°N), annexed in 2014 and not internationally recognised, as Russian; the reference does not",
+      "Our map also colours small slivers in Transnistria (~29-30°E, 47°N), which belongs to Moldova and was never annexed. This looks like an error"
+    ],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "Tsardom of Russia", "year": 1720, "verdict": "minor",
+    "which_is_right": null,
+    "differences": [
+      "Our map leaves Kamchatka (155-163°E, 51-60°N) out. Strahlenberg's 1730 map puts it inside the Russian border, and Russians held forts there from about 1700",
+      "Otherwise the same span from the Baltic to Chukotka, with the southern Siberian border at about 50-55°N; the old projection only allows a rough comparison"
+    ],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "Yuan Dynasty", "year": 1357, "verdict": "not-comparable",
+    "which_is_right": null, "differences": [],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": "Reference is a 19th-century Chinese woodblock map (Haiguo Tuzhi) of the Yuan northwest frontier. It has no clear realm boundary and cannot be read at this size"
+  },
+  {
+    "realm": "(French Fourth Republic)", "year": 1945, "verdict": "major",
+    "which_is_right": "unclear",
+    "differences": [
+      "French Indochina (102-110°E, 8-23°N) is French on the reference but missing on our map",
+      "The Moroccan and Tunisian protectorates (~-13 to 11°E, 28-37°N) are French on the reference but not on ours",
+      "The Syria/Lebanon mandate (~35-42°E, 33-37°N) and New Caledonia (~165°E, 21°S) are French on the reference but not on ours"
+    ],
+    "suggested": { "type": "note", "detail": "In 1945 Japan had ended French rule in Indochina (March) and France was only beginning to retake it (from September); from 1946 Indochina, like the Moroccan and Tunisian protectorates, belonged to the French Union until 1954-56.", "from": 1945, "to": 1954 },
+    "source": { "title": "French Indochina (Wikipedia): Japanese coup of 9 March 1945, French reconquest of Cochinchina from 23 September 1945, Associated States of the French Union 1949-54", "url": "https://en.wikipedia.org/wiki/French_Indochina" },
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "(French Third Republic)", "year": 1876, "verdict": "not-comparable",
+    "which_is_right": null, "differences": [],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": "Reference is a photo of an 1876 five-franc coin, not a map"
+  },
+  {
+    "realm": "Qing Dynasty", "year": 1820, "verdict": "match",
+    "which_is_right": null,
+    "differences": ["Reference marks Sakhalin (~143°E, 46-54°N) as claimed by the Qing; our map leaves it out. Otherwise the same limits: Outer Manchuria to the Stanovoy range, Mongolia and Tannu Uriankhai, Xinjiang, Tibet and Taiwan"],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "United States of America", "year": 1945, "verdict": "major",
+    "which_is_right": "reference",
+    "differences": [
+      "Our map colours all of Greenland (20-73°W, 60-83°N) and Iceland (13-24°W, 63-66°N) as US territory; the reference does not include them",
+      "Our map colours a block of southern Germany (~8-13°E, 47-51°N) as US territory; this is the American occupation zone after May 1945"
+    ],
+    "suggested": { "type": "note", "detail": "Greenland and Iceland were never US territory: US forces were stationed there under 1941 defence agreements while Denmark was occupied, and the shaded part of Germany is the American occupation zone from 1945.", "from": 1941, "to": 1949 },
+    "source": { "title": "Greenland in World War II (Wikipedia): 1941 Kauffmann-Hull agreement allowed US troops; Greenland remained Danish and returned to direct Copenhagen rule after the war", "url": "https://en.wikipedia.org/wiki/Greenland_in_World_War_II" },
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "(Vichy France)", "year": 1943, "verdict": "major",
+    "which_is_right": "reference",
+    "differences": [
+      "Our map shows no part of metropolitan France. The reference shows the southern 'free zone' (~-2 to 7°E, 42-47°N) administered from Vichy, and Vichy's civil administration nominally covered the occupied north as well",
+      "Our map gives Vichy French West and Equatorial Africa, Madagascar, Djibouti and French Guiana in 1943, but by then all had joined Free France or the Allies (FEA in 1940, Madagascar in 1942, FWA and Djibouti in late 1942, Guiana in March 1943). Of the large colonies only Indochina was still Vichy-loyal"
+    ],
+    "suggested": { "type": "note", "detail": "Vichy governed from the unoccupied south of France and ostensibly administered all of France except Alsace-Lorraine; after November 1942 Germany occupied the whole country, and most colonies drawn here had already gone over to Free France.", "from": 1942, "to": 1944 },
+    "source": { "title": "Vichy France (Wikipedia): Vichy 'ostensibly' administered all of France except Alsace-Lorraine; after Operation Torch Germany occupied the whole country", "url": "https://en.wikipedia.org/wiki/Vichy_France" },
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "(Spanish Empire)", "year": 1516, "verdict": "minor",
+    "which_is_right": null,
+    "differences": [
+      "Our map includes the Low Countries and Franche-Comté (~2-7°E, 46-53°N), Charles's Burgundian inheritance held in personal union. The reference (c.1500, Iberian crowns only) leaves them out because of its earlier date and scope",
+      "Our map includes Navarre (annexed 1512) as fully Spanish, which the reference hatches; it also includes the Canaries, North African presidios and Caribbean islands, which are beyond the reference's frame",
+      "Iberia, Balearics, Sardinia, Sicily and Naples match"
+    ],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "French Africa", "year": 1922, "verdict": "minor",
+    "which_is_right": null,
+    "differences": [
+      "Our map leaves out the Moroccan protectorate (~-13 to -1°W, 28-36°N) and the Togo/Cameroon mandates. On the reference, the National Geographic 1922 map, French colour appears to cover Morocco and Cameroon, but the scanned map is small and hard to read",
+      "Algeria, French West Africa, French Equatorial Africa, Madagascar and Djibouti broadly match"
+    ],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "French Fifth Republic", "year": 1958, "verdict": "not-comparable",
+    "which_is_right": null, "differences": [],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": "Reference shows colonies in 1945, 13 years before 1958; by 1958 Indochina, Morocco and Tunisia were independent, so the two maps show different dates"
+  },
+  {
+    "realm": "British Africa", "year": 1914, "verdict": "major",
+    "which_is_right": "reference",
+    "differences": [
+      "Nigeria (3-15°E, 4-14°N), British since its amalgamation on 1 January 1914, is missing from our map; the reference shows it British",
+      "Gold Coast (~-3 to 1°E, 5-11°N) is also missing from our map",
+      "In the Rhodesias (22-33°E, 8-18°S) our map draws a narrower shape than the reference; the far north-west of Northern Rhodesia appears to be left out",
+      "Egypt-Sudan, East Africa, Somaliland, Nyasaland, South Africa and Bechuanaland match"
+    ],
+    "suggested": { "type": "note", "detail": "Nigeria and the Gold Coast were British colonies in 1914 (Nigeria was amalgamated into a single colony and protectorate on 1 January 1914) but are drawn here as separate states.", "from": 1900, "to": 1957 },
+    "source": { "title": "Colonial Nigeria (Wikipedia): Colony and Protectorate of Nigeria formed 1 January 1914", "url": "https://en.wikipedia.org/wiki/Colonial_Nigeria" },
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "Canada", "year": 1974, "verdict": "match",
+    "which_is_right": null, "differences": [],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "Umayyad Caliphate", "year": 740, "verdict": "match",
+    "which_is_right": null,
+    "differences": ["Same span on both, from al-Andalus and Septimania (Narbonne, ~43°N 3°E) to Transoxiana/Ferghana and Sindh/Multan (~71°E); Asturias is excluded on both"],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "People's Republic of China", "year": 2011, "verdict": "match",
+    "which_is_right": null,
+    "differences": ["Reference shades Taiwan and disputed Arunachal Pradesh as claimed; our map shows de facto control instead (Taiwan excluded). Both are reasonable"],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "Tang Dynasty", "year": 661, "verdict": "major",
+    "which_is_right": "ours",
+    "differences": [
+      "Our map includes the whole Mongolian plateau (~90-120°E, 42-50°N) in solid red; the reference (after the Cambridge History) leaves Mongolia out entirely",
+      "Our map draws the Tarim Basin and the Western Turk lands to ~57°E in the same red as the core; the reference shows them as lighter protectorate zones"
+    ],
+    "suggested": { "type": "note", "detail": "Mongolia and the western steppe were held through loose protectorates over Tiele and Turkic tribes (the Yanran/Hanhai protectorate in Mongolia, 647-682), whose chiefs kept their own rule, not through directly governed provinces.", "from": 647, "to": 682 },
+    "source": { "title": "Protectorate General to Pacify the North (Wikipedia): Yanran Protectorate controlled the Mongolian Plateau 647-682; bridle prefectures 'governed indirectly for the most part'", "url": "https://en.wikipedia.org/wiki/Protectorate_General_to_Pacify_the_North" },
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "Brazilian Republic", "year": 1916, "verdict": "match",
+    "which_is_right": null, "differences": [],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "Empire of Brazil", "year": 1889, "verdict": "minor",
+    "which_is_right": null,
+    "differences": [
+      "Our 1889 outline is the same as the post-1903 one: it includes Acre (~67-74°W, 7-11°S), which was Bolivian until the Treaty of Petrópolis (1903)",
+      "Our map draws the zones the reference shades as contested (Amapá with France, Palmas/Misiones with Argentina, Pirara with Britain) as Brazilian without comment"
+    ],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "Republic of China", "year": 1945, "verdict": "major",
+    "which_is_right": "unclear",
+    "differences": [
+      "Our map leaves out Manchuria (120-135°E, 40-53°N), the North China plain and the Yangtze delta (~112-122°E, 30-40°N), the Guangdong coast and a north-south corridor through Hunan/Guangxi. These match the area Japan occupied before August 1945",
+      "Our map also leaves out Taiwan (handed over 25 Oct 1945), Tibet and Outer Mongolia, all of which the reference's 1945 administrative map includes (Tibet and Mongolia as claimed)"
+    ],
+    "suggested": { "type": "note", "detail": "Until Japan surrendered in August-September 1945 much of eastern China and Manchuria was under Japanese occupation; afterwards the Republic took back those regions and Taiwan (25 October 1945), while Tibet remained de facto independent.", "from": 1937, "to": 1945 },
+    "source": { "title": "Retrocession Day (Wikipedia): ROC took control of Taiwan on 25 October 1945", "url": "https://en.wikipedia.org/wiki/Retrocession_Day" },
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "Empire of China", "year": 1916, "verdict": "minor",
+    "which_is_right": null,
+    "differences": [
+      "Reference shades Tibet and Qinghai (~80-100°E, 28-37°N) in light green as claimed; our map leaves out Tibet",
+      "Reference separates Yuan's loyal provinces (dark) from the southern provinces that rose against him (light); our map draws all of China proper as one block"
+    ],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "Commonwealth of Australia", "year": 1945, "verdict": "minor",
+    "which_is_right": null,
+    "differences": [
+      "Our map includes Papua and the New Guinea mandate (141-156°E, 2-11°S), which is correct for 1945. The reference is a modern map and leaves them out (independent 1975)",
+      "Reference shows the Australian Antarctic Territory (claimed 1933); our map leaves it out"
+    ],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "(Portuguese Empire)", "year": 1821, "verdict": "not-comparable",
+    "which_is_right": null, "differences": [],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": "Reference shows the 20th-century empire, after Brazil's independence in 1822, while our map is for 1821. The two show clearly different dates"
+  },
+  {
+    "realm": "Abbasid Caliphate", "year": 1203, "verdict": "minor",
+    "which_is_right": null,
+    "differences": [
+      "Our map runs north to ~36°N at 45-46°E and east into Khuzistan to ~49°E. The reference (1180) stops near ~34.5°N and leaves Khuzistan out. This fits al-Nasir's expansion after 1180",
+      "Core along the Tigris and Euphrates from Baghdad to Basra matches"
+    ],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "Kuomintang", "year": 1929, "verdict": "not-comparable",
+    "which_is_right": null, "differences": [],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": "Reference is the Communist Party of China's hammer-and-sickle emblem, not a map (and not even the KMT)"
+  },
+  {
+    "realm": "Rashidun Caliphate", "year": 654, "verdict": "match",
+    "which_is_right": null, "differences": [],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "Empire of Japan", "year": 1945, "verdict": "not-comparable",
+    "which_is_right": null, "differences": [],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": "Reference is the Imperial Japanese naval ensign, not a map"
+  },
+  {
+    "realm": "Göktürk Khaganate", "year": 568, "verdict": "minor",
+    "which_is_right": null,
+    "differences": [
+      "Reference includes the Tarim Basin (~76-95°E, 37-42°N); our map stops at ~42-43°N there. The oasis states were Türk vassals",
+      "Our map dips south to ~37°N at 103-110°E (Ordos/Gansu); the reference stops nearer 40°N",
+      "East-west span (~40°E to ~120-125°E) and northern limit (~52°N) match"
+    ],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "Ming Dynasty", "year": 1550, "verdict": "not-comparable",
+    "which_is_right": null, "differences": [],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": "Reference is a photo of a Ming imperial dragon carpet, not a map"
+  },
+  {
+    "realm": "Achaemenid Empire", "year": -500, "verdict": "match",
+    "which_is_right": null,
+    "differences": ["Reference pushes slightly further into Thrace/Macedonia (~22°E) and Punjab (~75°E); our map stops at ~25°E and ~72°E. Both are within frontier tolerance"],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "Xiongnu", "year": -150, "verdict": "match",
+    "which_is_right": null,
+    "differences": ["Our map runs slightly further east into Manchuria (~130°E against ~125°E); otherwise the same span, ~76°E to the Khingan and ~38-55°N, Baikal included"],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "Roman Empire", "year": 125, "verdict": "major",
+    "which_is_right": "reference",
+    "differences": [
+      "Our map still includes Trajan's eastern provinces of Armenia, Mesopotamia and Assyria, running east to ~47-48°E and down the Tigris to ~30°N. The reference (125) puts the frontier on the Euphrates (~38-40°E), with the Parthian kingdom beyond",
+      "Britain, the Rhine-Danube frontier, Dacia, Africa and Egypt match"
+    ],
+    "suggested": { "type": "note", "detail": "Hadrian gave up Trajan's conquests east of the Euphrates (Armenia, Mesopotamia, Assyria) in 117; Rome did not hold a province of Mesopotamia again until Septimius Severus in 198.", "from": 118, "to": 197 },
+    "source": { "title": "Mesopotamia (Roman province) (Wikipedia): evacuated 117 by Hadrian, re-established by Severus in 198", "url": "https://en.wikipedia.org/wiki/Mesopotamia_(Roman_province)" },
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "Xianbei", "year": 160, "verdict": "match",
+    "which_is_right": null,
+    "differences": ["Both run from ~78°E (Wusun border) to ~124°E (Buyeo), with the north at ~52°N. Our map dips a little further south into the Ordos (~37°N, 105-112°E), where the reference labels the Southern Xiongnu"],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "Timurid Empire", "year": 1400, "verdict": "minor",
+    "which_is_right": null,
+    "differences": [
+      "Our map has a thin strip running north along the west Caspian and Volga to ~50°N, 45°E (Golden Horde lands that Timur raided in 1395 but never held); the reference has nothing there",
+      "Reference extends east into Punjab (~77°E, 30°N); our map stops at ~72°E",
+      "Reference includes more of Iraq (Baghdad, ~44°E); our map's western edge is at ~45-47°E south of 35°N"
+    ],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "Sasanian Empire", "year": 300, "verdict": "not-comparable",
+    "which_is_right": null, "differences": [],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": "Reference is a regional map of the Caucasus around 300 showing Roman vassals (Armenia, Iberia, Albania); the Sasanian realm appears only as a sliver at the bottom edge"
+  },
+  {
+    "realm": "(Macedonian Empire)", "year": -336, "verdict": "minor",
+    "which_is_right": null,
+    "differences": [
+      "Our map draws Thrace to the Danube delta and Black Sea (~29°E, 45°N), Paeonia and Thessaly in the same red as Macedon. The reference shows Thrace and Paeonia as dependent territories (yellow) and leaves Thessaly uncoloured"
+    ],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "British Raj", "year": 1915, "verdict": "not-comparable",
+    "which_is_right": null, "differences": [],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": "Reference is a photograph of Gandhi's welcome in Karachi, not a map"
+  },
+  {
+    "realm": "Golden Horde", "year": 1389, "verdict": "major",
+    "which_is_right": "reference",
+    "differences": [
+      "Our map runs south along the west Caspian to ~37.5°N (44-48°E), taking in Shirvan and Azerbaijan. The reference stops at Derbent (~42°N). In 1389 Shirvan was ruled by Shirvanshah Ibrahim I, a vassal of Timur",
+      "East of the Caspian our map runs to ~38°N (Mangyshlak/Dihistan); the reference stops at Khwarazm south of the Aral (~41°N)",
+      "In the west our map reaches ~54-56°N at 35-45°E (Ryazan/Tula, Rus' tributaries); the reference stops nearer 52°N. This is a tributary sphere, so it is minor on its own"
+    ],
+    "suggested": { "type": "note", "detail": "Tokhtamysh raided Azerbaijan and sacked Tabriz in 1385 but did not hold it; south of Derbent, Shirvan was ruled by its own Shirvanshahs, vassals of Timur from 1386.", "from": 1385, "to": 1395 },
+    "source": { "title": "Shirvanshah (Wikipedia): Ibrahim I (r. 1382-1417), founder of the Darbandid line, was a vassal of Timur", "url": "https://en.wikipedia.org/wiki/Shirvanshah" },
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "Han Dynasty", "year": 98, "verdict": "match",
+    "which_is_right": null,
+    "differences": ["Our map draws the Tarim Basin protectorate (to ~73°E) in the same red as the commanderies; the reference shades it lighter. Core China, Liaodong/Lelang and Jiaozhi (to ~17°N) match. The reference date is 2 CE"],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "Xin Dynasty", "year": 23, "verdict": "major",
+    "which_is_right": "unclear",
+    "differences": [
+      "Our map leaves a large gap in central China (~108-118°E, 25-35°N: Henan, Hubei, Hunan, Jiangxi). The reference (8-23) shows all of it as Xin",
+      "Our map also leaves out Yunnan (~98-105°E, 22-27°N), Lelang in Korea (~125-127°E, 37-40°N) and the western Hexi corridor to Dunhuang (~94-99°E); the reference includes all three"
+    ],
+    "suggested": { "type": "note", "detail": "In 23 CE the Xin was collapsing: Han-restorationist rebels from Hubei beat Wang Mang's army at Kunyang and took Chang'an in October, so the gaps show land already lost to rebels; at its height the Xin held the full Han realm.", "from": 17, "to": 23 },
+    "source": { "title": "Xin dynasty (Wikipedia): Battle of Kunyang (June-July 23), Chang'an captured October 23, Lülin rebels from Hubei", "url": "https://en.wikipedia.org/wiki/Xin_dynasty" },
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "Western Jin", "year": 382, "verdict": "major",
+    "which_is_right": "reference",
+    "differences": [
+      "Our polygon is labelled 'Western Jin' in 382, but the Western Jin ended in 316. The territory drawn, south China below the Huai (~32-34°N) from Yunnan to Zhejiang, is the Eastern Jin, as the reference titles it",
+      "Our map leaves out most of the Sichuan basin (~103-108°E, 28-32°N); the reference includes Ba, near its northern edge"
+    ],
+    "suggested": { "type": "relabel", "detail": "Eastern Jin (317-420), the southern successor state ruled from Jiankang after the Western Jin fell in 316.", "from": 317, "to": 420 },
+    "source": { "title": "Jin dynasty (266-420) (Wikipedia): Western Jin ended 316; Eastern Jin 317-420 at Jiankang", "url": "https://en.wikipedia.org/wiki/Jin_dynasty_(266%E2%80%93420)" },
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "Gran Colombia", "year": 1824, "verdict": "major",
+    "which_is_right": "reference",
+    "differences": [
+      "Our map has a second red block over Upper Peru/Bolivia (~57-70°W, 10-23°S). It was never part of Gran Colombia; the reference's southern limit is ~5°S (Ecuador/Peru)",
+      "Colombia, Venezuela, Panama and Ecuador match; the reference also includes the claimed Essequibo region (~58-60°W)"
+    ],
+    "suggested": { "type": "relabel", "detail": "The southern block is Upper Peru, still held by royalists under Olañeta in 1824, which became the Republic of Bolivia in August 1825; it was never part of Gran Colombia.", "from": null, "to": null },
+    "source": { "title": "Bolivian War of Independence (Wikipedia): royalists under Olañeta held Upper Peru after Ayacucho; independence declared 6 August 1825; Bolívar wanted Charcas to join Peru", "url": "https://en.wikipedia.org/wiki/Bolivian_War_of_Independence" },
+    "not_comparable_reason": null
+  }
+]

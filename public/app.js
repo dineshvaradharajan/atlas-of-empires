@@ -52,7 +52,7 @@ const NOT_A_REALM = /^\((Alliance|Allegiance|Personal union)/;
 
 // ---------------------------------------------------------------- state
 const S = {
-  year: 1500, range: [-3400, 2024], clio: null, baseYears: [], commons: {}, corr: { realms: {}, base: {} },
+  year: 1500, range: [-3400, 2024], clio: null, baseYears: [], commons: {}, corr: { realms: {}, base: {} }, supps: [],
   content: { eras: [], empires: {}, byClio: {}, moments: [], journeys: [] }, moment: null, journey: null, rings: [],
   chunks: new Map(), bases: new Map(), windows: new Map(),
   items: [], states: [], featured: new Map(), win: null,
@@ -158,8 +158,10 @@ async function init() {
     fetchJSON("data/content.json").catch(() => null), fetchJSON("data/commons.json").catch(() => ({})),
     fetchJSON("data/corrections.json").catch(() => null),
   ]);
+  const supps = await fetchJSON("data/supplements.json").catch(() => []);
   S.clio = clio; S.range = clio.range; S.baseYears = base.years; S.commons = commons;
   if (corr) { S.corr = { realms: corr.realms || {}, base: corr.base || {} }; correctTimelines(); }
+  S.supps = prepareSupplements(supps);
   if (content) {
     S.content.eras = (content.eras || []).sort((a, b) => a.year - b.year);
     S.content.moments = (content.moments || []).sort((a, b) => a.year - b.year);
@@ -201,7 +203,9 @@ function correctFeature(f, y) {
   if (!rl) return f;
   let byName = relabelCache.get(f);
   if (!byName) relabelCache.set(f, (byName = {}));
-  return (byName[rl.name] ||= { type: "Feature", geometry: f.geometry, properties: { ...f.properties, n: rl.name, k: rl.key, fixed: f.properties.n } });
+  // A member of an empire group (k ≠ n) stays in its group unless the correction names a group itself ("(…)").
+  const k = f.properties.k !== f.properties.n && !String(rl.key).startsWith("(") ? f.properties.k : rl.key;
+  return (byName[rl.name] ||= { type: "Feature", geometry: f.geometry, properties: { ...f.properties, n: rl.name, k, fixed: f.properties.n } });
 }
 function splitRows(tl, a, b) { // rows inside [a,b] and outside it, cutting rows that straddle the edges
   const inside = [], outside = [];
@@ -245,6 +249,36 @@ function correctTimelines() {
 }
 const corrOf = (key) => S.corr.realms[key] || null;
 
+// ---------------------------------------------------------------- reconstruction layers
+// content/supplements/*.json: scholarly reconstructions where the border data is missing or too crude
+// (e.g. Sangam-age Tamilakam). Regions are clipped to the coastline when drawn and marked as reconstructed.
+function prepareSupplements(list) {
+  for (const sp of list) {
+    sp.feats = sp.regions.map((rg) => {
+      const ring = rg.coords.map(([x, y]) => [x, y]);
+      let geom = { type: "Polygon", coordinates: [ring] };
+      if (d3.geoArea(geom) > 2 * Math.PI) ring.reverse();
+      const area = Math.round(d3.geoArea(geom) * 6371 * 6371);
+      const [lx, ly] = d3.geoCentroid(geom);
+      const f = rg.from ?? sp.from, t = rg.to ?? sp.to;
+      const feat = { type: "Feature", geometry: { type: "MultiPolygon", coordinates: [[ring]] },
+        properties: { n: rg.name, k: rg.key || rg.name, f, t, a: area, l: [+lx.toFixed(2), +ly.toFixed(2)], recon: true, supp: sp.id } };
+      const R = S.clio.realms;
+      if (!R[rg.name]) R[rg.name] = { tl: [], recon: { sp, rg } };
+      R[rg.name].tl.push([f, t, area]); R[rg.name].tl.sort((a, b) => a[0] - b[0]);
+      return feat;
+    });
+  }
+  return list;
+}
+function applySupplements(states, y) {
+  const act = S.supps.filter((sp) => sp.from <= y && y <= sp.to);
+  if (!act.length) return states;
+  const replaced = new Set(act.flatMap((sp) => sp.replaces || []));
+  return states.filter((f) => !replaced.has(f.properties.n))
+    .concat(act.flatMap((sp) => sp.feats.filter((f) => f.properties.f <= y && y <= f.properties.t)));
+}
+
 // ---------------------------------------------------------------- navigation
 async function go(y, opts = {}) {
   y = clampYear(y);
@@ -256,7 +290,7 @@ async function go(y, opts = {}) {
   if (token !== S.token) return; // a newer year was requested while loading
   S.base = base;
   const fs = chunk.features.filter((f) => f.properties.f <= y && y <= f.properties.t).map((f) => correctFeature(f, y)).filter(Boolean);
-  S.states = fs.filter((f) => !f.properties.people);
+  S.states = applySupplements(fs.filter((f) => !f.properties.people), y);
   S.extraPeoples = fs.filter((f) => f.properties.people);
   renderAll();
   writeHash();
@@ -356,6 +390,8 @@ function buildItems() {
   const items = [];
   // Named areas in the older dataset (peoples, chiefdoms, polities Cliopatria doesn't map) form an
   // approximate hatched layer; only unnamed land stays plain = unrecorded.
+  S.landClip = new Path2D();
+  for (const f of S.base.features) S.landClip.addPath(pathOf(f));
   const bc = S.corr.base[String(baseYearFor(S.year))] || {};
   for (const f of S.base.features) {
     let p = f.properties;
@@ -405,7 +441,9 @@ function setupMap() {
     if (it.kind === "state") {
       const p = it.p, grp = p.k !== p.n && p.k !== p.n ? `<div>Part of <strong>${esc(displayName(p.k))}</strong></div>` : "";
       const fix = p.fixed ? `<div class="m">Corrected label (map data says “${esc(clean(p.fixed))}”)</div>` : corrOf(p.n) || corrOf(p.k) ? `<div class="m">Map note: see realm panel</div>` : "";
-      tip.innerHTML = `<b>${esc(clean(p.n))}</b>${grp}<div class="m">${fmtArea(p.a)} · borders ${shortYear(p.f)}–${shortYear(p.t)}</div>${fix}`;
+      tip.innerHTML = p.recon
+        ? `<b>${esc(p.n)}</b><div class="m">Reconstructed from ${esc(S.supps.find((x) => x.id === p.supp)?.title || "historical sources")} · approximate borders, c. ${shortYear(p.f)}–${shortYear(p.t)}</div>`
+        : `<b>${esc(clean(p.n))}</b>${grp}<div class="m">${fmtArea(p.a)} · borders ${shortYear(p.f)}–${shortYear(p.t)}</div>${fix}`;
     } else if (it.kind === "culture") {
       tip.innerHTML = it.corrected
         ? `<b>${esc(it.p.n)}</b><div class="m">No unified state in ${plainYear(S.year)} (map correction; the data draws “${esc(clean(it.p.fixed))}”)</div>`
@@ -421,7 +459,7 @@ function setupMap() {
     const [x, y] = local(ev);
     const it = S.items[pickAt(x, y)];
     if (!it || it.kind !== "state") return select(null);
-    select(it.key);
+    select(it.p.recon ? it.p.n : it.key);
   });
 }
 
@@ -439,11 +477,17 @@ function draw() {
   theme.hatch.setTransform(new DOMMatrix().scale(1 / t.k)); // constant stripe width at any zoom
   for (const it of S.items) {
     ctx.fillStyle = it.kind === "land" ? theme.unknown : it.kind === "culture" ? theme.hatch : S.journey && inJourney(it) ? theme.highlight : colorOf(it.key);
-    ctx.fill(pathOf(it.f));
+    if (it.p.recon) { ctx.save(); ctx.clip(S.landClip); ctx.fill(pathOf(it.f)); ctx.restore(); }
+    else ctx.fill(pathOf(it.f));
   }
   ctx.lineJoin = "round";
   ctx.strokeStyle = theme.border; ctx.lineWidth = 0.7 / t.k;
-  for (const it of S.items) if (it.kind === "state") ctx.stroke(pathOf(it.f));
+  for (const it of S.items) {
+    if (it.kind !== "state") continue;
+    if (!it.p.recon) { ctx.stroke(pathOf(it.f)); continue; }
+    ctx.save(); ctx.clip(S.landClip); ctx.setLineDash([3 / t.k, 2.5 / t.k]); ctx.strokeStyle = theme.ink3; ctx.stroke(pathOf(it.f)); ctx.restore();
+    ctx.strokeStyle = theme.border;
+  }
 
   if (S.showGhost && S.ghost && sel === S.ghost.key && S.ghost.year !== S.year) {
     ctx.setLineDash([5 / t.k, 4 / t.k]); ctx.strokeStyle = theme.highlight; ctx.lineWidth = 1.6 / t.k;
@@ -461,6 +505,7 @@ function draw() {
   if (S.zooming) { clearTimeout(S.pickTimer); S.pickTimer = setTimeout(drawPick, 100); }
   else drawPick(); // label placement reads the pick buffer, so keep it current when at rest
   if (S.labels) drawLabels();
+  drawSites();
   drawMomentPin();
 }
 
@@ -530,7 +575,8 @@ function drawPick() {
   S.items.forEach((it, i) => {
     const id = i + 1;
     pctx.fillStyle = `rgb(${id & 255},${(id >> 8) & 255},${(id >> 16) & 255})`;
-    pctx.fill(pathOf(it.f));
+    if (it.p.recon) { pctx.save(); pctx.clip(S.landClip); pctx.fill(pathOf(it.f)); pctx.restore(); }
+    else pctx.fill(pathOf(it.f));
   });
 }
 function pickAt(x, y) {
@@ -667,6 +713,18 @@ function realmHTML() {
   const now = activeFeats(key);
   let h = `<button class="back" data-act="close">← The world in ${plainYear(y)}</button>`;
   h += `<div class="kicker">${r.group ? "Empire" : "Realm"} · ${span}</div><h2 class="realm">${esc(displayName(key))}</h2>`;
+  if (r.recon) {
+    const { sp, rg } = r.recon;
+    h += `<aside class="mapnote recon"><b>Reconstruction · ${esc(sp.title)}</b><p>${esc(rg.note || "")}</p>`;
+    if (rg.capital) h += `<p><strong>Capital:</strong> ${esc(rg.capital)}</p>`;
+    if (rg.ports?.length) h += `<p><strong>Ports:</strong> ${esc(rg.ports.join(", "))}</p>`;
+    if (rg.rulers?.length) h += `<p><strong>Rulers named in the sources:</strong> ${rg.rulers.map((x) => `${esc(x.name)}${x.when ? ` (${esc(x.when)})` : ""}`).join("; ")}</p>`;
+    if (rg.attested) h += `<p><strong>Attested in:</strong> ${esc(rg.attested)}</p>`;
+    h += `</aside>`;
+    if (sp.summary) h += `<h3 class="sec">${esc(sp.title)}</h3><p class="prose">${esc(sp.summary)}</p>`;
+    h += sourcesList(sp.sources);
+    return h;
+  }
   if (emp && emp.name !== displayName(key)) h += `<p class="note">Profile: ${esc(emp.name)}</p>`;
   if (emp?.capital) h += `<p class="note">Capital: ${esc(emp.capital)}</p>`;
   if (r.memberOf?.length) h += `<p class="note">Part of ${r.memberOf.map((g) => `<button class="linkish" data-key="${esc(g)}">${esc(displayName(g))}</button>`).join(", ")}</p>`;
@@ -712,13 +770,18 @@ function realmHTML() {
 // The year a Commons reference map depicts, read from its file name / caption (e.g. "c. 1030", "117AD",
 // "1206–1294"); ranges resolve to the year of the realm's widest extent. null if it names no usable year.
 function refYear(media, r) {
-  const text = `${media.file || ""} ${media.desc || ""}`.replace(/_/g, " ");
   const lo = r.tl[0][0], hi = r.tl[r.tl.length - 1][1], slack = Math.max(25, Math.round((hi - lo) / 10));
-  const ys = [];
-  for (const m of text.matchAll(/(?<!\d)(\d{2,4})\s*(BCE|BC|B\.C\.|AD|CE|A\.D\.)?(?!\d)/gi)) {
-    let y = +m[1]; if ((m[2] || "").toUpperCase().startsWith("B")) y = -y;
-    if (y >= lo - slack && y <= hi + slack) ys.push(Math.min(hi, Math.max(lo, y)));
-  }
+  const scan = (text, fromCaption) => {
+    const out = [];
+    for (const m of text.replace(/_/g, " ").matchAll(/(?<!\d)(\d{2,4})\s*(BCE|BC|B\.C\.|AD|CE|A\.D\.)?(?!\d)/gi)) {
+      let y = +m[1]; if ((m[2] || "").toUpperCase().startsWith("B")) y = -y;
+      if (fromCaption && y >= 1990) continue; // captions often carry upload/creation dates, not the year shown
+      if (y >= lo - slack && y <= hi + slack) out.push(Math.min(hi, Math.max(lo, y)));
+    }
+    return out;
+  };
+  let ys = scan(media.file || "", false);       // the title is the most reliable statement of the year shown
+  if (!ys.length) ys = scan(media.desc || "", true);
   if (!ys.length) return null;
   const areaOf = (y) => (r.tl.find(([f, t]) => f <= y && y <= t) || [0, 0, 0])[2];
   return ys.reduce((b, y) => (areaOf(y) > areaOf(b) ? y : b), ys[0]);
@@ -778,7 +841,7 @@ async function openJourney(id, year) {
   const j = journeyById(id);
   if (!j) return;
   stopPlay();
-  S.sel = null; S.ghost = null; S.moment = null; S.journey = j; S.view = "journey"; S.jEvent = null;
+  S.sel = null; S.ghost = null; S.moment = null; S.journey = j; S.view = "journey"; S.jEvent = null; S.jOpen = new Set();
   S.rings = [];
   await go(year ?? j.span[0], { keepJourney: true });
   renderJourneyChart(); updateChartCursor(); renderCol(true); writeHash();
@@ -836,9 +899,12 @@ function journeyHTML() {
   h += `<div class="stats"><div><b>${bigYear(y).replace(/<small>BCE<\/small>/, " BCE")}</b><span>now</span></div><div><b>${area ? mkm(area) : "—"}</b><span>M km² held</span></div><div><b>${esc(rg ? rg.name.split(" (")[0] : "—")}</b><span>ruler</span></div></div>`;
   if (!j.chain.length) h += `<p class="note">The map data has no borders for this empire, so its territory can't be drawn; the timeline below still applies.</p>`;
   else if (!chainAt(j, y)) h += `<p class="note">No border data for this empire in ${plainYear(y)}.</p>`;
-  if (ev) h += `<aside class="mapnote"><b>${shortYear(ev.year)}</b><p>${esc(ev.text)}</p></aside>`;
+  if (ev) h += `<aside class="mapnote evnow"><b>${shortYear(ev.year)}</b><p class="evt">${esc(ev.text)}</p>${ev.detail ? `<p>${esc(ev.detail)}</p>` : ""}</aside>`;
   h += `<h3 class="sec">Timeline</h3><ol class="events jtl">`;
-  j.events.forEach((e, i) => { h += `<li class="${e.year <= y ? "past" : "future"}${ev === e ? " now" : ""}"><button class="y linkish" data-jev="${i}">${shortYear(e.year)}</button><span>${esc(e.text)}</span></li>`; });
+  j.events.forEach((e, i) => {
+    const more = e.detail ? `<details data-jopen="${i}"${S.jOpen?.has(i) ? " open" : ""}><summary>Read more</summary><p>${esc(e.detail)}</p></details>` : "";
+    h += `<li class="${e.year <= y ? "past" : "future"}${ev === e ? " now" : ""}"><button class="y linkish" data-jev="${i}">${shortYear(e.year)}</button><div><span>${esc(e.text)}</span>${more}</div></li>`;
+  });
   h += `</ol>`;
   if (j.reigns.length) {
     h += `<h3 class="sec">Rulers</h3><ul class="rlist">`;
@@ -867,7 +933,7 @@ const journeyForRealm = (key) => S.content.journeys.find((j) => j.chain.some((c)
 // ---------------------------------------------------------------- defining moments
 const momentById = (id) => S.content.moments.find((m) => m.id === id) || null;
 const CAT = { technology: "Technology", state: "States & empires", ideas: "Ideas & belief", trade: "Trade & exchange",
-  culture: "Culture", law: "Law & government", science: "Science", collapse: "Collapse" };
+  culture: "Culture", law: "Law & government", science: "Science", collapse: "Collapse", war: "War", exploration: "Exploration" };
 async function openMoment(id) {
   const m = momentById(id);
   if (!m) return;
@@ -900,7 +966,7 @@ function momentHTML() {
   return h;
 }
 function momentsListHTML() {
-  let h = `<button class="back" data-act="world">← Back to the map</button><div class="kicker">From the first farms to 1 BCE</div><h2 class="realm">Defining moments</h2>
+  let h = `<button class="back" data-act="world">← Back to the map</button><div class="kicker">From the first farms to today</div><h2 class="realm">Defining moments</h2>
     <p class="prose">The turning points that changed humanity, each placed on the map where it happened. Click one to travel there.</p>`;
   let last = null;
   for (const m of S.content.moments) {
@@ -909,6 +975,18 @@ function momentsListHTML() {
     h += `<li><button class="mrow" data-moment="${esc(m.id)}"><span class="my">${esc(m.yearLabel || shortYear(m.year))}</span><span class="mt">${esc(m.title)}</span></button></li>`;
   }
   return h + (last ? "</ul>" : "");
+}
+function drawSites() { // capitals, ports and excavations of active reconstruction layers, once zoomed in
+  if (S.t.k < 2.5) return;
+  const act = S.supps.filter((sp) => sp.from <= S.year && S.year <= sp.to);
+  ctx.save(); ctx.textAlign = "left"; ctx.textBaseline = "middle"; ctx.font = '600 11px Inter, sans-serif';
+  for (const sp of act) for (const st of sp.sites || []) {
+    const [x0, y0] = projection(st.lonlat), x = S.t.applyX(x0), y = S.t.applyY(y0);
+    if (x < 0 || y < 0 || x > S.width || y > S.height) continue;
+    ctx.beginPath(); ctx.arc(x, y, 3.5, 0, 2 * Math.PI); ctx.fillStyle = theme.ink; ctx.fill(); ctx.lineWidth = 1.5; ctx.strokeStyle = theme.bg; ctx.stroke();
+    ctx.lineWidth = 3; ctx.strokeStyle = theme.bg; ctx.strokeText(st.name, x + 6, y); ctx.fillStyle = theme.ink; ctx.fillText(st.name, x + 6, y);
+  }
+  ctx.restore();
 }
 function drawMomentPin() {
   let m = S.view === "moment" && S.moment;
@@ -1113,6 +1191,11 @@ function setupUI() {
       stopPlay(); go(+svg.dataset.x0 + ((ev.clientX - r.left) / r.width) * (+svg.dataset.x1 - +svg.dataset.x0));
     }
   });
+  col.addEventListener("toggle", (ev) => {
+    const d = ev.target.closest?.("details[data-jopen]");
+    if (!d || !S.jOpen) return;
+    d.open ? S.jOpen.add(+d.dataset.jopen) : S.jOpen.delete(+d.dataset.jopen);
+  }, true);
   col.addEventListener("change", (ev) => { if (ev.target.id === "ghostToggle") { S.showGhost = ev.target.checked; draw(); } });
   addEventListener("hashchange", async () => {
     const h = parseHash();

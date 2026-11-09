@@ -1,0 +1,807 @@
+[
+ {
+  "realm": "German Confederation",
+  "year": 1815,
+  "verdict": "major",
+  "which_is_right": "reference",
+  "differences": [
+   "Our polygon is the Kingdom of Prussia, not the Confederation: it runs east to ~23°E through East Prussia, West Prussia and Posen (outside the Confederation), and leaves Hanover, Saxony, Mecklenburg etc. as grey holes",
+   "Our map omits the whole southern half of the Confederation shown in the reference: Bavaria, Württemberg, Baden, Austria's member lands and Bohemia/Moravia (south of ~50°N, 7–17°E)",
+   "Data check: the Cliopatria 'German Confederation' rows (1815–1867) carry Prussia's territory, while the 'Kingdom of Prussia' rows for 1815–1833 are only Neuchâtel (6.5–7.1°E, 47°N)"
+  ],
+  "suggested": {
+   "type": "relabel",
+   "detail": "Kingdom of Prussia",
+   "from": 1815,
+   "to": 1867
+  },
+  "source": {
+   "title": "German Confederation — Wikipedia (members incl. Austria, Bavaria; Province of Prussia and Posen only included 1848–1851)",
+   "url": "https://en.wikipedia.org/wiki/German_Confederation"
+  },
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Emirate of Córdoba",
+  "year": 759,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": "Reference is the Caliphate of Córdoba under Almanzor in 1000 CE (different polity and date from our 759 emirate)"
+ },
+ {
+  "realm": "United Provinces of Central America",
+  "year": 1824,
+  "verdict": "minor",
+  "which_is_right": null,
+  "differences": [
+   "Our map extends west of Guatemala's present border to ~93.7°W, 15.6°N (coastal Chiapas/Soconusco); the reference stops at the Guatemala–Mexico line (Soconusco was disputed, Chiapas went to Mexico in 1824)",
+   "Reference shows Belize and the Mosquito Coast as claimed-but-uncontrolled (light green); our map excludes Belize but draws the Mosquito Coast as full territory"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Pagan Kingdom",
+  "year": 1044,
+  "verdict": "match",
+  "which_is_right": null,
+  "differences": [
+   "Both show a small core around Pagan–Kyaukse–Minbu (~20–22.5°N, 94–96.5°E); our blob is slightly larger than the reference ellipse"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Kingdom of Iraq",
+  "year": 1932,
+  "verdict": "match",
+  "which_is_right": null,
+  "differences": [],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "First Bulgarian Empire",
+  "year": 976,
+  "verdict": "minor",
+  "which_is_right": null,
+  "differences": [
+   "Reference (Samuel's state 976–1018) extends south through Epirus and Thessaly to ~39°N and west along the Adriatic (Dyrrachium, Duklja); our map stops at ~39.7°N and ~19.3°E — the reference hatches much of this as annexed after 976",
+   "Our northern edge runs to ~45.3°N, slightly beyond the Danube into Oltenia/Wallachia, which the reference shows only as hatched 'Bulgaria beyond the Danube'"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Chenla",
+  "year": 675,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": "Reference is Bellin's 1770 map of the kingdoms of Siam, Tonkin, Pegu etc. — a different date and set of polities"
+ },
+ {
+  "realm": "Angevin Empire",
+  "year": 1190,
+  "verdict": "minor",
+  "which_is_right": null,
+  "differences": [
+   "Our map shows the Lordship of Ireland covering much of eastern Ireland (~52–54.5°N, 6–8.5°W); the reference shows only a narrow strip on the east coast",
+   "French lands (Normandy, Brittany, Anjou, Aquitaine/Gascony to ~43.2°N, east to ~5°E) broadly match"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Kingdom of Poland",
+  "year": 1370,
+  "verdict": "match",
+  "which_is_right": null,
+  "differences": [
+   "Both show Greater/Lesser Poland, Mazovia, Red Ruthenia and Podolia east to ~28°E, excluding Silesia and Teutonic Pomerelia"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Vandals",
+  "year": 411,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [
+   "Observation (not from the reference): our 411 polygon covers all of Iberia except Tarraconensis (~420,000 km²), which is the combined Vandal (Hasding + Siling), Alan and Suebi settlement of 411, not Vandal land alone"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": "Reference is the Vandal Kingdom in North Africa at its 470s maximum; our map is the 411 settlement in Iberia"
+ },
+ {
+  "realm": "Sarbadars",
+  "year": 1345,
+  "verdict": "major",
+  "which_is_right": "reference",
+  "differences": [
+   "Our polygon spans ~50.5–62.5°E and ~34–41°N: it includes Rey/Qazvin area (~51°E), the Caspian coast (Tabaristan/Amol, held by Togha Temür and local dynasts), Gorgan (Togha Temür's capital) and the Karakum north to ~41°N",
+   "Reference shows the Sarbadars only around Sabzevar between Semnan and Nishapur (~54–59°E, ~35.5–37°N), with Togha Temür in Gorgan, Jauni Qurban at Tus and the Kartids at Herat — ours is roughly 3–4 times too large"
+  ],
+  "suggested": {
+   "type": "note",
+   "detail": "In 1345 the Sarbadars held only the area around their capital Sabzevar in western Khorasan (roughly Semnan to Nishapur); the Caspian coast, Gorgan and the Rey district shown here belonged to Togha Temür and other rulers.",
+   "from": null,
+   "to": null
+  },
+  "source": {
+   "title": "Sarbadars — Wikipedia (after 1344 most conquests lost; Gurgan was Togha Temür's capital; Ray gained only after 1353)",
+   "url": "https://en.wikipedia.org/wiki/Sarbadars"
+  },
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Magyars",
+  "year": 896,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": "Reference is an 1890 ethnic map of Hungarians in the Kingdom of Hungary, not a territorial map of the 9th-century Magyars"
+ },
+ {
+  "realm": "Ostrogoths",
+  "year": 494,
+  "verdict": "major",
+  "which_is_right": "reference",
+  "differences": [
+   "Our map omits the whole Italian peninsula south of ~44°N (Tuscany, Rome, Campania, Apulia, Calabria) and Sicily, which the reference includes; by 493 Theodoric ruled all of Italy after defeating Odoacer",
+   "Our map includes Provence (~6–7°E, 43.5–45°N) and Pannonia/Sirmium east to ~20°E, which were only gained in 508 and 504–505 respectively (the undated reference also shows them)"
+  ],
+  "suggested": {
+   "type": "note",
+   "detail": "After Odoacer's defeat in 493 the Ostrogothic kingdom held the whole Italian peninsula and Sicily, which are missing from this outline; Provence and Sirmium were added only in 504–508.",
+   "from": null,
+   "to": null
+  },
+  "source": {
+   "title": "Ostrogothic Kingdom — Wikipedia (after 493 'masters of Italy'; Sirmium 504–505; Provence from 508)",
+   "url": "https://en.wikipedia.org/wiki/Ostrogothic_Kingdom"
+  },
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Republic of Uzbekistan",
+  "year": 2004,
+  "verdict": "match",
+  "which_is_right": null,
+  "differences": [
+   "Same borders; our map leaves the dried Aral seabed (57.5–60°E, 43.5–45.5°N) as unrecorded land where the 2004 reference still shows water"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Japan",
+  "year": 1998,
+  "verdict": "match",
+  "which_is_right": null,
+  "differences": [
+   "Reference marks the southern Kurils as claimed (light green); our map omits them — a claim, not control"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Goguryeo",
+  "year": 450,
+  "verdict": "minor",
+  "which_is_right": null,
+  "differences": [
+   "Reference extends further north (beyond the frame, past ~46°N toward the Songhua/Buyeo lands) and west along the Bohai coast beyond the Liao River; our map stops at ~45.3°N and ~120.5°E",
+   "Southern limit near the Han River (~37.3°N) agrees"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Panthay Rebellion",
+  "year": 1863,
+  "verdict": "major",
+  "which_is_right": "reference",
+  "differences": [
+   "Our polygon runs from ~22.3°N to ~31.6°N and east to ~107.6°E, covering western Sichuan (Chengdu area) and lands toward Chongqing as well as all of Yunnan",
+   "Reference shows the Yunnan revolt confined to Yunnan (centres around Tali and Yunnan-fu, ~23–27°N, 99–104°E) with no shading in Sichuan; the Dali sultanate's base was western Yunnan and Sichuan was not in rebellion"
+  ],
+  "suggested": {
+   "type": "note",
+   "detail": "The Panthay (Dali) sultanate was based in western Yunnan and fought across Yunnan province; it never held Sichuan, which this outline wrongly includes.",
+   "from": null,
+   "to": null
+  },
+  "source": {
+   "title": "Panthay Rebellion — Wikipedia (uprisings across Yunnan; Dali the centre; Sichuan 'not in rebellion')",
+   "url": "https://en.wikipedia.org/wiki/Panthay_Rebellion"
+  },
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Morocco",
+  "year": 1972,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": "Reference is a linguistic (Arabic/Berber dialect) map, not a territorial map"
+ },
+ {
+  "realm": "Paraguay",
+  "year": 1979,
+  "verdict": "match",
+  "which_is_right": null,
+  "differences": [],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Sikh Empire",
+  "year": 1842,
+  "verdict": "minor",
+  "which_is_right": null,
+  "differences": [
+   "Reference shows Ladakh, Baltistan and Jammu as Dogra vassals; our map leaves Ladakh/Baltistan (~76–80°E, 32.5–36°N) as unrecorded land",
+   "Our southwestern tip reaches ~28°N, 68.5°E into upper Sindh/Kachhi; the reference stops near ~29°N below Multan"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Sukhothai Kingdom",
+  "year": 1400,
+  "verdict": "match",
+  "which_is_right": null,
+  "differences": [
+   "Both show Sukhothai between Lanna and Ayutthaya, ~16–19.5°N, from the Moei (Tak) to Nan (~101.4°E)"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Kingdom of Axum",
+  "year": 550,
+  "verdict": "minor",
+  "which_is_right": null,
+  "differences": [
+   "Reference's African part runs north along the Red Sea to ~18–19°N and south to ~10°N, west to ~35°E; ours covers only ~12.5–15.8°N, 36.5–41.5°E (Tigray/Eritrean highlands and Danakil)",
+   "Arabian part (Himyar/Yemen to ~52.5°E) broadly matches, ours drawn deeper inland; the reference's large African extent is speculative frontier"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Rhodesia",
+  "year": 1977,
+  "verdict": "match",
+  "which_is_right": null,
+  "differences": [],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Zimbabwe Rhodesia",
+  "year": 1980,
+  "verdict": "major",
+  "which_is_right": null,
+  "differences": [
+   "Territory matches the reference exactly (same country)",
+   "Date problem: our data shows 'Zimbabwe Rhodesia' from 1979 to 1982 and 'Republic of Zimbabwe' only from 1983, but Zimbabwe Rhodesia ended on 18 April 1980 when the Republic of Zimbabwe became independent"
+  ],
+  "suggested": {
+   "type": "relabel",
+   "detail": "Republic of Zimbabwe",
+   "from": 1981,
+   "to": 1982
+  },
+  "source": {
+   "title": "Zimbabwe Rhodesia — Wikipedia (1 June 1979 – 18 April 1980; became Republic of Zimbabwe)",
+   "url": "https://en.wikipedia.org/wiki/Zimbabwe_Rhodesia"
+  },
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Republic of Zimbabwe",
+  "year": 1983,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": "Reference is a Human Development Index line chart, not a map"
+ },
+ {
+  "realm": "Wattasid dynasty",
+  "year": 1471,
+  "verdict": "minor",
+  "which_is_right": null,
+  "differences": [
+   "Reference shows direct Wattasid rule only in the north (Fès–Meknès–Taza–Salé, ~32.5–35.5°N); the Marrakesh Hintata emirate, Debdou, Saadian Sous and Atlas tribes are vassals or refractory; our map draws all of Morocco to ~27.7°N as full territory",
+   "Reference shows Portuguese enclaves (Ceuta, Tangier, Asilah, Ksar es-Seghir from 1471) that our map includes"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Shan States",
+  "year": 1534,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": "Reference is an 1884 map of Siam, Laos and the Shan States (tributary to Burma), a different date and political situation from the 1527–1555 Shan confederation"
+ },
+ {
+  "realm": "Nawabs of Bengal",
+  "year": 1733,
+  "verdict": "minor",
+  "which_is_right": null,
+  "differences": [
+   "Our map includes all of Bihar west to ~83.3°E (annexed to Bengal in 1733); the small reference map stops near ~85°E, showing only eastern Bihar",
+   "Both omit Orissa; east (Sylhet, Chittagong to ~92.5°E) agrees"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Middle Franks",
+  "year": 854,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": "Reference is the 10th-century duchy of Lotharingia after 959, a different polity and date from Lothair I's Middle Francia (Frisia to Italy) in 854"
+ },
+ {
+  "realm": "Mayan City-States",
+  "year": 426,
+  "verdict": "minor",
+  "which_is_right": null,
+  "differences": [
+   "Reference's Maya region includes western Honduras (Copán) and western El Salvador; our map stops at ~88.6°W and the Pacific coast near 13.8°N, 90°W",
+   "Yucatán, Petén, Belize, Chiapas, Tabasco and highland Guatemala agree"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Tahirid Sultanate",
+  "year": 1485,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [
+   "Observation (not from the reference): our polygon covers all of Yemen including the Zaydi highlands (Sana'a, Saada, north to ~18.5°N) and Hadramawt to ~52.5°E; the Yemeni Tahirids mainly held lower Yemen (Aden, Zabid, Ta'izz)"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": "Reference is the Tahirid dynasty of Khorasan (821–873), a different polity from the Yemeni Tahirid Sultanate (1454–1517)"
+ },
+ {
+  "realm": "Lan Xang",
+  "year": 1400,
+  "verdict": "match",
+  "which_is_right": null,
+  "differences": [
+   "Both show Lan Xang from Luang Prabang/Sipsong Panna fringe (~22.5°N) south to Champassak (~14°N), including Vientiane and a strip west of the Mekong"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Republic of Texas",
+  "year": 1841,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [
+   "Observation: our map shows effective control only (~93.5–102.4°W, ~28–34°N, omitting the Nueces Strip and the Rio Grande claim into New Mexico); period maps like this one draw the claimed Rio Grande boundary"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": "Reference is an 1841 engraved map of empresario grants; the republic's boundary cannot be read at this size"
+ },
+ {
+  "realm": "Second Polish Republic",
+  "year": 1930,
+  "verdict": "match",
+  "which_is_right": null,
+  "differences": [],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Emirate of Bukhara",
+  "year": 1803,
+  "verdict": "major",
+  "which_is_right": "reference",
+  "differences": [
+   "Our polygon runs east to ~75°E (37–40.3°N), taking in Hisor, Kulob, Karategin, Darvaz and the Pamir/Alay region; these hill states were only absorbed between the 1820s and 1870s, and the Pamirs only in the late 19th century",
+   "Reference shows a compact emirate between the Amu Darya and the Zarafshan (~63–70°E, ~37–40°N), centred on Bukhara and Samarkand; our Merv extension (to ~35.2°N, 62°E) is plausible for 1785–1820s"
+  ],
+  "suggested": {
+   "type": "note",
+   "detail": "Around 1800 the emirate was centred on Bukhara and Samarkand between the Amu Darya and the Zarafshan; the eastern hill states (Hisor, Kulob, Karategin, Darvaz) and the Pamirs shown here were only added between the 1820s and the late 19th century.",
+   "from": null,
+   "to": null
+  },
+  "source": {
+   "title": "Emirate of Bukhara — Wikipedia (core between Amu and Syr Darya; begliks expanded under Nasrullah 1827–1860; Darvaz c.1878; Pamirs late 19th c.)",
+   "url": "https://en.wikipedia.org/wiki/Emirate_of_Bukhara"
+  },
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Sultanate of Rum",
+  "year": 1200,
+  "verdict": "match",
+  "which_is_right": null,
+  "differences": [
+   "Both show central Anatolia from ~30°E to ~39.8°E (Konya, Kayseri, Sivas, Malatya), excluding the Byzantine/Trebizond Black Sea coast, Antalya (taken 1207) and Cilician Armenia"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "(Taifas of Iberia)",
+  "year": 1080,
+  "verdict": "match",
+  "which_is_right": null,
+  "differences": [
+   "Taifas of Badajoz, Toledo, Zaragoza, Valencia, Denia, Seville, Granada, Almería and Mallorca broadly match; our Toledo northern edge (~40.5°N) is slightly south of the reference's (~41°N)"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Federated Republic of Germany",
+  "year": 2007,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": "Reference is the medieval Kingdom of Germany c. 1004 within the Holy Roman Empire, not modern Germany"
+ },
+ {
+  "realm": "Kingdom of Dali",
+  "year": 1150,
+  "verdict": "minor",
+  "which_is_right": null,
+  "differences": [
+   "Reference extends further west (Tengchong prefecture toward the Irrawaddy, ~96.5–98.5°E, 24–26°N); our map stops at ~98.4°E",
+   "Southern (~21.5°N, Sipsong Panna), northern (~28.8°N) and eastern (~106°E) limits broadly agree"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Thonburi Kingdom",
+  "year": 1780,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [
+   "Observation: our map shows only Siam proper (to ~19.3°N, ~103.5°E) and omits the Lao kingdoms (Vientiane, Luang Prabang, Champassak, made tributary 1778–79) and Cambodia"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": "Reference is a provincial map of Siam whose boundary lines cannot be distinguished at this size"
+ },
+ {
+  "realm": "Taiping Heavenly Kingdom",
+  "year": 1861,
+  "verdict": "minor",
+  "which_is_right": null,
+  "differences": [
+   "Reference shades cumulative areas the Taiping held or campaigned through (Hubei, Hunan, Jiangxi, Guangxi, Sichuan routes); our 1861 outline (~113.4–122.8°E, 27–33.5°N) covers the Nanjing–Anhui–Zhejiang core plus Jiangxi",
+   "Our map includes Wuhan (~114.3°E), which the Qing had retaken in 1856"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Malaysia",
+  "year": 1964,
+  "verdict": "major",
+  "which_is_right": null,
+  "differences": [
+   "Shape matches the reference (a modern locator map): Peninsular Malaysia, Sarawak and Sabah",
+   "Both omit Singapore, but in 1964 Singapore was a state of Malaysia (16 Sep 1963 – 9 Aug 1965); our 1963–1966 outline is missing it"
+  ],
+  "suggested": {
+   "type": "note",
+   "detail": "From September 1963 to August 1965 Singapore was a state of Malaysia; the island is not shaded here for those years.",
+   "from": null,
+   "to": null
+  },
+  "source": {
+   "title": "Singapore in Malaysia — Wikipedia (state of Malaysia 16 September 1963 – 9 August 1965)",
+   "url": "https://en.wikipedia.org/wiki/Singapore_in_Malaysia"
+  },
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Republic of the Congo",
+  "year": 1992,
+  "verdict": "match",
+  "which_is_right": null,
+  "differences": [],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Kingdom of Prussia",
+  "year": 1818,
+  "verdict": "major",
+  "which_is_right": "reference",
+  "differences": [
+   "Our map shows only a tiny polygon at ~6.5–7.1°E, 46.9–47.1°N (the principality of Neuchâtel); the reference shows the whole kingdom from the Rhine Province to East Prussia (~6–23°E, 49.5–55.8°N)",
+   "Data check: the main Prussian territory for 1815–1867 is carried by the 'German Confederation' rows instead"
+  ],
+  "suggested": {
+   "type": "note",
+   "detail": "From 1815 to 1867 most of Prussia's territory is drawn under the German Confederation label; the small area shown here is Neuchâtel, a Swiss principality ruled by the Prussian king.",
+   "from": null,
+   "to": null
+  },
+  "source": {
+   "title": "German Confederation — Wikipedia (Prussia a member state; Confederation included Austria, Bavaria and others)",
+   "url": "https://en.wikipedia.org/wiki/German_Confederation"
+  },
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Provisional Priamurye Government",
+  "year": 1922,
+  "verdict": "minor",
+  "which_is_right": null,
+  "differences": [
+   "Our map adds a separate strip on the Okhotsk coast (~55.5–57.5°N, 135–138°E, Ayan area) not in the reference",
+   "Main Primorye/right-bank-of-the-Amur territory (~42.5–52.5°N) matches"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "New Netherland",
+  "year": 1638,
+  "verdict": "major",
+  "which_is_right": "reference",
+  "differences": [
+   "Our 'New Netherland' polygon includes Dutch Brazil (Pernambuco, ~5–10°S, 35°W), Essequibo/Guiana (~7°N, 58°W) and Caribbean islands (Curaçao area, St Maarten) besides the Hudson valley colony (~40.5–42°N, 74°W); the reference shows only New Netherland next to New England",
+   "Data check: the row runs 1622–1802, long after New Netherland ended in 1664/1674 — it is really all Dutch colonies in the Americas"
+  ],
+  "suggested": {
+   "type": "relabel",
+   "detail": "Dutch colonies in the Americas",
+   "from": 1622,
+   "to": 1802
+  },
+  "source": {
+   "title": "New Netherland — Wikipedia (1614–1667 and 1673–1674; Delmarva to Cape Cod; Dutch Brazil a separate colony)",
+   "url": "https://en.wikipedia.org/wiki/New_Netherland"
+  },
+  "not_comparable_reason": null
+ }
+]

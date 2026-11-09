@@ -1,0 +1,750 @@
+[
+ {
+  "realm": "Islamic Republic of Iran",
+  "year": 2006,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [
+   "Outline of our map (44–63°E, 25–39.8°N) broadly matches the green 'Iran at the beginning of the 19th c.' core minus the Caucasus losses, but the reference shows a different polity and date"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": ""
+  },
+  "source": null,
+  "not_comparable_reason": "Reference is Qajar Iran c. 1900 (with 19th-century gains and losses); the 2006 date was taken from the file's upload date, not the map date"
+ },
+ {
+  "realm": "Libyan Arab Republic",
+  "year": 1974,
+  "verdict": "match",
+  "which_is_right": null,
+  "differences": [],
+  "suggested": {
+   "type": "none",
+   "detail": ""
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Kingdom of Libya",
+  "year": 1962,
+  "verdict": "match",
+  "which_is_right": null,
+  "differences": [],
+  "suggested": {
+   "type": "none",
+   "detail": ""
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "State of Libya",
+  "year": 2018,
+  "verdict": "match",
+  "which_is_right": null,
+  "differences": [],
+  "suggested": {
+   "type": "none",
+   "detail": ""
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Tibet",
+  "year": 1952,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [
+   "Side observation: our 1952 polygon (78–93°E, 28–36.5°N) shows Tibet as a separate state, although the PRC took control in 1950–51 (Seventeen Point Agreement); the Lhasa government kept local authority until 1959"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": ""
+  },
+  "source": null,
+  "not_comparable_reason": "Reference shows the Tibetan Empire at its greatest extent in the 780s–790s CE, not 20th-century Tibet"
+ },
+ {
+  "realm": "Novgorod Republic",
+  "year": 1400,
+  "verdict": "match",
+  "which_is_right": null,
+  "differences": [
+   "Both run from the Pskov/Lake Peipus area (~27–33°E, 56–61°N) north to the White Sea and east along the Arctic coast to the Urals (~65–68°E); differences are only at the fuzzy northeastern frontier"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": ""
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Mongolian People's Republic",
+  "year": 1946,
+  "verdict": "match",
+  "which_is_right": null,
+  "differences": [],
+  "suggested": {
+   "type": "none",
+   "detail": ""
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Mongolia",
+  "year": 1996,
+  "verdict": "match",
+  "which_is_right": null,
+  "differences": [],
+  "suggested": {
+   "type": "none",
+   "detail": ""
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Nanda Empire",
+  "year": -325,
+  "verdict": "major",
+  "which_is_right": "reference",
+  "differences": [
+   "Our map runs west to ~66°E, taking in Sindh, the Indus delta and the Thar desert (66–75°E, 24–29°N); the reference stops at ~76°E (Mathura), west of which lay the Punjab and Sindh states Alexander met in 326–325 BCE",
+   "Reference takes in Avanti/Malwa (Ujjain, Vidisha) and a lobe south to ~19°N (Kundina, Paudanyapura); our map has nothing south of ~23°N except the Odisha coast at 85–86°E"
+  ],
+  "suggested": {
+   "type": "note",
+   "detail": "The Nandas ruled the Ganges plain from Magadha. The lands west of the Beas, including Punjab and Sindh, were separate kingdoms when Alexander arrived in 326–325 BCE. The Nanda frontier was the Beas, so the shading across Sindh is too far west.",
+   "from": -333,
+   "to": -319
+  },
+  "source": {
+   "title": "Nanda Empire (Wikipedia): Nanda territory lay beyond the Beas; Kalinga in part, Avanti probable, nothing south of the Vindhyas",
+   "url": "https://en.wikipedia.org/wiki/Nanda_Empire"
+  },
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Indo-Scythians",
+  "year": -59,
+  "verdict": "minor",
+  "which_is_right": null,
+  "differences": [
+   "Our map runs west to ~57°E at 30°N (into Kerman); the reference starts at Sistan/Sigal (~61–62°E)",
+   "Reference includes Malwa (Ujjain) more fully, plus a speculative eastern lobe along the Ganges to Pataliputra (~85°E); our map stops at ~79°E (Mathura region)"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": ""
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "First Toungoo Empire",
+  "year": 1547,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [
+   "Side observation: our 1547 polygon includes the Arakan coast to ~92.4°E, 21°N (Mrauk-U area). Tabinshwehti's 1546–47 siege of Mrauk-U failed and he withdrew, so Arakan stayed independent"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": ""
+  },
+  "source": null,
+  "not_comparable_reason": "Reference is a military-campaign map with battle markers and no territorial boundaries"
+ },
+ {
+  "realm": "Mali Federation",
+  "year": 1960,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [
+   "Reference shows Upper Volta and Dahomey inside the federation; our map shows only Senegal and the Sudanese Republic"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": ""
+  },
+  "source": null,
+  "not_comparable_reason": "Reference shows the planned four-state federation of January–March 1959. Upper Volta and Dahomey pulled out before it took effect, so our two-state 1960 map is the correct one for that date"
+ },
+ {
+  "realm": "Assyrian Egypt",
+  "year": -623,
+  "verdict": "major",
+  "which_is_right": "reference",
+  "differences": [
+   "The 'Assyrian Egypt' polygon is the whole Neo-Assyrian Empire (Levant, Mesopotamia to the Gulf at ~48°E, north to ~41°N) plus all of Egypt south to ~23.5°N, shown 650–616 BCE",
+   "Psamtik I had reunified Egypt by 656 BCE and was firmly in control of it by 654 BCE, so Egypt was no longer Assyrian anywhere in this realm's span. Babylonia (to the Gulf) broke away under Nabopolassar in 626 BCE",
+   "Reference (Ashurbanipal's reign) shows Egypt only as a subject kingdom (matu), not a province, with Tabal, Urartu, the Medes and the Qedarites as outer subject peoples"
+  ],
+  "suggested": {
+   "type": "relabel",
+   "detail": "Neo-Assyrian Empire (without Egypt); Egypt in 650–616 BCE belongs to the Twenty-sixth (Saite) Dynasty under Psamtik I",
+   "from": -650,
+   "to": -616
+  },
+  "source": {
+   "title": "Psamtik I (Wikipedia): unified all of Egypt under his rule by 656 BCE; firmly in control by 654 BCE",
+   "url": "https://en.wikipedia.org/wiki/Psamtik_I"
+  },
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "German Empire",
+  "year": 1914,
+  "verdict": "match",
+  "which_is_right": null,
+  "differences": [
+   "European borders match the reference's 1914 Germany: Alsace-Lorraine, North Schleswig, Posen, West Prussia, Upper Silesia and East Prussia (~6–22.5°E, 47.3–55.8°N)",
+   "Outside the reference's scope: our map shows German New Guinea, Kiautschou and the Pacific islands in red, but not Togo, Kamerun, German South West Africa or German East Africa. These are probably drawn as separate realms; worth checking for consistency"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": ""
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Republic of New Granada",
+  "year": 1843,
+  "verdict": "match",
+  "which_is_right": null,
+  "differences": [],
+  "suggested": {
+   "type": "none",
+   "detail": ""
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Neo-Assyrian Empire",
+  "year": -646,
+  "verdict": "major",
+  "which_is_right": "reference",
+  "differences": [
+   "Our map counts all of Egypt (to ~23°N) as Assyrian territory in 646 BCE. The reference shows Egypt only as a subject kingdom, and Psamtik I had ruled a reunified Egypt on his own since 656 BCE",
+   "Our northern edge reaches ~41°N at 42–46°E, taking in Lake Van and Urartu's heartland; the reference shows Urartu as a separate subject kingdom (matu), not part of the provinces",
+   "Our map includes Cyprus, which the reference shows only as tributary city-kingdoms"
+  ],
+  "suggested": {
+   "type": "note",
+   "detail": "Assyria conquered Egypt in 671 BCE but lost it within about 15 years. By 656 BCE Psamtik I, first installed as an Assyrian client, ruled a reunited Egypt on his own. From then on, Egypt shown as Assyrian means at most nominal allegiance.",
+   "from": -655,
+   "to": -616
+  },
+  "source": {
+   "title": "Psamtik I (Wikipedia): unified all of Egypt by 656 BCE",
+   "url": "https://en.wikipedia.org/wiki/Psamtik_I"
+  },
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Moghulistan",
+  "year": 1517,
+  "verdict": "major",
+  "which_is_right": "reference",
+  "differences": [
+   "Our map reaches north of the Tian Shan into the Ili valley, Zhetysu and the Dzungarian basin to ~47°N (73–90°E, 42–47°N), about 40% of the shape; the reference covers only the Tarim basin (~37–42°N)",
+   "Reference shows two separate states in 1517: the Yarkent Khanate (Kashgar–Yarkand–Khotan–Aksu–Kucha) and the Turpan Khanate (Turpan–Hami, east to ~94°E). Our single polygon stops at ~92°E"
+  ],
+  "suggested": {
+   "type": "note",
+   "detail": "By 1517 Moghulistan had split. Sultan Said Khan founded the Yarkent Khanate at Kashgar in 1514 and Mansur Khan ruled from Turpan, while the Kyrgyz had driven the Moghuls out of the northern steppe by 1510–11.",
+   "from": 1512,
+   "to": 1518
+  },
+  "source": {
+   "title": "Moghulistan (Wikipedia): Kyrgyz drove out the Moghuls by 1510–11; Yarkent Khanate formed 1514; 1517 division of Yarkent and Turpan",
+   "url": "https://en.wikipedia.org/wiki/Moghulistan"
+  },
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Cao Cao",
+  "year": 207,
+  "verdict": "minor",
+  "which_is_right": null,
+  "differences": [
+   "Our map includes the Liaodong peninsula and land to ~125°E, 41.5°N; the 207 panel shows this as Gongsun Kang's territory. He only sent Cao Cao the Yuan brothers' heads and accepted nominal submission",
+   "Otherwise the same: north China from Guanzhong's edge (~107°E) to Shandong, south to the Huai (~32°N), including Bing province, which was taken from Gao Gan in 206"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": ""
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Greco-Bactrian Kingdom",
+  "year": -180,
+  "verdict": "major",
+  "which_is_right": "unclear",
+  "differences": [
+   "Our map stops at ~34°N in the south (Kabul and Herat area); the reference adds Arachosia (Kandahar, ~31–34°N, 63–68°E) and the land toward the Indus",
+   "Reference runs west to Tapuria/Traxiane (~55°E); ours begins at ~57°E",
+   "North (Sogdiana and Ferghana to ~43°N) matches"
+  ],
+  "suggested": {
+   "type": "note",
+   "detail": "Demetrius I may have taken Arachosia from the Mauryas around 190–180 BCE ('Demetrias in Arachosia' is attributed to him), but this is uncertain. Some maps include Arachosia and others do not."
+  },
+  "source": {
+   "title": "Demetrius I of Bactria (Wikipedia): 'may have first started to recover' Arachosia; invasion of NW India 190–180 BCE",
+   "url": "https://en.wikipedia.org/wiki/Demetrius_I_of_Bactria"
+  },
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Pala Empire",
+  "year": 827,
+  "verdict": "major",
+  "which_is_right": "reference",
+  "differences": [
+   "Our map runs northwest across the whole Punjab to ~70.5°E and ~34°N (toward Gandhara); the reference stops at Jalandhara (~75°E)",
+   "Our map includes Malwa/Avanti (74–80°E, 22–25°N); the reference's southwest limit is near Gwalior (~26°N)",
+   "Our eastern edge reaches ~92°E (Sylhet/Assam); the reference ends at ~89–90°E"
+  ],
+  "suggested": {
+   "type": "note",
+   "detail": "Kings of Avanti, Madra and Gandhara are listed attending Dharmapala's court. They only recognised his overlordship and kept their own lands, so the Palas never governed Malwa or the Punjab. By the 820s the Pratiharas also held Kannauj."
+  },
+  "source": {
+   "title": "Pala Empire (Wikipedia): Avanti, Madra and Gandhara rulers 'maintained their own territories'; Nagabhata II took Kannauj",
+   "url": "https://en.wikipedia.org/wiki/Pala_Empire"
+  },
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Mamluk Dynasty",
+  "year": 1272,
+  "verdict": "major",
+  "which_is_right": "reference",
+  "differences": [
+   "Our map has a southern lobe down to ~22°N at 74–80°E, covering Malwa (Ujjain, Dhar). The reference's central part stops at ~24.5°N",
+   "Our northwest reaches ~34°N at ~71–72°E, beyond the Salt Range toward Bannu and Peshawar, where the Mongols held sway; the reference tops out near Lahore at ~32–33°N",
+   "Sindh to the coast (Thatta) and Bengal (Gaur) appear in both; our Bengal runs a little further east (~90°E)"
+  ],
+  "suggested": {
+   "type": "note",
+   "detail": "In 1272, under Balban, Malwa was still ruled by the Paramara kings. Delhi first conquered it under Alauddin Khalji in 1305.",
+   "from": 1260,
+   "to": 1284
+  },
+  "source": {
+   "title": "Paramara dynasty (Wikipedia): Arjunavarman II ruled Malwa 1274–1285; Alauddin Khalji's forces took Malwa in 1305",
+   "url": "https://en.wikipedia.org/wiki/Paramara_dynasty"
+  },
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "(Kingdom of the Franks)",
+  "year": 511,
+  "verdict": "minor",
+  "which_is_right": null,
+  "differences": [
+   "Our map stops at ~-2.5°E and leaves out western Brittany (Quimper, Vannes); the reference places Brittany inside the Kingdom of Paris",
+   "Our map runs north to ~53.5°N at 7°E into Frisia, which the reference shows outside the realm ('Frise')",
+   "Both exclude Burgundy, Septimania and Provence, and both include Aquitaine to the Pyrenees and the Rhineland to ~10°E"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": ""
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Kara-Khanids",
+  "year": 1006,
+  "verdict": "major",
+  "which_is_right": "reference",
+  "differences": [
+   "Our map leaves out the western Tarim basin. Its southeast edge runs from ~74.5°E 37.8°N up to ~83°E 42.5°N, so Kashgar (76°E 39.5°N), Yarkand and Khotan fall outside. The reference includes all three, east to ~85°E",
+   "Kashgar was a Kara-Khanid capital and royal seat, and Yusuf Qadir Khan of Kashgar conquered Khotan in 1006, the very year shown",
+   "Elsewhere the maps agree: Transoxiana (Bukhara, Samarkand), Ferghana, Talas/Balasagun and the Ili region to ~83°E"
+  ],
+  "suggested": {
+   "type": "note",
+   "detail": "The khanate's eastern core was Kashgar, one of its capitals. In 1006 Yusuf Qadir Khan of Kashgar conquered the Buddhist kingdom of Khotan, so the Tarim basin's western half belonged to the khanate.",
+   "from": 1000,
+   "to": 1045
+  },
+  "source": {
+   "title": "Kara-Khanid Khanate (Wikipedia): capitals included Kashgar; Khotan conquered 1006",
+   "url": "https://en.wikipedia.org/wiki/Kara-Khanid_Khanate"
+  },
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Buyid Dynasty",
+  "year": 936,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [
+   "Our 936 polygon covers Daylam and Jibal through Fars (46–56°E, 27–37.5°N), which is reasonable before Baghdad fell in 945"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": ""
+  },
+  "source": null,
+  "not_comparable_reason": "Reference shows the combined Buyid extent over 934–1062 (Iraq after 945, Oman, Kerman), not the situation in 936"
+ },
+ {
+  "realm": "(Second French Empire)",
+  "year": 1870,
+  "verdict": "match",
+  "which_is_right": null,
+  "differences": [
+   "Same set of territories: France including Savoy and Nice, northern Algeria, Senegal, French Guiana, Cochinchina plus the Cambodian protectorate, New Caledonia and small posts. The reference adds Obock (~43°E 12°N), which was bought in 1862 but not occupied"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": ""
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Kingdom of Spain",
+  "year": 1892,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [
+   "Side observation: our 1892 map fills all of Western Sahara with its 20th-century borders; in 1892 Spain held only the coastal Río de Oro protectorate (1884), and the inland borders were set in 1900–1912"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": ""
+  },
+  "source": null,
+  "not_comparable_reason": "Reference is a present-day EU locator map of Spain with Western Sahara, not 1892 Spain and its colonies"
+ },
+ {
+  "realm": "(Kalmar Union)",
+  "year": 1402,
+  "verdict": "match",
+  "which_is_right": null,
+  "differences": [
+   "Both show Denmark (with Scania), Norway including Finnmark, Sweden, Finland, Iceland, the Faroes, Shetland/Orkney and the Norse settlements in southwest Greenland"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": ""
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Maratha Empire",
+  "year": 1688,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [
+   "Side observation: our 1688 polygon is only a strip at 73.2–75°E, ~14–17°N (south Konkan and Kanara, minus Goa). It leaves out the Maratha heartland around Raigad, Pune and Satara (~17.5–19°N) and the Gingee/Vellore holdings, while including Kanara south of Goa, which belonged to the Keladi Nayakas. Worth checking"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": ""
+  },
+  "source": null,
+  "not_comparable_reason": "Reference is a map of the Mughal Empire c. 1700 that only labels the 'Marathas' as rebels; it draws no Maratha territory"
+ },
+ {
+  "realm": "Republic of Chad",
+  "year": 1992,
+  "verdict": "match",
+  "which_is_right": null,
+  "differences": [],
+  "suggested": {
+   "type": "none",
+   "detail": ""
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "People's Republic of Angola",
+  "year": 1976,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [
+   "The country's outline, including Cabinda, matches our map"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": ""
+  },
+  "source": null,
+  "not_comparable_reason": "Reference is an ethnic/tribal map of Angola (1970), not a political territorial map"
+ },
+ {
+  "realm": "Ethiopia",
+  "year": 2013,
+  "verdict": "match",
+  "which_is_right": null,
+  "differences": [],
+  "suggested": {
+   "type": "none",
+   "detail": ""
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Sur Empire",
+  "year": 1549,
+  "verdict": "minor",
+  "which_is_right": "ours",
+  "differences": [
+   "Reference (Sher Shah's peak, 1544–45) includes Marwar and Ajmer (Jodhpur, ~73–75°E, 25–27°N); our 1549 map leaves out Rajputana west of ~76°E",
+   "Our map runs further west into upper Sindh (~68.7°E at 27–28°N) and north to ~34.5°N near Rohtas; the reference stops near the Indus at ~70°E"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": ""
+  },
+  "source": {
+   "title": "Sher Shah Suri (Wikipedia): Marwar occupied 1544; Maldeo recaptured Jodhpur by July 1545",
+   "url": "https://en.wikipedia.org/wiki/Sher_Shah_Suri"
+  },
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "(First French Empire)",
+  "year": 1812,
+  "verdict": "major",
+  "which_is_right": "reference",
+  "differences": [
+   "Our map counts all of northern Spain as French, from Cantabria and the Basque country (~-5.5°E) through Navarre, Aragon and Catalonia down to ~40°N (Castellón). The reference shows only Catalonia annexed, as the departments of Ter, Montserrat, Sègre and Bouches-de-l'Èbre; Navarre, Biscay and Aragon stay in the Kingdom of Spain",
+   "Our map adds a band of occupied Russia (~22–38°E, 53–56°N, Vilnius–Smolensk–Moscow) plus Swedish Pomerania and Danzig. The reference shows none of these as imperial territory; they were wartime occupations in 1812",
+   "The core matches: France, the Low Countries, northwest Germany to Lübeck, Piedmont, Liguria, Tuscany, Rome and the Illyrian Provinces"
+  ],
+  "suggested": {
+   "type": "note",
+   "detail": "In 1812 the Empire formally annexed only Catalonia, as four departments created on 26 January 1812. The rest of northern Spain was held by French armies but still belonged to Joseph Bonaparte's Kingdom of Spain, and the Russian lands were held only briefly during the 1812 invasion.",
+   "from": 1810,
+   "to": 1813
+  },
+  "source": {
+   "title": "Bouches-de-l'Èbre (Wikipedia): created 26 January 1812 on Catalonia's annexation by the French Empire",
+   "url": "https://en.wikipedia.org/wiki/Bouches-de-l%27%C3%88bre"
+  },
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Granadine Confederation",
+  "year": 1860,
+  "verdict": "match",
+  "which_is_right": null,
+  "differences": [],
+  "suggested": {
+   "type": "none",
+   "detail": ""
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "United States of Colombia",
+  "year": 1863,
+  "verdict": "match",
+  "which_is_right": null,
+  "differences": [],
+  "suggested": {
+   "type": "none",
+   "detail": ""
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Republic of Colombia",
+  "year": 2012,
+  "verdict": "match",
+  "which_is_right": null,
+  "differences": [
+   "The reference also shows the San Andrés/Providencia islands and the 2012 ICJ maritime change, which are too small to show on our map"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": ""
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "(Holy Roman Empire)",
+  "year": 1050,
+  "verdict": "match",
+  "which_is_right": null,
+  "differences": [
+   "Both include Germany, the Low Countries to the Scheldt, Burgundy to the Rhône, Bohemia and Moravia, Carinthia and imperial Italy south to the Spoleto area (~42°N). The reference's northeastern marches beyond the Elbe are hatched (lost after 983)"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": ""
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Kievan Rus'",
+  "year": 1113,
+  "verdict": "minor",
+  "which_is_right": null,
+  "differences": [
+   "Our eastern edge stops at ~40°E, leaving out Murom and Ryazan (40–44°E, 54–56°N), which are inside the reference's 1113 borders",
+   "The reference adds hatched northern 'dependent lands under colonization' (Zavolochye, toward the White Sea and the northern Urals); our map stops at ~61.5°N",
+   "Both include the tiny Tmutarakan exclave on the Taman peninsula"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": ""
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "United Arab Republic",
+  "year": 1961,
+  "verdict": "match",
+  "which_is_right": null,
+  "differences": [],
+  "suggested": {
+   "type": "none",
+   "detail": ""
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "British Gold Coast",
+  "year": 1896,
+  "verdict": "major",
+  "which_is_right": "reference",
+  "differences": [
+   "Our map includes a large eastern block at ~2.7–9°E, 4.3–7.8°N, which is Lagos and the Niger Coast (southern Nigeria), not the Gold Coast",
+   "Our Gold Coast part is only a thin coastal strip (-3.5–0°E, ~5°N) plus a patch east of the Volta. The 1896 reference shows the colony and protected lands reaching inland toward Ashanti and Kumasi (~7–8°N)"
+  ],
+  "suggested": {
+   "type": "note",
+   "detail": "Lagos was governed from the Gold Coast from 1874 to 1886 and then became a separate colony, so the shapes in southern Nigeria are not part of the 1896 Gold Coast. The Gold Coast itself reached inland toward Ashanti, which was made a British protectorate in 1896.",
+   "from": 1886,
+   "to": 1899
+  },
+  "source": {
+   "title": "Lagos Colony (Wikipedia): administered under the Gold Coast 1874–1886, separate colony from 1886",
+   "url": "https://en.wikipedia.org/wiki/Lagos_Colony"
+  },
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "West Franks",
+  "year": 850,
+  "verdict": "minor",
+  "which_is_right": null,
+  "differences": [
+   "Our map leaves out western Brittany (west of ~-2.5°E); the reference shades Brittany light green as a dependent area (it was independent under Nominoë from 845)",
+   "Both include Gascony and the Spanish March down to Barcelona (~41.3°N, 2°E), and the Scheldt–Meuse–Saône–Rhône eastern border"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": ""
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "House of Oldenburg",
+  "year": 1451,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [
+   "Side observation: our 1450–1458 'House of Oldenburg' polygon covers Norway, Sweden, Finland, Iceland and Scania but not Jutland or the Danish islands. Christian I of Oldenburg was king of Denmark (1448) and Norway (1450), but Sweden and Finland were under Charles VIII Knutsson from 1448 until 1457. The shape looks wrong and is worth checking"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": ""
+  },
+  "source": null,
+  "not_comparable_reason": "Reference is a locator map of the County of Oldenburg in Lower Saxony (1560), not the Oldenburg kings' Scandinavian realms"
+ },
+ {
+  "realm": "Republic of the Niger",
+  "year": 1992,
+  "verdict": "match",
+  "which_is_right": null,
+  "differences": [],
+  "suggested": {
+   "type": "none",
+   "detail": ""
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Northern Wei",
+  "year": 492,
+  "verdict": "match",
+  "which_is_right": null,
+  "differences": [
+   "Both cover north China from the Hexi corridor (to ~93–96°E) to Liaoxi (~122°E), south to about the Huai (~32°N)"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": ""
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Zengid dynasty",
+  "year": 1172,
+  "verdict": "minor",
+  "which_is_right": null,
+  "differences": [
+   "The reference (Nur al-Din, 1174) includes the Hejaz (Medina, Mecca) and the Libyan coast west to Tripoli (~13°E). Our map stops at ~18°E in Cyrenaica and leaves out Arabia. These were nominal or Ayyubid-led holdings",
+   "Core matches: Syria (Aleppo, Damascus), the Jazira to Mosul (~44.5°E), and Egypt under Saladin as Nur al-Din's lieutenant"
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": ""
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Shunga Empire",
+  "year": -85,
+  "verdict": "major",
+  "which_is_right": "reference",
+  "differences": [
+   "Our map includes Kalinga/Odisha down to ~19°N at 82–86°E, plus Bengal to ~89.5°E. The reference stops at the Ganges delta and leaves Kalinga out",
+   "The reference includes Vidarbha (Bhojakata, ~20.5°N 77.5°E) and Sagala (~74.5°E 32.5°N); our southwest edge is at ~22.5°N there, and our northwest tip at ~76°E 31.5°N"
+  ],
+  "suggested": {
+   "type": "note",
+   "detail": "Kalinga regained its independence after the Mauryas fell and was ruled by its own Mahameghavahana kings, such as Kharavela, not by the Shungas. By the early 1st century BCE the Shungas held little beyond the central Ganges plain and Vidisha.",
+   "from": -170,
+   "to": -67
+  },
+  "source": {
+   "title": "Kharavela (Wikipedia): Kalinga regained independence after the Maurya Empire; Kharavela dated 2nd–1st century BCE",
+   "url": "https://en.wikipedia.org/wiki/Kharavela"
+  },
+  "not_comparable_reason": null
+ }
+]

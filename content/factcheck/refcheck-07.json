@@ -1,0 +1,479 @@
+[
+  {
+    "realm": "Chu", "year": -281, "verdict": "major",
+    "which_is_right": "reference",
+    "differences": [
+      "Our map's southern edge is ~29.3-30°N between 108°E and 118°E, so it leaves out Hunan (Dongting Lake and Changsha, ~25-29°N, 110-114°E) and most of Jiangxi; the reference (350 BCE) shows Chu reaching ~25.5°N in the Nanling hills",
+      "Our map runs north to ~36.5°N at 117-120°E (southern Shandong, the Huaibei lands); the reference stops at ~34°N. Some of this difference is the 69-year gap between the two dates (Chu took the Huaibei lands later)",
+      "Both maps show Chu's western limit at ~106-108°E (the Ba-Shu border)"
+    ],
+    "suggested": { "type": "note", "detail": "In the early 3rd century BCE Chu also held most of Hunan, south to the Nanling hills; Qin took its heartland at Ying in 278 BCE, and this map leaves the southern lands out.", "from": -300, "to": -278 },
+    "source": { "title": "Wikipedia: Chu (state) (\"included most of the present-day provinces of Hubei and Hunan\")", "url": "https://en.wikipedia.org/wiki/Chu_(state)" },
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "Republic of Kenya", "year": 1993, "verdict": "match",
+    "which_is_right": null,
+    "differences": [],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "Kingdom of Pontus", "year": 50, "verdict": "major",
+    "which_is_right": "reference",
+    "differences": [
+      "Our map draws the old Mithridatic kingdom along the whole Black Sea coast from ~33°E (Paphlagonia, Amastris) to ~41.5°E (Colchis border), south to ~38.5°N",
+      "The reference (early 1st century AD) shows the client kingdom of PONTUS only east of ~36.5°E (Komana Pontica, Nikopolis, Trapezus); Paphlagonia, Sinope, Amisus and Amaseia (33-36.5°E) lie inside the Roman provinces of Galatia and Bithynia-Pontus",
+      "That makes the western ~35-40% of our polygon (33-36.5°E) Roman provincial land in 50 CE"
+    ],
+    "suggested": { "type": "note", "detail": "By the 1st century CE the Roman client kingdom of Pontus was only the eastern half of the old kingdom; the west (Paphlagonia, Amaseia, Amisus) was part of Roman Galatia and Bithynia-Pontus. Nero annexed the rest in 62 CE.", "from": -5, "to": 62 },
+    "source": { "title": "Wikipedia: Pontus (region) (\"larger part of Pontus ... included in the province of Galatia ... eastern half ... client kingdom\")", "url": "https://en.wikipedia.org/wiki/Pontus_(region)" },
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "Burgundian Kingdom", "year": 476, "verdict": "match",
+    "which_is_right": null,
+    "differences": [
+      "Our southern limit is ~44.2°N; the reference's 476 extent reaches the Durance at ~43.7°N (a small frontier difference)",
+      "The north-eastern limit is ~7.5°E (ours) vs ~8.2°E (Vindonissa) in the reference"
+    ],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "Republic of Botswana", "year": 1967, "verdict": "not-comparable",
+    "which_is_right": null,
+    "differences": [],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": "The reference is a photograph of the 1965 independence talks, not a map."
+  },
+  {
+    "realm": "Ostrogothic Kingdom", "year": 523, "verdict": "minor",
+    "which_is_right": null,
+    "differences": [
+      "The core matches: Italy, Sicily, Raetia and Noricum to ~48.5°N, Dalmatia and Pannonia Sirmiensis to ~20°E, and Provence to ~3.5°E",
+      "The reference also shades the Visigothic Kingdom (Iberia and Septimania) as part of Theodoric's hegemony; our map leaves it out (a sphere of influence, not direct rule)"
+    ],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "Kartids", "year": 1379, "verdict": "minor",
+    "which_is_right": null,
+    "differences": [
+      "Our map runs west to ~56°E at 32.5-34°N (Tabas and the edge of the central Iranian desert); the reference stops at ~59-60°E (Quhistan and Jam)",
+      "Our map runs north to ~39.5°N at 62.5°E (into the Karakum beyond Merv); the reference stops at ~38°N (Merv, Abiward)",
+      "The reference runs east to ~71°E (Ghazni, Kabul, toward Peshawar); ours stops at ~68.5°E. Kart authority in the east was loose, so this is a fuzzy frontier"
+    ],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "Haudenosaunee", "year": 1650, "verdict": "minor",
+    "which_is_right": null,
+    "differences": [
+      "Both maps share the core: the Five Nations lands across central New York, from the Genesee (~78°W) to the Mohawk-Hudson (~74°W)",
+      "Our map crosses the St Lawrence into eastern Ontario and Quebec, up to ~45.8°N between 74°W and 77°W; the reference stops at the Lake Ontario and St Lawrence shore (~44.3°N). This was hunting and raiding range contested with Algonquin peoples, not settled Haudenosaunee land",
+      "Our southern edge is ~42.4°N; the reference reaches ~42°N (the Pennsylvania line)"
+    ],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "(Kingdom of England)", "year": 1700, "verdict": "major",
+    "which_is_right": "reference",
+    "differences": [
+      "Our map colours all of Great Britain and Ireland, including Scotland (55-59°N) and Ireland (51.5-55.5°N, 6-10°W); the reference shows England and Wales only",
+      "Our map also includes the American colonies, Newfoundland, Bermuda, Jamaica and a Belize coast patch; the reference is a European locator map and leaves colonies out (expected)"
+    ],
+    "suggested": { "type": "note", "detail": "In 1700 England, Scotland and Ireland shared one monarch but were separate kingdoms; England and Scotland merged into Great Britain only in 1707.", "from": 1603, "to": 1707 },
+    "source": { "title": "Wikipedia: Acts of Union 1707 (\"had shared a monarch since the 'personal' Union of the Crowns in 1603\")", "url": "https://en.wikipedia.org/wiki/Acts_of_Union_1707" },
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "Vijayanagara Empire", "year": 1485, "verdict": "minor",
+    "which_is_right": null,
+    "differences": [
+      "Our northern limit is ~17.5°N (the Godavari coast); the reference runs to ~18.5-19°N around 78-80°E and up the coast",
+      "Our map includes the Kerala/Malabar coast (75-77°E, 8-12°N); the reference leaves that strip outside the empire"
+    ],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "Caliphate of Córdoba", "year": 1000, "verdict": "minor",
+    "which_is_right": null,
+    "differences": [
+      "The Iberian core matches: the Ebro valley to ~42.4°N, the coast to Tarragona (~41.2°N), and the Balearics; the County of Barcelona is excluded in both",
+      "Our north-western edge is ~40-40.8°N; the reference's Lower March and 'no man's land' reach the Duero (~41.5°N)",
+      "Our map shows northern Morocco (31-36°N, 2-9°W) as directly held; the reference marks it as Maghrawa vassals of Córdoba"
+    ],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "House of Habsburg", "year": 1455, "verdict": "not-comparable",
+    "which_is_right": null,
+    "differences": [],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": "The reference shows the Habsburg dominions in 1547 (Spain, the Netherlands, Naples, Sicily), almost a century after our 1455 map. Our 1455 polygon (Austria, Bohemia and Hungary under Ladislaus the Posthumous) is plausible for that date."
+  },
+  {
+    "realm": "Anti-Kuomintang Coalition", "year": 1930, "verdict": "major",
+    "which_is_right": "reference",
+    "differences": [
+      "Our map shows only two blocks: a northern one at ~104-112.5°E, 34-41°N, and Guangxi (~104.5-112°E, 21.5-26.5°N)",
+      "The reference (May 1930) colours the coalition (Peiping government) across a band from ~97°E to ~119°E, 32-42°N: Hebei with Peiping and Tianjin, Chahar, Suiyuan, Shanxi, Shaanxi, Gansu, Ningxia, Henan and parts of Shandong, plus Guangxi",
+      "Our map leaves out Peiping, the seat of the coalition's own government, along with Hebei and Henan, the main front of the war"
+    ],
+    "suggested": { "type": "note", "detail": "In mid-1930 the coalition of Yan Xishan, Feng Yuxiang and the Guangxi clique held most of North China (Shanxi, Hebei with Peiping, Henan, Shaanxi and Gansu) plus Guangxi, and set up a rival government in Peiping; this map shows far less.", "from": 1930, "to": 1930 },
+    "source": { "title": "Wikipedia: Central Plains War (coalition held Henan, took Jinan in Shandong, held Guangxi, set up a government in Peiping)", "url": "https://en.wikipedia.org/wiki/Central_Plains_War" },
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "Tuyuhun", "year": 614, "verdict": "not-comparable",
+    "which_is_right": null,
+    "differences": [],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": "The reference is a map of the Mongol Empire in 1207, where 'Tuyuhun' is only a place label. Separately, our 614 polygon (78-103°E) falls in the years when Sui had overrun the Tuyuhun (609 to c. 618); worth a separate check."
+  },
+  {
+    "realm": "Arab Federation", "year": 1958, "verdict": "not-comparable",
+    "which_is_right": null,
+    "differences": [],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": "The reference is a photograph of the Jordan-Iraq talks, not a map."
+  },
+  {
+    "realm": "Srivijaya", "year": 1250, "verdict": "not-comparable",
+    "which_is_right": null,
+    "differences": [],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": "The final frame of the animated GIF has no territory shaded, so nothing can be compared. Note that the reference's caption says Srivijaya had shrunk to the Malayu-Dharmasraya kingdom in Jambi by the 13th century, while our 1250 map still shows all of Sumatra, Malaya and Bangka; worth a separate check."
+  },
+  {
+    "realm": "Crown of Castile", "year": 1400, "verdict": "match",
+    "which_is_right": null,
+    "differences": [],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "Talpur Dynasty", "year": 1823, "verdict": "major",
+    "which_is_right": "reference",
+    "differences": [
+      "Our map spans ~59-72.5°E and 23.5-31.5°N: all of Balochistan (Kalat, Las Bela, Makran), west to ~59°E inside Iranian Baluchistan, plus a long arm north-east to ~72.5°E, 30.5°N toward Multan",
+      "The reference (Sindh, 1823) shows Talpur rule only over Sindh (~66.5-71°E, 23.5-28.5°N), with small suzerainty zones to the north; Las Bela is a separate state",
+      "Our polygon is several times the dynasty's stated area of a little over 100,000 km²"
+    ],
+    "suggested": { "type": "note", "detail": "The Talpur Mirs ruled Sindh (with Khairpur and Mirpur branches) and some border districts; Balochistan, Kalat and Makran were under their own khans.", "from": 1783, "to": 1843 },
+    "source": { "title": "Wikipedia: Talpur dynasty (combined area \"over 100,000 square kilometres\")", "url": "https://en.wikipedia.org/wiki/Talpur_dynasty" },
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "Maukhari Dynasty", "year": 578, "verdict": "major",
+    "which_is_right": "reference",
+    "differences": [
+      "Our map runs east to ~90°E and south to ~22°N, taking in all of Bengal (Gauda and Vanga, 86-90°E, including the delta)",
+      "The reference shows the Maukharis from Kanyakubja to Pataliputra only (~79-86°E, 25-28°N)",
+      "Bengal makes up roughly a third of our polygon, and the Gaudas there were the Maukharis' rivals, not their subjects"
+    ],
+    "suggested": { "type": "note", "detail": "The Maukharis of Kannauj ruled the Ganges plain from about Thanesar to Magadha; Bengal (Gauda) was a rival kingdom that later took Maukhari land.", "from": 550, "to": 606 },
+    "source": { "title": "Wikipedia: Maukhari dynasty (\"spread from Thaneshwar in the West to Nalanda district in the east\")", "url": "https://en.wikipedia.org/wiki/Maukhari_dynasty" },
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "Ukrainian People's Republic", "year": 1919, "verdict": "minor",
+    "which_is_right": null,
+    "differences": [
+      "The reference shows the Hetmanate (Ukrainian State) in Nov-Dec 1918, the month before the People's Republic was restored; the outlines are broadly the same",
+      "Our map includes Eastern Galicia (Lviv, ~22.5-26°E), which matches the January 1919 union act; the reference shows it as the separate Western Ukrainian republic",
+      "The reference reaches Brest-Litovsk and Pinsk (~52°N, 23.5-26°E) in the north-west; our north-western edge is ~51.5°N",
+      "Our map leaves out Crimea; the reference stripes it as a separate regime"
+    ],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "Kingdom of Thailand", "year": 1974, "verdict": "not-comparable",
+    "which_is_right": null,
+    "differences": [],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": "The reference is an ethnic map. Its outline of Thailand does match ours."
+  },
+  {
+    "realm": "Chola Empire", "year": 1030, "verdict": "minor",
+    "which_is_right": null,
+    "differences": [
+      "The core matches: South India up the Vengi and Kalinga coast to ~18.5°N",
+      "Our map includes all of Sri Lanka down to ~6°N; the reference's direct extent covers mainly the north and centre (Anuradhapura, Polonnaruwa)",
+      "Our map includes the Andaman and Nicobar Islands (91-93°E); the reference shows Nicobar only on a trade route",
+      "The reference shades areas of influence (the Bengal coast, Pegu, Kedah, Srivijaya) that our map leaves out"
+    ],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "Old Kingdom of Norway", "year": 1338, "verdict": "not-comparable",
+    "which_is_right": null,
+    "differences": [],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": "The reference shows modern Norway's territorial waters and Antarctic claim, not the 1338 kingdom."
+  },
+  {
+    "realm": "Kingdom of Armenia", "year": 350, "verdict": "minor",
+    "which_is_right": null,
+    "differences": [
+      "The core matches: 39.5-48.5°E, from Gugark (~41.5°N) to Paytakaran by the Caspian",
+      "Our southern edge is ~38.6°N between 40.5°E and 44°E; the reference includes Aghdznik and Korduk down to ~37.3°N. These southern satrapies were ceded to Rome in 299-363, so the date matters",
+      "Our map has a western arm to ~37.7°E at 39.8°N; the reference leaves the western provinces (Orbisene, Sophene area) outside its border"
+    ],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "Adal Sultanate", "year": 1540, "verdict": "major",
+    "which_is_right": "ours",
+    "differences": [
+      "The reference (after Pankhurst) carries Adal east along the whole northern Somali coast from ~45°E to Cape Guardafui (~51°E, 9-12°N); our map stops at ~45°E (Berbera)",
+      "Our map runs south to ~5.5°N (Bale and Sidamo, 38-41°E); the reference stops at ~7.5°N",
+      "Both show the conquered highlands, west to ~37-38°E, and north to Massawa (~15.5°N)"
+    ],
+    "suggested": { "type": "note", "detail": "During Imam Ahmad's conquests (1529-43) Adal held the land from Zeila to Massawa and much of the Ethiopian highlands; the far north-eastern Somali coast belonged to Somali clans with only loose ties to Adal.", "from": 1529, "to": 1543 },
+    "source": { "title": "Wikipedia: Adal Sultanate (\"occupied a territory stretching from Zeila to Massawa\"; Mait held by Harti clans in the mid-16th century)", "url": "https://en.wikipedia.org/wiki/Adal_Sultanate" },
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "Balhae", "year": 830, "verdict": "minor",
+    "which_is_right": null,
+    "differences": [
+      "The core matches: Manchuria from Liaodong (~121.5°E) to the Primorye coast (~138°E), north to ~45-47.5°N",
+      "Our map leaves out the north-east Korean coast (Hamgyong, ~128-130°E, 39.5-42°N); the reference takes Balhae down to the Silla border at ~39°N on the east coast",
+      "Our north-western edge is ~44.5°N at 125°E; the reference follows the Songhua and Amur (~46-48°N)"
+    ],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "Indo-Parthians", "year": 28, "verdict": "major",
+    "which_is_right": "reference",
+    "differences": [
+      "Our map runs from ~65°E to ~72°E (Sindh, eastern Balochistan, up to Taxila at ~34°N) and leaves out Drangiana/Sistan and most of Arachosia (~61.5-65°E, 29-33°N, around Alexandria Prophthasia/Farah)",
+      "The reference extends west to Farah (~62°E) and east through Punjab to Mathura (~77.7°E)",
+      "The reference's eastern reach to Mathura is doubtful (Mathura was ruled by Indo-Scythian satraps); the western omission is the more serious error, since Sistan was where Gondophares started"
+    ],
+    "suggested": { "type": "note", "detail": "At its height under Gondophares, the Indo-Parthian kingdom also held its homeland of Sistan (Drangiana) and Arachosia in what is now south-western Afghanistan, besides Gandhara, Sindh and western Punjab.", "from": 19, "to": 46 },
+    "source": { "title": "Wikipedia: Indo-Parthian Kingdom (Gondophares originally ruled Seistan; held Arachosia, Sindh and Punjab; Taxila a capital)", "url": "https://en.wikipedia.org/wiki/Indo-Parthian_Kingdom" },
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "Yadava Dynasty", "year": 1286, "verdict": "major",
+    "which_is_right": "unclear",
+    "differences": [
+      "Our map runs east to ~83°E and north to ~23°N (eastern Vidarbha, Chhattisgarh, toward Jabalpur); the reference stops at ~79.5°E and ~22°N (Achalapura)",
+      "The reference includes the interior Raichur doab and Kampili (~76-78°E, 15-17°N); our map's southern part is only a thin strip on the Konkan coast (~74-75.5°E at 15°N)",
+      "Ramachandra did raid Tripuri (near Jabalpur) and Bhandara, so part of our north-eastern area has a basis, but Chhattisgarh (81-83°E) was Kalachuri land. Raichur was lost to the Kakatiyas under Ramachandra, so the reference's south is also uncertain"
+    ],
+    "suggested": { "type": "note", "detail": "The Seuna Yadavas ruled the western Deccan from Devagiri; their raids into Tripuri and Bhandara in the east were short-lived, and the Raichur doab changed hands with the Kakatiyas.", "from": 1271, "to": 1311 },
+    "source": { "title": "Wikipedia: Seuna (Yadava) dynasty (Ramachandra occupied Tripuri, subdued Bhandara; lost Raichur to the Kakatiyas)", "url": "https://en.wikipedia.org/wiki/Seuna_(Yadava)_dynasty" },
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "Papua New Guinea", "year": 1999, "verdict": "not-comparable",
+    "which_is_right": null,
+    "differences": [],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": "The reference shows the colonial division of New Guinea in 1884-1914, not the modern state."
+  },
+  {
+    "realm": "Weimar Republic", "year": 1935, "verdict": "major",
+    "which_is_right": "reference",
+    "differences": [
+      "The borders match the reference's 1919-1937 Reich (East Prussia separated by the Polish Corridor, Memel excluded)",
+      "Our map labels the polygon 'Weimar Republic' in 1935, but the Republic ended in 1933 with the Nazi seizure of power; by 1935 this is the Third Reich"
+    ],
+    "suggested": { "type": "clip", "detail": "The Weimar Republic ended in 1933 when the Nazis took power; from then on Germany is the Third Reich.", "from": 1919, "to": 1933 },
+    "source": { "title": "Wikipedia: Weimar Republic (\"from 9 November 1918 to 23 March 1933\")", "url": "https://en.wikipedia.org/wiki/Weimar_Republic" },
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "Khanate of Kokand", "year": 1709, "verdict": "major",
+    "which_is_right": "reference",
+    "differences": [
+      "Our 1709 map runs from ~66°E to ~73.5°E and 39-42.8°N: Tashkent (69.2°E, 41.3°N), Khujand, Ura-Tyube, Jizzakh and the Samarkand/Zarafshan area (66-68.5°E)",
+      "The reference's earliest layer (Narbuta Biy, 1770-99) is only the Fergana core around Kokand and Andijan (~70.5-73°E, 40-41°N); Tashkent arrives only under Alim Khan (1799-1811)",
+      "In 1709 the khanate was a new principality near Kokand. It held Samarkand only for a few months in the 18th century, and Tashkent only from c. 1809"
+    ],
+    "suggested": { "type": "note", "detail": "When Shahrukh Biy founded the Kokand Khanate in 1709 it held only part of the Fergana Valley; Tashkent was conquered about a century later, and Samarkand stayed Bukharan.", "from": 1709, "to": 1799 },
+    "source": { "title": "Wikipedia: Khanate of Kokand (Tashkent conquered under Alim Khan, r. 1799-1811; Samarkand held only about six months)", "url": "https://en.wikipedia.org/wiki/Khanate_of_Kokand" },
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "Bahmani Sultanate", "year": 1390, "verdict": "major",
+    "which_is_right": "reference",
+    "differences": [
+      "Our 1390 map runs from the Konkan coast (~72.5°E) to ~81.5°E and 16-22°N: all of Berar, plus eastern Telangana around Warangal and up to the Godavari",
+      "The reference's directly controlled area (1390-1482) is ~73.5-79°E, 16-21°N (Junnar, Ellichpur, Bidar, Gulbarga)",
+      "The land east of ~79°E (Warangal and eastern Telangana, about a quarter of our polygon) was conquered only under Ahmad Shah I (1422-36)"
+    ],
+    "suggested": { "type": "note", "detail": "In 1390 the Bahmani Sultanate held the western and central Deccan; Warangal and eastern Telangana were conquered in the 1420s, and the Konkan coast later still.", "from": 1347, "to": 1422 },
+    "source": { "title": "Wikipedia: Bahmani Sultanate (Ahmad Shah I, r. 1422-1436, \"finally captured the remnants of Warangal\")", "url": "https://en.wikipedia.org/wiki/Bahmani_Sultanate" },
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "Rustamid dynasty", "year": 778, "verdict": "major",
+    "which_is_right": "unclear",
+    "differences": [
+      "Our map is a northern band from ~0.5°W to 16°E and 30-36.5°N: the central Algerian Tell and steppe, southern Tunisia and Tripolitania/Jebel Nafusa",
+      "The reference ('Maghreb central during the Rustamid era') runs deep into the Sahara, south to ~25°N past Adrar and Ouargla, and west into eastern Morocco (hatched)",
+      "Rustamid authority over Ouargla and the Saharan oases was recognition by Ibadi communities rather than direct rule, so the reference's Saharan block is an overreach. Our map in turn leaves out Fezzan (to Zawila, ~26°N, 15°E), which the Rustamids did reach"
+    ],
+    "suggested": { "type": "note", "detail": "The Rustamid imams at Tahert ruled central and western Algeria; Ibadi communities in Jebel Nafusa, Fezzan and oases such as Ouargla recognised them, but the Sahara was not under direct rule.", "from": 777, "to": 909 },
+    "source": { "title": "Wikipedia: Rustamid dynasty (authority \"over what is now central and western Algeria\"; recognized by the Ibadis of Wargla, Jebel Nafusa, Fezzan)", "url": "https://en.wikipedia.org/wiki/Rustamid_dynasty" },
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "Minyue", "year": -192, "verdict": "major",
+    "which_is_right": "reference",
+    "differences": [
+      "Our map's western edge is ~114.5-115°E, so it takes in southern and eastern Jiangxi (Gannan, west of the Wuyi Mountains); it also reaches ~29.7°N at 117.5°E, near Poyang in northern Jiangxi",
+      "The reference follows the Wuyi Mountains (~116-117°E) as the western border with Han's Yuzhang commandery and puts the northern limit at ~28.3°N, with Dong'ou separate in south Zhejiang",
+      "About 25-30% of our polygon lies in Han Jiangxi rather than Fujian"
+    ],
+    "suggested": { "type": "note", "detail": "Minyue lay in what is now Fujian, east of the Wuyi Mountains; Jiangxi to the west was Han's Yuzhang commandery.", "from": -202, "to": -110 },
+    "source": { "title": "Wikipedia: Minyue (\"an ancient kingdom in what is now the Fujian province\")", "url": "https://en.wikipedia.org/wiki/Minyue" },
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "Turkmenistan", "year": 2007, "verdict": "match",
+    "which_is_right": null,
+    "differences": [],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "Kingdom of Hungary", "year": 1489, "verdict": "not-comparable",
+    "which_is_right": null,
+    "differences": [],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": "The reference shows Hungary's territorial gains in 1938-41, not the kingdom of Matthias Corvinus in 1489."
+  },
+  {
+    "realm": "Republic of Cameroon", "year": 1992, "verdict": "match",
+    "which_is_right": null,
+    "differences": [],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "Republic of Yemen", "year": 2006, "verdict": "match",
+    "which_is_right": null,
+    "differences": [
+      "The reference is a map of the proposed federal regions; the national outline, including Socotra and the Red Sea islands, matches ours"
+    ],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "Tokugawa Shogunate", "year": 1858, "verdict": "not-comparable",
+    "which_is_right": null,
+    "differences": [],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": "The reference is an image of a treaty seal, not a map."
+  },
+  {
+    "realm": "Iraqi Republic", "year": 1990, "verdict": "match",
+    "which_is_right": null,
+    "differences": [],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "Kingdom of Italy", "year": 1924, "verdict": "match",
+    "which_is_right": null,
+    "differences": [
+      "Our map also shows the Dodecanese (~26-28°E, 36-37°N), which fall outside the reference's frame"
+    ],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "Carthage", "year": -218, "verdict": "minor",
+    "which_is_right": null,
+    "differences": [
+      "Both maps share the core: southern and eastern Iberia, the North African coast from Tingis to the Syrtis, and Tunisia",
+      "Our Iberian block runs north to ~42.3°N at ~3.2°W (Old Castile); the reference stops at ~41.5°N on the Celtiberian edge",
+      "Our map has a small stray red triangle in southern Gaul (~3-4.3°E, 43.5-44.6°N, inland Languedoc) that Carthage never held; it looks like a polygon artifact worth removing",
+      "Our map includes Mallorca and Menorca; the reference marks only Ebusus as Carthaginian"
+    ],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "Halych-Volhynia occupation", "year": 1068, "verdict": "not-comparable",
+    "which_is_right": null,
+    "differences": [],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": "The reference is a general map of Europe drawn around 1570. Separately, our 1068 polygon (Moldavia, the southern Ukrainian steppe to ~39°E, and Crimea) covers what was Cuman and Pecheneg steppe in 1068, and the name does not fit that date (Galicia-Volhynia arose in 1199); worth a separate check."
+  },
+  {
+    "realm": "Ayutthaya Kingdom", "year": 1609, "verdict": "not-comparable",
+    "which_is_right": null,
+    "differences": [],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": "The reference shows Ayutthaya in the 14th century, more than 200 years before our 1609 map."
+  },
+  {
+    "realm": "North German Confederation", "year": 1870, "verdict": "major",
+    "which_is_right": "reference",
+    "differences": [
+      "Our map adds a large block of north-eastern France from ~1.5°E (just west of Paris) to the Rhine, 47.6-50°N (Champagne, Lorraine, Alsace, Picardy). This looks like the German military occupation of the Franco-Prussian War",
+      "The reference shows the Confederation only in Germany north of the Main, plus Prussia to ~22.5°E; no French territory",
+      "The Confederation never included French land. Alsace-Lorraine was annexed in 1871 by the new German Empire, after the Confederation had ended"
+    ],
+    "suggested": { "type": "note", "detail": "In late 1870 German armies occupied much of northern France during the Franco-Prussian War; this was a wartime occupation, not part of the North German Confederation.", "from": 1870, "to": 1871 },
+    "source": { "title": "Wikipedia: North German Confederation (map shows Alsace-Lorraine, annexed after the 1870-71 war, separately from the Confederation)", "url": "https://en.wikipedia.org/wiki/North_German_Confederation" },
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "Republic of Finland", "year": 1942, "verdict": "minor",
+    "which_is_right": null,
+    "differences": [
+      "The reference is a modern blank map of Finland's regions; our 1942 map rightly adds Petsamo (to ~70°N at 31°E) and the Karelia lands retaken in 1941",
+      "Our map also runs east to ~34°E at 61-63°N, into Soviet East Karelia, which Finland occupied militarily in 1941-44 but never annexed"
+    ],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": null
+  }
+]

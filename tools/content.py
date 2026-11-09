@@ -181,9 +181,8 @@ def main():
 
     # Defining moments (content/moments.json): validate and include.
     moments = []
-    mpath = os.path.join(ROOT, "content", "moments.json")
-    if os.path.exists(mpath):
-        seen = set()
+    seen = set()
+    for mpath in sorted(glob.glob(os.path.join(ROOT, "content", "moments*.json"))):
         for m in json.load(open(mpath)):
             if m.get("id") in seen:
                 problems.append(f"moment id duplicated: {m.get('id')}")
@@ -195,7 +194,24 @@ def main():
                 m["lonlat"] = None
             check_sources(f"moment {m.get('id')}", m)
             moments.append(m)
-        moments.sort(key=lambda m: m["year"])
+    moments.sort(key=lambda m: m["year"])
+
+    # Reconstruction layers (content/supplements/*.json): polities the border data lacks or draws too crudely.
+    supplements = []
+    for sp in sorted(glob.glob(os.path.join(ROOT, "content", "supplements", "*.json"))):
+        sup = json.load(open(sp))
+        ok = []
+        for rg in sup.get("regions", []):
+            ring = rg.get("coords") or []
+            if len(ring) < 4 or ring[0] != ring[-1]:
+                problems.append(f"supplement {sup.get('id')}: region {rg.get('name')!r} ring not closed")
+                continue
+            ok.append(rg)
+        sup["regions"] = ok
+        check_sources(f"supplement {sup.get('id')}", sup)
+        supplements.append(sup)
+    with open(os.path.join(ROOT, "public", "data", "supplements.json"), "w") as fh:
+        json.dump(supplements, fh, ensure_ascii=False, separators=(",", ":"))
 
     # Empire journeys (content/journeys/*.json): validate chains against Cliopatria and include.
     journeys, jids = [], set()

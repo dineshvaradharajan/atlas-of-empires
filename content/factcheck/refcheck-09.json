@@ -1,0 +1,451 @@
+[
+  {
+    "realm": "Republic of the Philippines", "year": 1985, "verdict": "match",
+    "which_is_right": null,
+    "differences": [],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "Bornu Empire", "year": 1850, "verdict": "not-comparable",
+    "which_is_right": null,
+    "differences": [],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": "Reference is an engraving of an armoured Bornu horseman, not a map."
+  },
+  {
+    "realm": "Socialist Republic of Vietnam", "year": 1999, "verdict": "match",
+    "which_is_right": null,
+    "differences": [],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "Himyarite Kingdom", "year": -52, "verdict": "major",
+    "which_is_right": "reference",
+    "differences": [
+      "Our map draws Himyar as a long strip up the Red Sea coast from ~13°N to ~25.5°N (Tihama and Hejaz coast, 38–44°E). The reference has nothing north of ~17.5°N, and no source gives 1st-century-BCE Himyar any Hejaz coast.",
+      "The reference covers all of Yemen plus Hadramawt and Dhofar (45–52°E, 15–17°N). That is the Himyar of c. 300 CE onward, so leaving Hadramawt out for 52 BCE is correct. Here the reference's date is the problem, not our map.",
+      "In 52 BCE Himyar was a highland kingdom around Zafar (~44.4°E, 14.2°N), only recently independent of Qataban (c. 110 BCE). It did not take Saba until c. 25 BCE."
+    ],
+    "suggested": { "type": "note", "detail": "In the 1st century BCE Himyar was a young highland kingdom around Zafar in south-west Yemen. It did not rule the Red Sea coast north into the Hejaz, and it took Saba only around 25 BCE and Hadramawt around 300 CE.", "from": -66, "to": -37 },
+    "source": { "title": "Himyarite Kingdom (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Himyarite_Kingdom" },
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "(Batavian Republic)", "year": 1797, "verdict": "minor",
+    "which_is_right": null,
+    "differences": [
+      "The European territory matches (Netherlands, 3.5–7°E, 51–53.5°N). Our map also shows the Dutch East Indies holdings (Java, Moluccas, Timor area, 105–130°E, 0–10°S), which the Europe-only reference leaves out. That is a scope difference, not an error."
+    ],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "Sultanate of Muscat and Oman", "year": 1928, "verdict": "major",
+    "which_is_right": "reference",
+    "differences": [
+      "Our map includes the whole Qatar peninsula (50.8–51.7°E, 24.5–26.1°N) as part of Muscat and Oman. The 1870 reference shows Oman only from Musandam down the east coast, and Qatar was never Omani. The Cliopatria polygon carries Qatar from 1916 to 1935.",
+      "In the source data the 1913–1921 polygons also include Kuwait (47.4–48.3°E, 28.8–29.8°N), likewise never Omani.",
+      "From the Treaty of Seeb (1920) to the mid-1950s, the interior around Nizwa was ruled autonomously by the Imamate of Oman. Our map gives the whole interior to the Sultan; the other Oman reference in this batch (Maskat & Oman map) shows the imamate separately.",
+      "The reference is dated 1870, so Dhofar and other later details are not compared. The Qatar error does not depend on the date."
+    ],
+    "suggested": { "type": "note", "detail": "The Qatar peninsula drawn here was never part of Muscat and Oman: from 1916 it was a separate British protectorate under the Al Thani. From 1920 the interior around Nizwa was ruled by the autonomous Imamate of Oman.", "from": 1916, "to": 1935 },
+    "source": { "title": "History of Qatar (Wikipedia): 1916 Anglo-Qatari treaty made Qatar a British protectorate", "url": "https://en.wikipedia.org/wiki/History_of_Qatar" },
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "Southern Han", "year": 923, "verdict": "major",
+    "which_is_right": "reference",
+    "differences": [
+      "Our map extends Southern Han south-west over the Red River delta and northern Vietnam to ~18°N (104–107°E). The reference shows that area as Annam (Jinghai), separate from Southern Han.",
+      "Guangdong, Hainan and eastern Guangxi agree between the two maps."
+    ],
+    "suggested": { "type": "note", "detail": "Northern Vietnam (Jinghai, or Annam) was ruled by local Vietnamese governors, not Southern Han. Southern Han held it only briefly around 930–931, and its 938 invasion was defeated at the Bach Dang River.", "from": 911, "to": 946 },
+    "source": { "title": "Southern Han (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Southern_Han" },
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "Republic of Côte d'Ivoire", "year": 2007, "verdict": "not-comparable",
+    "which_is_right": null,
+    "differences": [],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": "Reference is a map of French West Africa in 1913, a different polity and date. The '2007' is its upload date, not the map's date."
+  },
+  {
+    "realm": "Hittites", "year": -1271, "verdict": "minor",
+    "which_is_right": null,
+    "differences": [
+      "The reference (Suppiluliuma I and Mursili II, c. 1350–1295 BCE) includes the vassal lands of western and southern Anatolia: Arzawa, Mira, Seha River Land, Wilusa, Lukka and the Lycian–Pamphylian coast (27–33°E, 36–38°N). Our map reaches the Aegean only in a thin band near 38.5°N and leaves out the southern coast.",
+      "The reference reaches east into Mitanni/Hanigalbat (39–41.5°E) and south to Damascus (~33.5°N). Ours stops near 39°E and ~34.5°N. By 1271 BCE Assyria had taken Hanigalbat, so the eastern difference comes from the date."
+    ],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "South African Republic", "year": 1890, "verdict": "major",
+    "which_is_right": "reference",
+    "differences": [
+      "Our map has a detached block east of Swaziland running to the coast at Kosi Bay (31.7–32.8°E, 26.8–28.1°S). That is Tongaland/Maputaland, an independent Tsonga kingdom that Britain annexed in 1895. The reference shows no Transvaal territory there. In the source data the block appears in 1890 and is merged into the main polygon in 1895–1899.",
+      "The main Transvaal body (24.6–32°E, 22.2–28.3°S, including the absorbed New Republic around Vryheid) matches the reference."
+    ],
+    "suggested": { "type": "note", "detail": "The detached block east of Swaziland is Tongaland (Maputaland), a Tsonga kingdom the Transvaal never ruled; Britain annexed it in 1895.", "from": 1890, "to": 1899 },
+    "source": { "title": "Maputaland (Wikipedia): Tongaland annexed by Great Britain on 11 June 1895", "url": "https://en.wikipedia.org/wiki/Maputaland" },
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "Republic of Poland", "year": 1979, "verdict": "match",
+    "which_is_right": null,
+    "differences": [],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "Sultanate of Oman", "year": 1998, "verdict": "match",
+    "which_is_right": null,
+    "differences": [
+      "The reference shows the pre-1970 Muscat sultanate and Oman imamate. Their combined outer limits (Musandam, the north coast to Ras al-Hadd, Masirah, Dhofar to ~52°E) match our modern outline."
+    ],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "Second Bulgarian Empire", "year": 1196, "verdict": "minor",
+    "which_is_right": null,
+    "differences": [
+      "Our map has an arm north-east past the Danube delta into southern Bessarabia (28–30°E, 44.5–45.5°N). The reference shows that zone and Wallachia as Vlach/Cuman vassal territory, not Bulgaria proper.",
+      "Otherwise the two broadly agree: west to Belgrade/Srem (~19°E), south to Skopje, Prosek and Strumica (~41.3°N), the Danube plain, and Thrace north of Plovdiv."
+    ],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "Mexicans", "year": 1814, "verdict": "not-comparable",
+    "which_is_right": null,
+    "differences": [],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": "Reference is a modern map of the world-wide Mexican diaspora, not a territorial map of the 1814 insurgent state."
+  },
+  {
+    "realm": "Qatar Protectorate", "year": 1949, "verdict": "major",
+    "which_is_right": "reference",
+    "differences": [
+      "Our 'Qatar Protectorate' polygon is the Sultanate of Muscat and Oman: Oman proper, Musandam, Masirah and Dhofar (52–60°E, 16.7–26.4°N). It is the same 307,787 km² shape as the 1936–1946 Muscat and Oman polygon. The Qatar peninsula itself (~51°E, 25°N) is grey.",
+      "The reference (an 1849 chart) correctly places Qatar on the peninsula east of Bahrain. Its date differs, but the mismatch is one of location, not date."
+    ],
+    "suggested": { "type": "relabel", "detail": "Sultanate of Muscat and Oman", "from": 1947, "to": 1955 },
+    "source": { "title": "History of Qatar (Wikipedia): British protectorate 1916–1971 on the Qatar peninsula", "url": "https://en.wikipedia.org/wiki/History_of_Qatar" },
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "Kingdom of Numidia", "year": -101, "verdict": "not-comparable",
+    "which_is_right": null,
+    "differences": [],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": "Reference is a 1650 map of the Regency of Algiers and the Kingdom of Fez, about 1,750 years after the date of our map."
+  },
+  {
+    "realm": "Late Pallava Empire", "year": 329, "verdict": "major",
+    "which_is_right": "reference",
+    "differences": [
+      "Our map takes the Pallavas south to Cape Comorin (8–10.5°N, 76.5–79.5°E), covering the Pandya country around Madurai and Tirunelveli. The reference stops near the Kaveri (~10.5°N). In the 4th century the far south was under the Kalabhras.",
+      "The reference reaches north-west to Vanavasi and Vatapi (~75°E, 14.5–16°N) and north-east to Vengi (~81°E, 16.6°N). Ours stops around 16°N and ~74°E, so the northern limits are similar.",
+      "The 306–352 polygon (305,000 km²) is six times the size of the entries on either side (51,000 and 24,000 km²). The 'Late Pallava' line also began only with Simhavishnu, c. 575, so the label is wrong for 329."
+    ],
+    "suggested": { "type": "note", "detail": "In the 4th century the Pallavas ruled from Kanchipuram over the northern Tamil country and southern Andhra; the far south around Madurai was under the Kalabhras. The 'Later Pallava' kingdom began with Simhavishnu around 575.", "from": 306, "to": 352 },
+    "source": { "title": "Kalabhra dynasty (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Kalabhra_dynasty" },
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "Kingdom of Romania", "year": 1919, "verdict": "match",
+    "which_is_right": null,
+    "differences": [
+      "Our map matches the reference's Greater Romania (1920–1940) outline: Transylvania, Banat, Crișana, Bukovina, Bessarabia and Southern Dobruja."
+    ],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "Kingdom of Khotan", "year": 891, "verdict": "major",
+    "which_is_right": "reference",
+    "differences": [
+      "Our map spans the whole western Tarim Basin and Tian Shan foothills: north to ~42.5°N at 80–82°E (Aksu) and west to ~71.5°E (Kashgar, the Alai and Fergana fringe). The reference shows Khotan as a band along the southern rim (~74–84°E, 36–38°N).",
+      "Kashgar and the northern oases belonged to the Kara-Khanids and Qocho Uyghurs. Khotan held Kashgar only briefly after 970. Roughly 40% of our polygon falls outside Khotan's real domain."
+    ],
+    "suggested": { "type": "note", "detail": "Khotan ruled the oases of the southern rim of the Tarim Basin. Kashgar and the northern oases such as Aksu belonged to the Kara-Khanids and the Uyghurs; Khotan held Kashgar only briefly after 970.", "from": 888, "to": 1009 },
+    "source": { "title": "Kingdom of Khotan (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Kingdom_of_Khotan" },
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "Nguyễn dynasty", "year": 1838, "verdict": "major",
+    "which_is_right": "reference",
+    "differences": [
+      "The 1838 reference includes Cambodia (Trấn Tây Thành, ~103–106.5°E, 10.5–14°N) inside Đại Nam. Our map follows the modern Vietnam border and leaves Cambodia out, though it was annexed from 1834 to 1841.",
+      "In the far north-west the reference's Hưng Hóa province reaches slightly past the modern border (minor)."
+    ],
+    "suggested": { "type": "note", "detail": "From 1834 to 1841 Emperor Minh Mạng annexed most of Cambodia as the province of Trấn Tây (not shown here), until Siamese-backed revolts forced a withdrawal.", "from": 1834, "to": 1841 },
+    "source": { "title": "Trấn Tây Thành (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Tr%E1%BA%A5n_T%C3%A2y_Th%C3%A0nh" },
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "Republic of the Rio Grande", "year": 1840, "verdict": "minor",
+    "which_is_right": null,
+    "differences": [
+      "Our map covers Coahuila, Nuevo León and Tamaulipas south of the Rio Grande. The reference (a Texas–Mexico dispute map) shows Coahuila and Tamaulipas extending north to the Nueces/Medina rivers (97.5–100°W, 27–29.5°N), which the republic also claimed but our map omits.",
+      "The reference is a border-dispute map rather than a map of the republic itself."
+    ],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "Republic of Italy", "year": 1974, "verdict": "not-comparable",
+    "which_is_right": null,
+    "differences": [],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": "Reference is a map of the Italian states in 1494, a different date and set of polities."
+  },
+  {
+    "realm": "Principality of Hungary", "year": 999, "verdict": "match",
+    "which_is_right": null,
+    "differences": [
+      "The core Carpathian Basin outline (16–23.5°E, 44.6–49.5°N) matches the reference's dark green. Both leave out Transylvania, which the reference shades lighter as Gyula's realm, not yet annexed."
+    ],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "Napoleonic Batavia Republic", "year": 1803, "verdict": "match",
+    "which_is_right": null,
+    "differences": [
+      "The Cape Colony outline (Buffels River ~30°S in the west to the Great Fish River ~27°E, north to ~31°S at Graaff-Reinet) matches the 1795 reference. The boundaries were unchanged when the Batavian administration returned in 1803."
+    ],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "Confederation of the Rhine", "year": 1812, "verdict": "major",
+    "which_is_right": "reference",
+    "differences": [
+      "Our polygon is the rump Kingdom of Prussia, not the Confederation. It runs from ~11°E to East Prussia (22.8°E, 55.9°N) and south to Silesia (~49.5°N), covering Brandenburg, Pomerania, West and East Prussia and Silesia. Prussia never joined the Confederation.",
+      "The real Confederation, which the reference shows, covered western, central and southern Germany: Bavaria, Württemberg, Baden, Saxony, Westphalia, Berg, Hesse, Mecklenburg and others (6–15°E, 47.5–54.5°N). Our map shows none of it.",
+      "In the source data Kingdom of Prussia has almost no area in 1807–1813 (1,787 km²), and this polygon (170,588 km²) fills the gap. The 1814 entry (258,129 km², to 6.2°E) is also Prussia after its recovery."
+    ],
+    "suggested": { "type": "relabel", "detail": "Kingdom of Prussia", "from": 1809, "to": 1814 },
+    "source": { "title": "Confederation of the Rhine (Wikipedia): excluded Austria, Prussia, Danish Holstein and Swedish Pomerania; area 325,700 km²", "url": "https://en.wikipedia.org/wiki/Confederation_of_the_Rhine" },
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "New France", "year": 1759, "verdict": "not-comparable",
+    "which_is_right": null,
+    "differences": [],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": "Reference is an organisation chart of New France's government, not a map."
+  },
+  {
+    "realm": "Federal Republic of Germany", "year": 1973, "verdict": "match",
+    "which_is_right": null,
+    "differences": [],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "Heian Japan", "year": 1183, "verdict": "major",
+    "which_is_right": "reference",
+    "differences": [
+      "Our map leaves out the whole island of Shikoku (132–134.8°E, 32.7–34.5°N, drawn as unclaimed land). In 1183 it was Taira-held imperial territory (Sanuki, Awa, Iyo, Tosa provinces) and the scene of the Battle of Yashima. The reference includes it.",
+      "Our polygon stops at ~38.8°N and leaves out northern Honshu (Mutsu and Dewa, to 41.5°N). The reference shows that area as the Northern Fujiwara domain, nominally imperial provinces under autonomous rule.",
+      "The Cliopatria Heian polygons are one shape (129.6–141.6°E, 31–38.8°N) from 793 to 1187."
+    ],
+    "suggested": { "type": "note", "detail": "Shikoku was part of the Heian state but is missing from this outline; in 1183–85 it was a Taira stronghold, site of the Battle of Yashima. Northern Honshu (Mutsu and Dewa) was ruled autonomously by the Northern Fujiwara in the 12th century.", "from": 793, "to": 1187 },
+    "source": { "title": "Battle of Yashima (Wikipedia): Taira fortress at Yashima, Sanuki Province, Shikoku", "url": "https://en.wikipedia.org/wiki/Battle_of_Yashima" },
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "Kingdom of Sardinia", "year": 1814, "verdict": "not-comparable",
+    "which_is_right": null,
+    "differences": [],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": "Reference is the kingdom's war ensign (a flag), not a map."
+  },
+  {
+    "realm": "English Colonial Empire", "year": 1700, "verdict": "minor",
+    "which_is_right": null,
+    "differences": [
+      "The reference also shows Hudson's Bay Company coast posts (~80–95°W, 51–58°N), East India Company factories (Bombay, Madras and Bengal coasts), Bencoolen on Sumatra, and Gold Coast forts. Our map shows only the Americas and has a single dot near Hudson Bay.",
+      "Our Carolina coast is reduced to a dot near Charleston (~32.5°N), where the reference has a continuous coast from Maine to Carolina."
+    ],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "Babylonia", "year": -1351, "verdict": "not-comparable",
+    "which_is_right": null,
+    "differences": [],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": "Reference shows the Neo-Babylonian Empire under Nabonidus (6th century BCE), about 800 years after the Kassite Babylonia of our 1351 BCE map."
+  },
+  {
+    "realm": "Crimean Khanate", "year": 1523, "verdict": "major",
+    "which_is_right": "ours",
+    "differences": [
+      "The reference ('limit of expansion on the lands of the Ulus of Jochi, 1523') takes the khanate east across the Volga steppe to Astrakhan, Saray and Samara and north toward the Bulgar lands (~44–50°E, 46–54°N), several times our area. Our map shows Crimea, the steppe north of the Black Sea to ~48.8°N (31–36.5°E), and the Kuban/Azov steppe to ~43.5°E.",
+      "The reference's eastern extent rests on Mehmed I Giray's capture of Astrakhan in spring 1523, which lasted only months: the Nogais killed him that autumn and the conquest collapsed. Our narrower map reflects the lasting extent of control."
+    ],
+    "suggested": { "type": "note", "detail": "In 1523 Khan Mehmed I Giray seized Astrakhan and claimed the steppe to the Volga as heir of the Golden Horde, but the Nogais killed him within months and the claim was never held.", "from": 1523, "to": 1523 },
+    "source": { "title": "Mehmed I Giray (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Mehmed_I_Giray" },
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "French Algeria", "year": 1847, "verdict": "not-comparable",
+    "which_is_right": null,
+    "differences": [],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": "Reference is a naval ensign (a flag), not a map."
+  },
+  {
+    "realm": "Aztec Triple Alliance", "year": 1519, "verdict": "minor",
+    "which_is_right": null,
+    "differences": [
+      "Our map draws one solid block (95–103°W, 16.3–21.5°N) plus Xoconochco. The reference shows independent enclaves and border states inside or along it: Tlaxcala (~98.2°W, 19.3°N), Metztitlan (~98.8°W, 20.6°N), Teotitlan, Yopitzinco on the Guerrero coast, and Tututepec on the Oaxaca coast (~97.5°W, 16°N). Our block absorbs them.",
+      "Outer limits (Pacific coast at Cihuatlan, Gulf coast to ~94.5°W, Purépecha frontier near 101°W) broadly agree."
+    ],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "French Mandate for Syria and Lebanon", "year": 1920, "verdict": "not-comparable",
+    "which_is_right": null,
+    "differences": [],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": "Reference is a map of religious groups in Lebanon with Ottoman-era Mount Lebanon borders, not the Mandate's territory."
+  },
+  {
+    "realm": "Greek City-States", "year": -155, "verdict": "not-comparable",
+    "which_is_right": null,
+    "differences": [],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": "Reference is a street plan of Athens c. 200 CE, not a territorial map."
+  },
+  {
+    "realm": "Ghana Empire", "year": 1200, "verdict": "major",
+    "which_is_right": "reference",
+    "differences": [
+      "Our map draws one large round state (204,000 km², ~8.7°W to 2.5°W, 12.5–17.5°N) that also covers the inland Niger delta (Djenne, ~4.5°W). The reference shows the region c. 1200 split among successor states: Sosso (holding Ghana's core around Koumbi Saleh, ~8–5.5°W), Diafunu, Wagadugu, Mali, Songhay and Mande peoples.",
+      "Our polygon has the same shape and area for 793–1201 and never shows the decline. By about 1200 Ghana's vassals had outgrown the core, and the Sosso conquered it by 1203."
+    ],
+    "suggested": { "type": "note", "detail": "By around 1200 Ghana's former vassals (Sosso, Diara, Mali and others) had grown stronger than the old core, and the Sosso conquered the capital by 1203, so this outline overstates the late kingdom.", "from": 1085, "to": 1201 },
+    "source": { "title": "Ghana Empire (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Ghana_Empire" },
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "Norman England", "year": 1072, "verdict": "not-comparable",
+    "which_is_right": null,
+    "differences": [],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": "Reference is a map of battle and event locations during the 1066 conquest, not a territorial map."
+  },
+  {
+    "realm": "Lê Dynasty", "year": 1497, "verdict": "minor",
+    "which_is_right": null,
+    "differences": [
+      "The reference includes Bồn Man (Muang Phuan/Xiangkhouang, ~103–104.5°E, 19–20.5°N) and a strip of north-eastern Laos as Đại Việt or briefly held war gains. Our map follows the modern Vietnam border there.",
+      "Both maps end the southern limit near 13–13.5°N (the 1471 conquest of Vijaya). The rump Champa south of it, purple in the reference, is excluded in both."
+    ],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "Shang Dynasty", "year": -1421, "verdict": "minor",
+    "which_is_right": null,
+    "differences": [
+      "The reference (after the Bamboo Annals) runs south to the Huai River (~33°N) and east to the coast of northern Jiangsu (~119°E, 34°N). Our map stops at ~34.5°N, with a bulge to ~33.8°N at 115–116°E, and at ~118.5°E.",
+      "Our western spur to ~110°E at 35°N roughly matches the reference's western limit near 111°E. Both are schematic and the frontier is fuzzy."
+    ],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "Netherlands Antilles", "year": 1848, "verdict": "major",
+    "which_is_right": "reference",
+    "differences": [
+      "Our 'Netherlands Antilles' polygon is Suriname (Dutch Guiana, 54–58°W, 2–6°N, ~149,000 km²). The Antilles are small Caribbean islands (Curaçao, Aruba, Bonaire, Sint Maarten, Sint Eustatius, Saba, ~12–18°N, 63–70°W), which the reference lists and which our map does not show.",
+      "The Netherlands Antilles existed only from 1954 to 2010. In 1848 the islands were the colony of Curaçao and Dependencies, and Suriname was a separate colony that never belonged to the Antilles.",
+      "In the source data this Suriname-shaped polygon runs from 1820 to 2023, overlapping 'Republic of Suriname' (1976–2023)."
+    ],
+    "suggested": { "type": "relabel", "detail": "Surinam (Dutch colony); hide from 1976, when the Republic of Suriname polygon takes over", "from": 1820, "to": 1975 },
+    "source": { "title": "Netherlands Antilles (Wikipedia): existed 1954–2010; Suriname was a separate colony", "url": "https://en.wikipedia.org/wiki/Netherlands_Antilles" },
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "Principality of Kiev", "year": 1128, "verdict": "not-comparable",
+    "which_is_right": null,
+    "differences": [],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": "Reference is a drawing of a 1388–1392 Kievan coin, not a map."
+  },
+  {
+    "realm": "Duchy of Warsaw", "year": 1809, "verdict": "match",
+    "which_is_right": null,
+    "differences": [
+      "Our map matches the reference's 1807–1809 Duchy (Poznań to Warsaw, north-east to Mariampol on the Neman, south to Częstochowa). Neither shows the West Galician lands (Kraków, Radom, Lublin) gained at Schönbrunn in October 1809."
+    ],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "Free Orange State", "year": 1890, "verdict": "match",
+    "which_is_right": null,
+    "differences": [],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "Kingdom of Kongo", "year": 1648, "verdict": "match",
+    "which_is_right": null,
+    "differences": [
+      "The two broadly agree (12.2–17.3°E, 4–8.5°S, from Soyo and Nsundi to Mbamba and Ndembu). Our western edge leaves a thin coastal strip at 7–8.5°S unclaimed, where the reference runs Mbamba to the sea."
+    ],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": null
+  },
+  {
+    "realm": "Brandenburg-Prussia", "year": 1619, "verdict": "match",
+    "which_is_right": null,
+    "differences": [],
+    "suggested": { "type": "none", "detail": "", "from": null, "to": null },
+    "source": null,
+    "not_comparable_reason": null
+  }
+]

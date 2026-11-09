@@ -1,0 +1,128 @@
+# Reference-map check: summary
+
+Verdicts: major 118, match 116, minor 94, not-comparable 125  (total 453)
+
+## Applied (112)
+- (British Empire) (1921): note — Australia was a self-governing Dominion of the British Empire from 1901; it is drawn here as a separate country, but in 1921 it belonged to the Empire just as C
+- (French Fourth Republic) (1945): note — In 1945 Japan had ended French rule in Indochina (March) and France was only beginning to retake it (from September); from 1946 Indochina, like the Moroccan and
+- United States of America (1945): note — Greenland and Iceland were never US territory: US forces were stationed there under 1941 defence agreements while Denmark was occupied, and the shaded part of G
+- (Vichy France) (1943): note — Vichy governed from the unoccupied south of France and ostensibly administered all of France except Alsace-Lorraine; after November 1942 Germany occupied the wh
+- British Africa (1914): note — Nigeria and the Gold Coast were British colonies in 1914 (Nigeria was amalgamated into a single colony and protectorate on 1 January 1914) but are drawn here as
+- Republic of China (1945): note — Until Japan surrendered in August-September 1945 much of eastern China and Manchuria was under Japanese occupation; afterwards the Republic took back those regi
+- Roman Empire (125): note — Hadrian gave up Trajan's conquests east of the Euphrates (Armenia, Mesopotamia, Assyria) in 117; Rome did not hold a province of Mesopotamia again until Septimi
+- Golden Horde (1389): note — Tokhtamysh raided Azerbaijan and sacked Tabriz in 1385 but did not hold it; south of Derbent, Shirvan was ruled by its own Shirvanshahs, vassals of Timur from 1
+- Xin Dynasty (23): note — In 23 CE the Xin was collapsing: Han-restorationist rebels from Hubei beat Wang Mang's army at Kunyang and took Chang'an in October, so the gaps show land alrea
+- Western Jin (382): relabel 317–420 → Eastern Jin (317-420), the southern successor state ruled from Jiankang after the Western Jin fell in 316 — Eastern Jin (317-420), the southern successor state ruled from Jiankang after the Western Jin fell in 316.
+- Gran Colombia (1824): note — The southern block is Upper Peru, still held by royalists under Olañeta in 1824, which became the Republic of Bolivia in August 1825; it was never part of Gran 
+- Türgesh (699): relabel 692–704 → polygon over Mongolia shows the Eastern Türks under Qapaghan Qaghan; the Türgesh khaganate (from 699) lay farther west in Zhetysu, ruling from Suyab and Taraz — Second Turkic Khaganate: in 692–704 this polygon over Mongolia shows the Eastern Türks under Qapaghan Qaghan; the Türgesh khaganate (from 699) lay farther west 
+- Uyghur Khaganate (770): note — After 766 the Karluks held Zhetysu (the Chu–Talas valleys around Suyab), so the western tip of this shape was outside Uyghur rule.
+- Dzungar Khanate (1717): note — In November 1717 a Dzungar army seized Lhasa and occupied central Tibet until a Qing expedition expelled it in 1720; that occupation is not drawn here.
+- First Mexican Empire (1822): note — Mexico's claimed border ran to 42°N and took in all of Alta California and New Mexico (today's California, Nevada, Utah and Arizona), though most of that interi
+- Samanid Empire (961): note — At this date Rayy and the Jibal belonged to the Buyids and Kerman to the effectively independent Ilyasids; Samanid rule in the south and west was nominal at bes
+- Argentine Confederation (1834): note — Much of the Gran Chaco in the north remained under the control of Indigenous peoples such as the Qom and Wichí until military campaigns from the 1880s, so the C
+- British East Africa (1964): relabel 1961–1972 → shape groups Britain's remaining African dependencies during decolonisation (1961–1968), not the East Africa Protectorate, which was the forerunner of Kenya from 1895 to 1920 — British colonies in Africa: this shape groups Britain's remaining African dependencies during decolonisation (1961–1968), not the East Africa Protectorate, whic
+- (Delhi Sultanate) (1320): note — By 1318 the Sultanate governed Devagiri in the northern Deccan, and the Kakatiyas of Warangal and kingdoms farther south paid it tribute; this map shows only th
+- Free French (1940): note — In 1940 Chad was the first colony to join Free France (26 August), though the map leaves it out; Gabon joined only after fighting in November, and the Pacific c
+- Emirate of Diriyah (1810): note — At its height the first Saudi state held Najd, the Hejaz, al-Hasa and the Gulf coast, with Asir and Tihama as vassals; the Zaydi imams kept Sanaa and the Yemeni
+- Kushan Empire (140): note — Kushan power in the Tarim Basin rested on influence in Kashgar, Yarkand and Khotan (coins, a client king in Kashgar); Kucha and Turfan in the northeast belonged
+- Median Kingdom (-576): note — Later Greek tradition gives the Medes a realm from northeastern Iran to the Halys River in Anatolia, including Armenia and former Assyrian lands; the map's east
+- Estado Novo (1995): clip 1926–1975 — Portugal's Estado Novo ended with the Carnation Revolution of April 1974; Cabinda has been part of Angola since independence in 1975.
+- Centralist Mexico (1843): relabel 1842–1845 → a department of the Centralist Republic, not a separate state — Centralist Mexico — the 1842–1845 'Federated Republic of Mexico' polygon (Nuevo México) was a department of the Centralist Republic, not a separate state.
+- Ghurid Dynasty (1209): note — After Muhammad of Ghor died in 1206 the empire broke apart: Khwarazm took Herat and Ghor, Yildiz held Ghazni, and Qutb al-Din Aibak ruled the Indian conquests f
+- Qin Dynasty (-209): relabel -221–-207 → in Fujian — Qin Dynasty — the 'Minyue' polygon of 221–207 BCE (Jiangxi and inland Fujian) lay inside Qin commanderies; Minyue proper was in Fujian.
+- (Eighteen Kingdoms) (-204): note — Jiangxi belonged to the kingdom of Hengshan and northern Hunan to Linjiang; the area shown as Minyue here was not part of Minyue, which lay in Fujian.
+- Liao Dynasty (1117): note — From 1115 the Jurchen Jin broke away in the northeast, taking Huanglong (1115) and everything east of the Liao River (1116) and the Supreme Capital in 1120, so 
+- Hotaki Dynasty (1728): note — Ashraf Hotaki ruled central and southern Persia from Isfahan, while Khorasan was held by Tahmasp II and Nader and Herat by the Abdali Afghans; Hussain Hotaki ru
+- Mamluk Sultanate (1517): clip 1250–1516 — The Ottomans conquered Mamluk Syria in 1516 and Egypt in January 1517, ending the sultanate; the Mamluk expedition to Yemen held only parts of the coast.
+- Khalji Dynasty (1319): note — Bengal was not under Khalji rule: Shamsuddin Firuz Shah ruled it as an independent sultan from 1301 to 1322. Devagiri in the Deccan was taken in 1307 and annexe
+- Aq Qoyunlu (1450): note — Until Uzun Hasan's victory over the Qara Qoyunlu in 1467, the Aq Qoyunlu held only Diyarbakır and nearby Upper Mesopotamia; Iraq and Khuzestan belonged to other
+- Nanda Empire (-325): note — The Nandas ruled the Ganges plain from Magadha. The lands west of the Beas, including Punjab and Sindh, were separate kingdoms when Alexander arrived in 326–325
+- Assyrian Egypt (-623): relabel -650–-616 → Neo-Assyrian Empire (without Egypt); Egypt in 650–616 BCE belongs to the Twenty-sixth (Saite) Dynasty under Psamtik I — Neo-Assyrian Empire (without Egypt); Egypt in 650–616 BCE belongs to the Twenty-sixth (Saite) Dynasty under Psamtik I
+- Neo-Assyrian Empire (-646): note — Assyria conquered Egypt in 671 BCE but lost it within about 15 years. By 656 BCE Psamtik I, first installed as an Assyrian client, ruled a reunited Egypt on his
+- Moghulistan (1517): note — By 1517 Moghulistan had split. Sultan Said Khan founded the Yarkent Khanate at Kashgar in 1514 and Mansur Khan ruled from Turpan, while the Kyrgyz had driven th
+- Greco-Bactrian Kingdom (-180): note — Demetrius I may have taken Arachosia from the Mauryas around 190–180 BCE ('Demetrias in Arachosia' is attributed to him), but this is uncertain. Some maps inclu
+- Pala Empire (827): note — Kings of Avanti, Madra and Gandhara are listed attending Dharmapala's court. They only recognised his overlordship and kept their own lands, so the Palas never 
+- Mamluk Dynasty (1272): note — In 1272, under Balban, Malwa was still ruled by the Paramara kings. Delhi first conquered it under Alauddin Khalji in 1305.
+- Kara-Khanids (1006): note — The khanate's eastern core was Kashgar, one of its capitals. In 1006 Yusuf Qadir Khan of Kashgar conquered the Buddhist kingdom of Khotan, so the Tarim basin's 
+- (First French Empire) (1812): note — In 1812 the Empire formally annexed only Catalonia, as four departments created on 26 January 1812. The rest of northern Spain was held by French armies but sti
+- British Gold Coast (1896): note — Lagos was governed from the Gold Coast from 1874 to 1886 and then became a separate colony, so the shapes in southern Nigeria are not part of the 1896 Gold Coas
+- Shunga Empire (-85): note — Kalinga regained its independence after the Mauryas fell and was ruled by its own Mahameghavahana kings, such as Kharavela, not by the Shungas. By the early 1st
+- Mali Empire (1438): note — By the 1430s Mali was in decline: it had lost Gao, and Timbuktu fell to the Tuareg in 1433, so the eastern Niger bend shown here was no longer Malian.
+- Swedish Empire (1633): note — The German area shows where Swedish armies held sway in the Thirty Years' War (1631–34); after Nördlingen it was lost, and in 1648 Sweden kept only Pomerania, W
+- Kingdom of Great Britain (1962): relabel 1801–2024 → United Kingdom (from 1801; the Kingdom of Great Britain existed 1707–1800) — United Kingdom (from 1801; the Kingdom of Great Britain existed 1707–1800)
+- First Spanish Republic (1876): relabel 1875–1876 → Kingdom of Spain (Bourbon Restoration from 29 December 1874) — Kingdom of Spain (Bourbon Restoration from 29 December 1874)
+- British Cape Colony (1850): note — This shape lumps other British possessions with the Cape: Natal and British Kaffraria were separate colonies, and the West African dots are Sierra Leone and the
+- Gurjara-Pratihara Dynasty (800): note — At its height under Mihira Bhoja and Mahendrapala I (c. 836–910) the empire ruled from Kannauj and reached Bihar and the Bengal frontier, wider than shown here.
+- Yuezhi (-210): note — Chinese sources place the Yuezhi between Dunhuang and the Qilian Mountains in Gansu; they reached the Ili valley only after the Xiongnu defeated them c. 176 BCE
+- Khanate of Khiva (1860): note — Outside the Khorezm oasis, the Turkmen and Kazakh nomads only loosely acknowledged Khiva, and from 1855 to 1867 the Turkmen were in open revolt.
+- Khazaria (765): note — The area south of the Caucasus marks the Khazar raid of the 760s into Albania, Iberia and Armenia; the lasting frontier with the Caliphate was at Derbent.
+- (Mahajanapadas) (-500): note — Each patch marks only the core around a capital. The sixteen great states (mahajanapadas) were kingdoms and republics that covered much of the Ganges plain, Mal
+- French Indochina (1907): note — Indochina was Vietnam, Laos, Cambodia and the leased port of Guangzhouwan; the far-off islands and Indian ports also shaded here (New Caledonia, Réunion, French
+- Khanate of Bukhara (1527): note — Khorasan and Herat, south of the Amu Darya, were fought over with Safavid Persia; the Uzbeks besieged Herat in 1527-28 but were beaten at Jam in 1528, so they d
+- Indus Valley Civilization (-2600): note — Only a few major city sites are marked; the Harappan world spread across most of today's Pakistan and northwest India, from Baluchistan to Haryana and south to 
+- Indo-Sasanian Empire (271): note — The Kushano-Sasanian lands are known mostly from coins and Persian inscriptions; besides Bactria and Gandhara they probably took in Sogdiana and the mint cities
+- Marinid Sultanate (1360): note — Abu Inan took Tlemcen (1352), Bejaia (1353) and briefly Tunis (1357), but he had to pull out of Ifriqiya in 1357 and died in 1358; by 1359 the Zayyanids and Haf
+- Kingdom of Germany (961): note — Otto I also took the separate crown of Italy (claimed 951, conquered 961, emperor 962); northern Italy, shaded here with Germany, stayed a distinct kingdom with
+- Gallic Empire (261): note — Spain also recognised Postumus as emperor from 260 until about 269, so the Gallic Empire briefly reached well beyond what is shaded here.
+- Zhou Dynasty (-1000): note — Early Zhou kings ruled the Wei and Yellow River valleys and planted fiefs such as Qi, Lu and Yan, but the eastern Shandong peninsula (Lai) and the Huai River la
+- Vakataka Kingdom (517): clip 260–510 — The Vakataka dynasty faded out after Harishena (died c. 500-510), so the kingdom is not shown after that.
+- Songhai Empire (1579): note — At its height Songhai also held the Dendi lands down the Niger below Gao and the Saharan salt mines of Taghaza, and took tribute from Agadez and some Hausa citi
+- Denmark-Norway (1780): note — Greenland was also a Dano-Norwegian colony from 1721, held through trading and mission stations along its west coast; it is not shaded here.
+- Nanyue (-149): note — Fujian and southern Zhejiang belonged to the separate Yue kingdoms of Minyue and Dong'ou; Zhao Tuo won their submission for a time, but Nanyue never governed th
+- Chu (-281): note — In the early 3rd century BCE Chu also held most of Hunan, south to the Nanling hills; Qin took its heartland at Ying in 278 BCE, and this map leaves the souther
+- Kingdom of Pontus (50): note — By the 1st century CE the Roman client kingdom of Pontus was only the eastern half of the old kingdom; the west (Paphlagonia, Amaseia, Amisus) was part of Roman
+- (Kingdom of England) (1700): note — In 1700 England, Scotland and Ireland shared one monarch but were separate kingdoms; England and Scotland merged into Great Britain only in 1707.
+- Anti-Kuomintang Coalition (1930): note — In mid-1930 the coalition of Yan Xishan, Feng Yuxiang and the Guangxi clique held most of North China (Shanxi, Hebei with Peiping, Henan, Shaanxi and Gansu) plu
+- Talpur Dynasty (1823): note — The Talpur Mirs ruled Sindh (with Khairpur and Mirpur branches) and some border districts; Balochistan, Kalat and Makran were under their own khans.
+- Maukhari Dynasty (578): note — The Maukharis of Kannauj ruled the Ganges plain from about Thanesar to Magadha; Bengal (Gauda) was a rival kingdom that later took Maukhari land.
+- Indo-Parthians (28): note — At its height under Gondophares, the Indo-Parthian kingdom also held its homeland of Sistan (Drangiana) and Arachosia in what is now south-western Afghanistan, 
+- Yadava Dynasty (1286): note — The Seuna Yadavas ruled the western Deccan from Devagiri; their raids into Tripuri and Bhandara in the east were short-lived, and the Raichur doab changed hands
+- Weimar Republic (1935): clip 1919–1933 — The Weimar Republic ended in 1933 when the Nazis took power; from then on Germany is the Third Reich.
+- Khanate of Kokand (1709): note — When Shahrukh Biy founded the Kokand Khanate in 1709 it held only part of the Fergana Valley; Tashkent was conquered about a century later, and Samarkand stayed
+- Bahmani Sultanate (1390): note — In 1390 the Bahmani Sultanate held the western and central Deccan; Warangal and eastern Telangana were conquered in the 1420s, and the Konkan coast later still.
+- Rustamid dynasty (778): note — The Rustamid imams at Tahert ruled central and western Algeria; Ibadi communities in Jebel Nafusa, Fezzan and oases such as Ouargla recognised them, but the Sah
+- Minyue (-192): note — Minyue lay in what is now Fujian, east of the Wuyi Mountains; Jiangxi to the west was Han's Yuzhang commandery.
+- North German Confederation (1870): note — In late 1870 German armies occupied much of northern France during the Franco-Prussian War; this was a wartime occupation, not part of the North German Confeder
+- German Confederation (1815): relabel 1815–1867 → Kingdom of Prussia — Kingdom of Prussia
+- Sarbadars (1345): note — In 1345 the Sarbadars held only the area around their capital Sabzevar in western Khorasan (roughly Semnan to Nishapur); the Caspian coast, Gorgan and the Rey d
+- Ostrogoths (494): note — After Odoacer's defeat in 493 the Ostrogothic kingdom held the whole Italian peninsula and Sicily, which are missing from this outline; Provence and Sirmium wer
+- Panthay Rebellion (1863): note — The Panthay (Dali) sultanate was based in western Yunnan and fought across Yunnan province; it never held Sichuan, which this outline wrongly includes.
+- Zimbabwe Rhodesia (1980): relabel 1981–1982 → Republic of Zimbabwe — Republic of Zimbabwe
+- Emirate of Bukhara (1803): note — Around 1800 the emirate was centred on Bukhara and Samarkand between the Amu Darya and the Zarafshan; the eastern hill states (Hisor, Kulob, Karategin, Darvaz) 
+- Malaysia (1964): note — From September 1963 to August 1965 Singapore was a state of Malaysia; the island is not shaded here for those years.
+- Kingdom of Prussia (1818): note — From 1815 to 1867 most of Prussia's territory is drawn under the German Confederation label; the small area shown here is Neuchâtel, a Swiss principality ruled 
+- New Netherland (1638): relabel 1622–1802 → Dutch colonies in the Americas — Dutch colonies in the Americas
+- Himyarite Kingdom (-52): note — In the 1st century BCE Himyar was a young highland kingdom around Zafar in south-west Yemen. It did not rule the Red Sea coast north into the Hejaz, and it took
+- Sultanate of Muscat and Oman (1928): note — The Qatar peninsula drawn here was never part of Muscat and Oman: from 1916 it was a separate British protectorate under the Al Thani. From 1920 the interior ar
+- Southern Han (923): note — Northern Vietnam (Jinghai, or Annam) was ruled by local Vietnamese governors, not Southern Han. Southern Han held it only briefly around 930–931, and its 938 in
+- South African Republic (1890): note — The detached block east of Swaziland is Tongaland (Maputaland), a Tsonga kingdom the Transvaal never ruled; Britain annexed it in 1895.
+- Qatar Protectorate (1949): relabel 1947–1955 → Sultanate of Muscat and Oman — Sultanate of Muscat and Oman
+- Late Pallava Empire (329): note — In the 4th century the Pallavas ruled from Kanchipuram over the northern Tamil country and southern Andhra; the far south around Madurai was under the Kalabhras
+- Kingdom of Khotan (891): note — Khotan ruled the oases of the southern rim of the Tarim Basin. Kashgar and the northern oases such as Aksu belonged to the Kara-Khanids and the Uyghurs; Khotan 
+- Nguyễn dynasty (1838): note — From 1834 to 1841 Emperor Minh Mạng annexed most of Cambodia as the province of Trấn Tây (not shown here), until Siamese-backed revolts forced a withdrawal.
+- Confederation of the Rhine (1812): relabel 1809–1814 → Kingdom of Prussia — Kingdom of Prussia
+- Heian Japan (1183): note — Shikoku was part of the Heian state but is missing from this outline; in 1183–85 it was a Taira stronghold, site of the Battle of Yashima. Northern Honshu (Muts
+- Ghana Empire (1200): note — By around 1200 Ghana's former vassals (Sosso, Diara, Mali and others) had grown stronger than the old core, and the Sosso conquered the capital by 1203, so this
+- Netherlands Antilles (1848): relabel 1820–1975 → Surinam (Dutch colony); hide from 1976, when the Republic of Suriname polygon takes over — Surinam (Dutch colony); hide from 1976, when the Republic of Suriname polygon takes over
+- Republic of Liberia (1848): note — In 1848 the new republic governed only a coastal strip of settler towns; the interior shown here was claimed later, and Maryland (Cape Palmas) joined only in 18
+- Sayyid Dynasty (1432): note — The Sayyids also claimed Punjab (Lahore, Dipalpur, Multan) until Multan broke away under the Langahs in the late 1430s, though Khokhar chiefs contested it; the 
+- Empire of Haiti (1809): relabel 1807–1820 → Divided Haiti: northern State and southern Republic — Divided Haiti: northern State and southern Republic
+- Portuguese Ceylon (1560): relabel 1507–1686 → Independent Sinhalese kingdoms — Independent Sinhalese kingdoms
+- Dutch Ceylon (1727): relabel 1687–1795 → Kingdom of Kandy — Kingdom of Kandy
+- British Ceylon (1796): relabel 1796–1814 → Kingdom of Kandy — Kingdom of Kandy
+- British Overseas Territories (2011): note — There are 14 British Overseas Territories; this map draws only the Falklands, South Georgia and the South Sandwich Islands, Bermuda and Gibraltar, leaving out t
+- French India (1815): relabel 1815–1819 → Comoro sultanates — Comoro sultanates
+- Russian-occupied territories (2007): note — Russian forces have held Transnistria since 1992; Abkhazia and South Ossetia are counted as occupied from 2008, Crimea from 2014, and parts of eastern and south
+- Sultanate of Zanzibar (1964): clip 1963–1963 — The Sultanate (Unguja and Pemba only; Mafia Island had passed to Germany in 1890) was overthrown on 12 January 1964 and Zanzibar joined Tanganyika that April.
+- Danish India (1778): note — Tranquebar on the Coromandel coast, Danish from 1620 to 1845 and the capital of Danish India, is missing from the map before 1800.
+
+## Reference was wrong; map kept (6)
+- Tang Dynasty (661): Our map includes the whole Mongolian plateau (~90-120°E, 42-50°N) in solid red; the reference (after the Cambridge History) leaves Mongolia out entirely; Our map draws the Tarim Basin and the Western 
+- Italian Africa (1941): For 1941 our map shows only Libya (~9–25°E, 19–33°N), plus at most a tiny Gondar pocket.; The reference also shows Italian East Africa (Eritrea, Ethiopia, Italian Somaliland, ~35–51°E, 2°S–18°N), Ital
+- Western Wei (557): Reference is undated and predates 553: Sichuan is still Liang. Ours includes the Sichuan basin to ~28°N (conquered 553), which is right for the 550s; Reference reaches the Ordos to ~40°N (Woye); ours 
+- Konbaung Dynasty (1767): The reference shades all of Siam, Lan Na, western Laos and the Malay isthmus as Burmese 'areas of influence' in April 1767; ours shows Burma with Lan Na (to ~100.7°E) only; Ours is closer for the year
+- Adal Sultanate (1540): The reference (after Pankhurst) carries Adal east along the whole northern Somali coast from ~45°E to Cape Guardafui (~51°E, 9-12°N); our map stops at ~45°E (Berbera); Our map runs south to ~5.5°N (Ba
+- Crimean Khanate (1523): The reference ('limit of expansion on the lands of the Ulus of Jochi, 1523') takes the khanate east across the Volga steppe to Astrakhan, Saray and Samara and north toward the Bulgar lands (~44–50°E, 
+
+## Skipped or downgraded (1)
+- Gran Colombia: relabel needs valid from/to years (or already set) — note only

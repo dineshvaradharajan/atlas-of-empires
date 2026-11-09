@@ -1,0 +1,825 @@
+[
+ {
+  "realm": "Ottoman Empire",
+  "year": 1566,
+  "verdict": "minor",
+  "which_is_right": null,
+  "differences": [
+   "Both maps share the same core: the Balkans, central Hungary, Anatolia, the Levant, Iraq to Basra, Egypt, the Hejaz/Red Sea coast to Yemen (~13°N), and the Algerian and Libyan coasts.",
+   "The reference shades vassals in light green: Wallachia, Moldavia and Transylvania (44–48°N, 22–30°E), the Crimean Khanate, and a broad interior Arabian zone. Our map leaves out most of the Danubian vassals and shows only a coastal strip for Arabia.",
+   "The reference includes eastern Arabia (al-Hasa, ~25°N 49°E, conquered 1550). Our Iraq stops at ~30°N."
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Great Seljuk Empire",
+  "year": 1090,
+  "verdict": "minor",
+  "which_is_right": null,
+  "differences": [
+   "The core matches from western Anatolia across Iran to Khwarazm (~45°N) and Transoxiana (~72°E), and both maps include Syria/Palestine down to ~31°N.",
+   "The reference extends Seljuk rule down the western Arabian coast through Mecca to Aden (~13°N). Our map has no Arabian territory beyond a strip at Musandam/Oman (~58°E). That Arabian rule amounts to nominal suzerainty over the Hejaz.",
+   "Our map leaves a hole in central-eastern Anatolia (~35–39°E, 36–39°N). The reference draws Anatolia as hatched, loosely held Rum territory."
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Türgesh",
+  "year": 699,
+  "verdict": "major",
+  "which_is_right": "reference",
+  "differences": [
+   "Our polygon lies entirely in Mongolia and southern Siberia (~88–121°E, 38–53°N). That was the heartland of the Second Turkic Khaganate under Qapaghan in 699.",
+   "The reference puts the Türgesh in Zhetysu/Dzungaria (~65–90°E, 42–55°N), around Suyab, Taraz and the Ili, and our polygon does not touch this area. In our map's source data the Zhetysu area is labelled 'Turks' (62–90°E).",
+   "From 705 to 749 the source polygon spans 63–121°E, so Mongolia is still shown as Türgesh even though it belonged to the Second Turkic Khaganate until 744 and then to the Uyghurs."
+  ],
+  "suggested": {
+   "type": "relabel",
+   "detail": "Second Turkic Khaganate: in 692–704 this polygon over Mongolia shows the Eastern Türks under Qapaghan Qaghan; the Türgesh khaganate (from 699) lay farther west in Zhetysu, ruling from Suyab and Taraz.",
+   "from": 692,
+   "to": 704
+  },
+  "source": {
+   "title": "Türgesh (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/T%C3%BCrgesh"
+  },
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Khwarezmid Empire",
+  "year": 1202,
+  "verdict": "match",
+  "which_is_right": null,
+  "differences": [
+   "Both maps show Khwarazm (to ~46°N), Khorasan and central/southern Iran down to the Gulf, spanning roughly 45–70°E. The edges differ only slightly in western Iran and on the upper Oxus."
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Four Oirats",
+  "year": 1456,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [
+   "Our 1456 polygon covers all of Mongolia (78–125°E, 38–55°N). The reference shows the Oirats only in western Mongolia/Dzungaria in the 16th–18th centuries. Note that Esen Taishi, under whom the Oirats dominated all of Mongolia, died in 1454."
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": "The reference is a 14th–17th-century 'Mongol States' overview whose Oirat area is labelled XVI–XVIII. That is a different period from our 1456 map."
+ },
+ {
+  "realm": "Maurya Empire",
+  "year": -281,
+  "verdict": "match",
+  "which_is_right": null,
+  "differences": [
+   "Both maps show the Maurya Empire holding Arachosia/Gedrosia (west to ~62°E) and the whole subcontinent except the far south. Our map also correctly leaves out Kalinga (east coast ~17–21°N), which was conquered c. 261 BCE. The reference crops the realm's eastern part but agrees on the western frontier with the Seleucids."
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Ilkhanate",
+  "year": 1299,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": "The reference is a panel from the 1375 Catalan Atlas with an outline drawn over it. It is a medieval mappa without usable coordinates, and it postdates the Ilkhanate's collapse (1335)."
+ },
+ {
+  "realm": "Uyghur Khaganate",
+  "year": 770,
+  "verdict": "major",
+  "which_is_right": "reference",
+  "differences": [
+   "The cores match: Mongolia, the Altai and the Ordos fringe, from ~78°E to ~120°E.",
+   "Our map adds a western lobe (~70–80°E, 41–46°N) covering the Chu and Talas valleys and Issyk-Kul, that is Zhetysu with Suyab. The reference stops at ~78–80°E. The Karluks took Suyab and Zhetysu in 766, so by 770 this was Karluk land, not Uyghur."
+  ],
+  "suggested": {
+   "type": "note",
+   "detail": "After 766 the Karluks held Zhetysu (the Chu–Talas valleys around Suyab), so the western tip of this shape was outside Uyghur rule.",
+   "from": 766,
+   "to": 840
+  },
+  "source": {
+   "title": "Karluks (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Karluks"
+  },
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Rouran Khaganate",
+  "year": 408,
+  "verdict": "match",
+  "which_is_right": null,
+  "differences": [
+   "Both maps show a steppe belt from the Balkhash–Altai area to western Manchuria, ~40–52°N. The reference begins slightly farther west, near Lake Balkhash, and our map starts at ~77°E. These are fuzzy nomadic frontiers."
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Tibetan Empire",
+  "year": 790,
+  "verdict": "match",
+  "which_is_right": null,
+  "differences": [
+   "Both maps show the Tibetan plateau together with the Tarim Basin, Gansu/Hexi and the Pamirs/Wakhan, spanning ~70–105°E and 28–43°N. The reference spills slightly into Nepal and over the Tian Shan toward Turpan."
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Mughal Empire",
+  "year": 1529,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": "The reference (Joppen, 'India in 1525') shows India before Panipat with the Lodi 'Afghan Empire' and other states. It draws no Mughal realm, so there is nothing to compare with our 1529 map."
+ },
+ {
+  "realm": "Dzungar Khanate",
+  "year": 1717,
+  "verdict": "major",
+  "which_is_right": "unclear",
+  "differences": [
+   "Both maps include Dzungaria, the Ili valley and the Tarim Basin (Kashgaria), roughly 73–96°E.",
+   "The reference also includes all of central Tibet (~28–36°N, 78–100°E) and western Mongolia/the Altai to ~52°N. Our map stops at the Kunlun (~36°N) and at ~49–50°N.",
+   "In late 1717 a Dzungar army did take Lhasa and held Tibet until the Qing drove it out in 1720. Whether to draw that military occupation as Dzungar territory is a judgement call."
+  ],
+  "suggested": {
+   "type": "note",
+   "detail": "In November 1717 a Dzungar army seized Lhasa and occupied central Tibet until a Qing expedition expelled it in 1720; that occupation is not drawn here.",
+   "from": 1717,
+   "to": 1720
+  },
+  "source": {
+   "title": "Dzungar conquest of Tibet (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Dzungar_conquest_of_Tibet"
+  },
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "First Mexican Empire",
+  "year": 1822,
+  "verdict": "major",
+  "which_is_right": "reference",
+  "differences": [
+   "In the north our map shows only settled strips: a thin coastal Alta California (~32–38°N), a narrow Rio Grande corridor to ~42°N at ~107°W, and Texas/New Mexico to ~37–38°N.",
+   "The reference, like standard maps of the 1821 boundary, includes everything up to 42°N: interior Alta California, Nevada, Utah, Arizona and western Colorado (~106–124°W, 32–42°N). That is roughly a quarter of the realm.",
+   "Central America (Guatemala to Costa Rica, annexed 1822) and Yucatán/Chiapas match."
+  ],
+  "suggested": {
+   "type": "note",
+   "detail": "Mexico's claimed border ran to 42°N and took in all of Alta California and New Mexico (today's California, Nevada, Utah and Arizona), though most of that interior was controlled by the Comanche, Apache, Ute and other peoples rather than by Mexico.",
+   "from": 1821,
+   "to": 1823
+  },
+  "source": {
+   "title": "First Mexican Empire (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/First_Mexican_Empire"
+  },
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Italian Africa",
+  "year": 1941,
+  "verdict": "major",
+  "which_is_right": "ours",
+  "differences": [
+   "For 1941 our map shows only Libya (~9–25°E, 19–33°N), plus at most a tiny Gondar pocket.",
+   "The reference also shows Italian East Africa (Eritrea, Ethiopia, Italian Somaliland, ~35–51°E, 2°S–18°N), Italy itself and occupied territories. It describes itself as 'partially anachronistic', and it covers the Italian Empire as a whole rather than Italian Africa.",
+   "Allied forces took Italian East Africa during 1941 (Addis Ababa in April; the last Italian forces surrendered at Gondar on 27 Nov 1941). Leaving it out at 1941 is therefore defensible, but readers should be told."
+  ],
+  "suggested": {
+   "type": "note",
+   "detail": "Italy's East African empire (Eritrea, Ethiopia and Italian Somaliland) fell to British, Commonwealth and Ethiopian forces during 1941, the last garrison surrendering at Gondar in November.",
+   "from": 1941,
+   "to": 1941
+  },
+  "source": {
+   "title": "Italian East Africa (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Italian_East_Africa"
+  },
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Afsharid Iran",
+  "year": 1741,
+  "verdict": "minor",
+  "which_is_right": null,
+  "differences": [
+   "The cores match: the Caucasus to ~42°N, Iran, western Afghanistan, Kandahar and Kabul to the Indus (~71°E), and Muscat/Oman's coast.",
+   "The reference counts Khwarazm (Urgench, to the Aral Sea ~45°N) and Bukhara as Afsharid core, and Samarkand and Balkh as controlled but not annexed. Our map stops at ~41°N in Transoxiana.",
+   "The reference shows a light-blue strip of Mughal lands west of the Indus/Sindh (to ~75°E) that our map leaves out."
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Northern Yuan",
+  "year": 1388,
+  "verdict": "minor",
+  "which_is_right": null,
+  "differences": [
+   "Both maps show Mongolia from the Baikal region to western Manchuria, ~40–55°N.",
+   "Our map extends west to ~83°E, into the Altai and Upper Irtysh. The reference starts at ~91°E. That western zone was Oirat land, only loosely tied to the Northern Yuan khans."
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Sui Dynasty",
+  "year": 614,
+  "verdict": "match",
+  "which_is_right": null,
+  "differences": [
+   "Both maps show China proper with the Hexi corridor to ~93°E (Yiwu commanderies), Liaoxi to ~125°E, Hainan, and northern Vietnam to ~17°N."
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Nazi Germany",
+  "year": 1942,
+  "verdict": "minor",
+  "which_is_right": null,
+  "differences": [
+   "The cores match: the Greater German Reich, the General Government, Reichskommissariats Ostland and Ukraine (to ~40°E and Crimea), Norway, Denmark, the Low Countries, occupied France (without Vichy), Serbia and parts of Greece.",
+   "The reference also shades the summer-1942 military zone in southern Russia and the North Caucasus out to ~45–48°E (Don, Stalingrad approaches). Our map ends at ~40°E."
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "White Huns",
+  "year": 550,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [
+   "Our 550 map covers Sogdiana, Bactria and northern Afghanistan (~52–80°E, 31–45°N). The reference shows only the Balkh–Bamiyan principalities that remained after the empire was destroyed c. 557–560."
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": "The reference shows the Hephthalite principalities of c. 557–625, after the empire's collapse. That is a different situation from our pre-collapse 550 map."
+ },
+ {
+  "realm": "Peru-Bolivian Confederation",
+  "year": 1837,
+  "verdict": "match",
+  "which_is_right": null,
+  "differences": [
+   "Both maps show Peru and Bolivia, including the Atacama littoral to ~24–25°S, the Amazonas region north to ~0–2°S, the straight ~7–10°S line against Brazil, and the Chaco/Tarija to ~58°W."
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Federated Republic of Mexico",
+  "year": 1832,
+  "verdict": "match",
+  "which_is_right": null,
+  "differences": [
+   "Within the reference's frame (New Mexico, Texas and Comanchería), the borders agree: Texas to the Red River (~34°N), Santa Fe de Nuevo México to ~38°N, and the Comanche region drawn inside Mexico.",
+   "Outside the frame, our map shows Alta California only as a thin coastal strip and New Mexico only as a narrow corridor to 42°N, leaving out the interior up to the 1819/1828 boundary at 42°N. This is the same issue flagged in the First Mexican Empire entry."
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Republic of India",
+  "year": 2005,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": "The reference is a Köppen climate-classification map, not a territorial map. Its outline is India's claimed boundary, which includes all of Jammu and Kashmir."
+ },
+ {
+  "realm": "Samanid Empire",
+  "year": 961,
+  "verdict": "major",
+  "which_is_right": "reference",
+  "differences": [
+   "Both maps include Transoxiana, Khwarazm, Khorasan and the Ghazna/Zabulistan region (~55–75°E, 32–45°N).",
+   "Our map also extends west to ~50°E, taking in Rayy/Jibal. Buyid ruler Rukn al-Dawla had held Rayy since 943/947. The reference stops at Tabaristan/Gurgan (~53°E).",
+   "Our map also runs south to the Arabian Sea (~25°N) across Kerman, Sistan and Makran. Kerman belonged to the Ilyasids (932–968), who were effectively independent. The reference's core ends at Quhistan/Sistan (~31°N).",
+   "Together these extra regions make up roughly a third of our polygon."
+  ],
+  "suggested": {
+   "type": "note",
+   "detail": "At this date Rayy and the Jibal belonged to the Buyids and Kerman to the effectively independent Ilyasids; Samanid rule in the south and west was nominal at best.",
+   "from": 943,
+   "to": 999
+  },
+  "source": {
+   "title": "Ilyasids (Wikipedia); see also Rukn al-Dawla",
+   "url": "https://en.wikipedia.org/wiki/Ilyasids"
+  },
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Parthian Empire",
+  "year": 162,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": "The reference shows the Parthian Empire in 94 BC under Mithridates II, about 250 years before our 162 CE map."
+ },
+ {
+  "realm": "Khedivate of Egypt",
+  "year": 1878,
+  "verdict": "match",
+  "which_is_right": null,
+  "differences": [
+   "Both maps show Egypt with Sinai, the Sudan including Darfur and Equatoria (to ~3–4°N), the Red Sea ports (Suakin, Massawa) and Harar/Zeila/Berbera on the Somali coast."
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "(Five Dynasties and Ten Kingdoms)",
+  "year": 923,
+  "verdict": "match",
+  "which_is_right": null,
+  "differences": [
+   "Our red union matches the reference's coloured states (Later Liang, Wu, Wuyue, Min, Chu, Southern Han, Jingnan, Former Shu, Annam). Our map also includes Jin (Shatuo), Qi and Yan, which the reference names but leaves uncoloured. That is consistent with a period-wide grouping."
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Northern Song",
+  "year": 1101,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": "The reference is Su Song's star chart from 1092, not a map of territory."
+ },
+ {
+  "realm": "Argentine Confederation",
+  "year": 1834,
+  "verdict": "major",
+  "which_is_right": "reference",
+  "differences": [
+   "Our map includes the whole Gran Chaco (Chaco and Formosa, ~22–28°S, 58–63°W) and Misiones (~26–28°S, 54–56°W). The reference shows both as unconquered or outside the Confederation. The Chaco was held by Qom, Wichí, Mocoví and other peoples until the campaigns of the 1880s–1910s.",
+   "The reference extends Buenos Aires south to ~39°S (Bahía Blanca) and a Patagones outpost. Our southern line is at ~35–37°S.",
+   "The northwest provinces, Cuyo, Córdoba, Santa Fe, Entre Ríos and Corrientes match."
+  ],
+  "suggested": {
+   "type": "note",
+   "detail": "Much of the Gran Chaco in the north remained under the control of Indigenous peoples such as the Qom and Wichí until military campaigns from the 1880s, so the Confederation's real reach was smaller than drawn.",
+   "from": 1831,
+   "to": 1861
+  },
+  "source": {
+   "title": "Gran Chaco (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Gran_Chaco"
+  },
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Argentine Republic",
+  "year": 1932,
+  "verdict": "match",
+  "which_is_right": null,
+  "differences": [
+   "Both maps show all the provinces and national territories from Jujuy to Tierra del Fuego, including Misiones and the Chaco. The reference also has an inset of the Falklands and the Antarctic claim, which our map leaves out."
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Communist Party of China",
+  "year": 1949,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [
+   "Our 1949 polygon shows only Manchuria and North China down to ~31°N, roughly the early-1949 situation. By the end of 1949 the CCP held almost all of mainland China."
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": "The reference is a campaign map (Liaoshen, Pingjin, Huaihai) with arrows, not a territorial map."
+ },
+ {
+  "realm": "Liu Song Dynasty",
+  "year": 444,
+  "verdict": "match",
+  "which_is_right": null,
+  "differences": [
+   "Both maps put the Liu Song border with Northern Wei along the Huai and lower Yellow River. Both include Shandong (Qingzhou), Sichuan (Yizhou), Yunnan (Ningzhou) and Jiaozhou/northern Vietnam."
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "British East Africa",
+  "year": 1964,
+  "verdict": "major",
+  "which_is_right": "reference",
+  "differences": [
+   "The reference (1909) shows British East Africa as the East Africa Protectorate, i.e. today's Kenya, which existed from 1895 to 1920 and then became Kenya Colony.",
+   "Our 1961–1968 polygon with this name is a grab-bag of British dependencies across Africa: Kenya, Zanzibar, Northern Rhodesia, Nyasaland, Bechuanaland, Basutoland and Swaziland, plus outliers from the Gambia (~17°W) to the Seychelles (~55°E).",
+   "Kenya was independent from December 1963, and Zambia and Malawi from 1964, so even as a colonial grouping the 1964 shape is out of date."
+  ],
+  "suggested": {
+   "type": "relabel",
+   "detail": "British colonies in Africa: this shape groups Britain's remaining African dependencies during decolonisation (1961–1968), not the East Africa Protectorate, which was the forerunner of Kenya from 1895 to 1920.",
+   "from": 1961,
+   "to": 1972
+  },
+  "source": {
+   "title": "East Africa Protectorate (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/East_Africa_Protectorate"
+  },
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "German Africa",
+  "year": 1913,
+  "verdict": "match",
+  "which_is_right": null,
+  "differences": [
+   "Both maps show Togoland, Kamerun (with the Neukamerun extensions), German East Africa and German South West Africa with the Caprivi Strip."
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Kazakh Khanate",
+  "year": 1550,
+  "verdict": "minor",
+  "which_is_right": null,
+  "differences": [
+   "Both maps show the steppe from the Caspian–Ural area to Lake Balkhash and the Ili, ~42–53°N.",
+   "Our map extends west to ~47°E, onto the north Caspian shore and Mangyshlak (Nogai and Turkmen country). The reference begins at ~51–52°E. The reference also shows the first quarter of the 16th century (Kasym Khan's peak), not 1550."
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Kazakhstan",
+  "year": 2014,
+  "verdict": "match",
+  "which_is_right": null,
+  "differences": [
+   "Same modern borders."
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Tümed",
+  "year": 1566,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [
+   "Unrelated to the reference: our 1566 polygon covers ~80–113°E up to ~55°N (Altai, Tuva and western Mongolia). That is far beyond the Tümed base under Altan Khan around Hohhot and the Ordos (~108–112°E, 40–42°N) and is worth a separate check."
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": "The reference maps tribal homelands of 1207. Its 'Khori Tumed' near Baikal is a different group and period from Altan Khan's Tümed of the 1560s."
+ },
+ {
+  "realm": "Eastern Roman Empire",
+  "year": 563,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": "The reference shows the Byzantine Empire at the death of Basil II in 1025, not in 563."
+ },
+ {
+  "realm": "Kara-Khitans",
+  "year": 1149,
+  "verdict": "match",
+  "which_is_right": null,
+  "differences": [
+   "Both maps show Transoxiana and Khwarazm's border (~58–60°E) east to ~95°E and the Tarim Basin. The reference runs farther north to ~50°N (Irtysh/Zaysan). Our northern edge is ~46–47°N, which falls within fuzzy vassal frontiers."
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Later Jin Dynasty",
+  "year": 1619,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [
+   "Unrelated to the reference: our polygon is a crude rhombus (~124.5–130°E, 41–44°N) that does not resemble Nurhaci's 1619 realm (Jianzhou plus the conquered Hada, Huifa, Ula and, in 1619, Yehe)."
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": "The reference is a tribal location map (in Manchu) of Jurchen tribes in the 1600s, not a map of the Later Jin state."
+ },
+ {
+  "realm": "Gupta Empire",
+  "year": 420,
+  "verdict": "minor",
+  "which_is_right": null,
+  "differences": [
+   "Both maps show the Ganges plain, Bengal, Gujarat/Malwa, the Indus valley and the eastern coast down to ~13°N, excluding the Vakataka Deccan.",
+   "Our map extends farther west into Baluchistan/Makran (to ~62.5°E). The reference stops at ~67°E."
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Republic of Sudan",
+  "year": 2002,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": "The reference shows the Fur, Funj and Shilluk kingdoms c. 1800, not the modern Republic of Sudan."
+ },
+ {
+  "realm": "Chagatai Khanate",
+  "year": 1300,
+  "verdict": "match",
+  "which_is_right": null,
+  "differences": [
+   "Both maps run from Urgench (~60°E) to Beshbaliq (~90°E) and from Almaty/Balkhash (~46°N) south to Kabul/Ghazni (~33°N)."
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "(Delhi Sultanate)",
+  "year": 1320,
+  "verdict": "major",
+  "which_is_right": "reference",
+  "differences": [
+   "Our map shows only the northern core (Sindh and Gujarat to Bengal, 66–91°E), with a southern edge at ~21°N.",
+   "The reference extends the Sultanate across the Deccan to Madurai (~9°N). That overstates direct rule: Warangal (Kakatiyas) and the far south only paid tribute after Malik Kafur's raids. However, Devagiri and Maharashtra (~17–21°N, 73–78°E) were retaken in 1317 and put under a Delhi governor, and our map leaves them out.",
+   "Our map includes Bengal to ~91°E. The reference stops at ~86°E. Bengal (Lakhnauti) was semi-independent until 1324."
+  ],
+  "suggested": {
+   "type": "note",
+   "detail": "By 1318 the Sultanate governed Devagiri in the northern Deccan, and the Kakatiyas of Warangal and kingdoms farther south paid it tribute; this map shows only the northern core.",
+   "from": 1318,
+   "to": 1325
+  },
+  "source": {
+   "title": "Qutbuddin Mubarak Shah (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Qutbuddin_Mubarak_Shah"
+  },
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Tughlaq Dynasty",
+  "year": 1338,
+  "verdict": "minor",
+  "which_is_right": null,
+  "differences": [
+   "Both maps show Peshawar and Lahore to Bengal and the Deccan to the far south, excluding the Odisha/Gondwana block (~18–23°N, 80–87°E).",
+   "The reference includes Dvarasamudra (Hoysala, ~13°N 76°E) and Madurai (~10°N). Our map leaves a grey Hoysala/Kampili block (~12–15°N, 73–77°E) and stops at ~11°N. Ma'bar broke away in 1335."
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Saffarid Dynasty",
+  "year": 861,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [
+   "Our 861 polygon is a small area around Zarang in Sistan (~61.7–62.6°E, 30.8–31.5°N). That is plausible for the year Ya'qub took power. The source data grows to the full extent by 875."
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": "The reference is a composite of the dynasty's whole span (861–1002) and shows its maximum extent of the 870s, not the situation in 861."
+ },
+ {
+  "realm": "Grand Principality of Moscow",
+  "year": 1530,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": "The reference is Strahlenberg's 1730 map of the Russian Empire, two centuries later and a different polity."
+ }
+]

@@ -1,0 +1,838 @@
+[
+ {
+  "realm": "Free French",
+  "year": 1940,
+  "verdict": "major",
+  "which_is_right": "reference",
+  "differences": [
+   "Our 1940 outline covers only Cameroon, Gabon, Middle Congo and Ubangi-Shari (~5°S–13°N, 9–27°E). It leaves out Chad (13–23°N, 14–24°E), which the reference shows in full and which was the first African colony to rally to Free France (26 Aug 1940).",
+   "The reference marks Gabon as joining later (pink). Gabon came over only after the Battle of Gabon in November 1940, but our map has it Free French for all of 1940.",
+   "The reference also shows the Pacific colonies (New Hebrides, New Caledonia, French Polynesia) and French India, which rallied in summer 1940. Our map omits them."
+  ],
+  "suggested": {
+   "type": "note",
+   "detail": "In 1940 Chad was the first colony to join Free France (26 August), though the map leaves it out; Gabon joined only after fighting in November, and the Pacific colonies and French India also rallied that summer.",
+   "from": 1940,
+   "to": 1940
+  },
+  "source": {
+   "title": "Free France — Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Free_France"
+  },
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Liang Dynasty",
+  "year": 521,
+  "verdict": "match",
+  "which_is_right": null,
+  "differences": [
+   "Same core: Yangtze basin, Sichuan, Lingnan, Hainan and northern Vietnam to ~17.5°N, with the northern limit near the Huai/Han line (~33–34.7°N). Our map stops at ~101°E in Yunnan; the reference reaches ~99°E, a frontier zone. Note: our polygon is identical to Southern Qi 489, and the two references are near-identical too."
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Southern Qi",
+  "year": 489,
+  "verdict": "match",
+  "which_is_right": null,
+  "differences": [
+   "Same extent as the reference: Huai–Han northern line (~33–34.7°N), Sichuan, Yunnan to ~101°E, Lingnan, Hainan and the Red River delta."
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Belgian Congo",
+  "year": 1937,
+  "verdict": "match",
+  "which_is_right": null,
+  "differences": [
+   "Our outline matches the colony's borders on the period map (Léon de Moor), including the Atlantic outlet at ~12°E and Katanga's southeast panhandle to ~13.5°S."
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Roman Republic",
+  "year": -44,
+  "verdict": "minor",
+  "which_is_right": null,
+  "differences": [
+   "Our map includes all of northwest Iberia (Gallaecia/Asturias/Cantabria, ~42–44°N, 9–4°W), which was not conquered until the Cantabrian Wars (to 19 BCE). The reference leaves it out.",
+   "Africa Nova/Numidia (to ~5°E), Illyricum, Macedonia, Asia, Bithynia-Pontus, Cilicia, Syria, Crete and Cyrenaica broadly match."
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Mahdist State",
+  "year": 1894,
+  "verdict": "minor",
+  "which_is_right": null,
+  "differences": [
+   "The reference (Milner 1894) is small and hard to read. Its green Mahdist area covers the central Nile, Kordofan and the east, but it is not green south of ~8°N. Our map runs south to ~3.5°N through Bahr el-Ghazal and Equatoria, where Mahdist control was patchy (a garrison at Rejaf).",
+   "Our map includes the Red Sea coast, but Suakin stayed Anglo-Egyptian throughout. Kassala was taken by Italy in July 1894."
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "People's Democratic Republic of Algeria",
+  "year": 1999,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": "The reference shows French military operations (Plan Challe, 1959–61) during the Algerian War. It is not a territorial map, and its date is decades before 1999."
+ },
+ {
+  "realm": "Democratic Republic of the Congo",
+  "year": 1970,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": "The reference is a line chart of the Human Development Index (1970–2010), not a map."
+ },
+ {
+  "realm": "Zaire",
+  "year": 1982,
+  "verdict": "match",
+  "which_is_right": null,
+  "differences": [
+   "Same outline as the orthographic locator: the full DR Congo border, with the Atlantic outlet and the Katanga panhandle."
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Emirate of Diriyah",
+  "year": 1810,
+  "verdict": "major",
+  "which_is_right": "reference",
+  "differences": [
+   "Our southern lobe runs down to ~13°N across 42.5–45.5°E, taking in the Yemeni highlands and Sanaa. Those stayed with the Zaydi (Qasimid) imamate. The Wahhabis took only its coastal possessions (Tihama) after 1803. The reference stops at vassal Abu Arish/Tihama (~16–17°N).",
+   "Our map fills the whole Rub' al Khali south to ~18–19°N as far as Oman's border (~55°E). The reference's eastern limit runs along ~22–23°N, leaving the empty quarter outside.",
+   "Najd, Hejaz, al-Hasa, Qatar and the Trucial coast broadly match."
+  ],
+  "suggested": {
+   "type": "note",
+   "detail": "At its height the first Saudi state held Najd, the Hejaz, al-Hasa and the Gulf coast, with Asir and Tihama as vassals; the Zaydi imams kept Sanaa and the Yemeni highlands, and the Rub' al Khali was not administered.",
+   "from": 1805,
+   "to": 1811
+  },
+  "source": {
+   "title": "Qasimid state — Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Qasimid_state"
+  },
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Denmark",
+  "year": 1984,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": "The reference shows Denmark–Norway in 1780 (with Norway and Iceland), a different date and polity from our 1984 Denmark."
+ },
+ {
+  "realm": "Kushan Empire",
+  "year": 140,
+  "verdict": "major",
+  "which_is_right": "reference",
+  "differences": [
+   "Our map runs a long arm along the northern rim of the Tarim Basin (~40.5–42°N) from Kashgar east to ~91°E, through Aksu, Kucha and Turfan. The reference shows Kushan reach only in the southwest Tarim (Kashgar–Yarkand–Khotan). Kucha and Turfan were Han Western Regions states, and Kushan forays at Kucha were repulsed.",
+   "Our map leaves out Khotan (~37°N, 80°E), which the reference includes.",
+   "Our map adds a block of central India (~76–83°E, 21.5–27°N, Bundelkhand to Chhattisgarh) south of the Ganges plain. The reference stops near ~24–25°N there."
+  ],
+  "suggested": {
+   "type": "note",
+   "detail": "Kushan power in the Tarim Basin rested on influence in Kashgar, Yarkand and Khotan (coins, a client king in Kashgar); Kucha and Turfan in the northeast belonged to the Han-dominated Western Regions, not to the Kushans.",
+   "from": 127,
+   "to": 183
+  },
+  "source": {
+   "title": "Kushan Empire — Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Kushan_Empire"
+  },
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Median Kingdom",
+  "year": -576,
+  "verdict": "major",
+  "which_is_right": "reference",
+  "differences": [
+   "Our western limit is ~43°E (the Zagros). It omits Armenia, Cappadocia east of the Halys (~35–43°E, 37–41°N) and Assyria/Upper Mesopotamia (Nineveh, Arbela), all of which the reference includes. Together these are well over 15% of the extent.",
+   "Both maps run east to Bactria/Arachosia (~70–73°E). Ancient sources support only northeastern Iran, and some specialists doubt a large Median empire at all."
+  ],
+  "suggested": {
+   "type": "note",
+   "detail": "Later Greek tradition gives the Medes a realm from northeastern Iran to the Halys River in Anatolia, including Armenia and former Assyrian lands; the map's eastern reach to Bactria is speculative, and some historians doubt a large Median empire existed.",
+   "from": -600,
+   "to": -551
+  },
+  "source": {
+   "title": "Medes — Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Medes"
+  },
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Greenland",
+  "year": 1937,
+  "verdict": "match",
+  "which_is_right": null,
+  "differences": [
+   "Greenland's extent matches. The reference also shades metropolitan Denmark (Denmark–Greenland), which is a separate realm on our map."
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Estado Novo",
+  "year": 1995,
+  "verdict": "major",
+  "which_is_right": "reference",
+  "differences": [
+   "The reference is a thematic map of EFTA in 1995, but the pairing exposes a data error. In 1995 our map still draws 'Estado Novo' as a small polygon (~5–6°S, 12–13°E), the Cabinda enclave. Cliopatria carries Estado Novo rows for 1979–2024 at ~6,900 km².",
+   "The Estado Novo ended with the Carnation Revolution (25 April 1974). Cabinda has been part of independent Angola since 1975, so the realm should not appear after 1975."
+  ],
+  "suggested": {
+   "type": "clip",
+   "detail": "Portugal's Estado Novo ended with the Carnation Revolution of April 1974; Cabinda has been part of Angola since independence in 1975.",
+   "from": 1926,
+   "to": 1975
+  },
+  "source": {
+   "title": "Estado Novo (Portugal) — Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Estado_Novo_(Portugal)"
+  },
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Portuguese Republic",
+  "year": 1916,
+  "verdict": "minor",
+  "which_is_right": null,
+  "differences": [
+   "The reference is a modern topographic map of metropolitan Portugal with the Azores and Madeira. These match our map. Our map also includes the 1916 overseas empire (Cape Verde, Guinea, São Tomé, Angola, Mozambique, Goa, Macau, Timor), which a modern map naturally leaves out. That is correct for 1916."
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Southern Ming",
+  "year": 1645,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": "The reference shows Qing campaign routes (1645–50) over a uniform green base covering all of China, with no Southern Ming boundary."
+ },
+ {
+  "realm": "Centralist Mexico",
+  "year": 1843,
+  "verdict": "major",
+  "which_is_right": "reference",
+  "differences": [
+   "Our map has a gap north of ~32°N between ~115°W and ~103°W. The department of Nuevo México (Santa Fe, Albuquerque) is drawn as a separate realm, 'Federated Republic of Mexico' (a 668,000 km² polygon for 1842–45). In 1843 it was a department of the Centralist Republic, as the reference shows (dark green to ~42°N).",
+   "Utah/Nevada (~37–42°N) is unassigned on our map. It is inside Mexico's 1843 borders on the reference.",
+   "Our map includes Yucatán. The reference shows it as breakaway (1841 independence), which is a minor point.",
+   "Texas is correctly excluded."
+  ],
+  "suggested": {
+   "type": "relabel",
+   "detail": "Centralist Mexico — the 1842–1845 'Federated Republic of Mexico' polygon (Nuevo México) was a department of the Centralist Republic, not a separate state.",
+   "from": 1842,
+   "to": 1845
+  },
+  "source": {
+   "title": "Centralist Republic of Mexico — Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Centralist_Republic_of_Mexico"
+  },
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Ghurid Dynasty",
+  "year": 1209,
+  "verdict": "major",
+  "which_is_right": "unclear",
+  "differences": [
+   "Our 1206–1209 polygon still shows a unified empire from the Makran coast (~57.5°E, 25.7°N) and Khorasan to Bengal (~88°E). The reference (1215) shows only Afghanistan, Punjab and the Ganges plain, stopping at ~61°E. The western block (Khorasan, Sistan, Makran, ~57–62°E) is ~20% of our extent.",
+   "After Muhammad of Ghor's death (March 1206), Khwarazm took Herat and Ghor, Yildiz held Ghazni, and Aibak ruled the Indian conquests from Delhi. Our map is therefore wrong for 1206–09. The reference is also doubtful: the dynasty ended in 1215, and India was by then under the Delhi sultans. Ghurid rule over Makran is not documented."
+  ],
+  "suggested": {
+   "type": "note",
+   "detail": "After Muhammad of Ghor died in 1206 the empire broke apart: Khwarazm took Herat and Ghor, Yildiz held Ghazni, and Qutb al-Din Aibak ruled the Indian conquests from Delhi; the map's 1206–1209 outline still shows the earlier unified realm.",
+   "from": 1206,
+   "to": 1209
+  },
+  "source": {
+   "title": "Ghurid dynasty — Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Ghurid_dynasty"
+  },
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Western Roman Empire",
+  "year": 409,
+  "verdict": "match",
+  "which_is_right": null,
+  "differences": [
+   "Our map shows Britain, Gaul, Hispania, Tingitana, Italy, Africa to Tripolitania and western Illyricum, as the reference does. The reference splits this between the usurper Constantine III (Britain, Gaul, Spain) and Honorius, and adds barbarian groups crossing the Rhine. These are details within the same imperial extent."
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Qin Dynasty",
+  "year": -209,
+  "verdict": "major",
+  "which_is_right": "reference",
+  "differences": [
+   "Our map leaves a grey hole over Jiangxi and the Fujian/east Guangdong interior (~114.5–119.8°E, 22.5–30.2°N), labelled 'Minyue'. Minyue was in Fujian, not Jiangxi. The Poyang basin (Nanchang) was Qin territory. The reference shows all of it as Qin.",
+   "Our map omits Guangxi (Guilin, Nanning, ~106–111°E). Qin conquered Lingnan in 214 BCE, and the reference includes it to the coast.",
+   "The north (Ordos, Liaodong) and the west (Sichuan to ~100.5°E) broadly match."
+  ],
+  "suggested": {
+   "type": "relabel",
+   "detail": "Qin Dynasty — the 'Minyue' polygon of 221–207 BCE (Jiangxi and inland Fujian) lay inside Qin commanderies; Minyue proper was in Fujian.",
+   "from": -221,
+   "to": -207
+  },
+  "source": {
+   "title": "Minyue — Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Minyue"
+  },
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "(Eighteen Kingdoms)",
+  "year": -204,
+  "verdict": "major",
+  "which_is_right": "reference",
+  "differences": [
+   "Our southern limit is ~28.4°N. The reference carries Hengshan and Linjiang south to ~25°N, covering Jiangxi and Hunan. On our map Jiangxi (Nanchang, Ganzhou) is labelled 'Minyue', and Changsha and southern Hunan are left unassigned.",
+   "Hengshan covered eastern Hubei and Jiangxi, and Linjiang covered western Hubei and northern Hunan. The missing band is roughly 15–20% of the realm.",
+   "The northern and western kingdoms (Yan, Liaodong, Dai, Zhai, Yong, Han in Sichuan) broadly match."
+  ],
+  "suggested": {
+   "type": "note",
+   "detail": "Jiangxi belonged to the kingdom of Hengshan and northern Hunan to Linjiang; the area shown as Minyue here was not part of Minyue, which lay in Fujian.",
+   "from": -206,
+   "to": -202
+  },
+  "source": {
+   "title": "Eighteen Kingdoms — Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Eighteen_Kingdoms"
+  },
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Great Jin",
+  "year": 1141,
+  "verdict": "match",
+  "which_is_right": null,
+  "differences": [
+   "Both maps show the Huai–Qinling southern border (~33–34°N) after the 1141 treaty, the west at ~103.5°E against Xi Xia, and Manchuria to the Amur mouth/Okhotsk coast (~52°N, 141°E)."
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Inca Empire",
+  "year": 1533,
+  "verdict": "match",
+  "which_is_right": null,
+  "differences": [
+   "Same extent: from ~1°N in Ecuador to ~35.5°S in Chile, the Bolivian altiplano to ~62.5°W and northwest Argentina."
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "(Netherlands)",
+  "year": 1926,
+  "verdict": "minor",
+  "which_is_right": null,
+  "differences": [
+   "The reference is a modern provinces map, including Flevoland (drained after 1950) and the Caribbean special municipalities. Metropolitan Netherlands matches our map.",
+   "Our 1926 group also includes the Dutch East Indies (~95–141°E), which the modern map does not depict. That is correct for 1926."
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "South Africa",
+  "year": 1952,
+  "verdict": "minor",
+  "which_is_right": null,
+  "differences": [
+   "Our map includes South West Africa (Namibia, with Walvis Bay and the Caprivi Strip, ~11–25°E, 17–29°S) as part of South Africa. The modern reference excludes it. In 1952 SWA was a League of Nations mandate administered by South Africa, not part of the Union, so this is a sphere difference.",
+   "Within the Union's borders the two maps match, with Lesotho and Swaziland excluded."
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Republic of Indonesia",
+  "year": 1990,
+  "verdict": "minor",
+  "which_is_right": null,
+  "differences": [
+   "The outlines match, except that our 1990 map includes East Timor (occupied 1975–1999, not internationally recognised). The modern reference shows it as separate."
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Ayyubid Sultanate",
+  "year": 1193,
+  "verdict": "minor",
+  "which_is_right": null,
+  "differences": [
+   "The reference extends west through Tripolitania to Gabes (~10–19°E), reflecting Qaraqush's campaigns c. 1175–90. Our map stops at Cyrenaica (~19°E). Qaraqush acted largely independently.",
+   "Our map runs north to ~39.5°N near Lake Van, past Mayyafariqin (~38°N). Akhlat was taken only in the 1200s. This is a frontier detail.",
+   "Egypt, the Levant, the Jazira/Mosul, the Hejaz and Yemen match."
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Dutch East Indies",
+  "year": 1942,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": "The reference is an animated GIF whose final frame shows the archipelago in plain grey with no colonial territory marked, so it cannot be compared."
+ },
+ {
+  "realm": "Second Mexican Empire",
+  "year": 1865,
+  "verdict": "minor",
+  "which_is_right": null,
+  "differences": [
+   "Our map fills all of Mexico, matching the reference's dark green 'claimed' area. The reference's light green 'administered' area (as of April 1864) is only central Mexico. Republican forces under Juárez still held parts of the north and south in 1865."
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Mexico",
+  "year": 1872,
+  "verdict": "match",
+  "which_is_right": null,
+  "differences": [
+   "Same national outline as the modern states map. The borders have been unchanged since 1853."
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Fatimid Caliphate",
+  "year": 1000,
+  "verdict": "minor",
+  "which_is_right": null,
+  "differences": [
+   "The reference shows Kalbid Sicily, a Fatimid-appointed emirate. Our map draws Sicily as a separate 'Emirate of Sicily' and so omits this vassal (oddly, Malta is included as Fatimid).",
+   "The reference covers only Sicily and cannot be compared for the rest of the caliphate."
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Kingdom of Portugal",
+  "year": 1147,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": "The reference is a coat of arms, not a map."
+ },
+ {
+  "realm": "Kingdom of Saudi Arabia",
+  "year": 1990,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": "The reference shows the first Saudi state (Emirate of Diriyah) in 1810, a different polity and date from the 1990 kingdom."
+ },
+ {
+  "realm": "Liao Dynasty",
+  "year": 1117,
+  "verdict": "major",
+  "which_is_right": "reference",
+  "differences": [
+   "Our map keeps the whole northeast (Liaodong, the Eastern Capital/Liaoyang, the Jurchen homeland and Primorye to ~138°E) under Liao through 1125. The Jurchen Jin took Huanglong in late 1115, and in early 1116 'the entire region east of the Liao River' fell to Jin. The reference shows these Jin conquests with 1117 arrows. Our map has no Jin state until 1126.",
+   "Our western and northern limit is ~99.5°E and ~47–48°N. The reference carries Liao across the Mongolian plateau to ~88°E and ~50°N, including the Kedun/Zhenzhou garrison on the Tuul–Orkhon. That is partly a fuzzy steppe frontier."
+  ],
+  "suggested": {
+   "type": "note",
+   "detail": "From 1115 the Jurchen Jin broke away in the northeast, taking Huanglong (1115) and everything east of the Liao River (1116) and the Supreme Capital in 1120, so the map overstates Liao after 1115; Liao also kept garrison towns far west on the Mongolian steppe.",
+   "from": 1115,
+   "to": 1125
+  },
+  "source": {
+   "title": "Jin dynasty (1115–1234) — Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Jin_dynasty_(1115%E2%80%931234)"
+  },
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Almoravid Dynasty",
+  "year": 1118,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": "The reference is a detail of a 1413 portolan chart showing a camel rider (possibly Abu Bakr ibn Umar), not a territorial map."
+ },
+ {
+  "realm": "Hotaki Dynasty",
+  "year": 1728,
+  "verdict": "major",
+  "which_is_right": "reference",
+  "differences": [
+   "Our map covers all of Iran east of ~47°E, including Khorasan (Mashhad, Herat to ~65.5°E), Khuzestan and the southern Caspian slopes. In 1728 Mashhad was held by Tahmasp II and Nader, and Herat by the Abdali Afghans. The reference limits Ashraf's realm to Qazvin–Tehran–Isfahan–Yazd–Kerman–Shiraz–Bandar Abbas–Sistan.",
+   "Our map gives the Hotak homeland of Kandahar (~65.7°E, 31.6°N) to the Mughal Empire. The reference shows it as Hussain Hotaki's kingdom, and it was the Hotak seat until 1738.",
+   "Our 1727–1733 polygon keeps Persia Hotaki until 1733, but Ashraf was driven out after the Battle of Damghan in 1729."
+  ],
+  "suggested": {
+   "type": "note",
+   "detail": "Ashraf Hotaki ruled central and southern Persia from Isfahan, while Khorasan was held by Tahmasp II and Nader and Herat by the Abdali Afghans; Hussain Hotaki ruled Kandahar. Nader expelled Ashraf from Persia in 1729 and took Kandahar in 1738.",
+   "from": 1727,
+   "to": 1733
+  },
+  "source": {
+   "title": "Hotak dynasty — Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Hotak_dynasty"
+  },
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Mamluk Sultanate",
+  "year": 1517,
+  "verdict": "major",
+  "which_is_right": "reference",
+  "differences": [
+   "Our 1516–1518 polygon still shows Syria, Egypt and the Hejaz as Mamluk in 1517–1518. The Ottomans won Syria at Marj Dabiq (1516) and took Cairo on 22 January 1517, ending the sultanate. Our map is drawn for years when the polity no longer existed.",
+   "Our map stretches across all of Yemen and Hadramawt to ~52°E (Sanaa, Zabid, Mukalla). The reference stops in the Hejaz (~18–20°N). The Mamluk Yemen expedition of 1515–17 held parts of Tihama only."
+  ],
+  "suggested": {
+   "type": "clip",
+   "detail": "The Ottomans conquered Mamluk Syria in 1516 and Egypt in January 1517, ending the sultanate; the Mamluk expedition to Yemen held only parts of the coast.",
+   "from": 1250,
+   "to": 1516
+  },
+  "source": {
+   "title": "Mamluk Sultanate — Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Mamluk_Sultanate"
+  },
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Bolivia",
+  "year": 1865,
+  "verdict": "minor",
+  "which_is_right": null,
+  "differences": [
+   "The reference's 'initial boundaries' include the Puna de Atacama (~24–27°S, ceded to Argentina in 1893). Our 1865 map stops at ~24°S. The Puna was disputed with Argentina at the time.",
+   "Acre, the Litoral coast (~21–24°S) and the Chaco Boreal are included on both maps."
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Northern Zhou",
+  "year": 577,
+  "verdict": "match",
+  "which_is_right": null,
+  "differences": [
+   "Both maps show north China after the conquest of Northern Qi (577): from Shandong and the Bohai coast to the Hexi Corridor (~93–94°E), with Sichuan and Hubei south to ~28.4°N."
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Confederate States of America",
+  "year": 1861,
+  "verdict": "minor",
+  "which_is_right": null,
+  "differences": [
+   "The reference (a climate map outlining the CSA) shows all of Texas. Our map leaves the Llano Estacado/Panhandle (north of ~34°N) and the trans-Pecos (Midland, Fort Davis) unassigned, though El Paso is included. These were Comanche and Apache lands outside effective state control, so this is a frontier difference.",
+   "Our map adds small Confederate Arizona fragments near Tucson. The 11 states otherwise match."
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Khalji Dynasty",
+  "year": 1319,
+  "verdict": "major",
+  "which_is_right": "reference",
+  "differences": [
+   "Our map includes Bengal and Bihar east to ~91°E (Lakhnauti, Sonargaon). Bengal was ruled 1301–1322 by Shamsuddin Firuz Shah, an independent sultan of Lakhnauti. The reference stops near Banaras (~83°E).",
+   "Our southern limit is ~21–22°N, with Devagiri/Daulatabad assigned to the Yadavas. Devagiri was captured by Alauddin in 1307 and annexed outright in 1318. The reference includes the Deccan, plus tributary Warangal and Dvarasamudra.",
+   "Gujarat, Sindh and Punjab to Attock match."
+  ],
+  "suggested": {
+   "type": "note",
+   "detail": "Bengal was not under Khalji rule: Shamsuddin Firuz Shah ruled it as an independent sultan from 1301 to 1322. Devagiri in the Deccan was taken in 1307 and annexed in 1318, and Warangal and Dvarasamudra paid tribute.",
+   "from": 1305,
+   "to": 1320
+  },
+  "source": {
+   "title": "Shamsuddin Firoz Shah — Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Shamsuddin_Firoz_Shah"
+  },
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Aq Qoyunlu",
+  "year": 1450,
+  "verdict": "major",
+  "which_is_right": "reference",
+  "differences": [
+   "The reference shows the 1435 Aq Qoyunlu core around Diyarbakır, Mardin and Urfa (~37–42°E, 36.5–39.5°N). Our 1440–1452 polygon also takes in a strip down the Euphrates (Ana, Hit) to near Basra (~47.5°E, 29.5°N), a separate block in Khuzestan (Ahvaz, Dezful, ~48–50°E), and a detached patch near Ankara/Kırşehir (~33°E, 40°N).",
+   "Lower Iraq was under the Qara Qoyunlu, and Khuzestan under the Musha'sha. Central Anatolia belonged to the Ottomans and Karamanids. The Aq Qoyunlu 'were unable to expand their territory' until Uzun Hasan's victory in 1467."
+  ],
+  "suggested": {
+   "type": "note",
+   "detail": "Until Uzun Hasan's victory over the Qara Qoyunlu in 1467, the Aq Qoyunlu held only Diyarbakır and nearby Upper Mesopotamia; Iraq and Khuzestan belonged to others.",
+   "from": 1440,
+   "to": 1467
+  },
+  "source": {
+   "title": "Aq Qoyunlu — Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Aq_Qoyunlu"
+  },
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "Río de la Plata",
+  "year": 1811,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": "The reference is a painting of the naval battle of Punta Colares (Cisplatine War), not a map."
+ },
+ {
+  "realm": "Kingdom of Hejaz and Nejd",
+  "year": 1932,
+  "verdict": "match",
+  "which_is_right": null,
+  "differences": [
+   "Same kingdom: Hejaz, Najd, al-Hasa and Asir to ~16.5°N. The southeastern Rub' al Khali boundary differs slightly (ours runs ~22.5°N 55°E to ~18°N 46°E). That is an undefined desert frontier."
+  ],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": null
+ },
+ {
+  "realm": "(Warring States China)",
+  "year": -288,
+  "verdict": "not-comparable",
+  "which_is_right": null,
+  "differences": [],
+  "suggested": {
+   "type": "none",
+   "detail": "",
+   "from": null,
+   "to": null
+  },
+  "source": null,
+  "not_comparable_reason": "The reference shows the early Warring States (5th–4th century BCE), before Qin took Shu-Ba, Chu absorbed Yue, and Zhao annexed Zhongshan, so it differs clearly from 288 BCE. One caveat: both periods put Jiangxi under Chu, while our map labels it 'Minyue' (grey, ~115–120°E south of ~30°N). The same error is flagged under Qin Dynasty and Eighteen Kingdoms."
+ }
+]
