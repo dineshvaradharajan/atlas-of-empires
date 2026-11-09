@@ -191,7 +191,7 @@ async function init() {
   setupSearch();
   setupUI();
   const h = parseHash();
-  if (h.war && warById(h.war)) await openWar(h.war, h.wev);
+  if (h.war && warById(h.war)) await openWar(h.war, h.wev, h.chap);
   else if (h.journey && journeyById(h.journey)) await openJourney(h.journey, h.year);
   else if (h.moment && momentById(h.moment)) await openMoment(h.moment);
   else {
@@ -345,7 +345,7 @@ async function go(y, opts = {}) {
 }
 function renderAll() {
   if (!S.base) return;
-  if (S.war) { S.warMap = warSides(S.war, S.year); drawMini(); }
+  if (S.war) { S.warMap = warSides(S.war, S.year); }
   else if (!S.journey) updateWindow();
   else if (S.jRendered !== S.journey.id) renderJourneyChart();
   computeFeatured();
@@ -372,15 +372,15 @@ function parseHash() {
   const raw = decodeURIComponent(location.hash.slice(1));
   const mm = raw.match(/^m\/(.+)$/);
   if (mm) return { year: null, key: null, moment: mm[1] };
-  const wm = raw.match(/^w\/([^/]+)(?:\/(\d+))?$/);
-  if (wm) return { year: null, key: null, war: wm[1], wev: wm[2] != null ? +wm[2] : 0 };
+  const wm = raw.match(/^w\/([^/]+)(?:\/(c?)(\d+))?$/);
+  if (wm) return { year: null, key: null, war: wm[1], wev: wm[3] != null && !wm[2] ? +wm[3] : 0, chap: wm[2] ? Math.max(0, +wm[3] - 1) : null };
   const je = raw.match(/^e\/([^/]+)(?:\/(-?\d+))?$/);
   if (je) return { year: je[2] != null ? +je[2] : null, key: null, journey: je[1] };
   const m = raw.match(/^(-?\d+)(?:\/(.+))?$/);
   return m ? { year: +m[1], key: m[2] || null } : { year: null, key: null };
 }
 function writeHash() {
-  const h = S.war ? `#w/${encodeURIComponent(S.war.id)}/${S.wIdx}` : S.journey ? `#e/${encodeURIComponent(S.journey.id)}/${S.year}` : S.view === "moment" && S.moment ? `#m/${encodeURIComponent(S.moment.id)}` : `#${S.year}${S.sel ? "/" + encodeURIComponent(S.sel) : ""}`;
+  const h = S.war ? `#w/${encodeURIComponent(S.war.id)}/${story() ? "c" + (S.chap + 1) : S.wIdx}` : S.journey ? `#e/${encodeURIComponent(S.journey.id)}/${S.year}` : S.view === "moment" && S.moment ? `#m/${encodeURIComponent(S.moment.id)}` : `#${S.year}${S.sel ? "/" + encodeURIComponent(S.sel) : ""}`;
   if (decodeURIComponent(location.hash) !== decodeURIComponent(h)) history.replaceState(null, "", h);
 }
 
@@ -618,7 +618,8 @@ function setupMap() {
     if (keep && isFinite(keep[0])) {
       const [x, y] = projection(keep), k = S.t.k;
       d3.select(canvas).interrupt().call(S.zoom.transform, d3.zoomIdentity.translate(S.width / 2 - k * x, S.height / 2 - k * y).scale(k));
-      if (S.war && S.cine) camForEvent(S.war.events[S.wIdx], true); // the map area changed: re-aim at the current event
+      if (story()) flyTo(boxBounds(S.cine.chapters[S.chap].bbox), 24, 600, hudInset()); // the map area changed: re-frame the chapter
+      else if (S.war && S.cine?.shots?.length) { S.shotIdx = -1; camFor(S.wt, null, true); }
     }
     draw();
   };
@@ -674,7 +675,6 @@ function fillOf(it) { // the fill for an item; "HATCH" = peoples pattern
   return colorOf(it.key);
 }
 function draw() {
-  S.lens = S.war && S.theatre ? lensRect() : null;
   if (!S.items.length || !sphere2d) return;
   if (GL) return drawGL();
   const { t } = S;
@@ -775,7 +775,6 @@ function drawLabels() {
     const [x0, y0] = projection(it.p.l);
     const x = t.applyX(x0), y = t.applyY(y0);
     if (x < -50 || y < -20 || x > S.width + 50 || y > S.height + 20) continue;
-    if (S.war && !inLens(x, y)) continue;
     const culture = it.kind !== "state";
     if (culture) { const top = S.items[pickAt(x, y)]; if (top && top.kind === "state") continue; }
     const size = S.war ? Math.max(9, Math.min(r / 7, 12)) : Math.max(10, Math.min(r / 6, strong ? 18 : 13));
@@ -1097,41 +1096,48 @@ const fracDate = (s, fallback) => { // "1916-07-01" -> 1916.497 (fractional year
   return mo && y >= 0 ? y + ((mo - 1) * 30.4375 + (d ? d - 1 : 0)) / 365.25 : y;
 };
 const evTime = (e) => (e.year >= 0 ? fracDate(e.date, e.year) : e.year);
-async function openWar(id, idx = 0) {
+async function openWar(id, idx = 0, chap = null) {
   const w = warById(id);
   if (!w) return;
   stopPlay();
   if (S.journey) exitJourney();
   S.sel = null; S.ghost = null; S.moment = null; S.war = w; S.view = "war"; S.wIdx = Math.max(0, Math.min(w.events.length - 1, idx));
-  S.cine = null; S.shotIdx = -1; S.theatre = null; S.lensLock = null; S.camAt = null;
+  S.cine = null; S.shotIdx = -1; S.chap = 0;
   try { S.cine = await loadCinema(w); } catch (e) { console.warn("war layers unavailable", e); }
   if (S.war !== w) return;
   S.cineK = cineKnots(w, S.cine);
   $("#cine").hidden = false; document.body.classList.add("warmode");
   if (S.legendHTML == null) S.legendHTML = $("#legend").innerHTML;
-  await goWarEvent(S.wIdx, true);
+  if (story()) await openChapter(chap ?? chapterForTime(evTime(w.events[S.wIdx] || {})));
+  else await goWarEvent(S.wIdx, true);
 }
 async function goWarEvent(i, fit) {
   const w = S.war; if (!w) return;
+  if (story()) {
+    const e = w.events[Math.max(0, Math.min(w.events.length - 1, i))], te = evTime(e), C = S.cine.chapters;
+    let n = C.findIndex((c) => c.t0 - 0.01 <= te && te <= c.t1 + 0.01 && inChapter(e.lonlat, c));
+    if (n < 0) n = chapterForTime(te);
+    const ok = inChapter(e.lonlat, C[n]);
+    return openChapter(n, { t: Math.min(C[n].t1, Math.max(C[n].t0, te)), wIdx: ok ? w.events.indexOf(e) : undefined });
+  }
   S.wIdx = Math.max(0, Math.min(w.events.length - 1, i));
   const e = w.events[S.wIdx];
   const K = S.cineK;
   S.wp = e ? K.P[S.wIdx + 1] : 0; S.wt = e ? K.T[S.wIdx + 1] : K.t0;
-  S.subAt = performance.now(); S.lensLock = null;
+  S.subAt = performance.now();
   S.warMap = null;
   await go(warYear(S.wt), { keepWar: true });
-  syncTheatre();
   if (S.war !== w) return;
   S.warMap = warSides(w, S.year);
   renderWarChart(); updateHud(); draw(); renderCol(true); writeHash();
-  if (fit && S.cine?.theatres?.length) camForEvent(e, true);
+  if (fit && S.cine?.shots?.length) { S.shotIdx = -1; camFor(S.wt, e, true); }
   else if (fit && w.events.length) { // frame all the war's events
     const pts = w.events.filter((x) => x.lonlat).map((x) => projection(x.lonlat));
     const xs = pts.map((p) => p[0]), ys = pts.map((p) => p[1]);
     const pad = 20;
     flyTo([[Math.min(...xs) - pad, Math.min(...ys) - pad], [Math.max(...xs) + pad, Math.max(...ys) + pad]], 7);
     S.shotIdx = -1;
-  } else camForEvent(e, true);
+  } else camFor(S.wt, e, true);
 }
 function exitWar() {
   stopPlay();
@@ -1149,14 +1155,20 @@ function renderWarChart() {
   $("#legend").innerHTML = w.sides.map((sd, i) => `<span><i class="sw" style="background:${sideTint(i)};outline:1.5px solid ${SIDE_COLORS[i % SIDE_COLORS.length]};outline-offset:-1.5px"></i>${esc(sd.name)}</span>`).join("")
     + `<span><i class="sw unknown"></i>Not in the war</span>`
     + (C ? `<span class="wl"><i class="occ"></i>Occupied (occupier's colour)</span><span class="wl"><i class="fl"></i>Front line</span><span class="wl"><i class="ar"></i>Offensive</span><span class="wl"><i class="bt"></i>Battle under way</span>` : "");
-  const TH = S.cine?.theatres || [];
-  el.classList.toggle("has-the", !!TH.length);
-  el.innerHTML = (TH.length ? `<div class="wthe">${TH.map((th) => `<button type="button" data-the="${esc(th.id)}"><b>${esc(th.name)}</b><span class="st"></span></button>`).join("")}</div>` : "") + `<div class="warbar">${years.map((y, i) => `<span class="wy${i % 2 ? " alt" : ""}" style="left:${X(y)}%;width:${X(y + 1) - X(y)}%">${(i % step === 0) ? shortYear(y) : ""}</span>`).join("")}</div>
+  if (story()) {
+    el.classList.add("story");
+    el.innerHTML = `<div class="wchap">${S.cine.chapters.map((c, i) => `<button type="button" data-chap="${i}" class="${i === S.chap ? "on" : ""}" aria-label="Chapter ${i + 1}: ${esc(c.title)}"><canvas data-thumb="${i}" width="300" height="180" aria-hidden="true"></canvas><b>${i + 1} · ${esc(chapRange(c, true))}</b><span>${esc(c.title)}</span></button>`).join("")}</div>`;
+    $("#chartTitle").innerHTML = `${esc(w.name)} · ${esc(w.dateLabel || "")} <button class="exitj wspeed" data-act="war-speed" aria-label="Playback speed">${S.cineSpeed || 1}×</button> <button class="exitj" data-act="exit-war" aria-label="Exit war">× Exit</button>`;
+    drawThumbs();
+    el.querySelector(".wchap button.on")?.scrollIntoView({ block: "nearest", inline: "center" });
+    return;
+  }
+  el.classList.remove("story");
+  el.innerHTML = `<div class="warbar">${years.map((y, i) => `<span class="wy${i % 2 ? " alt" : ""}" style="left:${X(y)}%;width:${X(y + 1) - X(y)}%">${(i % step === 0) ? shortYear(y) : ""}</span>`).join("")}</div>
     <div class="wmarks">${w.events.map((e, i) => `<button class="mk ev wk-${esc(e.kind || "other")}${i === S.wIdx ? " on" : ""}" data-wev="${i}" style="left:${X(evTime(e))}%" aria-label="${esc(e.label || shortYear(e.year))}: ${esc(e.text)}"><span class="tipm">${esc(e.label || shortYear(e.year))} · ${esc(e.text)}</span></button>`).join("")}</div>
     <div class="wcur" style="left:${X(S.wt ?? t0)}%"></div>
     <div class="wnow"><b>${S.wIdx + 1}</b> / ${w.events.length} · ${esc(w.events[S.wIdx]?.label || "")}</div>`;
   $("#chartTitle").innerHTML = `${esc(w.name)} · ${esc(w.dateLabel || `${shortYear(w.span[0])}–${shortYear(w.span[1])}`)} <button class="exitj wspeed" data-act="war-speed" aria-label="Playback speed">${S.cineSpeed || 1}×</button> <button class="exitj" data-act="exit-war" aria-label="Exit war">× Exit</button>`;
-  updateTheatreTabs();
 }
 
 // ---------------------------------------------------------------- war cinema
@@ -1237,6 +1249,7 @@ async function loadCinema(w) {
   (c.arrows = c.arrows || []).forEach((a) => { a.t0 = fracDate(a.start); a.t1 = Math.max(fracDate(a.end), a.t0 + 0.02); a.smooth = smoothLL(a.path); });
   (c.battles = c.battles || []).forEach((b) => { b.t0 = fracDate(b.start); b.t1 = Math.max(fracDate(b.end || b.start), b.t0 + 0.03); });
   c.shots = (c.shots || []).map((s) => ({ ...s, t: fracDate(s.date) })).sort((a, b) => a.t - b.t);
+  (c.chapters = c.chapters || []).forEach((ch) => { ch.t0 = fracDate(ch.start); ch.t1 = fracDate(ch.end); ch.arrowSet = new Set(ch.arrows || []); });
   return (w._cine = c);
 }
 function trackAt(x, t, holdTo) { // interpolated shape of a front or occupied area at time t, with fade in/out
@@ -1276,10 +1289,14 @@ function drawOccupations() { // inside the map transform: occupied land takes th
   ctx.save(); ctx.clip(S.landClip);
   for (const o of C.occupations) {
     const s = trackAt(o, t, S.cineK.t1); if (!s) continue;
-    const side = o.side ?? 1, path = new Path2D();
+    const side = o.side ?? 1, path = new Path2D(), mk = (pts) => { const q = new Path2D(); pts.forEach((p, i) => { const [x, y] = projection(p); i ? q.lineTo(x, y) : q.moveTo(x, y); }); q.closePath(); return q; };
     s.pts.forEach((p, i) => { const [x, y] = projection(p); i ? path.lineTo(x, y) : path.moveTo(x, y); });
     path.closePath();
-    ctx.globalAlpha = s.a; ctx.fillStyle = sideTint(side); ctx.fill(path);
+    const ch = story() ? S.cine.chapters[S.chap] : null, s0 = ch ? trackAt(o, ch.t0, S.cineK.t1) : null;
+    if (ch) { // new ground in the occupier's full colour, ground already held at the chapter's start in its tint
+      ctx.globalAlpha = 0.62 * s.a; ctx.fillStyle = SIDE_COLORS[side % SIDE_COLORS.length]; ctx.fill(path);
+      if (s0) { ctx.save(); ctx.clip(path); ctx.globalAlpha = s.a; ctx.fillStyle = sideTint(side); ctx.fill(mk(s0.pts)); ctx.restore(); }
+    } else { ctx.globalAlpha = s.a; ctx.fillStyle = sideTint(side); ctx.fill(path); }
     const pat = occPattern(SIDE_COLORS[side % SIDE_COLORS.length]); pat.setTransform(new DOMMatrix().scale(1 / k));
     ctx.globalAlpha = 0.35 * s.a; ctx.fillStyle = pat; ctx.fill(path);
   }
@@ -1287,9 +1304,9 @@ function drawOccupations() { // inside the map transform: occupied land takes th
 }
 const scr = (ll) => { const [x, y] = projection(ll); return [S.t.applyX(x), S.t.applyY(y)]; };
 function polyLine(pts) { ctx.beginPath(); pts.forEach((p, i) => (i ? ctx.lineTo(p[0], p[1]) : ctx.moveTo(p[0], p[1]))); }
-function arrowState(a, t) { // drawn fraction and opacity of an offensive arrow at time t
+function arrowState(a, t, keep) { // drawn fraction and opacity of an offensive arrow at time t (keep: never fade)
   if (t < a.t0) return null;
-  const after = t - a.t1, alpha = after <= 0.03 ? 1 : 1 - (after - 0.03) / 0.07;
+  const after = t - a.t1, alpha = keep || after <= 0.03 ? 1 : 1 - (after - 0.03) / 0.07;
   if (alpha <= 0) return null;
   const prog = Math.min(1, (t - a.t0) / (a.t1 - a.t0));
   return { prog, e: 1 - (1 - prog) ** 2, alpha };
@@ -1303,13 +1320,17 @@ function drawCinema() { // screen space, above the labels: fronts, offensives, b
   for (const f of C.fronts) {
     const last = f.keys[f.keys.length - 1]?.t ?? 0;
     const s = trackAt(f, t, last >= K.t1 - 0.06 ? K.t1 : last + 0.1); if (!s) continue;
+    const ch = story() ? S.cine.chapters[S.chap] : null, g = ch && t > ch.t0 + 0.01 ? trackAt(f, ch.t0, frontHold(f)) : null;
+    if (g) { polyLine(g.pts.map(scr)); ctx.setLineDash([5, 4]); ctx.globalAlpha = 0.55; ctx.strokeStyle = theme.ink; ctx.lineWidth = 1.5; ctx.stroke(); ctx.setLineDash([]); }
     polyLine(s.pts.map(scr));
     ctx.globalAlpha = 0.7 * s.a; ctx.strokeStyle = theme.bg; ctx.lineWidth = 4; ctx.stroke();
     ctx.globalAlpha = s.a; ctx.strokeStyle = theme.ink; ctx.lineWidth = 1.8; ctx.stroke();
   }
   // offensives: tapered arrows in the side's full colour, growing while the campaign runs
+  const chA = story() ? S.cine.chapters[S.chap].arrowSet : null;
   for (const a of C.arrows) {
-    const st = arrowState(a, t); if (!st) continue;
+    if (chA && !chA.has(a.name)) continue;
+    const st = arrowState(a, t, !!chA); if (!st) continue;
     const P = a.smooth.map(scr), seg = [0];
     for (let i = 1; i < P.length; i++) seg.push(seg[i - 1] + Math.hypot(P[i][0] - P[i - 1][0], P[i][1] - P[i - 1][1]));
     const want = seg[seg.length - 1] * st.e; if (want < 6) continue;
@@ -1344,10 +1365,13 @@ function drawCinema() { // screen space, above the labels: fronts, offensives, b
   const placed = [];
   ctx.globalAlpha = 1;
   for (const b of C.battles) {
-    if (t < b.t0 || t > b.t1 || !b.lonlat) continue;
+    const chB = story() ? S.cine.chapters[S.chap] : null;
+    if (chB && !inChapter(b.lonlat, chB)) continue;
+    const over = chB && t > b.t1 && b.t1 >= chB.t0 - 0.01;
+    if (t < b.t0 || (t > b.t1 && !over) || !b.lonlat) continue;
     const [x, y] = scr(b.lonlat), ph = (now / 1500) % 1;
-    if (x < -20 || y < -20 || x > S.width + 20 || y > S.height + 20 || !inLens(x, y)) continue;
-    if (S.cinePlay) { ctx.globalAlpha = 0.6 * (1 - ph); ctx.beginPath(); ctx.arc(x, y, 6 + 12 * ph, 0, 2 * Math.PI); ctx.strokeStyle = theme.ink; ctx.lineWidth = 1.5; ctx.stroke(); ctx.globalAlpha = 1; }
+    if (x < -20 || y < -20 || x > S.width + 20 || y > S.height + 20) continue;
+    if (S.cinePlay && !over) { ctx.globalAlpha = 0.6 * (1 - ph); ctx.beginPath(); ctx.arc(x, y, 6 + 12 * ph, 0, 2 * Math.PI); ctx.strokeStyle = theme.ink; ctx.lineWidth = 1.5; ctx.stroke(); ctx.globalAlpha = 1; }
     ctx.beginPath();
     for (let i = 0; i < 12; i++) { const r = i % 2 ? 2.6 : 6.5, a2 = (i * Math.PI) / 6; ctx.lineTo(x + Math.cos(a2) * r, y + Math.sin(a2) * r); }
     ctx.closePath(); ctx.fillStyle = theme.ink; ctx.fill(); ctx.lineWidth = 1.5; ctx.strokeStyle = theme.bg; ctx.stroke();
@@ -1361,65 +1385,93 @@ function drawCinema() { // screen space, above the labels: fronts, offensives, b
     ctx.textAlign = "left"; ctx.lineWidth = 3.5; ctx.strokeStyle = theme.bg; ctx.strokeText(lab, lx, y); ctx.fillStyle = theme.ink; ctx.fillText(lab, lx, y);
   }
   ctx.restore(); ctx.globalAlpha = 1;
-  drawVeil(); placeCallout();
+  placeCallout();
 }
-// ---------------------------------------------------------------- theatre lens
-// The camera goes where the current event is: it frames that event's theatre (or a tab the reader picked); outside it the map fades.
-// Events outside every theatre get the camera flown to them directly, with no lens.
+// ---------------------------------------------------------------- war storyboard
+// A war with chapters (content/cinema/<war>.json "chapters") plays as a storyboard. Each chapter frames one episode and
+// shows only its own change: the front at its start (dashed) and end (solid), the ground that changed hands in strong
+// colour, and the offensives that did it. Play animates a chapter, then moves on to the next.
 const inBox = (ll, b) => !!ll && ll[0] >= b[0] && ll[0] <= b[2] && ll[1] >= b[1] && ll[1] <= b[3];
-function theatreAt(t) {
-  const C = S.cine; if (!C?.theatres?.length) return null;
-  if (S.lensLock) return C.theatres.find((x) => x.id === S.lensLock) || null;
-  const e = S.war?.events[S.wIdx];
-  return (e && C.theatres.find((x) => inBox(e.lonlat, x.bbox))) || null;
-}
+const story = () => !!(S.war && S.cine?.chapters?.length);
 function boxBounds(b) { // projected (zoom-1) bounds of a lon/lat box
   const pts = []; for (let i = 0; i <= 4; i++) { const lo = b[0] + ((b[2] - b[0]) * i) / 4; pts.push(projection([lo, b[1]]), projection([lo, b[3]])); }
   return [[Math.min(...pts.map((p) => p[0])), Math.min(...pts.map((p) => p[1]))], [Math.max(...pts.map((p) => p[0])), Math.max(...pts.map((p) => p[1]))]];
 }
-function camForEvent(e, jump) { // frame the current event: its theatre if it has one, else the place itself
-  const C = S.cine;
-  if (!C?.theatres?.length) return camFor(S.wt, e, jump);
-  const th = theatreAt(S.wt);
-  if (th) {
-    if (S.camAt === th.id && !jump) return; // already on this front: no cut
-    S.camAt = th.id; updateHud(); flyTo(boxBounds(th.bbox), 24, jump ? 900 : 1500, hudInset());
-  } else if (e?.lonlat) {
-    const key = e.lonlat.join(",");
-    if (S.camAt === key && !jump) return;
-    S.camAt = key; flyCenter(e.lonlat, 6, jump ? 900 : 1500);
-  }
+function chapterForTime(t) { // the chapter covering t, else the nearest one by its start
+  const C = S.cine.chapters; let best = 0;
+  C.forEach((c, i) => { if (Math.abs(c.t0 - t) < Math.abs(C[best].t0 - t)) best = i; });
+  const inside = C.findIndex((c) => c.t0 - 0.01 <= t && t <= c.t1 + 0.01);
+  return inside >= 0 ? inside : best;
 }
-function syncTheatre() {
-  const th = theatreAt(S.wt);
-  if (th !== S.theatre) { S.theatre = th; drawMini(); }
-  updateTheatreTabs();
+const MON3 = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+function chapRange(c, short) {
+  const [y0, m0] = c.start.split("-").map(Number), [y1, m1] = c.end.split("-").map(Number);
+  if (y0 === y1) return m0 === m1 ? `${MON3[m0 - 1]} ${y0}` : `${MON3[m0 - 1]}–${MON3[m1 - 1]} ${y0}`;
+  return short ? `${y0}–${String(y1).slice(2)}` : `${MON3[m0 - 1]} ${y0} – ${MON3[m1 - 1]} ${y1}`;
 }
-function lensRect() {
-  const b = S.theatre.bbox, pts = [];
-  for (let i = 0; i <= 4; i++) { const lo = b[0] + ((b[2] - b[0]) * i) / 4; pts.push(scr([lo, b[1]]), scr([lo, b[3]])); }
-  const xs = pts.map((p) => p[0]), ys = pts.map((p) => p[1]), pad = 16;
-  return [Math.min(...xs) - pad, Math.min(...ys) - pad, Math.max(...xs) + pad, Math.max(...ys) + pad];
+const inChapter = (ll, ch) => inBox(ll, ch.bbox); // a chapter is one place: other fronts stay out
+function eventAt(t) { // the last war event reached by t inside the current chapter (-1 if none yet)
+  const ch = S.cine.chapters[S.chap]; let i = -1;
+  S.war.events.forEach((e, j) => { const te = evTime(e); if (te >= ch.t0 - 0.01 && te <= t + 1e-6 && inChapter(e.lonlat, ch)) i = j; });
+  return i;
 }
-const inLens = (x, y) => { const r = S.lens; return !r || (x >= r[0] && x <= r[2] && y >= r[1] && y <= r[3]); };
-function drawVeil() {
-  const r = S.lens; if (!r) return;
-  const w = r[2] - r[0], h = r[3] - r[1];
-  ctx.save();
-  ctx.beginPath(); ctx.rect(0, 0, S.width, S.height); ctx.roundRect(r[0], r[1], w, h, 18);
-  ctx.globalAlpha = 0.74; ctx.fillStyle = theme.bg; ctx.fill("evenodd");
-  ctx.globalAlpha = 1; ctx.beginPath(); ctx.roundRect(r[0], r[1], w, h, 18); ctx.strokeStyle = theme.rule; ctx.lineWidth = 1; ctx.stroke();
-  ctx.restore();
+const chapterEvents = (ch) => S.war.events.map((e, i) => ({ e, i, t: evTime(e) })).filter((x) => x.t >= ch.t0 - 0.01 && x.t <= ch.t1 + 0.01 && inChapter(x.e.lonlat, ch));
+async function openChapter(n, opts = {}) {
+  const C = S.cine; if (!C?.chapters?.length) return;
+  n = Math.max(0, Math.min(C.chapters.length - 1, n));
+  const ch = C.chapters[n];
+  if (!opts.keepPlay) stopPlay();
+  S.chap = n; S.wt = opts.t ?? ch.t1;
+  S.wIdx = opts.wIdx ?? eventAt(S.wt); // -1 until the chapter's first event
+  S.subAt = performance.now(); S.warMap = null;
+  await go(warYear(S.wt), { keepWar: true });
+  if (!story() || S.chap !== n) return;
+  S.warMap = warSides(S.war, S.year);
+  renderWarChart(); updateHud(); draw(); renderCol(true); writeHash();
+  flyTo(boxBounds(ch.bbox), 24, opts.fast ? 700 : 1400, hudInset());
+}
+function setStoryT(t) {
+  S.wt = t;
+  const i = eventAt(t);
+  if (i !== S.wIdx) { S.wIdx = i; S.subAt = performance.now(); renderCol(); }
+  const y = warYear(t);
+  if (S.cinePlay && y > S.year && y !== S.cineYear) allianceChange(S.year, y);
+  if (y !== S.year && y !== S.cineYear) { S.cineYear = y; go(y, { keepWar: true }).then(() => { S.cineYear = null; }); }
+  updateHud(); draw();
+}
+function playChapter(chain) { // animate the current chapter from its start; with chain, continue through the next ones
+  const ch = S.cine.chapters[S.chap], n = S.chap;
+  if (S.wt >= ch.t1 - 1e-4 || S.wt < ch.t0) setStoryT(ch.t0);
+  const dur = 7 + 0.8 * ch.arrows.length; // seconds at 1x
+  S.cinePlay = true; S.playing = -1; S.chain = chain; setPlayIcon(true);
+  let last = 0;
+  const tick = (now) => {
+    if (!S.cinePlay || !story() || S.chap !== n) return;
+    const dt = last ? Math.min(0.1, (now - last) / 1000) : 0; last = now;
+    const t = Math.min(ch.t1, S.wt + (dt * (S.cineSpeed || 1) * (ch.t1 - ch.t0)) / dur);
+    setStoryT(t);
+    if (t < ch.t1) { S.cineRaf = requestAnimationFrame(tick); return; }
+    S.cinePlay = false; draw();
+    if (!S.chain || n >= S.cine.chapters.length - 1) return stopPlay();
+    const sp = S.cineSpeed || 1;
+    S.chainTimer = setTimeout(async () => {
+      if (!S.playing) return;
+      const next = S.cine.chapters[n + 1];
+      await openChapter(n + 1, { t: next.t0, keepPlay: true });
+      S.chainTimer = setTimeout(() => { if (S.playing && S.chap === n + 1) playChapter(true); }, 1500 / sp);
+    }, 2200 / sp);
+  };
+  S.cineRaf = requestAnimationFrame(tick);
 }
 function placeCallout() { // the current event, pinned where it happened with a leader line
   const el = $("#cCall"), e = S.war?.events[S.wIdx];
   S.callPt = null;
   if (S.callOn && e?.lonlat) {
     const [x, y] = scr(e.lonlat);
-    if (x > 8 && y > 8 && x < S.width - 8 && y < S.height - 8 && inLens(x, y)) {
-      const w = el.offsetWidth, h = el.offsetHeight, gap = 54, L = S.lens;
+    if (x > 8 && y > 8 && x < S.width - 8 && y < S.height - 8) {
+      const w = el.offsetWidth, h = el.offsetHeight, gap = 54;
       let left = x - gap - w;
-      if (left < 12 || (L && left < L[0] + 6)) left = x + gap;
+      if (left < 12) left = x + gap;
       if (left + w > S.width - 12) left = Math.max(12, x - gap - w);
       const top = Math.max(hudInset().top, Math.min(S.height - h - 44, y - h / 2));
       el.style.transform = `translate(${Math.round(left)}px, ${Math.round(top)}px)`;
@@ -1435,50 +1487,55 @@ function placeCallout() { // the current event, pinned where it happened with a 
   ctx.beginPath(); ctx.arc(x, y, 4.5, 0, 2 * Math.PI); ctx.fillStyle = theme.highlight; ctx.fill(); ctx.lineWidth = 2; ctx.strokeStyle = theme.bg; ctx.stroke();
   ctx.restore();
 }
-function theatreStatus(th, t) { // one line per front for the dock tabs
-  const C = S.cine, K = S.cineK, fr = C.fronts.filter((f) => th.fronts.includes(f.name) && f.keys.length);
-  const opened = fr.some((f) => f.keys[0].t <= t + 0.01), end = Math.max(...fr.map((f) => f.keys[f.keys.length - 1].t));
-  let ev = null; S.war.events.forEach((x, i) => { if (K.T[i + 1] <= t + 1e-6 && inBox(x.lonlat, th.bbox)) ev = x; });
-  if (!opened && !ev) return "Not yet opened";
-  if (end < t - 0.08 && end < K.t1 - 0.1) return `Closed since ${MONTHS[Math.floor((end % 1) * 12)].slice(0, 3)} ${Math.floor(end)}`;
-  if (!ev) return "Front holding";
-  return `${ev.label || shortYear(ev.year)}: ${ev.text.length > 46 ? ev.text.slice(0, 44) + "…" : ev.text}`;
-}
-function updateTheatreTabs() {
-  const C = S.cine; if (!C?.theatres?.length) return;
-  document.querySelectorAll("#chart .wthe button").forEach((b) => {
-    const th = C.theatres.find((x) => x.id === b.dataset.the); if (!th) return;
-    b.classList.toggle("on", th === S.theatre);
-    const st = theatreStatus(th, S.wt), sp = b.querySelector(".st");
-    if (sp.textContent !== st) sp.textContent = st;
-  });
-}
-function focusTheatre(id) {
-  const th = S.cine?.theatres?.find((x) => x.id === id); if (!th) return;
-  stopPlay(); S.lensLock = id; S.theatre = th; S.camAt = id; drawMini(); updateTheatreTabs(); updateHud();
-  const b = th.bbox, pts = [[b[0], b[1]], [b[2], b[3]], [b[0], b[3]], [b[2], b[1]], [(b[0] + b[2]) / 2, b[3]]].map((p) => projection(p));
-  flyTo(boxBounds(th.bbox), 24, 900, hudInset());
-}
-function drawMini() { // inset: every theatre, the current one boxed
-  const cv = $("#cMini"), C = S.cine;
-  if (!cv) return;
-  if (!S.war || !C?.theatres?.length || !S.items?.length) { cv.hidden = true; return; }
-  cv.hidden = false;
-  const W = 220, H = 140, dpr = S.dpr || 1;
-  cv.width = W * dpr; cv.height = H * dpr;
-  const m = cv.getContext("2d"); m.setTransform(dpr, 0, 0, dpr, 0, 0);
-  const bb = C.theatres.reduce((a, t) => [Math.min(a[0], t.bbox[0]), Math.min(a[1], t.bbox[1]), Math.max(a[2], t.bbox[2]), Math.max(a[3], t.bbox[3])], [180, 90, -180, -90]);
-  const pj = d3.geoEquirectangular().fitExtent([[8, 8], [W - 8, H - 8]], { type: "MultiPoint", coordinates: [[bb[0], bb[1]], [bb[2], bb[3]], [bb[0], bb[3]], [bb[2], bb[1]]] });
-  const gp = d3.geoPath(pj, m);
-  m.fillStyle = theme.bg; m.fillRect(0, 0, W, H);
-  for (const it of S.items) { const f = fillOf(it); m.fillStyle = f === "HATCH" ? theme.unknown : f; m.beginPath(); gp(it.f); m.fill(); }
-  for (const th of C.theatres) {
-    const b = th.bbox, [x0, y0] = pj([b[0], b[3]]), [x1, y1] = pj([b[2], b[1]]);
-    const on = th === S.theatre;
-    m.strokeStyle = on ? theme.highlight : theme.ink; m.globalAlpha = on ? 1 : 0.35; m.lineWidth = on ? 2 : 1;
-    m.strokeRect(x0, y0, x1 - x0, y1 - y0);
+const frontHold = (f) => { const last = f.keys[f.keys.length - 1]?.t ?? 0; return last >= S.cineK.t1 - 0.06 ? S.cineK.t1 : last + 0.1; };
+async function drawThumbs() { // one small map per chapter: borders, occupied land, fronts and offensives at its end
+  const C = S.cine, w = S.war; if (!C?.chapters?.length) return;
+  if (!C._thumbs) {
+    C._thumbs = [];
+    for (const ch of C.chapters) {
+      const y = Math.floor(ch.t1), chunk = await loadChunk(chunkOf(y));
+      if (S.cine !== C) return;
+      const feats = chunk.features.filter((f) => f.properties.f <= y && y <= f.properties.t).map((f) => correctFeature(f, y)).filter((f) => f && !f.properties.people);
+      const cv = document.createElement("canvas"); cv.width = 300; cv.height = 180;
+      const m = cv.getContext("2d"), b = ch.bbox, sm = warSides(w, y);
+      const pj = d3.geoEquirectangular().fitExtent([[4, 4], [296, 176]], { type: "MultiPoint", coordinates: [[b[0], b[1]], [b[2], b[3]], [b[0], b[3]], [b[2], b[1]]] });
+      const gp = d3.geoPath(pj, m), ring = (pts, close) => { m.beginPath(); pts.forEach((p, i) => { const [x, yy] = pj(p); i ? m.lineTo(x, yy) : m.moveTo(x, yy); }); if (close) m.closePath(); };
+      m.fillStyle = theme.bg; m.fillRect(0, 0, 300, 180);
+      for (const f of feats) { const sd = sm.has(f.properties.n) ? sm.get(f.properties.n) : sm.has(f.properties.k) ? sm.get(f.properties.k) : -1; m.fillStyle = sd >= 0 ? sideTint(sd) : theme.unknown; m.beginPath(); gp(f); m.fill(); }
+      for (const o of C.occupations) { const s = trackAt(o, ch.t1, S.cineK.t1); if (!s) continue; ring(s.pts, true); m.globalAlpha = 0.45; m.fillStyle = SIDE_COLORS[(o.side ?? 1) % SIDE_COLORS.length]; m.fill(); m.globalAlpha = 1; }
+      m.strokeStyle = theme.ink; m.lineWidth = 2; m.lineJoin = "round";
+      for (const f of C.fronts) { const s = trackAt(f, ch.t1, frontHold(f)); if (s) { ring(s.pts); m.stroke(); } }
+      for (const a of C.arrows) if (ch.arrowSet.has(a.name)) {
+        m.strokeStyle = m.fillStyle = SIDE_COLORS[(a.side ?? 0) % SIDE_COLORS.length]; m.lineWidth = 5; ring(a.smooth); m.stroke();
+        const P = a.smooth.map((p) => pj(p)), tip = P[P.length - 1], bk = P[Math.max(0, P.length - 4)], ang = Math.atan2(tip[1] - bk[1], tip[0] - bk[0]);
+        m.beginPath(); m.moveTo(tip[0] + Math.cos(ang) * 6, tip[1] + Math.sin(ang) * 6); m.lineTo(tip[0] + Math.cos(ang + 2.4) * 11, tip[1] + Math.sin(ang + 2.4) * 11); m.lineTo(tip[0] + Math.cos(ang - 2.4) * 11, tip[1] + Math.sin(ang - 2.4) * 11); m.closePath(); m.fill();
+      }
+      C._thumbs.push(cv);
+    }
   }
-  m.globalAlpha = 1;
+  document.querySelectorAll("#chart canvas[data-thumb]").forEach((c) => { const src = C._thumbs[+c.dataset.thumb]; if (src) c.getContext("2d").drawImage(src, 0, 0, c.width, c.height); });
+}
+function storyHTML() { // the column for a storyboard war: this chapter's story and events
+  const w = S.war, C = S.cine, ch = C.chapters[S.chap], evs = chapterEvents(ch);
+  let h = `<button class="back" data-act="exit-war">← Exit war</button>`;
+  h += `<div class="kicker">${esc(w.name)} · chapter ${S.chap + 1} of ${C.chapters.length}</div><h2 class="realm">${esc(ch.title)}</h2>`;
+  h += `<p class="chapdate">${esc(chapRange(ch))}</p><p class="prose">${esc(ch.text)}</p>`;
+  h += `<div class="mnav">${S.chap > 0 ? `<button class="mstep" data-chap="${S.chap - 1}">‹ ${esc(C.chapters[S.chap - 1].title)}</button>` : "<span></span>"}<button class="mstep primary" data-act="play-chapter">▶ Play this chapter</button>${S.chap < C.chapters.length - 1 ? `<button class="mstep" data-chap="${S.chap + 1}">${esc(C.chapters[S.chap + 1].title)} ›</button>` : ""}</div>`;
+  h += `<h3 class="sec">On the map</h3><ul class="changed">
+    <li><i class="ghost"></i>Front at the start of the chapter</li><li><i class="solid"></i>Front at the end</li>
+    <li><i class="newg"></i>Ground taken during the chapter</li><li><i class="arr"></i>The offensives that took it</li></ul>`;
+  if (evs.length) {
+    h += `<h3 class="sec">What happened</h3><ol class="events jtl">`;
+    evs.forEach(({ e, i, t }) => { const st = t <= S.wt + 1e-6 ? (i === S.wIdx ? "now" : "past") : "future"; h += `<li class="${st}"><button class="y linkish" data-wev="${i}">${esc(e.label || shortYear(e.year))}</button><div><span>${esc(e.text)}</span>${i === S.wIdx && e.detail ? `<p class="det">${esc(e.detail)}</p>` : ""}</div></li>`; });
+    h += `</ol>`;
+    if (S.wIdx >= 0) h += mediaHTML(`war:${w.id}:${S.wIdx}`);
+  }
+  h += `<h3 class="sec">All chapters</h3><ol class="chaps">${C.chapters.map((c, i) => `<li class="${i === S.chap ? "now" : ""}"><button class="linkish" data-chap="${i}"><span>${esc(chapRange(c, true))}</span>${esc(c.title)}</button></li>`).join("")}</ol>`;
+  if (w.summary) h += `<h3 class="sec">The war</h3><p class="prose">${esc(w.summary)}</p>`;
+  if (w.casualties) h += `<p class="note">${esc(w.casualties)}</p>`;
+  if (C.note) h += `<p class="note">${esc(C.note)}</p>`;
+  h += sourcesList([...(w.sources || []), ...(C.sources || [])]);
+  return h;
 }
 const MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 function updateHud() {
@@ -1487,8 +1544,9 @@ function updateHud() {
   $("#cMonth").textContent = monthly ? MONTHS[Math.max(0, Math.min(11, Math.floor((t - Math.floor(t)) * 12)))] : "";
   $("#cYear").textContent = shortYear(y);
   const shots = S.cine?.shots || [];
-  let sh = null; if (S.theatre || !S.cine?.theatres?.length) for (const s of shots) if (s.t <= t + 1e-6 && (!S.theatre || inBox(s.center, S.theatre.bbox))) sh = s; // the caption belongs to the theatre on screen
-  $("#cShot").textContent = sh?.caption || "";
+  const ch = story() ? S.cine.chapters[S.chap] : null;
+  let sh = null; if (!ch) for (const s of shots) if (s.t <= t + 1e-6) sh = s;
+  $("#cShot").textContent = ch ? ch.title : sh?.caption || "";
   const C = S.cine, now = [];
   if (C) {
     for (const a of C.arrows) { const st = arrowState(a, t); if (st && st.prog < 1) now.push(`<span><i class="ar" style="background:${SIDE_COLORS[(a.side ?? 0) % SIDE_COLORS.length]}"></i>${esc(a.name)}</span>`); }
@@ -1496,10 +1554,10 @@ function updateHud() {
   }
   const nowHTML = now.slice(0, 4).join("");
   const nl = $("#cNow"); if (nl.dataset.h !== nowHTML) { nl.innerHTML = nowHTML; nl.dataset.h = nowHTML; }
-  const e = w.events[S.wIdx], reached = e && S.cineK.T[S.wIdx + 1] <= t + 1e-6;
+  const e = w.events[S.wIdx], te = e ? evTime(e) : 0;
+  const reached = e && (ch ? te >= ch.t0 - 0.01 && te <= t + 1e-6 && inChapter(e.lonlat, ch) : S.cineK.T[S.wIdx + 1] <= t + 1e-6);
   const show = reached && (!S.cinePlay || performance.now() - S.subAt < 6500);
-  const th = S.theatre, ths = S.cine?.theatres || [];
-  $("#cThe").textContent = th ? `${th.name} · theatre ${ths.indexOf(th) + 1} of ${ths.length}` : "";
+  $("#cThe").textContent = ch ? `Chapter ${S.chap + 1} of ${S.cine.chapters.length} · ${chapRange(ch)}` : "";
   S.callOn = !!(show && e?.lonlat && S.cine);
   const call = $("#cCall"), ck = `${w.id}:${S.wIdx}`;
   if (S.callOn && call.dataset.k !== ck) { call.innerHTML = `<b>${esc(e.label || shortYear(e.year))}</b>${esc(e.text)}`; call.dataset.k = ck; }
@@ -1535,10 +1593,9 @@ function setWp(p, playing) {
     renderCol(true); writeHash();
     document.querySelectorAll("#chart .wmarks .mk").forEach((m, j) => m.classList.toggle("on", j === i));
     const now = $("#chart .wnow"); if (now) now.innerHTML = `<b>${i + 1}</b> / ${w.events.length} · ${esc(w.events[i]?.label || "")}`;
-    if (playing) { S.lensLock = null; syncTheatre(); camForEvent(w.events[i], false); }
+    if (playing && !S.cine?.shots?.length) camFor(S.wt, w.events[i], false);
   }
-  if (playing) S.lensLock = null;
-  syncTheatre();
+  if (playing && S.cine?.shots?.length) camFor(S.wt, null, false);
   const y = warYear(S.wt);
   if (playing && y > S.year && y !== S.cineYear) allianceChange(S.year, y);
   if (y !== S.year && y !== S.cineYear) { S.cineYear = y; go(y, { keepWar: true }).then(() => { S.cineYear = null; }); }
@@ -1584,6 +1641,7 @@ function cineTick(now) {
 }
 
 function warHTML() {
+  if (story()) return storyHTML();
   const w = S.war, e = w.events[S.wIdx], m = S.warMap || warSides(w, S.year);
   let h = `<button class="back" data-act="exit-war">← Exit war</button>`;
   h += `<div class="kicker">War · ${esc(w.dateLabel || `${shortYear(w.span[0])}–${shortYear(w.span[1])}`)}</div><h2 class="realm">${esc(w.name)}</h2>`;
@@ -1823,7 +1881,7 @@ function setupChart() {
   const scrub = (y) => { if (pending == null) setTimeout(() => { go(pending); pending = null; }, 24); pending = y; };
   el.addEventListener("pointerdown", (ev) => {
     const wk = ev.target.closest("[data-wev]");
-    if (S.war && ev.target.closest("[data-the]")) return; // theatre tabs are buttons, not the scrubber
+    if (S.war && ev.target.closest("[data-chap]")) return; // chapter cards are buttons, not the scrubber
     if (S.war) { ev.preventDefault(); stopPlay(); if (wk) return goWarEvent(+wk.dataset.wev);
       drag = { x: ev.clientX, target: ev.target, war: true }; el.setPointerCapture(ev.pointerId); return setWp(pOf(S.cineK, warT(ev))); }
     const mk = ev.target.closest(".mk");
@@ -1910,7 +1968,7 @@ function setPlayIcon(playing) {
 }
 function stopPlay() {
   if (!S.playing) return;
-  clearInterval(S.playing); cancelAnimationFrame(S.cineRaf); S.playing = null; setPlayIcon(false);
+  clearInterval(S.playing); cancelAnimationFrame(S.cineRaf); clearTimeout(S.chainTimer); S.playing = null; setPlayIcon(false);
   if (S.cinePlay) { S.cinePlay = false; updateHud(); draw(); }
 }
 function togglePlay() {
@@ -1918,9 +1976,9 @@ function togglePlay() {
   if (S.journey && S.year >= S.journey.span[1]) go(S.journey.span[0]);
   else if (!S.journey && S.year >= S.range[1]) go(S.range[0]);
   setPlayIcon(true);
+  if (story()) { playChapter(true); return; }
   if (S.war) {
     if (S.wp >= S.cineK.D - 0.05) { S.shotIdx = -1; setWp(0); }
-    if (S.lensLock) { S.lensLock = null; syncTheatre(); camForEvent(S.war.events[S.wIdx], true); } // back to following the events
     S.cinePlay = true; S.playing = -1; S.cineLast = 0; S.subAt = performance.now();
     S.cineRaf = requestAnimationFrame(cineTick);
     return;
@@ -1978,7 +2036,7 @@ function setupUI() {
   $("#momentsLink").onclick = (ev) => { ev.preventDefault(); if (S.journey) exitJourney(); S.view = "moments"; S.moment = null; draw(); renderCol(true); };
   $("#empiresLink").onclick = (ev) => { ev.preventDefault(); if (S.journey) exitJourney(); S.view = "empires"; S.moment = null; draw(); renderCol(true); };
   $("#dock").addEventListener("click", (ev) => { if (ev.target.closest("[data-act=exit-journey]")) exitJourney(); if (ev.target.closest("[data-act=exit-war]")) exitWar();
-    const tb = ev.target.closest("[data-the]"); if (tb) focusTheatre(tb.dataset.the);
+    const cb = ev.target.closest("[data-chap]"); if (cb && story()) openChapter(+cb.dataset.chap);
     const sp = ev.target.closest("[data-act=war-speed]"); if (sp) { S.cineSpeed = { 1: 2, 2: 0.5, 0.5: 1 }[S.cineSpeed || 1]; sp.textContent = `${S.cineSpeed}×`; } });
   $("#warsLink").onclick = (ev) => { ev.preventDefault(); if (S.journey) exitJourney(); if (S.war) exitWar(); S.view = "wars"; S.moment = null; draw(); renderCol(true); };
   $("#zoomIn").onclick = () => d3.select(canvas).transition().duration(300).call(S.zoom.scaleBy, 1.6);
@@ -2006,6 +2064,9 @@ function setupUI() {
     if (wo) return openWar(wo.dataset.war);
     const we = ev.target.closest("[data-wev]");
     if (we && S.war) { stopPlay(); return goWarEvent(+we.dataset.wev); }
+    const wc = ev.target.closest("[data-chap]");
+    if (wc && story()) return openChapter(+wc.dataset.chap);
+    if (ev.target.closest("[data-act=play-chapter]") && story()) { stopPlay(); return playChapter(false); }
     const jo = ev.target.closest("[data-journey]");
     if (jo) return openJourney(jo.dataset.journey);
     const je = ev.target.closest("[data-jev]");
@@ -2032,7 +2093,7 @@ function setupUI() {
   col.addEventListener("change", (ev) => { if (ev.target.id === "ghostToggle") { S.showGhost = ev.target.checked; draw(); } });
   addEventListener("hashchange", async () => {
     const h = parseHash();
-    if (h.war) { if (S.war?.id !== h.war) openWar(h.war, h.wev); else if (h.wev !== S.wIdx) goWarEvent(h.wev); return; }
+    if (h.war) { if (S.war?.id !== h.war) openWar(h.war, h.wev, h.chap); else if (story()) { if (h.chap != null && h.chap !== S.chap) openChapter(h.chap); } else if (h.wev !== S.wIdx) goWarEvent(h.wev); return; }
     if (h.moment) { if (S.moment?.id !== h.moment) openMoment(h.moment); return; }
     if (h.journey) { if (S.journey?.id !== h.journey) openJourney(h.journey, h.year); else if (h.year != null && h.year !== S.year) go(h.year); return; }
     if (h.year != null && h.year !== S.year) await go(h.year);
@@ -2041,6 +2102,7 @@ function setupUI() {
   addEventListener("keydown", (ev) => {
     if (ev.target.matches("input, textarea")) return;
     const step = ev.shiftKey ? 1 : 10;
+    if (story() && (ev.key === "ArrowLeft" || ev.key === "ArrowRight")) return openChapter(S.chap + (ev.key === "ArrowRight" ? 1 : -1));
     if (S.war && (ev.key === "ArrowLeft" || ev.key === "ArrowRight")) { stopPlay(); return goWarEvent(S.wIdx + (ev.key === "ArrowRight" ? 1 : -1)); }
     if (ev.key === "ArrowLeft") { stopPlay(); go(S.year - step); }
     else if (ev.key === "ArrowRight") { stopPlay(); go(S.year + step); }

@@ -3,77 +3,240 @@
  "start": "1914-07-28",
  "end": "1918-11-11",
  "note": "Front lines, occupied areas and arrows are approximate reconstructions traced by hand from campaign maps (chiefly the US Military Academy atlas of the Great War) and clipped to 1914 borders; they show the general shape and timing of each front, not exact trench positions.",
- "theatres": [
+ "chapters": [
   {
-   "id": "western",
-   "name": "Western Front",
+   "id": "sweep",
+   "title": "The sweep through Belgium",
+   "start": "1914-08-04",
+   "end": "1914-09-04",
    "bbox": [
-    -1.5,
+    -2,
     46.5,
-    8.5,
-    51.8
+    9,
+    52.5
    ],
-   "fronts": [
-    "Western Front"
-   ]
+   "arrows": [
+    "German advance through Belgium and France (Schlieffen Plan)"
+   ],
+   "text": "Germany planned to defeat France in about six weeks by swinging through neutral Belgium. Its armies crossed the border on 4 August, which brought Britain into the war, took the Liège forts and pushed the French and British back towards Paris."
   },
   {
-   "id": "eastern",
-   "name": "Eastern Front",
+   "id": "east-1914",
+   "title": "Tannenberg and Galicia",
+   "start": "1914-08-17",
+   "end": "1914-09-14",
    "bbox": [
-    17,
+    16,
+    46,
+    30,
+    56.5
+   ],
+   "arrows": [
+    "Tannenberg: German Eighth Army encircles the Russian Second Army",
+    "Russian offensive into Galicia"
+   ],
+   "text": "Russia attacked sooner than Germany expected. In East Prussia the Germans encircled and destroyed a Russian army at Tannenberg (26–30 August), but further south the Russians routed Austria-Hungary in Galicia, took Lemberg on 3 September and drove it back to the Carpathians."
+  },
+  {
+   "id": "marne",
+   "title": "Stopped on the Marne",
+   "start": "1914-09-05",
+   "end": "1914-12-15",
+   "bbox": [
+    -2,
+    46.5,
+    9,
+    52.5
+   ],
+   "arrows": [
+    "Allied counter-attack on the Marne"
+   ],
+   "text": "French and British counter-attacks on the Marne (5–12 September) forced the Germans back to the Aisne. Each side then tried to get round the other's northern flank in the 'Race to the Sea', and by December a line of trenches ran from the Channel coast to Switzerland."
+  },
+  {
+   "id": "gallipoli",
+   "title": "Gallipoli",
+   "start": "1915-04-25",
+   "end": "1916-01-09",
+   "bbox": [
+    24.5,
+    38.8,
+    28.5,
+    41.5
+   ],
+   "arrows": [
+    "Allied landings at Gallipoli"
+   ],
+   "text": "To open the straits to Russia and knock the Ottoman Empire out of the war, British, French, Australian and New Zealand troops landed on the Gallipoli peninsula on 25 April 1915. They never got far beyond the beaches and were evacuated by 9 January 1916."
+  },
+  {
+   "id": "great-retreat",
+   "title": "The Great Retreat",
+   "start": "1915-05-02",
+   "end": "1915-09-30",
+   "bbox": [
+    14,
     44,
-    34,
+    32,
     58
    ],
-   "fronts": [
-    "Eastern Front",
-    "Romanian Front"
-   ]
-  },
-  {
-   "id": "italian",
-   "name": "Italian Front",
-   "bbox": [
-    9.5,
-    44.8,
-    15.5,
-    47.4
+   "arrows": [
+    "Gorlice–Tarnów offensive",
+    "Central Powers summer offensive and the Russian Great Retreat"
    ],
-   "fronts": [
-    "Italian Front"
-   ]
+   "text": "A German and Austro-Hungarian attack at Gorlice broke the Russian line on 2 May 1915. Over the summer Russia gave up Poland, Lithuania and part of Courland: Warsaw fell on 5 August and the front moved hundreds of kilometres east."
   },
   {
-   "id": "balkans",
-   "name": "Balkans and Gallipoli",
+   "id": "serbia",
+   "title": "Serbia overrun",
+   "start": "1915-10-06",
+   "end": "1915-12-31",
    "bbox": [
     17,
-    37.5,
-    30,
-    45.9
+    39.5,
+    25,
+    46.5
    ],
-   "fronts": [
-    "Serbian Front (1914–1915)",
-    "Macedonian (Salonika) Front",
-    "Gallipoli – Cape Helles",
-    "Gallipoli – Anzac and Suvla"
-   ]
+   "arrows": [
+    "Austro-German invasion of Serbia",
+    "Bulgarian invasion of Serbia"
+   ],
+   "text": "With Bulgaria joining the Central Powers, Serbia was attacked from the north and the east in October 1915. Its army retreated over the Albanian mountains to the Adriatic in winter; the survivors were shipped to Corfu and later fought on the Salonika front."
   },
   {
-   "id": "middle-east",
-   "name": "Middle East",
+   "id": "verdun-somme",
+   "title": "Verdun and the Somme",
+   "start": "1916-02-21",
+   "end": "1916-12-18",
    "bbox": [
-    29,
-    29,
-    50,
-    43
+    -2,
+    46.5,
+    9,
+    52.5
    ],
-   "fronts": [
-    "Sinai and Palestine Front",
-    "Mesopotamian Front",
-    "Caucasus Front"
-   ]
+   "arrows": [
+    "German offensive at Verdun",
+    "Anglo-French offensive on the Somme"
+   ],
+   "text": "Germany attacked Verdun in February 1916 to wear down the French army. To relieve it, Britain and France attacked on the Somme on 1 July; the British suffered about 57,000 casualties on the first day alone. Both battles cost hundreds of thousands of lives for a few kilometres of ground."
+  },
+  {
+   "id": "brusilov-romania",
+   "title": "Brusilov and Romania",
+   "start": "1916-06-04",
+   "end": "1916-12-31",
+   "bbox": [
+    20,
+    42.5,
+    32,
+    53
+   ],
+   "arrows": [
+    "Brusilov offensive",
+    "Romanian invasion of Transylvania",
+    "Falkenhayn breaks through the Carpathians to Bucharest",
+    "Mackensen advances through Dobruja"
+   ],
+   "text": "General Brusilov's offensive in June 1916 broke the Austro-Hungarian front, Russia's greatest success of the war. Encouraged, Romania joined the Allies in August and invaded Transylvania, but German, Austro-Hungarian and Bulgarian armies struck back and took Bucharest on 6 December."
+  },
+  {
+   "id": "caporetto",
+   "title": "Caporetto",
+   "start": "1917-10-24",
+   "end": "1917-11-19",
+   "bbox": [
+    10,
+    44.5,
+    15.5,
+    47.5
+   ],
+   "arrows": [
+    "Austro-German breakthrough at Caporetto"
+   ],
+   "text": "After eleven costly battles on the Isonzo, Austro-German forces broke through at Caporetto on 24 October 1917. The Italian army fell back more than 100 km to the Piave river, where it held with British and French help."
+  },
+  {
+   "id": "jerusalem",
+   "title": "Jerusalem",
+   "start": "1917-10-31",
+   "end": "1917-12-11",
+   "bbox": [
+    32,
+    29.5,
+    37.5,
+    34
+   ],
+   "arrows": [
+    "Allenby takes Beersheba, Gaza and Jerusalem"
+   ],
+   "text": "In Palestine, General Allenby's British Empire forces broke the Ottoman line at Beersheba and Gaza and entered Jerusalem on 11 December 1917."
+  },
+  {
+   "id": "brest-litovsk",
+   "title": "Russia leaves the war",
+   "start": "1917-12-15",
+   "end": "1918-05-31",
+   "bbox": [
+    18,
+    43,
+    42,
+    60
+   ],
+   "arrows": [],
+   "text": "After the Bolshevik revolution Russia asked for peace. When talks stalled, German armies advanced almost unopposed in February 1918, and on 3 March Russia signed the Treaty of Brest-Litovsk, giving up Poland, the Baltic lands and Ukraine."
+  },
+  {
+   "id": "spring-1918",
+   "title": "Germany's last gamble",
+   "start": "1918-03-21",
+   "end": "1918-07-17",
+   "bbox": [
+    -2,
+    46.5,
+    9,
+    52.5
+   ],
+   "arrows": [
+    "German spring offensive: Operation Michael",
+    "German spring offensive: Aisne drive to the Marne"
+   ],
+   "text": "With troops freed from the east, Germany attacked in the West on 21 March 1918, before American armies could arrive in strength. The offensives drove deep bulges into the Allied line and reached the Marne again by June, but cost Germany its best troops."
+  },
+  {
+   "id": "collapse",
+   "title": "The other fronts collapse",
+   "start": "1918-09-15",
+   "end": "1918-11-04",
+   "bbox": [
+    10,
+    29,
+    40,
+    47.5
+   ],
+   "arrows": [
+    "Allied breakthrough on the Salonika front (Vardar offensive)",
+    "Battle of Megiddo and pursuit to Damascus",
+    "Italian offensive at Vittorio Veneto"
+   ],
+   "text": "In autumn 1918 the Allies broke through in Macedonia, and Bulgaria signed an armistice on 29 September. Victory at Megiddo in Palestine was followed by the Ottoman armistice on 30 October, and Vittorio Veneto in Italy by Austria-Hungary's on 3 November."
+  },
+  {
+   "id": "hundred-days",
+   "title": "The Hundred Days and the armistice",
+   "start": "1918-08-08",
+   "end": "1918-11-11",
+   "bbox": [
+    -2,
+    46.5,
+    9,
+    52.5
+   ],
+   "arrows": [
+    "Allied offensive at Amiens",
+    "Hundred Days Offensive",
+    "Meuse–Argonne offensive"
+   ],
+   "text": "From Amiens on 8 August the Allies, now joined by large American armies, pushed the Germans back in a rolling series of offensives. With its allies gone and revolution at home, Germany signed an armistice that took effect at 11 a.m. on 11 November 1918."
   }
  ],
  "fronts": [
