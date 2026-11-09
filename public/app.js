@@ -618,7 +618,7 @@ function setupMap() {
     if (keep && isFinite(keep[0])) {
       const [x, y] = projection(keep), k = S.t.k;
       d3.select(canvas).interrupt().call(S.zoom.transform, d3.zoomIdentity.translate(S.width / 2 - k * x, S.height / 2 - k * y).scale(k));
-      if (S.war && S.cine?.shots?.length && S.shotIdx >= 0) { S.shotIdx = -1; camFor(S.wt, null, true); } // the map area changed: re-aim the scene
+      if (S.war && S.cine) camForEvent(S.war.events[S.wIdx], true); // the map area changed: re-aim at the current event
     }
     draw();
   };
@@ -840,13 +840,18 @@ function pickAt(x, y) {
   return id ? id - 1 : -1;
 }
 
-function flyTo(bounds, maxK = 8) {
+function flyTo(bounds, maxK = 8, ms = 900, inset = null) { // inset {top, bottom}: screen space kept clear (e.g. for the war titles)
   const [[x0, y0], [x1, y1]] = bounds;
   if (!isFinite(x0) || !S.width) return;
-  const pad = 50;
-  const k = Math.max(1, Math.min(maxK, 0.85 / Math.max((x1 - x0) / (S.width - pad), (y1 - y0) / (S.height - pad))));
-  d3.select(canvas).transition().duration(900).ease(d3.easeCubicInOut)
-    .call(S.zoom.transform, d3.zoomIdentity.translate(S.width / 2 - k * (x0 + x1) / 2, S.height / 2 - k * (y0 + y1) / 2).scale(k));
+  const pad = 50, top = inset?.top || 0, h = S.height - top - (inset?.bottom || 0);
+  const k = Math.max(1, Math.min(maxK, 0.85 / Math.max((x1 - x0) / (S.width - pad), (y1 - y0) / Math.max(120, h - pad))));
+  d3.select(canvas).transition().duration(ms).ease(d3.easeCubicInOut)
+    .call(S.zoom.transform, d3.zoomIdentity.translate(S.width / 2 - k * (x0 + x1) / 2, top + h / 2 - k * (y0 + y1) / 2).scale(k));
+}
+function hudInset() { // the war date + titles block, so the camera frames the theatre below it
+  const el = document.querySelector("#cine .cinfo"), c = canvas.getBoundingClientRect();
+  if (!el || !c.height) return { top: 0, bottom: 40 };
+  return { top: Math.min(c.height * 0.4, el.getBoundingClientRect().bottom - c.top + 10), bottom: 40 };
 }
 function boundsOf(feats) {
   // Frame the main body of a realm: ignore polygon pieces smaller than 2% of its largest piece
@@ -1098,7 +1103,7 @@ async function openWar(id, idx = 0) {
   stopPlay();
   if (S.journey) exitJourney();
   S.sel = null; S.ghost = null; S.moment = null; S.war = w; S.view = "war"; S.wIdx = Math.max(0, Math.min(w.events.length - 1, idx));
-  S.cine = null; S.shotIdx = -1; S.theatre = null; S.lensLock = null;
+  S.cine = null; S.shotIdx = -1; S.theatre = null; S.lensLock = null; S.camAt = null;
   try { S.cine = await loadCinema(w); } catch (e) { console.warn("war layers unavailable", e); }
   if (S.war !== w) return;
   S.cineK = cineKnots(w, S.cine);
@@ -1119,14 +1124,14 @@ async function goWarEvent(i, fit) {
   if (S.war !== w) return;
   S.warMap = warSides(w, S.year);
   renderWarChart(); updateHud(); draw(); renderCol(true); writeHash();
-  if (fit && S.cine?.shots?.length) { S.shotIdx = -1; camFor(S.wt, e, true); }
+  if (fit && S.cine?.theatres?.length) camForEvent(e, true);
   else if (fit && w.events.length) { // frame all the war's events
     const pts = w.events.filter((x) => x.lonlat).map((x) => projection(x.lonlat));
     const xs = pts.map((p) => p[0]), ys = pts.map((p) => p[1]);
     const pad = 20;
     flyTo([[Math.min(...xs) - pad, Math.min(...ys) - pad], [Math.max(...xs) + pad, Math.max(...ys) + pad]], 7);
     S.shotIdx = -1;
-  } else camFor(S.wt, e, true);
+  } else camForEvent(e, true);
 }
 function exitWar() {
   stopPlay();
@@ -1346,7 +1351,7 @@ function drawCinema() { // screen space, above the labels: fronts, offensives, b
     ctx.beginPath();
     for (let i = 0; i < 12; i++) { const r = i % 2 ? 2.6 : 6.5, a2 = (i * Math.PI) / 6; ctx.lineTo(x + Math.cos(a2) * r, y + Math.sin(a2) * r); }
     ctx.closePath(); ctx.fillStyle = theme.ink; ctx.fill(); ctx.lineWidth = 1.5; ctx.strokeStyle = theme.bg; ctx.stroke();
-    const lab = b.name.replace(/^(First|Second|Third)?\s*Battle of (the )?/i, (m, n) => (n ? n + " " : "")).replace(/^the /i, "");
+    const lab = b.name.replace(/\s*\(.*\)\s*$/, "").replace(/^(First|Second|Third)?\s*Battle of (the )?/i, (m, n) => (n ? n + " " : "")).replace(/^the /i, "");
     ctx.font = '700 11px Inter, sans-serif'; ctx.textBaseline = "middle";
     const w = ctx.measureText(lab).width;
     let lx = x + 10, box = [lx - 2, y - 8, lx + w + 2, y + 8];
@@ -1359,14 +1364,31 @@ function drawCinema() { // screen space, above the labels: fronts, offensives, b
   drawVeil(); placeCallout();
 }
 // ---------------------------------------------------------------- theatre lens
-// The camera holds one theatre (from the current camera shot, or a tab the reader picked); outside it the map fades.
+// The camera goes where the current event is: it frames that event's theatre (or a tab the reader picked); outside it the map fades.
+// Events outside every theatre get the camera flown to them directly, with no lens.
 const inBox = (ll, b) => !!ll && ll[0] >= b[0] && ll[0] <= b[2] && ll[1] >= b[1] && ll[1] <= b[3];
 function theatreAt(t) {
   const C = S.cine; if (!C?.theatres?.length) return null;
   if (S.lensLock) return C.theatres.find((x) => x.id === S.lensLock) || null;
-  let sh = null; for (const s of C.shots) if (s.t <= t + 1e-6) sh = s;
-  if (!sh || (sh.zoom || 3) < 3.5) return null; // wide shots show every front
-  return C.theatres.find((x) => inBox(sh.center, x.bbox)) || null;
+  const e = S.war?.events[S.wIdx];
+  return (e && C.theatres.find((x) => inBox(e.lonlat, x.bbox))) || null;
+}
+function boxBounds(b) { // projected (zoom-1) bounds of a lon/lat box
+  const pts = []; for (let i = 0; i <= 4; i++) { const lo = b[0] + ((b[2] - b[0]) * i) / 4; pts.push(projection([lo, b[1]]), projection([lo, b[3]])); }
+  return [[Math.min(...pts.map((p) => p[0])), Math.min(...pts.map((p) => p[1]))], [Math.max(...pts.map((p) => p[0])), Math.max(...pts.map((p) => p[1]))]];
+}
+function camForEvent(e, jump) { // frame the current event: its theatre if it has one, else the place itself
+  const C = S.cine;
+  if (!C?.theatres?.length) return camFor(S.wt, e, jump);
+  const th = theatreAt(S.wt);
+  if (th) {
+    if (S.camAt === th.id && !jump) return; // already on this front: no cut
+    S.camAt = th.id; updateHud(); flyTo(boxBounds(th.bbox), 24, jump ? 900 : 1500, hudInset());
+  } else if (e?.lonlat) {
+    const key = e.lonlat.join(",");
+    if (S.camAt === key && !jump) return;
+    S.camAt = key; flyCenter(e.lonlat, 6, jump ? 900 : 1500);
+  }
 }
 function syncTheatre() {
   const th = theatreAt(S.wt);
@@ -1399,7 +1421,7 @@ function placeCallout() { // the current event, pinned where it happened with a 
       let left = x - gap - w;
       if (left < 12 || (L && left < L[0] + 6)) left = x + gap;
       if (left + w > S.width - 12) left = Math.max(12, x - gap - w);
-      const top = Math.max(118, Math.min(S.height - h - 44, y - h / 2));
+      const top = Math.max(hudInset().top, Math.min(S.height - h - 44, y - h / 2));
       el.style.transform = `translate(${Math.round(left)}px, ${Math.round(top)}px)`;
       S.callPt = { x, y, ax: left < x ? left + w : left, ay: Math.max(top + 10, Math.min(top + h - 10, y)) };
     }
@@ -1433,9 +1455,9 @@ function updateTheatreTabs() {
 }
 function focusTheatre(id) {
   const th = S.cine?.theatres?.find((x) => x.id === id); if (!th) return;
-  stopPlay(); S.lensLock = id; S.theatre = th; drawMini(); updateTheatreTabs(); updateHud();
+  stopPlay(); S.lensLock = id; S.theatre = th; S.camAt = id; drawMini(); updateTheatreTabs(); updateHud();
   const b = th.bbox, pts = [[b[0], b[1]], [b[2], b[3]], [b[0], b[3]], [b[2], b[1]], [(b[0] + b[2]) / 2, b[3]]].map((p) => projection(p));
-  flyTo([[Math.min(...pts.map((p) => p[0])), Math.min(...pts.map((p) => p[1]))], [Math.max(...pts.map((p) => p[0])), Math.max(...pts.map((p) => p[1]))]], 24);
+  flyTo(boxBounds(th.bbox), 24, 900, hudInset());
 }
 function drawMini() { // inset: every theatre, the current one boxed
   const cv = $("#cMini"), C = S.cine;
@@ -1465,7 +1487,7 @@ function updateHud() {
   $("#cMonth").textContent = monthly ? MONTHS[Math.max(0, Math.min(11, Math.floor((t - Math.floor(t)) * 12)))] : "";
   $("#cYear").textContent = shortYear(y);
   const shots = S.cine?.shots || [];
-  let sh = null; for (const s of shots) if (s.t <= t + 1e-6 && (!S.theatre || inBox(s.center, S.theatre.bbox))) sh = s; // the caption belongs to the theatre on screen
+  let sh = null; if (S.theatre || !S.cine?.theatres?.length) for (const s of shots) if (s.t <= t + 1e-6 && (!S.theatre || inBox(s.center, S.theatre.bbox))) sh = s; // the caption belongs to the theatre on screen
   $("#cShot").textContent = sh?.caption || "";
   const C = S.cine, now = [];
   if (C) {
@@ -1477,7 +1499,7 @@ function updateHud() {
   const e = w.events[S.wIdx], reached = e && S.cineK.T[S.wIdx + 1] <= t + 1e-6;
   const show = reached && (!S.cinePlay || performance.now() - S.subAt < 6500);
   const th = S.theatre, ths = S.cine?.theatres || [];
-  $("#cThe").textContent = th ? `${th.name} · theatre ${ths.indexOf(th) + 1} of ${ths.length}` : ths.length ? "All fronts" : "";
+  $("#cThe").textContent = th ? `${th.name} · theatre ${ths.indexOf(th) + 1} of ${ths.length}` : "";
   S.callOn = !!(show && e?.lonlat && S.cine);
   const call = $("#cCall"), ck = `${w.id}:${S.wIdx}`;
   if (S.callOn && call.dataset.k !== ck) { call.innerHTML = `<b>${esc(e.label || shortYear(e.year))}</b>${esc(e.text)}`; call.dataset.k = ck; }
@@ -1513,10 +1535,9 @@ function setWp(p, playing) {
     renderCol(true); writeHash();
     document.querySelectorAll("#chart .wmarks .mk").forEach((m, j) => m.classList.toggle("on", j === i));
     const now = $("#chart .wnow"); if (now) now.innerHTML = `<b>${i + 1}</b> / ${w.events.length} · ${esc(w.events[i]?.label || "")}`;
-    if (playing && !S.cine?.shots?.length) camFor(S.wt, w.events[i], false);
+    if (playing) { S.lensLock = null; syncTheatre(); camForEvent(w.events[i], false); }
   }
   if (playing) S.lensLock = null;
-  if (playing && S.cine?.shots?.length) camFor(S.wt, null, false);
   syncTheatre();
   const y = warYear(S.wt);
   if (playing && y > S.year && y !== S.cineYear) allianceChange(S.year, y);
@@ -1899,7 +1920,7 @@ function togglePlay() {
   setPlayIcon(true);
   if (S.war) {
     if (S.wp >= S.cineK.D - 0.05) { S.shotIdx = -1; setWp(0); }
-    if (S.lensLock) { S.lensLock = null; S.shotIdx = -1; } // resume the film's own camera
+    if (S.lensLock) { S.lensLock = null; syncTheatre(); camForEvent(S.war.events[S.wIdx], true); } // back to following the events
     S.cinePlay = true; S.playing = -1; S.cineLast = 0; S.subAt = performance.now();
     S.cineRaf = requestAnimationFrame(cineTick);
     return;

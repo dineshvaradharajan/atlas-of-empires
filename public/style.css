@@ -362,3 +362,4 @@ ol.jtl details p { margin: 4px 0 2px; font-size: 13.5px; line-height: 1.55; colo
 .warmode #chart.has-the .wcur { top: 86px; }
 .warmode #chart.has-the .wnow { top: 66px; }
 @media (max-width: 760px) { #cMini { display: none; } #chart .wthe { grid-template-columns: repeat(5, minmax(120px, 1fr)); overflow-x: auto; } }
+@media (max-width: 1100px) { #cine .cinfo #cShot { font-size: 16px; max-width: 300px; } #cine .cdate b, #cine .cdate span { font-size: 34px; } #cine .cinfo { top: 56px; } }
