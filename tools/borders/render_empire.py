@@ -25,6 +25,29 @@ def proj(ext, W, H):
     return lambda p: (round(ox + (p[0] - lo0) * c * s, 1), round(oy + (la1 - p[1]) * s, 1))
 
 
+def clip_box(ring, b):
+    """Clip a ring to a lon/lat box [w, s, e, n] (Sutherland-Hodgman)."""
+    def cut(pts, inside, inter):
+        out = []
+        for i, cur in enumerate(pts):
+            prev = pts[i - 1]
+            if inside(cur):
+                if not inside(prev): out.append(inter(prev, cur))
+                out.append(cur)
+            elif inside(prev):
+                out.append(inter(prev, cur))
+        return out
+    pts = [list(p) for p in ring]
+    for axis, val, keep in ((0, b[0], 1), (0, b[2], -1), (1, b[1], 1), (1, b[3], -1)):
+        if not pts: break
+        ins = lambda p, a=axis, v=val, k=keep: (p[a] - v) * k >= 0
+        def inter(p, q, a=axis, v=val):
+            u = (v - p[a]) / ((q[a] - p[a]) or 1e-12)
+            return [p[0] + (q[0] - p[0]) * u, p[1] + (q[1] - p[1]) * u]
+        pts = cut(pts, ins, inter)
+    return pts
+
+
 def main():
     target, out = sys.argv[1], sys.argv[2]
     os.makedirs(out, exist_ok=True)
@@ -55,8 +78,8 @@ def main():
     if not xs:
         sys.exit("empire not drawn in any sampled year")
     xs.sort(); ys.sort()
-    lo0, lo1 = xs[int(len(xs) * 0.03)], xs[int(len(xs) * 0.97) - 1]
-    la0, la1 = ys[int(len(ys) * 0.03)], ys[int(len(ys) * 0.97) - 1]
+    q = lambda v, f: v[min(len(v) - 1, max(0, int(len(v) * f)))] if len(v) >= 20 else (v[0] if f < 0.5 else v[-1])
+    lo0, lo1, la0, la1 = q(xs, 0.03), q(xs, 0.97), q(ys, 0.03), q(ys, 0.97)
     pad = max(2.0, 0.12 * max(lo1 - lo0, la1 - la0))
     ext = [lo0 - pad, lo1 + pad, max(-85, la0 - pad), min(85, la1 + pad)]
     claims = []
@@ -75,11 +98,20 @@ def main():
                 if b[2] < ext[0] - 5 or b[0] > ext[1] + 5 or b[3] < ext[2] - 5 or b[1] > ext[3] + 5:
                     continue
                 for ring in poly:
-                    d += "M" + "L".join("%s,%s" % P(p) for p in ring) + "Z"
+                    ring = clip_box(ring, s.crop) if s.crop else ring
+                    pieces = [ring]
+                    for c in s.cut:  # remove each cut box: keep the four regions around it
+                        BIG = 1e6
+                        regions = [[-BIG, -BIG, c[0], BIG], [c[2], -BIG, BIG, BIG], [c[0], -BIG, c[2], c[1]], [c[0], c[3], c[2], BIG]]
+                        pieces = [q for pc in pieces for q in (clip_box(pc, rg) for rg in regions) if len(q) >= 3]
+                    for pc in pieces:
+                        if len(pc) >= 3:
+                            d += "M" + "L".join("%s,%s" % P(p) for p in pc) + "Z"
             if not d:
                 continue
             on = bool(s.names() & ks)
-            g.append(f'<path d="{d}" fill="{"#e5402a" if on else "#d9d9d4"}" fill-opacity="{0.85 if on else 1}" stroke="#fff" stroke-width="0.8" fill-rule="evenodd"/>')
+            clip = ""
+            g.append(f'<path d="{d}" fill="{"#e5402a" if on else "#d9d9d4"}" fill-opacity="{0.85 if on else 1}" stroke="#fff" stroke-width="0.8" fill-rule="evenodd"{clip}/>')
             l = s.props.get("l")
             if l and ext[0] <= l[0] <= ext[1] and ext[2] <= l[1] <= ext[3] and s.props.get("a", 0) > 30000:
                 labels.append((P(l), s.n, on))

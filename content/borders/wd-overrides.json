@@ -1,0 +1,6 @@
+{
+ "_about": "Corrected Wikidata items for realms whose index link points at the wrong entity (used by tools/borders/check_borders.py). Each entry: realm name -> correct QID, with the reviewer and source that confirmed it.",
+ "items": {
+  "Joseon": {"wd": "Q28179", "why": "index links Q28405 (Gojoseon); confirmed by the East Asia border review", "source": "https://www.wikidata.org/wiki/Q28179"}
+ }
+}

@@ -36,12 +36,12 @@ def ring_area_km2(r):
 
 class State:
     """One drawn state polygon set in one year (after corrections)."""
-    __slots__ = ("n", "k", "orig", "polys", "bboxes", "crop", "recon", "props")
+    __slots__ = ("n", "k", "orig", "polys", "bboxes", "crop", "cut", "recon", "props")
 
-    def __init__(self, props, polys, crop=None, recon=False):
+    def __init__(self, props, polys, crop=None, recon=False, cut=None):
         self.props, self.n, self.k = props, props["n"], props.get("k") or props["n"]
         self.orig = props.get("fixed") or props["n"]
-        self.polys, self.crop, self.recon = polys, crop, recon
+        self.polys, self.crop, self.recon, self.cut = polys, crop, recon, cut or []
         self.bboxes = []
         for poly in polys:
             xs = [p[0] for p in poly[0]]; ys = [p[1] for p in poly[0]]
@@ -49,6 +49,8 @@ class State:
 
     def contains(self, pt):
         if self.crop and not (self.crop[0] <= pt[0] <= self.crop[2] and self.crop[1] <= pt[1] <= self.crop[3]):
+            return False
+        if any(c[0] <= pt[0] <= c[2] and c[1] <= pt[1] <= c[3] for c in self.cut):
             return False
         for poly, b in zip(self.polys, self.bboxes):
             if b[0] <= pt[0] <= b[2] and b[1] <= pt[1] <= b[3] and point_in_ring(pt, poly[0]) and not any(point_in_ring(pt, h) for h in poly[1:]):
@@ -79,10 +81,10 @@ class Borders:
         return self._chunks[start]
 
     def correct(self, props, y):
-        """Port of correctFeature(): returns (props, crop box) or None (not drawn as a state this year)."""
+        """Port of correctFeature(): returns (props, crop box, cut boxes) or None (not drawn as a state this year)."""
         c = self.corr["realms"].get(props["n"])
         if not c:
-            return props, None
+            return props, None, []
         if c.get("clip") and not _in(y, c["clip"]):
             return None
         if any(_in(y, r) for r in c.get("hide", [])):
@@ -90,11 +92,12 @@ class Borders:
         if any(_in(y, (r["from"], r["to"])) for r in c.get("asPeople", [])):
             return None  # drawn as a people (hatched), not a state
         crop = next((r["box"] for r in c.get("crop", []) if _in(y, (r["from"], r["to"]))), None)
+        cuts = [r["box"] for r in c.get("cut", []) if _in(y, (r["from"], r["to"]))]
         rl = next((r for r in c.get("relabel", []) if _in(y, (r["from"], r["to"]))), None)
         if not rl:
-            return props, crop
+            return props, crop, cuts
         k = props.get("k") if props.get("k") != props["n"] and not str(rl.get("key", "")).startswith("(") else rl.get("key", rl["name"])
-        return {**props, "n": rl["name"], "k": k, "fixed": props["n"]}, crop
+        return {**props, "n": rl["name"], "k": k, "fixed": props["n"]}, crop, cuts
 
     def states(self, y):
         if y in self._years:
@@ -109,7 +112,7 @@ class Borders:
                 continue
             g = f["geometry"]
             polys = g["coordinates"] if g["type"] == "MultiPolygon" else [g["coordinates"]]
-            out.append(State(r[0], polys, r[1]))
+            out.append(State(r[0], polys, r[1], cut=r[2]))
         act = [s for s in self.supps if s["from"] <= y <= s["to"]]
         if act:
             rep = {n for s in act for n in s.get("replaces", [])}

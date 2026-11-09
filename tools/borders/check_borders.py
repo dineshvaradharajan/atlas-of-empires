@@ -49,7 +49,11 @@ def main():
     B = bm.Borders()
     realms = B.realms
     trial = os.environ.get("CLAIMS_FILE")
-    out_dir = os.path.dirname(os.path.abspath(trial)) if trial or os.environ.get("CORRECTIONS_FILE") else os.path.join(ROOT, "content", "factcheck")
+    out_dir = os.path.join(ROOT, "content", "factcheck")
+    if trial or os.environ.get("CORRECTIONS_FILE"):  # a trial run never writes into the repo
+        import tempfile
+        cands = [os.path.dirname(os.path.abspath(x)) for x in (trial, os.environ.get("CORRECTIONS_FILE")) if x]
+        out_dir = next((d for d in cands if not d.startswith(ROOT)), tempfile.gettempdir())
     rep = {"claims": [], "links": [], "dates": [], "areas": [], "overlaps": [], "flicker": []}
     errors = 0
 
@@ -81,8 +85,10 @@ def main():
 
     # dates vs Wikidata
     wd = json.load(open(os.path.join(ROOT, "content", "borders", "wikidata-dates.json")))["items"]
+    ovp = os.path.join(ROOT, "content", "borders", "wd-overrides.json")
+    wd_fix = {n: v["wd"] for n, v in (json.load(open(ovp))["items"] if os.path.exists(ovp) else {}).items()}
     for n, r in realms.items():
-        q = r.get("wd")
+        q = wd_fix.get(n, r.get("wd"))
         if not q or q not in wd or n not in span or n.startswith(NOT_A_REALM):
             continue
         s, e = wd[q]["start"], wd[q]["end"]

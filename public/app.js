@@ -224,6 +224,13 @@ function correctFeature(f, y) {
     if (!byName) relabelCache.set(f, (byName = {}));
     f = byName["crop:" + cr.box.join(",")] ||= { type: "Feature", geometry: f.geometry, properties: { ...f.properties, crop: cr.box2 } };
   }
+  const cuts = c.cut ? c.cut.filter((r) => inRange(y, [r.from, r.to])) : [];
+  if (cuts.length) { // draw the shape except inside these lon/lat boxes (territory it never held)
+    cuts.forEach((r) => (r.box2 ||= boxFeature(r.box)));
+    let byName = relabelCache.get(f);
+    if (!byName) relabelCache.set(f, (byName = {}));
+    f = byName["cut:" + cuts.map((r) => r.box.join(",")).join("|") + (f.properties.crop ? ":c" : "")] ||= { type: "Feature", geometry: f.geometry, properties: { ...f.properties, cut: cuts.map((r) => r.box2) } };
+  }
   const rl = c.relabel && c.relabel.find((r) => inRange(y, [r.from, r.to]));
   if (!rl) return f;
   let byName = relabelCache.get(f);
@@ -244,12 +251,13 @@ function boxFeature([w, s, e, n]) { // a lon/lat rectangle as a densified, corre
   return g;
 }
 function strokeItem(c, it) { // outline that respects the coastline/crop clip of reconstructed and cropped realms
-  if (it.p.recon || it.p.crop) { c.save(); clipFor(c, it); c.stroke(pathOf(it.f)); c.restore(); }
+  if (it.p.recon || it.p.crop || it.p.cut) { c.save(); clipFor(c, it); c.stroke(pathOf(it.f)); c.restore(); }
   else c.stroke(pathOf(it.f));
 }
 function clipFor(c, it) { // apply the clip a feature needs (coastline for reconstructions, box for crops)
   if (it.p.recon) c.clip(S.landClip);
   if (it.p.crop) c.clip(pathOf(it.p.crop));
+  if (it.p.cut) { const p = new Path2D(); p.rect(-1e5, -1e5, 2e5, 2e5); for (const cf of it.p.cut) p.addPath(pathOf(cf)); c.clip(p, "evenodd"); }
 }
 function splitRows(tl, a, b) { // rows inside [a,b] and outside it, cutting rows that straddle the edges
   const inside = [], outside = [];
@@ -525,7 +533,7 @@ const GL = (() => {
     const later = [];
     for (const r of layer.ranges) {
       if (!r.fn) continue;
-      if (r.it.p.recon || r.it.p.crop) { later.push(r); continue; }
+      if (r.it.p.recon || r.it.p.crop || r.it.p.cut) { later.push(r); continue; }
       const f = fillOf(r.it);
       if (f === "HATCH") { const a = rgba(theme.peoplesBg), b = rgba(theme.peoplesLine); gl.uniform4f(U.c, ...a); gl.uniform4f(U.c2, ...b); gl.uniform1f(U.hatch, 1); gl.uniform1f(U.a, alpha); }
       else color(f, alpha);
@@ -533,7 +541,9 @@ const GL = (() => {
     }
     // clipped items (reconstructions to the coastline, crops to their box) via the stencil buffer
     for (const r of later) {
-      gl.enable(gl.STENCIL_TEST); gl.clear(gl.STENCIL_BUFFER_BIT);
+      gl.enable(gl.STENCIL_TEST);
+      gl.clearStencil(r.it.p.cut && !r.it.p.crop && !r.it.p.recon ? 1 : 0); gl.clear(gl.STENCIL_BUFFER_BIT); gl.clearStencil(0); // a cut-only item starts everywhere
+
       gl.colorMask(false, false, false, false); gl.stencilFunc(gl.ALWAYS, 1, 0xff); gl.stencilOp(gl.KEEP, gl.KEEP, gl.REPLACE);
       if (r.it.p.recon) {
         if (!landLayer) landLayer = makeLayer(S.items.filter((it) => it.kind !== "state"));
@@ -546,13 +556,19 @@ const GL = (() => {
         else { gl.drawArrays(gl.TRIANGLES, 0, g.fill.length / 2); gl.stencilFunc(gl.EQUAL, 1, 0xff); }
         gl.deleteBuffer(b);
       } else gl.stencilFunc(gl.EQUAL, 1, 0xff);
+      if (r.it.p.cut) { // punch the cut boxes out of the stencil
+        const ref = r.it.p.recon && r.it.p.crop ? 2 : 1;
+        gl.stencilFunc(gl.ALWAYS, 0, 0xff); gl.stencilOp(gl.KEEP, gl.KEEP, gl.REPLACE);
+        for (const cf of r.it.p.cut) { const g = build(cf), b = gl.createBuffer(); gl.bindBuffer(gl.ARRAY_BUFFER, b); gl.bufferData(gl.ARRAY_BUFFER, g.fill, gl.STREAM_DRAW); bindPos(b); gl.drawArrays(gl.TRIANGLES, 0, g.fill.length / 2); gl.deleteBuffer(b); }
+        gl.stencilFunc(gl.EQUAL, ref, 0xff);
+      }
       gl.colorMask(true, true, true, true); gl.stencilOp(gl.KEEP, gl.KEEP, gl.KEEP);
       bindPos(layer.fb); color(fillOf(r.it), alpha); gl.drawArrays(gl.TRIANGLES, r.f0, r.fn);
       gl.disable(gl.STENCIL_TEST);
     }
     // borders of ordinary states (reconstructed/cropped borders are drawn on the 2D overlay)
     bindPos(layer.lb); color(theme.borderLine || theme.border, alpha);
-    for (const r of layer.ranges) if (r.ln && r.it.kind === "state" && !r.it.p.recon && !r.it.p.crop) gl.drawArrays(gl.LINES, r.l0, r.ln);
+    for (const r of layer.ranges) if (r.ln && r.it.kind === "state" && !r.it.p.recon && !r.it.p.crop && !r.it.p.cut) gl.drawArrays(gl.LINES, r.l0, r.ln);
   }
   return {
     resize(w, h, dpr) { cv.width = Math.round(w * dpr); cv.height = Math.round(h * dpr); geo = new WeakMap(); freeLayer(cur); freeLayer(prev); freeLayer(landLayer); cur = prev = landLayer = null; statics = null; },
@@ -689,14 +705,14 @@ function draw() {
   theme.hatch.setTransform(new DOMMatrix().scale(1 / t.k)); // constant stripe width at any zoom
   for (const it of S.items) {
     const fl = fillOf(it); ctx.fillStyle = fl === "HATCH" ? theme.hatch : fl;
-    if (it.p.recon || it.p.crop) { ctx.save(); clipFor(ctx, it); ctx.fill(pathOf(it.f)); ctx.restore(); }
+    if (it.p.recon || it.p.crop || it.p.cut) { ctx.save(); clipFor(ctx, it); ctx.fill(pathOf(it.f)); ctx.restore(); }
     else ctx.fill(pathOf(it.f));
   }
   ctx.lineJoin = "round";
   ctx.strokeStyle = theme.border; ctx.lineWidth = 0.7 / t.k;
   for (const it of S.items) {
     if (it.kind !== "state") continue;
-    if (it.p.crop && !it.p.recon) { ctx.save(); clipFor(ctx, it); ctx.stroke(pathOf(it.f)); ctx.restore(); continue; }
+    if ((it.p.crop || it.p.cut) && !it.p.recon) { ctx.save(); clipFor(ctx, it); ctx.stroke(pathOf(it.f)); ctx.restore(); continue; }
     if (!it.p.recon) { ctx.stroke(pathOf(it.f)); continue; }
     ctx.save(); ctx.clip(S.landClip); ctx.setLineDash([3 / t.k, 2.5 / t.k]); ctx.strokeStyle = theme.ink3; ctx.stroke(pathOf(it.f)); ctx.restore();
     ctx.strokeStyle = theme.border;
@@ -734,7 +750,7 @@ function drawGL() {
   ctx.translate(t.x, t.y); ctx.scale(t.k, t.k);
   ctx.lineJoin = "round";
   for (const it of S.items) { // borders the GPU skips: reconstructions (dashed, coast-clipped) and crops
-    if (it.kind !== "state" || !(it.p.recon || it.p.crop)) continue;
+    if (it.kind !== "state" || !(it.p.recon || it.p.crop || it.p.cut)) continue;
     ctx.save(); clipFor(ctx, it);
     if (it.p.recon) { ctx.setLineDash([3 / t.k, 2.5 / t.k]); ctx.strokeStyle = theme.ink3; } else ctx.strokeStyle = theme.border;
     ctx.lineWidth = 0.7 / t.k; ctx.stroke(pathOf(it.f)); ctx.restore();
@@ -827,7 +843,7 @@ function drawPick() {
   S.items.forEach((it, i) => {
     const id = i + 1;
     pctx.fillStyle = `rgb(${id & 255},${(id >> 8) & 255},${(id >> 16) & 255})`;
-    if (it.p.recon || it.p.crop) { pctx.save(); clipFor(pctx, it); pctx.fill(pathOf(it.f)); pctx.restore(); }
+    if (it.p.recon || it.p.crop || it.p.cut) { pctx.save(); clipFor(pctx, it); pctx.fill(pathOf(it.f)); pctx.restore(); }
     else pctx.fill(pathOf(it.f));
   });
 }

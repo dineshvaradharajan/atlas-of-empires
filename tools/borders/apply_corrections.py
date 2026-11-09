@@ -6,6 +6,8 @@ Each review's "corrections" maps a realm name (as in public/data/clio/index.json
   hide [[from, to], ...]              hide in these years (appended)
   asPeople [{from, to, name}]         draw as a people, not a state (appended)
   crop [{from, to, box: [w, s, e, n]}]  draw only inside a lon/lat box (appended)
+  cut [{from, to, box: [w, s, e, n]}]   draw everywhere EXCEPT inside the box; several cuts may apply in the same years
+                                      (appended; keep cut boxes from overlapping each other)
   relabel [{from, to, name, key}]     the polygon is really another polity (appended; same from/to replaces)
   note "..."                          reader-facing map note (appended as a sentence; never names the data source)
   sources [{title, url}]              appended, deduplicated by url
@@ -21,7 +23,7 @@ def merge(entry, ops, who, log):
         if entry.get("clip") and entry["clip"] != ops["clip"]:
             log.append(f"  ! clip conflict ({who}): had {entry['clip']}, now {ops['clip']}")
         entry["clip"] = ops["clip"]
-    for k in ("hide", "asPeople", "crop"):
+    for k in ("hide", "asPeople", "crop", "cut"):
         for x in ops.get(k, []):
             if x not in entry.setdefault(k, []):
                 entry[k].append(x)
