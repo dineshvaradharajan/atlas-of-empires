@@ -1,0 +1,9340 @@
+{
+ "claims": [
+  {
+   "ok": true,
+   "place": "Constantinople",
+   "year": 1450,
+   "lonlat": [
+    28.97,
+    41.01
+   ],
+   "expected": [
+    "Byzantine Empire"
+   ],
+   "map": [
+    "Byzantine Empire"
+   ],
+   "region": "europe",
+   "source": {
+    "title": "Fall of Constantinople",
+    "url": "https://en.wikipedia.org/wiki/Fall_of_Constantinople"
+   },
+   "file": "claims-seed.json"
+  },
+  {
+   "ok": false,
+   "place": "Constantinople",
+   "year": 1460,
+   "lonlat": [
+    28.97,
+    41.01
+   ],
+   "expected": [
+    "(Ottoman Empire)",
+    "Ottoman Empire"
+   ],
+   "map": [
+    "Byzantine Empire"
+   ],
+   "region": "europe",
+   "source": {
+    "title": "Fall of Constantinople",
+    "url": "https://en.wikipedia.org/wiki/Fall_of_Constantinople"
+   },
+   "file": "claims-seed.json"
+  },
+  {
+   "ok": true,
+   "place": "Strasbourg",
+   "year": 1880,
+   "lonlat": [
+    7.75,
+    48.58
+   ],
+   "expected": [
+    "German Empire"
+   ],
+   "map": [
+    "German Empire"
+   ],
+   "region": "europe",
+   "source": {
+    "title": "Alsace-Lorraine",
+    "url": "https://en.wikipedia.org/wiki/Alsace%E2%80%93Lorraine"
+   },
+   "file": "claims-seed.json"
+  },
+  {
+   "ok": true,
+   "place": "Strasbourg",
+   "year": 1925,
+   "lonlat": [
+    7.75,
+    48.58
+   ],
+   "expected": [
+    "(French Third Republic)",
+    "French Third Republic"
+   ],
+   "map": [
+    "French Third Republic"
+   ],
+   "region": "europe",
+   "source": {
+    "title": "Alsace-Lorraine",
+    "url": "https://en.wikipedia.org/wiki/Alsace%E2%80%93Lorraine"
+   },
+   "file": "claims-seed.json"
+  },
+  {
+   "ok": true,
+   "place": "Delhi",
+   "year": 1700,
+   "lonlat": [
+    77.21,
+    28.65
+   ],
+   "expected": [
+    "Mughal Empire"
+   ],
+   "map": [
+    "Mughal Empire"
+   ],
+   "region": "south-asia",
+   "source": {
+    "title": "Mughal Empire",
+    "url": "https://en.wikipedia.org/wiki/Mughal_Empire"
+   },
+   "file": "claims-seed.json"
+  }
+ ],
+ "links": [
+  {
+   "realm": "(Phoenician Empire)",
+   "wd": "Q41642",
+   "label": "Phoenicia",
+   "wikidata_years": [
+    -2500,
+    -64
+   ],
+   "map_years": [
+    -1150,
+    -501
+   ],
+   "wiki": "Phoenicia"
+  },
+  {
+   "realm": "Qi",
+   "wd": "Q1143524",
+   "label": "Northern Qi",
+   "wikidata_years": [
+    550,
+    577
+   ],
+   "map_years": [
+    -750,
+    -204
+   ],
+   "wiki": "Qi (state)"
+  },
+  {
+   "realm": "Lu",
+   "wd": "Q555994",
+   "label": "Aq Qoyunlu",
+   "wikidata_years": [
+    1378,
+    1508
+   ],
+   "map_years": [
+    -750,
+    -248
+   ],
+   "wiki": "Lu (state)"
+  },
+  {
+   "realm": "Han",
+   "wd": "Q1968654",
+   "label": "Beylik of Saruhan",
+   "wikidata_years": [
+    1313,
+    1412
+   ],
+   "map_years": [
+    -404,
+    -203
+   ],
+   "wiki": "Han (state)"
+  },
+  {
+   "realm": "Early Cheras",
+   "wd": "Q877155",
+   "label": "Chera dynasty",
+   "wikidata_years": [
+    800,
+    1102
+   ],
+   "map_years": [
+    -291,
+    305
+   ],
+   "wiki": "Chera dynasty"
+  },
+  {
+   "realm": "Mayan City-States",
+   "wd": "Q28567",
+   "label": "Maya civilization",
+   "wikidata_years": [
+    -2000,
+    1521
+   ],
+   "map_years": [
+    -247,
+    849
+   ],
+   "wiki": "Maya civilization"
+  },
+  {
+   "realm": "Roman Empire",
+   "wd": "Q12544",
+   "label": "Byzantine Empire",
+   "wikidata_years": [
+    285,
+    1453
+   ],
+   "map_years": [
+    -31,
+    394
+   ],
+   "wiki": "Roman Empire"
+  },
+  {
+   "realm": "(Brythonic Kingdoms)",
+   "wd": "Q849967",
+   "label": "Celtic Britons",
+   "wikidata_years": [
+    -1200,
+    null
+   ],
+   "map_years": [
+    439,
+    1284
+   ],
+   "wiki": "Celtic Britons"
+  },
+  {
+   "realm": "Brythons",
+   "wd": "Q849967",
+   "label": "Celtic Britons",
+   "wikidata_years": [
+    -1200,
+    null
+   ],
+   "map_years": [
+    439,
+    1235
+   ],
+   "wiki": "Celtic Britons"
+  },
+  {
+   "realm": "Magyars",
+   "wd": "Q133032",
+   "label": "Hungarians",
+   "wikidata_years": [
+    -4000,
+    null
+   ],
+   "map_years": [
+    840,
+    910
+   ],
+   "wiki": "Hungarians"
+  },
+  {
+   "realm": "Later Mayan City-States",
+   "wd": "Q28567",
+   "label": "Maya civilization",
+   "wikidata_years": [
+    -2000,
+    1521
+   ],
+   "map_years": [
+    850,
+    1546
+   ],
+   "wiki": "Maya civilization"
+  },
+  {
+   "realm": "Commune of the Zealots",
+   "wd": "Q17151",
+   "label": "Thessaloniki",
+   "wikidata_years": [
+    -315,
+    null
+   ],
+   "map_years": [
+    1344,
+    1351
+   ],
+   "wiki": "Thessaloniki"
+  },
+  {
+   "realm": "Joseon",
+   "wd": "Q28405",
+   "label": "Gojoseon",
+   "wikidata_years": [
+    -2333,
+    -108
+   ],
+   "map_years": [
+    1395,
+    1897
+   ],
+   "wiki": "Joseon"
+  },
+  {
+   "realm": "Italian Republic",
+   "wd": "Q38",
+   "label": "Italy",
+   "wikidata_years": [
+    476,
+    null
+   ],
+   "map_years": [
+    1803,
+    1813
+   ],
+   "wiki": "Italy"
+  },
+  {
+   "realm": "Syria",
+   "wd": "Q41137",
+   "label": "Assyrian Empire",
+   "wikidata_years": [
+    -2025,
+    -609
+   ],
+   "map_years": [
+    1973,
+    2024
+   ],
+   "wiki": "Syria"
+  },
+  {
+   "realm": "(Russian Federation)",
+   "wd": "Q159",
+   "label": "Russia",
+   "wikidata_years": [
+    880,
+    null
+   ],
+   "map_years": [
+    1992,
+    2024
+   ],
+   "wiki": "Russia"
+  },
+  {
+   "realm": "Russian Federation",
+   "wd": "Q159",
+   "label": "Russia",
+   "wikidata_years": [
+    880,
+    null
+   ],
+   "map_years": [
+    1992,
+    2024
+   ],
+   "wiki": "Russia"
+  }
+ ],
+ "dates": [
+  {
+   "realm": "Zapotec Civilization",
+   "kind": "starts",
+   "map": -500,
+   "wikidata": -6700,
+   "diff": 6200,
+   "wd": "Q844750",
+   "label": "Zapotec"
+  },
+  {
+   "realm": "Domain of Rhodes",
+   "kind": "starts",
+   "map": 1206,
+   "wikidata": -1600,
+   "diff": 2806,
+   "wd": "Q43048",
+   "label": "Rhodes"
+  },
+  {
+   "realm": "Tamna",
+   "kind": "starts",
+   "map": 263,
+   "wikidata": -2337,
+   "diff": 2600,
+   "wd": "Q28057",
+   "label": "Tamna"
+  },
+  {
+   "realm": "Islamic Republic of Iran",
+   "kind": "starts",
+   "map": 1979,
+   "wikidata": -550,
+   "diff": 2529,
+   "wd": "Q794",
+   "label": "Iran"
+  },
+  {
+   "realm": "Roman Republic",
+   "kind": "starts",
+   "map": -500,
+   "wikidata": 1798,
+   "diff": -2298,
+   "wd": "Q175881",
+   "label": "Roman Republic"
+  },
+  {
+   "realm": "Gojoseon",
+   "kind": "starts",
+   "map": -197,
+   "wikidata": -2333,
+   "diff": 2136,
+   "wd": "Q28405",
+   "label": "Gojoseon"
+  },
+  {
+   "realm": "Roman Republic",
+   "kind": "ends",
+   "map": -32,
+   "wikidata": 1799,
+   "diff": -1831,
+   "wd": "Q175881",
+   "label": "Roman Republic"
+  },
+  {
+   "realm": "Song",
+   "kind": "starts",
+   "map": -750,
+   "wikidata": 960,
+   "diff": -1710,
+   "wd": "Q7462",
+   "label": "Song dynasty"
+  },
+  {
+   "realm": "Later Zhou",
+   "kind": "starts",
+   "map": -750,
+   "wikidata": 951,
+   "diff": -1701,
+   "wd": "Q1154556",
+   "label": "Later Zhou dynasty"
+  },
+  {
+   "realm": "Minoan civilization",
+   "kind": "starts",
+   "map": -1600,
+   "wikidata": -3300,
+   "diff": 1700,
+   "wd": "Q134178",
+   "label": "Minoan civilization"
+  },
+  {
+   "realm": "Jin",
+   "kind": "starts",
+   "map": -750,
+   "wikidata": 896,
+   "diff": -1646,
+   "wd": "Q6201794",
+   "label": "Jin"
+  },
+  {
+   "realm": "Sacred Band of Thebes",
+   "kind": "starts",
+   "map": -366,
+   "wikidata": -2000,
+   "diff": 1634,
+   "wd": "Q5760",
+   "label": "Thebes"
+  },
+  {
+   "realm": "Song",
+   "kind": "ends",
+   "map": -285,
+   "wikidata": 1279,
+   "diff": -1564,
+   "wd": "Q7462",
+   "label": "Song dynasty"
+  },
+  {
+   "realm": "Pandya Empire",
+   "kind": "starts",
+   "map": 1216,
+   "wikidata": -300,
+   "diff": 1516,
+   "wd": "Q844910",
+   "label": "Pandya dynasty"
+  },
+  {
+   "realm": "Republic of San Marino",
+   "kind": "starts",
+   "map": 1797,
+   "wikidata": 301,
+   "diff": 1496,
+   "wd": "Q238",
+   "label": "San Marino"
+  },
+  {
+   "realm": "Republic of Italy",
+   "kind": "starts",
+   "map": 1946,
+   "wikidata": 476,
+   "diff": 1470,
+   "wd": "Q38",
+   "label": "Italy"
+  },
+  {
+   "realm": "Twenty-second Dynasty of Egypt",
+   "kind": "ends",
+   "map": -701,
+   "wikidata": 715,
+   "diff": -1416,
+   "wd": "Q737629",
+   "label": "Twenty-second Dynasty of Egypt"
+  },
+  {
+   "realm": "Rhodes",
+   "kind": "starts",
+   "map": -188,
+   "wikidata": -1600,
+   "diff": 1412,
+   "wd": "Q43048",
+   "label": "Rhodes"
+  },
+  {
+   "realm": "Colchis",
+   "kind": "starts",
+   "map": -301,
+   "wikidata": -1700,
+   "diff": 1399,
+   "wd": "Q183150",
+   "label": "Colchis"
+  },
+  {
+   "realm": "Great Yuan",
+   "kind": "starts",
+   "map": -110,
+   "wikidata": 1271,
+   "diff": -1381,
+   "wd": "Q7313",
+   "label": "Yuan dynasty"
+  },
+  {
+   "realm": "Phoenicia",
+   "kind": "starts",
+   "map": -1150,
+   "wikidata": -2500,
+   "diff": 1350,
+   "wd": "Q41642",
+   "label": "Phoenicia"
+  },
+  {
+   "realm": "Federated Republic of Germany",
+   "kind": "starts",
+   "map": 1991,
+   "wikidata": 641,
+   "diff": 1350,
+   "wd": "Q183",
+   "label": "Germany"
+  },
+  {
+   "realm": "Sultanate of Kutai Kartanegara",
+   "kind": "starts",
+   "map": 1734,
+   "wikidata": 400,
+   "diff": 1334,
+   "wd": "Q1794655",
+   "label": "Kutai"
+  },
+  {
+   "realm": "Aquitaine",
+   "kind": "starts",
+   "map": 629,
+   "wikidata": 1960,
+   "diff": -1331,
+   "wd": "Q1179",
+   "label": "Aquitaine"
+  },
+  {
+   "realm": "Strathclyde",
+   "kind": "starts",
+   "map": 644,
+   "wikidata": 1975,
+   "diff": -1331,
+   "wd": "Q124661",
+   "label": "Strathclyde"
+  },
+  {
+   "realm": "Jin",
+   "kind": "ends",
+   "map": -405,
+   "wikidata": 923,
+   "diff": -1328,
+   "wd": "Q6201794",
+   "label": "Jin"
+  },
+  {
+   "realm": "Great Yuan",
+   "kind": "ends",
+   "map": 50,
+   "wikidata": 1368,
+   "diff": -1318,
+   "wd": "Q7313",
+   "label": "Yuan dynasty"
+  },
+  {
+   "realm": "Kingdom of Saudi Arabia",
+   "kind": "starts",
+   "map": 1936,
+   "wikidata": 622,
+   "diff": 1314,
+   "wd": "Q851",
+   "label": "Saudi Arabia"
+  },
+  {
+   "realm": "Republic of Slovenia",
+   "kind": "starts",
+   "map": 1992,
+   "wikidata": 700,
+   "diff": 1292,
+   "wd": "Q215",
+   "label": "Slovenia"
+  },
+  {
+   "realm": "Kingdom of Italy",
+   "kind": "starts",
+   "map": 587,
+   "wikidata": 1861,
+   "diff": -1274,
+   "wd": "Q172579",
+   "label": "Kingdom of Italy"
+  },
+  {
+   "realm": "Goths",
+   "kind": "ends",
+   "map": 206,
+   "wikidata": 1475,
+   "diff": -1269,
+   "wd": "Q42193",
+   "label": "Goths"
+  },
+  {
+   "realm": "Cyprus Condominium",
+   "kind": "starts",
+   "map": 692,
+   "wikidata": 1960,
+   "diff": -1268,
+   "wd": "Q229",
+   "label": "Cyprus"
+  },
+  {
+   "realm": "Kutai Kingdom",
+   "kind": "starts",
+   "map": 1648,
+   "wikidata": 400,
+   "diff": 1248,
+   "wd": "Q1794655",
+   "label": "Kutai"
+  },
+  {
+   "realm": "Republic of Serbia",
+   "kind": "starts",
+   "map": 2006,
+   "wikidata": 780,
+   "diff": 1226,
+   "wd": "Q403",
+   "label": "Serbia"
+  },
+  {
+   "realm": "Kingdom of Kush",
+   "kind": "starts",
+   "map": -1000,
+   "wikidata": -2180,
+   "diff": 1180,
+   "wd": "Q241790",
+   "label": "Kingdom of Kush"
+  },
+  {
+   "realm": "Imamate of Oman",
+   "kind": "starts",
+   "map": 1913,
+   "wikidata": 751,
+   "diff": 1162,
+   "wd": "Q2342282",
+   "label": "Oman proper"
+  },
+  {
+   "realm": "Aquitaine",
+   "kind": "ends",
+   "map": 895,
+   "wikidata": 2015,
+   "diff": -1120,
+   "wd": "Q1179",
+   "label": "Aquitaine"
+  },
+  {
+   "realm": "Republic of Belarus",
+   "kind": "starts",
+   "map": 1992,
+   "wikidata": 882,
+   "diff": 1110,
+   "wd": "Q184",
+   "label": "Belarus"
+  },
+  {
+   "realm": "Portugal",
+   "kind": "starts",
+   "map": 1976,
+   "wikidata": 868,
+   "diff": 1108,
+   "wd": "Q45",
+   "label": "Portugal"
+  },
+  {
+   "realm": "Qin",
+   "kind": "starts",
+   "map": -750,
+   "wikidata": 350,
+   "diff": -1100,
+   "wd": "Q1471995",
+   "label": "Former Qin"
+  },
+  {
+   "realm": "Yan",
+   "kind": "starts",
+   "map": -750,
+   "wikidata": 337,
+   "diff": -1087,
+   "wd": "Q1472004",
+   "label": "Former Yan"
+  },
+  {
+   "realm": "Republic of Poland",
+   "kind": "starts",
+   "map": 1953,
+   "wikidata": 960,
+   "diff": 993,
+   "wd": "Q36",
+   "label": "Poland"
+  },
+  {
+   "realm": "Kingdom of Pamplona",
+   "kind": "ends",
+   "map": 865,
+   "wikidata": 1841,
+   "diff": -976,
+   "wd": "Q200262",
+   "label": "Kingdom of Navarre"
+  },
+  {
+   "realm": "Minaeans",
+   "kind": "ends",
+   "map": -26,
+   "wikidata": -1000,
+   "diff": 974,
+   "wd": "Q1177379",
+   "label": "Minaeans"
+  },
+  {
+   "realm": "Strathclyde",
+   "kind": "ends",
+   "map": 1033,
+   "wikidata": 1996,
+   "diff": -963,
+   "wd": "Q124661",
+   "label": "Strathclyde"
+  },
+  {
+   "realm": "Patriarchate of Aquileia",
+   "kind": "starts",
+   "map": 1260,
+   "wikidata": 300,
+   "diff": 960,
+   "wd": "Q836894",
+   "label": "Patriarchate of Aquileia"
+  },
+  {
+   "realm": "Wu",
+   "kind": "starts",
+   "map": -750,
+   "wikidata": 198,
+   "diff": -948,
+   "wd": "Q274488",
+   "label": "Eastern Wu"
+  },
+  {
+   "realm": "Republic of Austria",
+   "kind": "starts",
+   "map": 1919,
+   "wikidata": 996,
+   "diff": 923,
+   "wd": "Q40",
+   "label": "Austria"
+  },
+  {
+   "realm": "Hungarian Republic",
+   "kind": "starts",
+   "map": 1919,
+   "wikidata": 1000,
+   "diff": 919,
+   "wd": "Q28",
+   "label": "Hungary"
+  },
+  {
+   "realm": "Makuria Kingdom",
+   "kind": "starts",
+   "map": 1415,
+   "wikidata": 500,
+   "diff": 915,
+   "wd": "Q829356",
+   "label": "Kingdom of Makuria"
+  },
+  {
+   "realm": "Kingdom of Norway",
+   "kind": "starts",
+   "map": 1814,
+   "wikidata": 900,
+   "diff": 914,
+   "wd": "Q20",
+   "label": "Norway"
+  },
+  {
+   "realm": "Pandya Dynasty",
+   "kind": "starts",
+   "map": 592,
+   "wikidata": -300,
+   "diff": 892,
+   "wd": "Q844910",
+   "label": "Pandya dynasty"
+  },
+  {
+   "realm": "Morocco",
+   "kind": "starts",
+   "map": 1670,
+   "wikidata": 789,
+   "diff": 881,
+   "wd": "Q1028",
+   "label": "Morocco"
+  },
+  {
+   "realm": "Kingdom of Germany",
+   "kind": "ends",
+   "map": 961,
+   "wikidata": 1806,
+   "diff": -845,
+   "wd": "Q175211",
+   "label": "Kingdom of Germany"
+  },
+  {
+   "realm": "Catalonia",
+   "kind": "starts",
+   "map": 1640,
+   "wikidata": 801,
+   "diff": 839,
+   "wd": "Q5705",
+   "label": "Catalonia"
+  },
+  {
+   "realm": "Serbia",
+   "kind": "starts",
+   "map": 1918,
+   "wikidata": 1084,
+   "diff": 834,
+   "wd": "Q1311990",
+   "label": "Grand Principality of Serbia"
+  },
+  {
+   "realm": "Kingdom of Khotan",
+   "kind": "starts",
+   "map": 888,
+   "wikidata": 56,
+   "diff": 832,
+   "wd": "Q914898",
+   "label": "Kingdom of Khotan"
+  },
+  {
+   "realm": "Poles",
+   "kind": "starts",
+   "map": 1830,
+   "wikidata": 1000,
+   "diff": 830,
+   "wd": "Q1026",
+   "label": "Poles"
+  },
+  {
+   "realm": "(Kingdom of France)",
+   "kind": "starts",
+   "map": 990,
+   "wikidata": 1815,
+   "diff": -825,
+   "wd": "Q207162",
+   "label": "Bourbon Restoration in France"
+  },
+  {
+   "realm": "Kingdom of France",
+   "kind": "starts",
+   "map": 990,
+   "wikidata": 1815,
+   "diff": -825,
+   "wd": "Q207162",
+   "label": "Bourbon Restoration in France"
+  },
+  {
+   "realm": "Eastern Roman Empire",
+   "kind": "ends",
+   "map": 632,
+   "wikidata": 1453,
+   "diff": -821,
+   "wd": "Q12544",
+   "label": "Byzantine Empire"
+  },
+  {
+   "realm": "Yaudheya Republic",
+   "kind": "starts",
+   "map": 306,
+   "wikidata": -500,
+   "diff": 806,
+   "wd": "Q8050331",
+   "label": "Yaudheya"
+  },
+  {
+   "realm": "Czech Republic",
+   "kind": "starts",
+   "map": 1992,
+   "wikidata": 1198,
+   "diff": 794,
+   "wd": "Q213",
+   "label": "Czech Republic"
+  },
+  {
+   "realm": "Xia",
+   "kind": "ends",
+   "map": 438,
+   "wikidata": 1227,
+   "diff": -789,
+   "wd": "Q7427",
+   "label": "Western Xia"
+  },
+  {
+   "realm": "County of Rosellón",
+   "kind": "starts",
+   "map": 896,
+   "wikidata": 1659,
+   "diff": -763,
+   "wd": "Q13522657",
+   "label": "Roussillon"
+  },
+  {
+   "realm": "Norway-Denmark",
+   "kind": "ends",
+   "map": 1055,
+   "wikidata": 1814,
+   "diff": -759,
+   "wd": "Q62651",
+   "label": "Denmark–Norway"
+  },
+  {
+   "realm": "Republic of Lithuania",
+   "kind": "starts",
+   "map": 1990,
+   "wikidata": 1236,
+   "diff": 754,
+   "wd": "Q37",
+   "label": "Lithuania"
+  },
+  {
+   "realm": "Olmec Civilization",
+   "kind": "starts",
+   "map": -650,
+   "wikidata": -1400,
+   "diff": 750,
+   "wd": "Q135364",
+   "label": "Olmecas"
+  },
+  {
+   "realm": "Kingdom of Lazica",
+   "kind": "starts",
+   "map": 638,
+   "wikidata": -100,
+   "diff": 738,
+   "wd": "Q136884",
+   "label": "Lazica"
+  },
+  {
+   "realm": "Wu",
+   "kind": "ends",
+   "map": -451,
+   "wikidata": 280,
+   "diff": -731,
+   "wd": "Q274488",
+   "label": "Eastern Wu"
+  },
+  {
+   "realm": "Pandya Dynasty",
+   "kind": "ends",
+   "map": 921,
+   "wikidata": 1650,
+   "diff": -729,
+   "wd": "Q844910",
+   "label": "Pandya dynasty"
+  },
+  {
+   "realm": "Duchy of Thuringia",
+   "kind": "ends",
+   "map": 723,
+   "wikidata": 1440,
+   "diff": -717,
+   "wd": "Q5311389",
+   "label": "Duchy of Thuringia"
+  },
+  {
+   "realm": "Zhao",
+   "kind": "starts",
+   "map": -404,
+   "wikidata": 304,
+   "diff": -708,
+   "wd": "Q1574107",
+   "label": "Han Zhao"
+  },
+  {
+   "realm": "Kingdom of Galicia",
+   "kind": "ends",
+   "map": 1125,
+   "wikidata": 1833,
+   "diff": -708,
+   "wd": "Q303421",
+   "label": "Kingdom of Galicia"
+  },
+  {
+   "realm": "Serbia",
+   "kind": "ends",
+   "map": 1918,
+   "wikidata": 1217,
+   "diff": 701,
+   "wd": "Q1311990",
+   "label": "Grand Principality of Serbia"
+  },
+  {
+   "realm": "Kingdom of Serbia",
+   "kind": "starts",
+   "map": 1188,
+   "wikidata": 1882,
+   "diff": -694,
+   "wd": "Q241748",
+   "label": "Kingdom of Serbia"
+  },
+  {
+   "realm": "Kingdom of Thailand",
+   "kind": "starts",
+   "map": 1932,
+   "wikidata": 1238,
+   "diff": 694,
+   "wd": "Q869",
+   "label": "Thailand"
+  },
+  {
+   "realm": "Ghana Empire",
+   "kind": "starts",
+   "map": 793,
+   "wikidata": 100,
+   "diff": 693,
+   "wd": "Q206789",
+   "label": "Ghana Empire"
+  },
+  {
+   "realm": "Kingdom of Lithuania",
+   "kind": "ends",
+   "map": 1939,
+   "wikidata": 1263,
+   "diff": 676,
+   "wd": "Q1656775",
+   "label": "Kingdom of Lithuania"
+  },
+  {
+   "realm": "Kingdom of Lithuania",
+   "kind": "starts",
+   "map": 1919,
+   "wikidata": 1251,
+   "diff": 668,
+   "wd": "Q1656775",
+   "label": "Kingdom of Lithuania"
+  },
+  {
+   "realm": "Mahameghavahana Dynasty",
+   "kind": "ends",
+   "map": -165,
+   "wikidata": 500,
+   "diff": -665,
+   "wd": "Q6733051",
+   "label": "Mahameghavahana dynasty"
+  },
+  {
+   "realm": "Mauretania",
+   "kind": "ends",
+   "map": 42,
+   "wikidata": 698,
+   "diff": -656,
+   "wd": "Q309272",
+   "label": "Mauretania"
+  },
+  {
+   "realm": "Malaya",
+   "kind": "starts",
+   "map": 1294,
+   "wikidata": 1948,
+   "diff": -654,
+   "wd": "Q1479726",
+   "label": "Federation of Malaya"
+  },
+  {
+   "realm": "Duchy of Łęczyca",
+   "kind": "ends",
+   "map": 1146,
+   "wikidata": 1793,
+   "diff": -647,
+   "wd": "Q970940",
+   "label": "Łęczyca Voivodeship"
+  },
+  {
+   "realm": "Tahirid Sultanate",
+   "kind": "ends",
+   "map": 1515,
+   "wikidata": 873,
+   "diff": 642,
+   "wd": "Q373981",
+   "label": "Tahirid dynasty"
+  },
+  {
+   "realm": "Great Mongol State",
+   "kind": "starts",
+   "map": 1912,
+   "wikidata": 1271,
+   "diff": 641,
+   "wd": "Q7313",
+   "label": "Yuan dynasty"
+  },
+  {
+   "realm": "Tahirid Sultanate",
+   "kind": "starts",
+   "map": 1459,
+   "wikidata": 821,
+   "diff": 638,
+   "wd": "Q373981",
+   "label": "Tahirid dynasty"
+  },
+  {
+   "realm": "Xia",
+   "kind": "starts",
+   "map": 410,
+   "wikidata": 1038,
+   "diff": -628,
+   "wd": "Q7427",
+   "label": "Western Xia"
+  },
+  {
+   "realm": "Principality of Waldeck and Pyrmont",
+   "kind": "starts",
+   "map": 1806,
+   "wikidata": 1180,
+   "diff": 626,
+   "wd": "Q165763",
+   "label": "Principality of Waldeck"
+  },
+  {
+   "realm": "Grand Duchy of Kraków",
+   "kind": "ends",
+   "map": 1293,
+   "wikidata": 1918,
+   "diff": -625,
+   "wd": "Q688918",
+   "label": "Grand Duchy of Cracow"
+  },
+  {
+   "realm": "Wei",
+   "kind": "starts",
+   "map": -404,
+   "wikidata": 220,
+   "diff": -624,
+   "wd": "Q320930",
+   "label": "Cao Wei"
+  },
+  {
+   "realm": "Minaeans",
+   "kind": "starts",
+   "map": -383,
+   "wikidata": -1000,
+   "diff": 617,
+   "wd": "Q1177379",
+   "label": "Minaeans"
+  },
+  {
+   "realm": "County of Rosellón",
+   "kind": "ends",
+   "map": 1176,
+   "wikidata": 1790,
+   "diff": -614,
+   "wd": "Q13522657",
+   "label": "Roussillon"
+  },
+  {
+   "realm": "Qin",
+   "kind": "ends",
+   "map": -219,
+   "wikidata": 394,
+   "diff": -613,
+   "wd": "Q1471995",
+   "label": "Former Qin"
+  },
+  {
+   "realm": "Malaya",
+   "kind": "ends",
+   "map": 1351,
+   "wikidata": 1963,
+   "diff": -612,
+   "wd": "Q1479726",
+   "label": "Federation of Malaya"
+  },
+  {
+   "realm": "Balinese Kingdom",
+   "kind": "starts",
+   "map": 1519,
+   "wikidata": 914,
+   "diff": 605,
+   "wd": "Q12491027",
+   "label": "Bali Kingdom"
+  },
+  {
+   "realm": "Janapada of Magadha",
+   "kind": "starts",
+   "map": -600,
+   "wikidata": -1200,
+   "diff": 600,
+   "wd": "Q234009",
+   "label": "Magadha"
+  },
+  {
+   "realm": "Janapada of Kuru",
+   "kind": "starts",
+   "map": -600,
+   "wikidata": -1200,
+   "diff": 600,
+   "wd": "Q1068408",
+   "label": "Kuru Kingdom"
+  },
+  {
+   "realm": "Janapada of Gandhāra",
+   "kind": "starts",
+   "map": -600,
+   "wikidata": -1200,
+   "diff": 600,
+   "wd": "Q112980583",
+   "label": "Gandhāra"
+  },
+  {
+   "realm": "Kingdom of León",
+   "kind": "ends",
+   "map": 1235,
+   "wikidata": 1833,
+   "diff": -598,
+   "wd": "Q175276",
+   "label": "Kingdom of Leon"
+  },
+  {
+   "realm": "Kingdom of Castile",
+   "kind": "ends",
+   "map": 1235,
+   "wikidata": 1833,
+   "diff": -598,
+   "wd": "Q179293",
+   "label": "Kingdom of Castile"
+  },
+  {
+   "realm": "Free City of Lübeck",
+   "kind": "starts",
+   "map": 1806,
+   "wikidata": 1226,
+   "diff": 580,
+   "wd": "Q950240",
+   "label": "Free and Hanseatic City of Lübeck"
+  },
+  {
+   "realm": "Ceylon",
+   "kind": "starts",
+   "map": 1236,
+   "wikidata": 1815,
+   "diff": -579,
+   "wd": "Q918153",
+   "label": "British Ceylon"
+  },
+  {
+   "realm": "Yan",
+   "kind": "ends",
+   "map": -204,
+   "wikidata": 370,
+   "diff": -574,
+   "wd": "Q1472004",
+   "label": "Former Yan"
+  },
+  {
+   "realm": "Chiangmai",
+   "kind": "starts",
+   "map": 1775,
+   "wikidata": 1201,
+   "diff": 574,
+   "wd": "Q52028",
+   "label": "Chiang Mai"
+  },
+  {
+   "realm": "Grand Duchy of Kraków",
+   "kind": "starts",
+   "map": 1279,
+   "wikidata": 1846,
+   "diff": -567,
+   "wd": "Q688918",
+   "label": "Grand Duchy of Cracow"
+  },
+  {
+   "realm": "Early Balinese Kingdoms",
+   "kind": "ends",
+   "map": 1343,
+   "wikidata": 1908,
+   "diff": -565,
+   "wd": "Q12491027",
+   "label": "Bali Kingdom"
+  },
+  {
+   "realm": "Đại Việt",
+   "kind": "starts",
+   "map": 966,
+   "wikidata": 1527,
+   "diff": -561,
+   "wd": "Q1317991",
+   "label": "Mạc dynasty"
+  },
+  {
+   "realm": "House of Savoy",
+   "kind": "starts",
+   "map": 1564,
+   "wikidata": 1003,
+   "diff": 561,
+   "wd": "Q200229",
+   "label": "House of Savoy"
+  },
+  {
+   "realm": "Great Mongol State",
+   "kind": "ends",
+   "map": 1925,
+   "wikidata": 1368,
+   "diff": 557,
+   "wd": "Q7313",
+   "label": "Yuan dynasty"
+  },
+  {
+   "realm": "Principality of Kiev",
+   "kind": "starts",
+   "map": 1056,
+   "wikidata": 500,
+   "diff": 556,
+   "wd": "Q1483430",
+   "label": "Principality of Kyiv"
+  },
+  {
+   "realm": "Zhao",
+   "kind": "ends",
+   "map": -226,
+   "wikidata": 329,
+   "diff": -555,
+   "wd": "Q1574107",
+   "label": "Han Zhao"
+  },
+  {
+   "realm": "Duchy of Wrocław",
+   "kind": "ends",
+   "map": 1201,
+   "wikidata": 1742,
+   "diff": -541,
+   "wd": "Q568638",
+   "label": "Duchy of Silesia"
+  },
+  {
+   "realm": "Kingdom of Aragon",
+   "kind": "ends",
+   "map": 1168,
+   "wikidata": 1707,
+   "diff": -539,
+   "wd": "Q199442",
+   "label": "Kingdom of Aragon"
+  },
+  {
+   "realm": "Principality of Andorra",
+   "kind": "starts",
+   "map": 1815,
+   "wikidata": 1278,
+   "diff": 537,
+   "wd": "Q228",
+   "label": "Andorra"
+  },
+  {
+   "realm": "Luxembourg",
+   "kind": "starts",
+   "map": 1890,
+   "wikidata": 1353,
+   "diff": 537,
+   "wd": "Q2719360",
+   "label": "Duchy of Luxembourg"
+  },
+  {
+   "realm": "Anglo-Saxon England",
+   "kind": "ends",
+   "map": 533,
+   "wikidata": 1066,
+   "diff": -533,
+   "wd": "Q784963",
+   "label": "Anglo-Saxon England"
+  },
+  {
+   "realm": "Michoacán",
+   "kind": "starts",
+   "map": 1305,
+   "wikidata": 1823,
+   "diff": -518,
+   "wd": "Q79861",
+   "label": "Michoacán"
+  },
+  {
+   "realm": "Kingdom of Monaco",
+   "kind": "starts",
+   "map": 1815,
+   "wikidata": 1297,
+   "diff": 518,
+   "wd": "Q235",
+   "label": "Monaco"
+  },
+  {
+   "realm": "Empire of Kanem",
+   "kind": "ends",
+   "map": 1384,
+   "wikidata": 1900,
+   "diff": -516,
+   "wd": "Q1139762",
+   "label": "Kanem-Bornu Empire"
+  },
+  {
+   "realm": "County of Ribagorza",
+   "kind": "ends",
+   "map": 1084,
+   "wikidata": 1598,
+   "diff": -514,
+   "wd": "Q1297894",
+   "label": "County of Ribagorza"
+  },
+  {
+   "realm": "County of Auvergne",
+   "kind": "ends",
+   "map": 1501,
+   "wikidata": 2015,
+   "diff": -514,
+   "wd": "Q1152",
+   "label": "Auvergne"
+  },
+  {
+   "realm": "Margraviate of Moravia",
+   "kind": "ends",
+   "map": 1414,
+   "wikidata": 1918,
+   "diff": -504,
+   "wd": "Q2670751",
+   "label": "Margraviate of Moravia"
+  },
+  {
+   "realm": "Duchy of Głogów",
+   "kind": "ends",
+   "map": 1313,
+   "wikidata": 1815,
+   "diff": -502,
+   "wd": "Q684501",
+   "label": "Duchy of Głogów"
+  },
+  {
+   "realm": "Kingdom of Galicia",
+   "kind": "starts",
+   "map": 911,
+   "wikidata": 410,
+   "diff": 501,
+   "wd": "Q303421",
+   "label": "Kingdom of Galicia"
+  },
+  {
+   "realm": "Elam",
+   "kind": "starts",
+   "map": -3200,
+   "wikidata": -2700,
+   "diff": -500,
+   "wd": "Q128904",
+   "label": "Elam"
+  },
+  {
+   "realm": "Lydia",
+   "kind": "starts",
+   "map": -700,
+   "wikidata": -1200,
+   "diff": 500,
+   "wd": "Q620765",
+   "label": "Lydia"
+  },
+  {
+   "realm": "Janapada of Anga",
+   "kind": "starts",
+   "map": -600,
+   "wikidata": -1100,
+   "diff": 500,
+   "wd": "Q1155818",
+   "label": "Anga Kingdom"
+  },
+  {
+   "realm": "Zhou Dynasty",
+   "kind": "ends",
+   "map": -751,
+   "wikidata": -256,
+   "diff": -495,
+   "wd": "Q35216",
+   "label": "Zhou dynasty"
+  },
+  {
+   "realm": "Janapada of Kuru",
+   "kind": "ends",
+   "map": -405,
+   "wikidata": -900,
+   "diff": 495,
+   "wd": "Q1068408",
+   "label": "Kuru Kingdom"
+  },
+  {
+   "realm": "County of Blôis",
+   "kind": "starts",
+   "map": 990,
+   "wikidata": 500,
+   "diff": 490,
+   "wd": "Q19336869",
+   "label": "County of Blois"
+  },
+  {
+   "realm": "Norway-Denmark",
+   "kind": "starts",
+   "map": 1046,
+   "wikidata": 1536,
+   "diff": -490,
+   "wd": "Q62651",
+   "label": "Denmark–Norway"
+  },
+  {
+   "realm": "Kathmandu",
+   "kind": "starts",
+   "map": 1202,
+   "wikidata": 723,
+   "diff": 479,
+   "wd": "Q3037",
+   "label": "Kathmandu"
+  },
+  {
+   "realm": "Tondo",
+   "kind": "starts",
+   "map": 1375,
+   "wikidata": 900,
+   "diff": 475,
+   "wd": "Q1642472",
+   "label": "Tondo"
+  },
+  {
+   "realm": "Duchy of Lorraine",
+   "kind": "starts",
+   "map": 1431,
+   "wikidata": 959,
+   "diff": 472,
+   "wd": "Q155019",
+   "label": "Duchy of Lorraine"
+  },
+  {
+   "realm": "Wei",
+   "kind": "ends",
+   "map": -204,
+   "wikidata": 265,
+   "diff": -469,
+   "wd": "Q320930",
+   "label": "Cao Wei"
+  },
+  {
+   "realm": "(Vassalage of Kingdom of Bohemia to Holy Roman Empire)",
+   "kind": "ends",
+   "map": 1452,
+   "wikidata": 1918,
+   "diff": -466,
+   "wd": "Q42585",
+   "label": "Kingdom of Bohemia"
+  },
+  {
+   "realm": "State of Libya",
+   "kind": "starts",
+   "map": 2014,
+   "wikidata": 1551,
+   "diff": 463,
+   "wd": "Q1016",
+   "label": "Libya"
+  },
+  {
+   "realm": "Principality of Transylvania",
+   "kind": "starts",
+   "map": 1572,
+   "wikidata": 1111,
+   "diff": 461,
+   "wd": "Q655621",
+   "label": "Principality of Transylvania"
+  },
+  {
+   "realm": "Kingdom of Scotland",
+   "kind": "starts",
+   "map": 1294,
+   "wikidata": 843,
+   "diff": 451,
+   "wd": "Q230791",
+   "label": "Kingdom of Scotland"
+  },
+  {
+   "realm": "Qataban",
+   "kind": "starts",
+   "map": -350,
+   "wikidata": -800,
+   "diff": 450,
+   "wd": "Q748595",
+   "label": "Qataban"
+  },
+  {
+   "realm": "Nabhani Dynasty",
+   "kind": "ends",
+   "map": 1176,
+   "wikidata": 1624,
+   "diff": -448,
+   "wd": "Q11938308",
+   "label": "Nabhani dynasty"
+  },
+  {
+   "realm": "Free City of Frankfurt",
+   "kind": "starts",
+   "map": 1820,
+   "wikidata": 1372,
+   "diff": 448,
+   "wd": "Q704300",
+   "label": "Free City of Frankfurt"
+  },
+  {
+   "realm": "Illyrian Kingdom",
+   "kind": "starts",
+   "map": -256,
+   "wikidata": -700,
+   "diff": 444,
+   "wd": "Q16084290",
+   "label": "Illyrian kingdom"
+  },
+  {
+   "realm": "Chalukya Dynasty",
+   "kind": "ends",
+   "map": 756,
+   "wikidata": 1200,
+   "diff": -444,
+   "wd": "Q1395011",
+   "label": "Chalukya dynasty"
+  },
+  {
+   "realm": "Ceylon",
+   "kind": "ends",
+   "map": 1506,
+   "wikidata": 1948,
+   "diff": -442,
+   "wd": "Q918153",
+   "label": "British Ceylon"
+  },
+  {
+   "realm": "Dauphiné",
+   "kind": "ends",
+   "map": 1351,
+   "wikidata": 1790,
+   "diff": -439,
+   "wd": "Q151999",
+   "label": "Dauphiné"
+  },
+  {
+   "realm": "Duchy of Silesia",
+   "kind": "ends",
+   "map": 1304,
+   "wikidata": 1742,
+   "diff": -438,
+   "wd": "Q568638",
+   "label": "Duchy of Silesia"
+  },
+  {
+   "realm": "Republic of Brazil",
+   "kind": "starts",
+   "map": 1987,
+   "wikidata": 1549,
+   "diff": 438,
+   "wd": "Q155",
+   "label": "Brazil"
+  },
+  {
+   "realm": "Phoenicia",
+   "kind": "ends",
+   "map": -501,
+   "wikidata": -64,
+   "diff": -437,
+   "wd": "Q41642",
+   "label": "Phoenicia"
+  },
+  {
+   "realm": "Silla",
+   "kind": "starts",
+   "map": 378,
+   "wikidata": -57,
+   "diff": 435,
+   "wd": "Q28456",
+   "label": "Silla"
+  },
+  {
+   "realm": "Electorate of Trier",
+   "kind": "starts",
+   "map": 1333,
+   "wikidata": 898,
+   "diff": 435,
+   "wd": "Q1794352",
+   "label": "Electorate of Trier"
+  },
+  {
+   "realm": "Xianbei",
+   "kind": "ends",
+   "map": 237,
+   "wikidata": 670,
+   "diff": -433,
+   "wd": "Q861054",
+   "label": "Xianbei"
+  },
+  {
+   "realm": "County of Holland",
+   "kind": "ends",
+   "map": 1362,
+   "wikidata": 1795,
+   "diff": -433,
+   "wd": "Q762943",
+   "label": "County of Holland"
+  },
+  {
+   "realm": "Kingdom of Sicily",
+   "kind": "ends",
+   "map": 1384,
+   "wikidata": 1816,
+   "diff": -432,
+   "wd": "Q188586",
+   "label": "Kingdom of Sicily"
+  },
+  {
+   "realm": "House of Ascania",
+   "kind": "ends",
+   "map": 1486,
+   "wikidata": 1918,
+   "diff": -432,
+   "wd": "Q168352",
+   "label": "House of Ascania"
+  },
+  {
+   "realm": "County of Poitou",
+   "kind": "starts",
+   "map": 1206,
+   "wikidata": 778,
+   "diff": 428,
+   "wd": "Q2991374",
+   "label": "County of Poitou"
+  },
+  {
+   "realm": "Shirvan",
+   "kind": "starts",
+   "map": 825,
+   "wikidata": 400,
+   "diff": 425,
+   "wd": "Q638064",
+   "label": "Shirvan"
+  },
+  {
+   "realm": "Qarlugs",
+   "kind": "starts",
+   "map": 793,
+   "wikidata": 1216,
+   "diff": -423,
+   "wd": "Q2330335",
+   "label": "Mongol invasion of Central Asia"
+  },
+  {
+   "realm": "Isle of Man",
+   "kind": "starts",
+   "map": 1344,
+   "wikidata": 1765,
+   "diff": -421,
+   "wd": "Q9676",
+   "label": "Isle of Man"
+  },
+  {
+   "realm": "Federated Republic of Brazil",
+   "kind": "starts",
+   "map": 1967,
+   "wikidata": 1549,
+   "diff": 418,
+   "wd": "Q155",
+   "label": "Brazil"
+  },
+  {
+   "realm": "Duchy of Styria",
+   "kind": "ends",
+   "map": 1501,
+   "wikidata": 1918,
+   "diff": -417,
+   "wd": "Q580447",
+   "label": "Duchy of Styria"
+  },
+  {
+   "realm": "County of Flanders",
+   "kind": "ends",
+   "map": 1384,
+   "wikidata": 1797,
+   "diff": -413,
+   "wd": "Q157070",
+   "label": "County of Flanders"
+  },
+  {
+   "realm": "Kingdom of Navarre",
+   "kind": "ends",
+   "map": 1428,
+   "wikidata": 1841,
+   "diff": -413,
+   "wd": "Q200262",
+   "label": "Kingdom of Navarre"
+  },
+  {
+   "realm": "Sabaeans",
+   "kind": "starts",
+   "map": -800,
+   "wikidata": -1200,
+   "diff": 400,
+   "wd": "Q940785",
+   "label": "Sabaeans"
+  },
+  {
+   "realm": "Janapada of Kāśī",
+   "kind": "starts",
+   "map": -600,
+   "wikidata": -1000,
+   "diff": 400,
+   "wd": "Q12660335",
+   "label": "Kashi"
+  },
+  {
+   "realm": "Kingdom of Hungary",
+   "kind": "ends",
+   "map": 1546,
+   "wikidata": 1946,
+   "diff": -400,
+   "wd": "Q171150",
+   "label": "Kingdom of Hungary"
+  },
+  {
+   "realm": "Liang Dynasty",
+   "kind": "starts",
+   "map": 510,
+   "wikidata": 907,
+   "diff": -397,
+   "wd": "Q783489",
+   "label": "Later Liang dynasty"
+  },
+  {
+   "realm": "Southern Xiongnu",
+   "kind": "ends",
+   "map": 105,
+   "wikidata": 500,
+   "diff": -395,
+   "wd": "Q188836",
+   "label": "Xiongnu"
+  },
+  {
+   "realm": "County of Urgell",
+   "kind": "ends",
+   "map": 1808,
+   "wikidata": 1413,
+   "diff": 395,
+   "wd": "Q1514510",
+   "label": "County of Urgell"
+  },
+  {
+   "realm": "Margraviate of Brandenburg",
+   "kind": "ends",
+   "map": 1414,
+   "wikidata": 1806,
+   "diff": -392,
+   "wd": "Q148499",
+   "label": "Margraviate of Brandenburg"
+  },
+  {
+   "realm": "Atropatene",
+   "kind": "ends",
+   "map": -165,
+   "wikidata": 226,
+   "diff": -391,
+   "wd": "Q260437",
+   "label": "Atropatene"
+  },
+  {
+   "realm": "(Kingdom of Bohemia)",
+   "kind": "ends",
+   "map": 1528,
+   "wikidata": 1918,
+   "diff": -390,
+   "wd": "Q42585",
+   "label": "Kingdom of Bohemia"
+  },
+  {
+   "realm": "Kingdom of Bohemia",
+   "kind": "ends",
+   "map": 1528,
+   "wikidata": 1918,
+   "diff": -390,
+   "wd": "Q42585",
+   "label": "Kingdom of Bohemia"
+  },
+  {
+   "realm": "Duchy of Gascony",
+   "kind": "ends",
+   "map": 1065,
+   "wikidata": 1453,
+   "diff": -388,
+   "wd": "Q2295939",
+   "label": "Duchy of Gascony"
+  },
+  {
+   "realm": "(Vassalage of Kingdom of Georgia to Timurid Empire)",
+   "kind": "starts",
+   "map": 1395,
+   "wikidata": 1008,
+   "diff": 387,
+   "wd": "Q154667",
+   "label": "Kingdom of Georgia"
+  },
+  {
+   "realm": "Odrysian Kingdom",
+   "kind": "ends",
+   "map": -338,
+   "wikidata": 46,
+   "diff": -384,
+   "wd": "Q870517",
+   "label": "Odrysian kingdom"
+  },
+  {
+   "realm": "Pahang Sultanate",
+   "kind": "starts",
+   "map": 1853,
+   "wikidata": 1470,
+   "diff": 383,
+   "wd": "Q30592233",
+   "label": "Pahang Sultanate"
+  },
+  {
+   "realm": "Unitary State of Brazil",
+   "kind": "starts",
+   "map": 1932,
+   "wikidata": 1549,
+   "diff": 383,
+   "wd": "Q155",
+   "label": "Brazil"
+  },
+  {
+   "realm": "Republic of the Philippines",
+   "kind": "starts",
+   "map": 1947,
+   "wikidata": 1565,
+   "diff": 382,
+   "wd": "Q928",
+   "label": "Philippines"
+  },
+  {
+   "realm": "County of Holland",
+   "kind": "starts",
+   "map": 1260,
+   "wikidata": 880,
+   "diff": 380,
+   "wd": "Q762943",
+   "label": "County of Holland"
+  },
+  {
+   "realm": "County of Touraine",
+   "kind": "starts",
+   "map": 1206,
+   "wikidata": 1584,
+   "diff": -378,
+   "wd": "Q605051",
+   "label": "Touraine"
+  },
+  {
+   "realm": "Duchy of Holstein",
+   "kind": "starts",
+   "map": 1848,
+   "wikidata": 1474,
+   "diff": 374,
+   "wd": "Q704288",
+   "label": "Duchy of Holstein"
+  },
+  {
+   "realm": "Qarlugs",
+   "kind": "ends",
+   "map": 849,
+   "wikidata": 1221,
+   "diff": -372,
+   "wd": "Q2330335",
+   "label": "Mongol invasion of Central Asia"
+  },
+  {
+   "realm": "Kingdom of Majorca",
+   "kind": "ends",
+   "map": 1343,
+   "wikidata": 1715,
+   "diff": -372,
+   "wd": "Q836676",
+   "label": "Kingdom of Majorca"
+  },
+  {
+   "realm": "Baekje",
+   "kind": "starts",
+   "map": 347,
+   "wikidata": -18,
+   "diff": 365,
+   "wd": "Q28428",
+   "label": "Baekje"
+  },
+  {
+   "realm": "Liang Dynasty",
+   "kind": "ends",
+   "map": 560,
+   "wikidata": 923,
+   "diff": -363,
+   "wd": "Q783489",
+   "label": "Later Liang dynasty"
+  },
+  {
+   "realm": "Duchy of Modena and Reggio",
+   "kind": "starts",
+   "map": 1815,
+   "wikidata": 1452,
+   "diff": 363,
+   "wd": "Q252580",
+   "label": "Duchy of Modena and Reggio"
+  },
+  {
+   "realm": "Duchy of Legnica",
+   "kind": "ends",
+   "map": 1313,
+   "wikidata": 1675,
+   "diff": -362,
+   "wd": "Q570740",
+   "label": "Duchy of Legnica"
+  },
+  {
+   "realm": "Rus'",
+   "kind": "ends",
+   "map": 881,
+   "wikidata": 1240,
+   "diff": -359,
+   "wd": "Q1108445",
+   "label": "Kievan Rus'"
+  },
+  {
+   "realm": "Ryukyu Kingdom",
+   "kind": "ends",
+   "map": 1520,
+   "wikidata": 1879,
+   "diff": -359,
+   "wd": "Q28025",
+   "label": "Ryukyu Kingdom"
+  },
+  {
+   "realm": "Ryazan",
+   "kind": "starts",
+   "map": 1453,
+   "wikidata": 1097,
+   "diff": 356,
+   "wd": "Q269109",
+   "label": "Principality of Ryazan"
+  },
+  {
+   "realm": "Duchy of Bavaria",
+   "kind": "starts",
+   "map": 1260,
+   "wikidata": 907,
+   "diff": 353,
+   "wd": "Q47261",
+   "label": "Duchy of Bavaria"
+  },
+  {
+   "realm": "Southern Xiongnu",
+   "kind": "starts",
+   "map": 51,
+   "wikidata": -300,
+   "diff": 351,
+   "wd": "Q188836",
+   "label": "Xiongnu"
+  },
+  {
+   "realm": "Free County of Burgundy",
+   "kind": "starts",
+   "map": 1333,
+   "wikidata": 982,
+   "diff": 351,
+   "wd": "Q642314",
+   "label": "County of Burgundy"
+  },
+  {
+   "realm": "Kingdom of Axum",
+   "kind": "starts",
+   "map": -50,
+   "wikidata": -400,
+   "diff": 350,
+   "wd": "Q139377",
+   "label": "Kingdom of Aksum"
+  },
+  {
+   "realm": "(Vassalage of Electorate of Brandenburg to Holy Roman Empire)",
+   "kind": "ends",
+   "map": 1458,
+   "wikidata": 1806,
+   "diff": -348,
+   "wd": "Q148499",
+   "label": "Margraviate of Brandenburg"
+  },
+  {
+   "realm": "Xiongnu",
+   "kind": "ends",
+   "map": 153,
+   "wikidata": 500,
+   "diff": -347,
+   "wd": "Q188836",
+   "label": "Xiongnu"
+  },
+  {
+   "realm": "Grand Duchy of Lithuania",
+   "kind": "ends",
+   "map": 1449,
+   "wikidata": 1795,
+   "diff": -346,
+   "wd": "Q49683",
+   "label": "Grand Duchy of Lithuania"
+  },
+  {
+   "realm": "Duchy of Luxembourg",
+   "kind": "ends",
+   "map": 1449,
+   "wikidata": 1795,
+   "diff": -346,
+   "wd": "Q2719360",
+   "label": "Duchy of Luxembourg"
+  },
+  {
+   "realm": "Principality of Monaco",
+   "kind": "starts",
+   "map": 1642,
+   "wikidata": 1297,
+   "diff": 345,
+   "wd": "Q235",
+   "label": "Monaco"
+  },
+  {
+   "realm": "Barbados",
+   "kind": "starts",
+   "map": 1967,
+   "wikidata": 1623,
+   "diff": 344,
+   "wd": "Q244",
+   "label": "Barbados"
+  },
+  {
+   "realm": "Brazilian Republic",
+   "kind": "starts",
+   "map": 1890,
+   "wikidata": 1549,
+   "diff": 341,
+   "wd": "Q155",
+   "label": "Brazil"
+  },
+  {
+   "realm": "Chimu Empire",
+   "kind": "starts",
+   "map": 1188,
+   "wikidata": 850,
+   "diff": 338,
+   "wd": "Q581741",
+   "label": "Chimor"
+  },
+  {
+   "realm": "County of Béarn",
+   "kind": "ends",
+   "map": 1452,
+   "wikidata": 1790,
+   "diff": -338,
+   "wd": "Q213763",
+   "label": "Béarn"
+  },
+  {
+   "realm": "Kingdom of Pamplona",
+   "kind": "starts",
+   "map": 825,
+   "wikidata": 1162,
+   "diff": -337,
+   "wd": "Q200262",
+   "label": "Kingdom of Navarre"
+  },
+  {
+   "realm": "Kingdom of Georgia",
+   "kind": "ends",
+   "map": 1802,
+   "wikidata": 1466,
+   "diff": 336,
+   "wd": "Q154667",
+   "label": "Kingdom of Georgia"
+  },
+  {
+   "realm": "Duchy of Mecklenburg",
+   "kind": "starts",
+   "map": 1806,
+   "wikidata": 1471,
+   "diff": 335,
+   "wd": "Q109252949",
+   "label": "Duchy of Mecklenburg"
+  },
+  {
+   "realm": "County of Artois",
+   "kind": "ends",
+   "map": 1332,
+   "wikidata": 1659,
+   "diff": -327,
+   "wd": "Q778266",
+   "label": "County of Artois"
+  },
+  {
+   "realm": "Pandya Empire",
+   "kind": "ends",
+   "map": 1325,
+   "wikidata": 1650,
+   "diff": -325,
+   "wd": "Q844910",
+   "label": "Pandya dynasty"
+  },
+  {
+   "realm": "Principality of Vitebsk",
+   "kind": "ends",
+   "map": 1187,
+   "wikidata": 1508,
+   "diff": -321,
+   "wd": "Q2621010",
+   "label": "Principality of Vitebsk"
+  },
+  {
+   "realm": "Principality of Serbia",
+   "kind": "starts",
+   "map": 768,
+   "wikidata": 1084,
+   "diff": -316,
+   "wd": "Q1311990",
+   "label": "Grand Principality of Serbia"
+  },
+  {
+   "realm": "Principality of Drutsk",
+   "kind": "ends",
+   "map": 1249,
+   "wikidata": 1565,
+   "diff": -316,
+   "wd": "Q2596884",
+   "label": "Principality of Drutsk"
+  },
+  {
+   "realm": "Kingdom of Naples",
+   "kind": "ends",
+   "map": 1501,
+   "wikidata": 1816,
+   "diff": -315,
+   "wd": "Q173065",
+   "label": "Kingdom of Naples"
+  },
+  {
+   "realm": "County of Maine",
+   "kind": "ends",
+   "map": 1481,
+   "wikidata": 1790,
+   "diff": -309,
+   "wd": "Q732738",
+   "label": "Maine"
+  },
+  {
+   "realm": "Lan Na",
+   "kind": "starts",
+   "map": 1600,
+   "wikidata": 1292,
+   "diff": 308,
+   "wd": "Q1059707",
+   "label": "Lanna"
+  },
+  {
+   "realm": "Zapotec Civilization",
+   "kind": "ends",
+   "map": 895,
+   "wikidata": 1201,
+   "diff": -306,
+   "wd": "Q844750",
+   "label": "Zapotec"
+  },
+  {
+   "realm": "Principality of Pinsk",
+   "kind": "starts",
+   "map": 1294,
+   "wikidata": 988,
+   "diff": 306,
+   "wd": "Q671362",
+   "label": "Principality of Turov and Pinsk"
+  },
+  {
+   "realm": "Principality of Turov",
+   "kind": "starts",
+   "map": 1294,
+   "wikidata": 988,
+   "diff": 306,
+   "wd": "Q671362",
+   "label": "Principality of Turov and Pinsk"
+  },
+  {
+   "realm": "Duchy of Spoleto",
+   "kind": "ends",
+   "map": 898,
+   "wikidata": 1203,
+   "diff": -305,
+   "wd": "Q2829270",
+   "label": "Duchy of Spoleto"
+  },
+  {
+   "realm": "Patriarchate of Aquileia",
+   "kind": "ends",
+   "map": 1449,
+   "wikidata": 1751,
+   "diff": -302,
+   "wd": "Q836894",
+   "label": "Patriarchate of Aquileia"
+  },
+  {
+   "realm": "Minoan civilization",
+   "kind": "ends",
+   "map": -1401,
+   "wikidata": -1100,
+   "diff": -301,
+   "wd": "Q134178",
+   "label": "Minoan civilization"
+  },
+  {
+   "realm": "Janapada of Pañcāla",
+   "kind": "starts",
+   "map": -600,
+   "wikidata": -900,
+   "diff": 300,
+   "wd": "Q558603",
+   "label": "Pancala"
+  },
+  {
+   "realm": "Janapada of Kamboja",
+   "kind": "starts",
+   "map": -600,
+   "wikidata": -300,
+   "diff": -300,
+   "wd": "Q2586782",
+   "label": "Kambojas"
+  },
+  {
+   "realm": "County of Touraine",
+   "kind": "ends",
+   "map": 1491,
+   "wikidata": 1790,
+   "diff": -299,
+   "wd": "Q605051",
+   "label": "Touraine"
+  },
+  {
+   "realm": "Holy Roman Empire Minor States",
+   "kind": "starts",
+   "map": 1260,
+   "wikidata": 962,
+   "diff": 298,
+   "wd": "Q12548",
+   "label": "Holy Roman Empire"
+  },
+  {
+   "realm": "Teng",
+   "kind": "starts",
+   "map": -750,
+   "wikidata": -1046,
+   "diff": 296,
+   "wd": "Q1356151",
+   "label": "Teng"
+  },
+  {
+   "realm": "Cai",
+   "kind": "starts",
+   "map": -750,
+   "wikidata": -1045,
+   "diff": 295,
+   "wd": "Q1025803",
+   "label": "Cai"
+  },
+  {
+   "realm": "Free County of Burgundy",
+   "kind": "ends",
+   "map": 1384,
+   "wikidata": 1678,
+   "diff": -294,
+   "wd": "Q642314",
+   "label": "County of Burgundy"
+  },
+  {
+   "realm": "Assyria",
+   "kind": "ends",
+   "map": -901,
+   "wikidata": -609,
+   "diff": -292,
+   "wd": "Q41137",
+   "label": "Assyrian Empire"
+  },
+  {
+   "realm": "County of Boulogne",
+   "kind": "starts",
+   "map": 1188,
+   "wikidata": 896,
+   "diff": 292,
+   "wd": "Q1431527",
+   "label": "County of Boulogne"
+  },
+  {
+   "realm": "Wey",
+   "kind": "starts",
+   "map": -750,
+   "wikidata": -1040,
+   "diff": 290,
+   "wd": "Q1147897",
+   "label": "Wey"
+  },
+  {
+   "realm": "Ghassanids",
+   "kind": "starts",
+   "map": 510,
+   "wikidata": 220,
+   "diff": 290,
+   "wd": "Q733668",
+   "label": "Ghassanids"
+  },
+  {
+   "realm": "Abbasid Caliphate/Buyid Dynasty",
+   "kind": "ends",
+   "map": 969,
+   "wikidata": 1258,
+   "diff": -289,
+   "wd": "Q12536",
+   "label": "Abbasid Caliphate"
+  },
+  {
+   "realm": "Bornu Empire",
+   "kind": "starts",
+   "map": 1385,
+   "wikidata": 1100,
+   "diff": 285,
+   "wd": "Q1139762",
+   "label": "Kanem-Bornu Empire"
+  },
+  {
+   "realm": "Pyu City-States",
+   "kind": "starts",
+   "map": 84,
+   "wikidata": -200,
+   "diff": 284,
+   "wd": "Q1627675",
+   "label": "Pyu city-states"
+  },
+  {
+   "realm": "Chimor",
+   "kind": "ends",
+   "map": 1187,
+   "wikidata": 1470,
+   "diff": -283,
+   "wd": "Q581741",
+   "label": "Chimor"
+  },
+  {
+   "realm": "Principality of Ryazan",
+   "kind": "ends",
+   "map": 1240,
+   "wikidata": 1521,
+   "diff": -281,
+   "wd": "Q269109",
+   "label": "Principality of Ryazan"
+  },
+  {
+   "realm": "Kingdom of Mann",
+   "kind": "starts",
+   "map": 1177,
+   "wikidata": 900,
+   "diff": 277,
+   "wd": "Q459188",
+   "label": "Kingdom of the Isles"
+  },
+  {
+   "realm": "Principality of Polotsky",
+   "kind": "starts",
+   "map": 1056,
+   "wikidata": 780,
+   "diff": 276,
+   "wd": "Q200797",
+   "label": "Polatsak"
+  },
+  {
+   "realm": "Kingdom of Dunoting",
+   "kind": "ends",
+   "map": 625,
+   "wikidata": 900,
+   "diff": -275,
+   "wd": "Q2264840",
+   "label": "Dunoding"
+  },
+  {
+   "realm": "County of Portugal",
+   "kind": "starts",
+   "map": 1139,
+   "wikidata": 868,
+   "diff": 271,
+   "wd": "Q1139807",
+   "label": "County of Portugal"
+  },
+  {
+   "realm": "Kingdom of Bhutan",
+   "kind": "starts",
+   "map": 1636,
+   "wikidata": 1907,
+   "diff": -271,
+   "wd": "Q917",
+   "label": "Bhutan"
+  },
+  {
+   "realm": "Bali",
+   "kind": "starts",
+   "map": 1687,
+   "wikidata": 1958,
+   "diff": -271,
+   "wd": "Q3125978",
+   "label": "Bali"
+  },
+  {
+   "realm": "Duchy of Parma and Piacenza",
+   "kind": "starts",
+   "map": 1815,
+   "wikidata": 1545,
+   "diff": 270,
+   "wd": "Q165040",
+   "label": "Duchy of Parma and Piacenza"
+  },
+  {
+   "realm": "Afghanistan",
+   "kind": "starts",
+   "map": 1979,
+   "wikidata": 1709,
+   "diff": 270,
+   "wd": "Q889",
+   "label": "Afghanistan"
+  },
+  {
+   "realm": "New Kingdom of Egypt",
+   "kind": "ends",
+   "map": -801,
+   "wikidata": -1070,
+   "diff": 269,
+   "wd": "Q180568",
+   "label": "Egyptian Empire"
+  },
+  {
+   "realm": "Seljuk Dynasty",
+   "kind": "ends",
+   "map": 1039,
+   "wikidata": 1308,
+   "diff": -269,
+   "wd": "Q3708255",
+   "label": "Seljuk dynasty"
+  },
+  {
+   "realm": "County of Nevers",
+   "kind": "ends",
+   "map": 1520,
+   "wikidata": 1789,
+   "diff": -269,
+   "wd": "Q2070440",
+   "label": "County of Nevers"
+  },
+  {
+   "realm": "Xianbei",
+   "kind": "starts",
+   "map": 60,
+   "wikidata": -208,
+   "diff": 268,
+   "wd": "Q861054",
+   "label": "Xianbei"
+  },
+  {
+   "realm": "Duchy of the Archipelago",
+   "kind": "ends",
+   "map": 1313,
+   "wikidata": 1579,
+   "diff": -266,
+   "wd": "Q777981",
+   "label": "Duchy of the Archipelago"
+  },
+  {
+   "realm": "Pahang Sultanate",
+   "kind": "ends",
+   "map": 1889,
+   "wikidata": 1623,
+   "diff": 266,
+   "wd": "Q30592233",
+   "label": "Pahang Sultanate"
+  },
+  {
+   "realm": "House of Habsburg",
+   "kind": "ends",
+   "map": 1515,
+   "wikidata": 1780,
+   "diff": -265,
+   "wd": "Q65968",
+   "label": "House of Habsburg"
+  },
+  {
+   "realm": "Electorate of Brandenburg",
+   "kind": "starts",
+   "map": 1422,
+   "wikidata": 1157,
+   "diff": 265,
+   "wd": "Q148499",
+   "label": "Margraviate of Brandenburg"
+  },
+  {
+   "realm": "(Vassalage of Electorate of Brandenburg to Holy Roman Empire)",
+   "kind": "starts",
+   "map": 1422,
+   "wikidata": 1157,
+   "diff": 265,
+   "wd": "Q148499",
+   "label": "Margraviate of Brandenburg"
+  },
+  {
+   "realm": "Dong-okjeo",
+   "kind": "starts",
+   "map": -36,
+   "wikidata": -300,
+   "diff": 264,
+   "wd": "Q713393",
+   "label": "Okjeo"
+  },
+  {
+   "realm": "Principality of Nitra",
+   "kind": "ends",
+   "map": 839,
+   "wikidata": 1100,
+   "diff": -261,
+   "wd": "Q837326",
+   "label": "Principality of Nitra"
+  },
+  {
+   "realm": "County of Blôis",
+   "kind": "ends",
+   "map": 1401,
+   "wikidata": 1660,
+   "diff": -259,
+   "wd": "Q19336869",
+   "label": "County of Blois"
+  },
+  {
+   "realm": "House of Habsburg",
+   "kind": "starts",
+   "map": 1260,
+   "wikidata": 1001,
+   "diff": 259,
+   "wd": "Q65968",
+   "label": "House of Habsburg"
+  },
+  {
+   "realm": "Duchy of Milan",
+   "kind": "ends",
+   "map": 1539,
+   "wikidata": 1797,
+   "diff": -258,
+   "wd": "Q153529",
+   "label": "Duchy of Milan"
+  },
+  {
+   "realm": "Principality of Svaneti",
+   "kind": "starts",
+   "map": 1721,
+   "wikidata": 1463,
+   "diff": 258,
+   "wd": "Q2919545",
+   "label": "Principality of Svaneti"
+  },
+  {
+   "realm": "Burgundians",
+   "kind": "starts",
+   "map": 154,
+   "wikidata": 411,
+   "diff": -257,
+   "wd": "Q13590051",
+   "label": "Kingdom of the Burgundians"
+  },
+  {
+   "realm": "County of Savoy",
+   "kind": "starts",
+   "map": 1260,
+   "wikidata": 1003,
+   "diff": 257,
+   "wd": "Q1232887",
+   "label": "County of Savoy"
+  },
+  {
+   "realm": "Principality of Serbia",
+   "kind": "ends",
+   "map": 961,
+   "wikidata": 1217,
+   "diff": -256,
+   "wd": "Q1311990",
+   "label": "Grand Principality of Serbia"
+  },
+  {
+   "realm": "Hamdanid Emirates",
+   "kind": "ends",
+   "map": 1259,
+   "wikidata": 1004,
+   "diff": 255,
+   "wd": "Q837187",
+   "label": "Hamdanid dynasty"
+  },
+  {
+   "realm": "Silla",
+   "kind": "ends",
+   "map": 681,
+   "wikidata": 935,
+   "diff": -254,
+   "wd": "Q28456",
+   "label": "Silla"
+  },
+  {
+   "realm": "County of Osona",
+   "kind": "ends",
+   "map": 1110,
+   "wikidata": 1364,
+   "diff": -254,
+   "wd": "Q1541779",
+   "label": "County of Osona"
+  },
+  {
+   "realm": "Alodia",
+   "kind": "starts",
+   "map": 347,
+   "wikidata": 600,
+   "diff": -253,
+   "wd": "Q449639",
+   "label": "Alodia"
+  },
+  {
+   "realm": "Cambodia",
+   "kind": "starts",
+   "map": 1700,
+   "wikidata": 1953,
+   "diff": -253,
+   "wd": "Q424",
+   "label": "Cambodia"
+  },
+  {
+   "realm": "Northern Yuan",
+   "kind": "ends",
+   "map": 1439,
+   "wikidata": 1691,
+   "diff": -252,
+   "wd": "Q8959",
+   "label": "Northern Yuan dynasty"
+  },
+  {
+   "realm": "Merina Kingdom",
+   "kind": "starts",
+   "map": 1792,
+   "wikidata": 1540,
+   "diff": 252,
+   "wd": "Q1071439",
+   "label": "Merina Kingdom"
+  },
+  {
+   "realm": "Principality of Volhynia",
+   "kind": "ends",
+   "map": 1201,
+   "wikidata": 1452,
+   "diff": -251,
+   "wd": "Q680472",
+   "label": "Principality of Volhynia"
+  },
+  {
+   "realm": "County of Brabant",
+   "kind": "ends",
+   "map": 1430,
+   "wikidata": 1183,
+   "diff": 247,
+   "wd": "Q751868",
+   "label": "Landgraviate of Brabant"
+  },
+  {
+   "realm": "Kingdom of Neustria",
+   "kind": "ends",
+   "map": 731,
+   "wikidata": 977,
+   "diff": -246,
+   "wd": "Q106577",
+   "label": "Neustria"
+  },
+  {
+   "realm": "Kingdom of Kongo",
+   "kind": "ends",
+   "map": 1669,
+   "wikidata": 1914,
+   "diff": -245,
+   "wd": "Q796583",
+   "label": "Kingdom of Kongo"
+  },
+  {
+   "realm": "County of Boulogne",
+   "kind": "ends",
+   "map": 1259,
+   "wikidata": 1501,
+   "diff": -242,
+   "wd": "Q1431527",
+   "label": "County of Boulogne"
+  },
+  {
+   "realm": "Sultanate of Gowa",
+   "kind": "ends",
+   "map": 1669,
+   "wikidata": 1911,
+   "diff": -242,
+   "wd": "Q1408641",
+   "label": "Sultanate of Gowa"
+  },
+  {
+   "realm": "Carolingian Empire",
+   "kind": "starts",
+   "map": 718,
+   "wikidata": 481,
+   "diff": 237,
+   "wd": "Q146246",
+   "label": "Francia"
+  },
+  {
+   "realm": "(Carolingian Empire)",
+   "kind": "starts",
+   "map": 718,
+   "wikidata": 481,
+   "diff": 237,
+   "wd": "Q146246",
+   "label": "Francia"
+  },
+  {
+   "realm": "Caucasian Iberia",
+   "kind": "starts",
+   "map": -63,
+   "wikidata": -299,
+   "diff": 236,
+   "wd": "Q19083",
+   "label": "Kingdom of Iberia"
+  },
+  {
+   "realm": "County of Béarn",
+   "kind": "starts",
+   "map": 1385,
+   "wikidata": 1620,
+   "diff": -235,
+   "wd": "Q213763",
+   "label": "Béarn"
+  },
+  {
+   "realm": "Kuwait",
+   "kind": "starts",
+   "map": 1757,
+   "wikidata": 1991,
+   "diff": -234,
+   "wd": "Q817",
+   "label": "Kuwait"
+  },
+  {
+   "realm": "Principality of Kiev",
+   "kind": "ends",
+   "map": 1240,
+   "wikidata": 1471,
+   "diff": -231,
+   "wd": "Q1483430",
+   "label": "Principality of Kyiv"
+  },
+  {
+   "realm": "Principality of Hohenzollern-Sigmaringen",
+   "kind": "starts",
+   "map": 1806,
+   "wikidata": 1576,
+   "diff": 230,
+   "wd": "Q157013",
+   "label": "Principality of Hohenzollern-Sigmaringen"
+  },
+  {
+   "realm": "Kingdom of Israel",
+   "kind": "ends",
+   "map": -701,
+   "wikidata": -930,
+   "diff": 229,
+   "wd": "Q3185305",
+   "label": "United Kingdom of Israel"
+  },
+  {
+   "realm": "Merovingian Empire",
+   "kind": "starts",
+   "map": 710,
+   "wikidata": 481,
+   "diff": 229,
+   "wd": "Q146246",
+   "label": "Francia"
+  },
+  {
+   "realm": "Duchy of Opole",
+   "kind": "ends",
+   "map": 1304,
+   "wikidata": 1532,
+   "diff": -228,
+   "wd": "Q661980",
+   "label": "Duchy of Opole"
+  },
+  {
+   "realm": "Grand Duchy of Tuscany",
+   "kind": "starts",
+   "map": 1797,
+   "wikidata": 1569,
+   "diff": 228,
+   "wd": "Q154849",
+   "label": "Grand Duchy of Tuscany"
+  },
+  {
+   "realm": "Xu",
+   "kind": "ends",
+   "map": -285,
+   "wikidata": -512,
+   "diff": 227,
+   "wd": "Q2650109",
+   "label": "Xu"
+  },
+  {
+   "realm": "Kingdom of Armenia",
+   "kind": "starts",
+   "map": -326,
+   "wikidata": -553,
+   "diff": 227,
+   "wd": "Q208404",
+   "label": "Kingdom of Armenia"
+  },
+  {
+   "realm": "House of Savoy",
+   "kind": "ends",
+   "map": 1720,
+   "wikidata": 1946,
+   "diff": -226,
+   "wd": "Q200229",
+   "label": "House of Savoy"
+  },
+  {
+   "realm": "Sultanate of Oman",
+   "kind": "starts",
+   "map": 1744,
+   "wikidata": 1970,
+   "diff": -226,
+   "wd": "Q842",
+   "label": "Oman"
+  },
+  {
+   "realm": "Assyria",
+   "kind": "starts",
+   "map": -1800,
+   "wikidata": -2025,
+   "diff": 225,
+   "wd": "Q41137",
+   "label": "Assyrian Empire"
+  },
+  {
+   "realm": "Toltec",
+   "kind": "starts",
+   "map": 875,
+   "wikidata": 650,
+   "diff": 225,
+   "wd": "Q187897",
+   "label": "Tolteca"
+  },
+  {
+   "realm": "Chagatai Khanate",
+   "kind": "ends",
+   "map": 1462,
+   "wikidata": 1687,
+   "diff": -225,
+   "wd": "Q487829",
+   "label": "Chagatai Khanate"
+  },
+  {
+   "realm": "Yue",
+   "kind": "ends",
+   "map": -334,
+   "wikidata": -110,
+   "diff": -224,
+   "wd": "Q1936158",
+   "label": "Minyue"
+  },
+  {
+   "realm": "House of Ascania",
+   "kind": "starts",
+   "map": 1260,
+   "wikidata": 1036,
+   "diff": 224,
+   "wd": "Q168352",
+   "label": "House of Ascania"
+  },
+  {
+   "realm": "Balinese Kingdom",
+   "kind": "ends",
+   "map": 1686,
+   "wikidata": 1908,
+   "diff": -222,
+   "wd": "Q12491027",
+   "label": "Bali Kingdom"
+  },
+  {
+   "realm": "Oirat Confederation",
+   "kind": "starts",
+   "map": 1619,
+   "wikidata": 1399,
+   "diff": 220,
+   "wd": "Q4332415",
+   "label": "Four Oirats"
+  },
+  {
+   "realm": "Kingdom of Armenia",
+   "kind": "ends",
+   "map": 646,
+   "wikidata": 428,
+   "diff": 218,
+   "wd": "Q208404",
+   "label": "Kingdom of Armenia"
+  },
+  {
+   "realm": "Dumnonia",
+   "kind": "ends",
+   "map": 709,
+   "wikidata": 927,
+   "diff": -218,
+   "wd": "Q313136",
+   "label": "Kingdom of Dumnonia"
+  },
+  {
+   "realm": "Kingdom of Duklja",
+   "kind": "starts",
+   "map": 1072,
+   "wikidata": 854,
+   "diff": 218,
+   "wd": "Q1252942",
+   "label": "Duklja"
+  },
+  {
+   "realm": "Saxons",
+   "kind": "starts",
+   "map": 283,
+   "wikidata": 500,
+   "diff": -217,
+   "wd": "Q101985",
+   "label": "Saxons"
+  },
+  {
+   "realm": "Duchy of Racibórz",
+   "kind": "ends",
+   "map": 1304,
+   "wikidata": 1521,
+   "diff": -217,
+   "wd": "Q700117",
+   "label": "Duchy of Racibórz"
+  },
+  {
+   "realm": "Lê Dynasty",
+   "kind": "ends",
+   "map": 1571,
+   "wikidata": 1788,
+   "diff": -217,
+   "wd": "Q10800789",
+   "label": "Lê dynasty"
+  },
+  {
+   "realm": "Kingdom of Bulungan",
+   "kind": "ends",
+   "map": 1747,
+   "wikidata": 1964,
+   "diff": -217,
+   "wd": "Q3503548",
+   "label": "Sultanate of Bulungan"
+  },
+  {
+   "realm": "Mosquito Kingdom",
+   "kind": "starts",
+   "map": 1853,
+   "wikidata": 1637,
+   "diff": 216,
+   "wd": "Q1165546",
+   "label": "Mosquitia"
+  },
+  {
+   "realm": "Bahrain",
+   "kind": "starts",
+   "map": 1757,
+   "wikidata": 1971,
+   "diff": -214,
+   "wd": "Q398",
+   "label": "Bahrain"
+  },
+  {
+   "realm": "Kingdom of Neustria",
+   "kind": "starts",
+   "map": 724,
+   "wikidata": 511,
+   "diff": 213,
+   "wd": "Q106577",
+   "label": "Neustria"
+  },
+  {
+   "realm": "County of Toulouse",
+   "kind": "starts",
+   "map": 990,
+   "wikidata": 778,
+   "diff": 212,
+   "wd": "Q1334322",
+   "label": "County of Toulouse"
+  },
+  {
+   "realm": "Lan Na Kingdom",
+   "kind": "ends",
+   "map": 1563,
+   "wikidata": 1775,
+   "diff": -212,
+   "wd": "Q1059707",
+   "label": "Lanna"
+  },
+  {
+   "realm": "Astrakhan Khanate",
+   "kind": "ends",
+   "map": 1768,
+   "wikidata": 1556,
+   "diff": 212,
+   "wd": "Q210163",
+   "label": "Astrakhan Khanate"
+  },
+  {
+   "realm": "Patani Kingdom",
+   "kind": "ends",
+   "map": 1690,
+   "wikidata": 1902,
+   "diff": -212,
+   "wd": "Q584435",
+   "label": "Patani Kingdom"
+  },
+  {
+   "realm": "County of Nevers",
+   "kind": "starts",
+   "map": 1010,
+   "wikidata": 801,
+   "diff": 209,
+   "wd": "Q2070440",
+   "label": "County of Nevers"
+  },
+  {
+   "realm": "Oyo Empire",
+   "kind": "starts",
+   "map": 1609,
+   "wikidata": 1400,
+   "diff": 209,
+   "wd": "Q849623",
+   "label": "Oyo Empire"
+  },
+  {
+   "realm": "Eastern Kushans",
+   "kind": "starts",
+   "map": 238,
+   "wikidata": 30,
+   "diff": 208,
+   "wd": "Q25979",
+   "label": "Kushan Empire"
+  },
+  {
+   "realm": "Western Kushans",
+   "kind": "starts",
+   "map": 238,
+   "wikidata": 30,
+   "diff": 208,
+   "wd": "Q25979",
+   "label": "Kushan Empire"
+  },
+  {
+   "realm": "Kingdom of Imereti",
+   "kind": "starts",
+   "map": 1468,
+   "wikidata": 1260,
+   "diff": 208,
+   "wd": "Q1069959",
+   "label": "Kingdom of Imereti"
+  },
+  {
+   "realm": "Old Kingdom of Egypt",
+   "kind": "starts",
+   "map": -2500,
+   "wikidata": -2707,
+   "diff": 207,
+   "wd": "Q177819",
+   "label": "Old Kingdom of Egypt"
+  },
+  {
+   "realm": "Kingdom of Sophene",
+   "kind": "ends",
+   "map": 113,
+   "wikidata": -94,
+   "diff": 207,
+   "wd": "Q2626105",
+   "label": "Kingdom of Sophene"
+  },
+  {
+   "realm": "Eastern Kara-Khanids",
+   "kind": "starts",
+   "map": 1046,
+   "wikidata": 840,
+   "diff": 206,
+   "wd": "Q494354",
+   "label": "Karakhanid Khanate"
+  },
+  {
+   "realm": "Western Karakhanid Khanate",
+   "kind": "starts",
+   "map": 1046,
+   "wikidata": 840,
+   "diff": 206,
+   "wd": "Q494354",
+   "label": "Karakhanid Khanate"
+  },
+  {
+   "realm": "Buyid Dynasty",
+   "kind": "ends",
+   "map": 1055,
+   "wikidata": 1258,
+   "diff": -203,
+   "wd": "Q12536",
+   "label": "Abbasid Caliphate"
+  },
+  {
+   "realm": "Margraviate of Moravia",
+   "kind": "starts",
+   "map": 1385,
+   "wikidata": 1182,
+   "diff": 203,
+   "wd": "Q2670751",
+   "label": "Margraviate of Moravia"
+  },
+  {
+   "realm": "Saxe-Altenburg",
+   "kind": "starts",
+   "map": 1806,
+   "wikidata": 1603,
+   "diff": 203,
+   "wd": "Q158151",
+   "label": "Duchy of Saxe-Altenburg"
+  },
+  {
+   "realm": "Scandinavian minor kingdoms",
+   "kind": "ends",
+   "map": 1002,
+   "wikidata": 800,
+   "diff": 202,
+   "wd": "Q1275225",
+   "label": "Vendel era"
+  },
+  {
+   "realm": "Gauda Kingdom",
+   "kind": "starts",
+   "map": 602,
+   "wikidata": 400,
+   "diff": 202,
+   "wd": "Q17076645",
+   "label": "Gauḍa Kingdom"
+  },
+  {
+   "realm": "Dumnonia",
+   "kind": "starts",
+   "map": 602,
+   "wikidata": 400,
+   "diff": 202,
+   "wd": "Q313136",
+   "label": "Kingdom of Dumnonia"
+  },
+  {
+   "realm": "Great Principality of Duklja",
+   "kind": "starts",
+   "map": 1056,
+   "wikidata": 854,
+   "diff": 202,
+   "wd": "Q1252942",
+   "label": "Duklja"
+  },
+  {
+   "realm": "Duchy of Łęczyca",
+   "kind": "starts",
+   "map": 1139,
+   "wikidata": 1339,
+   "diff": -200,
+   "wd": "Q970940",
+   "label": "Łęczyca Voivodeship"
+  },
+  {
+   "realm": "Crown of Aragon",
+   "kind": "ends",
+   "map": 1515,
+   "wikidata": 1715,
+   "diff": -200,
+   "wd": "Q204920",
+   "label": "Crown of Aragon"
+  },
+  {
+   "realm": "Principality of Turov and Pinsk",
+   "kind": "starts",
+   "map": 1188,
+   "wikidata": 988,
+   "diff": 200,
+   "wd": "Q671362",
+   "label": "Principality of Turov and Pinsk"
+  },
+  {
+   "realm": "Crown of Castile",
+   "kind": "ends",
+   "map": 1515,
+   "wikidata": 1715,
+   "diff": -200,
+   "wd": "Q217196",
+   "label": "Crown of Castile"
+  },
+  {
+   "realm": "Samtskhe-Saatabago",
+   "kind": "starts",
+   "map": 1468,
+   "wikidata": 1268,
+   "diff": 200,
+   "wd": "Q2029317",
+   "label": "Samtskhe atabegate"
+  },
+  {
+   "realm": "Kingdom of Seisyllwg",
+   "kind": "starts",
+   "map": 878,
+   "wikidata": 680,
+   "diff": 198,
+   "wd": "Q2456191",
+   "label": "Kingdom of Seisyllwg"
+  },
+  {
+   "realm": "Qocho Kingdom",
+   "kind": "ends",
+   "map": 1138,
+   "wikidata": 1335,
+   "diff": -197,
+   "wd": "Q2662180",
+   "label": "Qocho"
+  },
+  {
+   "realm": "Abbasid Caliphate/Buyid Dynasty",
+   "kind": "starts",
+   "map": 947,
+   "wikidata": 750,
+   "diff": 197,
+   "wd": "Q12536",
+   "label": "Abbasid Caliphate"
+  },
+  {
+   "realm": "Duchy of Bohemia",
+   "kind": "ends",
+   "map": 1002,
+   "wikidata": 1198,
+   "diff": -196,
+   "wd": "Q2162698",
+   "label": "Duchy of Bohemia"
+  },
+  {
+   "realm": "Taifa of Niebla",
+   "kind": "ends",
+   "map": 1249,
+   "wikidata": 1053,
+   "diff": 196,
+   "wd": "Q2668600",
+   "label": "Taifa of Niebla"
+  },
+  {
+   "realm": "Duchy of Bytom",
+   "kind": "ends",
+   "map": 1304,
+   "wikidata": 1498,
+   "diff": -194,
+   "wd": "Q682001",
+   "label": "Duchy of Bytom"
+  },
+  {
+   "realm": "County of Osona",
+   "kind": "starts",
+   "map": 990,
+   "wikidata": 798,
+   "diff": 192,
+   "wd": "Q1541779",
+   "label": "County of Osona"
+  },
+  {
+   "realm": "Sultanate of Gowa",
+   "kind": "starts",
+   "map": 1512,
+   "wikidata": 1320,
+   "diff": 192,
+   "wd": "Q1408641",
+   "label": "Sultanate of Gowa"
+  },
+  {
+   "realm": "Regency of Algiers",
+   "kind": "starts",
+   "map": 1706,
+   "wikidata": 1516,
+   "diff": 190,
+   "wd": "Q3045696",
+   "label": "Regency of Algiers"
+  },
+  {
+   "realm": "Duchy of Tuscia",
+   "kind": "ends",
+   "map": 586,
+   "wikidata": 774,
+   "diff": -188,
+   "wd": "Q1054580",
+   "label": "Duchy of Tuscia"
+  },
+  {
+   "realm": "Duchy of Normandy",
+   "kind": "ends",
+   "map": 1071,
+   "wikidata": 1259,
+   "diff": -188,
+   "wd": "Q842091",
+   "label": "Duchy of Normandy"
+  },
+  {
+   "realm": "County of Ampuria",
+   "kind": "starts",
+   "map": 1000,
+   "wikidata": 812,
+   "diff": 188,
+   "wd": "Q1541699",
+   "label": "County of Empúries"
+  },
+  {
+   "realm": "Electorate of Brandenburg",
+   "kind": "ends",
+   "map": 1618,
+   "wikidata": 1806,
+   "diff": -188,
+   "wd": "Q148499",
+   "label": "Margraviate of Brandenburg"
+  },
+  {
+   "realm": "Buyid Dynasty",
+   "kind": "starts",
+   "map": 936,
+   "wikidata": 750,
+   "diff": 186,
+   "wd": "Q12536",
+   "label": "Abbasid Caliphate"
+  },
+  {
+   "realm": "Pro-Habsburg Spain",
+   "kind": "starts",
+   "map": 1702,
+   "wikidata": 1516,
+   "diff": 186,
+   "wd": "Q600093",
+   "label": "Habsburg Spain"
+  },
+  {
+   "realm": "Early Dynastic Period of Egypt",
+   "kind": "ends",
+   "map": -2501,
+   "wikidata": -2686,
+   "diff": 185,
+   "wd": "Q187979",
+   "label": "Early Dynastic Period of Egypt"
+  },
+  {
+   "realm": "Holy Roman Empire",
+   "kind": "ends",
+   "map": 1621,
+   "wikidata": 1806,
+   "diff": -185,
+   "wd": "Q12548",
+   "label": "Holy Roman Empire"
+  },
+  {
+   "realm": "Kingdom of the Isles",
+   "kind": "starts",
+   "map": 1085,
+   "wikidata": 900,
+   "diff": 185,
+   "wd": "Q459188",
+   "label": "Kingdom of the Isles"
+  },
+  {
+   "realm": "Electorate of Trier",
+   "kind": "ends",
+   "map": 1618,
+   "wikidata": 1801,
+   "diff": -183,
+   "wd": "Q1794352",
+   "label": "Electorate of Trier"
+  },
+  {
+   "realm": "Middle Kingdom of Egypt",
+   "kind": "ends",
+   "map": -1601,
+   "wikidata": -1782,
+   "diff": 181,
+   "wd": "Q191324",
+   "label": "Middle Kingdom of Egypt"
+  },
+  {
+   "realm": "Great Principality of Duklja",
+   "kind": "ends",
+   "map": 1071,
+   "wikidata": 1252,
+   "diff": -181,
+   "wd": "Q1252942",
+   "label": "Duklja"
+  },
+  {
+   "realm": "House of Hohenstaufen",
+   "kind": "starts",
+   "map": 1260,
+   "wikidata": 1079,
+   "diff": 181,
+   "wd": "Q130875",
+   "label": "House of Hohenstaufen"
+  },
+  {
+   "realm": "Chámpa",
+   "kind": "ends",
+   "map": 1652,
+   "wikidata": 1832,
+   "diff": -180,
+   "wd": "Q216786",
+   "label": "Champa"
+  },
+  {
+   "realm": "Kingdom of Alamannia",
+   "kind": "ends",
+   "map": 731,
+   "wikidata": 911,
+   "diff": -180,
+   "wd": "Q2208978",
+   "label": "Alamannia"
+  },
+  {
+   "realm": "Southern Song",
+   "kind": "starts",
+   "map": 1139,
+   "wikidata": 960,
+   "diff": 179,
+   "wd": "Q7462",
+   "label": "Song dynasty"
+  },
+  {
+   "realm": "Taifa of Córdoba",
+   "kind": "ends",
+   "map": 1249,
+   "wikidata": 1070,
+   "diff": 179,
+   "wd": "Q2285679",
+   "label": "Taifa of Córdoba"
+  },
+  {
+   "realm": "House of Tocco",
+   "kind": "starts",
+   "map": 1363,
+   "wikidata": 1185,
+   "diff": 178,
+   "wd": "Q149846",
+   "label": "County palatine of Cephalonia and Zakynthos"
+  },
+  {
+   "realm": "Cuman-Kipchak Confederation",
+   "kind": "ends",
+   "map": 1065,
+   "wikidata": 1241,
+   "diff": -176,
+   "wd": "Q1122052",
+   "label": "Cumania"
+  },
+  {
+   "realm": "Portuguese Empire",
+   "kind": "ends",
+   "map": 1823,
+   "wikidata": 1999,
+   "diff": -176,
+   "wd": "Q200464",
+   "label": "Portuguese Empire"
+  },
+  {
+   "realm": "Duchy of Masovia",
+   "kind": "ends",
+   "map": 1351,
+   "wikidata": 1526,
+   "diff": -175,
+   "wd": "Q2361927",
+   "label": "Duchy of Masovia"
+  },
+  {
+   "realm": "County of Brabant",
+   "kind": "starts",
+   "map": 1260,
+   "wikidata": 1085,
+   "diff": 175,
+   "wd": "Q751868",
+   "label": "Landgraviate of Brabant"
+  },
+  {
+   "realm": "Southern Liang",
+   "kind": "ends",
+   "map": 413,
+   "wikidata": 587,
+   "diff": -174,
+   "wd": "Q1069868",
+   "label": "Liang dynasty"
+  },
+  {
+   "realm": "British Empire",
+   "kind": "starts",
+   "map": 1757,
+   "wikidata": 1583,
+   "diff": 174,
+   "wd": "Q8680",
+   "label": "British Empire"
+  },
+  {
+   "realm": "Kingdom of Mysore",
+   "kind": "starts",
+   "map": 1572,
+   "wikidata": 1399,
+   "diff": 173,
+   "wd": "Q266923",
+   "label": "Kingdom of Mysore"
+  },
+  {
+   "realm": "Duchy of Courland",
+   "kind": "starts",
+   "map": 1734,
+   "wikidata": 1561,
+   "diff": 173,
+   "wd": "Q156038",
+   "label": "Duchy of Courland and Semigallia"
+  },
+  {
+   "realm": "Norse Greenland",
+   "kind": "starts",
+   "map": 1072,
+   "wikidata": 900,
+   "diff": 172,
+   "wd": "Q582948",
+   "label": "Norse colonization of North America"
+  },
+  {
+   "realm": "Eastern Moghulistan",
+   "kind": "starts",
+   "map": 1519,
+   "wikidata": 1347,
+   "diff": 172,
+   "wd": "Q1191125",
+   "label": "Moghulistan"
+  },
+  {
+   "realm": "Western Moghulistan",
+   "kind": "starts",
+   "map": 1519,
+   "wikidata": 1347,
+   "diff": 172,
+   "wd": "Q1191125",
+   "label": "Moghulistan"
+  },
+  {
+   "realm": "Socialist Republic of Vietnam",
+   "kind": "starts",
+   "map": 1976,
+   "wikidata": 1804,
+   "diff": 172,
+   "wd": "Q881",
+   "label": "Vietnam"
+  },
+  {
+   "realm": "(Vassalage of Jaffna kingdom to Vijayanagara Empire)",
+   "kind": "starts",
+   "map": 1385,
+   "wikidata": 1215,
+   "diff": 170,
+   "wd": "Q1311219",
+   "label": "Jaffna kingdom"
+  },
+  {
+   "realm": "Principality of Vladimir-Suzdal",
+   "kind": "starts",
+   "map": 1294,
+   "wikidata": 1125,
+   "diff": 169,
+   "wd": "Q83546",
+   "label": "Grand Principality of Vladimir"
+  },
+  {
+   "realm": "Duchy of Mecklenburg",
+   "kind": "ends",
+   "map": 1870,
+   "wikidata": 1701,
+   "diff": 169,
+   "wd": "Q109252949",
+   "label": "Duchy of Mecklenburg"
+  },
+  {
+   "realm": "Water Chenla",
+   "kind": "starts",
+   "map": 718,
+   "wikidata": 550,
+   "diff": 168,
+   "wd": "Q1057118",
+   "label": "Zhenla"
+  },
+  {
+   "realm": "Land Chenla",
+   "kind": "starts",
+   "map": 718,
+   "wikidata": 550,
+   "diff": 168,
+   "wd": "Q1057118",
+   "label": "Zhenla"
+  },
+  {
+   "realm": "Republic of Florence",
+   "kind": "ends",
+   "map": 1737,
+   "wikidata": 1569,
+   "diff": 168,
+   "wd": "Q148540",
+   "label": "Republic of Florence"
+  },
+  {
+   "realm": "Kara-Khanids",
+   "kind": "ends",
+   "map": 1045,
+   "wikidata": 1212,
+   "diff": -167,
+   "wd": "Q494354",
+   "label": "Karakhanid Khanate"
+  },
+  {
+   "realm": "Yue",
+   "kind": "starts",
+   "map": -500,
+   "wikidata": -334,
+   "diff": -166,
+   "wd": "Q1936158",
+   "label": "Minyue"
+  },
+  {
+   "realm": "Byeonhan",
+   "kind": "ends",
+   "map": 566,
+   "wikidata": 400,
+   "diff": 166,
+   "wd": "Q1378584",
+   "label": "Byeonhan confederacy"
+  },
+  {
+   "realm": "Duchy of Gascony",
+   "kind": "starts",
+   "map": 768,
+   "wikidata": 602,
+   "diff": 166,
+   "wd": "Q2295939",
+   "label": "Duchy of Gascony"
+  },
+  {
+   "realm": "Carthage",
+   "kind": "starts",
+   "map": -650,
+   "wikidata": -814,
+   "diff": 164,
+   "wd": "Q2429397",
+   "label": "Ancient Carthage"
+  },
+  {
+   "realm": "Vandals",
+   "kind": "ends",
+   "map": 438,
+   "wikidata": 600,
+   "diff": -162,
+   "wd": "Q42211",
+   "label": "Vandals"
+  },
+  {
+   "realm": "Kingdom of Alamannia",
+   "kind": "starts",
+   "map": 462,
+   "wikidata": 300,
+   "diff": 162,
+   "wd": "Q2208978",
+   "label": "Alamannia"
+  },
+  {
+   "realm": "Principality of Chernigov",
+   "kind": "ends",
+   "map": 1240,
+   "wikidata": 1402,
+   "diff": -162,
+   "wd": "Q1322662",
+   "label": "Principality of Chernigov"
+  },
+  {
+   "realm": "Kingdom of Essex",
+   "kind": "ends",
+   "map": 665,
+   "wikidata": 825,
+   "diff": -160,
+   "wd": "Q110888",
+   "label": "Kingdom of Essex"
+  },
+  {
+   "realm": "Tver",
+   "kind": "starts",
+   "map": 1294,
+   "wikidata": 1135,
+   "diff": 159,
+   "wd": "Q2288",
+   "label": "Tver"
+  },
+  {
+   "realm": "First Toungoo Empire",
+   "kind": "ends",
+   "map": 1756,
+   "wikidata": 1599,
+   "diff": 157,
+   "wd": "Q23039102",
+   "label": "First Toungoo Empire"
+  },
+  {
+   "realm": "Janapada of Magadha",
+   "kind": "ends",
+   "map": -501,
+   "wikidata": -345,
+   "diff": -156,
+   "wd": "Q234009",
+   "label": "Magadha"
+  },
+  {
+   "realm": "Principality of Pereyaslavl",
+   "kind": "starts",
+   "map": 1056,
+   "wikidata": 900,
+   "diff": 156,
+   "wd": "Q1261908",
+   "label": "Principality of Pereyaslavl"
+  },
+  {
+   "realm": "Đại Việt",
+   "kind": "ends",
+   "map": 1833,
+   "wikidata": 1677,
+   "diff": 156,
+   "wd": "Q1317991",
+   "label": "Mạc dynasty"
+  },
+  {
+   "realm": "Lazica",
+   "kind": "ends",
+   "map": 545,
+   "wikidata": 700,
+   "diff": -155,
+   "wd": "Q136884",
+   "label": "Lazica"
+  },
+  {
+   "realm": "Taifa of Valencia",
+   "kind": "ends",
+   "map": 1249,
+   "wikidata": 1094,
+   "diff": 155,
+   "wd": "Q676811",
+   "label": "Taifa of Valencia"
+  },
+  {
+   "realm": "French Colony of Guiana",
+   "kind": "starts",
+   "map": 1791,
+   "wikidata": 1946,
+   "diff": -155,
+   "wd": "Q3769",
+   "label": "French Guiana"
+  },
+  {
+   "realm": "Four Oirats",
+   "kind": "ends",
+   "map": 1474,
+   "wikidata": 1628,
+   "diff": -154,
+   "wd": "Q4332415",
+   "label": "Four Oirats"
+  },
+  {
+   "realm": "Makuria",
+   "kind": "starts",
+   "map": 347,
+   "wikidata": 500,
+   "diff": -153,
+   "wd": "Q829356",
+   "label": "Kingdom of Makuria"
+  },
+  {
+   "realm": "Hwicce",
+   "kind": "ends",
+   "map": 627,
+   "wikidata": 780,
+   "diff": -153,
+   "wd": "Q733799",
+   "label": "Kingdom of the Hwicce"
+  },
+  {
+   "realm": "Montenegro",
+   "kind": "starts",
+   "map": 1853,
+   "wikidata": 2006,
+   "diff": -153,
+   "wd": "Q236",
+   "label": "Montenegro"
+  },
+  {
+   "realm": "Janapada of Malla",
+   "kind": "ends",
+   "map": -451,
+   "wikidata": -300,
+   "diff": -151,
+   "wd": "Q1376303",
+   "label": "Malla"
+  },
+  {
+   "realm": "Janapada of Vatsa",
+   "kind": "ends",
+   "map": -451,
+   "wikidata": -300,
+   "diff": -151,
+   "wd": "Q1331184",
+   "label": "Vatsa"
+  },
+  {
+   "realm": "Kingdom of Mysore",
+   "kind": "ends",
+   "map": 1799,
+   "wikidata": 1950,
+   "diff": -151,
+   "wd": "Q266923",
+   "label": "Kingdom of Mysore"
+  },
+  {
+   "realm": "Napoleonic Batavia Republic",
+   "kind": "starts",
+   "map": 1803,
+   "wikidata": 1652,
+   "diff": 151,
+   "wd": "Q4807130",
+   "label": "Dutch Cape Colony"
+  },
+  {
+   "realm": "Hyksos",
+   "kind": "starts",
+   "map": -1800,
+   "wikidata": -1650,
+   "diff": -150,
+   "wd": "Q192319",
+   "label": "Hyksos"
+  },
+  {
+   "realm": "Mitanni",
+   "kind": "starts",
+   "map": -1500,
+   "wikidata": -1650,
+   "diff": 150,
+   "wd": "Q178665",
+   "label": "Mitanni"
+  },
+  {
+   "realm": "Chen",
+   "kind": "starts",
+   "map": -750,
+   "wikidata": -900,
+   "diff": 150,
+   "wd": "Q1069690",
+   "label": "Chen"
+  },
+  {
+   "realm": "Hyksos",
+   "kind": "ends",
+   "map": -1401,
+   "wikidata": -1550,
+   "diff": 149,
+   "wd": "Q192319",
+   "label": "Hyksos"
+  },
+  {
+   "realm": "Janapada of Kāśī",
+   "kind": "ends",
+   "map": -451,
+   "wikidata": -600,
+   "diff": 149,
+   "wd": "Q12660335",
+   "label": "Kashi"
+  },
+  {
+   "realm": "Duchy of Aquitaine",
+   "kind": "starts",
+   "map": 990,
+   "wikidata": 841,
+   "diff": 149,
+   "wd": "Q7703611",
+   "label": "Duchy of Aquitaine"
+  },
+  {
+   "realm": "Principality of Rostov-Suzdal",
+   "kind": "ends",
+   "map": 1240,
+   "wikidata": 1389,
+   "diff": -149,
+   "wd": "Q83546",
+   "label": "Grand Principality of Vladimir"
+  },
+  {
+   "realm": "Earldom of Ulster",
+   "kind": "starts",
+   "map": 1326,
+   "wikidata": 1177,
+   "diff": 149,
+   "wd": "Q19872858",
+   "label": "Earldom of Ulster"
+  },
+  {
+   "realm": "Portuguese Colonies",
+   "kind": "starts",
+   "map": 1564,
+   "wikidata": 1415,
+   "diff": 149,
+   "wd": "Q200464",
+   "label": "Portuguese Empire"
+  },
+  {
+   "realm": "Vientiane",
+   "kind": "starts",
+   "map": 1709,
+   "wikidata": 1560,
+   "diff": 149,
+   "wd": "Q9326",
+   "label": "Vientiane"
+  },
+  {
+   "realm": "Principality of Iberia",
+   "kind": "ends",
+   "map": 740,
+   "wikidata": 888,
+   "diff": -148,
+   "wd": "Q199389",
+   "label": "Principality of Iberia"
+  },
+  {
+   "realm": "Athenian Coalition",
+   "kind": "ends",
+   "map": -257,
+   "wikidata": -404,
+   "diff": 147,
+   "wd": "Q33745",
+   "label": "Peloponnesian War"
+  },
+  {
+   "realm": "Dong-okjeo",
+   "kind": "ends",
+   "map": 153,
+   "wikidata": 300,
+   "diff": -147,
+   "wd": "Q713393",
+   "label": "Okjeo"
+  },
+  {
+   "realm": "(Carolingian Empire)",
+   "kind": "ends",
+   "map": 989,
+   "wikidata": 843,
+   "diff": 146,
+   "wd": "Q146246",
+   "label": "Francia"
+  },
+  {
+   "realm": "Twenty-second Dynasty of Egypt",
+   "kind": "starts",
+   "map": -800,
+   "wikidata": -945,
+   "diff": 145,
+   "wd": "Q737629",
+   "label": "Twenty-second Dynasty of Egypt"
+  },
+  {
+   "realm": "Duchy of Athens",
+   "kind": "ends",
+   "map": 1313,
+   "wikidata": 1458,
+   "diff": -145,
+   "wd": "Q334714",
+   "label": "Duchy of Athens"
+  },
+  {
+   "realm": "Republic of Florence",
+   "kind": "starts",
+   "map": 1260,
+   "wikidata": 1115,
+   "diff": 145,
+   "wd": "Q148540",
+   "label": "Republic of Florence"
+  },
+  {
+   "realm": "Eastern Chagatai Khanate",
+   "kind": "starts",
+   "map": 1492,
+   "wikidata": 1347,
+   "diff": 145,
+   "wd": "Q1191125",
+   "label": "Moghulistan"
+  },
+  {
+   "realm": "Saxe-Meiningen",
+   "kind": "starts",
+   "map": 1820,
+   "wikidata": 1675,
+   "diff": 145,
+   "wd": "Q157710",
+   "label": "Duchy of Saxe-Meiningen"
+  },
+  {
+   "realm": "Halych-Volhynia occupation",
+   "kind": "starts",
+   "map": 1056,
+   "wikidata": 1199,
+   "diff": -143,
+   "wd": "Q239502",
+   "label": "Kingdom of Galicia–Volhynia"
+  },
+  {
+   "realm": "Principality of Orange",
+   "kind": "ends",
+   "map": 1571,
+   "wikidata": 1713,
+   "diff": -142,
+   "wd": "Q2281221",
+   "label": "Principality of Orange"
+  },
+  {
+   "realm": "Principality of Beloozero",
+   "kind": "ends",
+   "map": 1343,
+   "wikidata": 1485,
+   "diff": -142,
+   "wd": "Q1967380",
+   "label": "Principality of Beloozero"
+  },
+  {
+   "realm": "Northern Song",
+   "kind": "ends",
+   "map": 1138,
+   "wikidata": 1279,
+   "diff": -141,
+   "wd": "Q7462",
+   "label": "Song dynasty"
+  },
+  {
+   "realm": "Ghurid Dynasty",
+   "kind": "starts",
+   "map": 1152,
+   "wikidata": 1011,
+   "diff": 141,
+   "wd": "Q199443",
+   "label": "Ghurid dynasty"
+  },
+  {
+   "realm": "Republic of Singapore",
+   "kind": "starts",
+   "map": 1967,
+   "wikidata": 1826,
+   "diff": 141,
+   "wd": "Q334",
+   "label": "Singapore"
+  },
+  {
+   "realm": "Kingdom of Gwynedd",
+   "kind": "starts",
+   "map": 540,
+   "wikidata": 401,
+   "diff": 139,
+   "wd": "Q816814",
+   "label": "Kingdom of Gwynedd"
+  },
+  {
+   "realm": "British Empire",
+   "kind": "ends",
+   "map": 1858,
+   "wikidata": 1997,
+   "diff": -139,
+   "wd": "Q8680",
+   "label": "British Empire"
+  },
+  {
+   "realm": "Netherlands Antilles",
+   "kind": "starts",
+   "map": 1815,
+   "wikidata": 1954,
+   "diff": -139,
+   "wd": "Q25227",
+   "label": "Netherlands Antilles"
+  },
+  {
+   "realm": "Kushan Empire",
+   "kind": "ends",
+   "map": 237,
+   "wikidata": 375,
+   "diff": -138,
+   "wd": "Q25979",
+   "label": "Kushan Empire"
+  },
+  {
+   "realm": "Danish India",
+   "kind": "starts",
+   "map": 1757,
+   "wikidata": 1620,
+   "diff": 137,
+   "wd": "Q912382",
+   "label": "Danish India"
+  },
+  {
+   "realm": "Indo-Parthians",
+   "kind": "ends",
+   "map": 90,
+   "wikidata": 226,
+   "diff": -136,
+   "wd": "Q1255614",
+   "label": "Indo-Parthian kingdom"
+  },
+  {
+   "realm": "White Horde",
+   "kind": "starts",
+   "map": 1363,
+   "wikidata": 1227,
+   "diff": 136,
+   "wd": "Q2553863",
+   "label": "White Horde"
+  },
+  {
+   "realm": "Blue Horde",
+   "kind": "starts",
+   "map": 1363,
+   "wikidata": 1227,
+   "diff": 136,
+   "wd": "Q644979",
+   "label": "Blue Horde"
+  },
+  {
+   "realm": "Kingdom of Bernicia",
+   "kind": "starts",
+   "map": 555,
+   "wikidata": 420,
+   "diff": 135,
+   "wd": "Q623751",
+   "label": "Kingdom of Bernicia"
+  },
+  {
+   "realm": "Sultanate of Sambas",
+   "kind": "ends",
+   "map": 1821,
+   "wikidata": 1956,
+   "diff": -135,
+   "wd": "Q3109927",
+   "label": "Sultanate of Sambas"
+  },
+  {
+   "realm": "Giudicato of Cagliari",
+   "kind": "starts",
+   "map": 866,
+   "wikidata": 1000,
+   "diff": -134,
+   "wd": "Q2297073",
+   "label": "Giudicato of Cagliari"
+  },
+  {
+   "realm": "(Macedonian Empire)",
+   "kind": "starts",
+   "map": -675,
+   "wikidata": -808,
+   "diff": 133,
+   "wd": "Q83958",
+   "label": "Macedonia"
+  },
+  {
+   "realm": "Macedonian Empire",
+   "kind": "starts",
+   "map": -675,
+   "wikidata": -808,
+   "diff": 133,
+   "wd": "Q83958",
+   "label": "Macedonia"
+  },
+  {
+   "realm": "Kingdom of Dunoting",
+   "kind": "starts",
+   "map": 592,
+   "wikidata": 460,
+   "diff": 132,
+   "wd": "Q2264840",
+   "label": "Dunoding"
+  },
+  {
+   "realm": "Sultanate of Harar",
+   "kind": "starts",
+   "map": 1547,
+   "wikidata": 1415,
+   "diff": 132,
+   "wd": "Q2365048",
+   "label": "Adal Sultanate"
+  },
+  {
+   "realm": "Republic of Haiti",
+   "kind": "starts",
+   "map": 1936,
+   "wikidata": 1804,
+   "diff": 132,
+   "wd": "Q790",
+   "label": "Haiti"
+  },
+  {
+   "realm": "(Anglo-Saxon England)",
+   "kind": "ends",
+   "map": 935,
+   "wikidata": 1066,
+   "diff": -131,
+   "wd": "Q784963",
+   "label": "Anglo-Saxon England"
+  },
+  {
+   "realm": "Qasim Khanate",
+   "kind": "ends",
+   "map": 1551,
+   "wikidata": 1681,
+   "diff": -130,
+   "wd": "Q836169",
+   "label": "Qasim Khanate"
+  },
+  {
+   "realm": "Chandela Kingdom",
+   "kind": "starts",
+   "map": 960,
+   "wikidata": 831,
+   "diff": 129,
+   "wd": "Q2039087",
+   "label": "Chandelas of Jejakabhukti"
+  },
+  {
+   "realm": "Beylik of Sinop",
+   "kind": "ends",
+   "map": 1332,
+   "wikidata": 1461,
+   "diff": -129,
+   "wd": "Q2096678",
+   "label": "Candar dynasty"
+  },
+  {
+   "realm": "Earldom of Ulster",
+   "kind": "ends",
+   "map": 1332,
+   "wikidata": 1461,
+   "diff": -129,
+   "wd": "Q19872858",
+   "label": "Earldom of Ulster"
+  },
+  {
+   "realm": "Western Karakhanid Khanate",
+   "kind": "ends",
+   "map": 1084,
+   "wikidata": 1212,
+   "diff": -128,
+   "wd": "Q494354",
+   "label": "Karakhanid Khanate"
+  },
+  {
+   "realm": "Kingdom of Pajana",
+   "kind": "starts",
+   "map": 1572,
+   "wikidata": 1700,
+   "diff": -128,
+   "wd": "Q1074947",
+   "label": "Lontara"
+  },
+  {
+   "realm": "Burma",
+   "kind": "starts",
+   "map": 1820,
+   "wikidata": 1948,
+   "diff": -128,
+   "wd": "Q836",
+   "label": "Myanmar"
+  },
+  {
+   "realm": "Tamna",
+   "kind": "ends",
+   "map": 1278,
+   "wikidata": 1404,
+   "diff": -126,
+   "wd": "Q28057",
+   "label": "Tamna"
+  },
+  {
+   "realm": "Burgundian Kingdom",
+   "kind": "ends",
+   "map": 660,
+   "wikidata": 534,
+   "diff": 126,
+   "wd": "Q13590051",
+   "label": "Kingdom of the Burgundians"
+  },
+  {
+   "realm": "(Merovingian Empire)",
+   "kind": "ends",
+   "map": 717,
+   "wikidata": 843,
+   "diff": -126,
+   "wd": "Q146246",
+   "label": "Francia"
+  },
+  {
+   "realm": "Merovingian Empire",
+   "kind": "ends",
+   "map": 717,
+   "wikidata": 843,
+   "diff": -126,
+   "wd": "Q146246",
+   "label": "Francia"
+  },
+  {
+   "realm": "Denmark-Norway",
+   "kind": "ends",
+   "map": 1940,
+   "wikidata": 1814,
+   "diff": 126,
+   "wd": "Q62651",
+   "label": "Denmark–Norway"
+  },
+  {
+   "realm": "(Macedonian Empire)",
+   "kind": "ends",
+   "map": -292,
+   "wikidata": -167,
+   "diff": -125,
+   "wd": "Q83958",
+   "label": "Macedonia"
+  },
+  {
+   "realm": "Macedonian Empire",
+   "kind": "ends",
+   "map": -292,
+   "wikidata": -167,
+   "diff": -125,
+   "wd": "Q83958",
+   "label": "Macedonia"
+  },
+  {
+   "realm": "Burgundians",
+   "kind": "ends",
+   "map": 409,
+   "wikidata": 534,
+   "diff": -125,
+   "wd": "Q13590051",
+   "label": "Kingdom of the Burgundians"
+  },
+  {
+   "realm": "Khwarezmid Empire",
+   "kind": "starts",
+   "map": 1202,
+   "wikidata": 1077,
+   "diff": 125,
+   "wd": "Q63134381",
+   "label": "Khwarazmian Empire"
+  },
+  {
+   "realm": "County of Flanders",
+   "kind": "starts",
+   "map": 990,
+   "wikidata": 866,
+   "diff": 124,
+   "wd": "Q157070",
+   "label": "County of Flanders"
+  },
+  {
+   "realm": "Small Horde",
+   "kind": "starts",
+   "map": 1564,
+   "wikidata": 1440,
+   "diff": 124,
+   "wd": "Q631210",
+   "label": "Nogai Horde"
+  },
+  {
+   "realm": "Duchy of Burgundy",
+   "kind": "starts",
+   "map": 1003,
+   "wikidata": 880,
+   "diff": 123,
+   "wd": "Q4712",
+   "label": "Duchy of Burgundy"
+  },
+  {
+   "realm": "County of Savoy",
+   "kind": "ends",
+   "map": 1539,
+   "wikidata": 1416,
+   "diff": 123,
+   "wd": "Q1232887",
+   "label": "County of Savoy"
+  },
+  {
+   "realm": "(Vassalage of Jaffna kingdom to Vijayanagara Empire)",
+   "kind": "ends",
+   "map": 1501,
+   "wikidata": 1624,
+   "diff": -123,
+   "wd": "Q1311219",
+   "label": "Jaffna kingdom"
+  },
+  {
+   "realm": "(Polish-Lithuania Kingdom)",
+   "kind": "ends",
+   "map": 1449,
+   "wikidata": 1572,
+   "diff": -123,
+   "wd": "Q194355",
+   "label": "Jagiellonian dynasty"
+  },
+  {
+   "realm": "(British Empire)",
+   "kind": "starts",
+   "map": 1706,
+   "wikidata": 1583,
+   "diff": 123,
+   "wd": "Q8680",
+   "label": "British Empire"
+  },
+  {
+   "realm": "British Colonial Empire",
+   "kind": "starts",
+   "map": 1706,
+   "wikidata": 1583,
+   "diff": 123,
+   "wd": "Q8680",
+   "label": "British Empire"
+  },
+  {
+   "realm": "Pontianak Kadriyah Sultanate",
+   "kind": "ends",
+   "map": 1827,
+   "wikidata": 1950,
+   "diff": -123,
+   "wd": "Q3048747",
+   "label": "Pontianak Sultanate"
+  },
+  {
+   "realm": "County of Besalú",
+   "kind": "ends",
+   "map": 989,
+   "wikidata": 1111,
+   "diff": -122,
+   "wd": "Q1541642",
+   "label": "County of Besalú"
+  },
+  {
+   "realm": "Samtskhe-Saatabago",
+   "kind": "ends",
+   "map": 1506,
+   "wikidata": 1628,
+   "diff": -122,
+   "wd": "Q2029317",
+   "label": "Samtskhe atabegate"
+  },
+  {
+   "realm": "Republic of Amalfi",
+   "kind": "starts",
+   "map": 960,
+   "wikidata": 839,
+   "diff": 121,
+   "wd": "Q686312",
+   "label": "Duchy of Amalfi"
+  },
+  {
+   "realm": "Sultanate of Mempawah",
+   "kind": "starts",
+   "map": 1619,
+   "wikidata": 1740,
+   "diff": -121,
+   "wd": "Q19746028",
+   "label": "Mempawah Kingdom"
+  },
+  {
+   "realm": "Mahajanapadas",
+   "kind": "starts",
+   "map": -480,
+   "wikidata": -600,
+   "diff": 120,
+   "wd": "Q846025",
+   "label": "Mahajanapada"
+  },
+  {
+   "realm": "Carolingian Empire",
+   "kind": "ends",
+   "map": 723,
+   "wikidata": 843,
+   "diff": -120,
+   "wd": "Q146246",
+   "label": "Francia"
+  },
+  {
+   "realm": "Nawabs of Bengal",
+   "kind": "ends",
+   "map": 1761,
+   "wikidata": 1880,
+   "diff": -119,
+   "wd": "Q2637089",
+   "label": "Nawab of Bengal"
+  },
+  {
+   "realm": "Indo-Scythians",
+   "kind": "ends",
+   "map": 282,
+   "wikidata": 400,
+   "diff": -118,
+   "wd": "Q240123",
+   "label": "Indo-Scythians"
+  },
+  {
+   "realm": "Sultanate of Mempawah",
+   "kind": "ends",
+   "map": 1827,
+   "wikidata": 1945,
+   "diff": -118,
+   "wd": "Q19746028",
+   "label": "Mempawah Kingdom"
+  },
+  {
+   "realm": "Surakarta Sunanate",
+   "kind": "ends",
+   "map": 1829,
+   "wikidata": 1946,
+   "diff": -117,
+   "wd": "Q2122499",
+   "label": "Surakarta Sunanate"
+  },
+  {
+   "realm": "Aetolian League",
+   "kind": "starts",
+   "map": -284,
+   "wikidata": -400,
+   "diff": 116,
+   "wd": "Q245273",
+   "label": "Aetolian League"
+  },
+  {
+   "realm": "Western Kushans",
+   "kind": "ends",
+   "map": 259,
+   "wikidata": 375,
+   "diff": -116,
+   "wd": "Q25979",
+   "label": "Kushan Empire"
+  },
+  {
+   "realm": "Taifa of Córdoba",
+   "kind": "starts",
+   "map": 1147,
+   "wikidata": 1031,
+   "diff": 116,
+   "wd": "Q2285679",
+   "label": "Taifa of Córdoba"
+  },
+  {
+   "realm": "White Horde",
+   "kind": "ends",
+   "map": 1384,
+   "wikidata": 1500,
+   "diff": -116,
+   "wd": "Q2553863",
+   "label": "White Horde"
+  },
+  {
+   "realm": "Serbian Despots",
+   "kind": "ends",
+   "map": 1421,
+   "wikidata": 1537,
+   "diff": -116,
+   "wd": "Q878319",
+   "label": "Serbian Despotate"
+  },
+  {
+   "realm": "Moghulistan",
+   "kind": "starts",
+   "map": 1463,
+   "wikidata": 1347,
+   "diff": 116,
+   "wd": "Q1191125",
+   "label": "Moghulistan"
+  },
+  {
+   "realm": "Eastern Moghulistan",
+   "kind": "ends",
+   "map": 1686,
+   "wikidata": 1570,
+   "diff": 116,
+   "wd": "Q1191125",
+   "label": "Moghulistan"
+  },
+  {
+   "realm": "Kingdom of Judah",
+   "kind": "ends",
+   "map": -701,
+   "wikidata": -586,
+   "diff": -115,
+   "wd": "Q48685",
+   "label": "Kingdom of Judah"
+  },
+  {
+   "realm": "French Algeria",
+   "kind": "ends",
+   "map": 1847,
+   "wikidata": 1962,
+   "diff": -115,
+   "wd": "Q218272",
+   "label": "French Algeria"
+  },
+  {
+   "realm": "County of Aragon",
+   "kind": "ends",
+   "map": 921,
+   "wikidata": 1035,
+   "diff": -114,
+   "wd": "Q1235737",
+   "label": "County of Aragon"
+  },
+  {
+   "realm": "Kingdom of Duklja",
+   "kind": "ends",
+   "map": 1138,
+   "wikidata": 1252,
+   "diff": -114,
+   "wd": "Q1252942",
+   "label": "Duklja"
+  },
+  {
+   "realm": "Spanish Empire",
+   "kind": "starts",
+   "map": 1516,
+   "wikidata": 1402,
+   "diff": 114,
+   "wd": "Q80702",
+   "label": "Spanish Empire"
+  },
+  {
+   "realm": "(Spanish Empire)",
+   "kind": "starts",
+   "map": 1516,
+   "wikidata": 1402,
+   "diff": 114,
+   "wd": "Q80702",
+   "label": "Spanish Empire"
+  },
+  {
+   "realm": "Argentine Republic",
+   "kind": "starts",
+   "map": 1930,
+   "wikidata": 1816,
+   "diff": 114,
+   "wd": "Q414",
+   "label": "Argentina"
+  },
+  {
+   "realm": "Duchy of Racibórz",
+   "kind": "starts",
+   "map": 1285,
+   "wikidata": 1172,
+   "diff": 113,
+   "wd": "Q700117",
+   "label": "Duchy of Racibórz"
+  },
+  {
+   "realm": "Kingdom of Greece",
+   "kind": "starts",
+   "map": 1945,
+   "wikidata": 1832,
+   "diff": 113,
+   "wd": "Q209065",
+   "label": "Kingdom of Greece"
+  },
+  {
+   "realm": "Ziyarid dynasty",
+   "kind": "ends",
+   "map": 979,
+   "wikidata": 1090,
+   "diff": -111,
+   "wd": "Q207044",
+   "label": "Ziyarid dynasty"
+  },
+  {
+   "realm": "Kutai Kingdom",
+   "kind": "ends",
+   "map": 1733,
+   "wikidata": 1844,
+   "diff": -111,
+   "wd": "Q1794655",
+   "label": "Kutai"
+  },
+  {
+   "realm": "Free City of Danzig",
+   "kind": "starts",
+   "map": 1809,
+   "wikidata": 1920,
+   "diff": -111,
+   "wd": "Q216173",
+   "label": "Free City of Danzig"
+  },
+  {
+   "realm": "Antigonid Dynasty",
+   "kind": "ends",
+   "map": -278,
+   "wikidata": -168,
+   "diff": -110,
+   "wd": "Q237325",
+   "label": "Antigonid dynasty"
+  },
+  {
+   "realm": "Eastern Roman Empire",
+   "kind": "starts",
+   "map": 395,
+   "wikidata": 285,
+   "diff": 110,
+   "wd": "Q12544",
+   "label": "Byzantine Empire"
+  },
+  {
+   "realm": "Western Roman Empire",
+   "kind": "starts",
+   "map": 395,
+   "wikidata": 285,
+   "diff": 110,
+   "wd": "Q42834",
+   "label": "Western Roman Empire"
+  },
+  {
+   "realm": "Kingdom of Gwent",
+   "kind": "starts",
+   "map": 540,
+   "wikidata": 430,
+   "diff": 110,
+   "wd": "Q2594661",
+   "label": "Kingdom of Gwent"
+  },
+  {
+   "realm": "Taifa of Algeciras",
+   "kind": "ends",
+   "map": 1168,
+   "wikidata": 1058,
+   "diff": 110,
+   "wd": "Q1183407",
+   "label": "Taifa of Algeciras"
+  },
+  {
+   "realm": "Byeonhan",
+   "kind": "starts",
+   "map": -91,
+   "wikidata": -200,
+   "diff": 109,
+   "wd": "Q1378584",
+   "label": "Byeonhan confederacy"
+  },
+  {
+   "realm": "Kingdom of Kent",
+   "kind": "ends",
+   "map": 762,
+   "wikidata": 871,
+   "diff": -109,
+   "wd": "Q328818",
+   "label": "Kingdom of Kent"
+  },
+  {
+   "realm": "Halych-Volhynia occupation",
+   "kind": "ends",
+   "map": 1240,
+   "wikidata": 1349,
+   "diff": -109,
+   "wd": "Q239502",
+   "label": "Kingdom of Galicia–Volhynia"
+  },
+  {
+   "realm": "Principality of Galicia-Volhynia",
+   "kind": "ends",
+   "map": 1240,
+   "wikidata": 1349,
+   "diff": -109,
+   "wd": "Q239502",
+   "label": "Kingdom of Galicia–Volhynia"
+  },
+  {
+   "realm": "Empire of Haiti",
+   "kind": "ends",
+   "map": 1915,
+   "wikidata": 1806,
+   "diff": 109,
+   "wd": "Q2006756",
+   "label": "First Empire of Haiti"
+  },
+  {
+   "realm": "Romania",
+   "kind": "starts",
+   "map": 1990,
+   "wikidata": 1881,
+   "diff": 109,
+   "wd": "Q203493",
+   "label": "Kingdom of Romania"
+  },
+  {
+   "realm": "Athenian Coalition",
+   "kind": "starts",
+   "map": -323,
+   "wikidata": -431,
+   "diff": 108,
+   "wd": "Q33745",
+   "label": "Peloponnesian War"
+  },
+  {
+   "realm": "First Hellenic Republic",
+   "kind": "ends",
+   "map": 1940,
+   "wikidata": 1832,
+   "diff": 108,
+   "wd": "Q528546",
+   "label": "First Hellenic Republic"
+  },
+  {
+   "realm": "French India",
+   "kind": "ends",
+   "map": 1847,
+   "wikidata": 1954,
+   "diff": -107,
+   "wd": "Q646374",
+   "label": "French India"
+  },
+  {
+   "realm": "New Zealand",
+   "kind": "starts",
+   "map": 1948,
+   "wikidata": 1841,
+   "diff": 107,
+   "wd": "Q664",
+   "label": "New Zealand"
+  },
+  {
+   "realm": "Sultanate of Zanzibar",
+   "kind": "starts",
+   "map": 1963,
+   "wikidata": 1856,
+   "diff": 107,
+   "wd": "Q157904",
+   "label": "Sultanate of Zanzibar"
+  },
+  {
+   "realm": "Mahajanapadas",
+   "kind": "ends",
+   "map": -451,
+   "wikidata": -345,
+   "diff": -106,
+   "wd": "Q846025",
+   "label": "Mahajanapada"
+  },
+  {
+   "realm": "Janapada of Avanti",
+   "kind": "ends",
+   "map": -405,
+   "wikidata": -300,
+   "diff": -105,
+   "wd": "Q4827705",
+   "label": "Avanti"
+  },
+  {
+   "realm": "Janapada of Matsya",
+   "kind": "ends",
+   "map": -405,
+   "wikidata": -300,
+   "diff": -105,
+   "wd": "Q2665398",
+   "label": "Matsya"
+  },
+  {
+   "realm": "Janapada of Surasena",
+   "kind": "ends",
+   "map": -405,
+   "wikidata": -300,
+   "diff": -105,
+   "wd": "Q1330149",
+   "label": "Surasena"
+  },
+  {
+   "realm": "Southern Liang",
+   "kind": "starts",
+   "map": 397,
+   "wikidata": 502,
+   "diff": -105,
+   "wd": "Q1069868",
+   "label": "Liang dynasty"
+  },
+  {
+   "realm": "Kingdom of Gwent",
+   "kind": "ends",
+   "map": 1055,
+   "wikidata": 950,
+   "diff": 105,
+   "wd": "Q2594661",
+   "label": "Kingdom of Gwent"
+  },
+  {
+   "realm": "Utpala Dynasty",
+   "kind": "starts",
+   "map": 960,
+   "wikidata": 855,
+   "diff": 105,
+   "wd": "Q1617123",
+   "label": "Utpala dynasty"
+  },
+  {
+   "realm": "Taifa of Silves",
+   "kind": "ends",
+   "map": 1168,
+   "wikidata": 1063,
+   "diff": 105,
+   "wd": "Q1994569",
+   "label": "Taifa of Silves"
+  },
+  {
+   "realm": "Makuria",
+   "kind": "ends",
+   "map": 1414,
+   "wikidata": 1518,
+   "diff": -104,
+   "wd": "Q829356",
+   "label": "Kingdom of Makuria"
+  },
+  {
+   "realm": "Saffarid Dynasty",
+   "kind": "ends",
+   "map": 899,
+   "wikidata": 1003,
+   "diff": -104,
+   "wd": "Q45310",
+   "label": "Saffarid dynasty"
+  },
+  {
+   "realm": "Republic of Amalfi",
+   "kind": "ends",
+   "map": 1033,
+   "wikidata": 1137,
+   "diff": -104,
+   "wd": "Q686312",
+   "label": "Duchy of Amalfi"
+  },
+  {
+   "realm": "Kingdom of Castile",
+   "kind": "starts",
+   "map": 961,
+   "wikidata": 1065,
+   "diff": -104,
+   "wd": "Q179293",
+   "label": "Kingdom of Castile"
+  },
+  {
+   "realm": "Aztec Triple Alliance",
+   "kind": "starts",
+   "map": 1429,
+   "wikidata": 1325,
+   "diff": 104,
+   "wd": "Q2608489",
+   "label": "Aztec Empire"
+  },
+  {
+   "realm": "Korean Jin",
+   "kind": "starts",
+   "map": -197,
+   "wikidata": -300,
+   "diff": 103,
+   "wd": "Q1155101",
+   "label": "Jin"
+  },
+  {
+   "realm": "Kalabhra Dynasty",
+   "kind": "starts",
+   "map": 353,
+   "wikidata": 250,
+   "diff": 103,
+   "wd": "Q2572901",
+   "label": "Kalabhra"
+  },
+  {
+   "realm": "Margraviate of Brandenburg",
+   "kind": "starts",
+   "map": 1260,
+   "wikidata": 1157,
+   "diff": 103,
+   "wd": "Q148499",
+   "label": "Margraviate of Brandenburg"
+  },
+  {
+   "realm": "Small Horde",
+   "kind": "ends",
+   "map": 1737,
+   "wikidata": 1634,
+   "diff": 103,
+   "wd": "Q631210",
+   "label": "Nogai Horde"
+  },
+  {
+   "realm": "State of Qatar",
+   "kind": "starts",
+   "map": 1973,
+   "wikidata": 1870,
+   "diff": 103,
+   "wd": "Q846",
+   "label": "Qatar"
+  },
+  {
+   "realm": "Magna Frisia",
+   "kind": "starts",
+   "map": 602,
+   "wikidata": 500,
+   "diff": 102,
+   "wd": "Q87791",
+   "label": "Frisian Kingdom"
+  },
+  {
+   "realm": "Taifa of Almería",
+   "kind": "ends",
+   "map": 1249,
+   "wikidata": 1147,
+   "diff": 102,
+   "wd": "Q2580032",
+   "label": "Taifa of Almería"
+  },
+  {
+   "realm": "Principality of Smolensk",
+   "kind": "ends",
+   "map": 1406,
+   "wikidata": 1508,
+   "diff": -102,
+   "wd": "Q1483495",
+   "label": "Principality of Smolensk"
+  },
+  {
+   "realm": "Neo-Hittite states",
+   "kind": "ends",
+   "map": -801,
+   "wikidata": -700,
+   "diff": -101,
+   "wd": "Q770281",
+   "label": "Neo-Hittite states"
+  },
+  {
+   "realm": "Kingdom of Scotland",
+   "kind": "ends",
+   "map": 1608,
+   "wikidata": 1707,
+   "diff": -99,
+   "wd": "Q230791",
+   "label": "Kingdom of Scotland"
+  },
+  {
+   "realm": "Spanish Empire",
+   "kind": "ends",
+   "map": 1879,
+   "wikidata": 1976,
+   "diff": -97,
+   "wd": "Q80702",
+   "label": "Spanish Empire"
+  },
+  {
+   "realm": "Tenochtitlan",
+   "kind": "ends",
+   "map": 1428,
+   "wikidata": 1521,
+   "diff": -93,
+   "wd": "Q13695",
+   "label": "Tenochtitlan"
+  },
+  {
+   "realm": "Ramadanid Emirate",
+   "kind": "ends",
+   "map": 1515,
+   "wikidata": 1608,
+   "diff": -93,
+   "wd": "Q2261321",
+   "label": "Beylik of Adana"
+  },
+  {
+   "realm": "Swedish Empire",
+   "kind": "ends",
+   "map": 1814,
+   "wikidata": 1721,
+   "diff": 93,
+   "wd": "Q215443",
+   "label": "Swedish Empire"
+  },
+  {
+   "realm": "Republic of Baden",
+   "kind": "ends",
+   "map": 1852,
+   "wikidata": 1945,
+   "diff": -93,
+   "wd": "Q690821",
+   "label": "Republic of Baden"
+  },
+  {
+   "realm": "(Portuguese Empire)",
+   "kind": "ends",
+   "map": 1910,
+   "wikidata": 1999,
+   "diff": -89,
+   "wd": "Q200464",
+   "label": "Portuguese Empire"
+  },
+  {
+   "realm": "Portuguese Colonies",
+   "kind": "ends",
+   "map": 1910,
+   "wikidata": 1999,
+   "diff": -89,
+   "wd": "Q200464",
+   "label": "Portuguese Empire"
+  },
+  {
+   "realm": "Principality of Liechtenstein",
+   "kind": "starts",
+   "map": 1721,
+   "wikidata": 1806,
+   "diff": -85,
+   "wd": "Q347",
+   "label": "Liechtenstein"
+  },
+  {
+   "realm": "Japan",
+   "kind": "starts",
+   "map": 1953,
+   "wikidata": 1868,
+   "diff": 85,
+   "wd": "Q188712",
+   "label": "Empire of Japan"
+  },
+  {
+   "realm": "Swaziland",
+   "kind": "starts",
+   "map": 1885,
+   "wikidata": 1968,
+   "diff": -83,
+   "wd": "Q1050",
+   "label": "Eswatini"
+  },
+  {
+   "realm": "Republic of Iraq",
+   "kind": "starts",
+   "map": 2014,
+   "wikidata": 1932,
+   "diff": 82,
+   "wd": "Q796",
+   "label": "Iraq"
+  },
+  {
+   "realm": "Mongolia",
+   "kind": "starts",
+   "map": 1992,
+   "wikidata": 1911,
+   "diff": 81,
+   "wd": "Q711",
+   "label": "Mongolia"
+  },
+  {
+   "realm": "Sultanate of Muscat and Oman",
+   "kind": "starts",
+   "map": 1900,
+   "wikidata": 1820,
+   "diff": 80,
+   "wd": "Q157734",
+   "label": "Muscat and Oman"
+  },
+  {
+   "realm": "Hungary",
+   "kind": "starts",
+   "map": 1947,
+   "wikidata": 1867,
+   "diff": 80,
+   "wd": "Q28513",
+   "label": "Austria–Hungary"
+  },
+  {
+   "realm": "Saxe-Coburg and Gotha",
+   "kind": "ends",
+   "map": 1839,
+   "wikidata": 1918,
+   "diff": -79,
+   "wd": "Q3462133",
+   "label": "Duchy of Saxe-Coburg and Gotha"
+  },
+  {
+   "realm": "Kingdom of the Two Sicilies",
+   "kind": "starts",
+   "map": 1815,
+   "wikidata": 1738,
+   "diff": 77,
+   "wd": "Q180393",
+   "label": "Kingdom of the Two Sicilies"
+  },
+  {
+   "realm": "Trucial States",
+   "kind": "ends",
+   "map": 1894,
+   "wikidata": 1971,
+   "diff": -77,
+   "wd": "Q1852345",
+   "label": "Trucial States"
+  },
+  {
+   "realm": "Vijayanagara Empire",
+   "kind": "ends",
+   "map": 1571,
+   "wikidata": 1646,
+   "diff": -75,
+   "wd": "Q167639",
+   "label": "Vijayanagara Empire"
+  },
+  {
+   "realm": "New France",
+   "kind": "starts",
+   "map": 1609,
+   "wikidata": 1534,
+   "diff": 75,
+   "wd": "Q170604",
+   "label": "New France"
+  },
+  {
+   "realm": "Sultanate of Maguindanao",
+   "kind": "ends",
+   "map": 1852,
+   "wikidata": 1926,
+   "diff": -74,
+   "wd": "Q248572",
+   "label": "Sultanate of Maguindanao"
+  },
+  {
+   "realm": "Republic of Trinidad and Tobago",
+   "kind": "starts",
+   "map": 1963,
+   "wikidata": 1889,
+   "diff": 74,
+   "wd": "Q754",
+   "label": "Trinidad and Tobago"
+  },
+  {
+   "realm": "Slovakia",
+   "kind": "starts",
+   "map": 1992,
+   "wikidata": 1918,
+   "diff": 74,
+   "wd": "Q33946",
+   "label": "Czechoslovakia"
+  },
+  {
+   "realm": "Republic of Estonia",
+   "kind": "starts",
+   "map": 1992,
+   "wikidata": 1918,
+   "diff": 74,
+   "wd": "Q191",
+   "label": "Estonia"
+  },
+  {
+   "realm": "Azerbaijan Democratic Republic",
+   "kind": "starts",
+   "map": 1918,
+   "wikidata": 1991,
+   "diff": -73,
+   "wd": "Q227",
+   "label": "Azerbaijan"
+  },
+  {
+   "realm": "Armenia",
+   "kind": "starts",
+   "map": 1918,
+   "wikidata": 1991,
+   "diff": -73,
+   "wd": "Q399",
+   "label": "Armenia"
+  },
+  {
+   "realm": "Nogai Horde",
+   "kind": "ends",
+   "map": 1563,
+   "wikidata": 1634,
+   "diff": -71,
+   "wd": "Q631210",
+   "label": "Nogai Horde"
+  },
+  {
+   "realm": "Oyo Empire",
+   "kind": "ends",
+   "map": 1835,
+   "wikidata": 1905,
+   "diff": -70,
+   "wd": "Q849623",
+   "label": "Oyo Empire"
+  },
+  {
+   "realm": "Chechen Republic",
+   "kind": "starts",
+   "map": 1992,
+   "wikidata": 1922,
+   "diff": 70,
+   "wd": "Q5187",
+   "label": "Chechnya"
+  },
+  {
+   "realm": "Sultanate of Bima",
+   "kind": "ends",
+   "map": 1889,
+   "wikidata": 1958,
+   "diff": -69,
+   "wd": "Q2817348",
+   "label": "Bima Sultanate"
+  },
+  {
+   "realm": "Republic of Baden",
+   "kind": "starts",
+   "map": 1849,
+   "wikidata": 1918,
+   "diff": -69,
+   "wd": "Q690821",
+   "label": "Republic of Baden"
+  },
+  {
+   "realm": "(Commonwealth of Nations)",
+   "kind": "starts",
+   "map": 2000,
+   "wikidata": 1931,
+   "diff": 69,
+   "wd": "Q7785",
+   "label": "Commonwealth of Nations"
+  },
+  {
+   "realm": "Khoshut Khanate",
+   "kind": "starts",
+   "map": 1582,
+   "wikidata": 1650,
+   "diff": -68,
+   "wd": "Q10921634",
+   "label": "Khoshut Khanate"
+  },
+  {
+   "realm": "Argentine Confederation",
+   "kind": "ends",
+   "map": 1929,
+   "wikidata": 1861,
+   "diff": 68,
+   "wd": "Q832554",
+   "label": "Argentine Confederation"
+  },
+  {
+   "realm": "Republic of Tajikistan",
+   "kind": "starts",
+   "map": 1992,
+   "wikidata": 1924,
+   "diff": 68,
+   "wd": "Q863",
+   "label": "Tajikistan"
+  },
+  {
+   "realm": "Free City of Lübeck",
+   "kind": "ends",
+   "map": 1870,
+   "wikidata": 1937,
+   "diff": -67,
+   "wd": "Q950240",
+   "label": "Free and Hanseatic City of Lübeck"
+  },
+  {
+   "realm": "Konbaung Dynasty",
+   "kind": "ends",
+   "map": 1819,
+   "wikidata": 1885,
+   "diff": -66,
+   "wd": "Q1062422",
+   "label": "Konbaung dynasty"
+  },
+  {
+   "realm": "Sikh Empire",
+   "kind": "starts",
+   "map": 1799,
+   "wikidata": 1733,
+   "diff": 66,
+   "wd": "Q83572",
+   "label": "Sikh Empire"
+  },
+  {
+   "realm": "Western Moghulistan",
+   "kind": "ends",
+   "map": 1635,
+   "wikidata": 1570,
+   "diff": 65,
+   "wd": "Q1191125",
+   "label": "Moghulistan"
+  },
+  {
+   "realm": "Grand Duchy of Saxe-Weimar-Eisenach",
+   "kind": "starts",
+   "map": 1806,
+   "wikidata": 1741,
+   "diff": 65,
+   "wd": "Q155570",
+   "label": "Duchy of Saxe-Weimar-Eisenach"
+  },
+  {
+   "realm": "Canada",
+   "kind": "starts",
+   "map": 1932,
+   "wikidata": 1867,
+   "diff": 65,
+   "wd": "Q16",
+   "label": "Canada"
+  },
+  {
+   "realm": "Sultanate of Johor",
+   "kind": "ends",
+   "map": 1884,
+   "wikidata": 1946,
+   "diff": -62,
+   "wd": "Q1150344",
+   "label": "Johor Sultanate"
+  },
+  {
+   "realm": "Communist Cuba",
+   "kind": "starts",
+   "map": 1960,
+   "wikidata": 1898,
+   "diff": 62,
+   "wd": "Q241",
+   "label": "Cuba"
+  },
+  {
+   "realm": "Danish India",
+   "kind": "ends",
+   "map": 1808,
+   "wikidata": 1869,
+   "diff": -61,
+   "wd": "Q912382",
+   "label": "Danish India"
+  },
+  {
+   "realm": "Nguyễn dynasty",
+   "kind": "ends",
+   "map": 1884,
+   "wikidata": 1945,
+   "diff": -61,
+   "wd": "Q6500483",
+   "label": "Nguyen dynasty"
+  },
+  {
+   "realm": "Mali Empire",
+   "kind": "ends",
+   "map": 1611,
+   "wikidata": 1670,
+   "diff": -59,
+   "wd": "Q184536",
+   "label": "Mali Empire"
+  },
+  {
+   "realm": "Eastern Chagatai Khanate",
+   "kind": "ends",
+   "map": 1511,
+   "wikidata": 1570,
+   "diff": -59,
+   "wd": "Q1191125",
+   "label": "Moghulistan"
+  },
+  {
+   "realm": "Kingdom of Kartli",
+   "kind": "ends",
+   "map": 1705,
+   "wikidata": 1762,
+   "diff": -57,
+   "wd": "Q195972",
+   "label": "Kingdom of Kartli"
+  },
+  {
+   "realm": "Duchy of Anhalt",
+   "kind": "starts",
+   "map": 1806,
+   "wikidata": 1863,
+   "diff": -57,
+   "wd": "Q16550783",
+   "label": "Duchy of Anhalt"
+  },
+  {
+   "realm": "Duchy of Brittany",
+   "kind": "ends",
+   "map": 1491,
+   "wikidata": 1547,
+   "diff": -56,
+   "wd": "Q71747",
+   "label": "Duchy of Brittany"
+  },
+  {
+   "realm": "Sultanate of Aceh",
+   "kind": "ends",
+   "map": 1959,
+   "wikidata": 1903,
+   "diff": 56,
+   "wd": "Q1061057",
+   "label": "Aceh Sultanate"
+  },
+  {
+   "realm": "Patani Kingdom",
+   "kind": "starts",
+   "map": 1572,
+   "wikidata": 1516,
+   "diff": 56,
+   "wd": "Q584435",
+   "label": "Patani Kingdom"
+  },
+  {
+   "realm": "Thanjavur Maratha Kingdom",
+   "kind": "ends",
+   "map": 1799,
+   "wikidata": 1855,
+   "diff": -56,
+   "wd": "Q3530610",
+   "label": "Thanjavur Maratha kingdom"
+  },
+  {
+   "realm": "Republic of Colombia",
+   "kind": "starts",
+   "map": 1866,
+   "wikidata": 1810,
+   "diff": 56,
+   "wd": "Q739",
+   "label": "Colombia"
+  },
+  {
+   "realm": "Kazakhstan",
+   "kind": "starts",
+   "map": 1992,
+   "wikidata": 1936,
+   "diff": 56,
+   "wd": "Q232",
+   "label": "Kazakhstan"
+  },
+  {
+   "realm": "Dutch Gold Coast",
+   "kind": "starts",
+   "map": 1653,
+   "wikidata": 1598,
+   "diff": 55,
+   "wd": "Q770776",
+   "label": "Dutch Gold Coast"
+  },
+  {
+   "realm": "Sultanate of Jambi",
+   "kind": "starts",
+   "map": 1670,
+   "wikidata": 1615,
+   "diff": 55,
+   "wd": "Q1679856",
+   "label": "Jambi Sultanate"
+  },
+  {
+   "realm": "Riau-Lingga Sultanate",
+   "kind": "ends",
+   "map": 1856,
+   "wikidata": 1911,
+   "diff": -55,
+   "wd": "Q3503553",
+   "label": "Riau-Lingga Sultanate"
+  },
+  {
+   "realm": "Carnatic Sultanate",
+   "kind": "ends",
+   "map": 1802,
+   "wikidata": 1855,
+   "diff": -53,
+   "wd": "Q3277580",
+   "label": "Carnatic state"
+  },
+  {
+   "realm": "County of Foix",
+   "kind": "ends",
+   "map": 1555,
+   "wikidata": 1607,
+   "diff": -52,
+   "wd": "Q1481436",
+   "label": "County of Foix"
+  },
+  {
+   "realm": "Moghulistan",
+   "kind": "ends",
+   "map": 1518,
+   "wikidata": 1570,
+   "diff": -52,
+   "wd": "Q1191125",
+   "label": "Moghulistan"
+  },
+  {
+   "realm": "British Gold Coast",
+   "kind": "starts",
+   "map": 1873,
+   "wikidata": 1821,
+   "diff": 52,
+   "wd": "Q503623",
+   "label": "Gold Coast Colony"
+  },
+  {
+   "realm": "Arab Socialist Ba'ath Party",
+   "kind": "ends",
+   "map": 1972,
+   "wikidata": 2024,
+   "diff": -52,
+   "wd": "Q16243030",
+   "label": "Arab Socialist Ba'ath Party – Syria Region"
+  },
+  {
+   "realm": "Kingdom of Prussia",
+   "kind": "ends",
+   "map": 1867,
+   "wikidata": 1918,
+   "diff": -51,
+   "wd": "Q27306",
+   "label": "Kingdom of Prussia"
+  },
+  {
+   "realm": "Imamate of Oman",
+   "kind": "ends",
+   "map": 1919,
+   "wikidata": 1970,
+   "diff": -51,
+   "wd": "Q2342282",
+   "label": "Oman proper"
+  },
+  {
+   "realm": "Arab Republic of Egypt",
+   "kind": "starts",
+   "map": 1973,
+   "wikidata": 1922,
+   "diff": 51,
+   "wd": "Q79",
+   "label": "Egypt"
+  },
+  {
+   "realm": "Qatar Dynasty",
+   "kind": "starts",
+   "map": 1820,
+   "wikidata": 1870,
+   "diff": -50,
+   "wd": "Q846",
+   "label": "Qatar"
+  },
+  {
+   "realm": "Kamerun",
+   "kind": "ends",
+   "map": 1870,
+   "wikidata": 1919,
+   "diff": -49,
+   "wd": "Q668294",
+   "label": "Kamerun"
+  },
+  {
+   "realm": "Saxe-Altenburg",
+   "kind": "ends",
+   "map": 1870,
+   "wikidata": 1918,
+   "diff": -48,
+   "wd": "Q158151",
+   "label": "Duchy of Saxe-Altenburg"
+  },
+  {
+   "realm": "Grand Duchy of Baden",
+   "kind": "ends",
+   "map": 1870,
+   "wikidata": 1918,
+   "diff": -48,
+   "wd": "Q186320",
+   "label": "Grand Duchy of Baden"
+  },
+  {
+   "realm": "Duchy of Oldenburg",
+   "kind": "ends",
+   "map": 1870,
+   "wikidata": 1918,
+   "diff": -48,
+   "wd": "Q697084",
+   "label": "Duchy of Oldenburg"
+  },
+  {
+   "realm": "Principality of Waldeck and Pyrmont",
+   "kind": "ends",
+   "map": 1870,
+   "wikidata": 1918,
+   "diff": -48,
+   "wd": "Q165763",
+   "label": "Principality of Waldeck"
+  },
+  {
+   "realm": "Kingdom of Württemberg",
+   "kind": "ends",
+   "map": 1870,
+   "wikidata": 1918,
+   "diff": -48,
+   "wd": "Q159631",
+   "label": "Kingdom of Württemberg"
+  },
+  {
+   "realm": "Principality of Lippe",
+   "kind": "ends",
+   "map": 1870,
+   "wikidata": 1918,
+   "diff": -48,
+   "wd": "Q14551680",
+   "label": "Principality of Lippe"
+  },
+  {
+   "realm": "Kingdom of Bavaria",
+   "kind": "ends",
+   "map": 1870,
+   "wikidata": 1918,
+   "diff": -48,
+   "wd": "Q154195",
+   "label": "Kingdom of Bavaria"
+  },
+  {
+   "realm": "Principality of Reuss-Gera",
+   "kind": "ends",
+   "map": 1870,
+   "wikidata": 1918,
+   "diff": -48,
+   "wd": "Q639100",
+   "label": "Principality of Reuss-Gera"
+  },
+  {
+   "realm": "Grand Duchy of Hesse",
+   "kind": "ends",
+   "map": 1870,
+   "wikidata": 1918,
+   "diff": -48,
+   "wd": "Q20135",
+   "label": "Grand Duchy of Hesse"
+  },
+  {
+   "realm": "Grand Duchy of Saxe-Weimar-Eisenach",
+   "kind": "ends",
+   "map": 1870,
+   "wikidata": 1918,
+   "diff": -48,
+   "wd": "Q155570",
+   "label": "Duchy of Saxe-Weimar-Eisenach"
+  },
+  {
+   "realm": "Duchy of Anhalt",
+   "kind": "ends",
+   "map": 1870,
+   "wikidata": 1918,
+   "diff": -48,
+   "wd": "Q16550783",
+   "label": "Duchy of Anhalt"
+  },
+  {
+   "realm": "Kingdom of Saxony",
+   "kind": "ends",
+   "map": 1870,
+   "wikidata": 1918,
+   "diff": -48,
+   "wd": "Q153015",
+   "label": "Kingdom of Saxony"
+  },
+  {
+   "realm": "Duchy of Brunswick",
+   "kind": "ends",
+   "map": 1870,
+   "wikidata": 1918,
+   "diff": -48,
+   "wd": "Q326029",
+   "label": "Duchy of Brunswick"
+  },
+  {
+   "realm": "Saxe-Meiningen",
+   "kind": "ends",
+   "map": 1870,
+   "wikidata": 1918,
+   "diff": -48,
+   "wd": "Q157710",
+   "label": "Duchy of Saxe-Meiningen"
+  },
+  {
+   "realm": "Yugoslavia",
+   "kind": "ends",
+   "map": 1945,
+   "wikidata": 1992,
+   "diff": -47,
+   "wd": "Q83286",
+   "label": "Socialist Federal Republic of Yugoslavia"
+  },
+  {
+   "realm": "British Africa",
+   "kind": "ends",
+   "map": 1960,
+   "wikidata": 1914,
+   "diff": 46,
+   "wd": "Q179848",
+   "label": "Scramble for Africa"
+  },
+  {
+   "realm": "(Spanish Empire)",
+   "kind": "ends",
+   "map": 1931,
+   "wikidata": 1976,
+   "diff": -45,
+   "wd": "Q80702",
+   "label": "Spanish Empire"
+  },
+  {
+   "realm": "Republic of Albania",
+   "kind": "starts",
+   "map": 1991,
+   "wikidata": 1946,
+   "diff": 45,
+   "wd": "Q467864",
+   "label": "People's Socialist Republic of Albania"
+  },
+  {
+   "realm": "Republic of Bulgaria",
+   "kind": "starts",
+   "map": 1991,
+   "wikidata": 1946,
+   "diff": 45,
+   "wd": "Q121932",
+   "label": "People's Republic of Bulgaria"
+  },
+  {
+   "realm": "Kingdom of Naples (Napoleonic)",
+   "kind": "starts",
+   "map": 1762,
+   "wikidata": 1806,
+   "diff": -44,
+   "wd": "Q48779892",
+   "label": "Kingdom of Naples"
+  },
+  {
+   "realm": "Qatar",
+   "kind": "starts",
+   "map": 1913,
+   "wikidata": 1870,
+   "diff": 43,
+   "wd": "Q846",
+   "label": "Qatar"
+  },
+  {
+   "realm": "Ba'athist Syria",
+   "kind": "starts",
+   "map": 1963,
+   "wikidata": 1920,
+   "diff": 43,
+   "wd": "Q858",
+   "label": "Syria"
+  },
+  {
+   "realm": "Union of Myanmar",
+   "kind": "starts",
+   "map": 1990,
+   "wikidata": 1948,
+   "diff": 42,
+   "wd": "Q836",
+   "label": "Myanmar"
+  },
+  {
+   "realm": "Republic of Syria",
+   "kind": "starts",
+   "map": 1961,
+   "wikidata": 1920,
+   "diff": 41,
+   "wd": "Q858",
+   "label": "Syria"
+  },
+  {
+   "realm": "Ethiopian Empire",
+   "kind": "ends",
+   "map": 1935,
+   "wikidata": 1975,
+   "diff": -40,
+   "wd": "Q207521",
+   "label": "Ethiopian Empire"
+  },
+  {
+   "realm": "Sultanate of Darfur",
+   "kind": "ends",
+   "map": 1876,
+   "wikidata": 1916,
+   "diff": -40,
+   "wd": "Q1474791",
+   "label": "Sultanate of Darfur"
+  },
+  {
+   "realm": "Bamana Empire",
+   "kind": "ends",
+   "map": 1821,
+   "wikidata": 1861,
+   "diff": -40,
+   "wd": "Q762084",
+   "label": "Bamana Empire"
+  },
+  {
+   "realm": "(Kingdom of France)",
+   "kind": "ends",
+   "map": 1791,
+   "wikidata": 1830,
+   "diff": -39,
+   "wd": "Q207162",
+   "label": "Bourbon Restoration in France"
+  },
+  {
+   "realm": "Kingdom of France",
+   "kind": "ends",
+   "map": 1791,
+   "wikidata": 1830,
+   "diff": -39,
+   "wd": "Q207162",
+   "label": "Bourbon Restoration in France"
+  },
+  {
+   "realm": "Hungarian Nationalists",
+   "kind": "ends",
+   "map": 1957,
+   "wikidata": 1918,
+   "diff": 39,
+   "wd": "Q28513",
+   "label": "Austria–Hungary"
+  },
+  {
+   "realm": "Kingdom of Bulgaria",
+   "kind": "starts",
+   "map": 1947,
+   "wikidata": 1908,
+   "diff": 39,
+   "wd": "Q147909",
+   "label": "Kingdom of Bulgaria"
+  },
+  {
+   "realm": "Majeerteen Sultanate",
+   "kind": "ends",
+   "map": 1889,
+   "wikidata": 1927,
+   "diff": -38,
+   "wd": "Q2257830",
+   "label": "Majeerteen Sultanate"
+  },
+  {
+   "realm": "Kingdom of Romania",
+   "kind": "starts",
+   "map": 1919,
+   "wikidata": 1881,
+   "diff": 38,
+   "wd": "Q203493",
+   "label": "Kingdom of Romania"
+  },
+  {
+   "realm": "Republic of China",
+   "kind": "starts",
+   "map": 1912,
+   "wikidata": 1949,
+   "diff": -37,
+   "wd": "Q148",
+   "label": "People's Republic of China"
+  },
+  {
+   "realm": "Sultanate of Sulu",
+   "kind": "ends",
+   "map": 1879,
+   "wikidata": 1915,
+   "diff": -36,
+   "wd": "Q422065",
+   "label": "Sultanate of Sulu"
+  },
+  {
+   "realm": "Principality of Bulgaria",
+   "kind": "ends",
+   "map": 1944,
+   "wikidata": 1908,
+   "diff": 36,
+   "wd": "Q815731",
+   "label": "Principality of Bulgaria"
+  },
+  {
+   "realm": "Mosquito Kingdom",
+   "kind": "ends",
+   "map": 1859,
+   "wikidata": 1894,
+   "diff": -35,
+   "wd": "Q1165546",
+   "label": "Mosquitia"
+  },
+  {
+   "realm": "United Principalities of Moldavia and Wallachia",
+   "kind": "ends",
+   "map": 1916,
+   "wikidata": 1881,
+   "diff": 35,
+   "wd": "Q958291",
+   "label": "United Principalities of Moldavia and Wallachia"
+  },
+  {
+   "realm": "Kingdom of Serbia",
+   "kind": "ends",
+   "map": 1884,
+   "wikidata": 1918,
+   "diff": -34,
+   "wd": "Q241748",
+   "label": "Kingdom of Serbia"
+  },
+  {
+   "realm": "Emirate of Nejd",
+   "kind": "ends",
+   "map": 1925,
+   "wikidata": 1891,
+   "diff": 34,
+   "wd": "Q146862",
+   "label": "Second Saudi State"
+  },
+  {
+   "realm": "Mexico",
+   "kind": "starts",
+   "map": 1868,
+   "wikidata": 1835,
+   "diff": 33,
+   "wd": "Q5062192",
+   "label": "Centralist Republic of Mexico"
+  },
+  {
+   "realm": "Ethiopia",
+   "kind": "starts",
+   "map": 1942,
+   "wikidata": 1974,
+   "diff": -32,
+   "wd": "Q115",
+   "label": "Ethiopia"
+  },
+  {
+   "realm": "Sultanate of Hobyo",
+   "kind": "ends",
+   "map": 1894,
+   "wikidata": 1925,
+   "diff": -31,
+   "wd": "Q862404",
+   "label": "Sultanate of Hobyo"
+  },
+  {
+   "realm": "Republic of Egypt",
+   "kind": "starts",
+   "map": 1953,
+   "wikidata": 1922,
+   "diff": 31,
+   "wd": "Q79",
+   "label": "Egypt"
+  },
+  {
+   "realm": "East Timor",
+   "kind": "starts",
+   "map": 2006,
+   "wikidata": 1975,
+   "diff": 31,
+   "wd": "Q574",
+   "label": "Timor-Leste"
+  },
+  {
+   "realm": "Federated Republic of Mexico",
+   "kind": "ends",
+   "map": 1865,
+   "wikidata": 1835,
+   "diff": 30,
+   "wd": "Q1109279",
+   "label": "First Mexican Republic"
+  },
+  {
+   "realm": "Khedivate of Egypt",
+   "kind": "ends",
+   "map": 1884,
+   "wikidata": 1914,
+   "diff": -30,
+   "wd": "Q127861",
+   "label": "Khedivate of Egypt"
+  },
+  {
+   "realm": "State of Kuwait",
+   "kind": "starts",
+   "map": 1961,
+   "wikidata": 1991,
+   "diff": -30,
+   "wd": "Q817",
+   "label": "Kuwait"
+  },
+  {
+   "realm": "Papua New Guinea",
+   "kind": "starts",
+   "map": 1946,
+   "wikidata": 1975,
+   "diff": -29,
+   "wd": "Q691",
+   "label": "Papua New Guinea"
+  },
+  {
+   "realm": "Republic of Iceland",
+   "kind": "starts",
+   "map": 1946,
+   "wikidata": 1918,
+   "diff": 28,
+   "wd": "Q189",
+   "label": "Iceland"
+  },
+  {
+   "realm": "Iraqi Republic",
+   "kind": "starts",
+   "map": 1960,
+   "wikidata": 1932,
+   "diff": 28,
+   "wd": "Q796",
+   "label": "Iraq"
+  },
+  {
+   "realm": "Nguyễn lords",
+   "kind": "ends",
+   "map": 1775,
+   "wikidata": 1802,
+   "diff": -27,
+   "wd": "Q2301908",
+   "label": "Nguyễn lords"
+  },
+  {
+   "realm": "Maratha Empire",
+   "kind": "ends",
+   "map": 1845,
+   "wikidata": 1818,
+   "diff": 27,
+   "wd": "Q83618",
+   "label": "Maratha Empire"
+  },
+  {
+   "realm": "French Indochina",
+   "kind": "starts",
+   "map": 1860,
+   "wikidata": 1887,
+   "diff": -27,
+   "wd": "Q185682",
+   "label": "French Indochina"
+  },
+  {
+   "realm": "Communist Laos",
+   "kind": "starts",
+   "map": 1976,
+   "wikidata": 1949,
+   "diff": 27,
+   "wd": "Q819",
+   "label": "Laos"
+  },
+  {
+   "realm": "Principality of Svaneti",
+   "kind": "ends",
+   "map": 1833,
+   "wikidata": 1859,
+   "diff": -26,
+   "wd": "Q2919545",
+   "label": "Principality of Svaneti"
+  },
+  {
+   "realm": "British Cape Colony",
+   "kind": "ends",
+   "map": 1884,
+   "wikidata": 1910,
+   "diff": -26,
+   "wd": "Q370736",
+   "label": "Cape Colony"
+  },
+  {
+   "realm": "Republic of Liberia",
+   "kind": "starts",
+   "map": 1848,
+   "wikidata": 1822,
+   "diff": 26,
+   "wd": "Q1014",
+   "label": "Liberia"
+  },
+  {
+   "realm": "Republic of Ecuador",
+   "kind": "starts",
+   "map": 1834,
+   "wikidata": 1809,
+   "diff": 25,
+   "wd": "Q736",
+   "label": "Ecuador"
+  },
+  {
+   "realm": "Khmer Rouge",
+   "kind": "starts",
+   "map": 1976,
+   "wikidata": 1951,
+   "diff": 25,
+   "wd": "Q191764",
+   "label": "Communist Party of the Cambodia (Khmer Rouge)"
+  },
+  {
+   "realm": "Ottoman Tripolitania",
+   "kind": "starts",
+   "map": 1840,
+   "wikidata": 1864,
+   "diff": -24,
+   "wd": "Q1529261",
+   "label": "Tripolitania vilayet"
+  },
+  {
+   "realm": "Sri Lanka",
+   "kind": "starts",
+   "map": 1948,
+   "wikidata": 1972,
+   "diff": -24,
+   "wd": "Q854",
+   "label": "Sri Lanka"
+  },
+  {
+   "realm": "Venezuela",
+   "kind": "starts",
+   "map": 1834,
+   "wikidata": 1811,
+   "diff": 23,
+   "wd": "Q717",
+   "label": "Venezuela"
+  },
+  {
+   "realm": "Republic of Yemen",
+   "kind": "starts",
+   "map": 1990,
+   "wikidata": 1967,
+   "diff": 23,
+   "wd": "Q199841",
+   "label": "South Yemen"
+  },
+  {
+   "realm": "South Africa",
+   "kind": "starts",
+   "map": 1932,
+   "wikidata": 1910,
+   "diff": 22,
+   "wd": "Q258",
+   "label": "South Africa"
+  },
+  {
+   "realm": "United States of Colombia",
+   "kind": "ends",
+   "map": 1865,
+   "wikidata": 1886,
+   "diff": -21,
+   "wd": "Q1061488",
+   "label": "United States of Colombia"
+  },
+  {
+   "realm": "Lebanon",
+   "kind": "starts",
+   "map": 1944,
+   "wikidata": 1923,
+   "diff": 21,
+   "wd": "Q139708",
+   "label": "French Mandate for Syria and the Lebanon"
+  },
+  {
+   "realm": "Arab Socialist Ba'ath Party",
+   "kind": "starts",
+   "map": 1967,
+   "wikidata": 1947,
+   "diff": 20,
+   "wd": "Q16243030",
+   "label": "Arab Socialist Ba'ath Party – Syria Region"
+  },
+  {
+   "realm": "Principality of Abkhazia",
+   "kind": "ends",
+   "map": 1829,
+   "wikidata": 1810,
+   "diff": 19,
+   "wd": "Q1760473",
+   "label": "Principality of Abkhazia"
+  },
+  {
+   "realm": "Honduras",
+   "kind": "starts",
+   "map": 1840,
+   "wikidata": 1821,
+   "diff": 19,
+   "wd": "Q783",
+   "label": "Honduras"
+  },
+  {
+   "realm": "Republic of Costa Rica",
+   "kind": "starts",
+   "map": 1840,
+   "wikidata": 1821,
+   "diff": 19,
+   "wd": "Q800",
+   "label": "Costa Rica"
+  },
+  {
+   "realm": "Guatemala",
+   "kind": "starts",
+   "map": 1840,
+   "wikidata": 1821,
+   "diff": 19,
+   "wd": "Q774",
+   "label": "Guatemala"
+  },
+  {
+   "realm": "Republic of Nicaragua",
+   "kind": "starts",
+   "map": 1840,
+   "wikidata": 1821,
+   "diff": 19,
+   "wd": "Q811",
+   "label": "Nicaragua"
+  },
+  {
+   "realm": "(Bourbon Kingdom of France)",
+   "kind": "ends",
+   "map": 1848,
+   "wikidata": 1830,
+   "diff": 18,
+   "wd": "Q207162",
+   "label": "Bourbon Restoration in France"
+  },
+  {
+   "realm": "Hungarian Nationalists",
+   "kind": "starts",
+   "map": 1849,
+   "wikidata": 1867,
+   "diff": -18,
+   "wd": "Q28513",
+   "label": "Austria–Hungary"
+  },
+  {
+   "realm": "Belgian Congo",
+   "kind": "starts",
+   "map": 1890,
+   "wikidata": 1908,
+   "diff": -18,
+   "wd": "Q213510",
+   "label": "Belgian Congo"
+  },
+  {
+   "realm": "Bourbon Kingdom of France",
+   "kind": "ends",
+   "map": 1847,
+   "wikidata": 1830,
+   "diff": 17,
+   "wd": "Q207162",
+   "label": "Bourbon Restoration in France"
+  },
+  {
+   "realm": "Italian Africa",
+   "kind": "ends",
+   "map": 1943,
+   "wikidata": 1960,
+   "diff": -17,
+   "wd": "Q926295",
+   "label": "Italian Empire"
+  },
+  {
+   "realm": "New Hebrides",
+   "kind": "starts",
+   "map": 1890,
+   "wikidata": 1907,
+   "diff": -17,
+   "wd": "Q752431",
+   "label": "New Hebrides"
+  },
+  {
+   "realm": "Socialist Republic of Romania",
+   "kind": "starts",
+   "map": 1948,
+   "wikidata": 1965,
+   "diff": -17,
+   "wd": "Q842794",
+   "label": "Socialist Republic of Romania"
+  },
+  {
+   "realm": "Kamerun",
+   "kind": "starts",
+   "map": 1868,
+   "wikidata": 1884,
+   "diff": -16,
+   "wd": "Q668294",
+   "label": "Kamerun"
+  },
+  {
+   "realm": "Second Syrian Republic",
+   "kind": "starts",
+   "map": 1946,
+   "wikidata": 1930,
+   "diff": 16,
+   "wd": "Q146885",
+   "label": "Second Syrian Republic"
+  },
+  {
+   "realm": "Regency of Algiers",
+   "kind": "ends",
+   "map": 1845,
+   "wikidata": 1830,
+   "diff": 15,
+   "wd": "Q3045696",
+   "label": "Regency of Algiers"
+  },
+  {
+   "realm": "Duchy of Holstein",
+   "kind": "ends",
+   "map": 1852,
+   "wikidata": 1867,
+   "diff": -15,
+   "wd": "Q704288",
+   "label": "Duchy of Holstein"
+  },
+  {
+   "realm": "Sultanate of Muscat and Oman",
+   "kind": "ends",
+   "map": 1955,
+   "wikidata": 1970,
+   "diff": -15,
+   "wd": "Q157734",
+   "label": "Muscat and Oman"
+  },
+  {
+   "realm": "Palau",
+   "kind": "starts",
+   "map": 1996,
+   "wikidata": 1981,
+   "diff": 15,
+   "wd": "Q695",
+   "label": "Palau"
+  },
+  {
+   "realm": "Grand Duchy of Berg",
+   "kind": "ends",
+   "map": 1827,
+   "wikidata": 1813,
+   "diff": 14,
+   "wd": "Q249428",
+   "label": "Grand Duchy of Berg"
+  },
+  {
+   "realm": "Mexican Monarchists",
+   "kind": "starts",
+   "map": 1864,
+   "wikidata": 1850,
+   "diff": 14,
+   "wd": "Q15984928",
+   "label": "Conservative Party"
+  },
+  {
+   "realm": "Antigua and Barbuda",
+   "kind": "starts",
+   "map": 1967,
+   "wikidata": 1981,
+   "diff": -14,
+   "wd": "Q781",
+   "label": "Antigua and Barbuda"
+  },
+  {
+   "realm": "Electorate of Hanover",
+   "kind": "ends",
+   "map": 1802,
+   "wikidata": 1814,
+   "diff": -12,
+   "wd": "Q706018",
+   "label": "Electorate of Hanover"
+  },
+  {
+   "realm": "Haiti",
+   "kind": "starts",
+   "map": 1792,
+   "wikidata": 1804,
+   "diff": -12,
+   "wd": "Q2006756",
+   "label": "First Empire of Haiti"
+  },
+  {
+   "realm": "Grand Duchy of Tuscany",
+   "kind": "ends",
+   "map": 1848,
+   "wikidata": 1860,
+   "diff": -12,
+   "wd": "Q154849",
+   "label": "Grand Duchy of Tuscany"
+  },
+  {
+   "realm": "Septinsular Republic",
+   "kind": "ends",
+   "map": 1819,
+   "wikidata": 1807,
+   "diff": 12,
+   "wd": "Q1077630",
+   "label": "Septinsular Republic"
+  },
+  {
+   "realm": "Tangier International Zone",
+   "kind": "starts",
+   "map": 1912,
+   "wikidata": 1924,
+   "diff": -12,
+   "wd": "Q3497642",
+   "label": "Tangier International Zone"
+  },
+  {
+   "realm": "Saint Lucia",
+   "kind": "starts",
+   "map": 1979,
+   "wikidata": 1967,
+   "diff": 12,
+   "wd": "Q760",
+   "label": "Saint Lucia"
+  },
+  {
+   "realm": "Nguyễn dynasty",
+   "kind": "starts",
+   "map": 1791,
+   "wikidata": 1802,
+   "diff": -11,
+   "wd": "Q6500483",
+   "label": "Nguyen dynasty"
+  },
+  {
+   "realm": "Helvetic Republic",
+   "kind": "ends",
+   "map": 1814,
+   "wikidata": 1803,
+   "diff": 11,
+   "wd": "Q206696",
+   "label": "Helvetic Republic"
+  },
+  {
+   "realm": "Kingdom of Hanover",
+   "kind": "starts",
+   "map": 1803,
+   "wikidata": 1814,
+   "diff": -11,
+   "wd": "Q164079",
+   "label": "Kingdom of Hanover"
+  },
+  {
+   "realm": "Electorate of Hesse",
+   "kind": "starts",
+   "map": 1803,
+   "wikidata": 1814,
+   "diff": -11,
+   "wd": "Q529605",
+   "label": "Electorate of Hesse"
+  },
+  {
+   "realm": "Emirate of Jabal Shammar",
+   "kind": "starts",
+   "map": 1825,
+   "wikidata": 1836,
+   "diff": -11,
+   "wd": "Q5362837",
+   "label": "Emirate of Jabal Shammar"
+  },
+  {
+   "realm": "Kingdom of Iraq",
+   "kind": "starts",
+   "map": 1932,
+   "wikidata": 1921,
+   "diff": 11,
+   "wd": "Q149805",
+   "label": "Kingdom of Iraq"
+  },
+  {
+   "realm": "Communist Party of China",
+   "kind": "starts",
+   "map": 1932,
+   "wikidata": 1921,
+   "diff": 11,
+   "wd": "Q17427",
+   "label": "Chinese Communist Party"
+  },
+  {
+   "realm": "Republic of Vietnam",
+   "kind": "starts",
+   "map": 1956,
+   "wikidata": 1945,
+   "diff": 11,
+   "wd": "Q172640",
+   "label": "North Vietnam"
+  },
+  {
+   "realm": "Democratic Republic of Vietnam",
+   "kind": "starts",
+   "map": 1956,
+   "wikidata": 1945,
+   "diff": 11,
+   "wd": "Q172640",
+   "label": "North Vietnam"
+  },
+  {
+   "realm": "Serbia-Montenegro",
+   "kind": "starts",
+   "map": 1992,
+   "wikidata": 2003,
+   "diff": -11,
+   "wd": "Q37024",
+   "label": "Serbia and Montenegro"
+  }
+ ],
+ "areas": [
+  {
+   "title": "United States",
+   "realm": "United States of America",
+   "map_mkm2": 12.19,
+   "map_year": 1945,
+   "published_mkm2": 9.5,
+   "published_year": 1900,
+   "issue": "peak year 1945 vs published 1900 (+45)"
+  },
+  {
+   "title": "Xiongnu Empire",
+   "published_mkm2": 9.0,
+   "published_year": -176,
+   "issue": "no realm on the map links to this article"
+  },
+  {
+   "title": "Eastern Han dynasty",
+   "published_mkm2": 6.5,
+   "published_year": 100,
+   "issue": "no realm on the map links to this article"
+  },
+  {
+   "title": "Tang dynasty",
+   "realm": "Tang Dynasty",
+   "map_mkm2": 8.73,
+   "map_year": 661,
+   "published_mkm2": 5.4,
+   "published_year": 715,
+   "issue": "peak area 8.73M km² vs published 5.4M (162%)"
+  },
+  {
+   "title": "Northern Yuan dynasty",
+   "published_mkm2": 5.0,
+   "published_year": 1368,
+   "issue": "no realm on the map links to this article"
+  },
+  {
+   "title": "Xianbei state",
+   "published_mkm2": 4.5,
+   "published_year": 200,
+   "issue": "no realm on the map links to this article"
+  },
+  {
+   "title": "Fatimid Caliphate",
+   "realm": "Fatimid Caliphate",
+   "map_mkm2": 1.95,
+   "map_year": 980,
+   "published_mkm2": 4.1,
+   "published_year": 969,
+   "issue": "peak area 1.95M km² vs published 4.1M (47%)"
+  },
+  {
+   "title": "Eastern Turkic Khaganate",
+   "published_mkm2": 4.0,
+   "published_year": 624,
+   "issue": "no realm on the map links to this article"
+  },
+  {
+   "title": "Hunnic Empire",
+   "realm": "Hunnic Empire",
+   "map_mkm2": 1.91,
+   "map_year": 451,
+   "published_mkm2": 4.0,
+   "published_year": 441,
+   "issue": "peak area 1.91M km² vs published 4.0M (48%)"
+  },
+  {
+   "title": "Western Turkic Khaganate",
+   "published_mkm2": 3.5,
+   "published_year": 630,
+   "issue": "no realm on the map links to this article"
+  },
+  {
+   "title": "Xiongnu",
+   "realm": "Xiongnu",
+   "map_mkm2": 5.62,
+   "map_year": -144,
+   "published_mkm2": 3.5,
+   "published_year": 20,
+   "issue": "peak area 5.62M km² vs published 3.5M (161%)"
+  },
+  {
+   "title": "Northern Song dynasty",
+   "published_mkm2": 3.1,
+   "published_year": 980,
+   "issue": "no realm on the map links to this article"
+  },
+  {
+   "title": "Western Jin dynasty",
+   "published_mkm2": 3.1,
+   "published_year": 280,
+   "issue": "no realm on the map links to this article"
+  },
+  {
+   "title": "Danish Colonial Empire",
+   "published_mkm2": 3.0,
+   "published_year": 1700,
+   "issue": "no realm on the map links to this article"
+  },
+  {
+   "title": "Safavid Iran",
+   "published_mkm2": 2.9,
+   "published_year": 1630,
+   "issue": "no realm on the map links to this article"
+  },
+  {
+   "title": "Eastern Jin dynasty",
+   "published_mkm2": 2.8,
+   "published_year": 347,
+   "issue": "no realm on the map links to this article"
+  },
+  {
+   "title": "Median Empire",
+   "published_mkm2": 2.8,
+   "published_year": -585,
+   "issue": "no realm on the map links to this article"
+  },
+  {
+   "title": "Indo-Scythians",
+   "realm": "Indo-Scythians",
+   "map_mkm2": 1.5,
+   "map_year": -66,
+   "published_mkm2": 2.6,
+   "published_year": 20,
+   "issue": "peak area 1.50M km² vs published 2.6M (58%)"
+  },
+  {
+   "title": "Greco-Bactrian Kingdom",
+   "realm": "Greco-Bactrian Kingdom",
+   "map_mkm2": 1.36,
+   "map_year": -170,
+   "published_mkm2": 2.5,
+   "published_year": -184,
+   "issue": "peak area 1.36M km² vs published 2.5M (55%)"
+  },
+  {
+   "title": "Later Zhao",
+   "realm": "Later Zhao",
+   "map_mkm2": 0.66,
+   "map_year": 347,
+   "published_mkm2": 2.5,
+   "published_year": 329,
+   "issue": "peak area 0.66M km² vs published 2.5M (26%)"
+  },
+  {
+   "title": "Maratha Empire",
+   "realm": "Maratha Empire",
+   "map_mkm2": 1.28,
+   "map_year": 1772,
+   "published_mkm2": 2.5,
+   "published_year": 1760,
+   "issue": "peak area 1.28M km² vs published 2.5M (51%)"
+  },
+  {
+   "title": "Jin dynasty (1115–1234)",
+   "published_mkm2": 2.3,
+   "published_year": 1126,
+   "issue": "no realm on the map links to this article"
+  },
+  {
+   "title": "Khwarazmian Empire",
+   "realm": "Khwarezmid Empire",
+   "map_mkm2": 4.02,
+   "map_year": 1216,
+   "published_mkm2": 2.3,
+   "published_year": 1210,
+   "issue": "peak area 4.02M km² vs published 2.3M (175%)"
+  },
+  {
+   "title": "Dutch Empire",
+   "published_mkm2": 2.1,
+   "published_year": 1938,
+   "issue": "no realm on the map links to this article"
+  },
+  {
+   "title": "First French Empire",
+   "realm": "(First French Empire)",
+   "map_mkm2": 1.24,
+   "map_year": 1811,
+   "published_mkm2": 2.1,
+   "published_year": 1813,
+   "issue": "peak area 1.24M km² vs published 2.1M (59%)"
+  },
+  {
+   "title": "Kievan Rus'",
+   "realm": "Kievan Rus'",
+   "map_mkm2": 1.2,
+   "map_year": 1034,
+   "published_mkm2": 2.1,
+   "published_year": 1000,
+   "issue": "peak area 1.20M km² vs published 2.1M (57%)"
+  },
+  {
+   "title": "Mamluk Sultanate",
+   "realm": "Mamluk Sultanate",
+   "map_mkm2": 1.85,
+   "map_year": 1516,
+   "published_mkm2": 2.1,
+   "published_year": 1300,
+   "issue": "peak year 1516 vs published 1300 (+216)"
+  },
+  {
+   "title": "Southern Song dynasty",
+   "published_mkm2": 2.1,
+   "published_year": 1127,
+   "issue": "no realm on the map links to this article"
+  },
+  {
+   "title": "Third Portuguese Empire",
+   "published_mkm2": 2.1,
+   "published_year": 1900,
+   "issue": "no realm on the map links to this article"
+  },
+  {
+   "title": "Almohad Caliphate",
+   "realm": "Almohad Caliphate",
+   "map_mkm2": 0.95,
+   "map_year": 1206,
+   "published_mkm2": 2.0,
+   "published_year": 1200,
+   "issue": "peak area 0.95M km² vs published 2.0M (47%)"
+  },
+  {
+   "title": "Former Zhao",
+   "realm": "Former Zhao",
+   "map_mkm2": 0.65,
+   "map_year": 311,
+   "published_mkm2": 2.0,
+   "published_year": 316,
+   "issue": "peak area 0.65M km² vs published 2.0M (32%)"
+  },
+  {
+   "title": "Northern Wei",
+   "realm": "Northern Wei",
+   "map_mkm2": 1.17,
+   "map_year": 476,
+   "published_mkm2": 2.0,
+   "published_year": 450,
+   "issue": "peak area 1.17M km² vs published 2.0M (58%)"
+  },
+  {
+   "title": "Hephthalite Empire",
+   "published_mkm2": 1.7,
+   "published_year": 500,
+   "issue": "no realm on the map links to this article"
+  },
+  {
+   "title": "Northern Qi",
+   "realm": "Northern Qi",
+   "map_mkm2": 0.84,
+   "map_year": 569,
+   "published_mkm2": 1.5,
+   "published_year": 557,
+   "issue": "peak area 0.84M km² vs published 1.5M (56%)"
+  },
+  {
+   "title": "Xiongnu",
+   "realm": "Xiongnu",
+   "map_mkm2": 5.62,
+   "map_year": -144,
+   "published_mkm2": 1.5,
+   "published_year": 60,
+   "issue": "peak area 5.62M km² vs published 1.5M (375%); peak year -144 vs published 60 (-204)"
+  },
+  {
+   "title": "Maurya Empire",
+   "realm": "Maurya Empire",
+   "map_mkm2": 3.95,
+   "map_year": -256,
+   "published_mkm2": 1.3,
+   "published_year": -210,
+   "issue": "peak area 3.95M km² vs published 1.3M (304%)"
+  },
+  {
+   "title": "Liang dynasty",
+   "realm": "Liang Dynasty",
+   "map_mkm2": 2.36,
+   "map_year": 510,
+   "published_mkm2": 1.3,
+   "published_year": 502,
+   "issue": "peak area 2.36M km² vs published 1.3M (182%)"
+  },
+  {
+   "title": "Kingdom of Aksum",
+   "realm": "Kingdom of Axum",
+   "map_mkm2": 0.39,
+   "map_year": 534,
+   "published_mkm2": 1.25,
+   "published_year": 350,
+   "issue": "peak area 0.39M km² vs published 1.25M (31%)"
+  },
+  {
+   "title": "Shang dynasty",
+   "realm": "Shang Dynasty",
+   "map_mkm2": 0.15,
+   "map_year": -1600,
+   "published_mkm2": 1.25,
+   "published_year": -1122,
+   "issue": "peak area 0.15M km² vs published 1.25M (12%); peak year -1600 vs published -1122 (-478)"
+  },
+  {
+   "title": "Srivijaya",
+   "realm": "Srivijaya",
+   "map_mkm2": 0.54,
+   "map_year": 718,
+   "published_mkm2": 1.2,
+   "published_year": 1200,
+   "issue": "peak area 0.54M km² vs published 1.2M (45%); peak year 718 vs published 1200 (-482)"
+  },
+  {
+   "title": "Polish–Lithuanian Commonwealth",
+   "published_mkm2": 1.1,
+   "published_year": 1480,
+   "issue": "no realm on the map links to this article"
+  },
+  {
+   "title": "Almoravid dynasty",
+   "realm": "Almoravid Dynasty",
+   "map_mkm2": 1.92,
+   "map_year": 1111,
+   "published_mkm2": 1.0,
+   "published_year": 1120,
+   "issue": "peak area 1.92M km² vs published 1.0M (192%)"
+  },
+  {
+   "title": "Pushyabhuti dynasty",
+   "published_mkm2": 1.0,
+   "published_year": 625,
+   "issue": "no realm on the map links to this article"
+  },
+  {
+   "title": "Holy Roman Empire",
+   "realm": "(Holy Roman Empire)",
+   "map_mkm2": 1.21,
+   "map_year": 1453,
+   "published_mkm2": 1.0,
+   "published_year": 1050,
+   "issue": "peak year 1453 vs published 1050 (+403)"
+  },
+  {
+   "title": "Khazar Khanate",
+   "published_mkm2": 1.0,
+   "published_year": 900,
+   "issue": "no realm on the map links to this article"
+  },
+  {
+   "title": "Ptolemaic Kingdom",
+   "realm": "Ptolemaic Kingdom",
+   "map_mkm2": 1.27,
+   "map_year": -31,
+   "published_mkm2": 1.0,
+   "published_year": -301,
+   "issue": "peak year -31 vs published -301 (+270)"
+  },
+  {
+   "title": "Qara Khitai",
+   "realm": "Kara-Khitans",
+   "map_mkm2": 2.57,
+   "map_year": 1147,
+   "published_mkm2": 1.0,
+   "published_year": 1130,
+   "issue": "peak area 2.57M km² vs published 1.0M (257%)"
+  },
+  {
+   "title": "Scythia",
+   "realm": "Scythia",
+   "map_mkm2": 1.69,
+   "map_year": -650,
+   "published_mkm2": 1.0,
+   "published_year": -400,
+   "issue": "peak area 1.69M km² vs published 1.0M (169%); peak year -650 vs published -400 (-250)"
+  },
+  {
+   "title": "Tahirid dynasty",
+   "realm": "Tahirid Sultanate",
+   "map_mkm2": 0.38,
+   "map_year": 1459,
+   "published_mkm2": 1.0,
+   "published_year": 800,
+   "issue": "peak area 0.38M km² vs published 1.0M (38%); peak year 1459 vs published 800 (+659)"
+  },
+  {
+   "title": "Western Xia",
+   "realm": "(Vassalage of Western Xia to Great Jin)",
+   "map_mkm2": 2.59,
+   "map_year": 1139,
+   "published_mkm2": 1.0,
+   "published_year": 1100,
+   "issue": "peak area 2.59M km² vs published 1.0M (259%)"
+  },
+  {
+   "title": "Kingdom of Armenia (antiquity)",
+   "realm": "Kingdom of Armenia",
+   "map_mkm2": 0.52,
+   "map_year": -77,
+   "published_mkm2": 0.9,
+   "published_year": -70,
+   "issue": "peak area 0.52M km² vs published 0.9M (58%)"
+  },
+  {
+   "title": "Hyksos",
+   "realm": "Hyksos",
+   "map_mkm2": 0.13,
+   "map_year": -1600,
+   "published_mkm2": 0.65,
+   "published_year": -1650,
+   "issue": "peak area 0.13M km² vs published 0.65M (21%)"
+  },
+  {
+   "title": "Rozvi Empire",
+   "published_mkm2": 0.624,
+   "published_year": 1700,
+   "issue": "no realm on the map links to this article"
+  },
+  {
+   "title": "First Portuguese Empire",
+   "published_mkm2": 0.6,
+   "published_year": 1580,
+   "issue": "no realm on the map links to this article"
+  },
+  {
+   "title": "Kosala",
+   "realm": "Janapada of Kosala",
+   "map_mkm2": 0.0,
+   "map_year": -600,
+   "published_mkm2": 0.5,
+   "published_year": -543,
+   "issue": "peak area 0.00M km² vs published 0.5M (1%)"
+  },
+  {
+   "title": "Lydia",
+   "realm": "Lydia",
+   "map_mkm2": 0.26,
+   "map_year": -600,
+   "published_mkm2": 0.5,
+   "published_year": -585,
+   "issue": "peak area 0.26M km² vs published 0.5M (51%)"
+  },
+  {
+   "title": "Magadha (Mahajanapada)",
+   "published_mkm2": 0.5,
+   "published_year": -510,
+   "issue": "no realm on the map links to this article"
+  },
+  {
+   "title": "Satavahana dynasty",
+   "realm": "Satavahana Dynasty",
+   "map_mkm2": 0.89,
+   "map_year": 106,
+   "published_mkm2": 0.5,
+   "published_year": 150,
+   "issue": "peak area 0.89M km² vs published 0.5M (178%)"
+  },
+  {
+   "title": "Twenty-fifth Dynasty of Egypt",
+   "published_mkm2": 0.5,
+   "published_year": -715,
+   "issue": "no realm on the map links to this article"
+  },
+  {
+   "title": "Western Satraps",
+   "realm": "Western Satraps",
+   "map_mkm2": 0.84,
+   "map_year": 270,
+   "published_mkm2": 0.5,
+   "published_year": 100,
+   "issue": "peak area 0.84M km² vs published 0.5M (168%)"
+  },
+  {
+   "title": "New Hittite Kingdom",
+   "published_mkm2": 0.45,
+   "published_year": -1250,
+   "issue": "no realm on the map links to this article"
+  },
+  {
+   "title": "Xia dynasty",
+   "published_mkm2": 0.45,
+   "published_year": -1800,
+   "issue": "no realm on the map links to this article"
+  },
+  {
+   "title": "Kingdom of France (Middle Ages)",
+   "published_mkm2": 0.4,
+   "published_year": 1250,
+   "issue": "no realm on the map links to this article"
+  },
+  {
+   "title": "Middle Assyrian Empire",
+   "published_mkm2": 0.4,
+   "published_year": -1080,
+   "issue": "no realm on the map links to this article"
+  },
+  {
+   "title": "Old Kingdom of Egypt",
+   "realm": "Old Kingdom of Egypt",
+   "map_mkm2": 0.09,
+   "map_year": -2500,
+   "published_mkm2": 0.4,
+   "published_year": -2400,
+   "issue": "peak area 0.09M km² vs published 0.4M (23%)"
+  },
+  {
+   "title": "Sokoto Caliphate",
+   "realm": "Sokoto Caliphate",
+   "map_mkm2": 0.8,
+   "map_year": 1836,
+   "published_mkm2": 0.4,
+   "published_year": 1804,
+   "issue": "peak area 0.80M km² vs published 0.4M (200%); peak year 1836 vs published 1804 (+32)"
+  },
+  {
+   "title": "Latin Empire",
+   "realm": "Latin Empire",
+   "map_mkm2": 0.09,
+   "map_year": 1220,
+   "published_mkm2": 0.35,
+   "published_year": 1204,
+   "issue": "peak area 0.09M km² vs published 0.35M (26%)"
+  },
+  {
+   "title": "Indus Valley Civilisation",
+   "realm": "Indus Valley Civilization",
+   "map_mkm2": 0.76,
+   "map_year": -2300,
+   "published_mkm2": 0.3,
+   "published_year": -1800,
+   "issue": "peak area 0.76M km² vs published 0.3M (252%); peak year -2300 vs published -1800 (-500)"
+  },
+  {
+   "title": "Ashanti Empire",
+   "realm": "Ashanti Empire",
+   "map_mkm2": 0.19,
+   "map_year": 1762,
+   "published_mkm2": 0.25,
+   "published_year": 1820,
+   "issue": "peak year 1762 vs published 1820 (-58)"
+  },
+  {
+   "title": "First Babylonian Empire",
+   "published_mkm2": 0.25,
+   "published_year": -1690,
+   "issue": "no realm on the map links to this article"
+  },
+  {
+   "title": "Elamite Empire",
+   "published_mkm2": 0.2,
+   "published_year": -1160,
+   "issue": "no realm on the map links to this article"
+  },
+  {
+   "title": "Second Dynasty of Isin",
+   "published_mkm2": 0.2,
+   "published_year": -1130,
+   "issue": "no realm on the map links to this article"
+  },
+  {
+   "title": "Eastern Zhou",
+   "published_mkm2": 0.15,
+   "published_year": -770,
+   "issue": "no realm on the map links to this article"
+  },
+  {
+   "title": "Middle Hittite Kingdom",
+   "published_mkm2": 0.15,
+   "published_year": -1450,
+   "issue": "no realm on the map links to this article"
+  },
+  {
+   "title": "Old Assyrian Empire",
+   "published_mkm2": 0.15,
+   "published_year": -1730,
+   "issue": "no realm on the map links to this article"
+  },
+  {
+   "title": "Old Hittite Empire",
+   "published_mkm2": 0.15,
+   "published_year": -1530,
+   "issue": "no realm on the map links to this article"
+  },
+  {
+   "title": "Oyo Empire",
+   "realm": "Oyo Empire",
+   "map_mkm2": 0.09,
+   "map_year": 1769,
+   "published_mkm2": 0.15,
+   "published_year": 1680,
+   "issue": "peak area 0.09M km² vs published 0.15M (59%)"
+  },
+  {
+   "title": "Larsa",
+   "published_mkm2": 0.1,
+   "published_year": -1750,
+   "issue": "no realm on the map links to this article"
+  },
+  {
+   "title": "Neo-Sumerian Empire",
+   "published_mkm2": 0.1,
+   "published_year": -2000,
+   "issue": "no realm on the map links to this article"
+  },
+  {
+   "title": "Tarascan empire",
+   "published_mkm2": 0.075,
+   "published_year": 1450,
+   "issue": "no realm on the map links to this article"
+  },
+  {
+   "title": "Lagash",
+   "published_mkm2": 0.05,
+   "published_year": -2400,
+   "issue": "no realm on the map links to this article"
+  },
+  {
+   "title": "Sumer",
+   "published_mkm2": 0.05,
+   "published_year": -2400,
+   "issue": "no realm on the map links to this article"
+  }
+ ],
+ "overlaps": [
+  {
+   "year": 1400,
+   "a": "Blue Horde",
+   "b": "Golden Horde",
+   "cells": 221,
+   "where": [
+    46.4,
+    50.6
+   ]
+  },
+  {
+   "year": 1980,
+   "a": "French Fifth Republic",
+   "b": "People's Democratic Republic of Algeria",
+   "cells": 217,
+   "where": [
+    2.6,
+    28.1
+   ]
+  },
+  {
+   "year": 2000,
+   "a": "French Fifth Republic",
+   "b": "People's Democratic Republic of Algeria",
+   "cells": 217,
+   "where": [
+    2.6,
+    28.1
+   ]
+  },
+  {
+   "year": 2020,
+   "a": "French Fifth Republic",
+   "b": "People's Democratic Republic of Algeria",
+   "cells": 217,
+   "where": [
+    2.6,
+    28.1
+   ]
+  },
+  {
+   "year": 1945,
+   "a": "Communist Party of China",
+   "b": "Republic of China",
+   "cells": 134,
+   "where": [
+    85.5,
+    40.3
+   ]
+  },
+  {
+   "year": 1945,
+   "a": "Empire of Japan",
+   "b": "French Indochina",
+   "cells": 60,
+   "where": [
+    105.2,
+    16.2
+   ]
+  },
+  {
+   "year": 1950,
+   "a": "British Colonial Empire",
+   "b": "Canada",
+   "cells": 55,
+   "where": [
+    -59.8,
+    52.7
+   ]
+  },
+  {
+   "year": 2020,
+   "a": "Republic of Iraq",
+   "b": "United States of America",
+   "cells": 44,
+   "where": [
+    43.7,
+    33.0
+   ]
+  },
+  {
+   "year": 1945,
+   "a": "Communist Party of China",
+   "b": "East Turkestan Republic",
+   "cells": 32,
+   "where": [
+    85.2,
+    45.6
+   ]
+  },
+  {
+   "year": 1100,
+   "a": "Kievan Rus'",
+   "b": "Novgorod Republic",
+   "cells": 30,
+   "where": [
+    32.3,
+    58.6
+   ]
+  },
+  {
+   "year": 1200,
+   "a": "Kievan Rus'",
+   "b": "Novgorod Republic",
+   "cells": 30,
+   "where": [
+    32.3,
+    58.6
+   ]
+  },
+  {
+   "year": 1950,
+   "a": "British Colonial Empire",
+   "b": "New Zealand",
+   "cells": 30,
+   "where": [
+    172.8,
+    -41.6
+   ]
+  },
+  {
+   "year": 1100,
+   "a": "Kievan Rus'",
+   "b": "Principality of Chernigov",
+   "cells": 28,
+   "where": [
+    35.6,
+    52.9
+   ]
+  },
+  {
+   "year": 1100,
+   "a": "Kievan Rus'",
+   "b": "Principality of Rostov-Suzdal",
+   "cells": 28,
+   "where": [
+    38.4,
+    57.9
+   ]
+  },
+  {
+   "year": 1200,
+   "a": "Kievan Rus'",
+   "b": "Principality of Chernigov",
+   "cells": 28,
+   "where": [
+    35.6,
+    52.9
+   ]
+  },
+  {
+   "year": 1200,
+   "a": "Kievan Rus'",
+   "b": "Principality of Rostov-Suzdal",
+   "cells": 28,
+   "where": [
+    38.4,
+    57.9
+   ]
+  },
+  {
+   "year": 1945,
+   "a": "British Colonial Empire",
+   "b": "Commonwealth of Australia",
+   "cells": 28,
+   "where": [
+    145.9,
+    -6.9
+   ]
+  },
+  {
+   "year": 1980,
+   "a": "Sultanate of Oman",
+   "b": "United Kingdom",
+   "cells": 28,
+   "where": [
+    56.3,
+    20.8
+   ]
+  },
+  {
+   "year": 2000,
+   "a": "Sultanate of Oman",
+   "b": "United Kingdom",
+   "cells": 28,
+   "where": [
+    56.3,
+    20.8
+   ]
+  },
+  {
+   "year": 2020,
+   "a": "Sultanate of Oman",
+   "b": "United Kingdom",
+   "cells": 28,
+   "where": [
+    56.3,
+    20.8
+   ]
+  },
+  {
+   "year": 600,
+   "a": "Himyarite Kingdom",
+   "b": "Kingdom of Axum",
+   "cells": 24,
+   "where": [
+    46.5,
+    15.2
+   ]
+  },
+  {
+   "year": 1100,
+   "a": "Great Seljuk Empire",
+   "b": "Hamdanid Emirates",
+   "cells": 23,
+   "where": [
+    39.8,
+    36.0
+   ]
+  },
+  {
+   "year": 1200,
+   "a": "Kievan Rus'",
+   "b": "Principality of Smolensk",
+   "cells": 23,
+   "where": [
+    31.8,
+    55.2
+   ]
+  },
+  {
+   "year": 1850,
+   "a": "British Empire",
+   "b": "Mughal Empire",
+   "cells": 22,
+   "where": [
+    73.4,
+    27.1
+   ]
+  },
+  {
+   "year": 1950,
+   "a": "Federal Republic of Germany",
+   "b": "United States of America",
+   "cells": 22,
+   "where": [
+    9.4,
+    51.4
+   ]
+  },
+  {
+   "year": 1920,
+   "a": "Denmark-Norway",
+   "b": "Kingdom of Iceland",
+   "cells": 21,
+   "where": [
+    -18.5,
+    65.0
+   ]
+  },
+  {
+   "year": 1100,
+   "a": "Kievan Rus'",
+   "b": "Principality of Kiev",
+   "cells": 18,
+   "where": [
+    28.5,
+    51.0
+   ]
+  },
+  {
+   "year": 1100,
+   "a": "Kievan Rus'",
+   "b": "Principality of Smolensk",
+   "cells": 17,
+   "where": [
+    32.8,
+    55.0
+   ]
+  },
+  {
+   "year": 1100,
+   "a": "Kievan Rus'",
+   "b": "Principality of Polotsky",
+   "cells": 15,
+   "where": [
+    28.2,
+    54.8
+   ]
+  },
+  {
+   "year": 1100,
+   "a": "Kievan Rus'",
+   "b": "Principality of Volhynia",
+   "cells": 12,
+   "where": [
+    24.2,
+    52.2
+   ]
+  },
+  {
+   "year": 1100,
+   "a": "Kievan Rus'",
+   "b": "Principality of Pereyaslavl",
+   "cells": 12,
+   "where": [
+    34.1,
+    50.1
+   ]
+  },
+  {
+   "year": 1200,
+   "a": "Kievan Rus'",
+   "b": "Principality of Volhynia",
+   "cells": 12,
+   "where": [
+    24.2,
+    52.2
+   ]
+  },
+  {
+   "year": 1200,
+   "a": "Kievan Rus'",
+   "b": "Principality of Pereyaslavl",
+   "cells": 12,
+   "where": [
+    34.1,
+    50.1
+   ]
+  },
+  {
+   "year": 1980,
+   "a": "Socialist Republic of Vietnam",
+   "b": "United States of America",
+   "cells": 12,
+   "where": [
+    107.4,
+    12.3
+   ]
+  },
+  {
+   "year": 2000,
+   "a": "Socialist Republic of Vietnam",
+   "b": "United States of America",
+   "cells": 12,
+   "where": [
+    107.4,
+    12.3
+   ]
+  },
+  {
+   "year": -500,
+   "a": "Wu",
+   "b": "Yue",
+   "cells": 10,
+   "where": [
+    119.4,
+    30.8
+   ]
+  },
+  {
+   "year": 1200,
+   "a": "Kievan Rus'",
+   "b": "Principality of Kiev",
+   "cells": 10,
+   "where": [
+    28.7,
+    50.2
+   ]
+  },
+  {
+   "year": 1950,
+   "a": "Republic of Korea",
+   "b": "United States of America",
+   "cells": 10,
+   "where": [
+    127.4,
+    35.9
+   ]
+  },
+  {
+   "year": 1200,
+   "a": "Kievan Rus'",
+   "b": "Principality of Halych",
+   "cells": 8,
+   "where": [
+    24.8,
+    49.4
+   ]
+  },
+  {
+   "year": 1200,
+   "a": "Kievan Rus'",
+   "b": "Principality of Turov and Pinsk",
+   "cells": 8,
+   "where": [
+    28.2,
+    52.0
+   ]
+  },
+  {
+   "year": 1200,
+   "a": "Kievan Rus'",
+   "b": "Principality of Minsk",
+   "cells": 7,
+   "where": [
+    27.2,
+    54.1
+   ]
+  },
+  {
+   "year": 1400,
+   "a": "Blue Horde",
+   "b": "Timurid Empire",
+   "cells": 7,
+   "where": [
+    46.8,
+    44.8
+   ]
+  },
+  {
+   "year": 1945,
+   "a": "British Colonial Empire",
+   "b": "Empire of Japan",
+   "cells": 7,
+   "where": [
+    157.6,
+    -7.6
+   ]
+  },
+  {
+   "year": 1100,
+   "a": "Kievan Rus'",
+   "b": "Principality of Peremyshl",
+   "cells": 6,
+   "where": [
+    24.3,
+    49.5
+   ]
+  },
+  {
+   "year": 1980,
+   "a": "United Arab Emirates",
+   "b": "United Kingdom",
+   "cells": 5,
+   "where": [
+    54.3,
+    24.1
+   ]
+  },
+  {
+   "year": 1980,
+   "a": "British Colonial Empire",
+   "b": "Solomon Islands",
+   "cells": 5,
+   "where": [
+    159.9,
+    -9.3
+   ]
+  },
+  {
+   "year": 2000,
+   "a": "United Arab Emirates",
+   "b": "United Kingdom",
+   "cells": 5,
+   "where": [
+    54.3,
+    24.1
+   ]
+  },
+  {
+   "year": 2020,
+   "a": "United Arab Emirates",
+   "b": "United Kingdom",
+   "cells": 5,
+   "where": [
+    54.3,
+    24.1
+   ]
+  },
+  {
+   "year": 1100,
+   "a": "Norse Greenland",
+   "b": "Viking settlements",
+   "cells": 4,
+   "where": [
+    -50.0,
+    63.8
+   ]
+  },
+  {
+   "year": 1200,
+   "a": "Norse Greenland",
+   "b": "Viking settlements",
+   "cells": 4,
+   "where": [
+    -50.0,
+    63.8
+   ]
+  },
+  {
+   "year": 1300,
+   "a": "Old Kingdom of Norway",
+   "b": "Viking settlements",
+   "cells": 4,
+   "where": [
+    -50.0,
+    63.8
+   ]
+  },
+  {
+   "year": 1100,
+   "a": "Almoravid Dynasty",
+   "b": "Taifa of Dénia",
+   "cells": 3,
+   "where": [
+    -1.5,
+    38.5
+   ]
+  },
+  {
+   "year": 1600,
+   "a": "Small Horde",
+   "b": "Tsardom of Russia",
+   "cells": 3,
+   "where": [
+    51.2,
+    47.8
+   ]
+  },
+  {
+   "year": 1980,
+   "a": "People's Republic of China",
+   "b": "Republic of China",
+   "cells": 3,
+   "where": [
+    109.8,
+    19.2
+   ]
+  },
+  {
+   "year": 2000,
+   "a": "People's Republic of China",
+   "b": "Republic of China",
+   "cells": 3,
+   "where": [
+    109.8,
+    19.2
+   ]
+  },
+  {
+   "year": 2020,
+   "a": "People's Republic of China",
+   "b": "Republic of China",
+   "cells": 3,
+   "where": [
+    109.8,
+    19.2
+   ]
+  }
+ ],
+ "flicker": [
+  {
+   "realm": "Elam",
+   "issue": "missing -630–-616 (15 years), present before and after"
+  },
+  {
+   "realm": "Babylonia",
+   "issue": "missing -1220–-1201 (20 years), present before and after"
+  },
+  {
+   "realm": "Babylonia",
+   "issue": "missing -1150–-1101 (50 years), present before and after"
+  },
+  {
+   "realm": "Babylonia",
+   "issue": "missing -630–-616 (15 years), present before and after"
+  },
+  {
+   "realm": "Greek City-States",
+   "issue": "missing -271–-226 (46 years), present before and after"
+  },
+  {
+   "realm": "Qi",
+   "issue": "missing -218–-207 (12 years), present before and after"
+  },
+  {
+   "realm": "Yan",
+   "issue": "missing -222–-209 (14 years), present before and after"
+  },
+  {
+   "realm": "Han",
+   "issue": "missing -230–-209 (22 years), present before and after"
+  },
+  {
+   "realm": "Minaeans",
+   "issue": "missing -66–-37 (30 years), present before and after"
+  },
+  {
+   "realm": "Minyue",
+   "issue": "missing -221–-207 (15 years), present before and after"
+  },
+  {
+   "realm": "Minyue",
+   "issue": "missing -170–-127 (44 years), present before and after"
+  },
+  {
+   "realm": "Cyrenaica",
+   "issue": "missing -291–-273 (19 years), present before and after"
+  },
+  {
+   "realm": "Kingdom of Armenia",
+   "issue": "missing -210–-209 (2 years), present before and after"
+  },
+  {
+   "realm": "Kingdom of Armenia",
+   "issue": "missing -206–-189 (18 years), present before and after"
+  },
+  {
+   "realm": "Kingdom of Armenia",
+   "issue": "missing 60–67 (8 years), present before and after"
+  },
+  {
+   "realm": "Kingdom of Armenia",
+   "issue": "missing 114–153 (40 years), present before and after"
+  },
+  {
+   "realm": "Kingdom of Armenia",
+   "issue": "missing 161–164 (4 years), present before and after"
+  },
+  {
+   "realm": "Kingdom of Armenia",
+   "issue": "missing 260–286 (27 years), present before and after"
+  },
+  {
+   "realm": "Kingdom of Armenia",
+   "issue": "missing 371–386 (16 years), present before and after"
+  },
+  {
+   "realm": "Kingdom of Armenia",
+   "issue": "missing 396–401 (6 years), present before and after"
+  },
+  {
+   "realm": "Kingdom of Armenia",
+   "issue": "missing 439–450 (12 years), present before and after"
+  },
+  {
+   "realm": "Seleucid Empire",
+   "issue": "missing -315–-308 (8 years), present before and after"
+  },
+  {
+   "realm": "Seleucid Empire",
+   "issue": "missing -77–-67 (11 years), present before and after"
+  },
+  {
+   "realm": "Kalinga",
+   "issue": "missing -256–-226 (31 years), present before and after"
+  },
+  {
+   "realm": "Satavahana Dynasty",
+   "issue": "missing -170–-165 (6 years), present before and after"
+  },
+  {
+   "realm": "Han Dynasty",
+   "issue": "missing 14–29 (16 years), present before and after"
+  },
+  {
+   "realm": "Nabataeans",
+   "issue": "missing -25–-20 (6 years), present before and after"
+  },
+  {
+   "realm": "Indo-Greeks",
+   "issue": "missing -77–-51 (27 years), present before and after"
+  },
+  {
+   "realm": "Xianbei",
+   "issue": "missing 182–223 (42 years), present before and after"
+  },
+  {
+   "realm": "Chámpa",
+   "issue": "missing 1206–1219 (14 years), present before and after"
+  },
+  {
+   "realm": "Lakhmid Kingdom",
+   "issue": "missing 602–628 (27 years), present before and after"
+  },
+  {
+   "realm": "Makuria",
+   "issue": "missing 1279–1293 (15 years), present before and after"
+  },
+  {
+   "realm": "Western Qin",
+   "issue": "missing 402–409 (8 years), present before and after"
+  },
+  {
+   "realm": "Burgundian Kingdom",
+   "issue": "missing 439–442 (4 years), present before and after"
+  },
+  {
+   "realm": "Burgundian Kingdom",
+   "issue": "missing 617–643 (27 years), present before and after"
+  },
+  {
+   "realm": "Ghassanids",
+   "issue": "missing 617–628 (12 years), present before and after"
+  },
+  {
+   "realm": "Yenisei Kyrgyz",
+   "issue": "missing 763–792 (30 years), present before and after"
+  },
+  {
+   "realm": "Duchy of Spoleto",
+   "issue": "missing 750–774 (25 years), present before and after"
+  },
+  {
+   "realm": "Duchy of Spoleto",
+   "issue": "missing 866–874 (9 years), present before and after"
+  },
+  {
+   "realm": "Duchy of Spoleto",
+   "issue": "missing 888–897 (10 years), present before and after"
+  },
+  {
+   "realm": "Kingdom of Italy",
+   "issue": "missing 896–897 (2 years), present before and after"
+  },
+  {
+   "realm": "Kingdom of Italy",
+   "issue": "missing 900–910 (11 years), present before and after"
+  },
+  {
+   "realm": "Kingdom of Italy",
+   "issue": "missing 922–935 (14 years), present before and after"
+  },
+  {
+   "realm": "Aquitaine",
+   "issue": "missing 633–660 (28 years), present before and after"
+  },
+  {
+   "realm": "Aquitaine",
+   "issue": "missing 732–749 (18 years), present before and after"
+  },
+  {
+   "realm": "Byzantine Empire",
+   "issue": "missing 1402–1406 (5 years), present before and after"
+  },
+  {
+   "realm": "Lavo Kingdom",
+   "issue": "missing 1028–1055 (28 years), present before and after"
+  },
+  {
+   "realm": "Turks",
+   "issue": "missing 718–749 (32 years), present before and after"
+  },
+  {
+   "realm": "Kharijites",
+   "issue": "missing 755–756 (2 years), present before and after"
+  },
+  {
+   "realm": "Idrisids",
+   "issue": "missing 922–925 (4 years), present before and after"
+  },
+  {
+   "realm": "Idrisids",
+   "issue": "missing 936–946 (11 years), present before and after"
+  },
+  {
+   "realm": "Shirvan",
+   "issue": "missing 840–865 (26 years), present before and after"
+  },
+  {
+   "realm": "Shirvan",
+   "issue": "missing 1085–1125 (41 years), present before and after"
+  },
+  {
+   "realm": "Shirvan",
+   "issue": "missing 1385–1414 (30 years), present before and after"
+  },
+  {
+   "realm": "Middle Franks",
+   "issue": "missing 860–898 (39 years), present before and after"
+  },
+  {
+   "realm": "East Franks",
+   "issue": "missing 882–886 (5 years), present before and after"
+  },
+  {
+   "realm": "Lower Burgundy",
+   "issue": "missing 870–879 (10 years), present before and after"
+  },
+  {
+   "realm": "Lower Burgundy",
+   "issue": "missing 900–910 (11 years), present before and after"
+  },
+  {
+   "realm": "Ziyadid dynasty",
+   "issue": "missing 1066–1071 (6 years), present before and after"
+  },
+  {
+   "realm": "Old Kingdom of Norway",
+   "issue": "missing 1046–1055 (10 years), present before and after"
+  },
+  {
+   "realm": "Kingdom of Lower Burgundy",
+   "issue": "missing 911–925 (15 years), present before and after"
+  },
+  {
+   "realm": "Later Jin",
+   "issue": "missing 922–935 (14 years), present before and after"
+  },
+  {
+   "realm": "Kingdom of León",
+   "issue": "missing 1034–1039 (6 years), present before and after"
+  },
+  {
+   "realm": "Kingdom of León",
+   "issue": "missing 1046–1065 (20 years), present before and after"
+  },
+  {
+   "realm": "Kingdom of León",
+   "issue": "missing 1139–1168 (30 years), present before and after"
+  },
+  {
+   "realm": "(Kingdom of England)",
+   "issue": "missing 1018–1045 (28 years), present before and after"
+  },
+  {
+   "realm": "(Kingdom of England)",
+   "issue": "area jumps 223,284 → 114,111 km² at 1645"
+  },
+  {
+   "realm": "(Kingdom of England)",
+   "issue": "area jumps 94,937 → 448,105 km² at 1662"
+  },
+  {
+   "realm": "Kingdom of England",
+   "issue": "missing 1018–1045 (28 years), present before and after"
+  },
+  {
+   "realm": "Kingdom of England",
+   "issue": "area jumps 183,439 → 70,537 km² at 1645"
+  },
+  {
+   "realm": "Kingdom of England",
+   "issue": "missing 1653–1661 (9 years), present before and after"
+  },
+  {
+   "realm": "(Kingdom of Denmark)",
+   "issue": "missing 1018–1055 (38 years), present before and after"
+  },
+  {
+   "realm": "Kingdom of Denmark",
+   "issue": "missing 1018–1055 (38 years), present before and after"
+  },
+  {
+   "realm": "Buyid Dynasty",
+   "issue": "missing 947–969 (23 years), present before and after"
+  },
+  {
+   "realm": "Kingdom of Castile",
+   "issue": "missing 1028–1039 (12 years), present before and after"
+  },
+  {
+   "realm": "Kingdom of Castile",
+   "issue": "missing 1126–1138 (13 years), present before and after"
+  },
+  {
+   "realm": "Ghaznavid Empire",
+   "issue": "missing 1192–1201 (10 years), present before and after"
+  },
+  {
+   "realm": "Kingdom of Sweden",
+   "issue": "missing 1521–1525 (5 years), present before and after"
+  },
+  {
+   "realm": "Duchy of Aquitaine",
+   "issue": "missing 1363–1374 (12 years), present before and after"
+  },
+  {
+   "realm": "Kingdom of Hungary",
+   "issue": "missing 1450–1458 (9 years), present before and after"
+  },
+  {
+   "realm": "Kingdom of Hungary",
+   "issue": "area jumps 241,461 → 121,534 km² at 1540"
+  },
+  {
+   "realm": "(Taifas of Iberia)",
+   "issue": "missing 1126–1146 (21 years), present before and after"
+  },
+  {
+   "realm": "Kingdom of Georgia",
+   "issue": "missing 1463–1467 (5 years), present before and after"
+  },
+  {
+   "realm": "Kingdom of Georgia",
+   "issue": "missing 1738–1743 (6 years), present before and after"
+  },
+  {
+   "realm": "Kingdom of Aragon",
+   "issue": "missing 1028–1039 (12 years), present before and after"
+  },
+  {
+   "realm": "Novgorod Republic",
+   "issue": "missing 1241–1284 (44 years), present before and after"
+  },
+  {
+   "realm": "Sultanate of Rum",
+   "issue": "missing 1260–1304 (45 years), present before and after"
+  },
+  {
+   "realm": "Khwarezmid Dynasty",
+   "issue": "missing 1147–1151 (5 years), present before and after"
+  },
+  {
+   "realm": "Duchy of Silesia",
+   "issue": "missing 1147–1168 (22 years), present before and after"
+  },
+  {
+   "realm": "Zengid dynasty",
+   "issue": "missing 1192–1201 (10 years), present before and after"
+  },
+  {
+   "realm": "Duchy of Sandomierz",
+   "issue": "missing 1169–1176 (8 years), present before and after"
+  },
+  {
+   "realm": "Duchy of Masovia",
+   "issue": "missing 1188–1201 (14 years), present before and after"
+  },
+  {
+   "realm": "Kingdom of Portugal",
+   "issue": "area jumps 96,467 → 189,393 km² at 1824"
+  },
+  {
+   "realm": "Kingdom of Portugal",
+   "issue": "area jumps 193,456 → 1,142,246 km² at 1885"
+  },
+  {
+   "realm": "Principality of Halych",
+   "issue": "missing 1188–1191 (4 years), present before and after"
+  },
+  {
+   "realm": "(Kingdom of Bohemia)",
+   "issue": "missing 1453–1458 (6 years), present before and after"
+  },
+  {
+   "realm": "Kingdom of Bohemia",
+   "issue": "missing 1453–1458 (6 years), present before and after"
+  },
+  {
+   "realm": "Despotate of Epirus",
+   "issue": "missing 1344–1384 (41 years), present before and after"
+  },
+  {
+   "realm": "Mali Empire",
+   "issue": "area jumps 346,027 → 127,290 km² at 1564"
+  },
+  {
+   "realm": "Hafsid Dynasty",
+   "issue": "missing 1352–1362 (11 years), present before and after"
+  },
+  {
+   "realm": "Hafsid Dynasty",
+   "issue": "area jumps 173,148 → 88,079 km² at 1556"
+  },
+  {
+   "realm": "Zayyanid dynasty",
+   "issue": "missing 1344–1362 (19 years), present before and after"
+  },
+  {
+   "realm": "Sukhothai Kingdom",
+   "issue": "missing 1450–1452 (3 years), present before and after"
+  },
+  {
+   "realm": "Ethiopian Empire",
+   "issue": "area jumps 381,442 → 126,100 km² at 1534"
+  },
+  {
+   "realm": "Ethiopian Empire",
+   "issue": "area jumps 126,789 → 526,425 km² at 1547"
+  },
+  {
+   "realm": "Ethiopian Empire",
+   "issue": "area jumps 587,414 → 240,302 km² at 1769"
+  },
+  {
+   "realm": "Ethiopian Empire",
+   "issue": "area jumps 333,255 → 683,445 km² at 1895"
+  },
+  {
+   "realm": "Golden Horde",
+   "issue": "missing 1363–1384 (22 years), present before and after"
+  },
+  {
+   "realm": "Ottoman Empire",
+   "issue": "area jumps 1,064,162 → 2,690,891 km² at 1519"
+  },
+  {
+   "realm": "Ayutthaya Kingdom",
+   "issue": "missing 1572–1587 (16 years), present before and after"
+  },
+  {
+   "realm": "Principality of Moldavia",
+   "issue": "area jumps 81,506 → 256,733 km² at 1600"
+  },
+  {
+   "realm": "Principality of Moldavia",
+   "issue": "area jumps 256,733 → 82,069 km² at 1602"
+  },
+  {
+   "realm": "Principality of Moldavia",
+   "issue": "missing 1769–1774 (6 years), present before and after"
+  },
+  {
+   "realm": "Principality of Moldavia",
+   "issue": "missing 1791–1791 (1 years), present before and after"
+  },
+  {
+   "realm": "Principality of Moldavia",
+   "issue": "missing 1807–1813 (7 years), present before and after"
+  },
+  {
+   "realm": "Principality of Moldavia",
+   "issue": "missing 1828–1833 (6 years), present before and after"
+  },
+  {
+   "realm": "Principality of Moldavia",
+   "issue": "missing 1849–1856 (8 years), present before and after"
+  },
+  {
+   "realm": "Sultanate of Brunei",
+   "issue": "area jumps 50,132 → 104,357 km² at 1502"
+  },
+  {
+   "realm": "Sultanate of Brunei",
+   "issue": "area jumps 124,386 → 230,860 km² at 1512"
+  },
+  {
+   "realm": "Sultanate of Brunei",
+   "issue": "area jumps 230,860 → 117,121 km² at 1582"
+  },
+  {
+   "realm": "Lan Xang",
+   "issue": "missing 1579–1587 (9 years), present before and after"
+  },
+  {
+   "realm": "Timurid Empire",
+   "issue": "area jumps 1,800,414 → 117,080 km² at 1507"
+  },
+  {
+   "realm": "Timurid Empire",
+   "issue": "area jumps 117,080 → 964,685 km² at 1512"
+  },
+  {
+   "realm": "Timurid Empire",
+   "issue": "area jumps 964,685 → 180,903 km² at 1516"
+  },
+  {
+   "realm": "Timurid Empire",
+   "issue": "area jumps 180,903 → 606,125 km² at 1526"
+  },
+  {
+   "realm": "Qara Qoyunlu",
+   "issue": "missing 1402–1406 (5 years), present before and after"
+  },
+  {
+   "realm": "Aq Qoyunlu",
+   "issue": "area jumps 1,542,552 → 350,485 km² at 1507"
+  },
+  {
+   "realm": "Adal Sultanate",
+   "issue": "area jumps 160,096 → 488,420 km² at 1534"
+  },
+  {
+   "realm": "Lê Dynasty",
+   "issue": "missing 1529–1533 (5 years), present before and after"
+  },
+  {
+   "realm": "Kingdom of Mrauk U",
+   "issue": "area jumps 102,177 → 52,360 km² at 1547"
+  },
+  {
+   "realm": "Kingdom of Mrauk U",
+   "issue": "area jumps 52,360 → 100,283 km² at 1552"
+  },
+  {
+   "realm": "Crimean Khanate",
+   "issue": "area jumps 59,168 → 121,200 km² at 1738"
+  },
+  {
+   "realm": "Haudenosaunee",
+   "issue": "area jumps 122,575 → 286,791 km² at 1659"
+  },
+  {
+   "realm": "Haudenosaunee",
+   "issue": "area jumps 533,135 → 75,283 km² at 1702"
+  },
+  {
+   "realm": "(Habsburg Monarchy)",
+   "issue": "area jumps 105,242 → 341,331 km² at 1556"
+  },
+  {
+   "realm": "Warring States Japan",
+   "issue": "area jumps 356,125 → 165,165 km² at 1600"
+  },
+  {
+   "realm": "Mongol Khanate",
+   "issue": "area jumps 5,082,464 → 498,639 km² at 1547"
+  },
+  {
+   "realm": "Habsburg Monarchy",
+   "issue": "missing 1507–1515 (9 years), present before and after"
+  },
+  {
+   "realm": "Habsburg Monarchy",
+   "issue": "area jumps 105,242 → 341,331 km² at 1556"
+  },
+  {
+   "realm": "Ahmadnagar Sultanate",
+   "issue": "area jumps 73,164 → 152,721 km² at 1579"
+  },
+  {
+   "realm": "Ahmadnagar Sultanate",
+   "issue": "area jumps 152,721 → 56,199 km² at 1600"
+  },
+  {
+   "realm": "Shaybanids",
+   "issue": "area jumps 686,520 → 1,747,804 km² at 1507"
+  },
+  {
+   "realm": "(Portuguese Empire)",
+   "issue": "area jumps 588,672 → 51,122 km² at 1582"
+  },
+  {
+   "realm": "(Portuguese Empire)",
+   "issue": "area jumps 1,812,955 → 6,467,703 km² at 1752"
+  },
+  {
+   "realm": "(Portuguese Empire)",
+   "issue": "area jumps 8,210,737 → 216,469 km² at 1824"
+  },
+  {
+   "realm": "(Portuguese Empire)",
+   "issue": "area jumps 217,734 → 1,166,523 km² at 1885"
+  },
+  {
+   "realm": "Portuguese Empire",
+   "issue": "missing 1582–1618 (37 years), present before and after"
+  },
+  {
+   "realm": "Portuguese Empire",
+   "issue": "missing 1622–1639 (18 years), present before and after"
+  },
+  {
+   "realm": "Portuguese Empire",
+   "issue": "area jumps 1,689,496 → 6,344,244 km² at 1752"
+  },
+  {
+   "realm": "Portuguese Empire",
+   "issue": "area jumps 8,087,194 → 92,926 km² at 1822"
+  },
+  {
+   "realm": "Safavid Dynasty",
+   "issue": "area jumps 159,056 → 1,390,117 km² at 1507"
+  },
+  {
+   "realm": "Safavid Dynasty",
+   "issue": "area jumps 1,390,117 → 2,846,306 km² at 1512"
+  },
+  {
+   "realm": "First Toungoo Empire",
+   "issue": "area jumps 59,334 → 107,814 km² at 1540"
+  },
+  {
+   "realm": "First Toungoo Empire",
+   "issue": "area jumps 107,814 → 237,415 km² at 1547"
+  },
+  {
+   "realm": "First Toungoo Empire",
+   "issue": "area jumps 272,753 → 759,464 km² at 1564"
+  },
+  {
+   "realm": "First Toungoo Empire",
+   "issue": "area jumps 1,477,943 → 704,139 km² at 1588"
+  },
+  {
+   "realm": "Khanate of Khiva",
+   "issue": "area jumps 125,257 → 334,101 km² at 1748"
+  },
+  {
+   "realm": "Khanate of Khiva",
+   "issue": "area jumps 334,312 → 738,496 km² at 1791"
+  },
+  {
+   "realm": "Khanate of Khiva",
+   "issue": "area jumps 848,279 → 384,765 km² at 1864"
+  },
+  {
+   "realm": "Khanate of Khiva",
+   "issue": "missing 1873–1917 (45 years), present before and after"
+  },
+  {
+   "realm": "Spanish Empire",
+   "issue": "missing 1519–1520 (2 years), present before and after"
+  },
+  {
+   "realm": "Spanish Empire",
+   "issue": "area jumps 486,440 → 878,304 km² at 1526"
+  },
+  {
+   "realm": "Spanish Empire",
+   "issue": "area jumps 1,469,908 → 3,968,030 km² at 1540"
+  },
+  {
+   "realm": "Spanish Empire",
+   "issue": "area jumps 7,830,731 → 1,982,167 km² at 1822"
+  },
+  {
+   "realm": "Spanish Empire",
+   "issue": "area jumps 1,982,167 → 505,738 km² at 1824"
+  },
+  {
+   "realm": "Spanish Empire",
+   "issue": "missing 1873–1876 (4 years), present before and after"
+  },
+  {
+   "realm": "Sultanate of Aceh",
+   "issue": "missing 1914–1945 (32 years), present before and after"
+  },
+  {
+   "realm": "Sultanate of Aceh",
+   "issue": "missing 1950–1952 (3 years), present before and after"
+  },
+  {
+   "realm": "Kingdom of Spain",
+   "issue": "area jumps 495,752 → 233,628 km² at 1809"
+  },
+  {
+   "realm": "Kingdom of Spain",
+   "issue": "area jumps 132,236 → 378,190 km² at 1812"
+  },
+  {
+   "realm": "Kingdom of Spain",
+   "issue": "missing 1873–1874 (2 years), present before and after"
+  },
+  {
+   "realm": "Kingdom of Spain",
+   "issue": "missing 1932–1975 (44 years), present before and after"
+  },
+  {
+   "realm": "(Spanish Empire)",
+   "issue": "area jumps 2,346,097 → 4,939,936 km² at 1540"
+  },
+  {
+   "realm": "(Spanish Empire)",
+   "issue": "area jumps 8,326,530 → 2,477,967 km² at 1822"
+  },
+  {
+   "realm": "(Spanish Empire)",
+   "issue": "area jumps 2,477,967 → 1,001,537 km² at 1824"
+  },
+  {
+   "realm": "(Spanish Empire)",
+   "issue": "missing 1873–1876 (4 years), present before and after"
+  },
+  {
+   "realm": "Khanate of Bukhara",
+   "issue": "area jumps 712,247 → 384,353 km² at 1521"
+  },
+  {
+   "realm": "Khanate of Bukhara",
+   "issue": "area jumps 384,353 → 767,162 km² at 1526"
+  },
+  {
+   "realm": "Khanate of Bukhara",
+   "issue": "area jumps 767,162 → 384,306 km² at 1529"
+  },
+  {
+   "realm": "Golconda Sultanate",
+   "issue": "area jumps 52,380 → 104,088 km² at 1521"
+  },
+  {
+   "realm": "Eastern Moghulistan",
+   "issue": "area jumps 936,577 → 340,765 km² at 1683"
+  },
+  {
+   "realm": "Western Moghulistan",
+   "issue": "area jumps 285,072 → 140,441 km² at 1521"
+  },
+  {
+   "realm": "Sultanate of Maguindanao",
+   "issue": "missing 1609–1611 (3 years), present before and after"
+  },
+  {
+   "realm": "Denmark-Norway",
+   "issue": "area jumps 526,207 → 185,172 km² at 1814"
+  },
+  {
+   "realm": "Denmark-Norway",
+   "issue": "area jumps 160,323 → 53,400 km² at 1922"
+  },
+  {
+   "realm": "Mughal Empire",
+   "issue": "area jumps 955,784 → 344,713 km² at 1540"
+  },
+  {
+   "realm": "Mughal Empire",
+   "issue": "area jumps 506,138 → 1,076,241 km² at 1564"
+  },
+  {
+   "realm": "Mughal Empire",
+   "issue": "area jumps 1,672,448 → 537,533 km² at 1744"
+  },
+  {
+   "realm": "Mughal Empire",
+   "issue": "area jumps 532,437 → 134,738 km² at 1762"
+  },
+  {
+   "realm": "Mughal Empire",
+   "issue": "area jumps 134,738 → 327,784 km² at 1772"
+  },
+  {
+   "realm": "Đại Việt",
+   "issue": "area jumps 190,572 → 87,063 km² at 1534"
+  },
+  {
+   "realm": "Sultanate of Johor",
+   "issue": "area jumps 134,060 → 51,117 km² at 1683"
+  },
+  {
+   "realm": "Sultanate of Johor",
+   "issue": "area jumps 179,225 → 59,672 km² at 1727"
+  },
+  {
+   "realm": "Sultanate of Johor",
+   "issue": "missing 1862–1879 (18 years), present before and after"
+  },
+  {
+   "realm": "Sur Empire",
+   "issue": "area jumps 1,209,808 → 331,702 km² at 1556"
+  },
+  {
+   "realm": "Tümed",
+   "issue": "area jumps 2,616,320 → 413,939 km² at 1582"
+  },
+  {
+   "realm": "Don Cossacks",
+   "issue": "area jumps 64,317 → 125,981 km² at 1636"
+  },
+  {
+   "realm": "Small Horde",
+   "issue": "area jumps 346,634 → 108,451 km² at 1588"
+  },
+  {
+   "realm": "Principality of Transylvania",
+   "issue": "missing 1600–1601 (2 years), present before and after"
+  },
+  {
+   "realm": "Polish-Lithuanian Commonwealth",
+   "issue": "area jumps 829,073 → 435,644 km² at 1659"
+  },
+  {
+   "realm": "Polish-Lithuanian Commonwealth",
+   "issue": "area jumps 791,519 → 436,745 km² at 1706"
+  },
+  {
+   "realm": "Polish-Lithuanian Commonwealth",
+   "issue": "area jumps 533,009 → 222,276 km² at 1792"
+  },
+  {
+   "realm": "Tokugawa Shogunate",
+   "issue": "area jumps 163,913 → 328,728 km² at 1602"
+  },
+  {
+   "realm": "New France",
+   "issue": "area jumps 249,127 → 118,567 km² at 1762"
+  },
+  {
+   "realm": "English Colonial Empire",
+   "issue": "missing 1762–1762 (1 years), present before and after"
+  },
+  {
+   "realm": "Dzungar Khanate",
+   "issue": "area jumps 839,091 → 1,721,863 km² at 1683"
+  },
+  {
+   "realm": "Dzungar Khanate",
+   "issue": "area jumps 1,721,863 → 3,653,443 km² at 1687"
+  },
+  {
+   "realm": "Brandenburg-Prussia",
+   "issue": "area jumps 58,651 → 106,403 km² at 1648"
+  },
+  {
+   "realm": "Later Jin Dynasty",
+   "issue": "area jumps 50,291 → 138,392 km² at 1622"
+  },
+  {
+   "realm": "Later Jin Dynasty",
+   "issue": "area jumps 281,319 → 1,943,075 km² at 1636"
+  },
+  {
+   "realm": "Oirat Confederation",
+   "issue": "area jumps 365,737 → 839,091 km² at 1636"
+  },
+  {
+   "realm": "Kalmyk Khanate",
+   "issue": "area jumps 58,332 → 163,013 km² at 1636"
+  },
+  {
+   "realm": "Qasimids",
+   "issue": "area jumps 360,698 → 165,848 km² at 1683"
+  },
+  {
+   "realm": "Southern Ming",
+   "issue": "area jumps 2,171,507 → 198,795 km² at 1653"
+  },
+  {
+   "realm": "Southern Ming",
+   "issue": "missing 1659–1661 (3 years), present before and after"
+  },
+  {
+   "realm": "Southern Ming",
+   "issue": "area jumps 976,185 → 1,931,756 km² at 1677"
+  },
+  {
+   "realm": "Commonwealth of England",
+   "issue": "area jumps 167,300 → 341,676 km² at 1653"
+  },
+  {
+   "realm": "Dutch Cape Colony",
+   "issue": "area jumps 57,587 → 156,768 km² at 1769"
+  },
+  {
+   "realm": "Morocco",
+   "issue": "missing 1912–1955 (44 years), present before and after"
+  },
+  {
+   "realm": "Maratha Empire",
+   "issue": "missing 1691–1717 (27 years), present before and after"
+  },
+  {
+   "realm": "Maratha Empire",
+   "issue": "area jumps 395,546 → 973,460 km² at 1752"
+  },
+  {
+   "realm": "Maratha Empire",
+   "issue": "area jumps 854,944 → 82,885 km² at 1820"
+  },
+  {
+   "realm": "Kingdom of Prussia",
+   "issue": "area jumps 205,091 → 76,582 km² at 1762"
+  },
+  {
+   "realm": "Kingdom of Prussia",
+   "issue": "area jumps 76,582 → 171,727 km² at 1763"
+  },
+  {
+   "realm": "Ashanti Empire",
+   "issue": "area jumps 72,921 → 154,023 km² at 1744"
+  },
+  {
+   "realm": "(British Empire)",
+   "issue": "area jumps 27,546,959 → 15,233,081 km² at 1932"
+  },
+  {
+   "realm": "(British Empire)",
+   "issue": "area jumps 3,207,726 → 806,458 km² at 1969"
+  },
+  {
+   "realm": "(British Empire)",
+   "issue": "area jumps 806,458 → 289,867 km² at 1996"
+  },
+  {
+   "realm": "British Colonial Empire",
+   "issue": "area jumps 227,169 → 417,847 km² at 1713"
+  },
+  {
+   "realm": "British Colonial Empire",
+   "issue": "area jumps 1,927,414 → 1,041,893 km² at 1775"
+  },
+  {
+   "realm": "British Colonial Empire",
+   "issue": "area jumps 13,690,182 → 6,370,221 km² at 1905"
+  },
+  {
+   "realm": "British Colonial Empire",
+   "issue": "area jumps 11,649,865 → 1,904,904 km² at 1932"
+  },
+  {
+   "realm": "British Colonial Empire",
+   "issue": "area jumps 1,411,913 → 579,142 km² at 1958"
+  },
+  {
+   "realm": "British Colonial Empire",
+   "issue": "area jumps 351,477 → 134,161 km² at 1969"
+  },
+  {
+   "realm": "Pro-Swedish Poland",
+   "issue": "area jumps 348,690 → 758,657 km² at 1709"
+  },
+  {
+   "realm": "Hotaki Dynasty",
+   "issue": "area jumps 149,398 → 552,632 km² at 1718"
+  },
+  {
+   "realm": "Hotaki Dynasty",
+   "issue": "area jumps 919,073 → 1,918,357 km² at 1727"
+  },
+  {
+   "realm": "Hotaki Dynasty",
+   "issue": "area jumps 1,918,357 → 552,476 km² at 1734"
+  },
+  {
+   "realm": "Khanate of Kokand",
+   "issue": "area jumps 85,753 → 174,694 km² at 1809"
+  },
+  {
+   "realm": "Khanate of Kokand",
+   "issue": "area jumps 174,694 → 475,816 km² at 1822"
+  },
+  {
+   "realm": "Khanate of Kokand",
+   "issue": "area jumps 411,782 → 71,142 km² at 1864"
+  },
+  {
+   "realm": "Bamana Empire",
+   "issue": "missing 1757–1768 (12 years), present before and after"
+  },
+  {
+   "realm": "Greenland",
+   "issue": "area jumps 170,640 → 2,219,796 km² at 1936"
+  },
+  {
+   "realm": "Afsharid Iran",
+   "issue": "area jumps 3,458,882 → 1,748,586 km² at 1748"
+  },
+  {
+   "realm": "Afsharid Iran",
+   "issue": "area jumps 1,748,586 → 926,747 km² at 1752"
+  },
+  {
+   "realm": "Konbaung Dynasty",
+   "issue": "area jumps 112,429 → 446,707 km² at 1757"
+  },
+  {
+   "realm": "Sultanate of Oman",
+   "issue": "area jumps 78,919 → 176,449 km² at 1830"
+  },
+  {
+   "realm": "Sultanate of Oman",
+   "issue": "area jumps 176,449 → 79,364 km² at 1856"
+  },
+  {
+   "realm": "Emirate of Diriyah",
+   "issue": "area jumps 112,488 → 274,468 km² at 1788"
+  },
+  {
+   "realm": "Emirate of Diriyah",
+   "issue": "area jumps 830,515 → 1,670,256 km² at 1803"
+  },
+  {
+   "realm": "Emirate of Diriyah",
+   "issue": "area jumps 1,843,860 → 965,934 km² at 1815"
+  },
+  {
+   "realm": "Khanates of the Caucasus",
+   "issue": "area jumps 87,987 → 194,383 km² at 1788"
+  },
+  {
+   "realm": "Khanates of the Caucasus",
+   "issue": "area jumps 194,383 → 87,987 km² at 1791"
+  },
+  {
+   "realm": "Durrani Empire",
+   "issue": "area jumps 54,363 → 970,576 km² at 1752"
+  },
+  {
+   "realm": "Nepal",
+   "issue": "area jumps 56,957 → 169,535 km² at 1788"
+  },
+  {
+   "realm": "Emirate of Bukhara",
+   "issue": "missing 1868–1917 (50 years), present before and after"
+  },
+  {
+   "realm": "Sikh Empire",
+   "issue": "area jumps 63,173 → 202,529 km² at 1820"
+  },
+  {
+   "realm": "Sikh Empire",
+   "issue": "area jumps 397,813 → 208,932 km² at 1846"
+  },
+  {
+   "realm": "Dutch East Indies",
+   "issue": "missing 1943–1945 (3 years), present before and after"
+  },
+  {
+   "realm": "French Louisiana",
+   "issue": "area jumps 54,069 → 107,958 km² at 1803"
+  },
+  {
+   "realm": "Muhammad Ali dynasty",
+   "issue": "area jumps 604,573 → 1,643,446 km² at 1822"
+  },
+  {
+   "realm": "(First French Empire)",
+   "issue": "area jumps 1,068,032 → 507,338 km² at 1814"
+  },
+  {
+   "realm": "First French Empire",
+   "issue": "area jumps 1,064,742 → 504,049 km² at 1814"
+  },
+  {
+   "realm": "New Granada",
+   "issue": "area jumps 602,458 → 1,341,011 km² at 1820"
+  },
+  {
+   "realm": "Republic of Venezuela",
+   "issue": "missing 1812–1813 (2 years), present before and after"
+  },
+  {
+   "realm": "Mexicans",
+   "issue": "area jumps 144,859 → 263,716 km² at 1812"
+  },
+  {
+   "realm": "(Netherlands)",
+   "issue": "area jumps 121,489 → 326,082 km² at 1814"
+  },
+  {
+   "realm": "(Netherlands)",
+   "issue": "missing 1943–1944 (2 years), present before and after"
+  },
+  {
+   "realm": "Paraguay",
+   "issue": "missing 1870–1876 (7 years), present before and after"
+  },
+  {
+   "realm": "Paraguay",
+   "issue": "area jumps 158,605 → 402,453 km² at 1936"
+  },
+  {
+   "realm": "Republic of Chile",
+   "issue": "missing 1815–1819 (5 years), present before and after"
+  },
+  {
+   "realm": "Omani Slave Coast",
+   "issue": "area jumps 64,591 → 185,340 km² at 1840"
+  },
+  {
+   "realm": "Federal League",
+   "issue": "area jumps 288,874 → 604,813 km² at 1815"
+  },
+  {
+   "realm": "(Bourbon Kingdom of France)",
+   "issue": "area jumps 856,842 → 231,289 km² at 1848"
+  },
+  {
+   "realm": "Talpur Dynasty",
+   "issue": "area jumps 147,651 → 535,464 km² at 1822"
+  },
+  {
+   "realm": "Talpur Dynasty",
+   "issue": "area jumps 528,678 → 79,066 km² at 1840"
+  },
+  {
+   "realm": "Talpur Dynasty",
+   "issue": "area jumps 79,066 → 192,785 km² at 1842"
+  },
+  {
+   "realm": "Talpur Dynasty",
+   "issue": "area jumps 192,785 → 74,722 km² at 1846"
+  },
+  {
+   "realm": "Republic of Peru",
+   "issue": "missing 1836–1839 (4 years), present before and after"
+  },
+  {
+   "realm": "Emirate of Nejd",
+   "issue": "area jumps 532,312 → 1,116,421 km² at 1853"
+  },
+  {
+   "realm": "Emirate of Nejd",
+   "issue": "area jumps 816,945 → 375,513 km² at 1873"
+  },
+  {
+   "realm": "Emirate of Nejd",
+   "issue": "area jumps 267,575 → 114,136 km² at 1890"
+  },
+  {
+   "realm": "Federated Republic of Mexico",
+   "issue": "area jumps 3,188,276 → 1,352,775 km² at 1836"
+  },
+  {
+   "realm": "Federated Republic of Mexico",
+   "issue": "missing 1842–1845 (4 years), present before and after"
+  },
+  {
+   "realm": "Bolivia",
+   "issue": "missing 1836–1839 (4 years), present before and after"
+  },
+  {
+   "realm": "Emirate of Jabal Shammar",
+   "issue": "missing 1828–1839 (12 years), present before and after"
+  },
+  {
+   "realm": "Emirate of Jabal Shammar",
+   "issue": "area jumps 84,254 → 459,743 km² at 1842"
+  },
+  {
+   "realm": "Emirate of Jabal Shammar",
+   "issue": "missing 1846–1865 (20 years), present before and after"
+  },
+  {
+   "realm": "Emirate of Jabal Shammar",
+   "issue": "area jumps 674,803 → 84,254 km² at 1905"
+  },
+  {
+   "realm": "Emirate of Jabal Shammar",
+   "issue": "area jumps 84,254 → 259,971 km² at 1916"
+  },
+  {
+   "realm": "Emirate of Afghanistan",
+   "issue": "missing 1840–1845 (6 years), present before and after"
+  },
+  {
+   "realm": "Centralist Mexico",
+   "issue": "area jumps 1,452,609 → 668,071 km² at 1842"
+  },
+  {
+   "realm": "Republic of Nicaragua",
+   "issue": "missing 1856–1856 (1 years), present before and after"
+  },
+  {
+   "realm": "French Africa",
+   "issue": "area jumps 282,889 → 527,200 km² at 1870"
+  },
+  {
+   "realm": "French Africa",
+   "issue": "area jumps 1,326,787 → 3,632,144 km² at 1895"
+  },
+  {
+   "realm": "French Africa",
+   "issue": "area jumps 4,488,516 → 10,130,495 km² at 1905"
+  },
+  {
+   "realm": "South African Republic",
+   "issue": "missing 1877–1884 (8 years), present before and after"
+  },
+  {
+   "realm": "British Raj",
+   "issue": "area jumps 4,902,307 → 748,070 km² at 1947"
+  },
+  {
+   "realm": "French Indochina",
+   "issue": "area jumps 93,919 → 208,328 km² at 1868"
+  },
+  {
+   "realm": "French Indochina",
+   "issue": "area jumps 208,559 → 443,604 km² at 1885"
+  },
+  {
+   "realm": "Empire of Japan",
+   "issue": "area jumps 57,017 → 461,627 km² at 1870"
+  },
+  {
+   "realm": "Empire of Japan",
+   "issue": "area jumps 748,352 → 2,055,535 km² at 1932"
+  },
+  {
+   "realm": "Mexico",
+   "issue": "missing 1913–1919 (7 years), present before and after"
+  },
+  {
+   "realm": "German Africa",
+   "issue": "area jumps 1,061,859 → 2,106,054 km² at 1895"
+  },
+  {
+   "realm": "German Africa",
+   "issue": "area jumps 2,587,617 → 834,316 km² at 1916"
+  },
+  {
+   "realm": "German Africa",
+   "issue": "area jumps 834,316 → 203,274 km² at 1917"
+  },
+  {
+   "realm": "(French Third Republic)",
+   "issue": "area jumps 2,435,339 → 4,957,558 km² at 1895"
+  },
+  {
+   "realm": "(French Third Republic)",
+   "issue": "area jumps 5,816,601 → 11,497,035 km² at 1905"
+  },
+  {
+   "realm": "German Empire",
+   "issue": "area jumps 1,424,115 → 518,266 km² at 1919"
+  },
+  {
+   "realm": "British Gold Coast",
+   "issue": "area jumps 137,352 → 258,281 km² at 1898"
+  },
+  {
+   "realm": "British Gold Coast",
+   "issue": "area jumps 414,666 → 1,107,597 km² at 1905"
+  },
+  {
+   "realm": "Italian Africa",
+   "issue": "area jumps 270,878 → 592,827 km² at 1895"
+  },
+  {
+   "realm": "Italian Africa",
+   "issue": "area jumps 587,499 → 1,467,542 km² at 1912"
+  },
+  {
+   "realm": "Italian Africa",
+   "issue": "area jumps 3,514,816 → 1,538,477 km² at 1941"
+  },
+  {
+   "realm": "Brazilian Republic",
+   "issue": "missing 1932–1945 (14 years), present before and after"
+  },
+  {
+   "realm": "Sultanate of Muscat and Oman",
+   "issue": "area jumps 133,622 → 323,401 km² at 1922"
+  },
+  {
+   "realm": "Republic of Cuba",
+   "issue": "missing 1908–1910 (3 years), present before and after"
+  },
+  {
+   "realm": "Republic of China",
+   "issue": "missing 1916–1929 (14 years), present before and after"
+  },
+  {
+   "realm": "Republic of China",
+   "issue": "area jumps 5,434,128 → 81,057 km² at 1950"
+  },
+  {
+   "realm": "Great Mongol State",
+   "issue": "missing 1920–1921 (2 years), present before and after"
+  },
+  {
+   "realm": "Kingdom of Hejaz",
+   "issue": "area jumps 74,018 → 370,777 km² at 1917"
+  },
+  {
+   "realm": "Czechoslovakia",
+   "issue": "missing 1939–1946 (8 years), present before and after"
+  },
+  {
+   "realm": "Czechoslovakia",
+   "issue": "missing 1969–1990 (22 years), present before and after"
+  },
+  {
+   "realm": "Kingdom of Romania",
+   "issue": "missing 1945–1946 (2 years), present before and after"
+  },
+  {
+   "realm": "Yugoslavia",
+   "issue": "missing 1941–1944 (4 years), present before and after"
+  },
+  {
+   "realm": "Kingdom of Iraq",
+   "issue": "missing 1943–1946 (4 years), present before and after"
+  },
+  {
+   "realm": "Communist Party of China",
+   "issue": "area jumps 1,622,107 → 110,922 km² at 1946"
+  },
+  {
+   "realm": "Communist Party of China",
+   "issue": "area jumps 110,922 → 607,731 km² at 1947"
+  },
+  {
+   "realm": "Communist Party of China",
+   "issue": "area jumps 607,731 → 2,247,136 km² at 1948"
+  },
+  {
+   "realm": "Nazi Germany",
+   "issue": "area jumps 699,301 → 1,637,988 km² at 1940"
+  },
+  {
+   "realm": "Free French",
+   "issue": "area jumps 2,377,926 → 89,085 km² at 1944"
+  },
+  {
+   "realm": "Vichy France",
+   "issue": "area jumps 356,691 → 89,011 km² at 1943"
+  },
+  {
+   "realm": "Denmark",
+   "issue": "area jumps 53,400 → 2,273,196 km² at 1946"
+  },
+  {
+   "realm": "Republic of Indonesia",
+   "issue": "area jumps 408,209 → 122,120 km² at 1949"
+  },
+  {
+   "realm": "Republic of Indonesia",
+   "issue": "area jumps 122,120 → 2,022,994 km² at 1950"
+  },
+  {
+   "realm": "Kingdom of Jordan",
+   "issue": "missing 1958–1959 (2 years), present before and after"
+  },
+  {
+   "realm": "Republic of Vietnam",
+   "issue": "missing 1967–1972 (6 years), present before and after"
+  },
+  {
+   "realm": "Kingdom of Cambodia",
+   "issue": "missing 1976–1995 (20 years), present before and after"
+  },
+  {
+   "realm": "French Fifth Republic",
+   "issue": "area jumps 8,469,877 → 3,029,276 km² at 1961"
+  },
+  {
+   "realm": "French Fifth Republic",
+   "issue": "area jumps 3,029,276 → 680,260 km² at 2024"
+  },
+  {
+   "realm": "Democratic Republic of the Congo",
+   "issue": "missing 1973–1995 (23 years), present before and after"
+  },
+  {
+   "realm": "Afghanistan",
+   "issue": "missing 1987–1995 (9 years), present before and after"
+  },
+  {
+   "realm": "Afghanistan",
+   "issue": "area jumps 192,790 → 83,240 km² at 2000"
+  },
+  {
+   "realm": "Afghanistan",
+   "issue": "area jumps 83,240 → 643,926 km² at 2006"
+  },
+  {
+   "realm": "Mujahideen",
+   "issue": "missing 1996–2013 (18 years), present before and after"
+  },
+  {
+   "realm": "Golden Horde successor khanates",
+   "issue": "area jumps 1,966,982 → 3,878,772 km² at 1582"
+  },
+  {
+   "realm": "Golden Horde successor khanates",
+   "issue": "area jumps 2,118,129 → 621,835 km² at 1687"
+  },
+  {
+   "realm": "United Kingdom",
+   "issue": "area jumps 356,892 → 665,755 km² at 1890"
+  },
+  {
+   "realm": "United Kingdom",
+   "issue": "area jumps 672,038 → 266,470 km² at 2024"
+  },
+  {
+   "realm": "Dutch colonies in the Americas",
+   "issue": "area jumps 90,365 → 344,000 km² at 1642"
+  },
+  {
+   "realm": "Dutch colonies in the Americas",
+   "issue": "area jumps 344,000 → 90,173 km² at 1645"
+  }
+ ]
+}

@@ -77,7 +77,7 @@ def arrow(a, P, upto, col):
 def frame(W_, ch, t, label, claims):
     b = ch["bbox"]
     ext = [b[0] - 0.6, b[2] + 0.6, b[1] - 0.4, b[3] + 0.4]
-    W, H = 1400, 1000
+    W, H = 1300, 1300
     P = proj(ext, W, H)
     sm = W_.sides(t)
     g = [f'<rect width="{W}" height="{H}" fill="#ffffff"/>']
@@ -157,7 +157,7 @@ def main():
             fn = os.path.join(out, f"{i + 1:02d}-{ch['id']}-{tag}.svg")
             open(fn, "w").write(frame(W_, ch, t, label, claims))
             if ql:
-                subprocess.run([ql, "-t", "-s", "1400", "-o", out, fn], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+                subprocess.run([ql, "-t", "-s", "1300", "-o", out, fn], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     print("frames in", out)
 
 

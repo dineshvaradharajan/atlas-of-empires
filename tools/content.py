@@ -321,3 +321,9 @@ if __name__ == "__main__":
         print(r.stdout.splitlines()[0] if r.stdout else r.stderr.strip()[:300])
         if r.returncode:
             print("  ! history check found errors: see content/factcheck/history-check-*.md")
+    # border claims (who held which place in which year): see tools/borders/check_borders.py (full run adds dates, areas, overlaps)
+    if glob.glob(os.path.join(ROOT, "content", "borders", "claims-*.json")):
+        r = subprocess.run([sys.executable, "-I", os.path.join(ROOT, "tools", "borders", "check_borders.py"), "--claims-only"], capture_output=True, text=True)
+        print(r.stdout.strip().splitlines()[-1] if r.stdout.strip() else r.stderr.strip()[:300])
+        if r.returncode:
+            print("  ! border claims failing: see content/factcheck/border-check.md")

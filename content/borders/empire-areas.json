@@ -1,0 +1,960 @@
+{
+ "_about": "Peak areas (million km²) and years from Wikipedia 'List of largest empires' (cites Taagepera, Turchin et al.); parsed by tools/borders/fetch_reference.py — check raw cells when in doubt",
+ "source": "https://en.wikipedia.org/wiki/List_of_largest_empires",
+ "rows": [
+  {
+   "title": "British Empire",
+   "peak_mkm2": 35.5,
+   "peak_year": 1920,
+   "year_cell": "{{Date table sorting|1920}}"
+  },
+  {
+   "title": "Mongol Empire",
+   "peak_mkm2": 24.0,
+   "peak_year": 1270,
+   "year_cell": "{{Date table sorting|1270}} or {{Date table sorting|1309}}"
+  },
+  {
+   "title": "Russian Empire",
+   "peak_mkm2": 22.8,
+   "peak_year": 1895,
+   "year_cell": "{{Date table sorting|1895}}"
+  },
+  {
+   "title": "Qing dynasty",
+   "peak_mkm2": 14.7,
+   "peak_year": 1790,
+   "year_cell": "{{Date table sorting|1790}}"
+  },
+  {
+   "title": "Spanish Empire",
+   "peak_mkm2": 13.7,
+   "peak_year": 1810,
+   "year_cell": "{{Date table sorting|1810}}"
+  },
+  {
+   "title": "Abbasid Caliphate",
+   "peak_mkm2": 11.1,
+   "peak_year": 750,
+   "year_cell": "{{Date table sorting|750}}"
+  },
+  {
+   "title": "Umayyad Caliphate",
+   "peak_mkm2": 11.1,
+   "peak_year": 720,
+   "year_cell": "{{Date table sorting|720}}"
+  },
+  {
+   "title": "Yuan dynasty",
+   "peak_mkm2": 11.0,
+   "peak_year": 1310,
+   "year_cell": "{{Date table sorting|1310}}"
+  },
+  {
+   "title": "United States",
+   "peak_mkm2": 9.5,
+   "peak_year": 1900,
+   "year_cell": "{{Date table sorting|1900}}"
+  },
+  {
+   "title": "Xiongnu Empire",
+   "peak_mkm2": 9.0,
+   "peak_year": -176,
+   "year_cell": "{{Date table sorting|-176}}"
+  },
+  {
+   "title": "Empire of Japan",
+   "peak_mkm2": 7.4,
+   "peak_year": 1942,
+   "year_cell": "{{Date table sorting|1942}}"
+  },
+  {
+   "title": "Eastern Han dynasty",
+   "peak_mkm2": 6.5,
+   "peak_year": 100,
+   "year_cell": "{{Date table sorting|100}}"
+  },
+  {
+   "title": "Ming dynasty",
+   "peak_mkm2": 6.5,
+   "peak_year": 1450,
+   "year_cell": "{{Date table sorting|1450}}"
+  },
+  {
+   "title": "Rashidun Caliphate",
+   "peak_mkm2": 6.4,
+   "peak_year": 655,
+   "year_cell": "{{Date table sorting|655}}"
+  },
+  {
+   "title": "First Turkic Khaganate",
+   "peak_mkm2": 6.0,
+   "peak_year": 557,
+   "year_cell": "{{Date table sorting|557}}"
+  },
+  {
+   "title": "Golden Horde",
+   "peak_mkm2": 6.0,
+   "peak_year": 1310,
+   "year_cell": "{{Date table sorting|1310}}"
+  },
+  {
+   "title": "Achaemenid Empire",
+   "peak_mkm2": 5.5,
+   "peak_year": -500,
+   "year_cell": "{{Date table sorting|-500}}"
+  },
+  {
+   "title": "Tang dynasty",
+   "peak_mkm2": 5.4,
+   "peak_year": 715,
+   "year_cell": "{{Date table sorting|715}}"
+  },
+  {
+   "title": "Macedonia (ancient kingdom)",
+   "peak_mkm2": 5.2,
+   "peak_year": -323,
+   "year_cell": "{{Date table sorting|-323}}"
+  },
+  {
+   "title": "Ottoman Empire",
+   "peak_mkm2": 5.2,
+   "peak_year": 1683,
+   "year_cell": "{{Date table sorting|1683}}"
+  },
+  {
+   "title": "Northern Yuan dynasty",
+   "peak_mkm2": 5.0,
+   "peak_year": 1368,
+   "year_cell": "{{Date table sorting|1368}}"
+  },
+  {
+   "title": "Roman Empire",
+   "peak_mkm2": 5.0,
+   "peak_year": 117,
+   "year_cell": "{{Date table sorting|117}}"
+  },
+  {
+   "title": "Xin dynasty",
+   "peak_mkm2": 4.7,
+   "peak_year": 10,
+   "year_cell": "{{Date table sorting|10}}"
+  },
+  {
+   "title": "Tibetan Empire",
+   "peak_mkm2": 4.6,
+   "peak_year": 800,
+   "year_cell": "{{Date table sorting|800}}"
+  },
+  {
+   "title": "Xianbei state",
+   "peak_mkm2": 4.5,
+   "peak_year": 200,
+   "year_cell": "{{Date table sorting|200}}"
+  },
+  {
+   "title": "First Mexican Empire",
+   "peak_mkm2": 4.429,
+   "peak_year": 1821,
+   "year_cell": "{{Date table sorting|1821}}"
+  },
+  {
+   "title": "Timurid Empire",
+   "peak_mkm2": 4.4,
+   "peak_year": 1405,
+   "year_cell": "{{Date table sorting|1405}}"
+  },
+  {
+   "title": "Fatimid Caliphate",
+   "peak_mkm2": 4.1,
+   "peak_year": 969,
+   "year_cell": "{{Date table sorting|969}}"
+  },
+  {
+   "title": "Eastern Turkic Khaganate",
+   "peak_mkm2": 4.0,
+   "peak_year": 624,
+   "year_cell": "{{Date table sorting|624}}"
+  },
+  {
+   "title": "Hunnic Empire",
+   "peak_mkm2": 4.0,
+   "peak_year": 441,
+   "year_cell": "{{Date table sorting|441}}"
+  },
+  {
+   "title": "Mughal Empire",
+   "peak_mkm2": 4.0,
+   "peak_year": 1690,
+   "year_cell": "{{Date table sorting|1690}}"
+  },
+  {
+   "title": "Seljuk Empire",
+   "peak_mkm2": 3.9,
+   "peak_year": 1080,
+   "year_cell": "{{Date table sorting|1080}}"
+  },
+  {
+   "title": "Seleucid Empire",
+   "peak_mkm2": 3.9,
+   "peak_year": -301,
+   "year_cell": "{{Date table sorting|-301}}"
+  },
+  {
+   "title": "Ilkhanate",
+   "peak_mkm2": 3.75,
+   "peak_year": 1310,
+   "year_cell": "{{Date table sorting|1310}}"
+  },
+  {
+   "title": "Dzungar Khanate",
+   "peak_mkm2": 3.6,
+   "peak_year": 1650,
+   "year_cell": "{{Date table sorting|1650}}"
+  },
+  {
+   "title": "Chagatai Khanate",
+   "peak_mkm2": 3.5,
+   "peak_year": 1310,
+   "year_cell": "{{Date table sorting|1310}} or {{Date table sorting|1350}}"
+  },
+  {
+   "title": "Sasanian Empire",
+   "peak_mkm2": 3.5,
+   "peak_year": 550,
+   "year_cell": "{{Date table sorting|550}}"
+  },
+  {
+   "title": "Western Turkic Khaganate",
+   "peak_mkm2": 3.5,
+   "peak_year": 630,
+   "year_cell": "{{Date table sorting|630}}"
+  },
+  {
+   "title": "Xiongnu",
+   "peak_mkm2": 3.5,
+   "peak_year": 20,
+   "year_cell": "{{Date table sorting|20}}"
+  },
+  {
+   "title": "Ghaznavids",
+   "peak_mkm2": 3.4,
+   "peak_year": 1029,
+   "year_cell": "{{Date table sorting|1029}}"
+  },
+  {
+   "title": "Maurya Empire",
+   "peak_mkm2": 3.4,
+   "peak_year": -261,
+   "year_cell": "{{Date table sorting|-261}} or {{Date table sorting|-250}}"
+  },
+  {
+   "title": "Delhi Sultanate",
+   "peak_mkm2": 3.2,
+   "peak_year": 1312,
+   "year_cell": "{{Date table sorting|1312}}"
+  },
+  {
+   "title": "Northern Song dynasty",
+   "peak_mkm2": 3.1,
+   "peak_year": 980,
+   "year_cell": "{{Date table sorting|980}}"
+  },
+  {
+   "title": "Uyghur Khaganate",
+   "peak_mkm2": 3.1,
+   "peak_year": 800,
+   "year_cell": "{{Date table sorting|800}}"
+  },
+  {
+   "title": "Western Jin dynasty",
+   "peak_mkm2": 3.1,
+   "peak_year": 280,
+   "year_cell": "{{Date table sorting|280}}"
+  },
+  {
+   "title": "Danish Colonial Empire",
+   "peak_mkm2": 3.0,
+   "peak_year": 1700,
+   "year_cell": "{{Date table sorting|1700}}"
+  },
+  {
+   "title": "Sui dynasty",
+   "peak_mkm2": 3.0,
+   "peak_year": 589,
+   "year_cell": "{{Date table sorting|589}}"
+  },
+  {
+   "title": "Safavid Iran",
+   "peak_mkm2": 2.9,
+   "peak_year": 1630,
+   "year_cell": "{{Date table sorting|1630}}"
+  },
+  {
+   "title": "Samanid Empire",
+   "peak_mkm2": 2.85,
+   "peak_year": 928,
+   "year_cell": "{{Date table sorting|928}}"
+  },
+  {
+   "title": "Eastern Jin dynasty",
+   "peak_mkm2": 2.8,
+   "peak_year": 347,
+   "year_cell": "{{Date table sorting|347}}"
+  },
+  {
+   "title": "Median Empire",
+   "peak_mkm2": 2.8,
+   "peak_year": -585,
+   "year_cell": "{{Date table sorting|-585}}"
+  },
+  {
+   "title": "Parthian Empire",
+   "peak_mkm2": 2.8,
+   "peak_year": 1,
+   "year_cell": "1"
+  },
+  {
+   "title": "Rouran Khaganate",
+   "peak_mkm2": 2.8,
+   "peak_year": 405,
+   "year_cell": "{{Date table sorting|405}}"
+  },
+  {
+   "title": "Byzantine Empire",
+   "peak_mkm2": 2.7,
+   "peak_year": 555,
+   "year_cell": "{{Date table sorting|555}} or {{Date table sorting|450}}"
+  },
+  {
+   "title": "Indo-Scythians",
+   "peak_mkm2": 2.6,
+   "peak_year": 20,
+   "year_cell": "{{Date table sorting|20}}"
+  },
+  {
+   "title": "Liao dynasty",
+   "peak_mkm2": 2.6,
+   "peak_year": 947,
+   "year_cell": "{{Date table sorting|947}}"
+  },
+  {
+   "title": "Greco-Bactrian Kingdom",
+   "peak_mkm2": 2.5,
+   "peak_year": -184,
+   "year_cell": "{{Date table sorting|-184}}"
+  },
+  {
+   "title": "Later Zhao",
+   "peak_mkm2": 2.5,
+   "peak_year": 329,
+   "year_cell": "{{Date table sorting|329}}"
+  },
+  {
+   "title": "Maratha Empire",
+   "peak_mkm2": 2.5,
+   "peak_year": 1760,
+   "year_cell": "{{Date table sorting|1760}}"
+  },
+  {
+   "title": "Jin dynasty (1115–1234)",
+   "peak_mkm2": 2.3,
+   "peak_year": 1126,
+   "year_cell": "{{Date table sorting|1126}}"
+  },
+  {
+   "title": "Khwarazmian Empire",
+   "peak_mkm2": 2.3,
+   "peak_year": 1210,
+   "year_cell": "{{Date table sorting|1210}} or {{Date table sorting|1218}}"
+  },
+  {
+   "title": "Qin dynasty",
+   "peak_mkm2": 2.3,
+   "peak_year": -220,
+   "year_cell": "{{Date table sorting|-220}}"
+  },
+  {
+   "title": "Dutch Empire",
+   "peak_mkm2": 2.1,
+   "peak_year": 1938,
+   "year_cell": "{{Date table sorting|1938}}"
+  },
+  {
+   "title": "First French Empire",
+   "peak_mkm2": 2.1,
+   "peak_year": 1813,
+   "year_cell": "{{Date table sorting|1813}}"
+  },
+  {
+   "title": "Kievan Rus'",
+   "peak_mkm2": 2.1,
+   "peak_year": 1000,
+   "year_cell": "{{Date table sorting|1000}}"
+  },
+  {
+   "title": "Mamluk Sultanate",
+   "peak_mkm2": 2.1,
+   "peak_year": 1300,
+   "year_cell": "{{Date table sorting|1300}} or {{Date table sorting|1400}}"
+  },
+  {
+   "title": "Southern Song dynasty",
+   "peak_mkm2": 2.1,
+   "peak_year": 1127,
+   "year_cell": "{{Date table sorting|1127}}"
+  },
+  {
+   "title": "Third Portuguese Empire",
+   "peak_mkm2": 2.1,
+   "peak_year": 1900,
+   "year_cell": "{{Date table sorting|1900}}"
+  },
+  {
+   "title": "Almohad Caliphate",
+   "peak_mkm2": 2.0,
+   "peak_year": 1200,
+   "year_cell": "{{Date table sorting|1200}} or {{Date table sorting|1150}}"
+  },
+  {
+   "title": "Cao Wei",
+   "peak_mkm2": 2.0,
+   "peak_year": 263,
+   "year_cell": "{{Date table sorting|263}}"
+  },
+  {
+   "title": "Former Qin",
+   "peak_mkm2": 2.0,
+   "peak_year": 376,
+   "year_cell": "{{Date table sorting|376}}"
+  },
+  {
+   "title": "Former Zhao",
+   "peak_mkm2": 2.0,
+   "peak_year": 316,
+   "year_cell": "{{Date table sorting|316}}"
+  },
+  {
+   "title": "Ghurid dynasty",
+   "peak_mkm2": 2.0,
+   "peak_year": 1200,
+   "year_cell": "{{Date table sorting|1200}}"
+  },
+  {
+   "title": "Inca Empire",
+   "peak_mkm2": 2.0,
+   "peak_year": 1527,
+   "year_cell": "{{Date table sorting|1527}}"
+  },
+  {
+   "title": "Kushan Empire",
+   "peak_mkm2": 2.0,
+   "peak_year": 200,
+   "year_cell": "{{Date table sorting|200}}"
+  },
+  {
+   "title": "Liu Song dynasty",
+   "peak_mkm2": 2.0,
+   "peak_year": 450,
+   "year_cell": "{{Date table sorting|450}}"
+  },
+  {
+   "title": "Northern Wei",
+   "peak_mkm2": 2.0,
+   "peak_year": 450,
+   "year_cell": "{{Date table sorting|450}}"
+  },
+  {
+   "title": "Western Roman Empire",
+   "peak_mkm2": 2.0,
+   "peak_year": 395,
+   "year_cell": "{{Date table sorting|395}}"
+  },
+  {
+   "title": "Ayyubid dynasty",
+   "peak_mkm2": 1.7,
+   "peak_year": 1200,
+   "year_cell": "{{Date table sorting|1200}} or {{Date table sorting|1190}}"
+  },
+  {
+   "title": "Gupta Empire",
+   "peak_mkm2": 1.7,
+   "peak_year": 440,
+   "year_cell": "{{Date table sorting|440}} or {{Date table sorting|400}}"
+  },
+  {
+   "title": "Hephthalite Empire",
+   "peak_mkm2": 1.7,
+   "peak_year": 500,
+   "year_cell": "{{Date table sorting|500}} or {{Date table sorting|470}}"
+  },
+  {
+   "title": "Buyid dynasty",
+   "peak_mkm2": 1.6,
+   "peak_year": 980,
+   "year_cell": "{{Date table sorting|980}}"
+  },
+  {
+   "title": "Eastern Wu",
+   "peak_mkm2": 1.5,
+   "peak_year": 221,
+   "year_cell": "{{Date table sorting|221}}"
+  },
+  {
+   "title": "Northern Qi",
+   "peak_mkm2": 1.5,
+   "peak_year": 557,
+   "year_cell": "{{Date table sorting|557}}"
+  },
+  {
+   "title": "Xiongnu",
+   "peak_mkm2": 1.5,
+   "peak_year": 60,
+   "year_cell": "{{Date table sorting|60}}"
+  },
+  {
+   "title": "Northern Zhou",
+   "peak_mkm2": 1.5,
+   "peak_year": 577,
+   "year_cell": "{{Date table sorting|577}}"
+  },
+  {
+   "title": "Neo-Assyrian Empire",
+   "peak_mkm2": 1.4,
+   "peak_year": -670,
+   "year_cell": "{{Date table sorting|-670}}"
+  },
+  {
+   "title": "Maurya Empire",
+   "peak_mkm2": 1.3,
+   "peak_year": -210,
+   "year_cell": "{{Date table sorting|-210}}"
+  },
+  {
+   "title": "Liang dynasty",
+   "peak_mkm2": 1.3,
+   "peak_year": 502,
+   "year_cell": "{{Date table sorting|502}}, {{Date table sorting|549}}, or {{Date table sorting|"
+  },
+  {
+   "title": "Kingdom of Aksum",
+   "peak_mkm2": 1.25,
+   "peak_year": 350,
+   "year_cell": "{{Date table sorting|350}}"
+  },
+  {
+   "title": "Shang dynasty",
+   "peak_mkm2": 1.25,
+   "peak_year": -1122,
+   "year_cell": "{{Date table sorting|-1122}}"
+  },
+  {
+   "title": "Francia",
+   "peak_mkm2": 1.2,
+   "peak_year": 814,
+   "year_cell": "{{Date table sorting|814}}"
+  },
+  {
+   "title": "Srivijaya",
+   "peak_mkm2": 1.2,
+   "peak_year": 1200,
+   "year_cell": "{{Date table sorting|1200}}"
+  },
+  {
+   "title": "Indo-Greek Kingdom",
+   "peak_mkm2": 1.1,
+   "peak_year": -150,
+   "year_cell": "{{Date table sorting|-150}}"
+  },
+  {
+   "title": "Mali Empire",
+   "peak_mkm2": 1.1,
+   "peak_year": 1380,
+   "year_cell": "{{Date table sorting|1380}}"
+  },
+  {
+   "title": "Polish–Lithuanian Commonwealth",
+   "peak_mkm2": 1.1,
+   "peak_year": 1480,
+   "year_cell": "{{Date table sorting|1480}} or {{Date table sorting|1650}}"
+  },
+  {
+   "title": "Almoravid dynasty",
+   "peak_mkm2": 1.0,
+   "peak_year": 1120,
+   "year_cell": "{{Date table sorting|1120}}"
+  },
+  {
+   "title": "Pushyabhuti dynasty",
+   "peak_mkm2": 1.0,
+   "peak_year": 625,
+   "year_cell": "{{Date table sorting|625}} or {{Date table sorting|648}}"
+  },
+  {
+   "title": "Gurjara-Pratihara dynasty",
+   "peak_mkm2": 1.0,
+   "peak_year": 860,
+   "year_cell": "{{Date table sorting|860}}"
+  },
+  {
+   "title": "Holy Roman Empire",
+   "peak_mkm2": 1.0,
+   "peak_year": 1050,
+   "year_cell": "{{Date table sorting|1050}}"
+  },
+  {
+   "title": "Khazar Khanate",
+   "peak_mkm2": 1.0,
+   "peak_year": 900,
+   "year_cell": "{{Date table sorting|900}} or {{Date table sorting|850}}"
+  },
+  {
+   "title": "Khmer Empire",
+   "peak_mkm2": 1.0,
+   "peak_year": 1290,
+   "year_cell": "{{Date table sorting|1290}}"
+  },
+  {
+   "title": "New Kingdom of Egypt",
+   "peak_mkm2": 1.0,
+   "peak_year": -1450,
+   "year_cell": "nowrap|{{Date table sorting|-1450}} or {{Date table sorting|-1300}}"
+  },
+  {
+   "title": "Ptolemaic Kingdom",
+   "peak_mkm2": 1.0,
+   "peak_year": -301,
+   "year_cell": "{{Date table sorting|-301}}"
+  },
+  {
+   "title": "Qara Khitai",
+   "peak_mkm2": 1.0,
+   "peak_year": 1130,
+   "year_cell": "{{Date table sorting|1130}} or {{Date table sorting|1210}}"
+  },
+  {
+   "title": "Scythia",
+   "peak_mkm2": 1.0,
+   "peak_year": -400,
+   "year_cell": "{{Date table sorting|-400}}"
+  },
+  {
+   "title": "Shu Han",
+   "peak_mkm2": 1.0,
+   "peak_year": 221,
+   "year_cell": "{{Date table sorting|221}}"
+  },
+  {
+   "title": "Tahirid dynasty",
+   "peak_mkm2": 1.0,
+   "peak_year": 800,
+   "year_cell": "{{Date table sorting|800}}"
+  },
+  {
+   "title": "Western Xia",
+   "peak_mkm2": 1.0,
+   "peak_year": 1100,
+   "year_cell": "{{Date table sorting|1100}}"
+  },
+  {
+   "title": "Swedish Empire",
+   "peak_mkm2": 0.99,
+   "peak_year": 1700,
+   "year_cell": "{{Date table sorting|1700}}"
+  },
+  {
+   "title": "Kingdom of Armenia (antiquity)",
+   "peak_mkm2": 0.9,
+   "peak_year": -70,
+   "year_cell": "{{Date table sorting|-70}}"
+  },
+  {
+   "title": "Akkadian Empire",
+   "peak_mkm2": 0.8,
+   "peak_year": -2250,
+   "year_cell": "{{Date table sorting|-2250}}"
+  },
+  {
+   "title": "Avar Khaganate",
+   "peak_mkm2": 0.8,
+   "peak_year": 600,
+   "year_cell": "{{Date table sorting|600}}"
+  },
+  {
+   "title": "Chu (state)",
+   "peak_mkm2": 0.8,
+   "peak_year": -300,
+   "year_cell": "{{Date table sorting|-300}}"
+  },
+  {
+   "title": "Songhai Empire",
+   "peak_mkm2": 0.8,
+   "peak_year": 1550,
+   "year_cell": "{{Date table sorting|1550}}"
+  },
+  {
+   "title": "Hyksos",
+   "peak_mkm2": 0.65,
+   "peak_year": -1650,
+   "year_cell": "{{Date table sorting|-1650}}"
+  },
+  {
+   "title": "Twenty-sixth Dynasty of Egypt",
+   "peak_mkm2": 0.65,
+   "peak_year": -550,
+   "year_cell": "{{Date table sorting|-550}}"
+  },
+  {
+   "title": "Rozvi Empire",
+   "peak_mkm2": 0.624,
+   "peak_year": 1700,
+   "year_cell": "{{Date table sorting|1700}}"
+  },
+  {
+   "title": "Caliphate of Córdoba",
+   "peak_mkm2": 0.6,
+   "peak_year": 1000,
+   "year_cell": "{{Date table sorting|1000}}"
+  },
+  {
+   "title": "First Portuguese Empire",
+   "peak_mkm2": 0.6,
+   "peak_year": 1580,
+   "year_cell": "{{Date table sorting|1580}}"
+  },
+  {
+   "title": "Visigothic Kingdom",
+   "peak_mkm2": 0.6,
+   "peak_year": 580,
+   "year_cell": "{{Date table sorting|580}}"
+  },
+  {
+   "title": "Zhou dynasty",
+   "peak_mkm2": 0.55,
+   "peak_year": -1100,
+   "year_cell": "{{Date table sorting|-1100}}"
+  },
+  {
+   "title": "Emirate of Córdoba",
+   "peak_mkm2": 0.5,
+   "peak_year": 756,
+   "year_cell": "{{Date table sorting|756}}"
+  },
+  {
+   "title": "Kosala",
+   "peak_mkm2": 0.5,
+   "peak_year": -543,
+   "year_cell": "{{Date table sorting|-543}}"
+  },
+  {
+   "title": "Lydia",
+   "peak_mkm2": 0.5,
+   "peak_year": -585,
+   "year_cell": "{{Date table sorting|-585}}"
+  },
+  {
+   "title": "Magadha (Mahajanapada)",
+   "peak_mkm2": 0.5,
+   "peak_year": -510,
+   "year_cell": "{{Date table sorting|-510}}"
+  },
+  {
+   "title": "Middle Kingdom of Egypt",
+   "peak_mkm2": 0.5,
+   "peak_year": -1850,
+   "year_cell": "{{Date table sorting|-1850}}"
+  },
+  {
+   "title": "Neo-Babylonian Empire",
+   "peak_mkm2": 0.5,
+   "peak_year": -562,
+   "year_cell": "{{Date table sorting|-562}}"
+  },
+  {
+   "title": "Satavahana dynasty",
+   "peak_mkm2": 0.5,
+   "peak_year": 150,
+   "year_cell": "{{Date table sorting|150}}"
+  },
+  {
+   "title": "Twenty-fifth Dynasty of Egypt",
+   "peak_mkm2": 0.5,
+   "peak_year": -715,
+   "year_cell": "{{Date table sorting|-715}}"
+  },
+  {
+   "title": "Western Satraps",
+   "peak_mkm2": 0.5,
+   "peak_year": 100,
+   "year_cell": "{{Date table sorting|100}}"
+  },
+  {
+   "title": "New Hittite Kingdom",
+   "peak_mkm2": 0.45,
+   "peak_year": -1250,
+   "year_cell": "{{Date table sorting|-1250}}{{Spaced en dash}}{{Date table sorting|-1220}}"
+  },
+  {
+   "title": "Xia dynasty",
+   "peak_mkm2": 0.45,
+   "peak_year": -1800,
+   "year_cell": "{{Date table sorting|-1800}}"
+  },
+  {
+   "title": "First Bulgarian Empire",
+   "peak_mkm2": 0.4,
+   "peak_year": 850,
+   "year_cell": "{{Date table sorting|850}}{{Request quotation|date=September 2022}}"
+  },
+  {
+   "title": "Kingdom of France (Middle Ages)",
+   "peak_mkm2": 0.4,
+   "peak_year": 1250,
+   "year_cell": "{{Date table sorting|1250}}"
+  },
+  {
+   "title": "Middle Assyrian Empire",
+   "peak_mkm2": 0.4,
+   "peak_year": -1080,
+   "year_cell": "{{Date table sorting|-1080}}"
+  },
+  {
+   "title": "Old Kingdom of Egypt",
+   "peak_mkm2": 0.4,
+   "peak_year": -2400,
+   "year_cell": "{{Date table sorting|-2400}}"
+  },
+  {
+   "title": "Sokoto Caliphate",
+   "peak_mkm2": 0.4,
+   "peak_year": 1804,
+   "year_cell": "{{Date table sorting|1804}}"
+  },
+  {
+   "title": "Latin Empire",
+   "peak_mkm2": 0.35,
+   "peak_year": 1204,
+   "year_cell": "{{Date table sorting|1204}}"
+  },
+  {
+   "title": "Ancient Carthage",
+   "peak_mkm2": 0.3,
+   "peak_year": -220,
+   "year_cell": "{{Date table sorting|-220}}"
+  },
+  {
+   "title": "Indus Valley Civilisation",
+   "peak_mkm2": 0.3,
+   "peak_year": -1800,
+   "year_cell": "{{Date table sorting|-1800}}"
+  },
+  {
+   "title": "Mitanni",
+   "peak_mkm2": 0.3,
+   "peak_year": -1450,
+   "year_cell": "{{Date table sorting|-1450}}{{Spaced en dash}}{{Date table sorting|-1375}}"
+  },
+  {
+   "title": "Ashanti Empire",
+   "peak_mkm2": 0.25,
+   "peak_year": 1820,
+   "year_cell": "{{Date table sorting|1820}}"
+  },
+  {
+   "title": "First Babylonian Empire",
+   "peak_mkm2": 0.25,
+   "peak_year": -1690,
+   "year_cell": "{{Date table sorting|-1690}}"
+  },
+  {
+   "title": "Aztec Empire",
+   "peak_mkm2": 0.22,
+   "peak_year": 1520,
+   "year_cell": "{{Date table sorting|1520}}"
+  },
+  {
+   "title": "Elamite Empire",
+   "peak_mkm2": 0.2,
+   "peak_year": -1160,
+   "year_cell": "{{Date table sorting|-1160}}"
+  },
+  {
+   "title": "Phrygia",
+   "peak_mkm2": 0.2,
+   "peak_year": -750,
+   "year_cell": "{{Date table sorting|-750}}"
+  },
+  {
+   "title": "Second Dynasty of Isin",
+   "peak_mkm2": 0.2,
+   "peak_year": -1130,
+   "year_cell": "{{Date table sorting|-1130}}"
+  },
+  {
+   "title": "Urartu",
+   "peak_mkm2": 0.2,
+   "peak_year": -800,
+   "year_cell": "{{Date table sorting|-800}}"
+  },
+  {
+   "title": "Eastern Zhou",
+   "peak_mkm2": 0.15,
+   "peak_year": -770,
+   "year_cell": "{{Date table sorting|-770}}"
+  },
+  {
+   "title": "Middle Hittite Kingdom",
+   "peak_mkm2": 0.15,
+   "peak_year": -1450,
+   "year_cell": "{{Date table sorting|-1450}}"
+  },
+  {
+   "title": "Old Assyrian Empire",
+   "peak_mkm2": 0.15,
+   "peak_year": -1730,
+   "year_cell": "{{Date table sorting|-1730}}"
+  },
+  {
+   "title": "Old Hittite Empire",
+   "peak_mkm2": 0.15,
+   "peak_year": -1530,
+   "year_cell": "{{Date table sorting|-1530}}"
+  },
+  {
+   "title": "Oyo Empire",
+   "peak_mkm2": 0.15,
+   "peak_year": 1680,
+   "year_cell": "{{Date table sorting|1680}}"
+  },
+  {
+   "title": "Larsa",
+   "peak_mkm2": 0.1,
+   "peak_year": -1750,
+   "year_cell": "{{Date table sorting|-1750}}{{Spaced en dash}}{{Date table sorting|-1700}}"
+  },
+  {
+   "title": "Neo-Sumerian Empire",
+   "peak_mkm2": 0.1,
+   "peak_year": -2000,
+   "year_cell": "{{Date table sorting|-2000}}"
+  },
+  {
+   "title": "Tarascan empire",
+   "peak_mkm2": 0.075,
+   "peak_year": 1450,
+   "year_cell": "{{Date table sorting|1450}}"
+  },
+  {
+   "title": "Lagash",
+   "peak_mkm2": 0.05,
+   "peak_year": -2400,
+   "year_cell": "{{Date table sorting|-2400}}"
+  },
+  {
+   "title": "Sumer",
+   "peak_mkm2": 0.05,
+   "peak_year": -2400,
+   "year_cell": "{{Date table sorting|-2400}}"
+  }
+ ]
+}
