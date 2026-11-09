@@ -1,0 +1,1790 @@
+{
+ "reviewer": "europe",
+ "findings": [
+  {
+   "realm": "French Fifth Republic",
+   "years": [
+    1962,
+    2023
+   ],
+   "severity": "error",
+   "issue": "Coordinator lead: outline keeps independent Algeria (1962), the Comoros (1975) and Djibouti (1977) until 2023, overlapping the Algerian state (217 grid cells), plus a Berlin sector to 2023. Fixed with cut boxes; overseas departments and Mayotte kept. Algiers 1963 now Algeria only.",
+   "fixed": true,
+   "source": {
+    "title": "Évian Accords (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/%C3%89vian_Accords"
+   }
+  },
+  {
+   "realm": "Republic of Cabo Verde",
+   "years": [
+    1975,
+    2024
+   ],
+   "severity": "warning",
+   "issue": "NOT MINE (Africa): a 'Republic of Cabo Verde' polygon lies over the Comoros and Mayotte (Moroni 1980, Mayotte 2000 read Cabo Verde).",
+   "fixed": false,
+   "source": {
+    "title": "Évian Accords (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/%C3%89vian_Accords"
+   }
+  },
+  {
+   "realm": "French Fourth Republic",
+   "years": [
+    1945,
+    1958
+   ],
+   "severity": "error",
+   "issue": "A French polygon covers all of Berlin incl. East Berlin (GDR capital from 1949). Cut; Berlin now shows the GDR (v4 lead).",
+   "fixed": true,
+   "source": {
+    "title": "East Berlin (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/East_Berlin"
+   }
+  },
+  {
+   "realm": "Kingdom of England",
+   "years": [
+    1436,
+    1578
+   ],
+   "severity": "error",
+   "issue": "Paris English after April 1436; Normandy and Gascony English to 1458 (lost 1450/1453); Calais English to 1578 (French from Jan 1558). Cropped/cut. Calais is blank 1558–78 because France's outline does not reach it until 1579.",
+   "fixed": true,
+   "source": {
+    "title": "Siege of Calais (1558) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Siege_of_Calais_(1558)"
+   }
+  },
+  {
+   "realm": "Kingdom of England",
+   "years": [
+    1609,
+    1707
+   ],
+   "severity": "error",
+   "issue": "Edinburgh labelled Kingdom of England 1609–1707; Scotland was a separate kingdom in personal union. Relabelled 'Kingdoms of England, Scotland and Ireland'; 1708 relabelled Kingdom of Great Britain.",
+   "fixed": true,
+   "source": {
+    "title": "Union of the Crowns (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Union_of_the_Crowns"
+   }
+  },
+  {
+   "realm": "First Hellenic Republic",
+   "years": [
+    1832,
+    1940
+   ],
+   "severity": "error",
+   "issue": "Greece labelled a republic through 1940 (kingdom 1832–1924, 1935–73). Relabelled.",
+   "fixed": true,
+   "source": {
+    "title": "Kingdom of Greece (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Kingdom_of_Greece"
+   }
+  },
+  {
+   "realm": "Serbs",
+   "years": [
+    1805,
+    1918
+   ],
+   "severity": "error",
+   "issue": "The Serbian state is drawn as 'Serbs' (Belgrade 1815–1914). Relabelled Revolutionary Serbia / Principality / Kingdom of Serbia.",
+   "fixed": true,
+   "source": {
+    "title": "Principality of Serbia (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Principality_of_Serbia"
+   }
+  },
+  {
+   "realm": "Serbian Empire",
+   "years": [
+    1372,
+    1458
+   ],
+   "severity": "warning",
+   "issue": "Serbian Empire label used to 1458 (empire ended 1371). Relabelled Moravian Serbia / Serbian Despotate.",
+   "fixed": true,
+   "source": {
+    "title": "Moravian Serbia (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Moravian_Serbia"
+   }
+  },
+  {
+   "realm": "Novgorod Republic",
+   "years": [
+    1478,
+    1481
+   ],
+   "severity": "error",
+   "issue": "Novgorod drawn independent to 1481; annexed by Moscow 1478 (also v4 lead). Relabelled to Moscow.",
+   "fixed": true,
+   "source": {
+    "title": "Novgorod Republic (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Novgorod_Republic"
+   }
+  },
+  {
+   "realm": "Pskov Republic",
+   "years": [
+    1510,
+    1511
+   ],
+   "severity": "warning",
+   "issue": "Pskov drawn to 1511; annexed 1510. Relabelled to Moscow.",
+   "fixed": true,
+   "source": {
+    "title": "Pskov Republic (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Pskov_Republic"
+   }
+  },
+  {
+   "realm": "Habsburg Monarchy",
+   "years": [
+    1794,
+    1810
+   ],
+   "severity": "error",
+   "issue": "Warsaw drawn Austrian 1794–1810 (Prussian 1795–1806, Duchy of Warsaw 1807–13). Habsburg/Austrian outlines cut west of the Bug north of 52°N (Siedlce stays Austrian); Warsaw now reads Prussia 1795–1806.",
+   "fixed": true,
+   "source": {
+    "title": "Partitions of Poland (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Partitions_of_Poland"
+   }
+  },
+  {
+   "realm": "County of Ribagorza",
+   "years": [
+    866,
+    1084
+   ],
+   "severity": "error",
+   "issue": "Pamplona drawn as 'County of Ribagorza' (polygon spans 3.2°W–0.8°W, Ribagorza is ~0.5°E). Relabelled Kingdom of Pamplona.",
+   "fixed": true,
+   "source": {
+    "title": "Kingdom of Navarre (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Kingdom_of_Navarre"
+   }
+  },
+  {
+   "realm": "County of Foix",
+   "years": [
+    1482,
+    1511
+   ],
+   "severity": "error",
+   "issue": "Pamplona/Upper Navarre drawn as County of Foix in the French group; Navarre was an independent kingdom. Relabelled Kingdom of Navarre.",
+   "fixed": true,
+   "source": {
+    "title": "Kingdom of Navarre (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Kingdom_of_Navarre"
+   }
+  },
+  {
+   "realm": "Almoravid Dynasty",
+   "years": [
+    1148,
+    1151
+   ],
+   "severity": "error",
+   "issue": "Almoravids drawn over Morocco and al-Andalus (incl. Lisbon, overlapping Portugal) after their 1147 fall. Cropped to the Balearics.",
+   "fixed": true,
+   "source": {
+    "title": "Almoravid dynasty (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Almoravid_dynasty"
+   }
+  },
+  {
+   "realm": "Almohad Caliphate",
+   "years": [
+    1229,
+    1249
+   ],
+   "severity": "error",
+   "issue": "Almohads drawn in Iberia (Córdoba 1235, Seville 1249) after leaving Spain in Oct 1228. Cropped south of 36°N.",
+   "fixed": true,
+   "source": {
+    "title": "Almohad Caliphate (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Almohad_Caliphate"
+   }
+  },
+  {
+   "realm": "Taifa of Valencia",
+   "years": [
+    1239,
+    1249
+   ],
+   "severity": "error",
+   "issue": "Valencia drawn Muslim to 1249; taken 9 Oct 1238. Relabelled Crown of Aragon.",
+   "fixed": true,
+   "source": {
+    "title": "Conquest of Valencia (1238) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Conquest_of_Valencia_(1238)"
+   }
+  },
+  {
+   "realm": "Viking settlements",
+   "years": [
+    1171,
+    1325
+   ],
+   "severity": "error",
+   "issue": "Norse Dublin (and Cork vicinity) drawn to 1325 overlapping Anglo-Norman Ireland; Hebrides after 1266. Cropped.",
+   "fixed": true,
+   "source": {
+    "title": "Kingdom of Dublin (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Kingdom_of_Dublin"
+   }
+  },
+  {
+   "realm": "Swedish Empire",
+   "years": [
+    1722,
+    1814
+   ],
+   "severity": "warning",
+   "issue": "Swedish Empire label used to 1814 (era ends 1721). Relabelled Kingdom of Sweden.",
+   "fixed": true,
+   "source": {
+    "title": "Swedish Empire (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Swedish_Empire"
+   }
+  },
+  {
+   "realm": "Denmark-Norway",
+   "years": [
+    1815,
+    1944
+   ],
+   "severity": "error",
+   "issue": "Denmark-Norway label used to 1940 (union ended 1814); also overlaps the Kingdom of Iceland 1918–21. Relabelled Denmark; Iceland cropped 1919–21.",
+   "fixed": true,
+   "source": {
+    "title": "Treaty of Kiel (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_Kiel"
+   }
+  },
+  {
+   "realm": "Principality of Bulgaria",
+   "years": [
+    1908,
+    1944
+   ],
+   "severity": "warning",
+   "issue": "Labelled principality after the 1908 independence/tsardom. Relabelled Kingdom of Bulgaria.",
+   "fixed": true,
+   "source": {
+    "title": "Kingdom of Bulgaria (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Kingdom_of_Bulgaria"
+   }
+  },
+  {
+   "realm": "United Principalities of Moldavia and Wallachia",
+   "years": [
+    1881,
+    1916
+   ],
+   "severity": "warning",
+   "issue": "Name kept after Romania became a kingdom in 1881. Relabelled.",
+   "fixed": true,
+   "source": {
+    "title": "Kingdom of Romania (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Kingdom_of_Romania"
+   }
+  },
+  {
+   "realm": "Hungarian Republic",
+   "years": [
+    1920,
+    1943
+   ],
+   "severity": "warning",
+   "issue": "Interwar Hungary labelled a republic; it was a kingdom (regency) 1920–46. Relabelled.",
+   "fixed": true,
+   "source": {
+    "title": "Kingdom of Hungary (1920–1946) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Kingdom_of_Hungary_(1920%E2%80%931946)"
+   }
+  },
+  {
+   "realm": "Kingdom of Lithuania",
+   "years": [
+    1919,
+    1939
+   ],
+   "severity": "error",
+   "issue": "Interwar Lithuania labelled a kingdom and drawn over Grodno (Polish 1921–39). Relabelled Republic of Lithuania; cropped south of 53.85°N (Grodno now shows no state).",
+   "fixed": true,
+   "source": {
+    "title": "History of Lithuania (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/History_of_Lithuania"
+   }
+  },
+  {
+   "realm": "Free City of Danzig",
+   "years": [
+    1919,
+    1939
+   ],
+   "severity": "error",
+   "issue": "Danzig's polygon includes the Memel Territory (overlaps Lithuania 1923–39). Cropped to Danzig.",
+   "fixed": true,
+   "source": {
+    "title": "Klaipėda Region (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Klaip%C4%97da_Region"
+   }
+  },
+  {
+   "realm": "Kingdom of Monaco",
+   "years": [
+    1642,
+    2024
+   ],
+   "severity": "error",
+   "issue": "Monaco polygons (94–164 km², the modern one centred on Nice) cover Nice 1645–2024. Cropped to Monaco; 'Kingdom' relabelled Principality.",
+   "fixed": true,
+   "source": {
+    "title": "History of Monaco (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/History_of_Monaco"
+   }
+  },
+  {
+   "realm": "Duchy of Burgundy",
+   "years": [
+    1478,
+    1481
+   ],
+   "severity": "warning",
+   "issue": "Duchy and Franche-Comté drawn Burgundian after the 1477 French seizure. Cropped to the Low Countries (Dijon blank 1478–81 until France's outline covers it).",
+   "fixed": true,
+   "source": {
+    "title": "War of the Burgundian Succession (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/War_of_the_Burgundian_Succession"
+   }
+  },
+  {
+   "realm": "Kingdom of Gwynedd",
+   "years": [
+    1283,
+    1284
+   ],
+   "severity": "warning",
+   "issue": "Gwynedd drawn to 1284; conquered 1283. Relabelled England.",
+   "fixed": true,
+   "source": {
+    "title": "Conquest of Wales by Edward I (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Conquest_of_Wales_by_Edward_I"
+   }
+  },
+  {
+   "realm": "Republic of Genoa",
+   "years": [
+    1769,
+    1797
+   ],
+   "severity": "error",
+   "issue": "Genoa still drawn over Corsica (overlapping France) after the 1768 cession. Cropped to Liguria.",
+   "fixed": true,
+   "source": {
+    "title": "Treaty of Versailles (1768) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_Versailles_(1768)"
+   }
+  },
+  {
+   "realm": "New Caledonia",
+   "years": [
+    1856,
+    1859
+   ],
+   "severity": "warning",
+   "issue": "Coordinator lead: bundle of French colonies named New Caledonia, incl. a 66,000 km² polygon over Cochinchina in 1859 (Saigon reads New Caledonia). Relabelled French colonies; 1859 cropped south of the equator (Saigon blank in 1859).",
+   "fixed": true,
+   "source": {
+    "title": "Treaty of Saigon (1862) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_Saigon_(1862)"
+   }
+  },
+  {
+   "realm": "Latin Empire",
+   "years": [
+    1261,
+    1278
+   ],
+   "severity": "error",
+   "issue": "v3 lead: Latin Empire holds Constantinople to 1278 (retaken 25 July 1261). Clipped to 1206–1260; with v3's Nicaea→Byzantine relabel Constantinople reads Byzantine.",
+   "fixed": true,
+   "source": {
+    "title": "Reconquest of Constantinople (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Reconquest_of_Constantinople"
+   }
+  },
+  {
+   "realm": "Visigothic Kingdom",
+   "years": [
+    712,
+    717
+   ],
+   "severity": "error",
+   "issue": "v3 lead: all Iberia Visigothic to 717. Relabelled Umayyad 712–717 (whole polygon, so Septimania is Umayyad a few years early).",
+   "fixed": true,
+   "source": {
+    "title": "Muslim conquest of the Iberian Peninsula (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Muslim_conquest_of_the_Iberian_Peninsula"
+   }
+  },
+  {
+   "realm": "Crown of Castile",
+   "years": [
+    1487,
+    1491
+   ],
+   "severity": "warning",
+   "issue": "The emirate's 1487–91 polygon stops at 3.6°W, so Castile covered western Granada city before the January 1492 surrender. Castile cut from the city; Granada now reads the emirate.",
+   "fixed": true,
+   "source": {
+    "title": "Granada War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Granada_War"
+   }
+  },
+  {
+   "realm": "Kingdom of England",
+   "years": [
+    1440,
+    1449
+   ],
+   "severity": "warning",
+   "issue": "England's 1440–58 Normandy polygon ends at 0.9°E, leaving Rouen (English 1419–49) French. Needs geometry.",
+   "fixed": false,
+   "source": {
+    "title": "Siege of Rouen (1418–1419) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Siege_of_Rouen_(1418%E2%80%931419)"
+   }
+  },
+  {
+   "realm": "Kingdom of Hungary",
+   "years": [
+    1541,
+    1546
+   ],
+   "severity": "warning",
+   "issue": "Buda stays in the Kingdom of Hungary until 1546 (Ottoman from 21 Aug 1541). Existing note only; a relabel would overstate Ottoman extent east of the Tisza.",
+   "fixed": false,
+   "source": {
+    "title": "Siege of Buda (1541) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Siege_of_Buda_(1541)"
+   }
+  },
+  {
+   "realm": "Almoravid Dynasty",
+   "years": [
+    1119,
+    1129
+   ],
+   "severity": "warning",
+   "issue": "Zaragoza drawn Almoravid 1119–29; Aragon took it in 1118. Cut around Zaragoza (Lleida/Fraga kept); the city now shows no state until Aragon's outline reaches it in 1130.",
+   "fixed": true,
+   "source": {
+    "title": "Taifa of Zaragoza (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Taifa_of_Zaragoza"
+   }
+  },
+  {
+   "realm": "Kingdom of Romania",
+   "years": [
+    1940,
+    1944
+   ],
+   "severity": "error",
+   "issue": "Cluj drawn Romanian 1940–44; the Second Vienna Award (Aug 1940) gave northern Transylvania to Hungary. Needs geometry.",
+   "fixed": false,
+   "source": {
+    "title": "Second Vienna Award (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Second_Vienna_Award"
+   }
+  },
+  {
+   "realm": "Nazi Germany",
+   "years": [
+    1939,
+    1944
+   ],
+   "severity": "error",
+   "issue": "Košice drawn German 1939–44; it was Hungarian from the First Vienna Award (Nov 1938). Needs geometry.",
+   "fixed": false,
+   "source": {
+    "title": "First Vienna Award (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/First_Vienna_Award"
+   }
+  },
+  {
+   "realm": "Austria-Hungary",
+   "years": [
+    1918,
+    1918
+   ],
+   "severity": "error",
+   "issue": "Austria-Hungary drawn over Iași (Romania's wartime capital, never occupied) and Bessarabia (joined Romania April 1918). Cut; the area now shows no state in 1918 because the map has no Romania for 1917–18.",
+   "fixed": true,
+   "source": {
+    "title": "Kingdom of Romania (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Kingdom_of_Romania"
+   }
+  },
+  {
+   "realm": "Socialist Federal Republic of Yugoslavia",
+   "years": [
+    1946,
+    1991
+   ],
+   "severity": "error",
+   "issue": "Trieste drawn Yugoslav 1946–91; it was the Free Territory of Trieste (Zone A Allied-run) and Italian from 1954. Cut around the city; the map has no Italian shape there, and the near-point test still finds Yugoslavia within 12 km, so no claim added.",
+   "fixed": true,
+   "source": {
+    "title": "Free Territory of Trieste (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Free_Territory_of_Trieste"
+   }
+  },
+  {
+   "realm": "Yugoslavia",
+   "years": [
+    1924,
+    1940
+   ],
+   "severity": "error",
+   "issue": "Fiume (Rijeka) drawn Yugoslav; Italy annexed it in January 1924 (Sušak, east of the Rječina, stayed Yugoslav). Cut west of the Rječina; no Italian shape there.",
+   "fixed": true,
+   "source": {
+    "title": "Treaty of Rome (1924) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_Rome_(1924)"
+   }
+  },
+  {
+   "realm": "Weimar Republic",
+   "years": [
+    1920,
+    1933
+   ],
+   "severity": "error",
+   "issue": "Northern Schleswig (Sønderborg) drawn German after Zone I voted for Denmark (transfer 15 June 1920). Cut; Sønderborg now reads Denmark, Flensburg stays German.",
+   "fixed": true,
+   "source": {
+    "title": "1920 Schleswig plebiscites (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/1920_Schleswig_plebiscites"
+   }
+  },
+  {
+   "realm": "Brandenburg-Prussia",
+   "years": [
+    1648,
+    1719
+   ],
+   "severity": "warning",
+   "issue": "Stettin drawn Brandenburg; it was Swedish Pomerania until the 1720 Treaty of Stockholm. Cut; Stettin reads Swedish where Sweden's outline covers it (e.g. 1660), otherwise no state.",
+   "fixed": true,
+   "source": {
+    "title": "Treaties of Stockholm (Great Northern War) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Treaties_of_Stockholm_(Great_Northern_War)"
+   }
+  },
+  {
+   "realm": "Grand Duchy of Berg",
+   "years": [
+    1814,
+    1814
+   ],
+   "severity": "error",
+   "issue": "v4 lead: Paris and Brussels drawn as the Grand Duchy of Berg in 1814 (a ~96,000 km² France-shaped polygon). Cropped west of 8.5°E and relabelled Bourbon Kingdom of France. Berg's other polygons (1806–27, mostly 8–12°E) look misplaced (Düsseldorf reads Duchy of Nassau) and run past Berg's 1813 end; not changed.",
+   "fixed": true,
+   "source": {
+    "title": "Grand Duchy of Berg (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Grand_Duchy_of_Berg"
+   }
+  },
+  {
+   "realm": "Union of Soviet Socialist Republics",
+   "years": [
+    1945,
+    1990
+   ],
+   "severity": "error",
+   "issue": "NOT MINE: USSR drawn over Poland 1945–52 (Warsaw, Gdańsk, Wrocław; Republic of Poland begins only 1953), Czechoslovakia 1945–46 and 1969–90 (Prague), and Vienna, Budapest, Bucharest, Sofia 1945–46; Riga/Tallinn still Soviet in 1991.",
+   "fixed": false,
+   "source": {
+    "title": "Polish People's Republic (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Polish_People's_Republic"
+   }
+  },
+  {
+   "realm": "Union of Soviet Socialist Republics",
+   "years": [
+    1969,
+    1990
+   ],
+   "severity": "error",
+   "issue": "NOT MINE: Prague shows USSR 1969–90 although the Czechoslovak Socialist Republic existed to 1990 (Czechoslovakia gap 1969–90 in the gaps report).",
+   "fixed": false,
+   "source": {
+    "title": "Czechoslovak Socialist Republic (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Czechoslovak_Socialist_Republic"
+   }
+  },
+  {
+   "realm": "Ottoman Empire",
+   "years": [
+    1850,
+    1850
+   ],
+   "severity": "warning",
+   "issue": "NOT MINE: a stray Ottoman polygon covers Nice in 1850 (Kingdom of Sardinia).",
+   "fixed": false,
+   "source": {
+    "title": "Treaty of Turin (1860) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_Turin_(1860)"
+   }
+  },
+  {
+   "realm": "Free County of Burgundy",
+   "years": [
+    1346,
+    1350
+   ],
+   "severity": "warning",
+   "issue": "NOT MINE (Holy Roman Empire member): Calais drawn as the Free County of Burgundy 1346–50; it was French until the English took it in August 1347.",
+   "fixed": false,
+   "source": {
+    "title": "Pale of Calais (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Pale_of_Calais"
+   }
+  },
+  {
+   "realm": "Teutonic Order",
+   "years": [
+    1454,
+    1465
+   ],
+   "severity": "warning",
+   "issue": "NOT MINE (HRE member): Danzig drawn Teutonic 1454–65; it joined the Prussian Confederation under the Polish crown in 1454.",
+   "fixed": false,
+   "source": {
+    "title": "Second Peace of Thorn (1466) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Second_Peace_of_Thorn_(1466)"
+   }
+  },
+  {
+   "realm": "Kingdom of Spain",
+   "years": [
+    1667,
+    1669
+   ],
+   "severity": "warning",
+   "issue": "NOT MINE: Lille drawn Spanish to 1669; France took it in 1667 and kept it by the 1668 Treaty of Aix-la-Chapelle.",
+   "fixed": false,
+   "source": {
+    "title": "Treaty of Aix-la-Chapelle (1668) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_Aix-la-Chapelle_(1668)"
+   }
+  },
+  {
+   "realm": "Tsardom of Russia",
+   "years": [
+    1610,
+    1611
+   ],
+   "severity": "warning",
+   "issue": "NOT MINE: Smolensk shows no state 1610–11 during the Polish siege (to June 1611).",
+   "fixed": false,
+   "source": {
+    "title": "Siege of Smolensk (1609–1611) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Siege_of_Smolensk_(1609%E2%80%931611)"
+   }
+  },
+  {
+   "realm": "Nicaean Empire",
+   "years": [
+    1261,
+    1278
+   ],
+   "severity": "warning",
+   "issue": "NOT MINE: after my Latin Empire clip, Constantinople 1261–78 reads 'Nicaean Empire' until v3's relabel to Byzantine is merged.",
+   "fixed": false,
+   "source": {
+    "title": "Reconquest of Constantinople (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Reconquest_of_Constantinople"
+   }
+  }
+ ],
+ "corrections": {
+  "Kingdom of England": {
+   "cut": [
+    {
+     "from": 1451,
+     "to": 1458,
+     "box": [
+      -1.95,
+      48.4,
+      1.9,
+      50.1
+     ]
+    },
+    {
+     "from": 1451,
+     "to": 1458,
+     "box": [
+      -1.9,
+      43.0,
+      1.6,
+      45.9
+     ]
+    }
+   ],
+   "crop": [
+    {
+     "from": 1436,
+     "to": 1439,
+     "box": [
+      -11,
+      43,
+      2.0,
+      61
+     ]
+    },
+    {
+     "from": 1558,
+     "to": 1578,
+     "box": [
+      -11,
+      49.0,
+      1.78,
+      61
+     ]
+    }
+   ],
+   "relabel": [
+    {
+     "from": 1609,
+     "to": 1639,
+     "name": "Kingdoms of England, Scotland and Ireland",
+     "key": "(Kingdom of England)",
+     "addTo": [
+      "Kingdom of England"
+     ]
+    },
+    {
+     "from": 1662,
+     "to": 1707,
+     "name": "Kingdoms of England, Scotland and Ireland",
+     "key": "(Kingdom of England)",
+     "addTo": [
+      "Kingdom of England"
+     ]
+    },
+    {
+     "from": 1708,
+     "to": 1708,
+     "name": "Kingdom of Great Britain",
+     "key": "(British Empire)"
+    }
+   ],
+   "note": "Paris returned to the French in April 1436, so English rule around Paris and in Burgundian lands is no longer drawn for 1436–39 (Paris shows no state there for those years). Normandy fell in 1449–50 and Gascony in 1451–53; they are no longer drawn as English from 1451 (Bordeaux was briefly English again in 1452–53). Calais was taken by France in January 1558; the Pale of Calais is no longer drawn as English from 1558 (the town shows no state until the map's French outline reaches it in 1579). From 1603 England, Scotland and Ireland shared one king (the Union of the Crowns) but stayed separate kingdoms until the 1707 Acts of Union; where the map draws them as one shape it is labelled 'Kingdoms of England, Scotland and Ireland', and as the Kingdom of Great Britain in 1708. The map does not show Rouen as English between its capture in January 1419 and its loss in October 1449.",
+   "sources": [
+    {
+     "title": "Siege of Paris (1435–1436) (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Siege_of_Paris_(1435%E2%80%931436)"
+    },
+    {
+     "title": "Battle of Formigny (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Battle_of_Formigny"
+    },
+    {
+     "title": "Battle of Castillon (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Battle_of_Castillon"
+    },
+    {
+     "title": "Siege of Calais (1558) (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Siege_of_Calais_(1558)"
+    },
+    {
+     "title": "Union of the Crowns (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Union_of_the_Crowns"
+    },
+    {
+     "title": "Acts of Union 1707 (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Acts_of_Union_1707"
+    },
+    {
+     "title": "Siege of Rouen (1418–1419) (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Siege_of_Rouen_(1418%E2%80%931419)"
+    }
+   ]
+  },
+  "Viking settlements": {
+   "crop": [
+    {
+     "from": 1171,
+     "to": 1266,
+     "box": [
+      -60,
+      56.5,
+      0,
+      70
+     ]
+    },
+    {
+     "from": 1267,
+     "to": 1325,
+     "box": [
+      -60,
+      58.6,
+      0,
+      70
+     ]
+    }
+   ],
+   "note": "Norse Dublin fell to the Anglo-Normans in 1170, and Norway ceded the Hebrides to Scotland by the Treaty of Perth in 1266; Dublin is not drawn as a Viking settlement after 1170, and the Hebrides not after 1266.",
+   "sources": [
+    {
+     "title": "Kingdom of Dublin (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Kingdom_of_Dublin"
+    },
+    {
+     "title": "Anglo-Norman invasion of Ireland (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Anglo-Norman_invasion_of_Ireland"
+    },
+    {
+     "title": "Treaty of Perth (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Treaty_of_Perth"
+    }
+   ]
+  },
+  "Almoravid Dynasty": {
+   "crop": [
+    {
+     "from": 1148,
+     "to": 1205,
+     "box": [
+      1.0,
+      38.5,
+      4.5,
+      40.3
+     ]
+    }
+   ],
+   "cut": [
+    {
+     "from": 1119,
+     "to": 1129,
+     "box": [
+      -1.4,
+      41.4,
+      -0.4,
+      42.4
+     ]
+    }
+   ],
+   "note": "Aragon took Zaragoza in December 1118, so the city is no longer drawn as Almoravid in 1119–29. The Almohads took Marrakesh and the Almoravids lost their empire in 1147; from 1148 only the Almoravid remnant in the Balearic Islands is drawn.",
+   "sources": [
+    {
+     "title": "Almoravid dynasty (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Almoravid_dynasty"
+    },
+    {
+     "title": "Siege of Lisbon (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Siege_of_Lisbon"
+    }
+   ]
+  },
+  "Almohad Caliphate": {
+   "crop": [
+    {
+     "from": 1229,
+     "to": 1249,
+     "box": [
+      -20,
+      10,
+      20,
+      36.0
+     ]
+    }
+   ],
+   "note": "The last Almohad army left al-Andalus in October 1228, which ended Almohad rule in Spain; from 1229 the caliphate is drawn only south of the Strait of Gibraltar.",
+   "sources": [
+    {
+     "title": "Almohad Caliphate (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Almohad_Caliphate"
+    },
+    {
+     "title": "Siege of Seville (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Siege_of_Seville"
+    }
+   ]
+  },
+  "Taifa of Valencia": {
+   "relabel": [
+    {
+     "from": 1239,
+     "to": 1249,
+     "name": "Crown of Aragon",
+     "key": "(Crown of Aragon)",
+     "addTo": [
+      "Crown of Aragon"
+     ]
+    }
+   ],
+   "note": "James I of Aragon took Valencia in October 1238; from 1239 the former taifa is shown as part of the Crown of Aragon (the Muslim south around Xàtiva held out until the mid-1240s).",
+   "sources": [
+    {
+     "title": "Conquest of Valencia (1238) (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Conquest_of_Valencia_(1238)"
+    },
+    {
+     "title": "Taifa of Valencia (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Taifa_of_Valencia"
+    }
+   ]
+  },
+  "Novgorod Republic": {
+   "relabel": [
+    {
+     "from": 1478,
+     "to": 1481,
+     "name": "Grand Principality of Moscow",
+     "key": "Grand Principality of Moscow",
+     "addTo": [
+      "Grand Principality of Moscow"
+     ]
+    }
+   ],
+   "note": "Ivan III of Moscow annexed Novgorod in 1478; the map's 1478–81 Novgorod shape is shown as the Grand Principality of Moscow.",
+   "sources": [
+    {
+     "title": "Novgorod Republic (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Novgorod_Republic"
+    }
+   ]
+  },
+  "Pskov Republic": {
+   "relabel": [
+    {
+     "from": 1510,
+     "to": 1511,
+     "name": "Grand Principality of Moscow",
+     "key": "Grand Principality of Moscow",
+     "addTo": [
+      "Grand Principality of Moscow"
+     ]
+    }
+   ],
+   "note": "Pskov was annexed by Moscow in 1510; its 1510–11 shape is shown as the Grand Principality of Moscow.",
+   "sources": [
+    {
+     "title": "Pskov Republic (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Pskov_Republic"
+    }
+   ]
+  },
+  "Habsburg Monarchy": {
+   "cut": [
+    {
+     "from": 1794,
+     "to": 1805,
+     "box": [
+      17.0,
+      52.0,
+      21.6,
+      56.0
+     ]
+    }
+   ],
+   "note": "In the Third Partition (1795) Warsaw went to Prussia, not Austria; the map's Habsburg outline wrongly reached Warsaw and western Mazovia in 1794–1805 and that area is removed.",
+   "sources": [
+    {
+     "title": "Partitions of Poland (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Partitions_of_Poland"
+    }
+   ]
+  },
+  "Austrian Empire": {
+   "cut": [
+    {
+     "from": 1806,
+     "to": 1810,
+     "box": [
+      17.0,
+      52.0,
+      21.6,
+      56.0
+     ]
+    }
+   ],
+   "note": "Warsaw was Prussian until 1806 and then part of the Duchy of Warsaw; the Austrian outline that wrongly reached Warsaw in 1806–10 is removed there. Kraków joined the Duchy of Warsaw in 1809 but is still drawn Austrian in 1810.",
+   "sources": [
+    {
+     "title": "Partitions of Poland (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Partitions_of_Poland"
+    }
+   ]
+  },
+  "French Fourth Republic": {
+   "cut": [
+    {
+     "from": 1945,
+     "to": 1958,
+     "box": [
+      13.0,
+      52.3,
+      13.8,
+      52.7
+     ]
+    }
+   ],
+   "note": "The French sector of Berlin lay in the north-west of the city; the map's French outline covered all of Berlin, including East Berlin, and is removed there. The French occupation zone of 1945–49 is also drawn too far north (Bonn was in the British zone).",
+   "sources": [
+    {
+     "title": "East Berlin (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/East_Berlin"
+    },
+    {
+     "title": "West Berlin (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/West_Berlin"
+    }
+   ]
+  },
+  "French Fifth Republic": {
+   "cut": [
+    {
+     "from": 1958,
+     "to": 2023,
+     "box": [
+      13.0,
+      52.3,
+      13.8,
+      52.7
+     ]
+    },
+    {
+     "from": 1962,
+     "to": 2023,
+     "box": [
+      -9.0,
+      18.5,
+      12.5,
+      37.5
+     ]
+    },
+    {
+     "from": 1975,
+     "to": 2023,
+     "box": [
+      43.0,
+      -12.6,
+      44.7,
+      -11.2
+     ]
+    },
+    {
+     "from": 1977,
+     "to": 2023,
+     "box": [
+      41.5,
+      10.5,
+      43.7,
+      13.0
+     ]
+    }
+   ],
+   "note": "Algeria became independent in July 1962, the Comoros in 1975 and Djibouti in 1977, but the map's outline for France kept them until 2023, and also kept a French Berlin sector until 1990. These areas are removed from France after independence; Mayotte and the overseas departments remain French.",
+   "sources": [
+    {
+     "title": "Évian Accords (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/%C3%89vian_Accords"
+    },
+    {
+     "title": "East Berlin (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/East_Berlin"
+    }
+   ]
+  },
+  "New Caledonia": {
+   "relabel": [
+    {
+     "from": 1856,
+     "to": 1859,
+     "name": "French colonies",
+     "key": "(Second French Empire)"
+    }
+   ],
+   "crop": [
+    {
+     "from": 1859,
+     "to": 1859,
+     "box": [
+      -180,
+      -90,
+      180,
+      0
+     ]
+    }
+   ],
+   "note": "Before 1860 this outline bundles several French colonies (New Caledonia, Réunion), so it is labelled French colonies. Its 1859 shape over all of Cochinchina is removed: France took Saigon in February 1859, but the provinces were ceded only in 1862 and 1867.",
+   "sources": [
+    {
+     "title": "Cochinchina campaign (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Cochinchina_campaign"
+    },
+    {
+     "title": "Treaty of Saigon (1862) (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Treaty_of_Saigon_(1862)"
+    }
+   ]
+  },
+  "First Hellenic Republic": {
+   "relabel": [
+    {
+     "from": 1832,
+     "to": 1923,
+     "name": "Kingdom of Greece",
+     "key": "Kingdom of Greece"
+    },
+    {
+     "from": 1924,
+     "to": 1935,
+     "name": "Second Hellenic Republic",
+     "key": "Second Hellenic Republic"
+    },
+    {
+     "from": 1936,
+     "to": 1940,
+     "name": "Kingdom of Greece",
+     "key": "Kingdom of Greece"
+    }
+   ],
+   "note": "The First Hellenic Republic ended in 1832, when Greece became a kingdom; the state is shown as the Kingdom of Greece (1832–1923 and 1936–40) and the Second Hellenic Republic (1924–35).",
+   "sources": [
+    {
+     "title": "Kingdom of Greece (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Kingdom_of_Greece"
+    },
+    {
+     "title": "Second Hellenic Republic (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Second_Hellenic_Republic"
+    }
+   ]
+  },
+  "Principality of Bulgaria": {
+   "relabel": [
+    {
+     "from": 1908,
+     "to": 1944,
+     "name": "Kingdom of Bulgaria",
+     "key": "Kingdom of Bulgaria"
+    }
+   ],
+   "note": "Bulgaria declared independence and became a tsardom (kingdom) on 5 October 1908; from 1908 it is labelled the Kingdom of Bulgaria.",
+   "sources": [
+    {
+     "title": "Kingdom of Bulgaria (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Kingdom_of_Bulgaria"
+    },
+    {
+     "title": "Principality of Bulgaria (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Principality_of_Bulgaria"
+    }
+   ]
+  },
+  "United Principalities of Moldavia and Wallachia": {
+   "relabel": [
+    {
+     "from": 1881,
+     "to": 1916,
+     "name": "Kingdom of Romania",
+     "key": "Kingdom of Romania"
+    }
+   ],
+   "note": "Romania became a kingdom in 1881; from 1881 the state is labelled the Kingdom of Romania. In 1917–18 the map draws all of Romania under Austria-Hungary, though Iași and Moldavia stayed Romanian.",
+   "sources": [
+    {
+     "title": "Kingdom of Romania (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Kingdom_of_Romania"
+    },
+    {
+     "title": "United Principalities of Moldavia and Wallachia (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/United_Principalities_of_Moldavia_and_Wallachia"
+    }
+   ]
+  },
+  "Serbs": {
+   "relabel": [
+    {
+     "from": 1805,
+     "to": 1813,
+     "name": "Revolutionary Serbia",
+     "key": "Revolutionary Serbia"
+    },
+    {
+     "from": 1815,
+     "to": 1881,
+     "name": "Principality of Serbia",
+     "key": "Principality of Serbia"
+    },
+    {
+     "from": 1885,
+     "to": 1918,
+     "name": "Kingdom of Serbia",
+     "key": "Kingdom of Serbia"
+    }
+   ],
+   "note": "This outline is the Serbian state, not a people: Revolutionary Serbia (1804–13), the Principality of Serbia (1815–81) and, from 1882, the Kingdom of Serbia.",
+   "sources": [
+    {
+     "title": "Revolutionary Serbia (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Revolutionary_Serbia"
+    },
+    {
+     "title": "Principality of Serbia (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Principality_of_Serbia"
+    },
+    {
+     "title": "Kingdom of Serbia (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Kingdom_of_Serbia"
+    }
+   ]
+  },
+  "Serbian Empire": {
+   "relabel": [
+    {
+     "from": 1372,
+     "to": 1401,
+     "name": "Moravian Serbia",
+     "key": "Moravian Serbia"
+    },
+    {
+     "from": 1402,
+     "to": 1458,
+     "name": "Serbian Despotate",
+     "key": "Serbian Despotate"
+    }
+   ],
+   "note": "The Serbian Empire broke up in 1371; its core is shown as Moravian Serbia (1371–1402) and the Serbian Despotate (1402–1459). The Ottoman occupation of 1439–44 is not drawn.",
+   "sources": [
+    {
+     "title": "Moravian Serbia (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Moravian_Serbia"
+    },
+    {
+     "title": "Serbian Despotate (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Serbian_Despotate"
+    }
+   ]
+  },
+  "Swedish Empire": {
+   "relabel": [
+    {
+     "from": 1722,
+     "to": 1814,
+     "name": "Kingdom of Sweden",
+     "key": "Kingdom of Sweden"
+    }
+   ],
+   "note": "Historians date Sweden's age as a great power ('the Swedish Empire') to 1611–1721; from 1722 the state is labelled the Kingdom of Sweden.",
+   "sources": [
+    {
+     "title": "Swedish Empire (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Swedish_Empire"
+    },
+    {
+     "title": "Age of Liberty (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Age_of_Liberty"
+    }
+   ]
+  },
+  "Denmark-Norway": {
+   "relabel": [
+    {
+     "from": 1815,
+     "to": 1944,
+     "name": "Denmark",
+     "key": "Denmark"
+    }
+   ],
+   "crop": [
+    {
+     "from": 1919,
+     "to": 1921,
+     "box": [
+      -12,
+      30,
+      40,
+      80
+     ]
+    }
+   ],
+   "note": "Denmark–Norway ended with the Treaty of Kiel in 1814, when Norway passed to Sweden; later years are labelled Denmark. Iceland became a separate kingdom in personal union with Denmark on 1 December 1918 and is not drawn as Danish after 1918.",
+   "sources": [
+    {
+     "title": "Denmark–Norway (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Denmark%E2%80%93Norway"
+    },
+    {
+     "title": "Treaty of Kiel (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Treaty_of_Kiel"
+    },
+    {
+     "title": "Danish–Icelandic Act of Union (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Danish%E2%80%93Icelandic_Act_of_Union"
+    }
+   ]
+  },
+  "Hungarian Republic": {
+   "relabel": [
+    {
+     "from": 1920,
+     "to": 1943,
+     "name": "Kingdom of Hungary",
+     "key": "Kingdom of Hungary"
+    }
+   ],
+   "note": "Hungary was restored as a kingdom (with a regent, Miklós Horthy) in 1920 and remained one until 1946; 1920–43 is labelled the Kingdom of Hungary. The map keeps Cluj in Romania in 1940–44, though the Second Vienna Award gave northern Transylvania to Hungary, and draws Košice under Germany though it was Hungarian from 1938.",
+   "sources": [
+    {
+     "title": "Kingdom of Hungary (1920–1946) (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Kingdom_of_Hungary_(1920%E2%80%931946)"
+    },
+    {
+     "title": "Second Vienna Award (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Second_Vienna_Award"
+    },
+    {
+     "title": "First Vienna Award (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/First_Vienna_Award"
+    }
+   ]
+  },
+  "Kingdom of Lithuania": {
+   "relabel": [
+    {
+     "from": 1919,
+     "to": 1939,
+     "name": "Republic of Lithuania",
+     "key": "Republic of Lithuania"
+    }
+   ],
+   "crop": [
+    {
+     "from": 1921,
+     "to": 1939,
+     "box": [
+      20,
+      53.85,
+      27,
+      57
+     ]
+    }
+   ],
+   "note": "The Kingdom of Lithuania lasted only a few months in 1918; interwar Lithuania was a republic with Kaunas as its temporary capital. Grodno, Polish from 1921, is no longer drawn inside Lithuania.",
+   "sources": [
+    {
+     "title": "History of Lithuania (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/History_of_Lithuania"
+    },
+    {
+     "title": "Treaty of Riga (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Treaty_of_Riga"
+    }
+   ]
+  },
+  "Free City of Danzig": {
+   "crop": [
+    {
+     "from": 1919,
+     "to": 1939,
+     "box": [
+      17.5,
+      53.5,
+      20.0,
+      55.0
+     ]
+    }
+   ],
+   "note": "The Memel Territory was under Allied administration from 1920 and annexed by Lithuania in 1923; it was never part of the Free City of Danzig and is no longer drawn with it.",
+   "sources": [
+    {
+     "title": "Klaipėda Region (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Klaip%C4%97da_Region"
+    },
+    {
+     "title": "Free City of Danzig (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Free_City_of_Danzig"
+    }
+   ]
+  },
+  "Principality of Monaco": {
+   "crop": [
+    {
+     "from": 1642,
+     "to": 2024,
+     "box": [
+      7.36,
+      43.7,
+      7.55,
+      43.8
+     ]
+    }
+   ],
+   "note": "Monaco is a city-state of about 2 km²; the map's shapes for it were far too large and lay over Nice, so they are trimmed to Monaco itself, which is too small to show at most zooms.",
+   "sources": [
+    {
+     "title": "History of Monaco (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/History_of_Monaco"
+    },
+    {
+     "title": "Treaty of Turin (1860) (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Treaty_of_Turin_(1860)"
+    }
+   ]
+  },
+  "Kingdom of Monaco": {
+   "relabel": [
+    {
+     "from": 1815,
+     "to": 1939,
+     "name": "Principality of Monaco",
+     "key": "Principality of Monaco"
+    }
+   ],
+   "crop": [
+    {
+     "from": 1815,
+     "to": 1939,
+     "box": [
+      7.36,
+      43.7,
+      7.55,
+      43.8
+     ]
+    }
+   ],
+   "note": "Monaco has never been a kingdom: it is the Principality of Monaco. Its shapes for 1815–1939 lay over Nice and are trimmed to Monaco itself.",
+   "sources": [
+    {
+     "title": "History of Monaco (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/History_of_Monaco"
+    }
+   ]
+  },
+  "County of Ribagorza": {
+   "relabel": [
+    {
+     "from": 866,
+     "to": 1084,
+     "name": "Kingdom of Pamplona",
+     "key": "Kingdom of Pamplona"
+    }
+   ],
+   "note": "Before 1085 this shape lies around Pamplona, not Ribagorza (a small Pyrenean county far to the east); it is the Kingdom of Pamplona, later called Navarre.",
+   "sources": [
+    {
+     "title": "Kingdom of Navarre (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Kingdom_of_Navarre"
+    },
+    {
+     "title": "County of Ribagorza (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/County_of_Ribagorza"
+    }
+   ]
+  },
+  "County of Foix": {
+   "relabel": [
+    {
+     "from": 1482,
+     "to": 1511,
+     "name": "Kingdom of Navarre",
+     "key": "(Kingdom of Navarre)"
+    }
+   ],
+   "note": "In 1482–1511 this shape includes Pamplona and Upper Navarre, an independent kingdom ruled by the Foix and Albret families; it is labelled the Kingdom of Navarre. Castile conquered Upper Navarre in 1512.",
+   "sources": [
+    {
+     "title": "Kingdom of Navarre (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Kingdom_of_Navarre"
+    },
+    {
+     "title": "Spanish conquest of Iberian Navarre (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Spanish_conquest_of_Iberian_Navarre"
+    }
+   ]
+  },
+  "Duchy of Burgundy": {
+   "crop": [
+    {
+     "from": 1478,
+     "to": 1481,
+     "box": [
+      1.0,
+      49.0,
+      8.0,
+      54.0
+     ]
+    }
+   ],
+   "note": "After Charles the Bold died in January 1477, Louis XI of France seized the Duchy of Burgundy; from 1478 only the Burgundian Netherlands are drawn under this name.",
+   "sources": [
+    {
+     "title": "War of the Burgundian Succession (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/War_of_the_Burgundian_Succession"
+    },
+    {
+     "title": "Burgundian State (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Burgundian_State"
+    }
+   ]
+  },
+  "Kingdom of Gwynedd": {
+   "relabel": [
+    {
+     "from": 1283,
+     "to": 1284,
+     "name": "Kingdom of England",
+     "key": "(Kingdom of England)",
+     "addTo": [
+      "Kingdom of England"
+     ]
+    }
+   ],
+   "note": "Edward I completed the conquest of Gwynedd in 1283; its 1283–84 shape is shown as England.",
+   "sources": [
+    {
+     "title": "Conquest of Wales by Edward I (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Conquest_of_Wales_by_Edward_I"
+    }
+   ]
+  },
+  "Latin Empire": {
+   "clip": [
+    1206,
+    1260
+   ],
+   "note": "The Empire of Nicaea retook Constantinople on 25 July 1261, ending the Latin Empire; it is not drawn after 1260.",
+   "sources": [
+    {
+     "title": "Reconquest of Constantinople (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Reconquest_of_Constantinople"
+    }
+   ]
+  },
+  "Visigothic Kingdom": {
+   "relabel": [
+    {
+     "from": 712,
+     "to": 717,
+     "name": "Umayyad Caliphate",
+     "key": "Umayyad Caliphate",
+     "addTo": [
+      "Umayyad Caliphate"
+     ]
+    }
+   ],
+   "note": "The Umayyads invaded in 711, defeated King Roderic and took Toledo; the 712–717 shape covering the peninsula is shown as Umayyad. (Visigothic Septimania, around Narbonne, held out until about 720.)",
+   "sources": [
+    {
+     "title": "Muslim conquest of the Iberian Peninsula (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Muslim_conquest_of_the_Iberian_Peninsula"
+    }
+   ]
+  },
+  "Grand Duchy of Berg": {
+   "crop": [
+    {
+     "from": 1814,
+     "to": 1814,
+     "box": [
+      -10,
+      40,
+      8.5,
+      56
+     ]
+    }
+   ],
+   "relabel": [
+    {
+     "from": 1814,
+     "to": 1814,
+     "name": "Bourbon Kingdom of France",
+     "key": "(Bourbon Kingdom of France)"
+    }
+   ],
+   "note": "The Grand Duchy of Berg was a small Napoleonic state on the lower Rhine (1806–13). The large 1814 shape under its name is France after Napoleon's first abdication and is shown as the Bourbon Kingdom of France.",
+   "sources": [
+    {
+     "title": "Grand Duchy of Berg (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Grand_Duchy_of_Berg"
+    },
+    {
+     "title": "Bourbon Restoration in France (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Bourbon_Restoration_in_France"
+    }
+   ]
+  },
+  "Crown of Castile": {
+   "cut": [
+    {
+     "from": 1487,
+     "to": 1491,
+     "box": [
+      -3.66,
+      37.1,
+      -3.55,
+      37.25
+     ]
+    }
+   ],
+   "note": "Granada surrendered on 2 January 1492; the city itself is no longer drawn as Castilian in 1487–91.",
+   "sources": [
+    {
+     "title": "Granada War (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Granada_War"
+    }
+   ]
+  },
+  "Socialist Federal Republic of Yugoslavia": {
+   "cut": [
+    {
+     "from": 1946,
+     "to": 1991,
+     "box": [
+      13.55,
+      45.58,
+      13.92,
+      45.8
+     ]
+    }
+   ],
+   "note": "Trieste was never part of Yugoslavia: it was under Allied military government from 1945, the Zone A of the Free Territory of Trieste from 1947, and Italian from 1954. The city is no longer drawn as Yugoslav.",
+   "sources": [
+    {
+     "title": "Free Territory of Trieste (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Free_Territory_of_Trieste"
+    }
+   ]
+  },
+  "Yugoslavia": {
+   "cut": [
+    {
+     "from": 1924,
+     "to": 1940,
+     "box": [
+      14.36,
+      45.3,
+      14.445,
+      45.38
+     ]
+    }
+   ],
+   "note": "Fiume (Rijeka) was annexed by Italy in 1924, while neighbouring Sušak stayed Yugoslav; the city west of the Rječina is no longer drawn as Yugoslav in 1924–40.",
+   "sources": [
+    {
+     "title": "Treaty of Rome (1924) (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Treaty_of_Rome_(1924)"
+    },
+    {
+     "title": "Free State of Fiume (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Free_State_of_Fiume"
+    }
+   ]
+  },
+  "Weimar Republic": {
+   "cut": [
+    {
+     "from": 1920,
+     "to": 1933,
+     "box": [
+      8.6,
+      54.84,
+      10.2,
+      55.6
+     ]
+    }
+   ],
+   "note": "Northern Schleswig voted to join Denmark in 1920 and was transferred on 15 June 1920; it is no longer drawn as German.",
+   "sources": [
+    {
+     "title": "1920 Schleswig plebiscites (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/1920_Schleswig_plebiscites"
+    }
+   ]
+  },
+  "Austria-Hungary": {
+   "cut": [
+    {
+     "from": 1918,
+     "to": 1918,
+     "box": [
+      26.3,
+      45.4,
+      30.2,
+      48.6
+     ]
+    }
+   ],
+   "note": "In 1918 Romania kept Moldavia and its wartime capital Iași, and Bessarabia joined Romania in April 1918; they are no longer drawn as Austro-Hungarian.",
+   "sources": [
+    {
+     "title": "Kingdom of Romania (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Kingdom_of_Romania"
+    },
+    {
+     "title": "Union of Bessarabia with Romania (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Union_of_Bessarabia_with_Romania"
+    }
+   ]
+  },
+  "Brandenburg-Prussia": {
+   "cut": [
+    {
+     "from": 1648,
+     "to": 1719,
+     "box": [
+      14.0,
+      53.2,
+      14.9,
+      54.0
+     ]
+    }
+   ],
+   "note": "Stettin and the mouth of the Oder were Swedish from 1648 until the 1720 Treaty of Stockholm; they are no longer drawn as Brandenburg's.",
+   "sources": [
+    {
+     "title": "Treaties of Stockholm (Great Northern War) (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Treaties_of_Stockholm_(Great_Northern_War)"
+    }
+   ]
+  },
+  "Republic of Genoa": {
+   "crop": [
+    {
+     "from": 1769,
+     "to": 1797,
+     "box": [
+      7.0,
+      43.5,
+      10.5,
+      45.0
+     ]
+    }
+   ],
+   "note": "Genoa ceded Corsica to France in May 1768 and France conquered the island in 1769; Corsica is no longer drawn as Genoese from 1769.",
+   "sources": [
+    {
+     "title": "Treaty of Versailles (1768) (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Treaty_of_Versailles_(1768)"
+    },
+    {
+     "title": "Republic of Genoa (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Republic_of_Genoa"
+    }
+   ]
+  }
+ }
+}

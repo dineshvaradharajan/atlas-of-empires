@@ -1,0 +1,906 @@
+{
+ "reviewer": "south-asia",
+ "findings": [
+  {
+   "realm": "Ghaznavid Empire",
+   "years": [
+    1044,
+    1209
+   ],
+   "severity": "error",
+   "issue": "Delhi and Haryana drawn as Ghaznavid 1044–1176 (Delhi 1150 shows Ghaznavid); Delhi was the Tomara capital (c. 1052–1152), then Chahamana. Tiny stray Ghaznavid polygons (Sistan, Sindh) run 1188–1209, after the dynasty ended with the fall of Lahore in 1186.",
+   "fixed": true,
+   "source": [
+    {
+     "title": "Wikipedia: Tomaras of Delhi",
+     "url": "https://en.wikipedia.org/wiki/Tomaras_of_Delhi"
+    },
+    {
+     "title": "Wikipedia: Ghaznavid Empire",
+     "url": "https://en.wikipedia.org/wiki/Ghaznavid_Empire"
+    }
+   ]
+  },
+  {
+   "realm": "Chauhan Dynasty",
+   "years": [
+    1195,
+    1201
+   ],
+   "severity": "error",
+   "issue": "Ajmer still Chahamana in 1195–1201; the kingdom ended in 1194 (Hariraja) and passed to the Ghurids, whose own polygon does not cover Ajmer.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Chahamanas of Shakambhari",
+    "url": "https://en.wikipedia.org/wiki/Chahamanas_of_Shakambhari"
+   }
+  },
+  {
+   "realm": "Yadava Dynasty",
+   "years": [
+    1236,
+    1325
+   ],
+   "severity": "error",
+   "issue": "Devagiri drawn as Yadava 1318–1325 although the dynasty ended in 1317 and Devagiri became a Delhi province; the polygon also covers Paramara Malwa (Dhar 1236–1240 shows Yadava).",
+   "fixed": true,
+   "source": [
+    {
+     "title": "Wikipedia: Seuna dynasty",
+     "url": "https://en.wikipedia.org/wiki/Seuna_dynasty"
+    },
+    {
+     "title": "Wikipedia: Paramara dynasty",
+     "url": "https://en.wikipedia.org/wiki/Paramara_dynasty"
+    }
+   ]
+  },
+  {
+   "realm": "Sena Dynasty",
+   "years": [
+    1205,
+    1235
+   ],
+   "severity": "error",
+   "issue": "Nadia and Gaur (Lakhnauti) drawn as Sena until 1235, though Bakhtiyar Khalji took them c. 1205; the dynasty itself ended c. 1230.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Sena dynasty",
+    "url": "https://en.wikipedia.org/wiki/Sena_dynasty"
+   }
+  },
+  {
+   "realm": "Vijayanagara Empire",
+   "years": [
+    1344,
+    1377
+   ],
+   "severity": "error",
+   "issue": "Madurai and the far south drawn as Vijayanagara from 1344; the Madurai Sultanate ruled there until 1378.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Madurai Sultanate",
+    "url": "https://en.wikipedia.org/wiki/Madurai_Sultanate"
+   }
+  },
+  {
+   "realm": "Bijapur Sultanate",
+   "years": [
+    1572,
+    1618
+   ],
+   "severity": "error",
+   "issue": "Penukonda, the Vijayanagara (Aravidu) capital until 1592, drawn inside Bijapur 1572–1618.",
+   "fixed": true,
+   "source": [
+    {
+     "title": "Wikipedia: Penukonda",
+     "url": "https://en.wikipedia.org/wiki/Penukonda"
+    },
+    {
+     "title": "Wikipedia: Bijapur Sultanate",
+     "url": "https://en.wikipedia.org/wiki/Bijapur_Sultanate"
+    }
+   ]
+  },
+  {
+   "realm": "Ahmadnagar Sultanate",
+   "years": [
+    1637,
+    1652
+   ],
+   "severity": "error",
+   "issue": "Drawn until 1652; the sultanate ended in 1636 (Ahmadnagar town still shows the sultanate in 1640).",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Ahmadnagar Sultanate",
+    "url": "https://en.wikipedia.org/wiki/Ahmadnagar_Sultanate"
+   }
+  },
+  {
+   "realm": "Berar Sultanate",
+   "years": [
+    1575,
+    1578
+   ],
+   "severity": "warning",
+   "issue": "Drawn until 1578; annexed by Ahmadnagar in 1574.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Berar Sultanate",
+    "url": "https://en.wikipedia.org/wiki/Berar_Sultanate"
+   }
+  },
+  {
+   "realm": "Durrani Empire",
+   "years": [
+    1764,
+    1827
+   ],
+   "severity": "error",
+   "issue": "Ladakh (Leh 1770–1815) drawn as Durrani; Ladakh was the independent Namgyal kingdom until the Dogra conquest of 1834. Sirhind still Durrani in 1765 though the Sikhs took it in January 1764.",
+   "fixed": true,
+   "source": [
+    {
+     "title": "Wikipedia: Ladakh",
+     "url": "https://en.wikipedia.org/wiki/Ladakh"
+    },
+    {
+     "title": "Wikipedia: Durrani Empire",
+     "url": "https://en.wikipedia.org/wiki/Durrani_Empire"
+    }
+   ]
+  },
+  {
+   "realm": "Emirate of Afghanistan",
+   "years": [
+    1828,
+    1839
+   ],
+   "severity": "error",
+   "issue": "Polygon reaches 78.9°E, covering Gilgit, Baltistan and Ladakh (Leh 1828, Gilgit 1830 show Afghanistan).",
+   "fixed": true,
+   "source": [
+    {
+     "title": "Wikipedia: Emirate of Afghanistan",
+     "url": "https://en.wikipedia.org/wiki/Emirate_of_Afghanistan"
+    },
+    {
+     "title": "Wikipedia: Ladakh",
+     "url": "https://en.wikipedia.org/wiki/Ladakh"
+    }
+   ]
+  },
+  {
+   "realm": "Talpur Dynasty",
+   "years": [
+    1822,
+    1894
+   ],
+   "severity": "error",
+   "issue": "A polygon over Gilgit and Hunza (71–76°E, 34–37°N) carries the Talpur name 1840–1894 (Hunza 1850 and 1890 show 'Talpur Dynasty'); the 1822–39 outline also covers Kalat and Balochistan. The Talpurs ruled Sindh only, until 1843.",
+   "fixed": true,
+   "source": [
+    {
+     "title": "Wikipedia: Talpur dynasty",
+     "url": "https://en.wikipedia.org/wiki/Talpur_dynasty"
+    },
+    {
+     "title": "Wikipedia: Hunza (princely state)",
+     "url": "https://en.wikipedia.org/wiki/Hunza_(princely_state)"
+    }
+   ]
+  },
+  {
+   "realm": "Satavahana Dynasty",
+   "years": [
+    -164,
+    -28
+   ],
+   "severity": "error",
+   "issue": "Coastal Kalinga (Bhubaneswar -100) drawn as Satavahana; Kalinga was Kharavela's rival kingdom.",
+   "fixed": true,
+   "source": [
+    {
+     "title": "Wikipedia: Kharavela",
+     "url": "https://en.wikipedia.org/wiki/Kharavela"
+    },
+    {
+     "title": "Wikipedia: Satavahana dynasty",
+     "url": "https://en.wikipedia.org/wiki/Satavahana_dynasty"
+    }
+   ]
+  },
+  {
+   "realm": "Mahameghavahana Dynasty",
+   "years": [
+    -170,
+    -165
+   ],
+   "severity": "warning",
+   "issue": "Kharavela's Kalinga drawn at 1.66M km² over half of India; his campaigns were raids. Cropped to Kalinga.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Kharavela",
+    "url": "https://en.wikipedia.org/wiki/Kharavela"
+   }
+  },
+  {
+   "realm": "Islamic Republic of Pakistan",
+   "years": [
+    1972,
+    1972
+   ],
+   "severity": "error",
+   "issue": "East Pakistan still drawn as Pakistan in 1972 although Bangladesh became independent on 16 December 1971 (the map's Bangladesh starts only in 1973; Dhaka 1972 is now blank).",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Bangladesh Liberation War",
+    "url": "https://en.wikipedia.org/wiki/Bangladesh_Liberation_War"
+   }
+  },
+  {
+   "realm": "Sind-Habbari Dynasty",
+   "years": [
+    1027,
+    1201
+   ],
+   "severity": "error",
+   "issue": "Sindh labelled Habbari until 1201; Mahmud ended Habbari rule in 1026 and the Soomras ruled Sindh 1026–1351.",
+   "fixed": true,
+   "source": [
+    {
+     "title": "Wikipedia: Habbari Emirate",
+     "url": "https://en.wikipedia.org/wiki/Habbari_Emirate"
+    },
+    {
+     "title": "Wikipedia: Soomra dynasty",
+     "url": "https://en.wikipedia.org/wiki/Soomra_dynasty"
+    }
+   ]
+  },
+  {
+   "realm": "Mughal Empire",
+   "years": [
+    1622,
+    1738
+   ],
+   "severity": "error",
+   "issue": "Kandahar drawn as Mughal in 1630, 1660 and 1720, but it was Safavid in 1622–38 and 1649–1709 and Hotaki in 1709–38. Owner: Mughal journey.",
+   "fixed": false,
+   "source": [
+    {
+     "title": "Wikipedia: Mughal–Safavid war (1622–1623)",
+     "url": "https://en.wikipedia.org/wiki/Mughal%E2%80%93Safavid_war_(1622%E2%80%931623)"
+    },
+    {
+     "title": "Wikipedia: Mughal–Safavid war (1649–1653)",
+     "url": "https://en.wikipedia.org/wiki/Mughal%E2%80%93Safavid_war_(1649%E2%80%931653)"
+    },
+    {
+     "title": "Wikipedia: Hotak dynasty",
+     "url": "https://en.wikipedia.org/wiki/Hotak_dynasty"
+    }
+   ]
+  },
+  {
+   "realm": "Mughal Empire",
+   "years": [
+    1680,
+    1689
+   ],
+   "severity": "error",
+   "issue": "Raigad, the Maratha capital (Maratha 1656–1689), drawn as Mughal in 1680. Owner: Mughal/Maratha journeys.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Raigad Fort",
+    "url": "https://en.wikipedia.org/wiki/Raigad_Fort"
+   }
+  },
+  {
+   "realm": "Mughal Empire",
+   "years": [
+    1687,
+    1700
+   ],
+   "severity": "error",
+   "issue": "Golconda/Hyderabad blank after 1686: the Golconda polygon ends in 1686, the Mughal polygon does not take over after the fall of Golconda (1687).",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Golconda Sultanate",
+    "url": "https://en.wikipedia.org/wiki/Golconda_Sultanate"
+   }
+  },
+  {
+   "realm": "Mughal Empire",
+   "years": [
+    1752,
+    1761
+   ],
+   "severity": "warning",
+   "issue": "Lahore and Sirhind still Mughal 1752–1761; Ahmad Shah Durrani held the Punjab, with Lahore governed by the Afghans.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Durrani Empire",
+    "url": "https://en.wikipedia.org/wiki/Durrani_Empire"
+   }
+  },
+  {
+   "realm": "(Dutch Republic)",
+   "years": [
+    1663,
+    1795
+   ],
+   "severity": "error",
+   "issue": "Calicut drawn as Dutch in 1700; it was the Zamorin's capital. Dutch Malabar was centred on Cochin.",
+   "fixed": false,
+   "source": [
+    {
+     "title": "Wikipedia: Dutch Malabar",
+     "url": "https://en.wikipedia.org/wiki/Dutch_Malabar"
+    },
+    {
+     "title": "Wikipedia: Zamorin",
+     "url": "https://en.wikipedia.org/wiki/Zamorin"
+    }
+   ]
+  },
+  {
+   "realm": "Estado Novo",
+   "years": [
+    1962,
+    1974
+   ],
+   "severity": "error",
+   "issue": "Goa (Margao 1962–65) still drawn as Portuguese after India's annexation of 17–19 December 1961 (claim Margao 1965 fails). Owner: Portuguese journey.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Indian annexation of Goa",
+    "url": "https://en.wikipedia.org/wiki/Indian_annexation_of_Goa"
+   }
+  },
+  {
+   "realm": "Republic of India",
+   "years": [
+    1947,
+    1961
+   ],
+   "severity": "warning",
+   "issue": "Northern Goa (Panaji, Old Goa) drawn inside India 1947–61 while the south is Portuguese; Goa stayed Portuguese until December 1961. Not fixable with a box crop.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Indian annexation of Goa",
+    "url": "https://en.wikipedia.org/wiki/Indian_annexation_of_Goa"
+   }
+  },
+  {
+   "realm": "Republic of India",
+   "years": [
+    1950,
+    1974
+   ],
+   "severity": "warning",
+   "issue": "Sikkim drawn inside India before 1975; it was an Indian protectorate until it became a state on 16 May 1975. Not fixable with a box crop.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Sikkim",
+    "url": "https://en.wikipedia.org/wiki/Sikkim"
+   }
+  },
+  {
+   "realm": "Tughlaq Dynasty",
+   "years": [
+    1323,
+    1335
+   ],
+   "severity": "warning",
+   "issue": "Warangal blank in 1330; the Tughlaqs took it in 1323 (end of the Kakatiyas). Owner: Delhi Sultanate journey.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Kakatiya dynasty",
+    "url": "https://en.wikipedia.org/wiki/Kakatiya_dynasty"
+   }
+  },
+  {
+   "realm": "Late Pallava Empire",
+   "years": [
+    806,
+    897
+   ],
+   "severity": "warning",
+   "issue": "The Pallava polygon ends in 805; the Pallavas ruled Kanchipuram until 897, so Kanchi is blank 806–899.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Pallava dynasty",
+    "url": "https://en.wikipedia.org/wiki/Pallava_dynasty"
+   }
+  },
+  {
+   "realm": "Vijayanagara Empire",
+   "years": [
+    1572,
+    1646
+   ],
+   "severity": "warning",
+   "issue": "The realm ends in 1571; the Aravidu kings ruled from Penukonda, Chandragiri and Vellore until 1646 (Penukonda 1580, Chandragiri 1600, Vellore 1620 are blank). Missing data; the existing note covers it.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Penukonda",
+    "url": "https://en.wikipedia.org/wiki/Penukonda"
+   }
+  },
+  {
+   "realm": "Bijapur Sultanate",
+   "years": [
+    1521,
+    1529
+   ],
+   "severity": "warning",
+   "issue": "Raichur drawn as Bijapur 1521–29, but Krishnadevaraya took the fort in 1520 and Bijapur's conquest of the Raichur Doab came after Talikota (1565); the Vijayanagara polygon does not reach the doab, so no box crop fixes it.",
+   "fixed": false,
+   "source": [
+    {
+     "title": "Wikipedia: Bijapur Sultanate",
+     "url": "https://en.wikipedia.org/wiki/Bijapur_Sultanate"
+    },
+    {
+     "title": "Wikipedia: Battle of Raichur",
+     "url": "https://en.wikipedia.org/wiki/Battle_of_Raichur"
+    }
+   ]
+  },
+  {
+   "realm": "Jaffna kingdom",
+   "years": [
+    1595,
+    1619
+   ],
+   "severity": "warning",
+   "issue": "The realm ends in 1594; the kingdom lasted until the Portuguese annexation of 1619 (Jaffna 1600 shows the Portuguese-group polygon).",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Jaffna kingdom",
+    "url": "https://en.wikipedia.org/wiki/Jaffna_kingdom"
+   }
+  },
+  {
+   "realm": "(missing realms)",
+   "years": [
+    1394,
+    1576
+   ],
+   "severity": "warning",
+   "issue": "No polygon for the Gujarat Sultanate (1394–1573; Ahmedabad 1450 blank), the Gajapati Empire (1434–1541; Cuttack 1400s blank), the Eastern Chalukyas of Vengi (624–1189; Vengi 1000 blank) or the Karrani dynasty of Bengal (1564–76; Gaur 1560–70 blank).",
+   "fixed": false,
+   "source": [
+    {
+     "title": "Wikipedia: Gujarat Sultanate",
+     "url": "https://en.wikipedia.org/wiki/Gujarat_Sultanate"
+    },
+    {
+     "title": "Wikipedia: Gajapati Empire",
+     "url": "https://en.wikipedia.org/wiki/Gajapati_Empire"
+    },
+    {
+     "title": "Wikipedia: Eastern Chalukyas",
+     "url": "https://en.wikipedia.org/wiki/Eastern_Chalukyas"
+    },
+    {
+     "title": "Wikipedia: Karrani dynasty",
+     "url": "https://en.wikipedia.org/wiki/Karrani_dynasty"
+    }
+   ]
+  },
+  {
+   "realm": "Ceylon",
+   "years": [
+    1236,
+    1506
+   ],
+   "severity": "warning",
+   "issue": "Linked to the Wikidata item for British Ceylon (Q918153), so its date check compares against 1815–1948. It is the Sinhalese kingdoms of the Dambadeniya–Kotte period. Corrections cannot change Wikidata links.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: British Ceylon",
+    "url": "https://en.wikipedia.org/wiki/British_Ceylon"
+   }
+  },
+  {
+   "realm": "Hamdanid Emirates",
+   "years": [
+    1210,
+    1249
+   ],
+   "severity": "error",
+   "issue": "A polygon over Afghanistan, Punjab and Sindh (Kabul and Ghazni 1210–1215) carries the name of the Hamdanids, a Syrian dynasty that ended in 1004; Ghazni was then held by Yildiz and later Khwarazm. The realm spans the Near East as well, so it is left to the Iran–Central Asia reviewer.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Ghurid dynasty",
+    "url": "https://en.wikipedia.org/wiki/Ghurid_dynasty"
+   }
+  }
+ ],
+ "corrections": {
+  "Ghaznavid Empire": {
+   "clip": [
+    962,
+    1187
+   ],
+   "crop": [
+    {
+     "from": 1044,
+     "to": 1176,
+     "box": [
+      40,
+      20,
+      75.9,
+      45
+     ]
+    }
+   ],
+   "note": "The Ghaznavids lost their last stronghold, Lahore, to the Ghurids in 1186, so the realm is not shown after that. Their Punjab frontier lay west of Delhi, which the Tomara kings ruled until about 1152 and the Chahamanas after them; the map's eastern spur over Delhi and Haryana (1044–1176) is not drawn.",
+   "sources": [
+    {
+     "title": "Wikipedia: Ghaznavid Empire",
+     "url": "https://en.wikipedia.org/wiki/Ghaznavid_Empire"
+    },
+    {
+     "title": "Wikipedia: Tomaras of Delhi",
+     "url": "https://en.wikipedia.org/wiki/Tomaras_of_Delhi"
+    },
+    {
+     "title": "Wikipedia: Ghurid dynasty",
+     "url": "https://en.wikipedia.org/wiki/Ghurid_dynasty"
+    }
+   ]
+  },
+  "Chauhan Dynasty": {
+   "relabel": [
+    {
+     "from": 1195,
+     "to": 1201,
+     "name": "Ghurid Dynasty",
+     "key": "Ghurid Dynasty"
+    }
+   ],
+   "note": "After the Second Battle of Tarain (1192) the Chahamana kingdom of Ajmer passed to the Ghurids; Hariraja's revolt ended in 1194, so the 1195–1201 outline is shown as Ghurid territory.",
+   "sources": [
+    {
+     "title": "Wikipedia: Chahamanas of Shakambhari",
+     "url": "https://en.wikipedia.org/wiki/Chahamanas_of_Shakambhari"
+    },
+    {
+     "title": "Wikipedia: Ghurid dynasty",
+     "url": "https://en.wikipedia.org/wiki/Ghurid_dynasty"
+    }
+   ]
+  },
+  "Yadava Dynasty": {
+   "crop": [
+    {
+     "from": 1188,
+     "to": 1325,
+     "box": [
+      70,
+      10,
+      85,
+      22.2
+     ]
+    }
+   ],
+   "relabel": [
+    {
+     "from": 1318,
+     "to": 1320,
+     "name": "Khalji Dynasty",
+     "key": "(Delhi Sultanate)"
+    },
+    {
+     "from": 1321,
+     "to": 1325,
+     "name": "Tughlaq Dynasty",
+     "key": "(Delhi Sultanate)"
+    }
+   ],
+   "note": "The Yadava (Seuna) kingdom ended in 1317 and Devagiri became a province of the Delhi Sultanate, so the 1318–1325 outline is shown as Delhi territory. Malwa, north of the Narmada, belonged to the Paramaras, not the Yadavas, and is not drawn as Yadava land.",
+   "sources": [
+    {
+     "title": "Wikipedia: Seuna dynasty",
+     "url": "https://en.wikipedia.org/wiki/Seuna_dynasty"
+    },
+    {
+     "title": "Wikipedia: Daulatabad Fort",
+     "url": "https://en.wikipedia.org/wiki/Daulatabad_Fort"
+    },
+    {
+     "title": "Wikipedia: Paramara dynasty",
+     "url": "https://en.wikipedia.org/wiki/Paramara_dynasty"
+    }
+   ]
+  },
+  "Sena Dynasty": {
+   "clip": [
+    1070,
+    1230
+   ],
+   "crop": [
+    {
+     "from": 1205,
+     "to": 1230,
+     "box": [
+      89.0,
+      20,
+      93,
+      27
+     ]
+    }
+   ],
+   "note": "The Ghurid general Bakhtiyar Khalji took Nadia and Lakhnauti (Gaur) around 1205. The later Sena kings held only eastern Bengal from Bikrampur until about 1230.",
+   "sources": [
+    {
+     "title": "Wikipedia: Sena dynasty",
+     "url": "https://en.wikipedia.org/wiki/Sena_dynasty"
+    }
+   ]
+  },
+  "Vijayanagara Empire": {
+   "crop": [
+    {
+     "from": 1344,
+     "to": 1377,
+     "box": [
+      70,
+      10.6,
+      85,
+      20
+     ]
+    }
+   ],
+   "note": "Until 1378 Madurai and the far south were ruled by the Madurai Sultanate, which Kumara Kampana of Vijayanagara conquered; the map's earlier outline over the far south is not drawn.",
+   "sources": [
+    {
+     "title": "Wikipedia: Madurai Sultanate",
+     "url": "https://en.wikipedia.org/wiki/Madurai_Sultanate"
+    },
+    {
+     "title": "Wikipedia: Vijayanagara Empire",
+     "url": "https://en.wikipedia.org/wiki/Vijayanagara_Empire"
+    }
+   ]
+  },
+  "Bijapur Sultanate": {
+   "crop": [
+    {
+     "from": 1572,
+     "to": 1618,
+     "box": [
+      70,
+      14.5,
+      85,
+      21
+     ]
+    }
+   ],
+   "note": "After Talikota (1565) Bijapur took the Raichur Doab, but Penukonda was the Vijayanagara capital until 1592 and the lands south of the Tungabhadra stayed with the Aravidu kings, so they are not drawn as Bijapur's before 1619.",
+   "sources": [
+    {
+     "title": "Wikipedia: Bijapur Sultanate",
+     "url": "https://en.wikipedia.org/wiki/Bijapur_Sultanate"
+    },
+    {
+     "title": "Wikipedia: Penukonda",
+     "url": "https://en.wikipedia.org/wiki/Penukonda"
+    },
+    {
+     "title": "Wikipedia: Battle of Talikota",
+     "url": "https://en.wikipedia.org/wiki/Battle_of_Talikota"
+    }
+   ]
+  },
+  "Ahmadnagar Sultanate": {
+   "clip": [
+    1490,
+    1636
+   ],
+   "note": "The Ahmadnagar Sultanate ended in 1636, when the Mughals and Bijapur partitioned it; Daulatabad fell to the Mughals in 1633.",
+   "sources": [
+    {
+     "title": "Wikipedia: Ahmadnagar Sultanate",
+     "url": "https://en.wikipedia.org/wiki/Ahmadnagar_Sultanate"
+    },
+    {
+     "title": "Wikipedia: Daulatabad Fort",
+     "url": "https://en.wikipedia.org/wiki/Daulatabad_Fort"
+    }
+   ]
+  },
+  "Berar Sultanate": {
+   "clip": [
+    1490,
+    1574
+   ],
+   "note": "Berar was annexed by the Ahmadnagar Sultanate in 1574 and ceded to the Mughals in 1596.",
+   "sources": [
+    {
+     "title": "Wikipedia: Berar Sultanate",
+     "url": "https://en.wikipedia.org/wiki/Berar_Sultanate"
+    },
+    {
+     "title": "Wikipedia: Chand Bibi",
+     "url": "https://en.wikipedia.org/wiki/Chand_Bibi"
+    }
+   ]
+  },
+  "Durrani Empire": {
+   "crop": [
+    {
+     "from": 1764,
+     "to": 1827,
+     "box": [
+      50,
+      20,
+      75.5,
+      42
+     ]
+    }
+   ],
+   "note": "The Durranis held the Kashmir valley until 1819, but never Ladakh, which was an independent Namgyal kingdom until the Dogra conquest of 1834; the Sikhs took Sirhind and the eastern Punjab from 1764. Those lands are not drawn as Durrani after 1763.",
+   "sources": [
+    {
+     "title": "Wikipedia: Durrani Empire",
+     "url": "https://en.wikipedia.org/wiki/Durrani_Empire"
+    },
+    {
+     "title": "Wikipedia: Ladakh",
+     "url": "https://en.wikipedia.org/wiki/Ladakh"
+    },
+    {
+     "title": "Wikipedia: Sikh Empire",
+     "url": "https://en.wikipedia.org/wiki/Sikh_Empire"
+    }
+   ]
+  },
+  "Emirate of Afghanistan": {
+   "crop": [
+    {
+     "from": 1828,
+     "to": 1839,
+     "box": [
+      55,
+      25,
+      72.0,
+      40
+     ]
+    }
+   ],
+   "note": "Dost Mohammad's emirate ruled from Kabul; Kashmir was Sikh from 1819 and Ladakh was conquered by the Dogras in 1834, so the map's eastward extension over Gilgit, Baltistan and Ladakh (1828–39) is not drawn.",
+   "sources": [
+    {
+     "title": "Wikipedia: Emirate of Afghanistan",
+     "url": "https://en.wikipedia.org/wiki/Emirate_of_Afghanistan"
+    },
+    {
+     "title": "Wikipedia: Ladakh",
+     "url": "https://en.wikipedia.org/wiki/Ladakh"
+    },
+    {
+     "title": "Wikipedia: Sikh Empire",
+     "url": "https://en.wikipedia.org/wiki/Sikh_Empire"
+    }
+   ]
+  },
+  "Talpur Dynasty": {
+   "crop": [
+    {
+     "from": 1820,
+     "to": 1894,
+     "box": [
+      66.3,
+      23,
+      71.5,
+      28.6
+     ]
+    }
+   ],
+   "note": "The Talpur Mirs ruled Sindh from Hyderabad, Khairpur and Mirpur Khas until the British conquest of 1843. Kalat and Balochistan were not theirs, and the map's polygon in the far north (Gilgit and Hunza, 1840–1894) belongs to other states, so only Sindh is drawn.",
+   "sources": [
+    {
+     "title": "Wikipedia: Talpur dynasty",
+     "url": "https://en.wikipedia.org/wiki/Talpur_dynasty"
+    },
+    {
+     "title": "Wikipedia: Hunza (princely state)",
+     "url": "https://en.wikipedia.org/wiki/Hunza_(princely_state)"
+    }
+   ]
+  },
+  "Satavahana Dynasty": {
+   "crop": [
+    {
+     "from": -225,
+     "to": -28,
+     "box": [
+      70,
+      10,
+      84.0,
+      26
+     ]
+    }
+   ],
+   "note": "Kalinga (coastal Odisha) was a separate kingdom under Kharavela's Mahameghavahana dynasty, a rival of the Satavahanas, so it is not drawn as Satavahana land.",
+   "sources": [
+    {
+     "title": "Wikipedia: Satavahana dynasty",
+     "url": "https://en.wikipedia.org/wiki/Satavahana_dynasty"
+    },
+    {
+     "title": "Wikipedia: Kharavela",
+     "url": "https://en.wikipedia.org/wiki/Kharavela"
+    }
+   ]
+  },
+  "Mahameghavahana Dynasty": {
+   "crop": [
+    {
+     "from": -170,
+     "to": -165,
+     "box": [
+      81.5,
+      17,
+      87.6,
+      22.6
+     ]
+    }
+   ],
+   "note": "Kharavela ruled Kalinga; his campaigns against Magadha, the Satavahanas and the Tamil kings were raids, not lasting conquests, so only Kalinga is drawn. His dates are uncertain (2nd or 1st century BCE).",
+   "sources": [
+    {
+     "title": "Wikipedia: Kharavela",
+     "url": "https://en.wikipedia.org/wiki/Kharavela"
+    }
+   ]
+  },
+  "Islamic Republic of Pakistan": {
+   "crop": [
+    {
+     "from": 1972,
+     "to": 1972,
+     "box": [
+      60,
+      20,
+      80,
+      38
+     ]
+    }
+   ],
+   "note": "East Pakistan became independent Bangladesh on 16 December 1971, so it is not drawn as part of Pakistan in 1972.",
+   "sources": [
+    {
+     "title": "Wikipedia: Bangladesh Liberation War",
+     "url": "https://en.wikipedia.org/wiki/Bangladesh_Liberation_War"
+    }
+   ]
+  },
+  "Sind-Habbari Dynasty": {
+   "relabel": [
+    {
+     "from": 1027,
+     "to": 1201,
+     "name": "Soomra Dynasty",
+     "key": "Soomra Dynasty"
+    }
+   ],
+   "note": "Mahmud of Ghazni ended Habbari rule in Sindh in 1026; from then the Soomra dynasty ruled Sindh, and the later outline is shown under its name.",
+   "sources": [
+    {
+     "title": "Wikipedia: Habbari Emirate",
+     "url": "https://en.wikipedia.org/wiki/Habbari_Emirate"
+    },
+    {
+     "title": "Wikipedia: Soomra dynasty",
+     "url": "https://en.wikipedia.org/wiki/Soomra_dynasty"
+    }
+   ]
+  }
+ }
+}

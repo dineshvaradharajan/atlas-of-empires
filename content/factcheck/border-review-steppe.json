@@ -1,0 +1,769 @@
+{
+ "reviewer": "steppe",
+ "findings": [
+  {
+   "realm": "Golden Horde",
+   "years": [
+    1547,
+    1695
+   ],
+   "severity": "error",
+   "issue": "Polygons dated 1547–1695 lie over Mongolia (lon 80–126°E: Khalkha and Oirat lands, e.g. Ulaanbaatar and Nerchinsk), not the Volga; the earlier fix labelled them 'Golden Horde successor khanates'. Relabelled 'Mongol khanates' (same from/to as the old relabel, so it replaces it). The existing note sentence 'later polygons under its name are shown as its successor khanates' in content/corrections.json is now wrong and should be deleted by whoever merges.",
+   "fixed": true,
+   "source": {
+    "title": "Northern Yuan (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Northern_Yuan"
+   }
+  },
+  {
+   "realm": "Golden Horde",
+   "years": [
+    1294,
+    1401
+   ],
+   "severity": "error",
+   "issue": "Shape covered western Georgia (Kutaisi, Sukhumi 1300), Azerbaijan/Tabriz 1385–94 (only Tokhtamysh's 1385 raid) and Khwarezm 1389–1401 after Timur destroyed Urgench in 1388; three cut boxes remove these.",
+   "fixed": true,
+   "source": {
+    "title": "Golden Horde (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Golden_Horde"
+   }
+  },
+  {
+   "realm": "Blue Horde",
+   "years": [
+    1385,
+    1449
+   ],
+   "severity": "error",
+   "issue": "Known lead: a 1.8M km² Blue Horde copy overlaps the Golden Horde 1385–1401 (221 cells at 1400) although Tokhtamysh had reunited the Horde in 1380; also drawn over Kazan, Bolghar and Crimea. Hidden 1385–1401; 1380–84 and the 1402–40 Crimean remnant shown as Golden Horde; 1441–49 as the Crimean Khanate (founded 1441). White Horde 1380–84 also shown as Golden Horde.",
+   "fixed": true,
+   "source": {
+    "title": "Tokhtamysh (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Tokhtamysh"
+   }
+  },
+  {
+   "realm": "Astrakhan Khanate",
+   "years": [
+    1642,
+    1768
+   ],
+   "severity": "error",
+   "issue": "Khanate drawn until 1768 (conquered 1556). The 1642–1768 polygon is identical to the Don Cossacks polygon of 1636–1641 (bbox 38.3–45.3°E, 47.1–51.6°N) and was relabelled Don Cossacks.",
+   "fixed": true,
+   "source": {
+    "title": "Astrakhan Khanate (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Astrakhan_Khanate"
+   }
+  },
+  {
+   "realm": "Astrakhan Khanate",
+   "years": [
+    1475,
+    1501
+   ],
+   "severity": "warning",
+   "issue": "Shape covers New Sarai (Tsarev, 45.3°E 48.6°N), the Great Horde's capital until the Crimeans sacked it in 1502; nothing else is drawn there, so a cut would leave a hole. Not fixed.",
+   "fixed": false,
+   "source": {
+    "title": "Golden Horde (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Golden_Horde"
+   }
+  },
+  {
+   "realm": "Türgesh",
+   "years": [
+    705,
+    749
+   ],
+   "severity": "error",
+   "issue": "After the earlier 692–704 relabel the 705–749 polygon still spans Mongolia to Sogdiana as 'Türgesh', so the Orkhon valley (Bilge Qaghan's Khoshoo Tsaidam, 735) showed the Türgesh. Mongolia part relabelled Second Turkic Khaganate for 705–744 (cropped east of 89°E); 745–749 cropped to the west. 'Turks' in Zhetysu 699–717 relabelled Türgesh. Zhetysu 718–744 (Suluk's Türgesh) is left blank: no separate polygon exists.",
+   "fixed": true,
+   "source": {
+    "title": "Türgesh (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/T%C3%BCrgesh"
+   }
+  },
+  {
+   "realm": "Kazakh Khanate",
+   "years": [
+    1490,
+    1504
+   ],
+   "severity": "error",
+   "issue": "Shape reached 37°N, putting Samarkand, Bukhara (1490–98) and Tashkent in the Kazakh Khanate; they were Timurid/Moghul/Shaybanid. Cropped south of 41.6°N. Samarkand and Bukhara are blank afterwards in 1490–1500 because no Timurid polygon is drawn there (see Timurid finding).",
+   "fixed": true,
+   "source": {
+    "title": "Khanate of Bukhara (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Khanate_of_Bukhara"
+   }
+  },
+  {
+   "realm": "Kazakh Khanate",
+   "years": [
+    1598,
+    1609
+   ],
+   "severity": "warning",
+   "issue": "Shape still includes Samarkand and Ferghana (Kokand, Panjikent) in 1598–1609; Tawakkul took Samarkand in 1598 but was soon defeated by the Uzbeks and the Janids ruled Samarkand from 1599. Not fixed (no source for the exact end of Kazakh control).",
+   "fixed": false,
+   "source": {
+    "title": "Kazakh Khanate (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Kazakh_Khanate"
+   }
+  },
+  {
+   "realm": "Khwarezmid Empire",
+   "years": [
+    1220,
+    1235
+   ],
+   "severity": "error",
+   "issue": "Bukhara, Samarkand and Otrar (taken Feb–Mar 1220) and Gurganj, Merv, Nishapur (April 1221) stayed Khwarazmian through 1227; the empire was drawn to 1235 (Jalal al-Din died 1231). Clipped to 1231 and cropped to western Iran from 1221.",
+   "fixed": true,
+   "source": {
+    "title": "Mongol invasion of the Khwarazmian Empire (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Mongol_invasion_of_the_Khwarazmian_Empire"
+   }
+  },
+  {
+   "realm": "Khwarezmid Empire",
+   "years": [
+    1216,
+    1219
+   ],
+   "severity": "warning",
+   "issue": "Peak area 4.02M km² vs published 2.3–3.6M km²; shape reaches 77°E (Kuchlug's Kashgaria). Not fixed.",
+   "fixed": false,
+   "source": {
+    "title": "Khwarazmian Empire (Wikipedia): 2.3 to 3.6 million km²",
+    "url": "https://en.wikipedia.org/wiki/Khwarazmian_Empire"
+   }
+  },
+  {
+   "realm": "Kara-Khitans",
+   "years": [
+    1130,
+    1218
+   ],
+   "severity": "warning",
+   "issue": "Peak area 2.57M km² vs 1.0M published: the shape includes vassal states (Khwarazm, the Western Kara-Khanids, Qocho). Left as is.",
+   "fixed": false,
+   "source": {
+    "title": "Qara Khitai (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Qara_Khitai"
+   }
+  },
+  {
+   "realm": "Kingdom of Georgia",
+   "years": [
+    1468,
+    1802
+   ],
+   "severity": "error",
+   "issue": "'Kingdom of Georgia' drawn to 1802 (Wikidata ends the united kingdom 1466); the 28–55k km² polygon around Tbilisi is Kartli (to 1762) and Kartli-Kakheti (1763–1801), annexed by Russia in 1801. Relabelled; clipped to 1801. Tbilisi 1802 is now blank: Russian Empire not drawn there until 1803+.",
+   "fixed": true,
+   "source": {
+    "title": "Kingdom of Kartli-Kakheti (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Kingdom_of_Kartli-Kakheti"
+   }
+  },
+  {
+   "realm": "Great Yuan",
+   "years": [
+    -110,
+    50
+   ],
+   "severity": "error",
+   "issue": "Mislabelled realm linked to the Yuan dynasty (Q7313): it is Dayuan in the Ferghana valley. Relabelled 'Dayuan (Ferghana)'. Wikidata link should be Q1179260 (add to content/borders/wd-overrides.json).",
+   "fixed": true,
+   "source": {
+    "title": "Dayuan (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Dayuan"
+   }
+  },
+  {
+   "realm": "Chagatai Khanate",
+   "years": [
+    1352,
+    1462
+   ],
+   "severity": "warning",
+   "issue": "Map starts Moghulistan in 1463 (Wikidata 1347); from 1352 the Chagatai polygon excludes Transoxiana and is Moghulistan. Relabelled.",
+   "fixed": true,
+   "source": {
+    "title": "Moghulistan (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Moghulistan"
+   }
+  },
+  {
+   "realm": "Kingdom of Armenia",
+   "years": [
+    429,
+    646
+   ],
+   "severity": "error",
+   "issue": "Kingdom drawn to 646 though the Sasanians abolished it in 428 (dates lead: ends 646 vs 428). Left to the MENA review, which relabels 429–646 as 'Sasanian Armenia'; suggest 638–646 instead be 'Principality of Armenia' (Theodore Rshtuni, presiding prince recognised by Constans II in 643, under Arab suzerainty by 652), since Armenia was no longer Sasanian then.",
+   "fixed": false,
+   "source": [
+    {
+     "title": "Kingdom of Armenia (antiquity) (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Kingdom_of_Armenia_(antiquity)"
+    },
+    {
+     "title": "Theodore Rshtuni (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Theodore_Rshtuni"
+    }
+   ]
+  },
+  {
+   "realm": "Khazaria",
+   "years": [
+    970,
+    979
+   ],
+   "severity": "warning",
+   "issue": "Khaganate drawn to 979; it ended in 969 when Sviatoslav sacked Atil. Clipped.",
+   "fixed": true,
+   "source": {
+    "title": "Khazars (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Khazars"
+   }
+  },
+  {
+   "realm": "Qarlugs",
+   "years": [
+    793,
+    849
+   ],
+   "severity": "warning",
+   "issue": "Wikidata link Q2330335 is 'Mongol invasion of Central Asia'; the Karluks are Q815677 (add to wd-overrides.json).",
+   "fixed": false,
+   "source": {
+    "title": "Wikidata: Karluks (Q815677)",
+    "url": "https://www.wikidata.org/wiki/Q815677"
+   }
+  },
+  {
+   "realm": "Oghuz Turks",
+   "years": [
+    750,
+    1055
+   ],
+   "severity": "warning",
+   "issue": "Wikidata link Q2118293 ('Turk', wiki 'Oghuz Khagan') is shared with the 'Turks' realm; the Oghuz Turks are Q494462 (add to wd-overrides.json).",
+   "fixed": false,
+   "source": {
+    "title": "Wikidata: Oghuz Turks (Q494462)",
+    "url": "https://www.wikidata.org/wiki/Q494462"
+   }
+  },
+  {
+   "realm": "Timurid Empire",
+   "years": [
+    1370,
+    1515
+   ],
+   "severity": "error",
+   "issue": "Journey realm, not fixed: starts 1375 (Samarkand blank 1360–1374; Timur made Samarkand his capital in 1370); drawn over Sarai and the lower Volga 1395–1401 (Timur sacked Sarai in 1395 but did not annex it); no Timurid shape over Samarkand/Bukhara in 1475–1500 (Sultan Ahmad's Samarkand); Samarkand still Timurid 1512–1515 though Babur lost it in 1512.",
+   "fixed": false,
+   "source": {
+    "title": "Timurid Empire (Wikipedia): established 1370, capital Samarkand",
+    "url": "https://en.wikipedia.org/wiki/Timurid_Empire"
+   }
+  },
+  {
+   "realm": "Russian Empire",
+   "years": [
+    1850,
+    1884
+   ],
+   "severity": "error",
+   "issue": "Journey realm, not fixed: Ak-Mechet Russian from 1850 (taken 1853); Tashkent and Khujand Russian in 1864 (Tashkent fell 29 June 1865, Khujand 1867); Merv Russian in 1880 (annexed 1884); Tbilisi blank in 1802 (Kartli-Kakheti annexed 1801). The Bukhara and Khiva protectorates (1868/1873–1920) are folded into the Russian Empire, so both appear to vanish for 50 years.",
+   "fixed": false,
+   "source": {
+    "title": "Russian conquest of Central Asia (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Russian_conquest_of_Central_Asia"
+   }
+  },
+  {
+   "realm": "Tsardom of Russia",
+   "years": [
+    1632,
+    1700
+   ],
+   "severity": "warning",
+   "issue": "Journey realm, not fixed: Yakutsk (founded 1632) not Russian until c. 1660; Nerchinsk (founded 1653) inside the Mongol polygon until 1700.",
+   "fixed": false,
+   "source": {
+    "title": "Russian conquest of Siberia (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Russian_conquest_of_Siberia"
+   }
+  },
+  {
+   "realm": "Mongol Empire",
+   "years": [
+    1221,
+    1227
+   ],
+   "severity": "warning",
+   "issue": "Journey realm, not fixed: after the Khwarezm fix, Gurganj, Khiva, Merv and Nishapur are blank in 1221–1227; the Mongols held them from 1221.",
+   "fixed": false,
+   "source": {
+    "title": "Siege of Gurganj (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Siege_of_Gurganj"
+   }
+  },
+  {
+   "realm": "Great Seljuk Empire",
+   "years": [
+    1122,
+    1125
+   ],
+   "severity": "warning",
+   "issue": "Journey realm, not fixed: Tbilisi still Seljuk in 1125; David IV took it in 1122.",
+   "fixed": false,
+   "source": {
+    "title": "Emirate of Tbilisi (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Emirate_of_Tbilisi"
+   }
+  },
+  {
+   "realm": "Byzantine Empire",
+   "years": [
+    1064,
+    1070
+   ],
+   "severity": "warning",
+   "issue": "Journey realm, not fixed: Ani still Byzantine in 1070; Alp Arslan's Seljuks took it in 1064.",
+   "fixed": false,
+   "source": {
+    "title": "Ani (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Ani"
+   }
+  },
+  {
+   "realm": "Parthian Empire",
+   "years": [
+    1,
+    200
+   ],
+   "severity": "warning",
+   "issue": "Journey realm, not fixed: Bukhara drawn as Parthian at 1 and 200 CE; Sogdiana passed from the Seleucids and Greco-Bactrians to the Yuezhi/Kushans, not Parthia.",
+   "fixed": false,
+   "source": {
+    "title": "Samarkand (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Samarkand"
+   }
+  },
+  {
+   "realm": "Huns",
+   "years": [
+    387,
+    401
+   ],
+   "severity": "warning",
+   "issue": "Journey realm, not fixed: Armenia (Artaxata, Dvin) drawn as Hunnic c. 400; the Huns raided across the Caucasus in 395 but did not rule Armenia.",
+   "fixed": false,
+   "source": {
+    "title": "Kingdom of Armenia (antiquity) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Kingdom_of_Armenia_(antiquity)"
+   }
+  },
+  {
+   "realm": "Hamdanid Emirates",
+   "years": [
+    965,
+    1259
+   ],
+   "severity": "error",
+   "issue": "Not my region's realm: after the Hamdanids ended (1004) the realm wanders: Tbilisi and Tabriz in 965–1000 (Emirate of Tbilisi), Ani and Yerevan 1192–1201 (Georgia took Ani in 1199), Afghanistan 1210–1249, Arabia 1250–1259.",
+   "fixed": false,
+   "source": {
+    "title": "Ani (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Ani"
+   }
+  },
+  {
+   "realm": "Germiyanids",
+   "years": [
+    1375,
+    1406
+   ],
+   "severity": "warning",
+   "issue": "Not my region's realm: an Anatolian beylik's polygon appears at Derbent (Caspian) in 1375–1406.",
+   "fixed": false,
+   "source": {
+    "title": "Shirvanshahs (Wikipedia): Darband in Shirvan's sphere",
+    "url": "https://en.wikipedia.org/wiki/Shirvanshahs"
+   }
+  }
+ ],
+ "corrections": {
+  "Golden Horde": {
+   "relabel": [
+    {
+     "from": 1503,
+     "to": 1695,
+     "name": "Mongol khanates",
+     "key": "Mongol khanates"
+    }
+   ],
+   "cut": [
+    {
+     "from": 1294,
+     "to": 1401,
+     "box": [
+      39.8,
+      41.0,
+      44.5,
+      43.4
+     ]
+    },
+    {
+     "from": 1385,
+     "to": 1394,
+     "box": [
+      44.6,
+      37.0,
+      50.5,
+      41.9
+     ]
+    },
+    {
+     "from": 1389,
+     "to": 1401,
+     "box": [
+      57.5,
+      38.0,
+      63.0,
+      43.7
+     ]
+    }
+   ],
+   "note": "The polygons dated 1547–1695 under this name lie over Mongolia, not the Volga: they are the Mongol khanates (the Khalkha in the north and centre, the Oirats in the west), shown under that name; the Khalkha became Qing vassals in 1691. Western Georgia was never Horde territory and is left out. Tokhtamysh only raided Azerbaijan in 1385, and Timur destroyed Urgench in 1388, so Transcaucasia (1385–94) and Khwarezm (from 1389) are left out.",
+   "sources": [
+    {
+     "title": "Golden Horde (Wikipedia): Timur invaded Khwarezm and destroyed Urgench; the Great Horde ended in 1502",
+     "url": "https://en.wikipedia.org/wiki/Golden_Horde"
+    },
+    {
+     "title": "Northern Yuan (Wikipedia): Mongol regime 1368–1635; Oirats united in the west c. 1600–1620; Khalkhas in Outer Mongolia",
+     "url": "https://en.wikipedia.org/wiki/Northern_Yuan"
+    },
+    {
+     "title": "Tokhtamysh (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Tokhtamysh"
+    }
+   ]
+  },
+  "Blue Horde": {
+   "hide": [
+    [
+     1385,
+     1401
+    ]
+   ],
+   "relabel": [
+    {
+     "from": 1380,
+     "to": 1384,
+     "name": "Golden Horde",
+     "key": "Golden Horde"
+    },
+    {
+     "from": 1402,
+     "to": 1440,
+     "name": "Golden Horde",
+     "key": "Golden Horde"
+    },
+    {
+     "from": 1441,
+     "to": 1449,
+     "name": "Crimean Khanate",
+     "key": "Crimean Khanate"
+    }
+   ],
+   "note": "Tokhtamysh took Sarai in 1380 and reunited the Horde's two wings, so from 1380 this shape is shown as the Golden Horde (the duplicate copy drawn over the Golden Horde in 1385–1401 is hidden). Its later polygon in Crimea is shown as the Golden Horde until 1441 and then as the Crimean Khanate, founded that year by Hacı I Giray.",
+   "sources": [
+    {
+     "title": "Blue Horde (Wikipedia): Tokhtamysh united the Blue Horde with the White Horde in 1380",
+     "url": "https://en.wikipedia.org/wiki/Blue_Horde"
+    },
+    {
+     "title": "Tokhtamysh (Wikipedia): khan of the Golden Horde 1380–1395",
+     "url": "https://en.wikipedia.org/wiki/Tokhtamysh"
+    },
+    {
+     "title": "Crimean Khanate (Wikipedia): established by Hacı I Giray, 1441–1783",
+     "url": "https://en.wikipedia.org/wiki/Crimean_Khanate"
+    }
+   ]
+  },
+  "White Horde": {
+   "relabel": [
+    {
+     "from": 1380,
+     "to": 1384,
+     "name": "Golden Horde",
+     "key": "Golden Horde"
+    }
+   ],
+   "note": "From 1380, when Tokhtamysh of the White Horde took Sarai and reunited the Horde, this shape is shown as part of the Golden Horde.",
+   "sources": [
+    {
+     "title": "Tokhtamysh (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Tokhtamysh"
+    },
+    {
+     "title": "Blue Horde (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Blue_Horde"
+    }
+   ]
+  },
+  "Astrakhan Khanate": {
+   "relabel": [
+    {
+     "from": 1642,
+     "to": 1768,
+     "name": "Don Cossacks",
+     "key": "Don Cossacks"
+    }
+   ],
+   "note": "Russia took Astrakhan in 1556 and the khanate ended. The 1642–1768 polygon between the Don and the Volga continues the Don Cossacks' shape exactly and is the land of the Don Cossack Host, so it is shown under that name.",
+   "sources": [
+    {
+     "title": "Astrakhan Khanate (Wikipedia): Russia occupied Astrakhan in 1556",
+     "url": "https://en.wikipedia.org/wiki/Astrakhan_Khanate"
+    },
+    {
+     "title": "Don Cossacks (Wikipedia): the Don Cossack Host, independent or autonomous from the late 16th century to 1918",
+     "url": "https://en.wikipedia.org/wiki/Don_Cossacks"
+    }
+   ]
+  },
+  "Türgesh": {
+   "relabel": [
+    {
+     "from": 705,
+     "to": 744,
+     "name": "Second Turkic Khaganate",
+     "key": "Second Turkic Khaganate"
+    }
+   ],
+   "crop": [
+    {
+     "from": 705,
+     "to": 744,
+     "box": [
+      89,
+      35,
+      130,
+      56
+     ]
+    },
+    {
+     "from": 745,
+     "to": 749,
+     "box": [
+      55,
+      35,
+      89,
+      50
+     ]
+    }
+   ],
+   "note": "From 705 to 744 the eastern part of this shape, over Mongolia, is the Second Turkic Khaganate, centred on Ötüken in the Orkhon valley, and is shown under that name. The Türgesh, whose capitals were Suyab and Taraz, held the Chu and Talas valleys; their western lands are not drawn in these years. After the Uyghurs took Ötüken in 744 only the western part is shown as Türgesh.",
+   "sources": [
+    {
+     "title": "Türgesh (Wikipedia): khaganate from 699, capitals Suyab and Taraz; defeated by Qapaghan 711; ended by the Karluks 766",
+     "url": "https://en.wikipedia.org/wiki/T%C3%BCrgesh"
+    },
+    {
+     "title": "Second Turkic Khaganate (Wikipedia): 682–744, centred on Ötüken; Ötüken taken by the Uyghurs in 744",
+     "url": "https://en.wikipedia.org/wiki/Second_Turkic_Khaganate"
+    }
+   ]
+  },
+  "Turks": {
+   "relabel": [
+    {
+     "from": 699,
+     "to": 717,
+     "name": "Türgesh",
+     "key": "Türgesh"
+    }
+   ],
+   "note": "From 699 the former Western Turkic lands in Zhetysu were ruled by the Türgesh khaganate and are shown under that name.",
+   "sources": [
+    {
+     "title": "Türgesh (Wikipedia): established a khaganate in 699 after the demise of the Western Turks",
+     "url": "https://en.wikipedia.org/wiki/T%C3%BCrgesh"
+    }
+   ]
+  },
+  "Kazakh Khanate": {
+   "crop": [
+    {
+     "from": 1490,
+     "to": 1504,
+     "box": [
+      44,
+      41.6,
+      90,
+      56
+     ]
+    }
+   ],
+   "note": "Before 1505 the Kazakhs held the steppe and the towns of northern Turkestan; Samarkand, Bukhara and Tashkent were ruled by Timurids, Moghuls and then the Shaybanids, so the part of this shape south of the Syr Darya towns is left out for 1490–1504. Tawakkul Khan's capture of Samarkand in 1598 was short-lived.",
+   "sources": [
+    {
+     "title": "Kazakh Khanate (Wikipedia): c. 1495–96 division with Muhammad Shaybani; 1598 campaign",
+     "url": "https://en.wikipedia.org/wiki/Kazakh_Khanate"
+    },
+    {
+     "title": "Khanate of Bukhara (Wikipedia): Shaybani conquered Samarkand, Bukhara, Tashkent and Andijan 1500–1503",
+     "url": "https://en.wikipedia.org/wiki/Khanate_of_Bukhara"
+    }
+   ]
+  },
+  "Khwarezmid Empire": {
+   "clip": [
+    1202,
+    1231
+   ],
+   "crop": [
+    {
+     "from": 1220,
+     "to": 1220,
+     "box": [
+      40,
+      24,
+      63.5,
+      44
+     ]
+    },
+    {
+     "from": 1221,
+     "to": 1231,
+     "box": [
+      40,
+      24,
+      58.2,
+      41.5
+     ]
+    }
+   ],
+   "note": "The Mongols took Otrar, Bukhara and Samarkand in 1220 and Gurganj and Merv in April 1221. From 1221 the Khwarazmian state is shown only in western Iran, where Jalal al-Din ruled from Tabriz from 1225 until he was killed in 1231, when it ended.",
+   "sources": [
+    {
+     "title": "Siege of Bukhara (Wikipedia): February 1220",
+     "url": "https://en.wikipedia.org/wiki/Siege_of_Bukhara"
+    },
+    {
+     "title": "Siege of Samarkand (1220) (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Siege_of_Samarkand_(1220)"
+    },
+    {
+     "title": "Siege of Gurganj (Wikipedia): April 1221",
+     "url": "https://en.wikipedia.org/wiki/Siege_of_Gurganj"
+    },
+    {
+     "title": "Siege of Merv (1221) (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Siege_of_Merv_(1221)"
+    },
+    {
+     "title": "Jalal al-Din Mangburni (Wikipedia): Tabriz 1225; killed 15 August 1231",
+     "url": "https://en.wikipedia.org/wiki/Jalal_al-Din_Mangburni"
+    },
+    {
+     "title": "Khwarazmian Empire (Wikipedia): 1077–1231",
+     "url": "https://en.wikipedia.org/wiki/Khwarazmian_Empire"
+    }
+   ]
+  },
+  "Kingdom of Georgia": {
+   "clip": [
+    1010,
+    1801
+   ],
+   "relabel": [
+    {
+     "from": 1468,
+     "to": 1762,
+     "name": "Kingdom of Kartli",
+     "key": "Kingdom of Kartli"
+    },
+    {
+     "from": 1763,
+     "to": 1801,
+     "name": "Kingdom of Kartli-Kakheti",
+     "key": "Kingdom of Kartli-Kakheti"
+    }
+   ],
+   "note": "The united kingdom broke up into Kartli, Kakheti and Imereti in the late 15th century. The polygon around Tbilisi from 1468 is the Kingdom of Kartli, and from 1763 the united Kingdom of Kartli-Kakheti, which Russia annexed in 1801.",
+   "sources": [
+    {
+     "title": "Kingdom of Kartli (Wikipedia): from the 1478 division until 1762, capital Tbilisi",
+     "url": "https://en.wikipedia.org/wiki/Kingdom_of_Kartli"
+    },
+    {
+     "title": "Kingdom of Kartli-Kakheti (Wikipedia): created 1762; annexed by Russia in 1801",
+     "url": "https://en.wikipedia.org/wiki/Kingdom_of_Kartli-Kakheti"
+    },
+    {
+     "title": "Kingdom of Kakheti (Wikipedia): 1466–1762, capitals Gremi and Telavi",
+     "url": "https://en.wikipedia.org/wiki/Kingdom_of_Kakheti"
+    }
+   ]
+  },
+  "Great Yuan": {
+   "relabel": [
+    {
+     "from": -110,
+     "to": 50,
+     "name": "Dayuan (Ferghana)",
+     "key": "Dayuan"
+    }
+   ],
+   "note": "'Great Yuan' is a literal rendering of Dayuan, the Chinese name for the kingdom of the Ferghana valley (capital Ershi or Guishan, near Khujand), which the Han fought from 104 BCE. It has nothing to do with the later Mongol Yuan dynasty.",
+   "sources": [
+    {
+     "title": "Dayuan (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Dayuan"
+    }
+   ]
+  },
+  "Chagatai Khanate": {
+   "relabel": [
+    {
+     "from": 1352,
+     "to": 1462,
+     "name": "Moghulistan",
+     "key": "Moghulistan"
+    }
+   ],
+   "note": "From 1347 the khanate's eastern half became independent as Moghulistan (the Eastern Chagatai Khanate), centred on the Ili region. From 1352 this shape no longer includes Transoxiana, so it is shown as Moghulistan.",
+   "sources": [
+    {
+     "title": "Moghulistan (Wikipedia): independent from 1347 under Tughlugh Timur; also called the Eastern Chagatai Khanate",
+     "url": "https://en.wikipedia.org/wiki/Moghulistan"
+    }
+   ]
+  },
+  "Khazaria": {
+   "clip": [
+    630,
+    969
+   ],
+   "note": "The khaganate ended when Sviatoslav of Kiev sacked its capital Atil in about 965–969.",
+   "sources": [
+    {
+     "title": "Khazars (Wikipedia): khaganate c. 650–969; Atil capital until c. 965–969",
+     "url": "https://en.wikipedia.org/wiki/Khazars"
+    }
+   ]
+  }
+ }
+}

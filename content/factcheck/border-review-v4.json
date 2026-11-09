@@ -1,0 +1,1314 @@
+{
+ "reviewer": "v4",
+ "findings": [
+  {
+   "realm": "Songhai Empire",
+   "years": [
+    1592,
+    1608
+   ],
+   "severity": "error",
+   "issue": "Full Songhai empire still drawn over Gao and Timbuktu 1592–94 (Tondibi, 13 March 1591) plus a meaningless 1595–1608 speck. Clipped to 1463–1591.",
+   "fixed": true,
+   "source": {
+    "title": "Battle of Tondibi (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Tondibi"
+   }
+  },
+  {
+   "realm": "Mali Empire",
+   "years": [
+    1434,
+    1467
+   ],
+   "severity": "error",
+   "issue": "Timbuktu and Gao drawn Malian until 1467; Timbuktu fell to the Tuareg in 1433–34. Cropped east of 3.9°W for 1434–67.",
+   "fixed": true,
+   "source": {
+    "title": "Mali Empire (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Mali_Empire"
+   }
+  },
+  {
+   "realm": "British Colonial Empire",
+   "years": [
+    1949,
+    1999
+   ],
+   "severity": "error",
+   "issue": "Post-colonial overlaps (several also reported by the Americas and Southeast Asia reviewers): Newfoundland/Labrador 1949–57 (over Canada), Fiji from 1971, Solomon Islands 1979–95 (over the independent state), Belize 1982–95, Bahamas 1974–95, Hong Kong 1998–99. Cropped by period; Bahamas only removed from 1982 (1974–81 not separable from Belize), Grenada 1974–75 and Brunei 1984–95 remain (noted).",
+   "fixed": true,
+   "source": {
+    "title": "Transfer of sovereignty over Hong Kong (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Transfer_of_sovereignty_over_Hong_Kong"
+   }
+  },
+  {
+   "realm": "Kingdom of Great Britain",
+   "years": [
+    1962,
+    2023
+   ],
+   "severity": "error",
+   "issue": "United Kingdom drawn over the UAE, Qatar and Oman until 2023 (UAE independent 2 Dec 1971; Oman never British); Kuwait to 1968 (indep. 1961), Aden 1968. Cropped to the British Isles and Gibraltar from 1972; 1962–71 overreach remains (noted).",
+   "fixed": true,
+   "source": {
+    "title": "United Arab Emirates (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/United_Arab_Emirates"
+   }
+  },
+  {
+   "realm": "British Gold Coast",
+   "years": [
+    1957,
+    1959
+   ],
+   "severity": "error",
+   "issue": "Ghana (independent 6 March 1957) still drawn as British Gold Coast 1957–59. Cropped to the Nigerian part.",
+   "fixed": true,
+   "source": {
+    "title": "Ghana (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Ghana"
+   }
+  },
+  {
+   "realm": "British East Africa",
+   "years": [
+    1963,
+    1968
+   ],
+   "severity": "error",
+   "issue": "Kenya, Uganda, Zambia, Malawi, the Gambia drawn British after independence (to 1968). Cropped to southern Africa for 1965–68; 1963–64 (Uganda, Kenya) unfixable with one box.",
+   "fixed": true,
+   "source": {
+    "title": "Kenya (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Kenya"
+   }
+  },
+  {
+   "realm": "British Cape Colony",
+   "years": [
+    1803,
+    1805
+   ],
+   "severity": "error",
+   "issue": "Cape drawn British and Batavian at once 1803–05 (Cape returned to Batavian Republic 1803–06). Cropped to Freetown.",
+   "fixed": true,
+   "source": {
+    "title": "Dutch Cape Colony (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Dutch_Cape_Colony"
+   }
+  },
+  {
+   "realm": "Dutch Gold Coast",
+   "years": [
+    1861,
+    1872
+   ],
+   "severity": "error",
+   "issue": "Lagos/Badagry (British Lagos Colony, 1861) drawn as Dutch Gold Coast. Cropped.",
+   "fixed": true,
+   "source": {
+    "title": "Lagos Colony (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Lagos_Colony"
+   }
+  },
+  {
+   "realm": "Dutch East Indies",
+   "years": [
+    1809,
+    1845
+   ],
+   "severity": "error",
+   "issue": "A Dutch East Indies polygon sits on Calcutta (1809–45), plus the Danish Nicobars. Cropped to the archipelago. Calcutta is still overlapped by French India and Danish India polygons (not my realms).",
+   "fixed": true,
+   "source": {
+    "title": "Dutch Bengal (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Dutch_Bengal"
+   }
+  },
+  {
+   "realm": "Kingdom of Portugal",
+   "years": [
+    1650,
+    1749
+   ],
+   "severity": "error",
+   "issue": "Muscat drawn Portuguese until c.1749; Omanis took it on 23 January 1650. Cropped.",
+   "fixed": true,
+   "source": {
+    "title": "Muscat (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Muscat"
+   }
+  },
+  {
+   "realm": "Spanish Empire",
+   "years": [
+    1818,
+    1879
+   ],
+   "severity": "error",
+   "issue": "Spanish shapes survive in South America after independence: central Chile 1818–19, and pockets at Lima/Callao, La Paz, Chiloé, Carmen de Patagones and the Falklands to 1852, Chiloé to 1879 (Callao and Chiloé surrendered January 1826; Americas reviewer also found this). Cropped 1818–19 south of 27°S (costs royalist Valdivia/Chiloé for two years) and everything south of 3°N from 1826.",
+   "fixed": true,
+   "source": {
+    "title": "Peruvian War of Independence (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Peruvian_War_of_Independence"
+   }
+  },
+  {
+   "realm": "Portuguese Empire",
+   "years": [
+    1805,
+    1814
+   ],
+   "severity": "error",
+   "issue": "Eastern Hispaniola and St Martin drawn Portuguese 1805–14 (cropped); Guadeloupe and Martinique 1805–10 and French Guiana 1805–08 also drawn Portuguese (Portugal held French Guiana only 1809–17; Americas reviewer) — these remain, noted.",
+   "fixed": true,
+   "source": {
+    "title": "French Guiana (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/French_Guiana"
+   }
+  },
+  {
+   "realm": "Kingdom of Spain",
+   "years": [
+    1762,
+    1899
+   ],
+   "severity": "error",
+   "issue": "Spain drawn over Bourbon Naples/Sicily 1762–77 (overlapping) and Parma to 1806; Cuba, Puerto Rico and the Philippines still Spanish in 1899 after the Treaty of Paris. Cropped. 1735–61 Naples still shaded Spanish (noted).",
+   "fixed": true,
+   "source": {
+    "title": "Treaty of Paris (1898) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_Paris_(1898)"
+   }
+  },
+  {
+   "realm": "Francoist Spain",
+   "years": [
+    1969,
+    1975
+   ],
+   "severity": "error",
+   "issue": "Equatorial Guinea drawn Spanish after independence (12 Oct 1968). Cropped.",
+   "fixed": true,
+   "source": {
+    "title": "Spanish Guinea (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Spanish_Guinea"
+   }
+  },
+  {
+   "realm": "Batavian Republic",
+   "years": [
+    1806,
+    1810
+   ],
+   "severity": "error",
+   "issue": "Label: the Kingdom of Holland (1806–1810) shown as Batavian Republic. Relabelled, group key kept.",
+   "fixed": true,
+   "source": {
+    "title": "Kingdom of Holland (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Kingdom_of_Holland"
+   }
+  },
+  {
+   "realm": "Italian Republic",
+   "years": [
+    1805,
+    1813
+   ],
+   "severity": "error",
+   "issue": "Label: Napoleonic Kingdom of Italy (17 March 1805–1814) shown as Italian Republic; realm is also linked to Wikidata Q38 'Italy'. Relabelled.",
+   "fixed": true,
+   "source": {
+    "title": "Kingdom of Italy (Napoleonic) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Kingdom_of_Italy_(Napoleonic)"
+   }
+  },
+  {
+   "realm": "Helvetic Republic",
+   "years": [
+    1803,
+    1814
+   ],
+   "severity": "error",
+   "issue": "Label: Helvetic Republic shown to 1814; replaced by the Act of Mediation confederation in 1803. Relabelled.",
+   "fixed": true,
+   "source": {
+    "title": "Act of Mediation (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Act_of_Mediation"
+   }
+  },
+  {
+   "realm": "Kingdom of Naples (Napoleonic)",
+   "years": [
+    1762,
+    1814
+   ],
+   "severity": "error",
+   "issue": "Polygon starts in 1762 (Bourbon kingdom labelled Napoleonic) and includes Sicily 1806–14, which Murat/Joseph never held. Relabelled 1762–1805, Sicily cropped 1806–14 (costs a sliver of Calabria south of 38.28°N).",
+   "fixed": true,
+   "source": {
+    "title": "Kingdom of Naples (Napoleonic) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Kingdom_of_Naples_(Napoleonic)"
+   }
+  },
+  {
+   "realm": "First French Empire",
+   "years": [
+    1807,
+    1813
+   ],
+   "severity": "error",
+   "issue": "Empire drawn over occupied Prussia/Poland (1807–08), Madrid, Portugal and all Spain (1809–13), and Lithuania/Russia in 1812 and 1813. Cropped by period; northern Spain north of 41.3–41.8°N remains (noted), Réunion lost 1807–10.",
+   "fixed": true,
+   "source": {
+    "title": "Treaties of Tilsit (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Treaties_of_Tilsit"
+   }
+  },
+  {
+   "realm": "German Empire",
+   "years": [
+    1919,
+    1919
+   ],
+   "severity": "error",
+   "issue": "German Empire drawn in 1919 (incl. Courland/Riga); the Empire ended November 1918. Relabelled Weimar Republic and cropped. Occupied Belgium, Poland, Baltics (1915–18) and Ukraine (1918) drawn as the Empire (noted).",
+   "fixed": true,
+   "source": {
+    "title": "Weimar Republic (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Weimar_Republic"
+   }
+  },
+  {
+   "realm": "Russian Republic",
+   "years": [
+    1918,
+    1919
+   ],
+   "severity": "error",
+   "issue": "'Russian Republic' label used for 1918–19 civil-war Russia, while the Bolshevik centre around Moscow is blank. Relabelled 'Russia (Civil War)' with a note; the blank remains.",
+   "fixed": true,
+   "source": {
+    "title": "Russian Republic (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Russian_Republic"
+   }
+  },
+  {
+   "realm": "Union of Soviet Socialist Republics",
+   "years": [
+    1922,
+    1990
+   ],
+   "severity": "error",
+   "issue": "USSR drawn over Tuva 1922–43 (annexed Oct 1944), Poland 1945–52, E. Germany/Austria/Hungary/Romania/Bulgaria/Manchuria/N. Korea 1945–48, northern Iran 1942–46, Czechoslovakia 1969–90, and Afghanistan (Herat, Kunduz, Kabul) 1979–89. Not croppable with one box; note added.",
+   "fixed": false,
+   "source": {
+    "title": "Tuvan People's Republic (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Tuvan_People%27s_Republic"
+   }
+  },
+  {
+   "realm": "Estado Novo",
+   "years": [
+    1962,
+    1974
+   ],
+   "severity": "error",
+   "issue": "Goa drawn Portuguese until 1974 (annexed by India Dec 1961); overlaps India. Not croppable (Macau/Timor east, Africa west); note added.",
+   "fixed": false,
+   "source": {
+    "title": "Annexation of Goa (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Annexation_of_Goa"
+   }
+  },
+  {
+   "realm": "Portuguese Colonies",
+   "years": [
+    1641,
+    1664
+   ],
+   "severity": "error",
+   "issue": "Malacca (Dutch 1641), Ceylon (Colombo 1656, Jaffna 1658) and Cochin/Cannanore (Dutch 1663) stay Portuguese for years, overlapping the Dutch. Not croppable; Goa city itself (Old Goa/Panaji) is never Portuguese — the Goa shape sits around Margão.",
+   "fixed": false,
+   "source": {
+    "title": "Portuguese Ceylon (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Portuguese_Ceylon"
+   }
+  },
+  {
+   "realm": "(Portuguese Empire)",
+   "years": [
+    1515,
+    1622
+   ],
+   "severity": "warning",
+   "issue": "Hormuz (Portuguese vassal 1515–1622) never drawn Portuguese.",
+   "fixed": false,
+   "source": {
+    "title": "Kingdom of Ormus (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Kingdom_of_Ormus"
+   }
+  },
+  {
+   "realm": "Spanish Empire",
+   "years": [
+    1643,
+    1658
+   ],
+   "severity": "warning",
+   "issue": "Northern Taiwan (Keelung/Taipei) still Spanish to 1658; the Dutch expelled the Spanish in 1642 (East Asia reviewer). Not croppable; note added.",
+   "fixed": false,
+   "source": {
+    "title": "Dutch Formosa (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Dutch_Formosa"
+   }
+  },
+  {
+   "realm": "Spanish Empire",
+   "years": [
+    1866,
+    1872
+   ],
+   "severity": "error",
+   "issue": "Santo Domingo still Spanish (overlapping the Dominican Republic) after Spain's 1865 withdrawal. Not croppable; noted.",
+   "fixed": false,
+   "source": {
+    "title": "Spanish reannexation of the Dominican Republic (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Spanish_reannexation_of_the_Dominican_Republic"
+   }
+  },
+  {
+   "realm": "Spanish Empire",
+   "years": [
+    1565,
+    1571
+   ],
+   "severity": "warning",
+   "issue": "Cebu, the first Spanish capital (1565–71), not drawn Spanish (Southeast Asia reviewer). Needs geometry.",
+   "fixed": false,
+   "source": {
+    "title": "Spanish East Indies (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Spanish_East_Indies"
+   }
+  },
+  {
+   "realm": "Spanish Empire",
+   "years": [
+    1580,
+    1775
+   ],
+   "severity": "warning",
+   "issue": "Buenos Aires (refounded 1580) blank until 1776 (Americas reviewer also found this). Needs geometry.",
+   "fixed": false,
+   "source": {
+    "title": "Chilean War of Independence (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Chilean_War_of_Independence"
+   }
+  },
+  {
+   "realm": "Aztec Triple Alliance",
+   "years": [
+    1430,
+    1520
+   ],
+   "severity": "warning",
+   "issue": "Independent Tlaxcala drawn inside the empire; note added. Tenochtitlan's own shape (1326–1428) lies east of the city, which falls in the 'Texcoco' shape (labels look swapped; Americas reviewer agrees). Not relabelled: the Aztec journey matches the original row name, so relabelling Tenochtitlan's shape would still highlight the wrong polygon; it needs a swap of both rows or new geometry. Note added on Tenochtitlan.",
+   "fixed": false,
+   "source": {
+    "title": "Tlaxcala (Nahua state) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Tlaxcala_(Nahua_state)"
+   }
+  },
+  {
+   "realm": "Inca Empire",
+   "years": [
+    1470,
+    1489
+   ],
+   "severity": "warning",
+   "issue": "Chan Chan stays Chimú until c.1490; Chimor fell to the Incas c.1470 (Chimu Empire owner).",
+   "fixed": false,
+   "source": {
+    "title": "Chimor (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Chimor"
+   }
+  },
+  {
+   "realm": "British Colonial Empire",
+   "years": [
+    1942,
+    1945
+   ],
+   "severity": "error",
+   "issue": "Malaya/Singapore drawn British during the Japanese occupation, overlapping Japan (Southeast Asia reviewer); British-occupied southern Iran drawn British; Papua overlaps Australia 1945; New Zealand overlaps the NZ realm 1948–57; Brunei British to 1995 (indep. 1984). Not croppable; note added.",
+   "fixed": false,
+   "source": {
+    "title": "Japanese occupation of Singapore (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Japanese_occupation_of_Singapore"
+   }
+  },
+  {
+   "realm": "British Africa",
+   "years": [
+    1885,
+    1889
+   ],
+   "severity": "error",
+   "issue": "Khartoum/Sudan drawn British 1885–89, during the Mahdist State (Khartoum fell 26 Jan 1885). Not croppable. Palestine (1918–48) is also labelled 'British Africa'.",
+   "fixed": false,
+   "source": {
+    "title": "Mahdist State (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Mahdist_State"
+   }
+  },
+  {
+   "realm": "Danish India",
+   "years": [
+    1757,
+    1808
+   ],
+   "severity": "error",
+   "issue": "The Danish India polygon sits on Calcutta (Serampore is c.20 km north), so Calcutta, capital of British Bengal, is drawn Danish 1757–1808 (overlapping British 1763–93). French India also overlaps Calcutta 1809–45. Not my realms.",
+   "fixed": false,
+   "source": {
+    "title": "Danish India (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Danish_India"
+   }
+  },
+  {
+   "realm": "Mughal Empire",
+   "years": [
+    1804,
+    1857
+   ],
+   "severity": "warning",
+   "issue": "Mughal Empire drawn over Delhi and much of Rajputana to 1857, overlapping British (1850); after 1803 the emperor held little beyond Delhi under British protection. Not my realm.",
+   "fixed": false,
+   "source": {
+    "title": "Second Anglo-Sikh War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Second_Anglo-Sikh_War"
+   }
+  },
+  {
+   "realm": "Novgorod Republic",
+   "years": [
+    1478,
+    1481
+   ],
+   "severity": "warning",
+   "issue": "Novgorod Republic drawn to 1481; Ivan III annexed it in 1478. Not my realm.",
+   "fixed": false,
+   "source": {
+    "title": "Novgorod Republic (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Novgorod_Republic"
+   }
+  },
+  {
+   "realm": "Tsardom of Russia",
+   "years": [
+    1632,
+    1659
+   ],
+   "severity": "warning",
+   "issue": "Yakutsk (founded 1632) and Okhotsk (1647) not Russian until c.1660/1700 on the map; the Siberian frontier lags by decades. Azov drawn Ottoman 1740–73 although the Treaty of Niš made it a neutral demolished zone. Needs geometry.",
+   "fixed": false,
+   "source": {
+    "title": "Yakutsk (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Yakutsk"
+   }
+  },
+  {
+   "realm": "Dutch East Indies",
+   "years": [
+    1874,
+    1962
+   ],
+   "severity": "warning",
+   "issue": "Banda Aceh (Dutch from 1874) and Netherlands New Guinea (Dutch to 1962) not drawn Dutch; Batavia (founded 1619) drawn as Banten until c.1680. Needs geometry.",
+   "fixed": false,
+   "source": {
+    "title": "Netherlands New Guinea (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Netherlands_New_Guinea"
+   }
+  },
+  {
+   "realm": "New Netherland",
+   "years": [
+    1654,
+    1669
+   ],
+   "severity": "warning",
+   "issue": "'Dutch colonies in the Americas' stays over New Amsterdam until 1669 (English from 1664) and Recife until 1659 (Portuguese from Jan 1654). Not in my chain.",
+   "fixed": false,
+   "source": {
+    "title": "New Amsterdam (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/New_Amsterdam"
+   }
+  },
+  {
+   "realm": "Confederation of the Rhine",
+   "years": [
+    1809,
+    1813
+   ],
+   "severity": "warning",
+   "issue": "This polygon is relabelled 'Kingdom of Prussia' by an earlier correction, but the napoleonic-empire journey chain still lists 'Confederation of the Rhine', so Prussia is highlighted as part of the Napoleonic empire while the real Confederation states are not. Journey chain should be fixed (content.json not mine). Satellites also start late: Confederation 1809 (1806), Westphalia 1809 (1807), Duchy of Warsaw 1809 (1807), and Warsaw is Austrian 1795–1811.",
+   "fixed": false,
+   "source": {
+    "title": "Confederation of the Rhine (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Confederation_of_the_Rhine"
+   }
+  },
+  {
+   "realm": "Grand Duchy of Berg",
+   "years": [
+    1814,
+    1814
+   ],
+   "severity": "warning",
+   "issue": "Paris and Brussels drawn as 'Grand Duchy of Berg' in 1814; the First French Empire polygon of 1814 does not cover Paris. Not my realm (Berg).",
+   "fixed": false,
+   "source": {
+    "title": "Treaties of Tilsit (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Treaties_of_Tilsit"
+   }
+  },
+  {
+   "realm": "French Fourth/Fifth Republic",
+   "years": [
+    1946,
+    1980
+   ],
+   "severity": "warning",
+   "issue": "Berlin (Mitte) drawn as French in 1946 and 1980 — similar overreach to the Algeria lead. Not my realm.",
+   "fixed": false,
+   "source": {
+    "title": "Weimar Republic (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Weimar_Republic"
+   }
+  },
+  {
+   "realm": "Ghana Empire",
+   "years": [
+    300,
+    792
+   ],
+   "severity": "warning",
+   "issue": "Ghana is drawn only from 793 (Wikidata: c.100; Arab writers mention it in the 8th century) and as a static 205,000 km² shape to 1201.",
+   "fixed": false,
+   "source": {
+    "title": "Ghana Empire (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Ghana_Empire"
+   }
+  }
+ ],
+ "corrections": {
+  "Songhai Empire": {
+   "clip": [
+    1463,
+    1591
+   ],
+   "note": "Songhai rule on the Niger bend ended with the Moroccan victory at Tondibi in March 1591, after which Gao, Timbuktu and Djenné were taken; the Askia dynasty survived downstream in Dendi, which is not shown.",
+   "sources": [
+    {
+     "title": "Battle of Tondibi — Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Battle_of_Tondibi"
+    },
+    {
+     "title": "Songhai Empire — Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Songhai_Empire"
+    },
+    {
+     "title": "Gao — Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Gao"
+    }
+   ]
+  },
+  "Mali Empire": {
+   "crop": [
+    {
+     "from": 1434,
+     "to": 1467,
+     "box": [
+      -18.0,
+      9.0,
+      -3.9,
+      18.5
+     ]
+    }
+   ],
+   "note": "From 1434 the map leaves Timbuktu, Gao and the eastern Niger bend outside Mali, in line with the loss of Timbuktu to the Tuareg in 1433–34.",
+   "sources": [
+    {
+     "title": "Mali Empire — Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Mali_Empire"
+    },
+    {
+     "title": "Timbuktu — Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Timbuktu"
+    }
+   ]
+  },
+  "Tenochtitlan": {
+   "note": "The Mexica city-state is drawn as a small shape south-east of its true site on the western side of Lake Texcoco (about 19.43°N, 99.13°W); the island city itself falls inside the shape labelled Texcoco until 1428.",
+   "sources": [
+    {
+     "title": "Tenochtitlan — Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Tenochtitlan"
+    }
+   ]
+  },
+  "Kingdom of Portugal": {
+   "crop": [
+    {
+     "from": 1650,
+     "to": 1749,
+     "box": [
+      -32.0,
+      30.0,
+      -6.0,
+      43.0
+     ]
+    }
+   ],
+   "note": "Muscat, held by Portugal since 1507, surrendered to the Omani imam's forces on 23 January 1650; from 1650 it is no longer drawn as Portuguese.",
+   "sources": [
+    {
+     "title": "Muscat — Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Muscat"
+    },
+    {
+     "title": "Mazagan — Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Mazagan"
+    }
+   ]
+  },
+  "Spanish Empire": {
+   "crop": [
+    {
+     "from": 1818,
+     "to": 1819,
+     "box": [
+      -180.0,
+      -27.0,
+      180.0,
+      90.0
+     ]
+    },
+    {
+     "from": 1826,
+     "to": 1879,
+     "box": [
+      -180.0,
+      3.0,
+      180.0,
+      90.0
+     ]
+    }
+   ],
+   "note": "Chile is left out from 1818, when it declared independence after the patriot victories of 1817–18 (the royalist south around Valdivia and Chiloé is also dropped for 1818–19). From 1826, when Callao and Chiloé, the last royalist strongholds, surrendered, no Spanish shapes are drawn in South America; the map had kept small Spanish pockets at Lima, La Paz, Carmen de Patagones and the Falklands until 1852. The map still shades Santo Domingo as Spanish after Spain withdrew in 1865, until 1872, and keeps northern Taiwan (Keelung and Tamsui) Spanish until 1658, although the Dutch expelled the Spanish garrison in 1642.",
+   "sources": [
+    {
+     "title": "Chiloé Archipelago — Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Chiloé_Archipelago"
+    },
+    {
+     "title": "Chilean War of Independence — Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Chilean_War_of_Independence"
+    },
+    {
+     "title": "Dutch Formosa — Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Dutch_Formosa"
+    },
+    {
+     "title": "Peruvian War of Independence — Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Peruvian_War_of_Independence"
+    }
+   ]
+  },
+  "Kingdom of Spain": {
+   "crop": [
+    {
+     "from": 1762,
+     "to": 1806,
+     "box": [
+      -19.0,
+      20.0,
+      4.6,
+      44.5
+     ]
+    },
+    {
+     "from": 1899,
+     "to": 1899,
+     "box": [
+      -19.0,
+      0.5,
+      12.0,
+      44.5
+     ]
+    }
+   ],
+   "note": "Under the Treaty of Paris (December 1898) Spain gave up Cuba, Puerto Rico, Guam and the Philippines, so from 1899 only Spain's African territories are drawn with it. Between 1735 and 1761 the map still shades Naples and Sicily as Spanish, although they formed a separate kingdom under a junior Bourbon line from 1735; from 1762 they are drawn as the Kingdom of Naples and left out of Spain, as is the Duchy of Parma.",
+   "sources": [
+    {
+     "title": "Treaty of Paris (1898) — Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Treaty_of_Paris_(1898)"
+    },
+    {
+     "title": "Captaincy General of Cuba — Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Captaincy_General_of_Cuba"
+    },
+    {
+     "title": "Kingdom of Naples — Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Kingdom_of_Naples"
+    }
+   ]
+  },
+  "Francoist Spain": {
+   "crop": [
+    {
+     "from": 1969,
+     "to": 1975,
+     "box": [
+      -19.0,
+      20.5,
+      4.6,
+      44.5
+     ]
+    }
+   ],
+   "note": "Equatorial Guinea (Spanish Guinea) became independent on 12 October 1968 and is not drawn as Spanish afterwards.",
+   "sources": [
+    {
+     "title": "Spanish Guinea — Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Spanish_Guinea"
+    }
+   ]
+  },
+  "Batavian Republic": {
+   "relabel": [
+    {
+     "from": 1806,
+     "to": 1810,
+     "name": "Kingdom of Holland",
+     "key": "(Batavian Republic)"
+    }
+   ],
+   "note": "From June 1806 to July 1810 the Netherlands were the Kingdom of Holland under Louis Bonaparte, a French client state, before annexation to the French Empire.",
+   "sources": [
+    {
+     "title": "Kingdom of Holland — Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Kingdom_of_Holland"
+    }
+   ]
+  },
+  "Italian Republic": {
+   "relabel": [
+    {
+     "from": 1805,
+     "to": 1813,
+     "name": "Kingdom of Italy (Napoleonic)",
+     "key": "Kingdom of Italy (Napoleonic)"
+    }
+   ],
+   "note": "The Italian Republic became the Kingdom of Italy, with Napoleon as king, on 17 March 1805; it lasted until April 1814. Venetia (from 1806) and the Marche (from 1808) belonged to this kingdom, not to the French Empire, although the map draws Venice inside the Empire in 1809–10.",
+   "sources": [
+    {
+     "title": "Kingdom of Italy (Napoleonic) — Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Kingdom_of_Italy_(Napoleonic)"
+    }
+   ]
+  },
+  "Helvetic Republic": {
+   "relabel": [
+    {
+     "from": 1803,
+     "to": 1814,
+     "name": "Swiss Confederation (Act of Mediation)",
+     "key": "Swiss Confederation (Act of Mediation)"
+    }
+   ],
+   "note": "Napoleon's Act of Mediation of 1803 replaced the Helvetic Republic with a restored Swiss Confederation of 19 cantons under French protection; it is shown under that name from 1803.",
+   "sources": [
+    {
+     "title": "Act of Mediation — Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Act_of_Mediation"
+    }
+   ]
+  },
+  "Kingdom of Naples (Napoleonic)": {
+   "relabel": [
+    {
+     "from": 1762,
+     "to": 1805,
+     "name": "Kingdom of Naples",
+     "key": "Kingdom of Naples"
+    }
+   ],
+   "crop": [
+    {
+     "from": 1806,
+     "to": 1814,
+     "box": [
+      6.0,
+      38.28,
+      19.5,
+      43.5
+     ]
+    }
+   ],
+   "note": "Before 1806 this shape is the Bourbon Kingdom of Naples, shown under that name. The Napoleonic kingdom (Joseph Bonaparte from 1806, Murat from 1808) never held Sicily, where the Bourbon king ruled from Palermo under British protection until 1815, so Sicily is left out in 1806–14.",
+   "sources": [
+    {
+     "title": "Kingdom of Naples (Napoleonic) — Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Kingdom_of_Naples_(Napoleonic)"
+    },
+    {
+     "title": "Kingdom of Sicily — Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Kingdom_of_Sicily"
+    },
+    {
+     "title": "Kingdom of Naples — Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Kingdom_of_Naples"
+    }
+   ]
+  },
+  "First French Empire": {
+   "crop": [
+    {
+     "from": 1807,
+     "to": 1808,
+     "box": [
+      -5.5,
+      41.2,
+      12.4,
+      53.6
+     ]
+    },
+    {
+     "from": 1809,
+     "to": 1811,
+     "box": [
+      -5.0,
+      41.8,
+      18.0,
+      55.0
+     ]
+    },
+    {
+     "from": 1812,
+     "to": 1813,
+     "box": [
+      -5.0,
+      41.3,
+      18.0,
+      55.0
+     ]
+    }
+   ],
+   "note": "The map's shapes for these years spread over lands that were occupied, not annexed: Prussia after Tilsit (1807–08) stayed a kingdom, Spain and Portugal were Joseph Bonaparte's kingdom and a war zone, and the 1812 advance into Russia was reversed by December. These are left out; only Catalonia was formally annexed (1812).",
+   "sources": [
+    {
+     "title": "Treaties of Tilsit — Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Treaties_of_Tilsit"
+    },
+    {
+     "title": "Joseph Bonaparte — Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Joseph_Bonaparte"
+    },
+    {
+     "title": "Illyrian Provinces — Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Illyrian_Provinces"
+    }
+   ]
+  },
+  "German Empire": {
+   "relabel": [
+    {
+     "from": 1919,
+     "to": 1919,
+     "name": "Weimar Republic",
+     "key": "Weimar Republic"
+    }
+   ],
+   "crop": [
+    {
+     "from": 1919,
+     "to": 1919,
+     "box": [
+      5.5,
+      47.0,
+      23.0,
+      55.5
+     ]
+    }
+   ],
+   "note": "The Empire ended with the revolution of November 1918 and the Kaiser's abdication; the 1919 shape is the new German republic and no longer includes Courland. In 1915–18 the map draws German-occupied Belgium, Poland and the Baltic lands, and in 1918 Ukraine, as part of the Empire; they were occupied or client territories, not annexed.",
+   "sources": [
+    {
+     "title": "Weimar Republic — Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Weimar_Republic"
+    },
+    {
+     "title": "German colonial empire — Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/German_colonial_empire"
+    }
+   ]
+  },
+  "Russian Republic": {
+   "relabel": [
+    {
+     "from": 1918,
+     "to": 1919,
+     "name": "Russia (Civil War)",
+     "key": "Russia (Civil War)"
+    }
+   ],
+   "note": "The Russian Republic proclaimed in September 1917 ended when the Bolsheviks seized power in November 1917 and dissolved the Constituent Assembly in January 1918. In 1918–19 Russia was split by civil war: the map leaves the Bolshevik-held centre around Moscow blank and shades the rest, held by White governments, Allied interventions and local authorities, as 'Russia (Civil War)'.",
+   "sources": [
+    {
+     "title": "Russian Republic — Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Russian_Republic"
+    },
+    {
+     "title": "Russian Civil War — Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Russian_Civil_War"
+    }
+   ]
+  },
+  "Union of Soviet Socialist Republics": {
+   "note": "Several shapes overreach: Tuva was a separate people's republic until it was annexed in October 1944; in 1945–52 the map draws Poland, and in 1945–48 Soviet-occupied eastern Germany, Austria, Hungary, Romania, Bulgaria and northern Korea and Manchuria, inside the USSR; Czechoslovakia is drawn inside it in 1969–90 because Soviet troops were stationed there after 1968; and in 1979–89 much of Afghanistan is drawn as Soviet during the war. None of these lands were part of the Union.",
+   "sources": [
+    {
+     "title": "Tuvan People%27s Republic — Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Tuvan_People%27s_Republic"
+    },
+    {
+     "title": "Polish People%27s Republic — Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Polish_People%27s_Republic"
+    },
+    {
+     "title": "Central Group of Forces — Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Central_Group_of_Forces"
+    },
+    {
+     "title": "Soviet–Afghan War — Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Soviet–Afghan_War"
+    }
+   ]
+  },
+  "British Colonial Empire": {
+   "crop": [
+    {
+     "from": 1949,
+     "to": 1957,
+     "box": [
+      -180.0,
+      -90.0,
+      180.0,
+      46.5
+     ]
+    },
+    {
+     "from": 1971,
+     "to": 1978,
+     "box": [
+      -90.0,
+      -60.0,
+      170.0,
+      40.0
+     ]
+    },
+    {
+     "from": 1979,
+     "to": 1981,
+     "box": [
+      -90.0,
+      -60.0,
+      156.0,
+      40.0
+     ]
+    },
+    {
+     "from": 1982,
+     "to": 1995,
+     "box": [
+      -72.6,
+      -60.0,
+      156.0,
+      40.0
+     ]
+    },
+    {
+     "from": 1998,
+     "to": 1999,
+     "box": [
+      -180.0,
+      -90.0,
+      100.0,
+      90.0
+     ]
+    }
+   ],
+   "note": "Territories are removed from this shape once independent or transferred: Newfoundland and Labrador (joined Canada 1949), Fiji (1970), the Solomon Islands (1978), Belize (1981), the Bahamas (1973, removed from 1982) and Hong Kong (returned to China on 1 July 1997). Brunei (1984), Grenada (1974), Dominica (1978) and St Lucia (1979) remain drawn until 1995. The map also keeps Malaya and Singapore British during the Japanese occupation of 1942–45 (Singapore fell on 15 February 1942) and shades the British-occupied part of Iran in 1942–45 as British.",
+   "sources": [
+    {
+     "title": "Dominion of Newfoundland — Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Dominion_of_Newfoundland"
+    },
+    {
+     "title": "Fiji — Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Fiji"
+    },
+    {
+     "title": "Solomon Islands — Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Solomon_Islands"
+    },
+    {
+     "title": "Belize — Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Belize"
+    },
+    {
+     "title": "The Bahamas — Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/The_Bahamas"
+    },
+    {
+     "title": "Transfer of sovereignty over Hong Kong — Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Transfer_of_sovereignty_over_Hong_Kong"
+    },
+    {
+     "title": "Japanese occupation of Singapore — Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Japanese_occupation_of_Singapore"
+    },
+    {
+     "title": "Brunei — Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Brunei"
+    }
+   ]
+  },
+  "Kingdom of Great Britain": {
+   "crop": [
+    {
+     "from": 1972,
+     "to": 2023,
+     "box": [
+      -11.0,
+      35.5,
+      2.5,
+      61.5
+     ]
+    }
+   ],
+   "note": "The United Kingdom's shape no longer includes the Gulf states after 1971: Bahrain and Qatar became independent in August–September 1971 and the United Arab Emirates on 2 December 1971 (Oman was never a British colony). Before 1972 the map also keeps Kuwait (independent 1961), Cyprus (1960) and Aden (1967) inside the United Kingdom for a few years too long.",
+   "sources": [
+    {
+     "title": "United Arab Emirates — Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/United_Arab_Emirates"
+    },
+    {
+     "title": "Qatar — Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Qatar"
+    },
+    {
+     "title": "Bahrain — Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Bahrain"
+    },
+    {
+     "title": "Kuwait — Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Kuwait"
+    },
+    {
+     "title": "Colony of Aden — Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Colony_of_Aden"
+    }
+   ]
+  },
+  "British Gold Coast": {
+   "crop": [
+    {
+     "from": 1957,
+     "to": 1959,
+     "box": [
+      2.6,
+      3.5,
+      16.2,
+      14.5
+     ]
+    }
+   ],
+   "note": "Ghana became independent on 6 March 1957, so from 1957 only the Nigerian part of this shape is drawn (Nigeria became independent on 1 October 1960).",
+   "sources": [
+    {
+     "title": "Ghana — Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Ghana"
+    },
+    {
+     "title": "Nigeria — Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Nigeria"
+    }
+   ]
+  },
+  "British East Africa": {
+   "crop": [
+    {
+     "from": 1965,
+     "to": 1968,
+     "box": [
+      19.9,
+      -30.8,
+      33.1,
+      -15.6
+     ]
+    }
+   ],
+   "note": "From 1965 only the southern African dependencies (Bechuanaland and Basutoland to 1966, Swaziland to 1968, and Rhodesia, which declared independence in 1965) are drawn; Uganda (1962), Kenya (1963), Malawi and Zambia (1964) and the Gambia (1965) had become independent. In 1963–64 the map still draws Uganda and Kenya as British for a year or two too long.",
+   "sources": [
+    {
+     "title": "Uganda — Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Uganda"
+    },
+    {
+     "title": "Kenya — Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Kenya"
+    },
+    {
+     "title": "Malawi — Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Malawi"
+    },
+    {
+     "title": "Zambia — Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Zambia"
+    },
+    {
+     "title": "Bechuanaland Protectorate — Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Bechuanaland_Protectorate"
+    }
+   ]
+  },
+  "British Cape Colony": {
+   "crop": [
+    {
+     "from": 1803,
+     "to": 1805,
+     "box": [
+      -20.0,
+      0.0,
+      10.0,
+      20.0
+     ]
+    }
+   ],
+   "note": "Under the Peace of Amiens the Cape was handed back to the Batavian Republic in 1803 and held by it until the British reconquest of January 1806.",
+   "sources": [
+    {
+     "title": "Dutch Cape Colony — Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Dutch_Cape_Colony"
+    },
+    {
+     "title": "Cape Colony — Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Cape_Colony"
+    }
+   ]
+  },
+  "Dutch Gold Coast": {
+   "crop": [
+    {
+     "from": 1850,
+     "to": 1872,
+     "box": [
+      -3.5,
+      4.0,
+      1.0,
+      7.0
+     ]
+    }
+   ],
+   "note": "The shape on the coast of present-day Nigeria (Lagos and Badagry) drawn with the Dutch Gold Coast in 1861–72 was the British Lagos Colony, annexed in August 1861; it is removed.",
+   "sources": [
+    {
+     "title": "Lagos Colony — Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Lagos_Colony"
+    },
+    {
+     "title": "Dutch Gold Coast — Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Dutch_Gold_Coast"
+    }
+   ]
+  },
+  "Dutch East Indies": {
+   "crop": [
+    {
+     "from": 1800,
+     "to": 1949,
+     "box": [
+      94.5,
+      -11.5,
+      141.5,
+      6.2
+     ]
+    }
+   ],
+   "note": "Small shapes that the map attached to the Dutch East Indies in India (one of them over Calcutta, 1809–45) and on the Danish-held Nicobar Islands are removed; the Dutch post in Bengal was at Chinsurah, north of Calcutta, until 1825.",
+   "sources": [
+    {
+     "title": "Dutch Bengal — Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Dutch_Bengal"
+    },
+    {
+     "title": "Danish India — Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Danish_India"
+    }
+   ]
+  },
+  "Portuguese Empire": {
+   "crop": [
+    {
+     "from": 1805,
+     "to": 1814,
+     "box": [
+      -74.0,
+      -34.0,
+      41.0,
+      17.35
+     ]
+    }
+   ],
+   "note": "Eastern Hispaniola (Santo Domingo) and St Martin, drawn as Portuguese in 1805–14, were never Portuguese and are removed. The map also still shades Guadeloupe and Martinique as Portuguese in 1805–10 and French Guiana from 1805, although Portugal occupied French Guiana only from January 1809 to 1817.",
+   "sources": [
+    {
+     "title": "French Guiana — Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/French_Guiana"
+    },
+    {
+     "title": "Guadeloupe — Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Guadeloupe"
+    }
+   ]
+  },
+  "Estado Novo": {
+   "note": "India annexed Goa, Daman and Diu in December 1961, but the map still shades Goa as Portuguese until 1974.",
+   "sources": [
+    {
+     "title": "Annexation of Goa — Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Annexation_of_Goa"
+    }
+   ]
+  },
+  "Aztec Triple Alliance": {
+   "note": "Tlaxcala, east of the Valley of Mexico, was an independent enclave surrounded by the empire, never conquered, and became Cortés's chief ally; the map draws it inside the empire.",
+   "sources": [
+    {
+     "title": "Tlaxcala (Nahua state) — Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Tlaxcala_(Nahua_state)"
+    },
+    {
+     "title": "Aztec Empire — Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Aztec_Empire"
+    }
+   ]
+  }
+ }
+}

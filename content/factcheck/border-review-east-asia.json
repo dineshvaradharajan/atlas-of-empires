@@ -1,0 +1,1449 @@
+{
+ "reviewer": "east-asia",
+ "findings": [
+  {
+   "realm": "Wei",
+   "years": [
+    -404,
+    -223
+   ],
+   "severity": "error",
+   "issue": "The outline labelled Wei (Warring States) lies in central/northern Hebei (Lingshou, the Zhongshan capital, and Ji/Beijing, the Yan capital, fall inside it). That was Zhao and Zhongshan land; Wei held southern Shanxi and Daliang (Kaifeng). Relabelled Zhao and cropped south of Ji. Wei's own lands are not drawn anywhere (gap left).",
+   "fixed": true,
+   "source": [
+    {
+     "title": "Wei (state) (Wikipedia): capitals Anyi, then Daliang (Kaifeng) from 361 BC; surrendered to Qin 225 BC",
+     "url": "https://en.wikipedia.org/wiki/Wei_(state)"
+    },
+    {
+     "title": "Zhao (state) (Wikipedia): capital Handan; Hebei and Shanxi; conquered Zhongshan; Dai remnant to 222 BC",
+     "url": "https://en.wikipedia.org/wiki/Zhao_(state)"
+    },
+    {
+     "title": "Zhongshan (state) (Wikipedia): capital Lingshou (Pingshan, Hebei); annexed by Zhao 296 BC",
+     "url": "https://en.wikipedia.org/wiki/Zhongshan_(state)"
+    }
+   ]
+  },
+  {
+   "realm": "Zhongshan",
+   "years": [
+    -366,
+    -292
+   ],
+   "severity": "error",
+   "issue": "The outline labelled Zhongshan covers Ji (Beijing), capital of Yan; relabelled Yan. Ji -300 now Yan.",
+   "fixed": true,
+   "source": [
+    {
+     "title": "Yan (state) (Wikipedia): capital Ji (Beijing); Ji fell 226 BC, Yan overrun 222 BC",
+     "url": "https://en.wikipedia.org/wiki/Yan_(state)"
+    },
+    {
+     "title": "Zhongshan (state) (Wikipedia): capital Lingshou (Pingshan, Hebei); annexed by Zhao 296 BC",
+     "url": "https://en.wikipedia.org/wiki/Zhongshan_(state)"
+    }
+   ]
+  },
+  {
+   "realm": "Chu",
+   "years": [
+    -750,
+    -224
+   ],
+   "severity": "error",
+   "issue": "Chu drawn north to c. 34.9°N, over Xinzheng (capital of Zheng, then Han), Daliang (Wei) and Shangqiu (Song); and still over its capital Ying after Qin took it in 278 BCE. Cropped at 34.15°N, and west of 112.5°E from 278 BCE. Those strips are now blank because the map's Han/Wei/Song outlines are too small.",
+   "fixed": true,
+   "source": [
+    {
+     "title": "Chu (state) (Wikipedia): Ying taken by Qin 278 BC; Shouchun 241-223 BC; northern border at Fangcheng",
+     "url": "https://en.wikipedia.org/wiki/Chu_(state)"
+    },
+    {
+     "title": "Qin's wars of unification (Wikipedia): Han 230, Zhao 228, Wei 225, Chu 223, Yan 222, Qi 221 BC",
+     "url": "https://en.wikipedia.org/wiki/Qin%27s_wars_of_unification"
+    }
+   ]
+  },
+  {
+   "realm": "Qi",
+   "years": [
+    -221,
+    -219
+   ],
+   "severity": "error",
+   "issue": "Qi (and its capital Linzi) still drawn in 221-219 BCE; Qi surrendered to Qin in 221 BCE. Relabelled Qin.",
+   "fixed": true,
+   "source": {
+    "title": "Qin's wars of unification (Wikipedia): Han 230, Zhao 228, Wei 225, Chu 223, Yan 222, Qi 221 BC",
+    "url": "https://en.wikipedia.org/wiki/Qin%27s_wars_of_unification"
+   }
+  },
+  {
+   "realm": "Later Zhou",
+   "years": [
+    -750,
+    -257
+   ],
+   "severity": "warning",
+   "issue": "The Eastern Zhou royal domain is stored under the name of the 10th-century Later Zhou dynasty (and its Wikidata dates flag a 1,700-year error). Relabelled Eastern Zhou; its 960 polygon relabelled Northern Song (founded Feb 960). The domain outline sits north of the Yellow River, so Luoyang itself shows Han in 300-231 BCE (not fixable with a relabel).",
+   "fixed": true,
+   "source": [
+    {
+     "title": "Zhou dynasty (Wikipedia): capital moved east 771 BC; royal domain extinguished by Qin 256 BC",
+     "url": "https://en.wikipedia.org/wiki/Zhou_dynasty"
+    },
+    {
+     "title": "Song dynasty (Wikipedia): Kaifeng 960-1127; Jingkang 1127; Lin'an (Hangzhou); Lin'an fell 4 Feb 1276; Yamen 1279",
+     "url": "https://en.wikipedia.org/wiki/Song_dynasty"
+    }
+   ]
+  },
+  {
+   "realm": "Gojoseon",
+   "years": [
+    -108,
+    -92
+   ],
+   "severity": "error",
+   "issue": "Wiman Joseon still drawn, with Pyongyang, for 16 years after its fall to the Han in 108 BCE. Relabelled Han Dynasty (Lelang and the other commanderies), area added to Han's timeline.",
+   "fixed": true,
+   "source": [
+    {
+     "title": "Wiman Joseon (Wikipedia): destroyed by Han c. 108 BC; Four Commanderies set up",
+     "url": "https://en.wikipedia.org/wiki/Wiman_Joseon"
+    },
+    {
+     "title": "Lelang Commandery (Wikipedia): 108 BC-313 AD, seat at modern Pyongyang, conquered by Goguryeo 313",
+     "url": "https://en.wikipedia.org/wiki/Lelang_Commandery"
+    }
+   ]
+  },
+  {
+   "realm": "Western Jin",
+   "years": [
+    265,
+    316
+   ],
+   "severity": "error",
+   "issue": "Western Jin drawn over Gungnae (Ji'an), Goguryeo's capital from 3 to 427. Cropped east of 126°E (keeps Lelang at Pyongyang, which Jin held until 313). Also Western Jin/Eastern Jin ran on to 425: 421-425 relabelled Liu Song (founded 420).",
+   "fixed": true,
+   "source": [
+    {
+     "title": "Goguryeo (Wikipedia): Gungnae 3-427, Pyongyang 427-668; Silla took the Han River valley 553; fell 668",
+     "url": "https://en.wikipedia.org/wiki/Goguryeo"
+    },
+    {
+     "title": "Jin dynasty (266-420) (Wikipedia): Luoyang sacked 311, Chang'an taken 316; Eastern Jin at Jiankang 317-420; Liu Song 420",
+     "url": "https://en.wikipedia.org/wiki/Jin_dynasty_(266%E2%80%93420)"
+    }
+   ]
+  },
+  {
+   "realm": "Taebong",
+   "years": [
+    918,
+    921
+   ],
+   "severity": "error",
+   "issue": "Taebong (Kaesong area) drawn to 921; Wang Geon overthrew Gung Ye and founded Goryeo in 918. Relabelled Goryeo.",
+   "fixed": true,
+   "source": [
+    {
+     "title": "Taebong (Wikipedia): Gung Ye overthrown and Wang Geon installed in 918",
+     "url": "https://en.wikipedia.org/wiki/Taebong"
+    },
+    {
+     "title": "Goryeo (Wikipedia): founded 918 at Kaesong; Silla annexed 935; Tamna incorporated 1105; ended 1392",
+     "url": "https://en.wikipedia.org/wiki/Goryeo"
+    }
+   ]
+  },
+  {
+   "realm": "Goryeo",
+   "years": [
+    1392,
+    1394
+   ],
+   "severity": "error",
+   "issue": "Goryeo drawn (Seoul, Kaesong) until 1394; Joseon was founded in July 1392. Relabelled Joseon.",
+   "fixed": true,
+   "source": [
+    {
+     "title": "Goryeo (Wikipedia): founded 918 at Kaesong; Silla annexed 935; Tamna incorporated 1105; ended 1392",
+     "url": "https://en.wikipedia.org/wiki/Goryeo"
+    },
+    {
+     "title": "Joseon (Wikipedia): founded 1392; capital Hanseong; Korean Empire proclaimed 1897",
+     "url": "https://en.wikipedia.org/wiki/Joseon"
+    }
+   ]
+  },
+  {
+   "realm": "Tamna",
+   "years": [
+    1105,
+    1274
+   ],
+   "severity": "warning",
+   "issue": "Jeju drawn as the independent Tamna to 1278; it was formally annexed by Goryeo in 1105 (Yuan prefecture 1275-1301). 1105-1274 relabelled Goryeo.",
+   "fixed": true,
+   "source": {
+    "title": "Tamna (Wikipedia): officially annexed by Goryeo 1105; Yuan Tamna Prefecture 1275-1301",
+    "url": "https://en.wikipedia.org/wiki/Tamna"
+   }
+  },
+  {
+   "realm": "Byeonhan",
+   "years": [
+    562,
+    566
+   ],
+   "severity": "warning",
+   "issue": "The Gaya (Byeonhan) outline drawn to 566; Daegaya, the last Gaya state, fell to Silla in 562. Relabelled Silla. (The realm is also anachronistically named Byeonhan for the Gaya period; Goryeong, the Daegaya capital, already falls inside Silla before 562 - not fixable with a relabel.)",
+   "fixed": true,
+   "source": {
+    "title": "Gaya confederacy (Wikipedia): Geumgwan Gaya fell to Silla 532, Daegaya 562",
+    "url": "https://en.wikipedia.org/wiki/Gaya_confederacy"
+   }
+  },
+  {
+   "realm": "Cao Cao",
+   "years": [
+    220,
+    223
+   ],
+   "severity": "error",
+   "issue": "Luoyang shown under 'Cao Cao' in 220-223; Cao Pi founded Wei in 220. Relabelled Cao Wei.",
+   "fixed": true,
+   "source": {
+    "title": "Three Kingdoms (Wikipedia): Wei 220 (Luoyang), Shu 221 (Chengdu), Wu at Jianye; Shu fell 263, Jin 266, Wu fell 280",
+    "url": "https://en.wikipedia.org/wiki/Three_Kingdoms"
+   }
+  },
+  {
+   "realm": "Eastern Wu",
+   "years": [
+    280,
+    282
+   ],
+   "severity": "error",
+   "issue": "Wu (Jianye/Nanjing) drawn to 282; Jianye fell to Jin in 280. Relabelled Western Jin.",
+   "fixed": true,
+   "source": [
+    {
+     "title": "Three Kingdoms (Wikipedia): Wei 220 (Luoyang), Shu 221 (Chengdu), Wu at Jianye; Shu fell 263, Jin 266, Wu fell 280",
+     "url": "https://en.wikipedia.org/wiki/Three_Kingdoms"
+    },
+    {
+     "title": "Jin dynasty (266-420) (Wikipedia): Luoyang sacked 311, Chang'an taken 316; Eastern Jin at Jiankang 317-420; Liu Song 420",
+     "url": "https://en.wikipedia.org/wiki/Jin_dynasty_(266%E2%80%93420)"
+    }
+   ]
+  },
+  {
+   "realm": "Southern Qi / Liang Dynasty / Chen Dynasty",
+   "years": [
+    502,
+    591
+   ],
+   "severity": "error",
+   "issue": "Each Southern dynasty drawn at Jiankang for years after its successor took over: Southern Qi to 509 (Liang 502), Liang to 560 (Chen 557), Chen to 591 (Sui 589). Relabelled to the successor in each case.",
+   "fixed": true,
+   "source": [
+    {
+     "title": "Northern and Southern dynasties (Wikipedia): Liu Song 420-479, Qi 479-502, Liang 502-557, Chen 557-589 at Jiankang",
+     "url": "https://en.wikipedia.org/wiki/Northern_and_Southern_dynasties"
+    },
+    {
+     "title": "Sui dynasty (Wikipedia): founded 581 at Chang'an; took Jiankang 589; Luoyang from 605; ended 618",
+     "url": "https://en.wikipedia.org/wiki/Sui_dynasty"
+    }
+   ]
+  },
+  {
+   "realm": "Eastern Wei / Western Wei / Northern Zhou",
+   "years": [
+    550,
+    586
+   ],
+   "severity": "error",
+   "issue": "Northern successor dynasties start years late: Eastern Wei to 554 (Northern Qi 550), Western Wei to 560 (Northern Zhou 557), Northern Zhou to 586 (Sui 581, so Chang'an showed Northern Zhou in 581-586). Relabelled.",
+   "fixed": true,
+   "source": [
+    {
+     "title": "Eastern Wei (Wikipedia): capital Ye 534-550; replaced by Northern Qi in 550",
+     "url": "https://en.wikipedia.org/wiki/Eastern_Wei"
+    },
+    {
+     "title": "Northern Zhou (Wikipedia): capital Chang'an; founded 557; took Northern Qi 577; replaced by Sui 581",
+     "url": "https://en.wikipedia.org/wiki/Northern_Zhou"
+    },
+    {
+     "title": "Sui dynasty (Wikipedia): founded 581 at Chang'an; took Jiankang 589; Luoyang from 605; ended 618",
+     "url": "https://en.wikipedia.org/wiki/Sui_dynasty"
+    }
+   ]
+  },
+  {
+   "realm": "Later Jin / Former Jin / Later Liang Dynasty / Later Han",
+   "years": [
+    911,
+    959
+   ],
+   "severity": "error",
+   "issue": "Five Dynasties labels shifted: the Jin state at Taiyuan in 911-921 is stored as 'Later Jin' (936-947); Later Liang and Jin drawn to 925 although the Later Tang replaced both in 923; Later Han drawn to 959 (Later Zhou 951), so Kaifeng 955 showed Later Han. Relabelled. Northern Han (Taiyuan, 951-979) is still merged into the Later Zhou outline in 951-959.",
+   "fixed": true,
+   "source": {
+    "title": "Five Dynasties and Ten Kingdoms period (Wikipedia): Later Liang 907-923, Jin at Taiyuan, Later Tang 923, Later Jin 936-947, Later Han 947-951, Later Zhou 951-960",
+    "url": "https://en.wikipedia.org/wiki/Five_Dynasties_and_Ten_Kingdoms_period"
+   }
+  },
+  {
+   "realm": "Northern Song",
+   "years": [
+    1127,
+    1138
+   ],
+   "severity": "error",
+   "issue": "Northern Song drawn over all of north China, Kaifeng included, until 1138; the Jin took Kaifeng in January 1127. 1127-1138 relabelled Southern Song, and from 1130 (Jin and its client Qi state hold the north) cropped north of 33.5°N, leaving the north blank because the Jin outline does not cover it before 1139.",
+   "fixed": true,
+   "source": [
+    {
+     "title": "Song dynasty (Wikipedia): Kaifeng 960-1127; Jingkang 1127; Lin'an (Hangzhou); Lin'an fell 4 Feb 1276; Yamen 1279",
+     "url": "https://en.wikipedia.org/wiki/Song_dynasty"
+    },
+    {
+     "title": "Jin dynasty (1115-1234) (Wikipedia): took Kaifeng Jan 1127; Zhongdu 1153-1214; Kaifeng 1214-1233; fell 1234",
+     "url": "https://en.wikipedia.org/wiki/Jin_dynasty_(1115%E2%80%931234)"
+    }
+   ]
+  },
+  {
+   "realm": "Southern Song",
+   "years": [
+    1276,
+    1278
+   ],
+   "severity": "error",
+   "issue": "Lin'an (Hangzhou) shown Song until 1278; it fell on 4 Feb 1276. Cropped to south of 29.9°N for 1276-78 (the loyalist south, incl. Fujian and Chongqing).",
+   "fixed": true,
+   "source": {
+    "title": "Song dynasty (Wikipedia): Kaifeng 960-1127; Jingkang 1127; Lin'an (Hangzhou); Lin'an fell 4 Feb 1276; Yamen 1279",
+    "url": "https://en.wikipedia.org/wiki/Song_dynasty"
+   }
+  },
+  {
+   "realm": "Kenmu Restoration",
+   "years": [
+    1336,
+    1343
+   ],
+   "severity": "error",
+   "issue": "Kenmu Restoration drawn (Kyoto) until 1343; it ended in 1336 when Ashikaga Takauji took Kyoto and founded the shogunate. Relabelled Ashikaga Shogunate.",
+   "fixed": true,
+   "source": [
+    {
+     "title": "Kenmu Restoration (Wikipedia): 1333-1336; Ashikaga Takauji entered Kyoto Feb 1336",
+     "url": "https://en.wikipedia.org/wiki/Kenmu_Restoration"
+    },
+    {
+     "title": "Ashikaga shogunate (Wikipedia): 1336-1573, seat Kyoto; ended when Nobunaga drove out Yoshiaki",
+     "url": "https://en.wikipedia.org/wiki/Ashikaga_shogunate"
+    }
+   ]
+  },
+  {
+   "realm": "Northern Fujiwara",
+   "years": [
+    1190,
+    1191
+   ],
+   "severity": "warning",
+   "issue": "Hiraizumi shown as Northern Fujiwara after Yoritomo destroyed them in 1189. Relabelled Kamakura Shogunate.",
+   "fixed": true,
+   "source": {
+    "title": "Northern Fujiwara (Wikipedia): seat Hiraizumi; destroyed by Yoritomo in 1189",
+    "url": "https://en.wikipedia.org/wiki/Northern_Fujiwara"
+   }
+  },
+  {
+   "realm": "Tokugawa Shogunate",
+   "years": [
+    1600,
+    1869
+   ],
+   "severity": "error",
+   "issue": "Okinawa (Shuri, the Ryukyu capital), Miyako and Yaeyama drawn as Tokugawa Japan; Ryukyu remained a kingdom (Satsuma vassal from 1609, de jure independent, tributary to China) until 1872-79. Cropped west of 128.5°E (and Amami excluded before Satsuma annexed it in 1611). Ryukyu is now blank 1600-1869 because the map has no Ryukyu outline after 1520 (see Maynila finding).",
+   "fixed": true,
+   "source": [
+    {
+     "title": "Ryukyu Kingdom (Wikipedia): Okinawa united 1429, capital Shuri; Satsuma vassal from 1609 but de jure independent; Okinawa Prefecture 1879",
+     "url": "https://en.wikipedia.org/wiki/Ryukyu_Kingdom"
+    },
+    {
+     "title": "Tokugawa shogunate (Wikipedia): 1603-1868, governed from Edo; ended 1868",
+     "url": "https://en.wikipedia.org/wiki/Tokugawa_shogunate"
+    }
+   ]
+  },
+  {
+   "realm": "Kuomintang",
+   "years": [
+    1917,
+    1929
+   ],
+   "severity": "error",
+   "issue": "Nearly all of China (Beijing, Shanghai, Wuhan) drawn as 'Kuomintang' from 1917; until 1928 the recognised government of the Republic of China was the Beiyang government in Beijing, the KMT ran only a rival government in Guangzhou. Relabelled Republic of China, which also closes the Republic's 1917-1929 gap.",
+   "fixed": true,
+   "source": [
+    {
+     "title": "Beiyang government (Wikipedia): internationally recognised government of the ROC at Beijing, 1912-1928; rival Guangzhou government from 1917",
+     "url": "https://en.wikipedia.org/wiki/Beiyang_government"
+    },
+    {
+     "title": "Nationalist government (Wikipedia): capital Nanjing from 1927; wartime retreat to Chongqing",
+     "url": "https://en.wikipedia.org/wiki/Nationalist_government"
+    }
+   ]
+  },
+  {
+   "realm": "Republic of China",
+   "years": [
+    1950,
+    2023
+   ],
+   "severity": "error",
+   "issue": "After 1950 the Republic of China outline still includes Hainan (taken by the PRC 16 April-1 May 1950) and the Zhoushan islands, doubling its area and overlapping the PRC on Hainan. Cropped to Taiwan, Penghu and Matsu. Hainan is blank 1950-52 because the PRC outline only gains it in 1953.",
+   "fixed": true,
+   "source": [
+    {
+     "title": "Battle of Hainan Island (Wikipedia): 16 April-1 May 1950, PRC captures Hainan",
+     "url": "https://en.wikipedia.org/wiki/Battle_of_Hainan_Island"
+    },
+    {
+     "title": "Proclamation of the People's Republic of China (Wikipedia): 1 Oct 1949 in Beijing; ROC retreated to Taiwan by Dec 1949",
+     "url": "https://en.wikipedia.org/wiki/Proclamation_of_the_People%27s_Republic_of_China"
+    }
+   ]
+  },
+  {
+   "realm": "Great Mongol State",
+   "years": [
+    1924,
+    1925
+   ],
+   "severity": "warning",
+   "issue": "Bogd Khanate drawn to 1925; the Mongolian People's Republic was proclaimed 26 Nov 1924. Relabelled.",
+   "fixed": true,
+   "source": {
+    "title": "Bogd Khanate of Mongolia (Wikipedia): 1911-1919 and 1921-1924, capital Niislel Khuree; MPR proclaimed 26 Nov 1924",
+    "url": "https://en.wikipedia.org/wiki/Bogd_Khanate_of_Mongolia"
+   }
+  },
+  {
+   "realm": "Communist Party of China",
+   "years": [
+    1935,
+    1935
+   ],
+   "severity": "warning",
+   "issue": "Jiangxi Soviet (Ruijin) still drawn in 1935; it was abandoned in October 1934. Cropped to north of 29.1°N for 1935.",
+   "fixed": true,
+   "source": {
+    "title": "Jiangxi Soviet (Wikipedia): 1931-1934, capital Ruijin; abandoned October 1934",
+    "url": "https://en.wikipedia.org/wiki/Jiangxi_Soviet"
+   }
+  },
+  {
+   "realm": "Joseon",
+   "years": [
+    1392,
+    1897
+   ],
+   "severity": "warning",
+   "issue": "Realm linked to Wikidata Q28405 (Gojoseon, 2333-108 BCE) instead of Q28179 (Joseon, 1392-1897). Index metadata, not fixable through corrections.",
+   "fixed": false,
+   "source": {
+    "title": "Wikidata: Joseon is Q28179 (inception 5 Aug 1392, dissolution 12 Oct 1897)",
+    "url": "https://www.wikidata.org/wiki/Special:ItemByTitle/enwiki/Joseon"
+   }
+  },
+  {
+   "realm": "(Wikidata links: several East Asian realms)",
+   "years": null,
+   "severity": "warning",
+   "issue": "Wrong Wikidata items in public/data/clio/index.json (cause many false date leads): Qi -> Northern Qi; Lu -> Aq Qoyunlu; Han (state) -> Beylik of Saruhan; Song (state) -> Song dynasty; Jin (state) -> Five Dynasties Jin; Qin (state) -> Former Qin; Yan -> Former Yan; Wu -> Eastern Wu; Zhao -> Han Zhao; Wei -> Cao Wei; Xia (Helian) -> Western Xia; Liang Dynasty -> Later Liang; Southern Liang -> Liang dynasty; Yue -> Minyue; Cao Cao -> Cao (state); Great Mongol State -> Yuan dynasty; Republic of China (1912-49) -> PRC (Q148); Republic of Korea -> North Korea (Q423); Japan (1953-) -> Empire of Japan (Q188712).",
+   "fixed": false,
+   "source": {
+    "title": "content/borders/wikidata-dates.json: labels and dates of the linked Wikidata items (see border-check links/dates leads)",
+    "url": "content/borders/wikidata-dates.json"
+   }
+  },
+  {
+   "realm": "Ryukyu Kingdom",
+   "years": [
+    1521,
+    1879
+   ],
+   "severity": "error",
+   "issue": "The map ends the Ryukyu Kingdom in 1520; it lasted to 1879. Its outline continues under the wrong name 'Maynila' (1521-1599) and then inside Tokugawa Japan. Needs a reconstruction outline 1600-1879 (supplements) - corrections cannot add geometry.",
+   "fixed": false,
+   "source": {
+    "title": "Ryukyu Kingdom (Wikipedia): Okinawa united 1429, capital Shuri; Satsuma vassal from 1609 but de jure independent; Okinawa Prefecture 1879",
+    "url": "https://en.wikipedia.org/wiki/Ryukyu_Kingdom"
+   }
+  },
+  {
+   "realm": "Republic of China",
+   "years": [
+    1919,
+    1921
+   ],
+   "severity": "warning",
+   "issue": "Outer Mongolia blank in 1920-21; it was under Chinese military occupation 1919-1921. Kinmen (ROC-held since 1949) is drawn as PRC because the ROC outline lacks it and the point search finds the mainland. Neither fixable by corrections.",
+   "fixed": false,
+   "source": {
+    "title": "Bogd Khanate of Mongolia (Wikipedia): 1911-1919 and 1921-1924, capital Niislel Khuree; MPR proclaimed 26 Nov 1924",
+    "url": "https://en.wikipedia.org/wiki/Bogd_Khanate_of_Mongolia"
+   }
+  },
+  {
+   "realm": "Silla / Baekje",
+   "years": [
+    -57,
+    377
+   ],
+   "severity": "warning",
+   "issue": "Silla starts in 378 and Baekje in 347 (Jinhan and Mahan before), against traditional founding dates of 57 and 18 BCE; both began as members of those confederacies, so left as is. Gyeongju before 378 shows Jinhan, Seoul before 347 Mahan.",
+   "fixed": false,
+   "source": [
+    {
+     "title": "Baekje (Wikipedia): Wiryeseong (Seoul) to 475, Ungjin (Gongju) 475-538, Sabi (Buyeo) 538-660",
+     "url": "https://en.wikipedia.org/wiki/Baekje"
+    },
+    {
+     "title": "Silla (Wikipedia): capital Seorabeol (Gyeongju); surrendered to Goryeo 935",
+     "url": "https://en.wikipedia.org/wiki/Silla"
+    }
+   ]
+  },
+  {
+   "realm": "Zhou Dynasty / Shang Dynasty",
+   "years": [
+    -1045,
+    -1001
+   ],
+   "severity": "warning",
+   "issue": "The Shang is clipped at 1046 BCE but the Zhou outline only starts in 1000 BCE, leaving the Yellow River plain empty for 45 years. A relabel of Shang to Zhou would conflict with the existing Shang clip.",
+   "fixed": false,
+   "source": {
+    "title": "Zhou dynasty (Wikipedia): capital moved east 771 BC; royal domain extinguished by Qin 256 BC",
+    "url": "https://en.wikipedia.org/wiki/Zhou_dynasty"
+   }
+  },
+  {
+   "realm": "Yuan Dynasty",
+   "years": [
+    1356,
+    1374
+   ],
+   "severity": "error",
+   "issue": "Nanjing shown under the Yuan until the Ming outline starts (1375); Zhu Yuanzhang took Nanjing in 1356 and proclaimed the Ming there on 23 Jan 1368 (Nanjing 1368 shows Yuan). Owner: Ming/Yuan reviewers.",
+   "fixed": false,
+   "source": {
+    "title": "Ming dynasty (Wikipedia): Nanjing taken 1356; dynasty proclaimed there 1368; Beijing capital from 1420",
+    "url": "https://en.wikipedia.org/wiki/Ming_dynasty"
+   }
+  },
+  {
+   "realm": "Yuan Dynasty / Mongol Empire",
+   "years": [
+    1260,
+    1362
+   ],
+   "severity": "error",
+   "issue": "Korea drawn as Mongol Empire/Yuan territory (Kaesong 1300, Pyongyang 1300 = Yuan) and Goryeo's outline missing 1260-1362; Goryeo was a vassal 'client state' but 'never conquered by the Mongols' and remained a kingdom. Owner: Mongol/Yuan reviewer.",
+   "fixed": false,
+   "source": {
+    "title": "Goryeo (Wikipedia): founded 918 at Kaesong; Silla annexed 935; Tamna incorporated 1105; ended 1392",
+    "url": "https://en.wikipedia.org/wiki/Goryeo"
+   }
+  },
+  {
+   "realm": "Han Dynasty",
+   "years": [
+    -36,
+    237
+   ],
+   "severity": "error",
+   "issue": "Ji'an (Gungnae, Goguryeo's capital 3-427) drawn as Han; Luoyang blank in 25 (Han outline missing 14-29 though Guangwu made Luoyang capital in 25); Chengdu blank 221-223 because Han's clip at 220 hides polygons that seem to be Liu Bei's Shu (Shu Han outline starts 224, proclaimed 221). Owner: Qin/Han journey.",
+   "fixed": false,
+   "source": [
+    {
+     "title": "Goguryeo (Wikipedia): Gungnae 3-427, Pyongyang 427-668; Silla took the Han River valley 553; fell 668",
+     "url": "https://en.wikipedia.org/wiki/Goguryeo"
+    },
+    {
+     "title": "Han dynasty (Wikipedia): Chang'an, then Luoyang from 25 AD; Xin 9-23; ended 220",
+     "url": "https://en.wikipedia.org/wiki/Han_dynasty"
+    },
+    {
+     "title": "Three Kingdoms (Wikipedia): Wei 220 (Luoyang), Shu 221 (Chengdu), Wu at Jianye; Shu fell 263, Jin 266, Wu fell 280",
+     "url": "https://en.wikipedia.org/wiki/Three_Kingdoms"
+    }
+   ]
+  },
+  {
+   "realm": "Tang Dynasty",
+   "years": [
+    619,
+    622
+   ],
+   "severity": "warning",
+   "issue": "Chang'an blank 619-622: Sui is clipped at 618 and the Tang outline starts 623 (founded 618). Owner: Tang journey.",
+   "fixed": false,
+   "source": {
+    "title": "Sui dynasty (Wikipedia): founded 581 at Chang'an; took Jiankang 589; Luoyang from 605; ended 618",
+    "url": "https://en.wikipedia.org/wiki/Sui_dynasty"
+   }
+  },
+  {
+   "realm": "Ming Dynasty / Later Jin Dynasty",
+   "years": [
+    1621,
+    1635
+   ],
+   "severity": "error",
+   "issue": "Shenyang drawn as Ming until 1635; Nurhaci took it in 1621 and made it his capital (Mukden) in 1625. Owner: Ming/Qing journeys.",
+   "fixed": false,
+   "source": {
+    "title": "Transition from Ming to Qing (Wikipedia): Shenyang 1621, capital 1625; Qing 1636; Beijing June 1644; Tungning defeated 1683",
+    "url": "https://en.wikipedia.org/wiki/Transition_from_Ming_to_Qing"
+   }
+  },
+  {
+   "realm": "Empire of Japan",
+   "years": [
+    1868,
+    1878
+   ],
+   "severity": "warning",
+   "issue": "Naha drawn as Empire of Japan from 1870; Ryukyu became a domain only in 1872 and Okinawa Prefecture in 1879. Also Japan 1868-69 overlaps the Tokugawa outline (Boshin War). Owner: Empire of Japan journey.",
+   "fixed": false,
+   "source": {
+    "title": "Ryukyu Kingdom (Wikipedia): Okinawa united 1429, capital Shuri; Satsuma vassal from 1609 but de jure independent; Okinawa Prefecture 1879",
+    "url": "https://en.wikipedia.org/wiki/Ryukyu_Kingdom"
+   }
+  },
+  {
+   "realm": "United States of America",
+   "years": [
+    1948,
+    2024
+   ],
+   "severity": "warning",
+   "issue": "US outline persists in Korea after the ROK was founded in 1948 (overlap with ROK in 1948-50), over Japan after the occupation ended in April 1952 (overlap with Japan from 1953) and over Okinawa after its return in 1972. Owner: Americas reviewer.",
+   "fixed": false,
+   "source": [
+    {
+     "title": "Korea under Japanese rule (Wikipedia): annexed 1910; capital Keijo; Soviet and US zones from 1945; two states in 1948",
+     "url": "https://en.wikipedia.org/wiki/Korea_under_Japanese_rule"
+    },
+    {
+     "title": "Occupation of Japan (Wikipedia): 1945-28 April 1952; most of Okinawa returned 1972",
+     "url": "https://en.wikipedia.org/wiki/Occupation_of_Japan"
+    }
+   ]
+  },
+  {
+   "realm": "Spanish Empire",
+   "years": [
+    1642,
+    1650
+   ],
+   "severity": "warning",
+   "issue": "Taipei still drawn Spanish (overlapping the Dutch) in 1650; the Dutch expelled the Spanish from northern Taiwan in 1642. Owner: Spanish Empire journey.",
+   "fixed": false,
+   "source": {
+    "title": "Dutch Formosa (Wikipedia): 1624-1662 at Zeelandia (Tainan); Spanish in the north 1626-1642",
+    "url": "https://en.wikipedia.org/wiki/Dutch_Formosa"
+   }
+  },
+  {
+   "realm": "Maynila",
+   "years": [
+    1521,
+    1599
+   ],
+   "severity": "error",
+   "issue": "The polygons stored as 'Maynila' (Manila) in 1521-1599 are really the Ryukyu Kingdom: label point in Okinawa (128.03, 26.59), same islands as the Ryukyu outline of 1497-1520, plus a tiny Manila part only until 1571. Naha shows 'Maynila'. Proposed (not applied, not my realm): relabel 1572-1599 -> Ryukyu Kingdom; for 1521-1571 crop to [123, 24, 130, 29] and relabel -> Ryukyu Kingdom (drops the tiny Manila part). Owner: Southeast Asia reviewer.",
+   "fixed": false,
+   "source": {
+    "title": "Ryukyu Kingdom (Wikipedia): Okinawa united 1429, capital Shuri; Satsuma vassal from 1609 but de jure independent; Okinawa Prefecture 1879",
+    "url": "https://en.wikipedia.org/wiki/Ryukyu_Kingdom"
+   }
+  },
+  {
+   "realm": "Rouran Khaganate",
+   "years": [
+    398,
+    493
+   ],
+   "severity": "error",
+   "issue": "Pingcheng (Datong), the Northern Wei capital 398-493, is drawn inside the Rouran outline (Pingcheng 450 = Rouran). Owner: steppe reviewer.",
+   "fixed": false,
+   "source": {
+    "title": "Northern Wei (Wikipedia): Pingcheng 398-493, Luoyang 493-534",
+    "url": "https://en.wikipedia.org/wiki/Northern_Wei"
+   }
+  },
+  {
+   "realm": "Golden Horde",
+   "years": [
+    1547,
+    1695
+   ],
+   "severity": "warning",
+   "issue": "Khalkha Mongolia (Ulaanbaatar 1600, 1680; Hohhot 1600) drawn as 'Golden Horde successor khanates'; the Golden Horde was in the Volga steppe (capital Sarai) and ended in 1502. Owner: steppe reviewer.",
+   "fixed": false,
+   "source": {
+    "title": "Golden Horde (Wikipedia): Black Sea to Caspian, capital Sarai; ended 1502",
+    "url": "https://en.wikipedia.org/wiki/Golden_Horde"
+   }
+  }
+ ],
+ "corrections": {
+  "Qi": {
+   "relabel": [
+    {
+     "from": -221,
+     "to": -219,
+     "name": "Qin",
+     "key": "Qin",
+     "addTo": [
+      "Qin"
+     ]
+    }
+   ],
+   "note": "Qi surrendered to Qin in 221 BCE, completing the unification, so in 221-219 BCE its land is shown as Qin.",
+   "sources": [
+    {
+     "title": "Qin's wars of unification (Wikipedia): Han 230, Zhao 228, Wei 225, Chu 223, Yan 222, Qi 221 BC",
+     "url": "https://en.wikipedia.org/wiki/Qin%27s_wars_of_unification"
+    }
+   ]
+  },
+  "Wei": {
+   "relabel": [
+    {
+     "from": -404,
+     "to": -223,
+     "name": "Zhao",
+     "key": "Zhao",
+     "addTo": [
+      "Zhao"
+     ]
+    }
+   ],
+   "crop": [
+    {
+     "from": -404,
+     "to": -223,
+     "box": [
+      100,
+      30,
+      125,
+      39.6
+     ]
+    }
+   ],
+   "note": "The outline labelled Wei in the Warring States lay in central and northern Hebei, which belonged to Zhao (and, until Zhao annexed it in 296 BCE, to the small state of Zhongshan around Lingshou); it is shown as Zhao, trimmed south of Yan's capital Ji. Wei itself held southern Shanxi and the lands around its capital Daliang (Kaifeng), which the map does not draw.",
+   "sources": [
+    {
+     "title": "Wei (state) (Wikipedia): capitals Anyi, then Daliang (Kaifeng) from 361 BC; surrendered to Qin 225 BC",
+     "url": "https://en.wikipedia.org/wiki/Wei_(state)"
+    },
+    {
+     "title": "Zhao (state) (Wikipedia): capital Handan; Hebei and Shanxi; conquered Zhongshan; Dai remnant to 222 BC",
+     "url": "https://en.wikipedia.org/wiki/Zhao_(state)"
+    },
+    {
+     "title": "Zhongshan (state) (Wikipedia): capital Lingshou (Pingshan, Hebei); annexed by Zhao 296 BC",
+     "url": "https://en.wikipedia.org/wiki/Zhongshan_(state)"
+    }
+   ]
+  },
+  "Zhongshan": {
+   "relabel": [
+    {
+     "from": -366,
+     "to": -292,
+     "name": "Yan",
+     "key": "Yan",
+     "addTo": [
+      "Yan"
+     ]
+    }
+   ],
+   "note": "The outline labelled Zhongshan lies around Ji (Beijing), the capital of Yan, so it is shown as Yan; Zhongshan itself lay further south-west around Lingshou until Zhao annexed it in 296 BCE.",
+   "sources": [
+    {
+     "title": "Yan (state) (Wikipedia): capital Ji (Beijing); Ji fell 226 BC, Yan overrun 222 BC",
+     "url": "https://en.wikipedia.org/wiki/Yan_(state)"
+    },
+    {
+     "title": "Zhongshan (state) (Wikipedia): capital Lingshou (Pingshan, Hebei); annexed by Zhao 296 BC",
+     "url": "https://en.wikipedia.org/wiki/Zhongshan_(state)"
+    }
+   ]
+  },
+  "Chu": {
+   "crop": [
+    {
+     "from": -750,
+     "to": -279,
+     "box": [
+      100,
+      20,
+      125,
+      34.15
+     ]
+    },
+    {
+     "from": -278,
+     "to": -224,
+     "box": [
+      112.5,
+      20,
+      125,
+      34.15
+     ]
+    }
+   ],
+   "note": "Chu's northern frontier ran along the Fangcheng hills; the map had drawn it over Xinzheng (capital of Zheng, then Han), Daliang (capital of Wei) and Shangqiu (capital of Song), so its outline is trimmed at about 34.15°N. After Qin took the Chu capital Ying in 278 BCE, the land west of about 112.5°E is no longer shown as Chu.",
+   "sources": [
+    {
+     "title": "Chu (state) (Wikipedia): Ying taken by Qin 278 BC; Shouchun 241-223 BC; northern border at Fangcheng",
+     "url": "https://en.wikipedia.org/wiki/Chu_(state)"
+    },
+    {
+     "title": "Qin's wars of unification (Wikipedia): Han 230, Zhao 228, Wei 225, Chu 223, Yan 222, Qi 221 BC",
+     "url": "https://en.wikipedia.org/wiki/Qin%27s_wars_of_unification"
+    }
+   ]
+  },
+  "Later Zhou": {
+   "relabel": [
+    {
+     "from": -750,
+     "to": -257,
+     "name": "Eastern Zhou",
+     "key": "Eastern Zhou"
+    },
+    {
+     "from": 960,
+     "to": 960,
+     "name": "Northern Song",
+     "key": "Northern Song"
+    }
+   ],
+   "note": "Before 256 BCE this small outline is the royal domain of the Eastern Zhou kings, extinguished by Qin in 256 BCE; the Later Zhou dynasty (951-960) gave way to the Song in February 960.",
+   "sources": [
+    {
+     "title": "Zhou dynasty (Wikipedia): capital moved east 771 BC; royal domain extinguished by Qin 256 BC",
+     "url": "https://en.wikipedia.org/wiki/Zhou_dynasty"
+    },
+    {
+     "title": "Five Dynasties and Ten Kingdoms period (Wikipedia): Later Liang 907-923, Jin at Taiyuan, Later Tang 923, Later Jin 936-947, Later Han 947-951, Later Zhou 951-960",
+     "url": "https://en.wikipedia.org/wiki/Five_Dynasties_and_Ten_Kingdoms_period"
+    },
+    {
+     "title": "Song dynasty (Wikipedia): Kaifeng 960-1127; Jingkang 1127; Lin'an (Hangzhou); Lin'an fell 4 Feb 1276; Yamen 1279",
+     "url": "https://en.wikipedia.org/wiki/Song_dynasty"
+    }
+   ]
+  },
+  "Later Han": {
+   "relabel": [
+    {
+     "from": 951,
+     "to": 959,
+     "name": "Later Zhou",
+     "key": "Later Zhou"
+    }
+   ],
+   "note": "The Later Han ended in 951, when Guo Wei founded the Later Zhou; Taiyuan and central Shanxi then became the separate Northern Han, which this outline does not split off.",
+   "sources": [
+    {
+     "title": "Five Dynasties and Ten Kingdoms period (Wikipedia): Later Liang 907-923, Jin at Taiyuan, Later Tang 923, Later Jin 936-947, Later Han 947-951, Later Zhou 951-960",
+     "url": "https://en.wikipedia.org/wiki/Five_Dynasties_and_Ten_Kingdoms_period"
+    }
+   ]
+  },
+  "Later Jin": {
+   "relabel": [
+    {
+     "from": 911,
+     "to": 921,
+     "name": "Former Jin",
+     "key": "Former Jin"
+    }
+   ],
+   "note": "In 911-921 this outline is the Jin state of Li Keyong and Li Cunxu, based at Taiyuan, not the Later Jin dynasty of 936-947.",
+   "sources": [
+    {
+     "title": "Five Dynasties and Ten Kingdoms period (Wikipedia): Later Liang 907-923, Jin at Taiyuan, Later Tang 923, Later Jin 936-947, Later Han 947-951, Later Zhou 951-960",
+     "url": "https://en.wikipedia.org/wiki/Five_Dynasties_and_Ten_Kingdoms_period"
+    }
+   ]
+  },
+  "Former Jin": {
+   "relabel": [
+    {
+     "from": 923,
+     "to": 925,
+     "name": "Later Tang",
+     "key": "Later Tang",
+     "addTo": [
+      "Later Tang"
+     ]
+    }
+   ],
+   "note": "Li Cunxu proclaimed the Later Tang in 923 and conquered the Later Liang the same year.",
+   "sources": [
+    {
+     "title": "Five Dynasties and Ten Kingdoms period (Wikipedia): Later Liang 907-923, Jin at Taiyuan, Later Tang 923, Later Jin 936-947, Later Han 947-951, Later Zhou 951-960",
+     "url": "https://en.wikipedia.org/wiki/Five_Dynasties_and_Ten_Kingdoms_period"
+    }
+   ]
+  },
+  "Later Liang Dynasty": {
+   "relabel": [
+    {
+     "from": 923,
+     "to": 925,
+     "name": "Later Tang",
+     "key": "Later Tang",
+     "addTo": [
+      "Later Tang"
+     ]
+    }
+   ],
+   "note": "The Later Liang fell to the Later Tang in 923.",
+   "sources": [
+    {
+     "title": "Five Dynasties and Ten Kingdoms period (Wikipedia): Later Liang 907-923, Jin at Taiyuan, Later Tang 923, Later Jin 936-947, Later Han 947-951, Later Zhou 951-960",
+     "url": "https://en.wikipedia.org/wiki/Five_Dynasties_and_Ten_Kingdoms_period"
+    }
+   ]
+  },
+  "Cao Cao": {
+   "relabel": [
+    {
+     "from": 220,
+     "to": 223,
+     "name": "Cao Wei",
+     "key": "Cao Wei"
+    }
+   ],
+   "note": "Cao Cao died in 220 and his son Cao Pi founded the state of Wei the same year, with its capital at Luoyang.",
+   "sources": [
+    {
+     "title": "Three Kingdoms (Wikipedia): Wei 220 (Luoyang), Shu 221 (Chengdu), Wu at Jianye; Shu fell 263, Jin 266, Wu fell 280",
+     "url": "https://en.wikipedia.org/wiki/Three_Kingdoms"
+    }
+   ]
+  },
+  "Eastern Wu": {
+   "relabel": [
+    {
+     "from": 280,
+     "to": 282,
+     "name": "Western Jin",
+     "key": "Western Jin",
+     "addTo": [
+      "Western Jin"
+     ]
+    }
+   ],
+   "note": "Wu's capital Jianye fell to the Jin in 280, ending the Three Kingdoms.",
+   "sources": [
+    {
+     "title": "Three Kingdoms (Wikipedia): Wei 220 (Luoyang), Shu 221 (Chengdu), Wu at Jianye; Shu fell 263, Jin 266, Wu fell 280",
+     "url": "https://en.wikipedia.org/wiki/Three_Kingdoms"
+    },
+    {
+     "title": "Jin dynasty (266-420) (Wikipedia): Luoyang sacked 311, Chang'an taken 316; Eastern Jin at Jiankang 317-420; Liu Song 420",
+     "url": "https://en.wikipedia.org/wiki/Jin_dynasty_(266%E2%80%93420)"
+    }
+   ]
+  },
+  "Western Jin": {
+   "relabel": [
+    {
+     "from": 421,
+     "to": 425,
+     "name": "Liu Song Dynasty",
+     "key": "Liu Song Dynasty"
+    }
+   ],
+   "crop": [
+    {
+     "from": 265,
+     "to": 316,
+     "box": [
+      70,
+      15,
+      126.0,
+      55
+     ]
+    }
+   ],
+   "note": "Liu Yu ended the Eastern Jin in 420 and founded the Liu Song. Before 316 the outline is trimmed east of 126°E: Gungnae (Ji'an), on the Yalu, was Goguryeo's capital from 3 to 427, while Jin's Lelang commandery around Pyongyang lasted until 313.",
+   "sources": [
+    {
+     "title": "Jin dynasty (266-420) (Wikipedia): Luoyang sacked 311, Chang'an taken 316; Eastern Jin at Jiankang 317-420; Liu Song 420",
+     "url": "https://en.wikipedia.org/wiki/Jin_dynasty_(266%E2%80%93420)"
+    },
+    {
+     "title": "Goguryeo (Wikipedia): Gungnae 3-427, Pyongyang 427-668; Silla took the Han River valley 553; fell 668",
+     "url": "https://en.wikipedia.org/wiki/Goguryeo"
+    },
+    {
+     "title": "Lelang Commandery (Wikipedia): 108 BC-313 AD, seat at modern Pyongyang, conquered by Goguryeo 313",
+     "url": "https://en.wikipedia.org/wiki/Lelang_Commandery"
+    }
+   ]
+  },
+  "Southern Qi": {
+   "relabel": [
+    {
+     "from": 502,
+     "to": 509,
+     "name": "Liang Dynasty",
+     "key": "Liang Dynasty"
+    }
+   ],
+   "note": "The Southern Qi gave way to the Liang in 502.",
+   "sources": [
+    {
+     "title": "Northern and Southern dynasties (Wikipedia): Liu Song 420-479, Qi 479-502, Liang 502-557, Chen 557-589 at Jiankang",
+     "url": "https://en.wikipedia.org/wiki/Northern_and_Southern_dynasties"
+    }
+   ]
+  },
+  "Liang Dynasty": {
+   "relabel": [
+    {
+     "from": 557,
+     "to": 560,
+     "name": "Chen Dynasty",
+     "key": "Chen Dynasty"
+    }
+   ],
+   "note": "Chen Baxian ended the Liang at Jiankang in 557 and founded the Chen.",
+   "sources": [
+    {
+     "title": "Northern and Southern dynasties (Wikipedia): Liu Song 420-479, Qi 479-502, Liang 502-557, Chen 557-589 at Jiankang",
+     "url": "https://en.wikipedia.org/wiki/Northern_and_Southern_dynasties"
+    }
+   ]
+  },
+  "Chen Dynasty": {
+   "relabel": [
+    {
+     "from": 589,
+     "to": 591,
+     "name": "Sui Dynasty",
+     "key": "Sui Dynasty",
+     "addTo": [
+      "Sui Dynasty"
+     ]
+    }
+   ],
+   "note": "Sui troops took Jiankang in 589 and the last Chen emperor surrendered.",
+   "sources": [
+    {
+     "title": "Sui dynasty (Wikipedia): founded 581 at Chang'an; took Jiankang 589; Luoyang from 605; ended 618",
+     "url": "https://en.wikipedia.org/wiki/Sui_dynasty"
+    }
+   ]
+  },
+  "Northern Zhou": {
+   "relabel": [
+    {
+     "from": 581,
+     "to": 586,
+     "name": "Sui Dynasty",
+     "key": "Sui Dynasty"
+    }
+   ],
+   "note": "Yang Jian took the Northern Zhou throne in March 581 and renamed the state Sui.",
+   "sources": [
+    {
+     "title": "Northern Zhou (Wikipedia): capital Chang'an; founded 557; took Northern Qi 577; replaced by Sui 581",
+     "url": "https://en.wikipedia.org/wiki/Northern_Zhou"
+    },
+    {
+     "title": "Sui dynasty (Wikipedia): founded 581 at Chang'an; took Jiankang 589; Luoyang from 605; ended 618",
+     "url": "https://en.wikipedia.org/wiki/Sui_dynasty"
+    }
+   ]
+  },
+  "Western Wei": {
+   "relabel": [
+    {
+     "from": 557,
+     "to": 560,
+     "name": "Northern Zhou",
+     "key": "Northern Zhou"
+    }
+   ],
+   "note": "The Northern Zhou replaced the Western Wei at Chang'an in 557.",
+   "sources": [
+    {
+     "title": "Northern Zhou (Wikipedia): capital Chang'an; founded 557; took Northern Qi 577; replaced by Sui 581",
+     "url": "https://en.wikipedia.org/wiki/Northern_Zhou"
+    }
+   ]
+  },
+  "Eastern Wei": {
+   "relabel": [
+    {
+     "from": 550,
+     "to": 554,
+     "name": "Northern Qi",
+     "key": "Northern Qi"
+    }
+   ],
+   "note": "Gao Yang deposed the last Eastern Wei emperor in 550 and founded the Northern Qi at Ye.",
+   "sources": [
+    {
+     "title": "Eastern Wei (Wikipedia): capital Ye 534-550; replaced by Northern Qi in 550",
+     "url": "https://en.wikipedia.org/wiki/Eastern_Wei"
+    }
+   ]
+  },
+  "Northern Song": {
+   "relabel": [
+    {
+     "from": 1127,
+     "to": 1138,
+     "name": "Southern Song",
+     "key": "Southern Song"
+    }
+   ],
+   "crop": [
+    {
+     "from": 1130,
+     "to": 1138,
+     "box": [
+      95,
+      18,
+      125,
+      33.5
+     ]
+    }
+   ],
+   "note": "The Jurchen Jin took Kaifeng in January 1127 and the Song court moved south (the Southern Song, later at Lin'an, modern Hangzhou). From 1130 the north (Henan, Shandong and Shaanxi) was held by the Jin and their client state, so the Song outline is trimmed north of about 33.5°N.",
+   "sources": [
+    {
+     "title": "Song dynasty (Wikipedia): Kaifeng 960-1127; Jingkang 1127; Lin'an (Hangzhou); Lin'an fell 4 Feb 1276; Yamen 1279",
+     "url": "https://en.wikipedia.org/wiki/Song_dynasty"
+    },
+    {
+     "title": "Jin dynasty (1115-1234) (Wikipedia): took Kaifeng Jan 1127; Zhongdu 1153-1214; Kaifeng 1214-1233; fell 1234",
+     "url": "https://en.wikipedia.org/wiki/Jin_dynasty_(1115%E2%80%931234)"
+    }
+   ]
+  },
+  "Southern Song": {
+   "crop": [
+    {
+     "from": 1276,
+     "to": 1278,
+     "box": [
+      100,
+      18,
+      122,
+      29.9
+     ]
+    }
+   ],
+   "note": "Yuan forces captured the capital Lin'an (Hangzhou) on 4 February 1276; Song loyalists fought on in the south until the Battle of Yamen in 1279, so in 1276-78 Lin'an and the lands north of it are no longer shown as Song.",
+   "sources": [
+    {
+     "title": "Song dynasty (Wikipedia): Kaifeng 960-1127; Jingkang 1127; Lin'an (Hangzhou); Lin'an fell 4 Feb 1276; Yamen 1279",
+     "url": "https://en.wikipedia.org/wiki/Song_dynasty"
+    }
+   ]
+  },
+  "Taebong": {
+   "relabel": [
+    {
+     "from": 918,
+     "to": 921,
+     "name": "Goryeo",
+     "key": "Goryeo"
+    }
+   ],
+   "note": "In 918 Gung Ye of Taebong was overthrown and Wang Geon founded Goryeo.",
+   "sources": [
+    {
+     "title": "Taebong (Wikipedia): Gung Ye overthrown and Wang Geon installed in 918",
+     "url": "https://en.wikipedia.org/wiki/Taebong"
+    },
+    {
+     "title": "Goryeo (Wikipedia): founded 918 at Kaesong; Silla annexed 935; Tamna incorporated 1105; ended 1392",
+     "url": "https://en.wikipedia.org/wiki/Goryeo"
+    }
+   ]
+  },
+  "Goryeo": {
+   "relabel": [
+    {
+     "from": 1392,
+     "to": 1394,
+     "name": "Joseon",
+     "key": "Joseon"
+    }
+   ],
+   "note": "Goryeo ended in July 1392, when Yi Seong-gye founded Joseon.",
+   "sources": [
+    {
+     "title": "Goryeo (Wikipedia): founded 918 at Kaesong; Silla annexed 935; Tamna incorporated 1105; ended 1392",
+     "url": "https://en.wikipedia.org/wiki/Goryeo"
+    },
+    {
+     "title": "Joseon (Wikipedia): founded 1392; capital Hanseong; Korean Empire proclaimed 1897",
+     "url": "https://en.wikipedia.org/wiki/Joseon"
+    }
+   ]
+  },
+  "Tamna": {
+   "relabel": [
+    {
+     "from": 1105,
+     "to": 1274,
+     "name": "Goryeo",
+     "key": "Goryeo",
+     "addTo": [
+      "Goryeo"
+     ]
+    }
+   ],
+   "note": "Tamna (Jeju) was formally annexed by Goryeo in 1105; from 1275 to 1301 it was a Yuan prefecture.",
+   "sources": [
+    {
+     "title": "Tamna (Wikipedia): officially annexed by Goryeo 1105; Yuan Tamna Prefecture 1275-1301",
+     "url": "https://en.wikipedia.org/wiki/Tamna"
+    }
+   ]
+  },
+  "Gojoseon": {
+   "relabel": [
+    {
+     "from": -108,
+     "to": -92,
+     "name": "Han Dynasty",
+     "key": "Han Dynasty",
+     "addTo": [
+      "Han Dynasty"
+     ]
+    }
+   ],
+   "note": "Wiman Joseon fell to the Han in 108 BCE; its lands became Han commanderies, among them Lelang with its seat at Pyongyang.",
+   "sources": [
+    {
+     "title": "Wiman Joseon (Wikipedia): destroyed by Han c. 108 BC; Four Commanderies set up",
+     "url": "https://en.wikipedia.org/wiki/Wiman_Joseon"
+    },
+    {
+     "title": "Lelang Commandery (Wikipedia): 108 BC-313 AD, seat at modern Pyongyang, conquered by Goguryeo 313",
+     "url": "https://en.wikipedia.org/wiki/Lelang_Commandery"
+    }
+   ]
+  },
+  "Byeonhan": {
+   "relabel": [
+    {
+     "from": 562,
+     "to": 566,
+     "name": "Silla",
+     "key": "Silla",
+     "addTo": [
+      "Silla"
+     ]
+    }
+   ],
+   "note": "The last Gaya state, Daegaya, fell to Silla in 562.",
+   "sources": [
+    {
+     "title": "Gaya confederacy (Wikipedia): Geumgwan Gaya fell to Silla 532, Daegaya 562",
+     "url": "https://en.wikipedia.org/wiki/Gaya_confederacy"
+    }
+   ]
+  },
+  "Kenmu Restoration": {
+   "relabel": [
+    {
+     "from": 1336,
+     "to": 1343,
+     "name": "Ashikaga Shogunate",
+     "key": "Ashikaga Shogunate"
+    }
+   ],
+   "note": "The Kenmu Restoration lasted 1333-1336; Ashikaga Takauji took Kyoto in 1336 and founded the Ashikaga shogunate, while Go-Daigo's Southern Court held out at Yoshino.",
+   "sources": [
+    {
+     "title": "Kenmu Restoration (Wikipedia): 1333-1336; Ashikaga Takauji entered Kyoto Feb 1336",
+     "url": "https://en.wikipedia.org/wiki/Kenmu_Restoration"
+    },
+    {
+     "title": "Ashikaga shogunate (Wikipedia): 1336-1573, seat Kyoto; ended when Nobunaga drove out Yoshiaki",
+     "url": "https://en.wikipedia.org/wiki/Ashikaga_shogunate"
+    }
+   ]
+  },
+  "Northern Fujiwara": {
+   "relabel": [
+    {
+     "from": 1190,
+     "to": 1191,
+     "name": "Kamakura Shogunate",
+     "key": "Kamakura Shogunate",
+     "addTo": [
+      "Kamakura Shogunate"
+     ]
+    }
+   ],
+   "note": "Minamoto no Yoritomo destroyed the Northern Fujiwara and took Hiraizumi in 1189.",
+   "sources": [
+    {
+     "title": "Northern Fujiwara (Wikipedia): seat Hiraizumi; destroyed by Yoritomo in 1189",
+     "url": "https://en.wikipedia.org/wiki/Northern_Fujiwara"
+    }
+   ]
+  },
+  "Tokugawa Shogunate": {
+   "crop": [
+    {
+     "from": 1600,
+     "to": 1610,
+     "box": [
+      128.5,
+      29.0,
+      150,
+      51
+     ]
+    },
+    {
+     "from": 1611,
+     "to": 1869,
+     "box": [
+      128.5,
+      27.0,
+      150,
+      51
+     ]
+    }
+   ],
+   "note": "The Ryukyu Kingdom (Okinawa and the islands south of it, capital Shuri) was never part of the shogunate: Satsuma made it a vassal in 1609, but it kept its king and its tribute ties with China until Japan annexed it in 1872-79, so it is not shown as Tokugawa (the map has no outline of its own for it). Satsuma annexed the Amami islands in 1611. The shogunate ended with the Meiji Restoration of January 1868; in 1868-69 the outline still covers the lands fought over in the Boshin War.",
+   "sources": [
+    {
+     "title": "Ryukyu Kingdom (Wikipedia): Okinawa united 1429, capital Shuri; Satsuma vassal from 1609 but de jure independent; Okinawa Prefecture 1879",
+     "url": "https://en.wikipedia.org/wiki/Ryukyu_Kingdom"
+    },
+    {
+     "title": "Tokugawa shogunate (Wikipedia): 1603-1868, governed from Edo; ended 1868",
+     "url": "https://en.wikipedia.org/wiki/Tokugawa_shogunate"
+    }
+   ]
+  },
+  "Kuomintang": {
+   "relabel": [
+    {
+     "from": 1917,
+     "to": 1929,
+     "name": "Republic of China",
+     "key": "Republic of China"
+    }
+   ],
+   "note": "This outline covers nearly all of China; until 1928 its internationally recognised government was the Beiyang government in Beijing, while the Kuomintang ran a rival government in Guangzhou from 1917. The Nationalists, based at Nanjing from 1927, unified the country in 1928. It is shown as the Republic of China.",
+   "sources": [
+    {
+     "title": "Beiyang government (Wikipedia): internationally recognised government of the ROC at Beijing, 1912-1928; rival Guangzhou government from 1917",
+     "url": "https://en.wikipedia.org/wiki/Beiyang_government"
+    },
+    {
+     "title": "Nationalist government (Wikipedia): capital Nanjing from 1927; wartime retreat to Chongqing",
+     "url": "https://en.wikipedia.org/wiki/Nationalist_government"
+    }
+   ]
+  },
+  "Republic of China": {
+   "crop": [
+    {
+     "from": 1950,
+     "to": 2023,
+     "box": [
+      117.5,
+      21.5,
+      123.0,
+      26.9
+     ]
+    }
+   ],
+   "note": "Hainan fell to the People's Republic in April-May 1950 (and the Zhoushan islands soon after), so from 1950 the Republic of China is shown only on Taiwan, Penghu and the islands off Fujian.",
+   "sources": [
+    {
+     "title": "Battle of Hainan Island (Wikipedia): 16 April-1 May 1950, PRC captures Hainan",
+     "url": "https://en.wikipedia.org/wiki/Battle_of_Hainan_Island"
+    },
+    {
+     "title": "Proclamation of the People's Republic of China (Wikipedia): 1 Oct 1949 in Beijing; ROC retreated to Taiwan by Dec 1949",
+     "url": "https://en.wikipedia.org/wiki/Proclamation_of_the_People%27s_Republic_of_China"
+    }
+   ]
+  },
+  "Great Mongol State": {
+   "relabel": [
+    {
+     "from": 1924,
+     "to": 1925,
+     "name": "Mongolian People's Republic",
+     "key": "Mongolian People's Republic"
+    }
+   ],
+   "note": "The Mongolian People's Republic was proclaimed on 26 November 1924; from 1919 to 1921 Mongolia was occupied by Chinese troops.",
+   "sources": [
+    {
+     "title": "Bogd Khanate of Mongolia (Wikipedia): 1911-1919 and 1921-1924, capital Niislel Khuree; MPR proclaimed 26 Nov 1924",
+     "url": "https://en.wikipedia.org/wiki/Bogd_Khanate_of_Mongolia"
+    }
+   ]
+  },
+  "Communist Party of China": {
+   "crop": [
+    {
+     "from": 1935,
+     "to": 1935,
+     "box": [
+      95,
+      29.1,
+      125,
+      45
+     ]
+    }
+   ],
+   "note": "The Red Army abandoned the Jiangxi Soviet and its capital Ruijin in October 1934, at the start of the Long March.",
+   "sources": [
+    {
+     "title": "Jiangxi Soviet (Wikipedia): 1931-1934, capital Ruijin; abandoned October 1934",
+     "url": "https://en.wikipedia.org/wiki/Jiangxi_Soviet"
+    }
+   ]
+  }
+ }
+}

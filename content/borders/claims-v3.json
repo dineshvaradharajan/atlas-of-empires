@@ -1,0 +1,1842 @@
+[
+ {
+  "place": "Constantinople",
+  "lonlat": [
+   28.97,
+   41.01
+  ],
+  "year": 1452,
+  "realm": [
+   "Byzantine Empire"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Fall of Constantinople",
+   "url": "https://en.wikipedia.org/wiki/Fall_of_Constantinople"
+  }
+ },
+ {
+  "place": "Constantinople",
+  "lonlat": [
+   28.97,
+   41.01
+  ],
+  "year": 1455,
+  "realm": [
+   "Ottoman Empire",
+   "(Ottoman Empire)"
+  ],
+  "not": [
+   "Byzantine Empire"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Fall of Constantinople",
+   "url": "https://en.wikipedia.org/wiki/Fall_of_Constantinople"
+  }
+ },
+ {
+  "place": "Mistra",
+  "lonlat": [
+   22.37,
+   37.07
+  ],
+  "year": 1459,
+  "realm": [
+   "Despotate of the Morea",
+   "Byzantine Empire"
+  ],
+  "not": [
+   "Ottoman Empire",
+   "(Ottoman Empire)"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Despotate of the Morea",
+   "url": "https://en.wikipedia.org/wiki/Despotate_of_the_Morea"
+  }
+ },
+ {
+  "place": "Mistra",
+  "lonlat": [
+   22.37,
+   37.07
+  ],
+  "year": 1465,
+  "realm": [
+   "Ottoman Empire",
+   "(Ottoman Empire)"
+  ],
+  "not": [
+   "Byzantine Empire",
+   "Despotate of the Morea"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Despotate of the Morea",
+   "url": "https://en.wikipedia.org/wiki/Despotate_of_the_Morea"
+  }
+ },
+ {
+  "place": "Constantinople",
+  "lonlat": [
+   28.97,
+   41.01
+  ],
+  "year": 1210,
+  "realm": [
+   "Latin Empire"
+  ],
+  "not": [
+   "Byzantine Empire"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Sack of Constantinople (1204)",
+   "url": "https://en.wikipedia.org/wiki/Sack_of_Constantinople"
+  }
+ },
+ {
+  "place": "Nicaea",
+  "lonlat": [
+   29.72,
+   40.43
+  ],
+  "year": 1250,
+  "realm": [
+   "Nicaean Empire"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Sack of Constantinople (1204)",
+   "url": "https://en.wikipedia.org/wiki/Sack_of_Constantinople"
+  }
+ },
+ {
+  "place": "Nicaea",
+  "lonlat": [
+   29.72,
+   40.43
+  ],
+  "year": 1265,
+  "realm": [
+   "Byzantine Empire"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Reconquest of Constantinople",
+   "url": "https://en.wikipedia.org/wiki/Reconquest_of_Constantinople"
+  }
+ },
+ {
+  "place": "Bari",
+  "lonlat": [
+   16.87,
+   41.12
+  ],
+  "year": 1070,
+  "realm": [
+   "Byzantine Empire"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Siege of Bari",
+   "url": "https://en.wikipedia.org/wiki/Siege_of_Bari"
+  }
+ },
+ {
+  "place": "Bari",
+  "lonlat": [
+   16.87,
+   41.12
+  ],
+  "year": 1075,
+  "realm": [
+   "Norman Italy"
+  ],
+  "not": [
+   "Byzantine Empire"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Siege of Bari",
+   "url": "https://en.wikipedia.org/wiki/Siege_of_Bari"
+  }
+ },
+ {
+  "place": "Candia (Chandax)",
+  "lonlat": [
+   25.13,
+   35.34
+  ],
+  "year": 960,
+  "realm": [
+   "Emirate of Crete"
+  ],
+  "not": [
+   "Byzantine Empire"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Siege of Chandax",
+   "url": "https://en.wikipedia.org/wiki/Siege_of_Chandax"
+  }
+ },
+ {
+  "place": "Candia (Chandax)",
+  "lonlat": [
+   25.13,
+   35.34
+  ],
+  "year": 962,
+  "realm": [
+   "Byzantine Empire"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Siege of Chandax",
+   "url": "https://en.wikipedia.org/wiki/Siege_of_Chandax"
+  }
+ },
+ {
+  "place": "Alexandria",
+  "lonlat": [
+   29.92,
+   31.2
+  ],
+  "year": 643,
+  "realm": [
+   "Rashidun Caliphate"
+  ],
+  "not": [
+   "Byzantine Empire",
+   "Eastern Roman Empire"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Muslim conquest of Egypt",
+   "url": "https://en.wikipedia.org/wiki/Muslim_conquest_of_Egypt"
+  }
+ },
+ {
+  "place": "Bursa",
+  "lonlat": [
+   29.06,
+   40.19
+  ],
+  "year": 1325,
+  "realm": [
+   "Byzantine Empire"
+  ],
+  "not": [
+   "Ottoman Empire",
+   "(Ottoman Empire)"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Siege of Bursa",
+   "url": "https://en.wikipedia.org/wiki/Siege_of_Bursa"
+  }
+ },
+ {
+  "place": "Bursa",
+  "lonlat": [
+   29.06,
+   40.19
+  ],
+  "year": 1327,
+  "realm": [
+   "Ottoman Empire",
+   "(Ottoman Empire)"
+  ],
+  "not": [
+   "Byzantine Empire"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Siege of Bursa",
+   "url": "https://en.wikipedia.org/wiki/Siege_of_Bursa"
+  }
+ },
+ {
+  "place": "Adrianople (Edirne)",
+  "lonlat": [
+   26.56,
+   41.68
+  ],
+  "year": 1380,
+  "realm": [
+   "Ottoman Empire",
+   "(Ottoman Empire)"
+  ],
+  "not": [
+   "Byzantine Empire"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Edirne",
+   "url": "https://en.wikipedia.org/wiki/Edirne"
+  }
+ },
+ {
+  "place": "Cairo",
+  "lonlat": [
+   31.24,
+   30.05
+  ],
+  "year": 1515,
+  "realm": [
+   "Mamluk Sultanate"
+  ],
+  "not": [
+   "Ottoman Empire",
+   "(Ottoman Empire)"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Ottoman–Mamluk War (1516–1517)",
+   "url": "https://en.wikipedia.org/wiki/Ottoman%E2%80%93Mamluk_War_(1516%E2%80%931517)"
+  }
+ },
+ {
+  "place": "Cairo",
+  "lonlat": [
+   31.24,
+   30.05
+  ],
+  "year": 1520,
+  "realm": [
+   "Ottoman Empire",
+   "(Ottoman Empire)"
+  ],
+  "not": [
+   "Mamluk Sultanate"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Ottoman–Mamluk War (1516–1517)",
+   "url": "https://en.wikipedia.org/wiki/Ottoman%E2%80%93Mamluk_War_(1516%E2%80%931517)"
+  }
+ },
+ {
+  "place": "Belgrade",
+  "lonlat": [
+   20.46,
+   44.82
+  ],
+  "year": 1520,
+  "realm": [
+   "Kingdom of Hungary"
+  ],
+  "not": [
+   "Ottoman Empire",
+   "(Ottoman Empire)"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Siege of Belgrade (1521)",
+   "url": "https://en.wikipedia.org/wiki/Siege_of_Belgrade_(1521)"
+  }
+ },
+ {
+  "place": "Belgrade",
+  "lonlat": [
+   20.46,
+   44.82
+  ],
+  "year": 1522,
+  "realm": [
+   "Ottoman Empire",
+   "(Ottoman Empire)"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Siege of Belgrade (1521)",
+   "url": "https://en.wikipedia.org/wiki/Siege_of_Belgrade_(1521)"
+  }
+ },
+ {
+  "place": "Buda",
+  "lonlat": [
+   19.04,
+   47.5
+  ],
+  "year": 1550,
+  "realm": [
+   "Ottoman Empire",
+   "(Ottoman Empire)"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Siege of Buda (1541)",
+   "url": "https://en.wikipedia.org/wiki/Siege_of_Buda_(1541)"
+  }
+ },
+ {
+  "place": "Buda",
+  "lonlat": [
+   19.04,
+   47.5
+  ],
+  "year": 1700,
+  "realm": [
+   "Habsburg Monarchy",
+   "(Habsburg Monarchy)"
+  ],
+  "not": [
+   "Ottoman Empire",
+   "(Ottoman Empire)"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Treaty of Karlowitz",
+   "url": "https://en.wikipedia.org/wiki/Treaty_of_Karlowitz"
+  }
+ },
+ {
+  "place": "Candia",
+  "lonlat": [
+   25.13,
+   35.34
+  ],
+  "year": 1668,
+  "realm": [
+   "Republic of Venice"
+  ],
+  "not": [
+   "Ottoman Empire",
+   "(Ottoman Empire)"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Siege of Candia",
+   "url": "https://en.wikipedia.org/wiki/Siege_of_Candia"
+  }
+ },
+ {
+  "place": "Candia",
+  "lonlat": [
+   25.13,
+   35.34
+  ],
+  "year": 1680,
+  "realm": [
+   "Ottoman Empire",
+   "(Ottoman Empire)"
+  ],
+  "not": [
+   "Republic of Venice"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Siege of Candia",
+   "url": "https://en.wikipedia.org/wiki/Siege_of_Candia"
+  }
+ },
+ {
+  "place": "Vienna",
+  "lonlat": [
+   16.37,
+   48.21
+  ],
+  "year": 1683,
+  "realm": [
+   "Habsburg Monarchy",
+   "(Habsburg Monarchy)"
+  ],
+  "not": [
+   "Ottoman Empire",
+   "(Ottoman Empire)"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Battle of Vienna",
+   "url": "https://en.wikipedia.org/wiki/Battle_of_Vienna"
+  }
+ },
+ {
+  "place": "Kamianets-Podilskyi",
+  "lonlat": [
+   26.58,
+   48.68
+  ],
+  "year": 1700,
+  "realm": [
+   "Polish-Lithuanian Commonwealth"
+  ],
+  "not": [
+   "Ottoman Empire",
+   "(Ottoman Empire)"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Treaty of Karlowitz",
+   "url": "https://en.wikipedia.org/wiki/Treaty_of_Karlowitz"
+  }
+ },
+ {
+  "place": "Sofia",
+  "lonlat": [
+   23.32,
+   42.69
+  ],
+  "year": 1880,
+  "realm": [
+   "Principality of Bulgaria"
+  ],
+  "not": [
+   "Ottoman Empire",
+   "(Ottoman Empire)"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Treaty of Berlin (1878)",
+   "url": "https://en.wikipedia.org/wiki/Treaty_of_Berlin_(1878)"
+  }
+ },
+ {
+  "place": "Kars",
+  "lonlat": [
+   43.1,
+   40.6
+  ],
+  "year": 1900,
+  "realm": [
+   "Russian Empire"
+  ],
+  "not": [
+   "Ottoman Empire",
+   "(Ottoman Empire)"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Treaty of Berlin (1878)",
+   "url": "https://en.wikipedia.org/wiki/Treaty_of_Berlin_(1878)"
+  }
+ },
+ {
+  "place": "Great Hungarian Plain (Tisza)",
+  "lonlat": [
+   20.5,
+   46.5
+  ],
+  "year": 425,
+  "realm": [
+   "Huns",
+   "Hunnic Empire"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Huns",
+   "url": "https://en.wikipedia.org/wiki/Huns"
+  }
+ },
+ {
+  "place": "Great Hungarian Plain (Tisza)",
+  "lonlat": [
+   20.5,
+   46.5
+  ],
+  "year": 445,
+  "realm": [
+   "Hunnic Empire"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Huns",
+   "url": "https://en.wikipedia.org/wiki/Huns"
+  }
+ },
+ {
+  "place": "Kyiv (Pontic steppe)",
+  "lonlat": [
+   30.52,
+   50.45
+  ],
+  "year": 440,
+  "realm": [
+   "Hunnic Empire"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Huns",
+   "url": "https://en.wikipedia.org/wiki/Huns"
+  }
+ },
+ {
+  "place": "Lower Volga steppe",
+  "lonlat": [
+   46.0,
+   47.0
+  ],
+  "year": 400,
+  "realm": [
+   "Huns"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Huns",
+   "url": "https://en.wikipedia.org/wiki/Huns"
+  }
+ },
+ {
+  "place": "Caesarea (Kayseri)",
+  "lonlat": [
+   35.48,
+   38.72
+  ],
+  "year": 398,
+  "realm": [
+   "Eastern Roman Empire"
+  ],
+  "not": [
+   "Huns"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Huns",
+   "url": "https://en.wikipedia.org/wiki/Huns"
+  }
+ },
+ {
+  "place": "Antioch",
+  "lonlat": [
+   36.16,
+   36.2
+  ],
+  "year": 398,
+  "realm": [
+   "Eastern Roman Empire"
+  ],
+  "not": [
+   "Huns"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Huns",
+   "url": "https://en.wikipedia.org/wiki/Huns"
+  }
+ },
+ {
+  "place": "Orléans",
+  "lonlat": [
+   1.9,
+   47.9
+  ],
+  "year": 451,
+  "realm": [
+   "Western Roman Empire"
+  ],
+  "not": [
+   "Hunnic Empire"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Battle of the Catalaunian Plains",
+   "url": "https://en.wikipedia.org/wiki/Battle_of_the_Catalaunian_Plains"
+  }
+ },
+ {
+  "place": "Istakhr",
+  "lonlat": [
+   52.9,
+   30.02
+  ],
+  "year": 230,
+  "realm": [
+   "Sasanian Empire"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Ardashir I",
+   "url": "https://en.wikipedia.org/wiki/Ardashir_I"
+  }
+ },
+ {
+  "place": "Hatra",
+  "lonlat": [
+   42.72,
+   35.59
+  ],
+  "year": 242,
+  "realm": [
+   "Sasanian Empire"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Hatra",
+   "url": "https://en.wikipedia.org/wiki/Hatra"
+  }
+ },
+ {
+  "place": "Antioch",
+  "lonlat": [
+   36.16,
+   36.2
+  ],
+  "year": 540,
+  "realm": [
+   "Eastern Roman Empire"
+  ],
+  "not": [
+   "Sasanian Empire"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Khosrow I",
+   "url": "https://en.wikipedia.org/wiki/Khosrow_I"
+  }
+ },
+ {
+  "place": "Antioch",
+  "lonlat": [
+   36.16,
+   36.2
+  ],
+  "year": 543,
+  "realm": [
+   "Eastern Roman Empire"
+  ],
+  "not": [
+   "Sasanian Empire"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Khosrow I",
+   "url": "https://en.wikipedia.org/wiki/Khosrow_I"
+  }
+ },
+ {
+  "place": "Ctesiphon",
+  "lonlat": [
+   44.58,
+   33.09
+  ],
+  "year": 600,
+  "realm": [
+   "Sasanian Empire"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Siege of Ctesiphon (637)",
+   "url": "https://en.wikipedia.org/wiki/Siege_of_Ctesiphon_(637)"
+  }
+ },
+ {
+  "place": "Ctesiphon",
+  "lonlat": [
+   44.58,
+   33.09
+  ],
+  "year": 638,
+  "realm": [
+   "Rashidun Caliphate"
+  ],
+  "not": [
+   "Sasanian Empire"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Siege of Ctesiphon (637)",
+   "url": "https://en.wikipedia.org/wiki/Siege_of_Ctesiphon_(637)"
+  }
+ },
+ {
+  "place": "Merv",
+  "lonlat": [
+   61.84,
+   37.6
+  ],
+  "year": 640,
+  "realm": [
+   "Sasanian Empire"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Yazdegerd III",
+   "url": "https://en.wikipedia.org/wiki/Yazdegerd_III"
+  }
+ },
+ {
+  "place": "Hamadan (Ecbatana)",
+  "lonlat": [
+   48.52,
+   34.8
+  ],
+  "year": 645,
+  "realm": [
+   "Rashidun Caliphate"
+  ],
+  "not": [
+   "Sasanian Empire"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Yazdegerd III",
+   "url": "https://en.wikipedia.org/wiki/Yazdegerd_III"
+  }
+ },
+ {
+  "place": "Kufa",
+  "lonlat": [
+   44.4,
+   32.03
+  ],
+  "year": 661,
+  "realm": [
+   "Rashidun Caliphate"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Hasan ibn Ali",
+   "url": "https://en.wikipedia.org/wiki/Hasan_ibn_Ali"
+  }
+ },
+ {
+  "place": "Kufa",
+  "lonlat": [
+   44.4,
+   32.03
+  ],
+  "year": 662,
+  "realm": [
+   "Umayyad Caliphate"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Hasan ibn Ali",
+   "url": "https://en.wikipedia.org/wiki/Hasan_ibn_Ali"
+  }
+ },
+ {
+  "place": "Damascus",
+  "lonlat": [
+   36.29,
+   33.51
+  ],
+  "year": 749,
+  "realm": [
+   "Umayyad Caliphate"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Abbasid Revolution",
+   "url": "https://en.wikipedia.org/wiki/Abbasid_Revolution"
+  }
+ },
+ {
+  "place": "Toledo",
+  "lonlat": [
+   -4.03,
+   39.86
+  ],
+  "year": 750,
+  "realm": [
+   "Umayyad Caliphate"
+  ],
+  "not": [
+   "Visigothic Kingdom"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Umayyad conquest of Hispania",
+   "url": "https://en.wikipedia.org/wiki/Umayyad_conquest_of_Hispania"
+  }
+ },
+ {
+  "place": "Narbonne",
+  "lonlat": [
+   3.0,
+   43.18
+  ],
+  "year": 735,
+  "realm": [
+   "Umayyad Caliphate"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Battle of Tours",
+   "url": "https://en.wikipedia.org/wiki/Battle_of_Tours"
+  }
+ },
+ {
+  "place": "Córdoba",
+  "lonlat": [
+   -4.78,
+   37.88
+  ],
+  "year": 752,
+  "realm": [
+   "Al-Andalus"
+  ],
+  "not": [
+   "Abbasid Caliphate"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Yusuf ibn Abd al-Rahman al-Fihri",
+   "url": "https://en.wikipedia.org/wiki/Yusuf_ibn_Abd_al-Rahman_al-Fihri"
+  }
+ },
+ {
+  "place": "Córdoba",
+  "lonlat": [
+   -4.78,
+   37.88
+  ],
+  "year": 757,
+  "realm": [
+   "Emirate of Córdoba"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Yusuf ibn Abd al-Rahman al-Fihri",
+   "url": "https://en.wikipedia.org/wiki/Yusuf_ibn_Abd_al-Rahman_al-Fihri"
+  }
+ },
+ {
+  "place": "Damascus",
+  "lonlat": [
+   36.29,
+   33.51
+  ],
+  "year": 751,
+  "realm": [
+   "Abbasid Caliphate"
+  ],
+  "not": [
+   "Umayyad Caliphate"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Abbasid Revolution",
+   "url": "https://en.wikipedia.org/wiki/Abbasid_Revolution"
+  }
+ },
+ {
+  "place": "Fustat",
+  "lonlat": [
+   31.23,
+   30.0
+  ],
+  "year": 900,
+  "realm": [
+   "Tulunids"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Tulunids",
+   "url": "https://en.wikipedia.org/wiki/Tulunids"
+  }
+ },
+ {
+  "place": "Fustat",
+  "lonlat": [
+   31.23,
+   30.0
+  ],
+  "year": 970,
+  "realm": [
+   "Fatimid Caliphate"
+  ],
+  "not": [
+   "Abbasid Caliphate"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Fatimid conquest of Egypt",
+   "url": "https://en.wikipedia.org/wiki/Fatimid_conquest_of_Egypt"
+  }
+ },
+ {
+  "place": "Baghdad",
+  "lonlat": [
+   44.36,
+   33.31
+  ],
+  "year": 1250,
+  "realm": [
+   "Abbasid Caliphate"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Siege of Baghdad (1258)",
+   "url": "https://en.wikipedia.org/wiki/Siege_of_Baghdad_(1258)"
+  }
+ },
+ {
+  "place": "Baghdad",
+  "lonlat": [
+   44.36,
+   33.31
+  ],
+  "year": 1257,
+  "realm": [
+   "Abbasid Caliphate"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Siege of Baghdad (1258)",
+   "url": "https://en.wikipedia.org/wiki/Siege_of_Baghdad_(1258)"
+  }
+ },
+ {
+  "place": "Baghdad",
+  "lonlat": [
+   44.36,
+   33.31
+  ],
+  "year": 1258,
+  "realm": [
+   "Mongol Empire"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Siege of Baghdad (1258)",
+   "url": "https://en.wikipedia.org/wiki/Siege_of_Baghdad_(1258)"
+  }
+ },
+ {
+  "place": "Baghdad",
+  "lonlat": [
+   44.36,
+   33.31
+  ],
+  "year": 1259,
+  "realm": [
+   "Mongol Empire"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Siege of Baghdad (1258)",
+   "url": "https://en.wikipedia.org/wiki/Siege_of_Baghdad_(1258)"
+  }
+ },
+ {
+  "place": "Paris",
+  "lonlat": [
+   2.35,
+   48.86
+  ],
+  "year": 760,
+  "realm": [
+   "(Carolingian Empire)"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Carolingian Empire",
+   "url": "https://en.wikipedia.org/wiki/Carolingian_Empire"
+  }
+ },
+ {
+  "place": "Aachen",
+  "lonlat": [
+   6.08,
+   50.78
+  ],
+  "year": 800,
+  "realm": [
+   "(Carolingian Empire)"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Carolingian Empire",
+   "url": "https://en.wikipedia.org/wiki/Carolingian_Empire"
+  }
+ },
+ {
+  "place": "Pavia",
+  "lonlat": [
+   9.16,
+   45.19
+  ],
+  "year": 773,
+  "realm": [
+   "Kingdom of Italy"
+  ],
+  "not": [
+   "Kingdom of the Franks"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Siege of Pavia (773–774)",
+   "url": "https://en.wikipedia.org/wiki/Siege_of_Pavia_(773%E2%80%93774)"
+  }
+ },
+ {
+  "place": "Pavia",
+  "lonlat": [
+   9.16,
+   45.19
+  ],
+  "year": 775,
+  "realm": [
+   "(Carolingian Empire)"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Siege of Pavia (773–774)",
+   "url": "https://en.wikipedia.org/wiki/Siege_of_Pavia_(773%E2%80%93774)"
+  }
+ },
+ {
+  "place": "Hamburg",
+  "lonlat": [
+   9.99,
+   53.55
+  ],
+  "year": 806,
+  "realm": [
+   "(Carolingian Empire)"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Carolingian Empire",
+   "url": "https://en.wikipedia.org/wiki/Carolingian_Empire"
+  }
+ },
+ {
+  "place": "Regensburg",
+  "lonlat": [
+   12.1,
+   49.01
+  ],
+  "year": 800,
+  "realm": [
+   "(Carolingian Empire)"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Carolingian Empire",
+   "url": "https://en.wikipedia.org/wiki/Carolingian_Empire"
+  }
+ },
+ {
+  "place": "Paris",
+  "lonlat": [
+   2.35,
+   48.86
+  ],
+  "year": 850,
+  "realm": [
+   "(Carolingian Empire)",
+   "West Franks"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Carolingian Empire",
+   "url": "https://en.wikipedia.org/wiki/Carolingian_Empire"
+  }
+ },
+ {
+  "place": "Magdeburg",
+  "lonlat": [
+   11.63,
+   52.13
+  ],
+  "year": 850,
+  "realm": [
+   "(Carolingian Empire)",
+   "East Franks"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Carolingian Empire",
+   "url": "https://en.wikipedia.org/wiki/Carolingian_Empire"
+  }
+ },
+ {
+  "place": "Aachen",
+  "lonlat": [
+   6.08,
+   50.78
+  ],
+  "year": 1000,
+  "realm": [
+   "(Holy Roman Empire)"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Dissolution of the Holy Roman Empire",
+   "url": "https://en.wikipedia.org/wiki/Dissolution_of_the_Holy_Roman_Empire"
+  }
+ },
+ {
+  "place": "Munich",
+  "lonlat": [
+   11.58,
+   48.14
+  ],
+  "year": 1500,
+  "realm": [
+   "(Holy Roman Empire)"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Dissolution of the Holy Roman Empire",
+   "url": "https://en.wikipedia.org/wiki/Dissolution_of_the_Holy_Roman_Empire"
+  }
+ },
+ {
+  "place": "Munich",
+  "lonlat": [
+   11.58,
+   48.14
+  ],
+  "year": 1700,
+  "realm": [
+   "(Holy Roman Empire)"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Dissolution of the Holy Roman Empire",
+   "url": "https://en.wikipedia.org/wiki/Dissolution_of_the_Holy_Roman_Empire"
+  }
+ },
+ {
+  "place": "Dresden",
+  "lonlat": [
+   13.74,
+   51.05
+  ],
+  "year": 1500,
+  "realm": [
+   "(Holy Roman Empire)"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Golden Bull of 1356",
+   "url": "https://en.wikipedia.org/wiki/Golden_Bull_of_1356"
+  }
+ },
+ {
+  "place": "Prague",
+  "lonlat": [
+   14.42,
+   50.09
+  ],
+  "year": 1500,
+  "realm": [
+   "(Holy Roman Empire)"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Golden Bull of 1356",
+   "url": "https://en.wikipedia.org/wiki/Golden_Bull_of_1356"
+  }
+ },
+ {
+  "place": "Vienna",
+  "lonlat": [
+   16.37,
+   48.21
+  ],
+  "year": 1500,
+  "realm": [
+   "(Holy Roman Empire)"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Dissolution of the Holy Roman Empire",
+   "url": "https://en.wikipedia.org/wiki/Dissolution_of_the_Holy_Roman_Empire"
+  }
+ },
+ {
+  "place": "Berlin",
+  "lonlat": [
+   13.4,
+   52.52
+  ],
+  "year": 1550,
+  "realm": [
+   "(Holy Roman Empire)"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Golden Bull of 1356",
+   "url": "https://en.wikipedia.org/wiki/Golden_Bull_of_1356"
+  }
+ },
+ {
+  "place": "Trier",
+  "lonlat": [
+   6.64,
+   49.75
+  ],
+  "year": 1550,
+  "realm": [
+   "(Holy Roman Empire)"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Golden Bull of 1356",
+   "url": "https://en.wikipedia.org/wiki/Golden_Bull_of_1356"
+  }
+ },
+ {
+  "place": "Hamburg",
+  "lonlat": [
+   9.99,
+   53.55
+  ],
+  "year": 1700,
+  "realm": [
+   "(Holy Roman Empire)"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Dissolution of the Holy Roman Empire",
+   "url": "https://en.wikipedia.org/wiki/Dissolution_of_the_Holy_Roman_Empire"
+  }
+ },
+ {
+  "place": "Bern",
+  "lonlat": [
+   7.45,
+   46.95
+  ],
+  "year": 1700,
+  "realm": [
+   "Swiss Confederation"
+  ],
+  "not": [
+   "(Holy Roman Empire)"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Peace of Westphalia",
+   "url": "https://en.wikipedia.org/wiki/Peace_of_Westphalia"
+  }
+ },
+ {
+  "place": "Nishapur",
+  "lonlat": [
+   58.8,
+   36.21
+  ],
+  "year": 1038,
+  "realm": [
+   "Seljuk Dynasty",
+   "Great Seljuk Empire"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Tughril",
+   "url": "https://en.wikipedia.org/wiki/Tughril"
+  }
+ },
+ {
+  "place": "Merv",
+  "lonlat": [
+   61.84,
+   37.6
+  ],
+  "year": 1045,
+  "realm": [
+   "Great Seljuk Empire"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Battle of Dandanaqan",
+   "url": "https://en.wikipedia.org/wiki/Battle_of_Dandanaqan"
+  }
+ },
+ {
+  "place": "Rayy",
+  "lonlat": [
+   51.43,
+   35.59
+  ],
+  "year": 1045,
+  "realm": [
+   "Great Seljuk Empire"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Tughril",
+   "url": "https://en.wikipedia.org/wiki/Tughril"
+  }
+ },
+ {
+  "place": "Isfahan",
+  "lonlat": [
+   51.67,
+   32.65
+  ],
+  "year": 1053,
+  "realm": [
+   "Great Seljuk Empire"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Tughril",
+   "url": "https://en.wikipedia.org/wiki/Tughril"
+  }
+ },
+ {
+  "place": "Baghdad",
+  "lonlat": [
+   44.36,
+   33.31
+  ],
+  "year": 1050,
+  "realm": [
+   "Buyid Dynasty"
+  ],
+  "not": [
+   "Great Seljuk Empire"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Tughril",
+   "url": "https://en.wikipedia.org/wiki/Tughril"
+  }
+ },
+ {
+  "place": "Baghdad",
+  "lonlat": [
+   44.36,
+   33.31
+  ],
+  "year": 1056,
+  "realm": [
+   "Great Seljuk Empire"
+  ],
+  "not": [
+   "Buyid Dynasty"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Tughril",
+   "url": "https://en.wikipedia.org/wiki/Tughril"
+  }
+ },
+ {
+  "place": "Hamadan",
+  "lonlat": [
+   48.52,
+   34.8
+  ],
+  "year": 1193,
+  "realm": [
+   "Great Seljuk Empire"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Toghrul III",
+   "url": "https://en.wikipedia.org/wiki/Toghrul_III"
+  }
+ },
+ {
+  "place": "Zhongdu (Beijing)",
+  "lonlat": [
+   116.4,
+   39.9
+  ],
+  "year": 1214,
+  "realm": [
+   "Great Jin"
+  ],
+  "not": [
+   "Mongol Empire"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Battle of Zhongdu",
+   "url": "https://en.wikipedia.org/wiki/Battle_of_Zhongdu"
+  }
+ },
+ {
+  "place": "Zhongdu (Beijing)",
+  "lonlat": [
+   116.4,
+   39.9
+  ],
+  "year": 1216,
+  "realm": [
+   "Mongol Empire"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Battle of Zhongdu",
+   "url": "https://en.wikipedia.org/wiki/Battle_of_Zhongdu"
+  }
+ },
+ {
+  "place": "Samarkand",
+  "lonlat": [
+   66.97,
+   39.65
+  ],
+  "year": 1219,
+  "realm": [
+   "Khwarezmid Empire"
+  ],
+  "not": [
+   "Mongol Empire"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Siege of Samarkand (1220)",
+   "url": "https://en.wikipedia.org/wiki/Siege_of_Samarkand_(1220)"
+  }
+ },
+ {
+  "place": "Samarkand",
+  "lonlat": [
+   66.97,
+   39.65
+  ],
+  "year": 1221,
+  "realm": [
+   "Mongol Empire"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Siege of Samarkand (1220)",
+   "url": "https://en.wikipedia.org/wiki/Siege_of_Samarkand_(1220)"
+  }
+ },
+ {
+  "place": "Kyiv",
+  "lonlat": [
+   30.52,
+   50.45
+  ],
+  "year": 1239,
+  "realm": [
+   "Principality of Kiev"
+  ],
+  "not": [
+   "Mongol Empire"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Siege of Kiev (1240)",
+   "url": "https://en.wikipedia.org/wiki/Siege_of_Kiev_(1240)"
+  }
+ },
+ {
+  "place": "Kyiv",
+  "lonlat": [
+   30.52,
+   50.45
+  ],
+  "year": 1241,
+  "realm": [
+   "Mongol Empire"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Siege of Kiev (1240)",
+   "url": "https://en.wikipedia.org/wiki/Siege_of_Kiev_(1240)"
+  }
+ },
+ {
+  "place": "Baghdad",
+  "lonlat": [
+   44.36,
+   33.31
+  ],
+  "year": 1260,
+  "realm": [
+   "Mongol Empire"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Siege of Baghdad (1258)",
+   "url": "https://en.wikipedia.org/wiki/Siege_of_Baghdad_(1258)"
+  }
+ },
+ {
+  "place": "Samarkand",
+  "lonlat": [
+   66.97,
+   39.65
+  ],
+  "year": 1400,
+  "realm": [
+   "Timurid Empire"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Timurid Empire",
+   "url": "https://en.wikipedia.org/wiki/Timurid_Empire"
+  }
+ },
+ {
+  "place": "Samarkand",
+  "lonlat": [
+   66.97,
+   39.65
+  ],
+  "year": 1505,
+  "realm": [
+   "Shaybanids"
+  ],
+  "not": [
+   "Timurid Empire"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Timurid Empire",
+   "url": "https://en.wikipedia.org/wiki/Timurid_Empire"
+  }
+ },
+ {
+  "place": "Herat",
+  "lonlat": [
+   62.2,
+   34.35
+  ],
+  "year": 1506,
+  "realm": [
+   "Timurid Empire"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Timurid Empire",
+   "url": "https://en.wikipedia.org/wiki/Timurid_Empire"
+  }
+ },
+ {
+  "place": "Herat",
+  "lonlat": [
+   62.2,
+   34.35
+  ],
+  "year": 1508,
+  "realm": [
+   "Shaybanids"
+  ],
+  "not": [
+   "Timurid Empire"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Timurid Empire",
+   "url": "https://en.wikipedia.org/wiki/Timurid_Empire"
+  }
+ },
+ {
+  "place": "Damascus",
+  "lonlat": [
+   36.29,
+   33.51
+  ],
+  "year": 1402,
+  "realm": [
+   "Mamluk Sultanate"
+  ],
+  "not": [
+   "Timurid Empire"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Siege of Damascus (1400)",
+   "url": "https://en.wikipedia.org/wiki/Siege_of_Damascus_(1400)"
+  }
+ },
+ {
+  "place": "Sarai (lower Volga)",
+  "lonlat": [
+   46.0,
+   48.0
+  ],
+  "year": 1396,
+  "realm": [
+   "Blue Horde",
+   "Golden Horde"
+  ],
+  "not": [
+   "Timurid Empire"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Tokhtamysh–Timur war",
+   "url": "https://en.wikipedia.org/wiki/Tokhtamysh%E2%80%93Timur_war"
+  }
+ },
+ {
+  "place": "Isfahan",
+  "lonlat": [
+   51.67,
+   32.65
+  ],
+  "year": 1450,
+  "realm": [
+   "Timurid Empire"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Qara Qoyunlu",
+   "url": "https://en.wikipedia.org/wiki/Qara_Qoyunlu"
+  }
+ },
+ {
+  "place": "Kabul",
+  "lonlat": [
+   69.17,
+   34.53
+  ],
+  "year": 1527,
+  "realm": [
+   "Mughal Empire"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Babur",
+   "url": "https://en.wikipedia.org/wiki/Babur"
+  }
+ },
+ {
+  "place": "Tabriz",
+  "lonlat": [
+   46.29,
+   38.08
+  ],
+  "year": 1502,
+  "realm": [
+   "Safavid Dynasty"
+  ],
+  "not": [
+   "Aq Qoyunlu"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Safavid Iran",
+   "url": "https://en.wikipedia.org/wiki/Safavid_Iran"
+  }
+ },
+ {
+  "place": "Qazvin",
+  "lonlat": [
+   50.0,
+   36.27
+  ],
+  "year": 1560,
+  "realm": [
+   "Safavid Dynasty"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Safavid Iran",
+   "url": "https://en.wikipedia.org/wiki/Safavid_Iran"
+  }
+ },
+ {
+  "place": "Isfahan",
+  "lonlat": [
+   51.67,
+   32.65
+  ],
+  "year": 1600,
+  "realm": [
+   "Safavid Dynasty"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Safavid Iran",
+   "url": "https://en.wikipedia.org/wiki/Safavid_Iran"
+  }
+ },
+ {
+  "place": "Herat",
+  "lonlat": [
+   62.2,
+   34.35
+  ],
+  "year": 1512,
+  "realm": [
+   "Safavid Dynasty"
+  ],
+  "not": [
+   "Shaybanids"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Battle of Marv",
+   "url": "https://en.wikipedia.org/wiki/Battle_of_Marv"
+  }
+ },
+ {
+  "place": "Baghdad",
+  "lonlat": [
+   44.36,
+   33.31
+  ],
+  "year": 1535,
+  "realm": [
+   "Ottoman Empire",
+   "(Ottoman Empire)"
+  ],
+  "not": [
+   "Safavid Dynasty"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Ottoman–Safavid War (1532–1555)",
+   "url": "https://en.wikipedia.org/wiki/Ottoman%E2%80%93Safavid_War_(1532%E2%80%931555)"
+  }
+ },
+ {
+  "place": "Van",
+  "lonlat": [
+   43.38,
+   38.5
+  ],
+  "year": 1556,
+  "realm": [
+   "Ottoman Empire",
+   "(Ottoman Empire)"
+  ],
+  "not": [
+   "Safavid Dynasty"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Ottoman–Safavid War (1532–1555)",
+   "url": "https://en.wikipedia.org/wiki/Ottoman%E2%80%93Safavid_War_(1532%E2%80%931555)"
+  }
+ },
+ {
+  "place": "Tabriz",
+  "lonlat": [
+   46.29,
+   38.08
+  ],
+  "year": 1612,
+  "realm": [
+   "Safavid Dynasty"
+  ],
+  "not": [
+   "Ottoman Empire",
+   "(Ottoman Empire)"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Ottoman–Safavid War (1603–1618)",
+   "url": "https://en.wikipedia.org/wiki/Ottoman%E2%80%93Safavid_War_(1603%E2%80%931618)"
+  }
+ },
+ {
+  "place": "Yerevan",
+  "lonlat": [
+   44.51,
+   40.18
+  ],
+  "year": 1612,
+  "realm": [
+   "Safavid Dynasty"
+  ],
+  "not": [
+   "Ottoman Empire",
+   "(Ottoman Empire)"
+  ],
+  "region": "v3",
+  "source": {
+   "title": "Ottoman–Safavid War (1603–1618)",
+   "url": "https://en.wikipedia.org/wiki/Ottoman%E2%80%93Safavid_War_(1603%E2%80%931618)"
+  }
+ }
+]

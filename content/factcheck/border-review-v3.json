@@ -1,0 +1,1184 @@
+{
+ "reviewer": "v3",
+ "findings": [
+  {
+   "realm": "Byzantine Empire",
+   "years": [
+    1453,
+    1467
+   ],
+   "severity": "error",
+   "issue": "Constantinople still drawn Byzantine after its fall on 29 May 1453 (seed claim Constantinople 1460 failed). Clipped the realm at 1460 and cropped 1454–1460 to the Morea; Constantinople now falls inside the Ottoman Empire from 1454.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Fall of Constantinople",
+    "url": "https://en.wikipedia.org/wiki/Fall_of_Constantinople"
+   }
+  },
+  {
+   "realm": "Byzantine Empire",
+   "years": [
+    1461,
+    1474
+   ],
+   "severity": "error",
+   "issue": "Morea drawn Byzantine to 1465 and Lemnos to 1474; the Despotate of the Morea fell on 29 May 1460. Clipped at 1460; 1454–1460 relabelled Despotate of the Morea.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Despotate of the Morea",
+    "url": "https://en.wikipedia.org/wiki/Despotate_of_the_Morea"
+   }
+  },
+  {
+   "realm": "Byzantine Empire",
+   "years": [
+    1206,
+    1226
+   ],
+   "severity": "error",
+   "issue": "Scattered Aegean and Ionian islands drawn as 'Byzantine Empire' after the 1204 sack, when the empire did not exist (its successors were Nicaea, Epirus and Trebizond). Hidden.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Sack of Constantinople (1204)",
+    "url": "https://en.wikipedia.org/wiki/Sack_of_Constantinople"
+   }
+  },
+  {
+   "realm": "Nicaean Empire",
+   "years": [
+    1261,
+    1278
+   ],
+   "severity": "error",
+   "issue": "The restored empire is still labelled Nicaean after the recapture of Constantinople (25 July 1261). Relabelled Byzantine Empire.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Reconquest of Constantinople",
+    "url": "https://en.wikipedia.org/wiki/Reconquest_of_Constantinople"
+   }
+  },
+  {
+   "realm": "Latin Empire",
+   "years": [
+    1261,
+    1278
+   ],
+   "severity": "error",
+   "issue": "NOT MINE: the Latin Empire still holds Constantinople until 1278 although Nicaea retook the city on 25 July 1261. Suggested fix for its owner: clip Latin Empire to [1206, 1261]; Constantinople should then fall in the Nicaean/Byzantine polygon (test with Constantinople 1265 = Byzantine Empire).",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Reconquest of Constantinople",
+    "url": "https://en.wikipedia.org/wiki/Reconquest_of_Constantinople"
+   }
+  },
+  {
+   "realm": "Byzantine Empire",
+   "years": [
+    1402,
+    1406
+   ],
+   "severity": "error",
+   "issue": "The Byzantine Empire has no polygon in 1402–1406, so Constantinople is drawn inside the Ottoman Empire; the city stayed Byzantine until 1453. Not fixable with clip/crop/relabel (needs a supplement polygon for Constantinople and the Morea); noted on the Ottoman Empire.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Fall of Constantinople",
+    "url": "https://en.wikipedia.org/wiki/Fall_of_Constantinople"
+   }
+  },
+  {
+   "realm": "Byzantine Empire",
+   "years": [
+    1387,
+    1394
+   ],
+   "severity": "warning",
+   "issue": "Thessalonica drawn Byzantine though it surrendered to the Ottomans in April 1387. No crop box can drop it while keeping Constantinople and the Morea.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Siege of Thessalonica (1383–1387)",
+    "url": "https://en.wikipedia.org/wiki/Siege_of_Thessalonica_(1383%E2%80%931387)"
+   }
+  },
+  {
+   "realm": "Byzantine Empire",
+   "years": [
+    1362,
+    1374
+   ],
+   "severity": "warning",
+   "issue": "Adrianople (Edirne) drawn Byzantine until 1374; the Ottomans took it in 1361–1369 (date disputed) and made it their capital in the 1360s. Not cropped, to avoid leaving the Ottoman capital blank; Ottoman from 1375 on the map.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Edirne",
+    "url": "https://en.wikipedia.org/wiki/Edirne"
+   }
+  },
+  {
+   "realm": "Byzantine Empire",
+   "years": [
+    698,
+    704
+   ],
+   "severity": "warning",
+   "issue": "Carthage drawn Byzantine until 704; it fell to Hasan ibn al-Nu'man in 698. A crop would also remove Byzantine Sardinia, so left as is.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Battle of Carthage (698)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Carthage_(698)"
+   }
+  },
+  {
+   "realm": "Byzantine Empire",
+   "years": [
+    1072,
+    1084
+   ],
+   "severity": "warning",
+   "issue": "Central Anatolia (Ankara, Iconium, Nicaea) stays Byzantine until 1084, though Suleiman ibn Qutalmish took Nicaea between 1075 and 1081. Shape-level timing; not fixable with a box.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Sultanate of Rum",
+    "url": "https://en.wikipedia.org/wiki/Sultanate_of_Rum"
+   }
+  },
+  {
+   "realm": "Huns",
+   "years": [
+    396,
+    406
+   ],
+   "severity": "error",
+   "issue": "The 395 raid through Armenia, Cappadocia and Syria is drawn as a 315,000 km² Hunnic province until 406. Cropped to north of 43°N.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Huns",
+    "url": "https://en.wikipedia.org/wiki/Huns"
+   }
+  },
+  {
+   "realm": "Hunnic Empire",
+   "years": [
+    451,
+    454
+   ],
+   "severity": "error",
+   "issue": "Attila's 451 Gallic campaign (to Orléans) and 452 Po-valley raid are drawn as Hunnic territory (polygon to 1.5°E and a strip across northern Italy, Aquileia Hunnic 452–453). Cropped to east of 16°E.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Battle of the Catalaunian Plains",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_the_Catalaunian_Plains"
+   }
+  },
+  {
+   "realm": "Hunnic Empire",
+   "years": [
+    441,
+    451
+   ],
+   "severity": "warning",
+   "issue": "Peak area 1.91M km² vs 4.0M (Taagepera); the map draws the Carpathian–Pontic core, not the tributary steppe. Fuzzy frontier, existing note kept. Also Pannonia (ceded 433) stays Western Roman until 450.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Huns",
+    "url": "https://en.wikipedia.org/wiki/Huns"
+   }
+  },
+  {
+   "realm": "Sasanian Empire",
+   "years": [
+    540,
+    545
+   ],
+   "severity": "error",
+   "issue": "A Persian wedge runs to the Mediterranean (Antioch, Callinicum Sasanian 540–545) after Khosrow I's 540 sack; he withdrew for a Roman payment. Cropped to east of 39.9°E.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Khosrow I",
+    "url": "https://en.wikipedia.org/wiki/Khosrow_I"
+   }
+  },
+  {
+   "realm": "Parthian Empire",
+   "years": [
+    225,
+    237
+   ],
+   "severity": "error",
+   "issue": "NOT MINE: Mesopotamia (Ctesiphon) has no state 225–237: the Parthian polygon for 224–237 is clipped at 224 and the Sasanian polygon covers only Persis. Ardashir I was crowned at Ctesiphon c. 226. Suggested fix for its owner: relabel Parthian Empire 225–237 as Sasanian Empire (key Sasanian Empire, addTo Sasanian Empire).",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Ardashir I",
+    "url": "https://en.wikipedia.org/wiki/Ardashir_I"
+   }
+  },
+  {
+   "realm": "Sasanian Empire",
+   "years": [
+    643,
+    651
+   ],
+   "severity": "warning",
+   "issue": "The map ends the Sasanian Empire in 643 (data end); Yazdegerd III was killed near Merv in 651. Existing note kept. Sasanian Yemen (c. 570–628) appears only from c. 612.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Yazdegerd III",
+    "url": "https://en.wikipedia.org/wiki/Yazdegerd_III"
+   }
+  },
+  {
+   "realm": "Rashidun Caliphate",
+   "years": [
+    662,
+    665
+   ],
+   "severity": "error",
+   "issue": "Rashidun Caliphate drawn until 665 over Iraq and Iran; Hasan renounced the caliphate in August 661. Relabelled Umayyad Caliphate from 662.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Hasan ibn Ali",
+    "url": "https://en.wikipedia.org/wiki/Hasan_ibn_Ali"
+   }
+  },
+  {
+   "realm": "Umayyad Caliphate",
+   "years": [
+    732,
+    740
+   ],
+   "severity": "error",
+   "issue": "Aquitaine up to Poitiers drawn Umayyad 732–740; after the Battle of Tours (10 October 732) the army retreated over the Pyrenees, keeping only Septimania. Cropped to south of 44.6°N.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Battle of Tours",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Tours"
+   }
+  },
+  {
+   "realm": "Umayyad Caliphate",
+   "years": [
+    751,
+    756
+   ],
+   "severity": "error",
+   "issue": "Al-Andalus labelled 'Umayyad Caliphate' after the caliphate ended in 750; Yusuf al-Fihri ruled it until Abd al-Rahman I founded the Emirate of Córdoba in 756. Relabelled Al-Andalus (751–755) and Emirate of Córdoba (756).",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Yusuf ibn Abd al-Rahman al-Fihri",
+    "url": "https://en.wikipedia.org/wiki/Yusuf_ibn_Abd_al-Rahman_al-Fihri"
+   }
+  },
+  {
+   "realm": "Visigothic Kingdom",
+   "years": [
+    711,
+    717
+   ],
+   "severity": "error",
+   "issue": "NOT MINE: Iberia (Toledo, Córdoba) drawn Visigothic until 717 and Umayyad only from 718; Tariq crossed in 711 and within a few years the Umayyads held most of the peninsula. Suggested fix for its owner: relabel Visigothic Kingdom 712–717 as Umayyad Caliphate (addTo Umayyad Caliphate), leaving Septimania.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Umayyad conquest of Hispania",
+    "url": "https://en.wikipedia.org/wiki/Umayyad_conquest_of_Hispania"
+   }
+  },
+  {
+   "realm": "Umayyad Caliphate",
+   "years": [
+    709,
+    750
+   ],
+   "severity": "warning",
+   "issue": "Transoxiana (Bukhara taken 709, Samarkand c. 712) is drawn as Türgesh/'Turks' and Sindh/Multan as no state for the whole Umayyad period; the caliphate's eastern extent is understated. Not fixable with corrections on the Umayyad realm.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Muslim conquest of Transoxiana",
+    "url": "https://en.wikipedia.org/wiki/Muslim_conquest_of_Transoxiana"
+   }
+  },
+  {
+   "realm": "Abbasid Caliphate",
+   "years": [
+    1258,
+    1259
+   ],
+   "severity": "error",
+   "issue": "Baghdad still Abbasid in 1258–1259; it surrendered to the Mongols on 10 February 1258. Relabelled Mongol Empire.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Siege of Baghdad (1258)",
+    "url": "https://en.wikipedia.org/wiki/Siege_of_Baghdad_(1258)"
+   }
+  },
+  {
+   "realm": "Abbasid Caliphate",
+   "years": [
+    1157,
+    1194
+   ],
+   "severity": "warning",
+   "issue": "Iraq drawn Seljuk until 1194, though from al-Muqtafi's reign the caliphs ruled much of Iraq themselves; the Abbasid journey has no polygon 970–1201. Not fixable without geometry; noted.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Al-Muqtafi",
+    "url": "https://en.wikipedia.org/wiki/Al-Muqtafi"
+   }
+  },
+  {
+   "realm": "Tulunids",
+   "years": [
+    905,
+    910
+   ],
+   "severity": "warning",
+   "issue": "NOT MINE: Egypt drawn Tulunid until 910; the Abbasids reconquered it in 905.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Tulunids",
+    "url": "https://en.wikipedia.org/wiki/Tulunids"
+   }
+  },
+  {
+   "realm": "Kingdom of the Franks",
+   "years": [
+    751,
+    849
+   ],
+   "severity": "error",
+   "issue": "The Carolingian journey highlights nothing from 751 to 849 (Charlemagne's whole reign): the Frankish kingdom's polygons carry the key '(Kingdom of the Franks)', not '(Carolingian Empire)'. Relabelled with the Carolingian group key (name unchanged, area timeline kept).",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Carolingian Empire",
+    "url": "https://en.wikipedia.org/wiki/Carolingian_Empire"
+   }
+  },
+  {
+   "realm": "(Holy Roman Empire)",
+   "years": [
+    1459,
+    1806
+   ],
+   "severity": "error",
+   "issue": "From 1459 the map's data stops keying member states to the Empire, so the HRE journey shrinks to 'Minor States' (group area falls from 1.2M to 0.35M km² at 1459). Regrouped Duchy of Bavaria (1459–1805), Electorate of Saxony (1487–1805), Electorate of Brandenburg (1459–1618), Kingdom of Bohemia (1459–1528), Electorate of Trier (1459–1618), House of Habsburg (1459–1515). Still missing and not fixable with relabels: the Habsburg Monarchy's Austrian/Bohemian lands 1516–1806 (its polygon includes Hungary), Brandenburg-Prussia/Kingdom of Prussia (includes Ducal Prussia), Hanover, Saxony 1700–1762. Needs journey chain entries or a supplement.",
+   "fixed": true,
+   "source": {
+    "title": "Wikimedia Commons: Map of the Holy Roman Empire, 1789",
+    "url": "https://commons.wikimedia.org/wiki/File:Map_of_the_Holy_Roman_Empire,_1789_en.png"
+   }
+  },
+  {
+   "realm": "Kingdom of France",
+   "years": [
+    1648,
+    1680
+   ],
+   "severity": "warning",
+   "issue": "NOT MINE: Strasbourg drawn French from 1648; the Peace of Westphalia excluded Strasbourg, which France annexed in 1681.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Peace of Westphalia",
+    "url": "https://en.wikipedia.org/wiki/Peace_of_Westphalia"
+   }
+  },
+  {
+   "realm": "Great Seljuk Empire",
+   "years": [
+    1195,
+    1201
+   ],
+   "severity": "error",
+   "issue": "Great Seljuk Empire drawn until 1201 over western Iran; it ended when Toghrul III was killed near Rayy on 19 March 1194. Clipped to [1040, 1194].",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Toghrul III",
+    "url": "https://en.wikipedia.org/wiki/Toghrul_III"
+   }
+  },
+  {
+   "realm": "Mongol Empire",
+   "years": [
+    1261,
+    1271
+   ],
+   "severity": "error",
+   "issue": "Syria (Aleppo, Damascus) stays Mongol until 1271; the Mamluks took Damascus five days after Ain Jalut (3 September 1260) and Aleppo within a month. The Syrian part cannot be cut from the empire-wide polygon with a box; noted.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Battle of Ain Jalut",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Ain_Jalut"
+   }
+  },
+  {
+   "realm": "Mongol Empire",
+   "years": [
+    1260,
+    1293
+   ],
+   "severity": "warning",
+   "issue": "Drawn as one realm until 1294 although it split into four khanates after 1259–1264. Note added.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Division of the Mongol Empire",
+    "url": "https://en.wikipedia.org/wiki/Division_of_the_Mongol_Empire"
+   }
+  },
+  {
+   "realm": "Mamluk Sultanate",
+   "years": [
+    1517,
+    1518
+   ],
+   "severity": "error",
+   "issue": "NOT MINE: Egypt, Syria and the Hejaz have no state in 1517–1518 (Cairo, Damascus, Jerusalem, Mecca blank): Mamluk is clipped at 1516 and the Ottoman polygon gains them only in 1519. Suggested fix for its owner: Mamluk clip [1250, 1518] plus relabel 1517–1518 as Ottoman Empire (key Ottoman Empire, addTo Ottoman Empire).",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Ottoman–Mamluk War (1516–1517)",
+    "url": "https://en.wikipedia.org/wiki/Ottoman%E2%80%93Mamluk_War_(1516%E2%80%931517)"
+   }
+  },
+  {
+   "realm": "Kingdom of Hungary",
+   "years": [
+    1541,
+    1546
+   ],
+   "severity": "warning",
+   "issue": "NOT MINE: Buda drawn Hungarian until 1546; the Ottomans took it on 21 August 1541.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Siege of Buda (1541)",
+    "url": "https://en.wikipedia.org/wiki/Siege_of_Buda_(1541)"
+   }
+  },
+  {
+   "realm": "Ottoman Empire",
+   "years": [
+    1603,
+    1611
+   ],
+   "severity": "warning",
+   "issue": "Tabriz (retaken 21 October 1603), Yerevan (June 1604) and Shirvan (1606) stay Ottoman until 1609–1612. A crop would also cut Basra and al-Hasa; noted.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Ottoman–Safavid War (1603–1618)",
+    "url": "https://en.wikipedia.org/wiki/Ottoman%E2%80%93Safavid_War_(1603%E2%80%931618)"
+   }
+  },
+  {
+   "realm": "Habsburg Monarchy",
+   "years": [
+    1739,
+    1740
+   ],
+   "severity": "warning",
+   "issue": "NOT MINE: Belgrade drawn Habsburg in 1739–1740; the Treaty of Belgrade (18 September 1739) returned it to the Ottomans.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Treaty of Belgrade",
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_Belgrade"
+   }
+  },
+  {
+   "realm": "Republic of Venice",
+   "years": [
+    1670,
+    1672
+   ],
+   "severity": "warning",
+   "issue": "NOT MINE: Venice still drawn over Candia 1670–1672, overlapping the Ottomans; Candia surrendered on 27 September 1669.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Siege of Candia",
+    "url": "https://en.wikipedia.org/wiki/Siege_of_Candia"
+   }
+  },
+  {
+   "realm": "Timurid Empire",
+   "years": [
+    1395,
+    1406
+   ],
+   "severity": "error",
+   "issue": "Timur's campaigns are drawn as territory: a strip up the Volga to 49°N (1395–1401) and strips to Ankara and Damascus (1402–1406); Damascus 1402–1403 and Sarai 1395–1401 Timurid. Cropped (north of 45.5°N removed in 1395–1401; west of 38°E removed in 1402–1406), matching the Commons 'Empire of Timur and his Campaigns' map.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Tokhtamysh–Timur war",
+    "url": "https://en.wikipedia.org/wiki/Tokhtamysh%E2%80%93Timur_war"
+   }
+  },
+  {
+   "realm": "Timurid Empire",
+   "years": [
+    1453,
+    1474
+   ],
+   "severity": "error",
+   "issue": "All of Iran to the Zagros stays Timurid until 1474, though Jahan Shah (Qara Qoyunlu) took Saveh, Qum, Isfahan, Shiraz and Yazd in 1452–53. Cropped to east of 55°E; western Iran is left undrawn because the Qara Qoyunlu polygon does not cover it (note explains).",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Qara Qoyunlu",
+    "url": "https://en.wikipedia.org/wiki/Qara_Qoyunlu"
+   }
+  },
+  {
+   "realm": "Timurid Empire",
+   "years": [
+    1513,
+    1528
+   ],
+   "severity": "error",
+   "issue": "Samarkand stays Timurid 1513–1515 (Babur lost it to the Uzbeks in 1512); Babur's Indian conquests 1526–1528 labelled Timurid. Cropped 1513–1515 to Kabul; 1526–1528 relabelled Mughal Empire.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Babur",
+    "url": "https://en.wikipedia.org/wiki/Babur"
+   }
+  },
+  {
+   "realm": "Kazakh Khanate",
+   "years": [
+    1497,
+    1501
+   ],
+   "severity": "warning",
+   "issue": "NOT MINE: Samarkand drawn Kazakh 1497–1501; it was Timurid until Shaybani Khan took it in 1501.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Timurid Empire",
+    "url": "https://en.wikipedia.org/wiki/Timurid_Empire"
+   }
+  },
+  {
+   "realm": "Golden Horde",
+   "years": [
+    1385,
+    1394
+   ],
+   "severity": "warning",
+   "issue": "NOT MINE: Tabriz and Azerbaijan drawn as Golden Horde 1385–1394 after Tokhtamysh's raid, in which he plundered Tabriz in 1386 and then withdrew.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Tokhtamysh–Timur war",
+    "url": "https://en.wikipedia.org/wiki/Tokhtamysh%E2%80%93Timur_war"
+   }
+  },
+  {
+   "realm": "Safavid Dynasty",
+   "years": [
+    1723,
+    1726
+   ],
+   "severity": "error",
+   "issue": "Isfahan and the south stay Safavid until 1726; Isfahan fell to the Afghans in 1722. Cropped 1723–1726 to north of 34°N (Tahmasp II's lands); the Hotaki polygon does not reach Isfahan, so it is left undrawn.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Safavid Iran",
+    "url": "https://en.wikipedia.org/wiki/Safavid_Iran"
+   }
+  },
+  {
+   "realm": "Aq Qoyunlu",
+   "years": [
+    1502,
+    1511
+   ],
+   "severity": "error",
+   "issue": "NOT MINE: Aq Qoyunlu drawn over Iraq and central Iran until 1511 (Isfahan 1503–1504, Baghdad 1508–1510), so the Safavid state of 1501 appears only as Azerbaijan until 1507–1512. Suggested fix for its owner: relabel Aq Qoyunlu 1504–1511 as Safavid Dynasty (addTo Safavid Dynasty).",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Safavid Iran",
+    "url": "https://en.wikipedia.org/wiki/Safavid_Iran"
+   }
+  },
+  {
+   "realm": "Mughal Empire",
+   "years": [
+    1649,
+    1709
+   ],
+   "severity": "error",
+   "issue": "NOT MINE: Kandahar drawn Mughal 1595–1710, though the Safavids took it in February 1649 and kept it (the Mughals gave up in 1653), and also held it 1622–1638. Suggested fix for its owner: crop Mughal Empire 1649–1709 to east of about 66.5°E, after checking that the Safavid polygon reaches Kandahar.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Mughal–Safavid war (1649–1653)",
+    "url": "https://en.wikipedia.org/wiki/Mughal%E2%80%93Safavid_war_(1649%E2%80%931653)"
+   }
+  }
+ ],
+ "corrections": {
+  "Byzantine Empire": {
+   "clip": [
+    633,
+    1460
+   ],
+   "hide": [
+    [
+     1206,
+     1226
+    ]
+   ],
+   "crop": [
+    {
+     "from": 1454,
+     "to": 1460,
+     "box": [
+      21.0,
+      36.3,
+      23.8,
+      38.6
+     ]
+    }
+   ],
+   "relabel": [
+    {
+     "from": 1454,
+     "to": 1460,
+     "name": "Despotate of the Morea",
+     "key": "Despotate of the Morea"
+    }
+   ],
+   "note": "Constantinople fell to the Ottomans on 29 May 1453; from 1454 the map shows only the Despotate of the Morea, ruled by the last emperor's brothers until the Ottoman conquest in May 1460. Between 1204 and 1261 the empire's heir was the Empire of Nicaea, so no Byzantine Empire is drawn then. The map's data loses Thessalonica (1387) and Gallipoli (1354) years late, and wrongly shows Constantinople as Ottoman in 1402–1406.",
+   "sources": [
+    {
+     "title": "Wikipedia: Fall of Constantinople",
+     "url": "https://en.wikipedia.org/wiki/Fall_of_Constantinople"
+    },
+    {
+     "title": "Wikipedia: Despotate of the Morea",
+     "url": "https://en.wikipedia.org/wiki/Despotate_of_the_Morea"
+    },
+    {
+     "title": "Wikipedia: Sack of Constantinople (1204)",
+     "url": "https://en.wikipedia.org/wiki/Sack_of_Constantinople"
+    },
+    {
+     "title": "Wikimedia Commons: Empire byzantin 1450",
+     "url": "https://commons.wikimedia.org/wiki/File:Empire-byzantin-1450.svg"
+    }
+   ]
+  },
+  "Nicaean Empire": {
+   "relabel": [
+    {
+     "from": 1261,
+     "to": 1278,
+     "name": "Byzantine Empire",
+     "key": "Byzantine Empire",
+     "addTo": [
+      "Byzantine Empire"
+     ]
+    }
+   ],
+   "note": "Nicaea recaptured Constantinople on 25 July 1261 and Michael VIII restored the Byzantine Empire; from 1261 the realm is labelled Byzantine.",
+   "sources": [
+    {
+     "title": "Wikipedia: Reconquest of Constantinople",
+     "url": "https://en.wikipedia.org/wiki/Reconquest_of_Constantinople"
+    }
+   ]
+  },
+  "Hunnic Empire": {
+   "crop": [
+    {
+     "from": 451,
+     "to": 454,
+     "box": [
+      16.0,
+      40.0,
+      60.0,
+      60.0
+     ]
+    }
+   ],
+   "note": "Attila's invasions of Gaul (451) and Italy (452) were campaigns followed by retreat, not conquests; the map no longer draws them as Hunnic territory.",
+   "sources": [
+    {
+     "title": "Wikipedia: Battle of the Catalaunian Plains",
+     "url": "https://en.wikipedia.org/wiki/Battle_of_the_Catalaunian_Plains"
+    },
+    {
+     "title": "Wikipedia: Huns",
+     "url": "https://en.wikipedia.org/wiki/Huns"
+    }
+   ]
+  },
+  "Huns": {
+   "crop": [
+    {
+     "from": 396,
+     "to": 406,
+     "box": [
+      10.0,
+      43.0,
+      60.0,
+      60.0
+     ]
+    }
+   ],
+   "note": "The Huns' great raid of 395 through Armenia, Cappadocia and Syria was a campaign, not a conquest; the map no longer draws it as Hunnic territory.",
+   "sources": [
+    {
+     "title": "Wikipedia: Huns",
+     "url": "https://en.wikipedia.org/wiki/Huns"
+    }
+   ]
+  },
+  "Sasanian Empire": {
+   "crop": [
+    {
+     "from": 540,
+     "to": 545,
+     "box": [
+      39.9,
+      10.0,
+      75.0,
+      45.0
+     ]
+    }
+   ],
+   "note": "Khosrow I sacked Antioch in 540 and withdrew for a Roman payment; Syria stayed Roman, so the map no longer draws a Persian wedge to the Mediterranean in 540–545.",
+   "sources": [
+    {
+     "title": "Wikipedia: Khosrow I",
+     "url": "https://en.wikipedia.org/wiki/Khosrow_I"
+    }
+   ]
+  },
+  "Rashidun Caliphate": {
+   "relabel": [
+    {
+     "from": 662,
+     "to": 665,
+     "name": "Umayyad Caliphate",
+     "key": "Umayyad Caliphate",
+     "addTo": [
+      "Umayyad Caliphate"
+     ]
+    }
+   ],
+   "note": "Hasan ibn Ali renounced the caliphate to Mu'awiya in August 661; from 662 these lands are labelled Umayyad.",
+   "sources": [
+    {
+     "title": "Wikipedia: Hasan ibn Ali",
+     "url": "https://en.wikipedia.org/wiki/Hasan_ibn_Ali"
+    }
+   ]
+  },
+  "Umayyad Caliphate": {
+   "crop": [
+    {
+     "from": 732,
+     "to": 740,
+     "box": [
+      -20.0,
+      0.0,
+      80.0,
+      44.6
+     ]
+    }
+   ],
+   "relabel": [
+    {
+     "from": 751,
+     "to": 755,
+     "name": "Al-Andalus",
+     "key": "Al-Andalus"
+    },
+    {
+     "from": 756,
+     "to": 756,
+     "name": "Emirate of Córdoba",
+     "key": "Emirate of Córdoba",
+     "addTo": [
+      "Emirate of Córdoba"
+     ]
+    }
+   ],
+   "note": "The Umayyads were defeated near Poitiers in October 732 and retreated over the Pyrenees, keeping only Septimania; Aquitaine is no longer drawn as Umayyad. After the Abbasid revolution of 750, al-Andalus was ruled by Yusuf al-Fihri until Abd al-Rahman I founded the Emirate of Córdoba in 756.",
+   "sources": [
+    {
+     "title": "Wikipedia: Battle of Tours",
+     "url": "https://en.wikipedia.org/wiki/Battle_of_Tours"
+    },
+    {
+     "title": "Wikipedia: Abbasid Revolution",
+     "url": "https://en.wikipedia.org/wiki/Abbasid_Revolution"
+    },
+    {
+     "title": "Wikipedia: Yusuf ibn Abd al-Rahman al-Fihri",
+     "url": "https://en.wikipedia.org/wiki/Yusuf_ibn_Abd_al-Rahman_al-Fihri"
+    }
+   ]
+  },
+  "Abbasid Caliphate": {
+   "relabel": [
+    {
+     "from": 1258,
+     "to": 1259,
+     "name": "Mongol Empire",
+     "key": "Mongol Empire",
+     "addTo": [
+      "Mongol Empire"
+     ]
+    }
+   ],
+   "note": "Baghdad surrendered to the Mongols on 10 February 1258 and the caliph was executed ten days later; from 1258 Iraq is drawn as Mongol. From 1157 the caliphs again ruled Iraq themselves, which the map still shows as Seljuk until 1194.",
+   "sources": [
+    {
+     "title": "Wikipedia: Siege of Baghdad (1258)",
+     "url": "https://en.wikipedia.org/wiki/Siege_of_Baghdad_(1258)"
+    }
+   ]
+  },
+  "Great Seljuk Empire": {
+   "clip": [
+    1040,
+    1194
+   ],
+   "note": "The Great Seljuk sultanate ended when Toghrul III was killed near Rayy on 19 March 1194; later polygons are hidden.",
+   "sources": [
+    {
+     "title": "Wikipedia: Toghrul III",
+     "url": "https://en.wikipedia.org/wiki/Toghrul_III"
+    },
+    {
+     "title": "Wikipedia: Battle of Dandanaqan",
+     "url": "https://en.wikipedia.org/wiki/Battle_of_Dandanaqan"
+    }
+   ]
+  },
+  "Mongol Empire": {
+   "note": "From 1260 the empire was split into four khanates (the Yuan, the Golden Horde, the Chagatai Khanate and the Ilkhanate); the map draws them as one realm until 1294. It also keeps Syria Mongol after 1260, though the Mamluks retook Damascus and Aleppo within weeks of Ain Jalut (3 September 1260).",
+   "sources": [
+    {
+     "title": "Wikipedia: Division of the Mongol Empire",
+     "url": "https://en.wikipedia.org/wiki/Division_of_the_Mongol_Empire"
+    },
+    {
+     "title": "Wikipedia: Battle of Ain Jalut",
+     "url": "https://en.wikipedia.org/wiki/Battle_of_Ain_Jalut"
+    }
+   ]
+  },
+  "Ottoman Empire": {
+   "note": "The map wrongly shows Constantinople as Ottoman in 1402–1406 (it stayed Byzantine until 1453), leaves Egypt and Syria blank in 1517–1518 although the Ottomans conquered them in 1516–1517, and redraws Shah Abbas's reconquest of Tabriz, Yerevan and Shirvan (1603–1607) about five years late.",
+   "sources": [
+    {
+     "title": "Wikipedia: Fall of Constantinople",
+     "url": "https://en.wikipedia.org/wiki/Fall_of_Constantinople"
+    },
+    {
+     "title": "Wikipedia: Ottoman–Mamluk War (1516–1517)",
+     "url": "https://en.wikipedia.org/wiki/Ottoman%E2%80%93Mamluk_War_(1516%E2%80%931517)"
+    },
+    {
+     "title": "Wikipedia: Ottoman–Safavid War (1603–1618)",
+     "url": "https://en.wikipedia.org/wiki/Ottoman%E2%80%93Safavid_War_(1603%E2%80%931618)"
+    }
+   ]
+  },
+  "Timurid Empire": {
+   "crop": [
+    {
+     "from": 1395,
+     "to": 1401,
+     "box": [
+      38.0,
+      20.0,
+      80.0,
+      45.5
+     ]
+    },
+    {
+     "from": 1402,
+     "to": 1406,
+     "box": [
+      38.0,
+      20.0,
+      80.0,
+      46.9
+     ]
+    },
+    {
+     "from": 1453,
+     "to": 1474,
+     "box": [
+      55.0,
+      20.0,
+      80.0,
+      47.0
+     ]
+    },
+    {
+     "from": 1513,
+     "to": 1515,
+     "box": [
+      60.0,
+      28.0,
+      76.0,
+      38.0
+     ]
+    }
+   ],
+   "relabel": [
+    {
+     "from": 1526,
+     "to": 1528,
+     "name": "Mughal Empire",
+     "key": "Mughal Empire",
+     "addTo": [
+      "Mughal Empire"
+     ]
+    }
+   ],
+   "note": "Timur's raids on the Golden Horde (1395), Syria (1400–01) and Ottoman Anatolia (1402) are no longer drawn as Timurid territory. The Qara Qoyunlu took Isfahan, Shiraz and Yazd from the Timurids in 1452–53, so western Iran is left undrawn from 1453. After 1507 the realm is Babur's Timurid principality of Kabul; his conquests in India from 1526 are labelled Mughal.",
+   "sources": [
+    {
+     "title": "Wikipedia: Tokhtamysh–Timur war",
+     "url": "https://en.wikipedia.org/wiki/Tokhtamysh%E2%80%93Timur_war"
+    },
+    {
+     "title": "Wikipedia: Siege of Damascus (1400)",
+     "url": "https://en.wikipedia.org/wiki/Siege_of_Damascus_(1400)"
+    },
+    {
+     "title": "Wikipedia: Qara Qoyunlu",
+     "url": "https://en.wikipedia.org/wiki/Qara_Qoyunlu"
+    },
+    {
+     "title": "Wikipedia: Babur",
+     "url": "https://en.wikipedia.org/wiki/Babur"
+    },
+    {
+     "title": "Wikimedia Commons: Empire of Timur and his Campaigns",
+     "url": "https://commons.wikimedia.org/wiki/File:Empire_of_Timur_and_his_Campaigns.png"
+    }
+   ]
+  },
+  "Safavid Dynasty": {
+   "crop": [
+    {
+     "from": 1723,
+     "to": 1726,
+     "box": [
+      43.0,
+      34.0,
+      62.0,
+      42.5
+     ]
+    }
+   ],
+   "note": "Isfahan fell to the Afghans in 1722; from 1723 only Tahmasp II's northern lands are drawn as Safavid. The map draws the Safavid conquest of the Aq Qoyunlu lands (1501–1508) several years late.",
+   "sources": [
+    {
+     "title": "Wikipedia: Safavid Iran",
+     "url": "https://en.wikipedia.org/wiki/Safavid_Iran"
+    }
+   ]
+  },
+  "Kingdom of the Franks": {
+   "relabel": [
+    {
+     "from": 751,
+     "to": 849,
+     "name": "Kingdom of the Franks",
+     "key": "(Carolingian Empire)",
+     "addTo": [
+      "Kingdom of the Franks"
+     ]
+    }
+   ],
+   "note": "From Pepin the Short's coronation in 751 the Frankish kingdom is the Carolingian realm, so it is grouped with the Carolingian Empire.",
+   "sources": [
+    {
+     "title": "Wikipedia: Carolingian Empire",
+     "url": "https://en.wikipedia.org/wiki/Carolingian_Empire"
+    }
+   ]
+  },
+  "Duchy of Bavaria": {
+   "relabel": [
+    {
+     "from": 1459,
+     "to": 1805,
+     "name": "Duchy of Bavaria",
+     "key": "(Holy Roman Empire)",
+     "addTo": [
+      "Duchy of Bavaria",
+      "(Holy Roman Empire)"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Golden Bull of 1356",
+     "url": "https://en.wikipedia.org/wiki/Golden_Bull_of_1356"
+    },
+    {
+     "title": "Wikipedia: Dissolution of the Holy Roman Empire",
+     "url": "https://en.wikipedia.org/wiki/Dissolution_of_the_Holy_Roman_Empire"
+    },
+    {
+     "title": "Wikimedia Commons: Map of the Holy Roman Empire, 1789",
+     "url": "https://commons.wikimedia.org/wiki/File:Map_of_the_Holy_Roman_Empire,_1789_en.png"
+    }
+   ]
+  },
+  "Electorate of Saxony": {
+   "relabel": [
+    {
+     "from": 1487,
+     "to": 1805,
+     "name": "Electorate of Saxony",
+     "key": "(Holy Roman Empire)",
+     "addTo": [
+      "Electorate of Saxony",
+      "(Holy Roman Empire)"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Golden Bull of 1356",
+     "url": "https://en.wikipedia.org/wiki/Golden_Bull_of_1356"
+    },
+    {
+     "title": "Wikipedia: Dissolution of the Holy Roman Empire",
+     "url": "https://en.wikipedia.org/wiki/Dissolution_of_the_Holy_Roman_Empire"
+    },
+    {
+     "title": "Wikimedia Commons: Map of the Holy Roman Empire, 1789",
+     "url": "https://commons.wikimedia.org/wiki/File:Map_of_the_Holy_Roman_Empire,_1789_en.png"
+    }
+   ]
+  },
+  "Electorate of Brandenburg": {
+   "relabel": [
+    {
+     "from": 1459,
+     "to": 1618,
+     "name": "Electorate of Brandenburg",
+     "key": "(Holy Roman Empire)",
+     "addTo": [
+      "Electorate of Brandenburg",
+      "(Holy Roman Empire)"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Golden Bull of 1356",
+     "url": "https://en.wikipedia.org/wiki/Golden_Bull_of_1356"
+    },
+    {
+     "title": "Wikipedia: Dissolution of the Holy Roman Empire",
+     "url": "https://en.wikipedia.org/wiki/Dissolution_of_the_Holy_Roman_Empire"
+    },
+    {
+     "title": "Wikimedia Commons: Map of the Holy Roman Empire, 1789",
+     "url": "https://commons.wikimedia.org/wiki/File:Map_of_the_Holy_Roman_Empire,_1789_en.png"
+    }
+   ]
+  },
+  "Kingdom of Bohemia": {
+   "relabel": [
+    {
+     "from": 1459,
+     "to": 1528,
+     "name": "Kingdom of Bohemia",
+     "key": "(Holy Roman Empire)",
+     "addTo": [
+      "Kingdom of Bohemia",
+      "(Holy Roman Empire)"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Golden Bull of 1356",
+     "url": "https://en.wikipedia.org/wiki/Golden_Bull_of_1356"
+    },
+    {
+     "title": "Wikipedia: Dissolution of the Holy Roman Empire",
+     "url": "https://en.wikipedia.org/wiki/Dissolution_of_the_Holy_Roman_Empire"
+    },
+    {
+     "title": "Wikimedia Commons: Map of the Holy Roman Empire, 1789",
+     "url": "https://commons.wikimedia.org/wiki/File:Map_of_the_Holy_Roman_Empire,_1789_en.png"
+    }
+   ]
+  },
+  "Electorate of Trier": {
+   "relabel": [
+    {
+     "from": 1459,
+     "to": 1618,
+     "name": "Electorate of Trier",
+     "key": "(Holy Roman Empire)",
+     "addTo": [
+      "Electorate of Trier",
+      "(Holy Roman Empire)"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Golden Bull of 1356",
+     "url": "https://en.wikipedia.org/wiki/Golden_Bull_of_1356"
+    },
+    {
+     "title": "Wikipedia: Dissolution of the Holy Roman Empire",
+     "url": "https://en.wikipedia.org/wiki/Dissolution_of_the_Holy_Roman_Empire"
+    },
+    {
+     "title": "Wikimedia Commons: Map of the Holy Roman Empire, 1789",
+     "url": "https://commons.wikimedia.org/wiki/File:Map_of_the_Holy_Roman_Empire,_1789_en.png"
+    }
+   ]
+  },
+  "House of Habsburg": {
+   "relabel": [
+    {
+     "from": 1459,
+     "to": 1515,
+     "name": "House of Habsburg",
+     "key": "(Holy Roman Empire)",
+     "addTo": [
+      "House of Habsburg",
+      "(Holy Roman Empire)"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Golden Bull of 1356",
+     "url": "https://en.wikipedia.org/wiki/Golden_Bull_of_1356"
+    },
+    {
+     "title": "Wikipedia: Dissolution of the Holy Roman Empire",
+     "url": "https://en.wikipedia.org/wiki/Dissolution_of_the_Holy_Roman_Empire"
+    },
+    {
+     "title": "Wikimedia Commons: Map of the Holy Roman Empire, 1789",
+     "url": "https://commons.wikimedia.org/wiki/File:Map_of_the_Holy_Roman_Empire,_1789_en.png"
+    }
+   ]
+  },
+  "(Holy Roman Empire)": {
+   "note": "The map's data stops grouping member states with the Empire after 1458; Bavaria, Saxony, Brandenburg, Trier, Bohemia and the Habsburg lands are regrouped here, but the Habsburg Monarchy's Austrian and Bohemian lands after 1515–1528 and Prussian Brandenburg after 1618 are still not highlighted, although they stayed in the Empire until 1806.",
+   "sources": [
+    {
+     "title": "Wikipedia: Golden Bull of 1356",
+     "url": "https://en.wikipedia.org/wiki/Golden_Bull_of_1356"
+    },
+    {
+     "title": "Wikipedia: Dissolution of the Holy Roman Empire",
+     "url": "https://en.wikipedia.org/wiki/Dissolution_of_the_Holy_Roman_Empire"
+    },
+    {
+     "title": "Wikimedia Commons: Map of the Holy Roman Empire, 1789",
+     "url": "https://commons.wikimedia.org/wiki/File:Map_of_the_Holy_Roman_Empire,_1789_en.png"
+    }
+   ]
+  }
+ }
+}

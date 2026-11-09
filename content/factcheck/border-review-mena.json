@@ -1,0 +1,1515 @@
+{
+ "reviewer": "mena",
+ "findings": [
+  {
+   "realm": "Latin Empire",
+   "years": [
+    1262,
+    1278
+   ],
+   "severity": "error",
+   "issue": "Constantinople still drawn as Latin until 1278; the Nicaeans retook it on 25 July 1261. Relabelled the city polygon as Nicaean Empire for 1262-1278 (islands cropped).",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Latin Empire",
+    "url": "https://en.wikipedia.org/wiki/Latin_Empire"
+   }
+  },
+  {
+   "realm": "Kingdom of Jerusalem",
+   "years": [
+    1291,
+    1293
+   ],
+   "severity": "error",
+   "issue": "Acre and the coast drawn as crusader until 1293; Acre fell 18 May 1291. Relabelled Mamluk from 1291.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Siege of Acre (1291)",
+    "url": "https://en.wikipedia.org/wiki/Siege_of_Acre_(1291)"
+   }
+  },
+  {
+   "realm": "County of Tripoli",
+   "years": [
+    1289,
+    1293
+   ],
+   "severity": "error",
+   "issue": "Tripoli drawn as crusader until 1293; Qalawun took it in April 1289. Relabelled Mamluk from 1289.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Fall of Tripoli (1289)",
+    "url": "https://en.wikipedia.org/wiki/Fall_of_Tripoli_(1289)"
+   }
+  },
+  {
+   "realm": "Principality of Antioch",
+   "years": [
+    1268,
+    1271
+   ],
+   "severity": "error",
+   "issue": "Antioch drawn as crusader until 1271; Baybars took it in May 1268. Relabelled Mamluk from 1268.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Siege of Antioch (1268)",
+    "url": "https://en.wikipedia.org/wiki/Siege_of_Antioch_(1268)"
+   }
+  },
+  {
+   "realm": "Kingdom of Israel",
+   "years": [
+    -720,
+    -701
+   ],
+   "severity": "error",
+   "issue": "Samaria drawn as the Kingdom of Israel until 701 BCE; Assyria ended the kingdom c. 720 BCE. Relabelled Neo-Assyrian for -720..-701.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Kingdom of Israel (Samaria)",
+    "url": "https://en.wikipedia.org/wiki/Kingdom_of_Israel_(Samaria)"
+   }
+  },
+  {
+   "realm": "Philistia",
+   "years": [
+    -1150,
+    -1001
+   ],
+   "severity": "error",
+   "issue": "Philistia drawn over Jerusalem, the hill country and Galilee before 1000 BCE; it was the coastal pentapolis. Cropped to the coastal plain.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Philistines",
+    "url": "https://en.wikipedia.org/wiki/Philistines"
+   }
+  },
+  {
+   "realm": "Hyksos",
+   "years": [
+    -1800,
+    -1401
+   ],
+   "severity": "error",
+   "issue": "Hyksos drawn 1800-1401 BCE; they ruled c. 1650-1550 BCE (expelled by Ahmose), Wikidata lead +/-150 yrs. Clipped to -1650..-1540.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Hyksos",
+    "url": "https://en.wikipedia.org/wiki/Hyksos"
+   }
+  },
+  {
+   "realm": "Twenty-sixth Dynasty of Egypt",
+   "years": [
+    -524,
+    -501
+   ],
+   "severity": "error",
+   "issue": "Saite Egypt drawn until 501 BCE; Cambyses conquered Egypt at Pelusium in 525 BCE. Clipped to -664..-525 (Egypt is now blank 524-501 BCE until the Achaemenid polygon reaches it: see Achaemenid finding).",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Battle of Pelusium",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Pelusium"
+   }
+  },
+  {
+   "realm": "Regency of Algiers",
+   "years": [
+    1831,
+    1845
+   ],
+   "severity": "error",
+   "issue": "Regency drawn until 1845 and over Algiers itself in 1830-1833; Algiers surrendered 5 July 1830. Clipped to 1516-1830; Algiers now shows French Algeria from 1831.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Invasion of Algiers (1830)",
+    "url": "https://en.wikipedia.org/wiki/Invasion_of_Algiers_(1830)"
+   }
+  },
+  {
+   "realm": "Zayyanid dynasty",
+   "years": [
+    1517,
+    1555
+   ],
+   "severity": "error",
+   "issue": "Zayyanid Tlemcen drawn over Algiers and central Algeria until 1555; Algiers was Barbarossa's/Ottoman from 1516-1519. Cropped to the west (lon <= 1.6E) for 1517-1555; Algiers is now blank until the Ottoman polygon arrives in 1556 (Ottoman finding).",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Regency of Algiers",
+    "url": "https://en.wikipedia.org/wiki/Regency_of_Algiers"
+   }
+  },
+  {
+   "realm": "Hafsid Dynasty",
+   "years": [
+    1511,
+    1551
+   ],
+   "severity": "error",
+   "issue": "Tripoli and Bejaia drawn Hafsid until 1551; Spain took both in 1510 (Tripoli to the Knights 1530, Ottomans 1551). Cropped to 5.3-11.7E for 1511-1551; Tripoli now shows the Spanish polygon.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Siege of Tripoli (1551)",
+    "url": "https://en.wikipedia.org/wiki/Siege_of_Tripoli_(1551)"
+   }
+  },
+  {
+   "realm": "Wattasid dynasty",
+   "years": [
+    1525,
+    1555
+   ],
+   "severity": "error",
+   "issue": "Marrakesh and the south drawn Wattasid until 1555; the Saadians held Marrakesh from 1524-1525. Cropped north of 32.3N (Marrakesh is blank because the Saadi polygon starts only in 1556).",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Wattasid dynasty",
+    "url": "https://en.wikipedia.org/wiki/Wattasid_dynasty"
+   }
+  },
+  {
+   "realm": "Almoravid Dynasty",
+   "years": [
+    1147,
+    1151
+   ],
+   "severity": "error",
+   "issue": "Marrakesh drawn as Almoravid and Almohad at once 1147-1151; the Almohads took Marrakesh in 1147. Almoravid cropped to al-Andalus and the Balearics.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Almohad Caliphate",
+    "url": "https://en.wikipedia.org/wiki/Almohad_Caliphate"
+   }
+  },
+  {
+   "realm": "Hotaki Dynasty",
+   "years": [
+    1727,
+    1733
+   ],
+   "severity": "error",
+   "issue": "Hotaki polygon covers Khorasan (Mashhad) and Gilan and stays over Isfahan until 1733; Nader expelled Ashraf in 1729. Cropped south of 36N for 1727-1729 and to Afghanistan for 1730-1733. Not fixable: the polygon reaches Isfahan only in 1727 (Isfahan fell 23 Oct 1722), and 1722-1726 Isfahan shows Safavid/blank.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Hotak dynasty",
+    "url": "https://en.wikipedia.org/wiki/Hotak_dynasty"
+   }
+  },
+  {
+   "realm": "Germiyanids",
+   "years": [
+    1352,
+    1430
+   ],
+   "severity": "error",
+   "issue": "Germiyanids drawn with detached pieces over Ankara (Ottoman since 1356), Upper Mesopotamia and Derbent. Cropped to the Kutahya region. Remaining: Germiyan was annexed by Bayezid 1390-1402 but is drawn throughout.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Germiyanids",
+    "url": "https://en.wikipedia.org/wiki/Germiyanids"
+   }
+  },
+  {
+   "realm": "Aq Qoyunlu",
+   "years": [
+    1440,
+    1511
+   ],
+   "severity": "error",
+   "issue": "An Ankara piece is drawn as Aq Qoyunlu 1440-1462 (Ankara was Ottoman), and the confederation is drawn over Iran and Iraq until 1511 (ended 1503; Baghdad Safavid 1508). Ankara piece cropped; 1504-1511 relabelled Safavid (addTo Safavid Dynasty), as reviewer v3 suggested.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Aq Qoyunlu",
+    "url": "https://en.wikipedia.org/wiki/Aq_Qoyunlu"
+   }
+  },
+  {
+   "realm": "Hashemite Arab Federation",
+   "years": [
+    1415,
+    1439
+   ],
+   "severity": "error",
+   "issue": "Southern Iraq 1415-1439 carries the name of the 1958 Iraq-Jordan federation. It was the Jalayirid remnant (Basra 1411-1432), then Qara Qoyunlu. Relabelled.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Jalayirid Sultanate",
+    "url": "https://en.wikipedia.org/wiki/Jalayirid_Sultanate"
+   }
+  },
+  {
+   "realm": "Mahdids",
+   "years": [
+    1169,
+    1506
+   ],
+   "severity": "error",
+   "issue": "The 'Mahdids' polygon is Oman for 337 years; the Mahdids were a Zabid dynasty of 1159-1174. Relabelled Nabhani dynasty (1169-1474) and Kingdom of Ormus (the 1475-1506 Muscat coast).",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Nabhani dynasty",
+    "url": "https://en.wikipedia.org/wiki/Nabhani_dynasty"
+   }
+  },
+  {
+   "realm": "Nabhani Dynasty",
+   "years": [
+    1169,
+    1176
+   ],
+   "severity": "error",
+   "issue": "The 'Nabhani' polygon is Yemen (labels swapped with Mahdids). Relabelled Mahdids 1169-1173 and Ayyubid 1174-1176.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Mahdids",
+    "url": "https://en.wikipedia.org/wiki/Mahdids"
+   }
+  },
+  {
+   "realm": "Ziyadid dynasty",
+   "years": [
+    1019,
+    1138
+   ],
+   "severity": "error",
+   "issue": "Zabid drawn Ziyadid until 1138; the Najahids ruled Zabid from 1022. Relabelled Najahid from 1019; Najahid 1159-1168 relabelled Mahdids.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Najahid dynasty",
+    "url": "https://en.wikipedia.org/wiki/Najahid_dynasty"
+   }
+  },
+  {
+   "realm": "Hamdanid Emirates",
+   "years": [
+    1005,
+    1259
+   ],
+   "severity": "error",
+   "issue": "Hamdanid name used 1005-1259 for unrelated polygons (Mirdasid Aleppo, Uqaylid Mosul, eastern Anatolia, Afghanistan/Sindh 1210-1249 per south-asia reviewer, al-Hasa); the Hamdanids ended in 1004. Relabelled 'Regional emirates'. Remaining: the 1066-1125 polygon overlaps crusader Acre and Tripoli.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Mirdasid dynasty",
+    "url": "https://en.wikipedia.org/wiki/Mirdasid_dynasty"
+   }
+  },
+  {
+   "realm": "Arab Federation",
+   "years": [
+    1959,
+    1959
+   ],
+   "severity": "error",
+   "issue": "Arab Federation drawn in 1959; it lasted Feb-Jul 1958. Iraqi part relabelled Iraqi Republic for 1959 (Jordan is blank that year: Kingdom of Jordan has no 1958-1959 rows).",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: 14 July Revolution",
+    "url": "https://en.wikipedia.org/wiki/14_July_Revolution"
+   }
+  },
+  {
+   "realm": "United Arab Republic",
+   "years": [
+    1961,
+    1972
+   ],
+   "severity": "error",
+   "issue": "UAR still drawn over Syria 1961-1972 (overlapping Syria); Syria seceded 28 Sep 1961. Cropped to Egypt and Gaza.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: 1961 Syrian coup d'état",
+    "url": "https://en.wikipedia.org/wiki/1961_Syrian_coup_d'%C3%A9tat"
+   }
+  },
+  {
+   "realm": "State of Israel",
+   "years": [
+    1948,
+    1966
+   ],
+   "severity": "error",
+   "issue": "Gaza Strip drawn as Israel 1948-1966 (overlapping Egypt/UAR); Egypt held it 1949-1967. Gaza cut out with two boxes.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: United Arab Republic occupation of the Gaza Strip",
+    "url": "https://en.wikipedia.org/wiki/United_Arab_Republic_occupation_of_the_Gaza_Strip"
+   }
+  },
+  {
+   "realm": "Kingdom of Hejaz and Nejd",
+   "years": [
+    1933,
+    1935
+   ],
+   "severity": "error",
+   "issue": "Kingdom of Saudi Arabia starts 1936; proclaimed 23 Sep 1932. Hejaz-and-Nejd polygon relabelled for 1933-1935.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Unification of Saudi Arabia",
+    "url": "https://en.wikipedia.org/wiki/Unification_of_Saudi_Arabia"
+   }
+  },
+  {
+   "realm": "Emirate of Nejd",
+   "years": [
+    1891,
+    1894
+   ],
+   "severity": "error",
+   "issue": "Riyadh drawn Saudi until 1894; the Rashidis won at Mulayda (21 Jan 1891). Relabelled Jabal Shammar for 1891-1894. Remaining: Ibn Saud retook Riyadh 13 Jan 1902 but Riyadh is Rashidi until 1904 (one polygon with Ha'il).",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Battle of Mulayda",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Mulayda"
+   }
+  },
+  {
+   "realm": "Pahlavi Dynasty",
+   "years": [
+    1924,
+    1925
+   ],
+   "severity": "warning",
+   "issue": "Pahlavi drawn from 1924; the Qajars were deposed 31 Oct 1925. Relabelled Qajar for 1924-1925.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Pahlavi Iran",
+    "url": "https://en.wikipedia.org/wiki/Pahlavi_Iran"
+   }
+  },
+  {
+   "realm": "Mamluk Sultanate",
+   "years": [
+    1250,
+    1518
+   ],
+   "severity": "error",
+   "issue": "1250-1259 polygon covers Syria and the Hejaz (Ayyubid an-Nasir Yusuf held Damascus and Aleppo until 1260): cropped. 1517-1518 Egypt/Syria/Hejaz were blank: clip extended to 1518 and 1517-1518 relabelled Ottoman (addTo Ottoman Empire) as v3 suggested; this replaces the earlier clip [1250, 1516] (merge reports the conflict).",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Mamluk Sultanate",
+    "url": "https://en.wikipedia.org/wiki/Mamluk_Sultanate"
+   }
+  },
+  {
+   "realm": "Himyarite Kingdom",
+   "years": [
+    526,
+    601
+   ],
+   "severity": "error",
+   "issue": "Himyar drawn until 601; Aksum conquered it c. 525, Abraha ruled to c. 570, then Sasanian Yemen. Relabelled Aksumite Yemen 526-570, Sasanian Yemen 571-601. Remaining: Kingdom of Axum also drawn over Yemen after 570 (overlap).",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Himyar",
+    "url": "https://en.wikipedia.org/wiki/Himyar"
+   }
+  },
+  {
+   "realm": "Kingdom of Armenia",
+   "years": [
+    429,
+    646
+   ],
+   "severity": "error",
+   "issue": "Kingdom of Armenia drawn until 646; the Arsacid monarchy ended in 428 (Wikidata lead). Relabelled Sasanian Armenia 429-646.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Kingdom of Armenia (antiquity)",
+    "url": "https://en.wikipedia.org/wiki/Kingdom_of_Armenia_(antiquity)"
+   }
+  },
+  {
+   "realm": "Arab Socialist Ba'ath Party",
+   "years": [
+    1967,
+    1972
+   ],
+   "severity": "warning",
+   "issue": "Syria 1967-1972 is labelled with a party name. Relabelled Ba'athist Syria.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Ba'athist Syria",
+    "url": "https://en.wikipedia.org/wiki/Ba'athist_Syria"
+   }
+  },
+  {
+   "realm": "Kingdom of Judah",
+   "years": [
+    -700,
+    -587
+   ],
+   "severity": "warning",
+   "issue": "Judah ends 701 BCE on the map (Wikidata lead -115 yrs); it lasted to 587 BCE as an Assyrian then Babylonian vassal, and Jerusalem is drawn inside the Neo-Assyrian polygon. No rows to extend; no claim kept.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Kingdom of Judah",
+    "url": "https://en.wikipedia.org/wiki/Kingdom_of_Judah"
+   }
+  },
+  {
+   "realm": "Kingdom of Urartu",
+   "years": [
+    -700,
+    -616
+   ],
+   "severity": "warning",
+   "issue": "Urartu has no rows -700..-616 although it lasted to c. 590 BCE, and its capital Tushpa (Van) is inside the Neo-Assyrian polygon throughout (see Neo-Assyrian finding).",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Urartu",
+    "url": "https://en.wikipedia.org/wiki/Urartu"
+   }
+  },
+  {
+   "realm": "Makuria",
+   "years": [
+    347,
+    1414
+   ],
+   "severity": "warning",
+   "issue": "Old Dongola, Makuria's capital, lies outside the Makuria polygon (nothing drawn within 12 km).",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Makuria",
+    "url": "https://en.wikipedia.org/wiki/Makuria"
+   }
+  },
+  {
+   "realm": "Mahdist State",
+   "years": [
+    1885,
+    1889
+   ],
+   "severity": "error",
+   "issue": "Mahdist State starts 1890; Khartoum fell 26 Jan 1885. Khartoum 1885-1889 shows British Africa (journey realm).",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Siege of Khartoum",
+    "url": "https://en.wikipedia.org/wiki/Siege_of_Khartoum"
+   }
+  },
+  {
+   "realm": "Kingdom of Libya",
+   "years": [
+    1951,
+    1952
+   ],
+   "severity": "error",
+   "issue": "Kingdom of Libya starts 1953; independent 24 Dec 1951. Tripoli 1952 shows British Africa (journey realm).",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Kingdom of Libya",
+    "url": "https://en.wikipedia.org/wiki/Kingdom_of_Libya"
+   }
+  },
+  {
+   "realm": "Sultanate of Muscat and Oman",
+   "years": [
+    1956,
+    1970
+   ],
+   "severity": "warning",
+   "issue": "Muscat and Oman ends 1955 and is drawn as the United Kingdom 1956-1972, then Oman and the UK overlap to 2024. It was de jure sovereign, a de facto British protected state, to 1970. British journey realm; no claim kept (protectorate status is arguable).",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Muscat and Oman",
+    "url": "https://en.wikipedia.org/wiki/Muscat_and_Oman"
+   }
+  },
+  {
+   "realm": "Syria",
+   "years": [
+    1973,
+    2024
+   ],
+   "severity": "warning",
+   "issue": "Realm 'Syria' is linked to Wikidata Q41137 (Assyrian Empire); should be Q858 (Syria). Shared index/wd-overrides file, not edited.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Ba'athist Syria",
+    "url": "https://en.wikipedia.org/wiki/Ba'athist_Syria"
+   }
+  },
+  {
+   "realm": "Kingdom of Iraq",
+   "years": [
+    1943,
+    1946
+   ],
+   "severity": "warning",
+   "issue": "Iraq 1943-1946 drawn as British Africa; Iraq stayed a sovereign kingdom under British military occupation after May 1941. Arguable, so no claim kept.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Kingdom of Iraq",
+    "url": "https://en.wikipedia.org/wiki/Kingdom_of_Iraq"
+   }
+  },
+  {
+   "realm": "Saadi Sultanate",
+   "years": [
+    1510,
+    1555
+   ],
+   "severity": "warning",
+   "issue": "Saadi polygon starts only in 1556 though the Saadians held the Sous from the 1510s and Marrakesh from 1524-1525; southern Morocco is now blank 1525-1555.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Wattasid dynasty",
+    "url": "https://en.wikipedia.org/wiki/Wattasid_dynasty"
+   }
+  },
+  {
+   "realm": "New Kingdom of Egypt",
+   "years": [
+    -1069,
+    -801
+   ],
+   "severity": "error",
+   "issue": "NOT MINE (journey egypt-new-kingdom): New Kingdom drawn until 801 BCE; it ended c. 1069 BCE (Third Intermediate Period; 21st dynasty at Tanis). Claim Memphis -1000 fails.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Third Intermediate Period of Egypt",
+    "url": "https://en.wikipedia.org/wiki/Third_Intermediate_Period_of_Egypt"
+   }
+  },
+  {
+   "realm": "Achaemenid Empire",
+   "years": [
+    -525,
+    -501
+   ],
+   "severity": "error",
+   "issue": "NOT MINE: Egypt not in the Achaemenid polygon until 500 BCE; Cambyses conquered it in 525 BCE. Claim Memphis -520 fails (now blank after the Saite clip).",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Battle of Pelusium",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Pelusium"
+   }
+  },
+  {
+   "realm": "Neo-Assyrian Empire",
+   "years": [
+    -800,
+    -601
+   ],
+   "severity": "error",
+   "issue": "NOT MINE: Tushpa (Van), Urartu's capital, drawn Assyrian -800..-610, and Nineveh still Assyrian until 601 BCE (fell 612 BCE). Claims Van -750 and Nineveh -605 fail.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Fall of Nineveh",
+    "url": "https://en.wikipedia.org/wiki/Fall_of_Nineveh"
+   }
+  },
+  {
+   "realm": "Roman Empire",
+   "years": [
+    270,
+    272
+   ],
+   "severity": "error",
+   "issue": "NOT MINE: Palmyra drawn Roman from 270; Zenobia's Palmyrene Empire lasted 270-273. Claim Palmyra 271 fails. Also Petra drawn Roman 25-16 BCE though Nabataea was a client kingdom to 106 CE.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Palmyrene Empire",
+    "url": "https://en.wikipedia.org/wiki/Palmyrene_Empire"
+   }
+  },
+  {
+   "realm": "Great Seljuk Empire",
+   "years": [
+    1098,
+    1098
+   ],
+   "severity": "error",
+   "issue": "NOT MINE: Jerusalem drawn Seljuk until 1098; the Fatimids retook it in August 1098. Claim Jerusalem 1098 fails.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Fatimid Caliphate",
+    "url": "https://en.wikipedia.org/wiki/Fatimid_Caliphate"
+   }
+  },
+  {
+   "realm": "Mongol Empire",
+   "years": [
+    1260,
+    1274
+   ],
+   "severity": "error",
+   "issue": "NOT MINE (also flagged by v3): Damascus drawn Mongol 1260-1274; the Mamluks took Damascus days after Ain Jalut (3 Sep 1260). Claim Damascus 1265 fails.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Battle of Ain Jalut",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Ain_Jalut"
+   }
+  },
+  {
+   "realm": "Byzantine Empire",
+   "years": [
+    1453,
+    1467
+   ],
+   "severity": "error",
+   "issue": "NOT MINE: Constantinople Byzantine until 1467 (fell 29 May 1453). v3's Byzantine clip/relabel fixes the Byzantine side; Ottoman polygon still reaches the city only in 1468, so claim Constantinople 1454 passes only once both land.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Fall of Constantinople",
+    "url": "https://en.wikipedia.org/wiki/Fall_of_Constantinople"
+   }
+  },
+  {
+   "realm": "Ottoman Empire",
+   "years": [
+    1516,
+    1556
+   ],
+   "severity": "error",
+   "issue": "NOT MINE: Algiers outside the Ottoman realm until 1556 (Regency from 1516-1519; blank 1517-1555 after the Zayyanid crop); Sanaa Ottoman before 1547; Tabriz Ottoman until 1608 (Safavids retook it 21 Oct 1603); Rhodes blank 1314-1525 (Knights Hospitaller 1310-1522 not drawn, Ottoman from 1522). Claims Algiers 1530, Tabriz 1606 fail.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Ottoman–Safavid war (1603–1612)",
+    "url": "https://en.wikipedia.org/wiki/Ottoman%E2%80%93Safavid_war_(1603%E2%80%931612)"
+   }
+  },
+  {
+   "realm": "Kingdom of Portugal",
+   "years": [
+    1650,
+    1660
+   ],
+   "severity": "error",
+   "issue": "NOT MINE: Muscat Portuguese until 1660 (overlapping the Ya'rubids from 1654); the Portuguese surrendered Muscat 23 Jan 1650. Claim Muscat 1655 fails.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Muscat",
+    "url": "https://en.wikipedia.org/wiki/Muscat"
+   }
+  },
+  {
+   "realm": "(British Empire)",
+   "years": [
+    1885,
+    1972
+   ],
+   "severity": "error",
+   "issue": "NOT MINE: British polygons drawn over Khartoum 1885-1889 (Mahdist), Libya 1951-1952 (independent 24 Dec 1951), Aden 1967-1968 (South Yemen independent 30 Nov 1967), and overlapping independent Kuwait (1961-1968), Cyprus (1960-1968), Qatar/Bahrain/UAE (1971-2024) and Oman (1973-2024). Claims Khartoum 1887, Tripoli 1952, Aden 1968, Kuwait 1965, Nicosia 1965 fail.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: South Yemen",
+    "url": "https://en.wikipedia.org/wiki/South_Yemen"
+   }
+  },
+  {
+   "realm": "French Fifth Republic",
+   "years": [
+    1963,
+    2024
+   ],
+   "severity": "error",
+   "issue": "NOT MINE: French Fifth Republic polygon still includes Algeria after independence (5 July 1962), overlapping Algeria 1963-2024 (border-check overlap lead, 217 cells). A box crop would also drop the overseas departments; needs a cut over Algeria by its owner. Claim Algiers 1965 fails.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Algerian War",
+    "url": "https://en.wikipedia.org/wiki/Algerian_War"
+   }
+  },
+  {
+   "realm": "Safavid Dynasty",
+   "years": [
+    1722,
+    1726
+   ],
+   "severity": "warning",
+   "issue": "NOT MINE: Isfahan drawn Safavid until 1722 then blank 1723-1726 after v3's crop, though the Afghans held it from 23 Oct 1722 (the Hotaki polygon reaches Isfahan only from 1727).",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Hotak dynasty",
+    "url": "https://en.wikipedia.org/wiki/Hotak_dynasty"
+   }
+  },
+  {
+   "realm": "Ghaznavid Empire",
+   "years": [
+    1030,
+    1039
+   ],
+   "severity": "warning",
+   "issue": "NOT MINE: Shiraz drawn Ghaznavid 1030-1039; Fars stayed Buyid until the 1050s-1060s.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Buyid dynasty",
+    "url": "https://en.wikipedia.org/wiki/Buyid_dynasty"
+   }
+  }
+ ],
+ "corrections": {
+  "Latin Empire": {
+   "relabel": [
+    {
+     "from": 1262,
+     "to": 1278,
+     "name": "Nicaean Empire",
+     "key": "Nicaean Empire"
+    }
+   ],
+   "crop": [
+    {
+     "from": 1262,
+     "to": 1278,
+     "box": [
+      28.3,
+      40.8,
+      29.5,
+      41.5
+     ]
+    }
+   ],
+   "note": "The Empire of Nicaea retook Constantinople on 25 July 1261, restoring the Byzantine Empire; from 1262 the city is shown with the Nicaean (restored Byzantine) state, not the Latin Empire.",
+   "sources": [
+    {
+     "title": "Wikipedia: Latin Empire",
+     "url": "https://en.wikipedia.org/wiki/Latin_Empire"
+    }
+   ]
+  },
+  "Kingdom of Jerusalem": {
+   "relabel": [
+    {
+     "from": 1291,
+     "to": 1293,
+     "name": "Mamluk Sultanate",
+     "key": "Mamluk Sultanate"
+    }
+   ],
+   "note": "Acre fell to the Mamluks on 18 May 1291 and the last crusader towns on the coast were given up that summer; from 1291 the remnant is shown as Mamluk.",
+   "sources": [
+    {
+     "title": "Wikipedia: Siege of Acre (1291)",
+     "url": "https://en.wikipedia.org/wiki/Siege_of_Acre_(1291)"
+    }
+   ]
+  },
+  "County of Tripoli": {
+   "relabel": [
+    {
+     "from": 1289,
+     "to": 1293,
+     "name": "Mamluk Sultanate",
+     "key": "Mamluk Sultanate"
+    }
+   ],
+   "note": "The Mamluk sultan Qalawun took Tripoli in April 1289, ending the county; from 1289 its land is shown as Mamluk.",
+   "sources": [
+    {
+     "title": "Wikipedia: Fall of Tripoli (1289)",
+     "url": "https://en.wikipedia.org/wiki/Fall_of_Tripoli_(1289)"
+    }
+   ]
+  },
+  "Principality of Antioch": {
+   "relabel": [
+    {
+     "from": 1268,
+     "to": 1271,
+     "name": "Mamluk Sultanate",
+     "key": "Mamluk Sultanate"
+    }
+   ],
+   "note": "Baybars took Antioch in May 1268, ending the principality; from 1268 its land is shown as Mamluk.",
+   "sources": [
+    {
+     "title": "Wikipedia: Siege of Antioch (1268)",
+     "url": "https://en.wikipedia.org/wiki/Siege_of_Antioch_(1268)"
+    }
+   ]
+  },
+  "Kingdom of Israel": {
+   "relabel": [
+    {
+     "from": -720,
+     "to": -701,
+     "name": "Neo-Assyrian Empire",
+     "key": "Neo-Assyrian Empire"
+    }
+   ],
+   "note": "Assyria took Samaria in about 722–720 BCE and made the kingdom an Assyrian province; from 720 BCE its land is shown as Assyrian.",
+   "sources": [
+    {
+     "title": "Wikipedia: Kingdom of Israel (Samaria)",
+     "url": "https://en.wikipedia.org/wiki/Kingdom_of_Israel_(Samaria)"
+    }
+   ]
+  },
+  "Philistia": {
+   "crop": [
+    {
+     "from": -1150,
+     "to": -1001,
+     "box": [
+      34.2,
+      31.0,
+      35.0,
+      32.1
+     ]
+    }
+   ],
+   "note": "Philistia was the coastal plain of the Philistine cities (Gaza, Ashkelon, Ashdod, Ekron and Gath); before 1000 BCE the map drew it over the hill country, Jerusalem and Galilee, so it is now limited to the coast.",
+   "sources": [
+    {
+     "title": "Wikipedia: Philistines",
+     "url": "https://en.wikipedia.org/wiki/Philistines"
+    }
+   ]
+  },
+  "Hyksos": {
+   "clip": [
+    -1650,
+    -1540
+   ],
+   "note": "The Hyksos (Fifteenth Dynasty) ruled northern Egypt from Avaris from about 1650 BCE until Ahmose expelled them about 1550 BCE; the realm is shown only in those years.",
+   "sources": [
+    {
+     "title": "Wikipedia: Hyksos",
+     "url": "https://en.wikipedia.org/wiki/Hyksos"
+    }
+   ]
+  },
+  "Twenty-sixth Dynasty of Egypt": {
+   "clip": [
+    -664,
+    -525
+   ],
+   "note": "The Saite dynasty ruled Egypt from 664 BCE until the Persian king Cambyses II won at Pelusium in 525 BCE.",
+   "sources": [
+    {
+     "title": "Wikipedia: Twenty-sixth Dynasty of Egypt",
+     "url": "https://en.wikipedia.org/wiki/Twenty-sixth_Dynasty_of_Egypt"
+    },
+    {
+     "title": "Wikipedia: Battle of Pelusium",
+     "url": "https://en.wikipedia.org/wiki/Battle_of_Pelusium"
+    }
+   ]
+  },
+  "Regency of Algiers": {
+   "clip": [
+    1516,
+    1830
+   ],
+   "note": "Algiers surrendered to the French on 5 July 1830, ending the regency. From 1831 only the French-held coast is drawn; the Beylik of Constantine (to 1837) and the Emir Abd al-Qadir's state in the west are not shown.",
+   "sources": [
+    {
+     "title": "Wikipedia: Invasion of Algiers (1830)",
+     "url": "https://en.wikipedia.org/wiki/Invasion_of_Algiers_(1830)"
+    },
+    {
+     "title": "Wikipedia: Regency of Algiers",
+     "url": "https://en.wikipedia.org/wiki/Regency_of_Algiers"
+    }
+   ]
+  },
+  "Zayyanid dynasty": {
+   "crop": [
+    {
+     "from": 1517,
+     "to": 1555,
+     "box": [
+      -3.0,
+      32.0,
+      1.6,
+      37.5
+     ]
+    }
+   ],
+   "note": "From 1516–1517 Algiers and the land east of Tenes belonged to the Barbarossa brothers and then the Ottoman regency of Algiers; the Zayyanids kept only the Tlemcen region until the Ottomans took it in the 1550s.",
+   "sources": [
+    {
+     "title": "Wikipedia: Zayyanid dynasty",
+     "url": "https://en.wikipedia.org/wiki/Zayyanid_dynasty"
+    },
+    {
+     "title": "Wikipedia: Regency of Algiers",
+     "url": "https://en.wikipedia.org/wiki/Regency_of_Algiers"
+    }
+   ]
+  },
+  "Hafsid Dynasty": {
+   "crop": [
+    {
+     "from": 1511,
+     "to": 1551,
+     "box": [
+      5.3,
+      29.0,
+      11.7,
+      38.0
+     ]
+    }
+   ],
+   "note": "Spain took Bejaia and Tripoli in 1510 (Tripoli passed to the Knights of Malta in 1530 and to the Ottomans in 1551), so from 1511 the Hafsid kingdom is drawn without them.",
+   "sources": [
+    {
+     "title": "Wikipedia: Hafsid dynasty",
+     "url": "https://en.wikipedia.org/wiki/Hafsid_dynasty"
+    },
+    {
+     "title": "Wikipedia: Siege of Tripoli (1551)",
+     "url": "https://en.wikipedia.org/wiki/Siege_of_Tripoli_(1551)"
+    }
+   ]
+  },
+  "Wattasid dynasty": {
+   "crop": [
+    {
+     "from": 1525,
+     "to": 1555,
+     "box": [
+      -10.0,
+      32.3,
+      -1.0,
+      36.2
+     ]
+    }
+   ],
+   "note": "The Saadians took Marrakesh in 1524–1525 and from 1527 held southern Morocco; the Wattasids kept only the kingdom of Fez in the north until 1554.",
+   "sources": [
+    {
+     "title": "Wikipedia: Wattasid dynasty",
+     "url": "https://en.wikipedia.org/wiki/Wattasid_dynasty"
+    },
+    {
+     "title": "Wikipedia: Saadi Sultanate",
+     "url": "https://en.wikipedia.org/wiki/Saadi_Sultanate"
+    }
+   ]
+  },
+  "Almoravid Dynasty": {
+   "crop": [
+    {
+     "from": 1147,
+     "to": 1151,
+     "box": [
+      -10.0,
+      35.95,
+      4.5,
+      42.5
+     ]
+    }
+   ],
+   "note": "The Almohads took Marrakesh in 1147, ending Almoravid rule in Morocco; after that only Almoravid remnants in al-Andalus and the Balearic Islands are drawn.",
+   "sources": [
+    {
+     "title": "Wikipedia: Almoravid dynasty",
+     "url": "https://en.wikipedia.org/wiki/Almoravid_dynasty"
+    },
+    {
+     "title": "Wikipedia: Almohad Caliphate",
+     "url": "https://en.wikipedia.org/wiki/Almohad_Caliphate"
+    }
+   ]
+  },
+  "Hotaki Dynasty": {
+   "crop": [
+    {
+     "from": 1727,
+     "to": 1729,
+     "box": [
+      44.0,
+      24.0,
+      70.0,
+      36.0
+     ]
+    },
+    {
+     "from": 1730,
+     "to": 1733,
+     "box": [
+      60.5,
+      24.0,
+      70.0,
+      36.0
+     ]
+    }
+   ],
+   "note": "The Afghans took Isfahan in 1722 but never held Khorasan or the Caspian provinces; Nader drove Ashraf out of Isfahan in 1729, after which the Hotaki state is drawn only around Kandahar (taken by Nader in 1738).",
+   "sources": [
+    {
+     "title": "Wikipedia: Hotak dynasty",
+     "url": "https://en.wikipedia.org/wiki/Hotak_dynasty"
+    },
+    {
+     "title": "Wikipedia: Afsharid Iran",
+     "url": "https://en.wikipedia.org/wiki/Afsharid_Iran"
+    }
+   ]
+  },
+  "Germiyanids": {
+   "crop": [
+    {
+     "from": 1305,
+     "to": 1439,
+     "box": [
+      28.0,
+      37.2,
+      32.0,
+      39.9
+     ]
+    }
+   ],
+   "note": "The Germiyanid beylik was the Kütahya region of western Anatolia; the map had attached to it detached areas around Ankara (Ottoman from the 1350s), in Upper Mesopotamia and at Derbent, which are removed.",
+   "sources": [
+    {
+     "title": "Wikipedia: Germiyanids",
+     "url": "https://en.wikipedia.org/wiki/Germiyanids"
+    },
+    {
+     "title": "Wikipedia: Ankara",
+     "url": "https://en.wikipedia.org/wiki/Ankara"
+    }
+   ]
+  },
+  "Hashemite Arab Federation": {
+   "relabel": [
+    {
+     "from": 1415,
+     "to": 1432,
+     "name": "Jalayirid Sultanate",
+     "key": "Jalayirid Sultanate"
+    },
+    {
+     "from": 1433,
+     "to": 1439,
+     "name": "Qara Qoyunlu",
+     "key": "Qara Qoyunlu"
+    }
+   ],
+   "note": "This polygon is southern Iraq, which the Jalayirid sultans held from Wasit and Basra after losing Baghdad in 1410 until the Qara Qoyunlu took it in 1432; it is shown under those names (the Hashemite Arab Federation was a 1958 union of Iraq and Jordan).",
+   "sources": [
+    {
+     "title": "Wikipedia: Jalayirid Sultanate",
+     "url": "https://en.wikipedia.org/wiki/Jalayirid_Sultanate"
+    },
+    {
+     "title": "Wikipedia: Qara Qoyunlu",
+     "url": "https://en.wikipedia.org/wiki/Qara_Qoyunlu"
+    }
+   ]
+  },
+  "Mahdids": {
+   "relabel": [
+    {
+     "from": 1169,
+     "to": 1474,
+     "name": "Nabhani Dynasty",
+     "key": "Nabhani Dynasty"
+    },
+    {
+     "from": 1475,
+     "to": 1506,
+     "name": "Kingdom of Ormus",
+     "key": "Kingdom of Ormus"
+    }
+   ],
+   "note": "This polygon is Oman, ruled by the Nabhani dynasty (about 1154–1624) whose capital was in the interior; its 1475–1506 coastal remnant around Muscat and Qalhat was a dependency of the Kingdom of Ormus. The Mahdids were a Yemeni dynasty of Zabid (1159–1173).",
+   "sources": [
+    {
+     "title": "Wikipedia: Nabhani dynasty",
+     "url": "https://en.wikipedia.org/wiki/Nabhani_dynasty"
+    },
+    {
+     "title": "Wikipedia: Kingdom of Hormuz",
+     "url": "https://en.wikipedia.org/wiki/Kingdom_of_Hormuz"
+    },
+    {
+     "title": "Wikipedia: Mahdids",
+     "url": "https://en.wikipedia.org/wiki/Mahdids"
+    }
+   ]
+  },
+  "Nabhani Dynasty": {
+   "relabel": [
+    {
+     "from": 1169,
+     "to": 1173,
+     "name": "Mahdids",
+     "key": "Mahdids"
+    },
+    {
+     "from": 1174,
+     "to": 1176,
+     "name": "Ayyubid Sultanate",
+     "key": "Ayyubid Sultanate"
+    }
+   ],
+   "note": "This polygon is Yemen: the Mahdids of Zabid ruled the Tihama from 1159 until the Ayyubid conquest of 1173–1174. The Nabhani dynasty ruled Oman.",
+   "sources": [
+    {
+     "title": "Wikipedia: Mahdids",
+     "url": "https://en.wikipedia.org/wiki/Mahdids"
+    },
+    {
+     "title": "Wikipedia: Nabhani dynasty",
+     "url": "https://en.wikipedia.org/wiki/Nabhani_dynasty"
+    }
+   ]
+  },
+  "Najahid Dynasty": {
+   "relabel": [
+    {
+     "from": 1159,
+     "to": 1168,
+     "name": "Mahdids",
+     "key": "Mahdids"
+    }
+   ],
+   "note": "The Mahdids took Zabid from the Najahids in 1159.",
+   "sources": [
+    {
+     "title": "Wikipedia: Mahdids",
+     "url": "https://en.wikipedia.org/wiki/Mahdids"
+    },
+    {
+     "title": "Wikipedia: Najahid dynasty",
+     "url": "https://en.wikipedia.org/wiki/Najahid_dynasty"
+    }
+   ]
+  },
+  "Ziyadid dynasty": {
+   "relabel": [
+    {
+     "from": 1019,
+     "to": 1138,
+     "name": "Najahid Dynasty",
+     "key": "Najahid Dynasty"
+    }
+   ],
+   "note": "Ziyadid rule at Zabid ended in the early 11th century; from 1022 Zabid was ruled by the Najahids, so later polygons are shown under that name.",
+   "sources": [
+    {
+     "title": "Wikipedia: Ziyadid dynasty",
+     "url": "https://en.wikipedia.org/wiki/Ziyadid_dynasty"
+    },
+    {
+     "title": "Wikipedia: Najahid dynasty",
+     "url": "https://en.wikipedia.org/wiki/Najahid_dynasty"
+    }
+   ]
+  },
+  "Hamdanid Emirates": {
+   "relabel": [
+    {
+     "from": 1005,
+     "to": 1259,
+     "name": "Regional emirates",
+     "key": "Regional emirates"
+    }
+   ],
+   "note": "The Hamdanid dynasty ended in 1004. Later polygons under this name were patchworks of other local powers (the Mirdasids of Aleppo, Uqaylids of Mosul, Marwanids of Diyarbakir, and later Anatolian, Afghan and Gulf principalities) and are shown simply as regional emirates.",
+   "sources": [
+    {
+     "title": "Wikipedia: Hamdanid dynasty",
+     "url": "https://en.wikipedia.org/wiki/Hamdanid_dynasty"
+    },
+    {
+     "title": "Wikipedia: Mirdasid dynasty",
+     "url": "https://en.wikipedia.org/wiki/Mirdasid_dynasty"
+    }
+   ]
+  },
+  "Arab Federation": {
+   "relabel": [
+    {
+     "from": 1959,
+     "to": 1959,
+     "name": "Iraqi Republic",
+     "key": "Iraqi Republic"
+    }
+   ],
+   "crop": [
+    {
+     "from": 1959,
+     "to": 1959,
+     "box": [
+      39.3,
+      29.0,
+      49.0,
+      38.0
+     ]
+    }
+   ],
+   "note": "The Arab Federation of Iraq and Jordan lasted from February to July 1958; after the 14 July revolution Iraq was a republic, so in 1959 the Iraqi part is shown as the Iraqi Republic (Jordan is not drawn that year).",
+   "sources": [
+    {
+     "title": "Wikipedia: Arab Federation",
+     "url": "https://en.wikipedia.org/wiki/Arab_Federation"
+    },
+    {
+     "title": "Wikipedia: 14 July Revolution",
+     "url": "https://en.wikipedia.org/wiki/14_July_Revolution"
+    }
+   ]
+  },
+  "United Arab Republic": {
+   "crop": [
+    {
+     "from": 1961,
+     "to": 1972,
+     "box": [
+      24.0,
+      20.0,
+      37.0,
+      31.9
+     ]
+    }
+   ],
+   "note": "Syria left the union on 28 September 1961; Egypt kept the name United Arab Republic until 1971, so from 1961 it is drawn without Syria.",
+   "sources": [
+    {
+     "title": "Wikipedia: United Arab Republic",
+     "url": "https://en.wikipedia.org/wiki/United_Arab_Republic"
+    },
+    {
+     "title": "Wikipedia: 1961 Syrian coup d'état",
+     "url": "https://en.wikipedia.org/wiki/1961_Syrian_coup_d'%C3%A9tat"
+    }
+   ]
+  },
+  "State of Israel": {
+   "cut": [
+    {
+     "from": 1948,
+     "to": 1966,
+     "box": [
+      34.2,
+      31.2,
+      34.4,
+      31.42
+     ]
+    },
+    {
+     "from": 1948,
+     "to": 1966,
+     "box": [
+      34.4,
+      31.42,
+      34.56,
+      31.62
+     ]
+    }
+   ],
+   "note": "From 1948 to 1967 the Gaza Strip was held by Egypt, not Israel, so the map's Israel of those years is drawn without it.",
+   "sources": [
+    {
+     "title": "Wikipedia: United Arab Republic occupation of the Gaza Strip",
+     "url": "https://en.wikipedia.org/wiki/United_Arab_Republic_occupation_of_the_Gaza_Strip"
+    }
+   ]
+  },
+  "Kingdom of Hejaz and Nejd": {
+   "relabel": [
+    {
+     "from": 1933,
+     "to": 1935,
+     "name": "Kingdom of Saudi Arabia",
+     "key": "Kingdom of Saudi Arabia"
+    }
+   ],
+   "note": "Ibn Saud merged his kingdoms as the Kingdom of Saudi Arabia on 23 September 1932.",
+   "sources": [
+    {
+     "title": "Wikipedia: Unification of Saudi Arabia",
+     "url": "https://en.wikipedia.org/wiki/Unification_of_Saudi_Arabia"
+    }
+   ]
+  },
+  "Emirate of Nejd": {
+   "relabel": [
+    {
+     "from": 1891,
+     "to": 1894,
+     "name": "Emirate of Jabal Shammar",
+     "key": "Emirate of Jabal Shammar"
+    }
+   ],
+   "note": "After the battle of Mulayda (1891) the Rashidi emirs of Ha'il ruled Riyadh and Najd until Ibn Saud retook Riyadh in January 1902.",
+   "sources": [
+    {
+     "title": "Wikipedia: Battle of Mulayda",
+     "url": "https://en.wikipedia.org/wiki/Battle_of_Mulayda"
+    },
+    {
+     "title": "Wikipedia: Battle of Riyadh",
+     "url": "https://en.wikipedia.org/wiki/Battle_of_Riyadh"
+    }
+   ]
+  },
+  "Pahlavi Dynasty": {
+   "relabel": [
+    {
+     "from": 1924,
+     "to": 1925,
+     "name": "Qajar Dynasty",
+     "key": "Qajar Dynasty"
+    }
+   ],
+   "note": "Reza Khan was prime minister from 1923, but the Qajar dynasty was deposed only on 31 October 1925 and he was proclaimed shah in December 1925.",
+   "sources": [
+    {
+     "title": "Wikipedia: Pahlavi Iran",
+     "url": "https://en.wikipedia.org/wiki/Pahlavi_Iran"
+    },
+    {
+     "title": "Wikipedia: Qajar Iran",
+     "url": "https://en.wikipedia.org/wiki/Qajar_Iran"
+    }
+   ]
+  },
+  "Mamluk Sultanate": {
+   "clip": [
+    1250,
+    1518
+   ],
+   "crop": [
+    {
+     "from": 1250,
+     "to": 1259,
+     "box": [
+      18.0,
+      15.0,
+      36.3,
+      32.5
+     ]
+    }
+   ],
+   "relabel": [
+    {
+     "from": 1517,
+     "to": 1518,
+     "name": "Ottoman Empire",
+     "key": "Ottoman Empire",
+     "addTo": [
+      "Ottoman Empire"
+     ]
+    }
+   ],
+   "note": "In the 1250s Damascus and Aleppo still belonged to the Ayyubid an-Nasir Yusuf (the Mamluks took Syria only after Ain Jalut in September 1260), so in 1250–1259 the sultanate is drawn without Syria and the Hejaz. The Ottomans took Syria in 1516 and Cairo in January 1517; in 1517–1518 the former Mamluk lands are shown as Ottoman.",
+   "sources": [
+    {
+     "title": "Wikipedia: Mamluk Sultanate",
+     "url": "https://en.wikipedia.org/wiki/Mamluk_Sultanate"
+    },
+    {
+     "title": "Wikipedia: Battle of Ain Jalut",
+     "url": "https://en.wikipedia.org/wiki/Battle_of_Ain_Jalut"
+    },
+    {
+     "title": "Wikipedia: Ottoman–Mamluk War (1516–1517)",
+     "url": "https://en.wikipedia.org/wiki/Ottoman%E2%80%93Mamluk_War_(1516%E2%80%931517)"
+    }
+   ]
+  },
+  "Himyarite Kingdom": {
+   "relabel": [
+    {
+     "from": 526,
+     "to": 570,
+     "name": "Aksumite Yemen",
+     "key": "Aksumite Yemen"
+    },
+    {
+     "from": 571,
+     "to": 601,
+     "name": "Sasanian Yemen",
+     "key": "Sasanian Yemen"
+    }
+   ],
+   "note": "Aksum conquered Himyar about 525; Abraha then ruled Yemen as an Aksumite viceroy, and from about 570 Yemen was under Sasanian Persia.",
+   "sources": [
+    {
+     "title": "Wikipedia: Himyar",
+     "url": "https://en.wikipedia.org/wiki/Himyar"
+    },
+    {
+     "title": "Wikipedia: Abraha",
+     "url": "https://en.wikipedia.org/wiki/Abraha"
+    },
+    {
+     "title": "Wikipedia: Sasanian Yemen",
+     "url": "https://en.wikipedia.org/wiki/Sasanian_Yemen"
+    }
+   ]
+  },
+  "Kingdom of Armenia": {
+   "relabel": [
+    {
+     "from": 429,
+     "to": 646,
+     "name": "Sasanian Armenia",
+     "key": "Sasanian Armenia"
+    }
+   ],
+   "note": "The Arsacid kingdom of Armenia ended in 428, when Persia replaced its king with a governor (marzban); later polygons are shown as Sasanian Armenia.",
+   "sources": [
+    {
+     "title": "Wikipedia: Kingdom of Armenia (antiquity)",
+     "url": "https://en.wikipedia.org/wiki/Kingdom_of_Armenia_(antiquity)"
+    }
+   ]
+  },
+  "Aq Qoyunlu": {
+   "crop": [
+    {
+     "from": 1440,
+     "to": 1462,
+     "box": [
+      37.5,
+      25.0,
+      62.0,
+      42.0
+     ]
+    }
+   ],
+   "relabel": [
+    {
+     "from": 1504,
+     "to": 1511,
+     "name": "Safavid Dynasty",
+     "key": "Safavid Dynasty",
+     "addTo": [
+      "Safavid Dynasty"
+     ]
+    }
+   ],
+   "note": "The Aq Qoyunlu never held Ankara (Ottoman throughout); that detached piece is removed. Ismail I took Tabriz in 1501 and defeated the last Aq Qoyunlu rulers by 1503, taking Baghdad in 1508; from 1504 their lands are shown as Safavid.",
+   "sources": [
+    {
+     "title": "Wikipedia: Aq Qoyunlu",
+     "url": "https://en.wikipedia.org/wiki/Aq_Qoyunlu"
+    },
+    {
+     "title": "Wikipedia: Safavid Iran",
+     "url": "https://en.wikipedia.org/wiki/Safavid_Iran"
+    }
+   ]
+  },
+  "Arab Socialist Ba'ath Party": {
+   "relabel": [
+    {
+     "from": 1967,
+     "to": 1972,
+     "name": "Ba'athist Syria",
+     "key": "Ba'athist Syria"
+    }
+   ],
+   "note": "This is Syria under Ba'ath rule (the Syrian Arab Republic), shown as a state rather than a party.",
+   "sources": [
+    {
+     "title": "Wikipedia: Ba'athist Syria",
+     "url": "https://en.wikipedia.org/wiki/Ba'athist_Syria"
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,1354 @@
+{
+ "reviewer": "v1",
+ "findings": [
+  {
+   "realm": "Gutian Dynasty",
+   "years": [
+    -2100,
+    -2001
+   ],
+   "severity": "error",
+   "issue": "The Third Dynasty of Ur's whole realm (Nippur, Uruk, Girsu, Kish, Susa, even Ur itself) was drawn as 'Gutian Dynasty' throughout the Ur III period. Gutian rule ended c. 2119–2112 BCE. Relabelled as 'Third Dynasty of Ur' (key Sumerian City-States, the Ur III journey's realm). Unowned realm, corrected with the coordinator's approval.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Third Dynasty of Ur",
+    "url": "https://en.wikipedia.org/wiki/Third_Dynasty_of_Ur"
+   }
+  },
+  {
+   "realm": "Akkadian Empire",
+   "years": [
+    -2153,
+    -2101
+   ],
+   "severity": "error",
+   "issue": "Drawn until 2101 BCE (Ur was Akkadian in 2120 BCE). The empire ended c. 2154 BCE. Clipped to [-2334, -2154].",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Akkadian Empire",
+    "url": "https://en.wikipedia.org/wiki/Akkadian_Empire"
+   }
+  },
+  {
+   "realm": "Babylonia",
+   "years": [
+    -1750,
+    -1595
+   ],
+   "severity": "error",
+   "issue": "Hammurabi's 1750–1701 shape included Assur, and the 1739–1595 shapes kept Ur, Uruk and Nippur, which Samsu-iluna lost by c. 1739 and 1720 BCE (Sealand). Cropped in three steps.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Samsu-iluna",
+    "url": "https://en.wikipedia.org/wiki/Samsu-iluna"
+   }
+  },
+  {
+   "realm": "Babylonia",
+   "years": [
+    -1400,
+    -1301
+   ],
+   "severity": "warning",
+   "issue": "A spike of the Kassite shape covered Assur, the Assyrian capital (independent under Ashur-uballit I c. 1363 BCE). Cropped north of 35.2°N.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Middle Assyrian Empire",
+    "url": "https://en.wikipedia.org/wiki/Middle_Assyrian_Empire"
+   }
+  },
+  {
+   "realm": "Babylonia",
+   "years": [
+    -630,
+    -616
+   ],
+   "severity": "warning",
+   "issue": "No Babylonian shape for 630–616, though Nabopolassar was king of Babylon from 626 BCE. Babylon is now blank 626–616 (removed from the Neo-Assyrian shape) instead of Assyrian. Cannot be drawn without new geometry. Map note added.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Nabopolassar",
+    "url": "https://en.wikipedia.org/wiki/Nabopolassar"
+   }
+  },
+  {
+   "realm": "Hittites",
+   "years": [
+    -1179,
+    -1151
+   ],
+   "severity": "error",
+   "issue": "Drawn 30 years after Hattusa was abandoned (c. 1190 BCE). Clipped at 1180.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Hattusa",
+    "url": "https://en.wikipedia.org/wiki/Hattusa"
+   }
+  },
+  {
+   "realm": "Hittites",
+   "years": [
+    -1344,
+    -1301
+   ],
+   "severity": "warning",
+   "issue": "Suppiluliuma I's conquest of Aleppo and Carchemish (mid-1300s) is not drawn: the map shows Mitanni there until 1300 (Mitanni is not my realm). Map note added.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Šuppiluliuma I",
+    "url": "https://en.wikipedia.org/wiki/%C5%A0uppiluliuma_I"
+   }
+  },
+  {
+   "realm": "Assyria",
+   "years": [
+    -1240,
+    -1001
+   ],
+   "severity": "warning",
+   "issue": "The Middle Assyrian shape ran west of the Euphrates and covered Carchemish (Hittite viceroyalty, later a Neo-Hittite kingdom). Cropped to east of 38.2°E.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Carchemish",
+    "url": "https://en.wikipedia.org/wiki/Carchemish"
+   }
+  },
+  {
+   "realm": "New Kingdom of Egypt",
+   "years": [
+    -1076,
+    -801
+   ],
+   "severity": "error",
+   "issue": "Drawn until 801 BCE (it ended 1077 BCE). Relabelled 'Twenty-first Dynasty of Egypt' (-1076..-944) and 'Twenty-second Dynasty of Egypt' (-943..-801). The MENA claims 'Memphis -1000' and 'Nineveh -605' still fail only because the checker counts a relabelled polygon's original name against 'not': the State keeps orig in names(). Either drop those 'not' entries or have check_borders ignore orig for 'not'.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Third Intermediate Period of Egypt",
+    "url": "https://en.wikipedia.org/wiki/Third_Intermediate_Period_of_Egypt"
+   }
+  },
+  {
+   "realm": "Hyksos",
+   "years": [
+    -1539,
+    -1401
+   ],
+   "severity": "warning",
+   "issue": "Canaan was drawn as 'Hyksos' until 1401 BCE. MENA's clip [-1650,-1540] already removes that, so Canaan is now blank 1539–1401. I added nothing: a relabel to New Kingdom for 1457–1401 would need their clip widened, and that would contradict their correction. Suggest MENA consider clip [-1650,-1401] plus a relabel {from -1457, to -1401, name 'New Kingdom of Egypt'}.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Battle of Megiddo (15th century BC)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Megiddo_(15th_century_BC)"
+   }
+  },
+  {
+   "realm": "Neo-Assyrian Empire",
+   "years": [
+    -800,
+    -730
+   ],
+   "severity": "error",
+   "issue": "Babylon and Damascus were drawn Assyrian before Tiglath-Pileser III took them (729 and 732 BCE). Cut boxes added.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Tiglath-Pileser III",
+    "url": "https://en.wikipedia.org/wiki/Tiglath-Pileser_III"
+   }
+  },
+  {
+   "realm": "Neo-Assyrian Empire",
+   "years": [
+    -800,
+    -612
+   ],
+   "severity": "error",
+   "issue": "Lake Van with Tushpa, Urartu's capital, was inside the Assyrian shape (MENA claim Tushpa -750). A cut box was added. Tushpa now has nothing drawn because Urartu's shape has a hole there. Urartu is not my realm.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Tushpa",
+    "url": "https://en.wikipedia.org/wiki/Tushpa"
+   }
+  },
+  {
+   "realm": "Neo-Assyrian Empire",
+   "years": [
+    -654,
+    -616
+   ],
+   "severity": "error",
+   "issue": "Egypt was drawn Assyrian until 616 BCE, through the base relabel of 'Assyrian Egypt' (whose shape duplicates the whole empire plus Egypt) and through the empire's own shape. Psamtik I controlled all Egypt by 654 BCE. Assyrian Egypt is now cropped to Egypt and relabelled as the Twenty-sixth Dynasty, and Egypt is cut from the Neo-Assyrian shape.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Psamtik I",
+    "url": "https://en.wikipedia.org/wiki/Psamtik_I"
+   }
+  },
+  {
+   "realm": "Neo-Assyrian Empire",
+   "years": [
+    -611,
+    -601
+   ],
+   "severity": "error",
+   "issue": "Drawn as a full empire until 601 BCE. Nineveh fell in 612 BCE and Harran in 609 BCE. Relabelled 'Babylonia' for 611–601. The Levant is cut until 605 (Egyptian-held until Carchemish), and Cilicia/Tabal north-west of Carchemish is cut for 611–601.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Fall of Nineveh",
+    "url": "https://en.wikipedia.org/wiki/Fall_of_Nineveh"
+   }
+  },
+  {
+   "realm": "Neo-Babylonian Empire",
+   "years": [
+    -538,
+    -531
+   ],
+   "severity": "error",
+   "issue": "Drawn until 531 BCE. Babylon fell in October 539 BCE. Relabelled as Achaemenid for 538–531.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Fall of Babylon",
+    "url": "https://en.wikipedia.org/wiki/Fall_of_Babylon"
+   }
+  },
+  {
+   "realm": "Achaemenid Empire",
+   "years": [
+    -330,
+    -327
+   ],
+   "severity": "error",
+   "issue": "Babylon, Susa, Persepolis and the east were still Persian on the map until 327, but Alexander took them in 331–330. Relabelled as the Macedonian Empire (with addTo, as for the Ptolemaic 331–324 relabel).",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Achaemenid Empire",
+    "url": "https://en.wikipedia.org/wiki/Achaemenid_Empire"
+   }
+  },
+  {
+   "realm": "Achaemenid Empire",
+   "years": [
+    -404,
+    -384
+   ],
+   "severity": "error",
+   "issue": "Egypt was drawn Persian 404–384, but it was independent from 404 BCE. Cut.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Twenty-eighth Dynasty of Egypt",
+    "url": "https://en.wikipedia.org/wiki/Twenty-eighth_Dynasty_of_Egypt"
+   }
+  },
+  {
+   "realm": "Achaemenid Empire",
+   "years": [
+    -478,
+    -451
+   ],
+   "severity": "warning",
+   "issue": "Thrace and Byzantium were drawn Persian after Plataea (479). Cut.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Achaemenid Empire",
+    "url": "https://en.wikipedia.org/wiki/Achaemenid_Empire"
+   }
+  },
+  {
+   "realm": "Twenty-sixth Dynasty of Egypt",
+   "years": [
+    -524,
+    -501
+   ],
+   "severity": "warning",
+   "issue": "MENA clipped it at 525, so Egypt is blank 524–501 though it was Persian (Cambyses, 525). Not fixable by me without contradicting MENA's clip. Suggest MENA relabel the 26th Dynasty for 524–501 as 'Achaemenid Empire' inside a clip widened to -501. Also: with Assyrian Egypt relabelled into it, its timeline peaks at 1.44M km² (630 BCE) because timelines ignore the crop to Egypt and count the whole duplicated empire. This is an area-check artefact, not a border error.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Cambyses II",
+    "url": "https://en.wikipedia.org/wiki/Cambyses_II"
+   }
+  },
+  {
+   "realm": "Thirtieth Dynasty of Egypt",
+   "years": [
+    -342,
+    -338
+   ],
+   "severity": "error",
+   "issue": "Egypt was drawn independent after Artaxerxes III's reconquest (343 BCE). Relabelled Achaemenid.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Thirty-first Dynasty of Egypt",
+    "url": "https://en.wikipedia.org/wiki/Thirty-first_Dynasty_of_Egypt"
+   }
+  },
+  {
+   "realm": "Seleucid Empire",
+   "years": [
+    -170,
+    -165
+   ],
+   "severity": "error",
+   "issue": "All of Egypt, including Alexandria, was drawn Seleucid. Antiochus IV never took Alexandria and withdrew in 168. Egypt is cut, so it is blank: the Ptolemaic shape for these years does not cover it.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Syrian Wars",
+    "url": "https://en.wikipedia.org/wiki/Syrian_Wars"
+   }
+  },
+  {
+   "realm": "Seleucid Empire",
+   "years": [
+    -147,
+    -131
+   ],
+   "severity": "error",
+   "issue": "Media (Ecbatana) was drawn Seleucid after Mithridates I took it (148/147 BCE). Cropped west of 45°E, so Ecbatana is blank, not Parthian, until 127.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Mithridates I of Parthia",
+    "url": "https://en.wikipedia.org/wiki/Mithridates_I_of_Parthia"
+   }
+  },
+  {
+   "realm": "Seleucid Empire",
+   "years": [
+    -83,
+    -78
+   ],
+   "severity": "error",
+   "issue": "Antioch was drawn Seleucid while Tigranes ruled Syria (from 83 BCE). Hidden.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Tigranes the Great",
+    "url": "https://en.wikipedia.org/wiki/Tigranes_the_Great"
+   }
+  },
+  {
+   "realm": "Seleucid Empire",
+   "years": [
+    -315,
+    -308
+   ],
+   "severity": "warning",
+   "issue": "Seleucus regained Babylon in 311, but the map shows the Macedonian Empire there until 308 (flicker lead). Note only.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Babylonian War",
+    "url": "https://en.wikipedia.org/wiki/Babylonian_War"
+   }
+  },
+  {
+   "realm": "Ptolemaic Kingdom",
+   "years": [
+    -307,
+    -265
+   ],
+   "severity": "error",
+   "issue": "A strip along 37°N to the Euphrates (Samosata, Commagene) was drawn Ptolemaic. Cropped east of 36.6°E. Cilicia and Tarsus remain Ptolemaic in 307–270, which is uncertain.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Ptolemaic Kingdom",
+    "url": "https://en.wikipedia.org/wiki/Ptolemaic_Kingdom"
+   }
+  },
+  {
+   "realm": "Ptolemaic Kingdom",
+   "years": [
+    -31,
+    -31
+   ],
+   "severity": "error",
+   "issue": "Antony's eastern provinces (Anatolia, Greece, the Aegean) were drawn Ptolemaic, giving the area check's 1.27M km² peak at -31. Cropped to Cleopatra's kingdom. The area lead remains because timelines ignore crops.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Donations of Alexandria",
+    "url": "https://en.wikipedia.org/wiki/Donations_of_Alexandria"
+   }
+  },
+  {
+   "realm": "Ptolemaic Kingdom",
+   "years": [
+    -29,
+    -28
+   ],
+   "severity": "error",
+   "issue": "Egypt was drawn Ptolemaic after the Roman annexation (30 BCE). Relabelled 'Roman Empire'. A clip was not possible because it would kill the existing 331–324 relabel.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Ptolemaic Kingdom",
+    "url": "https://en.wikipedia.org/wiki/Ptolemaic_Kingdom"
+   }
+  },
+  {
+   "realm": "Parthian Empire",
+   "years": [
+    225,
+    237
+   ],
+   "severity": "error",
+   "issue": "Reported by v3: Mesopotamia was blank 225–237. Clip widened to 237, and 225–237 relabelled 'Sasanian Empire' (addTo Sasanian). The existing note's words 'later polygons are hidden' are now stale. The coordinator may wish to drop that sentence from corrections.json.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Ardashir I",
+    "url": "https://en.wikipedia.org/wiki/Ardashir_I"
+   }
+  },
+  {
+   "realm": "Roman Kingdom",
+   "years": [
+    -509,
+    -481
+   ],
+   "severity": "error",
+   "issue": "Rome itself was drawn as the Kingdom until 481 BCE, because the Republic's 500–481 shape does not cover the city. Relabelled 'Roman Republic' from 509.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Overthrow of the Roman monarchy",
+    "url": "https://en.wikipedia.org/wiki/Overthrow_of_the_Roman_monarchy"
+   }
+  },
+  {
+   "realm": "Roman Empire",
+   "years": [
+    118,
+    286
+   ],
+   "severity": "error",
+   "issue": "Seleucia/Ctesiphon (Babylonia) was drawn Roman in 117–126, 165–183, 197–206 and 283–286. These were Trajan's short-lived province and later sacks. Cropped east of 40.4°E (118–126) and 42.2°E. Ctesiphon is now blank in those years because the Parthian shape does not cover it.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Mesopotamia (Roman province)",
+    "url": "https://en.wikipedia.org/wiki/Mesopotamia_(Roman_province)"
+   }
+  },
+  {
+   "realm": "Roman Empire",
+   "years": [
+    198,
+    362
+   ],
+   "severity": "warning",
+   "issue": "Nisibis, capital of Severus's province of Mesopotamia from 198, is drawn as 'Kingdom of Adiabene' in 198–239. It cannot be fixed by cropping. Note added.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Mesopotamia (Roman province)",
+    "url": "https://en.wikipedia.org/wiki/Mesopotamia_(Roman_province)"
+   }
+  },
+  {
+   "realm": "Roman Empire",
+   "years": [
+    364,
+    370
+   ],
+   "severity": "error",
+   "issue": "Nisibis was drawn Roman after Jovian ceded it in 363. Cropped east of 41°E.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Jovian (emperor)",
+    "url": "https://en.wikipedia.org/wiki/Jovian_(emperor)"
+   }
+  },
+  {
+   "realm": "Roman Empire",
+   "years": [
+    270,
+    271
+   ],
+   "severity": "error",
+   "issue": "Syria and Egypt (Palmyra itself) were drawn Roman while Zenobia held them, and the Palmyrene shape stops at 269. Cut, so they are blank. MENA's claim Palmyra 271 = Palmyrene still fails because nothing is drawn there.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Palmyrene Empire",
+    "url": "https://en.wikipedia.org/wiki/Palmyrene_Empire"
+   }
+  },
+  {
+   "realm": "Gallic Empire",
+   "years": [
+    275,
+    282
+   ],
+   "severity": "error",
+   "issue": "Gaul and Britain were drawn as the Gallic Empire until 282. Aurelian ended it in 274. Relabelled 'Roman Empire'. Britain 286–296 (Carausius) is shown Roman, a minor gap that is not corrected.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Gallic Empire",
+    "url": "https://en.wikipedia.org/wiki/Gallic_Empire"
+   }
+  },
+  {
+   "realm": "Roman Republic",
+   "years": [
+    -509,
+    -32
+   ],
+   "severity": "warning",
+   "issue": "Wrong Wikidata item: the index links Q175881 (the 1798–99 Roman Republic), which gives the 2300-year date leads. The correct item is Q17167. This needs an entry in content/borders/wd-overrides.json, which I may not edit.",
+   "fixed": false,
+   "source": {
+    "title": "Wikidata: Roman Republic (Q17167)",
+    "url": "https://www.wikidata.org/wiki/Q17167"
+   }
+  },
+  {
+   "realm": "Roman Empire",
+   "years": [
+    -31,
+    394
+   ],
+   "severity": "warning",
+   "issue": "Wrong Wikidata item: the index links Q12544 (Byzantine Empire). The correct item is Q2277. It needs a wd-overrides.json entry.",
+   "fixed": false,
+   "source": {
+    "title": "Wikidata: Roman Empire (Q2277)",
+    "url": "https://www.wikidata.org/wiki/Q2277"
+   }
+  },
+  {
+   "realm": "Macedonian Empire",
+   "years": [
+    -675,
+    -292
+   ],
+   "severity": "warning",
+   "issue": "The Wikidata lead (start -808, end -167) dismissed: Q83958 is the whole Argead/Antigonid kingdom, and the map continues it after 292 as 'Antigonid Dynasty'/'Antigonid Macedonia'.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Macedonia (ancient kingdom)",
+    "url": "https://en.wikipedia.org/wiki/Macedonia_(ancient_kingdom)"
+   }
+  },
+  {
+   "realm": "Assyria",
+   "years": [
+    -1800,
+    -901
+   ],
+   "severity": "warning",
+   "issue": "The Wikidata lead (ends -901 vs -609) dismissed: the map continues Assyria as 'Neo-Assyrian Empire' from 900. The journey chain joins them.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Neo-Assyrian Empire",
+    "url": "https://en.wikipedia.org/wiki/Neo-Assyrian_Empire"
+   }
+  },
+  {
+   "realm": "Western Roman Empire",
+   "years": [
+    395,
+    475
+   ],
+   "severity": "warning",
+   "issue": "The Wikidata lead (start 285) dismissed: Wikidata dates it from Diocletian's tetrarchy, while 395 (division at Theodosius's death) is the usual start.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Fall of the Western Roman Empire",
+    "url": "https://en.wikipedia.org/wiki/Fall_of_the_Western_Roman_Empire"
+   }
+  },
+  {
+   "realm": "Lydia",
+   "years": [
+    -546,
+    -541
+   ],
+   "severity": "warning",
+   "issue": "Sardis is shown Lydian until 541, though Lydia became a satrapy in 546 (or 547). That is within the map's 10-year bins. Not my realm; no change.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Lydia",
+    "url": "https://en.wikipedia.org/wiki/Lydia"
+   }
+  },
+  {
+   "realm": "Kingdom of Israel",
+   "years": [
+    -720,
+    -701
+   ],
+   "severity": "warning",
+   "issue": "MENA's relabel of 720–701 as Neo-Assyrian composes with my Neo-Assyrian cuts; Samaria -715 passes in the combined test.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Kingdom of Israel (Samaria)",
+    "url": "https://en.wikipedia.org/wiki/Kingdom_of_Israel_(Samaria)"
+   }
+  }
+ ],
+ "corrections": {
+  "Akkadian Empire": {
+   "clip": [
+    -2334,
+    -2154
+   ],
+   "note": "The Akkadian Empire lasted from about 2334 to 2154 BCE; the map no longer draws it into the Gutian period (2153–2101 BCE). Sargon's first conquests (c. 2334–2300 BCE) are shown only from 2300 BCE, and Akkadian rule in Syria and Elam was patchy, resting on garrisons such as Susa and Tell Brak.",
+   "sources": [
+    {
+     "title": "Wikipedia: Akkadian Empire",
+     "url": "https://en.wikipedia.org/wiki/Akkadian_Empire"
+    },
+    {
+     "title": "Wikipedia: Sargon of Akkad",
+     "url": "https://en.wikipedia.org/wiki/Sargon_of_Akkad"
+    }
+   ]
+  },
+  "Babylonia": {
+   "crop": [
+    {
+     "from": -1750,
+     "to": -1740,
+     "box": [
+      38.0,
+      28.0,
+      50.0,
+      35.0
+     ]
+    },
+    {
+     "from": -1739,
+     "to": -1721,
+     "box": [
+      38.0,
+      31.6,
+      50.0,
+      35.0
+     ]
+    },
+    {
+     "from": -1720,
+     "to": -1595,
+     "box": [
+      38.0,
+      32.3,
+      50.0,
+      35.0
+     ]
+    },
+    {
+     "from": -1400,
+     "to": -1301,
+     "box": [
+      38.0,
+      28.0,
+      52.0,
+      35.2
+     ]
+    }
+   ],
+   "note": "Hammurabi's kingdom at his death (1750 BCE) reached from Mari to the Gulf but not Assur. His son Samsu-iluna lost Ur and Uruk in the 1740s and Nippur by about 1720 BCE to the Sealand kings, so from then until 1595 BCE only northern Babylonia is drawn. In the 1300s Assur, independent from about 1363 BCE, is left out. Babylon was ruled from Assyria for long stretches. It is missing for 630–616 BCE, though Nabopolassar became king of Babylon in 626 BCE. After the Battle of Carchemish in 605 BCE it took the Assyrian west, and the map shows these western conquests only from 600 BCE.",
+   "sources": [
+    {
+     "title": "Wikipedia: Hammurabi",
+     "url": "https://en.wikipedia.org/wiki/Hammurabi"
+    },
+    {
+     "title": "Wikimedia Commons: Hammurabi's Babylonia 1.svg (Babylonia in 1792 and 1750 BC)",
+     "url": "https://commons.wikimedia.org/wiki/File:Hammurabi%27s_Babylonia_1.svg"
+    },
+    {
+     "title": "Wikipedia: Samsu-iluna",
+     "url": "https://en.wikipedia.org/wiki/Samsu-iluna"
+    },
+    {
+     "title": "Wikipedia: First Sealand dynasty",
+     "url": "https://en.wikipedia.org/wiki/First_Sealand_dynasty"
+    },
+    {
+     "title": "Wikipedia: Middle Assyrian Empire",
+     "url": "https://en.wikipedia.org/wiki/Middle_Assyrian_Empire"
+    },
+    {
+     "title": "Wikipedia: Nabopolassar",
+     "url": "https://en.wikipedia.org/wiki/Nabopolassar"
+    }
+   ]
+  },
+  "Hittites": {
+   "clip": [
+    -1650,
+    -1180
+   ],
+   "note": "The Hittite capital Hattusa was abandoned and destroyed around 1190 BCE, and the empire is not drawn after 1180 BCE. Suppiluliuma I took northern Syria (Aleppo and then Carchemish) in the mid-1300s BCE, but the map shows Syria as Hittite only from 1300 BCE.",
+   "sources": [
+    {
+     "title": "Wikipedia: Hattusa",
+     "url": "https://en.wikipedia.org/wiki/Hattusa"
+    },
+    {
+     "title": "Wikipedia: Hittites",
+     "url": "https://en.wikipedia.org/wiki/Hittites"
+    },
+    {
+     "title": "Wikipedia: Šuppiluliuma I",
+     "url": "https://en.wikipedia.org/wiki/%C5%A0uppiluliuma_I"
+    }
+   ]
+  },
+  "New Kingdom of Egypt": {
+   "relabel": [
+    {
+     "from": -1076,
+     "to": -944,
+     "name": "Twenty-first Dynasty of Egypt",
+     "key": "Twenty-first Dynasty of Egypt"
+    },
+    {
+     "from": -943,
+     "to": -801,
+     "name": "Twenty-second Dynasty of Egypt",
+     "key": "Twenty-second Dynasty of Egypt"
+    }
+   ],
+   "note": "The New Kingdom ended with Ramesses XI's death in 1077 BCE. Later polygons are shown as the Twenty-first Dynasty (to 944 BCE) and the Twenty-second Dynasty (from 943 BCE). Thutmose III's conquest of Canaan (Megiddo, 1457 BCE) appears on the map only from 1400 BCE.",
+   "sources": [
+    {
+     "title": "Wikipedia: Third Intermediate Period of Egypt",
+     "url": "https://en.wikipedia.org/wiki/Third_Intermediate_Period_of_Egypt"
+    },
+    {
+     "title": "Wikipedia: New Kingdom of Egypt",
+     "url": "https://en.wikipedia.org/wiki/New_Kingdom_of_Egypt"
+    },
+    {
+     "title": "Wikipedia: Battle of Megiddo (15th century BC)",
+     "url": "https://en.wikipedia.org/wiki/Battle_of_Megiddo_(15th_century_BC)"
+    },
+    {
+     "title": "Wikimedia Commons: Egypt 1450 BC.svg",
+     "url": "https://commons.wikimedia.org/wiki/File:Egypt_1450_BC.svg"
+    }
+   ]
+  },
+  "Assyria": {
+   "crop": [
+    {
+     "from": -1240,
+     "to": -1001,
+     "box": [
+      38.2,
+      28.0,
+      52.0,
+      42.0
+     ]
+    }
+   ],
+   "note": "Middle Assyrian kings fought up to the Euphrates and took tribute beyond it. Carchemish and the land west of the river stayed Hittite, and after about 1180 BCE they formed a Neo-Hittite kingdom, so the map no longer draws Assyria west of the Euphrates.",
+   "sources": [
+    {
+     "title": "Wikipedia: Carchemish",
+     "url": "https://en.wikipedia.org/wiki/Carchemish"
+    },
+    {
+     "title": "Wikipedia: Middle Assyrian Empire",
+     "url": "https://en.wikipedia.org/wiki/Middle_Assyrian_Empire"
+    }
+   ]
+  },
+  "Neo-Assyrian Empire": {
+   "clip": [
+    -911,
+    -601
+   ],
+   "cut": [
+    {
+     "from": -800,
+     "to": -730,
+     "box": [
+      43.6,
+      29.5,
+      48.5,
+      33.4
+     ]
+    },
+    {
+     "from": -800,
+     "to": -733,
+     "box": [
+      35.8,
+      33.0,
+      37.0,
+      34.0
+     ]
+    },
+    {
+     "from": -626,
+     "to": -616,
+     "box": [
+      43.6,
+      29.5,
+      48.5,
+      33.4
+     ]
+    },
+    {
+     "from": -800,
+     "to": -612,
+     "box": [
+      42.0,
+      38.15,
+      44.6,
+      39.6
+     ]
+    },
+    {
+     "from": -611,
+     "to": -605,
+     "box": [
+      32.3,
+      27.0,
+      38.7,
+      37.2
+     ]
+    },
+    {
+     "from": -654,
+     "to": -616,
+     "box": [
+      24.0,
+      21.0,
+      34.2,
+      31.8
+     ]
+    },
+    {
+     "from": -611,
+     "to": -601,
+     "box": [
+      28.0,
+      37.2,
+      38.7,
+      40.5
+     ]
+    },
+    {
+     "from": -654,
+     "to": -616,
+     "box": [
+      34.2,
+      21.0,
+      36.0,
+      29.5
+     ]
+    }
+   ],
+   "relabel": [
+    {
+     "from": -611,
+     "to": -601,
+     "name": "Babylonia",
+     "key": "Babylonia"
+    }
+   ],
+   "note": "Babylon kept its own kings until Tiglath-Pileser III took it in 729 BCE, and Damascus fell in 732 BCE, so neither is drawn as Assyrian before then. Lake Van, the heart of Urartu with its capital Tushpa, was never Assyrian. Egypt, conquered in 671 BCE, was independent under Psamtik I by 654 BCE. Babylon rose under Nabopolassar in 626 BCE. Nineveh fell in 612 BCE and Harran in 610–609 BCE, and the former Assyrian heartland is shown as Babylonian from 611 BCE. Egypt held the Levant until the Battle of Carchemish in 605 BCE.",
+   "sources": [
+    {
+     "title": "Wikipedia: Tiglath-Pileser III",
+     "url": "https://en.wikipedia.org/wiki/Tiglath-Pileser_III"
+    },
+    {
+     "title": "Wikipedia: Neo-Assyrian Empire",
+     "url": "https://en.wikipedia.org/wiki/Neo-Assyrian_Empire"
+    },
+    {
+     "title": "Wikipedia: Tushpa",
+     "url": "https://en.wikipedia.org/wiki/Tushpa"
+    },
+    {
+     "title": "Wikipedia: Psamtik I",
+     "url": "https://en.wikipedia.org/wiki/Psamtik_I"
+    },
+    {
+     "title": "Wikipedia: Nabopolassar",
+     "url": "https://en.wikipedia.org/wiki/Nabopolassar"
+    },
+    {
+     "title": "Wikipedia: Fall of Nineveh",
+     "url": "https://en.wikipedia.org/wiki/Fall_of_Nineveh"
+    },
+    {
+     "title": "Wikipedia: Fall of Harran",
+     "url": "https://en.wikipedia.org/wiki/Fall_of_Harran"
+    },
+    {
+     "title": "Wikipedia: Neo-Babylonian Empire",
+     "url": "https://en.wikipedia.org/wiki/Neo-Babylonian_Empire"
+    }
+   ]
+  },
+  "Neo-Babylonian Empire": {
+   "clip": [
+    -626,
+    -531
+   ],
+   "relabel": [
+    {
+     "from": -538,
+     "to": -531,
+     "name": "Achaemenid Empire",
+     "key": "Achaemenid Empire",
+     "addTo": [
+      "Achaemenid Empire"
+     ]
+    }
+   ],
+   "note": "Cyrus took Babylon in October 539 BCE. From 538 BCE the map shows the empire's lands as Achaemenid Persian. The map leaves out Nabonidus's oasis holdings in Arabia (Tayma).",
+   "sources": [
+    {
+     "title": "Wikipedia: Fall of Babylon",
+     "url": "https://en.wikipedia.org/wiki/Fall_of_Babylon"
+    }
+   ]
+  },
+  "Achaemenid Empire": {
+   "relabel": [
+    {
+     "from": -330,
+     "to": -327,
+     "name": "Macedonian Empire",
+     "key": "(Macedonian Empire)",
+     "addTo": [
+      "Macedonian Empire",
+      "(Macedonian Empire)"
+     ]
+    }
+   ],
+   "cut": [
+    {
+     "from": -404,
+     "to": -384,
+     "box": [
+      15.0,
+      21.0,
+      34.2,
+      31.8
+     ]
+    },
+    {
+     "from": -478,
+     "to": -451,
+     "box": [
+      20.0,
+      40.3,
+      29.2,
+      44.0
+     ]
+    },
+    {
+     "from": -404,
+     "to": -384,
+     "box": [
+      34.2,
+      21.0,
+      36.0,
+      29.5
+     ]
+    }
+   ],
+   "note": "Persia lost Thrace and its other European lands after Plataea in 479 BCE, and Egypt broke away in 404 BCE. Both are left out of the empire in those years. Egypt was retaken in 343 BCE. Alexander took Babylon, Susa and Persepolis in 331–330 BCE, and Darius III died in 330 BCE, so from 330 BCE the lands still shown as Persian are drawn as Alexander's empire. The map dates Cyrus's eastern conquests (c. 545–539 BCE) to 550 BCE.",
+   "sources": [
+    {
+     "title": "Wikipedia: Achaemenid Empire",
+     "url": "https://en.wikipedia.org/wiki/Achaemenid_Empire"
+    },
+    {
+     "title": "Wikipedia: Twenty-eighth Dynasty of Egypt",
+     "url": "https://en.wikipedia.org/wiki/Twenty-eighth_Dynasty_of_Egypt"
+    },
+    {
+     "title": "Wikipedia: Thirty-first Dynasty of Egypt",
+     "url": "https://en.wikipedia.org/wiki/Thirty-first_Dynasty_of_Egypt"
+    },
+    {
+     "title": "Wikipedia: Battle of Gaugamela",
+     "url": "https://en.wikipedia.org/wiki/Battle_of_Gaugamela"
+    },
+    {
+     "title": "Wikipedia: Darius III",
+     "url": "https://en.wikipedia.org/wiki/Darius_III"
+    }
+   ]
+  },
+  "Seleucid Empire": {
+   "crop": [
+    {
+     "from": -147,
+     "to": -131,
+     "box": [
+      25.0,
+      25.0,
+      45.0,
+      42.0
+     ]
+    }
+   ],
+   "hide": [
+    [
+     -83,
+     -78
+    ]
+   ],
+   "cut": [
+    {
+     "from": -170,
+     "to": -165,
+     "box": [
+      19.0,
+      21.0,
+      34.2,
+      31.8
+     ]
+    },
+    {
+     "from": -170,
+     "to": -165,
+     "box": [
+      34.2,
+      21.0,
+      36.0,
+      29.5
+     ]
+    }
+   ],
+   "note": "The Seleucid era begins with Seleucus's return to Babylon in 311 BCE, but the map draws the kingdom only from 307 BCE. Antiochus IV invaded Egypt in 170–168 BCE but never took Alexandria, and he withdrew in 168 BCE, so Egypt is not shown as Seleucid. Media fell to Mithridates I of Parthia in 148/147 BCE and Babylonia in 141 BCE. Antiochus VII's brief recovery (130–129 BCE) is not drawn. Tigranes of Armenia ruled Syria from 83 BCE, and Lucullus restored a rump kingdom in 69 BCE.",
+   "sources": [
+    {
+     "title": "Wikipedia: Seleucid Empire",
+     "url": "https://en.wikipedia.org/wiki/Seleucid_Empire"
+    },
+    {
+     "title": "Wikipedia: Syrian Wars",
+     "url": "https://en.wikipedia.org/wiki/Syrian_Wars"
+    },
+    {
+     "title": "Wikipedia: Mithridates I of Parthia",
+     "url": "https://en.wikipedia.org/wiki/Mithridates_I_of_Parthia"
+    },
+    {
+     "title": "Wikipedia: Tigranes the Great",
+     "url": "https://en.wikipedia.org/wiki/Tigranes_the_Great"
+    }
+   ]
+  },
+  "Ptolemaic Kingdom": {
+   "crop": [
+    {
+     "from": -307,
+     "to": -265,
+     "box": [
+      15.0,
+      15.0,
+      36.6,
+      42.0
+     ]
+    },
+    {
+     "from": -31,
+     "to": -31,
+     "box": [
+      18.0,
+      22.0,
+      35.0,
+      36.0
+     ]
+    }
+   ],
+   "relabel": [
+    {
+     "from": -29,
+     "to": -28,
+     "name": "Roman Empire",
+     "key": "Roman Empire",
+     "addTo": [
+      "Roman Empire"
+     ]
+    }
+   ],
+   "note": "Ptolemy lost Cyprus to Demetrius in 306 BCE and retook it in 295 BCE. His holdings in Cilicia and Lycia were coastal: inland Commagene and upper Mesopotamia were never Ptolemaic and are left out for 307–265 BCE. In 31 BCE the map drew all of Mark Antony's eastern provinces as Ptolemaic. Only Cleopatra's kingdom (Egypt, Cyprus, Cyrenaica and parts of Crete and the Levant coast) is kept for that year. Egypt became a Roman province in 30 BCE and is shown as Roman from 29 BCE.",
+   "sources": [
+    {
+     "title": "Wikipedia: Ptolemaic Kingdom",
+     "url": "https://en.wikipedia.org/wiki/Ptolemaic_Kingdom"
+    },
+    {
+     "title": "Wikipedia: Battle of Salamis (306 BC)",
+     "url": "https://en.wikipedia.org/wiki/Battle_of_Salamis_(306_BC)"
+    },
+    {
+     "title": "Wikipedia: Donations of Alexandria",
+     "url": "https://en.wikipedia.org/wiki/Donations_of_Alexandria"
+    }
+   ]
+  },
+  "Parthian Empire": {
+   "clip": [
+    -247,
+    237
+   ],
+   "relabel": [
+    {
+     "from": 225,
+     "to": 237,
+     "name": "Sasanian Empire",
+     "key": "Sasanian Empire",
+     "addTo": [
+      "Sasanian Empire"
+     ]
+    }
+   ],
+   "note": "Ardashir I killed the last Parthian king, Artabanus IV, in 224 CE and was crowned at Ctesiphon about 226. From 225 the former Parthian lands are shown as Sasanian.",
+   "sources": [
+    {
+     "title": "Wikipedia: Ardashir I",
+     "url": "https://en.wikipedia.org/wiki/Ardashir_I"
+    },
+    {
+     "title": "Wikipedia: Parthian Empire",
+     "url": "https://en.wikipedia.org/wiki/Parthian_Empire"
+    }
+   ]
+  },
+  "Roman Empire": {
+   "crop": [
+    {
+     "from": 118,
+     "to": 126,
+     "box": [
+      -15.0,
+      20.0,
+      40.4,
+      60.0
+     ]
+    },
+    {
+     "from": 165,
+     "to": 183,
+     "box": [
+      -15.0,
+      20.0,
+      42.2,
+      60.0
+     ]
+    },
+    {
+     "from": 197,
+     "to": 206,
+     "box": [
+      -15.0,
+      20.0,
+      42.2,
+      60.0
+     ]
+    },
+    {
+     "from": 284,
+     "to": 286,
+     "box": [
+      -15.0,
+      20.0,
+      42.2,
+      60.0
+     ]
+    },
+    {
+     "from": 364,
+     "to": 370,
+     "box": [
+      -15.0,
+      20.0,
+      41.0,
+      60.0
+     ]
+    }
+   ],
+   "cut": [
+    {
+     "from": 270,
+     "to": 271,
+     "box": [
+      25.0,
+      21.0,
+      40.5,
+      37.5
+     ]
+    }
+   ],
+   "note": "Hadrian gave up Trajan's conquests beyond the Euphrates in 117. Later sacks of Ctesiphon (165, 198, 283) were raids and not conquests. The map no longer draws Babylonia as Roman in those years, and after Jovian's treaty of 363 it leaves out Nisibis and the lands east of the Tigris. Zenobia's Palmyrene empire held Syria and Egypt in 270–271, so they are left blank, and the Gallic Empire, retaken by Aurelian in 274, is shown as Roman from 275. In 198 Severus made Nisibis the capital of a Roman province of Mesopotamia, but the map still draws it outside the empire.",
+   "sources": [
+    {
+     "title": "Wikipedia: Mesopotamia (Roman province)",
+     "url": "https://en.wikipedia.org/wiki/Mesopotamia_(Roman_province)"
+    },
+    {
+     "title": "Wikipedia: Ardashir I",
+     "url": "https://en.wikipedia.org/wiki/Ardashir_I"
+    },
+    {
+     "title": "Wikipedia: Carus",
+     "url": "https://en.wikipedia.org/wiki/Carus"
+    },
+    {
+     "title": "Wikipedia: Jovian (emperor)",
+     "url": "https://en.wikipedia.org/wiki/Jovian_(emperor)"
+    },
+    {
+     "title": "Wikipedia: Palmyrene Empire",
+     "url": "https://en.wikipedia.org/wiki/Palmyrene_Empire"
+    },
+    {
+     "title": "Wikipedia: Gallic Empire",
+     "url": "https://en.wikipedia.org/wiki/Gallic_Empire"
+    }
+   ]
+  },
+  "Gutian Dynasty": {
+   "relabel": [
+    {
+     "from": -2100,
+     "to": -2001,
+     "name": "Third Dynasty of Ur",
+     "key": "Sumerian City-States"
+    }
+   ],
+   "note": "The map's only polygon for this name (2100–2001 BCE) covers Sumer, Akkad and Susiana in the years of the Third Dynasty of Ur, which had ended Gutian rule by about 2112 BCE; it is shown as the Third Dynasty of Ur.",
+   "sources": [
+    {
+     "title": "Wikipedia: Gutian rule in Mesopotamia",
+     "url": "https://en.wikipedia.org/wiki/Gutian_rule_in_Mesopotamia"
+    },
+    {
+     "title": "Wikipedia: Third Dynasty of Ur",
+     "url": "https://en.wikipedia.org/wiki/Third_Dynasty_of_Ur"
+    },
+    {
+     "title": "Wikimedia Commons: Map of Ur III.svg",
+     "url": "https://commons.wikimedia.org/wiki/File:Map_of_Ur_III.svg"
+    }
+   ]
+  },
+  "Roman Kingdom": {
+   "relabel": [
+    {
+     "from": -509,
+     "to": -481,
+     "name": "Roman Republic",
+     "key": "Roman Republic"
+    }
+   ],
+   "note": "Rome's last king was expelled in 509 BCE, the traditional start of the Republic, so the city is shown as the Roman Republic from 509 BCE.",
+   "sources": [
+    {
+     "title": "Wikipedia: Overthrow of the Roman monarchy",
+     "url": "https://en.wikipedia.org/wiki/Overthrow_of_the_Roman_monarchy"
+    },
+    {
+     "title": "Wikipedia: Roman Republic",
+     "url": "https://en.wikipedia.org/wiki/Roman_Republic"
+    }
+   ]
+  },
+  "Gallic Empire": {
+   "relabel": [
+    {
+     "from": 275,
+     "to": 282,
+     "name": "Roman Empire",
+     "key": "Roman Empire"
+    }
+   ],
+   "note": "Aurelian retook the Gallic Empire after the Battle of Châlons in 274, so its lands are shown as Roman from 275.",
+   "sources": [
+    {
+     "title": "Wikipedia: Gallic Empire",
+     "url": "https://en.wikipedia.org/wiki/Gallic_Empire"
+    }
+   ]
+  },
+  "Thirtieth Dynasty of Egypt": {
+   "relabel": [
+    {
+     "from": -342,
+     "to": -338,
+     "name": "Achaemenid Empire",
+     "key": "Achaemenid Empire"
+    }
+   ],
+   "note": "Artaxerxes III reconquered Egypt in 343 BCE (the Thirty-first Dynasty, a Persian satrapy), so Egypt in 342–338 BCE is shown as Achaemenid.",
+   "sources": [
+    {
+     "title": "Wikipedia: Thirty-first Dynasty of Egypt",
+     "url": "https://en.wikipedia.org/wiki/Thirty-first_Dynasty_of_Egypt"
+    }
+   ]
+  },
+  "Assyrian Egypt": {
+   "relabel": [
+    {
+     "from": -650,
+     "to": -616,
+     "name": "Twenty-sixth Dynasty of Egypt",
+     "key": "Twenty-sixth Dynasty of Egypt"
+    }
+   ],
+   "crop": [
+    {
+     "from": -650,
+     "to": -616,
+     "box": [
+      24.0,
+      21.0,
+      34.2,
+      31.8
+     ]
+    }
+   ],
+   "note": "This shape repeats the whole Assyrian empire together with Egypt. Psamtik I was in control of all Egypt by 654 BCE, so only its Egyptian part is kept, shown as the Twenty-sixth (Saite) Dynasty for 650–616 BCE; Assyria itself is drawn by the Neo-Assyrian Empire's own shape.",
+   "sources": [
+    {
+     "title": "Wikipedia: Psamtik I",
+     "url": "https://en.wikipedia.org/wiki/Psamtik_I"
+    }
+   ]
+  },
+  "Sumerian City-States": {
+   "note": "Sumerian City-States is a collective name for many rival cities. Around 2500–2300 BCE the shape also takes in Mari on the middle Euphrates, which had its own kings. From 2100 BCE this name stands for the Third Dynasty of Ur, whose realm (Sumer, Akkad and Susa) is shown under that name. It collapsed by about 2004 BCE.",
+   "sources": [
+    {
+     "title": "Wikipedia: Sumer",
+     "url": "https://en.wikipedia.org/wiki/Sumer"
+    },
+    {
+     "title": "Wikipedia: Third Dynasty of Ur",
+     "url": "https://en.wikipedia.org/wiki/Third_Dynasty_of_Ur"
+    },
+    {
+     "title": "Wikimedia Commons: Map of Ur III.svg",
+     "url": "https://commons.wikimedia.org/wiki/File:Map_of_Ur_III.svg"
+    }
+   ]
+  },
+  "Macedonian Empire": {
+   "note": "After Alexander died in 323 BCE, his generals governed the provinces as satraps in the names of the kings Philip III and Alexander IV. The map shows this as one Macedonian Empire until about 308 BCE. In practice Ptolemy (Egypt), Antigonus (Asia) and, from 311 BCE, Seleucus (Babylon) acted independently.",
+   "sources": [
+    {
+     "title": "Wikipedia: Partition of Babylon",
+     "url": "https://en.wikipedia.org/wiki/Partition_of_Babylon"
+    },
+    {
+     "title": "Wikipedia: Babylonian War",
+     "url": "https://en.wikipedia.org/wiki/Babylonian_War"
+    }
+   ]
+  },
+  "Roman Republic": {
+   "note": "Before 481 BCE the Republic's own shape on the map does not cover the city of Rome, so the old kingdom's shape stands in for it from 509 BCE. Early Roman territory (a few hundred to a few thousand km²) is uncertain.",
+   "sources": [
+    {
+     "title": "Wikipedia: Overthrow of the Roman monarchy",
+     "url": "https://en.wikipedia.org/wiki/Overthrow_of_the_Roman_monarchy"
+    }
+   ]
+  }
+ }
+}

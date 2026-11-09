@@ -1,0 +1,802 @@
+{
+ "reviewer": "africa",
+ "findings": [
+  {
+   "realm": "Kingdom of Lunda",
+   "years": [
+    1709,
+    1889
+   ],
+   "severity": "error",
+   "issue": "The polygon labelled Lunda is the Kingdom of Kongo (same extent as Kongo 1440–1669, contains Mbanza Kongo; Lunda's capital at about 22.7°E is never inside). Relabelled Kingdom of Kongo; lower Congo cut 1885–1889 (Congo Free State).",
+   "fixed": true,
+   "source": [
+    {
+     "title": "Kingdom of Kongo (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Kingdom_of_Kongo"
+    },
+    {
+     "title": "Kingdom of Lunda (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Kingdom_of_Lunda"
+    }
+   ]
+  },
+  {
+   "realm": "Mali Federation",
+   "years": [
+    1961,
+    2024
+   ],
+   "severity": "error",
+   "issue": "Federation dissolved August 1960, but the label ran to 2024. Relabelled Republic of Mali.",
+   "fixed": true,
+   "source": {
+    "title": "Mali Federation (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Mali_Federation"
+   }
+  },
+  {
+   "realm": "Sokoto Caliphate",
+   "years": [
+    1810,
+    1904
+   ],
+   "severity": "error",
+   "issue": "Sokoto covered Bornu's heartland west of Lake Chad, including Kukawa, Bornu's capital (founded 1814). This inflates Sokoto's peak area (0.80M vs a published 0.4M km²). Cut a box out of Sokoto; the area is now blank, because Bornu's own polygon does not reach it.",
+   "fixed": true,
+   "source": [
+    {
+     "title": "Kukawa (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Kukawa"
+    },
+    {
+     "title": "Bornu Empire (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Bornu_Empire"
+    }
+   ]
+  },
+  {
+   "realm": "Belgian Congo",
+   "years": [
+    1890,
+    1908
+   ],
+   "severity": "error",
+   "issue": "Drawn as the Belgian Congo during the Congo Free State (Leopold II's personal state, 1885–1908). Relabelled.",
+   "fixed": true,
+   "source": {
+    "title": "Congo Free State (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Congo_Free_State"
+   }
+  },
+  {
+   "realm": "Belgian Congo",
+   "years": [
+    1960,
+    1962
+   ],
+   "severity": "error",
+   "issue": "After the Congo's independence on 30 June 1960, the remaining Belgian Congo polygon is Ruanda-Urundi (Kigali, Bujumbura). Relabelled Ruanda-Urundi.",
+   "fixed": true,
+   "source": {
+    "title": "Ruanda-Urundi (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Ruanda-Urundi"
+   }
+  },
+  {
+   "realm": "Kamerun",
+   "years": [
+    1868,
+    1870
+   ],
+   "severity": "error",
+   "issue": "Drawn as the German colony 14 years before the 1884 protectorate. Now drawn as the Duala people.",
+   "fixed": true,
+   "source": {
+    "title": "Kamerun (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Kamerun"
+   }
+  },
+  {
+   "realm": "Kingdom of Axum",
+   "years": [
+    571,
+    601
+   ],
+   "severity": "error",
+   "issue": "Yemen still shaded as Aksumite after the Persian conquest of 570 (overlapping Himyar in 600). Cropped to Africa.",
+   "fixed": true,
+   "source": {
+    "title": "Sasanian Yemen (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Sasanian_Yemen"
+   }
+  },
+  {
+   "realm": "Massina Empire",
+   "years": [
+    1820,
+    1861
+   ],
+   "severity": "error",
+   "issue": "Massina's polygon included Ségou, the capital of the independent Bambara kingdom (to 1861). Cropped west of 5.6°W.",
+   "fixed": true,
+   "source": [
+    {
+     "title": "Bamana Empire (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Bamana_Empire"
+    },
+    {
+     "title": "Massina Empire (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Massina_Empire"
+    }
+   ]
+  },
+  {
+   "realm": "Zululand",
+   "years": [
+    1887,
+    1897
+   ],
+   "severity": "warning",
+   "issue": "Still labelled as the Zulu kingdom after the British annexation of 1887. Relabelled Colony of Zululand (British Empire).",
+   "fixed": true,
+   "source": {
+    "title": "Zulu Kingdom (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Zulu_Kingdom"
+   }
+  },
+  {
+   "realm": "Burkina Faso",
+   "years": [
+    1961,
+    1983
+   ],
+   "severity": "warning",
+   "issue": "Modern name used for the Republic of Upper Volta (renamed 1984). Relabelled.",
+   "fixed": true,
+   "source": {
+    "title": "Republic of Upper Volta (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Republic_of_Upper_Volta"
+   }
+  },
+  {
+   "realm": "Republic of Benin",
+   "years": [
+    1961,
+    1974
+   ],
+   "severity": "warning",
+   "issue": "Modern name used for the Republic of Dahomey (renamed 1975). Relabelled.",
+   "fixed": true,
+   "source": {
+    "title": "Republic of Dahomey (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Republic_of_Dahomey"
+   }
+  },
+  {
+   "realm": "Tanzania",
+   "years": [
+    1961,
+    1963
+   ],
+   "severity": "warning",
+   "issue": "Tanzania was formed only on 26 April 1964; 1961–1963 is Tanganyika. Relabelled.",
+   "fixed": true,
+   "source": {
+    "title": "Tanganyika (1961–1964) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Tanganyika_(1961%E2%80%931964)"
+   }
+  },
+  {
+   "realm": "Danish Gold Coast",
+   "years": [
+    1851,
+    1852
+   ],
+   "severity": "warning",
+   "issue": "Danish forts sold to Britain in 1850, but drawn to 1852. Clipped.",
+   "fixed": true,
+   "source": {
+    "title": "Danish Gold Coast (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Danish_Gold_Coast"
+   }
+  },
+  {
+   "realm": "Kingdom of Kongo",
+   "years": [
+    1670,
+    1708
+   ],
+   "severity": "warning",
+   "issue": "The existing note ('the map draws Kongo only for 1440–1669') is out of date now that the Lunda polygon is relabelled Kongo for 1709–1889. Please reword it to: 'Kongo was split by civil war from 1665 to 1709 and is not drawn in those years; it lasted, as a Portuguese vassal from 1857, until 1914.' (I can't edit the existing note.)",
+   "fixed": false,
+   "source": {
+    "title": "Kingdom of Kongo (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Kingdom_of_Kongo"
+   }
+  },
+  {
+   "realm": "Oyo Empire",
+   "years": [
+    1609,
+    1835
+   ],
+   "severity": "error",
+   "issue": "Oyo's capital, Oyo-Ile (8.97°N 4.31°E), lies outside every Oyo polygon (the northern edge is about 8.8°N), so the northern heartland is missing. Oyo also starts in 1609, against about 1400 in the sources. Needs new geometry.",
+   "fixed": false,
+   "source": [
+    {
+     "title": "Oyo-Ile (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Oyo-Ile"
+    },
+    {
+     "title": "Oyo Empire (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Oyo_Empire"
+    }
+   ]
+  },
+  {
+   "realm": "Empire of Kanem",
+   "years": [
+    1072,
+    1384
+   ],
+   "severity": "error",
+   "issue": "Kanem is a 20,000 km² patch south of N'Djamena (15.1–16.7°E, 11.2–12.7°N), not the Kanem region north-east of Lake Chad around Njimi. Mao (Kanem) is never inside it. Needs new geometry (an existing note already says it is too small).",
+   "fixed": false,
+   "source": {
+    "title": "Kanem Empire (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Kanem_Empire"
+   }
+  },
+  {
+   "realm": "Bamana Empire",
+   "years": [
+    1822,
+    1861
+   ],
+   "severity": "warning",
+   "issue": "The Ségou kingdom ends on the map in 1821, but it lasted until 1861; Ségou is now blank for 1822–1861. There is also a gap in 1757–1768.",
+   "fixed": false,
+   "source": {
+    "title": "Bamana Empire (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Bamana_Empire"
+   }
+  },
+  {
+   "realm": "Mahdist State",
+   "years": [
+    1885,
+    1889
+   ],
+   "severity": "error",
+   "issue": "Khartoum fell to the Mahdists on 26 January 1885, but the Mahdist State starts only in 1890; British Africa is drawn at Khartoum and Omdurman for 1885–1889. Needs a Mahdist polygon from 1885, or a British Africa fix by its owner.",
+   "fixed": false,
+   "source": {
+    "title": "Siege of Khartoum (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Siege_of_Khartoum"
+   }
+  },
+  {
+   "realm": "Republic of Sudan",
+   "years": [
+    2011,
+    2013
+   ],
+   "severity": "error",
+   "issue": "South Sudan became independent on 9 July 2011 but is drawn from 2014; Juba shows the Republic of Sudan for 2011–2013. No box can separate the two cleanly.",
+   "fixed": false,
+   "source": {
+    "title": "South Sudan (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/South_Sudan"
+   }
+  },
+  {
+   "realm": "(missing states)",
+   "years": [
+    1000,
+    1916
+   ],
+   "severity": "warning",
+   "issue": "No polygon at all for several states the sources describe as such: the Kingdom of Zimbabwe (Great Zimbabwe, c.1220–1450), Mutapa (15th century–c.1760), the Kingdom of Benin (to 1897), the Hausa kingdoms before 1805 (Kano is blank 1000–1804), the Lunda Empire, the Emirate of Harar (1647–1887), the Pashalik of Timbuktu (1591–1833; Timbuktu and Gao are blank after Songhai), the Toucouleur Empire (1861–1890s) and Darfur under Ali Dinar (1898–1916).",
+   "fixed": false,
+   "source": [
+    {
+     "title": "Kingdom of Zimbabwe (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Kingdom_of_Zimbabwe"
+    },
+    {
+     "title": "Kingdom of Mutapa (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Kingdom_of_Mutapa"
+    },
+    {
+     "title": "Kingdom of Benin (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Kingdom_of_Benin"
+    },
+    {
+     "title": "Emirate of Harar (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Emirate_of_Harar"
+    },
+    {
+     "title": "Pashalik of Timbuktu (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Pashalik_of_Timbuktu"
+    },
+    {
+     "title": "Ali Dinar (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Ali_Dinar"
+    }
+   ]
+  },
+  {
+   "realm": "British Gold Coast",
+   "years": [
+    1873,
+    1960
+   ],
+   "severity": "error",
+   "issue": "(British journey) This polygon covers Benin City in 1890–1896, before the Benin Expedition of February 1897. It also labels Northern and Southern Nigeria (Kano, Sokoto, Lagos, Kukawa) 'British Gold Coast' from 1900 to 1960, and overlaps Ghana in 1958–1960, though Ghana was independent from 6 March 1957. Suggested claims: Benin City [5.622, 6.333] 1895 not British; Accra 1958 not British Gold Coast.",
+   "fixed": false,
+   "source": [
+    {
+     "title": "Benin Expedition of 1897 (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Benin_Expedition_of_1897"
+    },
+    {
+     "title": "Ghana (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Ghana"
+    }
+   ]
+  },
+  {
+   "realm": "Dutch Gold Coast",
+   "years": [
+    1659,
+    1870
+   ],
+   "severity": "error",
+   "issue": "(Dutch journey) This polygon covers Lagos and Porto-Novo in 1861–1870; Lagos became a British colony on 6 August 1861. It overlaps the Danish fort at Osu (Christiansborg) in 1660–1850, and still covers Osu/Accra after Denmark sold the forts to Britain in 1850 (Osu is drawn Dutch in 1860). Suggested claims: Lagos [3.394, 6.456] 1865 realm (British Empire), not Dutch Gold Coast.",
+   "fixed": false,
+   "source": [
+    {
+     "title": "Lagos Colony (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Lagos_Colony"
+    },
+    {
+     "title": "Danish Gold Coast (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Danish_Gold_Coast"
+    }
+   ]
+  },
+  {
+   "realm": "British Africa",
+   "years": [
+    1885,
+    1959
+   ],
+   "severity": "error",
+   "issue": "(British journey) The Union of South Africa (31 May 1910) is drawn as British Africa until 1931 (Cape Town, Bloemfontein, Pretoria, Durban); South Africa starts only in 1932. Khartoum is drawn British in 1885–1889 (it was Mahdist from January 1885). El Fasher is drawn British in 1898–1916, while Darfur was ruled by Sultan Ali Dinar. Mogadishu is drawn British in 1950–1959, during the Trust Territory of Somaliland under Italian administration (1950–1960).",
+   "fixed": false,
+   "source": [
+    {
+     "title": "Union of South Africa (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Union_of_South_Africa"
+    },
+    {
+     "title": "Siege of Khartoum (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Siege_of_Khartoum"
+    },
+    {
+     "title": "Ali Dinar (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Ali_Dinar"
+    },
+    {
+     "title": "Trust Territory of Somaliland (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Trust_Territory_of_Somaliland"
+    }
+   ]
+  },
+  {
+   "realm": "British East Africa",
+   "years": [
+    1961,
+    1968
+   ],
+   "severity": "error",
+   "issue": "(British journey; relabelled 'British colonies in Africa') This shape still covers states after their independence: Uganda (9 Oct 1962), Kenya (12 Dec 1963), Zanzibar and Tanganyika (united 26 Apr 1964), Malawi (6 Jul 1964), Zambia (24 Oct 1964), Botswana and Lesotho (1966) and Eswatini (6 Sep 1968). It overlaps the new states until 1967–1968.",
+   "fixed": false,
+   "source": [
+    {
+     "title": "Zambia (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Zambia"
+    },
+    {
+     "title": "Malawi (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Malawi"
+    },
+    {
+     "title": "Kenya (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Kenya"
+    },
+    {
+     "title": "Tanzania (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Tanzania"
+    }
+   ]
+  },
+  {
+   "realm": "Portuguese Empire",
+   "years": [
+    1640,
+    1648
+   ],
+   "severity": "error",
+   "issue": "(Portuguese journey) Luanda is drawn Portuguese during the Dutch occupation (1640/41–1648).",
+   "fixed": false,
+   "source": {
+    "title": "Luanda (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Luanda"
+   }
+  },
+  {
+   "realm": "Spanish Empire",
+   "years": [
+    1580,
+    1640
+   ],
+   "severity": "warning",
+   "issue": "(Spanish journey) During the Iberian Union, Portuguese Africa (Elmina, Luanda, Mozambique Island, Mombasa, Zanzibar) is drawn as the Spanish Empire, though Portugal still governed these possessions separately.",
+   "fixed": false,
+   "source": {
+    "title": "Fort Jesus (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Fort_Jesus"
+   }
+  },
+  {
+   "realm": "Dutch Cape Colony",
+   "years": [
+    1677,
+    1700
+   ],
+   "severity": "warning",
+   "issue": "(Dutch journey) Gorée is drawn as both New France and the Dutch Cape Colony; France held Gorée from 1677.",
+   "fixed": false,
+   "source": {
+    "title": "Gorée (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Gor%C3%A9e"
+   }
+  },
+  {
+   "realm": "United States of America",
+   "years": [
+    1822,
+    1847
+   ],
+   "severity": "error",
+   "issue": "(Americas region) Monrovia/Liberia is drawn as US territory in 1840–1847. It was a colony of the private American Colonization Society, never US territory. Suggested fix: a cut box [-12, 4, -7, 9] for 1822–1847.",
+   "fixed": false,
+   "source": {
+    "title": "Liberia (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Liberia"
+   }
+  },
+  {
+   "realm": "French Fifth Republic",
+   "years": [
+    1977,
+    2024
+   ],
+   "severity": "error",
+   "issue": "(Europe region) Djibouti is still drawn French after independence on 27 June 1977, overlapping the Republic of Djibouti.",
+   "fixed": false,
+   "source": {
+    "title": "Djibouti (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Djibouti"
+   }
+  },
+  {
+   "realm": "Himyarite Kingdom",
+   "years": [
+    575,
+    601
+   ],
+   "severity": "warning",
+   "issue": "(Arabia region) With Aksum cropped, Yemen in 575–601 is drawn as Himyar. Himyar was conquered by Aksum under Kaleb in the 520s, and Yemen was a Sasanian province from 570.",
+   "fixed": false,
+   "source": [
+    {
+     "title": "Kingdom of Aksum (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Kingdom_of_Aksum"
+    },
+    {
+     "title": "Sasanian Yemen (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Sasanian_Yemen"
+    }
+   ]
+  },
+  {
+   "realm": "Ottoman Tripolitania",
+   "years": [
+    1875,
+    1884
+   ],
+   "severity": "warning",
+   "issue": "(North Africa / Ottoman) Zeila and the Djibouti coast are drawn as 'Ottoman Tripolitania', a Libyan province. Egyptian forces held Zeila and marched inland from it to Harar in 1875.",
+   "fixed": false,
+   "source": {
+    "title": "Emirate of Harar (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Emirate_of_Harar"
+   }
+  }
+ ],
+ "corrections": {
+  "Kingdom of Lunda": {
+   "relabel": [
+    {
+     "from": 1709,
+     "to": 1889,
+     "name": "Kingdom of Kongo",
+     "key": "Kingdom of Kongo"
+    }
+   ],
+   "cut": [
+    {
+     "from": 1885,
+     "to": 1889,
+     "box": [
+      11.5,
+      -6.05,
+      17,
+      -4.0
+     ]
+    }
+   ],
+   "note": "This shape, between the Atlantic, the lower Congo and the Kwango around Mbanza Kongo (São Salvador), is the Kingdom of Kongo, reunited in 1709 after its civil war and a Portuguese vassal from 1857; after the Berlin Conference the lower Congo north of the river mouth went to the Congo Free State. The Lunda Empire lay far to the east, around its royal capital (musumba) near the upper Kasai, and is not drawn on the map.",
+   "sources": [
+    {
+     "title": "Kingdom of Kongo (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Kingdom_of_Kongo"
+    },
+    {
+     "title": "Kingdom of Lunda (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Kingdom_of_Lunda"
+    },
+    {
+     "title": "M'banza-Kongo (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/M'banza-Kongo"
+    }
+   ]
+  },
+  "Mali Federation": {
+   "relabel": [
+    {
+     "from": 1961,
+     "to": 2024,
+     "name": "Republic of Mali",
+     "key": "Republic of Mali"
+    }
+   ],
+   "note": "The Mali Federation of Senegal and French Sudan broke up when Senegal withdrew on 20 August 1960; from September 1960 this shape is the Republic of Mali.",
+   "sources": [
+    {
+     "title": "Mali Federation (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Mali_Federation"
+    }
+   ]
+  },
+  "Burkina Faso": {
+   "relabel": [
+    {
+     "from": 1961,
+     "to": 1983,
+     "name": "Republic of Upper Volta",
+     "key": "Burkina Faso"
+    }
+   ],
+   "note": "The country was the Republic of Upper Volta until it was renamed Burkina Faso in 1984.",
+   "sources": [
+    {
+     "title": "Republic of Upper Volta (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Republic_of_Upper_Volta"
+    }
+   ]
+  },
+  "Republic of Benin": {
+   "relabel": [
+    {
+     "from": 1961,
+     "to": 1974,
+     "name": "Republic of Dahomey",
+     "key": "Republic of Benin"
+    }
+   ],
+   "note": "Independent in 1960 as the Republic of Dahomey; the country took the name Benin in 1975.",
+   "sources": [
+    {
+     "title": "Republic of Dahomey (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Republic_of_Dahomey"
+    }
+   ]
+  },
+  "Tanzania": {
+   "relabel": [
+    {
+     "from": 1961,
+     "to": 1963,
+     "name": "Tanganyika",
+     "key": "Tanzania"
+    }
+   ],
+   "note": "Tanganyika became independent on 9 December 1961 and united with Zanzibar to form Tanzania on 26 April 1964.",
+   "sources": [
+    {
+     "title": "Tanganyika (1961–1964) (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Tanganyika_(1961%E2%80%931964)"
+    },
+    {
+     "title": "Tanzania (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Tanzania"
+    }
+   ]
+  },
+  "Belgian Congo": {
+   "relabel": [
+    {
+     "from": 1890,
+     "to": 1908,
+     "name": "Congo Free State",
+     "key": "Congo Free State"
+    },
+    {
+     "from": 1960,
+     "to": 1962,
+     "name": "Ruanda-Urundi",
+     "key": "Ruanda-Urundi"
+    }
+   ],
+   "note": "Until 1908 this was the Congo Free State, owned personally by King Leopold II; Belgium annexed it as the Belgian Congo in 1908. After the Congo became independent on 30 June 1960, the remaining piece is Ruanda-Urundi, a Belgian-run trust territory until Rwanda and Burundi became independent on 1 July 1962.",
+   "sources": [
+    {
+     "title": "Congo Free State (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Congo_Free_State"
+    },
+    {
+     "title": "Belgian Congo (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Belgian_Congo"
+    },
+    {
+     "title": "Ruanda-Urundi (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Ruanda-Urundi"
+    }
+   ]
+  },
+  "Zululand": {
+   "relabel": [
+    {
+     "from": 1887,
+     "to": 1897,
+     "name": "Colony of Zululand",
+     "key": "(British Empire)"
+    }
+   ],
+   "note": "After the Anglo-Zulu War of 1879 the kingdom was broken up, and Britain annexed Zululand in 1887; it was joined to Natal in 1897.",
+   "sources": [
+    {
+     "title": "Zulu Kingdom (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Zulu_Kingdom"
+    }
+   ]
+  },
+  "Kamerun": {
+   "asPeople": [
+    {
+     "from": 1868,
+     "to": 1870,
+     "name": "Duala"
+    }
+   ],
+   "note": "German traders were active at Douala from 1868, but Germany declared its Kamerun protectorate only in 1884; before that the Duala kings ruled the estuary.",
+   "sources": [
+    {
+     "title": "Kamerun (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Kamerun"
+    }
+   ]
+  },
+  "Kingdom of Axum": {
+   "crop": [
+    {
+     "from": 571,
+     "to": 601,
+     "box": [
+      30,
+      5,
+      42.45,
+      20
+     ]
+    }
+   ],
+   "note": "Aksumite rule in Yemen ended when the Persians took Sana'a in 570, so Yemen is not shaded as Aksumite after that.",
+   "sources": [
+    {
+     "title": "Sasanian Yemen (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Sasanian_Yemen"
+    },
+    {
+     "title": "Aksumite–Persian wars (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Aksumite%E2%80%93Persian_wars"
+    }
+   ]
+  },
+  "Danish Gold Coast": {
+   "clip": [
+    1659,
+    1850
+   ],
+   "note": "Denmark sold Christiansborg and its other Gold Coast forts to Britain in 1850.",
+   "sources": [
+    {
+     "title": "Danish Gold Coast (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Danish_Gold_Coast"
+    }
+   ]
+  },
+  "Massina Empire": {
+   "crop": [
+    {
+     "from": 1820,
+     "to": 1861,
+     "box": [
+      -5.6,
+      12,
+      0,
+      18
+     ]
+    }
+   ],
+   "note": "Ségou, the Bambara capital, was never part of Massina; the Ségou kingdom lasted until Umar Tall took it in 1861.",
+   "sources": [
+    {
+     "title": "Massina Empire (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Massina_Empire"
+    },
+    {
+     "title": "Bamana Empire (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Bamana_Empire"
+    },
+    {
+     "title": "Toucouleur Empire (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Toucouleur_Empire"
+    }
+   ]
+  },
+  "Sokoto Caliphate": {
+   "cut": [
+    {
+     "from": 1810,
+     "to": 1904,
+     "box": [
+      11.9,
+      10.9,
+      14.2,
+      13.6
+     ]
+    }
+   ],
+   "note": "Bornu, under al-Kanemi, drove the Fulani out after they sacked its capital in 1808, so the lands west and south-west of Lake Chad around Kukawa (Bornu's new seat from 1814) were never part of the Caliphate.",
+   "sources": [
+    {
+     "title": "Kukawa (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Kukawa"
+    },
+    {
+     "title": "Bornu Empire (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Bornu_Empire"
+    },
+    {
+     "title": "Ngazargamu (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Ngazargamu"
+    }
+   ]
+  }
+ }
+}

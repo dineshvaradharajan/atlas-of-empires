@@ -1,0 +1,1143 @@
+{
+ "reviewer": "southeast-asia",
+ "findings": [
+  {
+   "realm": "Ayutthaya Kingdom",
+   "years": [
+    1595,
+    1618
+   ],
+   "severity": "error",
+   "issue": "Pegu (Bago), the Burmese capital, is drawn inside Ayutthaya for 1595–1618. Naresuan besieged Pegu in 1595 and found it abandoned and burning in 1599/1600 but never held it; Siam's gains were Tenasserim and for a time the Mon country around Martaban. Cropped west of 97.3°E for those years.",
+   "fixed": true,
+   "source": {
+    "title": "Burmese–Siamese War (1594–1605) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Burmese%E2%80%93Siamese_War_(1594%E2%80%931605)"
+   }
+  },
+  {
+   "realm": "Ayutthaya Kingdom",
+   "years": [
+    1768,
+    1768
+   ],
+   "severity": "warning",
+   "issue": "Ayutthaya fell on 7 April 1767 but is drawn through 1768 (Thonburi starts 1769). Clipped to 1767.",
+   "fixed": true,
+   "source": {
+    "title": "Ayutthaya Kingdom (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Ayutthaya_Kingdom"
+   }
+  },
+  {
+   "realm": "Sukhothai Kingdom",
+   "years": [
+    1439,
+    1458
+   ],
+   "severity": "warning",
+   "issue": "Sukhothai was annexed by Ayutthaya in 1438 but is drawn to 1458. Clipped to 1438.",
+   "fixed": true,
+   "source": {
+    "title": "Sukhothai Kingdom (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Sukhothai_Kingdom"
+   }
+  },
+  {
+   "realm": "Kingdom of Mrauk U",
+   "years": [
+    1785,
+    1787
+   ],
+   "severity": "warning",
+   "issue": "Arakan fell to Konbaung Burma on 2 January 1785 but Mrauk U is drawn to 1787. Clipped to 1784.",
+   "fixed": true,
+   "source": {
+    "title": "Mrauk U Kingdom (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Mrauk_U_Kingdom"
+   }
+  },
+  {
+   "realm": "Konbaung Dynasty",
+   "years": [
+    1741,
+    1756
+   ],
+   "severity": "error",
+   "issue": "The polygon called Konbaung for 1741–1756 is the Pegu-based Restored Hanthawaddy Kingdom (founded 1740, took Ava March 1752, lost Pegu 6 May 1757); Konbaung was founded only in 1752. Relabelled Restored Hanthawaddy Kingdom.",
+   "fixed": true,
+   "source": {
+    "title": "Restored Hanthawaddy Kingdom (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Restored_Hanthawaddy_Kingdom"
+   }
+  },
+  {
+   "realm": "First Toungoo Empire",
+   "years": [
+    1600,
+    1756
+   ],
+   "severity": "error",
+   "issue": "The First Toungoo Empire collapsed in 1599; after that the polygon is the Restored (Nyaungyan) Toungoo kingdom, which ended when Hanthawaddy took Ava in 1752. For 1752–1756 the northern polygon at Shwebo is Alaungpaya's Konbaung dynasty (Shwebo capital 1752–1760). Relabelled.",
+   "fixed": true,
+   "source": [
+    {
+     "title": "Toungoo dynasty (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Toungoo_dynasty"
+    },
+    {
+     "title": "Konbaung dynasty (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Konbaung_dynasty"
+    }
+   ]
+  },
+  {
+   "realm": "Trưng sisters",
+   "years": [
+    43,
+    50
+   ],
+   "severity": "error",
+   "issue": "The Trưng sisters ruled 40–43 CE (rising March 40, defeated by Ma Yuan in 43) but the map shows them 43–50 and shows Han rule in 40–42. Clipped to 43; the 40–42 years cannot be added with the corrections layer, and Han is not drawn in northern Vietnam for 44–50 (Han Dynasty owner).",
+   "fixed": true,
+   "source": {
+    "title": "Trưng sisters (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Tr%C6%B0ng_sisters"
+   }
+  },
+  {
+   "realm": "Chámpa",
+   "years": [
+    1307,
+    1313
+   ],
+   "severity": "warning",
+   "issue": "Champa ceded Ô and Lý (Huế area) to Đại Việt in 1306 but still covers Huế until 1313. Cropped south of 16.2°N for 1307–1313 (Huế is then blank until Đại Việt's polygon reaches it in 1314).",
+   "fixed": true,
+   "source": {
+    "title": "Huyền Trân (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Huy%E1%BB%81n_Tr%C3%A2n"
+   }
+  },
+  {
+   "realm": "Chámpa",
+   "years": [
+    1472,
+    1474
+   ],
+   "severity": "warning",
+   "issue": "Vijaya fell to Lê Thánh Tông in early 1471 but stays Cham until 1474. Cropped south of 13.2°N for 1472–1474.",
+   "fixed": true,
+   "source": {
+    "title": "Champa (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Champa"
+   }
+  },
+  {
+   "realm": "Đại Việt",
+   "years": [
+    1653,
+    1833
+   ],
+   "severity": "error",
+   "issue": "The small southern polygon (Phan Rang area) labelled Đại Việt from 1653 is Panduranga, the last Cham principality (vassal from the 1690s, annexed by Minh Mạng in August 1832); this is why the map ended Champa in 1652. Relabelled Champa (Panduranga) with key Chámpa for 1683–1832 and clipped at 1832. For 1653–1682 the same feature also holds the Mạc remnant at Cao Bằng (to 1677), so it is left as is (Champa now shows a 1653–1682 gap).",
+   "fixed": true,
+   "source": [
+    {
+     "title": "Champa (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Champa"
+    },
+    {
+     "title": "Mạc dynasty (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/M%E1%BA%A1c_dynasty"
+    }
+   ]
+  },
+  {
+   "realm": "Tây Sơn dynasty",
+   "years": [
+    1778,
+    1785
+   ],
+   "severity": "warning",
+   "issue": "Tây Sơn is drawn over Phú Xuân (Huế) from 1778, but the Trịnh took it in 1774–75 and held it until Nguyễn Huệ's 1786 campaign. Cropped south of 16.2°N for 1778–1785 (Huế is blank; Trịnh lords are not drawn there after 1777).",
+   "fixed": true,
+   "source": {
+    "title": "Nguyễn lords (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Nguy%E1%BB%85n_lords"
+   }
+  },
+  {
+   "realm": "Kingdom of Cambodia",
+   "years": [
+    1970,
+    1975
+   ],
+   "severity": "error",
+   "issue": "Cambodia was the Khmer Republic from the coup of 18 March 1970 (proclaimed 9 October 1970) until 17 April 1975. Relabelled.",
+   "fixed": true,
+   "source": {
+    "title": "Khmer Republic (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Khmer_Republic"
+   }
+  },
+  {
+   "realm": "People's Republic of Kampuchea",
+   "years": [
+    1989,
+    1995
+   ],
+   "severity": "warning",
+   "issue": "Renamed State of Cambodia in 1989; the Kingdom of Cambodia was restored in September 1993, but the map keeps the PRK name to 1995. Relabelled State of Cambodia (1989–1993) and Kingdom of Cambodia (1994–1995).",
+   "fixed": true,
+   "source": {
+    "title": "People's Republic of Kampuchea (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/People%27s_Republic_of_Kampuchea"
+   }
+  },
+  {
+   "realm": "French Indochina",
+   "years": [
+    1955,
+    1957
+   ],
+   "severity": "error",
+   "issue": "French Indochina is drawn to 1957 (Hanoi, Vientiane and Phnom Penh still French in 1955), but Laos and Cambodia were independent in October/November 1953 and the Geneva Accords of 21 July 1954 ended it. Clipped to 1954; 1955 is blank in Indochina until the successor states begin in 1956 on the map.",
+   "fixed": true,
+   "source": {
+    "title": "French Indochina (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/French_Indochina"
+   }
+  },
+  {
+   "realm": "French Indochina",
+   "years": [
+    1860,
+    1886
+   ],
+   "severity": "warning",
+   "issue": "Named French Indochina from 1860, though the Indochinese Union was formed on 17 October 1887; earlier years are French Cochinchina plus protectorates. Note added (no relabel).",
+   "fixed": true,
+   "source": {
+    "title": "French Indochina (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/French_Indochina"
+   }
+  },
+  {
+   "realm": "Sultanate of Malacca",
+   "years": [
+    1552,
+    1861
+   ],
+   "severity": "error",
+   "issue": "After 1511 these polygons are relabelled Johor, but they include central and east Java (1552–1639, 1677–1860, e.g. Kotagede and Demak, overlapping Mataram) and northern Sumatra (1640–1861), which were never Malacca's or Johor's. Cropped to the peninsula/Riau box for 1552–1861.",
+   "fixed": true,
+   "source": [
+    {
+     "title": "Malacca Sultanate (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Malacca_Sultanate"
+    },
+    {
+     "title": "Mataram Sultanate (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Mataram_Sultanate"
+    }
+   ]
+  },
+  {
+   "realm": "Sultanate of Malacca",
+   "years": [
+    1459,
+    1511
+   ],
+   "severity": "error",
+   "issue": "At its height Malacca ruled much of the Malay Peninsula, Riau and eastern Sumatra, but the map draws only c. 7,000 km² around Singapore/Johor and nothing at Malacca town itself (1400–1511 blank). Needs new geometry; note added.",
+   "fixed": false,
+   "source": {
+    "title": "Malacca Sultanate (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Malacca_Sultanate"
+   }
+  },
+  {
+   "realm": "Sultanate of Brunei",
+   "years": [
+    1512,
+    1581
+   ],
+   "severity": "error",
+   "issue": "Brunei is drawn over all of Mindanao (c. 107,000 km²) for 1512–1581, overlapping Maguindanao, and over Manila Bay after Spain took Manila in 1571. Brunei's influence reached Sulu, Basilan and Manila Bay but it never ruled Mindanao. Cropped.",
+   "fixed": true,
+   "source": [
+    {
+     "title": "Bruneian Empire (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Bruneian_Empire"
+    },
+    {
+     "title": "Spanish East Indies (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Spanish_East_Indies"
+    }
+   ]
+  },
+  {
+   "realm": "Rajahnate of Cebu",
+   "years": [
+    1566,
+    1571
+   ],
+   "severity": "warning",
+   "issue": "Legazpi took Cebu in 1565 (rajahnate dissolved 4 June 1565; Cebu was the Spanish capital 1565–1595), but the rajahnate is drawn to 1571. Clipped to 1565; Spain is not drawn at Cebu for 1566–1571 (Spanish Empire owner).",
+   "fixed": true,
+   "source": [
+    {
+     "title": "Rajahnate of Cebu (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Rajahnate_of_Cebu"
+    },
+    {
+     "title": "Captaincy General of the Philippines (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Captaincy_General_of_the_Philippines"
+    }
+   ]
+  },
+  {
+   "realm": "Sultanate of Banten",
+   "years": [
+    1619,
+    1676
+   ],
+   "severity": "error",
+   "issue": "Banten covers Batavia (Jakarta) for 1619–1676, although the Dutch razed Jayakarta and founded Batavia in 1619. Cropped west of 106.7°E; the Dutch polygon beneath now shows.",
+   "fixed": true,
+   "source": {
+    "title": "Batavia, Dutch East Indies (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Batavia,_Dutch_East_Indies"
+   }
+  },
+  {
+   "realm": "Sultan of Yogyakarta",
+   "years": [
+    1744,
+    1754
+   ],
+   "severity": "warning",
+   "issue": "Yogyakarta and Surakarta are drawn from 1744, but Mataram was only split by the Treaty of Giyanti in 1755. Both relabelled Mataram Sultanate for 1744–1754.",
+   "fixed": true,
+   "source": [
+    {
+     "title": "Mataram Sultanate (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Mataram_Sultanate"
+    },
+    {
+     "title": "Yogyakarta (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Yogyakarta"
+    }
+   ]
+  },
+  {
+   "realm": "Surakarta Sunanate",
+   "years": [
+    1744,
+    1829
+   ],
+   "severity": "warning",
+   "issue": "The Surakarta polygon lies west of Surakarta (Solo) itself (label point 110.39°E vs the city at 110.82°E), so the city is drawn as Dutch. Needs new geometry.",
+   "fixed": false,
+   "source": {
+    "title": "Mataram Sultanate (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Mataram_Sultanate"
+   }
+  },
+  {
+   "realm": "Sultanate of Aceh",
+   "years": [
+    1874,
+    1959
+   ],
+   "severity": "error",
+   "issue": "Aceh's capital Kutaraja (Banda Aceh) is drawn as the sultanate until 1913, but the Dutch took it in January 1874 and the sultan surrendered in 1903; and the sultanate reappears for 1946–1959, when Aceh was Republican and then Indonesian territory. Cropped the capital area out for 1874–1903, hidden 1904–1945, relabelled Republic of Indonesia for 1946–1959. The Dutch are not drawn at Banda Aceh 1874–1913 (Dutch owner).",
+   "fixed": true,
+   "source": {
+    "title": "Aceh War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Aceh_War"
+   }
+  },
+  {
+   "realm": "Sultanate of Kedah",
+   "years": [
+    1910,
+    1910
+   ],
+   "severity": "warning",
+   "issue": "Kedah passed to Britain by the treaty of 10 March 1909 but is drawn through 1910. Clipped to 1909.",
+   "fixed": true,
+   "source": {
+    "title": "Anglo-Siamese Treaty of 1909 (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Anglo-Siamese_Treaty_of_1909"
+   }
+  },
+  {
+   "realm": "Republic of Indonesia",
+   "years": [
+    1950,
+    1962
+   ],
+   "severity": "error",
+   "issue": "Western New Guinea (Hollandia/Jayapura) is drawn as Indonesian from 1950, but it stayed Dutch until UNTEA took over on 1 October 1962 and passed to Indonesia on 1 May 1963. Cropped at 131°E for 1950–1962; the cost is that Indonesia's small Kai, Aru and Tanimbar islands east of 131°E are also undrawn in those years. Netherlands New Guinea itself is not drawn (Dutch owner).",
+   "fixed": true,
+   "source": {
+    "title": "Netherlands New Guinea (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Netherlands_New_Guinea"
+   }
+  },
+  {
+   "realm": "Republic of Indonesia",
+   "years": [
+    2000,
+    2005
+   ],
+   "severity": "error",
+   "issue": "East Timor is drawn as Indonesian to 2005; Indonesia gave up control in 1999 and Timor-Leste became independent on 20 May 2002 (the map starts East Timor in 2006). A single crop box cannot remove Timor without removing Papua, so a note was added instead.",
+   "fixed": false,
+   "source": {
+    "title": "East Timor (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/East_Timor"
+   }
+  },
+  {
+   "realm": "Malaysia",
+   "years": [
+    1965,
+    1966
+   ],
+   "severity": "warning",
+   "issue": "Singapore became independent on 9 August 1965 but is drawn inside Malaysia until 1966 (Republic of Singapore starts 1967). Cannot be cropped out with one box (Sarawak lies further south); note added.",
+   "fixed": false,
+   "source": {
+    "title": "History of Singapore (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/History_of_Singapore"
+   }
+  },
+  {
+   "realm": "Malaya",
+   "years": [
+    1294,
+    1351
+   ],
+   "severity": "warning",
+   "issue": "A 1294–1351 realm named 'Malaya' covers the whole peninsula, linked to Wikidata Q1479726 (the 1948 Federation of Malaya). There was no single Malayan kingdom then; the name and link are anachronistic. Not changed (no well-sourced replacement name).",
+   "fixed": false,
+   "source": {
+    "title": "Kingdom of Singapura (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Kingdom_of_Singapura"
+   }
+  },
+  {
+   "realm": "Patani Kingdom",
+   "years": [
+    1691,
+    1786
+   ],
+   "severity": "warning",
+   "issue": "Patani is drawn only 1572–1690 and Ayutthaya covers it afterwards, but Patani stayed a tributary state until Siam's conquest in 1786 (last raja deposed 1902). The realm cannot be extended with the corrections layer.",
+   "fixed": false,
+   "source": {
+    "title": "Pattani Kingdom (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Pattani_Kingdom"
+   }
+  },
+  {
+   "realm": "Âu Lạc",
+   "years": [
+    -206,
+    -180
+   ],
+   "severity": "warning",
+   "issue": "Âu Lạc is drawn to 207 BCE and Nanyue holds Cổ Loa from 206 BCE; the usual date for Nanyue's conquest is 179 BCE (some sources give 208 BCE). Follows a minority chronology; not changed.",
+   "fixed": false,
+   "source": {
+    "title": "Âu Lạc (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/%C3%82u_L%E1%BA%A1c"
+   }
+  },
+  {
+   "realm": "Kingdom of Pajana",
+   "years": [
+    1572,
+    1587
+   ],
+   "severity": "warning",
+   "issue": "This realm (the Pajang Sultanate in Java) is linked to the Wikipedia article 'Lontara script' and its Wikidata item; the link is wrong. Not fixable in the corrections layer.",
+   "fixed": false,
+   "source": {
+    "title": "Demak Sultanate (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Demak_Sultanate"
+   }
+  },
+  {
+   "realm": "Han Dynasty",
+   "years": [
+    40,
+    50
+   ],
+   "severity": "error",
+   "issue": "Han is drawn at Mê Linh in 40–42 CE while the Trưng sisters ruled there, and after the Trưng correction nothing is drawn in northern Vietnam for 44–50 CE, when Ma Yuan had restored Han rule. Owner: qin-han journey.",
+   "fixed": false,
+   "source": {
+    "title": "Trưng sisters (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Tr%C6%B0ng_sisters"
+   }
+  },
+  {
+   "realm": "Qing Dynasty",
+   "years": [
+    1789,
+    1790
+   ],
+   "severity": "error",
+   "issue": "Qing is drawn at Thăng Long (Hanoi) through 1790; the Qing army took the city in late 1788 and was routed by Nguyễn Huệ at the Lunar New Year of 1789. Owner: qing-dynasty journey.",
+   "fixed": false,
+   "source": {
+    "title": "Tây Sơn dynasty (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/T%C3%A2y_S%C6%A1n_dynasty"
+   }
+  },
+  {
+   "realm": "United States of America",
+   "years": [
+    1967,
+    2005
+   ],
+   "severity": "error",
+   "issue": "A c. 169,000 km² USA polygon covers southern Vietnam from 1967 to 2005: it replaces the Republic of Vietnam for 1967–1972 and overlaps the Socialist Republic of Vietnam from 1976. US troops never made South Vietnam US territory and left in 1973. Should be hidden (Saigon claims 1970, 1980 fail). Owner: not a journey realm, outside this region's realm list.",
+   "fixed": false,
+   "source": [
+    {
+     "title": "Ho Chi Minh City (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Ho_Chi_Minh_City"
+    },
+    {
+     "title": "Vietnam (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Vietnam"
+    }
+   ]
+  },
+  {
+   "realm": "United States of America",
+   "years": [
+    1943,
+    1943
+   ],
+   "severity": "warning",
+   "issue": "A US polygon on Bataan/Corregidor is still drawn in 1943; Bataan fell on 9–10 April and Corregidor on 6 May 1942.",
+   "fixed": false,
+   "source": {
+    "title": "Japanese occupation of the Philippines (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Japanese_occupation_of_the_Philippines"
+   }
+  },
+  {
+   "realm": "British Colonial Empire",
+   "years": [
+    1943,
+    1945
+   ],
+   "severity": "error",
+   "issue": "Singapore is drawn both British and Japanese in 1943 (it fell on 15 February 1942). Owner: british-empire journey.",
+   "fixed": false,
+   "source": {
+    "title": "History of Singapore (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/History_of_Singapore"
+   }
+  },
+  {
+   "realm": "British Colonial Empire",
+   "years": [
+    1984,
+    2024
+   ],
+   "severity": "error",
+   "issue": "Brunei is still drawn as British after independence in 1984 (overlapping the Sultanate of Brunei in 1990). Owner: british-empire journey.",
+   "fixed": false,
+   "source": {
+    "title": "Bruneian Empire (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Bruneian_Empire"
+   }
+  },
+  {
+   "realm": "British Colonial Empire",
+   "years": [
+    1786,
+    1799
+   ],
+   "severity": "warning",
+   "issue": "Penang (George Town, founded by Francis Light in 1786) is drawn as Kedah until the 1790s. Owner: british-empire journey (Kedah cannot be cropped round the island).",
+   "fixed": false,
+   "source": {
+    "title": "George Town, Penang (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/George_Town,_Penang"
+   }
+  },
+  {
+   "realm": "Portuguese Colonies",
+   "years": [
+    1641,
+    1642
+   ],
+   "severity": "warning",
+   "issue": "Malacca is drawn Portuguese in 1641–1642; the Dutch took it on 14 January 1641. Owner: portuguese-empire journey.",
+   "fixed": false,
+   "source": {
+    "title": "Dutch Malacca (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Dutch_Malacca"
+   }
+  },
+  {
+   "realm": "Spanish Empire",
+   "years": [
+    1566,
+    1571
+   ],
+   "severity": "warning",
+   "issue": "Spain is not drawn at Cebu for 1565–1571, the first Spanish capital in the Philippines (blank after the Rajahnate of Cebu correction). Owner: spanish-empire journey.",
+   "fixed": false,
+   "source": {
+    "title": "Captaincy General of the Philippines (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Captaincy_General_of_the_Philippines"
+   }
+  },
+  {
+   "realm": "Spanish Empire",
+   "years": [
+    1620,
+    1850
+   ],
+   "severity": "warning",
+   "issue": "Cotabato, seat of the Maguindanao sultanate (capital Tamontaka 1711–1861), is drawn Spanish from c. 1620; Spain's hold on Mindanao outside its forts was nominal until the mid-19th century. Owner: spanish-empire journey.",
+   "fixed": false,
+   "source": [
+    {
+     "title": "Sultanate of Maguindanao (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Sultanate_of_Maguindanao"
+    },
+    {
+     "title": "Spanish East Indies (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Spanish_East_Indies"
+    }
+   ]
+  },
+  {
+   "realm": "Dutch East Indies",
+   "years": [
+    1874,
+    1913
+   ],
+   "severity": "warning",
+   "issue": "Nothing Dutch is drawn at Banda Aceh (Kutaraja), taken by the Dutch in January 1874, until 1914 (now blank after the Aceh correction). Netherlands New Guinea is likewise not drawn for 1950–1962. Owner: dutch-empire journey.",
+   "fixed": false,
+   "source": [
+    {
+     "title": "Aceh War (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Aceh_War"
+    },
+    {
+     "title": "Netherlands New Guinea (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Netherlands_New_Guinea"
+    }
+   ]
+  },
+  {
+   "realm": "New Caledonia",
+   "years": [
+    1859,
+    1859
+   ],
+   "severity": "warning",
+   "issue": "In 1859 the realm 'New Caledonia' is a bundle of French colonies (Réunion, French India) and includes a 66,000 km² polygon over Cochinchina, so Saigon reads 'New Caledonia'; France had taken only Saigon (17 February 1859), with the provinces ceded in 1862 and 1867. Suggest relabel 'French colonies' (Oceania/French owner).",
+   "fixed": false,
+   "source": {
+    "title": "French Indochina (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/French_Indochina"
+   }
+  }
+ ],
+ "corrections": {
+  "Ayutthaya Kingdom": {
+   "clip": [
+    1352,
+    1767
+   ],
+   "crop": [
+    {
+     "from": 1595,
+     "to": 1618,
+     "box": [
+      97.3,
+      0.0,
+      110.0,
+      25.0
+     ]
+    }
+   ],
+   "note": "Ayutthaya fell to the Burmese in April 1767. Siamese armies besieged Pegu in 1595 and reached it in 1600 but never held it; Siam's gains in Burma were the Tenasserim coast and, for a time, the Mon country around Martaban.",
+   "sources": [
+    {
+     "title": "Ayutthaya Kingdom (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Ayutthaya_Kingdom"
+    },
+    {
+     "title": "Burmese–Siamese War (1594–1605) (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Burmese%E2%80%93Siamese_War_(1594%E2%80%931605)"
+    }
+   ]
+  },
+  "Sukhothai Kingdom": {
+   "clip": [
+    1238,
+    1438
+   ],
+   "note": "Sukhothai was a vassal of Ayutthaya from 1378 and was annexed in 1438.",
+   "sources": [
+    {
+     "title": "Sukhothai Kingdom (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Sukhothai_Kingdom"
+    }
+   ]
+  },
+  "Kingdom of Mrauk U": {
+   "clip": [
+    1429,
+    1784
+   ],
+   "note": "Arakan (Mrauk U) was conquered by Burma's Konbaung dynasty at the start of 1785.",
+   "sources": [
+    {
+     "title": "Mrauk U Kingdom (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Mrauk_U_Kingdom"
+    }
+   ]
+  },
+  "Konbaung Dynasty": {
+   "relabel": [
+    {
+     "from": 1741,
+     "to": 1756,
+     "name": "Restored Hanthawaddy Kingdom",
+     "key": "Restored Hanthawaddy Kingdom"
+    }
+   ],
+   "note": "Before 1757 the Lower Burma kingdom based at Pegu was the Restored Hanthawaddy Kingdom (1740–1757), which took Ava in 1752; Alaungpaya's Konbaung dynasty, founded at Shwebo in 1752, conquered Pegu in May 1757.",
+   "sources": [
+    {
+     "title": "Restored Hanthawaddy Kingdom (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Restored_Hanthawaddy_Kingdom"
+    },
+    {
+     "title": "Konbaung dynasty (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Konbaung_dynasty"
+    }
+   ]
+  },
+  "First Toungoo Empire": {
+   "relabel": [
+    {
+     "from": 1600,
+     "to": 1751,
+     "name": "Restored Toungoo Kingdom",
+     "key": "Restored Toungoo Kingdom"
+    },
+    {
+     "from": 1752,
+     "to": 1756,
+     "name": "Konbaung Dynasty",
+     "key": "Konbaung Dynasty"
+    }
+   ],
+   "note": "The First Toungoo Empire collapsed in 1599; the Nyaungyan or Restored Toungoo dynasty ruled from Ava until Hanthawaddy forces took the city in 1752. The northern kingdom shown from 1752 is Alaungpaya's new Konbaung dynasty at Shwebo.",
+   "sources": [
+    {
+     "title": "Toungoo dynasty (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Toungoo_dynasty"
+    },
+    {
+     "title": "Konbaung dynasty (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Konbaung_dynasty"
+    }
+   ]
+  },
+  "Trưng sisters": {
+   "clip": [
+    40,
+    43
+   ],
+   "note": "The Trưng sisters rose against Han rule in 40 CE and were defeated by Ma Yuan in 43 CE; the map shows them only in 43.",
+   "sources": [
+    {
+     "title": "Trưng sisters (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Tr%C6%B0ng_sisters"
+    }
+   ]
+  },
+  "Chámpa": {
+   "crop": [
+    {
+     "from": 1307,
+     "to": 1313,
+     "box": [
+      100.0,
+      0.0,
+      115.0,
+      16.2
+     ]
+    },
+    {
+     "from": 1472,
+     "to": 1474,
+     "box": [
+      100.0,
+      0.0,
+      115.0,
+      13.2
+     ]
+    }
+   ],
+   "note": "Champa ceded the districts of Ô and Lý (around Huế) to Đại Việt in 1306, and lost its capital Vijaya and its northern lands in 1471.",
+   "sources": [
+    {
+     "title": "Huyền Trân (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Huy%E1%BB%81n_Tr%C3%A2n"
+    },
+    {
+     "title": "Champa (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Champa"
+    }
+   ]
+  },
+  "Đại Việt": {
+   "clip": [
+    1529,
+    1832
+   ],
+   "relabel": [
+    {
+     "from": 1683,
+     "to": 1832,
+     "name": "Champa (Panduranga)",
+     "key": "Chámpa"
+    }
+   ],
+   "note": "Under this name the map shows the Mạc dynasty (1527–1592) and its remnant in Cao Bằng (to 1677). The small southern territory shown from 1653 is Panduranga, the last Cham principality, a Vietnamese vassal from the 1690s until Minh Mạng annexed it in 1832.",
+   "sources": [
+    {
+     "title": "Mạc dynasty (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/M%E1%BA%A1c_dynasty"
+    },
+    {
+     "title": "Champa (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Champa"
+    }
+   ]
+  },
+  "Tây Sơn dynasty": {
+   "crop": [
+    {
+     "from": 1778,
+     "to": 1785,
+     "box": [
+      100.0,
+      0.0,
+      115.0,
+      16.2
+     ]
+    }
+   ],
+   "note": "The Trịnh army took Phú Xuân (Huế) in 1774–75 and held it until Nguyễn Huệ's northern campaign of 1786.",
+   "sources": [
+    {
+     "title": "Nguyễn lords (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Nguy%E1%BB%85n_lords"
+    },
+    {
+     "title": "Tây Sơn dynasty (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/T%C3%A2y_S%C6%A1n_dynasty"
+    }
+   ]
+  },
+  "Kingdom of Cambodia": {
+   "relabel": [
+    {
+     "from": 1970,
+     "to": 1975,
+     "name": "Khmer Republic",
+     "key": "Khmer Republic"
+    }
+   ],
+   "note": "From the coup of March 1970 until Phnom Penh fell to the Khmer Rouge on 17 April 1975 Cambodia was the Khmer Republic; the monarchy was restored in September 1993.",
+   "sources": [
+    {
+     "title": "Khmer Republic (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Khmer_Republic"
+    },
+    {
+     "title": "People's Republic of Kampuchea (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/People%27s_Republic_of_Kampuchea"
+    }
+   ]
+  },
+  "People's Republic of Kampuchea": {
+   "relabel": [
+    {
+     "from": 1989,
+     "to": 1993,
+     "name": "State of Cambodia",
+     "key": "State of Cambodia"
+    },
+    {
+     "from": 1994,
+     "to": 1995,
+     "name": "Kingdom of Cambodia",
+     "key": "Kingdom of Cambodia"
+    }
+   ],
+   "note": "The People's Republic of Kampuchea (1979) was renamed the State of Cambodia in 1989 and gave way to the restored Kingdom of Cambodia in September 1993.",
+   "sources": [
+    {
+     "title": "People's Republic of Kampuchea (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/People%27s_Republic_of_Kampuchea"
+    }
+   ]
+  },
+  "French Indochina": {
+   "clip": [
+    1860,
+    1954
+   ],
+   "note": "The Indochinese Union was formed in 1887; before that France held Cochinchina (Saigon taken 1859, provinces ceded 1862 and 1867) and protectorates over Cambodia (1863) and Annam–Tonkin (1883–84). Laos and Cambodia became independent in 1953 and the Geneva Accords of July 1954 ended French Indochina.",
+   "sources": [
+    {
+     "title": "French Indochina (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/French_Indochina"
+    }
+   ]
+  },
+  "Sultanate of Malacca": {
+   "crop": [
+    {
+     "from": 1552,
+     "to": 1861,
+     "box": [
+      100.5,
+      -1.0,
+      106.0,
+      8.0
+     ]
+    }
+   ],
+   "note": "At its height (15th century) Malacca ruled much of the Malay Peninsula, the Riau Islands and part of eastern Sumatra, but the map draws only a small area at the southern tip and does not reach Malacca town itself. Pieces in central Java and northern Sumatra that the map once gave to Malacca's successor Johor were never Johor's and are removed.",
+   "sources": [
+    {
+     "title": "Malacca Sultanate (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Malacca_Sultanate"
+    }
+   ]
+  },
+  "Sultanate of Brunei": {
+   "crop": [
+    {
+     "from": 1512,
+     "to": 1570,
+     "box": [
+      108.0,
+      -5.0,
+      121.5,
+      16.0
+     ]
+    },
+    {
+     "from": 1571,
+     "to": 1581,
+     "box": [
+      108.0,
+      -5.0,
+      120.5,
+      12.0
+     ]
+    }
+   ],
+   "note": "Brunei at its height ruled the coasts of northwest Borneo and had influence in Sulu and around Manila Bay, but it never ruled Mindanao; Spain took Manila in 1571.",
+   "sources": [
+    {
+     "title": "Bruneian Empire (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Bruneian_Empire"
+    },
+    {
+     "title": "Spanish East Indies (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Spanish_East_Indies"
+    }
+   ]
+  },
+  "Rajahnate of Cebu": {
+   "clip": [
+    1497,
+    1565
+   ],
+   "note": "Legazpi's expedition took Cebu in 1565, making it the first Spanish capital in the Philippines.",
+   "sources": [
+    {
+     "title": "Rajahnate of Cebu (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Rajahnate_of_Cebu"
+    },
+    {
+     "title": "Captaincy General of the Philippines (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Captaincy_General_of_the_Philippines"
+    }
+   ]
+  },
+  "Sultanate of Banten": {
+   "crop": [
+    {
+     "from": 1619,
+     "to": 1676,
+     "box": [
+      101.0,
+      -8.0,
+      106.7,
+      -3.0
+     ]
+    }
+   ],
+   "note": "Jayakarta was a Banten dependency until the Dutch razed it and founded Batavia on its site in 1619.",
+   "sources": [
+    {
+     "title": "Batavia, Dutch East Indies (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Batavia,_Dutch_East_Indies"
+    },
+    {
+     "title": "Banten Sultanate (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Banten_Sultanate"
+    }
+   ]
+  },
+  "Sultan of Yogyakarta": {
+   "relabel": [
+    {
+     "from": 1744,
+     "to": 1754,
+     "name": "Mataram Sultanate",
+     "key": "Mataram Sultanate"
+    }
+   ],
+   "note": "The Yogyakarta Sultanate was created by the Treaty of Giyanti in 1755, when Mataram was split in two.",
+   "sources": [
+    {
+     "title": "Mataram Sultanate (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Mataram_Sultanate"
+    },
+    {
+     "title": "Yogyakarta (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Yogyakarta"
+    }
+   ]
+  },
+  "Surakarta Sunanate": {
+   "relabel": [
+    {
+     "from": 1744,
+     "to": 1754,
+     "name": "Mataram Sultanate",
+     "key": "Mataram Sultanate"
+    }
+   ],
+   "note": "Surakarta became a separate realm with the Treaty of Giyanti in 1755; before that it was Mataram's capital (from 1745).",
+   "sources": [
+    {
+     "title": "Mataram Sultanate (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Mataram_Sultanate"
+    }
+   ]
+  },
+  "Sultanate of Aceh": {
+   "hide": [
+    [
+     1904,
+     1945
+    ]
+   ],
+   "crop": [
+    {
+     "from": 1874,
+     "to": 1903,
+     "box": [
+      94.0,
+      0.0,
+      99.5,
+      5.4
+     ]
+    }
+   ],
+   "relabel": [
+    {
+     "from": 1946,
+     "to": 1959,
+     "name": "Republic of Indonesia",
+     "key": "Republic of Indonesia"
+    }
+   ],
+   "note": "The Dutch took Aceh's capital, Kutaraja (Banda Aceh), in January 1874 and the last sultan surrendered in 1903, though guerrilla resistance went on for years. After 1945 Aceh was Republican territory and then a part of Indonesia, not a restored sultanate.",
+   "sources": [
+    {
+     "title": "Aceh War (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Aceh_War"
+    }
+   ]
+  },
+  "Sultanate of Kedah": {
+   "clip": [
+    1139,
+    1909
+   ],
+   "note": "Siam transferred Kedah to Britain by the Anglo-Siamese Treaty of 10 March 1909.",
+   "sources": [
+    {
+     "title": "Anglo-Siamese Treaty of 1909 (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Anglo-Siamese_Treaty_of_1909"
+    },
+    {
+     "title": "Kedah Sultanate (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Kedah_Sultanate"
+    }
+   ]
+  },
+  "Republic of Indonesia": {
+   "crop": [
+    {
+     "from": 1950,
+     "to": 1962,
+     "box": [
+      94.0,
+      -11.5,
+      131.0,
+      6.5
+     ]
+    }
+   ],
+   "note": "Western New Guinea stayed Dutch after 1949 and passed to Indonesia only in 1963 (under UN administration from October 1962). East Timor, occupied from 1975, came under UN administration in 1999 and became independent on 20 May 2002; the map still shows it as Indonesian until 2005.",
+   "sources": [
+    {
+     "title": "Netherlands New Guinea (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Netherlands_New_Guinea"
+    },
+    {
+     "title": "East Timor (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/East_Timor"
+    }
+   ]
+  },
+  "Malaysia": {
+   "note": "Singapore left Malaysia on 9 August 1965; the map shows it inside Malaysia until 1966.",
+   "sources": [
+    {
+     "title": "History of Singapore (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/History_of_Singapore"
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,1451 @@
+{
+ "reviewer": "americas",
+ "findings": [
+  {
+   "realm": "United States of America",
+   "years": [
+    1941,
+    2023
+   ],
+   "severity": "error",
+   "issue": "Occupation zones and bases abroad drawn as US territory long after they ended: South Vietnam 1967-2005 (Saigon fell 1975), Japan and Okinawa to 1966/2005 (occupation ended 1952, Okinawa returned 1972), South Korea and West Germany to 1966 (own governments 1948/1949), Iraq 2006-2023 (sovereignty returned 2004), Greenland and Iceland 1941-45, Bataan 1943. These also inflate the US area to 12.2M km2 (1941-45). Fixed with crops: 1942-44 and 1973-2023 to the Americas and Pacific box [-180,-20,-60,72]; 1953-72 to [-180,17.6,129.4,72], which drops Japan and South Vietnam but keeps Okinawa (US-run until 1972; claims-east-asia Naha 1960). Not fixable with a single box: 1941 and 1945 (the same shape holds the Philippines), South Korea 1949-72 and the West German zone 1953-66 (they lie inside any box that keeps Okinawa and Alaska), and the Cuba occupations (1900-04 and 1908-10 drawn; actual 1899-1902 and 1906-09). Side effects: a sliver of the western Aleutians (179E) is dropped in cropped years, and South Vietnam 1967-75 and Iraq 2006-14 become blank because their own realms are not drawn then (Asia/Middle East reviewers). The peak-area check still reports 1945 because area timelines ignore crops; without the occupied lands the US peaks at 9.9M km2 in 1900-10, matching the published 9.5M km2 (1900, List of largest empires). Suggest the US entry also gets a scholarly peak (9.5M km2, 1900), which the review format cannot set.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: List of largest empires",
+    "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+   },
+   "sources": [
+    {
+     "title": "Wikipedia: Fall of Saigon",
+     "url": "https://en.wikipedia.org/wiki/Fall_of_Saigon"
+    },
+    {
+     "title": "Wikipedia: Occupation of Japan",
+     "url": "https://en.wikipedia.org/wiki/Occupation_of_Japan"
+    },
+    {
+     "title": "Wikipedia: United States Civil Administration of the Ryukyu Islands",
+     "url": "https://en.wikipedia.org/wiki/United_States_Civil_Administration_of_the_Ryukyu_Islands"
+    },
+    {
+     "title": "Wikipedia: United States Army Military Government in Korea",
+     "url": "https://en.wikipedia.org/wiki/United_States_Army_Military_Government_in_Korea"
+    },
+    {
+     "title": "Wikipedia: Allied-occupied Germany",
+     "url": "https://en.wikipedia.org/wiki/Allied-occupied_Germany"
+    },
+    {
+     "title": "Wikipedia: Coalition Provisional Authority",
+     "url": "https://en.wikipedia.org/wiki/Coalition_Provisional_Authority"
+    },
+    {
+     "title": "Wikipedia: Greenland in World War II",
+     "url": "https://en.wikipedia.org/wiki/Greenland_in_World_War_II"
+    },
+    {
+     "title": "Wikipedia: Japanese occupation of the Philippines",
+     "url": "https://en.wikipedia.org/wiki/Japanese_occupation_of_the_Philippines"
+    },
+    {
+     "title": "Wikipedia: Military Government of Cuba",
+     "url": "https://en.wikipedia.org/wiki/Military_Government_of_Cuba"
+    },
+    {
+     "title": "Wikipedia: Provisional Government of Cuba",
+     "url": "https://en.wikipedia.org/wiki/Provisional_Government_of_Cuba"
+    }
+   ]
+  },
+  {
+   "realm": "Empire of Haiti",
+   "years": [
+    1821,
+    1915
+   ],
+   "severity": "error",
+   "issue": "Labelled 'Empire of Haiti' for 1821-1915; Haiti was an empire only 1804-06 and 1849-59, a republic 1820-49 and from 1859. Relabelled Republic of Haiti (1821-48, 1859-1915).",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Republic of Haiti (1820–1849)",
+    "url": "https://en.wikipedia.org/wiki/Republic_of_Haiti_%281820%E2%80%931849%29"
+   },
+   "sources": [
+    {
+     "title": "Wikipedia: Second Empire of Haiti",
+     "url": "https://en.wikipedia.org/wiki/Second_Empire_of_Haiti"
+    },
+    {
+     "title": "Wikipedia: First Empire of Haiti",
+     "url": "https://en.wikipedia.org/wiki/First_Empire_of_Haiti"
+    }
+   ]
+  },
+  {
+   "realm": "Argentine Confederation",
+   "years": [
+    1862,
+    1929
+   ],
+   "severity": "error",
+   "issue": "Argentina labelled 'Argentine Confederation' until 1929; the Confederation ended with Pavón (1861) and reunification as the Argentine Republic in 1862. Relabelled.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Argentine Confederation",
+    "url": "https://en.wikipedia.org/wiki/Argentine_Confederation"
+   },
+   "sources": [
+    {
+     "title": "Wikipedia: History of Argentina",
+     "url": "https://en.wikipedia.org/wiki/History_of_Argentina"
+    }
+   ]
+  },
+  {
+   "realm": "Republic of Colombia",
+   "years": [
+    1866,
+    1885
+   ],
+   "severity": "error",
+   "issue": "Labelled Republic of Colombia from 1866, but the 1863-1886 state was the United States of Colombia (the map ends that realm in 1865). Relabelled for 1866-85.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: United States of Colombia",
+    "url": "https://en.wikipedia.org/wiki/United_States_of_Colombia"
+   }
+  },
+  {
+   "realm": "Republic of Baja California",
+   "years": [
+    1855,
+    1856
+   ],
+   "severity": "error",
+   "issue": "Walker's Republic of Lower California existed Nov 1853-May 1854, but the map draws it over the whole peninsula through 1855; the 1856 shape labelled with this name is actually Nicaragua (Walker's presidency, July 1856-May 1857), leaving Nicaragua blank in 1856. Relabelled 1855 as Mexico, 1856 as Republic of Nicaragua.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Republic of Baja California",
+    "url": "https://en.wikipedia.org/wiki/Republic_of_Baja_California"
+   },
+   "sources": [
+    {
+     "title": "Wikipedia: William Walker (filibuster)",
+     "url": "https://en.wikipedia.org/wiki/William_Walker_%28filibuster%29"
+    }
+   ]
+  },
+  {
+   "realm": "Republic of the Rio Grande",
+   "years": [
+    1841,
+    1841
+   ],
+   "severity": "error",
+   "issue": "Revolt ended 6 November 1840 at Camargo; map keeps the 300,000 km2 republic through 1841 (Monterrey 1841). Relabelled 1841 as Centralist Mexico.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Republic of the Rio Grande",
+    "url": "https://en.wikipedia.org/wiki/Republic_of_the_Rio_Grande"
+   }
+  },
+  {
+   "realm": "Federated Republic of Mexico",
+   "years": [
+    1836,
+    1841
+   ],
+   "severity": "error",
+   "issue": "A northern 'Federated Republic of Mexico' polygon (incl. Santa Fe, New Mexico) is drawn alongside Centralist Mexico in 1836-41; Mexico was a centralist republic 1835-46 and New Mexico a department of it. Relabelled to Centralist Mexico, matching the existing 1842-45 relabel.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Centralist Republic of Mexico",
+    "url": "https://en.wikipedia.org/wiki/Centralist_Republic_of_Mexico"
+   },
+   "sources": [
+    {
+     "title": "Wikipedia: Santa Fe de Nuevo México",
+     "url": "https://en.wikipedia.org/wiki/Santa_Fe_de_Nuevo_M%C3%A9xico"
+    }
+   ]
+  },
+  {
+   "realm": "California Republic",
+   "years": [
+    1847,
+    1847
+   ],
+   "severity": "error",
+   "issue": "The Bear Flag republic lasted 14 June-9 July 1846; the map keeps it (Bay Area to Monterey) through 1847. Relabelled 1847 as Mexico (de jure until the 1848 treaty; neighbouring Los Angeles is Mexican on the map in 1847).",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: California Republic",
+    "url": "https://en.wikipedia.org/wiki/California_Republic"
+   },
+   "sources": [
+    {
+     "title": "Wikipedia: Conquest of California",
+     "url": "https://en.wikipedia.org/wiki/Conquest_of_California"
+    }
+   ]
+  },
+  {
+   "realm": "France Antarctique",
+   "years": [
+    1564,
+    1571
+   ],
+   "severity": "error",
+   "issue": "France Antarctique drawn on Guanabara Bay until 1571, though the Portuguese founded Rio in 1565 and expelled the French in January 1567; the same realm also carries a Florida piece (Fort Caroline, destroyed 1565) through 1571. Cropped to Brazil from 1566 and relabelled Portuguese 1567-71.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: France Antarctique",
+    "url": "https://en.wikipedia.org/wiki/France_Antarctique"
+   },
+   "sources": [
+    {
+     "title": "Wikipedia: Rio de Janeiro",
+     "url": "https://en.wikipedia.org/wiki/Rio_de_Janeiro"
+    },
+    {
+     "title": "Wikipedia: Fort Caroline",
+     "url": "https://en.wikipedia.org/wiki/Fort_Caroline"
+    }
+   ]
+  },
+  {
+   "realm": "Itza Mayans",
+   "years": [
+    1697,
+    1699
+   ],
+   "severity": "error",
+   "issue": "Itza kingdom drawn until 1699; Nojpetén fell to Martín de Ursúa in 1697. Relabelled 1697-99 as Spanish.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Spanish conquest of Petén",
+    "url": "https://en.wikipedia.org/wiki/Spanish_conquest_of_Pet%C3%A9n"
+   }
+  },
+  {
+   "realm": "Gran Colombia",
+   "years": [
+    1824,
+    1831
+   ],
+   "severity": "error",
+   "issue": "1824-29 shape includes Upper Peru, so Sucre and La Paz show Gran Colombia over Bolivia (overlap 1825-29); Upper Peru was never part of it. 1830-31 still labelled Gran Colombia after Venezuela and Ecuador seceded (1830). Cropped Upper Peru out 1824-29 and relabelled 1830-31 as the successor states. Left as is: the existing clip at 1831 leaves Venezuela, New Granada and Ecuador blank in 1832-33 (their realms start in 1834).",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Dissolution of Gran Colombia",
+    "url": "https://en.wikipedia.org/wiki/Dissolution_of_Gran_Colombia"
+   },
+   "sources": [
+    {
+     "title": "Wikipedia: Bolivian War of Independence",
+     "url": "https://en.wikipedia.org/wiki/Bolivian_War_of_Independence"
+    },
+    {
+     "title": "Wikipedia: History of Ecuador",
+     "url": "https://en.wikipedia.org/wiki/History_of_Ecuador"
+    }
+   ]
+  },
+  {
+   "realm": "Saint Kitts",
+   "years": [
+    1967,
+    2024
+   ],
+   "severity": "error",
+   "issue": "The 'Saint Kitts' polygon is at 64.9-64.6W, 17.6-17.8N: Saint Croix, US Virgin Islands (US since 1917). Saint Kitts and Nevis (62.7W) is not drawn at all. Relabelled to United States of America; Saint Kitts itself remains missing.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Saint Croix",
+    "url": "https://en.wikipedia.org/wiki/Saint_Croix"
+   },
+   "sources": [
+    {
+     "title": "Wikipedia: Saint Kitts and Nevis",
+     "url": "https://en.wikipedia.org/wiki/Saint_Kitts_and_Nevis"
+    }
+   ]
+  },
+  {
+   "realm": "Antigua and Barbuda",
+   "years": [
+    1967,
+    1980
+   ],
+   "severity": "error",
+   "issue": "Drawn as an independent state from 1967; Antigua was a British associated state until independence on 1 November 1981. Relabelled as British 1967-80.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Antigua and Barbuda",
+    "url": "https://en.wikipedia.org/wiki/Antigua_and_Barbuda"
+   },
+   "sources": [
+    {
+     "title": "Wikipedia: West Indies Associated States",
+     "url": "https://en.wikipedia.org/wiki/West_Indies_Associated_States"
+    }
+   ]
+  },
+  {
+   "realm": "Saint Vincent",
+   "years": [
+    1969,
+    1978
+   ],
+   "severity": "error",
+   "issue": "Drawn as independent from 1969; Saint Vincent was a British associated state until 27 October 1979. Relabelled as British 1969-78.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Saint Vincent and the Grenadines",
+    "url": "https://en.wikipedia.org/wiki/Saint_Vincent_and_the_Grenadines"
+   },
+   "sources": [
+    {
+     "title": "Wikipedia: West Indies Associated States",
+     "url": "https://en.wikipedia.org/wiki/West_Indies_Associated_States"
+    }
+   ]
+  },
+  {
+   "realm": "Kingdom of Hawaï'i",
+   "years": [
+    1893,
+    1894
+   ],
+   "severity": "warning",
+   "issue": "Kingdom drawn through 1894; overthrown January 1893, Provisional Government 1893-94, Republic proclaimed 4 July 1894. Relabelled.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Provisional Government of Hawaii",
+    "url": "https://en.wikipedia.org/wiki/Provisional_Government_of_Hawaii"
+   },
+   "sources": [
+    {
+     "title": "Wikipedia: Republic of Hawaii",
+     "url": "https://en.wikipedia.org/wiki/Republic_of_Hawaii"
+    }
+   ]
+  },
+  {
+   "realm": "New France",
+   "years": [
+    1769,
+    1779
+   ],
+   "severity": "error",
+   "issue": "New France keeps New Orleans and the Illinois country until 1779, overlapping Spanish Louisiana (Spanish from 1762-63, firmly from 1769). Cropped Louisiana out from 1769. Quebec 1759-62 left French (de jure until the 1763 treaty) with a note.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Louisiana (New Spain)",
+    "url": "https://en.wikipedia.org/wiki/Louisiana_%28New_Spain%29"
+   },
+   "sources": [
+    {
+     "title": "Wikipedia: New Orleans",
+     "url": "https://en.wikipedia.org/wiki/New_Orleans"
+    },
+    {
+     "title": "Wikipedia: Province of Quebec (1763–1791)",
+     "url": "https://en.wikipedia.org/wiki/Province_of_Quebec_%281763%E2%80%931791%29"
+    }
+   ]
+  },
+  {
+   "realm": "French Louisiana",
+   "years": [
+    1800,
+    1804
+   ],
+   "severity": "warning",
+   "issue": "Realm named 'French Louisiana' also holds Guadeloupe, Martinique, Guiana and (1803-04) all Hispaniola; after December 1803 it contains no part of Louisiana. Relabelled 'French colonies in the Americas'. Not fixable: Port-au-Prince is drawn French in 1804 though Haiti declared independence on 1 January 1804.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Louisiana Purchase",
+    "url": "https://en.wikipedia.org/wiki/Louisiana_Purchase"
+   },
+   "sources": [
+    {
+     "title": "Wikipedia: Haitian Revolution",
+     "url": "https://en.wikipedia.org/wiki/Haitian_Revolution"
+    },
+    {
+     "title": "Wikipedia: Guadeloupe",
+     "url": "https://en.wikipedia.org/wiki/Guadeloupe"
+    }
+   ]
+  },
+  {
+   "realm": "Los Altos",
+   "years": [
+    1840,
+    1841
+   ],
+   "severity": "warning",
+   "issue": "Los Altos existed 1838-January 1840 (and 1848-49); the map draws it 1840-41 and shows the Central American federation there in 1838-39. Relabelled 1841 as Guatemala; 1838-39 cannot be added.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Los Altos (state)",
+    "url": "https://en.wikipedia.org/wiki/Los_Altos_%28state%29"
+   }
+  },
+  {
+   "realm": "Toltec",
+   "years": [
+    875,
+    1187
+   ],
+   "severity": "warning",
+   "issue": "The Toltec polygon (99.18-98.16W) lies east of Tula (99.34W), the Toltec capital, and covers the Teotihuacan valley instead. Note added; geometry cannot be moved.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Tula (Mesoamerican site)",
+    "url": "https://en.wikipedia.org/wiki/Tula_%28Mesoamerican_site%29"
+   }
+  },
+  {
+   "realm": "Norse Greenland",
+   "years": [
+    1072,
+    1384
+   ],
+   "severity": "warning",
+   "issue": "Eastern Settlement (Brattahlíð 45.5W, Hvalsey) is not covered: the southern polygon sits at 50-47W. Realm starts 1072 (settlement c. 985) and ends 1384 (last record 1408). Note added.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Eastern Settlement",
+    "url": "https://en.wikipedia.org/wiki/Eastern_Settlement"
+   },
+   "sources": [
+    {
+     "title": "Wikipedia: Western Settlement",
+     "url": "https://en.wikipedia.org/wiki/Western_Settlement"
+    }
+   ]
+  },
+  {
+   "realm": "(missing realms)",
+   "years": [
+    -200,
+    1100
+   ],
+   "severity": "warning",
+   "issue": "No polygons at all for Tiwanaku or the Wari Empire (nothing drawn at Tiwanaku 500-1000 CE), nor for Saint Kitts and Nevis; Olmec starts at -650, missing San Lorenzo (1200-900 BCE). Cannot be fixed with corrections.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Tiwanaku",
+    "url": "https://en.wikipedia.org/wiki/Tiwanaku"
+   },
+   "sources": [
+    {
+     "title": "Wikipedia: Wari Empire",
+     "url": "https://en.wikipedia.org/wiki/Wari_Empire"
+    },
+    {
+     "title": "Wikipedia: La Venta",
+     "url": "https://en.wikipedia.org/wiki/La_Venta"
+    }
+   ]
+  },
+  {
+   "realm": "Mexico",
+   "years": [
+    1913,
+    1919
+   ],
+   "severity": "warning",
+   "issue": "Nothing is drawn at Mexico City in 1913-1919, although national governments (Huerta, then Carranza; 1917 Constitution) held the capital. Cannot be fixed with corrections.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Mexican Revolution",
+    "url": "https://en.wikipedia.org/wiki/Mexican_Revolution"
+   }
+  },
+  {
+   "realm": "Empire of Brazil",
+   "years": [
+    1870,
+    1876
+   ],
+   "severity": "warning",
+   "issue": "Paraguay (Asunción) is drawn as Brazil in 1870-76 (post-war occupation); Paraguay remained a state. A crop box cannot remove it without cutting southern Brazil. Note added.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Paraguayan War",
+    "url": "https://en.wikipedia.org/wiki/Paraguayan_War"
+   }
+  },
+  {
+   "realm": "Bolivia",
+   "years": [
+    1879,
+    1904
+   ],
+   "severity": "warning",
+   "issue": "Antofagasta and the Litoral stay Bolivian until 1904 (Chile occupied them in 1879; 1884 truce; 1904 treaty). Acceptable as de jure; note added.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: War of the Pacific",
+    "url": "https://en.wikipedia.org/wiki/War_of_the_Pacific"
+   },
+   "sources": [
+    {
+     "title": "Wikipedia: Treaty of Peace and Friendship (1904)",
+     "url": "https://en.wikipedia.org/wiki/Treaty_of_Peace_and_Friendship_%281904%29"
+    }
+   ]
+  },
+  {
+   "realm": "Chimu Empire",
+   "years": [
+    1470,
+    1481
+   ],
+   "severity": "warning",
+   "issue": "Chimor kept independent until 1481; the Inca conquest was around 1470. Not clipped because the Inca polygon does not cover Chan Chan before 1482 (a clip would leave a gap). Note added.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Chimor",
+    "url": "https://en.wikipedia.org/wiki/Chimor"
+   }
+  },
+  {
+   "realm": "Michoacán",
+   "years": [
+    1305,
+    1533
+   ],
+   "severity": "warning",
+   "issue": "Linked to Wikidata Q79861 (the modern Mexican state, inception 1823); should be the Purépecha Empire. Map dates themselves agree with the source (founded early 14th century, lost independence 1530). The 'Mayan City-States' link flag is a false positive (Maya civilization is right).",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Purépecha Empire",
+    "url": "https://en.wikipedia.org/wiki/Pur%C3%A9pecha_Empire"
+   }
+  },
+  {
+   "realm": "Vermont Republic",
+   "years": [
+    1777,
+    1782
+   ],
+   "severity": "warning",
+   "issue": "Vermont Republic drawn from 1783; it existed 1777-1791. Cannot be extended backwards.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Vermont Republic",
+    "url": "https://en.wikipedia.org/wiki/Vermont_Republic"
+   }
+  },
+  {
+   "realm": "Spanish Empire",
+   "years": [
+    1824,
+    1852
+   ],
+   "severity": "error",
+   "issue": "Spanish polygons survive until 1852 at Lima/Callao, La Paz, Chiloé, Carmen de Patagones and the Falklands. Lima, Peru's capital, is Spanish on the map 1822-1852 (Peru excludes it); Callao, the last royalist stronghold, surrendered in January 1826 and Chiloé the same month.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Peruvian War of Independence",
+    "url": "https://en.wikipedia.org/wiki/Peruvian_War_of_Independence"
+   },
+   "sources": [
+    {
+     "title": "Wikipedia: Lima",
+     "url": "https://en.wikipedia.org/wiki/Lima"
+    },
+    {
+     "title": "Wikipedia: Bolivian War of Independence",
+     "url": "https://en.wikipedia.org/wiki/Bolivian_War_of_Independence"
+    }
+   ],
+   "owner": "spanish-empire",
+   "claim": {
+    "place": "Lima",
+    "lonlat": [
+     -77.03,
+     -12.05
+    ],
+    "year": 1830,
+    "realm": "Republic of Peru",
+    "not": [
+     "Spanish Empire"
+    ],
+    "region": "americas",
+    "source": {
+     "title": "Wikipedia: Peruvian War of Independence",
+     "url": "https://en.wikipedia.org/wiki/Peruvian_War_of_Independence"
+    }
+   }
+  },
+  {
+   "realm": "Spanish Empire",
+   "years": [
+    1866,
+    1872
+   ],
+   "severity": "error",
+   "issue": "Spanish Santo Domingo drawn until 1872, overlapping the Dominican Republic; Spain annexed it in March 1861 and withdrew in July 1865.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Dominican Restoration War",
+    "url": "https://en.wikipedia.org/wiki/Dominican_Restoration_War"
+   },
+   "owner": "spanish-empire",
+   "claim": {
+    "place": "Santo Domingo",
+    "lonlat": [
+     -69.93,
+     18.47
+    ],
+    "year": 1870,
+    "realm": "Dominican Republic",
+    "not": [
+     "Spanish Empire"
+    ],
+    "region": "americas",
+    "source": {
+     "title": "Wikipedia: Dominican Restoration War",
+     "url": "https://en.wikipedia.org/wiki/Dominican_Restoration_War"
+    }
+   }
+  },
+  {
+   "realm": "Spanish Empire",
+   "years": [
+    1580,
+    1775
+   ],
+   "severity": "error",
+   "issue": "Nothing is drawn at Buenos Aires before 1776, though Spain refounded it in 1580 and it was a Spanish governorate (capital of the Viceroyalty of the Río de la Plata from 1776).",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Buenos Aires",
+    "url": "https://en.wikipedia.org/wiki/Buenos_Aires"
+   },
+   "sources": [
+    {
+     "title": "Wikipedia: Viceroyalty of the Río de la Plata",
+     "url": "https://en.wikipedia.org/wiki/Viceroyalty_of_the_R%C3%ADo_de_la_Plata"
+    }
+   ],
+   "owner": "spanish-empire",
+   "claim": {
+    "place": "Buenos Aires",
+    "lonlat": [
+     -58.38,
+     -34.6
+    ],
+    "year": 1700,
+    "realm": [
+     "Spanish Empire",
+     "(Spanish Empire)"
+    ],
+    "region": "americas",
+    "source": {
+     "title": "Wikipedia: Buenos Aires",
+     "url": "https://en.wikipedia.org/wiki/Buenos_Aires"
+    }
+   }
+  },
+  {
+   "realm": "Spanish Empire",
+   "years": [
+    1817,
+    1819
+   ],
+   "severity": "error",
+   "issue": "Santiago de Chile is Spanish on the map through 1819 (Republic of Chile missing 1815-1819); patriots retook Santiago after Chacabuco (February 1817) and Chile declared independence in 1818.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Chilean War of Independence",
+    "url": "https://en.wikipedia.org/wiki/Chilean_War_of_Independence"
+   },
+   "sources": [
+    {
+     "title": "Wikipedia: Reconquista (Spanish America)",
+     "url": "https://en.wikipedia.org/wiki/Reconquista_%28Spanish_America%29"
+    }
+   ],
+   "owner": "spanish-empire",
+   "claim": {
+    "place": "Santiago (Chile)",
+    "lonlat": [
+     -70.65,
+     -33.45
+    ],
+    "year": 1818,
+    "realm": "Republic of Chile",
+    "not": [
+     "Spanish Empire"
+    ],
+    "region": "americas",
+    "source": {
+     "title": "Wikipedia: Chilean War of Independence",
+     "url": "https://en.wikipedia.org/wiki/Chilean_War_of_Independence"
+    }
+   }
+  },
+  {
+   "realm": "Tenochtitlan",
+   "years": [
+    1326,
+    1428
+   ],
+   "severity": "error",
+   "issue": "The Tenochtitlan polygon (98.93-98.40W) lies entirely east of the city (99.13W) and contains Texcoco city instead, while the 'Texcoco' polygon contains Tenochtitlan; the labels look swapped. Fixing needs a relabel on both (Tenochtitlan is an Aztec-journey realm).",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Tenochtitlan",
+    "url": "https://en.wikipedia.org/wiki/Tenochtitlan"
+   },
+   "owner": "aztec-empire",
+   "claim": {
+    "place": "Tenochtitlan",
+    "lonlat": [
+     -99.13,
+     19.43
+    ],
+    "year": 1400,
+    "realm": "Tenochtitlan",
+    "not": [
+     "Texcoco"
+    ],
+    "region": "americas",
+    "source": {
+     "title": "Wikipedia: Tenochtitlan",
+     "url": "https://en.wikipedia.org/wiki/Tenochtitlan"
+    }
+   }
+  },
+  {
+   "realm": "Portuguese Empire",
+   "years": [
+    1805,
+    1808
+   ],
+   "severity": "error",
+   "issue": "French Guiana, Guadeloupe and Martinique are drawn Portuguese from 1805; Portugal occupied French Guiana only in 1809-1817 and never held Guadeloupe or Martinique (French until British capture in 1809-10).",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: French Guiana",
+    "url": "https://en.wikipedia.org/wiki/French_Guiana"
+   },
+   "sources": [
+    {
+     "title": "Wikipedia: Guadeloupe",
+     "url": "https://en.wikipedia.org/wiki/Guadeloupe"
+    }
+   ],
+   "owner": "portuguese-empire",
+   "claim": {
+    "place": "Basse-Terre (Guadeloupe)",
+    "lonlat": [
+     -61.73,
+     16.0
+    ],
+    "year": 1806,
+    "realm": [
+     "(First French Empire)",
+     "First French Empire",
+     "First French colonial empire"
+    ],
+    "not": [
+     "Portuguese Empire"
+    ],
+    "region": "americas",
+    "source": {
+     "title": "Wikipedia: French Guiana",
+     "url": "https://en.wikipedia.org/wiki/French_Guiana"
+    }
+   }
+  },
+  {
+   "realm": "British Colonial Empire",
+   "years": [
+    1949,
+    1972
+   ],
+   "severity": "error",
+   "issue": "British shading overlaps Canada in Newfoundland and Labrador in 1950 (55 grid cells); Newfoundland joined Canada on 31 March 1949.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Newfoundland (island)",
+    "url": "https://en.wikipedia.org/wiki/Newfoundland_%28island%29"
+   },
+   "owner": "british-empire",
+   "claim": {
+    "place": "St. John's (Newfoundland)",
+    "lonlat": [
+     -52.71,
+     47.56
+    ],
+    "year": 1950,
+    "realm": "Canada",
+    "not": [
+     "British Colonial Empire"
+    ],
+    "region": "americas",
+    "source": {
+     "title": "Wikipedia: Newfoundland (island)",
+     "url": "https://en.wikipedia.org/wiki/Newfoundland_%28island%29"
+    }
+   }
+  },
+  {
+   "realm": "British Colonial Empire",
+   "years": [
+    1973,
+    2024
+   ],
+   "severity": "warning",
+   "issue": "British shading still overlaps the Bahamas after independence (10 July 1973), and the Bahamas polygon misses New Providence (Nassau, the capital): nothing is drawn at Nassau.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: The Bahamas",
+    "url": "https://en.wikipedia.org/wiki/The_Bahamas"
+   },
+   "owner": "british-empire",
+   "claim": {
+    "place": "Andros (Bahamas)",
+    "lonlat": [
+     -77.9,
+     24.7
+    ],
+    "year": 1980,
+    "realm": "Commonwealth of The Bahamas",
+    "not": [
+     "British Colonial Empire"
+    ],
+    "region": "americas",
+    "source": {
+     "title": "Wikipedia: The Bahamas",
+     "url": "https://en.wikipedia.org/wiki/The_Bahamas"
+    }
+   }
+  },
+  {
+   "realm": "British Colonial Empire",
+   "years": [
+    1974,
+    1982
+   ],
+   "severity": "error",
+   "issue": "Belize is British until 1982 (independent 21 September 1981; Belize realm starts 1983) and Grenada British in 1974-75 (independent 7 February 1974; Grenada realm starts 1976).",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Belize",
+    "url": "https://en.wikipedia.org/wiki/Belize"
+   },
+   "sources": [
+    {
+     "title": "Wikipedia: Grenada",
+     "url": "https://en.wikipedia.org/wiki/Grenada"
+    }
+   ],
+   "owner": "british-empire",
+   "claim": {
+    "place": "Belize City",
+    "lonlat": [
+     -88.2,
+     17.5
+    ],
+    "year": 1982,
+    "realm": "Belize",
+    "not": [
+     "British Colonial Empire"
+    ],
+    "region": "americas",
+    "source": {
+     "title": "Wikipedia: Belize",
+     "url": "https://en.wikipedia.org/wiki/Belize"
+    }
+   }
+  }
+ ],
+ "corrections": {
+  "United States of America": {
+   "crop": [
+    {
+     "from": 1942,
+     "to": 1944,
+     "box": [
+      -180,
+      -20,
+      -60,
+      72
+     ]
+    },
+    {
+     "from": 1953,
+     "to": 1972,
+     "box": [
+      -180,
+      17.6,
+      129.4,
+      72
+     ]
+    },
+    {
+     "from": 1973,
+     "to": 2023,
+     "box": [
+      -180,
+      -20,
+      -60,
+      72
+     ]
+    }
+   ],
+   "note": "Occupation zones and wartime bases abroad are not shaded after they ended: Japan's occupation ended in 1952, US troops left South Vietnam in 1973 and Iraq regained sovereignty in 2004, while Okinawa stayed under US rule until 1972. South Korea and West Germany had their own governments from 1948–49, but the map still shades them as American until 1972; Greenland and Iceland still appear in 1941 and 1945 only because those years' shape also holds the Philippines.",
+   "sources": [
+    {
+     "title": "Wikipedia: Occupation of Japan",
+     "url": "https://en.wikipedia.org/wiki/Occupation_of_Japan"
+    },
+    {
+     "title": "Wikipedia: United States Civil Administration of the Ryukyu Islands",
+     "url": "https://en.wikipedia.org/wiki/United_States_Civil_Administration_of_the_Ryukyu_Islands"
+    },
+    {
+     "title": "Wikipedia: Fall of Saigon",
+     "url": "https://en.wikipedia.org/wiki/Fall_of_Saigon"
+    },
+    {
+     "title": "Wikipedia: Coalition Provisional Authority",
+     "url": "https://en.wikipedia.org/wiki/Coalition_Provisional_Authority"
+    },
+    {
+     "title": "Wikipedia: Greenland in World War II",
+     "url": "https://en.wikipedia.org/wiki/Greenland_in_World_War_II"
+    },
+    {
+     "title": "Wikipedia: Japanese occupation of the Philippines",
+     "url": "https://en.wikipedia.org/wiki/Japanese_occupation_of_the_Philippines"
+    }
+   ]
+  },
+  "Empire of Haiti": {
+   "relabel": [
+    {
+     "from": 1821,
+     "to": 1848,
+     "name": "Republic of Haiti",
+     "key": "Republic of Haiti",
+     "addTo": [
+      "Republic of Haiti"
+     ]
+    },
+    {
+     "from": 1859,
+     "to": 1915,
+     "name": "Republic of Haiti",
+     "key": "Republic of Haiti",
+     "addTo": [
+      "Republic of Haiti"
+     ]
+    }
+   ],
+   "note": "Haiti was an empire only under Dessalines (1804–06) and Soulouque (1849–59); from 1820 to 1849 and after 1859 it was a republic and is labelled so.",
+   "sources": [
+    {
+     "title": "Wikipedia: First Empire of Haiti",
+     "url": "https://en.wikipedia.org/wiki/First_Empire_of_Haiti"
+    },
+    {
+     "title": "Wikipedia: Republic of Haiti (1820–1849)",
+     "url": "https://en.wikipedia.org/wiki/Republic_of_Haiti_%281820%E2%80%931849%29"
+    },
+    {
+     "title": "Wikipedia: Second Empire of Haiti",
+     "url": "https://en.wikipedia.org/wiki/Second_Empire_of_Haiti"
+    }
+   ]
+  },
+  "Argentine Confederation": {
+   "relabel": [
+    {
+     "from": 1862,
+     "to": 1929,
+     "name": "Argentine Republic",
+     "key": "Argentine Republic",
+     "addTo": [
+      "Argentine Republic"
+     ]
+    }
+   ],
+   "note": "After the Battle of Pavón (1861) Buenos Aires rejoined and the country was reunited as the Argentine Republic in 1862; it is labelled so from 1862.",
+   "sources": [
+    {
+     "title": "Wikipedia: Argentine Confederation",
+     "url": "https://en.wikipedia.org/wiki/Argentine_Confederation"
+    },
+    {
+     "title": "Wikipedia: History of Argentina",
+     "url": "https://en.wikipedia.org/wiki/History_of_Argentina"
+    }
+   ]
+  },
+  "Republic of Colombia": {
+   "relabel": [
+    {
+     "from": 1866,
+     "to": 1885,
+     "name": "United States of Colombia",
+     "key": "United States of Colombia",
+     "addTo": [
+      "United States of Colombia"
+     ]
+    }
+   ],
+   "note": "Under the 1863 constitution the country was the United States of Colombia until the 1886 constitution made it the Republic of Colombia; it is labelled so for 1866–85.",
+   "sources": [
+    {
+     "title": "Wikipedia: United States of Colombia",
+     "url": "https://en.wikipedia.org/wiki/United_States_of_Colombia"
+    }
+   ]
+  },
+  "Republic of Baja California": {
+   "relabel": [
+    {
+     "from": 1855,
+     "to": 1855,
+     "name": "Federated Republic of Mexico",
+     "key": "Federated Republic of Mexico",
+     "addTo": [
+      "Federated Republic of Mexico"
+     ]
+    },
+    {
+     "from": 1856,
+     "to": 1856,
+     "name": "Republic of Nicaragua",
+     "key": "Republic of Nicaragua",
+     "addTo": [
+      "Republic of Nicaragua"
+     ]
+    }
+   ],
+   "note": "William Walker declared this republic at La Paz in November 1853 and abandoned it in May 1854, so the 1855 shape is shown as Mexico. The 1856 shape is Nicaragua, where Walker made himself president in July 1856.",
+   "sources": [
+    {
+     "title": "Wikipedia: Republic of Baja California",
+     "url": "https://en.wikipedia.org/wiki/Republic_of_Baja_California"
+    },
+    {
+     "title": "Wikipedia: William Walker (filibuster)",
+     "url": "https://en.wikipedia.org/wiki/William_Walker_%28filibuster%29"
+    }
+   ]
+  },
+  "Republic of the Rio Grande": {
+   "relabel": [
+    {
+     "from": 1841,
+     "to": 1841,
+     "name": "Centralist Mexico",
+     "key": "Centralist Mexico",
+     "addTo": [
+      "Centralist Mexico"
+     ]
+    }
+   ],
+   "note": "This federalist revolt ended with Antonio Canales's surrender at Camargo on 6 November 1840; the 1841 shape is shown as Mexico.",
+   "sources": [
+    {
+     "title": "Wikipedia: Republic of the Rio Grande",
+     "url": "https://en.wikipedia.org/wiki/Republic_of_the_Rio_Grande"
+    }
+   ]
+  },
+  "Federated Republic of Mexico": {
+   "relabel": [
+    {
+     "from": 1836,
+     "to": 1841,
+     "name": "Centralist Mexico",
+     "key": "Centralist Mexico",
+     "addTo": [
+      "Centralist Mexico"
+     ]
+    },
+    {
+     "from": 1842,
+     "to": 1845,
+     "name": "Centralist Mexico",
+     "key": "Centralist Mexico",
+     "addTo": [
+      "Centralist Mexico"
+     ]
+    }
+   ],
+   "note": "In 1836–1841 too, the northern polygon (New Mexico and the north) was part of the Centralist Republic, not a separate federal state.",
+   "sources": [
+    {
+     "title": "Wikipedia: Centralist Republic of Mexico",
+     "url": "https://en.wikipedia.org/wiki/Centralist_Republic_of_Mexico"
+    },
+    {
+     "title": "Wikipedia: Santa Fe de Nuevo México",
+     "url": "https://en.wikipedia.org/wiki/Santa_Fe_de_Nuevo_M%C3%A9xico"
+    }
+   ]
+  },
+  "California Republic": {
+   "relabel": [
+    {
+     "from": 1847,
+     "to": 1847,
+     "name": "Federated Republic of Mexico",
+     "key": "Federated Republic of Mexico",
+     "addTo": [
+      "Federated Republic of Mexico"
+     ]
+    }
+   ],
+   "note": "The Bear Flag republic lasted only from 14 June to 9 July 1846, when US forces took over; the 1847 shape is shown as Mexican territory, which in law it stayed until the 1848 treaty.",
+   "sources": [
+    {
+     "title": "Wikipedia: California Republic",
+     "url": "https://en.wikipedia.org/wiki/California_Republic"
+    },
+    {
+     "title": "Wikipedia: Conquest of California",
+     "url": "https://en.wikipedia.org/wiki/Conquest_of_California"
+    },
+    {
+     "title": "Wikipedia: Mexican Cession",
+     "url": "https://en.wikipedia.org/wiki/Mexican_Cession"
+    }
+   ]
+  },
+  "France Antarctique": {
+   "crop": [
+    {
+     "from": 1566,
+     "to": 1571,
+     "box": [
+      -50,
+      -30,
+      -35,
+      -15
+     ]
+    }
+   ],
+   "relabel": [
+    {
+     "from": 1567,
+     "to": 1571,
+     "name": "Portuguese Empire",
+     "key": "(Portuguese Empire)"
+    }
+   ],
+   "note": "The French colony on Guanabara Bay (1555–67) was driven out by the Portuguese, who founded Rio de Janeiro in 1565 and won in January 1567; the 1567–71 shape is shown as Portuguese. The small shape in Florida is Fort Caroline, a separate French colony destroyed by Spain in 1565, and is not drawn after that.",
+   "sources": [
+    {
+     "title": "Wikipedia: France Antarctique",
+     "url": "https://en.wikipedia.org/wiki/France_Antarctique"
+    },
+    {
+     "title": "Wikipedia: Rio de Janeiro",
+     "url": "https://en.wikipedia.org/wiki/Rio_de_Janeiro"
+    },
+    {
+     "title": "Wikipedia: Fort Caroline",
+     "url": "https://en.wikipedia.org/wiki/Fort_Caroline"
+    }
+   ]
+  },
+  "Itza Mayans": {
+   "relabel": [
+    {
+     "from": 1697,
+     "to": 1699,
+     "name": "Spanish Empire",
+     "key": "(Spanish Empire)"
+    }
+   ],
+   "note": "Spanish forces took Nojpetén, the Itza capital, in March 1697; the 1697–99 shape is shown as Spanish.",
+   "sources": [
+    {
+     "title": "Wikipedia: Spanish conquest of Petén",
+     "url": "https://en.wikipedia.org/wiki/Spanish_conquest_of_Pet%C3%A9n"
+    }
+   ]
+  },
+  "Gran Colombia": {
+   "crop": [
+    {
+     "from": 1824,
+     "to": 1829,
+     "box": [
+      -90,
+      -7,
+      -55,
+      15
+     ]
+    }
+   ],
+   "relabel": [
+    {
+     "from": 1830,
+     "to": 1831,
+     "name": "Venezuela, New Granada and Ecuador",
+     "key": "Venezuela, New Granada and Ecuador"
+    }
+   ],
+   "note": "The Upper Peru block is not drawn after 1823. Venezuela and Ecuador broke away in 1830 and the union was formally dissolved in November 1831, so for 1830–31 the shape is labelled as the three successor states.",
+   "sources": [
+    {
+     "title": "Wikipedia: Dissolution of Gran Colombia",
+     "url": "https://en.wikipedia.org/wiki/Dissolution_of_Gran_Colombia"
+    },
+    {
+     "title": "Wikipedia: Bolivian War of Independence",
+     "url": "https://en.wikipedia.org/wiki/Bolivian_War_of_Independence"
+    }
+   ]
+  },
+  "Saint Kitts": {
+   "relabel": [
+    {
+     "from": 1967,
+     "to": 2024,
+     "name": "United States of America",
+     "key": "United States of America",
+     "addTo": [
+      "United States of America"
+     ]
+    }
+   ],
+   "note": "This shape is Saint Croix in the US Virgin Islands (bought from Denmark in 1917), not Saint Kitts, so it is shown as part of the United States. Saint Kitts and Nevis, independent since 1983, is not drawn on this map.",
+   "sources": [
+    {
+     "title": "Wikipedia: Saint Croix",
+     "url": "https://en.wikipedia.org/wiki/Saint_Croix"
+    },
+    {
+     "title": "Wikipedia: Saint Kitts and Nevis",
+     "url": "https://en.wikipedia.org/wiki/Saint_Kitts_and_Nevis"
+    }
+   ]
+  },
+  "Antigua and Barbuda": {
+   "relabel": [
+    {
+     "from": 1967,
+     "to": 1980,
+     "name": "Antigua (British associated state)",
+     "key": "(British Empire)"
+    }
+   ],
+   "note": "Antigua was a self-governing British associated state from 1967 and became independent on 1 November 1981; before that it is shown as British.",
+   "sources": [
+    {
+     "title": "Wikipedia: Antigua and Barbuda",
+     "url": "https://en.wikipedia.org/wiki/Antigua_and_Barbuda"
+    },
+    {
+     "title": "Wikipedia: West Indies Associated States",
+     "url": "https://en.wikipedia.org/wiki/West_Indies_Associated_States"
+    }
+   ]
+  },
+  "Saint Vincent": {
+   "relabel": [
+    {
+     "from": 1969,
+     "to": 1978,
+     "name": "Saint Vincent (British associated state)",
+     "key": "(British Empire)"
+    }
+   ],
+   "note": "Saint Vincent was a British associated state from 1969 and became independent on 27 October 1979; before that it is shown as British.",
+   "sources": [
+    {
+     "title": "Wikipedia: Saint Vincent and the Grenadines",
+     "url": "https://en.wikipedia.org/wiki/Saint_Vincent_and_the_Grenadines"
+    },
+    {
+     "title": "Wikipedia: West Indies Associated States",
+     "url": "https://en.wikipedia.org/wiki/West_Indies_Associated_States"
+    }
+   ]
+  },
+  "Kingdom of Hawaï'i": {
+   "relabel": [
+    {
+     "from": 1893,
+     "to": 1893,
+     "name": "Provisional Government of Hawaii",
+     "key": "Provisional Government of Hawaii"
+    },
+    {
+     "from": 1894,
+     "to": 1894,
+     "name": "Republic of Hawai'i",
+     "key": "Republic of Hawai'i",
+     "addTo": [
+      "Republic of Hawai'i"
+     ]
+    }
+   ],
+   "note": "The monarchy was overthrown in January 1893; a provisional government ruled until the Republic of Hawaii was proclaimed on 4 July 1894.",
+   "sources": [
+    {
+     "title": "Wikipedia: Hawaiian Kingdom",
+     "url": "https://en.wikipedia.org/wiki/Hawaiian_Kingdom"
+    },
+    {
+     "title": "Wikipedia: Provisional Government of Hawaii",
+     "url": "https://en.wikipedia.org/wiki/Provisional_Government_of_Hawaii"
+    },
+    {
+     "title": "Wikipedia: Republic of Hawaii",
+     "url": "https://en.wikipedia.org/wiki/Republic_of_Hawaii"
+    }
+   ]
+  },
+  "French Louisiana": {
+   "relabel": [
+    {
+     "from": 1800,
+     "to": 1804,
+     "name": "French colonies in the Americas",
+     "key": "(French Consulate)"
+    }
+   ],
+   "note": "Louisiana was handed back to France in 1800 but Spain ran it until 30 November 1803, and France passed it to the United States on 20 December 1803. This shape also holds France's Caribbean islands and Guiana, so it is labelled French colonies in the Americas; Haiti declared independence on 1 January 1804.",
+   "sources": [
+    {
+     "title": "Wikipedia: Louisiana (New Spain)",
+     "url": "https://en.wikipedia.org/wiki/Louisiana_%28New_Spain%29"
+    },
+    {
+     "title": "Wikipedia: Louisiana Purchase",
+     "url": "https://en.wikipedia.org/wiki/Louisiana_Purchase"
+    },
+    {
+     "title": "Wikipedia: Haitian Revolution",
+     "url": "https://en.wikipedia.org/wiki/Haitian_Revolution"
+    }
+   ]
+  },
+  "Los Altos": {
+   "relabel": [
+    {
+     "from": 1841,
+     "to": 1841,
+     "name": "Guatemala",
+     "key": "Guatemala",
+     "addTo": [
+      "Guatemala"
+     ]
+    }
+   ],
+   "note": "Los Altos broke away as a sixth Central American state in 1838 and was reconquered by Rafael Carrera in January 1840; the 1841 shape is shown as Guatemala.",
+   "sources": [
+    {
+     "title": "Wikipedia: Los Altos (state)",
+     "url": "https://en.wikipedia.org/wiki/Los_Altos_%28state%29"
+    }
+   ]
+  },
+  "New France": {
+   "crop": [
+    {
+     "from": 1769,
+     "to": 1779,
+     "box": [
+      -80,
+      0,
+      -50,
+      50
+     ]
+    }
+   ],
+   "note": "Louisiana passed to Spain (agreed in 1762–63, with Spanish rule firm from 1769), so from 1769 the shape no longer covers it. Quebec fell in September 1759 and Montreal in September 1760, but the map keeps Canada French until the Treaty of Paris in 1763.",
+   "sources": [
+    {
+     "title": "Wikipedia: Louisiana (New Spain)",
+     "url": "https://en.wikipedia.org/wiki/Louisiana_%28New_Spain%29"
+    },
+    {
+     "title": "Wikipedia: New Orleans",
+     "url": "https://en.wikipedia.org/wiki/New_Orleans"
+    },
+    {
+     "title": "Wikipedia: Battle of the Plains of Abraham",
+     "url": "https://en.wikipedia.org/wiki/Battle_of_the_Plains_of_Abraham"
+    },
+    {
+     "title": "Wikipedia: Montreal campaign",
+     "url": "https://en.wikipedia.org/wiki/Montreal_campaign"
+    },
+    {
+     "title": "Wikipedia: Province of Quebec (1763–1791)",
+     "url": "https://en.wikipedia.org/wiki/Province_of_Quebec_%281763%E2%80%931791%29"
+    }
+   ]
+  },
+  "Toltec": {
+   "note": "Tula, the Toltec capital, lies just west of the shape drawn here.",
+   "sources": [
+    {
+     "title": "Wikipedia: Tula (Mesoamerican site)",
+     "url": "https://en.wikipedia.org/wiki/Tula_%28Mesoamerican_site%29"
+    }
+   ]
+  },
+  "Norse Greenland": {
+   "note": "Norse settlers arrived around 985. The Western Settlement was abandoned around 1360; the Eastern Settlement around Brattahlíð and Hvalsey, which lies east of the shape drawn here, lasted longer: its last written record is a wedding in 1408.",
+   "sources": [
+    {
+     "title": "Wikipedia: Western Settlement",
+     "url": "https://en.wikipedia.org/wiki/Western_Settlement"
+    },
+    {
+     "title": "Wikipedia: Eastern Settlement",
+     "url": "https://en.wikipedia.org/wiki/Eastern_Settlement"
+    }
+   ]
+  },
+  "Empire of Brazil": {
+   "note": "Brazilian troops occupied Asunción after the Paraguayan War until 1876, but Paraguay remained a separate state; the map shades it as Brazilian in 1870–76.",
+   "sources": [
+    {
+     "title": "Wikipedia: Paraguayan War",
+     "url": "https://en.wikipedia.org/wiki/Paraguayan_War"
+    }
+   ]
+  },
+  "Bolivia": {
+   "note": "Chile occupied Bolivia's coast, including Antofagasta, in 1879 and kept it under the 1884 truce; Bolivia ceded it by the 1904 treaty, when the map moves it to Chile.",
+   "sources": [
+    {
+     "title": "Wikipedia: War of the Pacific",
+     "url": "https://en.wikipedia.org/wiki/War_of_the_Pacific"
+    },
+    {
+     "title": "Wikipedia: Treaty of Peace and Friendship (1904)",
+     "url": "https://en.wikipedia.org/wiki/Treaty_of_Peace_and_Friendship_%281904%29"
+    }
+   ]
+  },
+  "Chimu Empire": {
+   "note": "The Inca conquered Chimor around 1470; the map keeps it independent until 1481.",
+   "sources": [
+    {
+     "title": "Wikipedia: Chimor",
+     "url": "https://en.wikipedia.org/wiki/Chimor"
+    }
+   ]
+  }
+ }
+}

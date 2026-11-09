@@ -1,0 +1,1668 @@
+[
+ {
+  "place": "Uruk",
+  "lonlat": [
+   45.637,
+   31.324
+  ],
+  "year": -3300,
+  "realm": "Sumerian City-States",
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Sumer (Sumerian city-states rose in the Uruk period, 4th millennium BC)",
+   "url": "https://en.wikipedia.org/wiki/Sumer"
+  }
+ },
+ {
+  "place": "Eridu",
+  "lonlat": [
+   45.996,
+   30.816
+  ],
+  "year": -2600,
+  "realm": "Sumerian City-States",
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Sumer (Eridu and Ur among the Sumerian cities)",
+   "url": "https://en.wikipedia.org/wiki/Sumer"
+  }
+ },
+ {
+  "place": "Ur",
+  "lonlat": [
+   46.103,
+   30.963
+  ],
+  "year": -2600,
+  "realm": "Sumerian City-States",
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Sumer (Royal Cemetery at Ur, 2600-2450 BC)",
+   "url": "https://en.wikipedia.org/wiki/Sumer"
+  }
+ },
+ {
+  "place": "Girsu",
+  "lonlat": [
+   46.18,
+   31.56
+  ],
+  "year": -2400,
+  "realm": "Sumerian City-States",
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Sumer (1st Dynasty of Lagash; Eannatum annexed most of Sumer)",
+   "url": "https://en.wikipedia.org/wiki/Sumer"
+  }
+ },
+ {
+  "place": "Uruk",
+  "lonlat": [
+   45.637,
+   31.324
+  ],
+  "year": -2340,
+  "realm": "Sumerian City-States",
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Lugal-zage-si (last Sumerian king before Sargon's conquest, c. 2334 BC)",
+   "url": "https://en.wikipedia.org/wiki/Lugal-zage-si"
+  }
+ },
+ {
+  "place": "Uruk",
+  "lonlat": [
+   45.637,
+   31.324
+  ],
+  "year": -2280,
+  "realm": "Akkadian Empire",
+  "not": [
+   "Sumerian City-States"
+  ],
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Sargon of Akkad (Sargon defeated Uruk and captured Lugalzagesi)",
+   "url": "https://en.wikipedia.org/wiki/Sargon_of_Akkad"
+  }
+ },
+ {
+  "place": "Kish",
+  "lonlat": [
+   44.6,
+   32.55
+  ],
+  "year": -2300,
+  "realm": "Akkadian Empire",
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Akkadian Empire (Akkadian period 2334-2154 BC; royal estate near Kish)",
+   "url": "https://en.wikipedia.org/wiki/Akkadian_Empire"
+  }
+ },
+ {
+  "place": "Ur",
+  "lonlat": [
+   46.103,
+   30.963
+  ],
+  "year": -2280,
+  "realm": "Akkadian Empire",
+  "not": [
+   "Sumerian City-States"
+  ],
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Akkadian Empire (Sargon's daughter Enheduanna high priestess at Ur)",
+   "url": "https://en.wikipedia.org/wiki/Akkadian_Empire"
+  }
+ },
+ {
+  "place": "Nippur",
+  "lonlat": [
+   45.231,
+   32.127
+  ],
+  "year": -2250,
+  "realm": "Akkadian Empire",
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Akkadian Empire (Akkadian administrative texts from Nippur, Girsu, Umma, Adab)",
+   "url": "https://en.wikipedia.org/wiki/Akkadian_Empire"
+  }
+ },
+ {
+  "place": "Susa",
+  "lonlat": [
+   48.257,
+   32.19
+  ],
+  "year": -2250,
+  "realm": "Akkadian Empire",
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Akkadian Empire (Naram-Sin's garrisons at Susa, Tell Brak and Gasur)",
+   "url": "https://en.wikipedia.org/wiki/Akkadian_Empire"
+  }
+ },
+ {
+  "place": "Tell Brak",
+  "lonlat": [
+   41.06,
+   36.67
+  ],
+  "year": -2250,
+  "realm": "Akkadian Empire",
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Akkadian Empire (Naram-Sin's garrisons at Susa, Tell Brak and Gasur)",
+   "url": "https://en.wikipedia.org/wiki/Akkadian_Empire"
+  }
+ },
+ {
+  "place": "Susa",
+  "lonlat": [
+   48.257,
+   32.19
+  ],
+  "year": -2160,
+  "realm": "Elam",
+  "not": [
+   "Akkadian Empire"
+  ],
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Akkadian Empire (after the collapse Puzur-Inshushinak of Susa raided Akkad)",
+   "url": "https://en.wikipedia.org/wiki/Akkadian_Empire"
+  }
+ },
+ {
+  "place": "Ur",
+  "lonlat": [
+   46.103,
+   30.963
+  ],
+  "year": -2100,
+  "realm": [
+   "Sumerian City-States",
+   "Third Dynasty of Ur"
+  ],
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Third Dynasty of Ur (Ur-Nammu founded the dynasty c. 2112 BC)",
+   "url": "https://en.wikipedia.org/wiki/Third_Dynasty_of_Ur"
+  }
+ },
+ {
+  "place": "Nippur",
+  "lonlat": [
+   45.231,
+   32.127
+  ],
+  "year": -2050,
+  "realm": [
+   "Sumerian City-States",
+   "Third Dynasty of Ur"
+  ],
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Third Dynasty of Ur (Ur III archives from Nippur, Girsu and Umma)",
+   "url": "https://en.wikipedia.org/wiki/Third_Dynasty_of_Ur"
+  }
+ },
+ {
+  "place": "Girsu",
+  "lonlat": [
+   46.18,
+   31.56
+  ],
+  "year": -2050,
+  "realm": [
+   "Sumerian City-States",
+   "Third Dynasty of Ur"
+  ],
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Third Dynasty of Ur (Ur III archives from Girsu (Tello))",
+   "url": "https://en.wikipedia.org/wiki/Third_Dynasty_of_Ur"
+  }
+ },
+ {
+  "place": "Uruk",
+  "lonlat": [
+   45.637,
+   31.324
+  ],
+  "year": -2050,
+  "realm": [
+   "Sumerian City-States",
+   "Third Dynasty of Ur"
+  ],
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Gutian rule in Mesopotamia (Utu-hengal of Uruk ended Gutian rule; Ur-Nammu followed, c. 2112 BC)",
+   "url": "https://en.wikipedia.org/wiki/Gutian_rule_in_Mesopotamia"
+  }
+ },
+ {
+  "place": "Susa",
+  "lonlat": [
+   48.257,
+   32.19
+  ],
+  "year": -2050,
+  "realm": [
+   "Sumerian City-States",
+   "Third Dynasty of Ur"
+  ],
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Third Dynasty of Ur (Ur controlled the Susiana plain around Susa)",
+   "url": "https://en.wikipedia.org/wiki/Third_Dynasty_of_Ur"
+  }
+ },
+ {
+  "place": "Kish",
+  "lonlat": [
+   44.6,
+   32.55
+  ],
+  "year": -2050,
+  "realm": [
+   "Sumerian City-States",
+   "Third Dynasty of Ur"
+  ],
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Third Dynasty of Ur (the kingdom covered Sumer and Akkad)",
+   "url": "https://en.wikipedia.org/wiki/Third_Dynasty_of_Ur"
+  }
+ },
+ {
+  "place": "Babylon",
+  "lonlat": [
+   44.42,
+   32.536
+  ],
+  "year": -1780,
+  "realm": "Babylonia",
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Hammurabi (Hammurabi king of Babylon from 1792 BC)",
+   "url": "https://en.wikipedia.org/wiki/Hammurabi"
+  }
+ },
+ {
+  "place": "Larsa",
+  "lonlat": [
+   45.85,
+   31.29
+  ],
+  "year": -1770,
+  "realm": "Sumerian City-States",
+  "not": [
+   "Babylonia"
+  ],
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Hammurabi (Larsa conquered by Hammurabi in 1763 BC)",
+   "url": "https://en.wikipedia.org/wiki/Hammurabi"
+  }
+ },
+ {
+  "place": "Larsa",
+  "lonlat": [
+   45.85,
+   31.29
+  ],
+  "year": -1755,
+  "realm": "Babylonia",
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Hammurabi (Larsa conquered by Hammurabi in 1763 BC)",
+   "url": "https://en.wikipedia.org/wiki/Hammurabi"
+  }
+ },
+ {
+  "place": "Eshnunna",
+  "lonlat": [
+   44.73,
+   33.48
+  ],
+  "year": -1745,
+  "realm": "Babylonia",
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Hammurabi (Hammurabi conquered Larsa, Eshnunna and Mari)",
+   "url": "https://en.wikipedia.org/wiki/Hammurabi"
+  }
+ },
+ {
+  "place": "Mari",
+  "lonlat": [
+   40.889,
+   34.549
+  ],
+  "year": -1745,
+  "realm": "Babylonia",
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Hammurabi (Mari destroyed by Hammurabi in 1761 BC)",
+   "url": "https://en.wikipedia.org/wiki/Hammurabi"
+  }
+ },
+ {
+  "place": "Sippar",
+  "lonlat": [
+   44.25,
+   33.06
+  ],
+  "year": -1650,
+  "realm": "Babylonia",
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Old Babylonian Empire (First Babylonian dynasty c. 1894-1595 BC; core towns Sippar, Kish, Borsippa)",
+   "url": "https://en.wikipedia.org/wiki/Old_Babylonian_Empire"
+  }
+ },
+ {
+  "place": "Babylon",
+  "lonlat": [
+   44.42,
+   32.536
+  ],
+  "year": -1600,
+  "realm": "Babylonia",
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Mursili I (Mursili I sacked Babylon c. 1595 BC)",
+   "url": "https://en.wikipedia.org/wiki/Mursili_I"
+  }
+ },
+ {
+  "place": "Hattusa",
+  "lonlat": [
+   34.615,
+   40.02
+  ],
+  "year": -1550,
+  "realm": "Hittites",
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Hittites (Hattusili I made Hattusa the capital c. 1650 BC)",
+   "url": "https://en.wikipedia.org/wiki/Hittites"
+  }
+ },
+ {
+  "place": "Hattusa",
+  "lonlat": [
+   34.615,
+   40.02
+  ],
+  "year": -1250,
+  "realm": "Hittites",
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Hittites (Hattusa the Hittite capital)",
+   "url": "https://en.wikipedia.org/wiki/Hittites"
+  }
+ },
+ {
+  "place": "Aleppo",
+  "lonlat": [
+   37.16,
+   36.2
+  ],
+  "year": -1250,
+  "realm": "Hittites",
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Šuppiluliuma I (Hittite viceroys installed at Aleppo and Carchemish)",
+   "url": "https://en.wikipedia.org/wiki/%C5%A0uppiluliuma_I"
+  }
+ },
+ {
+  "place": "Carchemish",
+  "lonlat": [
+   38.01,
+   36.83
+  ],
+  "year": -1250,
+  "realm": "Hittites",
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Šuppiluliuma I (Hittite viceroys installed at Aleppo and Carchemish)",
+   "url": "https://en.wikipedia.org/wiki/%C5%A0uppiluliuma_I"
+  }
+ },
+ {
+  "place": "Kadesh",
+  "lonlat": [
+   36.52,
+   34.56
+  ],
+  "year": -1250,
+  "realm": "Hittites",
+  "not": [
+   "New Kingdom of Egypt"
+  ],
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Battle of Kadesh (Hittites kept the disputed territory; treaty of 1258 BC)",
+   "url": "https://en.wikipedia.org/wiki/Battle_of_Kadesh"
+  }
+ },
+ {
+  "place": "Ugarit",
+  "lonlat": [
+   35.78,
+   35.6
+  ],
+  "year": -1250,
+  "realm": "Hittites",
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Ugarit (a Hittite vassal state in the Late Bronze Age)",
+   "url": "https://en.wikipedia.org/wiki/Ugarit"
+  }
+ },
+ {
+  "place": "Hattusa",
+  "lonlat": [
+   34.615,
+   40.02
+  ],
+  "year": -1170,
+  "realm": null,
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Hattusa (destroyed with the Hittite state around 1190 BC)",
+   "url": "https://en.wikipedia.org/wiki/Hattusa"
+  }
+ },
+ {
+  "place": "Carchemish",
+  "lonlat": [
+   38.01,
+   36.83
+  ],
+  "year": -1100,
+  "realm": [
+   "Neo-Hittite states"
+  ],
+  "not": [
+   "Assyria"
+  ],
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Carchemish (survived the collapse as capital of a Neo-Hittite kingdom)",
+   "url": "https://en.wikipedia.org/wiki/Carchemish"
+  }
+ },
+ {
+  "place": "Thebes",
+  "lonlat": [
+   32.65,
+   25.7
+  ],
+  "year": -1540,
+  "realm": [
+   "Seventeenth Dynasty of Egypt",
+   "New Kingdom of Egypt"
+  ],
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: New Kingdom of Egypt (Ahmose reunified Egypt from Thebes)",
+   "url": "https://en.wikipedia.org/wiki/New_Kingdom_of_Egypt"
+  }
+ },
+ {
+  "place": "Memphis",
+  "lonlat": [
+   31.25,
+   29.85
+  ],
+  "year": -1500,
+  "realm": "New Kingdom of Egypt",
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: New Kingdom of Egypt (New Kingdom from c. 1550 BC)",
+   "url": "https://en.wikipedia.org/wiki/New_Kingdom_of_Egypt"
+  }
+ },
+ {
+  "place": "Megiddo",
+  "lonlat": [
+   35.18,
+   32.585
+  ],
+  "year": -1400,
+  "realm": "New Kingdom of Egypt",
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Battle of Megiddo (15th century BC) (Thutmose III defeated the Canaanite coalition, 1457 BC)",
+   "url": "https://en.wikipedia.org/wiki/Battle_of_Megiddo_(15th_century_BC)"
+  }
+ },
+ {
+  "place": "Gaza",
+  "lonlat": [
+   34.45,
+   31.5
+  ],
+  "year": -1250,
+  "realm": "New Kingdom of Egypt",
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Battle of Kadesh (Ramesses II campaigned in Canaan and held the coast)",
+   "url": "https://en.wikipedia.org/wiki/Battle_of_Kadesh"
+  }
+ },
+ {
+  "place": "Byblos",
+  "lonlat": [
+   35.65,
+   34.12
+  ],
+  "year": -1180,
+  "realm": "New Kingdom of Egypt",
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: New Kingdom of Egypt (Egyptian presence attested as far as Byblos under Ramesses III)",
+   "url": "https://en.wikipedia.org/wiki/New_Kingdom_of_Egypt"
+  }
+ },
+ {
+  "place": "Napata",
+  "lonlat": [
+   31.83,
+   18.53
+  ],
+  "year": -1400,
+  "realm": "New Kingdom of Egypt",
+  "region": "v1",
+  "source": {
+   "title": "Wikimedia Commons: Egypt 1450 BC.svg (map of the Egyptian empire in the 15th century BC)",
+   "url": "https://commons.wikimedia.org/wiki/File:Egypt_1450_BC.svg"
+  }
+ },
+ {
+  "place": "Thebes",
+  "lonlat": [
+   32.65,
+   25.7
+  ],
+  "year": -1000,
+  "realm": "Twenty-first Dynasty of Egypt",
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Third Intermediate Period of Egypt (began with Ramesses XI's death in 1077 BC)",
+   "url": "https://en.wikipedia.org/wiki/Third_Intermediate_Period_of_Egypt"
+  }
+ },
+ {
+  "place": "Memphis",
+  "lonlat": [
+   31.25,
+   29.85
+  ],
+  "year": -900,
+  "realm": "Twenty-second Dynasty of Egypt",
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Third Intermediate Period of Egypt (Shoshenq I founded the 22nd Dynasty in 945/943 BC)",
+   "url": "https://en.wikipedia.org/wiki/Third_Intermediate_Period_of_Egypt"
+  }
+ },
+ {
+  "place": "Assur",
+  "lonlat": [
+   43.26,
+   35.456
+  ],
+  "year": -905,
+  "realm": [
+   "Assyria",
+   "Neo-Assyrian Empire"
+  ],
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Neo-Assyrian Empire (began with Adad-nirari II in 911 BCE)",
+   "url": "https://en.wikipedia.org/wiki/Neo-Assyrian_Empire"
+  }
+ },
+ {
+  "place": "Nineveh",
+  "lonlat": [
+   43.152,
+   36.359
+  ],
+  "year": -700,
+  "realm": "Neo-Assyrian Empire",
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Neo-Assyrian Empire (Nineveh fell in 612 BCE)",
+   "url": "https://en.wikipedia.org/wiki/Neo-Assyrian_Empire"
+  }
+ },
+ {
+  "place": "Babylon",
+  "lonlat": [
+   44.42,
+   32.536
+  ],
+  "year": -725,
+  "realm": "Neo-Assyrian Empire",
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Tiglath-Pileser III (conquered Babylonia in 729 BC)",
+   "url": "https://en.wikipedia.org/wiki/Tiglath-Pileser_III"
+  }
+ },
+ {
+  "place": "Damascus",
+  "lonlat": [
+   36.29,
+   33.51
+  ],
+  "year": -725,
+  "realm": "Neo-Assyrian Empire",
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Neo-Assyrian Empire (Assyrians captured Damascus in 732 BCE)",
+   "url": "https://en.wikipedia.org/wiki/Neo-Assyrian_Empire"
+  }
+ },
+ {
+  "place": "Memphis",
+  "lonlat": [
+   31.25,
+   29.85
+  ],
+  "year": -665,
+  "realm": "Neo-Assyrian Empire",
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Neo-Assyrian Empire (Esarhaddon conquered Egypt in 671 BCE)",
+   "url": "https://en.wikipedia.org/wiki/Neo-Assyrian_Empire"
+  }
+ },
+ {
+  "place": "Memphis",
+  "lonlat": [
+   31.25,
+   29.85
+  ],
+  "year": -640,
+  "realm": "Twenty-sixth Dynasty of Egypt",
+  "not": [
+   "Neo-Assyrian Empire"
+  ],
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Psamtik I (firmly in control of all Egypt by 654 BCE)",
+   "url": "https://en.wikipedia.org/wiki/Psamtik_I"
+  }
+ },
+ {
+  "place": "Nineveh",
+  "lonlat": [
+   43.152,
+   36.359
+  ],
+  "year": -605,
+  "realm": "Babylonia",
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Fall of Nineveh (fall of Nineveh, 612 BC)",
+   "url": "https://en.wikipedia.org/wiki/Fall_of_Nineveh"
+  }
+ },
+ {
+  "place": "Harran",
+  "lonlat": [
+   39.03,
+   36.865
+  ],
+  "year": -609,
+  "realm": "Babylonia",
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Fall of Harran (Harran fell in 609 BC)",
+   "url": "https://en.wikipedia.org/wiki/Fall_of_Harran"
+  }
+ },
+ {
+  "place": "Babylon",
+  "lonlat": [
+   44.42,
+   32.536
+  ],
+  "year": -614,
+  "realm": [
+   "Neo-Babylonian Empire",
+   "Babylonia"
+  ],
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Nabopolassar (king of Babylon from 626 BC)",
+   "url": "https://en.wikipedia.org/wiki/Nabopolassar"
+  }
+ },
+ {
+  "place": "Carchemish",
+  "lonlat": [
+   38.01,
+   36.83
+  ],
+  "year": -600,
+  "realm": [
+   "Neo-Babylonian Empire",
+   "Babylonia"
+  ],
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Battle of Carchemish (Nebuchadnezzar defeated Egypt at Carchemish, 605 BCE)",
+   "url": "https://en.wikipedia.org/wiki/Battle_of_Carchemish"
+  }
+ },
+ {
+  "place": "Jerusalem",
+  "lonlat": [
+   35.23,
+   31.78
+  ],
+  "year": -570,
+  "realm": [
+   "Neo-Babylonian Empire",
+   "Babylonia"
+  ],
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Neo-Babylonian Empire (destruction of Jerusalem in 587 BC)",
+   "url": "https://en.wikipedia.org/wiki/Neo-Babylonian_Empire"
+  }
+ },
+ {
+  "place": "Damascus",
+  "lonlat": [
+   36.29,
+   33.51
+  ],
+  "year": -580,
+  "realm": [
+   "Neo-Babylonian Empire",
+   "Babylonia"
+  ],
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Neo-Babylonian Empire (Babylon took Assyria's western lands after Carchemish 605 BC)",
+   "url": "https://en.wikipedia.org/wiki/Neo-Babylonian_Empire"
+  }
+ },
+ {
+  "place": "Harran",
+  "lonlat": [
+   39.03,
+   36.865
+  ],
+  "year": -560,
+  "realm": [
+   "Neo-Babylonian Empire",
+   "Babylonia"
+  ],
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Neo-Babylonian Empire (Assyria's last king defeated at Harran 609 BC; Nabonidus from Harran)",
+   "url": "https://en.wikipedia.org/wiki/Neo-Babylonian_Empire"
+  }
+ },
+ {
+  "place": "Babylon",
+  "lonlat": [
+   44.42,
+   32.536
+  ],
+  "year": -560,
+  "realm": [
+   "Neo-Babylonian Empire",
+   "Babylonia"
+  ],
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Neo-Babylonian Empire (capital Babylon)",
+   "url": "https://en.wikipedia.org/wiki/Neo-Babylonian_Empire"
+  }
+ },
+ {
+  "place": "Babylon",
+  "lonlat": [
+   44.42,
+   32.536
+  ],
+  "year": -538,
+  "realm": "Achaemenid Empire",
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Fall of Babylon (Achaemenid conquest of Babylon in 539 BCE)",
+   "url": "https://en.wikipedia.org/wiki/Fall_of_Babylon"
+  }
+ },
+ {
+  "place": "Jerusalem",
+  "lonlat": [
+   35.23,
+   31.78
+  ],
+  "year": -538,
+  "realm": "Achaemenid Empire",
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Fall of Babylon (Achaemenid conquest of the Neo-Babylonian Empire in 539 BCE)",
+   "url": "https://en.wikipedia.org/wiki/Fall_of_Babylon"
+  }
+ },
+ {
+  "place": "Pasargadae",
+  "lonlat": [
+   53.17,
+   30.2
+  ],
+  "year": -545,
+  "realm": "Achaemenid Empire",
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Achaemenid Empire (founded by Cyrus in 550 BC)",
+   "url": "https://en.wikipedia.org/wiki/Achaemenid_Empire"
+  }
+ },
+ {
+  "place": "Ecbatana",
+  "lonlat": [
+   48.52,
+   34.8
+  ],
+  "year": -548,
+  "realm": "Achaemenid Empire",
+  "not": [
+   "Median Kingdom"
+  ],
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Achaemenid Empire (Cyrus defeated the Medes in 550 BC and took Ecbatana)",
+   "url": "https://en.wikipedia.org/wiki/Achaemenid_Empire"
+  }
+ },
+ {
+  "place": "Sardis",
+  "lonlat": [
+   28.04,
+   38.49
+  ],
+  "year": -540,
+  "realm": "Achaemenid Empire",
+  "not": [
+   "Lydia"
+  ],
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Lydia (satrapy of the Achaemenid Empire from 546 BC)",
+   "url": "https://en.wikipedia.org/wiki/Lydia"
+  }
+ },
+ {
+  "place": "Memphis",
+  "lonlat": [
+   31.25,
+   29.85
+  ],
+  "year": -500,
+  "realm": "Achaemenid Empire",
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Cambyses II (Cambyses won at Pelusium in 525 BC)",
+   "url": "https://en.wikipedia.org/wiki/Cambyses_II"
+  }
+ },
+ {
+  "place": "Bactra",
+  "lonlat": [
+   66.9,
+   36.76
+  ],
+  "year": -500,
+  "realm": "Achaemenid Empire",
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Darius III (Bessus, satrap of Bactria)",
+   "url": "https://en.wikipedia.org/wiki/Darius_III"
+  }
+ },
+ {
+  "place": "Memphis",
+  "lonlat": [
+   31.25,
+   29.85
+  ],
+  "year": -380,
+  "realm": "Thirtieth Dynasty of Egypt",
+  "not": [
+   "Achaemenid Empire"
+  ],
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Twenty-eighth Dynasty of Egypt (Amyrtaeus expelled the Persians and became pharaoh in 404 BC)",
+   "url": "https://en.wikipedia.org/wiki/Twenty-eighth_Dynasty_of_Egypt"
+  }
+ },
+ {
+  "place": "Memphis",
+  "lonlat": [
+   31.25,
+   29.85
+  ],
+  "year": -340,
+  "realm": "Achaemenid Empire",
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Thirty-first Dynasty of Egypt (Persian satrapy again from 343/342 BC)",
+   "url": "https://en.wikipedia.org/wiki/Thirty-first_Dynasty_of_Egypt"
+  }
+ },
+ {
+  "place": "Persepolis",
+  "lonlat": [
+   52.89,
+   29.93
+  ],
+  "year": -335,
+  "realm": "Achaemenid Empire",
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Darius III (Persepolis destroyed by Alexander in 330 BC)",
+   "url": "https://en.wikipedia.org/wiki/Darius_III"
+  }
+ },
+ {
+  "place": "Persepolis",
+  "lonlat": [
+   52.89,
+   29.93
+  ],
+  "year": -328,
+  "realm": [
+   "Macedonian Empire",
+   "(Macedonian Empire)"
+  ],
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Achaemenid Empire (Susa and Persepolis surrendered to Alexander, early 330 BC)",
+   "url": "https://en.wikipedia.org/wiki/Achaemenid_Empire"
+  }
+ },
+ {
+  "place": "Babylon",
+  "lonlat": [
+   44.42,
+   32.536
+  ],
+  "year": -330,
+  "realm": [
+   "Macedonian Empire",
+   "(Macedonian Empire)"
+  ],
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Achaemenid Empire (conquered in its entirety by Alexander in 330 BC)",
+   "url": "https://en.wikipedia.org/wiki/Achaemenid_Empire"
+  }
+ },
+ {
+  "place": "Pella",
+  "lonlat": [
+   22.52,
+   40.76
+  ],
+  "year": -350,
+  "realm": [
+   "Macedonian Empire",
+   "(Macedonian Empire)"
+  ],
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Macedonia (ancient kingdom) (Philip II's capital Pella)",
+   "url": "https://en.wikipedia.org/wiki/Macedonia_(ancient_kingdom)"
+  }
+ },
+ {
+  "place": "Sardis",
+  "lonlat": [
+   28.04,
+   38.49
+  ],
+  "year": -333,
+  "realm": [
+   "Macedonian Empire",
+   "(Macedonian Empire)"
+  ],
+  "not": [
+   "Achaemenid Empire"
+  ],
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Darius III (Alexander invaded the Persian Empire in 334 BC)",
+   "url": "https://en.wikipedia.org/wiki/Darius_III"
+  }
+ },
+ {
+  "place": "Tyre",
+  "lonlat": [
+   35.2,
+   33.27
+  ],
+  "year": -331,
+  "realm": [
+   "Macedonian Empire",
+   "(Macedonian Empire)"
+  ],
+  "not": [
+   "Achaemenid Empire"
+  ],
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Siege of Tyre (332 BC) (Alexander took Tyre in 332 BC)",
+   "url": "https://en.wikipedia.org/wiki/Siege_of_Tyre_(332_BC)"
+  }
+ },
+ {
+  "place": "Memphis",
+  "lonlat": [
+   31.25,
+   29.85
+  ],
+  "year": -331,
+  "realm": [
+   "Macedonian Empire",
+   "(Macedonian Empire)"
+  ],
+  "not": [
+   "Achaemenid Empire"
+  ],
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Ptolemaic Kingdom (Alexander founded Alexandria and appointed Macedonians in Egypt)",
+   "url": "https://en.wikipedia.org/wiki/Ptolemaic_Kingdom"
+  }
+ },
+ {
+  "place": "Babylon",
+  "lonlat": [
+   44.42,
+   32.536
+  ],
+  "year": -326,
+  "realm": [
+   "Macedonian Empire",
+   "(Macedonian Empire)"
+  ],
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Battle of Gaugamela (Gaugamela 331 BC; Darius fled)",
+   "url": "https://en.wikipedia.org/wiki/Battle_of_Gaugamela"
+  }
+ },
+ {
+  "place": "Bactra",
+  "lonlat": [
+   66.9,
+   36.76
+  ],
+  "year": -326,
+  "realm": [
+   "Macedonian Empire",
+   "(Macedonian Empire)"
+  ],
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Darius III (Darius killed by Bessus, satrap of Bactria, 330 BC)",
+   "url": "https://en.wikipedia.org/wiki/Darius_III"
+  }
+ },
+ {
+  "place": "Babylon",
+  "lonlat": [
+   44.42,
+   32.536
+  ],
+  "year": -305,
+  "realm": "Seleucid Empire",
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Babylonian War (Seleucus regained Babylon in 311 BC)",
+   "url": "https://en.wikipedia.org/wiki/Babylonian_War"
+  }
+ },
+ {
+  "place": "Pella",
+  "lonlat": [
+   22.52,
+   40.76
+  ],
+  "year": -300,
+  "realm": [
+   "Macedonian Empire",
+   "(Macedonian Empire)"
+  ],
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Battle of Ipsus (Ipsus 301 BC divided Alexander's empire)",
+   "url": "https://en.wikipedia.org/wiki/Battle_of_Ipsus"
+  }
+ },
+ {
+  "place": "Antioch",
+  "lonlat": [
+   36.16,
+   36.2
+  ],
+  "year": -290,
+  "realm": "Seleucid Empire",
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Seleucid Empire (ruled from Seleucia and later Antioch)",
+   "url": "https://en.wikipedia.org/wiki/Seleucid_Empire"
+  }
+ },
+ {
+  "place": "Seleucia",
+  "lonlat": [
+   44.52,
+   33.1
+  ],
+  "year": -250,
+  "realm": "Seleucid Empire",
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Seleucid Empire (ruled from Seleucia and later Antioch)",
+   "url": "https://en.wikipedia.org/wiki/Seleucid_Empire"
+  }
+ },
+ {
+  "place": "Susa",
+  "lonlat": [
+   48.257,
+   32.19
+  ],
+  "year": -200,
+  "realm": "Seleucid Empire",
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Seleucid Empire (founded 312 BC)",
+   "url": "https://en.wikipedia.org/wiki/Seleucid_Empire"
+  }
+ },
+ {
+  "place": "Jerusalem",
+  "lonlat": [
+   35.23,
+   31.78
+  ],
+  "year": -190,
+  "realm": "Seleucid Empire",
+  "not": [
+   "Ptolemaic Kingdom"
+  ],
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Battle of Panium (Seleucids conquered Coele-Syria in 200 BC)",
+   "url": "https://en.wikipedia.org/wiki/Battle_of_Panium"
+  }
+ },
+ {
+  "place": "Seleucia",
+  "lonlat": [
+   44.52,
+   33.1
+  ],
+  "year": -139,
+  "realm": "Parthian Empire",
+  "not": [
+   "Seleucid Empire"
+  ],
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Mithridates I of Parthia (conquered Babylonia in 141 BC)",
+   "url": "https://en.wikipedia.org/wiki/Mithridates_I_of_Parthia"
+  }
+ },
+ {
+  "place": "Antioch",
+  "lonlat": [
+   36.16,
+   36.2
+  ],
+  "year": -75,
+  "realm": "Kingdom of Armenia",
+  "not": [
+   "Seleucid Empire"
+  ],
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Tigranes the Great (offered the crown of Syria in 83 BC)",
+   "url": "https://en.wikipedia.org/wiki/Tigranes_the_Great"
+  }
+ },
+ {
+  "place": "Antioch",
+  "lonlat": [
+   36.16,
+   36.2
+  ],
+  "year": -66,
+  "realm": "Seleucid Empire",
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Seleucid Empire (rump kingdom restored under Antiochus XIII in 69 BC)",
+   "url": "https://en.wikipedia.org/wiki/Seleucid_Empire"
+  }
+ },
+ {
+  "place": "Antioch",
+  "lonlat": [
+   36.16,
+   36.2
+  ],
+  "year": -62,
+  "realm": "Roman Republic",
+  "not": [
+   "Seleucid Empire"
+  ],
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Seleucid Empire (annexed by Rome under Pompey in 63 BC)",
+   "url": "https://en.wikipedia.org/wiki/Seleucid_Empire"
+  }
+ },
+ {
+  "place": "Alexandria",
+  "lonlat": [
+   29.92,
+   31.2
+  ],
+  "year": -300,
+  "realm": "Ptolemaic Kingdom",
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Ptolemaic Kingdom (Ptolemy king from 305 BC; capital Alexandria)",
+   "url": "https://en.wikipedia.org/wiki/Ptolemaic_Kingdom"
+  }
+ },
+ {
+  "place": "Paphos",
+  "lonlat": [
+   32.41,
+   34.77
+  ],
+  "year": -300,
+  "realm": [
+   "Macedonian Empire",
+   "(Macedonian Empire)"
+  ],
+  "not": [
+   "Ptolemaic Kingdom"
+  ],
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Battle of Salamis (306 BC) (Demetrius captured Cyprus in 306 BC)",
+   "url": "https://en.wikipedia.org/wiki/Battle_of_Salamis_(306_BC)"
+  }
+ },
+ {
+  "place": "Paphos",
+  "lonlat": [
+   32.41,
+   34.77
+  ],
+  "year": -290,
+  "realm": "Ptolemaic Kingdom",
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Ptolemaic Kingdom (Ptolemy retook Cyprus in 295 BC)",
+   "url": "https://en.wikipedia.org/wiki/Ptolemaic_Kingdom"
+  }
+ },
+ {
+  "place": "Jerusalem",
+  "lonlat": [
+   35.23,
+   31.78
+  ],
+  "year": -250,
+  "realm": "Ptolemaic Kingdom",
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Ptolemaic Kingdom (Coele-Syria (including Judea) Ptolemaic until Panium 200 BC)",
+   "url": "https://en.wikipedia.org/wiki/Ptolemaic_Kingdom"
+  }
+ },
+ {
+  "place": "Thebes",
+  "lonlat": [
+   32.65,
+   25.7
+  ],
+  "year": -195,
+  "realm": "Ankhwennefer",
+  "not": [
+   "Ptolemaic Kingdom"
+  ],
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Ptolemaic Kingdom (Theban revolt 205-186 BC)",
+   "url": "https://en.wikipedia.org/wiki/Ptolemaic_Kingdom"
+  }
+ },
+ {
+  "place": "Paphos",
+  "lonlat": [
+   32.41,
+   34.77
+  ],
+  "year": -31,
+  "realm": "Ptolemaic Kingdom",
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Donations of Alexandria (Cleopatra confirmed as queen of Egypt and Cyprus)",
+   "url": "https://en.wikipedia.org/wiki/Donations_of_Alexandria"
+  }
+ },
+ {
+  "place": "Alexandria",
+  "lonlat": [
+   29.92,
+   31.2
+  ],
+  "year": -31,
+  "realm": "Ptolemaic Kingdom",
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Ptolemaic Kingdom (kingdom ended 30 BC)",
+   "url": "https://en.wikipedia.org/wiki/Ptolemaic_Kingdom"
+  }
+ },
+ {
+  "place": "Alexandria",
+  "lonlat": [
+   29.92,
+   31.2
+  ],
+  "year": -29,
+  "realm": "Roman Empire",
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Ptolemaic Kingdom (Octavian claimed Egypt as a Roman province after 30 BC)",
+   "url": "https://en.wikipedia.org/wiki/Ptolemaic_Kingdom"
+  }
+ },
+ {
+  "place": "Nisa",
+  "lonlat": [
+   58.2,
+   37.97
+  ],
+  "year": -230,
+  "realm": "Parthian Empire",
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Parthian Empire (Arsacids overthrew Andragoras by 238 BC)",
+   "url": "https://en.wikipedia.org/wiki/Parthian_Empire"
+  }
+ },
+ {
+  "place": "Rhagae",
+  "lonlat": [
+   51.43,
+   35.59
+  ],
+  "year": -147,
+  "realm": "Parthian Empire",
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Mithridates I of Parthia (conquered Media in 148/7 BC)",
+   "url": "https://en.wikipedia.org/wiki/Mithridates_I_of_Parthia"
+  }
+ },
+ {
+  "place": "Ecbatana",
+  "lonlat": [
+   48.52,
+   34.8
+  ],
+  "year": -120,
+  "realm": "Parthian Empire",
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Mithridates I of Parthia (occupied Ecbatana in 148 or 147 BC)",
+   "url": "https://en.wikipedia.org/wiki/Mithridates_I_of_Parthia"
+  }
+ },
+ {
+  "place": "Seleucia",
+  "lonlat": [
+   44.52,
+   33.1
+  ],
+  "year": -135,
+  "realm": "Parthian Empire",
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Parthian Empire (coins minted at Seleucia in 141 BC)",
+   "url": "https://en.wikipedia.org/wiki/Parthian_Empire"
+  }
+ },
+ {
+  "place": "Susa",
+  "lonlat": [
+   48.257,
+   32.19
+  ],
+  "year": -130,
+  "realm": "Parthian Empire",
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Mithridates I of Parthia (conquered Babylonia in 141 BC)",
+   "url": "https://en.wikipedia.org/wiki/Mithridates_I_of_Parthia"
+  }
+ },
+ {
+  "place": "Ctesiphon",
+  "lonlat": [
+   44.58,
+   33.09
+  ],
+  "year": 100,
+  "realm": "Parthian Empire",
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Parthian Empire (Seleucia and Ctesiphon Parthian)",
+   "url": "https://en.wikipedia.org/wiki/Parthian_Empire"
+  }
+ },
+ {
+  "place": "Ctesiphon",
+  "lonlat": [
+   44.58,
+   33.09
+  ],
+  "year": 230,
+  "realm": "Sasanian Empire",
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Ardashir I (crowned 224; coronation at Ctesiphon dated 226)",
+   "url": "https://en.wikipedia.org/wiki/Ardashir_I"
+  }
+ },
+ {
+  "place": "Rome",
+  "lonlat": [
+   12.48,
+   41.89
+  ],
+  "year": -500,
+  "realm": "Roman Republic",
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Overthrow of the Roman monarchy (republic traditionally from 509 BC)",
+   "url": "https://en.wikipedia.org/wiki/Overthrow_of_the_Roman_monarchy"
+  }
+ },
+ {
+  "place": "Carthage",
+  "lonlat": [
+   10.32,
+   36.85
+  ],
+  "year": -140,
+  "realm": "Roman Republic",
+  "not": [
+   "Carthage"
+  ],
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Third Punic War (Carthage destroyed in 146 BC)",
+   "url": "https://en.wikipedia.org/wiki/Third_Punic_War"
+  }
+ },
+ {
+  "place": "Corinth",
+  "lonlat": [
+   22.88,
+   37.91
+  ],
+  "year": -140,
+  "realm": "Roman Republic",
+  "not": [
+   "Achaean League"
+  ],
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Battle of Corinth (146 BC) (Roman victory over the Achaean League, 146 BC)",
+   "url": "https://en.wikipedia.org/wiki/Battle_of_Corinth_(146_BC)"
+  }
+ },
+ {
+  "place": "Lutetia",
+  "lonlat": [
+   2.35,
+   48.86
+  ],
+  "year": -45,
+  "realm": "Roman Republic",
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Gallic Wars (Caesar's conquest of Gaul, 58-50 BC)",
+   "url": "https://en.wikipedia.org/wiki/Gallic_Wars"
+  }
+ },
+ {
+  "place": "Londinium",
+  "lonlat": [
+   -0.12,
+   51.51
+  ],
+  "year": 50,
+  "realm": "Roman Empire",
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Roman conquest of Britain (Claudius invaded in AD 43)",
+   "url": "https://en.wikipedia.org/wiki/Roman_conquest_of_Britain"
+  }
+ },
+ {
+  "place": "Sarmizegetusa",
+  "lonlat": [
+   23.31,
+   45.62
+  ],
+  "year": 110,
+  "realm": "Roman Empire",
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Trajan's Dacian Wars (Sarmizegetusa fell in 106)",
+   "url": "https://en.wikipedia.org/wiki/Trajan's_Dacian_Wars"
+  }
+ },
+ {
+  "place": "Sarmizegetusa",
+  "lonlat": [
+   23.31,
+   45.62
+  ],
+  "year": 280,
+  "realm": "Gothia",
+  "not": [
+   "Roman Empire"
+  ],
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Roman Dacia (Aurelian gave up Dacia between 271 and 275)",
+   "url": "https://en.wikipedia.org/wiki/Roman_Dacia"
+  }
+ },
+ {
+  "place": "Trier",
+  "lonlat": [
+   6.64,
+   49.75
+  ],
+  "year": 278,
+  "realm": "Roman Empire",
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Gallic Empire (retaken by Aurelian after Chalons in 274)",
+   "url": "https://en.wikipedia.org/wiki/Gallic_Empire"
+  }
+ },
+ {
+  "place": "Alexandria",
+  "lonlat": [
+   29.92,
+   31.2
+  ],
+  "year": -27,
+  "realm": "Roman Empire",
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Ptolemaic Kingdom (Egypt a Roman province from 30 BC)",
+   "url": "https://en.wikipedia.org/wiki/Ptolemaic_Kingdom"
+  }
+ },
+ {
+  "place": "Ravenna",
+  "lonlat": [
+   12.2,
+   44.42
+  ],
+  "year": 450,
+  "realm": "Western Roman Empire",
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Romulus Augustulus (Ravenna, capital of the western empire, 475)",
+   "url": "https://en.wikipedia.org/wiki/Romulus_Augustulus"
+  }
+ },
+ {
+  "place": "Rome",
+  "lonlat": [
+   12.48,
+   41.89
+  ],
+  "year": 470,
+  "realm": "Western Roman Empire",
+  "region": "v1",
+  "source": {
+   "title": "Wikipedia: Romulus Augustulus (western emperor until 4 September 476)",
+   "url": "https://en.wikipedia.org/wiki/Romulus_Augustulus"
+  }
+ }
+]
