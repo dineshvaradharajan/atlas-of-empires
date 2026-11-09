@@ -53,7 +53,7 @@ const NOT_A_REALM = /^\((Alliance|Allegiance|Personal union)/;
 // ---------------------------------------------------------------- state
 const S = {
   year: 1500, range: [-3400, 2024], clio: null, baseYears: [], commons: {}, corr: { realms: {}, base: {} }, supps: [],
-  content: { eras: [], empires: {}, byClio: {}, moments: [], journeys: [] }, moment: null, journey: null, rings: [],
+  content: { eras: [], empires: {}, byClio: {}, moments: [], journeys: [], wars: [] }, moment: null, journey: null, rings: [], war: null,
   chunks: new Map(), bases: new Map(), windows: new Map(),
   items: [], states: [], featured: new Map(), win: null,
   t: d3.zoomIdentity, sel: null, view: "world", hover: -1, ghost: null, showGhost: true,
@@ -85,6 +85,16 @@ const empireOf = (key) => S.content.byClio[key] || null;
 const displayName = (key) => clean(key);
 const areaAt = (key, y) => { const r = realm(key); const row = r && r.tl.find(([f, t]) => f <= y && y <= t); return row ? row[2] : 0; };
 const matches = (it, key) => it.p.k === key || it.p.n === key;
+// Period newspaper clippings and photos (events after 1850), each with its credit and licence.
+function mediaHTML(key) {
+  const items = (S.media || {})[key];
+  if (!items?.length) return "";
+  const ok = (u) => /^https:\/\//i.test(u || "");
+  return `<div class="media">${items.filter((m) => ok(m.image)).map((m) => `<figure class="mfig ${m.type === "newspaper" ? "news" : "photo"}">
+      <a href="${esc(m.page)}" target="_blank" rel="noopener"><img src="${esc(m.image)}" alt="${esc(m.caption || m.publication || "")}" loading="lazy"></a>
+      <figcaption>${m.type === "newspaper" ? `<b>${esc(m.publication || "Newspaper")}${m.date ? `, ${esc(m.date)}` : ""}</b> · ` : ""}${esc(m.caption || "")}
+      <span class="muted"> ${esc(m.credit || "")}${m.license ? ` · ${esc(m.license)}` : ""}</span></figcaption></figure>`).join("")}</div>`;
+}
 function sourcesList(list, title = "Sources") {
   const ok = (list || []).filter((x) => x && /^https?:\/\//i.test(x.url || ""));
   if (!ok.length) return "";
@@ -93,6 +103,7 @@ function sourcesList(list, title = "Sources") {
 const vivid = () => (theme.dark ? VIVID_DARK : VIVID_LIGHT);
 const RECON_COLORS = ["#C0662F", "#2F7D6D", "#7A5FB0", "#A67C00", "#5E8FC4", "#B5487A", "#3B6E3B", "#8C4A2F"];
 function colorOf(key) {
+  if (S.war) { const m = S.warMap || warSides(S.war, S.year); return m.has(key) ? SIDE_COLORS[m.get(key) % SIDE_COLORS.length] : [theme.other1, theme.other2, theme.other3][hash(clean(key)) % 3]; }
   if (S.reconKeys?.has(key) && key !== S.sel) { // reconstruction groups: distinct, stable inks (e.g. all Chola lands share one)
     const ks = [...S.reconKeys]; return RECON_COLORS[ks.indexOf(key) % RECON_COLORS.length];
   }
@@ -163,6 +174,7 @@ async function init() {
     fetchJSON("data/corrections.json").catch(() => null),
   ]);
   const supps = await fetchJSON("data/supplements.json").catch(() => []);
+  S.media = await fetchJSON("data/media.json").catch(() => ({}));
   S.clio = clio; S.range = clio.range; S.baseYears = base.years; S.commons = commons;
   if (corr) { S.corr = { realms: corr.realms || {}, base: corr.base || {} }; correctTimelines(); }
   S.supps = prepareSupplements(supps);
@@ -170,6 +182,7 @@ async function init() {
     S.content.eras = (content.eras || []).sort((a, b) => a.year - b.year);
     S.content.moments = (content.moments || []).sort((a, b) => a.year - b.year);
     S.content.journeys = content.journeys || [];
+    S.content.wars = content.wars || [];
     for (const e of content.empires || []) for (const n of e.clio || []) S.content.byClio[n] = e;
   }
   buildStrip();
@@ -178,7 +191,8 @@ async function init() {
   setupSearch();
   setupUI();
   const h = parseHash();
-  if (h.journey && journeyById(h.journey)) await openJourney(h.journey, h.year);
+  if (h.war && warById(h.war)) await openWar(h.war, h.wev);
+  else if (h.journey && journeyById(h.journey)) await openJourney(h.journey, h.year);
   else if (h.moment && momentById(h.moment)) await openMoment(h.moment);
   else {
     await go(h.year ?? 1683);
@@ -315,6 +329,7 @@ async function go(y, opts = {}) {
   y = clampYear(y);
   if (!opts.keepMoment && S.view === "moment") { S.view = "world"; S.moment = null; } // travelling away closes the moment
   if (S.journey) y = Math.max(S.journey.span[0], Math.min(S.journey.span[1], Math.round(y))) || y; // journeys stay inside the empire's lifetime
+  if (S.war && !opts.keepWar) exitWar();
   const token = ++S.token;
   S.year = y;
   const [chunk, base] = await Promise.all([loadChunk(chunkOf(y)), loadBase(baseYearFor(y))]);
@@ -330,7 +345,8 @@ async function go(y, opts = {}) {
 }
 function renderAll() {
   if (!S.base) return;
-  if (!S.journey) updateWindow();
+  if (S.war) { S.warMap = warSides(S.war, S.year); }
+  else if (!S.journey) updateWindow();
   else if (S.jRendered !== S.journey.id) renderJourneyChart();
   computeFeatured();
   buildItems();
@@ -356,13 +372,15 @@ function parseHash() {
   const raw = decodeURIComponent(location.hash.slice(1));
   const mm = raw.match(/^m\/(.+)$/);
   if (mm) return { year: null, key: null, moment: mm[1] };
+  const wm = raw.match(/^w\/([^/]+)(?:\/(\d+))?$/);
+  if (wm) return { year: null, key: null, war: wm[1], wev: wm[2] != null ? +wm[2] : 0 };
   const je = raw.match(/^e\/([^/]+)(?:\/(-?\d+))?$/);
   if (je) return { year: je[2] != null ? +je[2] : null, key: null, journey: je[1] };
   const m = raw.match(/^(-?\d+)(?:\/(.+))?$/);
   return m ? { year: +m[1], key: m[2] || null } : { year: null, key: null };
 }
 function writeHash() {
-  const h = S.journey ? `#e/${encodeURIComponent(S.journey.id)}/${S.year}` : S.view === "moment" && S.moment ? `#m/${encodeURIComponent(S.moment.id)}` : `#${S.year}${S.sel ? "/" + encodeURIComponent(S.sel) : ""}`;
+  const h = S.war ? `#w/${encodeURIComponent(S.war.id)}/${S.wIdx}` : S.journey ? `#e/${encodeURIComponent(S.journey.id)}/${S.year}` : S.view === "moment" && S.moment ? `#m/${encodeURIComponent(S.moment.id)}` : `#${S.year}${S.sel ? "/" + encodeURIComponent(S.sel) : ""}`;
   if (decodeURIComponent(location.hash) !== decodeURIComponent(h)) history.replaceState(null, "", h);
 }
 
@@ -508,7 +526,7 @@ function draw() {
   theme.hatch.setTransform(new DOMMatrix().scale(1 / t.k)); // constant stripe width at any zoom
   for (const it of S.items) {
     ctx.fillStyle = it.kind === "land" ? theme.unknown : it.kind === "culture" ? theme.hatch : S.journey && inJourney(it) ? theme.highlight
-      : it.p.recon && it.p.n === S.sel ? theme.highlight : colorOf(it.key);
+      : it.p.recon && it.p.n === S.sel ? theme.highlight : S.war ? (warSideOf(it) >= 0 ? SIDE_COLORS[warSideOf(it) % SIDE_COLORS.length] : [theme.other1, theme.other2, theme.other3][hash(clean(it.key)) % 3]) : colorOf(it.key);
     if (it.p.recon || it.p.crop) { ctx.save(); clipFor(ctx, it); ctx.fill(pathOf(it.f)); ctx.restore(); }
     else ctx.fill(pathOf(it.f));
   }
@@ -552,7 +570,7 @@ function drawLabels() {
   ctx.textAlign = "center"; ctx.textBaseline = "middle";
   for (const it of cand) {
     const r = Math.sqrt(it.p.a) * pxPerKm;
-    const strong = it.kind === "state" && (S.journey ? inJourney(it) : S.featured.has(it.key) || it.key === S.sel || it.p.recon);
+    const strong = it.kind === "state" && (S.war ? warSideOf(it) >= 0 : S.journey ? inJourney(it) : S.featured.has(it.key) || it.key === S.sel || it.p.recon);
     if (r < (strong ? 26 : it.kind === "state" ? 34 : 60)) continue;
     const [x0, y0] = projection(it.p.l);
     const x = t.applyX(x0), y = t.applyY(y0);
@@ -589,7 +607,7 @@ function drawLabels() {
       continue;
     }
     if (!strong) { ctx.lineWidth = 3; ctx.lineJoin = "round"; ctx.strokeStyle = theme.bg; }
-    ctx.fillStyle = strong ? inkOn(colorOf(it.key)) : theme.labelSoft;
+    ctx.fillStyle = strong ? inkOn(S.war && warSideOf(it) >= 0 ? SIDE_COLORS[warSideOf(it) % SIDE_COLORS.length] : colorOf(it.key)) : theme.labelSoft;
     lines.forEach((ln, k) => {
       const ly = y + (k - (lines.length - 1) / 2) * size * 1.1;
       if (!strong) ctx.strokeText(ln, x, ly);
@@ -654,6 +672,7 @@ function flyToRegion(bb) {
 // ---------------------------------------------------------------- selection
 async function select(key, opts = {}) {
   if (S.journey && key) { exitJourney(); }
+  if (S.war && key) { exitWar(); }
   S.sel = key || null;
   S.view = key ? "realm" : "world";
   S.moment = null;
@@ -689,7 +708,7 @@ function bestYear(key) {
 function renderCol(resetScroll) {
   const col = $("#col"), scroll = col.scrollTop;
   col.innerHTML = S.view === "sources" ? sourcesHTML() : S.view === "moments" ? momentsListHTML() : S.view === "empires" ? empiresListHTML()
-    : S.view === "journey" && S.journey ? journeyHTML()
+    : S.view === "journey" && S.journey ? journeyHTML() : S.view === "war" && S.war ? warHTML() : S.view === "wars" ? warsListHTML()
     : S.view === "moment" && S.moment ? momentHTML() : S.sel && realm(S.sel) ? realmHTML() : worldHTML();
   col.scrollTop = resetScroll ? 0 : scroll;
 }
@@ -850,6 +869,91 @@ function sourcesHTML() {
     <p class="note">Keyboard: ← → move 10 years (Shift: 1 year) · [ ] previous/next chapter · Space play · Esc clear.</p>`;
 }
 
+// ---------------------------------------------------------------- wars
+// Play a war event by event: each side's states coloured, each event pinned and explained (content/wars/*.json).
+const SIDE_COLORS = ["#2B59D9", "#E5402A", "#2F7D6D", "#E9A93B"];
+const warById = (id) => S.content.wars.find((w) => w.id === id) || null;
+function warSides(w, y) { // realm/group name -> side index, for members active in year y
+  const m = new Map();
+  w.sides.forEach((sd, i) => sd.members.forEach((x) => { if (x.from <= y && y <= x.to && !m.has(x.clio)) m.set(x.clio, i); }));
+  return m;
+}
+function warSideOf(it) {
+  if (!S.war || it.kind !== "state") return -1;
+  const m = S.warMap || (S.warMap = warSides(S.war, S.year));
+  return m.has(it.p.n) ? m.get(it.p.n) : m.has(it.p.k) ? m.get(it.p.k) : -1;
+}
+const evTime = (e) => { const [y, mo, d] = String(e.date || "").split("-").map(Number); return e.year + (e.year >= 0 && mo ? (mo - 1) / 12 + (d ? (d - 1) / 365 : 0) : 0); };
+async function openWar(id, idx = 0) {
+  const w = warById(id);
+  if (!w) return;
+  stopPlay();
+  if (S.journey) exitJourney();
+  S.sel = null; S.ghost = null; S.moment = null; S.war = w; S.view = "war"; S.wIdx = Math.max(0, Math.min(w.events.length - 1, idx));
+  await goWarEvent(S.wIdx, true);
+}
+async function goWarEvent(i, fit) {
+  const w = S.war; if (!w) return;
+  S.wIdx = Math.max(0, Math.min(w.events.length - 1, i));
+  const e = w.events[S.wIdx];
+  S.warMap = null;
+  await go(e ? e.year : w.span[0], { keepWar: true });
+  S.warMap = warSides(w, S.year);
+  renderWarChart(); draw(); renderCol(true); writeHash();
+  if (fit && w.events.length) { // frame all the war's events
+    const pts = w.events.filter((x) => x.lonlat).map((x) => projection(x.lonlat));
+    const xs = pts.map((p) => p[0]), ys = pts.map((p) => p[1]);
+    const pad = 20;
+    flyTo([[Math.min(...xs) - pad, Math.min(...ys) - pad], [Math.max(...xs) + pad, Math.max(...ys) + pad]], 7);
+  }
+}
+function exitWar() {
+  stopPlay();
+  S.war = null; S.warMap = null; S.view = "world";
+  S.win = null; updateWindow(); computeFeatured(); draw(); updateChartCursor(); renderCol(true); writeHash();
+}
+function renderWarChart() {
+  const w = S.war, el = $("#chart"), t0 = w.span[0], t1 = w.span[1] + 1;
+  const X = (t) => (100 * (t - t0)) / Math.max(1, t1 - t0);
+  const years = []; for (let y = w.span[0]; y <= w.span[1]; y++) years.push(y);
+  const step = Math.max(1, Math.ceil(years.length / 12));
+  el.innerHTML = `<div class="warbar">${years.map((y, i) => `<span class="wy${i % 2 ? " alt" : ""}" style="left:${X(y)}%;width:${X(y + 1) - X(y)}%">${(i % step === 0) ? shortYear(y) : ""}</span>`).join("")}</div>
+    <div class="wsides">${w.sides.map((sd, i) => `<span><i style="background:${SIDE_COLORS[i % SIDE_COLORS.length]}"></i>${esc(sd.name)}</span>`).join("")}</div>
+    <div class="wmarks">${w.events.map((e, i) => `<button class="mk ev wk-${esc(e.kind || "other")}${i === S.wIdx ? " on" : ""}" data-wev="${i}" style="left:${X(evTime(e))}%" aria-label="${esc(e.label || shortYear(e.year))}: ${esc(e.text)}"><span class="tipm">${esc(e.label || shortYear(e.year))} · ${esc(e.text)}</span></button>`).join("")}</div>
+    <div class="wnow"><b>${S.wIdx + 1}</b> / ${w.events.length} · ${esc(w.events[S.wIdx]?.label || "")}</div>`;
+  $("#chartTitle").innerHTML = `${esc(w.name)} · ${esc(w.dateLabel || `${shortYear(w.span[0])}–${shortYear(w.span[1])}`)} <button class="exitj" data-act="exit-war" aria-label="Exit war">× Exit</button>`;
+}
+function warHTML() {
+  const w = S.war, e = w.events[S.wIdx], m = S.warMap || warSides(w, S.year);
+  let h = `<button class="back" data-act="exit-war">← Exit war</button>`;
+  h += `<div class="kicker">War · ${esc(w.dateLabel || `${shortYear(w.span[0])}–${shortYear(w.span[1])}`)}</div><h2 class="realm">${esc(w.name)}</h2>`;
+  if (e) {
+    h += `<aside class="mapnote evnow"><b>${esc(e.label || shortYear(e.year))} · event ${S.wIdx + 1} of ${w.events.length}</b><p class="evt">${esc(e.text)}</p>${e.detail ? `<p>${esc(e.detail)}</p>` : ""}</aside>`;
+    h += mediaHTML(`war:${w.id}:${S.wIdx}`);
+    h += `<div class="mnav">${S.wIdx > 0 ? `<button class="mstep" data-wev="${S.wIdx - 1}">‹ Previous</button>` : "<span></span>"}${S.wIdx < w.events.length - 1 ? `<button class="mstep" data-wev="${S.wIdx + 1}">Next ›</button>` : ""}</div>`;
+  }
+  h += `<h3 class="sec">Sides in ${plainYear(S.year)}</h3><div class="wside-list">`;
+  w.sides.forEach((sd, i) => {
+    const act = sd.members.filter((x) => x.from <= S.year && S.year <= x.to).map((x) => displayName(x.clio));
+    h += `<p><span class="sq" style="background:${SIDE_COLORS[i % SIDE_COLORS.length]}"></span><b>${esc(sd.name)}</b>${act.length ? `: ${esc([...new Set(act)].join(", "))}` : " <span class='muted'>(not drawn on the map this year)</span>"}</p>`;
+  });
+  h += `</div>`;
+  if (w.summary) h += `<h3 class="sec">The war</h3><p class="prose">${esc(w.summary)}</p>`;
+  if (w.casualties) h += `<p class="note">${esc(w.casualties)}</p>`;
+  h += `<h3 class="sec">Timeline</h3><ol class="events jtl">`;
+  w.events.forEach((x, i) => { h += `<li class="${i < S.wIdx ? "past" : i > S.wIdx ? "future" : "now"}"><button class="y linkish" data-wev="${i}">${esc(x.label || shortYear(x.year))}</button><div><span>${esc(x.text)}</span></div></li>`; });
+  h += `</ol>`;
+  h += sourcesList(w.sources);
+  h += `<p class="note"><button class="linkish" data-act="wars">All wars</button></p>`;
+  return h;
+}
+function warsListHTML() {
+  let h = `<button class="back" data-act="world">← Back to the map</button><div class="kicker">Play a war</div><h2 class="realm">Wars</h2>
+    <p class="prose">Step through a war event by event: each side's states are coloured on the map, each battle and turning point is pinned and explained. Press play to watch it unfold.</p><ul class="mlist">`;
+  for (const w of S.content.wars) h += `<li><button class="mrow" data-war="${esc(w.id)}"><span class="my">${shortYear(w.span[0])}–${shortYear(w.span[1])}</span><span class="mt">${esc(w.name)}</span></button></li>`;
+  return h + `</ul>`;
+}
+
 // ---------------------------------------------------------------- empire journeys
 // Pick an empire: the map follows it through its whole life (content/journeys/*.json).
 const journeyById = (id) => S.content.journeys.find((j) => j.id === id) || null;
@@ -874,6 +978,7 @@ async function openJourney(id, year) {
   const j = journeyById(id);
   if (!j) return;
   stopPlay();
+  if (S.war) exitWar();
   S.sel = null; S.ghost = null; S.moment = null; S.journey = j; S.view = "journey"; S.jEvent = null; S.jOpen = new Set();
   S.rings = [];
   await go(year ?? j.span[0], { keepJourney: true });
@@ -932,7 +1037,10 @@ function journeyHTML() {
   h += `<div class="stats"><div><b>${bigYear(y).replace(/<small>BCE<\/small>/, " BCE")}</b><span>now</span></div><div><b>${area ? mkm(area) : "—"}</b><span>M km² held</span></div><div><b>${esc(rg ? rg.name.split(" (")[0] : "—")}</b><span>ruler</span></div></div>`;
   if (!j.chain.length) h += `<p class="note">The map data has no borders for this empire, so its territory can't be drawn; the timeline below still applies.</p>`;
   else if (!chainAt(j, y)) h += `<p class="note">No border data for this empire in ${plainYear(y)}.</p>`;
-  if (ev) h += `<aside class="mapnote evnow"><b>${shortYear(ev.year)}</b><p class="evt">${esc(ev.text)}</p>${ev.detail ? `<p>${esc(ev.detail)}</p>` : ""}</aside>`;
+  if (ev) {
+    h += `<aside class="mapnote evnow"><b>${shortYear(ev.year)}</b><p class="evt">${esc(ev.text)}</p>${ev.detail ? `<p>${esc(ev.detail)}</p>` : ""}</aside>`;
+    h += mediaHTML(`journey:${j.id}:${j.events.indexOf(ev)}`);
+  }
   h += `<h3 class="sec">Timeline</h3><ol class="events jtl">`;
   j.events.forEach((e, i) => {
     const more = e.detail ? `<details data-jopen="${i}"${S.jOpen?.has(i) ? " open" : ""}><summary>Read more</summary><p>${esc(e.detail)}</p></details>` : "";
@@ -966,12 +1074,13 @@ const journeyForRealm = (key) => S.content.journeys.find((j) => j.chain.some((c)
 // ---------------------------------------------------------------- defining moments
 const momentById = (id) => S.content.moments.find((m) => m.id === id) || null;
 const CAT = { technology: "Technology", state: "States & empires", ideas: "Ideas & belief", trade: "Trade & exchange",
-  culture: "Culture", law: "Law & government", science: "Science", collapse: "Collapse", war: "War", exploration: "Exploration" };
+  culture: "Culture", law: "Law & government", science: "Science", collapse: "Collapse", war: "War", exploration: "Exploration", atrocity: "Genocide & atrocity" };
 async function openMoment(id) {
   const m = momentById(id);
   if (!m) return;
   stopPlay();
   if (S.journey) exitJourney();
+  if (S.war) exitWar();
   S.sel = null; S.ghost = null; S.moment = m; S.view = "moment";
   await go(Math.max(S.range[0], m.year), { keepMoment: true });
   S.view = "moment"; S.moment = m;
@@ -989,8 +1098,11 @@ function momentHTML() {
   h += `<div class="kicker">Defining moment · ${esc(CAT[m.category] || m.category || "")}</div>`;
   h += `<p class="year mom">${esc(m.yearLabel || plainYear(m.year))}</p><h1 class="head">${esc(m.title)}</h1>`;
   if (m.place) h += `<p class="note">${esc(m.place)}</p>`;
+  const mw = S.content.wars.find((w) => w.moment === m.id);
+  if (mw) h += `<button class="playj" data-war="${esc(mw.id)}">▶ Play the war, event by event</button>`;
   if (m.year < S.range[0]) h += `<p class="note">This happened before the map's border data begins (${plainYear(S.range[0])}); the map shows the earliest borders available.</p>`;
   h += `<p class="prose">${esc(m.summary || "")}</p>`;
+  h += mediaHTML("moment:" + m.id);
   if (m.why) h += `<h3 class="sec">Why it changed humanity</h3><p class="prose">${esc(m.why)}</p>`;
   if (m.also) h += `<h3 class="sec">Elsewhere</h3><p class="prose">${esc(m.also)}</p>`;
   h += `<div class="mnav">${prev ? `<button class="mstep" data-moment="${esc(prev.id)}">‹ ${esc(prev.title)}</button>` : "<span></span>"}${next ? `<button class="mstep" data-moment="${esc(next.id)}">${esc(next.title)} ›</button>` : ""}</div>`;
@@ -1023,6 +1135,7 @@ function drawSites() { // capitals, ports and excavations of active reconstructi
 }
 function drawMomentPin() {
   let m = S.view === "moment" && S.moment;
+  if (!m && S.war) { const e = S.war.events[S.wIdx]; if (e && e.lonlat) m = { lonlat: e.lonlat, title: e.text.length > 50 ? e.text.slice(0, 48) + "…" : e.text }; }
   if (!m && S.journey) {
     const ev = S.jEvent != null ? S.journey.events[S.jEvent] : currentEvent(S.journey, S.year);
     if (ev && ev.lonlat && S.year - ev.year <= Math.max(3, (S.journey.span[1] - S.journey.span[0]) / 25)) m = { lonlat: ev.lonlat, title: ev.text.length > 48 ? ev.text.slice(0, 46) + "…" : ev.text };
@@ -1048,6 +1161,11 @@ function setupChart() {
   let drag = null, pending = null;
   const scrub = (y) => { if (pending == null) setTimeout(() => { go(pending); pending = null; }, 24); pending = y; };
   el.addEventListener("pointerdown", (ev) => {
+    const wk = ev.target.closest("[data-wev]");
+    if (S.war) { ev.preventDefault(); stopPlay(); if (wk) return goWarEvent(+wk.dataset.wev); 
+      const r = el.getBoundingClientRect(), t = S.war.span[0] + ((ev.clientX - r.left) / r.width) * (S.war.span[1] + 1 - S.war.span[0]);
+      let best = 0; S.war.events.forEach((x, i) => { if (Math.abs(evTime(x) - t) < Math.abs(evTime(S.war.events[best]) - t)) best = i; });
+      return goWarEvent(best); }
     const mk = ev.target.closest(".mk");
     if (mk && mk.dataset.jev != null) { ev.preventDefault(); const e = S.journey.events[+mk.dataset.jev]; S.jEvent = +mk.dataset.jev; stopPlay(); return go(e.year); }
     if (mk) { ev.preventDefault(); return openMoment(mk.dataset.moment); }
@@ -1084,6 +1202,7 @@ function renderChart() {
   $("#chartTitle").textContent = `The great powers · ${w.label}, ${shortYear(w.a)}–${shortYear(w.b)}`;
 }
 function updateChartCursor() {
+  if (S.war) return;
   const w = S.journey ? { a: S.journey.span[0], b: S.journey.span[1] } : S.win; if (!w) return;
   const el = $("#chart");
   el.querySelectorAll(".series").forEach((p) => p.setAttribute("fill", colorOf(p.dataset.series)));
@@ -1134,6 +1253,12 @@ function togglePlay() {
   if (S.journey && S.year >= S.journey.span[1]) go(S.journey.span[0]);
   else if (!S.journey && S.year >= S.range[1]) go(S.range[0]);
   setPlayIcon(true);
+  if (S.war) {
+    if (S.wIdx >= S.war.events.length - 1) goWarEvent(0);
+    setPlayIcon(true);
+    S.playing = setInterval(() => { if (!S.war || S.wIdx >= S.war.events.length - 1) return stopPlay(); goWarEvent(S.wIdx + 1); }, 3200);
+    return;
+  }
   // Journeys last ~25 s whatever the empire's lifespan; the open timeline moves at a steady pace.
   const span = S.journey ? S.journey.span[1] - S.journey.span[0] : 0;
   const interval = S.journey ? Math.min(600, Math.max(110, 25000 / Math.max(1, span))) : 110;
@@ -1186,7 +1311,8 @@ function setupUI() {
   $("#sourcesLink").onclick = (ev) => { ev.preventDefault(); S.view = "sources"; renderCol(true); };
   $("#momentsLink").onclick = (ev) => { ev.preventDefault(); if (S.journey) exitJourney(); S.view = "moments"; S.moment = null; draw(); renderCol(true); };
   $("#empiresLink").onclick = (ev) => { ev.preventDefault(); if (S.journey) exitJourney(); S.view = "empires"; S.moment = null; draw(); renderCol(true); };
-  $("#dock").addEventListener("click", (ev) => { if (ev.target.closest("[data-act=exit-journey]")) exitJourney(); });
+  $("#dock").addEventListener("click", (ev) => { if (ev.target.closest("[data-act=exit-journey]")) exitJourney(); if (ev.target.closest("[data-act=exit-war]")) exitWar(); });
+  $("#warsLink").onclick = (ev) => { ev.preventDefault(); if (S.journey) exitJourney(); if (S.war) exitWar(); S.view = "wars"; S.moment = null; draw(); renderCol(true); };
   $("#zoomIn").onclick = () => d3.select(canvas).transition().duration(300).call(S.zoom.scaleBy, 1.6);
   $("#zoomOut").onclick = () => d3.select(canvas).transition().duration(300).call(S.zoom.scaleBy, 1 / 1.6);
   $("#zoomReset").onclick = () => d3.select(canvas).transition().duration(600).call(S.zoom.transform, d3.zoomIdentity);
@@ -1200,12 +1326,18 @@ function setupUI() {
     if (act) {
       if (act.dataset.act === "close") return select(null);
       if (act.dataset.act === "exit-journey") return exitJourney();
+      if (act.dataset.act === "exit-war") return exitWar();
+      if (act.dataset.act === "wars") { if (S.war) exitWar(); S.view = "wars"; return renderCol(true); }
       if (act.dataset.act === "empires") { if (S.journey) exitJourney(); S.view = "empires"; return renderCol(true); }
       if (act.dataset.act === "moments") { S.view = "moments"; S.moment = null; draw(); writeHash(); return renderCol(true); }
       S.view = "world"; S.moment = null; draw(); updateChartCursor(); writeHash(); return renderCol(true);
     }
     const mo = ev.target.closest("[data-moment]");
     if (mo) return openMoment(mo.dataset.moment);
+    const wo = ev.target.closest("[data-war]");
+    if (wo) return openWar(wo.dataset.war);
+    const we = ev.target.closest("[data-wev]");
+    if (we && S.war) { stopPlay(); return goWarEvent(+we.dataset.wev); }
     const jo = ev.target.closest("[data-journey]");
     if (jo) return openJourney(jo.dataset.journey);
     const je = ev.target.closest("[data-jev]");
@@ -1232,6 +1364,7 @@ function setupUI() {
   col.addEventListener("change", (ev) => { if (ev.target.id === "ghostToggle") { S.showGhost = ev.target.checked; draw(); } });
   addEventListener("hashchange", async () => {
     const h = parseHash();
+    if (h.war) { if (S.war?.id !== h.war) openWar(h.war, h.wev); else if (h.wev !== S.wIdx) goWarEvent(h.wev); return; }
     if (h.moment) { if (S.moment?.id !== h.moment) openMoment(h.moment); return; }
     if (h.journey) { if (S.journey?.id !== h.journey) openJourney(h.journey, h.year); else if (h.year != null && h.year !== S.year) go(h.year); return; }
     if (h.year != null && h.year !== S.year) await go(h.year);
@@ -1240,12 +1373,14 @@ function setupUI() {
   addEventListener("keydown", (ev) => {
     if (ev.target.matches("input, textarea")) return;
     const step = ev.shiftKey ? 1 : 10;
+    if (S.war && (ev.key === "ArrowLeft" || ev.key === "ArrowRight")) { stopPlay(); return goWarEvent(S.wIdx + (ev.key === "ArrowRight" ? 1 : -1)); }
     if (ev.key === "ArrowLeft") { stopPlay(); go(S.year - step); }
     else if (ev.key === "ArrowRight") { stopPlay(); go(S.year + step); }
     else if (ev.key === "PageUp" || ev.key === "[") { stopPlay(); stepChapter(-1); }
     else if (ev.key === "PageDown" || ev.key === "]") { stopPlay(); stepChapter(1); }
     else if (ev.key === " " && !ev.target.matches("button, summary")) { ev.preventDefault(); togglePlay(); }
-    else if (ev.key === "Escape") { if (S.journey) exitJourney(); else select(null); }
+    else if (ev.key === "Escape") { if (S.war) exitWar(); else if (S.journey) exitJourney(); else select(null); }
+    else if (S.war && (ev.key === "ArrowLeft" || ev.key === "ArrowRight")) { /* handled above for years; wars use event steps */ }
   });
 }
 

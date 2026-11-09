@@ -236,12 +236,46 @@ def main():
             journeys.append(j)
     journeys.sort(key=lambda j: j["span"][0])
 
+    # Wars (content/wars/*.json): event-by-event playback with sides coloured on the map.
+    wars, wids = [], set()
+    for p in sorted(glob.glob(os.path.join(ROOT, "content", "wars", "*.json"))):
+        for w in json.load(open(p)):
+            if w.get("id") in wids:
+                problems.append(f"war id duplicated: {w.get('id')}"); continue
+            wids.add(w["id"])
+            for sd in w.get("sides", []):
+                keep = []
+                for m in sd.get("members", []):
+                    if realms and m.get("clio") not in realms:
+                        problems.append(f"war {w['id']}: member not in map data: {m.get('clio')!r}")
+                    else:
+                        keep.append(m)
+                sd["members"] = keep
+            a0, a1 = w["span"]
+            w["events"] = sorted([e for e in w.get("events", []) if a0 <= e.get("year", a0 - 1) <= a1],
+                                 key=lambda e: (e["year"], str(e.get("date", ""))))
+            check_sources(f"war {w['id']}", w)
+            wars.append(w)
+    wars.sort(key=lambda w: w["span"][0])
+
+    # Period newspapers and photos (content/media/*.json): only https images with a licence and a source page.
+    media = {}
+    for p in sorted(glob.glob(os.path.join(ROOT, "content", "media", "*.json"))):
+        for key, items in json.load(open(p)).items():
+            ok = [m for m in items if str(m.get("image", "")).startswith("https://") and str(m.get("page", "")).startswith(("https://", "http://")) and m.get("license")]
+            if len(ok) < len(items):
+                problems.append(f"media {key}: dropped {len(items) - len(ok)} item(s) without https image, page or licence")
+            if ok:
+                media[key] = ok
+    with open(os.path.join(ROOT, "public", "data", "media.json"), "w") as fh:
+        json.dump(media, fh, ensure_ascii=False, separators=(",", ":"))
+
     out = os.path.join(ROOT, "public", "data", "content.json")
     with open(out, "w") as fh:
-        json.dump({"eras": eras, "empires": empires, "moments": moments, "journeys": journeys}, fh, ensure_ascii=False, separators=(",", ":"))
+        json.dump({"eras": eras, "empires": empires, "moments": moments, "journeys": journeys, "wars": wars}, fh, ensure_ascii=False, separators=(",", ":"))
     with open(os.path.join(ROOT, "content", "empires.json"), "w") as fh:
         json.dump(empires, fh, ensure_ascii=False, indent=1)
-    print(f"{len(eras)} eras, {len(empires)} empires, {len(moments)} moments, {len(journeys)} journeys, {len(seen_clio)} clio links, {len(seen_alias)} aliases -> {os.path.relpath(out, ROOT)} ({os.path.getsize(out) // 1024} KB)")
+    print(f"{len(eras)} eras, {len(empires)} empires, {len(moments)} moments, {len(journeys)} journeys, {len(wars)} wars, {len(seen_clio)} clio links, {len(seen_alias)} aliases -> {os.path.relpath(out, ROOT)} ({os.path.getsize(out) // 1024} KB)")
     for pr in problems:
         print("  !", pr)
 
