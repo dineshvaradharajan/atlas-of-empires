@@ -246,3 +246,4 @@ ul.rlist li button.linkish { text-decoration: none; font: 600 15px var(--sans); 
 .playj:hover { background: var(--highlight); border-color: var(--highlight); }
 aside.mapnote p.msrc { font-size: 12px; color: var(--ink-3); }
 aside.mapnote p.msrc a { color: var(--ink-3); }
+p.refyear { margin: 0; font-size: 13px; color: var(--ink-2); background: var(--chip); padding: 8px 10px; }

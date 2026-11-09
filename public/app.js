@@ -409,7 +409,7 @@ function setupMap() {
     } else if (it.kind === "culture") {
       tip.innerHTML = it.corrected
         ? `<b>${esc(it.p.n)}</b><div class="m">No unified state in ${plainYear(S.year)} (map correction; the data draws “${esc(clean(it.p.fixed))}”)</div>`
-        : `<b>${esc(it.p.n)}</b><div class="m">${isCulture(it.p) ? "People or culture without a state" : "Polity not in the Cliopatria dataset"} · approximate, c. ${plainYear(baseYearFor(S.year))}</div>`;
+        : `<b>${esc(it.p.n)}</b><div class="m">${isCulture(it.p) ? "People or culture without a state" : "Polity outside the main border data"} · approximate, c. ${plainYear(baseYearFor(S.year))}</div>`;
     } else {
       tip.innerHTML = `<b>Unrecorded</b><div class="m">No state is recorded here in ${plainYear(S.year)}: uninhabited, or beyond the written record.</div>`;
     }
@@ -632,7 +632,7 @@ function worldHTML() {
     h += `<tr data-key="${esc(r.key)}"${r.key === S.sel ? ' class="sel"' : ""}><td><span class="sq" style="background:${r.color}"></span>${esc(displayName(r.key))}</td>
       <td class="who">${esc(showRulers ? rulerOf(r.key) || "—" : since != null ? shortYear(since) : "")}</td><td>${mkm(r.area)}</td></tr>`;
   }
-  h += `</tbody></table><p class="note">${S.states.length} states recorded this year. Areas from Cliopatria, including colonies and member states.</p>`;
+  h += `</tbody></table><p class="note">${S.states.length} states recorded this year. Areas include colonies and member states.</p>`;
   const [ea, eb, eLabel] = eraOf(y);
   const em = S.content.moments.filter((m) => (m.year >= ea && m.year < eb) || (ea === S.range[0] && m.year < ea));
   if (em.length) {
@@ -683,7 +683,11 @@ function realmHTML() {
     <label class="toggle"><input type="checkbox" id="ghostToggle" ${S.showGhost ? "checked" : ""}> Outline greatest extent on the map</label>`;
   if (emp?.summary) h += `<h3 class="sec">Story</h3><p class="prose">${esc(emp.summary)}</p>`;
   if (media) {
-    h += `<h3 class="sec">Reference map</h3><figure class="ref"><a href="${esc(media.page)}" target="_blank" rel="noopener"><img src="${esc(media.thumb)}" alt="${esc(media.desc || media.file)}" loading="lazy"></a>
+    const ry = refYear(media, r);
+    h += `<h3 class="sec">Reference map${ry != null ? ` · c. ${shortYear(ry)}` : ""}</h3>`;
+    if (ry != null && Math.abs(ry - y) > 10) h += `<p class="refyear">This reference shows the realm around <b>${plainYear(ry)}</b>; the map above is showing <b>${plainYear(y)}</b>, so borders will differ. <button class="linkish" data-year="${ry}">Show ${plainYear(ry)} on the map</button></p>`;
+    else if (ry != null) h += `<p class="refyear">Same period as the map.</p>`;
+    h += `<figure class="ref"><a href="${esc(media.page)}" target="_blank" rel="noopener"><img src="${esc(media.thumb)}" alt="${esc(media.desc || media.file)}" loading="lazy"></a>
       <figcaption>${esc(media.desc || media.file.replace(/^File:/, ""))}<br>${esc(media.artist || "Unknown author")} · ${media.licenseUrl ? `<a href="${esc(media.licenseUrl)}" target="_blank" rel="noopener">${esc(media.license)}</a>` : esc(media.license)} · <a href="${esc(media.page)}" target="_blank" rel="noopener">Wikimedia Commons</a></figcaption></figure>`;
   }
   if (emp?.rulers?.length) {
@@ -703,8 +707,21 @@ function realmHTML() {
     r.seshat && `<a href="https://seshat-db.com/core/polity/${esc(r.seshat)}" target="_blank" rel="noopener">Seshat</a>`].filter(Boolean);
   if (links.length) h += `<h3 class="sec">Read more</h3><p class="links">${links.join(" · ")}</p>`;
   h += sourcesList(emp?.sources);
-  h += `<p class="note">Borders and areas: Cliopatria (Seshat Global History Databank, CC BY 4.0).</p>`;
   return h;
+}
+// The year a Commons reference map depicts, read from its file name / caption (e.g. "c. 1030", "117AD",
+// "1206–1294"); ranges resolve to the year of the realm's widest extent. null if it names no usable year.
+function refYear(media, r) {
+  const text = `${media.file || ""} ${media.desc || ""}`.replace(/_/g, " ");
+  const lo = r.tl[0][0], hi = r.tl[r.tl.length - 1][1], slack = Math.max(25, Math.round((hi - lo) / 10));
+  const ys = [];
+  for (const m of text.matchAll(/(?<!\d)(\d{2,4})\s*(BCE|BC|B\.C\.|AD|CE|A\.D\.)?(?!\d)/gi)) {
+    let y = +m[1]; if ((m[2] || "").toUpperCase().startsWith("B")) y = -y;
+    if (y >= lo - slack && y <= hi + slack) ys.push(Math.min(hi, Math.max(lo, y)));
+  }
+  if (!ys.length) return null;
+  const areaOf = (y) => (r.tl.find(([f, t]) => f <= y && y <= t) || [0, 0, 0])[2];
+  return ys.reduce((b, y) => (areaOf(y) > areaOf(b) ? y : b), ys[0]);
 }
 function extentChart(r) {
   const W = 400, H = 120, padB = 18;
