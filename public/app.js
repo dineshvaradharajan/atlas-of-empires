@@ -429,6 +429,152 @@ function realmsNow(raw = false) {
   return out;
 }
 
+// ---------------------------------------------------------------- WebGL renderer
+// Territory fills, borders and graticule are drawn on the GPU (#gl) when WebGL is available; labels, pins and
+// highlight outlines stay on the 2D overlay (#map). Shapes are projected once, triangulated with earcut and cached,
+// so pan/zoom only change two uniforms; year changes cross-fade. Falls back to Canvas2D if WebGL is unavailable.
+const GL = (() => {
+  const cv = document.getElementById("gl");
+  if (!cv || typeof earcut !== "function") return null;
+  const gl = cv.getContext("webgl", { stencil: true, antialias: true, alpha: false });
+  if (!gl) return null;
+  const sh = (type, src) => { const o = gl.createShader(type); gl.shaderSource(o, src); gl.compileShader(o); if (!gl.getShaderParameter(o, gl.COMPILE_STATUS)) throw new Error(gl.getShaderInfoLog(o)); return o; };
+  const prog = gl.createProgram();
+  try {
+    gl.attachShader(prog, sh(gl.VERTEX_SHADER, `attribute vec2 p; uniform vec2 u_t; uniform float u_k; uniform vec2 u_size;
+      void main(){ vec2 s = p * u_k + u_t; gl_Position = vec4(s.x / u_size.x * 2.0 - 1.0, 1.0 - s.y / u_size.y * 2.0, 0.0, 1.0); }`));
+    gl.attachShader(prog, sh(gl.FRAGMENT_SHADER, `precision mediump float; uniform vec4 u_c; uniform vec4 u_c2; uniform float u_hatch; uniform float u_dpr; uniform float u_a;
+      void main(){ vec4 c = u_c; if (u_hatch > 0.5) { float d = mod((gl_FragCoord.x + gl_FragCoord.y) / u_dpr, 4.2); c = d < 1.2 ? u_c2 : u_c; } gl_FragColor = vec4(c.rgb, c.a * u_a); }`));
+    gl.linkProgram(prog);
+    if (!gl.getProgramParameter(prog, gl.LINK_STATUS)) throw new Error(gl.getProgramInfoLog(prog));
+  } catch (e) { console.warn("WebGL unavailable, using Canvas2D:", e); return null; }
+  gl.useProgram(prog);
+  const L = (n) => gl.getUniformLocation(prog, n), aP = gl.getAttribLocation(prog, "p");
+  const U = { t: L("u_t"), k: L("u_k"), size: L("u_size"), c: L("u_c"), c2: L("u_c2"), hatch: L("u_hatch"), dpr: L("u_dpr"), a: L("u_a") };
+  let geo = new WeakMap();                 // feature -> { fill: Float32Array, line: Float32Array }
+  const colors = new Map();
+  const rgba = (c) => {
+    if (colors.has(c)) return colors.get(c);
+    const x = document.createElement("canvas").getContext("2d"); x.fillStyle = c; const h = x.fillStyle;
+    const v = h.startsWith("#") ? [1, 3, 5].map((i) => parseInt(h.slice(i, i + 2), 16) / 255).concat(1)
+      : (h.match(/[\d.]+/g) || [0, 0, 0, 1]).map((n, i) => (i < 3 ? n / 255 : +n));
+    if (v.length === 3) v.push(1);
+    colors.set(c, v); return v;
+  };
+  function rings(feature) { // projected (zoom-1 screen) rings via a recording path context
+    const out = []; let cur = null;
+    const rec = { beginPath() {}, moveTo(x, y) { cur = [x, y]; out.push(cur); }, lineTo(x, y) { cur.push(x, y); }, closePath() {}, arc() {} };
+    d3.geoPath(projection, rec)(feature);
+    return out.filter((r) => r.length >= 6);
+  }
+  const area2 = (r) => { let a = 0; for (let i = 0; i < r.length; i += 2) { const j = (i + 2) % r.length; a += r[i] * r[j + 1] - r[j] * r[i + 1]; } return a; };
+  function build(feature) {
+    let g = geo.get(feature);
+    if (g) return g;
+    const rs = rings(feature), fill = [], line = [];
+    if (rs.length) {
+      let big = rs[0]; for (const r of rs) if (Math.abs(area2(r)) > Math.abs(area2(big))) big = r;
+      const ext = Math.sign(area2(big)), polys = [];
+      for (const r of rs) { if (Math.sign(area2(r)) === ext || !polys.length) polys.push([r]); else polys[polys.length - 1].push(r); }
+      for (const poly of polys) {
+        const flat = [], holes = [];
+        poly.forEach((r, i) => { if (i) holes.push(flat.length / 2); for (const v of r) flat.push(v); });
+        const idx = earcut(flat, holes);
+        for (const i of idx) fill.push(flat[2 * i], flat[2 * i + 1]);
+      }
+      for (const r of rs) for (let i = 0; i < r.length; i += 2) { const j = (i + 2) % r.length; line.push(r[i], r[i + 1], r[j], r[j + 1]); }
+    }
+    g = { fill: new Float32Array(fill), line: new Float32Array(line) };
+    geo.set(feature, g);
+    return g;
+  }
+  // A "layer" = one uploaded vertex buffer for a set of items, with per-item ranges.
+  function makeLayer(items) {
+    let nf = 0, nl = 0;
+    const gs = items.map((it) => { const g = build(it.f); nf += g.fill.length; nl += g.line.length; return g; });
+    const fill = new Float32Array(nf), line = new Float32Array(nl), ranges = [];
+    let of = 0, ol = 0;
+    gs.forEach((g, i) => { fill.set(g.fill, of); line.set(g.line, ol); ranges.push({ it: items[i], f0: of / 2, fn: g.fill.length / 2, l0: ol / 2, ln: g.line.length / 2 }); of += g.fill.length; ol += g.line.length; });
+    const fb = gl.createBuffer(), lb = gl.createBuffer();
+    gl.bindBuffer(gl.ARRAY_BUFFER, fb); gl.bufferData(gl.ARRAY_BUFFER, fill, gl.STATIC_DRAW);
+    gl.bindBuffer(gl.ARRAY_BUFFER, lb); gl.bufferData(gl.ARRAY_BUFFER, line, gl.STATIC_DRAW);
+    return { items, fb, lb, ranges };
+  }
+  const freeLayer = (l) => { if (l) { gl.deleteBuffer(l.fb); gl.deleteBuffer(l.lb); } };
+  let cur = null, prev = null, fadeT0 = 0, statics = null, landLayer = null;
+  const FADE = 260;
+  function setItems(items) {
+    if (cur && cur.items === items) return;
+    freeLayer(prev); prev = cur; cur = makeLayer(items); fadeT0 = performance.now();
+    freeLayer(landLayer); landLayer = null;
+  }
+  function makeStatics() {
+    const ls = [];
+    for (const g of [d3.geoGraticule10(), { type: "Sphere" }]) {
+      const r = rings({ type: "Feature", geometry: g.type === "Sphere" ? g : g, properties: {} });
+      ls.push(r.flatMap((ring) => { const o = []; for (let i = 0; i + 3 < ring.length; i += 2) o.push(ring[i], ring[i + 1], ring[i + 2], ring[i + 3]); return o; }));
+    }
+    const sph = build({ type: "Feature", geometry: { type: "Sphere" }, properties: {} });
+    const mk = (arr) => { const b = gl.createBuffer(); gl.bindBuffer(gl.ARRAY_BUFFER, b); gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(arr), gl.STATIC_DRAW); return { b, n: arr.length / 2 }; };
+    return { grat: mk(ls[0]), sphereLine: mk(ls[1]), sphereFill: mk(Array.from(sph.fill)) };
+  }
+  function bindPos(buf) { gl.bindBuffer(gl.ARRAY_BUFFER, buf); gl.enableVertexAttribArray(aP); gl.vertexAttribPointer(aP, 2, gl.FLOAT, false, 0, 0); }
+  function color(c, a = 1) { const v = rgba(c); gl.uniform4f(U.c, v[0], v[1], v[2], v[3]); gl.uniform1f(U.hatch, 0); gl.uniform1f(U.a, a); }
+  function drawLayer(layer, fillOf, alpha) {
+    bindPos(layer.fb);
+    const later = [];
+    for (const r of layer.ranges) {
+      if (!r.fn) continue;
+      if (r.it.p.recon || r.it.p.crop) { later.push(r); continue; }
+      const f = fillOf(r.it);
+      if (f === "HATCH") { const a = rgba(theme.peoplesBg), b = rgba(theme.peoplesLine); gl.uniform4f(U.c, ...a); gl.uniform4f(U.c2, ...b); gl.uniform1f(U.hatch, 1); gl.uniform1f(U.a, alpha); }
+      else color(f, alpha);
+      gl.drawArrays(gl.TRIANGLES, r.f0, r.fn);
+    }
+    // clipped items (reconstructions to the coastline, crops to their box) via the stencil buffer
+    for (const r of later) {
+      gl.enable(gl.STENCIL_TEST); gl.clear(gl.STENCIL_BUFFER_BIT);
+      gl.colorMask(false, false, false, false); gl.stencilFunc(gl.ALWAYS, 1, 0xff); gl.stencilOp(gl.KEEP, gl.KEEP, gl.REPLACE);
+      if (r.it.p.recon) {
+        if (!landLayer) landLayer = makeLayer(S.items.filter((it) => it.kind !== "state"));
+        bindPos(landLayer.fb); color("#000"); for (const q of landLayer.ranges) if (q.fn) gl.drawArrays(gl.TRIANGLES, q.f0, q.fn);
+      }
+      if (r.it.p.crop) {
+        const g = build(r.it.p.crop), b = gl.createBuffer();
+        gl.bindBuffer(gl.ARRAY_BUFFER, b); gl.bufferData(gl.ARRAY_BUFFER, g.fill, gl.STREAM_DRAW); bindPos(b);
+        if (r.it.p.recon) { gl.stencilFunc(gl.EQUAL, 1, 0xff); gl.stencilOp(gl.KEEP, gl.KEEP, gl.INCR); gl.drawArrays(gl.TRIANGLES, 0, g.fill.length / 2); gl.stencilFunc(gl.EQUAL, 2, 0xff); }
+        else { gl.drawArrays(gl.TRIANGLES, 0, g.fill.length / 2); gl.stencilFunc(gl.EQUAL, 1, 0xff); }
+        gl.deleteBuffer(b);
+      } else gl.stencilFunc(gl.EQUAL, 1, 0xff);
+      gl.colorMask(true, true, true, true); gl.stencilOp(gl.KEEP, gl.KEEP, gl.KEEP);
+      bindPos(layer.fb); color(fillOf(r.it), alpha); gl.drawArrays(gl.TRIANGLES, r.f0, r.fn);
+      gl.disable(gl.STENCIL_TEST);
+    }
+    // borders of ordinary states (reconstructed/cropped borders are drawn on the 2D overlay)
+    bindPos(layer.lb); color(theme.borderLine || theme.border, alpha);
+    for (const r of layer.ranges) if (r.ln && r.it.kind === "state" && !r.it.p.recon && !r.it.p.crop) gl.drawArrays(gl.LINES, r.l0, r.ln);
+  }
+  return {
+    resize(w, h, dpr) { cv.width = Math.round(w * dpr); cv.height = Math.round(h * dpr); geo = new WeakMap(); freeLayer(cur); freeLayer(prev); freeLayer(landLayer); cur = prev = landLayer = null; statics = null; },
+    setItems,
+    fading: () => prev && performance.now() - fadeT0 < FADE,
+    frame(t, fillOf) {
+      if (!statics) statics = makeStatics();
+      gl.viewport(0, 0, cv.width, cv.height);
+      const o = rgba(theme.ocean); gl.clearColor(o[0], o[1], o[2], 1); gl.clearStencil(0); gl.clear(gl.COLOR_BUFFER_BIT | gl.STENCIL_BUFFER_BIT);
+      gl.enable(gl.BLEND); gl.blendFunc(gl.SRC_ALPHA, gl.ONE_MINUS_SRC_ALPHA);
+      gl.uniform2f(U.t, t.x, t.y); gl.uniform1f(U.k, t.k); gl.uniform2f(U.size, S.width, S.height); gl.uniform1f(U.dpr, S.dpr);
+      bindPos(statics.grat.b); color(theme.grat); gl.drawArrays(gl.LINES, 0, statics.grat.n);
+      const e = prev ? Math.min(1, (performance.now() - fadeT0) / FADE) : 1;
+      if (prev && e < 1) drawLayer(prev, fillOf, 1);
+      if (cur) drawLayer(cur, fillOf, prev && e < 1 ? e * e * (3 - 2 * e) : 1);
+      if (e >= 1 && prev) { freeLayer(prev); prev = null; }
+      bindPos(statics.sphereLine.b); color(theme.rule); gl.drawArrays(gl.LINES, 0, statics.sphereLine.n);
+    },
+  };
+})();
+if (GL) document.documentElement.classList.add("webgl");
+
 // ---------------------------------------------------------------- map
 function pathOf(f) {
   let p = pathCache.get(f);
@@ -460,6 +606,7 @@ function setupMap() {
     if (!r.width) return;
     S.width = r.width; S.height = r.height; S.dpr = Math.min(2, devicePixelRatio || 1);
     canvas.width = r.width * S.dpr; canvas.height = r.height * S.dpr;
+    if (GL) GL.resize(r.width, r.height, S.dpr);
     pick.width = r.width; pick.height = r.height;
     const small = r.width < 600, pad = small ? 8 : 28;
     projection.fitExtent([[pad, pad], [r.width - pad - (small ? 36 : 50), r.height - pad - (small ? 0 : 24)]], { type: "Sphere" });
@@ -512,8 +659,17 @@ function setupMap() {
   });
 }
 
+function fillOf(it) { // the fill for an item; "HATCH" = peoples pattern
+  if (it.kind === "land") return theme.unknown;
+  if (it.kind === "culture") return "HATCH";
+  if (S.journey && inJourney(it)) return theme.highlight;
+  if (it.p.recon && it.p.n === S.sel) return theme.highlight;
+  if (S.war) { const sd = warSideOf(it); return sd >= 0 ? SIDE_COLORS[sd % SIDE_COLORS.length] : [theme.other1, theme.other2, theme.other3][hash(clean(it.key)) % 3]; }
+  return colorOf(it.key);
+}
 function draw() {
   if (!S.items.length || !sphere2d) return;
+  if (GL) return drawGL();
   const { t } = S;
   ctx.setTransform(S.dpr, 0, 0, S.dpr, 0, 0);
   ctx.fillStyle = theme.ocean; ctx.fillRect(0, 0, S.width, S.height);
@@ -560,6 +716,39 @@ function draw() {
   drawMomentPin();
 }
 
+function drawGL() {
+  const { t } = S;
+  GL.setItems(S.items);
+  GL.frame(t, fillOf);
+  ctx.setTransform(S.dpr, 0, 0, S.dpr, 0, 0);
+  ctx.clearRect(0, 0, S.width, S.height);
+  ctx.save();
+  ctx.translate(t.x, t.y); ctx.scale(t.k, t.k);
+  ctx.lineJoin = "round";
+  for (const it of S.items) { // borders the GPU skips: reconstructions (dashed, coast-clipped) and crops
+    if (it.kind !== "state" || !(it.p.recon || it.p.crop)) continue;
+    ctx.save(); clipFor(ctx, it);
+    if (it.p.recon) { ctx.setLineDash([3 / t.k, 2.5 / t.k]); ctx.strokeStyle = theme.ink3; } else ctx.strokeStyle = theme.border;
+    ctx.lineWidth = 0.7 / t.k; ctx.stroke(pathOf(it.f)); ctx.restore();
+  }
+  const sel = S.sel;
+  if (S.showGhost && S.ghost && sel === S.ghost.key && S.ghost.year !== S.year) {
+    ctx.setLineDash([5 / t.k, 4 / t.k]); ctx.strokeStyle = theme.highlight; ctx.lineWidth = 1.6 / t.k;
+    for (const p of S.ghost.paths) ctx.stroke(p);
+    ctx.setLineDash([]);
+  }
+  drawRings();
+  if (S.journey) { ctx.strokeStyle = theme.ink; ctx.lineWidth = 1.4 / t.k; for (const it of S.items) if (inJourney(it)) strokeItem(ctx, it); }
+  if (sel) { ctx.strokeStyle = theme.ink; ctx.lineWidth = 1.4 / t.k; for (const it of S.items) if (it.kind === "state" && (matches(it, sel) || (it.p.recon && it.p.n === sel))) strokeItem(ctx, it); }
+  if (S.hover >= 0) { ctx.strokeStyle = theme.ink; ctx.lineWidth = 2 / t.k; strokeItem(ctx, S.items[S.hover]); }
+  ctx.restore();
+  if (S.zooming || GL.fading()) { clearTimeout(S.pickTimer); S.pickTimer = setTimeout(drawPick, 120); }
+  else drawPick();
+  if (S.labels) drawLabels();
+  drawSites();
+  drawMomentPin();
+  if (GL.fading()) { cancelAnimationFrame(S.fadeRaf); S.fadeRaf = requestAnimationFrame(draw); } // keep animating the cross-fade
+}
 function drawLabels() {
   const { t } = S;
   const pxPerKm = (projection.scale() * t.k) / 6371;
