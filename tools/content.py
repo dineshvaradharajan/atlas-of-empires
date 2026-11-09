@@ -9,6 +9,8 @@ import glob
 import json
 import os
 import re
+import subprocess
+import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 NAMES = os.path.join(ROOT, "data", "names")
@@ -313,3 +315,9 @@ def main():
 
 if __name__ == "__main__":
     main()
+    # history checks for war cinema layers (fronts, occupations, arrows, claims): see tools/cinema/check_history.py
+    if glob.glob(os.path.join(ROOT, "content", "cinema", "*.json")):
+        r = subprocess.run([sys.executable, "-I", os.path.join(ROOT, "tools", "cinema", "check_history.py")], capture_output=True, text=True)
+        print(r.stdout.splitlines()[0] if r.stdout else r.stderr.strip()[:300])
+        if r.returncode:
+            print("  ! history check found errors: see content/factcheck/history-check-*.md")

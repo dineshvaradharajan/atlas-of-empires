@@ -1295,9 +1295,15 @@ function occPattern(c) {
 function drawOccupations() { // inside the map transform: occupied land takes the occupier's tint (fine stripes mark it as occupied)
   const C = S.cine; if (!S.war || !C || !C.occupations.length) return;
   const t = S.wt, k = S.t.k;
+  // occupied ground is only ever enemy (or neutral) ground: clip each side's areas to states not on that side
+  const notOwn = new Map(), clipFor = (side) => {
+    if (!notOwn.has(side)) { const p = new Path2D(); for (const it of S.items) if (it.kind === "state" && warSideOf(it) !== side) p.addPath(pathOf(it.f)); notOwn.set(side, p); }
+    return notOwn.get(side);
+  };
   ctx.save(); ctx.clip(S.landClip);
   for (const o of C.occupations) {
     const s = trackAt(o, t, S.cineK.t1); if (!s) continue;
+    ctx.save(); ctx.clip(clipFor(o.side ?? 1));
     const side = o.side ?? 1, path = new Path2D(), mk = (pts) => { const q = new Path2D(); pts.forEach((p, i) => { const [x, y] = projection(p); i ? q.lineTo(x, y) : q.moveTo(x, y); }); q.closePath(); return q; };
     s.pts.forEach((p, i) => { const [x, y] = projection(p); i ? path.lineTo(x, y) : path.moveTo(x, y); });
     path.closePath();
@@ -1308,6 +1314,7 @@ function drawOccupations() { // inside the map transform: occupied land takes th
     } else { ctx.globalAlpha = s.a; ctx.fillStyle = sideTint(side); ctx.fill(path); }
     const pat = occPattern(SIDE_COLORS[side % SIDE_COLORS.length]); pat.setTransform(new DOMMatrix().scale(1 / k));
     ctx.globalAlpha = 0.35 * s.a; ctx.fillStyle = pat; ctx.fill(path);
+    ctx.restore();
   }
   ctx.restore(); ctx.globalAlpha = 1;
 }
