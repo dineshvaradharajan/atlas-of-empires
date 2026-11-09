@@ -1,0 +1,116 @@
+{
+ "claims": [
+  {
+   "ok": true,
+   "place": "Constantinople",
+   "year": 1450,
+   "lonlat": [
+    28.97,
+    41.01
+   ],
+   "expected": [
+    "Byzantine Empire"
+   ],
+   "map": [
+    "Byzantine Empire"
+   ],
+   "region": "europe",
+   "source": {
+    "title": "Fall of Constantinople",
+    "url": "https://en.wikipedia.org/wiki/Fall_of_Constantinople"
+   },
+   "file": "claims-seed.json"
+  },
+  {
+   "ok": false,
+   "place": "Constantinople",
+   "year": 1460,
+   "lonlat": [
+    28.97,
+    41.01
+   ],
+   "expected": [
+    "(Ottoman Empire)",
+    "Ottoman Empire"
+   ],
+   "map": [
+    "Byzantine Empire"
+   ],
+   "region": "europe",
+   "source": {
+    "title": "Fall of Constantinople",
+    "url": "https://en.wikipedia.org/wiki/Fall_of_Constantinople"
+   },
+   "file": "claims-seed.json"
+  },
+  {
+   "ok": true,
+   "place": "Strasbourg",
+   "year": 1880,
+   "lonlat": [
+    7.75,
+    48.58
+   ],
+   "expected": [
+    "German Empire"
+   ],
+   "map": [
+    "German Empire"
+   ],
+   "region": "europe",
+   "source": {
+    "title": "Alsace-Lorraine",
+    "url": "https://en.wikipedia.org/wiki/Alsace%E2%80%93Lorraine"
+   },
+   "file": "claims-seed.json"
+  },
+  {
+   "ok": true,
+   "place": "Strasbourg",
+   "year": 1925,
+   "lonlat": [
+    7.75,
+    48.58
+   ],
+   "expected": [
+    "(French Third Republic)",
+    "French Third Republic"
+   ],
+   "map": [
+    "French Third Republic"
+   ],
+   "region": "europe",
+   "source": {
+    "title": "Alsace-Lorraine",
+    "url": "https://en.wikipedia.org/wiki/Alsace%E2%80%93Lorraine"
+   },
+   "file": "claims-seed.json"
+  },
+  {
+   "ok": true,
+   "place": "Delhi",
+   "year": 1700,
+   "lonlat": [
+    77.21,
+    28.65
+   ],
+   "expected": [
+    "Mughal Empire"
+   ],
+   "map": [
+    "Mughal Empire"
+   ],
+   "region": "south-asia",
+   "source": {
+    "title": "Mughal Empire",
+    "url": "https://en.wikipedia.org/wiki/Mughal_Empire"
+   },
+   "file": "claims-seed.json"
+  }
+ ],
+ "links": [],
+ "dates": [],
+ "areas": [],
+ "overlaps": [],
+ "flicker": []
+}
