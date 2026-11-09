@@ -1,0 +1,370 @@
+[
+ {
+  "file": "content/eras/a-ancient.json",
+  "item": -3000,
+  "field": "regions.middle-east-south-asia",
+  "old": "and Hurrian groups in the northern hills",
+  "new": "and probably early Hurrian groups (first named in texts only after c. 2300 BCE) in the northern hills",
+  "source": "Hurrians first documented at Urkesh in the later 3rd millennium, allied with Akkad by Naram-Sin's reign; earlier presence only inferred: https://en.wikipedia.org/wiki/Hurrians"
+ },
+ {
+  "file": "content/eras/a-ancient.json",
+  "item": -2000,
+  "field": "events[1].text",
+  "old": "Mentuhotep II reunites Egypt, beginning the Middle Kingdom (c. 2055 BCE)",
+  "new": "Mentuhotep II, king from c. 2055 BCE, reunites Egypt, beginning the Middle Kingdom (c. 2040 BCE)",
+  "source": "CAH 3rd ed. vol. I pt 2 (1971), ch. XX (Hayes), p. 479: accession 2060, Heracleopolis falls \"about 2040 B.C.\"; Shaw, Oxford History of Ancient Egypt dates accession 2055; Grajetzki via https://en.wikipedia.org/wiki/Mentuhotep_II (unification shortly before year 39)"
+ },
+ {
+  "file": "content/eras/a-ancient.json",
+  "item": -1000,
+  "field": "overview",
+  "old": "King David rules a new kingdom of Israel from Jerusalem",
+  "new": "King David, according to the Bible, rules a new kingdom of Israel from Jerusalem",
+  "source": "Extent and nature of the united monarchy has no scholarly consensus (Finkelstein low chronology vs. Mazar, Dever, Faust): https://en.wikipedia.org/wiki/Kingdom_of_Israel_(united_monarchy)"
+ },
+ {
+  "file": "content/eras/a-ancient.json",
+  "item": -1000,
+  "field": "overview",
+  "old": "the Phoenicians of Tyre and Sidon are spreading their alphabet across the Mediterranean",
+  "new": "the Phoenicians of Tyre and Sidon have developed the alphabet their traders will later carry across the Mediterranean",
+  "source": "Oldest Phoenician inscriptions 10th c. BCE; adaptations (Greek, Old Italic, Anatolian) begin from the 9th c., Greek alphabet 8th c.: https://en.wikipedia.org/wiki/Phoenician_alphabet ; Phoenician westward colonies 9th c. on (Kition, Carthage 814)"
+ },
+ {
+  "file": "content/eras/a-ancient.json",
+  "item": -1000,
+  "field": "regions.middle-east-south-asia",
+  "old": "under him and his son Solomon it will become a regional power",
+  "new": "the Bible says that under him and his son Solomon it became a regional power, though archaeologists debate how large their kingdom really was",
+  "source": "https://en.wikipedia.org/wiki/Kingdom_of_Israel_(united_monarchy) (\"no current consensus\"; Solomon's 10th-c. reign \"uncertain\"); CAH III.1 (1982) still follows the biblical maximal view, now disputed"
+ },
+ {
+  "file": "content/eras/a-ancient.json",
+  "item": -1000,
+  "field": "powers[2].extent",
+  "old": "The hill country of Canaan, from the Negev toward Damascus",
+  "new": "The hill country of Canaan; the Bible's larger realm, from the Negev toward Damascus, is debated",
+  "source": "https://en.wikipedia.org/wiki/Kingdom_of_Israel_(united_monarchy)"
+ },
+ {
+  "file": "content/eras/a-ancient.json",
+  "item": -700,
+  "field": "overview",
+  "old": "the kingdom of the legendary King Midas",
+  "new": "the kingdom of King Midas, famous from Greek legend but a real ruler (the Mita of Assyrian records)",
+  "source": "Cambridge Ancient History, 2nd ed., vol. III part 2 (1991), ch. 34 (Mellink), p. 622-3: Midas = \"Mita of Mushki\" in Assyrian records; also pp. 91-2 (Sargon II's wars with Mita)"
+ },
+ {
+  "file": "content/eras/a-ancient.json",
+  "item": -700,
+  "field": "regions.middle-east-south-asia",
+  "old": "Sennacherib of Assyria rules an empire from the Persian Gulf to the Mediterranean, having destroyed the kingdom of Israel in 722 BCE and forced Judah under Hezekiah to pay tribute.",
+  "new": "Sennacherib of Assyria rules an empire from the Persian Gulf to the Mediterranean; Assyria destroyed the kingdom of Israel in 722 BCE, and Sennacherib has forced Judah under Hezekiah to pay tribute.",
+  "source": "Cambridge Ancient History, 2nd ed., vol. III part 2 (1991), ch. 22 (Grayson), pp. 85-6: Samaria captured by Shalmaneser V (726-722), not Sennacherib (705-681); sentence wrongly made Sennacherib the conqueror of Israel"
+ },
+ {
+  "file": "content/eras/a-ancient.json",
+  "item": -700,
+  "field": "regions.middle-east-south-asia",
+  "old": "and the Medes are uniting in western Iran",
+  "new": "and the Medes, still divided among many local chiefs, live in western Iran",
+  "source": "Cambridge Ancient History, 2nd ed., vol. III part 2 (1991), pp. 93-4 (Sargon II takes tribute from \"twenty-eight rulers of the land of the Medes\") and pp. 129-30 (Median city-rulers under Esarhaddon); Assyrian sources never mention a unified Median state before Cyaxares (615 BCE): https://en.wikipedia.org/wiki/Median_kingdom"
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "ancient-egypt",
+  "field": "peak.note",
+  "old": "Under Thutmose III, from Nubia's Fourth Cataract to the Euphrates",
+  "new": "Under Thutmose III, from Nubia's Fourth Cataract to the Euphrates; c. 1.0M km² c. 1450 BCE (Taagepera 1978)",
+  "source": "Taagepera 1978 \"Growth-Decline Curves, 3000 to 600 B.C.\", as tabulated at https://en.wikipedia.org/wiki/List_of_largest_empires"
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "ancient-egypt",
+  "field": "summary",
+  "old": "native independence ended when Cleopatra VII died",
+  "new": "its independence ended when Cleopatra VII died",
+  "source": "The profile itself calls the Ptolemies Greek; the last native ruler was Nectanebo II (358-c. 340 BCE, Persian reconquest 342 BCE), so 30 BCE ended Egyptian independence, not native rule: https://en.wikipedia.org/wiki/Nectanebo_II"
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "sumer",
+  "field": "peak.year",
+  "old": -2100,
+  "new": -2050,
+  "source": "Peak given as Ur III \"under Shulgi\" (c. 2094-2047 BCE); 2100 BCE precedes his accession. Shulgi dates as in the profile's own ruler list"
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "sumer",
+  "field": "peak.note",
+  "old": "ruling Mesopotamia and parts of western Iran",
+  "new": "ruling Mesopotamia and parts of western Iran; Taagepera (1978) puts the Neo-Sumerian state at only c. 0.1M km², so 250,000 km² assumes the tributary periphery",
+  "source": "Taagepera 1978 via https://en.wikipedia.org/wiki/List_of_largest_empires (\"Neo-Sumerian Empire\" 0.1 Mm², 2000 BC)"
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "akkadian-empire",
+  "field": "peak.areaKm2",
+  "old": 650000,
+  "new": 800000,
+  "source": "Taagepera 1978: Akkadian Empire 0.8 Mm² at 2250 BC, via https://en.wikipedia.org/wiki/List_of_largest_empires"
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "akkadian-empire",
+  "field": "peak.note",
+  "old": "Under Naram-Sin, from the Persian Gulf to the Mediterranean and the Anatolian foothills",
+  "new": "Under Naram-Sin, from the Persian Gulf to the Mediterranean and the Anatolian foothills; c. 0.8M km² (Taagepera 1978), though directly ruled land was smaller",
+  "source": "Taagepera 1978 via https://en.wikipedia.org/wiki/List_of_largest_empires; map border data (clio) gives c. 527,000 km² for 2250-2201 BCE"
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "babylonia",
+  "field": "summary",
+  "old": "In 626 BCE the Chaldean Nabopolassar threw off Assyrian rule",
+  "new": "In 626 BCE Nabopolassar, traditionally called a Chaldean, threw off Assyrian rule",
+  "source": "His origin is unclear; Beaulieu (1998) and Jursa (2007) link his family to Uruk officials; he called himself \"son of a nobody\": https://en.wikipedia.org/wiki/Nabopolassar"
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "babylonia",
+  "field": "peak.note",
+  "old": "Neo-Babylonian Empire under Nebuchadnezzar II, from the Gulf to the borders of Egypt",
+  "new": "Neo-Babylonian Empire under Nebuchadnezzar II, from the Gulf to the borders of Egypt; c. 0.5M km² (Taagepera 1978)",
+  "source": "Taagepera 1978 via https://en.wikipedia.org/wiki/List_of_largest_empires"
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "assyria",
+  "field": "summary",
+  "old": "whose merchants ran caravans into Anatolia by 2000 BCE",
+  "new": "whose merchants ran caravans into Anatolia soon after 2000 BCE",
+  "source": "Old Assyrian karum at Kanesh, level II c. 1974-1836 BCE (Veenhof, middle chronology): https://en.wikipedia.org/wiki/K%C3%BCltepe"
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "assyria",
+  "field": "peak.note",
+  "old": "Under Esarhaddon, from Egypt to western Iran",
+  "new": "Under Esarhaddon, from Egypt to western Iran; c. 1.4M km² c. 670 BCE (Taagepera 1978)",
+  "source": "Taagepera 1978; Turchin, Adams & Hall 2006, via https://en.wikipedia.org/wiki/List_of_largest_empires"
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "hittite-empire",
+  "field": "peak.year",
+  "old": -1300,
+  "new": -1250,
+  "source": "Taagepera 1978: New Hittite Kingdom 0.45 Mm² at 1250-1220 BC, via https://en.wikipedia.org/wiki/List_of_largest_empires"
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "hittite-empire",
+  "field": "peak.note",
+  "old": "Under Suppiluliuma I and his successors, from central Anatolia to Syria",
+  "new": "Under Suppiluliuma I and his successors, from central Anatolia to Syria; c. 0.45M km² c. 1250-1220 BCE (Taagepera 1978)",
+  "source": "Taagepera 1978 via https://en.wikipedia.org/wiki/List_of_largest_empires"
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "hittite-empire",
+  "field": "legacy",
+  "old": "known before only from brief Bible mentions",
+  "new": "known before only from brief mentions in the Bible and in Egyptian records",
+  "source": "Before the 1906 Hattusa archive, the Hittites were known from the Bible and from Egyptian sources (the \"Kheta\" of the Kadesh inscriptions and the Amarna letters): https://en.wikipedia.org/wiki/Hittites"
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "kingdom-of-kush",
+  "field": "rulers[1].reign",
+  "old": "c. 714 – 700 BCE",
+  "new": "c. 705 – 690 BCE",
+  "source": "Revised order (Shebitku before Shabaka; Tang-i Var inscription of 706 BCE): Shabaka 705-690, Payraudeau 2014, matching the profile's Piye dates 744-714 from the same scheme: https://en.wikipedia.org/wiki/Shabaka ; https://en.wikipedia.org/wiki/Piye . Older order: Shabako 716-702, Cambridge Ancient History, 2nd ed., vol. III part 2 (1991), pp. 353 and 689. \"714-700\" matches neither"
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "achaemenid-empire",
+  "field": "rulers[4].note",
+  "old": "Made peace with Athens",
+  "new": "Said to have made peace with Athens (the disputed Peace of Callias)",
+  "source": "Historicity of the Peace of Callias (c. 449 BCE) is contested (Thucydides silent, Theopompus called it a fabrication): https://en.wikipedia.org/wiki/Peace_of_Callias"
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "achaemenid-empire",
+  "field": "peak.note",
+  "old": "Under Darius I, from Egypt and Thrace to the Indus",
+  "new": "Under Darius I, from Egypt and Thrace to the Indus; c. 5.5M km² c. 500 BCE (Taagepera 1979)",
+  "source": "Taagepera 1979; Turchin, Adams & Hall 2006, via https://en.wikipedia.org/wiki/List_of_largest_empires"
+ },
+ {
+  "file": "content/eras/a-ancient.json",
+  "item": -2000,
+  "addSource": {
+   "title": "Cambridge Ancient History, 3rd ed., vol. I part 2: Early History of the Middle East (1971)",
+   "url": "https://archive.org/details/the-cambridge-ancient-history-vol.-1-part-2"
+  }
+ },
+ {
+  "file": "content/eras/a-ancient.json",
+  "item": -1500,
+  "addSource": {
+   "title": "Cambridge Ancient History, 3rd ed., vol. II part 1: The Middle East and the Aegean Region c. 1800-1380 BC (1973)",
+   "url": "https://archive.org/details/the-cambridge-ancient-history-vol.-2-part-1"
+  }
+ },
+ {
+  "file": "content/eras/a-ancient.json",
+  "item": -1000,
+  "addSource": {
+   "title": "Cambridge Ancient History, 2nd ed., vol. III part 1 (1982)",
+   "url": "https://archive.org/details/the-cambridge-ancient-history-vol.-3-part-1"
+  }
+ },
+ {
+  "file": "content/eras/a-ancient.json",
+  "item": -1000,
+  "addSource": {
+   "title": "Wikipedia: Kingdom of Israel (united monarchy)",
+   "url": "https://en.wikipedia.org/wiki/Kingdom_of_Israel_(united_monarchy)"
+  }
+ },
+ {
+  "file": "content/eras/a-ancient.json",
+  "item": -700,
+  "addSource": {
+   "title": "Cambridge Ancient History, 2nd ed., vol. III part 2: The Assyrian and Babylonian Empires (1991)",
+   "url": "https://archive.org/details/the-cambridge-ancient-history-vol.-3-part-2"
+  }
+ },
+ {
+  "file": "content/eras/a-ancient.json",
+  "item": -700,
+  "addSource": {
+   "title": "Wikipedia: Median kingdom",
+   "url": "https://en.wikipedia.org/wiki/Median_kingdom"
+  }
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "ancient-egypt",
+  "addSource": {
+   "title": "Wikipedia: List of largest empires (Taagepera 1978/1979 figures)",
+   "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+  }
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "sumer",
+  "addSource": {
+   "title": "Wikipedia: List of largest empires (Taagepera 1978/1979 figures)",
+   "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+  }
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "akkadian-empire",
+  "addSource": {
+   "title": "Wikipedia: List of largest empires (Taagepera 1978/1979 figures)",
+   "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+  }
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "babylonia",
+  "addSource": {
+   "title": "Wikipedia: List of largest empires (Taagepera 1978/1979 figures)",
+   "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+  }
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "assyria",
+  "addSource": {
+   "title": "Wikipedia: List of largest empires (Taagepera 1978/1979 figures)",
+   "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+  }
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "hittite-empire",
+  "addSource": {
+   "title": "Wikipedia: List of largest empires (Taagepera 1978/1979 figures)",
+   "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+  }
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "achaemenid-empire",
+  "addSource": {
+   "title": "Wikipedia: List of largest empires (Taagepera 1978/1979 figures)",
+   "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+  }
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "ancient-egypt",
+  "addSource": {
+   "title": "Cambridge Ancient History, 3rd ed., vol. I part 2 (1971)",
+   "url": "https://archive.org/details/the-cambridge-ancient-history-vol.-1-part-2"
+  }
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "assyria",
+  "addSource": {
+   "title": "Cambridge Ancient History, 2nd ed., vol. III part 2 (1991)",
+   "url": "https://archive.org/details/the-cambridge-ancient-history-vol.-3-part-2"
+  }
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "babylonia",
+  "addSource": {
+   "title": "Cambridge Ancient History, 2nd ed., vol. III part 2 (1991)",
+   "url": "https://archive.org/details/the-cambridge-ancient-history-vol.-3-part-2"
+  }
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "ancient-egypt",
+  "addSource": {
+   "title": "Wikipedia: Nectanebo II",
+   "url": "https://en.wikipedia.org/wiki/Nectanebo_II"
+  }
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "babylonia",
+  "addSource": {
+   "title": "Wikipedia: Nabopolassar",
+   "url": "https://en.wikipedia.org/wiki/Nabopolassar"
+  }
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "kingdom-of-kush",
+  "addSource": {
+   "title": "Cambridge Ancient History, 2nd ed., vol. III part 2 (1991)",
+   "url": "https://archive.org/details/the-cambridge-ancient-history-vol.-3-part-2"
+  }
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "kingdom-of-kush",
+  "addSource": {
+   "title": "Wikipedia: Shabaka",
+   "url": "https://en.wikipedia.org/wiki/Shabaka"
+  }
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "achaemenid-empire",
+  "addSource": {
+   "title": "Wikipedia: Peace of Callias",
+   "url": "https://en.wikipedia.org/wiki/Peace_of_Callias"
+  }
+ }
+]

@@ -1,0 +1,1406 @@
+[
+ {
+  "year": 1492,
+  "title": "Worlds About to Collide",
+  "age": "Late Middle Ages / Age of Discovery",
+  "overview": "In 1492 the world's hemispheres still knew nothing of each other. In the Americas the Aztec Triple Alliance and the Inca Empire were at their height, ruling millions from Tenochtitlan and Cusco. Across Eurasia the great powers were Ming China, the richest and most populous state on Earth, the Ottoman Empire, which had held Constantinople since 1453, and the Mamluk Sultanate of Egypt and Syria. In January, Ferdinand and Isabella of Spain conquered Granada, ending nearly eight centuries of Muslim rule in Iberia, and soon expelled Spain's Jews. In October, Christopher Columbus, sailing for Castile, reached the Bahamas, and within decades disease, conquest and trade would bind the continents together. Portugal was racing for a sea route to India around Africa. Most people everywhere were farmers living in villages, and most of the world's land was still held by peoples organised in clans, chiefdoms and small kingdoms rather than empires.",
+  "regions": {
+   "southern-africa": "Most of Africa south of the equator was home to Bantu-speaking farming and cattle-herding kingdoms and chiefdoms, with Khoisan herders and foragers in the far south-west. The Kingdom of Kongo, under Nzinga a Nkuwu, had just welcomed Portuguese envoys and priests, and the king was baptised as Joao I in 1491. On the Zambezi plateau the Mutapa (Mwenemutapa) kingdom controlled the gold trade once run from Great Zimbabwe, while Swahili city-states such as Kilwa traded across the Indian Ocean. Madagascar was divided among several kingdoms, among them the early Merina in the highlands.",
+   "northern-africa": "Egypt and Syria were ruled by the Mamluk Sultanate under Sultan Qaitbay. The Maghreb was split between the Wattasid sultans of Morocco, the Zayyanids of Tlemcen and the Hafsids of Tunis. In West Africa the Songhai Empire had overtaken Mali; its great conqueror Sunni Ali died late in 1492, and Askia Muhammad seized power the next year. Kanem-Bornu ruled around Lake Chad, Benin and Oyo flourished in the forest belt, and Christian Ethiopia was ruled by Emperor Eskender.",
+   "europe": "Spain was being forged by the union of Castile and Aragon under Isabella and Ferdinand, while Portugal under Joao II led Atlantic exploration. France was ruled by Charles VIII, England by Henry VII after the Wars of the Roses, and the Holy Roman Empire by the ageing Frederick III with his son Maximilian. Ivan III had made Moscow the leading Russian state and thrown off Tatar overlordship in 1480; Poland-Lithuania passed to Casimir IV's sons after his death in 1492. Italy was a patchwork of rich city-states, and the Ottomans held the Balkans up to the Danube.",
+   "middle-east-south-asia": "The Ottoman Empire under Bayezid II held Anatolia and the Balkans, while the Mamluks ruled the Levant and the holy cities of Arabia. Iran and Iraq belonged to the Aq Qoyunlu (White Sheep Turkmen), weakened by succession quarrels, and Herat in Afghanistan was the glittering capital of the last major Timurid ruler, Sultan Husayn Bayqara. In India, Sikandar Lodi ruled the Delhi Sultanate in the north, Bengal and Gujarat were independent sultanates, the Bahmani Sultanate of the Deccan was breaking apart, and the Hindu Vijayanagara Empire dominated the south.",
+   "north-central-asia": "The western steppe was held by the successor khanates of the Golden Horde: the Crimean, Kazan and Astrakhan khanates and the dwindling Great Horde. Further east the Kazakh Khanate under Burunduk Khan and Uzbek clans led by Muhammad Shaybani contested the steppe north of the Syr Darya, while Moghulistan (the eastern Chagatai lands) survived around Tashkent and the Tarim Basin. The Khanate of Sibir ruled along the Irtysh, and the forests of Siberia belonged to many small hunting and reindeer-herding peoples.",
+   "east-asia": "Ming China under the Hongzhi Emperor, ruling from Beijing, was stable and prosperous and had turned away from the great ocean voyages of Zheng He. Korea was ruled by King Seongjong of the Joseon dynasty. Japan was sliding into the Sengoku (Warring States) period: the Ashikaga shoguns in Kyoto had lost real power to regional lords after the Onin War. On the steppe, Dayan Khan was reuniting the eastern Mongols, while Oirat tribes held the west, and Tibet was dominated by the Rinpungpa princes.",
+   "southeast-asia": "The Sultanate of Malacca under Mahmud Shah controlled the strait between the Indian Ocean and the South China Sea and was the region's richest port and a centre of Islam. Ayutthaya, under King Ramathibodi II from 1491, was the leading power in what is now Thailand, while Dai Viet under Le Thanh Tong had recently crushed Champa. Cambodia had moved its capital away from Angkor, Burma was divided among Ava, Toungoo and the Mon kingdom of Hanthawaddy, and on Java the Hindu-Buddhist Majapahit kingdom was fading as Muslim port states such as Demak rose.",
+   "northern-north-america": "Canada, Alaska and the Arctic were home only to Indigenous peoples: Inuit and Thule-descended hunters across the Arctic, Dene and Cree in the subarctic forests, and Innu, Haudenosaunee and other peoples in the east. The Norse settlements in Greenland had died out decades earlier. No European had yet returned to these shores since the Norse, though fishermen from Bristol may already have been working the Grand Banks.",
+   "southern-north-america": "The Aztec Triple Alliance of Tenochtitlan, Texcoco and Tlacopan, led by the emperor Ahuitzotl, ruled central Mexico and collected tribute from hundreds of towns; its rivals included the Purepecha (Tarascan) state and independent Tlaxcala. Maya city-states persisted in Yucatan and Guatemala. To the north, Mississippian chiefdoms, Pueblo towns and many other nations filled what is now the United States. In October 1492 Columbus landed in the Bahamas and then visited Cuba and Hispaniola, home to the Taino.",
+   "northern-south-america": "The Inca Empire (Tawantinsuyu) was the largest state in the Americas, stretching along the Andes from Ecuador to central Chile; Topa Inca Yupanqui, its great conqueror, was near the end of his reign and would soon be succeeded by Huayna Capac. Beyond the mountains, the Amazon basin and Brazil's coast were home to many Tupi, Arawak, Carib and other peoples living in villages and chiefdoms. The Muisca confederation ruled the highlands of what is now Colombia.",
+   "southern-cone": "The Inca frontier reached the Maule River in central Chile, beyond which the Mapuche remained independent. The pampas and Patagonia belonged to hunting peoples such as the Tehuelche and Charrua, and Guarani farmers lived in the forests of Paraguay and southern Brazil. No Europeans had yet reached these lands.",
+   "australasia": "Australia was home to hundreds of Aboriginal nations who had lived there for tens of thousands of years. Papuan farmers cultivated the highlands of New Guinea, and Maori iwi (tribes) had settled New Zealand about two centuries earlier. In the Pacific, the Tu'i Tonga maritime chiefdom held sway over Tonga and neighbouring islands, and Hawaii was divided among rival chiefs."
+  },
+  "powers": [
+   {
+    "name": "Ming China",
+    "map": "Ming Empire",
+    "ruler": "Hongzhi Emperor",
+    "capital": "Beijing",
+    "extent": "China proper from the Great Wall to Yunnan and Guangdong"
+   },
+   {
+    "name": "Ottoman Empire",
+    "map": "Ottoman Empire",
+    "ruler": "Bayezid II",
+    "capital": "Constantinople (Istanbul)",
+    "extent": "Anatolia and the Balkans up to the Danube, with the Crimean Khanate as a vassal"
+   },
+   {
+    "name": "Inca Empire",
+    "map": "Quechua",
+    "ruler": "Topa Inca Yupanqui",
+    "capital": "Cusco",
+    "extent": "The Andes from Ecuador to central Chile"
+   },
+   {
+    "name": "Mamluk Sultanate",
+    "map": "Mamluke Sultanate",
+    "ruler": "Qaitbay",
+    "capital": "Cairo",
+    "extent": "Egypt, Syria, Palestine and the Hejaz with Mecca and Medina"
+   },
+   {
+    "name": "Crown of Castile and Aragon (Spain)",
+    "map": "Castille",
+    "ruler": "Isabella I and Ferdinand II",
+    "capital": "Toledo / Valladolid (court travelled)",
+    "extent": "Most of the Iberian peninsula, plus Sicily, Sardinia and most of the Canary Islands"
+   },
+   {
+    "name": "Grand Duchy of Moscow",
+    "map": "Grand Duchy of Moscow",
+    "ruler": "Ivan III",
+    "capital": "Moscow",
+    "extent": "North-western Russia from Novgorod to the Urals' western foothills"
+   },
+   {
+    "name": "Aztec Triple Alliance",
+    "map": "Mexihcah (Triple Alliance)",
+    "ruler": "Ahuitzotl",
+    "capital": "Tenochtitlan",
+    "extent": "Central and southern Mexico from the Gulf coast to the Pacific"
+   },
+   {
+    "name": "Timurid Emirates",
+    "map": "Timurid Emirates",
+    "ruler": "Sultan Husayn Bayqara",
+    "capital": "Herat",
+    "extent": "Khorasan and Afghanistan, with rival Timurid princes in Transoxiana"
+   },
+   {
+    "name": "Delhi Sultanate (Lodi dynasty)",
+    "map": "Sultanate of Delhi",
+    "ruler": "Sikandar Lodi",
+    "capital": "Delhi",
+    "extent": "Punjab and the upper Ganges plain"
+   },
+   {
+    "name": "Vijayanagara Empire",
+    "map": "Vijayanagara",
+    "ruler": "Narasimha Raya II, with regent Tuluva Narasa Nayaka",
+    "capital": "Vijayanagara (Hampi)",
+    "extent": "Southern India south of the Krishna River"
+   }
+  ],
+  "events": [
+   {
+    "year": 1453,
+    "text": "The Ottomans capture Constantinople, ending the Byzantine Empire"
+   },
+   {
+    "year": 1480,
+    "text": "Ivan III of Moscow ends Tatar overlordship after the Great Stand on the Ugra River"
+   },
+   {
+    "year": 1488,
+    "text": "Bartolomeu Dias rounds the Cape of Good Hope for Portugal"
+   },
+   {
+    "year": 1491,
+    "text": "King Nzinga a Nkuwu of Kongo is baptised as Joao I"
+   },
+   {
+    "year": 1492,
+    "text": "Granada falls to Ferdinand and Isabella; Spain expels its Jews"
+   },
+   {
+    "year": 1492,
+    "text": "Christopher Columbus reaches the Bahamas, Cuba and Hispaniola"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia: List of Mamluk sultans",
+    "url": "https://en.wikipedia.org/wiki/List_of_Mamluk_sultans"
+   },
+   {
+    "title": "Wikipedia: Narasimha Raya II",
+    "url": "https://en.wikipedia.org/wiki/Narasimha_Raya_II"
+   },
+   {
+    "title": "Wikipedia: Conquest of the Canary Islands",
+    "url": "https://en.wikipedia.org/wiki/Conquest_of_the_Canary_Islands"
+   },
+   {
+    "title": "Wikipedia: List of emperors of Ethiopia",
+    "url": "https://en.wikipedia.org/wiki/List_of_emperors_of_Ethiopia"
+   },
+   {
+    "title": "Wikipedia: List of Kazakh khans",
+    "url": "https://en.wikipedia.org/wiki/List_of_Kazakh_khans"
+   },
+   {
+    "title": "Wikipedia: List of rulers of Kongo",
+    "url": "https://en.wikipedia.org/wiki/List_of_rulers_of_Kongo"
+   },
+   {
+    "title": "Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. V, South Asia in the time of the Lodis, 1451-1526",
+    "url": "https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/South_Asia_in_the_time_of_the_Lodis_1451-1526.json&canvasID=0"
+   }
+  ]
+ },
+ {
+  "year": 1500,
+  "title": "Sea Roads Open",
+  "age": "Age of Discovery",
+  "overview": "By 1500 the oceans had become highways. Vasco da Gama had reached India in 1498, opening a direct Portuguese sea route to the spice markets, and in April 1500 Pedro Alvares Cabral, bound for India, touched the coast of Brazil and claimed it for Portugal. Spain was settling Hispaniola, where Taino communities were already collapsing under forced labour and disease. Yet the great empires of the age were still elsewhere: Ming China, the Ottoman Empire, the Inca and Aztec empires at their peak, and a ring of Islamic states from Morocco to Bengal. In Iran a teenage Sufi leader, Ismail, was gathering followers and would soon found the Safavid dynasty; in Central Asia, Muhammad Shaybani's Uzbeks were driving out the last Timurids, including a young prince named Babur. Printing presses had spread across Europe, carrying news of the new lands. For most people, life still revolved around harvests, faith and local lords.",
+  "regions": {
+   "southern-africa": "The Kingdom of Kongo, ruled by Joao I (Nzinga a Nkuwu), was the leading power of west-central Africa and in close contact with Portugal. The Mutapa state controlled the gold-bearing Zimbabwe plateau, and Swahili city-states such as Kilwa and Mombasa dominated the east coast, though Portuguese fleets had begun to bully them. Most of the interior was home to Bantu-speaking chiefdoms, with Khoisan peoples in the south-west and several kingdoms on Madagascar.",
+   "northern-africa": "Songhai, under Askia Muhammad I since 1493, was the largest state in West Africa, ruling the Niger bend from Gao and controlling Timbuktu. Egypt and Syria remained under the Mamluks, unsettled by a quick succession of sultans after Qaitbay's death in 1496. The Wattasids ruled Morocco while Portugal seized footholds on its coast; the Zayyanids and Hafsids held Algeria and Tunisia. Ethiopia was ruled by Emperor Na'od, and Kanem-Bornu, Benin and Oyo were strong regional kingdoms.",
+   "europe": "Isabella and Ferdinand ruled a united Spain, and Manuel I's Portugal was growing rich on African gold and Asian spices. Louis XII of France had just seized Milan, renewing the Italian Wars begun in 1494. Henry VII ruled England, Maximilian I ruled the Holy Roman Empire as King of the Romans (emperor-elect from 1508), and Vladislaus II was king of both Bohemia and Hungary. Ivan III of Moscow was at war with Lithuania, the Kalmar Union under King Hans tied Denmark, Norway and Sweden together uneasily, and the Ottomans were fighting Venice at sea.",
+   "middle-east-south-asia": "Bayezid II's Ottoman Empire was taking Venetian ports in Greece, while the Mamluks held the Levant and western Arabia. The Aq Qoyunlu state in Iran had split between rival princes, giving the young Ismail of Ardabil his chance; he would take Tabriz in 1501. Herat remained the Timurid cultural capital under Husayn Bayqara. In India, Sikandar Lodi ruled the Delhi Sultanate, Alauddin Husain Shah ruled Bengal, Mahmud Begada ruled Gujarat, the Deccan was splitting into the five sultanates that succeeded the Bahmanis, and Vijayanagara dominated the south; Portuguese ships had begun visiting Calicut.",
+   "north-central-asia": "Muhammad Shaybani's Uzbeks captured Samarkand from the Timurids in 1500, beginning the Shaybanid khanate in Transoxiana. The Kazakh Khanate under Burunduk Khan held the steppe to the north. The Crimean Khanate, an Ottoman vassal under Mengli I Giray, was about to destroy the Great Horde (1502), while the Kazan and Astrakhan khanates and Sibir held the Volga and western Siberia.",
+   "east-asia": "The Hongzhi Emperor ruled a peaceful and well-governed Ming China from Beijing. Korea was under King Yeonsangun, whose tyrannical reign would end in a coup in 1506. Japan's Sengoku era was under way, with warlords fighting across the islands while the Ashikaga shogun Yoshizumi held little power. Dayan Khan had largely reunited the Mongols north of the Great Wall.",
+   "southeast-asia": "Malacca, under Sultan Mahmud Shah, remained the hub of Asian sea trade and a magnet for Portuguese ambitions. Ayutthaya under Ramathibodi II and Dai Viet under the Le dynasty were the strongest mainland kingdoms, Cambodia and Lan Xang held the Mekong lands, and Burma remained divided. On Java, Muslim coastal sultanates led by Demak were replacing Majapahit, and Islam was spreading through Sumatra and the Moluccas.",
+   "northern-north-america": "John Cabot had sailed for England to Newfoundland in 1497, and in 1500 and 1501 the Portuguese Gaspar Corte-Real explored Greenland and Newfoundland or Labrador. Otherwise the north belonged entirely to Indigenous nations: Inuit across the Arctic, Dene and Cree in the boreal forests, and Innu, Mi'kmaq and Haudenosaunee peoples in the east.",
+   "southern-north-america": "The Aztec Empire under Ahuitzotl was at its greatest extent, reaching the Guatemalan border. Maya city-states held Yucatan, and the Purepecha ruled western Mexico. Spain's only real colony was Hispaniola, where Columbus was arrested in 1500 for misrule and shipped home in chains. North of Mexico, Pueblo, Mississippian and many other peoples lived independently.",
+   "northern-south-america": "Huayna Capac ruled the Inca Empire at its peak, pushing its northern frontier into what is now Ecuador and southern Colombia. Spanish explorers were charting the Caribbean coast of Venezuela, and in April 1500 Cabral landed in Brazil and claimed it for Portugal under the Treaty of Tordesillas (1494). Inland, the Amazon was home to many Indigenous peoples.",
+   "southern-cone": "The Inca held northern and central Chile and north-western Argentina, with the independent Mapuche to the south. The pampas, Patagonia and the Uruguay river lands belonged to hunter-gatherers such as the Tehuelche and Charrua, while Guarani farmers lived in Paraguay and southern Brazil. No Europeans had yet arrived.",
+   "australasia": "Aboriginal nations occupied all of Australia, Papuan farming societies the New Guinea highlands, and Maori iwi New Zealand. Tonga's Tu'i Tonga line remained the leading Polynesian chiefdom, while Hawaii and Tahiti were ruled by competing chiefs. No outsiders had yet reached these islands."
+  },
+  "powers": [
+   {
+    "name": "Ming China",
+    "map": "Ming Chinese Empire",
+    "ruler": "Hongzhi Emperor",
+    "capital": "Beijing",
+    "extent": "China proper from the Great Wall to the South China Sea"
+   },
+   {
+    "name": "Ottoman Empire",
+    "map": "Ottoman Empire",
+    "ruler": "Bayezid II",
+    "capital": "Constantinople (Istanbul)",
+    "extent": "Anatolia and the Balkans, with vassals in Crimea and Wallachia"
+   },
+   {
+    "name": "Inca Empire",
+    "map": "Inca Empire",
+    "ruler": "Huayna Capac",
+    "capital": "Cusco",
+    "extent": "About 4,000 km of the Andes from southern Colombia to central Chile"
+   },
+   {
+    "name": "Mamluk Sultanate",
+    "map": "Mamluke Sultanate",
+    "ruler": "Al-Ashraf Janbalat (r. 1500-01)",
+    "capital": "Cairo",
+    "extent": "Egypt, Syria, Palestine and the Hejaz"
+   },
+   {
+    "name": "Spain (Castile and Aragon)",
+    "map": "Castille",
+    "ruler": "Isabella I and Ferdinand II",
+    "capital": "Toledo / Granada (court travelled)",
+    "extent": "Most of Iberia, southern Italy's islands, the Canaries and Hispaniola"
+   },
+   {
+    "name": "Portugal",
+    "map": "Portugal",
+    "ruler": "Manuel I",
+    "capital": "Lisbon",
+    "extent": "Portugal with forts in Morocco, West Africa and a new sea route to India; claim to Brazil"
+   },
+   {
+    "name": "Grand Duchy of Moscow",
+    "map": "Grand Duchy of Moscow",
+    "ruler": "Ivan III",
+    "capital": "Moscow",
+    "extent": "Northern Russia from the Baltic hinterland to the Urals"
+   },
+   {
+    "name": "Aztec Empire",
+    "map": "Aztec Empire",
+    "ruler": "Ahuitzotl",
+    "capital": "Tenochtitlan",
+    "extent": "Central and southern Mexico to the Guatemalan border"
+   },
+   {
+    "name": "Delhi Sultanate (Lodi dynasty)",
+    "map": "Sultanate of Delhi",
+    "ruler": "Sikandar Lodi",
+    "capital": "Delhi",
+    "extent": "Punjab and the Ganges plain to the borders of Bengal"
+   },
+   {
+    "name": "Vijayanagara Empire",
+    "map": "Vijayanagara",
+    "ruler": "Narasimha Raya II, with regent Tuluva Narasa Nayaka",
+    "capital": "Vijayanagara (Hampi)",
+    "extent": "Most of southern India"
+   }
+  ],
+  "events": [
+   {
+    "year": 1494,
+    "text": "Treaty of Tordesillas divides the newly found lands between Spain and Portugal"
+   },
+   {
+    "year": 1494,
+    "text": "Charles VIII of France invades Italy, starting the Italian Wars"
+   },
+   {
+    "year": 1497,
+    "text": "John Cabot reaches Newfoundland for England"
+   },
+   {
+    "year": 1498,
+    "text": "Vasco da Gama reaches Calicut in India by sea"
+   },
+   {
+    "year": 1500,
+    "text": "Muhammad Shaybani's Uzbeks take Samarkand from the Timurids"
+   },
+   {
+    "year": 1500,
+    "text": "Pedro Alvares Cabral lands in Brazil and claims it for Portugal"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia: List of Mamluk sultans",
+    "url": "https://en.wikipedia.org/wiki/List_of_Mamluk_sultans"
+   },
+   {
+    "title": "Wikipedia: Italian Wars",
+    "url": "https://en.wikipedia.org/wiki/Italian_Wars"
+   },
+   {
+    "title": "Wikipedia: Gaspar Corte-Real",
+    "url": "https://en.wikipedia.org/wiki/Gaspar_Corte-Real"
+   },
+   {
+    "title": "Wikipedia: List of emperors of Ethiopia",
+    "url": "https://en.wikipedia.org/wiki/List_of_emperors_of_Ethiopia"
+   },
+   {
+    "title": "Wikipedia: List of shoguns",
+    "url": "https://en.wikipedia.org/wiki/List_of_shoguns"
+   },
+   {
+    "title": "Wikipedia: Narasimha Raya II",
+    "url": "https://en.wikipedia.org/wiki/Narasimha_Raya_II"
+   },
+   {
+    "title": "Wikipedia: Maximilian I, Holy Roman Emperor",
+    "url": "https://en.wikipedia.org/wiki/Maximilian_I,_Holy_Roman_Emperor"
+   },
+   {
+    "title": "Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. V, South Asia in the time of the Lodis, 1451-1526",
+    "url": "https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/South_Asia_in_the_time_of_the_Lodis_1451-1526.json&canvasID=0"
+   }
+  ]
+ },
+ {
+  "year": 1530,
+  "title": "Conquerors and Reformers",
+  "age": "Early Modern Period",
+  "overview": "Within one generation the map had been redrawn. Hernan Cortes had destroyed the Aztec Empire in 1521, and Spain now ruled central Mexico; Francisco Pizarro was preparing to sail against the Inca, who were tearing themselves apart in a civil war between the brothers Huascar and Atahualpa. Magellan's expedition had sailed around the world. Charles V, crowned Holy Roman Emperor in 1530, ruled Spain, the Netherlands, much of Italy and a growing American empire, while his great rival Suleiman the Magnificent had pushed the Ottoman Empire to the gates of Vienna in 1529. The Protestant Reformation, begun by Martin Luther in 1517, was splitting Western Christianity. In the east, new Muslim dynasties had risen: the Safavids in Iran, who made Shia Islam the state religion, and the Mughals, founded by Babur after his victory at Panipat in 1526. Babur died at the end of 1530, leaving a fragile empire to his son Humayun.",
+  "regions": {
+   "southern-africa": "Afonso I, a devout Christian king, ruled Kongo and corresponded with the kings of Portugal, but Portuguese slave traders were already destabilising his realm. The Mutapa kingdom still controlled the Zimbabwe plateau's gold, now sold largely through Portuguese Sofala, and the Portuguese had sacked Kilwa and Mombasa and dominated the Swahili coast. The Luba kingdom may already have been taking shape in the southern Congo savanna, and Madagascar remained divided among local kingdoms.",
+   "northern-africa": "The Ottomans had conquered Egypt in 1517, and the corsair Hayreddin Barbarossa had made Algiers an Ottoman base, capturing its Spanish island fort in 1529. Morocco was ruled weakly by the Wattasid Ahmad, while the Saadi sharifs rose in the south; the Hafsids clung to Tunis. Songhai, now under Askia Musa after his father Askia Muhammad was deposed, remained West Africa's greatest empire. In the Horn, Imam Ahmad ibn Ibrahim (Ahmad Gragn) of Adal had begun a devastating invasion of Christian Ethiopia under Emperor Lebna Dengel.",
+   "europe": "Charles V ruled Spain, the Low Countries, Naples and Sicily, controlled Milan through its Sforza duke, and was crowned emperor by the pope at Bologna in 1530, while his brother Ferdinand held Austria and Bohemia and claimed Hungary against the Ottoman-backed John Zapolya. Francis I ruled France, Henry VIII of England was seeking to annul his marriage, which would soon break England from Rome, and Gustav Vasa had made Sweden independent of Denmark. Lutheran princes presented the Augsburg Confession in 1530. Vasily III ruled Muscovy and Sigismund I Poland-Lithuania.",
+   "middle-east-south-asia": "Suleiman the Magnificent's Ottoman Empire stretched from Hungary to Egypt and Arabia's holy cities and would take Baghdad in 1534. Shah Tahmasp I ruled the Safavid Empire in Iran from Tabriz. Babur, a Timurid prince from Central Asia, had founded the Mughal Empire across northern India after defeating Ibrahim Lodi at Panipat (1526) and the Rajputs at Khanwa (1527); he died in December 1530 and Humayun succeeded him. Bahadur Shah ruled Gujarat, the Deccan sultanates divided the plateau, Achyuta Deva Raya had just succeeded Krishnadevaraya in Vijayanagara, and Portugal ruled Goa and Hormuz.",
+   "north-central-asia": "The Shaybanid Uzbeks ruled Transoxiana from Samarkand and Bukhara, nominally under Kuchkunji Khan with real power held by Shaybani's nephew Ubaydullah, while a separate Uzbek dynasty held Khiva. The Kazakh Khanate dominated the open steppe and the Nogai Horde the lands between the Volga and the Urals. The khanates of Kazan, Astrakhan, Crimea and Sibir held the western steppe and Siberian forest edge.",
+   "east-asia": "The Jiajing Emperor ruled Ming China, which faced Mongol raids in the north and pirate attacks along the coast. Joseon Korea was ruled by King Jungjong. Japan was deep in the Sengoku period, with daimyo warlords such as the Hojo, Takeda and Mori fighting while Emperor Go-Nara and the Ashikaga shogun held little power. Tibet was divided among rival princes and monastic schools.",
+   "southeast-asia": "The Portuguese had captured Malacca in 1511; its sultans regrouped as the Sultanate of Johor, while Aceh rose in northern Sumatra. Tabinshwehti became king of Toungoo in 1530 and would soon reunite Burma. In Dai Viet, Mac Dang Dung had usurped the Le throne in 1527, Ayutthaya remained the strongest Thai state, and on Java the Sultanate of Demak under Trenggana was the leading power. Portugal and Spain disputed the Spice Islands until the Treaty of Zaragoza (1529) gave them to Portugal.",
+   "northern-north-america": "European fishermen from France, Portugal, Spain and England worked the Grand Banks off Newfoundland each summer, but no colonies existed. Giovanni da Verrazzano had sailed the coast for France in 1524, and Jacques Cartier's voyages up the St Lawrence would begin in 1534. The land remained in the hands of Inuit, Dene, Cree, Innu, Mi'kmaq, Haudenosaunee and other nations.",
+   "southern-north-america": "Spain ruled the former Aztec heartland as New Spain, governed from Mexico City (built on the ruins of Tenochtitlan) by a royal audiencia; the brutal Nuno de Guzman was conquering western Mexico, and a viceroyalty would be created in 1535. Smallpox had already killed a large share of Mexico's population. Spain also held Cuba, Hispaniola and Puerto Rico, where the Taino had been almost wiped out. Narvaez's Florida expedition had been lost in 1528, and survivors including Cabeza de Vaca were wandering across Texas.",
+   "northern-south-america": "The Inca Empire was split by civil war between Huascar in Cusco and Atahualpa in Quito, after their father Huayna Capac died around 1527, probably of smallpox that had spread ahead of the Europeans. Pizarro had won a royal licence to conquer Peru and was readying his expedition in Panama. Spaniards were settling the Caribbean coast of Colombia and Venezuela, and Portugal began organising Brazil, sending Martim Afonso de Sousa's expedition in 1530.",
+   "southern-cone": "Sebastian Cabot had explored the Rio de la Plata and Parana rivers in 1527 to 1529, but no permanent European settlement yet existed. The Inca still nominally held northern Chile and north-western Argentina, with the Mapuche independent to the south and Guarani, Charrua and Tehuelche peoples elsewhere.",
+   "australasia": "Australia, New Guinea and New Zealand remained untouched by outsiders, home to Aboriginal nations, Papuan farmers and Maori iwi. Magellan's fleet had crossed the Pacific in 1520 to 1521 without sighting most of its islands. In Polynesia, the Tu'i Tonga line remained paramount, and Hawaii's islands were ruled by rival chiefs."
+  },
+  "powers": [
+   {
+    "name": "Ottoman Empire",
+    "map": "Ottoman Empire",
+    "ruler": "Suleiman I the Magnificent",
+    "capital": "Constantinople (Istanbul)",
+    "extent": "From Hungary and the Balkans through Anatolia to Syria, Egypt and the Hejaz, with Algiers as a vassal"
+   },
+   {
+    "name": "Ming China",
+    "map": "Ming Chinese Empire",
+    "ruler": "Jiajing Emperor",
+    "capital": "Beijing",
+    "extent": "China proper from the Great Wall to the South China Sea"
+   },
+   {
+    "name": "Spain (Habsburg)",
+    "map": "Spain",
+    "ruler": "Charles I (Emperor Charles V)",
+    "capital": "Valladolid / Toledo (court travelled)",
+    "extent": "Spain, Naples, Sicily, Sardinia, the Low Countries via Charles, the Caribbean and New Spain"
+   },
+   {
+    "name": "Safavid Empire",
+    "map": "Safavid Empire",
+    "ruler": "Tahmasp I",
+    "capital": "Tabriz",
+    "extent": "Iran, Iraq (until 1534) and the southern Caucasus"
+   },
+   {
+    "name": "Mughal Empire",
+    "map": "Mughal Empire",
+    "ruler": "Babur (d. Dec 1530), then Humayun",
+    "capital": "Agra",
+    "extent": "Kabul, Punjab and the Ganges plain to Bihar"
+   },
+   {
+    "name": "Inca Empire",
+    "map": "Inca Empire",
+    "ruler": "Huascar and Atahualpa (in civil war)",
+    "capital": "Cusco (Huascar) / Quito (Atahualpa)",
+    "extent": "The Andes from southern Colombia to central Chile"
+   },
+   {
+    "name": "Holy Roman Empire",
+    "map": "Holy Roman Empire",
+    "ruler": "Charles V, with Ferdinand of Austria",
+    "capital": "No fixed capital (Vienna for Ferdinand's Austrian lands)",
+    "extent": "Germany, Austria, Bohemia and the Low Countries"
+   },
+   {
+    "name": "Portugal",
+    "map": "Portugal",
+    "ruler": "Joao III",
+    "capital": "Lisbon",
+    "extent": "Portugal, Brazil's coast, and forts from West Africa to Goa, Hormuz, Malacca and the Moluccas"
+   },
+   {
+    "name": "Grand Duchy of Moscow",
+    "map": "Tsardom of Muscovy",
+    "ruler": "Vasily III",
+    "capital": "Moscow",
+    "extent": "Russia from Smolensk to the Urals and the White Sea"
+   },
+   {
+    "name": "Vijayanagara Empire",
+    "map": "Vijayanagara",
+    "ruler": "Achyuta Deva Raya",
+    "capital": "Vijayanagara (Hampi)",
+    "extent": "Southern India south of the Krishna and Tungabhadra rivers"
+   }
+  ],
+  "events": [
+   {
+    "year": 1517,
+    "text": "Martin Luther's 95 Theses begin the Protestant Reformation; the Ottomans conquer Egypt"
+   },
+   {
+    "year": 1521,
+    "text": "Cortes and his Indigenous allies capture Tenochtitlan, ending the Aztec Empire"
+   },
+   {
+    "year": 1522,
+    "text": "Survivors of Magellan's expedition complete the first circumnavigation"
+   },
+   {
+    "year": 1526,
+    "text": "Babur defeats Ibrahim Lodi at Panipat; the Ottomans crush Hungary at Mohacs"
+   },
+   {
+    "year": 1527,
+    "text": "Imperial troops sack Rome; the Inca civil war begins soon after Huayna Capac's death"
+   },
+   {
+    "year": 1529,
+    "text": "Suleiman besieges Vienna but fails to take it"
+   },
+   {
+    "year": 1530,
+    "text": "Charles V is crowned emperor at Bologna; Babur dies and Humayun succeeds him"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia: Francesco II Sforza",
+    "url": "https://en.wikipedia.org/wiki/Francesco_II_Sforza"
+   },
+   {
+    "title": "Wikipedia: Kuchkunji Khan",
+    "url": "https://en.wikipedia.org/wiki/Kuchkunji_Khan"
+   },
+   {
+    "title": "Wikipedia: Toungoo dynasty",
+    "url": "https://en.wikipedia.org/wiki/Toungoo_dynasty"
+   },
+   {
+    "title": "Wikipedia: Luba Empire",
+    "url": "https://en.wikipedia.org/wiki/Luba_Empire"
+   },
+   {
+    "title": "Wikipedia: Kingdom of Lunda",
+    "url": "https://en.wikipedia.org/wiki/Kingdom_of_Lunda"
+   },
+   {
+    "title": "Wikipedia: List of rulers of Kongo",
+    "url": "https://en.wikipedia.org/wiki/List_of_rulers_of_Kongo"
+   },
+   {
+    "title": "Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. VI.A, Northern South Asia in the period of Babur, Humayun, and Sher Shah, 1526-1555",
+    "url": "https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/Northern_South_Asia_in_the_period_of_Babur_Humayun_and_Sher_Shah_1526-1555.json&canvasID=0"
+   },
+   {
+    "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. VII: The Mughul Empire (Internet Archive)",
+    "url": "https://archive.org/details/mughulempire00bhar"
+   }
+  ]
+ },
+ {
+  "year": 1600,
+  "title": "Gunpowder Empires",
+  "age": "Early Modern Period",
+  "overview": "In 1600 the world was dominated by vast land empires armed with cannon and muskets: Ming China, the Ottoman Empire, Safavid Iran under Shah Abbas the Great, and the Mughal Empire of Akbar, which ruled well over 100 million people. Spain, joined with Portugal since 1580, held the first empire on which the sun never set, stretching from Mexico and Peru to the Philippines, and Spanish silver from Potosi flowed across the globe to China. But challengers were appearing: the Dutch were fighting for independence, and on the last day of 1600 Queen Elizabeth I chartered the English East India Company. In Japan, Tokugawa Ieyasu's victory at Sekigahara in October 1600 ended a century of civil war. Russia was about to fall into its Time of Troubles. Worldwide, new crops from the Americas such as maize, potatoes and chili peppers were spreading, while the Atlantic slave trade was growing steadily.",
+  "regions": {
+   "southern-africa": "Kongo, under Alvaro II, remained a Christian kingdom allied with Portugal, but Portuguese Angola, centred on Luanda (founded 1576), was waging slave-raiding wars against the kingdom of Ndongo. On the Zimbabwe plateau the Mutapa ruler Gatsi Rusere depended increasingly on Portuguese support, and Portugal held Mozambique and Fort Jesus at Mombasa (1593). The Luba and Lunda kingdoms grew in the interior, and Madagascar was divided among kingdoms including the Merina.",
+   "northern-africa": "Morocco's Saadi sultan Ahmad al-Mansur had destroyed the Songhai Empire at the Battle of Tondibi in 1591 and ruled Timbuktu through Moroccan pashas. The Ottomans held Egypt and, through regencies, Algiers, Tunis and Tripoli. Kanem-Bornu was the strongest state around Lake Chad, the Hausa city-states and Oyo were growing, the Funj Sultanate ruled from Sennar on the Nile, and Ethiopia was ruled by the young Emperor Yaqob after Sarsa Dengel's death in 1597.",
+   "europe": "Philip III had just succeeded Philip II as king of Spain and Portugal. Elizabeth I ruled England and Henry IV, who ended the French Wars of Religion with the Edict of Nantes (1598), ruled France. The Dutch Republic under Maurice of Nassau was still fighting Spain, Emperor Rudolf II ruled the Holy Roman Empire from Prague, and Sigismund III Vasa ruled Poland-Lithuania while his uncle Charles held power in Sweden. Boris Godunov ruled Muscovy, and the Ottomans and Habsburgs were locked in the Long Turkish War in Hungary.",
+   "middle-east-south-asia": "Mehmed III ruled the Ottoman Empire from the Balkans to Iraq and Arabia, though it faced revolts in Anatolia. Shah Abbas I had reformed the Safavid army and moved his capital to Isfahan in 1598. Akbar's Mughal Empire stretched from Kabul and Kashmir to Bengal and was pushing into the Deccan, capturing Ahmadnagar in 1600. The southern sultanates of Bijapur and Golconda, the weakened Vijayanagara kings and Portuguese Goa shared the south.",
+   "north-central-asia": "Russian Cossacks had conquered the Khanate of Sibir, defeating its last khan, Kuchum, in 1598, and Russian forts were pushing east across Siberia. The Kazakh Khanate under Esim Khan dominated the steppe, the Nogai Horde roamed between the Volga and the Urals, and Bukhara had just passed from the Shaybanids to the Janid (Ashtarkhanid) dynasty, with Khiva independent to the west.",
+   "east-asia": "The Wanli Emperor reigned over Ming China, though he had largely stopped attending to government and the costly war in Korea had drained the treasury. In Manchuria, Nurhaci was uniting the Jurchen tribes. Korea's King Seonjo was rebuilding after Japan's invasions of 1592 to 1598. In Japan, Toyotomi Hideyoshi had died in 1598, and Tokugawa Ieyasu defeated his rivals at Sekigahara in 1600, setting the stage for the Tokugawa shogunate.",
+   "southeast-asia": "King Naresuan had restored Ayutthaya's independence from Burma and made it the leading mainland power, while Burma's Toungoo empire had collapsed and was being rebuilt by Nyaungyan Min at Ava. Vietnam was ruled in name by the Le emperors but split between the Trinh lords in the north and the Nguyen lords in the south. Aceh, Banten, Johor and the rising Javanese kingdom of Mataram competed with Portuguese Malacca, Spain ruled the Philippines from Manila, and the first Dutch fleets had arrived.",
+   "northern-north-america": "France was reviving its interest in the St Lawrence: in 1600 Pierre de Chauvin set up a fur-trading post at Tadoussac, and Samuel de Champlain would found Quebec in 1608. Basque, French and English fishermen visited Newfoundland every summer. The vast interior remained under Indigenous nations such as the Cree, Innu, Haudenosaunee, Wendat (Huron) and Inuit.",
+   "southern-north-america": "Spain ruled New Spain, from Central America to northern Mexico, under Viceroy Gaspar de Zuniga, Count of Monterrey, and Juan de Onate had just claimed New Mexico (1598). Spain also held Florida's St Augustine and the main Caribbean islands, which were raided by English, French and Dutch privateers. England's Roanoke colony had vanished, and Jamestown would not be founded until 1607; the rest of North America belonged to Indigenous nations such as the Powhatan, Haudenosaunee, Creek, Pueblo and Apache.",
+   "northern-south-america": "The Viceroyalty of Peru, ruled from Lima, governed nearly all of Spanish South America; the silver mines of Potosi, worked by forced Indigenous labour, made it one of the richest places on Earth. Spaniards also ruled New Granada (Colombia) and Venezuela. Portuguese Brazil, now under the Spanish crown, was the world's leading sugar producer, worked increasingly by enslaved Africans. The Amazon interior remained largely Indigenous.",
+   "southern-cone": "Spain held Chile, Paraguay (from Asuncion) and the Rio de la Plata, where Buenos Aires had been refounded in 1580. In 1598 the Mapuche destroyed a Spanish army at Curalaba and went on to wipe out the Spanish towns south of the Biobio River, which became a lasting frontier. The pampas and Patagonia remained in the hands of Indigenous peoples.",
+   "australasia": "Spanish navigators had visited the Solomon Islands (1568) and Marquesas (1595), but Australia was still unknown to Europeans; the Dutchman Willem Janszoon would reach it in 1606. Aboriginal nations held Australia, Papuan peoples New Guinea and Maori iwi New Zealand, while Tonga's Tu'i Tonga line remained the main Polynesian power."
+  },
+  "powers": [
+   {
+    "name": "Ming China",
+    "map": "Ming Chinese Empire",
+    "ruler": "Wanli Emperor",
+    "capital": "Beijing",
+    "extent": "China proper, with influence over Korea and a tributary network across Asia"
+   },
+   {
+    "name": "Ottoman Empire",
+    "map": "Ottoman Empire",
+    "ruler": "Mehmed III",
+    "capital": "Constantinople (Istanbul)",
+    "extent": "From Hungary and the Balkans to Iraq, Egypt, Arabia's coasts and North Africa"
+   },
+   {
+    "name": "Mughal Empire",
+    "map": "Mughal Empire",
+    "ruler": "Akbar",
+    "capital": "Agra",
+    "extent": "Northern India from Kabul and Kashmir to Bengal, pushing into the Deccan"
+   },
+   {
+    "name": "Spanish Empire (with Portugal)",
+    "map": "Spain",
+    "ruler": "Philip III",
+    "capital": "Madrid",
+    "extent": "Spain and Portugal, much of Italy, the southern Netherlands, the Americas from Mexico to Chile, Brazil, the Philippines and Portugal's Asian forts"
+   },
+   {
+    "name": "Safavid Empire",
+    "map": "Safavid Empire",
+    "ruler": "Abbas I the Great",
+    "capital": "Isfahan",
+    "extent": "Iran and western Afghanistan; Tabriz and the southern Caucasus, ceded to the Ottomans in 1590, are retaken from 1603"
+   },
+   {
+    "name": "Tsardom of Russia",
+    "map": "Tsardom of Muscovy",
+    "ruler": "Boris Godunov",
+    "capital": "Moscow",
+    "extent": "European Russia from the White Sea to the Caspian, and western Siberia"
+   },
+   {
+    "name": "Japan",
+    "map": "Japan (Warring States)",
+    "ruler": "Tokugawa Ieyasu (de facto, after Sekigahara)",
+    "capital": "Kyoto (imperial) / Edo (Tokugawa base)",
+    "extent": "Honshu, Shikoku and Kyushu"
+   },
+   {
+    "name": "Kingdom of England",
+    "map": "England and Ireland",
+    "ruler": "Elizabeth I",
+    "capital": "London",
+    "extent": "England, Wales and Ireland (then in rebellion)"
+   },
+   {
+    "name": "Kingdom of France",
+    "map": "France",
+    "ruler": "Henry IV",
+    "capital": "Paris",
+    "extent": "France, newly at peace after the Wars of Religion"
+   },
+   {
+    "name": "Saadi Morocco",
+    "map": "Watassid Morocco",
+    "ruler": "Ahmad al-Mansur",
+    "capital": "Marrakesh",
+    "extent": "Morocco and, through pashas at Timbuktu, the former Songhai lands on the Niger"
+   }
+  ],
+  "events": [
+   {
+    "year": 1571,
+    "text": "Spain founds Manila; a Holy League fleet defeats the Ottomans at Lepanto"
+   },
+   {
+    "year": 1580,
+    "text": "Philip II of Spain becomes king of Portugal, uniting the two empires"
+   },
+   {
+    "year": 1588,
+    "text": "The Spanish Armada fails against England"
+   },
+   {
+    "year": 1591,
+    "text": "Moroccan troops destroy the Songhai Empire at Tondibi"
+   },
+   {
+    "year": 1592,
+    "text": "Japan invades Korea; the war lasts until 1598"
+   },
+   {
+    "year": 1598,
+    "text": "Edict of Nantes in France; Shah Abbas moves the Safavid capital to Isfahan"
+   },
+   {
+    "year": 1600,
+    "text": "Tokugawa Ieyasu wins at Sekigahara; the English East India Company is chartered"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia: Mughal Empire",
+    "url": "https://en.wikipedia.org/wiki/Mughal_Empire"
+   },
+   {
+    "title": "Wikipedia: Apache",
+    "url": "https://en.wikipedia.org/wiki/Apache"
+   },
+   {
+    "title": "Wikipedia: Comanche",
+    "url": "https://en.wikipedia.org/wiki/Comanche"
+   },
+   {
+    "title": "Wikipedia: Kingdom of Mutapa",
+    "url": "https://en.wikipedia.org/wiki/Kingdom_of_Mutapa"
+   },
+   {
+    "title": "Wikipedia: List of Kazakh khans",
+    "url": "https://en.wikipedia.org/wiki/List_of_Kazakh_khans"
+   },
+   {
+    "title": "Wikipedia: Toungoo dynasty",
+    "url": "https://en.wikipedia.org/wiki/Toungoo_dynasty"
+   },
+   {
+    "title": "Wikipedia: Treaty of Constantinople (1590)",
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_Constantinople_(1590)"
+   },
+   {
+    "title": "Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. VI.A, The Mughal Empire, c. 1605",
+    "url": "https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/The_Mughal_Empire_c._1605.json&canvasID=0"
+   },
+   {
+    "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. VII: The Mughul Empire (Internet Archive)",
+    "url": "https://archive.org/details/mughulempire00bhar"
+   }
+  ]
+ },
+ {
+  "year": 1650,
+  "title": "Crisis and New Dynasties",
+  "age": "Early Modern Period",
+  "overview": "The mid-17th century was an age of war, rebellion and cold weather, often called the General Crisis. In China the Ming dynasty had fallen in 1644 and the Manchu Qing were conquering the country, while Ming loyalists fought on in the south. Europe had just ended the Thirty Years' War with the Peace of Westphalia (1648), which confirmed the independence of the Dutch Republic and Switzerland and left Germany devastated. England had beheaded King Charles I in 1649 and become a republic under Parliament and Oliver Cromwell. France was torn by the Fronde revolts during the boyhood of Louis XIV. The Dutch were now the world's leading traders, running a spice empire from Batavia on Java. Russia had reached the Pacific, and the Mughal Empire under Shah Jahan was at its most magnificent, with the Taj Mahal nearing completion. Across the Atlantic, enslaved Africans were being shipped in growing numbers to Caribbean and Brazilian sugar plantations.",
+  "regions": {
+   "southern-africa": "Queen Nzinga ruled the kingdom of Ndongo-Matamba and had resisted the Portuguese for decades, allying with the Dutch, who held Luanda from 1641 until Portugal retook it in 1648. Kongo under Garcia II was a strong but troubled Christian kingdom. Portugal dominated the Mutapa state and held Mozambique, and the Dutch East India Company would found Cape Town in 1652. Inland, the Luba and Lunda kingdoms were expanding.",
+   "northern-africa": "Morocco was fragmented after the decline of the Saadis, with the Dila'i religious lodge controlling Fez and the Alaouite family rising in the Tafilalt. The Ottomans held Egypt and the regencies of Algiers, Tunis and Tripoli, which lived largely by corsair raiding. Kanem-Bornu, the Hausa states and Oyo were strong in the west, the Funj ruled Sennar, and Emperor Fasilides ruled Ethiopia from his new capital Gondar after expelling the Jesuits.",
+   "europe": "After the Peace of Westphalia, Emperor Ferdinand III's Holy Roman Empire was a loose union of hundreds of states, while Queen Christina's Sweden held much of the Baltic coast. England was a republic ruled by the Rump Parliament and Cromwell, who was crushing Ireland and invading Scotland. France was ruled by young Louis XIV and Cardinal Mazarin, Philip IV's Spain was in decline after Portugal regained independence in 1640 under Joao IV, and Poland-Lithuania under John II Casimir faced the great Cossack revolt of Bohdan Khmelnytsky. Tsar Alexis ruled Russia.",
+   "middle-east-south-asia": "The Ottoman Empire, under the child sultan Mehmed IV, was troubled by palace intrigue and a long war with Venice over Crete. Shah Abbas II ruled Safavid Iran and recaptured Kandahar from the Mughals in 1649. Shah Jahan's Mughal Empire ruled most of the subcontinent from his new city of Shahjahanabad (Delhi), though Bijapur and Golconda remained independent in the Deccan. In 1650 the Omani imam Sultan bin Saif drove the Portuguese out of Muscat, and the Dutch were taking Portugal's forts in Ceylon.",
+   "north-central-asia": "Russian explorers had crossed all of Siberia, founding Okhotsk on the Pacific coast in 1647; Semyon Dezhnev sailed round Asia's north-eastern tip in 1648 and Yerofey Khabarov was campaigning along the Amur. The Dzungar (Oirat) confederation was rising in the east, the Kazakh Khanate under Zhangir Khan held the central steppe, Kalmyks had moved onto the lower Volga, and Janid khans ruled Bukhara while the historian-khan Abu al-Ghazi Bahadur ruled Khiva.",
+   "east-asia": "The Qing dynasty, ruling from Beijing under the boy Shunzhi Emperor and his regent Dorgon, controlled most of northern and central China, while Southern Ming claimants and the sea lord Zheng Chenggong (Koxinga) held parts of the south. Korea's King Hyojong, once a hostage of the Manchus, ruled Joseon. In Japan the shogun Tokugawa Iemitsu had closed the country to most foreign contact, allowing only Dutch and Chinese traders at Nagasaki. The Fifth Dalai Lama, backed by the Mongol Gushi Khan, now ruled Tibet.",
+   "southeast-asia": "The Dutch East India Company (VOC) ruled Batavia and the Moluccas, had taken Malacca from Portugal in 1641 and held a colony on Taiwan. Mataram under Amangkurat I was the main kingdom on Java, Aceh was ruled by Sultana Taj ul-Alam, and Makassar was a rising trading power. Ayutthaya under King Prasat Thong and the Toungoo kingdom of Burma were the main mainland states, while the Trinh and Nguyen lords fought over Vietnam and Spain ruled the Philippines.",
+   "northern-north-america": "New France had small settlements at Quebec, Trois-Rivieres and Montreal, built on the fur trade with Indigenous allies. In 1649 the Haudenosaunee (Iroquois) destroyed the Wendat (Huron) confederacy, France's main trading partners. Newfoundland had seasonal English and French fishing stations. Most of the north, from Labrador to Alaska, belonged to Cree, Innu, Dene, Inuit and other nations.",
+   "southern-north-america": "England had colonies in Virginia, Maryland, Massachusetts Bay and other New England settlements, and on Barbados and other Caribbean islands; the Dutch held New Netherland around New Amsterdam under Peter Stuyvesant. Spain ruled New Spain, Florida, Cuba and Hispaniola. Elsewhere, powerful Indigenous nations such as the Haudenosaunee, Creek, Apache and Pueblo peoples held most of the continent.",
+   "northern-south-america": "Spain's Viceroyalty of Peru ruled the Andes and Pacific coast from Lima. Portuguese settlers in Brazil were fighting to expel the Dutch, who had held the sugar-rich north-east around Recife since 1630 and would be driven out in 1654. Dutch, English and French settlers clung to the Guiana coast. Brazilian slave-raiding bands, the bandeirantes, pushed deep into the interior.",
+   "southern-cone": "Spain held central Chile, Paraguay and the Rio de la Plata, but the Mapuche kept their independence south of the Biobio River, recognised at the Parliament of Quilin in 1641. Jesuit missions organised tens of thousands of Guarani in the reductions of Paraguay, defending them against bandeirante raiders. The pampas and Patagonia remained Indigenous lands.",
+   "australasia": "Dutch navigators had charted the western and northern coasts of Australia, calling it New Holland, and in 1642 Abel Tasman reached Tasmania and New Zealand, where Maori warriors repelled his landing. No Europeans had settled. Aboriginal nations, Papuan peoples, Maori iwi and Pacific islanders such as the Tongans and Hawaiians lived as before."
+  },
+  "powers": [
+   {
+    "name": "Qing Empire",
+    "map": "Manchu Empire",
+    "ruler": "Shunzhi Emperor (regent Dorgon)",
+    "capital": "Beijing",
+    "extent": "Manchuria and most of northern and central China, still conquering the south"
+   },
+   {
+    "name": "Tsardom of Russia",
+    "map": "Tsardom of Muscovy",
+    "ruler": "Alexis I",
+    "capital": "Moscow",
+    "extent": "From the Baltic hinterland across Siberia to the Pacific at Okhotsk"
+   },
+   {
+    "name": "Ottoman Empire",
+    "map": "Ottoman Empire",
+    "ruler": "Mehmed IV",
+    "capital": "Constantinople (Istanbul)",
+    "extent": "From Hungary to Iraq, Arabia, Egypt and North Africa"
+   },
+   {
+    "name": "Mughal Empire",
+    "map": "Mughal Empire",
+    "ruler": "Shah Jahan",
+    "capital": "Shahjahanabad (Delhi)",
+    "extent": "Most of the Indian subcontinent from Kabul to Bengal and the northern Deccan"
+   },
+   {
+    "name": "Spanish Empire",
+    "map": "Spain",
+    "ruler": "Philip IV",
+    "capital": "Madrid",
+    "extent": "Spain, southern Italy, the southern Netherlands, the Americas from Mexico to Chile, and the Philippines"
+   },
+   {
+    "name": "Dutch Republic",
+    "map": "Dutch Republic",
+    "ruler": "Stadtholder William II (d. Nov 1650); States General",
+    "capital": "The Hague / Amsterdam",
+    "extent": "The northern Netherlands plus VOC holdings in Java, the Moluccas, Malacca, Ceylon's coast and Taiwan, New Netherland and north-east Brazil"
+   },
+   {
+    "name": "Safavid Empire",
+    "map": "Safavid Empire",
+    "ruler": "Abbas II",
+    "capital": "Isfahan",
+    "extent": "Iran, the southern Caucasus and western Afghanistan with Kandahar"
+   },
+   {
+    "name": "Kingdom of France",
+    "map": "France",
+    "ruler": "Louis XIV (regency of Anne of Austria and Cardinal Mazarin)",
+    "capital": "Paris",
+    "extent": "France, plus New France on the St Lawrence and some Caribbean islands"
+   },
+   {
+    "name": "Swedish Empire",
+    "map": "Sweden",
+    "ruler": "Queen Christina",
+    "capital": "Stockholm",
+    "extent": "Sweden, Finland, Estonia, Livonia and footholds in northern Germany"
+   },
+   {
+    "name": "Tokugawa Japan",
+    "map": "Tokugawa shogunate",
+    "ruler": "Shogun Tokugawa Iemitsu",
+    "capital": "Edo (shogun) / Kyoto (emperor)",
+    "extent": "The Japanese islands except Hokkaido's Ainu north"
+   }
+  ],
+  "events": [
+   {
+    "year": 1618,
+    "text": "The Thirty Years' War begins in Bohemia"
+   },
+   {
+    "year": 1619,
+    "text": "The Dutch East India Company founds Batavia on Java"
+   },
+   {
+    "year": 1641,
+    "text": "The Dutch capture Malacca from Portugal"
+   },
+   {
+    "year": 1644,
+    "text": "Beijing falls to rebels and then the Manchus; the Qing dynasty takes power"
+   },
+   {
+    "year": 1648,
+    "text": "Peace of Westphalia ends the Thirty Years' War; Khmelnytsky's Cossack revolt begins"
+   },
+   {
+    "year": 1649,
+    "text": "Charles I of England is executed; the Iroquois destroy the Huron confederacy"
+   },
+   {
+    "year": 1650,
+    "text": "Oman expels the Portuguese from Muscat"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia: Comanche",
+    "url": "https://en.wikipedia.org/wiki/Comanche"
+   },
+   {
+    "title": "Wikipedia: Yerofey Khabarov",
+    "url": "https://en.wikipedia.org/wiki/Yerofey_Khabarov"
+   },
+   {
+    "title": "Wikipedia: Sultanate of Aceh",
+    "url": "https://en.wikipedia.org/wiki/Sultanate_of_Aceh"
+   },
+   {
+    "title": "Wikipedia: List of shoguns",
+    "url": "https://en.wikipedia.org/wiki/List_of_shoguns"
+   },
+   {
+    "title": "Wikipedia: List of rulers of Kongo",
+    "url": "https://en.wikipedia.org/wiki/List_of_rulers_of_Kongo"
+   },
+   {
+    "title": "Wikipedia: Mataram Sultanate",
+    "url": "https://en.wikipedia.org/wiki/Mataram_Sultanate"
+   },
+   {
+    "title": "Wikipedia: Powhatan Confederacy",
+    "url": "https://en.wikipedia.org/wiki/Powhatan_Confederacy"
+   },
+   {
+    "title": "Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. VI.A.3, The reigns of Jahangir, Shah Jahan, and Aurangzib, 1605-1707",
+    "url": "https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/The_reigns_of_Jahangir_Shah_Jahan_and_Aurangzib_1605-1707.json&canvasID=0"
+   },
+   {
+    "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. VII: The Mughul Empire (Internet Archive)",
+    "url": "https://archive.org/details/mughulempire00bhar"
+   }
+  ]
+ },
+ {
+  "year": 1700,
+  "title": "Sun Kings and Sultans",
+  "age": "Early Modern Period",
+  "overview": "In 1700 three emperors ruled more people than all of Europe combined: the Kangxi Emperor of Qing China, who had completed the conquest of China and fixed the Russian border at Nerchinsk, the Mughal emperor Aurangzeb, whose empire had reached its greatest size but was exhausted by endless war against the Marathas, and the Ottoman sultan, who had just been forced to give up Hungary at the Treaty of Karlowitz (1699). In Europe Louis XIV of France dominated from Versailles. On 1 November 1700 the childless Charles II of Spain died, leaving his empire to Louis's grandson Philip and triggering the War of the Spanish Succession. In the north, Peter the Great of Russia, Denmark and Saxony-Poland attacked Sweden, beginning the Great Northern War. Britain and France were competing in North America and India, and gold had just been discovered in Brazil. The Atlantic slave trade was now carrying tens of thousands of Africans each year.",
+  "regions": {
+   "southern-africa": "The Dutch East India Company's Cape Colony, under Governor Willem Adriaan van der Stel, was expanding inland at the expense of the Khoikhoi. Kongo was still split by the civil war that began in 1665, which Pedro IV would end in 1709, and Portugal ruled Angola and Mozambique. On the Zimbabwe plateau the Rozvi kingdom of the Changamire dynasty had pushed the Portuguese out, while the Luba and Lunda kingdoms flourished in the interior. In 1698 Oman captured Fort Jesus at Mombasa, ending Portuguese power on most of the Swahili coast.",
+   "northern-africa": "Sultan Moulay Ismail ruled a strong, reunited Morocco from Meknes. The Ottomans held Egypt, where Mamluk-descended beys had real power, and Algiers, Tunis and Tripoli were nearly independent. In West Africa, Osei Tutu was forging the Asante kingdom around Kumasi, Dahomey and Oyo were growing on the slave trade, and Kanem-Bornu and the Hausa states traded across the Sahara. Ethiopia was ruled by Emperor Iyasu I from Gondar, and the Funj ruled Sennar.",
+   "europe": "Louis XIV's France was Europe's strongest state, and Spain passed from Charles II to Louis's grandson Philip V in November 1700. William III ruled England, Scotland and Ireland and led the Dutch Republic, and Emperor Leopold I had won Hungary from the Ottomans. In the Great Northern War, which began in 1700, the young Charles XII of Sweden crushed Peter the Great's Russian army at Narva in November. Augustus II ruled Poland-Lithuania and Saxony, and Elector Frederick III of Brandenburg was about to crown himself King in Prussia (1701).",
+   "middle-east-south-asia": "The Ottoman Empire under Mustafa II had lost Hungary and Transylvania at Karlowitz but still held the Balkans, Anatolia, Iraq and Arabia's coasts. Safavid Iran under Shah Sultan Husayn was weak and poorly governed. Aurangzeb's Mughal Empire covered nearly all of the subcontinent after conquering Bijapur (1686) and Golconda (1687), but the emperor was bogged down fighting the Marathas, led after Rajaram's death in 1700 by his widow Tarabai. The English, Dutch and French East India Companies traded from coastal forts such as Madras, Bombay and Calcutta.",
+   "north-central-asia": "Russia held all of Siberia to the Pacific and had agreed its border with China at Nerchinsk (1689). The Dzungar Khanate under Tsewang Rabtan controlled the eastern steppe and the Tarim Basin, the Kazakh Khanate under Tauke Khan held the central steppe, and the Kalmyks lived on the Volga under Russian protection. Bukhara and Khiva remained independent Uzbek khanates.",
+   "east-asia": "The Kangxi Emperor ruled a powerful Qing China, having crushed the Revolt of the Three Feudatories (1681), annexed Taiwan (1683) and defeated the Dzungar leader Galdan, bringing the eastern (Khalkha) Mongols under Qing rule. Korea was ruled by King Sukjong. Japan, under the shogun Tokugawa Tsunayoshi, enjoyed the peaceful, prosperous Genroku era behind its closed borders. Tibet was ruled in the name of the Dalai Lama.",
+   "southeast-asia": "The Dutch VOC dominated the spice trade from Batavia and was gaining control over Java's Mataram kingdom by intervening in its revolts and succession disputes. Ayutthaya was ruled by King Phetracha, who had expelled French influence in 1688. Burma's Toungoo dynasty under Sanay Min was in decline, the Trinh lords governed northern Vietnam and the Nguyen lords the south, and Spain ruled the Philippines.",
+   "northern-north-america": "The English Hudson's Bay Company, chartered in 1670, traded for furs around Hudson Bay in the vast territory it called Rupert's Land, and competed with New France, whose towns lined the St Lawrence. French and English colonists and their Indigenous allies fought repeated frontier wars, and the Great Peace of Montreal in 1701 would bring a truce with the Haudenosaunee. Inuit, Cree, Dene and other nations held the far north and west.",
+   "southern-north-america": "England had a chain of colonies from Massachusetts to Carolina, including Pennsylvania (1681) and New York, taken from the Dutch in 1664. France had explored the Mississippi and founded Louisiana in 1699. Spain ruled New Spain, Florida and Cuba, had reconquered New Mexico after the Pueblo Revolt of 1680 and had briefly planted missions in east Texas (1690 to 1693). In the Caribbean, England held Jamaica and France had won western Hispaniola (Saint-Domingue) in 1697.",
+   "northern-south-america": "The Viceroyalty of Peru governed Spanish South America from Lima, with Potosi's silver output now declining. In Portuguese Brazil, the discovery of gold in Minas Gerais in the 1690s set off a huge gold rush, while sugar plantations in the north-east depended on enslaved Africans; the runaway-slave kingdom of Palmares had been destroyed in 1694. The Dutch, English and French held small colonies in the Guianas.",
+   "southern-cone": "Spain ruled Chile, Paraguay and the Rio de la Plata, but Portugal had planted the rival outpost of Colonia do Sacramento across the river from Buenos Aires in 1680. Jesuit reductions organised the Guarani, and the Mapuche held the land south of the Biobio. The pampas and Patagonia remained under Indigenous peoples who had adopted the horse.",
+   "australasia": "The Dutch had mapped much of Australia's western, northern and southern coasts, and the English buccaneer William Dampier visited Western Australia in 1699, but none settled. Aboriginal nations held the continent, Papuan peoples New Guinea and Maori iwi New Zealand. In Polynesia, Tonga's paramount chiefs and the rival chiefs of Hawaii and Tahiti ruled without European contact."
+  },
+  "powers": [
+   {
+    "name": "Mughal Empire",
+    "map": "Mughal Empire",
+    "ruler": "Aurangzeb",
+    "capital": "Delhi (Aurangzeb campaigning in the Deccan)",
+    "extent": "Almost the whole Indian subcontinent from Kabul deep into the south, short of the southern tip"
+   },
+   {
+    "name": "Qing Empire",
+    "map": "Manchu Empire",
+    "ruler": "Kangxi Emperor",
+    "capital": "Beijing",
+    "extent": "China, Manchuria, Taiwan and Outer Mongolia"
+   },
+   {
+    "name": "Ottoman Empire",
+    "map": "Ottoman Empire",
+    "ruler": "Mustafa II",
+    "capital": "Constantinople (Istanbul)",
+    "extent": "The Balkans, Anatolia, Iraq, Syria, Egypt, Arabia's coasts and North Africa"
+   },
+   {
+    "name": "Tsardom of Russia",
+    "map": "Tsardom of Muscovy",
+    "ruler": "Peter I the Great",
+    "capital": "Moscow",
+    "extent": "From Ukraine east of the Dnieper across Siberia to the Pacific"
+   },
+   {
+    "name": "Kingdom of France",
+    "map": "France",
+    "ruler": "Louis XIV",
+    "capital": "Paris / Versailles",
+    "extent": "France, New France, Louisiana, Saint-Domingue and trading posts in India"
+   },
+   {
+    "name": "Spanish Empire",
+    "map": "Spain",
+    "ruler": "Charles II (d. 1 Nov 1700), then Philip V",
+    "capital": "Madrid",
+    "extent": "Spain, southern Italy, the southern Netherlands, most of the Americas from Mexico to Chile, and the Philippines"
+   },
+   {
+    "name": "Habsburg Monarchy",
+    "map": "Austrian Empire",
+    "ruler": "Leopold I (also Holy Roman Emperor)",
+    "capital": "Vienna",
+    "extent": "Austria, Bohemia and newly reconquered Hungary and Transylvania"
+   },
+   {
+    "name": "England (with Scotland and Ireland)",
+    "map": "England and Ireland",
+    "ruler": "William III",
+    "capital": "London",
+    "extent": "The British Isles, North American colonies from New England to Carolina, Jamaica and East India Company forts"
+   },
+   {
+    "name": "Swedish Empire",
+    "map": "Sweden",
+    "ruler": "Charles XII",
+    "capital": "Stockholm",
+    "extent": "Sweden, Finland and the eastern Baltic coast, with lands in northern Germany"
+   },
+   {
+    "name": "Safavid Empire",
+    "map": "Safavid Empire",
+    "ruler": "Sultan Husayn",
+    "capital": "Isfahan",
+    "extent": "Iran, the southern Caucasus and western Afghanistan"
+   }
+  ],
+  "events": [
+   {
+    "year": 1683,
+    "text": "The Ottoman siege of Vienna is broken; the Qing annex Taiwan"
+   },
+   {
+    "year": 1687,
+    "text": "Aurangzeb conquers Golconda, bringing the Mughal Empire to its height"
+   },
+   {
+    "year": 1688,
+    "text": "The Glorious Revolution in England puts William III and Mary II on the throne"
+   },
+   {
+    "year": 1689,
+    "text": "Treaty of Nerchinsk fixes the border between Russia and Qing China"
+   },
+   {
+    "year": 1699,
+    "text": "Treaty of Karlowitz: the Ottomans cede Hungary to Austria; the French found Louisiana"
+   },
+   {
+    "year": 1700,
+    "text": "The Great Northern War begins; Charles XII wins at Narva"
+   },
+   {
+    "year": 1700,
+    "text": "Charles II of Spain dies, leaving his throne to Philip of Anjou"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia: Kongo Civil War",
+    "url": "https://en.wikipedia.org/wiki/Kongo_Civil_War"
+   },
+   {
+    "title": "Wikipedia: Spanish missions in Texas",
+    "url": "https://en.wikipedia.org/wiki/Spanish_missions_in_Texas"
+   },
+   {
+    "title": "Wikipedia: Mataram Sultanate",
+    "url": "https://en.wikipedia.org/wiki/Mataram_Sultanate"
+   },
+   {
+    "title": "Wikipedia: Kingdom of Mutapa",
+    "url": "https://en.wikipedia.org/wiki/Kingdom_of_Mutapa"
+   },
+   {
+    "title": "Wikipedia: Mughal Empire",
+    "url": "https://en.wikipedia.org/wiki/Mughal_Empire"
+   },
+   {
+    "title": "Wikipedia: List of monarchs of Thailand",
+    "url": "https://en.wikipedia.org/wiki/List_of_monarchs_of_Thailand"
+   },
+   {
+    "title": "Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. VI.A.3, The reigns of Jahangir, Shah Jahan, and Aurangzib, 1605-1707",
+    "url": "https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/The_reigns_of_Jahangir_Shah_Jahan_and_Aurangzib_1605-1707.json&canvasID=0"
+   },
+   {
+    "title": "Jadunath Sarkar, History of Aurangzib (Internet Archive)",
+    "url": "https://archive.org/details/historyofaurangz02sarkuoft"
+   }
+  ]
+ },
+ {
+  "year": 1715,
+  "title": "Peace of Utrecht",
+  "age": "Early Modern Period",
+  "overview": "The world of 1715 was taking stock after a great war. The War of the Spanish Succession had ended with the treaties of Utrecht (1713) and Rastatt (1714): Philip V kept Spain and its American empire, Austria took Spain's lands in Italy and the Netherlands, and Great Britain, formed by the union of England and Scotland in 1707, gained Gibraltar, Minorca, Newfoundland, Nova Scotia and Hudson Bay, along with the right to supply enslaved Africans to Spanish America. Louis XIV died in September 1715 after 72 years on the throne, leaving France to his five-year-old great-grandson. Peter the Great had defeated Sweden at Poltava in 1709 and built St Petersburg as Russia's new capital. In India, the Mughal Empire was weakening fast after Aurangzeb's death in 1707, while the Marathas grew stronger. Qing China under the Kangxi Emperor was peaceful and populous, and Tokugawa Japan remained closed.",
+  "regions": {
+   "southern-africa": "The Dutch Cape Colony was spreading inland, and a smallpox epidemic in 1713 devastated the Khoikhoi. Portugal held Angola and the Mozambique coast, while the Rozvi kingdom ruled the Zimbabwe plateau and the Lunda and Luba kingdoms the southern Congo basin. Oman's Ya'rubid imams controlled the Swahili coast from Mombasa to Zanzibar. In Madagascar, Sakalava kingdoms dominated the west coast, and pirates had used the island as a base.",
+   "northern-africa": "Moulay Ismail still ruled Morocco from Meknes. Egypt was an Ottoman province governed in practice by rival Mamluk beys. Algiers was run by its deys, Tunis by the new Husainid dynasty (1705) and Tripoli by the Karamanli dynasty (1711). In West Africa, Asante under Osei Tutu, Dahomey and Oyo were the leading powers, Kanem-Bornu and the Hausa states held the central Sahel, and Ethiopia, under Emperor Yostos, was losing central authority.",
+   "europe": "George I of Hanover became king of Great Britain in 1714 and faced a Jacobite rising in 1715. Louis XV succeeded Louis XIV in France with Philip of Orleans as regent. Philip V ruled Spain, Emperor Charles VI ruled Austria with its new lands in Italy and the southern Netherlands, and Victor Amadeus II of Savoy had become king of Sicily. Peter the Great was winning the Great Northern War against Charles XII of Sweden, Frederick William I ruled Prussia and Augustus II Poland-Lithuania.",
+   "middle-east-south-asia": "Ahmed III's Ottoman Empire retook the Peloponnese (Morea) from Venice in 1715. Safavid Iran under Shah Sultan Husayn was crumbling, with Afghan Ghilzai rebels independent in Kandahar since 1709. The Mughal emperor Farrukhsiyar reigned at Delhi but depended on the powerful Sayyid brothers; the Marathas under Shahu and his new Peshwa Balaji Vishwanath were expanding, and the Sikh leader Banda Singh Bahadur was captured in 1715. European companies held trading towns such as Madras, Bombay, Calcutta and Pondicherry.",
+   "north-central-asia": "Russia ruled Siberia and was pushing south toward the Kazakh steppe and Central Asia, sending expeditions up the Irtysh. The Dzungar Khanate under Tsewang Rabtan was at its strongest, raiding the Kazakhs, whose khan Tauke died around 1715. The Kalmyks held the lower Volga, and the Uzbek khanates of Bukhara and Khiva ruled the oases of Transoxiana.",
+   "east-asia": "The Kangxi Emperor's Qing China was at peace and growing rapidly in population, though Qing armies were preparing to confront the Dzungars, who would invade Tibet in 1717. Korea was ruled by King Sukjong. Japan's shogun was the child Tokugawa Ietsugu, guided by the Confucian scholar Arai Hakuseki, and trade remained restricted to Dutch and Chinese merchants at Nagasaki.",
+   "southeast-asia": "The Dutch VOC controlled the Moluccas and much of Java's coast, propping up the Mataram ruler Pakubuwono I. Ayutthaya under King Thai Sa remained a major rice and trading kingdom, Burma's Toungoo dynasty under Taninganway was weak, and Vietnam stayed divided between the Trinh lords and the Nguyen lords, who were expanding into the Mekong delta. Spain ruled the Philippines from Manila.",
+   "northern-north-america": "Under the Treaty of Utrecht, France gave Britain Newfoundland, Acadia (Nova Scotia) and its claims to Hudson Bay, where the Hudson's Bay Company traded across Rupert's Land. France kept the St Lawrence valley, Cape Breton Island, where it would build Louisbourg, and the Great Lakes fur trade. Most of the north and west remained Indigenous territory.",
+   "southern-north-america": "Britain's colonies stretched from New England to Carolina, where the Yamasee War of 1715 nearly destroyed the colony. France held Louisiana along the Mississippi and Gulf coast and would found New Orleans in 1718. Spain ruled New Spain, Florida and Cuba and was building missions in Texas. In the Caribbean, Britain held Jamaica and Barbados, France held Saint-Domingue and Martinique, and the golden age of piracy, soon to include Blackbeard, was beginning.",
+   "northern-south-america": "The Viceroyalty of Peru still governed all Spanish South America from Lima; a separate Viceroyalty of New Granada would be created in 1717. Portuguese Brazil was booming on Minas Gerais gold, drawing settlers and enslaved Africans inland. The Dutch held Suriname, and the French and British held smaller stretches of the Guiana coast.",
+   "southern-cone": "By the Treaty of Utrecht between Spain and Portugal (1715), Spain returned Colonia do Sacramento to Portugal, keeping the Rio de la Plata contested. Spain ruled Chile, Paraguay and Buenos Aires, Jesuit missions organised the Guarani, and the Mapuche kept their independence south of the Biobio. Mounted Indigenous peoples controlled the pampas and Patagonia.",
+   "australasia": "No Europeans had settled Australia, New Guinea or the Pacific islands. Aboriginal nations, Papuan societies and Maori iwi lived independently, and in Polynesia Tonga's chiefly lines and the rival chiefs of Hawaii and Tahiti ruled their islands. The Dutchman Jacob Roggeveen would reach Easter Island in 1722."
+  },
+  "powers": [
+   {
+    "name": "Qing Empire",
+    "map": "Manchu Empire",
+    "ruler": "Kangxi Emperor",
+    "capital": "Beijing",
+    "extent": "China, Manchuria, Mongolia and Taiwan"
+   },
+   {
+    "name": "Russian Tsardom",
+    "map": "Tsardom of Muscovy",
+    "ruler": "Peter I the Great",
+    "capital": "St Petersburg",
+    "extent": "From the Baltic coast (newly won from Sweden) across Siberia to the Pacific"
+   },
+   {
+    "name": "Mughal Empire",
+    "map": "Mughal Empire",
+    "ruler": "Farrukhsiyar",
+    "capital": "Delhi",
+    "extent": "Most of the subcontinent in name, though Maratha, Sikh and Rajput power was growing"
+   },
+   {
+    "name": "Ottoman Empire",
+    "map": "Ottoman Empire",
+    "ruler": "Ahmed III",
+    "capital": "Constantinople (Istanbul)",
+    "extent": "The Balkans, Anatolia, the Arab lands and North Africa"
+   },
+   {
+    "name": "Great Britain",
+    "map": "United Kingdom",
+    "ruler": "George I",
+    "capital": "London",
+    "extent": "Great Britain and Ireland, North American colonies, Newfoundland, Nova Scotia, Hudson Bay, Gibraltar, Minorca, Caribbean islands and East India Company posts"
+   },
+   {
+    "name": "Kingdom of France",
+    "map": "France",
+    "ruler": "Louis XIV (d. Sept 1715), then Louis XV with regent Philip of Orleans",
+    "capital": "Paris / Versailles",
+    "extent": "France, New France, Louisiana, Caribbean islands and Indian trading posts"
+   },
+   {
+    "name": "Spanish Empire",
+    "map": "Spain",
+    "ruler": "Philip V",
+    "capital": "Madrid",
+    "extent": "Spain, the Americas from Mexico and Florida to Chile, and the Philippines"
+   },
+   {
+    "name": "Habsburg Monarchy",
+    "map": "Austrian Empire",
+    "ruler": "Charles VI (also Holy Roman Emperor)",
+    "capital": "Vienna",
+    "extent": "Austria, Bohemia, Hungary, the southern Netherlands, Milan, Naples and Sardinia"
+   },
+   {
+    "name": "Safavid Empire",
+    "map": "Safavid Empire",
+    "ruler": "Sultan Husayn",
+    "capital": "Isfahan",
+    "extent": "Iran and the southern Caucasus, losing control of Afghanistan"
+   },
+   {
+    "name": "Portuguese Empire",
+    "map": "Viceroyalty of Brazil",
+    "ruler": "Joao V",
+    "capital": "Lisbon (Brazil governed from Salvador)",
+    "extent": "Brazil, Angola, Mozambique, Goa, Macau and Timor"
+   }
+  ],
+  "events": [
+   {
+    "year": 1701,
+    "text": "The War of the Spanish Succession begins"
+   },
+   {
+    "year": 1707,
+    "text": "England and Scotland unite as Great Britain; Aurangzeb dies"
+   },
+   {
+    "year": 1709,
+    "text": "Peter the Great defeats Charles XII of Sweden at Poltava"
+   },
+   {
+    "year": 1713,
+    "text": "Treaty of Utrecht ends the war and redraws colonial maps"
+   },
+   {
+    "year": 1714,
+    "text": "George I of Hanover becomes king of Great Britain"
+   },
+   {
+    "year": 1715,
+    "text": "Louis XIV dies; the Jacobite rising in Britain; the Yamasee War in Carolina"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia: Blackbeard",
+    "url": "https://en.wikipedia.org/wiki/Blackbeard"
+   },
+   {
+    "title": "Wikipedia: Spanish missions in Texas",
+    "url": "https://en.wikipedia.org/wiki/Spanish_missions_in_Texas"
+   },
+   {
+    "title": "Wikipedia: Osei Tutu",
+    "url": "https://en.wikipedia.org/wiki/Osei_Tutu"
+   },
+   {
+    "title": "Wikipedia: List of emperors of Ethiopia",
+    "url": "https://en.wikipedia.org/wiki/List_of_emperors_of_Ethiopia"
+   },
+   {
+    "title": "Wikipedia: List of shoguns",
+    "url": "https://en.wikipedia.org/wiki/List_of_shoguns"
+   },
+   {
+    "title": "Wikipedia: Mataram Sultanate",
+    "url": "https://en.wikipedia.org/wiki/Mataram_Sultanate"
+   },
+   {
+    "title": "Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. VII.A, Mughal disintegration and the rise of regional powers, 1707-1766",
+    "url": "https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/Mughal_disintegration_and_the_rise_of_regional_powers_1707-1766.json&canvasID=0"
+   },
+   {
+    "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. VIII: The Maratha Supremacy (Internet Archive)",
+    "url": "https://archive.org/details/marathasupremacy08bhar"
+   }
+  ]
+ },
+ {
+  "year": 1783,
+  "title": "A New Nation Is Born",
+  "age": "Age of Revolutions",
+  "overview": "In September 1783 the Treaty of Paris ended the American Revolutionary War and recognised the independence of the United States, a republic stretching from the Atlantic to the Mississippi. Britain lost thirteen colonies but kept Canada and was building a new empire in India, where the East India Company ruled Bengal. France and Spain, which had helped the Americans, gained little and were sinking into debt; France's financial crisis would lead to revolution in 1789. Catherine the Great annexed Crimea in 1783, and Russia was now the largest country on Earth, though Qing China under the Qianlong Emperor ruled more people and had reached its greatest size. Ideas of the Enlightenment about rights and reason were spreading, steam engines were beginning to power British mills, and the Montgolfier brothers flew the first hot-air balloons. Yet the Atlantic slave trade was at its peak, carrying around 80,000 Africans a year to the Americas.",
+  "regions": {
+   "southern-africa": "The Dutch Cape Colony had expanded east to the Fish River, where colonists fought the Xhosa in the first frontier war (1779 to 1781). Portugal held Angola and Mozambique and drew enslaved people from the interior through the Lunda and Luba kingdoms. Among the Nguni peoples of the south-east, chiefdoms such as the Mthethwa and Ndwandwe were growing, while the small Zulu clan was not yet powerful. The Omani Busaidi rulers held Zanzibar and claimed the Swahili coast, though their Mazrui governors in Mombasa acted almost independently, and in Madagascar the Merina highlands, still divided, would be united by Andrianampoinimerina from about 1785.",
+   "northern-africa": "Sultan Mohammed III ruled Morocco and in 1777 had been among the first to recognise the United States. Egypt was an Ottoman province dominated by the Mamluk beys Murad and Ibrahim. Algiers, Tunis and Tripoli were autonomous Ottoman regencies whose corsairs threatened Mediterranean shipping. In West Africa, Asante, Dahomey, Oyo and the Bambara kingdom of Segu were major powers, the Funj Sultanate was in decline, and Ethiopia was split among regional warlords in the Era of the Princes.",
+   "europe": "George III ruled Great Britain, where William Pitt the Younger became prime minister in December 1783. Louis XVI ruled an indebted France, Charles III Spain and Maria I Portugal. Joseph II, Holy Roman Emperor, was pushing radical reforms in the Habsburg lands, Frederick the Great ruled Prussia, and Catherine II ruled Russia. Poland-Lithuania under Stanislaw August had lost a third of its territory in the First Partition (1772), Gustav III ruled Sweden, and Abdul Hamid I the Ottoman Empire.",
+   "middle-east-south-asia": "The Ottoman Empire was weakened after its defeat by Russia in 1774. Iran was ruled by the Zand dynasty under Ali Murad Khan, with Agha Mohammad Khan Qajar rising in the north, and Timur Shah Durrani ruled Afghanistan. In Arabia, the Saudi emirate of Diriyah spread Wahhabi teaching across Najd. In India the Mughal emperor Shah Alam II was powerless in Delhi; the Maratha Confederacy, led by Nana Fadnavis for the boy Peshwa Madhavrao II, was the strongest Indian power; Tipu Sultan of Mysore was at war with the British; and the East India Company under Warren Hastings ruled Bengal and Bihar and held territory around Madras and Bombay.",
+   "north-central-asia": "Russia ruled Siberia and the northern Kazakh steppe, and its fur traders were moving into the Aleutian Islands and Alaska. Qing China had destroyed the Dzungar Khanate in the 1750s and ruled the conquered region, called Xinjiang (\"New Frontier\"), through a military governor at Ili. The Kazakh hordes were divided and partly under Russian protection, while the Uzbek khanates of Bukhara, Khiva and the rising Kokand ruled the Central Asian oases.",
+   "east-asia": "The Qianlong Emperor ruled Qing China at its greatest extent, including Manchuria, Mongolia, Xinjiang and Tibet, with a population nearing 300 million. Korea was ruled by the reforming King Jeongjo. In Japan, the shogun Tokugawa Ieharu and his minister Tanuma Okitsugu faced the Tenmei famine, worsened by the eruption of Mount Asama in 1783.",
+   "southeast-asia": "Rama I had founded the Chakri dynasty and the new capital of Bangkok (the Rattanakosin Kingdom) in 1782, after Burma destroyed Ayutthaya in 1767. In Burma, King Bodawpaya of the Konbaung dynasty had just come to the throne. Vietnam was in turmoil as the Tay Son rebels drove out the Nguyen lords. The Dutch VOC controlled Java and the spice islands but was weakened by war with Britain, and Spain ruled the Philippines.",
+   "northern-north-america": "Britain ruled the Province of Quebec and Nova Scotia, which received tens of thousands of Loyalist refugees from the United States in 1783. The Hudson's Bay Company traded across Rupert's Land, competing with Montreal merchants who would form the North West Company. Denmark-Norway ruled Greenland, and Russian fur traders were reaching Alaska, where Inuit, Dene and other Indigenous peoples still held almost all the land.",
+   "southern-north-america": "The United States, governed by the Confederation Congress under the Articles of Confederation, now held the lands from the Atlantic to the Mississippi, between British Canada and Spanish Florida. Spain regained Florida in 1783 and held Louisiana west of the Mississippi, along with New Spain, which reached north to California and Texas, and Cuba. France kept Saint-Domingue, the world's richest sugar colony, and Britain held Jamaica and other Caribbean islands.",
+   "northern-south-america": "Spain ruled through the Viceroyalties of New Granada (Bogota) and Peru (Lima), and had recently put down two huge revolts: the Comuneros of New Granada (1781) and the Indigenous uprising led by Tupac Amaru II in Peru (1780 to 1781). Portuguese Brazil, governed by a viceroy in Rio de Janeiro, was producing gold, sugar and cotton with the labour of enslaved Africans. Britain, the Dutch and France held the Guianas.",
+   "southern-cone": "Spain had created the Viceroyalty of the Rio de la Plata in 1776, ruled from Buenos Aires and including Paraguay, Uruguay and Upper Peru (Bolivia), and had taken Colonia do Sacramento from Portugal for good in 1777. Chile was a Spanish captaincy-general. The Jesuits had been expelled in 1767, and Mapuche and other Indigenous peoples still controlled southern Chile, the pampas and Patagonia.",
+   "australasia": "James Cook's voyages (1768 to 1779) had mapped New Zealand and eastern Australia, which Cook claimed for Britain in 1770, and Cook was killed in Hawaii in 1779. Britain's First Fleet would found a penal colony at Sydney in 1788. Aboriginal nations, Papuan peoples and Maori iwi still held their lands, and in Hawaii the chief Kamehameha was beginning his rise to power."
+  },
+  "powers": [
+   {
+    "name": "Qing Empire",
+    "map": "Qing Empire",
+    "ruler": "Qianlong Emperor",
+    "capital": "Beijing",
+    "extent": "China, Manchuria, Mongolia, Xinjiang, Tibet and Taiwan"
+   },
+   {
+    "name": "Russian Empire",
+    "map": "Russian Empire",
+    "ruler": "Catherine II the Great",
+    "capital": "St Petersburg",
+    "extent": "From the Baltic and newly annexed Crimea across Siberia to the Pacific and the Aleutians"
+   },
+   {
+    "name": "Great Britain",
+    "map": "United Kingdom",
+    "ruler": "George III",
+    "capital": "London",
+    "extent": "The British Isles, Canada, Caribbean islands, Gibraltar and East India Company rule over Bengal and coastal India"
+   },
+   {
+    "name": "Spanish Empire",
+    "map": "Spain",
+    "ruler": "Charles III",
+    "capital": "Madrid",
+    "extent": "Spain and four American viceroyalties from California and Louisiana to Patagonia, plus Florida, Cuba and the Philippines"
+   },
+   {
+    "name": "Kingdom of France",
+    "map": "France",
+    "ruler": "Louis XVI",
+    "capital": "Paris / Versailles",
+    "extent": "France, Saint-Domingue and other Caribbean islands, French Guiana, Senegal posts and Pondicherry"
+   },
+   {
+    "name": "Ottoman Empire",
+    "map": "Ottoman Empire",
+    "ruler": "Abdul Hamid I",
+    "capital": "Constantinople (Istanbul)",
+    "extent": "The Balkans, Anatolia, the Arab lands and autonomous North African regencies"
+   },
+   {
+    "name": "United States of America",
+    "map": "United States of America",
+    "ruler": "Confederation Congress (no single head of state)",
+    "capital": "Philadelphia, then Princeton and Annapolis",
+    "extent": "From the Atlantic to the Mississippi, between Canada and Florida"
+   },
+   {
+    "name": "Habsburg Monarchy",
+    "map": "Austrian Empire",
+    "ruler": "Joseph II (also Holy Roman Emperor)",
+    "capital": "Vienna",
+    "extent": "Austria, Bohemia, Hungary, Galicia, the Austrian Netherlands and Lombardy"
+   },
+   {
+    "name": "Maratha Confederacy",
+    "map": "Maratha Confederacy",
+    "ruler": "Peshwa Madhavrao II (minister Nana Fadnavis)",
+    "capital": "Pune",
+    "extent": "Western and central India, with influence over Delhi"
+   },
+   {
+    "name": "Kingdom of Prussia",
+    "map": "Prussia",
+    "ruler": "Frederick II the Great",
+    "capital": "Berlin / Potsdam",
+    "extent": "Brandenburg, Prussia, Silesia and West Prussia"
+   }
+  ],
+  "events": [
+   {
+    "year": 1767,
+    "text": "Burma destroys Ayutthaya; Siam is reunited soon after"
+   },
+   {
+    "year": 1772,
+    "text": "First Partition of Poland by Russia, Prussia and Austria"
+   },
+   {
+    "year": 1776,
+    "text": "The American Declaration of Independence"
+   },
+   {
+    "year": 1780,
+    "text": "Tupac Amaru II leads a great Indigenous revolt in Peru"
+   },
+   {
+    "year": 1781,
+    "text": "British surrender at Yorktown"
+   },
+   {
+    "year": 1782,
+    "text": "Rama I founds Bangkok and the Chakri dynasty"
+   },
+   {
+    "year": 1783,
+    "text": "Treaty of Paris recognises US independence; Russia annexes Crimea"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia: Andrianampoinimerina",
+    "url": "https://en.wikipedia.org/wiki/Andrianampoinimerina"
+   },
+   {
+    "title": "Wikipedia: Xinjiang under Qing rule",
+    "url": "https://en.wikipedia.org/wiki/Xinjiang_under_Qing_rule"
+   },
+   {
+    "title": "Wikipedia: Population history of China",
+    "url": "https://en.wikipedia.org/wiki/Population_history_of_China"
+   },
+   {
+    "title": "Wikipedia: Zand dynasty",
+    "url": "https://en.wikipedia.org/wiki/Zand_dynasty"
+   },
+   {
+    "title": "Wikipedia: Bombay Presidency",
+    "url": "https://en.wikipedia.org/wiki/Bombay_Presidency"
+   },
+   {
+    "title": "Wikipedia: First Fleet",
+    "url": "https://en.wikipedia.org/wiki/First_Fleet"
+   },
+   {
+    "title": "UNESCO General History of Africa, vol. VI: Africa in the Nineteenth Century until the 1880s (ed. J. F. Ade Ajayi, 1989)",
+    "url": "https://archive.org/details/general_history_africa_vi"
+   },
+   {
+    "title": "Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. VII.A, The expansion of British power, 1766-1819",
+    "url": "https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/The_expansion_of_British_power_1766-1819.json&canvasID=0"
+   },
+   {
+    "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. VIII: The Maratha Supremacy (Internet Archive)",
+    "url": "https://archive.org/details/marathasupremacy08bhar"
+   }
+  ]
+ },
+ {
+  "year": 1800,
+  "title": "Age of Revolutions",
+  "age": "Age of Revolutions",
+  "overview": "In 1800 revolution was reshaping the Atlantic world. The French Revolution had toppled the monarchy, executed Louis XVI and spread war across Europe; Napoleon Bonaparte, First Consul since his coup of November 1799, defeated Austria at Marengo in June 1800. In the Caribbean, enslaved people in Saint-Domingue had risen up in 1791 and, under Toussaint Louverture, now controlled the colony. The young United States held its first contested election, won by Thomas Jefferson, and moved its government to Washington. Britain, fighting France at sea, was industrialising rapidly and expanding its rule in India, where Tipu Sultan had fallen in 1799; the Act of Union with Ireland was passed to take effect on 1 January 1801. Qing China, now under the Jiaqing Emperor, was the world's most populous state but faced the White Lotus rebellion. Spain and Portugal still held most of Latin America, though independence movements were stirring.",
+  "regions": {
+   "southern-africa": "Britain had seized the Dutch Cape Colony in 1795 to keep it from France, and fought the Xhosa on its eastern frontier. Portugal held Angola and Mozambique, both centres of the slave trade. Nguni chiefdoms in the south-east, including the Mthethwa, soon to be led by Dingiswayo, and the Ndwandwe, were consolidating, while the Zulu under Senzangakhona remained minor. Andrianampoinimerina was uniting the Merina kingdom in Madagascar, and Oman held Zanzibar and Kilwa, while its Mazrui governors in Mombasa were virtually independent.",
+   "northern-africa": "A French army had occupied Egypt since 1798; after Napoleon left, his successor Kleber was assassinated in June 1800, and British and Ottoman forces would expel the French in 1801. Sultan Sulayman ruled Morocco, and the Barbary regencies of Algiers, Tunis and Tripoli still took tribute from foreign shipping. In West Africa, Asante was at its height, Oyo was weakening, and Usman dan Fodio was preaching the reform that would launch the Sokoto jihad in 1804. Ethiopia remained divided in the Era of the Princes.",
+   "europe": "Napoleon ruled France as First Consul, and French armies controlled the Netherlands (the Batavian Republic), Switzerland and much of Italy as sister republics. George III ruled Great Britain, with William Pitt the Younger as prime minister. Francis II ruled Austria and the Holy Roman Empire, Paul I Russia, Frederick William III Prussia and Charles IV Spain. Poland had vanished, partitioned out of existence by Russia, Prussia and Austria in 1795, and Selim III was trying to modernise the Ottoman army.",
+   "middle-east-south-asia": "The Ottoman Empire under Selim III was struggling with rebellious provincial governors and the French invasion of Egypt. Fath-Ali Shah of the Qajar dynasty ruled Iran from Tehran, and Zaman Shah ruled the Durrani kingdom of Afghanistan. The Saudi emirate was spreading across Arabia. In India, Governor-General Richard Wellesley was rapidly expanding British East India Company power after defeating Tipu Sultan of Mysore in 1799; the Maratha Confederacy under Peshwa Baji Rao II was divided after the death of Nana Fadnavis in 1800, the Nizam of Hyderabad was a British ally, and Ranjit Singh had taken Lahore in 1799 and was uniting the Sikhs.",
+   "north-central-asia": "Russia ruled all of Siberia, held the northern Kazakh steppe and had chartered the Russian-American Company in 1799 to run its Alaskan colonies. Qing China governed Xinjiang. The Kazakh hordes were divided, partly under Russian influence, and the Uzbek khanates of Bukhara (under the Manghit dynasty), Khiva and Kokand ruled the oases of Central Asia.",
+   "east-asia": "The Jiaqing Emperor had taken full power in Qing China on the death of his father Qianlong in 1799, purging the corrupt minister Heshen and fighting the White Lotus rebellion in central China. China's population had passed 300 million. In Korea, King Jeongjo died in 1800 and the boy Sunjo succeeded him. Japan, under the shogun Tokugawa Ienari, remained largely closed, though Russian ships had begun to appear in the north.",
+   "southeast-asia": "Rama I ruled Siam from Bangkok, and Bodawpaya ruled Burma's Konbaung kingdom from Amarapura. In Vietnam, Nguyen Anh, with some French help, was defeating the Tay Son and would unite the country in 1802. The Dutch East India Company had been dissolved at the end of 1799, its possessions taken over by the Dutch state, then a French satellite, while Britain seized several Dutch outposts. Spain ruled the Philippines.",
+   "northern-north-america": "Britain ruled Upper and Lower Canada (created in 1791), Nova Scotia, New Brunswick and Newfoundland, while the Hudson's Bay Company and the rival North West Company competed for furs across the west. Denmark-Norway held Greenland and Russia's fur traders held coastal Alaska. Inuit, Cree, Dene and many other Indigenous nations still controlled most of the land.",
+   "southern-north-america": "John Adams was president of the United States, whose government moved to the new capital of Washington in 1800; Thomas Jefferson defeated him in that year's election, though his tie with Aaron Burr was settled by the House only in February 1801. Spain still ruled Louisiana but secretly promised to return it to France in the Treaty of San Ildefonso (October 1800), and governed New Spain, Florida and Cuba. In Saint-Domingue, Toussaint Louverture ruled the colony after the great slave revolt, while Britain held Jamaica and other sugar islands.",
+   "northern-south-america": "Spain governed New Granada from Bogota and Peru from Lima, and the scientist Alexander von Humboldt was exploring Venezuela and the Orinoco. Portuguese Brazil, ruled by a viceroy in Rio de Janeiro, was larger than Portugal many times over and relied on enslaved labour. The British had seized Dutch Suriname and Guiana during the wars, and France held Cayenne.",
+   "southern-cone": "Spain's Viceroyalty of the Rio de la Plata, ruled from Buenos Aires, included Argentina, Uruguay, Paraguay and Upper Peru, and Chile was a Spanish captaincy-general. Creole merchants resented Spanish trade limits, and within a decade independence movements would begin. The Mapuche still held the land south of the Biobio, and other Indigenous peoples controlled the southern pampas and Patagonia.",
+   "australasia": "The British colony of New South Wales, founded at Sydney in 1788, was spreading along the coast, and Philip Gidley King became governor in 1800; Aboriginal nations such as the Eora had suffered from smallpox and dispossession. Maori iwi held New Zealand, now visited by sealers, whalers and traders. In Hawaii, Kamehameha I had conquered most of the islands, and Tonga was entering a long civil war."
+  },
+  "powers": [
+   {
+    "name": "Great Britain",
+    "map": "United Kingdom",
+    "ruler": "George III (prime minister William Pitt)",
+    "capital": "London",
+    "extent": "The British Isles, Canada, Caribbean islands, the Cape, New South Wales and East India Company rule over much of India"
+   },
+   {
+    "name": "French Republic",
+    "map": "France",
+    "ruler": "Napoleon Bonaparte, First Consul",
+    "capital": "Paris",
+    "extent": "France with Belgium and the Rhineland, sister republics in the Netherlands, Switzerland and Italy, an army in Egypt, and Caribbean colonies"
+   },
+   {
+    "name": "Russian Empire",
+    "map": "Russian Empire",
+    "ruler": "Paul I",
+    "capital": "St Petersburg",
+    "extent": "From Lithuania and the Black Sea across Siberia to Alaska"
+   },
+   {
+    "name": "Qing Empire",
+    "map": "Qing Empire",
+    "ruler": "Jiaqing Emperor",
+    "capital": "Beijing",
+    "extent": "China, Manchuria, Mongolia, Xinjiang, Tibet and Taiwan"
+   },
+   {
+    "name": "Spanish Empire",
+    "map": "Spain",
+    "ruler": "Charles IV (chief minister Manuel Godoy)",
+    "capital": "Madrid",
+    "extent": "Spain and the Americas from California, Louisiana and Florida to Patagonia, plus Cuba and the Philippines"
+   },
+   {
+    "name": "Ottoman Empire",
+    "map": "Ottoman Empire",
+    "ruler": "Selim III",
+    "capital": "Constantinople (Istanbul)",
+    "extent": "The Balkans, Anatolia, the Arab lands (Egypt under French occupation) and North Africa"
+   },
+   {
+    "name": "Habsburg Monarchy",
+    "map": "Austrian Empire",
+    "ruler": "Francis II (also Holy Roman Emperor)",
+    "capital": "Vienna",
+    "extent": "Austria, Bohemia, Hungary, Galicia and Venice"
+   },
+   {
+    "name": "United States of America",
+    "map": "United States of America",
+    "ruler": "John Adams",
+    "capital": "Washington (from 1800; previously Philadelphia)",
+    "extent": "From the Atlantic to the Mississippi"
+   },
+   {
+    "name": "Maratha Confederacy",
+    "map": "Maratha Confederacy",
+    "ruler": "Peshwa Baji Rao II",
+    "capital": "Pune",
+    "extent": "Western and central India, with Scindia controlling Delhi and the Mughal emperor"
+   },
+   {
+    "name": "Qajar Iran",
+    "map": "Persia",
+    "ruler": "Fath-Ali Shah",
+    "capital": "Tehran",
+    "extent": "Iran and the southern Caucasus"
+   }
+  ],
+  "events": [
+   {
+    "year": 1789,
+    "text": "The French Revolution begins with the storming of the Bastille"
+   },
+   {
+    "year": 1791,
+    "text": "Enslaved people rise up in Saint-Domingue, beginning the Haitian Revolution"
+   },
+   {
+    "year": 1795,
+    "text": "The Third Partition erases Poland; Britain seizes the Cape Colony"
+   },
+   {
+    "year": 1798,
+    "text": "Napoleon invades Egypt"
+   },
+   {
+    "year": 1799,
+    "text": "Tipu Sultan dies at Seringapatam; Napoleon seizes power in France; Ranjit Singh takes Lahore"
+   },
+   {
+    "year": 1800,
+    "text": "Napoleon wins at Marengo; Washington becomes the US capital; Jefferson elected president"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia: Zaman Shah Durrani",
+    "url": "https://en.wikipedia.org/wiki/Zaman_Shah_Durrani"
+   },
+   {
+    "title": "Wikipedia: Mahmud Shah Durrani",
+    "url": "https://en.wikipedia.org/wiki/Mahmud_Shah_Durrani"
+   },
+   {
+    "title": "Wikipedia: Alexander von Humboldt",
+    "url": "https://en.wikipedia.org/wiki/Alexander_von_Humboldt"
+   },
+   {
+    "title": "Wikipedia: Dingiswayo",
+    "url": "https://en.wikipedia.org/wiki/Dingiswayo"
+   },
+   {
+    "title": "Wikipedia: Xinjiang under Qing rule",
+    "url": "https://en.wikipedia.org/wiki/Xinjiang_under_Qing_rule"
+   },
+   {
+    "title": "Wikipedia: List of shoguns",
+    "url": "https://en.wikipedia.org/wiki/List_of_shoguns"
+   },
+   {
+    "title": "UNESCO General History of Africa, vol. VI: Africa in the Nineteenth Century until the 1880s (ed. J. F. Ade Ajayi, 1989)",
+    "url": "https://archive.org/details/general_history_africa_vi"
+   },
+   {
+    "title": "Wikipedia: 1800 United States presidential election",
+    "url": "https://en.wikipedia.org/wiki/1800_United_States_presidential_election"
+   },
+   {
+    "title": "Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. VII.A, The expansion of British power, 1766-1819",
+    "url": "https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/The_expansion_of_British_power_1766-1819.json&canvasID=0"
+   },
+   {
+    "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. VIII: The Maratha Supremacy (Internet Archive)",
+    "url": "https://archive.org/details/marathasupremacy08bhar"
+   }
+  ]
+ }
+]

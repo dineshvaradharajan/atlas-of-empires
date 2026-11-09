@@ -1,0 +1,298 @@
+[
+ {
+  "file": "content/eras/b-medieval.json",
+  "item": 1279,
+  "field": "regions.southeast-asia",
+  "old": "and Samudera Pasai in Sumatra is the region's first Muslim kingdom",
+  "new": "and Samudera Pasai in Sumatra is about to become one of the region's first Muslim kingdoms",
+  "source": "Coedès 1968, p. 202 (Islam spreading in north Sumatra by 1281; Marco Polo found Perlak Muslim in 1292; Samudra's Islamization shown by the tomb of Sultan Malik al-Saleh, d. 1297)"
+ },
+ {
+  "file": "content/eras/b-medieval.json",
+  "item": 900,
+  "field": "regions.southeast-asia",
+  "old": "under Yasovarman I (r. c. 889–910)",
+  "new": "under Yasovarman I (r. from 889)",
+  "source": "Coedès 1968, pp. 112–15 (accession 889; 'reign ended around 900'; Harshavarman I donating by 912); other lists give c. 910"
+ },
+ {
+  "file": "content/empires/a2-early.json",
+  "item": "khmer-empire",
+  "field": "rulers[1].reign",
+  "old": "889 – c. 910",
+  "new": "889 – c. 900 (some lists c. 910)",
+  "source": "Coedès 1968, pp. 112–15 ('Yasovarman's reign ended around 900')"
+ },
+ {
+  "file": "content/empires/a2-early.json",
+  "item": "khmer-empire",
+  "field": "peak.note",
+  "old": "Under Jayavarman VII, much of mainland South-east Asia",
+  "new": "Under Jayavarman VII, much of mainland South-east Asia; c. 1.0M km² (Taagepera 1997, as tabulated in Wikipedia's List of largest empires, for c. 1290)",
+  "source": "https://en.wikipedia.org/wiki/List_of_largest_empires (Khmer Empire 1.0M km², 1290; Taagepera 1997, Turchin 2006)"
+ },
+ {
+  "file": "content/empires/a2-early.json",
+  "item": "srivijaya",
+  "field": "start",
+  "old": 650,
+  "new": 670,
+  "source": "Coedès 1968, pp. 81–83: first recorded when I-ching stopped at Fo-shih (Palembang) in 671; earliest inscriptions (Kedukan Bukit) 682. No evidence for 650"
+ },
+ {
+  "file": "content/empires/a2-early.json",
+  "item": "srivijaya",
+  "field": "rulers[0].reign",
+  "old": "c. 671 – 702",
+  "new": "fl. 682 – 686",
+  "source": "Coedès 1968, pp. 82–83 (Kedukan Bukit 682, Talang Tuwo 684, Kota Kapur 686); accession and death dates are not attested"
+ },
+ {
+  "file": "content/empires/a2-early.json",
+  "item": "srivijaya",
+  "field": "peak.note",
+  "old": "Sumatra, the Malay Peninsula and the Straits of Malacca and Sunda",
+  "new": "Sumatra, the Malay Peninsula and the Straits of Malacca and Sunda; a loose maritime sphere, so estimates vary widely (Turchin, Adams & Hall 2006 give c. 1.2M km² for c. 1200)",
+  "source": "https://en.wikipedia.org/wiki/List_of_largest_empires (Srivijaya 1.2M km², 1200, Turchin 2006)"
+ },
+ {
+  "file": "content/empires/a2-early.json",
+  "item": "dai-viet",
+  "field": "summary",
+  "old": "From the 16th century the realm was divided between rival lords,",
+  "new": "From the 16th century the realm was divided, first by the Mạc usurpation of 1527 and then between rival lords,",
+  "source": "Hall 1981, ch. on Vietnam and Appendix dynastic lists ('The Mac, 1527-1677'; Mac Dang Dung usurped 1527)"
+ },
+ {
+  "file": "content/empires/a2-early.json",
+  "item": "tui-tonga-empire",
+  "field": "peak.note",
+  "old": "Land area of Tonga and dependent islands; its maritime influence spread far wider",
+  "new": "Rough land area if Tonga, Samoa, ʻUvea, Futuna and Fiji are all counted; Tonga itself is only c. 750 km², and how far Tongan overlordship really reached is debated",
+  "source": "Wikipedia, Geography of Tonga (land 717 km², total 747 km²): https://en.wikipedia.org/wiki/Geography_of_Tonga"
+ },
+ {
+  "file": "content/empires/b-late.json",
+  "item": "kingdom-of-hawaii",
+  "field": "capital",
+  "old": "Lahaina, then Honolulu (from 1845)",
+  "new": "Kamehameha I's courts at Waikīkī, Honolulu and Kailua-Kona; Lahaina (1820–1845), then Honolulu (from 1845)",
+  "source": "Wikipedia, Hawaiian Kingdom (capitals: Waikīkī/Honolulu/Kailua-Kona 1795–1820, Lāhainā 1820–1845, Honolulu 1845–1893): https://en.wikipedia.org/wiki/Hawaiian_Kingdom"
+ },
+ {
+  "file": "content/empires/b-late.json",
+  "item": "kingdom-of-hawaii",
+  "field": "peak.areaKm2",
+  "old": 28300,
+  "new": 16600,
+  "source": "Wikipedia, Hawaii: total 28,311 km² of which land 16,638 km² and water 11,672 km²; 28,300 counts inland and coastal waters: https://en.wikipedia.org/wiki/Hawaii"
+ },
+ {
+  "file": "content/empires/b-late.json",
+  "item": "kingdom-of-hawaii",
+  "field": "peak.note",
+  "old": "All the Hawaiian islands, after Kauai submitted",
+  "new": "All the Hawaiian islands, after Kauai submitted (land area; c. 28,300 km² including waters)",
+  "source": "https://en.wikipedia.org/wiki/Hawaii"
+ },
+ {
+  "file": "content/empires/b-late.json",
+  "item": "indonesia",
+  "field": "rulers[4].note",
+  "old": "First democratically elected president",
+  "new": "First president chosen by a freely elected assembly (the MPR)",
+  "source": "Wikipedia, Abdurrahman Wahid (elected by the MPR 20 Oct 1999, 373–313; 'first indirectly democratically elected president'): https://en.wikipedia.org/wiki/Abdurrahman_Wahid"
+ },
+ {
+  "file": "content/empires/a2-early.json",
+  "item": "khmer-empire",
+  "addSource": {
+   "title": "Coedès, The Indianized States of Southeast Asia (1968), archive.org",
+   "url": "https://archive.org/details/george-coedes-the-indianized-states-of-southeast-asia-east-west-center-press-1968"
+  }
+ },
+ {
+  "file": "content/empires/a2-early.json",
+  "item": "khmer-empire",
+  "addSource": {
+   "title": "D. G. E. Hall, A History of South-East Asia, 4th ed. (1981), archive.org",
+   "url": "https://archive.org/details/a-history-of-south-east-asia-4th-ed"
+  }
+ },
+ {
+  "file": "content/empires/a2-early.json",
+  "item": "srivijaya",
+  "addSource": {
+   "title": "Coedès, The Indianized States of Southeast Asia (1968), archive.org",
+   "url": "https://archive.org/details/george-coedes-the-indianized-states-of-southeast-asia-east-west-center-press-1968"
+  }
+ },
+ {
+  "file": "content/empires/a2-early.json",
+  "item": "majapahit",
+  "addSource": {
+   "title": "Coedès, The Indianized States of Southeast Asia (1968), archive.org",
+   "url": "https://archive.org/details/george-coedes-the-indianized-states-of-southeast-asia-east-west-center-press-1968"
+  }
+ },
+ {
+  "file": "content/empires/a2-early.json",
+  "item": "majapahit",
+  "addSource": {
+   "title": "D. G. E. Hall, A History of South-East Asia, 4th ed. (1981), archive.org",
+   "url": "https://archive.org/details/a-history-of-south-east-asia-4th-ed"
+  }
+ },
+ {
+  "file": "content/empires/a2-early.json",
+  "item": "pagan-kingdom",
+  "addSource": {
+   "title": "Coedès, The Indianized States of Southeast Asia (1968), archive.org",
+   "url": "https://archive.org/details/george-coedes-the-indianized-states-of-southeast-asia-east-west-center-press-1968"
+  }
+ },
+ {
+  "file": "content/empires/a2-early.json",
+  "item": "dai-viet",
+  "addSource": {
+   "title": "D. G. E. Hall, A History of South-East Asia, 4th ed. (1981), archive.org",
+   "url": "https://archive.org/details/a-history-of-south-east-asia-4th-ed"
+  }
+ },
+ {
+  "file": "content/empires/a2-early.json",
+  "item": "ayutthaya-kingdom",
+  "addSource": {
+   "title": "D. G. E. Hall, A History of South-East Asia, 4th ed. (1981), archive.org",
+   "url": "https://archive.org/details/a-history-of-south-east-asia-4th-ed"
+  }
+ },
+ {
+  "file": "content/empires/b-late.json",
+  "item": "toungoo-burma",
+  "addSource": {
+   "title": "D. G. E. Hall, A History of South-East Asia, 4th ed. (1981), archive.org",
+   "url": "https://archive.org/details/a-history-of-south-east-asia-4th-ed"
+  }
+ },
+ {
+  "file": "content/empires/b-late.json",
+  "item": "konbaung-burma",
+  "addSource": {
+   "title": "D. G. E. Hall, A History of South-East Asia, 4th ed. (1981), archive.org",
+   "url": "https://archive.org/details/a-history-of-south-east-asia-4th-ed"
+  }
+ },
+ {
+  "file": "content/empires/b-late.json",
+  "item": "malacca-sultanate",
+  "addSource": {
+   "title": "D. G. E. Hall, A History of South-East Asia, 4th ed. (1981), archive.org",
+   "url": "https://archive.org/details/a-history-of-south-east-asia-4th-ed"
+  }
+ },
+ {
+  "file": "content/empires/a2-early.json",
+  "item": "tui-tonga-empire",
+  "addSource": {
+   "title": "Wikipedia: Geography of Tonga",
+   "url": "https://en.wikipedia.org/wiki/Geography_of_Tonga"
+  }
+ },
+ {
+  "file": "content/empires/b-late.json",
+  "item": "kingdom-of-hawaii",
+  "addSource": {
+   "title": "Wikipedia: Hawaiian Kingdom",
+   "url": "https://en.wikipedia.org/wiki/Hawaiian_Kingdom"
+  }
+ },
+ {
+  "file": "content/empires/b-late.json",
+  "item": "indonesia",
+  "addSource": {
+   "title": "Wikipedia: Abdurrahman Wahid",
+   "url": "https://en.wikipedia.org/wiki/Abdurrahman_Wahid"
+  }
+ },
+ {
+  "file": "content/eras/b-medieval.json",
+  "item": 1279,
+  "addSource": {
+   "title": "Coedès, The Indianized States of Southeast Asia (1968), archive.org",
+   "url": "https://archive.org/details/george-coedes-the-indianized-states-of-southeast-asia-east-west-center-press-1968"
+  }
+ },
+ {
+  "file": "content/eras/b-medieval.json",
+  "item": 900,
+  "addSource": {
+   "title": "Coedès, The Indianized States of Southeast Asia (1968), archive.org",
+   "url": "https://archive.org/details/george-coedes-the-indianized-states-of-southeast-asia-east-west-center-press-1968"
+  }
+ },
+ {
+  "file": "content/eras/b-medieval.json",
+  "item": 1000,
+  "addSource": {
+   "title": "Coedès, The Indianized States of Southeast Asia (1968), archive.org",
+   "url": "https://archive.org/details/george-coedes-the-indianized-states-of-southeast-asia-east-west-center-press-1968"
+  }
+ },
+ {
+  "file": "content/eras/b-medieval.json",
+  "item": 900,
+  "addSource": {
+   "title": "Wilmshurst et al. (2011), High-precision radiocarbon dating shows recent and rapid initial human colonization of East Polynesia, PNAS",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3033267/"
+  }
+ },
+ {
+  "file": "content/eras/b-medieval.json",
+  "item": 1000,
+  "addSource": {
+   "title": "Wilmshurst et al. (2011), High-precision radiocarbon dating shows recent and rapid initial human colonization of East Polynesia, PNAS",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3033267/"
+  }
+ },
+ {
+  "file": "content/eras/b-medieval.json",
+  "item": 1100,
+  "addSource": {
+   "title": "Wilmshurst et al. (2011), High-precision radiocarbon dating shows recent and rapid initial human colonization of East Polynesia, PNAS",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3033267/"
+  }
+ },
+ {
+  "file": "content/eras/b-medieval.json",
+  "item": 1200,
+  "addSource": {
+   "title": "Wilmshurst et al. (2011), High-precision radiocarbon dating shows recent and rapid initial human colonization of East Polynesia, PNAS",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3033267/"
+  }
+ },
+ {
+  "file": "content/eras/b-medieval.json",
+  "item": 1300,
+  "addSource": {
+   "title": "Coedès, The Indianized States of Southeast Asia (1968), archive.org",
+   "url": "https://archive.org/details/george-coedes-the-indianized-states-of-southeast-asia-east-west-center-press-1968"
+  }
+ },
+ {
+  "file": "content/eras/d-modern.json",
+  "item": 1994,
+  "addSource": {
+   "title": "The Conversation: France's final nuclear tests in the South Pacific, 30 years on",
+   "url": "https://theconversation.com/frances-final-nuclear-tests-in-the-south-pacific-30-years-on-256439"
+  }
+ },
+ {
+  "file": "content/eras/d-modern.json",
+  "item": 2000,
+  "addSource": {
+   "title": "Wikipedia: Impeachment of Joseph Estrada",
+   "url": "https://en.wikipedia.org/wiki/Impeachment_of_Joseph_Estrada"
+  }
+ }
+]

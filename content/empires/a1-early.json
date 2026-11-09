@@ -1,0 +1,3284 @@
+[
+ {
+  "id": "ancient-egypt",
+  "name": "Ancient Egypt",
+  "aliases": [
+   "Egypt"
+  ],
+  "clio": [
+   "Early Dynastic Period of Egypt",
+   "Old Kingdom of Egypt",
+   "Lower Egypt",
+   "Upper Egypt",
+   "Middle Kingdom of Egypt",
+   "Fifteenth Dynasty of Egypt",
+   "Sixteenth Dynasty of Egypt",
+   "Seventeenth Dynasty of Egypt",
+   "New Kingdom of Egypt",
+   "Twenty-second Dynasty of Egypt",
+   "Twenty-third Dynasty of Egypt",
+   "Twenty-sixth Dynasty of Egypt",
+   "Thirtieth Dynasty of Egypt",
+   "Ankhwennefer"
+  ],
+  "region": "northern-africa",
+  "start": -3100,
+  "end": -30,
+  "capital": "Memphis; later Thebes, Amarna, Pi-Ramesses and Sais",
+  "peak": {
+   "year": -1450,
+   "areaKm2": 1000000,
+   "note": "Under Thutmose III, from Nubia's Fourth Cataract to the Euphrates; c. 1.0M km² c. 1450 BCE (Taagepera 1978); c. 1.0M km² c. 1450 BCE (Taagepera 1978); Turchin, Adams & Hall (2006) date the same figure c. 1300 BCE"
+  },
+  "rulers": [
+   {
+    "name": "Narmer",
+    "reign": "c. 3100 BCE",
+    "note": "Traditionally credited with uniting Upper and Lower Egypt"
+   },
+   {
+    "name": "Khufu",
+    "reign": "c. 2589 – 2566 BCE",
+    "note": "Built the Great Pyramid of Giza"
+   },
+   {
+    "name": "Hatshepsut",
+    "reign": "c. 1479 – 1458 BCE",
+    "note": "Female pharaoh famed for trade expeditions and temple building"
+   },
+   {
+    "name": "Thutmose III",
+    "reign": "c. 1479 – 1425 BCE",
+    "note": "Warrior pharaoh who carried the empire to its greatest extent"
+   },
+   {
+    "name": "Akhenaten",
+    "reign": "c. 1353 – 1336 BCE",
+    "note": "Tried to replace the old gods with worship of the sun disc Aten"
+   },
+   {
+    "name": "Ramesses II",
+    "reign": "c. 1279 – 1213 BCE",
+    "note": "Fought the Hittites at Kadesh and built Abu Simbel"
+   },
+   {
+    "name": "Cleopatra VII",
+    "reign": "51 – 30 BCE",
+    "note": "Last ruler of independent Egypt (Ptolemaic dynasty)"
+   }
+  ],
+  "summary": "Around 3100 BCE the farming chiefdoms along the Nile were united into a single kingdom, traditionally by Narmer. The river's yearly flood fed a dense population ruled by a god-king, the pharaoh, through scribes, priests and provincial governors. Historians divide its long history into the Old Kingdom, when the great pyramids were built, the Middle Kingdom, and the New Kingdom, when warrior pharaohs built an empire stretching from Nubia into Syria. Periods of division and foreign rule, by Libyans, Kushites, Assyrians and Persians, alternated with revivals. After Alexander the Great's conquest in 332 BCE Egypt was ruled by the Greek Ptolemies, and its independence ended when Cleopatra VII died and Rome annexed the country in 30 BCE.",
+  "legacy": "Egypt gave the world monumental stone architecture, one of the first writing systems and a 365-day calendar, and its pyramids and mummies still fascinate people everywhere.",
+  "sources": [
+   {
+    "title": "Britannica: ancient Egypt",
+    "url": "https://www.britannica.com/place/ancient-Egypt"
+   },
+   {
+    "title": "Wikipedia: Ancient Egypt",
+    "url": "https://en.wikipedia.org/wiki/Ancient_Egypt"
+   },
+   {
+    "title": "Wikipedia: Hatshepsut",
+    "url": "https://en.wikipedia.org/wiki/Hatshepsut"
+   },
+   {
+    "title": "Wikipedia: Ramesses II",
+    "url": "https://en.wikipedia.org/wiki/Ramesses_II"
+   },
+   {
+    "title": "Wikipedia: List of largest empires (Taagepera 1978/1979/1997 and Turchin et al. 2006 figures)",
+    "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+   },
+   {
+    "title": "Turchin, Adams & Hall (2006), East-West Orientation of Historical Empires, Journal of World-Systems Research 12(2), Table 1",
+    "url": "https://jwsr.pitt.edu/ojs/jwsr/article/download/369/381"
+   },
+   {
+    "title": "Cambridge Ancient History, 3rd ed., vol. I part 2 (1971)",
+    "url": "https://archive.org/details/the-cambridge-ancient-history-vol.-1-part-2"
+   },
+   {
+    "title": "Wikipedia: Nectanebo II",
+    "url": "https://en.wikipedia.org/wiki/Nectanebo_II"
+   }
+  ]
+ },
+ {
+  "id": "sumer",
+  "name": "Sumerian city-states",
+  "aliases": [
+   "Ur"
+  ],
+  "clio": [
+   "Sumerian City-States"
+  ],
+  "region": "middle-east-south-asia",
+  "start": -3500,
+  "end": -2004,
+  "capital": "No single capital; leading cities included Uruk, Ur, Lagash, Kish and Nippur",
+  "peak": {
+   "year": -2050,
+   "areaKm2": 100000,
+   "note": "Third Dynasty of Ur under Shulgi, ruling Mesopotamia and parts of western Iran; Taagepera (1978) puts the Neo-Sumerian state at only c. 0.1M km², so 250,000 km² assumes the tributary periphery; c. 0.1M km² (Taagepera 1978)"
+  },
+  "rulers": [
+   {
+    "name": "Gilgamesh of Uruk",
+    "reign": "c. 2700 BCE",
+    "note": "Semi-legendary king, hero of the oldest epic poems"
+   },
+   {
+    "name": "Eannatum of Lagash",
+    "reign": "c. 2450 BCE",
+    "note": "Conqueror commemorated on the Stele of the Vultures"
+   },
+   {
+    "name": "Lugalzagesi of Uruk",
+    "reign": "c. 2350 BCE",
+    "note": "United much of Sumer before losing it to Sargon of Akkad"
+   },
+   {
+    "name": "Gudea of Lagash",
+    "reign": "c. 2140 BCE",
+    "note": "Temple-building ruler known from many statues"
+   },
+   {
+    "name": "Ur-Nammu",
+    "reign": "c. 2112 – 2095 BCE",
+    "note": "Founded the Third Dynasty of Ur and issued the oldest surviving law code"
+   },
+   {
+    "name": "Shulgi",
+    "reign": "c. 2094 – 2047 BCE",
+    "note": "Built a centralised bureaucratic state"
+   }
+  ],
+  "summary": "Sumer, in the marshy south of Mesopotamia (modern Iraq), was home to the world's first cities. Between about 3500 and 3000 BCE towns such as Uruk grew into cities of tens of thousands, organised around temples that managed irrigation, grain and trade. To keep records, Sumerian scribes invented cuneiform writing on clay tablets around 3200 BCE. Sumer was never one country: a dozen rival city-states, each with its own patron god and king, fought over water and fields. Sargon of Akkad conquered them around 2334 BCE, but after Akkad's fall the Third Dynasty of Ur reunited the region and built a centralised state with a vast bureaucracy. Ur fell to Elamite invaders in 2004 BCE, and Sumerian gradually died out as a spoken language.",
+  "legacy": "Sumer pioneered writing, early wheeled vehicles, the base-sixty counting behind our hours and minutes, and the first stories of Gilgamesh.",
+  "sources": [
+   {
+    "title": "Britannica: Sumer",
+    "url": "https://www.britannica.com/place/Sumer"
+   },
+   {
+    "title": "Wikipedia: Sumer",
+    "url": "https://en.wikipedia.org/wiki/Sumer"
+   },
+   {
+    "title": "Wikipedia: Third Dynasty of Ur",
+    "url": "https://en.wikipedia.org/wiki/Third_Dynasty_of_Ur"
+   },
+   {
+    "title": "Wikipedia: Shulgi",
+    "url": "https://en.wikipedia.org/wiki/Shulgi"
+   },
+   {
+    "title": "Wikipedia: List of largest empires (Taagepera 1978/1979/1997 and Turchin et al. 2006 figures)",
+    "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+   }
+  ]
+ },
+ {
+  "id": "akkadian-empire",
+  "name": "Akkadian Empire",
+  "aliases": [],
+  "clio": [
+   "Akkadian Empire"
+  ],
+  "region": "middle-east-south-asia",
+  "start": -2334,
+  "end": -2154,
+  "capital": "Akkad (Agade), whose site has not yet been found",
+  "peak": {
+   "year": -2250,
+   "areaKm2": 800000,
+   "note": "Under Naram-Sin, from the Persian Gulf to the Mediterranean and the Anatolian foothills; c. 0.8M km² (Taagepera 1978), though directly ruled land was smaller; c. 0.8M km² c. 2250 BCE (Taagepera 1978)"
+  },
+  "rulers": [
+   {
+    "name": "Sargon of Akkad",
+    "reign": "c. 2334 – 2279 BCE",
+    "note": "Founder; conquered the Sumerian city-states"
+   },
+   {
+    "name": "Rimush",
+    "reign": "c. 2278 – 2270 BCE",
+    "note": "Crushed widespread revolts"
+   },
+   {
+    "name": "Manishtushu",
+    "reign": "c. 2269 – 2255 BCE",
+    "note": "Campaigned across the Persian Gulf"
+   },
+   {
+    "name": "Naram-Sin",
+    "reign": "c. 2254 – 2218 BCE",
+    "note": "Called himself king of the four quarters and a god"
+   },
+   {
+    "name": "Shar-kali-sharri",
+    "reign": "c. 2217 – 2193 BCE",
+    "note": "Last strong king before the collapse"
+   }
+  ],
+  "summary": "Often called the world's first empire, Akkad was founded by Sargon, a man of humble origins who rose to serve the king of Kish and then seized power around 2334 BCE. Sargon conquered the quarrelling Sumerian city-states and campaigned as far as Syria and western Iran, uniting speakers of Sumerian and the Semitic Akkadian language under one ruler. He installed loyal governors, standardised weights and measures, and made Akkadian a language of administration. His grandson Naram-Sin pushed the borders further and was the first Mesopotamian king to call himself a god. Revolts, pressure from the Gutian mountain peoples and possibly a severe drought broke the empire apart, and by about 2154 BCE it had collapsed.",
+  "legacy": "Akkad set the model of a multi-ethnic empire run from one capital, and Akkadian became the diplomatic language of the Near East for over a thousand years.",
+  "sources": [
+   {
+    "title": "Britannica: Akkad",
+    "url": "https://www.britannica.com/place/Akkad"
+   },
+   {
+    "title": "Wikipedia: Akkadian Empire",
+    "url": "https://en.wikipedia.org/wiki/Akkadian_Empire"
+   },
+   {
+    "title": "Wikipedia: Naram-Sin of Akkad",
+    "url": "https://en.wikipedia.org/wiki/Naram-Sin_of_Akkad"
+   },
+   {
+    "title": "Wikipedia: List of largest empires (Taagepera 1978/1979/1997 and Turchin et al. 2006 figures)",
+    "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+   }
+  ]
+ },
+ {
+  "id": "babylonia",
+  "name": "Babylonia",
+  "aliases": [
+   "Babylonia"
+  ],
+  "clio": [
+   "Babylonia",
+   "Neo-Babylonian Empire"
+  ],
+  "region": "middle-east-south-asia",
+  "start": -1894,
+  "end": -539,
+  "capital": "Babylon",
+  "peak": {
+   "year": -562,
+   "areaKm2": 500000,
+   "note": "Neo-Babylonian Empire under Nebuchadnezzar II, from the Gulf to the borders of Egypt; c. 0.5M km² (Taagepera 1978); c. 0.5M km² c. 562 BCE (Taagepera 1978)"
+  },
+  "rulers": [
+   {
+    "name": "Hammurabi",
+    "reign": "c. 1792 – 1750 BCE",
+    "note": "Unified southern Mesopotamia and issued his famous law code"
+   },
+   {
+    "name": "Nebuchadnezzar I",
+    "reign": "c. 1121 – 1100 BCE",
+    "note": "Defeated Elam and recovered the statue of Marduk"
+   },
+   {
+    "name": "Nabopolassar",
+    "reign": "626 – 605 BCE",
+    "note": "Freed Babylon from Assyria and helped destroy it"
+   },
+   {
+    "name": "Nebuchadnezzar II",
+    "reign": "605 – 562 BCE",
+    "note": "Built the Ishtar Gate and captured Jerusalem"
+   },
+   {
+    "name": "Nabonidus",
+    "reign": "556 – 539 BCE",
+    "note": "Last king, defeated by Cyrus the Great"
+   }
+  ],
+  "summary": "Babylon was a small town until an Amorite dynasty made it a capital around 1894 BCE. Its sixth king, Hammurabi, conquered all of southern Mesopotamia and is remembered for his law code carved on a stone pillar. Over the next thousand years Babylon was ruled by Kassites, native kings and, for long stretches, the Assyrians, yet it remained the region's religious and cultural heart, famous for its scholars and astronomers. In 626 BCE Nabopolassar, traditionally called a Chaldean, threw off Assyrian rule and, allied with the Medes, destroyed Assyria. His son Nebuchadnezzar II built a Neo-Babylonian empire, rebuilt Babylon with the Ishtar Gate and captured Jerusalem in 587 BCE. Cyrus the Great of Persia took the city without a fight in 539 BCE.",
+  "legacy": "Babylonian law, mathematics and astronomy, including the division of the circle into 360 degrees, shaped later Persian, Greek and Jewish thought.",
+  "sources": [
+   {
+    "title": "Britannica: Babylonia",
+    "url": "https://www.britannica.com/place/Babylonia"
+   },
+   {
+    "title": "Britannica: Nebuchadrezzar I",
+    "url": "https://www.britannica.com/biography/Nebuchadrezzar-I"
+   },
+   {
+    "title": "Wikipedia: Babylonia",
+    "url": "https://en.wikipedia.org/wiki/Babylonia"
+   },
+   {
+    "title": "Wikipedia: Neo-Babylonian Empire",
+    "url": "https://en.wikipedia.org/wiki/Neo-Babylonian_Empire"
+   },
+   {
+    "title": "Wikipedia: Nebuchadnezzar I",
+    "url": "https://en.wikipedia.org/wiki/Nebuchadnezzar_I"
+   },
+   {
+    "title": "Wikipedia: List of largest empires (Taagepera 1978/1979/1997 and Turchin et al. 2006 figures)",
+    "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+   },
+   {
+    "title": "Cambridge Ancient History, 2nd ed., vol. III part 2 (1991)",
+    "url": "https://archive.org/details/the-cambridge-ancient-history-vol.-3-part-2"
+   },
+   {
+    "title": "Wikipedia: Nabopolassar",
+    "url": "https://en.wikipedia.org/wiki/Nabopolassar"
+   }
+  ]
+ },
+ {
+  "id": "assyria",
+  "name": "Assyria",
+  "aliases": [
+   "Assyria"
+  ],
+  "clio": [
+   "Assyria",
+   "Neo-Assyrian Empire",
+   "Assyrian Egypt"
+  ],
+  "region": "middle-east-south-asia",
+  "start": -2025,
+  "end": -609,
+  "capital": "Assur; later Nimrud, Dur-Sharrukin and Nineveh",
+  "peak": {
+   "year": -670,
+   "areaKm2": 1400000,
+   "note": "Under Esarhaddon, from Egypt to western Iran; c. 1.4M km² c. 670 BCE (Taagepera 1978); c. 1.4M km² c. 670 BCE (Taagepera 1978; Turchin, Adams & Hall 2006)"
+  },
+  "rulers": [
+   {
+    "name": "Shamshi-Adad I",
+    "reign": "c. 1808 – 1776 BCE",
+    "note": "Built the first large Assyrian kingdom"
+   },
+   {
+    "name": "Ashur-uballit I",
+    "reign": "c. 1365 – 1330 BCE",
+    "note": "Made Assyria a great power of the Late Bronze Age"
+   },
+   {
+    "name": "Tiglath-Pileser III",
+    "reign": "745 – 727 BCE",
+    "note": "Reformed the army and provinces, launching the imperial age"
+   },
+   {
+    "name": "Sennacherib",
+    "reign": "705 – 681 BCE",
+    "note": "Made Nineveh a magnificent capital"
+   },
+   {
+    "name": "Esarhaddon",
+    "reign": "681 – 669 BCE",
+    "note": "Conquered Egypt"
+   },
+   {
+    "name": "Ashurbanipal",
+    "reign": "669 – c. 631 BCE",
+    "note": "Last great king; built the library of Nineveh"
+   }
+  ],
+  "summary": "Assyria grew from the trading city of Assur on the upper Tigris, whose merchants ran caravans into Anatolia soon after 2000 BCE. After centuries as a regional kingdom it became a great power, and from the 9th century BCE its kings built the largest empire the world had yet seen. The Neo-Assyrian state had a professional standing army, iron weapons, siege engines and a road and messenger system, and it ruled through provinces under appointed governors. Rebellious peoples were deported en masse to break resistance. At its height Assyria controlled Mesopotamia, the Levant and, briefly, Egypt. Civil war after Ashurbanipal weakened it, and a coalition of Babylonians and Medes sacked Nineveh in 612 BCE; the last Assyrian army was defeated in 609 BCE.",
+  "legacy": "Assyria invented much of the machinery of imperial rule later copied by Persia, and Ashurbanipal's library preserved thousands of cuneiform texts, including the Epic of Gilgamesh.",
+  "sources": [
+   {
+    "title": "Britannica: Assyria",
+    "url": "https://www.britannica.com/place/Assyria"
+   },
+   {
+    "title": "Wikipedia: Assyria",
+    "url": "https://en.wikipedia.org/wiki/Assyria"
+   },
+   {
+    "title": "Wikipedia: Neo-Assyrian Empire",
+    "url": "https://en.wikipedia.org/wiki/Neo-Assyrian_Empire"
+   },
+   {
+    "title": "Turchin, Adams & Hall (2006), East-West Orientation of Historical Empires, Journal of World-Systems Research 12(2), Table 1",
+    "url": "https://jwsr.pitt.edu/ojs/jwsr/article/download/369/381"
+   },
+   {
+    "title": "Wikipedia: List of largest empires (Taagepera 1978/1979 figures)",
+    "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+   },
+   {
+    "title": "Cambridge Ancient History, 2nd ed., vol. III part 2 (1991)",
+    "url": "https://archive.org/details/the-cambridge-ancient-history-vol.-3-part-2"
+   }
+  ]
+ },
+ {
+  "id": "hittite-empire",
+  "name": "Hittite Empire",
+  "aliases": [
+   "Hittites"
+  ],
+  "clio": [
+   "Hittites",
+   "Neo-Hittite states"
+  ],
+  "region": "middle-east-south-asia",
+  "start": -1650,
+  "end": -1180,
+  "capital": "Hattusa",
+  "peak": {
+   "year": -1250,
+   "areaKm2": 450000,
+   "note": "Under Suppiluliuma I and his successors, from central Anatolia to Syria; c. 0.45M km² c. 1250-1220 BCE (Taagepera 1978); c. 0.45M km² c. 1250 – 1220 BCE (Taagepera 1978)"
+  },
+  "rulers": [
+   {
+    "name": "Hattusili I",
+    "reign": "c. 1650 – 1620 BCE",
+    "note": "Founder of the Old Kingdom at Hattusa"
+   },
+   {
+    "name": "Mursili I",
+    "reign": "c. 1620 – 1590 BCE",
+    "note": "Sacked Babylon in 1595 BCE"
+   },
+   {
+    "name": "Suppiluliuma I",
+    "reign": "c. 1350 – 1322 BCE",
+    "note": "Destroyed the Mitanni and took Syria"
+   },
+   {
+    "name": "Muwatalli II",
+    "reign": "c. 1295 – 1272 BCE",
+    "note": "Fought Ramesses II at Kadesh"
+   },
+   {
+    "name": "Hattusili III",
+    "reign": "c. 1267 – 1237 BCE",
+    "note": "Signed the peace treaty with Egypt"
+   },
+   {
+    "name": "Suppiluliuma II",
+    "reign": "c. 1207 – 1178 BCE",
+    "note": "Last known Hittite king"
+   }
+  ],
+  "summary": "The Hittites, speakers of the oldest recorded Indo-European language, built a kingdom in central Anatolia (modern Turkey) around 1650 BCE with its capital at Hattusa. An early king, Mursili I, raided as far as Babylon and sacked it in 1595 BCE. After a period of weakness, Suppiluliuma I made the Hittites a great power in the 14th century BCE, defeating the Mitanni and taking control of Syria, where he set up his sons as vassal kings. The Hittites were famed for their chariots and diplomacy, and after the Battle of Kadesh against Egypt they signed one of the earliest known peace treaties. Around 1180 BCE, amid the wider Bronze Age collapse, Hattusa was abandoned and the empire broke into small Syro-Hittite kingdoms.",
+  "legacy": "The Hittite-Egyptian treaty is a landmark of international diplomacy, and the Hittite archives revealed a lost civilisation known before only from brief mentions in the Bible and in Egyptian records.",
+  "sources": [
+   {
+    "title": "Britannica: Hittite",
+    "url": "https://www.britannica.com/topic/Hittite"
+   },
+   {
+    "title": "Wikipedia: Hittites",
+    "url": "https://en.wikipedia.org/wiki/Hittites"
+   },
+   {
+    "title": "Wikipedia: Šuppiluliuma II",
+    "url": "https://en.wikipedia.org/wiki/%C5%A0uppiluliuma_II"
+   },
+   {
+    "title": "Wikipedia: List of largest empires (Taagepera 1978/1979/1997 and Turchin et al. 2006 figures)",
+    "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+   }
+  ]
+ },
+ {
+  "id": "indus-valley-civilisation",
+  "name": "Indus Valley Civilisation",
+  "aliases": [
+   "Indus valley civilization"
+  ],
+  "clio": [
+   "Indus Valley Civilization"
+  ],
+  "region": "middle-east-south-asia",
+  "start": -3300,
+  "end": -1300,
+  "capital": "No known capital; major cities included Harappa, Mohenjo-daro, Rakhigarhi, Ganweriwala and Dholavira",
+  "peak": {
+   "year": -2300,
+   "areaKm2": 1000000,
+   "note": "Mature Harappan phase, across modern Pakistan and north-west India; the cultural zone is put at c. 1.2M km², while Taagepera (1978) estimated c. 0.3M km² c. 1800 BCE for any political unit"
+  },
+  "rulers": [
+   {
+    "name": "No rulers known",
+    "reign": "c. 2600 – 1900 BCE",
+    "note": "The Indus script is undeciphered and no royal names, palaces or tombs have been found"
+   }
+  ],
+  "summary": "The Indus or Harappan civilisation flourished along the Indus river and its neighbours in what is now Pakistan and north-west India. Farming villages grew into planned cities after about 2600 BCE, the Mature Harappan phase. Mohenjo-daro and Harappa were laid out on grids, with baked-brick houses, covered drains, possible granaries and, at Mohenjo-daro, a Great Bath, and standard weights and seals were used across an area larger than Egypt and Mesopotamia combined. Indus merchants traded with Mesopotamia by sea. Strikingly, no palaces, royal tombs or images of kings have been found, and the Indus script remains undeciphered, so we do not know how the cities were governed. After about 1900 BCE the cities were gradually abandoned, probably because of climate change and shifting rivers, and people dispersed into smaller villages.",
+  "legacy": "The Indus cities set early standards in urban planning and sanitation, and many scholars trace continuities between Harappan crafts and later South Asian culture.",
+  "sources": [
+   {
+    "title": "Britannica: Indus civilization",
+    "url": "https://www.britannica.com/topic/Indus-civilization"
+   },
+   {
+    "title": "Wikipedia: Indus Valley Civilisation",
+    "url": "https://en.wikipedia.org/wiki/Indus_Valley_Civilisation"
+   },
+   {
+    "title": "Wikipedia: Sumer (Indus area comparison)",
+    "url": "https://en.wikipedia.org/wiki/Sumer"
+   },
+   {
+    "title": "Wikipedia: List of largest empires (Taagepera 1978/1979/1997 and Turchin et al. 2006 figures)",
+    "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+   },
+   {
+    "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. I: The Vedic Age (Internet Archive)",
+    "url": "https://archive.org/details/vedicage00bhar"
+   }
+  ]
+ },
+ {
+  "id": "minoan-civilisation",
+  "name": "Minoan civilisation",
+  "aliases": [
+   "Minoan"
+  ],
+  "clio": [
+   "Minoan civilization"
+  ],
+  "region": "europe",
+  "start": -3100,
+  "end": -1100,
+  "capital": "Knossos (leading palace on Crete)",
+  "peak": {
+   "year": -1600,
+   "areaKm2": 15000,
+   "note": "Neopalatial period: Crete plus Aegean islands such as Thera"
+  },
+  "rulers": [
+   {
+    "name": "Rulers of Knossos (names unknown)",
+    "reign": "c. 1900 – 1450 BCE",
+    "note": "Linear A is undeciphered; the name Minos comes from later Greek legend"
+   },
+   {
+    "name": "Mycenaean Greek rulers at Knossos",
+    "reign": "c. 1450 – 1375 BCE",
+    "note": "Greek-speaking overlords who kept records in Linear B"
+   }
+  ],
+  "summary": "The Minoans, named by the archaeologist Arthur Evans after the legendary King Minos, created Europe's first advanced civilisation on the island of Crete. From about 1900 BCE they built large palace complexes at Knossos, Phaistos, Malia and Zakros, which acted as centres for religion, storage and craft production. Minoan ships traded across the eastern Mediterranean with Egypt and the Levant, and their colourful frescoes show bull-leaping, processions and sea life. They wrote in a script called Linear A, which is still undeciphered, so their rulers' names and language are unknown. After widespread destruction around 1450 BCE, possibly linked to earthquakes and the aftermath of the Thera eruption, Crete came under Mycenaean Greek control, and Minoan culture faded by about 1100 BCE.",
+  "legacy": "Minoan art, architecture and seafaring strongly influenced Mycenaean Greece and inspired the Greek myths of the Minotaur and the labyrinth.",
+  "sources": [
+   {
+    "title": "Britannica: Minoan civilization",
+    "url": "https://www.britannica.com/topic/Minoan-civilization"
+   },
+   {
+    "title": "Wikipedia: Minoan civilization",
+    "url": "https://en.wikipedia.org/wiki/Minoan_civilization"
+   }
+  ]
+ },
+ {
+  "id": "greek-city-states",
+  "name": "Greek city-states",
+  "aliases": [
+   "Greek city-states",
+   "Greek colonies"
+  ],
+  "clio": [
+   "Greek City-States",
+   "Greek Colonies"
+  ],
+  "region": "europe",
+  "start": -800,
+  "end": -146,
+  "capital": "No single capital; leading poleis included Athens, Sparta, Corinth, Thebes and Syracuse",
+  "peak": {
+   "year": -500,
+   "areaKm2": 250000,
+   "note": "Mainland Greece, the Aegean and colonies from Spain to the Black Sea"
+  },
+  "rulers": [
+   {
+    "name": "Solon of Athens",
+    "reign": "archon 594 BCE",
+    "note": "Lawgiver who reformed Athenian society"
+   },
+   {
+    "name": "Cleisthenes of Athens",
+    "reign": "c. 508 BCE",
+    "note": "Founded Athenian democracy"
+   },
+   {
+    "name": "Leonidas I of Sparta",
+    "reign": "c. 489 – 480 BCE",
+    "note": "Died holding the pass at Thermopylae"
+   },
+   {
+    "name": "Pericles of Athens",
+    "reign": "c. 461 – 429 BCE",
+    "note": "Leading statesman of Athens' golden age"
+   },
+   {
+    "name": "Epaminondas of Thebes",
+    "reign": "d. 362 BCE",
+    "note": "Broke Spartan power at Leuctra in 371 BCE"
+   }
+  ],
+  "summary": "After the collapse of the Mycenaean palaces, Greek communities slowly revived, and by about 800 BCE hundreds of independent city-states, or poleis, had emerged. Each polis was a city with its surrounding farmland, governed by kings, aristocrats, tyrants or citizen assemblies. Greeks founded colonies around the Mediterranean and Black Sea, from Marseille to Crimea. Athens developed the first democracy, while Sparta became a militarised state. Briefly united, the Greeks defeated the invading Persians at Marathon, Salamis and Plataea between 490 and 479 BCE. Rivalry between Athens and Sparta then led to the long Peloponnesian War. Weakened by constant conflict, the city-states fell under Macedonian domination after 338 BCE, and Rome took control of mainland Greece in 146 BCE.",
+  "legacy": "Greek philosophy, democracy, drama, history writing, mathematics and the Olympic Games lie at the foundations of Western civilisation.",
+  "sources": [
+   {
+    "title": "Britannica: polis",
+    "url": "https://www.britannica.com/topic/polis"
+   },
+   {
+    "title": "Wikipedia: Polis",
+    "url": "https://en.wikipedia.org/wiki/Polis"
+   },
+   {
+    "title": "Wikipedia: Ancient Greece",
+    "url": "https://en.wikipedia.org/wiki/Ancient_Greece"
+   },
+   {
+    "title": "Wikipedia: Leonidas I",
+    "url": "https://en.wikipedia.org/wiki/Leonidas_I"
+   }
+  ]
+ },
+ {
+  "id": "macedonian-empire",
+  "name": "Kingdom of Macedon and Empire of Alexander",
+  "aliases": [
+   "Empire of Alexander",
+   "Kingdom of Kassander",
+   "Macedon and Hellenic League"
+  ],
+  "clio": [
+   "(Macedonian Empire)",
+   "Macedonian Empire",
+   "Antigonid Dynasty",
+   "Antigonid Macedonia"
+  ],
+  "region": "europe",
+  "start": -700,
+  "end": -168,
+  "capital": "Aigai, then Pella; Alexander's court moved with his army and he intended Babylon as capital",
+  "peak": {
+   "year": -323,
+   "areaKm2": 5200000,
+   "note": "At Alexander's death, from Greece and Egypt to the Indus; c. 5.2M km² (Taagepera 1979; Turchin, Adams & Hall 2006)"
+  },
+  "rulers": [
+   {
+    "name": "Philip II",
+    "reign": "359 – 336 BCE",
+    "note": "Built the Macedonian army and mastered Greece"
+   },
+   {
+    "name": "Alexander III the Great",
+    "reign": "336 – 323 BCE",
+    "note": "Conquered the Persian Empire"
+   },
+   {
+    "name": "Perdiccas (regent)",
+    "reign": "323 – 321 BCE",
+    "note": "Regent for Alexander's heirs after his death"
+   },
+   {
+    "name": "Cassander",
+    "reign": "c. 305 – 297 BCE",
+    "note": "Successor general who ruled Macedon and Greece"
+   },
+   {
+    "name": "Antigonus II Gonatas",
+    "reign": "277 – 239 BCE",
+    "note": "Established the Antigonid dynasty in Macedon"
+   },
+   {
+    "name": "Perseus",
+    "reign": "179 – 168 BCE",
+    "note": "Last king, defeated by Rome at Pydna"
+   }
+  ],
+  "summary": "Macedon was a kingdom in northern Greece that emerged in the 7th century BCE (later legend dated its founding to about 808 BCE); it was seen by many southern Greeks as half-barbarian. Philip II transformed it after 359 BCE, creating a professional army built around the long-speared phalanx and heavy cavalry, and in 338 BCE he defeated Athens and Thebes, making Macedon master of Greece. His son Alexander the Great invaded the Persian Empire in 334 BCE, won at the Granicus, Issus and Gaugamela, took Egypt, Babylon and Persepolis, and marched to the Indus. When he died in Babylon in 323 BCE, aged 32, he left no adult heir; his generals fought over the empire and carved it into rival kingdoms. Macedon itself, ruled from 277 BCE by the Antigonids, was conquered by Rome after the Battle of Pydna in 168 BCE.",
+  "legacy": "Alexander's conquests spread Greek language and culture from Egypt to Afghanistan, opening the Hellenistic age.",
+  "sources": [
+   {
+    "title": "Britannica: Macedonia (ancient kingdom)",
+    "url": "https://www.britannica.com/place/Macedonia-ancient-kingdom-Europe"
+   },
+   {
+    "title": "Wikipedia: Macedonia (ancient kingdom)",
+    "url": "https://en.wikipedia.org/wiki/Macedonia_(ancient_kingdom)"
+   },
+   {
+    "title": "Wikipedia: Perdiccas",
+    "url": "https://en.wikipedia.org/wiki/Perdiccas"
+   },
+   {
+    "title": "Turchin, Adams & Hall (2006), East-West Orientation of Historical Empires, Journal of World-Systems Research 12(2), Table 1",
+    "url": "https://jwsr.pitt.edu/ojs/jwsr/article/download/369/381"
+   },
+   {
+    "title": "Wikipedia: List of largest empires (Taagepera/Turchin figures)",
+    "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+   }
+  ]
+ },
+ {
+  "id": "seleucid-empire",
+  "name": "Seleucid Empire",
+  "aliases": [
+   "Seleucid Kingdom"
+  ],
+  "clio": [
+   "Seleucid Empire",
+   "(Allegiance of Seleucid Empire to Roman Republic)"
+  ],
+  "region": "middle-east-south-asia",
+  "start": -312,
+  "end": -64,
+  "capital": "Seleucia on the Tigris, then Antioch",
+  "peak": {
+   "year": -301,
+   "areaKm2": 3900000,
+   "note": "Under Seleucus I, from Anatolia to the borders of India; c. 3.9M km² (Taagepera 1979; Turchin, Adams & Hall 2006)"
+  },
+  "rulers": [
+   {
+    "name": "Seleucus I Nicator",
+    "reign": "305 – 281 BCE",
+    "note": "Founder; seized Babylon in 312 BCE"
+   },
+   {
+    "name": "Antiochus I Soter",
+    "reign": "281 – 261 BCE",
+    "note": "Defended the empire against Celtic invaders"
+   },
+   {
+    "name": "Antiochus III the Great",
+    "reign": "223 – 187 BCE",
+    "note": "Restored the empire but was defeated by Rome"
+   },
+   {
+    "name": "Antiochus IV Epiphanes",
+    "reign": "175 – 164 BCE",
+    "note": "His policies in Judea provoked the Maccabean revolt"
+   },
+   {
+    "name": "Antiochus XIII Asiaticus",
+    "reign": "69 – 64 BCE",
+    "note": "Deposed when Pompey made Syria a Roman province"
+   }
+  ],
+  "summary": "The Seleucid Empire was the largest of the kingdoms formed from Alexander's conquests. Seleucus, one of Alexander's officers, seized Babylon in 312 BCE, the date from which the dynasty counted its years, and won most of the Asian provinces at the Battle of Ipsus in 301 BCE. The Seleucids ruled a vast mix of peoples through Greek-style cities, governors and a Macedonian army, founding new towns such as Antioch. The empire was too large to hold: India was ceded to Chandragupta Maurya, Bactria broke away, and the Parthians took Iran. Antiochus III briefly restored its power but was defeated by Rome in 190 BCE. Later kings lost Mesopotamia to Parthia and quarrelled among themselves until Pompey annexed the remnant in Syria for Rome in 64 BCE.",
+  "legacy": "The Seleucids spread Greek cities and culture across western Asia, and their attempt to Hellenise Judea provoked the Maccabean revolt remembered at Hanukkah.",
+  "sources": [
+   {
+    "title": "Britannica: Seleucid Empire",
+    "url": "https://www.britannica.com/place/Seleucid-Empire"
+   },
+   {
+    "title": "Britannica: Antiochus III the Great",
+    "url": "https://www.britannica.com/biography/Antiochus-III-the-Great"
+   },
+   {
+    "title": "Wikipedia: Seleucid Empire",
+    "url": "https://en.wikipedia.org/wiki/Seleucid_Empire"
+   },
+   {
+    "title": "Turchin, Adams & Hall (2006), East-West Orientation of Historical Empires, Journal of World-Systems Research 12(2), Table 1",
+    "url": "https://jwsr.pitt.edu/ojs/jwsr/article/download/369/381"
+   },
+   {
+    "title": "Wikipedia: List of largest empires (Taagepera/Turchin figures)",
+    "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+   }
+  ]
+ },
+ {
+  "id": "ptolemaic-kingdom",
+  "name": "Ptolemaic Kingdom",
+  "aliases": [
+   "Ptolemaic Kingdom"
+  ],
+  "clio": [
+   "Ptolemaic Kingdom"
+  ],
+  "region": "northern-africa",
+  "start": -305,
+  "end": -30,
+  "capital": "Alexandria",
+  "peak": {
+   "year": -240,
+   "areaKm2": 1000000,
+   "note": "Under Ptolemy III: Egypt, Cyrenaica, Cyprus, the southern Levant and Aegean outposts; c. 1.0M km² (Taagepera 1979); c. 1.0M km² (Taagepera 1979, for c. 301 BCE); c. 1.0M km² (Taagepera 1979, dated c. 301 BCE)"
+  },
+  "rulers": [
+   {
+    "name": "Ptolemy I Soter",
+    "reign": "305 – 282 BCE",
+    "note": "Alexander's general and founder of the dynasty"
+   },
+   {
+    "name": "Ptolemy II Philadelphus",
+    "reign": "284 – 246 BCE",
+    "note": "Expanded the Library and Museum of Alexandria"
+   },
+   {
+    "name": "Ptolemy III Euergetes",
+    "reign": "246 – 222 BCE",
+    "note": "Led the kingdom to its greatest extent"
+   },
+   {
+    "name": "Ptolemy V Epiphanes",
+    "reign": "204 – 180 BCE",
+    "note": "His decree is inscribed on the Rosetta Stone"
+   },
+   {
+    "name": "Cleopatra VII",
+    "reign": "51 – 30 BCE",
+    "note": "Last Ptolemaic ruler, ally of Caesar and Mark Antony"
+   }
+  ],
+  "summary": "When Alexander's empire broke up, his general Ptolemy took Egypt, declared himself king in 305 BCE and founded the last dynasty of pharaohs. The Ptolemies were Macedonian Greeks who ruled from Alexandria, a new Greek city on the coast, while presenting themselves to Egyptians as traditional pharaohs and building temples to Egyptian gods. Egypt's grain made them rich, and they fought repeated wars with the Seleucids over Syria. Alexandria became the intellectual capital of the Greek world, with its Great Library, Museum and Lighthouse. From the 2nd century BCE dynastic feuds and revolts weakened the kingdom, which survived increasingly as a Roman client. Cleopatra VII allied with Julius Caesar and Mark Antony, but after Antony's defeat at Actium she took her own life and Rome annexed Egypt in 30 BCE.",
+  "legacy": "Ptolemaic Alexandria preserved and advanced Greek science and scholarship, and the Rosetta Stone, a Ptolemaic decree, later unlocked Egyptian hieroglyphs.",
+  "sources": [
+   {
+    "title": "Britannica: Ptolemaic dynasty",
+    "url": "https://www.britannica.com/topic/Ptolemaic-dynasty"
+   },
+   {
+    "title": "Wikipedia: Ptolemaic Kingdom",
+    "url": "https://en.wikipedia.org/wiki/Ptolemaic_Kingdom"
+   },
+   {
+    "title": "Wikipedia: Ptolemy II Philadelphus",
+    "url": "https://en.wikipedia.org/wiki/Ptolemy_II_Philadelphus"
+   },
+   {
+    "title": "Wikipedia: List of largest empires (Taagepera 1978/1979/1997 and Turchin et al. 2006 figures)",
+    "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+   }
+  ]
+ },
+ {
+  "id": "carthaginian-empire",
+  "name": "Carthaginian Empire",
+  "aliases": [
+   "Carthaginian Empire",
+   "Carthage"
+  ],
+  "clio": [
+   "Carthage"
+  ],
+  "region": "northern-africa",
+  "start": -814,
+  "end": -146,
+  "capital": "Carthage (near modern Tunis)",
+  "peak": {
+   "year": -220,
+   "areaKm2": 300000,
+   "note": "After the Barcid conquests in Spain: coastal North Africa, southern and eastern Spain and the Balearics; c. 0.3M km² (Taagepera 1979); Taagepera (1979) gives c. 0.3M km² for c. 220 BCE, when Barcid Spain had replaced the lost islands; c. 0.3M km² (Taagepera 1979, dated c. 220 BCE)"
+  },
+  "rulers": [
+   {
+    "name": "Dido (Elissa)",
+    "reign": "c. 814 BCE",
+    "note": "Legendary founding queen from Tyre"
+   },
+   {
+    "name": "Magonid dynasty",
+    "reign": "c. 550 – 370 BCE",
+    "note": "Leading family that built Carthage's overseas power"
+   },
+   {
+    "name": "Hamilcar Barca",
+    "reign": "general c. 247 – 228 BCE",
+    "note": "Commander in Sicily, then conqueror of southern Spain"
+   },
+   {
+    "name": "Hasdrubal the Fair",
+    "reign": "general 228 – 221 BCE",
+    "note": "Founded Carthago Nova (Cartagena) in Spain"
+   },
+   {
+    "name": "Hannibal Barca",
+    "reign": "general 221 – 202 BCE; suffete 196 BCE",
+    "note": "Crossed the Alps and won at Cannae"
+   }
+  ],
+  "summary": "Carthage was founded on the coast of modern Tunisia by Phoenician settlers from Tyre, traditionally in 814 BCE. It grew into the leading Phoenician city in the west, building a commercial empire of trading posts and colonies across North Africa, southern Spain, Sardinia and western Sicily. Carthage was a republic run by wealthy merchant families, with two elected chief magistrates called suffetes and a council of elders, and it relied on a powerful navy and mercenary armies. Rivalry with Rome led to three Punic Wars. Carthage lost Sicily in the first, and in the second Hannibal crossed the Alps with elephants and crushed Roman armies, but he was finally defeated at Zama in 202 BCE. In 146 BCE Rome besieged and destroyed the city.",
+  "legacy": "Carthage spread Phoenician seafaring and the alphabet across the western Mediterranean, and Hannibal remains one of history's most studied generals.",
+  "sources": [
+   {
+    "title": "Britannica: Carthage",
+    "url": "https://www.britannica.com/place/Carthage-ancient-city-Tunisia"
+   },
+   {
+    "title": "Wikipedia: Ancient Carthage",
+    "url": "https://en.wikipedia.org/wiki/Ancient_Carthage"
+   },
+   {
+    "title": "Wikipedia: Magonids",
+    "url": "https://en.wikipedia.org/wiki/Magonids"
+   },
+   {
+    "title": "Wikipedia: List of largest empires (Taagepera 1978/1979/1997 and Turchin et al. 2006 figures)",
+    "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+   }
+  ]
+ },
+ {
+  "id": "kingdom-of-kush",
+  "name": "Kingdom of Kush",
+  "aliases": [
+   "Kerma",
+   "Kush",
+   "Meroe"
+  ],
+  "clio": [
+   "Kingdom of Kush"
+  ],
+  "region": "northern-africa",
+  "start": -2500,
+  "end": 350,
+  "capital": "Kerma; later Napata, then Meroë",
+  "peak": {
+   "year": -700,
+   "areaKm2": 500000,
+   "note": "25th Dynasty, ruling all of Egypt as well as Nubia; c. 0.5M km² c. 715 BCE (Taagepera 1978)"
+  },
+  "rulers": [
+   {
+    "name": "Piye",
+    "reign": "c. 744 – 714 BCE",
+    "note": "Conquered Egypt"
+   },
+   {
+    "name": "Shabaka",
+    "reign": "c. 705 – 690 BCE",
+    "note": "Ruled Egypt and Nubia as pharaoh"
+   },
+   {
+    "name": "Taharqa",
+    "reign": "690 – 664 BCE",
+    "note": "Greatest Kushite pharaoh, driven from Egypt by Assyria"
+   },
+   {
+    "name": "Aspelta",
+    "reign": "c. 600 – 580 BCE",
+    "note": "Ruled as the centre of power shifted toward Meroë"
+   },
+   {
+    "name": "Amanirenas",
+    "reign": "c. 40 – 10 BCE",
+    "note": "Warrior queen (kandake) who fought Rome to a peace"
+   },
+   {
+    "name": "Natakamani and Amanitore",
+    "reign": "1st century CE",
+    "note": "Co-rulers and great temple builders"
+   }
+  ],
+  "summary": "Nubia, the land along the Nile south of Egypt, was home to Africa's earliest kingdom outside Egypt. The Kerma culture built a powerful state from about 2500 BCE, which Egypt's New Kingdom conquered around 1500 BCE. As Egyptian control waned, a new Kushite kingdom arose at Napata, and in the 8th century BCE its kings Piye and Shabaka conquered Egypt, ruling it as the 25th Dynasty until the Assyrians drove them out around 664 BCE. The capital later moved south to Meroë, a centre of iron-smelting and trade in gold, ivory and ebony between Africa and the Mediterranean. Kushite rulers, including powerful queens called kandakes, built more pyramids than Egypt. Meroë declined in the 4th century CE and seems to have already collapsed when Aksum's armies raided the region around 350.",
+  "legacy": "Kush shows that a great African civilisation flourished alongside Egypt, and its Meroitic script, still only partly understood, is one of Africa's oldest writing systems.",
+  "sources": [
+   {
+    "title": "Britannica: Shabaka",
+    "url": "https://www.britannica.com/biography/Shabaka"
+   },
+   {
+    "title": "Britannica: Piye",
+    "url": "https://www.britannica.com/biography/Piye"
+   },
+   {
+    "title": "Wikipedia: Kingdom of Kush",
+    "url": "https://en.wikipedia.org/wiki/Kingdom_of_Kush"
+   },
+   {
+    "title": "Wikipedia: Shabaka",
+    "url": "https://en.wikipedia.org/wiki/Shabaka"
+   },
+   {
+    "title": "Wikipedia: Taharqa",
+    "url": "https://en.wikipedia.org/wiki/Taharqa"
+   },
+   {
+    "title": "Wikipedia: List of largest empires (Taagepera 1978/1979/1997 and Turchin et al. 2006 figures)",
+    "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+   },
+   {
+    "title": "UNESCO General History of Africa, vol. II: Ancient Civilizations of Africa (ed. G. Mokhtar, 1981)",
+    "url": "https://archive.org/details/general-history-of-africa-vol-2"
+   },
+   {
+    "title": "Cambridge Ancient History, 2nd ed., vol. III part 2 (1991)",
+    "url": "https://archive.org/details/the-cambridge-ancient-history-vol.-3-part-2"
+   }
+  ]
+ },
+ {
+  "id": "kingdom-of-aksum",
+  "name": "Kingdom of Aksum",
+  "aliases": [
+   "Axum"
+  ],
+  "clio": [
+   "Kingdom of Axum"
+  ],
+  "region": "northern-africa",
+  "start": 100,
+  "end": 940,
+  "capital": "Aksum; main port at Adulis",
+  "peak": {
+   "year": 350,
+   "areaKm2": 1250000,
+   "note": "Under Ezana: northern Ethiopia, Eritrea and campaigns into Nubia; Kaleb later ruled Yemen across the Red Sea c. 525; c. 1.25M km² c. 350 (Turchin, Adams & Hall 2006)"
+  },
+  "rulers": [
+   {
+    "name": "Zoskales",
+    "reign": "c. 100 CE",
+    "note": "Early king mentioned by Greek traders"
+   },
+   {
+    "name": "Ezana",
+    "reign": "c. 330 – 360s",
+    "note": "First Christian king; campaigned against Meroë"
+   },
+   {
+    "name": "Kaleb",
+    "reign": "c. 514 – 540",
+    "note": "Conquered the Himyarite kingdom of Yemen"
+   },
+   {
+    "name": "Ashama (the Najashi)",
+    "reign": "early 7th century",
+    "note": "Sheltered early Muslim refugees from Mecca"
+   }
+  ],
+  "summary": "Aksum rose in the highlands of what are now Eritrea and northern Ethiopia in the 1st century CE, growing rich from Red Sea trade through its port of Adulis, which linked the Roman world with Arabia and India. Aksumite kings controlled trade in ivory, gold and incense, minted their own gold, silver and bronze coins, and raised giant carved stone stelae over royal tombs. Around 340 King Ezana converted to Christianity, making Aksum one of the first Christian states. In the 6th century King Kaleb sent armies across the Red Sea to rule Yemen. The rise of Islam, and Persian and then Arab control of the sea routes, cut Aksum's trade, and by the 10th century the kingdom had faded as power shifted south.",
+  "legacy": "Aksum founded the Ethiopian Orthodox Church and the Ge'ez script still used in Ethiopia and Eritrea, and its towering stelae remain national symbols.",
+  "sources": [
+   {
+    "title": "Britannica: Aksum",
+    "url": "https://www.britannica.com/place/Aksum-ancient-kingdom-Africa"
+   },
+   {
+    "title": "Wikipedia: Kingdom of Aksum",
+    "url": "https://en.wikipedia.org/wiki/Kingdom_of_Aksum"
+   },
+   {
+    "title": "Wikipedia: Ezana of Axum",
+    "url": "https://en.wikipedia.org/wiki/Ezana_of_Axum"
+   },
+   {
+    "title": "Turchin, Adams & Hall (2006), East-West Orientation of Historical Empires, Journal of World-Systems Research 12(2), Table 1",
+    "url": "https://jwsr.pitt.edu/ojs/jwsr/article/download/369/381"
+   },
+   {
+    "title": "UNESCO General History of Africa, vol. II: Ancient Civilizations of Africa (ed. G. Mokhtar, 1981)",
+    "url": "https://archive.org/details/general-history-of-africa-vol-2"
+   },
+   {
+    "title": "Wikipedia: List of largest empires (Taagepera 1979, 1997; Turchin, Adams & Hall 2006)",
+    "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+   }
+  ]
+ },
+ {
+  "id": "ghana-empire",
+  "name": "Ghana Empire (Wagadu)",
+  "aliases": [
+   "Empire of Ghana",
+   "Ghana"
+  ],
+  "clio": [
+   "Ghana Empire"
+  ],
+  "region": "northern-africa",
+  "start": 300,
+  "end": 1200,
+  "capital": "Koumbi Saleh (probable)",
+  "peak": {
+   "year": 1050,
+   "areaKm2": 350000,
+   "note": "Controlling the gold trade between the Senegal and Niger rivers"
+  },
+  "rulers": [
+   {
+    "name": "Kaya Maghan Cissé",
+    "reign": "date unknown (tradition; Delafosse placed him in the late 8th century)",
+    "note": "Remembered in Soninke tradition as an early king"
+   },
+   {
+    "name": "Basi",
+    "reign": "until 1063",
+    "note": "King described by the Andalusian geographer al-Bakri"
+   },
+   {
+    "name": "Tunka Manin",
+    "reign": "from 1063",
+    "note": "Nephew of Basi, whose splendid court al-Bakri recorded"
+   }
+  ],
+  "summary": "The Ghana Empire, known to its Soninke people as Wagadu, grew up in the Sahel between the Senegal and Niger rivers, in today's southern Mauritania and western Mali; it lay far from modern Ghana. From perhaps the 4th century its kings controlled the trade of West African gold northward across the Sahara in exchange for salt, copper and cloth, carried by camel caravans, and Arab writers called it the land of gold. The king ruled through tributary chiefs and taxed every load of goods crossing his realm. In the 11th century the Almoravid movement from the Sahara put pressure on Ghana and spread Islam. Weakened by drought, shifting trade routes and rebellious vassals, Ghana was overrun by the Sosso and then absorbed into Mali in the 13th century.",
+  "legacy": "Ghana was the first of the great West African trading empires, and modern Ghana took its name in 1957 to honour it.",
+  "sources": [
+   {
+    "title": "Britannica: Ghana (empire)",
+    "url": "https://www.britannica.com/place/Ghana-historical-West-African-empire"
+   },
+   {
+    "title": "Wikipedia: Ghana Empire",
+    "url": "https://en.wikipedia.org/wiki/Ghana_Empire"
+   },
+   {
+    "title": "Wikipedia: Tunka Manin",
+    "url": "https://en.wikipedia.org/wiki/Tunka_Manin"
+   },
+   {
+    "title": "UNESCO General History of Africa, vol. III: Africa from the Seventh to the Eleventh Century (ed. M. El Fasi & I. Hrbek, 1988)",
+    "url": "https://archive.org/details/general-history-of-africa-vol-3"
+   }
+  ]
+ },
+ {
+  "id": "mali-empire",
+  "name": "Mali Empire",
+  "aliases": [
+   "Mali"
+  ],
+  "clio": [
+   "Mali Empire"
+  ],
+  "region": "northern-africa",
+  "start": 1235,
+  "end": 1670,
+  "capital": "Niani (probable), among other royal towns",
+  "peak": {
+   "year": 1350,
+   "areaKm2": 1100000,
+   "note": "Under Mansa Musa and Mansa Suleyman, from the Atlantic coast to beyond Timbuktu and Gao; c. 1.1M km² (Taagepera 1997, for c. 1380); c. 1.1M km² c. 1380 (Taagepera 1997; Turchin, Adams & Hall 2006); some estimates reach 1.3M km²"
+  },
+  "rulers": [
+   {
+    "name": "Sundiata Keita",
+    "reign": "c. 1235 – 1255",
+    "note": "Founder, hero of the Epic of Sundiata"
+   },
+   {
+    "name": "Mansa Uli",
+    "reign": "c. 1255 – 1270",
+    "note": "Son of Sundiata; expanded the empire and made the pilgrimage to Mecca"
+   },
+   {
+    "name": "Mansa Musa",
+    "reign": "c. 1312 – 1337",
+    "note": "Famous for his lavish pilgrimage of 1324"
+   },
+   {
+    "name": "Mansa Suleyman",
+    "reign": "c. 1341 – 1360",
+    "note": "Ruled at the empire's height, visited by Ibn Battuta"
+   }
+  ],
+  "summary": "The Mali Empire was founded by Sundiata Keita, the hero of a famous oral epic, who defeated the Sosso king Sumanguru at the Battle of Kirina around 1235. Mali's Mandinka rulers, called mansas, absorbed the old Ghana lands and expanded to control the gold fields of Bambuk and Bure and the trading cities of the Niger bend. Provinces and allied kingdoms paid tribute, and Islam spread among the ruling classes and merchants. Mansa Musa's pilgrimage to Mecca in 1324, during which he gave away so much gold that he lowered its value in Cairo, made Mali famous as far as Europe, and Timbuktu became a centre of Islamic learning. From the 15th century succession disputes, Tuareg raids and the rise of Songhai stripped away its provinces, leaving a small Mandinka kingdom by the 17th century.",
+  "legacy": "Mali made Timbuktu a legendary city of scholarship and trade, and the Epic of Sundiata is still performed by West African griots.",
+  "sources": [
+   {
+    "title": "Britannica: Mali (empire)",
+    "url": "https://www.britannica.com/place/Mali-historical-empire-Africa"
+   },
+   {
+    "title": "Wikipedia: Mali Empire",
+    "url": "https://en.wikipedia.org/wiki/Mali_Empire"
+   },
+   {
+    "title": "Wikipedia: Mansa Musa",
+    "url": "https://en.wikipedia.org/wiki/Mansa_Musa"
+   },
+   {
+    "title": "Turchin, Adams & Hall (2006), East-West Orientation of Historical Empires, Journal of World-Systems Research 12(2), Table 1",
+    "url": "https://jwsr.pitt.edu/ojs/jwsr/article/download/369/381"
+   },
+   {
+    "title": "UNESCO General History of Africa, vol. IV: Africa from the Twelfth to the Sixteenth Century (ed. D. T. Niane, 1984)",
+    "url": "https://archive.org/details/unesco_general_history_africa_iv"
+   },
+   {
+    "title": "Wikipedia: List of largest empires (Taagepera 1979, 1997; Turchin, Adams & Hall 2006)",
+    "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+   }
+  ]
+ },
+ {
+  "id": "kanem-bornu",
+  "name": "Kanem-Bornu Empire",
+  "aliases": [
+   "Kanem",
+   "Kanem-Bornu"
+  ],
+  "clio": [
+   "Empire of Kanem",
+   "Bornu Empire"
+  ],
+  "region": "northern-africa",
+  "start": 700,
+  "end": 1893,
+  "capital": "Njimi in Kanem; from c. 1470 Ngazargamu in Bornu; later Kukawa",
+  "peak": {
+   "year": 1590,
+   "areaKm2": 500000,
+   "note": "Under Idris Alooma, around Lake Chad and north toward the Fezzan"
+  },
+  "rulers": [
+   {
+    "name": "Hummay (Umme Jilmi)",
+    "reign": "c. 1075 – 1086",
+    "note": "First Muslim king of the Sayfawa dynasty"
+   },
+   {
+    "name": "Dunama Dabbalemi",
+    "reign": "c. 1210 – 1248",
+    "note": "Expanded Kanem far into the Sahara"
+   },
+   {
+    "name": "Ali Gaji",
+    "reign": "c. 1465 – 1497",
+    "note": "Founded the new capital Ngazargamu in Bornu"
+   },
+   {
+    "name": "Idris Alooma",
+    "reign": "c. 1571 – 1603",
+    "note": "Used firearms to bring Bornu to its height"
+   },
+   {
+    "name": "Muhammad al-Amin al-Kanemi",
+    "reign": "1809 – 1837",
+    "note": "Scholar-warrior who saved Bornu from the Fulani jihad and founded a new ruling line"
+   }
+  ],
+  "summary": "Kanem arose around the 8th century among nomadic and farming peoples north-east of Lake Chad, at the southern end of a trans-Saharan trade route to Libya. Its kings of the Sayfawa dynasty, who reigned for about a thousand years, adopted Islam in the late 11th century and grew rich trading horses, salt and slaves. In the 13th century Dunama Dabbalemi expanded Kanem far into the Sahara. Civil wars and attacks by the Bulala people in the 14th century forced the dynasty to move west of Lake Chad to Bornu, where a new capital, Ngazargamu, was founded. Bornu reached its height under Idris Alooma in the late 16th century, using firearms and Turkish musketeers. It survived into the 19th century until the warlord Rabih az-Zubayr conquered it in 1893.",
+  "legacy": "Kanem-Bornu was one of the longest-lasting states in world history and a major channel for Islam and Saharan trade in central Africa.",
+  "sources": [
+   {
+    "title": "Britannica: Kanem-Bornu",
+    "url": "https://www.britannica.com/place/Kanem-Bornu"
+   },
+   {
+    "title": "Wikipedia: Kanem–Bornu Empire",
+    "url": "https://en.wikipedia.org/wiki/Kanem%E2%80%93Bornu_Empire"
+   },
+   {
+    "title": "Wikipedia: Idris Alooma",
+    "url": "https://en.wikipedia.org/wiki/Idris_Alooma"
+   },
+   {
+    "title": "Wikipedia: Hummay",
+    "url": "https://en.wikipedia.org/wiki/Hummay"
+   },
+   {
+    "title": "UNESCO General History of Africa, vol. III: Africa from the Seventh to the Eleventh Century (ed. M. El Fasi & I. Hrbek, 1988)",
+    "url": "https://archive.org/details/general-history-of-africa-vol-3"
+   }
+  ]
+ },
+ {
+  "id": "great-zimbabwe",
+  "name": "Kingdom of Zimbabwe (Great Zimbabwe)",
+  "aliases": [
+   "Great Zimbabwe"
+  ],
+  "clio": [],
+  "region": "southern-africa",
+  "start": 1220,
+  "end": 1450,
+  "capital": "Great Zimbabwe",
+  "peak": {
+   "year": 1350,
+   "areaKm2": 50000,
+   "note": "Core of the Zimbabwe plateau; the state centred on Great Zimbabwe probably covered c. 50,000 km²"
+  },
+  "rulers": [
+   {
+    "name": "Shona-speaking kings (names unknown)",
+    "reign": "c. 1220 – 1450",
+    "note": "No written records survive; rulers are known only through archaeology"
+   },
+   {
+    "name": "Nyatsimba Mutota",
+    "reign": "c. 1430",
+    "note": "Remembered in tradition as a prince who left to found the successor Mutapa state"
+   }
+  ],
+  "summary": "Great Zimbabwe was the capital of a Shona-speaking kingdom on the southern African plateau, in the country now named after it. It grew after the earlier state of Mapungubwe in the 13th century, prospering by controlling gold mined on the plateau and large cattle herds, and trading through Swahili ports such as Sofala and Kilwa, which brought glass beads, Persian pottery and Chinese porcelain. Its rulers built immense dry-stone walls without mortar, including the Great Enclosure, with walls up to 11 metres high; at its height the city may have housed up to 10,000 people, though older estimates reach 18,000. In the 15th century the site was largely abandoned, perhaps because of overgrazing, exhausted resources and a shift of the gold trade northward, where the Mutapa and Torwa states took over.",
+  "legacy": "Great Zimbabwe is the largest ancient stone complex in southern Africa; it disproved colonial claims that Africans could not have built it, and the modern nation took its name.",
+  "sources": [
+   {
+    "title": "Britannica: Great Zimbabwe",
+    "url": "https://www.britannica.com/place/Great-Zimbabwe"
+   },
+   {
+    "title": "Wikipedia: Great Zimbabwe",
+    "url": "https://en.wikipedia.org/wiki/Great_Zimbabwe"
+   },
+   {
+    "title": "Wikipedia: Kingdom of Great Zimbabwe",
+    "url": "https://en.wikipedia.org/wiki/Kingdom_of_Great_Zimbabwe"
+   },
+   {
+    "title": "Wikipedia: Nyatsimba Mutota",
+    "url": "https://en.wikipedia.org/wiki/Nyatsimba_Mutota"
+   }
+  ]
+ },
+ {
+  "id": "kingdom-of-kongo",
+  "name": "Kingdom of Kongo",
+  "aliases": [
+   "Congo"
+  ],
+  "clio": [
+   "Kingdom of Kongo"
+  ],
+  "region": "southern-africa",
+  "start": 1390,
+  "end": 1914,
+  "capital": "Mbanza Kongo (called São Salvador from the 16th century)",
+  "peak": {
+   "year": 1550,
+   "areaKm2": 130000,
+   "note": "Kongo's core provinces in northern Angola and western DR Congo, plus tributaries; about 129,400 km² by 1623"
+  },
+  "rulers": [
+   {
+    "name": "Lukeni lua Nimi",
+    "reign": "c. 1390",
+    "note": "Traditional founder"
+   },
+   {
+    "name": "Nzinga a Nkuwu (João I)",
+    "reign": "c. 1470 – 1509",
+    "note": "Baptised by the Portuguese in 1491"
+   },
+   {
+    "name": "Afonso I (Mvemba a Nzinga)",
+    "reign": "1509 – 1542",
+    "note": "Made Christianity the state religion"
+   },
+   {
+    "name": "Garcia II",
+    "reign": "1641 – 1660",
+    "note": "Allied with the Dutch against Portugal"
+   },
+   {
+    "name": "António I",
+    "reign": "1660 – 1665",
+    "note": "Killed fighting the Portuguese at Mbwila"
+   }
+  ],
+  "summary": "Kongo was founded around 1390, traditionally by Lukeni lua Nimi, who conquered lands south of the lower Congo river in what is now northern Angola and western Congo. The king, or manikongo, ruled from Mbanza Kongo through appointed provincial governors, collected tribute in cloth and the shell money called nzimbu, and controlled a well-organised state. In 1483 Portuguese ships arrived, and King Nzinga a Nkuwu was baptised in 1491. His son Afonso I made Christianity the state religion and corresponded with the Portuguese and papal courts, but the growing Atlantic slave trade destabilised the kingdom. After defeat by the Portuguese at Mbwila in 1665, Kongo fell into decades of civil war. It survived as a weakened kingdom until Portugal absorbed it into colonial Angola, ending its last autonomy in 1914.",
+  "legacy": "Kongo was a major Christian African kingdom, and its people and culture, carried across the Atlantic by the slave trade, deeply shaped the Afro-Caribbean and African American world.",
+  "sources": [
+   {
+    "title": "Britannica: Kongo",
+    "url": "https://www.britannica.com/place/Kongo-historical-kingdom-Africa"
+   },
+   {
+    "title": "Wikipedia: Kingdom of Kongo",
+    "url": "https://en.wikipedia.org/wiki/Kingdom_of_Kongo"
+   },
+   {
+    "title": "Wikipedia: Afonso I of Kongo",
+    "url": "https://en.wikipedia.org/wiki/Afonso_I_of_Kongo"
+   },
+   {
+    "title": "Wikipedia: António I of Kongo",
+    "url": "https://en.wikipedia.org/wiki/Ant%C3%B3nio_I_of_Kongo"
+   }
+  ]
+ },
+ {
+  "id": "ethiopian-empire",
+  "name": "Ethiopian Empire (Solomonic dynasty)",
+  "aliases": [
+   "Ethiopia"
+  ],
+  "clio": [
+   "Ethiopian Empire"
+  ],
+  "region": "northern-africa",
+  "start": 1270,
+  "end": 1974,
+  "capital": "Moving royal camps; later Gondar (from 1636) and Addis Ababa (from 1886)",
+  "peak": {
+   "year": 1900,
+   "areaKm2": 1100000,
+   "note": "After Menelik II's expansion, roughly the borders of modern Ethiopia"
+  },
+  "rulers": [
+   {
+    "name": "Yekuno Amlak",
+    "reign": "1270 – 1285",
+    "note": "Founder of the Solomonic dynasty"
+   },
+   {
+    "name": "Amda Seyon I",
+    "reign": "1314 – 1344",
+    "note": "Expanded the realm against Muslim neighbours"
+   },
+   {
+    "name": "Zara Yaqob",
+    "reign": "1434 – 1468",
+    "note": "Strengthened the Church and royal power"
+   },
+   {
+    "name": "Fasilides",
+    "reign": "1632 – 1667",
+    "note": "Founded Gondar as a fixed capital"
+   },
+   {
+    "name": "Tewodros II",
+    "reign": "1855 – 1868",
+    "note": "Reunified the empire after the Era of the Princes"
+   },
+   {
+    "name": "Menelik II",
+    "reign": "1889 – 1913",
+    "note": "Defeated Italy at Adwa in 1896"
+   },
+   {
+    "name": "Haile Selassie",
+    "reign": "1930 – 1974",
+    "note": "Last emperor"
+   }
+  ],
+  "summary": "In 1270 Yekuno Amlak overthrew the Zagwe dynasty and founded the Solomonic dynasty, claiming descent from King Solomon and the Queen of Sheba, a story later told in the Kebra Nagast. Its Christian emperors ruled the Ethiopian highlands from moving royal camps, and Amda Seyon and Zara Yaqob expanded the realm and strengthened the Orthodox Church. In the 16th century the Adal sultanate under Ahmad Gragn nearly destroyed the empire until Portuguese help arrived. Gondar became a fixed capital in the 1630s, but from 1769 the emperors lost power to regional lords. Tewodros II and Yohannes IV reunited the country, and Menelik II expanded it south and defeated Italy at Adwa in 1896. Apart from Italian occupation in 1936 to 1941, it stayed independent until Haile Selassie was overthrown in 1974.",
+  "legacy": "Ethiopia was the only African state to defeat a European colonial army and keep its independence through the Scramble for Africa, making it a symbol of African freedom.",
+  "sources": [
+   {
+    "title": "Britannica: Ethiopia",
+    "url": "https://www.britannica.com/place/Ethiopia"
+   },
+   {
+    "title": "Wikipedia: Ethiopian Empire",
+    "url": "https://en.wikipedia.org/wiki/Ethiopian_Empire"
+   },
+   {
+    "title": "Wikipedia: Yekuno Amlak",
+    "url": "https://en.wikipedia.org/wiki/Yekuno_Amlak"
+   },
+   {
+    "title": "Wikipedia: Menelik II",
+    "url": "https://en.wikipedia.org/wiki/Menelik_II"
+   }
+  ]
+ },
+ {
+  "id": "fatimid-caliphate",
+  "name": "Fatimid Caliphate",
+  "aliases": [
+   "Fatimid Caliphate"
+  ],
+  "clio": [
+   "Fatimid Caliphate"
+  ],
+  "region": "northern-africa",
+  "start": 909,
+  "end": 1171,
+  "capital": "Raqqada and Mahdia in Tunisia, then Cairo (from 973)",
+  "peak": {
+   "year": 1000,
+   "areaKm2": 4100000,
+   "note": "North Africa, Egypt, Sicily, the Levant and the Hejaz; Taagepera (1997) gives a larger c. 4.1M km² for 969, counting Saharan hinterlands; Taagepera (1997) and Turchin et al. (2006) give c. 4.1M km² for 969, counting nominal Saharan lands; c. 4.1M km² c. 969, including Saharan hinterlands (Taagepera 1997; Turchin, Adams & Hall 2006)"
+  },
+  "rulers": [
+   {
+    "name": "Abdallah al-Mahdi Billah",
+    "reign": "909 – 934",
+    "note": "Founder, proclaimed caliph in Tunisia"
+   },
+   {
+    "name": "al-Mu'izz li-Din Allah",
+    "reign": "953 – 975",
+    "note": "Conquered Egypt and moved to Cairo"
+   },
+   {
+    "name": "al-Hakim bi-Amr Allah",
+    "reign": "996 – 1021",
+    "note": "Eccentric caliph who founded the House of Knowledge"
+   },
+   {
+    "name": "al-Mustansir",
+    "reign": "1036 – 1094",
+    "note": "Longest reign of any caliph; saw famine and decline"
+   },
+   {
+    "name": "al-Adid",
+    "reign": "1160 – 1171",
+    "note": "Last caliph; Saladin ended the dynasty"
+   }
+  ],
+  "summary": "The Fatimids were an Ismaili Shia dynasty claiming descent from the Prophet's daughter Fatima. Supported by Kutama Berber tribesmen, Abdallah al-Mahdi proclaimed himself caliph in Tunisia in 909, challenging the Sunni Abbasids of Baghdad. In 969 his descendant al-Mu'izz conquered Egypt, where his general founded Cairo, which became the new capital. At their height the Fatimids ruled North Africa, Egypt, Sicily, Syria, Palestine and the holy cities of Mecca and Medina, growing rich from Red Sea and Mediterranean trade. They founded al-Azhar, one of the world's oldest universities. From the late 11th century the dynasty was weakened by military rivalries, famine, the loss of North Africa and Syria, and the Crusades. Saladin, their vizier, abolished the caliphate in 1171.",
+  "legacy": "Fatimid Cairo, with al-Azhar and its great mosques and gates, became one of the leading cities of the Islamic world.",
+  "sources": [
+   {
+    "title": "Britannica: Fatimid dynasty",
+    "url": "https://www.britannica.com/topic/Fatimid-dynasty"
+   },
+   {
+    "title": "Wikipedia: Fatimid Caliphate",
+    "url": "https://en.wikipedia.org/wiki/Fatimid_Caliphate"
+   },
+   {
+    "title": "Wikipedia: Al-Mustansir Billah",
+    "url": "https://en.wikipedia.org/wiki/Al-Mustansir_Billah"
+   },
+   {
+    "title": "Turchin, Adams & Hall (2006), East-West Orientation of Historical Empires, Journal of World-Systems Research 12(2), Table 1",
+    "url": "https://jwsr.pitt.edu/ojs/jwsr/article/download/369/381"
+   },
+   {
+    "title": "Wikipedia: List of largest empires (Taagepera 1979, 1997; Turchin, Adams & Hall 2006)",
+    "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+   }
+  ]
+ },
+ {
+  "id": "almohad-caliphate",
+  "name": "Almohad Caliphate",
+  "aliases": [
+   "Almohad Caliphate"
+  ],
+  "clio": [
+   "Almohad Caliphate"
+  ],
+  "region": "northern-africa",
+  "start": 1121,
+  "end": 1269,
+  "capital": "Tinmel, then Marrakesh; Seville in al-Andalus",
+  "peak": {
+   "year": 1170,
+   "areaKm2": 2300000,
+   "note": "From the Atlantic to Tripolitania, plus southern Spain; c. 2.0–2.3M km² (Taagepera 1997; Turchin et al. 2006); c. 2.3M km² c. 1150 (Taagepera 1997); c. 2.0M km² c. 1200 (Turchin, Adams & Hall 2006)"
+  },
+  "rulers": [
+   {
+    "name": "Ibn Tumart",
+    "reign": "c. 1121 – 1130",
+    "note": "Religious founder, proclaimed the Mahdi"
+   },
+   {
+    "name": "Abd al-Mu'min",
+    "reign": "1130 – 1163",
+    "note": "First caliph; conquered the Maghreb and al-Andalus"
+   },
+   {
+    "name": "Abu Yusuf Yaqub al-Mansur",
+    "reign": "1184 – 1199",
+    "note": "Won at Alarcos and built the Giralda"
+   },
+   {
+    "name": "Muhammad al-Nasir",
+    "reign": "1199 – 1213",
+    "note": "Defeated at Las Navas de Tolosa in 1212"
+   },
+   {
+    "name": "Idris al-Wathiq",
+    "reign": "1266 – 1269",
+    "note": "Last caliph, overthrown by the Marinids"
+   }
+  ],
+  "summary": "The Almohad movement began with Ibn Tumart, a Berber religious reformer from the Atlas Mountains who in 1121 proclaimed himself the Mahdi and preached a strict doctrine of God's absolute oneness. His successor Abd al-Mu'min took the title of caliph, overthrew the Almoravids, captured Marrakesh in 1147 and went on to unite all of North Africa from Morocco to Tripoli, as well as Muslim Spain. The Almohads were great builders, raising the Koutoubia mosque in Marrakesh and the Giralda in Seville, and their court patronised philosophers such as Averroes. Their crushing defeat by the Christian Spanish kingdoms at Las Navas de Tolosa in 1212 began a rapid decline; provinces broke away to the Hafsids, Zayyanids and Marinids, who took Marrakesh in 1269.",
+  "legacy": "The Almohads produced some of the finest Moorish architecture and fostered the philosophy of Averroes, which later shaped European scholasticism.",
+  "sources": [
+   {
+    "title": "Britannica: Almohads",
+    "url": "https://www.britannica.com/topic/Almohads"
+   },
+   {
+    "title": "Wikipedia: Almohad Caliphate",
+    "url": "https://en.wikipedia.org/wiki/Almohad_Caliphate"
+   },
+   {
+    "title": "Wikipedia: Abd al-Mu'min",
+    "url": "https://en.wikipedia.org/wiki/Abd_al-Mu'min"
+   },
+   {
+    "title": "Wikipedia: List of largest empires (Taagepera 1978/1979/1997 and Turchin et al. 2006 figures)",
+    "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+   },
+   {
+    "title": "Turchin, Adams & Hall (2006), East-West Orientation of Historical Empires, Journal of World-Systems Research 12(2), Table 1",
+    "url": "https://jwsr.pitt.edu/ojs/jwsr/article/download/369/381"
+   }
+  ]
+ },
+ {
+  "id": "mamluk-sultanate",
+  "name": "Mamluk Sultanate",
+  "aliases": [
+   "Mamluke Sultanate"
+  ],
+  "clio": [
+   "Mamluk Sultanate"
+  ],
+  "region": "northern-africa",
+  "start": 1250,
+  "end": 1517,
+  "capital": "Cairo",
+  "peak": {
+   "year": 1300,
+   "areaKm2": 2100000,
+   "note": "Egypt, Syria, Palestine and the Hejaz; c. 2.1M km² (Taagepera 1997); c. 2.1M km² (Taagepera 1997, c. 1300; Turchin, Adams & Hall 2006, c. 1400)"
+  },
+  "rulers": [
+   {
+    "name": "Shajar al-Durr",
+    "reign": "1250",
+    "note": "Widow of the last Ayyubid sultan, briefly sultana"
+   },
+   {
+    "name": "Qutuz",
+    "reign": "1259 – 1260",
+    "note": "Defeated the Mongols at Ain Jalut"
+   },
+   {
+    "name": "Baybars I",
+    "reign": "1260 – 1277",
+    "note": "Built the Mamluk state and fought the Crusaders"
+   },
+   {
+    "name": "Qalawun",
+    "reign": "1279 – 1290",
+    "note": "Founded the longest-lasting Mamluk dynasty"
+   },
+   {
+    "name": "al-Nasir Muhammad",
+    "reign": "1293 – 1341 (with interruptions)",
+    "note": "Ruled at the sultanate's height"
+   },
+   {
+    "name": "Qansuh al-Ghawri",
+    "reign": "1501 – 1516",
+    "note": "Killed fighting the Ottomans at Marj Dabiq"
+   },
+   {
+    "name": "Tuman Bay II",
+    "reign": "1516 – 1517",
+    "note": "Last sultan, hanged by the Ottomans"
+   }
+  ],
+  "summary": "Mamluks were slave soldiers, mostly Turkic and later Circassian boys bought from the steppes and trained as elite cavalry. In 1250 the mamluks of Egypt's Ayyubid sultan seized power, founding a state ruled by former slaves. In 1260 their army under Qutuz and Baybars defeated the Mongols at Ain Jalut in Palestine, halting the Mongol advance, and over the following decades they expelled the last Crusaders, taking Acre in 1291. The Mamluks ruled Egypt, Syria and the holy cities of Arabia, sheltered a figurehead Abbasid caliph in Cairo, and grew rich from the spice trade between India and Europe. Sultans rarely founded lasting dynasties, as rival mamluk factions competed for power. Plague, Portuguese competition in the Indian Ocean and Ottoman firearms ended the sultanate in 1517.",
+  "legacy": "The Mamluks saved Egypt and Syria from the Mongols, and their mosques, madrasas and tombs make Cairo one of the great treasuries of Islamic architecture.",
+  "sources": [
+   {
+    "title": "Britannica: Mamluk dynasty",
+    "url": "https://www.britannica.com/topic/Mamluk-dynasty-Egypt-Syria"
+   },
+   {
+    "title": "Wikipedia: Mamluk Sultanate",
+    "url": "https://en.wikipedia.org/wiki/Mamluk_Sultanate"
+   },
+   {
+    "title": "Wikipedia: Al-Nasir Muhammad",
+    "url": "https://en.wikipedia.org/wiki/Al-Nasir_Muhammad"
+   },
+   {
+    "title": "Turchin, Adams & Hall (2006), East-West Orientation of Historical Empires, Journal of World-Systems Research 12(2), Table 1",
+    "url": "https://jwsr.pitt.edu/ojs/jwsr/article/download/369/381"
+   },
+   {
+    "title": "Wikipedia: List of largest empires (Taagepera 1979, 1997; Turchin, Adams & Hall 2006)",
+    "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+   }
+  ]
+ },
+ {
+  "id": "roman-republic",
+  "name": "Roman Republic",
+  "aliases": [
+   "Rome",
+   "Roman Republic"
+  ],
+  "clio": [
+   "Roman Republic",
+   "Roman Kingdom"
+  ],
+  "region": "europe",
+  "start": -509,
+  "end": -27,
+  "capital": "Rome",
+  "peak": {
+   "year": -50,
+   "areaKm2": 1950000,
+   "note": "After Julius Caesar's conquest of Gaul; c. 1.95M km² c. 50 BCE (Taagepera 1979)"
+  },
+  "rulers": [
+   {
+    "name": "Lucius Junius Brutus",
+    "reign": "consul 509 BCE",
+    "note": "Traditional founder of the Republic"
+   },
+   {
+    "name": "Scipio Africanus",
+    "reign": "consul 205 and 194 BCE",
+    "note": "Defeated Hannibal at Zama"
+   },
+   {
+    "name": "Gaius Marius",
+    "reign": "seven consulships, 107 – 86 BCE",
+    "note": "Reformed the army into a professional force"
+   },
+   {
+    "name": "Lucius Cornelius Sulla",
+    "reign": "dictator 82 – 79 BCE",
+    "note": "First general to march his army on Rome"
+   },
+   {
+    "name": "Pompey the Great",
+    "reign": "consul 70, 55 and 52 BCE",
+    "note": "Conquered much of the eastern Mediterranean"
+   },
+   {
+    "name": "Julius Caesar",
+    "reign": "dictator 49 – 44 BCE",
+    "note": "Conquered Gaul; assassinated in 44 BCE"
+   }
+  ],
+  "summary": "According to tradition, the Romans expelled their last king in 509 BCE and set up a republic, governed by two consuls elected each year, a Senate of aristocrats and popular assemblies. From its base in central Italy, Rome gradually conquered its neighbours, binding defeated Italian peoples to it as allies who supplied soldiers. Victory over Carthage in the Punic Wars made Rome master of the western Mediterranean, and by 146 BCE it also controlled Greece. Conquest brought great wealth but also inequality and political violence, as generals such as Marius, Sulla, Pompey and Julius Caesar used their loyal armies to seize power. Caesar's assassination in 44 BCE led to more civil wars, which ended when his heir Octavian defeated Mark Antony and became Augustus in 27 BCE.",
+  "legacy": "The Roman Republic's senate, elected magistrates, checks and balances and idea of citizenship strongly influenced modern republics, including the United States.",
+  "sources": [
+   {
+    "title": "Britannica: Roman Republic",
+    "url": "https://www.britannica.com/place/Roman-Republic"
+   },
+   {
+    "title": "Britannica: Sulla",
+    "url": "https://www.britannica.com/biography/Sulla"
+   },
+   {
+    "title": "Wikipedia: Roman Republic",
+    "url": "https://en.wikipedia.org/wiki/Roman_Republic"
+   }
+  ]
+ },
+ {
+  "id": "roman-empire",
+  "name": "Roman Empire",
+  "aliases": [
+   "Roman Empire",
+   "Rome (Diocletianus)",
+   "Rome (Maximian)",
+   "Rome (Constantinus)",
+   "Rome (Galerius)",
+   "Western Roman Empire"
+  ],
+  "clio": [
+   "Roman Empire",
+   "Western Roman Empire",
+   "(Alliance between Western Roman Empire and Visigothic Kingdom)"
+  ],
+  "region": "europe",
+  "start": -27,
+  "end": 476,
+  "capital": "Rome; from 330 also Constantinople, and later Milan and Ravenna in the West",
+  "peak": {
+   "year": 117,
+   "areaKm2": 5000000,
+   "note": "Under Trajan, from Britain to Mesopotamia; c. 5.0M km² c. 117 (Taagepera 1979; Turchin, Adams & Hall 2006)"
+  },
+  "rulers": [
+   {
+    "name": "Augustus",
+    "reign": "27 BCE – 14 CE",
+    "note": "First emperor"
+   },
+   {
+    "name": "Trajan",
+    "reign": "98 – 117",
+    "note": "Brought the empire to its greatest extent"
+   },
+   {
+    "name": "Hadrian",
+    "reign": "117 – 138",
+    "note": "Consolidated the frontiers, built Hadrian's Wall"
+   },
+   {
+    "name": "Marcus Aurelius",
+    "reign": "161 – 180",
+    "note": "Philosopher-emperor who fought on the Danube"
+   },
+   {
+    "name": "Diocletian",
+    "reign": "284 – 305",
+    "note": "Divided rule among four co-emperors (the Tetrarchy)"
+   },
+   {
+    "name": "Constantine I",
+    "reign": "306 – 337",
+    "note": "Embraced Christianity and founded Constantinople"
+   },
+   {
+    "name": "Theodosius I",
+    "reign": "379 – 395",
+    "note": "Last emperor to rule both halves"
+   },
+   {
+    "name": "Romulus Augustulus",
+    "reign": "475 – 476",
+    "note": "Last western emperor, deposed by Odoacer"
+   }
+  ],
+  "summary": "After a century of civil war, Octavian, Julius Caesar's heir, became Rome's first emperor as Augustus in 27 BCE, keeping the forms of the Republic while holding real power. The two centuries that followed, the Pax Romana, brought peace and prosperity to an empire that ringed the Mediterranean, linked by roads, a professional army, Roman law and Latin and Greek culture; in 212 almost all free inhabitants became citizens. The 3rd century brought invasions, plague and a rapid turnover of emperors. Diocletian reorganised the empire under several co-rulers, and Constantine embraced Christianity and founded Constantinople. After 395 the empire was permanently divided into eastern and western halves. The West, weakened by Germanic migrations and lost revenue, ended when Odoacer deposed Romulus Augustulus in 476.",
+  "legacy": "Rome's law, Latin language, roads, cities and adoption of Christianity form the backbone of European civilisation.",
+  "sources": [
+   {
+    "title": "Britannica: Roman Empire",
+    "url": "https://www.britannica.com/place/Roman-Empire"
+   },
+   {
+    "title": "Wikipedia: Roman Empire",
+    "url": "https://en.wikipedia.org/wiki/Roman_Empire"
+   },
+   {
+    "title": "Wikipedia: Trajan",
+    "url": "https://en.wikipedia.org/wiki/Trajan"
+   },
+   {
+    "title": "Turchin, Adams & Hall (2006), East-West Orientation of Historical Empires, Journal of World-Systems Research 12(2), Table 1",
+    "url": "https://jwsr.pitt.edu/ojs/jwsr/article/download/369/381"
+   },
+   {
+    "title": "Wikipedia: List of largest empires (Taagepera/Turchin figures)",
+    "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+   }
+  ]
+ },
+ {
+  "id": "byzantine-empire",
+  "name": "Byzantine Empire",
+  "aliases": [
+   "Eastern Roman Empire",
+   "Byzantine Empire"
+  ],
+  "clio": [
+   "Eastern Roman Empire",
+   "Byzantine Empire",
+   "(Alliance between Byzantine Empire and Khazaria)"
+  ],
+  "region": "europe",
+  "start": 395,
+  "end": 1453,
+  "capital": "Constantinople",
+  "peak": {
+   "year": 555,
+   "areaKm2": 2700000,
+   "note": "Under Justinian I, after reconquering Italy, North Africa and southern Spain; c. 2.7M km² c. 555 (Turchin, Adams & Hall 2006); Taagepera (1979) gives c. 2.8M km² c. 450"
+  },
+  "rulers": [
+   {
+    "name": "Justinian I",
+    "reign": "527 – 565",
+    "note": "Reconquered the West, codified Roman law, built Hagia Sophia"
+   },
+   {
+    "name": "Heraclius",
+    "reign": "610 – 641",
+    "note": "Defeated Persia but lost Syria and Egypt to the Arabs"
+   },
+   {
+    "name": "Basil II",
+    "reign": "976 – 1025",
+    "note": "Conquered Bulgaria; the empire's medieval height"
+   },
+   {
+    "name": "Alexios I Komnenos",
+    "reign": "1081 – 1118",
+    "note": "Restored the empire and called for western help, sparking the First Crusade"
+   },
+   {
+    "name": "Michael VIII Palaiologos",
+    "reign": "1259 – 1282",
+    "note": "Recaptured Constantinople in 1261"
+   },
+   {
+    "name": "Constantine XI Palaiologos",
+    "reign": "1449 – 1453",
+    "note": "Last emperor, killed when the city fell"
+   }
+  ],
+  "summary": "The Byzantine Empire is the name historians give to the eastern half of the Roman Empire, which survived for nearly a thousand years after the West fell; its people always called themselves Romans. Ruled from Constantinople by emperors seen as God's representatives on earth, it was Greek-speaking and Orthodox Christian. Justinian I reconquered Italy and North Africa and codified Roman law, but in the 7th century the Arab conquests took Syria, Egypt and Africa. The empire recovered under the Macedonian dynasty, reaching a new height under Basil II, but after defeat by the Seljuks at Manzikert in 1071 it lost most of Anatolia. Crusaders sacked Constantinople in 1204. Restored in 1261 but much reduced, it fell to the Ottoman sultan Mehmed II in 1453.",
+  "legacy": "Byzantium preserved Greek and Roman learning, shaped Orthodox Christianity and the Slavic world, and built masterpieces such as Hagia Sophia.",
+  "sources": [
+   {
+    "title": "Britannica: Byzantine Empire",
+    "url": "https://www.britannica.com/place/Byzantine-Empire"
+   },
+   {
+    "title": "Wikipedia: Byzantine Empire",
+    "url": "https://en.wikipedia.org/wiki/Byzantine_Empire"
+   },
+   {
+    "title": "Wikipedia: Basil II",
+    "url": "https://en.wikipedia.org/wiki/Basil_II"
+   },
+   {
+    "title": "Turchin, Adams & Hall (2006), East-West Orientation of Historical Empires, Journal of World-Systems Research 12(2), Table 1",
+    "url": "https://jwsr.pitt.edu/ojs/jwsr/article/download/369/381"
+   },
+   {
+    "title": "Wikipedia: List of largest empires (Taagepera 1978/1979/1997 and Turchin et al. 2006 figures)",
+    "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+   }
+  ]
+ },
+ {
+  "id": "hunnic-empire",
+  "name": "Hunnic Empire",
+  "aliases": [
+   "Hunnic Empire"
+  ],
+  "clio": [
+   "Hunnic Empire",
+   "Huns"
+  ],
+  "region": "europe",
+  "start": 370,
+  "end": 469,
+  "capital": "Royal camp on the Hungarian plain",
+  "peak": {
+   "year": 450,
+   "areaKm2": 4000000,
+   "note": "Under Attila, from the Rhine to the steppes north of the Black Sea; c. 4.0M km² in 441 (Taagepera 1979); c. 4.0M km² c. 441 (Taagepera 1979; Turchin, Adams & Hall 2006)"
+  },
+  "rulers": [
+   {
+    "name": "Uldin",
+    "reign": "c. 400 – 412",
+    "note": "First Hunnic leader known by name in Roman sources"
+   },
+   {
+    "name": "Rugila",
+    "reign": "c. 420s – 434",
+    "note": "United the Huns and extracted Roman tribute"
+   },
+   {
+    "name": "Bleda",
+    "reign": "434 – c. 445",
+    "note": "Co-ruler with his brother Attila"
+   },
+   {
+    "name": "Attila",
+    "reign": "434 – 453",
+    "note": "Invaded the Balkans, Gaul and Italy"
+   },
+   {
+    "name": "Dengizich",
+    "reign": "d. 469",
+    "note": "Son of Attila and last Hunnic ruler, killed fighting Rome"
+   }
+  ],
+  "summary": "The Huns were nomadic horse-archers from the Eurasian steppe whose arrival north of the Black Sea around 370 drove the Goths and other peoples into the Roman Empire, setting off the great migrations. By the early 5th century they had settled on the Hungarian plain and built a loose empire over many subject peoples, including Germanic tribes, held together by plunder and Roman tribute payments. Under the brothers Bleda and Attila, and then Attila alone, the Huns ravaged the Balkans, extracted huge sums of gold from Constantinople, and invaded Gaul in 451 and Italy in 452. After Attila's sudden death in 453 his sons quarrelled, subject peoples rebelled and won at the Battle of Nedao in 454, and the empire disintegrated; its last leader, Dengizich, was killed in 469.",
+  "legacy": "The Huns hastened the collapse of the Western Roman Empire, and Attila became a lasting European byword for a fearsome conqueror.",
+  "sources": [
+   {
+    "title": "Britannica: Hun",
+    "url": "https://www.britannica.com/topic/Hun-people"
+   },
+   {
+    "title": "Wikipedia: Huns",
+    "url": "https://en.wikipedia.org/wiki/Huns"
+   },
+   {
+    "title": "Wikipedia: Attila",
+    "url": "https://en.wikipedia.org/wiki/Attila"
+   },
+   {
+    "title": "Turchin, Adams & Hall (2006), East-West Orientation of Historical Empires, Journal of World-Systems Research 12(2), Table 1",
+    "url": "https://jwsr.pitt.edu/ojs/jwsr/article/download/369/381"
+   },
+   {
+    "title": "Wikipedia: List of largest empires (Taagepera/Turchin figures)",
+    "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+   }
+  ]
+ },
+ {
+  "id": "frankish-kingdom",
+  "name": "Frankish Kingdom (Merovingian)",
+  "aliases": [
+   "Franks",
+   "Frankish Kingdom",
+   "Neustria"
+  ],
+  "clio": [
+   "(Merovingian Empire)",
+   "Merovingian Empire",
+   "(Kingdom of the Franks)",
+   "Kingdom of the Franks",
+   "Salian Franks",
+   "Ripuarian Franks"
+  ],
+  "region": "europe",
+  "start": 481,
+  "end": 751,
+  "capital": "Tournai, then Paris, with other royal seats at Soissons, Orléans and Metz",
+  "peak": {
+   "year": 630,
+   "areaKm2": 600000,
+   "note": "Gaul and much of western Germany under Dagobert I"
+  },
+  "rulers": [
+   {
+    "name": "Clovis I",
+    "reign": "481 – 511",
+    "note": "United the Franks and converted to Catholic Christianity"
+   },
+   {
+    "name": "Chlothar I",
+    "reign": "511 – 561",
+    "note": "Briefly reunited the divided kingdom"
+   },
+   {
+    "name": "Dagobert I",
+    "reign": "629 – 639",
+    "note": "Last strong Merovingian king"
+   },
+   {
+    "name": "Charles Martel",
+    "reign": "mayor of the palace 718 – 741",
+    "note": "Real ruler; defeated an Arab army near Poitiers in 732"
+   },
+   {
+    "name": "Childeric III",
+    "reign": "743 – 751",
+    "note": "Last Merovingian king, deposed by Pepin the Short"
+   }
+  ],
+  "summary": "The Franks were a group of Germanic peoples living along the lower Rhine who served as Roman allies. Clovis I of the Merovingian family united them, defeated the last Roman ruler in Gaul in 486 and the Visigoths in 507, and converted to Catholic Christianity, winning the support of the Gallo-Roman bishops and nobility. Frankish custom divided the kingdom among a king's sons, so it was repeatedly split into sub-kingdoms such as Neustria, Austrasia and Burgundy, then reunited. From the late 7th century the Merovingian kings became figureheads, while real power passed to the mayors of the palace. One of these, Charles Martel, defeated an Arab army near Poitiers in 732, and his son Pepin the Short deposed the last Merovingian king in 751.",
+  "legacy": "The Merovingian kingdom laid the foundations of France and Germany and made the Franks the leading Catholic power in western Europe.",
+  "sources": [
+   {
+    "title": "Britannica: Merovingian dynasty",
+    "url": "https://www.britannica.com/topic/Merovingian-dynasty"
+   },
+   {
+    "title": "Wikipedia: Francia",
+    "url": "https://en.wikipedia.org/wiki/Francia"
+   },
+   {
+    "title": "Wikipedia: Merovingian dynasty",
+    "url": "https://en.wikipedia.org/wiki/Merovingian_dynasty"
+   },
+   {
+    "title": "Wikipedia: Dagobert I",
+    "url": "https://en.wikipedia.org/wiki/Dagobert_I"
+   }
+  ]
+ },
+ {
+  "id": "carolingian-empire",
+  "name": "Carolingian Empire",
+  "aliases": [
+   "Carolingian Empire",
+   "East Francia",
+   "West Francia"
+  ],
+  "clio": [
+   "(Carolingian Empire)",
+   "Carolingian Empire",
+   "West Franks",
+   "East Franks",
+   "Middle Franks",
+   "(Allegiance of East Franks to Carolingian Empire)"
+  ],
+  "region": "europe",
+  "start": 800,
+  "end": 888,
+  "capital": "Aachen",
+  "peak": {
+   "year": 814,
+   "areaKm2": 1200000,
+   "note": "At Charlemagne's death, from the Pyrenees to the Elbe and central Italy; c. 1.2M km² c. 814 (Turchin, Adams & Hall 2006)"
+  },
+  "rulers": [
+   {
+    "name": "Pepin the Short",
+    "reign": "751 – 768",
+    "note": "First Carolingian king of the Franks"
+   },
+   {
+    "name": "Charlemagne",
+    "reign": "768 – 814 (emperor from 800)",
+    "note": "Conquered much of Europe; crowned emperor by the pope"
+   },
+   {
+    "name": "Louis the Pious",
+    "reign": "814 – 840",
+    "note": "His sons' quarrels split the empire"
+   },
+   {
+    "name": "Lothair I",
+    "reign": "840 – 855",
+    "note": "Emperor and ruler of Middle Francia"
+   },
+   {
+    "name": "Charles the Bald",
+    "reign": "843 – 877",
+    "note": "King of West Francia, later emperor"
+   },
+   {
+    "name": "Charles the Fat",
+    "reign": "881 – 887",
+    "note": "Briefly reunited the empire before being deposed"
+   }
+  ],
+  "summary": "The Carolingians were the Frankish family who replaced the Merovingian kings in 751. Pepin the Short's son Charlemagne spent most of his reign at war, conquering the Lombard kingdom in Italy, the Saxons, Bavaria and the Avars, until he ruled most of western and central Europe. On Christmas Day 800 Pope Leo III crowned him emperor of the Romans, reviving the imperial title in the West. Charlemagne governed through counts and travelling royal envoys and sponsored a revival of learning, the Carolingian Renaissance. After his son Louis the Pious died, civil war led to the Treaty of Verdun in 843, which split the empire into West, Middle and East Francia. Briefly reunited under Charles the Fat, it broke apart for good when he was deposed in 887 and died in 888.",
+  "legacy": "West and East Francia became the cores of France and Germany, and Carolingian scribes preserved much classical Latin literature in a clear script that inspired modern lowercase letters.",
+  "sources": [
+   {
+    "title": "Britannica: Carolingian dynasty",
+    "url": "https://www.britannica.com/topic/Carolingian-dynasty"
+   },
+   {
+    "title": "Wikipedia: Carolingian Empire",
+    "url": "https://en.wikipedia.org/wiki/Carolingian_Empire"
+   },
+   {
+    "title": "Wikipedia: Charles the Fat",
+    "url": "https://en.wikipedia.org/wiki/Charles_the_Fat"
+   },
+   {
+    "title": "Turchin, Adams & Hall (2006), East-West Orientation of Historical Empires, Journal of World-Systems Research 12(2), Table 1",
+    "url": "https://jwsr.pitt.edu/ojs/jwsr/article/download/369/381"
+   },
+   {
+    "title": "Wikipedia: List of largest empires (Taagepera/Turchin figures)",
+    "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+   }
+  ]
+ },
+ {
+  "id": "holy-roman-empire",
+  "name": "Holy Roman Empire",
+  "aliases": [
+   "Holy Roman Empire"
+  ],
+  "clio": [
+   "(Holy Roman Empire)",
+   "Holy Roman Empire",
+   "Holy Roman Empire Minor States",
+   "(Personal union of Holy Roman Empire with Kingdom of Sicily)"
+  ],
+  "region": "europe",
+  "start": 962,
+  "end": 1806,
+  "capital": "No fixed capital; Aachen for coronations, later Prague and Vienna as imperial seats",
+  "peak": {
+   "year": 1050,
+   "areaKm2": 1000000,
+   "note": "Under the Salian emperors: Germany, northern Italy, Burgundy and Bohemia; c. 1.0M km² c. 1050 (Taagepera 1997)"
+  },
+  "rulers": [
+   {
+    "name": "Otto I the Great",
+    "reign": "962 – 973",
+    "note": "First emperor, crowned in Rome"
+   },
+   {
+    "name": "Frederick I Barbarossa",
+    "reign": "1155 – 1190",
+    "note": "Fought the Italian cities and the papacy; died on crusade"
+   },
+   {
+    "name": "Frederick II",
+    "reign": "1220 – 1250",
+    "note": "Brilliant ruler of Germany and Sicily, enemy of the popes"
+   },
+   {
+    "name": "Charles IV",
+    "reign": "1355 – 1378",
+    "note": "Issued the Golden Bull fixing imperial elections"
+   },
+   {
+    "name": "Charles V",
+    "reign": "1519 – 1556",
+    "note": "Habsburg ruler of a vast domain during the Reformation"
+   },
+   {
+    "name": "Francis II",
+    "reign": "1792 – 1806",
+    "note": "Last emperor; dissolved the empire"
+   }
+  ],
+  "summary": "In 962 the German king Otto I was crowned emperor by the pope in Rome, renewing Charlemagne's imperial title. The resulting empire, called Holy Roman from the 12th century, joined the German lands with northern Italy and Burgundy, and later Bohemia. Its emperors were elected by leading princes, a system fixed by the Golden Bull of 1356. Emperors clashed with the papacy over control of the Church and with Italian cities over taxes, and real power steadily passed to hundreds of princes, bishops and free cities. From 1438 the Habsburgs held the title almost continuously, and Charles V ruled a vast domain, but the Reformation and the Thirty Years War left the empire a loose federation. Napoleon's victories led Francis II to dissolve it in 1806.",
+  "legacy": "The empire's layered, federal style of government shaped Germany, Austria and central Europe, though Voltaire quipped it was neither holy, nor Roman, nor an empire.",
+  "sources": [
+   {
+    "title": "Britannica: Holy Roman Empire",
+    "url": "https://www.britannica.com/place/Holy-Roman-Empire"
+   },
+   {
+    "title": "Wikipedia: Holy Roman Empire",
+    "url": "https://en.wikipedia.org/wiki/Holy_Roman_Empire"
+   },
+   {
+    "title": "Wikipedia: Otto the Great",
+    "url": "https://en.wikipedia.org/wiki/Otto_the_Great"
+   },
+   {
+    "title": "Wikipedia: List of largest empires (Taagepera 1978/1979/1997 and Turchin et al. 2006 figures)",
+    "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+   }
+  ]
+ },
+ {
+  "id": "kingdom-of-france",
+  "name": "Kingdom of France",
+  "aliases": [
+   "Kingdom of France",
+   "France"
+  ],
+  "clio": [
+   "(Kingdom of France)",
+   "Kingdom of France"
+  ],
+  "region": "europe",
+  "start": 987,
+  "end": 1792,
+  "capital": "Paris; Versailles 1682 – 1789",
+  "peak": {
+   "year": 1789,
+   "areaKm2": 530000,
+   "note": "Roughly modern mainland France plus Corsica"
+  },
+  "rulers": [
+   {
+    "name": "Hugh Capet",
+    "reign": "987 – 996",
+    "note": "Founder of the Capetian dynasty"
+   },
+   {
+    "name": "Philip II Augustus",
+    "reign": "1180 – 1223",
+    "note": "Took Normandy and other lands from the English kings"
+   },
+   {
+    "name": "Louis IX (Saint Louis)",
+    "reign": "1226 – 1270",
+    "note": "Crusader king, later canonised"
+   },
+   {
+    "name": "Charles VII",
+    "reign": "1422 – 1461",
+    "note": "With Joan of Arc's help, won the Hundred Years War"
+   },
+   {
+    "name": "Henry IV",
+    "reign": "1589 – 1610",
+    "note": "First Bourbon king; ended the Wars of Religion"
+   },
+   {
+    "name": "Louis XIV",
+    "reign": "1643 – 1715",
+    "note": "The Sun King, model of absolute monarchy"
+   },
+   {
+    "name": "Louis XVI",
+    "reign": "1774 – 1792",
+    "note": "Last king before the Revolution; executed in 1793"
+   }
+  ],
+  "summary": "When the last Carolingian king of West Francia died in 987, the nobles elected Hugh Capet, whose family directly ruled only a small region around Paris. Over the next three centuries the Capetian kings steadily extended royal power over the great dukes and counts, and Philip II Augustus took Normandy and other lands from the English Angevin kings. The Hundred Years War with England, from 1337, nearly broke the kingdom until Joan of Arc helped revive the cause of Charles VII and the English were expelled by 1453. Under the Bourbon dynasty France became Europe's leading power, and Louis XIV ruled as an absolute monarch from Versailles. Debt, inequality and Enlightenment ideas fuelled the Revolution of 1789, and the monarchy was abolished in 1792.",
+  "legacy": "The French monarchy built one of Europe's first centralised nation-states, and its overthrow launched the age of modern revolutions.",
+  "sources": [
+   {
+    "title": "Britannica: Capetian dynasty",
+    "url": "https://www.britannica.com/topic/Capetian-dynasty"
+   },
+   {
+    "title": "Wikipedia: Kingdom of France",
+    "url": "https://en.wikipedia.org/wiki/Kingdom_of_France"
+   },
+   {
+    "title": "Wikipedia: Louis XVI",
+    "url": "https://en.wikipedia.org/wiki/Louis_XVI"
+   }
+  ]
+ },
+ {
+  "id": "kingdom-of-england",
+  "name": "Kingdom of England",
+  "aliases": [
+   "England",
+   "English territory",
+   "Angevin Empire",
+   "England and Ireland"
+  ],
+  "clio": [
+   "(Kingdom of England)",
+   "Kingdom of England",
+   "Norman England",
+   "Angevin Empire"
+  ],
+  "region": "europe",
+  "start": 927,
+  "end": 1707,
+  "capital": "Winchester, then London",
+  "peak": {
+   "year": 1180,
+   "areaKm2": 380000,
+   "note": "Henry II's Angevin lands, from the Scottish border to the Pyrenees"
+  },
+  "rulers": [
+   {
+    "name": "Æthelstan",
+    "reign": "927 – 939",
+    "note": "First king of all England"
+   },
+   {
+    "name": "William I the Conqueror",
+    "reign": "1066 – 1087",
+    "note": "Norman conqueror of England"
+   },
+   {
+    "name": "Henry II",
+    "reign": "1154 – 1189",
+    "note": "Ruled the Angevin realm and reformed English law"
+   },
+   {
+    "name": "Edward I",
+    "reign": "1272 – 1307",
+    "note": "Conquered Wales and developed Parliament"
+   },
+   {
+    "name": "Edward III",
+    "reign": "1327 – 1377",
+    "note": "Began the Hundred Years War"
+   },
+   {
+    "name": "Henry VIII",
+    "reign": "1509 – 1547",
+    "note": "Broke with the Roman Church"
+   },
+   {
+    "name": "Elizabeth I",
+    "reign": "1558 – 1603",
+    "note": "Defeated the Spanish Armada"
+   },
+   {
+    "name": "Anne",
+    "reign": "1702 – 1707",
+    "note": "Last monarch of England alone; then of Great Britain"
+   }
+  ],
+  "summary": "The Kingdom of England was created when Æthelstan of Wessex, building on his grandfather Alfred the Great's resistance to the Vikings, brought all the English kingdoms under his rule in 927. After conquest by the Danish king Cnut in 1016 and William of Normandy in 1066, England was tied to French lands, and under Henry II it formed the core of the Angevin realm stretching to the Pyrenees. Kings shared power with barons, as in Magna Carta of 1215, and from the 13th century with Parliament. England fought the Hundred Years War against France, lost its French territories and endured the Wars of the Roses. The Tudors broke with Rome and ruled Ireland as a kingdom. In 1707 England united with Scotland to form Great Britain.",
+  "legacy": "Medieval England developed the common law, Magna Carta and Parliament, institutions later spread worldwide by the British Empire.",
+  "sources": [
+   {
+    "title": "Britannica: England",
+    "url": "https://www.britannica.com/place/England"
+   },
+   {
+    "title": "Wikipedia: Kingdom of England",
+    "url": "https://en.wikipedia.org/wiki/Kingdom_of_England"
+   },
+   {
+    "title": "Wikipedia: Æthelstan",
+    "url": "https://en.wikipedia.org/wiki/%C3%86thelstan"
+   }
+  ]
+ },
+ {
+  "id": "kievan-rus",
+  "name": "Kievan Rus'",
+  "aliases": [
+   "Kievan Rus",
+   "Kyivan Rus",
+   "Rus' Khaganate",
+   "Principality of Kyiv"
+  ],
+  "clio": [
+   "Kievan Rus'",
+   "Rus'",
+   "Principality of Kiev"
+  ],
+  "region": "europe",
+  "start": 882,
+  "end": 1240,
+  "capital": "Kyiv",
+  "peak": {
+   "year": 1050,
+   "areaKm2": 2100000,
+   "note": "Under Yaroslav the Wise, from the Baltic to the Black Sea steppe; Taagepera (1997) gives a larger c. 2.1M km² for c. 1000; c. 2.1M km² c. 1000 (Taagepera 1997; Turchin, Adams & Hall 2006); other estimates c. 1.3M km²"
+  },
+  "rulers": [
+   {
+    "name": "Oleg",
+    "reign": "c. 879 – 912",
+    "note": "Took Kyiv in 882 and made it his capital"
+   },
+   {
+    "name": "Olga",
+    "reign": "regent 945 – c. 957",
+    "note": "First ruler of Rus to be baptised"
+   },
+   {
+    "name": "Sviatoslav I",
+    "reign": "c. 945 – 972",
+    "note": "Destroyed the Khazar Khaganate"
+   },
+   {
+    "name": "Vladimir the Great",
+    "reign": "980 – 1015",
+    "note": "Converted Rus to Orthodox Christianity in 988"
+   },
+   {
+    "name": "Yaroslav the Wise",
+    "reign": "1019 – 1054",
+    "note": "Lawgiver and builder of St Sophia's Cathedral"
+   },
+   {
+    "name": "Vladimir Monomakh",
+    "reign": "1113 – 1125",
+    "note": "Last prince to hold the realm together"
+   }
+  ],
+  "summary": "Kievan Rus grew from settlements of Scandinavian traders and warriors, known as the Rus or Varangians, along the river routes linking the Baltic to the Black Sea and Byzantium. According to the Primary Chronicle, Oleg of Novgorod seized Kyiv in 882 and made it his capital, ruling over East Slavic, Finnic and Baltic peoples. The Rurikid princes collected tribute in furs and slaves and traded with Constantinople, which they also raided. In 988 Vladimir the Great accepted Orthodox Christianity from Byzantium, and his son Yaroslav the Wise issued a law code and built St Sophia's Cathedral. After 1054 the realm fragmented into rival principalities ruled by branches of the dynasty. The Mongol invasion destroyed it, and Kyiv was sacked in 1240.",
+  "legacy": "Kievan Rus is claimed as the shared cradle of Ukraine, Russia and Belarus, and gave them Orthodox Christianity and the Cyrillic literary tradition.",
+  "sources": [
+   {
+    "title": "Britannica: Kyivan Rus",
+    "url": "https://www.britannica.com/topic/Kyivan-Rus"
+   },
+   {
+    "title": "Wikipedia: Kievan Rus'",
+    "url": "https://en.wikipedia.org/wiki/Kievan_Rus'"
+   },
+   {
+    "title": "Wikipedia: Olga of Kiev",
+    "url": "https://en.wikipedia.org/wiki/Olga_of_Kiev"
+   },
+   {
+    "title": "Turchin, Adams & Hall (2006), East-West Orientation of Historical Empires, Journal of World-Systems Research 12(2), Table 1",
+    "url": "https://jwsr.pitt.edu/ojs/jwsr/article/download/369/381"
+   },
+   {
+    "title": "Wikipedia: List of largest empires (Taagepera/Turchin figures)",
+    "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+   }
+  ]
+ },
+ {
+  "id": "bulgarian-empire",
+  "name": "Bulgarian Empire",
+  "aliases": [
+   "Bulgars",
+   "Danube Bulgars",
+   "Bulgar Khanate"
+  ],
+  "clio": [
+   "First Bulgarian Empire",
+   "Second Bulgarian Empire",
+   "Old Great Bulgaria"
+  ],
+  "region": "europe",
+  "start": 681,
+  "end": 1396,
+  "capital": "Pliska, then Preslav and Ohrid; Tarnovo in the Second Empire",
+  "peak": {
+   "year": 920,
+   "areaKm2": 500000,
+   "note": "Under Simeon I, across most of the Balkans"
+  },
+  "rulers": [
+   {
+    "name": "Asparukh",
+    "reign": "681 – 700",
+    "note": "Founder of the Danube Bulgar state"
+   },
+   {
+    "name": "Krum",
+    "reign": "c. 803 – 814",
+    "note": "Defeated and killed Emperor Nikephoros I"
+   },
+   {
+    "name": "Boris I",
+    "reign": "852 – 889",
+    "note": "Adopted Christianity in 864"
+   },
+   {
+    "name": "Simeon I the Great",
+    "reign": "893 – 927",
+    "note": "Took the title tsar; Bulgaria's golden age"
+   },
+   {
+    "name": "Samuel",
+    "reign": "997 – 1014",
+    "note": "Resisted Basil II from Ohrid"
+   },
+   {
+    "name": "Ivan Asen II",
+    "reign": "1218 – 1241",
+    "note": "Height of the Second Bulgarian Empire"
+   },
+   {
+    "name": "Ivan Shishman",
+    "reign": "1371 – 1395",
+    "note": "Last tsar at Tarnovo, conquered by the Ottomans"
+   }
+  ],
+  "summary": "The Bulgars were a Turkic people from the steppes north of the Black Sea. In 681, after defeating a Byzantine army, their khan Asparukh founded a state south of the Danube, where the Bulgars merged with the Slavic population. Khan Krum defeated and killed a Byzantine emperor in 811, and Boris I adopted Christianity in 864, after which Bulgarian scholars developed the Cyrillic alphabet. Under Simeon I, who took the title tsar, Bulgaria dominated the Balkans and rivalled Byzantium. Basil II conquered it by 1018 after decades of war. A revolt in 1185 founded the Second Bulgarian Empire with its capital at Tarnovo, which flourished under Ivan Asen II but later fragmented. The Ottomans took Tarnovo in 1393 and the last stronghold, Vidin, in 1396.",
+  "legacy": "Medieval Bulgaria spread Slavonic literacy and the Cyrillic alphabet, now used by some 250 million people.",
+  "sources": [
+   {
+    "title": "Britannica: First Bulgarian Empire",
+    "url": "https://www.britannica.com/place/First-Bulgarian-empire"
+   },
+   {
+    "title": "Wikipedia: First Bulgarian Empire",
+    "url": "https://en.wikipedia.org/wiki/First_Bulgarian_Empire"
+   },
+   {
+    "title": "Wikipedia: Second Bulgarian Empire",
+    "url": "https://en.wikipedia.org/wiki/Second_Bulgarian_Empire"
+   },
+   {
+    "title": "Wikipedia: Krum",
+    "url": "https://en.wikipedia.org/wiki/Krum"
+   }
+  ]
+ },
+ {
+  "id": "kingdom-of-hungary",
+  "name": "Kingdom of Hungary",
+  "aliases": [
+   "Magyars",
+   "Hungary",
+   "Kingdom of Hungary",
+   "Imperial Hungary"
+  ],
+  "clio": [
+   "Kingdom of Hungary",
+   "Principality of Hungary",
+   "Magyars"
+  ],
+  "region": "europe",
+  "start": 1000,
+  "end": 1918,
+  "capital": "Esztergom and Székesfehérvár, then Buda; Pozsony (Bratislava) 1536 – 1783",
+  "peak": {
+   "year": 1910,
+   "areaKm2": 325000,
+   "note": "Lands of the Hungarian Crown, including Croatia-Slavonia, within Austria-Hungary"
+  },
+  "rulers": [
+   {
+    "name": "Árpád",
+    "reign": "grand prince c. 895 – 907",
+    "note": "Led the Magyar conquest of the Carpathian Basin"
+   },
+   {
+    "name": "Stephen I",
+    "reign": "1000 – 1038",
+    "note": "First king; converted Hungary to Christianity"
+   },
+   {
+    "name": "Béla IV",
+    "reign": "1235 – 1270",
+    "note": "Rebuilt the kingdom after the Mongol invasion"
+   },
+   {
+    "name": "Louis I the Great",
+    "reign": "1342 – 1382",
+    "note": "Also king of Poland; height of medieval power"
+   },
+   {
+    "name": "Matthias Corvinus",
+    "reign": "1458 – 1490",
+    "note": "Renaissance king who took Vienna"
+   },
+   {
+    "name": "Louis II",
+    "reign": "1516 – 1526",
+    "note": "Killed fighting the Ottomans at Mohács"
+   },
+   {
+    "name": "Franz Joseph I",
+    "reign": "1867 – 1916",
+    "note": "Crowned king of Hungary in the Dual Monarchy"
+   }
+  ],
+  "summary": "The Magyars, horse-riding nomads speaking a Finno-Ugric language, crossed the Carpathians around 895 under Grand Prince Árpád and settled the Danube basin, raiding deep into Europe until their defeat at Lechfeld in 955. Árpád's descendant Stephen converted to Latin Christianity and was crowned king in 1000, founding a kingdom organised into counties around royal castles. Hungary joined with Croatia in 1102, survived the devastating Mongol invasion of 1241, and under the Angevin king Louis the Great and the Renaissance ruler Matthias Corvinus became a great power of central Europe. After the Ottomans killed King Louis II at Mohács in 1526 the kingdom was split; the Habsburgs inherited the crown and later reconquered the whole country. Hungary gained equal status within Austria-Hungary in 1867, until the monarchy collapsed in 1918.",
+  "legacy": "Hungary preserved a distinct Magyar language and identity in the heart of Europe and served for centuries as Christendom's frontier against the Ottomans.",
+  "sources": [
+   {
+    "title": "Britannica: Hungary: History",
+    "url": "https://www.britannica.com/place/Hungary/History"
+   },
+   {
+    "title": "Wikipedia: Kingdom of Hungary",
+    "url": "https://en.wikipedia.org/wiki/Kingdom_of_Hungary"
+   },
+   {
+    "title": "Wikipedia: Stephen I of Hungary",
+    "url": "https://en.wikipedia.org/wiki/Stephen_I_of_Hungary"
+   },
+   {
+    "title": "Wikipedia: Franz Joseph I",
+    "url": "https://en.wikipedia.org/wiki/Franz_Joseph_I"
+   }
+  ]
+ },
+ {
+  "id": "kingdom-of-poland",
+  "name": "Kingdom of Poland",
+  "aliases": [
+   "Poland",
+   "Poland-Lithuania"
+  ],
+  "clio": [
+   "(Kingdom of Poland)",
+   "Kingdom of Poland",
+   "(Polish-Lithuania Kingdom)",
+   "(Duchies of Poland)",
+   "Duchies of Poland"
+  ],
+  "region": "europe",
+  "start": 1025,
+  "end": 1569,
+  "capital": "Gniezno, then Kraków",
+  "peak": {
+   "year": 1490,
+   "areaKm2": 1100000,
+   "note": "Jagiellonian Poland together with Lithuania in personal union; Poland-Lithuania c. 1.1M km² c. 1480 (Turchin, Adams & Hall 2006)"
+  },
+  "rulers": [
+   {
+    "name": "Mieszko I",
+    "reign": "duke c. 960 – 992",
+    "note": "Accepted Christianity in 966"
+   },
+   {
+    "name": "Bolesław I the Brave",
+    "reign": "992 – 1025",
+    "note": "Crowned first king of Poland in 1025"
+   },
+   {
+    "name": "Casimir III the Great",
+    "reign": "1333 – 1370",
+    "note": "Rebuilt the kingdom and founded Kraków University"
+   },
+   {
+    "name": "Jadwiga",
+    "reign": "1384 – 1399",
+    "note": "Queen whose marriage to Jogaila united Poland and Lithuania"
+   },
+   {
+    "name": "Władysław II Jagiełło",
+    "reign": "1386 – 1434",
+    "note": "Defeated the Teutonic Knights at Grunwald"
+   },
+   {
+    "name": "Sigismund II Augustus",
+    "reign": "1548 – 1572",
+    "note": "Created the Commonwealth by the Union of Lublin"
+   }
+  ],
+  "summary": "Poland emerged under the Piast dynasty, whose duke Mieszko I accepted Christianity in 966; his son Bolesław the Brave was crowned the first king in 1025. After 1138 the realm split into duchies for nearly two centuries and suffered Mongol raids, until Władysław the Short reunited it and his son Casimir the Great rebuilt it, founding the University of Kraków and welcoming Jewish settlers. In 1386 Queen Jadwiga married Jogaila, Grand Duke of Lithuania, creating a personal union under the Jagiellonian dynasty. The union crushed the Teutonic Knights at Grunwald in 1410 and became one of the largest states in Europe. Power gradually shifted to the nobility through the Sejm, and in 1569 the Union of Lublin turned the partnership into the Polish-Lithuanian Commonwealth.",
+  "legacy": "Medieval Poland anchored Latin Christianity in east-central Europe and pioneered a parliamentary noble democracy that later produced Europe's first modern written constitution in 1791.",
+  "sources": [
+   {
+    "title": "Britannica: Piast dynasty",
+    "url": "https://www.britannica.com/topic/Piast-dynasty"
+   },
+   {
+    "title": "Britannica: Jagiellon dynasty",
+    "url": "https://www.britannica.com/topic/Jagiellon-dynasty"
+   },
+   {
+    "title": "Wikipedia: Kingdom of Poland",
+    "url": "https://en.wikipedia.org/wiki/Kingdom_of_Poland"
+   },
+   {
+    "title": "Turchin, Adams & Hall (2006), East-West Orientation of Historical Empires, Journal of World-Systems Research 12(2), Table 1",
+    "url": "https://jwsr.pitt.edu/ojs/jwsr/article/download/369/381"
+   }
+  ]
+ },
+ {
+  "id": "grand-duchy-of-lithuania",
+  "name": "Grand Duchy of Lithuania",
+  "aliases": [
+   "Lithuania"
+  ],
+  "clio": [
+   "Grand Duchy of Lithuania"
+  ],
+  "region": "europe",
+  "start": 1236,
+  "end": 1795,
+  "capital": "Vilnius",
+  "peak": {
+   "year": 1430,
+   "areaKm2": 930000,
+   "note": "Under Vytautas, from the Baltic almost to the Black Sea"
+  },
+  "rulers": [
+   {
+    "name": "Mindaugas",
+    "reign": "c. 1236 – 1263",
+    "note": "Unified Lithuania; crowned king in 1253"
+   },
+   {
+    "name": "Gediminas",
+    "reign": "c. 1316 – 1341",
+    "note": "Made Vilnius his capital and expanded into Rus lands"
+   },
+   {
+    "name": "Algirdas",
+    "reign": "1345 – 1377",
+    "note": "Pushed the borders toward the Black Sea"
+   },
+   {
+    "name": "Jogaila",
+    "reign": "1377 – 1381, 1382 – 1392",
+    "note": "Became king of Poland and Christianised Lithuania"
+   },
+   {
+    "name": "Vytautas the Great",
+    "reign": "1392 – 1430",
+    "note": "Ruled Lithuania at its greatest extent"
+   }
+  ],
+  "summary": "Lithuania was the last pagan state in Europe. Facing the crusading Teutonic Knights, Baltic tribes united under Mindaugas in the 1230s; he was briefly crowned a Christian king in 1253. Gediminas made Vilnius his capital in the early 14th century, and he and his son Algirdas expanded south-east into the lands of the former Kievan Rus, weakened by the Mongols, so that most of the grand duchy's subjects were Orthodox Slavs. In 1386 Grand Duke Jogaila became king of Poland and accepted Catholic baptism for Lithuania. His cousin Vytautas ruled Lithuania at its greatest extent, stretching to the Black Sea. Union with Poland deepened into the Polish-Lithuanian Commonwealth in 1569, which was partitioned by Russia, Prussia and Austria by 1795.",
+  "legacy": "Lithuania built one of medieval Europe's largest states, and its multi-faith, multilingual tradition shaped modern Lithuania, Belarus and Ukraine.",
+  "sources": [
+   {
+    "title": "Britannica: Lithuania: History",
+    "url": "https://www.britannica.com/place/Lithuania/History"
+   },
+   {
+    "title": "Wikipedia: Grand Duchy of Lithuania",
+    "url": "https://en.wikipedia.org/wiki/Grand_Duchy_of_Lithuania"
+   },
+   {
+    "title": "Wikipedia: Gediminas",
+    "url": "https://en.wikipedia.org/wiki/Gediminas"
+   }
+  ]
+ },
+ {
+  "id": "republic-of-venice",
+  "name": "Republic of Venice",
+  "aliases": [
+   "Venice"
+  ],
+  "clio": [
+   "Republic of Venice"
+  ],
+  "region": "europe",
+  "start": 697,
+  "end": 1797,
+  "capital": "Venice",
+  "peak": {
+   "year": 1490,
+   "areaKm2": 60000,
+   "note": "Mainland territories in north-east Italy plus Dalmatia, Crete, Cyprus and Aegean islands"
+  },
+  "rulers": [
+   {
+    "name": "Paolo Lucio Anafesto",
+    "reign": "697 – 717 (traditional)",
+    "note": "Traditional first doge"
+   },
+   {
+    "name": "Pietro II Orseolo",
+    "reign": "991 – 1009",
+    "note": "Secured the Adriatic and Dalmatian coast"
+   },
+   {
+    "name": "Enrico Dandolo",
+    "reign": "1192 – 1205",
+    "note": "Diverted the Fourth Crusade to Constantinople"
+   },
+   {
+    "name": "Francesco Foscari",
+    "reign": "1423 – 1457",
+    "note": "Built Venice's mainland empire"
+   },
+   {
+    "name": "Ludovico Manin",
+    "reign": "1789 – 1797",
+    "note": "Last doge, abdicated before Napoleon"
+   }
+  ],
+  "summary": "Venice was founded by people fleeing barbarian invasions to the islands of a lagoon at the head of the Adriatic. Traditionally its first doge, or duke, was elected in 697, and the city gradually broke free from Byzantine rule. Venice grew rich as the middleman between Europe and the eastern Mediterranean, trading spices, silk and slaves. Its merchant aristocracy governed through an elected doge, a Great Council and the powerful Council of Ten, a system that proved remarkably stable. In 1204 Doge Enrico Dandolo diverted the Fourth Crusade to sack Constantinople, giving Venice a chain of colonies including Crete. Venice later conquered a mainland empire in northern Italy, but Ottoman wars and new ocean trade routes eroded its power, and Napoleon ended the republic in 1797.",
+  "legacy": "Venice was a model of republican government and commerce, and its art, architecture and canals made it one of the world's most celebrated cities.",
+  "sources": [
+   {
+    "title": "Britannica: Venice: History",
+    "url": "https://www.britannica.com/place/Venice/History"
+   },
+   {
+    "title": "Wikipedia: Republic of Venice",
+    "url": "https://en.wikipedia.org/wiki/Republic_of_Venice"
+   },
+   {
+    "title": "Wikipedia: Enrico Dandolo",
+    "url": "https://en.wikipedia.org/wiki/Enrico_Dandolo"
+   }
+  ]
+ },
+ {
+  "id": "grand-duchy-of-moscow",
+  "name": "Grand Duchy of Moscow (Muscovy)",
+  "aliases": [
+   "Grand Duchy of Moscow"
+  ],
+  "clio": [
+   "Grand Principality of Moscow"
+  ],
+  "region": "europe",
+  "start": 1263,
+  "end": 1547,
+  "capital": "Moscow",
+  "peak": {
+   "year": 1533,
+   "areaKm2": 2800000,
+   "note": "At the death of Vasili III, after absorbing Novgorod, Tver and Pskov; already c. 2.5M km² by 1505"
+  },
+  "rulers": [
+   {
+    "name": "Daniel of Moscow",
+    "reign": "c. 1263 – 1303",
+    "note": "First prince of Moscow"
+   },
+   {
+    "name": "Ivan I Kalita",
+    "reign": "1325 – 1340",
+    "note": "Won the title of grand prince from the Golden Horde"
+   },
+   {
+    "name": "Dmitry Donskoy",
+    "reign": "1359 – 1389",
+    "note": "Defeated a Mongol army at Kulikovo in 1380"
+   },
+   {
+    "name": "Ivan III the Great",
+    "reign": "1462 – 1505",
+    "note": "Annexed Novgorod and ended tribute to the Horde"
+   },
+   {
+    "name": "Vasili III",
+    "reign": "1505 – 1533",
+    "note": "Completed the gathering of the Russian lands"
+   },
+   {
+    "name": "Ivan IV",
+    "reign": "1533 – 1547 (as grand prince)",
+    "note": "Crowned tsar in 1547"
+   }
+  ],
+  "summary": "Moscow was a minor town when Daniel, youngest son of Alexander Nevsky, received it around 1263. Its princes rose by serving the Mongol Golden Horde as tax collectors; Ivan I gained the title of grand prince and persuaded the head of the Russian Church to settle in Moscow. Dmitry Donskoy defeated a Mongol army at Kulikovo in 1380, showing the Horde could be beaten. Ivan III annexed the rich republic of Novgorod in 1478, ended tribute to the Horde after the stand on the Ugra river in 1480, married a Byzantine princess and adopted the double-headed eagle. His son Vasili III completed the gathering of the Russian lands. In 1547 Ivan IV was crowned tsar, turning the grand duchy into the Tsardom of Russia.",
+  "legacy": "Muscovy was the nucleus of the Russian state, which grew into the largest country in the world.",
+  "sources": [
+   {
+    "title": "Britannica: Grand Principality of Moscow",
+    "url": "https://www.britannica.com/place/Grand-Principality-of-Moscow"
+   },
+   {
+    "title": "Wikipedia: Grand Principality of Moscow",
+    "url": "https://en.wikipedia.org/wiki/Grand_Principality_of_Moscow"
+   },
+   {
+    "title": "Wikipedia: Ivan I of Moscow",
+    "url": "https://en.wikipedia.org/wiki/Ivan_I_of_Moscow"
+   },
+   {
+    "title": "Wikipedia: Vasili III of Russia",
+    "url": "https://en.wikipedia.org/wiki/Vasili_III_of_Russia"
+   }
+  ]
+ },
+ {
+  "id": "caliphate-of-cordoba",
+  "name": "Umayyad Emirate and Caliphate of Córdoba",
+  "aliases": [
+   "Emirate of Córdoba",
+   "Caliphate of Córdoba"
+  ],
+  "clio": [
+   "Emirate of Córdoba",
+   "Caliphate of Córdoba"
+  ],
+  "region": "europe",
+  "start": 756,
+  "end": 1031,
+  "capital": "Córdoba (with the palace-city of Madinat al-Zahra)",
+  "peak": {
+   "year": 1000,
+   "areaKm2": 600000,
+   "note": "Most of the Iberian Peninsula plus parts of North Africa under al-Mansur; c. 0.6M km² c. 1000 (Taagepera 1997)"
+  },
+  "rulers": [
+   {
+    "name": "Abd al-Rahman I",
+    "reign": "756 – 788",
+    "note": "Umayyad refugee who founded the emirate"
+   },
+   {
+    "name": "Abd al-Rahman II",
+    "reign": "822 – 852",
+    "note": "Patron of culture and builder"
+   },
+   {
+    "name": "Abd al-Rahman III",
+    "reign": "912 – 961",
+    "note": "Declared himself caliph in 929"
+   },
+   {
+    "name": "al-Hakam II",
+    "reign": "961 – 976",
+    "note": "Scholar-caliph with a famous library"
+   },
+   {
+    "name": "al-Mansur (Almanzor)",
+    "reign": "chamberlain 978 – 1002",
+    "note": "Real ruler who raided the Christian north"
+   },
+   {
+    "name": "Hisham III",
+    "reign": "1027 – 1031",
+    "note": "Last caliph"
+   }
+  ],
+  "summary": "When the Abbasids massacred the Umayyad family in 750, the young prince Abd al-Rahman escaped to Spain and seized Córdoba in 756, founding an independent emirate in al-Andalus. His successors governed a diverse society of Arabs, Berbers, Muslim converts, Christians and Jews, and Córdoba grew into western Europe's largest and most sophisticated city, with its Great Mosque, libraries and paved, lit streets. In 929 Abd al-Rahman III declared himself caliph, rivalling the Fatimids and Abbasids. Under him and the powerful chamberlain al-Mansur, who raided the Christian north and sacked Santiago de Compostela, the caliphate dominated Iberia. After al-Mansur's sons died, civil war broke out in 1009, and the caliphate was abolished in 1031, splitting into small rival kingdoms called taifas.",
+  "legacy": "Umayyad Córdoba was a beacon of learning, poetry and architecture whose Great Mosque still stands, and through al-Andalus much classical and Arabic knowledge reached Christian Europe.",
+  "sources": [
+   {
+    "title": "Britannica: Umayyad dynasty",
+    "url": "https://www.britannica.com/topic/Umayyad-dynasty-Islamic-history"
+   },
+   {
+    "title": "Wikipedia: Umayyad state of Córdoba",
+    "url": "https://en.wikipedia.org/wiki/Umayyad_state_of_C%C3%B3rdoba"
+   },
+   {
+    "title": "Wikipedia: Abd al-Rahman III",
+    "url": "https://en.wikipedia.org/wiki/Abd_al-Rahman_III"
+   },
+   {
+    "title": "Wikipedia: List of largest empires (Taagepera 1978/1979/1997 and Turchin et al. 2006 figures)",
+    "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+   }
+  ]
+ },
+ {
+  "id": "achaemenid-empire",
+  "name": "Achaemenid Empire",
+  "aliases": [
+   "Achaemenid Empire"
+  ],
+  "clio": [
+   "Achaemenid Empire"
+  ],
+  "region": "middle-east-south-asia",
+  "start": -550,
+  "end": -330,
+  "capital": "Pasargadae, Susa, Persepolis, Ecbatana and Babylon",
+  "peak": {
+   "year": -500,
+   "areaKm2": 5500000,
+   "note": "Under Darius I, from Egypt and Thrace to the Indus; c. 5.5M km² c. 500 BCE (Taagepera 1979); c. 5.5M km² c. 500 BCE (Taagepera 1979; Turchin, Adams & Hall 2006)"
+  },
+  "rulers": [
+   {
+    "name": "Cyrus II the Great",
+    "reign": "559 – 530 BCE",
+    "note": "Founder; conquered Media, Lydia and Babylon"
+   },
+   {
+    "name": "Cambyses II",
+    "reign": "530 – 522 BCE",
+    "note": "Conquered Egypt"
+   },
+   {
+    "name": "Darius I",
+    "reign": "522 – 486 BCE",
+    "note": "Organised the satrapies and built Persepolis"
+   },
+   {
+    "name": "Xerxes I",
+    "reign": "486 – 465 BCE",
+    "note": "Invaded Greece"
+   },
+   {
+    "name": "Artaxerxes I",
+    "reign": "465 – 424 BCE",
+    "note": "Said to have made peace with Athens (the disputed Peace of Callias)"
+   },
+   {
+    "name": "Darius III",
+    "reign": "336 – 330 BCE",
+    "note": "Last king, defeated by Alexander"
+   }
+  ],
+  "summary": "Cyrus the Great, king of the Persians in south-west Iran, overthrew his Median overlords in 550 BCE and went on to conquer Lydia and Babylon, creating the largest empire the world had yet seen. His son Cambyses added Egypt, and Darius I extended it to the Indus and into Europe. Darius organised the empire into provinces called satrapies, each paying set tribute, linked by the Royal Road and a fast courier service, and introduced standard gold coinage. The Persians generally tolerated local religions and customs, and Cyrus allowed exiled Jews to return to Jerusalem. Attempts to conquer Greece failed at Marathon and Salamis. Weakened by court intrigue and revolts, the empire fell to Alexander the Great, and Darius III was murdered in 330 BCE.",
+  "legacy": "The Achaemenids created the model of a tolerant, well-organised world empire, and Persepolis remains a symbol of Iranian identity.",
+  "sources": [
+   {
+    "title": "Britannica: Achaemenian Empire",
+    "url": "https://www.britannica.com/topic/Achaemenian-Empire"
+   },
+   {
+    "title": "Wikipedia: Achaemenid Empire",
+    "url": "https://en.wikipedia.org/wiki/Achaemenid_Empire"
+   },
+   {
+    "title": "Wikipedia: Cyrus the Great",
+    "url": "https://en.wikipedia.org/wiki/Cyrus_the_Great"
+   },
+   {
+    "title": "Turchin, Adams & Hall (2006), East-West Orientation of Historical Empires, Journal of World-Systems Research 12(2), Table 1",
+    "url": "https://jwsr.pitt.edu/ojs/jwsr/article/download/369/381"
+   },
+   {
+    "title": "Wikipedia: List of largest empires (Taagepera 1978/1979 figures)",
+    "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+   },
+   {
+    "title": "Wikipedia: Peace of Callias",
+    "url": "https://en.wikipedia.org/wiki/Peace_of_Callias"
+   }
+  ]
+ },
+ {
+  "id": "parthian-empire",
+  "name": "Parthian Empire",
+  "aliases": [
+   "Parthia",
+   "Parthian Empire"
+  ],
+  "clio": [
+   "Parthian Empire"
+  ],
+  "region": "middle-east-south-asia",
+  "start": -247,
+  "end": 224,
+  "capital": "Nisa and Hecatompylos, later Ecbatana and Ctesiphon",
+  "peak": {
+   "year": -100,
+   "areaKm2": 2800000,
+   "note": "Under Mithridates II, from the Euphrates to Afghanistan; Taagepera (1979) gives c. 2.8M km² around 1 CE; c. 2.8M km², dated c. 1 CE (Taagepera 1979; Turchin, Adams & Hall 2006)"
+  },
+  "rulers": [
+   {
+    "name": "Arsaces I",
+    "reign": "c. 247 – 217 BCE",
+    "note": "Founder of the Arsacid dynasty"
+   },
+   {
+    "name": "Mithridates I",
+    "reign": "c. 165 – 132 BCE",
+    "note": "Conquered Media and Mesopotamia"
+   },
+   {
+    "name": "Mithridates II",
+    "reign": "c. 124 – 91 BCE",
+    "note": "Brought the empire to its height"
+   },
+   {
+    "name": "Orodes II",
+    "reign": "c. 57 – 37 BCE",
+    "note": "His army destroyed Crassus at Carrhae"
+   },
+   {
+    "name": "Vologases I",
+    "reign": "c. 51 – 78 CE",
+    "note": "Won Armenia for his brother after war with Rome"
+   },
+   {
+    "name": "Artabanus IV",
+    "reign": "c. 213 – 224 CE",
+    "note": "Last king, overthrown by Ardashir"
+   }
+  ],
+  "summary": "The Parthians were an Iranian nomadic people, the Parni, who settled in the province of Parthia south-east of the Caspian Sea. Their leader Arsaces I founded the Arsacid dynasty around 247 BCE and, about 238 BCE, seized Parthia from its rebel Seleucid governor Andragoras. Mithridates I conquered Media and Mesopotamia, and by about 100 BCE Parthia stretched from the Euphrates to Afghanistan, controlling the overland Silk Road between Rome and China. The empire was decentralised, with great noble families and vassal kings holding much power, and its armoured cavalry and horse archers were formidable: at Carrhae in 53 BCE they destroyed a Roman army under Crassus. For nearly three centuries Parthia and Rome fought over Armenia and Mesopotamia. Weakened by Roman invasions and civil wars, the last king, Artabanus IV, was overthrown by the Persian Ardashir in 224.",
+  "legacy": "Parthia was Rome's great eastern rival for three centuries and kept Silk Road trade flowing; the Parthian shot, a backward arrow fired while retreating, survives as an English expression.",
+  "sources": [
+   {
+    "title": "Britannica: Parthia",
+    "url": "https://www.britannica.com/place/Parthia"
+   },
+   {
+    "title": "Wikipedia: Parthian Empire",
+    "url": "https://en.wikipedia.org/wiki/Parthian_Empire"
+   },
+   {
+    "title": "Wikipedia: Mithridates II of Parthia",
+    "url": "https://en.wikipedia.org/wiki/Mithridates_II_of_Parthia"
+   },
+   {
+    "title": "Wikipedia: Mithridates I of Parthia",
+    "url": "https://en.wikipedia.org/wiki/Mithridates_I_of_Parthia"
+   },
+   {
+    "title": "Turchin, Adams & Hall (2006), East-West Orientation of Historical Empires, Journal of World-Systems Research 12(2), Table 1",
+    "url": "https://jwsr.pitt.edu/ojs/jwsr/article/download/369/381"
+   },
+   {
+    "title": "Wikipedia: Arsaces I of Parthia",
+    "url": "https://en.wikipedia.org/wiki/Arsaces_I_of_Parthia"
+   }
+  ]
+ },
+ {
+  "id": "sasanian-empire",
+  "name": "Sasanian Empire",
+  "aliases": [
+   "Sasanian Empire",
+   "Sasanian dependencies"
+  ],
+  "clio": [
+   "Sasanian Empire",
+   "(Alliance between Sasanian Empire and Byzantine Empire)"
+  ],
+  "region": "middle-east-south-asia",
+  "start": 224,
+  "end": 651,
+  "capital": "Ctesiphon",
+  "peak": {
+   "year": 550,
+   "areaKm2": 3500000,
+   "note": "Under Khosrow I; Khosrow II briefly also held Egypt and the Levant c. 619 – 628; c. 3.5M km² c. 550 (Taagepera 1979; Turchin, Adams & Hall 2006)"
+  },
+  "rulers": [
+   {
+    "name": "Ardashir I",
+    "reign": "224 – 242",
+    "note": "Founder; overthrew the Parthians"
+   },
+   {
+    "name": "Shapur I",
+    "reign": "240 – 270",
+    "note": "Captured the Roman emperor Valerian"
+   },
+   {
+    "name": "Shapur II",
+    "reign": "309 – 379",
+    "note": "Long reign of wars with Rome"
+   },
+   {
+    "name": "Khosrow I Anushirvan",
+    "reign": "531 – 579",
+    "note": "Reformer and patron of learning"
+   },
+   {
+    "name": "Khosrow II",
+    "reign": "590 – 628",
+    "note": "Conquered Egypt and the Levant, then lost them"
+   },
+   {
+    "name": "Yazdegerd III",
+    "reign": "632 – 651",
+    "note": "Last shah, killed after the Arab conquest"
+   }
+  ],
+  "summary": "Ardashir, a Persian ruler from Fars in south-west Iran, overthrew the last Parthian king in 224 and founded the Sasanian dynasty, which saw itself as heir to the Achaemenids. The Sasanians built a more centralised state than the Parthians, with Zoroastrianism as an official religion, a powerful priesthood and strong armoured cavalry. Shapur I defeated Gordian III, forced Philip the Arab to buy peace and captured Valerian in 260. For four centuries Persia was the equal of Rome and then Byzantium, fighting over Armenia, Mesopotamia and the Caucasus. Khosrow I reformed taxes and patronised learning. Khosrow II briefly conquered Egypt and the Levant, but a Byzantine counter-attack and civil war exhausted the empire. Arab Muslim armies defeated it at al-Qadisiyya and Nahavand, and the last shah, Yazdegerd III, was killed in 651.",
+  "legacy": "Sasanian art, court culture and administration deeply influenced the Islamic caliphates, Byzantium and lands as far away as China.",
+  "sources": [
+   {
+    "title": "Britannica: Sasanian dynasty",
+    "url": "https://www.britannica.com/topic/Sasanian-dynasty"
+   },
+   {
+    "title": "Wikipedia: Sasanian Empire",
+    "url": "https://en.wikipedia.org/wiki/Sasanian_Empire"
+   },
+   {
+    "title": "Wikipedia: Khosrow II",
+    "url": "https://en.wikipedia.org/wiki/Khosrow_II"
+   },
+   {
+    "title": "Turchin, Adams & Hall (2006), East-West Orientation of Historical Empires, Journal of World-Systems Research 12(2), Table 1",
+    "url": "https://jwsr.pitt.edu/ojs/jwsr/article/download/369/381"
+   },
+   {
+    "title": "Wikipedia: Shapur I",
+    "url": "https://en.wikipedia.org/wiki/Shapur_I"
+   }
+  ]
+ },
+ {
+  "id": "maurya-empire",
+  "name": "Maurya Empire",
+  "aliases": [
+   "Mauryan Empire"
+  ],
+  "clio": [
+   "Maurya Empire"
+  ],
+  "region": "middle-east-south-asia",
+  "start": -322,
+  "end": -185,
+  "capital": "Pataliputra (modern Patna)",
+  "peak": {
+   "year": -250,
+   "areaKm2": 3400000,
+   "note": "Under Ashoka, almost all of South Asia except the far south; c. 3.4M km² c. 261 BCE (Taagepera 1979), while Turchin, Adams & Hall (2006) give c. 5.0M km²"
+  },
+  "rulers": [
+   {
+    "name": "Chandragupta Maurya",
+    "reign": "c. 322 – 298 BCE",
+    "note": "Founder; overthrew the Nanda dynasty"
+   },
+   {
+    "name": "Bindusara",
+    "reign": "c. 298 – 273 BCE",
+    "note": "Extended the empire south"
+   },
+   {
+    "name": "Ashoka",
+    "reign": "c. 268 – 232 BCE",
+    "note": "Conquered Kalinga, then embraced Buddhism and non-violence"
+   },
+   {
+    "name": "Brihadratha",
+    "reign": "c. 187 – 185 BCE",
+    "note": "Last emperor, killed by his general Pushyamitra Shunga"
+   }
+  ],
+  "summary": "Around 322 BCE Chandragupta Maurya, reportedly guided by the minister Chanakya (Kautilya), overthrew the Nanda kings of Magadha in the Ganges valley. Moving into the vacuum left by Alexander's withdrawal, he conquered the north-west and later won Afghan territory from Seleucus I. His son Bindusara pushed south, and his grandson Ashoka conquered Kalinga in a war so bloody that he turned to Buddhism. Ashoka promoted dhamma, a code of non-violence, tolerance and welfare, carved in edicts on rocks and pillars across the empire, and sent Buddhist missionaries abroad. The Mauryas ruled through a large bureaucracy, spies and a standing army, as described in the Arthashastra. After Ashoka the empire shrank, and in about 185 BCE the general Pushyamitra Shunga killed the last emperor.",
+  "legacy": "The Mauryas first unified most of the Indian subcontinent, and Ashoka's lion capital and wheel are now India's national emblem and the symbol on its flag.",
+  "sources": [
+   {
+    "title": "Britannica: Mauryan Empire",
+    "url": "https://www.britannica.com/place/Mauryan-Empire"
+   },
+   {
+    "title": "Wikipedia: Maurya Empire",
+    "url": "https://en.wikipedia.org/wiki/Maurya_Empire"
+   },
+   {
+    "title": "Wikipedia: Ashoka",
+    "url": "https://en.wikipedia.org/wiki/Ashoka"
+   },
+   {
+    "title": "Turchin, Adams & Hall (2006), East-West Orientation of Historical Empires, Journal of World-Systems Research 12(2), Table 1",
+    "url": "https://jwsr.pitt.edu/ojs/jwsr/article/download/369/381"
+   },
+   {
+    "title": "Wikipedia: List of largest empires (Taagepera 1978/1979/1997 and Turchin et al. 2006 figures)",
+    "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+   },
+   {
+    "title": "Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. III.B, The time of the Mauryan Empire, 321-181 B.C.",
+    "url": "https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/The_time_of_the_Mauryan_Empire_321-181_B.C.json&canvasID=0"
+   },
+   {
+    "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. II: The Age of Imperial Unity (Internet Archive)",
+    "url": "https://archive.org/details/ageofimperialuni07bhar"
+   }
+  ]
+ }
+]

@@ -1,0 +1,567 @@
+{
+  "_about": "Reviewed corrections applied by the app on top of Cliopatria (state borders) and historical-basemaps (peoples layer). Each entry cites the specialist log in content/factcheck/ that found it. Operations on a Cliopatria realm (matched by its row name): clip [from,to] hides it outside those years; hide [[from,to],...] hides it inside them; relabel [{from,to,name,key,addTo?}] renames it in those years (key = colour/selection group; addTo = realms whose area timelines absorb the moved area); note = text shown on the realm; scholarly = peak-area estimate shown beside the map's. Base-layer operations by snapshot year: hide [names] turns a polygon into unrecorded land; rename {old: new}.",
+  "realms": {
+    "Ptolemaic Kingdom": {
+      "relabel": [
+        {
+          "from": -331,
+          "to": -324,
+          "name": "Macedonian Empire",
+          "key": "(Macedonian Empire)",
+          "addTo": [
+            "Macedonian Empire",
+            "(Macedonian Empire)"
+          ]
+        }
+      ],
+      "note": "Polygons dated 331–324 BCE, before Ptolemy took Egypt, are Alexander's conquests mislabelled in the data; they are shown as the Macedonian Empire. The Ptolemaic kingdom proper dates from 305 BCE.",
+      "scholarly": {
+        "km2": 1000000,
+        "year": -240,
+        "source": "Taagepera 1979"
+      },
+      "log": "europe.md, africa.md"
+    },
+    "Almohad Caliphate": {
+      "hide": [
+        [
+          1250,
+          1259
+        ]
+      ],
+      "relabel": [
+        {
+          "from": 1260,
+          "to": 1343,
+          "name": "Marinid Sultanate",
+          "key": "Marinid Sultanate"
+        }
+      ],
+      "note": "The 1260–1343 polygon is the Marinid sultanate (the Almohads fell in 1269) and is shown under that name.",
+      "log": "africa.md"
+    },
+    "Mamluk Sultanate": {
+      "hide": [
+        [
+          1241,
+          1249
+        ]
+      ],
+      "note": "The 1241–49 polygon duplicated Ayyubid Egypt and is hidden; the Mamluk sultanate begins in 1250.",
+      "log": "africa.md"
+    },
+    "Golden Horde": {
+      "relabel": [
+        {
+          "from": 1503,
+          "to": 1695,
+          "name": "Golden Horde successor khanates",
+          "key": "Golden Horde successor khanates"
+        }
+      ],
+      "note": "The Golden Horde ended in 1502; later polygons under its name are shown as its successor khanates. Cliopatria also starts it only in 1294 (it existed from the 1240s as part of the Mongol Empire).",
+      "log": "islamic-iran-central-asia.md"
+    },
+    "Inca Empire": {
+      "hide": [
+        [
+          1534,
+          1539
+        ]
+      ],
+      "relabel": [
+        {
+          "from": 1540,
+          "to": 1572,
+          "name": "Neo-Inca State (Vilcabamba)",
+          "key": "Neo-Inca State (Vilcabamba)"
+        }
+      ],
+      "note": "The Inca Empire fell to Spain in 1532–33. The large 1534–39 polygon is hidden; the remnant is shown as the Neo-Inca State of Vilcabamba (to 1572). The map also under-draws the empire before 1497.",
+      "scholarly": {
+        "km2": 2000000,
+        "year": 1527,
+        "source": "Taagepera 1997"
+      },
+      "log": "americas.md"
+    },
+    "Khmer Empire": {
+      "relabel": [
+        {
+          "from": 1432,
+          "to": 1867,
+          "name": "Kingdom of Cambodia (post-Angkor)",
+          "key": "Kingdom of Cambodia (post-Angkor)"
+        }
+      ],
+      "note": "The Angkorian empire ended c. 1431; later polygons are shown as the post-Angkor Kingdom of Cambodia.",
+      "scholarly": {
+        "km2": 1000000,
+        "year": 1290,
+        "source": "Taagepera 1997"
+      },
+      "log": "southeast-asia-oceania.md"
+    },
+    "Ngô Dynasty": {
+      "relabel": [
+        {
+          "from": 966,
+          "to": 1406,
+          "name": "Đại Việt",
+          "key": "Đại Việt"
+        }
+      ],
+      "note": "The Ngô ruled 939–965 only; from 966 this polygon is Đại Việt under the Đinh, Early Lê, Lý, Trần and Hồ dynasties.",
+      "log": "southeast-asia-oceania.md"
+    },
+    "Sultanate of Malacca": {
+      "relabel": [
+        {
+          "from": 1512,
+          "to": 1861,
+          "name": "Sultanate of Johor",
+          "key": "Sultanate of Johor"
+        }
+      ],
+      "note": "Malacca fell to Portugal in 1511; later polygons under its name are its successor, Johor.",
+      "log": "southeast-asia-oceania.md"
+    },
+    "Natalia Republic": {
+      "relabel": [
+        {
+          "from": 1844,
+          "to": 1910,
+          "name": "Colony of Natal",
+          "key": "(British Empire)"
+        }
+      ],
+      "note": "The Boer Natalia Republic was annexed by Britain in 1843; afterwards this polygon is the British Colony of Natal.",
+      "log": "africa.md"
+    },
+    "People's Republic of Zanzibar": {
+      "relabel": [
+        {
+          "from": 1856,
+          "to": 1963,
+          "name": "Sultanate of Zanzibar",
+          "key": "Sultanate of Zanzibar"
+        }
+      ],
+      "note": "In the 1800s this was the Sultanate of Zanzibar; the 'People's Republic' name dates from 1964.",
+      "log": "africa.md"
+    },
+    "Yuan Dynasty": {
+      "relabel": [
+        {
+          "from": 1369,
+          "to": 1374,
+          "name": "Northern Yuan",
+          "key": "Northern Yuan"
+        }
+      ],
+      "note": "Yuan rule in China ended in 1368; the remnant on the steppe is the Northern Yuan. Cliopatria starts the Yuan in 1294 (proclaimed 1271), and draws it larger than scholarly estimates.",
+      "scholarly": {
+        "km2": 11000000,
+        "year": 1310,
+        "source": "Taagepera 1997"
+      },
+      "log": "east-asia.md"
+    },
+    "Han Dynasty": {
+      "clip": [
+        -202,
+        220
+      ],
+      "note": "The Han fell in 220 CE; later polygons are hidden. The map draws its peak smaller than scholarly estimates.",
+      "scholarly": {
+        "km2": 6500000,
+        "year": 100,
+        "source": "Taagepera 1979"
+      },
+      "log": "east-asia.md"
+    },
+    "Sui Dynasty": {
+      "clip": [
+        581,
+        618
+      ],
+      "note": "The Sui fell in 618; later polygons are hidden.",
+      "scholarly": {
+        "km2": 3100000,
+        "year": 610,
+        "source": "Taagepera 1997"
+      },
+      "log": "east-asia.md"
+    },
+    "Tibetan Empire": {
+      "clip": [
+        618,
+        842
+      ],
+      "note": "The Tibetan Empire collapsed in 842; later polygons are hidden.",
+      "scholarly": {
+        "km2": 4600000,
+        "year": 800,
+        "source": "Taagepera 1997"
+      },
+      "log": "east-asia.md"
+    },
+    "Goguryeo": {
+      "clip": [
+        -37,
+        668
+      ],
+      "note": "Goguryeo fell to Silla and Tang in 668; later polygons are hidden.",
+      "log": "east-asia.md"
+    },
+    "Shang Dynasty": {
+      "clip": [
+        -1600,
+        -1046
+      ],
+      "note": "The Shang fell to the Zhou c. 1046 BCE; later polygons are hidden. The map shows only the Shang core, far smaller than its sphere of influence.",
+      "scholarly": {
+        "km2": 1250000,
+        "year": -1122,
+        "source": "Taagepera 1978"
+      },
+      "log": "east-asia.md"
+    },
+    "Hunnic Empire": {
+      "clip": [
+        370,
+        469
+      ],
+      "note": "The Hunnic Empire broke up after Attila's death and was gone by 469; later polygons are hidden. Scholarly estimates of its peak are about twice the map's.",
+      "scholarly": {
+        "km2": 4000000,
+        "year": 441,
+        "source": "Taagepera 1979"
+      },
+      "log": "islamic-iran-central-asia.md, europe.md"
+    },
+    "Parthian Empire": {
+      "clip": [
+        -247,
+        224
+      ],
+      "note": "The Parthian Empire fell to the Sasanians in 224 CE; later polygons are hidden.",
+      "scholarly": {
+        "km2": 2800000,
+        "year": 1,
+        "source": "Taagepera 1979"
+      },
+      "log": "islamic-iran-central-asia.md"
+    },
+    "Saadi Sultanate": {
+      "clip": [
+        1510,
+        1659
+      ],
+      "note": "The Saadi dynasty ended in 1659; later polygons are hidden (the Alaouites took Morocco in the 1660s).",
+      "log": "africa.md"
+    },
+    "Sur Empire": {
+      "clip": [
+        1538,
+        1557
+      ],
+      "note": "The Sur Empire fell to the Mughals in 1556–57; later polygons are hidden.",
+      "log": "south-asia.md"
+    },
+    "Gran Colombia": {
+      "clip": [
+        1819,
+        1831
+      ],
+      "note": "Gran Colombia dissolved in 1830–31; later polygons are hidden.",
+      "log": "americas.md"
+    },
+    "Greek City-States": {
+      "clip": [
+        -800,
+        -146
+      ],
+      "note": "Greece came under Roman control in 146 BCE; later polygons are hidden.",
+      "log": "europe.md"
+    },
+    "Sasanian Empire": {
+      "note": "Cliopatria ends the Sasanian Empire in 643; it fell with Yazdegerd III's death in 651.",
+      "log": "islamic-iran-central-asia.md"
+    },
+    "Tang Dynasty": {
+      "note": "Cliopatria starts the Tang in 623 (founded 618) and draws it larger than scholarly estimates.",
+      "scholarly": {
+        "km2": 5400000,
+        "year": 715,
+        "source": "Taagepera 1997"
+      },
+      "log": "east-asia.md"
+    },
+    "Ming Dynasty": {
+      "note": "Cliopatria starts the Ming in 1375; it was proclaimed in 1368.",
+      "scholarly": {
+        "km2": 6500000,
+        "year": 1450,
+        "source": "Taagepera 1997"
+      },
+      "log": "east-asia.md"
+    },
+    "Qing Dynasty": {
+      "note": "Cliopatria starts the Qing in 1645; it was proclaimed in 1636 (1619–44 is drawn as the Later Jin). The map's peak is below scholarly estimates.",
+      "scholarly": {
+        "km2": 14700000,
+        "year": 1790,
+        "source": "Taagepera 1997; Turchin, Adams & Hall 2006"
+      },
+      "log": "east-asia.md"
+    },
+    "Mongol Empire": {
+      "note": "The map's peak exceeds scholarly estimates of the empire's extent.",
+      "scholarly": {
+        "km2": 24000000,
+        "year": 1270,
+        "source": "Turchin, Adams & Hall 2006"
+      },
+      "log": "east-asia.md"
+    },
+    "Ilkhanate": {
+      "note": "Cliopatria starts the Ilkhanate in 1294; it was founded in 1256 (earlier it is drawn inside the Mongol Empire).",
+      "log": "islamic-iran-central-asia.md"
+    },
+    "Chagatai Khanate": {
+      "note": "Cliopatria starts the Chagatai Khanate in 1294; it existed from the 1220s (earlier it is drawn inside the Mongol Empire).",
+      "log": "islamic-iran-central-asia.md"
+    },
+    "Xiongnu": {
+      "note": "Scholarly estimates of the Xiongnu peak are much larger than the map's.",
+      "scholarly": {
+        "km2": 9000000,
+        "year": -176,
+        "source": "Taagepera 1979"
+      },
+      "log": "east-asia.md, islamic-iran-central-asia.md"
+    },
+    "Seleucid Empire": {
+      "scholarly": {
+        "km2": 3900000,
+        "year": -301,
+        "source": "Taagepera 1979"
+      },
+      "note": "The map's peak is below scholarly estimates.",
+      "log": "europe.md"
+    },
+    "Abbasid Caliphate": {
+      "scholarly": {
+        "km2": 11100000,
+        "year": 750,
+        "source": "Taagepera 1997; Turchin, Adams & Hall 2006"
+      },
+      "note": "The map's peak is below scholarly estimates.",
+      "log": "islamic-iran-central-asia.md"
+    },
+    "Ottoman Empire": {
+      "scholarly": {
+        "km2": 5200000,
+        "year": 1683,
+        "source": "Taagepera 1997"
+      },
+      "note": "The map's peak (1595) is below the scholarly estimate for 1683.",
+      "log": "islamic-iran-central-asia.md"
+    },
+    "Kievan Rus'": {
+      "scholarly": {
+        "km2": 2100000,
+        "year": 1000,
+        "source": "Taagepera 1997; Turchin, Adams & Hall 2006"
+      },
+      "note": "The map's extent is below scholarly estimates.",
+      "log": "europe.md"
+    },
+    "Maratha Empire": {
+      "scholarly": {
+        "km2": 2500000,
+        "year": 1760,
+        "source": "Turchin, Adams & Hall 2006"
+      },
+      "note": "The map has no Maratha polygon for 1691–1717 and draws its 18th-century sphere far smaller than Schwartzberg (pl. VII.A) and Turchin.",
+      "log": "south-asia.md"
+    },
+    "(Delhi Sultanate)": {
+      "scholarly": {
+        "km2": 3200000,
+        "year": 1312,
+        "source": "Taagepera 1997; Turchin, Adams & Hall 2006"
+      },
+      "note": "Scholars differ on the peak: Taagepera and Turchin put it in 1312 under Alauddin Khalji; Schwartzberg (pl. V) and this map show the widest extent under Muhammad bin Tughluq in the 1330s.",
+      "log": "south-asia.md"
+    },
+    "Khalji Dynasty": {
+      "note": "Taagepera and Turchin estimate c. 3.2M km² for 1312, far more than drawn here; Schwartzberg (pl. V) shows the Khalji sphere reaching the far south only through tributary raids.",
+      "log": "south-asia.md"
+    },
+    "British Raj": {
+      "note": "Cliopatria keeps Burma inside the Raj after its separation in 1937 (except 1943–44), and has no Raj polygon before 1859 (Crown rule began 1858).",
+      "log": "south-asia.md"
+    },
+    "Vijayanagara Empire": {
+      "note": "Cliopatria ends Vijayanagara in 1571; its Aravidu kings ruled on until 1646.",
+      "log": "south-asia.md"
+    },
+    "Chola Empire": {
+      "note": "Cliopatria ends the Chola in 1259 (dynasty ended 1279). No scholarly peak-area estimate exists; the map's c. 0.5M km² is smaller than older estimates.",
+      "log": "south-asia.md"
+    },
+    "People's Republic of Bangladesh": {
+      "note": "Cliopatria starts Bangladesh in 1973; it became independent in 1971.",
+      "log": "south-asia.md"
+    },
+    "Republic of China": {
+      "note": "After 1950 the map shows c. 81,000 km², about twice the area of Taiwan and its islands (c. 36,000 km²).",
+      "log": "east-asia.md"
+    },
+    "Kingdom of Kongo": {
+      "note": "Cliopatria draws Kongo only for 1440–1669; the kingdom lasted from c. 1390 to 1914.",
+      "log": "africa.md"
+    },
+    "Empire of Kanem": {
+      "note": "Drawn far too small and starting too late; Kanem is attested from 872.",
+      "log": "africa.md"
+    },
+    "Chámpa": {
+      "note": "Cliopatria ends Champa in 1652; it survived as a Vietnamese vassal until 1832.",
+      "log": "southeast-asia-oceania.md"
+    },
+    "Srivijaya": {
+      "note": "Srivijaya's end date is debated (11th–14th century).",
+      "log": "southeast-asia-oceania.md"
+    },
+    "Canada": {
+      "note": "Cliopatria starts Canada in 1932; Confederation was in 1867 (earlier Canada is drawn within the British Empire).",
+      "log": "americas.md"
+    },
+    "South Africa": {
+      "note": "Cliopatria starts South Africa in 1932; the Union of South Africa was formed in 1910.",
+      "log": "africa.md"
+    },
+    "Commonwealth of Australia": {
+      "note": "Cliopatria starts Australia in 1905; federation was in 1901.",
+      "log": "southeast-asia-oceania.md"
+    },
+    "New Zealand": {
+      "note": "Cliopatria starts New Zealand in 1948; it was a British colony from 1840 and a dominion from 1907.",
+      "log": "southeast-asia-oceania.md"
+    },
+    "Kingdom of Hungary": {
+      "note": "Cliopatria ends the Kingdom of Hungary in 1546; under the Habsburgs it continued until 1918.",
+      "log": "europe.md"
+    }
+  },
+  "base": {
+    "-3000": {
+      "hide": [
+        "Kerma",
+        "Hurrian Kingdoms"
+      ],
+      "rename": {
+        "Ur": "Sumerian city-states"
+      }
+    },
+    "-2000": {
+      "rename": {
+        "Ur": "Isin–Larsa city-states",
+        "Hittites": "Anatolian city-states (Kanesh)"
+      }
+    },
+    "-1500": {
+      "hide": [
+        "Kingdom of David and Solomon",
+        "Urartu",
+        "Saba",
+        "state societies and Aramaean kingdoms"
+      ]
+    },
+    "-1000": {
+      "hide": [
+        "Urartu",
+        "Saba"
+      ],
+      "rename": {
+        "Kingdom of David and Solomon": "Israel (extent debated)",
+        "Hittites": "Neo-Hittite states"
+      }
+    },
+    "-700": {
+      "rename": {
+        "Kingdom of David and Solomon": "Kingdom of Judah (Assyrian vassal)",
+        "Hittites": "Neo-Hittite states (Assyrian vassals)"
+      }
+    },
+    "-323": {
+      "hide": [
+        "Teotihuacan"
+      ]
+    },
+    "-300": {
+      "hide": [
+        "Teotihuacan"
+      ]
+    },
+    "-200": {
+      "hide": [
+        "Chavin"
+      ]
+    },
+    "-100": {
+      "hide": [
+        "Chavin"
+      ]
+    },
+    "600": {
+      "rename": {
+        "Teotihuacan": "Teotihuacan (in decline after c. 550)"
+      }
+    },
+    "700": {
+      "hide": [
+        "Teotihuacan"
+      ]
+    },
+    "1100": {
+      "hide": [
+        "Huari Empire"
+      ]
+    },
+    "1200": {
+      "hide": [
+        "Huari Empire",
+        "Toltec Empire"
+      ]
+    },
+    "1700": {
+      "hide": [
+        "Dutch Brazil"
+      ]
+    },
+    "1715": {
+      "rename": {
+        "Haiti": "Saint-Domingue (French)"
+      }
+    },
+    "1815": {
+      "rename": {
+        "Canada": "British North America"
+      }
+    },
+    "1880": {
+      "rename": {
+        "Kingdom of Brazil": "Empire of Brazil"
+      }
+    },
+    "1900": {
+      "rename": {
+        "Kingdom of Brazil": "Republic of Brazil"
+      }
+    }
+  }
+}

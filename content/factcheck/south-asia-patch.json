@@ -1,0 +1,946 @@
+[
+ {
+  "file": "content/eras/a-ancient.json",
+  "item": -500,
+  "field": "overview",
+  "old": "the Buddha and Mahavira preach in the kingdoms of the Ganges plain, where Magadha is rising",
+  "new": "Magadha is rising among the kingdoms of the Ganges plain, where the Buddha and Mahavira lived and taught around this time (their exact dates are debated)",
+  "source": "Modern scholarship dates the Buddha c. 480-400 BCE as well as the traditional c. 563-483 BCE; Wikipedia: Gautama Buddha (dating) https://en.wikipedia.org/wiki/Gautama_Buddha ; Schwartzberg text p. 166 and pl. III.B (Pre-Mauryan Age) https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/The_Pre-Mauryan_Age.json&canvasID=0"
+ },
+ {
+  "file": "content/eras/a-ancient.json",
+  "item": -300,
+  "field": "regions.middle-east-south-asia",
+  "old": "having given Arachosia and Gandhara to Chandragupta",
+  "new": "having ceded Arachosia, the Paropamisadae (Kabul region) and probably Gedrosia to Chandragupta",
+  "source": "Majumdar (ed.), History and Culture of the Indian People, vol. II (The Age of Imperial Unity), ch. on Chandragupta, p. 59 (Seleucus ceded Aria, Arachosia and the Paropanisadae, probably part of Gedrosia; modern scholars doubt Aria) https://archive.org/details/ageofimperialuni07bhar ; Schwartzberg text p. 171 (Mauryan provinces of Arachosia and Paropamisadae) https://dsal.uchicago.edu/reference/schwartzberg/"
+ },
+ {
+  "file": "content/eras/b-medieval.json",
+  "item": 400,
+  "field": "powers[2].extent",
+  "old": "from the Indus to Bengal",
+  "new": "from the Punjab to Bengal",
+  "source": "Schwartzberg, Historical Atlas of South Asia, pl. III.D, The Gupta-Vakataka Age, c. A.D. 300-500 and text pp. 179-180 (Gupta direct rule did not reach the Indus; Punjab peoples were tributaries) https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/The_Gupta-Vakataka_Age_c._A.D._300-500.json&canvasID=0 ; Majumdar (ed.), History and Culture of the Indian People, vol. III (The Classical Age), ch. on the Imperial Guptas https://archive.org/details/classicalage03bhar"
+ },
+ {
+  "file": "content/eras/b-medieval.json",
+  "item": 500,
+  "field": "regions.middle-east-south-asia",
+  "old": "(where the Ajanta caves are being painted)",
+  "new": "(where the Ajanta caves were painted in the later 5th century)",
+  "source": "Schwartzberg text p. 180 (Harishena and the Ajanta inscription) https://dsal.uchicago.edu/reference/schwartzberg/ ; Wikipedia: Ajanta Caves (Spink dates the later caves c. 460-480; Harishena d. c. 477-500) https://en.wikipedia.org/wiki/Ajanta_Caves"
+ },
+ {
+  "file": "content/eras/b-medieval.json",
+  "item": 1100,
+  "field": "overview",
+  "old": "the Cholas still rule a maritime empire",
+  "new": "the Cholas still rule the south, though Sri Lanka broke free in 1070",
+  "source": "Majumdar (ed.), History and Culture of the Indian People, vol. V (The Struggle for Empire), p. 247 (Vijayabahu captured Polonnaruva c. 1070 and became independent of the Cholas) https://archive.org/details/struggleforempir05bhar ; Schwartzberg, Historical Atlas of South Asia, pl. IV.2, The age of the Ghaznavids, Cahmanas, Later Calukyas, and Colas, c. 975-1200 https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/The_age_of_the_Ghaznavids_Cahmanas_Later_Calukyas_and_Colas_c._975-1200.json&canvasID=0"
+ },
+ {
+  "file": "content/eras/c-earlymodern.json",
+  "item": 1700,
+  "field": "powers[0].extent",
+  "old": "from Kabul to the far south",
+  "new": "from Kabul deep into the south, short of the southern tip",
+  "source": "Schwartzberg, Historical Atlas of South Asia, pl. VI.A.3, The reigns of Jahangir, Shah Jahan, and Aurangzib, 1605-1707 (Mughal limits in 1707 stop short of the Madurai/Travancore far south) https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/The_reigns_of_Jahangir_Shah_Jahan_and_Aurangzib_1605-1707.json&canvasID=0 ; Majumdar (ed.), History and Culture of the Indian People, vol. VII (The Mughul Empire), chs. on Aurangzib (Bijapur Sept. 1686, Golconda 1687) https://archive.org/details/mughulempire00bhar"
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "indus-valley-civilisation",
+  "field": "summary",
+  "old": "granaries and great public baths",
+  "new": "possible granaries and, at Mohenjo-daro, a Great Bath",
+  "source": "Only Mohenjo-daro has a \"Great Bath\"; the granary identification is debated. Wikipedia: Mohenjo-daro https://en.wikipedia.org/wiki/Mohenjo-daro"
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "maurya-empire",
+  "field": "peak.note",
+  "old": "some estimates reach 5 million km²",
+  "new": "estimates range from c. 3.4 to 5.0 million km² (Taagepera 1979; Turchin, Adams & Hall 2006), much of it loosely controlled",
+  "source": "Wikipedia: List of largest empires (Maurya 3.4-5.0 Mm², Taagepera 1979; Turchin et al. 2006) https://en.wikipedia.org/wiki/List_of_largest_empires ; Schwartzberg text p. 171 notes frontier depiction is \"tentative\" https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/The_time_of_the_Mauryan_Empire_321-181_B.C.json&canvasID=0"
+ },
+ {
+  "file": "content/empires/a2-early.json",
+  "item": "gupta-empire",
+  "field": "rulers[3].note",
+  "old": "Founded the monastery-university of Nalanda",
+  "new": "Traditionally credited with founding the monastery-university of Nalanda",
+  "source": "Xuanzang names the founder Shakraditya, usually identified with Kumaragupta I: Wikipedia: Nalanda https://en.wikipedia.org/wiki/Nalanda ; Schwartzberg text p. 184 https://dsal.uchicago.edu/reference/schwartzberg/"
+ },
+ {
+  "file": "content/empires/a2-early.json",
+  "item": "chola-empire",
+  "field": "rulers[2].note",
+  "old": "conquered Sri Lanka",
+  "new": "conquered northern Sri Lanka",
+  "source": "Majumdar (ed.), History and Culture of the Indian People, vol. V (The Struggle for Empire), p. 234 (Rajaraja annexed the northern part of Ceylon; the whole island only under Rajendra I) https://archive.org/details/struggleforempir05bhar"
+ },
+ {
+  "file": "content/empires/a2-early.json",
+  "item": "chola-empire",
+  "field": "peak.note",
+  "old": "not covered by Taagepera or Turchin",
+  "new": "not covered by Taagepera or Turchin; the Cliopatria map shows only c. 0.5M km² under direct rule",
+  "source": "Schwartzberg, Historical Atlas of South Asia, pl. IV.2, The age of the Ghaznavids, Cahmanas, Later Calukyas, and Colas, c. 975-1200 https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/The_age_of_the_Ghaznavids_Cahmanas_Later_Calukyas_and_Colas_c._975-1200.json&canvasID=0 ; public/data/clio/index.json realm \"Chola Empire\" (max 522,021 km², 1028-1033)"
+ },
+ {
+  "file": "content/empires/a2-early.json",
+  "item": "delhi-sultanate",
+  "field": "capital",
+  "old": "Delhi (briefly Daulatabad from 1327)",
+  "new": "Delhi (briefly Daulatabad from 1327; Agra under the later Lodis)",
+  "source": "Majumdar (ed.), History and Culture of the Indian People, vol. VI (The Delhi Sultanate), chronology, entry citing p. 145: \"Sikandar Lodi transfers the capital to Agra\" (c. 1505) https://archive.org/details/delhisultanate00bhar ; Schwartzberg, Historical Atlas of South Asia, pl. V, South Asia in the time of the Lodis, 1451-1526 https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/South_Asia_in_the_time_of_the_Lodis_1451-1526.json&canvasID=0"
+ },
+ {
+  "file": "content/empires/b-late.json",
+  "item": "british-india",
+  "field": "capital",
+  "old": "New Delhi from 1911",
+  "new": "Delhi from 1911-12 (New Delhi inaugurated 1931)",
+  "source": "Transfer announced at the Delhi Durbar, Dec. 1911; New Delhi inaugurated 13 Feb. 1931: Wikipedia: New Delhi https://en.wikipedia.org/wiki/New_Delhi"
+ },
+ {
+  "file": "content/empires/b-late.json",
+  "item": "british-india",
+  "field": "rulers[3].note",
+  "old": "Proclaimed Empress of India",
+  "new": "Took the title Empress of India in 1876; proclaimed at Delhi on 1 January 1877",
+  "source": "Imperial Gazetteer of India, vol. II, pp. 488, 517 and vol. IV, p. 22 (proclaimed Empress of India on 1 January 1877) https://dsal.uchicago.edu/cgi-bin/reference/gazetteer/query.py?display_type=volume_display&volume=2"
+ },
+ {
+  "file": "content/empires/b-late.json",
+  "item": "british-india",
+  "field": "peak.note",
+  "old": "(Wikipedia: British Raj)",
+  "new": "(Wikipedia: British Raj; the 1901 census, by contrast, gave 1,766,597 sq mi, c. 4.58M km²)",
+  "source": "Imperial Gazetteer of India, vol. I, p. 449 (Indian Empire 1,766,597 sq mi; British provinces 61.5%, Native States 38.5%) https://dsal.uchicago.edu/cgi-bin/reference/gazetteer/query.py?object=479&bookid=DS405.1.I34_V01&display_type=page_display"
+ },
+ {
+  "file": "content/empires/b-late.json",
+  "item": "republic-of-india",
+  "field": "rulers[4].reign",
+  "old": "1998–2004",
+  "new": "1996, 1998–2004",
+  "source": "Vajpayee was PM for 13 days in 1996, then 1998-2004: Wikipedia: Atal Bihari Vajpayee https://en.wikipedia.org/wiki/Atal_Bihari_Vajpayee"
+ },
+ {
+  "file": "content/empires/b-late.json",
+  "item": "pakistan",
+  "field": "rulers[5].note",
+  "old": "First woman to lead a Muslim-majority country",
+  "new": "First woman elected to lead the government of a Muslim-majority country",
+  "source": "Earlier female rulers of Muslim states existed (e.g. Razia Sultana, 1236-40); Bhutto was the first woman to head a democratic government in a Muslim-majority country: Wikipedia: Benazir Bhutto https://en.wikipedia.org/wiki/Benazir_Bhutto"
+ },
+ {
+  "file": "content/eras/a-ancient.json",
+  "item": -3000,
+  "addSource": {
+   "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. I: The Vedic Age (Internet Archive)",
+   "url": "https://archive.org/details/vedicage00bhar"
+  }
+ },
+ {
+  "file": "content/eras/a-ancient.json",
+  "item": -2000,
+  "addSource": {
+   "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. I: The Vedic Age (Internet Archive)",
+   "url": "https://archive.org/details/vedicage00bhar"
+  }
+ },
+ {
+  "file": "content/eras/a-ancient.json",
+  "item": -1500,
+  "addSource": {
+   "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. I: The Vedic Age (Internet Archive)",
+   "url": "https://archive.org/details/vedicage00bhar"
+  }
+ },
+ {
+  "file": "content/eras/a-ancient.json",
+  "item": -1000,
+  "addSource": {
+   "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. I: The Vedic Age (Internet Archive)",
+   "url": "https://archive.org/details/vedicage00bhar"
+  }
+ },
+ {
+  "file": "content/eras/a-ancient.json",
+  "item": -700,
+  "addSource": {
+   "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. I: The Vedic Age (Internet Archive)",
+   "url": "https://archive.org/details/vedicage00bhar"
+  }
+ },
+ {
+  "file": "content/eras/a-ancient.json",
+  "item": -700,
+  "addSource": {
+   "title": "Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. III.B, The Pre-Mauryan Age",
+   "url": "https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/The_Pre-Mauryan_Age.json&canvasID=0"
+  }
+ },
+ {
+  "file": "content/eras/a-ancient.json",
+  "item": -500,
+  "addSource": {
+   "title": "Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. III.B, The Pre-Mauryan Age",
+   "url": "https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/The_Pre-Mauryan_Age.json&canvasID=0"
+  }
+ },
+ {
+  "file": "content/eras/a-ancient.json",
+  "item": -500,
+  "addSource": {
+   "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. II: The Age of Imperial Unity (Internet Archive)",
+   "url": "https://archive.org/details/ageofimperialuni07bhar"
+  }
+ },
+ {
+  "file": "content/eras/a-ancient.json",
+  "item": -400,
+  "addSource": {
+   "title": "Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. III.B, The Pre-Mauryan Age",
+   "url": "https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/The_Pre-Mauryan_Age.json&canvasID=0"
+  }
+ },
+ {
+  "file": "content/eras/a-ancient.json",
+  "item": -400,
+  "addSource": {
+   "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. II: The Age of Imperial Unity (Internet Archive)",
+   "url": "https://archive.org/details/ageofimperialuni07bhar"
+  }
+ },
+ {
+  "file": "content/eras/a-ancient.json",
+  "item": -323,
+  "addSource": {
+   "title": "Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. III.B, Campaigns and empire of Alexander the Great, 333-326 B.C.",
+   "url": "https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/Campaigns_and_empire_of_Alexander_the_Great_333-326_B.C.json&canvasID=0"
+  }
+ },
+ {
+  "file": "content/eras/a-ancient.json",
+  "item": -323,
+  "addSource": {
+   "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. II: The Age of Imperial Unity (Internet Archive)",
+   "url": "https://archive.org/details/ageofimperialuni07bhar"
+  }
+ },
+ {
+  "file": "content/eras/a-ancient.json",
+  "item": -300,
+  "addSource": {
+   "title": "Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. III.B, The time of the Mauryan Empire, 321-181 B.C.",
+   "url": "https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/The_time_of_the_Mauryan_Empire_321-181_B.C.json&canvasID=0"
+  }
+ },
+ {
+  "file": "content/eras/a-ancient.json",
+  "item": -300,
+  "addSource": {
+   "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. II: The Age of Imperial Unity (Internet Archive)",
+   "url": "https://archive.org/details/ageofimperialuni07bhar"
+  }
+ },
+ {
+  "file": "content/eras/a-ancient.json",
+  "item": -200,
+  "addSource": {
+   "title": "Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. III.B, The time of the Mauryan Empire, 321-181 B.C.",
+   "url": "https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/The_time_of_the_Mauryan_Empire_321-181_B.C.json&canvasID=0"
+  }
+ },
+ {
+  "file": "content/eras/a-ancient.json",
+  "item": -200,
+  "addSource": {
+   "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. II: The Age of Imperial Unity (Internet Archive)",
+   "url": "https://archive.org/details/ageofimperialuni07bhar"
+  }
+ },
+ {
+  "file": "content/eras/a-ancient.json",
+  "item": -100,
+  "addSource": {
+   "title": "Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. III.C.2, The Satavahana-Saka-Kusana age, c. A.D. 1-300",
+   "url": "https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/The_Satavahana-Saka-Kusana_age_c._A.D._1-300.json&canvasID=0"
+  }
+ },
+ {
+  "file": "content/eras/a-ancient.json",
+  "item": -100,
+  "addSource": {
+   "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. II: The Age of Imperial Unity (Internet Archive)",
+   "url": "https://archive.org/details/ageofimperialuni07bhar"
+  }
+ },
+ {
+  "file": "content/eras/a-ancient.json",
+  "item": -1,
+  "addSource": {
+   "title": "Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. III.C.2, The Satavahana-Saka-Kusana age, c. A.D. 1-300",
+   "url": "https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/The_Satavahana-Saka-Kusana_age_c._A.D._1-300.json&canvasID=0"
+  }
+ },
+ {
+  "file": "content/eras/a-ancient.json",
+  "item": -1,
+  "addSource": {
+   "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. II: The Age of Imperial Unity (Internet Archive)",
+   "url": "https://archive.org/details/ageofimperialuni07bhar"
+  }
+ },
+ {
+  "file": "content/eras/b-medieval.json",
+  "item": 100,
+  "addSource": {
+   "title": "Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. III.C.2, The Satavahana-Saka-Kusana age, c. A.D. 1-300",
+   "url": "https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/The_Satavahana-Saka-Kusana_age_c._A.D._1-300.json&canvasID=0"
+  }
+ },
+ {
+  "file": "content/eras/b-medieval.json",
+  "item": 200,
+  "addSource": {
+   "title": "Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. III.C.2, The Satavahana-Saka-Kusana age, c. A.D. 1-300",
+   "url": "https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/The_Satavahana-Saka-Kusana_age_c._A.D._1-300.json&canvasID=0"
+  }
+ },
+ {
+  "file": "content/eras/b-medieval.json",
+  "item": 300,
+  "addSource": {
+   "title": "Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. III.D, The Gupta-Vakataka Age, c. A.D. 300-500",
+   "url": "https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/The_Gupta-Vakataka_Age_c._A.D._300-500.json&canvasID=0"
+  }
+ },
+ {
+  "file": "content/eras/b-medieval.json",
+  "item": 300,
+  "addSource": {
+   "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. III: The Classical Age (Internet Archive)",
+   "url": "https://archive.org/details/classicalage03bhar"
+  }
+ },
+ {
+  "file": "content/eras/b-medieval.json",
+  "item": 400,
+  "addSource": {
+   "title": "Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. III.D, The Gupta-Vakataka Age, c. A.D. 300-500",
+   "url": "https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/The_Gupta-Vakataka_Age_c._A.D._300-500.json&canvasID=0"
+  }
+ },
+ {
+  "file": "content/eras/b-medieval.json",
+  "item": 400,
+  "addSource": {
+   "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. III: The Classical Age (Internet Archive)",
+   "url": "https://archive.org/details/classicalage03bhar"
+  }
+ },
+ {
+  "file": "content/eras/b-medieval.json",
+  "item": 500,
+  "addSource": {
+   "title": "Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. III.D, The Gupta-Vakataka Age, c. A.D. 300-500",
+   "url": "https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/The_Gupta-Vakataka_Age_c._A.D._300-500.json&canvasID=0"
+  }
+ },
+ {
+  "file": "content/eras/b-medieval.json",
+  "item": 500,
+  "addSource": {
+   "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. III: The Classical Age (Internet Archive)",
+   "url": "https://archive.org/details/classicalage03bhar"
+  }
+ },
+ {
+  "file": "content/eras/b-medieval.json",
+  "item": 600,
+  "addSource": {
+   "title": "Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. III.D, The age of Pusyabhuti and Calukyan ascendancy, c. A.D. 550-700",
+   "url": "https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/The_age_of_Pusyabhuti_and_Calukyan_ascendancy_c._A.D._550-700.json&canvasID=0"
+  }
+ },
+ {
+  "file": "content/eras/b-medieval.json",
+  "item": 600,
+  "addSource": {
+   "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. III: The Classical Age (Internet Archive)",
+   "url": "https://archive.org/details/classicalage03bhar"
+  }
+ },
+ {
+  "file": "content/eras/b-medieval.json",
+  "item": 700,
+  "addSource": {
+   "title": "Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. III.D, The age of Pusyabhuti and Calukyan ascendancy, c. A.D. 550-700",
+   "url": "https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/The_age_of_Pusyabhuti_and_Calukyan_ascendancy_c._A.D._550-700.json&canvasID=0"
+  }
+ },
+ {
+  "file": "content/eras/b-medieval.json",
+  "item": 800,
+  "addSource": {
+   "title": "Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. IV.1, The age of the Gurjara-Pratiharas, Palas, and Rastrakutas, c. A.D. 700-975",
+   "url": "https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/The_age_of_the_Gurjara-Pratiharas_Palas_and_Rastrakutas_c._A.D._700-975.json&canvasID=0"
+  }
+ },
+ {
+  "file": "content/eras/b-medieval.json",
+  "item": 800,
+  "addSource": {
+   "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. IV: The Age of Imperial Kanauj (Internet Archive)",
+   "url": "https://archive.org/details/ageofimperialkan04bhar"
+  }
+ },
+ {
+  "file": "content/eras/b-medieval.json",
+  "item": 900,
+  "addSource": {
+   "title": "Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. IV.1, The age of the Gurjara-Pratiharas, Palas, and Rastrakutas, c. A.D. 700-975",
+   "url": "https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/The_age_of_the_Gurjara-Pratiharas_Palas_and_Rastrakutas_c._A.D._700-975.json&canvasID=0"
+  }
+ },
+ {
+  "file": "content/eras/b-medieval.json",
+  "item": 900,
+  "addSource": {
+   "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. IV: The Age of Imperial Kanauj (Internet Archive)",
+   "url": "https://archive.org/details/ageofimperialkan04bhar"
+  }
+ },
+ {
+  "file": "content/eras/b-medieval.json",
+  "item": 1000,
+  "addSource": {
+   "title": "Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. IV.2, The age of the Ghaznavids, Cahmanas, Later Calukyas, and Colas, c. 975-1200",
+   "url": "https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/The_age_of_the_Ghaznavids_Cahmanas_Later_Calukyas_and_Colas_c._975-1200.json&canvasID=0"
+  }
+ },
+ {
+  "file": "content/eras/b-medieval.json",
+  "item": 1000,
+  "addSource": {
+   "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. V: The Struggle for Empire (Internet Archive)",
+   "url": "https://archive.org/details/struggleforempir05bhar"
+  }
+ },
+ {
+  "file": "content/eras/b-medieval.json",
+  "item": 1100,
+  "addSource": {
+   "title": "Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. IV.2, The age of the Ghaznavids, Cahmanas, Later Calukyas, and Colas, c. 975-1200",
+   "url": "https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/The_age_of_the_Ghaznavids_Cahmanas_Later_Calukyas_and_Colas_c._975-1200.json&canvasID=0"
+  }
+ },
+ {
+  "file": "content/eras/b-medieval.json",
+  "item": 1100,
+  "addSource": {
+   "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. V: The Struggle for Empire (Internet Archive)",
+   "url": "https://archive.org/details/struggleforempir05bhar"
+  }
+ },
+ {
+  "file": "content/eras/b-medieval.json",
+  "item": 1200,
+  "addSource": {
+   "title": "Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. V, Northern India in the time of the Ghurids and Mamluks, c. 1170-1290",
+   "url": "https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/Northern_India_and_adjacent_areas_in_the_time_of_the_Ghurids_and_Mamluks_c._1170-1290.json&canvasID=0"
+  }
+ },
+ {
+  "file": "content/eras/b-medieval.json",
+  "item": 1200,
+  "addSource": {
+   "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. V: The Struggle for Empire (Internet Archive)",
+   "url": "https://archive.org/details/struggleforempir05bhar"
+  }
+ },
+ {
+  "file": "content/eras/b-medieval.json",
+  "item": 1279,
+  "addSource": {
+   "title": "Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. V, Northern India in the time of the Ghurids and Mamluks, c. 1170-1290",
+   "url": "https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/Northern_India_and_adjacent_areas_in_the_time_of_the_Ghurids_and_Mamluks_c._1170-1290.json&canvasID=0"
+  }
+ },
+ {
+  "file": "content/eras/b-medieval.json",
+  "item": 1279,
+  "addSource": {
+   "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. VI: The Delhi Sultanate (Internet Archive)",
+   "url": "https://archive.org/details/delhisultanate00bhar"
+  }
+ },
+ {
+  "file": "content/eras/b-medieval.json",
+  "item": 1300,
+  "addSource": {
+   "title": "Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. V, South Asia in the time of the Khaljis and Tughluqs, c. 1290-1390",
+   "url": "https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/South_Asia_in_the_time_of_the_Khaljis_and_Tughluqs_c._1290-1390.json&canvasID=0"
+  }
+ },
+ {
+  "file": "content/eras/b-medieval.json",
+  "item": 1300,
+  "addSource": {
+   "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. VI: The Delhi Sultanate (Internet Archive)",
+   "url": "https://archive.org/details/delhisultanate00bhar"
+  }
+ },
+ {
+  "file": "content/eras/b-medieval.json",
+  "item": 1400,
+  "addSource": {
+   "title": "Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. V, Political disintegration in Northern South Asia, c. 1390-1450",
+   "url": "https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/Political_disintegration_in_Northern_South_Asia_c._1390-1450.json&canvasID=0"
+  }
+ },
+ {
+  "file": "content/eras/b-medieval.json",
+  "item": 1400,
+  "addSource": {
+   "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. VI: The Delhi Sultanate (Internet Archive)",
+   "url": "https://archive.org/details/delhisultanate00bhar"
+  }
+ },
+ {
+  "file": "content/eras/c-earlymodern.json",
+  "item": 1492,
+  "addSource": {
+   "title": "Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. V, South Asia in the time of the Lodis, 1451-1526",
+   "url": "https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/South_Asia_in_the_time_of_the_Lodis_1451-1526.json&canvasID=0"
+  }
+ },
+ {
+  "file": "content/eras/c-earlymodern.json",
+  "item": 1500,
+  "addSource": {
+   "title": "Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. V, South Asia in the time of the Lodis, 1451-1526",
+   "url": "https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/South_Asia_in_the_time_of_the_Lodis_1451-1526.json&canvasID=0"
+  }
+ },
+ {
+  "file": "content/eras/c-earlymodern.json",
+  "item": 1530,
+  "addSource": {
+   "title": "Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. VI.A, Northern South Asia in the period of Babur, Humayun, and Sher Shah, 1526-1555",
+   "url": "https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/Northern_South_Asia_in_the_period_of_Babur_Humayun_and_Sher_Shah_1526-1555.json&canvasID=0"
+  }
+ },
+ {
+  "file": "content/eras/c-earlymodern.json",
+  "item": 1530,
+  "addSource": {
+   "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. VII: The Mughul Empire (Internet Archive)",
+   "url": "https://archive.org/details/mughulempire00bhar"
+  }
+ },
+ {
+  "file": "content/eras/c-earlymodern.json",
+  "item": 1600,
+  "addSource": {
+   "title": "Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. VI.A, The Mughal Empire, c. 1605",
+   "url": "https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/The_Mughal_Empire_c._1605.json&canvasID=0"
+  }
+ },
+ {
+  "file": "content/eras/c-earlymodern.json",
+  "item": 1600,
+  "addSource": {
+   "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. VII: The Mughul Empire (Internet Archive)",
+   "url": "https://archive.org/details/mughulempire00bhar"
+  }
+ },
+ {
+  "file": "content/eras/c-earlymodern.json",
+  "item": 1650,
+  "addSource": {
+   "title": "Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. VI.A.3, The reigns of Jahangir, Shah Jahan, and Aurangzib, 1605-1707",
+   "url": "https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/The_reigns_of_Jahangir_Shah_Jahan_and_Aurangzib_1605-1707.json&canvasID=0"
+  }
+ },
+ {
+  "file": "content/eras/c-earlymodern.json",
+  "item": 1650,
+  "addSource": {
+   "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. VII: The Mughul Empire (Internet Archive)",
+   "url": "https://archive.org/details/mughulempire00bhar"
+  }
+ },
+ {
+  "file": "content/eras/c-earlymodern.json",
+  "item": 1700,
+  "addSource": {
+   "title": "Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. VI.A.3, The reigns of Jahangir, Shah Jahan, and Aurangzib, 1605-1707",
+   "url": "https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/The_reigns_of_Jahangir_Shah_Jahan_and_Aurangzib_1605-1707.json&canvasID=0"
+  }
+ },
+ {
+  "file": "content/eras/c-earlymodern.json",
+  "item": 1700,
+  "addSource": {
+   "title": "Jadunath Sarkar, History of Aurangzib (Internet Archive)",
+   "url": "https://archive.org/details/historyofaurangz02sarkuoft"
+  }
+ },
+ {
+  "file": "content/eras/c-earlymodern.json",
+  "item": 1715,
+  "addSource": {
+   "title": "Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. VII.A, Mughal disintegration and the rise of regional powers, 1707-1766",
+   "url": "https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/Mughal_disintegration_and_the_rise_of_regional_powers_1707-1766.json&canvasID=0"
+  }
+ },
+ {
+  "file": "content/eras/c-earlymodern.json",
+  "item": 1715,
+  "addSource": {
+   "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. VIII: The Maratha Supremacy (Internet Archive)",
+   "url": "https://archive.org/details/marathasupremacy08bhar"
+  }
+ },
+ {
+  "file": "content/eras/c-earlymodern.json",
+  "item": 1783,
+  "addSource": {
+   "title": "Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. VII.A, The expansion of British power, 1766-1819",
+   "url": "https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/The_expansion_of_British_power_1766-1819.json&canvasID=0"
+  }
+ },
+ {
+  "file": "content/eras/c-earlymodern.json",
+  "item": 1783,
+  "addSource": {
+   "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. VIII: The Maratha Supremacy (Internet Archive)",
+   "url": "https://archive.org/details/marathasupremacy08bhar"
+  }
+ },
+ {
+  "file": "content/eras/c-earlymodern.json",
+  "item": 1800,
+  "addSource": {
+   "title": "Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. VII.A, The expansion of British power, 1766-1819",
+   "url": "https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/The_expansion_of_British_power_1766-1819.json&canvasID=0"
+  }
+ },
+ {
+  "file": "content/eras/c-earlymodern.json",
+  "item": 1800,
+  "addSource": {
+   "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. VIII: The Maratha Supremacy (Internet Archive)",
+   "url": "https://archive.org/details/marathasupremacy08bhar"
+  }
+ },
+ {
+  "file": "content/eras/d-modern.json",
+  "item": 1815,
+  "addSource": {
+   "title": "Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. VII.A, The expansion of British power, 1766-1819",
+   "url": "https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/The_expansion_of_British_power_1766-1819.json&canvasID=0"
+  }
+ },
+ {
+  "file": "content/eras/d-modern.json",
+  "item": 1815,
+  "addSource": {
+   "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. IX: British Paramountcy and Indian Renaissance, Part I (Internet Archive)",
+   "url": "https://archive.org/details/britishparamount09bhar"
+  }
+ },
+ {
+  "file": "content/eras/d-modern.json",
+  "item": 1880,
+  "addSource": {
+   "title": "Imperial Gazetteer of India, vol. I (1909), p. 449: area of British provinces and Native States (DSAL)",
+   "url": "https://dsal.uchicago.edu/cgi-bin/reference/gazetteer/query.py?object=479&bookid=DS405.1.I34_V01&display_type=page_display"
+  }
+ },
+ {
+  "file": "content/eras/d-modern.json",
+  "item": 1880,
+  "addSource": {
+   "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. IX: British Paramountcy and Indian Renaissance, Part I (Internet Archive)",
+   "url": "https://archive.org/details/britishparamount09bhar"
+  }
+ },
+ {
+  "file": "content/eras/d-modern.json",
+  "item": 1900,
+  "addSource": {
+   "title": "Imperial Gazetteer of India, vol. IV (1909): Administrative (DSAL)",
+   "url": "https://dsal.uchicago.edu/cgi-bin/reference/gazetteer/query.py?display_type=volume_display&volume=4"
+  }
+ },
+ {
+  "file": "content/eras/d-modern.json",
+  "item": 1914,
+  "addSource": {
+   "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. XI: Struggle for Freedom (Internet Archive)",
+   "url": "https://archive.org/details/struggleforfreed00bhar"
+  }
+ },
+ {
+  "file": "content/eras/d-modern.json",
+  "item": 1920,
+  "addSource": {
+   "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. XI: Struggle for Freedom (Internet Archive)",
+   "url": "https://archive.org/details/struggleforfreed00bhar"
+  }
+ },
+ {
+  "file": "content/eras/d-modern.json",
+  "item": 1930,
+  "addSource": {
+   "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. XI: Struggle for Freedom (Internet Archive)",
+   "url": "https://archive.org/details/struggleforfreed00bhar"
+  }
+ },
+ {
+  "file": "content/eras/d-modern.json",
+  "item": 1938,
+  "addSource": {
+   "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. XI: Struggle for Freedom (Internet Archive)",
+   "url": "https://archive.org/details/struggleforfreed00bhar"
+  }
+ },
+ {
+  "file": "content/eras/d-modern.json",
+  "item": 1945,
+  "addSource": {
+   "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. XI: Struggle for Freedom (Internet Archive)",
+   "url": "https://archive.org/details/struggleforfreed00bhar"
+  }
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "indus-valley-civilisation",
+  "addSource": {
+   "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. I: The Vedic Age (Internet Archive)",
+   "url": "https://archive.org/details/vedicage00bhar"
+  }
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "maurya-empire",
+  "addSource": {
+   "title": "Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. III.B, The time of the Mauryan Empire, 321-181 B.C.",
+   "url": "https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/The_time_of_the_Mauryan_Empire_321-181_B.C.json&canvasID=0"
+  }
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "maurya-empire",
+  "addSource": {
+   "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. II: The Age of Imperial Unity (Internet Archive)",
+   "url": "https://archive.org/details/ageofimperialuni07bhar"
+  }
+ },
+ {
+  "file": "content/empires/a2-early.json",
+  "item": "kushan-empire",
+  "addSource": {
+   "title": "Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. III.C.2, The Satavahana-Saka-Kusana age, c. A.D. 1-300",
+   "url": "https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/The_Satavahana-Saka-Kusana_age_c._A.D._1-300.json&canvasID=0"
+  }
+ },
+ {
+  "file": "content/empires/a2-early.json",
+  "item": "kushan-empire",
+  "addSource": {
+   "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. II: The Age of Imperial Unity (Internet Archive)",
+   "url": "https://archive.org/details/ageofimperialuni07bhar"
+  }
+ },
+ {
+  "file": "content/empires/a2-early.json",
+  "item": "gupta-empire",
+  "addSource": {
+   "title": "Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. III.D, The Gupta-Vakataka Age, c. A.D. 300-500",
+   "url": "https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/The_Gupta-Vakataka_Age_c._A.D._300-500.json&canvasID=0"
+  }
+ },
+ {
+  "file": "content/empires/a2-early.json",
+  "item": "gupta-empire",
+  "addSource": {
+   "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. III: The Classical Age (Internet Archive)",
+   "url": "https://archive.org/details/classicalage03bhar"
+  }
+ },
+ {
+  "file": "content/empires/a2-early.json",
+  "item": "chola-empire",
+  "addSource": {
+   "title": "Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. IV.2, The age of the Ghaznavids, Cahmanas, Later Calukyas, and Colas, c. 975-1200",
+   "url": "https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/The_age_of_the_Ghaznavids_Cahmanas_Later_Calukyas_and_Colas_c._975-1200.json&canvasID=0"
+  }
+ },
+ {
+  "file": "content/empires/a2-early.json",
+  "item": "chola-empire",
+  "addSource": {
+   "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. V: The Struggle for Empire (Internet Archive)",
+   "url": "https://archive.org/details/struggleforempir05bhar"
+  }
+ },
+ {
+  "file": "content/empires/a2-early.json",
+  "item": "delhi-sultanate",
+  "addSource": {
+   "title": "Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. V, South Asia in the time of the Khaljis and Tughluqs, c. 1290-1390",
+   "url": "https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/South_Asia_in_the_time_of_the_Khaljis_and_Tughluqs_c._1290-1390.json&canvasID=0"
+  }
+ },
+ {
+  "file": "content/empires/a2-early.json",
+  "item": "delhi-sultanate",
+  "addSource": {
+   "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. VI: The Delhi Sultanate (Internet Archive)",
+   "url": "https://archive.org/details/delhisultanate00bhar"
+  }
+ },
+ {
+  "file": "content/empires/a2-early.json",
+  "item": "vijayanagara-empire",
+  "addSource": {
+   "title": "Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. V, South Asia in the time of the Lodis, 1451-1526",
+   "url": "https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/South_Asia_in_the_time_of_the_Lodis_1451-1526.json&canvasID=0"
+  }
+ },
+ {
+  "file": "content/empires/a2-early.json",
+  "item": "vijayanagara-empire",
+  "addSource": {
+   "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. VI: The Delhi Sultanate (Internet Archive)",
+   "url": "https://archive.org/details/delhisultanate00bhar"
+  }
+ },
+ {
+  "file": "content/empires/b-late.json",
+  "item": "mughal-empire",
+  "addSource": {
+   "title": "Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. VI.A, The Mughal Empire, c. 1605",
+   "url": "https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/The_Mughal_Empire_c._1605.json&canvasID=0"
+  }
+ },
+ {
+  "file": "content/empires/b-late.json",
+  "item": "mughal-empire",
+  "addSource": {
+   "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. VII: The Mughul Empire (Internet Archive)",
+   "url": "https://archive.org/details/mughulempire00bhar"
+  }
+ },
+ {
+  "file": "content/empires/b-late.json",
+  "item": "mughal-empire",
+  "addSource": {
+   "title": "Jadunath Sarkar, History of Aurangzib (Internet Archive)",
+   "url": "https://archive.org/details/historyofaurangz02sarkuoft"
+  }
+ },
+ {
+  "file": "content/empires/b-late.json",
+  "item": "maratha-empire",
+  "addSource": {
+   "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. VIII: The Maratha Supremacy (Internet Archive)",
+   "url": "https://archive.org/details/marathasupremacy08bhar"
+  }
+ },
+ {
+  "file": "content/empires/b-late.json",
+  "item": "maratha-empire",
+  "addSource": {
+   "title": "Jadunath Sarkar, Shivaji and His Times (Internet Archive)",
+   "url": "https://archive.org/details/shivajihistimes00sarkrich"
+  }
+ },
+ {
+  "file": "content/empires/b-late.json",
+  "item": "maratha-empire",
+  "addSource": {
+   "title": "Jadunath Sarkar, Fall of the Mughal Empire, vol. I (Internet Archive)",
+   "url": "https://archive.org/details/in.ernet.dli.2015.511649"
+  }
+ },
+ {
+  "file": "content/empires/b-late.json",
+  "item": "sikh-empire",
+  "addSource": {
+   "title": "Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. VII.A, The expansion of British power, 1819-1857",
+   "url": "https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/The_expansion_of_British_power_1819-1857.json&canvasID=0"
+  }
+ },
+ {
+  "file": "content/empires/b-late.json",
+  "item": "sikh-empire",
+  "addSource": {
+   "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. IX: British Paramountcy and Indian Renaissance, Part I (Internet Archive)",
+   "url": "https://archive.org/details/britishparamount09bhar"
+  }
+ },
+ {
+  "file": "content/empires/b-late.json",
+  "item": "durrani-empire",
+  "addSource": {
+   "title": "Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. VII.A, Mughal disintegration and the rise of regional powers, 1707-1766",
+   "url": "https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/Mughal_disintegration_and_the_rise_of_regional_powers_1707-1766.json&canvasID=0"
+  }
+ },
+ {
+  "file": "content/empires/b-late.json",
+  "item": "durrani-empire",
+  "addSource": {
+   "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. IX: British Paramountcy and Indian Renaissance, Part I (Internet Archive)",
+   "url": "https://archive.org/details/britishparamount09bhar"
+  }
+ },
+ {
+  "file": "content/empires/b-late.json",
+  "item": "british-india",
+  "addSource": {
+   "title": "Imperial Gazetteer of India, vol. I (1909), p. 449: area of British provinces and Native States (DSAL)",
+   "url": "https://dsal.uchicago.edu/cgi-bin/reference/gazetteer/query.py?object=479&bookid=DS405.1.I34_V01&display_type=page_display"
+  }
+ },
+ {
+  "file": "content/empires/b-late.json",
+  "item": "british-india",
+  "addSource": {
+   "title": "Imperial Gazetteer of India, vol. II (1908): Historical (DSAL)",
+   "url": "https://dsal.uchicago.edu/cgi-bin/reference/gazetteer/query.py?display_type=volume_display&volume=2"
+  }
+ },
+ {
+  "file": "content/empires/b-late.json",
+  "item": "british-india",
+  "addSource": {
+   "title": "Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. VII.A, The expansion of British power, 1766-1819",
+   "url": "https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/The_expansion_of_British_power_1766-1819.json&canvasID=0"
+  }
+ },
+ {
+  "file": "content/empires/b-late.json",
+  "item": "republic-of-india",
+  "addSource": {
+   "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. XI: Struggle for Freedom (Internet Archive)",
+   "url": "https://archive.org/details/struggleforfreed00bhar"
+  }
+ },
+ {
+  "file": "content/empires/b-late.json",
+  "item": "pakistan",
+  "addSource": {
+   "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. XI: Struggle for Freedom (Internet Archive)",
+   "url": "https://archive.org/details/struggleforfreed00bhar"
+  }
+ }
+]

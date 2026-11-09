@@ -1,0 +1,3611 @@
+[
+ {
+  "id": "hunnic-empire",
+  "name": "Hunnic Empire (Attila)",
+  "profile": "hunnic-empire",
+  "chain": [
+   {
+    "clio": "Huns",
+    "from": 370,
+    "to": 425
+   },
+   {
+    "clio": "Hunnic Empire",
+    "from": 426,
+    "to": 469
+   }
+  ],
+  "span": [
+   370,
+   469
+  ],
+  "summary": "Nomadic Huns crossed the Volga around 370, subdued the Alans and Goths and by the 420s were based on the Great Hungarian Plain, extorting tribute from both halves of the Roman Empire. Under Attila (sole ruler from c. 445) they ravaged the Balkans, Gaul and Italy, but after his death in 453 the subject peoples revolted at the Nedao and the empire fell apart; his son Dengizich was killed in 469.",
+  "events": [
+   {
+    "year": 370,
+    "text": "c. 370: Huns reach the Volga and conquer the Alans and Goths",
+    "lonlat": null
+   },
+   {
+    "year": 376,
+    "text": "Gothic refugees fleeing the Huns seek shelter on the Lower Danube",
+    "lonlat": [
+     28.0,
+     45.2
+    ]
+   },
+   {
+    "year": 395,
+    "text": "First large-scale Hun attack on the Eastern Roman Empire",
+    "lonlat": null
+   },
+   {
+    "year": 408,
+    "text": "Uldin crosses the Danube and pillages Thrace",
+    "lonlat": [
+     26.0,
+     42.5
+    ]
+   },
+   {
+    "year": 433,
+    "text": "Aetius cedes Pannonia to the Huns",
+    "lonlat": [
+     19.5,
+     47.0
+    ]
+   },
+   {
+    "year": 435,
+    "text": "Attila and Bleda impose the Treaty of Margus on Eastern Rome",
+    "lonlat": [
+     21.19,
+     44.62
+    ]
+   },
+   {
+    "year": 441,
+    "text": "Attila and Bleda invade the Balkans, sacking Margus and Viminacium",
+    "lonlat": [
+     21.19,
+     44.62
+    ]
+   },
+   {
+    "year": 443,
+    "text": "Peace of Anatolius: Theodosius II pays heavier tribute",
+    "lonlat": null
+   },
+   {
+    "year": 445,
+    "text": "Bleda dies; Attila becomes sole ruler",
+    "lonlat": null
+   },
+   {
+    "year": 447,
+    "text": "Attila invades the Balkans and Thrace again",
+    "lonlat": null
+   },
+   {
+    "year": 451,
+    "text": "Attila invades Gaul; checked at the Catalaunian Plains",
+    "lonlat": [
+     4.36,
+     48.96
+    ]
+   },
+   {
+    "year": 452,
+    "text": "Invasion of Italy; Aquileia razed",
+    "lonlat": [
+     13.37,
+     45.77
+    ]
+   },
+   {
+    "year": 453,
+    "text": "Attila dies; his sons divide the empire",
+    "lonlat": null
+   },
+   {
+    "year": 454,
+    "text": "c. 454: Subject peoples defeat the Huns at the Nedao",
+    "lonlat": null
+   },
+   {
+    "year": 469,
+    "text": "Dengizich defeated and killed in Thrace; the Hunnic empire is gone",
+    "lonlat": null
+   }
+  ],
+  "reigns": [
+   {
+    "name": "Uldin",
+    "from": 400,
+    "to": 408
+   },
+   {
+    "name": "Rugila",
+    "from": 430,
+    "to": 434
+   },
+   {
+    "name": "Attila and Bleda (jointly)",
+    "from": 435,
+    "to": 445
+   },
+   {
+    "name": "Attila",
+    "from": 445,
+    "to": 453
+   },
+   {
+    "name": "Ellac",
+    "from": 453,
+    "to": 454
+   },
+   {
+    "name": "Dengizich (western Huns)",
+    "from": 454,
+    "to": 469
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia: Huns",
+    "url": "https://en.wikipedia.org/wiki/Huns"
+   },
+   {
+    "title": "Wikipedia: Attila",
+    "url": "https://en.wikipedia.org/wiki/Attila"
+   },
+   {
+    "title": "World History Encyclopedia: Attila the Hun",
+    "url": "https://www.worldhistory.org/Attila_the_Hun/"
+   }
+  ]
+ },
+ {
+  "id": "byzantine-empire",
+  "name": "Byzantine Empire",
+  "profile": "byzantine-empire",
+  "chain": [
+   {
+    "clio": "Eastern Roman Empire",
+    "from": 395,
+    "to": 632
+   },
+   {
+    "clio": "Byzantine Empire",
+    "from": 633,
+    "to": 1205
+   },
+   {
+    "clio": "Nicaean Empire",
+    "from": 1206,
+    "to": 1278
+   },
+   {
+    "clio": "Byzantine Empire",
+    "from": 1279,
+    "to": 1453
+   }
+  ],
+  "span": [
+   395,
+   1453
+  ],
+  "summary": "The eastern half of the Roman Empire, ruled from Constantinople, outlived the West and under Justinian I reconquered North Africa, Italy and southern Spain, reaching its greatest extent in 565. The Arab conquests of the 630s–640s stripped away Syria and Egypt; the Macedonian emperors recovered ground up to Basil II's conquest of Bulgaria, before Manzikert (1071) opened Anatolia to the Turks. Sacked by the Fourth Crusade in 1204 and restored from Nicaea in 1261, the shrunken state fell to the Ottomans in 1453.",
+  "events": [
+   {
+    "year": 395,
+    "text": "Theodosius I dies; Arcadius rules the East from Constantinople",
+    "lonlat": [
+     28.98,
+     41.01
+    ]
+   },
+   {
+    "year": 476,
+    "text": "Last western emperor deposed; Constantinople is the sole Roman capital",
+    "lonlat": [
+     12.2,
+     44.42
+    ]
+   },
+   {
+    "year": 533,
+    "text": "Belisarius defeats the Vandals and retakes North Africa (533–534)",
+    "lonlat": [
+     10.32,
+     36.85
+    ]
+   },
+   {
+    "year": 554,
+    "text": "Gothic War ends; Italy is back under Roman rule",
+    "lonlat": [
+     12.2,
+     44.42
+    ]
+   },
+   {
+    "year": 565,
+    "text": "Justinian I dies with the empire at its greatest extent",
+    "lonlat": [
+     28.98,
+     41.01
+    ]
+   },
+   {
+    "year": 627,
+    "text": "Heraclius defeats the Persians at Nineveh",
+    "lonlat": [
+     43.15,
+     36.36
+    ]
+   },
+   {
+    "year": 636,
+    "text": "Arab victory at the Yarmuk ends Byzantine rule in Syria",
+    "lonlat": [
+     35.95,
+     32.8
+    ]
+   },
+   {
+    "year": 641,
+    "text": "Alexandria surrenders to the Arabs; Egypt lost",
+    "lonlat": [
+     29.92,
+     31.2
+    ]
+   },
+   {
+    "year": 717,
+    "text": "Leo III repels the Arab siege of Constantinople (717–718)",
+    "lonlat": [
+     28.98,
+     41.01
+    ]
+   },
+   {
+    "year": 1018,
+    "text": "Basil II completes the conquest of Bulgaria",
+    "lonlat": [
+     20.8,
+     41.12
+    ]
+   },
+   {
+    "year": 1071,
+    "text": "Seljuks capture Romanos IV at Manzikert; Normans take Bari",
+    "lonlat": [
+     42.53,
+     39.14
+    ]
+   },
+   {
+    "year": 1204,
+    "text": "Fourth Crusade sacks Constantinople; empire splits into rump states",
+    "lonlat": [
+     28.98,
+     41.01
+    ]
+   },
+   {
+    "year": 1261,
+    "text": "Michael VIII of Nicaea recaptures Constantinople",
+    "lonlat": [
+     28.98,
+     41.01
+    ]
+   },
+   {
+    "year": 1369,
+    "text": "Ottomans take Adrianople as they push into the Balkans",
+    "lonlat": [
+     26.56,
+     41.68
+    ]
+   },
+   {
+    "year": 1453,
+    "text": "Mehmed II takes Constantinople; Constantine XI dies",
+    "lonlat": [
+     28.98,
+     41.01
+    ]
+   }
+  ],
+  "reigns": [
+   {
+    "name": "Arcadius",
+    "from": 395,
+    "to": 408
+   },
+   {
+    "name": "Theodosius II",
+    "from": 408,
+    "to": 450
+   },
+   {
+    "name": "Justinian I",
+    "from": 527,
+    "to": 565
+   },
+   {
+    "name": "Heraclius",
+    "from": 610,
+    "to": 641
+   },
+   {
+    "name": "Leo III",
+    "from": 717,
+    "to": 741
+   },
+   {
+    "name": "Basil I (Macedonian dynasty)",
+    "from": 867,
+    "to": 886
+   },
+   {
+    "name": "Basil II",
+    "from": 976,
+    "to": 1025
+   },
+   {
+    "name": "Alexios I Komnenos",
+    "from": 1081,
+    "to": 1118
+   },
+   {
+    "name": "John III Vatatzes (at Nicaea)",
+    "from": 1221,
+    "to": 1254
+   },
+   {
+    "name": "Michael VIII Palaiologos",
+    "from": 1259,
+    "to": 1282
+   },
+   {
+    "name": "Andronikos II Palaiologos",
+    "from": 1282,
+    "to": 1328
+   },
+   {
+    "name": "Manuel II Palaiologos",
+    "from": 1391,
+    "to": 1425
+   },
+   {
+    "name": "Constantine XI Palaiologos",
+    "from": 1449,
+    "to": 1453
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia: Byzantine Empire",
+    "url": "https://en.wikipedia.org/wiki/Byzantine_Empire"
+   },
+   {
+    "title": "Wikipedia: List of Byzantine emperors",
+    "url": "https://en.wikipedia.org/wiki/List_of_Byzantine_emperors"
+   },
+   {
+    "title": "World History Encyclopedia: Byzantine Empire",
+    "url": "https://www.worldhistory.org/Byzantine_Empire/"
+   },
+   {
+    "title": "Wikipedia: Battle of the Yarmuk",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Yarmuk"
+   },
+   {
+    "title": "Wikipedia: Fourth Crusade",
+    "url": "https://en.wikipedia.org/wiki/Fourth_Crusade"
+   },
+   {
+    "title": "Wikipedia: Fall of Constantinople",
+    "url": "https://en.wikipedia.org/wiki/Fall_of_Constantinople"
+   }
+  ]
+ },
+ {
+  "id": "tang-dynasty",
+  "name": "Tang China",
+  "profile": "tang-dynasty",
+  "chain": [
+   {
+    "clio": "Tang Dynasty",
+    "from": 623,
+    "to": 907
+   }
+  ],
+  "span": [
+   623,
+   907
+  ],
+  "summary": "Founded in 618 by Li Yuan amid the collapse of the Sui (the map starts in 623), the Tang destroyed the Eastern Turks, conquered the Tarim Basin and, with Silla, Goguryeo, pushing protectorates as far as Central Asia. Defeat at Talas (751) and the An Lushan rebellion (755–763) ended this expansion, after which Tibet and regional governors ate into Tang power. The Huang Chao rebellion devastated the empire and the last emperor was deposed in 907.",
+  "events": [
+   {
+    "year": 626,
+    "text": "Xuanwu Gate Incident: Li Shimin seizes power as Emperor Taizong",
+    "lonlat": [
+     108.94,
+     34.34
+    ]
+   },
+   {
+    "year": 630,
+    "text": "Tang armies destroy the Eastern Turkic Khaganate",
+    "lonlat": [
+     109.0,
+     39.5
+    ]
+   },
+   {
+    "year": 640,
+    "text": "Conquest of Gaochang (Turfan); Four Garrisons of Anxi set up",
+    "lonlat": [
+     89.53,
+     42.85
+    ]
+   },
+   {
+    "year": 657,
+    "text": "Western Turks defeated at Issyk Kul; protectorates reach Herat",
+    "lonlat": [
+     77.3,
+     42.4
+    ]
+   },
+   {
+    "year": 668,
+    "text": "Goguryeo destroyed by Tang and Silla",
+    "lonlat": [
+     125.75,
+     39.03
+    ]
+   },
+   {
+    "year": 670,
+    "text": "Tibet seizes the Tarim Basin garrisons (held until 692)",
+    "lonlat": [
+     82.96,
+     41.72
+    ]
+   },
+   {
+    "year": 690,
+    "text": "Wu Zetian proclaims her own Zhou dynasty (690–705)",
+    "lonlat": [
+     112.45,
+     34.62
+    ]
+   },
+   {
+    "year": 712,
+    "text": "Xuanzong begins a 44-year reign, the height of the Tang",
+    "lonlat": [
+     108.94,
+     34.34
+    ]
+   },
+   {
+    "year": 751,
+    "text": "Abbasid army defeats Gao Xianzhi at Talas",
+    "lonlat": [
+     71.37,
+     42.9
+    ]
+   },
+   {
+    "year": 755,
+    "text": "An Lushan rebels; the court flees Chang'an",
+    "lonlat": [
+     116.4,
+     39.9
+    ]
+   },
+   {
+    "year": 763,
+    "text": "Rebellion ends; Tibetans briefly occupy Chang'an; the west is lost",
+    "lonlat": [
+     108.94,
+     34.34
+    ]
+   },
+   {
+    "year": 874,
+    "text": "Huang Chao rebellion begins (874–884), sacking Chang'an and Luoyang",
+    "lonlat": null
+   },
+   {
+    "year": 907,
+    "text": "Zhu Wen deposes Emperor Ai and founds the Later Liang",
+    "lonlat": [
+     114.31,
+     34.8
+    ]
+   }
+  ],
+  "reigns": [
+   {
+    "name": "Gaozu (r. 618–626)",
+    "from": 623,
+    "to": 626
+   },
+   {
+    "name": "Taizong",
+    "from": 626,
+    "to": 649
+   },
+   {
+    "name": "Gaozong",
+    "from": 649,
+    "to": 683
+   },
+   {
+    "name": "Wu Zetian (Zhou dynasty)",
+    "from": 690,
+    "to": 705
+   },
+   {
+    "name": "Xuanzong",
+    "from": 712,
+    "to": 756
+   },
+   {
+    "name": "Xianzong",
+    "from": 805,
+    "to": 820
+   },
+   {
+    "name": "Wenzong",
+    "from": 826,
+    "to": 840
+   },
+   {
+    "name": "Zhaozong",
+    "from": 888,
+    "to": 904
+   },
+   {
+    "name": "Ai",
+    "from": 904,
+    "to": 907
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia: Tang dynasty",
+    "url": "https://en.wikipedia.org/wiki/Tang_dynasty"
+   },
+   {
+    "title": "World History Encyclopedia: Tang Dynasty",
+    "url": "https://www.worldhistory.org/Tang_Dynasty/"
+   },
+   {
+    "title": "Wikipedia: An Lushan rebellion",
+    "url": "https://en.wikipedia.org/wiki/An_Lushan_rebellion"
+   },
+   {
+    "title": "Wikipedia: Battle of Talas",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Talas"
+   }
+  ]
+ },
+ {
+  "id": "tibetan-empire",
+  "name": "Tibetan Empire",
+  "profile": "tibetan-empire",
+  "chain": [
+   {
+    "clio": "Tibetan Empire",
+    "from": 623,
+    "to": 842
+   }
+  ],
+  "span": [
+   623,
+   842
+  ],
+  "summary": "Under Songtsen Gampo (r. c. 618–650) the Yarlung kings united the Tibetan Plateau, moved their seat to Lhasa and absorbed Zhangzhung and the Tuyuhun. Tibet contested the Tarim Basin with Tang China for two centuries, briefly occupied Chang'an in 763 and reached its greatest extent in the early 800s. After the murder of Ralpachen (838) and the assassination of Langdarma in 842 the empire broke apart.",
+  "events": [
+   {
+    "year": 640,
+    "text": "Princess Wencheng leaves China to marry Songtsen Gampo",
+    "lonlat": [
+     91.17,
+     29.65
+    ]
+   },
+   {
+    "year": 645,
+    "text": "c. 645: Songtsen Gampo overruns the kingdom of Zhangzhung",
+    "lonlat": null
+   },
+   {
+    "year": 663,
+    "text": "Tibet conquers the Tuyuhun (Azha) kingdom around Koko Nur",
+    "lonlat": [
+     100.2,
+     36.9
+    ]
+   },
+   {
+    "year": 670,
+    "text": "Tibet takes the Tang's Four Garrisons in the Tarim Basin",
+    "lonlat": [
+     82.96,
+     41.72
+    ]
+   },
+   {
+    "year": 692,
+    "text": "Tang China regains the Tarim Basin",
+    "lonlat": [
+     82.96,
+     41.72
+    ]
+   },
+   {
+    "year": 750,
+    "text": "Nanzhao in Yunnan comes under Tibetan control (to 794)",
+    "lonlat": [
+     100.23,
+     25.61
+    ]
+   },
+   {
+    "year": 756,
+    "text": "Trisong Detsen is crowned; the empire grows again",
+    "lonlat": [
+     91.17,
+     29.65
+    ]
+   },
+   {
+    "year": 763,
+    "text": "Tibetans capture the Tang capital Chang'an for 15 days",
+    "lonlat": [
+     108.94,
+     34.34
+    ]
+   },
+   {
+    "year": 783,
+    "text": "Treaty with the Tang defines the frontier",
+    "lonlat": null
+   },
+   {
+    "year": 794,
+    "text": "Nanzhao turns on Tibet and helps China defeat it at Shenchuan",
+    "lonlat": [
+     100.23,
+     25.61
+    ]
+   },
+   {
+    "year": 812,
+    "text": "c. 812: Tibet's governor of Kabul submits to the Abbasids",
+    "lonlat": [
+     69.18,
+     34.53
+    ]
+   },
+   {
+    "year": 821,
+    "text": "Sino-Tibetan peace treaty (821/822), later inscribed in Lhasa",
+    "lonlat": [
+     91.17,
+     29.65
+    ]
+   },
+   {
+    "year": 838,
+    "text": "Ralpachen is murdered; his brother Langdarma takes the throne",
+    "lonlat": null
+   },
+   {
+    "year": 842,
+    "text": "Langdarma assassinated; the empire disintegrates",
+    "lonlat": [
+     91.17,
+     29.65
+    ]
+   }
+  ],
+  "reigns": [
+   {
+    "name": "Songtsen Gampo (r. c. 618–650)",
+    "from": 623,
+    "to": 650
+   },
+   {
+    "name": "Mangsong Mangtsen",
+    "from": 650,
+    "to": 676
+   },
+   {
+    "name": "Tridu Songtsen",
+    "from": 677,
+    "to": 704
+   },
+   {
+    "name": "Tride Tsuktsen (Me Agtsom)",
+    "from": 704,
+    "to": 754
+   },
+   {
+    "name": "Trisong Detsen",
+    "from": 756,
+    "to": 797
+   },
+   {
+    "name": "Tride Songtsen (Sadnalegs)",
+    "from": 800,
+    "to": 815
+   },
+   {
+    "name": "Ralpachen (Tritsuk Detsen)",
+    "from": 815,
+    "to": 838
+   },
+   {
+    "name": "Langdarma",
+    "from": 838,
+    "to": 842
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia: Tibetan Empire",
+    "url": "https://en.wikipedia.org/wiki/Tibetan_Empire"
+   },
+   {
+    "title": "Wikipedia: Sadnalegs",
+    "url": "https://en.wikipedia.org/wiki/Sadnalegs"
+   },
+   {
+    "title": "Wikipedia: Tang dynasty",
+    "url": "https://en.wikipedia.org/wiki/Tang_dynasty"
+   }
+  ]
+ },
+ {
+  "id": "rashidun-umayyad",
+  "name": "Rashidun and Umayyad Caliphates",
+  "profile": "umayyad-caliphate",
+  "chain": [
+   {
+    "clio": "Rashidun Caliphate",
+    "from": 633,
+    "to": 660
+   },
+   {
+    "clio": "Umayyad Caliphate",
+    "from": 661,
+    "to": 750
+   }
+  ],
+  "span": [
+   633,
+   750
+  ],
+  "summary": "After Muhammad's death in 632 the first caliphs, ruling from Medina, united Arabia and within twenty years took Syria and Egypt from Byzantium and destroyed the Sasanian Empire. From 661 the Umayyads ruled from Damascus and pushed the conquests to Spain, Sindh and Central Asia, creating one of the largest empires yet seen (c. 11 million km² by 720). Defeats at Constantinople (718) and Tours (732), the Berber revolt and civil wars sapped the dynasty, and the Abbasids overthrew it in 750.",
+  "events": [
+   {
+    "year": 633,
+    "text": "Ridda wars over; Arabia united under Abu Bakr",
+    "lonlat": [
+     39.61,
+     24.47
+    ]
+   },
+   {
+    "year": 636,
+    "text": "Victory at the Yarmuk delivers Syria to the Muslims",
+    "lonlat": [
+     35.95,
+     32.8
+    ]
+   },
+   {
+    "year": 637,
+    "text": "Jerusalem surrenders to Caliph Umar",
+    "lonlat": [
+     35.23,
+     31.78
+    ]
+   },
+   {
+    "year": 641,
+    "text": "Alexandria surrenders; Egypt conquered",
+    "lonlat": [
+     29.92,
+     31.2
+    ]
+   },
+   {
+    "year": 642,
+    "text": "Sasanian army crushed at Nahavand",
+    "lonlat": [
+     48.37,
+     34.19
+    ]
+   },
+   {
+    "year": 651,
+    "text": "Conquest of Persia completed; Yazdegerd III killed in Khurasan",
+    "lonlat": [
+     61.83,
+     37.66
+    ]
+   },
+   {
+    "year": 656,
+    "text": "Uthman murdered in Medina; Ali's accession starts the First Fitna",
+    "lonlat": [
+     39.61,
+     24.47
+    ]
+   },
+   {
+    "year": 661,
+    "text": "Ali killed; Mu'awiya founds the Umayyad dynasty at Damascus",
+    "lonlat": [
+     36.29,
+     33.51
+    ]
+   },
+   {
+    "year": 680,
+    "text": "Husayn killed at Karbala; Second Fitna follows",
+    "lonlat": [
+     44.03,
+     32.62
+    ]
+   },
+   {
+    "year": 692,
+    "text": "Abd al-Malik wins the civil war; Dome of the Rock completed",
+    "lonlat": [
+     35.24,
+     31.78
+    ]
+   },
+   {
+    "year": 711,
+    "text": "Tariq ibn Ziyad invades Visigothic Spain; Sindh conquered",
+    "lonlat": [
+     -5.35,
+     36.14
+    ]
+   },
+   {
+    "year": 717,
+    "text": "Siege of Constantinople (717–718) fails",
+    "lonlat": [
+     28.98,
+     41.01
+    ]
+   },
+   {
+    "year": 732,
+    "text": "Frankish victory at Tours halts expansion in the west",
+    "lonlat": [
+     0.4,
+     46.7
+    ]
+   },
+   {
+    "year": 739,
+    "text": "Great Berber Revolt breaks out in North Africa",
+    "lonlat": null
+   },
+   {
+    "year": 750,
+    "text": "Abbasids defeat Marwan II at the Zab; Umayyad caliphate falls",
+    "lonlat": [
+     43.4,
+     36.1
+    ]
+   }
+  ],
+  "reigns": [
+   {
+    "name": "Abu Bakr (r. 632–634)",
+    "from": 633,
+    "to": 634
+   },
+   {
+    "name": "Umar",
+    "from": 634,
+    "to": 644
+   },
+   {
+    "name": "Uthman",
+    "from": 644,
+    "to": 656
+   },
+   {
+    "name": "Ali",
+    "from": 656,
+    "to": 661
+   },
+   {
+    "name": "Mu'awiya I",
+    "from": 661,
+    "to": 680
+   },
+   {
+    "name": "Yazid I",
+    "from": 680,
+    "to": 683
+   },
+   {
+    "name": "Abd al-Malik",
+    "from": 685,
+    "to": 705
+   },
+   {
+    "name": "al-Walid I",
+    "from": 705,
+    "to": 715
+   },
+   {
+    "name": "Sulayman",
+    "from": 715,
+    "to": 717
+   },
+   {
+    "name": "Umar II",
+    "from": 717,
+    "to": 720
+   },
+   {
+    "name": "Hisham",
+    "from": 724,
+    "to": 743
+   },
+   {
+    "name": "Marwan II",
+    "from": 744,
+    "to": 750
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia: Rashidun Caliphate",
+    "url": "https://en.wikipedia.org/wiki/Rashidun_Caliphate"
+   },
+   {
+    "title": "Wikipedia: Umayyad Caliphate",
+    "url": "https://en.wikipedia.org/wiki/Umayyad_Caliphate"
+   },
+   {
+    "title": "World History Encyclopedia: Umayyad Dynasty",
+    "url": "https://www.worldhistory.org/Umayyad_Dynasty/"
+   },
+   {
+    "title": "Wikipedia: Battle of the Yarmuk",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Yarmuk"
+   },
+   {
+    "title": "Wikipedia: Battle of Nahavand",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Nahavand"
+   },
+   {
+    "title": "Wikipedia: Siege of Constantinople (717–718)",
+    "url": "https://en.wikipedia.org/wiki/Siege_of_Constantinople_(717%E2%80%93718)"
+   }
+  ]
+ },
+ {
+  "id": "abbasid-caliphate",
+  "name": "Abbasid Caliphate",
+  "profile": "abbasid-caliphate",
+  "chain": [
+   {
+    "clio": "Abbasid Caliphate",
+    "from": 750,
+    "to": 969
+   },
+   {
+    "clio": "Abbasid Caliphate",
+    "from": 1202,
+    "to": 1258
+   }
+  ],
+  "span": [
+   750,
+   1258
+  ],
+  "summary": "The Abbasids overthrew the Umayyads in 750, founded Baghdad in 762 and under al-Mansur, Harun al-Rashid and al-Ma'mun presided over a vast empire and a golden age of learning. From the 9th century provinces broke away (Aghlabids, Tahirids, Tulunids, then the Fatimids), and after 945 the caliphs were figureheads under the Buyids and then the Seljuks; the map shows no Abbasid territory between 970 and 1201. Caliph al-Nasir revived a small state in Iraq, but the Mongols sacked Baghdad and killed the last caliph in 1258.",
+  "events": [
+   {
+    "year": 750,
+    "text": "Abbasids defeat the Umayyads at the Zab; al-Saffah is caliph",
+    "lonlat": [
+     43.4,
+     36.1
+    ]
+   },
+   {
+    "year": 751,
+    "text": "Abbasid victory over Tang China at Talas",
+    "lonlat": [
+     71.37,
+     42.9
+    ]
+   },
+   {
+    "year": 756,
+    "text": "Umayyad prince Abd al-Rahman sets up an independent al-Andalus",
+    "lonlat": [
+     -4.78,
+     37.88
+    ]
+   },
+   {
+    "year": 762,
+    "text": "Al-Mansur founds Baghdad as the new capital",
+    "lonlat": [
+     44.37,
+     33.31
+    ]
+   },
+   {
+    "year": 813,
+    "text": "Al-Ma'mun's forces take Baghdad, ending the civil war",
+    "lonlat": [
+     44.37,
+     33.31
+    ]
+   },
+   {
+    "year": 836,
+    "text": "Al-Mu'tasim moves the capital to Samarra",
+    "lonlat": [
+     43.87,
+     34.2
+    ]
+   },
+   {
+    "year": 861,
+    "text": "Al-Mutawakkil murdered; the 'Anarchy at Samarra' begins",
+    "lonlat": [
+     43.87,
+     34.2
+    ]
+   },
+   {
+    "year": 870,
+    "text": "c. 870: Egypt becomes autonomous under Ahmad ibn Tulun",
+    "lonlat": [
+     31.24,
+     30.04
+    ]
+   },
+   {
+    "year": 909,
+    "text": "Fatimids take Ifriqiya from the Aghlabids; North Africa lost",
+    "lonlat": [
+     10.1,
+     35.68
+    ]
+   },
+   {
+    "year": 945,
+    "text": "Buyids seize Baghdad; the caliphs become figureheads",
+    "lonlat": [
+     44.37,
+     33.31
+    ]
+   },
+   {
+    "year": 969,
+    "text": "Fatimids conquer Egypt and found Cairo",
+    "lonlat": [
+     31.24,
+     30.04
+    ]
+   },
+   {
+    "year": 1055,
+    "text": "Seljuk leader Tughril enters Baghdad, replacing the Buyids",
+    "lonlat": [
+     44.37,
+     33.31
+    ]
+   },
+   {
+    "year": 1180,
+    "text": "Al-Nasir's long reign (to 1225) revives a caliphal state in Iraq",
+    "lonlat": [
+     44.37,
+     33.31
+    ]
+   },
+   {
+    "year": 1258,
+    "text": "Mongols under Hulagu sack Baghdad and execute al-Musta'sim",
+    "lonlat": [
+     44.37,
+     33.31
+    ]
+   }
+  ],
+  "reigns": [
+   {
+    "name": "al-Saffah",
+    "from": 750,
+    "to": 754
+   },
+   {
+    "name": "al-Mansur",
+    "from": 754,
+    "to": 775
+   },
+   {
+    "name": "al-Mahdi",
+    "from": 775,
+    "to": 785
+   },
+   {
+    "name": "Harun al-Rashid",
+    "from": 786,
+    "to": 809
+   },
+   {
+    "name": "al-Amin",
+    "from": 809,
+    "to": 813
+   },
+   {
+    "name": "al-Ma'mun",
+    "from": 813,
+    "to": 833
+   },
+   {
+    "name": "al-Mu'tasim",
+    "from": 833,
+    "to": 842
+   },
+   {
+    "name": "al-Mutawakkil",
+    "from": 847,
+    "to": 861
+   },
+   {
+    "name": "al-Mu'tadid",
+    "from": 892,
+    "to": 902
+   },
+   {
+    "name": "al-Muqtadir",
+    "from": 908,
+    "to": 932
+   },
+   {
+    "name": "al-Qa'im",
+    "from": 1031,
+    "to": 1075
+   },
+   {
+    "name": "al-Nasir",
+    "from": 1180,
+    "to": 1225
+   },
+   {
+    "name": "al-Musta'sim",
+    "from": 1242,
+    "to": 1258
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia: Abbasid Caliphate",
+    "url": "https://en.wikipedia.org/wiki/Abbasid_Caliphate"
+   },
+   {
+    "title": "World History Encyclopedia: Abbasid Caliphate",
+    "url": "https://www.worldhistory.org/Abbasid_Caliphate/"
+   },
+   {
+    "title": "Wikipedia: Siege of Baghdad (1258)",
+    "url": "https://en.wikipedia.org/wiki/Siege_of_Baghdad_(1258)"
+   },
+   {
+    "title": "Wikipedia: Battle of Talas",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Talas"
+   }
+  ]
+ },
+ {
+  "id": "carolingian-empire",
+  "name": "Carolingian Empire (Charlemagne)",
+  "profile": "carolingian-empire",
+  "chain": [
+   {
+    "clio": "(Carolingian Empire)",
+    "from": 751,
+    "to": 888
+   }
+  ],
+  "span": [
+   751,
+   888
+  ],
+  "summary": "Pepin the Short replaced the Merovingians as king of the Franks in 751, and his son Charlemagne conquered the Lombard kingdom, Saxony and the Avar lands, and was crowned emperor in Rome in 800. After the civil war that followed Louis the Pious's death, the Treaty of Verdun (843) split the empire among his three sons. Charles the Fat reunited it in 884, but he was deposed in 887 and the empire dissolved for good on his death in 888.",
+  "events": [
+   {
+    "year": 751,
+    "text": "Pepin the Short becomes king of the Franks",
+    "lonlat": [
+     3.32,
+     49.38
+    ]
+   },
+   {
+    "year": 768,
+    "text": "Pepin dies; Charlemagne's rule begins",
+    "lonlat": null
+   },
+   {
+    "year": 772,
+    "text": "Saxon Wars begin; they last until 804",
+    "lonlat": [
+     8.9,
+     51.5
+    ]
+   },
+   {
+    "year": 774,
+    "text": "Charlemagne conquers the Lombard kingdom of Italy",
+    "lonlat": [
+     9.16,
+     45.19
+    ]
+   },
+   {
+    "year": 778,
+    "text": "Rearguard ambushed by Basques at Roncevaux",
+    "lonlat": [
+     -1.32,
+     43.01
+    ]
+   },
+   {
+    "year": 791,
+    "text": "Charlemagne campaigns against the Avars in Pannonia",
+    "lonlat": [
+     19.0,
+     47.0
+    ]
+   },
+   {
+    "year": 800,
+    "text": "Pope Leo III crowns Charlemagne emperor in Rome",
+    "lonlat": [
+     12.45,
+     41.9
+    ]
+   },
+   {
+    "year": 804,
+    "text": "Final Saxon campaign; Saxony absorbed",
+    "lonlat": [
+     9.23,
+     52.92
+    ]
+   },
+   {
+    "year": 814,
+    "text": "Charlemagne dies at Aachen; Louis the Pious succeeds",
+    "lonlat": [
+     6.08,
+     50.78
+    ]
+   },
+   {
+    "year": 843,
+    "text": "Treaty of Verdun divides the empire among three brothers",
+    "lonlat": [
+     5.38,
+     49.16
+    ]
+   },
+   {
+    "year": 870,
+    "text": "Treaty of Meerssen splits Lotharingia between East and West",
+    "lonlat": [
+     5.75,
+     50.88
+    ]
+   },
+   {
+    "year": 884,
+    "text": "Charles the Fat reunites all the Frankish kingdoms",
+    "lonlat": null
+   },
+   {
+    "year": 886,
+    "text": "Charles buys off the Vikings besieging Paris",
+    "lonlat": [
+     2.35,
+     48.86
+    ]
+   },
+   {
+    "year": 887,
+    "text": "Charles the Fat deposed; the empire dissolves on his death in 888",
+    "lonlat": null
+   }
+  ],
+  "reigns": [
+   {
+    "name": "Pepin the Short",
+    "from": 751,
+    "to": 768
+   },
+   {
+    "name": "Charlemagne",
+    "from": 768,
+    "to": 814
+   },
+   {
+    "name": "Louis the Pious",
+    "from": 814,
+    "to": 840
+   },
+   {
+    "name": "Lothair I (emperor)",
+    "from": 840,
+    "to": 855
+   },
+   {
+    "name": "Louis II (emperor)",
+    "from": 855,
+    "to": 875
+   },
+   {
+    "name": "Charles the Bald (emperor)",
+    "from": 875,
+    "to": 877
+   },
+   {
+    "name": "Charles the Fat (emperor)",
+    "from": 881,
+    "to": 887
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia: Carolingian Empire",
+    "url": "https://en.wikipedia.org/wiki/Carolingian_Empire"
+   },
+   {
+    "title": "Wikipedia: Charlemagne",
+    "url": "https://en.wikipedia.org/wiki/Charlemagne"
+   },
+   {
+    "title": "World History Encyclopedia: Carolingian Empire",
+    "url": "https://www.worldhistory.org/Carolingian_Empire/"
+   },
+   {
+    "title": "Wikipedia: Holy Roman Emperor",
+    "url": "https://en.wikipedia.org/wiki/Holy_Roman_Emperor"
+   },
+   {
+    "title": "Wikipedia: Treaty of Verdun",
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_Verdun"
+   }
+  ]
+ },
+ {
+  "id": "ghana-empire",
+  "name": "Ghana Empire (Wagadu)",
+  "profile": "ghana-empire",
+  "chain": [
+   {
+    "clio": "Ghana Empire",
+    "from": 793,
+    "to": 1201
+   }
+  ],
+  "span": [
+   793,
+   1201
+  ],
+  "summary": "The Soninke kingdom of Ghana, between the Senegal and Niger rivers, grew rich on the trans-Saharan gold trade and was already known to Arab writers as the 'Land of Gold' in the 8th century. It peaked in the 10th–11th centuries, seized the trading town of Awdaghust in 990 and was described in detail by al-Bakri in 1068. Its rulers converted to Islam around 1076 (whether the Almoravids conquered it is disputed); weakened, it was overrun by the Sosso by 1203 and later absorbed into Mali.",
+  "events": [
+   {
+    "year": 830,
+    "text": "Al-Khwarizmi makes the first known written mention of Ghana",
+    "lonlat": null
+   },
+   {
+    "year": 977,
+    "text": "Ibn Hawqal calls Ghana's king the 'wealthiest king on earth'",
+    "lonlat": [
+     -7.99,
+     15.77
+    ]
+   },
+   {
+    "year": 990,
+    "text": "Ghana conquers Awdaghust and installs a governor",
+    "lonlat": [
+     -10.42,
+     17.43
+    ]
+   },
+   {
+    "year": 1054,
+    "text": "Almoravids capture Awdaghust",
+    "lonlat": [
+     -10.42,
+     17.43
+    ]
+   },
+   {
+    "year": 1063,
+    "text": "Tunka Manin succeeds Bassi as king",
+    "lonlat": null
+   },
+   {
+    "year": 1068,
+    "text": "Al-Bakri describes the capital's royal and Muslim towns",
+    "lonlat": [
+     -7.99,
+     15.77
+    ]
+   },
+   {
+    "year": 1076,
+    "text": "c. 1076: Rulers convert to Islam; Almoravid conquest disputed",
+    "lonlat": [
+     -7.99,
+     15.77
+    ]
+   },
+   {
+    "year": 1154,
+    "text": "Al-Idrisi describes Ghana as a powerful, fully Muslim kingdom",
+    "lonlat": null
+   }
+  ],
+  "reigns": [
+   {
+    "name": "Soninke kings (names unrecorded; Bassi d. 1063)",
+    "from": 793,
+    "to": 1063
+   },
+   {
+    "name": "Tunka Manin (end of reign unknown)",
+    "from": 1063,
+    "to": 1076
+   },
+   {
+    "name": "Muslim kings of Ghana (names unrecorded)",
+    "from": 1076,
+    "to": 1201
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia: Ghana Empire",
+    "url": "https://en.wikipedia.org/wiki/Ghana_Empire"
+   },
+   {
+    "title": "Wikipedia: Koumbi Saleh",
+    "url": "https://en.wikipedia.org/wiki/Koumbi_Saleh"
+   },
+   {
+    "title": "World History Encyclopedia: Ghana Empire",
+    "url": "https://www.worldhistory.org/Ghana_Empire/"
+   }
+  ]
+ },
+ {
+  "id": "khmer-empire",
+  "name": "Khmer Empire",
+  "profile": "khmer-empire",
+  "chain": [
+   {
+    "clio": "Khmer Empire",
+    "from": 802,
+    "to": 1431
+   }
+  ],
+  "span": [
+   802,
+   1431
+  ],
+  "summary": "Jayavarman II's consecration as universal monarch on Phnom Kulen in 802 founded the Angkorian empire, and Yasovarman I built the first capital at Angkor. Suryavarman II (builder of Angkor Wat) and Jayavarman VII (Angkor Thom, the Bayon) led its high point, including the conquest of Champa after the Cham sack of Angkor in 1177. From the 14th century the Siamese kingdom of Ayutthaya pressed in, and Angkor was abandoned after its fall in 1431.",
+  "events": [
+   {
+    "year": 802,
+    "text": "Jayavarman II proclaims himself universal monarch on Phnom Kulen",
+    "lonlat": [
+     104.1,
+     13.57
+    ]
+   },
+   {
+    "year": 889,
+    "text": "Yasovarman I founds Yasodharapura, the first city at Angkor",
+    "lonlat": [
+     103.86,
+     13.43
+    ]
+   },
+   {
+    "year": 944,
+    "text": "Rajendravarman II returns the court to Angkor from Koh Ker",
+    "lonlat": [
+     103.86,
+     13.43
+    ]
+   },
+   {
+    "year": 1006,
+    "text": "Suryavarman I takes Angkor and reunites the kingdom",
+    "lonlat": [
+     103.86,
+     13.43
+    ]
+   },
+   {
+    "year": 1113,
+    "text": "Suryavarman II begins his reign; Angkor Wat is built",
+    "lonlat": [
+     103.87,
+     13.41
+    ]
+   },
+   {
+    "year": 1145,
+    "text": "Suryavarman II sacks the Cham capital Vijaya",
+    "lonlat": [
+     109.1,
+     13.88
+    ]
+   },
+   {
+    "year": 1177,
+    "text": "Cham fleet sails up the Tonle Sap and sacks Angkor",
+    "lonlat": [
+     104.0,
+     12.9
+    ]
+   },
+   {
+    "year": 1181,
+    "text": "Jayavarman VII is crowned and builds Angkor Thom and the Bayon",
+    "lonlat": [
+     103.86,
+     13.44
+    ]
+   },
+   {
+    "year": 1190,
+    "text": "Khmer conquest of Champa (1190–1191)",
+    "lonlat": [
+     109.1,
+     13.88
+    ]
+   },
+   {
+    "year": 1285,
+    "text": "Jayavarman VIII begins paying tribute to the Mongols",
+    "lonlat": null
+   },
+   {
+    "year": 1296,
+    "text": "Chinese envoy Zhou Daguan finds Angkor ravaged by war with Siam",
+    "lonlat": [
+     103.86,
+     13.44
+    ]
+   },
+   {
+    "year": 1352,
+    "text": "Ayutthaya besieges Angkor, taking it the next year",
+    "lonlat": [
+     103.86,
+     13.44
+    ]
+   },
+   {
+    "year": 1431,
+    "text": "Angkor falls to Ayutthaya; the court moves to the Phnom Penh area",
+    "lonlat": [
+     103.86,
+     13.44
+    ]
+   }
+  ],
+  "reigns": [
+   {
+    "name": "Jayavarman II",
+    "from": 802,
+    "to": 835
+   },
+   {
+    "name": "Indravarman I",
+    "from": 877,
+    "to": 889
+   },
+   {
+    "name": "Yasovarman I",
+    "from": 889,
+    "to": 915
+   },
+   {
+    "name": "Rajendravarman II",
+    "from": 944,
+    "to": 968
+   },
+   {
+    "name": "Jayavarman V",
+    "from": 968,
+    "to": 1001
+   },
+   {
+    "name": "Suryavarman I",
+    "from": 1006,
+    "to": 1050
+   },
+   {
+    "name": "Suryavarman II",
+    "from": 1113,
+    "to": 1150
+   },
+   {
+    "name": "Jayavarman VII",
+    "from": 1181,
+    "to": 1218
+   },
+   {
+    "name": "Jayavarman VIII",
+    "from": 1243,
+    "to": 1295
+   },
+   {
+    "name": "Srindravarman",
+    "from": 1295,
+    "to": 1309
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia: Khmer Empire",
+    "url": "https://en.wikipedia.org/wiki/Khmer_Empire"
+   },
+   {
+    "title": "World History Encyclopedia: Khmer Empire",
+    "url": "https://www.worldhistory.org/Khmer_Empire/"
+   },
+   {
+    "title": "Wikipedia: Suryavarman II",
+    "url": "https://en.wikipedia.org/wiki/Suryavarman_II"
+   },
+   {
+    "title": "Wikipedia: Jayavarman VII",
+    "url": "https://en.wikipedia.org/wiki/Jayavarman_VII"
+   }
+  ]
+ },
+ {
+  "id": "chola-empire",
+  "name": "Chola Empire",
+  "profile": "chola-empire",
+  "chain": [
+   {
+    "clio": "Chola Empire",
+    "from": 850,
+    "to": 1259
+   }
+  ],
+  "span": [
+   850,
+   1259
+  ],
+  "summary": "Vijayalaya re-founded Chola power at Thanjavur around 848, and his successors overcame the Pandyas and Pallavas. Rajaraja I (985–1014) and Rajendra I (1014–1044) made it the leading power of South India and the Bay of Bengal, taking Sri Lanka and the Maldives, marching to the Ganges and raiding Srivijaya in 1025. The Later Cholas held most of the Tamil country after 1070, but Pandya attacks from 1215–16 broke the empire; the map ends in 1259, and the last king, Rajendra III, is last recorded in 1279.",
+  "events": [
+   {
+    "year": 885,
+    "text": "Aditya I and the Pallavas defeat the Pandyas",
+    "lonlat": [
+     78.12,
+     9.93
+    ]
+   },
+   {
+    "year": 925,
+    "text": "Parantaka I invades Sri Lanka",
+    "lonlat": [
+     80.4,
+     8.31
+    ]
+   },
+   {
+    "year": 949,
+    "text": "Defeat by the Rashtrakutas at Takkolam; Tondaimandalam lost",
+    "lonlat": [
+     79.73,
+     13.03
+    ]
+   },
+   {
+    "year": 985,
+    "text": "Rajaraja I takes the throne",
+    "lonlat": [
+     79.14,
+     10.79
+    ]
+   },
+   {
+    "year": 993,
+    "text": "Chola forces invade the Anuradhapura kingdom of Sri Lanka",
+    "lonlat": [
+     80.4,
+     8.31
+    ]
+   },
+   {
+    "year": 1010,
+    "text": "Rajaraja dedicates the great Brihadisvara temple at Thanjavur",
+    "lonlat": [
+     79.13,
+     10.78
+    ]
+   },
+   {
+    "year": 1017,
+    "text": "c. 1017: Rajendra completes the conquest of Sri Lanka's Rajarata",
+    "lonlat": [
+     80.4,
+     8.31
+    ]
+   },
+   {
+    "year": 1018,
+    "text": "Rajendra's forces take the Maldives and Lakshadweep",
+    "lonlat": [
+     73.51,
+     4.18
+    ]
+   },
+   {
+    "year": 1022,
+    "text": "Ganges expedition returns; a new capital, Gangaikonda Cholapuram, follows",
+    "lonlat": [
+     79.45,
+     11.21
+    ]
+   },
+   {
+    "year": 1025,
+    "text": "Naval raids on Srivijaya and Kedah",
+    "lonlat": [
+     100.42,
+     5.74
+    ]
+   },
+   {
+    "year": 1070,
+    "text": "Kulottunga I founds the Later Cholas; overseas lands slip away",
+    "lonlat": [
+     79.45,
+     11.21
+    ]
+   },
+   {
+    "year": 1118,
+    "text": "c. 1118: Vengi lost to the Chalukyas, Gangavadi to the Hoysalas",
+    "lonlat": [
+     81.1,
+     16.71
+    ]
+   },
+   {
+    "year": 1216,
+    "text": "c. 1216: Pandya king Maravarman Sundara defeats Kulottunga III",
+    "lonlat": [
+     78.12,
+     9.93
+    ]
+   }
+  ],
+  "reigns": [
+   {
+    "name": "Vijayalaya (r. c. 848–871)",
+    "from": 850,
+    "to": 871
+   },
+   {
+    "name": "Aditya I",
+    "from": 871,
+    "to": 907
+   },
+   {
+    "name": "Parantaka I",
+    "from": 907,
+    "to": 955
+   },
+   {
+    "name": "Rajaraja I",
+    "from": 985,
+    "to": 1014
+   },
+   {
+    "name": "Rajendra I",
+    "from": 1014,
+    "to": 1044
+   },
+   {
+    "name": "Rajadhiraja I",
+    "from": 1044,
+    "to": 1054
+   },
+   {
+    "name": "Virarajendra",
+    "from": 1063,
+    "to": 1070
+   },
+   {
+    "name": "Kulottunga I",
+    "from": 1070,
+    "to": 1122
+   },
+   {
+    "name": "Rajaraja II",
+    "from": 1146,
+    "to": 1175
+   },
+   {
+    "name": "Kulottunga III",
+    "from": 1178,
+    "to": 1218
+   },
+   {
+    "name": "Rajaraja III",
+    "from": 1218,
+    "to": 1256
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia: Chola Empire",
+    "url": "https://en.wikipedia.org/wiki/Chola_Empire"
+   },
+   {
+    "title": "Wikipedia: Chola dynasty",
+    "url": "https://en.wikipedia.org/wiki/Chola_dynasty"
+   },
+   {
+    "title": "Wikipedia: Rajaraja I",
+    "url": "https://en.wikipedia.org/wiki/Rajaraja_I"
+   },
+   {
+    "title": "Wikipedia: Rajendra I",
+    "url": "https://en.wikipedia.org/wiki/Rajendra_I"
+   },
+   {
+    "title": "Wikipedia: Battle of Takkolam",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Takkolam"
+   },
+   {
+    "title": "Wikipedia: Chola invasion of Srivijaya",
+    "url": "https://en.wikipedia.org/wiki/Chola_invasion_of_Srivijaya"
+   }
+  ]
+ },
+ {
+  "id": "holy-roman-empire",
+  "name": "Holy Roman Empire",
+  "profile": "holy-roman-empire",
+  "chain": [
+   {
+    "clio": "(Holy Roman Empire)",
+    "from": 962,
+    "to": 1806
+   }
+  ],
+  "span": [
+   962,
+   1806
+  ],
+  "summary": "Otto I's imperial coronation in 962 joined the German kingdom to Italy, and Burgundy was added in 1032, making the empire the strongest monarchy in western Europe into the 13th century. Clashes with the papacy and the collapse of Hohenstaufen power after 1250 left the princes increasingly independent, a system fixed by the Golden Bull of 1356 and the reforms of 1495. The Reformation and the Thirty Years' War further weakened imperial authority; Westphalia (1648) recognised the loss of Switzerland and the Dutch Netherlands, and Francis II dissolved the empire in 1806.",
+  "events": [
+   {
+    "year": 962,
+    "text": "Pope John XII crowns Otto I emperor in Rome",
+    "lonlat": [
+     12.45,
+     41.9
+    ]
+   },
+   {
+    "year": 1032,
+    "text": "Kingdom of Burgundy joins Germany and Italy under the emperor",
+    "lonlat": null
+   },
+   {
+    "year": 1077,
+    "text": "Henry IV's Walk to Canossa during the Investiture Controversy",
+    "lonlat": [
+     10.46,
+     44.58
+    ]
+   },
+   {
+    "year": 1122,
+    "text": "Concordat of Worms settles the investiture dispute",
+    "lonlat": [
+     8.36,
+     49.63
+    ]
+   },
+   {
+    "year": 1157,
+    "text": "'Holy' first used for the empire under Frederick I Barbarossa",
+    "lonlat": null
+   },
+   {
+    "year": 1250,
+    "text": "Frederick II dies; Hohenstaufen power collapses, interregnum follows",
+    "lonlat": null
+   },
+   {
+    "year": 1273,
+    "text": "Rudolf of Habsburg elected King of the Romans",
+    "lonlat": null
+   },
+   {
+    "year": 1356,
+    "text": "Charles IV's Golden Bull fixes the seven prince-electors",
+    "lonlat": [
+     11.08,
+     49.45
+    ]
+   },
+   {
+    "year": 1495,
+    "text": "Diet of Worms launches the Imperial Reform",
+    "lonlat": [
+     8.36,
+     49.63
+    ]
+   },
+   {
+    "year": 1517,
+    "text": "Luther's break with the pope starts the Reformation",
+    "lonlat": [
+     12.65,
+     51.87
+    ]
+   },
+   {
+    "year": 1555,
+    "text": "Peace of Augsburg lets rulers choose Catholicism or Lutheranism",
+    "lonlat": [
+     10.9,
+     48.37
+    ]
+   },
+   {
+    "year": 1618,
+    "text": "Bohemian revolt starts the Thirty Years' War",
+    "lonlat": [
+     14.42,
+     50.09
+    ]
+   },
+   {
+    "year": 1648,
+    "text": "Peace of Westphalia; Switzerland and the Dutch Republic leave",
+    "lonlat": [
+     7.63,
+     51.96
+    ]
+   },
+   {
+    "year": 1678,
+    "text": "Franche-Comté lost to France",
+    "lonlat": [
+     6.02,
+     47.24
+    ]
+   },
+   {
+    "year": 1806,
+    "text": "Francis II abdicates and dissolves the empire",
+    "lonlat": [
+     16.37,
+     48.21
+    ]
+   }
+  ],
+  "reigns": [
+   {
+    "name": "Otto I",
+    "from": 962,
+    "to": 973
+   },
+   {
+    "name": "Otto II",
+    "from": 973,
+    "to": 983
+   },
+   {
+    "name": "Conrad II",
+    "from": 1027,
+    "to": 1039
+   },
+   {
+    "name": "Henry IV",
+    "from": 1084,
+    "to": 1106
+   },
+   {
+    "name": "Frederick I Barbarossa",
+    "from": 1155,
+    "to": 1190
+   },
+   {
+    "name": "Henry VI",
+    "from": 1191,
+    "to": 1197
+   },
+   {
+    "name": "Frederick II",
+    "from": 1220,
+    "to": 1250
+   },
+   {
+    "name": "Rudolf I (king, never crowned emperor)",
+    "from": 1273,
+    "to": 1291
+   },
+   {
+    "name": "Henry VII",
+    "from": 1312,
+    "to": 1313
+   },
+   {
+    "name": "Charles IV",
+    "from": 1355,
+    "to": 1378
+   },
+   {
+    "name": "Sigismund",
+    "from": 1433,
+    "to": 1437
+   },
+   {
+    "name": "Frederick III",
+    "from": 1452,
+    "to": 1493
+   },
+   {
+    "name": "Maximilian I",
+    "from": 1508,
+    "to": 1519
+   },
+   {
+    "name": "Charles V",
+    "from": 1519,
+    "to": 1556
+   },
+   {
+    "name": "Ferdinand II",
+    "from": 1619,
+    "to": 1637
+   },
+   {
+    "name": "Leopold I",
+    "from": 1658,
+    "to": 1705
+   },
+   {
+    "name": "Charles VI",
+    "from": 1711,
+    "to": 1740
+   },
+   {
+    "name": "Joseph II",
+    "from": 1765,
+    "to": 1790
+   },
+   {
+    "name": "Francis II",
+    "from": 1792,
+    "to": 1806
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia: Holy Roman Empire",
+    "url": "https://en.wikipedia.org/wiki/Holy_Roman_Empire"
+   },
+   {
+    "title": "Wikipedia: Holy Roman Emperor",
+    "url": "https://en.wikipedia.org/wiki/Holy_Roman_Emperor"
+   },
+   {
+    "title": "World History Encyclopedia: Holy Roman Empire",
+    "url": "https://www.worldhistory.org/Holy_Roman_Empire/"
+   }
+  ]
+ },
+ {
+  "id": "seljuk-empire",
+  "name": "Great Seljuk Empire",
+  "profile": "seljuk-empire",
+  "chain": [
+   {
+    "clio": "Seljuk Dynasty",
+    "from": 1037,
+    "to": 1039
+   },
+   {
+    "clio": "Great Seljuk Empire",
+    "from": 1040,
+    "to": 1194
+   }
+  ],
+  "span": [
+   1037,
+   1194
+  ],
+  "summary": "Oghuz Turks led by Tughril and Chaghri took Merv and Nishapur in 1037–38, crushed the Ghaznavids at Dandanaqan and in 1055 entered Baghdad as protectors of the Abbasid caliph. Alp Arslan's victory at Manzikert (1071) opened Anatolia, and under Malik-Shah and his vizier Nizam al-Mulk the empire stretched from the Levant to Central Asia. After 1092 it fragmented among rival heirs; Sanjar's defeat at Qatwan (1141) and capture by the Oghuz (1153) ended Seljuk power in the east, and the last sultan fell to the Khwarazmians in 1194, leaving only the Sultanate of Rum in Anatolia (to 1308).",
+  "events": [
+   {
+    "year": 1037,
+    "text": "Tughril and Chaghri take Merv and Nishapur (1037–38)",
+    "lonlat": [
+     58.8,
+     36.21
+    ]
+   },
+   {
+    "year": 1040,
+    "text": "Seljuks rout the Ghaznavids at Dandanaqan near Merv",
+    "lonlat": [
+     61.83,
+     37.66
+    ]
+   },
+   {
+    "year": 1055,
+    "text": "Tughril enters Baghdad and ends Buyid influence",
+    "lonlat": [
+     44.37,
+     33.31
+    ]
+   },
+   {
+    "year": 1064,
+    "text": "Alp Arslan adds Armenia and Georgia",
+    "lonlat": [
+     43.57,
+     40.51
+    ]
+   },
+   {
+    "year": 1071,
+    "text": "Alp Arslan defeats and captures Romanos IV at Manzikert",
+    "lonlat": [
+     42.53,
+     39.14
+    ]
+   },
+   {
+    "year": 1072,
+    "text": "Malik-Shah I succeeds; with Nizam al-Mulk, the golden age",
+    "lonlat": [
+     51.67,
+     32.65
+    ]
+   },
+   {
+    "year": 1092,
+    "text": "Malik-Shah dies; the empire splits among his heirs",
+    "lonlat": [
+     51.67,
+     32.65
+    ]
+   },
+   {
+    "year": 1099,
+    "text": "First Crusade takes Jerusalem; Crusader states carved out",
+    "lonlat": [
+     35.23,
+     31.78
+    ]
+   },
+   {
+    "year": 1118,
+    "text": "Ahmad Sanjar becomes sole sultan",
+    "lonlat": [
+     61.83,
+     37.66
+    ]
+   },
+   {
+    "year": 1141,
+    "text": "Qara Khitai crush Sanjar at Qatwan; eastern lands lost",
+    "lonlat": [
+     66.9,
+     39.9
+    ]
+   },
+   {
+    "year": 1153,
+    "text": "Oghuz tribes revolt and capture Sanjar",
+    "lonlat": null
+   },
+   {
+    "year": 1157,
+    "text": "Sanjar dies at Merv",
+    "lonlat": [
+     61.83,
+     37.66
+    ]
+   },
+   {
+    "year": 1194,
+    "text": "Khwarazmshah Tekish defeats Toghrul III; the Great Seljuks end",
+    "lonlat": null
+   }
+  ],
+  "reigns": [
+   {
+    "name": "Tughril",
+    "from": 1037,
+    "to": 1063
+   },
+   {
+    "name": "Alp Arslan",
+    "from": 1063,
+    "to": 1072
+   },
+   {
+    "name": "Malik-Shah I",
+    "from": 1072,
+    "to": 1092
+   },
+   {
+    "name": "Mahmud I",
+    "from": 1092,
+    "to": 1094
+   },
+   {
+    "name": "Berkyaruq",
+    "from": 1094,
+    "to": 1105
+   },
+   {
+    "name": "Muhammad I Tapar",
+    "from": 1105,
+    "to": 1118
+   },
+   {
+    "name": "Ahmad Sanjar",
+    "from": 1118,
+    "to": 1157
+   },
+   {
+    "name": "Arslan-Shah",
+    "from": 1160,
+    "to": 1176
+   },
+   {
+    "name": "Toghrul III",
+    "from": 1176,
+    "to": 1194
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia: Seljuk Empire",
+    "url": "https://en.wikipedia.org/wiki/Seljuk_Empire"
+   },
+   {
+    "title": "Wikipedia: List of sultans of the Seljuk Empire",
+    "url": "https://en.wikipedia.org/wiki/List_of_sultans_of_the_Seljuk_Empire"
+   },
+   {
+    "title": "Wikipedia: Battle of Dandanaqan",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Dandanaqan"
+   },
+   {
+    "title": "Wikipedia: Battle of Qatwan",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Qatwan"
+   },
+   {
+    "title": "Wikipedia: Battle of Manzikert",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Manzikert"
+   }
+  ]
+ },
+ {
+  "id": "mongol-empire",
+  "name": "Mongol Empire",
+  "profile": "mongol-empire",
+  "chain": [
+   {
+    "clio": "Mongol Empire",
+    "from": 1206,
+    "to": 1293
+   }
+  ],
+  "span": [
+   1206,
+   1293
+  ],
+  "summary": "Proclaimed Genghis Khan in 1206, Temüjin united the steppe and conquered northern China and the Khwarazmian Empire; his successors took the Jin, Rus' and the Abbasid caliphate, creating the largest contiguous land empire in history. After Möngke's death in 1259 the Toluid civil war split the empire into the Yuan dynasty and three western khanates (the Golden Horde, Chagatai Khanate and Ilkhanate). Kublai completed the conquest of Song China in 1279, but his attacks on Japan failed, and by his death in 1294 the four khanates went their own way.",
+  "events": [
+   {
+    "year": 1206,
+    "text": "Kurultai proclaims Temüjin Genghis Khan",
+    "lonlat": [
+     109.0,
+     48.8
+    ]
+   },
+   {
+    "year": 1219,
+    "text": "Invasion of the Khwarazmian Empire begins (1219–1221)",
+    "lonlat": [
+     68.3,
+     42.85
+    ]
+   },
+   {
+    "year": 1227,
+    "text": "Genghis Khan dies during the campaign against Western Xia",
+    "lonlat": null
+   },
+   {
+    "year": 1234,
+    "text": "Mongols and Song finish off the Jin dynasty",
+    "lonlat": [
+     114.36,
+     33.01
+    ]
+   },
+   {
+    "year": 1237,
+    "text": "Batu attacks Ryazan, the first Rus' principality to fall",
+    "lonlat": [
+     39.74,
+     54.63
+    ]
+   },
+   {
+    "year": 1240,
+    "text": "Kiev falls; nearly all Rus' under Mongol rule",
+    "lonlat": [
+     30.52,
+     50.45
+    ]
+   },
+   {
+    "year": 1241,
+    "text": "Hungarians crushed at Mohi; Ögedei's death halts the invasion",
+    "lonlat": [
+     20.95,
+     47.97
+    ]
+   },
+   {
+    "year": 1251,
+    "text": "Möngke elected Great Khan",
+    "lonlat": null
+   },
+   {
+    "year": 1258,
+    "text": "Hulagu sacks Baghdad and ends the Abbasid caliphate",
+    "lonlat": [
+     44.37,
+     33.31
+    ]
+   },
+   {
+    "year": 1259,
+    "text": "Möngke dies besieging Diaoyu; succession war follows",
+    "lonlat": [
+     106.28,
+     30.0
+    ]
+   },
+   {
+    "year": 1260,
+    "text": "Mamluks defeat the Mongols at Ain Jalut",
+    "lonlat": [
+     35.36,
+     32.55
+    ]
+   },
+   {
+    "year": 1271,
+    "text": "Kublai proclaims the Yuan dynasty",
+    "lonlat": [
+     116.4,
+     39.9
+    ]
+   },
+   {
+    "year": 1276,
+    "text": "Song imperial court surrenders at Hangzhou",
+    "lonlat": [
+     120.16,
+     30.27
+    ]
+   },
+   {
+    "year": 1279,
+    "text": "Conquest of Song China completed",
+    "lonlat": [
+     113.08,
+     22.3
+    ]
+   },
+   {
+    "year": 1281,
+    "text": "Second invasion of Japan fails, as the first did in 1274",
+    "lonlat": [
+     130.4,
+     33.59
+    ]
+   }
+  ],
+  "reigns": [
+   {
+    "name": "Genghis Khan",
+    "from": 1206,
+    "to": 1227
+   },
+   {
+    "name": "Tolui (regent)",
+    "from": 1227,
+    "to": 1229
+   },
+   {
+    "name": "Ögedei",
+    "from": 1229,
+    "to": 1241
+   },
+   {
+    "name": "Töregene (regent)",
+    "from": 1241,
+    "to": 1246
+   },
+   {
+    "name": "Güyük",
+    "from": 1246,
+    "to": 1248
+   },
+   {
+    "name": "Oghul Qaimish (regent)",
+    "from": 1248,
+    "to": 1251
+   },
+   {
+    "name": "Möngke",
+    "from": 1251,
+    "to": 1259
+   },
+   {
+    "name": "Kublai (r. 1260–1294)",
+    "from": 1260,
+    "to": 1293
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia: Mongol Empire",
+    "url": "https://en.wikipedia.org/wiki/Mongol_Empire"
+   },
+   {
+    "title": "World History Encyclopedia: Mongol Empire",
+    "url": "https://www.worldhistory.org/Mongol_Empire/"
+   },
+   {
+    "title": "Wikipedia: Kublai Khan",
+    "url": "https://en.wikipedia.org/wiki/Kublai_Khan"
+   },
+   {
+    "title": "Wikipedia: Mongol conquest of the Khwarazmian Empire",
+    "url": "https://en.wikipedia.org/wiki/Mongol_conquest_of_the_Khwarazmian_Empire"
+   },
+   {
+    "title": "Wikipedia: Mongol invasions of Japan",
+    "url": "https://en.wikipedia.org/wiki/Mongol_invasions_of_Japan"
+   },
+   {
+    "title": "Wikipedia: Division of the Mongol Empire",
+    "url": "https://en.wikipedia.org/wiki/Division_of_the_Mongol_Empire"
+   }
+  ]
+ },
+ {
+  "id": "delhi-sultanate",
+  "name": "Delhi Sultanate",
+  "profile": "delhi-sultanate",
+  "chain": [
+   {
+    "clio": "(Delhi Sultanate)",
+    "from": 1210,
+    "to": 1526
+   }
+  ],
+  "span": [
+   1210,
+   1526
+  ],
+  "summary": "Founded in 1206 by Qutb ud-Din Aibak in the Indian lands of the Ghurids, the sultanate was ruled in turn by the Mamluk, Khalji, Tughlaq, Sayyid and Lodi dynasties. Alauddin Khalji and Muhammad bin Tughluq pushed its armies deep into the south, briefly ruling most of the subcontinent, but rebellions created the Bahmani, Vijayanagara and other independent states. Timur's sack of Delhi in 1398 left a small kingdom that the Lodis partly revived, until Babur defeated Ibrahim Lodi at Panipat in 1526.",
+  "events": [
+   {
+    "year": 1211,
+    "text": "Iltutmish seizes the throne after Aibak's death",
+    "lonlat": [
+     77.21,
+     28.61
+    ]
+   },
+   {
+    "year": 1228,
+    "text": "Iltutmish annexes much of Punjab and Sindh",
+    "lonlat": [
+     71.47,
+     30.2
+    ]
+   },
+   {
+    "year": 1236,
+    "text": "Razia becomes sultan, one of few female rulers in Islamic history",
+    "lonlat": [
+     77.21,
+     28.61
+    ]
+   },
+   {
+    "year": 1266,
+    "text": "Balban takes power and breaks the 'Forty'",
+    "lonlat": [
+     77.21,
+     28.61
+    ]
+   },
+   {
+    "year": 1290,
+    "text": "Khalji revolution ends the Mamluk dynasty",
+    "lonlat": [
+     77.21,
+     28.61
+    ]
+   },
+   {
+    "year": 1299,
+    "text": "Alauddin Khalji's armies invade Gujarat (annexed 1304)",
+    "lonlat": [
+     72.12,
+     23.85
+    ]
+   },
+   {
+    "year": 1303,
+    "text": "Chittor captured; a major Mongol invasion of Delhi is repelled",
+    "lonlat": [
+     74.65,
+     24.89
+    ]
+   },
+   {
+    "year": 1311,
+    "text": "Malik Kafur's campaign sacks Madurai in the far south",
+    "lonlat": [
+     78.12,
+     9.93
+    ]
+   },
+   {
+    "year": 1320,
+    "text": "Ghiyath al-Din Tughluq founds the Tughlaq dynasty",
+    "lonlat": [
+     77.26,
+     28.51
+    ]
+   },
+   {
+    "year": 1327,
+    "text": "Muhammad bin Tughluq moves the capital to Daulatabad",
+    "lonlat": [
+     75.21,
+     19.94
+    ]
+   },
+   {
+    "year": 1347,
+    "text": "Bahmani Sultanate breaks away in the Deccan",
+    "lonlat": [
+     76.83,
+     17.33
+    ]
+   },
+   {
+    "year": 1398,
+    "text": "Timur sacks Delhi",
+    "lonlat": [
+     77.21,
+     28.61
+    ]
+   },
+   {
+    "year": 1414,
+    "text": "Khizr Khan founds the Sayyid dynasty",
+    "lonlat": [
+     77.21,
+     28.61
+    ]
+   },
+   {
+    "year": 1451,
+    "text": "Bahlul Lodi founds the Lodi dynasty",
+    "lonlat": [
+     77.21,
+     28.61
+    ]
+   },
+   {
+    "year": 1526,
+    "text": "Babur defeats and kills Ibrahim Lodi at Panipat",
+    "lonlat": [
+     76.97,
+     29.39
+    ]
+   }
+  ],
+  "reigns": [
+   {
+    "name": "Qutb ud-Din Aibak (r. 1206–1210)",
+    "from": 1210,
+    "to": 1210
+   },
+   {
+    "name": "Iltutmish",
+    "from": 1211,
+    "to": 1236
+   },
+   {
+    "name": "Razia",
+    "from": 1236,
+    "to": 1240
+   },
+   {
+    "name": "Balban",
+    "from": 1266,
+    "to": 1287
+   },
+   {
+    "name": "Jalal ud-Din Firuz Khalji",
+    "from": 1290,
+    "to": 1296
+   },
+   {
+    "name": "Alauddin Khalji",
+    "from": 1296,
+    "to": 1316
+   },
+   {
+    "name": "Ghiyath al-Din Tughluq",
+    "from": 1320,
+    "to": 1325
+   },
+   {
+    "name": "Muhammad bin Tughluq",
+    "from": 1325,
+    "to": 1351
+   },
+   {
+    "name": "Firuz Shah Tughlaq",
+    "from": 1351,
+    "to": 1388
+   },
+   {
+    "name": "Nasir ud-Din Mahmud Shah Tughlaq",
+    "from": 1394,
+    "to": 1413
+   },
+   {
+    "name": "Khizr Khan (Sayyid)",
+    "from": 1414,
+    "to": 1421
+   },
+   {
+    "name": "Bahlul Lodi",
+    "from": 1451,
+    "to": 1489
+   },
+   {
+    "name": "Sikandar Lodi",
+    "from": 1489,
+    "to": 1517
+   },
+   {
+    "name": "Ibrahim Lodi",
+    "from": 1517,
+    "to": 1526
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia: Delhi Sultanate",
+    "url": "https://en.wikipedia.org/wiki/Delhi_Sultanate"
+   },
+   {
+    "title": "Wikipedia: List of sultans of Delhi",
+    "url": "https://en.wikipedia.org/wiki/List_of_sultans_of_Delhi"
+   },
+   {
+    "title": "Wikipedia: Iltutmish",
+    "url": "https://en.wikipedia.org/wiki/Iltutmish"
+   },
+   {
+    "title": "Wikipedia: Alauddin Khalji",
+    "url": "https://en.wikipedia.org/wiki/Alauddin_Khalji"
+   },
+   {
+    "title": "Wikipedia: Muhammad bin Tughluq",
+    "url": "https://en.wikipedia.org/wiki/Muhammad_bin_Tughluq"
+   },
+   {
+    "title": "World History Encyclopedia: Delhi Sultanate",
+    "url": "https://www.worldhistory.org/Delhi_Sultanate/"
+   }
+  ]
+ },
+ {
+  "id": "mali-empire",
+  "name": "Mali Empire",
+  "profile": "mali-empire",
+  "chain": [
+   {
+    "clio": "Mali Empire",
+    "from": 1236,
+    "to": 1610
+   }
+  ],
+  "span": [
+   1236,
+   1610
+  ],
+  "summary": "Sundiata Keita's victory over the Sosso at Kirina (c. 1235) founded the Mali Empire, which absorbed old Ghana and controlled the gold and salt trade of the western Sahel. It peaked in the 14th century under Mansa Musa, whose 1324 pilgrimage through Cairo became legendary, and Sulayman, whose court Ibn Battuta visited. After 1360 weak rulers, Tuareg and Mossi raids and the rise of Songhai cost it Timbuktu, Gao and the north; a last attempt to take Djenné failed in 1599 and the empire broke up after Mahmud IV's death c. 1610.",
+  "events": [
+   {
+    "year": 1240,
+    "text": "c. 1240: Sundiata takes the old Ghana capital",
+    "lonlat": null
+   },
+   {
+    "year": 1255,
+    "text": "c. 1255: Sundiata dies; his son Uli succeeds",
+    "lonlat": null
+   },
+   {
+    "year": 1285,
+    "text": "General Sakura, a former slave, seizes the throne",
+    "lonlat": null
+   },
+   {
+    "year": 1312,
+    "text": "c. 1312: Musa becomes mansa",
+    "lonlat": null
+   },
+   {
+    "year": 1324,
+    "text": "Mansa Musa's pilgrimage passes through Cairo with lavish gold",
+    "lonlat": [
+     31.24,
+     30.04
+    ]
+   },
+   {
+    "year": 1325,
+    "text": "c. 1325: Musa, back from Mecca, builds mosques and palaces in Timbuktu",
+    "lonlat": [
+     -3.0,
+     16.77
+    ]
+   },
+   {
+    "year": 1352,
+    "text": "Ibn Battuta visits the court of Mansa Sulayman (1352–53)",
+    "lonlat": null
+   },
+   {
+    "year": 1360,
+    "text": "Sulayman dies, ending Mali's golden age",
+    "lonlat": null
+   },
+   {
+    "year": 1433,
+    "text": "Timbuktu lost to the Tuareg (1433–34)",
+    "lonlat": [
+     -3.0,
+     16.77
+    ]
+   },
+   {
+    "year": 1465,
+    "text": "Songhai conquers Mema, one of Mali's oldest provinces",
+    "lonlat": null
+   },
+   {
+    "year": 1477,
+    "text": "Mossi raiders conquer Macina",
+    "lonlat": null
+   },
+   {
+    "year": 1487,
+    "text": "Mansa Mahmud II receives Portuguese envoys",
+    "lonlat": null
+   },
+   {
+    "year": 1502,
+    "text": "Askia Muhammad I of Songhai seizes the province of Diafunu",
+    "lonlat": null
+   },
+   {
+    "year": 1599,
+    "text": "Mali army defeated outside Djenné by Moroccan troops",
+    "lonlat": [
+     -4.56,
+     13.91
+    ]
+   },
+   {
+    "year": 1610,
+    "text": "c. 1610: Mahmud IV dies and the empire breaks up",
+    "lonlat": null
+   }
+  ],
+  "reigns": [
+   {
+    "name": "Sundiata Keita (r. c. 1235–1255)",
+    "from": 1236,
+    "to": 1255
+   },
+   {
+    "name": "Uli",
+    "from": 1255,
+    "to": 1270
+   },
+   {
+    "name": "Abu Bakr",
+    "from": 1275,
+    "to": 1285
+   },
+   {
+    "name": "Sakura",
+    "from": 1285,
+    "to": 1300
+   },
+   {
+    "name": "Musa I",
+    "from": 1312,
+    "to": 1337
+   },
+   {
+    "name": "Maghan I",
+    "from": 1337,
+    "to": 1341
+   },
+   {
+    "name": "Sulayman",
+    "from": 1341,
+    "to": 1360
+   },
+   {
+    "name": "Mari Djata II",
+    "from": 1360,
+    "to": 1374
+   },
+   {
+    "name": "Musa II",
+    "from": 1374,
+    "to": 1387
+   },
+   {
+    "name": "Mahmud II",
+    "from": 1481,
+    "to": 1496
+   },
+   {
+    "name": "Mahmud III",
+    "from": 1496,
+    "to": 1559
+   },
+   {
+    "name": "Mahmud IV",
+    "from": 1590,
+    "to": 1610
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia: Mali Empire",
+    "url": "https://en.wikipedia.org/wiki/Mali_Empire"
+   },
+   {
+    "title": "Wikipedia: Keita dynasty",
+    "url": "https://en.wikipedia.org/wiki/Keita_dynasty"
+   },
+   {
+    "title": "Wikipedia: Sundiata Keita",
+    "url": "https://en.wikipedia.org/wiki/Sundiata_Keita"
+   },
+   {
+    "title": "Wikipedia: Musa I of Mali",
+    "url": "https://en.wikipedia.org/wiki/Musa_I_of_Mali"
+   },
+   {
+    "title": "World History Encyclopedia: Mali Empire",
+    "url": "https://www.worldhistory.org/Mali_Empire/"
+   }
+  ]
+ },
+ {
+  "id": "aztec-empire",
+  "name": "Aztec Empire",
+  "profile": "aztec-empire",
+  "chain": [
+   {
+    "clio": "Tenochtitlan",
+    "from": 1326,
+    "to": 1428
+   },
+   {
+    "clio": "Aztec Triple Alliance",
+    "from": 1429,
+    "to": 1520
+   }
+  ],
+  "span": [
+   1326,
+   1520
+  ],
+  "summary": "The Mexica founded Tenochtitlan on an island in Lake Texcoco, traditionally in 1325, and served the Tepanecs of Azcapotzalco until they overthrew them in 1428 and formed the Triple Alliance with Texcoco and Tlacopan. Under Itzcoatl, Moctezuma I, Axayacatl and Ahuitzotl the alliance built a tributary empire across central Mexico to the Gulf, Oaxaca and Soconusco, though it was halted by the Purépecha in the west. Cortés arrived in 1519 with Indigenous allies; after smallpox and a long siege, Tenochtitlan fell on 13 August 1521, after the map ends.",
+  "events": [
+   {
+    "year": 1375,
+    "text": "c. 1375: Acamapichtli becomes the first tlatoani of Tenochtitlan",
+    "lonlat": [
+     -99.13,
+     19.43
+    ]
+   },
+   {
+    "year": 1428,
+    "text": "Tenochtitlan and allies defeat Azcapotzalco; Triple Alliance formed",
+    "lonlat": [
+     -99.19,
+     19.49
+    ]
+   },
+   {
+    "year": 1440,
+    "text": "Moctezuma I succeeds Itzcoatl; expansion to the Gulf and Oaxaca",
+    "lonlat": [
+     -99.13,
+     19.43
+    ]
+   },
+   {
+    "year": 1472,
+    "text": "Axayacatl retakes the Toluca Valley from the Purépecha",
+    "lonlat": [
+     -99.66,
+     19.29
+    ]
+   },
+   {
+    "year": 1479,
+    "text": "Aztec invasion of the Purépecha Empire ends in heavy defeat",
+    "lonlat": [
+     -101.58,
+     19.63
+    ]
+   },
+   {
+    "year": 1486,
+    "text": "Ahuitzotl takes power; conquests reach Oaxaca and Soconusco",
+    "lonlat": [
+     -96.72,
+     17.06
+    ]
+   },
+   {
+    "year": 1502,
+    "text": "Moctezuma II succeeds Ahuitzotl",
+    "lonlat": [
+     -99.13,
+     19.43
+    ]
+   },
+   {
+    "year": 1515,
+    "text": "Aztec armies invade the Purépecha Empire again",
+    "lonlat": [
+     -101.58,
+     19.63
+    ]
+   },
+   {
+    "year": 1519,
+    "text": "Cortés lands and founds Veracruz; enters Tenochtitlan in November",
+    "lonlat": [
+     -96.13,
+     19.19
+    ]
+   },
+   {
+    "year": 1520,
+    "text": "Moctezuma dies; Spaniards flee on La Noche Triste; smallpox spreads",
+    "lonlat": [
+     -99.13,
+     19.43
+    ]
+   }
+  ],
+  "reigns": [
+   {
+    "name": "Acamapichtli",
+    "from": 1375,
+    "to": 1390
+   },
+   {
+    "name": "Huitzilihuitl",
+    "from": 1391,
+    "to": 1414
+   },
+   {
+    "name": "Chimalpopoca",
+    "from": 1415,
+    "to": 1427
+   },
+   {
+    "name": "Itzcoatl",
+    "from": 1427,
+    "to": 1440
+   },
+   {
+    "name": "Moctezuma I",
+    "from": 1440,
+    "to": 1469
+   },
+   {
+    "name": "Axayacatl",
+    "from": 1469,
+    "to": 1481
+   },
+   {
+    "name": "Tizoc",
+    "from": 1481,
+    "to": 1486
+   },
+   {
+    "name": "Ahuitzotl",
+    "from": 1486,
+    "to": 1502
+   },
+   {
+    "name": "Moctezuma II",
+    "from": 1502,
+    "to": 1520
+   },
+   {
+    "name": "Cuitláhuac",
+    "from": 1520,
+    "to": 1520
+   },
+   {
+    "name": "Cuauhtémoc (r. 1520–1521)",
+    "from": 1520,
+    "to": 1520
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia: Aztec Empire",
+    "url": "https://en.wikipedia.org/wiki/Aztec_Empire"
+   },
+   {
+    "title": "Wikipedia: List of tlatoque of Tenochtitlan",
+    "url": "https://en.wikipedia.org/wiki/List_of_tlatoque_of_Tenochtitlan"
+   },
+   {
+    "title": "World History Encyclopedia: Aztec Civilization",
+    "url": "https://www.worldhistory.org/Aztec_Civilization/"
+   }
+  ]
+ },
+ {
+  "id": "timurid-empire",
+  "name": "Timurid Empire",
+  "profile": "timurid-empire",
+  "chain": [
+   {
+    "clio": "Timurid Empire",
+    "from": 1375,
+    "to": 1507
+   }
+  ],
+  "span": [
+   1375,
+   1507
+  ],
+  "summary": "Timur took control of the western Chagatai lands around 1370 (the map starts in 1375) and in three decades of campaigns conquered Iran and Iraq, broke the Golden Horde, sacked Delhi, Damascus and Baghdad and defeated the Ottomans at Ankara. After his death in 1405 his son Shah Rukh ruled from Herat over a smaller realm that saw the Timurid Renaissance. Civil wars, the Qara Qoyunlu and Aq Qoyunlu cost the dynasty western Iran, and the Uzbeks took Samarkand (1501) and Herat (1507); Babur, a Timurid, went on to found the Mughal Empire.",
+  "events": [
+   {
+    "year": 1387,
+    "text": "Timur takes Isfahan, massacring the city after it revolts",
+    "lonlat": [
+     51.67,
+     32.65
+    ]
+   },
+   {
+    "year": 1389,
+    "text": "Kartid rulers removed from Herat",
+    "lonlat": [
+     62.2,
+     34.35
+    ]
+   },
+   {
+    "year": 1393,
+    "text": "Timur captures Shiraz and seizes Baghdad",
+    "lonlat": [
+     52.53,
+     29.59
+    ]
+   },
+   {
+    "year": 1395,
+    "text": "Timur crushes Tokhtamysh's Golden Horde (1394–95)",
+    "lonlat": null
+   },
+   {
+    "year": 1398,
+    "text": "Timur invades India and sacks Delhi",
+    "lonlat": [
+     77.21,
+     28.61
+    ]
+   },
+   {
+    "year": 1401,
+    "text": "Damascus taken; Baghdad destroyed",
+    "lonlat": [
+     44.37,
+     33.31
+    ]
+   },
+   {
+    "year": 1402,
+    "text": "Timur defeats and captures the Ottoman sultan at Ankara",
+    "lonlat": [
+     32.85,
+     39.93
+    ]
+   },
+   {
+    "year": 1405,
+    "text": "Timur dies at Farab (Otrar) on his way to invade China",
+    "lonlat": [
+     68.3,
+     42.85
+    ]
+   },
+   {
+    "year": 1447,
+    "text": "Shah Rukh dies; the Qara Qoyunlu drive Timurids out of western Iran",
+    "lonlat": [
+     62.2,
+     34.35
+    ]
+   },
+   {
+    "year": 1449,
+    "text": "Ulugh Beg executed after his son's revolt; civil war follows",
+    "lonlat": [
+     66.96,
+     39.65
+    ]
+   },
+   {
+    "year": 1469,
+    "text": "Abu Sa'id killed by Uzun Hasan; Persia lost for good",
+    "lonlat": null
+   },
+   {
+    "year": 1501,
+    "text": "Uzbeks under Shaybani Khan take Samarkand",
+    "lonlat": [
+     66.96,
+     39.65
+    ]
+   },
+   {
+    "year": 1507,
+    "text": "Herat falls to the Uzbeks; main Timurid rule ends",
+    "lonlat": [
+     62.2,
+     34.35
+    ]
+   }
+  ],
+  "reigns": [
+   {
+    "name": "Timur (r. 1370–1405)",
+    "from": 1375,
+    "to": 1405
+   },
+   {
+    "name": "Shah Rukh",
+    "from": 1405,
+    "to": 1447
+   },
+   {
+    "name": "Ulugh Beg",
+    "from": 1447,
+    "to": 1449
+   },
+   {
+    "name": "Abu Sa'id Mirza",
+    "from": 1451,
+    "to": 1469
+   },
+   {
+    "name": "Husayn Bayqara (at Herat)",
+    "from": 1469,
+    "to": 1506
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia: Timurid Empire",
+    "url": "https://en.wikipedia.org/wiki/Timurid_Empire"
+   },
+   {
+    "title": "Wikipedia: Timur",
+    "url": "https://en.wikipedia.org/wiki/Timur"
+   },
+   {
+    "title": "World History Encyclopedia: Timur",
+    "url": "https://www.worldhistory.org/Timur/"
+   }
+  ]
+ },
+ {
+  "id": "inca-empire",
+  "name": "Inca Empire",
+  "profile": "inca-empire",
+  "chain": [
+   {
+    "clio": "Inca Empire",
+    "from": 1440,
+    "to": 1533
+   }
+  ],
+  "span": [
+   1440,
+   1533
+  ],
+  "summary": "After defeating the Chanka, Pachacuti (traditionally from 1438) turned the kingdom of Cusco into Tawantinsuyu, and he and his son Topa Inca conquered the Andes from Ecuador to central Chile, including the coastal kingdom of Chimor. At its height under Huayna Capac it was the largest empire in pre-Columbian America. Disease and a succession war between Huáscar and Atahualpa weakened it just as Pizarro arrived; Atahualpa was seized at Cajamarca in 1532 and executed in 1533, though Inca resistance continued at Vilcabamba until 1572.",
+  "events": [
+   {
+    "year": 1470,
+    "text": "c. 1470: The Incas conquer Chimor and its capital Chan Chan",
+    "lonlat": [
+     -79.07,
+     -8.11
+    ]
+   },
+   {
+    "year": 1471,
+    "text": "Topa Inca Yupanqui succeeds Pachacuti and doubles the empire",
+    "lonlat": [
+     -71.97,
+     -13.53
+    ]
+   },
+   {
+    "year": 1493,
+    "text": "Huayna Capac succeeds and extends Inca rule into Ecuador",
+    "lonlat": [
+     -78.47,
+     -0.18
+    ]
+   },
+   {
+    "year": 1527,
+    "text": "Push into the Amazon near the Chinchipe is stopped by the Shuar",
+    "lonlat": null
+   },
+   {
+    "year": 1527,
+    "text": "c. 1527: Huayna Capac dies, possibly of a European disease",
+    "lonlat": null
+   },
+   {
+    "year": 1532,
+    "text": "Atahualpa defeats his brother Huáscar in the civil war",
+    "lonlat": null
+   },
+   {
+    "year": 1532,
+    "text": "Pizarro seizes Atahualpa at Cajamarca (16 November)",
+    "lonlat": [
+     -78.52,
+     -7.16
+    ]
+   },
+   {
+    "year": 1533,
+    "text": "Atahualpa executed; Spaniards take Cusco in November",
+    "lonlat": [
+     -71.97,
+     -13.53
+    ]
+   }
+  ],
+  "reigns": [
+   {
+    "name": "Pachacuti (r. 1438–1471, traditional dates)",
+    "from": 1440,
+    "to": 1471
+   },
+   {
+    "name": "Topa Inca Yupanqui",
+    "from": 1471,
+    "to": 1493
+   },
+   {
+    "name": "Huayna Capac",
+    "from": 1493,
+    "to": 1527
+   },
+   {
+    "name": "Huáscar",
+    "from": 1527,
+    "to": 1532
+   },
+   {
+    "name": "Atahualpa",
+    "from": 1532,
+    "to": 1533
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia: Inca Empire",
+    "url": "https://en.wikipedia.org/wiki/Inca_Empire"
+   },
+   {
+    "title": "Wikipedia: Sapa Inca",
+    "url": "https://en.wikipedia.org/wiki/Sapa_Inca"
+   },
+   {
+    "title": "Wikipedia: Pachacuti",
+    "url": "https://en.wikipedia.org/wiki/Pachacuti"
+   },
+   {
+    "title": "Wikipedia: Huayna Capac",
+    "url": "https://en.wikipedia.org/wiki/Huayna_Capac"
+   },
+   {
+    "title": "Wikipedia: Battle of Cajamarca",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Cajamarca"
+   },
+   {
+    "title": "World History Encyclopedia: Inca Civilization",
+    "url": "https://www.worldhistory.org/Inca_Civilization/"
+   }
+  ]
+ },
+ {
+  "id": "songhai-empire",
+  "name": "Songhai Empire",
+  "profile": "songhai-empire",
+  "chain": [
+   {
+    "clio": "Songhai Empire",
+    "from": 1464,
+    "to": 1591
+   }
+  ],
+  "span": [
+   1464,
+   1591
+  ],
+  "summary": "From Gao, Sonni Ali (r. 1464–1492) turned Songhai into the Sahel's leading power, taking Timbuktu and Djenné and much of Mali's former territory. Askia Muhammad I, who seized power in 1493, reorganised the state, made a celebrated pilgrimage to Mecca and pushed its frontiers further. After his overthrow in 1528 civil wars weakened the empire, and in 1591 a Moroccan army with firearms routed the Songhai at Tondibi and sacked Gao, Timbuktu and Djenné.",
+  "events": [
+   {
+    "year": 1464,
+    "text": "c. 1464: Sonni Ali takes power at Gao",
+    "lonlat": [
+     -0.04,
+     16.27
+    ]
+   },
+   {
+    "year": 1465,
+    "text": "Songhai conquers Mema from the Mali Empire",
+    "lonlat": null
+   },
+   {
+    "year": 1468,
+    "text": "Sonni Ali takes Timbuktu from the Tuareg",
+    "lonlat": [
+     -3.0,
+     16.77
+    ]
+   },
+   {
+    "year": 1473,
+    "text": "Djenné surrenders after a long siege",
+    "lonlat": [
+     -4.56,
+     13.91
+    ]
+   },
+   {
+    "year": 1492,
+    "text": "Sonni Ali dies; his son Sonni Baru succeeds",
+    "lonlat": null
+   },
+   {
+    "year": 1493,
+    "text": "Askia Muhammad defeats Sonni Baru at Anfao and takes power",
+    "lonlat": [
+     -0.04,
+     16.27
+    ]
+   },
+   {
+    "year": 1496,
+    "text": "Askia Muhammad's pilgrimage to Mecca (dated 1496 or 1497–98)",
+    "lonlat": [
+     39.83,
+     21.42
+    ]
+   },
+   {
+    "year": 1502,
+    "text": "Songhai defeats a Mali army and seizes Diafunu",
+    "lonlat": null
+   },
+   {
+    "year": 1528,
+    "text": "Askia Muhammad deposed by his son Musa",
+    "lonlat": [
+     -0.04,
+     16.27
+    ]
+   },
+   {
+    "year": 1549,
+    "text": "Askia Dawud's reign (to 1582) brings stability and victories",
+    "lonlat": [
+     -0.04,
+     16.27
+    ]
+   },
+   {
+    "year": 1590,
+    "text": "Ahmad al-Mansur of Morocco sends Judar Pasha across the Sahara",
+    "lonlat": [
+     -7.99,
+     31.63
+    ]
+   },
+   {
+    "year": 1591,
+    "text": "Moroccan musketeers rout the Songhai at Tondibi; Gao sacked",
+    "lonlat": [
+     -0.08,
+     16.5
+    ]
+   }
+  ],
+  "reigns": [
+   {
+    "name": "Sonni Ali",
+    "from": 1464,
+    "to": 1492
+   },
+   {
+    "name": "Sonni Baru",
+    "from": 1492,
+    "to": 1493
+   },
+   {
+    "name": "Askia Muhammad I",
+    "from": 1493,
+    "to": 1528
+   },
+   {
+    "name": "Askia Musa",
+    "from": 1528,
+    "to": 1531
+   },
+   {
+    "name": "Askia Muhammad Bonkana",
+    "from": 1531,
+    "to": 1537
+   },
+   {
+    "name": "Askia Ishaq I",
+    "from": 1539,
+    "to": 1549
+   },
+   {
+    "name": "Askia Dawud",
+    "from": 1549,
+    "to": 1582
+   },
+   {
+    "name": "Askia al-Hajj",
+    "from": 1582,
+    "to": 1586
+   },
+   {
+    "name": "Askia Muhammad Bani",
+    "from": 1586,
+    "to": 1588
+   },
+   {
+    "name": "Askia Ishaq II",
+    "from": 1588,
+    "to": 1591
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia: Songhai Empire",
+    "url": "https://en.wikipedia.org/wiki/Songhai_Empire"
+   },
+   {
+    "title": "Wikipedia: Askiya dynasty",
+    "url": "https://en.wikipedia.org/wiki/Askiya_dynasty"
+   },
+   {
+    "title": "Wikipedia: Sonni Ali",
+    "url": "https://en.wikipedia.org/wiki/Sonni_Ali"
+   },
+   {
+    "title": "Wikipedia: Askia Muhammad I",
+    "url": "https://en.wikipedia.org/wiki/Askia_Muhammad_I"
+   },
+   {
+    "title": "Wikipedia: Battle of Tondibi",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Tondibi"
+   },
+   {
+    "title": "World History Encyclopedia: Songhai Empire",
+    "url": "https://www.worldhistory.org/Songhai_Empire/"
+   }
+  ]
+ }
+]

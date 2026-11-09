@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Atlas of Empires</title>
+<meta name="description" content="An interactive world map from 3400 BCE to 2024 CE: who ruled what, how far every empire reached, and what was happening in each region.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+  <header id="bar">
+    <a class="brand" href="#" id="home">ATLAS OF EMPIRES</a>
+    <div class="search">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+      <label for="search" class="sr">Search realms</label>
+      <input id="search" type="search" placeholder="Search 1,637 realms…" autocomplete="off">
+      <ul id="results" hidden></ul>
+    </div>
+    <nav class="topnav" aria-label="Sections"><a href="#empires" id="empiresLink">Empires</a><a href="#moments" id="momentsLink">Moments</a><a href="#sources" id="sourcesLink">Sources</a></nav>
+  </header>
+
+  <section id="col" aria-live="polite"></section>
+
+  <main id="stage">
+    <canvas id="map" aria-label="World map"></canvas>
+    <div id="mapTools">
+      <button id="zoomIn" title="Zoom in" aria-label="Zoom in">+</button>
+      <button id="zoomOut" title="Zoom out" aria-label="Zoom out">−</button>
+      <button id="zoomReset" title="Whole world" aria-label="Show whole world"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.2 3 14.8 0 18M12 3c-3 3.2-3 14.8 0 18"/></svg></button>
+      <button id="labelsBtn" class="on" title="Labels" aria-label="Toggle labels" aria-pressed="true">Aa</button>
+      <button id="peoplesBtn" class="on" title="Peoples layer" aria-label="Toggle peoples layer" aria-pressed="true"><span class="hatch"></span></button>
+    </div>
+    <div id="legend">
+      <span><i class="sw others"></i>Other recorded states</span>
+      <span><i class="sw peoples"></i>Peoples (approx.)</span>
+      <span><i class="sw unknown"></i>Unrecorded</span>
+    </div>
+    <div id="tooltip" hidden></div>
+    <div id="loading">Loading the world…</div>
+  </main>
+
+  <footer id="dock">
+    <div class="dock-head">
+      <button id="play" class="play" aria-label="Play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5l11 7-11 7z"/></svg></button>
+      <div class="dock-title">
+        <span id="chartTitle">The great powers</span>
+        <span class="sub">Territory in millions of km², stacked · drag across the chart to travel</span>
+      </div>
+      <div class="chapnav">
+        <button id="prev" aria-label="Previous chapter">‹ Chapter</button>
+        <button id="next" aria-label="Next chapter">Chapter ›</button>
+      </div>
+      <div id="strip" role="slider" aria-label="Era" tabindex="0"></div>
+    </div>
+    <div id="chart"></div>
+  </footer>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

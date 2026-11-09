@@ -1,0 +1,234 @@
+[
+ {
+  "file": "content/eras/a-ancient.json",
+  "item": -3000,
+  "field": "regions.southern-north-america",
+  "old": "small-cobbed maize alongside squash and beans,",
+  "new": "small-cobbed maize alongside squash,",
+  "source": "Smith, B. D. (2001), 'Documenting plant domestication', PNAS 98(4):1324-1326: earliest directly dated common beans in Mexico are only c. 2,300 cal. years old (Coxcatlán Cave), https://pmc.ncbi.nlm.nih.gov/articles/PMC33375 ; Kaplan & Lynch (1999), Economic Botany 53(3):261-272"
+ },
+ {
+  "file": "content/eras/a-ancient.json",
+  "item": -1000,
+  "field": "regions.southern-north-america",
+  "old": "are at their height at San Lorenzo, carving colossal stone heads of their rulers, and La Venta is rising.",
+  "new": "rule from San Lorenzo, famed for colossal stone heads of its rulers, though its heyday is ending as La Venta rises.",
+  "source": "San Lorenzo phase c. 1400-1000 BCE; decline in the Nacaste phase c. 1000-800 BCE, collapse in the 10th century BCE (Cyphers, via https://en.wikipedia.org/wiki/San_Lorenzo_Tenochtitl%C3%A1n)"
+ },
+ {
+  "file": "content/eras/a-ancient.json",
+  "item": -1000,
+  "addSource": {
+   "title": "Wikipedia: San Lorenzo Tenochtitlán",
+   "url": "https://en.wikipedia.org/wiki/San_Lorenzo_Tenochtitl%C3%A1n"
+  }
+ },
+ {
+  "file": "content/eras/a-ancient.json",
+  "item": -3000,
+  "addSource": {
+   "title": "Smith (2001), Documenting plant domestication, PNAS 98(4)",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC33375"
+  }
+ },
+ {
+  "file": "content/eras/b-medieval.json",
+  "item": 500,
+  "field": "overview",
+  "old": "the Maya cities of Tikal and Calakmul are locked in rivalry",
+  "new": "the Maya city of Tikal and the Kaan (Snake) kingdom, later ruled from Calakmul, are locked in rivalry",
+  "source": "Martin & Velásquez García 2016, The PARI Journal 17(2):23-33, https://www.mesoweb.com/pari/journal/archive/PARI1702.pdf"
+ },
+ {
+  "file": "content/eras/b-medieval.json",
+  "item": 500,
+  "addSource": {
+   "title": "Martin & Velásquez García (2016), Polities and Places: Tracing the Toponyms of the Snake Dynasty, PARI Journal 17(2)",
+   "url": "https://www.mesoweb.com/pari/journal/archive/PARI1702.pdf"
+  }
+ },
+ {
+  "file": "content/eras/b-medieval.json",
+  "item": 1000,
+  "field": "regions.northern-north-america",
+  "old": "The Thule people are beginning to expand east from Alaska, displacing the Dorset.",
+  "new": "The Thule culture is taking shape in coastal Alaska; its rapid eastward migration, which will displace the Dorset, begins only around 1200.",
+  "source": "Friesen & Arnold (2008), 'The Timing of the Thule Migration', American Antiquity 73(3):527-538: no Thule occupation in the western Canadian Arctic before the 13th century, spread beginning c. 1200, summarised at https://historicalclimatology.com/features/what-made-the-thule-move-climate-and-culture-in-the-high-arctic ; consistent with the atlas's own Thule profile ('From about 1200 ...')"
+ },
+ {
+  "file": "content/eras/b-medieval.json",
+  "item": 1100,
+  "field": "regions.northern-north-america",
+  "old": "The Thule people, ancestors of the Inuit, are spreading eastward across the Canadian Arctic with dog sleds and skin boats, replacing the Dorset.",
+  "new": "The Thule people, ancestors of the Inuit, are perfecting their whaling way of life with dog sleds and skin boats in Alaska, while the Dorset still hold the Canadian Arctic.",
+  "source": "Friesen & Arnold 2008, American Antiquity 73(3):527-538 (Thule eastward spread no earlier than c. 1200), via https://historicalclimatology.com/features/what-made-the-thule-move-climate-and-culture-in-the-high-arctic"
+ },
+ {
+  "file": "content/eras/b-medieval.json",
+  "item": 1200,
+  "field": "regions.northern-north-america",
+  "old": "The Thule people have spread across the Arctic and are reaching Greenland, where they meet the Norse settlers. The Dorset culture is disappearing.",
+  "new": "The Thule people are beginning a rapid migration east from Alaska and within a century will reach Greenland, where they meet the Norse settlers. The Dorset culture still holds the eastern Arctic, but not for long.",
+  "source": "Friesen & Arnold 2008, American Antiquity 73(3):527-538, via https://historicalclimatology.com/features/what-made-the-thule-move-climate-and-culture-in-the-high-arctic ; Dorset persisted to c. 1300-1400 CE: https://www.thecanadianencyclopedia.ca/en/article/dorset-culture"
+ },
+ {
+  "file": "content/eras/b-medieval.json",
+  "item": 1000,
+  "addSource": {
+   "title": "Historical Climatology: What made the Thule move? (on Friesen & Arnold 2008)",
+   "url": "https://historicalclimatology.com/features/what-made-the-thule-move-climate-and-culture-in-the-high-arctic"
+  }
+ },
+ {
+  "file": "content/eras/b-medieval.json",
+  "item": 1100,
+  "addSource": {
+   "title": "Historical Climatology: What made the Thule move? (on Friesen & Arnold 2008)",
+   "url": "https://historicalclimatology.com/features/what-made-the-thule-move-climate-and-culture-in-the-high-arctic"
+  }
+ },
+ {
+  "file": "content/eras/b-medieval.json",
+  "item": 1200,
+  "addSource": {
+   "title": "The Canadian Encyclopedia: Dorset Culture",
+   "url": "https://www.thecanadianencyclopedia.ca/en/article/dorset-culture"
+  }
+ },
+ {
+  "file": "content/eras/b-medieval.json",
+  "item": 1400,
+  "field": "regions.northern-south-america",
+  "old": "under Viracocha Inca (c.), are expanding",
+  "new": "under Viracocha Inca, are expanding",
+  "source": "Editorial: stray '(c.)' token; Inca regnal dates before Pachacuti (1438) are traditional only"
+ },
+ {
+  "file": "content/eras/c-earlymodern.json",
+  "item": 1650,
+  "field": "regions.southern-north-america",
+  "old": "Haudenosaunee, Powhatan, Creek,",
+  "new": "Haudenosaunee, Creek,",
+  "source": "The Powhatan paramount chiefdom was dissolved by the Treaty of 1646 after Opechancanough's capture and death; by 1650 it was no longer a 'powerful' independent nation: https://en.wikipedia.org/wiki/Powhatan_Confederacy"
+ },
+ {
+  "file": "content/eras/c-earlymodern.json",
+  "item": 1650,
+  "addSource": {
+   "title": "Wikipedia: Powhatan Confederacy",
+   "url": "https://en.wikipedia.org/wiki/Powhatan_Confederacy"
+  }
+ },
+ {
+  "file": "content/eras/c-earlymodern.json",
+  "item": 1800,
+  "field": "regions.southern-north-america",
+  "old": "Thomas Jefferson won the election that year.",
+  "new": "Thomas Jefferson defeated him in that year's election, though his tie with Aaron Burr was settled by the House only in February 1801.",
+  "source": "Electors chosen 31 Oct - 3 Dec 1800; House chose Jefferson on 17 Feb 1801 on the 36th ballot: https://en.wikipedia.org/wiki/1800_United_States_presidential_election"
+ },
+ {
+  "file": "content/eras/c-earlymodern.json",
+  "item": 1800,
+  "addSource": {
+   "title": "Wikipedia: 1800 United States presidential election",
+   "url": "https://en.wikipedia.org/wiki/1800_United_States_presidential_election"
+  }
+ },
+ {
+  "file": "content/eras/d-modern.json",
+  "item": 1880,
+  "field": "regions.southern-north-america",
+  "old": "Spain still rules Cuba and Puerto Rico, where a ten-year independence war ended in 1878.",
+  "new": "Spain still rules Puerto Rico and Cuba, where a ten-year independence war ended in 1878.",
+  "source": "The Ten Years' War (1868-78, Pact of Zanjón) was fought in Cuba only; Puerto Rico's 1868 Grito de Lares was separate: https://en.wikipedia.org/wiki/Ten_Years%27_War"
+ },
+ {
+  "file": "content/eras/d-modern.json",
+  "item": 1880,
+  "addSource": {
+   "title": "Wikipedia: Ten Years' War",
+   "url": "https://en.wikipedia.org/wiki/Ten_Years%27_War"
+  }
+ },
+ {
+  "file": "content/eras/d-modern.json",
+  "item": 1900,
+  "field": "events[3].text",
+  "old": "the US takes Cuba, Puerto Rico, Guam and the Philippines",
+  "new": "the US occupies Cuba and takes Puerto Rico, Guam and the Philippines",
+  "source": "Treaty of Paris 1898: Spain relinquished sovereignty over Cuba (to become independent) but ceded Puerto Rico, Guam and the Philippines: https://en.wikipedia.org/wiki/Treaty_of_Paris_(1898)"
+ },
+ {
+  "file": "content/eras/d-modern.json",
+  "item": 1900,
+  "addSource": {
+   "title": "Wikipedia: Treaty of Paris (1898)",
+   "url": "https://en.wikipedia.org/wiki/Treaty_of_Paris_(1898)"
+  }
+ },
+ {
+  "file": "content/eras/d-modern.json",
+  "item": 2000,
+  "field": "regions.northern-south-america",
+  "old": "Ecuador replaces its currency with the US dollar after a January coup",
+  "new": "Ecuador adopts the US dollar, a plan announced just before a January coup",
+  "source": "Mahuad announced dollarization in early January 2000; coup on 21 January 2000; Noboa carried it through: https://en.wikipedia.org/wiki/2000_Ecuadorian_coup_d%27%C3%A9tat"
+ },
+ {
+  "file": "content/eras/d-modern.json",
+  "item": 2000,
+  "addSource": {
+   "title": "Wikipedia: 2000 Ecuadorian coup d'état",
+   "url": "https://en.wikipedia.org/wiki/2000_Ecuadorian_coup_d%27%C3%A9tat"
+  }
+ },
+ {
+  "file": "content/empires/a2-early.json",
+  "item": "inca-empire",
+  "field": "rulers[3].note",
+  "old": "died of smallpox",
+  "new": "died in an epidemic, possibly smallpox",
+  "source": "Cause of Huayna Capac's death (1527/28) is uncertain; smallpox is disputed (McCaa et al.), https://en.wikipedia.org/wiki/Huayna_Capac"
+ },
+ {
+  "file": "content/empires/a2-early.json",
+  "item": "inca-empire",
+  "addSource": {
+   "title": "Wikipedia: Huayna Capac",
+   "url": "https://en.wikipedia.org/wiki/Huayna_Capac"
+  }
+ },
+ {
+  "file": "content/empires/a2-early.json",
+  "item": "maya-civilisation",
+  "addSource": {
+   "title": "Martin & Velásquez García (2016), Polities and Places: Tracing the Toponyms of the Snake Dynasty, PARI Journal 17(2)",
+   "url": "https://www.mesoweb.com/pari/journal/archive/PARI1702.pdf"
+  }
+ },
+ {
+  "file": "content/empires/a2-early.json",
+  "item": "thule-culture",
+  "addSource": {
+   "title": "Historical Climatology: What made the Thule move? (on Friesen & Arnold 2008)",
+   "url": "https://historicalclimatology.com/features/what-made-the-thule-move-climate-and-culture-in-the-high-arctic"
+  }
+ },
+ {
+  "file": "content/empires/b-late.json",
+  "item": "canada",
+  "field": "rulers[2].reign",
+  "old": "1921–1930, 1935–1948",
+  "new": "1921–1926, 1926–1930, 1935–1948",
+  "source": "King: 29 Dec 1921 - 28 Jun 1926; 25 Sep 1926 - 7 Aug 1930; 23 Oct 1935 - 15 Nov 1948 (Meighen briefly in 1926): https://en.wikipedia.org/wiki/William_Lyon_Mackenzie_King"
+ },
+ {
+  "file": "content/empires/b-late.json",
+  "item": "canada",
+  "addSource": {
+   "title": "Wikipedia: William Lyon Mackenzie King",
+   "url": "https://en.wikipedia.org/wiki/William_Lyon_Mackenzie_King"
+  }
+ }
+]

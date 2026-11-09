@@ -1,0 +1,372 @@
+# Specialist patch report
+
+Applied: 319 · Skipped: 46
+
+## Applied
+- [africa] 500 regions.northern-africa: “In West Africa the kingdom of Ghana is growing rich on trans-Saharan trade in gold and salt.” → “In West Africa the kingdom of Ghana may already be taking shape, though its great trans-Saharan gold trade is not recorded until the 700s.” (UNESCO General History of Africa III (1988), ch. 18, p. 475 (Kumbi Saleh's gold trade 'begins not later than the eighth century'; al-Fazari's reference late 8th c.) — archive.org/details/general-history-of-africa-vol-3)
+- [africa] 600 regions.northern-africa: “The kingdom of Ghana prospers from gold and salt trade in West Africa.” → “In West Africa the kingdom of Ghana is probably emerging, though written records of its gold trade begin only in the 700s.” (UNESCO General History of Africa III (1988), ch. 18, p. 475 — archive.org/details/general-history-of-africa-vol-3)
+- [africa] 900 regions.northern-africa: “in the Niger delta region” → “in south-eastern Nigeria, east of the lower Niger” (UNESCO General History of Africa III (1988), ch. 18, p. 477 (Igbo-Ukwu lies c. 35 km from Onitsha on the Niger, not in the delta) — archive.org/details/general-history-of-africa-vol-3)
+- [africa] 1100 regions.northern-africa: “whose king Hummay converted to Islam around 1085” → “whose Muslim king Hummay (c. 1075–1086) founded the Sayfawa dynasty” (UNESCO General History of Africa III (1988), ch. 15 (D. Lange), pp. 459-60: Hummay came to power c. 1075 (r. c. 1075-86) and 'was not the first Muslim ruler of Kanem' — archive.org/details/general-history-of-africa-vol-3)
+- [africa] 1783 regions.southern-africa: “The Omani Busaidi rulers controlled Zanzibar and the Swahili coast” → “The Omani Busaidi rulers held Zanzibar and claimed the Swahili coast, though their Mazrui governors in Mombasa acted almost independently” (UNESCO General History of Africa VI (1989), ch. 9 (A. I. Salim), pp. 211-12 — archive.org/details/general_history_africa_vi)
+- [africa] 1783 regions.southern-africa: “by Andrianampoinimerina from about 1787” → “by Andrianampoinimerina from about 1785” (UNESCO General History of Africa VI (1989), ch. 16, p. 413 ('In about 1785 Ramboasalama ... proclaimed himself king under the name of Andrianampoinimerina'))
+- [africa] 1800 regions.southern-africa: “and Oman ruled Zanzibar and the Swahili coast” → “and Oman held Zanzibar and Kilwa, while its Mazrui governors in Mombasa were virtually independent” (UNESCO General History of Africa VI (1989), ch. 9, pp. 211-12 (c. 1800 Omani presence 'significantly evident in only three main centres: Mombasa, Zanzibar and Kilwa'; Mazrui autonomous))
+- [africa] kingdom-of-kush summary: “Meroë declined in the 4th century CE, and Aksum's armies finished it around 350.” → “Meroë declined in the 4th century CE and seems to have already collapsed when Aksum's armies raided the region around 350.” (UNESCO General History of Africa II (1981), ch. 10 (Hakem/Leclant), p. 293: 'the Meroitic kingdom had already collapsed at the time of Ezana's campaign')
+- [africa] ghana-empire rulers[0].reign: “c. 4th century (oral tradition)” → “date unknown (tradition; Delafosse placed him in the late 8th century)” (UNESCO General History of Africa III (1988), ch. 13 (B. Barry), p. 129 — archive.org/details/general-history-of-africa-vol-3)
+- [africa] mali-empire peak.note: “to beyond Timbuktu and Gao” → “to beyond Timbuktu and Gao; c. 1.1M km² (Taagepera 1997, for c. 1380)” (Taagepera 1997, via Wikipedia: List of largest empires)
+- [africa] fatimid-caliphate peak.note: “North Africa, Egypt, Sicily, the Levant and the Hejaz” → “North Africa, Egypt, Sicily, the Levant and the Hejaz; Taagepera (1997) and Turchin et al. (2006) give c. 4.1M km² for 969, counting nominal Saharan lands” (Taagepera 1997; Turchin, Adams & Hall 2006, via Wikipedia: List of largest empires)
+- [africa] almohad-caliphate peak.note: “From the Atlantic to Tripolitania, plus southern Spain” → “From the Atlantic to Tripolitania, plus southern Spain; c. 2.0–2.3M km² (Taagepera 1997; Turchin et al. 2006)” (Taagepera 1997 (2.3M, 1150); Turchin et al. 2006 (2.0M, 1200), via Wikipedia: List of largest empires)
+- [africa] mamluk-sultanate peak.note: “Egypt, Syria, Palestine and the Hejaz” → “Egypt, Syria, Palestine and the Hejaz; c. 2.1M km² (Taagepera 1997)” (Taagepera 1997, via Wikipedia: List of largest empires)
+- [africa] ptolemaic-kingdom peak.note: “Under Ptolemy III: Egypt, Cyrenaica, Cyprus, the southern Levant and Aegean outposts” → “Under Ptolemy III: Egypt, Cyrenaica, Cyprus, the southern Levant and Aegean outposts; c. 1.0M km² (Taagepera 1979, for c. 301 BCE)” (Taagepera 1979, via Wikipedia: List of largest empires)
+- [africa] carthaginian-empire peak.note: “western Sicily and the Balearics” → “western Sicily and the Balearics; Taagepera (1979) gives c. 0.3M km² for c. 220 BCE, when Barcid Spain had replaced the lost islands” (Taagepera 1979, via Wikipedia: List of largest empires)
+- [africa] songhai-empire peak.note: “Along the Niger from Senegal's borders to present-day Nigeria” → “Along the Niger from Senegal's borders to present-day Nigeria; c. 0.8M km² (Taagepera 1997, for c. 1550)” (Taagepera 1997, via Wikipedia: List of largest empires)
+- [africa] morocco rulers[1].note: “Victor at the Battle of the Three Kings” → “Proclaimed sultan on the field of the Battle of the Three Kings” (UNESCO General History of Africa V (1992), ch. 8, pp. 208-9 (Sultan Abd al-Malik died during the battle; Ahmad 'proclaimed king after the victory'))
+- [africa] morocco summary: “Ahmad al-Mansur, victor over Portugal at the Battle of the Three Kings in 1578,” → “Ahmad al-Mansur, who took the throne when his brother Abd al-Malik died during the victory over Portugal at the Battle of the Three Kings in 1578,” (UNESCO General History of Africa V (1992), ch. 8, pp. 208-9)
+- [africa] merina-kingdom rulers[1].reign: “c. 1787–1810” → “c. 1785–1810” (UNESCO General History of Africa VI (1989), ch. 16, p. 413 ('In about 1785'))
+- [africa] merina-kingdom summary: “Around 1787 Andrianampoinimerina” → “Around 1785 Andrianampoinimerina” (UNESCO General History of Africa VI (1989), ch. 16, p. 413)
+- [africa] 500 sources: + source UNESCO General History of Africa, vol. III: Africa from the Seventh to the Eleventh Century (ed. M. El Fasi & I. Hrbek, 1988)
+- [africa] 600 sources: + source UNESCO General History of Africa, vol. III: Africa from the Seventh to the Eleventh Century (ed. M. El Fasi & I. Hrbek, 1988)
+- [africa] 800 sources: + source UNESCO General History of Africa, vol. III: Africa from the Seventh to the Eleventh Century (ed. M. El Fasi & I. Hrbek, 1988)
+- [africa] 900 sources: + source UNESCO General History of Africa, vol. III: Africa from the Seventh to the Eleventh Century (ed. M. El Fasi & I. Hrbek, 1988)
+- [africa] 1100 sources: + source UNESCO General History of Africa, vol. III: Africa from the Seventh to the Eleventh Century (ed. M. El Fasi & I. Hrbek, 1988)
+- [africa] 1200 sources: + source South African History Online: Mapungubwe
+- [africa] 1783 sources: + source UNESCO General History of Africa, vol. VI: Africa in the Nineteenth Century until the 1880s (ed. J. F. Ade Ajayi, 1989)
+- [africa] 1800 sources: + source UNESCO General History of Africa, vol. VI: Africa in the Nineteenth Century until the 1880s (ed. J. F. Ade Ajayi, 1989)
+- [africa] 1815 sources: + source UNESCO General History of Africa, vol. VI: Africa in the Nineteenth Century until the 1880s (ed. J. F. Ade Ajayi, 1989)
+- [africa] -100 sources: + source Wikipedia: Ptolemy IX Soter II
+- [africa] kingdom-of-kush sources: + source UNESCO General History of Africa, vol. II: Ancient Civilizations of Africa (ed. G. Mokhtar, 1981)
+- [africa] kingdom-of-aksum sources: + source UNESCO General History of Africa, vol. II: Ancient Civilizations of Africa (ed. G. Mokhtar, 1981)
+- [africa] kingdom-of-aksum sources: + source Wikipedia: List of largest empires (Taagepera 1979, 1997; Turchin, Adams & Hall 2006)
+- [africa] ghana-empire sources: + source UNESCO General History of Africa, vol. III: Africa from the Seventh to the Eleventh Century (ed. M. El Fasi & I. Hrbek, 1988)
+- [africa] mali-empire sources: + source UNESCO General History of Africa, vol. IV: Africa from the Twelfth to the Sixteenth Century (ed. D. T. Niane, 1984)
+- [africa] mali-empire sources: + source Wikipedia: List of largest empires (Taagepera 1979, 1997; Turchin, Adams & Hall 2006)
+- [africa] kanem-bornu sources: + source UNESCO General History of Africa, vol. III: Africa from the Seventh to the Eleventh Century (ed. M. El Fasi & I. Hrbek, 1988)
+- [africa] fatimid-caliphate sources: + source Wikipedia: List of largest empires (Taagepera 1979, 1997; Turchin, Adams & Hall 2006)
+- [africa] mamluk-sultanate sources: + source Wikipedia: List of largest empires (Taagepera 1979, 1997; Turchin, Adams & Hall 2006)
+- [africa] morocco sources: + source UNESCO General History of Africa, vol. V: Africa from the Sixteenth to the Eighteenth Century (ed. B. A. Ogot, 1992)
+- [africa] merina-kingdom sources: + source UNESCO General History of Africa, vol. VI: Africa in the Nineteenth Century until the 1880s (ed. J. F. Ade Ajayi, 1989)
+- [africa] omani-empire sources: + source UNESCO General History of Africa, vol. VI: Africa in the Nineteenth Century until the 1880s (ed. J. F. Ade Ajayi, 1989)
+- [americas] -1000 regions.southern-north-america: “are at their height at San Lorenzo, carving colossal stone heads of their rulers, and La Venta is rising.” → “rule from San Lorenzo, famed for colossal stone heads of its rulers, though its heyday is ending as La Venta rises.” (San Lorenzo phase c. 1400-1000 BCE; decline in the Nacaste phase c. 1000-800 BCE, collapse in the 10th century BCE (Cyphers, via https://en.wikipedia.org/wiki/San_Lorenzo_Tenochtitl%C3%A1n))
+- [americas] -1000 sources: + source Wikipedia: San Lorenzo Tenochtitlán
+- [americas] -3000 sources: + source Smith (2001), Documenting plant domestication, PNAS 98(4)
+- [americas] 500 overview: “the Maya cities of Tikal and Calakmul are locked in rivalry” → “the Maya city of Tikal and the Kaan (Snake) kingdom, later ruled from Calakmul, are locked in rivalry” (Martin & Velásquez García 2016, The PARI Journal 17(2):23-33, https://www.mesoweb.com/pari/journal/archive/PARI1702.pdf)
+- [americas] 500 sources: + source Martin & Velásquez García (2016), Polities and Places: Tracing the Toponyms of the Snake Dynasty, PARI Journal 17(2)
+- [americas] 1000 regions.northern-north-america: “The Thule people are beginning to expand east from Alaska, displacing the Dorset.” → “The Thule culture is taking shape in coastal Alaska; its rapid eastward migration, which will displace the Dorset, begins only around 1200.” (Friesen & Arnold (2008), 'The Timing of the Thule Migration', American Antiquity 73(3):527-538: no Thule occupation in the western Canadian Arctic before the 13th century, spread beginning c. 1200, summarised at https://historicalclimatology.com/features/what-made-the-thule-move-climate-and-culture-in-the-high-arctic ; consistent with the atlas's own Thule profile ('From about 1200 ...'))
+- [americas] 1100 regions.northern-north-america: “The Thule people, ancestors of the Inuit, are spreading eastward across the Canadian Arctic with dog sleds and skin boats, replacing the Dorset.” → “The Thule people, ancestors of the Inuit, are perfecting their whaling way of life with dog sleds and skin boats in Alaska, while the Dorset still hold the Canadian Arctic.” (Friesen & Arnold 2008, American Antiquity 73(3):527-538 (Thule eastward spread no earlier than c. 1200), via https://historicalclimatology.com/features/what-made-the-thule-move-climate-and-culture-in-the-high-arctic)
+- [americas] 1200 regions.northern-north-america: “The Thule people have spread across the Arctic and are reaching Greenland, where they meet the Norse settlers. The Dorset culture is disappearing.” → “The Thule people are beginning a rapid migration east from Alaska and within a century will reach Greenland, where they meet the Norse settlers. The Dorset culture still holds the eastern Arctic, but not for long.” (Friesen & Arnold 2008, American Antiquity 73(3):527-538, via https://historicalclimatology.com/features/what-made-the-thule-move-climate-and-culture-in-the-high-arctic ; Dorset persisted to c. 1300-1400 CE: https://www.thecanadianencyclopedia.ca/en/article/dorset-culture)
+- [americas] 1000 sources: + source Historical Climatology: What made the Thule move? (on Friesen & Arnold 2008)
+- [americas] 1100 sources: + source Historical Climatology: What made the Thule move? (on Friesen & Arnold 2008)
+- [americas] 1200 sources: + source The Canadian Encyclopedia: Dorset Culture
+- [americas] 1400 regions.northern-south-america: “under Viracocha Inca (c.), are expanding” → “under Viracocha Inca, are expanding” (Editorial: stray '(c.)' token; Inca regnal dates before Pachacuti (1438) are traditional only)
+- [americas] 1650 regions.southern-north-america: “Haudenosaunee, Powhatan, Creek,” → “Haudenosaunee, Creek,” (The Powhatan paramount chiefdom was dissolved by the Treaty of 1646 after Opechancanough's capture and death; by 1650 it was no longer a 'powerful' independent nation: https://en.wikipedia.org/wiki/Powhatan_Confederacy)
+- [americas] 1650 sources: + source Wikipedia: Powhatan Confederacy
+- [americas] 1800 regions.southern-north-america: “Thomas Jefferson won the election that year.” → “Thomas Jefferson defeated him in that year's election, though his tie with Aaron Burr was settled by the House only in February 1801.” (Electors chosen 31 Oct - 3 Dec 1800; House chose Jefferson on 17 Feb 1801 on the 36th ballot: https://en.wikipedia.org/wiki/1800_United_States_presidential_election)
+- [americas] 1800 sources: + source Wikipedia: 1800 United States presidential election
+- [americas] 1880 regions.southern-north-america: “Spain still rules Cuba and Puerto Rico, where a ten-year independence war ended in 1878.” → “Spain still rules Puerto Rico and Cuba, where a ten-year independence war ended in 1878.” (The Ten Years' War (1868-78, Pact of Zanjón) was fought in Cuba only; Puerto Rico's 1868 Grito de Lares was separate: https://en.wikipedia.org/wiki/Ten_Years%27_War)
+- [americas] 1880 sources: + source Wikipedia: Ten Years' War
+- [americas] 1900 events[3].text: “the US takes Cuba, Puerto Rico, Guam and the Philippines” → “the US occupies Cuba and takes Puerto Rico, Guam and the Philippines” (Treaty of Paris 1898: Spain relinquished sovereignty over Cuba (to become independent) but ceded Puerto Rico, Guam and the Philippines: https://en.wikipedia.org/wiki/Treaty_of_Paris_(1898))
+- [americas] 1900 sources: + source Wikipedia: Treaty of Paris (1898)
+- [americas] 2000 regions.northern-south-america: “Ecuador replaces its currency with the US dollar after a January coup” → “Ecuador adopts the US dollar, a plan announced just before a January coup” (Mahuad announced dollarization in early January 2000; coup on 21 January 2000; Noboa carried it through: https://en.wikipedia.org/wiki/2000_Ecuadorian_coup_d%27%C3%A9tat)
+- [americas] 2000 sources: + source Wikipedia: 2000 Ecuadorian coup d'état
+- [americas] inca-empire rulers[3].note: “died of smallpox” → “died in an epidemic, possibly smallpox” (Cause of Huayna Capac's death (1527/28) is uncertain; smallpox is disputed (McCaa et al.), https://en.wikipedia.org/wiki/Huayna_Capac)
+- [americas] maya-civilisation sources: + source Martin & Velásquez García (2016), Polities and Places: Tracing the Toponyms of the Snake Dynasty, PARI Journal 17(2)
+- [americas] thule-culture sources: + source Historical Climatology: What made the Thule move? (on Friesen & Arnold 2008)
+- [ancient-near-east] -1000 overview: “King David rules a new kingdom of Israel from Jerusalem” → “King David, according to the Bible, rules a new kingdom of Israel from Jerusalem” (Extent and nature of the united monarchy has no scholarly consensus (Finkelstein low chronology vs. Mazar, Dever, Faust): https://en.wikipedia.org/wiki/Kingdom_of_Israel_(united_monarchy))
+- [ancient-near-east] -1000 overview: “the Phoenicians of Tyre and Sidon are spreading their alphabet across the Mediterranean” → “the Phoenicians of Tyre and Sidon have developed the alphabet their traders will later carry across the Mediterranean” (Oldest Phoenician inscriptions 10th c. BCE; adaptations (Greek, Old Italic, Anatolian) begin from the 9th c., Greek alphabet 8th c.: https://en.wikipedia.org/wiki/Phoenician_alphabet ; Phoenician westward colonies 9th c. on (Kition, Carthage 814))
+- [ancient-near-east] -1000 regions.middle-east-south-asia: “under him and his son Solomon it will become a regional power” → “the Bible says that under him and his son Solomon it became a regional power, though archaeologists debate how large their kingdom really was” (https://en.wikipedia.org/wiki/Kingdom_of_Israel_(united_monarchy) ("no current consensus"; Solomon's 10th-c. reign "uncertain"); CAH III.1 (1982) still follows the biblical maximal view, now disputed)
+- [ancient-near-east] -700 regions.middle-east-south-asia: “Sennacherib of Assyria rules an empire from the Persian Gulf to the Mediterranean, having destroyed the kingdom of Israel in 722 BCE and forced Judah under Hezekiah to pay tribute.” → “Sennacherib of Assyria rules an empire from the Persian Gulf to the Mediterranean; Assyria destroyed the kingdom of Israel in 722 BCE, and Sennacherib has forced Judah under Hezekiah to pay tribute.” (Cambridge Ancient History, 2nd ed., vol. III part 2 (1991), ch. 22 (Grayson), pp. 85-6: Samaria captured by Shalmaneser V (726-722), not Sennacherib (705-681); sentence wrongly made Sennacherib the conqueror of Israel)
+- [ancient-near-east] -700 regions.middle-east-south-asia: “and the Medes are uniting in western Iran” → “and the Medes, still divided among many local chiefs, live in western Iran” (Cambridge Ancient History, 2nd ed., vol. III part 2 (1991), pp. 93-4 (Sargon II takes tribute from "twenty-eight rulers of the land of the Medes") and pp. 129-30 (Median city-rulers under Esarhaddon); Assyrian sources never mention a unified Median state before Cyaxares (615 BCE): https://en.wikipedia.org/wiki/Median_kingdom)
+- [ancient-near-east] ancient-egypt peak.note: “Under Thutmose III, from Nubia's Fourth Cataract to the Euphrates” → “Under Thutmose III, from Nubia's Fourth Cataract to the Euphrates; c. 1.0M km² c. 1450 BCE (Taagepera 1978)” (Taagepera 1978 "Growth-Decline Curves, 3000 to 600 B.C.", as tabulated at https://en.wikipedia.org/wiki/List_of_largest_empires)
+- [ancient-near-east] ancient-egypt summary: “native independence ended when Cleopatra VII died” → “its independence ended when Cleopatra VII died” (The profile itself calls the Ptolemies Greek; the last native ruler was Nectanebo II (358-c. 340 BCE, Persian reconquest 342 BCE), so 30 BCE ended Egyptian independence, not native rule: https://en.wikipedia.org/wiki/Nectanebo_II)
+- [ancient-near-east] sumer peak.year: -2100 → -2050 (Peak given as Ur III "under Shulgi" (c. 2094-2047 BCE); 2100 BCE precedes his accession. Shulgi dates as in the profile's own ruler list)
+- [ancient-near-east] sumer peak.note: “ruling Mesopotamia and parts of western Iran” → “ruling Mesopotamia and parts of western Iran; Taagepera (1978) puts the Neo-Sumerian state at only c. 0.1M km², so 250,000 km² assumes the tributary periphery” (Taagepera 1978 via https://en.wikipedia.org/wiki/List_of_largest_empires ("Neo-Sumerian Empire" 0.1 Mm², 2000 BC))
+- [ancient-near-east] akkadian-empire peak.note: “Under Naram-Sin, from the Persian Gulf to the Mediterranean and the Anatolian foothills” → “Under Naram-Sin, from the Persian Gulf to the Mediterranean and the Anatolian foothills; c. 0.8M km² (Taagepera 1978), though directly ruled land was smaller” (Taagepera 1978 via https://en.wikipedia.org/wiki/List_of_largest_empires; map border data (clio) gives c. 527,000 km² for 2250-2201 BCE)
+- [ancient-near-east] babylonia summary: “In 626 BCE the Chaldean Nabopolassar threw off Assyrian rule” → “In 626 BCE Nabopolassar, traditionally called a Chaldean, threw off Assyrian rule” (His origin is unclear; Beaulieu (1998) and Jursa (2007) link his family to Uruk officials; he called himself "son of a nobody": https://en.wikipedia.org/wiki/Nabopolassar)
+- [ancient-near-east] babylonia peak.note: “Neo-Babylonian Empire under Nebuchadnezzar II, from the Gulf to the borders of Egypt” → “Neo-Babylonian Empire under Nebuchadnezzar II, from the Gulf to the borders of Egypt; c. 0.5M km² (Taagepera 1978)” (Taagepera 1978 via https://en.wikipedia.org/wiki/List_of_largest_empires)
+- [ancient-near-east] assyria summary: “whose merchants ran caravans into Anatolia by 2000 BCE” → “whose merchants ran caravans into Anatolia soon after 2000 BCE” (Old Assyrian karum at Kanesh, level II c. 1974-1836 BCE (Veenhof, middle chronology): https://en.wikipedia.org/wiki/K%C3%BCltepe)
+- [ancient-near-east] assyria peak.note: “Under Esarhaddon, from Egypt to western Iran” → “Under Esarhaddon, from Egypt to western Iran; c. 1.4M km² c. 670 BCE (Taagepera 1978)” (Taagepera 1978; Turchin, Adams & Hall 2006, via https://en.wikipedia.org/wiki/List_of_largest_empires)
+- [ancient-near-east] hittite-empire peak.year: -1300 → -1250 (Taagepera 1978: New Hittite Kingdom 0.45 Mm² at 1250-1220 BC, via https://en.wikipedia.org/wiki/List_of_largest_empires)
+- [ancient-near-east] hittite-empire peak.note: “Under Suppiluliuma I and his successors, from central Anatolia to Syria” → “Under Suppiluliuma I and his successors, from central Anatolia to Syria; c. 0.45M km² c. 1250-1220 BCE (Taagepera 1978)” (Taagepera 1978 via https://en.wikipedia.org/wiki/List_of_largest_empires)
+- [ancient-near-east] hittite-empire legacy: “known before only from brief Bible mentions” → “known before only from brief mentions in the Bible and in Egyptian records” (Before the 1906 Hattusa archive, the Hittites were known from the Bible and from Egyptian sources (the "Kheta" of the Kadesh inscriptions and the Amarna letters): https://en.wikipedia.org/wiki/Hittites)
+- [ancient-near-east] achaemenid-empire rulers[4].note: “Made peace with Athens” → “Said to have made peace with Athens (the disputed Peace of Callias)” (Historicity of the Peace of Callias (c. 449 BCE) is contested (Thucydides silent, Theopompus called it a fabrication): https://en.wikipedia.org/wiki/Peace_of_Callias)
+- [ancient-near-east] achaemenid-empire peak.note: “Under Darius I, from Egypt and Thrace to the Indus” → “Under Darius I, from Egypt and Thrace to the Indus; c. 5.5M km² c. 500 BCE (Taagepera 1979)” (Taagepera 1979; Turchin, Adams & Hall 2006, via https://en.wikipedia.org/wiki/List_of_largest_empires)
+- [ancient-near-east] -2000 sources: + source Cambridge Ancient History, 3rd ed., vol. I part 2: Early History of the Middle East (1971)
+- [ancient-near-east] -1500 sources: + source Cambridge Ancient History, 3rd ed., vol. II part 1: The Middle East and the Aegean Region c. 1800-1380 BC (1973)
+- [ancient-near-east] -1000 sources: + source Cambridge Ancient History, 2nd ed., vol. III part 1 (1982)
+- [ancient-near-east] -1000 sources: + source Wikipedia: Kingdom of Israel (united monarchy)
+- [ancient-near-east] -700 sources: + source Cambridge Ancient History, 2nd ed., vol. III part 2: The Assyrian and Babylonian Empires (1991)
+- [ancient-near-east] -700 sources: + source Wikipedia: Median kingdom
+- [ancient-near-east] assyria sources: + source Wikipedia: List of largest empires (Taagepera 1978/1979 figures)
+- [ancient-near-east] achaemenid-empire sources: + source Wikipedia: List of largest empires (Taagepera 1978/1979 figures)
+- [ancient-near-east] ancient-egypt sources: + source Cambridge Ancient History, 3rd ed., vol. I part 2 (1971)
+- [ancient-near-east] assyria sources: + source Cambridge Ancient History, 2nd ed., vol. III part 2 (1991)
+- [ancient-near-east] babylonia sources: + source Cambridge Ancient History, 2nd ed., vol. III part 2 (1991)
+- [ancient-near-east] ancient-egypt sources: + source Wikipedia: Nectanebo II
+- [ancient-near-east] babylonia sources: + source Wikipedia: Nabopolassar
+- [ancient-near-east] kingdom-of-kush sources: + source Cambridge Ancient History, 2nd ed., vol. III part 2 (1991)
+- [ancient-near-east] achaemenid-empire sources: + source Wikipedia: Peace of Callias
+- [east-asia] -700 regions.east-asia: “powerful states such as Qi, Jin, Chu and Qin compete” → “powerful states such as Zheng, Qi, Jin, Chu and Qin compete” (Wikipedia, Spring and Autumn period (Zheng under Duke Zhuang, d. 701 BCE, was 'the first vassal to openly defy the king'; the hegemony of Qi begins only in 685 BCE) https://en.wikipedia.org/wiki/Spring_and_Autumn_period)
+- [east-asia] -400 regions.east-asia: “and the Zhangzhung kingdom holds western Tibet” → “and western Tibet is home to Iron Age peoples later remembered in Tibetan tradition as the kingdom of Zhangzhung” (Wikipedia, Zhangzhung (earliest dated record is the Tang Annals entry for 634 CE; earlier history rests on later Tibetan/Bon tradition and tentative Iron Age archaeology) https://en.wikipedia.org/wiki/Zhangzhung)
+- [east-asia] -323 regions.east-asia: “and the Zhangzhung kingdom holds western Tibet” → “and western Tibet is home to Iron Age peoples later remembered in Tibetan tradition as the kingdom of Zhangzhung” (Wikipedia, Zhangzhung (earliest dated record is the Tang Annals entry for 634 CE; earlier history rests on later Tibetan/Bon tradition and tentative Iron Age archaeology) https://en.wikipedia.org/wiki/Zhangzhung)
+- [east-asia] -300 regions.east-asia: “and the Zhangzhung kingdom holds western Tibet” → “and western Tibet is home to Iron Age peoples later remembered in Tibetan tradition as the kingdom of Zhangzhung” (Wikipedia, Zhangzhung (earliest dated record is the Tang Annals entry for 634 CE; earlier history rests on later Tibetan/Bon tradition and tentative Iron Age archaeology) https://en.wikipedia.org/wiki/Zhangzhung)
+- [east-asia] 900 regions.east-asia: “Japan is ruled by Emperor Daigo and the Fujiwara clan” → “Japan is ruled by Emperor Daigo, who governs without a Fujiwara regent though Fujiwara no Tokihira leads his court” (Wikipedia, Emperor Daigo ('he ruled by himself without the regency of the Fujiwara clan'; Tokihira was sadaijin, regent only posthumously) https://en.wikipedia.org/wiki/Emperor_Daigo)
+- [east-asia] 1930 regions.east-asia: “Mao Zedong's Communists in the Jiangxi Soviet” → “Mao Zedong's Communists in their Jiangxi base area” (Wikipedia, Jiangxi–Fujian Soviet (the Chinese Soviet Republic was proclaimed at Ruijin on 7 Nov 1931); First encirclement campaign, Nov 1930 – Jan 1931 https://en.wikipedia.org/wiki/Jiangxi%E2%80%93Fujian_Soviet)
+- [east-asia] ming-dynasty summary: “and the Manchus founded the Qing.” → “and the Manchu Qing dynasty, proclaimed by Hong Taiji in 1636, seized the throne.” (Wikipedia, Qing dynasty ('Hong Taiji proclaimed the Great Qing dynasty in 1636') https://en.wikipedia.org/wiki/Qing_dynasty)
+- [east-asia] goryeo summary: “it became a vassal of the Mongols in 1270” → “it made peace with the Mongols in 1259 and became a vassal of the Yuan” (Wikipedia, Mongol invasions of Korea (peace concluded spring 1259; crown prince Wonjong sent as hostage; Goryeo a Yuan vassal for c. 80 years from Wonjong; court disputes over the peace lasted until 1270) https://en.wikipedia.org/wiki/Mongol_invasions_of_Korea)
+- [east-asia] mongolia summary: “but in 1921 Mongolian revolutionaries led by Damdin Sükhbaatar, aided by the Soviet Red Army, drove them and a White Russian warlord out.” → “but in February 1921 the White Russian warlord Baron Ungern-Sternberg drove them from Urga, and Mongolian revolutionaries led by Damdin Sükhbaatar, aided by the Soviet Red Army, then expelled him and entered Urga in July.” (Wikipedia, Mongolian Revolution of 1921 (Ungern took Urga Feb 1921 and the Chinese fled; Sükhbaatar's partisans took Kyakhta Maimaicheng 18 Mar; Red Army repulsed Ungern in June; Mongolian and Russian units entered Urga 6 Jul 1921) https://en.wikipedia.org/wiki/Mongolian_Revolution_of_1921)
+- [east-asia] sui-dynasty peak.note: “After reunifying north and south China” → “c. 3.0M km² (Taagepera 1979), after reunifying north and south China” (Wikipedia, List of largest empires (Taagepera 1978, 1979, 1997; Turchin, Adams & Hall 2006) https://en.wikipedia.org/wiki/List_of_largest_empires)
+- [east-asia] tang-dynasty peak.note: “Including protectorates over the Tarim Basin and Central Asia” → “Including protectorates over the Tarim Basin and Central Asia; c. 5.4M km² (Taagepera 1997; Turchin et al. 2006, for 715)” (Wikipedia, List of largest empires (Taagepera 1978, 1979, 1997; Turchin, Adams & Hall 2006) https://en.wikipedia.org/wiki/List_of_largest_empires)
+- [east-asia] song-dynasty peak.note: “Northern Song, before the loss of northern China in 1127” → “Northern Song, before the loss of northern China in 1127; c. 3.1M km² (Taagepera 1997, reached by 980)” (Wikipedia, List of largest empires (Taagepera 1978, 1979, 1997; Turchin, Adams & Hall 2006) https://en.wikipedia.org/wiki/List_of_largest_empires)
+- [east-asia] zhou-dynasty peak.note: “Western Zhou realm of royal relatives and vassal states” → “Western Zhou realm of royal relatives and vassal states; estimates vary widely, Taagepera (1978) giving only c. 0.55M km²” (Wikipedia, List of largest empires (Taagepera 1978, 1979, 1997; Turchin, Adams & Hall 2006) https://en.wikipedia.org/wiki/List_of_largest_empires)
+- [east-asia] xiongnu peak.note: “Under Modu Chanyu, from Manchuria to the Tarim Basin” → “Under Modu Chanyu, from Manchuria to the Tarim Basin; c. 9.0M km² (Taagepera 1979; Turchin et al. 2006)” (Wikipedia, List of largest empires (Taagepera 1978, 1979, 1997; Turchin, Adams & Hall 2006) https://en.wikipedia.org/wiki/List_of_largest_empires)
+- [east-asia] tibetan-empire peak.note: “From the Tarim Basin to Bengal and western China” → “From the Tarim Basin to Bengal and western China; c. 4.6M km² (Taagepera 1997; Turchin et al. 2006, for 800)” (Wikipedia, List of largest empires (Taagepera 1978, 1979, 1997; Turchin, Adams & Hall 2006) https://en.wikipedia.org/wiki/List_of_largest_empires)
+- [east-asia] yuan-dynasty peak.note: “China, Mongolia, Tibet and Manchuria, with Korea as a vassal” → “China, Mongolia, Tibet and Manchuria, with Korea as a vassal; c. 11M km² (Taagepera 1997)” (Wikipedia, List of largest empires (Taagepera 1978, 1979, 1997; Turchin, Adams & Hall 2006) https://en.wikipedia.org/wiki/List_of_largest_empires)
+- [east-asia] ming-dynasty peak.note: “Including loosely held lands in Manchuria and the north-east” → “Including loosely held lands in Manchuria and the north-east; c. 6.5M km² (Taagepera 1997; Turchin et al. 2006)” (Wikipedia, List of largest empires (Taagepera 1978, 1979, 1997; Turchin, Adams & Hall 2006) https://en.wikipedia.org/wiki/List_of_largest_empires)
+- [east-asia] -700 sources: + source Wikipedia: Spring and Autumn period
+- [east-asia] -400 sources: + source Wikipedia: Zhangzhung
+- [east-asia] -323 sources: + source Wikipedia: Zhangzhung
+- [east-asia] -300 sources: + source Wikipedia: Zhangzhung
+- [east-asia] 900 sources: + source Wikipedia: Emperor Daigo
+- [east-asia] 500 sources: + source Herrmann, Historical and Commercial Atlas of China (1935): The Southern Ch'i and the Northern Wei Dynasties, boundaries of 500 A.D.
+- [east-asia] 1930 sources: + source Wikipedia: Jiangxi–Fujian Soviet
+- [east-asia] 1930 sources: + source Wikipedia: First encirclement campaign against the Jiangxi Soviet
+- [east-asia] ming-dynasty sources: + source Wikipedia: Qing dynasty
+- [east-asia] ming-dynasty sources: + source Wikipedia: List of largest empires
+- [east-asia] goryeo sources: + source Wikipedia: Mongol invasions of Korea
+- [east-asia] mongolia sources: + source Wikipedia: Mongolian Revolution of 1921
+- [east-asia] tibetan-empire sources: + source Wikipedia: List of largest empires
+- [east-asia] xiongnu sources: + source Herrmann, Historical and Commercial Atlas of China (1935): The Hsiung-nu or Huns in Central Asia, 176 and 128–36 B.C.
+- [east-asia] tang-dynasty sources: + source Wikipedia: List of largest empires
+- [east-asia] song-dynasty sources: + source Wikipedia: List of largest empires
+- [east-asia] shang-dynasty sources: + source Wikipedia: List of largest empires
+- [east-asia] zhou-dynasty sources: + source Wikipedia: List of largest empires
+- [east-asia] mongol-empire sources: + source Wikipedia: List of largest empires
+- [east-asia] yuan-dynasty sources: + source Wikipedia: List of largest empires
+- [europe] 700 powers[4].extent: “Sicily and southern Italy” → “Sicily, southern Italy and the Exarchate of Ravenna” (https://en.wikipedia.org/wiki/Exarchate_of_Ravenna)
+- [europe] 1000 powers[2].extent: “Anatolia, Greece, the Balkans,” → “Anatolia, Greece, the eastern Balkans (western Bulgaria holds out until 1018),” (https://en.wikipedia.org/wiki/Basil_II)
+- [europe] 1500 regions.europe: “Maximilian I was Holy Roman Emperor” → “Maximilian I ruled the Holy Roman Empire as King of the Romans (emperor-elect from 1508)” (https://en.wikipedia.org/wiki/Maximilian_I,_Holy_Roman_Emperor)
+- [europe] 1945 regions.europe: “east of the Oder-Neisse line handed to Poland” → “east of the Oder-Neisse line handed to Poland, except northern East Prussia, which the Soviet Union annexed” (https://en.wikipedia.org/wiki/Potsdam_Agreement)
+- [europe] 1945 powers[2].extent: “Still about a fifth of the world's land” → “Still about a quarter of the world's land” (https://en.wikipedia.org/wiki/List_of_largest_empires)
+- [europe] carthaginian-empire peak.year: -264 → -220 (https://en.wikipedia.org/wiki/List_of_largest_empires (Taagepera 1979: 0.3M km², 220 BC))
+- [europe] carthaginian-empire peak.note: “Before the First Punic War: coastal North Africa, southern Spain, Sardinia, Corsica, western Sicily and the Balearics” → “After the Barcid conquests in Spain: coastal North Africa, southern and eastern Spain and the Balearics; c. 0.3M km² (Taagepera 1979)” (https://en.wikipedia.org/wiki/List_of_largest_empires)
+- [europe] kievan-rus peak.note: “from the Baltic to the Black Sea steppe” → “from the Baltic to the Black Sea steppe; Taagepera (1997) gives a larger c. 2.1M km² for c. 1000” (https://en.wikipedia.org/wiki/List_of_largest_empires)
+- [europe] ptolemaic-kingdom peak.note: “the southern Levant and Aegean outposts” → “the southern Levant and Aegean outposts; c. 1.0M km² (Taagepera 1979)” (https://en.wikipedia.org/wiki/List_of_largest_empires)
+- [europe] spanish-empire peak.note: “plus the Philippines” → “plus the Philippines; c. 13.7M km² (Taagepera 1997)” (https://en.wikipedia.org/wiki/List_of_largest_empires)
+- [europe] kievan-rus sources: + source Wikipedia: List of largest empires (Taagepera/Turchin figures)
+- [europe] macedonian-empire sources: + source Wikipedia: List of largest empires (Taagepera/Turchin figures)
+- [europe] seleucid-empire sources: + source Wikipedia: List of largest empires (Taagepera/Turchin figures)
+- [europe] roman-empire sources: + source Wikipedia: List of largest empires (Taagepera/Turchin figures)
+- [europe] hunnic-empire sources: + source Wikipedia: List of largest empires (Taagepera/Turchin figures)
+- [europe] carolingian-empire sources: + source Wikipedia: List of largest empires (Taagepera/Turchin figures)
+- [europe] -300 sources: + source Wikipedia: Ptolemaic Cyprus
+- [europe] 700 sources: + source Wikipedia: Exarchate of Ravenna
+- [europe] 1000 sources: + source Wikipedia: Basil II
+- [europe] 1500 sources: + source Wikipedia: Maximilian I, Holy Roman Emperor
+- [europe] 1945 sources: + source Wikipedia: Potsdam Agreement
+- [europe] 1994 sources: + source ERR News: Thirty years since the last Russian forces left Estonia
+- [islamic-iran-central-asia] parthian-empire summary: “Their leader Arsaces I rebelled against the Seleucids around 247 BCE, founding the Arsacid dynasty.” → “Their leader Arsaces I founded the Arsacid dynasty around 247 BCE and, about 238 BCE, seized Parthia from its rebel Seleucid governor Andragoras.” (Wikipedia, Arsaces I of Parthia (citing Schippmann, Encyclopaedia Iranica 1986; Dąbrowa 2012; Bivar, Cambridge History of Iran 3) https://en.wikipedia.org/wiki/Arsaces_I_of_Parthia)
+- [islamic-iran-central-asia] sasanian-empire summary: “Shapur I defeated three Roman emperors and captured Valerian in 260.” → “Shapur I defeated Gordian III, forced Philip the Arab to buy peace and captured Valerian in 260.” (Wikipedia, Shapur I (Misiche 244; Philip's treaty and 500,000 denarii; Valerian captured near Edessa 260) https://en.wikipedia.org/wiki/Shapur_I)
+- [islamic-iran-central-asia] 1600 powers[4].extent: “Iran, the southern Caucasus and western Afghanistan” → “Iran and western Afghanistan; Tabriz and the southern Caucasus, ceded to the Ottomans in 1590, are retaken from 1603” (Wikipedia, Treaty of Constantinople (1590) (Ottomans kept Kartli, Kakheti, Erivan, Karabakh, Shirvan and Azerbaijan with Tabriz; recovered in the war of 1603–1618) https://en.wikipedia.org/wiki/Treaty_of_Constantinople_(1590))
+- [islamic-iran-central-asia] 1400 regions.middle-east-south-asia: “while the Ottomans hold western Anatolia” → “while the Ottomans hold western and central Anatolia” (Wikipedia, Bayezid I (annexed Karaman 1397, Kadi Burhan al-Din's lands 1398, Malatya and Elbistan; 'his domains extended to the Taurus Mountains') https://en.wikipedia.org/wiki/Bayezid_I)
+- [islamic-iran-central-asia] 1400 powers[2].extent: “Western Anatolia and most of the Balkans” → “Western and central Anatolia and most of the Balkans” (Wikipedia, Bayezid I https://en.wikipedia.org/wiki/Bayezid_I)
+- [islamic-iran-central-asia] fatimid-caliphate peak.note: “North Africa, Egypt, Sicily, the Levant and the Hejaz” → “North Africa, Egypt, Sicily, the Levant and the Hejaz; Taagepera (1997) gives a larger c. 4.1M km² for 969, counting Saharan hinterlands” (Taagepera (1997) via Wikipedia, List of largest empires https://en.wikipedia.org/wiki/List_of_largest_empires)
+- [islamic-iran-central-asia] hunnic-empire peak.note: “Under Attila, from the Rhine to the steppes north of the Black Sea” → “Under Attila, from the Rhine to the steppes north of the Black Sea; c. 4.0M km² in 441 (Taagepera 1979)” (Taagepera (1979) via Wikipedia, List of largest empires https://en.wikipedia.org/wiki/List_of_largest_empires)
+- [islamic-iran-central-asia] parthian-empire peak.note: “Under Mithridates II, from the Euphrates to Afghanistan” → “Under Mithridates II, from the Euphrates to Afghanistan; Taagepera (1979) gives c. 2.8M km² around 1 CE” (Taagepera (1979) via Wikipedia, List of largest empires https://en.wikipedia.org/wiki/List_of_largest_empires)
+- [islamic-iran-central-asia] qajar-pahlavi-iran sources: + source Wikipedia: Agha Mohammad Khan Qajar
+- [islamic-iran-central-asia] parthian-empire sources: + source Wikipedia: Arsaces I of Parthia
+- [islamic-iran-central-asia] sasanian-empire sources: + source Wikipedia: Shapur I
+- [islamic-iran-central-asia] abbasid-caliphate sources: + source Wikipedia: List of largest empires (Taagepera, Turchin figures)
+- [islamic-iran-central-asia] gokturk-khaganate sources: + source Wikipedia: List of largest empires (Taagepera, Turchin figures)
+- [islamic-iran-central-asia] 1600 sources: + source Wikipedia: Treaty of Constantinople (1590)
+- [islamic-iran-central-asia] 1400 sources: + source Wikipedia: Bayezid I
+- [south-asia] -500 overview: “the Buddha and Mahavira preach in the kingdoms of the Ganges plain, where Magadha is rising” → “Magadha is rising among the kingdoms of the Ganges plain, where the Buddha and Mahavira lived and taught around this time (their exact dates are debated)” (Modern scholarship dates the Buddha c. 480-400 BCE as well as the traditional c. 563-483 BCE; Wikipedia: Gautama Buddha (dating) https://en.wikipedia.org/wiki/Gautama_Buddha ; Schwartzberg text p. 166 and pl. III.B (Pre-Mauryan Age) https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/The_Pre-Mauryan_Age.json&canvasID=0)
+- [south-asia] -300 regions.middle-east-south-asia: “having given Arachosia and Gandhara to Chandragupta” → “having ceded Arachosia, the Paropamisadae (Kabul region) and probably Gedrosia to Chandragupta” (Majumdar (ed.), History and Culture of the Indian People, vol. II (The Age of Imperial Unity), ch. on Chandragupta, p. 59 (Seleucus ceded Aria, Arachosia and the Paropanisadae, probably part of Gedrosia; modern scholars doubt Aria) https://archive.org/details/ageofimperialuni07bhar ; Schwartzberg text p. 171 (Mauryan provinces of Arachosia and Paropamisadae) https://dsal.uchicago.edu/reference/schwartzberg/)
+- [south-asia] 400 powers[2].extent: “from the Indus to Bengal” → “from the Punjab to Bengal” (Schwartzberg, Historical Atlas of South Asia, pl. III.D, The Gupta-Vakataka Age, c. A.D. 300-500 and text pp. 179-180 (Gupta direct rule did not reach the Indus; Punjab peoples were tributaries) https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/The_Gupta-Vakataka_Age_c._A.D._300-500.json&canvasID=0 ; Majumdar (ed.), History and Culture of the Indian People, vol. III (The Classical Age), ch. on the Imperial Guptas https://archive.org/details/classicalage03bhar)
+- [south-asia] 500 regions.middle-east-south-asia: “(where the Ajanta caves are being painted)” → “(where the Ajanta caves were painted in the later 5th century)” (Schwartzberg text p. 180 (Harishena and the Ajanta inscription) https://dsal.uchicago.edu/reference/schwartzberg/ ; Wikipedia: Ajanta Caves (Spink dates the later caves c. 460-480; Harishena d. c. 477-500) https://en.wikipedia.org/wiki/Ajanta_Caves)
+- [south-asia] 1100 overview: “the Cholas still rule a maritime empire” → “the Cholas still rule the south, though Sri Lanka broke free in 1070” (Majumdar (ed.), History and Culture of the Indian People, vol. V (The Struggle for Empire), p. 247 (Vijayabahu captured Polonnaruva c. 1070 and became independent of the Cholas) https://archive.org/details/struggleforempir05bhar ; Schwartzberg, Historical Atlas of South Asia, pl. IV.2, The age of the Ghaznavids, Cahmanas, Later Calukyas, and Colas, c. 975-1200 https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/The_age_of_the_Ghaznavids_Cahmanas_Later_Calukyas_and_Colas_c._975-1200.json&canvasID=0)
+- [south-asia] 1700 powers[0].extent: “from Kabul to the far south” → “from Kabul deep into the south, short of the southern tip” (Schwartzberg, Historical Atlas of South Asia, pl. VI.A.3, The reigns of Jahangir, Shah Jahan, and Aurangzib, 1605-1707 (Mughal limits in 1707 stop short of the Madurai/Travancore far south) https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/The_reigns_of_Jahangir_Shah_Jahan_and_Aurangzib_1605-1707.json&canvasID=0 ; Majumdar (ed.), History and Culture of the Indian People, vol. VII (The Mughul Empire), chs. on Aurangzib (Bijapur Sept. 1686, Golconda 1687) https://archive.org/details/mughulempire00bhar)
+- [south-asia] indus-valley-civilisation summary: “granaries and great public baths” → “possible granaries and, at Mohenjo-daro, a Great Bath” (Only Mohenjo-daro has a "Great Bath"; the granary identification is debated. Wikipedia: Mohenjo-daro https://en.wikipedia.org/wiki/Mohenjo-daro)
+- [south-asia] gupta-empire rulers[3].note: “Founded the monastery-university of Nalanda” → “Traditionally credited with founding the monastery-university of Nalanda” (Xuanzang names the founder Shakraditya, usually identified with Kumaragupta I: Wikipedia: Nalanda https://en.wikipedia.org/wiki/Nalanda ; Schwartzberg text p. 184 https://dsal.uchicago.edu/reference/schwartzberg/)
+- [south-asia] chola-empire rulers[2].note: “conquered Sri Lanka” → “conquered northern Sri Lanka” (Majumdar (ed.), History and Culture of the Indian People, vol. V (The Struggle for Empire), p. 234 (Rajaraja annexed the northern part of Ceylon; the whole island only under Rajendra I) https://archive.org/details/struggleforempir05bhar)
+- [south-asia] chola-empire peak.note: “not covered by Taagepera or Turchin” → “not covered by Taagepera or Turchin; the Cliopatria map shows only c. 0.5M km² under direct rule” (Schwartzberg, Historical Atlas of South Asia, pl. IV.2, The age of the Ghaznavids, Cahmanas, Later Calukyas, and Colas, c. 975-1200 https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/The_age_of_the_Ghaznavids_Cahmanas_Later_Calukyas_and_Colas_c._975-1200.json&canvasID=0 ; public/data/clio/index.json realm "Chola Empire" (max 522,021 km², 1028-1033))
+- [south-asia] delhi-sultanate capital: “Delhi (briefly Daulatabad from 1327)” → “Delhi (briefly Daulatabad from 1327; Agra under the later Lodis)” (Majumdar (ed.), History and Culture of the Indian People, vol. VI (The Delhi Sultanate), chronology, entry citing p. 145: "Sikandar Lodi transfers the capital to Agra" (c. 1505) https://archive.org/details/delhisultanate00bhar ; Schwartzberg, Historical Atlas of South Asia, pl. V, South Asia in the time of the Lodis, 1451-1526 https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/South_Asia_in_the_time_of_the_Lodis_1451-1526.json&canvasID=0)
+- [south-asia] british-india capital: “New Delhi from 1911” → “Delhi from 1911-12 (New Delhi inaugurated 1931)” (Transfer announced at the Delhi Durbar, Dec. 1911; New Delhi inaugurated 13 Feb. 1931: Wikipedia: New Delhi https://en.wikipedia.org/wiki/New_Delhi)
+- [south-asia] british-india rulers[3].note: “Proclaimed Empress of India” → “Took the title Empress of India in 1876; proclaimed at Delhi on 1 January 1877” (Imperial Gazetteer of India, vol. II, pp. 488, 517 and vol. IV, p. 22 (proclaimed Empress of India on 1 January 1877) https://dsal.uchicago.edu/cgi-bin/reference/gazetteer/query.py?display_type=volume_display&volume=2)
+- [south-asia] british-india peak.note: “(Wikipedia: British Raj)” → “(Wikipedia: British Raj; the 1901 census, by contrast, gave 1,766,597 sq mi, c. 4.58M km²)” (Imperial Gazetteer of India, vol. I, p. 449 (Indian Empire 1,766,597 sq mi; British provinces 61.5%, Native States 38.5%) https://dsal.uchicago.edu/cgi-bin/reference/gazetteer/query.py?object=479&bookid=DS405.1.I34_V01&display_type=page_display)
+- [south-asia] republic-of-india rulers[4].reign: “1998–2004” → “1996, 1998–2004” (Vajpayee was PM for 13 days in 1996, then 1998-2004: Wikipedia: Atal Bihari Vajpayee https://en.wikipedia.org/wiki/Atal_Bihari_Vajpayee)
+- [south-asia] pakistan rulers[5].note: “First woman to lead a Muslim-majority country” → “First woman elected to lead the government of a Muslim-majority country” (Earlier female rulers of Muslim states existed (e.g. Razia Sultana, 1236-40); Bhutto was the first woman to head a democratic government in a Muslim-majority country: Wikipedia: Benazir Bhutto https://en.wikipedia.org/wiki/Benazir_Bhutto)
+- [south-asia] -3000 sources: + source Majumdar (ed.), The History and Culture of the Indian People, vol. I: The Vedic Age (Internet Archive)
+- [south-asia] -2000 sources: + source Majumdar (ed.), The History and Culture of the Indian People, vol. I: The Vedic Age (Internet Archive)
+- [south-asia] -1500 sources: + source Majumdar (ed.), The History and Culture of the Indian People, vol. I: The Vedic Age (Internet Archive)
+- [south-asia] -1000 sources: + source Majumdar (ed.), The History and Culture of the Indian People, vol. I: The Vedic Age (Internet Archive)
+- [south-asia] -700 sources: + source Majumdar (ed.), The History and Culture of the Indian People, vol. I: The Vedic Age (Internet Archive)
+- [south-asia] -700 sources: + source Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. III.B, The Pre-Mauryan Age
+- [south-asia] -500 sources: + source Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. III.B, The Pre-Mauryan Age
+- [south-asia] -500 sources: + source Majumdar (ed.), The History and Culture of the Indian People, vol. II: The Age of Imperial Unity (Internet Archive)
+- [south-asia] -400 sources: + source Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. III.B, The Pre-Mauryan Age
+- [south-asia] -400 sources: + source Majumdar (ed.), The History and Culture of the Indian People, vol. II: The Age of Imperial Unity (Internet Archive)
+- [south-asia] -323 sources: + source Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. III.B, Campaigns and empire of Alexander the Great, 333-326 B.C.
+- [south-asia] -323 sources: + source Majumdar (ed.), The History and Culture of the Indian People, vol. II: The Age of Imperial Unity (Internet Archive)
+- [south-asia] -300 sources: + source Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. III.B, The time of the Mauryan Empire, 321-181 B.C.
+- [south-asia] -300 sources: + source Majumdar (ed.), The History and Culture of the Indian People, vol. II: The Age of Imperial Unity (Internet Archive)
+- [south-asia] -200 sources: + source Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. III.B, The time of the Mauryan Empire, 321-181 B.C.
+- [south-asia] -200 sources: + source Majumdar (ed.), The History and Culture of the Indian People, vol. II: The Age of Imperial Unity (Internet Archive)
+- [south-asia] -100 sources: + source Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. III.C.2, The Satavahana-Saka-Kusana age, c. A.D. 1-300
+- [south-asia] -100 sources: + source Majumdar (ed.), The History and Culture of the Indian People, vol. II: The Age of Imperial Unity (Internet Archive)
+- [south-asia] -1 sources: + source Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. III.C.2, The Satavahana-Saka-Kusana age, c. A.D. 1-300
+- [south-asia] -1 sources: + source Majumdar (ed.), The History and Culture of the Indian People, vol. II: The Age of Imperial Unity (Internet Archive)
+- [south-asia] 100 sources: + source Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. III.C.2, The Satavahana-Saka-Kusana age, c. A.D. 1-300
+- [south-asia] 200 sources: + source Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. III.C.2, The Satavahana-Saka-Kusana age, c. A.D. 1-300
+- [south-asia] 300 sources: + source Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. III.D, The Gupta-Vakataka Age, c. A.D. 300-500
+- [south-asia] 300 sources: + source Majumdar (ed.), The History and Culture of the Indian People, vol. III: The Classical Age (Internet Archive)
+- [south-asia] 400 sources: + source Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. III.D, The Gupta-Vakataka Age, c. A.D. 300-500
+- [south-asia] 400 sources: + source Majumdar (ed.), The History and Culture of the Indian People, vol. III: The Classical Age (Internet Archive)
+- [south-asia] 500 sources: + source Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. III.D, The Gupta-Vakataka Age, c. A.D. 300-500
+- [south-asia] 500 sources: + source Majumdar (ed.), The History and Culture of the Indian People, vol. III: The Classical Age (Internet Archive)
+- [south-asia] 600 sources: + source Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. III.D, The age of Pusyabhuti and Calukyan ascendancy, c. A.D. 550-700
+- [south-asia] 600 sources: + source Majumdar (ed.), The History and Culture of the Indian People, vol. III: The Classical Age (Internet Archive)
+- [south-asia] 700 sources: + source Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. III.D, The age of Pusyabhuti and Calukyan ascendancy, c. A.D. 550-700
+- [south-asia] 800 sources: + source Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. IV.1, The age of the Gurjara-Pratiharas, Palas, and Rastrakutas, c. A.D. 700-975
+- [south-asia] 800 sources: + source Majumdar (ed.), The History and Culture of the Indian People, vol. IV: The Age of Imperial Kanauj (Internet Archive)
+- [south-asia] 900 sources: + source Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. IV.1, The age of the Gurjara-Pratiharas, Palas, and Rastrakutas, c. A.D. 700-975
+- [south-asia] 900 sources: + source Majumdar (ed.), The History and Culture of the Indian People, vol. IV: The Age of Imperial Kanauj (Internet Archive)
+- [south-asia] 1000 sources: + source Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. IV.2, The age of the Ghaznavids, Cahmanas, Later Calukyas, and Colas, c. 975-1200
+- [south-asia] 1000 sources: + source Majumdar (ed.), The History and Culture of the Indian People, vol. V: The Struggle for Empire (Internet Archive)
+- [south-asia] 1100 sources: + source Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. IV.2, The age of the Ghaznavids, Cahmanas, Later Calukyas, and Colas, c. 975-1200
+- [south-asia] 1100 sources: + source Majumdar (ed.), The History and Culture of the Indian People, vol. V: The Struggle for Empire (Internet Archive)
+- [south-asia] 1200 sources: + source Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. V, Northern India in the time of the Ghurids and Mamluks, c. 1170-1290
+- [south-asia] 1200 sources: + source Majumdar (ed.), The History and Culture of the Indian People, vol. V: The Struggle for Empire (Internet Archive)
+- [south-asia] 1279 sources: + source Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. V, Northern India in the time of the Ghurids and Mamluks, c. 1170-1290
+- [south-asia] 1279 sources: + source Majumdar (ed.), The History and Culture of the Indian People, vol. VI: The Delhi Sultanate (Internet Archive)
+- [south-asia] 1300 sources: + source Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. V, South Asia in the time of the Khaljis and Tughluqs, c. 1290-1390
+- [south-asia] 1300 sources: + source Majumdar (ed.), The History and Culture of the Indian People, vol. VI: The Delhi Sultanate (Internet Archive)
+- [south-asia] 1400 sources: + source Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. V, Political disintegration in Northern South Asia, c. 1390-1450
+- [south-asia] 1400 sources: + source Majumdar (ed.), The History and Culture of the Indian People, vol. VI: The Delhi Sultanate (Internet Archive)
+- [south-asia] 1492 sources: + source Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. V, South Asia in the time of the Lodis, 1451-1526
+- [south-asia] 1500 sources: + source Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. V, South Asia in the time of the Lodis, 1451-1526
+- [south-asia] 1530 sources: + source Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. VI.A, Northern South Asia in the period of Babur, Humayun, and Sher Shah, 1526-1555
+- [south-asia] 1530 sources: + source Majumdar (ed.), The History and Culture of the Indian People, vol. VII: The Mughul Empire (Internet Archive)
+- [south-asia] 1600 sources: + source Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. VI.A, The Mughal Empire, c. 1605
+- [south-asia] 1600 sources: + source Majumdar (ed.), The History and Culture of the Indian People, vol. VII: The Mughul Empire (Internet Archive)
+- [south-asia] 1650 sources: + source Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. VI.A.3, The reigns of Jahangir, Shah Jahan, and Aurangzib, 1605-1707
+- [south-asia] 1650 sources: + source Majumdar (ed.), The History and Culture of the Indian People, vol. VII: The Mughul Empire (Internet Archive)
+- [south-asia] 1700 sources: + source Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. VI.A.3, The reigns of Jahangir, Shah Jahan, and Aurangzib, 1605-1707
+- [south-asia] 1700 sources: + source Jadunath Sarkar, History of Aurangzib (Internet Archive)
+- [south-asia] 1715 sources: + source Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. VII.A, Mughal disintegration and the rise of regional powers, 1707-1766
+- [south-asia] 1715 sources: + source Majumdar (ed.), The History and Culture of the Indian People, vol. VIII: The Maratha Supremacy (Internet Archive)
+- [south-asia] 1783 sources: + source Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. VII.A, The expansion of British power, 1766-1819
+- [south-asia] 1783 sources: + source Majumdar (ed.), The History and Culture of the Indian People, vol. VIII: The Maratha Supremacy (Internet Archive)
+- [south-asia] 1800 sources: + source Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. VII.A, The expansion of British power, 1766-1819
+- [south-asia] 1800 sources: + source Majumdar (ed.), The History and Culture of the Indian People, vol. VIII: The Maratha Supremacy (Internet Archive)
+- [south-asia] 1815 sources: + source Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. VII.A, The expansion of British power, 1766-1819
+- [south-asia] 1815 sources: + source Majumdar (ed.), The History and Culture of the Indian People, vol. IX: British Paramountcy and Indian Renaissance, Part I (Internet Archive)
+- [south-asia] 1880 sources: + source Imperial Gazetteer of India, vol. I (1909), p. 449: area of British provinces and Native States (DSAL)
+- [south-asia] 1880 sources: + source Majumdar (ed.), The History and Culture of the Indian People, vol. IX: British Paramountcy and Indian Renaissance, Part I (Internet Archive)
+- [south-asia] 1900 sources: + source Imperial Gazetteer of India, vol. IV (1909): Administrative (DSAL)
+- [south-asia] 1914 sources: + source Majumdar (ed.), The History and Culture of the Indian People, vol. XI: Struggle for Freedom (Internet Archive)
+- [south-asia] 1920 sources: + source Majumdar (ed.), The History and Culture of the Indian People, vol. XI: Struggle for Freedom (Internet Archive)
+- [south-asia] 1930 sources: + source Majumdar (ed.), The History and Culture of the Indian People, vol. XI: Struggle for Freedom (Internet Archive)
+- [south-asia] 1938 sources: + source Majumdar (ed.), The History and Culture of the Indian People, vol. XI: Struggle for Freedom (Internet Archive)
+- [south-asia] 1945 sources: + source Majumdar (ed.), The History and Culture of the Indian People, vol. XI: Struggle for Freedom (Internet Archive)
+- [south-asia] indus-valley-civilisation sources: + source Majumdar (ed.), The History and Culture of the Indian People, vol. I: The Vedic Age (Internet Archive)
+- [south-asia] maurya-empire sources: + source Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. III.B, The time of the Mauryan Empire, 321-181 B.C.
+- [south-asia] maurya-empire sources: + source Majumdar (ed.), The History and Culture of the Indian People, vol. II: The Age of Imperial Unity (Internet Archive)
+- [south-asia] kushan-empire sources: + source Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. III.C.2, The Satavahana-Saka-Kusana age, c. A.D. 1-300
+- [south-asia] kushan-empire sources: + source Majumdar (ed.), The History and Culture of the Indian People, vol. II: The Age of Imperial Unity (Internet Archive)
+- [south-asia] gupta-empire sources: + source Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. III.D, The Gupta-Vakataka Age, c. A.D. 300-500
+- [south-asia] gupta-empire sources: + source Majumdar (ed.), The History and Culture of the Indian People, vol. III: The Classical Age (Internet Archive)
+- [south-asia] chola-empire sources: + source Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. IV.2, The age of the Ghaznavids, Cahmanas, Later Calukyas, and Colas, c. 975-1200
+- [south-asia] chola-empire sources: + source Majumdar (ed.), The History and Culture of the Indian People, vol. V: The Struggle for Empire (Internet Archive)
+- [south-asia] delhi-sultanate sources: + source Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. V, South Asia in the time of the Khaljis and Tughluqs, c. 1290-1390
+- [south-asia] delhi-sultanate sources: + source Majumdar (ed.), The History and Culture of the Indian People, vol. VI: The Delhi Sultanate (Internet Archive)
+- [south-asia] vijayanagara-empire sources: + source Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. V, South Asia in the time of the Lodis, 1451-1526
+- [south-asia] vijayanagara-empire sources: + source Majumdar (ed.), The History and Culture of the Indian People, vol. VI: The Delhi Sultanate (Internet Archive)
+- [south-asia] mughal-empire sources: + source Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. VI.A, The Mughal Empire, c. 1605
+- [south-asia] mughal-empire sources: + source Majumdar (ed.), The History and Culture of the Indian People, vol. VII: The Mughul Empire (Internet Archive)
+- [south-asia] mughal-empire sources: + source Jadunath Sarkar, History of Aurangzib (Internet Archive)
+- [south-asia] maratha-empire sources: + source Majumdar (ed.), The History and Culture of the Indian People, vol. VIII: The Maratha Supremacy (Internet Archive)
+- [south-asia] maratha-empire sources: + source Jadunath Sarkar, Shivaji and His Times (Internet Archive)
+- [south-asia] maratha-empire sources: + source Jadunath Sarkar, Fall of the Mughal Empire, vol. I (Internet Archive)
+- [south-asia] sikh-empire sources: + source Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. VII.A, The expansion of British power, 1819-1857
+- [south-asia] sikh-empire sources: + source Majumdar (ed.), The History and Culture of the Indian People, vol. IX: British Paramountcy and Indian Renaissance, Part I (Internet Archive)
+- [south-asia] durrani-empire sources: + source Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. VII.A, Mughal disintegration and the rise of regional powers, 1707-1766
+- [south-asia] durrani-empire sources: + source Majumdar (ed.), The History and Culture of the Indian People, vol. IX: British Paramountcy and Indian Renaissance, Part I (Internet Archive)
+- [south-asia] british-india sources: + source Imperial Gazetteer of India, vol. I (1909), p. 449: area of British provinces and Native States (DSAL)
+- [south-asia] british-india sources: + source Imperial Gazetteer of India, vol. II (1908): Historical (DSAL)
+- [south-asia] british-india sources: + source Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. VII.A, The expansion of British power, 1766-1819
+- [south-asia] republic-of-india sources: + source Majumdar (ed.), The History and Culture of the Indian People, vol. XI: Struggle for Freedom (Internet Archive)
+- [south-asia] pakistan sources: + source Majumdar (ed.), The History and Culture of the Indian People, vol. XI: Struggle for Freedom (Internet Archive)
+- [southeast-asia-oceania] 1279 regions.southeast-asia: “and Samudera Pasai in Sumatra is the region's first Muslim kingdom” → “and Samudera Pasai in Sumatra is about to become one of the region's first Muslim kingdoms” (Coedès 1968, p. 202 (Islam spreading in north Sumatra by 1281; Marco Polo found Perlak Muslim in 1292; Samudra's Islamization shown by the tomb of Sultan Malik al-Saleh, d. 1297))
+- [southeast-asia-oceania] 900 regions.southeast-asia: “under Yasovarman I (r. c. 889–910)” → “under Yasovarman I (r. from 889)” (Coedès 1968, pp. 112–15 (accession 889; 'reign ended around 900'; Harshavarman I donating by 912); other lists give c. 910)
+- [southeast-asia-oceania] khmer-empire rulers[1].reign: “889 – c. 910” → “889 – c. 900 (some lists c. 910)” (Coedès 1968, pp. 112–15 ('Yasovarman's reign ended around 900'))
+- [southeast-asia-oceania] srivijaya start: 650 → 670 (Coedès 1968, pp. 81–83: first recorded when I-ching stopped at Fo-shih (Palembang) in 671; earliest inscriptions (Kedukan Bukit) 682. No evidence for 650)
+- [southeast-asia-oceania] srivijaya rulers[0].reign: “c. 671 – 702” → “fl. 682 – 686” (Coedès 1968, pp. 82–83 (Kedukan Bukit 682, Talang Tuwo 684, Kota Kapur 686); accession and death dates are not attested)
+- [southeast-asia-oceania] srivijaya peak.note: “Sumatra, the Malay Peninsula and the Straits of Malacca and Sunda” → “Sumatra, the Malay Peninsula and the Straits of Malacca and Sunda; a loose maritime sphere, so estimates vary widely (Turchin, Adams & Hall 2006 give c. 1.2M km² for c. 1200)” (https://en.wikipedia.org/wiki/List_of_largest_empires (Srivijaya 1.2M km², 1200, Turchin 2006))
+- [southeast-asia-oceania] dai-viet summary: “From the 16th century the realm was divided between rival lords,” → “From the 16th century the realm was divided, first by the Mạc usurpation of 1527 and then between rival lords,” (Hall 1981, ch. on Vietnam and Appendix dynastic lists ('The Mac, 1527-1677'; Mac Dang Dung usurped 1527))
+- [southeast-asia-oceania] khmer-empire sources: + source Coedès, The Indianized States of Southeast Asia (1968), archive.org
+- [southeast-asia-oceania] khmer-empire sources: + source D. G. E. Hall, A History of South-East Asia, 4th ed. (1981), archive.org
+- [southeast-asia-oceania] srivijaya sources: + source Coedès, The Indianized States of Southeast Asia (1968), archive.org
+- [southeast-asia-oceania] majapahit sources: + source Coedès, The Indianized States of Southeast Asia (1968), archive.org
+- [southeast-asia-oceania] majapahit sources: + source D. G. E. Hall, A History of South-East Asia, 4th ed. (1981), archive.org
+- [southeast-asia-oceania] pagan-kingdom sources: + source Coedès, The Indianized States of Southeast Asia (1968), archive.org
+- [southeast-asia-oceania] dai-viet sources: + source D. G. E. Hall, A History of South-East Asia, 4th ed. (1981), archive.org
+- [southeast-asia-oceania] ayutthaya-kingdom sources: + source D. G. E. Hall, A History of South-East Asia, 4th ed. (1981), archive.org
+- [southeast-asia-oceania] toungoo-burma sources: + source D. G. E. Hall, A History of South-East Asia, 4th ed. (1981), archive.org
+- [southeast-asia-oceania] konbaung-burma sources: + source D. G. E. Hall, A History of South-East Asia, 4th ed. (1981), archive.org
+- [southeast-asia-oceania] malacca-sultanate sources: + source D. G. E. Hall, A History of South-East Asia, 4th ed. (1981), archive.org
+- [southeast-asia-oceania] tui-tonga-empire sources: + source Wikipedia: Geography of Tonga
+- [southeast-asia-oceania] 1279 sources: + source Coedès, The Indianized States of Southeast Asia (1968), archive.org
+- [southeast-asia-oceania] 900 sources: + source Coedès, The Indianized States of Southeast Asia (1968), archive.org
+- [southeast-asia-oceania] 1000 sources: + source Coedès, The Indianized States of Southeast Asia (1968), archive.org
+- [southeast-asia-oceania] 900 sources: + source Wilmshurst et al. (2011), High-precision radiocarbon dating shows recent and rapid initial human colonization of East Polynesia, PNAS
+- [southeast-asia-oceania] 1000 sources: + source Wilmshurst et al. (2011), High-precision radiocarbon dating shows recent and rapid initial human colonization of East Polynesia, PNAS
+- [southeast-asia-oceania] 1100 sources: + source Wilmshurst et al. (2011), High-precision radiocarbon dating shows recent and rapid initial human colonization of East Polynesia, PNAS
+- [southeast-asia-oceania] 1200 sources: + source Wilmshurst et al. (2011), High-precision radiocarbon dating shows recent and rapid initial human colonization of East Polynesia, PNAS
+- [southeast-asia-oceania] 1300 sources: + source Coedès, The Indianized States of Southeast Asia (1968), archive.org
+
+## Skipped (review by hand)
+- [africa] -100 powers[6].extent: text not found (already changed?) — wanted “Egypt and Cyprus”
+- [africa] kingdom-of-aksum peak.year: value is 350, expected 525
+- [africa] kingdom-of-aksum peak.note: text not found (already changed?) — wanted “Under Kaleb, northern Ethiopia, Eritrea, parts of Nubia and Yemen across the Red Sea”
+- [africa] mali-empire peak.areaKm2: value is 1100000, expected 1300000
+- [africa] fatimid-caliphate rulers[3].note: text not found (already changed?) — wanted “Longest reign of any Muslim ruler”
+- [africa] songhai-empire peak.areaKm2: value is 800000, expected 1400000
+- [africa] songhai-empire peak.year: value is 1550, expected 1500
+- [americas] -3000 regions.southern-north-america: text not found (already changed?) — wanted “small-cobbed maize alongside squash and beans,”
+- [americas] canada rulers[2].reign: text not found (already changed?) — wanted “1921–1930, 1935–1948”
+- [ancient-near-east] -3000 regions.middle-east-south-asia: text not found (already changed?) — wanted “and Hurrian groups in the northern hills”
+- [ancient-near-east] -2000 events[1].text: text not found (already changed?) — wanted “Mentuhotep II reunites Egypt, beginning the Middle Kingdom (c. 2055 BCE)”
+- [ancient-near-east] -1000 powers[2].extent: text not found (already changed?) — wanted “The hill country of Canaan, from the Negev toward Damascus”
+- [ancient-near-east] -700 overview: text not found (already changed?) — wanted “the kingdom of the legendary King Midas”
+- [ancient-near-east] akkadian-empire peak.areaKm2: value is 800000, expected 650000
+- [ancient-near-east] kingdom-of-kush rulers[1].reign: text not found (already changed?) — wanted “c. 714 – 700 BCE”
+- [east-asia] classical-japan rulers[2].reign: text not found (already changed?) — wanted “regent c. 995 – 1027”
+- [east-asia] han-dynasty peak.areaKm2: value is 6500000, expected 6000000
+- [east-asia] han-dynasty peak.note: text not found (already changed?) — wanted “Including the Tarim Basin protectorate and parts of Korea and northern Vietnam”
+- [east-asia] sui-dynasty peak.areaKm2: value is 3100000, expected 4600000
+- [east-asia] sui-dynasty peak.year: value is 610, expected 609
+- [east-asia] shang-dynasty peak.note: text not found (already changed?) — wanted “Under Wu Ding, the middle and lower Yellow River plain and allied lands”
+- [east-asia] qin-dynasty peak.note: text not found (already changed?) — wanted “Under Qin Shi Huang, from the Ordos to the south China coast”
+- [east-asia] mongol-empire peak.note: text not found (already changed?) — wanted “Largest contiguous land empire in history, from Korea to Hungary”
+- [east-asia] qing-dynasty peak.note: text not found (already changed?) — wanted “Including Mongolia, Xinjiang, Tibet and Manchuria”
+- [east-asia] empire-of-japan peak.note: text not found (already changed?) — wanted “Including occupied territories in China, Southeast Asia and the Pacific”
+- [europe] -300 powers[2].extent: text not found (already changed?) — wanted “Egypt, Cyrenaica and Cyprus,”
+- [europe] -100 powers[6].extent: text not found (already changed?) — wanted “Egypt and Cyprus”
+- [europe] -200 regions.europe: text not found (already changed?) — wanted “Corsica and eastern Spain”
+- [europe] -200 powers[1].extent: text not found (already changed?) — wanted “Corsica and eastern Spain”
+- [europe] carolingian-empire rulers[5].reign: text not found (already changed?) — wanted “881 – 888”
+- [europe] russian-empire peak.year: value is 1895, expected 1866
+- [europe] russian-empire peak.note: text not found (already changed?) — wanted “Before the sale of Alaska to the United States in 1867”
+- [europe] spanish-empire peak.year: value is 1810, expected 1790
+- [islamic-iran-central-asia] durrani-empire rulers[4].reign: text not found (already changed?) — wanted “1845–1863”
+- [islamic-iran-central-asia] omani-empire rulers[0].reign: text not found (already changed?) — wanted “1649–1688”
+- [islamic-iran-central-asia] qajar-pahlavi-iran summary: text not found (already changed?) — wanted “In 1789 Agha Mohammad Khan, chief of the Turkic Qajar tribe, began defeating his rivals, made Tehran his capital and was crowned shah in 1796.”
+- [islamic-iran-central-asia] fatimid-caliphate rulers[3].note: text not found (already changed?) — wanted “Longest reign of any Muslim ruler”
+- [islamic-iran-central-asia] abbasid-caliphate peak.note: text not found (already changed?) — wanted “Under Harun al-Rashid, from North Africa to Central Asia”
+- [islamic-iran-central-asia] gokturk-khaganate peak.note: text not found (already changed?) — wanted “From Manchuria to the Black Sea steppe”
+- [south-asia] maurya-empire peak.note: text not found (already changed?) — wanted “some estimates reach 5 million km²”
+- [southeast-asia-oceania] khmer-empire peak.note: text not found (already changed?) — wanted “Under Jayavarman VII, much of mainland South-east Asia”
+- [southeast-asia-oceania] tui-tonga-empire peak.note: text not found (already changed?) — wanted “Land area of Tonga and dependent islands; its maritime influence spread far wider”
+- [southeast-asia-oceania] kingdom-of-hawaii capital: text not found (already changed?) — wanted “Lahaina, then Honolulu (from 1845)”
+- [southeast-asia-oceania] kingdom-of-hawaii peak.areaKm2: value is 16600, expected 28300
+- [southeast-asia-oceania] kingdom-of-hawaii peak.note: text not found (already changed?) — wanted “All the Hawaiian islands, after Kauai submitted”
+- [southeast-asia-oceania] indonesia rulers[4].note: text not found (already changed?) — wanted “First democratically elected president”

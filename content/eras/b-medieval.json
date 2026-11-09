@@ -1,0 +1,2323 @@
+[
+ {
+  "year": 100,
+  "title": "Trajan's Rome, Han China",
+  "age": "Classical Antiquity",
+  "overview": "Around 100 CE two giant empires anchor opposite ends of Eurasia. Rome, under the soldier-emperor Trajan, rules every shore of the Mediterranean and is about to conquer Dacia beyond the Danube, pushing the empire towards its greatest size. Han China, under the young Emperor He, has just smashed the Northern Xiongnu and controls the oasis cities of the Tarim Basin through its general Ban Chao. Between them, the Parthians hold Iran and Mesopotamia, and the Kushans rule a rich crossroads empire from Bactria into northern India. Silk, spices, glass and gold move along the Silk Roads and across the Indian Ocean, where monsoon winds carry Roman ships to Tamil ports. Most of the world's people are farmers, but huge areas of Africa, the Americas, Siberia and Australia are home to herders, foragers and village societies. In Mexico, the great city of Teotihuacan is rising, and in Peru the Moche and Nazca cultures are flourishing.",
+  "regions": {
+   "southern-africa": "Most of Africa south of the equator is home to Khoisan-speaking foragers and herders. Bantu-speaking farmers who work iron are spreading south and east from the Great Lakes region, reaching the coasts of East Africa and moving towards present-day Zambia and Mozambique. Madagascar is still uninhabited or barely visited.",
+   "northern-africa": "Rome rules the entire North African coast, with Egypt and the province of Africa serving as the empire's breadbaskets. Up the Nile, the Kingdom of Kush rules from Meroe, famous for its iron-working and its ruling queens, while the trading kingdom of Axum is rising in the Ethiopian highlands. In the Sahara the Garamantes control oasis routes, and in West Africa farming towns such as Jenne-jeno are growing along the Niger.",
+   "europe": "The Roman Empire stretches from Britain and Spain to the Black Sea, with its frontier along the Rhine and Danube. Trajan (r. 98–117) is about to fight the Dacian Wars (101–106) against King Decebalus, turning Dacia into a Roman province. Beyond the frontier live Germanic peoples, Balts and Slavs in the forests, Sarmatians and Alans on the steppe, and Finno-Ugric and Sámi hunters in the far north.",
+   "middle-east-south-asia": "Rome holds Anatolia, Syria and Judea, and will annex the Nabataean kingdom of Petra in 106. The Parthian Empire under the Arsacid kings, with Pacorus II facing rival claimants, rules Mesopotamia and Iran from Ctesiphon, with Armenia a contested buffer between the two powers. In India the Kushans rule the northwest, the Satavahanas govern the Deccan, Saka satraps hold the west coast, and the Tamil kingdoms of the Cheras, Cholas and Pandyas trade pepper and pearls with Roman merchants.",
+   "north-central-asia": "The Kushan Empire controls Bactria and the routes across the Hindu Kush, while Saka and Kangju peoples herd on the steppes of Transoxiana. After Han victories in 89–91 CE, the Northern Xiongnu confederation has collapsed, and the Xianbei are moving into its old pastures. Siberia is inhabited by scattered hunting, fishing and reindeer-herding peoples.",
+   "east-asia": "The Eastern Han dynasty rules China from Luoyang under Emperor He (r. 88–106), whose reign sees eunuchs and empresses' families compete for power. Han armies and the general Ban Chao dominate the Tarim Basin, and Han commanderies still hold northern Korea. In Korea the kingdoms of Goguryeo, Baekje and Silla and the Gaya confederacy are forming, while Japan is in the Yayoi period of rice-farming chiefdoms that send envoys to the Han court.",
+   "southeast-asia": "Northern Vietnam is ruled as a Han Chinese province after the defeat of the Trung sisters' revolt in 43 CE. In the Mekong delta, the trading kingdom of Funan is emerging around the port of Oc Eo, linking Indian and Chinese sea trade. Pyu city-states are forming in Burma, and Austronesian peoples farm and sail throughout the islands of Indonesia and the Philippines.",
+   "northern-north-america": "The Arctic is home to Paleo-Inuit (early Dorset) hunters of seals and walrus, while Ipiutak and Norton cultures live along the Alaskan coast. The vast boreal forest is home to subarctic hunter-gatherers, and the Pacific Northwest coast supports rich fishing societies living off salmon and cedar.",
+   "southern-north-america": "In central Mexico the city of Teotihuacan is growing fast; the Pyramid of the Sun has just been completed and the city will soon be one of the largest in the world. Maya city-states fill the Yucatán lowlands as the great Preclassic centre of El Mirador begins to decline, and the Zapotecs rule Oaxaca from Monte Albán. Further north, the Hopewell culture builds great earthwork mounds in the Ohio valley and trades across much of the continent.",
+   "northern-south-america": "On the north coast of Peru the Moche are building adobe pyramids, irrigated fields and a powerful warrior state, while on the south coast the Nazca are drawing their giant lines in the desert. Around Lake Titicaca, early Tiwanaku is growing into a ceremonial centre. The Amazon basin and the Guianas are home to many farming and foraging peoples whose earthworks and villages are only now being studied.",
+   "southern-cone": "The Southern Cone is home to hunter-gatherers and early farmers rather than states. Guanaco hunters roam the pampas and Patagonia, shellfish and sea-mammal hunters live along the channels of Tierra del Fuego, and village farmers grow maize and quinoa in the valleys of northwest Argentina and central Chile.",
+   "australasia": "Aboriginal Australians, with tens of thousands of years of history, live across the whole continent in hundreds of language groups, and Tasmanians have been isolated since the end of the Ice Age. Farmers in the New Guinea highlands grow taro and bananas. Descendants of the Lapita seafarers live in Fiji, Tonga and Samoa, but eastern Polynesia, Hawaii and New Zealand are still unsettled."
+  },
+  "powers": [
+   {
+    "name": "Roman Empire",
+    "map": "Roman Empire",
+    "ruler": "Trajan",
+    "capital": "Rome",
+    "extent": "All around the Mediterranean, from Britain and Spain to Egypt and Syria, with Dacia about to be added"
+   },
+   {
+    "name": "Han Dynasty",
+    "map": "Han",
+    "ruler": "Emperor He",
+    "capital": "Luoyang",
+    "extent": "China from southern Manchuria to northern Vietnam, plus protectorate over the Tarim Basin"
+   },
+   {
+    "name": "Parthian Empire",
+    "map": "Parthian Empire",
+    "ruler": "Pacorus II (with rival claimants)",
+    "capital": "Ctesiphon",
+    "extent": "Mesopotamia and the Iranian plateau"
+   },
+   {
+    "name": "Kushan Empire",
+    "map": "Kushan Empire",
+    "ruler": "Vima Takto or Vima Kadphises (dates uncertain)",
+    "capital": "Bactria and Gandhara (Peshawar region)",
+    "extent": "From Bactria across Afghanistan into the Indus and upper Ganges plains"
+   },
+   {
+    "name": "Satavahana Dynasty",
+    "map": "Satavahanihara",
+    "ruler": "Satavahana kings (exact ruler uncertain)",
+    "capital": "Pratishthana (Paithan)",
+    "extent": "The Deccan plateau of central India"
+   },
+   {
+    "name": "Kingdom of Kush",
+    "map": "Meroe",
+    "ruler": "Meroitic kings and kandake queens (names uncertain)",
+    "capital": "Meroe",
+    "extent": "The middle Nile valley in present-day Sudan"
+   },
+   {
+    "name": "Kingdom of Axum",
+    "map": "Axum",
+    "ruler": "Aksumite kings (names uncertain)",
+    "capital": "Axum",
+    "extent": "Northern Ethiopia and Eritrea, with the Red Sea port of Adulis"
+   },
+   {
+    "name": "Teotihuacan",
+    "map": "Teotihuacan",
+    "ruler": "Unknown (no named rulers survive)",
+    "capital": "Teotihuacan",
+    "extent": "The Valley of Mexico and growing influence across Mesoamerica"
+   }
+  ],
+  "events": [
+   {
+    "year": 43,
+    "text": "Han armies crush the Trung sisters' revolt in Vietnam"
+   },
+   {
+    "year": 70,
+    "text": "Romans destroy the Temple in Jerusalem"
+   },
+   {
+    "year": 79,
+    "text": "Mount Vesuvius buries Pompeii"
+   },
+   {
+    "year": 89,
+    "text": "Han China defeats the Northern Xiongnu"
+   },
+   {
+    "year": 97,
+    "text": "Han envoy Gan Ying is sent west to seek Rome"
+   },
+   {
+    "year": 98,
+    "text": "Trajan becomes Roman emperor"
+   },
+   {
+    "year": 101,
+    "text": "Trajan launches the First Dacian War"
+   },
+   {
+    "year": 105,
+    "text": "Cai Lun presents improved papermaking to the Han court"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia: Trajan",
+    "url": "https://en.wikipedia.org/wiki/Trajan"
+   },
+   {
+    "title": "Wikipedia: Emperor He of Han",
+    "url": "https://en.wikipedia.org/wiki/Emperor_He_of_Han"
+   },
+   {
+    "title": "Wikipedia: Teotihuacan",
+    "url": "https://en.wikipedia.org/wiki/Teotihuacan"
+   },
+   {
+    "title": "Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. III.C.2, The Satavahana-Saka-Kusana age, c. A.D. 1-300",
+    "url": "https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/The_Satavahana-Saka-Kusana_age_c._A.D._1-300.json&canvasID=0"
+   }
+  ]
+ },
+ {
+  "year": 200,
+  "title": "Han China Crumbles",
+  "age": "Classical Antiquity",
+  "overview": "In 200 CE the old order is cracking. In China the Han dynasty survives only in name: the boy Emperor Xian is a puppet, and warlords carve up the country. This very year Cao Cao defeats his rival Yuan Shao at Guandu, laying the foundations of the Three Kingdoms era. Rome is more stable under Septimius Severus, a North African general who seized power after the chaotic Year of the Five Emperors and has just sacked the Parthian capital Ctesiphon. Parthia is weakened and within a generation will be overthrown by the Persian Sasanians. In India the Kushans hold the north and the Satavahanas are fading in the Deccan. Christianity is spreading quietly through Roman cities, and Buddhism is travelling along the Silk Roads into China. In the Americas, Teotihuacan is reaching its height as a metropolis of perhaps 100,000 people, and the Maya stand on the threshold of their Classic age.",
+  "regions": {
+   "southern-africa": "Bantu-speaking iron-working farmers continue to spread through eastern and southern Africa, settling as far south as present-day Mozambique and the edge of South Africa. Khoisan foragers and herders still occupy the drier south and west. Madagascar remains essentially unsettled.",
+   "northern-africa": "Roman North Africa is prosperous, and its native son Septimius Severus is lavishing monuments on his home city of Leptis Magna. The Kingdom of Kush still rules from Meroe on the Nile, though it is past its peak, while Axum is becoming a major Red Sea trading power. West African farming and iron-working communities are growing along the Niger and in the savanna.",
+   "europe": "The Roman Empire is ruled by Septimius Severus (r. 193–211), who strengthens the army and will campaign in Britain at the end of his reign. The frontiers on the Rhine and Danube still hold, though Germanic peoples such as the Alamanni and Goths are gathering beyond them. Eastern Europe is home to Slavic, Baltic and Sarmatian peoples, and the far north to Finno-Ugric and Sámi hunters.",
+   "middle-east-south-asia": "Rome holds Anatolia, Syria and northern Mesopotamia after Severus sacked Ctesiphon in 197–198. The Parthian Empire, under Vologases V, is battered and divided, and the Persian prince Ardashir will overthrow it in 224. In India the Kushans under Vasudeva I hold the northwest and Mathura, the Satavahanas are in decline in the Deccan, and the Tamil kingdoms dominate the south; Himyar is the leading power in Yemen.",
+   "north-central-asia": "The Kushan Empire still controls Bactria, but the steppes are shifting. The Xianbei, who replaced the Xiongnu in Mongolia, have formed a loose confederation that raids China, while Saka, Kangju and other Iranian-speaking nomads live in Transoxiana. Siberia is home to scattered hunting and fishing peoples.",
+   "east-asia": "The Han dynasty is collapsing. After the Yellow Turban Rebellion of 184, warlords took control, and Emperor Xian (r. 189–220) is held by Cao Cao at Xu, who defeats Yuan Shao at Guandu in 200. In Korea, Goguryeo under King Sansang is the strongest kingdom, alongside Baekje, Silla and Gaya, while in Japan the shaman-queen Himiko of Yamatai leads a federation of chiefdoms.",
+   "southeast-asia": "Funan has become the main trading kingdom of mainland Southeast Asia, its ports visited by Indian, Chinese and even Roman-era merchants. Northern Vietnam remains a Chinese-ruled province, while in central Vietnam the Cham people are on the verge of founding the kingdom of Linyi (c. 192). Austronesian farming and seafaring peoples live across the islands.",
+   "northern-north-america": "Paleo-Inuit Dorset hunters occupy the Canadian Arctic and Greenland, while cultures such as Ipiutak hunt sea mammals along the Alaskan coast. Subarctic forest hunters follow caribou and moose across Canada, and Pacific Northwest peoples build large plank-house villages.",
+   "southern-north-america": "Teotihuacan dominates central Mexico, its avenues and pyramids home to perhaps 100,000 people. Maya cities such as Tikal and Calakmul are growing, and the Zapotecs rule from Monte Albán in Oaxaca. In the eastern woodlands the Hopewell culture continues its mound-building and long-distance trade, and early Ancestral Puebloan (Basketmaker) farmers live in the Southwest.",
+   "northern-south-america": "The Moche state rules the river valleys of Peru's north coast, making superb pottery and gold work, while the Nazca culture flourishes on the south coast. Tiwanaku is growing on the shores of Lake Titicaca, and the Amazon and Orinoco basins are home to many farming and foraging peoples.",
+   "southern-cone": "There are no states in the Southern Cone. Foragers hunt guanaco and rhea on the pampas and in Patagonia, maritime peoples live in the far south, and village farmers cultivate maize and potatoes in the Andean valleys of Chile and northwest Argentina.",
+   "australasia": "Aboriginal Australians live across the continent in diverse societies tied to their country through song, story and seasonal movement. New Guinea highlanders farm intensively, and Polynesians in Tonga and Samoa are developing their distinct culture. The remote islands of eastern Polynesia, Hawaii and New Zealand remain uninhabited."
+  },
+  "powers": [
+   {
+    "name": "Roman Empire",
+    "map": "Roman Empire",
+    "ruler": "Septimius Severus",
+    "capital": "Rome",
+    "extent": "From Britain and Spain to Egypt and northern Mesopotamia"
+   },
+   {
+    "name": "Han Dynasty",
+    "map": "Han",
+    "ruler": "Emperor Xian (real power with Cao Cao and other warlords)",
+    "capital": "Xu (Xuchang)",
+    "extent": "Nominally all of China, but split among rival warlords"
+   },
+   {
+    "name": "Parthian Empire",
+    "map": "Parthian Empire",
+    "ruler": "Vologases V",
+    "capital": "Ctesiphon",
+    "extent": "Mesopotamia and Iran, weakened by Roman invasion"
+   },
+   {
+    "name": "Kushan Empire",
+    "map": null,
+    "ruler": "Vasudeva I",
+    "capital": "Mathura and Purushapura (Peshawar)",
+    "extent": "Bactria, Afghanistan and northwestern India"
+   },
+   {
+    "name": "Satavahana Dynasty",
+    "map": "Satavahanihara",
+    "ruler": "Late Satavahana kings",
+    "capital": "Pratishthana (Paithan)",
+    "extent": "The Deccan, now shrinking"
+   },
+   {
+    "name": "Goguryeo",
+    "map": "Koguryo",
+    "ruler": "King Sansang",
+    "capital": "Gungnae (Ji'an)",
+    "extent": "Northern Korea and southern Manchuria"
+   },
+   {
+    "name": "Kingdom of Axum",
+    "map": "Axum",
+    "ruler": "Aksumite kings (names uncertain)",
+    "capital": "Axum",
+    "extent": "Northern Ethiopia and Eritrea, trading across the Red Sea"
+   },
+   {
+    "name": "Teotihuacan",
+    "map": "Teotihuacan",
+    "ruler": "Unknown (no named rulers survive)",
+    "capital": "Teotihuacan",
+    "extent": "Central Mexico, with trade and influence reaching the Maya lands"
+   }
+  ],
+  "events": [
+   {
+    "year": 166,
+    "text": "Antonine Plague begins ravaging the Roman Empire"
+   },
+   {
+    "year": 184,
+    "text": "Yellow Turban Rebellion erupts in China"
+   },
+   {
+    "year": 193,
+    "text": "Year of the Five Emperors; Septimius Severus takes power"
+   },
+   {
+    "year": 198,
+    "text": "Severus sacks the Parthian capital Ctesiphon"
+   },
+   {
+    "year": 200,
+    "text": "Cao Cao defeats Yuan Shao at the Battle of Guandu"
+   },
+   {
+    "year": 208,
+    "text": "Battle of Red Cliffs halts Cao Cao's advance south"
+   },
+   {
+    "year": 212,
+    "text": "Caracalla grants Roman citizenship to all free men"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia: Septimius Severus",
+    "url": "https://en.wikipedia.org/wiki/Septimius_Severus"
+   },
+   {
+    "title": "Wikipedia: Battle of Guandu",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Guandu"
+   },
+   {
+    "title": "Wikipedia: Sansang of Goguryeo",
+    "url": "https://en.wikipedia.org/wiki/Sansang_of_Goguryeo"
+   },
+   {
+    "title": "Wikipedia: Teotihuacan",
+    "url": "https://en.wikipedia.org/wiki/Teotihuacan"
+   },
+   {
+    "title": "Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. III.C.2, The Satavahana-Saka-Kusana age, c. A.D. 1-300",
+    "url": "https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/The_Satavahana-Saka-Kusana_age_c._A.D._1-300.json&canvasID=0"
+   }
+  ]
+ },
+ {
+  "year": 300,
+  "title": "Rome of Four Emperors",
+  "age": "Late Antiquity",
+  "overview": "By 300 CE the Roman Empire has survived a half-century of civil wars, invasions and economic chaos. Emperor Diocletian has saved it by splitting power among four rulers, the Tetrarchy: two senior emperors, Diocletian in the East and Maximian in the West, and two juniors, Galerius and Constantius. The old Parthian state has been replaced by the aggressive Sasanian Persians, though they have just lost a war to Rome. In China, the Western Jin dynasty reunited the country in 280, but it is now tearing itself apart in the War of the Eight Princes, and nomadic peoples settled inside China are about to rise. In northern India the Gupta family is building a small kingdom that will soon become a great empire. Christianity is still a persecuted minority religion in Rome, but Armenia is about to become the first Christian kingdom. In the Americas, Teotihuacan dominates Mexico and Maya Classic civilization is flowering in the lowland jungles.",
+  "regions": {
+   "southern-africa": "Iron-working Bantu-speaking farmers are now settled across much of eastern and southern Africa, growing sorghum and millet and herding cattle. Khoisan foragers and herders live in the Kalahari and the far south. Madagascar is still essentially uninhabited, though Austronesian sailors may be starting to visit.",
+   "northern-africa": "Egypt and the North African coast are Roman provinces reorganized under Diocletian. The Kingdom of Axum is now a major power, minting its own gold coins and trading across the Red Sea, while Meroe is in decline. In West Africa the Soninke kingdom of Ghana (Wagadu) may be taking shape on the edge of the Sahara, as camels begin to make desert crossings easier.",
+   "europe": "The Roman Empire is governed by the Tetrarchy: Maximian rules Italy, Africa and Spain from Milan, Constantius Chlorus holds Gaul and Britain from Trier, and Galerius guards the Balkans. Frankish, Alamannic and Gothic peoples press on the Rhine and Danube, while the Goths have settled north of the Black Sea. Christians face the Great Persecution, which begins in 303.",
+   "middle-east-south-asia": "Diocletian personally rules the eastern provinces from Nicomedia, and his Caesar Galerius defeated the Sasanian king Narseh in 298, forcing the Peace of Nisibis (299). The Sasanian Persian Empire rules Iran and Mesopotamia from Ctesiphon. Armenia, under Tiridates III, will adopt Christianity, traditionally in 301 (many scholars prefer c. 314). In India the Gupta family, under Ghatotkacha, holds a small kingdom in Magadha, while the Kushans have been reduced to vassals of Persia in the northwest.",
+   "north-central-asia": "The Sasanians have taken over the former Kushan lands of Bactria, ruling them through Kushano-Sasanian princes. Iranian-speaking nomads and Xianbei groups move across the steppe, and the Xiongnu-descended peoples settled in northern China are restless. Siberia remains a land of scattered hunters, fishers and reindeer herders.",
+   "east-asia": "The Western Jin dynasty, under the weak Emperor Hui (r. 290–307), rules a reunited China from Luoyang but is collapsing in the War of the Eight Princes (291–306). In 304 the Xiongnu chief Liu Yuan will found the Han Zhao state, beginning the era of the Sixteen Kingdoms in the north. Goguryeo, under King Micheon, is expanding in Korea alongside Baekje and Silla, and Japan has entered the Kofun period of giant keyhole-shaped tombs.",
+   "southeast-asia": "Funan controls the Mekong delta and the trade route across the Malay Peninsula, adopting Indian ideas of kingship and religion. Linyi, the early Cham kingdom, rules central Vietnam, while the north is still a Chinese province. Indian influence is spreading to trading ports across the islands.",
+   "northern-north-america": "Dorset hunters live in the eastern Arctic, and Alaskan coastal peoples hunt whales and walrus. The subarctic forests are home to bands of caribou and moose hunters, and Pacific Northwest peoples live in large, settled fishing villages.",
+   "southern-north-america": "Teotihuacan is at its height, the largest city in the Americas, with influence reaching the Maya region. The Maya Classic period has begun, with cities like Tikal raising carved stone monuments to their kings, while Monte Albán rules Oaxaca. North of Mexico, Hopewell mound-building is declining and Basketmaker farmers grow maize in the Southwest.",
+   "northern-south-america": "The Moche and Nazca cultures flourish on the coasts of Peru, and Tiwanaku is expanding as a religious and trading centre near Lake Titicaca. Peoples of the Amazon farm manioc and build settlements along the great rivers.",
+   "southern-cone": "Hunter-gatherers range across the pampas and Patagonia, and fishing peoples live in the southern channels. Farming villages exist in northwest Argentina and northern Chile, some trading with the growing Tiwanaku world.",
+   "australasia": "Aboriginal Australians live across the continent, with Tasmanians long separated by Bass Strait. Farming societies flourish in New Guinea, and Polynesians in Tonga and Samoa are on the eve of their great voyages east."
+  },
+  "powers": [
+   {
+    "name": "Roman Empire (Eastern Tetrarchy)",
+    "map": "Rome (Diocletianus)",
+    "ruler": "Diocletian (senior emperor), with Caesar Galerius",
+    "capital": "Nicomedia",
+    "extent": "Asia Minor, Syria, Egypt and, through Galerius, the Balkans"
+   },
+   {
+    "name": "Roman Empire (Western Tetrarchy)",
+    "map": "Rome (Maximian)",
+    "ruler": "Maximian, with Caesar Constantius Chlorus",
+    "capital": "Milan (Mediolanum)",
+    "extent": "Italy, Africa and Spain; Constantius holds Gaul and Britain from Trier"
+   },
+   {
+    "name": "Western Jin Dynasty",
+    "map": "Jin",
+    "ruler": "Emperor Hui",
+    "capital": "Luoyang",
+    "extent": "All of China, but torn by civil war among imperial princes"
+   },
+   {
+    "name": "Sasanian Empire",
+    "map": "Parthian Empire",
+    "ruler": "Narseh",
+    "capital": "Ctesiphon",
+    "extent": "Iran, Mesopotamia and the former Kushan lands of Bactria"
+   },
+   {
+    "name": "Gupta Kingdom",
+    "map": "Gupta Empire",
+    "ruler": "Ghatotkacha (c. 280–319)",
+    "capital": "Pataliputra",
+    "extent": "A small kingdom in Magadha (Bihar), soon to expand"
+   },
+   {
+    "name": "Kingdom of Axum",
+    "map": "Axum",
+    "ruler": "Aksumite kings (names uncertain)",
+    "capital": "Axum",
+    "extent": "Ethiopia, Eritrea and Red Sea trade routes"
+   },
+   {
+    "name": "Kingdom of Armenia",
+    "map": "Armenia",
+    "ruler": "Tiridates III",
+    "capital": "Vagharshapat",
+    "extent": "The Armenian highlands between Rome and Persia"
+   },
+   {
+    "name": "Goguryeo",
+    "map": "Koguryo",
+    "ruler": "King Micheon",
+    "capital": "Gungnae (Ji'an)",
+    "extent": "Northern Korea and southern Manchuria"
+   }
+  ],
+  "events": [
+   {
+    "year": 224,
+    "text": "Ardashir I overthrows the Parthians and founds the Sasanian Empire"
+   },
+   {
+    "year": 260,
+    "text": "Persia's Shapur I captures the Roman emperor Valerian"
+   },
+   {
+    "year": 280,
+    "text": "Western Jin reunites China"
+   },
+   {
+    "year": 284,
+    "text": "Diocletian becomes Roman emperor"
+   },
+   {
+    "year": 291,
+    "text": "War of the Eight Princes begins in China"
+   },
+   {
+    "year": 293,
+    "text": "Diocletian creates the Tetrarchy"
+   },
+   {
+    "year": 299,
+    "text": "Peace of Nisibis after Rome defeats Persia"
+   },
+   {
+    "year": 301,
+    "text": "Armenia adopts Christianity (traditional date; possibly c. 314)"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia: Tetrarchy",
+    "url": "https://en.wikipedia.org/wiki/Tetrarchy"
+   },
+   {
+    "title": "Wikipedia: Emperor Hui of Jin",
+    "url": "https://en.wikipedia.org/wiki/Emperor_Hui_of_Jin"
+   },
+   {
+    "title": "Wikipedia: Christianization of Armenia",
+    "url": "https://en.wikipedia.org/wiki/Christianization_of_Armenia"
+   },
+   {
+    "title": "Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. III.D, The Gupta-Vakataka Age, c. A.D. 300-500",
+    "url": "https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/The_Gupta-Vakataka_Age_c._A.D._300-500.json&canvasID=0"
+   },
+   {
+    "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. III: The Classical Age (Internet Archive)",
+    "url": "https://archive.org/details/classicalage03bhar"
+   }
+  ]
+ },
+ {
+  "year": 400,
+  "title": "Rome Divided, Huns Advancing",
+  "age": "Late Antiquity",
+  "overview": "In 400 CE the Roman Empire is permanently split. Since 395 it has been ruled by two brothers: Honorius in the West, guided by the general Stilicho, and Arcadius in the East from Constantinople. Christianity is now the official religion. But the Huns, horse archers from the eastern steppe, have driven the Goths across the Danube, and Alaric's Visigoths are loose inside the empire; within ten years they will sack Rome itself. Persia is at peace under the tolerant Sasanian king Yazdegerd I. India is enjoying a golden age under the Gupta emperor Chandragupta II, admired by the Chinese pilgrim Faxian, who sets out for India in 399. China is divided between the Eastern Jin in the south and the Sixteen Kingdoms in the north, where the Tuoba Northern Wei are rising. In Korea, Gwanggaeto the Great is building Goguryeo into a regional power, and in the Americas Teotihuacan has recently installed its influence over the Maya city of Tikal.",
+  "regions": {
+   "southern-africa": "Bantu-speaking farmers, with iron tools and cattle, now live across much of central, eastern and southern Africa, reaching the eastern coast of South Africa. Khoisan peoples continue to forage and herd in the Kalahari and the Cape. Austronesian sailors from Southeast Asia may be beginning to reach Madagascar.",
+   "northern-africa": "North Africa from Morocco to Libya belongs to the Western Roman Empire, while Egypt belongs to the East. Axum, which adopted Christianity under King Ezana in the 330s, is the leading power of the Horn, and the old Kushite kingdom of Meroe has collapsed, leaving the Nubian peoples who will form Nobatia, Makuria and Alodia. In West Africa, the early kingdom of Ghana (Wagadu) is likely taking shape.",
+   "europe": "The Western Roman Empire under Honorius (r. 395–423) holds Italy, Gaul, Spain and Britain, but relies on Germanic soldiers and the general Stilicho; the Visigoths under Alaric are already threatening Italy. The Eastern Roman Empire of Arcadius holds the Balkans and Greece. The Huns, under leaders such as Uldin, dominate the plains north of the Danube, ruling over Goths, Alans and Gepids, while Franks, Alamanni and Burgundians wait along the Rhine.",
+   "middle-east-south-asia": "The Eastern Roman Empire holds Anatolia, Syria and Egypt, while the Sasanian Persian Empire under Yazdegerd I (r. 399–420) holds Mesopotamia and Iran; the two have recently divided Armenia between them. In Arabia, the kingdom of Himyar dominates Yemen. Northern India is united under the Gupta emperor Chandragupta II (c. 375–415), a time of great Sanskrit literature, science and art, while the Vakatakas, his allies by marriage, rule the Deccan.",
+   "north-central-asia": "The Huns have moved west towards Europe, and new nomadic powers are forming in the east. The Rouran (Ruanruan) dominate Mongolia and the eastern steppe, where their leader Shelun takes the title khagan in 402. Hunnic groups such as the Kidarites are moving into Bactria, and Siberia remains home to scattered forest and tundra peoples.",
+   "east-asia": "China is split. The Eastern Jin dynasty under Emperor An (r. 396–419) rules the south from Jiankang (Nanjing), while the north is divided among the Sixteen Kingdoms, where the Tuoba Northern Wei, under Emperor Daowu, is rising from its capital at Pingcheng. Goguryeo under King Gwanggaeto the Great (r. 391–413) is conquering territory in Manchuria and Korea, fighting Baekje and its Japanese allies, and Japan's Yamato rulers are building huge kofun tombs.",
+   "southeast-asia": "Funan is the leading power of mainland Southeast Asia, controlling sea trade between India and China. The Cham kingdom of Linyi rules central Vietnam, and Indian-style kingdoms are appearing in Java and Borneo, where the earliest Sanskrit inscriptions of Indonesia (at Kutai) date from around this time.",
+   "northern-north-america": "Dorset Paleo-Inuit hunt seals and walrus across the eastern Arctic, and coastal peoples of Alaska hunt whales. Subarctic hunting bands live in the boreal forest, and the Pacific Northwest supports rich fishing societies.",
+   "southern-north-america": "Teotihuacan is at the peak of its power, and in 378 a Teotihuacan warlord, Siyaj K'ak', arrived at Tikal and installed a new dynasty, spreading central Mexican influence through the Maya world. Monte Albán rules the Zapotec lands of Oaxaca. In the eastern woodlands the Hopewell tradition is fading, while farmers in the Southwest grow maize and squash.",
+   "northern-south-america": "The Moche are at their height on Peru's north coast, building great adobe pyramids such as the Huaca del Sol. Nazca continues on the south coast, and Tiwanaku is expanding its influence around Lake Titicaca. Farming peoples flourish along the Amazon, including the mound-building Marajoara culture at its mouth.",
+   "southern-cone": "The pampas and Patagonia are home to mobile hunting peoples, and maritime foragers live in the southern archipelagos. Farming villages in northwest Argentina and northern Chile trade with Tiwanaku through llama caravans.",
+   "australasia": "Aboriginal Australians live in diverse societies across the continent. New Guinea is home to many farming and trading peoples, and Polynesians in Tonga and Samoa are developing seafaring skills that will later carry them to the most remote islands on Earth."
+  },
+  "powers": [
+   {
+    "name": "Eastern Roman Empire",
+    "map": "Eastern Roman Empire",
+    "ruler": "Arcadius",
+    "capital": "Constantinople",
+    "extent": "The Balkans, Greece, Anatolia, Syria and Egypt"
+   },
+   {
+    "name": "Western Roman Empire",
+    "map": "Western Roman Empire",
+    "ruler": "Honorius (real power with the general Stilicho)",
+    "capital": "Milan, moving to Ravenna in 402",
+    "extent": "Italy, Gaul, Spain, Britain and North Africa"
+   },
+   {
+    "name": "Gupta Empire",
+    "map": "Gupta Empire",
+    "ruler": "Chandragupta II",
+    "capital": "Pataliputra",
+    "extent": "Northern India from the Punjab to Bengal"
+   },
+   {
+    "name": "Sasanian Persian Empire",
+    "map": "Persia",
+    "ruler": "Yazdegerd I",
+    "capital": "Ctesiphon",
+    "extent": "Mesopotamia, Iran and eastern Armenia"
+   },
+   {
+    "name": "Eastern Jin Dynasty",
+    "map": "Jin",
+    "ruler": "Emperor An",
+    "capital": "Jiankang (Nanjing)",
+    "extent": "Southern China south of the Huai River"
+   },
+   {
+    "name": "Rouran Khaganate",
+    "map": "Ruanruan",
+    "ruler": "Shelun",
+    "capital": "Mobile court in Mongolia",
+    "extent": "Mongolia and the eastern steppe"
+   },
+   {
+    "name": "Hunnic Empire",
+    "map": "Hunnic Empire",
+    "ruler": "Uldin",
+    "capital": "Mobile court north of the Danube",
+    "extent": "The plains north of the Danube and Black Sea"
+   },
+   {
+    "name": "Goguryeo",
+    "map": "Koguryo",
+    "ruler": "Gwanggaeto the Great",
+    "capital": "Gungnae (Ji'an)",
+    "extent": "Northern Korea and much of Manchuria"
+   },
+   {
+    "name": "Northern Wei",
+    "map": null,
+    "ruler": "Emperor Daowu (Tuoba Gui)",
+    "capital": "Pingcheng (Datong)",
+    "extent": "Northern Shanxi and Hebei, expanding across north China"
+   }
+  ],
+  "events": [
+   {
+    "year": 376,
+    "text": "Goths fleeing the Huns cross the Danube"
+   },
+   {
+    "year": 378,
+    "text": "Goths destroy a Roman army at Adrianople"
+   },
+   {
+    "year": 378,
+    "text": "Teotihuacan's Siyaj K'ak' arrives at Tikal"
+   },
+   {
+    "year": 380,
+    "text": "Christianity becomes the Roman state religion"
+   },
+   {
+    "year": 395,
+    "text": "Roman Empire permanently divided into East and West"
+   },
+   {
+    "year": 399,
+    "text": "Chinese monk Faxian sets out for India"
+   },
+   {
+    "year": 406,
+    "text": "Vandals, Alans and Suebi cross the Rhine"
+   },
+   {
+    "year": 410,
+    "text": "Alaric's Visigoths sack Rome"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia: Emperor An of Jin",
+    "url": "https://en.wikipedia.org/wiki/Emperor_An_of_Jin"
+   },
+   {
+    "title": "Wikipedia: Yazdegerd I",
+    "url": "https://en.wikipedia.org/wiki/Yazdegerd_I"
+   },
+   {
+    "title": "Wikipedia: Gwanggaeto the Great",
+    "url": "https://en.wikipedia.org/wiki/Gwanggaeto_the_Great"
+   },
+   {
+    "title": "Wikipedia: Rouran Khaganate",
+    "url": "https://en.wikipedia.org/wiki/Rouran_Khaganate"
+   },
+   {
+    "title": "Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. III.D, The Gupta-Vakataka Age, c. A.D. 300-500",
+    "url": "https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/The_Gupta-Vakataka_Age_c._A.D._300-500.json&canvasID=0"
+   },
+   {
+    "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. III: The Classical Age (Internet Archive)",
+    "url": "https://archive.org/details/classicalage03bhar"
+   }
+  ]
+ },
+ {
+  "year": 500,
+  "title": "Kingdoms After Rome",
+  "age": "Early Middle Ages",
+  "overview": "By 500 CE the Western Roman Empire is gone. Its last emperor was deposed in 476, and Germanic kings now rule its lands: Theodoric the Ostrogoth governs Italy from Ravenna, Clovis has united the Franks in Gaul, the Visigoths hold Spain and southern France, and the Vandals rule North Africa from Carthage. The Eastern Roman Empire, under Anastasius I, remains rich and powerful, facing a revived Sasanian Persia under Kavad I. Hunnic peoples, the Hephthalites and Alchon Huns, are battering Persia's east and breaking the Gupta Empire in India. China is still divided: the Northern Wei, Xianbei steppe rulers who have adopted Chinese ways, hold the north from their new capital Luoyang, while short-lived dynasties rule the south. In Mesoamerica, Teotihuacan is in its final century and the Maya city of Tikal and the Kaan (Snake) kingdom, later ruled from Calakmul, are locked in rivalry. Across the world most people still live as farmers in villages, and Christianity, Buddhism and Zoroastrianism are the great organized faiths.",
+  "regions": {
+   "southern-africa": "Bantu-speaking farming communities now stretch from the Great Lakes to the eastern coast of South Africa, making pottery, smelting iron and keeping cattle. Khoisan foragers and herders hold the Kalahari and the western Cape. Austronesian settlers from Borneo are beginning to settle Madagascar.",
+   "northern-africa": "The Vandal kingdom under Thrasamund rules the old Roman province of Africa from Carthage, while Berber kingdoms hold the Atlas and the Sahara's edge, and Egypt belongs to the Eastern Roman Empire. Christian Axum dominates the Horn and the Red Sea trade, and the Nubian kingdoms of Nobatia, Makuria and Alodia have formed on the Nile. In West Africa the kingdom of Ghana may already be taking shape, though its great trans-Saharan gold trade is not recorded until the 700s.",
+   "europe": "Germanic kingdoms have replaced Roman rule in the West: the Ostrogoths under Theodoric the Great (r. 493–526) rule Italy, the Franks under Clovis I hold northern Gaul, the Visigoths under Alaric II rule southern Gaul and Spain, and the Burgundians hold the Rhône valley. Anglo-Saxons are settling eastern Britain, where Britons may have won a victory at Badon around this time. The Eastern Roman Empire under Anastasius I (r. 491–518) holds the Balkans, though Slavs and Bulgars are starting to raid.",
+   "middle-east-south-asia": "The Eastern Roman Empire holds Anatolia, Syria and Egypt, and the Sasanian Empire under Kavad I rules Mesopotamia and Iran; war between them breaks out in 502. Himyar, ruled by Jewish kings, controls Yemen. In India the Gupta Empire is breaking up under attacks by the Alchon Huns led by Toramana, while the Vakatakas rule the Deccan (where the Ajanta caves were painted in the later 5th century) and the Pallavas rule the southeast from Kanchipuram.",
+   "north-central-asia": "The Hephthalites, often called the White Huns, rule a large empire from Bactria to Sogdiana and even force Persia to pay tribute. The Rouran Khaganate under Nagai (r. 492–506) dominates Mongolia and the eastern steppe, with the Turks still their subjects in the Altai. Siberian peoples live by hunting, fishing and herding.",
+   "east-asia": "The Northern Wei dynasty under Emperor Xuanwu (r. 499–515) rules northern China, having moved its capital to Luoyang in 494 and adopted Chinese customs; work on the Buddhist caves at Longmen has begun. The south is ruled by the Southern Qi, which will be replaced by the Liang dynasty in 502. Korea is divided among Goguryeo, Baekje and Silla, and Japan's Yamato state is consolidating power over much of Honshu.",
+   "southeast-asia": "Funan, under King Jayavarman Kaundinya, still controls trade in the Mekong delta and the Gulf of Thailand, though Chenla to its north is growing. The Cham kingdom rules central Vietnam, Mon peoples are forming Dvaravati in Thailand, and Indianized kingdoms such as Tarumanagara in western Java are appearing in the islands.",
+   "northern-north-america": "Dorset hunters occupy the eastern Arctic, and Birnirk and related cultures live along the Alaskan coast. Subarctic hunting peoples live in the forests, and the Pacific Northwest supports complex fishing societies with chiefs and nobles.",
+   "southern-north-america": "Teotihuacan is in its last century of greatness before the burning of its centre around 550. The Maya Classic period is in full swing, with Tikal and the rising Kaan (Snake) dynasty, then based at Dzibanche and later at Calakmul, competing for dominance, and the Zapotecs still rule from Monte Albán. Woodland peoples farm and build mounds in the eastern forests, and Basketmaker farmers live in the Southwest.",
+   "northern-south-america": "The Moche are at their peak on Peru's north coast, the Nazca continue in the south, and Tiwanaku is a major power around Lake Titicaca. The Wari culture is forming in the central highlands. Many farming peoples live along the Amazon and in the Caribbean lowlands of Colombia and Venezuela.",
+   "southern-cone": "Hunter-gatherers range across the pampas and Patagonia, and fishing and sea-mammal hunting peoples live in Tierra del Fuego. Farming villages in northwest Argentina, including the Aguada culture, and in northern Chile trade with Tiwanaku.",
+   "australasia": "Aboriginal Australians live in hundreds of societies across the continent. New Guinea farming and trading networks extend along the coasts, and Polynesians in Tonga and Samoa maintain island chiefdoms linked by canoe voyages."
+  },
+  "powers": [
+   {
+    "name": "Sasanian Persian Empire",
+    "map": "Sasanian Empire",
+    "ruler": "Kavad I",
+    "capital": "Ctesiphon",
+    "extent": "Mesopotamia, Iran, the Caucasus and parts of Central Asia"
+   },
+   {
+    "name": "Eastern Roman Empire",
+    "map": "Eastern Roman Empire",
+    "ruler": "Anastasius I",
+    "capital": "Constantinople",
+    "extent": "The Balkans, Anatolia, Syria and Egypt"
+   },
+   {
+    "name": "Northern Wei",
+    "map": "Toba Wei",
+    "ruler": "Emperor Xuanwu",
+    "capital": "Luoyang",
+    "extent": "Northern China from the steppe edge to the Huai River"
+   },
+   {
+    "name": "Southern Qi",
+    "map": "Jin Empire",
+    "ruler": "Xiao Baojuan",
+    "capital": "Jiankang (Nanjing)",
+    "extent": "Southern China"
+   },
+   {
+    "name": "Gupta Empire",
+    "map": "Gupta Empire",
+    "ruler": "Late Gupta kings",
+    "capital": "Pataliputra",
+    "extent": "The Ganges plain, shrinking under Hunnic attacks"
+   },
+   {
+    "name": "Ostrogothic Kingdom",
+    "map": "Ostrogoths",
+    "ruler": "Theodoric the Great",
+    "capital": "Ravenna",
+    "extent": "Italy, Sicily and the lands north of the Adriatic"
+   },
+   {
+    "name": "Visigothic Kingdom",
+    "map": "Visigoths",
+    "ruler": "Alaric II",
+    "capital": "Toulouse",
+    "extent": "Spain and southwestern Gaul"
+   },
+   {
+    "name": "Frankish Kingdom",
+    "map": "Franks",
+    "ruler": "Clovis I",
+    "capital": "Soissons, later Paris",
+    "extent": "Northern Gaul and the lower Rhine"
+   },
+   {
+    "name": "Rouran Khaganate",
+    "map": "Ruanruan",
+    "ruler": "Yujiulü Nagai",
+    "capital": "Mobile court in Mongolia",
+    "extent": "Mongolia and the eastern steppe"
+   },
+   {
+    "name": "Kingdom of Axum",
+    "map": "Axum",
+    "ruler": "Aksumite kings (Kaleb rises c. 510)",
+    "capital": "Axum",
+    "extent": "Ethiopia, Eritrea and influence across the Red Sea"
+   }
+  ],
+  "events": [
+   {
+    "year": 476,
+    "text": "Odoacer deposes Romulus Augustulus, last Western emperor"
+   },
+   {
+    "year": 486,
+    "text": "Clovis defeats the last Roman ruler in Gaul at Soissons"
+   },
+   {
+    "year": 493,
+    "text": "Theodoric takes Ravenna and rules Italy"
+   },
+   {
+    "year": 494,
+    "text": "Northern Wei moves its capital to Luoyang"
+   },
+   {
+    "year": 496,
+    "text": "Clovis converts to Catholic Christianity (c. 496)"
+   },
+   {
+    "year": 502,
+    "text": "Liang dynasty founded in southern China"
+   },
+   {
+    "year": 507,
+    "text": "Franks defeat the Visigoths at Vouillé"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia: Northern Wei",
+    "url": "https://en.wikipedia.org/wiki/Northern_Wei"
+   },
+   {
+    "title": "Wikipedia: Rouran Khaganate",
+    "url": "https://en.wikipedia.org/wiki/Rouran_Khaganate"
+   },
+   {
+    "title": "Wikipedia: Kavad I",
+    "url": "https://en.wikipedia.org/wiki/Kavad_I"
+   },
+   {
+    "title": "Wikipedia: Theodoric the Great",
+    "url": "https://en.wikipedia.org/wiki/Theodoric_the_Great"
+   },
+   {
+    "title": "Wikipedia: Calakmul",
+    "url": "https://en.wikipedia.org/wiki/Calakmul"
+   },
+   {
+    "title": "Wikipedia: Teotihuacan",
+    "url": "https://en.wikipedia.org/wiki/Teotihuacan"
+   },
+   {
+    "title": "UNESCO General History of Africa, vol. III: Africa from the Seventh to the Eleventh Century (ed. M. El Fasi & I. Hrbek, 1988)",
+    "url": "https://archive.org/details/general-history-of-africa-vol-3"
+   },
+   {
+    "title": "Martin & Velásquez García (2016), Polities and Places: Tracing the Toponyms of the Snake Dynasty, PARI Journal 17(2)",
+    "url": "https://www.mesoweb.com/pari/journal/archive/PARI1702.pdf"
+   },
+   {
+    "title": "Herrmann, Historical and Commercial Atlas of China (1935): The Southern Ch'i and the Northern Wei Dynasties, boundaries of 500 A.D.",
+    "url": "https://archive.org/details/kpbc.umk.pl.Kartografia_040_POWER_001_10_258359"
+   },
+   {
+    "title": "Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. III.D, The Gupta-Vakataka Age, c. A.D. 300-500",
+    "url": "https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/The_Gupta-Vakataka_Age_c._A.D._300-500.json&canvasID=0"
+   },
+   {
+    "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. III: The Classical Age (Internet Archive)",
+    "url": "https://archive.org/details/classicalage03bhar"
+   }
+  ]
+ },
+ {
+  "year": 600,
+  "title": "Sui China Reunited",
+  "age": "Early Middle Ages",
+  "overview": "Around 600 CE the world is dominated by a handful of great empires. China has just been reunited after nearly three centuries of division by the Sui dynasty, whose founder Emperor Wen governs from a vast new capital at Chang'an and is building canals and granaries. On the steppe, the Göktürks have created a huge Turkic empire stretching from Manchuria to the Black Sea, though it is splitting into eastern and western halves. The Eastern Roman Empire under Maurice and Sasanian Persia under Khosrow II are briefly at peace, but both are about to enter a devastating war. In Arabia, a merchant of Mecca named Muhammad is about thirty years old; within a decade he will begin preaching Islam. In Western Europe, Frankish and Visigothic kingdoms and Pope Gregory the Great shape a Christian world. In India, regional kingdoms like the Chalukyas and Pallavas have replaced the Guptas, and in the Andes the Wari and Tiwanaku states are expanding.",
+  "regions": {
+   "southern-africa": "Bantu-speaking farmers live across central, eastern and southern Africa, with chiefdoms growing in the Zambezi and Limpopo valleys. Khoisan herders and foragers live in the dry southwest. Madagascar is being settled by Austronesian people from Borneo, who will later mix with Bantu-speaking Africans.",
+   "northern-africa": "The Eastern Romans hold Egypt and the coast of Tunisia and Libya, reconquered from the Vandals in 533–534, while Berber kingdoms hold the interior of the Maghreb. The Christian Nubian kingdoms of Nobatia, Makuria and Alodia rule the middle Nile, and Axum, though declining, still dominates the Ethiopian highlands. In West Africa the kingdom of Ghana is probably emerging, though written records of its gold trade begin only in the 700s.",
+   "europe": "The Frankish kingdom is divided among Merovingian kings, Theudebert II in Austrasia, Theuderic II in Burgundy and Chlothar II in Neustria, with Queen Brunhild a powerful force. The Visigoths, now Catholic, rule Spain from Toledo, the Lombards under Agilulf hold much of Italy, and Pope Gregory the Great (590–604) has sent missionaries to the Anglo-Saxon kingdom of Kent. The Avars under their khagan Bayan rule the Danube plain, with Slavs pouring into the Balkans.",
+   "middle-east-south-asia": "The Eastern Roman Empire holds Anatolia, Syria and Palestine, while the Sasanians under Khosrow II (r. 590–628), restored to his throne with Roman help, rule Mesopotamia, Iran and Yemen. In the Hejaz, Mecca is a trading town of the Quraysh tribe where Muhammad lives. In India, Harsha will soon build an empire from Kanauj (606), while the Chalukyas under Mangalesha rule the western Deccan, the Pallavas rule the southeast from Kanchipuram, and Shashanka rules Bengal.",
+   "north-central-asia": "The Göktürk Khaganate, founded in 552, has split into eastern and western halves: the Western khagan Tardu rules from Transoxiana to the Caspian, controlling the Silk Road cities of Sogdiana. The Khazars and other Turkic peoples are rising north of the Caucasus. Siberia is home to forest hunters and reindeer herders.",
+   "east-asia": "Emperor Wen of Sui (r. 581–604) rules a reunified China from Daxing (Chang'an); his son Yang will build the Grand Canal and launch disastrous wars on Korea. The Eastern Turks under Yami Qaghan are Sui clients. In Korea, Goguryeo under King Yeongyang resists Chinese attacks, while Baekje and Silla compete in the south, and in Japan Empress Suiko and Prince Shotoku are importing Buddhism and Chinese-style government. In Tibet, Namri Songtsen is unifying the Yarlung valley chiefs.",
+   "southeast-asia": "Chenla, a Khmer kingdom, has overtaken Funan and controls much of Cambodia. The Mon kingdoms of Dvaravati rule central Thailand, the Pyu city-states rule central Burma, and Champa rules central Vietnam. In the islands, trading kingdoms in Sumatra and Java are preparing the ground for Srivijaya.",
+   "northern-north-america": "The Arctic is occupied by Dorset Paleo-Inuit hunters in the east and Birnirk whaling peoples in Alaska. Subarctic hunters live in the boreal forest, and the Pacific Northwest supports wealthy fishing societies.",
+   "southern-north-america": "Teotihuacan's centre has been burned and the city is in decline, leaving a power vacuum in central Mexico. The Maya cities are at the height of the Classic period, with the Snake (Kaan) dynasty, soon to rule from Calakmul, dominating rival Tikal and Palenque rising. In the American Southwest, Basketmaker farmers and Hohokam canal-builders flourish, and Late Woodland peoples farm the eastern woodlands.",
+   "northern-south-america": "Two great Andean states are expanding: Wari in the central highlands of Peru, building roads and administrative centres, and Tiwanaku around Lake Titicaca. The Moche of the north coast are in their final phase after severe climate disasters. Amazonian peoples, including the Marajoara, live in large settlements along the rivers.",
+   "southern-cone": "Hunting and gathering peoples range over the pampas and Patagonia, and canoe peoples live in Tierra del Fuego. In northwest Argentina the Aguada culture and in northern Chile oasis communities such as San Pedro de Atacama trade with Tiwanaku.",
+   "australasia": "Aboriginal Australians live across the continent, and New Guinea is home to hundreds of farming societies. Polynesians remain in western Polynesia, while the islands of eastern Polynesia, Hawaii, Rapa Nui and New Zealand are still unsettled."
+  },
+  "powers": [
+   {
+    "name": "Sui Dynasty",
+    "map": "Sui Empire",
+    "ruler": "Emperor Wen",
+    "capital": "Daxing (Chang'an)",
+    "extent": "All of China from the Great Wall to Vietnam"
+   },
+   {
+    "name": "Göktürk Khaganate",
+    "map": "Göktürks",
+    "ruler": "Tardu (Western khagan) and Yami Qaghan (Eastern, a Sui client)",
+    "capital": "Mobile courts in Mongolia and the Tian Shan",
+    "extent": "The steppes from Manchuria to the Caspian"
+   },
+   {
+    "name": "Sasanian Persian Empire",
+    "map": "Sasanian Empire",
+    "ruler": "Khosrow II",
+    "capital": "Ctesiphon",
+    "extent": "Mesopotamia, Iran, the Caucasus and Yemen"
+   },
+   {
+    "name": "Eastern Roman Empire",
+    "map": "Eastern Roman Empire",
+    "ruler": "Maurice",
+    "capital": "Constantinople",
+    "extent": "The Balkans, Anatolia, Syria, Egypt, North Africa and parts of Italy and Spain"
+   },
+   {
+    "name": "Frankish Kingdom",
+    "map": "Frankish Kingdom",
+    "ruler": "Merovingian kings Chlothar II, Theudebert II and Theuderic II",
+    "capital": "Paris, Metz and Orléans",
+    "extent": "Gaul and western Germany"
+   },
+   {
+    "name": "Visigothic Kingdom",
+    "map": "Visigothic Kingdom",
+    "ruler": "Reccared I",
+    "capital": "Toledo",
+    "extent": "The Iberian Peninsula and Septimania"
+   },
+   {
+    "name": "Avar Khaganate",
+    "map": "Avars",
+    "ruler": "Bayan I",
+    "capital": "Pannonian plain",
+    "extent": "The Danube basin, ruling over Slavic peoples"
+   },
+   {
+    "name": "Chalukya Dynasty",
+    "map": "Chalukyas",
+    "ruler": "Mangalesha",
+    "capital": "Vatapi (Badami)",
+    "extent": "The western Deccan"
+   },
+   {
+    "name": "Goguryeo",
+    "map": "Koguryo",
+    "ruler": "King Yeongyang",
+    "capital": "Pyongyang",
+    "extent": "Northern Korea and southern Manchuria"
+   }
+  ],
+  "events": [
+   {
+    "year": 568,
+    "text": "Lombards invade Italy"
+   },
+   {
+    "year": 570,
+    "text": "Muhammad born in Mecca (c. 570)"
+   },
+   {
+    "year": 581,
+    "text": "Sui dynasty founded"
+   },
+   {
+    "year": 589,
+    "text": "Sui conquers the Chen and reunites China"
+   },
+   {
+    "year": 591,
+    "text": "Khosrow II regains the Persian throne with Roman help"
+   },
+   {
+    "year": 597,
+    "text": "Augustine's mission reaches Kent"
+   },
+   {
+    "year": 602,
+    "text": "Emperor Maurice murdered; Roman-Persian war follows"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia: Emperor Wen of Sui",
+    "url": "https://en.wikipedia.org/wiki/Emperor_Wen_of_Sui"
+   },
+   {
+    "title": "Wikipedia: Mangalesha",
+    "url": "https://en.wikipedia.org/wiki/Mangalesha"
+   },
+   {
+    "title": "Wikipedia: Calakmul",
+    "url": "https://en.wikipedia.org/wiki/Calakmul"
+   },
+   {
+    "title": "UNESCO General History of Africa, vol. III: Africa from the Seventh to the Eleventh Century (ed. M. El Fasi & I. Hrbek, 1988)",
+    "url": "https://archive.org/details/general-history-of-africa-vol-3"
+   },
+   {
+    "title": "Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. III.D, The age of Pusyabhuti and Calukyan ascendancy, c. A.D. 550-700",
+    "url": "https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/The_age_of_Pusyabhuti_and_Calukyan_ascendancy_c._A.D._550-700.json&canvasID=0"
+   },
+   {
+    "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. III: The Classical Age (Internet Archive)",
+    "url": "https://archive.org/details/classicalage03bhar"
+   }
+  ]
+ },
+ {
+  "year": 700,
+  "title": "The Caliphate Expands",
+  "age": "Early Middle Ages",
+  "overview": "In 700 CE the map of western Eurasia has been transformed by the rise of Islam. Within seventy years of the Prophet Muhammad's death, Arab armies have destroyed the Sasanian Empire and taken Syria, Egypt and North Africa from the Byzantines. The Umayyad caliph Abd al-Malik rules from Damascus, has built the Dome of the Rock in Jerusalem, and has made Arabic the language of government; his armies have just captured Carthage and will soon cross into Spain and Central Asia. The Byzantine Empire, reduced to Anatolia, the Balkan coasts and southern Italy, has survived an Arab siege of Constantinople. In China the remarkable Wu Zetian, the only woman to rule China as emperor in her own name, governs at the height of Tang power, while a new Tibetan Empire contests Central Asia. In Europe, Frankish mayors of the palace hold the real power, and in the Americas the Maya city of Tikal has just defeated its great rival Calakmul.",
+  "regions": {
+   "southern-africa": "Bantu-speaking farmers occupy most of eastern and southern Africa, with growing cattle-based chiefdoms in the Limpopo and Zambezi regions. Khoisan foragers and herders hold the Kalahari and the Cape. Madagascar is being settled by Austronesian and African peoples.",
+   "northern-africa": "Umayyad armies have conquered Egypt and Libya and captured Carthage in 698, though Berber resistance led by the queen Dihya (al-Kahina) is only now being crushed. The Christian kingdom of Makuria, which defeated Arab invaders and agreed the Baqt treaty in 652, rules Nubia alongside Alodia, while Axum is declining in the Ethiopian highlands. Ghana is the great gold-trading kingdom of West Africa.",
+   "europe": "The Frankish kingdom is nominally ruled by Merovingian kings such as Childebert III, but real power lies with Pepin of Herstal, mayor of the palace. The Visigothic kingdom of Spain, under Egica and his son Wittiza, will fall to Arab and Berber invaders in 711. The Lombards rule much of Italy, the Bulgars, now led by Tervel (r. c. 700–721), hold the state south of the Danube founded by his father Asparukh in 681, the Khazars dominate the Pontic steppe, and Anglo-Saxon kingdoms such as Mercia and Northumbria flourish in England.",
+   "middle-east-south-asia": "The Umayyad Caliphate under Abd al-Malik (r. 685–705) rules Arabia, the Levant, Iraq and Iran from Damascus, with the governor al-Hajjaj controlling the east. The Byzantine Empire holds Anatolia. In India, the Chalukyas of Badami under Vijayaditya rule the Deccan, the Pallavas under Narasimhavarman II build temples at Kanchipuram and Mamallapuram, and Raja Dahir rules Sind, which the Arabs will conquer in 711–712.",
+   "north-central-asia": "The Second Turkic Khaganate, revived in 682, dominates Mongolia under Qapaghan Khagan, while the Türgesh lead the western Turks. Arab armies in Khorasan are preparing to invade Transoxiana, which they will conquer under Qutayba ibn Muslim from 705. The Khazars rule the lower Volga steppe, and Siberia is home to hunting and herding peoples.",
+   "east-asia": "Wu Zetian (r. 690–705) rules China as emperor of her own Zhou dynasty, interrupting the Tang, from Luoyang; Chinese power reaches deep into Central Asia. The Tibetan Empire under Tridu Songtsen contests the Tarim Basin with China. Silla has unified most of Korea (668–676), while in the north Dae Joyeong has just founded Balhae (698), and Japan, under Emperor Monmu, is about to issue the Taiho Code (701) creating a Chinese-style state.",
+   "southeast-asia": "Srivijaya, based at Palembang in Sumatra, is emerging as the master of the Strait of Malacca trade after its expansion in the 680s. Chenla rules the Khmer lands but is splitting into rival halves, while Dvaravati, the Pyu city-states and Champa rule their regions, and northern Vietnam is the Tang Protectorate of Annam.",
+   "northern-north-america": "Dorset Paleo-Inuit hunters live across the eastern Arctic, and Birnirk whaling cultures, ancestors of the Thule, live along the Bering Strait. Subarctic hunting peoples occupy the boreal forest, and Pacific Northwest peoples live in wealthy cedar-plank villages.",
+   "southern-north-america": "In 695 Tikal, under Jasaw Chan K'awiil I, defeated Calakmul, and Maya cities such as Palenque, Copán and Tikal are at their artistic height. Teotihuacan is largely abandoned, and new centres such as Xochicalco and Cacaxtla are rising in central Mexico. Hohokam canal builders and Ancestral Puebloan farmers live in the Southwest, and Late Woodland peoples farm the east.",
+   "northern-south-america": "The Wari Empire rules much of highland and coastal Peru from its capital near Ayacucho, connected by roads and administrative centres. Tiwanaku dominates the Lake Titicaca basin, and the Moche have broken into smaller states. Peoples of the Amazon live in large villages, some surrounded by earthworks.",
+   "southern-cone": "The Southern Cone is home to hunter-gatherers on the pampas and in Patagonia, and canoe peoples in the far south. Farming villages in northwest Argentina and oasis towns in northern Chile are linked by llama caravans to Tiwanaku.",
+   "australasia": "Aboriginal Australians live across the continent in diverse societies. New Guinea farming peoples trade along the coasts, and Polynesians in Tonga and Samoa are on the eve of voyages that will settle eastern Polynesia."
+  },
+  "powers": [
+   {
+    "name": "Umayyad Caliphate",
+    "map": "Umayyad Caliphate",
+    "ruler": "Abd al-Malik",
+    "capital": "Damascus",
+    "extent": "From Tunisia across Egypt, Arabia and Iraq to Iran and Khorasan"
+   },
+   {
+    "name": "Tang (Wu Zhou) China",
+    "map": "Sui Empire",
+    "ruler": "Wu Zetian",
+    "capital": "Luoyang",
+    "extent": "China, with protectorates over the Tarim Basin and Annam"
+   },
+   {
+    "name": "Tibetan Empire",
+    "map": "Tufan Empire",
+    "ruler": "Tridu Songtsen",
+    "capital": "Lhasa region (Yarlung)",
+    "extent": "The Tibetan plateau and parts of the Tarim Basin"
+   },
+   {
+    "name": "Second Turkic Khaganate",
+    "map": "Göktürks",
+    "ruler": "Qapaghan Khagan",
+    "capital": "Ötüken (Orkhon valley)",
+    "extent": "Mongolia and the eastern steppe"
+   },
+   {
+    "name": "Byzantine Empire",
+    "map": "Eastern Roman Empire",
+    "ruler": "Tiberius III",
+    "capital": "Constantinople",
+    "extent": "Anatolia, Balkan coasts, Sicily, southern Italy and the Exarchate of Ravenna"
+   },
+   {
+    "name": "Khazar Khaganate",
+    "map": "Khazars",
+    "ruler": "Busir (c.)",
+    "capital": "Balanjar, later Atil",
+    "extent": "The lower Volga, North Caucasus and Pontic steppe"
+   },
+   {
+    "name": "Frankish Kingdom",
+    "map": "Frankish Kingdom",
+    "ruler": "Childebert III (real power with Pepin of Herstal)",
+    "capital": "Paris and Metz",
+    "extent": "Gaul and western Germany"
+   },
+   {
+    "name": "Chalukyas of Badami",
+    "map": "Chalukyas",
+    "ruler": "Vijayaditya",
+    "capital": "Vatapi (Badami)",
+    "extent": "The Deccan plateau"
+   },
+   {
+    "name": "Unified Silla",
+    "map": "Silla",
+    "ruler": "King Hyoso",
+    "capital": "Gyeongju",
+    "extent": "Most of the Korean peninsula"
+   }
+  ],
+  "events": [
+   {
+    "year": 622,
+    "text": "Muhammad's migration to Medina (the Hijra)"
+   },
+   {
+    "year": 651,
+    "text": "Last Sasanian king dies; Persia falls to the Arabs"
+   },
+   {
+    "year": 661,
+    "text": "Umayyad Caliphate founded"
+   },
+   {
+    "year": 674,
+    "text": "Arabs begin a long siege of Constantinople (674–678)"
+   },
+   {
+    "year": 690,
+    "text": "Wu Zetian proclaims herself emperor"
+   },
+   {
+    "year": 691,
+    "text": "Dome of the Rock completed in Jerusalem"
+   },
+   {
+    "year": 698,
+    "text": "Arabs capture Carthage; Balhae founded in Manchuria"
+   },
+   {
+    "year": 711,
+    "text": "Arab and Berber armies invade Spain"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia: Abd al-Malik ibn Marwan",
+    "url": "https://en.wikipedia.org/wiki/Abd_al-Malik_ibn_Marwan"
+   },
+   {
+    "title": "Wikipedia: Wu Zetian",
+    "url": "https://en.wikipedia.org/wiki/Wu_Zetian"
+   },
+   {
+    "title": "Wikipedia: Tervel of Bulgaria",
+    "url": "https://en.wikipedia.org/wiki/Tervel_of_Bulgaria"
+   },
+   {
+    "title": "Wikipedia: Tridu Songtsen",
+    "url": "https://en.wikipedia.org/wiki/Tridu_Songtsen"
+   },
+   {
+    "title": "Wikipedia: Busir",
+    "url": "https://en.wikipedia.org/wiki/Busir"
+   },
+   {
+    "title": "Wikipedia: Calakmul",
+    "url": "https://en.wikipedia.org/wiki/Calakmul"
+   },
+   {
+    "title": "Wikipedia: Exarchate of Ravenna",
+    "url": "https://en.wikipedia.org/wiki/Exarchate_of_Ravenna"
+   },
+   {
+    "title": "Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. III.D, The age of Pusyabhuti and Calukyan ascendancy, c. A.D. 550-700",
+    "url": "https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/The_age_of_Pusyabhuti_and_Calukyan_ascendancy_c._A.D._550-700.json&canvasID=0"
+   }
+  ]
+ },
+ {
+  "year": 800,
+  "title": "Charlemagne Crowned",
+  "age": "Early Middle Ages",
+  "overview": "On Christmas Day 800, Pope Leo III crowns the Frankish king Charlemagne emperor of the Romans in St Peter's in Rome, reviving the imperial title in the West for the first time in over three centuries. Charlemagne's empire stretches from the Pyrenees to the Elbe and into Italy. Yet the greatest power of the age is the Abbasid Caliphate, ruled by Harun al-Rashid from Baghdad, a city of perhaps half a million people and a centre of trade, translation and science. In Constantinople, Empress Irene rules the Byzantine Empire as sole sovereign. Tang China is recovering from the catastrophic An Lushan Rebellion, while the Tibetan Empire and the Uyghur Khaganate dominate Central Asia. In India, the Rashtrakutas, Palas and Pratiharas fight for control of the north. Vikings have begun raiding the coasts of Britain, and on Java the Sailendra kings are building Borobudur. In the Americas, the Maya cities are nearing their collapse.",
+  "regions": {
+   "southern-africa": "Bantu-speaking farmers live across eastern and southern Africa, and cattle-keeping chiefdoms are growing in the Limpopo valley, forerunners of Mapungubwe. Swahili trading villages are appearing along the East African coast. Madagascar is home to Malagasy communities of Austronesian and African descent, and Khoisan peoples still occupy the far southwest.",
+   "northern-africa": "Egypt is an Abbasid province, and in 800 Ibrahim ibn al-Aghlab founds the Aghlabid dynasty in Ifriqiya (Tunisia), ruling for the caliph; the Idrisids rule northern Morocco from Walila (Volubilis), where the boy Idris II is guided by regents. Christian Makuria and Alodia rule Nubia. In West Africa, Ghana is the great gold empire of the Soninke, and Kanem is forming near Lake Chad.",
+   "europe": "Charlemagne (king 768–814, emperor from 800) rules the Carolingian Empire from Aachen, having conquered the Saxons, the Lombards and the Avars. The Byzantine Empire is ruled by Empress Irene (r. 797–802) from Constantinople, while al-Hakam I rules the Emirate of Córdoba in Spain and the small Christian kingdom of Asturias holds out in the north. Offa's successor Coenwulf rules Mercia in England, Viking raids have begun since Lindisfarne in 793, and the Khazars and Bulgars dominate the east.",
+   "middle-east-south-asia": "The Abbasid Caliphate under Harun al-Rashid (r. 786–809) rules from Baghdad over Iraq, Iran, Arabia, Syria and Egypt. The Byzantines hold Anatolia, frequently raided by Abbasid armies. In India three powers struggle for the Ganges plain: the Rashtrakutas under Govinda III in the Deccan, the Palas under Dharmapala in Bengal and Bihar, and the Gurjara-Pratiharas under Nagabhata II in the west.",
+   "north-central-asia": "The Uyghur Khaganate, under Huaixin Khagan, rules Mongolia from its capital Ordu-Baliq and is an ally and creditor of Tang China. The Abbasids hold Transoxiana and its Silk Road cities of Bukhara and Samarkand, the Karluks rule the Tian Shan, and the Khazars and Volga Bulgars control the western steppe.",
+   "east-asia": "Tang China, under Emperor Dezong (r. 779–805), rules from Chang'an but has lost much power to regional military governors since the An Lushan Rebellion (755–763). The Tibetan Empire, whose throne passes to the boy king Tride Songtsen around this time, holds the Tarim Basin and Gansu. Silla rules Korea, Balhae rules Manchuria, and in Japan Emperor Kanmu has just moved the capital to Heian-kyō (Kyoto) in 794, beginning the Heian period.",
+   "southeast-asia": "Srivijaya controls the Strait of Malacca from Sumatra, and the Sailendra dynasty of central Java is building Borobudur, the world's largest Buddhist monument. In Cambodia, Jayavarman II will proclaim himself universal monarch in 802, founding the Khmer Empire. Champa, the Pyu, the Mon and the Nanzhao kingdom (in Yunnan) round out the region.",
+   "northern-north-america": "Dorset hunters occupy the eastern Arctic, while in Alaska whaling cultures are developing into the Thule, who will later spread east across the Arctic. Athabaskan, Algonquian and Beothuk peoples hunt in the subarctic forests, and Pacific Northwest peoples build plank houses and carve monumental art.",
+   "southern-north-america": "The Maya cities of the southern lowlands are at the end of their Classic peak; within a century most will be abandoned. Central Mexico is divided among cities like Xochicalco and Cacaxtla, and the Toltecs are beginning to rise. Ancestral Puebloans and the Mogollon and Hohokam peoples farm the Southwest, and in the Mississippi valley maize farming is spreading, setting the stage for Mississippian chiefdoms.",
+   "northern-south-america": "The Wari Empire dominates highland and coastal Peru, while Tiwanaku rules the Lake Titicaca basin. Tupi-speaking peoples are expanding along the Brazilian coast and the Amazon, and the Marajoara culture builds mounds at the mouth of the Amazon.",
+   "southern-cone": "Hunter-gatherers occupy the pampas and Patagonia, and canoe peoples live in the far south. Tiwanaku influence reaches oasis communities in northern Chile, such as San Pedro de Atacama, and farming peoples live in northwest Argentina and central Chile.",
+   "australasia": "Aboriginal Australians live in diverse societies across the continent. Papuan and Austronesian peoples farm and trade in New Guinea, and Polynesians in Tonga and Samoa are poised to settle eastern Polynesia, the start of the last great human migration."
+  },
+  "powers": [
+   {
+    "name": "Abbasid Caliphate",
+    "map": "Abbasid Caliphate",
+    "ruler": "Harun al-Rashid",
+    "capital": "Baghdad",
+    "extent": "From Tunisia to Central Asia"
+   },
+   {
+    "name": "Tang Dynasty",
+    "map": "Tang Empire",
+    "ruler": "Emperor Dezong",
+    "capital": "Chang'an",
+    "extent": "China proper, with much power held by regional governors"
+   },
+   {
+    "name": "Tibetan Empire",
+    "map": "Tibetan Empire",
+    "ruler": "Tride Songtsen (accession c. 800–804, dates uncertain)",
+    "capital": "Lhasa",
+    "extent": "The Tibetan plateau, the Tarim Basin and Gansu"
+   },
+   {
+    "name": "Carolingian Empire",
+    "map": "Carolingian Empire",
+    "ruler": "Charlemagne",
+    "capital": "Aachen",
+    "extent": "France, Germany, the Low Countries, northern Italy and Catalonia"
+   },
+   {
+    "name": "Byzantine Empire",
+    "map": "Byzantine Empire",
+    "ruler": "Empress Irene",
+    "capital": "Constantinople",
+    "extent": "Anatolia, Greece, Balkan coasts, Sicily and southern Italy"
+   },
+   {
+    "name": "Uyghur Khaganate",
+    "map": "Uyghurs",
+    "ruler": "Huaixin Khagan",
+    "capital": "Ordu-Baliq",
+    "extent": "Mongolia and the eastern steppe"
+   },
+   {
+    "name": "Khazar Khaganate",
+    "map": "Khazars",
+    "ruler": "Khazar khagan and bek (names uncertain)",
+    "capital": "Atil",
+    "extent": "The Volga, the North Caucasus and the Pontic steppe"
+   },
+   {
+    "name": "Rashtrakuta Dynasty",
+    "map": "Rashtrakuta state",
+    "ruler": "Govinda III",
+    "capital": "Mayurkhandi, later Manyakheta",
+    "extent": "The Deccan, with raids deep into northern India"
+   },
+   {
+    "name": "Emirate of Córdoba",
+    "map": "Emirate of Córdoba",
+    "ruler": "al-Hakam I",
+    "capital": "Córdoba",
+    "extent": "Most of the Iberian Peninsula"
+   },
+   {
+    "name": "Srivijaya",
+    "map": "Srivijaya Empire",
+    "ruler": "Srivijayan maharajas, allied with Java's Sailendras",
+    "capital": "Palembang",
+    "extent": "Sumatra, the Malay Peninsula and the Strait of Malacca"
+   }
+  ],
+  "events": [
+   {
+    "year": 750,
+    "text": "Abbasids overthrow the Umayyads"
+   },
+   {
+    "year": 751,
+    "text": "Battle of Talas between Abbasids and Tang"
+   },
+   {
+    "year": 755,
+    "text": "An Lushan Rebellion devastates Tang China"
+   },
+   {
+    "year": 762,
+    "text": "Baghdad founded as the Abbasid capital"
+   },
+   {
+    "year": 793,
+    "text": "Vikings raid Lindisfarne"
+   },
+   {
+    "year": 794,
+    "text": "Japan's capital moves to Heian-kyō (Kyoto)"
+   },
+   {
+    "year": 800,
+    "text": "Charlemagne crowned emperor in Rome"
+   },
+   {
+    "year": 802,
+    "text": "Jayavarman II founds the Khmer Empire"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia: Irene of Athens",
+    "url": "https://en.wikipedia.org/wiki/Irene_of_Athens"
+   },
+   {
+    "title": "Wikipedia: Aghlabids",
+    "url": "https://en.wikipedia.org/wiki/Aghlabids"
+   },
+   {
+    "title": "Wikipedia: Fez, Morocco",
+    "url": "https://en.wikipedia.org/wiki/Fez,_Morocco"
+   },
+   {
+    "title": "Wikipedia: Nagabhata II",
+    "url": "https://en.wikipedia.org/wiki/Nagabhata_II"
+   },
+   {
+    "title": "Wikipedia: Uyghur Khaganate",
+    "url": "https://en.wikipedia.org/wiki/Uyghur_Khaganate"
+   },
+   {
+    "title": "Wikipedia: Sadnalegs",
+    "url": "https://en.wikipedia.org/wiki/Sadnalegs"
+   },
+   {
+    "title": "UNESCO General History of Africa, vol. III: Africa from the Seventh to the Eleventh Century (ed. M. El Fasi & I. Hrbek, 1988)",
+    "url": "https://archive.org/details/general-history-of-africa-vol-3"
+   },
+   {
+    "title": "Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. IV.1, The age of the Gurjara-Pratiharas, Palas, and Rastrakutas, c. A.D. 700-975",
+    "url": "https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/The_age_of_the_Gurjara-Pratiharas_Palas_and_Rastrakutas_c._A.D._700-975.json&canvasID=0"
+   },
+   {
+    "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. IV: The Age of Imperial Kanauj (Internet Archive)",
+    "url": "https://archive.org/details/ageofimperialkan04bhar"
+   }
+  ]
+ },
+ {
+  "year": 900,
+  "title": "Empires Breaking Apart",
+  "age": "Early Middle Ages",
+  "overview": "Around 900 CE the great empires of the previous century are fragmenting. The Abbasid caliph still reigns in Baghdad, but real power in the Islamic world is passing to regional dynasties: the Samanids of Bukhara, who in 900 defeat the Saffarids, the Tulunids in Egypt, and the Aghlabids in Tunisia, whose lands the Fatimids will soon seize. Tang China is in its death throes and will fall in 907. Charlemagne's empire has split into East and West Francia, both under attack from Vikings, Magyars and Arab raiders. In the east, a new state, Kyivan Rus, has formed under the Viking-descended prince Oleg, and the Magyars are moving into the Hungarian plain. The Byzantine Empire under Leo VI is stable, and Bulgaria under Simeon I is its greatest rival. In Southeast Asia, Khmer kings are building Angkor. In Mesoamerica the Classic Maya cities of the south have been abandoned, while Chichen Itza rises in Yucatán.",
+  "regions": {
+   "southern-africa": "Bantu-speaking farmers occupy most of southern and eastern Africa, and chiefdoms in the Limpopo valley grow rich trading ivory and gold to the coast. Swahili trading towns are developing along the East African shore. Madagascar has Malagasy farming communities, and Khoisan peoples live in the west and south.",
+   "northern-africa": "Egypt is ruled by the Tulunid dynasty, nominally under the Abbasids, who will reclaim it in 905. The Aghlabids rule Tunisia and Sicily, but will be overthrown by the Shi'a Fatimids in 909, while the Idrisid state in Morocco is fragmenting among Berber groups. Christian Makuria and Alodia rule Nubia, Ghana dominates the West African gold trade, Kanem grows near Lake Chad, and the bronze-casters of Igbo-Ukwu flourish in south-eastern Nigeria, east of the lower Niger.",
+   "europe": "The Carolingian Empire is divided: Louis the Child rules East Francia and Charles the Simple West Francia, while Vikings settle in England's Danelaw and raid France. Alfred the Great of Wessex died in 899, and his son Edward the Elder is reclaiming England. Oleg rules Kyivan Rus, Simeon I rules a powerful Bulgaria, the Magyars under Árpád are conquering the Carpathian basin and destroying Great Moravia, Leo VI the Wise rules Byzantium, and the Umayyad emir Abd Allah rules a troubled Córdoba.",
+   "middle-east-south-asia": "The Abbasid caliph al-Mu'tadid (r. 892–902) has restored some authority in Baghdad, but Iran is divided between the Samanids and the Saffarids, whose ruler Amr ibn al-Layth is captured by the Samanids in 900. The Byzantines hold Anatolia. In India, the Pratiharas under Mahendrapala I rule the Ganges plain from Kanauj, the Rashtrakutas under Krishna II rule the Deccan, the Palas hold Bengal, the Hindu Shahis rule Kabul and the Punjab, and the Cholas under Aditya I are rising in the Tamil south.",
+   "north-central-asia": "The Samanid Empire under Ismail ibn Ahmad rules Transoxiana and Khorasan from Bukhara, a brilliant Persian Muslim court. The Oghuz Turks roam the Aral steppe, the Karluks hold the Tian Shan, and the Pechenegs, Khazars and Volga Bulgars control the western steppe. The Uyghur Khaganate was destroyed by the Kyrgyz in 840, and Uyghurs now rule oasis kingdoms in Turfan and Gansu.",
+   "east-asia": "The Tang dynasty, under Emperor Zhaozong (r. 888–904), has been wrecked by the Huang Chao rebellion and will end in 907, opening the era of the Five Dynasties and Ten Kingdoms. The Tibetan Empire collapsed in the 840s, and Tibet is fragmented. In Korea, Silla is splitting into the Later Three Kingdoms as Gyeon Hwon proclaims Later Baekje in 900; Balhae still rules Manchuria, the Khitans under Abaoji are rising in the north, and Japan is ruled by Emperor Daigo, who governs without a Fujiwara regent though Fujiwara no Tokihira leads his court.",
+   "southeast-asia": "The Khmer Empire under Yasovarman I (r. from 889) builds a new capital, Yasodharapura, at Angkor. Srivijaya dominates the Strait of Malacca, and the Mataram kingdom of Java has recently built the great Hindu temple of Prambanan. The Burmese kingdom of Pagan is emerging, and Champa rules central Vietnam.",
+   "northern-north-america": "Dorset Paleo-Inuit still hunt in the eastern Arctic, and the Thule culture is forming in Alaska. Between about 870 and 930 Norse settlers colonize Iceland, the gateway to Greenland and North America. Athabaskan, Algonquian and Beothuk peoples hunt in the subarctic forests.",
+   "southern-north-america": "The Classic Maya cities of the southern lowlands have collapsed, with the last dated monuments erected around 909, while Chichen Itza rises in northern Yucatán. In central Mexico, the Toltecs are building their capital at Tula. In the Southwest, Ancestral Puebloans are building the great houses of Chaco Canyon, and early Mississippian farming chiefdoms are forming along the Mississippi.",
+   "northern-south-america": "The Wari Empire is in decline in Peru, and Tiwanaku still dominates the Titicaca basin. The Sicán (Lambayeque) culture is rising on Peru's north coast, Tupi peoples are expanding along the Brazilian coast, and the Muisca and other chiefdoms live in the Colombian highlands.",
+   "southern-cone": "Hunter-gatherers occupy the pampas and Patagonia, and canoe peoples live in Tierra del Fuego. Farming peoples in northwest Argentina and northern Chile trade with Tiwanaku, and Guarani-speaking farmers are expanding into Paraguay and southern Brazil.",
+   "australasia": "Aboriginal Australians live across the continent. In the Pacific, Polynesians in Samoa and Tonga will, within the next century or two, sail east to settle the Cook, Society and Marquesas Islands, the heart of eastern Polynesia."
+  },
+  "powers": [
+   {
+    "name": "Abbasid Caliphate",
+    "map": "Abbasid Caliphate",
+    "ruler": "al-Mu'tadid",
+    "capital": "Baghdad",
+    "extent": "Iraq, western Iran, Syria and Arabia; Egypt nominally"
+   },
+   {
+    "name": "Tang Dynasty",
+    "map": "Tang Empire",
+    "ruler": "Emperor Zhaozong",
+    "capital": "Chang'an",
+    "extent": "China, though controlled by warlords"
+   },
+   {
+    "name": "Samanid Empire",
+    "map": "Samanid Empire",
+    "ruler": "Ismail ibn Ahmad",
+    "capital": "Bukhara",
+    "extent": "Transoxiana, Khorasan and eastern Iran"
+   },
+   {
+    "name": "Byzantine Empire",
+    "map": "Byzantine Empire",
+    "ruler": "Leo VI the Wise",
+    "capital": "Constantinople",
+    "extent": "Anatolia, Greece and southern Italy"
+   },
+   {
+    "name": "Kyivan Rus",
+    "map": "Kyivan Rus",
+    "ruler": "Oleg",
+    "capital": "Kyiv",
+    "extent": "The river routes from Novgorod to Kyiv"
+   },
+   {
+    "name": "First Bulgarian Empire",
+    "map": "Bulgars",
+    "ruler": "Simeon I",
+    "capital": "Preslav",
+    "extent": "The eastern Balkans from the Danube to Macedonia"
+   },
+   {
+    "name": "East Francia",
+    "map": "East Francia",
+    "ruler": "Louis the Child",
+    "capital": "Regensburg and Frankfurt",
+    "extent": "Germany from the Rhine to the Elbe"
+   },
+   {
+    "name": "Gurjara-Pratihara Empire",
+    "map": "Gurjara Pratihara",
+    "ruler": "Mahendrapala I",
+    "capital": "Kanauj",
+    "extent": "The Ganges plain and Rajasthan"
+   },
+   {
+    "name": "Rashtrakuta Dynasty",
+    "map": "Rashtrakuta",
+    "ruler": "Krishna II",
+    "capital": "Manyakheta",
+    "extent": "The Deccan plateau"
+   },
+   {
+    "name": "Khmer Empire",
+    "map": "Khmer Empire",
+    "ruler": "Yasovarman I",
+    "capital": "Yasodharapura (Angkor)",
+    "extent": "Cambodia and parts of Thailand, Laos and southern Vietnam"
+   }
+  ],
+  "events": [
+   {
+    "year": 843,
+    "text": "Treaty of Verdun splits Charlemagne's empire"
+   },
+   {
+    "year": 875,
+    "text": "Huang Chao rebellion begins in China (c. 875)"
+   },
+   {
+    "year": 882,
+    "text": "Oleg takes Kyiv, forming Kyivan Rus"
+   },
+   {
+    "year": 893,
+    "text": "Simeon I becomes ruler of Bulgaria"
+   },
+   {
+    "year": 895,
+    "text": "Magyars begin their conquest of the Carpathian basin"
+   },
+   {
+    "year": 900,
+    "text": "Samanids defeat the Saffarids near Balkh"
+   },
+   {
+    "year": 907,
+    "text": "Tang dynasty falls"
+   },
+   {
+    "year": 909,
+    "text": "Fatimid Caliphate proclaimed in North Africa"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia: Isma'il ibn Ahmad",
+    "url": "https://en.wikipedia.org/wiki/Isma%27il_ibn_Ahmad"
+   },
+   {
+    "title": "Wikipedia: Aghlabids",
+    "url": "https://en.wikipedia.org/wiki/Aghlabids"
+   },
+   {
+    "title": "Wikipedia: Yasovarman I",
+    "url": "https://en.wikipedia.org/wiki/Yasovarman_I"
+   },
+   {
+    "title": "Wikipedia: Gyeon Hwon",
+    "url": "https://en.wikipedia.org/wiki/Gyeon_Hwon"
+   },
+   {
+    "title": "University of Hawaii: East Polynesia colonized faster and more recently than previously thought (Wilmshurst et al. 2011)",
+    "url": "https://manoa.hawaii.edu/news/article.php?aId=4097"
+   },
+   {
+    "title": "UNESCO General History of Africa, vol. III: Africa from the Seventh to the Eleventh Century (ed. M. El Fasi & I. Hrbek, 1988)",
+    "url": "https://archive.org/details/general-history-of-africa-vol-3"
+   },
+   {
+    "title": "Wikipedia: Emperor Daigo",
+    "url": "https://en.wikipedia.org/wiki/Emperor_Daigo"
+   },
+   {
+    "title": "Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. IV.1, The age of the Gurjara-Pratiharas, Palas, and Rastrakutas, c. A.D. 700-975",
+    "url": "https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/The_age_of_the_Gurjara-Pratiharas_Palas_and_Rastrakutas_c._A.D._700-975.json&canvasID=0"
+   },
+   {
+    "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. IV: The Age of Imperial Kanauj (Internet Archive)",
+    "url": "https://archive.org/details/ageofimperialkan04bhar"
+   },
+   {
+    "title": "Coedès, The Indianized States of Southeast Asia (1968), archive.org",
+    "url": "https://archive.org/details/george-coedes-the-indianized-states-of-southeast-asia-east-west-center-press-1968"
+   },
+   {
+    "title": "Wilmshurst et al. (2011), High-precision radiocarbon dating shows recent and rapid initial human colonization of East Polynesia, PNAS",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3033267/"
+   }
+  ]
+ },
+ {
+  "year": 1000,
+  "title": "The Millennium Turns",
+  "age": "High Middle Ages",
+  "overview": "In the year 1000, Song China, ruled by Emperor Zhenzong from the bustling city of Kaifeng, is the richest and most technologically advanced society on Earth, with printing, paper money on the way and a civil service chosen by examination. It faces powerful northern neighbours, the Khitan Liao. The Islamic world is split among three caliphs: the Abbasid in Baghdad, under the control of the Buyid emirs; the Fatimid al-Hakim in Cairo; and the Umayyad in Córdoba, where the general Almanzor holds power. Mahmud of Ghazni is launching his raids into India. The Byzantine Empire under Basil II is at its medieval peak. In Europe, new Christian kingdoms are being born: Poland, Hungary, and the Rus of Vladimir the Great, while Emperor Otto III dreams of reviving Rome. In South India the Chola king Rajaraja I is building an empire. Norse sailors have reached Greenland and are exploring North America, and in Mexico the Toltecs dominate from Tula.",
+  "regions": {
+   "southern-africa": "In the Limpopo valley, chiefdoms such as K2 are growing rich on ivory and gold traded to the coast, and will soon give rise to Mapungubwe; early stone-walled settlement is beginning on the Zimbabwe plateau. Swahili towns such as Kilwa and Shanga trade with Arabia, Persia and India. Madagascar is home to Malagasy farming chiefdoms, and Khoisan peoples hold the southwest.",
+   "northern-africa": "The Fatimid Caliphate, under the unpredictable al-Hakim (r. 996–1021), rules Egypt, Syria and the Hejaz from Cairo, with the Zirids governing Tunisia for them. Christian Makuria and Alodia rule Nubia. In West Africa, the empire of Ghana is at its height, controlling the gold trade, while Gao, Takrur and Kanem are important trading kingdoms.",
+   "europe": "Otto III (r. 996–1002) rules the Holy Roman Empire and, in 1000, visits Gniezno to honour Poland's ruler Bolesław I the Brave, while Stephen I is crowned first king of Hungary (1000 or 1001). Vladimir the Great rules a newly Christian Kyivan Rus, Basil II rules a resurgent Byzantine Empire at war with Bulgaria, Robert II rules France, and Æthelred the Unready struggles against Danish raids in England. Sweyn Forkbeard of Denmark wins the sea battle of Svolder against Norway's Olaf Tryggvason, and in Spain the Caliphate of Córdoba is at its peak under Almanzor, while Iceland adopts Christianity.",
+   "middle-east-south-asia": "The Buyid emirs, under Baha al-Dawla, rule Iraq and western Iran and control the Abbasid caliph al-Qadir in Baghdad, while the Fatimids hold Syria and the Byzantines Anatolia and parts of northern Syria. Mahmud of Ghazni (r. 998–1030) rules Afghanistan and eastern Iran and will defeat the Hindu Shahi king Jayapala in 1001. In India, the Chola king Rajaraja I (r. 985–1014) rules the Tamil south, the Western Chalukyas the Deccan, the Palas Bengal, and many Rajput kingdoms the north.",
+   "north-central-asia": "The Samanid Empire has just been destroyed (999) by the Karakhanids, a Turkic Muslim dynasty that now rules Transoxiana, and the Ghaznavids, who took Khorasan. The Kimek and Kipchak Turks dominate the western Siberian steppe, the Oghuz roam near the Aral Sea, and the Volga Bulgars and Pechenegs hold the western steppe. Siberia is home to hunting and reindeer-herding peoples.",
+   "east-asia": "The Song dynasty, founded in 960, rules China from Kaifeng under Emperor Zhenzong (r. 997–1022). The Khitan Liao dynasty, under Emperor Shengzong and his formidable mother the Empress Dowager Xiao, rules Manchuria, Mongolia and part of north China, and the Tanguts under Li Jiqian are building the future Western Xia state in the northwest. Goryeo rules Korea, and Heian Japan, under Emperor Ichijō and the all-powerful minister Fujiwara no Michinaga, is the world of Murasaki Shikibu's Tale of Genji; Tibet is fragmented.",
+   "southeast-asia": "The Khmer Empire rules from Angkor, where Suryavarman I will soon take power (c. 1006). Srivijaya controls the Strait of Malacca and is at war with the Javanese kingdom of Mataram, which collapses in 1016. Đại Cồ Việt, independent from China since 938, is ruled by Lê Hoàn, and Champa, Pagan and the Mon kingdoms rule elsewhere in the region.",
+   "northern-north-america": "Norse settlers led by Erik the Red have colonized Greenland since 985, and around 1000 Leif Erikson reaches Vinland; a Norse camp at L'Anse aux Meadows in Newfoundland dates to this period. The Thule culture is taking shape in coastal Alaska; its rapid eastward migration, which will displace the Dorset, begins only around 1200. Athabaskan, Algonquian and Beothuk peoples hunt the forests.",
+   "southern-north-america": "The Toltecs dominate central Mexico from Tula, and Chichen Itza, with strong Toltec-style art, is the leading city of Yucatán. The Mixtecs and Zapotecs hold Oaxaca. In the Southwest, Chaco Canyon is the hub of the Ancestral Puebloan world, and the Mississippian culture is rising in the Mississippi valley, where Cahokia will soon grow into a city. In the Caribbean, Taino chiefdoms are forming.",
+   "northern-south-america": "The Wari Empire has collapsed and Tiwanaku is in decline, leaving the Andes divided among regional states. On the north coast of Peru the Sicán culture produces spectacular gold work, and the Chimú are beginning to build their kingdom. Tupi peoples live along the Brazilian coast, and chiefdoms flourish in the Amazon and the Colombian highlands.",
+   "southern-cone": "Hunter-gatherers occupy the pampas and Patagonia, and canoe peoples the southern channels. Diaguita farmers live in northwest Argentina, Mapuche ancestors in central Chile, and Guarani farmers in Paraguay and southern Brazil.",
+   "australasia": "Aboriginal Australians live across the continent. Polynesians are about to settle eastern Polynesia, beginning with the Society Islands (c. 1025–1120 by recent radiocarbon dating), while the Tu'i Tonga line of sacred kings is founded in Tonga (c. 950). New Zealand and Rapa Nui are still unsettled."
+  },
+  "powers": [
+   {
+    "name": "Song Dynasty",
+    "map": "Song Empire",
+    "ruler": "Emperor Zhenzong",
+    "capital": "Kaifeng",
+    "extent": "China proper, except the far north and northwest"
+   },
+   {
+    "name": "Fatimid Caliphate",
+    "map": "Fatimid Caliphate",
+    "ruler": "al-Hakim",
+    "capital": "Cairo",
+    "extent": "Egypt, Syria, the Hejaz and, through the Zirids, North Africa"
+   },
+   {
+    "name": "Byzantine Empire",
+    "map": "Byzantine Empire",
+    "ruler": "Basil II",
+    "capital": "Constantinople",
+    "extent": "Anatolia, Greece, the eastern Balkans (western Bulgaria holds out until 1018), northern Syria and southern Italy"
+   },
+   {
+    "name": "Liao Dynasty",
+    "map": "Liao",
+    "ruler": "Emperor Shengzong (with Empress Dowager Xiao)",
+    "capital": "Shangjing",
+    "extent": "Manchuria, Mongolia and the far north of China"
+   },
+   {
+    "name": "Holy Roman Empire",
+    "map": "Holy Roman Empire",
+    "ruler": "Otto III",
+    "capital": "Aachen and Rome (no fixed capital)",
+    "extent": "Germany, northern Italy and the Low Countries"
+   },
+   {
+    "name": "Kyivan Rus",
+    "map": "Kyivan Rus",
+    "ruler": "Vladimir the Great",
+    "capital": "Kyiv",
+    "extent": "From the Baltic to the Black Sea steppe"
+   },
+   {
+    "name": "Ghaznavid Empire",
+    "map": "Ghaznavid Emirate",
+    "ruler": "Mahmud of Ghazni",
+    "capital": "Ghazni",
+    "extent": "Afghanistan, Khorasan and the Indus borderlands"
+   },
+   {
+    "name": "Buyid Emirate",
+    "map": "Buwayhid Emirates",
+    "ruler": "Baha al-Dawla",
+    "capital": "Baghdad and Shiraz",
+    "extent": "Iraq and western Iran"
+   },
+   {
+    "name": "Chola Empire",
+    "map": "Chola Empire",
+    "ruler": "Rajaraja I",
+    "capital": "Thanjavur",
+    "extent": "Tamil Nadu, Kerala and northern Sri Lanka"
+   },
+   {
+    "name": "Caliphate of Córdoba",
+    "map": "Caliphate of Córdoba",
+    "ruler": "Hisham II (real power with Almanzor)",
+    "capital": "Córdoba",
+    "extent": "Most of Spain and Portugal and parts of Morocco"
+   }
+  ],
+  "events": [
+   {
+    "year": 960,
+    "text": "Song dynasty founded"
+   },
+   {
+    "year": 962,
+    "text": "Otto I crowned emperor, founding the Holy Roman Empire"
+   },
+   {
+    "year": 985,
+    "text": "Erik the Red founds the Norse colony in Greenland"
+   },
+   {
+    "year": 988,
+    "text": "Vladimir of Kyiv converts to Christianity"
+   },
+   {
+    "year": 999,
+    "text": "Samanid Empire falls to the Karakhanids"
+   },
+   {
+    "year": 1000,
+    "text": "Stephen I crowned king of Hungary (1000 or 1001)"
+   },
+   {
+    "year": 1000,
+    "text": "Leif Erikson reaches North America (c. 1000)"
+   },
+   {
+    "year": 1001,
+    "text": "Mahmud of Ghazni defeats Jayapala at Peshawar"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia: Stephen I of Hungary",
+    "url": "https://en.wikipedia.org/wiki/Stephen_I_of_Hungary"
+   },
+   {
+    "title": "Wikipedia: Fujiwara no Michinaga",
+    "url": "https://en.wikipedia.org/wiki/Fujiwara_no_Michinaga"
+   },
+   {
+    "title": "Wikipedia: L'Anse aux Meadows",
+    "url": "https://en.wikipedia.org/wiki/L%27Anse_aux_Meadows"
+   },
+   {
+    "title": "Wikipedia: Thule people",
+    "url": "https://en.wikipedia.org/wiki/Thule_people"
+   },
+   {
+    "title": "Wikipedia: Great Zimbabwe",
+    "url": "https://en.wikipedia.org/wiki/Great_Zimbabwe"
+   },
+   {
+    "title": "University of Hawaii: East Polynesia colonized faster and more recently than previously thought (Wilmshurst et al. 2011)",
+    "url": "https://manoa.hawaii.edu/news/article.php?aId=4097"
+   },
+   {
+    "title": "Historical Climatology: What made the Thule move? (on Friesen & Arnold 2008)",
+    "url": "https://historicalclimatology.com/features/what-made-the-thule-move-climate-and-culture-in-the-high-arctic"
+   },
+   {
+    "title": "Wikipedia: Basil II",
+    "url": "https://en.wikipedia.org/wiki/Basil_II"
+   },
+   {
+    "title": "Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. IV.2, The age of the Ghaznavids, Cahmanas, Later Calukyas, and Colas, c. 975-1200",
+    "url": "https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/The_age_of_the_Ghaznavids_Cahmanas_Later_Calukyas_and_Colas_c._975-1200.json&canvasID=0"
+   },
+   {
+    "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. V: The Struggle for Empire (Internet Archive)",
+    "url": "https://archive.org/details/struggleforempir05bhar"
+   },
+   {
+    "title": "Coedès, The Indianized States of Southeast Asia (1968), archive.org",
+    "url": "https://archive.org/details/george-coedes-the-indianized-states-of-southeast-asia-east-west-center-press-1968"
+   },
+   {
+    "title": "Wilmshurst et al. (2011), High-precision radiocarbon dating shows recent and rapid initial human colonization of East Polynesia, PNAS",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3033267/"
+   }
+  ]
+ },
+ {
+  "year": 1100,
+  "title": "Crusaders in Jerusalem",
+  "age": "High Middle Ages",
+  "overview": "In 1100 the First Crusade has just ended in triumph for the Latin Christians: Jerusalem fell in July 1099, and the crusaders have founded the Kingdom of Jerusalem, whose first king, Baldwin I, is crowned this Christmas. Their success owes much to the divisions of the Muslim world, where the Seljuk Turks, who conquered Iran, Iraq and most of Anatolia in the 1000s, are fighting among themselves, and the Fatimid Caliphate of Egypt is weakened. In the far west, the Berber Almoravids rule a vast empire from Senegal to Spain. The Byzantine Empire is recovering under Alexios I Komnenos. In China, the Song dynasty is entering the reign of the artistic Emperor Huizong, while the Liao and Western Xia hold the north. In India, the Cholas still rule the south, though Sri Lanka broke free in 1070. Cahokia on the Mississippi is the largest city north of Mexico, and Angkor in Cambodia is one of the largest cities in the world.",
+  "regions": {
+   "southern-africa": "In the Limpopo valley, the town of K2 grows rich trading gold and ivory to the Indian Ocean; around 1220 its rulers will move onto Mapungubwe Hill, founding southern Africa's first state. On the coast, Swahili city-states such as Kilwa grow wealthy. Madagascar's Malagasy chiefdoms and Khoisan herders in the southwest complete the picture.",
+   "northern-africa": "The Almoravid dynasty under Yusuf ibn Tashfin (d. 1106) rules Morocco, western Algeria and Muslim Spain from Marrakesh, which it founded around 1070. The Fatimids, under the caliph al-Musta'li and his powerful vizier al-Afdal, still rule Egypt, while the Zirids and Hammadids rule Tunisia and eastern Algeria. Makuria rules Nubia, Ghana is declining after Almoravid pressure, and Kanem, whose Muslim king Hummay (c. 1075–1086) founded the Sayfawa dynasty, controls the Lake Chad region.",
+   "europe": "Henry IV (king from 1056, emperor 1084–1105) rules the Holy Roman Empire amid the Investiture Controversy with the papacy, Philip I rules France, and Henry I takes the English throne in August 1100. Alexios I Komnenos rules Byzantium, Alfonso VI of Castile and León, who took Toledo in 1085, leads the Christian advance in Spain, and the Normans hold Sicily and southern Italy. Kyivan Rus is divided among princes, with Sviatopolk II in Kyiv, while Hungary under Coloman and Poland under Władysław I Herman rule central Europe.",
+   "middle-east-south-asia": "The Great Seljuk Empire, torn by civil war between Sultan Barkiyaruq and his brother Muhammad Tapar, rules Iran and Iraq, while Kilij Arslan I's Sultanate of Rum holds central Anatolia. The crusaders have founded the Kingdom of Jerusalem, the Principality of Antioch and the County of Edessa. In India the Ghaznavids under Mas'ud III hold the Punjab, the Cholas under Kulottunga I rule the south, the Western Chalukyas under Vikramaditya VI the Deccan, and many Rajput dynasties the north.",
+   "north-central-asia": "The Karakhanids rule Transoxiana and Kashgar in two rival branches, and Khwarazm is governed by a dynasty of Seljuk vassals. The Cuman-Kipchak confederation dominates the vast western steppe from the Danube to the Irtysh, and the Volga Bulgars trade furs from the north. Siberia remains home to hunting and herding peoples.",
+   "east-asia": "The Song dynasty rules from Kaifeng under Emperor Huizong (r. 1100–1126), a gifted painter and calligrapher. The Khitan Liao, under Emperor Daozong, rule the north, but the Jurchens in Manchuria are about to rise against them, and the Tangut Western Xia under Chongzong rule the northwest. Goryeo rules Korea, and in Japan Retired Emperor Shirakawa governs through the system of cloistered rule while samurai clans grow powerful; Mongol tribes are still divided on the steppe.",
+   "southeast-asia": "The Khmer Empire rules from Angkor, and Suryavarman II, who will take power in 1113, will build Angkor Wat. Pagan, under King Kyansittha, rules most of Burma, and Đại Việt under the Lý dynasty rules northern Vietnam. Srivijaya, weakened by a Chola naval raid in 1025, still trades through the Strait of Malacca, and the Kediri kingdom rules eastern Java.",
+   "northern-north-america": "The Thule people, ancestors of the Inuit, are perfecting their whaling way of life with dog sleds and skin boats in Alaska, while the Dorset still hold the Canadian Arctic. The Norse colony in Greenland is thriving. Athabaskan, Algonquian and Beothuk peoples live in the subarctic.",
+   "southern-north-america": "Cahokia, near present-day St. Louis, is at its peak, with perhaps 10,000 to 20,000 people and the giant earthen platform of Monks Mound. Chaco Canyon is the centre of the Ancestral Puebloan world, and the Hohokam farm the Arizona desert. In Mexico, the Toltecs rule from Tula, Chichen Itza dominates Yucatán, and in Oaxaca the Mixtec lord Eight Deer Jaguar Claw is building a kingdom.",
+   "northern-south-america": "With Tiwanaku and Wari gone, the Andes are divided among regional peoples. The Chimú are building their capital Chan Chan on Peru's north coast, and the Sicán culture rules nearby. The Muisca live in the Colombian highlands, and Tupi peoples along the Brazilian coast.",
+   "southern-cone": "Hunter-gatherers roam the pampas and Patagonia, and canoe peoples live in Tierra del Fuego. Diaguita farmers live in northwest Argentina, Mapuche ancestors farm central Chile, and Guarani farmers live in Paraguay and southern Brazil.",
+   "australasia": "Aboriginal Australians live across the continent. Polynesians have recently settled the Society Islands and will soon spread to the Marquesas, Hawaii and beyond, and Tonga's Tu'i Tonga kings are building a maritime chiefdom. On Pohnpei in Micronesia, the Saudeleur dynasty is rising and will begin building the stone city of Nan Madol (c. 1180)."
+  },
+  "powers": [
+   {
+    "name": "Great Seljuk Empire",
+    "map": "Seljuk Empire",
+    "ruler": "Barkiyaruq (contested by Muhammad Tapar)",
+    "capital": "Isfahan",
+    "extent": "Iran, Iraq and Khorasan, with vassals in Syria"
+   },
+   {
+    "name": "Song Dynasty",
+    "map": "Song Empire",
+    "ruler": "Emperor Huizong",
+    "capital": "Kaifeng",
+    "extent": "China proper south of the Liao and Xia frontiers"
+   },
+   {
+    "name": "Fatimid Caliphate",
+    "map": "Fatimid Caliphate",
+    "ruler": "al-Musta'li (real power with vizier al-Afdal)",
+    "capital": "Cairo",
+    "extent": "Egypt and parts of the Levant coast"
+   },
+   {
+    "name": "Almoravid Empire",
+    "map": "Almoravid dynasty",
+    "ruler": "Yusuf ibn Tashfin",
+    "capital": "Marrakesh",
+    "extent": "Morocco, western Algeria, Mauritania and Muslim Spain"
+   },
+   {
+    "name": "Byzantine Empire",
+    "map": "Byzantine Empire",
+    "ruler": "Alexios I Komnenos",
+    "capital": "Constantinople",
+    "extent": "The Balkans, Greece and western Anatolia"
+   },
+   {
+    "name": "Holy Roman Empire",
+    "map": "Holy Roman Empire",
+    "ruler": "Henry IV",
+    "capital": "No fixed capital",
+    "extent": "Germany, northern Italy, Burgundy and Bohemia"
+   },
+   {
+    "name": "Liao Dynasty",
+    "map": "Liao",
+    "ruler": "Emperor Daozong",
+    "capital": "Shangjing",
+    "extent": "Manchuria, Mongolia and northern China"
+   },
+   {
+    "name": "Kyivan Rus",
+    "map": "Kievan Rus",
+    "ruler": "Sviatopolk II (Grand Prince of Kyiv)",
+    "capital": "Kyiv",
+    "extent": "From Novgorod to the steppe edge, divided among princes"
+   },
+   {
+    "name": "Kingdom of Jerusalem",
+    "map": null,
+    "ruler": "Baldwin I (crowned Christmas 1100)",
+    "capital": "Jerusalem",
+    "extent": "Palestine and the southern Levant coast"
+   },
+   {
+    "name": "Chola Empire",
+    "map": "Cholas",
+    "ruler": "Kulottunga I",
+    "capital": "Gangaikonda Cholapuram",
+    "extent": "South India, with influence across the Bay of Bengal"
+   }
+  ],
+  "events": [
+   {
+    "year": 1054,
+    "text": "Great Schism between Rome and Constantinople"
+   },
+   {
+    "year": 1066,
+    "text": "Norman conquest of England"
+   },
+   {
+    "year": 1071,
+    "text": "Seljuks defeat Byzantium at Manzikert"
+   },
+   {
+    "year": 1085,
+    "text": "Castile captures Toledo"
+   },
+   {
+    "year": 1086,
+    "text": "Almoravids defeat Castile at Sagrajas (Zallaqa)"
+   },
+   {
+    "year": 1095,
+    "text": "Pope Urban II calls the First Crusade"
+   },
+   {
+    "year": 1099,
+    "text": "Crusaders capture Jerusalem"
+   },
+   {
+    "year": 1100,
+    "text": "Baldwin I crowned king of Jerusalem"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia: Baldwin I of Jerusalem",
+    "url": "https://en.wikipedia.org/wiki/Baldwin_I_of_Jerusalem"
+   },
+   {
+    "title": "Wikipedia: Emperor Huizong of Song",
+    "url": "https://en.wikipedia.org/wiki/Emperor_Huizong_of_Song"
+   },
+   {
+    "title": "Wikipedia: Henry IV, Holy Roman Emperor",
+    "url": "https://en.wikipedia.org/wiki/Henry_IV,_Holy_Roman_Emperor"
+   },
+   {
+    "title": "Wikipedia: Kingdom of Mapungubwe",
+    "url": "https://en.wikipedia.org/wiki/Kingdom_of_Mapungubwe"
+   },
+   {
+    "title": "Wikipedia: Suryavarman II",
+    "url": "https://en.wikipedia.org/wiki/Suryavarman_II"
+   },
+   {
+    "title": "Wikipedia: Nan Madol",
+    "url": "https://en.wikipedia.org/wiki/Nan_Madol"
+   },
+   {
+    "title": "UNESCO General History of Africa, vol. III: Africa from the Seventh to the Eleventh Century (ed. M. El Fasi & I. Hrbek, 1988)",
+    "url": "https://archive.org/details/general-history-of-africa-vol-3"
+   },
+   {
+    "title": "Historical Climatology: What made the Thule move? (on Friesen & Arnold 2008)",
+    "url": "https://historicalclimatology.com/features/what-made-the-thule-move-climate-and-culture-in-the-high-arctic"
+   },
+   {
+    "title": "Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. IV.2, The age of the Ghaznavids, Cahmanas, Later Calukyas, and Colas, c. 975-1200",
+    "url": "https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/The_age_of_the_Ghaznavids_Cahmanas_Later_Calukyas_and_Colas_c._975-1200.json&canvasID=0"
+   },
+   {
+    "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. V: The Struggle for Empire (Internet Archive)",
+    "url": "https://archive.org/details/struggleforempir05bhar"
+   },
+   {
+    "title": "Wilmshurst et al. (2011), High-precision radiocarbon dating shows recent and rapid initial human colonization of East Polynesia, PNAS",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3033267/"
+   }
+  ]
+ },
+ {
+  "year": 1200,
+  "title": "On the Eve of Genghis",
+  "age": "High Middle Ages",
+  "overview": "In 1200 the world does not yet know the name Genghis Khan, but on the Mongolian steppe a chief named Temüjin is defeating his rivals; in six years he will be proclaimed ruler of all the Mongols. China is divided between the Southern Song, a wealthy commercial empire ruling from Hangzhou, and the Jurchen Jin dynasty in the north. In the Islamic world, the Khwarazm-shah Muhammad II has just inherited a growing empire in Iran and Central Asia, the Ghurids are conquering northern India, and Saladin's brother al-Adil has made himself master of the Ayyubid lands in Egypt and Syria. Western Europe is booming: towns, trade, universities and Gothic cathedrals are spreading, and Pope Innocent III is the most powerful pope of the Middle Ages. A new crusade is being planned that will, in 1204, sack Christian Constantinople. In Cambodia, Jayavarman VII is building Angkor Thom, and in the Andes a small tribe called the Inca is settling near Cusco.",
+  "regions": {
+   "southern-africa": "In the Limpopo valley, the rulers of K2 will move onto Mapungubwe Hill around 1220, founding a kingdom that lasts until about 1300, when power shifts north to Great Zimbabwe, whose stone enclosures are beginning to rise. Swahili city-states such as Kilwa control the gold trade along the East African coast. Malagasy chiefdoms rule Madagascar, and Khoisan herders and foragers hold the southwest.",
+   "northern-africa": "The Almohad Caliphate under Muhammad al-Nasir rules Morocco, Algeria, Tunisia and Muslim Spain from Marrakesh. The Ayyubid sultan al-Adil, brother of Saladin, takes control of Egypt in 1200, and Christian Makuria still rules Nubia. In Ethiopia the Zagwe king Lalibela is carving rock churches, while in West Africa the old empire of Ghana has collapsed, the Sosso king Sumanguru is rising, Kanem dominates Lake Chad, and Ife produces its famous bronze and terracotta heads.",
+   "europe": "The Holy Roman Empire is contested between Philip of Swabia and Otto IV, while Pope Innocent III (1198–1216) asserts papal power over kings. Philip II Augustus of France is about to seize Normandy from King John (r. 1199–1216), who rules the Angevin Empire of England and western France. The Byzantine Empire under Alexios III Angelos is weak, Rus is split into principalities such as Vladimir-Suzdal, Novgorod and Galicia-Volhynia, and in Spain the kingdoms of Castile, León, Aragon, Navarre and Portugal face the Almohads.",
+   "middle-east-south-asia": "The Ayyubids rule Egypt, Syria and Yemen; crusaders hold a strip of coast around Acre; the Seljuk Sultanate of Rum rules central Anatolia; and Queen Tamar rules Georgia at its golden age. The Abbasid caliph al-Nasir has revived the caliphate's power in Iraq, and the Khwarazmian Empire is expanding across Iran. In India, the Ghurid ruler Muhammad of Ghor, through his general Qutb al-Din Aibak, has conquered the Ganges plain since the Second Battle of Tarain (1192), while the Cholas, Hoysalas, Yadavas and other kingdoms rule the south.",
+   "north-central-asia": "The Khwarazmian Empire, under Muhammad II, who succeeds his father Tekish in 1200, rules Khwarazm and is expanding into Iran and Transoxiana. The Kara Khitai, a Khitan dynasty that fled the Jurchens, rule much of Central Asia from Balasagun. The Cumans (Kipchaks) dominate the western steppe, and the Volga Bulgars trade along the Volga.",
+   "east-asia": "The Southern Song dynasty rules southern China from Lin'an (Hangzhou) under Emperor Ningzong, while the Jurchen Jin dynasty, under Emperor Zhangzong, rules northern China from Zhongdu (Beijing). The Tangut Western Xia rules the northwest, and in Mongolia Temüjin is uniting the tribes. Korea's Goryeo kings are puppets of the military dictator Choe Chung-heon, and in Japan the Kamakura shogunate, founded by Minamoto no Yoritomo (d. 1199), now shares power with the imperial court in Kyoto.",
+   "southeast-asia": "The Khmer Empire is at its greatest extent under Jayavarman VII (r. 1181–c. 1218), who builds Angkor Thom and the Bayon and has conquered Champa. Pagan rules Burma under Narapatisithu and is filled with thousands of temples. Đại Việt is ruled by the Lý dynasty, Srivijaya is declining, and the Kediri kingdom rules eastern Java.",
+   "northern-north-america": "The Thule people are beginning a rapid migration east from Alaska and within a century will reach Greenland, where they meet the Norse settlers. The Dorset culture still holds the eastern Arctic, but not for long. Athabaskan, Algonquian, Innu and Beothuk peoples live in the subarctic forests.",
+   "southern-north-america": "Cahokia is past its peak, but Mississippian chiefdoms flourish across the Southeast. Chaco Canyon has been abandoned after a drought, and Ancestral Puebloans now build cliff dwellings at Mesa Verde. Tula has fallen (c. 1150), and central Mexico is divided among city-states as Chichimec peoples, including the Mexica (Aztecs), migrate south; in Yucatán, Mayapan is about to become the leading city.",
+   "northern-south-america": "The Chimú kingdom rules Peru's north coast from Chan Chan, the largest adobe city in the Americas. Following Tiwanaku's collapse, Aymara kingdoms rule the Titicaca basin, and the Inca, a small group led by legendary founder Manco Capac, are settling in the Cusco valley (c. 1200). The Muisca rule the Colombian highlands.",
+   "southern-cone": "Diaguita farmers live in northwest Argentina, Mapuche ancestors in central Chile, and Guarani farmers in Paraguay and southern Brazil. Hunter-gatherers roam the pampas and Patagonia, and canoe peoples live in Tierra del Fuego.",
+   "australasia": "Aboriginal Australians live across the continent. Polynesians are spreading rapidly from Tahiti and the Society Islands to Hawaii and Rapa Nui (Easter Island) around this time, and the Tu'i Tonga rule a maritime chiefdom from Tonga. New Zealand will be settled within the next century."
+  },
+  "powers": [
+   {
+    "name": "Southern Song Dynasty",
+    "map": "Song Empire",
+    "ruler": "Emperor Ningzong",
+    "capital": "Lin'an (Hangzhou)",
+    "extent": "China south of the Huai River"
+   },
+   {
+    "name": "Jin Dynasty",
+    "map": "Liao",
+    "ruler": "Emperor Zhangzong",
+    "capital": "Zhongdu (Beijing)",
+    "extent": "Manchuria and northern China"
+   },
+   {
+    "name": "Kara Khitai",
+    "map": "Kara Khitai Khaganate",
+    "ruler": "Yelü Zhilugu",
+    "capital": "Balasagun",
+    "extent": "Central Asia from the Tarim Basin to Transoxiana"
+   },
+   {
+    "name": "Khwarazmian Empire",
+    "map": "Khwarazmian dynasty",
+    "ruler": "Muhammad II",
+    "capital": "Gurganj",
+    "extent": "Khwarazm and much of Iran"
+   },
+   {
+    "name": "Ghurid Sultanate",
+    "map": "Ghaznavid Emirate",
+    "ruler": "Ghiyath al-Din Muhammad and Muhammad of Ghor",
+    "capital": "Firozkoh and Ghazni",
+    "extent": "Afghanistan and northern India"
+   },
+   {
+    "name": "Ayyubid Sultanate",
+    "map": "Fatimid Caliphate",
+    "ruler": "al-Adil I",
+    "capital": "Cairo and Damascus",
+    "extent": "Egypt, Syria, upper Mesopotamia and Yemen"
+   },
+   {
+    "name": "Almohad Caliphate",
+    "map": "Almohad Caliphate",
+    "ruler": "Muhammad al-Nasir",
+    "capital": "Marrakesh",
+    "extent": "North Africa from Morocco to Tunisia, and Muslim Spain"
+   },
+   {
+    "name": "Holy Roman Empire",
+    "map": "Holy Roman Empire",
+    "ruler": "Philip of Swabia (contested by Otto IV)",
+    "capital": "No fixed capital",
+    "extent": "Germany, northern Italy and Burgundy"
+   },
+   {
+    "name": "Angevin Empire",
+    "map": "Angevin Empire",
+    "ruler": "King John",
+    "capital": "London and Rouen",
+    "extent": "England and western France from Normandy to Gascony"
+   },
+   {
+    "name": "Temüjin's Mongols",
+    "map": "Mongol Empire",
+    "ruler": "Temüjin (future Genghis Khan)",
+    "capital": "Mobile camps in eastern Mongolia",
+    "extent": "Mongol tribes of eastern Mongolia, still being united"
+   }
+  ],
+  "events": [
+   {
+    "year": 1187,
+    "text": "Saladin defeats the crusaders at Hattin and takes Jerusalem"
+   },
+   {
+    "year": 1192,
+    "text": "Muhammad of Ghor wins the Second Battle of Tarain"
+   },
+   {
+    "year": 1192,
+    "text": "Minamoto no Yoritomo becomes shogun"
+   },
+   {
+    "year": 1198,
+    "text": "Innocent III becomes pope"
+   },
+   {
+    "year": 1200,
+    "text": "Muhammad II becomes Khwarazm-shah"
+   },
+   {
+    "year": 1204,
+    "text": "Fourth Crusade sacks Constantinople"
+   },
+   {
+    "year": 1206,
+    "text": "Temüjin proclaimed Genghis Khan"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia: Muhammad II of Khwarazm",
+    "url": "https://en.wikipedia.org/wiki/Muhammad_II_of_Khwarazm"
+   },
+   {
+    "title": "Wikipedia: Al-Adil I",
+    "url": "https://en.wikipedia.org/wiki/Al-Adil_I"
+   },
+   {
+    "title": "Wikipedia: Kingdom of Mapungubwe",
+    "url": "https://en.wikipedia.org/wiki/Kingdom_of_Mapungubwe"
+   },
+   {
+    "title": "Wikipedia: Thule people",
+    "url": "https://en.wikipedia.org/wiki/Thule_people"
+   },
+   {
+    "title": "Wikipedia: Mesa Verde National Park",
+    "url": "https://en.wikipedia.org/wiki/Mesa_Verde_National_Park"
+   },
+   {
+    "title": "University of Hawaii: East Polynesia colonized faster and more recently than previously thought (Wilmshurst et al. 2011)",
+    "url": "https://manoa.hawaii.edu/news/article.php?aId=4097"
+   },
+   {
+    "title": "South African History Online: Mapungubwe",
+    "url": "https://www.sahistory.org.za/article/mapungubwe"
+   },
+   {
+    "title": "The Canadian Encyclopedia: Dorset Culture",
+    "url": "https://www.thecanadianencyclopedia.ca/en/article/dorset-culture"
+   },
+   {
+    "title": "Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. V, Northern India in the time of the Ghurids and Mamluks, c. 1170-1290",
+    "url": "https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/Northern_India_and_adjacent_areas_in_the_time_of_the_Ghurids_and_Mamluks_c._1170-1290.json&canvasID=0"
+   },
+   {
+    "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. V: The Struggle for Empire (Internet Archive)",
+    "url": "https://archive.org/details/struggleforempir05bhar"
+   },
+   {
+    "title": "Wilmshurst et al. (2011), High-precision radiocarbon dating shows recent and rapid initial human colonization of East Polynesia, PNAS",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3033267/"
+   }
+  ]
+ },
+ {
+  "year": 1279,
+  "title": "Mongols Conquer China",
+  "age": "High Middle Ages",
+  "overview": "In 1279 the Mongol conquest of China is complete. At the naval battle of Yamen, the last Song loyalists are destroyed, and the boy emperor drowns with his minister. Kublai Khan, grandson of Genghis, now rules all of China as emperor of the Yuan dynasty from his new capital Dadu (Beijing). The Mongol Empire, the largest contiguous land empire in history, has split into four great khanates: the Yuan in the east, the Golden Horde on the Russian steppe, the Ilkhanate in Iran, and the Chagatai Khanate in Central Asia, where Kaidu challenges Kublai. The Mongol advance has been stopped in Syria by the Mamluks of Egypt and in India by the Delhi Sultanate. Merchants like Marco Polo travel safely across Asia under Mongol protection. In Europe, kings like Edward I of England and Philip III of France are building stronger states, while the Byzantines have recovered Constantinople. In West Africa, the empire of Mali is rising.",
+  "regions": {
+   "southern-africa": "Great Zimbabwe is becoming the capital of a powerful state on the Zimbabwe plateau, controlling gold exports through the Swahili coast. Kilwa is the richest Swahili city, ruled by a new Mahdali dynasty. Malagasy chiefdoms rule Madagascar, and Khoisan peoples live in the southwest.",
+   "northern-africa": "The Mamluk Sultanate rules Egypt and Syria, where Qalawun seizes the throne in late 1279. The Hafsids rule Tunisia, the Marinids under Abu Yusuf Yaqub rule Morocco, and the Zayyanids rule western Algeria. In Ethiopia, Yekuno Amlak has restored the Solomonic dynasty (1270), Makuria is under Mamluk pressure, Kanem rules Lake Chad, and in West Africa the Mali Empire, founded by Sundiata Keita, now controls the gold fields of the upper Niger.",
+   "europe": "Rudolf I of Habsburg rules the Holy Roman Empire after defeating Ottokar II of Bohemia in 1278, Philip III rules France, and Edward I of England is conquering Wales. Michael VIII Palaiologos rules the restored Byzantine Empire, threatened by Charles of Anjou, while Castile under Alfonso X the Wise and Aragon under Peter III lead Christian Spain and Denis becomes king of Portugal. The Golden Horde dominates the Rus principalities, which pay it tribute, the Teutonic Knights are conquering Prussia, and pagan Lithuania is growing.",
+   "middle-east-south-asia": "The Ilkhanate under Abaqa (r. 1265–1282) rules Iran, Iraq and Anatolia, where the Seljuk Sultanate of Rum survives as a vassal, while the Mamluks hold Syria and Palestine against both the Mongols and the last crusader towns. The Rasulids rule Yemen. In India, the Delhi Sultanate under Ghiyas ud din Balban (r. 1266–1287) holds the north against Mongol raids, while the Pandyas, Hoysalas, Kakatiyas and Yadavas rule the south.",
+   "north-central-asia": "The Golden Horde, under Möngke Temür, rules the western steppe from Sarai on the Volga, with its eastern wing in Kazakhstan. The Chagatai Khanate, under Buqa Temür but dominated by Kaidu, an Ögedeid prince at war with Kublai, controls Transoxiana and the Tian Shan. Siberia is home to forest and tundra peoples.",
+   "east-asia": "Kublai Khan (r. 1260–1294) has conquered the Southern Song: Lin'an surrendered in 1276 and the last resistance ends at Yamen in March 1279. The Yuan dynasty rules all of China, Mongolia and Tibet, where the Sakya lamas govern on Kublai's behalf, and Goryeo Korea is a Yuan vassal. Japan, under the Kamakura shogunate and the regent Hōjō Tokimune, repelled a Mongol invasion in 1274 and will face another in 1281.",
+   "southeast-asia": "Pagan, under King Narathihapate, is under attack by Mongol armies, and the Khmer Empire under Jayavarman VIII is still large but past its peak. In Thailand, Sukhothai is rising under Ram Khamhaeng (c. 1279–1298), and Đại Việt under the Trần dynasty has beaten back one Mongol invasion. Kertanegara of Singhasari is the most powerful king in Java, and Samudera Pasai in Sumatra is about to become one of the region's first Muslim kingdoms.",
+   "northern-north-america": "Thule Inuit have spread across the Arctic to Greenland, where the Norse colony still survives. Athabaskan, Algonquian, Innu and Beothuk peoples live in the subarctic forests, and complex fishing societies line the Pacific Northwest.",
+   "southern-north-america": "Mississippian chiefdoms such as Moundville and Etowah flourish in the Southeast, though Cahokia is declining. A severe drought (1276–1299) is driving the Ancestral Puebloans to abandon Mesa Verde. In central Mexico the Mexica are still a wandering people seeking a home, the Mixtecs and Zapotecs rule Oaxaca, and Mayapan leads a league of Maya cities in Yucatán.",
+   "northern-south-america": "The Chimú kingdom rules Peru's north coast from Chan Chan, and Aymara kingdoms such as the Colla and Lupaca hold the Titicaca basin. The Inca are a small kingdom in the Cusco valley. The Muisca rule the Colombian highlands, and Tupi peoples the Brazilian coast.",
+   "southern-cone": "Diaguita farmers live in northwest Argentina, Mapuche in central Chile, and Guarani in Paraguay and southern Brazil. Hunter-gatherers roam the pampas and Patagonia, and canoe peoples live in Tierra del Fuego.",
+   "australasia": "Polynesian voyagers have reached New Zealand (c. 1250–1300), the last major land mass on Earth to be settled, becoming the ancestors of the Māori. The Tu'i Tonga rule a maritime chiefdom, and Rapa Nui's people are beginning to carve moai. Aboriginal Australians live across the continent."
+  },
+  "powers": [
+   {
+    "name": "Yuan Dynasty (Great Khanate)",
+    "map": "Great Khanate",
+    "ruler": "Kublai Khan",
+    "capital": "Dadu (Beijing)",
+    "extent": "China, Mongolia, Manchuria and Tibet, with Korea as a vassal"
+   },
+   {
+    "name": "Golden Horde",
+    "map": "Khanate of the Golden Horde",
+    "ruler": "Möngke Temür",
+    "capital": "Sarai",
+    "extent": "The steppe from the Danube to western Siberia, with the Rus principalities as tributaries"
+   },
+   {
+    "name": "Ilkhanate",
+    "map": "Ilkhanate",
+    "ruler": "Abaqa",
+    "capital": "Tabriz",
+    "extent": "Iran, Iraq, the Caucasus and Anatolia"
+   },
+   {
+    "name": "Chagatai Khanate",
+    "map": "Chagatai Khanate",
+    "ruler": "Buqa Temür (dominated by Kaidu)",
+    "capital": "Almaliq",
+    "extent": "Transoxiana and the Tian Shan"
+   },
+   {
+    "name": "Mamluk Sultanate",
+    "map": "Mamluke Sultanate",
+    "ruler": "Qalawun (from late 1279)",
+    "capital": "Cairo",
+    "extent": "Egypt, Syria and the Hejaz"
+   },
+   {
+    "name": "Delhi Sultanate",
+    "map": "Sultanate of Delhi",
+    "ruler": "Ghiyas ud din Balban",
+    "capital": "Delhi",
+    "extent": "Northern India from the Punjab to Bengal"
+   },
+   {
+    "name": "Mali Empire",
+    "map": "Mali",
+    "ruler": "Keita dynasty (Sundiata's successors)",
+    "capital": "Niani (c.)",
+    "extent": "The upper Niger and Senegal basins"
+   },
+   {
+    "name": "Holy Roman Empire",
+    "map": "Holy Roman Empire",
+    "ruler": "Rudolf I of Habsburg",
+    "capital": "No fixed capital",
+    "extent": "Germany, Austria, Bohemia and northern Italy"
+   },
+   {
+    "name": "Kingdom of France",
+    "map": "France",
+    "ruler": "Philip III",
+    "capital": "Paris",
+    "extent": "Most of France, except English Gascony and Brittany"
+   },
+   {
+    "name": "Byzantine Empire",
+    "map": "Byzantine Empire",
+    "ruler": "Michael VIII Palaiologos",
+    "capital": "Constantinople",
+    "extent": "Western Anatolia, Thrace, Macedonia and parts of Greece"
+   }
+  ],
+  "events": [
+   {
+    "year": 1258,
+    "text": "Mongols sack Baghdad, ending the Abbasid Caliphate"
+   },
+   {
+    "year": 1260,
+    "text": "Mamluks defeat the Mongols at Ain Jalut"
+   },
+   {
+    "year": 1261,
+    "text": "Byzantines recover Constantinople"
+   },
+   {
+    "year": 1271,
+    "text": "Kublai proclaims the Yuan dynasty"
+   },
+   {
+    "year": 1274,
+    "text": "First Mongol invasion of Japan"
+   },
+   {
+    "year": 1276,
+    "text": "Song capital Lin'an surrenders to the Mongols"
+   },
+   {
+    "year": 1279,
+    "text": "Battle of Yamen ends the Song dynasty"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia: Battle of Yamen",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Yamen"
+   },
+   {
+    "title": "Wikipedia: Qalawun",
+    "url": "https://en.wikipedia.org/wiki/Qalawun"
+   },
+   {
+    "title": "Wikipedia: Mongol Empire",
+    "url": "https://en.wikipedia.org/wiki/Mongol_Empire"
+   },
+   {
+    "title": "Wikipedia: Mesa Verde National Park",
+    "url": "https://en.wikipedia.org/wiki/Mesa_Verde_National_Park"
+   },
+   {
+    "title": "Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. V, Northern India in the time of the Ghurids and Mamluks, c. 1170-1290",
+    "url": "https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/Northern_India_and_adjacent_areas_in_the_time_of_the_Ghurids_and_Mamluks_c._1170-1290.json&canvasID=0"
+   },
+   {
+    "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. VI: The Delhi Sultanate (Internet Archive)",
+    "url": "https://archive.org/details/delhisultanate00bhar"
+   },
+   {
+    "title": "Coedès, The Indianized States of Southeast Asia (1968), archive.org",
+    "url": "https://archive.org/details/george-coedes-the-indianized-states-of-southeast-asia-east-west-center-press-1968"
+   }
+  ]
+ },
+ {
+  "year": 1300,
+  "title": "The Mongol Peace",
+  "age": "High Middle Ages",
+  "overview": "In 1300 the Mongol khanates span most of Asia and eastern Europe, and the Pax Mongolica lets merchants, missionaries and ideas travel from China to the Mediterranean. Kublai Khan's grandson Temür rules Yuan China; Ghazan, who has converted to Islam, rules the Ilkhanate in Iran; Toqta rules the Golden Horde; and Duwa and Kaidu control Central Asia. Marco Polo, captured in a war between Venice and Genoa, has just dictated his famous account of Asia. In India, Alauddin Khalji has beaten back Mongol invasions and is building the Delhi Sultanate into an empire. The Mamluks rule Egypt and Syria and have expelled the last crusaders from Acre (1291). In western Anatolia, a minor Turkish chieftain named Osman has founded a small state that will become the Ottoman Empire. Europe is at its medieval peak of population, and Pope Boniface VIII proclaims the first Jubilee in Rome, but famine and plague lie ahead.",
+  "regions": {
+   "southern-africa": "Great Zimbabwe is the capital of a wealthy state on the Zimbabwe plateau, with great stone walls built without mortar, and it exports gold through the Swahili coast. Kilwa is the leading Swahili city-state. Madagascar has Malagasy kingdoms emerging, and Khoisan peoples live in the southwest.",
+   "northern-africa": "The Mamluk Sultanate rules Egypt and Syria under the young al-Nasir Muhammad, while the Marinids rule Morocco and are besieging the Zayyanid capital Tlemcen, and the Hafsids rule Tunisia. The Solomonic dynasty rules Ethiopia, Makuria is declining under Mamluk pressure, and Kanem controls Lake Chad. The Mali Empire, ruled by the Keita dynasty, is one of the largest states in Africa, and Mansa Musa will come to power around 1312.",
+   "europe": "Philip IV the Fair rules France and is about to clash with Pope Boniface VIII, who proclaims the Jubilee of 1300. Edward I of England is at war with Scotland, Albert I of Habsburg rules the Holy Roman Empire, and Wenceslaus II of Bohemia becomes king of Poland. The Byzantine Empire of Andronikos II is shrinking, the Golden Horde dominates the Rus principalities, including the small but growing principality of Moscow under Daniel, and Lithuania under Vytenis is expanding.",
+   "middle-east-south-asia": "The Ilkhanate under Ghazan (r. 1295–1304) rules Iran and Iraq, and has just defeated the Mamluks at Wadi al-Khaznadar (1299) and briefly taken Damascus. Anatolia is fragmenting into Turkish beyliks, among them that of Osman in Bithynia. In India, Alauddin Khalji (r. 1296–1316) rules the Delhi Sultanate and is about to conquer Rajasthan and raid the Deccan, while the Pandyas, Hoysalas, Kakatiyas and Yadavas still rule the south.",
+   "north-central-asia": "The Golden Horde under Toqta rules the western steppe from Sarai, having just defeated his rival Nogai. Central Asia is controlled by the Chagatai Khan Duwa and the Ögedeid Kaidu, who are at war with the Yuan; Kaidu will die in 1301. Siberia is home to forest and tundra peoples.",
+   "east-asia": "The Yuan dynasty rules China, Mongolia and Tibet under Temür Khan (Emperor Chengzong, r. 1294–1307), from Dadu (Beijing). Goryeo Korea is a Yuan vassal whose kings marry Mongol princesses. Japan, under the Kamakura shogunate and the Hōjō regents, survived Mongol invasions in 1274 and 1281 thanks to its defences and the storms later called kamikaze.",
+   "southeast-asia": "The kingdom of Majapahit, founded in 1293 by Raden Wijaya after expelling a Mongol fleet, is rising in Java. Pagan's empire has collapsed after Mongol invasions, and Burma is divided; in Thailand, Sukhothai and the new kingdom of Lan Na (Chiang Mai, founded 1296) are powerful. The Khmer Empire under Indravarman III is still wealthy, as the Chinese visitor Zhou Daguan recorded in 1296–97, and Đại Việt under the Trần dynasty has defeated three Mongol invasions.",
+   "northern-north-america": "Thule Inuit occupy the Arctic from Alaska to Greenland, where the Norse colony survives but faces a cooling climate. Athabaskan, Algonquian, Innu and Beothuk peoples live in the subarctic forests.",
+   "southern-north-america": "Mississippian chiefdoms such as Moundville, Etowah and Spiro dominate the Southeast, while Cahokia is in decline. Ancestral Puebloans have left the Four Corners and are moving to the Rio Grande and Hopi mesas. In central Mexico, the Mexica are living under the rule of Culhuacan, and will found Tenochtitlan in 1325; Mayapan leads Yucatán, and the Mixtecs and Zapotecs rule Oaxaca.",
+   "northern-south-america": "The Chimú kingdom rules Peru's north coast, Aymara kingdoms rule the Titicaca basin, and the Inca are still a local power around Cusco. The Muisca rule the Colombian highlands, and Tupi and Arawak peoples live along the coasts and rivers.",
+   "southern-cone": "Diaguita farmers live in northwest Argentina, Mapuche in central Chile, and Guarani in Paraguay and southern Brazil. Hunter-gatherers roam the pampas and Patagonia, and canoe peoples live in Tierra del Fuego.",
+   "australasia": "Māori ancestors are settling New Zealand, hunting the giant moa. The Tu'i Tonga rule a maritime chiefdom, the Saudeleur dynasty rules Pohnpei from Nan Madol, and Rapa Nui islanders are carving moai. Aboriginal Australians live across the continent."
+  },
+  "powers": [
+   {
+    "name": "Yuan Dynasty (Great Khanate)",
+    "map": "Great Khanate",
+    "ruler": "Temür Khan (Emperor Chengzong)",
+    "capital": "Dadu (Beijing)",
+    "extent": "China, Mongolia, Manchuria and Tibet"
+   },
+   {
+    "name": "Golden Horde",
+    "map": "Khanate of the Golden Horde",
+    "ruler": "Toqta",
+    "capital": "Sarai",
+    "extent": "The western steppe from the Danube to western Siberia"
+   },
+   {
+    "name": "Ilkhanate",
+    "map": "Ilkhanate",
+    "ruler": "Ghazan",
+    "capital": "Tabriz",
+    "extent": "Iran, Iraq, the Caucasus and eastern Anatolia"
+   },
+   {
+    "name": "Chagatai Khanate",
+    "map": "Chagatai Khanate",
+    "ruler": "Duwa (allied with Kaidu)",
+    "capital": "Almaliq",
+    "extent": "Transoxiana and the Tian Shan"
+   },
+   {
+    "name": "Delhi Sultanate",
+    "map": "Sultanate of Delhi",
+    "ruler": "Alauddin Khalji",
+    "capital": "Delhi",
+    "extent": "Northern India, expanding into Gujarat and Rajasthan"
+   },
+   {
+    "name": "Mamluk Sultanate",
+    "map": "Mamluke Sultanate",
+    "ruler": "al-Nasir Muhammad",
+    "capital": "Cairo",
+    "extent": "Egypt, Syria and the Hejaz"
+   },
+   {
+    "name": "Mali Empire",
+    "map": "Mali",
+    "ruler": "Keita dynasty (names uncertain at this date)",
+    "capital": "Niani (c.)",
+    "extent": "The upper Niger and Senegal basins"
+   },
+   {
+    "name": "Kingdom of France",
+    "map": "France",
+    "ruler": "Philip IV the Fair",
+    "capital": "Paris",
+    "extent": "Most of modern France"
+   },
+   {
+    "name": "Holy Roman Empire",
+    "map": "Holy Roman Empire",
+    "ruler": "Albert I of Habsburg",
+    "capital": "No fixed capital",
+    "extent": "Germany, Austria, Bohemia and northern Italy"
+   },
+   {
+    "name": "Byzantine Empire",
+    "map": "Byzantine Empire",
+    "ruler": "Andronikos II Palaiologos",
+    "capital": "Constantinople",
+    "extent": "Thrace, Macedonia, parts of Greece and shrinking lands in western Anatolia"
+   }
+  ],
+  "events": [
+   {
+    "year": 1291,
+    "text": "Mamluks capture Acre, ending the crusader states"
+   },
+   {
+    "year": 1293,
+    "text": "Majapahit founded in Java"
+   },
+   {
+    "year": 1295,
+    "text": "Ilkhan Ghazan converts to Islam"
+   },
+   {
+    "year": 1297,
+    "text": "William Wallace wins at Stirling Bridge"
+   },
+   {
+    "year": 1299,
+    "text": "Osman founds the Ottoman state (traditional date)"
+   },
+   {
+    "year": 1299,
+    "text": "Alauddin Khalji repels a Mongol army at Kili"
+   },
+   {
+    "year": 1300,
+    "text": "Pope Boniface VIII proclaims the first Jubilee"
+   },
+   {
+    "year": 1302,
+    "text": "Osman defeats the Byzantines at Bapheus"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia: Ghazan",
+    "url": "https://en.wikipedia.org/wiki/Ghazan"
+   },
+   {
+    "title": "Wikipedia: Alauddin Khalji",
+    "url": "https://en.wikipedia.org/wiki/Alauddin_Khalji"
+   },
+   {
+    "title": "Wikipedia: Nan Madol",
+    "url": "https://en.wikipedia.org/wiki/Nan_Madol"
+   },
+   {
+    "title": "Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. V, South Asia in the time of the Khaljis and Tughluqs, c. 1290-1390",
+    "url": "https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/South_Asia_in_the_time_of_the_Khaljis_and_Tughluqs_c._1290-1390.json&canvasID=0"
+   },
+   {
+    "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. VI: The Delhi Sultanate (Internet Archive)",
+    "url": "https://archive.org/details/delhisultanate00bhar"
+   },
+   {
+    "title": "Coedès, The Indianized States of Southeast Asia (1968), archive.org",
+    "url": "https://archive.org/details/george-coedes-the-indianized-states-of-southeast-asia-east-west-center-press-1968"
+   }
+  ]
+ },
+ {
+  "year": 1400,
+  "title": "Timur's Storm",
+  "age": "Late Middle Ages",
+  "overview": "In 1400 the conqueror Timur (Tamerlane) is the terror of Asia. From his capital Samarkand he has rebuilt a Mongol-style empire across Iran and Central Asia, sacked Delhi in 1398, and is now invading Syria; in 1402 he will crush the Ottoman sultan Bayezid I at Ankara. The Black Death, which struck in the 1340s, has killed perhaps a third of the population of Europe and the Middle East, and societies are still recovering. Mongol rule in China ended in 1368 with the founding of the Ming dynasty, now gripped by civil war between the young Jianwen Emperor and his uncle, the future Yongle Emperor. The Ottomans have conquered most of the Balkans and surround Constantinople. In Europe, the Hundred Years' War between England and France is paused, and the Church is split between rival popes. New powers are rising elsewhere: Vijayanagara in South India, Joseon in Korea, Ayutthaya in Thailand, and the Aztecs, still a minor people, in Mexico.",
+  "regions": {
+   "southern-africa": "Great Zimbabwe is at the height of its power, though it will decline in the next half-century as power shifts to Mutapa in the north. The Kingdom of Kongo is being founded (c. 1390s) south of the Congo River, and Kilwa and other Swahili city-states trade gold and ivory across the Indian Ocean. Malagasy kingdoms rule Madagascar.",
+   "northern-africa": "The Mamluk Sultanate rules Egypt and Syria under al-Nasir Faraj, who is about to lose Damascus to Timur. The Hafsids rule Tunisia and the Marinids Morocco, and Ethiopia under Dawit I is a strong Christian kingdom. In West Africa the Mali Empire is still vast but weakening, Songhay at Gao is gaining independence, the Sayfawa kings have moved from Kanem to Bornu, and Benin and Ife are flourishing forest kingdoms.",
+   "europe": "Margaret I rules Denmark, Norway and Sweden through the Kalmar Union (1397), and Poland and Lithuania are united under Władysław II Jagiełło. Henry IV has just seized the English throne from Richard II, Charles VI rules France despite bouts of madness, and the Holy Roman Empire deposes Wenceslaus and elects Rupert in 1400. The Ottoman Empire under Bayezid I rules most of the Balkans, the Byzantine Empire is reduced to Constantinople and a few territories, Vasily I rules Moscow, and the Golden Horde still demands tribute from the Rus.",
+   "middle-east-south-asia": "Timur's empire covers Iran, Iraq and the Caucasus, and he is invading Syria in 1400–1401, while the Ottomans hold western and central Anatolia and Turkmen confederations such as the Qara Qoyunlu and Aq Qoyunlu control eastern Anatolia. In India, the Delhi Sultanate under Nasir-ud-din Mahmud Shah Tughluq has been shattered by Timur's sack of Delhi, and provinces such as Jaunpur and Gujarat are breaking away. In the south, the Hindu Vijayanagara Empire under Harihara II and the Muslim Bahmani Sultanate compete for the Deccan.",
+   "north-central-asia": "Timur rules Transoxiana from Samarkand, which he is filling with magnificent mosques and palaces. The Golden Horde, reunited by Tokhtamysh but shattered by Timur's invasions in the 1390s, is ruled by Khan Shadi Beg under the warlord Edigu, who defeated the Lithuanians at the Vorskla River in 1399. Moghulistan, the eastern remnant of the Chagatai Khanate, holds the Tian Shan, and Oirat Mongols are rising in the west of Mongolia.",
+   "east-asia": "The Ming dynasty rules China from Nanjing under the Jianwen Emperor (r. 1398–1402), but his uncle Zhu Di, Prince of Yan, has rebelled and will seize the throne in 1402 as the Yongle Emperor. The Northern Yuan Mongols hold Mongolia, and Tibet is ruled by the Phagmodrupa dynasty. In Korea the new Joseon dynasty, founded in 1392, sees Taejong take the throne in 1400, and Japan is under the Ashikaga shoguns, with the retired shogun Ashikaga Yoshimitsu holding real power.",
+   "southeast-asia": "Ayutthaya, founded in 1351, is now the leading Thai kingdom, and the Khmer capital Angkor is weakened by its attacks. Majapahit, under Wikramawardhana, still claims much of the Indonesian archipelago, and Malacca is being founded (c. 1400) by Parameswara, a prince from Sumatra. In Burma, Ava and Hanthawaddy are fighting the Forty Years' War, and in Vietnam Hồ Quý Ly overthrows the Trần dynasty in 1400.",
+   "northern-north-america": "Thule Inuit live across the Arctic from Alaska to Greenland. The Norse Greenland colony is dying out in a cooling climate; its last written record is a wedding in 1408. Athabaskan, Algonquian, Innu and Beothuk peoples live in the subarctic, and Iroquoian farmers build palisaded villages around the Great Lakes.",
+   "southern-north-america": "In the Valley of Mexico, the Mexica of Tenochtitlan, under Huitzilihuitl, are vassals of the powerful Tepanec kingdom of Azcapotzalco. The Purépecha (Tarascan) state rules western Mexico, the Mixtecs and Zapotecs hold Oaxaca, and Mayapan still leads Yucatán. Cahokia has been abandoned, but Mississippian chiefdoms remain in the Southeast, and Pueblo peoples live along the Rio Grande.",
+   "northern-south-america": "The Chimú kingdom rules over 1,000 km of Peru's coast, the Aymara kingdoms hold the Titicaca basin, and the Inca, under Viracocha Inca, are expanding from Cusco, though their great conquests begin under Pachacuti from 1438. The Muisca rule the Colombian highlands, and Tupi and Arawak peoples live along the coasts and rivers.",
+   "southern-cone": "Diaguita farmers live in northwest Argentina, Mapuche in central Chile, and Guarani in Paraguay and southern Brazil. Hunter-gatherers roam the pampas and Patagonia, and canoe peoples live in Tierra del Fuego; the Inca will reach Chile and Argentina within a century.",
+   "australasia": "Māori tribes have settled across New Zealand. The Tu'i Tonga maritime chiefdom is at its peak, Rapa Nui islanders are carving and raising moai, and Hawaii has complex chiefdoms. Aboriginal Australians live across the continent, as they have for millennia."
+  },
+  "powers": [
+   {
+    "name": "Ming Dynasty",
+    "map": "Great Khanate",
+    "ruler": "Jianwen Emperor",
+    "capital": "Nanjing",
+    "extent": "China proper, from Manchuria's edge to Yunnan"
+   },
+   {
+    "name": "Timurid Empire",
+    "map": "Timurid Empire",
+    "ruler": "Timur",
+    "capital": "Samarkand",
+    "extent": "Transoxiana, Iran, Iraq and the Caucasus, with raids into India and Syria"
+   },
+   {
+    "name": "Ottoman Empire",
+    "map": "Ottoman Empire",
+    "ruler": "Bayezid I",
+    "capital": "Bursa and Edirne",
+    "extent": "Western and central Anatolia and most of the Balkans"
+   },
+   {
+    "name": "Golden Horde",
+    "map": "White Horde",
+    "ruler": "Shadi Beg (real power with Edigu)",
+    "capital": "Sarai",
+    "extent": "The western steppe, with the Rus principalities as tributaries"
+   },
+   {
+    "name": "Delhi Sultanate",
+    "map": "Sultanate of Delhi",
+    "ruler": "Nasir-ud-din Mahmud Shah Tughluq",
+    "capital": "Delhi",
+    "extent": "Northern India, shattered after Timur's sack"
+   },
+   {
+    "name": "Kalmar Union",
+    "map": "Kalmar Union",
+    "ruler": "Margaret I (with Eric of Pomerania)",
+    "capital": "No fixed capital (the royal court travelled)",
+    "extent": "Denmark, Norway, Sweden, Finland and Iceland"
+   },
+   {
+    "name": "Poland-Lithuania",
+    "map": "Poland-Lithuania",
+    "ruler": "Władysław II Jagiełło (with Grand Duke Vytautas)",
+    "capital": "Kraków and Vilnius",
+    "extent": "From the Baltic to the Black Sea steppe"
+   },
+   {
+    "name": "Mamluk Sultanate",
+    "map": "Mamluke Sultanate",
+    "ruler": "al-Nasir Faraj",
+    "capital": "Cairo",
+    "extent": "Egypt, Syria and the Hejaz"
+   },
+   {
+    "name": "Mali Empire",
+    "map": "Mali",
+    "ruler": "Keita dynasty (names uncertain at this date)",
+    "capital": "Niani (c.)",
+    "extent": "The western Sahel from the Atlantic to the Niger bend"
+   },
+   {
+    "name": "Vijayanagara Empire",
+    "map": null,
+    "ruler": "Harihara II",
+    "capital": "Vijayanagara (Hampi)",
+    "extent": "Most of South India below the Krishna River"
+   }
+  ],
+  "events": [
+   {
+    "year": 1347,
+    "text": "Black Death reaches Europe"
+   },
+   {
+    "year": 1368,
+    "text": "Ming dynasty founded; Yuan expelled from China"
+   },
+   {
+    "year": 1370,
+    "text": "Timur proclaimed ruler at Balkh, making Samarkand his capital"
+   },
+   {
+    "year": 1392,
+    "text": "Joseon dynasty founded in Korea"
+   },
+   {
+    "year": 1396,
+    "text": "Ottomans defeat a crusade at Nicopolis"
+   },
+   {
+    "year": 1397,
+    "text": "Kalmar Union unites the Scandinavian kingdoms"
+   },
+   {
+    "year": 1398,
+    "text": "Timur sacks Delhi"
+   },
+   {
+    "year": 1402,
+    "text": "Timur defeats Bayezid I at Ankara"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia: Timur",
+    "url": "https://en.wikipedia.org/wiki/Timur"
+   },
+   {
+    "title": "Wikipedia: Jianwen Emperor",
+    "url": "https://en.wikipedia.org/wiki/Jianwen_Emperor"
+   },
+   {
+    "title": "Wikipedia: Edigu",
+    "url": "https://en.wikipedia.org/wiki/Edigu"
+   },
+   {
+    "title": "Wikipedia: Shadi Beg",
+    "url": "https://en.wikipedia.org/wiki/Shadi_Beg"
+   },
+   {
+    "title": "Wikipedia: Kingdom of Kongo",
+    "url": "https://en.wikipedia.org/wiki/Kingdom_of_Kongo"
+   },
+   {
+    "title": "Wikipedia: Copenhagen",
+    "url": "https://en.wikipedia.org/wiki/Copenhagen"
+   },
+   {
+    "title": "Wikipedia: Bayezid I",
+    "url": "https://en.wikipedia.org/wiki/Bayezid_I"
+   },
+   {
+    "title": "Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. V, Political disintegration in Northern South Asia, c. 1390-1450",
+    "url": "https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/Political_disintegration_in_Northern_South_Asia_c._1390-1450.json&canvasID=0"
+   },
+   {
+    "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. VI: The Delhi Sultanate (Internet Archive)",
+    "url": "https://archive.org/details/delhisultanate00bhar"
+   }
+  ]
+ }
+]

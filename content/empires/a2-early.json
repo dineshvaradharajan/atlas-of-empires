@@ -1,0 +1,3021 @@
+[
+ {
+  "id": "kushan-empire",
+  "name": "Kushan Empire",
+  "aliases": [
+   "Kushan Empire",
+   "Kushan Principalities"
+  ],
+  "clio": [
+   "Kushan Empire",
+   "Eastern Kushans",
+   "Western Kushans"
+  ],
+  "region": "middle-east-south-asia",
+  "start": 30,
+  "end": 375,
+  "capital": "Purushapura (Peshawar) and Mathura; summer capital at Kapisa (Bagram)",
+  "peak": {
+   "year": 200,
+   "areaKm2": 2000000,
+   "note": "From Central Asia to the Ganges plain, built by Kanishka and held by his successors; c. 2.0M km² around 200 CE (Turchin, Adams & Hall 2006), with some estimates up to 2.5M km² (Taagepera 1979)"
+  },
+  "rulers": [
+   {
+    "name": "Kujula Kadphises",
+    "reign": "c. 30 – 80",
+    "note": "United the Yuezhi clans and founded the empire"
+   },
+   {
+    "name": "Vima Kadphises",
+    "reign": "c. 113 – 127 (dates debated)",
+    "note": "Expanded into India and issued gold coins"
+   },
+   {
+    "name": "Kanishka I",
+    "reign": "c. 127 – 150",
+    "note": "Greatest Kushan ruler, patron of Buddhism"
+   },
+   {
+    "name": "Huvishka",
+    "reign": "c. 150 – 190",
+    "note": "Ruled at the empire's prosperous height"
+   },
+   {
+    "name": "Vasudeva I",
+    "reign": "c. 190 – 230",
+    "note": "Last great Kushan emperor"
+   }
+  ],
+  "summary": "The Kushans descended from the Yuezhi, nomads driven from western China by the Xiongnu, who settled in Bactria (northern Afghanistan) in the 2nd century BCE. In the 1st century CE Kujula Kadphises united the five Yuezhi clans and crossed the Hindu Kush into northern India. Under Kanishka, the most famous ruler, the empire reached from Central Asia across Gandhara to the Ganges valley. Sitting astride the Silk Road, the Kushans grew rich on trade between Rome, Parthia, India and China, and their gold coins show Greek, Persian, Indian and local gods side by side. Kanishka patronised Buddhism, and Gandhara art blended Greek and Indian styles. From the 3rd century the Sasanians conquered the western lands, and the remaining Kushan principalities faded by the late 4th century.",
+  "legacy": "The Kushans helped carry Buddhism along the Silk Road to China, and Gandhara art produced some of the earliest images of the Buddha in human form.",
+  "sources": [
+   {
+    "title": "Wikipedia: Kushan Empire",
+    "url": "https://en.wikipedia.org/wiki/Kushan_Empire"
+   },
+   {
+    "title": "Wikipedia: Kanishka",
+    "url": "https://en.wikipedia.org/wiki/Kanishka"
+   },
+   {
+    "title": "Wikipedia: Vima Kadphises",
+    "url": "https://en.wikipedia.org/wiki/Vima_Kadphises"
+   },
+   {
+    "title": "Turchin, Adams & Hall (2006), East-West Orientation of Historical Empires",
+    "url": "https://web.archive.org/web/20200707181315/http://peterturchin.com/PDF/Turchin_Adams_Hall_2006.pdf"
+   },
+   {
+    "title": "Wikipedia: List of largest empires (Taagepera 1979 figures)",
+    "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+   },
+   {
+    "title": "Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. III.C.2, The Satavahana-Saka-Kusana age, c. A.D. 1-300",
+    "url": "https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/The_Satavahana-Saka-Kusana_age_c._A.D._1-300.json&canvasID=0"
+   },
+   {
+    "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. II: The Age of Imperial Unity (Internet Archive)",
+    "url": "https://archive.org/details/ageofimperialuni07bhar"
+   }
+  ]
+ },
+ {
+  "id": "gupta-empire",
+  "name": "Gupta Empire",
+  "aliases": [
+   "Gupta Empire"
+  ],
+  "clio": [
+   "Gupta Empire",
+   "(Alliance between Gupta Empire and Vakataka Kingdom)"
+  ],
+  "region": "middle-east-south-asia",
+  "start": 320,
+  "end": 550,
+  "capital": "Pataliputra; Ujjain as a secondary capital",
+  "peak": {
+   "year": 400,
+   "areaKm2": 3500000,
+   "note": "Under Chandragupta II, across northern India with tributaries beyond; c. 3.5M km² around 400 (Turchin, Adams & Hall 2006), though a much lower c. 1.7M km² for 440 is cited from Taagepera (1979)"
+  },
+  "rulers": [
+   {
+    "name": "Chandragupta I",
+    "reign": "c. 320 – 335",
+    "note": "Took the title great king of kings"
+   },
+   {
+    "name": "Samudragupta",
+    "reign": "c. 335 – 375",
+    "note": "Conquered much of the subcontinent"
+   },
+   {
+    "name": "Chandragupta II",
+    "reign": "c. 375 – 415",
+    "note": "Added western India; golden age of culture"
+   },
+   {
+    "name": "Kumaragupta I",
+    "reign": "c. 415 – 455",
+    "note": "Traditionally credited with founding the monastery-university of Nalanda"
+   },
+   {
+    "name": "Skandagupta",
+    "reign": "c. 455 – 467",
+    "note": "Repelled the first Hun invasions"
+   }
+  ],
+  "summary": "The Gupta dynasty rose in the Ganges valley, and Chandragupta I took the title great king of kings around 320. His son Samudragupta campaigned across the subcontinent, defeating northern kings and forcing southern rulers to pay tribute, and Chandragupta II added western India. The Guptas ruled the heartland directly and controlled outer regions through vassals. Their era is often called India's classical age: Sanskrit literature flourished with the poet Kalidasa, Aryabhata calculated the Earth's rotation and used a place-value number system, and Hindu temple architecture took shape, while Buddhist monasteries such as Nalanda thrived. From the late 5th century invasions by the Alchon Huns, together with the rise of regional rulers, broke up the empire by about 550.",
+  "legacy": "The Gupta age set enduring standards in Indian art, literature, mathematics and astronomy, and the decimal numerals it refined reached the world through Arab scholars.",
+  "sources": [
+   {
+    "title": "Wikipedia: Gupta Empire",
+    "url": "https://en.wikipedia.org/wiki/Gupta_Empire"
+   },
+   {
+    "title": "Wikipedia: Samudragupta",
+    "url": "https://en.wikipedia.org/wiki/Samudragupta"
+   },
+   {
+    "title": "Wikipedia: Kumaragupta I",
+    "url": "https://en.wikipedia.org/wiki/Kumaragupta_I"
+   },
+   {
+    "title": "World History Encyclopedia: Gupta Empire",
+    "url": "https://www.worldhistory.org/Gupta_Empire/"
+   },
+   {
+    "title": "Turchin, Adams & Hall (2006), East-West Orientation of Historical Empires",
+    "url": "https://web.archive.org/web/20200707181315/http://peterturchin.com/PDF/Turchin_Adams_Hall_2006.pdf"
+   },
+   {
+    "title": "Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. III.D, The Gupta-Vakataka Age, c. A.D. 300-500",
+    "url": "https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/The_Gupta-Vakataka_Age_c._A.D._300-500.json&canvasID=0"
+   },
+   {
+    "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. III: The Classical Age (Internet Archive)",
+    "url": "https://archive.org/details/classicalage03bhar"
+   }
+  ]
+ },
+ {
+  "id": "chola-empire",
+  "name": "Chola Empire",
+  "aliases": [
+   "Chola",
+   "Cholas",
+   "Chola Empire"
+  ],
+  "clio": [
+   "Chola Empire",
+   "Early Cholas"
+  ],
+  "region": "middle-east-south-asia",
+  "start": -300,
+  "end": 1279,
+  "capital": "Uraiyur; later Thanjavur and Gangaikonda Cholapuram",
+  "peak": {
+   "year": 1030,
+   "areaKm2": 1000000,
+   "note": "Under Rajendra I, southern India and Sri Lanka, with naval raids on Srivijaya (rough estimate; not covered by Taagepera or Turchin; the Cliopatria map shows only c. 0.5M km² under direct rule)"
+  },
+  "rulers": [
+   {
+    "name": "Karikala",
+    "reign": "c. 2nd century CE",
+    "note": "Celebrated early Chola king of Tamil poetry"
+   },
+   {
+    "name": "Vijayalaya",
+    "reign": "c. 848 – 871",
+    "note": "Revived the dynasty by capturing Thanjavur"
+   },
+   {
+    "name": "Rajaraja I",
+    "reign": "985 – 1014",
+    "note": "Built the Brihadeeswarar temple; conquered northern Sri Lanka"
+   },
+   {
+    "name": "Rajendra I",
+    "reign": "1014 – 1044",
+    "note": "Marched to the Ganges and raided Srivijaya by sea"
+   },
+   {
+    "name": "Kulottunga I",
+    "reign": "1070 – 1122",
+    "note": "United the Chola and Eastern Chalukya lines"
+   },
+   {
+    "name": "Rajendra III",
+    "reign": "1246 – 1279",
+    "note": "Last Chola king, defeated by the Pandyas"
+   }
+  ],
+  "summary": "The Cholas were one of the three ancient Tamil ruling families of southern India, mentioned in Ashoka's edicts and in early Tamil Sangam poetry. After centuries in the shadow of the Pallavas and Pandyas, Vijayalaya revived the dynasty around 848 by capturing Thanjavur. Rajaraja I and his son Rajendra I built an empire covering southern India and Sri Lanka, sent an army to the Ganges and launched a naval expedition against Srivijaya in 1025, projecting power across the Bay of Bengal. The Cholas ran an efficient administration with self-governing village assemblies, promoted trade with China and South-east Asia, and built great Shiva temples such as the Brihadeeswarar at Thanjavur. Wars with the Chalukyas and Pandyas weakened them, and the Pandyas ended the dynasty in 1279.",
+  "legacy": "Chola bronzes, temples and maritime trade spread Tamil culture across South-east Asia, and their great temples remain living places of worship.",
+  "sources": [
+   {
+    "title": "Wikipedia: Chola Empire",
+    "url": "https://en.wikipedia.org/wiki/Chola_Empire"
+   },
+   {
+    "title": "Wikipedia: Chola dynasty",
+    "url": "https://en.wikipedia.org/wiki/Chola_dynasty"
+   },
+   {
+    "title": "Wikipedia: Kulottunga I",
+    "url": "https://en.wikipedia.org/wiki/Kulottunga_I"
+   },
+   {
+    "title": "Wikipedia: Rajendra III",
+    "url": "https://en.wikipedia.org/wiki/Rajendra_III"
+   },
+   {
+    "title": "Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. IV.2, The age of the Ghaznavids, Cahmanas, Later Calukyas, and Colas, c. 975-1200",
+    "url": "https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/The_age_of_the_Ghaznavids_Cahmanas_Later_Calukyas_and_Colas_c._975-1200.json&canvasID=0"
+   },
+   {
+    "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. V: The Struggle for Empire (Internet Archive)",
+    "url": "https://archive.org/details/struggleforempir05bhar"
+   }
+  ]
+ },
+ {
+  "id": "delhi-sultanate",
+  "name": "Delhi Sultanate",
+  "aliases": [
+   "Sultanate of Delhi"
+  ],
+  "clio": [
+   "(Delhi Sultanate)",
+   "Mamluk Dynasty",
+   "Khalji Dynasty",
+   "Tughlaq Dynasty",
+   "Sayyid Dynasty",
+   "Lodi Dynasty",
+   "(Allegiance of Delhi Sultanate to Abbasid Caliphate)"
+  ],
+  "region": "middle-east-south-asia",
+  "start": 1206,
+  "end": 1526,
+  "capital": "Delhi (briefly Daulatabad from 1327; Agra under the later Lodis)",
+  "peak": {
+   "year": 1312,
+   "areaKm2": 3200000,
+   "note": "Under Alauddin Khalji, after his conquests in the Deccan; c. 3.2M km² in 1312 (Taagepera 1997; Turchin, Adams & Hall 2006). Schwartzberg (Historical Atlas of South Asia, pl. V) and the Cliopatria map instead show the widest extent under Muhammad bin Tughluq in the 1330s."
+  },
+  "rulers": [
+   {
+    "name": "Qutb ud-Din Aibak",
+    "reign": "1206 – 1210",
+    "note": "Founder; began the Qutb Minar"
+   },
+   {
+    "name": "Iltutmish",
+    "reign": "1211 – 1236",
+    "note": "Consolidated the sultanate"
+   },
+   {
+    "name": "Razia Sultana",
+    "reign": "1236 – 1240",
+    "note": "The only woman to rule the Delhi Sultanate"
+   },
+   {
+    "name": "Alauddin Khalji",
+    "reign": "1296 – 1316",
+    "note": "Repelled the Mongols and raided the south"
+   },
+   {
+    "name": "Muhammad bin Tughluq",
+    "reign": "1325 – 1351",
+    "note": "Ambitious ruler whose realm briefly reached the far south"
+   },
+   {
+    "name": "Firuz Shah Tughluq",
+    "reign": "1351 – 1388",
+    "note": "Builder of canals, towns and forts"
+   },
+   {
+    "name": "Ibrahim Lodi",
+    "reign": "1517 – 1526",
+    "note": "Last sultan, killed by Babur at Panipat"
+   }
+  ],
+  "summary": "After Muhammad of Ghor conquered northern India, his Turkic slave-general Qutb ud-Din Aibak made himself sultan at Delhi in 1206. Five dynasties followed: the Mamluks, Khaljis, Tughluqs, Sayyids and Lodis. The sultans ruled through a Turkic and Afghan military elite granted revenue rights over land, and they repelled repeated Mongol invasions. Alauddin Khalji and Muhammad bin Tughluq pushed deep into southern India, briefly ruling most of the subcontinent, but rebellions created independent states such as the Bahmani and Vijayanagara kingdoms. Timur's sack of Delhi in 1398 left the sultanate a regional power. Persian became the language of government, and Indo-Islamic architecture such as the Qutb Minar flourished. Babur defeated the last sultan, Ibrahim Lodi, at Panipat in 1526, founding the Mughal Empire.",
+  "legacy": "The sultanate established Islam as a lasting force in South Asia and fostered the blending of cultures that produced the Urdu language and Indo-Islamic architecture.",
+  "sources": [
+   {
+    "title": "Wikipedia: Delhi Sultanate",
+    "url": "https://en.wikipedia.org/wiki/Delhi_Sultanate"
+   },
+   {
+    "title": "Wikipedia: Qutb Minar",
+    "url": "https://en.wikipedia.org/wiki/Qutb_Minar"
+   },
+   {
+    "title": "Wikipedia: Razia Sultan",
+    "url": "https://en.wikipedia.org/wiki/Razia_Sultan"
+   },
+   {
+    "title": "Taagepera (1997), Expansion and Contraction Patterns of Large Polities",
+    "url": "https://escholarship.org/content/qt3cn68807/qt3cn68807.pdf"
+   },
+   {
+    "title": "Turchin, Adams & Hall (2006), East-West Orientation of Historical Empires",
+    "url": "https://web.archive.org/web/20200707181315/http://peterturchin.com/PDF/Turchin_Adams_Hall_2006.pdf"
+   },
+   {
+    "title": "Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. V, South Asia in the time of the Khaljis and Tughluqs, c. 1290-1390",
+    "url": "https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/South_Asia_in_the_time_of_the_Khaljis_and_Tughluqs_c._1290-1390.json&canvasID=0"
+   },
+   {
+    "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. VI: The Delhi Sultanate (Internet Archive)",
+    "url": "https://archive.org/details/delhisultanate00bhar"
+   }
+  ]
+ },
+ {
+  "id": "vijayanagara-empire",
+  "name": "Vijayanagara Empire",
+  "aliases": [
+   "Vijayanagara"
+  ],
+  "clio": [
+   "Vijayanagara Empire"
+  ],
+  "region": "middle-east-south-asia",
+  "start": 1336,
+  "end": 1646,
+  "capital": "Vijayanagara (Hampi); later Penukonda, Chandragiri and Vellore",
+  "peak": {
+   "year": 1520,
+   "areaKm2": 500000,
+   "note": "Under Krishnadevaraya, almost all of India south of the Krishna river (rough estimate; other estimates run to c. 880,000 km²)"
+  },
+  "rulers": [
+   {
+    "name": "Harihara I",
+    "reign": "1336 – 1356",
+    "note": "Co-founder of the Sangama dynasty"
+   },
+   {
+    "name": "Bukka Raya I",
+    "reign": "1356 – 1377",
+    "note": "Co-founder; extended rule across the south"
+   },
+   {
+    "name": "Deva Raya II",
+    "reign": "1424 – 1446",
+    "note": "Height of the Sangama dynasty"
+   },
+   {
+    "name": "Krishnadevaraya",
+    "reign": "1509 – 1529",
+    "note": "Greatest emperor, poet and patron"
+   },
+   {
+    "name": "Aliya Rama Raya",
+    "reign": "regent 1542 – 1565",
+    "note": "Killed at the Battle of Talikota"
+   },
+   {
+    "name": "Sriranga III",
+    "reign": "1642 – 1646",
+    "note": "Last emperor"
+   }
+  ],
+  "summary": "Vijayanagara was founded in 1336 by the brothers Harihara and Bukka of the Sangama dynasty, in the wake of the Delhi Sultanate's raids into southern India. From their capital on the Tungabhadra river they united the Hindu kingdoms of the south, and for two centuries fought the Bahmani sultanate and its successors for the fertile Raichur Doab. Under Krishnadevaraya the empire covered almost all of India south of the Krishna river. Its capital was one of the largest and richest cities in the world, admired by Persian and Portuguese visitors for its markets, temples and waterworks. Revenue came from land and a busy trade in horses, spices and cotton. In 1565 the allied Deccan sultanates crushed its army at Talikota and sacked the capital, and the empire lingered in decline until 1646.",
+  "legacy": "The ruins of Hampi are a World Heritage Site, and Vijayanagara patronage helped preserve and develop South Indian music, literature and temple architecture.",
+  "sources": [
+   {
+    "title": "Wikipedia: Vijayanagara Empire",
+    "url": "https://en.wikipedia.org/wiki/Vijayanagara_Empire"
+   },
+   {
+    "title": "Wikipedia: Krishnadevaraya",
+    "url": "https://en.wikipedia.org/wiki/Krishnadevaraya"
+   },
+   {
+    "title": "Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. V, South Asia in the time of the Lodis, 1451-1526",
+    "url": "https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/South_Asia_in_the_time_of_the_Lodis_1451-1526.json&canvasID=0"
+   },
+   {
+    "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. VI: The Delhi Sultanate (Internet Archive)",
+    "url": "https://archive.org/details/delhisultanate00bhar"
+   }
+  ]
+ },
+ {
+  "id": "umayyad-caliphate",
+  "name": "Umayyad Caliphate",
+  "aliases": [
+   "Umayyad Caliphate"
+  ],
+  "clio": [
+   "Umayyad Caliphate"
+  ],
+  "region": "middle-east-south-asia",
+  "start": 661,
+  "end": 750,
+  "capital": "Damascus",
+  "peak": {
+   "year": 720,
+   "areaKm2": 11100000,
+   "note": "From Spain and Morocco to the Indus and Central Asia; c. 11.1M km² in 720 (Taagepera 1997)"
+  },
+  "rulers": [
+   {
+    "name": "Muawiya I",
+    "reign": "661 – 680",
+    "note": "Founder; made the caliphate hereditary"
+   },
+   {
+    "name": "Abd al-Malik",
+    "reign": "685 – 705",
+    "note": "Made Arabic the language of government; built the Dome of the Rock"
+   },
+   {
+    "name": "al-Walid I",
+    "reign": "705 – 715",
+    "note": "Conquests of Spain, Sindh and Transoxiana"
+   },
+   {
+    "name": "Umar II",
+    "reign": "717 – 720",
+    "note": "Pious reformer"
+   },
+   {
+    "name": "Hisham",
+    "reign": "724 – 743",
+    "note": "Last strong Umayyad caliph"
+   },
+   {
+    "name": "Marwan II",
+    "reign": "744 – 750",
+    "note": "Last caliph, defeated by the Abbasids"
+   }
+  ],
+  "summary": "After the murder of the fourth caliph Ali, Muawiya, governor of Syria and a member of the Meccan Umayyad clan, became caliph in 661 and made the office hereditary. Ruling from Damascus, the Umayyads continued the Arab conquests on an enormous scale: North Africa, Spain, Transoxiana and Sindh were all taken by the early 8th century, creating one of the largest empires in history. Abd al-Malik made Arabic the language of government, introduced Islamic coinage and built the Dome of the Rock in Jerusalem. Arab Muslims formed a privileged ruling class, which angered non-Arab converts and supporters of Ali's family. A revolt that began in Khurasan in 747 led to the dynasty's overthrow by the Abbasids in 750, although one prince escaped to found an Umayyad emirate in Spain.",
+  "legacy": "The Umayyads spread Islam and the Arabic language from the Atlantic to India, laying the foundations of the Islamic world.",
+  "sources": [
+   {
+    "title": "Wikipedia: Umayyad Caliphate",
+    "url": "https://en.wikipedia.org/wiki/Umayyad_Caliphate"
+   },
+   {
+    "title": "World History Encyclopedia: Umayyad Dynasty",
+    "url": "https://www.worldhistory.org/Umayyad_Dynasty/"
+   },
+   {
+    "title": "Taagepera (1997), Expansion and Contraction Patterns of Large Polities",
+    "url": "https://escholarship.org/content/qt3cn68807/qt3cn68807.pdf"
+   }
+  ]
+ },
+ {
+  "id": "abbasid-caliphate",
+  "name": "Abbasid Caliphate",
+  "aliases": [
+   "Abbasid Caliphate"
+  ],
+  "clio": [
+   "Abbasid Caliphate",
+   "Abbasid Caliphate/Buyid Dynasty"
+  ],
+  "region": "middle-east-south-asia",
+  "start": 750,
+  "end": 1258,
+  "capital": "Kufa, then Baghdad (from 762) and Samarra (836 – 892)",
+  "peak": {
+   "year": 750,
+   "areaKm2": 11100000,
+   "note": "At its founding, holding almost all the former Umayyad lands from North Africa to Central Asia; c. 11.1M km² in 750 (Taagepera 1997; Turchin, Adams & Hall 2006), falling to c. 8.3M km² by 800 under Harun al-Rashid as Spain and North Africa broke away"
+  },
+  "rulers": [
+   {
+    "name": "al-Saffah",
+    "reign": "750 – 754",
+    "note": "First Abbasid caliph"
+   },
+   {
+    "name": "al-Mansur",
+    "reign": "754 – 775",
+    "note": "Founded Baghdad"
+   },
+   {
+    "name": "Harun al-Rashid",
+    "reign": "786 – 809",
+    "note": "Caliph of the Thousand and One Nights"
+   },
+   {
+    "name": "al-Ma'mun",
+    "reign": "813 – 833",
+    "note": "Patron of the House of Wisdom"
+   },
+   {
+    "name": "al-Mu'tasim",
+    "reign": "833 – 842",
+    "note": "Built an army of Turkish slave soldiers"
+   },
+   {
+    "name": "al-Musta'sim",
+    "reign": "1242 – 1258",
+    "note": "Last caliph in Baghdad, killed by the Mongols"
+   }
+  ],
+  "summary": "The Abbasids, descendants of the Prophet's uncle al-Abbas, overthrew the Umayyads in 750 with support from Persian converts in Khurasan. Their second caliph, al-Mansur, founded Baghdad, which became one of the world's largest cities. The Abbasid state adopted Persian-style court ceremony and a bureaucracy run by viziers, and its early centuries were a golden age: under Harun al-Rashid and al-Ma'mun, scholars at the House of Wisdom translated Greek, Persian and Indian works and advanced mathematics, astronomy and medicine. From the 9th century the caliphs relied on Turkish slave soldiers, and provinces broke away under local dynasties. From 945 the Buyids and then the Seljuks held real power in Baghdad. The Mongols under Hulagu sacked Baghdad in 1258 and killed the last caliph, al-Musta'sim.",
+  "legacy": "Abbasid scholars preserved and built on ancient learning, giving the world algebra, algorithms and much of the science later passed on to Europe.",
+  "sources": [
+   {
+    "title": "Wikipedia: Abbasid Caliphate",
+    "url": "https://en.wikipedia.org/wiki/Abbasid_Caliphate"
+   },
+   {
+    "title": "World History Encyclopedia: Abbasid Dynasty",
+    "url": "https://www.worldhistory.org/Abbasid_Dynasty/"
+   },
+   {
+    "title": "Taagepera (1997), Expansion and Contraction Patterns of Large Polities",
+    "url": "https://escholarship.org/content/qt3cn68807/qt3cn68807.pdf"
+   },
+   {
+    "title": "Turchin, Adams & Hall (2006), East-West Orientation of Historical Empires",
+    "url": "https://web.archive.org/web/20200707181315/http://peterturchin.com/PDF/Turchin_Adams_Hall_2006.pdf"
+   },
+   {
+    "title": "Wikipedia: List of largest empires (Taagepera, Turchin figures)",
+    "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+   }
+  ]
+ },
+ {
+  "id": "seljuk-empire",
+  "name": "Seljuk Empire and Sultanate of Rum",
+  "aliases": [
+   "Seljuk Empire",
+   "Seljuk Caliphate"
+  ],
+  "clio": [
+   "Great Seljuk Empire",
+   "Seljuk Dynasty",
+   "Sultanate of Rum",
+   "(Allegiance of Sultanate of Rum to Abbasid Caliphate)"
+  ],
+  "region": "middle-east-south-asia",
+  "start": 1037,
+  "end": 1308,
+  "capital": "Nishapur, Rayy, Isfahan and Merv; Konya for the Sultanate of Rum",
+  "peak": {
+   "year": 1080,
+   "areaKm2": 3900000,
+   "note": "Under Malik-Shah I, from Anatolia and the Levant to Central Asia; c. 3.9M km² in 1080 (Taagepera 1997; Turchin, Adams & Hall 2006)"
+  },
+  "rulers": [
+   {
+    "name": "Tughril Beg",
+    "reign": "1037 – 1063",
+    "note": "Founder; entered Baghdad as sultan in 1055"
+   },
+   {
+    "name": "Alp Arslan",
+    "reign": "1063 – 1072",
+    "note": "Defeated the Byzantines at Manzikert"
+   },
+   {
+    "name": "Malik-Shah I",
+    "reign": "1072 – 1092",
+    "note": "Ruled at the empire's height with vizier Nizam al-Mulk"
+   },
+   {
+    "name": "Ahmad Sanjar",
+    "reign": "1118 – 1157",
+    "note": "Last great sultan of the eastern Seljuks"
+   },
+   {
+    "name": "Kilij Arslan II",
+    "reign": "1156 – 1192",
+    "note": "Sultan of Rum who defeated Byzantium at Myriokephalon"
+   },
+   {
+    "name": "Kayqubad I",
+    "reign": "1220 – 1237",
+    "note": "Height of the Sultanate of Rum"
+   }
+  ],
+  "summary": "The Seljuks were a clan of Oghuz Turks from the steppes east of the Aral Sea who converted to Sunni Islam. Led by the brothers Tughril and Chaghri, they defeated the Ghaznavids at Dandanaqan in 1040 and swept into Iran, and Tughril entered Baghdad in 1055 as protector of the Abbasid caliph, who named him sultan. His nephew Alp Arslan crushed the Byzantines at Manzikert in 1071, opening Anatolia to Turkish settlement, and under Malik-Shah and his vizier Nizam al-Mulk the empire stretched from the Mediterranean to Central Asia, with madrasas spreading Sunni learning. After 1092 it fragmented among rival princes, and the eastern branch collapsed after Sanjar's death. A branch in Anatolia, the Sultanate of Rum, flourished at Konya until the Mongols made it a vassal in 1243; it vanished around 1308.",
+  "legacy": "The Seljuks brought Turkish peoples into the heart of the Middle East and Anatolia, preparing the way for the Ottomans, and their victories over Byzantium helped trigger the Crusades.",
+  "sources": [
+   {
+    "title": "Wikipedia: Seljuk Empire",
+    "url": "https://en.wikipedia.org/wiki/Seljuk_Empire"
+   },
+   {
+    "title": "Wikipedia: Sultanate of Rum",
+    "url": "https://en.wikipedia.org/wiki/Sultanate_of_Rum"
+   },
+   {
+    "title": "Taagepera (1997), Expansion and Contraction Patterns of Large Polities",
+    "url": "https://escholarship.org/content/qt3cn68807/qt3cn68807.pdf"
+   },
+   {
+    "title": "Turchin, Adams & Hall (2006), East-West Orientation of Historical Empires",
+    "url": "https://web.archive.org/web/20200707181315/http://peterturchin.com/PDF/Turchin_Adams_Hall_2006.pdf"
+   }
+  ]
+ },
+ {
+  "id": "ilkhanate",
+  "name": "Ilkhanate",
+  "aliases": [
+   "Ilkhanate"
+  ],
+  "clio": [
+   "Ilkhanate",
+   "(Allegiance of Ilkhanate to Yuan Dynasty)"
+  ],
+  "region": "middle-east-south-asia",
+  "start": 1256,
+  "end": 1335,
+  "capital": "Maragheh, then Tabriz and Soltaniyeh",
+  "peak": {
+   "year": 1310,
+   "areaKm2": 3750000,
+   "note": "Iran, Iraq, the Caucasus and much of Anatolia; c. 3.75M km² in 1310 (Taagepera 1997; Turchin, Adams & Hall 2006)"
+  },
+  "rulers": [
+   {
+    "name": "Hulagu",
+    "reign": "1256 – 1265",
+    "note": "Founder; sacked Baghdad in 1258"
+   },
+   {
+    "name": "Abaqa",
+    "reign": "1265 – 1282",
+    "note": "Fought the Mamluks and the Golden Horde"
+   },
+   {
+    "name": "Arghun",
+    "reign": "1284 – 1291",
+    "note": "Sought alliances with European kings"
+   },
+   {
+    "name": "Ghazan",
+    "reign": "1295 – 1304",
+    "note": "Converted to Islam and reformed the state"
+   },
+   {
+    "name": "Öljaitü",
+    "reign": "1304 – 1316",
+    "note": "Built the great dome of Soltaniyeh"
+   },
+   {
+    "name": "Abu Sa'id",
+    "reign": "1316 – 1335",
+    "note": "Last effective Ilkhan"
+   }
+  ],
+  "summary": "The Ilkhanate was the Mongol khanate in Iran, founded by Hulagu, grandson of Genghis Khan, who was sent west by his brother, the Great Khan Möngke. Hulagu destroyed the fortresses of the Assassins and sacked Baghdad in 1258, ending the Abbasid caliphate, but his advance into Syria was stopped by the Mamluks in 1260. The Ilkhans ruled Iran, Iraq, the Caucasus and Anatolia, fought the Golden Horde and the Mamluks, and exchanged embassies with the pope and European kings. In 1295 Ghazan converted to Islam and, with his vizier Rashid al-Din, reformed taxation and patronised learning; Rashid al-Din's world history is a landmark. Ilkhanid Tabriz became a hub of trade and art linking China and the west. When Abu Sa'id died without an heir in 1335, the khanate collapsed into rival successor states.",
+  "legacy": "The Ilkhanate reconnected Iran with China, blending Persian and Chinese art and shaping the later tradition of Persian miniature painting.",
+  "sources": [
+   {
+    "title": "Wikipedia: Ilkhanate",
+    "url": "https://en.wikipedia.org/wiki/Ilkhanate"
+   },
+   {
+    "title": "World History Encyclopedia: Ilkhanate",
+    "url": "https://www.worldhistory.org/Ilkhanate/"
+   },
+   {
+    "title": "Taagepera (1997), Expansion and Contraction Patterns of Large Polities",
+    "url": "https://escholarship.org/content/qt3cn68807/qt3cn68807.pdf"
+   },
+   {
+    "title": "Turchin, Adams & Hall (2006), East-West Orientation of Historical Empires",
+    "url": "https://web.archive.org/web/20200707181315/http://peterturchin.com/PDF/Turchin_Adams_Hall_2006.pdf"
+   }
+  ]
+ },
+ {
+  "id": "timurid-empire",
+  "name": "Timurid Empire",
+  "aliases": [
+   "Timurid Empire",
+   "Timurid Emirates"
+  ],
+  "clio": [
+   "Timurid Empire"
+  ],
+  "region": "north-central-asia",
+  "start": 1370,
+  "end": 1507,
+  "capital": "Samarkand; later Herat",
+  "peak": {
+   "year": 1405,
+   "areaKm2": 4400000,
+   "note": "At Timur's death, from Anatolia to northern India; c. 4.4M km² in 1405 (Taagepera 1997; Turchin, Adams & Hall 2006)"
+  },
+  "rulers": [
+   {
+    "name": "Timur (Tamerlane)",
+    "reign": "1370 – 1405",
+    "note": "Founder and conqueror"
+   },
+   {
+    "name": "Shah Rukh",
+    "reign": "1405 – 1447",
+    "note": "Ruled from Herat; patron of the arts"
+   },
+   {
+    "name": "Ulugh Beg",
+    "reign": "1447 – 1449",
+    "note": "Astronomer-king who built the Samarkand observatory"
+   },
+   {
+    "name": "Abu Sa'id Mirza",
+    "reign": "1451 – 1469",
+    "note": "Briefly reunited much of the empire"
+   },
+   {
+    "name": "Sultan Husayn Bayqara",
+    "reign": "1469 – 1506",
+    "note": "Last great Timurid; his Herat court was a cultural centre"
+   }
+  ],
+  "summary": "Timur, known in Europe as Tamerlane, was a Turkic-Mongol warlord from Transoxiana who made himself master of the western Chagatai lands in 1370. Claiming to restore Genghis Khan's empire, though he ruled through puppet khans and called himself emir, he spent 35 years campaigning: he devastated Iran, crushed the Golden Horde, sacked Delhi in 1398 and defeated the Ottoman sultan Bayezid I at Ankara in 1402. His conquests were brutal, marked by towers of skulls, but he filled Samarkand with captured craftsmen and splendid buildings. After his death in 1405, while marching on China, his son Shah Rukh held the core together from Herat, and his grandson Ulugh Beg built a famous observatory. The empire then splintered among princes and fell to the Uzbeks and Safavids by 1507.",
+  "legacy": "The Timurid courts at Samarkand and Herat sparked a brilliant flowering of Persian art, architecture and science, and Timur's descendant Babur founded the Mughal Empire.",
+  "sources": [
+   {
+    "title": "Wikipedia: Timurid Empire",
+    "url": "https://en.wikipedia.org/wiki/Timurid_Empire"
+   },
+   {
+    "title": "Wikipedia: Abu Sa'id Mirza",
+    "url": "https://en.wikipedia.org/wiki/Abu_Sa'id_Mirza"
+   },
+   {
+    "title": "Taagepera (1997), Expansion and Contraction Patterns of Large Polities",
+    "url": "https://escholarship.org/content/qt3cn68807/qt3cn68807.pdf"
+   },
+   {
+    "title": "Turchin, Adams & Hall (2006), East-West Orientation of Historical Empires",
+    "url": "https://web.archive.org/web/20200707181315/http://peterturchin.com/PDF/Turchin_Adams_Hall_2006.pdf"
+   }
+  ]
+ },
+ {
+  "id": "ottoman-empire",
+  "name": "Ottoman Empire",
+  "aliases": [
+   "Ottoman Empire",
+   "Ottoman Sultanate"
+  ],
+  "clio": [
+   "Ottoman Empire"
+  ],
+  "region": "middle-east-south-asia",
+  "start": 1299,
+  "end": 1922,
+  "capital": "Söğüt, Bursa and Edirne, then Constantinople (Istanbul) from 1453",
+  "peak": {
+   "year": 1683,
+   "areaKm2": 5200000,
+   "note": "Before the failed second siege of Vienna; c. 5.2M km² in 1683 (Taagepera 1997; Turchin, Adams & Hall 2006)"
+  },
+  "rulers": [
+   {
+    "name": "Osman I",
+    "reign": "c. 1299 – 1324",
+    "note": "Founder of the dynasty"
+   },
+   {
+    "name": "Mehmed II",
+    "reign": "1444 – 1446, 1451 – 1481",
+    "note": "Conquered Constantinople in 1453"
+   },
+   {
+    "name": "Selim I",
+    "reign": "1512 – 1520",
+    "note": "Conquered Syria, Egypt and Arabia"
+   },
+   {
+    "name": "Suleiman I the Magnificent",
+    "reign": "1520 – 1566",
+    "note": "Lawgiver; the empire's golden age"
+   },
+   {
+    "name": "Mahmud II",
+    "reign": "1808 – 1839",
+    "note": "Abolished the Janissaries and began modernisation"
+   },
+   {
+    "name": "Abdul Hamid II",
+    "reign": "1876 – 1909",
+    "note": "Autocratic reformer of the late empire"
+   },
+   {
+    "name": "Mehmed VI",
+    "reign": "1918 – 1922",
+    "note": "Last sultan"
+   }
+  ],
+  "summary": "The Ottomans began as one of many small Turkish principalities in north-west Anatolia, led around 1299 by Osman, from whom the dynasty takes its name. Combining frontier warfare against Byzantium with skilful alliances, his successors expanded into the Balkans, and in 1453 Mehmed II captured Constantinople. Selim I conquered the Mamluk lands of Syria, Egypt and Arabia, and under Suleiman the Magnificent the empire reached Hungary and dominated the eastern Mediterranean and Red Sea. The sultans ruled a multi-ethnic, multi-faith realm through a slave-based elite, including the Janissary infantry, and allowed religious communities to manage their own affairs. From the late 17th century the empire lost territory to Austria and Russia and, despite modernising reforms, was dismantled after defeat in the First World War; the sultanate was abolished in 1922.",
+  "legacy": "For six centuries the Ottomans linked Europe, Asia and Africa, and their legacy shapes the borders, cuisines and politics of the Balkans and the Middle East today.",
+  "sources": [
+   {
+    "title": "Wikipedia: Ottoman Empire",
+    "url": "https://en.wikipedia.org/wiki/Ottoman_Empire"
+   },
+   {
+    "title": "World History Encyclopedia: Ottoman Empire",
+    "url": "https://www.worldhistory.org/Ottoman_Empire/"
+   },
+   {
+    "title": "Taagepera (1997), Expansion and Contraction Patterns of Large Polities",
+    "url": "https://escholarship.org/content/qt3cn68807/qt3cn68807.pdf"
+   },
+   {
+    "title": "Turchin, Adams & Hall (2006), East-West Orientation of Historical Empires",
+    "url": "https://web.archive.org/web/20200707181315/http://peterturchin.com/PDF/Turchin_Adams_Hall_2006.pdf"
+   }
+  ]
+ },
+ {
+  "id": "xiongnu",
+  "name": "Xiongnu Empire",
+  "aliases": [
+   "Xiongnu",
+   "Southern Xiongnu"
+  ],
+  "clio": [
+   "Xiongnu",
+   "Southern Xiongnu"
+  ],
+  "region": "east-asia",
+  "start": -209,
+  "end": 216,
+  "capital": "Mobile royal court (ordo) in the Orkhon valley, Mongolia",
+  "peak": {
+   "year": -176,
+   "areaKm2": 9000000,
+   "note": "Under Modu Chanyu, from Manchuria to the Tarim Basin; c. 9.0M km² (Taagepera 1979; Turchin et al. 2006); c. 9.0M km² in 176 BCE (Turchin, Adams & Hall 2006; Taagepera 1979)"
+  },
+  "rulers": [
+   {
+    "name": "Touman",
+    "reign": "d. 209 BCE",
+    "note": "First chanyu known by name"
+   },
+   {
+    "name": "Modu Chanyu",
+    "reign": "209 – 174 BCE",
+    "note": "Founder of the steppe empire; trapped the Han founder at Baideng"
+   },
+   {
+    "name": "Laoshang Chanyu",
+    "reign": "174 – 161 BCE",
+    "note": "Drove the Yuezhi west"
+   },
+   {
+    "name": "Huhanye Chanyu",
+    "reign": "58 – 31 BCE",
+    "note": "Submitted to the Han during a civil war"
+   }
+  ],
+  "summary": "The Xiongnu were a confederation of nomadic peoples on the Mongolian steppe. In 209 BCE Modu killed his father Touman and made himself chanyu, or supreme ruler, uniting the tribes into the first great steppe empire. Modu defeated the Donghu and Yuezhi, and in 200 BCE trapped the founder of the Han dynasty at Baideng, forcing China into treaties that sent silk, grain and princesses as brides to the steppe. The Xiongnu state was a hierarchy of tribal leaders under the chanyu's clan, relying on mounted archers and control of trade. From 133 BCE Emperor Wu of Han launched long wars that pushed them back. Civil wars split the confederation: the southern Xiongnu submitted to the Han and settled inside China, while the northern branch was crushed around 89 to 91 CE.",
+  "legacy": "The Xiongnu set the pattern for later steppe empires and for China's frontier policy, and their pressure spurred early Great Wall building and the opening of the Silk Road.",
+  "sources": [
+   {
+    "title": "Wikipedia: Xiongnu",
+    "url": "https://en.wikipedia.org/wiki/Xiongnu"
+   },
+   {
+    "title": "Turchin, Adams & Hall (2006), East-West Orientation of Historical Empires",
+    "url": "https://web.archive.org/web/20200707181315/http://peterturchin.com/PDF/Turchin_Adams_Hall_2006.pdf"
+   },
+   {
+    "title": "Wikipedia: List of largest empires (Taagepera 1979 figures)",
+    "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+   },
+   {
+    "title": "Herrmann, Historical and Commercial Atlas of China (1935): The Hsiung-nu or Huns in Central Asia, 176 and 128–36 B.C.",
+    "url": "https://archive.org/details/kpbc.umk.pl.Kartografia_040_POWER_001_10_258359"
+   }
+  ]
+ },
+ {
+  "id": "gokturk-khaganate",
+  "name": "Turkic Khaganate (Göktürks)",
+  "aliases": [
+   "Göktürks",
+   "Western Gokturk Khaganate"
+  ],
+  "clio": [
+   "Göktürk Khaganate",
+   "Western Göktürks",
+   "Eastern Göktürks",
+   "Turks"
+  ],
+  "region": "north-central-asia",
+  "start": 552,
+  "end": 744,
+  "capital": "Ötüken in the Orkhon valley (Mongolia); western court at Suyab",
+  "peak": {
+   "year": 557,
+   "areaKm2": 6000000,
+   "note": "From Manchuria towards the Black Sea steppe; c. 6.0M km² in 557 (Turchin, Adams & Hall 2006; Taagepera 1979)"
+  },
+  "rulers": [
+   {
+    "name": "Bumin Qaghan",
+    "reign": "552",
+    "note": "Founder; overthrew the Rouran"
+   },
+   {
+    "name": "Istämi",
+    "reign": "552 – 576",
+    "note": "Ruler of the western wing; dealt with Byzantium and Persia"
+   },
+   {
+    "name": "Muqan Qaghan",
+    "reign": "553 – 572",
+    "note": "Expanded the empire to its greatest extent"
+   },
+   {
+    "name": "Ilterish Qaghan",
+    "reign": "c. 682 – 692",
+    "note": "Revived the eastern khaganate after Tang rule"
+   },
+   {
+    "name": "Bilge Qaghan",
+    "reign": "716 – 734",
+    "note": "Height of the Second Khaganate; honoured in the Orkhon inscriptions"
+   }
+  ],
+  "summary": "The Göktürks, or Celestial Turks, were metal-working vassals of the Rouran in the Altai Mountains. In 552 their chief Bumin rebelled, destroyed the Rouran and took the title qaghan, founding the first state to bear the name Turk. Within a generation his brother Istämi and son Muqan had built an empire stretching from Manchuria to the Black Sea, controlling the Silk Road and negotiating with Byzantium, Persia and China. The empire split into eastern and western khaganates around 582, and both fell under Tang Chinese control in the 630s and 650s. In 682 Ilterish revived the eastern khaganate, which reached its height under Bilge Qaghan. Internal strife and an uprising by the Uyghurs, Basmyls and Karluks ended the khaganate in 744.",
+  "legacy": "The Göktürks gave their name to the Turkic peoples, and the Orkhon inscriptions are the oldest known texts in a Turkic language.",
+  "sources": [
+   {
+    "title": "Wikipedia: First Turkic Khaganate",
+    "url": "https://en.wikipedia.org/wiki/First_Turkic_Khaganate"
+   },
+   {
+    "title": "Wikipedia: Second Turkic Khaganate",
+    "url": "https://en.wikipedia.org/wiki/Second_Turkic_Khaganate"
+   },
+   {
+    "title": "Wikipedia: Istämi",
+    "url": "https://en.wikipedia.org/wiki/Istämi"
+   },
+   {
+    "title": "Wikipedia: Orkhon inscriptions",
+    "url": "https://en.wikipedia.org/wiki/Orkhon_inscriptions"
+   },
+   {
+    "title": "Turchin, Adams & Hall (2006), East-West Orientation of Historical Empires",
+    "url": "https://web.archive.org/web/20200707181315/http://peterturchin.com/PDF/Turchin_Adams_Hall_2006.pdf"
+   },
+   {
+    "title": "Wikipedia: List of largest empires (Taagepera, Turchin figures)",
+    "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+   }
+  ]
+ },
+ {
+  "id": "tibetan-empire",
+  "name": "Tibetan Empire",
+  "aliases": [
+   "Tibetan Empire",
+   "Tufan Empire"
+  ],
+  "clio": [
+   "Tibetan Empire"
+  ],
+  "region": "east-asia",
+  "start": 618,
+  "end": 842,
+  "capital": "Lhasa (Rasa)",
+  "peak": {
+   "year": 800,
+   "areaKm2": 4600000,
+   "note": "From the Tarim Basin to Bengal and western China; c. 4.6M km² (Taagepera 1997; Turchin et al. 2006, for 800); c. 4.6M km² in 800 (Taagepera 1997; Turchin, Adams & Hall 2006)"
+  },
+  "rulers": [
+   {
+    "name": "Namri Songtsen",
+    "reign": "d. c. 618",
+    "note": "Began uniting the Tibetan clans"
+   },
+   {
+    "name": "Songtsen Gampo",
+    "reign": "c. 618 – 650",
+    "note": "Founder of the empire and of Lhasa"
+   },
+   {
+    "name": "Trisong Detsen",
+    "reign": "755 – c. 797",
+    "note": "Made Buddhism the state religion; took Chang'an in 763"
+   },
+   {
+    "name": "Ralpacan",
+    "reign": "c. 815 – 838",
+    "note": "Concluded the peace treaty of 821 – 822 with China"
+   },
+   {
+    "name": "Langdarma",
+    "reign": "c. 838/841 – 842 (dates debated)",
+    "note": "Last emperor; his murder broke up the empire"
+   }
+  ],
+  "summary": "The Tibetan Empire was forged in the early 7th century when Namri Songtsen and his son Songtsen Gampo, kings of the Yarlung valley, united the clans of the Tibetan plateau. Songtsen Gampo founded Lhasa, married Nepalese and Chinese princesses, and is credited with introducing Buddhism and a writing system adapted from Indian scripts. Tibetan armies became a major military power: they fought Tang China for control of the Silk Road oasis cities of the Tarim Basin, and in 763 briefly captured the Tang capital, Chang'an. Under Trisong Detsen Buddhism became the state religion and the first monastery, Samye, was built. A peace treaty with China was carved in stone in 822. After the assassination of King Langdarma around 842, succession disputes broke the empire apart.",
+  "legacy": "The empire unified Tibet's language and identity and planted the Buddhist tradition that has defined Tibetan civilisation ever since.",
+  "sources": [
+   {
+    "title": "Wikipedia: Tibetan Empire",
+    "url": "https://en.wikipedia.org/wiki/Tibetan_Empire"
+   },
+   {
+    "title": "Wikipedia: Trisong Detsen",
+    "url": "https://en.wikipedia.org/wiki/Trisong_Detsen"
+   },
+   {
+    "title": "Wikipedia: Ralpachen",
+    "url": "https://en.wikipedia.org/wiki/Ralpachen"
+   },
+   {
+    "title": "Wikipedia: Langdarma",
+    "url": "https://en.wikipedia.org/wiki/Langdarma"
+   },
+   {
+    "title": "Taagepera (1997), Expansion and Contraction Patterns of Large Polities",
+    "url": "https://escholarship.org/content/qt3cn68807/qt3cn68807.pdf"
+   },
+   {
+    "title": "Turchin, Adams & Hall (2006), East-West Orientation of Historical Empires",
+    "url": "https://web.archive.org/web/20200707181315/http://peterturchin.com/PDF/Turchin_Adams_Hall_2006.pdf"
+   },
+   {
+    "title": "Wikipedia: List of largest empires",
+    "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+   }
+  ]
+ },
+ {
+  "id": "mongol-empire",
+  "name": "Mongol Empire",
+  "aliases": [
+   "Mongol Empire",
+   "Mongols"
+  ],
+  "clio": [
+   "Mongol Empire"
+  ],
+  "region": "east-asia",
+  "start": 1206,
+  "end": 1368,
+  "capital": "Avarga, then Karakorum (from 1235); from 1264 Khanbaliq (Beijing) for the Great Khan",
+  "peak": {
+   "year": 1270,
+   "areaKm2": 24000000,
+   "note": "Largest contiguous land empire in history, from Korea to eastern Europe; c. 24.0M km² (Turchin, Adams & Hall 2006, dated 1270; Taagepera 1997 gives 23.5M in 1294 and 24M in 1309)"
+  },
+  "rulers": [
+   {
+    "name": "Genghis Khan",
+    "reign": "1206 – 1227",
+    "note": "Founder; united the Mongol tribes"
+   },
+   {
+    "name": "Ögedei Khan",
+    "reign": "1229 – 1241",
+    "note": "Conquered the Jin and sent armies into Europe"
+   },
+   {
+    "name": "Güyük Khan",
+    "reign": "1246 – 1248",
+    "note": "Short reign marked by family rivalry"
+   },
+   {
+    "name": "Möngke Khan",
+    "reign": "1251 – 1259",
+    "note": "Launched campaigns against the Song and Baghdad"
+   },
+   {
+    "name": "Kublai Khan",
+    "reign": "1260 – 1294",
+    "note": "Founded the Yuan dynasty and conquered the Song"
+   }
+  ],
+  "summary": "In 1206 an assembly of steppe tribes proclaimed Temüjin as Genghis Khan, ruler of all the Mongols. Reorganising his followers into units of tens, hundreds and thousands loyal to him rather than to their clans, he created a disciplined army of mounted archers that conquered northern China, Central Asia and parts of Persia. His sons and grandsons continued the expansion: Ögedei finished off the Jin dynasty, Batu overran Russia and invaded Poland and Hungary, Hulagu took Baghdad, and Kublai conquered the Song. The Mongols ruled through local officials, a postal relay system and religious tolerance, and their peace made Eurasian trade routes safer than ever. After Möngke's death in 1259 the empire split into four khanates, and Mongol rule in China ended in 1368.",
+  "legacy": "The Mongol Empire connected East and West as never before, spreading goods, technologies and ideas, and also the Black Death, across Eurasia.",
+  "sources": [
+   {
+    "title": "Wikipedia: Mongol Empire",
+    "url": "https://en.wikipedia.org/wiki/Mongol_Empire"
+   },
+   {
+    "title": "World History Encyclopedia: Mongol Empire",
+    "url": "https://www.worldhistory.org/Mongol_Empire/"
+   },
+   {
+    "title": "Wikipedia: Yuan dynasty",
+    "url": "https://en.wikipedia.org/wiki/Yuan_dynasty"
+   },
+   {
+    "title": "Taagepera (1997), Expansion and Contraction Patterns of Large Polities",
+    "url": "https://escholarship.org/content/qt3cn68807/qt3cn68807.pdf"
+   },
+   {
+    "title": "Turchin, Adams & Hall (2006), East-West Orientation of Historical Empires",
+    "url": "https://web.archive.org/web/20200707181315/http://peterturchin.com/PDF/Turchin_Adams_Hall_2006.pdf"
+   },
+   {
+    "title": "Wikipedia: List of largest empires",
+    "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+   }
+  ]
+ },
+ {
+  "id": "golden-horde",
+  "name": "Golden Horde (Ulus of Jochi)",
+  "aliases": [
+   "Khanate of the Golden Horde",
+   "Golden Horde",
+   "White Horde",
+   "Blue Horde"
+  ],
+  "clio": [
+   "Golden Horde",
+   "(Allegiance of Golden Horde to Yuan Dynasty)",
+   "(Alliance between Golden Horde and Timurid Empire)",
+   "White Horde",
+   "Blue Horde"
+  ],
+  "region": "north-central-asia",
+  "start": 1242,
+  "end": 1502,
+  "capital": "Sarai on the lower Volga",
+  "peak": {
+   "year": 1310,
+   "areaKm2": 6000000,
+   "note": "From the Danube to western Siberia; c. 6.0M km² in 1310 (Taagepera 1997; Turchin, Adams & Hall 2006)"
+  },
+  "rulers": [
+   {
+    "name": "Batu Khan",
+    "reign": "1227 – 1255",
+    "note": "Led the western campaign and founded Sarai"
+   },
+   {
+    "name": "Berke",
+    "reign": "1257 – 1266",
+    "note": "First Muslim khan; fought the Ilkhanate"
+   },
+   {
+    "name": "Özbeg Khan",
+    "reign": "1313 – 1341",
+    "note": "Made Islam the state religion; height of the Horde"
+   },
+   {
+    "name": "Janibeg",
+    "reign": "1342 – 1357",
+    "note": "Besieged Caffa during the Black Death"
+   },
+   {
+    "name": "Tokhtamysh",
+    "reign": "1380 – 1395",
+    "note": "Reunited the Horde and burned Moscow, then was crushed by Timur"
+   }
+  ],
+  "summary": "The Golden Horde was the north-western part of the Mongol Empire, granted to the descendants of Genghis Khan's eldest son Jochi. After his son Batu's great western campaign of 1236 to 1242 conquered the Volga Bulgars, the Kipchak steppe and the Russian principalities, Batu settled at Sarai on the lower Volga. The khans ruled the steppe directly, while Russian princes kept their thrones as tribute-paying vassals. The Horde grew rich on trade along the Volga and through Black Sea ports, and under Özbeg Khan it adopted Islam. From the 1350s it suffered plague and civil war; Tokhtamysh briefly reunited it, but Timur destroyed Sarai in 1395. It then broke into the khanates of Kazan, Crimea, Astrakhan and others, and the remnant Great Horde was destroyed in 1502.",
+  "legacy": "Two centuries of Horde overlordship shaped Russian political traditions, and its Turkic Muslim population included the ancestors of the Volga and Crimean Tatars and the Kazakhs.",
+  "sources": [
+   {
+    "title": "Wikipedia: Golden Horde",
+    "url": "https://en.wikipedia.org/wiki/Golden_Horde"
+   },
+   {
+    "title": "Wikipedia: Batu Khan",
+    "url": "https://en.wikipedia.org/wiki/Batu_Khan"
+   },
+   {
+    "title": "World History Encyclopedia: Golden Horde",
+    "url": "https://www.worldhistory.org/Golden_Horde/"
+   },
+   {
+    "title": "Taagepera (1997), Expansion and Contraction Patterns of Large Polities",
+    "url": "https://escholarship.org/content/qt3cn68807/qt3cn68807.pdf"
+   },
+   {
+    "title": "Turchin, Adams & Hall (2006), East-West Orientation of Historical Empires",
+    "url": "https://web.archive.org/web/20200707181315/http://peterturchin.com/PDF/Turchin_Adams_Hall_2006.pdf"
+   }
+  ]
+ },
+ {
+  "id": "chagatai-khanate",
+  "name": "Chagatai Khanate",
+  "aliases": [
+   "Chagatai Khanate"
+  ],
+  "clio": [
+   "Chagatai Khanate",
+   "(Allegiance of Chagatai Khanate to Yuan Dynasty)",
+   "Moghulistan",
+   "Eastern Chagatai Khanate"
+  ],
+  "region": "north-central-asia",
+  "start": 1225,
+  "end": 1680,
+  "capital": "Almaliq; later moving royal camps and Qarshi",
+  "peak": {
+   "year": 1310,
+   "areaKm2": 3500000,
+   "note": "Transoxiana, Semirechye, the Tarim Basin and the Afghan borderlands; c. 3.5M km² in 1310 (Taagepera 1997; Turchin, Adams & Hall 2006 give the same figure for 1350)"
+  },
+  "rulers": [
+   {
+    "name": "Chagatai Khan",
+    "reign": "1225 – 1242",
+    "note": "Second son of Genghis Khan"
+   },
+   {
+    "name": "Alghu",
+    "reign": "1260 – 1266",
+    "note": "Made the khanate effectively independent"
+   },
+   {
+    "name": "Duwa",
+    "reign": "1282 – 1307",
+    "note": "Ally of Kaidu against the Yuan"
+   },
+   {
+    "name": "Kebek",
+    "reign": "1318 – 1326",
+    "note": "Settled in Transoxiana and reformed coinage"
+   },
+   {
+    "name": "Tarmashirin",
+    "reign": "1331 – 1334",
+    "note": "Converted to Islam, provoking a nomad revolt"
+   },
+   {
+    "name": "Tughlugh Timur",
+    "reign": "1347 – 1363",
+    "note": "Khan of Moghulistan in the east"
+   }
+  ],
+  "summary": "The Chagatai Khanate was the Central Asian share of the Mongol Empire, given to Genghis Khan's second son Chagatai. It covered Transoxiana, the steppes of Semirechye and the oasis cities of the Tarim Basin. Its khans kept their nomadic way of life longer than the other Mongol branches, and for decades they fought the Yuan and the Ilkhanate, often in alliance with the rebel prince Kaidu. Under Kebek and Tarmashirin the khans began to settle and adopt Islam, which provoked a revolt by the eastern nomads. By the 1340s the khanate had split into a western half in Transoxiana, soon dominated by Timur, and an eastern half known as Moghulistan, where Chagatayid khans ruled until the late 17th century, when the Dzungars took the Tarim Basin.",
+  "legacy": "The Chagatai Turkic language, named after the khanate, became the classical literary language of Central Asia and the ancestor of modern Uzbek and Uyghur.",
+  "sources": [
+   {
+    "title": "Wikipedia: Chagatai Khanate",
+    "url": "https://en.wikipedia.org/wiki/Chagatai_Khanate"
+   },
+   {
+    "title": "Wikipedia: Kebek",
+    "url": "https://en.wikipedia.org/wiki/Kebek"
+   },
+   {
+    "title": "World History Encyclopedia: Chagatai Khanate",
+    "url": "https://www.worldhistory.org/Chagatai_Khanate/"
+   },
+   {
+    "title": "Taagepera (1997), Expansion and Contraction Patterns of Large Polities",
+    "url": "https://escholarship.org/content/qt3cn68807/qt3cn68807.pdf"
+   },
+   {
+    "title": "Turchin, Adams & Hall (2006), East-West Orientation of Historical Empires",
+    "url": "https://web.archive.org/web/20200707181315/http://peterturchin.com/PDF/Turchin_Adams_Hall_2006.pdf"
+   }
+  ]
+ },
+ {
+  "id": "shang-dynasty",
+  "name": "Shang dynasty",
+  "aliases": [],
+  "clio": [
+   "Shang Dynasty"
+  ],
+  "region": "east-asia",
+  "start": -1600,
+  "end": -1046,
+  "capital": "Several in turn, finally Yin (near modern Anyang)",
+  "peak": {
+   "year": -1122,
+   "areaKm2": 1250000,
+   "note": "Late Shang, the middle and lower Yellow River plain and allied lands; c. 1.25M km² (Taagepera 1978; Turchin, Adams & Hall 2006), dated 1122 BCE, the traditional date of the Zhou conquest"
+  },
+  "rulers": [
+   {
+    "name": "Tang (Cheng Tang)",
+    "reign": "c. 1600 BCE",
+    "note": "Founder; overthrew the Xia"
+   },
+   {
+    "name": "Pan Geng",
+    "reign": "c. 1300 BCE",
+    "note": "Moved the capital to Yin"
+   },
+   {
+    "name": "Wu Ding",
+    "reign": "c. 1250 – 1192 BCE",
+    "note": "Greatest Shang king, known from oracle bones"
+   },
+   {
+    "name": "Fu Hao",
+    "reign": "c. 1200 BCE",
+    "note": "Wu Ding's consort and general, whose tomb survives intact"
+   },
+   {
+    "name": "Di Xin",
+    "reign": "d. c. 1046 BCE",
+    "note": "Last king, defeated by the Zhou at Muye"
+   }
+  ],
+  "summary": "The Shang is the earliest Chinese dynasty confirmed by both written records and archaeology. Traditionally founded by Tang around 1600 BCE after overthrowing the Xia, it ruled the middle and lower Yellow River valley. Shang kings governed with the help of relatives and allied lords and moved their capital several times, finally settling at Yin near modern Anyang around 1300 BCE. They practised elaborate ancestor worship, and to ask the spirits about harvests, war and childbirth, diviners cracked oracle bones of turtle shell and ox bone, inscribing the questions in the earliest known Chinese writing. Shang craftsmen cast spectacular bronze vessels, and royal tombs held chariots and human sacrifices. Around 1046 BCE King Wu of Zhou defeated the last Shang king, Di Xin, at the Battle of Muye.",
+  "legacy": "Shang oracle-bone script is the direct ancestor of modern Chinese characters, making Chinese the world's oldest continuously used writing system.",
+  "sources": [
+   {
+    "title": "Wikipedia: Shang dynasty",
+    "url": "https://en.wikipedia.org/wiki/Shang_dynasty"
+   },
+   {
+    "title": "World History Encyclopedia: Shang Dynasty",
+    "url": "https://www.worldhistory.org/Shang_Dynasty/"
+   },
+   {
+    "title": "Taagepera (1978), Size and Duration of Empires: Growth-Decline Curves, 3000 to 600 B.C.",
+    "url": "https://escholarship.org/content/qt6wf6m5qg/qt6wf6m5qg.pdf"
+   },
+   {
+    "title": "Turchin, Adams & Hall (2006), East-West Orientation of Historical Empires",
+    "url": "https://web.archive.org/web/20200707181315/http://peterturchin.com/PDF/Turchin_Adams_Hall_2006.pdf"
+   },
+   {
+    "title": "Wikipedia: List of largest empires",
+    "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+   }
+  ]
+ },
+ {
+  "id": "zhou-dynasty",
+  "name": "Zhou dynasty",
+  "aliases": [
+   "Zhoa",
+   "Zhou states"
+  ],
+  "clio": [
+   "Zhou Dynasty",
+   "(Spring and Autumn States)",
+   "(Warring States China)"
+  ],
+  "region": "east-asia",
+  "start": -1046,
+  "end": -256,
+  "capital": "Haojing (Western Zhou); Luoyi (Eastern Zhou)",
+  "peak": {
+   "year": -1050,
+   "areaKm2": 550000,
+   "note": "Western Zhou realm of royal relatives and vassal states; estimates vary widely, Taagepera (1978) giving only c. 0.55M km²; c. 0.55M km² around 1050 BCE (Taagepera 1978), shrinking as the vassals grew independent"
+  },
+  "rulers": [
+   {
+    "name": "King Wen",
+    "reign": "d. c. 1050 BCE",
+    "note": "Built Zhou power before the conquest"
+   },
+   {
+    "name": "King Wu",
+    "reign": "c. 1046 – 1043 BCE",
+    "note": "Defeated the Shang at Muye"
+   },
+   {
+    "name": "Duke of Zhou (regent)",
+    "reign": "c. 1042 – 1036 BCE",
+    "note": "Consolidated the new dynasty; revered by Confucius"
+   },
+   {
+    "name": "King Xuan",
+    "reign": "827 – 782 BCE",
+    "note": "Briefly restored royal power"
+   },
+   {
+    "name": "King You",
+    "reign": "781 – 771 BCE",
+    "note": "Killed by invaders, ending the Western Zhou"
+   },
+   {
+    "name": "King Nan",
+    "reign": "314 – 256 BCE",
+    "note": "Last Zhou king, deposed by Qin"
+   }
+  ],
+  "summary": "The Zhou, a people from the Wei valley in the west, overthrew the Shang around 1046 BCE. They justified the conquest with the idea of the Mandate of Heaven: Heaven granted the right to rule to a virtuous dynasty and withdrew it from a corrupt one. The early Western Zhou kings ruled through a feudal network, granting lands to relatives and allies who owed loyalty and military service. In 771 BCE nomadic invaders killed King You and the court moved east to Luoyi, beginning the Eastern Zhou. Royal power then faded, and during the Spring and Autumn and Warring States periods rival states fought for supremacy; yet this was also the age of Confucius, Laozi and the Hundred Schools of Thought. The state of Qin deposed the last Zhou king in 256 BCE.",
+  "legacy": "The Zhou gave China the Mandate of Heaven and the classic texts and philosophies, Confucianism and Daoism above all, that shaped East Asian civilisation for over two thousand years.",
+  "sources": [
+   {
+    "title": "Wikipedia: Zhou dynasty",
+    "url": "https://en.wikipedia.org/wiki/Zhou_dynasty"
+   },
+   {
+    "title": "World History Encyclopedia: Zhou Dynasty",
+    "url": "https://www.worldhistory.org/Zhou_Dynasty/"
+   },
+   {
+    "title": "Taagepera (1978), Size and Duration of Empires: Growth-Decline Curves, 3000 to 600 B.C.",
+    "url": "https://escholarship.org/content/qt6wf6m5qg/qt6wf6m5qg.pdf"
+   },
+   {
+    "title": "Wikipedia: List of largest empires",
+    "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+   }
+  ]
+ },
+ {
+  "id": "qin-dynasty",
+  "name": "Qin dynasty",
+  "aliases": [
+   "Qin"
+  ],
+  "clio": [
+   "Qin Dynasty",
+   "Qin"
+  ],
+  "region": "east-asia",
+  "start": -221,
+  "end": -206,
+  "capital": "Xianyang",
+  "peak": {
+   "year": -220,
+   "areaKm2": 2300000,
+   "note": "Under Qin Shi Huang; c. 2.3M km² in 220 BCE (Taagepera 1979), before campaigns into the Ordos and the far south added more"
+  },
+  "rulers": [
+   {
+    "name": "Duke Xiao of Qin",
+    "reign": "361 – 338 BCE",
+    "note": "Backed Shang Yang's Legalist reforms"
+   },
+   {
+    "name": "King Zhaoxiang of Qin",
+    "reign": "306 – 251 BCE",
+    "note": "Won decisive wars against rival states"
+   },
+   {
+    "name": "Qin Shi Huang (Ying Zheng)",
+    "reign": "247 – 210 BCE (emperor from 221)",
+    "note": "First Emperor of a unified China"
+   },
+   {
+    "name": "Qin Er Shi",
+    "reign": "210 – 207 BCE",
+    "note": "Second emperor, manipulated by court officials"
+   },
+   {
+    "name": "Ziying",
+    "reign": "207 BCE",
+    "note": "Last ruler, surrendered to Liu Bang"
+   }
+  ],
+  "summary": "Qin was a frontier state in north-west China that, after the harsh Legalist reforms of the minister Shang Yang in the 4th century BCE, built the most efficient army and administration of the Warring States. Between 230 and 221 BCE its king, Ying Zheng, conquered the six rival states and declared himself Qin Shi Huang, the First Emperor. He abolished feudal lordships in favour of commanderies run by appointed officials; standardised writing, coins, weights, measures and axle widths; built roads and canals; and linked frontier walls against the Xiongnu. He also burned books and was buried with the famous Terracotta Army. His rule relied on heavy taxes, forced labour and brutal punishments, and after his death in 210 BCE revolts toppled the dynasty in 206 BCE.",
+  "legacy": "The Qin created the first unified Chinese empire and its centralised model of government, and probably gave China its name in many languages.",
+  "sources": [
+   {
+    "title": "Wikipedia: Qin dynasty",
+    "url": "https://en.wikipedia.org/wiki/Qin_dynasty"
+   },
+   {
+    "title": "World History Encyclopedia: Qin Dynasty",
+    "url": "https://www.worldhistory.org/Qin_Dynasty/"
+   },
+   {
+    "title": "Wikipedia: List of largest empires (Taagepera 1979 figures)",
+    "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+   }
+  ]
+ },
+ {
+  "id": "han-dynasty",
+  "name": "Han dynasty",
+  "aliases": [
+   "Han Empire",
+   "Han"
+  ],
+  "clio": [
+   "Han Dynasty",
+   "(Alliance between Han Dynasty and Xiongnu)",
+   "Xin Dynasty"
+  ],
+  "region": "east-asia",
+  "start": -202,
+  "end": 220,
+  "capital": "Chang'an; Luoyang under the Eastern Han",
+  "peak": {
+   "year": 100,
+   "areaKm2": 6500000,
+   "note": "Eastern Han, including the Tarim Basin protectorate and parts of Korea and northern Vietnam; c. 6.5M km² in 100 CE (Taagepera 1979); the Western Han peak was c. 6.0M km² in 50 BCE (Taagepera 1979; Turchin, Adams & Hall 2006)"
+  },
+  "rulers": [
+   {
+    "name": "Emperor Gaozu (Liu Bang)",
+    "reign": "202 – 195 BCE",
+    "note": "Commoner who founded the dynasty"
+   },
+   {
+    "name": "Emperor Wu",
+    "reign": "141 – 87 BCE",
+    "note": "Fought the Xiongnu and opened the Silk Road"
+   },
+   {
+    "name": "Wang Mang",
+    "reign": "9 – 23 CE",
+    "note": "Usurper who founded the short-lived Xin dynasty"
+   },
+   {
+    "name": "Emperor Guangwu",
+    "reign": "25 – 57 CE",
+    "note": "Restored the dynasty as the Eastern Han"
+   },
+   {
+    "name": "Emperor Xian",
+    "reign": "189 – 220 CE",
+    "note": "Last emperor, a puppet of warlords"
+   }
+  ],
+  "summary": "After the Qin collapsed, Liu Bang, a commoner turned rebel leader, defeated his rivals and founded the Han dynasty in 202 BCE. The Han kept the Qin's centralised state but softened its harsh laws, and made Confucianism the official ideology, recruiting officials partly through examinations in the classics. Emperor Wu fought the Xiongnu, sent Zhang Qian to Central Asia, helping open the Silk Road, and extended Han rule into Korea, Vietnam and the Tarim Basin. Paper, the seismograph and advances in iron-making date from this era. The usurper Wang Mang briefly interrupted the dynasty, but the Eastern Han was restored in 25 CE. Court eunuchs, land-owning clans, floods and the Yellow Turban rebellion of 184 then weakened it, until warlords took over and the last emperor abdicated in 220.",
+  "legacy": "Han rule defined Chinese identity so strongly that China's majority people still call themselves the Han.",
+  "sources": [
+   {
+    "title": "Wikipedia: Han dynasty",
+    "url": "https://en.wikipedia.org/wiki/Han_dynasty"
+   },
+   {
+    "title": "World History Encyclopedia: Han Dynasty",
+    "url": "https://www.worldhistory.org/Han_Dynasty/"
+   },
+   {
+    "title": "Turchin, Adams & Hall (2006), East-West Orientation of Historical Empires",
+    "url": "https://web.archive.org/web/20200707181315/http://peterturchin.com/PDF/Turchin_Adams_Hall_2006.pdf"
+   },
+   {
+    "title": "Wikipedia: List of largest empires (Taagepera 1979 figures)",
+    "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+   }
+  ]
+ },
+ {
+  "id": "sui-dynasty",
+  "name": "Sui dynasty",
+  "aliases": [
+   "Sui Empire"
+  ],
+  "clio": [
+   "Sui Dynasty"
+  ],
+  "region": "east-asia",
+  "start": 581,
+  "end": 618,
+  "capital": "Daxing (Chang'an) and Luoyang",
+  "peak": {
+   "year": 610,
+   "areaKm2": 3100000,
+   "note": "c. 3.0M km² (Taagepera 1979), after reunifying north and south China; c. 3.1M km² in 610 (Taagepera 1997) and c. 3.0M km² at reunification in 589 (Taagepera 1979)"
+  },
+  "rulers": [
+   {
+    "name": "Emperor Wen (Yang Jian)",
+    "reign": "581 – 604",
+    "note": "Founder; reunified China in 589"
+   },
+   {
+    "name": "Emperor Yang",
+    "reign": "604 – 618",
+    "note": "Built the Grand Canal; failed against Goguryeo"
+   },
+   {
+    "name": "Emperor Gong",
+    "reign": "617 – 618",
+    "note": "Child puppet emperor before the Tang takeover"
+   }
+  ],
+  "summary": "For nearly three centuries after the fall of the Han, China was divided among rival northern and southern dynasties. In 581 Yang Jian, a general of the Northern Zhou, seized the throne and founded the Sui, and in 589 he conquered the southern Chen dynasty, reunifying China. As Emperor Wen he reformed the laws, redistributed land, rebuilt the bureaucracy and began selecting officials by examination. His son Emperor Yang undertook vast projects, above all the Grand Canal linking the Yellow and Yangtze rivers; he also rebuilt the Great Wall and built a new capital at Luoyang, using millions of forced labourers. His three disastrous invasions of the Korean kingdom of Goguryeo drained the treasury and provoked widespread rebellion. Yang was murdered in 618, and his general Li Yuan founded the Tang.",
+  "legacy": "Though short-lived, the Sui reunified China and built the Grand Canal and the institutions on which the Tang golden age rested.",
+  "sources": [
+   {
+    "title": "Wikipedia: Sui dynasty",
+    "url": "https://en.wikipedia.org/wiki/Sui_dynasty"
+   },
+   {
+    "title": "World History Encyclopedia: Sui Dynasty",
+    "url": "https://www.worldhistory.org/Sui_Dynasty/"
+   },
+   {
+    "title": "Taagepera (1997), Expansion and Contraction Patterns of Large Polities",
+    "url": "https://escholarship.org/content/qt3cn68807/qt3cn68807.pdf"
+   },
+   {
+    "title": "Wikipedia: List of largest empires (Taagepera 1979 figures)",
+    "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+   }
+  ]
+ },
+ {
+  "id": "tang-dynasty",
+  "name": "Tang dynasty",
+  "aliases": [
+   "Tang Empire"
+  ],
+  "clio": [
+   "Tang Dynasty"
+  ],
+  "region": "east-asia",
+  "start": 618,
+  "end": 907,
+  "capital": "Chang'an; secondary capital Luoyang",
+  "peak": {
+   "year": 715,
+   "areaKm2": 5400000,
+   "note": "Including protectorates over the Tarim Basin and Central Asia; c. 5.4M km² (Taagepera 1997; Turchin et al. 2006, for 715); c. 5.4M km² in 715 (Taagepera 1997; Turchin, Adams & Hall 2006), after an earlier high of c. 4.9M km² around 660"
+  },
+  "rulers": [
+   {
+    "name": "Emperor Gaozu (Li Yuan)",
+    "reign": "618 – 626",
+    "note": "Founder"
+   },
+   {
+    "name": "Emperor Taizong",
+    "reign": "626 – 649",
+    "note": "Model ruler who expanded into Central Asia"
+   },
+   {
+    "name": "Emperor Gaozong",
+    "reign": "649 – 683",
+    "note": "Conquered the Western Turks and Goguryeo"
+   },
+   {
+    "name": "Wu Zetian",
+    "reign": "690 – 705",
+    "note": "Only woman to rule China as emperor in her own name"
+   },
+   {
+    "name": "Emperor Xuanzong",
+    "reign": "712 – 756",
+    "note": "Cultural golden age ended by the An Lushan rebellion"
+   },
+   {
+    "name": "Emperor Ai",
+    "reign": "904 – 907",
+    "note": "Last emperor, deposed by Zhu Wen"
+   }
+  ],
+  "summary": "The Tang dynasty was founded in 618 by Li Yuan and consolidated by his son Taizong, one of China's most admired emperors. Tang armies extended Chinese power deep into Central Asia, and the capital Chang'an, perhaps the largest city in the world with around a million people, welcomed merchants, monks and envoys from Persia, Japan and beyond along the Silk Road. Wu Zetian, the only woman to rule China as emperor in her own name, governed from 690 to 705. Poetry flourished under Li Bai and Du Fu, Buddhism spread widely and woodblock printing appeared. Under Xuanzong the An Lushan rebellion of 755 to 763 devastated the empire, after which regional military governors grew powerful. Peasant revolts, notably Huang Chao's, finished the dynasty in 907.",
+  "legacy": "The Tang is remembered as a golden age of Chinese culture whose laws, city planning, poetry and Buddhism shaped Japan, Korea and Vietnam.",
+  "sources": [
+   {
+    "title": "Wikipedia: Tang dynasty",
+    "url": "https://en.wikipedia.org/wiki/Tang_dynasty"
+   },
+   {
+    "title": "World History Encyclopedia: Tang Dynasty",
+    "url": "https://www.worldhistory.org/Tang_Dynasty/"
+   },
+   {
+    "title": "Taagepera (1997), Expansion and Contraction Patterns of Large Polities",
+    "url": "https://escholarship.org/content/qt3cn68807/qt3cn68807.pdf"
+   },
+   {
+    "title": "Turchin, Adams & Hall (2006), East-West Orientation of Historical Empires",
+    "url": "https://web.archive.org/web/20200707181315/http://peterturchin.com/PDF/Turchin_Adams_Hall_2006.pdf"
+   },
+   {
+    "title": "Wikipedia: List of largest empires",
+    "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+   }
+  ]
+ },
+ {
+  "id": "song-dynasty",
+  "name": "Song dynasty",
+  "aliases": [
+   "Song Empire"
+  ],
+  "clio": [
+   "Northern Song",
+   "Southern Song",
+   "(Allegiance of Southern Song to Great Jin)"
+  ],
+  "region": "east-asia",
+  "start": 960,
+  "end": 1279,
+  "capital": "Kaifeng (Northern Song); Lin'an, now Hangzhou (Southern Song)",
+  "peak": {
+   "year": 980,
+   "areaKm2": 3100000,
+   "note": "Northern Song, before the loss of northern China in 1127; c. 3.1M km² (Taagepera 1997, reached by 980); c. 3.1M km² from 980 (Taagepera 1997; Turchin, Adams & Hall 2006)"
+  },
+  "rulers": [
+   {
+    "name": "Emperor Taizu (Zhao Kuangyin)",
+    "reign": "960 – 976",
+    "note": "Founder; placed civil officials over generals"
+   },
+   {
+    "name": "Emperor Shenzong",
+    "reign": "1067 – 1085",
+    "note": "Backed Wang Anshi's sweeping reforms"
+   },
+   {
+    "name": "Emperor Huizong",
+    "reign": "1100 – 1126",
+    "note": "Artist-emperor captured by the Jurchen"
+   },
+   {
+    "name": "Emperor Gaozong",
+    "reign": "1127 – 1162",
+    "note": "Founded the Southern Song at Hangzhou"
+   },
+   {
+    "name": "Zhao Bing",
+    "reign": "1278 – 1279",
+    "note": "Last boy emperor, died at the Battle of Yamen"
+   }
+  ],
+  "summary": "In 960 the general Zhao Kuangyin seized power and founded the Song, ending half a century of division. Wary of military strongmen, the Song placed civil officials chosen by competitive examinations in charge of government, and the scholar-official class flourished. The economy boomed: rice farming expanded, cities such as Kaifeng and Hangzhou held a million people, and the Song issued the world's first government paper money. Inventions included movable type, the magnetic compass for navigation and gunpowder weapons. Militarily the Song was weaker, paying tribute to the Liao and Western Xia; in 1127 the Jurchen Jin captured Kaifeng and the court fled south, ruling as the Southern Song from Hangzhou. The Mongols under Kublai Khan conquered it, and the last boy emperor died at the naval Battle of Yamen in 1279.",
+  "legacy": "The Song was one of the most inventive and commercially advanced societies of the pre-modern world, and its Neo-Confucian philosophy dominated East Asia for centuries.",
+  "sources": [
+   {
+    "title": "Wikipedia: Song dynasty",
+    "url": "https://en.wikipedia.org/wiki/Song_dynasty"
+   },
+   {
+    "title": "World History Encyclopedia: Song Dynasty",
+    "url": "https://www.worldhistory.org/Song_Dynasty/"
+   },
+   {
+    "title": "Taagepera (1997), Expansion and Contraction Patterns of Large Polities",
+    "url": "https://escholarship.org/content/qt3cn68807/qt3cn68807.pdf"
+   },
+   {
+    "title": "Turchin, Adams & Hall (2006), East-West Orientation of Historical Empires",
+    "url": "https://web.archive.org/web/20200707181315/http://peterturchin.com/PDF/Turchin_Adams_Hall_2006.pdf"
+   },
+   {
+    "title": "Wikipedia: List of largest empires",
+    "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+   }
+  ]
+ },
+ {
+  "id": "yuan-dynasty",
+  "name": "Yuan dynasty",
+  "aliases": [
+   "Great Khanate"
+  ],
+  "clio": [
+   "Yuan Dynasty",
+   "Northern Yuan"
+  ],
+  "region": "east-asia",
+  "start": 1271,
+  "end": 1368,
+  "capital": "Khanbaliq (Dadu, now Beijing); summer capital Shangdu (Xanadu)",
+  "peak": {
+   "year": 1310,
+   "areaKm2": 11000000,
+   "note": "China, Mongolia, Tibet and Manchuria, with Korea as a vassal; c. 11M km² (Taagepera 1997); c. 11.0M km² in 1310 (Taagepera 1997)"
+  },
+  "rulers": [
+   {
+    "name": "Kublai Khan",
+    "reign": "1260 – 1294 (Yuan from 1271)",
+    "note": "Founder; conquered the Southern Song"
+   },
+   {
+    "name": "Temür Khan (Chengzong)",
+    "reign": "1294 – 1307",
+    "note": "Made peace with the western khanates"
+   },
+   {
+    "name": "Ayurbarwada (Renzong)",
+    "reign": "1311 – 1320",
+    "note": "Restored the civil service examinations"
+   },
+   {
+    "name": "Toghon Temür",
+    "reign": "1333 – 1368 in China",
+    "note": "Last Yuan emperor, fled to Mongolia"
+   }
+  ],
+  "summary": "Kublai Khan, grandson of Genghis, was proclaimed Great Khan in 1260 and in 1271 declared a Chinese-style dynasty called Yuan. He built a new capital at Dadu, modern Beijing, and completed the conquest of the Southern Song in 1279, uniting all of China under foreign rule for the first time. His invasions of Japan and South-east Asia failed. The Yuan divided society into ranked groups, with Mongols and Central Asians above northern and southern Chinese, and relied on foreigners such as Marco Polo, who claimed to have served at court. Trade flourished, paper money circulated widely and the Grand Canal was extended to Beijing. Later rulers were weak and quarrelsome, and inflation, floods and epidemics fuelled the Red Turban rebellion, which drove the Mongols back to the steppe in 1368.",
+  "legacy": "The Yuan made Beijing China's capital and joined China, Tibet and Mongolia under one government, a combination later claimed by the Ming and Qing.",
+  "sources": [
+   {
+    "title": "Wikipedia: Yuan dynasty",
+    "url": "https://en.wikipedia.org/wiki/Yuan_dynasty"
+   },
+   {
+    "title": "World History Encyclopedia: Yuan Dynasty",
+    "url": "https://www.worldhistory.org/Yuan_Dynasty/"
+   },
+   {
+    "title": "Taagepera (1997), Expansion and Contraction Patterns of Large Polities",
+    "url": "https://escholarship.org/content/qt3cn68807/qt3cn68807.pdf"
+   },
+   {
+    "title": "Wikipedia: List of largest empires",
+    "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+   }
+  ]
+ },
+ {
+  "id": "ming-dynasty",
+  "name": "Ming dynasty",
+  "aliases": [
+   "Ming Empire",
+   "Ming Chinese Empire"
+  ],
+  "clio": [
+   "Ming Dynasty"
+  ],
+  "region": "east-asia",
+  "start": 1368,
+  "end": 1644,
+  "capital": "Nanjing, then Beijing (from 1421)",
+  "peak": {
+   "year": 1450,
+   "areaKm2": 6500000,
+   "note": "Including loosely held lands in Manchuria and the north-east; c. 6.5M km² (Taagepera 1997; Turchin et al. 2006); c. 6.5M km² in 1450 (Taagepera 1997; Turchin, Adams & Hall 2006)"
+  },
+  "rulers": [
+   {
+    "name": "Hongwu Emperor (Zhu Yuanzhang)",
+    "reign": "1368 – 1398",
+    "note": "Peasant-born founder"
+   },
+   {
+    "name": "Yongle Emperor",
+    "reign": "1402 – 1424",
+    "note": "Moved the capital to Beijing; sent Zheng He's fleets"
+   },
+   {
+    "name": "Xuande Emperor",
+    "reign": "1425 – 1435",
+    "note": "Stable reign famous for its porcelain"
+   },
+   {
+    "name": "Wanli Emperor",
+    "reign": "1572 – 1620",
+    "note": "Long reign of growing neglect"
+   },
+   {
+    "name": "Chongzhen Emperor",
+    "reign": "1627 – 1644",
+    "note": "Last emperor; died as rebels took Beijing"
+   }
+  ],
+  "summary": "Zhu Yuanzhang, a former peasant and Buddhist monk who rose to lead the Red Turban rebels, drove out the Mongols and proclaimed the Ming dynasty in 1368, ruling as the Hongwu Emperor. He rebuilt agriculture and concentrated power in the emperor's hands. The Yongle Emperor moved the capital to Beijing, built the Forbidden City and sent Admiral Zheng He on great treasure voyages across the Indian Ocean as far as East Africa between 1405 and 1433. The Ming rebuilt the Great Wall in the form seen today, and Ming porcelain and silk were prized worldwide, drawing in vast amounts of silver from Japan and the Americas. Later emperors withdrew from government, and factional strife, war in Korea, famine and rebellion weakened the state. Rebels took Beijing in 1644, and the Manchu Qing dynasty, proclaimed by Hong Taiji in 1636, seized the throne.",
+  "legacy": "The Ming left the Great Wall, the Forbidden City and blue-and-white porcelain, and its silver economy tied China into the first global trade networks.",
+  "sources": [
+   {
+    "title": "Wikipedia: Ming dynasty",
+    "url": "https://en.wikipedia.org/wiki/Ming_dynasty"
+   },
+   {
+    "title": "World History Encyclopedia: Ming Dynasty",
+    "url": "https://www.worldhistory.org/Ming_Dynasty/"
+   },
+   {
+    "title": "Taagepera (1997), Expansion and Contraction Patterns of Large Polities",
+    "url": "https://escholarship.org/content/qt3cn68807/qt3cn68807.pdf"
+   },
+   {
+    "title": "Turchin, Adams & Hall (2006), East-West Orientation of Historical Empires",
+    "url": "https://web.archive.org/web/20200707181315/http://peterturchin.com/PDF/Turchin_Adams_Hall_2006.pdf"
+   },
+   {
+    "title": "Wikipedia: Qing dynasty",
+    "url": "https://en.wikipedia.org/wiki/Qing_dynasty"
+   },
+   {
+    "title": "Wikipedia: List of largest empires",
+    "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+   }
+  ]
+ },
+ {
+  "id": "goryeo",
+  "name": "Goryeo",
+  "aliases": [
+   "Goryeo"
+  ],
+  "clio": [
+   "Goryeo",
+   "(Allegiance of Goryeo to Great Jin)"
+  ],
+  "region": "east-asia",
+  "start": 918,
+  "end": 1392,
+  "capital": "Kaegyong (Kaesong)",
+  "peak": {
+   "year": 1100,
+   "areaKm2": 220000,
+   "note": "Most of the Korean peninsula south of the Yalu (approximate)"
+  },
+  "rulers": [
+   {
+    "name": "Taejo (Wang Geon)",
+    "reign": "918 – 943",
+    "note": "Founder; reunified Korea in 936"
+   },
+   {
+    "name": "Gwangjong",
+    "reign": "949 – 975",
+    "note": "Introduced civil service examinations"
+   },
+   {
+    "name": "Hyeonjong",
+    "reign": "1009 – 1031",
+    "note": "Defeated the Khitan invasions"
+   },
+   {
+    "name": "Gongmin",
+    "reign": "1351 – 1374",
+    "note": "Threw off Mongol domination"
+   },
+   {
+    "name": "Gongyang",
+    "reign": "1389 – 1392",
+    "note": "Last king, deposed by Yi Seong-gye"
+   }
+  ],
+  "summary": "Goryeo was founded in 918 by Wang Geon, a general from Kaesong, who reunited Korea after the breakup of Unified Silla by 936; the modern name Korea comes from Goryeo. Its kings built a centralised state on the Chinese model with civil service examinations, while powerful aristocratic families dominated the court. Buddhism was the state religion, and Goryeo is famous for its jade-green celadon pottery and for the Tripitaka Koreana, the Buddhist scriptures carved on more than 80,000 woodblocks. The kingdom repelled Khitan invasions, but from 1170 military officers seized power. After decades of resistance it made peace with the Mongols in 1259 and became a vassal of the Yuan, with its kings marrying Yuan princesses. Weakened by pirate raids and factional strife, it was overthrown by General Yi Seong-gye in 1392.",
+  "legacy": "Goryeo gave Korea its name in the West and pioneered printing with movable metal type; the Jikji, printed in 1377, is the oldest surviving example.",
+  "sources": [
+   {
+    "title": "Wikipedia: Goryeo",
+    "url": "https://en.wikipedia.org/wiki/Goryeo"
+   },
+   {
+    "title": "Wikipedia: Jikji",
+    "url": "https://en.wikipedia.org/wiki/Jikji"
+   },
+   {
+    "title": "Wikipedia: Gwangjong of Goryeo",
+    "url": "https://en.wikipedia.org/wiki/Gwangjong_of_Goryeo"
+   },
+   {
+    "title": "Wikipedia: Mongol invasions of Korea",
+    "url": "https://en.wikipedia.org/wiki/Mongol_invasions_of_Korea"
+   }
+  ]
+ },
+ {
+  "id": "joseon",
+  "name": "Joseon",
+  "aliases": [
+   "Korea"
+  ],
+  "clio": [
+   "Joseon",
+   "(Allegiance of Joseon to Ming Dynasty)"
+  ],
+  "region": "east-asia",
+  "start": 1392,
+  "end": 1897,
+  "capital": "Hanyang (Seoul)",
+  "peak": {
+   "year": 1450,
+   "areaKm2": 220000,
+   "note": "The whole peninsula up to the Yalu and Tumen rivers"
+  },
+  "rulers": [
+   {
+    "name": "Taejo (Yi Seong-gye)",
+    "reign": "1392 – 1398",
+    "note": "Founder"
+   },
+   {
+    "name": "Sejong the Great",
+    "reign": "1418 – 1450",
+    "note": "Created the Hangul alphabet"
+   },
+   {
+    "name": "Seonjo",
+    "reign": "1567 – 1608",
+    "note": "Reigned during the Japanese invasions"
+   },
+   {
+    "name": "Yeongjo",
+    "reign": "1724 – 1776",
+    "note": "Long reign of reform and revival"
+   },
+   {
+    "name": "Jeongjo",
+    "reign": "1776 – 1800",
+    "note": "Patron of learning and builder of Hwaseong Fortress"
+   },
+   {
+    "name": "Gojong",
+    "reign": "1864 – 1897 (then emperor to 1907)",
+    "note": "Proclaimed the Korean Empire"
+   }
+  ],
+  "summary": "General Yi Seong-gye overthrew Goryeo in 1392 and founded the Joseon dynasty, which ruled Korea for five centuries from its new capital, Hanyang, today's Seoul. Joseon adopted Neo-Confucianism as its guiding philosophy, governing through a scholar-bureaucracy selected by examinations and dominated by the yangban aristocracy, while Buddhism lost its privileges. King Sejong the Great sponsored science and in 1443 created Hangul, a simple phonetic alphabet. Joseon survived devastating Japanese invasions in 1592 to 1598, when Admiral Yi Sun-sin's turtle ships won famous victories, and Manchu invasions in the 1620s and 1630s, after which it became a tributary of the Qing and limited foreign contact, earning the name Hermit Kingdom. Forced open by Japan in 1876, it became the Korean Empire in 1897 and was annexed by Japan in 1910.",
+  "legacy": "Joseon shaped Korea's language, Confucian social values and national culture, and Hangul remains the Korean alphabet today.",
+  "sources": [
+   {
+    "title": "Wikipedia: Joseon",
+    "url": "https://en.wikipedia.org/wiki/Joseon"
+   },
+   {
+    "title": "Wikipedia: Sejong the Great",
+    "url": "https://en.wikipedia.org/wiki/Sejong_the_Great"
+   },
+   {
+    "title": "Wikipedia: Hangul",
+    "url": "https://en.wikipedia.org/wiki/Hangul"
+   }
+  ]
+ },
+ {
+  "id": "classical-japan",
+  "name": "Imperial Japan (Yamato to Kamakura)",
+  "aliases": [
+   "Yamato",
+   "Imperial Japan (Fujiwara)",
+   "Shogun Japan (Kamakura)"
+  ],
+  "clio": [
+   "Asuka Japan",
+   "Nara Japan",
+   "Heian Japan",
+   "Kamakura Shogunate"
+  ],
+  "region": "east-asia",
+  "start": 250,
+  "end": 1333,
+  "capital": "Asuka, then Nara (710) and Heian-kyo, now Kyoto (794); Kamakura for the shogunate",
+  "peak": {
+   "year": 1300,
+   "areaKm2": 280000,
+   "note": "Honshu, Shikoku and Kyushu (approximate land area)"
+  },
+  "rulers": [
+   {
+    "name": "Empress Suiko",
+    "reign": "593 – 628",
+    "note": "Reigned with Prince Shotoku as regent; promoted Buddhism"
+   },
+   {
+    "name": "Emperor Kanmu",
+    "reign": "781 – 806",
+    "note": "Moved the capital to Heian-kyo"
+   },
+   {
+    "name": "Fujiwara no Michinaga",
+    "reign": "dominant at court 995 – 1027 (regent 1016 – 1017)",
+    "note": "Height of Fujiwara power at court"
+   },
+   {
+    "name": "Minamoto no Yoritomo",
+    "reign": "1185 – 1199 (shogun from 1192)",
+    "note": "Founded the Kamakura shogunate"
+   },
+   {
+    "name": "Hojo Tokimune",
+    "reign": "regent 1268 – 1284",
+    "note": "Repelled the Mongol invasions"
+   }
+  ],
+  "summary": "From around 250 CE, the age of great keyhole-shaped burial mounds, the Yamato kings of the Nara basin gradually brought the clans of central and western Japan under their rule. Adopting Buddhism, Chinese writing and Tang-style law codes between the 6th and 8th centuries, they became emperors governing from planned capitals at Nara and, from 794, Heian-kyo, now Kyoto. In the Heian period the Fujiwara family ruled as regents for child emperors, and court culture produced masterpieces such as The Tale of Genji. Provincial warrior clans grew powerful, and after the Genpei War Minamoto no Yoritomo set up a military government, the shogunate, at Kamakura in 1185. The Kamakura regents of the Hojo family repelled Mongol invasions in 1274 and 1281, but strained by the cost, the shogunate fell in 1333.",
+  "legacy": "This era created Japan's imperial institution, the world's oldest continuous hereditary monarchy, and the samurai culture of the shogunate.",
+  "sources": [
+   {
+    "title": "Wikipedia: History of Japan",
+    "url": "https://en.wikipedia.org/wiki/History_of_Japan"
+   },
+   {
+    "title": "Wikipedia: Fujiwara no Michinaga",
+    "url": "https://en.wikipedia.org/wiki/Fujiwara_no_Michinaga"
+   },
+   {
+    "title": "World History Encyclopedia: Heian Period",
+    "url": "https://www.worldhistory.org/Heian_Period/"
+   }
+  ]
+ },
+ {
+  "id": "khmer-empire",
+  "name": "Khmer Empire",
+  "aliases": [
+   "Khmer Empire"
+  ],
+  "clio": [
+   "Khmer Empire"
+  ],
+  "region": "southeast-asia",
+  "start": 802,
+  "end": 1431,
+  "capital": "Hariharalaya, then Yashodharapura (Angkor)",
+  "peak": {
+   "year": 1290,
+   "areaKm2": 1000000,
+   "note": "Much of mainland South-east Asia after the conquests of Jayavarman VII; c. 1.0M km² by 1290 (Taagepera 1997; Turchin, Adams & Hall 2006)"
+  },
+  "rulers": [
+   {
+    "name": "Jayavarman II",
+    "reign": "802 – c. 850 (dates debated)",
+    "note": "Founder; declared himself universal monarch"
+   },
+   {
+    "name": "Yasovarman I",
+    "reign": "889 – c. 900 (some lists c. 910)",
+    "note": "Founded the first city at Angkor"
+   },
+   {
+    "name": "Suryavarman II",
+    "reign": "1113 – c. 1150",
+    "note": "Built Angkor Wat"
+   },
+   {
+    "name": "Jayavarman VII",
+    "reign": "1181 – c. 1218",
+    "note": "Buddhist king who built Angkor Thom and the Bayon"
+   }
+  ],
+  "summary": "In 802 Jayavarman II declared himself universal monarch in a ceremony on the Kulen hills, freeing the Khmer lands from Javanese overlordship and founding the Angkorian empire in what is now Cambodia. His successors built the city of Angkor near the Tonle Sap lake, supported by a vast system of reservoirs and canals that watered rice fields for perhaps 700,000 people. Khmer kings presented themselves as god-kings linked to Shiva or Vishnu, and later to the Buddha. Suryavarman II built Angkor Wat, the world's largest religious monument, and Jayavarman VII built Angkor Thom and the Bayon and extended the empire across Thailand, Laos and southern Vietnam. From the 13th century wars with the Thai and Cham, strain on the water system and climate shifts weakened Angkor, which Ayutthaya sacked in 1431.",
+  "legacy": "Angkor Wat is Cambodia's national symbol and one of humanity's greatest architectural achievements.",
+  "sources": [
+   {
+    "title": "Wikipedia: Khmer Empire",
+    "url": "https://en.wikipedia.org/wiki/Khmer_Empire"
+   },
+   {
+    "title": "Wikipedia: Jayavarman II",
+    "url": "https://en.wikipedia.org/wiki/Jayavarman_II"
+   },
+   {
+    "title": "Wikipedia: Yasovarman I",
+    "url": "https://en.wikipedia.org/wiki/Yasovarman_I"
+   },
+   {
+    "title": "World History Encyclopedia: Khmer Empire",
+    "url": "https://www.worldhistory.org/Khmer_Empire/"
+   },
+   {
+    "title": "Taagepera (1997), Expansion and Contraction Patterns of Large Polities",
+    "url": "https://escholarship.org/content/qt3cn68807/qt3cn68807.pdf"
+   },
+   {
+    "title": "Turchin, Adams & Hall (2006), East-West Orientation of Historical Empires",
+    "url": "https://web.archive.org/web/20200707181315/http://peterturchin.com/PDF/Turchin_Adams_Hall_2006.pdf"
+   },
+   {
+    "title": "Coedès, The Indianized States of Southeast Asia (1968), archive.org",
+    "url": "https://archive.org/details/george-coedes-the-indianized-states-of-southeast-asia-east-west-center-press-1968"
+   },
+   {
+    "title": "D. G. E. Hall, A History of South-East Asia, 4th ed. (1981), archive.org",
+    "url": "https://archive.org/details/a-history-of-south-east-asia-4th-ed"
+   }
+  ]
+ },
+ {
+  "id": "srivijaya",
+  "name": "Srivijaya",
+  "aliases": [
+   "Srivijaya Empire"
+  ],
+  "clio": [
+   "Srivijaya"
+  ],
+  "region": "southeast-asia",
+  "start": 670,
+  "end": 1377,
+  "capital": "Palembang (Sumatra); later Jambi",
+  "peak": {
+   "year": 1200,
+   "areaKm2": 1200000,
+   "note": "Sumatra, the Malay Peninsula and the Straits of Malacca and Sunda; a loose maritime sphere, so estimates vary widely (Turchin, Adams & Hall 2006 give c. 1.2M km² for c. 1200); c. 1.2M km² in 1200 (Turchin, Adams & Hall 2006), a generous figure for a loose network of ports"
+  },
+  "rulers": [
+   {
+    "name": "Dapunta Hyang Sri Jayanasa",
+    "reign": "fl. 682 – 686",
+    "note": "Founder known from the earliest Malay inscriptions"
+   },
+   {
+    "name": "Balaputradewa",
+    "reign": "mid 9th century",
+    "note": "Sailendra prince who ruled Srivijaya and endowed a monastery at Nalanda"
+   },
+   {
+    "name": "Sri Culamanivarman",
+    "reign": "c. 1000",
+    "note": "Sent embassies to China and built a temple at Nagapattinam"
+   },
+   {
+    "name": "Sangrama Vijayatunggavarman",
+    "reign": "c. 1025",
+    "note": "Captured during the Chola naval raid"
+   }
+  ],
+  "summary": "Srivijaya was a maritime empire centred on Palembang in southern Sumatra, first recorded in the 670s, when the Chinese Buddhist pilgrim Yijing studied Sanskrit there. Its rulers grew rich by controlling the Straits of Malacca and Sunda, the sea lanes between China and India, taxing passing ships and suppressing piracy, while drawing on Sumatran gold and forest products. Srivijaya was a federation of port-cities bound to the ruler by oaths, gifts and trade privileges rather than a tightly governed territory. It was a great centre of Mahayana Buddhism, linked with the Sailendra dynasty of Java, which built Borobudur. In 1025 the Chola navy of southern India sacked its ports, beginning a long decline. Rivalry from Javanese states and shifts in Chinese trade weakened it further, and Majapahit absorbed its remnants in the late 14th century.",
+  "legacy": "Srivijaya helped make Malay the common language of island South-east Asia, the root of today's Indonesian and Malay.",
+  "sources": [
+   {
+    "title": "Wikipedia: Srivijaya",
+    "url": "https://en.wikipedia.org/wiki/Srivijaya"
+   },
+   {
+    "title": "Turchin, Adams & Hall (2006), East-West Orientation of Historical Empires",
+    "url": "https://web.archive.org/web/20200707181315/http://peterturchin.com/PDF/Turchin_Adams_Hall_2006.pdf"
+   },
+   {
+    "title": "Coedès, The Indianized States of Southeast Asia (1968), archive.org",
+    "url": "https://archive.org/details/george-coedes-the-indianized-states-of-southeast-asia-east-west-center-press-1968"
+   }
+  ]
+ },
+ {
+  "id": "majapahit",
+  "name": "Majapahit",
+  "aliases": [],
+  "clio": [
+   "Majapahit"
+  ],
+  "region": "southeast-asia",
+  "start": 1293,
+  "end": 1527,
+  "capital": "Trowulan (East Java)",
+  "peak": {
+   "year": 1365,
+   "areaKm2": 1000000,
+   "note": "Claimed tribute from much of modern Indonesia under Hayam Wuruk; direct rule mainly over Java, Madura and Bali (rough estimate)"
+  },
+  "rulers": [
+   {
+    "name": "Raden Wijaya (Kertarajasa)",
+    "reign": "1293 – 1309",
+    "note": "Founder; used and then expelled a Mongol army"
+   },
+   {
+    "name": "Tribhuwana Wijayatunggadewi",
+    "reign": "1328 – 1350",
+    "note": "Queen who appointed Gajah Mada"
+   },
+   {
+    "name": "Gajah Mada",
+    "reign": "prime minister 1331 – 1364",
+    "note": "Swore to unite the archipelago"
+   },
+   {
+    "name": "Hayam Wuruk (Rajasanagara)",
+    "reign": "1350 – 1389",
+    "note": "Ruled at the empire's height"
+   },
+   {
+    "name": "Wikramawardhana",
+    "reign": "1389 – 1429",
+    "note": "His reign saw a ruinous civil war"
+   }
+  ],
+  "summary": "Majapahit was founded in 1293 by Raden Wijaya, a Javanese prince who cleverly used an invading Mongol army sent by Kublai Khan to defeat his rival, then turned on the Mongols and drove them out. From its capital at Trowulan in East Java the kingdom grew rich on rice farming and the spice trade. Under Queen Tribhuwana and her son Hayam Wuruk, the prime minister Gajah Mada vowed to unite the archipelago, and Majapahit claimed tribute from much of modern Indonesia, the Malay Peninsula and beyond, though it ruled directly mainly over Java, Madura and Bali. The court poem Nagarakretagama describes its splendour. After Hayam Wuruk's death, civil war, the rise of Malacca and the spread of Islamic coastal sultanates eroded its power, and it ended in the early 16th century.",
+  "legacy": "Majapahit is celebrated in Indonesia as a symbol of national unity, and its Hindu-Buddhist culture survives most strongly in Bali.",
+  "sources": [
+   {
+    "title": "Wikipedia: Majapahit",
+    "url": "https://en.wikipedia.org/wiki/Majapahit"
+   },
+   {
+    "title": "Wikipedia: Gajah Mada",
+    "url": "https://en.wikipedia.org/wiki/Gajah_Mada"
+   },
+   {
+    "title": "Wikipedia: Tribhuwana Wijayatunggadewi",
+    "url": "https://en.wikipedia.org/wiki/Tribhuwana_Wijayatunggadewi"
+   },
+   {
+    "title": "Coedès, The Indianized States of Southeast Asia (1968), archive.org",
+    "url": "https://archive.org/details/george-coedes-the-indianized-states-of-southeast-asia-east-west-center-press-1968"
+   },
+   {
+    "title": "D. G. E. Hall, A History of South-East Asia, 4th ed. (1981), archive.org",
+    "url": "https://archive.org/details/a-history-of-south-east-asia-4th-ed"
+   }
+  ]
+ },
+ {
+  "id": "pagan-kingdom",
+  "name": "Pagan Kingdom",
+  "aliases": [
+   "Pagan",
+   "Kingdom of Pagan",
+   "Bagan"
+  ],
+  "clio": [
+   "Pagan Kingdom"
+  ],
+  "region": "southeast-asia",
+  "start": 849,
+  "end": 1297,
+  "capital": "Pagan (Bagan)",
+  "peak": {
+   "year": 1200,
+   "areaKm2": 340000,
+   "note": "Most of modern Myanmar (rough estimate)"
+  },
+  "rulers": [
+   {
+    "name": "Anawrahta",
+    "reign": "1044 – 1077",
+    "note": "Unified Burma and adopted Theravada Buddhism"
+   },
+   {
+    "name": "Kyansittha",
+    "reign": "1084 – 1112",
+    "note": "Built the Ananda Temple"
+   },
+   {
+    "name": "Alaungsithu",
+    "reign": "1112 – 1167",
+    "note": "Long reign of temple building and trade"
+   },
+   {
+    "name": "Narapatisithu",
+    "reign": "1174 – 1211",
+    "note": "Height of the kingdom's prosperity"
+   },
+   {
+    "name": "Narathihapate",
+    "reign": "1256 – 1287",
+    "note": "Fled the Mongol invasion"
+   }
+  ],
+  "summary": "Pagan grew from a settlement on the middle Irrawaddy, traditionally fortified in 849, into the first kingdom to unite the lands that make up modern Myanmar. King Anawrahta, who came to the throne in 1044, conquered the Mon of lower Burma and adopted Theravada Buddhism, which became the faith of the Burmese people. Under him and successors such as Kyansittha and Narapatisithu, the kingdom prospered from irrigated rice farming, and kings, nobles and commoners competed to earn religious merit by building temples. More than 10,000 temples, pagodas and monasteries rose on the plain of Pagan in about 250 years. So much land was donated tax-free to the Buddhist clergy that royal revenues shrank. Weakened, Pagan was invaded by the Mongols in 1287 and broke apart by 1297.",
+  "legacy": "The thousands of temples at Bagan are among Asia's great monuments, and Pagan established the Burmese language, script and Theravada Buddhism in Myanmar.",
+  "sources": [
+   {
+    "title": "Wikipedia: Pagan Kingdom",
+    "url": "https://en.wikipedia.org/wiki/Pagan_Kingdom"
+   },
+   {
+    "title": "Wikipedia: Anawrahta",
+    "url": "https://en.wikipedia.org/wiki/Anawrahta"
+   },
+   {
+    "title": "Coedès, The Indianized States of Southeast Asia (1968), archive.org",
+    "url": "https://archive.org/details/george-coedes-the-indianized-states-of-southeast-asia-east-west-center-press-1968"
+   }
+  ]
+ },
+ {
+  "id": "dai-viet",
+  "name": "Đại Việt",
+  "aliases": [
+   "Đại Việt",
+   "Annam"
+  ],
+  "clio": [
+   "Ngô Dynasty",
+   "Lê Dynasty"
+  ],
+  "region": "southeast-asia",
+  "start": 968,
+  "end": 1804,
+  "capital": "Hoa Lư, then Thăng Long (Hanoi) from 1010",
+  "peak": {
+   "year": 1780,
+   "areaKm2": 300000,
+   "note": "After the long southward expansion into Champa and the Mekong delta (rough estimate)"
+  },
+  "rulers": [
+   {
+    "name": "Đinh Bộ Lĩnh",
+    "reign": "968 – 979",
+    "note": "Unified the country and founded the kingdom"
+   },
+   {
+    "name": "Lý Thái Tổ",
+    "reign": "1009 – 1028",
+    "note": "Moved the capital to Thăng Long"
+   },
+   {
+    "name": "Trần Nhân Tông",
+    "reign": "1278 – 1293",
+    "note": "Repelled the Mongol invasions"
+   },
+   {
+    "name": "Lê Lợi",
+    "reign": "1428 – 1433",
+    "note": "Expelled the Ming and founded the Lê dynasty"
+   },
+   {
+    "name": "Lê Thánh Tông",
+    "reign": "1460 – 1497",
+    "note": "Conquered Champa's capital and issued a law code"
+   },
+   {
+    "name": "Quang Trung (Nguyễn Huệ)",
+    "reign": "1788 – 1792",
+    "note": "Tây Sơn ruler who defeated a Qing invasion"
+   }
+  ],
+  "summary": "Northern Vietnam was ruled by China for about a thousand years until Ngô Quyền defeated a Southern Han fleet at the Bạch Đằng River in 938. In 968 Đinh Bộ Lĩnh unified the country and founded the kingdom later known as Đại Việt, Great Viet. The Lý dynasty moved the capital to Thăng Long, modern Hanoi, in 1010 and built a Confucian bureaucracy alongside Buddhism. The Trần dynasty repelled three Mongol invasions in the 13th century, and after a brief Ming occupation Lê Lợi restored independence in 1428. The Lê kings pushed steadily south at the expense of Champa. From the 16th century the realm was divided, first by the Mạc usurpation of 1527 and then between rival lords, the Trịnh in the north and Nguyễn in the south, until the Tây Sơn rebellion and the Nguyễn dynasty reunified it, renaming it Vietnam in 1804.",
+  "legacy": "Đại Việt forged a Vietnamese identity defined by resistance to Chinese domination and by the long march south that created the shape of modern Vietnam.",
+  "sources": [
+   {
+    "title": "Wikipedia: Đại Việt",
+    "url": "https://en.wikipedia.org/wiki/Đại_Việt"
+   },
+   {
+    "title": "Wikipedia: Đinh Bộ Lĩnh",
+    "url": "https://en.wikipedia.org/wiki/Đinh_Bộ_Lĩnh"
+   },
+   {
+    "title": "D. G. E. Hall, A History of South-East Asia, 4th ed. (1981), archive.org",
+    "url": "https://archive.org/details/a-history-of-south-east-asia-4th-ed"
+   }
+  ]
+ },
+ {
+  "id": "ayutthaya-kingdom",
+  "name": "Ayutthaya Kingdom",
+  "aliases": [
+   "Ayutthaya"
+  ],
+  "clio": [
+   "Ayutthaya Kingdom"
+  ],
+  "region": "southeast-asia",
+  "start": 1351,
+  "end": 1767,
+  "capital": "Ayutthaya",
+  "peak": {
+   "year": 1600,
+   "areaKm2": 400000,
+   "note": "Central Thailand, the former Sukhothai lands, much of the Malay Peninsula and parts of Cambodia; c. 400,000 km² around 1600 (Wikipedia estimate)"
+  },
+  "rulers": [
+   {
+    "name": "Ramathibodi I (U Thong)",
+    "reign": "1351 – 1369",
+    "note": "Founder"
+   },
+   {
+    "name": "Borommatrailokkanat",
+    "reign": "1448 – 1488",
+    "note": "Reorganised government and absorbed Sukhothai"
+   },
+   {
+    "name": "Naresuan the Great",
+    "reign": "1590 – 1605",
+    "note": "Restored independence from Burma"
+   },
+   {
+    "name": "Narai",
+    "reign": "1656 – 1688",
+    "note": "Exchanged embassies with Louis XIV of France"
+   },
+   {
+    "name": "Ekkathat",
+    "reign": "1758 – 1767",
+    "note": "Last king, when the Burmese destroyed the city"
+   }
+  ],
+  "summary": "Ayutthaya was founded in 1351 by King U Thong, who took the title Ramathibodi I, on an island where three rivers meet in Thailand's central plain. The kingdom absorbed the older Thai state of Sukhothai and in 1431 sacked Angkor, inheriting Khmer ideas of divine kingship. Its rulers built a highly organised state, with the sakdina system ranking every subject by land and duty. Ayutthaya became one of Asia's great trading cities, home to Chinese, Persian, Japanese, Portuguese, Dutch and French merchants, and King Narai exchanged embassies with Louis XIV. For centuries it fought Burmese kingdoms; it fell to Burma in 1569, until King Naresuan restored its independence. In 1767 a Burmese army destroyed the city after a long siege, ending the kingdom.",
+  "legacy": "Ayutthaya shaped Thai monarchy, law and culture, and its ruins are a World Heritage Site; later Thai kingdoms saw themselves as its heirs.",
+  "sources": [
+   {
+    "title": "Wikipedia: Ayutthaya Kingdom",
+    "url": "https://en.wikipedia.org/wiki/Ayutthaya_Kingdom"
+   },
+   {
+    "title": "Wikipedia: Naresuan",
+    "url": "https://en.wikipedia.org/wiki/Naresuan"
+   },
+   {
+    "title": "D. G. E. Hall, A History of South-East Asia, 4th ed. (1981), archive.org",
+    "url": "https://archive.org/details/a-history-of-south-east-asia-4th-ed"
+   }
+  ]
+ },
+ {
+  "id": "olmec-civilisation",
+  "name": "Olmec civilisation",
+  "aliases": [
+   "Olmec"
+  ],
+  "clio": [
+   "Olmec Civilization"
+  ],
+  "region": "southern-north-america",
+  "start": -1600,
+  "end": -400,
+  "capital": "San Lorenzo, then La Venta",
+  "peak": {
+   "year": -900,
+   "areaKm2": 50000,
+   "note": "Gulf Coast heartland in Veracruz and Tabasco, with influence across Mesoamerica (rough estimate)"
+  },
+  "rulers": [
+   {
+    "name": "Olmec rulers (names unknown)",
+    "reign": "c. 1200 – 400 BCE",
+    "note": "Probably portrayed in the colossal stone heads"
+   }
+  ],
+  "summary": "The Olmec, who lived in the hot, swampy lowlands of Mexico's Gulf Coast in today's Veracruz and Tabasco, created the first complex society in Mesoamerica. Around 1200 BCE San Lorenzo became a major centre, with earthen platforms and drainage channels, and after about 900 BCE La Venta took its place, with a great earthen pyramid. Olmec rulers, possibly the people portrayed in the famous colossal basalt heads weighing up to about 50 tons, controlled trade in jade, obsidian and other luxury goods across Mesoamerica. The Olmec developed a religion featuring jaguar, maize and rain deities, and probably played the rubber ball game. Their own name is unknown; Olmec, meaning rubber people, is an Aztec word. The heartland declined around 400 BCE, probably because of environmental change.",
+  "legacy": "Often called the mother culture of Mesoamerica, the Olmec pioneered art styles, religious ideas and the ball game later developed by the Maya and others.",
+  "sources": [
+   {
+    "title": "Wikipedia: Olmecs",
+    "url": "https://en.wikipedia.org/wiki/Olmecs"
+   },
+   {
+    "title": "Wikipedia: Olmec colossal heads",
+    "url": "https://en.wikipedia.org/wiki/Olmec_colossal_heads"
+   },
+   {
+    "title": "World History Encyclopedia: Olmec Civilization",
+    "url": "https://www.worldhistory.org/Olmec_Civilization/"
+   }
+  ]
+ },
+ {
+  "id": "maya-civilisation",
+  "name": "Maya civilisation",
+  "aliases": [
+   "Maya chiefdoms and states",
+   "Maya states",
+   "Maya city-states",
+   "Mayas",
+   "Maya"
+  ],
+  "clio": [
+   "Mayan City-States",
+   "Later Mayan City-States"
+  ],
+  "region": "southern-north-america",
+  "start": -2000,
+  "end": 1697,
+  "capital": "No single capital; great cities included El Mirador, Tikal, Calakmul, Palenque, Copán, Chichén Itzá and Mayapán",
+  "peak": {
+   "year": 750,
+   "areaKm2": 400000,
+   "note": "Classic-period city-states across southern Mexico, Guatemala, Belize and western Honduras (rough estimate)"
+  },
+  "rulers": [
+   {
+    "name": "K'inich Yax K'uk' Mo' of Copán",
+    "reign": "426 – 437",
+    "note": "Founder of Copán's royal dynasty"
+   },
+   {
+    "name": "K'inich Janaab Pakal I of Palenque",
+    "reign": "615 – 683",
+    "note": "Buried in the Temple of the Inscriptions"
+   },
+   {
+    "name": "Yuknoom Ch'een II of Calakmul",
+    "reign": "636 – 686",
+    "note": "Led the Kaan kingdom at its height"
+   },
+   {
+    "name": "Jasaw Chan K'awiil I of Tikal",
+    "reign": "682 – 734",
+    "note": "Revived Tikal by defeating Calakmul in 695"
+   },
+   {
+    "name": "Kan Ek'",
+    "reign": "until 1697",
+    "note": "Itza king of Nojpetén, the last independent Maya kingdom"
+   }
+  ],
+  "summary": "Maya farming villages appeared in southern Mexico and Central America by about 2000 BCE, and by 300 BCE great cities such as El Mirador were building huge pyramids. In the Classic period, from about 250 to 900 CE, dozens of city-states ruled by divine kings flourished in the lowland rainforest, and superpowers such as Tikal and Calakmul fought for dominance through warfare and alliances. The Maya developed the most complete writing system in the Americas, recorded dates in their Long Count calendar, tracked the movements of Venus and used the concept of zero. In the 9th century the southern cities collapsed, probably due to drought, overpopulation and constant war, but northern centres such as Chichén Itzá and Mayapán continued. The Spanish conquered most Maya states in the 16th century, and the last, Nojpetén, in 1697.",
+  "legacy": "Millions of Maya people still live in the region speaking Mayan languages, and their deciphered inscriptions reveal one of the ancient world's most sophisticated cultures.",
+  "sources": [
+   {
+    "title": "Wikipedia: Maya civilization",
+    "url": "https://en.wikipedia.org/wiki/Maya_civilization"
+   },
+   {
+    "title": "World History Encyclopedia: Maya Civilization",
+    "url": "https://www.worldhistory.org/Maya_Civilization/"
+   },
+   {
+    "title": "Martin & Velásquez García (2016), Polities and Places: Tracing the Toponyms of the Snake Dynasty, PARI Journal 17(2)",
+    "url": "https://www.mesoweb.com/pari/journal/archive/PARI1702.pdf"
+   }
+  ]
+ },
+ {
+  "id": "teotihuacan",
+  "name": "Teotihuacan",
+  "aliases": [
+   "Teotihuacan"
+  ],
+  "clio": [
+   "Teotihuacan"
+  ],
+  "region": "southern-north-america",
+  "start": -100,
+  "end": 550,
+  "capital": "Teotihuacan",
+  "peak": {
+   "year": 450,
+   "areaKm2": 40000,
+   "note": "A city of perhaps 100,000 people dominating the Valley of Mexico, with influence reaching the Maya region (rough estimate)"
+  },
+  "rulers": [
+   {
+    "name": "Rulers unknown",
+    "reign": "c. 100 BCE – 550 CE",
+    "note": "No royal portraits or names survive; the city may have been governed by councils"
+   },
+   {
+    "name": "Spearthrower Owl",
+    "reign": "c. 374 – 439",
+    "note": "Possible Teotihuacan ruler named in Maya inscriptions, whose son became king of Tikal"
+   }
+  ],
+  "summary": "Teotihuacan, in the Valley of Mexico north-east of modern Mexico City, grew from about 100 BCE into one of the largest cities in the ancient world, home to perhaps 100,000 people at its height around 450 CE. It was laid out on a grid along a great avenue, later called the Avenue of the Dead, lined with the Pyramid of the Sun, the Pyramid of the Moon and the Temple of the Feathered Serpent. Its people lived in large apartment compounds, some housing migrants from Oaxaca and the Gulf Coast. Teotihuacan controlled the obsidian trade and influenced cities across Mesoamerica; in 378 its envoys intervened in the Maya city of Tikal and installed a new dynasty. Around 550 the city centre was burned, perhaps in an internal revolt, and the population dispersed.",
+  "legacy": "The Aztecs revered the ruined city, naming it Teotihuacan, the place where the gods were created, and it is now one of Mexico's most visited ancient sites.",
+  "sources": [
+   {
+    "title": "Wikipedia: Teotihuacan",
+    "url": "https://en.wikipedia.org/wiki/Teotihuacan"
+   },
+   {
+    "title": "Wikipedia: Spearthrower Owl",
+    "url": "https://en.wikipedia.org/wiki/Spearthrower_Owl"
+   },
+   {
+    "title": "World History Encyclopedia: Teotihuacan",
+    "url": "https://www.worldhistory.org/Teotihuacan/"
+   }
+  ]
+ },
+ {
+  "id": "aztec-empire",
+  "name": "Aztec Empire (Triple Alliance)",
+  "aliases": [
+   "Aztec Empire"
+  ],
+  "clio": [
+   "Aztec Triple Alliance",
+   "Tenochtitlan"
+  ],
+  "region": "southern-north-america",
+  "start": 1428,
+  "end": 1521,
+  "capital": "Tenochtitlan",
+  "peak": {
+   "year": 1520,
+   "areaKm2": 220000,
+   "note": "Tributary provinces from the Gulf Coast to the Pacific; c. 0.22M km² in 1520 (Taagepera 1997)"
+  },
+  "rulers": [
+   {
+    "name": "Itzcoatl",
+    "reign": "1427 – 1440",
+    "note": "Formed the Triple Alliance"
+   },
+   {
+    "name": "Moctezuma I",
+    "reign": "1440 – 1469",
+    "note": "Expanded the empire to the Gulf Coast"
+   },
+   {
+    "name": "Ahuitzotl",
+    "reign": "1486 – 1502",
+    "note": "Greatest conqueror; rebuilt the Great Temple"
+   },
+   {
+    "name": "Moctezuma II",
+    "reign": "1502 – 1520",
+    "note": "Ruler when the Spanish arrived"
+   },
+   {
+    "name": "Cuauhtémoc",
+    "reign": "1520 – 1521",
+    "note": "Last emperor; defended Tenochtitlan"
+   }
+  ],
+  "summary": "The Mexica, a people who claimed to have migrated from a homeland called Aztlan, founded Tenochtitlan on an island in Lake Texcoco around 1325. At first vassals of the Tepanec city of Azcapotzalco, in 1428 they formed the Triple Alliance with Texcoco and Tlacopan and overthrew their overlords. Under rulers such as Moctezuma I and Ahuitzotl, the alliance conquered much of central and southern Mexico, collecting tribute in maize, cotton, cacao, feathers and gold from hundreds of towns rather than governing them directly. Tenochtitlan, linked to the shore by causeways and fed by floating chinampa gardens, held perhaps 200,000 people. Warfare also supplied captives for human sacrifice. In 1519 Hernán Cortés arrived; allied with the Tlaxcalans and helped by smallpox, the Spanish captured Tenochtitlan in 1521.",
+  "legacy": "Mexico City stands on the ruins of Tenochtitlan, and the Aztec emblem of an eagle on a cactus appears on the Mexican flag.",
+  "sources": [
+   {
+    "title": "Wikipedia: Aztec Empire",
+    "url": "https://en.wikipedia.org/wiki/Aztec_Empire"
+   },
+   {
+    "title": "World History Encyclopedia: Aztec Civilization",
+    "url": "https://www.worldhistory.org/Aztec_Civilization/"
+   },
+   {
+    "title": "Taagepera (1997), Expansion and Contraction Patterns of Large Polities",
+    "url": "https://escholarship.org/content/qt3cn68807/qt3cn68807.pdf"
+   }
+  ]
+ },
+ {
+  "id": "tiwanaku",
+  "name": "Tiwanaku",
+  "aliases": [
+   "Tiahuanaco Empire"
+  ],
+  "clio": [],
+  "region": "northern-south-america",
+  "start": 500,
+  "end": 1000,
+  "capital": "Tiwanaku, near Lake Titicaca",
+  "peak": {
+   "year": 800,
+   "areaKm2": 500000,
+   "note": "Influence from the Titicaca basin into southern Peru, northern Chile and north-west Argentina (rough estimate)"
+  },
+  "rulers": [
+   {
+    "name": "Rulers unknown",
+    "reign": "c. 500 – 1000",
+    "note": "Tiwanaku had no writing; its elite is known only from monuments such as the Gateway of the Sun"
+   }
+  ],
+  "summary": "Tiwanaku grew near the southern shore of Lake Titicaca, about 3,850 metres above sea level in what is now Bolivia. Settled long before, it became a major city and ceremonial centre from about 500 CE, with stone temples such as the Akapana pyramid, the Kalasasaya enclosure and the carved Gateway of the Sun. Its farmers fed tens of thousands of people using raised fields separated by canals, which protected crops from frost, while herds of llamas and alpacas carried goods. Tiwanaku spread its influence through colonies, religion and trade across the southern Andes into Peru, Chile and Argentina, sharing a staff-god imagery with its northern neighbour Wari. After about 1000 a long drought undermined its farming, and the city was gradually abandoned.",
+  "legacy": "Tiwanaku is a symbol of indigenous Andean identity in Bolivia, and its raised-field farming has been revived by modern farmers.",
+  "sources": [
+   {
+    "title": "Wikipedia: Tiwanaku",
+    "url": "https://en.wikipedia.org/wiki/Tiwanaku"
+   },
+   {
+    "title": "World History Encyclopedia: Tiwanaku",
+    "url": "https://www.worldhistory.org/Tiwanaku/"
+   }
+  ]
+ },
+ {
+  "id": "wari-empire",
+  "name": "Wari Empire",
+  "aliases": [
+   "Huari Empire"
+  ],
+  "clio": [],
+  "region": "northern-south-america",
+  "start": 600,
+  "end": 1000,
+  "capital": "Huari, near modern Ayacucho",
+  "peak": {
+   "year": 800,
+   "areaKm2": 400000,
+   "note": "Much of the Peruvian highlands and coast (rough estimate)"
+  },
+  "rulers": [
+   {
+    "name": "Rulers unknown",
+    "reign": "c. 600 – 1000",
+    "note": "Wari left no writing; its rulers' names are lost"
+   }
+  ],
+  "summary": "The Wari state rose around 600 CE in the Ayacucho valley of the central Peruvian highlands, with its capital at Huari, a city covering several square kilometres. Many archaeologists see Wari as the first true empire of the Andes: it built planned administrative centres such as Pikillacta near Cusco and Viracochapampa in the north, linked by roads, and moved colonists to expand terrace farming. Wari officials probably kept records on khipus, knotted cords later used by the Inca. Wari shared religious imagery, notably a staff-holding god, with Tiwanaku to the south, and the two powers met but seem to have avoided major war. Around 1000 Wari collapsed, perhaps because of drought and internal unrest, leaving a patchwork of regional states.",
+  "legacy": "Wari pioneered the roads, administrative centres, terracing and record-keeping that the Inca later built into their own empire.",
+  "sources": [
+   {
+    "title": "Wikipedia: Wari culture",
+    "url": "https://en.wikipedia.org/wiki/Wari_culture"
+   },
+   {
+    "title": "World History Encyclopedia: Wari Civilization",
+    "url": "https://www.worldhistory.org/Wari_Civilization/"
+   }
+  ]
+ },
+ {
+  "id": "chimu-empire",
+  "name": "Chimú Empire (Chimor)",
+  "aliases": [
+   "Chimú Empire",
+   "Chimú"
+  ],
+  "clio": [
+   "Chimu Empire",
+   "Chimor"
+  ],
+  "region": "northern-south-america",
+  "start": 900,
+  "end": 1470,
+  "capital": "Chan Chan",
+  "peak": {
+   "year": 1450,
+   "areaKm2": 100000,
+   "note": "About 1,000 km of the north Peruvian coast (rough estimate)"
+  },
+  "rulers": [
+   {
+    "name": "Tacaynamo",
+    "reign": "c. 900 (legendary)",
+    "note": "Founder in Chimú tradition, said to have arrived by sea"
+   },
+   {
+    "name": "Ñançenpinco",
+    "reign": "c. 14th century (traditional)",
+    "note": "Remembered as the conqueror who expanded Chimor"
+   },
+   {
+    "name": "Minchançaman",
+    "reign": "c. 1460s – 1470",
+    "note": "Last independent king, taken to Cusco by the Inca"
+   }
+  ],
+  "summary": "The Chimú kingdom, called Chimor, arose around 900 in the Moche valley on Peru's desert north coast, where the Moche civilisation had flourished earlier. Its capital, Chan Chan, was the largest adobe city in the Americas, made up of walled royal compounds, each built by a king who was buried in it with his treasures. Chimú engineers dug long irrigation canals to water the desert, and its craftsmen were skilled goldsmiths and weavers. From the 14th century the Chimú conquered neighbouring valleys until they controlled about 1,000 kilometres of coast, from near the Ecuadorian border to near Lima. Around 1470 the Inca under Topa Inca Yupanqui conquered Chimor, reportedly by cutting its water supply, and carried its king and many artisans off to Cusco.",
+  "legacy": "Chan Chan is a World Heritage Site, and Chimú metalworkers shaped the gold-working traditions of the Inca court.",
+  "sources": [
+   {
+    "title": "Wikipedia: Chimor",
+    "url": "https://en.wikipedia.org/wiki/Chimor"
+   },
+   {
+    "title": "World History Encyclopedia: Chimu Civilization",
+    "url": "https://www.worldhistory.org/Chimu_Civilization/"
+   }
+  ]
+ },
+ {
+  "id": "inca-empire",
+  "name": "Inca Empire (Tawantinsuyu)",
+  "aliases": [
+   "Inca Empire"
+  ],
+  "clio": [
+   "Inca Empire"
+  ],
+  "region": "northern-south-america",
+  "start": 1438,
+  "end": 1533,
+  "capital": "Cusco",
+  "peak": {
+   "year": 1527,
+   "areaKm2": 2000000,
+   "note": "From southern Colombia to central Chile; c. 2.0M km² in 1527 (Taagepera 1997; Turchin, Adams & Hall 2006)"
+  },
+  "rulers": [
+   {
+    "name": "Manco Cápac",
+    "reign": "c. 1200 (legendary)",
+    "note": "Legendary founder of Cusco"
+   },
+   {
+    "name": "Pachacuti",
+    "reign": "1438 – 1471",
+    "note": "Began the imperial expansion; rebuilt Cusco"
+   },
+   {
+    "name": "Topa Inca Yupanqui",
+    "reign": "1471 – 1493",
+    "note": "Conquered Chimor and pushed into Chile"
+   },
+   {
+    "name": "Huayna Capac",
+    "reign": "1493 – 1527",
+    "note": "Ruled at the empire's height; died in an epidemic, possibly smallpox"
+   },
+   {
+    "name": "Atahualpa",
+    "reign": "1532 – 1533",
+    "note": "Won the civil war, then was executed by Pizarro"
+   }
+  ],
+  "summary": "The Inca were a small kingdom around Cusco in the Peruvian highlands, traditionally founded by Manco Cápac around 1200. In 1438 Pachacuti repelled an attack by the rival Chanka and began a series of conquests that his son Topa Inca and grandson Huayna Capac continued, creating Tawantinsuyu, the Land of the Four Quarters, the largest empire in the pre-Columbian Americas. The Inca ruled some 10 million people through a network of about 40,000 kilometres of roads with rope bridges and relay runners, state storehouses and a labour tax called mit'a, keeping records on knotted khipus. They resettled loyal colonists and spread the Quechua language. A civil war between Huáscar and Atahualpa had just ended when Francisco Pizarro arrived; he captured Atahualpa and executed him in 1533.",
+  "legacy": "Machu Picchu and the Inca roads are world-famous, and Quechua, the Inca state language, is still spoken by millions of Andean people.",
+  "sources": [
+   {
+    "title": "Wikipedia: Inca Empire",
+    "url": "https://en.wikipedia.org/wiki/Inca_Empire"
+   },
+   {
+    "title": "Wikipedia: Huayna Capac",
+    "url": "https://en.wikipedia.org/wiki/Huayna_Capac"
+   },
+   {
+    "title": "World History Encyclopedia: Inca Civilization",
+    "url": "https://www.worldhistory.org/Inca_Civilization/"
+   },
+   {
+    "title": "Taagepera (1997), Expansion and Contraction Patterns of Large Polities",
+    "url": "https://escholarship.org/content/qt3cn68807/qt3cn68807.pdf"
+   },
+   {
+    "title": "Turchin, Adams & Hall (2006), East-West Orientation of Historical Empires",
+    "url": "https://web.archive.org/web/20200707181315/http://peterturchin.com/PDF/Turchin_Adams_Hall_2006.pdf"
+   }
+  ]
+ },
+ {
+  "id": "thule-culture",
+  "name": "Thule culture",
+  "aliases": [
+   "Thule"
+  ],
+  "clio": [],
+  "region": "northern-north-america",
+  "start": 1000,
+  "end": 1600,
+  "capital": "None; small seasonal villages across the Arctic",
+  "peak": {
+   "year": 1300,
+   "areaKm2": 2300000,
+   "note": "From Alaska across Arctic Canada to Greenland (rough estimate)"
+  },
+  "rulers": [
+   {
+    "name": "No rulers",
+    "reign": "c. 1000 – 1600",
+    "note": "Thule society was organised in kin-based groups led by experienced whaling captains (umialik)"
+   }
+  ],
+  "summary": "The Thule people, ancestors of today's Inuit, developed in coastal Alaska around 1000 CE. Using sophisticated technology, including large skin boats called umiaks, kayaks, toggling harpoons, dog sleds and snow houses, they hunted bowhead whales, seals and walrus. From about 1200, perhaps encouraged by warmer conditions and the search for iron and new hunting grounds, they spread rapidly eastward across Arctic Canada to Greenland in just a few generations, replacing the earlier Dorset people. In Greenland they met Norse settlers, whose colonies later vanished. Thule communities were small and mobile, without states or kings, but linked by trade networks stretching thousands of kilometres. As the Little Ice Age cooled the Arctic after about 1400, whaling declined and Thule culture evolved into the regional Inuit cultures met by Europeans.",
+  "legacy": "The Thule migration created the Inuit world of Alaska, Canada and Greenland, whose inventions such as the kayak are now used worldwide.",
+  "sources": [
+   {
+    "title": "Wikipedia: Thule people",
+    "url": "https://en.wikipedia.org/wiki/Thule_people"
+   },
+   {
+    "title": "Wikipedia: Dorset culture",
+    "url": "https://en.wikipedia.org/wiki/Dorset_culture"
+   },
+   {
+    "title": "Historical Climatology: What made the Thule move? (on Friesen & Arnold 2008)",
+    "url": "https://historicalclimatology.com/features/what-made-the-thule-move-climate-and-culture-in-the-high-arctic"
+   }
+  ]
+ },
+ {
+  "id": "tui-tonga-empire",
+  "name": "Tuʻi Tonga Empire",
+  "aliases": [
+   "Tuʻi Tonga Empire"
+  ],
+  "clio": [],
+  "region": "australasia",
+  "start": 950,
+  "end": 1865,
+  "capital": "Toloa and Heketā, then Muʻa, all on Tongatapu",
+  "peak": {
+   "year": 1200,
+   "areaKm2": 23000,
+   "note": "Rough upper bound counting the land of Tonga, Samoa, ʻUvea, Futuna and Fiji; Tonga itself has about 750 km² of land, and its maritime influence spread far wider"
+  },
+  "rulers": [
+   {
+    "name": "ʻAhoʻeitu",
+    "reign": "c. 950 (legendary)",
+    "note": "First Tuʻi Tonga, said to be the son of the god Tangaloa"
+   },
+   {
+    "name": "Tuʻitātui",
+    "reign": "c. 12th century",
+    "note": "Credited with building the Haʻamonga ʻa Maui trilithon"
+   },
+   {
+    "name": "Takalaua",
+    "reign": "c. 15th century",
+    "note": "Tuʻi Tonga whose assassination led to a division of power"
+   },
+   {
+    "name": "Kauʻulufonua I",
+    "reign": "c. 15th century",
+    "note": "Avenged his father and created the Tuʻi Haʻatakalaua line"
+   },
+   {
+    "name": "Laufilitonga",
+    "reign": "1827 – 1865",
+    "note": "Last Tuʻi Tonga"
+   }
+  ],
+  "summary": "According to Tongan tradition, the line of sacred kings called Tuʻi Tonga began around 950 with ʻAhoʻeitu, son of the sky god Tangaloa and a mortal woman. From Tongatapu, the Tuʻi Tonga built a maritime chiefdom whose influence, through voyaging canoes, marriage alliances and tribute, extended at its height in the 12th and 13th centuries across Samoa, ʻUvea (Wallis), Futuna and parts of Fiji. The royal centre at Muʻa has great stone-faced tombs called langi, and the Haʻamonga ʻa Maui trilithon is attributed to the king Tuʻitātui. After several Tuʻi Tonga were assassinated, around the 15th century they handed political power to a new line, the Tuʻi Haʻatakalaua, and later the Tuʻi Kanokupolu, keeping a sacred role. The title lapsed when Laufilitonga died in 1865, as George Tupou I unified Tonga as a modern kingdom.",
+  "legacy": "The Tuʻi Tonga tradition underpins the modern Kingdom of Tonga, the only Pacific island monarchy never formally colonised.",
+  "sources": [
+   {
+    "title": "Wikipedia: Tuʻi Tonga Empire",
+    "url": "https://en.wikipedia.org/wiki/Tuʻi_Tonga_Empire"
+   },
+   {
+    "title": "Wikipedia: Tuʻitātui",
+    "url": "https://en.wikipedia.org/wiki/Tuʻi-tā-tui"
+   },
+   {
+    "title": "Wikipedia: Tonga",
+    "url": "https://en.wikipedia.org/wiki/Tonga"
+   },
+   {
+    "title": "Wikipedia: Geography of Tonga",
+    "url": "https://en.wikipedia.org/wiki/Geography_of_Tonga"
+   }
+  ]
+ }
+]

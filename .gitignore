@@ -1,0 +1,9 @@
+# Raw source downloads (≈270 MB): re-fetch and rebuild with the steps in README.md
+data/geo/
+data/clio/*.geojson
+data/clio/*.zip
+
+# OS / editor noise
+.DS_Store
+*.swp
+__pycache__/

@@ -1,0 +1,474 @@
+[
+ {
+  "file": "content/eras/a-ancient.json",
+  "item": -700,
+  "field": "regions.east-asia",
+  "old": "powerful states such as Qi, Jin, Chu and Qin compete",
+  "new": "powerful states such as Zheng, Qi, Jin, Chu and Qin compete",
+  "source": "Wikipedia, Spring and Autumn period (Zheng under Duke Zhuang, d. 701 BCE, was 'the first vassal to openly defy the king'; the hegemony of Qi begins only in 685 BCE) https://en.wikipedia.org/wiki/Spring_and_Autumn_period"
+ },
+ {
+  "file": "content/eras/a-ancient.json",
+  "item": -400,
+  "field": "regions.east-asia",
+  "old": "and the Zhangzhung kingdom holds western Tibet",
+  "new": "and western Tibet is home to Iron Age peoples later remembered in Tibetan tradition as the kingdom of Zhangzhung",
+  "source": "Wikipedia, Zhangzhung (earliest dated record is the Tang Annals entry for 634 CE; earlier history rests on later Tibetan/Bon tradition and tentative Iron Age archaeology) https://en.wikipedia.org/wiki/Zhangzhung"
+ },
+ {
+  "file": "content/eras/a-ancient.json",
+  "item": -323,
+  "field": "regions.east-asia",
+  "old": "and the Zhangzhung kingdom holds western Tibet",
+  "new": "and western Tibet is home to Iron Age peoples later remembered in Tibetan tradition as the kingdom of Zhangzhung",
+  "source": "Wikipedia, Zhangzhung (earliest dated record is the Tang Annals entry for 634 CE; earlier history rests on later Tibetan/Bon tradition and tentative Iron Age archaeology) https://en.wikipedia.org/wiki/Zhangzhung"
+ },
+ {
+  "file": "content/eras/a-ancient.json",
+  "item": -300,
+  "field": "regions.east-asia",
+  "old": "and the Zhangzhung kingdom holds western Tibet",
+  "new": "and western Tibet is home to Iron Age peoples later remembered in Tibetan tradition as the kingdom of Zhangzhung",
+  "source": "Wikipedia, Zhangzhung (earliest dated record is the Tang Annals entry for 634 CE; earlier history rests on later Tibetan/Bon tradition and tentative Iron Age archaeology) https://en.wikipedia.org/wiki/Zhangzhung"
+ },
+ {
+  "file": "content/eras/b-medieval.json",
+  "item": 900,
+  "field": "regions.east-asia",
+  "old": "Japan is ruled by Emperor Daigo and the Fujiwara clan",
+  "new": "Japan is ruled by Emperor Daigo, who governs without a Fujiwara regent though Fujiwara no Tokihira leads his court",
+  "source": "Wikipedia, Emperor Daigo ('he ruled by himself without the regency of the Fujiwara clan'; Tokihira was sadaijin, regent only posthumously) https://en.wikipedia.org/wiki/Emperor_Daigo"
+ },
+ {
+  "file": "content/eras/d-modern.json",
+  "item": 1930,
+  "field": "regions.east-asia",
+  "old": "Mao Zedong's Communists in the Jiangxi Soviet",
+  "new": "Mao Zedong's Communists in their Jiangxi base area",
+  "source": "Wikipedia, Jiangxi–Fujian Soviet (the Chinese Soviet Republic was proclaimed at Ruijin on 7 Nov 1931); First encirclement campaign, Nov 1930 – Jan 1931 https://en.wikipedia.org/wiki/Jiangxi%E2%80%93Fujian_Soviet"
+ },
+ {
+  "file": "content/empires/a2-early.json",
+  "item": "ming-dynasty",
+  "field": "summary",
+  "old": "and the Manchus founded the Qing.",
+  "new": "and the Manchu Qing dynasty, proclaimed by Hong Taiji in 1636, seized the throne.",
+  "source": "Wikipedia, Qing dynasty ('Hong Taiji proclaimed the Great Qing dynasty in 1636') https://en.wikipedia.org/wiki/Qing_dynasty"
+ },
+ {
+  "file": "content/empires/a2-early.json",
+  "item": "classical-japan",
+  "field": "rulers[2].reign",
+  "old": "regent c. 995 – 1027",
+  "new": "dominant at court 995 – 1027 (regent 1016 – 1017)",
+  "source": "Wikipedia, Fujiwara no Michinaga (nairan and udaijin 995, sadaijin 996–1017, sesshō March 1016 – 1017; never formally kampaku) https://en.wikipedia.org/wiki/Fujiwara_no_Michinaga"
+ },
+ {
+  "file": "content/empires/a2-early.json",
+  "item": "goryeo",
+  "field": "summary",
+  "old": "it became a vassal of the Mongols in 1270",
+  "new": "it made peace with the Mongols in 1259 and became a vassal of the Yuan",
+  "source": "Wikipedia, Mongol invasions of Korea (peace concluded spring 1259; crown prince Wonjong sent as hostage; Goryeo a Yuan vassal for c. 80 years from Wonjong; court disputes over the peace lasted until 1270) https://en.wikipedia.org/wiki/Mongol_invasions_of_Korea"
+ },
+ {
+  "file": "content/empires/b-late.json",
+  "item": "mongolia",
+  "field": "summary",
+  "old": "but in 1921 Mongolian revolutionaries led by Damdin Sükhbaatar, aided by the Soviet Red Army, drove them and a White Russian warlord out.",
+  "new": "but in February 1921 the White Russian warlord Baron Ungern-Sternberg drove them from Urga, and Mongolian revolutionaries led by Damdin Sükhbaatar, aided by the Soviet Red Army, then expelled him and entered Urga in July.",
+  "source": "Wikipedia, Mongolian Revolution of 1921 (Ungern took Urga Feb 1921 and the Chinese fled; Sükhbaatar's partisans took Kyakhta Maimaicheng 18 Mar; Red Army repulsed Ungern in June; Mongolian and Russian units entered Urga 6 Jul 1921) https://en.wikipedia.org/wiki/Mongolian_Revolution_of_1921"
+ },
+ {
+  "file": "content/empires/a2-early.json",
+  "item": "han-dynasty",
+  "field": "peak.areaKm2",
+  "old": 6000000,
+  "new": 6500000,
+  "source": "Wikipedia, List of largest empires (Taagepera 1978, 1979, 1997; Turchin, Adams & Hall 2006) https://en.wikipedia.org/wiki/List_of_largest_empires — Eastern Han 6.5M km² in 100 CE (Taagepera 1979); Western Han 6.0M km² in 50 BCE"
+ },
+ {
+  "file": "content/empires/a2-early.json",
+  "item": "han-dynasty",
+  "field": "peak.note",
+  "old": "Including the Tarim Basin protectorate and parts of Korea and northern Vietnam",
+  "new": "c. 6.5M km² (Taagepera 1979), including the Tarim Basin protectorate and parts of Korea and northern Vietnam; Western Han c. 6.0M km² in 50 BCE",
+  "source": "Wikipedia, List of largest empires (Taagepera 1978, 1979, 1997; Turchin, Adams & Hall 2006) https://en.wikipedia.org/wiki/List_of_largest_empires"
+ },
+ {
+  "file": "content/empires/a2-early.json",
+  "item": "sui-dynasty",
+  "field": "peak.areaKm2",
+  "old": 4600000,
+  "new": 3000000,
+  "source": "Wikipedia, List of largest empires (Taagepera 1978, 1979, 1997; Turchin, Adams & Hall 2006) https://en.wikipedia.org/wiki/List_of_largest_empires; Wikipedia, Sui dynasty infobox (3,000,000 km² in 589, citing Taagepera 1979) https://en.wikipedia.org/wiki/Sui_dynasty"
+ },
+ {
+  "file": "content/empires/a2-early.json",
+  "item": "sui-dynasty",
+  "field": "peak.year",
+  "old": 609,
+  "new": 589,
+  "source": "Wikipedia, List of largest empires (Taagepera 1978, 1979, 1997; Turchin, Adams & Hall 2006) https://en.wikipedia.org/wiki/List_of_largest_empires"
+ },
+ {
+  "file": "content/empires/a2-early.json",
+  "item": "sui-dynasty",
+  "field": "peak.note",
+  "old": "After reunifying north and south China",
+  "new": "c. 3.0M km² (Taagepera 1979), after reunifying north and south China",
+  "source": "Wikipedia, List of largest empires (Taagepera 1978, 1979, 1997; Turchin, Adams & Hall 2006) https://en.wikipedia.org/wiki/List_of_largest_empires"
+ },
+ {
+  "file": "content/empires/a2-early.json",
+  "item": "tang-dynasty",
+  "field": "peak.note",
+  "old": "Including protectorates over the Tarim Basin and Central Asia",
+  "new": "Including protectorates over the Tarim Basin and Central Asia; c. 5.4M km² (Taagepera 1997; Turchin et al. 2006, for 715)",
+  "source": "Wikipedia, List of largest empires (Taagepera 1978, 1979, 1997; Turchin, Adams & Hall 2006) https://en.wikipedia.org/wiki/List_of_largest_empires"
+ },
+ {
+  "file": "content/empires/a2-early.json",
+  "item": "song-dynasty",
+  "field": "peak.note",
+  "old": "Northern Song, before the loss of northern China in 1127",
+  "new": "Northern Song, before the loss of northern China in 1127; c. 3.1M km² (Taagepera 1997, reached by 980)",
+  "source": "Wikipedia, List of largest empires (Taagepera 1978, 1979, 1997; Turchin, Adams & Hall 2006) https://en.wikipedia.org/wiki/List_of_largest_empires"
+ },
+ {
+  "file": "content/empires/a2-early.json",
+  "item": "shang-dynasty",
+  "field": "peak.note",
+  "old": "Under Wu Ding, the middle and lower Yellow River plain and allied lands",
+  "new": "Under Wu Ding, the middle and lower Yellow River plain and allied lands; c. 1.25M km² (Taagepera 1978), a generous estimate of Shang influence",
+  "source": "Wikipedia, List of largest empires (Taagepera 1978, 1979, 1997; Turchin, Adams & Hall 2006) https://en.wikipedia.org/wiki/List_of_largest_empires"
+ },
+ {
+  "file": "content/empires/a2-early.json",
+  "item": "zhou-dynasty",
+  "field": "peak.note",
+  "old": "Western Zhou realm of royal relatives and vassal states",
+  "new": "Western Zhou realm of royal relatives and vassal states; estimates vary widely, Taagepera (1978) giving only c. 0.55M km²",
+  "source": "Wikipedia, List of largest empires (Taagepera 1978, 1979, 1997; Turchin, Adams & Hall 2006) https://en.wikipedia.org/wiki/List_of_largest_empires"
+ },
+ {
+  "file": "content/empires/a2-early.json",
+  "item": "qin-dynasty",
+  "field": "peak.note",
+  "old": "Under Qin Shi Huang, from the Ordos to the south China coast",
+  "new": "Under Qin Shi Huang, from the Ordos to the south China coast; c. 2.3M km² (Taagepera 1979)",
+  "source": "Wikipedia, List of largest empires (Taagepera 1978, 1979, 1997; Turchin, Adams & Hall 2006) https://en.wikipedia.org/wiki/List_of_largest_empires"
+ },
+ {
+  "file": "content/empires/a2-early.json",
+  "item": "xiongnu",
+  "field": "peak.note",
+  "old": "Under Modu Chanyu, from Manchuria to the Tarim Basin",
+  "new": "Under Modu Chanyu, from Manchuria to the Tarim Basin; c. 9.0M km² (Taagepera 1979; Turchin et al. 2006)",
+  "source": "Wikipedia, List of largest empires (Taagepera 1978, 1979, 1997; Turchin, Adams & Hall 2006) https://en.wikipedia.org/wiki/List_of_largest_empires"
+ },
+ {
+  "file": "content/empires/a2-early.json",
+  "item": "tibetan-empire",
+  "field": "peak.note",
+  "old": "From the Tarim Basin to Bengal and western China",
+  "new": "From the Tarim Basin to Bengal and western China; c. 4.6M km² (Taagepera 1997; Turchin et al. 2006, for 800)",
+  "source": "Wikipedia, List of largest empires (Taagepera 1978, 1979, 1997; Turchin, Adams & Hall 2006) https://en.wikipedia.org/wiki/List_of_largest_empires"
+ },
+ {
+  "file": "content/empires/a2-early.json",
+  "item": "mongol-empire",
+  "field": "peak.note",
+  "old": "Largest contiguous land empire in history, from Korea to Hungary",
+  "new": "Largest contiguous land empire in history, from Korea to Hungary; c. 24M km² (Turchin et al. 2006 for 1270; Taagepera 1997 for 1309)",
+  "source": "Wikipedia, List of largest empires (Taagepera 1978, 1979, 1997; Turchin, Adams & Hall 2006) https://en.wikipedia.org/wiki/List_of_largest_empires"
+ },
+ {
+  "file": "content/empires/a2-early.json",
+  "item": "yuan-dynasty",
+  "field": "peak.note",
+  "old": "China, Mongolia, Tibet and Manchuria, with Korea as a vassal",
+  "new": "China, Mongolia, Tibet and Manchuria, with Korea as a vassal; c. 11M km² (Taagepera 1997)",
+  "source": "Wikipedia, List of largest empires (Taagepera 1978, 1979, 1997; Turchin, Adams & Hall 2006) https://en.wikipedia.org/wiki/List_of_largest_empires"
+ },
+ {
+  "file": "content/empires/a2-early.json",
+  "item": "ming-dynasty",
+  "field": "peak.note",
+  "old": "Including loosely held lands in Manchuria and the north-east",
+  "new": "Including loosely held lands in Manchuria and the north-east; c. 6.5M km² (Taagepera 1997; Turchin et al. 2006)",
+  "source": "Wikipedia, List of largest empires (Taagepera 1978, 1979, 1997; Turchin, Adams & Hall 2006) https://en.wikipedia.org/wiki/List_of_largest_empires"
+ },
+ {
+  "file": "content/empires/b-late.json",
+  "item": "qing-dynasty",
+  "field": "peak.note",
+  "old": "Including Mongolia, Xinjiang, Tibet and Manchuria",
+  "new": "Including Mongolia, Xinjiang, Tibet and Manchuria; c. 14.7M km² (Taagepera 1997; Turchin et al. 2006)",
+  "source": "Wikipedia, List of largest empires (Taagepera 1978, 1979, 1997; Turchin, Adams & Hall 2006) https://en.wikipedia.org/wiki/List_of_largest_empires"
+ },
+ {
+  "file": "content/empires/b-late.json",
+  "item": "empire-of-japan",
+  "field": "peak.note",
+  "old": "Including occupied territories in China, Southeast Asia and the Pacific",
+  "new": "Including occupied territories in China, Southeast Asia and the Pacific; c. 7.4–8.5M km² (Conrad 2014; James 2010)",
+  "source": "Wikipedia, List of largest empires (Taagepera 1978, 1979, 1997; Turchin, Adams & Hall 2006) https://en.wikipedia.org/wiki/List_of_largest_empires"
+ },
+ {
+  "file": "content/eras/a-ancient.json",
+  "item": -700,
+  "addSource": {
+   "title": "Wikipedia: Spring and Autumn period",
+   "url": "https://en.wikipedia.org/wiki/Spring_and_Autumn_period"
+  }
+ },
+ {
+  "file": "content/eras/a-ancient.json",
+  "item": -400,
+  "addSource": {
+   "title": "Wikipedia: Zhangzhung",
+   "url": "https://en.wikipedia.org/wiki/Zhangzhung"
+  }
+ },
+ {
+  "file": "content/eras/a-ancient.json",
+  "item": -323,
+  "addSource": {
+   "title": "Wikipedia: Zhangzhung",
+   "url": "https://en.wikipedia.org/wiki/Zhangzhung"
+  }
+ },
+ {
+  "file": "content/eras/a-ancient.json",
+  "item": -300,
+  "addSource": {
+   "title": "Wikipedia: Zhangzhung",
+   "url": "https://en.wikipedia.org/wiki/Zhangzhung"
+  }
+ },
+ {
+  "file": "content/eras/a-ancient.json",
+  "item": -1000,
+  "addSource": {
+   "title": "Wikipedia: King Kang of Zhou",
+   "url": "https://en.wikipedia.org/wiki/King_Kang_of_Zhou"
+  }
+ },
+ {
+  "file": "content/eras/b-medieval.json",
+  "item": 900,
+  "addSource": {
+   "title": "Wikipedia: Emperor Daigo",
+   "url": "https://en.wikipedia.org/wiki/Emperor_Daigo"
+  }
+ },
+ {
+  "file": "content/eras/b-medieval.json",
+  "item": 1000,
+  "addSource": {
+   "title": "Wikipedia: Fujiwara no Michinaga",
+   "url": "https://en.wikipedia.org/wiki/Fujiwara_no_Michinaga"
+  }
+ },
+ {
+  "file": "content/eras/b-medieval.json",
+  "item": 500,
+  "addSource": {
+   "title": "Herrmann, Historical and Commercial Atlas of China (1935): The Southern Ch'i and the Northern Wei Dynasties, boundaries of 500 A.D.",
+   "url": "https://archive.org/details/kpbc.umk.pl.Kartografia_040_POWER_001_10_258359"
+  }
+ },
+ {
+  "file": "content/eras/d-modern.json",
+  "item": 1930,
+  "addSource": {
+   "title": "Wikipedia: Jiangxi–Fujian Soviet",
+   "url": "https://en.wikipedia.org/wiki/Jiangxi%E2%80%93Fujian_Soviet"
+  }
+ },
+ {
+  "file": "content/eras/d-modern.json",
+  "item": 1930,
+  "addSource": {
+   "title": "Wikipedia: First encirclement campaign against the Jiangxi Soviet",
+   "url": "https://en.wikipedia.org/wiki/First_encirclement_campaign_against_the_Jiangxi_Soviet"
+  }
+ },
+ {
+  "file": "content/empires/a2-early.json",
+  "item": "ming-dynasty",
+  "addSource": {
+   "title": "Wikipedia: Qing dynasty",
+   "url": "https://en.wikipedia.org/wiki/Qing_dynasty"
+  }
+ },
+ {
+  "file": "content/empires/a2-early.json",
+  "item": "ming-dynasty",
+  "addSource": {
+   "title": "Wikipedia: List of largest empires",
+   "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+  }
+ },
+ {
+  "file": "content/empires/a2-early.json",
+  "item": "classical-japan",
+  "addSource": {
+   "title": "Wikipedia: Fujiwara no Michinaga",
+   "url": "https://en.wikipedia.org/wiki/Fujiwara_no_Michinaga"
+  }
+ },
+ {
+  "file": "content/empires/a2-early.json",
+  "item": "goryeo",
+  "addSource": {
+   "title": "Wikipedia: Mongol invasions of Korea",
+   "url": "https://en.wikipedia.org/wiki/Mongol_invasions_of_Korea"
+  }
+ },
+ {
+  "file": "content/empires/b-late.json",
+  "item": "mongolia",
+  "addSource": {
+   "title": "Wikipedia: Mongolian Revolution of 1921",
+   "url": "https://en.wikipedia.org/wiki/Mongolian_Revolution_of_1921"
+  }
+ },
+ {
+  "file": "content/empires/a2-early.json",
+  "item": "sui-dynasty",
+  "addSource": {
+   "title": "Wikipedia: Sui dynasty",
+   "url": "https://en.wikipedia.org/wiki/Sui_dynasty"
+  }
+ },
+ {
+  "file": "content/empires/a2-early.json",
+  "item": "sui-dynasty",
+  "addSource": {
+   "title": "Wikipedia: List of largest empires",
+   "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+  }
+ },
+ {
+  "file": "content/empires/a2-early.json",
+  "item": "tibetan-empire",
+  "addSource": {
+   "title": "Wikipedia: Tibetan Empire",
+   "url": "https://en.wikipedia.org/wiki/Tibetan_Empire"
+  }
+ },
+ {
+  "file": "content/empires/a2-early.json",
+  "item": "tibetan-empire",
+  "addSource": {
+   "title": "Wikipedia: List of largest empires",
+   "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+  }
+ },
+ {
+  "file": "content/empires/b-late.json",
+  "item": "qing-dynasty",
+  "addSource": {
+   "title": "Wikipedia: Qing dynasty",
+   "url": "https://en.wikipedia.org/wiki/Qing_dynasty"
+  }
+ },
+ {
+  "file": "content/empires/b-late.json",
+  "item": "qing-dynasty",
+  "addSource": {
+   "title": "Wikipedia: List of largest empires",
+   "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+  }
+ },
+ {
+  "file": "content/empires/a2-early.json",
+  "item": "xiongnu",
+  "addSource": {
+   "title": "Herrmann, Historical and Commercial Atlas of China (1935): The Hsiung-nu or Huns in Central Asia, 176 and 128–36 B.C.",
+   "url": "https://archive.org/details/kpbc.umk.pl.Kartografia_040_POWER_001_10_258359"
+  }
+ },
+ {
+  "file": "content/empires/a2-early.json",
+  "item": "xiongnu",
+  "addSource": {
+   "title": "Wikipedia: List of largest empires",
+   "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+  }
+ },
+ {
+  "file": "content/empires/a2-early.json",
+  "item": "han-dynasty",
+  "addSource": {
+   "title": "Wikipedia: List of largest empires",
+   "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+  }
+ },
+ {
+  "file": "content/empires/a2-early.json",
+  "item": "tang-dynasty",
+  "addSource": {
+   "title": "Wikipedia: List of largest empires",
+   "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+  }
+ },
+ {
+  "file": "content/empires/a2-early.json",
+  "item": "song-dynasty",
+  "addSource": {
+   "title": "Wikipedia: List of largest empires",
+   "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+  }
+ },
+ {
+  "file": "content/empires/a2-early.json",
+  "item": "shang-dynasty",
+  "addSource": {
+   "title": "Wikipedia: List of largest empires",
+   "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+  }
+ },
+ {
+  "file": "content/empires/a2-early.json",
+  "item": "zhou-dynasty",
+  "addSource": {
+   "title": "Wikipedia: List of largest empires",
+   "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+  }
+ },
+ {
+  "file": "content/empires/a2-early.json",
+  "item": "qin-dynasty",
+  "addSource": {
+   "title": "Wikipedia: List of largest empires",
+   "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+  }
+ },
+ {
+  "file": "content/empires/a2-early.json",
+  "item": "mongol-empire",
+  "addSource": {
+   "title": "Wikipedia: List of largest empires",
+   "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+  }
+ },
+ {
+  "file": "content/empires/a2-early.json",
+  "item": "yuan-dynasty",
+  "addSource": {
+   "title": "Wikipedia: List of largest empires",
+   "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+  }
+ },
+ {
+  "file": "content/empires/b-late.json",
+  "item": "empire-of-japan",
+  "addSource": {
+   "title": "Wikipedia: List of largest empires",
+   "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+  }
+ }
+]

@@ -1,0 +1,362 @@
+[
+ {
+  "file": "content/eras/a-ancient.json",
+  "item": -300,
+  "field": "powers[2].extent",
+  "old": "Egypt, Cyrenaica and Cyprus,",
+  "new": "Egypt and Cyrenaica (Cyprus is held by Demetrius from 306 until c. 294 BCE),",
+  "source": "https://en.wikipedia.org/wiki/Ptolemaic_Cyprus"
+ },
+ {
+  "file": "content/eras/a-ancient.json",
+  "item": -100,
+  "field": "powers[6].extent",
+  "old": "Egypt and Cyprus",
+  "new": "Egypt (Cyprus is held by his rival brother Ptolemy IX)",
+  "source": "https://en.wikipedia.org/wiki/Ptolemy_IX_Soter"
+ },
+ {
+  "file": "content/eras/a-ancient.json",
+  "item": -200,
+  "field": "regions.europe",
+  "old": "Corsica and eastern Spain",
+  "new": "Corsica and eastern and southern Spain",
+  "source": "https://en.wikipedia.org/wiki/Hispania"
+ },
+ {
+  "file": "content/eras/a-ancient.json",
+  "item": -200,
+  "field": "powers[1].extent",
+  "old": "Corsica and eastern Spain",
+  "new": "Corsica and eastern and southern Spain",
+  "source": "https://en.wikipedia.org/wiki/Hispania"
+ },
+ {
+  "file": "content/eras/b-medieval.json",
+  "item": 700,
+  "field": "powers[4].extent",
+  "old": "Sicily and southern Italy",
+  "new": "Sicily, southern Italy and the Exarchate of Ravenna",
+  "source": "https://en.wikipedia.org/wiki/Exarchate_of_Ravenna"
+ },
+ {
+  "file": "content/eras/b-medieval.json",
+  "item": 1000,
+  "field": "powers[2].extent",
+  "old": "Anatolia, Greece, the Balkans,",
+  "new": "Anatolia, Greece, the eastern Balkans (western Bulgaria holds out until 1018),",
+  "source": "https://en.wikipedia.org/wiki/Basil_II"
+ },
+ {
+  "file": "content/eras/c-earlymodern.json",
+  "item": 1500,
+  "field": "regions.europe",
+  "old": "Maximilian I was Holy Roman Emperor",
+  "new": "Maximilian I ruled the Holy Roman Empire as King of the Romans (emperor-elect from 1508)",
+  "source": "https://en.wikipedia.org/wiki/Maximilian_I,_Holy_Roman_Emperor"
+ },
+ {
+  "file": "content/eras/d-modern.json",
+  "item": 1945,
+  "field": "regions.europe",
+  "old": "east of the Oder-Neisse line handed to Poland",
+  "new": "east of the Oder-Neisse line handed to Poland, except northern East Prussia, which the Soviet Union annexed",
+  "source": "https://en.wikipedia.org/wiki/Potsdam_Agreement"
+ },
+ {
+  "file": "content/eras/d-modern.json",
+  "item": 1945,
+  "field": "powers[2].extent",
+  "old": "Still about a fifth of the world's land",
+  "new": "Still about a quarter of the world's land",
+  "source": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "carthaginian-empire",
+  "field": "peak.year",
+  "old": -264,
+  "new": -220,
+  "source": "https://en.wikipedia.org/wiki/List_of_largest_empires (Taagepera 1979: 0.3M km², 220 BC)"
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "carthaginian-empire",
+  "field": "peak.note",
+  "old": "Before the First Punic War: coastal North Africa, southern Spain, Sardinia, Corsica, western Sicily and the Balearics",
+  "new": "After the Barcid conquests in Spain: coastal North Africa, southern and eastern Spain and the Balearics; c. 0.3M km² (Taagepera 1979)",
+  "source": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "carolingian-empire",
+  "field": "rulers[5].reign",
+  "old": "881 – 888",
+  "new": "881 – 887",
+  "source": "https://en.wikipedia.org/wiki/Charles_the_Fat"
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "kievan-rus",
+  "field": "peak.note",
+  "old": "from the Baltic to the Black Sea steppe",
+  "new": "from the Baltic to the Black Sea steppe; Taagepera (1997) gives a larger c. 2.1M km² for c. 1000",
+  "source": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "ptolemaic-kingdom",
+  "field": "peak.note",
+  "old": "the southern Levant and Aegean outposts",
+  "new": "the southern Levant and Aegean outposts; c. 1.0M km² (Taagepera 1979)",
+  "source": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+ },
+ {
+  "file": "content/empires/b-late.json",
+  "item": "russian-empire",
+  "field": "peak.year",
+  "old": 1866,
+  "new": 1895,
+  "source": "https://en.wikipedia.org/wiki/List_of_largest_empires (Taagepera 1997: 22.8M km², 1895)"
+ },
+ {
+  "file": "content/empires/b-late.json",
+  "item": "russian-empire",
+  "field": "peak.note",
+  "old": "Before the sale of Alaska to the United States in 1867",
+  "new": "After the conquest of Central Asia, despite the sale of Alaska in 1867; c. 22.8M km² (Taagepera 1997)",
+  "source": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+ },
+ {
+  "file": "content/empires/b-late.json",
+  "item": "spanish-empire",
+  "field": "peak.year",
+  "old": 1790,
+  "new": 1810,
+  "source": "https://en.wikipedia.org/wiki/List_of_largest_empires (Taagepera 1997: 13.7M km², 1810)"
+ },
+ {
+  "file": "content/empires/b-late.json",
+  "item": "spanish-empire",
+  "field": "peak.note",
+  "old": "plus the Philippines",
+  "new": "plus the Philippines; c. 13.7M km² (Taagepera 1997)",
+  "source": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "carthaginian-empire",
+  "addSource": {
+   "title": "Wikipedia: List of largest empires (Taagepera/Turchin figures)",
+   "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+  }
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "kievan-rus",
+  "addSource": {
+   "title": "Wikipedia: List of largest empires (Taagepera/Turchin figures)",
+   "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+  }
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "ptolemaic-kingdom",
+  "addSource": {
+   "title": "Wikipedia: List of largest empires (Taagepera/Turchin figures)",
+   "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+  }
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "macedonian-empire",
+  "addSource": {
+   "title": "Wikipedia: List of largest empires (Taagepera/Turchin figures)",
+   "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+  }
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "seleucid-empire",
+  "addSource": {
+   "title": "Wikipedia: List of largest empires (Taagepera/Turchin figures)",
+   "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+  }
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "roman-empire",
+  "addSource": {
+   "title": "Wikipedia: List of largest empires (Taagepera/Turchin figures)",
+   "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+  }
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "byzantine-empire",
+  "addSource": {
+   "title": "Wikipedia: List of largest empires (Taagepera/Turchin figures)",
+   "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+  }
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "hunnic-empire",
+  "addSource": {
+   "title": "Wikipedia: List of largest empires (Taagepera/Turchin figures)",
+   "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+  }
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "carolingian-empire",
+  "addSource": {
+   "title": "Wikipedia: List of largest empires (Taagepera/Turchin figures)",
+   "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+  }
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "holy-roman-empire",
+  "addSource": {
+   "title": "Wikipedia: List of largest empires (Taagepera/Turchin figures)",
+   "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+  }
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "caliphate-of-cordoba",
+  "addSource": {
+   "title": "Wikipedia: List of largest empires (Taagepera/Turchin figures)",
+   "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+  }
+ },
+ {
+  "file": "content/empires/b-late.json",
+  "item": "russian-empire",
+  "addSource": {
+   "title": "Wikipedia: List of largest empires (Taagepera/Turchin figures)",
+   "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+  }
+ },
+ {
+  "file": "content/empires/b-late.json",
+  "item": "spanish-empire",
+  "addSource": {
+   "title": "Wikipedia: List of largest empires (Taagepera/Turchin figures)",
+   "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+  }
+ },
+ {
+  "file": "content/empires/b-late.json",
+  "item": "british-empire",
+  "addSource": {
+   "title": "Wikipedia: List of largest empires (Taagepera/Turchin figures)",
+   "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+  }
+ },
+ {
+  "file": "content/empires/b-late.json",
+  "item": "french-colonial-empire",
+  "addSource": {
+   "title": "Wikipedia: List of largest empires (Taagepera/Turchin figures)",
+   "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+  }
+ },
+ {
+  "file": "content/empires/b-late.json",
+  "item": "italy",
+  "addSource": {
+   "title": "Wikipedia: List of largest empires (Taagepera/Turchin figures)",
+   "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+  }
+ },
+ {
+  "file": "content/empires/b-late.json",
+  "item": "dutch-empire",
+  "addSource": {
+   "title": "Wikipedia: List of largest empires (Taagepera/Turchin figures)",
+   "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+  }
+ },
+ {
+  "file": "content/empires/b-late.json",
+  "item": "germany",
+  "addSource": {
+   "title": "Wikipedia: German colonial empire (area 1912)",
+   "url": "https://en.wikipedia.org/wiki/German_colonial_empire"
+  }
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "carolingian-empire",
+  "addSource": {
+   "title": "Wikipedia: Charles the Fat",
+   "url": "https://en.wikipedia.org/wiki/Charles_the_Fat"
+  }
+ },
+ {
+  "file": "content/eras/a-ancient.json",
+  "item": -300,
+  "addSource": {
+   "title": "Wikipedia: Ptolemaic Cyprus",
+   "url": "https://en.wikipedia.org/wiki/Ptolemaic_Cyprus"
+  }
+ },
+ {
+  "file": "content/eras/a-ancient.json",
+  "item": -100,
+  "addSource": {
+   "title": "Wikipedia: Ptolemy IX Soter",
+   "url": "https://en.wikipedia.org/wiki/Ptolemy_IX_Soter"
+  }
+ },
+ {
+  "file": "content/eras/b-medieval.json",
+  "item": 700,
+  "addSource": {
+   "title": "Wikipedia: Exarchate of Ravenna",
+   "url": "https://en.wikipedia.org/wiki/Exarchate_of_Ravenna"
+  }
+ },
+ {
+  "file": "content/eras/b-medieval.json",
+  "item": 1000,
+  "addSource": {
+   "title": "Wikipedia: Basil II",
+   "url": "https://en.wikipedia.org/wiki/Basil_II"
+  }
+ },
+ {
+  "file": "content/eras/c-earlymodern.json",
+  "item": 1500,
+  "addSource": {
+   "title": "Wikipedia: Maximilian I, Holy Roman Emperor",
+   "url": "https://en.wikipedia.org/wiki/Maximilian_I,_Holy_Roman_Emperor"
+  }
+ },
+ {
+  "file": "content/eras/c-earlymodern.json",
+  "item": 1530,
+  "addSource": {
+   "title": "Wikipedia: Francesco II Sforza",
+   "url": "https://en.wikipedia.org/wiki/Francesco_II_Sforza"
+  }
+ },
+ {
+  "file": "content/eras/d-modern.json",
+  "item": 1945,
+  "addSource": {
+   "title": "Wikipedia: Potsdam Agreement",
+   "url": "https://en.wikipedia.org/wiki/Potsdam_Agreement"
+  }
+ },
+ {
+  "file": "content/eras/d-modern.json",
+  "item": 1994,
+  "addSource": {
+   "title": "ERR News: Thirty years since the last Russian forces left Estonia",
+   "url": "https://news.err.ee/1609437929/thirty-years-since-the-last-russian-forces-left-estonia"
+  }
+ }
+]

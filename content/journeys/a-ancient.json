@@ -1,0 +1,3778 @@
+[
+{
+ "id": "sumer",
+ "name": "Sumerian city-states",
+ "profile": "sumer",
+ "chain": [
+  {
+   "clio": "Sumerian City-States",
+   "from": -3400,
+   "to": -2334
+  }
+ ],
+ "span": [
+  -3400,
+  -2334
+ ],
+ "summary": "In the marshy south of Mesopotamia, Uruk and its neighbours grew into the world's first cities and, by c. 3300 BCE, the first writing. Through the Early Dynastic period (c. 2900–2334 BCE) rival city-states such as Kish, Ur, Lagash and Umma fought over land and water, until Lugalzagesi united Sumer, only to lose it to Sargon of Akkad. All dates are approximate (middle chronology).",
+ "events": [
+  {
+   "year": -3400,
+   "text": "Late Uruk period: Uruk is the leading city of southern Mesopotamia",
+   "lonlat": [
+    45.64,
+    31.32
+   ]
+  },
+  {
+   "year": -3300,
+   "text": "Earliest unequivocal written documents (proto-cuneiform) appear at Uruk",
+   "lonlat": [
+    45.64,
+    31.32
+   ]
+  },
+  {
+   "year": -3100,
+   "text": "Jemdet Nasr period: writing becomes more abstract; cities run central administrations",
+   "lonlat": [
+    44.8,
+    32.72
+   ]
+  },
+  {
+   "year": -2900,
+   "text": "Early Dynastic period begins: rival city-states ruled by kings (lugal)",
+   "lonlat": null
+  },
+  {
+   "year": -2700,
+   "text": "Era of Gilgamesh of Uruk and Enmebaragesi of Kish, kings of later legend",
+   "lonlat": [
+    45.64,
+    31.32
+   ]
+  },
+  {
+   "year": -2600,
+   "text": "Royal Cemetery of Ur: rich burials with goods traded from the Indus",
+   "lonlat": [
+    46.1,
+    30.96
+   ]
+  },
+  {
+   "year": -2500,
+   "text": "Mesilim of Kish arbitrates the border war between Lagash and Umma",
+   "lonlat": [
+    44.6,
+    32.54
+   ]
+  },
+  {
+   "year": -2450,
+   "text": "Eannatum of Lagash defeats Umma; Stele of the Vultures",
+   "lonlat": [
+    46.18,
+    31.55
+   ]
+  },
+  {
+   "year": -2350,
+   "text": "Urukagina rules Lagash; Lugalzagesi of Umma conquers Uruk",
+   "lonlat": [
+    46.4,
+    31.41
+   ]
+  },
+  {
+   "year": -2340,
+   "text": "Lugalzagesi rules all Sumer from Uruk, the first such kingdom on record",
+   "lonlat": [
+    45.64,
+    31.32
+   ]
+  },
+  {
+   "year": -2334,
+   "text": "Sargon of Akkad comes to power; Lugalzagesi's kingdom falls to him",
+   "lonlat": [
+    45.64,
+    31.32
+   ]
+  }
+ ],
+ "reigns": [
+  {
+   "name": "Late Uruk period: Uruk the leading city",
+   "from": -3400,
+   "to": -3100
+  },
+  {
+   "name": "Jemdet Nasr period",
+   "from": -3100,
+   "to": -2900
+  },
+  {
+   "name": "Early Dynastic I–II: Kish and Uruk (Enmebaragesi, Gilgamesh)",
+   "from": -2900,
+   "to": -2600
+  },
+  {
+   "name": "First Dynasty of Ur (Meskalamdug, Mesannepada)",
+   "from": -2600,
+   "to": -2500
+  },
+  {
+   "name": "Dynasty of Ur-Nanshe at Lagash (Eannatum, Entemena, Urukagina)",
+   "from": -2500,
+   "to": -2358
+  },
+  {
+   "name": "Lugalzagesi of Umma and Uruk",
+   "from": -2358,
+   "to": -2334
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Sumer",
+   "url": "https://en.wikipedia.org/wiki/Sumer"
+  },
+  {
+   "title": "Wikipedia: Early Dynastic Period (Mesopotamia)",
+   "url": "https://en.wikipedia.org/wiki/Early_Dynastic_Period_(Mesopotamia)"
+  },
+  {
+   "title": "Wikipedia: Cuneiform",
+   "url": "https://en.wikipedia.org/wiki/Cuneiform"
+  },
+  {
+   "title": "Wikipedia: Jemdet Nasr period",
+   "url": "https://en.wikipedia.org/wiki/Jemdet_Nasr_period"
+  },
+  {
+   "title": "Wikipedia: Eannatum",
+   "url": "https://en.wikipedia.org/wiki/Eannatum"
+  },
+  {
+   "title": "Wikipedia: Lugalzagesi",
+   "url": "https://en.wikipedia.org/wiki/Lugalzagesi"
+  }
+ ]
+},
+{
+ "id": "akkadian-empire",
+ "name": "Akkadian Empire",
+ "profile": "akkadian-empire",
+ "chain": [
+  {
+   "clio": "Akkadian Empire",
+   "from": -2300,
+   "to": -2154
+  }
+ ],
+ "span": [
+  -2334,
+  -2154
+ ],
+ "summary": "Sargon of Akkad (r. c. 2334–2279 BCE) conquered Sumer and campaigned from the Gulf to Syria and Elam, creating the first empire to rule all Mesopotamia. His grandson Naram-Sin crushed a great revolt and took the realm to its widest extent, but after Shar-kali-sharri (d. c. 2193 BCE) the state broke apart under Gutian and Amorite pressure and fell c. 2154 BCE. Dates follow the middle chronology and are approximate.",
+ "events": [
+  {
+   "year": -2334,
+   "text": "Sargon comes to power and founds a dynasty ruling from Akkad (site still unknown)",
+   "lonlat": null
+  },
+  {
+   "year": -2300,
+   "text": "Sargon defeats Lugalzagesi in three battles, razes Uruk's walls and takes Sumer",
+   "lonlat": [
+    45.64,
+    31.32
+   ]
+  },
+  {
+   "year": -2290,
+   "text": "Sargon takes Mari and claims the 'Upper Country' to the Cedar Forest",
+   "lonlat": [
+    40.89,
+    34.55
+   ]
+  },
+  {
+   "year": -2279,
+   "text": "Sargon dies; Rimush reconquers rebel cities including Ur, Umma and Lagash",
+   "lonlat": [
+    46.1,
+    30.96
+   ]
+  },
+  {
+   "year": -2270,
+   "text": "Manishtushu leads a fleet down the Gulf against 32 kings; takes Anshan",
+   "lonlat": [
+    52.36,
+    30.01
+   ]
+  },
+  {
+   "year": -2255,
+   "text": "Naram-Sin succeeds; under him the empire reaches its greatest extent",
+   "lonlat": null
+  },
+  {
+   "year": -2250,
+   "text": "Victory Stele: Naram-Sin defeats the Lullubi of the Zagros",
+   "lonlat": [
+    45.43,
+    35.56
+   ]
+  },
+  {
+   "year": -2240,
+   "text": "Naram-Sin crushes the Great Revolt and is proclaimed a god",
+   "lonlat": null
+  },
+  {
+   "year": -2218,
+   "text": "Shar-kali-sharri succeeds; wars with Gutians, Amorites and Elam",
+   "lonlat": null
+  },
+  {
+   "year": -2193,
+   "text": "Shar-kali-sharri dies; anarchy: 'Who was king? Who was not the king?'",
+   "lonlat": null
+  },
+  {
+   "year": -2154,
+   "text": "Reign of Shu-turul ends; Akkad's empire is gone as Gutians dominate",
+   "lonlat": null
+  }
+ ],
+ "reigns": [
+  {
+   "name": "Sargon",
+   "from": -2334,
+   "to": -2279
+  },
+  {
+   "name": "Rimush",
+   "from": -2279,
+   "to": -2270
+  },
+  {
+   "name": "Manishtushu",
+   "from": -2270,
+   "to": -2255
+  },
+  {
+   "name": "Naram-Sin",
+   "from": -2255,
+   "to": -2218
+  },
+  {
+   "name": "Shar-kali-sharri",
+   "from": -2218,
+   "to": -2193
+  },
+  {
+   "name": "Anarchy (Igigi, Imi, Nanum, Ilulu)",
+   "from": -2193,
+   "to": -2189
+  },
+  {
+   "name": "Dudu",
+   "from": -2189,
+   "to": -2168
+  },
+  {
+   "name": "Shu-turul",
+   "from": -2168,
+   "to": -2154
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Akkadian Empire",
+   "url": "https://en.wikipedia.org/wiki/Akkadian_Empire"
+  },
+  {
+   "title": "Wikipedia: Sargon of Akkad",
+   "url": "https://en.wikipedia.org/wiki/Sargon_of_Akkad"
+  },
+  {
+   "title": "Wikipedia: Rimush",
+   "url": "https://en.wikipedia.org/wiki/Rimush"
+  },
+  {
+   "title": "Wikipedia: Manishtushu",
+   "url": "https://en.wikipedia.org/wiki/Manishtushu"
+  },
+  {
+   "title": "Wikipedia: Naram-Sin of Akkad",
+   "url": "https://en.wikipedia.org/wiki/Naram-Sin_of_Akkad"
+  },
+  {
+   "title": "Wikipedia: Shar-Kali-Sharri",
+   "url": "https://en.wikipedia.org/wiki/Shar-Kali-Sharri"
+  }
+ ]
+},
+{
+ "id": "ur-iii",
+ "name": "Third Dynasty of Ur (Neo-Sumerian Empire)",
+ "profile": "sumer",
+ "chain": [
+  {
+   "clio": "Sumerian City-States",
+   "from": -2100,
+   "to": -2004
+  }
+ ],
+ "span": [
+  -2112,
+  -2004
+ ],
+ "summary": "After the Gutian interlude, Ur-Nammu of Ur (r. c. 2112–2094 BCE) reunited Sumer and Akkad, and his son Shulgi built a centralised, bureaucratic state of some twenty provinces ringed by a military periphery along the Zagros. Amorite incursions, revolts and the breakaway of Isin weakened his successors, and c. 2004 BCE an Elamite coalition sacked Ur. Dates follow the middle chronology and are approximate.",
+ "events": [
+  {
+   "year": -2112,
+   "text": "Ur-Nammu takes power at Ur and founds the Third Dynasty",
+   "lonlat": [
+    46.1,
+    30.96
+   ]
+  },
+  {
+   "year": -2094,
+   "text": "Ur-Nammu dies in battle in the eastern highlands; Shulgi begins a 48-year reign",
+   "lonlat": null
+  },
+  {
+   "year": -2074,
+   "text": "Shulgi, a god by his 21st year, reforms weights, taxes and the bureaucracy",
+   "lonlat": [
+    46.1,
+    30.96
+   ]
+  },
+  {
+   "year": -2070,
+   "text": "Shulgi destroys Simurrum: first of many campaigns in the Zagros",
+   "lonlat": null
+  },
+  {
+   "year": -2065,
+   "text": "Shulgi's daughter marries the governor of Anshan in Elam",
+   "lonlat": [
+    52.36,
+    30.01
+   ]
+  },
+  {
+   "year": -2058,
+   "text": "Shulgi builds a wall to keep out Tidnum (Amorite) nomads",
+   "lonlat": null
+  },
+  {
+   "year": -2050,
+   "text": "One campaign defeats Urbilum, Simurrum, Lullubum and Karhar",
+   "lonlat": [
+    44.01,
+    36.19
+   ]
+  },
+  {
+   "year": -2037,
+   "text": "Shu-Sin succeeds and builds a new wall against Amorite incursions",
+   "lonlat": null
+  },
+  {
+   "year": -2028,
+   "text": "Ibbi-Sin succeeds; within three years the central archives dry up",
+   "lonlat": [
+    46.1,
+    30.96
+   ]
+  },
+  {
+   "year": -2021,
+   "text": "Ishbi-Erra holds Isin under his own year-names, breaking from Ur",
+   "lonlat": [
+    45.27,
+    31.88
+   ]
+  },
+  {
+   "year": -2004,
+   "text": "Elamites under Kindattu sack Ur, ending the dynasty",
+   "lonlat": [
+    46.1,
+    30.96
+   ]
+  }
+ ],
+ "reigns": [
+  {
+   "name": "Ur-Nammu",
+   "from": -2112,
+   "to": -2094
+  },
+  {
+   "name": "Shulgi",
+   "from": -2094,
+   "to": -2046
+  },
+  {
+   "name": "Amar-Sin",
+   "from": -2046,
+   "to": -2038
+  },
+  {
+   "name": "Shu-Sin",
+   "from": -2037,
+   "to": -2029
+  },
+  {
+   "name": "Ibbi-Sin",
+   "from": -2028,
+   "to": -2004
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Third Dynasty of Ur",
+   "url": "https://en.wikipedia.org/wiki/Third_Dynasty_of_Ur"
+  },
+  {
+   "title": "Wikipedia: Shulgi",
+   "url": "https://en.wikipedia.org/wiki/Shulgi"
+  },
+  {
+   "title": "Wikipedia: Ishbi-Erra",
+   "url": "https://en.wikipedia.org/wiki/Ishbi-Erra"
+  },
+  {
+   "title": "Wikipedia: Sumer",
+   "url": "https://en.wikipedia.org/wiki/Sumer"
+  }
+ ]
+},
+{
+ "id": "old-babylonian-empire",
+ "name": "Old Babylonian Empire (Hammurabi)",
+ "profile": "babylonia",
+ "chain": [
+  {
+   "clio": "Babylonia",
+   "from": -1800,
+   "to": -1595
+  }
+ ],
+ "span": [
+  -1792,
+  -1595
+ ],
+ "summary": "Hammurabi (r. c. 1792–1750 BCE) turned Babylon from one Amorite kingdom among many into the master of Mesopotamia, conquering Larsa, Mari and Eshnunna and issuing his famous law code. Under his son Samsu-iluna revolts wrecked the southern cities and the far south broke away as the Sealand dynasty; a shrunken kingdom lasted until the Hittite king Mursili I sacked Babylon c. 1595 BCE. Dates follow the middle chronology and are approximate.",
+ "events": [
+  {
+   "year": -1792,
+   "text": "Hammurabi succeeds Sin-muballit as king of Babylon",
+   "lonlat": [
+    44.42,
+    32.54
+   ]
+  },
+  {
+   "year": -1763,
+   "text": "Hammurabi conquers Larsa and annexes Rim-Sin's kingdom in the south",
+   "lonlat": [
+    45.85,
+    31.29
+   ]
+  },
+  {
+   "year": -1761,
+   "text": "Hammurabi takes Mari on the Euphrates; its palace is destroyed by 1759",
+   "lonlat": [
+    40.89,
+    34.55
+   ]
+  },
+  {
+   "year": -1760,
+   "text": "Ekallatum in Assyria is subjugated; Eshnunna has already been beaten",
+   "lonlat": null
+  },
+  {
+   "year": -1755,
+   "text": "Code of Hammurabi set up late in his reign",
+   "lonlat": [
+    44.42,
+    32.54
+   ]
+  },
+  {
+   "year": -1750,
+   "text": "Hammurabi dies; his son Samsu-iluna succeeds",
+   "lonlat": [
+    44.42,
+    32.54
+   ]
+  },
+  {
+   "year": -1741,
+   "text": "Rim-Sin II's revolt spreads to 26 cities; first known Kassite attack repelled",
+   "lonlat": [
+    45.85,
+    31.29
+   ]
+  },
+  {
+   "year": -1737,
+   "text": "Samsu-iluna retakes Larsa; Ur and Uruk sacked, the south largely abandoned",
+   "lonlat": [
+    46.1,
+    30.96
+   ]
+  },
+  {
+   "year": -1725,
+   "text": "Ilum-ma-ili's revolt founds the Sealand dynasty; Sumer lost for centuries",
+   "lonlat": null
+  },
+  {
+   "year": -1595,
+   "text": "Mursili I of Hatti sacks Babylon, ending Hammurabi's dynasty",
+   "lonlat": [
+    44.42,
+    32.54
+   ]
+  }
+ ],
+ "reigns": [
+  {
+   "name": "Hammurabi",
+   "from": -1792,
+   "to": -1750
+  },
+  {
+   "name": "Samsu-iluna",
+   "from": -1750,
+   "to": -1712
+  },
+  {
+   "name": "Abi-eshuh",
+   "from": -1712,
+   "to": -1684
+  },
+  {
+   "name": "Ammi-ditana",
+   "from": -1684,
+   "to": -1647
+  },
+  {
+   "name": "Ammi-saduqa",
+   "from": -1647,
+   "to": -1626
+  },
+  {
+   "name": "Samsu-ditana",
+   "from": -1626,
+   "to": -1595
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Hammurabi",
+   "url": "https://en.wikipedia.org/wiki/Hammurabi"
+  },
+  {
+   "title": "Wikipedia: First Babylonian dynasty",
+   "url": "https://en.wikipedia.org/wiki/First_Babylonian_dynasty"
+  },
+  {
+   "title": "Wikipedia: Samsu-iluna",
+   "url": "https://en.wikipedia.org/wiki/Samsu-iluna"
+  },
+  {
+   "title": "Wikipedia: Babylonia",
+   "url": "https://en.wikipedia.org/wiki/Babylonia"
+  }
+ ]
+},
+{
+ "id": "hittite-empire",
+ "name": "Hittite Empire",
+ "profile": "hittite-empire",
+ "chain": [
+  {
+   "clio": "Hittites",
+   "from": -1600,
+   "to": -1180
+  }
+ ],
+ "span": [
+  -1650,
+  -1180
+ ],
+ "summary": "From their capital Hattusa in central Anatolia, the Hittite kings Hattusili I and Mursili I raided as far as Aleppo and Babylon (c. 1595 BCE) before the Old Kingdom sank into court strife. Suppiluliuma I (c. 1350–1322 BCE) broke Mitanni and made the Hittites masters of Syria; his successors fought Egypt to a standstill at Kadesh and made peace. Around 1190 BCE, amid the wider Bronze Age collapse, Hattusa was abandoned and the empire vanished. All dates are approximate (middle chronology).",
+ "events": [
+  {
+   "year": -1650,
+   "text": "Hattusili I (or Labarna) founds the kingdom with Hattusa as capital",
+   "lonlat": [
+    34.62,
+    40.02
+   ]
+  },
+  {
+   "year": -1595,
+   "text": "Mursili I raids Aleppo and sacks Babylon",
+   "lonlat": [
+    44.42,
+    32.54
+   ]
+  },
+  {
+   "year": -1525,
+   "text": "Telipinu's reign closes the Old Kingdom after years of internal strife",
+   "lonlat": [
+    34.62,
+    40.02
+   ]
+  },
+  {
+   "year": -1350,
+   "text": "Suppiluliuma I takes Aleppo and overruns Mitanni's capital Washukanni",
+   "lonlat": [
+    37.16,
+    36.2
+   ]
+  },
+  {
+   "year": -1323,
+   "text": "Carchemish captured; Egypt's widowed queen asks him for a son to wed",
+   "lonlat": [
+    38.01,
+    36.83
+   ]
+  },
+  {
+   "year": -1322,
+   "text": "Suppiluliuma I dies of a plague that ravages Hatti for two decades",
+   "lonlat": [
+    34.62,
+    40.02
+   ]
+  },
+  {
+   "year": -1274,
+   "text": "Muwatalli II fights Ramesses II at Kadesh",
+   "lonlat": [
+    36.51,
+    34.57
+   ]
+  },
+  {
+   "year": -1259,
+   "text": "Hattusili III and Ramesses II make a peace treaty",
+   "lonlat": [
+    34.62,
+    40.02
+   ]
+  },
+  {
+   "year": -1207,
+   "text": "Suppiluliuma II, the last known Great King, comes to the throne",
+   "lonlat": [
+    34.62,
+    40.02
+   ]
+  },
+  {
+   "year": -1190,
+   "text": "Hattusa is gradually abandoned as the empire collapses",
+   "lonlat": [
+    34.62,
+    40.02
+   ]
+  },
+  {
+   "year": -1185,
+   "text": "Ugarit, a Hittite vassal on the Syrian coast, is destroyed",
+   "lonlat": [
+    35.78,
+    35.6
+   ]
+  }
+ ],
+ "reigns": [
+  {
+   "name": "Hattusili I",
+   "from": -1650,
+   "to": -1620
+  },
+  {
+   "name": "Mursili I",
+   "from": -1620,
+   "to": -1590
+  },
+  {
+   "name": "Hantili I",
+   "from": -1590,
+   "to": -1560
+  },
+  {
+   "name": "Telipinu",
+   "from": -1560,
+   "to": -1500
+  },
+  {
+   "name": "Suppiluliuma I",
+   "from": -1350,
+   "to": -1322
+  },
+  {
+   "name": "Arnuwanda II",
+   "from": -1322,
+   "to": -1321
+  },
+  {
+   "name": "Mursili II",
+   "from": -1321,
+   "to": -1295
+  },
+  {
+   "name": "Muwatalli II",
+   "from": -1295,
+   "to": -1272
+  },
+  {
+   "name": "Mursili III (Urhi-Teshub)",
+   "from": -1272,
+   "to": -1267
+  },
+  {
+   "name": "Hattusili III",
+   "from": -1267,
+   "to": -1237
+  },
+  {
+   "name": "Tudhaliya IV",
+   "from": -1237,
+   "to": -1209
+  },
+  {
+   "name": "Arnuwanda III",
+   "from": -1209,
+   "to": -1207
+  },
+  {
+   "name": "Suppiluliuma II",
+   "from": -1207,
+   "to": -1180
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Hittites",
+   "url": "https://en.wikipedia.org/wiki/Hittites"
+  },
+  {
+   "title": "Wikipedia: List of Hittite kings",
+   "url": "https://en.wikipedia.org/wiki/List_of_Hittite_kings"
+  },
+  {
+   "title": "Wikipedia: Šuppiluliuma I",
+   "url": "https://en.wikipedia.org/wiki/Suppiluliuma_I"
+  },
+  {
+   "title": "World History Encyclopedia: Hittites",
+   "url": "https://www.worldhistory.org/Hittites/"
+  },
+  {
+   "title": "Wikipedia: Ramesses II",
+   "url": "https://en.wikipedia.org/wiki/Ramesses_II"
+  }
+ ]
+},
+{
+ "id": "egypt-new-kingdom",
+ "name": "Egypt's New Kingdom empire",
+ "profile": "ancient-egypt",
+ "chain": [
+  {
+   "clio": "Seventeenth Dynasty of Egypt",
+   "from": -1549,
+   "to": -1501
+  },
+  {
+   "clio": "New Kingdom of Egypt",
+   "from": -1500,
+   "to": -1077
+  }
+ ],
+ "span": [
+  -1549,
+  -1077
+ ],
+ "summary": "Ahmose I expelled the Hyksos and reunited Egypt (c. 1549–1524 BCE); his successors, above all Thutmose III, built an empire from Nubia beyond the Fourth Cataract to the Euphrates. Egypt contested Syria with Mitanni and then the Hittites until the treaty of c. 1259 BCE, but after Ramesses III fought off the Sea Peoples its power ebbed, and by Ramesses XI's death in 1077 BCE the country was split between Tanis and Thebes. Reign dates follow the conventional low chronology and are approximate.",
+ "events": [
+  {
+   "year": -1549,
+   "text": "Ahmose I becomes king at Thebes and continues the war on the Hyksos",
+   "lonlat": [
+    32.65,
+    25.7
+   ]
+  },
+  {
+   "year": -1531,
+   "text": "Ahmose takes Avaris, then Sharuhen after a 3-year siege: Egypt reunited",
+   "lonlat": [
+    31.82,
+    30.79
+   ]
+  },
+  {
+   "year": -1500,
+   "text": "Thutmose I conquers Lower Nubia and reaches the Euphrates at Carchemish",
+   "lonlat": [
+    38.01,
+    36.83
+   ]
+  },
+  {
+   "year": -1479,
+   "text": "Child-king Thutmose III accedes; Hatshepsut rules, first as regent",
+   "lonlat": [
+    32.65,
+    25.7
+   ]
+  },
+  {
+   "year": -1457,
+   "text": "Thutmose III defeats a Canaanite coalition at Megiddo",
+   "lonlat": [
+    35.18,
+    32.58
+   ]
+  },
+  {
+   "year": -1447,
+   "text": "Thutmose III crosses the Euphrates to attack Mitanni",
+   "lonlat": [
+    38.01,
+    36.83
+   ]
+  },
+  {
+   "year": -1430,
+   "text": "Thutmose III campaigns in Nubia as far as the Fourth Cataract",
+   "lonlat": [
+    32.33,
+    18.95
+   ]
+  },
+  {
+   "year": -1351,
+   "text": "Akhenaten promotes the Aten and moves the capital to Amarna",
+   "lonlat": [
+    30.9,
+    27.65
+   ]
+  },
+  {
+   "year": -1292,
+   "text": "Ramesses I founds the 19th Dynasty",
+   "lonlat": null
+  },
+  {
+   "year": -1274,
+   "text": "Ramesses II fights the Hittites at Kadesh",
+   "lonlat": [
+    36.51,
+    34.57
+   ]
+  },
+  {
+   "year": -1259,
+   "text": "Peace treaty with the Hittites settles the Syrian frontier",
+   "lonlat": null
+  },
+  {
+   "year": -1178,
+   "text": "Ramesses III defeats the Sea Peoples on land at Djahy and at sea in the Delta",
+   "lonlat": [
+    31.0,
+    31.4
+   ]
+  },
+  {
+   "year": -1077,
+   "text": "Ramesses XI dies; Smendes (Tanis) and Amun's priests (Thebes) divide Egypt",
+   "lonlat": [
+    31.88,
+    30.98
+   ]
+  }
+ ],
+ "reigns": [
+  {
+   "name": "Ahmose I",
+   "from": -1549,
+   "to": -1524
+  },
+  {
+   "name": "Amenhotep I",
+   "from": -1524,
+   "to": -1503
+  },
+  {
+   "name": "Thutmose I",
+   "from": -1503,
+   "to": -1493
+  },
+  {
+   "name": "Thutmose II",
+   "from": -1493,
+   "to": -1479
+  },
+  {
+   "name": "Hatshepsut (with Thutmose III)",
+   "from": -1479,
+   "to": -1458
+  },
+  {
+   "name": "Thutmose III (sole rule)",
+   "from": -1458,
+   "to": -1425
+  },
+  {
+   "name": "Amenhotep II",
+   "from": -1427,
+   "to": -1397
+  },
+  {
+   "name": "Thutmose IV",
+   "from": -1397,
+   "to": -1388
+  },
+  {
+   "name": "Amenhotep III",
+   "from": -1388,
+   "to": -1351
+  },
+  {
+   "name": "Akhenaten",
+   "from": -1351,
+   "to": -1334
+  },
+  {
+   "name": "Tutankhamun",
+   "from": -1332,
+   "to": -1323
+  },
+  {
+   "name": "Ay and Horemheb",
+   "from": -1323,
+   "to": -1292
+  },
+  {
+   "name": "Ramesses I and Seti I",
+   "from": -1292,
+   "to": -1279
+  },
+  {
+   "name": "Ramesses II",
+   "from": -1279,
+   "to": -1213
+  },
+  {
+   "name": "Ramesses III",
+   "from": -1185,
+   "to": -1154
+  },
+  {
+   "name": "Ramesses IV–X",
+   "from": -1154,
+   "to": -1106
+  },
+  {
+   "name": "Ramesses XI",
+   "from": -1106,
+   "to": -1077
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: New Kingdom of Egypt",
+   "url": "https://en.wikipedia.org/wiki/New_Kingdom_of_Egypt"
+  },
+  {
+   "title": "Wikipedia: Eighteenth Dynasty of Egypt",
+   "url": "https://en.wikipedia.org/wiki/Eighteenth_Dynasty_of_Egypt"
+  },
+  {
+   "title": "Wikipedia: Twentieth Dynasty of Egypt",
+   "url": "https://en.wikipedia.org/wiki/Twentieth_Dynasty_of_Egypt"
+  },
+  {
+   "title": "Wikipedia: Ahmose I",
+   "url": "https://en.wikipedia.org/wiki/Ahmose_I"
+  },
+  {
+   "title": "Wikipedia: Thutmose III",
+   "url": "https://en.wikipedia.org/wiki/Thutmose_III"
+  },
+  {
+   "title": "Wikipedia: Ramesses II",
+   "url": "https://en.wikipedia.org/wiki/Ramesses_II"
+  }
+ ]
+},
+{
+ "id": "neo-assyrian-empire",
+ "name": "Neo-Assyrian Empire",
+ "profile": "assyria",
+ "chain": [
+  {
+   "clio": "Assyria",
+   "from": -911,
+   "to": -901
+  },
+  {
+   "clio": "Neo-Assyrian Empire",
+   "from": -900,
+   "to": -609
+  }
+ ],
+ "span": [
+  -911,
+  -609
+ ],
+ "summary": "From 911 BCE Assyrian kings reconquered northern Mesopotamia, and Ashurnasirpal II and Shalmaneser III made Assyria the dominant power of the Near East. After a long spell of weak kings, Tiglath-Pileser III (745–727 BCE) more than doubled the empire, and the Sargonid kings took Israel, Babylon and, in 671 BCE, Egypt. Within two decades of Ashurbanipal's death the Babylonians and Medes destroyed Assur (614), Nineveh (612) and the last Assyrian army at Harran (609).",
+ "events": [
+  {
+   "year": -911,
+   "text": "Adad-nirari II becomes king and begins reconquering northern Mesopotamia",
+   "lonlat": [
+    43.26,
+    35.46
+   ]
+  },
+  {
+   "year": -879,
+   "text": "Ashurnasirpal II makes Nimrud (Kalhu) his capital",
+   "lonlat": [
+    43.33,
+    36.1
+   ]
+  },
+  {
+   "year": -853,
+   "text": "Shalmaneser III fights a Levantine coalition at Qarqar",
+   "lonlat": [
+    36.33,
+    35.8
+   ]
+  },
+  {
+   "year": -745,
+   "text": "Tiglath-Pileser III seizes power after the 'age of the magnates'",
+   "lonlat": [
+    43.33,
+    36.1
+   ]
+  },
+  {
+   "year": -729,
+   "text": "Tiglath-Pileser III takes Babylon",
+   "lonlat": [
+    44.42,
+    32.54
+   ]
+  },
+  {
+   "year": -722,
+   "text": "Samaria falls, ending the Kingdom of Israel; Sargon II takes the throne",
+   "lonlat": [
+    35.19,
+    32.28
+   ]
+  },
+  {
+   "year": -714,
+   "text": "Sargon II defeats Rusa I of Urartu near Lake Urmia and sacks Musasir",
+   "lonlat": [
+    45.4,
+    37.5
+   ]
+  },
+  {
+   "year": -705,
+   "text": "Sennacherib becomes king and makes Nineveh the capital",
+   "lonlat": [
+    43.15,
+    36.36
+   ]
+  },
+  {
+   "year": -701,
+   "text": "Sennacherib invades the Levant and besieges Jerusalem",
+   "lonlat": [
+    35.23,
+    31.78
+   ]
+  },
+  {
+   "year": -689,
+   "text": "Sennacherib destroys Babylon",
+   "lonlat": [
+    44.42,
+    32.54
+   ]
+  },
+  {
+   "year": -671,
+   "text": "Esarhaddon conquers Egypt: the empire's greatest extent",
+   "lonlat": [
+    31.25,
+    29.85
+   ]
+  },
+  {
+   "year": -648,
+   "text": "Babylon falls to Ashurbanipal after his brother's revolt (652–648)",
+   "lonlat": [
+    44.42,
+    32.54
+   ]
+  },
+  {
+   "year": -646,
+   "text": "Ashurbanipal's army destroys Elam's centres and plunders Susa",
+   "lonlat": [
+    48.25,
+    32.19
+   ]
+  },
+  {
+   "year": -612,
+   "text": "Medes and Babylonians sack Nineveh",
+   "lonlat": [
+    43.15,
+    36.36
+   ]
+  },
+  {
+   "year": -609,
+   "text": "Ashur-uballit II defeated at Harran: the empire ends",
+   "lonlat": [
+    39.03,
+    36.87
+   ]
+  }
+ ],
+ "reigns": [
+  {
+   "name": "Adad-nirari II",
+   "from": -911,
+   "to": -891
+  },
+  {
+   "name": "Tukulti-Ninurta II",
+   "from": -890,
+   "to": -884
+  },
+  {
+   "name": "Ashurnasirpal II",
+   "from": -884,
+   "to": -859
+  },
+  {
+   "name": "Shalmaneser III",
+   "from": -859,
+   "to": -824
+  },
+  {
+   "name": "Age of the magnates (Shamshi-Adad V to Ashur-nirari V)",
+   "from": -824,
+   "to": -745
+  },
+  {
+   "name": "Tiglath-Pileser III",
+   "from": -745,
+   "to": -727
+  },
+  {
+   "name": "Shalmaneser V",
+   "from": -727,
+   "to": -722
+  },
+  {
+   "name": "Sargon II",
+   "from": -722,
+   "to": -705
+  },
+  {
+   "name": "Sennacherib",
+   "from": -705,
+   "to": -681
+  },
+  {
+   "name": "Esarhaddon",
+   "from": -681,
+   "to": -669
+  },
+  {
+   "name": "Ashurbanipal",
+   "from": -669,
+   "to": -631
+  },
+  {
+   "name": "Ashur-etil-ilani",
+   "from": -631,
+   "to": -627
+  },
+  {
+   "name": "Sin-shar-ishkun",
+   "from": -627,
+   "to": -612
+  },
+  {
+   "name": "Ashur-uballit II",
+   "from": -612,
+   "to": -609
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Neo-Assyrian Empire",
+   "url": "https://en.wikipedia.org/wiki/Neo-Assyrian_Empire"
+  },
+  {
+   "title": "Wikipedia: List of Assyrian kings",
+   "url": "https://en.wikipedia.org/wiki/List_of_Assyrian_kings"
+  },
+  {
+   "title": "Wikipedia: Sargon II",
+   "url": "https://en.wikipedia.org/wiki/Sargon_II"
+  },
+  {
+   "title": "Wikipedia: Ashurbanipal",
+   "url": "https://en.wikipedia.org/wiki/Ashurbanipal"
+  },
+  {
+   "title": "Wikipedia: Neo-Babylonian Empire",
+   "url": "https://en.wikipedia.org/wiki/Neo-Babylonian_Empire"
+  }
+ ]
+},
+{
+ "id": "neo-babylonian-empire",
+ "name": "Neo-Babylonian Empire (Nebuchadnezzar II)",
+ "profile": "babylonia",
+ "chain": [
+  {
+   "clio": "Babylonia",
+   "from": -626,
+   "to": -601
+  },
+  {
+   "clio": "Neo-Babylonian Empire",
+   "from": -600,
+   "to": -539
+  }
+ ],
+ "span": [
+  -626,
+  -539
+ ],
+ "summary": "Nabopolassar threw off Assyrian rule in 626 BCE and, allied with the Medes, destroyed Assyria by 609 BCE. His son Nebuchadnezzar II (605–562 BCE) won Syria and the Levant at Carchemish, destroyed Jerusalem in 587 BCE and rebuilt Babylon in splendour. After his death three short reigns ended in Nabonidus, whose long absence in Arabia left Babylon exposed; Cyrus of Persia took the city in 539 BCE.",
+ "events": [
+  {
+   "year": -626,
+   "text": "Nabopolassar seizes Babylon and Nippur and is crowned king",
+   "lonlat": [
+    44.42,
+    32.54
+   ]
+  },
+  {
+   "year": -614,
+   "text": "Medes take Assur; Nabopolassar allies with them",
+   "lonlat": [
+    43.26,
+    35.46
+   ]
+  },
+  {
+   "year": -612,
+   "text": "Nineveh falls after a siege",
+   "lonlat": [
+    43.15,
+    36.36
+   ]
+  },
+  {
+   "year": -609,
+   "text": "Last Assyrian king defeated at Harran",
+   "lonlat": [
+    39.03,
+    36.87
+   ]
+  },
+  {
+   "year": -605,
+   "text": "Crown prince Nebuchadnezzar routs Egypt at Carchemish, then becomes king",
+   "lonlat": [
+    38.01,
+    36.83
+   ]
+  },
+  {
+   "year": -604,
+   "text": "Nebuchadnezzar II destroys Ashkelon",
+   "lonlat": [
+    34.55,
+    31.66
+   ]
+  },
+  {
+   "year": -601,
+   "text": "Invasion of Egypt ends in heavy losses on both sides",
+   "lonlat": null
+  },
+  {
+   "year": -597,
+   "text": "Jerusalem taken; King Jehoiachin deported to Babylon",
+   "lonlat": [
+    35.23,
+    31.78
+   ]
+  },
+  {
+   "year": -587,
+   "text": "Jerusalem destroyed after Zedekiah's revolt; Babylonian captivity begins",
+   "lonlat": [
+    35.23,
+    31.78
+   ]
+  },
+  {
+   "year": -573,
+   "text": "Tyre submits after a siege begun c. 586",
+   "lonlat": [
+    35.2,
+    33.27
+   ]
+  },
+  {
+   "year": -562,
+   "text": "Nebuchadnezzar II dies in Babylon",
+   "lonlat": [
+    44.42,
+    32.54
+   ]
+  },
+  {
+   "year": -556,
+   "text": "Nabonidus takes the throne after Labashi-Marduk is assassinated",
+   "lonlat": [
+    44.42,
+    32.54
+   ]
+  },
+  {
+   "year": -543,
+   "text": "Nabonidus returns from about ten years at Tayma in Arabia",
+   "lonlat": [
+    38.55,
+    27.63
+   ]
+  },
+  {
+   "year": -539,
+   "text": "Cyrus wins at Opis; his army enters Babylon on 12 October",
+   "lonlat": [
+    44.42,
+    32.54
+   ]
+  }
+ ],
+ "reigns": [
+  {
+   "name": "Nabopolassar",
+   "from": -626,
+   "to": -605
+  },
+  {
+   "name": "Nebuchadnezzar II",
+   "from": -605,
+   "to": -562
+  },
+  {
+   "name": "Amel-Marduk",
+   "from": -562,
+   "to": -560
+  },
+  {
+   "name": "Neriglissar",
+   "from": -560,
+   "to": -556
+  },
+  {
+   "name": "Labashi-Marduk",
+   "from": -556,
+   "to": -556
+  },
+  {
+   "name": "Nabonidus (with Belshazzar as regent)",
+   "from": -556,
+   "to": -539
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Neo-Babylonian Empire",
+   "url": "https://en.wikipedia.org/wiki/Neo-Babylonian_Empire"
+  },
+  {
+   "title": "Wikipedia: Nebuchadnezzar II",
+   "url": "https://en.wikipedia.org/wiki/Nebuchadnezzar_II"
+  },
+  {
+   "title": "Wikipedia: Neo-Assyrian Empire",
+   "url": "https://en.wikipedia.org/wiki/Neo-Assyrian_Empire"
+  }
+ ]
+},
+{
+ "id": "achaemenid-empire",
+ "name": "Achaemenid Persian Empire",
+ "profile": "achaemenid-empire",
+ "chain": [
+  {
+   "clio": "Achaemenid Empire",
+   "from": -550,
+   "to": -330
+  }
+ ],
+ "span": [
+  -550,
+  -330
+ ],
+ "summary": "Cyrus the Great overthrew the Medes in 550 BCE and took Lydia and Babylon; Cambyses added Egypt and Darius I pushed the frontier to the Indus and into Europe, ruling c. 5.5 million km², the largest empire yet seen. Defeats in Greece (490, 480–479 BCE) and the loss of Egypt (404–343 BCE) dented but did not break it; Alexander of Macedon destroyed it in 334–330 BCE.",
+ "events": [
+  {
+   "year": -550,
+   "text": "Cyrus defeats the Medes and takes Ecbatana",
+   "lonlat": [
+    48.52,
+    34.8
+   ]
+  },
+  {
+   "year": -547,
+   "text": "Cyrus conquers Lydia and captures Sardis",
+   "lonlat": [
+    28.04,
+    38.49
+   ]
+  },
+  {
+   "year": -539,
+   "text": "Cyrus takes Babylon and its empire",
+   "lonlat": [
+    44.42,
+    32.54
+   ]
+  },
+  {
+   "year": -525,
+   "text": "Cambyses II defeats Psamtik III at Pelusium and conquers Egypt",
+   "lonlat": [
+    32.57,
+    31.04
+   ]
+  },
+  {
+   "year": -522,
+   "text": "Darius I seizes the throne after the disputed succession",
+   "lonlat": null
+  },
+  {
+   "year": -515,
+   "text": "Darius conquers the lands around the Indus (Hindush)",
+   "lonlat": null
+  },
+  {
+   "year": -513,
+   "text": "Darius invades European Scythia and subdues parts of the Balkans",
+   "lonlat": null
+  },
+  {
+   "year": -499,
+   "text": "Ionian Revolt begins, the first great war between Greeks and Persia",
+   "lonlat": [
+    27.28,
+    37.53
+   ]
+  },
+  {
+   "year": -490,
+   "text": "Persian expedition defeated at Marathon",
+   "lonlat": [
+    23.97,
+    38.12
+   ]
+  },
+  {
+   "year": -480,
+   "text": "Xerxes invades Greece; his fleet is beaten at Salamis",
+   "lonlat": [
+    23.57,
+    37.95
+   ]
+  },
+  {
+   "year": -404,
+   "text": "Egypt breaks away under Amyrtaeus",
+   "lonlat": null
+  },
+  {
+   "year": -343,
+   "text": "Artaxerxes III reconquers Egypt",
+   "lonlat": [
+    31.25,
+    29.85
+   ]
+  },
+  {
+   "year": -334,
+   "text": "Alexander invades and wins at the Granicus",
+   "lonlat": [
+    27.3,
+    40.2
+   ]
+  },
+  {
+   "year": -331,
+   "text": "Alexander defeats Darius III at Gaugamela",
+   "lonlat": [
+    43.45,
+    36.56
+   ]
+  },
+  {
+   "year": -330,
+   "text": "Darius III is killed; the empire passes to Alexander",
+   "lonlat": null
+  }
+ ],
+ "reigns": [
+  {
+   "name": "Cyrus the Great (king of Persia from 559)",
+   "from": -550,
+   "to": -530
+  },
+  {
+   "name": "Cambyses II",
+   "from": -530,
+   "to": -522
+  },
+  {
+   "name": "Darius I the Great",
+   "from": -522,
+   "to": -486
+  },
+  {
+   "name": "Xerxes I",
+   "from": -486,
+   "to": -465
+  },
+  {
+   "name": "Artaxerxes I",
+   "from": -465,
+   "to": -424
+  },
+  {
+   "name": "Darius II",
+   "from": -423,
+   "to": -405
+  },
+  {
+   "name": "Artaxerxes II",
+   "from": -405,
+   "to": -358
+  },
+  {
+   "name": "Artaxerxes III",
+   "from": -358,
+   "to": -338
+  },
+  {
+   "name": "Artaxerxes IV (Arses)",
+   "from": -338,
+   "to": -336
+  },
+  {
+   "name": "Darius III",
+   "from": -336,
+   "to": -330
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Achaemenid Empire",
+   "url": "https://en.wikipedia.org/wiki/Achaemenid_Empire"
+  },
+  {
+   "title": "Wikipedia: Darius the Great",
+   "url": "https://en.wikipedia.org/wiki/Darius_the_Great"
+  },
+  {
+   "title": "World History Encyclopedia: Achaemenid Empire",
+   "url": "https://www.worldhistory.org/Achaemenid_Empire/"
+  },
+  {
+   "title": "Wikipedia: Alexander the Great",
+   "url": "https://en.wikipedia.org/wiki/Alexander_the_Great"
+  }
+ ]
+},
+{
+ "id": "rome",
+ "name": "Roman Republic and Empire",
+ "profile": "roman-empire",
+ "chain": [
+  {
+   "clio": "Roman Republic",
+   "from": -500,
+   "to": -32
+  },
+  {
+   "clio": "Roman Empire",
+   "from": -31,
+   "to": 394
+  },
+  {
+   "clio": "Western Roman Empire",
+   "from": 395,
+   "to": 475
+  }
+ ],
+ "span": [
+  -509,
+  476
+ ],
+ "summary": "The Roman Republic (from c. 509 BCE) conquered Italy, then defeated Carthage and the Hellenistic kingdoms to dominate the Mediterranean, before civil wars ended in one-man rule under Augustus (27 BCE). The Empire peaked under Trajan at about 5 million km² (117 CE), survived the crisis of the third century, and was split for good between East and West in 395. The Western half lost its provinces to Germanic peoples and ended when Odoacer deposed Romulus Augustulus in 476.",
+ "events": [
+  {
+   "year": -509,
+   "text": "Monarchy overthrown; the Republic, led by two annual consuls, begins",
+   "lonlat": [
+    12.48,
+    41.89
+   ]
+  },
+  {
+   "year": -338,
+   "text": "Rome defeats the Latin League and dominates Latium",
+   "lonlat": [
+    12.48,
+    41.89
+   ]
+  },
+  {
+   "year": -272,
+   "text": "Tarentum surrenders: Rome controls peninsular Italy",
+   "lonlat": [
+    17.24,
+    40.47
+   ]
+  },
+  {
+   "year": -241,
+   "text": "First Punic War won; Sicily becomes the first province",
+   "lonlat": [
+    14.1,
+    37.5
+   ]
+  },
+  {
+   "year": -202,
+   "text": "Rome defeats Carthage at Zama, winning the Second Punic War",
+   "lonlat": [
+    8.36,
+    36.22
+   ]
+  },
+  {
+   "year": -146,
+   "text": "Carthage destroyed; Achaean League crushed at Corinth",
+   "lonlat": [
+    10.32,
+    36.85
+   ]
+  },
+  {
+   "year": -58,
+   "text": "Caesar's Gallic Wars begin with the campaign against the Helvetii",
+   "lonlat": [
+    6.14,
+    46.2
+   ]
+  },
+  {
+   "year": -31,
+   "text": "Octavian defeats Antony and Cleopatra at Actium; Egypt annexed in 30",
+   "lonlat": [
+    20.73,
+    38.95
+   ]
+  },
+  {
+   "year": 9,
+   "text": "Germanic coalition destroys three Roman legions in the Teutoburg Forest",
+   "lonlat": [
+    8.13,
+    52.41
+   ]
+  },
+  {
+   "year": 117,
+   "text": "Trajan dies with the empire at its greatest extent",
+   "lonlat": null
+  },
+  {
+   "year": 260,
+   "text": "Valerian captured by Persia; the Gallic Empire breaks away",
+   "lonlat": [
+    38.79,
+    37.16
+   ]
+  },
+  {
+   "year": 395,
+   "text": "Theodosius I dies; the empire is split between Arcadius and Honorius",
+   "lonlat": null
+  },
+  {
+   "year": 410,
+   "text": "Alaric's Visigoths sack Rome; Britain effectively abandoned",
+   "lonlat": [
+    12.48,
+    41.89
+   ]
+  },
+  {
+   "year": 439,
+   "text": "Vandals take Carthage and the rich African provinces",
+   "lonlat": [
+    10.32,
+    36.85
+   ]
+  },
+  {
+   "year": 476,
+   "text": "Odoacer deposes Romulus Augustulus at Ravenna: end of the Western Empire",
+   "lonlat": [
+    12.2,
+    44.42
+   ]
+  }
+ ],
+ "reigns": [
+  {
+   "name": "Republic: annually elected consuls",
+   "from": -509,
+   "to": -44
+  },
+  {
+   "name": "Civil wars: Octavian, Antony and Lepidus",
+   "from": -44,
+   "to": -27
+  },
+  {
+   "name": "Augustus and the Julio-Claudian dynasty",
+   "from": -27,
+   "to": 68
+  },
+  {
+   "name": "Year of the Four Emperors",
+   "from": 68,
+   "to": 69
+  },
+  {
+   "name": "Flavian dynasty",
+   "from": 69,
+   "to": 96
+  },
+  {
+   "name": "Nerva–Antonine dynasty",
+   "from": 96,
+   "to": 192
+  },
+  {
+   "name": "Severan dynasty",
+   "from": 193,
+   "to": 235
+  },
+  {
+   "name": "Crisis of the Third Century",
+   "from": 235,
+   "to": 284
+  },
+  {
+   "name": "Diocletian and the Tetrarchy",
+   "from": 284,
+   "to": 305
+  },
+  {
+   "name": "Constantine I",
+   "from": 306,
+   "to": 337
+  },
+  {
+   "name": "Constantinian dynasty (sons and Julian)",
+   "from": 337,
+   "to": 363
+  },
+  {
+   "name": "Valentinianic dynasty",
+   "from": 364,
+   "to": 392
+  },
+  {
+   "name": "Theodosius I",
+   "from": 379,
+   "to": 395
+  },
+  {
+   "name": "Honorius (West)",
+   "from": 395,
+   "to": 423
+  },
+  {
+   "name": "Valentinian III (West)",
+   "from": 425,
+   "to": 455
+  },
+  {
+   "name": "Last western emperors (Petronius Maximus to Julius Nepos)",
+   "from": 455,
+   "to": 475
+  },
+  {
+   "name": "Romulus Augustulus",
+   "from": 475,
+   "to": 476
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Roman Republic",
+   "url": "https://en.wikipedia.org/wiki/Roman_Republic"
+  },
+  {
+   "title": "Wikipedia: Roman Empire",
+   "url": "https://en.wikipedia.org/wiki/Roman_Empire"
+  },
+  {
+   "title": "Wikipedia: Timeline of Roman history",
+   "url": "https://en.wikipedia.org/wiki/Timeline_of_Roman_history"
+  },
+  {
+   "title": "Wikipedia: Western Roman Empire",
+   "url": "https://en.wikipedia.org/wiki/Western_Roman_Empire"
+  },
+  {
+   "title": "Wikipedia: List of Roman emperors",
+   "url": "https://en.wikipedia.org/wiki/List_of_Roman_emperors"
+  }
+ ]
+},
+{
+ "id": "alexander",
+ "name": "Empire of Alexander the Great",
+ "profile": "macedonian-empire",
+ "chain": [
+  {
+   "clio": "Macedonian Empire",
+   "from": -359,
+   "to": -301
+  }
+ ],
+ "span": [
+  -359,
+  -301
+ ],
+ "summary": "Philip II (359–336 BCE) made Macedon the master of Greece; his son Alexander III conquered the whole Persian Empire and pushed on to the Indus before dying in Babylon in 323 BCE. His generals kept the empire nominally united under his half-brother and infant son, but after both were murdered they took royal titles, and the battle of Ipsus (301 BCE) fixed its partition into rival kingdoms.",
+ "events": [
+  {
+   "year": -359,
+   "text": "Philip II becomes king of Macedon and reforms its army",
+   "lonlat": [
+    22.52,
+    40.76
+   ]
+  },
+  {
+   "year": -357,
+   "text": "Philip takes Amphipolis, opening Macedon's eastward expansion",
+   "lonlat": [
+    23.85,
+    40.82
+   ]
+  },
+  {
+   "year": -338,
+   "text": "Philip defeats Athens and Thebes at Chaeronea",
+   "lonlat": [
+    22.84,
+    38.49
+   ]
+  },
+  {
+   "year": -336,
+   "text": "Philip assassinated at Aegae; Alexander III becomes king",
+   "lonlat": [
+    22.32,
+    40.48
+   ]
+  },
+  {
+   "year": -334,
+   "text": "Alexander crosses into Asia; victory at the Granicus",
+   "lonlat": [
+    27.3,
+    40.2
+   ]
+  },
+  {
+   "year": -333,
+   "text": "Alexander defeats Darius III at Issus",
+   "lonlat": [
+    36.2,
+    36.84
+   ]
+  },
+  {
+   "year": -331,
+   "text": "Alexandria founded in Egypt; Darius beaten again at Gaugamela",
+   "lonlat": [
+    43.45,
+    36.56
+   ]
+  },
+  {
+   "year": -330,
+   "text": "Darius III is killed by Bessus; the Persian Empire is Alexander's",
+   "lonlat": null
+  },
+  {
+   "year": -326,
+   "text": "Alexander defeats Porus at the Hydaspes; his army mutinies at the Beas",
+   "lonlat": [
+    73.73,
+    32.93
+   ]
+  },
+  {
+   "year": -324,
+   "text": "Alexander reaches Susa after a costly march through the desert",
+   "lonlat": [
+    48.25,
+    32.19
+   ]
+  },
+  {
+   "year": -323,
+   "text": "Alexander dies in Babylon; Perdiccas becomes regent of the empire",
+   "lonlat": [
+    44.42,
+    32.54
+   ]
+  },
+  {
+   "year": -317,
+   "text": "Philip III Arrhidaeus executed; Alexander IV is sole king",
+   "lonlat": null
+  },
+  {
+   "year": -309,
+   "text": "Cassander has Alexander IV murdered, ending the Argead line",
+   "lonlat": null
+  },
+  {
+   "year": -306,
+   "text": "Antigonus and Demetrius take royal titles; other generals follow",
+   "lonlat": null
+  },
+  {
+   "year": -301,
+   "text": "Ipsus: Seleucus and Lysimachus defeat and kill Antigonus; empire divided",
+   "lonlat": [
+    31.0,
+    38.6
+   ]
+  }
+ ],
+ "reigns": [
+  {
+   "name": "Philip II",
+   "from": -359,
+   "to": -336
+  },
+  {
+   "name": "Alexander III the Great",
+   "from": -336,
+   "to": -323
+  },
+  {
+   "name": "Philip III Arrhidaeus and Alexander IV (regents Perdiccas, Antipater, Polyperchon)",
+   "from": -323,
+   "to": -317
+  },
+  {
+   "name": "Alexander IV (under Olympias, then Cassander)",
+   "from": -317,
+   "to": -309
+  },
+  {
+   "name": "Rival Diadochi kings (Antigonus, Ptolemy, Seleucus, Cassander, Lysimachus)",
+   "from": -306,
+   "to": -301
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Alexander the Great",
+   "url": "https://en.wikipedia.org/wiki/Alexander_the_Great"
+  },
+  {
+   "title": "Wikipedia: Philip II of Macedon",
+   "url": "https://en.wikipedia.org/wiki/Philip_II_of_Macedon"
+  },
+  {
+   "title": "Wikipedia: Wars of the Diadochi",
+   "url": "https://en.wikipedia.org/wiki/Wars_of_the_Diadochi"
+  },
+  {
+   "title": "Wikipedia: Alexander IV of Macedon",
+   "url": "https://en.wikipedia.org/wiki/Alexander_IV_of_Macedon"
+  },
+  {
+   "title": "World History Encyclopedia: Achaemenid Empire",
+   "url": "https://www.worldhistory.org/Achaemenid_Empire/"
+  }
+ ]
+},
+{
+ "id": "maurya-empire",
+ "name": "Maurya Empire",
+ "profile": "maurya-empire",
+ "chain": [
+  {
+   "clio": "Maurya Empire",
+   "from": -318,
+   "to": -185
+  }
+ ],
+ "span": [
+  -321,
+  -185
+ ],
+ "summary": "Chandragupta Maurya overthrew the Nanda dynasty of Magadha c. 321 BCE and, after war with Seleucus I, won the lands up to the Hindu Kush. Bindusara pushed into the Deccan and Ashoka conquered Kalinga c. 261 BCE, ruling nearly all of South Asia except the far south before turning to Buddhism. After Ashoka's death in 232 BCE weaker kings followed, and the general Pushyamitra Shunga killed the last, Brihadratha, c. 185 BCE.",
+ "events": [
+  {
+   "year": -321,
+   "text": "Chandragupta overthrows the Nandas; Pataliputra becomes the capital",
+   "lonlat": [
+    85.14,
+    25.61
+   ]
+  },
+  {
+   "year": -305,
+   "text": "War with Seleucus I begins (305–303 BCE)",
+   "lonlat": null
+  },
+  {
+   "year": -302,
+   "text": "Peace: Seleucus cedes eastern lands for 500 war elephants",
+   "lonlat": [
+    69.17,
+    34.53
+   ]
+  },
+  {
+   "year": -298,
+   "text": "Bindusara succeeds and extends rule into the Deccan",
+   "lonlat": [
+    85.14,
+    25.61
+   ]
+  },
+  {
+   "year": -268,
+   "text": "Ashoka becomes emperor",
+   "lonlat": [
+    85.14,
+    25.61
+   ]
+  },
+  {
+   "year": -261,
+   "text": "Kalinga War; its carnage turns Ashoka towards Buddhism",
+   "lonlat": [
+    85.84,
+    20.19
+   ]
+  },
+  {
+   "year": -232,
+   "text": "Ashoka dies; a series of weaker rulers follows",
+   "lonlat": [
+    85.14,
+    25.61
+   ]
+  },
+  {
+   "year": -185,
+   "text": "Pushyamitra Shunga assassinates Brihadratha, ending the dynasty",
+   "lonlat": [
+    85.14,
+    25.61
+   ]
+  }
+ ],
+ "reigns": [
+  {
+   "name": "Chandragupta Maurya",
+   "from": -321,
+   "to": -298
+  },
+  {
+   "name": "Bindusara",
+   "from": -298,
+   "to": -272
+  },
+  {
+   "name": "Ashoka",
+   "from": -268,
+   "to": -232
+  },
+  {
+   "name": "Dasharatha",
+   "from": -232,
+   "to": -224
+  },
+  {
+   "name": "Samprati",
+   "from": -224,
+   "to": -215
+  },
+  {
+   "name": "Shalishuka",
+   "from": -215,
+   "to": -202
+  },
+  {
+   "name": "Devavarman",
+   "from": -202,
+   "to": -195
+  },
+  {
+   "name": "Shatadhanvan",
+   "from": -195,
+   "to": -187
+  },
+  {
+   "name": "Brihadratha",
+   "from": -187,
+   "to": -185
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Maurya Empire",
+   "url": "https://en.wikipedia.org/wiki/Maurya_Empire"
+  },
+  {
+   "title": "World History Encyclopedia: Mauryan Empire",
+   "url": "https://www.worldhistory.org/Mauryan_Empire/"
+  },
+  {
+   "title": "Wikipedia: Seleucid Empire",
+   "url": "https://en.wikipedia.org/wiki/Seleucid_Empire"
+  }
+ ]
+},
+{
+ "id": "seleucid-empire",
+ "name": "Seleucid Empire",
+ "profile": "seleucid-empire",
+ "chain": [
+  {
+   "clio": "Seleucid Empire",
+   "from": -312,
+   "to": -64
+  }
+ ],
+ "span": [
+  -312,
+  -63
+ ],
+ "summary": "Seleucus I took Babylon in 312 BCE and, after Ipsus and Corupedium, ruled from the Aegean to the borders of India. Bactria and Parthia broke away in the mid-3rd century; Antiochus III restored much of the realm but lost Anatolia to Rome after Magnesia (190 BCE), and the Parthians took Mesopotamia in 141 BCE. Reduced to Syria and torn by dynastic wars, the kingdom was annexed by Pompey in 63 BCE.",
+ "events": [
+  {
+   "year": -312,
+   "text": "Seleucus takes Babylon; the Seleucid era begins",
+   "lonlat": [
+    44.42,
+    32.54
+   ]
+  },
+  {
+   "year": -305,
+   "text": "Seleucus takes the royal title; war with Chandragupta Maurya (305–303)",
+   "lonlat": null
+  },
+  {
+   "year": -301,
+   "text": "Ipsus: Seleucus gains northern Syria and eastern Anatolia",
+   "lonlat": [
+    31.0,
+    38.6
+   ]
+  },
+  {
+   "year": -281,
+   "text": "Victory at Corupedium brings the widest extent; Seleucus is assassinated",
+   "lonlat": [
+    27.75,
+    38.55
+   ]
+  },
+  {
+   "year": -250,
+   "text": "Bactria and then Parthia break away in the mid-3rd century",
+   "lonlat": null
+  },
+  {
+   "year": -217,
+   "text": "Antiochus III defeated by Ptolemy IV at Raphia",
+   "lonlat": [
+    34.25,
+    31.29
+   ]
+  },
+  {
+   "year": -206,
+   "text": "Antiochus III's eastern campaign reaches the Kabul valley",
+   "lonlat": [
+    69.17,
+    34.53
+   ]
+  },
+  {
+   "year": -200,
+   "text": "Antiochus III wins at Panium and takes Coele-Syria from the Ptolemies",
+   "lonlat": [
+    35.69,
+    33.25
+   ]
+  },
+  {
+   "year": -190,
+   "text": "Rome crushes Antiochus III at Magnesia",
+   "lonlat": [
+    27.43,
+    38.61
+   ]
+  },
+  {
+   "year": -188,
+   "text": "Treaty of Apamea: all land north and west of the Taurus surrendered",
+   "lonlat": [
+    30.16,
+    38.07
+   ]
+  },
+  {
+   "year": -141,
+   "text": "Parthians under Mithridates I take Seleucia and Mesopotamia",
+   "lonlat": [
+    44.52,
+    33.1
+   ]
+  },
+  {
+   "year": -129,
+   "text": "Antiochus VII defeated and killed by the Parthians at Ecbatana",
+   "lonlat": [
+    48.52,
+    34.8
+   ]
+  },
+  {
+   "year": -83,
+   "text": "Tigranes of Armenia takes Syria",
+   "lonlat": [
+    36.16,
+    36.2
+   ]
+  },
+  {
+   "year": -63,
+   "text": "Pompey makes Syria a Roman province",
+   "lonlat": [
+    36.16,
+    36.2
+   ]
+  }
+ ],
+ "reigns": [
+  {
+   "name": "Seleucus I Nicator (king from 305)",
+   "from": -312,
+   "to": -281
+  },
+  {
+   "name": "Antiochus I Soter",
+   "from": -281,
+   "to": -261
+  },
+  {
+   "name": "Antiochus II Theos",
+   "from": -261,
+   "to": -246
+  },
+  {
+   "name": "Seleucus II Callinicus",
+   "from": -246,
+   "to": -225
+  },
+  {
+   "name": "Seleucus III Ceraunus",
+   "from": -225,
+   "to": -223
+  },
+  {
+   "name": "Antiochus III the Great",
+   "from": -223,
+   "to": -187
+  },
+  {
+   "name": "Seleucus IV Philopator",
+   "from": -187,
+   "to": -175
+  },
+  {
+   "name": "Antiochus IV Epiphanes",
+   "from": -175,
+   "to": -164
+  },
+  {
+   "name": "Antiochus V and Demetrius I",
+   "from": -164,
+   "to": -150
+  },
+  {
+   "name": "Alexander Balas and Demetrius II",
+   "from": -150,
+   "to": -138
+  },
+  {
+   "name": "Antiochus VII Sidetes",
+   "from": -138,
+   "to": -129
+  },
+  {
+   "name": "Rival claimants (Demetrius II to Antiochus XIII)",
+   "from": -129,
+   "to": -63
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Seleucid Empire",
+   "url": "https://en.wikipedia.org/wiki/Seleucid_Empire"
+  },
+  {
+   "title": "Wikipedia: Seleucid dynasty",
+   "url": "https://en.wikipedia.org/wiki/Seleucid_dynasty"
+  },
+  {
+   "title": "Wikipedia: Antiochus III the Great",
+   "url": "https://en.wikipedia.org/wiki/Antiochus_III_the_Great"
+  },
+  {
+   "title": "Wikipedia: Parthian Empire",
+   "url": "https://en.wikipedia.org/wiki/Parthian_Empire"
+  },
+  {
+   "title": "Wikipedia: Ptolemaic Kingdom",
+   "url": "https://en.wikipedia.org/wiki/Ptolemaic_Kingdom"
+  }
+ ]
+},
+{
+ "id": "ptolemaic-kingdom",
+ "name": "Ptolemaic Kingdom",
+ "profile": "ptolemaic-kingdom",
+ "chain": [
+  {
+   "clio": "Ptolemaic Kingdom",
+   "from": -305,
+   "to": -30
+  }
+ ],
+ "span": [
+  -305,
+  -30
+ ],
+ "summary": "Ptolemy I, Alexander's satrap in Egypt from 323 BCE, made himself king in 305 BCE and added Cyrenaica, Cyprus and Coele-Syria; under Ptolemy III in the 240s the kingdom reached its height, campaigning as far as Babylonia. Native revolts, the loss of Coele-Syria (200 BCE) and dynastic feuds weakened it as Rome's influence grew; Cleopatra VII's defeat at Actium led to Egypt's annexation by Rome in 30 BCE.",
+ "events": [
+  {
+   "year": -305,
+   "text": "Ptolemy I declares himself king, ruling from Alexandria",
+   "lonlat": [
+    29.92,
+    31.2
+   ]
+  },
+  {
+   "year": -246,
+   "text": "Ptolemy III's Third Syrian War reaches Babylonia: the kingdom's height",
+   "lonlat": [
+    44.42,
+    32.54
+   ]
+  },
+  {
+   "year": -217,
+   "text": "Ptolemy IV defeats Antiochus III at Raphia",
+   "lonlat": [
+    34.25,
+    31.29
+   ]
+  },
+  {
+   "year": -205,
+   "text": "Great Theban Revolt breaks out in Upper Egypt",
+   "lonlat": [
+    32.65,
+    25.7
+   ]
+  },
+  {
+   "year": -200,
+   "text": "Coele-Syria lost to the Seleucids",
+   "lonlat": [
+    35.69,
+    33.25
+   ]
+  },
+  {
+   "year": -186,
+   "text": "Theban revolt finally suppressed",
+   "lonlat": [
+    32.65,
+    25.7
+   ]
+  },
+  {
+   "year": -168,
+   "text": "Day of Eleusis: Rome orders Antiochus IV out of Egypt and Cyprus",
+   "lonlat": [
+    29.95,
+    31.2
+   ]
+  },
+  {
+   "year": -145,
+   "text": "Death of Ptolemy VI; decades of dynastic feuding follow",
+   "lonlat": null
+  },
+  {
+   "year": -96,
+   "text": "Ptolemy Apion dies and bequeaths Cyrenaica to Rome",
+   "lonlat": [
+    21.86,
+    32.82
+   ]
+  },
+  {
+   "year": -51,
+   "text": "Cleopatra VII comes to the throne",
+   "lonlat": [
+    29.92,
+    31.2
+   ]
+  },
+  {
+   "year": -31,
+   "text": "Antony and Cleopatra defeated by Octavian at Actium",
+   "lonlat": [
+    20.73,
+    38.95
+   ]
+  },
+  {
+   "year": -30,
+   "text": "Cleopatra dies; Egypt becomes a Roman province",
+   "lonlat": [
+    29.92,
+    31.2
+   ]
+  }
+ ],
+ "reigns": [
+  {
+   "name": "Ptolemy I Soter",
+   "from": -305,
+   "to": -282
+  },
+  {
+   "name": "Ptolemy II Philadelphus",
+   "from": -282,
+   "to": -246
+  },
+  {
+   "name": "Ptolemy III Euergetes",
+   "from": -246,
+   "to": -221
+  },
+  {
+   "name": "Ptolemy IV Philopator",
+   "from": -221,
+   "to": -203
+  },
+  {
+   "name": "Ptolemy V Epiphanes",
+   "from": -203,
+   "to": -181
+  },
+  {
+   "name": "Ptolemy VI Philometor",
+   "from": -181,
+   "to": -145
+  },
+  {
+   "name": "Ptolemy VIII Physcon",
+   "from": -145,
+   "to": -116
+  },
+  {
+   "name": "Ptolemy IX and Ptolemy X",
+   "from": -116,
+   "to": -80
+  },
+  {
+   "name": "Ptolemy XII Auletes (Berenice IV 58–55)",
+   "from": -80,
+   "to": -51
+  },
+  {
+   "name": "Cleopatra VII",
+   "from": -51,
+   "to": -30
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Ptolemaic Kingdom",
+   "url": "https://en.wikipedia.org/wiki/Ptolemaic_Kingdom"
+  },
+  {
+   "title": "Wikipedia: Ptolemaic dynasty",
+   "url": "https://en.wikipedia.org/wiki/Ptolemaic_dynasty"
+  },
+  {
+   "title": "Wikipedia: Sixth Syrian War",
+   "url": "https://en.wikipedia.org/wiki/Sixth_Syrian_War"
+  },
+  {
+   "title": "Wikipedia: Timeline of Roman history",
+   "url": "https://en.wikipedia.org/wiki/Timeline_of_Roman_history"
+  }
+ ]
+},
+{
+ "id": "parthian-empire",
+ "name": "Parthian Empire",
+ "profile": "parthian-empire",
+ "chain": [
+  {
+   "clio": "Parthian Empire",
+   "from": -239,
+   "to": 224
+  }
+ ],
+ "span": [
+  -247,
+  224
+ ],
+ "summary": "Arsaces I, leader of the Parni, founded the Arsacid state in Parthia c. 247 BCE; Mithridates I (c. 171–132 BCE) took Media and Mesopotamia from the Seleucids, and Mithridates II extended Parthian power from the Euphrates to Afghanistan. Astride the Silk Road, Parthia fought Rome for three centuries, destroying Crassus at Carrhae but losing Ctesiphon to Trajan, Avidius Cassius and Severus. Weakened by civil war, the last king, Artabanus IV, fell to Ardashir I of Persis in 224 CE.",
+ "events": [
+  {
+   "year": -247,
+   "text": "Arsaces I begins the Arsacid era",
+   "lonlat": [
+    58.2,
+    37.95
+   ]
+  },
+  {
+   "year": -148,
+   "text": "Mithridates I conquers Media",
+   "lonlat": [
+    48.52,
+    34.8
+   ]
+  },
+  {
+   "year": -141,
+   "text": "Mithridates I takes Seleucia and Mesopotamia",
+   "lonlat": [
+    44.52,
+    33.1
+   ]
+  },
+  {
+   "year": -129,
+   "text": "Phraates II defeats and kills the Seleucid Antiochus VII at Ecbatana",
+   "lonlat": [
+    48.52,
+    34.8
+   ]
+  },
+  {
+   "year": -124,
+   "text": "Mithridates II begins a reign of expansion; Armenia forced to submit",
+   "lonlat": null
+  },
+  {
+   "year": -53,
+   "text": "Surena destroys Crassus's Roman army at Carrhae",
+   "lonlat": [
+    39.03,
+    36.87
+   ]
+  },
+  {
+   "year": -40,
+   "text": "Parthian forces overrun most of the Levant (40–39 BCE)",
+   "lonlat": null
+  },
+  {
+   "year": -36,
+   "text": "Mark Antony invades Parthia and suffers heavy losses",
+   "lonlat": null
+  },
+  {
+   "year": 116,
+   "text": "Trajan captures Ctesiphon",
+   "lonlat": [
+    44.58,
+    33.09
+   ]
+  },
+  {
+   "year": 117,
+   "text": "Trajan withdraws; the Euphrates frontier is restored",
+   "lonlat": null
+  },
+  {
+   "year": 164,
+   "text": "Avidius Cassius invades; Seleucia and Ctesiphon burned",
+   "lonlat": [
+    44.58,
+    33.09
+   ]
+  },
+  {
+   "year": 197,
+   "text": "Septimius Severus captures Seleucia and Ctesiphon",
+   "lonlat": [
+    44.58,
+    33.09
+   ]
+  },
+  {
+   "year": 212,
+   "text": "Artabanus IV rebels against Vologases VI: civil war",
+   "lonlat": null
+  },
+  {
+   "year": 224,
+   "text": "Ardashir I defeats and kills Artabanus IV at Hormozdgan",
+   "lonlat": null
+  }
+ ],
+ "reigns": [
+  {
+   "name": "Arsaces I",
+   "from": -247,
+   "to": -211
+  },
+  {
+   "name": "Arsaces II to Phraates I",
+   "from": -211,
+   "to": -171
+  },
+  {
+   "name": "Mithridates I",
+   "from": -171,
+   "to": -132
+  },
+  {
+   "name": "Mithridates II",
+   "from": -124,
+   "to": -91
+  },
+  {
+   "name": "Phraates III",
+   "from": -71,
+   "to": -58
+  },
+  {
+   "name": "Orodes II",
+   "from": -57,
+   "to": -38
+  },
+  {
+   "name": "Phraates IV",
+   "from": -38,
+   "to": -2
+  },
+  {
+   "name": "Vologases I",
+   "from": 51,
+   "to": 77
+  },
+  {
+   "name": "Artabanus IV",
+   "from": 213,
+   "to": 224
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Parthian Empire",
+   "url": "https://en.wikipedia.org/wiki/Parthian_Empire"
+  },
+  {
+   "title": "Wikipedia: Seleucid dynasty",
+   "url": "https://en.wikipedia.org/wiki/Seleucid_dynasty"
+  },
+  {
+   "title": "Wikipedia: Sasanian Empire",
+   "url": "https://en.wikipedia.org/wiki/Sasanian_Empire"
+  }
+ ]
+},
+{
+ "id": "qin-han",
+ "name": "Qin and Han China",
+ "profile": "han-dynasty",
+ "chain": [
+  {
+   "clio": "Qin",
+   "from": -221,
+   "to": -219
+  },
+  {
+   "clio": "Qin Dynasty",
+   "from": -218,
+   "to": -209
+  },
+  {
+   "clio": "Zhai",
+   "from": -208,
+   "to": -207
+  },
+  {
+   "clio": "Han Dynasty",
+   "from": -202,
+   "to": 5
+  },
+  {
+   "clio": "Xin Dynasty",
+   "from": 6,
+   "to": 29
+  },
+  {
+   "clio": "Han Dynasty",
+   "from": 30,
+   "to": 220
+  }
+ ],
+ "span": [
+  -221,
+  220
+ ],
+ "summary": "The state of Qin conquered its last rivals in 221 BCE and its king became the First Emperor, standardising script, coinage and law, but the dynasty collapsed in revolts soon after his death and ended in 206 BCE. Liu Bang founded the Han in 202 BCE; under Emperor Wu (141–87 BCE) it drove back the Xiongnu and expanded into Central Asia, Korea and the far south. After Wang Mang's Xin interlude (9–23 CE) the Eastern Han ruled from Luoyang until rebellion and warlords ended it in 220 CE.",
+ "events": [
+  {
+   "year": -221,
+   "text": "Qin conquers Qi, its last rival; King Zheng becomes the First Emperor",
+   "lonlat": [
+    108.71,
+    34.33
+   ]
+  },
+  {
+   "year": -215,
+   "text": "Meng Tian takes the Ordos region from the Xiongnu",
+   "lonlat": [
+    108.5,
+    39.5
+   ]
+  },
+  {
+   "year": -210,
+   "text": "Qin Shi Huang dies on tour; Huhai is made Second Emperor",
+   "lonlat": null
+  },
+  {
+   "year": -206,
+   "text": "Xianyang destroyed after Ziying's surrender: the Qin dynasty ends",
+   "lonlat": [
+    108.71,
+    34.33
+   ]
+  },
+  {
+   "year": -202,
+   "text": "Liu Bang defeats Xiang Yu at Gaixia and founds the Han dynasty",
+   "lonlat": [
+    117.55,
+    33.54
+   ]
+  },
+  {
+   "year": -200,
+   "text": "Xiongnu trap the emperor at Baideng; a heqin truce follows (198)",
+   "lonlat": [
+    113.3,
+    40.08
+   ]
+  },
+  {
+   "year": -154,
+   "text": "Rebellion of the Seven States crushed; regional kings weakened",
+   "lonlat": null
+  },
+  {
+   "year": -119,
+   "text": "Battle of Mobei drives the Xiongnu north of the Gobi",
+   "lonlat": null
+  },
+  {
+   "year": -111,
+   "text": "Han conquers Nanyue in the far south",
+   "lonlat": [
+    113.26,
+    23.13
+   ]
+  },
+  {
+   "year": -108,
+   "text": "Han conquers Gojoseon in Korea",
+   "lonlat": [
+    125.75,
+    39.02
+   ]
+  },
+  {
+   "year": -60,
+   "text": "Protectorate of the Western Regions set up in the Tarim Basin",
+   "lonlat": [
+    84.25,
+    41.78
+   ]
+  },
+  {
+   "year": 9,
+   "text": "Wang Mang seizes the throne and founds the Xin dynasty",
+   "lonlat": [
+    108.94,
+    34.27
+   ]
+  },
+  {
+   "year": 25,
+   "text": "Emperor Guangwu restores the Han and moves the capital to Luoyang",
+   "lonlat": [
+    112.45,
+    34.62
+   ]
+  },
+  {
+   "year": 184,
+   "text": "Yellow Turban Rebellion; generals who crush it become warlords",
+   "lonlat": null
+  },
+  {
+   "year": 220,
+   "text": "Cao Pi takes the throne from Emperor Xian, ending the Han",
+   "lonlat": null
+  }
+ ],
+ "reigns": [
+  {
+   "name": "Qin Shi Huang (First Emperor)",
+   "from": -221,
+   "to": -210
+  },
+  {
+   "name": "Qin Er Shi and Ziying",
+   "from": -210,
+   "to": -207
+  },
+  {
+   "name": "Gaozu (Liu Bang)",
+   "from": -202,
+   "to": -195
+  },
+  {
+   "name": "Emperor Hui, Empress Lü, Emperors Wen and Jing",
+   "from": -195,
+   "to": -141
+  },
+  {
+   "name": "Emperor Wu",
+   "from": -141,
+   "to": -87
+  },
+  {
+   "name": "Emperor Xuan",
+   "from": -74,
+   "to": -48
+  },
+  {
+   "name": "Emperor Yuan",
+   "from": -49,
+   "to": -33
+  },
+  {
+   "name": "Emperor Cheng",
+   "from": -33,
+   "to": -7
+  },
+  {
+   "name": "Emperors Ai and Ping",
+   "from": -7,
+   "to": 6
+  },
+  {
+   "name": "Wang Mang (Xin dynasty)",
+   "from": 9,
+   "to": 23
+  },
+  {
+   "name": "Emperor Guangwu",
+   "from": 25,
+   "to": 57
+  },
+  {
+   "name": "Emperor Zhang",
+   "from": 75,
+   "to": 88
+  },
+  {
+   "name": "Emperor He",
+   "from": 88,
+   "to": 105
+  },
+  {
+   "name": "Emperor Ling",
+   "from": 168,
+   "to": 189
+  },
+  {
+   "name": "Emperor Xian",
+   "from": 189,
+   "to": 220
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Qin dynasty",
+   "url": "https://en.wikipedia.org/wiki/Qin_dynasty"
+  },
+  {
+   "title": "Wikipedia: Han dynasty",
+   "url": "https://en.wikipedia.org/wiki/Han_dynasty"
+  },
+  {
+   "title": "Wikipedia: Eastern Han dynasty",
+   "url": "https://en.wikipedia.org/wiki/Eastern_Han_dynasty"
+  },
+  {
+   "title": "Wikipedia: Han–Xiongnu War",
+   "url": "https://en.wikipedia.org/wiki/Han%E2%80%93Xiongnu_War"
+  },
+  {
+   "title": "Wikipedia: Yellow Turban Rebellion",
+   "url": "https://en.wikipedia.org/wiki/Yellow_Turban_Rebellion"
+  }
+ ]
+},
+{
+ "id": "xiongnu",
+ "name": "Xiongnu",
+ "profile": "xiongnu",
+ "chain": [
+  {
+   "clio": "Xiongnu",
+   "from": -208,
+   "to": 91
+  }
+ ],
+ "span": [
+  -209,
+  91
+ ],
+ "summary": "Modu Chanyu (209–174 BCE) united the nomads of the Mongolian Plateau into a confederation that humbled the early Han and drove the Yuezhi west. Emperor Wu's wars from 133 BCE broke Xiongnu power; a succession war ended with Huhanye submitting to Han, and in 48 CE the confederation split into Southern and Northern Xiongnu. Han campaigns in 89–91 CE destroyed the Northern state, whose chanyu fled west.",
+ "events": [
+  {
+   "year": -209,
+   "text": "Modu kills his father Touman and becomes chanyu",
+   "lonlat": null
+  },
+  {
+   "year": -203,
+   "text": "Modu defeats the Yuezhi",
+   "lonlat": [
+    100.45,
+    38.93
+   ]
+  },
+  {
+   "year": -200,
+   "text": "Modu surrounds the Han emperor Gaozu at Baideng",
+   "lonlat": [
+    113.3,
+    40.08
+   ]
+  },
+  {
+   "year": -178,
+   "text": "Xiongnu overrun the Yuezhi and Wusun in Gansu and the Tarim Basin",
+   "lonlat": [
+    100.45,
+    38.93
+   ]
+  },
+  {
+   "year": -162,
+   "text": "Laoshang Chanyu drives the Yuezhi from their homeland",
+   "lonlat": null
+  },
+  {
+   "year": -133,
+   "text": "Failed Han ambush at Mayi starts full-scale war",
+   "lonlat": [
+    112.43,
+    39.33
+   ]
+  },
+  {
+   "year": -127,
+   "text": "Wei Qing retakes the Ordos for Han",
+   "lonlat": [
+    108.5,
+    39.5
+   ]
+  },
+  {
+   "year": -121,
+   "text": "Huo Qubing defeats the Xiongnu and Han annexes the Hexi Corridor",
+   "lonlat": [
+    102.64,
+    37.93
+   ]
+  },
+  {
+   "year": -119,
+   "text": "Battle of Mobei drives the Xiongnu from the Gobi",
+   "lonlat": null
+  },
+  {
+   "year": -53,
+   "text": "Succession war (60–53 BCE) ends with Huhanye submitting to Han",
+   "lonlat": null
+  },
+  {
+   "year": -36,
+   "text": "Huhanye's rival Zhizhi is killed by a Han army",
+   "lonlat": null
+  },
+  {
+   "year": 48,
+   "text": "Confederation splits into Southern (pro-Han) and Northern Xiongnu",
+   "lonlat": null
+  },
+  {
+   "year": 89,
+   "text": "Dou Xian's Han army chases the Northern Chanyu into the Altai",
+   "lonlat": null
+  },
+  {
+   "year": 91,
+   "text": "Northern Chanyu defeated in the Altai Mountains and flees west",
+   "lonlat": null
+  }
+ ],
+ "reigns": [
+  {
+   "name": "Modu",
+   "from": -209,
+   "to": -174
+  },
+  {
+   "name": "Laoshang",
+   "from": -174,
+   "to": -161
+  },
+  {
+   "name": "Junchen",
+   "from": -161,
+   "to": -126
+  },
+  {
+   "name": "Yizhixie",
+   "from": -126,
+   "to": -114
+  },
+  {
+   "name": "Wuwei to Hulugu",
+   "from": -114,
+   "to": -85
+  },
+  {
+   "name": "Huyandi",
+   "from": -85,
+   "to": -68
+  },
+  {
+   "name": "Xulüquanqu and Woyanqudi",
+   "from": -68,
+   "to": -58
+  },
+  {
+   "name": "Huhanye (rival Zhizhi to 36 BCE)",
+   "from": -58,
+   "to": -31
+  },
+  {
+   "name": "Fuzhulei to Wuzhuliu",
+   "from": -31,
+   "to": 13
+  },
+  {
+   "name": "Wulei",
+   "from": 13,
+   "to": 18
+  },
+  {
+   "name": "Huduershidaogao (Yu)",
+   "from": 18,
+   "to": 46
+  },
+  {
+   "name": "Northern chanyus (Punu, Youliu)",
+   "from": 46,
+   "to": 87
+  },
+  {
+   "name": "The last Northern Chanyu",
+   "from": 88,
+   "to": 91
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Xiongnu",
+   "url": "https://en.wikipedia.org/wiki/Xiongnu"
+  },
+  {
+   "title": "Wikipedia: Modu Chanyu",
+   "url": "https://en.wikipedia.org/wiki/Modu_Chanyu"
+  },
+  {
+   "title": "Wikipedia: Han–Xiongnu War",
+   "url": "https://en.wikipedia.org/wiki/Han%E2%80%93Xiongnu_War"
+  },
+  {
+   "title": "Wikipedia: Chanyu",
+   "url": "https://en.wikipedia.org/wiki/Chanyu"
+  },
+  {
+   "title": "Wikipedia: Han dynasty",
+   "url": "https://en.wikipedia.org/wiki/Han_dynasty"
+  }
+ ]
+},
+{
+ "id": "kushan-empire",
+ "name": "Kushan Empire",
+ "profile": "kushan-empire",
+ "chain": [
+  {
+   "clio": "Kushan Empire",
+   "from": 43,
+   "to": 237
+  },
+  {
+   "clio": "Eastern Kushans",
+   "from": 238,
+   "to": 346
+  }
+ ],
+ "span": [
+  30,
+  375
+ ],
+ "summary": "Kujula Kadphises united the Yuezhi tribes of Bactria in the 1st century CE, and his successors pushed into north-western India. Under Kanishka I (c. 127–150) the empire stretched from Central Asia to the Ganges plain, ruled from Purushapura and Mathura and linking the Silk Road, India and Rome. After Vasudeva I (d. c. 225) Sasanian Persia took the west, and the eastern 'Little Kushans' faded under Gupta suzerainty and the Kidarites by c. 375.",
+ "events": [
+  {
+   "year": 30,
+   "text": "Kujula Kadphises unites the Yuezhi tribes in Bactria",
+   "lonlat": [
+    66.9,
+    36.76
+   ]
+  },
+  {
+   "year": 90,
+   "text": "Han general Ban Chao defeats a Kushan army near Khotan",
+   "lonlat": [
+    79.93,
+    37.11
+   ]
+  },
+  {
+   "year": 113,
+   "text": "Vima Kadphises expands into north-west India and issues gold coins",
+   "lonlat": null
+  },
+  {
+   "year": 127,
+   "text": "Kanishka I begins his reign; the empire peaks, reaching Pataliputra",
+   "lonlat": [
+    71.58,
+    34.01
+   ]
+  },
+  {
+   "year": 151,
+   "text": "Huvishka consolidates rule, tightening control of Mathura",
+   "lonlat": [
+    77.67,
+    27.49
+   ]
+  },
+  {
+   "year": 190,
+   "text": "Vasudeva I, the last great Kushan emperor, comes to the throne",
+   "lonlat": [
+    77.67,
+    27.49
+   ]
+  },
+  {
+   "year": 225,
+   "text": "Vasudeva I dies; the empire splits",
+   "lonlat": null
+  },
+  {
+   "year": 240,
+   "text": "Sasanians take the western lands and set up the Kushano-Sasanian kingdom",
+   "lonlat": [
+    66.9,
+    36.76
+   ]
+  },
+  {
+   "year": 350,
+   "text": "Samudragupta brings the Little Kushans under Gupta suzerainty",
+   "lonlat": [
+    72.83,
+    33.75
+   ]
+  },
+  {
+   "year": 360,
+   "text": "Kidarites overthrow the remaining Kushan and Kushano-Sasanian rulers",
+   "lonlat": null
+  },
+  {
+   "year": 375,
+   "text": "Reign of Kipunada, the last Little Kushan ruler, ends",
+   "lonlat": null
+  }
+ ],
+ "reigns": [
+  {
+   "name": "Kujula Kadphises",
+   "from": 30,
+   "to": 80
+  },
+  {
+   "name": "Vima Takto",
+   "from": 90,
+   "to": 113
+  },
+  {
+   "name": "Vima Kadphises",
+   "from": 113,
+   "to": 127
+  },
+  {
+   "name": "Kanishka I",
+   "from": 127,
+   "to": 150
+  },
+  {
+   "name": "Huvishka",
+   "from": 151,
+   "to": 190
+  },
+  {
+   "name": "Vasudeva I",
+   "from": 190,
+   "to": 230
+  },
+  {
+   "name": "Little Kushans of Punjab (to Kipunada)",
+   "from": 230,
+   "to": 375
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Kushan Empire",
+   "url": "https://en.wikipedia.org/wiki/Kushan_Empire"
+  },
+  {
+   "title": "Wikipedia: Kujula Kadphises",
+   "url": "https://en.wikipedia.org/wiki/Kujula_Kadphises"
+  },
+  {
+   "title": "Wikipedia: Vima Kadphises",
+   "url": "https://en.wikipedia.org/wiki/Vima_Kadphises"
+  },
+  {
+   "title": "Wikipedia: Kanishka",
+   "url": "https://en.wikipedia.org/wiki/Kanishka"
+  }
+ ]
+},
+{
+ "id": "sasanian-empire",
+ "name": "Sasanian Empire",
+ "profile": "sasanian-empire",
+ "chain": [
+  {
+   "clio": "Sasanian Empire",
+   "from": 224,
+   "to": 643
+  }
+ ],
+ "span": [
+  224,
+  651
+ ],
+ "summary": "Ardashir I overthrew the Parthians in 224 and his son Shapur I humiliated Rome, capturing the emperor Valerian in 260. For four centuries the Sasanians rivalled Rome and Byzantium; Khosrow I (531–579) sacked Antioch and took Yemen, and Khosrow II briefly held the Levant and Egypt. Exhausted by the war of 602–628 and the civil war that followed, the empire fell to the Arab conquests, ending with Yazdegerd III's death in 651.",
+ "events": [
+  {
+   "year": 224,
+   "text": "Ardashir I defeats Artabanus IV at Hormozdgan, ending Parthian rule",
+   "lonlat": null
+  },
+  {
+   "year": 260,
+   "text": "Shapur I captures the Roman emperor Valerian at Edessa",
+   "lonlat": [
+    38.79,
+    37.16
+   ]
+  },
+  {
+   "year": 299,
+   "text": "Peace of Nisibis after Narseh's defeat: land west of the Tigris ceded",
+   "lonlat": [
+    41.21,
+    37.07
+   ]
+  },
+  {
+   "year": 363,
+   "text": "Shapur II repels Emperor Julian's invasion at Ctesiphon",
+   "lonlat": [
+    44.58,
+    33.09
+   ]
+  },
+  {
+   "year": 484,
+   "text": "Peroz I is killed by the Hephthalites",
+   "lonlat": null
+  },
+  {
+   "year": 540,
+   "text": "Khosrow I invades Syria and sacks Antioch",
+   "lonlat": [
+    36.16,
+    36.2
+   ]
+  },
+  {
+   "year": 570,
+   "text": "Khosrow I's forces under Vahriz occupy Yemen",
+   "lonlat": [
+    44.21,
+    15.35
+   ]
+  },
+  {
+   "year": 614,
+   "text": "Khosrow II's armies take Jerusalem",
+   "lonlat": [
+    35.23,
+    31.78
+   ]
+  },
+  {
+   "year": 619,
+   "text": "Alexandria falls; Egypt is taken by 621",
+   "lonlat": [
+    29.92,
+    31.2
+   ]
+  },
+  {
+   "year": 626,
+   "text": "Persian and Avar siege of Constantinople fails",
+   "lonlat": [
+    28.98,
+    41.01
+   ]
+  },
+  {
+   "year": 627,
+   "text": "Heraclius defeats the Persians at Nineveh",
+   "lonlat": [
+    43.15,
+    36.36
+   ]
+  },
+  {
+   "year": 636,
+   "text": "Arab armies win at al-Qadisiyyah",
+   "lonlat": [
+    44.43,
+    31.73
+   ]
+  },
+  {
+   "year": 637,
+   "text": "Ctesiphon falls to the Arabs",
+   "lonlat": [
+    44.58,
+    33.09
+   ]
+  },
+  {
+   "year": 642,
+   "text": "Defeat at Nahavand opens the Iranian plateau to the Arabs",
+   "lonlat": [
+    48.37,
+    34.19
+   ]
+  },
+  {
+   "year": 651,
+   "text": "Yazdegerd III is murdered near Merv: the empire ends",
+   "lonlat": [
+    61.84,
+    37.66
+   ]
+  }
+ ],
+ "reigns": [
+  {
+   "name": "Ardashir I",
+   "from": 224,
+   "to": 240
+  },
+  {
+   "name": "Shapur I",
+   "from": 240,
+   "to": 270
+  },
+  {
+   "name": "Hormizd I and Bahram I–III",
+   "from": 270,
+   "to": 293
+  },
+  {
+   "name": "Narseh",
+   "from": 293,
+   "to": 302
+  },
+  {
+   "name": "Hormizd II",
+   "from": 302,
+   "to": 309
+  },
+  {
+   "name": "Shapur II",
+   "from": 309,
+   "to": 379
+  },
+  {
+   "name": "Ardashir II, Shapur III, Bahram IV",
+   "from": 379,
+   "to": 399
+  },
+  {
+   "name": "Yazdegerd I",
+   "from": 399,
+   "to": 420
+  },
+  {
+   "name": "Bahram V",
+   "from": 420,
+   "to": 438
+  },
+  {
+   "name": "Yazdegerd II",
+   "from": 438,
+   "to": 457
+  },
+  {
+   "name": "Peroz I",
+   "from": 459,
+   "to": 484
+  },
+  {
+   "name": "Balash",
+   "from": 484,
+   "to": 488
+  },
+  {
+   "name": "Kavad I",
+   "from": 488,
+   "to": 531
+  },
+  {
+   "name": "Khosrow I",
+   "from": 531,
+   "to": 579
+  },
+  {
+   "name": "Hormizd IV",
+   "from": 579,
+   "to": 590
+  },
+  {
+   "name": "Khosrow II",
+   "from": 590,
+   "to": 628
+  },
+  {
+   "name": "Civil war (Kavad II, Ardashir III, Boran and others)",
+   "from": 628,
+   "to": 632
+  },
+  {
+   "name": "Yazdegerd III",
+   "from": 632,
+   "to": 651
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Sasanian Empire",
+   "url": "https://en.wikipedia.org/wiki/Sasanian_Empire"
+  },
+  {
+   "title": "Wikipedia: List of monarchs of the Sasanian Empire",
+   "url": "https://en.wikipedia.org/wiki/List_of_monarchs_of_the_Sasanian_Empire"
+  },
+  {
+   "title": "World History Encyclopedia: Sasanian Empire",
+   "url": "https://www.worldhistory.org/Sasanian_Empire/"
+  },
+  {
+   "title": "Wikipedia: Timeline of Roman history",
+   "url": "https://en.wikipedia.org/wiki/Timeline_of_Roman_history"
+  }
+ ]
+},
+{
+ "id": "gupta-empire",
+ "name": "Gupta Empire",
+ "profile": "gupta-empire",
+ "chain": [
+  {
+   "clio": "Gupta Empire",
+   "from": 324,
+   "to": 550
+  }
+ ],
+ "span": [
+  319,
+  550
+ ],
+ "summary": "From the Gangetic plain, Chandragupta I (c. 319–335) raised the Gupta dynasty to imperial rank; Samudragupta's conquests and Chandragupta II's defeat of the Western Satraps made it the dominant power of northern India, a 'Golden Age' of art and science. Skandagupta repelled the Huns c. 455, but after him the empire lost ground to feudatories and to the Alchon Huns under Toramana and Mihirakula, and it had faded by the mid-6th century.",
+ "events": [
+  {
+   "year": 319,
+   "text": "Chandragupta I raises the dynasty to imperial rank; the Gupta era begins",
+   "lonlat": [
+    85.14,
+    25.61
+   ]
+  },
+  {
+   "year": 335,
+   "text": "Samudragupta begins the conquests recorded on the Allahabad Pillar",
+   "lonlat": [
+    81.88,
+    25.43
+   ]
+  },
+  {
+   "year": 375,
+   "text": "Chandragupta II succeeds; Kalidasa at court, Faxian visits",
+   "lonlat": [
+    85.14,
+    25.61
+   ]
+  },
+  {
+   "year": 405,
+   "text": "Western Satraps conquered (between c. 397 and 409); Ujjain a second capital",
+   "lonlat": [
+    75.78,
+    23.18
+   ]
+  },
+  {
+   "year": 415,
+   "text": "Kumaragupta I succeeds; Nalanda traditionally founded in his reign",
+   "lonlat": [
+    85.44,
+    25.14
+   ]
+  },
+  {
+   "year": 455,
+   "text": "Skandagupta repels the Hunas (455–457)",
+   "lonlat": [
+    83.2,
+    25.56
+   ]
+  },
+  {
+   "year": 467,
+   "text": "Skandagupta dies; decline sets in",
+   "lonlat": null
+  },
+  {
+   "year": 497,
+   "text": "Toramana's Alchon Huns push into central India and sack Kausambi",
+   "lonlat": [
+    81.39,
+    25.34
+   ]
+  },
+  {
+   "year": 510,
+   "text": "Battle of Eran (Bhanugupta); Malwa probably falls to Toramana",
+   "lonlat": [
+    78.2,
+    24.1
+   ]
+  },
+  {
+   "year": 528,
+   "text": "Yashodharman of Malwa defeats the Hun king Mihirakula",
+   "lonlat": [
+    75.07,
+    24.07
+   ]
+  },
+  {
+   "year": 543,
+   "text": "Last known Gupta inscription",
+   "lonlat": null
+  },
+  {
+   "year": 550,
+   "text": "Gupta rule has effectively ended; northern India fragments",
+   "lonlat": null
+  }
+ ],
+ "reigns": [
+  {
+   "name": "Chandragupta I",
+   "from": 319,
+   "to": 335
+  },
+  {
+   "name": "Samudragupta",
+   "from": 335,
+   "to": 375
+  },
+  {
+   "name": "Chandragupta II",
+   "from": 375,
+   "to": 415
+  },
+  {
+   "name": "Kumaragupta I",
+   "from": 415,
+   "to": 455
+  },
+  {
+   "name": "Skandagupta",
+   "from": 455,
+   "to": 467
+  },
+  {
+   "name": "Later Guptas (Budhagupta, Narasimhagupta, Vishnugupta and others)",
+   "from": 467,
+   "to": 550
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Gupta Empire",
+   "url": "https://en.wikipedia.org/wiki/Gupta_Empire"
+  },
+  {
+   "title": "World History Encyclopedia: Gupta Empire",
+   "url": "https://www.worldhistory.org/Gupta_Empire/"
+  },
+  {
+   "title": "Wikipedia: Chandragupta II",
+   "url": "https://en.wikipedia.org/wiki/Chandragupta_II"
+  },
+  {
+   "title": "Wikipedia: Alchon Huns",
+   "url": "https://en.wikipedia.org/wiki/Alchon_Huns"
+  }
+ ]
+}
+]

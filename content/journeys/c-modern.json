@@ -1,0 +1,3253 @@
+[
+ {
+  "id": "ottoman-empire",
+  "name": "Ottoman Empire",
+  "profile": "ottoman-empire",
+  "chain": [
+   {
+    "clio": "Ottoman Empire",
+    "from": 1305,
+    "to": 1922
+   }
+  ],
+  "span": [
+   1305,
+   1922
+  ],
+  "summary": "Founded c. 1299 by Osman I as a frontier principality in northwest Anatolia, the Ottoman state crossed into the Balkans, took Constantinople in 1453 and under Selim I and Suleiman I absorbed the Mamluk lands and most of Hungary. It reached its greatest extent around 1683, then lost ground to Habsburg Austria, Russia and Balkan nationalism over two centuries, and was dismantled after defeat in the First World War; the sultanate was abolished in 1922.",
+  "events": [
+   {
+    "year": 1326,
+    "text": "Orhan takes Bursa, which becomes the Ottoman capital",
+    "lonlat": [
+     29.06,
+     40.19
+    ]
+   },
+   {
+    "year": 1389,
+    "text": "Victory over a Serbian-led coalition at Kosovo",
+    "lonlat": [
+     21.1,
+     42.72
+    ]
+   },
+   {
+    "year": 1402,
+    "text": "Timur defeats and captures Bayezid I at Ankara; civil war to 1413",
+    "lonlat": [
+     32.85,
+     39.93
+    ]
+   },
+   {
+    "year": 1453,
+    "text": "Mehmed II conquers Constantinople, ending the Byzantine Empire",
+    "lonlat": [
+     28.98,
+     41.01
+    ]
+   },
+   {
+    "year": 1514,
+    "text": "Selim I defeats Safavid Shah Ismail at Chaldiran",
+    "lonlat": [
+     44.39,
+     39.07
+    ]
+   },
+   {
+    "year": 1517,
+    "text": "Mamluk Sultanate annexed: Syria, Egypt and the Hejaz become Ottoman",
+    "lonlat": [
+     31.24,
+     30.04
+    ]
+   },
+   {
+    "year": 1526,
+    "text": "Suleiman I crushes Hungary at Mohács",
+    "lonlat": [
+     18.68,
+     45.99
+    ]
+   },
+   {
+    "year": 1669,
+    "text": "Conquest of Crete completed after the long Cretan War",
+    "lonlat": [
+     25.13,
+     35.34
+    ]
+   },
+   {
+    "year": 1683,
+    "text": "Second siege of Vienna fails; the empire is at its greatest extent",
+    "lonlat": [
+     16.37,
+     48.21
+    ]
+   },
+   {
+    "year": 1699,
+    "text": "Treaty of Karlowitz: Hungary and Transylvania lost to the Habsburgs",
+    "lonlat": [
+     19.93,
+     45.2
+    ]
+   },
+   {
+    "year": 1774,
+    "text": "Treaty of Küçük Kaynarca after defeat by Russia; Crimea made nominally independent",
+    "lonlat": [
+     27.51,
+     44.03
+    ]
+   },
+   {
+    "year": 1830,
+    "text": "Greek independence formally recognised",
+    "lonlat": null
+   },
+   {
+    "year": 1878,
+    "text": "Congress of Berlin confirms heavy losses in the Balkans",
+    "lonlat": [
+     13.4,
+     52.52
+    ]
+   },
+   {
+    "year": 1912,
+    "text": "Balkan Wars (1912–13) strip away almost all remaining European land",
+    "lonlat": null
+   },
+   {
+    "year": 1922,
+    "text": "Sultanate abolished on 1 November; the Ottoman state ends",
+    "lonlat": [
+     32.85,
+     39.93
+    ]
+   }
+  ],
+  "reigns": [
+   {
+    "name": "Osman I (r. c. 1299–1324)",
+    "from": 1305,
+    "to": 1324
+   },
+   {
+    "name": "Orhan",
+    "from": 1324,
+    "to": 1362
+   },
+   {
+    "name": "Murad I",
+    "from": 1362,
+    "to": 1389
+   },
+   {
+    "name": "Bayezid I",
+    "from": 1389,
+    "to": 1402
+   },
+   {
+    "name": "Ottoman Interregnum",
+    "from": 1402,
+    "to": 1413
+   },
+   {
+    "name": "Mehmed I",
+    "from": 1413,
+    "to": 1421
+   },
+   {
+    "name": "Murad II",
+    "from": 1421,
+    "to": 1451
+   },
+   {
+    "name": "Mehmed II the Conqueror",
+    "from": 1451,
+    "to": 1481
+   },
+   {
+    "name": "Bayezid II",
+    "from": 1481,
+    "to": 1512
+   },
+   {
+    "name": "Selim I",
+    "from": 1512,
+    "to": 1520
+   },
+   {
+    "name": "Suleiman I the Magnificent",
+    "from": 1520,
+    "to": 1566
+   },
+   {
+    "name": "Murad IV",
+    "from": 1623,
+    "to": 1640
+   },
+   {
+    "name": "Mehmed IV",
+    "from": 1648,
+    "to": 1687
+   },
+   {
+    "name": "Ahmed III",
+    "from": 1703,
+    "to": 1730
+   },
+   {
+    "name": "Selim III",
+    "from": 1789,
+    "to": 1807
+   },
+   {
+    "name": "Mahmud II",
+    "from": 1808,
+    "to": 1839
+   },
+   {
+    "name": "Abdulmejid I",
+    "from": 1839,
+    "to": 1861
+   },
+   {
+    "name": "Abdul Hamid II",
+    "from": 1876,
+    "to": 1909
+   },
+   {
+    "name": "Mehmed V",
+    "from": 1909,
+    "to": 1918
+   },
+   {
+    "name": "Mehmed VI",
+    "from": 1918,
+    "to": 1922
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia: Ottoman Empire",
+    "url": "https://en.wikipedia.org/wiki/Ottoman_Empire"
+   },
+   {
+    "title": "Wikipedia: List of sultans of the Ottoman Empire",
+    "url": "https://en.wikipedia.org/wiki/List_of_sultans_of_the_Ottoman_Empire"
+   },
+   {
+    "title": "Wikipedia: Ismail I",
+    "url": "https://en.wikipedia.org/wiki/Ismail_I"
+   },
+   {
+    "title": "Wikipedia: Annexation of the Crimean Khanate by the Russian Empire",
+    "url": "https://en.wikipedia.org/wiki/Annexation_of_the_Crimean_Khanate_by_the_Russian_Empire"
+   }
+  ]
+ },
+ {
+  "id": "ming-dynasty",
+  "name": "Ming China",
+  "profile": "ming-dynasty",
+  "chain": [
+   {
+    "clio": "Ming Dynasty",
+    "from": 1375,
+    "to": 1644
+   },
+   {
+    "clio": "Southern Ming",
+    "from": 1645,
+    "to": 1662
+   }
+  ],
+  "span": [
+   1375,
+   1662
+  ],
+  "summary": "The Hongwu Emperor proclaimed the Ming in 1368 after driving out the Mongol Yuan, and his successors pushed into Yunnan, Manchuria and, briefly, Vietnam, while Zheng He's fleets sailed to the Indian Ocean. After the Tumu disaster of 1449 the dynasty turned defensive behind the rebuilt Great Wall; fiscal crisis, rebellion and the rising Manchus brought the fall of Beijing in 1644, and Ming loyalist courts in the south held out until 1662.",
+  "events": [
+   {
+    "year": 1381,
+    "text": "Ming armies annex the southwest (Yunnan), former Dali lands",
+    "lonlat": [
+     102.71,
+     25.04
+    ]
+   },
+   {
+    "year": 1387,
+    "text": "Campaign against Naghachu ends with Ming control of Manchuria",
+    "lonlat": null
+   },
+   {
+    "year": 1402,
+    "text": "Yongle Emperor seizes the throne after the Jingnan campaign",
+    "lonlat": [
+     118.78,
+     32.06
+    ]
+   },
+   {
+    "year": 1405,
+    "text": "Zheng He's first treasure-fleet voyage sets out",
+    "lonlat": [
+     118.78,
+     32.06
+    ]
+   },
+   {
+    "year": 1406,
+    "text": "Ming invasion and occupation of Đại Việt (Vietnam) begins",
+    "lonlat": [
+     105.85,
+     21.03
+    ]
+   },
+   {
+    "year": 1420,
+    "text": "Beijing designated the capital in place of Nanjing",
+    "lonlat": [
+     116.4,
+     39.9
+    ]
+   },
+   {
+    "year": 1427,
+    "text": "Ming troops withdraw from Vietnam after Lê Lợi's war",
+    "lonlat": [
+     105.85,
+     21.03
+    ]
+   },
+   {
+    "year": 1449,
+    "text": "Tumu Crisis: the Zhengtong Emperor captured by the Oirats",
+    "lonlat": [
+     115.53,
+     40.38
+    ]
+   },
+   {
+    "year": 1592,
+    "text": "Japanese invasion of Korea; Ming armies intervene (Imjin War, to 1598)",
+    "lonlat": [
+     129.04,
+     35.1
+    ]
+   },
+   {
+    "year": 1619,
+    "text": "Manchu Later Jin defeat a large Ming army at Sarhu",
+    "lonlat": [
+     124.25,
+     41.85
+    ]
+   },
+   {
+    "year": 1644,
+    "text": "Li Zicheng takes Beijing; the Chongzhen Emperor dies by suicide",
+    "lonlat": [
+     116.4,
+     39.9
+    ]
+   },
+   {
+    "year": 1645,
+    "text": "Qing forces take Nanjing; the Hongguang court collapses",
+    "lonlat": [
+     118.78,
+     32.06
+    ]
+   },
+   {
+    "year": 1662,
+    "text": "The last Southern Ming emperor, Yongli, is executed",
+    "lonlat": [
+     102.71,
+     25.04
+    ]
+   }
+  ],
+  "reigns": [
+   {
+    "name": "Hongwu Emperor (r. 1368–1398)",
+    "from": 1375,
+    "to": 1398
+   },
+   {
+    "name": "Jianwen Emperor",
+    "from": 1398,
+    "to": 1402
+   },
+   {
+    "name": "Yongle Emperor",
+    "from": 1402,
+    "to": 1424
+   },
+   {
+    "name": "Xuande Emperor",
+    "from": 1425,
+    "to": 1435
+   },
+   {
+    "name": "Zhengtong Emperor (Yingzong)",
+    "from": 1435,
+    "to": 1449
+   },
+   {
+    "name": "Jingtai Emperor",
+    "from": 1449,
+    "to": 1457
+   },
+   {
+    "name": "Tianshun Emperor (Yingzong restored)",
+    "from": 1457,
+    "to": 1464
+   },
+   {
+    "name": "Chenghua Emperor",
+    "from": 1464,
+    "to": 1487
+   },
+   {
+    "name": "Hongzhi Emperor",
+    "from": 1487,
+    "to": 1505
+   },
+   {
+    "name": "Zhengde Emperor",
+    "from": 1505,
+    "to": 1521
+   },
+   {
+    "name": "Jiajing Emperor",
+    "from": 1521,
+    "to": 1567
+   },
+   {
+    "name": "Longqing Emperor",
+    "from": 1567,
+    "to": 1572
+   },
+   {
+    "name": "Wanli Emperor",
+    "from": 1572,
+    "to": 1620
+   },
+   {
+    "name": "Tianqi Emperor",
+    "from": 1620,
+    "to": 1627
+   },
+   {
+    "name": "Chongzhen Emperor",
+    "from": 1627,
+    "to": 1644
+   },
+   {
+    "name": "Hongguang Emperor (Southern Ming)",
+    "from": 1644,
+    "to": 1645
+   },
+   {
+    "name": "Longwu Emperor (Southern Ming)",
+    "from": 1645,
+    "to": 1646
+   },
+   {
+    "name": "Yongli Emperor (Southern Ming)",
+    "from": 1646,
+    "to": 1662
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia: Ming dynasty",
+    "url": "https://en.wikipedia.org/wiki/Ming_dynasty"
+   },
+   {
+    "title": "Wikipedia: List of emperors of the Ming dynasty",
+    "url": "https://en.wikipedia.org/wiki/List_of_emperors_of_the_Ming_dynasty"
+   },
+   {
+    "title": "Wikipedia: Qing dynasty",
+    "url": "https://en.wikipedia.org/wiki/Qing_dynasty"
+   }
+  ]
+ },
+ {
+  "id": "portuguese-empire",
+  "name": "Portuguese Empire",
+  "profile": "portuguese-empire",
+  "chain": [
+   {
+    "clio": "Kingdom of Portugal",
+    "from": 1415,
+    "to": 1501
+   },
+   {
+    "clio": "(Portuguese Empire)",
+    "from": 1502,
+    "to": 1910
+   },
+   {
+    "clio": "Portuguese Republic",
+    "from": 1911,
+    "to": 1925
+   },
+   {
+    "clio": "Estado Novo",
+    "from": 1926,
+    "to": 1975
+   }
+  ],
+  "span": [
+   1415,
+   1975
+  ],
+  "summary": "Portugal's seizure of Ceuta in 1415 opened a century of exploration down the African coast that reached India in 1498 and Brazil in 1500, and a chain of fortified ports from Goa to Malacca. The Dutch took much of its Asian trade in the 17th century, and Brazil became independent in 1822; Portugal then turned to Africa and held on to Angola and Mozambique through the colonial wars of 1961–1974, decolonising after the Carnation Revolution (Macau was handed over in 1999).",
+  "events": [
+   {
+    "year": 1415,
+    "text": "Portugal conquers Ceuta in North Africa",
+    "lonlat": [
+     -5.32,
+     35.89
+    ]
+   },
+   {
+    "year": 1488,
+    "text": "Bartolomeu Dias rounds the Cape of Good Hope",
+    "lonlat": [
+     18.47,
+     -34.36
+    ]
+   },
+   {
+    "year": 1498,
+    "text": "Vasco da Gama reaches Calicut by sea",
+    "lonlat": [
+     75.78,
+     11.25
+    ]
+   },
+   {
+    "year": 1500,
+    "text": "Cabral reaches the coast of Brazil",
+    "lonlat": [
+     -39.06,
+     -16.45
+    ]
+   },
+   {
+    "year": 1510,
+    "text": "Afonso de Albuquerque conquers Goa",
+    "lonlat": [
+     73.91,
+     15.5
+    ]
+   },
+   {
+    "year": 1511,
+    "text": "Malacca captured",
+    "lonlat": [
+     102.25,
+     2.19
+    ]
+   },
+   {
+    "year": 1580,
+    "text": "Philip II of Spain becomes king: the Iberian Union (to 1640)",
+    "lonlat": [
+     -9.14,
+     38.72
+    ]
+   },
+   {
+    "year": 1641,
+    "text": "Malacca falls to the Dutch",
+    "lonlat": [
+     102.25,
+     2.19
+    ]
+   },
+   {
+    "year": 1822,
+    "text": "Brazil declares independence",
+    "lonlat": [
+     -46.61,
+     -23.59
+    ]
+   },
+   {
+    "year": 1890,
+    "text": "British Ultimatum blocks Portugal's plan to link Angola and Mozambique",
+    "lonlat": null
+   },
+   {
+    "year": 1961,
+    "text": "Colonial war begins in Angola; India annexes Goa, Daman and Diu",
+    "lonlat": [
+     13.23,
+     -8.84
+    ]
+   },
+   {
+    "year": 1974,
+    "text": "Carnation Revolution in Lisbon ends the colonial war",
+    "lonlat": [
+     -9.14,
+     38.72
+    ]
+   },
+   {
+    "year": 1975,
+    "text": "Angola becomes independent on 11 November",
+    "lonlat": [
+     13.23,
+     -8.84
+    ]
+   }
+  ],
+  "reigns": [
+   {
+    "name": "John I (r. 1385–1433)",
+    "from": 1415,
+    "to": 1433
+   },
+   {
+    "name": "Afonso V",
+    "from": 1438,
+    "to": 1481
+   },
+   {
+    "name": "John II",
+    "from": 1481,
+    "to": 1495
+   },
+   {
+    "name": "Manuel I",
+    "from": 1495,
+    "to": 1521
+   },
+   {
+    "name": "John III",
+    "from": 1521,
+    "to": 1557
+   },
+   {
+    "name": "Sebastian",
+    "from": 1557,
+    "to": 1578
+   },
+   {
+    "name": "Philippine dynasty (Spanish Habsburg kings)",
+    "from": 1580,
+    "to": 1640
+   },
+   {
+    "name": "John IV",
+    "from": 1640,
+    "to": 1656
+   },
+   {
+    "name": "Peter II",
+    "from": 1683,
+    "to": 1706
+   },
+   {
+    "name": "John V",
+    "from": 1706,
+    "to": 1750
+   },
+   {
+    "name": "Joseph I",
+    "from": 1750,
+    "to": 1777
+   },
+   {
+    "name": "Maria I",
+    "from": 1777,
+    "to": 1816
+   },
+   {
+    "name": "John VI",
+    "from": 1816,
+    "to": 1826
+   },
+   {
+    "name": "Maria II",
+    "from": 1834,
+    "to": 1853
+   },
+   {
+    "name": "Luís I",
+    "from": 1861,
+    "to": 1889
+   },
+   {
+    "name": "Carlos I",
+    "from": 1889,
+    "to": 1908
+   },
+   {
+    "name": "Manuel II",
+    "from": 1908,
+    "to": 1910
+   },
+   {
+    "name": "First Portuguese Republic",
+    "from": 1910,
+    "to": 1926
+   },
+   {
+    "name": "António de Oliveira Salazar (prime minister)",
+    "from": 1932,
+    "to": 1968
+   },
+   {
+    "name": "Marcelo Caetano (prime minister)",
+    "from": 1968,
+    "to": 1974
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia: Portuguese Empire",
+    "url": "https://en.wikipedia.org/wiki/Portuguese_Empire"
+   },
+   {
+    "title": "Wikipedia: List of Portuguese monarchs",
+    "url": "https://en.wikipedia.org/wiki/List_of_Portuguese_monarchs"
+   },
+   {
+    "title": "Wikipedia: Estado Novo (Portugal)",
+    "url": "https://en.wikipedia.org/wiki/Estado_Novo_(Portugal)"
+   },
+   {
+    "title": "Wikipedia: Portuguese Colonial War",
+    "url": "https://en.wikipedia.org/wiki/Portuguese_Colonial_War"
+   },
+   {
+    "title": "Wikipedia: Alvor Agreement",
+    "url": "https://en.wikipedia.org/wiki/Alvor_Agreement"
+   },
+   {
+    "title": "Wikipedia: Dutch Empire",
+    "url": "https://en.wikipedia.org/wiki/Dutch_Empire"
+   }
+  ]
+ },
+ {
+  "id": "russian-empire",
+  "name": "Russian Empire (Muscovy, Tsardom and Empire)",
+  "profile": "russian-empire",
+  "chain": [
+   {
+    "clio": "Grand Principality of Moscow",
+    "from": 1462,
+    "to": 1546
+   },
+   {
+    "clio": "Tsardom of Russia",
+    "from": 1547,
+    "to": 1720
+   },
+   {
+    "clio": "Russian Empire",
+    "from": 1721,
+    "to": 1916
+   },
+   {
+    "clio": "Russian Republic",
+    "from": 1917,
+    "to": 1917
+   }
+  ],
+  "span": [
+   1462,
+   1917
+  ],
+  "summary": "Ivan III gathered the Russian principalities under Moscow and threw off Tatar overlordship; Ivan IV took the title of tsar in 1547 and conquered the Volga khanates, opening the way for Cossacks and traders to cross Siberia to the Pacific within a century. Peter the Great's victory over Sweden made Russia an empire in 1721, and expansion into Poland, the Black Sea, the Caucasus, Central Asia and the Amur followed until it reached its greatest extent in the late 19th century, before defeat by Japan and the First World War brought revolution in 1917.",
+  "events": [
+   {
+    "year": 1478,
+    "text": "Ivan III annexes Novgorod",
+    "lonlat": [
+     31.27,
+     58.52
+    ]
+   },
+   {
+    "year": 1480,
+    "text": "Great Stand on the Ugra River ends Tatar overlordship",
+    "lonlat": [
+     35.4,
+     54.5
+    ]
+   },
+   {
+    "year": 1547,
+    "text": "Ivan IV crowned the first Tsar of all Russia",
+    "lonlat": [
+     37.62,
+     55.75
+    ]
+   },
+   {
+    "year": 1552,
+    "text": "Kazan Khanate conquered (Astrakhan follows in 1556)",
+    "lonlat": [
+     49.11,
+     55.79
+    ]
+   },
+   {
+    "year": 1582,
+    "text": "c. 1582: Yermak's Cossacks defeat the Khanate of Sibir",
+    "lonlat": [
+     68.4,
+     58.1
+    ]
+   },
+   {
+    "year": 1613,
+    "text": "Mikhail Romanov elected tsar, ending the Time of Troubles",
+    "lonlat": [
+     37.62,
+     55.75
+    ]
+   },
+   {
+    "year": 1654,
+    "text": "Treaty of Pereyaslav brings the Dnieper Cossacks under Moscow",
+    "lonlat": [
+     31.45,
+     50.07
+    ]
+   },
+   {
+    "year": 1689,
+    "text": "Treaty of Nerchinsk fixes the border with Qing China",
+    "lonlat": [
+     116.58,
+     51.98
+    ]
+   },
+   {
+    "year": 1721,
+    "text": "Treaty of Nystad ends the Great Northern War; empire proclaimed",
+    "lonlat": [
+     30.32,
+     59.94
+    ]
+   },
+   {
+    "year": 1783,
+    "text": "Catherine II annexes the Crimean Khanate",
+    "lonlat": [
+     34.1,
+     44.95
+    ]
+   },
+   {
+    "year": 1795,
+    "text": "Final partition of Poland-Lithuania",
+    "lonlat": [
+     21.01,
+     52.23
+    ]
+   },
+   {
+    "year": 1860,
+    "text": "Convention of Peking: land north of the Amur and east of the Ussuri",
+    "lonlat": [
+     131.89,
+     43.12
+    ]
+   },
+   {
+    "year": 1867,
+    "text": "Alaska sold to the United States",
+    "lonlat": [
+     -135.33,
+     57.05
+    ]
+   },
+   {
+    "year": 1905,
+    "text": "Defeat by Japan; Treaty of Portsmouth cedes southern Sakhalin",
+    "lonlat": null
+   },
+   {
+    "year": 1917,
+    "text": "February Revolution: Nicholas II abdicates; republic proclaimed",
+    "lonlat": [
+     30.32,
+     59.94
+    ]
+   }
+  ],
+  "reigns": [
+   {
+    "name": "Ivan III the Great",
+    "from": 1462,
+    "to": 1505
+   },
+   {
+    "name": "Vasily III",
+    "from": 1505,
+    "to": 1533
+   },
+   {
+    "name": "Ivan IV the Terrible",
+    "from": 1533,
+    "to": 1584
+   },
+   {
+    "name": "Feodor I",
+    "from": 1584,
+    "to": 1598
+   },
+   {
+    "name": "Boris Godunov",
+    "from": 1598,
+    "to": 1605
+   },
+   {
+    "name": "Time of Troubles",
+    "from": 1605,
+    "to": 1613
+   },
+   {
+    "name": "Michael",
+    "from": 1613,
+    "to": 1645
+   },
+   {
+    "name": "Alexis",
+    "from": 1645,
+    "to": 1676
+   },
+   {
+    "name": "Feodor III",
+    "from": 1676,
+    "to": 1682
+   },
+   {
+    "name": "Peter I the Great (with Ivan V to 1696)",
+    "from": 1682,
+    "to": 1725
+   },
+   {
+    "name": "Anna",
+    "from": 1730,
+    "to": 1740
+   },
+   {
+    "name": "Elizabeth",
+    "from": 1741,
+    "to": 1762
+   },
+   {
+    "name": "Catherine II the Great",
+    "from": 1762,
+    "to": 1796
+   },
+   {
+    "name": "Paul I",
+    "from": 1796,
+    "to": 1801
+   },
+   {
+    "name": "Alexander I",
+    "from": 1801,
+    "to": 1825
+   },
+   {
+    "name": "Nicholas I",
+    "from": 1825,
+    "to": 1855
+   },
+   {
+    "name": "Alexander II",
+    "from": 1855,
+    "to": 1881
+   },
+   {
+    "name": "Alexander III",
+    "from": 1881,
+    "to": 1894
+   },
+   {
+    "name": "Nicholas II",
+    "from": 1894,
+    "to": 1917
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia: Grand Duchy of Moscow",
+    "url": "https://en.wikipedia.org/wiki/Grand_Duchy_of_Moscow"
+   },
+   {
+    "title": "Wikipedia: Tsardom of Russia",
+    "url": "https://en.wikipedia.org/wiki/Tsardom_of_Russia"
+   },
+   {
+    "title": "Wikipedia: Russian Empire",
+    "url": "https://en.wikipedia.org/wiki/Russian_Empire"
+   },
+   {
+    "title": "Wikipedia: List of Russian monarchs",
+    "url": "https://en.wikipedia.org/wiki/List_of_Russian_monarchs"
+   },
+   {
+    "title": "Wikipedia: Amur Annexation",
+    "url": "https://en.wikipedia.org/wiki/Amur_Annexation"
+   },
+   {
+    "title": "Wikipedia: Treaty of Portsmouth",
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_Portsmouth"
+   }
+  ]
+ },
+ {
+  "id": "spanish-empire",
+  "name": "Spanish Empire",
+  "profile": "spanish-empire",
+  "chain": [
+   {
+    "clio": "(Personal union of Crown of Aragon with Crown of Castile)",
+    "from": 1492,
+    "to": 1515
+   },
+   {
+    "clio": "(Spanish Empire)",
+    "from": 1516,
+    "to": 1872
+   },
+   {
+    "clio": "First Spanish Republic",
+    "from": 1873,
+    "to": 1876
+   },
+   {
+    "clio": "(Spanish Empire)",
+    "from": 1877,
+    "to": 1931
+   },
+   {
+    "clio": "Second Spanish Republic",
+    "from": 1932,
+    "to": 1938
+   },
+   {
+    "clio": "Francoist Spain",
+    "from": 1939,
+    "to": 1975
+   }
+  ],
+  "span": [
+   1492,
+   1975
+  ],
+  "summary": "Castile and Aragon completed the conquest of Granada and sponsored Columbus in 1492; within two generations Spain had overthrown the Aztec and Inca states and spread from the Americas to the Philippines, and from 1580 to 1640 its king also ruled Portugal. The empire reached its greatest extent in the late 18th century, lost the American mainland in the wars of independence (1808–1826), and lost Cuba, Puerto Rico and the Philippines in 1898; its last African territories were given up in 1956–1976.",
+  "events": [
+   {
+    "year": 1492,
+    "text": "Granada conquered; Columbus reaches the Caribbean",
+    "lonlat": [
+     -3.6,
+     37.18
+    ]
+   },
+   {
+    "year": 1521,
+    "text": "Fall of Tenochtitlan: Spanish rule in Mexico begins",
+    "lonlat": [
+     -99.13,
+     19.43
+    ]
+   },
+   {
+    "year": 1532,
+    "text": "Pizarro captures Atahualpa at Cajamarca; conquest of the Inca begins",
+    "lonlat": [
+     -78.52,
+     -7.16
+    ]
+   },
+   {
+    "year": 1565,
+    "text": "Legazpi arrives in the Philippines: the Spanish East Indies begin",
+    "lonlat": [
+     123.89,
+     10.32
+    ]
+   },
+   {
+    "year": 1580,
+    "text": "Philip II takes the Portuguese throne: the Iberian Union",
+    "lonlat": [
+     -9.14,
+     38.72
+    ]
+   },
+   {
+    "year": 1640,
+    "text": "Portugal breaks away, ending the Iberian Union",
+    "lonlat": [
+     -9.14,
+     38.72
+    ]
+   },
+   {
+    "year": 1713,
+    "text": "Treaties of Utrecht: Philip V keeps Spain; Gibraltar and Menorca go to Britain",
+    "lonlat": [
+     5.12,
+     52.09
+    ]
+   },
+   {
+    "year": 1808,
+    "text": "Napoleon invades; the wars of independence in America begin",
+    "lonlat": [
+     -3.7,
+     40.42
+    ]
+   },
+   {
+    "year": 1824,
+    "text": "Royalist defeat at Ayacucho ends Spanish rule in South America",
+    "lonlat": [
+     -74.13,
+     -13.04
+    ]
+   },
+   {
+    "year": 1898,
+    "text": "Spanish–American War: Cuba, Puerto Rico, the Philippines and Guam lost",
+    "lonlat": [
+     -82.37,
+     23.11
+    ]
+   },
+   {
+    "year": 1912,
+    "text": "Spanish protectorate in northern Morocco established",
+    "lonlat": [
+     -5.37,
+     35.57
+    ]
+   },
+   {
+    "year": 1956,
+    "text": "Northern Morocco joins independent Morocco",
+    "lonlat": [
+     -5.37,
+     35.57
+    ]
+   },
+   {
+    "year": 1975,
+    "text": "Madrid Accords: Spain agrees to leave Western Sahara (withdrawal 1976)",
+    "lonlat": [
+     -3.7,
+     40.42
+    ]
+   }
+  ],
+  "reigns": [
+   {
+    "name": "Isabella I and Ferdinand II, the Catholic Monarchs (r. from 1474/1479)",
+    "from": 1492,
+    "to": 1504
+   },
+   {
+    "name": "Ferdinand II (regent for Joanna)",
+    "from": 1504,
+    "to": 1516
+   },
+   {
+    "name": "Charles I (Emperor Charles V)",
+    "from": 1516,
+    "to": 1556
+   },
+   {
+    "name": "Philip II",
+    "from": 1556,
+    "to": 1598
+   },
+   {
+    "name": "Philip III",
+    "from": 1598,
+    "to": 1621
+   },
+   {
+    "name": "Philip IV",
+    "from": 1621,
+    "to": 1665
+   },
+   {
+    "name": "Charles II",
+    "from": 1665,
+    "to": 1700
+   },
+   {
+    "name": "Philip V",
+    "from": 1700,
+    "to": 1746
+   },
+   {
+    "name": "Ferdinand VI",
+    "from": 1746,
+    "to": 1759
+   },
+   {
+    "name": "Charles III",
+    "from": 1759,
+    "to": 1788
+   },
+   {
+    "name": "Charles IV",
+    "from": 1788,
+    "to": 1808
+   },
+   {
+    "name": "Joseph I (Bonaparte)",
+    "from": 1808,
+    "to": 1813
+   },
+   {
+    "name": "Ferdinand VII",
+    "from": 1813,
+    "to": 1833
+   },
+   {
+    "name": "Isabella II",
+    "from": 1833,
+    "to": 1868
+   },
+   {
+    "name": "Alfonso XII",
+    "from": 1874,
+    "to": 1885
+   },
+   {
+    "name": "Alfonso XIII",
+    "from": 1886,
+    "to": 1931
+   },
+   {
+    "name": "Second Spanish Republic",
+    "from": 1931,
+    "to": 1939
+   },
+   {
+    "name": "Francisco Franco (head of state)",
+    "from": 1939,
+    "to": 1975
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia: Spanish Empire",
+    "url": "https://en.wikipedia.org/wiki/Spanish_Empire"
+   },
+   {
+    "title": "Wikipedia: List of Spanish monarchs",
+    "url": "https://en.wikipedia.org/wiki/List_of_Spanish_monarchs"
+   },
+   {
+    "title": "Wikipedia: Battle of Ayacucho",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Ayacucho"
+   },
+   {
+    "title": "Wikipedia: Spanish protectorate in Morocco",
+    "url": "https://en.wikipedia.org/wiki/Spanish_protectorate_in_Morocco"
+   },
+   {
+    "title": "Wikipedia: Spanish Sahara",
+    "url": "https://en.wikipedia.org/wiki/Spanish_Sahara"
+   }
+  ]
+ },
+ {
+  "id": "safavid-empire",
+  "name": "Safavid Empire",
+  "profile": "safavid-empire",
+  "chain": [
+   {
+    "clio": "Safavid Dynasty",
+    "from": 1502,
+    "to": 1736
+   }
+  ],
+  "span": [
+   1502,
+   1736
+  ],
+  "summary": "Ismail I, head of the Safavid Sufi order, was enthroned at Tabriz in 1501 and within a decade had conquered Iran and Iraq and imposed Twelver Shi'ism. Defeat at Chaldiran in 1514 fixed a long frontier war with the Ottomans; Abbas I (1587–1629) rebuilt the state from Isfahan and won back lost ground, but Afghan invaders took Isfahan in 1722 and Nader Shah ended the dynasty in 1736.",
+  "events": [
+   {
+    "year": 1508,
+    "text": "Ismail I takes Baghdad, ending the Aq Qoyunlu",
+    "lonlat": [
+     44.37,
+     33.31
+    ]
+   },
+   {
+    "year": 1510,
+    "text": "Uzbek leader Muhammad Shaybani defeated and killed near Merv",
+    "lonlat": [
+     61.83,
+     37.66
+    ]
+   },
+   {
+    "year": 1514,
+    "text": "Ottoman victory at Chaldiran; eastern Anatolia lost",
+    "lonlat": [
+     44.39,
+     39.07
+    ]
+   },
+   {
+    "year": 1555,
+    "text": "Peace of Amasya with the Ottomans after decades of war",
+    "lonlat": [
+     35.83,
+     40.65
+    ]
+   },
+   {
+    "year": 1598,
+    "text": "Abbas I makes Isfahan the capital",
+    "lonlat": [
+     51.67,
+     32.65
+    ]
+   },
+   {
+    "year": 1603,
+    "text": "Abbas I retakes Tabriz from the Ottomans",
+    "lonlat": [
+     46.29,
+     38.08
+    ]
+   },
+   {
+    "year": 1622,
+    "text": "Hormuz taken from the Portuguese with English help; Kandahar seized",
+    "lonlat": [
+     56.46,
+     27.06
+    ]
+   },
+   {
+    "year": 1623,
+    "text": "Abbas I recaptures Baghdad (1623–24)",
+    "lonlat": [
+     44.37,
+     33.31
+    ]
+   },
+   {
+    "year": 1639,
+    "text": "Treaty of Zuhab: Baghdad and Mesopotamia ceded to the Ottomans",
+    "lonlat": [
+     45.58,
+     34.52
+    ]
+   },
+   {
+    "year": 1722,
+    "text": "Afghan Hotaki army takes Isfahan; Soltan Hoseyn deposed",
+    "lonlat": [
+     51.67,
+     32.65
+    ]
+   },
+   {
+    "year": 1729,
+    "text": "Nader recovers Iran for Tahmasp II after the Afghan occupation",
+    "lonlat": null
+   },
+   {
+    "year": 1736,
+    "text": "Nader Shah crowned; the Safavid dynasty ends",
+    "lonlat": null
+   }
+  ],
+  "reigns": [
+   {
+    "name": "Ismail I (r. 1501–1524)",
+    "from": 1502,
+    "to": 1524
+   },
+   {
+    "name": "Tahmasp I",
+    "from": 1524,
+    "to": 1576
+   },
+   {
+    "name": "Ismail II",
+    "from": 1576,
+    "to": 1578
+   },
+   {
+    "name": "Mohammad Khodabanda",
+    "from": 1578,
+    "to": 1587
+   },
+   {
+    "name": "Abbas I the Great",
+    "from": 1587,
+    "to": 1629
+   },
+   {
+    "name": "Safi",
+    "from": 1629,
+    "to": 1642
+   },
+   {
+    "name": "Abbas II",
+    "from": 1642,
+    "to": 1666
+   },
+   {
+    "name": "Suleiman I",
+    "from": 1666,
+    "to": 1694
+   },
+   {
+    "name": "Soltan Hoseyn",
+    "from": 1694,
+    "to": 1722
+   },
+   {
+    "name": "Tahmasp II",
+    "from": 1722,
+    "to": 1732
+   },
+   {
+    "name": "Abbas III",
+    "from": 1732,
+    "to": 1736
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia: Safavid Iran",
+    "url": "https://en.wikipedia.org/wiki/Safavid_Iran"
+   },
+   {
+    "title": "Wikipedia: Safavid dynasty",
+    "url": "https://en.wikipedia.org/wiki/Safavid_dynasty"
+   },
+   {
+    "title": "Wikipedia: Ismail I",
+    "url": "https://en.wikipedia.org/wiki/Ismail_I"
+   },
+   {
+    "title": "Wikipedia: Abbas the Great",
+    "url": "https://en.wikipedia.org/wiki/Abbas_the_Great"
+   },
+   {
+    "title": "Wikipedia: Treaty of Zuhab",
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_Zuhab"
+   }
+  ]
+ },
+ {
+  "id": "mughal-empire",
+  "name": "Mughal Empire",
+  "profile": "mughal-empire",
+  "chain": [
+   {
+    "clio": "Mughal Empire",
+    "from": 1529,
+    "to": 1857
+   }
+  ],
+  "span": [
+   1529,
+   1857
+  ],
+  "summary": "Babur, a Timurid prince from Kabul, defeated the Delhi sultan at Panipat in 1526; his son Humayun lost the realm to Sher Shah Suri and won it back in 1555. Akbar and his successors built one of the largest states in Indian history, which reached its widest extent under Aurangzeb (d. 1707) after the conquest of the Deccan sultanates. It then fragmented under Maratha, Persian, Afghan and British pressure, and the British deposed the last emperor after the 1857 rebellion.",
+  "events": [
+   {
+    "year": 1540,
+    "text": "Sher Shah Suri drives Humayun out of India",
+    "lonlat": [
+     79.92,
+     27.06
+    ]
+   },
+   {
+    "year": 1555,
+    "text": "Humayun returns from Persia and retakes Delhi",
+    "lonlat": [
+     77.21,
+     28.61
+    ]
+   },
+   {
+    "year": 1556,
+    "text": "Akbar's army wins the Second Battle of Panipat",
+    "lonlat": [
+     76.97,
+     29.39
+    ]
+   },
+   {
+    "year": 1561,
+    "text": "Malwa annexed",
+    "lonlat": [
+     75.4,
+     22.36
+    ]
+   },
+   {
+    "year": 1568,
+    "text": "Chittorgarh falls after a long siege",
+    "lonlat": [
+     74.64,
+     24.89
+    ]
+   },
+   {
+    "year": 1573,
+    "text": "Conquest of Gujarat completed",
+    "lonlat": [
+     72.58,
+     23.02
+    ]
+   },
+   {
+    "year": 1576,
+    "text": "Victory at Rajmahal secures Bengal",
+    "lonlat": [
+     87.83,
+     25.05
+    ]
+   },
+   {
+    "year": 1585,
+    "text": "Kabul formally annexed",
+    "lonlat": [
+     69.17,
+     34.53
+    ]
+   },
+   {
+    "year": 1601,
+    "text": "Asirgarh taken after Ahmadnagar (1600): Mughals enter the Deccan",
+    "lonlat": [
+     76.29,
+     21.47
+    ]
+   },
+   {
+    "year": 1687,
+    "text": "Aurangzeb besieges and takes Golconda; Deccan sultanates absorbed",
+    "lonlat": [
+     78.4,
+     17.38
+    ]
+   },
+   {
+    "year": 1707,
+    "text": "Aurangzeb dies; the empire is at its greatest extent",
+    "lonlat": [
+     74.75,
+     19.1
+    ]
+   },
+   {
+    "year": 1739,
+    "text": "Nader Shah of Persia sacks Delhi",
+    "lonlat": [
+     77.21,
+     28.61
+    ]
+   },
+   {
+    "year": 1757,
+    "text": "British East India Company wins at Plassey and takes control of Bengal",
+    "lonlat": [
+     88.25,
+     23.8
+    ]
+   },
+   {
+    "year": 1857,
+    "text": "Indian Rebellion; Bahadur Shah II deposed after the siege of Delhi",
+    "lonlat": [
+     77.21,
+     28.61
+    ]
+   }
+  ],
+  "reigns": [
+   {
+    "name": "Babur (r. 1526–1530)",
+    "from": 1529,
+    "to": 1530
+   },
+   {
+    "name": "Humayun",
+    "from": 1530,
+    "to": 1540
+   },
+   {
+    "name": "Suri interregnum (Sher Shah Suri and heirs)",
+    "from": 1540,
+    "to": 1555
+   },
+   {
+    "name": "Humayun (restored)",
+    "from": 1555,
+    "to": 1556
+   },
+   {
+    "name": "Akbar",
+    "from": 1556,
+    "to": 1605
+   },
+   {
+    "name": "Jahangir",
+    "from": 1605,
+    "to": 1627
+   },
+   {
+    "name": "Shah Jahan",
+    "from": 1628,
+    "to": 1658
+   },
+   {
+    "name": "Aurangzeb",
+    "from": 1658,
+    "to": 1707
+   },
+   {
+    "name": "Bahadur Shah I",
+    "from": 1707,
+    "to": 1712
+   },
+   {
+    "name": "Farrukhsiyar",
+    "from": 1713,
+    "to": 1719
+   },
+   {
+    "name": "Muhammad Shah",
+    "from": 1719,
+    "to": 1748
+   },
+   {
+    "name": "Ahmad Shah Bahadur",
+    "from": 1748,
+    "to": 1754
+   },
+   {
+    "name": "Alamgir II",
+    "from": 1754,
+    "to": 1759
+   },
+   {
+    "name": "Shah Alam II",
+    "from": 1760,
+    "to": 1806
+   },
+   {
+    "name": "Akbar Shah II",
+    "from": 1806,
+    "to": 1837
+   },
+   {
+    "name": "Bahadur Shah II",
+    "from": 1837,
+    "to": 1857
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia: Mughal Empire",
+    "url": "https://en.wikipedia.org/wiki/Mughal_Empire"
+   },
+   {
+    "title": "Wikipedia: List of Mughal emperors",
+    "url": "https://en.wikipedia.org/wiki/List_of_Mughal_emperors"
+   },
+   {
+    "title": "Wikipedia: Akbar",
+    "url": "https://en.wikipedia.org/wiki/Akbar"
+   },
+   {
+    "title": "Wikipedia: Aurangzeb",
+    "url": "https://en.wikipedia.org/wiki/Aurangzeb"
+   }
+  ]
+ },
+ {
+  "id": "dutch-empire",
+  "name": "Dutch Colonial Empire",
+  "profile": "dutch-empire",
+  "chain": [
+   {
+    "clio": "(Dutch Republic)",
+    "from": 1582,
+    "to": 1795
+   },
+   {
+    "clio": "(Batavian Republic)",
+    "from": 1796,
+    "to": 1810
+   },
+   {
+    "clio": "(Netherlands)",
+    "from": 1811,
+    "to": 1975
+   }
+  ],
+  "span": [
+   1582,
+   1975
+  ],
+  "summary": "The newly independent Dutch Republic built a commercial empire through the East India Company (VOC, 1602) and West India Company (1621), seizing Portuguese posts from Malacca to Ceylon and founding Batavia, New Amsterdam and the Cape Colony; it was at its height around 1652. Wars with England and France eroded it, but in the 19th century the Netherlands turned its foothold in the East Indies into a vast colony, lost to Japanese occupation in 1942 and to Indonesian independence in 1945–1949.",
+  "events": [
+   {
+    "year": 1602,
+    "text": "Dutch East India Company (VOC) founded",
+    "lonlat": [
+     4.9,
+     52.37
+    ]
+   },
+   {
+    "year": 1619,
+    "text": "Coen takes Jakarta and refounds it as Batavia",
+    "lonlat": [
+     106.81,
+     -6.13
+    ]
+   },
+   {
+    "year": 1625,
+    "text": "New Amsterdam founded in New Netherland",
+    "lonlat": [
+     -74.01,
+     40.7
+    ]
+   },
+   {
+    "year": 1630,
+    "text": "West India Company occupies Pernambuco: Dutch Brazil (to 1654)",
+    "lonlat": [
+     -34.88,
+     -8.05
+    ]
+   },
+   {
+    "year": 1641,
+    "text": "Malacca taken from the Portuguese",
+    "lonlat": [
+     102.25,
+     2.19
+    ]
+   },
+   {
+    "year": 1652,
+    "text": "Cape Colony founded; the Dutch empire at its height",
+    "lonlat": [
+     18.42,
+     -33.92
+    ]
+   },
+   {
+    "year": 1658,
+    "text": "Conquest of Portuguese Ceylon completed",
+    "lonlat": [
+     79.86,
+     6.93
+    ]
+   },
+   {
+    "year": 1795,
+    "text": "French-backed Batavian Republic; Britain occupies the Cape",
+    "lonlat": [
+     18.42,
+     -33.92
+    ]
+   },
+   {
+    "year": 1810,
+    "text": "Kingdom of Holland annexed to Napoleon's French Empire (to 1813)",
+    "lonlat": [
+     4.9,
+     52.37
+    ]
+   },
+   {
+    "year": 1814,
+    "text": "Anglo-Dutch Treaty returns the East Indies; the Cape stays British",
+    "lonlat": [
+     -0.13,
+     51.51
+    ]
+   },
+   {
+    "year": 1873,
+    "text": "Aceh War begins in northern Sumatra (to 1904)",
+    "lonlat": [
+     95.32,
+     5.55
+    ]
+   },
+   {
+    "year": 1942,
+    "text": "Japan conquers the Dutch East Indies; Dutch surrender in March",
+    "lonlat": [
+     107.67,
+     -6.53
+    ]
+   },
+   {
+    "year": 1949,
+    "text": "Sovereignty transferred to Indonesia (independence proclaimed 1945)",
+    "lonlat": [
+     106.81,
+     -6.13
+    ]
+   },
+   {
+    "year": 1962,
+    "text": "Dutch New Guinea handed to UN administration",
+    "lonlat": [
+     140.72,
+     -2.53
+    ]
+   },
+   {
+    "year": 1975,
+    "text": "Suriname becomes independent",
+    "lonlat": [
+     -55.2,
+     5.85
+    ]
+   }
+  ],
+  "reigns": [
+   {
+    "name": "Maurice of Orange (stadtholder)",
+    "from": 1585,
+    "to": 1625
+   },
+   {
+    "name": "Frederick Henry (stadtholder)",
+    "from": 1625,
+    "to": 1647
+   },
+   {
+    "name": "William II (stadtholder)",
+    "from": 1647,
+    "to": 1650
+   },
+   {
+    "name": "First Stadtholderless Period (Johan de Witt)",
+    "from": 1650,
+    "to": 1672
+   },
+   {
+    "name": "William III (stadtholder)",
+    "from": 1672,
+    "to": 1702
+   },
+   {
+    "name": "Second Stadtholderless Period",
+    "from": 1702,
+    "to": 1747
+   },
+   {
+    "name": "William IV (stadtholder)",
+    "from": 1747,
+    "to": 1751
+   },
+   {
+    "name": "William V (stadtholder)",
+    "from": 1751,
+    "to": 1795
+   },
+   {
+    "name": "Batavian Republic",
+    "from": 1795,
+    "to": 1806
+   },
+   {
+    "name": "Louis Bonaparte (Kingdom of Holland)",
+    "from": 1806,
+    "to": 1810
+   },
+   {
+    "name": "French annexation",
+    "from": 1810,
+    "to": 1813
+   },
+   {
+    "name": "William I",
+    "from": 1815,
+    "to": 1840
+   },
+   {
+    "name": "William II",
+    "from": 1840,
+    "to": 1849
+   },
+   {
+    "name": "William III",
+    "from": 1849,
+    "to": 1890
+   },
+   {
+    "name": "Wilhelmina",
+    "from": 1890,
+    "to": 1948
+   },
+   {
+    "name": "Juliana",
+    "from": 1948,
+    "to": 1975
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia: Dutch Empire",
+    "url": "https://en.wikipedia.org/wiki/Dutch_Empire"
+   },
+   {
+    "title": "Wikipedia: Stadtholder",
+    "url": "https://en.wikipedia.org/wiki/Stadtholder"
+   },
+   {
+    "title": "Wikipedia: List of monarchs of the Netherlands",
+    "url": "https://en.wikipedia.org/wiki/List_of_monarchs_of_the_Netherlands"
+   },
+   {
+    "title": "Wikipedia: Dutch East Indies campaign",
+    "url": "https://en.wikipedia.org/wiki/Dutch_East_Indies_campaign"
+   },
+   {
+    "title": "Wikipedia: Dutch–Indonesian Round Table Conference",
+    "url": "https://en.wikipedia.org/wiki/Dutch%E2%80%93Indonesian_Round_Table_Conference"
+   }
+  ]
+ },
+ {
+  "id": "british-empire",
+  "name": "British Empire",
+  "profile": "british-empire",
+  "chain": [
+   {
+    "clio": "English Colonial Empire",
+    "from": 1609,
+    "to": 1705
+   },
+   {
+    "clio": "(British Empire)",
+    "from": 1706,
+    "to": 1997
+   }
+  ],
+  "span": [
+   1609,
+   1997
+  ],
+  "summary": "England's East India Company (1600) and its first American colonies grew into a worldwide empire of trading posts, settler colonies and conquests; the loss of the Thirteen Colonies in 1783 was offset by India, Australia, the Cape and footholds across Asia. Victory in the First World War added League of Nations mandates and the empire reached its largest extent around 1921, but the Dominions became self-governing, India won independence in 1947, and most remaining colonies followed by the 1960s; the handover of Hong Kong in 1997 is often taken as its end.",
+  "events": [
+   {
+    "year": 1655,
+    "text": "England takes Jamaica from Spain",
+    "lonlat": [
+     -76.79,
+     18.0
+    ]
+   },
+   {
+    "year": 1707,
+    "text": "Acts of Union create the Kingdom of Great Britain",
+    "lonlat": [
+     -0.13,
+     51.51
+    ]
+   },
+   {
+    "year": 1713,
+    "text": "Treaty of Utrecht: Gibraltar, Menorca, Newfoundland and Acadia gained",
+    "lonlat": [
+     -5.35,
+     36.14
+    ]
+   },
+   {
+    "year": 1757,
+    "text": "East India Company victory at Plassey brings Bengal under its control",
+    "lonlat": [
+     88.25,
+     23.8
+    ]
+   },
+   {
+    "year": 1763,
+    "text": "Treaty of Paris ends the Seven Years' War with large gains",
+    "lonlat": null
+   },
+   {
+    "year": 1783,
+    "text": "Peace of Paris recognises the independence of the United States",
+    "lonlat": [
+     2.35,
+     48.86
+    ]
+   },
+   {
+    "year": 1788,
+    "text": "First Fleet founds a penal colony at Sydney",
+    "lonlat": [
+     151.21,
+     -33.86
+    ]
+   },
+   {
+    "year": 1842,
+    "text": "Treaty of Nanking: Hong Kong Island ceded by China",
+    "lonlat": [
+     114.17,
+     22.28
+    ]
+   },
+   {
+    "year": 1858,
+    "text": "After the 1857 rebellion, the Crown takes direct rule of India",
+    "lonlat": [
+     77.21,
+     28.61
+    ]
+   },
+   {
+    "year": 1882,
+    "text": "British occupation of Egypt",
+    "lonlat": [
+     31.24,
+     30.04
+    ]
+   },
+   {
+    "year": 1921,
+    "text": "Empire at its greatest extent, enlarged by League of Nations mandates",
+    "lonlat": null
+   },
+   {
+    "year": 1931,
+    "text": "Statute of Westminster makes the Dominions self-governing",
+    "lonlat": [
+     -0.13,
+     51.51
+    ]
+   },
+   {
+    "year": 1947,
+    "text": "India and Pakistan become independent on 15 August",
+    "lonlat": [
+     77.21,
+     28.61
+    ]
+   },
+   {
+    "year": 1956,
+    "text": "Suez Crisis exposes Britain's decline as a world power",
+    "lonlat": [
+     32.55,
+     29.97
+    ]
+   },
+   {
+    "year": 1997,
+    "text": "Hong Kong handed over to China",
+    "lonlat": [
+     114.17,
+     22.28
+    ]
+   }
+  ],
+  "reigns": [
+   {
+    "name": "James I (r. 1603–1625)",
+    "from": 1609,
+    "to": 1625
+   },
+   {
+    "name": "Charles I",
+    "from": 1625,
+    "to": 1649
+   },
+   {
+    "name": "Commonwealth and Protectorate",
+    "from": 1649,
+    "to": 1660
+   },
+   {
+    "name": "Charles II",
+    "from": 1660,
+    "to": 1685
+   },
+   {
+    "name": "James II",
+    "from": 1685,
+    "to": 1688
+   },
+   {
+    "name": "William III (with Mary II to 1694)",
+    "from": 1689,
+    "to": 1702
+   },
+   {
+    "name": "Anne",
+    "from": 1702,
+    "to": 1714
+   },
+   {
+    "name": "George I",
+    "from": 1714,
+    "to": 1727
+   },
+   {
+    "name": "George II",
+    "from": 1727,
+    "to": 1760
+   },
+   {
+    "name": "George III",
+    "from": 1760,
+    "to": 1820
+   },
+   {
+    "name": "George IV",
+    "from": 1820,
+    "to": 1830
+   },
+   {
+    "name": "William IV",
+    "from": 1830,
+    "to": 1837
+   },
+   {
+    "name": "Victoria",
+    "from": 1837,
+    "to": 1901
+   },
+   {
+    "name": "Edward VII",
+    "from": 1901,
+    "to": 1910
+   },
+   {
+    "name": "George V",
+    "from": 1910,
+    "to": 1936
+   },
+   {
+    "name": "George VI (after Edward VIII, 1936)",
+    "from": 1936,
+    "to": 1952
+   },
+   {
+    "name": "Elizabeth II (r. 1952–2022)",
+    "from": 1952,
+    "to": 1997
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia: British Empire",
+    "url": "https://en.wikipedia.org/wiki/British_Empire"
+   },
+   {
+    "title": "Wikipedia: List of English monarchs",
+    "url": "https://en.wikipedia.org/wiki/List_of_English_monarchs"
+   },
+   {
+    "title": "Wikipedia: List of British monarchs",
+    "url": "https://en.wikipedia.org/wiki/List_of_British_monarchs"
+   },
+   {
+    "title": "Wikipedia: Treaty of Nanking",
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_Nanking"
+   }
+  ]
+ },
+ {
+  "id": "qing-dynasty",
+  "name": "Qing China",
+  "profile": "qing-dynasty",
+  "chain": [
+   {
+    "clio": "Later Jin Dynasty",
+    "from": 1619,
+    "to": 1644
+   },
+   {
+    "clio": "Qing Dynasty",
+    "from": 1645,
+    "to": 1911
+   }
+  ],
+  "span": [
+   1619,
+   1911
+  ],
+  "summary": "Nurhaci united the Jurchen (Manchu) tribes as the Later Jin in 1616, and his son Hong Taiji renamed the state Qing in 1636; in 1644 Manchu armies entered Beijing and went on to conquer all of Ming China, Taiwan, Mongolia, Tibet and Xinjiang. At its peak around 1790 the Qing ruled roughly 14.7 million km², but the Opium Wars, the Taiping Rebellion, unequal treaties and defeat by Japan weakened it, and the 1911 revolution brought the abdication of the last emperor in 1912.",
+  "events": [
+   {
+    "year": 1619,
+    "text": "Manchu victory over the Ming at Sarhu",
+    "lonlat": [
+     124.25,
+     41.85
+    ]
+   },
+   {
+    "year": 1636,
+    "text": "Hong Taiji renames his state the Great Qing",
+    "lonlat": [
+     123.43,
+     41.8
+    ]
+   },
+   {
+    "year": 1644,
+    "text": "Qing and Wu Sangui defeat Li Zicheng at Shanhai Pass; Beijing taken",
+    "lonlat": [
+     116.4,
+     39.9
+    ]
+   },
+   {
+    "year": 1681,
+    "text": "Revolt of the Three Feudatories crushed after eight years",
+    "lonlat": null
+   },
+   {
+    "year": 1683,
+    "text": "Zheng regime on Taiwan surrenders to the Qing",
+    "lonlat": [
+     120.21,
+     22.99
+    ]
+   },
+   {
+    "year": 1689,
+    "text": "Treaty of Nerchinsk with Russia",
+    "lonlat": [
+     116.58,
+     51.98
+    ]
+   },
+   {
+    "year": 1759,
+    "text": "Conquest of Dzungaria and the Tarim Basin (Xinjiang) completed",
+    "lonlat": [
+     75.99,
+     39.47
+    ]
+   },
+   {
+    "year": 1790,
+    "text": "c. 1790: Qing at its greatest extent, about 14.7 million km²",
+    "lonlat": null
+   },
+   {
+    "year": 1842,
+    "text": "Treaty of Nanking ends the First Opium War; Hong Kong Island ceded",
+    "lonlat": [
+     118.78,
+     32.06
+    ]
+   },
+   {
+    "year": 1850,
+    "text": "Taiping Rebellion breaks out (crushed 1864)",
+    "lonlat": [
+     110.08,
+     23.39
+    ]
+   },
+   {
+    "year": 1860,
+    "text": "Outer Manchuria ceded to Russia (Convention of Peking)",
+    "lonlat": [
+     131.89,
+     43.12
+    ]
+   },
+   {
+    "year": 1895,
+    "text": "Treaty of Shimonoseki: Taiwan and Penghu ceded to Japan",
+    "lonlat": [
+     130.94,
+     33.96
+    ]
+   },
+   {
+    "year": 1900,
+    "text": "Boxer Rebellion; foreign armies occupy Beijing",
+    "lonlat": [
+     116.4,
+     39.9
+    ]
+   },
+   {
+    "year": 1911,
+    "text": "Wuchang Uprising starts the Xinhai Revolution (abdication Feb 1912)",
+    "lonlat": [
+     114.31,
+     30.55
+    ]
+   }
+  ],
+  "reigns": [
+   {
+    "name": "Nurhaci (r. 1616–1626)",
+    "from": 1619,
+    "to": 1626
+   },
+   {
+    "name": "Hong Taiji",
+    "from": 1626,
+    "to": 1643
+   },
+   {
+    "name": "Shunzhi Emperor",
+    "from": 1644,
+    "to": 1661
+   },
+   {
+    "name": "Kangxi Emperor",
+    "from": 1661,
+    "to": 1722
+   },
+   {
+    "name": "Yongzheng Emperor",
+    "from": 1722,
+    "to": 1735
+   },
+   {
+    "name": "Qianlong Emperor",
+    "from": 1735,
+    "to": 1796
+   },
+   {
+    "name": "Jiaqing Emperor",
+    "from": 1796,
+    "to": 1820
+   },
+   {
+    "name": "Daoguang Emperor",
+    "from": 1820,
+    "to": 1850
+   },
+   {
+    "name": "Xianfeng Emperor",
+    "from": 1850,
+    "to": 1861
+   },
+   {
+    "name": "Tongzhi Emperor",
+    "from": 1861,
+    "to": 1875
+   },
+   {
+    "name": "Guangxu Emperor",
+    "from": 1875,
+    "to": 1908
+   },
+   {
+    "name": "Xuantong Emperor, Puyi (r. 1908–1912)",
+    "from": 1908,
+    "to": 1911
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia: Qing dynasty",
+    "url": "https://en.wikipedia.org/wiki/Qing_dynasty"
+   },
+   {
+    "title": "Wikipedia: List of emperors of the Qing dynasty",
+    "url": "https://en.wikipedia.org/wiki/List_of_emperors_of_the_Qing_dynasty"
+   },
+   {
+    "title": "Wikipedia: Treaty of Nanking",
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_Nanking"
+   },
+   {
+    "title": "Wikipedia: Amur Annexation",
+    "url": "https://en.wikipedia.org/wiki/Amur_Annexation"
+   },
+   {
+    "title": "Wikipedia: Treaty of Shimonoseki",
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_Shimonoseki"
+   }
+  ]
+ },
+ {
+  "id": "maratha-empire",
+  "name": "Maratha Empire",
+  "profile": "maratha-empire",
+  "chain": [
+   {
+    "clio": "Maratha Empire",
+    "from": 1677,
+    "to": 1818
+   }
+  ],
+  "span": [
+   1677,
+   1818
+  ],
+  "summary": "Shivaji, crowned Chhatrapati in 1674, carved a Maratha kingdom out of the Deccan and survived a long war with Aurangzeb (1680–1707). Under Chhatrapati Shahu the Peshwas of Pune led the confederacy north across Malwa to Delhi and Attock, reaching a peak of roughly 2.5 million km² around 1760, until the Afghan victory at Panipat in 1761. The Marathas recovered Delhi in 1771 but were defeated by the British East India Company in three wars, the last ending in 1818.",
+  "events": [
+   {
+    "year": 1677,
+    "text": "Shivaji's southern campaign takes Gingee and Vellore",
+    "lonlat": [
+     79.4,
+     12.25
+    ]
+   },
+   {
+    "year": 1689,
+    "text": "Sambhaji captured and executed by the Mughals",
+    "lonlat": [
+     73.97,
+     18.67
+    ]
+   },
+   {
+    "year": 1707,
+    "text": "Shahu released after Aurangzeb's death and claims the throne",
+    "lonlat": [
+     74.0,
+     17.68
+    ]
+   },
+   {
+    "year": 1713,
+    "text": "Shahu appoints Balaji Vishwanath Peshwa",
+    "lonlat": [
+     74.0,
+     17.68
+    ]
+   },
+   {
+    "year": 1728,
+    "text": "Baji Rao I defeats the Nizam at Palkhed",
+    "lonlat": null
+   },
+   {
+    "year": 1737,
+    "text": "Baji Rao I raids Delhi and defeats the Mughals at Bhopal",
+    "lonlat": [
+     77.21,
+     28.61
+    ]
+   },
+   {
+    "year": 1738,
+    "text": "Treaty of Bhopal confirms Maratha control of Malwa",
+    "lonlat": [
+     77.41,
+     23.26
+    ]
+   },
+   {
+    "year": 1758,
+    "text": "Marathas win at Attock and take Peshawar",
+    "lonlat": [
+     72.36,
+     33.77
+    ]
+   },
+   {
+    "year": 1761,
+    "text": "Crushing defeat by Ahmad Shah Durrani at the Third Battle of Panipat",
+    "lonlat": [
+     76.97,
+     29.39
+    ]
+   },
+   {
+    "year": 1771,
+    "text": "Mahadaji Shinde recaptures Delhi",
+    "lonlat": [
+     77.21,
+     28.61
+    ]
+   },
+   {
+    "year": 1782,
+    "text": "Treaty of Salbai ends the First Anglo-Maratha War",
+    "lonlat": [
+     78.17,
+     26.22
+    ]
+   },
+   {
+    "year": 1795,
+    "text": "Victory over the Nizam at Kharda",
+    "lonlat": [
+     75.48,
+     18.64
+    ]
+   },
+   {
+    "year": 1802,
+    "text": "Peshwa accepts British protection in the Treaty of Bassein",
+    "lonlat": [
+     72.84,
+     19.39
+    ]
+   },
+   {
+    "year": 1803,
+    "text": "Second Anglo-Maratha War against the East India Company (to 1805)",
+    "lonlat": null
+   },
+   {
+    "year": 1818,
+    "text": "Third Anglo-Maratha War: Baji Rao II surrenders; Peshwa rule ends",
+    "lonlat": [
+     73.86,
+     18.52
+    ]
+   }
+  ],
+  "reigns": [
+   {
+    "name": "Shivaji I (r. 1674–1680)",
+    "from": 1677,
+    "to": 1680
+   },
+   {
+    "name": "Sambhaji",
+    "from": 1680,
+    "to": 1689
+   },
+   {
+    "name": "Rajaram I",
+    "from": 1689,
+    "to": 1700
+   },
+   {
+    "name": "Tarabai (regent for Shivaji II)",
+    "from": 1700,
+    "to": 1707
+   },
+   {
+    "name": "Shahu I (Chhatrapati, r. 1707–1749)",
+    "from": 1707,
+    "to": 1713
+   },
+   {
+    "name": "Peshwa Balaji Vishwanath",
+    "from": 1713,
+    "to": 1720
+   },
+   {
+    "name": "Peshwa Baji Rao I",
+    "from": 1720,
+    "to": 1740
+   },
+   {
+    "name": "Peshwa Balaji Baji Rao (Nanasaheb)",
+    "from": 1740,
+    "to": 1761
+   },
+   {
+    "name": "Peshwa Madhav Rao I",
+    "from": 1761,
+    "to": 1772
+   },
+   {
+    "name": "Peshwa Narayan Rao",
+    "from": 1772,
+    "to": 1773
+   },
+   {
+    "name": "Peshwa Raghunath Rao",
+    "from": 1773,
+    "to": 1774
+   },
+   {
+    "name": "Peshwa Madhav Rao II",
+    "from": 1774,
+    "to": 1796
+   },
+   {
+    "name": "Peshwa Baji Rao II",
+    "from": 1796,
+    "to": 1818
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia: Maratha Empire",
+    "url": "https://en.wikipedia.org/wiki/Maratha_Empire"
+   },
+   {
+    "title": "Wikipedia: Peshwa",
+    "url": "https://en.wikipedia.org/wiki/Peshwa"
+   },
+   {
+    "title": "Wikipedia: Shivaji",
+    "url": "https://en.wikipedia.org/wiki/Shivaji"
+   },
+   {
+    "title": "Wikipedia: Shahu I",
+    "url": "https://en.wikipedia.org/wiki/Shahu_I"
+   },
+   {
+    "title": "Wikipedia: Rajaram I",
+    "url": "https://en.wikipedia.org/wiki/Rajaram_I"
+   }
+  ]
+ },
+ {
+  "id": "napoleonic-empire",
+  "name": "First French Empire (Napoleonic)",
+  "profile": null,
+  "chain": [
+   {
+    "clio": "(First French Empire)",
+    "from": 1805,
+    "to": 1814
+   },
+   {
+    "clio": "Italian Republic",
+    "from": 1805,
+    "to": 1813
+   },
+   {
+    "clio": "Helvetic Republic",
+    "from": 1805,
+    "to": 1813
+   },
+   {
+    "clio": "Kingdom of Naples (Napoleonic)",
+    "from": 1806,
+    "to": 1814
+   },
+   {
+    "clio": "Batavian Republic",
+    "from": 1806,
+    "to": 1810
+   },
+   {
+    "clio": "Confederation of the Rhine",
+    "from": 1809,
+    "to": 1813
+   },
+   {
+    "clio": "Kingdom of Westphalia",
+    "from": 1809,
+    "to": 1813
+   },
+   {
+    "clio": "Duchy of Warsaw",
+    "from": 1809,
+    "to": 1813
+   }
+  ],
+  "span": [
+   1805,
+   1814
+  ],
+  "summary": "Napoleon Bonaparte was proclaimed Emperor of the French in May 1804 and crowned that December. Victories over Austria, Prussia and Russia (1805–1807) let him annex territory directly to France and ring it with satellite kingdoms and confederations run by his relatives and allies, a system at its height around 1810–1812. The disastrous invasion of Russia in 1812 and defeat at Leipzig in 1813 broke it, and he abdicated in April 1814; his return in the Hundred Days ended at Waterloo in 1815.",
+  "events": [
+   {
+    "year": 1805,
+    "text": "Victory over Austria and Russia at Austerlitz; Treaty of Pressburg",
+    "lonlat": [
+     16.76,
+     49.13
+    ]
+   },
+   {
+    "year": 1806,
+    "text": "Confederation of the Rhine formed; Prussia crushed at Jena–Auerstedt",
+    "lonlat": [
+     11.59,
+     50.93
+    ]
+   },
+   {
+    "year": 1807,
+    "text": "Treaties of Tilsit; Duchy of Warsaw and Kingdom of Westphalia created",
+    "lonlat": [
+     21.88,
+     55.08
+    ]
+   },
+   {
+    "year": 1808,
+    "text": "French invasion of the Iberian Peninsula; Joseph made King of Spain",
+    "lonlat": [
+     -3.7,
+     40.42
+    ]
+   },
+   {
+    "year": 1809,
+    "text": "Treaty of Schönbrunn after victory over Austria; Warsaw enlarged",
+    "lonlat": [
+     16.31,
+     48.18
+    ]
+   },
+   {
+    "year": 1810,
+    "text": "Kingdom of Holland annexed directly to France",
+    "lonlat": [
+     4.9,
+     52.37
+    ]
+   },
+   {
+    "year": 1812,
+    "text": "Grande Armée invades Russia in June; catastrophic retreat",
+    "lonlat": [
+     23.9,
+     54.9
+    ]
+   },
+   {
+    "year": 1813,
+    "text": "Defeat at Leipzig; Confederation of the Rhine dissolved",
+    "lonlat": [
+     12.37,
+     51.34
+    ]
+   },
+   {
+    "year": 1814,
+    "text": "Paris capitulates; Napoleon abdicates at Fontainebleau",
+    "lonlat": [
+     2.7,
+     48.4
+    ]
+   }
+  ],
+  "reigns": [
+   {
+    "name": "Napoleon I (r. 1804–1814, and the Hundred Days of 1815)",
+    "from": 1805,
+    "to": 1814
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia: First French Empire",
+    "url": "https://en.wikipedia.org/wiki/First_French_Empire"
+   },
+   {
+    "title": "Wikipedia: Confederation of the Rhine",
+    "url": "https://en.wikipedia.org/wiki/Confederation_of_the_Rhine"
+   },
+   {
+    "title": "Wikipedia: Duchy of Warsaw",
+    "url": "https://en.wikipedia.org/wiki/Duchy_of_Warsaw"
+   },
+   {
+    "title": "Wikipedia: List of monarchs of the Netherlands",
+    "url": "https://en.wikipedia.org/wiki/List_of_monarchs_of_the_Netherlands"
+   },
+   {
+    "title": "Wikipedia: List of Spanish monarchs",
+    "url": "https://en.wikipedia.org/wiki/List_of_Spanish_monarchs"
+   }
+  ]
+ },
+ {
+  "id": "empire-of-japan",
+  "name": "Empire of Japan",
+  "profile": "empire-of-japan",
+  "chain": [
+   {
+    "clio": "Empire of Japan",
+    "from": 1868,
+    "to": 1945
+   }
+  ],
+  "span": [
+   1868,
+   1945
+  ],
+  "summary": "The Meiji Restoration of 1868 created a modernising, centralised Japan that absorbed Hokkaido and the Ryukyu Islands and then won Taiwan from China (1895), southern Sakhalin and the Kwantung lease from Russia (1905), and Korea (1910). Seizing Manchuria in 1931 and invading China in 1937, it struck at the United States and European colonies in 1941 and briefly ruled an empire of about 7.4 million km² in 1942, before defeat and surrender in 1945.",
+  "events": [
+   {
+    "year": 1868,
+    "text": "Meiji Restoration restores imperial rule",
+    "lonlat": [
+     135.77,
+     35.01
+    ]
+   },
+   {
+    "year": 1869,
+    "text": "Shogunate loyalists of the Ezo Republic surrender at Hakodate",
+    "lonlat": [
+     140.73,
+     41.77
+    ]
+   },
+   {
+    "year": 1879,
+    "text": "Ryukyu Kingdom abolished and annexed as Okinawa Prefecture",
+    "lonlat": [
+     127.68,
+     26.21
+    ]
+   },
+   {
+    "year": 1895,
+    "text": "Treaty of Shimonoseki: Taiwan and Penghu won from China",
+    "lonlat": [
+     130.94,
+     33.96
+    ]
+   },
+   {
+    "year": 1905,
+    "text": "Treaty of Portsmouth: southern Sakhalin and Kwantung lease from Russia",
+    "lonlat": [
+     -70.74,
+     43.08
+    ]
+   },
+   {
+    "year": 1910,
+    "text": "Korea annexed",
+    "lonlat": [
+     126.98,
+     37.57
+    ]
+   },
+   {
+    "year": 1914,
+    "text": "Japan enters the First World War against Germany",
+    "lonlat": null
+   },
+   {
+    "year": 1931,
+    "text": "Mukden Incident: Japanese army seizes Manchuria",
+    "lonlat": [
+     123.43,
+     41.8
+    ]
+   },
+   {
+    "year": 1932,
+    "text": "Puppet state of Manchukuo proclaimed",
+    "lonlat": [
+     125.32,
+     43.82
+    ]
+   },
+   {
+    "year": 1937,
+    "text": "Full-scale war with China begins",
+    "lonlat": [
+     116.22,
+     39.85
+    ]
+   },
+   {
+    "year": 1941,
+    "text": "Attack on Pearl Harbor; war with the United States and Britain",
+    "lonlat": [
+     -157.95,
+     21.35
+    ]
+   },
+   {
+    "year": 1942,
+    "text": "Empire at its greatest extent, about 7.4 million km²",
+    "lonlat": null
+   },
+   {
+    "year": 1945,
+    "text": "Atomic bombings and Soviet invasion; surrender signed 2 September",
+    "lonlat": [
+     139.75,
+     35.35
+    ]
+   }
+  ],
+  "reigns": [
+   {
+    "name": "Meiji Emperor",
+    "from": 1868,
+    "to": 1912
+   },
+   {
+    "name": "Taishō Emperor",
+    "from": 1912,
+    "to": 1926
+   },
+   {
+    "name": "Shōwa Emperor, Hirohito (r. 1926–1989)",
+    "from": 1926,
+    "to": 1945
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia: Empire of Japan",
+    "url": "https://en.wikipedia.org/wiki/Empire_of_Japan"
+   },
+   {
+    "title": "Wikipedia: Treaty of Shimonoseki",
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_Shimonoseki"
+   },
+   {
+    "title": "Wikipedia: Treaty of Portsmouth",
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_Portsmouth"
+   },
+   {
+    "title": "Wikipedia: Manchukuo",
+    "url": "https://en.wikipedia.org/wiki/Manchukuo"
+   },
+   {
+    "title": "Wikipedia: Surrender of Japan",
+    "url": "https://en.wikipedia.org/wiki/Surrender_of_Japan"
+   }
+  ]
+ },
+ {
+  "id": "german-empire",
+  "name": "German Empire",
+  "profile": "germany",
+  "chain": [
+   {
+    "clio": "German Empire",
+    "from": 1871,
+    "to": 1918
+   },
+   {
+    "clio": "German Africa",
+    "from": 1884,
+    "to": 1918
+   }
+  ],
+  "span": [
+   1871,
+   1918
+  ],
+  "summary": "Proclaimed at Versailles in January 1871 after Prussia's victory over France, the German Empire united the German states outside Austria under the Prussian king as emperor. From 1884 it acquired colonies in Africa and the Pacific, the fourth-largest colonial empire of its day, and under Wilhelm II pursued world-power ambitions; defeat in the First World War, despite brief gains in the east in 1918, brought revolution, the emperor's abdication and the loss of all its colonies.",
+  "events": [
+   {
+    "year": 1871,
+    "text": "Empire proclaimed at Versailles on 18 January",
+    "lonlat": [
+     2.12,
+     48.8
+    ]
+   },
+   {
+    "year": 1884,
+    "text": "Protectorates over South West Africa, Togoland and Kamerun",
+    "lonlat": [
+     15.16,
+     -26.65
+    ]
+   },
+   {
+    "year": 1885,
+    "text": "German East Africa established",
+    "lonlat": [
+     39.28,
+     -6.79
+    ]
+   },
+   {
+    "year": 1888,
+    "text": "Year of three emperors: Wilhelm II succeeds",
+    "lonlat": [
+     13.4,
+     52.52
+    ]
+   },
+   {
+    "year": 1890,
+    "text": "Bismarck dismissed; Heligoland–Zanzibar Treaty with Britain",
+    "lonlat": [
+     7.89,
+     54.18
+    ]
+   },
+   {
+    "year": 1897,
+    "text": "German forces occupy Jiaozhou Bay (Kiautschou) in China",
+    "lonlat": [
+     120.38,
+     36.07
+    ]
+   },
+   {
+    "year": 1899,
+    "text": "Micronesian islands bought from Spain; western Samoa annexed",
+    "lonlat": [
+     -171.76,
+     -13.83
+    ]
+   },
+   {
+    "year": 1904,
+    "text": "Herero War begins in South West Africa, leading to genocide",
+    "lonlat": [
+     17.08,
+     -22.56
+    ]
+   },
+   {
+    "year": 1914,
+    "text": "First World War; most colonies soon lost to Allied forces",
+    "lonlat": null
+   },
+   {
+    "year": 1918,
+    "text": "Treaty of Brest-Litovsk (March); abdication of Wilhelm II (November)",
+    "lonlat": [
+     13.4,
+     52.52
+    ]
+   }
+  ],
+  "reigns": [
+   {
+    "name": "Wilhelm I",
+    "from": 1871,
+    "to": 1888
+   },
+   {
+    "name": "Frederick III",
+    "from": 1888,
+    "to": 1888
+   },
+   {
+    "name": "Wilhelm II",
+    "from": 1888,
+    "to": 1918
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia: German Empire",
+    "url": "https://en.wikipedia.org/wiki/German_Empire"
+   },
+   {
+    "title": "Wikipedia: German colonial empire",
+    "url": "https://en.wikipedia.org/wiki/German_colonial_empire"
+   },
+   {
+    "title": "Wikipedia: Treaty of Brest-Litovsk",
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_Brest-Litovsk"
+   }
+  ]
+ },
+ {
+  "id": "soviet-union",
+  "name": "Soviet Union",
+  "profile": "soviet-union",
+  "chain": [
+   {
+    "clio": "Union of Soviet Socialist Republics",
+    "from": 1922,
+    "to": 1991
+   }
+  ],
+  "span": [
+   1922,
+   1991
+  ],
+  "summary": "Formed in December 1922 by the Bolshevik-ruled republics that emerged from the Russian Civil War, the Soviet Union recovered most of the old empire's lands. The 1939 pact with Nazi Germany let it annex eastern Poland, the Baltic states and parts of Finland and Romania; it survived the German invasion of 1941, won in 1945 with further gains, and dominated Eastern Europe as a superpower. Economic stagnation, the Afghan war and Gorbachev's reforms led to the collapse of its satellites in 1989 and its own dissolution in December 1991.",
+  "events": [
+   {
+    "year": 1922,
+    "text": "Treaty on the Creation of the USSR signed on 30 December",
+    "lonlat": [
+     37.62,
+     55.75
+    ]
+   },
+   {
+    "year": 1924,
+    "text": "Death of Lenin; Stalin wins the power struggle",
+    "lonlat": [
+     37.62,
+     55.75
+    ]
+   },
+   {
+    "year": 1939,
+    "text": "Pact with Nazi Germany; Soviet invasion of eastern Poland",
+    "lonlat": null
+   },
+   {
+    "year": 1940,
+    "text": "Annexation of the Baltic states and parts of Finland and Romania",
+    "lonlat": [
+     24.11,
+     56.95
+    ]
+   },
+   {
+    "year": 1941,
+    "text": "Germany invades the Soviet Union on 22 June",
+    "lonlat": null
+   },
+   {
+    "year": 1943,
+    "text": "German 6th Army surrenders at Stalingrad",
+    "lonlat": [
+     44.52,
+     48.7
+    ]
+   },
+   {
+    "year": 1945,
+    "text": "Victory over Germany and Japan; southern Sakhalin and Kurils annexed",
+    "lonlat": [
+     142.73,
+     46.96
+    ]
+   },
+   {
+    "year": 1953,
+    "text": "Death of Stalin",
+    "lonlat": [
+     37.62,
+     55.75
+    ]
+   },
+   {
+    "year": 1979,
+    "text": "Soviet intervention in Afghanistan (withdrawal 1989)",
+    "lonlat": [
+     69.17,
+     34.53
+    ]
+   },
+   {
+    "year": 1985,
+    "text": "Gorbachev comes to power: glasnost and perestroika",
+    "lonlat": [
+     37.62,
+     55.75
+    ]
+   },
+   {
+    "year": 1989,
+    "text": "Soviet-backed regimes fall across Eastern Europe",
+    "lonlat": null
+   },
+   {
+    "year": 1991,
+    "text": "Failed August coup; the USSR is dissolved on 26 December",
+    "lonlat": [
+     37.62,
+     55.75
+    ]
+   }
+  ],
+  "reigns": [
+   {
+    "name": "Vladimir Lenin",
+    "from": 1922,
+    "to": 1924
+   },
+   {
+    "name": "Joseph Stalin",
+    "from": 1924,
+    "to": 1953
+   },
+   {
+    "name": "Georgy Malenkov",
+    "from": 1953,
+    "to": 1955
+   },
+   {
+    "name": "Nikita Khrushchev",
+    "from": 1955,
+    "to": 1964
+   },
+   {
+    "name": "Leonid Brezhnev",
+    "from": 1964,
+    "to": 1982
+   },
+   {
+    "name": "Yuri Andropov",
+    "from": 1982,
+    "to": 1984
+   },
+   {
+    "name": "Konstantin Chernenko",
+    "from": 1984,
+    "to": 1985
+   },
+   {
+    "name": "Mikhail Gorbachev",
+    "from": 1985,
+    "to": 1991
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia: Soviet Union",
+    "url": "https://en.wikipedia.org/wiki/Soviet_Union"
+   },
+   {
+    "title": "Wikipedia: List of leaders of the Soviet Union",
+    "url": "https://en.wikipedia.org/wiki/List_of_leaders_of_the_Soviet_Union"
+   },
+   {
+    "title": "Wikipedia: Molotov–Ribbentrop Pact",
+    "url": "https://en.wikipedia.org/wiki/Molotov%E2%80%93Ribbentrop_Pact"
+   },
+   {
+    "title": "Wikipedia: Battle of Stalingrad",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Stalingrad"
+   },
+   {
+    "title": "Wikipedia: Soviet–Japanese War",
+    "url": "https://en.wikipedia.org/wiki/Soviet%E2%80%93Japanese_War"
+   },
+   {
+    "title": "Wikipedia: Soviet–Afghan War",
+    "url": "https://en.wikipedia.org/wiki/Soviet%E2%80%93Afghan_War"
+   }
+  ]
+ }
+]

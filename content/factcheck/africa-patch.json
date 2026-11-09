@@ -1,0 +1,458 @@
+[
+ {
+  "file": "content/eras/b-medieval.json",
+  "item": 500,
+  "field": "regions.northern-africa",
+  "old": "In West Africa the kingdom of Ghana is growing rich on trans-Saharan trade in gold and salt.",
+  "new": "In West Africa the kingdom of Ghana may already be taking shape, though its great trans-Saharan gold trade is not recorded until the 700s.",
+  "source": "UNESCO General History of Africa III (1988), ch. 18, p. 475 (Kumbi Saleh's gold trade 'begins not later than the eighth century'; al-Fazari's reference late 8th c.) — archive.org/details/general-history-of-africa-vol-3"
+ },
+ {
+  "file": "content/eras/b-medieval.json",
+  "item": 600,
+  "field": "regions.northern-africa",
+  "old": "The kingdom of Ghana prospers from gold and salt trade in West Africa.",
+  "new": "In West Africa the kingdom of Ghana is probably emerging, though written records of its gold trade begin only in the 700s.",
+  "source": "UNESCO General History of Africa III (1988), ch. 18, p. 475 — archive.org/details/general-history-of-africa-vol-3"
+ },
+ {
+  "file": "content/eras/b-medieval.json",
+  "item": 900,
+  "field": "regions.northern-africa",
+  "old": "in the Niger delta region",
+  "new": "in south-eastern Nigeria, east of the lower Niger",
+  "source": "UNESCO General History of Africa III (1988), ch. 18, p. 477 (Igbo-Ukwu lies c. 35 km from Onitsha on the Niger, not in the delta) — archive.org/details/general-history-of-africa-vol-3"
+ },
+ {
+  "file": "content/eras/b-medieval.json",
+  "item": 1100,
+  "field": "regions.northern-africa",
+  "old": "whose king Hummay converted to Islam around 1085",
+  "new": "whose Muslim king Hummay (c. 1075–1086) founded the Sayfawa dynasty",
+  "source": "UNESCO General History of Africa III (1988), ch. 15 (D. Lange), pp. 459-60: Hummay came to power c. 1075 (r. c. 1075-86) and 'was not the first Muslim ruler of Kanem' — archive.org/details/general-history-of-africa-vol-3"
+ },
+ {
+  "file": "content/eras/c-earlymodern.json",
+  "item": 1783,
+  "field": "regions.southern-africa",
+  "old": "The Omani Busaidi rulers controlled Zanzibar and the Swahili coast",
+  "new": "The Omani Busaidi rulers held Zanzibar and claimed the Swahili coast, though their Mazrui governors in Mombasa acted almost independently",
+  "source": "UNESCO General History of Africa VI (1989), ch. 9 (A. I. Salim), pp. 211-12 — archive.org/details/general_history_africa_vi"
+ },
+ {
+  "file": "content/eras/c-earlymodern.json",
+  "item": 1783,
+  "field": "regions.southern-africa",
+  "old": "by Andrianampoinimerina from about 1787",
+  "new": "by Andrianampoinimerina from about 1785",
+  "source": "UNESCO General History of Africa VI (1989), ch. 16, p. 413 ('In about 1785 Ramboasalama ... proclaimed himself king under the name of Andrianampoinimerina')"
+ },
+ {
+  "file": "content/eras/c-earlymodern.json",
+  "item": 1800,
+  "field": "regions.southern-africa",
+  "old": "and Oman ruled Zanzibar and the Swahili coast",
+  "new": "and Oman held Zanzibar and Kilwa, while its Mazrui governors in Mombasa were virtually independent",
+  "source": "UNESCO General History of Africa VI (1989), ch. 9, pp. 211-12 (c. 1800 Omani presence 'significantly evident in only three main centres: Mombasa, Zanzibar and Kilwa'; Mazrui autonomous)"
+ },
+ {
+  "file": "content/eras/a-ancient.json",
+  "item": -100,
+  "field": "powers[6].extent",
+  "old": "Egypt and Cyprus",
+  "new": "Egypt (Cyprus was held by his exiled brother Ptolemy IX)",
+  "source": "Wikipedia: Ptolemy IX Soter II (ruled Cyprus 105-88 BC; Cyrenaica under Ptolemy Apion until 96 BC) — https://en.wikipedia.org/wiki/Ptolemy_IX_Soter_II"
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "kingdom-of-kush",
+  "field": "summary",
+  "old": "Meroë declined in the 4th century CE, and Aksum's armies finished it around 350.",
+  "new": "Meroë declined in the 4th century CE and seems to have already collapsed when Aksum's armies raided the region around 350.",
+  "source": "UNESCO General History of Africa II (1981), ch. 10 (Hakem/Leclant), p. 293: 'the Meroitic kingdom had already collapsed at the time of Ezana's campaign'"
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "kingdom-of-aksum",
+  "field": "peak.year",
+  "old": 525,
+  "new": 350,
+  "source": "Turchin, Adams & Hall 2006 (1.25M km² for 350), via Wikipedia: List of largest empires"
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "kingdom-of-aksum",
+  "field": "peak.note",
+  "old": "Under Kaleb, northern Ethiopia, Eritrea, parts of Nubia and Yemen across the Red Sea",
+  "new": "c. 1.25M km² around 350 under Ezana (Turchin, Adams & Hall 2006): northern Ethiopia, Eritrea and parts of Nubia; in the 520s Kaleb also ruled Yemen across the Red Sea",
+  "source": "Turchin, Adams & Hall 2006, via Wikipedia: List of largest empires"
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "ghana-empire",
+  "field": "rulers[0].reign",
+  "old": "c. 4th century (oral tradition)",
+  "new": "date unknown (tradition; Delafosse placed him in the late 8th century)",
+  "source": "UNESCO General History of Africa III (1988), ch. 13 (B. Barry), p. 129 — archive.org/details/general-history-of-africa-vol-3"
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "mali-empire",
+  "field": "peak.areaKm2",
+  "old": 1300000,
+  "new": 1100000,
+  "source": "Taagepera 1997 (1.1M km² for 1380), via Wikipedia: List of largest empires"
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "mali-empire",
+  "field": "peak.note",
+  "old": "to beyond Timbuktu and Gao",
+  "new": "to beyond Timbuktu and Gao; c. 1.1M km² (Taagepera 1997, for c. 1380)",
+  "source": "Taagepera 1997, via Wikipedia: List of largest empires"
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "fatimid-caliphate",
+  "field": "rulers[3].note",
+  "old": "Longest reign of any Muslim ruler",
+  "new": "Longest reign of any caliph",
+  "source": "Wikipedia: Al-Mustansir Billah ('the longest of all the caliphs'); a longer reign by a Muslim monarch (Hassanal Bolkiah of Brunei, since 1967) now exists — https://en.wikipedia.org/wiki/Al-Mustansir_Billah"
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "fatimid-caliphate",
+  "field": "peak.note",
+  "old": "North Africa, Egypt, Sicily, the Levant and the Hejaz",
+  "new": "North Africa, Egypt, Sicily, the Levant and the Hejaz; Taagepera (1997) and Turchin et al. (2006) give c. 4.1M km² for 969, counting nominal Saharan lands",
+  "source": "Taagepera 1997; Turchin, Adams & Hall 2006, via Wikipedia: List of largest empires"
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "almohad-caliphate",
+  "field": "peak.note",
+  "old": "From the Atlantic to Tripolitania, plus southern Spain",
+  "new": "From the Atlantic to Tripolitania, plus southern Spain; c. 2.0–2.3M km² (Taagepera 1997; Turchin et al. 2006)",
+  "source": "Taagepera 1997 (2.3M, 1150); Turchin et al. 2006 (2.0M, 1200), via Wikipedia: List of largest empires"
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "mamluk-sultanate",
+  "field": "peak.note",
+  "old": "Egypt, Syria, Palestine and the Hejaz",
+  "new": "Egypt, Syria, Palestine and the Hejaz; c. 2.1M km² (Taagepera 1997)",
+  "source": "Taagepera 1997, via Wikipedia: List of largest empires"
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "ptolemaic-kingdom",
+  "field": "peak.note",
+  "old": "Under Ptolemy III: Egypt, Cyrenaica, Cyprus, the southern Levant and Aegean outposts",
+  "new": "Under Ptolemy III: Egypt, Cyrenaica, Cyprus, the southern Levant and Aegean outposts; c. 1.0M km² (Taagepera 1979, for c. 301 BCE)",
+  "source": "Taagepera 1979, via Wikipedia: List of largest empires"
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "carthaginian-empire",
+  "field": "peak.note",
+  "old": "western Sicily and the Balearics",
+  "new": "western Sicily and the Balearics; Taagepera (1979) gives c. 0.3M km² for c. 220 BCE, when Barcid Spain had replaced the lost islands",
+  "source": "Taagepera 1979, via Wikipedia: List of largest empires"
+ },
+ {
+  "file": "content/empires/b-late.json",
+  "item": "songhai-empire",
+  "field": "peak.areaKm2",
+  "old": 1400000,
+  "new": 800000,
+  "source": "Taagepera 1997 (0.8M km² for 1550), via Wikipedia: List of largest empires"
+ },
+ {
+  "file": "content/empires/b-late.json",
+  "item": "songhai-empire",
+  "field": "peak.year",
+  "old": 1500,
+  "new": 1550,
+  "source": "Taagepera 1997, via Wikipedia: List of largest empires"
+ },
+ {
+  "file": "content/empires/b-late.json",
+  "item": "songhai-empire",
+  "field": "peak.note",
+  "old": "Along the Niger from Senegal's borders to present-day Nigeria",
+  "new": "Along the Niger from Senegal's borders to present-day Nigeria; c. 0.8M km² (Taagepera 1997, for c. 1550)",
+  "source": "Taagepera 1997, via Wikipedia: List of largest empires"
+ },
+ {
+  "file": "content/empires/b-late.json",
+  "item": "morocco",
+  "field": "rulers[1].note",
+  "old": "Victor at the Battle of the Three Kings",
+  "new": "Proclaimed sultan on the field of the Battle of the Three Kings",
+  "source": "UNESCO General History of Africa V (1992), ch. 8, pp. 208-9 (Sultan Abd al-Malik died during the battle; Ahmad 'proclaimed king after the victory')"
+ },
+ {
+  "file": "content/empires/b-late.json",
+  "item": "morocco",
+  "field": "summary",
+  "old": "Ahmad al-Mansur, victor over Portugal at the Battle of the Three Kings in 1578,",
+  "new": "Ahmad al-Mansur, who took the throne when his brother Abd al-Malik died during the victory over Portugal at the Battle of the Three Kings in 1578,",
+  "source": "UNESCO General History of Africa V (1992), ch. 8, pp. 208-9"
+ },
+ {
+  "file": "content/empires/b-late.json",
+  "item": "merina-kingdom",
+  "field": "rulers[1].reign",
+  "old": "c. 1787–1810",
+  "new": "c. 1785–1810",
+  "source": "UNESCO General History of Africa VI (1989), ch. 16, p. 413 ('In about 1785')"
+ },
+ {
+  "file": "content/empires/b-late.json",
+  "item": "merina-kingdom",
+  "field": "summary",
+  "old": "Around 1787 Andrianampoinimerina",
+  "new": "Around 1785 Andrianampoinimerina",
+  "source": "UNESCO General History of Africa VI (1989), ch. 16, p. 413"
+ },
+ {
+  "file": "content/eras/b-medieval.json",
+  "item": 500,
+  "addSource": {
+   "title": "UNESCO General History of Africa, vol. III: Africa from the Seventh to the Eleventh Century (ed. M. El Fasi & I. Hrbek, 1988)",
+   "url": "https://archive.org/details/general-history-of-africa-vol-3"
+  }
+ },
+ {
+  "file": "content/eras/b-medieval.json",
+  "item": 600,
+  "addSource": {
+   "title": "UNESCO General History of Africa, vol. III: Africa from the Seventh to the Eleventh Century (ed. M. El Fasi & I. Hrbek, 1988)",
+   "url": "https://archive.org/details/general-history-of-africa-vol-3"
+  }
+ },
+ {
+  "file": "content/eras/b-medieval.json",
+  "item": 800,
+  "addSource": {
+   "title": "UNESCO General History of Africa, vol. III: Africa from the Seventh to the Eleventh Century (ed. M. El Fasi & I. Hrbek, 1988)",
+   "url": "https://archive.org/details/general-history-of-africa-vol-3"
+  }
+ },
+ {
+  "file": "content/eras/b-medieval.json",
+  "item": 900,
+  "addSource": {
+   "title": "UNESCO General History of Africa, vol. III: Africa from the Seventh to the Eleventh Century (ed. M. El Fasi & I. Hrbek, 1988)",
+   "url": "https://archive.org/details/general-history-of-africa-vol-3"
+  }
+ },
+ {
+  "file": "content/eras/b-medieval.json",
+  "item": 1100,
+  "addSource": {
+   "title": "UNESCO General History of Africa, vol. III: Africa from the Seventh to the Eleventh Century (ed. M. El Fasi & I. Hrbek, 1988)",
+   "url": "https://archive.org/details/general-history-of-africa-vol-3"
+  }
+ },
+ {
+  "file": "content/eras/b-medieval.json",
+  "item": 1100,
+  "addSource": {
+   "title": "Wikipedia: Kingdom of Mapungubwe (citing Huffman 2005; Chirikure et al. 2015)",
+   "url": "https://en.wikipedia.org/wiki/Kingdom_of_Mapungubwe"
+  }
+ },
+ {
+  "file": "content/eras/b-medieval.json",
+  "item": 1200,
+  "addSource": {
+   "title": "Wikipedia: Kingdom of Mapungubwe (citing Huffman 2005; Chirikure et al. 2015)",
+   "url": "https://en.wikipedia.org/wiki/Kingdom_of_Mapungubwe"
+  }
+ },
+ {
+  "file": "content/eras/b-medieval.json",
+  "item": 1200,
+  "addSource": {
+   "title": "South African History Online: Mapungubwe",
+   "url": "https://www.sahistory.org.za/article/mapungubwe"
+  }
+ },
+ {
+  "file": "content/eras/c-earlymodern.json",
+  "item": 1783,
+  "addSource": {
+   "title": "UNESCO General History of Africa, vol. VI: Africa in the Nineteenth Century until the 1880s (ed. J. F. Ade Ajayi, 1989)",
+   "url": "https://archive.org/details/general_history_africa_vi"
+  }
+ },
+ {
+  "file": "content/eras/c-earlymodern.json",
+  "item": 1800,
+  "addSource": {
+   "title": "UNESCO General History of Africa, vol. VI: Africa in the Nineteenth Century until the 1880s (ed. J. F. Ade Ajayi, 1989)",
+   "url": "https://archive.org/details/general_history_africa_vi"
+  }
+ },
+ {
+  "file": "content/eras/d-modern.json",
+  "item": 1815,
+  "addSource": {
+   "title": "UNESCO General History of Africa, vol. VI: Africa in the Nineteenth Century until the 1880s (ed. J. F. Ade Ajayi, 1989)",
+   "url": "https://archive.org/details/general_history_africa_vi"
+  }
+ },
+ {
+  "file": "content/eras/d-modern.json",
+  "item": 1815,
+  "addSource": {
+   "title": "Wikipedia: Said bin Sultan",
+   "url": "https://en.wikipedia.org/wiki/Said_bin_Sultan"
+  }
+ },
+ {
+  "file": "content/eras/a-ancient.json",
+  "item": -100,
+  "addSource": {
+   "title": "Wikipedia: Ptolemy IX Soter II",
+   "url": "https://en.wikipedia.org/wiki/Ptolemy_IX_Soter_II"
+  }
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "kingdom-of-kush",
+  "addSource": {
+   "title": "UNESCO General History of Africa, vol. II: Ancient Civilizations of Africa (ed. G. Mokhtar, 1981)",
+   "url": "https://archive.org/details/general-history-of-africa-vol-2"
+  }
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "kingdom-of-aksum",
+  "addSource": {
+   "title": "UNESCO General History of Africa, vol. II: Ancient Civilizations of Africa (ed. G. Mokhtar, 1981)",
+   "url": "https://archive.org/details/general-history-of-africa-vol-2"
+  }
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "kingdom-of-aksum",
+  "addSource": {
+   "title": "Wikipedia: List of largest empires (Taagepera 1979, 1997; Turchin, Adams & Hall 2006)",
+   "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+  }
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "ghana-empire",
+  "addSource": {
+   "title": "UNESCO General History of Africa, vol. III: Africa from the Seventh to the Eleventh Century (ed. M. El Fasi & I. Hrbek, 1988)",
+   "url": "https://archive.org/details/general-history-of-africa-vol-3"
+  }
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "mali-empire",
+  "addSource": {
+   "title": "UNESCO General History of Africa, vol. IV: Africa from the Twelfth to the Sixteenth Century (ed. D. T. Niane, 1984)",
+   "url": "https://archive.org/details/unesco_general_history_africa_iv"
+  }
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "mali-empire",
+  "addSource": {
+   "title": "Wikipedia: List of largest empires (Taagepera 1979, 1997; Turchin, Adams & Hall 2006)",
+   "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+  }
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "kanem-bornu",
+  "addSource": {
+   "title": "UNESCO General History of Africa, vol. III: Africa from the Seventh to the Eleventh Century (ed. M. El Fasi & I. Hrbek, 1988)",
+   "url": "https://archive.org/details/general-history-of-africa-vol-3"
+  }
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "fatimid-caliphate",
+  "addSource": {
+   "title": "Wikipedia: Al-Mustansir Billah",
+   "url": "https://en.wikipedia.org/wiki/Al-Mustansir_Billah"
+  }
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "fatimid-caliphate",
+  "addSource": {
+   "title": "Wikipedia: List of largest empires (Taagepera 1979, 1997; Turchin, Adams & Hall 2006)",
+   "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+  }
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "almohad-caliphate",
+  "addSource": {
+   "title": "Wikipedia: List of largest empires (Taagepera 1979, 1997; Turchin, Adams & Hall 2006)",
+   "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+  }
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "mamluk-sultanate",
+  "addSource": {
+   "title": "Wikipedia: List of largest empires (Taagepera 1979, 1997; Turchin, Adams & Hall 2006)",
+   "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+  }
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "ptolemaic-kingdom",
+  "addSource": {
+   "title": "Wikipedia: List of largest empires (Taagepera 1979, 1997; Turchin, Adams & Hall 2006)",
+   "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+  }
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "carthaginian-empire",
+  "addSource": {
+   "title": "Wikipedia: List of largest empires (Taagepera 1979, 1997; Turchin, Adams & Hall 2006)",
+   "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+  }
+ },
+ {
+  "file": "content/empires/b-late.json",
+  "item": "songhai-empire",
+  "addSource": {
+   "title": "Wikipedia: List of largest empires (Taagepera 1979, 1997; Turchin, Adams & Hall 2006)",
+   "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+  }
+ },
+ {
+  "file": "content/empires/b-late.json",
+  "item": "morocco",
+  "addSource": {
+   "title": "UNESCO General History of Africa, vol. V: Africa from the Sixteenth to the Eighteenth Century (ed. B. A. Ogot, 1992)",
+   "url": "https://archive.org/details/general-history-of-africa-vol-5"
+  }
+ },
+ {
+  "file": "content/empires/b-late.json",
+  "item": "merina-kingdom",
+  "addSource": {
+   "title": "UNESCO General History of Africa, vol. VI: Africa in the Nineteenth Century until the 1880s (ed. J. F. Ade Ajayi, 1989)",
+   "url": "https://archive.org/details/general_history_africa_vi"
+  }
+ },
+ {
+  "file": "content/empires/b-late.json",
+  "item": "omani-empire",
+  "addSource": {
+   "title": "UNESCO General History of Africa, vol. VI: Africa in the Nineteenth Century until the 1880s (ed. J. F. Ade Ajayi, 1989)",
+   "url": "https://archive.org/details/general_history_africa_vi"
+  }
+ }
+]

@@ -1,0 +1,1810 @@
+[
+ {
+  "year": -3000,
+  "title": "The First Kings",
+  "age": "Early Bronze Age",
+  "overview": "Around 3000 BCE the first states in history have only just appeared. In Egypt, the Nile valley has recently been united under a single king, and the pharaohs of the First Dynasty rule from Memphis, building tombs at Abydos and Saqqara. In southern Mesopotamia, Sumerian cities such as Uruk and Ur have invented writing, first as clay-tablet accounts and soon as cuneiform script. Elam in south-west Iran is developing its own Proto-Elamite writing, and farming towns along the Indus are growing toward the great Harappan cities to come. Elsewhere, almost everyone still lives in villages or bands. Herders of the Yamnaya culture ride the grasslands north of the Black Sea with ox-drawn wagons, Neolithic farmers in Britain are digging the first ditch at Stonehenge, and on the coast of Peru the Norte Chico people are beginning to build monumental platforms. Copper and bronze tools are spreading, but stone tools are still the norm for most of humanity.",
+  "regions": {
+   "southern-africa": "Africa south of the equator is home to hunter-gatherers, ancestors of today's San and other Khoisan-speaking peoples, who have lived here for tens of thousands of years. Bantu-speaking farmers have not yet begun their great migration; their homeland is still in West-Central Africa around present-day Cameroon and Nigeria. Rock art and stone tools record a long-established way of life.",
+   "northern-africa": "Egypt has just been unified, traditionally by Narmer (Menes), and First Dynasty kings rule the Nile valley from Memphis. South of the First Cataract live the A-Group people of Lower Nubia, trading with Egypt. The Sahara, green and dotted with lakes a few thousand years earlier, is drying out, pushing cattle herders toward the Nile and the Sahel.",
+   "europe": "Europe is a patchwork of Neolithic and Copper Age farming peoples. Megalith builders raise tombs and stone circles along the Atlantic coast, and the first earthwork at Stonehenge is dug around this time. On Crete, early Minoan villages and the Cycladic islanders are trading by sea, while Yamnaya herders dominate the steppe of Ukraine and southern Russia.",
+   "middle-east-south-asia": "Southern Mesopotamia is a land of rival Sumerian city-states such as Uruk, Ur and Kish, each ruled by its own king or temple elite, with writing newly invented. Elam, centred on Susa, is its eastern neighbour, while Semitic-speaking peoples live across Syria and Arabia and probably the ancestors of the Hurrians in the northern hills. In the Indus valley, Early Harappan farming towns are laying the groundwork for one of the world's first great urban civilizations.",
+   "north-central-asia": "The Afanasevo culture, probably related to the Yamnaya herders of the west, raises cattle and sheep in the Altai and southern Siberia. In the oases of southern Turkmenistan, Namazga farming towns grow wheat and barley with irrigation. Across the vast forests of Siberia, people live as hunters, fishers and gatherers.",
+   "east-asia": "There are no states yet in China. Late Neolithic cultures such as Yangshao on the Yellow River give way to the Longshan, while the Liangzhu culture of the lower Yangtze builds a walled centre and carves fine jade. In Japan the Jōmon people make some of the world's oldest pottery, and the Dapenkeng culture farms and fishes on Taiwan.",
+   "southeast-asia": "Mainland Southeast Asia is home to hunter-gatherers and the first small farming communities. In Taiwan and southern China, Austronesian-speaking peoples are preparing the great seaborne migrations that will soon carry them to the Philippines and Indonesia. Rice farming is only beginning to spread south from the Yangtze region.",
+   "northern-north-america": "Canada and Alaska are inhabited by Archaic hunting, fishing and gathering peoples who follow the seasons, with caribou and salmon important in the north. The far eastern Arctic and Greenland are still largely empty of people; Paleo-Eskimo hunters will cross from Alaska only around 2500 BCE.",
+   "southern-north-america": "Across North America, Archaic peoples hunt, fish and gather wild plants, and in Louisiana some have already built earthen mounds such as Watson Brake. In Mexico, people grow early, small-cobbed maize alongside squash, but still move with the seasons. Villages and pottery are still centuries away.",
+   "northern-south-america": "On the dry coast of Peru, the Norte Chico (Caral-Supe) people are beginning to build platform mounds and sunken plazas, among the oldest monuments in the Americas. In coastal Ecuador, the Valdivia culture lives in villages and makes some of the earliest pottery in the Americas. The Amazon basin is home to foragers and early cultivators.",
+   "southern-cone": "The southern cone is inhabited by hunter-gatherers. On the Atacama coast of northern Chile, the Chinchorro fishing people have been mummifying their dead for two thousand years, long before the Egyptians. Guanaco hunters roam the Pampas and Patagonia, and shellfish gatherers live along the coasts of Tierra del Fuego.",
+   "australasia": "Aboriginal Australians, who arrived at least 50,000 years ago, live as hunter-gatherers across the whole continent, with Tasmania cut off by rising seas since about 10,000 BCE. In the highlands of New Guinea, farmers have been growing taro and bananas for thousands of years. The remote Pacific islands and New Zealand have not yet been reached by humans."
+  },
+  "powers": [
+   {
+    "name": "Egypt (First Dynasty)",
+    "map": "Egypt",
+    "ruler": "First Dynasty kings (e.g. Aha or Djer)",
+    "capital": "Memphis",
+    "extent": "The Nile valley and Delta from the First Cataract to the Mediterranean"
+   },
+   {
+    "name": "Sumerian city-states",
+    "map": "Ur",
+    "ruler": "Kings and temple elites of Uruk, Ur, Kish and other cities",
+    "capital": "Uruk (largest city)",
+    "extent": "Southern Mesopotamia between the Tigris and Euphrates"
+   },
+   {
+    "name": "Elam",
+    "map": "Elam",
+    "ruler": "Proto-Elamite rulers (names unknown)",
+    "capital": "Susa",
+    "extent": "South-western Iran, from Khuzestan into the Zagros highlands"
+   },
+   {
+    "name": "Early Harappan culture",
+    "map": "Indus valley civilization",
+    "ruler": null,
+    "capital": null,
+    "extent": "Farming towns across the Indus basin in present-day Pakistan and north-west India"
+   },
+   {
+    "name": "Yamnaya culture",
+    "map": "Yamnaya culture",
+    "ruler": null,
+    "capital": null,
+    "extent": "Pastoral herders across the steppe north of the Black and Caspian seas"
+   },
+   {
+    "name": "Syrian city-states",
+    "map": "city-states",
+    "ruler": null,
+    "capital": null,
+    "extent": "Early towns of northern Syria and the upper Euphrates"
+   },
+   {
+    "name": "Norte Chico (Caral-Supe)",
+    "map": "Norte Chico",
+    "ruler": null,
+    "capital": null,
+    "extent": "River valleys of the north-central coast of Peru"
+   },
+   {
+    "name": "Minoan Crete",
+    "map": "Minoan",
+    "ruler": null,
+    "capital": null,
+    "extent": "Early Bronze Age villages on Crete"
+   }
+  ],
+  "events": [
+   {
+    "year": -3500,
+    "text": "Wheeled carts appear in Mesopotamia and Europe (c. 3500 BCE)"
+   },
+   {
+    "year": -3300,
+    "text": "Ötzi the Iceman dies in the Alps (c. 3300 BCE)"
+   },
+   {
+    "year": -3200,
+    "text": "Writing is invented in Sumer, first as accounting tablets at Uruk (c. 3200 BCE)"
+   },
+   {
+    "year": -3100,
+    "text": "Upper and Lower Egypt are united, traditionally by Narmer (c. 3100 BCE)"
+   },
+   {
+    "year": -3000,
+    "text": "First circular ditch and bank dug at Stonehenge (c. 3000 BCE)"
+   },
+   {
+    "year": -3000,
+    "text": "Norte Chico people begin monumental building on the Peruvian coast (c. 3000 BCE)"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia: Narmer",
+    "url": "https://en.wikipedia.org/wiki/Narmer"
+   },
+   {
+    "title": "Wikipedia: Hor-Aha",
+    "url": "https://en.wikipedia.org/wiki/Hor-Aha"
+   },
+   {
+    "title": "Wikipedia: Stonehenge",
+    "url": "https://en.wikipedia.org/wiki/Stonehenge"
+   },
+   {
+    "title": "Wikipedia: Caral–Supe civilization",
+    "url": "https://en.wikipedia.org/wiki/Caral%E2%80%93Supe_civilization"
+   },
+   {
+    "title": "Wikipedia: Hurrians",
+    "url": "https://en.wikipedia.org/wiki/Hurrians"
+   },
+   {
+    "title": "Smith (2005), Reassessing Coxcatlan Cave, PNAS",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1172257"
+   },
+   {
+    "title": "Smith (2001), Documenting plant domestication, PNAS 98(4)",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC33375"
+   },
+   {
+    "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. I: The Vedic Age (Internet Archive)",
+    "url": "https://archive.org/details/vedicage00bhar"
+   }
+  ]
+ },
+ {
+  "year": -2000,
+  "title": "Cities of Bronze",
+  "age": "Middle Bronze Age",
+  "overview": "By 2000 BCE, cities and kingdoms stretch from the Mediterranean to the Indus. Egypt has been reunited after a period of breakdown, and the Theban Eleventh Dynasty is about to give way to the Twelfth, founded by Amenemhat I, which will lead Egypt's classical Middle Kingdom. In Mesopotamia, the great Third Dynasty of Ur has just fallen: in 2004 BCE the Elamites sacked Ur and carried off its last king, and power is now shared among cities such as Isin and Larsa, many ruled by Amorite chiefs. The Indus civilization, with its planned cities of Mohenjo-daro and Harappa, is at its height but about to decline. On Crete, the Minoans are building their first palaces, and on the Eurasian steppe the Sintashta people are pioneering the light, spoked-wheel chariot. In China, the Xia, remembered as the first dynasty, is traditionally ruling the Yellow River plain, while most of the world's people still live as farmers, herders and foragers.",
+  "regions": {
+   "southern-africa": "Southern Africa is home to Khoisan-speaking hunter-gatherers. Bantu-speaking farmers, growing yams and oil palms, are slowly beginning to move out of their homeland in Cameroon into the equatorial rainforest. Metal-working has not yet reached the region.",
+   "northern-africa": "Egypt has been reunited by Mentuhotep II of Thebes, whose Eleventh Dynasty successors still rule; Amenemhat I will found the Twelfth Dynasty around 1991 BCE. Upriver in Nubia the kingdom of Kerma is growing rich on trade in gold, ivory and ebony. The drying Sahara is home to cattle-herding nomads, and Berber-speaking peoples live along the Maghreb coast.",
+   "europe": "Europe is entering the Bronze Age. The Únětice culture of central Europe works bronze and trades amber, the Beaker people have spread from Iberia to Britain, and Stonehenge stands complete with its great sarsens. On Crete, the Minoans are building their first palace at Knossos, while the Catacomb culture herders live on the Pontic steppe.",
+   "middle-east-south-asia": "After the fall of Ur in 2004 BCE, southern Mesopotamia is split among rival cities, chiefly Isin under Ishbi-Erra and Larsa, while Amorite peoples settle across Mesopotamia and Syria. Elam, under its Shimashki kings, is at a peak of power, and Assur is a small trading city about to set up merchant colonies in Anatolia. The Indus civilization is at its height with cities such as Mohenjo-daro and Harappa, and the Bactria-Margiana (Oxus) culture builds fortified towns in Afghanistan and Turkmenistan.",
+   "north-central-asia": "On the steppe east of the Urals, the Sintashta people build fortified settlements, smelt copper and bury warriors with the earliest true chariots. The wider Andronovo culture of horse-riding, cattle-herding peoples is beginning to spread across Kazakhstan toward Siberia. In the northern forests, Finno-Ugric and Paleo-Siberian peoples live by hunting and fishing.",
+   "east-asia": "China's first dynasty, the Xia, is traditionally said to rule the middle Yellow River at this time, though its history is still debated; the Erlitou culture that may represent it emerges around 1900 BCE. Late Longshan towns with rammed-earth walls dot the northern plain. Korea is home to Neolithic farming and fishing villages, and Japan to the Jōmon foragers.",
+   "southeast-asia": "Rice-farming peoples speaking Austro-Asiatic languages are spreading from southern China into Vietnam and Thailand, where villages such as Ban Non Wat will be founded within a few centuries. Austronesian seafarers have reached the Philippines and are moving into Indonesia. Tai- and Tibeto-Burman-speaking peoples live in the hills to the north.",
+   "northern-north-america": "Paleo-Eskimo peoples of the Arctic Small Tool tradition have recently spread east from Alaska across the Canadian Arctic to Greenland, where the Saqqaq culture hunts seals and caribou. Further south, Archaic peoples hunt and fish across the forests and plains of Canada.",
+   "southern-north-america": "Across North America, Archaic peoples hunt and gather, and some coastal groups in Georgia and South Carolina build great rings of shell. In Mesoamerica, farmers growing maize are settling into the first permanent villages, and pottery appears on the Pacific coast of Chiapas around 1900 BCE.",
+   "northern-south-america": "The Norte Chico civilization of coastal Peru, with its pyramid city at Caral, is in its last centuries before decline, while highland temples like Kotosh flourish. Valdivia villagers farm coastal Ecuador, and the Amazon is home to foragers and early cultivators.",
+   "southern-cone": "The Chinchorro fishing people of the Atacama coast still practise their elaborate mummification. Elsewhere, hunter-gatherers hunt guanaco on the Pampas and in Patagonia, and canoe peoples gather shellfish in the channels of the far south.",
+   "australasia": "Aboriginal Australians live across the continent as hunter-gatherers, and the dingo will arrive from Southeast Asia within the next few centuries. Papuan farmers cultivate the New Guinea highlands. Tasmanians live in isolation, and the remote Pacific islands remain unsettled."
+  },
+  "powers": [
+   {
+    "name": "Egypt (Middle Kingdom)",
+    "map": "Egypt",
+    "ruler": "Eleventh Dynasty kings (Mentuhotep III or IV), soon followed by Amenemhat I",
+    "capital": "Thebes",
+    "extent": "The Nile valley from the Delta to the First Cataract"
+   },
+   {
+    "name": "Isin and Larsa (successors of Ur III)",
+    "map": "Ur",
+    "ruler": "Ishbi-Erra of Isin",
+    "capital": "Isin",
+    "extent": "The cities of Sumer and Akkad in southern Mesopotamia"
+   },
+   {
+    "name": "Elam (Shimashki dynasty)",
+    "map": "Elam",
+    "ruler": "Shimashki kings (Kindattu sacked Ur in 2004 BCE)",
+    "capital": "Susa",
+    "extent": "South-western Iran and, briefly, parts of southern Mesopotamia"
+   },
+   {
+    "name": "Indus Valley Civilization",
+    "map": "Indus valley civilization",
+    "ruler": null,
+    "capital": "Mohenjo-daro and Harappa (largest cities)",
+    "extent": "The Indus basin, Punjab and Gujarat, from Afghanistan to the Arabian Sea"
+   },
+   {
+    "name": "Xia (traditional first dynasty)",
+    "map": "Xia",
+    "ruler": "Xia kings (traditional; existence debated)",
+    "capital": "Middle Yellow River valley",
+    "extent": "Part of the middle Yellow River plain in Henan"
+   },
+   {
+    "name": "Minoan civilization",
+    "map": "Minoan",
+    "ruler": "Palace rulers (names unknown)",
+    "capital": "Knossos",
+    "extent": "Crete and trading links across the Aegean"
+   },
+   {
+    "name": "Kingdom of Kerma",
+    "map": "Kerma",
+    "ruler": "Kings of Kerma (names unknown)",
+    "capital": "Kerma",
+    "extent": "Upper Nubia around the Third Cataract of the Nile"
+   },
+   {
+    "name": "Bactria-Margiana (Oxus) culture",
+    "map": "Oxus",
+    "ruler": null,
+    "capital": null,
+    "extent": "Fortified oasis towns in northern Afghanistan and Turkmenistan"
+   },
+   {
+    "name": "Sintashta culture",
+    "map": "Sintashta",
+    "ruler": null,
+    "capital": null,
+    "extent": "Fortified settlements on the steppe east of the southern Urals"
+   }
+  ],
+  "events": [
+   {
+    "year": -2112,
+    "text": "Ur-Nammu founds the Third Dynasty of Ur and issues one of the earliest law codes (c. 2112 BCE)"
+   },
+   {
+    "year": -2040,
+    "text": "Mentuhotep II reunites Egypt, beginning the Middle Kingdom (c. 2040 BCE)"
+   },
+   {
+    "year": -2004,
+    "text": "Elamites sack Ur and capture its last king, Ibbi-Sin (c. 2004 BCE)"
+   },
+   {
+    "year": -2000,
+    "text": "Earliest spoked-wheel chariots buried at Sintashta sites (c. 2000 BCE)"
+   },
+   {
+    "year": -2000,
+    "text": "First palaces built at Knossos and other sites on Crete (c. 2000–1900 BCE)"
+   },
+   {
+    "year": -1991,
+    "text": "Amenemhat I founds Egypt's Twelfth Dynasty (c. 1991 BCE)"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia: Middle Kingdom of Egypt",
+    "url": "https://en.wikipedia.org/wiki/Middle_Kingdom_of_Egypt"
+   },
+   {
+    "title": "Wikipedia: Ibbi-Sin",
+    "url": "https://en.wikipedia.org/wiki/Ibbi-Sin"
+   },
+   {
+    "title": "Wikipedia: Ishbi-Erra",
+    "url": "https://en.wikipedia.org/wiki/Ishbi-Erra"
+   },
+   {
+    "title": "Wikipedia: Sintashta culture",
+    "url": "https://en.wikipedia.org/wiki/Sintashta_culture"
+   },
+   {
+    "title": "Wikipedia: Ban Non Wat",
+    "url": "https://en.wikipedia.org/wiki/Ban_Non_Wat"
+   },
+   {
+    "title": "Wikipedia: Dingo",
+    "url": "https://en.wikipedia.org/wiki/Dingo"
+   },
+   {
+    "title": "Cambridge Ancient History, 3rd ed., vol. I part 2: Early History of the Middle East (1971)",
+    "url": "https://archive.org/details/the-cambridge-ancient-history-vol.-1-part-2"
+   },
+   {
+    "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. I: The Vedic Age (Internet Archive)",
+    "url": "https://archive.org/details/vedicage00bhar"
+   }
+  ]
+ },
+ {
+  "year": -1500,
+  "title": "Chariots and Empires",
+  "age": "Late Bronze Age",
+  "overview": "Around 1500 BCE the Near East is entering an age of great powers and chariot warfare. Egypt, having expelled the Hyksos rulers of the Delta, is building its New Kingdom empire: Pharaoh Thutmose I has marched as far as the Euphrates and deep into Nubia. Its rivals are the Hurrian kingdom of Mitanni in northern Syria and the Hittites of central Anatolia, who sacked Babylon in 1595 BCE; Babylonia is now ruled by the Kassites. In the Aegean, Minoan Crete still flourishes while warlike Mycenaean Greeks rise on the mainland. In India, the old Indus cities have been abandoned, and Indo-Aryan peoples in the Punjab are composing the earliest hymns of the Rigveda. In China, the Shang dynasty rules the Yellow River plain, soon to produce China's first writing. Across the Americas, the first Olmec settlements appear on the Gulf Coast of Mexico, and Austronesian sailors are about to strike out into the open Pacific.",
+  "regions": {
+   "southern-africa": "Africa south of the equator is home to hunter-gatherers and Khoisan-speaking peoples. Bantu-speaking farmers are slowly spreading through the Congo rainforest from the north-west. There are no states or towns in the region.",
+   "northern-africa": "Egypt's New Kingdom is expanding under Thutmose I, who rules from Thebes and has campaigned up the Nile to defeat the Nubian kingdom of Kerma (Kush), Egypt's great southern rival. Across the Sahara, pastoral nomads herd cattle and goats, while West African farmers cultivate millet and sorghum in the Sahel, and Berbers live in the Maghreb.",
+   "europe": "On Crete, the Minoan palace civilization at Knossos is in its final great century, while mainland Mycenaean Greeks, whose kings are buried with gold masks, grow powerful. Central Europe's Bronze Age peoples trade amber, tin and copper over long distances, and Nordic Bronze Age cultures flourish in Scandinavia. The steppe north of the Black Sea is home to horse-riding herders.",
+   "middle-east-south-asia": "The Hittite kingdom, ruled from Hattusa in central Anatolia, is recovering under King Telipinu after a period of turmoil. The Hurrian kingdom of Mitanni dominates northern Syria and Mesopotamia, with Assyria under its shadow, while Kassite kings rule Babylonia and Elam controls south-west Iran. In India the Indus cities have been abandoned; Indo-Aryan herders in the Punjab, the Vedic Aryans, are composing the Rigveda, and Dravidian-speaking peoples live across the south.",
+   "north-central-asia": "The Andronovo culture of horse-riding, chariot-using herders spreads across the Kazakh steppe, and the Karasuk culture later grows from it in southern Siberia. Iranian-speaking pastoralists move south toward Iran and Central Asia. The northern taiga belongs to Finno-Ugric and Paleo-Siberian hunters and fishers.",
+   "east-asia": "The Shang dynasty rules the middle Yellow River from a walled capital at Zhengzhou, casting fine bronze ritual vessels in the Erligang style. Beyond the Shang, Neolithic and early Bronze Age peoples live across southern China and Korea. In Japan, Late Jōmon foragers live in settled villages, and the Ainu ancestors inhabit Hokkaido.",
+   "southeast-asia": "Austro-Asiatic rice farmers live in villages across Thailand, Cambodia and Vietnam, and bronze-working is beginning to spread south from China. Austronesian peoples are established in the Philippines and Indonesia, and their descendants, the Lapita people, will soon sail into the open Pacific.",
+   "northern-north-america": "Paleo-Eskimo hunters of the Pre-Dorset and Saqqaq traditions live in the Canadian Arctic and Greenland, hunting seals, muskox and caribou. Subarctic forest hunters roam inland Canada, and Pacific coast peoples fish for salmon.",
+   "southern-north-america": "At Poverty Point in Louisiana, hunter-gatherers are building huge semicircular earthworks, the largest in North America at this time. Bison hunters live on the Great Plains. In Mexico, maize farmers live in permanent villages, and on the Gulf Coast the first Olmec communities are taking shape.",
+   "northern-south-america": "In Peru, the Initial Period has begun: villages build U-shaped temple complexes and start to make pottery and irrigate their fields. The Chorrera culture is emerging in coastal Ecuador, and manioc farmers and foragers live along the rivers of the Amazon basin.",
+   "southern-cone": "The Chinchorro mummy-making tradition on the Atacama coast is coming to an end after some 3,500 years. Hunter-gatherers live across the Pampas, while in Patagonia and Tierra del Fuego peoples hunt guanaco and marine mammals.",
+   "australasia": "Aboriginal Australians live across the continent, and the dingo is arriving from Southeast Asia around this time. Papuan farmers cultivate New Guinea. In the Bismarck Archipelago, Austronesian newcomers are about to develop the Lapita culture, whose sailors will settle the islands of the western Pacific."
+  },
+  "powers": [
+   {
+    "name": "Egypt (New Kingdom)",
+    "map": "Egypt",
+    "ruler": "Thutmose I (c. 1506–1493 BCE)",
+    "capital": "Thebes",
+    "extent": "The Nile valley and Delta, with campaigns reaching the Euphrates and Upper Nubia"
+   },
+   {
+    "name": "Hittite Old Kingdom",
+    "map": "Hittites",
+    "ruler": "Telipinu (c.)",
+    "capital": "Hattusa",
+    "extent": "Central and southern Anatolia"
+   },
+   {
+    "name": "Mitanni",
+    "map": null,
+    "ruler": "Hurrian kings (Parattarna, c.)",
+    "capital": "Washukanni",
+    "extent": "Northern Syria and northern Mesopotamia, with Assyria as a vassal"
+   },
+   {
+    "name": "Kassite Babylonia",
+    "map": "Babylonia",
+    "ruler": "Kassite kings (e.g. Burna-Buriash I, c.)",
+    "capital": "Babylon",
+    "extent": "Southern Mesopotamia"
+   },
+   {
+    "name": "Shang dynasty",
+    "map": "Zhoa",
+    "ruler": "Shang kings (Erligang period)",
+    "capital": "Zhengzhou (Ao)",
+    "extent": "The middle and lower Yellow River plain"
+   },
+   {
+    "name": "Kingdom of Kerma (Kush)",
+    "map": "Kush",
+    "ruler": "Kings of Kerma",
+    "capital": "Kerma",
+    "extent": "Upper Nubia along the middle Nile"
+   },
+   {
+    "name": "Elam",
+    "map": "Elam",
+    "ruler": "Kidinuid kings (c.)",
+    "capital": "Susa",
+    "extent": "South-western Iran"
+   },
+   {
+    "name": "Mycenaean Greece",
+    "map": "Greek city-states",
+    "ruler": "Warrior kings of Mycenae and other citadels",
+    "capital": "Mycenae",
+    "extent": "Southern mainland Greece and Aegean islands"
+   },
+   {
+    "name": "Vedic Aryans",
+    "map": "Vedic Aryans",
+    "ruler": null,
+    "capital": null,
+    "extent": "Pastoral tribes of the Punjab and north-west India"
+   }
+  ],
+  "events": [
+   {
+    "year": -1600,
+    "text": "Tang founds the Shang dynasty in China (traditional date c. 1600 BCE)"
+   },
+   {
+    "year": -1600,
+    "text": "Volcanic eruption of Thera (Santorini) in the Aegean (c. 1600 BCE, date debated)"
+   },
+   {
+    "year": -1595,
+    "text": "Hittite king Mursili I sacks Babylon (c. 1595 BCE)"
+   },
+   {
+    "year": -1550,
+    "text": "Ahmose I expels the Hyksos and founds Egypt's New Kingdom (c. 1550 BCE)"
+   },
+   {
+    "year": -1525,
+    "text": "Telipinu issues his edict setting rules for the Hittite royal succession (c. 1525 BCE)"
+   },
+   {
+    "year": -1500,
+    "text": "Thutmose I campaigns to the Euphrates and conquers Kerma (c. 1500 BCE)"
+   },
+   {
+    "year": -1500,
+    "text": "Earliest hymns of the Rigveda composed in the Punjab (c. 1500–1200 BCE)"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia: Thutmose I",
+    "url": "https://en.wikipedia.org/wiki/Thutmose_I"
+   },
+   {
+    "title": "Wikipedia: Telipinu",
+    "url": "https://en.wikipedia.org/wiki/Telipinu"
+   },
+   {
+    "title": "Wikipedia: Barattarna",
+    "url": "https://en.wikipedia.org/wiki/Baratarna"
+   },
+   {
+    "title": "Wikipedia: Burnaburiash I",
+    "url": "https://en.wikipedia.org/wiki/Burnaburiash_I"
+   },
+   {
+    "title": "Wikipedia: Kerma culture",
+    "url": "https://en.wikipedia.org/wiki/Kerma_culture"
+   },
+   {
+    "title": "Wikipedia: Independence I culture",
+    "url": "https://en.wikipedia.org/wiki/Independence_I_culture"
+   },
+   {
+    "title": "Cambridge Ancient History, 3rd ed., vol. II part 1: The Middle East and the Aegean Region c. 1800-1380 BC (1973)",
+    "url": "https://archive.org/details/the-cambridge-ancient-history-vol.-2-part-1"
+   },
+   {
+    "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. I: The Vedic Age (Internet Archive)",
+    "url": "https://archive.org/details/vedicage00bhar"
+   }
+  ]
+ },
+ {
+  "year": -1000,
+  "title": "Out of the Collapse",
+  "age": "Early Iron Age",
+  "overview": "Around 1000 BCE the world is recovering from the Late Bronze Age collapse, when around 1200–1150 BCE the Hittite empire and the Mycenaean palaces fell, many cities were burned, and Egypt was weakened by the Sea Peoples. The great empires are gone, and smaller kingdoms fill the gap. In the Levant, King David, according to the Bible, rules a new kingdom of Israel from Jerusalem, the Phoenicians of Tyre and Sidon have developed the alphabet their traders will later carry across the Mediterranean, and Aramaean tribes settle much of Syria. Egypt is divided, with pharaohs at Tanis and priests of Amun at Thebes. Assyria is small but survives, waiting to rise again. Iron, cheaper than bronze, is spreading. In China, the Zhou dynasty has overthrown the Shang and claims the Mandate of Heaven. In India, the Kuru kingdom leads the Later Vedic age. In the Americas, the Olmec flourish in Mexico and the Chavín cult is rising in Peru, while Lapita sailors are settling the islands of the western Pacific.",
+  "regions": {
+   "southern-africa": "Khoisan hunter-gatherers live across southern Africa. Bantu-speaking farmers continue moving east and south through the Congo rainforest toward the Great Lakes. There are still no towns or metal-working in the region.",
+   "northern-africa": "Egypt is in its Third Intermediate Period: Twenty-first Dynasty pharaohs such as Amenemope rule the north from Tanis, while the High Priests of Amun control Thebes. After Egypt's withdrawal from Nubia, local Kushite chiefs around Napata are building power. Saharan nomads, Berbers and Sahel farmers live much as before.",
+   "europe": "Greece is in its Dark Age after the fall of the Mycenaean palaces, with small villages and little writing. Urnfield cultures, who cremate their dead and bury the ashes in urns, cover central Europe, and the Villanovan culture is emerging in Italy. Cimmerian horsemen live north of the Black Sea, and Nordic Bronze Age chiefs rule Scandinavia.",
+   "middle-east-south-asia": "King David rules Israel from Jerusalem; the Bible says that under him and his son Solomon it became a regional power, though archaeologists debate how large their kingdom really was. Phoenician city-states such as Tyre and Byblos trade across the sea, Aramaean and Neo-Hittite kingdoms divide Syria and southern Anatolia, Assyria under Ashur-rabi II is reduced to its heartland, and Babylonia is weak. In India, the Kuru kingdom in the upper Ganges plain leads the Later Vedic age, while Dravidian peoples farm the south.",
+   "north-central-asia": "The Karasuk culture flourishes in southern Siberia and the steppe, known for its bronze knives and horse herds. Iranian-speaking pastoralists, among them the ancestors of the Medes, Persians and Scythians, live across Central Asia. Hunters and fishers inhabit the northern forests.",
+   "east-asia": "The Western Zhou dynasty, which overthrew the Shang at the Battle of Muye around 1046 BCE, rules northern China from its capital Haojing near present-day Xi'an, granting land to relatives and allies in a feudal system. Kings such as King Kang govern a realm stretching from the Wei valley to the coast. Korea's Bronze Age has begun, and Final Jōmon culture continues in Japan.",
+   "southeast-asia": "Austro-Asiatic rice farmers and bronze-workers live in villages across mainland Southeast Asia, such as Ban Chiang in Thailand. Austronesian peoples inhabit the Philippines and Indonesia, trading by outrigger canoe. Burmese and Tai ancestors live in the uplands to the north.",
+   "northern-north-america": "Paleo-Eskimo peoples hunt seals and caribou across Arctic Canada and Greenland, and the Norton tradition is developing in Alaska. Subarctic forest hunters roam inland Canada, and the peoples of the Pacific Northwest live richly from salmon and cedar.",
+   "southern-north-america": "The Olmec of Mexico's Gulf Coast rule from San Lorenzo, famed for colossal stone heads of its rulers, though its heyday is ending as La Venta rises. Poverty Point in Louisiana is being abandoned. Bison hunters live on the Plains, and Archaic hunter-gatherers fill the eastern woodlands.",
+   "northern-south-america": "In the Peruvian Andes, the temple of Chavín de Huántar is becoming a religious centre whose art and beliefs will spread across Peru. Chorrera potters live in coastal Ecuador, and manioc farmers and foragers inhabit the Amazon basin.",
+   "southern-cone": "Hunter-gatherers live across the Pampas, Patagonia and Tierra del Fuego, hunting guanaco, rhea and marine mammals. Fishing communities on the Atacama coast continue the old Chinchorro way of life without its elaborate mummies.",
+   "australasia": "Aboriginal Australians and Papuan farmers live as before. In the western Pacific, the Lapita people, known for their stamped pottery, have sailed from the Bismarck Archipelago to Vanuatu and New Caledonia and are about to reach Fiji, Tonga and Samoa, the first people ever to live there."
+  },
+  "powers": [
+   {
+    "name": "Western Zhou dynasty",
+    "map": "Zhoa",
+    "ruler": "King Kang of Zhou (c.)",
+    "capital": "Haojing",
+    "extent": "The Wei and Yellow River valleys and the North China Plain"
+   },
+   {
+    "name": "Egypt (Third Intermediate Period)",
+    "map": "Egypt",
+    "ruler": "Twenty-first Dynasty (Amenemope, c.), with the High Priests of Amun at Thebes",
+    "capital": "Tanis",
+    "extent": "The Nile valley and Delta, divided between north and south"
+   },
+   {
+    "name": "Kingdom of Israel",
+    "map": "Kingdom of David and Solomon",
+    "ruler": "David (traditional dates c. 1010–970 BCE)",
+    "capital": "Jerusalem",
+    "extent": "The hill country of Canaan; the Bible describes rule from the Negev toward Damascus, but the kingdom's real size is debated"
+   },
+   {
+    "name": "Assyria",
+    "map": "Assyria",
+    "ruler": "Ashur-rabi II (c.)",
+    "capital": "Assur",
+    "extent": "The Assyrian heartland on the upper Tigris"
+   },
+   {
+    "name": "Neo-Hittite and Aramaean states",
+    "map": "Hittites",
+    "ruler": "Kings of Carchemish, Hamath and other city-states",
+    "capital": "Carchemish (largest)",
+    "extent": "South-eastern Anatolia and northern Syria"
+   },
+   {
+    "name": "Kuru kingdom",
+    "map": "Vedic Aryans",
+    "ruler": "Kuru kings (names known only from Vedic texts)",
+    "capital": "Hastinapura (traditional)",
+    "extent": "The upper Ganges plain and northern India"
+   },
+   {
+    "name": "Olmec",
+    "map": "Olmec",
+    "ruler": "Rulers of San Lorenzo",
+    "capital": "San Lorenzo",
+    "extent": "The Gulf Coast lowlands of southern Mexico"
+   },
+   {
+    "name": "Chavín culture",
+    "map": "Chavin",
+    "ruler": null,
+    "capital": "Chavín de Huántar",
+    "extent": "The northern and central Peruvian Andes"
+   }
+  ],
+  "events": [
+   {
+    "year": -1177,
+    "text": "Ramesses III repels the Sea Peoples amid the Late Bronze Age collapse (c. 1177 BCE)"
+   },
+   {
+    "year": -1070,
+    "text": "Egypt's New Kingdom ends and the country splits (c. 1070 BCE)"
+   },
+   {
+    "year": -1050,
+    "text": "The Phoenician alphabet comes into use (c. 1050 BCE)"
+   },
+   {
+    "year": -1046,
+    "text": "Battle of Muye: the Zhou overthrow the Shang dynasty (c. 1046 BCE)"
+   },
+   {
+    "year": -1010,
+    "text": "David becomes king of Israel (c. 1010 BCE)"
+   },
+   {
+    "year": -1000,
+    "text": "Iron tools and weapons spread across the Near East and India (c. 1000 BCE)"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia: King Kang of Zhou",
+    "url": "https://en.wikipedia.org/wiki/King_Kang_of_Zhou"
+   },
+   {
+    "title": "Wikipedia: Amenemope (pharaoh)",
+    "url": "https://en.wikipedia.org/wiki/Amenemope_(pharaoh)"
+   },
+   {
+    "title": "Wikipedia: Ashur-rabi II",
+    "url": "https://en.wikipedia.org/wiki/Ashur-rabi_II"
+   },
+   {
+    "title": "Wikipedia: David",
+    "url": "https://en.wikipedia.org/wiki/David"
+   },
+   {
+    "title": "Wikipedia: Lapita culture",
+    "url": "https://en.wikipedia.org/wiki/Lapita_culture"
+   },
+   {
+    "title": "Wikipedia: Jōmon period",
+    "url": "https://en.wikipedia.org/wiki/J%C5%8Dmon_period"
+   },
+   {
+    "title": "Wikipedia: San Lorenzo Tenochtitlán",
+    "url": "https://en.wikipedia.org/wiki/San_Lorenzo_Tenochtitl%C3%A1n"
+   },
+   {
+    "title": "Cambridge Ancient History, 2nd ed., vol. III part 1 (1982)",
+    "url": "https://archive.org/details/the-cambridge-ancient-history-vol.-3-part-1"
+   },
+   {
+    "title": "Wikipedia: Kingdom of Israel (united monarchy)",
+    "url": "https://en.wikipedia.org/wiki/Kingdom_of_Israel_(united_monarchy)"
+   },
+   {
+    "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. I: The Vedic Age (Internet Archive)",
+    "url": "https://archive.org/details/vedicage00bhar"
+   }
+  ]
+ },
+ {
+  "year": -700,
+  "title": "The Assyrian Colossus",
+  "age": "Iron Age",
+  "overview": "In 700 BCE the Neo-Assyrian Empire is the greatest power the world has yet seen. King Sennacherib rules from Nineveh over Mesopotamia, Syria, the Levant and parts of Anatolia and Iran; a year earlier his army besieged Jerusalem, and he has just put his own son on the throne of Babylon. Egypt is ruled by pharaohs from Kush in Nubia, whose Twenty-fifth Dynasty is set on a collision course with Assyria. To the north, Urartu and Phrygia, the kingdom of King Midas, famous from Greek legend but a real ruler (the Mita of Assyrian records), face raids by Cimmerian horsemen. In Greece, a new age of city-states, colonies, Olympic games and the poems of Homer has begun, while Rome is a young town of kings and Carthage a growing Phoenician colony. In China, the Zhou kings have fled east and lost real power to great feudal states. In India, the first kingdoms of the Ganges plain are forming, and in Mexico the Olmec of La Venta are at their peak.",
+  "regions": {
+   "southern-africa": "Southern Africa remains the land of Khoisan hunter-gatherers. Bantu-speaking farmers have reached the region of the Great Lakes, where iron-working will soon develop, but have not yet moved south of the rainforest in large numbers.",
+   "northern-africa": "Egypt is ruled by the Kushite Twenty-fifth Dynasty, kings from Napata in Nubia who conquered Egypt under Piye around 728 BCE; Shabaka or Shebitku (their order is debated) now rule Kush and Egypt together. The Phoenician colony of Carthage, founded around 814 BCE, is growing on the Tunisian coast. Berbers, Saharan nomads and early Nok farmers in Nigeria live beyond the river valleys.",
+   "europe": "Greece is entering the Archaic Age: city-states such as Athens, Sparta and Corinth found colonies across Sicily, southern Italy and the Black Sea, and the Olympic games and Homer's epics are new. Rome is a small kingdom, said to have been founded in 753 BCE, and the Etruscans dominate central Italy. The Hallstatt culture, ancestor of the Celts, rises in central Europe, and Cimmerians and early Scythians hold the steppe.",
+   "middle-east-south-asia": "Sennacherib of Assyria rules an empire from the Persian Gulf to the Mediterranean; Assyria destroyed the kingdom of Israel in 722 BCE, and Sennacherib has forced Judah under Hezekiah to pay tribute. Urartu, under Argishti II, rules the Armenian highlands, Phrygia under Midas holds central Anatolia, Elam resists from Susa, and the Medes, still divided among many local chiefs, live in western Iran. In India, Later Vedic kingdoms such as Kosala, Videha and Kuru-Panchala are growing into the first states of the Ganges plain.",
+   "north-central-asia": "Scythian and other Iranian-speaking nomads, fighting from horseback with powerful bows, dominate the steppes from the Black Sea to the Altai. Cimmerian raiders have pushed south through the Caucasus into Urartu and Anatolia. The Siberian forests remain the land of Finno-Ugric and Paleo-Siberian hunters.",
+   "east-asia": "The Zhou kings, forced to move their capital east to Luoyi in 770 BCE, now reign but do not rule; King Huan of Zhou is a figurehead while powerful states such as Zheng, Qi, Jin, Chu and Qin compete in the Spring and Autumn period. Korea is home to Bronze Age farmers who build dolmens, and Japan to the Final Jōmon foragers.",
+   "southeast-asia": "Bronze-working rice farmers live in villages across mainland Southeast Asia, and early Đông Sơn culture is developing in northern Vietnam. Austronesian peoples sail and trade among the islands of Indonesia and the Philippines.",
+   "northern-north-america": "Paleo-Eskimo peoples inhabit Arctic Canada and Greenland, where the Dorset culture is about to emerge. Subarctic forest hunters live inland, and Pacific Northwest peoples fish for salmon along the coast.",
+   "southern-north-america": "The Olmec are at their height at La Venta, a great ceremonial centre with a clay pyramid and colossal heads. Early Maya villages are growing in the lowlands of Guatemala, while woodland peoples of the Ohio valley are on the eve of the Adena mound-building culture.",
+   "northern-south-america": "The Chavín religious cult, centred on its temple at Chavín de Huántar, is spreading across Peru, carrying its feline and serpent imagery. Chorrera potters flourish in coastal Ecuador, and Amazonian peoples farm manioc along the rivers.",
+   "southern-cone": "Hunter-gatherers live across the Pampas, Patagonia and Tierra del Fuego. Small farming communities are beginning to appear in north-west Argentina and northern Chile, influenced by the Andes.",
+   "australasia": "Aboriginal Australians and Papuan farmers live as before. Descendants of the Lapita people have settled Fiji, Tonga and Samoa, where a distinct Polynesian culture is beginning to develop. Most of the Pacific and New Zealand remain unsettled."
+  },
+  "powers": [
+   {
+    "name": "Neo-Assyrian Empire",
+    "map": "Assyria",
+    "ruler": "Sennacherib (705–681 BCE)",
+    "capital": "Nineveh",
+    "extent": "From the Persian Gulf and western Iran to the Mediterranean and the borders of Egypt"
+   },
+   {
+    "name": "Kushite Egypt (25th Dynasty)",
+    "map": "Egypt",
+    "ruler": "Shabaka or Shebitku (order debated)",
+    "capital": "Memphis and Napata",
+    "extent": "The Nile valley from the Delta to Nubia"
+   },
+   {
+    "name": "Zhou dynasty (Spring and Autumn)",
+    "map": "Zhoa",
+    "ruler": "King Huan of Zhou (719–697 BCE), a figurehead",
+    "capital": "Luoyi",
+    "extent": "Nominal overlord of the feudal states of northern and central China"
+   },
+   {
+    "name": "Urartu",
+    "map": "Urartu",
+    "ruler": "Argishti II (c.)",
+    "capital": "Tushpa (Van)",
+    "extent": "The Armenian highlands around Lake Van"
+   },
+   {
+    "name": "Kingdom of Kush",
+    "map": "Kush",
+    "ruler": "Kushite kings of the 25th Dynasty",
+    "capital": "Napata",
+    "extent": "Nubia along the middle Nile"
+   },
+   {
+    "name": "Phrygia",
+    "map": "Phrygians",
+    "ruler": "Midas (c.)",
+    "capital": "Gordion",
+    "extent": "Central and western Anatolia"
+   },
+   {
+    "name": "Greek city-states",
+    "map": "Greek city-states",
+    "ruler": "Aristocracies and kings of independent cities",
+    "capital": null,
+    "extent": "Greece, the Aegean and new colonies in Italy, Sicily and the Black Sea"
+   },
+   {
+    "name": "Elam",
+    "map": "Elam",
+    "ruler": "Shutruk-Nakhunte II (717–699 BCE)",
+    "capital": "Susa",
+    "extent": "South-western Iran"
+   },
+   {
+    "name": "Kingdom of Saba",
+    "map": "Saba",
+    "ruler": "Sabaean mukarribs (rulers)",
+    "capital": "Marib",
+    "extent": "The incense lands of Yemen"
+   },
+   {
+    "name": "Olmec",
+    "map": "Olmec",
+    "ruler": "Rulers of La Venta",
+    "capital": "La Venta",
+    "extent": "The Gulf Coast lowlands of southern Mexico"
+   }
+  ],
+  "events": [
+   {
+    "year": -776,
+    "text": "First recorded Olympic Games in Greece (traditional date)"
+   },
+   {
+    "year": -771,
+    "text": "Western Zhou falls; the Zhou court moves east to Luoyi the next year (770 BCE)"
+   },
+   {
+    "year": -753,
+    "text": "Legendary founding of Rome by Romulus"
+   },
+   {
+    "year": -728,
+    "text": "Piye of Kush conquers Egypt (c. 728 BCE)"
+   },
+   {
+    "year": -722,
+    "text": "Assyria captures Samaria and ends the kingdom of Israel"
+   },
+   {
+    "year": -714,
+    "text": "Sargon II of Assyria defeats Urartu"
+   },
+   {
+    "year": -701,
+    "text": "Sennacherib invades Judah and besieges Jerusalem"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia: Ashur-nadin-shumi",
+    "url": "https://en.wikipedia.org/wiki/Ashur-nadin-shumi"
+   },
+   {
+    "title": "Wikipedia: Shebitku",
+    "url": "https://en.wikipedia.org/wiki/Shebitku"
+   },
+   {
+    "title": "Wikipedia: Argishti II",
+    "url": "https://en.wikipedia.org/wiki/Argishti_II"
+   },
+   {
+    "title": "Wikipedia: Eastern Zhou",
+    "url": "https://en.wikipedia.org/wiki/Eastern_Zhou"
+   },
+   {
+    "title": "Wikipedia: Midas",
+    "url": "https://en.wikipedia.org/wiki/Midas"
+   },
+   {
+    "title": "UCLouvain (Gorris), Shutruk-Nahhunte II, Encyclopedia of Ancient History: Asia and Africa",
+    "url": "https://research.dial.uclouvain.be/entities/publication/d1dbbd3c-0b43-49d9-9868-94e19c5439c1"
+   },
+   {
+    "title": "Cambridge Ancient History, 2nd ed., vol. III part 2: The Assyrian and Babylonian Empires (1991)",
+    "url": "https://archive.org/details/the-cambridge-ancient-history-vol.-3-part-2"
+   },
+   {
+    "title": "Wikipedia: Median kingdom",
+    "url": "https://en.wikipedia.org/wiki/Median_kingdom"
+   },
+   {
+    "title": "Wikipedia: Spring and Autumn period",
+    "url": "https://en.wikipedia.org/wiki/Spring_and_Autumn_period"
+   },
+   {
+    "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. I: The Vedic Age (Internet Archive)",
+    "url": "https://archive.org/details/vedicage00bhar"
+   },
+   {
+    "title": "Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. III.B, The Pre-Mauryan Age",
+    "url": "https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/The_Pre-Mauryan_Age.json&canvasID=0"
+   }
+  ]
+ },
+ {
+  "year": -500,
+  "title": "The Persian Peace",
+  "age": "Axial Age",
+  "overview": "In 500 BCE one empire overshadows all others: the Achaemenid Persian Empire of Darius I, the largest state the world has yet known, reaching from Egypt and Thrace to the Indus. Its roads, satraps and royal couriers hold together dozens of peoples. On its western edge, the Greek cities are restless; Athens has just become a democracy, and next year the Ionian Greeks will revolt against Persia, setting off the Persian Wars. Rome has recently expelled its last king and become a republic, while Carthage leads a trading empire in the western Mediterranean. This is also an age of great thinkers. In China, Confucius is teaching amid the wars of the Spring and Autumn period; in India, by traditional dates, Magadha is rising among the kingdoms of the Ganges plain, where the Buddha and Mahavira lived and taught around this time (their exact dates are debated). In the Americas, the Zapotecs are founding Monte Albán in Oaxaca and early Maya cities are growing in Guatemala.",
+  "regions": {
+   "southern-africa": "Khoisan hunter-gatherers live across southern Africa. Around the Great Lakes, Bantu-speaking farmers of the Urewe culture are beginning to smelt iron, a skill that will speed their spread southward in the centuries to come.",
+   "northern-africa": "Egypt is a province of the Persian Empire, conquered by Cambyses in 525 BCE. The kingdom of Kush rules Nubia from Napata, with Meroë rising as a second centre, and Carthage commands the North African coast. The Nok culture of Nigeria makes striking terracotta sculptures and is beginning to work iron, and the kingdom of D'mt rules the Ethiopian highlands.",
+   "europe": "Athens has just adopted democracy under Cleisthenes (508/507 BCE), and Sparta, under King Cleomenes I, leads the Peloponnese. Rome became a republic in 509 BCE, the Etruscans dominate much of Italy, and Greek colonies dot the Mediterranean coasts. Hallstatt Celtic chiefs rule central Europe, Scythian nomads hold the steppe, and Germanic peoples farm the north.",
+   "middle-east-south-asia": "Darius I rules the Achaemenid Empire from Persepolis and Susa, governing Anatolia, the Levant, Mesopotamia, Iran, Afghanistan and the Indus valley through satraps. South Arabia's Sabaean kingdom grows rich on incense. In India, sixteen great kingdoms and republics (the Mahajanapadas) compete in the Ganges plain, with Magadha under Bimbisara, Kosala and Avanti the strongest; Gandhara in the north-west is a Persian province.",
+   "north-central-asia": "Iranian-speaking nomads such as the Saka and Massagetae roam the steppes of Central Asia; the Massagetae killed Cyrus the Great in 530 BCE. Bactria and Sogdiana are Persian provinces. Further north, the Pazyryk horse-riding peoples of the Altai and the forest hunters of Siberia live beyond any empire.",
+   "east-asia": "China is in the late Spring and Autumn period: King Jing of Zhou reigns in name, while the great states of Jin, Qi, Chu, Wu and Yue fight for supremacy. Confucius, now about 50, holds office in his home state of Lu. Korea's Bronze Age chiefdoms include the early state of Gojoseon, and in Japan the Jōmon way of life is beginning to give way to Yayoi rice farming.",
+   "southeast-asia": "The Đông Sơn culture of northern Vietnam casts magnificent bronze drums that are traded across Southeast Asia. The Sa Huỳnh culture lives along the central Vietnamese coast, and Austronesian peoples trade among the islands. Contacts with India are beginning.",
+   "northern-north-america": "The Dorset culture (Paleo-Inuit) hunts seals on the sea ice of Arctic Canada and Greenland. The Norton tradition flourishes in Alaska, and forest hunters and Pacific coast fishing peoples live across the rest of the north.",
+   "southern-north-america": "The Olmec world is fading, while the Zapotecs found their mountaintop capital at Monte Albán in Oaxaca around 500 BCE and the Maya build early cities such as Nakbé. In the Ohio valley, the Adena people bury their dead in great earthen mounds and trade copper and mica.",
+   "northern-south-america": "The Chavín culture, centred on its temple in the Peruvian highlands, is at its peak, uniting much of Peru through shared religion and art. Along the south coast, the Paracas culture is beginning to weave elaborate textiles. Amazonian peoples farm manioc and enrich their soils.",
+   "southern-cone": "Hunter-gatherers live across the Pampas and Patagonia, and canoe peoples live in the channels of Tierra del Fuego. Farming villages influenced by the Andes are spreading in north-west Argentina.",
+   "australasia": "Aboriginal Australians live across the continent, and Papuan farmers cultivate New Guinea. Polynesians live in Fiji, Tonga and Samoa, but a long pause before their next great voyages has begun. New Zealand and eastern Polynesia remain uninhabited."
+  },
+  "powers": [
+   {
+    "name": "Achaemenid Persian Empire",
+    "map": "Achaemenid Empire",
+    "ruler": "Darius I (522–486 BCE)",
+    "capital": "Persepolis and Susa",
+    "extent": "From Egypt, Anatolia and Thrace to Central Asia and the Indus"
+   },
+   {
+    "name": "Zhou states (Spring and Autumn)",
+    "map": "Zhou states",
+    "ruler": "King Jing of Zhou (figurehead); real power with Jin, Qi, Chu, Wu and Yue",
+    "capital": "Luoyi",
+    "extent": "Northern and central China"
+   },
+   {
+    "name": "Carthaginian Empire",
+    "map": "Carthaginian Empire",
+    "ruler": "Magonid family (Hamilcar, c.)",
+    "capital": "Carthage",
+    "extent": "Coastal North Africa, western Sicily, Sardinia and southern Spain"
+   },
+   {
+    "name": "Magadha",
+    "map": "Magadha",
+    "ruler": "Bimbisara (traditional dates; chronology debated)",
+    "capital": "Rajagriha",
+    "extent": "The lower Ganges plain in Bihar"
+   },
+   {
+    "name": "Greek city-states",
+    "map": "Greek city-states",
+    "ruler": "Independent cities, including democratic Athens and Sparta under Cleomenes I",
+    "capital": null,
+    "extent": "Greece and the Aegean, with colonies across the Mediterranean and Black Sea"
+   },
+   {
+    "name": "Kingdom of Kush",
+    "map": "Meroe",
+    "ruler": "Napatan kings of Kush",
+    "capital": "Napata",
+    "extent": "Nubia along the middle Nile"
+   },
+   {
+    "name": "Kosala",
+    "map": "Kosala",
+    "ruler": "Prasenajit (c.)",
+    "capital": "Shravasti",
+    "extent": "The central Ganges plain in present-day Uttar Pradesh"
+   },
+   {
+    "name": "Etruscans",
+    "map": "Etrurians",
+    "ruler": "Kings and nobles of the Etruscan cities",
+    "capital": null,
+    "extent": "Tuscany and much of central Italy"
+   },
+   {
+    "name": "Roman Republic",
+    "map": "Rome",
+    "ruler": "Two annually elected consuls",
+    "capital": "Rome",
+    "extent": "The city of Rome and nearby Latium"
+   }
+  ],
+  "events": [
+   {
+    "year": -551,
+    "text": "Confucius is born in the state of Lu (traditional date)"
+   },
+   {
+    "year": -539,
+    "text": "Cyrus the Great of Persia captures Babylon"
+   },
+   {
+    "year": -525,
+    "text": "Cambyses II conquers Egypt for Persia"
+   },
+   {
+    "year": -522,
+    "text": "Darius I seizes the Persian throne"
+   },
+   {
+    "year": -509,
+    "text": "Romans expel their last king and found the Republic (traditional date)"
+   },
+   {
+    "year": -508,
+    "text": "Cleisthenes' reforms establish democracy in Athens"
+   },
+   {
+    "year": -499,
+    "text": "Ionian Greeks revolt against Persia, beginning the road to the Persian Wars"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia: Darius the Great",
+    "url": "https://en.wikipedia.org/wiki/Darius_the_Great"
+   },
+   {
+    "title": "Wikipedia: King Jing of Zhou (Ji Gai)",
+    "url": "https://en.wikipedia.org/wiki/King_Jing_of_Zhou_(Ji_Gai)"
+   },
+   {
+    "title": "Wikipedia: Bimbisara",
+    "url": "https://en.wikipedia.org/wiki/Bimbisara"
+   },
+   {
+    "title": "Wikipedia: The Buddha",
+    "url": "https://en.wikipedia.org/wiki/The_Buddha"
+   },
+   {
+    "title": "Wikipedia: Cleomenes I",
+    "url": "https://en.wikipedia.org/wiki/Cleomenes_I"
+   },
+   {
+    "title": "Wikipedia: Monte Albán",
+    "url": "https://en.wikipedia.org/wiki/Monte_Alb%C3%A1n"
+   },
+   {
+    "title": "Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. III.B, The Pre-Mauryan Age",
+    "url": "https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/The_Pre-Mauryan_Age.json&canvasID=0"
+   },
+   {
+    "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. II: The Age of Imperial Unity (Internet Archive)",
+    "url": "https://archive.org/details/ageofimperialuni07bhar"
+   }
+  ]
+ },
+ {
+  "year": -400,
+  "title": "Age of Philosophers",
+  "age": "Classical Age",
+  "overview": "In 400 BCE the Persian Empire still stretches from the Aegean to the Indus, but it is shaken: Egypt has broken free, and the ruling king, Artaxerxes II, has just defeated his rebel brother Cyrus at Cunaxa, after which ten thousand Greek mercenaries marched home through hostile lands. Greece is exhausted after the Peloponnesian War, which ended in 404 BCE with Sparta defeating Athens; in Athens, the philosopher Socrates will be tried and executed next year. In the west, Rome is besieging the Etruscan city of Veii, Carthage and Syracuse fight over Sicily, and Celtic tribes are pushing into Italy. In China, the old state of Jin has split into Han, Zhao and Wei, opening the brutal Warring States period. In India, Magadha is becoming the dominant kingdom of the Ganges plain. In Mexico, the Olmec centre of La Venta is being abandoned as the Zapotecs and Maya rise.",
+  "regions": {
+   "southern-africa": "Khoisan hunter-gatherers still occupy most of southern Africa. Iron-using Bantu farmers are spreading from the Great Lakes south and west, carrying cattle, crops and new pottery styles toward the Zambezi.",
+   "northern-africa": "Egypt has thrown off Persian rule and is governed by Amyrtaeus, sole king of the Twenty-eighth Dynasty. The kingdom of Kush flourishes in Nubia, increasingly centred on Meroë and its iron-working. Carthage dominates North Africa's coast, while Berbers, Saharan nomads and the Nok culture of Nigeria live beyond.",
+   "europe": "Sparta, under its two kings Pausanias and Agis II (soon succeeded by his half-brother Agesilaus II), leads Greece after defeating Athens, though the Athenians have restored their democracy. Dionysius I rules Syracuse, the Roman Republic fights its neighbours in central Italy, and Celts of the new La Tène culture are spreading across Europe and into northern Italy. Scythians rule the Pontic steppe and Germanic tribes the north.",
+   "middle-east-south-asia": "The Achaemenid king Artaxerxes II rules Anatolia, the Levant, Mesopotamia, Iran and Afghanistan from Susa and Persepolis, though his grip on the Indus is loosening. In India, Magadha under the Shishunaga dynasty is absorbing its rivals from its capitals at Rajagriha and Vaishali, while other kingdoms and republics share the rest of the north and Dravidian chiefdoms the south.",
+   "north-central-asia": "Scythian, Saka and Massagetae nomads dominate the steppes from Ukraine to Kazakhstan, and the Pazyryk chiefs of the Altai are buried with horses, carpets and tattoos preserved in ice. Ancestors of the Xiongnu and other nomads roam Mongolia and the eastern steppe.",
+   "east-asia": "China has entered the Warring States period after the partition of Jin into Han, Zhao and Wei was recognized in 403 BCE. Wei, under Marquis Wen and his reforming minister Li Kui, is the strongest state, while King An of Zhou is a powerless figurehead. Gojoseon rules north-western Korea, Yayoi rice farmers are settling Kyushu in Japan, and western Tibet is home to Iron Age peoples later remembered in Tibetan tradition as the kingdom of Zhangzhung.",
+   "southeast-asia": "The Đông Sơn bronze culture flourishes in northern Vietnam, and Tai and Austro-Asiatic rice farmers live across the mainland. Austronesian traders link the islands of Indonesia and the Philippines, and the first Indian goods are reaching the region.",
+   "northern-north-america": "The Dorset culture hunts on the sea ice of Arctic Canada and Greenland, while the Norton tradition lives along the coasts of Alaska. Subarctic forest hunters and Pacific Northwest fishing peoples inhabit the rest of Canada.",
+   "southern-north-america": "La Venta, the last great Olmec centre, is abandoned around 400 BCE. The Zapotecs build up their capital at Monte Albán, and Maya cities such as El Mirador grow in the Guatemalan lowlands. The Adena culture builds burial mounds in the Ohio valley.",
+   "northern-south-america": "The Chavín culture is beginning to decline in the Peruvian highlands, while the Paracas people of the south coast bury their dead wrapped in brilliantly embroidered textiles. The Wankarani culture farms the Bolivian high plateau, and Amazonian peoples farm and fish along the rivers.",
+   "southern-cone": "Hunter-gatherers live across the Pampas, Patagonia and Tierra del Fuego. Andean-influenced farming villages are growing in north-west Argentina and northern Chile.",
+   "australasia": "Aboriginal Australians and Papuan farmers live as before. Polynesians inhabit Tonga and Samoa, and New Zealand and the islands of eastern Polynesia remain unsettled."
+  },
+  "powers": [
+   {
+    "name": "Achaemenid Persian Empire",
+    "map": "Achaemenid Empire",
+    "ruler": "Artaxerxes II (404–358 BCE)",
+    "capital": "Susa and Persepolis",
+    "extent": "From Anatolia and the Levant to Central Asia and the Indus (Egypt now lost)"
+   },
+   {
+    "name": "Zhou states (Warring States)",
+    "map": "Zhou states",
+    "ruler": "King An of Zhou (figurehead); leading states Wei, Zhao, Han, Qi, Chu and Qin",
+    "capital": "Luoyi",
+    "extent": "Northern and central China"
+   },
+   {
+    "name": "Magadha",
+    "map": "Magadha",
+    "ruler": "Shishunaga (c. 413–395 BCE)",
+    "capital": "Rajagriha and Vaishali (Pataliputra from c. 395 BCE)",
+    "extent": "The middle and lower Ganges plain"
+   },
+   {
+    "name": "Carthaginian Empire",
+    "map": "Carthaginian Empire",
+    "ruler": "Carthaginian council and generals (Himilco in Sicily)",
+    "capital": "Carthage",
+    "extent": "Coastal North Africa, western Sicily, Sardinia and southern Spain"
+   },
+   {
+    "name": "Greek city-states",
+    "map": "Greek city-states",
+    "ruler": "Sparta leads, under kings Pausanias and Agis II (succeeded c. 400 BCE by Agesilaus II)",
+    "capital": "Sparta (leading city)",
+    "extent": "Greece and the Aegean, with colonies across the Mediterranean"
+   },
+   {
+    "name": "Scythians",
+    "map": "Scythians",
+    "ruler": "Scythian royal clans",
+    "capital": null,
+    "extent": "The steppe north of the Black Sea"
+   },
+   {
+    "name": "Celts (La Tène)",
+    "map": "Celts",
+    "ruler": "Tribal chiefs",
+    "capital": null,
+    "extent": "Gaul, central Europe and the Alps, moving into northern Italy"
+   },
+   {
+    "name": "Gojoseon",
+    "map": "Gojoseon",
+    "ruler": "Kings of Gojoseon (names uncertain)",
+    "capital": "Wanggeom-seong (location debated)",
+    "extent": "North-western Korea and southern Manchuria"
+   },
+   {
+    "name": "Roman Republic",
+    "map": "Roman Republic",
+    "ruler": "Elected magistrates (consular tribunes)",
+    "capital": "Rome",
+    "extent": "Rome and part of Latium"
+   }
+  ],
+  "events": [
+   {
+    "year": -431,
+    "text": "Peloponnesian War begins between Athens and Sparta"
+   },
+   {
+    "year": -404,
+    "text": "Athens surrenders to Sparta; Egypt revolts from Persia"
+   },
+   {
+    "year": -403,
+    "text": "Zhou king recognizes Han, Zhao and Wei, marking the Warring States period"
+   },
+   {
+    "year": -401,
+    "text": "Battle of Cunaxa and the march of the Ten Thousand Greek mercenaries"
+   },
+   {
+    "year": -400,
+    "text": "The Olmec centre of La Venta is abandoned (c. 400 BCE)"
+   },
+   {
+    "year": -399,
+    "text": "Socrates is tried and executed in Athens"
+   },
+   {
+    "year": -396,
+    "text": "Rome captures the Etruscan city of Veii"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia: Agis II",
+    "url": "https://en.wikipedia.org/wiki/Agis_II"
+   },
+   {
+    "title": "Wikipedia: Agesilaus II",
+    "url": "https://en.wikipedia.org/wiki/Agesilaus_II"
+   },
+   {
+    "title": "Wikipedia: Pausanias (king of Sparta)",
+    "url": "https://en.wikipedia.org/wiki/Pausanias_(king_of_Sparta)"
+   },
+   {
+    "title": "Wikipedia: Shishunaga dynasty",
+    "url": "https://en.wikipedia.org/wiki/Shishunaga_dynasty"
+   },
+   {
+    "title": "Wikipedia: Amyrtaeus",
+    "url": "https://en.wikipedia.org/wiki/Amyrtaeus"
+   },
+   {
+    "title": "Wikipedia: King An of Zhou",
+    "url": "https://en.wikipedia.org/wiki/King_An_of_Zhou"
+   },
+   {
+    "title": "Wikipedia: Zhangzhung",
+    "url": "https://en.wikipedia.org/wiki/Zhangzhung"
+   },
+   {
+    "title": "Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. III.B, The Pre-Mauryan Age",
+    "url": "https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/The_Pre-Mauryan_Age.json&canvasID=0"
+   },
+   {
+    "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. II: The Age of Imperial Unity (Internet Archive)",
+    "url": "https://archive.org/details/ageofimperialuni07bhar"
+   }
+  ]
+ },
+ {
+  "year": -323,
+  "title": "The Death of Alexander",
+  "age": "Hellenistic Age",
+  "overview": "In June 323 BCE Alexander the Great dies in Babylon at the age of 32, leaving the largest empire yet built by conquest, from Greece and Egypt to the Indus. In just eleven years he destroyed the Persian Empire and marched to India, founding cities named Alexandria along the way. Now his generals meet in Babylon: Perdiccas becomes regent for Alexander's half-brother Philip III and his unborn son Alexander IV, Ptolemy takes Egypt, and Antipater holds Macedonia, where the Greek cities have revolted in the Lamian War. Within a few years the generals, the Diadochi, will tear the empire apart. In India, the Nanda kings of Magadha rule the Ganges, but a young Chandragupta Maurya is about to overthrow them. In China, the Warring States are locked in conflict, and Qin is growing stronger. Rome is fighting the Samnites for central Italy, Carthage rules the western seas, and in the Americas the Maya and Zapotecs build cities.",
+  "regions": {
+   "southern-africa": "Southern Africa is still home to Khoisan hunter-gatherers. Iron-using Bantu farmers are spreading south through the regions of present-day Zambia, Malawi and Tanzania.",
+   "northern-africa": "Egypt, taken by Alexander in 332 BCE, is now governed by his general Ptolemy, who will soon make it his own kingdom with its capital at Alexandria. The kingdom of Kush under King Nastasen rules Nubia from Napata and Meroë, and Carthage dominates the coast of North Africa. The Nok culture flourishes in Nigeria, and small kingdoms that followed D'mt rule the Ethiopian highlands.",
+   "europe": "Macedonia rules Greece through the regent Antipater, but Athens and its allies have just risen in the Lamian War. Rome is fighting the Second Samnite War for control of central Italy, and Carthage holds western Sicily and Sardinia. Celtic tribes of the La Tène culture spread across Gaul and central Europe, and the Bosporan Kingdom rules the Crimea.",
+   "middle-east-south-asia": "Alexander's empire covers Anatolia, the Levant, Mesopotamia, Iran and Afghanistan up to the Indus, but local dynasts keep Cappadocia, Armenia and Atropatene (Media) partly independent. In India, the Nanda dynasty under Dhana Nanda rules a large and wealthy kingdom from Pataliputra, while the Punjab is held by Alexander's satraps and allied kings such as Porus. In South Arabia, the incense kingdoms of Saba, Qataban, Hadramaut and Ma'in prosper.",
+   "north-central-asia": "Sogdiana and Bactria were conquered by Alexander after fierce resistance and are held by Macedonian garrisons and new cities. Beyond the Syr Darya, Saka nomads rule the steppe, Sarmatians the lands north of the Caspian, and the forests of Siberia are home to hunters and fishers.",
+   "east-asia": "China's Warring States fight for supremacy: Qin, reformed by Shang Yang and now ruled by King Huiwen, has become the most powerful, while Qi, Chu, Zhao, Wei, Han and Yan resist. King Xian of Zhou is a figurehead. Gojoseon rules north-western Korea, Yayoi rice farming spreads across Japan, and western Tibet is home to Iron Age peoples later remembered in Tibetan tradition as the kingdom of Zhangzhung.",
+   "southeast-asia": "Bronze-drum-making Đông Sơn chiefdoms rule northern Vietnam, and Sa Huỳnh traders live on the central coast. Austronesian peoples sail between the islands, and trade with India across the Bay of Bengal is growing.",
+   "northern-north-america": "The Dorset culture hunts seals and walrus in Arctic Canada and Greenland. The Norton tradition lives in Alaska, and forest hunters and Pacific Northwest fishing peoples live across the rest of Canada.",
+   "southern-north-america": "Maya chiefdoms and early states build pyramids at El Mirador and other lowland cities, and the Zapotecs rule the Oaxaca valley from Monte Albán. The Adena culture builds burial mounds in the Ohio valley, and bison hunters roam the Plains.",
+   "northern-south-america": "The Chavín cult is fading in the Peruvian highlands, while the Paracas culture flourishes on the south coast with its famous textiles. Farming peoples of the Amazon create rich dark soils, and the Wankarani culture lives on the Bolivian high plateau.",
+   "southern-cone": "Hunter-gatherers live across the Pampas, Patagonia and Tierra del Fuego. Small farming villages influenced by the Andes grow in north-west Argentina and northern Chile.",
+   "australasia": "Aboriginal Australians and Papuan farmers live as before. Polynesians inhabit Tonga and Samoa, and the islands of eastern Polynesia and New Zealand remain uninhabited."
+  },
+  "powers": [
+   {
+    "name": "Macedonian Empire",
+    "map": "Empire of Alexander",
+    "ruler": "Perdiccas (regent for Philip III and the infant Alexander IV)",
+    "capital": "Babylon",
+    "extent": "From Greece and Egypt to the Indus"
+   },
+   {
+    "name": "Nanda Empire (Magadha)",
+    "map": "Magadha",
+    "ruler": "Dhana Nanda",
+    "capital": "Pataliputra",
+    "extent": "The Ganges plain and much of northern and eastern India"
+   },
+   {
+    "name": "Zhou states (Warring States)",
+    "map": "Zhou states",
+    "ruler": "King Xian of Zhou (figurehead); rival kings of Qi, Chu, Zhao, Wei, Han and Yan",
+    "capital": "Luoyi",
+    "extent": "Northern, central and southern China"
+   },
+   {
+    "name": "Qin",
+    "map": "Qin",
+    "ruler": "King Huiwen of Qin",
+    "capital": "Xianyang",
+    "extent": "The Wei valley and the western frontier lands of China"
+   },
+   {
+    "name": "Carthaginian Empire",
+    "map": "Carthaginian Empire",
+    "ruler": "Carthaginian council of elders and suffetes",
+    "capital": "Carthage",
+    "extent": "Coastal North Africa, western Sicily, Sardinia and southern Spain"
+   },
+   {
+    "name": "Kingdom of Kush",
+    "map": "Meroe",
+    "ruler": "Nastasen (c.)",
+    "capital": "Napata and Meroë",
+    "extent": "Nubia along the middle Nile"
+   },
+   {
+    "name": "Roman Republic",
+    "map": "Rome",
+    "ruler": "Two annually elected consuls",
+    "capital": "Rome",
+    "extent": "Latium and Campania in central Italy"
+   },
+   {
+    "name": "Celts (La Tène)",
+    "map": "Celts",
+    "ruler": "Tribal chiefs",
+    "capital": null,
+    "extent": "Gaul, central Europe and northern Italy"
+   }
+  ],
+  "events": [
+   {
+    "year": -336,
+    "text": "Alexander becomes king of Macedon after the murder of Philip II"
+   },
+   {
+    "year": -333,
+    "text": "Alexander defeats Darius III at Issus"
+   },
+   {
+    "year": -331,
+    "text": "Alexandria founded in Egypt; Battle of Gaugamela ends Persian power"
+   },
+   {
+    "year": -326,
+    "text": "Battle of the Hydaspes against Porus in the Punjab"
+   },
+   {
+    "year": -323,
+    "text": "Alexander dies in Babylon; Perdiccas becomes regent"
+   },
+   {
+    "year": -323,
+    "text": "Athens and its allies revolt against Macedon in the Lamian War"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia: Partition of Babylon",
+    "url": "https://en.wikipedia.org/wiki/Partition_of_Babylon"
+   },
+   {
+    "title": "Wikipedia: Nanda Empire",
+    "url": "https://en.wikipedia.org/wiki/Nanda_Empire"
+   },
+   {
+    "title": "Wikipedia: Nastasen",
+    "url": "https://en.wikipedia.org/wiki/Nastasen"
+   },
+   {
+    "title": "Wikipedia: King Huiwen of Qin",
+    "url": "https://en.wikipedia.org/wiki/King_Huiwen_of_Qin"
+   },
+   {
+    "title": "Wikipedia: Lamian War",
+    "url": "https://en.wikipedia.org/wiki/Lamian_War"
+   },
+   {
+    "title": "Wikipedia: Reindeer herding",
+    "url": "https://en.wikipedia.org/wiki/Reindeer_herding"
+   },
+   {
+    "title": "Wikipedia: Zhangzhung",
+    "url": "https://en.wikipedia.org/wiki/Zhangzhung"
+   },
+   {
+    "title": "Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. III.B, Campaigns and empire of Alexander the Great, 333-326 B.C.",
+    "url": "https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/Campaigns_and_empire_of_Alexander_the_Great_333-326_B.C.json&canvasID=0"
+   },
+   {
+    "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. II: The Age of Imperial Unity (Internet Archive)",
+    "url": "https://archive.org/details/ageofimperialuni07bhar"
+   }
+  ]
+ },
+ {
+  "year": -300,
+  "title": "Heirs of Alexander",
+  "age": "Hellenistic Age",
+  "overview": "By 300 BCE Alexander's empire has broken into rival kingdoms ruled by his former generals. A year ago, at the Battle of Ipsus, Seleucus, Lysimachus and Cassander defeated and killed Antigonus the One-Eyed, the last who hoped to reunite the empire. Seleucus now rules most of the Asian lands from Syria to Afghanistan and is founding his new capital of Antioch; Ptolemy holds Egypt; Cassander rules Macedonia, and Lysimachus Thrace and much of Anatolia. Greek language and culture are spreading through the old Persian world. In India, Chandragupta Maurya has built the Mauryan Empire, the first to unite most of the subcontinent, and has made peace with Seleucus in exchange for 500 war elephants. In China, the Warring States continue and Qin keeps growing. Rome is close to mastering central Italy, while Carthage dominates the western Mediterranean. Further afield, the Maya and Zapotecs grow in Mesoamerica.",
+  "regions": {
+   "southern-africa": "Khoisan hunter-gatherers live across most of southern Africa, while iron-using Bantu farmers continue to move south through East and Central Africa.",
+   "northern-africa": "Ptolemy I rules Egypt as king from Alexandria, where the great Library and Museum are being founded. The kingdom of Kush flourishes around Meroë, and Carthage controls the North African coast. The Nok culture of Nigeria and Saharan nomads live beyond, and early kingdoms rule the Ethiopian highlands.",
+   "europe": "Cassander rules Macedonia and much of Greece, Lysimachus holds Thrace, and Demetrius, son of Antigonus, keeps a fleet and scattered cities. The Roman Republic dominates central Italy and is about to fight the Third Samnite War, while Greek cities still rule southern Italy and Sicily. Celtic tribes spread across Europe, and Sarmatians are moving onto the steppe.",
+   "middle-east-south-asia": "Seleucus I rules a vast kingdom from Syria and Mesopotamia to Bactria, having ceded Arachosia, the Paropamisadae (Kabul region) and probably Gedrosia to Chandragupta. Armenia, Cappadocia and Atropatene keep their own rulers, and the Nabataeans trade from Petra. Chandragupta Maurya's empire stretches from Afghanistan to Bengal, governed from Pataliputra with the help of his minister Chanakya (Kautilya).",
+   "north-central-asia": "Bactria and Sogdiana are Seleucid provinces where Greek cities such as Ai-Khanoum are being founded. Beyond them, Saka, Sarmatian and Yuezhi nomads roam the steppe, and Siberia's forests are home to hunters and herders.",
+   "east-asia": "The Warring States continue: Qin under King Zhaoxiang is steadily conquering territory, while Qi, Chu and Zhao, whose King Wuling has adopted nomad-style cavalry, are its main rivals. King Nan of Zhou is a figurehead. Gojoseon rules north-western Korea, Yayoi rice farmers spread across Japan, and western Tibet is home to Iron Age peoples later remembered in Tibetan tradition as the kingdom of Zhangzhung.",
+   "southeast-asia": "Đông Sơn chiefdoms rule northern Vietnam, and the kingdom of Âu Lạc will form there later in the century. Austronesian traders link the islands, and Indian merchants are increasingly sailing to Southeast Asia's ports.",
+   "northern-north-america": "The Dorset culture lives in the Arctic, the Norton tradition in Alaska, and forest and coastal peoples throughout Canada live by hunting, fishing and gathering.",
+   "southern-north-america": "Maya chiefdoms and states grow in the lowlands of Guatemala and Mexico, and the Zapotec capital at Monte Albán dominates Oaxaca. The Adena culture builds mounds in the Ohio valley, while Plains bison hunters and desert foragers live further west.",
+   "northern-south-america": "The Chavín culture is ending in the Peruvian highlands, while the Paracas culture flourishes on the south coast. Amazonian farmers and foragers, and the Wankarani of the Bolivian plateau, live in their own worlds.",
+   "southern-cone": "Hunter-gatherers live across the Pampas and Patagonia. Farming villages grow in north-west Argentina and northern Chile.",
+   "australasia": "Aboriginal Australians and Papuan farmers live as before. Polynesians live in Tonga and Samoa, and the wider Pacific remains unsettled."
+  },
+  "powers": [
+   {
+    "name": "Seleucid Empire",
+    "map": "Seleucid Kingdom",
+    "ruler": "Seleucus I Nicator",
+    "capital": "Seleucia on the Tigris (Antioch being founded)",
+    "extent": "From Syria and Mesopotamia to Iran and Bactria"
+   },
+   {
+    "name": "Mauryan Empire",
+    "map": "Mauryan Empire",
+    "ruler": "Chandragupta Maurya",
+    "capital": "Pataliputra",
+    "extent": "Northern India from Afghanistan and the Indus to Bengal"
+   },
+   {
+    "name": "Ptolemaic Kingdom",
+    "map": "Ptolemaic Kingdom",
+    "ruler": "Ptolemy I Soter",
+    "capital": "Alexandria",
+    "extent": "Egypt and Cyrenaica, with claims on southern Syria (Cyprus is held by Demetrius until 295 BCE)"
+   },
+   {
+    "name": "Zhou states (Warring States)",
+    "map": "Zhou states",
+    "ruler": "King Nan of Zhou (figurehead); rival kings of Qi, Chu, Zhao and others",
+    "capital": "Luoyi",
+    "extent": "Northern, central and southern China"
+   },
+   {
+    "name": "Qin",
+    "map": "Qin",
+    "ruler": "King Zhaoxiang of Qin",
+    "capital": "Xianyang",
+    "extent": "Western China, including the Wei valley and Sichuan"
+   },
+   {
+    "name": "Carthaginian Empire",
+    "map": "Carthaginian Empire",
+    "ruler": "Carthaginian council and suffetes",
+    "capital": "Carthage",
+    "extent": "Coastal North Africa, western Sicily, Sardinia and southern Spain"
+   },
+   {
+    "name": "Demetrius (Antigonid remnant)",
+    "map": "Kingdom of Antigonus",
+    "ruler": "Demetrius I Poliorcetes",
+    "capital": null,
+    "extent": "A powerful fleet, Cyprus, Phoenician ports and some Greek cities"
+   },
+   {
+    "name": "Kingdom of Lysimachus",
+    "map": "Kingdom of Lysimachus",
+    "ruler": "Lysimachus",
+    "capital": "Lysimachia",
+    "extent": "Thrace and, since Ipsus, much of western Anatolia"
+   },
+   {
+    "name": "Kingdom of Cassander",
+    "map": "Kingdom of Kassander",
+    "ruler": "Cassander",
+    "capital": "Pella",
+    "extent": "Macedonia and much of mainland Greece"
+   },
+   {
+    "name": "Roman Republic",
+    "map": "Roman Republic",
+    "ruler": "Two annually elected consuls",
+    "capital": "Rome",
+    "extent": "Central Italy"
+   }
+  ],
+  "events": [
+   {
+    "year": -321,
+    "text": "Chandragupta Maurya overthrows the Nanda dynasty (c. 321 BCE)"
+   },
+   {
+    "year": -312,
+    "text": "Seleucus retakes Babylon, starting the Seleucid era"
+   },
+   {
+    "year": -306,
+    "text": "Alexander's generals begin calling themselves kings (306–305 BCE)"
+   },
+   {
+    "year": -303,
+    "text": "Seleucus and Chandragupta make peace; 500 elephants change hands (c. 303 BCE)"
+   },
+   {
+    "year": -301,
+    "text": "Battle of Ipsus: Antigonus is killed and his realm divided"
+   },
+   {
+    "year": -300,
+    "text": "Seleucus founds Antioch on the Orontes"
+   },
+   {
+    "year": -295,
+    "text": "Library and Museum of Alexandria founded under Ptolemy I (c. 295 BCE)"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia: Seleucus I Nicator",
+    "url": "https://en.wikipedia.org/wiki/Seleucus_I_Nicator"
+   },
+   {
+    "title": "Wikipedia: Ptolemaic Kingdom",
+    "url": "https://en.wikipedia.org/wiki/Ptolemaic_Kingdom"
+   },
+   {
+    "title": "Wikipedia: Battle of Ipsus",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Ipsus"
+   },
+   {
+    "title": "Wikipedia: Ai-Khanoum",
+    "url": "https://en.wikipedia.org/wiki/Ai-Khanoum"
+   },
+   {
+    "title": "Wikipedia: Âu Lạc",
+    "url": "https://en.wikipedia.org/wiki/%C3%82u_L%E1%BA%A1c"
+   },
+   {
+    "title": "Wikipedia: King Wuling of Zhao",
+    "url": "https://en.wikipedia.org/wiki/King_Wuling_of_Zhao"
+   },
+   {
+    "title": "Wikipedia: Zhangzhung",
+    "url": "https://en.wikipedia.org/wiki/Zhangzhung"
+   },
+   {
+    "title": "Wikipedia: Ptolemaic Cyprus",
+    "url": "https://en.wikipedia.org/wiki/Ptolemaic_Cyprus"
+   },
+   {
+    "title": "Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. III.B, The time of the Mauryan Empire, 321-181 B.C.",
+    "url": "https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/The_time_of_the_Mauryan_Empire_321-181_B.C.json&canvasID=0"
+   },
+   {
+    "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. II: The Age of Imperial Unity (Internet Archive)",
+    "url": "https://archive.org/details/ageofimperialuni07bhar"
+   }
+  ]
+ },
+ {
+  "year": -200,
+  "title": "Rome and Han Rise",
+  "age": "Hellenistic Age",
+  "overview": "Around 200 BCE two new powers are rising at opposite ends of Eurasia. In the west, Rome has just defeated Hannibal at Zama and forced Carthage to surrender its empire, making Rome master of the western Mediterranean; now it turns east to fight Philip V of Macedon. In the east, China was united by the First Emperor of Qin in 221 BCE, but his dynasty collapsed after his death; Liu Bang has founded the Han dynasty as Emperor Gaozu. This year, at Baideng, he was surrounded by the Xiongnu, the steppe confederation built by Modu Chanyu, and had to buy peace. Between them, the Seleucid king Antiochus III is restoring his empire and seizing southern Syria from the boy-king Ptolemy V of Egypt. Parthia and Greek Bactria grow in Iran and Central Asia, while the Mauryan Empire in India is in decline. In the Americas, Teotihuacan is beginning to grow in the Valley of Mexico.",
+  "regions": {
+   "southern-africa": "Khoisan hunter-gatherers still inhabit southern Africa, but iron-using Bantu farmers are moving south through East Africa, and the first sheep are reaching the region's herders.",
+   "northern-africa": "Ptolemy V, a child, reigns in Alexandria while his ministers lose southern Syria to the Seleucids and revolts break out in Upper Egypt. Carthage, defeated by Rome, keeps only its home territory in Tunisia, while Masinissa unites the Numidians and Mauretania rules the far west. The kingdom of Meroë flourishes in Nubia, and the Garamantes rule the Libyan Sahara.",
+   "europe": "The Roman Republic, victorious in the Second Punic War, rules Italy, Sicily, Sardinia, Corsica and eastern and southern Spain, and declares war on Philip V of Macedon, head of the Hellenic League. Pergamon under Attalus I and Rhodes back Rome. Celtic tribes hold Gaul and central Europe, Germanic peoples the north, and Sarmatians and Scythians the steppe.",
+   "middle-east-south-asia": "Antiochus III the Great rules the Seleucid Empire from Antioch, having just won the Battle of Panium. Parthia under Arsaces II rules north-eastern Iran, Nabataeans and the South Arabian kingdoms grow rich on the incense trade, and Greek Bactria under Euthydemus I expands toward India. The Mauryan Empire still rules much of India from Pataliputra, but it is shrinking and its last king will be overthrown around 185 BCE.",
+   "north-central-asia": "Greek Bactria holds the oases of the Oxus. On the steppe, Scythian, Sarmatian and Saka nomads roam from the Black Sea to the Tian Shan, while the Yuezhi in Gansu are under pressure from the newly powerful Xiongnu.",
+   "east-asia": "Emperor Gaozu (Liu Bang) has just founded the Han dynasty and is building his capital at Chang'an. North of the Great Wall, Modu Chanyu has forged the Xiongnu into a great steppe empire. Zhao Tuo rules the breakaway kingdom of Nanyue in the south, Gojoseon holds north-western Korea, and Yayoi farmers spread across Japan.",
+   "southeast-asia": "Nanyue, ruled from Panyu (Guangzhou), will soon absorb the kingdom of Âu Lạc in northern Vietnam. Mon-Khmer, Tai and Malay peoples farm and trade across the region, and trade routes link India, Southeast Asia and southern China.",
+   "northern-north-america": "Dorset hunters live in the Arctic, the Norton tradition in Alaska, and forest hunters and Pacific coast fishing peoples across the rest of Canada.",
+   "southern-north-america": "Maya cities such as El Mirador are building huge pyramids, the Zapotecs rule Oaxaca from Monte Albán, and Teotihuacan is starting to grow. In the eastern woodlands, the Adena culture is giving way to the Hopewell tradition.",
+   "northern-south-america": "With the Chavín culture gone, regional cultures flourish in Peru, among them the Paracas on the south coast. Amazonian farmers and foragers and the Wankarani of the Bolivian plateau live in their own worlds.",
+   "southern-cone": "Hunter-gatherers live across the Pampas and Patagonia, and farming villages grow in north-west Argentina and northern Chile.",
+   "australasia": "Aboriginal Australians and Papuan farmers live as before. Polynesians are settled in Tonga and Samoa, and the rest of the Pacific and New Zealand remain unsettled."
+  },
+  "powers": [
+   {
+    "name": "Han dynasty",
+    "map": "Han Empire",
+    "ruler": "Emperor Gaozu (Liu Bang)",
+    "capital": "Chang'an",
+    "extent": "Most of China from the Great Wall to the Yangtze and beyond"
+   },
+   {
+    "name": "Roman Republic",
+    "map": "Rome",
+    "ruler": "Senate and consuls (P. Sulpicius Galba and C. Aurelius Cotta)",
+    "capital": "Rome",
+    "extent": "Italy, Sicily, Sardinia, Corsica and eastern and southern Spain"
+   },
+   {
+    "name": "Seleucid Empire",
+    "map": "Seleucid Kingdom",
+    "ruler": "Antiochus III the Great",
+    "capital": "Antioch",
+    "extent": "From Anatolia and Syria through Mesopotamia to western Iran"
+   },
+   {
+    "name": "Xiongnu",
+    "map": "Xiongnu",
+    "ruler": "Modu Chanyu",
+    "capital": null,
+    "extent": "The steppes of Mongolia and beyond"
+   },
+   {
+    "name": "Mauryan Empire",
+    "map": "Mauryan Empire",
+    "ruler": "Late Mauryan kings (names uncertain)",
+    "capital": "Pataliputra",
+    "extent": "Much of northern and central India, shrinking"
+   },
+   {
+    "name": "Ptolemaic Kingdom",
+    "map": "Ptolemaic Kingdom",
+    "ruler": "Ptolemy V Epiphanes (a child)",
+    "capital": "Alexandria",
+    "extent": "Egypt, Cyrenaica and Cyprus"
+   },
+   {
+    "name": "Greco-Bactrian Kingdom",
+    "map": "Bactria",
+    "ruler": "Euthydemus I (c.)",
+    "capital": "Bactra",
+    "extent": "Bactria, Sogdiana and the Hindu Kush"
+   },
+   {
+    "name": "Parthia",
+    "map": "Parthia",
+    "ruler": "Arsaces II (c. 217–191 BCE)",
+    "capital": "Hecatompylos",
+    "extent": "North-eastern Iran"
+   },
+   {
+    "name": "Macedon",
+    "map": "Macedon and Hellenic League",
+    "ruler": "Philip V",
+    "capital": "Pella",
+    "extent": "Macedonia and much of Greece"
+   }
+  ],
+  "events": [
+   {
+    "year": -221,
+    "text": "Qin Shi Huang unifies China as the First Emperor"
+   },
+   {
+    "year": -218,
+    "text": "Hannibal crosses the Alps into Italy"
+   },
+   {
+    "year": -209,
+    "text": "Modu becomes chanyu and builds the Xiongnu empire"
+   },
+   {
+    "year": -202,
+    "text": "Liu Bang proclaimed emperor of Han; Scipio defeats Hannibal at Zama"
+   },
+   {
+    "year": -200,
+    "text": "Xiongnu surround Emperor Gaozu at Baideng"
+   },
+   {
+    "year": -200,
+    "text": "Antiochus III defeats the Ptolemies at Panium; Rome declares war on Macedon"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia: Battle of Panium",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Panium"
+   },
+   {
+    "title": "Wikipedia: Battle of Baideng",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Baideng"
+   },
+   {
+    "title": "Wikipedia: Publius Sulpicius Galba Maximus",
+    "url": "https://en.wikipedia.org/wiki/Publius_Sulpicius_Galba_Maximus"
+   },
+   {
+    "title": "Wikipedia: Euthydemus I",
+    "url": "https://en.wikipedia.org/wiki/Euthydemus_I"
+   },
+   {
+    "title": "Wikipedia: Arsaces II of Parthia",
+    "url": "https://en.wikipedia.org/wiki/Arsaces_II_of_Parthia"
+   },
+   {
+    "title": "Wikipedia: Second Punic War",
+    "url": "https://en.wikipedia.org/wiki/Second_Punic_War"
+   },
+   {
+    "title": "Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. III.B, The time of the Mauryan Empire, 321-181 B.C.",
+    "url": "https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/The_time_of_the_Mauryan_Empire_321-181_B.C.json&canvasID=0"
+   },
+   {
+    "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. II: The Age of Imperial Unity (Internet Archive)",
+    "url": "https://archive.org/details/ageofimperialuni07bhar"
+   }
+  ]
+ },
+ {
+  "year": -100,
+  "title": "The Silk Road Opens",
+  "age": "Late Hellenistic Age",
+  "overview": "In 100 BCE the Han dynasty of China and the Roman Republic are the great powers of the world, linked by the trade routes we now call the Silk Road. Emperor Wu of Han has pushed China's borders into Korea, southern China, northern Vietnam and the Gansu corridor, and his envoy Zhang Qian has opened contact with Central Asia; Chinese silk now travels west. Rome, which destroyed Carthage and Corinth in 146 BCE, rules most of the Mediterranean coast, but is torn by political violence; Gaius Marius, consul for the sixth time, has just saved Italy from invading Germanic tribes, and Julius Caesar is born this year. Between them, the Parthian king Mithridates II has made Parthia the great power of Iran and Mesopotamia, while the once-mighty Seleucid kingdom is reduced to a quarrelling rump in Syria. In India, the Shunga dynasty rules the Ganges and Indo-Greek kings the north-west. In the Americas, the Maya city of El Mirador is at its height.",
+  "regions": {
+   "southern-africa": "Khoisan hunter-gatherers live across southern Africa, and herding of sheep and cattle is spreading among some Khoe peoples. Iron-using Bantu farmers continue their spread southward through East Africa.",
+   "northern-africa": "Ptolemy X Alexander I rules Egypt from Alexandria, but the dynasty is weak and dependent on Rome. Roman Africa (old Carthage) is a province, Numidia is ruled by Gauda after Jugurtha's defeat, and Mauretania by Bocchus I. The kingdom of Meroë flourishes in Nubia, and early Aksum is emerging in the Ethiopian highlands.",
+   "europe": "The Roman Republic rules Italy, much of Spain, southern Gaul, Greece, Macedonia and western Anatolia, though its politics are turning violent. Marius has destroyed the migrating Cimbri and Teutones at Aquae Sextiae (102 BCE) and Vercellae (101 BCE). Celtic tribes hold Gaul and Britain, Dacians the Carpathians, Germanic peoples the north, and Sarmatians the steppe; Mithridates VI of Pontus controls much of the Black Sea coast.",
+   "middle-east-south-asia": "Mithridates II of Parthia rules from Iran to Mesopotamia, while rival Seleucid kings fight over what is left of Syria. Pontus, Armenia, the Nabataeans and the South Arabian kingdoms are growing. In India, the Shunga dynasty rules the Ganges plain, Indo-Greek kings rule the Punjab and Gandhara, and the Satavahanas are rising in the Deccan, with Tamil kingdoms in the far south.",
+   "north-central-asia": "The Yuezhi, driven west by the Xiongnu, have conquered Greek Bactria and settled north of the Hindu Kush; one of their clans will found the Kushan Empire. Saka tribes have pushed south into Iran and India, while Sarmatians and Kangju nomads hold the steppe.",
+   "east-asia": "Emperor Wu of Han rules from Chang'an over an empire that now includes southern China, northern Vietnam and northern Korea, where four commanderies were set up in 108 BCE. The Xiongnu, under Qiedihou Chanyu, still rule Mongolia but have been driven back by Han armies. Yayoi Japan is divided into many small states.",
+   "southeast-asia": "Northern Vietnam is now part of Han China, governed as the commanderies of Jiaozhi and Jiuzhen. Elsewhere, Đông Sơn bronze drums are traded widely, and Indian merchants sail to Southeast Asia's ports, while kingdoms such as early Arakan arise.",
+   "northern-north-america": "The Dorset culture hunts in the Arctic, and the Norton tradition along Alaska's coasts. In southern Canada, the Laurel and Point Peninsula cultures fish, hunt and make pottery around the Great Lakes.",
+   "southern-north-america": "The Hopewell culture of the Ohio valley builds geometric earthworks and trades across the continent. The Maya city of El Mirador, with its huge pyramids, is at its height, Monte Albán rules Oaxaca, and Teotihuacan is growing in the Valley of Mexico.",
+   "northern-south-america": "On Peru's south coast, the Nazca culture is emerging from the Paracas and will soon create its famous ground drawings. Regional cultures flourish along the Andes, and Amazonian peoples farm and fish along the rivers.",
+   "southern-cone": "Hunter-gatherers live across the Pampas, Patagonia and Tierra del Fuego, and farming villages grow in north-west Argentina and northern Chile.",
+   "australasia": "Aboriginal Australians and Papuan farmers live as before. Polynesians are settled in Tonga and Samoa, and New Zealand and most of the Pacific remain unsettled."
+  },
+  "powers": [
+   {
+    "name": "Han dynasty",
+    "map": "Han Empire",
+    "ruler": "Emperor Wu of Han",
+    "capital": "Chang'an",
+    "extent": "China, northern Korea, northern Vietnam and the Gansu corridor"
+   },
+   {
+    "name": "Roman Republic",
+    "map": "Roman Republic",
+    "ruler": "Senate and consuls (Gaius Marius, sixth consulship)",
+    "capital": "Rome",
+    "extent": "Italy, much of Spain, southern Gaul, Greece, Macedonia, North Africa and western Anatolia"
+   },
+   {
+    "name": "Parthian Empire",
+    "map": "Parthia",
+    "ruler": "Mithridates II",
+    "capital": "Ctesiphon and Ecbatana",
+    "extent": "Iran and Mesopotamia"
+   },
+   {
+    "name": "Xiongnu",
+    "map": "Xiongnu",
+    "ruler": "Qiedihou Chanyu",
+    "capital": null,
+    "extent": "The steppes of Mongolia and southern Siberia"
+   },
+   {
+    "name": "Yuezhi (forerunners of the Kushans)",
+    "map": "Kushan Empire",
+    "ruler": "Yuezhi chiefs",
+    "capital": null,
+    "extent": "Bactria and the lands north of the Hindu Kush"
+   },
+   {
+    "name": "Shunga dynasty",
+    "map": "Mauryan Empire",
+    "ruler": "Shunga kings (Bhagabhadra, c.)",
+    "capital": "Pataliputra and Vidisha",
+    "extent": "The Ganges plain and central India"
+   },
+   {
+    "name": "Ptolemaic Kingdom",
+    "map": "Ptolemaic Kingdom",
+    "ruler": "Ptolemy X Alexander I",
+    "capital": "Alexandria",
+    "extent": "Egypt (Cyprus is held by his exiled brother and rival Ptolemy IX)"
+   },
+   {
+    "name": "Seleucid Kingdom",
+    "map": "Seleucid Kingdom",
+    "ruler": "Rival kings Antiochus VIII and Antiochus IX",
+    "capital": "Antioch",
+    "extent": "Northern Syria and Cilicia"
+   },
+   {
+    "name": "Kingdom of Meroë",
+    "map": "Meroe",
+    "ruler": "Meroitic kings and queens",
+    "capital": "Meroë",
+    "extent": "Nubia along the middle Nile"
+   },
+   {
+    "name": "Numidia",
+    "map": "Numidia",
+    "ruler": "Gauda",
+    "capital": "Cirta",
+    "extent": "Present-day Algeria and western Tunisia"
+   }
+  ],
+  "events": [
+   {
+    "year": -146,
+    "text": "Rome destroys Carthage and Corinth"
+   },
+   {
+    "year": -126,
+    "text": "Zhang Qian returns to Chang'an after his journey to Central Asia"
+   },
+   {
+    "year": -111,
+    "text": "Han conquers Nanyue and northern Vietnam"
+   },
+   {
+    "year": -108,
+    "text": "Han conquers Gojoseon and sets up commanderies in Korea"
+   },
+   {
+    "year": -102,
+    "text": "Marius defeats the Teutones at Aquae Sextiae"
+   },
+   {
+    "year": -101,
+    "text": "Han armies defeat Dayuan (Ferghana) and win its famous horses"
+   },
+   {
+    "year": -100,
+    "text": "Julius Caesar is born in Rome"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia: Mithridates II of Parthia",
+    "url": "https://en.wikipedia.org/wiki/Mithridates_II_of_Parthia"
+   },
+   {
+    "title": "Wikipedia: Qiedihou",
+    "url": "https://en.wikipedia.org/wiki/Qiedihou"
+   },
+   {
+    "title": "Wikipedia: Bhagabhadra",
+    "url": "https://en.wikipedia.org/wiki/Bhagabhadra"
+   },
+   {
+    "title": "Wikipedia: Ptolemy IX Soter",
+    "url": "https://en.wikipedia.org/wiki/Ptolemy_IX_Soter"
+   },
+   {
+    "title": "Wikipedia: Gaius Marius",
+    "url": "https://en.wikipedia.org/wiki/Gaius_Marius"
+   },
+   {
+    "title": "Wikipedia: Hispania",
+    "url": "https://en.wikipedia.org/wiki/Hispania"
+   },
+   {
+    "title": "Wikipedia: Ptolemy IX Soter II",
+    "url": "https://en.wikipedia.org/wiki/Ptolemy_IX_Soter_II"
+   },
+   {
+    "title": "Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. III.C.2, The Satavahana-Saka-Kusana age, c. A.D. 1-300",
+    "url": "https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/The_Satavahana-Saka-Kusana_age_c._A.D._1-300.json&canvasID=0"
+   },
+   {
+    "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. II: The Age of Imperial Unity (Internet Archive)",
+    "url": "https://archive.org/details/ageofimperialuni07bhar"
+   }
+  ]
+ },
+ {
+  "year": -1,
+  "title": "The Augustan World",
+  "age": "Classical Antiquity",
+  "overview": "At the end of the last year before the Common Era, by some estimates about half of humanity lives under two empires. Augustus, the first Roman emperor, rules the whole Mediterranean, from Spain and Gaul to Syria and Egypt, after ending a century of civil wars at Actium in 31 BCE. Peace, roads and trade bind his empire together. At the other end of Eurasia, the Han dynasty rules China; this year the young Emperor Ai died and the child Emperor Ping was enthroned, with the powerful courtier Wang Mang as regent, who will one day seize the throne. Between them, the Parthian Empire rules Iran and Mesopotamia, nomads such as the Xiongnu, Sarmatians and Yuezhi control the steppes, and Saka and Indo-Parthian kings rule north-western India, while the Satavahanas hold the Deccan. In Judea, Herod the Great has recently died and Jesus of Nazareth has been born. In the Americas, Teotihuacan is growing fast, and the Nazca are drawing their lines in the Peruvian desert.",
+  "regions": {
+   "southern-africa": "Khoisan hunter-gatherers and the first Khoe herders of sheep live across southern Africa. Iron-using Bantu farmers are spreading south from the Great Lakes toward the Zambezi. Madagascar has not yet been settled.",
+   "northern-africa": "Egypt is a Roman province, annexed after the deaths of Cleopatra and Antony in 30 BCE, and the coast from Morocco to Libya is Roman or ruled by client kings such as Juba II of Mauretania. Meroë, under its queens (kandakes), flourishes in Nubia after making peace with Rome, and the kingdom of Aksum is rising in Ethiopia. Berbers and Saharan nomads live beyond.",
+   "europe": "Augustus rules an empire covering Italy, Spain, Gaul, Greece and the Balkans, and his armies are campaigning in Germany beyond the Rhine. Client kings rule Thrace and the Bosporan Kingdom in the Crimea. Germanic peoples such as the Marcomanni under Maroboduus hold central Europe, Dacians the Carpathians, Celts Britain and Ireland, and Sarmatians the steppe.",
+   "middle-east-south-asia": "Rome rules Anatolia and Syria, with Herod's son Archelaus ruling Judea and Aretas IV the Nabataeans at Petra. Phraates V rules the Parthian Empire from Ctesiphon, the Indo-Parthians (Suren) hold eastern Iran and Afghanistan, and Indo-Scythian kings rule north-west India. The Satavahanas rule the Deccan, Kalinga holds the east coast, Tamil kingdoms the south, and the Himyarites are rising in Yemen.",
+   "north-central-asia": "The Yuezhi tribes in Bactria are about to be united by Kujula Kadphises into the Kushan Empire. Sarmatian and Alan nomads hold the western steppe, while the Kangju and Wusun roam Central Asia and the Xiongnu rule Mongolia.",
+   "east-asia": "The Han dynasty rules China, Korea's north-west and northern Vietnam from Chang'an; the child Emperor Ping has just been enthroned with Wang Mang as regent. The Xiongnu, now at peace with and partly dependent on Han, rule the steppe. In Korea, the young kingdoms of Goguryeo, Silla and Baekje are emerging, and Yayoi Japan has many small states.",
+   "southeast-asia": "Northern Vietnam is governed as Han commanderies, while elsewhere chiefdoms grow rich on sea trade between India and China. Indian traders and ideas reach the Malay Peninsula and the Mekong delta, where the kingdom of Funan will soon arise, and Arakan grows in western Burma.",
+   "northern-north-america": "The Dorset culture lives in the Arctic, and the Norton tradition along Alaska's coasts. In southern Canada, the Laurel and Point Peninsula peoples fish and hunt around the Great Lakes, and the Pacific Northwest peoples live in large cedar-plank villages.",
+   "southern-north-america": "The Hopewell culture of the Ohio valley builds great earthworks and trades obsidian, copper and shells over thousands of kilometres. Teotihuacan is becoming the largest city in the Americas, Monte Albán rules Oaxaca, and the Maya Preclassic cities of the lowlands, such as El Mirador, are at their height.",
+   "northern-south-america": "The Nazca culture of Peru's south coast is beginning to draw its giant lines in the desert, and the Moche are emerging on the north coast. Amazonian peoples farm and fish along the rivers, and the Wankarani and other cultures live on the Bolivian high plateau.",
+   "southern-cone": "Hunter-gatherers live across the Pampas, Patagonia and Tierra del Fuego. Farming villages flourish in north-west Argentina and northern Chile, and the ancestors of the Mapuche live in central Chile.",
+   "australasia": "Aboriginal Australians and Papuan farmers live as before. Polynesians live in Tonga and Samoa, and the great voyages to eastern Polynesia, Hawaii and New Zealand are still many centuries away."
+  },
+  "powers": [
+   {
+    "name": "Roman Empire",
+    "map": "Roman Empire",
+    "ruler": "Augustus",
+    "capital": "Rome",
+    "extent": "The whole Mediterranean, from Spain and Gaul to Syria and Egypt"
+   },
+   {
+    "name": "Han dynasty",
+    "map": "Han",
+    "ruler": "Emperor Ping (a child), with Wang Mang as regent",
+    "capital": "Chang'an",
+    "extent": "China, north-western Korea and northern Vietnam"
+   },
+   {
+    "name": "Parthian Empire",
+    "map": "Parthian Empire",
+    "ruler": "Phraates V (Phraataces)",
+    "capital": "Ctesiphon",
+    "extent": "Iran and Mesopotamia, from the Euphrates to Afghanistan"
+   },
+   {
+    "name": "Xiongnu",
+    "map": "Xiongnu",
+    "ruler": "Wuzhuliu Chanyu",
+    "capital": null,
+    "extent": "The steppes of Mongolia and southern Siberia"
+   },
+   {
+    "name": "Indo-Scythians (Saka)",
+    "map": "Saka Kingdom",
+    "ruler": "Indo-Scythian kings",
+    "capital": "Taxila and Mathura",
+    "extent": "North-western and western India"
+   },
+   {
+    "name": "Satavahana Empire",
+    "map": "Satavahanihara",
+    "ruler": "Satavahana kings",
+    "capital": "Pratishthana",
+    "extent": "The Deccan plateau of central India"
+   },
+   {
+    "name": "Indo-Parthian (Suren) realm",
+    "map": "Suren Kingdom",
+    "ruler": "House of Suren",
+    "capital": null,
+    "extent": "Eastern Iran, Afghanistan and the lower Indus"
+   },
+   {
+    "name": "Kingdom of Meroë",
+    "map": "Meroe",
+    "ruler": "Kandake Amanishakheto (dates uncertain)",
+    "capital": "Meroë",
+    "extent": "Nubia along the middle Nile"
+   },
+   {
+    "name": "Himyarite Kingdom",
+    "map": "Himyarite Kingdom",
+    "ruler": "Himyarite kings",
+    "capital": "Zafar",
+    "extent": "South-western Arabia (Yemen)"
+   }
+  ],
+  "events": [
+   {
+    "year": -53,
+    "text": "Parthians destroy a Roman army under Crassus at Carrhae"
+   },
+   {
+    "year": -44,
+    "text": "Julius Caesar is assassinated in Rome"
+   },
+   {
+    "year": -31,
+    "text": "Octavian defeats Antony and Cleopatra at Actium"
+   },
+   {
+    "year": -27,
+    "text": "Octavian takes the title Augustus, becoming the first Roman emperor"
+   },
+   {
+    "year": -5,
+    "text": "Birth of Jesus of Nazareth in Judea (c. 6–4 BCE)"
+   },
+   {
+    "year": -4,
+    "text": "Death of Herod the Great; his kingdom is divided among his sons"
+   },
+   {
+    "year": -1,
+    "text": "Emperor Ai of Han dies; the child Emperor Ping is enthroned with Wang Mang as regent"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia: Emperor Ping of Han",
+    "url": "https://en.wikipedia.org/wiki/Emperor_Ping_of_Han"
+   },
+   {
+    "title": "Wikipedia: Phraates V",
+    "url": "https://en.wikipedia.org/wiki/Phraates_V"
+   },
+   {
+    "title": "Wikipedia: Wuzhuliu",
+    "url": "https://en.wikipedia.org/wiki/Wuzhuliu"
+   },
+   {
+    "title": "Wikipedia: Herod Archelaus",
+    "url": "https://en.wikipedia.org/wiki/Herod_Archelaus"
+   },
+   {
+    "title": "Wikipedia: Maroboduus",
+    "url": "https://en.wikipedia.org/wiki/Maroboduus"
+   },
+   {
+    "title": "Wikipedia: Amanishakheto",
+    "url": "https://en.wikipedia.org/wiki/Amanishakheto"
+   },
+   {
+    "title": "Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. III.C.2, The Satavahana-Saka-Kusana age, c. A.D. 1-300",
+    "url": "https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/The_Satavahana-Saka-Kusana_age_c._A.D._1-300.json&canvasID=0"
+   },
+   {
+    "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. II: The Age of Imperial Unity (Internet Archive)",
+    "url": "https://archive.org/details/ageofimperialuni07bhar"
+   }
+  ]
+ }
+]

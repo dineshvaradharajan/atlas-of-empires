@@ -1,0 +1,1559 @@
+[
+ {
+  "year": 1815,
+  "title": "Waterloo and the Vienna Settlement",
+  "age": "Age of Revolutions",
+  "overview": "The world of 1815 is catching its breath after more than twenty years of revolutionary and Napoleonic war. Napoleon's final gamble ended at Waterloo in June, and he has been shipped to the remote island of St Helena. At the Congress of Vienna the victors, Britain, Russia, Austria and Prussia, have redrawn Europe's map to restore kings and keep France in check, aiming for a balance of power that will largely hold for a century. Britain emerges as the unrivalled master of the seas and is tightening its grip on India. Qing China, under the Jiaqing Emperor, is still the world's largest economy, but strains are showing. In the Americas, Spain's empire is crumbling as independence wars rage from Mexico to Argentina, while the young United States has just ended its war with Britain. In April the eruption of Tambora in Indonesia, the most powerful in recorded history, threw ash into the sky that will cause the 'Year Without a Summer' in 1816. Most people everywhere still live as farmers, but steam engines and factories are spreading through Britain.",
+  "regions": {
+   "southern-africa": "Britain holds the Cape Colony, seized from the Dutch in 1806 and formally ceded in 1814, where Dutch-speaking farmers (Boers) and Xhosa clash on the eastern frontier. Among the Nguni to the east, Dingiswayo's Mthethwa confederacy dominates, and a young commander named Shaka is about to found the Zulu kingdom. Portugal clings to coastal Angola and Mozambique, Radama I is uniting Madagascar under the Merina kingdom, and the Omani sultan Said bin Sultan holds Zanzibar and claims the Swahili coast, though Mombasa resists him until 1837. Inland, kingdoms such as the Lozi, Lunda and Kazembe trade in ivory, copper and slaves.",
+   "northern-africa": "Egypt is ruled by Muhammad Ali, nominally an Ottoman governor but in practice an independent modernising strongman. Along the Barbary Coast, the Ottoman regencies of Algiers, Tunis and Tripoli live partly from piracy, which the United States punished in a brief war in 1815, while Sultan Mulay Slimane rules Morocco. In West Africa, Usman dan Fodio's jihad has created the vast Sokoto Caliphate (the 'Fulani Empire'), and the Asante kingdom under Osei Bonsu dominates the forest zone. Ethiopia is splintered in the 'Era of the Princes', with powerless emperors and feuding regional lords.",
+   "europe": "The Congress of Vienna restores Louis XVIII to the French throne and creates a German Confederation of 39 states led by Austria's Emperor Francis I and his minister Metternich. Prussia, under Frederick William III, gains the Rhineland; Tsar Alexander I of Russia takes most of Poland as its king; and a new United Kingdom of the Netherlands joins Holland and Belgium under William I. Britain, under the ailing George III and his son the Prince Regent, keeps Malta and other strategic islands. Italy is divided among Austria (Lombardy-Venetia), the Kingdom of Sardinia, the Papal States under Pius VII, and the restored Bourbon kingdom of Naples and Sicily.",
+   "middle-east-south-asia": "Sultan Mahmud II rules the Ottoman Empire from Constantinople, from the Balkans through Anatolia to Iraq and the Hejaz, though local strongmen act freely. Persia is ruled by Fath-Ali Shah of the Qajar dynasty, which has recently lost Georgia and much of the Caucasus to Russia. In central Arabia the first Saudi-Wahhabi state, under Abdullah bin Saud, is under attack from Egyptian armies sent by the Ottomans. In India the British East India Company, under Governor-General Lord Moira (Hastings), dominates through direct rule and princely alliances; the Mughal emperor Akbar II is a pensioner in Delhi, the Maratha Peshwa is on the verge of final defeat, and Ranjit Singh's Sikh kingdom rules the Punjab.",
+   "north-central-asia": "Russia rules all of Siberia to the Pacific and claims overlordship of the Kazakh hordes of the northern steppe. Further south, the Uzbek khanates of Khiva, Bukhara and Kokand rule the old Silk Road oases of Transoxiana. Qing China holds Dzungaria and the Tarim Basin (later called Xinjiang), conquered in the 1750s, through garrisons and local Muslim nobles.",
+   "east-asia": "The Qing dynasty, under the Jiaqing Emperor, rules China, Manchuria, Mongolia, Tibet and Xinjiang, the largest extent China has ever reached, but faces rebellions, corruption and a growing opium trade. Japan remains largely closed to the outside world under the Tokugawa shogun Ienari, with Emperor Kokaku a ceremonial figure in Kyoto. Korea's Joseon dynasty, under King Sunjo, is a loyal Qing tributary, and Tibet is ruled by Buddhist regents under Qing supervision.",
+   "southeast-asia": "Mainland Southeast Asia is dominated by three strong kingdoms: Siam under King Rama II (Rattanakosin dynasty, capital Bangkok), Burma under King Bodawpaya (Konbaung dynasty), and Vietnam, recently unified by Emperor Gia Long of the Nguyen dynasty. Cambodia is squeezed between Siam and Vietnam. Java is temporarily under British rule (Stamford Raffles) but will be returned to the Dutch in 1816; Spain rules the Philippines, and Britain holds Penang and Malacca. In April 1815 Mount Tambora on Sumbawa erupted, killing tens of thousands.",
+   "northern-north-america": "British North America consists of Upper and Lower Canada, Nova Scotia, New Brunswick and Newfoundland, which have just survived American invasions in the War of 1812. The Hudson's Bay Company and its rival the North West Company control the fur trade across the vast interior of Rupert's Land. Russia's Russian-American Company runs Alaska from Sitka under Alexander Baranov, and Denmark holds Greenland. Most of the north is still the homeland of First Nations and Inuit peoples.",
+   "southern-north-america": "The United States, under President James Madison, has 18 states and stretches to the Rocky Mountains through the Louisiana Purchase; the War of 1812 ended with the Treaty of Ghent and Andrew Jackson's victory at New Orleans. Spain's Viceroyalty of New Spain, under Viceroy Felix Maria Calleja, has captured and executed the rebel priest Jose Maria Morelos, temporarily crushing Mexico's independence movement. Spain still holds Cuba, Puerto Rico and Florida, Britain has Jamaica and many smaller islands, and Haiti is split between King Henri Christophe in the north and President Alexandre Petion in the south.",
+   "northern-south-america": "Brazil is the seat of the Portuguese monarchy, which fled Napoleon in 1807: Prince Regent Joao rules from Rio de Janeiro for his mother Queen Maria I, and in December 1815 Brazil was raised to a kingdom equal to Portugal. In the north, a Spanish army under Pablo Morillo is reconquering Venezuela and New Granada, while Simon Bolivar writes his famous 'Jamaica Letter' in exile. The Viceroyalty of Peru under Viceroy Abascal remains a royalist stronghold. Britain has taken the Dutch colonies of Demerara and Essequibo, while the Dutch keep Suriname.",
+   "southern-cone": "The United Provinces of the Rio de la Plata, centred on Buenos Aires, have been self-governing since 1810 under juntas, triumvirates and, from 1814, Supreme Directors and will formally declare independence in 1816. Chile has been reconquered by Spanish royalists after the Battle of Rancagua (1814), while Jose de San Martin trains an army in Mendoza to cross the Andes. Paraguay is ruled by the reclusive dictator Jose Gaspar Rodriguez de Francia, and Jose Artigas leads the Banda Oriental (future Uruguay). The Pampas, Patagonia and southern Chile remain in the hands of Mapuche, Tehuelche and other Indigenous peoples.",
+   "australasia": "The British penal colony of New South Wales, under Governor Lachlan Macquarie, is growing beyond Sydney, with outposts in Van Diemen's Land (Tasmania); the rest of Australia is the land of hundreds of Aboriginal nations. In New Zealand, Maori iwi remain fully independent, though missionaries and traders have arrived and muskets are fuelling intertribal wars. Kamehameha I rules a united Kingdom of Hawaii, and Papuan peoples occupy New Guinea, whose western coast the Dutch loosely claim."
+  },
+  "powers": [
+   {
+    "name": "British Empire",
+    "map": "United Kingdom of Great Britain and Ireland",
+    "ruler": "George III (Prince Regent George; PM Lord Liverpool)",
+    "capital": "London",
+    "extent": "Britain and Ireland, Canada, much of India via the East India Company, the Cape, Ceylon, Caribbean islands, New South Wales, and command of the oceans"
+   },
+   {
+    "name": "Russian Empire",
+    "map": "Russian Empire",
+    "ruler": "Alexander I",
+    "capital": "St Petersburg",
+    "extent": "Eastern Europe, most of Poland, Finland, the Caucasus, all of Siberia and Alaska"
+   },
+   {
+    "name": "Qing China",
+    "map": "Manchu Empire",
+    "ruler": "Jiaqing Emperor",
+    "capital": "Beijing",
+    "extent": "China, Manchuria, Mongolia, Tibet and Xinjiang; about 14.7 million km² at its height (Taagepera) and a third of humanity"
+   },
+   {
+    "name": "Austrian Empire",
+    "map": "Austrian Empire",
+    "ruler": "Francis I (chief minister Metternich)",
+    "capital": "Vienna",
+    "extent": "Austria, Bohemia, Hungary, Galicia, Lombardy-Venetia and Dalmatia; leader of the German Confederation"
+   },
+   {
+    "name": "Kingdom of Prussia",
+    "map": "Prussia",
+    "ruler": "Frederick William III",
+    "capital": "Berlin",
+    "extent": "Northern Germany from the Rhineland to East Prussia, including part of Poland"
+   },
+   {
+    "name": "Kingdom of France",
+    "map": "France",
+    "ruler": "Louis XVIII (ousted by Napoleon's Hundred Days, March–July 1815)",
+    "capital": "Paris",
+    "extent": "France within roughly its 1790 borders, plus small Caribbean, African and Indian colonies"
+   },
+   {
+    "name": "Ottoman Empire",
+    "map": "Ottoman Empire",
+    "ruler": "Mahmud II",
+    "capital": "Constantinople",
+    "extent": "The Balkans, Anatolia, the Levant, Iraq and the Hejaz, with nominal rule over Egypt and North Africa"
+   },
+   {
+    "name": "Spanish Empire",
+    "map": "Spain",
+    "ruler": "Ferdinand VII",
+    "capital": "Madrid",
+    "extent": "Spain plus a crumbling American empire from Mexico to Peru, Cuba, Puerto Rico and the Philippines"
+   },
+   {
+    "name": "United States",
+    "map": "United States",
+    "ruler": "President James Madison",
+    "capital": "Washington",
+    "extent": "18 states (all but Louisiana east of the Mississippi) plus the Louisiana Purchase lands west to the Rockies"
+   }
+  ],
+  "events": [
+   {
+    "year": 1812,
+    "text": "Napoleon's invasion of Russia ends in catastrophe; the War of 1812 begins between Britain and the United States"
+   },
+   {
+    "year": 1814,
+    "text": "Napoleon abdicates and is exiled to Elba; the Treaty of Ghent ends the War of 1812"
+   },
+   {
+    "year": 1815,
+    "text": "Mount Tambora erupts in Indonesia, the largest eruption in recorded history"
+   },
+   {
+    "year": 1815,
+    "text": "Congress of Vienna completes its settlement of Europe"
+   },
+   {
+    "year": 1815,
+    "text": "Napoleon is defeated at Waterloo by Wellington and Blucher and exiled to St Helena"
+   },
+   {
+    "year": 1815,
+    "text": "Spanish forces execute Mexican rebel leader Jose Maria Morelos"
+   },
+   {
+    "year": 1816,
+    "text": "Argentina declares independence; the 'Year Without a Summer' brings famine to Europe and North America"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia: Hundred Days",
+    "url": "https://en.wikipedia.org/wiki/Hundred_Days"
+   },
+   {
+    "title": "Wikipedia: Louisiana",
+    "url": "https://en.wikipedia.org/wiki/Louisiana"
+   },
+   {
+    "title": "Wikipedia: 1815 eruption of Mount Tambora",
+    "url": "https://en.wikipedia.org/wiki/1815_eruption_of_Mount_Tambora"
+   },
+   {
+    "title": "Wikipedia: List of largest empires (Taagepera, Turchin et al. areas)",
+    "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+   },
+   {
+    "title": "Wikipedia: Said bin Sultan",
+    "url": "https://en.wikipedia.org/wiki/Said_bin_Sultan"
+   },
+   {
+    "title": "Wikipedia: Supreme Director of the United Provinces of the Río de la Plata",
+    "url": "https://en.wikipedia.org/wiki/Supreme_Director_of_the_United_Provinces_of_the_R%C3%ADo_de_la_Plata"
+   },
+   {
+    "title": "UNESCO General History of Africa, vol. VI: Africa in the Nineteenth Century until the 1880s (ed. J. F. Ade Ajayi, 1989)",
+    "url": "https://archive.org/details/general_history_africa_vi"
+   },
+   {
+    "title": "Schwartzberg, A Historical Atlas of South Asia (DSAL), pl. VII.A, The expansion of British power, 1766-1819",
+    "url": "https://dsal.uchicago.edu/reference/schwartzberg/schwartzberg_mirador?https://dsal.uchicago.edu/reference/schwartzberg/manifests/map_groups/The_expansion_of_British_power_1766-1819.json&canvasID=0"
+   },
+   {
+    "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. IX: British Paramountcy and Indian Renaissance, Part I (Internet Archive)",
+    "url": "https://archive.org/details/britishparamount09bhar"
+   }
+  ]
+ },
+ {
+  "year": 1880,
+  "title": "Steam, Rail and Empire",
+  "age": "Age of Imperialism",
+  "overview": "By 1880 railways, steamships and the telegraph have shrunk the world, and the industrial nations of Europe and North America are pulling far ahead of everyone else. Queen Victoria's Britain is the workshop of the world and the greatest empire, its rule in India now formalised in the British Raj. Germany, united in 1871 under Kaiser Wilhelm I and Chancellor Otto von Bismarck, is the strongest land power in Europe, while France rebuilds as a republic after its defeat. Russia is pushing deep into Central Asia, and the United States, healed from its Civil War, is filling the continent with railways, farms and immigrants. Africa's interior is still largely self-governed, but explorers and traders are paving the way for a European 'Scramble for Africa' that will soon carve up the continent. In East Asia, Meiji Japan is modernising at breakneck speed, while Qing China struggles to reform. Wars rage in Afghanistan, South America and southern Africa, and electric light and the telephone are brand-new wonders.",
+  "regions": {
+   "southern-africa": "Britain rules the Cape Colony and Natal, defeated the Zulu kingdom of Cetshwayo in 1879, and annexed the Boer republic of Transvaal in 1877; in December 1880 the Transvaal Boers rose in revolt, starting the First Boer War. The Orange Free State, under President Johannes Brand, remains independent. Portugal holds coastal Angola and Mozambique, Sultan Barghash rules Zanzibar and the Swahili coast, and in Madagascar the Merina monarchy rules under Queen Ranavalona II and her prime minister Rainilaiarivony. In the Congo basin, Henry Morton Stanley is setting up trading stations for King Leopold II of Belgium.",
+   "northern-africa": "Egypt, under Khedive Tewfik, is deep in debt and under Anglo-French financial control; it also rules the Sudan, where a religious leader will soon proclaim himself the Mahdi. France has ruled Algeria since 1830 and will make Tunisia a protectorate in 1881, while Sultan Hassan I keeps Morocco independent. Emperor Yohannes IV rules Ethiopia, and West Africa is still dominated by African states such as the Sokoto Caliphate, the Tukulor Empire of Ahmadu Tall and Samori Ture's growing Wassoulou empire. Britain holds the Gold Coast and Lagos, France holds Senegal, and Liberia is independent.",
+   "europe": "The Congress of Berlin (1878) has rearranged the Balkans: Romania, Serbia and Montenegro are fully independent, Bulgaria is autonomous, and Austria-Hungary occupies Bosnia. Kaiser Wilhelm I and Bismarck rule the German Empire and have just allied with Emperor Franz Joseph's Austria-Hungary (1879). Queen Victoria reigns in Britain, where Gladstone has just returned as prime minister; France is a republic under President Jules Grevy; and Tsar Alexander II rules Russia, where revolutionaries are hunting him. Italy, united under King Umberto I, and Spain, under Alfonso XII, are second-rank powers.",
+   "middle-east-south-asia": "Sultan Abdul Hamid II rules a shrunken Ottoman Empire after losing much of the Balkans to Russia, and Britain has taken Cyprus. Persia is ruled by Naser al-Din Shah Qajar. In the Second Anglo-Afghan War, the British were defeated at Maiwand but relieved Kandahar, and they recognised Abdur Rahman Khan as amir in 1880. Queen Victoria became Empress of India in 1877; the British Raj, under Viceroy Lord Ripon from June 1880, rules about three-fifths of the subcontinent directly and the rest through hundreds of princely states. In central Arabia the Rashidi emirs of Ha'il are the strongest power.",
+   "north-central-asia": "Russia has swept south into Central Asia, taking Tashkent (1865), Samarkand (1868) and the khanate of Kokand (1876), all governed as Russian Turkestan under Governor-General Konstantin von Kaufman. The emirate of Bukhara and the khanate of Khiva survive as Russian protectorates, and a campaign against the Turkmen is under way, culminating at Geok Tepe in January 1881. Siberia is ruled from St Petersburg and is a vast land of exiles, convicts and fur trappers, still awaiting its railway.",
+   "east-asia": "The Qing dynasty rules China under the child Guangxu Emperor, with the Empress Dowager Cixi holding real power; the 'Self-Strengthening' movement is building arsenals and steamships, and Zuo Zongtang has just reconquered Xinjiang. Meiji Japan is transforming itself into a modern state with railways, a conscript army and a new aristocracy, and annexed the Ryukyu Islands as Okinawa in 1879. Korea, under King Gojong, has been forced open by a Japanese treaty (1876), and Tibet is governed in the name of the young 13th Dalai Lama under loose Qing oversight.",
+   "southeast-asia": "Siam, under the reforming King Chulalongkorn (Rama V), remains independent. Britain rules Lower Burma, while King Thibaw rules Upper Burma from Mandalay; France holds Cochinchina in southern Vietnam and a protectorate over Cambodia, while the Nguyen emperor Tu Duc still rules the rest of Vietnam. The Dutch control much of the East Indies but are fighting a long war in Aceh; Spain rules the Philippines, Britain is extending control over the Malay states, and the Brooke family rules Sarawak as 'White Rajahs'.",
+   "northern-north-america": "The Dominion of Canada, formed in 1867 and led by Prime Minister John A. Macdonald, now stretches from the Atlantic to the Pacific after acquiring Rupert's Land and British Columbia; on 1 September 1880 Britain transferred its Arctic islands to Canada. The transcontinental Canadian Pacific Railway is about to begin construction. Newfoundland remains a separate British colony, the United States has owned Alaska since 1867, and Denmark rules Greenland.",
+   "southern-north-america": "The United States, under President Rutherford B. Hayes, has 38 states; Reconstruction of the South ended in 1877, and James Garfield won the November 1880 election. Railways, mass immigration and the final wars against the Plains peoples are transforming the West. Mexico is entering the long era of Porfirio Diaz, whose ally Manuel Gonzalez took office as president in December 1880. Spain still rules Puerto Rico and Cuba, where a ten-year independence war ended in 1878.",
+   "northern-south-america": "Brazil is an empire under Emperor Pedro II, a constitutional monarchy built on coffee and still on slave labour. On the Pacific coast, the War of the Pacific (1879-1884) pits Chile against Peru and Bolivia; Chile has seized Bolivia's coastline and Peru's nitrate province of Tarapaca and is advancing on Lima. Colombia (then the United States of Colombia, including Panama) elected Rafael Nunez in 1880, and Antonio Guzman Blanco dominates Venezuela. Britain, the Netherlands and France hold the three Guianas.",
+   "southern-cone": "Argentina, under President Julio Argentino Roca from October 1880, has just carried out the main campaign of the 'Conquest of the Desert' that seized the Pampas and northern Patagonia from Indigenous peoples, and Buenos Aires has been made the federal capital. Chile, under President Anibal Pinto, is winning the War of the Pacific and is also pushing into Mapuche lands in the south. Paraguay is still devastated by its defeat in the War of the Triple Alliance (1864-1870), and Uruguay is ruled by military-backed presidents.",
+   "australasia": "Australia is six separate self-governing British colonies, New South Wales, Victoria, Queensland, South Australia, Western Australia and Tasmania, enriched by gold and wool; the bushranger Ned Kelly was captured and hanged in 1880. New Zealand is a British colony whose wars with the Maori ended in 1872, with large areas of Maori land confiscated. Fiji became a British colony in 1874, France annexed Tahiti in 1880, King Kalakaua rules Hawaii, and eastern New Guinea is still unclaimed by Europeans."
+  },
+  "powers": [
+   {
+    "name": "British Empire",
+    "map": "United Kingdom of Great Britain and Ireland",
+    "ruler": "Victoria (PM Benjamin Disraeli, then William Gladstone from April)",
+    "capital": "London",
+    "extent": "About a sixth of the world's land: Britain, India, Canada, the Australian colonies, southern Africa and colonies on every continent"
+   },
+   {
+    "name": "Russian Empire",
+    "map": "Russian Empire",
+    "ruler": "Alexander II",
+    "capital": "St Petersburg",
+    "extent": "From Poland and Finland across Siberia to the Pacific, and south into the Caucasus and Central Asia"
+   },
+   {
+    "name": "German Empire",
+    "map": "Germany",
+    "ruler": "Wilhelm I (Chancellor Otto von Bismarck)",
+    "capital": "Berlin",
+    "extent": "Unified Germany, including Alsace-Lorraine taken from France in 1871; no colonies yet"
+   },
+   {
+    "name": "French Third Republic",
+    "map": "France",
+    "ruler": "President Jules Grevy",
+    "capital": "Paris",
+    "extent": "France, Algeria, Senegal, Cochinchina and Cambodia, plus Pacific and Caribbean islands"
+   },
+   {
+    "name": "United States",
+    "map": "United States of America",
+    "ruler": "President Rutherford B. Hayes",
+    "capital": "Washington, D.C.",
+    "extent": "38 states and western territories from Atlantic to Pacific, plus Alaska"
+   },
+   {
+    "name": "Qing China",
+    "map": "Manchu Empire",
+    "ruler": "Guangxu Emperor (Empress Dowager Cixi in control)",
+    "capital": "Beijing",
+    "extent": "China, Manchuria, Mongolia, Tibet and Xinjiang"
+   },
+   {
+    "name": "Austria-Hungary",
+    "map": "Austria Hungary",
+    "ruler": "Franz Joseph I",
+    "capital": "Vienna",
+    "extent": "Austria, Hungary, Bohemia, Galicia, Croatia and Transylvania, plus occupied Bosnia"
+   },
+   {
+    "name": "Ottoman Empire",
+    "map": "Ottoman Empire",
+    "ruler": "Abdul Hamid II",
+    "capital": "Constantinople",
+    "extent": "Anatolia, part of the Balkans, the Levant, Iraq, the Hejaz and Libya, with nominal rule over Egypt"
+   },
+   {
+    "name": "Empire of Japan",
+    "map": "Imperial Japan",
+    "ruler": "Emperor Meiji",
+    "capital": "Tokyo",
+    "extent": "The Japanese islands, including newly annexed Hokkaido settlements and Okinawa"
+   },
+   {
+    "name": "Kingdom of Italy",
+    "map": "Italy",
+    "ruler": "Umberto I",
+    "capital": "Rome",
+    "extent": "The newly unified Italian peninsula, Sicily and Sardinia"
+   }
+  ],
+  "events": [
+   {
+    "year": 1869,
+    "text": "Suez Canal opens; first US transcontinental railroad completed"
+   },
+   {
+    "year": 1871,
+    "text": "German Empire proclaimed at Versailles after the defeat of France"
+   },
+   {
+    "year": 1877,
+    "text": "Queen Victoria proclaimed Empress of India"
+   },
+   {
+    "year": 1878,
+    "text": "Congress of Berlin redraws the Balkans after the Russo-Turkish War"
+   },
+   {
+    "year": 1879,
+    "text": "Anglo-Zulu War; War of the Pacific begins; Edison demonstrates a practical light bulb"
+   },
+   {
+    "year": 1880,
+    "text": "British defeated at Maiwand in the Second Anglo-Afghan War; Abdur Rahman becomes amir"
+   },
+   {
+    "year": 1880,
+    "text": "Transvaal Boers revolt against Britain, starting the First Boer War"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia: 1880",
+    "url": "https://en.wikipedia.org/wiki/1880"
+   },
+   {
+    "title": "Wikipedia: 1880 United Kingdom general election",
+    "url": "https://en.wikipedia.org/wiki/1880_United_Kingdom_general_election"
+   },
+   {
+    "title": "Wikipedia: Princely state",
+    "url": "https://en.wikipedia.org/wiki/Princely_state"
+   },
+   {
+    "title": "Wikipedia: Conquest of the Desert",
+    "url": "https://en.wikipedia.org/wiki/Conquest_of_the_Desert"
+   },
+   {
+    "title": "Wikipedia: List of largest empires (Taagepera, Turchin et al. areas)",
+    "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+   },
+   {
+    "title": "Wikipedia: Ten Years' War",
+    "url": "https://en.wikipedia.org/wiki/Ten_Years%27_War"
+   },
+   {
+    "title": "Imperial Gazetteer of India, vol. I (1909), p. 449: area of British provinces and Native States (DSAL)",
+    "url": "https://dsal.uchicago.edu/cgi-bin/reference/gazetteer/query.py?object=479&bookid=DS405.1.I34_V01&display_type=page_display"
+   },
+   {
+    "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. IX: British Paramountcy and Indian Renaissance, Part I (Internet Archive)",
+    "url": "https://archive.org/details/britishparamount09bhar"
+   }
+  ]
+ },
+ {
+  "year": 1900,
+  "title": "Dawn of a New Century",
+  "age": "Age of Imperialism",
+  "overview": "In 1900 European empires are at their height and almost the whole of Africa has been divided among them in just twenty years. Britain still leads, but it is bogged down in a costly war against the Boer republics in South Africa, and rivals are rising fast. Germany under Kaiser Wilhelm II is building a great navy, the United States has become a world power by seizing Spain's colonies, and Japan has defeated China and is eyeing Korea. In China, the anti-foreign Boxer uprising besieged the foreign legations in Beijing until an eight-nation army stormed the city in August. Paris celebrates the new century with a giant world's fair showing off electricity, moving pictures and the Metro. Industrial cities are booming, and millions of Europeans are emigrating to the Americas, while colonised peoples from Aceh to the Philippines resist foreign rule. Queen Victoria, now 81, is nearing the end of a reign of 63 years.",
+  "regions": {
+   "southern-africa": "The Second Boer War (1899-1902) is raging: British forces under Lord Roberts captured the Boer capitals Bloemfontein and Pretoria in 1900 and annexed the Orange Free State and Transvaal, but Boer commandos fight on as guerrillas. Rhodesia is run by Cecil Rhodes's British South Africa Company, the Congo Free State is the private property of King Leopold II and notorious for forced rubber labour, and Germany holds German South-West Africa and German East Africa. Portugal rules Angola and Mozambique, and France has made Madagascar a colony, exiling its last queen, Ranavalona III.",
+   "northern-africa": "The 'Scramble for Africa' is almost complete: France holds Algeria, Tunisia and a vast French West Africa, where it killed the warlord Rabih at Kousseri in April 1900, and Britain rules Egypt through Lord Cromer under Khedive Abbas II. The Sudan became an Anglo-Egyptian condominium after the British victory at Omdurman (1898), and Britain proclaimed a protectorate over Northern Nigeria in 1900. Only Ethiopia, whose Emperor Menelik II crushed Italy at Adwa in 1896, Liberia and Morocco under the young Sultan Abdelaziz remain independent. Italy holds Eritrea and part of Somalia, and the Ottomans still hold Libya.",
+   "europe": "Europe is divided into two camps: the Triple Alliance of Germany, Austria-Hungary and Italy, and the Franco-Russian alliance, with Britain standing apart. Kaiser Wilhelm II passed a Second Naval Law in 1900 to challenge British sea power, Emperor Franz Joseph rules a restless multinational Austria-Hungary, and Tsar Nicholas II rules an autocratic Russia that is industrialising fast. In Italy King Umberto I was assassinated in July 1900 and succeeded by Victor Emmanuel III. France, under President Emile Loubet, hosts the Paris Exposition, and Sweden and Norway share King Oscar II.",
+   "middle-east-south-asia": "Sultan Abdul Hamid II rules the Ottoman Empire autocratically and began the Hejaz Railway in 1900 to link Damascus with Mecca. Persia is ruled by Mozaffar ad-Din Shah Qajar, Afghanistan by Abdur Rahman Khan, and Kuwait has accepted British protection (1899), while the exiled young Ibn Saud prepares to retake Riyadh from the Rashidis. In India, Viceroy Lord Curzon governs the British Raj for Queen Victoria; a devastating famine in 1899-1900 kills an estimated 1 to 4.5 million people, and the Indian National Congress is calling for more self-government.",
+   "north-central-asia": "All of Central Asia's steppe and oases are under Russian control: Russian Turkestan is ruled from Tashkent, while the emir of Bukhara and the khan of Khiva are Russian vassals. The Trans-Caspian and Trans-Siberian railways are bringing Russian settlers, soldiers and cotton merchants, and during the Boxer crisis of 1900 Russian troops occupied Manchuria. Siberia is being settled by Russian peasants along the new railway line.",
+   "east-asia": "The Boxer Rebellion swept northern China in 1900; after the siege of the Beijing legations, an Eight-Nation Alliance captured the capital in August, and Empress Dowager Cixi fled to Xi'an with the Guangxu Emperor. Foreign powers hold leased ports: Germany at Qingdao, Russia at Port Arthur, Britain at Weihaiwei and Hong Kong's New Territories, and France at Guangzhouwan. Meiji Japan, victorious over China in 1895, has taken Taiwan, while Korea, renamed the Korean Empire under Emperor Gojong, is contested between Japan and Russia. Tibet is governed by the 13th Dalai Lama.",
+   "southeast-asia": "The United States is fighting a bitter war against Filipino nationalists led by Emilio Aguinaldo after taking the Philippines from Spain in 1898. France rules French Indochina (Vietnam, Cambodia and Laos) under Governor-General Paul Doumer, and Britain rules Burma as part of India and the Federated Malay States. The Dutch are still fighting in Aceh as they tighten control over the East Indies. Siam, under King Chulalongkorn, survives as an independent buffer between British and French territory.",
+   "northern-north-america": "Canada, led by its first French-Canadian prime minister, Wilfrid Laurier, is booming, with wheat farmers settling the Prairies and the Klondike gold rush having created the Yukon Territory (1898). Canadian volunteers are fighting for Britain in South Africa. Alaska, a US possession, is in the grip of the Nome gold rush, Newfoundland remains a separate British colony, and Denmark rules Greenland.",
+   "southern-north-america": "The United States, under President William McKinley, re-elected in November 1900 with Theodore Roosevelt as vice-president, has become an imperial power, taking Puerto Rico, Guam and the Philippines from Spain and annexing Hawaii. Cuba is under US military occupation until 1902. Mexico has been ruled for over two decades by the dictator Porfirio Diaz, who welcomes foreign investment in railways and mines while most Mexicans remain poor landless peasants.",
+   "northern-south-america": "Brazil has been a republic since Emperor Pedro II was overthrown in 1889 and is now governed by President Campos Sales; its Amazon rubber boom is at its peak. Colombia, which still includes Panama, is torn apart by the Thousand Days' War (1899-1902). Cipriano Castro has seized power in Venezuela, Eloy Alfaro leads a Liberal revolution in Ecuador, and Bolivia, having lost its coast to Chile, now governs from La Paz. Britain, the Netherlands and France hold the Guianas.",
+   "southern-cone": "Argentina, under President Julio Argentino Roca in his second term, is one of the world's richest countries thanks to beef and wheat exports and is absorbing millions of European immigrants. Chile, enriched by nitrate from the lands it won in the War of the Pacific, is governed by President Federico Errazuriz Echaurren, and its Andean border with Argentina is under British arbitration. Uruguay and Paraguay are smaller agrarian republics recovering from civil strife.",
+   "australasia": "Australia's six colonies have agreed to federate, and in July 1900 the British Parliament passed the act creating the Commonwealth of Australia, to begin on 1 January 1901. New Zealand, led by Premier Richard Seddon, is a pioneering democracy that gave women the vote in 1893. Hawaii has become a US territory, Samoa was split between Germany and the United States in 1899, and New Guinea is divided among the Dutch, Germans and British."
+  },
+  "powers": [
+   {
+    "name": "British Empire",
+    "map": "United Kingdom of Great Britain and Ireland",
+    "ruler": "Victoria (PM Lord Salisbury)",
+    "capital": "London",
+    "extent": "About a fifth of the world's land and a quarter of its people"
+   },
+   {
+    "name": "Russian Empire",
+    "map": "Russian Empire",
+    "ruler": "Nicholas II",
+    "capital": "St Petersburg",
+    "extent": "About 22 million km² from Poland to the Pacific, including Central Asia and occupied Manchuria"
+   },
+   {
+    "name": "German Empire",
+    "map": "Germany",
+    "ruler": "Wilhelm II (Chancellor Hohenlohe, then Bulow from October)",
+    "capital": "Berlin",
+    "extent": "Germany plus colonies in Africa (Togo, Kamerun, South-West and East Africa), New Guinea, Samoa and Qingdao"
+   },
+   {
+    "name": "United States",
+    "map": "United States of America",
+    "ruler": "President William McKinley",
+    "capital": "Washington, D.C.",
+    "extent": "45 states plus Alaska, Hawaii, Puerto Rico, Guam and the Philippines"
+   },
+   {
+    "name": "French Third Republic",
+    "map": "France",
+    "ruler": "President Emile Loubet",
+    "capital": "Paris",
+    "extent": "Second-largest colonial empire: North and West Africa, Madagascar, Indochina and Pacific islands"
+   },
+   {
+    "name": "Qing China",
+    "map": "Manchu Empire",
+    "ruler": "Guangxu Emperor (Empress Dowager Cixi in control)",
+    "capital": "Beijing (court fled to Xi'an in 1900)",
+    "extent": "China, Manchuria, Mongolia, Tibet and Xinjiang, with foreign-leased ports along the coast"
+   },
+   {
+    "name": "Austria-Hungary",
+    "map": "Austria Hungary",
+    "ruler": "Franz Joseph I",
+    "capital": "Vienna",
+    "extent": "Central Europe from Bohemia to Transylvania, plus occupied Bosnia"
+   },
+   {
+    "name": "Empire of Japan",
+    "map": "Imperial Japan",
+    "ruler": "Emperor Meiji",
+    "capital": "Tokyo",
+    "extent": "Japan, Okinawa and Taiwan (taken from China in 1895)"
+   },
+   {
+    "name": "Ottoman Empire",
+    "map": "Ottoman Empire",
+    "ruler": "Abdul Hamid II",
+    "capital": "Constantinople",
+    "extent": "Anatolia, Macedonia and Thrace, the Levant, Iraq, the Hejaz and Libya"
+   },
+   {
+    "name": "Kingdom of Italy",
+    "map": "Italy",
+    "ruler": "Victor Emmanuel III (from July 1900)",
+    "capital": "Rome",
+    "extent": "Italy plus Eritrea and Italian Somaliland"
+   }
+  ],
+  "events": [
+   {
+    "year": 1884,
+    "text": "Berlin Conference sets rules for the European partition of Africa"
+   },
+   {
+    "year": 1895,
+    "text": "Japan defeats China and takes Taiwan"
+   },
+   {
+    "year": 1896,
+    "text": "Ethiopia defeats Italy at the Battle of Adwa"
+   },
+   {
+    "year": 1898,
+    "text": "Spanish-American War: the US occupies Cuba and takes Puerto Rico, Guam and the Philippines"
+   },
+   {
+    "year": 1899,
+    "text": "Second Boer War begins in South Africa"
+   },
+   {
+    "year": 1900,
+    "text": "Boxer Rebellion; foreign troops capture Beijing"
+   },
+   {
+    "year": 1900,
+    "text": "Paris Exposition Universelle and the second modern Olympic Games"
+   },
+   {
+    "year": 1901,
+    "text": "Commonwealth of Australia founded; Queen Victoria dies"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia: 1900",
+    "url": "https://en.wikipedia.org/wiki/1900"
+   },
+   {
+    "title": "Wikipedia: Indian famine of 1899–1900",
+    "url": "https://en.wikipedia.org/wiki/Indian_famine_of_1899%E2%80%931900"
+   },
+   {
+    "title": "Wikipedia: List of largest empires (Taagepera, Turchin et al. areas)",
+    "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+   },
+   {
+    "title": "Wikipedia: Treaty of Paris (1898)",
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_Paris_(1898)"
+   },
+   {
+    "title": "Imperial Gazetteer of India, vol. IV (1909): Administrative (DSAL)",
+    "url": "https://dsal.uchicago.edu/cgi-bin/reference/gazetteer/query.py?display_type=volume_display&volume=4"
+   }
+  ]
+ },
+ {
+  "year": 1914,
+  "title": "The World Goes to War",
+  "age": "Age of Imperialism",
+  "overview": "In 1914 European empires rule most of the planet, and an interconnected world economy of steamships, telegraphs and gold-standard trade seems unshakeable. Then, on 28 June, the heir to the Austro-Hungarian throne, Archduke Franz Ferdinand, is assassinated in Sarajevo. Within six weeks the great alliances drag Europe into war: Germany and Austria-Hungary, later joined by the Ottoman Empire, against France, Russia and Britain, with the British Empire bringing in India, Canada, Australia and its other dominions. German armies sweep through Belgium but are stopped at the Marne, and by Christmas a line of trenches stretches from the Channel to Switzerland. Fighting spreads to Africa, the Middle East and the Pacific, where Japan seizes German possessions. Elsewhere, China has just become a republic, Mexico is in the middle of a revolution, and the Panama Canal opened in August. Few yet grasp that the war will destroy four empires and kill millions.",
+  "regions": {
+   "southern-africa": "The Union of South Africa, a British dominion since 1910 under Prime Minister Louis Botha, puts down a pro-German Boer rebellion and invades German South-West Africa. Belgium has ruled the Congo directly since taking it from King Leopold II in 1908, Britain holds the Rhodesias, Bechuanaland and Nyasaland, and Portugal rules Angola and Mozambique. In German East Africa, Lieutenant Colonel Paul von Lettow-Vorbeck defeats a British landing at Tanga in November 1914, beginning a four-year guerrilla campaign.",
+   "northern-africa": "Almost all of northern Africa is under European rule: France holds Algeria, Tunisia, Morocco (a protectorate since 1912), French West Africa and French Equatorial Africa, while Italy seized Libya from the Ottomans in 1911-1912. Britain declared Egypt a protectorate in December 1914, deposing Khedive Abbas II and installing Hussein Kamel as sultan, and it rules the Anglo-Egyptian Sudan and a newly unified Nigeria. Only Ethiopia, under the uncrowned young ruler Lij Iyasu, and Liberia remain independent. Allied forces quickly overrun German Togoland and invade Kamerun.",
+   "europe": "Europe's monarchies, Kaiser Wilhelm II's Germany, Emperor Franz Joseph's Austria-Hungary, Tsar Nicholas II's Russia and King George V's Britain, go to war in August alongside the French Republic under President Raymond Poincare. Germany's attack through neutral Belgium is halted at the Marne in September, while Russia is crushed at Tannenberg in East Prussia. Serbia, under King Peter I, resists Austrian invasion, and the Balkan Wars of 1912-1913 have just pushed the Ottomans almost out of Europe and created Albania. Italy, Spain, the Netherlands and Scandinavia stay neutral for now.",
+   "middle-east-south-asia": "The Ottoman Empire, nominally under Sultan Mehmed V but run by the Young Turk triumvirate of Enver, Talat and Djemal Pasha, enters the war on Germany's side in November 1914, and British-Indian troops land at Basra. Persia, under the young Ahmad Shah Qajar, is divided into Russian and British spheres of influence, and Afghanistan under Habibullah Khan stays neutral. The British Raj, under Viceroy Lord Hardinge with its new capital at Delhi, sends Indian soldiers to France and the Middle East. In Arabia, Ibn Saud has taken al-Hasa, and Sharif Hussein rules Mecca under the Ottomans.",
+   "north-central-asia": "Russian Turkestan, the steppe and Siberia are all part of the Russian Empire, with Bukhara (Emir Alim Khan) and Khiva as Russian protectorates; Tuva became a Russian protectorate in 1914. Outer Mongolia declared independence from China in 1911 under the Bogd Khan, a Buddhist leader, with Russian backing. Russian peasants are settling Siberia and the Kazakh steppe in large numbers, squeezing the nomads off their pastures.",
+   "east-asia": "The Qing dynasty fell in 1912, and the new Republic of China is dominated by President Yuan Shikai, who has dissolved parliament and driven Sun Yat-sen into exile. Tibet, under the 13th Dalai Lama, and Mongolia act as independent states. Japan, under Emperor Taisho, annexed Korea in 1910 and holds Taiwan; it joins the Allies in August 1914 and captures Germany's base at Qingdao in November.",
+   "southeast-asia": "Siam, under King Vajiravudh (Rama VI), is the only independent state; the rest is colonial. France rules Indochina, Britain rules Burma (part of India), Malaya and northern Borneo, and the Dutch govern the East Indies, where the Sarekat Islam movement is the first mass nationalist organisation. The United States rules the Philippines and has promised eventual self-government.",
+   "northern-north-america": "Canada, under Prime Minister Robert Borden, is automatically at war when Britain declares war, and the first Canadian Expeditionary Force sails for Europe in October 1914. Newfoundland is a separate British dominion and also sends troops. Alaska became an organised US territory in 1912, and Denmark rules Greenland.",
+   "southern-north-america": "The United States, under President Woodrow Wilson, declares neutrality but sells food and munitions to the Allies. The Panama Canal, built by the US, opens on 15 August 1914. Mexico is in the middle of its Revolution: the dictator Victoriano Huerta was forced out in July after US troops occupied Veracruz, and the victorious revolutionaries, Carranza, Pancho Villa and Emiliano Zapata, are now turning on each other.",
+   "northern-south-america": "Brazil, now led by President Venceslau Bras (from November 1914), is the world's coffee giant but is hit by the collapse of the Amazon rubber boom. Juan Vicente Gomez rules Venezuela as dictator, and Colonel Oscar Benavides seized power in Peru in a February coup. Colombia, still bitter over the loss of Panama in 1903, elects Jose Vicente Concha. Britain, the Netherlands and France hold the Guianas.",
+   "southern-cone": "Argentina, governed by Victorino de la Plaza after President Saenz Pena's death in August, is among the ten richest countries in the world on the strength of its grain and beef exports. Chile, under Ramon Barros Luco, sees war arrive off its coast: a German squadron sinks two British cruisers at Coronel on 1 November and is destroyed off the Falklands on 8 December. Uruguay, under reforming President Jose Batlle y Ordonez, is building a pioneering welfare state.",
+   "australasia": "Australia, federated since 1901, changes government during the crisis as Andrew Fisher's Labor replaces Joseph Cook, and pledges support to Britain 'to our last man and our last shilling'. Australian troops seize German New Guinea, New Zealand (a dominion since 1907, under William Massey) takes German Samoa, and Japan occupies Germany's Micronesian islands. The first convoy of Australian and New Zealand (ANZAC) troops sails for Egypt in November."
+  },
+  "powers": [
+   {
+    "name": "British Empire",
+    "map": "United Kingdom of Great Britain and Ireland",
+    "ruler": "George V (PM H. H. Asquith)",
+    "capital": "London",
+    "extent": "About a quarter of the world's land and people, with dominions in Canada, Australia, New Zealand and South Africa"
+   },
+   {
+    "name": "German Empire",
+    "map": "German Empire",
+    "ruler": "Wilhelm II (Chancellor Theobald von Bethmann Hollweg)",
+    "capital": "Berlin",
+    "extent": "Germany plus colonies in Africa (Togo, Kamerun, South-West and East Africa) and the Pacific"
+   },
+   {
+    "name": "Russian Empire",
+    "map": "Russian Empire",
+    "ruler": "Nicholas II",
+    "capital": "St Petersburg (renamed Petrograd in 1914)",
+    "extent": "About a sixth of the world's land, from Poland to the Pacific"
+   },
+   {
+    "name": "French Third Republic",
+    "map": "France",
+    "ruler": "President Raymond Poincare (PM Rene Viviani from June)",
+    "capital": "Paris",
+    "extent": "Second-largest empire: France, North, West and Equatorial Africa, Madagascar and Indochina"
+   },
+   {
+    "name": "United States",
+    "map": "United States",
+    "ruler": "President Woodrow Wilson",
+    "capital": "Washington, D.C.",
+    "extent": "48 states plus Alaska, Hawaii, Puerto Rico, the Philippines and the Panama Canal Zone"
+   },
+   {
+    "name": "Austria-Hungary",
+    "map": "Austro-Hungarian Empire",
+    "ruler": "Franz Joseph I",
+    "capital": "Vienna",
+    "extent": "Central Europe from Bohemia and Galicia to Bosnia and Transylvania"
+   },
+   {
+    "name": "Empire of Japan",
+    "map": "Empire of Japan",
+    "ruler": "Emperor Taisho (PM Okuma Shigenobu from April)",
+    "capital": "Tokyo",
+    "extent": "Japan, Korea, Taiwan, southern Sakhalin and the Kwantung lease in Manchuria"
+   },
+   {
+    "name": "Ottoman Empire",
+    "map": "Ottoman Empire",
+    "ruler": "Mehmed V (real power with Enver, Talat and Djemal Pasha)",
+    "capital": "Constantinople",
+    "extent": "Anatolia, eastern Thrace, the Levant, Iraq and the Hejaz"
+   },
+   {
+    "name": "Kingdom of Italy",
+    "map": "Kingdom of Italy",
+    "ruler": "Victor Emmanuel III (PM Antonio Salandra from March)",
+    "capital": "Rome",
+    "extent": "Italy plus Libya, Eritrea, Italian Somaliland and the Dodecanese"
+   },
+   {
+    "name": "Republic of China",
+    "map": "Manchu Empire",
+    "ruler": "President Yuan Shikai",
+    "capital": "Beijing",
+    "extent": "China proper and Manchuria; Mongolia and Tibet have broken away"
+   }
+  ],
+  "events": [
+   {
+    "year": 1910,
+    "text": "Japan annexes Korea; Union of South Africa formed; Mexican Revolution begins"
+   },
+   {
+    "year": 1912,
+    "text": "Qing dynasty abdicates; Republic of China founded"
+   },
+   {
+    "year": 1912,
+    "text": "First Balkan War drives the Ottomans from most of Europe"
+   },
+   {
+    "year": 1914,
+    "text": "Archduke Franz Ferdinand assassinated in Sarajevo (28 June)"
+   },
+   {
+    "year": 1914,
+    "text": "First World War begins; Germany invades Belgium and France"
+   },
+   {
+    "year": 1914,
+    "text": "Panama Canal opens (15 August)"
+   },
+   {
+    "year": 1914,
+    "text": "Battles of Tannenberg and the Marne; trench warfare sets in on the Western Front"
+   },
+   {
+    "year": 1914,
+    "text": "Ottoman Empire joins the Central Powers; Britain declares a protectorate over Egypt"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia: 1914",
+    "url": "https://en.wikipedia.org/wiki/1914"
+   },
+   {
+    "title": "Wikipedia: Paul von Lettow-Vorbeck",
+    "url": "https://en.wikipedia.org/wiki/Paul_von_Lettow-Vorbeck"
+   },
+   {
+    "title": "Wikipedia: Andrew Fisher",
+    "url": "https://en.wikipedia.org/wiki/Andrew_Fisher"
+   },
+   {
+    "title": "Wikipedia: List of prime ministers of Japan",
+    "url": "https://en.wikipedia.org/wiki/List_of_prime_ministers_of_Japan"
+   },
+   {
+    "title": "Wikipedia: List of prime ministers of Italy",
+    "url": "https://en.wikipedia.org/wiki/List_of_prime_ministers_of_Italy"
+   },
+   {
+    "title": "Wikipedia: List of prime ministers of France",
+    "url": "https://en.wikipedia.org/wiki/List_of_prime_ministers_of_France"
+   },
+   {
+    "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. XI: Struggle for Freedom (Internet Archive)",
+    "url": "https://archive.org/details/struggleforfreed00bhar"
+   }
+  ]
+ },
+ {
+  "year": 1920,
+  "title": "A Peace of Exhaustion",
+  "age": "Interwar Period",
+  "overview": "The First World War is over, but the world of 1920 is exhausted, grieving and unstable. Some 15 to 22 million soldiers and civilians died in the war and tens of millions more in the 1918-1919 influenza pandemic. Four empires, German, Austro-Hungarian, Russian and Ottoman, have collapsed, and new states such as Poland, Czechoslovakia and Yugoslavia fill central Europe. The Treaty of Versailles came into force in January, blaming Germany and making it pay reparations, and the new League of Nations meets in Geneva, though the United States has refused to join. Russia is in the final stage of a brutal civil war that the Bolsheviks under Lenin are winning; their Red Army is stopped outside Warsaw in August. Britain and France, the victors, have taken Germany's colonies and the Ottoman Arab lands as League 'mandates', bringing the British Empire to its greatest size. Meanwhile nationalists from Ireland and Egypt to India and China are demanding independence, and in America women have just won the vote.",
+  "regions": {
+   "southern-africa": "Former German colonies have been handed out as League of Nations mandates: South West Africa to South Africa, Tanganyika to Britain, and Ruanda-Urundi to Belgium. The Union of South Africa is led by Prime Minister Jan Smuts, Belgium rules the Congo, and the British South Africa Company still administers the Rhodesias. Kenya became a British Crown colony in 1920, and Portugal holds Angola and Mozambique.",
+   "northern-africa": "Egypt, still a British protectorate under Sultan Fuad I, was shaken by the 1919 revolution led by Saad Zaghloul and will win nominal independence in 1922. Germany's Kamerun and Togoland have been split between Britain and France, which also rules the Maghreb and huge federations in West and Equatorial Africa. Italy struggles against Senussi resistance in Libya. Ethiopia is ruled by Empress Zewditu, with her cousin Ras Tafari (the future Haile Selassie) as regent and heir.",
+   "europe": "The peace treaties have redrawn Europe: Germany, now the Weimar Republic under President Friedrich Ebert, lost territory and its army; Austria and Hungary are small separate states, and the Treaty of Trianon (June 1920) stripped Hungary of two-thirds of its land; Admiral Horthy rules Hungary as regent. New or restored states include Poland (Jozef Pilsudski), Czechoslovakia (President Tomas Masaryk), Yugoslavia, Finland and the Baltic states. The Poles defeat the Red Army at Warsaw in August 1920, the last White army is evacuated from Crimea in November, and Ireland is fighting its War of Independence against Britain.",
+   "middle-east-south-asia": "The Ottoman Empire is being dismantled: Sultan Mehmed VI signed the harsh Treaty of Sevres in August 1920 in Allied-occupied Constantinople, while Mustafa Kemal's rival nationalist government in Ankara fights on against Greek and Allied forces. At San Remo the Allies gave Britain mandates over Palestine and Mesopotamia (Iraq, where a major revolt breaks out) and France mandates over Syria and Lebanon; French troops crushed King Faisal's Arab kingdom in Damascus in July. Sharif Hussein is King of the Hejaz, Ibn Saud rules Nejd, Persia is under Ahmad Shah, and Afghanistan under Amir Amanullah Khan won full independence in 1919. In India, under Viceroy Lord Chelmsford, Gandhi launches the Non-Cooperation Movement after the 1919 Amritsar massacre.",
+   "north-central-asia": "The Red Army is conquering Central Asia: in 1920 the khan of Khiva and the emir of Bukhara were overthrown and replaced by Soviet-backed 'people's republics', while Muslim Basmachi rebels resist. White leader Admiral Kolchak was executed in Irkutsk in February, and Siberia falls to the Bolsheviks, who set up a buffer Far Eastern Republic while Japanese troops still occupy parts of the Russian Far East. A Kirghiz (Kazakh) autonomous republic is created on the steppe.",
+   "east-asia": "China has broken up into the Warlord Era: a weak government in Beijing under President Xu Shichang is fought over by northern militarist cliques, Zhang Zuolin rules Manchuria, and Sun Yat-sen leads a rival government in Guangzhou. The May Fourth Movement of 1919 sparked a wave of nationalism after the Versailles treaty gave Germany's Shandong rights to Japan. Japan, under Emperor Taisho and Prime Minister Hara Takashi, is a victor and a League Council member and rules Korea, where it brutally suppressed the March First independence movement of 1919. Tibet under the 13th Dalai Lama is de facto independent, while Chinese troops have reoccupied Mongolia.",
+   "southeast-asia": "Colonial rule continues unchanged: France governs Indochina, Britain rules Burma and Malaya, the Dutch rule the East Indies, where the Communist Party of Indonesia is founded in 1920, and the United States administers the Philippines under a mostly Filipino legislature. Siam, under King Vajiravudh, joined the Allies in 1917 and gained a seat at the League of Nations.",
+   "northern-north-america": "Canada, whose 60,000 war dead gave it a separate signature on the Versailles treaty, is led by Arthur Meighen from July 1920 after Robert Borden retired; the Winnipeg General Strike of 1919 reflected postwar unrest. Newfoundland remains a separate dominion, Alaska a US territory, and Greenland a Danish colony.",
+   "southern-north-america": "The United States, under the ailing Woodrow Wilson, has rejected the Versailles treaty and the League; Prohibition began in January 1920, the 19th Amendment gave women the vote in August, and Warren Harding won the November election promising a 'return to normalcy'. Mexico's Revolution winds down: President Carranza was overthrown and killed in May 1920, and Alvaro Obregon became president in December. US Marines occupy Haiti, the Dominican Republic and Nicaragua.",
+   "northern-south-america": "Brazil is governed by President Epitacio Pessoa under a republic dominated by coffee planters. Augusto Leguia has seized power in Peru, beginning an eleven-year rule, a July 1920 coup in Bolivia brings Bautista Saavedra to power, and Juan Vicente Gomez continues his dictatorship in Venezuela, where oil is starting to flow. Colombia is led by Marco Fidel Suarez.",
+   "southern-cone": "Argentina is governed by Hipolito Yrigoyen, its first president elected under universal male suffrage, and remains wealthy from exports, though strikes were violently repressed in 1919. Chile elects the reformer Arturo Alessandri in 1920 as its nitrate economy suffers from the invention of synthetic nitrates. Uruguay, under Baltasar Brum, is a stable democracy, and Paraguay is led by Manuel Gondra.",
+   "australasia": "Australia, under Prime Minister Billy Hughes, lost about 60,000 men in the war and now holds former German New Guinea as a League mandate. New Zealand, under William Massey, administers Western Samoa, Britain, Australia and New Zealand share Nauru, and Japan rules the former German islands of Micronesia as the South Seas Mandate. Hawaii is a US territory."
+  },
+  "powers": [
+   {
+    "name": "British Empire",
+    "map": "United Kingdom of Great Britain and Ireland",
+    "ruler": "George V (PM David Lloyd George)",
+    "capital": "London",
+    "extent": "Its greatest ever size: about a quarter of the world's land, including new mandates in the Middle East and Africa"
+   },
+   {
+    "name": "United States",
+    "map": "United States",
+    "ruler": "President Woodrow Wilson",
+    "capital": "Washington, D.C.",
+    "extent": "48 states plus Alaska, Hawaii, Puerto Rico, the Philippines and the Panama Canal Zone; the world's largest economy"
+   },
+   {
+    "name": "French Third Republic",
+    "map": "France",
+    "ruler": "President Alexandre Millerand (from September)",
+    "capital": "Paris",
+    "extent": "France plus Alsace-Lorraine regained, a vast African empire, Indochina and mandates over Syria and Lebanon"
+   },
+   {
+    "name": "Soviet Russia",
+    "map": "USSR",
+    "ruler": "Vladimir Lenin (Chairman of the Council of People's Commissars)",
+    "capital": "Moscow",
+    "extent": "Most of the former Russian Empire, minus Poland, Finland and the Baltic states; the USSR is formally created in 1922"
+   },
+   {
+    "name": "Empire of Japan",
+    "map": "Empire of Japan",
+    "ruler": "Emperor Taisho (PM Hara Takashi)",
+    "capital": "Tokyo",
+    "extent": "Japan, Korea, Taiwan, southern Sakhalin, Kwantung, Shandong rights and the South Seas Mandate"
+   },
+   {
+    "name": "Kingdom of Italy",
+    "map": "Italy",
+    "ruler": "Victor Emmanuel III (PM Giovanni Giolitti from June)",
+    "capital": "Rome",
+    "extent": "Italy plus South Tyrol and Trieste gained from Austria, Libya, Eritrea and Somaliland"
+   },
+   {
+    "name": "Weimar Germany",
+    "map": "Germany",
+    "ruler": "President Friedrich Ebert",
+    "capital": "Berlin",
+    "extent": "Germany reduced by Versailles, having lost all colonies, Alsace-Lorraine and lands to Poland"
+   },
+   {
+    "name": "Republic of China",
+    "map": "Chinese Warlords",
+    "ruler": "President Xu Shichang (Beijing government); rival Sun Yat-sen in Guangzhou",
+    "capital": "Beijing",
+    "extent": "China proper, split among regional warlords"
+   }
+  ],
+  "events": [
+   {
+    "year": 1917,
+    "text": "Russian Revolutions; the Bolsheviks seize power; the US enters the war"
+   },
+   {
+    "year": 1918,
+    "text": "Armistice ends the First World War; influenza pandemic kills tens of millions"
+   },
+   {
+    "year": 1919,
+    "text": "Treaty of Versailles signed; Amritsar massacre in India; May Fourth Movement in China"
+   },
+   {
+    "year": 1920,
+    "text": "League of Nations founded; US Prohibition begins"
+   },
+   {
+    "year": 1920,
+    "text": "San Remo conference assigns Middle East mandates to Britain and France"
+   },
+   {
+    "year": 1920,
+    "text": "Poland defeats the Red Army at the Battle of Warsaw"
+   },
+   {
+    "year": 1920,
+    "text": "Treaty of Sevres imposed on the Ottoman Empire; Turkish nationalists fight on from Ankara"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia: 1920",
+    "url": "https://en.wikipedia.org/wiki/1920"
+   },
+   {
+    "title": "Wikipedia: World War I casualties",
+    "url": "https://en.wikipedia.org/wiki/World_War_I_casualties"
+   },
+   {
+    "title": "Wikipedia: List of prime ministers of Italy",
+    "url": "https://en.wikipedia.org/wiki/List_of_prime_ministers_of_Italy"
+   },
+   {
+    "title": "Wikipedia: List of prime ministers of France",
+    "url": "https://en.wikipedia.org/wiki/List_of_prime_ministers_of_France"
+   },
+   {
+    "title": "Wikipedia: List of largest empires (Taagepera, Turchin et al. areas)",
+    "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+   },
+   {
+    "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. XI: Struggle for Freedom (Internet Archive)",
+    "url": "https://archive.org/details/struggleforfreed00bhar"
+   }
+  ]
+ },
+ {
+  "year": 1930,
+  "title": "The Great Depression Begins",
+  "age": "Interwar Period",
+  "overview": "The Wall Street Crash of October 1929 has tipped the world into the Great Depression. In 1930 factories close, farm prices collapse and unemployment soars from Detroit to Berlin to Sydney; the US raises tariffs and world trade begins to shrink. Hard times strengthen extremists: in Germany's September election Hitler's Nazi party jumps from 12 to 107 seats, while Mussolini's Fascists already rule Italy. In the Soviet Union, Joseph Stalin is forcing peasants onto collective farms and driving rapid industrialisation at terrible human cost. Military coups topple governments in Argentina, Brazil and Peru. Colonial empires still look solid, yet Gandhi's Salt March challenges British rule in India, and nationalist risings shake Vietnam and Burma. In China, Chiang Kai-shek's Nationalists have nominally unified the country but are fighting warlords and Communists. Radio, cinema with sound and cars are reshaping daily life in rich countries, while Uruguay hosts the first football World Cup.",
+  "regions": {
+   "southern-africa": "The Union of South Africa, under Prime Minister J. B. M. Hertzog, extends the vote to white women in 1930 while further restricting Black Africans. Southern Rhodesia is a self-governing British colony, Northern Rhodesia's Copperbelt is being opened up, and Britain also rules Tanganyika, Nyasaland and Bechuanaland. Belgium governs the Congo, and Portugal, where Antonio de Oliveira Salazar is rising to power, tightens control of Angola and Mozambique.",
+   "northern-africa": "Ras Tafari is crowned Emperor Haile Selassie of Ethiopia in November 1930 after Empress Zewditu's death. Egypt is a kingdom under King Fuad I with British troops still guarding the Suez Canal, and the Sudan remains an Anglo-Egyptian condominium. France celebrates the centenary of its conquest of Algeria and rules Morocco, where Sultan Mohammed V reigns, and Tunisia. Italy, led in the field by General Rodolfo Graziani, is brutally crushing the Libyan resistance of Omar Mukhtar.",
+   "europe": "Europe is sliding into crisis: Germany's Chancellor Heinrich Bruning governs by emergency decree under President Hindenburg as the Nazis surge, while Mussolini rules Italy as Fascist dictator under King Victor Emmanuel III. Britain has a minority Labour government under Ramsay MacDonald, France is governed under President Gaston Doumergue, and in Spain the dictator Primo de Rivera resigned in January, with the monarchy about to fall in 1931. Dictators or strongmen also rule Poland (Pilsudski), Yugoslavia (King Alexander), Hungary (Horthy) and Portugal, and Allied troops left the German Rhineland in June 1930.",
+   "middle-east-south-asia": "Turkey is a secular republic led by Mustafa Kemal (later Ataturk) from Ankara, and Iran is ruled by Reza Shah Pahlavi, both modernising rapidly. Iraq, under King Faisal I, signs a treaty with Britain in 1930 that will end the mandate in 1932; Britain also rules Palestine and Transjordan, and France holds Syria and Lebanon. Ibn Saud is King of the Hejaz and Nejd (renamed Saudi Arabia in 1932), and Nadir Shah rules Afghanistan. In India, Congress declares the goal of full independence, and Gandhi leads the Salt March in March-April 1930; Viceroy Lord Irwin jails tens of thousands, and the first Round Table Conference opens in London.",
+   "north-central-asia": "Soviet Central Asia has been divided into national republics, including the Uzbek, Turkmen and new Tajik Soviet republics and autonomous Kazakh and Kirghiz republics. Stalin's forced collectivisation is beginning a catastrophic famine among Kazakh nomads (1930-1933), and the Turkestan-Siberian Railway is completed in 1930. Mongolia is a Soviet-aligned People's Republic, and labour camps of the Gulag are spreading across Siberia.",
+   "east-asia": "Chiang Kai-shek's Nationalist government in Nanjing claims all of China after its Northern Expedition (1928), but in 1930 it fights the huge Central Plains War against rival warlords and launches its first campaign against Mao Zedong's Communists in their Jiangxi base area. Manchuria is held by the 'Young Marshal' Zhang Xueliang, coveted by Japan. Japan, under Emperor Hirohito (Showa era), is hit hard by the Depression; Prime Minister Hamaguchi Osachi is shot by a nationalist in November 1930. Korea and Taiwan are Japanese colonies, and Tibet is ruled by the 13th Dalai Lama.",
+   "southeast-asia": "Nationalist and communist challenges are growing: the Yen Bai mutiny shakes French Indochina in February 1930 and Ho Chi Minh founds the Indochinese Communist Party; in Burma the Saya San peasant rebellion erupts in December. The Dutch have jailed Indonesian nationalist leader Sukarno, and the US governs the Philippines amid demands for independence. Siam, under King Prajadhipok (Rama VII), is the last absolute monarchy in the region and will be overthrown in 1932.",
+   "northern-north-america": "Canada, battered by the Depression and a prairie drought, elects Conservative R. B. Bennett as prime minister in July 1930. Newfoundland is a separate British dominion and Alaska a US territory, while Norway and Denmark dispute ownership of East Greenland. The 1931 Statute of Westminster will soon make the dominions fully independent in law.",
+   "southern-north-america": "The United States, under President Herbert Hoover, plunges deeper into depression; the Smoot-Hawley Tariff of June 1930 sparks retaliation around the world. Mexico is ruled by figurehead presidents, Pascual Ortiz Rubio from 1930, under the 'Jefe Maximo' Plutarco Elias Calles and his new National Revolutionary Party. Rafael Trujillo seizes power in the Dominican Republic, Gerardo Machado rules Cuba as a dictator, and Augusto Sandino fights US Marines in Nicaragua.",
+   "northern-south-america": "The Revolution of 1930 brings Getulio Vargas to power in Brazil in November, ending the coffee planters' Old Republic. In Peru, Augusto Leguia is overthrown by Luis Sanchez Cerro in August, and Bolivia's President Hernando Siles is ousted in June. Colombia peacefully elects Liberal Enrique Olaya Herrera, and Juan Vicente Gomez still rules oil-rich Venezuela.",
+   "southern-cone": "On 6 September 1930 the Argentine army overthrows the elected Hipolito Yrigoyen and installs General Jose Felix Uriburu, Argentina's first modern military coup and the start of the 'Infamous Decade'. Chile is ruled by the strongman Carlos Ibanez del Campo as the nitrate and copper markets collapse. Uruguay celebrates the centenary of its constitution by hosting and winning the first FIFA World Cup, and Paraguay and Bolivia are edging toward war over the Chaco.",
+   "australasia": "Australia, under Labor Prime Minister James Scullin, is among the countries worst hit by the Depression, with unemployment heading toward 30 percent; the Sydney Harbour Bridge is under construction. New Zealand, led by George Forbes from May 1930, also suffers hard times, and its rule in Western Samoa faces the peaceful Mau independence movement. Australia administers Papua and the New Guinea mandate, and Japan rules Micronesia."
+  },
+  "powers": [
+   {
+    "name": "British Empire",
+    "map": "United Kingdom of Great Britain and Ireland",
+    "ruler": "George V (PM Ramsay MacDonald)",
+    "capital": "London",
+    "extent": "About a quarter of the world's land, including India, the dominions, much of Africa and Middle East mandates"
+   },
+   {
+    "name": "United States",
+    "map": "United States",
+    "ruler": "President Herbert Hoover",
+    "capital": "Washington, D.C.",
+    "extent": "48 states plus Alaska, Hawaii, Puerto Rico, the Philippines and the Canal Zone; the largest economy, now in depression"
+   },
+   {
+    "name": "French Third Republic",
+    "map": "France",
+    "ruler": "President Gaston Doumergue",
+    "capital": "Paris",
+    "extent": "Second-largest empire: North, West and Equatorial Africa, Madagascar, Indochina, Syria and Lebanon"
+   },
+   {
+    "name": "Soviet Union",
+    "map": "White Russia",
+    "ruler": "Joseph Stalin (General Secretary)",
+    "capital": "Moscow",
+    "extent": "About a sixth of the world's land, from Ukraine and Belarus to the Pacific"
+   },
+   {
+    "name": "Empire of Japan",
+    "map": "Empire of Japan",
+    "ruler": "Emperor Hirohito (PM Hamaguchi Osachi)",
+    "capital": "Tokyo",
+    "extent": "Japan, Korea, Taiwan, southern Sakhalin, the Kwantung lease and the South Seas Mandate"
+   },
+   {
+    "name": "Weimar Germany",
+    "map": "Germany",
+    "ruler": "President Paul von Hindenburg (Chancellor Hermann Muller, then Heinrich Bruning from March)",
+    "capital": "Berlin",
+    "extent": "Postwar Germany, with East Prussia separated by the Polish Corridor"
+   },
+   {
+    "name": "Kingdom of Italy",
+    "map": "Italy",
+    "ruler": "Victor Emmanuel III (Benito Mussolini as dictator)",
+    "capital": "Rome",
+    "extent": "Italy plus Libya, Eritrea, Italian Somaliland and the Dodecanese"
+   },
+   {
+    "name": "Republic of China",
+    "map": "Chinese Warlords",
+    "ruler": "Chiang Kai-shek (Nationalist government)",
+    "capital": "Nanjing",
+    "extent": "Nominally all of China, but regional warlords and Communists hold large areas"
+   }
+  ],
+  "events": [
+   {
+    "year": 1922,
+    "text": "Mussolini's March on Rome; Soviet Union formally established"
+   },
+   {
+    "year": 1923,
+    "text": "Republic of Turkey proclaimed under Mustafa Kemal"
+   },
+   {
+    "year": 1928,
+    "text": "Chiang Kai-shek's Northern Expedition captures Beijing; Stalin's first Five-Year Plan"
+   },
+   {
+    "year": 1929,
+    "text": "Wall Street Crash begins the Great Depression"
+   },
+   {
+    "year": 1930,
+    "text": "Gandhi's Salt March challenges British rule in India"
+   },
+   {
+    "year": 1930,
+    "text": "Nazi party wins 107 seats in Germany's Reichstag election"
+   },
+   {
+    "year": 1930,
+    "text": "Military coups in Argentina and Brazil; Haile Selassie crowned in Ethiopia; first World Cup in Uruguay"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia: 1930",
+    "url": "https://en.wikipedia.org/wiki/1930"
+   },
+   {
+    "title": "Wikipedia: Heinrich Brüning",
+    "url": "https://en.wikipedia.org/wiki/Heinrich_Br%C3%BCning"
+   },
+   {
+    "title": "Wikipedia: Rodolfo Graziani",
+    "url": "https://en.wikipedia.org/wiki/Rodolfo_Graziani"
+   },
+   {
+    "title": "Wikipedia: List of prime ministers of Japan",
+    "url": "https://en.wikipedia.org/wiki/List_of_prime_ministers_of_Japan"
+   },
+   {
+    "title": "Wikipedia: Jiangxi–Fujian Soviet",
+    "url": "https://en.wikipedia.org/wiki/Jiangxi%E2%80%93Fujian_Soviet"
+   },
+   {
+    "title": "Wikipedia: First encirclement campaign against the Jiangxi Soviet",
+    "url": "https://en.wikipedia.org/wiki/First_encirclement_campaign_against_the_Jiangxi_Soviet"
+   },
+   {
+    "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. XI: Struggle for Freedom (Internet Archive)",
+    "url": "https://archive.org/details/struggleforfreed00bhar"
+   }
+  ]
+ },
+ {
+  "year": 1938,
+  "title": "The Road to War",
+  "age": "Interwar Period",
+  "overview": "By 1938 the peace settlement of 1919 is falling apart and the world is drifting toward another great war. Adolf Hitler, dictator of Germany since 1933, has rearmed the country, absorbed Austria in March, and at the Munich conference in September won the Sudetenland from Czechoslovakia as Britain and France chose 'appeasement' over war. In November, the Kristallnacht pogrom shows the violence of Nazi persecution of Jews. Mussolini's Italy has conquered Ethiopia, and General Franco, backed by both dictators, is winning Spain's civil war. In Asia, Japan has been at full-scale war with China since 1937, capturing Nanjing, Wuhan and Canton and forcing Chiang Kai-shek's government deep inland. Stalin's Great Purge is killing hundreds of thousands in the Soviet Union. The democracies, Britain, France and the United States, are still recovering from the Depression and reluctant to fight. Across Asia and Africa, colonial rule continues, but nationalist movements grow stronger.",
+  "regions": {
+   "southern-africa": "South Africa is governed by J. B. M. Hertzog's United Party, with Jan Smuts as deputy, and the 1938 centenary of the Great Trek inflames Afrikaner nationalism. Britain rules the Rhodesias, Bechuanaland, Nyasaland and the Tanganyika mandate, which Nazi Germany demands back, while Belgium holds the Congo. Angola and Mozambique are ruled by Salazar's authoritarian Estado Novo in Portugal, and Madagascar is French.",
+   "northern-africa": "Italy conquered Ethiopia in 1935-1936 with poison gas and joined it with Eritrea and Somaliland as Italian East Africa, ruled from Addis Ababa by the Duke of Aosta, while Haile Selassie lives in exile in England. Italy also rules Libya under Governor Italo Balbo. Egypt, under young King Farouk, gained more independence by the 1936 treaty, though British forces guard Suez, and France rules Algeria, Tunisia, Morocco and the great African federations. Spanish Morocco was the base from which Franco launched his rebellion.",
+   "europe": "Hitler's Germany annexed Austria (the Anschluss) in March 1938, and the Munich Agreement of 30 September, signed by Chamberlain, Daladier, Mussolini and Hitler, handed it Czechoslovakia's Sudetenland; Poland and Hungary then grabbed slices of Czechoslovakia too. Spain's civil war (1936-1939) rages, with Franco's Nationalists defeating the Republic at the Ebro. Britain (King George VI, PM Neville Chamberlain) and France (PM Edouard Daladier from April) begin rearming, while Stalin's purges devastate the Soviet officer corps.",
+   "middle-east-south-asia": "Mustafa Kemal Ataturk, founder of modern Turkey, dies in November 1938 and is succeeded by Ismet Inonu. Reza Shah rules Iran, King Ghazi reigns in Iraq, and in Saudi Arabia, under King Ibn Saud, American engineers strike oil at Dammam in March 1938. Palestine is torn by the Arab Revolt (1936-1939) against British rule and Jewish immigration, and France holds Syria and Lebanon. In India, under Viceroy Lord Linlithgow, Congress governs most provinces after the 1937 elections, and Zahir Shah rules Afghanistan.",
+   "north-central-asia": "Soviet Central Asia now consists of five union republics, Kazakh, Uzbek, Turkmen, Kirghiz and Tajik, whose local Communist leaders are being executed in Stalin's purges. The Gulag camps of Siberia and Kolyma hold over a million prisoners, and Soviet and Japanese forces clash at Lake Khasan in the summer of 1938. Mongolia is a Soviet satellite dominated by the strongman Khorloogiin Choibalsan, and Xinjiang's warlord Sheng Shicai depends on Soviet support.",
+   "east-asia": "The Second Sino-Japanese War has raged since July 1937: after the Nanjing Massacre, Japan captures Xuzhou, Wuhan and Canton in 1938, and Chiang Kai-shek moves his government to Chongqing, even breaching the Yellow River dikes to slow the enemy. Mao Zedong's Communists, based at Yan'an, are in an uneasy united front with the Nationalists. Japan, under Emperor Hirohito and Prime Minister Konoe Fumimaro, rules Korea, Taiwan and the puppet state of Manchukuo under the last Qing emperor Puyi. Tibet is governed by a regent while the newly found 14th Dalai Lama is a small child.",
+   "southeast-asia": "The Philippines has been a self-governing Commonwealth under President Manuel Quezon since 1935, with independence promised for 1946. Burma was separated from India in 1937, Britain opened its great naval base at Singapore in February 1938, France rules Indochina, and the Dutch rule the East Indies. In Siam (renamed Thailand in 1939), the nationalist military strongman Plaek Phibunsongkhram becomes prime minister in December 1938 under the boy-king Ananda Mahidol.",
+   "northern-north-america": "Canada, under Prime Minister William Lyon Mackenzie King, supports appeasement but begins modest rearmament. Newfoundland, bankrupt in the Depression, has given up self-government to a British-appointed Commission (1934). Alaska is a US territory, and Greenland a Danish colony after an international court confirmed Danish sovereignty in 1933.",
+   "southern-north-america": "The United States, under President Franklin D. Roosevelt, is still fighting the Depression with the New Deal and remains officially neutral, though Roosevelt warns about the dictators. In Mexico, President Lazaro Cardenas nationalises the foreign oil companies on 18 March 1938, creating PEMEX. Strongmen rule much of the Caribbean and Central America, including Trujillo in the Dominican Republic, Anastasio Somoza in Nicaragua and Fulgencio Batista behind the scenes in Cuba.",
+   "northern-south-america": "Getulio Vargas rules Brazil as dictator under his Estado Novo (New State) of 1937 and crushes a fascist Integralist putsch in May 1938. Bolivia, defeated by Paraguay in the Chaco War, is led by the military reformer German Busch, Peru by General Oscar Benavides, and Colombia elects Eduardo Santos. Venezuela is moving toward democracy under Eleazar Lopez Contreras after Gomez's death.",
+   "southern-cone": "Argentina is ruled by Roberto Ortiz, elected by fraud in the 'Infamous Decade', and Chile elects Pedro Aguirre Cerda of the Popular Front in October 1938. The Chaco Peace Treaty of July 1938 awards Paraguay most of the disputed Gran Chaco after its victory over Bolivia. Uruguay is led by Alfredo Baldomir from June 1938.",
+   "australasia": "Australia, under Prime Minister Joseph Lyons, marks 150 years since British settlement, and Aboriginal activists hold a 'Day of Mourning' on 26 January 1938. New Zealand's Labour government under Michael Joseph Savage passes a pioneering Social Security Act. Australia rules Papua and the New Guinea mandate, and Japan has closed its mandated islands in Micronesia to outsiders, fuelling suspicion that it is fortifying them."
+  },
+  "powers": [
+   {
+    "name": "British Empire",
+    "map": "United Kingdom",
+    "ruler": "George VI (PM Neville Chamberlain)",
+    "capital": "London",
+    "extent": "About a quarter of the world's land, including India, the dominions, much of Africa and Middle East mandates"
+   },
+   {
+    "name": "United States",
+    "map": "United States",
+    "ruler": "President Franklin D. Roosevelt",
+    "capital": "Washington, D.C.",
+    "extent": "48 states plus Alaska, Hawaii, Puerto Rico, the Philippine Commonwealth and the Canal Zone"
+   },
+   {
+    "name": "Nazi Germany",
+    "map": "Germany",
+    "ruler": "Adolf Hitler (Fuhrer)",
+    "capital": "Berlin",
+    "extent": "Germany enlarged by Austria (March 1938) and the Sudetenland (October 1938)"
+   },
+   {
+    "name": "Soviet Union",
+    "map": "USSR",
+    "ruler": "Joseph Stalin",
+    "capital": "Moscow",
+    "extent": "About a sixth of the world's land, from Ukraine to the Pacific"
+   },
+   {
+    "name": "Empire of Japan",
+    "map": "Empire of Japan",
+    "ruler": "Emperor Hirohito (PM Konoe Fumimaro)",
+    "capital": "Tokyo",
+    "extent": "Japan, Korea, Taiwan, southern Sakhalin, the South Seas Mandate, puppet Manchukuo and occupied eastern China"
+   },
+   {
+    "name": "French Third Republic",
+    "map": "France",
+    "ruler": "President Albert Lebrun (PM Edouard Daladier from April)",
+    "capital": "Paris",
+    "extent": "Second-largest empire: North, West and Equatorial Africa, Madagascar, Indochina, Syria and Lebanon"
+   },
+   {
+    "name": "Fascist Italy",
+    "map": "Italy",
+    "ruler": "Victor Emmanuel III (Benito Mussolini as dictator)",
+    "capital": "Rome",
+    "extent": "Italy, Libya, Italian East Africa (Ethiopia, Eritrea, Somaliland) and the Dodecanese"
+   },
+   {
+    "name": "Republic of China",
+    "map": "Chinese warlords",
+    "ruler": "Chiang Kai-shek (Nationalist government)",
+    "capital": "Chongqing (wartime; Nanjing fell in 1937)",
+    "extent": "Western and southern China; the east coast and great cities are under Japanese occupation"
+   }
+  ],
+  "events": [
+   {
+    "year": 1933,
+    "text": "Hitler becomes Chancellor of Germany"
+   },
+   {
+    "year": 1935,
+    "text": "Italy invades Ethiopia"
+   },
+   {
+    "year": 1936,
+    "text": "Spanish Civil War begins; Germany remilitarises the Rhineland; Rome-Berlin Axis formed"
+   },
+   {
+    "year": 1937,
+    "text": "Japan launches full-scale war on China; Nanjing Massacre"
+   },
+   {
+    "year": 1938,
+    "text": "Germany annexes Austria (Anschluss)"
+   },
+   {
+    "year": 1938,
+    "text": "Mexico nationalises its oil industry"
+   },
+   {
+    "year": 1938,
+    "text": "Munich Agreement gives the Sudetenland to Germany"
+   },
+   {
+    "year": 1938,
+    "text": "Kristallnacht pogrom against Jews in Germany and Austria"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia: 1938",
+    "url": "https://en.wikipedia.org/wiki/1938"
+   },
+   {
+    "title": "Wikipedia: South Seas Mandate",
+    "url": "https://en.wikipedia.org/wiki/South_Seas_Mandate"
+   },
+   {
+    "title": "Wikipedia: Khorloogiin Choibalsan",
+    "url": "https://en.wikipedia.org/wiki/Khorloogiin_Choibalsan"
+   },
+   {
+    "title": "Wikipedia: List of prime ministers of France",
+    "url": "https://en.wikipedia.org/wiki/List_of_prime_ministers_of_France"
+   },
+   {
+    "title": "Wikipedia: List of prime ministers of Japan",
+    "url": "https://en.wikipedia.org/wiki/List_of_prime_ministers_of_Japan"
+   },
+   {
+    "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. XI: Struggle for Freedom (Internet Archive)",
+    "url": "https://archive.org/details/struggleforfreed00bhar"
+   }
+  ]
+ },
+ {
+  "year": 1945,
+  "title": "Victory, Ruin and the Atom",
+  "age": "Second World War",
+  "overview": "1945 is the year the Second World War ends, the deadliest conflict in history, which killed an estimated 60 to 85 million people, including six million Jews murdered in the Holocaust. Germany surrendered in May after Hitler's suicide in the ruins of Berlin, and Japan surrendered in August after American atomic bombs destroyed Hiroshima and Nagasaki and the Soviet Union invaded Manchuria. Two superpowers emerge: the United States, the richest country on Earth and sole owner of the atomic bomb, and the Soviet Union, whose Red Army now occupies Eastern Europe. At Yalta and Potsdam the victors divided Germany and Austria into occupation zones, and in San Francisco fifty nations founded the United Nations. Britain and France are victorious but bankrupt, and their empires are starting to crack: Indonesia and Vietnam declare independence, India is heading toward freedom, and China slides back into civil war. Much of Europe and East Asia lies in rubble, with millions of refugees on the move.",
+  "regions": {
+   "southern-africa": "South Africa's Prime Minister Jan Smuts helps draft the United Nations Charter, while his country keeps the mandate of South West Africa and its system of racial segregation. Uranium from the Belgian Congo's Shinkolobwe mine supplied the Manhattan Project that built the atomic bomb. Britain rules the Rhodesias, Tanganyika, Nyasaland and Kenya, Portugal still holds Angola and Mozambique, and Madagascar is under Free French rule after Britain seized it from Vichy France in 1942.",
+   "northern-africa": "Haile Selassie was restored to Ethiopia's throne in 1941 after British and Ethiopian forces drove out the Italians. Italy's former colonies of Libya, Eritrea and Somalia are under British (and, in Libya's Fezzan, French) military administration. Egypt, under King Farouk, hosts the founding of the Arab League in March 1945. In French Algeria, protests on VE Day at Setif lead to a massacre of thousands of Algerians, and France also rules Morocco, Tunisia and West and Equatorial Africa.",
+   "europe": "Nazi Germany surrendered on 7-8 May 1945; Germany and Austria are divided into American, British, French and Soviet zones, with Berlin and Vienna also split, and Germany's lands east of the Oder-Neisse line handed to Poland, except northern East Prussia, which the Soviet Union annexed and, in northern East Prussia, the Soviet Union. The Red Army occupies Poland, Czechoslovakia, Hungary, Romania and Bulgaria, where Communist-dominated governments are being installed, while Tito's partisans rule Yugoslavia. Britain elects Clement Attlee's Labour government in July, replacing Winston Churchill, and France is led by Charles de Gaulle's Provisional Government. Franco's Spain and Salazar's Portugal, neutral in the war, remain dictatorships.",
+   "middle-east-south-asia": "India is still ruled by Britain under Viceroy Lord Wavell, but independence is clearly coming, and the Muslim League under Muhammad Ali Jinnah demands a separate Pakistan. Iran, under the young Shah Mohammad Reza Pahlavi, remains occupied by British and Soviet troops, and a Soviet-backed separatist movement emerges in Azerbaijan. Syria and Lebanon are winning independence from France, Britain holds the Palestine mandate amid rising Jewish-Arab conflict, and Ibn Saud of Saudi Arabia met President Roosevelt in February, beginning the US-Saudi oil partnership. Turkey, under Ismet Inonu, joined the Allies only in February 1945.",
+   "north-central-asia": "Soviet Central Asia and Siberia were transformed by the war, receiving evacuated factories and entire peoples deported by Stalin, such as Volga Germans, Chechens and Crimean Tatars, many of them sent to Kazakhstan. The USSR annexed Tuva in 1944. Mongolia, under Choibalsan, votes for independence in an October 1945 plebiscite that China soon recognises, and in Xinjiang a Soviet-backed East Turkestan Republic controls the Ili region.",
+   "east-asia": "Japan surrendered on 15 August 1945 and formally on 2 September; Emperor Hirohito remains, but the country is occupied by the Americans under General Douglas MacArthur. Korea, freed from Japanese rule, is divided at the 38th parallel into a Soviet-occupied north and an American-occupied south, and Taiwan is handed back to China. Chiang Kai-shek's Nationalists and Mao Zedong's Communists hold peace talks in Chongqing, but both race to seize Japanese-held territory, and civil war is about to resume. Tibet is governed by a regent for the young 14th Dalai Lama.",
+   "southeast-asia": "Japan's occupation of Southeast Asia has shattered European prestige. Sukarno proclaims Indonesia's independence on 17 August and Ho Chi Minh proclaims the Democratic Republic of Vietnam on 2 September, while the last Vietnamese emperor, Bao Dai, abdicates; British and Indian troops arrive to restore Dutch and French rule and fight Indonesian nationalists at Surabaya. The Philippines, liberated in the bloody Battle of Manila, is led by President Sergio Osmena toward independence in 1946. Britain retakes Burma and Malaya, and Thailand, under King Ananda Mahidol, escapes punishment for its alliance with Japan.",
+   "northern-north-america": "Canada, under Prime Minister Mackenzie King, ends the war as a major military and industrial power; in September a Soviet cipher clerk, Igor Gouzenko, defects in Ottawa, exposing Soviet spy rings in an early warning of the Cold War. Newfoundland is still run by a British commission and will join Canada in 1949. Alaska, linked by the new Alaska Highway, is a US territory, and Greenland hosts US bases while Denmark was under German occupation.",
+   "southern-north-america": "Franklin Roosevelt died in April 1945, and President Harry S. Truman led the United States to victory, ordering the atomic bombings after the first test in New Mexico in July. The US emerges with half the world's industrial output. Mexico, under Manuel Avila Camacho, sent an air squadron to fight in the Philippines, Guatemala's democratic 'revolution' of 1944 brings Juan Jose Arevalo to the presidency, and Trujillo still rules the Dominican Republic.",
+   "northern-south-america": "Brazil, the only Latin American country to send combat troops to Europe, sees the army depose Getulio Vargas in October 1945, and General Eurico Gaspar Dutra is elected president in December. In Venezuela, an October coup brings Romulo Betancourt's Democratic Action party to power. Peru elects Jose Luis Bustamante y Rivero, and Colombia is led by Alberto Lleras Camargo from August 1945.",
+   "southern-cone": "Argentina, under a military government with General Edelmiro Farrell as president, declared war on the Axis only in March 1945; Colonel Juan Peron, the powerful labour minister, was arrested in October but freed after a mass workers' rally on 17 October, launching Peronism. Chile, under Juan Antonio Rios, celebrates poet Gabriela Mistral, Latin America's first Nobel Prize winner in literature. Uruguay is led by Juan Jose de Amezaga and Paraguay by the dictator Higinio Morinigo.",
+   "australasia": "Australia's wartime Prime Minister John Curtin died in July 1945 and was succeeded by Ben Chifley; Australian troops ended the war fighting in New Guinea and Borneo. New Zealand is led by Peter Fraser. The Pacific islands, from the Solomons to Iwo Jima and Okinawa, have been bloody battlefields, and Japan's former Micronesian mandate is now held by the United States."
+  },
+  "powers": [
+   {
+    "name": "United States",
+    "map": "United States",
+    "ruler": "President Harry S. Truman",
+    "capital": "Washington, D.C.",
+    "extent": "48 states plus Alaska, Hawaii and Pacific bases; occupies Japan, southern Korea and zones of Germany and Austria; sole atomic power"
+   },
+   {
+    "name": "Soviet Union",
+    "map": "USSR",
+    "ruler": "Joseph Stalin",
+    "capital": "Moscow",
+    "extent": "About a sixth of the world's land, enlarged by the Baltic states and eastern Poland, with the Red Army occupying Eastern Europe, northern Korea and Manchuria"
+   },
+   {
+    "name": "British Empire",
+    "map": "United Kingdom",
+    "ruler": "George VI (PM Clement Attlee from July; Winston Churchill before)",
+    "capital": "London",
+    "extent": "Still about a quarter of the world's land, including India, much of Africa and the Middle East, but nearly bankrupt"
+   },
+   {
+    "name": "Republic of China",
+    "map": "China",
+    "ruler": "Chiang Kai-shek (Nationalist government)",
+    "capital": "Chongqing (returning to Nanjing)",
+    "extent": "China and newly returned Taiwan, with Communists controlling much of the north"
+   },
+   {
+    "name": "French Republic",
+    "map": "France",
+    "ruler": "Charles de Gaulle (head of the Provisional Government)",
+    "capital": "Paris",
+    "extent": "France and its empire in Africa and Indochina, plus an occupation zone in Germany"
+   },
+   {
+    "name": "Occupied Japan",
+    "map": "Japan (USA)",
+    "ruler": "Emperor Hirohito, under US occupation (General Douglas MacArthur)",
+    "capital": "Tokyo",
+    "extent": "The four main Japanese islands; all overseas territories lost"
+   }
+  ],
+  "events": [
+   {
+    "year": 1939,
+    "text": "Germany invades Poland; the Second World War begins"
+   },
+   {
+    "year": 1941,
+    "text": "Germany invades the Soviet Union; Japan attacks Pearl Harbor"
+   },
+   {
+    "year": 1945,
+    "text": "Yalta Conference (February); Roosevelt dies (April)"
+   },
+   {
+    "year": 1945,
+    "text": "Hitler's suicide and Germany's surrender (May)"
+   },
+   {
+    "year": 1945,
+    "text": "United Nations Charter signed in San Francisco (June)"
+   },
+   {
+    "year": 1945,
+    "text": "Atomic bombings of Hiroshima and Nagasaki; Japan surrenders (August)"
+   },
+   {
+    "year": 1945,
+    "text": "Indonesia and Vietnam declare independence; Korea divided"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia: World War II",
+    "url": "https://en.wikipedia.org/wiki/World_War_II"
+   },
+   {
+    "title": "Wikipedia: World War II casualties",
+    "url": "https://en.wikipedia.org/wiki/World_War_II_casualties"
+   },
+   {
+    "title": "Wikipedia: 1945",
+    "url": "https://en.wikipedia.org/wiki/1945"
+   },
+   {
+    "title": "Wikipedia: Oder–Neisse line",
+    "url": "https://en.wikipedia.org/wiki/Oder%E2%80%93Neisse_line"
+   },
+   {
+    "title": "Wikipedia: Sétif and Guelma massacre",
+    "url": "https://en.wikipedia.org/wiki/S%C3%A9tif_and_Guelma_massacre"
+   },
+   {
+    "title": "Brookings: 75 years after a historic meeting on the USS Quincy",
+    "url": "https://www.brookings.edu/articles/75-years-after-a-historic-meeting-on-the-uss-quincy-us-saudi-relations-are-in-need-of-a-true-re-think/"
+   },
+   {
+    "title": "Wikipedia: Potsdam Agreement",
+    "url": "https://en.wikipedia.org/wiki/Potsdam_Agreement"
+   },
+   {
+    "title": "Majumdar (ed.), The History and Culture of the Indian People, vol. XI: Struggle for Freedom (Internet Archive)",
+    "url": "https://archive.org/details/struggleforfreed00bhar"
+   }
+  ]
+ },
+ {
+  "year": 1960,
+  "title": "The Year of Africa",
+  "age": "Cold War and Decolonization",
+  "overview": "In 1960 the world is split by the Cold War between the American-led West and the Soviet-led Communist bloc, each armed with hydrogen bombs and racing into space. In May, the Soviets shoot down an American U-2 spy plane, wrecking a summit in Paris. Meanwhile the European empires are rapidly dissolving: seventeen African countries, including Nigeria, Congo and most of French Africa, win independence in what is called the 'Year of Africa'. British Prime Minister Harold Macmillan speaks of a 'wind of change' blowing through the continent. The newly independent Congo immediately plunges into crisis. China, under Mao Zedong, is suffering a catastrophic famine caused by the Great Leap Forward and is breaking with the Soviet Union. Western Europe and Japan are booming, Cuba's revolutionary Fidel Castro is turning toward Moscow, and in November John F. Kennedy is elected US president. Television, jet airliners and consumer goods are spreading across rich countries.",
+  "regions": {
+   "southern-africa": "The Belgian Congo became independent on 30 June 1960 under President Joseph Kasa-Vubu and Prime Minister Patrice Lumumba, but within weeks the army mutinied, Katanga seceded under Moise Tshombe, UN troops arrived, and Colonel Joseph Mobutu seized power in September. Madagascar gained independence under Philibert Tsiranana. In South Africa, police killed 69 protesters at Sharpeville in March, and Prime Minister Hendrik Verwoerd's apartheid government wins a referendum to become a republic. Britain still rules the Federation of Rhodesia and Nyasaland, Kenya and Tanganyika, and Salazar's Portugal holds Angola and Mozambique.",
+   "northern-africa": "Most of French West and Equatorial Africa becomes independent in 1960, including Senegal (Leopold Senghor), Mali (Modibo Keita), Ivory Coast (Felix Houphouet-Boigny), Niger and Chad, along with French-run Cameroon, while Nigeria, Africa's most populous country, becomes independent from Britain on 1 October under Prime Minister Abubakar Tafawa Balewa, and Somalia unites in July. Algeria is still fighting a brutal independence war against France. Gamal Abdel Nasser leads Egypt, joined with Syria as the United Arab Republic, and begins the Aswan High Dam; Kwame Nkrumah makes Ghana a republic, and Emperor Haile Selassie survives a coup attempt in Ethiopia in December.",
+   "europe": "Europe is divided by the Iron Curtain: West Germany under Chancellor Konrad Adenauer is in NATO and booming, while Walter Ulbricht's East Germany, in the Warsaw Pact, is losing citizens through Berlin, a flow the Berlin Wall will stop in 1961. The six-nation European Economic Community is rivalled by the new European Free Trade Association. Charles de Gaulle leads France's Fifth Republic, which tests its first atomic bomb in the Algerian Sahara; Elizabeth II reigns in Britain, Khrushchev rules the Soviet Union, and Cyprus becomes independent in August. Franco and Salazar still rule Spain and Portugal.",
+   "middle-east-south-asia": "India is led by Prime Minister Jawaharlal Nehru, a founder of the Non-Aligned Movement, and signs the Indus Waters Treaty with Pakistan, which is ruled by General Ayub Khan. Ceylon elects Sirimavo Bandaranaike, the world's first female prime minister. A military coup in May overthrows Turkey's government, Abd al-Karim Qasim rules revolutionary Iraq, and the Shah rules Iran; in September, oil-producing states found OPEC in Baghdad. David Ben-Gurion leads Israel, whose agents capture Nazi war criminal Adolf Eichmann in Argentina.",
+   "north-central-asia": "Soviet Central Asia is home to the Baikonur Cosmodrome in Kazakhstan, from which Sputnik was launched in 1957 and Yuri Gagarin will fly in 1961, and Khrushchev's Virgin Lands campaign has ploughed up millions of hectares of Kazakh steppe for wheat. The Semipalatinsk site hosts Soviet nuclear tests, and giant dams are being built in Siberia. Mongolia, under Yumjaagiin Tsedenbal, stays firmly in the Soviet camp as Moscow withdraws its advisers from China in July 1960.",
+   "east-asia": "The People's Republic of China, under Chairman Mao Zedong, with Liu Shaoqi as head of state and Zhou Enlai as premier, is in the depths of a famine caused by the Great Leap Forward that will kill tens of millions. The Sino-Soviet split breaks into the open, and Tibet has been under direct Chinese control since the 1959 uprising sent the Dalai Lama into exile in India. In Japan, mass protests against the US security treaty force Prime Minister Kishi Nobusuke to resign, and Ikeda Hayato begins a plan to double incomes. South Korea's April Revolution topples Syngman Rhee, Kim Il-sung rules North Korea, and Chiang Kai-shek rules Taiwan.",
+   "southeast-asia": "Vietnam is divided between Ho Chi Minh's Communist North and Ngo Dinh Diem's US-backed South, where the National Liberation Front (Viet Cong) is founded in December 1960; neighbouring Laos is torn by a coup and civil war. Indonesia's Sukarno rules under 'Guided Democracy' and demands Dutch-held West New Guinea. Malaya, under Tunku Abdul Rahman, ends its long Communist Emergency, Singapore is self-governing under Lee Kuan Yew, Prince Sihanouk leads Cambodia, and Field Marshal Sarit Thanarat rules Thailand under King Bhumibol.",
+   "northern-north-america": "Canada, under Prime Minister John Diefenbaker, is a NATO and NORAD ally of the United States, with radar lines across the Arctic to watch for Soviet bombers. In Quebec, Jean Lesage's election in June 1960 begins the 'Quiet Revolution'. Alaska became the 49th US state in 1959, and Greenland, now a county of Denmark, hosts the large US air base at Thule.",
+   "southern-north-america": "President Dwight D. Eisenhower's America is the world's richest society; Hawaii became the 50th state in 1959, and in November 1960 John F. Kennedy narrowly defeats Richard Nixon. Black students' sit-ins in Greensboro energise the civil rights movement. Fidel Castro's Cuba nationalises American property and turns to the Soviet Union, and the US imposes a trade embargo in October. Mexico is governed by Adolfo Lopez Mateos of the long-ruling PRI, and dictators such as Trujillo and the Somoza family still rule parts of the Caribbean and Central America.",
+   "northern-south-america": "Brazil inaugurates its futuristic new capital, Brasilia, on 21 April 1960 under President Juscelino Kubitschek, and Janio Quadros wins the October election. Venezuela, under the democrat Romulo Betancourt, co-founds OPEC. Colombia is governed by Alberto Lleras Camargo under the National Front power-sharing deal, Victor Paz Estenssoro returns to power in Bolivia, and the Guianas remain under British, Dutch and French rule.",
+   "southern-cone": "On 22 May 1960 the Valdivia earthquake, the most powerful ever recorded (magnitude 9.5), devastates southern Chile, governed by President Jorge Alessandri. Argentina is led by Arturo Frondizi, with Peron in exile and his movement banned, and Israeli agents abduct Eichmann from Buenos Aires in May. Paraguay is ruled by the dictator Alfredo Stroessner, and Uruguay by a collective National Council of Government; the Treaty of Montevideo creates a Latin American free-trade association.",
+   "australasia": "Australia, under the long-serving Prime Minister Robert Menzies, is a close US ally and still keeps its 'White Australia' immigration policy; it governs Papua and New Guinea. New Zealand elects Keith Holyoake as prime minister in November 1960, and Western Samoa is preparing for independence in 1962. Hawaii has just become a US state, and the Dutch still hold West New Guinea."
+  },
+  "powers": [
+   {
+    "name": "United States",
+    "map": "United States",
+    "ruler": "President Dwight D. Eisenhower",
+    "capital": "Washington, D.C.",
+    "extent": "50 states, leading NATO and a worldwide network of alliances and bases; the world's largest economy"
+   },
+   {
+    "name": "Soviet Union",
+    "map": "USSR",
+    "ruler": "Nikita Khrushchev (First Secretary and Premier)",
+    "capital": "Moscow",
+    "extent": "About a sixth of the world's land, dominating Eastern Europe through the Warsaw Pact"
+   },
+   {
+    "name": "People's Republic of China",
+    "map": "China",
+    "ruler": "Mao Zedong (CCP Chairman; Liu Shaoqi head of state, Zhou Enlai premier)",
+    "capital": "Beijing",
+    "extent": "Mainland China including Tibet and Xinjiang; about 650 million people"
+   },
+   {
+    "name": "United Kingdom",
+    "map": "United Kingdom",
+    "ruler": "Elizabeth II (PM Harold Macmillan)",
+    "capital": "London",
+    "extent": "Britain plus a shrinking empire in Africa, the Caribbean and Asia, and leader of the Commonwealth"
+   },
+   {
+    "name": "French Fifth Republic",
+    "map": "France",
+    "ruler": "President Charles de Gaulle",
+    "capital": "Paris",
+    "extent": "France and Algeria (at war), plus overseas territories; most African colonies freed in 1960"
+   },
+   {
+    "name": "West Germany",
+    "map": "West Germany",
+    "ruler": "Chancellor Konrad Adenauer",
+    "capital": "Bonn",
+    "extent": "Western two-thirds of divided Germany; Europe's economic powerhouse"
+   },
+   {
+    "name": "India",
+    "map": "India",
+    "ruler": "PM Jawaharlal Nehru (President Rajendra Prasad)",
+    "capital": "New Delhi",
+    "extent": "Most of the Indian subcontinent; world's largest democracy and a leader of the Non-Aligned Movement"
+   },
+   {
+    "name": "Japan",
+    "map": "Japan",
+    "ruler": "Emperor Hirohito (PM Kishi Nobusuke, then Ikeda Hayato from July)",
+    "capital": "Tokyo",
+    "extent": "The Japanese islands (Okinawa still under US rule); a fast-growing economy"
+   }
+  ],
+  "events": [
+   {
+    "year": 1949,
+    "text": "NATO founded; Communists win the Chinese Civil War"
+   },
+   {
+    "year": 1957,
+    "text": "Soviet Union launches Sputnik; Ghana becomes independent"
+   },
+   {
+    "year": 1959,
+    "text": "Cuban Revolution brings Fidel Castro to power"
+   },
+   {
+    "year": 1960,
+    "text": "Sharpeville massacre in South Africa (March)"
+   },
+   {
+    "year": 1960,
+    "text": "U-2 incident wrecks the Paris summit (May); Valdivia earthquake in Chile"
+   },
+   {
+    "year": 1960,
+    "text": "Seventeen African states gain independence; Congo Crisis begins"
+   },
+   {
+    "year": 1960,
+    "text": "OPEC founded in Baghdad (September)"
+   },
+   {
+    "year": 1960,
+    "text": "John F. Kennedy elected US president (November)"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia: 1960",
+    "url": "https://en.wikipedia.org/wiki/1960"
+   },
+   {
+    "title": "Wikipedia: Year of Africa",
+    "url": "https://en.wikipedia.org/wiki/Year_of_Africa"
+   },
+   {
+    "title": "Wikipedia: List of prime ministers of Japan",
+    "url": "https://en.wikipedia.org/wiki/List_of_prime_ministers_of_Japan"
+   }
+  ]
+ },
+ {
+  "year": 1994,
+  "title": "After the Cold War",
+  "age": "Post-Cold War Era",
+  "overview": "The Cold War is over: the Soviet Union dissolved in 1991 into fifteen independent states, and the United States stands as the world's only superpower. Hopes run high for a new era of democracy and open markets. Nelson Mandela becomes South Africa's first Black president after the country's first all-race elections, the Channel Tunnel links Britain and France, the North American Free Trade Agreement takes effect, and Israel signs peace with Jordan as Palestinian self-rule begins. Yet 1994 is also a year of horror: in Rwanda, extremists murder an estimated 500,000 to 800,000 people, mostly Tutsi along with moderate Hutu, in about a hundred days, while war rages in Bosnia and Russia invades breakaway Chechnya in December. China's economy is booming under market reforms, India is liberalising, and the internet and mobile phones are starting to spread. Boris Yeltsin's Russia struggles with economic collapse, and North Korea's founder Kim Il-sung dies in July.",
+  "regions": {
+   "southern-africa": "South Africa's first democratic elections on 27 April 1994 end apartheid, and Nelson Mandela is inaugurated as president on 10 May. In Rwanda, a genocide from April to July kills an estimated 500,000 to 800,000 people before Paul Kagame's Rwandan Patriotic Front takes power, sending a million Hutu refugees into Zaire, still ruled by Mobutu Sese Seko. Mozambique holds its first multiparty elections after its civil war, Malawi votes out its dictator Hastings Banda, and Angola's government and Jonas Savimbi's UNITA sign the Lusaka Protocol. Robert Mugabe rules Zimbabwe and Sam Nujoma leads newly independent Namibia.",
+   "northern-africa": "Algeria is in a savage civil war between the military government of Liamine Zeroual and Islamist insurgents. Egypt is ruled by Hosni Mubarak, Libya's Muammar Gaddafi is under UN sanctions, and Sudan's Islamist military regime under Omar al-Bashir hosts Osama bin Laden. Somalia has collapsed into clan warfare after the failed UN and US intervention, Eritrea became independent from Ethiopia in 1993, and Nigeria is ruled by the dictator Sani Abacha. Civil wars ravage Liberia and Sierra Leone.",
+   "europe": "Europe is reuniting after the Cold War: Germany has been one country since 1990, the European Union was created by the Maastricht Treaty (1993), Austria, Finland and Sweden vote to join, and the last Russian troops leave Germany, Estonia and Latvia in August 1994. The Channel Tunnel opens in May. But Yugoslavia's breakup has brought war to Bosnia, where Sarajevo is under siege, and Russia, under President Boris Yeltsin, invades Chechnya in December. Helmut Kohl leads Germany, Francois Mitterrand France, John Major Britain, and the IRA declares a ceasefire in Northern Ireland.",
+   "middle-east-south-asia": "The Oslo peace process brings Palestinian self-rule to Gaza and Jericho, Yasser Arafat returns from exile, and Israel's Yitzhak Rabin signs a peace treaty with Jordan's King Hussein in October. Saddam Hussein's Iraq is under heavy UN sanctions, Iran is led by Supreme Leader Ali Khamenei and President Rafsanjani, and Yemen fights a short civil war. Afghanistan is torn by warring mujahideen factions, and the Taliban movement emerges in Kandahar late in 1994. India, under P. V. Narasimha Rao, is opening its economy, and Benazir Bhutto is prime minister of Pakistan.",
+   "north-central-asia": "Five Central Asian republics have been independent since 1991, mostly ruled by former Soviet Communist bosses: Nursultan Nazarbayev in Kazakhstan, Islam Karimov in Uzbekistan, Saparmurat Niyazov in Turkmenistan, and Askar Akayev in Kyrgyzstan, while Tajikistan is in civil war under Emomali Rahmonov. Kazakhstan has agreed to hand its Soviet nuclear warheads back to Russia and leases the Baikonur Cosmodrome to Russia. Siberia remains part of Russia, and Mongolia has been a democracy since 1990.",
+   "east-asia": "China, under President Jiang Zemin with Deng Xiaoping still the paramount elder, is booming after market reforms, and construction of the Three Gorges Dam begins in December. Hong Kong (British until 1997) and Macau (Portuguese until 1999) await handover to China, and Taiwan is democratising under Lee Teng-hui. North Korea's Kim Il-sung dies in July and is succeeded by his son Kim Jong-il, whose government signs a nuclear freeze deal (the Agreed Framework) with the US in October. Japan, under Emperor Akihito, has three prime ministers in 1994 as its economic bubble deflates, while South Korea is led by Kim Young-sam.",
+   "southeast-asia": "The US lifts its trade embargo on Vietnam in February, as Vietnam pursues market reforms under Communist rule. Cambodia, after UN-run elections in 1993, is again a kingdom under Norodom Sihanouk, though the Khmer Rouge still fight on. Indonesia is ruled by Suharto, who occupies East Timor, and Myanmar's military junta keeps democracy leader Aung San Suu Kyi under house arrest. Mahathir Mohamad's Malaysia, Singapore, Thailand and Fidel Ramos's Philippines are fast-growing 'tiger' economies.",
+   "northern-north-america": "Canada, under Prime Minister Jean Chretien, joins the North American Free Trade Agreement on 1 January 1994, and Quebec elects a separatist government under Jacques Parizeau, setting up a 1995 independence referendum. An agreement to create the Inuit territory of Nunavut (1999) has been signed. Greenland governs itself under Danish home rule, and Alaska is a US state.",
+   "southern-north-america": "Bill Clinton's America is the sole superpower and enjoying an economic boom, but Republicans win Congress in the November 1994 midterms. NAFTA takes effect on 1 January, the same day the Zapatista rebels rise up in Chiapas, Mexico; presidential candidate Luis Donaldo Colosio is assassinated, Ernesto Zedillo is elected, and a peso crisis strikes in December. A US-led force restores Haiti's elected President Jean-Bertrand Aristide in October, and thousands of Cubans flee Castro's island on rafts.",
+   "northern-south-america": "Brazil introduces the real currency to tame hyperinflation and elects its architect, Fernando Henrique Cardoso, as president, and wins the football World Cup. Alberto Fujimori rules Peru with strong powers after his 1992 'self-coup' and the capture of the Shining Path's leader. Colombia elects Ernesto Samper amid the power of drug cartels, and Venezuela is led by the veteran Rafael Caldera.",
+   "southern-cone": "Democracy has returned across the region: Argentina, under Carlos Menem, keeps its peso pegged to the dollar and reforms its constitution, but suffers the deadly AMIA bombing of a Jewish centre in Buenos Aires in July. Chile is led by Eduardo Frei Ruiz-Tagle, though former dictator Augusto Pinochet still commands the army. Paraguay has its first civilian president in decades, Juan Carlos Wasmosy, and the Mercosur trade bloc agrees a customs union in December.",
+   "australasia": "Australia, under Labor Prime Minister Paul Keating, debates becoming a republic and has recognised Aboriginal land rights in its Native Title Act (1993). New Zealand is led by Jim Bolger, and Papua New Guinea struggles with a separatist war on Bougainville. Palau becomes independent in October 1994, ending the last UN trust territory, and France has paused its nuclear tests in French Polynesia, which it will resume in 1995."
+  },
+  "powers": [
+   {
+    "name": "United States",
+    "map": "United States",
+    "ruler": "President Bill Clinton",
+    "capital": "Washington, D.C.",
+    "extent": "50 states; the only superpower, with about a quarter of world economic output"
+   },
+   {
+    "name": "Russian Federation",
+    "map": "Russia",
+    "ruler": "President Boris Yeltsin",
+    "capital": "Moscow",
+    "extent": "About 17 million km², the world's largest country, from the Baltic to the Pacific"
+   },
+   {
+    "name": "People's Republic of China",
+    "map": "China",
+    "ruler": "President Jiang Zemin (Premier Li Peng; Deng Xiaoping paramount elder)",
+    "capital": "Beijing",
+    "extent": "About 9.6 million km² and 1.2 billion people; the fastest-growing major economy"
+   },
+   {
+    "name": "Japan",
+    "map": "Japan",
+    "ruler": "Emperor Akihito (PMs Hosokawa Morihiro and Hata Tsutomu, then Murayama Tomiichi from June)",
+    "capital": "Tokyo",
+    "extent": "The Japanese islands; the world's second-largest economy"
+   },
+   {
+    "name": "Germany",
+    "map": "Germany",
+    "ruler": "Chancellor Helmut Kohl",
+    "capital": "Berlin (government still in Bonn)",
+    "extent": "Reunified Germany, Europe's largest economy"
+   },
+   {
+    "name": "United Kingdom",
+    "map": "United Kingdom",
+    "ruler": "Elizabeth II (PM John Major)",
+    "capital": "London",
+    "extent": "Britain and Northern Ireland plus small overseas territories, including Hong Kong until 1997"
+   },
+   {
+    "name": "France",
+    "map": "France",
+    "ruler": "President Francois Mitterrand (PM Edouard Balladur)",
+    "capital": "Paris",
+    "extent": "France plus overseas departments and territories in the Caribbean, Indian Ocean and Pacific"
+   },
+   {
+    "name": "India",
+    "map": "India",
+    "ruler": "PM P. V. Narasimha Rao",
+    "capital": "New Delhi",
+    "extent": "Most of the Indian subcontinent; about 920 million people"
+   }
+  ],
+  "events": [
+   {
+    "year": 1989,
+    "text": "Berlin Wall falls; Tiananmen Square crackdown in China"
+   },
+   {
+    "year": 1991,
+    "text": "Gulf War; the Soviet Union dissolves"
+   },
+   {
+    "year": 1993,
+    "text": "European Union created; Oslo Accords between Israel and the PLO"
+   },
+   {
+    "year": 1994,
+    "text": "NAFTA takes effect; Zapatista uprising in Mexico"
+   },
+   {
+    "year": 1994,
+    "text": "Rwandan genocide (April-July)"
+   },
+   {
+    "year": 1994,
+    "text": "Nelson Mandela elected president of South Africa; Channel Tunnel opens"
+   },
+   {
+    "year": 1994,
+    "text": "Kim Il-sung dies; Israel-Jordan peace treaty signed"
+   },
+   {
+    "year": 1994,
+    "text": "Russia invades Chechnya (December)"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia: 1994",
+    "url": "https://en.wikipedia.org/wiki/1994"
+   },
+   {
+    "title": "Wikipedia: Rwandan genocide",
+    "url": "https://en.wikipedia.org/wiki/Rwandan_genocide"
+   },
+   {
+    "title": "The Conversation: France's final nuclear tests in the South Pacific, 30 years on",
+    "url": "https://theconversation.com/frances-final-nuclear-tests-in-the-south-pacific-30-years-on-256439"
+   },
+   {
+    "title": "Wikipedia: Agreed Framework",
+    "url": "https://en.wikipedia.org/wiki/Agreed_Framework"
+   },
+   {
+    "title": "Wikipedia: Kazakhstan and weapons of mass destruction",
+    "url": "https://en.wikipedia.org/wiki/Kazakhstan_and_weapons_of_mass_destruction"
+   },
+   {
+    "title": "Wikipedia: List of prime ministers of Japan",
+    "url": "https://en.wikipedia.org/wiki/List_of_prime_ministers_of_Japan"
+   },
+   {
+    "title": "ERR News: Thirty years since the last Russian forces left Estonia",
+    "url": "https://news.err.ee/1609437929/thirty-years-since-the-last-russian-forces-left-estonia"
+   }
+  ]
+ },
+ {
+  "year": 2000,
+  "title": "Into a New Millennium",
+  "age": "Age of Globalization",
+  "overview": "The world greets the year 2000 with fireworks and relief that the feared 'Y2K' computer bug caused little trouble. Globalisation is the word of the moment: trade, travel and the internet are knitting economies together, though the dot-com stock bubble bursts in March. The United States is the unchallenged superpower, but its November presidential election between George W. Bush and Al Gore ends in a disputed Florida recount settled by the Supreme Court. Vladimir Putin becomes president of Russia, pledging to restore order, and wages a second war in Chechnya. China is booming and preparing to join the World Trade Organization, and Europe has launched the euro. Democracy spreads, as Mexico's ruling party loses power after 71 years and Serbia's Slobodan Milosevic is ousted, but the Israeli-Palestinian peace process collapses into a new uprising. Wars continue in Congo, Sierra Leone and Afghanistan, AIDS is ravaging Africa, and the world's population has just passed six billion.",
+  "regions": {
+   "southern-africa": "Thabo Mbeki has succeeded Nelson Mandela as South Africa's president, while Zimbabwe's Robert Mugabe backs violent seizures of white-owned farms after losing a referendum in February. The Second Congo War (1998-2003) draws in armies from half a dozen nations against Laurent-Desire Kabila's government in the Democratic Republic of the Congo (still labelled Zaire on this map). Angola's civil war continues, devastating floods strike Mozambique, and Paul Kagame becomes president of Rwanda. HIV/AIDS is killing millions across the region.",
+   "northern-africa": "Ethiopia and Eritrea end a bloody border war with the Algiers Agreement in December. British troops intervene to save Sierra Leone's government from rebels in May. Nigeria has returned to civilian rule under Olusegun Obasanjo, Senegal sees its first peaceful change of party in power with Abdoulaye Wade, and Algeria's Abdelaziz Bouteflika works to end the civil war. Hosni Mubarak rules Egypt, Gaddafi rules Libya, King Mohammed VI has succeeded his father in Morocco, and Sudan's al-Bashir regime fights a long war in the south.",
+   "europe": "The European Union of 15 members launched the euro currency in 1999 and in December 2000 agrees the Treaty of Nice to prepare for expansion into Eastern Europe. In October, mass protests overthrow Slobodan Milosevic in Serbia, while Kosovo is under UN administration. Vladimir Putin becomes president of Russia, captures Grozny in the Second Chechen War, and faces criticism over the Kursk submarine disaster. Germany's government, under Gerhard Schroder, has moved to Berlin, Tony Blair leads Britain and Jacques Chirac France.",
+   "middle-east-south-asia": "Peace talks at Camp David collapse in July, and the Second Intifada erupts in September, while Israel withdraws from southern Lebanon in May. Syria's Hafez al-Assad dies and is succeeded by his son Bashar; al-Qaeda bombs the USS Cole in Aden in October; and Saddam Hussein's Iraq remains under sanctions. The Taliban control most of Afghanistan, sheltering Osama bin Laden. India, under Prime Minister Atal Bihari Vajpayee, passes a billion people, and General Pervez Musharraf rules Pakistan after a 1999 coup; both are now nuclear-armed.",
+   "north-central-asia": "Central Asia's authoritarian presidents are entrenched: Nazarbayev in Kazakhstan, Karimov in Uzbekistan, Niyazov (who has made himself president for life) in Turkmenistan, Akayev in Kyrgyzstan, and Rahmonov in Tajikistan after the civil war. Kazakhstan's oil boom is under way, with the giant Kashagan field discovered in 2000. Russia's Siberian oil and gas fund Putin's state, and Mongolia elects Nambaryn Enkhbayar as prime minister in July 2000.",
+   "east-asia": "China, under Jiang Zemin and Premier Zhu Rongji, has regained Hong Kong (1997) and Macau (1999) and is close to joining the World Trade Organization. In Taiwan, Chen Shui-bian's election ends half a century of Kuomintang rule. South Korea's Kim Dae-jung meets North Korea's Kim Jong-il in the first inter-Korean summit in June and wins the Nobel Peace Prize. Japan, under Emperor Akihito and Prime Minister Mori Yoshiro, is mired in economic stagnation.",
+   "southeast-asia": "East Timor, after voting for independence from Indonesia in 1999, is under UN administration and will become independent in 2002. Indonesia, democratic since Suharto's fall in 1998, is led by President Abdurrahman Wahid, and the Philippines' President Joseph Estrada is impeached in November and put on trial before the Senate in December. All ten Southeast Asian nations are now in ASEAN; Vietnam is visited by President Clinton in November, and Myanmar remains under military rule.",
+   "northern-north-america": "Canada, under Jean Chretien, re-elected in November 2000, is prosperous and closely tied to the US economy; former prime minister Pierre Trudeau dies in September. The Inuit territory of Nunavut was created in 1999. Greenland has home rule under Denmark, and Alaska is a US state.",
+   "southern-north-america": "Bill Clinton's last year in office is marked by economic prosperity, but the dot-com crash begins in March, and the November election between George W. Bush and Al Gore is decided by the Supreme Court in December. In Mexico, Vicente Fox of the National Action Party wins in July, ending 71 years of PRI rule. Panama took full control of its canal on 31 December 1999, and Fidel Castro still rules Cuba.",
+   "northern-south-america": "Hugo Chavez, re-elected in 2000 under a new constitution, is reshaping Venezuela with his 'Bolivarian Revolution'. Colombia, under Andres Pastrana, launches Plan Colombia with US aid against drug cartels and FARC guerrillas. In Peru, President Alberto Fujimori flees to Japan amid a corruption scandal and resigns by fax in November; Ecuador adopts the US dollar, a plan announced just before a January coup; and Brazil, under Fernando Henrique Cardoso, marks 500 years since the arrival of the Portuguese.",
+   "southern-cone": "Argentina, under Fernando de la Rua, is sliding into the recession that will explode into crisis in 2001. Chile elects socialist Ricardo Lagos, and former dictator Augusto Pinochet returns home after 16 months of detention in Britain. Uruguay is led by Jorge Batlle and Paraguay by Luis Gonzalez Macchi, and the Mercosur trade bloc links the region's economies.",
+   "australasia": "Sydney hosts the 2000 Olympic Games, and Australia, under Prime Minister John Howard, sees hundreds of thousands march for reconciliation with Aboriginal Australians after voters rejected becoming a republic in 1999. New Zealand is led by Helen Clark. Coups strike Fiji, where George Speight holds the government hostage in May, and the Solomon Islands, and Papua New Guinea works toward peace on Bougainville."
+  },
+  "powers": [
+   {
+    "name": "United States",
+    "map": "United States",
+    "ruler": "President Bill Clinton (George W. Bush elected in November)",
+    "capital": "Washington, D.C.",
+    "extent": "50 states; the sole superpower, with about 30 percent of world economic output"
+   },
+   {
+    "name": "People's Republic of China",
+    "map": "China",
+    "ruler": "President Jiang Zemin (Premier Zhu Rongji)",
+    "capital": "Beijing",
+    "extent": "About 9.6 million km² and 1.27 billion people, now including Hong Kong and Macau"
+   },
+   {
+    "name": "Russian Federation",
+    "map": "Russia",
+    "ruler": "President Vladimir Putin (acting from 31 December 1999, elected March 2000)",
+    "capital": "Moscow",
+    "extent": "About 17 million km², the world's largest country"
+   },
+   {
+    "name": "Japan",
+    "map": "Japan",
+    "ruler": "Emperor Akihito (PM Mori Yoshiro from April)",
+    "capital": "Tokyo",
+    "extent": "The Japanese islands; the world's second-largest economy"
+   },
+   {
+    "name": "Germany",
+    "map": "Germany",
+    "ruler": "Chancellor Gerhard Schroder",
+    "capital": "Berlin",
+    "extent": "Reunified Germany; the largest economy in the European Union"
+   },
+   {
+    "name": "United Kingdom",
+    "map": "United Kingdom",
+    "ruler": "Elizabeth II (PM Tony Blair)",
+    "capital": "London",
+    "extent": "Britain and Northern Ireland plus small overseas territories"
+   },
+   {
+    "name": "France",
+    "map": "France",
+    "ruler": "President Jacques Chirac (PM Lionel Jospin)",
+    "capital": "Paris",
+    "extent": "France plus overseas departments and territories"
+   },
+   {
+    "name": "India",
+    "map": "India",
+    "ruler": "PM Atal Bihari Vajpayee (President K. R. Narayanan)",
+    "capital": "New Delhi",
+    "extent": "Most of the Indian subcontinent; population passes one billion"
+   }
+  ],
+  "events": [
+   {
+    "year": 1997,
+    "text": "Hong Kong returned to China; Asian financial crisis"
+   },
+   {
+    "year": 1999,
+    "text": "Euro launched; NATO bombs Yugoslavia over Kosovo; East Timor votes for independence"
+   },
+   {
+    "year": 2000,
+    "text": "Y2K passes quietly; dot-com bubble bursts (March)"
+   },
+   {
+    "year": 2000,
+    "text": "Vladimir Putin elected president of Russia (March)"
+   },
+   {
+    "year": 2000,
+    "text": "First inter-Korean summit (June); Vicente Fox ends PRI rule in Mexico (July)"
+   },
+   {
+    "year": 2000,
+    "text": "Sydney Olympics; Second Intifada begins (September)"
+   },
+   {
+    "year": 2000,
+    "text": "Milosevic overthrown in Serbia (October)"
+   },
+   {
+    "year": 2000,
+    "text": "US presidential election decided by the Supreme Court (December)"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia: 2000",
+    "url": "https://en.wikipedia.org/wiki/2000"
+   },
+   {
+    "title": "Wikipedia: Day of Six Billion",
+    "url": "https://en.wikipedia.org/wiki/Day_of_Six_Billion"
+   },
+   {
+    "title": "Wikipedia: Impeachment of Joseph Estrada",
+    "url": "https://en.wikipedia.org/wiki/Impeachment_of_Joseph_Estrada"
+   },
+   {
+    "title": "Wikipedia: Augusto Pinochet's arrest and trial",
+    "url": "https://en.wikipedia.org/wiki/Augusto_Pinochet%27s_arrest_and_trial"
+   },
+   {
+    "title": "Wikipedia: List of prime ministers of Japan",
+    "url": "https://en.wikipedia.org/wiki/List_of_prime_ministers_of_Japan"
+   },
+   {
+    "title": "Wikipedia: 2000 Ecuadorian coup d'état",
+    "url": "https://en.wikipedia.org/wiki/2000_Ecuadorian_coup_d%27%C3%A9tat"
+   }
+  ]
+ }
+]

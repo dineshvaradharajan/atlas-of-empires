@@ -1,0 +1,210 @@
+[
+ {
+  "file": "content/empires/b-late.json",
+  "item": "durrani-empire",
+  "field": "rulers[4].reign",
+  "old": "1845–1863",
+  "new": "1843–1863",
+  "source": "Wikipedia, Dost Mohammad Khan (infobox: second reign April 1843 – 9 June 1863; restored after Shah Shuja's murder in 1842) https://en.wikipedia.org/wiki/Dost_Mohammad_Khan"
+ },
+ {
+  "file": "content/empires/b-late.json",
+  "item": "omani-empire",
+  "field": "rulers[0].reign",
+  "old": "1649–1688",
+  "new": "1649–1679",
+  "source": "Wikipedia, Sultan bin Saif (reign 1649–1679; Muscat taken January 1650) https://en.wikipedia.org/wiki/Sultan_bin_Saif"
+ },
+ {
+  "file": "content/empires/b-late.json",
+  "item": "qajar-pahlavi-iran",
+  "field": "summary",
+  "old": "In 1789 Agha Mohammad Khan, chief of the Turkic Qajar tribe, began defeating his rivals, made Tehran his capital and was crowned shah in 1796.",
+  "new": "After Karim Khan's death in 1779, Agha Mohammad Khan, chief of the Turkic Qajar tribe, fought his way to power, made Tehran his capital in 1786, defeated the last Zand prince in 1794 and was crowned shah in 1796.",
+  "source": "Wikipedia, Agha Mohammad Khan Qajar (Tehran made capital 12 March 1786; Lotf Ali Khan defeated 1794; crowned 1796) https://en.wikipedia.org/wiki/Agha_Mohammad_Khan_Qajar"
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "fatimid-caliphate",
+  "field": "rulers[3].note",
+  "old": "Longest reign of any Muslim ruler",
+  "new": "Longest reign of any caliph",
+  "source": "Wikipedia, Al-Mustansir Billah (reign 1036–1094, 'the longest of all the caliphs'); Hassanal Bolkiah of Brunei has reigned since 5 Oct 1967, now longer https://en.wikipedia.org/wiki/Al-Mustansir_Billah ; https://en.wikipedia.org/wiki/Hassanal_Bolkiah"
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "parthian-empire",
+  "field": "summary",
+  "old": "Their leader Arsaces I rebelled against the Seleucids around 247 BCE, founding the Arsacid dynasty.",
+  "new": "Their leader Arsaces I founded the Arsacid dynasty around 247 BCE and, about 238 BCE, seized Parthia from its rebel Seleucid governor Andragoras.",
+  "source": "Wikipedia, Arsaces I of Parthia (citing Schippmann, Encyclopaedia Iranica 1986; Dąbrowa 2012; Bivar, Cambridge History of Iran 3) https://en.wikipedia.org/wiki/Arsaces_I_of_Parthia"
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "sasanian-empire",
+  "field": "summary",
+  "old": "Shapur I defeated three Roman emperors and captured Valerian in 260.",
+  "new": "Shapur I defeated Gordian III, forced Philip the Arab to buy peace and captured Valerian in 260.",
+  "source": "Wikipedia, Shapur I (Misiche 244; Philip's treaty and 500,000 denarii; Valerian captured near Edessa 260) https://en.wikipedia.org/wiki/Shapur_I"
+ },
+ {
+  "file": "content/eras/c-earlymodern.json",
+  "item": 1600,
+  "field": "powers[4].extent",
+  "old": "Iran, the southern Caucasus and western Afghanistan",
+  "new": "Iran and western Afghanistan; Tabriz and the southern Caucasus, ceded to the Ottomans in 1590, are retaken from 1603",
+  "source": "Wikipedia, Treaty of Constantinople (1590) (Ottomans kept Kartli, Kakheti, Erivan, Karabakh, Shirvan and Azerbaijan with Tabriz; recovered in the war of 1603–1618) https://en.wikipedia.org/wiki/Treaty_of_Constantinople_(1590)"
+ },
+ {
+  "file": "content/eras/b-medieval.json",
+  "item": 1400,
+  "field": "regions.middle-east-south-asia",
+  "old": "while the Ottomans hold western Anatolia",
+  "new": "while the Ottomans hold western and central Anatolia",
+  "source": "Wikipedia, Bayezid I (annexed Karaman 1397, Kadi Burhan al-Din's lands 1398, Malatya and Elbistan; 'his domains extended to the Taurus Mountains') https://en.wikipedia.org/wiki/Bayezid_I"
+ },
+ {
+  "file": "content/eras/b-medieval.json",
+  "item": 1400,
+  "field": "powers[2].extent",
+  "old": "Western Anatolia and most of the Balkans",
+  "new": "Western and central Anatolia and most of the Balkans",
+  "source": "Wikipedia, Bayezid I https://en.wikipedia.org/wiki/Bayezid_I"
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "fatimid-caliphate",
+  "field": "peak.note",
+  "old": "North Africa, Egypt, Sicily, the Levant and the Hejaz",
+  "new": "North Africa, Egypt, Sicily, the Levant and the Hejaz; Taagepera (1997) gives a larger c. 4.1M km² for 969, counting Saharan hinterlands",
+  "source": "Taagepera (1997) via Wikipedia, List of largest empires https://en.wikipedia.org/wiki/List_of_largest_empires"
+ },
+ {
+  "file": "content/empires/a2-early.json",
+  "item": "abbasid-caliphate",
+  "field": "peak.note",
+  "old": "Under Harun al-Rashid, from North Africa to Central Asia",
+  "new": "Under Harun al-Rashid, from North Africa to Central Asia; Taagepera (1997) gives c. 11.1M km² for 750, when the Abbasids first took over the Umayyad lands",
+  "source": "Taagepera (1997) via Wikipedia, List of largest empires https://en.wikipedia.org/wiki/List_of_largest_empires"
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "hunnic-empire",
+  "field": "peak.note",
+  "old": "Under Attila, from the Rhine to the steppes north of the Black Sea",
+  "new": "Under Attila, from the Rhine to the steppes north of the Black Sea; c. 4.0M km² in 441 (Taagepera 1979)",
+  "source": "Taagepera (1979) via Wikipedia, List of largest empires https://en.wikipedia.org/wiki/List_of_largest_empires"
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "parthian-empire",
+  "field": "peak.note",
+  "old": "Under Mithridates II, from the Euphrates to Afghanistan",
+  "new": "Under Mithridates II, from the Euphrates to Afghanistan; Taagepera (1979) gives c. 2.8M km² around 1 CE",
+  "source": "Taagepera (1979) via Wikipedia, List of largest empires https://en.wikipedia.org/wiki/List_of_largest_empires"
+ },
+ {
+  "file": "content/empires/a2-early.json",
+  "item": "gokturk-khaganate",
+  "field": "peak.note",
+  "old": "From Manchuria to the Black Sea steppe",
+  "new": "From Manchuria to the Black Sea steppe; c. 6.0M km² by 557 (Taagepera 1979)",
+  "source": "Taagepera (1979) via Wikipedia, List of largest empires https://en.wikipedia.org/wiki/List_of_largest_empires"
+ },
+ {
+  "file": "content/empires/b-late.json",
+  "item": "durrani-empire",
+  "addSource": {
+   "title": "Wikipedia: Dost Mohammad Khan",
+   "url": "https://en.wikipedia.org/wiki/Dost_Mohammad_Khan"
+  }
+ },
+ {
+  "file": "content/empires/b-late.json",
+  "item": "omani-empire",
+  "addSource": {
+   "title": "Wikipedia: Sultan bin Saif",
+   "url": "https://en.wikipedia.org/wiki/Sultan_bin_Saif"
+  }
+ },
+ {
+  "file": "content/empires/b-late.json",
+  "item": "qajar-pahlavi-iran",
+  "addSource": {
+   "title": "Wikipedia: Agha Mohammad Khan Qajar",
+   "url": "https://en.wikipedia.org/wiki/Agha_Mohammad_Khan_Qajar"
+  }
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "fatimid-caliphate",
+  "addSource": {
+   "title": "Wikipedia: Al-Mustansir Billah",
+   "url": "https://en.wikipedia.org/wiki/Al-Mustansir_Billah"
+  }
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "parthian-empire",
+  "addSource": {
+   "title": "Wikipedia: Arsaces I of Parthia",
+   "url": "https://en.wikipedia.org/wiki/Arsaces_I_of_Parthia"
+  }
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "sasanian-empire",
+  "addSource": {
+   "title": "Wikipedia: Shapur I",
+   "url": "https://en.wikipedia.org/wiki/Shapur_I"
+  }
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "seleucid-empire",
+  "addSource": {
+   "title": "Wikipedia: Seleucid Empire",
+   "url": "https://en.wikipedia.org/wiki/Seleucid_Empire"
+  }
+ },
+ {
+  "file": "content/empires/a2-early.json",
+  "item": "abbasid-caliphate",
+  "addSource": {
+   "title": "Wikipedia: List of largest empires (Taagepera, Turchin figures)",
+   "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+  }
+ },
+ {
+  "file": "content/empires/a2-early.json",
+  "item": "gokturk-khaganate",
+  "addSource": {
+   "title": "Wikipedia: List of largest empires (Taagepera, Turchin figures)",
+   "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+  }
+ },
+ {
+  "file": "content/empires/a1-early.json",
+  "item": "hunnic-empire",
+  "addSource": {
+   "title": "Wikipedia: List of largest empires (Taagepera, Turchin figures)",
+   "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+  }
+ },
+ {
+  "file": "content/eras/c-earlymodern.json",
+  "item": 1600,
+  "addSource": {
+   "title": "Wikipedia: Treaty of Constantinople (1590)",
+   "url": "https://en.wikipedia.org/wiki/Treaty_of_Constantinople_(1590)"
+  }
+ },
+ {
+  "file": "content/eras/b-medieval.json",
+  "item": 1400,
+  "addSource": {
+   "title": "Wikipedia: Bayezid I",
+   "url": "https://en.wikipedia.org/wiki/Bayezid_I"
+  }
+ }
+]
