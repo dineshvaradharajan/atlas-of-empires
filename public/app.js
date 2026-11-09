@@ -661,10 +661,10 @@ function setupMap() {
 
 function fillOf(it) { // the fill for an item; "HATCH" = peoples pattern
   if (it.kind === "land") return theme.unknown;
-  if (it.kind === "culture") return "HATCH";
+  if (it.kind === "culture") return S.war ? theme.unknown : "HATCH";
   if (S.journey && inJourney(it)) return theme.highlight;
   if (it.p.recon && it.p.n === S.sel) return theme.highlight;
-  if (S.war) { const sd = warSideOf(it); return sd >= 0 ? SIDE_COLORS[sd % SIDE_COLORS.length] : [theme.other1, theme.other2, theme.other3][hash(clean(it.key)) % 3]; }
+  if (S.war) { const sd = warSideOf(it); return sd >= 0 ? SIDE_COLORS[sd % SIDE_COLORS.length] : theme.unknown; } // only the warring sides keep colour
   return colorOf(it.key);
 }
 function draw() {
@@ -681,8 +681,7 @@ function draw() {
   const sel = S.sel;
   theme.hatch.setTransform(new DOMMatrix().scale(1 / t.k)); // constant stripe width at any zoom
   for (const it of S.items) {
-    ctx.fillStyle = it.kind === "land" ? theme.unknown : it.kind === "culture" ? theme.hatch : S.journey && inJourney(it) ? theme.highlight
-      : it.p.recon && it.p.n === S.sel ? theme.highlight : S.war ? (warSideOf(it) >= 0 ? SIDE_COLORS[warSideOf(it) % SIDE_COLORS.length] : [theme.other1, theme.other2, theme.other3][hash(clean(it.key)) % 3]) : colorOf(it.key);
+    const fl = fillOf(it); ctx.fillStyle = fl === "HATCH" ? theme.hatch : fl;
     if (it.p.recon || it.p.crop) { ctx.save(); clipFor(ctx, it); ctx.fill(pathOf(it.f)); ctx.restore(); }
     else ctx.fill(pathOf(it.f));
   }
@@ -764,6 +763,7 @@ function drawLabels() {
   for (const it of cand) {
     const r = Math.sqrt(it.p.a) * pxPerKm;
     const strong = it.kind === "state" && (S.war ? warSideOf(it) >= 0 : S.journey ? inJourney(it) : S.featured.has(it.key) || it.key === S.sel || it.p.recon);
+    if (S.war && !strong) continue;
     if (r < (strong ? 26 : it.kind === "state" ? 34 : 60)) continue;
     const [x0, y0] = projection(it.p.l);
     const x = t.applyX(x0), y = t.applyY(y0);
@@ -1093,7 +1093,8 @@ async function openWar(id, idx = 0) {
   try { S.cine = await loadCinema(w); } catch (e) { console.warn("war layers unavailable", e); }
   if (S.war !== w) return;
   S.cineK = cineKnots(w, S.cine);
-  $("#cine").hidden = false;
+  $("#cine").hidden = false; document.body.classList.add("warmode");
+  if (S.legendHTML == null) S.legendHTML = $("#legend").innerHTML;
   await goWarEvent(S.wIdx, true);
 }
 async function goWarEvent(i, fit) {
@@ -1108,7 +1109,8 @@ async function goWarEvent(i, fit) {
   if (S.war !== w) return;
   S.warMap = warSides(w, S.year);
   renderWarChart(); updateHud(); draw(); renderCol(true); writeHash();
-  if (fit && w.events.length) { // frame all the war's events
+  if (fit && S.cine?.shots?.length) { S.shotIdx = -1; camFor(S.wt, e, true); }
+  else if (fit && w.events.length) { // frame all the war's events
     const pts = w.events.filter((x) => x.lonlat).map((x) => projection(x.lonlat));
     const xs = pts.map((p) => p[0]), ys = pts.map((p) => p[1]);
     const pad = 20;
@@ -1119,7 +1121,8 @@ async function goWarEvent(i, fit) {
 function exitWar() {
   stopPlay();
   S.war = null; S.warMap = null; S.cine = null; S.view = "world";
-  $("#cine").hidden = true;
+  $("#cine").hidden = true; document.body.classList.remove("warmode");
+  if (S.legendHTML != null) $("#legend").innerHTML = S.legendHTML;
   S.win = null; updateWindow(); computeFeatured(); draw(); updateChartCursor(); renderCol(true); writeHash();
 }
 function renderWarChart() {
@@ -1127,9 +1130,11 @@ function renderWarChart() {
   const X = (S.warX = (t) => (100 * (t - t0)) / Math.max(1, t1 - t0));
   const years = []; for (let y = w.span[0]; y <= w.span[1]; y++) years.push(y);
   const step = Math.max(1, Math.ceil(years.length / 12));
-  const C = S.cine, leg = C ? `<span class="wl"><i class="occ"></i>Occupied</span><span class="wl"><i class="fl"></i>Front line</span><span class="wl"><i class="ar"></i>Offensive</span><span class="wl"><i class="bt"></i>Battle (size = losses)</span>` : "";
+  const C = S.cine;
+  $("#legend").innerHTML = w.sides.map((sd, i) => `<span><i class="sw" style="background:${SIDE_COLORS[i % SIDE_COLORS.length]}"></i>${esc(sd.name)}</span>`).join("")
+    + `<span><i class="sw unknown"></i>Not in the war</span>`
+    + (C ? `<span class="wl"><i class="occ"></i>Occupied</span><span class="wl"><i class="fl"></i>Front line</span><span class="wl"><i class="ar"></i>Offensive</span><span class="wl"><i class="bt"></i>Battle (size = losses)</span>` : "");
   el.innerHTML = `<div class="warbar">${years.map((y, i) => `<span class="wy${i % 2 ? " alt" : ""}" style="left:${X(y)}%;width:${X(y + 1) - X(y)}%">${(i % step === 0) ? shortYear(y) : ""}</span>`).join("")}</div>
-    <div class="wsides">${w.sides.map((sd, i) => `<span><i style="background:${SIDE_COLORS[i % SIDE_COLORS.length]}"></i>${esc(sd.name)}</span>`).join("")}${leg}</div>
     <div class="wmarks">${w.events.map((e, i) => `<button class="mk ev wk-${esc(e.kind || "other")}${i === S.wIdx ? " on" : ""}" data-wev="${i}" style="left:${X(evTime(e))}%" aria-label="${esc(e.label || shortYear(e.year))}: ${esc(e.text)}"><span class="tipm">${esc(e.label || shortYear(e.year))} · ${esc(e.text)}</span></button>`).join("")}</div>
     <div class="wcur" style="left:${X(S.wt ?? t0)}%"></div>
     <div class="wnow"><b>${S.wIdx + 1}</b> / ${w.events.length} · ${esc(w.events[S.wIdx]?.label || "")}</div>`;
@@ -1256,6 +1261,7 @@ function drawOccupations() { // called inside the map transform; hatched in the 
 const scr = (ll) => { const [x, y] = projection(ll); return [S.t.applyX(x), S.t.applyY(y)]; };
 function polyLine(pts) { ctx.beginPath(); pts.forEach((p, i) => (i ? ctx.lineTo(p[0], p[1]) : ctx.moveTo(p[0], p[1]))); }
 function drawCinema() { // screen space, above the labels: fronts, offensives, battles
+  drawFlash();
   const C = S.cine; if (!S.war || !C) return;
   const t = S.wt, k = S.t.k, K = S.cineK, now = performance.now();
   ctx.save(); ctx.lineJoin = "round"; ctx.lineCap = "round";
@@ -1373,8 +1379,33 @@ function setWp(p, playing) {
   }
   if (playing && S.cine?.shots?.length) camFor(S.wt, null, false);
   const y = warYear(S.wt);
+  if (playing && y > S.year && y !== S.cineYear) allianceChange(S.year, y);
   if (y !== S.year && y !== S.cineYear) { S.cineYear = y; go(y, { keepWar: true }).then(() => { S.cineYear = null; }); }
   updateHud(); draw();
+}
+function allianceChange(y0, y1) { // who entered or left the war between two years
+  const w = S.war, a = warSides(w, y0), b = warSides(w, y1), msgs = [], keys = new Set();
+  const named = (ks) => [...new Set(ks.map(displayName))].join(", ");
+  w.sides.forEach((sd, i) => {
+    const inn = [...b].filter(([k, s]) => s === i && !a.has(k)).map(([k]) => k);
+    const out = [...a].filter(([k, s]) => s === i && !b.has(k)).map(([k]) => k);
+    if (inn.length) { msgs.push(`<span><i style="background:${SIDE_COLORS[i % SIDE_COLORS.length]}"></i>${esc(named(inn))} ${inn.length > 1 ? "join" : "joins"} the ${esc(sd.name)}</span>`); inn.forEach((k) => keys.add(k)); }
+    if (out.length) msgs.push(`<span class="out"><i style="background:${SIDE_COLORS[i % SIDE_COLORS.length]}"></i>${esc(named(out))}: out of the war</span>`);
+  });
+  if (!msgs.length) return;
+  const el = $("#cJoin"); el.innerHTML = `<b>${esc(shortYear(y1))}</b>${msgs.join("")}`; el.classList.add("on");
+  clearTimeout(S.joinTimer); S.joinTimer = setTimeout(() => el.classList.remove("on"), 4200 / (S.cineSpeed || 1));
+  S.flash = { keys, at: performance.now() };
+}
+function drawFlash() { // outline states that just joined, pulsing for a few seconds (map space)
+  const f = S.flash; if (!S.war || !f) return;
+  const age = (performance.now() - f.at) / 3200; if (age > 1 || !S.cinePlay) return;
+  const { t } = S;
+  ctx.save(); ctx.translate(t.x, t.y); ctx.scale(t.k, t.k); ctx.lineJoin = "round";
+  ctx.globalAlpha = (1 - age) * (0.55 + 0.45 * Math.sin(age * Math.PI * 6) ** 2);
+  ctx.strokeStyle = theme.ink; ctx.lineWidth = 3.2 / t.k;
+  for (const it of S.items) if (it.kind === "state" && (f.keys.has(it.p.n) || f.keys.has(it.p.k))) strokeItem(ctx, it);
+  ctx.restore(); ctx.globalAlpha = 1;
 }
 function cineTick(now) {
   if (!S.cinePlay || !S.war) return;

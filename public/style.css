@@ -304,3 +304,23 @@ ol.jtl details p { margin: 4px 0 2px; font-size: 13.5px; line-height: 1.55; colo
 #chart .wsides .wl i.ar { height: 4px; width: 14px; background: #2B59D9; clip-path: polygon(0 25%, 70% 25%, 70% 0, 100% 50%, 70% 100%, 70% 75%, 0 75%); height: 10px; }
 #chart .wsides .wl i.bt { border-radius: 50%; border: 1.5px solid var(--ink); background: rgba(17, 17, 17, .2); }
 @media (max-width: 760px) { #cine .cdate b, #cine .cdate span { font-size: 28px; } #cShot { top: 48px; font-size: 12px; } #cSub { font-size: 14px; bottom: 16px; } }
+/* war mode: quieter dock, legend on the map, alliance banner */
+.warmode #strip, .warmode .chapnav, .warmode .dock-title .sub { display: none; }
+.warmode #legend { background: color-mix(in srgb, var(--bg) 85%, transparent); padding: 4px 8px; color: var(--ink-2); max-width: calc(100% - 120px); }
+.warmode #legend .wl i { display: inline-block; width: 12px; height: 12px; }
+.warmode #legend .wl i.occ { background: repeating-linear-gradient(135deg, #E5402A 0 2px, transparent 2px 5px); outline: 1px dashed #E5402A; }
+.warmode #legend .wl i.fl { height: 3px; width: 16px; background: var(--ink); }
+.warmode #legend .wl i.ar { width: 14px; height: 10px; background: #2B59D9; clip-path: polygon(0 25%, 70% 25%, 70% 0, 100% 50%, 70% 100%, 70% 75%, 0 75%); }
+.warmode #legend .wl i.bt { border-radius: 50%; border: 1.5px solid var(--ink); background: rgba(17, 17, 17, .2); }
+#cJoin { position: absolute; left: 22px; top: 92px; display: flex; flex-direction: column; gap: 4px; padding: 8px 12px; background: var(--bg); border-left: 4px solid var(--ink);
+  box-shadow: var(--shadow); font: 600 13px/1.35 var(--sans); color: var(--ink); opacity: 0; transform: translateX(-10px); transition: opacity .4s, transform .4s; max-width: min(420px, 60%); }
+#cJoin.on { opacity: 1; transform: none; }
+#cJoin b { font: 900 11px/1.2 var(--display); letter-spacing: .1em; color: var(--highlight); }
+#cJoin span { display: flex; align-items: center; gap: 7px; }
+#cJoin span i { width: 10px; height: 10px; flex: none; }
+#cJoin span.out { color: var(--ink-3); }
+.warmode #chart { height: 96px; }
+.warmode #chart .warbar { top: 26px; }
+.warmode #chart .wmarks { top: 36px; }
+.warmode #chart .wcur { top: 20px; }
+.warmode #chart .wnow { top: 0; }
