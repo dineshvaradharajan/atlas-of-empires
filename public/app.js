@@ -36,6 +36,7 @@ const ERAS = [
 ];
 // Piecewise-linear time axis for the era strip: recent centuries get more room.
 const BREAKS = [[-10000, 0], [-3400, 0.14], [-1000, 0.27], [0, 0.39], [1000, 0.54], [1500, 0.68], [1800, 0.84], [2024, 1]];
+const SHOW_ARROWS = false; // war maps: offensive arrows are not drawn (the data is kept; the history checker still tests them)
 const WRITING = -3200; // earliest writing (Mesopotamia, Egypt): before this the map shows archaeology only
 const EARLIEST = -10000; // the timeline starts here, before the border data (3400 BCE): cultures and sites only
 // The featured great powers get these inks; everything else on the map is grey.
@@ -1341,7 +1342,7 @@ function renderWarChart() {
   const C = S.cine;
   $("#legend").innerHTML = w.sides.map((sd, i) => `<span><i class="sw" style="background:${sideTint(i)};outline:1.5px solid ${SIDE_COLORS[i % SIDE_COLORS.length]};outline-offset:-1.5px"></i>${esc(sd.name)}</span>`).join("")
     + `<span><i class="sw unknown"></i>Not in the war</span>`
-    + (C ? `<span class="wl"><i class="occ"></i>Occupied (occupier's colour)</span><span class="wl"><i class="fl"></i>Front line</span><span class="wl"><i class="ar"></i>Offensive</span><span class="wl"><i class="bt"></i>Battle under way</span>` : "");
+    + (C ? `<span class="wl"><i class="occ"></i>Occupied (occupier's colour)</span><span class="wl"><i class="fl"></i>Front line</span>${SHOW_ARROWS ? `<span class="wl"><i class="ar"></i>Offensive</span>` : ""}<span class="wl"><i class="bt"></i>Battle under way</span>` : "");
   if (story()) {
     el.classList.add("story");
     el.innerHTML = `<div class="wchap">${S.cine.chapters.map((c, i) => `<button type="button" data-chap="${i}" class="${i === S.chap ? "on" : ""}" aria-label="Chapter ${i + 1}: ${esc(c.title)}"><canvas data-thumb="${i}" width="300" height="180" aria-hidden="true"></canvas><b>${i + 1} · ${esc(chapRange(c, true))}</b><span>${esc(c.title)}</span></button>`).join("")}</div>`;
@@ -1571,9 +1572,9 @@ function drawCinema() { // screen space, above the labels: fronts, offensives, b
     ctx.globalAlpha = 0.7 * fa; ctx.strokeStyle = theme.bg; ctx.lineWidth = 4; ctx.stroke();
     ctx.globalAlpha = fa; ctx.strokeStyle = theme.ink; ctx.lineWidth = 1.8; ctx.stroke();
   }
-  // offensives: tapered arrows in the side's full colour, growing while the campaign runs
+  // offensives: tapered arrows in the side's full colour, growing while the campaign runs (off: SHOW_ARROWS)
   const chA = story() ? S.cine.chapters[S.chap].arrowSet : null;
-  for (const a of C.arrows) {
+  for (const a of SHOW_ARROWS ? C.arrows : []) {
     if (chA && !chA.has(a.name)) continue;
     const st = arrowState(a, t, !!chA); if (!st) continue;
     const P = a.smooth.map(scr), seg = [0];
@@ -1752,7 +1753,7 @@ async function drawThumbs() { // one small map per chapter: borders, occupied la
       for (const o of C.occupations) { const s = trackAt(o, ch.t1, S.cineK.t1); if (!s) continue; ring(s.pts, true); m.globalAlpha = 0.45; m.fillStyle = SIDE_COLORS[(o.side ?? 1) % SIDE_COLORS.length]; m.fill(); m.globalAlpha = 1; }
       m.strokeStyle = theme.ink; m.lineWidth = 2; m.lineJoin = "round";
       for (const f of C.fronts) { const s = trackAt(f, ch.t1, frontHold(f)); if (s) { ring(s.pts); m.stroke(); } }
-      for (const a of C.arrows) if (ch.arrowSet.has(a.name)) {
+      for (const a of SHOW_ARROWS ? C.arrows : []) if (ch.arrowSet.has(a.name)) {
         m.strokeStyle = m.fillStyle = SIDE_COLORS[(a.side ?? 0) % SIDE_COLORS.length]; m.lineWidth = 5; ring(a.smooth); m.stroke();
         const P = a.smooth.map((p) => pj(p)), tip = P[P.length - 1], bk = P[Math.max(0, P.length - 4)], ang = Math.atan2(tip[1] - bk[1], tip[0] - bk[0]);
         m.beginPath(); m.moveTo(tip[0] + Math.cos(ang) * 6, tip[1] + Math.sin(ang) * 6); m.lineTo(tip[0] + Math.cos(ang + 2.4) * 11, tip[1] + Math.sin(ang + 2.4) * 11); m.lineTo(tip[0] + Math.cos(ang - 2.4) * 11, tip[1] + Math.sin(ang - 2.4) * 11); m.closePath(); m.fill();
@@ -1770,7 +1771,7 @@ function storyHTML() { // the column for a storyboard war: this chapter's story 
   h += `<div class="mnav">${S.chap > 0 ? `<button class="mstep" data-chap="${S.chap - 1}">‹ ${esc(C.chapters[S.chap - 1].title)}</button>` : "<span></span>"}<button class="mstep primary" data-act="play-chapter">▶ Play this chapter</button>${S.chap < C.chapters.length - 1 ? `<button class="mstep" data-chap="${S.chap + 1}">${esc(C.chapters[S.chap + 1].title)} ›</button>` : ""}</div>`;
   h += `<h3 class="sec">On the map</h3><ul class="changed">
     <li><i class="ghost"></i>Front at the start of the chapter</li><li><i class="solid"></i>Front at the end</li>
-    <li><i class="newg"></i>Ground taken during the chapter</li><li><i class="arr"></i>The offensives that took it</li></ul>`;
+    <li><i class="newg"></i>Ground taken during the chapter</li>${SHOW_ARROWS ? `<li><i class="arr"></i>The offensives that took it</li>` : ""}</ul>`;
   if (evs.length) {
     h += `<h3 class="sec">What happened</h3><ol class="events jtl">`;
     evs.forEach(({ e, i, t }) => { const st = t <= S.wt + 1e-6 ? (i === S.wIdx ? "now" : "past") : "future"; h += `<li class="${st}"><button class="y linkish" data-wev="${i}">${esc(e.label || shortYear(e.year))}</button><div><span>${esc(e.text)}</span>${i === S.wIdx && e.detail ? `<p class="det">${esc(e.detail)}</p>` : ""}</div></li>`; });
@@ -1796,7 +1797,7 @@ function updateHud() {
   $("#cShot").textContent = ch ? ch.title : sh?.caption || "";
   const C = S.cine, now = [];
   if (C) {
-    for (const a of C.arrows) { const st = arrowState(a, t); if (st && st.prog < 1) now.push(`<span><i class="ar" style="background:${SIDE_COLORS[(a.side ?? 0) % SIDE_COLORS.length]}"></i>${esc(a.name)}</span>`); }
+    for (const a of SHOW_ARROWS ? C.arrows : []) { const st = arrowState(a, t); if (st && st.prog < 1) now.push(`<span><i class="ar" style="background:${SIDE_COLORS[(a.side ?? 0) % SIDE_COLORS.length]}"></i>${esc(a.name)}</span>`); }
     for (const b of C.battles) if (t >= b.t0 && t <= b.t1) now.push(`<span><i class="bt"></i><b>${esc(b.name)}</b>${b.casualties ? ` · ${esc(b.casualties)}` : ""}</span>`);
   }
   const nowHTML = now.slice(0, 4).join("");
