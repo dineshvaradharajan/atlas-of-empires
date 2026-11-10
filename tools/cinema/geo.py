@@ -5,7 +5,7 @@ previous keyframe, and linearly interpolated; occupied areas hold until their `e
 fronts fade ~5 weeks after their last keyframe unless that is the war's end. Side membership follows the war's
 `fromDate`/`toDate` (else whole years). Pure Python, no third-party packages.
 """
-import json, math, os
+import json, re, math, os
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
@@ -179,6 +179,30 @@ class War:
     def states(self, year):
         """(props, polygons) for each state drawn in a year, after corrections (for rendering)."""
         return [(s.props, s.polys) for s in self.borders().states(year)]
+
+    def land(self, year):
+        """Land as the app draws it (the nearest yearly base map): a list of (bbox, rings); test with is_land()."""
+        if not hasattr(self, "_land"):
+            self._land = {}
+            d = os.path.join(ROOT, "public", "data")
+            self._base_years = sorted(int(f[:-5]) for f in os.listdir(d) if re.fullmatch(r"-?\d+\.json", f))
+        by = min(self._base_years, key=lambda v: abs(v - year))
+        if by not in self._land:
+            polys = []
+            for f in json.load(open(os.path.join(ROOT, "public", "data", f"{by}.json")))["features"]:
+                g = f.get("geometry") or {}
+                for poly in (g.get("coordinates") or []) if g.get("type") == "MultiPolygon" else [g.get("coordinates") or []]:
+                    if poly:
+                        xs = [p[0] for p in poly[0]]; ys = [p[1] for p in poly[0]]
+                        polys.append(((min(xs), min(ys), max(xs), max(ys)), poly))
+            self._land[by] = polys
+        return self._land[by]
+
+    def is_land(self, pt, year):
+        for (x0, y0, x1, y1), poly in self.land(year):
+            if x0 <= pt[0] <= x1 and y0 <= pt[1] <= y1 and point_in_ring(pt, poly[0]) and not any(point_in_ring(pt, h) for h in poly[1:]):
+                return True
+        return False
 
     def controller(self, pt, t):
         """Side index holding a point at time t (occupation first, then the state it lies in), or None."""

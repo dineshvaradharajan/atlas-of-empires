@@ -8,8 +8,10 @@ Replays each war exactly as the app draws it (tools/cinema/geo.py) and checks:
   chapters  each chapter must show change in its own area (a keyframe inside the chapter, visible movement),
             and fronts there should not go more than ~6 weeks without a position during the chapter
   overlap   a front line should not run deep inside an occupied area (the two disagree)
-  pockets   no stray enemy ground inside or between one side's occupied areas (gaps carved between zones, notches
-            around arrowheads); a pocket must be explained by a sourced claim inside it (a besieged fortress that held)
+  pockets   no stray enemy, neutral or unrecorded (grey) ground inside or between one side's occupied areas (gaps carved
+            between zones, notches around arrowheads, countries the base map leaves out of the war); a pocket must be
+            explained by a sourced claim inside it (a besieged fortress that held; holder null for a real neutral);
+            grey pockets only warn
   sides     'X declares war / joins' events should match the side's entry date
 
 Errors fail the run (exit 1); warnings are listed for review. Writes content/factcheck/history-check-<war>.md.
@@ -74,7 +76,7 @@ def side_grid(W, t, b, n=72):
                 if base != sd and geo.point_in_ring(pt, r):
                     got, occ = sd, True
                     break
-            row.append(got if land or occ else "sea")
+            row.append(got if land or occ else ("blank" if W.is_land(pt, W.base_year(t)) else "sea"))
             orow.append(occ)
         G.append(row); OCC.append(orow)
     cell_km = geo.km((w, (s_ + nn) / 2), (w + (e - w) / nx, (s_ + nn) / 2)), geo.km((w, s_), (w, s_ + (nn - s_) / ny))
@@ -114,7 +116,8 @@ def pockets(W, t, b, claims):
             for y, x in ((j + 1, i), (j - 1, i), (j, i + 1), (j, i - 1)):
                 if 0 <= y < ny and 0 <= x < nx and not mine[y][x] and not reach[y][x]:
                     reach[y][x] = True; stack.append((y, x))
-        bad = [[(closed[j][i] or not reach[j][i]) and not mine[j][i] and G[j][i] not in ("sea", None, s) for i in range(nx)] for j in range(ny)]
+        bad = [[(closed[j][i] or not reach[j][i]) and not mine[j][i] and G[j][i] not in ("sea", s) for i in range(nx)] for j in range(ny)]
+        # ("blank" = land no state covers: drawn grey, as if nobody held it)
         # only pockets that touch one of this side's occupied areas (a drawing problem, not a real salient of own land)
         seen = [[False] * nx for _ in range(ny)]
         for j in range(ny):
@@ -254,12 +257,14 @@ def check(war_id):
                 if key in seenp:
                     continue
                 seenp.add(key)
-                msg = (f"{tag} {fmt(t)}: {area:,.0f} km² of {side_name(holder)} ground at {list(cen)} sits inside or between "
+                who = "unrecorded (grey)" if holder == "blank" else "neutral (grey)" if holder is None else side_name(holder)
+                msg = (f"{tag} {fmt(t)}: {area:,.0f} km² of {who} ground at {list(cen)} sits inside or between "
                        f"{side_name(s)}'s occupied areas")
                 if why:
                     oks.append(msg + f" (explained by the claim at {why})")
                 else:
-                    (errs if area >= POCKET_ERR_KM2 else warns).append(msg + "; join the areas, or add a sourced claim if that place really held out")
+                    # grey (neutral or unrecorded) pockets only warn for now: some are real neutrals or gaps in the base map
+                    (errs if area >= POCKET_ERR_KM2 and holder not in (None, "blank") else warns).append(msg + "; join the areas, or add a sourced claim if that place really held out")
 
     # side entry/exit dates vs events: the subject of "X declares war / joins / makes peace" should match X's dates
     rx = re.compile(r"\b(declares? war|joins|enters the war|signs an armistice|makes peace|leaves the war)\b", re.I)

@@ -20,7 +20,7 @@ if the dev server is up. Lessons from its review (apply them):
   enemy ground showing between them, and never notch an area so an arrowhead or battle sits outside it (an arrow
   may end inside enemy ground). A hole or gap is allowed only where a place really held out (a besieged fortress, a
   city that never fell); back it with a sourced claim inside it on that date. The checker's **pockets** rule fails
-  unexplained enemy ground over 2,500 km² inside or between one side's areas and warns from 600 km².
+  unexplained enemy ground over 2,500 km² inside or between one side's areas and warns from 600 km². Grey ground (a country the base map leaves out of the war, or land no state covers) inside or between a side's areas is flagged too, as a warning; fix it unless it is a real neutral, and back a real neutral with a claim whose holder is null.
 
 ## Your file: `content/cinema/<war-id>.json` (war ids and sides: content/wars/*.json; side index = order of `sides`)
 ```json

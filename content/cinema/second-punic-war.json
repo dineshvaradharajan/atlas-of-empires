@@ -413,7 +413,7 @@
    "end": "-216-08-03"
   },
   {
-   "name": "Etruria, Umbria and Picenum, loyal to Rome (216–213 BCE)",
+   "name": "Etruria, Umbria, Picenum and Pentrian Samnium, loyal to Rome (216–213 BCE)",
    "side": 0,
    "keys": [
     {
@@ -426,6 +426,10 @@
       [13.9, 43.2],
       [14.3, 42.6],
       [14.7, 42.0],
+      [14.9, 41.75],
+      [14.8, 41.38],
+      [14.45, 41.3],
+      [14.1, 41.42],
       [13.8, 41.6],
       [12.8, 41.8],
       [11.8, 42.2],
@@ -540,6 +544,8 @@
      "coords": [
       [14.9, 41.25],
       [15.6, 41.15],
+      [15.7, 40.92],
+      [15.95, 40.85],
       [16.1, 40.7],
       [16.55, 40.3],
       [16.6, 39.9],
@@ -557,6 +563,8 @@
      "coords": [
       [14.9, 41.25],
       [15.6, 41.15],
+      [15.7, 40.92],
+      [15.95, 40.85],
       [16.1, 40.7],
       [16.55, 40.3],
       [16.6, 39.9],
@@ -574,6 +582,8 @@
      "coords": [
       [14.9, 41.25],
       [15.6, 41.15],
+      [15.7, 40.92],
+      [15.95, 40.85],
       [16.1, 40.7],
       [16.55, 40.3],
       [16.6, 39.9],
@@ -980,6 +990,14 @@
      "date": "-203-05-01",
      "coords": [
       [9.75, 37.2],
+      [10.04, 37.2],
+      [10.04, 37.095],
+      [10.015, 37.095],
+      [10.015, 37.025],
+      [10.105, 37.025],
+      [10.105, 37.095],
+      [10.08, 37.095],
+      [10.08, 37.2],
       [10.25, 37.2],
       [10.3, 36.88],
       [10.15, 36.72],
@@ -991,6 +1009,14 @@
      "date": "-202-09-01",
      "coords": [
       [9.75, 37.2],
+      [10.04, 37.2],
+      [10.04, 37.095],
+      [10.015, 37.095],
+      [10.015, 37.025],
+      [10.105, 37.025],
+      [10.105, 37.095],
+      [10.08, 37.095],
+      [10.08, 37.2],
       [10.25, 37.2],
       [10.3, 36.88],
       [10.15, 36.72],
@@ -1002,6 +1028,14 @@
      "date": "-202-10-15",
      "coords": [
       [9.75, 37.2],
+      [10.04, 37.2],
+      [10.04, 37.095],
+      [10.015, 37.095],
+      [10.015, 37.025],
+      [10.105, 37.025],
+      [10.105, 37.095],
+      [10.08, 37.095],
+      [10.08, 37.2],
       [10.25, 37.2],
       [10.3, 36.88],
       [10.1, 36.6],
@@ -1527,6 +1561,50 @@
    }
   },
   {
+   "chapter": "cannae",
+   "place": "Placentia (supplied by river while Hannibal held the countryside)",
+   "lonlat": [9.69, 45.05],
+   "date": "-217-12-01",
+   "holder": 0,
+   "source": {
+    "title": "Wikipedia: Piacenza",
+    "url": "https://en.wikipedia.org/wiki/Piacenza"
+   }
+  },
+  {
+   "chapter": "cannae",
+   "place": "Bovianum (Pentri Samnites, loyal to Rome)",
+   "lonlat": [14.47, 41.49],
+   "date": "-216-08-30",
+   "holder": 0,
+   "source": {
+    "title": "Wikipedia: Pentri (all Samnites except the Pentri declared for Hannibal after Cannae)",
+    "url": "https://en.wikipedia.org/wiki/Pentri"
+   }
+  },
+  {
+   "chapter": "italy",
+   "place": "Capua (defected to Hannibal after Cannae)",
+   "lonlat": [14.25, 41.08],
+   "date": "-216-12-01",
+   "holder": 1,
+   "source": {
+    "title": "Wikipedia: Siege of Capua (211 BC)",
+    "url": "https://en.wikipedia.org/wiki/Siege_of_Capua_(211_BC)"
+   }
+  },
+  {
+   "chapter": "italy",
+   "place": "Capua (defected to Hannibal after Cannae)",
+   "lonlat": [14.25, 41.08],
+   "date": "-213-03-17",
+   "holder": 1,
+   "source": {
+    "title": "Wikipedia: Siege of Capua (211 BC)",
+    "url": "https://en.wikipedia.org/wiki/Siege_of_Capua_(211_BC)"
+   }
+  },
+  {
    "chapter": "italy",
    "place": "Capua",
    "lonlat": [14.25, 41.08],
@@ -1590,6 +1668,28 @@
    "source": {
     "title": "Wikipedia: Siege of Capua (211 BC)",
     "url": "https://en.wikipedia.org/wiki/Siege_of_Capua_(211_BC)"
+   }
+  },
+  {
+   "chapter": "italy",
+   "place": "Bovianum (Pentri Samnites, loyal to Rome)",
+   "lonlat": [14.47, 41.49],
+   "date": "-213-03-17",
+   "holder": 0,
+   "source": {
+    "title": "Wikipedia: Pentri (all Samnites except the Pentri declared for Hannibal after Cannae)",
+    "url": "https://en.wikipedia.org/wiki/Pentri"
+   }
+  },
+  {
+   "chapter": "italy",
+   "place": "Venusia (Latin colony, faithful to Rome throughout the war)",
+   "lonlat": [15.81, 40.96],
+   "date": "-213-03-17",
+   "holder": 0,
+   "source": {
+    "title": "Wikipedia: Venosa",
+    "url": "https://en.wikipedia.org/wiki/Venosa"
    }
   },
   {
@@ -1810,6 +1910,28 @@
    "source": {
     "title": "Wikipedia: Scipio Africanus",
     "url": "https://en.wikipedia.org/wiki/Scipio_Africanus"
+   }
+  },
+  {
+   "chapter": "africa",
+   "place": "Utica (besieged by Scipio, never taken)",
+   "lonlat": [10.06, 37.06],
+   "date": "-203-06-01",
+   "holder": 1,
+   "source": {
+    "title": "Wikipedia: Battle of Utica (203 BC)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Utica_(203_BC)"
+   }
+  },
+  {
+   "chapter": "africa",
+   "place": "Tunes (Tunis), Scipio's camp within sight of Carthage",
+   "lonlat": [10.18, 36.8],
+   "date": "-203-11-01",
+   "holder": 0,
+   "source": {
+    "title": "Wikipedia: Battle of the Great Plains",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_the_Great_Plains"
    }
   }
  ],

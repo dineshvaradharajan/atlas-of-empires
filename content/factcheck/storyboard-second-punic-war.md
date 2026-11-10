@@ -1,6 +1,6 @@
 # Storyboard: Second Punic War (218–201 BCE)
 
-File: `content/cinema/second-punic-war.json`. 7 chapters, 39 claims (all pass), 24 occupied areas (49 keyframes), 22 arrows, 10 battles, no fronts.
+File: `content/cinema/second-punic-war.json`. 7 chapters, 47 claims (all pass), 24 occupied areas (49 keyframes), 22 arrows, 10 battles, no fronts.
 Check: `check_history.py`: 0 errors, 0 warnings. `validate.py`: no errors.
 
 ## Chapters and why
@@ -31,6 +31,14 @@ The First Macedonian War is left out (no chapter; no territorial change worth a 
 
 ## Warnings left
 None.
+
+## Pockets fixed
+The checker's pockets rule (stray enemy ground inside or between one side's areas) found 3 errors and 2 warnings; now 0 and 0.
+- Ch 2 and 3, Pentrian Samnium (Bovianum, 216 and 213 BCE): a base-map error, not a holdout. The base map paints all Samnium Carthaginian after Cannae, but Livy (22.61) says every Samnite people except the Pentri went over. The Roman loyal area now also covers Pentrian Samnium (renamed "Etruria, Umbria, Picenum and Pentrian Samnium, loyal to Rome"); claims at Bovianum (Wikipedia: Pentri).
+- Ch 2 and 3, Capua and northern Campania: real Carthaginian ground (Capua defected after Cannae) that the Pentri fix left between Rome's areas and Nola; claims at Capua on 1 Dec 216 and 17 Mar 213 (Wikipedia: Siege of Capua (211 BC)).
+- Ch 2, Placentia and Cremona (Dec 217): real holdouts inside the Gallic revolt; claim at Placentia, 1 Dec 217 (Wikipedia: Piacenza: supplied by river while Hannibal held the countryside).
+- Ch 3, Venusia (213): a real holdout ("faithful to Rome throughout the Hannibalic wars", Wikipedia: Venosa). Hannibal's southern area had swallowed the town; its edge now passes south of Venusia, and a claim checks it.
+- Ch 7, Scipio's beachhead (Nov 203): real Roman ground next to Carthage; claim at Tunes, where Scipio camped after the Great Plains (Wikipedia: Battle of the Great Plains). Utica, which the beachhead had covered since 203 although it was never taken, is now left out through a narrow inlet from the coast; claim at Utica, 1 Jun 203 (Wikipedia: Battle of Utica (203 BC)).
 
 ## Sources fetched
 Wikipedia: Second Punic War, Hannibal's crossing of the Alps, Siege of Saguntum, Battle of Cissa, Battle of Ticinus, Battle of the Trebia, Battle of Lake Trasimene, Battle of Cannae, Siege of Capua (211 BC), Battle of Tarentum (212 BC), Siege of Syracuse (213–212 BC), Battle of Ibera, Battle of the Upper Baetis, Battle of New Carthage, Battle of Ilipa, Battle of the Metaurus, Hasdrubal Barca, Piacenza, Battle of Utica (203 BC), Battle of the Great Plains, Battle of Zama, Hannibal, Scipio Africanus; Commons maps listed in the file.

@@ -28,5 +28,8 @@ Check: `check_history.py`: 0 errors, 2 warnings (below). `validate.py`: no error
 - Chapter 2 (siege of Acre): little visible change (306 km²) – a two-year static siege; only the camp and Acre's plain change hands.
 - Chapter 5 (Within sight of Jerusalem): 46 km² – the advances never held ground; only Ascalon and Darum were occupied.
 
+## Pockets fixed
+None needed: the pockets rule finds no stray enemy ground in this war. The two warnings above are chapter-change warnings, unchanged.
+
 ## Sources fetched
 Wikipedia: Third Crusade, Frederick Barbarossa, Battle of Philomelion (1190), Battle of Iconium (1190), Siege of Acre (1189–1191), Conrad of Montferrat, Battle of Hattin, Richard I of England, Isaac Komnenos of Cyprus, Battle of Arsuf, Battle of Jaffa (1192), Treaty of Jaffa (1192), Siege of Jerusalem (1187), Siege of Tyre (1187); Commons map listed in the file.

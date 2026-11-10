@@ -28,5 +28,9 @@ Check: `check_history.py`: 0 errors, 0 warnings. `validate.py`: 3 errors, all "s
 - `validate.py` rejects the three side-2 Fatimid areas because it only allows sides 0 and 1 (a World War I assumption); the app colours side 2 correctly (checked in the browser at #w/first-crusade/c6). Fix: allow `range(len(war sides))`.
 - `check_history.py`: no warnings.
 
+## Pockets fixed
+The pockets rule gave 1 warning; now 0.
+- Ch 3 (Oct 1097), a sliver of Rum ground in the Taurus north of Adana, between the Cilicia area and the base map's eastern-Taurus ground on the crusader side: a drawing gap. The Cilicia area's north edge (from 10 Oct 1097) now reaches about 37.55°N between 35.0° and 35.5°E, so the two meet.
+
 ## Sources fetched
 Wikipedia: First Crusade, People's Crusade, Siege of Xerigordos, Siege of Nicaea, Battle of Dorylaeum (1097), Siege of Antioch, County of Edessa, Baldwin I of Jerusalem, Tancred of Galilee, Siege of Ma'arra, March from Antioch to Jerusalem during the First Crusade, Siege of Jerusalem (1099), Battle of Ascalon; Commons maps listed in the file.

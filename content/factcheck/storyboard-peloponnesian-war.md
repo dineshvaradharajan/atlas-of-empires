@@ -1,6 +1,6 @@
 # Storyboard: Peloponnesian War (431–404 BCE)
 
-File: `content/cinema/peloponnesian-war.json`. 9 chapters, 53 claims (all pass), 50 occupied areas (64 keyframes), 27 arrows, 4 battles, no fronts.
+File: `content/cinema/peloponnesian-war.json`. 9 chapters, 54 claims (all pass), 50 occupied areas (64 keyframes), 27 arrows, 4 battles, no fronts.
 Check: `check_history.py`: 0 errors, 3 warnings (below). `validate.py`: no errors.
 
 ## Chapters and why
@@ -36,6 +36,11 @@ Left out as chapters (no lasting change of ground): Mytilene 428–427, Delium 4
 - Arrow "Athenian retreat … to the Assinarus" ends on neutral ground: the army was destroyed in the open countryside, not on held ground.
 - Chapter 2 (Pylos): little visible change (26 km²) – the Athenian fort and the island are tiny by nature.
 - Chapter 4 (Sicily): 733 km² – the Athenians held only Catana–Naxos and their siege lines.
+
+## Pockets fixed
+The pockets rule gave 2 warnings; now 0.
+- Ch 1 (Nov 431), eastern Boeotia between Attica and Euboea: real Theban ground. The checker joins Attica and Euboea across the narrow Euripus. Added a claim at Thebes, 1 Nov 431 (Wikipedia: Peloponnesian War).
+- Ch 9 (Jan 404), Oropia and the South Euboean Gulf: a drawing problem. Both Euboea areas (Athenian 431–411, in revolt from 411) ran about 10 km into the gulf off Attica. Their south-west edge now follows the Euboean shore (Eretria and Chalcis stay inside), which clears it.
 
 ## Sources fetched
 Wikipedia: Peloponnesian War, Delian League, Archidamus II, Plague of Athens, Battle of Pylos, Battle of Sphacteria, Battle of Amphipolis, Brasidas, Battle of Potidaea, Sicilian Expedition, Decelea, Battle of Eretria, Astyochus, Mindarus, Battle of Cynossema, Battle of Abydos, Battle of Cyzicus, Alcibiades, Battle of Arginusae, Battle of Aegospotami, Lysander, Siege of Melos, Thirty Tyrants, Siege of Plataea; Commons maps listed in the file. (Britannica pages were blocked to automated fetches.)
