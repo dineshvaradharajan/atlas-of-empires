@@ -1,0 +1,1945 @@
+{
+ "reviewer": "v2",
+ "findings": [
+  {
+   "realm": "Maurya Empire",
+   "years": [
+    -303,
+    -232
+   ],
+   "severity": "error",
+   "issue": "Arachosia and the Kabul valley (Kandahar, Kabul), ceded by Seleucus I c. 303 BCE and the site of Ashoka's Greek/Aramaic Kandahar edicts, are never drawn as Maurya (Seleucid to -291, then nothing). Corrections cannot add land; map note added.",
+   "fixed": false,
+   "source": [
+    {
+     "title": "Wikipedia: Maurya Empire",
+     "url": "https://en.wikipedia.org/wiki/Maurya_Empire"
+    },
+    {
+     "title": "Wikipedia: Seleucid–Mauryan war",
+     "url": "https://en.wikipedia.org/wiki/Seleucid–Mauryan_war"
+    }
+   ]
+  },
+  {
+   "realm": "Maurya Empire",
+   "years": [
+    -184,
+    -171
+   ],
+   "severity": "error",
+   "issue": "Maurya outline continues 13 years after Pushyamitra Shunga killed Brihadratha c. 185 BCE, while the Shunga Empire starts only in -170. Relabelled Shunga Empire.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Shunga Empire",
+    "url": "https://en.wikipedia.org/wiki/Shunga_Empire"
+   }
+  },
+  {
+   "realm": "Macedonian Empire (not mine)",
+   "years": [
+    -317,
+    -301
+   ],
+   "severity": "error",
+   "issue": "Taxila stays Macedonian until -301, but Chandragupta Maurya captured it within a decade of Alexander's departure (c. 317 BCE). Owner: Hellenistic reviewer.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Taxila",
+    "url": "https://en.wikipedia.org/wiki/Taxila"
+   }
+  },
+  {
+   "realm": "Xin Dynasty",
+   "years": [
+    6,
+    8
+   ],
+   "severity": "error",
+   "issue": "Xin drawn from 6 CE though Wang Mang proclaimed it in 9 CE (Han outline is a 143 km² sliver). Relabelled Han Dynasty.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Xin dynasty",
+    "url": "https://en.wikipedia.org/wiki/Xin_dynasty"
+   }
+  },
+  {
+   "realm": "Xin Dynasty",
+   "years": [
+    24,
+    29
+   ],
+   "severity": "error",
+   "issue": "Xin drawn to 29 CE though it fell in 23 CE (Gengshi took Chang'an; Guangwu restored the Han, capital Luoyang 25, Red Eyebrows surrendered 27). Relabelled Han Dynasty; Luoyang itself stays blank 23-29 (outside every outline).",
+   "fixed": true,
+   "source": [
+    {
+     "title": "Wikipedia: Xin dynasty",
+     "url": "https://en.wikipedia.org/wiki/Xin_dynasty"
+    },
+    {
+     "title": "Wikipedia: Han dynasty",
+     "url": "https://en.wikipedia.org/wiki/Han_dynasty"
+    }
+   ]
+  },
+  {
+   "realm": "Han Dynasty",
+   "years": [
+    30,
+    220
+   ],
+   "severity": "error",
+   "issue": "Gungnae (Ji'an), Goguryeo's capital, drawn as Han (east-asia lead). Cropped west of 126°E; Ji'an now shows Goguryeo, Pyongyang (Lelang) stays Han. -36 to 29 left (Lelang's eastern counties reached the east coast until 30 CE).",
+   "fixed": true,
+   "source": [
+    {
+     "title": "Wikipedia: Goguryeo",
+     "url": "https://en.wikipedia.org/wiki/Goguryeo"
+    },
+    {
+     "title": "Wikipedia: Lelang Commandery",
+     "url": "https://en.wikipedia.org/wiki/Lelang_Commandery"
+    }
+   ]
+  },
+  {
+   "realm": "Han Dynasty",
+   "years": [
+    221,
+    223
+   ],
+   "severity": "error",
+   "issue": "Chengdu blank 221-223: the Han clip at 220 hid Liu Bei's outline and Shu Han starts in 224. Clip extended to 223 and the 221-223 outline cropped to Sichuan/Hanzhong/Yunnan [97,23,110.2,34] and relabelled Shu Han (Jing province and Guangdong, held by Sun Quan, are cut).",
+   "fixed": true,
+   "source": [
+    {
+     "title": "Wikipedia: Shu Han",
+     "url": "https://en.wikipedia.org/wiki/Shu_Han"
+    },
+    {
+     "title": "Wikipedia: Han dynasty",
+     "url": "https://en.wikipedia.org/wiki/Han_dynasty"
+    }
+   ]
+  },
+  {
+   "realm": "Han Dynasty",
+   "years": [
+    196,
+    220
+   ],
+   "severity": "warning",
+   "issue": "The emperor sat at Xuchang under Cao Cao from 196; the map's red 'Han' outline in these years is other warlords' land (Liu Bei, Liu Zhang, and Guangdong, which Sun Quan controlled). Map note added.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Han dynasty",
+    "url": "https://en.wikipedia.org/wiki/Han_dynasty"
+   }
+  },
+  {
+   "realm": "Han Dynasty",
+   "years": [
+    40,
+    50
+   ],
+   "severity": "error",
+   "issue": "Han drawn at Mê Linh/Jiaozhi in 40-42 CE while the Trưng sisters ruled (southeast-asia lead). Cropped north of 21.8°N for 40-42 (Jiaozhi, Jiuzhen, Rinan and Hepu, which joined the rising, are cut). Han missing in northern Vietnam 44-50 cannot be added; noted.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Trưng sisters",
+    "url": "https://en.wikipedia.org/wiki/Trưng_sisters"
+   }
+  },
+  {
+   "realm": "Gojoseon (not mine)",
+   "years": [
+    -108,
+    -61
+   ],
+   "severity": "error",
+   "issue": "Pyongyang drawn as Gojoseon after the Han conquest of 108 BCE (Lelang). The east-asia reviewer has proposed a relabel; Han claims here use 100 CE.",
+   "fixed": false,
+   "source": [
+    {
+     "title": "Wikipedia: Gojoseon",
+     "url": "https://en.wikipedia.org/wiki/Gojoseon"
+    },
+    {
+     "title": "Wikipedia: Lelang Commandery",
+     "url": "https://en.wikipedia.org/wiki/Lelang_Commandery"
+    }
+   ]
+  },
+  {
+   "realm": "Qin",
+   "years": [
+    -222,
+    -211
+   ],
+   "severity": "warning",
+   "issue": "Hunan (Changsha), Chu land conquered by Qin in 223 BCE, is blank until -210. Corrections cannot add land; map note added. Also: Qin (state) is linked to Wikidata Q1471995 (Former Qin), which causes the -1100/-613 year date leads.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Qin's wars of unification",
+    "url": "https://en.wikipedia.org/wiki/Qin's_wars_of_unification"
+   }
+  },
+  {
+   "realm": "Xiongnu",
+   "years": [
+    -121,
+    153
+   ],
+   "severity": "error",
+   "issue": "Xiongnu drawn over the Ordos/Yinshan (Baotou, Hohhot) and the Hexi Corridor (Wuwei until -112) after the Han took the Ordos (127 BCE) and Hexi (121 BCE). Cropped south of 41°N from -121; the Ordos is cut out for 127-122 BCE (Hexi stays Xiongnu until 121). Han's outline does not reach Baotou, so that land is now blank.",
+   "fixed": true,
+   "source": [
+    {
+     "title": "Wikipedia: Han–Xiongnu War",
+     "url": "https://en.wikipedia.org/wiki/Han–Xiongnu_War"
+    },
+    {
+     "title": "Wikipedia: Hexi Corridor",
+     "url": "https://en.wikipedia.org/wiki/Hexi_Corridor"
+    }
+   ]
+  },
+  {
+   "realm": "Xiongnu",
+   "years": [
+    -208,
+    -204
+   ],
+   "severity": "warning",
+   "issue": "Beijing (Ji, kingdom of Yan) drawn as Xiongnu during the Chu-Han contention. Cut [114.5,38.5,120,40.8] out of the Xiongnu for -208 to -204; Beijing now shows Yan.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Zang Tu",
+    "url": "https://en.wikipedia.org/wiki/Zang_Tu"
+   }
+  },
+  {
+   "realm": "Xiongnu",
+   "years": null,
+   "severity": "warning",
+   "issue": "Area leads are false: the 161% and 375% compare the map's -144 peak (5.6M km²) with the 'Xiongnu' rows for 20 CE (3.5M) and 60 CE (1.5M), i.e. later Southern/Northern phases. Against Taagepera's 9.0M km² (176 BCE, row 'Xiongnu Empire', unlinked) the map is 62%. End 153 vs Wikidata 500 is a remnant polygon near Barkol; the journey ends in 91.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Xiongnu",
+    "url": "https://en.wikipedia.org/wiki/Xiongnu"
+   }
+  },
+  {
+   "realm": "Kushan Empire",
+   "years": [
+    91,
+    237
+   ],
+   "severity": "error",
+   "issue": "Kushan outline runs along the northern Tarim to Turfan (Kucha, Turfan were Han Western Regions; existing note said so but nothing was cut). Cropped north of 40.3°N; Kashgar and Khotan kept.",
+   "fixed": true,
+   "source": [
+    {
+     "title": "Wikipedia: Kushan Empire",
+     "url": "https://en.wikipedia.org/wiki/Kushan_Empire"
+    },
+    {
+     "title": "Wikipedia: Protectorate of the Western Regions",
+     "url": "https://en.wikipedia.org/wiki/Protectorate_of_the_Western_Regions"
+    }
+   ]
+  },
+  {
+   "realm": "Kushan Empire / Eastern Kushans",
+   "years": null,
+   "severity": "warning",
+   "issue": "Date leads (Eastern Kushans start 238 vs 30; Kushan end 237 vs 375) come from both realms sharing Wikidata Q25979; the split at 237/238 is the Sasanian conquest of Bactria. Not an error.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Kushan Empire",
+    "url": "https://en.wikipedia.org/wiki/Kushan_Empire"
+   }
+  },
+  {
+   "realm": "Gupta Empire",
+   "years": [
+    347,
+    554
+   ],
+   "severity": "error",
+   "issue": "Gupta drawn over Pallava Kanchi (360-430), the Andhra coast (Vengi), Gandhara/Taxila and Kashmir, and lower Sindh: Samudragupta's southern kings were defeated and released, and Gandhara was Kidarite/Sasanian. Cropped to [73,18,98,30.5] for 347-409 and [69,18,98,30.5] from 410 (Saurashtra kept after the Western Satrap conquest), matching the Commons Gupta map that shows Punjab and the Indus as tributary states. Multan stays inside after 410 (tributary at most); noted.",
+   "fixed": true,
+   "source": [
+    {
+     "title": "Wikipedia: Gupta Empire",
+     "url": "https://en.wikipedia.org/wiki/Gupta_Empire"
+    },
+    {
+     "title": "Wikipedia: Samudragupta",
+     "url": "https://en.wikipedia.org/wiki/Samudragupta"
+    }
+   ]
+  },
+  {
+   "realm": "Western Satraps / Yaudheya Republic (not mine)",
+   "years": [
+    350,
+    405
+   ],
+   "severity": "warning",
+   "issue": "Eran is Western Satrap until c. 405 though Samudragupta's own Eran inscription shows Gupta rule there; Kanchi after the Gupta crop shows the Kalabhras (380-555) rather than the Pallavas of Kanchi.",
+   "fixed": false,
+   "source": [
+    {
+     "title": "Wikipedia: Eran",
+     "url": "https://en.wikipedia.org/wiki/Eran"
+    },
+    {
+     "title": "Wikipedia: Samudragupta",
+     "url": "https://en.wikipedia.org/wiki/Samudragupta"
+    }
+   ]
+  },
+  {
+   "realm": "Tang Dynasty",
+   "years": [
+    908,
+    910
+   ],
+   "severity": "error",
+   "issue": "Tang drawn to 910 though the last emperor was deposed in 907. Clipped to 618-907 (908-910 left blank; Later Liang outline starts 911).",
+   "fixed": true,
+   "source": [
+    {
+     "title": "Wikipedia: Tang dynasty",
+     "url": "https://en.wikipedia.org/wiki/Tang_dynasty"
+    },
+    {
+     "title": "Wikipedia: Later Liang (Five Dynasties)",
+     "url": "https://en.wikipedia.org/wiki/Later_Liang_(Five_Dynasties)"
+    }
+   ]
+  },
+  {
+   "realm": "Tang Dynasty",
+   "years": [
+    658,
+    665
+   ],
+   "severity": "warning",
+   "issue": "Peak-area lead (8.73M km² in 661 vs Taagepera 5.4M, 162%): the outline reaches the Aral Sea (Bukhara, Samarkand, Tashkent) via nominal jimi prefectures and counts the Mongolian protectorates. Cropped west of 71°E for 658-665 (Suyab and the Four Garrisons kept); Mongolia left with a note. The timeline area is not changed by a crop, so the area lead remains.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Protectorate General to Pacify the West",
+    "url": "https://en.wikipedia.org/wiki/Protectorate_General_to_Pacify_the_West"
+   }
+  },
+  {
+   "realm": "Tang Dynasty",
+   "years": [
+    640,
+    790
+   ],
+   "severity": "error",
+   "issue": "Turfan (Gaochang/Xizhou, conquered 640) is Western Göktürk to 645, blank 650, then Turks/Türgesh 680-740; Hexi and the Tarim drop out of the Tang outline in 757 though Liangzhou held to 764, Dunhuang to the 780s and the Anxi garrisons to c. 790. Tang outline cannot be extended; Tibet trimmed (see Tibetan Empire).",
+   "fixed": false,
+   "source": [
+    {
+     "title": "Wikipedia: Protectorate General to Pacify the West",
+     "url": "https://en.wikipedia.org/wiki/Protectorate_General_to_Pacify_the_West"
+    },
+    {
+     "title": "Wikipedia: Tibetan Empire",
+     "url": "https://en.wikipedia.org/wiki/Tibetan_Empire"
+    },
+    {
+     "title": "Wikipedia: Dunhuang",
+     "url": "https://en.wikipedia.org/wiki/Dunhuang"
+    }
+   ]
+  },
+  {
+   "realm": "Tang Dynasty",
+   "years": [
+    619,
+    622
+   ],
+   "severity": "warning",
+   "issue": "Chang'an blank 619-622 (Sui clipped at 618, Tang outline starts 623) - east-asia lead; no Tang geometry exists for those years. Noted.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Tang dynasty",
+    "url": "https://en.wikipedia.org/wiki/Tang_dynasty"
+   }
+  },
+  {
+   "realm": "Tibetan Empire",
+   "years": [
+    757,
+    785
+   ],
+   "severity": "error",
+   "issue": "Tibet takes all of Hexi (Liangzhou, Ganzhou, Suzhou, Dunhuang) and the Tarim (Kucha, Khotan) in 757; Tibet occupied Hexi only after 763, Dunhuang in the 770s-780s, and the Anxi garrisons held to c. 790. Cropped: south of 37°N for 757-763, south of 39.9°N for 764-785 (Kashgar/Khotan remain Tibetan from 764, early).",
+   "fixed": true,
+   "source": [
+    {
+     "title": "Wikipedia: Tang–Tibet relations",
+     "url": "https://en.wikipedia.org/wiki/Tang–Tibet_relations"
+    },
+    {
+     "title": "Wikipedia: Guiyi Circuit",
+     "url": "https://en.wikipedia.org/wiki/Guiyi_Circuit"
+    },
+    {
+     "title": "Wikipedia: Protectorate General to Pacify the West",
+     "url": "https://en.wikipedia.org/wiki/Protectorate_General_to_Pacify_the_West"
+    }
+   ]
+  },
+  {
+   "realm": "Lavo Kingdom (not mine)",
+   "years": [
+    1030,
+    1240
+   ],
+   "severity": "warning",
+   "issue": "Lopburi drawn as an independent Lavo Kingdom for most of 1030-1199 and after 1240, though it was a Khmer province from Suryavarman I (11th c.) into the 13th century. Khmer claims use 1200.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Lavo Kingdom",
+    "url": "https://en.wikipedia.org/wiki/Lavo_Kingdom"
+   }
+  },
+  {
+   "realm": "Pandya Dynasty (not mine)",
+   "years": [
+    849,
+    930
+   ],
+   "severity": "error",
+   "issue": "Thanjavur, the Chola capital from Vijayalaya (c. 848), lies inside the Pandya outline until c. 930; the Chola outline sits just north of it.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Chola dynasty",
+    "url": "https://en.wikipedia.org/wiki/Chola_dynasty"
+   }
+  },
+  {
+   "realm": "Anurādhapura (not mine)",
+   "years": [
+    993,
+    1017
+   ],
+   "severity": "error",
+   "issue": "Northern Sri Lanka (Anuradhapura, Polonnaruwa) stays Sinhalese until c. 1018, though Rajaraja I conquered it in 993 and made Polonnaruwa the Chola provincial capital.",
+   "fixed": false,
+   "source": [
+    {
+     "title": "Wikipedia: Rajaraja I",
+     "url": "https://en.wikipedia.org/wiki/Rajaraja_I"
+    },
+    {
+     "title": "Wikipedia: Polonnaruwa",
+     "url": "https://en.wikipedia.org/wiki/Polonnaruwa"
+    }
+   ]
+  },
+  {
+   "realm": "Chola Empire",
+   "years": [
+    949,
+    967
+   ],
+   "severity": "warning",
+   "issue": "Kanchi and Tondaimandalam drawn Chola after Takkolam (949), when Krishna III's Rashtrakutas held them for about two decades. Note added.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Battle of Takkolam",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Takkolam"
+   }
+  },
+  {
+   "realm": "Khalji Dynasty",
+   "years": [
+    1294,
+    1325
+   ],
+   "severity": "error",
+   "issue": "Bengal (Lakhnauti) drawn inside the Khalji Sultanate; it was ruled independently by Balban's descendants until Ghiyath al-Din Tughluq took it in 1324. Cropped west of 87°E (Bihar kept). Lakhnauti is now blank (no Bengal outline in the data).",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Bengal Sultanate",
+    "url": "https://en.wikipedia.org/wiki/Bengal_Sultanate"
+   }
+  },
+  {
+   "realm": "Khalji / Yadava (partly not mine)",
+   "years": [
+    1299,
+    1325
+   ],
+   "severity": "warning",
+   "issue": "Gujarat (Patan), conquered 1299, is blank until c. 1304; Devagiri stays Yadava until 1325 though annexed in 1317-18 (existing note).",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Khalji dynasty",
+    "url": "https://en.wikipedia.org/wiki/Khalji_dynasty"
+   }
+  },
+  {
+   "realm": "Tughlaq Dynasty / Vijayanagara (not mine)",
+   "years": [
+    1323,
+    1378
+   ],
+   "severity": "error",
+   "issue": "Warangal (Tughlaq province from 1323) blank 1326-1350; Madurai blank 1326-1340 and then Vijayanagara from c. 1340, though the Madurai Sultanate ruled 1335-1378. Note added on Tughlaq; Vijayanagara owner should check.",
+   "fixed": false,
+   "source": [
+    {
+     "title": "Wikipedia: Tughlaq dynasty",
+     "url": "https://en.wikipedia.org/wiki/Tughlaq_dynasty"
+    },
+    {
+     "title": "Wikipedia: Madurai Sultanate",
+     "url": "https://en.wikipedia.org/wiki/Madurai_Sultanate"
+    }
+   ]
+  },
+  {
+   "realm": "Lodi Dynasty",
+   "years": [
+    1527,
+    1528
+   ],
+   "severity": "error",
+   "issue": "Lodi drawn over Delhi, Agra and Lahore two years after Panipat (21 April 1526); Mughal outline starts 1529. Hidden 1527-28 (a relabel to Mughal would keep the Delhi Sultanate group key).",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: First Battle of Panipat",
+    "url": "https://en.wikipedia.org/wiki/First_Battle_of_Panipat"
+   }
+  },
+  {
+   "realm": "Mughal Empire",
+   "years": [
+    1541,
+    1546
+   ],
+   "severity": "error",
+   "issue": "Mughal outline keeps Punjab (Lahore, Multan, Peshawar) after Sher Shah drove Humayun out in 1540. Hidden 1541-46.",
+   "fixed": true,
+   "source": [
+    {
+     "title": "Wikipedia: Humayun",
+     "url": "https://en.wikipedia.org/wiki/Humayun"
+    },
+    {
+     "title": "Wikipedia: Sur Empire",
+     "url": "https://en.wikipedia.org/wiki/Sur_Empire"
+    }
+   ]
+  },
+  {
+   "realm": "Mughal Empire",
+   "years": [
+    1622,
+    1761
+   ],
+   "severity": "error",
+   "issue": "Kandahar drawn Mughal in 1622-37 and 1649-1740 though it was Safavid in 1622-38 and 1649-1709, Hotaki 1709-38 and Afsharid from 1738 (south-asia lead confirmed). Cropped east of 66.2°E in 1622-37 and 1649-1751; Lahore and Sirhind (Durrani from 1752) cut by a crop east of 76.5°E for 1752-61.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Mughal–Safavid War (1649–1653)",
+    "url": "https://en.wikipedia.org/wiki/Mughal–Safavid_War_(1649–1653)"
+   }
+  },
+  {
+   "realm": "Mughal Empire",
+   "years": [
+    1772,
+    1856
+   ],
+   "severity": "error",
+   "issue": "Rajputana (Jaipur, Jodhpur, Bikaner, Ajmer) drawn Mughal until 1856, overlapping the British Empire 1818-56 (the 1850 overlap lead). Cropped to the Delhi region 1762-1803 and to Delhi city 1804-1856.",
+   "fixed": true,
+   "source": [
+    {
+     "title": "Wikipedia: Shah Alam II",
+     "url": "https://en.wikipedia.org/wiki/Shah_Alam_II"
+    },
+    {
+     "title": "Wikipedia: Battle of Delhi (1803)",
+     "url": "https://en.wikipedia.org/wiki/Battle_of_Delhi_(1803)"
+    }
+   ]
+  },
+  {
+   "realm": "Mughal Empire",
+   "years": [
+    1687,
+    1699
+   ],
+   "severity": "warning",
+   "issue": "Golconda blank after its conquest in September 1687 until 1700. Cannot add land; noted.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Golconda Sultanate",
+    "url": "https://en.wikipedia.org/wiki/Golconda_Sultanate"
+   }
+  },
+  {
+   "realm": "Ming Dynasty",
+   "years": [
+    1375,
+    1386
+   ],
+   "severity": "error",
+   "issue": "Central Manchuria (Jilin) drawn Ming while Naghachu held it until 1387. Cropped north of 42.5°N.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Naghachu",
+    "url": "https://en.wikipedia.org/wiki/Naghachu"
+   }
+  },
+  {
+   "realm": "Ming Dynasty",
+   "years": [
+    1619,
+    1644
+   ],
+   "severity": "error",
+   "issue": "Liaodong (Fushun 1618; Shenyang, Liaoyang 1621) drawn Ming until 1621-35 (east-asia lead on Shenyang). Cropped east of 123.7°E (1619-21), 122°E (1622-41), 121°E (1642-44). Shenyang is blank 1622-29 (Later Jin outline does not cover it), Later Jin from 1630.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Transition from Ming to Qing",
+    "url": "https://en.wikipedia.org/wiki/Transition_from_Ming_to_Qing"
+   }
+  },
+  {
+   "realm": "Yuan Dynasty (not mine)",
+   "years": [
+    1356,
+    1374
+   ],
+   "severity": "error",
+   "issue": "Nanjing (Zhu Yuanzhang's base from 1356, Ming capital 1368) drawn Yuan until the Ming outline starts in 1375 (confirms east-asia lead). Note added on Ming.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Ming dynasty",
+    "url": "https://en.wikipedia.org/wiki/Ming_dynasty"
+   }
+  },
+  {
+   "realm": "Later Jin Dynasty",
+   "years": [
+    1636,
+    1644
+   ],
+   "severity": "error",
+   "issue": "State labelled Later Jin after Hong Taiji proclaimed the Qing in 1636. Relabelled Qing Dynasty. Its 1636 outline also took the Liaoxi corridor (Jinzhou, Ningyuan, Shanhaiguan), Ming until 1642-44: cut out (1636-41 incl. Jinzhou; 1642-44 Ningyuan/Shanhaiguan). The Ming outline does not cover it, so it is blank.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Later Jin (1616–1636)",
+    "url": "https://en.wikipedia.org/wiki/Later_Jin_(1616–1636)"
+   }
+  },
+  {
+   "realm": "Southern Ming",
+   "years": [
+    1646,
+    1652
+   ],
+   "severity": "error",
+   "issue": "Southern Ming drawn over Nanjing (fell 1645), Fujian (1646), Guangdong/Guangxi (1650) to 1652. Cropped in three steps; the Qing outline does not cover Jiangnan until 1653, so Nanjing is blank 1646-52 (noted on Qing).",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Southern Ming",
+    "url": "https://en.wikipedia.org/wiki/Southern_Ming"
+   }
+  },
+  {
+   "realm": "Southern Ming",
+   "years": [
+    1662,
+    1682
+   ],
+   "severity": "error",
+   "issue": "Taiwan under the Zheng (1662-72) and the Three Feudatories revolt with Taiwan (1673-82) labelled Southern Ming, whose last emperor died in 1662. Relabelled Kingdom of Tungning / Revolt of the Three Feudatories.",
+   "fixed": true,
+   "source": [
+    {
+     "title": "Wikipedia: Kingdom of Tungning",
+     "url": "https://en.wikipedia.org/wiki/Kingdom_of_Tungning"
+    },
+    {
+     "title": "Wikipedia: Revolt of the Three Feudatories",
+     "url": "https://en.wikipedia.org/wiki/Revolt_of_the_Three_Feudatories"
+    }
+   ]
+  },
+  {
+   "realm": "Maratha Empire",
+   "years": [
+    1819,
+    1845
+   ],
+   "severity": "error",
+   "issue": "Maratha drawn after the Third Anglo-Maratha War ended it in 1818 (date lead 1845 vs 1818). 1819 hidden; 1820-45 outline (Gwalior) relabelled Gwalior State.",
+   "fixed": true,
+   "source": [
+    {
+     "title": "Wikipedia: Third Anglo-Maratha War",
+     "url": "https://en.wikipedia.org/wiki/Third_Anglo-Maratha_War"
+    },
+    {
+     "title": "Wikipedia: Gwalior State",
+     "url": "https://en.wikipedia.org/wiki/Gwalior_State"
+    }
+   ]
+  },
+  {
+   "realm": "Maratha Empire / Mughal Empire",
+   "years": [
+    1674,
+    1717
+   ],
+   "severity": "error",
+   "issue": "Raigad (coronation 1674), Pune and Satara inside the Mughal outline in 1674-88 and 1708-29 (south-asia lead for Raigad 1680); no Maratha state 1691-1717; Gingee (Rajaram's capital 1689-98) blank. Cut [72.7,15.6,74.4,19.3] out of the Mughal outline for 1674-88 and [73,16.8,74.6,19] for 1708-29 (blank: the Maratha outline does not cover them); the missing Maratha state cannot be added.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Maratha Empire",
+    "url": "https://en.wikipedia.org/wiki/Maratha_Empire"
+   }
+  },
+  {
+   "realm": "Empire of Japan",
+   "years": [
+    1870,
+    1878
+   ],
+   "severity": "warning",
+   "issue": "Naha and the southern Ryukyus drawn Japanese from 1870; annexed (Okinawa Prefecture) in 1879 (east-asia lead). Cropped east of 128.5°E for 1868-78 (Amami, Satsuma's since 1611, kept). Okinawa is blank because the map has no Ryukyu outline.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Ryukyu Disposition",
+    "url": "https://en.wikipedia.org/wiki/Ryukyu_Disposition"
+   }
+  },
+  {
+   "realm": "Empire of Japan",
+   "years": [
+    1920,
+    1923
+   ],
+   "severity": "error",
+   "issue": "All of Fujian (Fuzhou, Xiamen) drawn Japanese 1920-23. Cropped east of 119.95°E (a thin north-east coastal strip and Penghu's loss remain).",
+   "fixed": true,
+   "source": [
+    {
+     "title": "Wikipedia: Twenty-One Demands",
+     "url": "https://en.wikipedia.org/wiki/Twenty-One_Demands"
+    },
+    {
+     "title": "Wikipedia: Empire of Japan",
+     "url": "https://en.wikipedia.org/wiki/Empire_of_Japan"
+    }
+   ]
+  },
+  {
+   "realm": "Empire of Japan",
+   "years": [
+    1923,
+    1937
+   ],
+   "severity": "error",
+   "issue": "Qingdao stays Japanese after its return to China in 1922 (reoccupied 1938). Cut [119.9,35.8,120.9,36.6] out for 1923-37 (blank; no Chinese outline there). Port Arthur, returned under the Triple Intervention in late 1895, likewise cut for 1896-97.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Shandong Problem",
+    "url": "https://en.wikipedia.org/wiki/Shandong_Problem"
+   }
+  },
+  {
+   "realm": "Empire of Japan / British Colonial Empire",
+   "years": [
+    1942,
+    1945
+   ],
+   "severity": "error",
+   "issue": "Singapore, Jakarta and Rangoon not Japanese until 1943 though they fell in Feb-Mar 1942; Singapore overlaps British 1943-45 and Saigon overlaps French Indochina in 1945. Japan cannot be extended; overlaps belong to the other owners.",
+   "fixed": false,
+   "source": [
+    {
+     "title": "Wikipedia: Empire of Japan",
+     "url": "https://en.wikipedia.org/wiki/Empire_of_Japan"
+    },
+    {
+     "title": "Wikipedia: Japanese occupation of Hong Kong",
+     "url": "https://en.wikipedia.org/wiki/Japanese_occupation_of_Hong_Kong"
+    }
+   ]
+  },
+  {
+   "realm": "Tokugawa Shogunate (not mine)",
+   "years": [
+    1868,
+    1871
+   ],
+   "severity": "error",
+   "issue": "Tokyo (Edo) drawn Tokugawa until c. 1871 though it surrendered to imperial forces in 1868 and became the capital in 1868-69.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Empire of Japan",
+    "url": "https://en.wikipedia.org/wiki/Empire_of_Japan"
+   }
+  },
+  {
+   "realm": "Qing Dynasty",
+   "years": [
+    1789,
+    1790
+   ],
+   "severity": "error",
+   "issue": "Qing drawn at Thăng Long (Hanoi) and Lạng Sơn in 1789-90; the Qing force was routed at the Lunar New Year 1789 (southeast-asia lead). Cut [102,20.2,107.9,21.95] (Red River delta, Lạng Sơn) out of the Qing for 1789-90; the far northern Vietnamese highlands stay inside.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Tây Sơn dynasty",
+    "url": "https://en.wikipedia.org/wiki/Tây_Sơn_dynasty"
+   }
+  },
+  {
+   "realm": "Mughal Empire",
+   "years": [
+    1858,
+    1858
+   ],
+   "severity": "error",
+   "issue": "A Mughal outline (Delhi) is drawn in 1858 though Bahadur Shah II was captured on 20 September 1857. Clipped to 1526-1857.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Bahadur Shah Zafar",
+    "url": "https://en.wikipedia.org/wiki/Bahadur_Shah_Zafar"
+   }
+  },
+  {
+   "realm": "Mughal Empire",
+   "years": [
+    1752,
+    1763
+   ],
+   "severity": "error",
+   "issue": "Sirhind (76.38°E) stayed within 12 km of the 76.5°E crop edge, so it still read as Mughal in 1752-61, and the 1762-1803 Delhi box (west edge 76.3°E) kept it Mughal in 1762-63 under Afghan rule (Sikhs from 1764). Both crop edges moved to 76.6°E.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Durrani Empire",
+    "url": "https://en.wikipedia.org/wiki/Durrani_Empire"
+   }
+  },
+  {
+   "realm": "Empire of Japan",
+   "years": [
+    1875,
+    1876
+   ],
+   "severity": "error",
+   "issue": "Southern Sakhalin (Toyohara, Korsakov) drawn Japanese in 1875-76 after the Treaty of Saint Petersburg (7 May 1875) ceded it to Russia; the map switches only in 1877, when the northern Kurils (Paramushir) also become Japanese. Cut [141,45.85,145.5,54.5] out of Japan for 1875-76 (left blank: the Russian outline does not cover it). Northern Kurils 1875-76 belong to the Russian Empire owner.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Treaty of Saint Petersburg (1875)",
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_Saint_Petersburg_(1875)"
+   }
+  },
+  {
+   "realm": "Tibetan Empire",
+   "years": [
+    803,
+    842
+   ],
+   "severity": "error",
+   "issue": "Turfan (Gaochang) and Beiting drawn Tibetan 793-842; the Uyghurs took Gaochang in 792 and again in 803. Cut [87,42.3,91.5,46] out of Tibet from 803 (blank; the Uyghur outline does not reach it). Kucha and the rest of the Tarim left as drawn (sources vary).",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Uyghur Khaganate",
+    "url": "https://en.wikipedia.org/wiki/Uyghur_Khaganate"
+   }
+  },
+  {
+   "realm": "Maurya Empire",
+   "years": [
+    -318,
+    -304
+   ],
+   "severity": "warning",
+   "issue": "Gedrosia (Makran, to 62°E) drawn Maurya before Seleucus I ceded its eastern part c. 303 BCE. Cut west of 66.6°E for -318 to -304 (the existing crop south of 13.8°N comes first, so a cut is used).",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Seleucid–Mauryan War",
+    "url": "https://en.wikipedia.org/wiki/Seleucid%E2%80%93Mauryan_War"
+   }
+  },
+  {
+   "realm": "Maurya Empire",
+   "years": null,
+   "severity": "warning",
+   "issue": "Area lead (304%) compares the map's 3.95M km² peak with the 1.3M km² row for 210 BCE (late, shrunken Maurya); against the 3.4M km² peak row (261/250 BCE, same list) the map is 116%. Not an error.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: List of largest empires",
+    "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+   }
+  },
+  {
+   "realm": "Han Dynasty",
+   "years": null,
+   "severity": "warning",
+   "issue": "'Eastern Han dynasty: no realm links to this article' is not an error: the map's single 'Han Dynasty' realm (link: Han dynasty) covers both Western and Eastern Han; its 4.58M km² peak (91-105) is 70% of the Eastern Han estimate (6.5M km², 100 CE), already noted on the realm.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Han dynasty",
+    "url": "https://en.wikipedia.org/wiki/Han_dynasty"
+   }
+  },
+  {
+   "realm": "Ming Dynasty",
+   "years": [
+    1409,
+    1435
+   ],
+   "severity": "warning",
+   "issue": "Ming drawn along the whole lower Amur to its mouth (Nurgan command 1409-35) and west towards Hami: loose garrisons and tributary peoples. Map note added rather than a crop.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Nurgan Regional Military Commission",
+    "url": "https://en.wikipedia.org/wiki/Nurgan_Regional_Military_Commission"
+   }
+  },
+  {
+   "realm": "Qing Dynasty",
+   "years": [
+    1720,
+    1793
+   ],
+   "severity": "warning",
+   "issue": "Tibet drawn as an independent state until 1793 though it was a Qing protectorate from 1720 (ambans in Lhasa). Protectorate frontier: map note added.",
+   "fixed": true,
+   "source": {
+    "title": "Wikipedia: Tibet under Qing rule",
+    "url": "https://en.wikipedia.org/wiki/Tibet_under_Qing_rule"
+   }
+  },
+  {
+   "realm": "Yuan Dynasty (not mine)",
+   "years": [
+    1356,
+    1374
+   ],
+   "severity": "error",
+   "issue": "Confirmed east-asia lead: Nanjing is Yuan 1356-1368 and, after the east-asia relabel of 1369-74, 'Northern Yuan' 1369-74, though Zhu Yuanzhang held it from 1356 and the Yuan court fled Dadu in 1368. The Ming outline starts in 1375 and cannot be extended. Suggested fix for the Yuan owner: cut the lower Yangtze around Nanjing (about [116.5,29.5,121.5,32.8]) out of the Yuan for 1356-1368 and crop Yuan/Northern Yuan 1369-74 to north of about 40.5°N, leaving China blank rather than Mongol. Ming note updated.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Ming dynasty",
+    "url": "https://en.wikipedia.org/wiki/Ming_dynasty"
+   }
+  },
+  {
+   "realm": "Yuan Dynasty / Mongol Empire (not mine)",
+   "years": [
+    1260,
+    1362
+   ],
+   "severity": "error",
+   "issue": "Confirmed east-asia lead: Korea (Kaesong, Pyongyang) drawn as Mongol/Yuan territory 1260-1362 and Goryeo's outline missing, though Goryeo remained a vassal kingdom (1270-1356). Not in my chains; suggested fix for the owner: cut Korea south of about 40°N out of the Yuan/Mongol outline and add a note (Goryeo geometry cannot be added).",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Goryeo under Mongol rule",
+    "url": "https://en.wikipedia.org/wiki/Goryeo_under_Mongol_rule"
+   }
+  },
+  {
+   "realm": "Afsharid Iran (not mine)",
+   "years": [
+    1752,
+    1756
+   ],
+   "severity": "error",
+   "issue": "Sirhind is drawn as Afsharid Iran in 1755 (Nader Shah died 1747); the Mughal emperor ceded the Punjab to Ahmad Shah Durrani in 1749 and Lahore was governed by the Afghans. Lahore is blank in 1755. Owner: Iran/Durrani reviewers.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Durrani Empire",
+    "url": "https://en.wikipedia.org/wiki/Durrani_Empire"
+   }
+  },
+  {
+   "realm": "Li Zicheng (not mine)",
+   "years": [
+    1632,
+    1642
+   ],
+   "severity": "warning",
+   "issue": "Li Zicheng's rebel state is drawn from 1632 (over Shaanxi and Shanxi by 1640), cutting into Ming China, though he was a roving rebel until he took Xiangyang and proclaimed himself king in 1643. Suggested: draw 1632-1642 as a people (asPeople) or hide.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Li Zicheng",
+    "url": "https://en.wikipedia.org/wiki/Li_Zicheng"
+   }
+  },
+  {
+   "realm": "Trưng sisters (not mine) / Han Dynasty",
+   "years": [
+    42,
+    50
+   ],
+   "severity": "warning",
+   "issue": "Southeast-asia claims cannot pass with corrections: Mê Linh 42 expects 'Trưng sisters' but no Trưng geometry exists for 40-42 (my Han crop leaves it blank, the closest achievable); Mê Linh 46 expects Han, but the Han outline never covers northern Vietnam in 44-50. Suggested fix for the Trưng sisters owner: keep the polygon for 44-50 and relabel it 'Han Dynasty' (key Han Dynasty) instead of clipping it at 43, and make the 42 claim realm null with not ['Han Dynasty'].",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Trưng sisters",
+    "url": "https://en.wikipedia.org/wiki/Tr%C6%B0ng_sisters"
+   }
+  },
+  {
+   "realm": "Qing Dynasty / Tây Sơn dynasty",
+   "years": [
+    1789,
+    1790
+   ],
+   "severity": "warning",
+   "issue": "After the Qing cut, Thăng Long (Hanoi) is blank in 1789-90: the Tây Sơn outline of 1788-90 does not reach the Red River delta (it appears there from 1791). The southeast-asia claim 'Hanoi 1790 = Tây Sơn' cannot pass; the Tây Sơn owner would need to accept a blank or use realm null with not ['Qing Dynasty'].",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Tây Sơn dynasty",
+    "url": "https://en.wikipedia.org/wiki/T%C3%A2y_S%C6%A1n_dynasty"
+   }
+  },
+  {
+   "realm": "Khmer Empire",
+   "years": [
+    802,
+    1431
+   ],
+   "severity": "warning",
+   "issue": "Reviewed frames 802-1431: no errors in my realm. Lopburi (Lavo) is drawn as a separate kingdom for most of the Khmer period (recorded above, owner Lavo); Champa's sack of Angkor (1177) is not shown, which is within normal frontier fuzziness.",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Khmer Empire",
+    "url": "https://en.wikipedia.org/wiki/Khmer_Empire"
+   }
+  },
+  {
+   "realm": "Shu Han",
+   "years": [
+    221,
+    223
+   ],
+   "severity": "warning",
+   "issue": "Area lead (Shu Han peak 1.67M km² vs 1.0M) is an artefact of my 221-223 relabel: the checker's timelines count the whole relabelled Han polygon, but the app draws it cropped to Sichuan, Hanzhong and Yunnan [97,23,110.2,34]. The Shu Han realm's own outline is 0.88M km².",
+   "fixed": false,
+   "source": {
+    "title": "Wikipedia: Shu Han",
+    "url": "https://en.wikipedia.org/wiki/Shu_Han"
+   }
+  }
+ ],
+ "corrections": {
+  "Maurya Empire": {
+   "relabel": [
+    {
+     "from": -184,
+     "to": -171,
+     "name": "Shunga Empire",
+     "key": "Shunga Empire"
+    }
+   ],
+   "note": "The map never shows the lands Seleucus I ceded around 303 BCE (the Kabul valley and Arachosia around Kandahar), although Ashoka's Greek and Aramaic edicts at Kandahar show Maurya rule there. After Pushyamitra Shunga killed the last Maurya king c. 185 BCE, the remaining outline (184-171 BCE) is shown as the Shunga Empire. Gedrosia (Makran), west of the lower Indus, came to the Maurya only with Seleucus' cession, so before 303 BCE it is cut out of the empire.",
+   "sources": [
+    {
+     "title": "Wikipedia: Maurya Empire",
+     "url": "https://en.wikipedia.org/wiki/Maurya_Empire"
+    },
+    {
+     "title": "Wikipedia: Shunga Empire",
+     "url": "https://en.wikipedia.org/wiki/Shunga_Empire"
+    },
+    {
+     "title": "Wikipedia: Seleucid–Mauryan war",
+     "url": "https://en.wikipedia.org/wiki/Seleucid–Mauryan_war"
+    },
+    {
+     "title": "Wikimedia Commons: Maurya Empire, c.250 BCE (map)",
+     "url": "https://commons.wikimedia.org/wiki/File:Maurya_Empire,_c.250_BCE.png"
+    },
+    {
+     "title": "Wikipedia: Seleucid–Mauryan War",
+     "url": "https://en.wikipedia.org/wiki/Seleucid%E2%80%93Mauryan_War"
+    }
+   ],
+   "cut": [
+    {
+     "from": -318,
+     "to": -304,
+     "box": [
+      55.0,
+      20.0,
+      66.6,
+      32.0
+     ]
+    }
+   ]
+  },
+  "Xin Dynasty": {
+   "relabel": [
+    {
+     "from": 6,
+     "to": 8,
+     "name": "Han Dynasty",
+     "key": "Han Dynasty"
+    },
+    {
+     "from": 24,
+     "to": 29,
+     "name": "Han Dynasty",
+     "key": "Han Dynasty"
+    }
+   ],
+   "note": "Wang Mang proclaimed the Xin in 9 CE and it fell in 23 CE, so the map's Xin outlines for 6-8 and 24-29 CE are shown as Han: the Gengshi Emperor took Chang'an in 23, and Guangwu made Luoyang the Han capital in 25.",
+   "sources": [
+    {
+     "title": "Wikipedia: Xin dynasty",
+     "url": "https://en.wikipedia.org/wiki/Xin_dynasty"
+    },
+    {
+     "title": "Wikipedia: Han dynasty",
+     "url": "https://en.wikipedia.org/wiki/Han_dynasty"
+    },
+    {
+     "title": "Wikipedia: Emperor Guangwu of Han",
+     "url": "https://en.wikipedia.org/wiki/Emperor_Guangwu_of_Han"
+    }
+   ]
+  },
+  "Han Dynasty": {
+   "clip": [
+    -202,
+    223
+   ],
+   "crop": [
+    {
+     "from": 30,
+     "to": 39,
+     "box": [
+      70,
+      15,
+      126.0,
+      56
+     ]
+    },
+    {
+     "from": 40,
+     "to": 42,
+     "box": [
+      70,
+      21.8,
+      126.0,
+      56
+     ]
+    },
+    {
+     "from": 43,
+     "to": 220,
+     "box": [
+      70,
+      15,
+      126.0,
+      56
+     ]
+    },
+    {
+     "from": 221,
+     "to": 223,
+     "box": [
+      97,
+      23.0,
+      110.2,
+      34.0
+     ]
+    }
+   ],
+   "relabel": [
+    {
+     "from": 221,
+     "to": 223,
+     "name": "Shu Han",
+     "key": "Shu Han"
+    }
+   ],
+   "note": "From 196 the Han emperor lived at Xuchang under Cao Cao's control, so in the last years the red 'Han' area is land held by other warlords who still recognised the Han, such as Liu Bei in Sichuan. Liu Bei proclaimed himself Han emperor at Chengdu in 221; that outline (cut to Sichuan, Hanzhong and Yunnan) is shown as Shu Han for 221-223. Goguryeo's capital Gungnae (Ji'an) lay outside Han rule, so from 30 CE the Han is drawn west of 126°E (keeping Lelang at Pyongyang). In 40-42 CE the Trưng sisters' rising held Jiaozhi and the commanderies to its south, so Han is drawn north of 21.8°N in those years; Ma Yuan restored Han rule in 43, but the map has no Han outline in northern Vietnam for 44-50.",
+   "sources": [
+    {
+     "title": "Wikipedia: Han dynasty",
+     "url": "https://en.wikipedia.org/wiki/Han_dynasty"
+    },
+    {
+     "title": "Wikipedia: Shu Han",
+     "url": "https://en.wikipedia.org/wiki/Shu_Han"
+    },
+    {
+     "title": "Wikipedia: Goguryeo",
+     "url": "https://en.wikipedia.org/wiki/Goguryeo"
+    },
+    {
+     "title": "Wikipedia: Lelang Commandery",
+     "url": "https://en.wikipedia.org/wiki/Lelang_Commandery"
+    },
+    {
+     "title": "Wikipedia: Trưng sisters",
+     "url": "https://en.wikipedia.org/wiki/Trưng_sisters"
+    }
+   ]
+  },
+  "Xiongnu": {
+   "crop": [
+    {
+     "from": -121,
+     "to": 153,
+     "box": [
+      40,
+      41.0,
+      140,
+      60
+     ]
+    }
+   ],
+   "cut": [
+    {
+     "from": -208,
+     "to": -204,
+     "box": [
+      114.5,
+      38.5,
+      120.0,
+      40.8
+     ]
+    },
+    {
+     "from": -127,
+     "to": -122,
+     "box": [
+      105.5,
+      37.5,
+      112.5,
+      41.0
+     ]
+    }
+   ],
+   "note": "Han armies took the Ordos in 127 BCE and the Hexi Corridor in 121 BCE; the map cuts the Ordos out of the Xiongnu from 127 BCE and from 121 BCE draws them only north of about 41°N (the Yinshan line). Ji (Beijing), the capital of the kingdom of Yan, is also cut out of the Xiongnu outline for 208-204 BCE. Scholarly estimates of the Xiongnu peak (about 9 million km² in 176 BCE, Taagepera) include the steppe and Tarim states they dominated, which the map leaves blank.",
+   "sources": [
+    {
+     "title": "Wikipedia: Han–Xiongnu War",
+     "url": "https://en.wikipedia.org/wiki/Han–Xiongnu_War"
+    },
+    {
+     "title": "Wikipedia: Hexi Corridor",
+     "url": "https://en.wikipedia.org/wiki/Hexi_Corridor"
+    },
+    {
+     "title": "Wikipedia: Xiongnu",
+     "url": "https://en.wikipedia.org/wiki/Xiongnu"
+    },
+    {
+     "title": "Wikipedia: Zang Tu",
+     "url": "https://en.wikipedia.org/wiki/Zang_Tu"
+    }
+   ]
+  },
+  "Kushan Empire": {
+   "crop": [
+    {
+     "from": 91,
+     "to": 237,
+     "box": [
+      55,
+      10,
+      95,
+      40.3
+     ]
+    }
+   ],
+   "note": "From 91 to 237 the empire is drawn south of about 40.3°N, which removes the map's arm along the northern Tarim Basin (Kucha, Turfan), Han territory at the time.",
+   "sources": [
+    {
+     "title": "Wikipedia: Kushan Empire",
+     "url": "https://en.wikipedia.org/wiki/Kushan_Empire"
+    },
+    {
+     "title": "Wikipedia: Protectorate of the Western Regions",
+     "url": "https://en.wikipedia.org/wiki/Protectorate_of_the_Western_Regions"
+    }
+   ]
+  },
+  "Gupta Empire": {
+   "crop": [
+    {
+     "from": 347,
+     "to": 409,
+     "box": [
+      73.0,
+      18.0,
+      98,
+      30.5
+     ]
+    },
+    {
+     "from": 410,
+     "to": 554,
+     "box": [
+      69.0,
+      18.0,
+      98,
+      30.5
+     ]
+    }
+   ],
+   "note": "Samudragupta's southern campaign (c. 350) defeated the kings of the east coast and the Pallava ruler of Kanchi, and frontier kingdoms paid tribute, but these lands were not annexed. From 347 the empire is drawn only between 18°N and 30.5°N, and east of 73°E until the conquest of the Western Satraps (c. 410, after which Saurashtra is kept), which removes Kanchi, Andhra, Punjab, Kashmir, Gandhara and most of the Indus valley; reference maps show Punjab and the Indus lands as tributary states.",
+   "sources": [
+    {
+     "title": "Wikipedia: Gupta Empire",
+     "url": "https://en.wikipedia.org/wiki/Gupta_Empire"
+    },
+    {
+     "title": "Wikipedia: Samudragupta",
+     "url": "https://en.wikipedia.org/wiki/Samudragupta"
+    },
+    {
+     "title": "Wikimedia Commons: Map for Gupta Empire and tributaries",
+     "url": "https://commons.wikimedia.org/wiki/File:Map_for_Gupta_Empire_and_tributaries.svg"
+    }
+   ]
+  },
+  "Tang Dynasty": {
+   "clip": [
+    618,
+    907
+   ],
+   "crop": [
+    {
+     "from": 658,
+     "to": 665,
+     "box": [
+      71,
+      0,
+      140,
+      60
+     ]
+    }
+   ],
+   "note": "The Tang ended in 907; the map leaves 908-910 empty rather than show a united Tang. In 658-665 the map stretched the Tang to the Aral Sea; Sogdiana and the western steppe were loose 'jimi' prefectures under local rulers, so the empire is drawn east of 71°E in those years. Its 661-665 peak (8.7 million km²) also counts the Mongolian protectorates, well above Taagepera's 5.4 million km² (715). Turfan (Xizhou) was a Tang prefecture from 640 to about 790, and the Tarim garrisons held out until about 790, longer than the map shows.",
+   "sources": [
+    {
+     "title": "Wikipedia: Tang dynasty",
+     "url": "https://en.wikipedia.org/wiki/Tang_dynasty"
+    },
+    {
+     "title": "Wikipedia: Protectorate General to Pacify the West",
+     "url": "https://en.wikipedia.org/wiki/Protectorate_General_to_Pacify_the_West"
+    },
+    {
+     "title": "Wikipedia: Later Liang (Five Dynasties)",
+     "url": "https://en.wikipedia.org/wiki/Later_Liang_(Five_Dynasties)"
+    },
+    {
+     "title": "Wikimedia Commons: The T'ang Dynasty 618-906 AD, boundaries of 700 AD (A. Herrmann, Atlas of China)",
+     "url": "https://commons.wikimedia.org/wiki/File:The_T%27ang_Dynasty_618-906_AD_--_Boundaries_of_700_AD.jpg"
+    }
+   ]
+  },
+  "Tibetan Empire": {
+   "crop": [
+    {
+     "from": 757,
+     "to": 763,
+     "box": [
+      60,
+      20,
+      110,
+      37.0
+     ]
+    },
+    {
+     "from": 764,
+     "to": 785,
+     "box": [
+      60,
+      20,
+      110,
+      39.9
+     ]
+    }
+   ],
+   "note": "Tibet took the Hexi Corridor in stages after 763 (Dunhuang only in the 770s or 780s), and the Tang garrisons in the Tarim held out until about 790. The map's outline takes all of them in 757, so it is drawn only south of 37°N for 757-763 and south of 39.9°N for 764-785. The Uyghurs took Gaochang (Turfan) in 803, so the Turfan basin and Beiting are cut out of the Tibetan outline from 803.",
+   "sources": [
+    {
+     "title": "Wikipedia: Tang–Tibet relations",
+     "url": "https://en.wikipedia.org/wiki/Tang–Tibet_relations"
+    },
+    {
+     "title": "Wikipedia: Guiyi Circuit",
+     "url": "https://en.wikipedia.org/wiki/Guiyi_Circuit"
+    },
+    {
+     "title": "Wikipedia: Protectorate General to Pacify the West",
+     "url": "https://en.wikipedia.org/wiki/Protectorate_General_to_Pacify_the_West"
+    },
+    {
+     "title": "Wikipedia: Uyghur Khaganate",
+     "url": "https://en.wikipedia.org/wiki/Uyghur_Khaganate"
+    },
+    {
+     "title": "Wikipedia: Gaochang",
+     "url": "https://en.wikipedia.org/wiki/Gaochang"
+    }
+   ],
+   "cut": [
+    {
+     "from": 803,
+     "to": 842,
+     "box": [
+      87.0,
+      42.3,
+      91.5,
+      46.0
+     ]
+    }
+   ]
+  },
+  "Khalji Dynasty": {
+   "crop": [
+    {
+     "from": 1294,
+     "to": 1325,
+     "box": [
+      60,
+      8,
+      87.0,
+      37
+     ]
+    }
+   ],
+   "note": "Bengal (Lakhnauti) was ruled independently by Balban's descendants until Ghiyath al-Din Tughluq took it in 1324, so the Khalji outline is drawn west of 87°E.",
+   "sources": [
+    {
+     "title": "Wikipedia: Bengal Sultanate",
+     "url": "https://en.wikipedia.org/wiki/Bengal_Sultanate"
+    },
+    {
+     "title": "Wikipedia: Khalji dynasty",
+     "url": "https://en.wikipedia.org/wiki/Khalji_dynasty"
+    }
+   ]
+  },
+  "Lodi Dynasty": {
+   "hide": [
+    [
+     1527,
+     1528
+    ]
+   ],
+   "note": "The Lodi dynasty ended when Babur defeated Ibrahim Lodi at Panipat on 21 April 1526 and took Delhi and Agra; the map's Lodi outline for 1527-28 is hidden (the Mughal outline starts in 1529).",
+   "sources": [
+    {
+     "title": "Wikipedia: First Battle of Panipat",
+     "url": "https://en.wikipedia.org/wiki/First_Battle_of_Panipat"
+    },
+    {
+     "title": "Wikipedia: Lodi dynasty",
+     "url": "https://en.wikipedia.org/wiki/Lodi_dynasty"
+    }
+   ]
+  },
+  "Mughal Empire": {
+   "hide": [
+    [
+     1541,
+     1546
+    ]
+   ],
+   "crop": [
+    {
+     "from": 1622,
+     "to": 1637,
+     "box": [
+      66.2,
+      5,
+      98,
+      38
+     ]
+    },
+    {
+     "from": 1649,
+     "to": 1751,
+     "box": [
+      66.2,
+      5,
+      98,
+      38
+     ]
+    },
+    {
+     "from": 1752,
+     "to": 1761,
+     "box": [
+      76.6,
+      5,
+      98,
+      38
+     ]
+    },
+    {
+     "from": 1762,
+     "to": 1803,
+     "box": [
+      76.6,
+      27.3,
+      79.0,
+      30.3
+     ]
+    },
+    {
+     "from": 1804,
+     "to": 1856,
+     "box": [
+      76.9,
+      28.45,
+      77.5,
+      28.85
+     ]
+    }
+   ],
+   "cut": [
+    {
+     "from": 1674,
+     "to": 1688,
+     "box": [
+      72.7,
+      15.6,
+      74.4,
+      19.3
+     ]
+    },
+    {
+     "from": 1708,
+     "to": 1729,
+     "box": [
+      73.0,
+      16.8,
+      74.6,
+      19.0
+     ]
+    }
+   ],
+   "note": "Humayun lost Punjab to Sher Shah Suri in 1540 and was in exile until 1545, so the 1541-46 outline is hidden. Kandahar was Safavid in 1622-38 and from 1649 (then Hotaki and, from 1738, Nader Shah's), so the empire is drawn east of 66.2°E in those years; from 1752 the Punjab (Lahore, Sirhind) was held by Ahmad Shah Durrani, so the 1752-61 outline is drawn east of 76.6°E. From 1762 the outline is cut to the Delhi region (Sirhind stayed with the Afghans and then the Sikhs), and after the British took Delhi in 1803 to the city itself: Rajput states such as Jaipur and Jodhpur were not under Mughal rule. Golconda, conquered in 1687, is missing from the map until 1700, and Raigad, Pune and Satara are cut out of the empire while the Marathas held them (1674-88 and 1708-29). Company forces captured Bahadur Shah II, the last emperor, on 20 September 1857, so the map ends the empire in 1857.",
+   "sources": [
+    {
+     "title": "Wikipedia: Humayun",
+     "url": "https://en.wikipedia.org/wiki/Humayun"
+    },
+    {
+     "title": "Wikipedia: Mughal–Safavid war (1622–1623)",
+     "url": "https://en.wikipedia.org/wiki/Mughal–Safavid_war_(1622–1623)"
+    },
+    {
+     "title": "Wikipedia: Mughal–Safavid War (1649–1653)",
+     "url": "https://en.wikipedia.org/wiki/Mughal–Safavid_War_(1649–1653)"
+    },
+    {
+     "title": "Wikipedia: Durrani Empire",
+     "url": "https://en.wikipedia.org/wiki/Durrani_Empire"
+    },
+    {
+     "title": "Wikipedia: Raigad Fort",
+     "url": "https://en.wikipedia.org/wiki/Raigad_Fort"
+    },
+    {
+     "title": "Wikipedia: Golconda Sultanate",
+     "url": "https://en.wikipedia.org/wiki/Golconda_Sultanate"
+    },
+    {
+     "title": "Wikipedia: Shah Alam II",
+     "url": "https://en.wikipedia.org/wiki/Shah_Alam_II"
+    },
+    {
+     "title": "Wikipedia: Battle of Delhi (1803)",
+     "url": "https://en.wikipedia.org/wiki/Battle_of_Delhi_(1803)"
+    },
+    {
+     "title": "Wikipedia: Bahadur Shah Zafar",
+     "url": "https://en.wikipedia.org/wiki/Bahadur_Shah_Zafar"
+    }
+   ],
+   "clip": [
+    1526,
+    1857
+   ]
+  },
+  "Ming Dynasty": {
+   "crop": [
+    {
+     "from": 1375,
+     "to": 1386,
+     "box": [
+      70,
+      15,
+      135,
+      42.5
+     ]
+    },
+    {
+     "from": 1619,
+     "to": 1621,
+     "box": [
+      70,
+      15,
+      123.7,
+      56
+     ]
+    },
+    {
+     "from": 1622,
+     "to": 1641,
+     "box": [
+      70,
+      15,
+      122.0,
+      56
+     ]
+    },
+    {
+     "from": 1642,
+     "to": 1644,
+     "box": [
+      70,
+      15,
+      121.0,
+      56
+     ]
+    }
+   ],
+   "note": "Zhu Yuanzhang held Nanjing from 1356 and proclaimed the Ming there in 1368, but the map shows the Yuan (from 1369 the Northern Yuan) at Nanjing until 1374. Manchuria beyond Liaodong came under the Ming only after Naghachu surrendered in 1387, and the Later Jin took Fushun (1618) and Liaoyang and Shenyang (1621); the outline is cut to match. The Liaoxi corridor (Jinzhou, Ningyuan, Shanhaiguan) stayed Ming until 1642-44; it is cut out of the Qing outline until then, but the Ming outline does not cover it, so it is blank. The long arms to the lower Amur (the Nurgan command, 1409-35) and towards Hami were loose garrisons and tributary peoples rather than provinces.",
+   "sources": [
+    {
+     "title": "Wikipedia: Ming dynasty",
+     "url": "https://en.wikipedia.org/wiki/Ming_dynasty"
+    },
+    {
+     "title": "Wikipedia: Naghachu",
+     "url": "https://en.wikipedia.org/wiki/Naghachu"
+    },
+    {
+     "title": "Wikipedia: Transition from Ming to Qing",
+     "url": "https://en.wikipedia.org/wiki/Transition_from_Ming_to_Qing"
+    },
+    {
+     "title": "Wikipedia: Nurgan Regional Military Commission",
+     "url": "https://en.wikipedia.org/wiki/Nurgan_Regional_Military_Commission"
+    }
+   ]
+  },
+  "Southern Ming": {
+   "crop": [
+    {
+     "from": 1646,
+     "to": 1646,
+     "box": [
+      96,
+      18,
+      123,
+      31.0
+     ]
+    },
+    {
+     "from": 1647,
+     "to": 1650,
+     "box": [
+      96,
+      18,
+      114.6,
+      30.5
+     ]
+    },
+    {
+     "from": 1651,
+     "to": 1652,
+     "box": [
+      96,
+      18,
+      109.5,
+      29.5
+     ]
+    }
+   ],
+   "relabel": [
+    {
+     "from": 1662,
+     "to": 1672,
+     "name": "Kingdom of Tungning",
+     "key": "Kingdom of Tungning"
+    },
+    {
+     "from": 1673,
+     "to": 1682,
+     "name": "Revolt of the Three Feudatories",
+     "key": "Revolt of the Three Feudatories"
+    }
+   ],
+   "note": "Nanjing fell in June 1645, Fuzhou in 1646, and Guangzhou and Guilin in 1650; the Southern Ming outline is trimmed to match, which leaves some of this land blank. Taiwan under Koxinga's heirs (1662-83) is labelled the Kingdom of Tungning, and the anti-Qing lands of 1673-81 the Revolt of the Three Feudatories.",
+   "sources": [
+    {
+     "title": "Wikipedia: Southern Ming",
+     "url": "https://en.wikipedia.org/wiki/Southern_Ming"
+    },
+    {
+     "title": "Wikipedia: Kingdom of Tungning",
+     "url": "https://en.wikipedia.org/wiki/Kingdom_of_Tungning"
+    },
+    {
+     "title": "Wikipedia: Revolt of the Three Feudatories",
+     "url": "https://en.wikipedia.org/wiki/Revolt_of_the_Three_Feudatories"
+    }
+   ]
+  },
+  "Later Jin Dynasty": {
+   "relabel": [
+    {
+     "from": 1636,
+     "to": 1644,
+     "name": "Qing Dynasty",
+     "key": "Qing Dynasty"
+    }
+   ],
+   "cut": [
+    {
+     "from": 1636,
+     "to": 1641,
+     "box": [
+      119.3,
+      39.7,
+      121.6,
+      41.4
+     ]
+    },
+    {
+     "from": 1642,
+     "to": 1644,
+     "box": [
+      119.3,
+      39.7,
+      121.0,
+      40.9
+     ]
+    }
+   ],
+   "note": "Hong Taiji renamed the Later Jin the Qing in 1636, so the map labels it Qing from 1636. The Liaoxi corridor between Shanhaiguan and Jinzhou, which the Ming held until 1642 (Jinzhou) and 1644 (Ningyuan, Shanhaiguan), is cut out of the outline until then.",
+   "sources": [
+    {
+     "title": "Wikipedia: Later Jin (1616–1636)",
+     "url": "https://en.wikipedia.org/wiki/Later_Jin_(1616–1636)"
+    },
+    {
+     "title": "Wikipedia: Transition from Ming to Qing",
+     "url": "https://en.wikipedia.org/wiki/Transition_from_Ming_to_Qing"
+    }
+   ]
+  },
+  "Maratha Empire": {
+   "hide": [
+    [
+     1819,
+     1819
+    ]
+   ],
+   "relabel": [
+    {
+     "from": 1820,
+     "to": 1845,
+     "name": "Gwalior State",
+     "key": "Gwalior State"
+    }
+   ],
+   "note": "The map has no Maratha state for 1691-1717 and Shivaji's capital Raigad lies outside the small Maratha outline of 1677-90; Raigad, Pune and Satara are cut out of the Mughal outline while the Marathas held them (1674-88, 1708-29), so they show blank. Rajaram's capital Gingee (1689-98) is also missing. The empire ended with the Third Anglo-Maratha War in 1818: 1819 is hidden, and the remaining outline of 1820-45 is Scindia's Gwalior State.",
+   "sources": [
+    {
+     "title": "Wikipedia: Maratha Empire",
+     "url": "https://en.wikipedia.org/wiki/Maratha_Empire"
+    },
+    {
+     "title": "Wikipedia: Raigad Fort",
+     "url": "https://en.wikipedia.org/wiki/Raigad_Fort"
+    },
+    {
+     "title": "Wikipedia: Third Anglo-Maratha War",
+     "url": "https://en.wikipedia.org/wiki/Third_Anglo-Maratha_War"
+    },
+    {
+     "title": "Wikipedia: Gwalior State",
+     "url": "https://en.wikipedia.org/wiki/Gwalior_State"
+    }
+   ]
+  },
+  "Empire of Japan": {
+   "crop": [
+    {
+     "from": 1868,
+     "to": 1878,
+     "box": [
+      128.5,
+      20,
+      160,
+      60
+     ]
+    },
+    {
+     "from": 1920,
+     "to": 1923,
+     "box": [
+      119.95,
+      -15,
+      180,
+      60
+     ]
+    }
+   ],
+   "cut": [
+    {
+     "from": 1896,
+     "to": 1897,
+     "box": [
+      120.8,
+      38.6,
+      123.6,
+      40.6
+     ]
+    },
+    {
+     "from": 1923,
+     "to": 1937,
+     "box": [
+      119.9,
+      35.8,
+      120.9,
+      36.6
+     ]
+    },
+    {
+     "from": 1875,
+     "to": 1876,
+     "box": [
+      141.0,
+      45.85,
+      145.5,
+      54.5
+     ]
+    }
+   ],
+   "note": "Okinawa and the southern Ryukyus were annexed only in 1879, so before then the empire is drawn east of 128.5°E. Japan never ruled Fujian; the map's 1920-23 outline there is cut, though a thin coastal strip remains. Liaodong (Port Arthur), handed back to China in late 1895, and Qingdao, returned in 1922 and reoccupied in 1938, are cut out of the empire for 1896-97 and 1923-37. Singapore, Java and Rangoon, taken in early 1942, appear only from 1943. By the Treaty of Saint Petersburg (May 1875) Japan gave its part of Sakhalin to Russia in exchange for the northern Kuril Islands, so Sakhalin is cut out of the empire for 1875-76 (the map moves it to Russia only in 1877 and shows the northern Kurils as Japanese from 1877).",
+   "sources": [
+    {
+     "title": "Wikipedia: Ryukyu Disposition",
+     "url": "https://en.wikipedia.org/wiki/Ryukyu_Disposition"
+    },
+    {
+     "title": "Wikipedia: Triple Intervention",
+     "url": "https://en.wikipedia.org/wiki/Triple_Intervention"
+    },
+    {
+     "title": "Wikipedia: Shandong Problem",
+     "url": "https://en.wikipedia.org/wiki/Shandong_Problem"
+    },
+    {
+     "title": "Wikipedia: Twenty-One Demands",
+     "url": "https://en.wikipedia.org/wiki/Twenty-One_Demands"
+    },
+    {
+     "title": "Wikipedia: Empire of Japan",
+     "url": "https://en.wikipedia.org/wiki/Empire_of_Japan"
+    },
+    {
+     "title": "Wikipedia: Treaty of Saint Petersburg (1875)",
+     "url": "https://en.wikipedia.org/wiki/Treaty_of_Saint_Petersburg_(1875)"
+    }
+   ]
+  },
+  "Qing Dynasty": {
+   "cut": [
+    {
+     "from": 1789,
+     "to": 1790,
+     "box": [
+      102.0,
+      20.2,
+      107.9,
+      21.95
+     ]
+    }
+   ],
+   "note": "Nanjing and the lower Yangtze, taken by the Qing in 1645, are missing from the Qing outline until the mid-1650s. The Qing army held Thăng Long (Hanoi) only from late 1788 until it was routed by Nguyễn Huệ in early 1789, so the Red River delta is cut out of the Qing outline for 1789-90. Tibet was a Qing protectorate from 1720, with imperial residents (ambans) in Lhasa, but the map draws it as a separate state until 1793.",
+   "sources": [
+    {
+     "title": "Wikipedia: Southern Ming",
+     "url": "https://en.wikipedia.org/wiki/Southern_Ming"
+    },
+    {
+     "title": "Wikipedia: Tây Sơn dynasty",
+     "url": "https://en.wikipedia.org/wiki/Tây_Sơn_dynasty"
+    },
+    {
+     "title": "Wikipedia: Tibet under Qing rule",
+     "url": "https://en.wikipedia.org/wiki/Tibet_under_Qing_rule"
+    }
+   ]
+  },
+  "Qin": {
+   "note": "Qin conquered Chu in 223 BCE, but the map leaves Chu's southern lands around Changsha (Hunan) blank until 210 BCE.",
+   "sources": [
+    {
+     "title": "Wikipedia: Qin's wars of unification",
+     "url": "https://en.wikipedia.org/wiki/Qin's_wars_of_unification"
+    }
+   ]
+  },
+  "Tughlaq Dynasty": {
+   "note": "Warangal, taken in 1323, was a Tughlaq province until the 1330s, and Madurai was ruled by the Madurai Sultanate from 1335 until the Vijayanagara conquest of 1378; the map shows neither.",
+   "sources": [
+    {
+     "title": "Wikipedia: Tughlaq dynasty",
+     "url": "https://en.wikipedia.org/wiki/Tughlaq_dynasty"
+    },
+    {
+     "title": "Wikipedia: Madurai Sultanate",
+     "url": "https://en.wikipedia.org/wiki/Madurai_Sultanate"
+    }
+   ]
+  },
+  "Chola Empire": {
+   "note": "Vijayalaya captured Thanjavur c. 848 and made it the Chola capital, but the map leaves the city in the Pandya kingdom until about 930. Rajaraja I took northern Sri Lanka and Anuradhapura in 993, earlier than the map shows, and after the battle of Takkolam (949) the Rashtrakutas held Kanchi and the north of the Chola country for about twenty years.",
+   "sources": [
+    {
+     "title": "Wikipedia: Chola dynasty",
+     "url": "https://en.wikipedia.org/wiki/Chola_dynasty"
+    },
+    {
+     "title": "Wikipedia: Battle of Takkolam",
+     "url": "https://en.wikipedia.org/wiki/Battle_of_Takkolam"
+    },
+    {
+     "title": "Wikipedia: Rajaraja I",
+     "url": "https://en.wikipedia.org/wiki/Rajaraja_I"
+    },
+    {
+     "title": "Wikipedia: Polonnaruwa",
+     "url": "https://en.wikipedia.org/wiki/Polonnaruwa"
+    }
+   ]
+  }
+ }
+}
