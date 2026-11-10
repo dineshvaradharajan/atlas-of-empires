@@ -2929,6 +2929,11 @@ function setupUI() {
   const toggle = (btn, flag, after) => { btn.onclick = () => { S[flag] = !S[flag]; btn.classList.toggle("on", S[flag]); btn.setAttribute("aria-pressed", S[flag]); after(); }; };
   toggle($("#labelsBtn"), "labels", draw);
   toggle($("#peoplesBtn"), "peoples", () => { buildItems(); draw(); });
+  // Terrain shading on or off; remembered in this browser
+  try { S.relief = localStorage.getItem("atlas.terrain") !== "off"; } catch { S.relief = true; }
+  $("#terrainBtn").classList.toggle("on", S.relief); $("#terrainBtn").setAttribute("aria-pressed", S.relief);
+  if (!GL) $("#terrainBtn").hidden = true; // shading needs WebGL
+  toggle($("#terrainBtn"), "relief", () => { try { localStorage.setItem("atlas.terrain", S.relief ? "on" : "off"); } catch {} draw(); });
 
   const col = $("#col");
   col.addEventListener("click", async (ev) => {
