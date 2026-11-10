@@ -70,6 +70,8 @@ def fuzzy_j(want, have):
 def resolve_power(pw, year, act, by_profile):
     """Best Cliopatria realm for an era 'power' entry at that year, or None."""
     name = pw["name"]
+    if pw.get("clio") and pw["clio"] in act:  # an exact realm name given in the chapter wins over guessing from the name
+        return pw["clio"]
     for cand in by_profile.get(name.lower(), []):
         if cand in act:
             return cand
