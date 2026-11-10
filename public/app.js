@@ -2079,6 +2079,8 @@ function drawMomentPin() {
 }
 
 // ---------------------------------------------------------------- power chart (the timeline)
+// Trackpad / mouse wheel: scrolling right or down moves forward in time (one gesture = many small wheel events).
+const wheelPx = (ev) => { const k = ev.deltaMode === 1 ? 16 : ev.deltaMode === 2 ? 400 : 1; return (Math.abs(ev.deltaX) > Math.abs(ev.deltaY) ? ev.deltaX : ev.deltaY) * k; };
 function setupChart() {
   const el = $("#chart");
   const toYear = (ev) => { const r = el.getBoundingClientRect(); const fx = Math.max(0, Math.min(1, (ev.clientX - r.left) / r.width)); const [a, b] = S.journey ? S.journey.span : [S.win.a, S.win.b]; return a + fx * (b - a); };
@@ -2102,6 +2104,32 @@ function setupChart() {
     if (rb) { ev.preventDefault(); S.jEvent = null; stopPlay(); return go(+rb.dataset.year); }
     drag = { x: ev.clientX, target: ev.target }; el.setPointerCapture(ev.pointerId); stopPlay(); scrub(toYear(ev));
   });
+  let wheelAcc = 0, wheelYear = null, wheelRaf = 0, wheelAt = 0;
+  el.addEventListener("wheel", (ev) => {
+    const strip = ev.target.closest(".wchap");
+    if (strip) { // chapter cards: slide the row (a vertical wheel scrolls it sideways too)
+      if (Math.abs(ev.deltaY) > Math.abs(ev.deltaX)) { // the row snaps to cards, so move a whole card per notch
+        ev.preventDefault(); wheelAcc += wheelPx(ev);
+        if (Math.abs(wheelAcc) >= 40) { strip.scrollBy({ left: Math.sign(wheelAcc) * 142, behavior: "smooth" }); wheelAcc = 0; }
+      }
+      return;
+    }
+    ev.preventDefault();
+    const dx = wheelPx(ev), w = el.getBoundingClientRect().width || 1;
+    if (S.war) { // a war without chapters: step event by event
+      wheelAcc += dx;
+      if (Math.abs(wheelAcc) >= 60) { const n = Math.sign(wheelAcc); wheelAcc = 0; stopPlay(); goWarEvent(S.wIdx + n); }
+      return;
+    }
+    stopPlay();
+    const now = performance.now(); if (wheelYear == null || now - wheelAt > 400) wheelYear = S.year; wheelAt = now; // keep fractions within a gesture
+    const base = wheelYear;
+    let y;
+    if (S.chartKind && !S.journey) { const f = S.chartScale(base) + dx / w, y0 = S.chartInv(f); y = y0 === Math.round(base) ? base + Math.sign(dx) * 0.34 : y0; }
+    else { const [a, b] = S.journey ? S.journey.span : [S.win.a, S.win.b]; y = Math.max(a, Math.min(b, base + (dx / w) * (b - a))); }
+    wheelYear = Math.max(S.range[0], Math.min(S.range[1], y));
+    if (!wheelRaf) wheelRaf = setTimeout(() => { wheelRaf = 0; const t = Math.round(wheelYear); if (t !== S.year) go(t); }, 16);
+  }, { passive: false });
   const warT = (ev) => { const r = el.getBoundingClientRect(); return S.war.span[0] + Math.max(0, Math.min(1, (ev.clientX - r.left) / r.width)) * (S.war.span[1] + 1 - S.war.span[0]); };
   el.addEventListener("pointermove", (ev) => { if (drag?.war) { if (S.war) setWp(pOf(S.cineK, warT(ev))); return; } if (drag) { if (Math.abs(ev.clientX - drag.x) > 3) drag.moved = true; scrub(toYear(ev)); } });
   el.addEventListener("pointerup", () => {
@@ -2230,6 +2258,13 @@ function buildStrip() {
   strip.addEventListener("pointerdown", (ev) => { drag = true; strip.setPointerCapture(ev.pointerId); stopPlay(); go(toYear(ev)); });
   strip.addEventListener("pointermove", (ev) => { if (drag) go(toYear(ev)); });
   strip.addEventListener("pointerup", () => (drag = false));
+  let sPos = null, sRaf = 0, sAt = 0;
+  strip.addEventListener("wheel", (ev) => { // trackpad / wheel along the whole timeline
+    ev.preventDefault(); stopPlay();
+    const now = performance.now(); if (sPos == null || now - sAt > 400) sPos = yToPos(S.year); sAt = now; // fractional position within a gesture
+    sPos = Math.max(0, Math.min(1, sPos + wheelPx(ev) / (strip.getBoundingClientRect().width || 1) / 6)); // a sixth of the strip per strip-width of scroll
+    if (!sRaf) sRaf = setTimeout(() => { sRaf = 0; const t = Math.max(S.range[0], Math.min(S.range[1], posToY(sPos))); if (t !== S.year) go(t); }, 16);
+  }, { passive: false });
   strip.addEventListener("keydown", (ev) => {
     if (ev.key === "ArrowLeft" || ev.key === "ArrowRight") { ev.preventDefault(); ev.stopPropagation(); stopPlay(); go(S.year + (ev.key === "ArrowRight" ? 1 : -1) * (ev.shiftKey ? 1 : 10)); }
   });
