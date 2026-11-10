@@ -398,6 +398,8 @@ function parseHash() {
 }
 function writeHash() {
   const h = S.view === "site" && S.site ? `#s/${encodeURIComponent(S.site.id)}` : S.war ? `#w/${encodeURIComponent(S.war.id)}/${story() ? "c" + (S.chap + 1) : S.wIdx}` : S.journey ? `#e/${encodeURIComponent(S.journey.id)}/${S.year}` : S.view === "moment" && S.moment ? `#m/${encodeURIComponent(S.moment.id)}` : `#${S.year}${S.sel ? "/" + encodeURIComponent(S.sel) : ""}`;
+  const home = !S.war && !S.journey && !S.sel && S.year === HOME_YEAR && (S.view === "world" || S.view === "realm"); // the home page has a bare URL
+  if (home) { if (location.hash) history.replaceState(null, "", location.pathname + location.search); return; }
   if (decodeURIComponent(location.hash) !== decodeURIComponent(h)) history.replaceState(null, "", h);
 }
 
