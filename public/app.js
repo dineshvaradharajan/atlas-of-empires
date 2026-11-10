@@ -762,7 +762,8 @@ const GL = (() => {
       const e = prev ? Math.min(1, (performance.now() - fadeT0) / FADE) : 1;
       if (prev && e < 1) drawLayer(prev, fillOf, 1);
       if (cur) drawLayer(cur, fillOf, prev && e < 1 ? e * e * (3 - 2 * e) : 1);
-      if (S.relief !== false) drawRaster("relief", t, { mode: 0, str: theme.dark ? 0.55 : 0.8 }); // hills and mountains
+      const fade = Math.max(0, Math.min(1, (14 - t.k) / 8)); // the shading grid is ~18 km a cell: fade it out when zoomed in close
+      if (S.relief !== false && fade > 0) drawRaster("relief", t, { mode: 0, str: (theme.dark ? 0.55 : 0.8) * fade }); // hills and mountains
       if (e >= 1 && prev) { freeLayer(prev); prev = null; }
       bindPos(statics.sphereLine.b); color(theme.rule); gl.drawArrays(gl.LINES, 0, statics.sphereLine.n);
     },
