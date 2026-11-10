@@ -1044,7 +1044,9 @@ function siteHTML() {
   h += `<aside class="mapnote evnote">${evidenceBadge(st.evidence)}<p>${esc(st.evidenceNote || "")}</p></aside>`;
   if (st.image?.image) h += `<figure class="mfig"><img src="${esc(st.image.image)}" alt="${esc(st.image.caption || st.name)}" loading="lazy"><figcaption>${esc(st.image.caption || "")} <a href="${esc(st.image.page)}" target="_blank" rel="noopener">${esc(st.image.credit || "Wikimedia Commons")} · ${esc(st.image.license || "")}</a></figcaption></figure>`;
   if (st.summary) h += `<p class="prose">${esc(st.summary)}</p>`;
+  const tooOld = st.built != null && (st.until ?? st.built) < S.range[0];
   h += st.built == null ? `<p class="note">A story without a date or remains: it is not drawn on the timeline.</p>`
+    : tooOld ? `<p class="note">In use ${esc(st.dateLabel || "")}: older than the map's starting date (${shortYear(S.range[0])}), so it is not drawn on the timeline.</p>`
     : `<p class="note">In use ${esc(st.dateLabel || "")}${st.standing ? "; remains can still be seen today" : ""}.${inUse ? "" : ` <button class="linkish" data-year="${st.built}">Show it in its time</button>`}</p>`;
   const cult = st.culture && st.built != null && culturesNow(st.built).concat(culturesNow((st.built + (st.until ?? st.built)) / 2)).find((rg) => rg.key === st.culture || rg.name === st.culture);
   if (cult) h += `<p class="note">Culture: <button class="linkish" data-key="${esc(cult.name)}">${esc(cult.name)}</button></p>`;
