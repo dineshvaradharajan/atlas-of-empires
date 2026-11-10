@@ -166,28 +166,29 @@ class War:
                 return o["year"]
         return int(math.floor(t))
 
+    def borders(self):
+        """The corrected borders (tools/borders/borders.py: corrections, crops, cuts, relabels), exactly as the app draws them."""
+        if not hasattr(self, "_borders"):
+            import importlib.util
+            sp = importlib.util.spec_from_file_location("borders", os.path.join(ROOT, "tools", "borders", "borders.py"))
+            bm = importlib.util.module_from_spec(sp)
+            sp.loader.exec_module(bm)
+            self._borders = bm.Borders()
+        return self._borders
+
     def states(self, year):
-        start = max(c for c in self.chunk_starts if c <= year)
-        if start not in self.chunks:
-            self.chunks[start] = json.load(open(os.path.join(ROOT, "public", "data", "clio", f"{start}.json")))["features"]
-        out = []
-        for f in self.chunks[start]:
-            p = f["properties"]
-            if p["f"] <= year <= p["t"] and not p.get("people"):
-                g = f["geometry"]
-                polys = g["coordinates"] if g["type"] == "MultiPolygon" else [g["coordinates"]]
-                out.append((p, polys))
-        return out
+        """(props, polygons) for each state drawn in a year, after corrections (for rendering)."""
+        return [(s.props, s.polys) for s in self.borders().states(year)]
 
     def controller(self, pt, t):
         """Side index holding a point at time t (occupation first, then the state it lies in), or None."""
         sm = self.sides(t)
         base, where = None, None
-        for p, polys in self.states(self.base_year(t)):
-            if any(point_in_ring(pt, poly[0]) and not any(point_in_ring(pt, h) for h in poly[1:]) for poly in polys):
-                base, where = sm.get(p["n"], sm.get(p.get("k"))), p["n"]
+        for s in self.borders().states(self.base_year(t)):
+            if s.contains(pt):
+                base, where = sm.get(s.n, sm.get(s.k, sm.get(s.orig))), s.n  # original name too, as the app does
                 break
-        for o in self.occs:  # occupation counts only on enemy or neutral ground (as the app draws it)
+        for o in self.occs:  # occupation counts on anything but the occupier's own ground (as the app draws it)
             r = o.at(t)
             side = o.side if o.side is not None else 1
             if r and base != side and point_in_ring(pt, r):

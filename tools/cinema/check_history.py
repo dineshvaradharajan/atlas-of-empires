@@ -76,7 +76,8 @@ def check(war_id):
         if got == side or d <= ARROW_FRONT_KM:
             continue
         msg = f"arrow '{a['name']}' ends {a['end']} at {tip}: map shows {side_name(got)} ground ({where}), {d:.0f} km from the nearest front ({fname})"
-        (errs if got is not None else warns).append(msg)
+        # without front lines an arrow may legitimately stop inside enemy ground (a repulsed attack): warn, don't fail
+        (errs if got is not None and W.fronts else warns).append(msg)
 
     # battles and land events near a front (only for wars that draw front lines; dynastic wars and insurgencies may not)
     for b in (C.get("battles", []) if W.fronts else []):

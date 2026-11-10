@@ -1208,7 +1208,8 @@ function syncSides(playing) { // recolour as states enter or leave the war (by d
 function warSideOf(it) {
   if (!S.war || it.kind !== "state") return -1;
   const m = S.warMap || (S.warMap = warSides(S.war, warT()));
-  return m.has(it.p.n) ? m.get(it.p.n) : m.has(it.p.k) ? m.get(it.p.k) : -1;
+  // a relabelled shape (border corrections) still belongs to the side its original name was listed under
+  return m.has(it.p.n) ? m.get(it.p.n) : m.has(it.p.k) ? m.get(it.p.k) : it.p.fixed && m.has(it.p.fixed) ? m.get(it.p.fixed) : -1;
 }
 const fracDate = (s, fallback) => { // "1916-07-01" -> 1916.497 (fractional year)
   const m = String(s ?? "").match(/^(-?\d{1,4})(?:-(\d{2}))?(?:-(\d{2}))?$/);
@@ -1644,7 +1645,7 @@ async function drawThumbs() { // one small map per chapter: borders, occupied la
       const pj = d3.geoEquirectangular().fitExtent([[4, 4], [296, 176]], { type: "MultiPoint", coordinates: [[b[0], b[1]], [b[2], b[3]], [b[0], b[3]], [b[2], b[1]]] });
       const gp = d3.geoPath(pj, m), ring = (pts, close) => { m.beginPath(); pts.forEach((p, i) => { const [x, yy] = pj(p); i ? m.lineTo(x, yy) : m.moveTo(x, yy); }); if (close) m.closePath(); };
       m.fillStyle = theme.bg; m.fillRect(0, 0, 300, 180);
-      for (const f of feats) { const sd = sm.has(f.properties.n) ? sm.get(f.properties.n) : sm.has(f.properties.k) ? sm.get(f.properties.k) : -1; m.fillStyle = sd >= 0 ? sideTint(sd) : theme.unknown; m.beginPath(); gp(f); m.fill(); }
+      for (const f of feats) { const sd = sm.has(f.properties.n) ? sm.get(f.properties.n) : sm.has(f.properties.k) ? sm.get(f.properties.k) : f.properties.fixed && sm.has(f.properties.fixed) ? sm.get(f.properties.fixed) : -1; m.fillStyle = sd >= 0 ? sideTint(sd) : theme.unknown; m.beginPath(); gp(f); m.fill(); }
       for (const o of C.occupations) { const s = trackAt(o, ch.t1, S.cineK.t1); if (!s) continue; ring(s.pts, true); m.globalAlpha = 0.45; m.fillStyle = SIDE_COLORS[(o.side ?? 1) % SIDE_COLORS.length]; m.fill(); m.globalAlpha = 1; }
       m.strokeStyle = theme.ink; m.lineWidth = 2; m.lineJoin = "round";
       for (const f of C.fronts) { const s = trackAt(f, ch.t1, frontHold(f)); if (s) { ring(s.pts); m.stroke(); } }
@@ -1685,7 +1686,7 @@ function updateHud() {
   const w = S.war; if (!w) return;
   const t = S.wt, y = warYear(t), monthly = t >= 0 && w.span[1] - w.span[0] < 40 && w.events.some((e) => /^\d{4}-\d{2}/.test(e.date || ""));
   $("#cMonth").textContent = monthly ? MONTHS[Math.max(0, Math.min(11, Math.floor((t - Math.floor(t)) * 12)))] : "";
-  $("#cYear").textContent = shortYear(y);
+  $("#cYear").textContent = shortYear(Math.floor(t + 1e-9)); // the real year, even when another year's borders are shown
   const shots = S.cine?.shots || [];
   const ch = story() ? S.cine.chapters[S.chap] : null;
   let sh = null; if (!ch) for (const s of shots) if (s.t <= t + 1e-6) sh = s;
