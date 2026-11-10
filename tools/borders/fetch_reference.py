@@ -43,8 +43,16 @@ def year(claims, prop):
 
 def wikidata():
     realms = json.load(open(os.path.join(ROOT, "public", "data", "clio", "index.json")))["realms"]
-    ids = sorted({r["wd"] for r in realms.values() if r.get("wd")})
-    out = {}
+    ids = {r["wd"] for r in realms.values() if r.get("wd")}
+    ovp = os.path.join(ROOT, "content", "borders", "wd-overrides.json")
+    if os.path.exists(ovp):
+        ids |= {v["wd"] for v in json.load(open(ovp))["items"].values()}
+    out_path = os.path.join(ROOT, "content", "borders", "wikidata-dates.json")
+    have = json.load(open(out_path))["items"] if os.path.exists(out_path) else {}
+    if "--missing" in __import__("sys").argv:
+        ids = {q for q in ids if q not in have}
+    ids = sorted(ids)
+    out = dict(have)
     for i in range(0, len(ids), 50):
         batch = ids[i:i + 50]
         d = get("https://www.wikidata.org/w/api.php?" + urllib.parse.urlencode({"action": "wbgetentities", "ids": "|".join(batch), "props": "claims|labels", "languages": "en", "format": "json"}))
@@ -94,4 +102,4 @@ def areas():
 if __name__ == "__main__":
     import sys
     if "--areas" in sys.argv or len(sys.argv) == 1: areas()
-    if "--wikidata" in sys.argv or len(sys.argv) == 1: wikidata()
+    if "--wikidata" in sys.argv or "--missing" in sys.argv or len(sys.argv) == 1: wikidata()

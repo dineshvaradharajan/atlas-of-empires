@@ -1,0 +1,301 @@
+{
+ "reviewer": "coordinator",
+ "findings": [],
+ "corrections": {
+  "Kingdom of Great Britain": {
+   "cut": [
+    {
+     "from": 1968,
+     "to": 2024,
+     "box": [
+      42.5,
+      12.0,
+      53.5,
+      19.0
+     ]
+    },
+    {
+     "from": 1961,
+     "to": 2024,
+     "box": [
+      46.5,
+      28.5,
+      48.5,
+      30.2
+     ]
+    },
+    {
+     "from": 1960,
+     "to": 2024,
+     "box": [
+      32.2,
+      34.5,
+      34.7,
+      35.75
+     ]
+    }
+   ],
+   "note": "The United Kingdom's shape is removed from South Yemen after independence (Nov 1967), Kuwait after 1961 and Cyprus after 1960; the British sovereign base areas on Cyprus (Akrotiri and Dhekelia) are too small to draw here.",
+   "sources": [
+    {
+     "title": "Wikipedia: South Yemen",
+     "url": "https://en.wikipedia.org/wiki/South_Yemen"
+    },
+    {
+     "title": "Wikipedia: Kuwait",
+     "url": "https://en.wikipedia.org/wiki/Kuwait"
+    },
+    {
+     "title": "Wikipedia: Cyprus",
+     "url": "https://en.wikipedia.org/wiki/Cyprus"
+    }
+   ]
+  },
+  "British Africa": {
+   "cut": [
+    {
+     "from": 1885,
+     "to": 1898,
+     "box": [
+      21.8,
+      8.5,
+      38.6,
+      22.0
+     ]
+    },
+    {
+     "from": 1951,
+     "to": 1955,
+     "box": [
+      9.3,
+      19.4,
+      25.2,
+      33.3
+     ]
+    }
+   ],
+   "note": "Sudan is not shown as British while the Mahdist state held it (1885–1898), nor Libya after its independence in December 1951.",
+   "sources": [
+    {
+     "title": "Wikipedia: Siege of Khartoum",
+     "url": "https://en.wikipedia.org/wiki/Siege_of_Khartoum"
+    },
+    {
+     "title": "Wikipedia: Kingdom of Libya",
+     "url": "https://en.wikipedia.org/wiki/Kingdom_of_Libya"
+    }
+   ]
+  },
+  "Estado Novo": {
+   "cut": [
+    {
+     "from": 1962,
+     "to": 1974,
+     "box": [
+      73.6,
+      14.85,
+      74.35,
+      15.85
+     ]
+    },
+    {
+     "from": 1962,
+     "to": 1974,
+     "box": [
+      72.78,
+      20.33,
+      72.98,
+      20.5
+     ]
+    },
+    {
+     "from": 1962,
+     "to": 1974,
+     "box": [
+      70.85,
+      20.65,
+      71.05,
+      20.78
+     ]
+    }
+   ],
+   "note": "Goa, Daman and Diu are not shown as Portuguese after India annexed them in December 1961.",
+   "sources": [
+    {
+     "title": "Wikipedia: Indian annexation of Goa",
+     "url": "https://en.wikipedia.org/wiki/Indian_annexation_of_Goa"
+    }
+   ]
+  },
+  "British Colonial Empire": {
+   "cut": [
+    {
+     "from": 1984,
+     "to": 2024,
+     "box": [
+      114.05,
+      4.0,
+      115.4,
+      5.1
+     ]
+    },
+    {
+     "from": 1942,
+     "to": 1944,
+     "box": [
+      99.5,
+      0.8,
+      104.6,
+      6.8
+     ]
+    },
+    {
+     "from": 1942,
+     "to": 1944,
+     "box": [
+      109.5,
+      0.8,
+      119.5,
+      7.5
+     ]
+    },
+    {
+     "from": 1942,
+     "to": 1944,
+     "box": [
+      92.1,
+      9.5,
+      101.2,
+      28.6
+     ]
+    },
+    {
+     "from": 1942,
+     "to": 1944,
+     "box": [
+      113.8,
+      22.15,
+      114.45,
+      22.6
+     ]
+    }
+   ],
+   "note": "Brunei is not shown as British after independence (1984); Malaya, Singapore, British Borneo, Burma and Hong Kong are not shown as British during the Japanese occupation (1942–1945).",
+   "sources": [
+    {
+     "title": "Bruneian Empire (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Bruneian_Empire"
+    },
+    {
+     "title": "History of Singapore (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/History_of_Singapore"
+    }
+   ]
+  },
+  "Republic of Indonesia": {
+   "cut": [
+    {
+     "from": 2000,
+     "to": 2024,
+     "box": [
+      125.05,
+      -9.55,
+      127.4,
+      -8.1
+     ]
+    }
+   ],
+   "note": "East Timor is not shown as Indonesian after the 1999 referendum; it became independent in 2002 (the small Oecusse exclave is too small to separate here).",
+   "sources": [
+    {
+     "title": "East Timor (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/East_Timor"
+    }
+   ]
+  },
+  "Ottoman Empire": {
+   "cut": [
+    {
+     "from": 1603,
+     "to": 1612,
+     "box": [
+      44.0,
+      36.5,
+      48.5,
+      39.8
+     ]
+    }
+   ],
+   "note": "Shah Abbas retook Tabriz in 1603 and Ottoman-held Azerbaijan by 1607 (confirmed by the 1612 treaty), so Iranian Azerbaijan is not shown as Ottoman then.",
+   "sources": [
+    {
+     "title": "Wikipedia: Ottoman–Safavid war (1603–1612)",
+     "url": "https://en.wikipedia.org/wiki/Ottoman%E2%80%93Safavid_war_(1603%E2%80%931612)"
+    }
+   ]
+  },
+  "Mongol Empire": {
+   "cut": [
+    {
+     "from": 1261,
+     "to": 1299,
+     "box": [
+      34.2,
+      31.0,
+      40.0,
+      37.2
+     ]
+    }
+   ],
+   "note": "After the Mamluk victory at Ain Jalut (1260) Syria is not shown as Mongol; the Mongols briefly took Damascus again only in 1299–1300.",
+   "sources": [
+    {
+     "title": "Wikipedia: Battle of Ain Jalut",
+     "url": "https://en.wikipedia.org/wiki/Battle_of_Ain_Jalut"
+    }
+   ]
+  },
+  "Great Seljuk Empire": {
+   "cut": [
+    {
+     "from": 1098,
+     "to": 1098,
+     "box": [
+      34.2,
+      31.0,
+      35.7,
+      32.6
+     ]
+    }
+   ],
+   "note": "The Fatimids took Jerusalem from its Seljuk-appointed governors in August 1098.",
+   "sources": [
+    {
+     "title": "Wikipedia: Fatimid Caliphate",
+     "url": "https://en.wikipedia.org/wiki/Fatimid_Caliphate"
+    }
+   ]
+  },
+  "Spanish Empire": {
+   "cut": [
+    {
+     "from": 1643,
+     "to": 1700,
+     "box": [
+      119.0,
+      21.5,
+      122.6,
+      25.6
+     ]
+    }
+   ],
+   "note": "Spain's colony in northern Taiwan (1626–1642) ended with the surrender of San Salvador (Keelung) to the Dutch in 1642, so Taiwan is not shown as Spanish afterwards.",
+   "sources": [
+    {
+     "title": "Spanish Formosa (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Spanish_Formosa"
+    }
+   ]
+  }
+ }
+}

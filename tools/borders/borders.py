@@ -58,7 +58,8 @@ class State:
         return False
 
     def names(self):
-        return {self.n, self.k, self.orig}
+        # a relabelled shape answers only to its new name and group, so claims can test that the old name is gone
+        return {self.n, self.k}
 
 
 class Borders:
