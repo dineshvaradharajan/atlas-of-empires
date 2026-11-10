@@ -359,6 +359,16 @@ def main():
     with open(os.path.join(ROOT, "public", "data", "media.json"), "w") as fh:
         json.dump(media, fh, ensure_ascii=False, separators=(",", ":"))
 
+    # End of the ice age (content/iceage/iceage.json): sea-level curve and dated ice-sheet outlines for the map.
+    ice_src = os.path.join(ROOT, "content", "iceage", "iceage.json")
+    if os.path.exists(ice_src):
+        ia = json.load(open(ice_src))
+        out_ia = {"sealevel": [{"year": x["year"], "m": x["m"]} for x in ia.get("sealevel", [])],
+                  "ice": [{"year": x["year"], "name": x.get("name", ""), "coords": x["coords"]} for x in ia.get("ice", []) if x.get("coords")],
+                  "sources": ia.get("sources", [])}
+        with open(os.path.join(ROOT, "public", "data", "iceage.json"), "w") as fh:
+            json.dump(out_ia, fh, ensure_ascii=False, separators=(",", ":"))
+
     out = os.path.join(ROOT, "public", "data", "content.json")
     with open(out, "w") as fh:
         json.dump({"eras": eras, "empires": empires, "moments": moments, "journeys": journeys, "wars": wars}, fh, ensure_ascii=False, separators=(",", ":"))

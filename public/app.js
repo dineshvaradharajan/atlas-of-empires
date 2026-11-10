@@ -185,6 +185,8 @@ async function init() {
   S.clio = clio; S.range = [Math.min(EARLIEST, clio.range[0]), clio.range[1]]; S.baseYears = base.years; S.commons = commons;
   S.sites = await fetchJSON("data/sites.json").catch(() => []);
   fetchJSON("data/physical.json").then(preparePhysical).then(() => draw()).catch(() => {}); // rivers, lakes, sea names: drawn once loaded
+  if (GL) { GL.loadTexture("relief", "data/relief.jpg"); GL.loadTexture("shelf", "data/shelf.png"); } // terrain shading; seabed for ice-age coasts
+  fetchJSON("data/iceage.json").then((d) => { S.iceage = prepareIceage(d); draw(); }).catch(() => {});
   if (corr) { S.corr = { realms: corr.realms || {}, base: corr.base || {} }; correctTimelines(); }
   S.supps = prepareSupplements(supps);
   if (content) {
@@ -671,8 +673,71 @@ const GL = (() => {
     bindPos(layer.lb); color(theme.borderLine || theme.border, alpha);
     for (const r of layer.ranges) if (r.ln && r.it.kind === "state" && !r.it.p.recon && !r.it.p.crop && !r.it.p.cut) gl.drawArrays(gl.LINES, r.l0, r.ln);
   }
+  // ---- world images draped on the map (data/relief.jpg terrain shading, data/shelf.png shallow seabed)
+  // A lon/lat grid of vertices, projected on the CPU like every other shape, with texture coordinates in lon/lat.
+  const rprog = gl.createProgram();
+  let rasterOK = true;
+  try {
+    gl.attachShader(rprog, sh(gl.VERTEX_SHADER, `attribute vec2 p; attribute vec2 uv; uniform vec2 u_t; uniform float u_k; uniform vec2 u_size; varying vec2 v_uv;
+      void main(){ v_uv = uv; vec2 s = p * u_k + u_t; gl_Position = vec4(s.x / u_size.x * 2.0 - 1.0, 1.0 - s.y / u_size.y * 2.0, 0.0, 1.0); }`));
+    gl.attachShader(rprog, sh(gl.FRAGMENT_SHADER, `precision mediump float; varying vec2 v_uv; uniform sampler2D u_tex; uniform float u_mode; uniform float u_drop; uniform vec4 u_land; uniform float u_str;
+      void main(){ float v = texture2D(u_tex, v_uv).r;
+        if (u_mode < 0.5) { gl_FragColor = vec4(vec3(mix(1.0, v, u_str)), 1.0); }                         // relief: multiplied over the map
+        else { float d = v * 255.0; if (d < 0.5 || d > u_drop) discard; gl_FragColor = u_land; } }`));    // seabed above the old sea level: dry land
+    gl.linkProgram(rprog);
+    if (!gl.getProgramParameter(rprog, gl.LINK_STATUS)) throw new Error(gl.getProgramInfoLog(rprog));
+  } catch (e) { console.warn("map images unavailable:", e); rasterOK = false; }
+  const RL = (n) => gl.getUniformLocation(rprog, n);
+  const RU = rasterOK ? { t: RL("u_t"), k: RL("u_k"), size: RL("u_size"), tex: RL("u_tex"), mode: RL("u_mode"), drop: RL("u_drop"), land: RL("u_land"), str: RL("u_str") } : null;
+  const rP = rasterOK ? gl.getAttribLocation(rprog, "p") : -1, rUV = rasterOK ? gl.getAttribLocation(rprog, "uv") : -1;
+  const textures = {};
+  let mesh = null;
+  function loadTexture(name, url) {
+    if (!rasterOK || textures[name]) return;
+    textures[name] = { ready: false };
+    const img = new Image();
+    img.onload = () => {
+      const tx = gl.createTexture(); gl.bindTexture(gl.TEXTURE_2D, tx);
+      gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL, false);
+      gl.texImage2D(gl.TEXTURE_2D, 0, gl.LUMINANCE, gl.LUMINANCE, gl.UNSIGNED_BYTE, img);
+      for (const [k, v] of [[gl.TEXTURE_MIN_FILTER, gl.LINEAR], [gl.TEXTURE_MAG_FILTER, gl.LINEAR], [gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE], [gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE]]) gl.texParameteri(gl.TEXTURE_2D, k, v);
+      textures[name] = { ready: true, tx };
+      draw();
+    };
+    img.src = url;
+  }
+  function makeMesh() { // 1° steps; rows of triangles between consecutive latitudes
+    const pos = [], uv = [], step = 1;
+    const P = (lon, lat) => { const q = projection([lon, lat]); return q || [0, 0]; };
+    for (let lat = 90; lat > -90; lat -= step) for (let lon = -180; lon < 180; lon += step) {
+      const a = [lon, lat], b = [lon + step, lat], c = [lon + step, lat - step], d = [lon, lat - step];
+      for (const v of [a, b, c, a, c, d]) { pos.push(...P(v[0], v[1])); uv.push((v[0] + 180) / 360, (90 - v[1]) / 180); }
+    }
+    const mk = (arr) => { const bf = gl.createBuffer(); gl.bindBuffer(gl.ARRAY_BUFFER, bf); gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(arr), gl.STATIC_DRAW); return bf; };
+    return { pos: mk(pos), uv: mk(uv), n: pos.length / 2 };
+  }
+  function drawRaster(name, t, opts) {
+    const tx = textures[name];
+    if (!tx?.ready) return;
+    if (!mesh) mesh = makeMesh();
+    gl.disableVertexAttribArray(aP);
+    gl.useProgram(rprog);
+    gl.uniform2f(RU.t, t.x, t.y); gl.uniform1f(RU.k, t.k); gl.uniform2f(RU.size, S.width, S.height);
+    gl.activeTexture(gl.TEXTURE0); gl.bindTexture(gl.TEXTURE_2D, tx.tx); gl.uniform1i(RU.tex, 0);
+    gl.uniform1f(RU.mode, opts.mode); gl.uniform1f(RU.drop, opts.drop || 0); gl.uniform1f(RU.str, opts.str ?? 1);
+    const c = rgba(opts.land || "#000"); gl.uniform4f(RU.land, c[0], c[1], c[2], 1);
+    gl.bindBuffer(gl.ARRAY_BUFFER, mesh.pos); gl.enableVertexAttribArray(rP); gl.vertexAttribPointer(rP, 2, gl.FLOAT, false, 0, 0);
+    gl.bindBuffer(gl.ARRAY_BUFFER, mesh.uv); gl.enableVertexAttribArray(rUV); gl.vertexAttribPointer(rUV, 2, gl.FLOAT, false, 0, 0);
+    if (opts.mode < 0.5) gl.blendFunc(gl.DST_COLOR, gl.ZERO); // multiply
+    gl.drawArrays(gl.TRIANGLES, 0, mesh.n);
+    gl.blendFunc(gl.SRC_ALPHA, gl.ONE_MINUS_SRC_ALPHA);
+    gl.disableVertexAttribArray(rP); gl.disableVertexAttribArray(rUV);
+    gl.useProgram(prog);
+    gl.uniform2f(U.t, t.x, t.y); gl.uniform1f(U.k, t.k); gl.uniform2f(U.size, S.width, S.height); gl.uniform1f(U.dpr, S.dpr);
+  }
   return {
-    resize(w, h, dpr) { cv.width = Math.round(w * dpr); cv.height = Math.round(h * dpr); geo = new WeakMap(); freeLayer(cur); freeLayer(prev); freeLayer(landLayer); cur = prev = landLayer = null; statics = null; },
+    loadTexture,
+    resize(w, h, dpr) { cv.width = Math.round(w * dpr); cv.height = Math.round(h * dpr); geo = new WeakMap(); freeLayer(cur); freeLayer(prev); freeLayer(landLayer); cur = prev = landLayer = null; statics = null; mesh = null; },
     setItems,
     warm(features) { // triangulate shapes ahead of time, a few milliseconds at a time while the browser is idle
       const todo = features.filter((f) => f && !geo.has(f));
@@ -691,9 +756,12 @@ const GL = (() => {
       gl.enable(gl.BLEND); gl.blendFunc(gl.SRC_ALPHA, gl.ONE_MINUS_SRC_ALPHA);
       gl.uniform2f(U.t, t.x, t.y); gl.uniform1f(U.k, t.k); gl.uniform2f(U.size, S.width, S.height); gl.uniform1f(U.dpr, S.dpr);
       bindPos(statics.grat.b); color(theme.grat); gl.drawArrays(gl.LINES, 0, statics.grat.n);
+      const drop = seaDrop(S.year);
+      if (drop > 0.5) drawRaster("shelf", t, { mode: 1, drop, land: theme.unknown }); // land the lower sea left dry
       const e = prev ? Math.min(1, (performance.now() - fadeT0) / FADE) : 1;
       if (prev && e < 1) drawLayer(prev, fillOf, 1);
       if (cur) drawLayer(cur, fillOf, prev && e < 1 ? e * e * (3 - 2 * e) : 1);
+      if (S.relief !== false) drawRaster("relief", t, { mode: 0, str: theme.dark ? 0.55 : 0.8 }); // hills and mountains
       if (e >= 1 && prev) { freeLayer(prev); prev = null; }
       bindPos(statics.sphereLine.b); color(theme.rule); gl.drawArrays(gl.LINES, 0, statics.sphereLine.n);
     },
@@ -855,6 +923,7 @@ function draw() {
     ctx.strokeStyle = theme.border;
   }
   drawWater();
+  drawIce();
   drawOccupations();
 
   if (S.showGhost && S.ghost && sel === S.ghost.key && S.ghost.year !== S.year) {
@@ -879,6 +948,42 @@ function draw() {
   drawSites();
   drawListPins();
   drawMomentPin();
+}
+
+// ---------------------------------------------------------------- the end of the ice age (data/iceage.json)
+// Sea level relative to today (a published curve, content/iceage) decides which shallow seabed was dry land; ice-sheet
+// outlines are dated slices drawn on the land they covered.
+function prepareIceage(d) {
+  const sl = (d.sealevel || []).slice().sort((a, b) => a.year - b.year);
+  const ice = (d.ice || []).map((x) => ({ ...x, f: { type: "Feature", geometry: { type: "Polygon", coordinates: x.coords }, properties: {} } }));
+  const years = [...new Set(ice.map((x) => x.year))].sort((a, b) => a - b);
+  return { sl, ice, years };
+}
+function seaDrop(y) { // metres below today's level, interpolated; 0 once the curve reaches today's level
+  const sl = S.iceage?.sl;
+  if (!sl?.length || y > sl[sl.length - 1].year) return 0;
+  if (y <= sl[0].year) return Math.max(0, -sl[0].m);
+  for (let i = 1; i < sl.length; i++) if (y <= sl[i].year) {
+    const a = sl[i - 1], b = sl[i], f = (y - a.year) / (b.year - a.year);
+    return Math.max(0, -(a.m + f * (b.m - a.m)));
+  }
+  return 0;
+}
+function iceNow(y) { // the dated slice nearest to this year (none once the ice sheets are gone)
+  const ys = S.iceage?.years;
+  if (!ys?.length || y > ys[ys.length - 1] + 500) return [];
+  let best = ys[0];
+  for (const v of ys) if (Math.abs(v - y) < Math.abs(best - y)) best = v;
+  return S.iceage.ice.filter((x) => x.year === best);
+}
+function drawIce() { // inside the map transform
+  const list = iceNow(S.year);
+  if (!list.length) return;
+  ctx.save();
+  ctx.fillStyle = theme.dark ? "rgba(220,232,240,.22)" : "rgba(246,250,253,.92)";
+  ctx.strokeStyle = theme.water; ctx.lineWidth = 1 / S.t.k; ctx.setLineDash([4 / S.t.k, 3 / S.t.k]);
+  for (const x of list) { const p = pathOf(x.f); ctx.fill(p); ctx.stroke(p); }
+  ctx.restore();
 }
 
 // ---------------------------------------------------------------- rivers, lakes and seas (Natural Earth, data/physical.json)
@@ -973,6 +1078,7 @@ function drawGL() {
   ctx.translate(t.x, t.y); ctx.scale(t.k, t.k);
   ctx.lineJoin = "round";
   drawWater();
+  drawIce();
   for (const it of S.items) { // borders the GPU skips: reconstructions (dashed, coast-clipped) and crops
     if (it.kind !== "state" || !(it.p.recon || it.p.crop || it.p.cut)) continue;
     ctx.save(); clipFor(ctx, it);
@@ -1218,6 +1324,8 @@ function culturesNow(y = S.year) { // archaeological-culture regions active this
 function prehistoryHTML(y) {
   let h = `<div class="kicker">The world in</div><p class="year">${bigYear(y)}</p><h1 class="head">Before the first states</h1>`;
   h += `<aside class="mapnote norecords"><b>No written records</b><p>Writing begins around ${shortYear(WRITING)} in Mesopotamia and Egypt. Everything the map shows for this time is known from archaeology: excavated sites, radiocarbon dates and the spread of tools, pottery and farming. Areas are approximate, and blank land means no culture has been mapped there, not that no one lived there.</p></aside>`;
+  const drop = seaDrop(y), ice = iceNow(y);
+  if (drop >= 1 || ice.length) h += `<aside class="mapnote iceage"><b>The end of the ice age</b><p>${drop >= 1 ? `The sea stood about <strong>${Math.round(drop)} m lower</strong> than today, so shallow seabed was dry land (drawn grey beyond today's coasts). ` : ""}${ice.length ? `Ice sheets (white, dashed edge) still covered ${esc(ice.map((x) => x.name).filter((n, i, a) => n && a.indexOf(n) === i).join(", "))}.` : ""} Reconstructions are approximate; see Sources.</p></aside>`;
   const cs = culturesNow(y);
   if (cs.length) {
     h += `<h3 class="sec">Cultures · ${plainYear(y)}</h3><ul class="mlist">`;
