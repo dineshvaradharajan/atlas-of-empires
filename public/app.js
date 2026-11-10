@@ -1448,22 +1448,54 @@ function occPattern(c) {
 function drawOccupations() { // inside the map transform: occupied land takes the occupier's tint (fine stripes mark it as occupied)
   const C = S.cine; if (!S.war || !C || !C.occupations.length) return;
   const t = S.wt, k = S.t.k, M = ctx.getTransform();
-  // Occupied ground is anyone's land but the occupier's own (enemy, neutral or unrecorded): draw each side's areas
-  // on an offscreen layer, erase that side's own states from it, then lay it on the map clipped to land.
-  const L = S.occLayer || (S.occLayer = document.createElement("canvas"));
-  if (L.width !== canvas.width || L.height !== canvas.height) { L.width = canvas.width; L.height = canvas.height; }
-  const lc = L.getContext("2d");
-  const ring = (pts) => { const q = new Path2D(); pts.forEach((p, i) => { const [x, y] = projection(p); i ? q.lineTo(x, y) : q.moveTo(x, y); }); q.closePath(); return q; };
+  // Occupied ground is anyone's land but the occupier's own (enemy, neutral or unrecorded): draw each side's areas on
+  // an offscreen layer, erase that side's own states from it, gather the sides on one layer, keep only land, and lay it
+  // on the map. While the map moves (playback, pan, zoom) the layers are half resolution; at rest they are full.
+  const sc = S.cinePlay || S.zooming ? 0.5 : 1;
+  const W = Math.ceil(canvas.width * sc), H = Math.ceil(canvas.height * sc);
+  const L = S.occLayer || (S.occLayer = document.createElement("canvas")), A = S.occAll || (S.occAll = document.createElement("canvas"));
+  for (const c of [L, A]) if (c.width !== W || c.height !== H) { c.width = W; c.height = H; }
+  const lc = L.getContext("2d"), ac = A.getContext("2d");
+  const Ms = new DOMMatrix([M.a * sc, M.b * sc, M.c * sc, M.d * sc, M.e * sc, M.f * sc]);
+  const inv = M.inverse(), c0 = inv.transformPoint(new DOMPoint(0, 0)), c1 = inv.transformPoint(new DOMPoint(canvas.width, canvas.height));
+  const vx0 = Math.min(c0.x, c1.x), vx1 = Math.max(c0.x, c1.x), vy0 = Math.min(c0.y, c1.y), vy1 = Math.max(c0.y, c1.y); // the view, in projected units
+  const ring = (pts) => { // projected path and its bounding box
+    const q = new Path2D(); let x0 = Infinity, y0 = Infinity, x1 = -Infinity, y1 = -Infinity;
+    pts.forEach((p, i) => { const [x, y] = projection(p); i ? q.lineTo(x, y) : q.moveTo(x, y); if (x < x0) x0 = x; if (x > x1) x1 = x; if (y < y0) y0 = y; if (y > y1) y1 = y; });
+    q.closePath(); q.off = x1 < vx0 || x0 > vx1 || y1 < vy0 || y0 > vy1; return q;
+  };
+  const chx = story() ? S.cine.chapters[S.chap] : null;
   const sides = [...new Set(C.occupations.map((o) => o.side ?? 1))];
+  // Masks that depend only on the view and the borders (not on war time) are cached, so playback with a still camera
+  // only repaints the areas: land (where occupation may show) and, per side, that side's own states (erased).
+  // A mask is drawn once for a reference view (with a margin while the map moves) and reused, shifted and scaled, until
+  // the view leaves the margin, the zoom changes by more than a third, or the borders change.
+  const P = sc < 1 ? Math.round(Math.max(W, H) / 2) : 0, vk = `${W}x${H}`;
+  const blit = (x, key, paint) => {
+    const cache = S.occMasks || (S.occMasks = new Map());
+    let m = cache.get(key + vk);
+    const R = m && Ms.multiply(m.ref.inverse()), ri = R && R.inverse();
+    const ok = m && m.items === S.items && R.a > 0.75 && R.a < 1.33 && [[0, 0], [W, H]].every(([px, py]) => {
+      const q = ri.transformPoint(new DOMPoint(px, py)); return q.x >= -m.P - 1 && q.y >= -m.P - 1 && q.x <= W + m.P + 1 && q.y <= H + m.P + 1;
+    });
+    if (!ok) {
+      if (cache.size > 5) cache.clear();
+      const cv = m?.cv || document.createElement("canvas"); cv.width = W + 2 * P; cv.height = H + 2 * P;
+      const c = cv.getContext("2d"); c.setTransform(new DOMMatrix().translate(P, P).multiply(Ms)); c.fillStyle = "#000"; paint(c);
+      m = { items: S.items, cv, ref: Ms, P }; cache.set(key + vk, m);
+    }
+    x.setTransform(ok ? R : new DOMMatrix()); x.drawImage(m.cv, -m.P, -m.P); x.setTransform(1, 0, 0, 1, 0, 0);
+  };
+  let drew = false;
+  ac.setTransform(1, 0, 0, 1, 0, 0); ac.clearRect(0, 0, W, H);
   for (const side of sides) {
-    lc.setTransform(1, 0, 0, 1, 0, 0); lc.clearRect(0, 0, L.width, L.height); lc.setTransform(M);
     let any = false;
     for (const o of C.occupations) {
       if ((o.side ?? 1) !== side) continue;
       const s = trackAt(o, t, S.cineK.t1); if (!s) continue;
-      any = true;
-      const path = ring(s.pts);
-      const chx = story() ? S.cine.chapters[S.chap] : null, ch = chx && s.pts.some((q) => inBox(q, chx.bbox)) ? chx : null, s0 = ch ? trackAt(o, ch.t0, S.cineK.t1) : null;
+      const path = ring(s.pts); if (path.off) continue; // nothing of it on screen
+      if (!any) { lc.setTransform(1, 0, 0, 1, 0, 0); lc.clearRect(0, 0, W, H); lc.setTransform(Ms); any = true; }
+      const ch = chx && s.pts.some((q) => inBox(q, chx.bbox)) ? chx : null, s0 = ch ? trackAt(o, ch.t0, S.cineK.t1) : null;
       if (ch) { // new ground in the occupier's full colour, ground already held at the chapter's start in its tint
         lc.globalAlpha = 0.62 * s.a; lc.fillStyle = SIDE_COLORS[side % SIDE_COLORS.length]; lc.fill(path);
         if (s0) { lc.save(); lc.clip(path); lc.globalAlpha = s.a; lc.fillStyle = sideTint(side); lc.fill(ring(s0.pts)); lc.restore(); }
@@ -1472,11 +1504,17 @@ function drawOccupations() { // inside the map transform: occupied land takes th
       lc.globalAlpha = 0.35 * s.a; lc.fillStyle = pat; lc.fill(path);
     }
     if (!any) continue;
-    lc.globalAlpha = 1; lc.globalCompositeOperation = "destination-out"; lc.fillStyle = "#000";
-    for (const it of S.items) if (it.kind === "state" && warSideOf(it) === side) lc.fill(pathOf(it.f));
+    const own = S.items.filter((it) => it.kind === "state" && warSideOf(it) === side);
+    const ownKey = own.map((it) => S.items.indexOf(it)).join(".");
+    lc.globalAlpha = 1; lc.globalCompositeOperation = "destination-out";
+    blit(lc, `own${side}|${ownKey}|`, (x) => { for (const it of own) x.fill(pathOf(it.f)); });
     lc.globalCompositeOperation = "source-over";
-    ctx.save(); ctx.clip(S.landClip); ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.drawImage(L, 0, 0); ctx.restore();
+    ac.drawImage(L, 0, 0); drew = true;
   }
+  if (!drew) return;
+  ac.globalCompositeOperation = "destination-in"; blit(ac, "land|", (x) => x.fill(S.landClip)); // land only
+  ac.globalCompositeOperation = "source-over";
+  ctx.save(); ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.drawImage(A, 0, 0, canvas.width, canvas.height); ctx.restore();
   ctx.globalAlpha = 1;
 }
 const scr = (ll) => { const [x, y] = projection(ll); return [S.t.applyX(x), S.t.applyY(y)]; };
