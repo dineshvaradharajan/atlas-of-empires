@@ -1,0 +1,879 @@
+[
+ {
+  "id": "mongol-conquests",
+  "name": "Mongol conquests (1206–1260)",
+  "moment": "genghis-khan",
+  "span": [
+   1206,
+   1260
+  ],
+  "dateLabel": "1206 – 3 September 1260",
+  "summary": "In 1206 an assembly on the Onon river proclaimed Temüjin Genghis Khan, ruler of the united Mongol and Turkic tribes of the steppe. His cavalry armies, disciplined in decimal units and quick to adopt Chinese and Muslim siege engineers, forced the Tangut kingdom of Western Xia to submit in 1210 and then attacked the Jurchen Jin dynasty, taking its capital Zhongdu (Beijing) in 1215. When the governor of Otrar killed a Mongol caravan, Genghis destroyed the Khwarazmian Empire of Central Asia and Iran in 1219–1221, while his generals Jebe and Subutai rode round the Caspian and beat the Rus' and Cumans on the Kalka. After his death in 1227 his sons finished off the Jin (1234), Batu and Subutai conquered the Rus' principalities (1237–1240) and routed Polish and Hungarian armies in 1241, and Hulagu destroyed the Assassins and sacked Baghdad (1258). The advance was halted in 1260, when the Mamluks of Egypt defeated a reduced Mongol army at Ain Jalut. By then the empire stretched from Korea to Hungary, but it was splitting into four khanates.",
+  "casualties": "No reliable count exists; a total of 40–60 million deaths from war, massacre, famine and flight is often cited (from McEvedy and Jones, 1978) but is disputed, and chroniclers' figures of over a million dead at single cities such as Merv and Nishapur are greatly exaggerated.",
+  "sides": [
+   {
+    "name": "Mongol Empire",
+    "members": [
+     {
+      "clio": "Mongol Empire",
+      "from": 1206,
+      "to": 1260
+     }
+    ]
+   },
+   {
+    "name": "States the Mongols attacked (not allied with one another)",
+    "members": [
+     {
+      "clio": "Western Xia",
+      "from": 1209,
+      "to": 1210,
+      "toDate": "1210-02-01"
+     },
+     {
+      "clio": "Great Jin",
+      "from": 1211,
+      "to": 1234,
+      "toDate": "1234-02-09"
+     },
+     {
+      "clio": "Kara-Khitans",
+      "from": 1218,
+      "to": 1218
+     },
+     {
+      "clio": "Khwarezmid Empire",
+      "from": 1219,
+      "to": 1231,
+      "toDate": "1231-08-15"
+     },
+     {
+      "clio": "Kingdom of Georgia",
+      "from": 1220,
+      "to": 1222
+     },
+     {
+      "clio": "Kievan Rus'",
+      "from": 1223,
+      "to": 1223
+     },
+     {
+      "clio": "Western Xia",
+      "from": 1225,
+      "to": 1226,
+      "toDate": "1227-09-15"
+     },
+     {
+      "clio": "Principality of Ryazan",
+      "from": 1237,
+      "to": 1238
+     },
+     {
+      "clio": "Principality of Rostov-Suzdal",
+      "from": 1238,
+      "to": 1238
+     },
+     {
+      "clio": "Principality of Chernigov",
+      "from": 1238,
+      "to": 1239
+     },
+     {
+      "clio": "Principality of Pereyaslavl",
+      "from": 1239,
+      "to": 1239
+     },
+     {
+      "clio": "Principality of Kiev",
+      "from": 1240,
+      "to": 1240
+     },
+     {
+      "clio": "Principality of Galicia-Volhynia",
+      "from": 1240,
+      "to": 1240
+     },
+     {
+      "clio": "(Duchies of Poland)",
+      "from": 1241,
+      "to": 1241
+     },
+     {
+      "clio": "Kingdom of Hungary",
+      "from": 1241,
+      "to": 1242
+     },
+     {
+      "clio": "Abbasid Caliphate",
+      "from": 1257,
+      "to": 1258,
+      "toDate": "1258-02-10"
+     }
+    ]
+   },
+   {
+    "name": "Mamluk Sultanate",
+    "members": [
+     {
+      "clio": "Mamluk Sultanate",
+      "from": 1260,
+      "to": 1260
+     }
+    ]
+   }
+  ],
+  "events": [
+   {
+    "date": "1206",
+    "year": 1206,
+    "label": "1206",
+    "text": "Temüjin is proclaimed Genghis Khan at a great assembly on the Onon",
+    "detail": "After two decades of wars against rival clans and confederations, the Tatars, Keraites, Merkits and Naimans, Temüjin had united the peoples of the Mongolian plateau. At a kurultai, an assembly of the steppe nobility, held near the source of the Onon river in 1206, he took the title Genghis Khan. He reorganised the tribes into a single army of decimal units of tens, hundreds, thousands and ten-thousands led by loyal companions, and set up a personal guard, laws and a script, the base for all later conquests.",
+    "lonlat": [
+     108.9,
+     48.8
+    ],
+    "kind": "political"
+   },
+   {
+    "date": "1210-01",
+    "year": 1210,
+    "label": "1209 – Jan 1210",
+    "text": "Western Xia submits after a long siege of its capital",
+    "detail": "Genghis's first major invasion of a settled state was aimed at the Tangut kingdom of Western Xia, which guarded the road from the steppe into China. In 1209 his army broke through the passes and besieged the capital Zhongxing (Yinchuan) for months, even trying to flood it by diverting the Yellow River's canals. In January 1210 Emperor Xiangzong submitted, gave a daughter in marriage and promised tribute and troops. Western Xia became a Mongol vassal, securing Genghis's flank for war on the Jin.",
+    "lonlat": [
+     106.27,
+     38.47
+    ],
+    "kind": "invasion"
+   },
+   {
+    "date": "1211-08",
+    "year": 1211,
+    "label": "Aug–Oct 1211",
+    "text": "Genghis Khan invades the Jin and wins at Yehuling (Badger's Mouth)",
+    "detail": "In 1211 Genghis refused tribute to the Jurchen Jin dynasty, which ruled northern China, and invaded with about 65,000 men and allies. In the mountain passes of Yehuling, north-west of the Jin capital Zhongdu, his army routed a much larger Jin field army in the autumn of 1211. The Mongols then ravaged the plains of northern China and its horse pastures, though without siege skills they could not yet take the great walled cities. The war with the Jin would last 23 years.",
+    "lonlat": [
+     114.6,
+     40.9
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "1215-06",
+    "year": 1215,
+    "label": "Jun 1215",
+    "text": "The Jin capital Zhongdu (Beijing) surrenders and is sacked",
+    "detail": "In 1214 Genghis besieged Zhongdu and accepted a rich tribute and a Jin princess to withdraw, but Emperor Xuanzong then moved his court south to Kaifeng, which Genghis treated as a breach of the peace. His armies returned and blockaded the capital; famine and disease raged inside, and the commanders fled or killed themselves. In June 1215 the defenders opened the gates. The city was plundered and burned and many of its people killed. The Jin were left holding only the south of their empire around Kaifeng.",
+    "lonlat": [
+     116.35,
+     39.88
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "1218",
+    "year": 1218,
+    "label": "1216–1218",
+    "text": "Jebe overruns Qara Khitai and hunts down Kuchlug",
+    "detail": "Kuchlug, a Naiman prince defeated by the Mongols in 1208, had fled west and seized the throne of Qara Khitai, the Khitan-ruled empire in Central Asia, where he persecuted Muslims. Genghis sent his general Jebe after him. Jebe won over the towns of the Tarim basin by proclaiming freedom of worship, and in 1218 Kuchlug was caught in the mountains of Badakhshan and beheaded. The Mongol Empire now bordered the Khwarazmian Empire along the Syr Darya.",
+    "lonlat": [
+     75.99,
+     39.47
+    ],
+    "kind": "invasion"
+   },
+   {
+    "date": "1220-02",
+    "year": 1220,
+    "label": "Dec 1219 – Mar 1220",
+    "text": "Otrar, Bukhara and Samarkand fall to the Mongols",
+    "detail": "In 1218 Inalchuq, governor of the Khwarazmian border town of Otrar, executed the merchants of a Mongol caravan as spies, and Shah Muhammad II killed one of Genghis's envoys. Genghis invaded in 1219. While his sons besieged Otrar, he crossed the Kyzylkum desert and appeared before Bukhara, which surrendered on 10 February 1220; its citadel was stormed and the city burned. Otrar's inner citadel fell in February, and Samarkand's garrison surrendered on 16 March. The shah, who had spread his army among the cities, fled west.",
+    "lonlat": [
+     64.42,
+     39.77
+    ],
+    "kind": "invasion"
+   },
+   {
+    "date": "1220-12",
+    "year": 1220,
+    "label": "Dec 1220",
+    "text": "Shah Muhammad II dies, a fugitive on a Caspian island",
+    "detail": "Genghis sent Jebe and Subutai with about 20,000 horsemen to hunt the shah. Muhammad fled across Khorasan and northern Iran, while the pursuers took or plundered towns such as Tus, Qazvin and Ardabil. He found refuge on an island in the Caspian Sea, where he died, probably of pleurisy, in December 1220. His son Jalal al-Din took up the fight. Jebe and Subutai, instead of returning, rode on into the Caucasus, where they routed a Georgian army at Khunan.",
+    "lonlat": [
+     53.9,
+     36.9
+    ],
+    "kind": "other"
+   },
+   {
+    "date": "1221-04",
+    "year": 1221,
+    "label": "Apr 1221",
+    "text": "Gurganj is destroyed; Tolui sacks Merv and Nishapur",
+    "detail": "In the spring of 1221 the Mongols destroyed the great cities of the Khwarazmian heartland and Khorasan. Genghis's sons Jochi, Chagatai and Ögedei ended a long siege of Gurganj (Urgench), the old capital, and flooded its ruins. His youngest son Tolui took Merv after a few days in April and killed most of its people, then took Nishapur, where his brother-in-law had been killed, and destroyed it. Chroniclers' death tolls of over a million per city are impossible, but the slaughter was immense.",
+    "lonlat": [
+     62.19,
+     37.66
+    ],
+    "kind": "atrocity"
+   },
+   {
+    "date": "1221-09",
+    "year": 1221,
+    "label": "Sep 1221",
+    "text": "Jalal al-Din defeats a Mongol army at Parwan",
+    "detail": "Shah Muhammad's son Jalal al-Din gathered a new army around Ghazni in what is now Afghanistan. Near Parwan, north of Kabul, he defeated a Mongol army of about 30,000 under Shigi Qutuqu, one of the few Mongol defeats of the war. His victory raised revolts across Khorasan, but his Turkic and Afghan allies quarrelled over the spoils and many left him. Genghis himself marched south to destroy him.",
+    "lonlat": [
+     69.2,
+     35.1
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "1221-11-24",
+    "year": 1221,
+    "label": "24 Nov 1221",
+    "text": "Genghis Khan crushes Jalal al-Din at the Indus",
+    "detail": "Genghis caught Jalal al-Din's army with its back to the Indus river. On 24 November 1221 the Mongols broke the Khwarazmian wings and surrounded the centre; most of the army was killed. Seeing the battle lost, Jalal al-Din rode his horse off a cliff into the river in full armour and reached the far bank. The Khwarazmian Empire was finished, and Khwarazm and Khorasan were annexed, though Jalal al-Din fought on in India and western Iran until 1231.",
+    "lonlat": [
+     72.18,
+     33.77
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "1223-05-31",
+    "year": 1223,
+    "label": "31 May 1223",
+    "text": "Jebe and Subutai rout the Rus' princes and Cumans on the Kalka",
+    "detail": "After crossing the Caucasus, Jebe and Subutai defeated the Alans and the Cumans (Kipchaks) of the steppe, who asked the Rus' princes for help. A coalition led by Mstislav of Kiev, Mstislav of Galich and the princes of Chernigov and Smolensk advanced against the Mongols, who retreated for days and then turned on them by the Kalka river on 31 May 1223. The disunited Rus' and Cuman armies were destroyed, and Mstislav of Kiev was killed after surrendering. The Mongols then rode back east.",
+    "lonlat": [
+     37.6,
+     47.3
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "1226",
+    "year": 1226,
+    "label": "1226",
+    "text": "Genghis Khan invades Western Xia a second time",
+    "detail": "Western Xia had refused to send troops for the war against Khwarazm and then allied with the Jin. In 1226 Genghis led a punitive invasion, his last campaign. His armies took the cities of the Hexi corridor, including Ganzhou and Wuwei, destroying towns and countryside, and in the winter of 1226 defeated the Tangut field army near the Yellow River. Early in 1227 they laid siege to the capital Zhongxing (Yinchuan), while other columns attacked Jin territory to the south.",
+    "lonlat": [
+     102.64,
+     37.93
+    ],
+    "kind": "invasion"
+   },
+   {
+    "date": "1227-08",
+    "year": 1227,
+    "label": "Aug 1227",
+    "text": "Genghis Khan dies during the siege of the Tangut capital",
+    "detail": "In August 1227, on either 18 or 25 August, Genghis Khan died during the campaign in the Liupan mountains; the cause is uncertain, with accounts ranging from illness to injuries from a fall from his horse. His death was kept secret so as not to endanger the siege. He left his empire to his sons, with his third son Ögedei chosen as successor; after a regency by his youngest son Tolui, Ögedei was elected Great Khan in 1229.",
+    "lonlat": [
+     106.3,
+     35.6
+    ],
+    "kind": "political"
+   },
+   {
+    "date": "1227-09",
+    "year": 1227,
+    "label": "Sep 1227",
+    "text": "Western Xia surrenders and is destroyed",
+    "detail": "Unaware of Genghis's death, the last Tangut ruler, Li Xian (Emperor Mo), surrendered his besieged capital Zhongxing in September 1227. In keeping with Genghis's orders he was executed, and much of the population was massacred. The Western Xia state, which had ruled north-west China for nearly two centuries, disappeared, and its lands were absorbed into the Mongol Empire. The Tangut people and their writing survived, but their kingdom was never restored.",
+    "lonlat": [
+     106.27,
+     38.47
+    ],
+    "kind": "atrocity"
+   },
+   {
+    "date": "1232-02-09",
+    "year": 1232,
+    "label": "9 Feb 1232",
+    "text": "Tolui destroys the last Jin field army at Sanfengshan",
+    "detail": "Ögedei renewed the war on the Jin in 1230. While he attacked across the Yellow River, Tolui led a wide flanking march through Song territory and into Henan. The main Jin army of about 150,000 pursued him through snow and freezing rain, and at Sanfeng mountain, south-west of Yuzhou, on 9 February 1232 the exhausted Jin troops were surrounded and wiped out. The battle destroyed the Jin dynasty's last field army and left Kaifeng exposed.",
+    "lonlat": [
+     113.35,
+     34.1
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "1233-05-29",
+    "year": 1233,
+    "label": "Apr 1232 – 29 May 1233",
+    "text": "Kaifeng, the last Jin capital, surrenders to Subutai",
+    "detail": "Subutai laid siege to Kaifeng in April 1232. Its defenders used gunpowder bombs and fire lances against the Mongol siege works, but plague and famine killed vast numbers inside the crowded city. Emperor Aizong slipped out early in 1233 and fled to Caizhou, and on 29 May 1233 Kaifeng surrendered. Subutai wanted to massacre the population, as was usual after long resistance, but the Khitan adviser Yelü Chucai persuaded Ögedei to spare it.",
+    "lonlat": [
+     114.3,
+     34.8
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "1234-02-09",
+    "year": 1234,
+    "label": "9 Feb 1234",
+    "text": "Caizhou falls to the Mongols and the Song; the Jin dynasty ends",
+    "detail": "The Southern Song, long-time enemies of the Jin, allied with the Mongols, and in late 1233 a joint Mongol and Song army besieged Emperor Aizong in Caizhou. As the walls fell on 9 February 1234 Aizong passed the throne to a kinsman and killed himself; the new emperor was killed in the fighting the same day. The Jin dynasty was over. Within a year the Song tried to seize the old capitals Kaifeng and Luoyang, beginning a Mongol–Song war that lasted until 1279.",
+    "lonlat": [
+     114.36,
+     33.0
+    ],
+    "kind": "turning-point"
+   },
+   {
+    "date": "1237-12-21",
+    "year": 1237,
+    "label": "16–21 Dec 1237",
+    "text": "Batu's army storms and destroys Ryazan",
+    "detail": "In 1235 Ögedei ordered a great western campaign under Genghis's grandson Batu, with Subutai in command in the field. After crushing the Volga Bulgars and the Cumans, the Mongols attacked the Rus' principalities in winter, when frozen rivers served as roads. Ryazan, refused help by the other princes, was besieged from 16 December 1237 and stormed on 21 December. Prince Yuri Igorevich was killed, and the city was burned and its people massacred.",
+    "lonlat": [
+     40.43,
+     54.41
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "1238-02-08",
+    "year": 1238,
+    "label": "8 Feb 1238",
+    "text": "Vladimir, capital of Vladimir-Suzdal, falls",
+    "detail": "After Ryazan the Mongols took Kolomna and Moscow and marched on Vladimir, capital of the Grand Prince Yuri II, who had gone north to raise an army. The city fell on 8 February 1238 after a short siege, and the grand prince's family died in the burning cathedral. Mongol columns sacked Suzdal and a dozen other towns that month, and on 4 March they destroyed Yuri's army on the Sit river, where he was killed. The spring thaw stopped them short of Novgorod.",
+    "lonlat": [
+     40.4,
+     56.13
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "1240-12-06",
+    "year": 1240,
+    "label": "28 Nov – 6 Dec 1240",
+    "text": "The Mongols storm Kiev",
+    "detail": "After resting on the steppe and taking Pereyaslavl and Chernigov in 1239, the Mongols crossed the frozen Dnieper in late 1240 and besieged Kiev, the old capital of Rus', defended by the voivode Dmytro for Daniel of Galicia. Battering rams broke the walls and the last defenders fell in the Church of the Tithes on 6 December 1240. Much of the city was destroyed. The Mongols went on through Galicia and Volhynia towards Poland and Hungary.",
+    "lonlat": [
+     30.52,
+     50.45
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "1241-04-09",
+    "year": 1241,
+    "label": "9 Apr 1241",
+    "text": "A Mongol army defeats Henry II of Silesia at Legnica",
+    "detail": "To protect the main attack on Hungary, a Mongol force under Baidar, Orda and Kadan raided Poland, sacking Sandomierz and Kraków. At Legnica in Silesia on 9 April 1241 it met an army of Polish knights, local levies and a few Templars and Teutonic knights under Duke Henry II the Pious. The Mongols drew the knights into pursuit, broke them and killed Henry. They then rode south through Moravia to join the main army in Hungary.",
+    "lonlat": [
+     16.16,
+     51.21
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "1241-04-11",
+    "year": 1241,
+    "label": "11 Apr 1241",
+    "text": "Batu and Subutai destroy the Hungarian army at Mohi",
+    "detail": "In March 1241 the main Mongol armies broke through the Carpathian passes into Hungary. King Béla IV gathered his army at Pest and advanced to the Sajó river near Mohi. On the night of 10–11 April the Mongols forced the bridge and forded the river upstream, surrounded the Hungarian camp and left a gap through which the fleeing army was cut down. Tens of thousands died. Béla escaped, and the Mongols occupied the Hungarian plain east of the Danube.",
+    "lonlat": [
+     20.98,
+     47.98
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "1242-03",
+    "year": 1242,
+    "label": "Mar 1242",
+    "text": "The Mongols withdraw from Hungary",
+    "detail": "Over the winter the Mongols crossed the frozen Danube, destroyed Esztergom at Christmas 1241 and chased King Béla to the Dalmatian coast. In late March 1242 they began to withdraw through Serbia and Bulgaria to the steppe. Great Khan Ögedei had died in December 1241, and the princes wanted to be present at the election of his successor; historians also point to heavy losses, poor pasture and the stone castles that held out. The Mongols never returned in force to central Europe.",
+    "lonlat": [
+     19.75,
+     46.0
+    ],
+    "kind": "turning-point"
+   },
+   {
+    "date": "1256-12",
+    "year": 1256,
+    "label": "Nov–Dec 1256",
+    "text": "Hulagu forces the Nizari Assassins to surrender their castles",
+    "detail": "In 1253 Great Khan Möngke sent his brother Hulagu west with a large army to subdue Iran and the caliphate. Its first target was the Nizari Ismaili state, whose mountain castles in northern Iran had defied all rulers and whose agents were blamed for assassinations. The young imam Rukn al-Din Khurshah surrendered at Maymun-Diz on 19 November 1256, and Alamut capitulated in December. The castles were dismantled, and the imam was later killed.",
+    "lonlat": [
+     50.58,
+     36.44
+    ],
+    "kind": "invasion"
+   },
+   {
+    "date": "1258-02-10",
+    "year": 1258,
+    "label": "29 Jan – 10 Feb 1258",
+    "text": "Hulagu captures and sacks Baghdad; the Abbasid caliph is killed",
+    "detail": "When Caliph al-Musta'sim refused to submit and sent no troops, Hulagu's army, with Georgian, Armenian and Chinese contingents, advanced on Baghdad from several sides. It routed the caliph's army on 17 January 1258 by flooding its camp, besieged the city from 29 January and broke through the walls; Baghdad surrendered on 10 February. For days the city was sacked, its people slaughtered and its libraries burned, and about 20 February the caliph was executed. The Abbasid caliphate of Baghdad, five centuries old, was ended.",
+    "lonlat": [
+     44.4,
+     33.3
+    ],
+    "kind": "atrocity"
+   },
+   {
+    "date": "1260-01-24",
+    "year": 1260,
+    "label": "Jan–Feb 1260",
+    "text": "Hulagu takes Aleppo and massacres its people",
+    "detail": "Hulagu next invaded Ayyubid Syria, joined by King Hethum I of Cilician Armenia and Prince Bohemond VI of Antioch. His army crossed the Euphrates in January 1260 and stormed Aleppo after a week-long siege; the citadel held out for another month. For six days the inhabitants were massacred. The fall of Aleppo spread panic across Syria, and the Ayyubid ruler an-Nasir Yusuf abandoned Damascus.",
+    "lonlat": [
+     37.16,
+     36.2
+    ],
+    "kind": "atrocity"
+   },
+   {
+    "date": "1260-03-01",
+    "year": 1260,
+    "label": "1 Mar 1260",
+    "text": "Damascus surrenders to Kitbuqa",
+    "detail": "Damascus opened its gates without a fight, and on 1 March 1260 the Mongol general Kitbuqa, a Nestorian Christian, entered the city. Mongol raiders went on south through Palestine as far as Gaza, and an-Nasir Yusuf was captured. Then news arrived that Great Khan Möngke had died in China in 1259. Hulagu withdrew most of his army towards Azerbaijan, leaving Kitbuqa in Syria with perhaps 10,000–20,000 men.",
+    "lonlat": [
+     36.3,
+     33.51
+    ],
+    "kind": "political"
+   },
+   {
+    "date": "1260-09-03",
+    "year": 1260,
+    "label": "3 Sep 1260",
+    "text": "The Mamluks defeat the Mongols at Ain Jalut",
+    "detail": "The Mamluk sultan Qutuz executed Hulagu's envoys and marched out of Egypt; the crusaders of Acre let his army pass through their land. On 3 September 1260 at Ain Jalut, the Spring of Goliath, in the Jezreel valley, the Mamluk vanguard under Baybars made a feigned retreat that drew Kitbuqa's army into the hills, where the main Mamluk force surrounded it. Kitbuqa was killed, and within weeks the Mamluks took back Damascus and Aleppo. It was the first decisive defeat of a Mongol army in the west.",
+    "lonlat": [
+     35.35,
+     32.55
+    ],
+    "kind": "turning-point"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia: Genghis Khan",
+    "url": "https://en.wikipedia.org/wiki/Genghis_Khan"
+   },
+   {
+    "title": "Wikipedia: Mongol conquest of the Jin dynasty",
+    "url": "https://en.wikipedia.org/wiki/Mongol_conquest_of_the_Jin_dynasty"
+   },
+   {
+    "title": "Wikipedia: Mongol invasion of the Khwarazmian Empire",
+    "url": "https://en.wikipedia.org/wiki/Mongol_invasion_of_the_Khwarazmian_Empire"
+   },
+   {
+    "title": "Wikipedia: Mongol invasion of Kievan Rus'",
+    "url": "https://en.wikipedia.org/wiki/Mongol_invasion_of_Kievan_Rus%27"
+   },
+   {
+    "title": "Wikipedia: Mongol invasion of Europe",
+    "url": "https://en.wikipedia.org/wiki/Mongol_invasion_of_Europe"
+   },
+   {
+    "title": "Wikipedia: Siege of Baghdad (1258)",
+    "url": "https://en.wikipedia.org/wiki/Siege_of_Baghdad"
+   },
+   {
+    "title": "Wikipedia: Battle of Ain Jalut",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Ain_Jalut"
+   },
+   {
+    "title": "Wikipedia: Destruction under the Mongol Empire",
+    "url": "https://en.wikipedia.org/wiki/Destruction_under_the_Mongol_Empire"
+   }
+  ]
+ },
+ {
+  "id": "imjin-war",
+  "name": "Imjin War (Japanese invasions of Korea)",
+  "moment": null,
+  "span": [
+   1592,
+   1598
+  ],
+  "dateLabel": "23 May 1592 – 16 December 1598",
+  "summary": "Having unified Japan, Toyotomi Hideyoshi planned to conquer Ming China and demanded passage through Korea. When the Joseon court refused, about 158,000 Japanese troops landed at Busan in May 1592. Armed with arquebuses and hardened by Japan's civil wars, they took Hanseong (Seoul) in less than three weeks and Pyongyang in July, while Katō Kiyomasa pushed into the far north-east. But Admiral Yi Sun-sin's navy won a string of victories that cut Japanese supply lines by sea, Korean Righteous Armies rose behind the lines, and in early 1593 a Ming army retook Pyongyang. The Japanese fell back to forts on the south coast while Ming and Japanese envoys negotiated. The talks collapsed in 1596, and in 1597 Hideyoshi sent a second invasion, which destroyed the Korean fleet but was halted short of Hanseong at Jiksan and at sea at Myeongnyang. Hideyoshi's death in September 1598 led Japan to withdraw; at Noryang in December Yi Sun-sin was killed in the last battle. The war devastated Korea and strained the Ming treasury.",
+  "casualties": "Estimated at well over a million Korean civilian and military deaths, with tens of thousands of Koreans carried off to Japan, more than 100,000 Japanese and over 30,000 Ming soldiers killed, though all figures are uncertain.",
+  "sides": [
+   {
+    "name": "Japan (Toyotomi Hideyoshi)",
+    "members": [
+     {
+      "clio": "Warring States Japan",
+      "from": 1592,
+      "to": 1598
+     }
+    ]
+   },
+   {
+    "name": "Joseon Korea",
+    "members": [
+     {
+      "clio": "Joseon",
+      "from": 1592,
+      "to": 1598
+     }
+    ]
+   },
+   {
+    "name": "Ming China",
+    "members": [
+     {
+      "clio": "Ming Dynasty",
+      "from": 1592,
+      "to": 1598,
+      "fromDate": "1592-08-23"
+     }
+    ]
+   }
+  ],
+  "events": [
+   {
+    "date": "1592-05-23",
+    "year": 1592,
+    "label": "23–24 May 1592",
+    "text": "Japanese armies land at Busan and storm its fortress",
+    "detail": "Having unified Japan, Toyotomi Hideyoshi demanded passage through Korea to conquer Ming China, and when the Joseon court refused he sent an army of about 158,800 soldiers, labourers and sailors in nine divisions. Konishi Yukinaga's First Division landed at Busan on 23 May 1592. The next day it stormed the fortress of Busanjin, commanded by Chŏng Pal, killing most of the garrison and many townspeople. Korea, at peace for two centuries, was badly prepared, and its defences in the south collapsed.",
+    "lonlat": [
+     129.04,
+     35.1
+    ],
+    "kind": "invasion"
+   },
+   {
+    "date": "1592-05-25",
+    "year": 1592,
+    "label": "25 May 1592",
+    "text": "Dongnae falls after a last stand by its governor",
+    "detail": "Konishi's troops moved on to the walled town of Dongnae just north of Busan. Its prefect, Song Sanghyŏn, refused to let them pass, and the town was stormed after hours of fighting; about 3,000 defenders were killed by Korean count. The other Japanese divisions landed behind the first, and three columns, under Konishi, Katō Kiyomasa and Kuroda Nagamasa, began a race north along separate roads towards the capital, Hanseong (Seoul).",
+    "lonlat": [
+     129.08,
+     35.2
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "1592-06-03",
+    "year": 1592,
+    "label": "3 Jun 1592",
+    "text": "Konishi routs General Yi Il at Sangju",
+    "detail": "The court sent General Yi Il south to stop the invaders on the central road, but he found only a few hundred raw troops at Sangju. On 3 June 1592 Konishi's veterans, armed with thousands of arquebuses, surrounded and destroyed his small army; Yi Il escaped and fled north. The Japanese musketeers, trained in the long civil wars of the Sengoku period, were far superior to Korean troops in open battle in the early months of the war.",
+    "lonlat": [
+     128.16,
+     36.41
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "1592-06-07",
+    "year": 1592,
+    "label": "7 Jun 1592",
+    "text": "Sin Rip's army is destroyed at Chungju",
+    "detail": "General Sin Rip, Korea's most famous commander, chose not to hold the Choryong pass and instead deployed his cavalry on open ground at Tangeumdae, near Chungju, with rivers behind it. On 7 June 1592 Konishi's arquebusiers broke the Korean charges and drove the army into the rivers, where many drowned; Sin Rip took his own life. Chungju was the last organised defence before the capital, and King Seonjo fled north.",
+    "lonlat": [
+     127.93,
+     36.97
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "1592-06-10",
+    "year": 1592,
+    "label": "10 Jun 1592",
+    "text": "Konishi's First Division enters the abandoned capital Hanseong",
+    "detail": "The court had already left Hanseong, and parts of the city, including the offices holding the slave registers, had been looted and burned by its own people. Konishi's division reached the capital first, on 10 June 1592, less than three weeks after landing, with Katō's division arriving soon after. King Seonjo withdrew to Pyongyang and later to Uiju on the Chinese border, and the Korean court appealed to the Ming emperor, its overlord, for help.",
+    "lonlat": [
+     126.98,
+     37.57
+    ],
+    "kind": "political"
+   },
+   {
+    "date": "1592-06-16",
+    "year": 1592,
+    "label": "16 Jun 1592",
+    "text": "Yi Sun-sin wins his first victory, at Okpo",
+    "detail": "While Japan's armies swept north, the navy of Jeolla province under Admiral Yi Sun-sin sailed east from its base at Yeosu. On 16 June 1592 it surprised a Japanese transport fleet anchored at Okpo on Geoje island and destroyed 26 ships without losing one of its own. It was the first of a series of naval victories, won with sturdy panokseon warships and heavy cannon, that began to threaten the Japanese supply line from Busan.",
+    "lonlat": [
+     128.69,
+     34.89
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "1592-07-07",
+    "year": 1592,
+    "label": "6–7 Jul 1592",
+    "text": "The Japanese cross the Imjin River",
+    "detail": "A Korean army of about 10,000 held the north bank of the Imjin river, the barrier on the road from Hanseong to Pyongyang, and the Japanese waited there for two weeks without boats. Then the Japanese feigned a retreat; the Korean troops crossed in pursuit and were ambushed and destroyed on 6–7 July 1592. The road north lay open: Kato turned north-east into Hamgyong province, while Konishi and Kuroda marched on Pyongyang.",
+    "lonlat": [
+     126.92,
+     37.95
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "1592-07-24",
+    "year": 1592,
+    "label": "19–24 Jul 1592",
+    "text": "Konishi takes Pyongyang",
+    "detail": "King Seonjo fled Pyongyang on 19 July 1592, and the panic his departure caused spread to the defenders. A Korean night attack across the Taedong river failed, and when the retreating troops showed the Japanese a ford, the defenders abandoned the city. Konishi's First Division entered Pyongyang on 24 July and found its granaries intact. Konishi halted there, waiting for supplies and reinforcements that the Korean navy and guerrilla attacks were making ever harder to deliver.",
+    "lonlat": [
+     125.75,
+     39.02
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "1592-08-15",
+    "year": 1592,
+    "label": "15 Aug 1592",
+    "text": "Yi Sun-sin destroys a Japanese fleet off Hansan Island",
+    "detail": "Hideyoshi ordered his admirals to destroy the Korean navy. Wakisaka Yasuharu's fleet of about 73 ships was lured out of the narrow strait of Gyeonnaeryang into open water off Hansan Island, where Yi Sun-sin's 56 warships, including turtle ships, closed round it in a crane-wing formation. On 15 August 1592 most of the Japanese fleet was destroyed. Hansan ended Japanese plans to supply their armies by sea along the west coast.",
+    "lonlat": [
+     128.48,
+     34.77
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "1592-08-23",
+    "year": 1592,
+    "label": "23 Aug 1592",
+    "text": "A first Ming force is beaten back at Pyongyang",
+    "detail": "The Ming court was busy with a revolt at Ningxia, but it sent a small force of about 6,000 men under General Zu Chengxun across the Yalu. On 23 August 1592 it attacked Pyongyang in heavy rain, broke into the city and was cut to pieces in the streets by Konishi's musketeers; Zu escaped with a few survivors. The defeat convinced the Ming that a much larger army would be needed, while envoys bought time with truce talks.",
+    "lonlat": [
+     125.75,
+     39.02
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "1592-08-30",
+    "year": 1592,
+    "label": "30 Aug 1592",
+    "text": "Katō Kiyomasa reaches Hoeryong and captures two Korean princes",
+    "detail": "Katō Kiyomasa's Second Division of more than 20,000 men crossed to the east coast, took Hamhung, the capital of Hamgyong province, and beat the provincial army at Songjin on 23 August. On 30 August it entered Hoeryong near the Tumen river, where two Korean princes and the governor had already been seized by local people and handed over. Katō even raided across the Tumen against the Jurchens. But Korean partisans soon rose across Hamgyong and retook its northern towns.",
+    "lonlat": [
+     129.75,
+     42.44
+    ],
+    "kind": "invasion"
+   },
+   {
+    "date": "1592-11-08",
+    "year": 1592,
+    "label": "8–13 Nov 1592",
+    "text": "Kim Si-min repels a Japanese army at Jinju",
+    "detail": "Jinju guarded the road from Gyeongsang into the rich province of Jeolla, which had escaped invasion and fed the Korean war effort. About 30,000 Japanese troops besieged the fortress, held by Kim Si-min with some 3,800 soldiers and a few thousand irregulars and 170 newly made arquebuses. After six days of assaults with siege towers and ladders the Japanese gave up on 13 November, having lost heavily; Kim Si-min was mortally wounded. Jinju became a symbol of Korean resistance, alongside the Righteous Armies.",
+    "lonlat": [
+     128.08,
+     35.19
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "1593-02-08",
+    "year": 1593,
+    "label": "6–8 Feb 1593",
+    "text": "Ming and Korean troops retake Pyongyang",
+    "detail": "In January 1593 a Ming army of about 40,000 under Li Rusong crossed the Yalu and, with Korean troops and monk soldiers, reached Pyongyang on 5 February. Its cannon battered the walls, and after three days of assaults Konishi abandoned the city on the night of 8 February and retreated south, losing thousands of men. The Japanese gave up most of the north. Katō Kiyomasa, in danger of being cut off, withdrew from Hamgyong province in the following weeks.",
+    "lonlat": [
+     125.75,
+     39.02
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "1593-02-27",
+    "year": 1593,
+    "label": "27 Feb 1593",
+    "text": "The Japanese halt Li Rusong's advance at Byeokjegwan",
+    "detail": "Confident after Pyongyang, Li Rusong pushed on towards Hanseong with an advance force, mostly cavalry. At the post station of Byeokjegwan, north of the capital, on 27 February 1593 it ran into a much larger Japanese army under Kobayakawa Takakage and was driven back with heavy losses in the mud. Li withdrew to Kaesong and then Pyongyang, and the two sides settled into a stalemate along the line from Kaesong to Hanseong.",
+    "lonlat": [
+     126.9,
+     37.72
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "1593-03-14",
+    "year": 1593,
+    "label": "14 Mar 1593",
+    "text": "Kwon Yul's garrison beats off a Japanese assault at Haengju",
+    "detail": "General Kwon Yul fortified the hill fort of Haengjusanseong on the Han river west of Hanseong with about 2,300 soldiers, monks and townspeople. On 14 March 1593 some 30,000 Japanese attacked it in waves through the day, but the defenders, using cannon, rocket carts and stones, held out until the Japanese withdrew. Haengju, with Korean naval raids and the Ming burning of Japanese grain stores at Yongsan, left the army in Hanseong short of food.",
+    "lonlat": [
+     126.82,
+     37.6
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "1593-05",
+    "year": 1593,
+    "label": "May 1593",
+    "text": "The Japanese abandon Hanseong and fall back to the south coast",
+    "detail": "Short of food, hit by disease and harassed by guerrillas, the Japanese commanders agreed in peace talks with the Ming envoy Shen Weijing to evacuate the capital and withdraw to the Busan area, while the Ming army would also pull back. They left Hanseong in the spring of 1593 and retreated to a chain of castles, the wajō, built along the southern coast of Gyeongsang province from Ulsan to Geoje, which they held for the rest of the war.",
+    "lonlat": [
+     129.04,
+     35.1
+    ],
+    "kind": "political"
+   },
+   {
+    "date": "1593-07-27",
+    "year": 1593,
+    "label": "20–27 Jul 1593",
+    "text": "The Japanese take Jinju and massacre its defenders",
+    "detail": "Hideyoshi was determined to avenge the failure at Jinju. In July 1593 a Japanese army of about 90,000, the largest single force of the war, besieged the fortress, defended by a few thousand soldiers and crowded with civilians. After a week of assaults the walls were breached and the city fell on 27 July; the Japanese killed its defenders and much of its population, Korean sources counting 60,000 dead. They then withdrew to their coastal forts.",
+    "lonlat": [
+     128.08,
+     35.19
+    ],
+    "kind": "atrocity"
+   },
+   {
+    "date": "1596",
+    "year": 1596,
+    "label": "1596",
+    "text": "Peace talks collapse at Osaka",
+    "detail": "For three years Ming and Japanese negotiators, chiefly Shen Weijing and Konishi Yukinaga, misrepresented each side's demands to their masters in order to keep the truce. Hideyoshi expected Ming surrender of territory and a princess, while the Ming believed he had asked to become a tributary king. When the deception came out at his audience with the Ming envoys at Osaka Castle in 1596, Hideyoshi was enraged and ordered a second invasion of Korea.",
+    "lonlat": [
+     135.53,
+     34.69
+    ],
+    "kind": "political"
+   },
+   {
+    "date": "1597-08-28",
+    "year": 1597,
+    "label": "28 Aug 1597",
+    "text": "The Korean navy is destroyed at Chilcheollyang",
+    "detail": "In 1597 more than 140,000 Japanese troops crossed to Korea. Yi Sun-sin had been removed from his command after a Japanese plot, and his successor Won Gyun was ordered to attack the Japanese fleet. On 28 August 1597, off Geoje island near Chilcheollyang, his tired fleet was surprised at night by a much larger Japanese navy. Most of the Korean fleet, by one count 188 ships, was destroyed, and Won Gyun was killed. The sea route to the west coast now lay open to Japan.",
+    "lonlat": [
+     128.57,
+     34.82
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "1597-09-26",
+    "year": 1597,
+    "label": "23–26 Sep 1597",
+    "text": "The Japanese storm Namwon",
+    "detail": "Japan's second offensive aimed at Jeolla province, which had escaped the first invasion. The Left Army of about 50,000 under Ukita Hideie besieged Namwon, held by about 3,000 Ming soldiers under Yang Yuan and a few hundred Koreans. The town fell on the night of 26 September after four days; Yang Yuan broke out with about 100 men, but most of the defenders and many townspeople were killed. The Japanese went on to take Jeonju.",
+    "lonlat": [
+     127.39,
+     35.41
+    ],
+    "kind": "atrocity"
+   },
+   {
+    "date": "1597-10-16",
+    "year": 1597,
+    "label": "16 Oct 1597",
+    "text": "Ming troops stop the Japanese advance at Jiksan",
+    "detail": "While the Left Army swept Jeolla, the Japanese Right Army under Mōri Hidemoto and Katō Kiyomasa marched north through Chungcheong towards Hanseong. On 16 October 1597 its vanguard under Kuroda Nagamasa met a Ming force of about 8,000 infantry and cavalry near Jiksan, south of the capital, and was driven back after a hard fight. Jiksan was the farthest the Japanese got towards Hanseong in the second invasion; with winter coming, their armies turned back towards the south coast.",
+    "lonlat": [
+     127.2,
+     36.88
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "1597-10-26",
+    "year": 1597,
+    "label": "26 Oct 1597",
+    "text": "Yi Sun-sin's 13 ships defeat a Japanese fleet at Myeongnyang",
+    "detail": "Restored to command after Chilcheollyang, Yi Sun-sin had only 13 warships left. He waited for the Japanese fleet, at least 133 warships, in the narrow Myeongnyang strait off Jindo island, where a powerful tidal current runs. On 26 October 1597 his ships held the strait for hours, sinking or disabling about 30 Japanese vessels, and when the tide turned the Japanese withdrew. The victory stopped the Japanese navy from advancing along the west coast to support their armies.",
+    "lonlat": [
+     126.31,
+     34.57
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "1598-02-19",
+    "year": 1598,
+    "label": "29 Jan – 19 Feb 1598",
+    "text": "Ming–Korean armies fail to take Ulsan castle",
+    "detail": "The Japanese held the winter in new coastal castles, and the Ming general Yang Hao led about 50,000 Ming and Korean troops against the new Japanese castle at Ulsan. Its garrison held out through repeated assaults until a Japanese relief army arrived; on 19 February 1598 the allies broke off the siege and retreated with heavy losses. A stalemate followed along the south coast, from Ulsan to Suncheon.",
+    "lonlat": [
+     129.31,
+     35.54
+    ],
+    "kind": "battle"
+   },
+   {
+    "date": "1598-09-18",
+    "year": 1598,
+    "label": "18 Sep 1598",
+    "text": "Toyotomi Hideyoshi dies; Japan decides to withdraw",
+    "detail": "Hideyoshi died at Fushimi Castle on 18 September 1598, leaving his five-year-old son Hideyori as heir. The Council of Five Elders that now governed Japan kept his death secret and ordered the armies in Korea home. Meanwhile allied armies attacked the Japanese castles at Sacheon and Suncheon in October 1598 and were beaten off, but the Japanese prepared to evacuate their forts and sail back to Japan.",
+    "lonlat": [
+     135.77,
+     34.94
+    ],
+    "kind": "political"
+   },
+   {
+    "date": "1598-12-16",
+    "year": 1598,
+    "label": "16 Dec 1598",
+    "text": "Noryang: the last battle; Yi Sun-sin is killed",
+    "detail": "Konishi Yukinaga was blockaded at Suncheon by the Korean and Ming fleets, and Shimazu Yoshihiro sailed with about 500 ships to rescue him. Yi Sun-sin and the Ming admiral Chen Lin intercepted the relief fleet in the Noryang strait before dawn on 16 December 1598 and destroyed about half of it. Yi was killed by a gunshot at the height of the battle. Konishi escaped round the south of Namhae island, and on 21 December the last Japanese commanders sailed from Busan for Japan.",
+    "lonlat": [
+     127.87,
+     34.94
+    ],
+    "kind": "battle"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia: Imjin War",
+    "url": "https://en.wikipedia.org/wiki/Imjin_War"
+   },
+   {
+    "title": "Wikipedia: Battle of Chungju",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Chungju"
+   },
+   {
+    "title": "Wikipedia: Battle of Hansan Island",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Hansan_Island"
+   },
+   {
+    "title": "Wikipedia: Siege of Pyongyang (1593)",
+    "url": "https://en.wikipedia.org/wiki/Siege_of_Pyongyang_(1593)"
+   },
+   {
+    "title": "Wikipedia: Siege of Jinju (1593)",
+    "url": "https://en.wikipedia.org/wiki/Siege_of_Jinju_(1593)"
+   },
+   {
+    "title": "Wikipedia: Battle of Myeongnyang",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Myeongnyang"
+   },
+   {
+    "title": "Wikipedia: Toyotomi Hideyoshi",
+    "url": "https://en.wikipedia.org/wiki/Toyotomi_Hideyoshi"
+   },
+   {
+    "title": "Wikipedia: Battle of Noryang",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Noryang"
+   }
+  ]
+ }
+]
