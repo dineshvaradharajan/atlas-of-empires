@@ -981,7 +981,12 @@ const EVIDENCE = {
   legendary: ["Legendary · not proven", "ev-legend"],
 };
 const evidenceBadge = (ev) => { const e = EVIDENCE[ev] || EVIDENCE.archaeology; return `<span class="evb ${e[1]}">${esc(e[0])}</span>`; };
-const sitesNow = (y = S.year) => (S.sites || []).filter((st) => st.built != null && st.built <= y && y <= (st.until ?? S.range[1])); // undated legends never appear on the timeline
+// The sites layer is the ancient world: a site is drawn only in its own period. "until" missing means it still stands
+// today; then it shows until the end of antiquity (500 CE) or 200 years after it was built, whichever is later.
+// Nothing is drawn after 1500. Undated legends never appear on the timeline (search still finds every site).
+const siteEnd = (st) => Math.min(st.until ?? Math.max(500, st.built + 200), 1500);
+const siteShown = (st, y) => st.built != null && st.built <= y && y <= siteEnd(st);
+const sitesNow = (y = S.year) => (S.sites || []).filter((st) => siteShown(st, y));
 function culturesNow(y = S.year) { // archaeological-culture regions active this year (from the reconstruction layers)
   const seen = new Map();
   for (const sp of S.supps) if (sp.kind === "cultures") for (const rg of sp.regions) if ((rg.from ?? sp.from) <= y && y <= (rg.to ?? sp.to) && !seen.has(rg.name)) seen.set(rg.name, rg);
@@ -1081,7 +1086,7 @@ function openSite(id) {
   if (S.journey) exitJourney();
   if (S.war) exitWar();
   S.sel = null; S.site = st; S.view = "site";
-  const inUse = st.built == null || (st.built <= S.year && S.year <= (st.until ?? S.range[1]));
+  const inUse = st.built == null || siteShown(st, S.year); // opened from search in another age: travel to when it is drawn
   const after = () => { S.view = "site"; S.site = st; renderCol(true); draw(); writeHash(); flyCenter(st.lonlat, Math.max(S.t.k, 5), 900); };
   if (inUse) after(); else go(Math.max(S.range[0], st.built)).then(after);
 }
