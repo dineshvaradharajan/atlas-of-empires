@@ -157,7 +157,11 @@ function readTheme() {
 }
 
 // ---------------------------------------------------------------- data
-async function fetchJSON(url) { const r = await fetch(url); if (!r.ok) throw new Error(`${r.status} ${url}`); return r.json(); }
+// Each release stamps its version on index.html (tools/deploy.sh); data requests carry it, so browsers and the edge can keep
+// every data file for a year and a new release is never served stale. Locally there is no stamp and nothing is added.
+const DATA_V = document.querySelector('meta[name="data-version"]')?.content || "";
+const V = (url) => (DATA_V ? `${url}${url.includes("?") ? "&" : "?"}v=${DATA_V}` : url);
+async function fetchJSON(url) { const r = await fetch(V(url)); if (!r.ok) throw new Error(`${r.status} ${url}`); return r.json(); }
 function memo(map, key, url, post = (x) => x) {
   if (!map.has(key)) map.set(key, fetchJSON(url).then(post).catch((e) => { map.delete(key); throw e; }));
   return map.get(key);
@@ -177,20 +181,20 @@ const loadBase = (by) => memo(S.bases, by, `data/${by}.json`, rewind);
 
 async function init() {
   readTheme();
-  const [clio, base, content, commons, corr] = await Promise.all([
+  const [clio, base, content, commons, corr, supps, media, sites] = await Promise.all([ // all at once, not one after another
     fetchJSON("data/clio/index.json"), fetchJSON("data/index.json"),
     fetchJSON("data/content.json").catch(() => null), fetchJSON("data/commons.json").catch(() => ({})),
-    fetchJSON("data/corrections.json").catch(() => null),
+    fetchJSON("data/corrections.json").catch(() => null), fetchJSON("data/supplements.json").catch(() => []),
+    fetchJSON("data/media.json").catch(() => ({})), fetchJSON("data/sites.json").catch(() => []),
   ]);
-  const supps = await fetchJSON("data/supplements.json").catch(() => []);
-  S.media = await fetchJSON("data/media.json").catch(() => ({}));
+  S.media = media;
   S.clio = clio; S.range = [Math.min(EARLIEST, clio.range[0]), clio.range[1]]; S.baseYears = base.years; S.commons = commons;
-  S.sites = await fetchJSON("data/sites.json").catch(() => []);
+  S.sites = sites;
   fetchJSON("data/physical.json").then(preparePhysical).then(() => draw()).catch(() => {}); // rivers, lakes, sea names: drawn once loaded
   if (GL) { GL.loadTexture("relief", "data/relief.jpg"); GL.loadTexture("shelf", "data/shelf.png"); } // terrain shading; seabed for ice-age coasts
   fetchJSON("data/iceage.json").then((d) => { S.iceage = prepareIceage(d); draw(); }).catch(() => {});
   fetchJSON("data/disputed.json").then((d) => { S.disputed = d.map((a) => ({ ...a, f: { type: "Feature", geometry: { type: "MultiPolygon", coordinates: a.coords.map(wind) }, properties: {} } })); draw(); }).catch(() => {});
-  { const im = new Image(); im.onload = () => { const c = document.createElement("canvas"); c.width = im.width; c.height = im.height; const x = c.getContext("2d", { willReadFrequently: true }); x.drawImage(im, 0, 0); S.shelfPix = { w: im.width, h: im.height, d: x.getImageData(0, 0, im.width, im.height).data }; }; im.src = "data/shelf.png"; }
+  { const im = new Image(); im.onload = () => { const c = document.createElement("canvas"); c.width = im.width; c.height = im.height; const x = c.getContext("2d", { willReadFrequently: true }); x.drawImage(im, 0, 0); S.shelfPix = { w: im.width, h: im.height, d: x.getImageData(0, 0, im.width, im.height).data }; }; im.src = V("data/shelf.png"); }
   if (corr) { S.corr = { realms: corr.realms || {}, base: corr.base || {} }; correctTimelines(); }
   S.supps = prepareSupplements(supps);
   if (content) {
@@ -737,7 +741,7 @@ const GL = (() => {
       textures[name] = { ready: true, tx };
       draw();
     };
-    img.src = url;
+    img.src = V(url);
   }
   function makeMesh() { // 1° steps; rows of triangles between consecutive latitudes
     const pos = [], uv = [], step = 1;
@@ -2003,7 +2007,7 @@ function smoothLL(pts) { // Catmull-Rom through the path's points
 async function loadCinema(w) {
   if (!w.cinema) return null;
   if (w._cine) return w._cine;
-  const c = await fetch(`data/cinema/${encodeURIComponent(w.id)}.json`).then((r) => r.json());
+  const c = await fetchJSON(`data/cinema/${encodeURIComponent(w.id)}.json`);
   const prep = (x, closed) => {
     let prev = null;
     x.keys = (x.keys || []).map((k) => { const pts = alignTo(resample(k.line || k.coords, closed ? 192 : 128, closed), prev, closed); prev = pts; return { t: fracDate(k.date), pts }; });
