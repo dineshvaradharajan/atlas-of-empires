@@ -426,3 +426,16 @@ ol.chaps li.now button { font-weight: 700; color: var(--highlight); }
 #chart .lbar.in:nth-child(odd) { background: var(--other-3); }
 #chart .lbar.in:hover { background: var(--ink); }
 #chart .lbar.in:hover span { color: var(--bg); text-decoration: none; }
+/* "read more" folds: chapter overviews, map notes */
+details.more { margin: 6px 0 0; }
+details.more summary { list-style: none; cursor: pointer; font: 600 13px var(--sans); color: var(--highlight); padding: 4px 0; }
+details.more summary::-webkit-details-marker { display: none; }
+details.more summary::after { content: " +"; }
+details.more[open] summary::after { content: " −"; }
+details.more > .prose { margin-top: 6px; }
+details.more > aside.mapnote { margin-top: 6px; }
+details.more.mapacc { margin-top: 20px; }
+#legend span[hidden] { display: none; }
+#toast { position: absolute; left: 50%; top: 16px; transform: translate(-50%, -8px); max-width: min(460px, calc(100% - 32px)); padding: 10px 14px; background: var(--ink); color: var(--bg);
+  font: 500 13.5px/1.4 var(--sans); box-shadow: var(--shadow); opacity: 0; pointer-events: none; transition: opacity .3s, transform .3s; z-index: 5; }
+#toast.on { opacity: 1; transform: translate(-50%, 0); }
