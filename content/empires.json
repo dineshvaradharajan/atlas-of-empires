@@ -6301,6 +6301,105 @@
   ]
  },
  {
+  "id": "pallava-empire",
+  "name": "Pallava dynasty",
+  "aliases": [
+   "Pallava",
+   "Pallavas",
+   "Pallava state"
+  ],
+  "clio": [
+   "Late Pallava Empire"
+  ],
+  "region": "middle-east-south-asia",
+  "start": 275,
+  "end": 897,
+  "capital": "Kanchipuram",
+  "peak": {
+   "year": 650,
+   "areaKm2": 100000,
+   "note": "Under Narasimhavarman I, after his sack of the Chalukya capital Vatapi in 642, over the northern Tamil country and southern Telugu lands (rough estimate; not covered by Taagepera or Turchin; this atlas's map shows c. 0.1M km² under direct rule from 602 to 805)"
+  },
+  "rulers": [
+   {
+    "name": "Simhavishnu",
+    "reign": "c. 555 – 590",
+    "note": "Revived the dynasty by defeating the Kalabhras and pushed south to the Kaveri; reign dates are disputed"
+   },
+   {
+    "name": "Mahendravarman I",
+    "reign": "c. 600 – 630",
+    "note": "Pioneered Pallava rock-cut temples and wrote the Sanskrit satire Mattavilasa Prahasana; lost his northern provinces to the Chalukya Pulakeshin II"
+   },
+   {
+    "name": "Narasimhavarman I (Mamalla)",
+    "reign": "630 – 668",
+    "note": "Defeated and killed Pulakeshin II and sacked Vatapi in 642; Mamallapuram is named after him"
+   },
+   {
+    "name": "Paramesvaravarman I",
+    "reign": "c. 670 – 695",
+    "note": "Fought off a renewed Chalukya invasion under Vikramaditya I"
+   },
+   {
+    "name": "Narasimhavarman II (Rajasimha)",
+    "reign": "c. 695 – 728",
+    "note": "Built the Shore Temple at Mamallapuram and the Kailasanathar temple at Kanchipuram; sent embassies to Tang China"
+   },
+   {
+    "name": "Nandivarman II (Pallavamalla)",
+    "reign": "c. 731 – 796",
+    "note": "Chosen as a boy from a collateral branch; Kanchipuram was taken by the Chalukya Vikramaditya II, and he built the Vaikuntha Perumal temple"
+   },
+   {
+    "name": "Nandivarman III",
+    "reign": "846 – 869",
+    "note": "Defeated the Pandyas at Tellaru and kept a strong navy trading with South-east Asia"
+   },
+   {
+    "name": "Aparajita",
+    "reign": "c. 880 – 897",
+    "note": "Last Pallava king, defeated and killed by the Chola Aditya I"
+   }
+  ],
+  "summary": "The Pallavas first appear in 4th-century copper-plate grants issued from Kanchipuram, and probably began as feudatories of the Satavahanas before ruling the region around Kanchi in their own right. After a period of eclipse under the Kalabhra invasions, Simhavishnu revived the dynasty in the later 6th century and the Tamil country was divided between the Pallavas in the north and the Pandyas in the south. A struggle with the Chalukyas of Vatapi lasted more than two centuries: Pulakeshin II took Mahendravarman I's northern provinces, but Narasimhavarman I killed him and sacked Vatapi in 642, and the Chalukyas later captured Kanchipuram in their turn. The Pallava court patronised Sanskrit and Tamil literature, the Chinese pilgrim Xuanzang visited Kanchipuram in about 640, and Narasimhavarman II sent an embassy to Tang China. Squeezed between the Pandyas, Rashtrakutas and a reviving Chola dynasty, the Pallavas declined in the 9th century, and the Chola Aditya I defeated and killed the last king, Aparajita, in about 897.",
+  "legacy": "The Pallavas moved southern Indian architecture from rock-cut caves to free-standing stone temples, leaving the Pancha Rathas and Shore Temple at Mamallapuram (a UNESCO World Heritage Site) and the Kailasanathar temple at Kanchipuram, and their script, carried by traders, priests and monks, became the ancestor of Grantha and Tamil and of many South-east Asian scripts such as Khmer.",
+  "sources": [
+   {
+    "title": "Wikipedia: Pallava dynasty",
+    "url": "https://en.wikipedia.org/wiki/Pallava_dynasty"
+   },
+   {
+    "title": "Wikipedia: Simhavishnu",
+    "url": "https://en.wikipedia.org/wiki/Simhavishnu"
+   },
+   {
+    "title": "Wikipedia: Narasimhavarman I",
+    "url": "https://en.wikipedia.org/wiki/Narasimhavarman_I"
+   },
+   {
+    "title": "Wikipedia: Narasimhavarman II",
+    "url": "https://en.wikipedia.org/wiki/Narasimhavarman_II"
+   },
+   {
+    "title": "Wikipedia: Vikramaditya II",
+    "url": "https://en.wikipedia.org/wiki/Vikramaditya_II"
+   },
+   {
+    "title": "Wikipedia: Aparajitavarman",
+    "url": "https://en.wikipedia.org/wiki/Aparajitavarman"
+   },
+   {
+    "title": "Wikipedia: Group of Monuments at Mahabalipuram",
+    "url": "https://en.wikipedia.org/wiki/Group_of_Monuments_at_Mahabalipuram"
+   },
+   {
+    "title": "Wikipedia: Pallava script",
+    "url": "https://en.wikipedia.org/wiki/Pallava_script"
+   }
+  ]
+ },
+ {
   "id": "spanish-empire",
   "name": "Spanish Empire",
   "aliases": [
