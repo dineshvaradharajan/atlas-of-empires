@@ -187,6 +187,7 @@ async function init() {
   fetchJSON("data/physical.json").then(preparePhysical).then(() => draw()).catch(() => {}); // rivers, lakes, sea names: drawn once loaded
   if (GL) { GL.loadTexture("relief", "data/relief.jpg"); GL.loadTexture("shelf", "data/shelf.png"); } // terrain shading; seabed for ice-age coasts
   fetchJSON("data/iceage.json").then((d) => { S.iceage = prepareIceage(d); draw(); }).catch(() => {});
+  { const im = new Image(); im.onload = () => { const c = document.createElement("canvas"); c.width = im.width; c.height = im.height; const x = c.getContext("2d", { willReadFrequently: true }); x.drawImage(im, 0, 0); S.shelfPix = { w: im.width, h: im.height, d: x.getImageData(0, 0, im.width, im.height).data }; }; im.src = "data/shelf.png"; }
   if (corr) { S.corr = { realms: corr.realms || {}, base: corr.base || {} }; correctTimelines(); }
   S.supps = prepareSupplements(supps);
   if (content) {
@@ -955,7 +956,10 @@ function draw() {
 // outlines are dated slices drawn on the land they covered.
 function prepareIceage(d) {
   const sl = (d.sealevel || []).slice().sort((a, b) => a.year - b.year);
-  const ice = (d.ice || []).map((x) => ({ ...x, f: { type: "Feature", geometry: { type: "Polygon", coordinates: x.coords }, properties: {} } }));
+  // d3 reads a ring's winding to tell inside from outside: outer rings must enclose the small side, holes the large one
+  const wind = (rings) => rings.map((r, i) => { const big = d3.geoArea({ type: "Polygon", coordinates: [r] }) > 2 * Math.PI; return (i === 0) === big ? r.slice().reverse() : r; });
+  const ice = (d.ice || []).filter((x) => !/^Antarctic/.test(x.name)) // its outline runs through the pole along the date line; mostly off the map anyway
+    .map((x) => ({ ...x, f: { type: "Feature", geometry: { type: "Polygon", coordinates: wind(x.coords) }, properties: {} } }));
   const years = [...new Set(ice.map((x) => x.year))].sort((a, b) => a - b);
   return { sl, ice, years };
 }
@@ -969,12 +973,24 @@ function seaDrop(y) { // metres below today's level, interpolated; 0 once the cu
   }
   return 0;
 }
+function dryThen([lon, lat], y = S.year) { // was this spot of today's sea dry land in year y?
+  const sp = S.shelfPix, drop = seaDrop(y);
+  if (!sp || drop < 1) return false;
+  const x = Math.min(sp.w - 1, Math.floor((lon + 180) / 360 * sp.w)), r = Math.min(sp.h - 1, Math.floor((90 - lat) / 180 * sp.h));
+  const d = sp.d[(r * sp.w + x) * 4];
+  return d > 0 && d <= drop;
+}
 function iceNow(y) { // the dated slice nearest to this year (none once the ice sheets are gone)
   const ys = S.iceage?.years;
   if (!ys?.length || y > ys[ys.length - 1] + 500) return [];
   let best = ys[0];
   for (const v of ys) if (Math.abs(v - y) < Math.abs(best - y)) best = v;
   return S.iceage.ice.filter((x) => x.year === best);
+}
+function iceRegions(list) { // "Laurentide ice sheet (joined to …)" → plain region names, biggest ice first
+  const has = (rx) => list.some((x) => rx.test(x.name));
+  return [has(/Laurentide|Innuitian|Cordilleran ice sheet/) && "much of Canada", has(/Scandinavian/) && "Scandinavia", has(/British-Irish/) && "the Scottish Highlands",
+    has(/Svalbard|Franz Josef|Novaya/) && "the Arctic islands", has(/Greenland/) && "Greenland"].filter(Boolean).join(", ").replace(/, ([^,]*)$/, " and $1");
 }
 function drawIce() { // inside the map transform
   const list = iceNow(S.year);
@@ -1035,6 +1051,7 @@ function drawWaterLabels() { // screen space, after the realm names, avoiding th
   const seaMax = k < 1.4 ? 0 : k < 2.6 ? 1 : k < 5 ? 2 : k < 8 ? 3 : 4; // whole world: oceans only
   for (const sea of S.phys.seas) {
     if (sea.r > (S.war ? Math.min(seaMax, 1) : seaMax) || (S.war && sea.k === "ocean" && k > 3)) continue; // wars: only the big seas
+    if (S.year < -2000 && (dryThen(sea.l) || iceNow(S.year).some((x) => d3.geoContains(x.f, sea.l)))) continue; // dry land or under ice then: no sea name
     const [x0, y0] = projection(sea.l), x = S.t.applyX(x0), y = S.t.applyY(y0);
     const ocean = sea.k === "ocean", size = ocean ? 12 : sea.r <= 1 ? 11 : 10;
     ctx.font = `italic ${ocean ? 500 : 400} ${size}px Inter, sans-serif`; ctx.letterSpacing = ocean ? "2px" : "0.6px";
@@ -1325,7 +1342,7 @@ function prehistoryHTML(y) {
   let h = `<div class="kicker">The world in</div><p class="year">${bigYear(y)}</p><h1 class="head">Before the first states</h1>`;
   h += `<aside class="mapnote norecords"><b>No written records</b><p>Writing begins around ${shortYear(WRITING)} in Mesopotamia and Egypt. Everything the map shows for this time is known from archaeology: excavated sites, radiocarbon dates and the spread of tools, pottery and farming. Areas are approximate, and blank land means no culture has been mapped there, not that no one lived there.</p></aside>`;
   const drop = seaDrop(y), ice = iceNow(y);
-  if (drop >= 1 || ice.length) h += `<aside class="mapnote iceage"><b>The end of the ice age</b><p>${drop >= 1 ? `The sea stood about <strong>${Math.round(drop)} m lower</strong> than today, so shallow seabed was dry land (drawn grey beyond today's coasts). ` : ""}${ice.length ? `Ice sheets (white, dashed edge) still covered ${esc(ice.map((x) => x.name).filter((n, i, a) => n && a.indexOf(n) === i).join(", "))}.` : ""} Reconstructions are approximate; see Sources.</p></aside>`;
+  if (drop >= 1 || ice.length) h += `<aside class="mapnote iceage"><b>The end of the ice age</b><p>${drop >= 1 ? `The sea stood about <strong>${Math.round(drop)} m lower</strong> than today, so shallow seabed was dry land (drawn grey beyond today's coasts). ` : ""}${ice.length ? `Ice sheets (white, dashed edge) still covered ${esc(iceRegions(ice))}.` : ""} Reconstructions are approximate; see Sources.</p></aside>`;
   const cs = culturesNow(y);
   if (cs.length) {
     h += `<h3 class="sec">Cultures · ${plainYear(y)}</h3><ul class="mlist">`;
