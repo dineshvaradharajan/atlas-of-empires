@@ -12,10 +12,10 @@ ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)
 
 def frac(d):
     """'1916-07-01' -> 1916.497 (same formula as fracDate in app.js)."""
-    parts = [int(x) for x in str(d).split("-") if x != ""]
-    neg = str(d).startswith("-")
-    if neg:
-        return -parts[0]
+    sd = str(d)
+    parts = [int(x) for x in sd.lstrip("-").split("-") if x != ""]
+    if sd.startswith("-"):
+        parts[0] = -parts[0]  # BCE: '-216-08-02' -> -216 + months (year y spans [y, y+1))
     y, m, dd = (parts + [0, 0])[:3]
     return y + ((m - 1) * 30.4375 + (dd - 1 if dd else 0)) / 365.25 if m else float(y)
 

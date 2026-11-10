@@ -1212,7 +1212,7 @@ const fracDate = (s, fallback) => { // "1916-07-01" -> 1916.497 (fractional year
   const m = String(s ?? "").match(/^(-?\d{1,4})(?:-(\d{2}))?(?:-(\d{2}))?$/);
   if (!m) return fallback ?? NaN;
   const y = +m[1], mo = m[2] ? +m[2] : 0, d = m[3] ? +m[3] : 0;
-  return mo && y >= 0 ? y + ((mo - 1) * 30.4375 + (d ? d - 1 : 0)) / 365.25 : y;
+  return mo ? y + ((mo - 1) * 30.4375 + (d ? d - 1 : 0)) / 365.25 : y; // BCE too: year y spans [y, y+1)
 };
 const evTime = (e) => (e.year >= 0 ? fracDate(e.date, e.year) : e.year);
 async function openWar(id, idx = 0, chap = null) {

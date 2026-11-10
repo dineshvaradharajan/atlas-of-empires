@@ -78,15 +78,15 @@ def check(war_id):
         msg = f"arrow '{a['name']}' ends {a['end']} at {tip}: map shows {side_name(got)} ground ({where}), {d:.0f} km from the nearest front ({fname})"
         (errs if got is not None else warns).append(msg)
 
-    # battles and land events near a front
-    for b in C.get("battles", []):
+    # battles and land events near a front (only for wars that draw front lines; dynastic wars and insurgencies may not)
+    for b in (C.get("battles", []) if W.fronts else []):
         if not b.get("lonlat") or NAVAL.search(b["name"]):
             continue
         t = (geo.frac(b["start"]) + geo.frac(b.get("end", b["start"]))) / 2
         d, fname = W.front_dist(b["lonlat"], t)
         if d > BATTLE_FRONT_KM:
             warns.append(f"battle '{b['name']}' ({fmt(t)}) is {d:.0f} km from any front line" + (f" (nearest: {fname})" if fname else " (no front active)"))
-    for e in W.war["events"]:
+    for e in (W.war["events"] if W.fronts else []):
         if e.get("kind") not in ("battle", "invasion") or not e.get("lonlat") or NAVAL.search(e["text"]):
             continue
         t = geo.frac(e.get("date") or e["year"])
