@@ -187,6 +187,7 @@ async function init() {
   fetchJSON("data/physical.json").then(preparePhysical).then(() => draw()).catch(() => {}); // rivers, lakes, sea names: drawn once loaded
   if (GL) { GL.loadTexture("relief", "data/relief.jpg"); GL.loadTexture("shelf", "data/shelf.png"); } // terrain shading; seabed for ice-age coasts
   fetchJSON("data/iceage.json").then((d) => { S.iceage = prepareIceage(d); draw(); }).catch(() => {});
+  fetchJSON("data/disputed.json").then((d) => { S.disputed = d.map((a) => ({ ...a, f: { type: "Feature", geometry: { type: "MultiPolygon", coordinates: a.coords.map(wind) }, properties: {} } })); draw(); }).catch(() => {});
   { const im = new Image(); im.onload = () => { const c = document.createElement("canvas"); c.width = im.width; c.height = im.height; const x = c.getContext("2d", { willReadFrequently: true }); x.drawImage(im, 0, 0); S.shelfPix = { w: im.width, h: im.height, d: x.getImageData(0, 0, im.width, im.height).data }; }; im.src = "data/shelf.png"; }
   if (corr) { S.corr = { realms: corr.realms || {}, base: corr.base || {} }; correctTimelines(); }
   S.supps = prepareSupplements(supps);
@@ -861,6 +862,8 @@ function setupMap() {
       tip.innerHTML = p.recon
         ? `<b>${esc(p.n)}</b><div class="m">Reconstructed from ${esc(S.supps.find((x) => x.id === p.supp)?.title || "historical sources")} · approximate borders, c. ${shortYear(p.f)}–${shortYear(p.t)}</div>`
         : `<b>${esc(clean(p.n))}</b>${grp}<div class="m">${fmtArea(p.a)} · borders ${shortYear(p.f)}–${shortYear(p.t)}</div>${fix}`;
+      const da = S.disputed && !S.war ? disputedAt(projection.invert([S.t.invertX(x), S.t.invertY(y)])) : null;
+      if (da && !(VIEWER && da.admin === VIEWER)) tip.innerHTML += disputedNote(da);
     } else if (it.kind === "culture") {
       tip.innerHTML = it.corrected
         ? `<b>${esc(it.p.n)}</b><div class="m">No unified state in ${plainYear(S.year)} (map correction; the data draws “${esc(clean(it.p.fixed))}”)</div>`
@@ -926,6 +929,7 @@ function draw() {
   }
   drawWater();
   drawIce();
+  drawDisputed();
   drawOccupations();
 
   if (S.showGhost && S.ghost && sel === S.ghost.key && S.ghost.year !== S.year) {
@@ -952,13 +956,90 @@ function draw() {
   drawMomentPin();
 }
 
+// ---------------------------------------------------------------- disputed areas (data/disputed.json, tools/disputed.py)
+// Like Google Maps: everyone sees a disputed area outlined with a dashed line; a viewer in a country that claims it sees it
+// drawn that country's way, dotted and in its colour (e.g. Pakistan- and China-held parts of Kashmir for viewers in India).
+// The viewer's country comes from the browser's time zone; ?pov=IND (or ?pov=none) overrides it.
+const TZ_COUNTRY = {
+  "Asia/Kolkata": "IND", "Asia/Calcutta": "IND", "Asia/Karachi": "PAK", "Asia/Shanghai": "CHN", "Asia/Chongqing": "CHN", "Asia/Harbin": "CHN", "Asia/Urumqi": "CHN",
+  "Asia/Taipei": "TWN", "Asia/Tokyo": "JPN", "Asia/Seoul": "KOR", "Europe/Kyiv": "UKR", "Europe/Kiev": "UKR", "Europe/London": "GBR", "Europe/Madrid": "ESP",
+  "Atlantic/Canary": "ESP", "Africa/Casablanca": "MAR", "Asia/Damascus": "SYR", "Asia/Beirut": "LBN", "Asia/Gaza": "PSE", "Asia/Hebron": "PSE",
+  "Asia/Tbilisi": "GEO", "Asia/Baku": "AZE", "Europe/Chisinau": "MDA", "America/Caracas": "VEN", "Asia/Kathmandu": "NPL", "Asia/Katmandu": "NPL",
+  "Asia/Ho_Chi_Minh": "VNM", "Asia/Saigon": "VNM", "Asia/Manila": "PHL", "Asia/Kuala_Lumpur": "MYS", "Asia/Kuching": "MYS", "Asia/Nicosia": "CYP",
+  "Europe/Nicosia": "CYP", "Europe/Belgrade": "SRB", "Africa/Mogadishu": "SOM", "Africa/Juba": "SSD", "Africa/Khartoum": "SDN", "Europe/Moscow": "RUS",
+  "Asia/Jerusalem": "ISR", "America/Paramaribo": "SUR", "Europe/Lisbon": "PRT", "America/Montevideo": "URY", "America/Santiago": "CHL",
+  "Asia/Riyadh": "SAU", "Asia/Dubai": "ARE", "America/Havana": "CUB", "America/Port-au-Prince": "HTI", "Indian/Mauritius": "MUS",
+  "Indian/Antananarivo": "MDG", "Indian/Comoro": "COM", "Indian/Mahe": "SYC", "Africa/Djibouti": "DJI", "Africa/Malabo": "GNQ",
+  "America/Tegucigalpa": "HND", "America/Guatemala": "GTM", "Asia/Brunei": "BRN", "America/Bogota": "COL", "America/Managua": "NIC",
+  "America/Jamaica": "JAM", "Europe/Dublin": "IRL", "Europe/Copenhagen": "DNK", "Atlantic/Reykjavik": "ISL", "America/Sao_Paulo": "BRA",
+};
+const COUNTRY = { // display name and capital (to find the country's colour on the map)
+  IND: ["India", [77.2, 28.6]], PAK: ["Pakistan", [73.05, 33.7]], CHN: ["China", [116.4, 39.9]], TWN: ["Taiwan", [121.5, 25.03]], JPN: ["Japan", [139.7, 35.7]],
+  KOR: ["South Korea", [127, 37.55]], UKR: ["Ukraine", [30.5, 50.45]], ARG: ["Argentina", [-58.4, -34.6]], GBR: ["the United Kingdom", [-0.13, 51.5]],
+  ESP: ["Spain", [-3.7, 40.4]], MAR: ["Morocco", [-6.84, 34.0]], SYR: ["Syria", [36.3, 33.5]], LBN: ["Lebanon", [35.5, 33.9]], PSE: ["Palestine", [35.2, 31.9]],
+  GEO: ["Georgia", [44.8, 41.7]], AZE: ["Azerbaijan", [49.9, 40.4]], MDA: ["Moldova", [28.85, 47.0]], VEN: ["Venezuela", [-66.9, 10.5]], NPL: ["Nepal", [85.3, 27.7]],
+  VNM: ["Vietnam", [105.85, 21.0]], PHL: ["the Philippines", [121, 14.6]], MYS: ["Malaysia", [101.7, 3.15]], CYP: ["Cyprus", [33.4, 35.17]], SRB: ["Serbia", [20.46, 44.8]],
+  SOM: ["Somalia", [45.3, 2.04]], SSD: ["South Sudan", [31.6, 4.85]], SDN: ["Sudan", [32.5, 15.6]], RUS: ["Russia", [37.6, 55.75]], ISR: ["Israel", [35.2, 31.78]],
+  USA: ["the United States", [-77, 38.9]], FRA: ["France", [2.35, 48.85]], MUS: ["Mauritius", [57.5, -20.16]], MDG: ["Madagascar", [47.5, -18.9]],
+  SUR: ["Suriname", [-55.2, 5.85]], PRT: ["Portugal", [-9.14, 38.7]], URY: ["Uruguay", [-56.2, -34.9]], CHL: ["Chile", [-70.65, -33.45]], SAU: ["Saudi Arabia", [46.7, 24.7]],
+  ARE: ["the UAE", [54.37, 24.45]], CUB: ["Cuba", [-82.4, 23.1]], HTI: ["Haiti", [-72.3, 18.55]], CAN: ["Canada", [-75.7, 45.4]], IRL: ["Ireland", [-6.26, 53.35]],
+  DNK: ["Denmark", [12.57, 55.68]], ISL: ["Iceland", [-21.9, 64.15]], COM: ["Comoros", [43.25, -11.7]], SYC: ["Seychelles", [55.45, -4.62]], DJI: ["Djibouti", [43.15, 11.6]],
+  GNQ: ["Equatorial Guinea", [8.78, 3.75]], HND: ["Honduras", [-87.2, 14.1]], GTM: ["Guatemala", [-90.5, 14.6]], BRA: ["Brazil", [-47.9, -15.8]], COL: ["Colombia", [-74.07, 4.71]],
+  NIC: ["Nicaragua", [-86.25, 12.13]], JAM: ["Jamaica", [-76.8, 18.0]], BRN: ["Brunei", [114.94, 4.9]], EGY: ["Egypt", [31.24, 30.04]], KEN: ["Kenya", [36.82, -1.29]],
+  GUY: ["Guyana", [-58.16, 6.8]], BTN: ["Bhutan", [89.64, 27.47]], IRN: ["Iran", [51.39, 35.69]], BLZ: ["Belize", [-88.77, 17.25]], GAB: ["Gabon", [9.45, 0.39]], ERI: ["Eritrea", [38.93, 15.33]],
+  SAH: ["the Sahrawi Republic", [-13.2, 27.15]],
+};
+const cname = (iso) => COUNTRY[iso]?.[0] || iso;
+const VIEWER = (() => {
+  const q = new URLSearchParams(location.search).get("pov");
+  if (q) return /^none$/i.test(q) ? null : q.toUpperCase();
+  try { return TZ_COUNTRY[Intl.DateTimeFormat().resolvedOptions().timeZone] || null; } catch { return null; }
+})();
+const disputedNow = (y = S.year) => (S.disputed || []).filter((a) => a.since <= y && (a.until == null || y <= a.until));
+function viewerColor() { // the colour of the realm drawn at the viewer's capital this year
+  const cap = COUNTRY[VIEWER]?.[1];
+  if (!cap) return theme.highlight;
+  const at = `${S.year}|${S.sel}|${S.hover}`;
+  if (S.viewerColorAt?.at === at) return S.viewerColorAt.c;
+  const it = S.items.find((x) => x.kind === "state" && d3.geoContains(x.f, cap)); // as drawn now (red while selected)
+  const fl = it ? fillOf(it) : null, c = fl && fl !== "HATCH" ? fl : theme.highlight;
+  S.viewerColorAt = { at, c };
+  return c;
+}
+function drawDisputed() { // inside the map transform
+  if (S.war) return;
+  const list = disputedNow();
+  if (!list.length) return;
+  const k = S.t.k, vc = VIEWER ? viewerColor() : null;
+  ctx.save(); ctx.lineJoin = "round";
+  for (const a of list) {
+    if (VIEWER && a.admin === VIEWER) continue; // the viewer's country holds it: drawn as an ordinary part of it
+    const p = pathOf(a.f);
+    if (VIEWER && a.claim.includes(VIEWER)) { // claimed by the viewer's country: its colour, dotted edge
+      ctx.globalAlpha = 0.72; ctx.fillStyle = vc; ctx.fill(p); ctx.globalAlpha = 1;
+      ctx.setLineDash([1.6 / k, 2.6 / k]); ctx.lineCap = "round"; ctx.strokeStyle = vc; ctx.lineWidth = 1.8 / k; ctx.stroke(p);
+    } else { // everyone else: a dashed outline
+      ctx.setLineDash([4 / k, 3 / k]); ctx.lineCap = "butt"; ctx.strokeStyle = theme.ink3; ctx.lineWidth = 0.9 / k; ctx.stroke(p);
+    }
+  }
+  ctx.restore();
+}
+function disputedAt(ll) { return ll ? disputedNow().find((a) => d3.geoContains(a.f, ll)) : null; }
+function disputedNote(a) {
+  const mine = VIEWER && a.claim.includes(VIEWER) && a.admin !== VIEWER;
+  const name = (VIEWER && a.names?.[VIEWER]) || a.name;
+  const held = a.admin ? `administered by ${cname(a.admin)}` : "";
+  const claims = a.claim.length ? `claimed by ${a.claim.map(cname).join(" and ")}` : "";
+  return `<div class="m disp"><b>${esc(name)}</b> · disputed${held || claims ? `: ${[held, claims].filter(Boolean).join("; ")}` : ""}${mine ? `. Shown as part of ${cname(VIEWER)}, as on maps there.` : ""}</div>`;
+}
+
 // ---------------------------------------------------------------- the end of the ice age (data/iceage.json)
 // Sea level relative to today (a published curve, content/iceage) decides which shallow seabed was dry land; ice-sheet
 // outlines are dated slices drawn on the land they covered.
+// d3 reads a ring's winding to tell inside from outside: outer rings must enclose the small side, holes the large one
+const wind = (rings) => rings.map((r, i) => { const big = d3.geoArea({ type: "Polygon", coordinates: [r] }) > 2 * Math.PI; return (i === 0) === big ? r.slice().reverse() : r; });
 function prepareIceage(d) {
   const sl = (d.sealevel || []).slice().sort((a, b) => a.year - b.year);
-  // d3 reads a ring's winding to tell inside from outside: outer rings must enclose the small side, holes the large one
-  const wind = (rings) => rings.map((r, i) => { const big = d3.geoArea({ type: "Polygon", coordinates: [r] }) > 2 * Math.PI; return (i === 0) === big ? r.slice().reverse() : r; });
   const ice = (d.ice || []).filter((x) => !/^Antarctic/.test(x.name)) // its outline runs through the pole along the date line; mostly off the map anyway
     .map((x) => ({ ...x, f: { type: "Feature", geometry: { type: "Polygon", coordinates: wind(x.coords) }, properties: {} } }));
   const years = [...new Set(ice.map((x) => x.year))].sort((a, b) => a - b);
@@ -1097,6 +1178,7 @@ function drawGL() {
   ctx.lineJoin = "round";
   drawWater();
   drawIce();
+  drawDisputed();
   for (const it of S.items) { // borders the GPU skips: reconstructions (dashed, coast-clipped) and crops
     if (it.kind !== "state" || !(it.p.recon || it.p.crop || it.p.cut)) continue;
     ctx.save(); clipFor(ctx, it);

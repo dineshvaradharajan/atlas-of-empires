@@ -496,3 +496,4 @@ ol.placetl .py { font: 600 12px var(--sans); color: var(--ink-3); font-variant-n
 ol.placetl .pn { font: 600 14px var(--sans); }
 ol.placetl .pn .sq { display: inline-block; width: 10px; height: 10px; margin-right: 8px; vertical-align: 0; }
 ol.placetl li.now .pn { color: var(--highlight); }
+#tooltip .m.disp { margin-top: 4px; border-top: 1px solid var(--rule); padding-top: 4px; }
