@@ -169,7 +169,7 @@ function rewind(fc) {
 }
 const chunkOf = (y) => { let c = S.clio.chunks[0]; for (const s of S.clio.chunks) if (s <= y) c = s; return c; };
 const loadChunk = (c) => memo(S.chunks, c, `data/clio/${c}.json`, rewind);
-const HOME_YEAR = 1683; // the year the atlas opens on
+let HOME_YEAR = 1683; // the year the atlas opens on: replaced at start-up by the year of something that happened on today's date
 const baseYearFor = (y) => S.baseYears.reduce((b, v) => (Math.abs(v - y) < Math.abs(b - y) ? v : b), S.baseYears[0]);
 const loadBase = (by) => memo(S.bases, by, `data/${by}.json`, rewind);
 
@@ -203,6 +203,7 @@ async function init() {
   setupChart();
   setupSearch();
   setupUI();
+  pickToday();
   S.restoring = true;
   await applyHash(parseHash(), true);
   setTimeout(() => (S.restoring = false), 0);
@@ -420,6 +421,34 @@ function parseHash() {
 // events within the same page only updates the address. Several writes in one step make a single entry.
 const pageOf = (h) => { const r = decodeURIComponent(h.replace(/^#/, "")); const m = r.match(/^(?:-?\d+)?(?:\/(.+))?$/); return m ? "y/" + (m[1] || "") : r.replace(/^([we]\/[^/]+).*$/, "$1"); };
 // Show the page a web address names. Unknown addresses say so and fall back to the nearest sensible page.
+// "On this day": the home page opens on a dated event (from the wars) that happened on today's date in another year,
+// or the nearest date to it; the same pick all day.
+function pickToday() {
+  const now = new Date(), md = [now.getMonth() + 1, now.getDate()];
+  const doy = (m, d) => new Date(2001, m - 1, d).getTime() / 864e5;
+  const today = doy(...md), all = [];
+  for (const w of S.content.wars) (w.events || []).forEach((e, i) => {
+    const m = String(e.date || "").match(/-(\d\d)-(\d\d)$/);
+    if (!m || !e.lonlat || e.year == null || e.year > now.getFullYear() - 1) return;
+    let gap = Math.abs(doy(+m[1], +m[2]) - today); gap = Math.min(gap, 365 - gap);
+    all.push({ w, i, e, gap });
+  });
+  if (!all.length) return;
+  const best = Math.min(...all.map((x) => x.gap));
+  if (best > 10) return;
+  const pool = all.filter((x) => x.gap === best);
+  const pick = pool[hash(`${now.getFullYear()}-${md.join("-")}`) % pool.length];
+  S.today = { war: pick.w, idx: pick.i, e: pick.e, exact: best === 0 };
+  HOME_YEAR = pick.e.year;
+}
+function todayHTML() {
+  const t = S.today;
+  if (!t || S.year !== HOME_YEAR || S.sel) return "";
+  const d = new Date(), md = d.toLocaleDateString("en-GB", { day: "numeric", month: "long" });
+  return `<aside class="today"><div class="kicker">${t.exact ? `On this day · ${esc(md)}` : `Near this day · ${esc(t.e.label || "")}`}</div>
+    <p class="tt">${esc(t.e.text)}</p><p class="note">${esc(t.e.label || "")} · ${esc(t.war.name)}</p>
+    <button class="playj" data-today="1">Follow it on the map →</button></aside>`;
+}
 function brokenLink(what) {
   let t = $("#toast");
   if (!t) { t = document.createElement("div"); t.id = "toast"; t.setAttribute("role", "status"); $("#stage").append(t); }
@@ -808,7 +837,10 @@ function setupMap() {
     if (S.chartKind && !S.war && !S.journey) { renderListChart(S.chartKind); updateChartCursor(); } // its lanes are packed to the width
     pick.width = r.width; pick.height = r.height;
     const small = r.width < 600, pad = small ? 8 : 28;
-    projection.fitExtent([[pad, pad], [r.width - pad - (small ? 36 : 50), r.height - pad - (small ? 0 : 24)]], { type: "Sphere" });
+    // fit the lived-in world (84°N to 57°S), not the whole sphere: Antarctica and the empty polar seas wasted a third of the canvas
+    const edge = []; for (let lon = -180; lon <= 180; lon += 5) edge.push([lon, 84], [lon, -57]);
+    for (let lat = -57; lat <= 84; lat += 3) edge.push([-180, lat], [180, lat]);
+    projection.fitExtent([[small ? 4 : 10, small ? 4 : 8], [r.width - (small ? 40 : 56), r.height - (small ? 4 : 30)]], { type: "MultiPoint", coordinates: edge });
     sphere2d = new Path2D(geoPath({ type: "Sphere" }));
     grat2d = new Path2D(geoPath(d3.geoGraticule10()));
     pathCache = new WeakMap();
@@ -1461,6 +1493,7 @@ function worldHTML() {
   const top = realmsNow().slice(0, 6);
   let h = `<div class="kicker">The world in</div><p class="year">${bigYear(y)}</p>`;
   h += `<h1 class="head">${esc(near ? ch.title : eraOf(y)[2])}</h1>`;
+  h += todayHTML();
   if (ch) {
     const [lead, rest] = splitLead(ch.overview); // two sentences up front; the rest on request
     h += `<p class="prose">${esc(lead)}</p>`;
@@ -2660,6 +2693,7 @@ function drawListPins() {
 function drawMomentPin() {
   let m = S.view === "moment" && S.moment;
   if (S.view === "place" && S.place) m = { lonlat: S.place.ll, title: "" }; // the spot being traced
+  if (!m && S.today && S.view === "world" && !S.sel && !S.war && !S.journey && S.year === HOME_YEAR) { const tx = S.today.e.text; m = { lonlat: S.today.e.lonlat, title: tx.length > 48 ? tx.slice(0, 46) + "…" : tx }; } // on this day
   if (!m && S.war && !S.callPt) { const e = S.war.events[S.wIdx]; if (e && e.lonlat && S.cineK.T[S.wIdx + 1] <= S.wt + 1e-6) m = { lonlat: e.lonlat, title: "" }; } // the subtitle carries the text
   if (!m && S.journey) {
     const ev = S.jEvent != null ? S.journey.events[S.jEvent] : currentEvent(S.journey, S.year);
@@ -3038,6 +3072,7 @@ function setupUI() {
       }
       // other actions (play-chapter, close-site, …) are handled below
     }
+    if (ev.target.closest("[data-today]") && S.today) return openWar(S.today.war.id, S.today.idx);
     const mo = ev.target.closest("[data-moment]");
     if (mo) return openMoment(mo.dataset.moment);
     const so = ev.target.closest("[data-site]");

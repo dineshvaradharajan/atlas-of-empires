@@ -497,3 +497,9 @@ ol.placetl .pn { font: 600 14px var(--sans); }
 ol.placetl .pn .sq { display: inline-block; width: 10px; height: 10px; margin-right: 8px; vertical-align: 0; }
 ol.placetl li.now .pn { color: var(--highlight); }
 #tooltip .m.disp { margin-top: 4px; border-top: 1px solid var(--rule); padding-top: 4px; }
+/* on this day */
+aside.today { border: 1px solid var(--ink); padding: 14px 16px; display: flex; flex-direction: column; gap: 6px; }
+aside.today .kicker { color: var(--highlight); }
+aside.today .tt { margin: 0; font: 700 18px/1.3 var(--display); }
+aside.today .note { margin: 0; }
+aside.today .playj { align-self: flex-start; margin-top: 4px; }
