@@ -1,0 +1,697 @@
+[
+  {
+    "id": "conquest-of-the-aztec-empire",
+    "name": "Spanish conquest of the Aztec Empire",
+    "moment": "aztec-conquest",
+    "span": [
+      1519,
+      1521
+    ],
+    "dateLabel": "February 1519 – 13 August 1521",
+    "summary": "In 1519 Hernán Cortés sailed from Cuba with a few hundred Spaniards, defying the governor who had cancelled his expedition. Landing on the Gulf coast, he won over the Totonacs of Cempoala, who resented Aztec tribute, and after a series of battles made an alliance with Tlaxcala, the Aztecs' unconquered enemy. In November 1519 Moctezuma II received him in Tenochtitlan, and Cortés soon held the emperor hostage. A massacre of Aztec nobles in May 1520 set off an uprising, and on La Noche Triste (30 June 1520) the Spaniards and their allies fled the city with heavy losses. Sheltered by Tlaxcala, Cortés rebuilt his forces while smallpox ravaged the Valley of Mexico and killed the new emperor, Cuitláhuac. From Texcoco, with thirteen brigantines and tens of thousands of Indigenous allies, he besieged Tenochtitlan from May 1521. The city fell on 13 August 1521, when Cuauhtémoc was captured, and New Spain was built on its ruins.",
+    "casualties": "Estimates vary widely: about 1,800 Spaniards are estimated to have died over the whole campaign and many thousands of their Indigenous allies, while an estimated 100,000 to 240,000 Aztec warriors and civilians were killed, besides the far larger toll of the 1520 smallpox epidemic.",
+    "sides": [
+      {
+        "name": "Spain and its Indigenous allies (Tlaxcala, Totonacs, Texcoco and others)",
+        "members": [
+          {
+            "clio": "(Spanish Empire)",
+            "from": 1519,
+            "to": 1521
+          }
+        ]
+      },
+      {
+        "name": "Aztec Triple Alliance (Mexica)",
+        "members": [
+          {
+            "clio": "Aztec Triple Alliance",
+            "from": 1519,
+            "to": 1520,
+            "toDate": "1521-08-13"
+          }
+        ]
+      }
+    ],
+    "events": [
+      {
+        "date": "1519-02-10",
+        "year": 1519,
+        "label": "10 Feb 1519",
+        "text": "Cortés's expedition leaves Cuba",
+        "detail": "Two earlier Spanish voyages had touched the coasts of Yucatán and the Gulf of Mexico and heard of a rich empire inland. Diego Velázquez, governor of Cuba, chose Hernán Cortés to lead a third expedition, then cancelled his commission. Cortés sailed anyway in February 1519 with 11 ships carrying about 630 men, a few horses and some cannon, following the route of the first voyage along the Yucatán coast.",
+        "lonlat": [
+          -84.95,
+          21.86
+        ],
+        "kind": "other"
+      },
+      {
+        "date": "1519-03-24",
+        "year": 1519,
+        "label": "24 Mar 1519",
+        "text": "Potonchán makes peace and gives Cortés the interpreter Malintzin",
+        "detail": "After defeating the Chontal Maya of Potonchán, on the Tabasco coast, in two battles, Cortés received their submission on 24 March 1519, with gifts that included twenty enslaved women. One of them, a Nahua woman the Spaniards called Doña Marina and the Nahuas Malintzin, spoke both Maya and Nahuatl. Working with Gerónimo de Aguilar, a shipwrecked Spaniard who spoke Maya, she let Cortés talk to the Aztecs, and she became his chief interpreter and adviser.",
+        "lonlat": [
+          -92.65,
+          18.55
+        ],
+        "kind": "political"
+      },
+      {
+        "date": "1519-04-22",
+        "year": 1519,
+        "label": "22 Apr 1519",
+        "text": "Cortés lands on the Gulf coast near San Juan de Ulúa",
+        "detail": "The fleet anchored off San Juan de Ulúa, and the Spaniards came ashore on Good Friday, 22 April 1519. Envoys of the Aztec emperor Moctezuma II soon arrived with lavish gifts, and Cortés tried to impress them with a display of cannon fire and horses. The gifts were meant to persuade the strangers to leave, but they only convinced Cortés that great wealth lay inland.",
+        "lonlat": [
+          -96.13,
+          19.2
+        ],
+        "kind": "invasion"
+      },
+      {
+        "date": "1519-06",
+        "year": 1519,
+        "label": "Jun 1519",
+        "text": "Veracruz is founded and the Totonacs of Cempoala ally with Cortés",
+        "detail": "To escape the authority of Governor Velázquez, Cortés had his men found a town, La Villa Rica de la Vera Cruz, whose council named him its captain. At Cempoala, capital of the Totonacs, he persuaded the ruler Xicomecoatl to rebel against the Aztecs, and Moctezuma's tax collectors were seized. Cortés then sank his ships so that his men could not return to Cuba.",
+        "lonlat": [
+          -96.41,
+          19.45
+        ],
+        "kind": "political"
+      },
+      {
+        "date": "1519-09-02",
+        "year": 1519,
+        "label": "2–5 Sep 1519",
+        "text": "Battles with the Tlaxcalans",
+        "detail": "Marching inland from 16 August with Totonac porters and warriors, the Spaniards entered the lands of Tlaxcala, a confederacy that had resisted the Aztecs for generations. Otomí and Tlaxcalan armies attacked them in a series of battles from 2 to 5 September 1519 and the fighting went on for days. Unable to destroy the Spaniards, and seeing them as enemies of Moctezuma, Tlaxcala's leaders chose to make peace.",
+        "lonlat": [
+          -97.98,
+          19.45
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1519-09-23",
+        "year": 1519,
+        "label": "23 Sep 1519",
+        "text": "Cortés enters Tlaxcala: the alliance that decided the war",
+        "detail": "On 23 September 1519 Cortés entered the city of Tlaxcala, welcomed by its rulers Maxixcatzin and Xicotencatl the Elder, who saw the Spaniards as allies against the Aztecs. Tlaxcala had been encircled and blockaded by the empire for decades. Its warriors, porters and supplies, and its refuge after defeats, would make the conquest possible: tens of thousands of Tlaxcalans fought beside the Spaniards to the end.",
+        "lonlat": [
+          -98.24,
+          19.32
+        ],
+        "kind": "turning-point"
+      },
+      {
+        "date": "1519-10-18",
+        "year": 1519,
+        "label": "18 Oct 1519",
+        "text": "The Cholula massacre",
+        "detail": "Moctezuma's envoys steered Cortés through Cholula, a great sacred city that had broken with Tlaxcala to become an Aztec tributary. Claiming that the Cholulans planned an ambush, and urged on by his Tlaxcalan allies, Cortés had the city's nobles seized and killed in the main temple courtyard, and the city was sacked. Cortés reported about 3,000 dead and other witnesses far more; the massacre frightened other cities into negotiating.",
+        "lonlat": [
+          -98.3,
+          19.06
+        ],
+        "kind": "atrocity"
+      },
+      {
+        "date": "1519-11-08",
+        "year": 1519,
+        "label": "8 Nov 1519",
+        "text": "Moctezuma receives Cortés in Tenochtitlan",
+        "detail": "Crossing the mountains between the volcanoes, the Spaniards and their allies entered Tenochtitlan along the southern causeway on 8 November 1519. The island capital had an estimated 60,000 to more than 300,000 people, one of the largest cities in the world. Moctezuma met Cortés on the causeway and lodged the Spaniards in the palace of his father Axayacatl, at the heart of the city.",
+        "lonlat": [
+          -99.13,
+          19.43
+        ],
+        "kind": "political"
+      },
+      {
+        "date": "1519-11-14",
+        "year": 1519,
+        "label": "14 Nov 1519",
+        "text": "Cortés takes Moctezuma hostage",
+        "detail": "After Aztec forces on the coast killed several Spaniards left at Veracruz, Cortés and his captains forced Moctezuma to move into the Spaniards' quarters, where he was held from 14 November 1519. The emperor kept ruling in name, under Cortés's control, and was made to swear allegiance to the Spanish king and hand over his treasure, while resentment grew among the Aztec nobility.",
+        "lonlat": [
+          -99.13,
+          19.43
+        ],
+        "kind": "political"
+      },
+      {
+        "date": "1520-05",
+        "year": 1520,
+        "label": "May 1520",
+        "text": "Massacre at the Great Temple during the Toxcatl festival",
+        "detail": "Cortés had left Pedro de Alvarado in charge of the small garrison in Tenochtitlan. During the festival of Toxcatl in May 1520, Alvarado, suspecting a plot, had his men close the temple courtyard and attack the unarmed nobles and dancers, killing many. The city rose in arms, and the Spaniards and their Tlaxcalan allies were besieged in their palace. Moctezuma, still a captive, was made to call for calm.",
+        "lonlat": [
+          -99.13,
+          19.43
+        ],
+        "kind": "atrocity"
+      },
+      {
+        "date": "1520-05-27",
+        "year": 1520,
+        "label": "27 May 1520",
+        "text": "Cortés defeats Narváez at Cempoala",
+        "detail": "Governor Velázquez sent Pánfilo de Narváez with some 900 Spaniards and 19 ships to arrest Cortés, and Narváez made Cempoala his base. Leaving Tenochtitlan with a few hundred men, Cortés attacked by night on 27 May 1520 with Chinantec allies, captured Narváez and won over most of his soldiers with promises of riches. Some of the newcomers carried smallpox, which then spread inland.",
+        "lonlat": [
+          -96.41,
+          19.45
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1520-06-30",
+        "year": 1520,
+        "label": "30 Jun 1520",
+        "text": "La Noche Triste: the Spaniards flee Tenochtitlan",
+        "detail": "Cortés returned to the besieged palace on 24 June, but the city's nobles had chosen a new ruler, Cuitláhuac, and Moctezuma was killed in late June, by stones from his own people according to the Spaniards, by the Spaniards according to Aztec accounts. On the rainy night of 30 June 1520 Cortés broke out along the Tlacopan causeway. Hundreds of Spaniards and thousands of Tlaxcalans were killed, drowned or captured, and most of the treasure was lost.",
+        "lonlat": [
+          -99.17,
+          19.44
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1520-07-07",
+        "year": 1520,
+        "label": "7 Jul 1520",
+        "text": "Battle of Otumba",
+        "detail": "The survivors retreated north around the lakes, harassed all the way. On 7 July 1520, on the plain near Otumba, a large Aztec army blocked their road to Tlaxcala. Cortés and his horsemen charged the Aztec commander, the cihuacoatl Matlatzincatl, and killed him, and the Aztec army broke off. Days later the exhausted, mostly wounded Spaniards reached Tlaxcala, whose rulers refused Aztec offers and kept the alliance.",
+        "lonlat": [
+          -98.75,
+          19.7
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1520-08",
+        "year": 1520,
+        "label": "Aug 1520",
+        "text": "The Tepeaca campaign",
+        "detail": "To rebuild his reputation and secure the roads to the coast, Cortés led Spaniards and Tlaxcalans against Tepeaca, an Aztec tributary whose people had killed Spaniards, from early August 1520. Tepeaca was defeated and became an allied town. Other tributary towns, seeing the Aztecs unable to protect them, began to change sides, while Cortés received reinforcements from ships arriving on the coast.",
+        "lonlat": [
+          -97.9,
+          18.97
+        ],
+        "kind": "invasion"
+      },
+      {
+        "date": "1520-12-04",
+        "year": 1520,
+        "label": "4 Dec 1520",
+        "text": "Smallpox kills the emperor Cuitláhuac",
+        "detail": "Smallpox, unknown in the Americas, spread through the Valley of Mexico from the autumn of 1520 for about seventy days. Many thousands died, and others starved because no one was well enough to feed them. The emperor Cuitláhuac died on 4 December 1520, after ruling for eighty days; he was succeeded early in 1521 by Cuauhtémoc. The epidemic also struck Tlaxcala, killing the ruler Maxixcatzin.",
+        "lonlat": [
+          -99.13,
+          19.43
+        ],
+        "kind": "other"
+      },
+      {
+        "date": "1520-12-26",
+        "year": 1520,
+        "label": "26 Dec 1520",
+        "text": "Cortés marches on Texcoco, which becomes his base",
+        "detail": "On the day after Christmas 1520 Cortés left Tlaxcala with his Spaniards and more than 10,000 Tlaxcalan warriors under Chichimecatecuhtli, and crossed into the Valley of Mexico. At Texcoco, once the Aztecs' partner in the Triple Alliance, he installed a friendly ruler, Ixtlilxochitl II. Texcoco, on the eastern shore of the lake, became the base from which the siege of Tenochtitlan was prepared.",
+        "lonlat": [
+          -98.88,
+          19.51
+        ],
+        "kind": "invasion"
+      },
+      {
+        "date": "1521-04",
+        "year": 1521,
+        "label": "Apr 1521",
+        "text": "Cortés circles the lakes and fights at Xochimilco",
+        "detail": "Having won over Chalco and Tlalmanalco and beaten Aztec forces around Chalco in March 1521, Cortés set out in April with some 20,000 allied warriors on a circuit of the southern and western lakeshore. He fought a hard battle at Xochimilco, Tenochtitlan's ally, then found Coyoacán, Tlacopan and Azcapotzalco deserted, and returned to Texcoco, where thirteen brigantines built from Tlaxcalan timber were nearly ready.",
+        "lonlat": [
+          -99.1,
+          19.26
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1521-05-26",
+        "year": 1521,
+        "label": "26 May 1521",
+        "text": "The siege of Tenochtitlan begins",
+        "detail": "Three columns, each of about 200 Spaniards and 8,000 Indigenous warriors, took up positions on the lakeshore at Tlacopan under Pedro de Alvarado, Coyoacán under Cristóbal de Olid and Iztapalapa under Gonzalo de Sandoval. Alvarado and Olid cut the aqueduct from Chapultepec that carried the city's fresh water. Cortés launched the thirteen brigantines, which scattered the Aztec canoes and took control of the lake.",
+        "lonlat": [
+          -99.18,
+          19.42
+        ],
+        "kind": "invasion"
+      },
+      {
+        "date": "1521-06-30",
+        "year": 1521,
+        "label": "30 Jun 1521",
+        "text": "Aztec victory on the causeway: Spanish prisoners sacrificed",
+        "detail": "Cortés ordered a combined push into the city towards the great market of Tlatelolco but failed to fill in a breach behind his men. The Aztecs counter-attacked, Cortés was wounded and nearly captured, and dozens of Spaniards were taken alive and sacrificed at the Great Temple in sight of their comrades. Many allies briefly left the besiegers, but the blockade held and famine spread in the city.",
+        "lonlat": [
+          -99.14,
+          19.44
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1521-08-01",
+        "year": 1521,
+        "label": "1 Aug 1521",
+        "text": "The besiegers reach the marketplace of Tlatelolco",
+        "detail": "Advancing street by street along the causeways, the Spaniards and their allies razed each district they took and used the rubble to fill the canals. By the start of August they had broken into the market square of Tlatelolco, in the north of the island, where Alvarado's men set fire to the temple. The defenders, starving and drinking brackish water, were penned into the last corner of the city.",
+        "lonlat": [
+          -99.14,
+          19.45
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1521-08-13",
+        "year": 1521,
+        "label": "13 Aug 1521",
+        "text": "Tenochtitlan falls and Cuauhtémoc is captured",
+        "detail": "On 13 August 1521 Cuauhtémoc tried to escape across the lake by canoe and was captured by one of Sandoval's brigantines, and the last defenders surrendered. Tens of thousands had died in the siege, and allied warriors killed many of the survivors. The Aztec Empire ended; its tributary cities passed under Spanish rule, and Mexico City, capital of New Spain, was built on the ruins.",
+        "lonlat": [
+          -99.14,
+          19.45
+        ],
+        "kind": "turning-point"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Spanish conquest of the Aztec Empire (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Spanish_conquest_of_the_Aztec_Empire"
+      },
+      {
+        "title": "Fall of Tenochtitlan (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Fall_of_Tenochtitlan"
+      },
+      {
+        "title": "La Noche Triste (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/La_Noche_Triste"
+      },
+      {
+        "title": "Battle of Otumba (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Battle_of_Otumba"
+      },
+      {
+        "title": "Cholula massacre (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Cholula_massacre"
+      },
+      {
+        "title": "Battle of Cempoala (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Battle_of_Cempoala"
+      },
+      {
+        "title": "Tlaxcala (Nahua state) (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Tlaxcala_(Nahua_state)"
+      }
+    ]
+  },
+  {
+    "id": "paraguayan-war",
+    "name": "Paraguayan War (War of the Triple Alliance)",
+    "moment": null,
+    "span": [
+      1864,
+      1870
+    ],
+    "dateLabel": "12 November 1864 – 1 March 1870",
+    "summary": "In 1864 Brazil intervened in a civil war in Uruguay against the Blanco government, an ally of Paraguay. Paraguay's president, Francisco Solano López, who had warned that he would treat an occupation of Uruguay as a threat, seized a Brazilian steamer in November and invaded Brazil's province of Mato Grosso. When Argentina refused his army passage, Paraguay attacked Corrientes in April 1865, and Brazil, Argentina and Uruguay, now under a pro-Brazilian government, signed the Treaty of the Triple Alliance. Brazil's victory at Riachuelo gave the allies the rivers, and Paraguay's invading armies were destroyed or surrendered by late 1865. The allies invaded Paraguay in 1866, won at Tuyutí but were bloodily repulsed at Curupayty; under the Marquess of Caxias they took the fortress of Humaitá in 1868 and Asunción in January 1869. López fought on as a guerrilla until Brazilian troops killed him at Cerro Corá on 1 March 1870. Paraguay lost territory and a large share of its people.",
+    "casualties": "Estimates vary widely, from about 150,000 to 500,000 deaths in all; Paraguay may have lost 60–70 percent of its population of about 420,000–450,000, by one estimate, while Brazil lost an estimated 50,000 soldiers and Argentina about 18,000, many of them to disease and hunger.",
+    "sides": [
+      {
+        "name": "Triple Alliance (Brazil, Argentina, Uruguay)",
+        "members": [
+          {
+            "clio": "Empire of Brazil",
+            "from": 1864,
+            "to": 1870,
+            "fromDate": "1864-11-12",
+            "toDate": "1870-03-01"
+          },
+          {
+            "clio": "Oriental Republic of Uruguay",
+            "from": 1865,
+            "to": 1870,
+            "fromDate": "1865-02-20",
+            "toDate": "1870-03-01"
+          },
+          {
+            "clio": "Argentine Confederation",
+            "from": 1865,
+            "to": 1870,
+            "fromDate": "1865-04-13",
+            "toDate": "1870-03-01"
+          }
+        ]
+      },
+      {
+        "name": "Paraguay",
+        "members": [
+          {
+            "clio": "Paraguay",
+            "from": 1864,
+            "to": 1870,
+            "fromDate": "1864-11-12",
+            "toDate": "1870-03-01"
+          }
+        ]
+      }
+    ],
+    "events": [
+      {
+        "date": "1864-10-12",
+        "year": 1864,
+        "label": "12 Oct 1864",
+        "text": "Brazilian troops invade Uruguay",
+        "detail": "Brazil backed the Colorado rebel Venancio Flores against Uruguay's Blanco government of Atanasio Aguirre, which had rejected Brazilian demands over border raids. Paraguay's president, Francisco Solano López, warned in August that he would regard any occupation of Uruguay as an attack on the balance of the Platine region. Brazil ignored him, and on 12 October 1864 Brazilian troops crossed into Uruguay.",
+        "lonlat": [
+          -55.5,
+          -31.4
+        ],
+        "kind": "invasion"
+      },
+      {
+        "date": "1864-11-12",
+        "year": 1864,
+        "label": "12 Nov 1864",
+        "text": "Paraguay seizes the Brazilian steamer Marquês de Olinda",
+        "detail": "The Brazilian steamer Marquês de Olinda, carrying the new governor of Mato Grosso up the Paraguay River, called at Asunción on 11 November 1864. López sent the warship Tacuarí after her; on 12 November she was stopped near Concepción and brought back, and all aboard were arrested. The same day Paraguay broke off diplomatic relations with Brazil. A month later López launched his first offensive.",
+        "lonlat": [
+          -57.43,
+          -23.4
+        ],
+        "kind": "turning-point"
+      },
+      {
+        "date": "1864-12-27",
+        "year": 1864,
+        "label": "27 Dec 1864",
+        "text": "Paraguay invades Mato Grosso and attacks Fort Coimbra",
+        "detail": "Two Paraguayan columns invaded the Brazilian province of Mato Grosso. One, carried up the Paraguay River, attacked Fort Coimbra on 27 December 1864; its garrison of 154 men held out for three days before slipping away upriver. Albuquerque and Corumbá fell in January 1865, and the overland column took Dourados, Miranda and Nioaque, and Coxim in April, but the Paraguayans did not push on to Cuiabá.",
+        "lonlat": [
+          -57.79,
+          -19.92
+        ],
+        "kind": "invasion"
+      },
+      {
+        "date": "1865-02-20",
+        "year": 1865,
+        "label": "20 Feb 1865",
+        "text": "The Uruguayan War ends with Flores in power",
+        "detail": "After a Brazilian and Colorado siege, the Blanco stronghold of Paysandú fell on 2 January 1865, and the allies closed in on Montevideo. On 20 February 1865 the Blanco government gave way and Venancio Flores took power. Paraguay had lost its ally in Uruguay before its own army could arrive, and Flores's Uruguay sided with Brazil. Montevideo had been left isolated before it gave in.",
+        "lonlat": [
+          -56.19,
+          -34.9
+        ],
+        "kind": "political"
+      },
+      {
+        "date": "1865-03-23",
+        "year": 1865,
+        "label": "23 Mar 1865",
+        "text": "Paraguay's Congress votes for war with Argentina",
+        "detail": "In January 1865 López asked Argentina to let 20,000 Paraguayan soldiers cross the province of Corrientes to strike at Brazil; President Bartolomé Mitre refused. A Paraguayan congress met in March and on 23 March voted for war with Argentina, accusing it of favouring Brazil, and made López a field marshal. The declaration was sent to Buenos Aires on 29 March.",
+        "lonlat": [
+          -57.63,
+          -25.28
+        ],
+        "kind": "political"
+      },
+      {
+        "date": "1865-04-13",
+        "year": 1865,
+        "label": "13 Apr 1865",
+        "text": "Paraguayan forces seize Corrientes",
+        "detail": "On 13 April 1865 a Paraguayan squadron sailed down the Paraná, attacked two Argentine warships at Corrientes, and troops under General Wenceslao Robles took the city. Robles then advanced south along the river, taking Bella Vista, Empedrado and Goya, while the provincial government withdrew inland and Corrientes militia fought a guerrilla war. The attack brought Argentina into the war. Argentina declared war in early May.",
+        "lonlat": [
+          -58.83,
+          -27.47
+        ],
+        "kind": "invasion"
+      },
+      {
+        "date": "1865-05-01",
+        "year": 1865,
+        "label": "1 May 1865",
+        "text": "Brazil, Argentina and Uruguay sign the Treaty of the Triple Alliance",
+        "detail": "On 1 May 1865 Brazil, Argentina and Flores's Uruguay signed a secret treaty in Buenos Aires, naming Argentina's president Bartolomé Mitre allied commander-in-chief. They pledged to fight until López was removed and laid down Paraguay's future borders in their own favour. The treaty was meant to stay secret, but Britain obtained a copy and published it in 1866. Uruguay's Flores commanded his own small army.",
+        "lonlat": [
+          -58.38,
+          -34.6
+        ],
+        "kind": "treaty"
+      },
+      {
+        "date": "1865-06-11",
+        "year": 1865,
+        "label": "11 Jun 1865",
+        "text": "Battle of Riachuelo: Brazil destroys Paraguay's navy",
+        "detail": "On 11 June 1865 a Paraguayan squadron attacked the Brazilian fleet of Admiral Francisco Manoel Barroso on the Paraná below Corrientes. Barroso rammed and sank or wrecked most of the Paraguayan ships. The battle gave the allies control of the rivers up to Paraguay's border, cut the invading armies' supply lines and, for practical purposes, decided the outcome of the war.",
+        "lonlat": [
+          -58.84,
+          -27.56
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1865-06-12",
+        "year": 1865,
+        "label": "12 Jun 1865",
+        "text": "A Paraguayan army invades Rio Grande do Sul",
+        "detail": "In May 1865 some 12,000 Paraguayans under Colonel Antonio de la Cruz Estigarribia crossed into Argentine territory south of Encarnación and marched down the Uruguay River. Estigarribia took the Brazilian town of São Borja on 12 June and then Itaqui, while a smaller column under Major Pedro Duarte advanced down the Argentine bank of the river. Brazilian commanders in the province could offer little resistance at first.",
+        "lonlat": [
+          -56.0,
+          -28.66
+        ],
+        "kind": "invasion"
+      },
+      {
+        "date": "1865-08-17",
+        "year": 1865,
+        "label": "17 Aug 1865",
+        "text": "Battle of Yatay",
+        "detail": "Duarte's column, about 3,200 strong, had occupied Paso de los Libres on the Argentine bank opposite Uruguaiana, which Estigarribia entered on 5 August without supporting him. On 17 August 1865 an allied army under Venancio Flores attacked Duarte's position by the Yatay stream and destroyed his column; most of its men were killed or taken prisoner. Estigarribia, across the river, did not intervene.",
+        "lonlat": [
+          -57.05,
+          -29.65
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1865-09-18",
+        "year": 1865,
+        "label": "18 Sep 1865",
+        "text": "Estigarribia surrenders at Uruguaiana",
+        "detail": "Besieged in Uruguaiana by Brazilian, Argentine and Uruguayan forces, with Emperor Pedro II, Mitre and Flores present, Estigarribia's starving garrison surrendered on 18 September 1865, against López's orders, and some 5,500 men became prisoners. López then pulled his armies out of Argentina and Brazil, and the war moved to Paraguay's own borders. Some of the prisoners were sold into slavery by Brazilian officers.",
+        "lonlat": [
+          -57.08,
+          -29.76
+        ],
+        "kind": "turning-point"
+      },
+      {
+        "date": "1865-11-03",
+        "year": 1865,
+        "label": "3 Nov 1865",
+        "text": "The Paraguayan army completes its withdrawal from Corrientes",
+        "detail": "On 3 October López ordered the southern army to leave Argentine territory. It evacuated the city of Corrientes on 22 October, looting the river towns as it went, and by 3 November 1865 some 27,000 men had recrossed the Paraná at Paso de la Patria with about 100,000 head of cattle. Corrientes's provincial government returned to its capital the same day.",
+        "lonlat": [
+          -58.57,
+          -27.32
+        ],
+        "kind": "other"
+      },
+      {
+        "date": "1866-04-16",
+        "year": 1866,
+        "label": "16 Apr 1866",
+        "text": "The allies cross the Paraná and invade Paraguay",
+        "detail": "After months of gathering in camps north of Corrientes, the allied armies crossed the Paraná into Paraguay on 16 April 1866. General Manuel Luís Osório led the landing and beat back Paraguayan counterattacks around the fort of Itapirú. The allies pushed inland towards the swamps and trenches guarding the fortress of Humaitá, and were checked at Estero Bellaco on 2 May.",
+        "lonlat": [
+          -58.5,
+          -27.29
+        ],
+        "kind": "invasion"
+      },
+      {
+        "date": "1866-05-24",
+        "year": 1866,
+        "label": "24 May 1866",
+        "text": "Battle of Tuyutí, the largest battle of the war",
+        "detail": "Hoping to destroy the allied army in one blow, López attacked its camp at Tuyutí on 24 May 1866 with about 23,000–25,000 men against some 32,000–35,000 allies. The attack nearly succeeded but was broken by allied resistance and Brazilian artillery. Paraguay lost about 12,000–13,000 killed and wounded, losses it could not replace, while the allies suffered some 4,000–6,000 casualties. Both armies then dug in for months.",
+        "lonlat": [
+          -58.55,
+          -27.2
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1866-09-22",
+        "year": 1866,
+        "label": "22 Sep 1866",
+        "text": "Battle of Curupayty: a bloody allied defeat",
+        "detail": "After taking the fort of Curuzú on 3 September 1866 and a failed peace meeting between López and Mitre, the allies made a frontal assault on the Paraguayan trenches at Curupayty on 22 September, supported by Brazilian warships. General José E. Díaz's defenders held, and the allies lost between about 4,000 and 8,000 men, against at most a few hundred Paraguayans. Allied offensives stopped for ten months.",
+        "lonlat": [
+          -58.57,
+          -27.11
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1867-07-22",
+        "year": 1867,
+        "label": "22 Jul 1867",
+        "text": "Caxias begins the march around Humaitá",
+        "detail": "The Marquess of Caxias, Brazil's commander from late 1866, rebuilt the disease-ridden allied army and on 22 July 1867 began a wide flanking march east and north around the fortress of Humaitá. On 2 November Brazilian troops took Tayí on the Paraguay River north of the fortress, cutting its land link with Asunción; López's counterattack at the second battle of Tuyutí the next day failed.",
+        "lonlat": [
+          -58.4,
+          -27.0
+        ],
+        "kind": "invasion"
+      },
+      {
+        "date": "1868-02-19",
+        "year": 1868,
+        "label": "19 Feb 1868",
+        "text": "Brazilian ironclads force the passage of Humaitá",
+        "detail": "Humaitá's river batteries and a chain across the Paraguay River had blocked the allied fleet for two years. On 19 February 1868 Brazilian ironclads ran past the batteries under heavy fire, giving the allies control of the river and threatening Asunción. In early March López left the fortress with most of its garrison, crossing to the Chaco shore and moving north.",
+        "lonlat": [
+          -58.51,
+          -27.07
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1868-07-26",
+        "year": 1868,
+        "label": "26 Jul 1868",
+        "text": "The fortress of Humaitá falls",
+        "detail": "The remaining garrison of Humaitá, starving after a long siege, beat off an allied assault on 16 July 1868. On the night of 24–25 July Colonel Francisco Martínez led the last defenders out across the river, and on 26 July the allies occupied the empty fortress. Trapped on the Chaco shore, about 1,300 survivors surrendered on 5 August. Humaitá had blocked the allied advance for more than two years.",
+        "lonlat": [
+          -58.5,
+          -27.07
+        ],
+        "kind": "turning-point"
+      },
+      {
+        "date": "1868-12-11",
+        "year": 1868,
+        "label": "6–11 Dec 1868",
+        "text": "Ytororó and Avay: Caxias attacks the Paraguayans from behind",
+        "detail": "López had fortified a line on the Pikysyry stream south of Asunción. Caxias built a road through the Chaco swamps, carried his army round the line and recrossed the river at Villeta. Turning south to attack from the rear, the Brazilians forced the bridge at Ytororó on 6 December 1868 at heavy cost, and on 11 December destroyed a Paraguayan division at Avay.",
+        "lonlat": [
+          -57.53,
+          -25.5
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1868-12-27",
+        "year": 1868,
+        "label": "21–27 Dec 1868",
+        "text": "Battle of Lomas Valentinas",
+        "detail": "From 21 to 27 December 1868 the allies attacked López's last entrenched army at Lomas Valentinas, near Itá Ybaté. After days of fighting the Paraguayan positions were overrun, though López escaped with a small escort. The garrison of the riverside fort of Angostura, cut off, surrendered on 30 December, and the road to Asunción lay open. Caxias's call on López to surrender on 24 December had been refused.",
+        "lonlat": [
+          -57.52,
+          -25.59
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1869-01-01",
+        "year": 1869,
+        "label": "1 Jan 1869",
+        "text": "Allied troops occupy Asunción",
+        "detail": "Brazilian troops entered the evacuated Paraguayan capital on 1 January 1869, and Caxias arrived on 5 January. About 30,000 allied soldiers were soon quartered there and looted almost every building. Caxias, ill, considered the war won and left; Brazil set up a provisional Paraguayan government, while López withdrew east into the hills of the Cordillera and raised a new army.",
+        "lonlat": [
+          -57.63,
+          -25.28
+        ],
+        "kind": "turning-point"
+      },
+      {
+        "date": "1869-08-12",
+        "year": 1869,
+        "label": "12 Aug 1869",
+        "text": "Battle of Piribebuy",
+        "detail": "Emperor Pedro II's son-in-law, the Count of Eu, took command in 1869 and led some 20,000 men into the Cordillera. On 12 August 1869 they stormed Piribebuy, López's temporary capital, defended by about 1,600 poorly armed men and boys. After five hours of fighting the town fell; its hospital was burned and the government's archives were lost. Some 730 of the defenders were killed.",
+        "lonlat": [
+          -57.04,
+          -25.47
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1869-08-16",
+        "year": 1869,
+        "label": "16 Aug 1869",
+        "text": "Battle of Acosta Ñu, the 'Children's Battle'",
+        "detail": "Covering López's retreat on 16 August 1869, about 3,500 Paraguayans, most of them boys, faced more than 20,000 Brazilian and Argentine soldiers on the plain of Acosta Ñu. They were overwhelmed, with some 2,000 killed. It was the last major battle of the war, and Paraguay remembers it every 16 August as Children's Day. López himself escaped north with the survivors.",
+        "lonlat": [
+          -56.95,
+          -25.4
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1870-03-01",
+        "year": 1870,
+        "label": "1 Mar 1870",
+        "text": "López is killed at Cerro Corá and the war ends",
+        "detail": "With a few hundred followers López retreated into the forests of the north-east, pursued by Brazilian columns. On 1 March 1870 troops under General José Antônio Correia da Câmara surprised his camp at Cerro Corá. López, wounded and refusing to surrender, was killed. Allied troops occupied Paraguay until 1876, and peace treaties gave disputed lands to Brazil and Argentina. He had refused every offer to surrender.",
+        "lonlat": [
+          -56.03,
+          -22.65
+        ],
+        "kind": "turning-point"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Paraguayan War (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Paraguayan_War"
+      },
+      {
+        "title": "Treaty of the Triple Alliance (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Treaty_of_the_Triple_Alliance"
+      },
+      {
+        "title": "Corrientes campaign (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Corrientes_campaign"
+      },
+      {
+        "title": "Siege of Uruguaiana (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Siege_of_Uruguaiana"
+      },
+      {
+        "title": "Siege of Humaitá (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Siege_of_Humait%C3%A1"
+      },
+      {
+        "title": "Battle of Cerro Corá (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Battle_of_Cerro_Cor%C3%A1"
+      },
+      {
+        "title": "Uruguayan War (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Uruguayan_War"
+      },
+      {
+        "title": "Mato Grosso campaign (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Mato_Grosso_campaign"
+      }
+    ]
+  }
+]
