@@ -354,8 +354,19 @@ async function go(y, opts = {}) {
   S.extraPeoples = fs.filter((f) => f.properties.people);
   renderAll();
   writeHash();
+  if (GL && S.playing > 0) warmAhead(y);
   const n = S.clio.chunks, ci = n.indexOf(chunkOf(y));
   [n[ci - 1], n[ci + 1]].forEach((k) => k !== undefined && loadChunk(k).catch(() => {}));
+}
+function warmAhead(y) { // during timeline playback, load and triangulate the next base map / border chunk before they are needed
+  const ahead = posToY(yToPos(y) + 0.02), key = `${baseYearFor(ahead)}|${chunkOf(ahead)}`;
+  if (S.warmedFor === key) return;
+  S.warmedFor = key;
+  const jobs = [];
+  if (baseYearFor(ahead) !== baseYearFor(y)) jobs.push(loadBase(baseYearFor(ahead)).then((b) => b.features));
+  const ck = chunkOf(ahead);
+  jobs.push(loadChunk(ck).then((c) => c.features.filter((f) => f.properties.f <= ahead && y <= f.properties.t).map((f) => correctFeature(f, Math.max(y, f.properties.f)))));
+  Promise.all(jobs).then((lists) => GL.warm(lists.flat())).catch(() => {});
 }
 function renderAll() {
   if (!S.base) return;
@@ -369,7 +380,9 @@ function renderAll() {
   draw();
   updateChartCursor();
   updateStrip();
-  renderCol();
+  if (S.playing > 0 && performance.now() - (S.colAt || 0) < 500) { // timeline playback: full column at most twice a second, the year every step
+    const ye = $("#col .year"); if (ye) ye.innerHTML = bigYear(S.year);
+  } else { S.colAt = performance.now(); renderCol(); }
 }
 function chapterAfter(y) { return S.content.eras.find((e) => e.year > y) || null; }
 function chapterFor(y) {
@@ -432,9 +445,10 @@ function windowSeries(a, b) {
   }
   cand.sort((x, y) => y.score - x.score);
   const series = cand.slice(0, 7);
+  const extras = cand.slice(7, 13).map((c) => c.key); // the next-largest realms of the era also get colours, fixed for the whole era
   let max = 1;
   ys.forEach((_, i) => { max = Math.max(max, series.reduce((s, c) => s + c.vals[i], 0)); });
-  const w = { a, b, ys, series, max };
+  const w = { a, b, ys, series, max, extras };
   S.windows.set(id, w);
   return w;
 }
@@ -448,9 +462,11 @@ function updateWindow() {
 function computeFeatured() {
   const f = new Map();
   if (!S.win) { S.featured = f; return; } // journey opened before any era window exists
+  // Colours belong to the era, not the year: the era's great powers, then its next-largest realms. Choosing the extras
+  // year by year made colours jump between countries during playback (a realm keeps its colour while it exists).
   S.win.series.forEach((s, i) => f.set(s.key, i));
   let i = S.win.series.length;
-  for (const r of realmsNow(true).slice(0, 6)) if (!f.has(r.key) && i < VIVID_LIGHT.length) f.set(r.key, i++);
+  for (const k of S.win.extras || []) if (!f.has(k) && i < VIVID_LIGHT.length) f.set(k, i++);
   S.featured = f;
 }
 function realmsNow(raw = false) {
@@ -601,6 +617,15 @@ const GL = (() => {
   return {
     resize(w, h, dpr) { cv.width = Math.round(w * dpr); cv.height = Math.round(h * dpr); geo = new WeakMap(); freeLayer(cur); freeLayer(prev); freeLayer(landLayer); cur = prev = landLayer = null; statics = null; },
     setItems,
+    warm(features) { // triangulate shapes ahead of time, a few milliseconds at a time while the browser is idle
+      const todo = features.filter((f) => f && !geo.has(f));
+      const step = (dl) => {
+        const end = performance.now() + (dl?.timeRemaining ? Math.min(12, dl.timeRemaining()) : 8);
+        while (todo.length && performance.now() < end) build(todo.pop());
+        if (todo.length) (window.requestIdleCallback || setTimeout)(step);
+      };
+      if (todo.length) (window.requestIdleCallback || setTimeout)(step);
+    },
     fading: () => prev && performance.now() - fadeT0 < FADE,
     frame(t, fillOf) {
       if (!statics) statics = makeStatics();
@@ -776,7 +801,7 @@ function draw() {
   }
   if (S.hover >= 0) { ctx.strokeStyle = theme.ink; ctx.lineWidth = 2 / t.k; strokeItem(ctx, S.items[S.hover]); }
   ctx.restore();
-  if (S.zooming || S.cinePlay) { clearTimeout(S.pickTimer); S.pickTimer = setTimeout(drawPick, 100); }
+  if (S.zooming || S.cinePlay || S.playing > 0) { clearTimeout(S.pickTimer); S.pickTimer = setTimeout(drawPick, 100); }
   else drawPick(); // label placement reads the pick buffer, so keep it current when at rest
   if (S.labels) drawLabels();
   drawCinema();
@@ -812,7 +837,7 @@ function drawGL() {
   if (sel) { ctx.strokeStyle = theme.ink; ctx.lineWidth = 1.4 / t.k; for (const it of S.items) if (it.kind === "state" && (matches(it, sel) || (it.p.recon && it.p.n === sel))) strokeItem(ctx, it); }
   if (S.hover >= 0) { ctx.strokeStyle = theme.ink; ctx.lineWidth = 2 / t.k; strokeItem(ctx, S.items[S.hover]); }
   ctx.restore();
-  if (S.zooming || GL.fading() || S.cinePlay) { clearTimeout(S.pickTimer); S.pickTimer = setTimeout(drawPick, 120); }
+  if (S.zooming || GL.fading() || S.cinePlay || S.playing > 0) { clearTimeout(S.pickTimer); S.pickTimer = setTimeout(drawPick, 120); } // the hit-test layer waits until the map is still
   else drawPick();
   if (S.labels) drawLabels();
   drawCinema();
@@ -2338,8 +2363,10 @@ function setPlayIcon(playing) {
 }
 function stopPlay() {
   if (!S.playing) return;
+  const timeline = S.playing > 0;
   clearInterval(S.playing); cancelAnimationFrame(S.cineRaf); clearTimeout(S.chainTimer); S.playing = null; setPlayIcon(false);
   if (S.cinePlay) { S.cinePlay = false; updateHud(); draw(); }
+  if (timeline) { renderCol(); draw(); } // catch up the column and the hit-test layer skipped during playback
 }
 function togglePlay() {
   if (S.playing) return stopPlay();
