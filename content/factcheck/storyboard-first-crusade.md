@@ -1,7 +1,7 @@
 # Storyboard: First Crusade (1096–1099)
 
 File: `content/cinema/first-crusade.json`. 6 chapters, 28 claims (all pass), 16 occupied areas (44 keyframes), 13 arrows, 7 battles, no fronts.
-Check: `check_history.py`: 0 errors, 0 warnings. `validate.py`: 3 errors, all "side" – see below.
+Check: `check_history.py`: 0 errors, 2 warnings (grey ground east of the Jordan, see "Grey pockets"). `validate.py`: 3 errors, all "side" – see below.
 
 ## Chapters and why
 1. **The People's Crusade** (Aug–Oct 1096): Civetot camp, Xerigordos (taken, surrendered 29 Sep), massacre 21 Oct.
@@ -31,6 +31,11 @@ Check: `check_history.py`: 0 errors, 0 warnings. `validate.py`: 3 errors, all "s
 ## Pockets fixed
 The pockets rule gave 1 warning; now 0.
 - Ch 3 (Oct 1097), a sliver of Rum ground in the Taurus north of Adana, between the Cilicia area and the base map's eastern-Taurus ground on the crusader side: a drawing gap. The Cilicia area's north edge (from 10 Oct 1097) now reaches about 37.55°N between 35.0° and 35.5°E, so the two meet.
+
+## Grey pockets (neutral or unrecorded ground)
+- Ch 6, the largest (Judea and Samaria, 27 Jun 1099): a drawing gap. The Fatimid Judea area had been cut down to the city of Jerusalem when the siege began on 7 June, which left the countryside grey. It now keeps its full extent until Jerusalem falls on 15 July; the crusader corridor (Ramla, Bethlehem, the camps before Jerusalem) is listed first and shows through. Judea is also joined to the Ascalon area across the Judean desert.
+- Ch 3, the Karataş cape south of Adana: a drawing gap. The Cilicia area now runs to the coast.
+- Ch 6, a strip east of the Jordan between the Fatimid Galilee area and the "Regional emirates": left. Transjordan was not Fatimid; this is real neutral ground.
 
 ## Sources fetched
 Wikipedia: First Crusade, People's Crusade, Siege of Xerigordos, Siege of Nicaea, Battle of Dorylaeum (1097), Siege of Antioch, County of Edessa, Baldwin I of Jerusalem, Tancred of Galilee, Siege of Ma'arra, March from Antioch to Jerusalem during the First Crusade, Siege of Jerusalem (1099), Battle of Ascalon; Commons maps listed in the file.

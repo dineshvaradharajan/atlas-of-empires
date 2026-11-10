@@ -62162,12 +62162,16 @@
        48.3
       ],
       [
-       39.75,
+       39.95,
        47.6
       ],
       [
-       39.6,
+       40.0,
        47.2
+      ],
+      [
+       39.55,
+       47.08
       ],
       [
        27.3,
@@ -62595,12 +62599,16 @@
        48.3
       ],
       [
-       39.75,
+       39.95,
        47.6
       ],
       [
-       39.6,
+       40.0,
        47.2
+      ],
+      [
+       39.55,
+       47.08
       ],
       [
        27.3,
@@ -108653,6 +108661,84 @@
     }
    ],
    "end": "1918-10-31"
+  },
+  {
+   "name": "Central Powers-occupied Khotyn district (1918)",
+   "side": 1,
+   "keys": [
+    {
+     "date": "1918-03-03",
+     "coords": [
+      [
+       26.2,
+       48.62
+      ],
+      [
+       26.6,
+       48.68
+      ],
+      [
+       27.0,
+       48.55
+      ],
+      [
+       27.35,
+       48.47
+      ],
+      [
+       26.85,
+       48.27
+      ],
+      [
+       26.45,
+       48.24
+      ],
+      [
+       26.2,
+       48.3
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Central Powers-occupied Azov coast, Mariupol to Taganrog (1918)",
+   "side": 1,
+   "keys": [
+    {
+     "date": "1918-05-08",
+     "coords": [
+      [
+       36.6,
+       46.6
+      ],
+      [
+       36.6,
+       47.2
+      ],
+      [
+       38.0,
+       47.25
+      ],
+      [
+       39.55,
+       47.15
+      ],
+      [
+       39.55,
+       47.02
+      ],
+      [
+       38.4,
+       46.98
+      ],
+      [
+       37.3,
+       46.88
+      ]
+     ]
+    }
+   ]
   }
  ],
  "arrows": [
@@ -110870,6 +110956,20 @@
    }
   },
   {
+   "chapter": "sweep",
+   "place": "Weert (Dutch Limburg, neutral Netherlands)",
+   "lonlat": [
+    5.71,
+    51.25
+   ],
+   "date": "1914-09-01",
+   "holder": null,
+   "source": {
+    "title": "Wikipedia: Netherlands in World War I",
+    "url": "https://en.wikipedia.org/wiki/Netherlands_in_World_War_I"
+   }
+  },
+  {
    "chapter": "marne",
    "place": "Vitry-le-François",
    "lonlat": [
@@ -111178,6 +111278,20 @@
    }
   },
   {
+   "chapter": "verdun-somme",
+   "place": "Weert (Dutch Limburg, neutral Netherlands)",
+   "lonlat": [
+    5.71,
+    51.25
+   ],
+   "date": "1916-07-19",
+   "holder": null,
+   "source": {
+    "title": "Wikipedia: Netherlands in World War I",
+    "url": "https://en.wikipedia.org/wiki/Netherlands_in_World_War_I"
+   }
+  },
+  {
    "chapter": "spring-1918",
    "place": "Montdidier",
    "lonlat": [
@@ -111301,6 +111415,20 @@
    "source": {
     "title": "Wikipedia: Second Battle of the Marne",
     "url": "https://en.wikipedia.org/wiki/Second_Battle_of_the_Marne"
+   }
+  },
+  {
+   "chapter": "spring-1918",
+   "place": "Weert (Dutch Limburg, neutral Netherlands)",
+   "lonlat": [
+    5.71,
+    51.25
+   ],
+   "date": "1918-07-15",
+   "holder": null,
+   "source": {
+    "title": "Wikipedia: Netherlands in World War I",
+    "url": "https://en.wikipedia.org/wiki/Netherlands_in_World_War_I"
    }
   },
   {
@@ -112925,6 +113053,48 @@
    "source": {
     "title": "Wikipedia: Battle of Vittorio Veneto",
     "url": "https://en.wikipedia.org/wiki/Battle_of_Vittorio_Veneto"
+   }
+  },
+  {
+   "chapter": "collapse",
+   "place": "Vidin (Bulgaria, out of the war after the Armistice of Salonica)",
+   "lonlat": [
+    22.87,
+    43.99
+   ],
+   "date": "1918-10-09",
+   "holder": null,
+   "source": {
+    "title": "Wikipedia: Armistice of Salonica (Bulgaria out of the war from noon on 30 September 1918)",
+    "url": "https://en.wikipedia.org/wiki/Armistice_of_Salonica"
+   }
+  },
+  {
+   "chapter": "collapse",
+   "place": "Razgrad (Bulgaria, out of the war after the Armistice of Salonica)",
+   "lonlat": [
+    26.52,
+    43.53
+   ],
+   "date": "1918-10-09",
+   "holder": null,
+   "source": {
+    "title": "Wikipedia: Armistice of Salonica (Bulgaria out of the war from noon on 30 September 1918)",
+    "url": "https://en.wikipedia.org/wiki/Armistice_of_Salonica"
+   }
+  },
+  {
+   "chapter": "collapse",
+   "place": "Rostov-on-Don (occupied by Germany in 1918)",
+   "lonlat": [
+    39.72,
+    47.23
+   ],
+   "date": "1918-07-01",
+   "holder": 1,
+   "source": {
+    "title": "Wikipedia: Rostov-on-Don",
+    "url": "https://en.wikipedia.org/wiki/Rostov-on-Don"
    }
   }
  ],

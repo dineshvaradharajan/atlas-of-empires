@@ -1,7 +1,7 @@
 # Storyboard: Peloponnesian War (431–404 BCE)
 
-File: `content/cinema/peloponnesian-war.json`. 9 chapters, 54 claims (all pass), 50 occupied areas (64 keyframes), 27 arrows, 4 battles, no fronts.
-Check: `check_history.py`: 0 errors, 3 warnings (below). `validate.py`: no errors.
+File: `content/cinema/peloponnesian-war.json`. 9 chapters, 57 claims (all pass), 51 occupied areas (65 keyframes), 27 arrows, 4 battles, no fronts.
+Check: `check_history.py`: 0 errors, 6 warnings (3 below, 3 grey ground in "Grey pockets"). `validate.py`: no errors.
 
 ## Chapters and why
 1. **Plataea and the invasions of Attica** (Apr 431 – Jun 430): the opening blow and Pericles' strategy; the 431 and 430 invasions as temporary Spartan areas, plague in 430.
@@ -41,6 +41,12 @@ Left out as chapters (no lasting change of ground): Mytilene 428–427, Delium 4
 The pockets rule gave 2 warnings; now 0.
 - Ch 1 (Nov 431), eastern Boeotia between Attica and Euboea: real Theban ground. The checker joins Attica and Euboea across the narrow Euripus. Added a claim at Thebes, 1 Nov 431 (Wikipedia: Peloponnesian War).
 - Ch 9 (Jan 404), Oropia and the South Euboean Gulf: a drawing problem. Both Euboea areas (Athenian 431–411, in revolt from 411) ran about 10 km into the gulf off Attica. Their south-west edge now follows the Euboean shore (Eretria and Chalcis stay inside), which clears it.
+
+## Grey pockets (neutral or unrecorded ground)
+- Ch 8, the largest: the Aegean and Propontis coasts of Asia Minor (Aeolis, the Troad, the coast of Mysia and Caria). The base map's Achaemenid Empire stops short of the sea, so this land showed grey between Lysander's areas. The Achaemenids are a member of Sparta's side. I added "Persian satrapies on the Aegean and Propontis coasts (from 412 BCE)". Its date follows Tissaphernes' 412 alliance with Sparta, which "led to the Persian conquest of the greater part of Ionia" (Wikipedia: Tissaphernes); Pharnabazus held Hellespontine Phrygia, which comprised the Troad, Mysia and Bithynia (Wikipedia: Pharnabazus II, Dascylium). The area is listed last, so the city circles of both sides show through it. Claims: Phocaea, 1 Jun 411; Ilion, 1 Dec 405.
+- Ch 1, 5 and 9, a grey strip on Cithaeron and Parnes and at Oropus between Boeotia and Attica: a drawing gap. The Boeotia and Attica areas now meet along the border, and Attica reaches the Megarid. The Euboea areas also take back a strip of the Euboean shore off Styra that the earlier trim had cut.
+  - What remains is real Sparta-side ground beside Attica: Boeotia in ch 1 (Thebes claim), and Oropus plus revolted Euboea in ch 9 (new claim: Eretria, 19 Jan 404; Wikipedia: Eretria: the Euboean cities all rebelled in 411, and Athens re-established its hegemony only after 404).
+- Ch 7 and 8, the Thracian hinterland north of Byzantium and Selymbria (unrecorded): left. Neither side's coastal areas reached inland Thrace.
 
 ## Sources fetched
 Wikipedia: Peloponnesian War, Delian League, Archidamus II, Plague of Athens, Battle of Pylos, Battle of Sphacteria, Battle of Amphipolis, Brasidas, Battle of Potidaea, Sicilian Expedition, Decelea, Battle of Eretria, Astyochus, Mindarus, Battle of Cynossema, Battle of Abydos, Battle of Cyzicus, Alcibiades, Battle of Arginusae, Battle of Aegospotami, Lysander, Siege of Melos, Thirty Tyrants, Siege of Plataea; Commons maps listed in the file. (Britannica pages were blocked to automated fetches.)
