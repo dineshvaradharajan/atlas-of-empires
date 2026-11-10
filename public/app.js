@@ -538,7 +538,10 @@ const GL = (() => {
   const FADE = 260;
   function setItems(items) {
     if (cur && cur.items === items) return;
-    freeLayer(prev); prev = cur; cur = makeLayer(items); fadeT0 = performance.now();
+    // a new year arriving mid-fade fades from whichever layer is mostly on screen (no jump to a half-faded layer)
+    const e = prev ? (performance.now() - fadeT0) / FADE : 1;
+    if (prev && e < 0.5) freeLayer(cur); else { freeLayer(prev); prev = cur; }
+    cur = makeLayer(items); fadeT0 = performance.now();
     freeLayer(landLayer); landLayer = null;
   }
   function makeStatics() {
@@ -2352,12 +2355,12 @@ function togglePlay() {
   }
   // Journeys last ~25 s whatever the empire's lifespan; the open timeline moves at a steady pace.
   const span = S.journey ? S.journey.span[1] - S.journey.span[0] : 0;
-  const interval = S.journey ? Math.min(600, Math.max(110, 25000 / Math.max(1, span))) : 110;
+  const interval = S.journey ? Math.min(600, Math.max(110, 25000 / Math.max(1, span))) : 300; // the open timeline: a step every 0.3 s (longer than the border cross-fade)
   const jstep = S.journey ? Math.max(1, Math.round(span / (25000 / interval))) : 0;
   S.playing = setInterval(() => {
     if (S.journey) { if (S.year >= S.journey.span[1]) return stopPlay(); S.jEvent = null; return go(S.year + jstep); }
     if (S.year >= S.range[1]) return stopPlay();
-    go(Math.max(S.year + 1, posToY(yToPos(S.year) + 0.0022)));
+    go(Math.max(S.year + 1, posToY(yToPos(S.year) + 0.0011))); // ~7 years a step in late antiquity, 1–2 in the modern era
   }, interval);
 }
 
