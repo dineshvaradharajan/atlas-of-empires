@@ -1,8 +1,8 @@
 # Storyboard: Napoleonic Wars (`content/cinema/napoleonic-wars.json`)
 
 Side index follows `content/wars/b-modern.json` (`napoleonic-wars`): **0 = French Empire and allies, 1 = Coalition powers**.
-Result: 14 chapters, 97 claims (all pass), 21 occupied areas, 106 arrows, 70 battles, no fronts.
-`tools/cinema/validate.py`: no errors. `tools/cinema/check_history.py napoleonic-wars`: 0 errors, 8 warnings (explained below).
+Result: 14 chapters, 101 claims (all pass), 23 occupied areas, 106 arrows, 70 battles, no fronts.
+`tools/cinema/validate.py`: no errors. `tools/cinema/check_history.py napoleonic-wars` (corrected borders, pocket rule): 0 errors, 10 warnings, no pockets (explained below).
 
 ## Chapters and why
 | # | id | dates | place |
@@ -38,7 +38,7 @@ are framed on Belgium–Paris so the four June 1815 battles stay readable; the m
   from showing it early (e.g. Moscow 13/14 Sep 1812, Zaragoza 19/20 Feb 1809, Hamburg 29/30 May 1813, Madrid 31 Jul/10 Aug 1808).
 - **Notches** keep besieged places out of the surrounding area until they fell: Magdeburg (to 11 Nov 1806), Danzig (to
   24 May 1807), San Sebastián (to 8 Sep 1813), Pamplona and the ground east of it (to 31 Oct 1813), Bayonne (never taken),
-  Leipzig on 16 Oct 1813, Burgos castle in Sept–Oct 1812, Toulouse until 12 Apr 1814.
+  Leipzig on 16 Oct 1813, Toulouse until 12 Apr 1814 (see Revision 2 for fortress rings and holes).
 - **Arrows** end where the advance stopped. Because this war has no fronts, an arrowhead on enemy ground counts as an
   error in the checker, so the areas leave the endpoint open on that day where the attack really reached it (Grossbeeren,
   Dennewitz, Sorauren, Craonne, Saint-Dizier, Frasnes/Quatre Bras, Grouchy before Wavre).
@@ -64,6 +64,42 @@ separate states in 1807–1812. For 1805 a side-1 area, "Austrian-held Upper and
 cancels the French Danube strip and shrinks east as the French advanced (Linz, St Pölten, Vienna 13 Nov). For 1813 a
 side-1 area covers Prussia, which also makes the checker (raw "Confederation" = neutral) agree with the app (Prussia).
 
+
+## Revision 2 (pockets and per-army gaps)
+After review ("blues within red"), every area was checked with the checker's pocket rule and by eye on each chapter's end frame:
+- **France 1814:** the three per-army areas (Army of Bohemia, Army of Silesia, Holland/Belgium) are now one
+  "Coalition-occupied France and the Low Countries (1813–1814)". It runs from the Rhine (traced to the 1813 border) to a
+  western edge that grows and shrinks: the Rhine crossings (21 Dec, 1 Jan); Holland, the lower Rhine and Lorraine (17 Jan);
+  Nancy (25 Jan); La Rothière and Troyes (1–7 Feb); Blücher on the Marne (10 Feb). The Six Days (14 Feb) and Montereau
+  (24 Feb) push the edge back. Soissons and Laon follow (3 Mar); Craonne and Reims (7–13 Mar) appear as a bay opening
+  towards Napoleon's side; the march on Paris (26–31 Mar). Metz (siege 13 Jan – 10 Apr) is a hole cut into the area; Mainz
+  (siege 3 Jan – 4 May) is a small French ring. Both have sourced claims. A Strasbourg notch was dropped: at this scale the
+  ring's resampling smears it. Holland stays a separate area only until 17 January, when the lower Rhine joins it to the rest.
+- **Artificial arrow gaps removed** (front-less wars now only warn when an arrowhead ends on enemy ground): the
+  Grossbeeren and Dennewitz dents (Aug–Sep 1813), the Burgos-castle salient (now a small "French garrison of Burgos castle"
+  ring, 19 Sep – 22 Oct 1812), the Berezina east-bank keyframe for Wittgenstein (26 Nov 1812), and the large excluded block
+  around Pamplona (now a hole 1 Jul – 30 Oct 1813, with Soult's July thrust ending inside allied ground).
+- **Fortress rings:** Danzig (siege 16 Jan 1813 – 2 Jan 1814), Mainz, Burgos castle; holes: Metz, Pamplona. Hamburg stays
+  out of the 1813 coalition area along the Holstein side (Davout held it to May 1814); San Sebastián and Bayonne are coastal notches.
+- **Pockets closed:**
+  - Bayreuth inside the 1806 occupation.
+  - Prussian land on the Pilica (1807).
+  - Catalan, Aragonese and Cantabrian gaps in Spain (1808–14). Upper and Lower Aragon are now French-held from 1809 and
+    allied from August 1813; the Catalan ring overlaps Aragon.
+  - The Minho gap between Soult's area and Galicia (1809).
+  - Salzburg and the Innviertel (1809).
+  - North Courland (Riga itself stays outside, with its claim) and Brest-Litovsk (1812).
+  - The concave bite north of Smolensk.
+  - Saxon Upper Lusatia, which the 1813 coalition area had wrongly covered.
+  - Kraków in the 1813 coalition area.
+  - The Upper Aragon crest and Comminges by April 1814.
+  - The Jura along the Swiss border (1814).
+  - The 1805 French Danube strip: "French-occupied Austria and Moravia" now grows behind the advance from the Inn.
+  - The Maubeuge salient and French Flanders in 1815. The coalition corridor now covers Bavay–Maubeuge and leaves
+    Valenciennes–Lille open to the rest of France.
+- New claims: Danzig 30 Jun 1813 (French), Bautzen 30 Jun 1813 (French, Upper Lusatia between the armies), Mainz and
+  Metz 1 Mar 1814 (French).
+
 ## Uncertainties and simplifications
 - Accuracy is roughly 10–30 km in Germany, Austria and Belgium, and 30–80 km in Spain and Russia. Spanish "French-held"
   areas show territory under French garrisons and armies; guerrillas contested much of it, and Galicia, Asturias, Valencia
@@ -84,20 +120,21 @@ side-1 area covers Prussia, which also makes the checker (raw "Confederation" = 
 - Side dates follow the war file's whole years. For example, Spain counts as coalition from 1 Jan 1808, though it rose in May,
   and Prussia from 1 Jan 1813, though it changed sides in March.
 
-## Warnings left (8)
-- Three naval arrows (Villeneuve to Cádiz, the combined fleet's sortie, Nelson's columns) end at sea: "neutral ground".
-- 'Oudinot's thrust on Berlin' ends at Grossbeeren, where the battle was fought. The checker sees the raw "Confederation
-  of the Rhine" polygon (neutral); the app shows Prussia.
-- 'French retreat to the Rhine' ends at Mainz. The 1813 data draws Mainz as the Grand Duchy of Würzburg.
-- Three side-date warnings for the war event "Treaty of Pressburg: Austria makes peace" against the Austrian Empire's
-  1809/1812/1813 memberships. These come from the war file, not this storyboard. The 1805 member is "(Habsburg Monarchy)".
+## Warnings left (10)
+- Three naval arrows (Villeneuve to Cádiz, the combined fleet's sortie, Nelson's columns) end at sea.
+- Four arrows end inside the other side's ground because the attack stopped or was a raid. These are warnings now, by design:
+  - Oudinot at Grossbeeren
+  - Blücher at Brienne (Napoleon won there on 29 Jan)
+  - Napoleon's march to Saint-Dizier (behind the allied lines)
+  - the French retreat ending at Mainz, which the 1813 data draws as the Grand Duchy of Würzburg (a small French ring
+    marks the fortress from 3 Jan 1814)
+- Three side-date warnings for the war event "Treaty of Pressburg: Austria makes peace". These come from the war file.
 
 ## Issues outside this file (for the maintainers)
-- **App year label:** `updateHud()` and `go()` use `warYear(t)`, which returns the `baseYears` year. With this storyboard,
+- (Fixed upstream since.) **App year label:** `updateHud()` and `go()` use `warYear(t)`, which returns the `baseYears` year. With this storyboard,
   the big year label (and the side panel's year) reads 1806 during 1807–1812 and 1813 in early 1814. Fix: show
   `Math.floor(t)` for the label and keep `warYear` only for choosing borders.
-- **Checker vs app:** `tools/cinema/geo.py` ignores `content/corrections.json` (crops, cuts, relabels), so for some states the
-  checker and the app disagree. The base-year choice above was made so the two agree for every claim.
+- The checker now uses the corrected borders (`tools/borders/borders.py`), as the app does.
 
 ## Sources
 Maps opened and traced against (Commons):

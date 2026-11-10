@@ -1,0 +1,10172 @@
+{
+ "war": "american-revolutionary-war",
+ "start": "1775-04-19",
+ "end": "1783-09-03",
+ "note": "Occupied areas and arrows are approximate reconstructions from campaign maps (chiefly the US Military Academy atlas) and the cited articles; the war had no continuous front lines, so areas show the ground each side held around the places fought over, not exact boundaries.",
+ "chapters": [
+  {
+   "id": "boston",
+   "title": "Lexington, Concord and the siege of Boston",
+   "start": "1775-04-19",
+   "end": "1776-03-18",
+   "bbox": [
+    -71.5,
+    42.15,
+    -70.85,
+    42.6
+   ],
+   "arrows": [
+    "British march to Concord and back",
+    "Bunker Hill: British assault on the Charlestown peninsula",
+    "Americans fortify Dorchester Heights"
+   ],
+   "text": "On 19 April 1775 British troops marched from Boston to seize militia weapons at Concord; after shots at Lexington and Concord they were harried all the way back by thousands of militiamen. The militia then besieged British-held Boston. On 17 June the British took the Charlestown peninsula at Bunker Hill, at heavy cost. In March 1776 Washington placed cannon on Dorchester Heights, overlooking the town, and on 17 March the British sailed away."
+  },
+  {
+   "id": "newyork",
+   "title": "The fall of New York",
+   "start": "1776-07-01",
+   "end": "1776-11-21",
+   "bbox": [
+    -74.35,
+    40.45,
+    -73.6,
+    41.12
+   ],
+   "arrows": [
+    "Howe lands on Staten Island",
+    "Howe's flank march on Long Island",
+    "Washington evacuates Brooklyn",
+    "British landing at Kip's Bay",
+    "Howe's landing at Pell's Point and march to White Plains",
+    "Washington withdraws to North Castle",
+    "Capture of Fort Washington",
+    "Cornwallis crosses the Hudson to Fort Lee"
+   ],
+   "text": "General William Howe brought a huge army and fleet to New York, landing on Staten Island on 3 July 1776. On 27 August he outflanked Washington on Long Island, and the Americans slipped across to Manhattan by night. The British landed at Kip's Bay on 15 September and took the city, fought Washington at White Plains on 28 October, and captured Fort Washington, with nearly 3,000 prisoners, on 16 November and Fort Lee four days later. New York stayed in British hands for the rest of the war."
+  },
+  {
+   "id": "trenton-princeton",
+   "title": "Trenton and Princeton",
+   "start": "1776-11-21",
+   "end": "1777-01-08",
+   "bbox": [
+    -75.1,
+    39.95,
+    -73.9,
+    40.95
+   ],
+   "arrows": [
+    "Cornwallis pursues Washington across New Jersey",
+    "Washington crosses the Delaware to Trenton",
+    "Washington's night march to Princeton",
+    "Washington marches to Morristown"
+   ],
+   "text": "Cornwallis chased Washington's shrinking army across New Jersey, and in early December the Americans crossed the Delaware into Pennsylvania while the British spread a chain of posts across the state. On the night of 25 December Washington recrossed the river and surprised the Hessian garrison of Trenton. A week later he slipped round Cornwallis's army and beat the British at Princeton on 3 January 1777, and the British pulled back to New Brunswick, keeping only a few posts in New Jersey."
+  },
+  {
+   "id": "saratoga",
+   "title": "Saratoga, 1777",
+   "start": "1777-06-14",
+   "end": "1777-11-08",
+   "bbox": [
+    -74.6,
+    42.5,
+    -72.9,
+    45.4
+   ],
+   "arrows": [
+    "Burgoyne's advance from Canada to Fort Edward",
+    "Burgoyne crosses the Hudson to Freeman's Farm",
+    "Gates's army moves up to Bemis Heights"
+   ],
+   "text": "In June 1777 General John Burgoyne led an army south from Canada along Lake Champlain to reach Albany. He took Fort Ticonderoga on 6 July and reached Fort Edward on the Hudson on 29 July, but lost a detachment at Bennington on 16 August. Crossing the Hudson, he fought Horatio Gates's growing army at Freeman's Farm on 19 September and at Bemis Heights on 7 October, then fell back to Saratoga, where he surrendered his whole army on 17 October. The victory helped bring France into the war."
+  },
+  {
+   "id": "philadelphia",
+   "title": "Philadelphia and Valley Forge",
+   "start": "1777-07-23",
+   "end": "1778-07-01",
+   "bbox": [
+    -76.4,
+    39.3,
+    -73.9,
+    40.6
+   ],
+   "arrows": [
+    "Howe sails to the Chesapeake",
+    "Howe's advance on Philadelphia",
+    "Washington's attack at Germantown, and withdrawal",
+    "Washington goes into winter quarters at Valley Forge",
+    "Clinton marches across New Jersey to Sandy Hook",
+    "Washington pursues to Monmouth"
+   ],
+   "text": "Howe sailed his army round to the head of Chesapeake Bay, beat Washington at Brandywine on 11 September 1777 and marched into Philadelphia, the American capital, on 26 September. Washington's attack at Germantown on 4 October failed, the British took the Delaware forts in November, and the Continental Army spent a hard winter at Valley Forge. With France now in the war, the British left Philadelphia on 18 June 1778; Washington caught them at Monmouth on 28 June, but they reached New York."
+  },
+  {
+   "id": "savannah-charleston",
+   "title": "The war turns south: Savannah and Charleston",
+   "start": "1778-12-20",
+   "end": "1780-05-15",
+   "bbox": [
+    -82.3,
+    31.6,
+    -79.4,
+    33.7
+   ],
+   "arrows": [
+    "Campbell's expedition takes Savannah",
+    "Franco-American siege of Savannah",
+    "Clinton's army besieges Charleston"
+   ],
+   "text": "Hoping for Loyalist support in the South, Britain sent an expedition that captured Savannah on 29 December 1778 and occupied Augusta for a few weeks. A French and American attempt to retake Savannah failed with heavy losses in October 1779. In 1780 Henry Clinton brought a large army from New York and besieged Charleston, which surrendered on 12 May with more than 5,000 American troops, Britain's greatest victory of the war."
+  },
+  {
+   "id": "south",
+   "title": "Camden to Eutaw Springs",
+   "start": "1780-05-13",
+   "end": "1781-09-15",
+   "bbox": [
+    -83.2,
+    32.0,
+    -77.6,
+    36.6
+   ],
+   "arrows": [
+    "Cornwallis advances to Camden",
+    "Gates marches on Camden",
+    "Cornwallis marches to Charlotte",
+    "The Overmountain Men march to Kings Mountain",
+    "Cornwallis's campaign in North Carolina",
+    "Greene's return to South Carolina"
+   ],
+   "text": "After Charleston the British set up posts across South Carolina and Georgia, and Cornwallis routed Gates at Camden on 16 August 1780. But backcountry militia destroyed a Loyalist force at Kings Mountain on 7 October and Daniel Morgan beat Tarleton at Cowpens on 17 January 1781. Cornwallis chased Nathanael Greene into North Carolina and won a costly victory at Guilford Court House on 15 March, then marched off to the coast; Greene returned to South Carolina, and by September the British had given up Camden and Ninety Six and held little beyond Charleston and Savannah."
+  },
+  {
+   "id": "yorktown",
+   "title": "Yorktown, 1781",
+   "start": "1781-07-28",
+   "end": "1781-10-20",
+   "bbox": [
+    -77.6,
+    36.6,
+    -73.6,
+    41.2
+   ],
+   "arrows": [
+    "Cornwallis moves to Yorktown",
+    "Washington and Rochambeau march to Virginia",
+    "De Grasse's fleet enters the Chesapeake",
+    "Allied armies besiege Yorktown"
+   ],
+   "text": "Cornwallis took his army into Virginia and in August 1781 fortified Yorktown as a base for the navy. Washington and the French general Rochambeau marched their armies south from New York, while a French fleet under de Grasse sealed Chesapeake Bay and drove off a British fleet on 5 September. Trapped by land and sea and pounded by siege guns, Cornwallis surrendered his army of more than 7,000 on 19 October."
+  },
+  {
+   "id": "peace",
+   "title": "The British leave the South; peace",
+   "start": "1781-10-20",
+   "end": "1783-09-03",
+   "bbox": [
+    -82.3,
+    31.6,
+    -79.0,
+    33.7
+   ],
+   "arrows": [],
+   "text": "Yorktown broke Britain's will to continue the war in America: in March 1782 Parliament voted to end offensive operations and Lord North's government fell. British troops left Savannah on 11 July 1782 and Charleston on 14 December 1782, while peace terms were agreed in Paris. The Treaty of Paris, signed on 3 September 1783, recognised the independence of the United States."
+  }
+ ],
+ "fronts": [],
+ "occupations": [
+  {
+   "name": "British-held Boston",
+   "side": 1,
+   "keys": [
+    {
+     "date": "1775-04-19",
+     "coords": [
+      [
+       -71.076,
+       42.368
+      ],
+      [
+       -71.05,
+       42.372
+      ],
+      [
+       -71.044,
+       42.36
+      ],
+      [
+       -71.05,
+       42.348
+      ],
+      [
+       -71.07,
+       42.343
+      ],
+      [
+       -71.079,
+       42.352
+      ]
+     ]
+    },
+    {
+     "date": "1775-06-16",
+     "coords": [
+      [
+       -71.076,
+       42.368
+      ],
+      [
+       -71.05,
+       42.372
+      ],
+      [
+       -71.044,
+       42.36
+      ],
+      [
+       -71.05,
+       42.348
+      ],
+      [
+       -71.07,
+       42.343
+      ],
+      [
+       -71.079,
+       42.352
+      ]
+     ]
+    },
+    {
+     "date": "1775-06-17",
+     "coords": [
+      [
+       -71.079,
+       42.384
+      ],
+      [
+       -71.06,
+       42.385
+      ],
+      [
+       -71.048,
+       42.376
+      ],
+      [
+       -71.044,
+       42.36
+      ],
+      [
+       -71.05,
+       42.348
+      ],
+      [
+       -71.07,
+       42.343
+      ],
+      [
+       -71.079,
+       42.352
+      ],
+      [
+       -71.078,
+       42.369
+      ]
+     ]
+    }
+   ],
+   "end": "1776-03-17"
+  },
+  {
+   "name": "Patriot siege lines around Boston",
+   "side": 0,
+   "keys": [
+    {
+     "date": "1775-04-19",
+     "coords": [
+      [
+       -71.52,
+       42.13
+      ],
+      [
+       -70.6,
+       42.1
+      ],
+      [
+       -70.6,
+       42.33
+      ],
+      [
+       -71.03,
+       42.355
+      ],
+      [
+       -71.05,
+       42.346
+      ],
+      [
+       -71.07,
+       42.341
+      ],
+      [
+       -71.081,
+       42.352
+      ],
+      [
+       -71.078,
+       42.369
+      ],
+      [
+       -71.05,
+       42.374
+      ],
+      [
+       -71.03,
+       42.386
+      ],
+      [
+       -70.6,
+       42.4
+      ],
+      [
+       -70.6,
+       42.66
+      ],
+      [
+       -71.52,
+       42.66
+      ]
+     ]
+    },
+    {
+     "date": "1775-06-16",
+     "coords": [
+      [
+       -71.52,
+       42.13
+      ],
+      [
+       -70.6,
+       42.1
+      ],
+      [
+       -70.6,
+       42.33
+      ],
+      [
+       -71.03,
+       42.355
+      ],
+      [
+       -71.05,
+       42.346
+      ],
+      [
+       -71.07,
+       42.341
+      ],
+      [
+       -71.081,
+       42.352
+      ],
+      [
+       -71.078,
+       42.369
+      ],
+      [
+       -71.05,
+       42.374
+      ],
+      [
+       -71.03,
+       42.386
+      ],
+      [
+       -70.6,
+       42.4
+      ],
+      [
+       -70.6,
+       42.66
+      ],
+      [
+       -71.52,
+       42.66
+      ]
+     ]
+    },
+    {
+     "date": "1775-06-17",
+     "coords": [
+      [
+       -71.52,
+       42.13
+      ],
+      [
+       -70.6,
+       42.1
+      ],
+      [
+       -70.6,
+       42.33
+      ],
+      [
+       -71.03,
+       42.355
+      ],
+      [
+       -71.05,
+       42.346
+      ],
+      [
+       -71.07,
+       42.341
+      ],
+      [
+       -71.081,
+       42.352
+      ],
+      [
+       -71.082,
+       42.378
+      ],
+      [
+       -71.074,
+       42.389
+      ],
+      [
+       -71.04,
+       42.394
+      ],
+      [
+       -70.6,
+       42.41
+      ],
+      [
+       -70.6,
+       42.66
+      ],
+      [
+       -71.52,
+       42.66
+      ]
+     ]
+    }
+   ],
+   "end": "1776-01-01"
+  },
+  {
+   "name": "Patriot-held Thirteen Colonies (1775)",
+   "side": 0,
+   "keys": [
+    {
+     "date": "1775-04-19",
+     "coords": [
+      [
+       -66.9,
+       44.8
+      ],
+      [
+       -67.8,
+       44.3
+      ],
+      [
+       -69.0,
+       43.7
+      ],
+      [
+       -70.0,
+       43.5
+      ],
+      [
+       -70.4,
+       43.0
+      ],
+      [
+       -70.55,
+       42.72
+      ],
+      [
+       -70.6,
+       42.66
+      ],
+      [
+       -71.52,
+       42.66
+      ],
+      [
+       -71.52,
+       42.13
+      ],
+      [
+       -70.6,
+       42.1
+      ],
+      [
+       -69.9,
+       41.9
+      ],
+      [
+       -69.85,
+       41.55
+      ],
+      [
+       -70.1,
+       41.2
+      ],
+      [
+       -71.0,
+       41.25
+      ],
+      [
+       -71.9,
+       41.0
+      ],
+      [
+       -72.5,
+       40.75
+      ],
+      [
+       -73.6,
+       40.45
+      ],
+      [
+       -73.9,
+       40.35
+      ],
+      [
+       -74.0,
+       39.6
+      ],
+      [
+       -74.8,
+       38.85
+      ],
+      [
+       -75.0,
+       38.3
+      ],
+      [
+       -75.3,
+       37.6
+      ],
+      [
+       -75.6,
+       37.0
+      ],
+      [
+       -75.5,
+       36.2
+      ],
+      [
+       -75.3,
+       35.2
+      ],
+      [
+       -76.5,
+       34.5
+      ],
+      [
+       -77.8,
+       33.8
+      ],
+      [
+       -78.6,
+       33.7
+      ],
+      [
+       -79.2,
+       33.0
+      ],
+      [
+       -80.2,
+       32.4
+      ],
+      [
+       -80.8,
+       31.9
+      ],
+      [
+       -81.1,
+       31.2
+      ],
+      [
+       -81.35,
+       30.75
+      ],
+      [
+       -82.2,
+       30.6
+      ],
+      [
+       -82.6,
+       31.6
+      ],
+      [
+       -82.6,
+       33.0
+      ],
+      [
+       -82.9,
+       34.6
+      ],
+      [
+       -82.3,
+       35.2
+      ],
+      [
+       -81.6,
+       36.3
+      ],
+      [
+       -80.3,
+       37.3
+      ],
+      [
+       -79.9,
+       38.4
+      ],
+      [
+       -79.5,
+       39.3
+      ],
+      [
+       -80.5,
+       39.7
+      ],
+      [
+       -80.52,
+       40.6
+      ],
+      [
+       -80.52,
+       42.0
+      ],
+      [
+       -76.0,
+       42.0
+      ],
+      [
+       -75.5,
+       42.3
+      ],
+      [
+       -75.4,
+       43.25
+      ],
+      [
+       -75.0,
+       44.0
+      ],
+      [
+       -74.6,
+       45.0
+      ],
+      [
+       -71.5,
+       45.0
+      ],
+      [
+       -71.1,
+       45.3
+      ],
+      [
+       -70.4,
+       45.8
+      ],
+      [
+       -70.0,
+       46.4
+      ],
+      [
+       -69.3,
+       47.3
+      ],
+      [
+       -68.3,
+       47.4
+      ],
+      [
+       -67.8,
+       47.0
+      ],
+      [
+       -67.8,
+       45.7
+      ]
+     ]
+    }
+   ],
+   "end": "1776-01-01"
+  },
+  {
+   "name": "British-held Quebec province (corrects 1776-77 border data)",
+   "side": 1,
+   "keys": [
+    {
+     "date": "1775-04-19",
+     "coords": [
+      [
+       -74.7,
+       45.0
+      ],
+      [
+       -71.5,
+       45.0
+      ],
+      [
+       -71.05,
+       45.35
+      ],
+      [
+       -70.6,
+       46.0
+      ],
+      [
+       -70.5,
+       46.7
+      ],
+      [
+       -71.7,
+       47.0
+      ],
+      [
+       -73.0,
+       46.7
+      ],
+      [
+       -74.5,
+       46.3
+      ],
+      [
+       -75.6,
+       45.8
+      ],
+      [
+       -76.8,
+       45.3
+      ],
+      [
+       -75.3,
+       44.9
+      ]
+     ]
+    },
+    {
+     "date": "1775-11-01",
+     "coords": [
+      [
+       -74.7,
+       45.0
+      ],
+      [
+       -71.5,
+       45.0
+      ],
+      [
+       -71.05,
+       45.35
+      ],
+      [
+       -70.6,
+       46.0
+      ],
+      [
+       -70.5,
+       46.7
+      ],
+      [
+       -71.7,
+       47.0
+      ],
+      [
+       -73.0,
+       46.7
+      ],
+      [
+       -74.5,
+       46.3
+      ],
+      [
+       -75.6,
+       45.8
+      ],
+      [
+       -76.8,
+       45.3
+      ],
+      [
+       -75.3,
+       44.9
+      ]
+     ]
+    },
+    {
+     "date": "1775-11-13",
+     "coords": [
+      [
+       -72.6,
+       45.6
+      ],
+      [
+       -71.5,
+       45.0
+      ],
+      [
+       -71.05,
+       45.35
+      ],
+      [
+       -70.6,
+       46.0
+      ],
+      [
+       -70.5,
+       46.7
+      ],
+      [
+       -71.7,
+       47.0
+      ],
+      [
+       -72.6,
+       46.6
+      ],
+      [
+       -72.9,
+       46.2
+      ]
+     ]
+    },
+    {
+     "date": "1776-06-01",
+     "coords": [
+      [
+       -72.6,
+       45.6
+      ],
+      [
+       -71.5,
+       45.0
+      ],
+      [
+       -71.05,
+       45.35
+      ],
+      [
+       -70.6,
+       46.0
+      ],
+      [
+       -70.5,
+       46.7
+      ],
+      [
+       -71.7,
+       47.0
+      ],
+      [
+       -72.6,
+       46.6
+      ],
+      [
+       -72.9,
+       46.2
+      ]
+     ]
+    },
+    {
+     "date": "1776-06-15",
+     "coords": [
+      [
+       -74.7,
+       45.0
+      ],
+      [
+       -71.5,
+       45.0
+      ],
+      [
+       -71.05,
+       45.35
+      ],
+      [
+       -70.6,
+       46.0
+      ],
+      [
+       -70.5,
+       46.7
+      ],
+      [
+       -71.7,
+       47.0
+      ],
+      [
+       -73.0,
+       46.7
+      ],
+      [
+       -74.5,
+       46.3
+      ],
+      [
+       -75.6,
+       45.8
+      ],
+      [
+       -76.8,
+       45.3
+      ],
+      [
+       -75.3,
+       44.9
+      ]
+     ]
+    }
+   ],
+   "end": "1781-01-01"
+  },
+  {
+   "name": "British-held New York and New Jersey",
+   "side": 1,
+   "keys": [
+    {
+     "date": "1776-07-03",
+     "coords": [
+      [
+       -74.26,
+       40.49
+      ],
+      [
+       -74.06,
+       40.585
+      ],
+      [
+       -74.05,
+       40.64
+      ],
+      [
+       -74.17,
+       40.65
+      ],
+      [
+       -74.25,
+       40.56
+      ]
+     ]
+    },
+    {
+     "date": "1776-08-21",
+     "coords": [
+      [
+       -74.26,
+       40.49
+      ],
+      [
+       -74.06,
+       40.585
+      ],
+      [
+       -74.05,
+       40.64
+      ],
+      [
+       -74.17,
+       40.65
+      ],
+      [
+       -74.25,
+       40.56
+      ]
+     ]
+    },
+    {
+     "date": "1776-08-27",
+     "coords": [
+      [
+       -74.26,
+       40.49
+      ],
+      [
+       -74.25,
+       40.56
+      ],
+      [
+       -74.17,
+       40.65
+      ],
+      [
+       -74.05,
+       40.64
+      ],
+      [
+       -74.035,
+       40.63
+      ],
+      [
+       -74.0,
+       40.665
+      ],
+      [
+       -73.97,
+       40.675
+      ],
+      [
+       -73.93,
+       40.685
+      ],
+      [
+       -73.85,
+       40.7
+      ],
+      [
+       -73.75,
+       40.71
+      ],
+      [
+       -73.75,
+       40.57
+      ],
+      [
+       -73.95,
+       40.565
+      ],
+      [
+       -74.06,
+       40.585
+      ]
+     ]
+    },
+    {
+     "date": "1776-08-29",
+     "coords": [
+      [
+       -74.26,
+       40.49
+      ],
+      [
+       -74.25,
+       40.56
+      ],
+      [
+       -74.17,
+       40.65
+      ],
+      [
+       -74.05,
+       40.64
+      ],
+      [
+       -74.035,
+       40.63
+      ],
+      [
+       -74.0,
+       40.665
+      ],
+      [
+       -73.97,
+       40.675
+      ],
+      [
+       -73.93,
+       40.685
+      ],
+      [
+       -73.85,
+       40.7
+      ],
+      [
+       -73.75,
+       40.71
+      ],
+      [
+       -73.75,
+       40.57
+      ],
+      [
+       -73.95,
+       40.565
+      ],
+      [
+       -74.06,
+       40.585
+      ]
+     ]
+    },
+    {
+     "date": "1776-08-30",
+     "coords": [
+      [
+       -74.26,
+       40.49
+      ],
+      [
+       -74.25,
+       40.56
+      ],
+      [
+       -74.17,
+       40.65
+      ],
+      [
+       -74.05,
+       40.64
+      ],
+      [
+       -74.03,
+       40.63
+      ],
+      [
+       -74.015,
+       40.675
+      ],
+      [
+       -73.999,
+       40.7
+      ],
+      [
+       -73.985,
+       40.705
+      ],
+      [
+       -73.968,
+       40.712
+      ],
+      [
+       -73.96,
+       40.74
+      ],
+      [
+       -73.94,
+       40.775
+      ],
+      [
+       -73.9,
+       40.79
+      ],
+      [
+       -73.75,
+       40.8
+      ],
+      [
+       -73.4,
+       40.9
+      ],
+      [
+       -73.4,
+       40.6
+      ],
+      [
+       -73.95,
+       40.565
+      ],
+      [
+       -74.06,
+       40.585
+      ]
+     ]
+    },
+    {
+     "date": "1776-09-14",
+     "coords": [
+      [
+       -74.26,
+       40.49
+      ],
+      [
+       -74.25,
+       40.56
+      ],
+      [
+       -74.17,
+       40.65
+      ],
+      [
+       -74.05,
+       40.64
+      ],
+      [
+       -74.03,
+       40.63
+      ],
+      [
+       -74.015,
+       40.675
+      ],
+      [
+       -73.999,
+       40.7
+      ],
+      [
+       -73.985,
+       40.705
+      ],
+      [
+       -73.968,
+       40.712
+      ],
+      [
+       -73.96,
+       40.74
+      ],
+      [
+       -73.94,
+       40.775
+      ],
+      [
+       -73.9,
+       40.79
+      ],
+      [
+       -73.75,
+       40.8
+      ],
+      [
+       -73.4,
+       40.9
+      ],
+      [
+       -73.4,
+       40.6
+      ],
+      [
+       -73.95,
+       40.565
+      ],
+      [
+       -74.06,
+       40.585
+      ]
+     ]
+    },
+    {
+     "date": "1776-09-15",
+     "coords": [
+      [
+       -74.26,
+       40.49
+      ],
+      [
+       -74.25,
+       40.56
+      ],
+      [
+       -74.17,
+       40.65
+      ],
+      [
+       -74.05,
+       40.64
+      ],
+      [
+       -74.03,
+       40.66
+      ],
+      [
+       -74.025,
+       40.7
+      ],
+      [
+       -74.02,
+       40.74
+      ],
+      [
+       -74.0,
+       40.77
+      ],
+      [
+       -73.975,
+       40.795
+      ],
+      [
+       -73.945,
+       40.79
+      ],
+      [
+       -73.935,
+       40.785
+      ],
+      [
+       -73.9,
+       40.79
+      ],
+      [
+       -73.75,
+       40.8
+      ],
+      [
+       -73.4,
+       40.9
+      ],
+      [
+       -73.4,
+       40.6
+      ],
+      [
+       -73.95,
+       40.565
+      ],
+      [
+       -74.06,
+       40.585
+      ]
+     ]
+    },
+    {
+     "date": "1776-10-17",
+     "coords": [
+      [
+       -74.26,
+       40.49
+      ],
+      [
+       -74.25,
+       40.56
+      ],
+      [
+       -74.17,
+       40.65
+      ],
+      [
+       -74.05,
+       40.64
+      ],
+      [
+       -74.03,
+       40.66
+      ],
+      [
+       -74.025,
+       40.7
+      ],
+      [
+       -74.02,
+       40.74
+      ],
+      [
+       -74.0,
+       40.77
+      ],
+      [
+       -73.975,
+       40.795
+      ],
+      [
+       -73.945,
+       40.79
+      ],
+      [
+       -73.935,
+       40.785
+      ],
+      [
+       -73.9,
+       40.79
+      ],
+      [
+       -73.75,
+       40.8
+      ],
+      [
+       -73.4,
+       40.9
+      ],
+      [
+       -73.4,
+       40.6
+      ],
+      [
+       -73.95,
+       40.565
+      ],
+      [
+       -74.06,
+       40.585
+      ]
+     ]
+    },
+    {
+     "date": "1776-10-18",
+     "coords": [
+      [
+       -74.26,
+       40.49
+      ],
+      [
+       -74.25,
+       40.56
+      ],
+      [
+       -74.17,
+       40.65
+      ],
+      [
+       -74.05,
+       40.64
+      ],
+      [
+       -74.03,
+       40.66
+      ],
+      [
+       -74.025,
+       40.7
+      ],
+      [
+       -74.02,
+       40.74
+      ],
+      [
+       -74.0,
+       40.77
+      ],
+      [
+       -73.975,
+       40.795
+      ],
+      [
+       -73.945,
+       40.79
+      ],
+      [
+       -73.935,
+       40.785
+      ],
+      [
+       -73.92,
+       40.8
+      ],
+      [
+       -73.86,
+       40.84
+      ],
+      [
+       -73.84,
+       40.93
+      ],
+      [
+       -73.75,
+       40.93
+      ],
+      [
+       -73.77,
+       40.85
+      ],
+      [
+       -73.8,
+       40.81
+      ],
+      [
+       -73.85,
+       40.79
+      ],
+      [
+       -73.75,
+       40.8
+      ],
+      [
+       -73.4,
+       40.9
+      ],
+      [
+       -73.4,
+       40.6
+      ],
+      [
+       -73.95,
+       40.565
+      ],
+      [
+       -74.06,
+       40.585
+      ]
+     ]
+    },
+    {
+     "date": "1776-10-28",
+     "coords": [
+      [
+       -74.26,
+       40.49
+      ],
+      [
+       -74.25,
+       40.56
+      ],
+      [
+       -74.17,
+       40.65
+      ],
+      [
+       -74.05,
+       40.64
+      ],
+      [
+       -74.03,
+       40.66
+      ],
+      [
+       -74.025,
+       40.7
+      ],
+      [
+       -74.02,
+       40.74
+      ],
+      [
+       -74.0,
+       40.77
+      ],
+      [
+       -73.975,
+       40.795
+      ],
+      [
+       -73.945,
+       40.79
+      ],
+      [
+       -73.935,
+       40.785
+      ],
+      [
+       -73.92,
+       40.8
+      ],
+      [
+       -73.86,
+       40.84
+      ],
+      [
+       -73.84,
+       40.96
+      ],
+      [
+       -73.8,
+       41.06
+      ],
+      [
+       -73.72,
+       41.06
+      ],
+      [
+       -73.72,
+       40.95
+      ],
+      [
+       -73.77,
+       40.85
+      ],
+      [
+       -73.8,
+       40.81
+      ],
+      [
+       -73.85,
+       40.79
+      ],
+      [
+       -73.75,
+       40.8
+      ],
+      [
+       -73.4,
+       40.9
+      ],
+      [
+       -73.4,
+       40.6
+      ],
+      [
+       -73.95,
+       40.565
+      ],
+      [
+       -74.06,
+       40.585
+      ]
+     ]
+    },
+    {
+     "date": "1776-11-02",
+     "coords": [
+      [
+       -74.26,
+       40.49
+      ],
+      [
+       -74.25,
+       40.56
+      ],
+      [
+       -74.17,
+       40.65
+      ],
+      [
+       -74.05,
+       40.64
+      ],
+      [
+       -74.03,
+       40.66
+      ],
+      [
+       -74.025,
+       40.7
+      ],
+      [
+       -74.02,
+       40.74
+      ],
+      [
+       -74.0,
+       40.77
+      ],
+      [
+       -73.975,
+       40.795
+      ],
+      [
+       -73.945,
+       40.79
+      ],
+      [
+       -73.935,
+       40.785
+      ],
+      [
+       -73.92,
+       40.8
+      ],
+      [
+       -73.86,
+       40.84
+      ],
+      [
+       -73.84,
+       40.96
+      ],
+      [
+       -73.8,
+       41.06
+      ],
+      [
+       -73.72,
+       41.06
+      ],
+      [
+       -73.72,
+       40.95
+      ],
+      [
+       -73.77,
+       40.85
+      ],
+      [
+       -73.8,
+       40.81
+      ],
+      [
+       -73.85,
+       40.79
+      ],
+      [
+       -73.75,
+       40.8
+      ],
+      [
+       -73.4,
+       40.9
+      ],
+      [
+       -73.4,
+       40.6
+      ],
+      [
+       -73.95,
+       40.565
+      ],
+      [
+       -74.06,
+       40.585
+      ]
+     ]
+    },
+    {
+     "date": "1776-11-05",
+     "coords": [
+      [
+       -74.26,
+       40.49
+      ],
+      [
+       -74.25,
+       40.56
+      ],
+      [
+       -74.17,
+       40.65
+      ],
+      [
+       -74.05,
+       40.64
+      ],
+      [
+       -74.03,
+       40.66
+      ],
+      [
+       -74.025,
+       40.7
+      ],
+      [
+       -74.02,
+       40.74
+      ],
+      [
+       -74.0,
+       40.77
+      ],
+      [
+       -73.975,
+       40.795
+      ],
+      [
+       -73.945,
+       40.79
+      ],
+      [
+       -73.935,
+       40.785
+      ],
+      [
+       -73.92,
+       40.8
+      ],
+      [
+       -73.88,
+       40.86
+      ],
+      [
+       -73.83,
+       40.87
+      ],
+      [
+       -73.8,
+       40.81
+      ],
+      [
+       -73.85,
+       40.79
+      ],
+      [
+       -73.75,
+       40.8
+      ],
+      [
+       -73.4,
+       40.9
+      ],
+      [
+       -73.4,
+       40.6
+      ],
+      [
+       -73.95,
+       40.565
+      ],
+      [
+       -74.06,
+       40.585
+      ]
+     ]
+    },
+    {
+     "date": "1776-11-15",
+     "coords": [
+      [
+       -74.26,
+       40.49
+      ],
+      [
+       -74.25,
+       40.56
+      ],
+      [
+       -74.17,
+       40.65
+      ],
+      [
+       -74.05,
+       40.64
+      ],
+      [
+       -74.03,
+       40.66
+      ],
+      [
+       -74.025,
+       40.7
+      ],
+      [
+       -74.02,
+       40.74
+      ],
+      [
+       -74.0,
+       40.77
+      ],
+      [
+       -73.975,
+       40.795
+      ],
+      [
+       -73.945,
+       40.79
+      ],
+      [
+       -73.935,
+       40.785
+      ],
+      [
+       -73.92,
+       40.8
+      ],
+      [
+       -73.88,
+       40.86
+      ],
+      [
+       -73.83,
+       40.87
+      ],
+      [
+       -73.8,
+       40.81
+      ],
+      [
+       -73.85,
+       40.79
+      ],
+      [
+       -73.75,
+       40.8
+      ],
+      [
+       -73.4,
+       40.9
+      ],
+      [
+       -73.4,
+       40.6
+      ],
+      [
+       -73.95,
+       40.565
+      ],
+      [
+       -74.06,
+       40.585
+      ]
+     ]
+    },
+    {
+     "date": "1776-11-16",
+     "coords": [
+      [
+       -74.26,
+       40.49
+      ],
+      [
+       -74.25,
+       40.56
+      ],
+      [
+       -74.17,
+       40.65
+      ],
+      [
+       -74.05,
+       40.64
+      ],
+      [
+       -74.03,
+       40.66
+      ],
+      [
+       -74.025,
+       40.7
+      ],
+      [
+       -74.02,
+       40.74
+      ],
+      [
+       -74.0,
+       40.77
+      ],
+      [
+       -73.96,
+       40.83
+      ],
+      [
+       -73.935,
+       40.875
+      ],
+      [
+       -73.9,
+       40.885
+      ],
+      [
+       -73.83,
+       40.87
+      ],
+      [
+       -73.8,
+       40.81
+      ],
+      [
+       -73.85,
+       40.79
+      ],
+      [
+       -73.75,
+       40.8
+      ],
+      [
+       -73.0,
+       40.97
+      ],
+      [
+       -71.85,
+       41.1
+      ],
+      [
+       -71.85,
+       40.98
+      ],
+      [
+       -73.4,
+       40.6
+      ],
+      [
+       -73.95,
+       40.565
+      ],
+      [
+       -74.06,
+       40.585
+      ]
+     ]
+    },
+    {
+     "date": "1776-11-19",
+     "coords": [
+      [
+       -74.26,
+       40.49
+      ],
+      [
+       -74.25,
+       40.56
+      ],
+      [
+       -74.17,
+       40.65
+      ],
+      [
+       -74.05,
+       40.64
+      ],
+      [
+       -74.03,
+       40.66
+      ],
+      [
+       -74.025,
+       40.7
+      ],
+      [
+       -74.02,
+       40.74
+      ],
+      [
+       -74.0,
+       40.77
+      ],
+      [
+       -73.96,
+       40.83
+      ],
+      [
+       -73.935,
+       40.875
+      ],
+      [
+       -73.9,
+       40.885
+      ],
+      [
+       -73.83,
+       40.87
+      ],
+      [
+       -73.8,
+       40.81
+      ],
+      [
+       -73.85,
+       40.79
+      ],
+      [
+       -73.75,
+       40.8
+      ],
+      [
+       -73.0,
+       40.97
+      ],
+      [
+       -71.85,
+       41.1
+      ],
+      [
+       -71.85,
+       40.98
+      ],
+      [
+       -73.4,
+       40.6
+      ],
+      [
+       -73.95,
+       40.565
+      ],
+      [
+       -74.06,
+       40.585
+      ]
+     ]
+    },
+    {
+     "date": "1776-11-20",
+     "coords": [
+      [
+       -74.26,
+       40.49
+      ],
+      [
+       -74.25,
+       40.56
+      ],
+      [
+       -74.17,
+       40.65
+      ],
+      [
+       -74.05,
+       40.64
+      ],
+      [
+       -74.03,
+       40.66
+      ],
+      [
+       -74.025,
+       40.7
+      ],
+      [
+       -74.02,
+       40.74
+      ],
+      [
+       -74.0,
+       40.77
+      ],
+      [
+       -73.995,
+       40.82
+      ],
+      [
+       -73.985,
+       40.875
+      ],
+      [
+       -73.935,
+       40.885
+      ],
+      [
+       -73.9,
+       40.885
+      ],
+      [
+       -73.83,
+       40.87
+      ],
+      [
+       -73.8,
+       40.81
+      ],
+      [
+       -73.85,
+       40.79
+      ],
+      [
+       -73.75,
+       40.8
+      ],
+      [
+       -73.0,
+       40.97
+      ],
+      [
+       -71.85,
+       41.1
+      ],
+      [
+       -71.85,
+       40.98
+      ],
+      [
+       -73.4,
+       40.6
+      ],
+      [
+       -73.95,
+       40.565
+      ],
+      [
+       -74.06,
+       40.585
+      ]
+     ]
+    },
+    {
+     "date": "1776-12-01",
+     "coords": [
+      [
+       -74.26,
+       40.49
+      ],
+      [
+       -74.3,
+       40.48
+      ],
+      [
+       -74.5,
+       40.45
+      ],
+      [
+       -74.52,
+       40.53
+      ],
+      [
+       -74.3,
+       40.7
+      ],
+      [
+       -74.15,
+       40.8
+      ],
+      [
+       -74.08,
+       40.92
+      ],
+      [
+       -73.97,
+       40.92
+      ],
+      [
+       -73.94,
+       40.885
+      ],
+      [
+       -73.9,
+       40.885
+      ],
+      [
+       -73.83,
+       40.87
+      ],
+      [
+       -73.8,
+       40.81
+      ],
+      [
+       -73.85,
+       40.79
+      ],
+      [
+       -73.75,
+       40.8
+      ],
+      [
+       -73.0,
+       40.97
+      ],
+      [
+       -71.85,
+       41.1
+      ],
+      [
+       -71.85,
+       40.98
+      ],
+      [
+       -73.4,
+       40.6
+      ],
+      [
+       -73.95,
+       40.565
+      ],
+      [
+       -74.06,
+       40.585
+      ]
+     ]
+    },
+    {
+     "date": "1776-12-08",
+     "coords": [
+      [
+       -74.26,
+       40.49
+      ],
+      [
+       -74.27,
+       40.47
+      ],
+      [
+       -74.45,
+       40.42
+      ],
+      [
+       -74.66,
+       40.3
+      ],
+      [
+       -74.75,
+       40.17
+      ],
+      [
+       -74.86,
+       40.06
+      ],
+      [
+       -74.88,
+       40.1
+      ],
+      [
+       -74.78,
+       40.24
+      ],
+      [
+       -74.72,
+       40.4
+      ],
+      [
+       -74.55,
+       40.55
+      ],
+      [
+       -74.3,
+       40.72
+      ],
+      [
+       -74.15,
+       40.82
+      ],
+      [
+       -74.08,
+       40.92
+      ],
+      [
+       -73.97,
+       40.92
+      ],
+      [
+       -73.94,
+       40.885
+      ],
+      [
+       -73.9,
+       40.885
+      ],
+      [
+       -73.83,
+       40.87
+      ],
+      [
+       -73.8,
+       40.81
+      ],
+      [
+       -73.85,
+       40.79
+      ],
+      [
+       -73.75,
+       40.8
+      ],
+      [
+       -73.0,
+       40.97
+      ],
+      [
+       -71.85,
+       41.1
+      ],
+      [
+       -71.85,
+       40.98
+      ],
+      [
+       -73.4,
+       40.6
+      ],
+      [
+       -73.95,
+       40.565
+      ],
+      [
+       -74.06,
+       40.585
+      ]
+     ]
+    },
+    {
+     "date": "1776-12-25",
+     "coords": [
+      [
+       -74.26,
+       40.49
+      ],
+      [
+       -74.27,
+       40.47
+      ],
+      [
+       -74.45,
+       40.42
+      ],
+      [
+       -74.66,
+       40.3
+      ],
+      [
+       -74.75,
+       40.17
+      ],
+      [
+       -74.86,
+       40.06
+      ],
+      [
+       -74.88,
+       40.1
+      ],
+      [
+       -74.78,
+       40.24
+      ],
+      [
+       -74.72,
+       40.4
+      ],
+      [
+       -74.55,
+       40.55
+      ],
+      [
+       -74.3,
+       40.72
+      ],
+      [
+       -74.15,
+       40.82
+      ],
+      [
+       -74.08,
+       40.92
+      ],
+      [
+       -73.97,
+       40.92
+      ],
+      [
+       -73.94,
+       40.885
+      ],
+      [
+       -73.9,
+       40.885
+      ],
+      [
+       -73.83,
+       40.87
+      ],
+      [
+       -73.8,
+       40.81
+      ],
+      [
+       -73.85,
+       40.79
+      ],
+      [
+       -73.75,
+       40.8
+      ],
+      [
+       -73.0,
+       40.97
+      ],
+      [
+       -71.85,
+       41.1
+      ],
+      [
+       -71.85,
+       40.98
+      ],
+      [
+       -73.4,
+       40.6
+      ],
+      [
+       -73.95,
+       40.565
+      ],
+      [
+       -74.06,
+       40.585
+      ]
+     ]
+    },
+    {
+     "date": "1776-12-26",
+     "coords": [
+      [
+       -74.26,
+       40.49
+      ],
+      [
+       -74.27,
+       40.47
+      ],
+      [
+       -74.45,
+       40.36
+      ],
+      [
+       -74.58,
+       40.2
+      ],
+      [
+       -74.62,
+       40.25
+      ],
+      [
+       -74.7,
+       40.33
+      ],
+      [
+       -74.68,
+       40.4
+      ],
+      [
+       -74.55,
+       40.55
+      ],
+      [
+       -74.3,
+       40.72
+      ],
+      [
+       -74.15,
+       40.82
+      ],
+      [
+       -74.08,
+       40.92
+      ],
+      [
+       -73.97,
+       40.92
+      ],
+      [
+       -73.94,
+       40.885
+      ],
+      [
+       -73.9,
+       40.885
+      ],
+      [
+       -73.83,
+       40.87
+      ],
+      [
+       -73.8,
+       40.81
+      ],
+      [
+       -73.85,
+       40.79
+      ],
+      [
+       -73.75,
+       40.8
+      ],
+      [
+       -73.0,
+       40.97
+      ],
+      [
+       -71.85,
+       41.1
+      ],
+      [
+       -71.85,
+       40.98
+      ],
+      [
+       -73.4,
+       40.6
+      ],
+      [
+       -73.95,
+       40.565
+      ],
+      [
+       -74.06,
+       40.585
+      ]
+     ]
+    },
+    {
+     "date": "1777-01-02",
+     "coords": [
+      [
+       -74.26,
+       40.49
+      ],
+      [
+       -74.27,
+       40.47
+      ],
+      [
+       -74.45,
+       40.36
+      ],
+      [
+       -74.58,
+       40.2
+      ],
+      [
+       -74.62,
+       40.25
+      ],
+      [
+       -74.7,
+       40.33
+      ],
+      [
+       -74.68,
+       40.4
+      ],
+      [
+       -74.55,
+       40.55
+      ],
+      [
+       -74.3,
+       40.72
+      ],
+      [
+       -74.15,
+       40.82
+      ],
+      [
+       -74.08,
+       40.92
+      ],
+      [
+       -73.97,
+       40.92
+      ],
+      [
+       -73.94,
+       40.885
+      ],
+      [
+       -73.9,
+       40.885
+      ],
+      [
+       -73.83,
+       40.87
+      ],
+      [
+       -73.8,
+       40.81
+      ],
+      [
+       -73.85,
+       40.79
+      ],
+      [
+       -73.75,
+       40.8
+      ],
+      [
+       -73.0,
+       40.97
+      ],
+      [
+       -71.85,
+       41.1
+      ],
+      [
+       -71.85,
+       40.98
+      ],
+      [
+       -73.4,
+       40.6
+      ],
+      [
+       -73.95,
+       40.565
+      ],
+      [
+       -74.06,
+       40.585
+      ]
+     ]
+    },
+    {
+     "date": "1777-01-03",
+     "coords": [
+      [
+       -74.26,
+       40.49
+      ],
+      [
+       -74.27,
+       40.47
+      ],
+      [
+       -74.42,
+       40.4
+      ],
+      [
+       -74.53,
+       40.45
+      ],
+      [
+       -74.5,
+       40.56
+      ],
+      [
+       -74.3,
+       40.72
+      ],
+      [
+       -74.15,
+       40.82
+      ],
+      [
+       -74.08,
+       40.92
+      ],
+      [
+       -73.97,
+       40.92
+      ],
+      [
+       -73.94,
+       40.885
+      ],
+      [
+       -73.9,
+       40.885
+      ],
+      [
+       -73.83,
+       40.87
+      ],
+      [
+       -73.8,
+       40.81
+      ],
+      [
+       -73.85,
+       40.79
+      ],
+      [
+       -73.75,
+       40.8
+      ],
+      [
+       -73.0,
+       40.97
+      ],
+      [
+       -71.85,
+       41.1
+      ],
+      [
+       -71.85,
+       40.98
+      ],
+      [
+       -73.4,
+       40.6
+      ],
+      [
+       -73.95,
+       40.565
+      ],
+      [
+       -74.06,
+       40.585
+      ]
+     ]
+    },
+    {
+     "date": "1777-01-06",
+     "coords": [
+      [
+       -74.26,
+       40.49
+      ],
+      [
+       -74.27,
+       40.47
+      ],
+      [
+       -74.4,
+       40.44
+      ],
+      [
+       -74.5,
+       40.47
+      ],
+      [
+       -74.47,
+       40.53
+      ],
+      [
+       -74.3,
+       40.6
+      ],
+      [
+       -74.22,
+       40.63
+      ],
+      [
+       -74.17,
+       40.65
+      ],
+      [
+       -74.05,
+       40.64
+      ],
+      [
+       -74.03,
+       40.66
+      ],
+      [
+       -74.025,
+       40.7
+      ],
+      [
+       -74.02,
+       40.74
+      ],
+      [
+       -74.0,
+       40.77
+      ],
+      [
+       -73.96,
+       40.83
+      ],
+      [
+       -73.935,
+       40.875
+      ],
+      [
+       -73.9,
+       40.885
+      ],
+      [
+       -73.83,
+       40.87
+      ],
+      [
+       -73.8,
+       40.81
+      ],
+      [
+       -73.85,
+       40.79
+      ],
+      [
+       -73.75,
+       40.8
+      ],
+      [
+       -73.0,
+       40.97
+      ],
+      [
+       -71.85,
+       41.1
+      ],
+      [
+       -71.85,
+       40.98
+      ],
+      [
+       -73.4,
+       40.6
+      ],
+      [
+       -73.95,
+       40.565
+      ],
+      [
+       -74.06,
+       40.585
+      ]
+     ]
+    },
+    {
+     "date": "1777-06-25",
+     "coords": [
+      [
+       -74.26,
+       40.49
+      ],
+      [
+       -74.27,
+       40.47
+      ],
+      [
+       -74.4,
+       40.44
+      ],
+      [
+       -74.5,
+       40.47
+      ],
+      [
+       -74.47,
+       40.53
+      ],
+      [
+       -74.3,
+       40.6
+      ],
+      [
+       -74.22,
+       40.63
+      ],
+      [
+       -74.17,
+       40.65
+      ],
+      [
+       -74.05,
+       40.64
+      ],
+      [
+       -74.03,
+       40.66
+      ],
+      [
+       -74.025,
+       40.7
+      ],
+      [
+       -74.02,
+       40.74
+      ],
+      [
+       -74.0,
+       40.77
+      ],
+      [
+       -73.96,
+       40.83
+      ],
+      [
+       -73.935,
+       40.875
+      ],
+      [
+       -73.9,
+       40.885
+      ],
+      [
+       -73.83,
+       40.87
+      ],
+      [
+       -73.8,
+       40.81
+      ],
+      [
+       -73.85,
+       40.79
+      ],
+      [
+       -73.75,
+       40.8
+      ],
+      [
+       -73.0,
+       40.97
+      ],
+      [
+       -71.85,
+       41.1
+      ],
+      [
+       -71.85,
+       40.98
+      ],
+      [
+       -73.4,
+       40.6
+      ],
+      [
+       -73.95,
+       40.565
+      ],
+      [
+       -74.06,
+       40.585
+      ]
+     ]
+    },
+    {
+     "date": "1777-07-01",
+     "coords": [
+      [
+       -74.26,
+       40.5
+      ],
+      [
+       -74.23,
+       40.56
+      ],
+      [
+       -74.17,
+       40.65
+      ],
+      [
+       -74.05,
+       40.64
+      ],
+      [
+       -74.03,
+       40.66
+      ],
+      [
+       -74.025,
+       40.7
+      ],
+      [
+       -74.02,
+       40.74
+      ],
+      [
+       -74.0,
+       40.77
+      ],
+      [
+       -73.96,
+       40.83
+      ],
+      [
+       -73.935,
+       40.875
+      ],
+      [
+       -73.9,
+       40.885
+      ],
+      [
+       -73.83,
+       40.87
+      ],
+      [
+       -73.8,
+       40.81
+      ],
+      [
+       -73.85,
+       40.79
+      ],
+      [
+       -73.75,
+       40.8
+      ],
+      [
+       -73.0,
+       40.97
+      ],
+      [
+       -71.85,
+       41.1
+      ],
+      [
+       -71.85,
+       40.98
+      ],
+      [
+       -73.4,
+       40.6
+      ],
+      [
+       -73.95,
+       40.565
+      ],
+      [
+       -73.95,
+       40.565
+      ],
+      [
+       -73.98,
+       40.47
+      ],
+      [
+       -74.02,
+       40.42
+      ],
+      [
+       -74.03,
+       40.48
+      ],
+      [
+       -74.06,
+       40.585
+      ]
+     ]
+    },
+    {
+     "date": "1778-06-30",
+     "coords": [
+      [
+       -74.26,
+       40.5
+      ],
+      [
+       -74.23,
+       40.56
+      ],
+      [
+       -74.17,
+       40.65
+      ],
+      [
+       -74.05,
+       40.64
+      ],
+      [
+       -74.03,
+       40.66
+      ],
+      [
+       -74.025,
+       40.7
+      ],
+      [
+       -74.02,
+       40.74
+      ],
+      [
+       -74.0,
+       40.77
+      ],
+      [
+       -73.96,
+       40.83
+      ],
+      [
+       -73.935,
+       40.875
+      ],
+      [
+       -73.9,
+       40.885
+      ],
+      [
+       -73.83,
+       40.87
+      ],
+      [
+       -73.8,
+       40.81
+      ],
+      [
+       -73.85,
+       40.79
+      ],
+      [
+       -73.75,
+       40.8
+      ],
+      [
+       -73.0,
+       40.97
+      ],
+      [
+       -71.85,
+       41.1
+      ],
+      [
+       -71.85,
+       40.98
+      ],
+      [
+       -73.4,
+       40.6
+      ],
+      [
+       -73.95,
+       40.565
+      ],
+      [
+       -73.95,
+       40.565
+      ],
+      [
+       -73.98,
+       40.47
+      ],
+      [
+       -74.02,
+       40.42
+      ],
+      [
+       -74.03,
+       40.48
+      ],
+      [
+       -74.06,
+       40.585
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Burgoyne's army: British-held Lake Champlain and upper Hudson (1777)",
+   "side": 1,
+   "keys": [
+    {
+     "date": "1777-06-30",
+     "coords": [
+      [
+       -73.53,
+       44.03
+      ],
+      [
+       -73.522,
+       44.002
+      ],
+      [
+       -73.501,
+       43.979
+      ],
+      [
+       -73.468,
+       43.963
+      ],
+      [
+       -73.43,
+       43.958
+      ],
+      [
+       -73.392,
+       43.963
+      ],
+      [
+       -73.359,
+       43.979
+      ],
+      [
+       -73.338,
+       44.002
+      ],
+      [
+       -73.33,
+       44.03
+      ],
+      [
+       -73.198,
+       45.0
+      ],
+      [
+       -73.206,
+       45.028
+      ],
+      [
+       -73.228,
+       45.051
+      ],
+      [
+       -73.261,
+       45.067
+      ],
+      [
+       -73.3,
+       45.072
+      ],
+      [
+       -73.339,
+       45.067
+      ],
+      [
+       -73.372,
+       45.051
+      ],
+      [
+       -73.394,
+       45.028
+      ],
+      [
+       -73.402,
+       45.0
+      ],
+      [
+       -73.481,
+       44.6
+      ]
+     ]
+    },
+    {
+     "date": "1777-07-01",
+     "coords": [
+      [
+       -73.53,
+       44.03
+      ],
+      [
+       -73.522,
+       44.002
+      ],
+      [
+       -73.501,
+       43.979
+      ],
+      [
+       -73.468,
+       43.963
+      ],
+      [
+       -73.43,
+       43.958
+      ],
+      [
+       -73.392,
+       43.963
+      ],
+      [
+       -73.359,
+       43.979
+      ],
+      [
+       -73.338,
+       44.002
+      ],
+      [
+       -73.33,
+       44.03
+      ],
+      [
+       -73.198,
+       45.0
+      ],
+      [
+       -73.206,
+       45.028
+      ],
+      [
+       -73.228,
+       45.051
+      ],
+      [
+       -73.261,
+       45.067
+      ],
+      [
+       -73.3,
+       45.072
+      ],
+      [
+       -73.339,
+       45.067
+      ],
+      [
+       -73.372,
+       45.051
+      ],
+      [
+       -73.394,
+       45.028
+      ],
+      [
+       -73.402,
+       45.0
+      ],
+      [
+       -73.481,
+       44.6
+      ]
+     ]
+    },
+    {
+     "date": "1777-07-06",
+     "coords": [
+      [
+       -73.53,
+       44.03
+      ],
+      [
+       -73.49,
+       43.83
+      ],
+      [
+       -73.482,
+       43.802
+      ],
+      [
+       -73.46,
+       43.779
+      ],
+      [
+       -73.428,
+       43.763
+      ],
+      [
+       -73.39,
+       43.758
+      ],
+      [
+       -73.352,
+       43.763
+      ],
+      [
+       -73.32,
+       43.779
+      ],
+      [
+       -73.298,
+       43.802
+      ],
+      [
+       -73.29,
+       43.83
+      ],
+      [
+       -73.198,
+       45.0
+      ],
+      [
+       -73.206,
+       45.028
+      ],
+      [
+       -73.228,
+       45.051
+      ],
+      [
+       -73.261,
+       45.067
+      ],
+      [
+       -73.3,
+       45.072
+      ],
+      [
+       -73.339,
+       45.067
+      ],
+      [
+       -73.372,
+       45.051
+      ],
+      [
+       -73.394,
+       45.028
+      ],
+      [
+       -73.402,
+       45.0
+      ],
+      [
+       -73.481,
+       44.6
+      ]
+     ]
+    },
+    {
+     "date": "1777-07-07",
+     "coords": [
+      [
+       -73.53,
+       44.03
+      ],
+      [
+       -73.509,
+       43.55
+      ],
+      [
+       -73.502,
+       43.522
+      ],
+      [
+       -73.48,
+       43.499
+      ],
+      [
+       -73.448,
+       43.483
+      ],
+      [
+       -73.41,
+       43.478
+      ],
+      [
+       -73.372,
+       43.483
+      ],
+      [
+       -73.34,
+       43.499
+      ],
+      [
+       -73.318,
+       43.522
+      ],
+      [
+       -73.311,
+       43.55
+      ],
+      [
+       -73.198,
+       45.0
+      ],
+      [
+       -73.206,
+       45.028
+      ],
+      [
+       -73.228,
+       45.051
+      ],
+      [
+       -73.261,
+       45.067
+      ],
+      [
+       -73.3,
+       45.072
+      ],
+      [
+       -73.339,
+       45.067
+      ],
+      [
+       -73.372,
+       45.051
+      ],
+      [
+       -73.394,
+       45.028
+      ],
+      [
+       -73.402,
+       45.0
+      ],
+      [
+       -73.481,
+       44.6
+      ]
+     ]
+    },
+    {
+     "date": "1777-07-24",
+     "coords": [
+      [
+       -73.53,
+       44.03
+      ],
+      [
+       -73.509,
+       43.55
+      ],
+      [
+       -73.502,
+       43.522
+      ],
+      [
+       -73.48,
+       43.499
+      ],
+      [
+       -73.448,
+       43.483
+      ],
+      [
+       -73.41,
+       43.478
+      ],
+      [
+       -73.372,
+       43.483
+      ],
+      [
+       -73.34,
+       43.499
+      ],
+      [
+       -73.318,
+       43.522
+      ],
+      [
+       -73.311,
+       43.55
+      ],
+      [
+       -73.198,
+       45.0
+      ],
+      [
+       -73.206,
+       45.028
+      ],
+      [
+       -73.228,
+       45.051
+      ],
+      [
+       -73.261,
+       45.067
+      ],
+      [
+       -73.3,
+       45.072
+      ],
+      [
+       -73.339,
+       45.067
+      ],
+      [
+       -73.372,
+       45.051
+      ],
+      [
+       -73.394,
+       45.028
+      ],
+      [
+       -73.402,
+       45.0
+      ],
+      [
+       -73.481,
+       44.6
+      ]
+     ]
+    },
+    {
+     "date": "1777-07-29",
+     "coords": [
+      [
+       -73.679,
+       43.27
+      ],
+      [
+       -73.671,
+       43.242
+      ],
+      [
+       -73.65,
+       43.219
+      ],
+      [
+       -73.618,
+       43.203
+      ],
+      [
+       -73.58,
+       43.198
+      ],
+      [
+       -73.542,
+       43.203
+      ],
+      [
+       -73.51,
+       43.219
+      ],
+      [
+       -73.489,
+       43.242
+      ],
+      [
+       -73.399,
+       43.382
+      ],
+      [
+       -73.318,
+       43.522
+      ],
+      [
+       -73.311,
+       43.55
+      ],
+      [
+       -73.198,
+       45.0
+      ],
+      [
+       -73.206,
+       45.028
+      ],
+      [
+       -73.228,
+       45.051
+      ],
+      [
+       -73.261,
+       45.067
+      ],
+      [
+       -73.3,
+       45.072
+      ],
+      [
+       -73.339,
+       45.067
+      ],
+      [
+       -73.372,
+       45.051
+      ],
+      [
+       -73.394,
+       45.028
+      ],
+      [
+       -73.402,
+       45.0
+      ],
+      [
+       -73.481,
+       44.6
+      ]
+     ]
+    },
+    {
+     "date": "1777-09-12",
+     "coords": [
+      [
+       -73.679,
+       43.27
+      ],
+      [
+       -73.671,
+       43.242
+      ],
+      [
+       -73.65,
+       43.219
+      ],
+      [
+       -73.618,
+       43.203
+      ],
+      [
+       -73.58,
+       43.198
+      ],
+      [
+       -73.542,
+       43.203
+      ],
+      [
+       -73.51,
+       43.219
+      ],
+      [
+       -73.489,
+       43.242
+      ],
+      [
+       -73.399,
+       43.382
+      ],
+      [
+       -73.318,
+       43.522
+      ],
+      [
+       -73.311,
+       43.55
+      ],
+      [
+       -73.198,
+       45.0
+      ],
+      [
+       -73.206,
+       45.028
+      ],
+      [
+       -73.228,
+       45.051
+      ],
+      [
+       -73.261,
+       45.067
+      ],
+      [
+       -73.3,
+       45.072
+      ],
+      [
+       -73.339,
+       45.067
+      ],
+      [
+       -73.372,
+       45.051
+      ],
+      [
+       -73.394,
+       45.028
+      ],
+      [
+       -73.402,
+       45.0
+      ],
+      [
+       -73.481,
+       44.6
+      ]
+     ]
+    },
+    {
+     "date": "1777-09-13",
+     "coords": [
+      [
+       -73.679,
+       43.16
+      ],
+      [
+       -73.678,
+       43.1
+      ],
+      [
+       -73.671,
+       43.072
+      ],
+      [
+       -73.65,
+       43.049
+      ],
+      [
+       -73.618,
+       43.033
+      ],
+      [
+       -73.58,
+       43.028
+      ],
+      [
+       -73.542,
+       43.033
+      ],
+      [
+       -73.51,
+       43.049
+      ],
+      [
+       -73.489,
+       43.072
+      ],
+      [
+       -73.318,
+       43.522
+      ],
+      [
+       -73.311,
+       43.55
+      ],
+      [
+       -73.198,
+       45.0
+      ],
+      [
+       -73.206,
+       45.028
+      ],
+      [
+       -73.228,
+       45.051
+      ],
+      [
+       -73.261,
+       45.067
+      ],
+      [
+       -73.3,
+       45.072
+      ],
+      [
+       -73.339,
+       45.067
+      ],
+      [
+       -73.372,
+       45.051
+      ],
+      [
+       -73.394,
+       45.028
+      ],
+      [
+       -73.402,
+       45.0
+      ],
+      [
+       -73.481,
+       44.6
+      ],
+      [
+       -73.679,
+       43.27
+      ]
+     ]
+    },
+    {
+     "date": "1777-09-19",
+     "coords": [
+      [
+       -73.736,
+       43.01
+      ],
+      [
+       -73.729,
+       42.986
+      ],
+      [
+       -73.711,
+       42.965
+      ],
+      [
+       -73.683,
+       42.952
+      ],
+      [
+       -73.65,
+       42.947
+      ],
+      [
+       -73.617,
+       42.952
+      ],
+      [
+       -73.589,
+       42.965
+      ],
+      [
+       -73.571,
+       42.986
+      ],
+      [
+       -73.5,
+       43.076
+      ],
+      [
+       -73.33,
+       43.526
+      ],
+      [
+       -73.323,
+       43.55
+      ],
+      [
+       -73.211,
+       45.0
+      ],
+      [
+       -73.218,
+       45.024
+      ],
+      [
+       -73.237,
+       45.045
+      ],
+      [
+       -73.266,
+       45.058
+      ],
+      [
+       -73.3,
+       45.063
+      ],
+      [
+       -73.334,
+       45.058
+      ],
+      [
+       -73.363,
+       45.045
+      ],
+      [
+       -73.382,
+       45.024
+      ],
+      [
+       -73.389,
+       45.0
+      ],
+      [
+       -73.468,
+       44.6
+      ]
+     ]
+    },
+    {
+     "date": "1777-10-07",
+     "coords": [
+      [
+       -73.736,
+       43.01
+      ],
+      [
+       -73.729,
+       42.986
+      ],
+      [
+       -73.711,
+       42.965
+      ],
+      [
+       -73.683,
+       42.952
+      ],
+      [
+       -73.65,
+       42.947
+      ],
+      [
+       -73.617,
+       42.952
+      ],
+      [
+       -73.589,
+       42.965
+      ],
+      [
+       -73.571,
+       42.986
+      ],
+      [
+       -73.5,
+       43.076
+      ],
+      [
+       -73.33,
+       43.526
+      ],
+      [
+       -73.323,
+       43.55
+      ],
+      [
+       -73.211,
+       45.0
+      ],
+      [
+       -73.218,
+       45.024
+      ],
+      [
+       -73.237,
+       45.045
+      ],
+      [
+       -73.266,
+       45.058
+      ],
+      [
+       -73.3,
+       45.063
+      ],
+      [
+       -73.334,
+       45.058
+      ],
+      [
+       -73.363,
+       45.045
+      ],
+      [
+       -73.382,
+       45.024
+      ],
+      [
+       -73.389,
+       45.0
+      ],
+      [
+       -73.468,
+       44.6
+      ]
+     ]
+    },
+    {
+     "date": "1777-10-09",
+     "coords": [
+      [
+       -73.679,
+       43.16
+      ],
+      [
+       -73.678,
+       43.1
+      ],
+      [
+       -73.671,
+       43.072
+      ],
+      [
+       -73.65,
+       43.049
+      ],
+      [
+       -73.618,
+       43.033
+      ],
+      [
+       -73.58,
+       43.028
+      ],
+      [
+       -73.542,
+       43.033
+      ],
+      [
+       -73.51,
+       43.049
+      ],
+      [
+       -73.489,
+       43.072
+      ],
+      [
+       -73.318,
+       43.522
+      ],
+      [
+       -73.311,
+       43.55
+      ],
+      [
+       -73.198,
+       45.0
+      ],
+      [
+       -73.206,
+       45.028
+      ],
+      [
+       -73.228,
+       45.051
+      ],
+      [
+       -73.261,
+       45.067
+      ],
+      [
+       -73.3,
+       45.072
+      ],
+      [
+       -73.339,
+       45.067
+      ],
+      [
+       -73.372,
+       45.051
+      ],
+      [
+       -73.394,
+       45.028
+      ],
+      [
+       -73.402,
+       45.0
+      ],
+      [
+       -73.481,
+       44.6
+      ],
+      [
+       -73.679,
+       43.27
+      ]
+     ]
+    },
+    {
+     "date": "1777-10-16",
+     "coords": [
+      [
+       -73.679,
+       43.16
+      ],
+      [
+       -73.678,
+       43.1
+      ],
+      [
+       -73.671,
+       43.072
+      ],
+      [
+       -73.65,
+       43.049
+      ],
+      [
+       -73.618,
+       43.033
+      ],
+      [
+       -73.58,
+       43.028
+      ],
+      [
+       -73.542,
+       43.033
+      ],
+      [
+       -73.51,
+       43.049
+      ],
+      [
+       -73.489,
+       43.072
+      ],
+      [
+       -73.318,
+       43.522
+      ],
+      [
+       -73.311,
+       43.55
+      ],
+      [
+       -73.198,
+       45.0
+      ],
+      [
+       -73.206,
+       45.028
+      ],
+      [
+       -73.228,
+       45.051
+      ],
+      [
+       -73.261,
+       45.067
+      ],
+      [
+       -73.3,
+       45.072
+      ],
+      [
+       -73.339,
+       45.067
+      ],
+      [
+       -73.372,
+       45.051
+      ],
+      [
+       -73.394,
+       45.028
+      ],
+      [
+       -73.402,
+       45.0
+      ],
+      [
+       -73.481,
+       44.6
+      ],
+      [
+       -73.679,
+       43.27
+      ]
+     ]
+    },
+    {
+     "date": "1777-10-17",
+     "coords": [
+      [
+       -73.53,
+       44.03
+      ],
+      [
+       -73.49,
+       43.83
+      ],
+      [
+       -73.482,
+       43.802
+      ],
+      [
+       -73.46,
+       43.779
+      ],
+      [
+       -73.428,
+       43.763
+      ],
+      [
+       -73.39,
+       43.758
+      ],
+      [
+       -73.352,
+       43.763
+      ],
+      [
+       -73.32,
+       43.779
+      ],
+      [
+       -73.298,
+       43.802
+      ],
+      [
+       -73.29,
+       43.83
+      ],
+      [
+       -73.198,
+       45.0
+      ],
+      [
+       -73.206,
+       45.028
+      ],
+      [
+       -73.228,
+       45.051
+      ],
+      [
+       -73.261,
+       45.067
+      ],
+      [
+       -73.3,
+       45.072
+      ],
+      [
+       -73.339,
+       45.067
+      ],
+      [
+       -73.372,
+       45.051
+      ],
+      [
+       -73.394,
+       45.028
+      ],
+      [
+       -73.402,
+       45.0
+      ],
+      [
+       -73.481,
+       44.6
+      ]
+     ]
+    }
+   ],
+   "end": "1777-11-08"
+  },
+  {
+   "name": "British-held Philadelphia (1777-1778)",
+   "side": 1,
+   "keys": [
+    {
+     "date": "1777-08-25",
+     "coords": [
+      [
+       -75.923,
+       39.61
+      ],
+      [
+       -75.916,
+       39.582
+      ],
+      [
+       -75.896,
+       39.559
+      ],
+      [
+       -75.866,
+       39.543
+      ],
+      [
+       -75.83,
+       39.538
+      ],
+      [
+       -75.794,
+       39.543
+      ],
+      [
+       -75.764,
+       39.559
+      ],
+      [
+       -75.744,
+       39.582
+      ],
+      [
+       -75.737,
+       39.61
+      ],
+      [
+       -75.744,
+       39.638
+      ],
+      [
+       -75.764,
+       39.661
+      ],
+      [
+       -75.794,
+       39.677
+      ],
+      [
+       -75.83,
+       39.682
+      ],
+      [
+       -75.866,
+       39.677
+      ],
+      [
+       -75.896,
+       39.661
+      ],
+      [
+       -75.916,
+       39.638
+      ]
+     ]
+    },
+    {
+     "date": "1777-09-08",
+     "coords": [
+      [
+       -75.923,
+       39.61
+      ],
+      [
+       -75.916,
+       39.582
+      ],
+      [
+       -75.896,
+       39.559
+      ],
+      [
+       -75.866,
+       39.543
+      ],
+      [
+       -75.83,
+       39.538
+      ],
+      [
+       -75.794,
+       39.543
+      ],
+      [
+       -75.764,
+       39.559
+      ],
+      [
+       -75.744,
+       39.582
+      ],
+      [
+       -75.737,
+       39.61
+      ],
+      [
+       -75.744,
+       39.638
+      ],
+      [
+       -75.764,
+       39.661
+      ],
+      [
+       -75.794,
+       39.677
+      ],
+      [
+       -75.83,
+       39.682
+      ],
+      [
+       -75.866,
+       39.677
+      ],
+      [
+       -75.896,
+       39.661
+      ],
+      [
+       -75.916,
+       39.638
+      ]
+     ]
+    },
+    {
+     "date": "1777-09-11",
+     "coords": [
+      [
+       -75.912,
+       39.61
+      ],
+      [
+       -75.905,
+       39.586
+      ],
+      [
+       -75.888,
+       39.565
+      ],
+      [
+       -75.861,
+       39.552
+      ],
+      [
+       -75.83,
+       39.547
+      ],
+      [
+       -75.799,
+       39.552
+      ],
+      [
+       -75.772,
+       39.565
+      ],
+      [
+       -75.544,
+       39.836
+      ],
+      [
+       -75.538,
+       39.86
+      ],
+      [
+       -75.544,
+       39.884
+      ],
+      [
+       -75.562,
+       39.905
+      ],
+      [
+       -75.589,
+       39.918
+      ],
+      [
+       -75.62,
+       39.923
+      ],
+      [
+       -75.71,
+       39.913
+      ],
+      [
+       -75.741,
+       39.908
+      ],
+      [
+       -75.768,
+       39.895
+      ],
+      [
+       -75.786,
+       39.874
+      ],
+      [
+       -75.905,
+       39.634
+      ]
+     ]
+    },
+    {
+     "date": "1777-09-16",
+     "coords": [
+      [
+       -75.912,
+       39.61
+      ],
+      [
+       -75.905,
+       39.586
+      ],
+      [
+       -75.888,
+       39.565
+      ],
+      [
+       -75.861,
+       39.552
+      ],
+      [
+       -75.83,
+       39.547
+      ],
+      [
+       -75.799,
+       39.552
+      ],
+      [
+       -75.772,
+       39.565
+      ],
+      [
+       -75.544,
+       39.836
+      ],
+      [
+       -75.538,
+       39.86
+      ],
+      [
+       -75.544,
+       39.884
+      ],
+      [
+       -75.562,
+       39.905
+      ],
+      [
+       -75.589,
+       39.918
+      ],
+      [
+       -75.62,
+       39.923
+      ],
+      [
+       -75.71,
+       39.913
+      ],
+      [
+       -75.741,
+       39.908
+      ],
+      [
+       -75.768,
+       39.895
+      ],
+      [
+       -75.786,
+       39.874
+      ],
+      [
+       -75.905,
+       39.634
+      ]
+     ]
+    },
+    {
+     "date": "1777-09-22",
+     "coords": [
+      [
+       -75.632,
+       39.98
+      ],
+      [
+       -75.626,
+       39.956
+      ],
+      [
+       -75.608,
+       39.935
+      ],
+      [
+       -75.581,
+       39.922
+      ],
+      [
+       -75.55,
+       39.917
+      ],
+      [
+       -75.519,
+       39.922
+      ],
+      [
+       -75.492,
+       39.935
+      ],
+      [
+       -75.292,
+       40.065
+      ],
+      [
+       -75.274,
+       40.086
+      ],
+      [
+       -75.268,
+       40.11
+      ],
+      [
+       -75.274,
+       40.134
+      ],
+      [
+       -75.292,
+       40.155
+      ],
+      [
+       -75.319,
+       40.168
+      ],
+      [
+       -75.35,
+       40.173
+      ],
+      [
+       -75.381,
+       40.168
+      ],
+      [
+       -75.408,
+       40.155
+      ],
+      [
+       -75.548,
+       40.085
+      ],
+      [
+       -75.608,
+       40.025
+      ],
+      [
+       -75.626,
+       40.004
+      ]
+     ]
+    },
+    {
+     "date": "1777-09-26",
+     "coords": [
+      [
+       -75.24,
+       40.04
+      ],
+      [
+       -75.22,
+       39.95
+      ],
+      [
+       -75.215,
+       39.929
+      ],
+      [
+       -75.2,
+       39.912
+      ],
+      [
+       -75.177,
+       39.9
+      ],
+      [
+       -75.15,
+       39.896
+      ],
+      [
+       -75.123,
+       39.9
+      ],
+      [
+       -75.1,
+       39.912
+      ],
+      [
+       -75.085,
+       39.929
+      ],
+      [
+       -75.08,
+       39.95
+      ],
+      [
+       -75.1,
+       40.04
+      ],
+      [
+       -75.105,
+       40.061
+      ],
+      [
+       -75.12,
+       40.078
+      ],
+      [
+       -75.143,
+       40.09
+      ],
+      [
+       -75.17,
+       40.094
+      ],
+      [
+       -75.197,
+       40.09
+      ],
+      [
+       -75.22,
+       40.078
+      ],
+      [
+       -75.235,
+       40.061
+      ]
+     ]
+    },
+    {
+     "date": "1777-11-15",
+     "coords": [
+      [
+       -75.24,
+       40.04
+      ],
+      [
+       -75.22,
+       39.95
+      ],
+      [
+       -75.215,
+       39.929
+      ],
+      [
+       -75.2,
+       39.912
+      ],
+      [
+       -75.177,
+       39.9
+      ],
+      [
+       -75.15,
+       39.896
+      ],
+      [
+       -75.123,
+       39.9
+      ],
+      [
+       -75.1,
+       39.912
+      ],
+      [
+       -75.085,
+       39.929
+      ],
+      [
+       -75.08,
+       39.95
+      ],
+      [
+       -75.1,
+       40.04
+      ],
+      [
+       -75.105,
+       40.061
+      ],
+      [
+       -75.12,
+       40.078
+      ],
+      [
+       -75.143,
+       40.09
+      ],
+      [
+       -75.17,
+       40.094
+      ],
+      [
+       -75.197,
+       40.09
+      ],
+      [
+       -75.22,
+       40.078
+      ],
+      [
+       -75.235,
+       40.061
+      ]
+     ]
+    },
+    {
+     "date": "1777-11-16",
+     "coords": [
+      [
+       -75.28,
+       39.875
+      ],
+      [
+       -75.275,
+       39.854
+      ],
+      [
+       -75.26,
+       39.837
+      ],
+      [
+       -75.237,
+       39.825
+      ],
+      [
+       -75.21,
+       39.821
+      ],
+      [
+       -75.183,
+       39.825
+      ],
+      [
+       -75.16,
+       39.837
+      ],
+      [
+       -75.145,
+       39.854
+      ],
+      [
+       -75.085,
+       39.929
+      ],
+      [
+       -75.08,
+       39.95
+      ],
+      [
+       -75.1,
+       40.04
+      ],
+      [
+       -75.105,
+       40.061
+      ],
+      [
+       -75.12,
+       40.078
+      ],
+      [
+       -75.143,
+       40.09
+      ],
+      [
+       -75.17,
+       40.094
+      ],
+      [
+       -75.197,
+       40.09
+      ],
+      [
+       -75.22,
+       40.078
+      ],
+      [
+       -75.235,
+       40.061
+      ],
+      [
+       -75.275,
+       39.896
+      ]
+     ]
+    },
+    {
+     "date": "1777-11-19",
+     "coords": [
+      [
+       -75.28,
+       39.875
+      ],
+      [
+       -75.275,
+       39.854
+      ],
+      [
+       -75.26,
+       39.837
+      ],
+      [
+       -75.237,
+       39.825
+      ],
+      [
+       -75.21,
+       39.821
+      ],
+      [
+       -75.183,
+       39.825
+      ],
+      [
+       -75.16,
+       39.837
+      ],
+      [
+       -75.145,
+       39.854
+      ],
+      [
+       -75.085,
+       39.929
+      ],
+      [
+       -75.08,
+       39.95
+      ],
+      [
+       -75.1,
+       40.04
+      ],
+      [
+       -75.105,
+       40.061
+      ],
+      [
+       -75.12,
+       40.078
+      ],
+      [
+       -75.143,
+       40.09
+      ],
+      [
+       -75.17,
+       40.094
+      ],
+      [
+       -75.197,
+       40.09
+      ],
+      [
+       -75.22,
+       40.078
+      ],
+      [
+       -75.235,
+       40.061
+      ],
+      [
+       -75.275,
+       39.896
+      ]
+     ]
+    },
+    {
+     "date": "1777-11-20",
+     "coords": [
+      [
+       -75.28,
+       39.875
+      ],
+      [
+       -75.275,
+       39.854
+      ],
+      [
+       -75.26,
+       39.837
+      ],
+      [
+       -75.237,
+       39.825
+      ],
+      [
+       -75.207,
+       39.82
+      ],
+      [
+       -75.18,
+       39.816
+      ],
+      [
+       -75.153,
+       39.82
+      ],
+      [
+       -75.13,
+       39.832
+      ],
+      [
+       -75.115,
+       39.849
+      ],
+      [
+       -75.085,
+       39.929
+      ],
+      [
+       -75.08,
+       39.95
+      ],
+      [
+       -75.1,
+       40.04
+      ],
+      [
+       -75.105,
+       40.061
+      ],
+      [
+       -75.12,
+       40.078
+      ],
+      [
+       -75.143,
+       40.09
+      ],
+      [
+       -75.17,
+       40.094
+      ],
+      [
+       -75.197,
+       40.09
+      ],
+      [
+       -75.22,
+       40.078
+      ],
+      [
+       -75.235,
+       40.061
+      ],
+      [
+       -75.275,
+       39.896
+      ]
+     ]
+    },
+    {
+     "date": "1778-06-17",
+     "coords": [
+      [
+       -75.28,
+       39.875
+      ],
+      [
+       -75.275,
+       39.854
+      ],
+      [
+       -75.26,
+       39.837
+      ],
+      [
+       -75.237,
+       39.825
+      ],
+      [
+       -75.207,
+       39.82
+      ],
+      [
+       -75.18,
+       39.816
+      ],
+      [
+       -75.153,
+       39.82
+      ],
+      [
+       -75.13,
+       39.832
+      ],
+      [
+       -75.115,
+       39.849
+      ],
+      [
+       -75.085,
+       39.929
+      ],
+      [
+       -75.08,
+       39.95
+      ],
+      [
+       -75.1,
+       40.04
+      ],
+      [
+       -75.105,
+       40.061
+      ],
+      [
+       -75.12,
+       40.078
+      ],
+      [
+       -75.143,
+       40.09
+      ],
+      [
+       -75.17,
+       40.094
+      ],
+      [
+       -75.197,
+       40.09
+      ],
+      [
+       -75.22,
+       40.078
+      ],
+      [
+       -75.235,
+       40.061
+      ],
+      [
+       -75.275,
+       39.896
+      ]
+     ]
+    }
+   ],
+   "end": "1778-06-18"
+  },
+  {
+   "name": "British-held Savannah and Georgia",
+   "side": 1,
+   "keys": [
+    {
+     "date": "1778-12-29",
+     "coords": [
+      [
+       -81.154,
+       32.08
+      ],
+      [
+       -81.149,
+       32.059
+      ],
+      [
+       -81.135,
+       32.042
+      ],
+      [
+       -81.114,
+       32.03
+      ],
+      [
+       -80.924,
+       31.95
+      ],
+      [
+       -80.9,
+       31.946
+      ],
+      [
+       -80.876,
+       31.95
+      ],
+      [
+       -80.855,
+       31.962
+      ],
+      [
+       -80.841,
+       31.979
+      ],
+      [
+       -80.836,
+       32.0
+      ],
+      [
+       -80.841,
+       32.021
+      ],
+      [
+       -80.855,
+       32.038
+      ],
+      [
+       -80.876,
+       32.05
+      ],
+      [
+       -81.066,
+       32.13
+      ],
+      [
+       -81.09,
+       32.134
+      ],
+      [
+       -81.114,
+       32.13
+      ],
+      [
+       -81.135,
+       32.118
+      ],
+      [
+       -81.149,
+       32.101
+      ]
+     ]
+    },
+    {
+     "date": "1779-01-10",
+     "coords": [
+      [
+       -81.244,
+       32.37
+      ],
+      [
+       -81.239,
+       32.346
+      ],
+      [
+       -81.159,
+       32.056
+      ],
+      [
+       -81.142,
+       32.035
+      ],
+      [
+       -81.118,
+       32.022
+      ],
+      [
+       -80.928,
+       31.942
+      ],
+      [
+       -80.9,
+       31.937
+      ],
+      [
+       -80.872,
+       31.942
+      ],
+      [
+       -80.848,
+       31.955
+      ],
+      [
+       -80.831,
+       31.976
+      ],
+      [
+       -80.826,
+       32.0
+      ],
+      [
+       -80.831,
+       32.024
+      ],
+      [
+       -81.101,
+       32.394
+      ],
+      [
+       -81.117,
+       32.415
+      ],
+      [
+       -81.142,
+       32.428
+      ],
+      [
+       -81.17,
+       32.433
+      ],
+      [
+       -81.198,
+       32.428
+      ],
+      [
+       -81.223,
+       32.415
+      ],
+      [
+       -81.239,
+       32.394
+      ]
+     ]
+    },
+    {
+     "date": "1779-01-20",
+     "coords": [
+      [
+       -81.244,
+       32.37
+      ],
+      [
+       -81.239,
+       32.346
+      ],
+      [
+       -81.159,
+       32.056
+      ],
+      [
+       -81.142,
+       32.035
+      ],
+      [
+       -81.118,
+       32.022
+      ],
+      [
+       -80.928,
+       31.942
+      ],
+      [
+       -80.9,
+       31.937
+      ],
+      [
+       -80.872,
+       31.942
+      ],
+      [
+       -80.848,
+       31.955
+      ],
+      [
+       -80.831,
+       31.976
+      ],
+      [
+       -80.826,
+       32.0
+      ],
+      [
+       -80.831,
+       32.024
+      ],
+      [
+       -81.101,
+       32.394
+      ],
+      [
+       -81.117,
+       32.415
+      ],
+      [
+       -81.142,
+       32.428
+      ],
+      [
+       -81.17,
+       32.433
+      ],
+      [
+       -81.198,
+       32.428
+      ],
+      [
+       -81.223,
+       32.415
+      ],
+      [
+       -81.239,
+       32.394
+      ]
+     ]
+    },
+    {
+     "date": "1779-01-31",
+     "coords": [
+      [
+       -82.045,
+       33.47
+      ],
+      [
+       -82.04,
+       33.446
+      ],
+      [
+       -81.159,
+       32.056
+      ],
+      [
+       -81.142,
+       32.035
+      ],
+      [
+       -81.118,
+       32.022
+      ],
+      [
+       -80.928,
+       31.942
+      ],
+      [
+       -80.9,
+       31.937
+      ],
+      [
+       -80.872,
+       31.942
+      ],
+      [
+       -80.848,
+       31.955
+      ],
+      [
+       -80.831,
+       31.976
+      ],
+      [
+       -80.826,
+       32.0
+      ],
+      [
+       -80.831,
+       32.024
+      ],
+      [
+       -81.9,
+       33.494
+      ],
+      [
+       -81.917,
+       33.515
+      ],
+      [
+       -81.941,
+       33.528
+      ],
+      [
+       -81.97,
+       33.533
+      ],
+      [
+       -81.999,
+       33.528
+      ],
+      [
+       -82.023,
+       33.515
+      ],
+      [
+       -82.04,
+       33.494
+      ]
+     ]
+    },
+    {
+     "date": "1779-02-12",
+     "coords": [
+      [
+       -82.045,
+       33.47
+      ],
+      [
+       -82.04,
+       33.446
+      ],
+      [
+       -81.159,
+       32.056
+      ],
+      [
+       -81.142,
+       32.035
+      ],
+      [
+       -81.118,
+       32.022
+      ],
+      [
+       -80.928,
+       31.942
+      ],
+      [
+       -80.9,
+       31.937
+      ],
+      [
+       -80.872,
+       31.942
+      ],
+      [
+       -80.848,
+       31.955
+      ],
+      [
+       -80.831,
+       31.976
+      ],
+      [
+       -80.826,
+       32.0
+      ],
+      [
+       -80.831,
+       32.024
+      ],
+      [
+       -81.9,
+       33.494
+      ],
+      [
+       -81.917,
+       33.515
+      ],
+      [
+       -81.941,
+       33.528
+      ],
+      [
+       -81.97,
+       33.533
+      ],
+      [
+       -81.999,
+       33.528
+      ],
+      [
+       -82.023,
+       33.515
+      ],
+      [
+       -82.04,
+       33.494
+      ]
+     ]
+    },
+    {
+     "date": "1779-02-16",
+     "coords": [
+      [
+       -81.244,
+       32.37
+      ],
+      [
+       -81.239,
+       32.346
+      ],
+      [
+       -81.159,
+       32.056
+      ],
+      [
+       -81.142,
+       32.035
+      ],
+      [
+       -81.118,
+       32.022
+      ],
+      [
+       -80.928,
+       31.942
+      ],
+      [
+       -80.9,
+       31.937
+      ],
+      [
+       -80.872,
+       31.942
+      ],
+      [
+       -80.848,
+       31.955
+      ],
+      [
+       -80.831,
+       31.976
+      ],
+      [
+       -80.826,
+       32.0
+      ],
+      [
+       -80.831,
+       32.024
+      ],
+      [
+       -81.101,
+       32.394
+      ],
+      [
+       -81.117,
+       32.415
+      ],
+      [
+       -81.142,
+       32.428
+      ],
+      [
+       -81.17,
+       32.433
+      ],
+      [
+       -81.198,
+       32.428
+      ],
+      [
+       -81.223,
+       32.415
+      ],
+      [
+       -81.239,
+       32.394
+      ]
+     ]
+    },
+    {
+     "date": "1780-05-31",
+     "coords": [
+      [
+       -81.244,
+       32.37
+      ],
+      [
+       -81.239,
+       32.346
+      ],
+      [
+       -81.159,
+       32.056
+      ],
+      [
+       -81.142,
+       32.035
+      ],
+      [
+       -81.118,
+       32.022
+      ],
+      [
+       -80.928,
+       31.942
+      ],
+      [
+       -80.9,
+       31.937
+      ],
+      [
+       -80.872,
+       31.942
+      ],
+      [
+       -80.848,
+       31.955
+      ],
+      [
+       -80.831,
+       31.976
+      ],
+      [
+       -80.826,
+       32.0
+      ],
+      [
+       -80.831,
+       32.024
+      ],
+      [
+       -81.101,
+       32.394
+      ],
+      [
+       -81.117,
+       32.415
+      ],
+      [
+       -81.142,
+       32.428
+      ],
+      [
+       -81.17,
+       32.433
+      ],
+      [
+       -81.198,
+       32.428
+      ],
+      [
+       -81.223,
+       32.415
+      ],
+      [
+       -81.239,
+       32.394
+      ]
+     ]
+    },
+    {
+     "date": "1780-06-08",
+     "coords": [
+      [
+       -82.045,
+       33.47
+      ],
+      [
+       -82.04,
+       33.446
+      ],
+      [
+       -81.159,
+       32.056
+      ],
+      [
+       -81.142,
+       32.035
+      ],
+      [
+       -81.118,
+       32.022
+      ],
+      [
+       -80.928,
+       31.942
+      ],
+      [
+       -80.9,
+       31.937
+      ],
+      [
+       -80.872,
+       31.942
+      ],
+      [
+       -80.848,
+       31.955
+      ],
+      [
+       -80.831,
+       31.976
+      ],
+      [
+       -80.826,
+       32.0
+      ],
+      [
+       -80.831,
+       32.024
+      ],
+      [
+       -81.9,
+       33.494
+      ],
+      [
+       -81.917,
+       33.515
+      ],
+      [
+       -81.941,
+       33.528
+      ],
+      [
+       -81.97,
+       33.533
+      ],
+      [
+       -81.999,
+       33.528
+      ],
+      [
+       -82.023,
+       33.515
+      ],
+      [
+       -82.04,
+       33.494
+      ]
+     ]
+    },
+    {
+     "date": "1781-05-25",
+     "coords": [
+      [
+       -82.045,
+       33.47
+      ],
+      [
+       -82.04,
+       33.446
+      ],
+      [
+       -81.159,
+       32.056
+      ],
+      [
+       -81.142,
+       32.035
+      ],
+      [
+       -81.118,
+       32.022
+      ],
+      [
+       -80.928,
+       31.942
+      ],
+      [
+       -80.9,
+       31.937
+      ],
+      [
+       -80.872,
+       31.942
+      ],
+      [
+       -80.848,
+       31.955
+      ],
+      [
+       -80.831,
+       31.976
+      ],
+      [
+       -80.826,
+       32.0
+      ],
+      [
+       -80.831,
+       32.024
+      ],
+      [
+       -81.9,
+       33.494
+      ],
+      [
+       -81.917,
+       33.515
+      ],
+      [
+       -81.941,
+       33.528
+      ],
+      [
+       -81.97,
+       33.533
+      ],
+      [
+       -81.999,
+       33.528
+      ],
+      [
+       -82.023,
+       33.515
+      ],
+      [
+       -82.04,
+       33.494
+      ]
+     ]
+    },
+    {
+     "date": "1781-06-05",
+     "coords": [
+      [
+       -81.244,
+       32.37
+      ],
+      [
+       -81.239,
+       32.346
+      ],
+      [
+       -81.159,
+       32.056
+      ],
+      [
+       -81.142,
+       32.035
+      ],
+      [
+       -81.118,
+       32.022
+      ],
+      [
+       -80.928,
+       31.942
+      ],
+      [
+       -80.9,
+       31.937
+      ],
+      [
+       -80.872,
+       31.942
+      ],
+      [
+       -80.848,
+       31.955
+      ],
+      [
+       -80.831,
+       31.976
+      ],
+      [
+       -80.826,
+       32.0
+      ],
+      [
+       -80.831,
+       32.024
+      ],
+      [
+       -81.101,
+       32.394
+      ],
+      [
+       -81.117,
+       32.415
+      ],
+      [
+       -81.142,
+       32.428
+      ],
+      [
+       -81.17,
+       32.433
+      ],
+      [
+       -81.198,
+       32.428
+      ],
+      [
+       -81.223,
+       32.415
+      ],
+      [
+       -81.239,
+       32.394
+      ]
+     ]
+    },
+    {
+     "date": "1782-07-10",
+     "coords": [
+      [
+       -81.244,
+       32.37
+      ],
+      [
+       -81.239,
+       32.346
+      ],
+      [
+       -81.159,
+       32.056
+      ],
+      [
+       -81.142,
+       32.035
+      ],
+      [
+       -81.118,
+       32.022
+      ],
+      [
+       -80.928,
+       31.942
+      ],
+      [
+       -80.9,
+       31.937
+      ],
+      [
+       -80.872,
+       31.942
+      ],
+      [
+       -80.848,
+       31.955
+      ],
+      [
+       -80.831,
+       31.976
+      ],
+      [
+       -80.826,
+       32.0
+      ],
+      [
+       -80.831,
+       32.024
+      ],
+      [
+       -81.101,
+       32.394
+      ],
+      [
+       -81.117,
+       32.415
+      ],
+      [
+       -81.142,
+       32.428
+      ],
+      [
+       -81.17,
+       32.433
+      ],
+      [
+       -81.198,
+       32.428
+      ],
+      [
+       -81.223,
+       32.415
+      ],
+      [
+       -81.239,
+       32.394
+      ]
+     ]
+    }
+   ],
+   "end": "1782-07-11"
+  },
+  {
+   "name": "British-held Charleston and South Carolina",
+   "side": 1,
+   "keys": [
+    {
+     "date": "1780-02-11",
+     "coords": [
+      [
+       -80.125,
+       32.66
+      ],
+      [
+       -80.119,
+       32.636
+      ],
+      [
+       -80.103,
+       32.615
+      ],
+      [
+       -80.079,
+       32.602
+      ],
+      [
+       -80.05,
+       32.597
+      ],
+      [
+       -80.021,
+       32.602
+      ],
+      [
+       -79.997,
+       32.615
+      ],
+      [
+       -79.981,
+       32.636
+      ],
+      [
+       -79.975,
+       32.66
+      ],
+      [
+       -79.981,
+       32.684
+      ],
+      [
+       -79.997,
+       32.705
+      ],
+      [
+       -80.021,
+       32.718
+      ],
+      [
+       -80.05,
+       32.723
+      ],
+      [
+       -80.079,
+       32.718
+      ],
+      [
+       -80.103,
+       32.705
+      ],
+      [
+       -80.119,
+       32.684
+      ]
+     ]
+    },
+    {
+     "date": "1780-03-28",
+     "coords": [
+      [
+       -80.125,
+       32.66
+      ],
+      [
+       -80.119,
+       32.636
+      ],
+      [
+       -80.103,
+       32.615
+      ],
+      [
+       -80.079,
+       32.602
+      ],
+      [
+       -80.05,
+       32.597
+      ],
+      [
+       -80.021,
+       32.602
+      ],
+      [
+       -79.997,
+       32.615
+      ],
+      [
+       -79.981,
+       32.636
+      ],
+      [
+       -79.975,
+       32.66
+      ],
+      [
+       -79.981,
+       32.684
+      ],
+      [
+       -79.997,
+       32.705
+      ],
+      [
+       -80.021,
+       32.718
+      ],
+      [
+       -80.05,
+       32.723
+      ],
+      [
+       -80.079,
+       32.718
+      ],
+      [
+       -80.103,
+       32.705
+      ],
+      [
+       -80.119,
+       32.684
+      ]
+     ]
+    },
+    {
+     "date": "1780-03-29",
+     "coords": [
+      [
+       -80.124,
+       32.85
+      ],
+      [
+       -80.114,
+       32.66
+      ],
+      [
+       -80.109,
+       32.639
+      ],
+      [
+       -80.095,
+       32.622
+      ],
+      [
+       -80.074,
+       32.61
+      ],
+      [
+       -80.05,
+       32.606
+      ],
+      [
+       -80.026,
+       32.61
+      ],
+      [
+       -80.005,
+       32.622
+      ],
+      [
+       -79.991,
+       32.639
+      ],
+      [
+       -79.986,
+       32.66
+      ],
+      [
+       -79.996,
+       32.85
+      ],
+      [
+       -80.001,
+       32.871
+      ],
+      [
+       -80.015,
+       32.888
+      ],
+      [
+       -80.035,
+       32.9
+      ],
+      [
+       -80.06,
+       32.904
+      ],
+      [
+       -80.085,
+       32.9
+      ],
+      [
+       -80.105,
+       32.888
+      ],
+      [
+       -80.119,
+       32.871
+      ]
+     ]
+    },
+    {
+     "date": "1780-05-11",
+     "coords": [
+      [
+       -80.124,
+       32.85
+      ],
+      [
+       -80.114,
+       32.66
+      ],
+      [
+       -80.109,
+       32.639
+      ],
+      [
+       -80.095,
+       32.622
+      ],
+      [
+       -80.074,
+       32.61
+      ],
+      [
+       -80.05,
+       32.606
+      ],
+      [
+       -80.026,
+       32.61
+      ],
+      [
+       -80.005,
+       32.622
+      ],
+      [
+       -79.991,
+       32.639
+      ],
+      [
+       -79.986,
+       32.66
+      ],
+      [
+       -79.996,
+       32.85
+      ],
+      [
+       -80.001,
+       32.871
+      ],
+      [
+       -80.015,
+       32.888
+      ],
+      [
+       -80.035,
+       32.9
+      ],
+      [
+       -80.06,
+       32.904
+      ],
+      [
+       -80.085,
+       32.9
+      ],
+      [
+       -80.105,
+       32.888
+      ],
+      [
+       -80.119,
+       32.871
+      ]
+     ]
+    },
+    {
+     "date": "1780-05-12",
+     "coords": [
+      [
+       -80.21,
+       32.85
+      ],
+      [
+       -80.199,
+       32.66
+      ],
+      [
+       -80.188,
+       32.612
+      ],
+      [
+       -80.156,
+       32.57
+      ],
+      [
+       -80.107,
+       32.543
+      ],
+      [
+       -80.05,
+       32.533
+      ],
+      [
+       -79.993,
+       32.543
+      ],
+      [
+       -79.803,
+       32.643
+      ],
+      [
+       -79.754,
+       32.67
+      ],
+      [
+       -79.722,
+       32.712
+      ],
+      [
+       -79.71,
+       32.76
+      ],
+      [
+       -79.722,
+       32.808
+      ],
+      [
+       -79.754,
+       32.85
+      ],
+      [
+       -79.803,
+       32.877
+      ],
+      [
+       -80.003,
+       32.967
+      ],
+      [
+       -80.06,
+       32.977
+      ],
+      [
+       -80.117,
+       32.967
+      ],
+      [
+       -80.166,
+       32.94
+      ],
+      [
+       -80.198,
+       32.898
+      ]
+     ]
+    },
+    {
+     "date": "1780-05-18",
+     "coords": [
+      [
+       -80.21,
+       32.85
+      ],
+      [
+       -80.199,
+       32.66
+      ],
+      [
+       -80.188,
+       32.612
+      ],
+      [
+       -80.156,
+       32.57
+      ],
+      [
+       -80.107,
+       32.543
+      ],
+      [
+       -80.05,
+       32.533
+      ],
+      [
+       -79.993,
+       32.543
+      ],
+      [
+       -79.803,
+       32.643
+      ],
+      [
+       -79.754,
+       32.67
+      ],
+      [
+       -79.722,
+       32.712
+      ],
+      [
+       -79.71,
+       32.76
+      ],
+      [
+       -79.722,
+       32.808
+      ],
+      [
+       -79.754,
+       32.85
+      ],
+      [
+       -79.803,
+       32.877
+      ],
+      [
+       -80.003,
+       32.967
+      ],
+      [
+       -80.06,
+       32.977
+      ],
+      [
+       -80.117,
+       32.967
+      ],
+      [
+       -80.166,
+       32.94
+      ],
+      [
+       -80.198,
+       32.898
+      ]
+     ]
+    },
+    {
+     "date": "1780-06-01",
+     "coords": [
+      [
+       -82.118,
+       34.15
+      ],
+      [
+       -81.997,
+       33.6
+      ],
+      [
+       -81.99,
+       33.569
+      ],
+      [
+       -81.088,
+       32.189
+      ],
+      [
+       -81.068,
+       32.162
+      ],
+      [
+       -81.037,
+       32.145
+      ],
+      [
+       -81.0,
+       32.139
+      ],
+      [
+       -80.963,
+       32.145
+      ],
+      [
+       -79.893,
+       32.705
+      ],
+      [
+       -79.862,
+       32.722
+      ],
+      [
+       -79.222,
+       33.312
+      ],
+      [
+       -79.201,
+       33.339
+      ],
+      [
+       -79.193,
+       33.37
+      ],
+      [
+       -79.201,
+       33.401
+      ],
+      [
+       -79.222,
+       33.428
+      ],
+      [
+       -80.531,
+       34.308
+      ],
+      [
+       -80.563,
+       34.325
+      ],
+      [
+       -81.053,
+       34.445
+      ],
+      [
+       -81.09,
+       34.451
+      ],
+      [
+       -81.127,
+       34.445
+      ],
+      [
+       -82.057,
+       34.225
+      ],
+      [
+       -82.089,
+       34.208
+      ],
+      [
+       -82.11,
+       34.181
+      ]
+     ]
+    },
+    {
+     "date": "1780-09-08",
+     "coords": [
+      [
+       -82.118,
+       34.15
+      ],
+      [
+       -81.997,
+       33.6
+      ],
+      [
+       -81.99,
+       33.569
+      ],
+      [
+       -81.088,
+       32.189
+      ],
+      [
+       -81.068,
+       32.162
+      ],
+      [
+       -81.037,
+       32.145
+      ],
+      [
+       -81.0,
+       32.139
+      ],
+      [
+       -80.963,
+       32.145
+      ],
+      [
+       -79.893,
+       32.705
+      ],
+      [
+       -79.862,
+       32.722
+      ],
+      [
+       -79.222,
+       33.312
+      ],
+      [
+       -79.201,
+       33.339
+      ],
+      [
+       -79.193,
+       33.37
+      ],
+      [
+       -79.201,
+       33.401
+      ],
+      [
+       -79.222,
+       33.428
+      ],
+      [
+       -80.531,
+       34.308
+      ],
+      [
+       -80.563,
+       34.325
+      ],
+      [
+       -81.053,
+       34.445
+      ],
+      [
+       -81.09,
+       34.451
+      ],
+      [
+       -81.127,
+       34.445
+      ],
+      [
+       -82.057,
+       34.225
+      ],
+      [
+       -82.089,
+       34.208
+      ],
+      [
+       -82.11,
+       34.181
+      ]
+     ]
+    },
+    {
+     "date": "1780-09-26",
+     "coords": [
+      [
+       -82.118,
+       34.15
+      ],
+      [
+       -81.997,
+       33.6
+      ],
+      [
+       -81.99,
+       33.569
+      ],
+      [
+       -81.088,
+       32.189
+      ],
+      [
+       -81.068,
+       32.162
+      ],
+      [
+       -81.037,
+       32.145
+      ],
+      [
+       -81.0,
+       32.139
+      ],
+      [
+       -80.963,
+       32.145
+      ],
+      [
+       -79.893,
+       32.705
+      ],
+      [
+       -79.862,
+       32.722
+      ],
+      [
+       -79.222,
+       33.312
+      ],
+      [
+       -79.201,
+       33.339
+      ],
+      [
+       -79.193,
+       33.37
+      ],
+      [
+       -79.201,
+       33.401
+      ],
+      [
+       -79.222,
+       33.428
+      ],
+      [
+       -80.77,
+       35.288
+      ],
+      [
+       -80.802,
+       35.305
+      ],
+      [
+       -80.84,
+       35.311
+      ],
+      [
+       -80.878,
+       35.305
+      ],
+      [
+       -80.91,
+       35.288
+      ],
+      [
+       -82.089,
+       34.208
+      ],
+      [
+       -82.11,
+       34.181
+      ]
+     ]
+    },
+    {
+     "date": "1780-10-07",
+     "coords": [
+      [
+       -82.118,
+       34.15
+      ],
+      [
+       -81.997,
+       33.6
+      ],
+      [
+       -81.99,
+       33.569
+      ],
+      [
+       -81.088,
+       32.189
+      ],
+      [
+       -81.068,
+       32.162
+      ],
+      [
+       -81.037,
+       32.145
+      ],
+      [
+       -81.0,
+       32.139
+      ],
+      [
+       -80.963,
+       32.145
+      ],
+      [
+       -79.893,
+       32.705
+      ],
+      [
+       -79.862,
+       32.722
+      ],
+      [
+       -79.222,
+       33.312
+      ],
+      [
+       -79.201,
+       33.339
+      ],
+      [
+       -79.193,
+       33.37
+      ],
+      [
+       -79.201,
+       33.401
+      ],
+      [
+       -79.222,
+       33.428
+      ],
+      [
+       -80.77,
+       35.288
+      ],
+      [
+       -80.802,
+       35.305
+      ],
+      [
+       -80.84,
+       35.311
+      ],
+      [
+       -80.878,
+       35.305
+      ],
+      [
+       -80.91,
+       35.288
+      ],
+      [
+       -82.089,
+       34.208
+      ],
+      [
+       -82.11,
+       34.181
+      ]
+     ]
+    },
+    {
+     "date": "1780-10-14",
+     "coords": [
+      [
+       -82.118,
+       34.15
+      ],
+      [
+       -81.997,
+       33.6
+      ],
+      [
+       -81.99,
+       33.569
+      ],
+      [
+       -81.088,
+       32.189
+      ],
+      [
+       -81.068,
+       32.162
+      ],
+      [
+       -81.037,
+       32.145
+      ],
+      [
+       -81.0,
+       32.139
+      ],
+      [
+       -80.963,
+       32.145
+      ],
+      [
+       -79.893,
+       32.705
+      ],
+      [
+       -79.862,
+       32.722
+      ],
+      [
+       -79.222,
+       33.312
+      ],
+      [
+       -79.201,
+       33.339
+      ],
+      [
+       -79.193,
+       33.37
+      ],
+      [
+       -79.201,
+       33.401
+      ],
+      [
+       -79.222,
+       33.428
+      ],
+      [
+       -80.531,
+       34.308
+      ],
+      [
+       -80.563,
+       34.325
+      ],
+      [
+       -81.053,
+       34.445
+      ],
+      [
+       -81.09,
+       34.451
+      ],
+      [
+       -81.127,
+       34.445
+      ],
+      [
+       -82.057,
+       34.225
+      ],
+      [
+       -82.089,
+       34.208
+      ],
+      [
+       -82.11,
+       34.181
+      ]
+     ]
+    },
+    {
+     "date": "1781-04-25",
+     "coords": [
+      [
+       -82.118,
+       34.15
+      ],
+      [
+       -81.997,
+       33.6
+      ],
+      [
+       -81.99,
+       33.569
+      ],
+      [
+       -81.088,
+       32.189
+      ],
+      [
+       -81.068,
+       32.162
+      ],
+      [
+       -81.037,
+       32.145
+      ],
+      [
+       -81.0,
+       32.139
+      ],
+      [
+       -80.963,
+       32.145
+      ],
+      [
+       -79.893,
+       32.705
+      ],
+      [
+       -79.862,
+       32.722
+      ],
+      [
+       -79.222,
+       33.312
+      ],
+      [
+       -79.201,
+       33.339
+      ],
+      [
+       -79.193,
+       33.37
+      ],
+      [
+       -79.201,
+       33.401
+      ],
+      [
+       -79.222,
+       33.428
+      ],
+      [
+       -80.531,
+       34.308
+      ],
+      [
+       -80.563,
+       34.325
+      ],
+      [
+       -81.053,
+       34.445
+      ],
+      [
+       -81.09,
+       34.451
+      ],
+      [
+       -81.127,
+       34.445
+      ],
+      [
+       -82.057,
+       34.225
+      ],
+      [
+       -82.089,
+       34.208
+      ],
+      [
+       -82.11,
+       34.181
+      ]
+     ]
+    },
+    {
+     "date": "1781-05-10",
+     "coords": [
+      [
+       -82.118,
+       34.15
+      ],
+      [
+       -81.997,
+       33.6
+      ],
+      [
+       -81.99,
+       33.569
+      ],
+      [
+       -81.088,
+       32.189
+      ],
+      [
+       -81.068,
+       32.162
+      ],
+      [
+       -81.037,
+       32.145
+      ],
+      [
+       -81.0,
+       32.139
+      ],
+      [
+       -80.963,
+       32.145
+      ],
+      [
+       -79.893,
+       32.705
+      ],
+      [
+       -79.862,
+       32.722
+      ],
+      [
+       -79.222,
+       33.312
+      ],
+      [
+       -79.201,
+       33.339
+      ],
+      [
+       -79.193,
+       33.37
+      ],
+      [
+       -79.201,
+       33.401
+      ],
+      [
+       -79.222,
+       33.428
+      ],
+      [
+       -79.253,
+       33.445
+      ],
+      [
+       -81.983,
+       34.225
+      ],
+      [
+       -82.02,
+       34.231
+      ],
+      [
+       -82.057,
+       34.225
+      ],
+      [
+       -82.089,
+       34.208
+      ],
+      [
+       -82.11,
+       34.181
+      ]
+     ]
+    },
+    {
+     "date": "1781-06-19",
+     "coords": [
+      [
+       -82.118,
+       34.15
+      ],
+      [
+       -81.997,
+       33.6
+      ],
+      [
+       -81.99,
+       33.569
+      ],
+      [
+       -81.088,
+       32.189
+      ],
+      [
+       -81.068,
+       32.162
+      ],
+      [
+       -81.037,
+       32.145
+      ],
+      [
+       -81.0,
+       32.139
+      ],
+      [
+       -80.963,
+       32.145
+      ],
+      [
+       -79.893,
+       32.705
+      ],
+      [
+       -79.862,
+       32.722
+      ],
+      [
+       -79.222,
+       33.312
+      ],
+      [
+       -79.201,
+       33.339
+      ],
+      [
+       -79.193,
+       33.37
+      ],
+      [
+       -79.201,
+       33.401
+      ],
+      [
+       -79.222,
+       33.428
+      ],
+      [
+       -79.253,
+       33.445
+      ],
+      [
+       -81.983,
+       34.225
+      ],
+      [
+       -82.02,
+       34.231
+      ],
+      [
+       -82.057,
+       34.225
+      ],
+      [
+       -82.089,
+       34.208
+      ],
+      [
+       -82.11,
+       34.181
+      ]
+     ]
+    },
+    {
+     "date": "1781-07-03",
+     "coords": [
+      [
+       -81.096,
+       32.22
+      ],
+      [
+       -81.088,
+       32.189
+      ],
+      [
+       -81.068,
+       32.162
+      ],
+      [
+       -81.037,
+       32.145
+      ],
+      [
+       -81.0,
+       32.139
+      ],
+      [
+       -80.963,
+       32.145
+      ],
+      [
+       -79.893,
+       32.705
+      ],
+      [
+       -79.862,
+       32.722
+      ],
+      [
+       -79.222,
+       33.312
+      ],
+      [
+       -79.201,
+       33.339
+      ],
+      [
+       -79.193,
+       33.37
+      ],
+      [
+       -79.201,
+       33.401
+      ],
+      [
+       -79.222,
+       33.428
+      ],
+      [
+       -79.253,
+       33.445
+      ],
+      [
+       -79.29,
+       33.451
+      ],
+      [
+       -80.86,
+       33.571
+      ],
+      [
+       -80.897,
+       33.565
+      ],
+      [
+       -80.929,
+       33.548
+      ],
+      [
+       -80.95,
+       33.521
+      ],
+      [
+       -80.957,
+       33.49
+      ]
+     ]
+    },
+    {
+     "date": "1781-09-08",
+     "coords": [
+      [
+       -81.096,
+       32.22
+      ],
+      [
+       -81.088,
+       32.189
+      ],
+      [
+       -81.068,
+       32.162
+      ],
+      [
+       -81.037,
+       32.145
+      ],
+      [
+       -81.0,
+       32.139
+      ],
+      [
+       -80.963,
+       32.145
+      ],
+      [
+       -79.893,
+       32.705
+      ],
+      [
+       -79.862,
+       32.722
+      ],
+      [
+       -79.222,
+       33.312
+      ],
+      [
+       -79.201,
+       33.339
+      ],
+      [
+       -79.193,
+       33.37
+      ],
+      [
+       -79.201,
+       33.401
+      ],
+      [
+       -79.222,
+       33.428
+      ],
+      [
+       -79.253,
+       33.445
+      ],
+      [
+       -79.29,
+       33.451
+      ],
+      [
+       -80.86,
+       33.571
+      ],
+      [
+       -80.897,
+       33.565
+      ],
+      [
+       -80.929,
+       33.548
+      ],
+      [
+       -80.95,
+       33.521
+      ],
+      [
+       -80.957,
+       33.49
+      ]
+     ]
+    },
+    {
+     "date": "1781-09-15",
+     "coords": [
+      [
+       -80.188,
+       32.85
+      ],
+      [
+       -80.178,
+       32.66
+      ],
+      [
+       -80.168,
+       32.618
+      ],
+      [
+       -80.141,
+       32.583
+      ],
+      [
+       -80.099,
+       32.56
+      ],
+      [
+       -80.05,
+       32.551
+      ],
+      [
+       -80.001,
+       32.56
+      ],
+      [
+       -79.959,
+       32.583
+      ],
+      [
+       -79.839,
+       32.703
+      ],
+      [
+       -79.812,
+       32.738
+      ],
+      [
+       -79.802,
+       32.78
+      ],
+      [
+       -79.812,
+       32.822
+      ],
+      [
+       -79.881,
+       33.062
+      ],
+      [
+       -79.909,
+       33.097
+      ],
+      [
+       -79.951,
+       33.12
+      ],
+      [
+       -80.0,
+       33.129
+      ],
+      [
+       -80.049,
+       33.12
+      ],
+      [
+       -80.091,
+       33.097
+      ],
+      [
+       -80.119,
+       33.062
+      ],
+      [
+       -80.179,
+       32.892
+      ]
+     ]
+    },
+    {
+     "date": "1782-12-13",
+     "coords": [
+      [
+       -80.188,
+       32.85
+      ],
+      [
+       -80.178,
+       32.66
+      ],
+      [
+       -80.168,
+       32.618
+      ],
+      [
+       -80.141,
+       32.583
+      ],
+      [
+       -80.099,
+       32.56
+      ],
+      [
+       -80.05,
+       32.551
+      ],
+      [
+       -80.001,
+       32.56
+      ],
+      [
+       -79.959,
+       32.583
+      ],
+      [
+       -79.839,
+       32.703
+      ],
+      [
+       -79.812,
+       32.738
+      ],
+      [
+       -79.802,
+       32.78
+      ],
+      [
+       -79.812,
+       32.822
+      ],
+      [
+       -79.881,
+       33.062
+      ],
+      [
+       -79.909,
+       33.097
+      ],
+      [
+       -79.951,
+       33.12
+      ],
+      [
+       -80.0,
+       33.129
+      ],
+      [
+       -80.049,
+       33.12
+      ],
+      [
+       -80.091,
+       33.097
+      ],
+      [
+       -80.119,
+       33.062
+      ],
+      [
+       -80.179,
+       32.892
+      ]
+     ]
+    }
+   ],
+   "end": "1782-12-14"
+  },
+  {
+   "name": "British-held Wilmington, North Carolina (1781)",
+   "side": 1,
+   "keys": [
+    {
+     "date": "1781-01-29",
+     "coords": [
+      [
+       -78.059,
+       34.23
+      ],
+      [
+       -78.05,
+       34.195
+      ],
+      [
+       -78.027,
+       34.166
+      ],
+      [
+       -77.992,
+       34.146
+      ],
+      [
+       -77.95,
+       34.14
+      ],
+      [
+       -77.908,
+       34.146
+      ],
+      [
+       -77.873,
+       34.166
+      ],
+      [
+       -77.85,
+       34.195
+      ],
+      [
+       -77.841,
+       34.23
+      ],
+      [
+       -77.85,
+       34.265
+      ],
+      [
+       -77.873,
+       34.294
+      ],
+      [
+       -77.908,
+       34.314
+      ],
+      [
+       -77.95,
+       34.32
+      ],
+      [
+       -77.992,
+       34.314
+      ],
+      [
+       -78.027,
+       34.294
+      ],
+      [
+       -78.05,
+       34.265
+      ]
+     ]
+    }
+   ],
+   "end": "1781-11-18"
+  },
+  {
+   "name": "Charleston after the British left (corrects 1782 border data)",
+   "side": 0,
+   "keys": [
+    {
+     "date": "1782-12-14",
+     "coords": [
+      [
+       -80.25,
+       32.55
+      ],
+      [
+       -79.55,
+       32.55
+      ],
+      [
+       -79.55,
+       33.15
+      ],
+      [
+       -80.25,
+       33.15
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "name": "British-held Yorktown and Gloucester",
+   "side": 1,
+   "keys": [
+    {
+     "date": "1781-08-02",
+     "coords": [
+      [
+       -76.566,
+       37.235
+      ],
+      [
+       -76.562,
+       37.218
+      ],
+      [
+       -76.55,
+       37.203
+      ],
+      [
+       -76.532,
+       37.193
+      ],
+      [
+       -76.51,
+       37.19
+      ],
+      [
+       -76.488,
+       37.193
+      ],
+      [
+       -76.47,
+       37.203
+      ],
+      [
+       -76.458,
+       37.218
+      ],
+      [
+       -76.448,
+       37.238
+      ],
+      [
+       -76.444,
+       37.255
+      ],
+      [
+       -76.448,
+       37.272
+      ],
+      [
+       -76.46,
+       37.287
+      ],
+      [
+       -76.478,
+       37.297
+      ],
+      [
+       -76.5,
+       37.3
+      ],
+      [
+       -76.522,
+       37.297
+      ],
+      [
+       -76.54,
+       37.287
+      ],
+      [
+       -76.552,
+       37.272
+      ],
+      [
+       -76.562,
+       37.252
+      ]
+     ]
+    }
+   ],
+   "end": "1781-10-19"
+  },
+  {
+   "name": "British-held Portsmouth, Virginia (1781)",
+   "side": 1,
+   "keys": [
+    {
+     "date": "1781-01-20",
+     "coords": [
+      [
+       -76.39,
+       36.84
+      ],
+      [
+       -76.383,
+       36.812
+      ],
+      [
+       -76.363,
+       36.789
+      ],
+      [
+       -76.334,
+       36.773
+      ],
+      [
+       -76.3,
+       36.768
+      ],
+      [
+       -76.266,
+       36.773
+      ],
+      [
+       -76.237,
+       36.789
+      ],
+      [
+       -76.217,
+       36.812
+      ],
+      [
+       -76.21,
+       36.84
+      ],
+      [
+       -76.217,
+       36.868
+      ],
+      [
+       -76.237,
+       36.891
+      ],
+      [
+       -76.266,
+       36.907
+      ],
+      [
+       -76.3,
+       36.912
+      ],
+      [
+       -76.334,
+       36.907
+      ],
+      [
+       -76.363,
+       36.891
+      ],
+      [
+       -76.383,
+       36.868
+      ]
+     ]
+    }
+   ],
+   "end": "1781-08-18"
+  },
+  {
+   "name": "American-held lower Virginia peninsula (corrects 1781 border data)",
+   "side": 0,
+   "keys": [
+    {
+     "date": "1781-01-01",
+     "coords": [
+      [
+       -76.78,
+       36.87
+      ],
+      [
+       -76.12,
+       36.87
+      ],
+      [
+       -76.12,
+       37.43
+      ],
+      [
+       -76.78,
+       37.43
+      ]
+     ]
+    }
+   ],
+   "end": "1781-08-01"
+  },
+  {
+   "name": "Yorktown and Hampton Roads after the surrender (corrects 1781-82 border data)",
+   "side": 0,
+   "keys": [
+    {
+     "date": "1781-10-19",
+     "coords": [
+      [
+       -76.78,
+       36.87
+      ],
+      [
+       -76.12,
+       36.87
+      ],
+      [
+       -76.12,
+       37.43
+      ],
+      [
+       -76.78,
+       37.43
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "arrows": [
+  {
+   "name": "British march to Concord and back",
+   "side": 1,
+   "start": "1775-04-19",
+   "end": "1775-04-19",
+   "path": [
+    [
+     -71.06,
+     42.355
+    ],
+    [
+     -71.11,
+     42.37
+    ],
+    [
+     -71.15,
+     42.415
+    ],
+    [
+     -71.23,
+     42.447
+    ],
+    [
+     -71.3,
+     42.455
+    ],
+    [
+     -71.35,
+     42.46
+    ],
+    [
+     -71.3,
+     42.452
+    ],
+    [
+     -71.23,
+     42.447
+    ],
+    [
+     -71.15,
+     42.415
+    ],
+    [
+     -71.09,
+     42.385
+    ],
+    [
+     -71.065,
+     42.378
+    ],
+    [
+     -71.06,
+     42.362
+    ]
+   ]
+  },
+  {
+   "name": "Bunker Hill: British assault on the Charlestown peninsula",
+   "side": 1,
+   "start": "1775-06-17",
+   "end": "1775-06-17",
+   "path": [
+    [
+     -71.055,
+     42.362
+    ],
+    [
+     -71.05,
+     42.372
+    ],
+    [
+     -71.06,
+     42.377
+    ]
+   ]
+  },
+  {
+   "name": "Americans fortify Dorchester Heights",
+   "side": 0,
+   "start": "1776-03-04",
+   "end": "1776-03-05",
+   "path": [
+    [
+     -71.09,
+     42.33
+    ],
+    [
+     -71.06,
+     42.33
+    ],
+    [
+     -71.045,
+     42.333
+    ]
+   ]
+  },
+  {
+   "name": "Howe lands on Staten Island",
+   "side": 1,
+   "start": "1776-07-02",
+   "end": "1776-07-03",
+   "path": [
+    [
+     -73.95,
+     40.42
+    ],
+    [
+     -74.04,
+     40.57
+    ],
+    [
+     -74.12,
+     40.6
+    ]
+   ]
+  },
+  {
+   "name": "Howe's flank march on Long Island",
+   "side": 1,
+   "start": "1776-08-22",
+   "end": "1776-08-27",
+   "path": [
+    [
+     -74.03,
+     40.6
+    ],
+    [
+     -73.98,
+     40.6
+    ],
+    [
+     -73.88,
+     40.66
+    ],
+    [
+     -73.89,
+     40.68
+    ],
+    [
+     -73.94,
+     40.68
+    ]
+   ]
+  },
+  {
+   "name": "Washington evacuates Brooklyn",
+   "side": 0,
+   "start": "1776-08-29",
+   "end": "1776-08-30",
+   "path": [
+    [
+     -73.985,
+     40.69
+    ],
+    [
+     -74.0,
+     40.705
+    ],
+    [
+     -74.005,
+     40.712
+    ]
+   ]
+  },
+  {
+   "name": "British landing at Kip's Bay",
+   "side": 1,
+   "start": "1776-09-15",
+   "end": "1776-09-15",
+   "path": [
+    [
+     -73.945,
+     40.745
+    ],
+    [
+     -73.965,
+     40.745
+    ],
+    [
+     -73.985,
+     40.75
+    ]
+   ]
+  },
+  {
+   "name": "Howe's landing at Pell's Point and march to White Plains",
+   "side": 1,
+   "start": "1776-10-18",
+   "end": "1776-10-28",
+   "path": [
+    [
+     -73.8,
+     40.86
+    ],
+    [
+     -73.79,
+     40.92
+    ],
+    [
+     -73.78,
+     40.98
+    ],
+    [
+     -73.76,
+     41.03
+    ]
+   ]
+  },
+  {
+   "name": "Washington withdraws to North Castle",
+   "side": 0,
+   "start": "1776-10-31",
+   "end": "1776-11-01",
+   "path": [
+    [
+     -73.75,
+     41.05
+    ],
+    [
+     -73.71,
+     41.1
+    ],
+    [
+     -73.69,
+     41.14
+    ]
+   ]
+  },
+  {
+   "name": "Capture of Fort Washington",
+   "side": 1,
+   "start": "1776-11-16",
+   "end": "1776-11-16",
+   "path": [
+    [
+     -73.93,
+     40.8
+    ],
+    [
+     -73.935,
+     40.83
+    ],
+    [
+     -73.94,
+     40.851
+    ]
+   ]
+  },
+  {
+   "name": "Cornwallis crosses the Hudson to Fort Lee",
+   "side": 1,
+   "start": "1776-11-20",
+   "end": "1776-11-20",
+   "path": [
+    [
+     -73.92,
+     40.93
+    ],
+    [
+     -73.95,
+     40.9
+    ],
+    [
+     -73.97,
+     40.85
+    ]
+   ]
+  },
+  {
+   "name": "Cornwallis pursues Washington across New Jersey",
+   "side": 1,
+   "start": "1776-11-21",
+   "end": "1776-12-08",
+   "path": [
+    [
+     -73.97,
+     40.85
+    ],
+    [
+     -74.04,
+     40.89
+    ],
+    [
+     -74.17,
+     40.74
+    ],
+    [
+     -74.35,
+     40.6
+    ],
+    [
+     -74.45,
+     40.49
+    ],
+    [
+     -74.66,
+     40.35
+    ],
+    [
+     -74.76,
+     40.22
+    ]
+   ]
+  },
+  {
+   "name": "Washington crosses the Delaware to Trenton",
+   "side": 0,
+   "start": "1776-12-25",
+   "end": "1776-12-26",
+   "path": [
+    [
+     -74.87,
+     40.3
+    ],
+    [
+     -74.82,
+     40.27
+    ],
+    [
+     -74.76,
+     40.22
+    ]
+   ]
+  },
+  {
+   "name": "Washington's night march to Princeton",
+   "side": 0,
+   "start": "1777-01-02",
+   "end": "1777-01-03",
+   "path": [
+    [
+     -74.76,
+     40.22
+    ],
+    [
+     -74.72,
+     40.26
+    ],
+    [
+     -74.7,
+     40.31
+    ],
+    [
+     -74.66,
+     40.35
+    ]
+   ]
+  },
+  {
+   "name": "Washington marches to Morristown",
+   "side": 0,
+   "start": "1777-01-03",
+   "end": "1777-01-06",
+   "path": [
+    [
+     -74.66,
+     40.35
+    ],
+    [
+     -74.62,
+     40.52
+    ],
+    [
+     -74.64,
+     40.65
+    ],
+    [
+     -74.48,
+     40.8
+    ]
+   ]
+  },
+  {
+   "name": "Burgoyne's advance from Canada to Fort Edward",
+   "side": 1,
+   "start": "1777-06-14",
+   "end": "1777-07-29",
+   "path": [
+    [
+     -73.25,
+     45.31
+    ],
+    [
+     -73.33,
+     44.9
+    ],
+    [
+     -73.38,
+     44.5
+    ],
+    [
+     -73.43,
+     44.03
+    ],
+    [
+     -73.39,
+     43.83
+    ],
+    [
+     -73.41,
+     43.55
+    ],
+    [
+     -73.49,
+     43.41
+    ],
+    [
+     -73.58,
+     43.27
+    ]
+   ]
+  },
+  {
+   "name": "Burgoyne crosses the Hudson to Freeman's Farm",
+   "side": 1,
+   "start": "1777-09-13",
+   "end": "1777-09-19",
+   "path": [
+    [
+     -73.58,
+     43.27
+    ],
+    [
+     -73.58,
+     43.16
+    ],
+    [
+     -73.58,
+     43.1
+    ],
+    [
+     -73.65,
+     43.01
+    ]
+   ]
+  },
+  {
+   "name": "Gates's army moves up to Bemis Heights",
+   "side": 0,
+   "start": "1777-09-08",
+   "end": "1777-09-12",
+   "path": [
+    [
+     -73.76,
+     42.65
+    ],
+    [
+     -73.7,
+     42.8
+    ],
+    [
+     -73.65,
+     42.92
+    ],
+    [
+     -73.62,
+     42.97
+    ]
+   ]
+  },
+  {
+   "name": "Howe sails to the Chesapeake",
+   "side": 1,
+   "start": "1777-07-23",
+   "end": "1777-08-25",
+   "path": [
+    [
+     -74.0,
+     40.45
+    ],
+    [
+     -74.1,
+     39.6
+    ],
+    [
+     -74.9,
+     38.4
+    ],
+    [
+     -75.6,
+     37.3
+    ],
+    [
+     -76.1,
+     37.4
+    ],
+    [
+     -76.3,
+     38.4
+    ],
+    [
+     -76.1,
+     39.2
+    ],
+    [
+     -75.85,
+     39.59
+    ]
+   ]
+  },
+  {
+   "name": "Howe's advance on Philadelphia",
+   "side": 1,
+   "start": "1777-09-03",
+   "end": "1777-09-26",
+   "path": [
+    [
+     -75.83,
+     39.61
+    ],
+    [
+     -75.75,
+     39.7
+    ],
+    [
+     -75.71,
+     39.85
+    ],
+    [
+     -75.59,
+     39.87
+    ],
+    [
+     -75.55,
+     39.98
+    ],
+    [
+     -75.49,
+     40.04
+    ],
+    [
+     -75.33,
+     40.1
+    ],
+    [
+     -75.2,
+     40.0
+    ],
+    [
+     -75.15,
+     39.95
+    ]
+   ]
+  },
+  {
+   "name": "Washington's attack at Germantown, and withdrawal",
+   "side": 0,
+   "start": "1777-10-03",
+   "end": "1777-10-04",
+   "path": [
+    [
+     -75.38,
+     40.2
+    ],
+    [
+     -75.24,
+     40.08
+    ],
+    [
+     -75.19,
+     40.05
+    ],
+    [
+     -75.24,
+     40.09
+    ],
+    [
+     -75.36,
+     40.19
+    ]
+   ]
+  },
+  {
+   "name": "Washington goes into winter quarters at Valley Forge",
+   "side": 0,
+   "start": "1777-12-11",
+   "end": "1777-12-19",
+   "path": [
+    [
+     -75.22,
+     40.1
+    ],
+    [
+     -75.33,
+     40.08
+    ],
+    [
+     -75.45,
+     40.1
+    ]
+   ]
+  },
+  {
+   "name": "Clinton marches across New Jersey to Sandy Hook",
+   "side": 1,
+   "start": "1778-06-18",
+   "end": "1778-06-30",
+   "path": [
+    [
+     -75.15,
+     39.95
+    ],
+    [
+     -74.95,
+     40.05
+    ],
+    [
+     -74.6,
+     40.17
+    ],
+    [
+     -74.27,
+     40.26
+    ],
+    [
+     -74.1,
+     40.36
+    ],
+    [
+     -74.0,
+     40.45
+    ]
+   ]
+  },
+  {
+   "name": "Washington pursues to Monmouth",
+   "side": 0,
+   "start": "1778-06-19",
+   "end": "1778-06-28",
+   "path": [
+    [
+     -75.45,
+     40.1
+    ],
+    [
+     -74.95,
+     40.37
+    ],
+    [
+     -74.6,
+     40.36
+    ],
+    [
+     -74.36,
+     40.3
+    ]
+   ]
+  },
+  {
+   "name": "Campbell's expedition takes Savannah",
+   "side": 1,
+   "start": "1778-12-23",
+   "end": "1778-12-29",
+   "path": [
+    [
+     -80.75,
+     31.95
+    ],
+    [
+     -80.9,
+     32.0
+    ],
+    [
+     -81.03,
+     32.05
+    ],
+    [
+     -81.09,
+     32.08
+    ]
+   ]
+  },
+  {
+   "name": "Franco-American siege of Savannah",
+   "side": 0,
+   "start": "1779-09-16",
+   "end": "1779-10-09",
+   "path": [
+    [
+     -80.95,
+     31.85
+    ],
+    [
+     -81.05,
+     31.94
+    ],
+    [
+     -81.1,
+     31.985
+    ]
+   ]
+  },
+  {
+   "name": "Clinton's army besieges Charleston",
+   "side": 1,
+   "start": "1780-02-11",
+   "end": "1780-05-12",
+   "path": [
+    [
+     -79.95,
+     32.45
+    ],
+    [
+     -80.05,
+     32.66
+    ],
+    [
+     -80.06,
+     32.85
+    ],
+    [
+     -79.97,
+     32.82
+    ],
+    [
+     -79.93,
+     32.78
+    ]
+   ]
+  },
+  {
+   "name": "Cornwallis advances to Camden",
+   "side": 1,
+   "start": "1780-05-18",
+   "end": "1780-06-01",
+   "path": [
+    [
+     -79.93,
+     32.78
+    ],
+    [
+     -80.0,
+     33.2
+    ],
+    [
+     -80.35,
+     33.75
+    ],
+    [
+     -80.6,
+     34.25
+    ]
+   ]
+  },
+  {
+   "name": "Gates marches on Camden",
+   "side": 0,
+   "start": "1780-07-27",
+   "end": "1780-08-16",
+   "path": [
+    [
+     -79.1,
+     36.08
+    ],
+    [
+     -79.6,
+     35.4
+    ],
+    [
+     -80.1,
+     34.8
+    ],
+    [
+     -80.6,
+     34.42
+    ]
+   ]
+  },
+  {
+   "name": "Cornwallis marches to Charlotte",
+   "side": 1,
+   "start": "1780-09-08",
+   "end": "1780-09-26",
+   "path": [
+    [
+     -80.6,
+     34.25
+    ],
+    [
+     -80.75,
+     34.75
+    ],
+    [
+     -80.84,
+     35.23
+    ]
+   ]
+  },
+  {
+   "name": "The Overmountain Men march to Kings Mountain",
+   "side": 0,
+   "start": "1780-09-26",
+   "end": "1780-10-07",
+   "path": [
+    [
+     -82.23,
+     36.35
+    ],
+    [
+     -82.0,
+     35.75
+    ],
+    [
+     -81.75,
+     35.3
+    ],
+    [
+     -81.38,
+     35.14
+    ]
+   ]
+  },
+  {
+   "name": "Cornwallis's campaign in North Carolina",
+   "side": 1,
+   "start": "1781-01-19",
+   "end": "1781-04-07",
+   "path": [
+    [
+     -81.09,
+     34.37
+    ],
+    [
+     -81.27,
+     35.47
+    ],
+    [
+     -80.5,
+     35.95
+    ],
+    [
+     -79.84,
+     36.13
+    ],
+    [
+     -78.88,
+     35.05
+    ],
+    [
+     -77.95,
+     34.23
+    ]
+   ]
+  },
+  {
+   "name": "Greene's return to South Carolina",
+   "side": 0,
+   "start": "1781-04-07",
+   "end": "1781-05-22",
+   "path": [
+    [
+     -79.5,
+     35.7
+    ],
+    [
+     -80.62,
+     34.45
+    ],
+    [
+     -81.4,
+     34.4
+    ],
+    [
+     -81.95,
+     34.32
+    ]
+   ]
+  },
+  {
+   "name": "Washington and Rochambeau march to Virginia",
+   "side": 0,
+   "start": "1781-08-19",
+   "end": "1781-09-26",
+   "path": [
+    [
+     -73.87,
+     41.01
+    ],
+    [
+     -74.3,
+     40.85
+    ],
+    [
+     -74.66,
+     40.35
+    ],
+    [
+     -74.76,
+     40.22
+    ],
+    [
+     -75.15,
+     39.95
+    ],
+    [
+     -75.83,
+     39.61
+    ],
+    [
+     -76.3,
+     38.6
+    ],
+    [
+     -76.45,
+     37.6
+    ],
+    [
+     -76.7,
+     37.27
+    ]
+   ]
+  },
+  {
+   "name": "De Grasse's fleet enters the Chesapeake",
+   "side": 0,
+   "start": "1781-08-26",
+   "end": "1781-08-30",
+   "path": [
+    [
+     -75.3,
+     36.6
+    ],
+    [
+     -75.9,
+     36.95
+    ],
+    [
+     -76.03,
+     36.93
+    ]
+   ]
+  },
+  {
+   "name": "Cornwallis moves to Yorktown",
+   "side": 1,
+   "start": "1781-07-30",
+   "end": "1781-08-02",
+   "path": [
+    [
+     -76.3,
+     36.84
+    ],
+    [
+     -76.35,
+     37.0
+    ],
+    [
+     -76.45,
+     37.15
+    ],
+    [
+     -76.51,
+     37.235
+    ]
+   ]
+  },
+  {
+   "name": "Allied armies besiege Yorktown",
+   "side": 0,
+   "start": "1781-09-28",
+   "end": "1781-10-20",
+   "path": [
+    [
+     -76.7,
+     37.27
+    ],
+    [
+     -76.6,
+     37.24
+    ],
+    [
+     -76.53,
+     37.225
+    ]
+   ]
+  }
+ ],
+ "battles": [
+  {
+   "name": "Battles of Lexington and Concord",
+   "start": "1775-04-19",
+   "end": "1775-04-19",
+   "lonlat": [
+    -71.23,
+    42.447
+   ],
+   "casualties": "c. 390 killed, wounded and missing (British c. 300)",
+   "casNum": 393
+  },
+  {
+   "name": "Battle of Bunker Hill",
+   "start": "1775-06-17",
+   "end": "1775-06-17",
+   "lonlat": [
+    -71.06,
+    42.376
+   ],
+   "casualties": "c. 1,530 killed, wounded and captured (British c. 1,050)",
+   "casNum": 1527
+  },
+  {
+   "name": "Battle of Long Island",
+   "start": "1776-08-27",
+   "end": "1776-08-27",
+   "lonlat": [
+    -73.96,
+    40.665
+   ],
+   "casualties": "c. 2,570 killed, wounded and captured (American c. 2,180)",
+   "casNum": 2567
+  },
+  {
+   "name": "Landing at Kip's Bay",
+   "start": "1776-09-15",
+   "end": "1776-09-15",
+   "lonlat": [
+    -73.975,
+    40.745
+   ],
+   "casualties": "c. 380 killed, wounded and captured",
+   "casNum": 382
+  },
+  {
+   "name": "Battle of White Plains",
+   "start": "1776-10-28",
+   "end": "1776-10-28",
+   "lonlat": [
+    -73.77,
+    41.02
+   ],
+   "casualties": "c. 450–550 killed, wounded and captured",
+   "casNum": 500
+  },
+  {
+   "name": "Battle of Fort Washington",
+   "start": "1776-11-16",
+   "end": "1776-11-16",
+   "lonlat": [
+    -73.94,
+    40.851
+   ],
+   "casualties": "c. 3,450, including 2,837 Americans captured",
+   "casNum": 3450
+  },
+  {
+   "name": "Battle of Trenton",
+   "start": "1776-12-26",
+   "end": "1776-12-26",
+   "lonlat": [
+    -74.76,
+    40.22
+   ],
+   "casualties": "c. 900–1,000, almost all Hessians killed, wounded or captured",
+   "casNum": 960
+  },
+  {
+   "name": "Battle of Princeton",
+   "start": "1777-01-03",
+   "end": "1777-01-03",
+   "lonlat": [
+    -74.66,
+    40.35
+   ],
+   "casualties": "c. 370–530 killed, wounded and captured",
+   "casNum": 450
+  },
+  {
+   "name": "Siege of Fort Ticonderoga",
+   "start": "1777-07-02",
+   "end": "1777-07-06",
+   "lonlat": [
+    -73.39,
+    43.84
+   ],
+   "casualties": "under 25 killed and wounded",
+   "casNum": 23
+  },
+  {
+   "name": "Battle of Bennington",
+   "start": "1777-08-16",
+   "end": "1777-08-16",
+   "lonlat": [
+    -73.3,
+    42.93
+   ],
+   "casualties": "c. 980 killed, wounded and captured (British and German c. 900)",
+   "casNum": 977
+  },
+  {
+   "name": "Battles of Saratoga",
+   "start": "1777-09-19",
+   "end": "1777-10-07",
+   "lonlat": [
+    -73.64,
+    43.0
+   ],
+   "casualties": "c. 7,700, including 6,222 British and German troops who surrendered on 17 October",
+   "casNum": 7687
+  },
+  {
+   "name": "Battle of Brandywine",
+   "start": "1777-09-11",
+   "end": "1777-09-11",
+   "lonlat": [
+    -75.59,
+    39.87
+   ],
+   "casualties": "c. 1,840 killed, wounded and captured",
+   "casNum": 1837
+  },
+  {
+   "name": "Battle of Germantown",
+   "start": "1777-10-04",
+   "end": "1777-10-04",
+   "lonlat": [
+    -75.17,
+    40.04
+   ],
+   "casualties": "c. 1,640 killed, wounded and captured",
+   "casNum": 1644
+  },
+  {
+   "name": "Siege of Fort Mifflin",
+   "start": "1777-09-26",
+   "end": "1777-11-16",
+   "lonlat": [
+    -75.21,
+    39.875
+   ],
+   "casualties": "c. 370 killed, wounded and captured",
+   "casNum": 370
+  },
+  {
+   "name": "Battle of Monmouth",
+   "start": "1778-06-28",
+   "end": "1778-06-28",
+   "lonlat": [
+    -74.27,
+    40.26
+   ],
+   "casualties": "c. 730 (official returns) to c. 1,600 (estimates)",
+   "casNum": 1100
+  },
+  {
+   "name": "Capture of Savannah",
+   "start": "1778-12-29",
+   "end": "1778-12-29",
+   "lonlat": [
+    -81.09,
+    32.08
+   ],
+   "casualties": "c. 570 killed, wounded and captured (American c. 550)",
+   "casNum": 571
+  },
+  {
+   "name": "Siege of Savannah",
+   "start": "1779-09-16",
+   "end": "1779-10-18",
+   "lonlat": [
+    -81.1,
+    32.07
+   ],
+   "casualties": "c. 1,100 killed, wounded and captured (French and American c. 950)",
+   "casNum": 1103
+  },
+  {
+   "name": "Siege of Charleston",
+   "start": "1780-03-29",
+   "end": "1780-05-12",
+   "lonlat": [
+    -79.93,
+    32.78
+   ],
+   "casualties": "c. 390 killed and wounded; 5,466 Americans captured",
+   "casNum": 5858
+  },
+  {
+   "name": "Battle of Camden",
+   "start": "1780-08-16",
+   "end": "1780-08-16",
+   "lonlat": [
+    -80.58,
+    34.33
+   ],
+   "casualties": "c. 2,200 killed, wounded and captured (American c. 1,900)",
+   "casNum": 2224
+  },
+  {
+   "name": "Battle of Kings Mountain",
+   "start": "1780-10-07",
+   "end": "1780-10-07",
+   "lonlat": [
+    -81.38,
+    35.14
+   ],
+   "casualties": "c. 1,080 killed, wounded and captured (Loyalist c. 990)",
+   "casNum": 1078
+  },
+  {
+   "name": "Battle of Cowpens",
+   "start": "1781-01-17",
+   "end": "1781-01-17",
+   "lonlat": [
+    -81.81,
+    35.14
+   ],
+   "casualties": "c. 1,120 killed, wounded and captured (British c. 970)",
+   "casNum": 1117
+  },
+  {
+   "name": "Battle of Guilford Court House",
+   "start": "1781-03-15",
+   "end": "1781-03-15",
+   "lonlat": [
+    -79.84,
+    36.13
+   ],
+   "casualties": "c. 1,840–1,920 killed, wounded and missing",
+   "casNum": 1880
+  },
+  {
+   "name": "Siege of Ninety Six",
+   "start": "1781-05-22",
+   "end": "1781-06-19",
+   "lonlat": [
+    -82.02,
+    34.15
+   ],
+   "casualties": "c. 230 killed, wounded and missing",
+   "casNum": 232
+  },
+  {
+   "name": "Battle of Eutaw Springs",
+   "start": "1781-09-08",
+   "end": "1781-09-08",
+   "lonlat": [
+    -80.24,
+    33.41
+   ],
+   "casualties": "c. 1,030 killed, wounded and captured",
+   "casNum": 1031
+  },
+  {
+   "name": "Siege of Yorktown",
+   "start": "1781-09-28",
+   "end": "1781-10-19",
+   "lonlat": [
+    -76.51,
+    37.235
+   ],
+   "casualties": "c. 8,300–9,000, including some 7,400–7,700 British troops who surrendered",
+   "casNum": 8600
+  }
+ ],
+ "claims": [
+  {
+   "chapter": "boston",
+   "place": "Boston",
+   "lonlat": [
+    -71.058,
+    42.358
+   ],
+   "date": "1775-04-20",
+   "holder": 1,
+   "source": {
+    "title": "Wikipedia: Siege of Boston",
+    "url": "https://en.wikipedia.org/wiki/Siege_of_Boston"
+   }
+  },
+  {
+   "chapter": "boston",
+   "place": "Lexington",
+   "lonlat": [
+    -71.23,
+    42.447
+   ],
+   "date": "1775-04-20",
+   "holder": 0,
+   "source": {
+    "title": "Wikipedia: Battles of Lexington and Concord",
+    "url": "https://en.wikipedia.org/wiki/Battles_of_Lexington_and_Concord"
+   }
+  },
+  {
+   "chapter": "boston",
+   "place": "Concord",
+   "lonlat": [
+    -71.35,
+    42.46
+   ],
+   "date": "1775-04-20",
+   "holder": 0,
+   "source": {
+    "title": "Wikipedia: Battles of Lexington and Concord",
+    "url": "https://en.wikipedia.org/wiki/Battles_of_Lexington_and_Concord"
+   }
+  },
+  {
+   "chapter": "boston",
+   "place": "Cambridge",
+   "lonlat": [
+    -71.11,
+    42.37
+   ],
+   "date": "1775-05-01",
+   "holder": 0,
+   "source": {
+    "title": "Wikipedia: Siege of Boston",
+    "url": "https://en.wikipedia.org/wiki/Siege_of_Boston"
+   }
+  },
+  {
+   "chapter": "boston",
+   "place": "Charlestown",
+   "lonlat": [
+    -71.062,
+    42.377
+   ],
+   "date": "1775-06-18",
+   "holder": 1,
+   "source": {
+    "title": "Wikipedia: Siege of Boston",
+    "url": "https://en.wikipedia.org/wiki/Siege_of_Boston"
+   }
+  },
+  {
+   "chapter": "boston",
+   "place": "Dorchester Heights",
+   "lonlat": [
+    -71.045,
+    42.333
+   ],
+   "date": "1776-03-06",
+   "holder": 0,
+   "source": {
+    "title": "Wikipedia: Fortification of Dorchester Heights",
+    "url": "https://en.wikipedia.org/wiki/Fortification_of_Dorchester_Heights"
+   }
+  },
+  {
+   "chapter": "boston",
+   "place": "Boston",
+   "lonlat": [
+    -71.058,
+    42.358
+   ],
+   "date": "1776-03-18",
+   "holder": 0,
+   "source": {
+    "title": "Wikipedia: Siege of Boston",
+    "url": "https://en.wikipedia.org/wiki/Siege_of_Boston"
+   }
+  },
+  {
+   "chapter": "newyork",
+   "place": "Staten Island",
+   "lonlat": [
+    -74.15,
+    40.58
+   ],
+   "date": "1776-07-04",
+   "holder": 1,
+   "source": {
+    "title": "Wikipedia: New York and New Jersey campaign",
+    "url": "https://en.wikipedia.org/wiki/New_York_and_New_Jersey_campaign"
+   }
+  },
+  {
+   "chapter": "newyork",
+   "place": "Brooklyn Heights",
+   "lonlat": [
+    -73.99,
+    40.69
+   ],
+   "date": "1776-08-26",
+   "holder": 0,
+   "source": {
+    "title": "Wikipedia: Battle of Long Island",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Long_Island"
+   }
+  },
+  {
+   "chapter": "newyork",
+   "place": "Brooklyn Heights",
+   "lonlat": [
+    -73.99,
+    40.69
+   ],
+   "date": "1776-08-31",
+   "holder": 1,
+   "source": {
+    "title": "Wikipedia: Battle of Long Island",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Long_Island"
+   }
+  },
+  {
+   "chapter": "newyork",
+   "place": "New York City (lower Manhattan)",
+   "lonlat": [
+    -74.005,
+    40.71
+   ],
+   "date": "1776-09-16",
+   "holder": 1,
+   "source": {
+    "title": "Wikipedia: New York and New Jersey campaign",
+    "url": "https://en.wikipedia.org/wiki/New_York_and_New_Jersey_campaign"
+   }
+  },
+  {
+   "chapter": "newyork",
+   "place": "Harlem Heights",
+   "lonlat": [
+    -73.95,
+    40.822
+   ],
+   "date": "1776-09-17",
+   "holder": 0,
+   "source": {
+    "title": "Wikipedia: New York and New Jersey campaign",
+    "url": "https://en.wikipedia.org/wiki/New_York_and_New_Jersey_campaign"
+   }
+  },
+  {
+   "chapter": "newyork",
+   "place": "Fort Washington",
+   "lonlat": [
+    -73.94,
+    40.851
+   ],
+   "date": "1776-11-17",
+   "holder": 1,
+   "source": {
+    "title": "Wikipedia: Battle of Fort Washington",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Fort_Washington"
+   }
+  },
+  {
+   "chapter": "newyork",
+   "place": "Fort Lee",
+   "lonlat": [
+    -73.97,
+    40.85
+   ],
+   "date": "1776-11-21",
+   "holder": 1,
+   "source": {
+    "title": "Wikipedia: New York and New Jersey campaign",
+    "url": "https://en.wikipedia.org/wiki/New_York_and_New_Jersey_campaign"
+   }
+  },
+  {
+   "chapter": "trenton-princeton",
+   "place": "New Brunswick",
+   "lonlat": [
+    -74.45,
+    40.49
+   ],
+   "date": "1776-12-02",
+   "holder": 1,
+   "source": {
+    "title": "Wikipedia: New York and New Jersey campaign",
+    "url": "https://en.wikipedia.org/wiki/New_York_and_New_Jersey_campaign"
+   }
+  },
+  {
+   "chapter": "trenton-princeton",
+   "place": "Trenton",
+   "lonlat": [
+    -74.76,
+    40.22
+   ],
+   "date": "1776-12-20",
+   "holder": 1,
+   "source": {
+    "title": "Wikipedia: Battle of Trenton",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Trenton"
+   }
+  },
+  {
+   "chapter": "trenton-princeton",
+   "place": "Trenton",
+   "lonlat": [
+    -74.76,
+    40.22
+   ],
+   "date": "1776-12-27",
+   "holder": 0,
+   "source": {
+    "title": "Wikipedia: Battle of Trenton",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Trenton"
+   }
+  },
+  {
+   "chapter": "trenton-princeton",
+   "place": "Princeton",
+   "lonlat": [
+    -74.66,
+    40.35
+   ],
+   "date": "1777-01-04",
+   "holder": 0,
+   "source": {
+    "title": "Wikipedia: Battle of Princeton",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Princeton"
+   }
+  },
+  {
+   "chapter": "trenton-princeton",
+   "place": "New Brunswick",
+   "lonlat": [
+    -74.45,
+    40.49
+   ],
+   "date": "1777-01-07",
+   "holder": 1,
+   "source": {
+    "title": "Wikipedia: Battle of Princeton",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Princeton"
+   }
+  },
+  {
+   "chapter": "trenton-princeton",
+   "place": "Morristown",
+   "lonlat": [
+    -74.48,
+    40.8
+   ],
+   "date": "1777-01-07",
+   "holder": 0,
+   "source": {
+    "title": "Wikipedia: Battle of Princeton",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Princeton"
+   }
+  },
+  {
+   "chapter": "saratoga",
+   "place": "Fort Ticonderoga",
+   "lonlat": [
+    -73.39,
+    43.84
+   ],
+   "date": "1777-07-01",
+   "holder": 0,
+   "source": {
+    "title": "Wikipedia: Siege of Fort Ticonderoga (1777)",
+    "url": "https://en.wikipedia.org/wiki/Siege_of_Fort_Ticonderoga_(1777)"
+   }
+  },
+  {
+   "chapter": "saratoga",
+   "place": "Fort Ticonderoga",
+   "lonlat": [
+    -73.39,
+    43.84
+   ],
+   "date": "1777-07-07",
+   "holder": 1,
+   "source": {
+    "title": "Wikipedia: Siege of Fort Ticonderoga (1777)",
+    "url": "https://en.wikipedia.org/wiki/Siege_of_Fort_Ticonderoga_(1777)"
+   }
+  },
+  {
+   "chapter": "saratoga",
+   "place": "Fort Edward",
+   "lonlat": [
+    -73.58,
+    43.27
+   ],
+   "date": "1777-08-01",
+   "holder": 1,
+   "source": {
+    "title": "Wikipedia: Saratoga campaign",
+    "url": "https://en.wikipedia.org/wiki/Saratoga_campaign"
+   }
+  },
+  {
+   "chapter": "saratoga",
+   "place": "Bennington",
+   "lonlat": [
+    -73.2,
+    42.88
+   ],
+   "date": "1777-08-17",
+   "holder": 0,
+   "source": {
+    "title": "Wikipedia: Battle of Bennington",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Bennington"
+   }
+  },
+  {
+   "chapter": "saratoga",
+   "place": "Albany",
+   "lonlat": [
+    -73.76,
+    42.65
+   ],
+   "date": "1777-09-01",
+   "holder": 0,
+   "source": {
+    "title": "Wikipedia: Saratoga campaign",
+    "url": "https://en.wikipedia.org/wiki/Saratoga_campaign"
+   }
+  },
+  {
+   "chapter": "saratoga",
+   "place": "Saratoga (Schuylerville)",
+   "lonlat": [
+    -73.58,
+    43.1
+   ],
+   "date": "1777-10-18",
+   "holder": 0,
+   "source": {
+    "title": "Wikipedia: Saratoga campaign",
+    "url": "https://en.wikipedia.org/wiki/Saratoga_campaign"
+   }
+  },
+  {
+   "chapter": "philadelphia",
+   "place": "Head of Elk",
+   "lonlat": [
+    -75.83,
+    39.61
+   ],
+   "date": "1777-08-28",
+   "holder": 1,
+   "source": {
+    "title": "Wikipedia: Philadelphia campaign",
+    "url": "https://en.wikipedia.org/wiki/Philadelphia_campaign"
+   }
+  },
+  {
+   "chapter": "philadelphia",
+   "place": "Philadelphia",
+   "lonlat": [
+    -75.15,
+    39.95
+   ],
+   "date": "1777-09-01",
+   "holder": 0,
+   "source": {
+    "title": "Wikipedia: Philadelphia campaign",
+    "url": "https://en.wikipedia.org/wiki/Philadelphia_campaign"
+   }
+  },
+  {
+   "chapter": "philadelphia",
+   "place": "Philadelphia",
+   "lonlat": [
+    -75.15,
+    39.95
+   ],
+   "date": "1777-09-27",
+   "holder": 1,
+   "source": {
+    "title": "Wikipedia: Philadelphia campaign",
+    "url": "https://en.wikipedia.org/wiki/Philadelphia_campaign"
+   }
+  },
+  {
+   "chapter": "philadelphia",
+   "place": "Germantown",
+   "lonlat": [
+    -75.17,
+    40.04
+   ],
+   "date": "1777-10-05",
+   "holder": 1,
+   "source": {
+    "title": "Wikipedia: Battle of Germantown",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Germantown"
+   }
+  },
+  {
+   "chapter": "philadelphia",
+   "place": "Fort Mifflin",
+   "lonlat": [
+    -75.21,
+    39.875
+   ],
+   "date": "1777-11-17",
+   "holder": 1,
+   "source": {
+    "title": "Wikipedia: Philadelphia campaign",
+    "url": "https://en.wikipedia.org/wiki/Philadelphia_campaign"
+   }
+  },
+  {
+   "chapter": "philadelphia",
+   "place": "Valley Forge",
+   "lonlat": [
+    -75.45,
+    40.1
+   ],
+   "date": "1778-01-15",
+   "holder": 0,
+   "source": {
+    "title": "Wikipedia: Valley Forge",
+    "url": "https://en.wikipedia.org/wiki/Valley_Forge"
+   }
+  },
+  {
+   "chapter": "philadelphia",
+   "place": "Philadelphia",
+   "lonlat": [
+    -75.15,
+    39.95
+   ],
+   "date": "1778-06-19",
+   "holder": 0,
+   "source": {
+    "title": "Wikipedia: Philadelphia campaign",
+    "url": "https://en.wikipedia.org/wiki/Philadelphia_campaign"
+   }
+  },
+  {
+   "chapter": "philadelphia",
+   "place": "Monmouth Court House (Freehold)",
+   "lonlat": [
+    -74.27,
+    40.26
+   ],
+   "date": "1778-06-29",
+   "holder": 0,
+   "source": {
+    "title": "Wikipedia: Battle of Monmouth",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Monmouth"
+   }
+  },
+  {
+   "chapter": "savannah-charleston",
+   "place": "Savannah",
+   "lonlat": [
+    -81.09,
+    32.08
+   ],
+   "date": "1778-12-28",
+   "holder": 0,
+   "source": {
+    "title": "Wikipedia: Capture of Savannah",
+    "url": "https://en.wikipedia.org/wiki/Capture_of_Savannah"
+   }
+  },
+  {
+   "chapter": "savannah-charleston",
+   "place": "Savannah",
+   "lonlat": [
+    -81.09,
+    32.08
+   ],
+   "date": "1778-12-30",
+   "holder": 1,
+   "source": {
+    "title": "Wikipedia: Capture of Savannah",
+    "url": "https://en.wikipedia.org/wiki/Capture_of_Savannah"
+   }
+  },
+  {
+   "chapter": "savannah-charleston",
+   "place": "Savannah",
+   "lonlat": [
+    -81.09,
+    32.08
+   ],
+   "date": "1779-10-10",
+   "holder": 1,
+   "source": {
+    "title": "Wikipedia: Siege of Savannah (1779)",
+    "url": "https://en.wikipedia.org/wiki/Siege_of_Savannah_(1779)"
+   }
+  },
+  {
+   "chapter": "savannah-charleston",
+   "place": "Charleston",
+   "lonlat": [
+    -79.93,
+    32.78
+   ],
+   "date": "1780-05-01",
+   "holder": 0,
+   "source": {
+    "title": "Wikipedia: Siege of Charleston",
+    "url": "https://en.wikipedia.org/wiki/Siege_of_Charleston"
+   }
+  },
+  {
+   "chapter": "savannah-charleston",
+   "place": "Charleston",
+   "lonlat": [
+    -79.93,
+    32.78
+   ],
+   "date": "1780-05-13",
+   "holder": 1,
+   "source": {
+    "title": "Wikipedia: Siege of Charleston",
+    "url": "https://en.wikipedia.org/wiki/Siege_of_Charleston"
+   }
+  },
+  {
+   "chapter": "south",
+   "place": "Camden",
+   "lonlat": [
+    -80.6,
+    34.25
+   ],
+   "date": "1780-08-17",
+   "holder": 1,
+   "source": {
+    "title": "Wikipedia: Battle of Camden",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Camden"
+   }
+  },
+  {
+   "chapter": "south",
+   "place": "Charlotte",
+   "lonlat": [
+    -80.84,
+    35.23
+   ],
+   "date": "1780-10-05",
+   "holder": 1,
+   "source": {
+    "title": "Wikipedia: Battle of Kings Mountain",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Kings_Mountain"
+   }
+  },
+  {
+   "chapter": "south",
+   "place": "Kings Mountain",
+   "lonlat": [
+    -81.38,
+    35.14
+   ],
+   "date": "1780-10-08",
+   "holder": 0,
+   "source": {
+    "title": "Wikipedia: Battle of Kings Mountain",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Kings_Mountain"
+   }
+  },
+  {
+   "chapter": "south",
+   "place": "Cowpens",
+   "lonlat": [
+    -81.81,
+    35.14
+   ],
+   "date": "1781-01-18",
+   "holder": 0,
+   "source": {
+    "title": "Wikipedia: Battle of Cowpens",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Cowpens"
+   }
+  },
+  {
+   "chapter": "south",
+   "place": "Ninety Six",
+   "lonlat": [
+    -82.02,
+    34.15
+   ],
+   "date": "1781-06-01",
+   "holder": 1,
+   "source": {
+    "title": "Wikipedia: Siege of Ninety Six",
+    "url": "https://en.wikipedia.org/wiki/Siege_of_Ninety_Six"
+   }
+  },
+  {
+   "chapter": "south",
+   "place": "Camden",
+   "lonlat": [
+    -80.6,
+    34.25
+   ],
+   "date": "1781-06-01",
+   "holder": 0,
+   "source": {
+    "title": "Wikipedia: Southern theater of the American Revolutionary War",
+    "url": "https://en.wikipedia.org/wiki/Southern_theater_of_the_American_Revolutionary_War"
+   }
+  },
+  {
+   "chapter": "south",
+   "place": "Ninety Six",
+   "lonlat": [
+    -82.02,
+    34.15
+   ],
+   "date": "1781-08-15",
+   "holder": 0,
+   "source": {
+    "title": "Wikipedia: Southern theater of the American Revolutionary War",
+    "url": "https://en.wikipedia.org/wiki/Southern_theater_of_the_American_Revolutionary_War"
+   }
+  },
+  {
+   "chapter": "south",
+   "place": "Charleston",
+   "lonlat": [
+    -79.93,
+    32.78
+   ],
+   "date": "1781-09-15",
+   "holder": 1,
+   "source": {
+    "title": "Wikipedia: Southern theater of the American Revolutionary War",
+    "url": "https://en.wikipedia.org/wiki/Southern_theater_of_the_American_Revolutionary_War"
+   }
+  },
+  {
+   "chapter": "yorktown",
+   "place": "New York City",
+   "lonlat": [
+    -74.005,
+    40.71
+   ],
+   "date": "1781-08-20",
+   "holder": 1,
+   "source": {
+    "title": "Wikipedia: Siege of Yorktown",
+    "url": "https://en.wikipedia.org/wiki/Siege_of_Yorktown"
+   }
+  },
+  {
+   "chapter": "yorktown",
+   "place": "Yorktown",
+   "lonlat": [
+    -76.51,
+    37.235
+   ],
+   "date": "1781-08-05",
+   "holder": 1,
+   "source": {
+    "title": "Wikipedia: Siege of Yorktown",
+    "url": "https://en.wikipedia.org/wiki/Siege_of_Yorktown"
+   }
+  },
+  {
+   "chapter": "yorktown",
+   "place": "Philadelphia",
+   "lonlat": [
+    -75.15,
+    39.95
+   ],
+   "date": "1781-09-02",
+   "holder": 0,
+   "source": {
+    "title": "Wikipedia: Siege of Yorktown",
+    "url": "https://en.wikipedia.org/wiki/Siege_of_Yorktown"
+   }
+  },
+  {
+   "chapter": "yorktown",
+   "place": "Williamsburg",
+   "lonlat": [
+    -76.7,
+    37.27
+   ],
+   "date": "1781-09-27",
+   "holder": 0,
+   "source": {
+    "title": "Wikipedia: Siege of Yorktown",
+    "url": "https://en.wikipedia.org/wiki/Siege_of_Yorktown"
+   }
+  },
+  {
+   "chapter": "yorktown",
+   "place": "Yorktown",
+   "lonlat": [
+    -76.51,
+    37.235
+   ],
+   "date": "1781-10-20",
+   "holder": 0,
+   "source": {
+    "title": "Wikipedia: Siege of Yorktown",
+    "url": "https://en.wikipedia.org/wiki/Siege_of_Yorktown"
+   }
+  },
+  {
+   "chapter": "yorktown",
+   "place": "Gloucester Point",
+   "lonlat": [
+    -76.5,
+    37.255
+   ],
+   "date": "1781-10-20",
+   "holder": 0,
+   "source": {
+    "title": "Wikipedia: Siege of Yorktown",
+    "url": "https://en.wikipedia.org/wiki/Siege_of_Yorktown"
+   }
+  },
+  {
+   "chapter": "peace",
+   "place": "Savannah",
+   "lonlat": [
+    -81.09,
+    32.08
+   ],
+   "date": "1782-07-01",
+   "holder": 1,
+   "source": {
+    "title": "Wikipedia: Capture of Savannah",
+    "url": "https://en.wikipedia.org/wiki/Capture_of_Savannah"
+   }
+  },
+  {
+   "chapter": "peace",
+   "place": "Savannah",
+   "lonlat": [
+    -81.09,
+    32.08
+   ],
+   "date": "1782-07-12",
+   "holder": 0,
+   "source": {
+    "title": "Wikipedia: Capture of Savannah",
+    "url": "https://en.wikipedia.org/wiki/Capture_of_Savannah"
+   }
+  },
+  {
+   "chapter": "peace",
+   "place": "Charleston",
+   "lonlat": [
+    -79.93,
+    32.78
+   ],
+   "date": "1782-07-12",
+   "holder": 1,
+   "source": {
+    "title": "Wikipedia: American Revolutionary War",
+    "url": "https://en.wikipedia.org/wiki/American_Revolutionary_War"
+   }
+  },
+  {
+   "chapter": "peace",
+   "place": "Charleston",
+   "lonlat": [
+    -79.93,
+    32.78
+   ],
+   "date": "1782-12-15",
+   "holder": 0,
+   "source": {
+    "title": "Wikipedia: American Revolutionary War",
+    "url": "https://en.wikipedia.org/wiki/American_Revolutionary_War"
+   }
+  }
+ ],
+ "baseYears": [
+  {
+   "start": "1775-04-19",
+   "end": "1775-12-31",
+   "year": 1776,
+   "why": "the 1775 border data leaves the Thirteen Colonies blank apart from a British-coloured patch around Boston; the 1776 outline lets the Patriot-held colonies be drawn as an area"
+  },
+  {
+   "start": "1778-01-01",
+   "end": "1780-12-31",
+   "year": 1777,
+   "why": "the 1778-79 data draws the Philadelphia area British for both whole years (the British left in June 1778, and Valley Forge was the American camp), and the 1780 data draws the Georgia-South Carolina coast British from January, before Charleston fell in May"
+  }
+ ],
+ "sources": [
+  {
+   "title": "USMA Dept. of History map: Eastern North America, principal campaigns of the American Revolutionary War, 1775-1783 (Commons)",
+   "url": "https://commons.wikimedia.org/wiki/File:USMA01_Major_Campaigns_of_the_American_Revolutionary_War.jpg"
+  },
+  {
+   "title": "USMA Dept. of History map: Siege of Boston (Commons)",
+   "url": "https://commons.wikimedia.org/wiki/File:Siege_of_Boston.Dean.USMA.edu.history.gif"
+  },
+  {
+   "title": "USMA Dept. of History map: Major operations in the South, 1781 (Commons)",
+   "url": "https://commons.wikimedia.org/wiki/File:Revolutionary_War_-_Major_Operations_in_the_South_1781.Dean.USMA.edu.history.gif"
+  },
+  {
+   "title": "Wikipedia: American Revolutionary War",
+   "url": "https://en.wikipedia.org/wiki/American_Revolutionary_War"
+  },
+  {
+   "title": "Wikipedia: Battles of Lexington and Concord",
+   "url": "https://en.wikipedia.org/wiki/Battles_of_Lexington_and_Concord"
+  },
+  {
+   "title": "Wikipedia: Siege of Boston",
+   "url": "https://en.wikipedia.org/wiki/Siege_of_Boston"
+  },
+  {
+   "title": "Wikipedia: Battle of Bunker Hill",
+   "url": "https://en.wikipedia.org/wiki/Battle_of_Bunker_Hill"
+  },
+  {
+   "title": "Wikipedia: Fortification of Dorchester Heights",
+   "url": "https://en.wikipedia.org/wiki/Fortification_of_Dorchester_Heights"
+  },
+  {
+   "title": "Wikipedia: New York and New Jersey campaign",
+   "url": "https://en.wikipedia.org/wiki/New_York_and_New_Jersey_campaign"
+  },
+  {
+   "title": "Wikipedia: Battle of Long Island",
+   "url": "https://en.wikipedia.org/wiki/Battle_of_Long_Island"
+  },
+  {
+   "title": "Wikipedia: Landing at Kip's Bay",
+   "url": "https://en.wikipedia.org/wiki/Landing_at_Kip%27s_Bay"
+  },
+  {
+   "title": "Wikipedia: Battle of White Plains",
+   "url": "https://en.wikipedia.org/wiki/Battle_of_White_Plains"
+  },
+  {
+   "title": "Wikipedia: Battle of Fort Washington",
+   "url": "https://en.wikipedia.org/wiki/Battle_of_Fort_Washington"
+  },
+  {
+   "title": "Wikipedia: Battle of Trenton",
+   "url": "https://en.wikipedia.org/wiki/Battle_of_Trenton"
+  },
+  {
+   "title": "Wikipedia: Battle of Princeton",
+   "url": "https://en.wikipedia.org/wiki/Battle_of_Princeton"
+  },
+  {
+   "title": "Wikipedia: Saratoga campaign",
+   "url": "https://en.wikipedia.org/wiki/Saratoga_campaign"
+  },
+  {
+   "title": "Wikipedia: Siege of Fort Ticonderoga (1777)",
+   "url": "https://en.wikipedia.org/wiki/Siege_of_Fort_Ticonderoga_(1777)"
+  },
+  {
+   "title": "Wikipedia: Battle of Bennington",
+   "url": "https://en.wikipedia.org/wiki/Battle_of_Bennington"
+  },
+  {
+   "title": "Wikipedia: Battles of Saratoga",
+   "url": "https://en.wikipedia.org/wiki/Battles_of_Saratoga"
+  },
+  {
+   "title": "Wikipedia: Philadelphia campaign",
+   "url": "https://en.wikipedia.org/wiki/Philadelphia_campaign"
+  },
+  {
+   "title": "Wikipedia: Battle of Brandywine",
+   "url": "https://en.wikipedia.org/wiki/Battle_of_Brandywine"
+  },
+  {
+   "title": "Wikipedia: Battle of Germantown",
+   "url": "https://en.wikipedia.org/wiki/Battle_of_Germantown"
+  },
+  {
+   "title": "Wikipedia: Siege of Fort Mifflin",
+   "url": "https://en.wikipedia.org/wiki/Siege_of_Fort_Mifflin"
+  },
+  {
+   "title": "Wikipedia: Valley Forge",
+   "url": "https://en.wikipedia.org/wiki/Valley_Forge"
+  },
+  {
+   "title": "Wikipedia: Battle of Monmouth",
+   "url": "https://en.wikipedia.org/wiki/Battle_of_Monmouth"
+  },
+  {
+   "title": "Wikipedia: Capture of Savannah",
+   "url": "https://en.wikipedia.org/wiki/Capture_of_Savannah"
+  },
+  {
+   "title": "Wikipedia: Siege of Savannah (1779)",
+   "url": "https://en.wikipedia.org/wiki/Siege_of_Savannah_(1779)"
+  },
+  {
+   "title": "Wikipedia: Siege of Charleston",
+   "url": "https://en.wikipedia.org/wiki/Siege_of_Charleston"
+  },
+  {
+   "title": "Wikipedia: Battle of Camden",
+   "url": "https://en.wikipedia.org/wiki/Battle_of_Camden"
+  },
+  {
+   "title": "Wikipedia: Battle of Kings Mountain",
+   "url": "https://en.wikipedia.org/wiki/Battle_of_Kings_Mountain"
+  },
+  {
+   "title": "Wikipedia: Battle of Cowpens",
+   "url": "https://en.wikipedia.org/wiki/Battle_of_Cowpens"
+  },
+  {
+   "title": "Wikipedia: Battle of Guilford Court House",
+   "url": "https://en.wikipedia.org/wiki/Battle_of_Guilford_Court_House"
+  },
+  {
+   "title": "Wikipedia: Siege of Ninety Six",
+   "url": "https://en.wikipedia.org/wiki/Siege_of_Ninety_Six"
+  },
+  {
+   "title": "Wikipedia: Battle of Eutaw Springs",
+   "url": "https://en.wikipedia.org/wiki/Battle_of_Eutaw_Springs"
+  },
+  {
+   "title": "Wikipedia: Southern theater of the American Revolutionary War",
+   "url": "https://en.wikipedia.org/wiki/Southern_theater_of_the_American_Revolutionary_War"
+  },
+  {
+   "title": "Wikipedia: Siege of Yorktown",
+   "url": "https://en.wikipedia.org/wiki/Siege_of_Yorktown"
+  },
+  {
+   "title": "Wikipedia: Battle of the Chesapeake",
+   "url": "https://en.wikipedia.org/wiki/Battle_of_the_Chesapeake"
+  },
+  {
+   "title": "Wikipedia: Treaty of Paris (1783)",
+   "url": "https://en.wikipedia.org/wiki/Treaty_of_Paris_(1783)"
+  }
+ ]
+}
