@@ -1225,6 +1225,8 @@ async function openWar(id, idx = 0, chap = null) {
   if (S.journey) exitJourney();
   S.sel = null; S.ghost = null; S.moment = null; S.war = w; S.view = "war"; S.wIdx = Math.max(0, Math.min(w.events.length - 1, idx));
   S.cine = null; S.shotIdx = -1; S.chap = 0;
+  S.callOn = false; S.callPt = null; // drop the previous war's pinned event label
+  for (const el of [$("#cCall"), $("#cSub")]) { el.classList.remove("on"); delete el.dataset.k; }
   try { S.cine = await loadCinema(w); } catch (e) { console.warn("war layers unavailable", e); }
   if (S.war !== w) return;
   S.cineK = cineKnots(w, S.cine);
