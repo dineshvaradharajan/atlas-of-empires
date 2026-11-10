@@ -47,12 +47,9 @@ ADMIN_ISO = {"India": "IND", "China": "CHN", "Pakistan": "PAK", "Israel": "ISR",
              "U.K.": "GBR", "U.K": "GBR", "U.S.A": "USA", "France": "FRA", "Egypt": "EGY", "Sudan": "SDN", "Kenya": "KEN", "Guyana": "GUY", "Bhutan": "BTN",
              "Brazil": "BRA", "Iran": "IRN", "Japan": "JPN", "South Korea": "KOR", "Denmark": "DNK", "Venezuela": "VEN",
              "U.S.A.": "USA", "Belize": "BLZ", "Gabon": "GAB", "Eritrea": "ERI"}
-# How a claimant's own maps name the area (shown to viewers in that country)
-LOCAL = {
-    "B09": {"IND": "Pakistan-occupied Kashmir"}, "B08": {"IND": "Pakistan-occupied Kashmir (Gilgit-Baltistan)"},
-    "B07": {"IND": "Aksai Chin (occupied by China)"}, "B06": {"IND": "Shaksgam Valley (ceded to China by Pakistan)"},
-    "B45": {"IND": "Siachen Glacier"}, "B05": {"PAK": "Indian-occupied Kashmir"},
-}
+# Names follow Google Maps: neutral place names everywhere (no "occupied"); a local name only where Google shows one
+LOCAL = {"B12": {"ARG": "Islas Malvinas (Falkland Islands)"}}
+NAME_FIX = {"Shaksam Valley": "Shaksgam Valley", "Ilemi Triange": "Ilemi Triangle"}
 
 
 def claimants(note):
@@ -98,7 +95,8 @@ def main(src):
         claim = EXTRA_CLAIM.get(i, claimants(note))
         coords = simplify(f["geometry"])
         if not coords: continue
-        out.append({"id": i, "name": p["BRK_NAME"].strip("﻿ "), "note": note, "admin": admin_of(note), "claim": claim,
+        name = p["BRK_NAME"].strip("\ufeff ")
+        out.append({"id": i, "name": NAME_FIX.get(name, name), "note": note, "admin": admin_of(note), "claim": claim,
                     "since": SINCE.get(i, 1991), "until": UNTIL.get(i), "names": LOCAL.get(i, {}), "coords": coords})
     path = os.path.join(ROOT, "public", "data", "disputed.json")
     json.dump(out, open(path, "w"), ensure_ascii=False, separators=(",", ":"))

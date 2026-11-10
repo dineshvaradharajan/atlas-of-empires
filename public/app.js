@@ -989,9 +989,11 @@ function draw() {
 }
 
 // ---------------------------------------------------------------- disputed areas (data/disputed.json, tools/disputed.py)
-// Like Google Maps: everyone sees a disputed area outlined with a dashed line; a viewer in a country that claims it sees it
-// drawn that country's way, dotted and in its colour (e.g. Pakistan- and China-held parts of Kashmir for viewers in India).
+// The position of Google Maps: everyone sees a disputed area outlined with a dashed line, under its neutral place name.
+// Only in the countries where Google Maps shows a local version (GOOGLE_LOCAL) are claims drawn that country's way: dotted
+// and in its colour (e.g. Azad Kashmir, Gilgit-Baltistan and Aksai Chin for viewers in India).
 // The viewer's country comes from the browser's time zone; ?pov=IND (or ?pov=none) overrides it.
+const GOOGLE_LOCAL = new Set(["IND", "RUS", "CHN", "MAR", "ARG"]);
 const TZ_COUNTRY = {
   "Asia/Kolkata": "IND", "Asia/Calcutta": "IND", "Asia/Karachi": "PAK", "Asia/Shanghai": "CHN", "Asia/Chongqing": "CHN", "Asia/Harbin": "CHN", "Asia/Urumqi": "CHN",
   "Asia/Taipei": "TWN", "Asia/Tokyo": "JPN", "Asia/Seoul": "KOR", "Europe/Kyiv": "UKR", "Europe/Kiev": "UKR", "Europe/London": "GBR", "Europe/Madrid": "ESP",
@@ -1024,8 +1026,10 @@ const COUNTRY = { // display name and capital (to find the country's colour on t
 const cname = (iso) => COUNTRY[iso]?.[0] || iso;
 const VIEWER = (() => {
   const q = new URLSearchParams(location.search).get("pov");
-  if (q) return /^none$/i.test(q) ? null : q.toUpperCase();
-  try { return TZ_COUNTRY[Intl.DateTimeFormat().resolvedOptions().timeZone] || null; } catch { return null; }
+  let c = null;
+  if (q) c = /^none$/i.test(q) ? null : q.toUpperCase();
+  else try { c = TZ_COUNTRY[Intl.DateTimeFormat().resolvedOptions().timeZone] || null; } catch { c = null; }
+  return GOOGLE_LOCAL.has(c) ? c : null; // everywhere else: the neutral view
 })();
 const disputedNow = (y = S.year) => (S.disputed || []).filter((a) => a.since <= y && (a.until == null || y <= a.until));
 function viewerColor() { // the colour of the realm drawn at the viewer's capital this year
@@ -1062,7 +1066,7 @@ function disputedNote(a) {
   const name = (VIEWER && a.names?.[VIEWER]) || a.name;
   const held = a.admin ? `administered by ${cname(a.admin)}` : "";
   const claims = a.claim.length ? `claimed by ${a.claim.map(cname).join(" and ")}` : "";
-  return `<div class="m disp"><b>${esc(name)}</b> · disputed${held || claims ? `: ${[held, claims].filter(Boolean).join("; ")}` : ""}${mine ? `. Shown as part of ${cname(VIEWER)}, as on maps there.` : ""}</div>`;
+  return `<div class="m disp"><b>${esc(name)}</b> · disputed${held || claims ? `: ${[held, claims].filter(Boolean).join("; ")}` : ""}${mine ? `. Shown as part of ${cname(VIEWER)}, as on maps used in ${cname(VIEWER)}.` : ""}</div>`;
 }
 
 // ---------------------------------------------------------------- the end of the ice age (data/iceage.json)
