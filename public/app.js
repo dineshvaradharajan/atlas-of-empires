@@ -882,7 +882,8 @@ function setupMap() {
       canvas.classList.toggle("pointing", !S.war && !S.journey); if (S.hover !== -1) { S.hover = -1; draw(); }
       return;
     }
-    const i = pickAt(x, y), it = S.items[i];
+    let i = pickAt(x, y); const own = claimedPick(x, y); if (own >= 0) i = own; // a claim drawn as the viewer's country hovers as it
+    const it = S.items[i];
     const hv = it && it.kind === "state" ? i : -1;
     if (hv !== S.hover) { S.hover = hv; draw(); }
     const tip = $("#tooltip");
@@ -914,7 +915,7 @@ function setupMap() {
     const sh = siteAt(x, y);
     if (sh) return openSite(sh.id);
     S.clickLL = projection.invert([S.t.invertX(x), S.t.invertY(y)]); // for "who ruled this spot through history"
-    const it = S.items[pickAt(x, y)];
+    const own = claimedPick(x, y), it = S.items[own >= 0 ? own : pickAt(x, y)]; // clicks on a claim drawn as the viewer's country select that country
     if (!it || it.kind !== "state") return select(null);
     select(it.p.recon ? it.p.n : it.key);
   });
@@ -976,6 +977,7 @@ function draw() {
     for (const it of S.items) if (it.kind === "state" && (matches(it, sel) || (it.p.recon && it.p.n === sel))) strokeItem(ctx, it);
   }
   if (S.hover >= 0) { ctx.strokeStyle = theme.ink; ctx.lineWidth = 2 / t.k; strokeItem(ctx, S.items[S.hover]); }
+  drawClaims();
   ctx.restore();
   if (S.zooming || S.cinePlay || S.playing > 0) { clearTimeout(S.pickTimer); S.pickTimer = setTimeout(drawPick, 100); }
   else drawPick(); // label placement reads the pick buffer, so keep it current when at rest
@@ -989,11 +991,10 @@ function draw() {
 }
 
 // ---------------------------------------------------------------- disputed areas (data/disputed.json, tools/disputed.py)
-// The position of Google Maps: everyone sees a disputed area outlined with a dashed line, under its neutral place name.
-// Only in the countries where Google Maps shows a local version (GOOGLE_LOCAL) are claims drawn that country's way: dotted
-// and in its colour (e.g. Azad Kashmir, Gilgit-Baltistan and Aksai Chin for viewers in India).
+// What locals expect to see: a viewer in a country that claims a disputed area sees it as part of that country (its colour,
+// the line of control dotted, outer edges as ordinary borders), e.g. Azad Kashmir and Aksai Chin in India, the Falklands in
+// Argentina, Nagorno-Karabakh in Azerbaijan. Everyone else sees a dashed outline under the neutral place name.
 // The viewer's country comes from the browser's time zone; ?pov=IND (or ?pov=none) overrides it.
-const GOOGLE_LOCAL = new Set(["IND", "RUS", "CHN", "MAR", "ARG"]);
 const TZ_COUNTRY = {
   "Asia/Kolkata": "IND", "Asia/Calcutta": "IND", "Asia/Karachi": "PAK", "Asia/Shanghai": "CHN", "Asia/Chongqing": "CHN", "Asia/Harbin": "CHN", "Asia/Urumqi": "CHN",
   "Asia/Taipei": "TWN", "Asia/Tokyo": "JPN", "Asia/Seoul": "KOR", "Europe/Kyiv": "UKR", "Europe/Kiev": "UKR", "Europe/London": "GBR", "Europe/Madrid": "ESP",
@@ -1006,6 +1007,8 @@ const TZ_COUNTRY = {
   "Indian/Antananarivo": "MDG", "Indian/Comoro": "COM", "Indian/Mahe": "SYC", "Africa/Djibouti": "DJI", "Africa/Malabo": "GNQ",
   "America/Tegucigalpa": "HND", "America/Guatemala": "GTM", "Asia/Brunei": "BRN", "America/Bogota": "COL", "America/Managua": "NIC",
   "America/Jamaica": "JAM", "Europe/Dublin": "IRL", "Europe/Copenhagen": "DNK", "Atlantic/Reykjavik": "ISL", "America/Sao_Paulo": "BRA",
+  "America/Argentina/Buenos_Aires": "ARG", "America/Argentina/Cordoba": "ARG", "America/Argentina/Mendoza": "ARG", "America/Argentina/Salta": "ARG",
+  "America/Argentina/Ushuaia": "ARG", "America/Buenos_Aires": "ARG", "Asia/Yerevan": "ARM", "Europe/Athens": "GRC", "Europe/Istanbul": "TUR",
 };
 const COUNTRY = { // display name and capital (to find the country's colour on the map)
   IND: ["India", [77.2, 28.6]], PAK: ["Pakistan", [73.05, 33.7]], CHN: ["China", [116.4, 39.9]], TWN: ["Taiwan", [121.5, 25.03]], JPN: ["Japan", [139.7, 35.7]],
@@ -1022,6 +1025,7 @@ const COUNTRY = { // display name and capital (to find the country's colour on t
   NIC: ["Nicaragua", [-86.25, 12.13]], JAM: ["Jamaica", [-76.8, 18.0]], BRN: ["Brunei", [114.94, 4.9]], EGY: ["Egypt", [31.24, 30.04]], KEN: ["Kenya", [36.82, -1.29]],
   GUY: ["Guyana", [-58.16, 6.8]], BTN: ["Bhutan", [89.64, 27.47]], IRN: ["Iran", [51.39, 35.69]], BLZ: ["Belize", [-88.77, 17.25]], GAB: ["Gabon", [9.45, 0.39]], ERI: ["Eritrea", [38.93, 15.33]],
   SAH: ["the Sahrawi Republic", [-13.2, 27.15]],
+  ARM: ["Armenia", [44.51, 40.18]], GRC: ["Greece", [23.73, 37.98]], TUR: ["Turkey", [32.85, 39.93]],
 };
 const cname = (iso) => COUNTRY[iso]?.[0] || iso;
 const VIEWER = (() => {
@@ -1029,7 +1033,7 @@ const VIEWER = (() => {
   let c = null;
   if (q) c = /^none$/i.test(q) ? null : q.toUpperCase();
   else try { c = TZ_COUNTRY[Intl.DateTimeFormat().resolvedOptions().timeZone] || null; } catch { c = null; }
-  return GOOGLE_LOCAL.has(c) ? c : null; // everywhere else: the neutral view
+  return c;
 })();
 const disputedNow = (y = S.year) => (S.disputed || []).filter((a) => a.since <= y && (a.until == null || y <= a.until));
 function viewerColor() { // the colour of the realm drawn at the viewer's capital this year
@@ -1046,19 +1050,48 @@ function drawDisputed() { // inside the map transform
   if (S.war) return;
   const list = disputedNow();
   if (!list.length) return;
-  const k = S.t.k, vc = VIEWER ? viewerColor() : null;
+  const k = S.t.k;
   ctx.save(); ctx.lineJoin = "round";
   for (const a of list) {
     if (VIEWER && a.admin === VIEWER) continue; // the viewer's country holds it: drawn as an ordinary part of it
-    const p = pathOf(a.f);
-    if (VIEWER && a.claim.includes(VIEWER)) { // claimed by the viewer's country: its colour, dotted edge
-      ctx.globalAlpha = 0.72; ctx.fillStyle = vc; ctx.fill(p); ctx.globalAlpha = 1;
-      ctx.setLineDash([1.6 / k, 2.6 / k]); ctx.lineCap = "round"; ctx.strokeStyle = vc; ctx.lineWidth = 1.8 / k; ctx.stroke(p);
-    } else { // everyone else: a dashed outline
-      ctx.setLineDash([4 / k, 3 / k]); ctx.lineCap = "butt"; ctx.strokeStyle = theme.ink3; ctx.lineWidth = 0.9 / k; ctx.stroke(p);
-    }
+    if (VIEWER && a.claim.includes(VIEWER)) continue; // drawn by drawClaims, after the selection outlines
+    ctx.setLineDash([4 / k, 3 / k]); ctx.lineCap = "butt"; ctx.strokeStyle = theme.ink3; ctx.lineWidth = 0.9 / k; ctx.stroke(pathOf(a.f));
   }
   ctx.restore();
+}
+function claimedPick(x, y) { // index of the viewer's own realm when (x, y) is in an area drawn as part of it, else -1
+  if (!VIEWER || S.war || S.journey || !S.disputed) return -1;
+  const ll = projection.invert([S.t.invertX(x), S.t.invertY(y)]), a = ll && disputedAt(ll);
+  if (!a || a.admin === VIEWER || !a.claim.includes(VIEWER)) return -1;
+  return viewerIdx();
+}
+function drawClaims() { // inside the map transform, after selection/hover outlines: areas the viewer's country claims, as part of it
+  if (!VIEWER || S.war || S.journey) return;
+  const list = disputedNow().filter((a) => a.admin !== VIEWER && a.claim.includes(VIEWER));
+  if (!list.length) return;
+  const idx = viewerIdx();
+  if (idx < 0) return;
+  const own = S.items[idx], fl = fillOf(own), vc = fl === "HATCH" ? theme.highlight : fl, k = S.t.k;
+  const ownPath = new Path2D();
+  for (const it of S.items) if (it.kind === "state" && it.key === own.key) ownPath.addPath(pathOf(it.f));
+  const outside = new Path2D(); outside.rect(-1e5, -1e5, 2e5, 2e5); outside.addPath(ownPath);
+  for (const a of list) outside.addPath(pathOf(a.f)); // edges between two claimed areas are inside the country too
+  const lit = S.sel === own.key ? 1.4 : S.hover >= 0 && S.items[S.hover]?.key === own.key ? 2 : 0; // outline the whole claimed shape when selected/hovered
+  ctx.save(); ctx.lineJoin = "round";
+  ctx.fillStyle = vc;
+  for (const a of list) { const p = pathOf(a.f); ctx.fill(p); ctx.strokeStyle = vc; ctx.lineWidth = 1.2 / k; ctx.stroke(p); } // fill, and cover borders between claims
+  for (const a of list) {
+    const p = pathOf(a.f);
+    ctx.save(); ctx.clip(ownPath); ctx.strokeStyle = vc; ctx.lineWidth = 4.5 / k; ctx.stroke(p); ctx.restore(); // hide the outline along the shared edge
+    ctx.save(); ctx.clip(outside, "evenodd"); // outer edges: an ordinary border (or the selection outline)
+    ctx.strokeStyle = lit ? theme.ink : theme.border; ctx.lineWidth = 2 * (lit || 0.7) / k; ctx.stroke(p); ctx.restore(); // half of it shows (clipped)
+    ctx.save(); ctx.clip(ownPath); ctx.setLineDash([0.01 / k, 4.5 / k]); ctx.lineCap = "round"; ctx.strokeStyle = theme.ink; ctx.lineWidth = 2.6 / k; ctx.stroke(p); ctx.restore(); // the line of control: round dots
+  }
+  ctx.restore();
+}
+function viewerIdx() {
+  const cap = COUNTRY[VIEWER]?.[1];
+  return cap ? S.items.findIndex((v) => v.kind === "state" && d3.geoContains(v.f, cap)) : -1;
 }
 function disputedAt(ll) { return ll ? disputedNow().find((a) => d3.geoContains(a.f, ll)) : null; }
 function disputedNote(a) {
@@ -1232,6 +1265,7 @@ function drawGL() {
   if (S.journey) { ctx.strokeStyle = theme.ink; ctx.lineWidth = 1.4 / t.k; for (const it of S.items) if (inJourney(it)) strokeItem(ctx, it); }
   if (sel) { ctx.strokeStyle = theme.ink; ctx.lineWidth = 1.4 / t.k; for (const it of S.items) if (it.kind === "state" && (matches(it, sel) || (it.p.recon && it.p.n === sel))) strokeItem(ctx, it); }
   if (S.hover >= 0) { ctx.strokeStyle = theme.ink; ctx.lineWidth = 2 / t.k; strokeItem(ctx, S.items[S.hover]); }
+  drawClaims();
   ctx.restore();
   if (S.zooming || GL.fading() || S.cinePlay || S.playing > 0) { clearTimeout(S.pickTimer); S.pickTimer = setTimeout(drawPick, 120); } // the hit-test layer waits until the map is still
   else drawPick();
