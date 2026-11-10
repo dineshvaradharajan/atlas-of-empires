@@ -670,7 +670,7 @@ function setupMap() {
 
   S.zoom = d3.zoom().scaleExtent([1, 24]).translateExtent([[-200, -200], [10000, 10000]])
     .on("start", (ev) => { S.zooming = true; if (ev.sourceEvent?.type === "mousedown") canvas.classList.add("dragging"); })
-    .on("zoom", (ev) => { S.t = ev.transform; draw(); })
+    .on("zoom", (ev) => { S.t = ev.transform; if (!S.cinePlay) scheduleDraw(); }) // playback redraws every frame itself
     .on("end", () => { S.zooming = false; canvas.classList.remove("dragging"); draw(); });
   d3.select(canvas).call(S.zoom).on("dblclick.zoom", null);
 
@@ -727,7 +727,11 @@ function fillOf(it) { // the fill for an item; "HATCH" = peoples pattern
   if (S.war) { const sd = warSideOf(it); return sd >= 0 ? sideTint(sd) : theme.unknown; } // only the warring sides keep (soft) colour
   return colorOf(it.key);
 }
+function scheduleDraw() { // at most one redraw per screen frame, however many zoom/pan events arrive
+  if (!S.drawRaf) S.drawRaf = requestAnimationFrame(() => { S.drawRaf = 0; draw(); });
+}
 function draw() {
+  if (S.drawRaf) { cancelAnimationFrame(S.drawRaf); S.drawRaf = 0; } // a direct draw makes a pending one redundant
   if (!S.items.length || !sphere2d) return;
   if (GL) return drawGL();
   const { t } = S;
@@ -876,6 +880,8 @@ function drawLabels() {
 function drawPick() {
   if (!S.items.length) return;
   const { t } = S;
+  if (S.pickFor && S.pickFor.items === S.items && S.pickFor.k === t.k && S.pickFor.x === t.x && S.pickFor.y === t.y && S.pickFor.w === pick.width) return; // unchanged
+  S.pickFor = { items: S.items, k: t.k, x: t.x, y: t.y, w: pick.width };
   pctx.setTransform(1, 0, 0, 1, 0, 0);
   pctx.clearRect(0, 0, pick.width, pick.height);
   pctx.translate(t.x, t.y); pctx.scale(t.k, t.k);
