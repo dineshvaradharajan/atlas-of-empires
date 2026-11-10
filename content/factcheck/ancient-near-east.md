@@ -74,3 +74,58 @@ Narmer c. 3100 and the First Dynasty at Memphis/Abydos/Saqqara. Writing at Uruk 
 - CAH III.1 (1982) follows a maximal biblical picture of David and Solomon. Modern work is split, so the text is hedged rather than corrected.
 
 Items checked: 8 era chapters (-3000 to -323, Near East and Egypt content) + 8 profiles. Corrections proposed: 25. References added: 21.
+
+
+---
+
+# Ancient sites and cultures: Near East, Egypt, Nubia and North Africa (10,000 BCE – c. 500 CE)
+
+This section logs the `content/ancient/` research for region `near-east` (brief: `content/ANCIENT.md`). The era fact-check above is a separate, earlier task and was left unchanged.
+
+Files: `content/ancient/sites-near-east.json` (47 sites) and `content/ancient/cultures-near-east.json` (22 cultures).
+Validation: both files parse; ids are unique kebab-case; every ring is closed with 8–30 vertices and does not cross itself; lon/lat fall inside the region; years are in order; site summaries run 57–88 words and culture summaries 40–90 words; every site `culture` id exists. The extents were also plotted over the repo's `world_bc4000` basemap to check that they sit on land and in the right places.
+
+## Sources and method
+- Each article's raw wikitext came from `en.wikipedia.org/w/index.php?action=raw`, fetched about one request every 2 s. Every summary claim was then checked against the text, and claims the article did not support were reworded or dropped (for example the Maykop "gold canopy", an 18 m height for the Western Deffufa, Abu Simbel's sun alignment, the Ebla discovery year, and Hattusa's Kadesh-treaty tablet). The Hattusa sentence now cites the Tudhaliya IV–Kurunta bronze tablet, which the article does document.
+- Non-Wikipedia pages opened: the Hierakonpolis Expedition site ("About Hierakonpolis" and "Firsts of the First City") and the Çatalhöyük Research Project's "The Site" page. UNESCO's whc.unesco.org, Britannica and the Met all returned HTTP 403/429 to automated fetching. UNESCO status and inscription years therefore come from the infoboxes of the Wikipedia articles (Göbekli Tepe 2018, Çatalhöyük 2012, Tell es-Sultan 2023, Arslantepe 2021, the Ahwar of Southern Iraq 2016 for Ur, Uruk and Eridu, Babylon 2019, Dilmun 2019, Marib 2023, Bat 1988, Hegra 2008, Meroë 2011, Bisotun 2006, Susa 2015, Carthage 1979, Palmyra 1980, Hattusa 1986, Troy 1998, plus the 1979 Egyptian and Iranian sites).
+- Coordinates come from the articles' {{coord}} templates, or from Wikidata P625 for Raqefet Cave, Karnak and the Djoser pyramid. Approximate points: the Maykop kurgan is placed in Maykop town (44.61 N, 40.10 E), because the article has no coordinates and the mound no longer exists. Tassili n'Ajjer is plotted at the centre of the plateau, not at a single panel.
+- Images: 34 sites have an openly licensed Commons image (CC0, PD, CC BY or CC BY-SA). Each one was viewed before use. The record keeps the 800 px upload.wikimedia.org thumbnail, the file page, the author as Commons gives it, and the licence short name. No image was used for Tassili: the best candidate's photographer is unrecorded and it was copied from a third-party site.
+
+## Conventions worth knowing
+- `built` is the first construction or occupation and `until` is the end of use. For temples and tombs that end is approximate. Egyptian temples (Karnak, Luxor, Abu Simbel) and Abydos end at c. 400 CE, when the old cults closed. The Old Kingdom tombs (Djoser, Giza) end at 30 BCE, the end of pharaonic Egypt. Behistun ends at 330 BCE, the fall of the empire that carved it. These numbers keep the markers on the map; they are not precise dates.
+- `tower-of-babel` is `legendary` and has `built: null, until: null`, because a legend has no construction date. This breaks the template's "null only if still in use" rule on purpose. The integrator may want to show it at all times, or only next to Etemenanki.
+- Cultures that overlap state polygons were trimmed in time. The Uruk core extent stops at 3400 BCE, when "Sumerian City-States" begins on the map, and only the northern "Uruk expansion" area continues to 3100 BCE. The later Naqada extent ends at 3000 BCE, when "Early Dynastic Period of Egypt" begins. Kerma (2500–1500 BCE) ends before the "Kingdom of Kush" realm starts in 1000 BCE. Dilmun, Umm an-Nar and the Garamantes are not realms in `public/data/clio/index.json`, so they are drawn as cultures.
+- A few small rings (Dilmun, Tarout, the late Natufian Euphrates outlier, PPNB Cyprus, Badarian, early Kerma, early Ubaid) had extra vertices added at edge midpoints to reach the 8-point minimum. Their shapes are unchanged.
+
+## Included
+Sites, earliest first: ʿAin Mallaha, Raqefet Cave, Abu Hureyra, Tassili n'Ajjer, Jericho (tower and wall), Karahan Tepe, Göbekli Tepe, Çayönü, Nabta Playa, ʿAin Ghazal, Çatalhöyük, Jarmo, Ugarit, Tell Halaf, Eridu, Uruk (Eanna and the White Temple), Areni-1, Susa, Hierakonpolis, Arslantepe, Abydos, Ur (ziggurat and Royal Cemetery), Maykop kurgan, Troy, Ebla, Bat, Nineveh, Step Pyramid of Djoser, Giza, Kerma, Babylon, Dilmun Burial Mounds, Hattusa, Palmyra, Karnak, Etemenanki, Tower of Babel (legend), Luxor Temple, Abu Simbel, Chogha Zanbil, Carthage, Meroë, Marib Dam, Behistun, Persepolis, Petra, Hegra.
+
+Cultures: Natufian, PPNA, PPNB, Capsian, Yarmukian, Hassuna, Samarra, Halaf, Shulaveri–Shomu, Ubaid, Ghassulian, Badarian, Naqada, Maadi–Buto, Uruk, A-Group, Maykop, Kura–Araxes, Umm an-Nar (Magan), Kerma, Dilmun, Garamantes.
+
+## Left out, and why
+- Shubayqa 1 (the oldest bread, c. 14,400 years ago) has no Wikipedia article and no other source I could open, so it appears in the Natufian summary instead. Nevalı Çori (now under a reservoir) and the other Taş Tepeler sites are represented by Göbekli Tepe and Karahan Tepe. Aşıklı Höyük and Hacılar were left out to keep within the 50-site cap.
+- Tell Brak, Habuba Kabira, Mari, Kish, Nippur, Ashur and Nimrud are covered by the Uruk-expansion extent or by Babylon and Nineveh. Jerusalem, Byblos, Amarna, the Valley of the Kings, Philae, Gebel Barkal/Napata, Pasargadae, Alexandria and Leptis Magna were also cut for the cap. They are good candidates if the cap is raised.
+- Aksum belongs to the Horn of Africa (another region) and is already a realm ("Kingdom of Axum"). Mehrgarh belongs to South Asia.
+- Cultures left out: C-Group and Pan-Grave (Nubia; they overlap Kerma), the Hafit period (covered in the Bat site), Jemdet Nasr (folded into Uruk; the map shows states from 3400 BCE), Proto-Elamite (the "Elam" realm starts in 3200 BCE), Trialeti, Merimde, Faiyum A, and the Lodian/Nizzanim cultures (small, or poorly mapped).
+- Legends considered and not placed: the Garden of Eden (tradition gives no locatable site), Noah's Ark (Genesis says only "the mountains of Ararat", and the Durupınar formation is natural), and Iram of the Pillars/Ubar (the Shisr identification is itself disputed). The Hanging Gardens are handled inside the Babylon summary, which says they may never have existed because no Babylonian text mentions them.
+
+## Disputed and legendary cases
+- **Tower of Babel** (`legendary`): an origin story in Genesis 11. Because the Hebrew name Babel means Babylon, modern scholars most often link it to Etemenanki. That link is a hypothesis. A similar motif appears in the Sumerian "Enmerkar and the Lord of Aratta". No archaeological evidence exists for the tower of the story. Etemenanki itself is `written`: it is attested in Nebuchadnezzar II's inscriptions, the Esagila tablet (whose 91 m height modern scholars doubt) and Herodotus, and it was demolished on Alexander's orders in 323 BCE.
+- **Troy** (`disputed`): most scholars accept Hisarlık as Homer's Troy/Ilion and the Hittite Wilusa. Troy VIIa was destroyed c. 1180 BCE. There is no definitive evidence of a Greek attack, and how far the Iliad reflects real events is unresolved (Jablonka 2011, cited in Wikipedia).
+- **Nabta Playa** (`disputed`): the camps, cattle burials and megaliths are well dated. Wendorf and Malville proposed solstice and star alignments (a "C-line" to Sirius c. 4800 BCE). Brophy and Rosen (2005) argued for different and earlier star alignments. Malville, Schild, Wendorf et al. (2007) answered that those dates were about 1,500 years too early, and Brophy and Rosen in turn disputed the original orientation data. The astronomical reading is therefore not settled.
+- **Tassili n'Ajjer** (`disputed`): the rock art is real, but its dating is contested. The sequence used in Wikipedia (Archaic from 10,000 BCE, Round Head 7550–5050 BCE, Pastoral, Horse, Camel) follows a "long chronology". Other specialists, notably Alfred Muzzolini (cited in the article), argued for much younger dates. The site's `built: -10000` should be read as the long-chronology start.
+- **Jericho's walls and Joshua**: the Neolithic wall and tower (c. 8000 BCE) are not in doubt. For the biblical story, Sellin and Watzinger (1907–1911) first thought their walls supported it and later revised that view. Kenyon (1952–58) dated the last Bronze Age destruction to the 16th century BCE, and radiocarbon gives 1617–1530 BCE, earlier than the usual date for a conquest under Joshua. Labelled `archaeology`, with this stated in the summary and evidenceNote.
+- **Raqefet Cave**: the flower-lined graves (Nadel et al. 2013) are well accepted. Liu et al. (2018) proposed beer brewing, and Eitam (2019) argued the mortars were for flour. The site is labelled `archaeology` and the beer claim is described as debated.
+- **Abu Hureyra**: the claim that rye was cultivated about 13,000 years ago (Hillman) is presented as "possibly", because it remains debated.
+- **Carthage**: the 814 BCE founding date comes from later tradition, so the evidenceNote says so.
+- **Chogha Zanbil**: an end c. 645 BCE (Ashurbanipal) is the usual view. Some researchers prefer the late 12th century BCE.
+- **Identifications**: Magan with Oman/UAE (Umm an-Nar, Bat) and Dilmun with Bahrain are mainstream identifications, not certainties. Both are worded as "usually identified".
+
+## Date choices (where sources differ)
+- Natufian c. 13,000–9500 BCE (Wikipedia: 15,000–11,500 BP; some authors begin at 12,500 BCE).
+- Karahan Tepe c. 9750–9400 BCE, following the article's infobox. The article's lead says 10,000–9500 BCE, and the excavations, which began in 2019, are still refining the dates.
+- Hassuna is given as "early 6th millennium BCE" (6000–5500). Other syntheses put it earlier, c. 6500–6000. Samarra follows Wikipedia at 5500–4800 BCE, although Tell es-Sawwan's earliest levels are dated earlier by some.
+- Badarian 4400–4000 BCE, perhaps from 5000. Naqada 4000–3000 BCE, with the Oxford radiocarbon study (Dee et al. 2013) suggesting a start around 3800–3700. Kura–Araxes 3500–2000 BCE, with some authors starting it c. 4000. A-Group from the 4th millennium to c. 2900 BCE; the 3800 BCE start is a round figure for "4th millennium".
+- Marib Dam from the 8th century BCE, as in the article lead. The infobox's 1750–1700 BCE refers to earlier irrigation works. Its final failure was in 570 or 575 CE.
+
+Counts: 47 sites (26 written, 17 archaeology, 3 disputed, 1 legendary; 29 UNESCO; 34 with images) and 22 cultures (20 archaeology, 2 written).

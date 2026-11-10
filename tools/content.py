@@ -254,14 +254,15 @@ def main():
                 problems.append(f"site {st['id']}: bad lonlat"); continue
             if st.get("evidence") not in EVID:
                 problems.append(f"site {st['id']}: evidence must be one of {sorted(EVID)}")
-            if not isinstance(st.get("built"), int) or (st.get("until") is not None and st["until"] < st["built"]):
-                problems.append(f"site {st['id']}: built/until must be years with until >= built")
+            undated_legend = st.get("built") is None and st.get("evidence") == "legendary"  # a legend has no construction date
+            if not undated_legend and (not isinstance(st.get("built"), int) or (st.get("until") is not None and st["until"] < st["built"])):
+                problems.append(f"site {st['id']}: built/until must be years with until >= built"); continue
             img = st.get("image") or {}
             if img and not (str(img.get("image", "")).startswith("https://") and img.get("license") and str(img.get("page", "")).startswith("http")):
                 problems.append(f"site {st['id']}: image dropped (needs https image, page and licence)"); st.pop("image", None)
             check_sources(f"site {st['id']}", st)
             sites.append(st)
-    sites.sort(key=lambda x: x["built"])
+    sites.sort(key=lambda x: x["built"] if x.get("built") is not None else 10 ** 6)
     with open(os.path.join(ROOT, "public", "data", "sites.json"), "w") as fh:
         json.dump(sites, fh, ensure_ascii=False, separators=(",", ":"))
 

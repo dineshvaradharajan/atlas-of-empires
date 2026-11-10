@@ -961,7 +961,7 @@ const EVIDENCE = {
   legendary: ["Legendary · not proven", "ev-legend"],
 };
 const evidenceBadge = (ev) => { const e = EVIDENCE[ev] || EVIDENCE.archaeology; return `<span class="evb ${e[1]}">${esc(e[0])}</span>`; };
-const sitesNow = (y = S.year) => (S.sites || []).filter((st) => st.built <= y && y <= (st.until ?? S.range[1]));
+const sitesNow = (y = S.year) => (S.sites || []).filter((st) => st.built != null && st.built <= y && y <= (st.until ?? S.range[1])); // undated legends never appear on the timeline
 function culturesNow(y = S.year) { // archaeological-culture regions active this year (from the reconstruction layers)
   const seen = new Map();
   for (const sp of S.supps) if (sp.kind === "cultures") for (const rg of sp.regions) if ((rg.from ?? sp.from) <= y && y <= (rg.to ?? sp.to) && !seen.has(rg.name)) seen.set(rg.name, rg);
@@ -1037,15 +1037,16 @@ function worldHTML() {
   return h;
 }
 function siteHTML() {
-  const st = S.site, inUse = st.built <= S.year && S.year <= (st.until ?? S.range[1]);
+  const st = S.site, inUse = st.built == null || (st.built <= S.year && S.year <= (st.until ?? S.range[1]));
   let h = `<button class="back" data-act="close-site">← The world in ${plainYear(S.year)}</button>`;
   h += `<div class="kicker">${esc((st.kind || "site").replace("-", " "))} · ${esc(st.dateLabel || shortYear(st.built))}${st.unesco ? " · UNESCO World Heritage" : ""}</div><h2 class="realm">${esc(st.name)}</h2>`;
   if (st.altNames?.length) h += `<p class="note">Also: ${esc(st.altNames.join(", "))}</p>`;
   h += `<aside class="mapnote evnote">${evidenceBadge(st.evidence)}<p>${esc(st.evidenceNote || "")}</p></aside>`;
   if (st.image?.image) h += `<figure class="mfig"><img src="${esc(st.image.image)}" alt="${esc(st.image.caption || st.name)}" loading="lazy"><figcaption>${esc(st.image.caption || "")} <a href="${esc(st.image.page)}" target="_blank" rel="noopener">${esc(st.image.credit || "Wikimedia Commons")} · ${esc(st.image.license || "")}</a></figcaption></figure>`;
   if (st.summary) h += `<p class="prose">${esc(st.summary)}</p>`;
-  h += `<p class="note">In use ${esc(st.dateLabel || "")}${st.standing ? "; remains can still be seen today" : ""}.${inUse ? "" : ` <button class="linkish" data-year="${st.built}">Show it in its time</button>`}</p>`;
-  const cult = st.culture && culturesNow(st.built).concat(culturesNow((st.built + (st.until ?? st.built)) / 2)).find((rg) => rg.key === st.culture || rg.name === st.culture);
+  h += st.built == null ? `<p class="note">A story without a date or remains: it is not drawn on the timeline.</p>`
+    : `<p class="note">In use ${esc(st.dateLabel || "")}${st.standing ? "; remains can still be seen today" : ""}.${inUse ? "" : ` <button class="linkish" data-year="${st.built}">Show it in its time</button>`}</p>`;
+  const cult = st.culture && st.built != null && culturesNow(st.built).concat(culturesNow((st.built + (st.until ?? st.built)) / 2)).find((rg) => rg.key === st.culture || rg.name === st.culture);
   if (cult) h += `<p class="note">Culture: <button class="linkish" data-key="${esc(cult.name)}">${esc(cult.name)}</button></p>`;
   h += sourcesList(st.sources);
   return h;
@@ -1057,7 +1058,7 @@ function openSite(id) {
   if (S.journey) exitJourney();
   if (S.war) exitWar();
   S.sel = null; S.site = st; S.view = "site";
-  const inUse = st.built <= S.year && S.year <= (st.until ?? S.range[1]);
+  const inUse = st.built == null || (st.built <= S.year && S.year <= (st.until ?? S.range[1]));
   const after = () => { S.view = "site"; S.site = st; renderCol(true); draw(); writeHash(); flyCenter(st.lonlat, Math.max(S.t.k, 5), 900); };
   if (inUse) after(); else go(Math.max(S.range[0], st.built)).then(after);
 }
@@ -2166,7 +2167,7 @@ function setupSearch() {
   const all = Object.entries(S.clio.realms).filter(([k]) => !NOT_A_REALM.test(k)).map(([key, r]) => ({
     key, name: displayName(key), raw: clean(key), from: r.tl[0][0], to: r.tl[r.tl.length - 1][1],
     area: Math.max(...r.tl.map((x) => x[2])), emp: !!empireOf(key),
-  })).concat((S.sites || []).map((st) => ({ key: "site:" + st.id, name: st.name, raw: (st.altNames || []).join(" "), from: st.built, to: st.until ?? 2024, area: 5e5, emp: false, site: true })));
+  })).concat((S.sites || []).map((st) => ({ key: "site:" + st.id, name: st.name, raw: (st.altNames || []).join(" "), from: st.built, to: st.until ?? 2024, area: 5e5, emp: false, site: true, legend: st.built == null })));
   let active = 0, shown = [];
   const render = () => {
     const q = input.value.trim().toLowerCase();
@@ -2174,7 +2175,7 @@ function setupSearch() {
     shown = all.filter((e) => e.name.toLowerCase().includes(q) || e.raw.toLowerCase().includes(q))
       .sort((a, b) => (b.name.toLowerCase().startsWith(q) - a.name.toLowerCase().startsWith(q)) || (b.emp - a.emp) || (b.area - a.area)).slice(0, 14);
     active = 0;
-    list.innerHTML = shown.length ? shown.map((e, i) => `<li data-k="${esc(e.key)}" class="${i ? "" : "active"}"><span>${e.site ? "▲ " : ""}${esc(e.name)}${e.name !== e.raw && e.raw ? ` <small>(${esc(e.raw)})</small>` : ""}</span><small>${shortYear(e.from)} – ${e.to >= 2024 ? "today" : shortYear(e.to)}</small></li>`).join("")
+    list.innerHTML = shown.length ? shown.map((e, i) => `<li data-k="${esc(e.key)}" class="${i ? "" : "active"}"><span>${e.site ? "▲ " : ""}${esc(e.name)}${e.name !== e.raw && e.raw ? ` <small>(${esc(e.raw)})</small>` : ""}</span><small>${e.legend ? "legend · not proven" : `${shortYear(e.from)} – ${e.to >= 2024 ? "today" : shortYear(e.to)}`}</small></li>`).join("")
       : `<li><span>No match</span></li>`;
     list.hidden = false;
   };
