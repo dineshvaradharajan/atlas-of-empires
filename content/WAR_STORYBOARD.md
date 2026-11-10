@@ -16,6 +16,11 @@ if the dev server is up. Lessons from its review (apply them):
   polity entirely). Correct it with **occupation areas** (side = who held it), which are drawn only on enemy or
   neutral states; add an area for each side where needed (WWI has "Allied-held ground behind the Western Front").
 - `baseYears` can show another year's borders for a date range (WWI: 1917 borders until Brest-Litovsk).
+- **One continuous area per side per region, no carved gaps.** Never draw each army's zone as a separate area with
+  enemy ground showing between them, and never notch an area so an arrowhead or battle sits outside it (an arrow
+  may end inside enemy ground). A hole or gap is allowed only where a place really held out (a besieged fortress, a
+  city that never fell); back it with a sourced claim inside it on that date. The checker's **pockets** rule fails
+  unexplained enemy ground over 2,500 km² inside or between one side's areas and warns from 600 km².
 
 ## Your file: `content/cinema/<war-id>.json` (war ids and sides: content/wars/*.json; side index = order of `sides`)
 ```json
@@ -44,7 +49,7 @@ if the dev server is up. Lessons from its review (apply them):
 
 ## Tools (repo root, `python3 -I`)
 - `tools/cinema/validate.py content/cinema/<war-id>.json`: structure (dates, order, shapes).
-- `tools/cinema/check_history.py <war-id>`: claims vs map, arrowheads vs fronts, chapters show change, keyframe gaps,
+- `tools/cinema/check_history.py <war-id>`: claims vs map, arrowheads vs fronts, chapters show change, keyframe gaps, pockets (stray enemy ground inside or between one side's areas),
   fronts vs occupied areas. **Done = 0 errors and every claim green**; explain any warning you leave.
 - `tools/cinema/render_frames.py <war-id> <scratch-dir>`: each chapter at start/middle/end with a lon/lat grid;
   open the PNGs with Read and compare with reference maps. Look at every chapter.
