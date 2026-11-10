@@ -405,3 +405,24 @@ ol.chaps li.now button { font-weight: 700; color: var(--highlight); }
 .mlist .mt .evb { margin-left: 6px; }
 .sw.site { width: 0; height: 0; border-left: 6px solid transparent; border-right: 6px solid transparent; border-bottom: 10px solid var(--ink); background: none; }
 #chart .nochart { margin: 24px 0 0; max-width: 720px; font-size: 13px; line-height: 1.5; color: var(--ink-3); }
+
+/* list timelines in the bottom section (Wars, Empires, Moments) */
+#chart .lchart { position: relative; height: 130px; cursor: pointer; }
+#chart .lbar { position: absolute; display: inline-flex; align-items: center; gap: 4px; padding: 0; border: 0; background: none; white-space: nowrap; cursor: pointer; font: 600 11px var(--sans); color: var(--ink-2); }
+#chart .lchart.empires .lbar { font-size: 10.5px; font-weight: 500; }
+#chart .lbar i { display: block; height: 100%; min-width: 3px; background: var(--other-1); }
+#chart .lchart.empires .lbar i { background: var(--other-3); }
+#chart .lbar.hot i { background: var(--highlight); }
+#chart .lbar:hover i { background: var(--ink); }
+#chart .lbar:hover span { color: var(--ink); text-decoration: underline; }
+#chart .lmk { position: absolute; width: 10px; height: 10px; margin-left: -5px; padding: 0; border: 1.5px solid var(--bg); background: var(--ink-2); transform: rotate(45deg); cursor: pointer; }
+#chart .lmk:hover { background: var(--highlight); z-index: 3; }
+#chart .lmk .tipm { display: none; position: absolute; left: 50%; bottom: 10px; transform: rotate(-45deg); transform-origin: left bottom; white-space: nowrap; background: var(--ink); color: var(--bg); font: 600 11px var(--sans); padding: 3px 7px; pointer-events: none; }
+#chart .lmk:hover .tipm { display: block; }
+#chart .lcur { position: absolute; top: 0; bottom: 0; width: 0; border-left: 2px solid var(--ink); pointer-events: none; opacity: .5; }
+#chart:has(.lchart) .legend { left: auto; right: 4px; }
+#chart .lbar.flip { flex-direction: row-reverse; }
+#chart .lbar.in { display: block; background: var(--other-1); border-right: 1px solid var(--bg); overflow: hidden; text-overflow: ellipsis; padding: 0 4px; font: 500 10px/11px var(--sans); text-align: left; color: var(--ink-2); }
+#chart .lbar.in:nth-child(odd) { background: var(--other-3); }
+#chart .lbar.in:hover { background: var(--ink); }
+#chart .lbar.in:hover span { color: var(--bg); text-decoration: none; }
