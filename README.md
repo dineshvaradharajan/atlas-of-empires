@@ -1,6 +1,6 @@
 # Atlas of Empires
 
-An interactive world map from **3400 BCE to 2024 CE**. Drag the timeline to any year and see who ruled
+An interactive world map from **10,000 BCE to 2024 CE**, live at https://www.worldatlas.site. Drag the timeline to any year and see who ruled
 what, how far each empire reached, and what was happening in every region of the world.
 
 - **Any year, accurate borders.** State borders come from Cliopatria (Seshat Global History Databank),
@@ -40,7 +40,21 @@ Raw sources live in `data/` (`data/geo/` holds historical-basemaps, `data/clio/`
 | State borders | [Cliopatria](https://github.com/Seshat-Global-History-Databank/cliopatria), Seshat Global History Databank. Paper: *Scientific Data* (2025), [doi:10.1038/s41597-025-04516-9](https://doi.org/10.1038/s41597-025-04516-9). Geometry simplified for the web. | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) |
 | Peoples & other polities layer | [historical-basemaps](https://github.com/aourednik/historical-basemaps), A. Ourednik | GPL-3.0 |
 | Reference maps | [Wikimedia Commons](https://commons.wikimedia.org/). Each image is credited with its author and licence in the app. | Per file (CC BY-SA, CC BY, PD, …) |
-| Narrative text | Written for this project. Structure follows the 12 regional rows of the SenseForMaps decade-by-decade timeline. | — |
+| Narrative text | Written for this project. Structure follows the 12 regional rows of the SenseForMaps decade-by-decade timeline. | MIT |
+| Rivers, lakes, sea names, disputed areas | [Natural Earth](https://www.naturalearthdata.com/) 1:50m and 1:10m | Public domain |
+| Terrain shading, ice-age coastline | [NOAA ETOPO5](https://www.ngdc.noaa.gov/mgg/global/relief/ETOPO5/TOPO/ETOPO5/) | Public domain |
+| Ice-age sea level | Lambeck et al. 2014, *PNAS* 111:15296, [doi:10.1073/pnas.1411762111](https://doi.org/10.1073/pnas.1411762111) | (cited; values digitised) |
+| Ice sheets | NADI-1, Dalton et al. 2023 ([Zenodo](https://zenodo.org/records/8161764)); DATED-1, Hughes et al. 2016 ([PANGAEA](https://doi.pangaea.de/10.1594/PANGAEA.848117)) | CC BY 4.0 / CC BY 3.0 |
+| Empire pictures, ruler portraits, period photos | Wikimedia Commons, Library of Congress, US National Archives, UN Archives, Internet Archive; each credited in the app | Per item |
+| Libraries and fonts | D3.js, earcut (ISC); Archivo, Inter (SIL OFL) | as stated |
 
 All historical borders are scholarly approximations. Polities that existed but are absent from both
 datasets can't be drawn. Please report errors to Cliopatria directly so that every user of the dataset benefits.
+
+## Inspiration
+
+The idea for this atlas came from [Bharat Rajya](https://www.bharatrajya.com/), an interactive map of the kingdoms of Indian history.
+
+## Licence
+
+The code and the atlas's own writing are released under the [MIT licence](LICENSE). Datasets and images keep their own licences (table above, and the About page at `#about`).

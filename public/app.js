@@ -96,14 +96,16 @@ function mediaHTML(key) {
   if (!items?.length) return "";
   const ok = (u) => /^https:\/\//i.test(u || "");
   return `<div class="media">${items.filter((m) => ok(m.image)).map((m) => `<figure class="mfig ${m.type === "newspaper" ? "news" : "photo"}">
-      <a href="${esc(m.page)}" target="_blank" rel="noopener"><img src="${esc(m.image)}" alt="${esc(m.caption || m.publication || "")}" loading="lazy"></a>
+      <a href="${safeUrl(m.page)}" target="_blank" rel="noopener"><img src="${safeUrl(m.image)}" alt="${esc(m.caption || m.publication || "")}" loading="lazy"></a>
       <figcaption>${m.type === "newspaper" ? `<b>${esc(m.publication || "Newspaper")}${m.date ? `, ${esc(m.date)}` : ""}</b> · ` : ""}${esc(m.caption || "")}
       <span class="muted"> ${esc(m.credit || "")}${m.license ? ` · ${esc(m.license)}` : ""}</span></figcaption></figure>`).join("")}</div>`;
 }
+// Every link built from data goes through here: only http(s) addresses, escaped (a "javascript:" link would run code).
+const safeUrl = (u) => (/^https?:\/\//i.test(String(u || "")) ? esc(u) : "#");
 function sourcesList(list, title = "Sources") {
   const ok = (list || []).filter((x) => x && /^https?:\/\//i.test(x.url || ""));
   if (!ok.length) return "";
-  return `<h3 class="sec">${title}</h3><ol class="refs">${ok.map((x) => `<li><a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title || x.url)}</a></li>`).join("")}</ol>`;
+  return `<h3 class="sec">${title}</h3><ol class="refs">${ok.map((x) => `<li><a href="${safeUrl(x.url)}" target="_blank" rel="noopener">${esc(x.title || x.url)}</a></li>`).join("")}</ol>`;
 }
 const vivid = () => (theme.dark ? VIVID_DARK : VIVID_LIGHT);
 const RECON_COLORS = ["#C0662F", "#2F7D6D", "#7A5FB0", "#A67C00", "#5E8FC4", "#B5487A", "#3B6E3B", "#8C4A2F"];
@@ -413,7 +415,7 @@ function parseHash() {
   if (wm) return { year: null, key: null, war: wm[1], wev: wm[3] != null && !wm[2] ? +wm[3] : 0, chap: wm[2] ? Math.max(0, +wm[3] - 1) : null };
   const je = raw.match(/^e\/([^/]+)(?:\/(-?\d+))?$/);
   if (je) return { year: je[2] != null ? +je[2] : null, key: null, journey: je[1] };
-  if (LISTS.has(raw)) return { year: null, key: null, list: raw };
+  if (LISTS.has(raw) || raw === "about") return { year: null, key: null, list: raw === "about" ? "sources" : raw };
   const m = raw.match(/^(-?\d+)(?:\/(.+))?$/);
   return m ? { year: +m[1], key: m[2] || null } : { year: null, key: null, bad: !!raw };
 }
@@ -494,7 +496,7 @@ async function applyHash(h, first = false) {
 function writeHash() { if (!S.hashQueued) { S.hashQueued = true; queueMicrotask(commitHash); } }
 function commitHash() {
   S.hashQueued = false;
-  const h = LISTS.has(S.view) && !S.war && !S.journey ? `#${S.view}` : S.view === "place" && S.place ? `#p/${S.place.ll[0].toFixed(2)},${S.place.ll[1].toFixed(2)}` : S.view === "site" && S.site ? `#s/${encodeURIComponent(S.site.id)}` : S.war ? `#w/${encodeURIComponent(S.war.id)}/${story() ? "c" + (S.chap + 1) : S.wIdx}` : S.journey ? `#e/${encodeURIComponent(S.journey.id)}/${S.year}` : S.view === "moment" && S.moment ? `#m/${encodeURIComponent(S.moment.id)}` : `#${S.year}${S.sel ? "/" + encodeURIComponent(S.sel) : ""}`;
+  const h = LISTS.has(S.view) && !S.war && !S.journey ? `#${S.view === "sources" ? "about" : S.view}` : S.view === "place" && S.place ? `#p/${S.place.ll[0].toFixed(2)},${S.place.ll[1].toFixed(2)}` : S.view === "site" && S.site ? `#s/${encodeURIComponent(S.site.id)}` : S.war ? `#w/${encodeURIComponent(S.war.id)}/${story() ? "c" + (S.chap + 1) : S.wIdx}` : S.journey ? `#e/${encodeURIComponent(S.journey.id)}/${S.year}` : S.view === "moment" && S.moment ? `#m/${encodeURIComponent(S.moment.id)}` : `#${S.year}${S.sel ? "/" + encodeURIComponent(S.sel) : ""}`;
   const home = !S.war && !S.journey && !S.sel && S.year === HOME_YEAR && (S.view === "world" || S.view === "realm"); // the home page has a bare URL
   const url = home ? location.pathname + location.search : h, now = location.hash;
   if (decodeURIComponent(now) === decodeURIComponent(home ? "" : h)) return;
@@ -506,7 +508,7 @@ function commitHash() {
 // Opening a war, empire journey, moment or site from one of the lists remembers that list; leaving returns to it.
 const LISTS = new Set(["wars", "empires", "moments", "sources"]);
 const DRILLS = new Set(["war", "journey", "moment", "site", "place"]);
-const BACK = { wars: "← All wars", empires: "← All empires", moments: "← All defining moments", sources: "← Sources" };
+const BACK = { wars: "← All wars", empires: "← All empires", moments: "← All defining moments", sources: "← About" };
 function noteFrom() { if (LISTS.has(S.view)) S.from = S.view; else if (!DRILLS.has(S.view)) S.from = null; }
 function backLabel(dflt) { return S.from ? BACK[S.from] : dflt; }
 function goBack() { // after leaving a drill-down: show the list it was opened from, if any
@@ -1624,7 +1626,7 @@ function siteHTML() {
   h += `<div class="kicker">${esc((st.kind || "site").replace("-", " "))} · ${esc(st.dateLabel || shortYear(st.built))}${st.unesco ? " · UNESCO World Heritage" : ""}</div><h2 class="realm">${esc(st.name)}</h2>`;
   if (st.altNames?.length) h += `<p class="note">Also: ${esc(st.altNames.join(", "))}</p>`;
   h += `<aside class="mapnote evnote">${evidenceBadge(st.evidence)}<p>${esc(st.evidenceNote || "")}</p></aside>`;
-  if (st.image?.image) h += `<figure class="mfig"><img src="${esc(st.image.image)}" alt="${esc(st.image.caption || st.name)}" loading="lazy"><figcaption>${esc(st.image.caption || "")} <a href="${esc(st.image.page)}" target="_blank" rel="noopener">${esc(st.image.credit || "Wikimedia Commons")} · ${esc(st.image.license || "")}</a></figcaption></figure>`;
+  if (st.image?.image) h += `<figure class="mfig"><img src="${safeUrl(st.image.image)}" alt="${esc(st.image.caption || st.name)}" loading="lazy"><figcaption>${esc(st.image.caption || "")} <a href="${safeUrl(st.image.page)}" target="_blank" rel="noopener">${esc(st.image.credit || "Wikimedia Commons")} · ${esc(st.image.license || "")}</a></figcaption></figure>`;
   if (st.summary) h += `<p class="prose">${esc(st.summary)}</p>`;
   const tooOld = st.built != null && (st.until ?? st.built) < S.range[0];
   h += st.built == null ? `<p class="note">A story without a date or remains: it is not drawn on the timeline.</p>`
@@ -1658,7 +1660,7 @@ function realmHTML() {
   let h = `<button class="back" data-act="close">← The world in ${plainYear(y)}</button>`;
   h += `<div class="kicker">${r.group ? "Empire" : "Realm"} · ${span}</div><h2 class="realm">${esc(displayName(key))}</h2>`;
   const lead = emp && S.media[`empire:${emp.id}`]?.[0];
-  if (lead && !r.recon) h += `<figure class="lead"><img src="${esc(lead.image)}" alt="${esc(lead.caption)}" loading="lazy"><figcaption>${esc(lead.caption)} <a href="${esc(lead.page)}" target="_blank" rel="noopener">${esc(lead.credit)} · ${esc(lead.license)}</a></figcaption></figure>`;
+  if (lead && !r.recon) h += `<figure class="lead"><img src="${safeUrl(lead.image)}" alt="${esc(lead.caption)}" loading="lazy"><figcaption>${esc(lead.caption)} <a href="${safeUrl(lead.page)}" target="_blank" rel="noopener">${esc(lead.credit)} · ${esc(lead.license)}</a></figcaption></figure>`;
   if (r.recon) {
     const { sp, rg } = r.recon;
     if (sp.kind === "cultures") { // an archaeological culture: say how it is known
@@ -1697,8 +1699,8 @@ function realmHTML() {
     h += `<h3 class="sec">Reference map${ry != null ? ` · c. ${shortYear(ry)}` : ""}</h3>`;
     if (ry != null && Math.abs(ry - y) > 10) h += `<p class="refyear">This reference shows the realm around <b>${plainYear(ry)}</b>; the map above is showing <b>${plainYear(y)}</b>, so borders will differ. <button class="linkish" data-year="${ry}">Show ${plainYear(ry)} on the map</button></p>`;
     else if (ry != null) h += `<p class="refyear">Same period as the map.</p>`;
-    h += `<figure class="ref"><a href="${esc(media.page)}" target="_blank" rel="noopener"><img src="${esc(media.thumb)}" alt="${esc(media.desc || media.file)}" loading="lazy"></a>
-      <figcaption>${esc(media.desc || media.file.replace(/^File:/, ""))}<br>${esc(media.artist || "Unknown author")} · ${media.licenseUrl ? `<a href="${esc(media.licenseUrl)}" target="_blank" rel="noopener">${esc(media.license)}</a>` : esc(media.license)} · <a href="${esc(media.page)}" target="_blank" rel="noopener">Wikimedia Commons</a></figcaption></figure>`;
+    h += `<figure class="ref"><a href="${safeUrl(media.page)}" target="_blank" rel="noopener"><img src="${safeUrl(media.thumb)}" alt="${esc(media.desc || media.file)}" loading="lazy"></a>
+      <figcaption>${esc(media.desc || media.file.replace(/^File:/, ""))}<br>${esc(media.artist || "Unknown author")} · ${media.licenseUrl ? `<a href="${safeUrl(media.licenseUrl)}" target="_blank" rel="noopener">${esc(media.license)}</a>` : esc(media.license)} · <a href="${safeUrl(media.page)}" target="_blank" rel="noopener">Wikimedia Commons</a></figcaption></figure>`;
   }
   if (emp?.rulers?.length) {
     const pic = (i, x) => { const m = S.media[`ruler:${emp.id}:${i}`]?.[0]; return m && m.caption.startsWith(x.name) ? m : null; }; // index-keyed: the name must still match
@@ -1707,11 +1709,11 @@ function realmHTML() {
     h += `<h3 class="sec">Notable rulers</h3><ul class="rlist${any ? " withpic" : ""}">`;
     emp.rulers.forEach((x, i) => {
       const m = pics[i];
-      const img = !any ? "" : m ? `<a class="pp" href="${esc(m.page)}" target="_blank" rel="noopener" title="${esc(m.article)} · ${esc(m.credit)} · ${esc(m.license)}"><img src="${esc(m.image)}" alt="${esc(x.name)}" loading="lazy"></a>` : `<span class="pp none" aria-hidden="true">${esc(x.name.trim()[0] || "")}</span>`;
+      const img = !any ? "" : m ? `<a class="pp" href="${safeUrl(m.page)}" target="_blank" rel="noopener" title="${esc(m.article)} · ${esc(m.credit)} · ${esc(m.license)}"><img src="${safeUrl(m.image)}" alt="${esc(x.name)}" loading="lazy"></a>` : `<span class="pp none" aria-hidden="true">${esc(x.name.trim()[0] || "")}</span>`;
       h += `<li>${img}<b>${esc(x.name)}</b><span class="r">${esc(x.reign || "")}</span>${x.note ? `<span class="n">${esc(x.note)}</span>` : ""}</li>`;
     });
     h += `</ul>`;
-    if (any) h += `<details class="more credits"><summary>Portrait credits</summary><p class="note">${pics.map((m, i) => m && `${esc(emp.rulers[i].name)}: <a href="${esc(m.page)}" target="_blank" rel="noopener">${esc(m.credit)}</a> (${esc(m.license)})`).filter(Boolean).join(" · ")}</p></details>`;
+    if (any) h += `<details class="more credits"><summary>Portrait credits</summary><p class="note">${pics.map((m, i) => m && `${esc(emp.rulers[i].name)}: <a href="${safeUrl(m.page)}" target="_blank" rel="noopener">${esc(m.credit)}</a> (${esc(m.license)})`).filter(Boolean).join(" · ")}</p></details>`;
   }
   if (emp?.legacy) h += `<h3 class="sec">Legacy</h3><p class="prose">${esc(emp.legacy)}</p>`;
   if (now.length > 1 || (now.length === 1 && now[0].properties.n !== key)) {
@@ -1722,7 +1724,7 @@ function realmHTML() {
   }
   const mc = corrOf(key) || (now[0] && corrOf(now[0].properties.fixed || now[0].properties.n));
   if (mc && (mc.note || mc.scholarly)) {
-    h += `<details class="more mapacc"><summary>How accurate is this map?</summary><aside class="mapnote">${mc.note ? `<p>${esc(mc.note)}</p>` : ""}${mc.scholarly ? `<p>Scholarly peak estimate: <strong>${mkm(mc.scholarly.km2)}M km²</strong>${mc.scholarly.year != null ? ` c. ${shortYear(mc.scholarly.year)}` : ""} (${esc(mc.scholarly.source)}), against ${mkm(peak[2])}M km² drawn on this map.</p>` : ""}${(mc.sources || []).filter((x) => /^https?:\/\//.test(x.url)).length ? `<p class="msrc">${mc.sources.filter((x) => /^https?:\/\//.test(x.url)).map((x) => `<a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a>`).join(" · ")}</p>` : ""}</aside></details>`;
+    h += `<details class="more mapacc"><summary>How accurate is this map?</summary><aside class="mapnote">${mc.note ? `<p>${esc(mc.note)}</p>` : ""}${mc.scholarly ? `<p>Scholarly peak estimate: <strong>${mkm(mc.scholarly.km2)}M km²</strong>${mc.scholarly.year != null ? ` c. ${shortYear(mc.scholarly.year)}` : ""} (${esc(mc.scholarly.source)}), against ${mkm(peak[2])}M km² drawn on this map.</p>` : ""}${(mc.sources || []).filter((x) => /^https?:\/\//.test(x.url)).length ? `<p class="msrc">${mc.sources.filter((x) => /^https?:\/\//.test(x.url)).map((x) => `<a href="${safeUrl(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a>`).join(" · ")}</p>` : ""}</aside></details>`;
   }
   const links = [r.wiki && `<a href="https://en.wikipedia.org/wiki/${encodeURIComponent(r.wiki.replace(/ /g, "_"))}" target="_blank" rel="noopener">Wikipedia</a>`,
     r.wd && `<a href="https://www.wikidata.org/wiki/${esc(r.wd)}" target="_blank" rel="noopener">Wikidata</a>`,
@@ -1767,17 +1769,56 @@ function extentChart(r) {
     <text x="0" y="${H - 3}">${shortYear(f0)}</text><text x="${W}" y="${H - 3}" text-anchor="end">${t1 >= 2024 ? "today" : shortYear(t1)}</text>
     <text x="2" y="11">${mkm(max)}M km²</text></svg>`;
 }
-function sourcesHTML() {
+function sourcesHTML() { // the About page (#about; #sources still opens it)
+  const L = (url, text) => `<a href="${safeUrl(url)}" target="_blank" rel="noopener">${text}</a>`;
+  const n = (x) => x.toLocaleString("en");
+  const leads = Object.keys(S.media || {}).filter((k) => k.startsWith("empire:")).length;
+  const media = Object.keys(S.media || {}).filter((k) => !k.startsWith("empire:")).length;
+  const sitePics = (S.sites || []).filter((x) => x.image?.image).length;
   return `<button class="back" data-act="world">← Back to the map</button>
-    <div class="kicker">About this atlas</div><h2 class="realm">Sources</h2>
-    <p class="prose">Borders are scholarly approximations. Each layer comes from an open dataset:</p>
+    <div class="kicker">About</div><h2 class="realm">Atlas of Empires</h2>
+    <p class="prose">An interactive map of world history from 10,000 BCE to today: who ruled what in any year, how far every empire reached, the wars that redrew the map and the moments that changed it, with the sources behind each one.</p>
+    <aside class="mapnote about-insp"><b>Inspiration</b><p>The idea for this atlas came from ${L("https://www.bharatrajya.com/", "Bharat Rajya")}, an interactive map of the kingdoms of Indian history. Thank you for showing what a history map can be.</p></aside>
+
+    <h3 class="sec">Licence</h3>
+    <p class="note">The atlas's code and its own writing are released under the ${L("https://github.com/dineshvaradharajan/atlas-of-empires/blob/main/LICENSE", "MIT licence")}. The datasets and images below keep their own licences, credited here and wherever they appear.</p>
+
+    <h3 class="sec">Borders and map data</h3>
     <ol class="sources-list">
-      <li><b>State borders</b>: <a href="https://github.com/Seshat-Global-History-Databank/cliopatria" target="_blank" rel="noopener">Cliopatria</a>, Seshat Global History Databank (<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>; <a href="https://doi.org/10.1038/s41597-025-04516-9" target="_blank" rel="noopener">Scientific Data, 2025</a>). Simplified for the web.</li>
-      <li><b>Peoples &amp; other polities</b> (hatched): <a href="https://github.com/aourednik/historical-basemaps" target="_blank" rel="noopener">historical-basemaps</a> by A. Ourednik (GPL-3.0).</li>
-      <li><b>Reference maps</b>: <a href="https://commons.wikimedia.org/" target="_blank" rel="noopener">Wikimedia Commons</a>, each credited with its author and licence.</li>
-      <li><b>Narrative chapters and empire profiles</b>: written for this atlas, then fact-checked against Britannica-tier references, Wikipedia (cited statements only), Taagepera and Turchin for areas, and regional authorities such as Schwartzberg, Majumdar, the Imperial Gazetteer, the <i>Cambridge Ancient History</i> and UNESCO's <i>General History of Africa</i>. Each chapter and realm lists its sources.</li>
-      <li><b>Map corrections</b>: ${Object.keys(S.corr.realms).length} realms carry reviewed fixes or notes where the border data contradicts scholarship (relabelled, trimmed or annotated). Look for "Map note" on a realm.</li>
+      <li><b>State borders</b>: ${L("https://github.com/Seshat-Global-History-Databank/cliopatria", "Cliopatria")}, Seshat Global History Databank (${L("https://creativecommons.org/licenses/by/4.0/", "CC BY 4.0")}); paper in <i>Scientific Data</i> (2025), ${L("https://doi.org/10.1038/s41597-025-04516-9", "doi:10.1038/s41597-025-04516-9")}. Simplified for the web.</li>
+      <li><b>Peoples and other polities</b> (hatched layer): ${L("https://github.com/aourednik/historical-basemaps", "historical-basemaps")} by André Ourednik (GPL-3.0).</li>
+      <li><b>Map corrections</b>: ${n(Object.keys(S.corr.realms).length)} realms carry reviewed fixes or notes where the border data contradicts scholarship, each with its sources ("How accurate is this map?" on a realm).</li>
+      <li><b>Reconstruction layers</b> (e.g. Sangam-age Tamilakam) and <b>archaeological cultures and ancient sites</b>: compiled for this atlas from the publications cited on each page.</li>
+      <li><b>Rivers, lakes and sea names</b>: ${L("https://www.naturalearthdata.com/", "Natural Earth")} 1:50m (public domain).</li>
+      <li><b>Disputed areas</b>: Natural Earth 1:10m admin-0 disputed areas (public domain), shown the way local maps show them.</li>
+      <li><b>Terrain shading and the ice-age coastline</b>: ${L("https://www.ngdc.noaa.gov/mgg/global/relief/ETOPO5/TOPO/ETOPO5/", "NOAA ETOPO5")} world elevation grid (public domain).</li>
+      <li><b>Ice-age sea level</b>: Lambeck, Rouby, Purcell, Sun &amp; Sambridge 2014, “Sea level and global ice volumes from the Last Glacial Maximum to the Holocene”, <i>PNAS</i> 111:15296 (${L("https://doi.org/10.1073/pnas.1411762111", "doi:10.1073/pnas.1411762111")}).</li>
+      <li><b>Ice sheets</b>: NADI-1, Dalton et al. 2023, <i>Quaternary Science Reviews</i> 321:108345 (${L("https://zenodo.org/records/8161764", "data, CC BY 4.0")}); DATED-1, Hughes et al. 2016, <i>Boreas</i> 45:1–45 (${L("https://doi.pangaea.de/10.1594/PANGAEA.848117", "data, CC BY 3.0")}); Stroeven et al. 2016 for Scandinavia's last ice; present-day Greenland ice from Natural Earth.</li>
+      <li><b>War storyboards</b>: front lines, occupied areas and battles traced for this atlas from campaign maps (West Point atlases and Wikimedia Commons maps) and cited statements; each war lists its sources.</li>
     </ol>
+
+    <h3 class="sec">Pictures</h3>
+    <ol class="sources-list">
+      <li><b>Wikimedia Commons</b>: ${n(Object.keys(S.commons || {}).length)} reference maps, ${n(leads)} empire pictures and ${n(sitePics)} site photos, each credited with its author and licence where it appears (CC BY, CC BY-SA, CC0 or public domain).</li>
+      <li><b>Period photos and newspapers</b> (${n(media)} moments and events): Wikimedia Commons, the Library of Congress (Chronicling America), the US National Archives, UN Archives and the Internet Archive, each credited where shown.</li>
+      <li><b>Ruler portraits</b>: lead images of Wikipedia articles, matched through Wikidata, freely licensed on Wikimedia Commons and credited per portrait.</li>
+    </ol>
+
+    <h3 class="sec">Facts and writing</h3>
+    <ol class="sources-list">
+      <li>Chapters, empire profiles, moments, wars and journeys are written for this atlas and fact-checked against ${L("https://en.wikipedia.org/", "Wikipedia")} (cited statements only), ${L("https://www.wikidata.org/", "Wikidata")}, ${L("https://seshat-db.com/", "Seshat")}, Britannica-level references, museum and university pages, Taagepera and Turchin for empire areas, and regional authorities such as Schwartzberg, Majumdar, the Imperial Gazetteer and the <i>Cambridge Ancient History</i>. Every page lists its own sources.</li>
+      <li>The twelve world regions follow the rows of the SenseForMaps decade-by-decade timeline poster.</li>
+    </ol>
+
+    <h3 class="sec">Software and fonts</h3>
+    <ol class="sources-list">
+      <li>${L("https://d3js.org/", "D3.js")} by Mike Bostock (ISC) and ${L("https://github.com/mapbox/earcut", "earcut")} by Mapbox (ISC).</li>
+      <li>${L("https://fonts.google.com/specimen/Archivo", "Archivo")} (Omnibus-Type) and ${L("https://rsms.me/inter/", "Inter")} (Rasmus Andersson), both SIL Open Font License, via Google Fonts.</li>
+      <li>Data prepared with Python and ${L("https://ffmpeg.org/", "FFmpeg")}; hosted on Cloudflare Pages. Built with the help of Claude (Anthropic).</li>
+    </ol>
+
+    <h3 class="sec">Corrections</h3>
+    <p class="note">Borders are scholarly approximations. Spotted an error? Open an issue on ${L("https://github.com/dineshvaradharajan/atlas-of-empires", "GitHub")}; border errors are best reported to Cliopatria too, so every user of the dataset benefits.</p>
     <p class="note">Keyboard: ← → move 10 years (Shift: 1 year) · [ ] previous/next chapter · Space play · Esc clear.</p>`;
 }
 
