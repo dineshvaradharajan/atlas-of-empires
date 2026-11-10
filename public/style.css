@@ -388,3 +388,20 @@ ol.chaps button { display: flex; gap: 10px; width: 100%; text-align: left; paddi
 ol.chaps button span { width: 76px; flex: none; color: var(--ink-3); font-size: 12px; }
 ol.chaps li.now button { font-weight: 700; color: var(--highlight); }
 .mnav { flex-wrap: wrap; gap: 8px; } .mnav .mstep.primary { max-width: none; }
+/* before the first states: no-records chip, evidence badges, site panel */
+#noRecords { position: absolute; left: 20px; top: 16px; padding: 6px 10px; background: var(--bg); border: 1px solid var(--rule); font: 500 12px/1.3 var(--sans); color: var(--ink-2); box-shadow: var(--shadow); }
+#noRecords b { color: var(--highlight); font-weight: 700; }
+.evb { display: inline-block; padding: 1px 7px; border-radius: 10px; font: 700 10px/1.6 var(--sans); letter-spacing: .04em; text-transform: uppercase; vertical-align: middle; white-space: nowrap; }
+.ev-written { background: #dfeee3; color: #1d6b3a; }
+.ev-arch { background: #ecebe4; color: #55534a; }
+.ev-disputed { background: #fbecd2; color: #8a5a00; }
+.ev-legend { background: #f8dcd6; color: #9b2c1a; }
+[data-theme="dark"] .ev-written { background: #1f3a29; color: #9fd9b2; }
+[data-theme="dark"] .ev-arch { background: #2c2c28; color: #c9c7bd; }
+[data-theme="dark"] .ev-disputed { background: #3d3018; color: #f0c674; }
+[data-theme="dark"] .ev-legend { background: #43221c; color: #f2a493; }
+.mapnote.evnote .evb { margin-bottom: 6px; }
+.mapnote.norecords { border-left-color: var(--highlight); }
+.mlist .mt .evb { margin-left: 6px; }
+.sw.site { width: 0; height: 0; border-left: 6px solid transparent; border-right: 6px solid transparent; border-bottom: 10px solid var(--ink); background: none; }
+#chart .nochart { margin: 24px 0 0; max-width: 720px; font-size: 13px; line-height: 1.5; color: var(--ink-3); }

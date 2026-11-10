@@ -212,8 +212,58 @@ def main():
         sup["regions"] = ok
         check_sources(f"supplement {sup.get('id')}", sup)
         supplements.append(sup)
+    # Archaeological cultures (content/ancient/cultures-*.json) become one reconstruction layer of kind "cultures":
+    # approximate regions with an evidence label, drawn dashed and clipped to land like other reconstructions.
+    EVID = {"written", "archaeology", "disputed", "legendary"}
+    regions, cids = [], set()
+    for p in sorted(glob.glob(os.path.join(ROOT, "content", "ancient", "cultures-*.json"))):
+        for cu in json.load(open(p)):
+            if cu.get("id") in cids:
+                problems.append(f"culture id duplicated: {cu.get('id')}"); continue
+            cids.add(cu["id"])
+            if cu.get("evidence") not in EVID:
+                problems.append(f"culture {cu['id']}: evidence must be one of {sorted(EVID)}")
+            if not cu.get("sources"):
+                problems.append(f"culture {cu['id']}: no sources")
+            for ex in cu.get("extents", []):
+                ring = ex.get("coords") or []
+                if len(ring) < 4 or any(not (-180 <= q[0] <= 180 and -90 <= q[1] <= 90) for q in ring):
+                    problems.append(f"culture {cu['id']}: bad extent ring"); continue
+                if ring[0] != ring[-1]:
+                    ring = ring + [ring[0]]
+                regions.append({"name": cu["name"], "key": cu["id"], "from": ex.get("from", cu["from"]), "to": ex.get("to", cu["to"]), "coords": ring,
+                                "evidence": cu.get("evidence"), "evidenceNote": cu.get("evidenceNote"), "dateLabel": cu.get("dateLabel"),
+                                "summary": cu.get("summary"), "sources": cu.get("sources", []), "note": cu.get("evidenceNote")})
+    if regions:
+        supplements.append({"id": "ancient-cultures", "kind": "cultures", "title": "Archaeological cultures",
+                            "from": min(r["from"] for r in regions), "to": max(r["to"] for r in regions), "replaces": [],
+                            "summary": "Approximate areas of archaeological cultures, drawn from where their sites and artefacts have been found. Most left no writing.",
+                            "regions": regions, "sources": []})
     with open(os.path.join(ROOT, "public", "data", "supplements.json"), "w") as fh:
         json.dump(supplements, fh, ensure_ascii=False, separators=(",", ":"))
+
+    # Ancient sites and monuments (content/ancient/sites-*.json): points shown while in use, with an evidence label.
+    sites, sids = [], set()
+    for p in sorted(glob.glob(os.path.join(ROOT, "content", "ancient", "sites-*.json"))):
+        for st in json.load(open(p)):
+            if st.get("id") in sids:
+                problems.append(f"site id duplicated: {st.get('id')}"); continue
+            sids.add(st["id"])
+            ll = st.get("lonlat") or []
+            if len(ll) != 2 or not (-180 <= ll[0] <= 180 and -90 <= ll[1] <= 90):
+                problems.append(f"site {st['id']}: bad lonlat"); continue
+            if st.get("evidence") not in EVID:
+                problems.append(f"site {st['id']}: evidence must be one of {sorted(EVID)}")
+            if not isinstance(st.get("built"), int) or (st.get("until") is not None and st["until"] < st["built"]):
+                problems.append(f"site {st['id']}: built/until must be years with until >= built")
+            img = st.get("image") or {}
+            if img and not (str(img.get("image", "")).startswith("https://") and img.get("license") and str(img.get("page", "")).startswith("http")):
+                problems.append(f"site {st['id']}: image dropped (needs https image, page and licence)"); st.pop("image", None)
+            check_sources(f"site {st['id']}", st)
+            sites.append(st)
+    sites.sort(key=lambda x: x["built"])
+    with open(os.path.join(ROOT, "public", "data", "sites.json"), "w") as fh:
+        json.dump(sites, fh, ensure_ascii=False, separators=(",", ":"))
 
     # Empire journeys (content/journeys/*.json): validate chains against Cliopatria and include.
     journeys, jids = [], set()

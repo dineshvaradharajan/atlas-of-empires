@@ -1899,6 +1899,57 @@
       "rename": {
         "Kingdom of Brazil": "Republic of Brazil"
       }
+    },
+    "-10000": {
+      "hide": [
+        "Okhotsk culture",
+        "Austronesians"
+      ],
+      "why": "The Okhotsk culture dates to c. 500–1000 CE and the Austronesian expansion from Taiwan began c. 3000 BCE; neither belongs to 10,000 BCE."
+    },
+    "-8000": {
+      "hide": [
+        "Bantu",
+        "Okhotsk culture",
+        "Austronesians"
+      ],
+      "why": "The Bantu expansion began c. 1500 BCE (the label covered most of Africa in 8000 BCE); Okhotsk and Austronesian labels are millennia too early."
+    },
+    "-5000": {
+      "hide": [
+        "Bantu",
+        "Hurrian Kingdoms",
+        "Elam",
+        "Dravidians",
+        "Ainu",
+        "Norte Chico",
+        "Funnel-Beaker",
+        "Naquada I",
+        "Ghassul",
+        "Austronesians"
+      ],
+      "why": "Anachronisms for c. 5500–4500 BCE: Hurrians are attested from c. 2300 BCE, Elam from c. 3200 BCE, the Ainu culture from c. 1200 CE, Norte Chico from c. 3500 BCE, Funnelbeaker from c. 4300 BCE, Naqada I from c. 4000 BCE, Ghassulian from c. 4400 BCE; 'Dravidians' and 'Bantu' are language labels, not dated cultures."
+    },
+    "-4000": {
+      "hide": [
+        "Bantu",
+        "Ur",
+        "Egypt",
+        "Elam",
+        "Hurrian Kingdoms",
+        "Dravidians",
+        "Ainu",
+        "Semites",
+        "Indus valley civilization",
+        "Kerma",
+        "Minoan",
+        "Cycladic",
+        "Austronesians"
+      ],
+      "rename": {
+        "city-states": "Uruk-period towns"
+      },
+      "why": "For c. 4500–3500 BCE: Egypt unified c. 3100 BCE, Proto-Elamite c. 3200 BCE, Mature Harappan c. 2600 BCE, Kerma c. 2500 BCE, Minoan and Cycladic c. 3200–3100 BCE; Ur was not yet a state; 'Semites', 'Dravidians' and 'Bantu' are language labels. The archaeological cultures layer shows what is known for these centuries."
     }
   }
 }
