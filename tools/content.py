@@ -322,10 +322,15 @@ def main():
         if wid not in by_id:
             problems.append(f"cinema {os.path.basename(p)}: unknown war {wid!r}"); continue
         bad = []
+        def fy(d):  # fractional year, BCE-safe (string order is wrong for negative years)
+            m = re.match(r"^(-?)(\d{1,4})(?:-(\d{2}))?(?:-(\d{2}))?$", str(d))
+            if not m: return 0.0
+            y = int(m.group(2)) * (-1 if m.group(1) else 1)
+            return y + ((int(m.group(3) or 1) - 1) * 30.4375 + (int(m.group(4) or 1) - 1)) / 365.25
         for grp in ("fronts", "occupations"):
             for x in c.get(grp, []):
                 ks = x.get("keys", [])
-                if [k["date"] for k in ks] != sorted(k["date"] for k in ks):
+                if [fy(k["date"]) for k in ks] != sorted(fy(k["date"]) for k in ks):
                     bad.append(f"{grp} {x.get('name')}: keyframes not in date order")
                 for k in ks:
                     if not iso.match(str(k.get("date", ""))):
@@ -334,7 +339,7 @@ def main():
                     if len(pts) < 2 or any(not (-180 <= q[0] <= 180 and -90 <= q[1] <= 90) for q in pts):
                         bad.append(f"{grp} {x.get('name')} {k.get('date')}: bad coordinates")
         for a in c.get("arrows", []):
-            if len(a.get("path", [])) < 2 or str(a.get("start")) > str(a.get("end")):
+            if len(a.get("path", [])) < 2 or fy(a.get("start")) > fy(a.get("end")):
                 bad.append(f"arrow {a.get('name')}: bad path or dates")
         problems += [f"cinema {wid}: {b}" for b in bad]
         check_sources(f"cinema {wid}", c)

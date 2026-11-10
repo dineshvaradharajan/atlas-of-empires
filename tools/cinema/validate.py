@@ -16,7 +16,7 @@ BOX={'Western':(1.5,47,8,52),'Eastern':(17,47,41,60),'Italian':(10,45,14,47.2),'
      'Mesopotamian':(42,30,48.5,36),'Caucasus':(38.5,37.5,46,42)}
 def inbox(pts,b): return all(b[0]<=x<=b[2] and b[1]<=y<=b[3] for x,y in pts)
 for f in D.get('fronts', []):
-    b=(-6,28,50,62)
+    b=(-180,-60,180,80)
     ks=f['keys']; ds=[k['date'] for k in ks]
     if [geo.frac(x) for x in ds]!=sorted(geo.frac(x) for x in ds) or len(set(ds))!=len(ds): err.append('keys not ascending '+f['name'])
     if not 2<=len(ks)<=120: err.append('key count '+f['name'])
@@ -28,19 +28,19 @@ for f in D.get('fronts', []):
     print(f"front {f['name']}: {len(ks)} keys, points/line {n}")
 for o in D.get('occupations', []):
     ks=o['keys']; ds=[k['date'] for k in ks]
-    if o['side'] not in (0,1): err.append('side '+o['name'])
+    if o['side'] not in (0,1,2,3): err.append('side '+o['name'])
     if [geo.frac(x) for x in ds]!=sorted(geo.frac(x) for x in ds): err.append('occ not ascending '+o['name'])
     if not 1<=len(ks)<=120: err.append('occ key count '+o['name'])
     for k in ks:
         chkdate(k['date'],o['name']); c=k['coords']
         if not 4<=len(c)<=600: err.append(f"ring len {len(c)} {o['name']}")
-        if not inbox(c,(-5,28,50,61)): err.append('occ coords '+o['name'])
+        if not inbox(c,(-180,-60,180,80)): err.append('occ coords '+o['name'])
     print(f"occ side {o['side']} {o['name']}: {len(ks)} keys")
 for a in D.get('arrows', []):
     chkdate(a['start'],a['name']); chkdate(a['end'],a['name'])
     if geo.frac(a['start'])>geo.frac(a['end']): err.append('arrow order '+a['name'])
     if not 2<=len(a['path'])<=40: err.append('arrow len '+a['name'])
-    if a['side'] not in (0,1): err.append('arrow side')
+    if a['side'] not in (0,1,2,3): err.append('arrow side')
 for b in D.get('battles', []):
     chkdate(b['start'],b['name']); chkdate(b['end'],b['name'])
     if geo.frac(b['start'])>geo.frac(b['end']): err.append('battle order '+b['name'])

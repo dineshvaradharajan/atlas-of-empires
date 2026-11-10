@@ -1409,29 +1409,37 @@ function occPattern(c) {
 }
 function drawOccupations() { // inside the map transform: occupied land takes the occupier's tint (fine stripes mark it as occupied)
   const C = S.cine; if (!S.war || !C || !C.occupations.length) return;
-  const t = S.wt, k = S.t.k;
-  // occupied ground is only ever enemy (or neutral) ground: clip each side's areas to states not on that side
-  const notOwn = new Map(), clipFor = (side) => {
-    if (!notOwn.has(side)) { const p = new Path2D(); for (const it of S.items) if (it.kind === "state" && warSideOf(it) !== side) p.addPath(pathOf(it.f)); notOwn.set(side, p); }
-    return notOwn.get(side);
-  };
-  ctx.save(); ctx.clip(S.landClip);
-  for (const o of C.occupations) {
-    const s = trackAt(o, t, S.cineK.t1); if (!s) continue;
-    ctx.save(); ctx.clip(clipFor(o.side ?? 1));
-    const side = o.side ?? 1, path = new Path2D(), mk = (pts) => { const q = new Path2D(); pts.forEach((p, i) => { const [x, y] = projection(p); i ? q.lineTo(x, y) : q.moveTo(x, y); }); q.closePath(); return q; };
-    s.pts.forEach((p, i) => { const [x, y] = projection(p); i ? path.lineTo(x, y) : path.moveTo(x, y); });
-    path.closePath();
-    const chx = story() ? S.cine.chapters[S.chap] : null, ch = chx && s.pts.some((q) => inBox(q, chx.bbox)) ? chx : null, s0 = ch ? trackAt(o, ch.t0, S.cineK.t1) : null;
-    if (ch) { // new ground in the occupier's full colour, ground already held at the chapter's start in its tint
-      ctx.globalAlpha = 0.62 * s.a; ctx.fillStyle = SIDE_COLORS[side % SIDE_COLORS.length]; ctx.fill(path);
-      if (s0) { ctx.save(); ctx.clip(path); ctx.globalAlpha = s.a; ctx.fillStyle = sideTint(side); ctx.fill(mk(s0.pts)); ctx.restore(); }
-    } else { ctx.globalAlpha = s.a; ctx.fillStyle = sideTint(side); ctx.fill(path); }
-    const pat = occPattern(SIDE_COLORS[side % SIDE_COLORS.length]); pat.setTransform(new DOMMatrix().scale(1 / k));
-    ctx.globalAlpha = 0.35 * s.a; ctx.fillStyle = pat; ctx.fill(path);
-    ctx.restore();
+  const t = S.wt, k = S.t.k, M = ctx.getTransform();
+  // Occupied ground is anyone's land but the occupier's own (enemy, neutral or unrecorded): draw each side's areas
+  // on an offscreen layer, erase that side's own states from it, then lay it on the map clipped to land.
+  const L = S.occLayer || (S.occLayer = document.createElement("canvas"));
+  if (L.width !== canvas.width || L.height !== canvas.height) { L.width = canvas.width; L.height = canvas.height; }
+  const lc = L.getContext("2d");
+  const ring = (pts) => { const q = new Path2D(); pts.forEach((p, i) => { const [x, y] = projection(p); i ? q.lineTo(x, y) : q.moveTo(x, y); }); q.closePath(); return q; };
+  const sides = [...new Set(C.occupations.map((o) => o.side ?? 1))];
+  for (const side of sides) {
+    lc.setTransform(1, 0, 0, 1, 0, 0); lc.clearRect(0, 0, L.width, L.height); lc.setTransform(M);
+    let any = false;
+    for (const o of C.occupations) {
+      if ((o.side ?? 1) !== side) continue;
+      const s = trackAt(o, t, S.cineK.t1); if (!s) continue;
+      any = true;
+      const path = ring(s.pts);
+      const chx = story() ? S.cine.chapters[S.chap] : null, ch = chx && s.pts.some((q) => inBox(q, chx.bbox)) ? chx : null, s0 = ch ? trackAt(o, ch.t0, S.cineK.t1) : null;
+      if (ch) { // new ground in the occupier's full colour, ground already held at the chapter's start in its tint
+        lc.globalAlpha = 0.62 * s.a; lc.fillStyle = SIDE_COLORS[side % SIDE_COLORS.length]; lc.fill(path);
+        if (s0) { lc.save(); lc.clip(path); lc.globalAlpha = s.a; lc.fillStyle = sideTint(side); lc.fill(ring(s0.pts)); lc.restore(); }
+      } else { lc.globalAlpha = s.a; lc.fillStyle = sideTint(side); lc.fill(path); }
+      const pat = occPattern(SIDE_COLORS[side % SIDE_COLORS.length]); pat.setTransform(new DOMMatrix().scale(1 / k));
+      lc.globalAlpha = 0.35 * s.a; lc.fillStyle = pat; lc.fill(path);
+    }
+    if (!any) continue;
+    lc.globalAlpha = 1; lc.globalCompositeOperation = "destination-out"; lc.fillStyle = "#000";
+    for (const it of S.items) if (it.kind === "state" && warSideOf(it) === side) lc.fill(pathOf(it.f));
+    lc.globalCompositeOperation = "source-over";
+    ctx.save(); ctx.clip(S.landClip); ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.drawImage(L, 0, 0); ctx.restore();
   }
-  ctx.restore(); ctx.globalAlpha = 1;
+  ctx.globalAlpha = 1;
 }
 const scr = (ll) => { const [x, y] = projection(ll); return [S.t.applyX(x), S.t.applyY(y)]; };
 function polyLine(pts) { ctx.beginPath(); pts.forEach((p, i) => (i ? ctx.lineTo(p[0], p[1]) : ctx.moveTo(p[0], p[1]))); }
@@ -1538,7 +1546,9 @@ function chapterForTime(t) { // the chapter covering t, else the nearest one by 
 }
 const MON3 = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 function chapRange(c, short) {
-  const [y0, m0] = c.start.split("-").map(Number), [y1, m1] = c.end.split("-").map(Number);
+  const ym = (d) => { const m = String(d).match(/^(-?\d+)(?:-(\d{2}))?/); return [+m[1], m[2] ? +m[2] : 1]; }; // BCE dates start with "-"
+  const [y0, m0] = ym(c.start), [y1, m1] = ym(c.end);
+  if (y0 < 0 || y1 < 0) { const by = (y) => `${Math.abs(y)}${y < 0 ? " BCE" : ""}`; return y0 === y1 ? (m0 === m1 ? `${MON3[m0 - 1]} ${by(y0)}` : `${MON3[m0 - 1]}–${MON3[m1 - 1]} ${by(y0)}`) : short ? `${by(y0)}–${by(y1)}` : `${MON3[m0 - 1]} ${by(y0)} – ${MON3[m1 - 1]} ${by(y1)}`; }
   if (y0 === y1) return m0 === m1 ? `${MON3[m0 - 1]} ${y0}` : `${MON3[m0 - 1]}–${MON3[m1 - 1]} ${y0}`;
   return short ? `${y0}–${String(y1).slice(2)}` : `${MON3[m0 - 1]} ${y0} – ${MON3[m1 - 1]} ${y1}`;
 }
