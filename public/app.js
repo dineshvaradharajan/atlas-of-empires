@@ -1,4 +1,4 @@
-/* Atlas of Empires — interactive historical world map, 3400 BCE – 2024 CE.
+/* The World Atlas — interactive historical world map, 10,000 BCE – 2024 CE.
    State borders: Cliopatria, Seshat Global History Databank (CC BY 4.0).
    Peoples & cultures layer: historical-basemaps by A. Ourednik (GPL-3.0).
    Reference maps: Wikimedia Commons (per-file licences, credited in the panel). */
@@ -1776,7 +1776,7 @@ function sourcesHTML() { // the About page (#about; #sources still opens it)
   const media = Object.keys(S.media || {}).filter((k) => !k.startsWith("empire:")).length;
   const sitePics = (S.sites || []).filter((x) => x.image?.image).length;
   return `<button class="back" data-act="world">← Back to the map</button>
-    <div class="kicker">About</div><h2 class="realm">Atlas of Empires</h2>
+    <div class="kicker">About</div><h2 class="realm">The World Atlas</h2>
     <p class="prose">An interactive map of world history from 10,000 BCE to today: who ruled what in any year, how far every empire reached, the wars that redrew the map and the moments that changed it, with the sources behind each one.</p>
     <aside class="mapnote about-insp"><b>Inspiration</b><p>The idea for this atlas came from ${L("https://www.bharatrajya.com/", "Bharat Rajya")}, an interactive map of the kingdoms of Indian history. Thank you for showing what a history map can be.</p></aside>
 

@@ -1,4 +1,4 @@
-# Atlas of Empires
+# The World Atlas
 
 An interactive world map from **10,000 BCE to 2024 CE**, live at https://www.worldatlas.site. Drag the timeline to any year and see who ruled
 what, how far each empire reached, and what was happening in every region of the world.
