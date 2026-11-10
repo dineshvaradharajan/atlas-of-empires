@@ -2432,10 +2432,13 @@ function setupUI() {
       if (act.dataset.act === "wars") { if (S.war) exitWar(); S.view = "wars"; return renderCol(true); }
       if (act.dataset.act === "empires") { if (S.journey) exitJourney(); S.view = "empires"; return renderCol(true); }
       if (act.dataset.act === "moments") { S.view = "moments"; S.moment = null; draw(); writeHash(); return renderCol(true); }
-      const wasDrill = DRILLS.has(S.view);
-      S.view = "world"; S.moment = null; draw(); updateChartCursor(); writeHash();
-      if (wasDrill && goBack()) return;
-      S.from = null; return renderCol(true);
+      if (act.dataset.act === "world") { // "← Back to the map" (or to the list this was opened from)
+        const wasDrill = DRILLS.has(S.view);
+        S.view = "world"; S.moment = null; draw(); updateChartCursor(); writeHash();
+        if (wasDrill && goBack()) return;
+        S.from = null; return renderCol(true);
+      }
+      // other actions (play-chapter, close-site, …) are handled below
     }
     const mo = ev.target.closest("[data-moment]");
     if (mo) return openMoment(mo.dataset.moment);
