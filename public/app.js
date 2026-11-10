@@ -145,6 +145,7 @@ function readTheme() {
   theme = { ocean: v("--ocean"), grat: v("--grat"), unknown: v("--unknown"), peoplesBg: v("--peoples-bg"), peoplesLine: v("--peoples-line"),
     other1: v("--other-1"), other2: v("--other-2"), other3: v("--other-3"), border: v("--border"), highlight: v("--highlight"),
     ink: v("--ink"), ink3: v("--ink-3"), bg: v("--bg"), labelSoft: v("--label-soft"), rule: v("--rule"),
+    water: v("--water"), waterLabel: v("--water-label"),
     dark: dt === "dark" };
   const c = document.createElement("canvas"); c.width = c.height = 6;
   const x = c.getContext("2d"); x.fillStyle = theme.peoplesBg; x.fillRect(0, 0, 6, 6);
@@ -183,6 +184,7 @@ async function init() {
   S.media = await fetchJSON("data/media.json").catch(() => ({}));
   S.clio = clio; S.range = [Math.min(EARLIEST, clio.range[0]), clio.range[1]]; S.baseYears = base.years; S.commons = commons;
   S.sites = await fetchJSON("data/sites.json").catch(() => []);
+  fetchJSON("data/physical.json").then(preparePhysical).then(() => draw()).catch(() => {}); // rivers, lakes, sea names: drawn once loaded
   if (corr) { S.corr = { realms: corr.realms || {}, base: corr.base || {} }; correctTimelines(); }
   S.supps = prepareSupplements(supps);
   if (content) {
@@ -398,6 +400,8 @@ function parseHash() {
   const raw = decodeURIComponent(location.hash.slice(1));
   const mm = raw.match(/^m\/(.+)$/);
   if (mm) return { year: null, key: null, moment: mm[1] };
+  const pm = raw.match(/^p\/(-?[\d.]+),(-?[\d.]+)$/);
+  if (pm) return { year: null, key: null, place: [+pm[1], +pm[2]] };
   const sm = raw.match(/^s\/(.+)$/);
   if (sm) return { year: null, key: null, site: sm[1] };
   const wm = raw.match(/^w\/([^/]+)(?:\/(c?)(\d+))?$/);
@@ -434,6 +438,9 @@ async function applyHash(h, first = false) {
   } else if (h.moment) {
     if (!momentById(h.moment)) brokenLink("a moment");
     else { if (S.moment?.id !== h.moment || S.view !== "moment") await openMoment(h.moment); return; }
+  } else if (h.place) {
+    if (first) await go(HOME_YEAR);
+    return openPlace(h.place);
   } else if (h.bad) brokenLink("a page");
   if (h.list) {
     leaveDrill(); S.from = null; S.sel = null; S.view = h.list;
@@ -454,7 +461,7 @@ async function applyHash(h, first = false) {
 function writeHash() { if (!S.hashQueued) { S.hashQueued = true; queueMicrotask(commitHash); } }
 function commitHash() {
   S.hashQueued = false;
-  const h = LISTS.has(S.view) && !S.war && !S.journey ? `#${S.view}` : S.view === "site" && S.site ? `#s/${encodeURIComponent(S.site.id)}` : S.war ? `#w/${encodeURIComponent(S.war.id)}/${story() ? "c" + (S.chap + 1) : S.wIdx}` : S.journey ? `#e/${encodeURIComponent(S.journey.id)}/${S.year}` : S.view === "moment" && S.moment ? `#m/${encodeURIComponent(S.moment.id)}` : `#${S.year}${S.sel ? "/" + encodeURIComponent(S.sel) : ""}`;
+  const h = LISTS.has(S.view) && !S.war && !S.journey ? `#${S.view}` : S.view === "place" && S.place ? `#p/${S.place.ll[0].toFixed(2)},${S.place.ll[1].toFixed(2)}` : S.view === "site" && S.site ? `#s/${encodeURIComponent(S.site.id)}` : S.war ? `#w/${encodeURIComponent(S.war.id)}/${story() ? "c" + (S.chap + 1) : S.wIdx}` : S.journey ? `#e/${encodeURIComponent(S.journey.id)}/${S.year}` : S.view === "moment" && S.moment ? `#m/${encodeURIComponent(S.moment.id)}` : `#${S.year}${S.sel ? "/" + encodeURIComponent(S.sel) : ""}`;
   const home = !S.war && !S.journey && !S.sel && S.year === HOME_YEAR && (S.view === "world" || S.view === "realm"); // the home page has a bare URL
   const url = home ? location.pathname + location.search : h, now = location.hash;
   if (decodeURIComponent(now) === decodeURIComponent(home ? "" : h)) return;
@@ -465,7 +472,7 @@ function commitHash() {
 // ---------------------------------------------------------------- back navigation
 // Opening a war, empire journey, moment or site from one of the lists remembers that list; leaving returns to it.
 const LISTS = new Set(["wars", "empires", "moments", "sources"]);
-const DRILLS = new Set(["war", "journey", "moment", "site"]);
+const DRILLS = new Set(["war", "journey", "moment", "site", "place"]);
 const BACK = { wars: "← All wars", empires: "← All empires", moments: "← All defining moments", sources: "← Sources" };
 function noteFrom() { if (LISTS.has(S.view)) S.from = S.view; else if (!DRILLS.has(S.view)) S.from = null; }
 function backLabel(dflt) { return S.from ? BACK[S.from] : dflt; }
@@ -600,9 +607,13 @@ const GL = (() => {
   const FADE = 260;
   function setItems(items) {
     if (cur && cur.items === items) return;
-    // a new year arriving mid-fade fades from whichever layer is mostly on screen (no jump to a half-faded layer)
-    const e = prev ? (performance.now() - fadeT0) / FADE : 1;
-    if (prev && e < 0.5) freeLayer(cur); else { freeLayer(prev); prev = cur; }
+    // During playback (the timeline or an empire journey) years arrive faster than a cross-fade can finish, and fading
+    // each one in made the map pulse; consecutive years differ little, so playback swaps layers instantly.
+    if (S.playing > 0) { freeLayer(prev); freeLayer(cur); prev = null; }
+    else { // a new year arriving mid-fade fades from whichever layer is mostly on screen (no jump to a half-faded layer)
+      const e = prev ? (performance.now() - fadeT0) / FADE : 1;
+      if (prev && e < 0.5) freeLayer(cur); else { freeLayer(prev); prev = cur; }
+    }
     cur = makeLayer(items); fadeT0 = performance.now();
     freeLayer(landLayer); landLayer = null;
   }
@@ -751,6 +762,15 @@ function setupMap() {
   const local = (ev) => { const r = canvas.getBoundingClientRect(); return [ev.clientX - r.left, ev.clientY - r.top]; };
   canvas.addEventListener("mousemove", (ev) => {
     const [x, y] = local(ev);
+    const lp = pinAt(x, y);
+    if (listOnMap()) {
+      const tip = $("#tooltip");
+      if (lp) { tip.innerHTML = `<b>${esc(lp.name)}</b><div class="m">${esc(lp.when)}${lp.place ? " · " + esc(lp.place) : ""}</div>`; tip.hidden = false; tip.style.left = Math.min(x, S.width - 300) + "px"; tip.style.top = y + "px"; }
+      else tip.hidden = true;
+      canvas.classList.toggle("pointing", !!lp);
+      if ((lp?.id || null) !== (S.listHot || null)) { S.listHot = lp?.id || null; draw(); }
+      return;
+    }
     const sh = siteAt(x, y);
     if (sh) {
       const tip = $("#tooltip");
@@ -785,8 +805,10 @@ function setupMap() {
   canvas.addEventListener("click", (ev) => {
     if (S.war || S.journey) return; // a war replay or empire journey keeps the screen: the map only shows hover details
     const [x, y] = local(ev);
+    if (listOnMap()) { const lp = pinAt(x, y); if (lp) { S.listHot = null; return lp.open(); } return; } // the map shows the list: only its pins are clickable
     const sh = siteAt(x, y);
     if (sh) return openSite(sh.id);
+    S.clickLL = projection.invert([S.t.invertX(x), S.t.invertY(y)]); // for "who ruled this spot through history"
     const it = S.items[pickAt(x, y)];
     if (!it || it.kind !== "state") return select(null);
     select(it.p.recon ? it.p.n : it.key);
@@ -832,6 +854,7 @@ function draw() {
     ctx.save(); ctx.clip(S.landClip); ctx.setLineDash([3 / t.k, 2.5 / t.k]); ctx.strokeStyle = theme.ink3; ctx.stroke(pathOf(it.f)); ctx.restore();
     ctx.strokeStyle = theme.border;
   }
+  drawWater();
   drawOccupations();
 
   if (S.showGhost && S.ghost && sel === S.ghost.key && S.ghost.year !== S.year) {
@@ -850,12 +873,96 @@ function draw() {
   if (S.zooming || S.cinePlay || S.playing > 0) { clearTimeout(S.pickTimer); S.pickTimer = setTimeout(drawPick, 100); }
   else drawPick(); // label placement reads the pick buffer, so keep it current when at rest
   if (S.labels) drawLabels();
+  drawWaterLabels();
   drawCinema();
   drawAncientSites();
   drawSites();
+  drawListPins();
   drawMomentPin();
 }
 
+// ---------------------------------------------------------------- rivers, lakes and seas (Natural Earth, data/physical.json)
+// Rivers and lakes sit on top of the territory fills (so the Nile and the Indus stay visible under any empire); bigger
+// rivers appear first and smaller ones as you zoom in. Sea and ocean names are drawn in the water, river names along them.
+function preparePhysical(ph) {
+  const feat = (type, coordinates, props) => ({ type: "Feature", geometry: { type, coordinates }, properties: props });
+  S.phys = {
+    rivers: ph.rivers.map((r) => feat("MultiLineString", r.c, { n: r.n, r: r.r })),
+    lakes: ph.lakes.map((l) => feat("MultiPolygon", l.c, { n: l.n, r: l.r })),
+    seas: ph.seas,
+  };
+  // where to write each big river's name: the middle of its longest stretch
+  const byName = new Map();
+  for (const f of S.phys.rivers) {
+    const { n, r } = f.properties;
+    if (!n || r > 3) continue;
+    for (const line of f.geometry.coordinates) {
+      const len = line.length, cur = byName.get(n);
+      if (!cur || len > cur.len) byName.set(n, { n, r, len, line });
+    }
+  }
+  S.phys.riverNames = [...byName.values()].filter((x) => x.len >= 8).sort((a, b) => a.r - b.r || b.len - a.len);
+}
+const riverMaxRank = (k) => (k < 1.6 ? 3 : k < 3 ? 4 : k < 5 ? 5 : 6);
+function drawWater() { // call inside the map transform
+  if (!S.phys) return;
+  const k = S.t.k, maxR = riverMaxRank(k);
+  ctx.save();
+  ctx.strokeStyle = theme.water; ctx.lineCap = "round";
+  for (const f of S.phys.rivers) {
+    const r = f.properties.r;
+    if (r > maxR) continue;
+    ctx.lineWidth = (r <= 2 ? 1.3 : r <= 4 ? 0.95 : 0.7) / k;
+    ctx.stroke(pathOf(f));
+  }
+  ctx.fillStyle = theme.ocean; ctx.lineWidth = 0.8 / k;
+  for (const f of S.phys.lakes) {
+    if (f.properties.r > maxR + 1 && k < 4) continue;
+    const p = pathOf(f); ctx.fill(p); ctx.stroke(p);
+  }
+  ctx.restore();
+}
+function drawWaterLabels() { // screen space, after the realm names, avoiding them
+  if (!S.phys || !S.labels || S.journey) return;
+  const k = S.t.k, placed = S.labelBoxes ? S.labelBoxes : (S.labelBoxes = mapObstacles());
+  const free = (b) => b[0] > 2 && b[1] > 2 && b[2] < S.width - 2 && b[3] < S.height - 2 && !placed.some((q) => b[0] < q[2] && b[2] > q[0] && b[1] < q[3] && b[3] > q[1]);
+  ctx.save(); ctx.textAlign = "center"; ctx.textBaseline = "middle"; ctx.fillStyle = theme.waterLabel;
+  const seaMax = k < 1.4 ? 0 : k < 2.6 ? 1 : k < 5 ? 2 : k < 8 ? 3 : 4; // whole world: oceans only
+  for (const sea of S.phys.seas) {
+    if (sea.r > (S.war ? Math.min(seaMax, 1) : seaMax) || (S.war && sea.k === "ocean" && k > 3)) continue; // wars: only the big seas
+    const [x0, y0] = projection(sea.l), x = S.t.applyX(x0), y = S.t.applyY(y0);
+    const ocean = sea.k === "ocean", size = ocean ? 12 : sea.r <= 1 ? 11 : 10;
+    ctx.font = `italic ${ocean ? 500 : 400} ${size}px Inter, sans-serif`; ctx.letterSpacing = ocean ? "2px" : "0.6px";
+    const text = ocean ? sea.n.toUpperCase() : sea.n, words = text.split(" ");
+    const lines = words.length > 2 && !ocean ? [words.slice(0, Math.ceil(words.length / 2)).join(" "), words.slice(Math.ceil(words.length / 2)).join(" ")] : [text];
+    const w = Math.max(...lines.map((l) => ctx.measureText(l).width)), h = size * 1.2 * lines.length;
+    const box = [x - w / 2 - 3, y - h / 2 - 2, x + w / 2 + 3, y + h / 2 + 2];
+    if (!free(box)) continue;
+    placed.push(box);
+    lines.forEach((l, i) => ctx.fillText(l, x, y + (i - (lines.length - 1) / 2) * size * 1.2));
+  }
+  if (k >= 2.2 && !S.war) { // river names along the river
+    ctx.font = "italic 400 10.5px Inter, sans-serif"; ctx.letterSpacing = "0.4px";
+    const maxR = k < 3 ? 1 : k < 5 ? 2 : 3;
+    for (const rv of S.phys.riverNames) {
+      if (rv.r > maxR) continue;
+      const mid = Math.floor(rv.line.length / 2), a = rv.line[Math.max(0, mid - 2)], b = rv.line[Math.min(rv.line.length - 1, mid + 2)];
+      const [ax, ay] = projection(a), [bx, by] = projection(b);
+      const x1 = S.t.applyX(ax), y1 = S.t.applyY(ay), x2 = S.t.applyX(bx), y2 = S.t.applyY(by);
+      const x = (x1 + x2) / 2, y = (y1 + y2) / 2, w = ctx.measureText(rv.n).width;
+      let ang = Math.atan2(y2 - y1, x2 - x1); if (ang > Math.PI / 2) ang -= Math.PI; if (ang < -Math.PI / 2) ang += Math.PI;
+      const hw = (Math.abs(Math.cos(ang)) * w + Math.abs(Math.sin(ang)) * 11) / 2 + 2, hh = (Math.abs(Math.sin(ang)) * w + Math.abs(Math.cos(ang)) * 11) / 2 + 2;
+      const box = [x - hw, y - hh, x + hw, y + hh];
+      if (!free(box)) continue;
+      placed.push(box);
+      ctx.save(); ctx.translate(x, y); ctx.rotate(ang);
+      ctx.lineWidth = 3; ctx.strokeStyle = theme.bg; ctx.globalAlpha = 0.85; ctx.strokeText(rv.n, 0, -6); ctx.globalAlpha = 1;
+      ctx.fillText(rv.n, 0, -6); ctx.restore();
+    }
+  }
+  ctx.letterSpacing = "0px";
+  ctx.restore();
+}
 function drawGL() {
   const { t } = S;
   GL.setItems(S.items);
@@ -865,6 +972,7 @@ function drawGL() {
   ctx.save();
   ctx.translate(t.x, t.y); ctx.scale(t.k, t.k);
   ctx.lineJoin = "round";
+  drawWater();
   for (const it of S.items) { // borders the GPU skips: reconstructions (dashed, coast-clipped) and crops
     if (it.kind !== "state" || !(it.p.recon || it.p.crop || it.p.cut)) continue;
     ctx.save(); clipFor(ctx, it);
@@ -886,9 +994,11 @@ function drawGL() {
   if (S.zooming || GL.fading() || S.cinePlay || S.playing > 0) { clearTimeout(S.pickTimer); S.pickTimer = setTimeout(drawPick, 120); } // the hit-test layer waits until the map is still
   else drawPick();
   if (S.labels) drawLabels();
+  drawWaterLabels();
   drawCinema();
   drawAncientSites();
   drawSites();
+  drawListPins();
   drawMomentPin();
   if (GL.fading()) { cancelAnimationFrame(S.fadeRaf); S.fadeRaf = requestAnimationFrame(draw); } // keep animating the cross-fade
 }
@@ -913,43 +1023,57 @@ function drawLabels() {
   const pxPerKm = (projection.scale() * t.k) / 6371;
   const placed = mapObstacles(); // keep names off the legend and the zoom buttons
   const rank = (it) => (it.key === S.sel ? 3 : S.featured.has(it.key) ? 2 : it.kind === "state" ? 1 : 0);
+  // names placed last frame go first among equals, so names don't pop in and out as areas change slightly year to year
+  const was = S.lastPlaced || new Set(), now = new Set();
   const cand = S.items.filter((it) => it.p.l && (it.kind === "state" || (it.kind === "culture" && (it.corrected || isCulture(it.p)))))
-    .sort((a, b) => rank(b) - rank(a) || b.p.a - a.p.a);
+    .sort((a, b) => rank(b) - rank(a) || was.has(b.p.n) - was.has(a.p.n) || b.p.a - a.p.a);
+  const anchors = (S.lblAnchor ||= new Map());
   ctx.textAlign = "center"; ctx.textBaseline = "middle";
   for (const it of cand) {
     const r = Math.sqrt(it.p.a) * pxPerKm;
     const strong = it.kind === "state" && (S.war ? warSideOf(it) >= 0 : S.journey ? inJourney(it) : S.featured.has(it.key) || it.key === S.sel || it.p.recon);
     if (S.war && !strong) continue;
     if (r < (strong ? 26 : it.kind === "state" ? 34 : 60)) continue;
-    const [x0, y0] = projection(it.p.l);
+    // Keep a name where it was while the realm's centre moves only a little (each year's shape has a slightly different
+    // centre, which made names slide around during playback).
+    const id = it.p.n, an = anchors.get(id);
+    let ll = it.p.l;
+    if (an && d3.geoDistance(an.l, ll) * 6371 < 0.3 * Math.sqrt(it.p.a)) ll = an.l;
+    const [x0, y0] = projection(ll);
     const x = t.applyX(x0), y = t.applyY(y0);
     if (x < -50 || y < -20 || x > S.width + 50 || y > S.height + 20) continue;
     const culture = it.kind !== "state";
     if (culture) { const top = S.items[pickAt(x, y)]; if (top && top.kind === "state") continue; }
-    const size = S.war ? Math.max(9, Math.min(r / 7, 12)) : Math.max(10, Math.min(r / 6, strong ? 18 : 13));
+    // Size follows the realm's size, but a name must fit inside it: names on a coloured realm are white, so any part
+    // sticking out over grey land or sea disappears. Try one line, then two, shrinking the type until it fits.
     let text = it.p.recon ? it.p.n.replace(/\s*\(.*\)$/, "") : clean(it.p.n);
-    ctx.font = culture ? `italic 500 ${size}px Inter, sans-serif` : `${strong && !S.war ? 800 : 600} ${size}px Archivo, "Helvetica Neue", sans-serif`;
-    ctx.letterSpacing = culture ? "0px" : `${(size * (S.war ? 0.14 : 0.05)).toFixed(1)}px`;
     if (!culture) text = text.toUpperCase();
-    let lines = [text], w = ctx.measureText(text).width;
-    const maxW = r * 2.6;
-    if (w > maxW) {
-      const words = text.split(" ");
-      if (words.length < 2) continue;
-      let best = null;
+    const maxW = r * (culture ? 2.2 : strong ? 1.25 : 1.6), minSize = S.war ? 8.5 : 9;
+    let size = S.war ? Math.max(9, Math.min(r / 8, 12)) : Math.max(10, Math.min(r / 7.5, strong ? 16 : 12.5));
+    if (an && Math.abs(an.size - size) < 1.5) size = an.size; // no small size changes from year to year
+    const setFont = (sz) => {
+      ctx.font = culture ? `italic 500 ${sz}px Inter, sans-serif` : `${strong && !S.war ? 800 : 600} ${sz}px Archivo, "Helvetica Neue", sans-serif`;
+      ctx.letterSpacing = culture ? "0px" : `${(sz * (S.war ? 0.14 : 0.05)).toFixed(1)}px`;
+    };
+    const layout = () => { // the narrower of one line and the best two-line split, at the current font
+      const one = ctx.measureText(text).width, words = text.split(" ");
+      let best = { lines: [text], w: one };
       for (let k = 1; k < words.length; k++) {
         const a = words.slice(0, k).join(" "), b = words.slice(k).join(" ");
         const m = Math.max(ctx.measureText(a).width, ctx.measureText(b).width);
-        if (!best || m < best.m) best = { a, b, m };
+        if (m < best.w && (one > maxW || m < one * 0.6)) best = { lines: [a, b], w: m };
       }
-      if (best.m > maxW) continue;
-      lines = [best.a, best.b]; w = best.m;
-    }
+      return best;
+    };
+    setFont(size);
+    let { lines, w } = layout();
+    if (w > maxW) { size = Math.max(minSize, Math.floor(size * (maxW / w) * 2) / 2); setFont(size); ({ lines, w } = layout()); }
+    if (w > maxW * 1.08) continue; // still doesn't fit: leave it unnamed at this zoom
     const h = size * 1.1 * lines.length;
     const box = [x - w / 2 - 4, y - h / 2 - 3, x + w / 2 + 4, y + h / 2 + 3];
     if (box[0] < 2 || box[1] < 2 || box[2] > S.width - 2 || box[3] > S.height - 2) continue; // never cut a name at the map's edge
     if (placed.some((b) => box[0] < b[2] && box[2] > b[0] && box[1] < b[3] && box[3] > b[1])) continue;
-    placed.push(box);
+    placed.push(box); now.add(id); anchors.set(id, { l: ll, size });
     if (it.key === S.sel || (it.p.recon && it.p.n === S.sel) || (S.journey && inJourney(it))) { // red chip, like the design's highlighted realm
       ctx.fillStyle = theme.highlight; ctx.fillRect(box[0], box[1], box[2] - box[0], box[3] - box[1]);
       ctx.fillStyle = "#ffffff";
@@ -957,16 +1081,17 @@ function drawLabels() {
       continue;
     }
     if (S.war) { ctx.globalAlpha = 0.62; ctx.fillStyle = theme.ink; lines.forEach((ln, k) => ctx.fillText(ln, x, y + (k - (lines.length - 1) / 2) * size * 1.1)); ctx.globalAlpha = 1; continue; } // quiet names under the action
-    if (!strong) { ctx.lineWidth = 3; ctx.lineJoin = "round"; ctx.strokeStyle = theme.bg; }
+    ctx.lineWidth = strong ? 2.5 : 3; ctx.lineJoin = "round";
+    ctx.strokeStyle = strong ? colorOf(it.key) : theme.bg; // a name on a coloured realm keeps a rim of that colour, so it stays readable at the edges
     ctx.fillStyle = strong ? inkOn(colorOf(it.key)) : theme.labelSoft;
     lines.forEach((ln, k) => {
       const ly = y + (k - (lines.length - 1) / 2) * size * 1.1;
-      if (!strong) ctx.strokeText(ln, x, ly);
+      ctx.strokeText(ln, x, ly);
       ctx.fillText(ln, x, ly);
     });
   }
   ctx.letterSpacing = "0px";
-  S.labelBoxes = placed;
+  S.labelBoxes = placed; S.lastPlaced = now;
 }
 
 function drawPick() {
@@ -1069,7 +1194,7 @@ function renderCol(resetScroll) {
   const col = $("#col"), scroll = col.scrollTop;
   col.innerHTML = S.view === "sources" ? sourcesHTML() : S.view === "moments" ? momentsListHTML() : S.view === "empires" ? empiresListHTML()
     : S.view === "journey" && S.journey ? journeyHTML() : S.view === "war" && S.war ? warHTML() : S.view === "wars" ? warsListHTML()
-    : S.view === "moment" && S.moment ? momentHTML() : S.view === "site" && S.site ? siteHTML() : S.sel && realm(S.sel) ? realmHTML() : worldHTML();
+    : S.view === "moment" && S.moment ? momentHTML() : S.view === "site" && S.site ? siteHTML() : S.view === "place" && S.place ? placeHTML() : S.sel && realm(S.sel) ? realmHTML() : worldHTML();
   col.scrollTop = resetScroll ? 0 : scroll;
 }
 const EVIDENCE = {
@@ -1168,6 +1293,52 @@ function worldHTML() {
   }
   return h;
 }
+// ---------------------------------------------------------------- this place through time
+// tools/placeindex.py: who held each half-degree square of the map, period by period, in 10° tiles (data/place/).
+const placeTiles = new Map();
+async function placeRuns([lon, lat]) {
+  const cx = Math.floor(lon * 2), cy = Math.floor(lat * 2);
+  const tile = async (tx, ty) => memo(placeTiles, `${tx}_${ty}`, `data/place/${tx}_${ty}.json`).catch(() => null);
+  // the clicked square, else the nearest square with data (a click on a coast can land in the sea)
+  for (let d = 0; d <= 2; d++) {
+    for (let dy = -d; dy <= d; dy++) for (let dx = -d; dx <= d; dx++) {
+      if (Math.max(Math.abs(dx), Math.abs(dy)) !== d) continue;
+      const x = cx + dx, y = cy + dy, tx = Math.floor(x / 20) * 10, ty = Math.floor(y / 20) * 10;
+      const t = await tile(tx, ty), runs = t?.cells[`${x - tx * 2},${y - ty * 2}`];
+      if (runs) return runs.map(([a, b, i]) => ({ from: a, to: b, name: t.names[i] }));
+    }
+  }
+  return [];
+}
+async function openPlace(ll) {
+  const from = S.sel;
+  noteFrom(); stopPlay();
+  if (S.journey) exitJourney();
+  if (S.war) exitWar();
+  S.place = { ll, runs: null, from }; S.view = "place"; S.moment = null; S.site = null;
+  renderCol(true); draw(); writeHash();
+  flyCenter(ll, Math.max(S.t.k, 4), 900);
+  const runs = await placeRuns(ll);
+  if (S.place?.ll !== ll) return;
+  S.place.runs = runs; renderCol(true);
+}
+function placeHTML() {
+  const { ll, runs, from } = S.place;
+  const lat = `${Math.abs(ll[1]).toFixed(1)}°${ll[1] >= 0 ? "N" : "S"}`, lon = `${Math.abs(ll[0]).toFixed(1)}°${ll[0] >= 0 ? "E" : "W"}`;
+  let h = `<button class="back" data-act="close-place">${from ? `← ${esc(displayName(from))}` : `← The world in ${plainYear(S.year)}`}</button>`;
+  h += `<div class="kicker">This place through time · ${lat}, ${lon}</div><h2 class="realm">Who ruled here?</h2>`;
+  if (!runs) return h + `<p class="note">Looking through ${shortYear(S.range[0])}–${shortYear(S.range[1])}…</p>`;
+  if (!runs.length) return h + `<p class="note">No recorded state has held this spot on the map. Try clicking nearer to land.</p>`;
+  h += `<p class="note">Every realm the map draws over this spot, from the border data (about 50 km across). Gaps mean no state is recorded there. Click a row to see the map in that year.</p><ol class="placetl">`;
+  let last = null;
+  for (const r of runs) {
+    if (last != null && r.from > last + 1) h += `<li class="gap"><span class="py">${shortYear(last + 1)} – ${shortYear(r.from - 1)}</span><span>No state recorded</span></li>`;
+    const now = r.from <= S.year && S.year <= r.to;
+    h += `<li${now ? ' class="now"' : ""}><button class="prow" data-pkey="${esc(r.name)}" data-pyear="${Math.max(r.from, Math.min(r.to, Math.round((r.from + r.to) / 2)))}"><span class="py">${shortYear(r.from)}${r.to !== r.from ? ` – ${r.to >= 2024 ? "today" : shortYear(r.to)}` : ""}</span><span class="pn"><i class="sq" style="background:${colorOf(r.name)}"></i>${esc(displayName(r.name))}</span></button></li>`;
+    last = Math.max(last ?? r.to, r.to);
+  }
+  return h + `</ol>`;
+}
 function siteHTML() {
   const st = S.site, inUse = st.built == null || (st.built <= S.year && S.year <= (st.until ?? S.range[1]));
   let h = `<button class="back" data-act="close-site">${backLabel(`← The world in ${plainYear(S.year)}`)}</button>`;
@@ -1207,6 +1378,8 @@ function realmHTML() {
   const now = activeFeats(key);
   let h = `<button class="back" data-act="close">← The world in ${plainYear(y)}</button>`;
   h += `<div class="kicker">${r.group ? "Empire" : "Realm"} · ${span}</div><h2 class="realm">${esc(displayName(key))}</h2>`;
+  const lead = emp && S.media[`empire:${emp.id}`]?.[0];
+  if (lead && !r.recon) h += `<figure class="lead"><img src="${esc(lead.image)}" alt="${esc(lead.caption)}" loading="lazy"><figcaption>${esc(lead.caption)} <a href="${esc(lead.page)}" target="_blank" rel="noopener">${esc(lead.credit)} · ${esc(lead.license)}</a></figcaption></figure>`;
   if (r.recon) {
     const { sp, rg } = r.recon;
     if (sp.kind === "cultures") { // an archaeological culture: say how it is known
@@ -1233,6 +1406,7 @@ function realmHTML() {
   if (r.memberOf?.length) h += `<p class="note">Part of ${r.memberOf.map((g) => `<button class="linkish" data-key="${esc(g)}">${esc(displayName(g))}</button>`).join(", ")}</p>`;
   const jr = journeyForRealm(key);
   if (jr) h += `<button class="playj" data-journey="${esc(jr.id)}">▶ Follow ${esc(jr.name)} through its whole history</button>`;
+  if (S.clickLL) h += `<button class="placebtn" data-act="place">Who ruled this spot through history? →</button>`;
   h += `<div class="stats"><div><b>${area ? mkm(area) : "—"}</b><span>M km² in ${shortYear(y)}</span></div>
     <div><b>${rank >= 0 ? "#" + (rank + 1) : "—"}</b><span>largest realm</span></div>
     <div><b>${mkm(peak[2])}</b><span>peak, ${shortYear(peak[0])}${peak[1] !== peak[0] ? "–" + shortYear(peak[1]) : ""}</span></div></div>`;
@@ -1248,9 +1422,17 @@ function realmHTML() {
       <figcaption>${esc(media.desc || media.file.replace(/^File:/, ""))}<br>${esc(media.artist || "Unknown author")} · ${media.licenseUrl ? `<a href="${esc(media.licenseUrl)}" target="_blank" rel="noopener">${esc(media.license)}</a>` : esc(media.license)} · <a href="${esc(media.page)}" target="_blank" rel="noopener">Wikimedia Commons</a></figcaption></figure>`;
   }
   if (emp?.rulers?.length) {
-    h += `<h3 class="sec">Notable rulers</h3><ul class="rlist">`;
-    for (const x of emp.rulers) h += `<li><b>${esc(x.name)}</b><span class="r">${esc(x.reign || "")}</span>${x.note ? `<span class="n">${esc(x.note)}</span>` : ""}</li>`;
+    const pic = (i, x) => { const m = S.media[`ruler:${emp.id}:${i}`]?.[0]; return m && m.caption.startsWith(x.name) ? m : null; }; // index-keyed: the name must still match
+    const pics = emp.rulers.map((x, i) => pic(i, x));
+    const any = pics.some(Boolean);
+    h += `<h3 class="sec">Notable rulers</h3><ul class="rlist${any ? " withpic" : ""}">`;
+    emp.rulers.forEach((x, i) => {
+      const m = pics[i];
+      const img = !any ? "" : m ? `<a class="pp" href="${esc(m.page)}" target="_blank" rel="noopener" title="${esc(m.article)} · ${esc(m.credit)} · ${esc(m.license)}"><img src="${esc(m.image)}" alt="${esc(x.name)}" loading="lazy"></a>` : `<span class="pp none" aria-hidden="true">${esc(x.name.trim()[0] || "")}</span>`;
+      h += `<li>${img}<b>${esc(x.name)}</b><span class="r">${esc(x.reign || "")}</span>${x.note ? `<span class="n">${esc(x.note)}</span>` : ""}</li>`;
+    });
     h += `</ul>`;
+    if (any) h += `<details class="more credits"><summary>Portrait credits</summary><p class="note">${pics.map((m, i) => m && `${esc(emp.rulers[i].name)}: <a href="${esc(m.page)}" target="_blank" rel="noopener">${esc(m.credit)}</a> (${esc(m.license)})`).filter(Boolean).join(" · ")}</p></details>`;
   }
   if (emp?.legacy) h += `<h3 class="sec">Legacy</h3><p class="prose">${esc(emp.legacy)}</p>`;
   if (now.length > 1 || (now.length === 1 && now[0].properties.n !== key)) {
@@ -2169,7 +2351,7 @@ const SITE_SHAPE = { settlement: "circle", city: "circle", "rock-art": "square" 
 function drawAncientSites() {
   updateLegend();
   S.siteHits = [];
-  if (S.war || S.view === "journey") return;
+  if (S.war || S.view === "journey" || listOnMap()) return;
   const list = sitesNow().sort((a, b) => (b.unesco ? 1 : 0) - (a.unesco ? 1 : 0)); // landmarks get their names first
   if (!list.length) return;
   const many = list.length > 14 && S.t.k < 2.5, placed = S.labels && S.labelBoxes ? [...S.labelBoxes] : mapObstacles(); // site names avoid realm names too
@@ -2210,8 +2392,66 @@ function drawSites() { // capitals, ports and excavations of active reconstructi
   }
   ctx.restore();
 }
+// ---------------------------------------------------------------- the open list, on the map
+// Opening Moments, Wars or Empires shows where each one happened: moments as dots, wars and empires as labelled pins
+// (at the middle of their events). The map underneath fades back; hovering a pin or a list row picks it out.
+const listOnMap = () => (S.view === "moments" || S.view === "wars" || S.view === "empires") && !S.war && !S.journey;
+function middleOf(events) {
+  const pts = (events || []).map((e) => e.lonlat).filter(Boolean);
+  if (!pts.length) return null;
+  let best = pts[0], bd = Infinity; // the event place closest to all the others (always a real place, never mid-ocean)
+  for (const p of pts) { const d = pts.reduce((s, q) => s + d3.geoDistance(p, q), 0); if (d < bd) { bd = d; best = p; } }
+  return best;
+}
+function listPins() {
+  S.pinCache ||= {};
+  if (S.pinCache[S.view]) return S.pinCache[S.view];
+  const C = S.content;
+  const pins = S.view === "moments" ? C.moments.filter((m) => m.lonlat).map((m) => ({ id: m.id, name: m.title, when: m.yearLabel || shortYear(m.year), place: m.place, lonlat: m.lonlat, dot: true, open: () => openMoment(m.id) }))
+    : S.view === "wars" ? C.wars.map((w) => ({ id: w.id, name: w.name, when: w.dateLabel, lonlat: middleOf(w.events), open: () => openWar(w.id) }))
+    : C.journeys.map((j) => ({ id: j.id, name: j.name, when: `${shortYear(j.span[0])}–${shortYear(j.span[1])}`, lonlat: middleOf(j.events), open: () => openJourney(j.id) }));
+  return (S.pinCache[S.view] = pins.filter((p) => p.lonlat));
+}
+function pinAt(x, y) {
+  let best = null, bd = 10;
+  for (const h of S.pinHits || []) { const d = Math.hypot(h.x - x, h.y - y); if (d < bd) { bd = d; best = h.pin; } }
+  return best;
+}
+function drawListPins() {
+  S.pinHits = [];
+  if (!listOnMap()) return;
+  ctx.save();
+  ctx.globalAlpha = 0.55; ctx.fillStyle = theme.bg; ctx.fillRect(0, 0, S.width, S.height); ctx.globalAlpha = 1; // fade the map back
+  const pins = listPins(), placed = mapObstacles(), hot = S.listHot;
+  const pts = pins.map((p) => { const [x0, y0] = projection(p.lonlat); return { p, x: S.t.applyX(x0), y: S.t.applyY(y0) }; });
+  for (const { p, x, y } of pts) {
+    if (x < -10 || y < -10 || x > S.width + 10 || y > S.height + 10) continue;
+    const isHot = p.id === hot, r = isHot ? 7 : p.dot ? 4 : 5.5;
+    ctx.beginPath(); ctx.arc(x, y, r, 0, 2 * Math.PI);
+    ctx.fillStyle = isHot ? theme.highlight : p.dot ? theme.highlight : theme.ink; ctx.fill();
+    ctx.lineWidth = 1.5; ctx.strokeStyle = theme.bg; ctx.stroke();
+    S.pinHits.push({ x, y, pin: p });
+  }
+  // names: the hovered one first, then (wars, empires) as many as fit
+  ctx.textBaseline = "middle"; ctx.textAlign = "left";
+  const order = pts.filter((q) => q.p.id === hot).concat(pts.filter((q) => q.p.id !== hot && !q.p.dot));
+  for (const { p, x, y } of order) {
+    const isHot = p.id === hot;
+    ctx.font = isHot ? '800 13px Archivo, "Helvetica Neue", sans-serif' : '600 11.5px Inter, sans-serif';
+    const text = isHot ? `${p.name} · ${p.when}` : p.name, w = ctx.measureText(text).width;
+    let box = [x + 8, y - 8, x + 14 + w, y + 8], tx = x + 10;
+    if (box[2] > S.width - 4) { box = [x - 14 - w, y - 8, x - 8, y + 8]; tx = x - 10 - w; }
+    if (!isHot && (box[0] < 2 || box[1] < 2 || box[3] > S.height - 2 || placed.some((b) => box[0] < b[2] && box[2] > b[0] && box[1] < b[3] && box[3] > b[1]))) continue;
+    placed.push(box);
+    if (isHot) { ctx.fillStyle = theme.highlight; ctx.fillRect(box[0], box[1], box[2] - box[0], box[3] - box[1]); ctx.fillStyle = "#fff"; }
+    else { ctx.lineWidth = 3; ctx.strokeStyle = theme.bg; ctx.strokeText(text, tx, y); ctx.fillStyle = theme.ink; }
+    ctx.fillText(text, tx, y);
+  }
+  ctx.restore();
+}
 function drawMomentPin() {
   let m = S.view === "moment" && S.moment;
+  if (S.view === "place" && S.place) m = { lonlat: S.place.ll, title: "" }; // the spot being traced
   if (!m && S.war && !S.callPt) { const e = S.war.events[S.wIdx]; if (e && e.lonlat && S.cineK.T[S.wIdx + 1] <= S.wt + 1e-6) m = { lonlat: e.lonlat, title: "" }; } // the subtitle carries the text
   if (!m && S.journey) {
     const ev = S.jEvent != null ? S.journey.events[S.jEvent] : currentEvent(S.journey, S.year);
@@ -2473,24 +2713,55 @@ function togglePlay() {
 }
 
 // ---------------------------------------------------------------- search
+function reignYears(text) { // "c. 2589 – 2566 BCE" → [-2589, -2566]; "27 BCE – 14 CE" → [-27, 14]
+  const t = text.replace(/[–—]/g, "-"), ys = (t.match(/\d{1,4}/g) || []).map(Number);
+  if (!ys.length) return null;
+  if (/\b(BCE|BC)\b/.test(t)) { if (/\b(CE|AD)\b/.test(t)) ys[0] = -ys[0]; else for (let i = 0; i < ys.length; i++) ys[i] = -ys[i]; }
+  return [ys[0], ys[ys.length - 1]];
+}
 function setupSearch() {
   const input = $("#search"), list = $("#results");
   const all = Object.entries(S.clio.realms).filter(([k]) => !NOT_A_REALM.test(k)).map(([key, r]) => ({
     key, name: displayName(key), raw: clean(key), from: r.tl[0][0], to: r.tl[r.tl.length - 1][1],
     area: Math.max(...r.tl.map((x) => x[2])), emp: !!empireOf(key),
-  })).concat((S.sites || []).map((st) => ({ key: "site:" + st.id, name: st.name, raw: (st.altNames || []).join(" "), from: st.built, to: st.until ?? 2024, area: 5e5, emp: false, site: true, legend: st.built == null })));
+  })).concat((S.sites || []).map((st) => ({ key: "site:" + st.id, name: st.name, raw: (st.altNames || []).join(" "), from: st.built, to: st.until ?? 2024, area: 5e5, emp: false, site: true, kind: "Site", legend: st.built == null })));
+  // Beyond realms and sites: empire stories, wars and their battles, defining moments and notable rulers.
+  const C = S.content, pri = { Empire: 6, War: 5, Moment: 4, Ruler: 2, Battle: 1, Event: 1 };
+  for (const j of C.journeys) all.push({ key: "journey:" + j.id, name: j.name, raw: "", from: j.span[0], to: j.span[1], kind: "Empire", area: 9e9 });
+  for (const w of C.wars) {
+    all.push({ key: "war:" + w.id, name: w.name, raw: "", from: w.span[0], to: w.span[1], kind: "War", area: 9e9 });
+    (w.events || []).forEach((e, i) => all.push({ key: `war:${w.id}:${i}`, name: e.text, raw: w.name, from: e.year, to: e.year, kind: e.kind === "battle" || /^(Battle|Siege) of/.test(e.text) ? "Battle" : "Event", area: 0 }));
+  }
+  for (const m of C.moments) all.push({ key: "moment:" + m.id, name: m.title, raw: m.place || "", from: m.year, to: m.year, when: m.yearLabel, kind: "Moment", area: 5e9 });
+  const seenEmp = new Set();
+  for (const e of Object.values(C.byClio)) {
+    if (seenEmp.has(e.id)) continue; seenEmp.add(e.id);
+    for (const x of e.rulers || []) {
+      const ys = reignYears(x.reign || ""), clio = (e.clio || []).find((k) => realm(k) && ys && realm(k).tl.some(([f, t]) => f <= ys[0] && ys[0] <= t)) || (e.clio || []).find((k) => realm(k));
+      if (clio) all.push({ key: `ruler:${clio}@${ys ? ys[0] : ""}`, name: x.name, raw: e.name, from: ys?.[0], to: ys?.[1], when: x.reign, kind: "Ruler", area: 0 });
+    }
+  }
   let active = 0, shown = [];
   const render = () => {
     const q = input.value.trim().toLowerCase();
     if (!q) { list.hidden = true; return; }
     shown = all.filter((e) => e.name.toLowerCase().includes(q) || e.raw.toLowerCase().includes(q))
-      .sort((a, b) => (b.name.toLowerCase().startsWith(q) - a.name.toLowerCase().startsWith(q)) || (b.emp - a.emp) || (b.area - a.area)).slice(0, 14);
+      .sort((a, b) => (b.name.toLowerCase().startsWith(q) - a.name.toLowerCase().startsWith(q)) || ((pri[b.kind] || 3) - (pri[a.kind] || 3)) || (b.emp - a.emp) || (b.area - a.area)).slice(0, 16);
     active = 0;
-    list.innerHTML = shown.length ? shown.map((e, i) => `<li data-k="${esc(e.key)}" class="${i ? "" : "active"}"><span>${e.site ? "▲ " : ""}${esc(e.name)}${e.name !== e.raw && e.raw ? ` <small>(${esc(e.raw)})</small>` : ""}</span><small>${e.legend ? "legend · not proven" : `${shortYear(e.from)} – ${e.to >= 2024 ? "today" : shortYear(e.to)}`}</small></li>`).join("")
+    list.innerHTML = shown.length ? shown.map((e, i) => `<li data-k="${esc(e.key)}" class="${i ? "" : "active"}"><span>${e.kind ? `<i class="kind">${e.kind}</i> ` : ""}${esc(e.name)}${e.name !== e.raw && e.raw ? ` <small>(${esc(e.raw)})</small>` : ""}</span><small>${e.legend ? "legend · not proven" : e.when ? esc(e.when) : e.from == null ? "" : e.from === e.to ? shortYear(e.from) : `${shortYear(e.from)} – ${e.to >= 2024 ? "today" : shortYear(e.to)}`}</small></li>`).join("")
       : `<li><span>No match</span></li>`;
     list.hidden = false;
   };
-  const choose = (key) => { list.hidden = true; input.value = ""; input.blur(); if (key.startsWith("site:")) return openSite(key.slice(5)); jumpTo(key, bestYear(key)); };
+  const choose = (key) => {
+    list.hidden = true; input.value = ""; input.blur();
+    const [kind, rest] = [key.slice(0, key.indexOf(":")), key.slice(key.indexOf(":") + 1)];
+    if (kind === "site") return openSite(rest);
+    if (kind === "journey") return openJourney(rest);
+    if (kind === "moment") return openMoment(rest);
+    if (kind === "war") { const [id, ev] = rest.split(":"); return openWar(id, ev != null ? +ev : 0); }
+    if (kind === "ruler") { const at = rest.lastIndexOf("@"), k = rest.slice(0, at), y = rest.slice(at + 1); return jumpTo(k, y ? +y : bestYear(k)); }
+    jumpTo(key, bestYear(key));
+  };
   input.addEventListener("input", render);
   input.addEventListener("keydown", (ev) => {
     if (list.hidden || !shown.length) return;
@@ -2505,6 +2776,7 @@ function setupSearch() {
 }
 
 // ---------------------------------------------------------------- UI wiring
+const wholeWorld = () => { if (S.t.k > 1.05) d3.select(canvas).transition().duration(600).call(S.zoom.transform, d3.zoomIdentity); }; // lists show the whole world
 function setupUI() {
   $("#prev").onclick = () => { stopPlay(); stepChapter(-1); };
   $("#next").onclick = () => { stopPlay(); stepChapter(1); };
@@ -2520,12 +2792,12 @@ function setupUI() {
     draw(); renderCol(true); writeHash();
   };
   $("#sourcesLink").onclick = (ev) => { ev.preventDefault(); S.from = null; S.view = "sources"; renderCol(true); writeHash(); };
-  $("#momentsLink").onclick = (ev) => { ev.preventDefault(); S.from = null; if (S.journey) exitJourney(); S.view = "moments"; S.moment = null; draw(); renderCol(true); writeHash(); };
-  $("#empiresLink").onclick = (ev) => { ev.preventDefault(); S.from = null; if (S.journey) exitJourney(); S.view = "empires"; S.moment = null; draw(); renderCol(true); writeHash(); };
+  $("#momentsLink").onclick = (ev) => { ev.preventDefault(); S.from = null; if (S.journey) exitJourney(); S.view = "moments"; S.moment = null; draw(); renderCol(true); writeHash(); wholeWorld(); };
+  $("#empiresLink").onclick = (ev) => { ev.preventDefault(); S.from = null; if (S.journey) exitJourney(); S.view = "empires"; S.moment = null; draw(); renderCol(true); writeHash(); wholeWorld(); };
   $("#dock").addEventListener("click", (ev) => { if (ev.target.closest("[data-act=exit-journey]")) { exitJourney(); goBack(); } if (ev.target.closest("[data-act=exit-war]")) { exitWar(); goBack(); }
     const cb = ev.target.closest("[data-chap]"); if (cb && story()) openChapter(+cb.dataset.chap);
     const sp = ev.target.closest("[data-act=war-speed]"); if (sp) { S.cineSpeed = { 1: 2, 2: 0.5, 0.5: 1 }[S.cineSpeed || 1]; sp.textContent = `${S.cineSpeed}×`; } });
-  $("#warsLink").onclick = (ev) => { ev.preventDefault(); S.from = null; if (S.journey) exitJourney(); if (S.war) exitWar(); S.view = "wars"; S.moment = null; draw(); renderCol(true); writeHash(); };
+  $("#warsLink").onclick = (ev) => { ev.preventDefault(); S.from = null; if (S.journey) exitJourney(); if (S.war) exitWar(); S.view = "wars"; S.moment = null; draw(); renderCol(true); writeHash(); wholeWorld(); };
   $("#zoomIn").onclick = () => d3.select(canvas).transition().duration(300).call(S.zoom.scaleBy, 1.6);
   $("#zoomOut").onclick = () => d3.select(canvas).transition().duration(300).call(S.zoom.scaleBy, 1 / 1.6);
   $("#zoomReset").onclick = () => d3.select(canvas).transition().duration(600).call(S.zoom.transform, d3.zoomIdentity);
@@ -2534,10 +2806,12 @@ function setupUI() {
   toggle($("#peoplesBtn"), "peoples", () => { buildItems(); draw(); });
 
   const col = $("#col");
-  col.addEventListener("click", (ev) => {
+  col.addEventListener("click", async (ev) => {
     const act = ev.target.closest("[data-act]");
     if (act) {
       if (act.dataset.act === "close") return select(null);
+      if (act.dataset.act === "place" && S.clickLL) return openPlace(S.clickLL);
+      if (act.dataset.act === "close-place") { S.view = S.place?.from ? "realm" : "world"; S.sel = S.place?.from || null; S.place = null; draw(); writeHash(); return renderCol(true); }
       if (act.dataset.act === "exit-journey") { exitJourney(); return goBack(); }
       if (act.dataset.act === "exit-war") { exitWar(); return goBack(); }
       if (act.dataset.act === "wars") { if (S.war) exitWar(); S.view = "wars"; writeHash(); return renderCol(true); }
@@ -2567,6 +2841,8 @@ function setupUI() {
     if (jo) return openJourney(jo.dataset.journey);
     const je = ev.target.closest("[data-jev]");
     if (je && S.journey) { const e = S.journey.events[+je.dataset.jev]; S.jEvent = +je.dataset.jev; stopPlay(); return go(e.year); }
+    const pr = ev.target.closest("[data-pkey]");
+    if (pr) { stopPlay(); const y = +pr.dataset.pyear; await go(y); S.place.year = y; renderCol(false); draw(); return; } // stay on the place, move the map to that year
     const k = ev.target.closest("[data-key]");
     if (k) { stopPlay(); return select(k.dataset.key, { fly: true }); }
     const yb = ev.target.closest("[data-year]");
@@ -2586,6 +2862,14 @@ function setupUI() {
     if (!d || !S.jOpen) return;
     d.open ? S.jOpen.add(+d.dataset.jopen) : S.jOpen.delete(+d.dataset.jopen);
   }, true);
+  const hotFromRow = (ev) => { // hovering a row in an open list (or its bar on the timeline) picks out its pin on the map
+    if (!listOnMap()) return;
+    const row = ev.target.closest?.("[data-moment], [data-war], [data-journey]");
+    const id = row ? row.dataset.moment || row.dataset.war || row.dataset.journey : null;
+    if (id !== (S.listHot || null)) { S.listHot = id; draw(); }
+  };
+  col.addEventListener("mouseover", hotFromRow);
+  $("#chart").addEventListener("mouseover", hotFromRow);
   col.addEventListener("change", (ev) => { if (ev.target.id === "ghostToggle") { S.showGhost = ev.target.checked; draw(); } });
   addEventListener("hashchange", async () => { // typed links and the browser's Back/Forward
     S.restoring = true;
