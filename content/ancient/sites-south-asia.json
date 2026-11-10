@@ -1,0 +1,1637 @@
+[
+ {
+  "id": "bhimbetka",
+  "name": "Bhimbetka rock shelters",
+  "altNames": [],
+  "lonlat": [
+   77.613,
+   22.938
+  ],
+  "kind": "rock-art",
+  "built": -10000,
+  "until": 1200,
+  "dateLabel": "paintings c. 10,000 BCE (Mesolithic) to medieval times; occupation far older",
+  "standing": true,
+  "evidence": "archaeology",
+  "evidenceNote": "No writing; the paintings are dated by their style, by what they show and by excavated layers, so their dates are approximate.",
+  "culture": null,
+  "summary": "More than 750 rock shelters spread over seven sandstone hills in central India. People sheltered here for over 100,000 years, and some 400 shelters hold paintings in red and white. The oldest are put at about 10,000 BCE, in the Mesolithic, and show hunting, dancing and animals such as elephants, deer and bison; later layers add riders on horseback and simple geometric designs from historic times. It is the oldest known rock art in India and one of the largest prehistoric art sites in Asia.",
+  "unesco": true,
+  "image": {
+   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Rock_Shelter_8%2C_Bhimbetka_02.jpg/960px-Rock_Shelter_8%2C_Bhimbetka_02.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Rock_Shelter_8,_Bhimbetka_02.jpg",
+   "caption": "Paintings in Rock Shelter 8",
+   "credit": "Bernard Gagnon",
+   "license": "CC BY-SA 3.0"
+  },
+  "sources": [
+   {
+    "title": "Wikipedia: Bhimbetka rock shelters",
+    "url": "https://en.wikipedia.org/wiki/Bhimbetka_rock_shelters"
+   },
+   {
+    "title": "Wikipedia: South Asian Stone Age",
+    "url": "https://en.wikipedia.org/wiki/South_Asian_Stone_Age"
+   }
+  ]
+ },
+ {
+  "id": "kumari-kandam",
+  "name": "Kumari Kandam (legendary)",
+  "altNames": [
+   "Kumari Nadu"
+  ],
+  "lonlat": [
+   77.5,
+   7.3
+  ],
+  "kind": "other",
+  "built": null,
+  "until": null,
+  "dateLabel": "legendary; no real date",
+  "standing": false,
+  "evidence": "legendary",
+  "evidenceNote": "Not proven: no archaeological evidence has been found, and geology shows no sunken continent in the Indian Ocean.",
+  "culture": null,
+  "summary": "A lost land said to lie south of Kanyakumari, swallowed by the sea with an ancient Tamil civilisation. Medieval commentaries tell of Pandya lands and the first two Tamil literary academies (Sangams) lost to the ocean; 19th-century European ideas of a sunken continent, 'Lemuria', were then joined to these stories by Tamil revivalists, who coined the name Kumari Kandam in the 1930s. Plate tectonics has disproved Lemuria, and no ruins have been found. The point here only marks where tradition places it.",
+  "unesco": false,
+  "sources": [
+   {
+    "title": "Wikipedia: Kumari Kandam",
+    "url": "https://en.wikipedia.org/wiki/Kumari_Kandam"
+   }
+  ]
+ },
+ {
+  "id": "bhirrana",
+  "name": "Bhirrana",
+  "altNames": [
+   "Bhirdana"
+  ],
+  "lonlat": [
+   75.549,
+   29.554
+  ],
+  "kind": "settlement",
+  "built": -7500,
+  "until": -1900,
+  "dateLabel": "claimed c. 7500 BCE; most scholars: 4th millennium BCE to c. 1900 BCE",
+  "standing": false,
+  "evidence": "disputed",
+  "evidenceNote": "Two charcoal samples gave dates near 7500 BCE, but they came from layers with pottery and copper dated to around 3500 BCE elsewhere, so many scholars doubt the early date.",
+  "culture": "early-harappan",
+  "summary": "A village and town on the dry Ghaggar river in Haryana that grew from an early Hakra Ware settlement of pit dwellings into a walled Harappan town with streets and mudbrick houses. The Archaeological Survey of India reported two very early radiocarbon dates and called it the oldest Indus site. Other samples from the same early levels date to 3200–2600 BCE, and the copper tools fit a later stage, so its early chronology remains contested.",
+  "unesco": false,
+  "sources": [
+   {
+    "title": "Wikipedia: Bhirrana",
+    "url": "https://en.wikipedia.org/wiki/Bhirrana"
+   },
+   {
+    "title": "Wikipedia: Hakra Ware culture",
+    "url": "https://en.wikipedia.org/wiki/Hakra_Ware_culture"
+   }
+  ]
+ },
+ {
+  "id": "mehrgarh",
+  "name": "Mehrgarh",
+  "altNames": [],
+  "lonlat": [
+   67.617,
+   29.383
+  ],
+  "kind": "settlement",
+  "built": -7000,
+  "until": -2600,
+  "dateLabel": "c. 7000 BCE (excavators) or c. 5200 BCE (2025 re-dating) to c. 2600 BCE",
+  "standing": false,
+  "evidence": "disputed",
+  "evidenceNote": "The village is well excavated, but its start date is debated: the excavators put it near 7000 BCE, while 2025 radiocarbon dates on tooth enamel put the first farmers at about 5200 BCE.",
+  "culture": "mehrgarh-neolithic",
+  "summary": "A farming village near the Bolan Pass in Balochistan, Pakistan, excavated by a French team from 1974. Its mudbrick houses, graves and granaries show people growing wheat and barley and herding sheep, goats and cattle, the earliest farming known in South Asia. Burials held ornaments of sea shell, turquoise and lapis lazuli brought from far away. Later phases added pottery, copper and bead workshops before the site was left around 2600 BCE for nearby Nausharo, as the Indus cities rose.",
+  "unesco": false,
+  "image": {
+   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Mehrgarh_ruins.jpg/960px-Mehrgarh_ruins.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Mehrgarh_ruins.jpg",
+   "caption": "Excavated mudbrick ruins at Mehrgarh",
+   "credit": "Ashish_Premier",
+   "license": "CC BY-SA 3.0"
+  },
+  "sources": [
+   {
+    "title": "Wikipedia: Mehrgarh",
+    "url": "https://en.wikipedia.org/wiki/Mehrgarh"
+   },
+   {
+    "title": "Mutin et al. 2025, Scientific Reports: new radiocarbon dates from Neolithic Mehrgarh (PMC)",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12000376/"
+   },
+   {
+    "title": "Wikipedia: South Asian Stone Age",
+    "url": "https://en.wikipedia.org/wiki/South_Asian_Stone_Age"
+   }
+  ]
+ },
+ {
+  "id": "jeitun",
+  "name": "Jeitun",
+  "altNames": [
+   "Djeitun"
+  ],
+  "lonlat": [
+   58.349,
+   38.188
+  ],
+  "kind": "settlement",
+  "built": -6100,
+  "until": -5600,
+  "dateLabel": "c. 6000 BCE, for a few centuries",
+  "standing": false,
+  "evidence": "archaeology",
+  "evidenceNote": "No writing existed; the dates come from eleven radiocarbon samples taken in excavations in the 1990s.",
+  "culture": "jeitun-culture",
+  "summary": "The oldest known farming village in Central Asia, in the foothills of the Kopet Dag mountains north of Ashgabat, Turkmenistan. About thirty one-room houses of sun-dried clay blocks, each with a hearth and plastered floor, housed perhaps 150–200 people. They grew barley and wheat and kept goats and sheep, much like the first farmers of Iran. Radiocarbon dates from British–Turkmen excavations show it was settled around 6000 BCE and used for only a few centuries.",
+  "unesco": false,
+  "sources": [
+   {
+    "title": "Wikipedia: Jeitun",
+    "url": "https://en.wikipedia.org/wiki/Jeitun"
+   },
+   {
+    "title": "Harris, Gosden & Charles 1996, Jeitun: recent excavations (Proceedings of the Prehistoric Society)",
+    "url": "https://www.cambridge.org/core/journals/proceedings-of-the-prehistoric-society/article/abs/jeitun-recent-excavations-at-an-early-neolithic-site-in-southern-turkmenistan/453D61E728C816C0B5BC4F37065990E9"
+   }
+  ]
+ },
+ {
+  "id": "rakhigarhi",
+  "name": "Rakhigarhi",
+  "altNames": [
+   "Rakhi Garhi"
+  ],
+  "lonlat": [
+   76.114,
+   29.293
+  ],
+  "kind": "city",
+  "built": -4600,
+  "until": -1900,
+  "dateLabel": "village from c. 4600 BCE; city c. 2600–1900 BCE",
+  "standing": false,
+  "evidence": "archaeology",
+  "evidenceNote": "The Indus script cannot be read, so the city is known from excavation and radiocarbon dating.",
+  "culture": null,
+  "summary": "One of the largest Indus cities, on the plain of the Ghaggar river in Haryana. Its mounds span a pre-Harappan village, an early town and a mature city of about 80–100 hectares or more, with planned streets, drains and a cemetery of the mature phase. In 2019 scientists read the first ancient genome from an Indus skeleton, found here; it showed no trace of the steppe ancestry that spread into South Asia later.",
+  "unesco": false,
+  "image": {
+   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Rakhigarhi_Harappan_civilization.jpg/960px-Rakhigarhi_Harappan_civilization.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Rakhigarhi_Harappan_civilization.jpg",
+   "caption": "One of the Rakhigarhi mounds",
+   "credit": "Durgeshkushvaha",
+   "license": "CC BY-SA 4.0"
+  },
+  "sources": [
+   {
+    "title": "Wikipedia: Rakhigarhi",
+    "url": "https://en.wikipedia.org/wiki/Rakhigarhi"
+   },
+   {
+    "title": "Wikipedia: Indus Valley Civilisation",
+    "url": "https://en.wikipedia.org/wiki/Indus_Valley_Civilisation"
+   }
+  ]
+ },
+ {
+  "id": "sarazm",
+  "name": "Sarazm",
+  "altNames": [],
+  "lonlat": [
+   67.461,
+   39.508
+  ],
+  "kind": "settlement",
+  "built": -3500,
+  "until": -2000,
+  "dateLabel": "c. 3500–2000 BCE (radiocarbon range 3900–2100 BCE)",
+  "standing": false,
+  "evidence": "archaeology",
+  "evidenceNote": "No writing existed; everything comes from excavations since 1977 and radiocarbon dates.",
+  "culture": null,
+  "summary": "A proto-urban settlement on the Zeravshan river near Panjakent, Tajikistan, and Tajikistan's first World Heritage Site. At its height it covered up to 90 hectares, with houses and workshops where copper and bronze were worked with techniques like those of Mesopotamia, Iran and the Indus. Pottery from Turkmenistan and Baluchistan shows its wide contacts, and it may have been a centre for mining turquoise and metals in the Zeravshan valley. It shows farming towns reaching the northern edge of Central Asia long before the steppe herders came.",
+  "unesco": true,
+  "image": {
+   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Sarazm%2Carea12-W.jpg/960px-Sarazm%2Carea12-W.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Sarazm,area12-W.jpg",
+   "caption": "Excavation area XII under a protective roof",
+   "credit": "Bertramz",
+   "license": "CC BY-SA 3.0"
+  },
+  "sources": [
+   {
+    "title": "Wikipedia: Sarazm",
+    "url": "https://en.wikipedia.org/wiki/Sarazm"
+   }
+  ]
+ },
+ {
+  "id": "kalibangan",
+  "name": "Kalibangan",
+  "altNames": [],
+  "lonlat": [
+   74.13,
+   29.474
+  ],
+  "kind": "city",
+  "built": -3500,
+  "until": -1750,
+  "dateLabel": "c. 3500–1750 BCE",
+  "standing": false,
+  "evidence": "archaeology",
+  "evidenceNote": "The Indus script cannot be read; the site is known from excavations of 1960–1969 and radiocarbon dates.",
+  "culture": null,
+  "summary": "A Harappan town on the dry Ghaggar river in Rajasthan with two phases. The earlier, walled settlement (about 3500–2600 BCE) left the world's earliest excavated ploughed field, marked with criss-cross furrows, and was ended by an earthquake around 2600 BCE. The rebuilt mature town had a fortified citadel on the west, a lower town of grid streets, and rows of fire altars that suggest ritual. Seals, weights and pottery tie it to Harappa and Mohenjo-daro.",
+  "unesco": false,
+  "image": {
+   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Westernmound.jpg/960px-Westernmound.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Westernmound.jpg",
+   "caption": "The western mound (citadel)",
+   "credit": "Kk himalaya",
+   "license": "Public domain"
+  },
+  "sources": [
+   {
+    "title": "Wikipedia: Kalibangan",
+    "url": "https://en.wikipedia.org/wiki/Kalibangan"
+   },
+   {
+    "title": "Wikipedia: Indus Valley Civilisation",
+    "url": "https://en.wikipedia.org/wiki/Indus_Valley_Civilisation"
+   }
+  ]
+ },
+ {
+  "id": "harappa",
+  "name": "Harappa",
+  "altNames": [],
+  "lonlat": [
+   72.864,
+   30.629
+  ],
+  "kind": "city",
+  "built": -3300,
+  "until": -1300,
+  "dateLabel": "c. 3300–1300 BCE; city at its height c. 2600–1900 BCE",
+  "standing": false,
+  "evidence": "archaeology",
+  "evidenceNote": "Thousands of short inscriptions survive, but the Indus script is undeciphered, so the city is known from excavation and radiocarbon dates.",
+  "culture": null,
+  "summary": "The first Indus city to be excavated, in the 1920s, which gave the Harappan civilisation its name. Near the old course of the Ravi in Pakistani Punjab, it grew from a village around 3300 BCE into a walled city of perhaps 23,500 people, with brick houses, drains, granary-like halls, workshops and cemeteries. Seals, standard weights and beads show long-distance trade. Much of its brick was taken for railway ballast in 1857. Late layers include the 'Cemetery H' burials.",
+  "unesco": false,
+  "image": {
+   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/View_of_Granary_and_Great_Hall_on_Mound_F_-_Archaeological_site_of_Harappa.jpg/960px-View_of_Granary_and_Great_Hall_on_Mound_F_-_Archaeological_site_of_Harappa.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:View_of_Granary_and_Great_Hall_on_Mound_F_-_Archaeological_site_of_Harappa.jpg",
+   "caption": "Granary and Great Hall on Mound F",
+   "credit": "Muhammad Bin Naveed",
+   "license": "CC BY-SA 3.0"
+  },
+  "sources": [
+   {
+    "title": "Wikipedia: Harappa",
+    "url": "https://en.wikipedia.org/wiki/Harappa"
+   },
+   {
+    "title": "Wikipedia: Indus Valley Civilisation",
+    "url": "https://en.wikipedia.org/wiki/Indus_Valley_Civilisation"
+   }
+  ]
+ },
+ {
+  "id": "kot-diji",
+  "name": "Kot Diji",
+  "altNames": [],
+  "lonlat": [
+   68.707,
+   27.346
+  ],
+  "kind": "settlement",
+  "built": -3300,
+  "until": -2100,
+  "dateLabel": "c. 3300–2100 BCE",
+  "standing": false,
+  "evidence": "archaeology",
+  "evidenceNote": "No readable writing; known from excavations in 1955–57 and comparison with other dated sites.",
+  "culture": "early-harappan",
+  "summary": "A fortified settlement in Sindh, Pakistan, across the Indus from Mohenjo-daro, which gave its name to the Kot Diji phase of the Early Harappan period. Excavations in 1955 and 1957 found a walled citadel on high ground and a town around it, with mudbrick houses and pottery of a style that spread across the region. Its later layers run on into the Mature Harappan period, showing how the regional cultures of the Indus valley grew into one civilisation. The hill above it is crowned by an 18th-century fort.",
+  "unesco": false,
+  "sources": [
+   {
+    "title": "Wikipedia: Kot Diji",
+    "url": "https://en.wikipedia.org/wiki/Kot_Diji"
+   }
+  ]
+ },
+ {
+  "id": "altyn-depe",
+  "name": "Altyn-Depe",
+  "altNames": [
+   "Altyn Tepe",
+   "Altyndepe"
+  ],
+  "lonlat": [
+   60.432,
+   36.858
+  ],
+  "kind": "city",
+  "built": -3200,
+  "until": -2000,
+  "dateLabel": "c. 3200–2000 BCE; urban c. 2400–2000 BCE",
+  "standing": false,
+  "evidence": "archaeology",
+  "evidenceNote": "No writing existed; dated by Soviet and later excavations since 1965 and radiocarbon dates.",
+  "culture": null,
+  "summary": "A Bronze Age town on the edge of the Kopet Dag near the Iran border in Turkmenistan. By the late third millennium BCE it covered about 25 hectares inside a mudbrick wall, with craftsmen's quarters, rich houses and a stepped, tower-like temple platform often compared to a ziggurat. Finds include Harappan-style seals and ivory, evidence of contact with the Indus cities. It was abandoned around 2000 BCE as settlement shifted east to the Murghab delta and the BMAC towns.",
+  "unesco": false,
+  "image": {
+   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Altyndepe%2C_Turkmenistan.jpg/960px-Altyndepe%2C_Turkmenistan.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Altyndepe,_Turkmenistan.jpg",
+   "caption": "The mound of the ancient town",
+   "credit": "Limin Huan",
+   "license": "Public domain"
+  },
+  "sources": [
+   {
+    "title": "Wikipedia: Altyndepe",
+    "url": "https://en.wikipedia.org/wiki/Altyndepe"
+   },
+   {
+    "title": "Wikipedia: Bactria–Margiana Archaeological Complex",
+    "url": "https://en.wikipedia.org/wiki/Bactria–Margiana_Archaeological_Complex"
+   }
+  ]
+ },
+ {
+  "id": "dholavira",
+  "name": "Dholavira",
+  "altNames": [],
+  "lonlat": [
+   70.214,
+   23.889
+  ],
+  "kind": "city",
+  "built": -3000,
+  "until": -1500,
+  "dateLabel": "c. 3000–1500 BCE (phases debated)",
+  "standing": true,
+  "evidence": "archaeology",
+  "evidenceNote": "The Indus script is undeciphered; dates come from excavations of 1990–2005 and radiocarbon, and scholars still argue over its phases.",
+  "culture": null,
+  "summary": "A Harappan city on Khadir Bet island in the Rann of Kutch, Gujarat, and a World Heritage Site since 2021. Built of stone as well as brick, it had a castle, a 'middle town' and a lower town, all walled, and a remarkable system of dams, channels and great rock-cut reservoirs to store scarce rain. A signboard of ten large Indus signs, once set in wood, was found by the north gate. Its dates are debated, from about 3500–1800 to 2650–1450 BCE.",
+  "unesco": true,
+  "image": {
+   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/DHOLAVIRA_SITE_%2824%29.jpg/960px-DHOLAVIRA_SITE_%2824%29.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:DHOLAVIRA_SITE_(24).jpg",
+   "caption": "Stone walls and the reservoir steps",
+   "credit": "Lalit Gajjer",
+   "license": "CC BY-SA 4.0"
+  },
+  "sources": [
+   {
+    "title": "Wikipedia: Dholavira",
+    "url": "https://en.wikipedia.org/wiki/Dholavira"
+   },
+   {
+    "title": "Wikipedia: Indus Valley Civilisation",
+    "url": "https://en.wikipedia.org/wiki/Indus_Valley_Civilisation"
+   }
+  ]
+ },
+ {
+  "id": "burzahom",
+  "name": "Burzahom",
+  "altNames": [],
+  "lonlat": [
+   74.867,
+   34.17
+  ],
+  "kind": "settlement",
+  "built": -3000,
+  "until": -1000,
+  "dateLabel": "c. 3000–1000 BCE",
+  "standing": false,
+  "evidence": "archaeology",
+  "evidenceNote": "No writing existed; dated by radiocarbon, which puts the first occupation before about 2350 BCE.",
+  "culture": "northern-neolithic",
+  "summary": "A Neolithic village near Srinagar in the Kashmir Valley. Its first farmers lived in pit dwellings dug into the ground, some with steps, and made bone and polished stone tools, including harvesting knives like those of China. Bones of dogs and deer were found buried with people, and a carved stone shows a hunting scene. Later people built mudbrick houses and raised large standing stones (menhirs). The finds show contacts with Central Asia and the Indus world.",
+  "unesco": false,
+  "sources": [
+   {
+    "title": "Wikipedia: Burzahom archaeological site",
+    "url": "https://en.wikipedia.org/wiki/Burzahom_archaeological_site"
+   },
+   {
+    "title": "Wikipedia: Gufkral",
+    "url": "https://en.wikipedia.org/wiki/Gufkral"
+   }
+  ]
+ },
+ {
+  "id": "mohenjo-daro",
+  "name": "Mohenjo-daro",
+  "altNames": [],
+  "lonlat": [
+   68.139,
+   27.329
+  ],
+  "kind": "city",
+  "built": -2500,
+  "until": -1700,
+  "dateLabel": "c. 2500–1700 BCE",
+  "standing": true,
+  "evidence": "archaeology",
+  "evidenceNote": "The Indus script cannot be read and the city's real name is unknown; it is known from excavations since the 1920s.",
+  "culture": null,
+  "summary": "The largest and best-preserved Indus city, beside the Indus in Sindh, Pakistan, and South Asia's first World Heritage Site (1980). At least 40,000 people may have lived in its baked-brick houses, laid out on a grid with covered drains, wells and bathrooms. A raised 'citadel' mound holds the Great Bath and a large hall. Famous finds include the bronze 'Dancing Girl', the 'Priest-King' statue and many stamp seals. It declined after about 1900 BCE and was abandoned.",
+  "unesco": true,
+  "image": {
+   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Mohenjodaro_-_view_of_the_stupa_mound.JPG/960px-Mohenjodaro_-_view_of_the_stupa_mound.JPG",
+   "page": "https://commons.wikimedia.org/wiki/File:Mohenjodaro_-_view_of_the_stupa_mound.JPG",
+   "caption": "The citadel mound, with a later Buddhist stupa on top",
+   "credit": "Saqib Qayyum",
+   "license": "CC BY-SA 3.0"
+  },
+  "sources": [
+   {
+    "title": "Wikipedia: Mohenjo-daro",
+    "url": "https://en.wikipedia.org/wiki/Mohenjo-daro"
+   },
+   {
+    "title": "Wikipedia: Indus Valley Civilisation",
+    "url": "https://en.wikipedia.org/wiki/Indus_Valley_Civilisation"
+   }
+  ]
+ },
+ {
+  "id": "gonur-depe",
+  "name": "Gonur Depe",
+  "altNames": [],
+  "lonlat": [
+   62.035,
+   38.21
+  ],
+  "kind": "city",
+  "built": -2400,
+  "until": -1600,
+  "dateLabel": "c. 2400–1600 BCE",
+  "standing": false,
+  "evidence": "archaeology",
+  "evidenceNote": "No writing has been found; dated by radiocarbon and by excavations from 1974 to 2013.",
+  "culture": "bmac",
+  "summary": "The largest centre of the Bactria–Margiana Archaeological Complex, in the old Murghab delta north of Merv, Turkmenistan. Excavated by Viktor Sarianidi, its fortified core held a palace, courtyards and buildings he saw as fire temples, inside walls with rectangular towers. A cemetery of more than 3,000 graves included rich tombs, one with a four-wheeled wagon and a foal, and goods linked to Iran and the Indus. Sarianidi's 'temple' readings are much debated.",
+  "unesco": false,
+  "sources": [
+   {
+    "title": "Wikipedia: Gonur Depe",
+    "url": "https://en.wikipedia.org/wiki/Gonur_Depe"
+   },
+   {
+    "title": "Wikipedia: Bactria–Margiana Archaeological Complex",
+    "url": "https://en.wikipedia.org/wiki/Bactria–Margiana_Archaeological_Complex"
+   }
+  ]
+ },
+ {
+  "id": "lothal",
+  "name": "Lothal",
+  "altNames": [],
+  "lonlat": [
+   72.249,
+   22.521
+  ],
+  "kind": "city",
+  "built": -2300,
+  "until": -1900,
+  "dateLabel": "c. 2300–1900 BCE",
+  "standing": true,
+  "evidence": "archaeology",
+  "evidenceNote": "The Indus script is undeciphered; dated by the 1955–60 excavations and radiocarbon, and the use of its big basin is disputed.",
+  "culture": null,
+  "summary": "One of the southernmost Indus towns, in Gujarat near the Gulf of Khambhat. Excavated from 1955, it had a raised acropolis, a lower town with drains, and bead-making workshops of carnelian and shell. Its most famous feature is a large brick basin that the excavator S. R. Rao identified as the world's oldest dock, linked to a river channel; other archaeologists think it was a water tank for irrigation or storage. Floods damaged the town around 1900 BCE.",
+  "unesco": false,
+  "image": {
+   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/The_drainage_system_at_Lothal_2.JPG/960px-The_drainage_system_at_Lothal_2.JPG",
+   "page": "https://commons.wikimedia.org/wiki/File:The_drainage_system_at_Lothal_2.JPG",
+   "caption": "Brick drains and bathing platforms",
+   "credit": "Abhilashdvbk",
+   "license": "CC BY-SA 3.0"
+  },
+  "sources": [
+   {
+    "title": "Wikipedia: Lothal",
+    "url": "https://en.wikipedia.org/wiki/Lothal"
+   },
+   {
+    "title": "Wikipedia: Indus Valley Civilisation",
+    "url": "https://en.wikipedia.org/wiki/Indus_Valley_Civilisation"
+   }
+  ]
+ },
+ {
+  "id": "arkaim",
+  "name": "Arkaim",
+  "altNames": [],
+  "lonlat": [
+   59.572,
+   52.649
+  ],
+  "kind": "settlement",
+  "built": -2150,
+  "until": -1650,
+  "dateLabel": "c. 2150–1650 BCE (published ranges vary)",
+  "standing": false,
+  "evidence": "archaeology",
+  "evidenceNote": "No writing existed; known from excavations since 1987 and radiocarbon dates.",
+  "culture": "sintashta-culture",
+  "summary": "A circular fortified settlement of the Sintashta culture in the southern Urals, discovered in 1987 just before the valley was to be flooded for a reservoir; the find saved it. Two rings of walls enclosed about sixty houses arranged like the spokes of a wheel, each with a hearth, well and copper furnace. It is now a protected reserve. The find also set off far-fetched nationalist speculation, which archaeologists reject.",
+  "unesco": false,
+  "image": {
+   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/%D0%90%D1%80%D0%BA%D0%B0%D0%B8%D0%BC_2015_%28cropped%29.jpg/960px-%D0%90%D1%80%D0%BA%D0%B0%D0%B8%D0%BC_2015_%28cropped%29.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:%D0%90%D1%80%D0%BA%D0%B0%D0%B8%D0%BC_2015_(cropped).jpg",
+   "caption": "Aerial view of the ring-shaped settlement",
+   "credit": "Rafikova m",
+   "license": "CC BY-SA 4.0"
+  },
+  "sources": [
+   {
+    "title": "Wikipedia: Arkaim",
+    "url": "https://en.wikipedia.org/wiki/Arkaim"
+   },
+   {
+    "title": "Wikipedia: Sintashta culture",
+    "url": "https://en.wikipedia.org/wiki/Sintashta_culture"
+   }
+  ]
+ },
+ {
+  "id": "sintashta",
+  "name": "Sintashta",
+  "altNames": [],
+  "lonlat": [
+   60.188,
+   52.486
+  ],
+  "kind": "settlement",
+  "built": -2100,
+  "until": -1800,
+  "dateLabel": "c. 2100–1800 BCE",
+  "standing": false,
+  "evidence": "archaeology",
+  "evidenceNote": "No writing existed; dated by radiocarbon from excavations since 1968.",
+  "culture": "sintashta-culture",
+  "summary": "A fortified settlement in the steppe east of the southern Urals, in Russia, and the type site of the Sintashta culture. Ditches and walls ringed some fifty or sixty houses, of which thirty-one survive the river's erosion, and so much copper-working was found that it is called a fortified metallurgical centre. Its graves hold some of the earliest known chariots, with spoked wheels, buried with horses and weapons. Many scholars link Sintashta to early speakers of Indo-Iranian languages.",
+  "unesco": false,
+  "sources": [
+   {
+    "title": "Wikipedia: Sintashta",
+    "url": "https://en.wikipedia.org/wiki/Sintashta"
+   },
+   {
+    "title": "Wikipedia: Sintashta culture",
+    "url": "https://en.wikipedia.org/wiki/Sintashta_culture"
+   }
+  ]
+ },
+ {
+  "id": "shortugai",
+  "name": "Shortugai",
+  "altNames": [
+   "Shortughai"
+  ],
+  "lonlat": [
+   69.525,
+   37.325
+  ],
+  "kind": "settlement",
+  "built": -2000,
+  "until": -1700,
+  "dateLabel": "c. 2000–1700 BCE",
+  "standing": false,
+  "evidence": "archaeology",
+  "evidenceNote": "Known from French excavations in the 1970s; its Harappan seals and pottery date it alongside the Indus cities.",
+  "culture": null,
+  "summary": "The northernmost Indus settlement, on the Amu Darya (Oxus) in northern Afghanistan, more than 1,000 km from the Indus. French archaeologists found Harappan pottery, a seal with a rhinoceros, beads and bricks of Indus proportions. It was most likely a trading post near the lapis lazuli mines of Badakhshan, collecting the deep-blue stone and perhaps tin for the Indus cities. Irrigation canals fed its fields. Later layers show influence from the local Bronze Age cultures.",
+  "unesco": false,
+  "sources": [
+   {
+    "title": "Wikipedia: Shortugai",
+    "url": "https://en.wikipedia.org/wiki/Shortugai"
+   }
+  ]
+ },
+ {
+  "id": "sinauli",
+  "name": "Sinauli",
+  "altNames": [
+   "Sanauli"
+  ],
+  "lonlat": [
+   77.351,
+   29.246
+  ],
+  "kind": "tomb",
+  "built": -2000,
+  "until": -1500,
+  "dateLabel": "c. 2000–1500 BCE",
+  "standing": false,
+  "evidence": "disputed",
+  "evidenceNote": "The burials and carts are real and dated to around 2000–1500 BCE, but whether the carts were horse-drawn war chariots, and who the people were, is argued over.",
+  "culture": "ochre-coloured-pottery",
+  "summary": "A Bronze Age cemetery in western Uttar Pradesh, excavated in 2005–06 and 2018. It held many burials, some in wooden coffins decorated with copper, with copper swords, shields, a helmet and pottery. In 2018 three carts with solid wooden wheels covered in copper sheet were found in graves. The excavators called them chariots and linked them to warriors of the Vedic or Harappan world; other archaeologists say solid wheels suit ox-carts and place the site in the Ochre Coloured Pottery culture.",
+  "unesco": false,
+  "sources": [
+   {
+    "title": "Wikipedia: Sinauli",
+    "url": "https://en.wikipedia.org/wiki/Sinauli"
+   },
+   {
+    "title": "Wikipedia: Ochre Coloured Pottery culture",
+    "url": "https://en.wikipedia.org/wiki/Ochre_Coloured_Pottery_culture"
+   }
+  ]
+ },
+ {
+  "id": "dwarka-offshore",
+  "name": "Submerged structures off Dwarka",
+  "altNames": [
+   "Dvaraka",
+   "Dwaraka"
+  ],
+  "lonlat": [
+   68.95,
+   22.24
+  ],
+  "kind": "other",
+  "built": -1500,
+  "until": 1500,
+  "dateLabel": "disputed: c. 1500 BCE (S. R. Rao) or historical to medieval times",
+  "standing": false,
+  "evidence": "disputed",
+  "evidenceNote": "Real stone walls and anchors lie on the sea floor, but their age is disputed and nothing proves they are Krishna's city of the epics.",
+  "culture": null,
+  "summary": "Divers of India's National Institute of Oceanography explored the sea off Dwarka and Bet Dwarka in Gujarat from 1983. They found stone blocks, walls and many stone anchors. The excavator S. R. Rao argued that they belonged to a city of about 1500 BCE and identified it with Dvaraka, Krishna's capital in the Mahabharata, which the epic says was swallowed by the sea. Later surveys compared the anchors to types used from ancient to late medieval times and dated the structures to the historical period. Dwarka is a sacred pilgrimage town.",
+  "unesco": false,
+  "sources": [
+   {
+    "title": "Wikipedia: Dvārakā",
+    "url": "https://en.wikipedia.org/wiki/Dvārakā"
+   },
+   {
+    "title": "Wikipedia: Dwarka",
+    "url": "https://en.wikipedia.org/wiki/Dwarka"
+   },
+   {
+    "title": "Wikipedia: Bet Dwarka",
+    "url": "https://en.wikipedia.org/wiki/Bet_Dwarka"
+   }
+  ]
+ },
+ {
+  "id": "sivagalai",
+  "name": "Sivagalai",
+  "altNames": [
+   "Sivakalai"
+  ],
+  "lonlat": [
+   77.974,
+   8.639
+  ],
+  "kind": "tomb",
+  "built": -1200,
+  "until": -700,
+  "dateLabel": "c. 1200–700 BCE (rice from a burial urn); a claim of iron at 3345 BCE is disputed",
+  "standing": false,
+  "evidence": "disputed",
+  "evidenceNote": "A 2025 Tamil Nadu report dated iron here to 3345 BCE from charcoal, but rice from an urn with iron gave about 1155 BCE, and scholars question the early dates.",
+  "culture": "megalithic-south-india",
+  "summary": "An Iron Age urn-burial site near Adichanallur in Thoothukudi district, Tamil Nadu, excavated by the state's archaeology department. In January 2025 its report 'Antiquity of Iron' announced radiocarbon and luminescence dates of 3345–2953 BCE for layers with iron objects, which would make it the oldest iron-working anywhere. Rice from an intact burial urn holding iron tools dated to about 1155 BCE, and scholars have pointed to disturbed layers and mixed samples, so the claim is not accepted as proven.",
+  "unesco": false,
+  "sources": [
+   {
+    "title": "Wikipedia: Iron Age in India",
+    "url": "https://en.wikipedia.org/wiki/Iron_Age_in_India"
+   },
+   {
+    "title": "Wikipedia: Sivagalai",
+    "url": "https://en.wikipedia.org/wiki/Sivagalai"
+   },
+   {
+    "title": "Free Press Journal (23 Jan 2025): Tamil Nadu report dates iron to 3345 BCE",
+    "url": "https://www.freepressjournal.in/india/iron-age-in-tamil-nadu-dates-back-to-3345-bce-cm-mk-stalin-unveils-groundbreaking-report"
+   }
+  ]
+ },
+ {
+  "id": "hastinapur",
+  "name": "Hastinapur",
+  "altNames": [],
+  "lonlat": [
+   78.02,
+   29.17
+  ],
+  "kind": "settlement",
+  "built": -1100,
+  "until": 1400,
+  "dateLabel": "Painted Grey Ware town c. 1100–800 BCE (Lal; 2021–22 dig: from c. 1500 BCE); occupied into medieval times",
+  "standing": false,
+  "evidence": "archaeology",
+  "evidenceNote": "The mound is excavated and dated by pottery and radiocarbon; its link to the Kuru capital of the Mahabharata comes from tradition, not proof.",
+  "culture": "painted-grey-ware",
+  "summary": "A mound on the old bank of the Ganga in Meerut district, Uttar Pradesh, traditionally the capital of the Kuru kings in the Mahabharata and holy to Jains. B. B. Lal's excavations in 1950–52 found a Painted Grey Ware village of the early Iron Age, dated about 1100–800 BCE, ended by a Ganga flood, with later early-historic towns above. Lal linked that flood to the Mahabharata's story of a Ganga flood under King Nichakshu, a link many historians treat as tradition, not dated history.",
+  "unesco": false,
+  "sources": [
+   {
+    "title": "Wikipedia: Hastinapur",
+    "url": "https://en.wikipedia.org/wiki/Hastinapur"
+   },
+   {
+    "title": "Wikipedia: Painted Grey Ware culture",
+    "url": "https://en.wikipedia.org/wiki/Painted_Grey_Ware_culture"
+   }
+  ]
+ },
+ {
+  "id": "adichanallur",
+  "name": "Adichanallur",
+  "altNames": [],
+  "lonlat": [
+   77.873,
+   8.628
+  ],
+  "kind": "tomb",
+  "built": -1000,
+  "until": -600,
+  "dateLabel": "c. 1000–600 BCE (radiocarbon); earlier claims debated",
+  "standing": false,
+  "evidence": "archaeology",
+  "evidenceNote": "Dated by radiocarbon (one set gives 905–696 BCE); claims of much older dates and of writing on the urns remain debated.",
+  "culture": "megalithic-south-india",
+  "summary": "A huge urn-burial ground on the Tamirabarani river in Thoothukudi district, Tamil Nadu, first dug in 1876 and by Alexander Rea in 1899–1905. Large pottery urns held human bones together with iron weapons and tools, bronze vessels and ornaments, and gold diadems. Excavations from 2004 found about 169 more urns, and radiocarbon dates put the burials in the early first millennium BCE. It is one of the key sites of the Iron Age of the far south, near the later Pandya port of Korkai.",
+  "unesco": false,
+  "image": {
+   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Adichanallur_Urn.jpg/960px-Adichanallur_Urn.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Adichanallur_Urn.jpg",
+   "caption": "Burial urns in an excavation trench",
+   "credit": "Balurbala",
+   "license": "CC BY-SA 4.0"
+  },
+  "sources": [
+   {
+    "title": "Wikipedia: Adichanallur",
+    "url": "https://en.wikipedia.org/wiki/Adichanallur"
+   },
+   {
+    "title": "Wikipedia: Iron Age in India",
+    "url": "https://en.wikipedia.org/wiki/Iron_Age_in_India"
+   }
+  ]
+ },
+ {
+  "id": "taxila",
+  "name": "Taxila",
+  "altNames": [
+   "Takshashila"
+  ],
+  "lonlat": [
+   72.788,
+   33.746
+  ],
+  "kind": "city",
+  "built": -1000,
+  "until": 500,
+  "dateLabel": "c. 1000 BCE–5th century CE",
+  "standing": true,
+  "evidence": "written",
+  "evidenceNote": "Named by the grammarian Panini, by Greek writers who came with Alexander, and in inscriptions; its three city sites are excavated.",
+  "culture": null,
+  "summary": "A city of ancient Gandhara near Rawalpindi, Pakistan, at the meeting of routes from India, Central Asia and Iran. Its three cities, the Bhir Mound (from about the 6th century BCE), Sirkap (laid out by Indo-Greek kings) and Sirsukh (founded by the Kushans), together with Buddhist stupas and monasteries such as Dharmarajika, span about a thousand years. Its king submitted to Alexander in 326 BCE, and it was famous for learning. The Huns devastated it in the 5th century CE.",
+  "unesco": true,
+  "image": {
+   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Dharmarajika_stupa%2CTaxila.jpg/960px-Dharmarajika_stupa%2CTaxila.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Dharmarajika_stupa,Taxila.jpg",
+   "caption": "The Dharmarajika stupa",
+   "credit": "Sasha Isachenko",
+   "license": "CC BY-SA 3.0"
+  },
+  "sources": [
+   {
+    "title": "Wikipedia: Taxila",
+    "url": "https://en.wikipedia.org/wiki/Taxila"
+   }
+  ]
+ },
+ {
+  "id": "anuradhapura",
+  "name": "Anuradhapura",
+  "altNames": [],
+  "lonlat": [
+   80.411,
+   8.335
+  ],
+  "kind": "city",
+  "built": -900,
+  "until": null,
+  "dateLabel": "settled c. 900 BCE; capital from the 4th century BCE to the 10th century CE; sacred city today",
+  "standing": true,
+  "evidence": "written",
+  "evidenceNote": "Described in the Sri Lankan chronicles and in hundreds of inscriptions; excavations show settlement from about 900 BCE.",
+  "culture": null,
+  "summary": "The first great capital of Sri Lanka, on the Malwathu Oya in the island's dry north. Excavations show an Iron Age village from about 900 BCE; the chronicle Mahavamsa says King Pandukabhaya made it a capital in the 4th century BCE. It became a centre of Theravada Buddhism, with giant brick stupas such as the Ruwanwelisaya, the sacred Bodhi tree grown from a cutting of the Buddha's tree, and great irrigation reservoirs. It was sacked by the Cholas in 993 CE but remains a pilgrimage city.",
+  "unesco": true,
+  "image": {
+   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Ruwanweli_Maha_Saaya.jpg/960px-Ruwanweli_Maha_Saaya.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Ruwanweli_Maha_Saaya.jpg",
+   "caption": "The Ruwanwelisaya stupa (2nd century BCE, restored in modern times)",
+   "credit": "Thisaru Tharuka",
+   "license": "CC BY-SA 4.0"
+  },
+  "sources": [
+   {
+    "title": "Wikipedia: Anuradhapura",
+    "url": "https://en.wikipedia.org/wiki/Anuradhapura"
+   }
+  ]
+ },
+ {
+  "id": "hire-benakal",
+  "name": "Hire Benakal",
+  "altNames": [
+   "Hirebenakal"
+  ],
+  "lonlat": [
+   76.456,
+   15.438
+  ],
+  "kind": "megalith",
+  "built": -800,
+  "until": -200,
+  "dateLabel": "c. 800–200 BCE",
+  "standing": true,
+  "evidence": "archaeology",
+  "evidenceNote": "No writing; dated by the style of the tombs and finds and by comparison with dated megalithic sites.",
+  "culture": "megalithic-south-india",
+  "summary": "The largest megalithic cemetery in South India, on a rocky range of seven hills near Gangavati in Koppal district, Karnataka. About 400 tombs stand here, many of them dolmens: box-like chambers of huge stone slabs with a capstone, some with a round 'porthole' in one side, plus menhirs and stone circles. They date from the change from the Neolithic to the Iron Age, roughly 800–200 BCE. Painted rock shelters nearby show animals and people.",
+  "unesco": false,
+  "image": {
+   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Pre-historic_tombs-1.JPG/960px-Pre-historic_tombs-1.JPG",
+   "page": "https://commons.wikimedia.org/wiki/File:Pre-historic_tombs-1.JPG",
+   "caption": "Dolmens on the hillside",
+   "credit": "Sudeep m",
+   "license": "CC BY-SA 3.0"
+  },
+  "sources": [
+   {
+    "title": "Wikipedia: Hire Benakal",
+    "url": "https://en.wikipedia.org/wiki/Hire_Benakal"
+   }
+  ]
+ },
+ {
+  "id": "pataliputra-kumhrar",
+  "name": "Pataliputra (Kumhrar)",
+  "altNames": [
+   "Patna",
+   "Palibothra"
+  ],
+  "lonlat": [
+   85.185,
+   25.599
+  ],
+  "kind": "city",
+  "built": -600,
+  "until": 600,
+  "dateLabel": "c. 600 BCE–600 CE",
+  "standing": false,
+  "evidence": "written",
+  "evidenceNote": "Described by the Greek envoy Megasthenes and in Indian texts; the remains at Kumhrar were excavated from 1912.",
+  "culture": null,
+  "summary": "Remains of ancient Pataliputra, capital of Magadha and of the Maurya and Gupta empires, excavated at Kumhrar in modern Patna, Bihar. The town began as a fort built by Ajatashatru by the Ganga; under Chandragupta Maurya and Ashoka it became one of the largest cities in the world, visited and described by the Greek envoy Megasthenes. Excavators found a hall of 80 polished sandstone pillars of the Mauryan period and four phases of occupation from about 600 BCE to 600 CE.",
+  "unesco": false,
+  "image": {
+   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Ruins_of_Arogya_Vihar%2C_Kumhrar.jpg/960px-Ruins_of_Arogya_Vihar%2C_Kumhrar.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Ruins_of_Arogya_Vihar,_Kumhrar.jpg",
+   "caption": "Excavated brick ruins at Kumhrar",
+   "credit": "Mowglee",
+   "license": "CC BY-SA 4.0"
+  },
+  "sources": [
+   {
+    "title": "Wikipedia: Kumhrar",
+    "url": "https://en.wikipedia.org/wiki/Kumhrar"
+   },
+   {
+    "title": "Wikipedia: Pataliputra",
+    "url": "https://en.wikipedia.org/wiki/Pataliputra"
+   }
+  ]
+ },
+ {
+  "id": "keezhadi",
+  "name": "Keezhadi",
+  "altNames": [
+   "Keeladi"
+  ],
+  "lonlat": [
+   78.182,
+   9.863
+  ],
+  "kind": "settlement",
+  "built": -600,
+  "until": 300,
+  "dateLabel": "6th century BCE–3rd century CE (radiocarbon); excavator proposes 8th century BCE; ASI questions this",
+  "standing": false,
+  "evidence": "disputed",
+  "evidenceNote": "The town is real and radiocarbon-dated, but how early it began, and whether its inscribed potsherds are as old as the oldest dates, are contested.",
+  "culture": null,
+  "summary": "An early town on the Vaigai river near Madurai, Tamil Nadu, found in 2014 and excavated by the Archaeological Survey of India and then the Tamil Nadu archaeology department. Finds include ivory and terracotta dice, figurines, iron tools, punch-marked coins and potsherds scratched with Tamil-Brahmi names. Tamil Nadu reports radiocarbon dates from the 6th century BCE. The excavator, Amarnath Ramakrishna, argues for the 8th century BCE; in 2025 the ASI asked him to justify this. Some archaeologists doubt the inscribed sherds come from the earliest layers.",
+  "unesco": false,
+  "sources": [
+   {
+    "title": "Wikipedia: Keezhadi",
+    "url": "https://en.wikipedia.org/wiki/Keezhadi"
+   },
+   {
+    "title": "Scroll.in (23 May 2025): ASI asks Amarnath Ramakrishna to rework his Keeladi report",
+    "url": "https://scroll.in/latest/1082714/asi-asks-archaeologist-amarnath-ramakrishna-to-rework-his-keeladi-excavation-report"
+   }
+  ]
+ },
+ {
+  "id": "merv",
+  "name": "Merv",
+  "altNames": [
+   "Margu",
+   "Antiochia Margiana"
+  ],
+  "lonlat": [
+   62.193,
+   37.663
+  ],
+  "kind": "city",
+  "built": -550,
+  "until": 1700,
+  "dateLabel": "city c. 550 BCE–18th century CE",
+  "standing": true,
+  "evidence": "written",
+  "evidenceNote": "Named as Margu in Darius the Great's Behistun inscription (c. 515 BCE) and by later writers; its walled cities are excavated.",
+  "culture": null,
+  "summary": "A great oasis city of the Murghab delta in Turkmenistan. The first walled city, Erk Kala, was founded in the 6th century BCE as the Achaemenid Persians took over Margiana. The Seleucid king Antiochus I rebuilt it as Antiochia Margiana (today's Gyaur Kala), and Parthians, Kushans and Sasanians later ruled it; Buddhist stupas stood here. In the Middle Ages it became one of the largest cities in the world. Its overlapping walled cities form a World Heritage Site.",
+  "unesco": true,
+  "image": {
+   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Turkmenistan_Merv_city.jpg/960px-Turkmenistan_Merv_city.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Turkmenistan_Merv_city.jpg",
+   "caption": "The Great Kyz Kala, a later (6th–7th century CE) building at Merv",
+   "credit": "Kalpak Travel",
+   "license": "CC BY-SA 4.0"
+  },
+  "sources": [
+   {
+    "title": "Wikipedia: Merv",
+    "url": "https://en.wikipedia.org/wiki/Merv"
+   }
+  ]
+ },
+ {
+  "id": "kodumanal",
+  "name": "Kodumanal",
+  "altNames": [
+   "Kodumanam"
+  ],
+  "lonlat": [
+   77.512,
+   11.113
+  ],
+  "kind": "settlement",
+  "built": -500,
+  "until": -50,
+  "dateLabel": "c. 5th–1st century BCE (dates debated)",
+  "standing": false,
+  "evidence": "written",
+  "evidenceNote": "Named Kodumanam in the Sangam poems of the Patirruppattu, and its potsherds carry Tamil-Brahmi names; its dates rest on a few radiocarbon samples.",
+  "culture": null,
+  "summary": "An ancient craft town on the Noyyal river in Erode district, Tamil Nadu, called Kodumanam in Sangam poetry. Excavations found furnaces for iron and high-carbon steel, workshops cutting beads of carnelian, lapis lazuli, sapphire and quartz, megalithic burials and many potsherds with Tamil-Brahmi inscriptions. It lay on the trade route between the west-coast port of Muziris and Kaveripattinam on the east coast, part of the Indo-Roman trade network.",
+  "unesco": false,
+  "sources": [
+   {
+    "title": "Wikipedia: Kodumanal",
+    "url": "https://en.wikipedia.org/wiki/Kodumanal"
+   }
+  ]
+ },
+ {
+  "id": "pattanam",
+  "name": "Pattanam",
+  "altNames": [
+   "Muziris?"
+  ],
+  "lonlat": [
+   76.209,
+   10.157
+  ],
+  "kind": "settlement",
+  "built": -300,
+  "until": 500,
+  "dateLabel": "c. 3rd century BCE–5th century CE",
+  "standing": false,
+  "evidence": "disputed",
+  "evidenceNote": "The excavated port is real, but whether it is Muziris, the famous Roman pepper port, is debated; some place Muziris at nearby Kodungallur.",
+  "culture": null,
+  "summary": "A buried port town near North Paravur in Kerala, excavated by the Kerala Council for Historical Research. It yielded a wharf, a dugout canoe, teak mooring posts and thousands of finds: Roman amphorae and glass, West Asian and Chinese pottery, beads and coins, mostly from about the 3rd century BCE to the 5th century CE. Its excavators identify it with Muziris, the great pepper port of Roman texts and Tamil poems. Other scholars argue Muziris lay at Kodungallur, where no comparable excavation has been made.",
+  "unesco": false,
+  "sources": [
+   {
+    "title": "Wikipedia: Pattanam",
+    "url": "https://en.wikipedia.org/wiki/Pattanam"
+   },
+   {
+    "title": "Wikipedia: Muziris",
+    "url": "https://en.wikipedia.org/wiki/Muziris"
+   }
+  ]
+ },
+ {
+  "id": "ai-khanoum",
+  "name": "Ai-Khanoum",
+  "altNames": [],
+  "lonlat": [
+   69.408,
+   37.165
+  ],
+  "kind": "city",
+  "built": -290,
+  "until": -145,
+  "dateLabel": "c. 290–145 BCE",
+  "standing": false,
+  "evidence": "written",
+  "evidenceNote": "Greek inscriptions found in the city, including Delphic maxims, date and describe it; its ancient name is unknown.",
+  "culture": null,
+  "summary": "A Greek city on the Amu Darya (Oxus) in northern Afghanistan, probably founded by a Seleucid governor around 300–285 BCE and a centre of the Greco-Bactrian kingdom. French excavations from 1964 uncovered a palace, a gymnasium, a theatre for about 6,000 people, temples and Greek inscriptions, including moral maxims copied from Delphi. It shows Greek culture flourishing in the heart of Asia. Saka invaders captured it around 145 BCE, and in recent decades the site has been badly looted.",
+  "unesco": false,
+  "sources": [
+   {
+    "title": "Wikipedia: Ai-Khanoum",
+    "url": "https://en.wikipedia.org/wiki/Ai-Khanoum"
+   }
+  ]
+ },
+ {
+  "id": "sanchi",
+  "name": "Sanchi",
+  "altNames": [
+   "Great Stupa of Sanchi"
+  ],
+  "lonlat": [
+   77.74,
+   23.479
+  ],
+  "kind": "monument",
+  "built": -250,
+  "until": 1200,
+  "dateLabel": "3rd century BCE–12th century CE",
+  "standing": true,
+  "evidence": "written",
+  "evidenceNote": "Hundreds of donor inscriptions on the railings and gateways, and an Ashokan edict, record who built and paid for it.",
+  "culture": null,
+  "summary": "A hilltop group of Buddhist monuments near Vidisha in Madhya Pradesh. The Great Stupa was begun by Ashoka in the 3rd century BCE as a brick dome over relics of the Buddha; it was later enlarged in stone and given a railing and four carved gateways (toranas) in the 1st century BCE, covered with stories from the Buddha's lives. Temples and monasteries were added until the 12th century CE. It is one of the oldest stone structures in India.",
+  "unesco": true,
+  "image": {
+   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/East_Gateway_-_Stupa_1_-_Sanchi_Hill_2013-02-21_4398.JPG/960px-East_Gateway_-_Stupa_1_-_Sanchi_Hill_2013-02-21_4398.JPG",
+   "page": "https://commons.wikimedia.org/wiki/File:East_Gateway_-_Stupa_1_-_Sanchi_Hill_2013-02-21_4398.JPG",
+   "caption": "East gateway of the Great Stupa",
+   "credit": "Biswarup Ganguly",
+   "license": "CC BY 3.0"
+  },
+  "sources": [
+   {
+    "title": "Wikipedia: Sanchi Stupa",
+    "url": "https://en.wikipedia.org/wiki/Sanchi_Stupa"
+   }
+  ]
+ },
+ {
+  "id": "sarnath",
+  "name": "Sarnath",
+  "altNames": [
+   "Isipatana",
+   "Deer Park"
+  ],
+  "lonlat": [
+   83.025,
+   25.378
+  ],
+  "kind": "monument",
+  "built": -250,
+  "until": 1194,
+  "dateLabel": "c. 250 BCE–1194 CE",
+  "standing": true,
+  "evidence": "written",
+  "evidenceNote": "Ashoka's pillar inscription, later inscriptions and accounts of Chinese pilgrims describe the site.",
+  "culture": null,
+  "summary": "The deer park near Varanasi where, by Buddhist tradition, the Buddha gave his first sermon. Ashoka raised a polished sandstone pillar here around 250 BCE, crowned by four lions back to back; this Lion Capital is now the State Emblem of India. Stupas, including the great Dhamek Stupa, and monasteries were built over the next 1,400 years, until the site was sacked in 1194. It was added to the World Heritage List in July 2026.",
+  "unesco": true,
+  "image": {
+   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Ancient_Buddhist_monasteries_near_Dhamekh_Stupa_Monument_Site%2C_Sarnath.jpg/960px-Ancient_Buddhist_monasteries_near_Dhamekh_Stupa_Monument_Site%2C_Sarnath.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Ancient_Buddhist_monasteries_near_Dhamekh_Stupa_Monument_Site,_Sarnath.jpg",
+   "caption": "Monastery ruins with the Dhamek Stupa behind",
+   "credit": "Yusuke Kawasaki",
+   "license": "CC BY 2.0"
+  },
+  "sources": [
+   {
+    "title": "Wikipedia: Sarnath",
+    "url": "https://en.wikipedia.org/wiki/Sarnath"
+   },
+   {
+    "title": "Free Press Journal (July 2026): Sarnath added to UNESCO World Heritage List",
+    "url": "https://www.freepressjournal.in/uttar-pradesh/uttar-pradesh-sarnath-added-to-unesco-world-heritage-list-becomes-states-fourth-heritage-site"
+   }
+  ]
+ },
+ {
+  "id": "girnar-rock-edicts",
+  "name": "Junagadh rock inscriptions (Girnar)",
+  "altNames": [
+   "Girnar rock edicts"
+  ],
+  "lonlat": [
+   70.482,
+   21.533
+  ],
+  "kind": "monument",
+  "built": -250,
+  "until": null,
+  "dateLabel": "Ashoka c. 250 BCE; Rudradaman c. 150 CE; Skandagupta c. 456 CE",
+  "standing": true,
+  "evidence": "written",
+  "evidenceNote": "The boulder itself is the written record: three dated royal inscriptions cut into it over 700 years.",
+  "culture": null,
+  "summary": "A large granite boulder at the foot of Mount Girnar, near Junagadh in Gujarat, carved with three royal inscriptions. The oldest is a set of fourteen of Ashoka's Major Rock Edicts, in Brahmi script, about moral rule. Around 150 CE the Western Satrap Rudradaman added one of the earliest long Sanskrit inscriptions, describing the repair of the Sudarshana reservoir first built under the Mauryas. A third, of the Gupta king Skandagupta, records repairs to the same dam. It is now sheltered by a building.",
+  "unesco": false,
+  "image": {
+   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Ashoka_Rock_Edict_at_Junagadh.jpg/960px-Ashoka_Rock_Edict_at_Junagadh.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Ashoka_Rock_Edict_at_Junagadh.jpg",
+   "caption": "The inscribed boulder inside its shelter",
+   "credit": "Jadia gaurang at English Wikipedia",
+   "license": "CC BY-SA 3.0"
+  },
+  "sources": [
+   {
+    "title": "Wikipedia: Junagadh rock inscription of Rudradaman",
+    "url": "https://en.wikipedia.org/wiki/Junagadh_rock_inscription_of_Rudradaman"
+   },
+   {
+    "title": "Wikipedia: Major Rock Edicts",
+    "url": "https://en.wikipedia.org/wiki/Major_Rock_Edicts"
+   }
+  ]
+ },
+ {
+  "id": "amaravati",
+  "name": "Amaravati Stupa",
+  "altNames": [],
+  "lonlat": [
+   80.358,
+   16.575
+  ],
+  "kind": "monument",
+  "built": -250,
+  "until": 1350,
+  "dateLabel": "3rd century BCE–c. 250 CE; known as a centre until the 14th century",
+  "standing": false,
+  "evidence": "written",
+  "evidenceNote": "Inscriptions on its sculptures name donors and kings, and later texts mention it; the stupa itself is reduced to its base.",
+  "culture": null,
+  "summary": "A great Buddhist stupa beside the Krishna river in Andhra Pradesh, near the ancient city of Dharanikota. Built in phases from the 3rd century BCE to about 250 CE, under Satavahana and later rulers, it was faced with finely carved limestone slabs, some showing the stupa itself. Its style influenced Buddhist art in Sri Lanka and Southeast Asia. Neglected after Buddhism declined, it was buried under rubble until Colin Mackenzie surveyed it in 1816; many reliefs are now in Chennai, Amaravati and the British Museum.",
+  "unesco": false,
+  "image": {
+   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/British_Museum_Asia_14.jpg/960px-British_Museum_Asia_14.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:British_Museum_Asia_14.jpg",
+   "caption": "Carved drum slab showing a stupa (British Museum)",
+   "credit": "Gryffindor",
+   "license": "CC BY-SA 3.0"
+  },
+  "sources": [
+   {
+    "title": "Wikipedia: Amaravati Stupa",
+    "url": "https://en.wikipedia.org/wiki/Amaravati_Stupa"
+   }
+  ]
+ },
+ {
+  "id": "lumbini-pillar",
+  "name": "Lumbini pillar of Ashoka",
+  "altNames": [],
+  "lonlat": [
+   83.276,
+   27.47
+  ],
+  "kind": "monument",
+  "built": -245,
+  "until": null,
+  "dateLabel": "c. 249–242 BCE (Ashoka's 20th regnal year)",
+  "standing": true,
+  "evidence": "written",
+  "evidenceNote": "Its Brahmi inscription states that Ashoka came here twenty years after his coronation because the Buddha was born here.",
+  "culture": null,
+  "summary": "A sandstone pillar in Lumbini, southern Nepal, raised by the emperor Ashoka when he visited the birthplace of the Buddha. Its short inscription in Prakrit says the king worshipped here 'because the Buddha Shakyamuni was born here' and made the village of Lumbini free of taxes, paying only an eighth share of its produce. The pillar was found in 1896, guided by the accounts of the Chinese pilgrims Faxian and Xuanzang, and the inscription helped confirm where the Buddha was born. Lumbini is a World Heritage Site.",
+  "unesco": true,
+  "image": {
+   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Lumbini_pillar_excavation_1896.jpg/960px-Lumbini_pillar_excavation_1896.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Lumbini_pillar_excavation_1896.jpg",
+   "caption": "The pillar during its excavation in 1896",
+   "credit": "Alois Anton Führer",
+   "license": "Public domain"
+  },
+  "sources": [
+   {
+    "title": "Wikipedia: Lumbini pillar inscription",
+    "url": "https://en.wikipedia.org/wiki/Lumbini_pillar_inscription"
+   },
+   {
+    "title": "Wikipedia: Minor Pillar Edicts",
+    "url": "https://en.wikipedia.org/wiki/Minor_Pillar_Edicts"
+   }
+  ]
+ },
+ {
+  "id": "lauriya-nandangarh",
+  "name": "Lauriya Nandangarh",
+  "altNames": [
+   "Lauria Nandangarh"
+  ],
+  "lonlat": [
+   84.409,
+   26.998
+  ],
+  "kind": "monument",
+  "built": -240,
+  "until": null,
+  "dateLabel": "pillar c. 243–236 BCE (dating of Ashoka's reign varies)",
+  "standing": true,
+  "evidence": "written",
+  "evidenceNote": "The pillar carries six of Ashoka's Pillar Edicts in Brahmi, cut late in his reign.",
+  "culture": null,
+  "summary": "A village in West Champaran, Bihar, with one of the best-preserved pillars of Ashoka: a single polished sandstone shaft crowned by a seated lion. It carries six of Ashoka's Pillar Edicts on moral conduct and was probably one of a line of pillars along the royal road from Pataliputra towards Nepal. Nearby rise the large brick stupa mound of Nandangarh and rows of earthen burial mounds, partly excavated in the 19th and 20th centuries.",
+  "unesco": false,
+  "image": {
+   "image": "https://upload.wikimedia.org/wikipedia/commons/5/59/Lauria_Nandangarh_pillar_of_Ashoka_side_view.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Lauria_Nandangarh_pillar_of_Ashoka_side_view.jpg",
+   "caption": "The Ashokan pillar with its lion capital",
+   "credit": "M. Vidyut Prakash Maurya",
+   "license": "CC BY 2.0"
+  },
+  "sources": [
+   {
+    "title": "Wikipedia: Lauria Nandangarh",
+    "url": "https://en.wikipedia.org/wiki/Lauria_Nandangarh"
+   },
+   {
+    "title": "Wikipedia: Pillars of Ashoka",
+    "url": "https://en.wikipedia.org/wiki/Pillars_of_Ashoka"
+   },
+   {
+    "title": "Wikipedia: Major Pillar Edicts",
+    "url": "https://en.wikipedia.org/wiki/Major_Pillar_Edicts"
+   }
+  ]
+ },
+ {
+  "id": "arikamedu",
+  "name": "Arikamedu",
+  "altNames": [
+   "Poduke"
+  ],
+  "lonlat": [
+   79.82,
+   11.901
+  ],
+  "kind": "settlement",
+  "built": -200,
+  "until": 750,
+  "dateLabel": "2nd century BCE–7th/8th century CE",
+  "standing": false,
+  "evidence": "written",
+  "evidenceNote": "Probably the port Poduke named in the Periplus and by Ptolemy; Roman pottery and coins date its trade.",
+  "culture": null,
+  "summary": "A riverside trading port near Pondicherry on the Coromandel coast. Mortimer Wheeler's excavation in 1945 found Roman amphorae, red Arretine tableware and lamps, and he called it an Indo-Roman trading station. Later work by Vimala Begley showed the port was busy from the 2nd century BCE to the 7th or 8th century CE and was a major maker of glass and stone beads traded across the Indian Ocean. It is generally identified with the 'Poduke' of Greek and Roman geographers.",
+  "unesco": false,
+  "image": {
+   "image": "https://upload.wikimedia.org/wikipedia/commons/c/c4/ChildWithBirdVirampatnamArikamedu1-2Century.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:ChildWithBirdVirampatnamArikamedu1-2Century.jpg",
+   "caption": "Terracotta child with a bird, 1st–2nd century CE",
+   "credit": "PHGCOM",
+   "license": "CC BY-SA 3.0"
+  },
+  "sources": [
+   {
+    "title": "Wikipedia: Arikamedu",
+    "url": "https://en.wikipedia.org/wiki/Arikamedu"
+   }
+  ]
+ },
+ {
+  "id": "ajanta",
+  "name": "Ajanta Caves (early caves)",
+  "altNames": [],
+  "lonlat": [
+   75.7,
+   20.553
+  ],
+  "kind": "temple",
+  "built": -200,
+  "until": 480,
+  "dateLabel": "early caves c. 2nd century BCE–1st century CE; second phase c. 460–480 CE",
+  "standing": true,
+  "evidence": "written",
+  "evidenceNote": "Donor inscriptions in the caves, some naming Vakataka rulers, help date the two phases.",
+  "culture": null,
+  "summary": "About thirty Buddhist halls and monasteries cut into a horseshoe-shaped cliff in Maharashtra. The first group, including the prayer halls (chaityas) Caves 9 and 10, was carved in the 2nd–1st centuries BCE and still holds some of the oldest surviving Indian paintings. After centuries of quiet, a burst of work in about 460–480 CE under the Vakataka king Harishena added the famous painted caves. Forgotten for centuries, they were found by a British tiger-hunting party in 1819.",
+  "unesco": true,
+  "image": {
+   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Ajanta_%2863%29.jpg/960px-Ajanta_%2863%29.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Ajanta_(63).jpg",
+   "caption": "The horseshoe cliff of the Ajanta caves",
+   "credit": "Soman (Wikimedia Commons)",
+   "license": "CC BY 2.5"
+  },
+  "sources": [
+   {
+    "title": "Wikipedia: Ajanta Caves",
+    "url": "https://en.wikipedia.org/wiki/Ajanta_Caves"
+   }
+  ]
+ },
+ {
+  "id": "karla-caves",
+  "name": "Karla Caves",
+  "altNames": [
+   "Karli Caves"
+  ],
+  "lonlat": [
+   73.471,
+   18.783
+  ],
+  "kind": "temple",
+  "built": -160,
+  "until": 500,
+  "dateLabel": "2nd century BCE–5th century CE",
+  "standing": true,
+  "evidence": "written",
+  "evidenceNote": "Donor inscriptions in the caves name merchants, monks, Satavahana and Western Satrap rulers.",
+  "culture": null,
+  "summary": "Buddhist rock-cut caves near Lonavala in Maharashtra, on an old trade route from the Arabian Sea ports into the Deccan. Their Great Chaitya (Cave 8), cut in the 1st century CE, is the largest and best-preserved prayer hall of its age: a long vaulted nave that still keeps its original wooden roof ribs, rows of pillars with sculpted elephants, and a stupa at the end. Inscriptions record gifts from merchants, several Yavana (Greek) donors and kings.",
+  "unesco": false,
+  "image": {
+   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Karla_caves_Chaitya.jpg/960px-Karla_caves_Chaitya.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Karla_caves_Chaitya.jpg",
+   "caption": "Inside the Great Chaitya",
+   "credit": "Kevin Standage",
+   "license": "CC BY-SA 2.0"
+  },
+  "sources": [
+   {
+    "title": "Wikipedia: Karla Caves",
+    "url": "https://en.wikipedia.org/wiki/Karla_Caves"
+   }
+  ]
+ },
+ {
+  "id": "bharhut",
+  "name": "Bharhut",
+  "altNames": [],
+  "lonlat": [
+   80.846,
+   24.447
+  ],
+  "kind": "monument",
+  "built": -150,
+  "until": 1000,
+  "dateLabel": "railings c. 125–100 BCE (some argue 1st century CE); later abandoned",
+  "standing": false,
+  "evidence": "written",
+  "evidenceNote": "Each relief panel is labelled in Brahmi script, and donor inscriptions name the patrons; the date of the carvings is debated.",
+  "culture": null,
+  "summary": "A Buddhist stupa in Satna district, Madhya Pradesh, whose carved stone railing and gateway are among the earliest Indian sculpture. Uniquely, many panels are labelled in Brahmi, naming the Jataka tales, the Buddha's life scenes and spirits such as yakshas. The stupa may have been begun under Ashoka; most of the carving is usually dated about 125–100 BCE. Alexander Cunningham found the ruin in 1873, and most surviving pieces are in the Indian Museum, Kolkata.",
+  "unesco": false,
+  "image": {
+   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Bharhut_stupa_original_layout.jpg/960px-Bharhut_stupa_original_layout.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Bharhut_stupa_original_layout.jpg",
+   "caption": "Cunningham's reconstruction of the stupa and its railing",
+   "credit": "Alexander Cunningham",
+   "license": "Public domain"
+  },
+  "sources": [
+   {
+    "title": "Wikipedia: Bharhut",
+    "url": "https://en.wikipedia.org/wiki/Bharhut"
+   }
+  ]
+ },
+ {
+  "id": "tillya-tepe",
+  "name": "Tillya Tepe",
+  "altNames": [
+   "Bactrian Gold"
+  ],
+  "lonlat": [
+   65.789,
+   36.694
+  ],
+  "kind": "tomb",
+  "built": -100,
+  "until": 100,
+  "dateLabel": "graves c. 1st century BCE–1st century CE",
+  "standing": false,
+  "evidence": "archaeology",
+  "evidenceNote": "Known from the 1978 excavation; coins buried in the graves, including a Roman coin of Tiberius, date them.",
+  "culture": null,
+  "summary": "A mound near Sheberghan in northern Afghanistan where Viktor Sarianidi's Soviet–Afghan team found six graves in 1978, of five women and one man, with about 20,600 objects of gold, silver, turquoise and ivory. The 'Bactrian Gold' mixes Greek, Iranian, Indian and steppe styles, such as a folding gold crown of trees and birds. The dead were probably nomad nobles of the time the Kushans rose. The hoard went missing during the Afghan wars and resurfaced safely in 2003.",
+  "unesco": false,
+  "image": {
+   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Tillya_Tepe_crown.jpg/960px-Tillya_Tepe_crown.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Tillya_Tepe_crown.jpg",
+   "caption": "Gold crown from Tomb VI",
+   "credit": "H Sinica",
+   "license": "CC BY-SA 2.0"
+  },
+  "sources": [
+   {
+    "title": "Wikipedia: Tillya Tepe",
+    "url": "https://en.wikipedia.org/wiki/Tillya_Tepe"
+   }
+  ]
+ },
+ {
+  "id": "hathigumpha",
+  "name": "Hathigumpha inscription, Udayagiri",
+  "altNames": [],
+  "lonlat": [
+   85.786,
+   20.263
+  ],
+  "kind": "monument",
+  "built": -50,
+  "until": null,
+  "dateLabel": "c. 1st century BCE (from the style of its letters)",
+  "standing": true,
+  "evidence": "written",
+  "evidenceNote": "A seventeen-line royal inscription in Prakrit; it is undated, so it is placed by the shape of its Brahmi letters.",
+  "culture": null,
+  "summary": "A seventeen-line Prakrit inscription carved in Brahmi above the 'Elephant Cave' in the Udayagiri hills near Bhubaneswar, Odisha. It was cut for Kharavela, a Jain king of Kalinga, and lists his deeds year by year: repairing gates and a canal, campaigns into the north and the south, and gifts to Jain monks, for whom the nearby caves of Udayagiri and Khandagiri were carved. It is the main source on Kalinga after Ashoka's conquest. Its letter shapes place it around the 1st century BCE.",
+  "unesco": false,
+  "image": {
+   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Hathigumpha_inscription_%282020%29.jpg/960px-Hathigumpha_inscription_%282020%29.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Hathigumpha_inscription_(2020).jpg",
+   "caption": "The inscription of Kharavela",
+   "credit": "Kevin Standage",
+   "license": "CC BY-SA 2.0"
+  },
+  "sources": [
+   {
+    "title": "Wikipedia: Hathigumpha inscription",
+    "url": "https://en.wikipedia.org/wiki/Hathigumpha_inscription"
+   }
+  ]
+ },
+ {
+  "id": "takht-i-bahi",
+  "name": "Takht-i-Bahi",
+  "altNames": [],
+  "lonlat": [
+   71.947,
+   34.286
+  ],
+  "kind": "temple",
+  "built": 50,
+  "until": 650,
+  "dateLabel": "1st–7th century CE",
+  "standing": true,
+  "evidence": "written",
+  "evidenceNote": "An inscription naming the Indo-Parthian king Gondophares was found at the site; the monastery is excavated.",
+  "culture": null,
+  "summary": "A Buddhist monastery on a ridge near Mardan in Khyber Pakhtunkhwa, Pakistan, in the heart of ancient Gandhara. Founded in the 1st century CE and used until the 7th, it has courts of stupas, monks' cells, assembly halls and a meditation area, all of local stone, and was once full of Gandharan sculpture mixing Greek and Indian styles. Its hilltop setting saved it from later destruction, and UNESCO calls it exceptionally well preserved.",
+  "unesco": true,
+  "image": {
+   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Takht-e-bahi.jpg/960px-Takht-e-bahi.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Takht-e-bahi.jpg",
+   "caption": "The monastery ruins on their ridge",
+   "credit": "Asif Nawaz",
+   "license": "CC BY-SA 3.0"
+  },
+  "sources": [
+   {
+    "title": "Wikipedia: Takht-i-Bahi",
+    "url": "https://en.wikipedia.org/wiki/Takht-i-Bahi"
+   }
+  ]
+ },
+ {
+  "id": "iron-pillar-delhi",
+  "name": "Iron pillar of Delhi",
+  "altNames": [],
+  "lonlat": [
+   77.185,
+   28.525
+  ],
+  "kind": "monument",
+  "built": 400,
+  "until": null,
+  "dateLabel": "c. 400 CE (reign of Chandragupta II, c. 375–415 CE)",
+  "standing": true,
+  "evidence": "written",
+  "evidenceNote": "Its Sanskrit inscription honours a king Chandra, generally identified as the Gupta emperor Chandragupta II.",
+  "culture": null,
+  "summary": "A pillar of wrought iron about 7 metres tall and over six tonnes, now standing in the Qutb complex in Delhi. Its Sanskrit inscription praises a king Chandra, identified as Chandragupta II of the Gupta Empire, and calls it a standard of the god Vishnu. It probably first stood elsewhere, perhaps at Udayagiri, and was moved to Delhi in the 11th century. It has barely rusted in 1,600 years because of a thin protective layer formed on its high-phosphorus iron.",
+  "unesco": true,
+  "image": {
+   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Iron_Pillar%2C_Delhi%2C_May_2008.jpg/960px-Iron_Pillar%2C_Delhi%2C_May_2008.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Iron_Pillar,_Delhi,_May_2008.jpg",
+   "caption": "The iron pillar in the Qutb complex",
+   "credit": "Mark A. Wilson (The College of Wooster)",
+   "license": "Public domain"
+  },
+  "sources": [
+   {
+    "title": "Wikipedia: Iron pillar of Delhi",
+    "url": "https://en.wikipedia.org/wiki/Iron_pillar_of_Delhi"
+   }
+  ]
+ },
+ {
+  "id": "nalanda",
+  "name": "Nalanda",
+  "altNames": [
+   "Nalanda Mahavihara"
+  ],
+  "lonlat": [
+   85.443,
+   25.137
+  ],
+  "kind": "temple",
+  "built": 427,
+  "until": 1400,
+  "dateLabel": "c. 427 CE–c. 1400 CE",
+  "standing": true,
+  "evidence": "written",
+  "evidenceNote": "Seals, inscriptions and accounts by Chinese pilgrims such as Xuanzang describe the monastery; coins link its founding to Kumaragupta I.",
+  "culture": null,
+  "summary": "A great Buddhist monastery and centre of learning in Bihar, near Rajgir, founded around 427 CE under the Gupta emperor Kumaragupta I. Monks and students from across Asia studied philosophy, logic, grammar and medicine in its brick monasteries and temples, and the Chinese pilgrim Xuanzang spent years here in the 7th century. Often called one of the world's first residential universities, it declined after attacks around 1200 and faded by about 1400. Its excavated ruins are a World Heritage Site.",
+  "unesco": true,
+  "image": {
+   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Temple_No.-_3%2C_Nalanda_Archaeological_Site.jpg/960px-Temple_No.-_3%2C_Nalanda_Archaeological_Site.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Temple_No.-_3,_Nalanda_Archaeological_Site.jpg",
+   "caption": "Temple No. 3 at Nalanda",
+   "credit": "Odantapuribs",
+   "license": "CC BY-SA 4.0"
+  },
+  "sources": [
+   {
+    "title": "Wikipedia: Nalanda mahavihara",
+    "url": "https://en.wikipedia.org/wiki/Nalanda_mahavihara"
+   }
+  ]
+ },
+ {
+  "id": "sigiriya",
+  "name": "Sigiriya",
+  "altNames": [
+   "Lion Rock"
+  ],
+  "lonlat": [
+   80.76,
+   7.957
+  ],
+  "kind": "monument",
+  "built": 477,
+  "until": 1400,
+  "dateLabel": "royal citadel 477–495 CE; monastery until the 14th century",
+  "standing": true,
+  "evidence": "written",
+  "evidenceNote": "The Sri Lankan chronicle Culavamsa describes King Kashyapa's citadel, and visitors' verses scratched on the 'Mirror Wall' survive.",
+  "culture": null,
+  "summary": "A granite rock about 180 metres high in central Sri Lanka, made a fortress-palace by King Kashyapa I (477–495 CE). He built a palace on the summit, reached through a gateway shaped as a giant lion, of which the paws remain, and laid out water gardens below. Painted women survive in a sheltered pocket of the rock, and the polished 'Mirror Wall' carries verses left by later visitors. After his defeat it returned to use as a Buddhist monastery, as it had been since the 3rd century BCE.",
+  "unesco": true,
+  "image": {
+   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Sigiriya_%28141688197%29.jpeg/960px-Sigiriya_%28141688197%29.jpeg",
+   "page": "https://commons.wikimedia.org/wiki/File:Sigiriya_(141688197).jpeg",
+   "caption": "The Lion Rock above the water gardens",
+   "credit": "Wrobell",
+   "license": "CC BY-SA 3.0"
+  },
+  "sources": [
+   {
+    "title": "Wikipedia: Sigiriya",
+    "url": "https://en.wikipedia.org/wiki/Sigiriya"
+   }
+  ]
+ }
+]
