@@ -166,6 +166,7 @@ function rewind(fc) {
 }
 const chunkOf = (y) => { let c = S.clio.chunks[0]; for (const s of S.clio.chunks) if (s <= y) c = s; return c; };
 const loadChunk = (c) => memo(S.chunks, c, `data/clio/${c}.json`, rewind);
+const HOME_YEAR = 1683; // the year the atlas opens on
 const baseYearFor = (y) => S.baseYears.reduce((b, v) => (Math.abs(v - y) < Math.abs(b - y) ? v : b), S.baseYears[0]);
 const loadBase = (by) => memo(S.bases, by, `data/${by}.json`, rewind);
 
@@ -200,7 +201,7 @@ async function init() {
   else if (h.journey && journeyById(h.journey)) await openJourney(h.journey, h.year);
   else if (h.moment && momentById(h.moment)) await openMoment(h.moment);
   else {
-    await go(h.year ?? 1683);
+    await go(h.year ?? HOME_YEAR);
     if (h.key && realm(h.key)) select(h.key, { fly: true });
   }
   $("#loading").classList.add("done");
@@ -2213,7 +2214,16 @@ function setupUI() {
   $("#prev").onclick = () => { stopPlay(); stepChapter(-1); };
   $("#next").onclick = () => { stopPlay(); stepChapter(1); };
   $("#play").onclick = togglePlay;
-  $("#home").onclick = (ev) => { ev.preventDefault(); select(null); d3.select(canvas).transition().duration(600).call(S.zoom.transform, d3.zoomIdentity); };
+  $("#home").onclick = async (ev) => { // back to the home page: leave any war, journey, moment or site, whole world at the start year
+    ev.preventDefault(); stopPlay();
+    if (S.war) exitWar();
+    if (S.journey) exitJourney();
+    S.view = "world"; S.moment = null; S.site = null;
+    await select(null);
+    if (S.year !== HOME_YEAR) await go(HOME_YEAR);
+    d3.select(canvas).transition().duration(600).call(S.zoom.transform, d3.zoomIdentity);
+    draw(); renderCol(true); writeHash();
+  };
   $("#sourcesLink").onclick = (ev) => { ev.preventDefault(); S.view = "sources"; renderCol(true); };
   $("#momentsLink").onclick = (ev) => { ev.preventDefault(); if (S.journey) exitJourney(); S.view = "moments"; S.moment = null; draw(); renderCol(true); };
   $("#empiresLink").onclick = (ev) => { ev.preventDefault(); if (S.journey) exitJourney(); S.view = "empires"; S.moment = null; draw(); renderCol(true); };
