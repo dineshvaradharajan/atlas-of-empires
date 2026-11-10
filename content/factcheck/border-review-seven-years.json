@@ -1,0 +1,29 @@
+{
+ "reviewer": "seven-years-war storyboard",
+ "findings": [
+  {
+   "realm": "Kingdom of Prussia",
+   "years": [1757, 1761],
+   "severity": "error",
+   "issue": "The 1757-1761 shape carries a wedge of northern Bohemia from the Saxon and Lusatian border down to Prague (the 1757 invasion drawn as annexation). Frederick II invaded Bohemia in April 1757 and retreated to Saxony after Kolin (18 June 1757); Bohemia stayed Austrian. Cut out with three boxes that keep Saxony, Lusatia, Silesia and Glatz.",
+   "fixed": true,
+   "source": [
+    {"title": "Wikipedia: Battle of Kolín", "url": "https://en.wikipedia.org/wiki/Battle_of_Kol%C3%ADn"},
+    {"title": "Wikipedia: Battle of Prague (1757) (Battle of Štěrboholy)", "url": "https://en.wikipedia.org/wiki/Battle_of_%C5%A0t%C4%9Brboholy"}
+   ]
+  }
+ ],
+ "corrections": {
+  "Kingdom of Prussia": {
+   "cut": [
+    {"from": 1757, "to": 1761, "box": [13.9, 49.8, 15.3, 50.7]},
+    {"from": 1757, "to": 1761, "box": [14.2, 50.7, 15.12, 50.905]},
+    {"from": 1757, "to": 1761, "box": [14.33, 50.905, 14.5, 51.05]}
+   ],
+   "note": "Northern Bohemia is not drawn as Prussian in 1757-1761: Frederick II's army was in Bohemia only from April to July 1757, and the province stayed Austrian.",
+   "sources": [
+    {"title": "Wikipedia: Battle of Kolín", "url": "https://en.wikipedia.org/wiki/Battle_of_Kol%C3%ADn"}
+   ]
+  }
+ }
+}
