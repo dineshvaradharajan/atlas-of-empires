@@ -795,7 +795,7 @@ const GL = (() => {
       if (prev && e < 1) drawLayer(prev, fillOf, 1);
       if (cur) drawLayer(cur, fillOf, prev && e < 1 ? e * e * (3 - 2 * e) : 1);
       const fade = Math.max(0, Math.min(1, (14 - t.k) / 8)); // the shading grid is ~18 km a cell: fade it out when zoomed in close
-      if (S.relief !== false && fade > 0) drawRaster("relief", t, { mode: 0, str: (theme.dark ? 0.55 : 0.8) * fade }); // hills and mountains
+      if (S.relief === true && fade > 0) drawRaster("relief", t, { mode: 0, str: (theme.dark ? 0.55 : 0.8) * fade }); // hills and mountains
       if (e >= 1 && prev) { freeLayer(prev); prev = null; }
       bindPos(statics.sphereLine.b); color(theme.rule); gl.drawArrays(gl.LINES, 0, statics.sphereLine.n);
     },
@@ -3126,7 +3126,7 @@ function setupUI() {
   toggle($("#labelsBtn"), "labels", draw);
   toggle($("#peoplesBtn"), "peoples", () => { buildItems(); draw(); });
   // Terrain shading on or off; remembered in this browser
-  try { S.relief = localStorage.getItem("atlas.terrain") !== "off"; } catch { S.relief = true; }
+  try { S.relief = localStorage.getItem("atlas.terrain") === "on"; } catch { S.relief = false; } // off unless the viewer turned it on
   $("#terrainBtn").classList.toggle("on", S.relief); $("#terrainBtn").setAttribute("aria-pressed", S.relief);
   if (!GL) $("#terrainBtn").hidden = true; // shading needs WebGL
   toggle($("#terrainBtn"), "relief", () => { try { localStorage.setItem("atlas.terrain", S.relief ? "on" : "off"); } catch {} draw(); });
