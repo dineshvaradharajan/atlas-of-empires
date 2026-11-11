@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>The World Atlas</title>
-<meta name="description" content="An interactive world map from 10,000 BCE to 2024 CE: who ruled what, how far every empire reached, and what was happening in each region.">
+<meta name="description" content="An interactive world map from 10,000 BCE to today: who ruled what, how far every empire reached, and what was happening in each region.">
 <link rel="icon" href="favicon.ico" sizes="48x48">
 <link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
 <link rel="icon" href="icon-512.png" type="image/png" sizes="512x512">
@@ -12,62 +12,76 @@
 <meta name="theme-color" content="#ffffff">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div id="app">
-  <header id="bar">
-    <a class="brand" href="#" id="home"><img src="icon-64.png" alt="" width="26" height="26">THE WORLD ATLAS</a>
-    <div class="search">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
-      <label for="search" class="sr">Search realms</label>
-      <input id="search" type="search" placeholder="Search realms, rulers, wars, places…" autocomplete="off">
-      <ul id="results" hidden></ul>
-    </div>
-    <nav class="topnav" aria-label="Sections"><a href="#empires" id="empiresLink">Empires</a><a href="#wars" id="warsLink">Wars</a><a href="#moments" id="momentsLink">Moments</a><a href="#about" id="sourcesLink">About</a></nav>
-  </header>
-
-  <section id="col" aria-live="polite"></section>
-
   <main id="stage">
     <canvas id="gl" aria-hidden="true"></canvas>
     <canvas id="map" aria-label="World map"></canvas>
-    <div id="mapTools">
-      <button id="zoomIn" title="Zoom in" aria-label="Zoom in">+</button>
-      <button id="zoomOut" title="Zoom out" aria-label="Zoom out">−</button>
-      <button id="zoomReset" title="Whole world" aria-label="Show whole world"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.2 3 14.8 0 18M12 3c-3 3.2-3 14.8 0 18"/></svg></button>
-      <button id="labelsBtn" class="on" title="Labels" aria-label="Toggle labels" aria-pressed="true">Aa</button>
-      <button id="peoplesBtn" class="on" title="Peoples layer" aria-label="Toggle peoples layer" aria-pressed="true"><span class="hatch"></span></button>
-      <button id="terrainBtn" title="Terrain" aria-label="Show or hide terrain" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 19l6-10 4 6 3-4 7 8z"/></svg></button>
-    </div>
-    <div id="legend">
-      <span><i class="sw others"></i>Other recorded states</span>
-      <span data-l="peoples"><i class="sw peoples"></i>Peoples (approx.)</span>
-      <span><i class="sw unknown"></i>Unrecorded</span>
-      <span data-l="site"><i class="sw site"></i>Site (dashed = disputed or legendary)</span>
-    </div>
     <div id="cine" hidden aria-live="polite"><div class="cdate"><b id="cMonth"></b><span id="cYear"></span></div><div class="cinfo"><div id="cThe"></div><div id="cShot"></div><div id="cNow"></div><div id="cJoin"></div></div><div id="cSub"></div><div id="cCall"></div></div>
     <div id="noRecords" hidden><b>No written records</b> · known from archaeology · areas approximate</div>
     <div id="tooltip" hidden></div>
+    <div id="pop" hidden role="dialog" aria-label="On the map"></div>
     <div id="loading">Loading the world…</div>
   </main>
 
-  <footer id="dock">
+  <header id="bar">
+    <a class="brand pill" href="#" id="home"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.2 3 14.8 0 18M12 3c-3 3.2-3 14.8 0 18"/></svg><span>THE WORLD ATLAS</span></a>
+    <nav class="tabs pill" aria-label="Sections">
+      <a href="#" data-tab="today">Today</a><a href="#" data-tab="map">Map</a><a href="#" data-tab="stories">Stories</a>
+    </nav>
+    <div class="search pill" role="search">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+      <label for="search" class="sr">Search an empire, a place or a year</label>
+      <input id="search" type="search" placeholder="Search an empire, a place or a year" autocomplete="off">
+      <button type="button" class="cancel" id="searchCancel">Cancel</button>
+      <div id="results" hidden role="listbox" aria-label="Search results"></div>
+    </div>
+  </header>
+
+  <section id="col" aria-live="polite"></section>
+  <aside id="side" hidden></aside>
+
+  <div id="mapTools">
+    <button type="button" id="layersBtn" class="pillbtn" aria-expanded="false" aria-controls="layersPanel"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 9 5-9 5-9-5z"/><path d="m3 13 9 5 9-5"/></svg>Layers</button>
+    <div id="layersPanel" hidden>
+      <label class="sw-row">Names on the map<input type="checkbox" id="labelsBtn" checked><span class="switch" aria-hidden="true"></span></label>
+      <label class="sw-row">Peoples without states<input type="checkbox" id="peoplesBtn" checked><span class="switch" aria-hidden="true"></span></label>
+      <label class="sw-row" id="terrainRow">Mountains and terrain<input type="checkbox" id="terrainBtn"><span class="switch" aria-hidden="true"></span></label>
+      <div class="key">
+        <span><i class="sw others"></i>Other recorded states</span>
+        <span><i class="sw peoples"></i>Peoples (approximate)</span>
+        <span><i class="sw unknown"></i>No state recorded</span>
+        <span><i class="sw site"></i>Ancient site</span>
+      </div>
+      <a href="#about" id="sourcesLink" class="aboutlink">About the atlas and its sources</a>
+    </div>
+    <div class="zoom">
+      <button type="button" id="zoomIn" aria-label="Zoom in"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+      <button type="button" id="zoomOut" aria-label="Zoom out"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+      <button type="button" id="zoomReset" aria-label="Show the whole world"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.2 3 14.8 0 18M12 3c-3 3.2-3 14.8 0 18"/></svg></button>
+    </div>
+  </div>
+  <div id="legend" hidden></div>
+
+  <section id="compare" hidden aria-label="Compare empires">
     <div class="dock-head">
-      <button id="play" class="play" aria-label="Play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5l11 7-11 7z"/></svg></button>
-      <div class="dock-title">
-        <span id="chartTitle">The great powers</span>
-        <span class="sub" id="chartSub">Territory in millions of km², stacked · drag across the chart to travel</span>
-      </div>
-      <div class="chapnav">
-        <button id="prev" aria-label="Previous chapter">‹ Chapter</button>
-        <button id="next" aria-label="Next chapter">Chapter ›</button>
-      </div>
-      <div id="strip" role="slider" aria-label="Era" tabindex="0"></div>
+      <div class="dock-title"><span id="chartTitle">The great powers</span><span class="sub" id="chartSub">Territory in millions of km², stacked · drag across the chart to travel</span></div>
+      <button type="button" class="close" data-act="compare" aria-label="Close the chart"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
     </div>
     <div id="chart"></div>
-  </footer>
+  </section>
+
+  <footer id="dock"></footer>
+
+  <nav id="tabbar" aria-label="Sections">
+    <a href="#" data-tab="today"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M9 3v4M15 3v4"/></svg>Today</a>
+    <a href="#" data-tab="map"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.2 3 14.8 0 18M12 3c-3 3.2-3 14.8 0 18"/></svg>Map</a>
+    <a href="#" data-tab="stories"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h11a3 3 0 0 1 3 3v13H8a3 3 0 0 1-3-3z"/><path d="M5 17a3 3 0 0 1 3-3h11"/></svg>Stories</a>
+    <a href="#" data-tab="search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>Search</a>
+  </nav>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js" integrity="sha384-CjloA8y00+1SDAUkjs099PVfnY2KmDC2BZnws9kh8D/lX1s46w6EPhpXdqMfjK6i" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdn.jsdelivr.net/npm/earcut@2.2.4/dist/earcut.min.js" integrity="sha384-2H0pAXlHBLfkdkuPuERxxSBlz7fMZ2EqrwxccEG7J9Svyk1SbUDaknB5UCoel/ZX" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
