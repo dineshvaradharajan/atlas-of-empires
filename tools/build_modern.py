@@ -1,43 +1,49 @@
 #!/usr/bin/env python3
-"""Present-day borders from Natural Earth 1:10m (public domain), in place of Cliopatria's rows for 2024.
+"""Borders from 1992 to today from Natural Earth 1:10m (public domain), in place of Cliopatria's rows for those years.
 
-Cliopatria ends with one row per state for 2024. Those rows carry the same drawing errors as its historical rows
-(missing small states, stray pieces, borders several km off, outdated names), which matter most on the one map every
-reader can check. This step drops them and writes one row per present-day state from Natural Earth instead, running
-from FROM (2024) to PRESENT. History before FROM is not touched.
+Cliopatria's rows for recent decades carry the same drawing errors as its rows for 2024 (missing small states, stray
+pieces, borders several km off, outdated names), on the maps readers know best and can check. This step drops every
+Cliopatria row from FROM (1992, the first year after the Soviet Union's end) on and draws those years from Natural
+Earth's present-day countries instead. The border changes since then are made by assigning Natural Earth's pieces to
+the state that held them in each year (HELD_BY): Czechoslovakia to 1992, Eritrea in Ethiopia to 1992, Hong Kong
+British to 1996, and so on. History before FROM is not touched (rows that run past it are cut at FROM - 1).
 
-Disputed places follow Natural Earth's default (de facto) view: who administers a place draws it. The dashed outlines
-of public/data/disputed.json (tools/disputed.py) mark those places on top.
+Disputed places follow Natural Earth's default view (Crimea with Russia from 2014; Kosovo, Northern Cyprus,
+Somaliland, Taiwan, Palestine and Western Sahara east of the berm drawn on their own; Abkhazia, South Ossetia,
+Transnistria and Nagorno-Karabakh inside the states they belong to). The dashed outlines of public/data/disputed.json
+(tools/disputed.py) mark them all.
 
 Input : ne_10m_admin_0_countries.geojson (github.com/nvkelso/natural-earth-vector, geojson/)
-Output: public/data/clio/2024.json  the present-day rows, a chunk of their own (FROM..PRESENT)
-        public/data/clio/2000.json  Cliopatria's rows for FROM removed
-        public/data/clio/index.json timelines of the affected realms, new realms, the new chunk, "range" end = PRESENT
-Run after build_clio.py (it rewrites the chunks and the index): python3 -I tools/build_today.py <ne_10m_admin_0_countries.geojson>
+Output: public/data/clio/<FROM>.json  the rows FROM..PRESENT, a chunk of their own (later chunks are removed)
+        public/data/clio/<c>.json     earlier chunks: Cliopatria rows from FROM on dropped, rows running past it cut
+        public/data/clio/index.json   timelines, new realms, chunk list, "range" end = PRESENT
+Run after build_clio.py (it rewrites the chunks and the index): python3 -I tools/build_modern.py <ne_10m_admin_0_countries.geojson>
 Then rebuild what reads the chunks: python3 -I tools/placeindex.py
 """
 import collections
+import glob
 import json
 import math
 import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from build import dp, inside, orient, label_point  # noqa: E402  (shared geometry helpers)
+from build import densify, dp, inside, orient, label_point  # noqa: E402  (shared geometry helpers)
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, "public", "data", "clio")
-FROM = 2024      # first year drawn from Natural Earth (Cliopatria's last year)
+FROM = 1992      # first year drawn from Natural Earth: the first year after the Soviet Union, as Cliopatria counts it
 PRESENT = 2026   # the map's last year: raise it each January and rebuild
-EPS = 0.01       # degrees (~1 km) along borders between states: today's map is the one readers zoom into and check
+EPS = 0.01       # degrees (~1 km) along borders between states: recent maps are the ones readers zoom into and check
 EPS_COAST = 0.03 # degrees (~3 km) along coasts, as in build_clio.py: most points are coastline, and it decides file size
 TOL = 0.005      # degrees: how far a drawn edge (a great-circle arc) may stray from the straight lon/lat line
 MIN_DIAG = 0.02  # islands smaller than this (~2 km) are dropped, unless they are among a state's KEEP_TOP largest
 KEEP_TOP = 12    # or the state is smaller than SMALL km² (an atoll nation is nothing but such islands)
 SMALL = 2000
 
-# Natural Earth ADM0_A3 -> the atlas's name for the state. Cliopatria's 2024 name is kept wherever it is a correct
-# current name, so realm pages, colours and links stay as they were; see RENAMED for the ones that were not.
+# Natural Earth ADM0_A3 (and the atlas's own row ids) -> the atlas's name for the state. Cliopatria's name is kept
+# wherever it is a correct current name, so realm pages, colours and links stay as they were. A state keeps one name
+# for all of FROM..PRESENT (one page per country) unless DATED_NAMES says otherwise.
 NAMES = {
     "AFG": "Afghanistan", "ALB": "Republic of Albania", "DZA": "People's Democratic Republic of Algeria",
     "AND": "Principality of Andorra", "AGO": "Angola", "ATG": "Antigua and Barbuda", "ARG": "Argentine Republic",
@@ -63,7 +69,7 @@ NAMES = {
     "PSX": "Palestine", "ITA": "Republic of Italy", "CIV": "Republic of Côte d'Ivoire", "JAM": "Jamaica", "JPN": "Japan",
     "JOR": "Kingdom of Jordan", "KAZ": "Kazakhstan", "KEN": "Republic of Kenya", "KIR": "Kiribati", "KOS": "Kosovo",
     "KWT": "Kuwait", "KGZ": "Kyrgyzstan", "LAO": "Laos", "LVA": "Republic of Latvia", "LBN": "Lebanon", "LSO": "Lesotho",
-    "LBR": "Republic of Liberia", "LBY": "State of Libya", "LIE": "Liechtenstein", "LTU": "Republic of Lithuania",
+    "LBR": "Republic of Liberia", "LBY": "State of Libya", "LIE": "Principality of Liechtenstein", "LTU": "Republic of Lithuania",
     "LUX": "Luxembourg", "MDG": "Madagascar", "MWI": "Malawi", "MYS": "Malaysia", "MDV": "Maldives",
     "MLI": "Republic of Mali", "MLT": "Malta", "MHL": "Marshall Islands", "MRT": "Mauritania", "MUS": "Mauritius",
     "MEX": "Mexico", "MDA": "Republic of Moldova", "MCO": "Principality of Monaco", "MNG": "Mongolia",
@@ -76,7 +82,7 @@ NAMES = {
     "POL": "Republic of Poland", "PRT": "Portugal", "QAT": "State of Qatar", "SRB": "Republic of Serbia",
     "COG": "Republic of the Congo", "ROU": "Romania", "RUS": "Russian Federation", "RWA": "Republic of Rwanda",
     "KNA": "Saint Kitts and Nevis", "LCA": "Saint Lucia", "VCT": "Saint Vincent and the Grenadines", "WSM": "Samoa",
-    "SMR": "San Marino", "SAU": "Kingdom of Saudi Arabia", "SEN": "Republic of Senegal", "SYC": "Seychelles",
+    "SMR": "Republic of San Marino", "SAU": "Kingdom of Saudi Arabia", "SEN": "Republic of Senegal", "SYC": "Seychelles",
     "SLE": "Sierra Leone", "SGP": "Republic of Singapore", "SVK": "Slovakia", "SVN": "Republic of Slovenia",
     "SLB": "Solomon Islands", "SOM": "Federal Republic of Somalia", "SOL": "Somaliland", "ZAF": "South Africa",
     "KOR": "Republic of Korea", "SDS": "South Sudan", "ESP": "Kingdom of Spain", "LKA": "Sri Lanka",
@@ -89,8 +95,9 @@ NAMES = {
     "UZB": "Republic of Uzbekistan", "VUT": "Vanuatu", "VAT": "Vatican City", "VEN": "Venezuela",
     "VNM": "Socialist Republic of Vietnam", "SAH": "Western Sahara", "YEM": "Republic of Yemen", "ZMB": "Zambia",
     "ZWE": "Republic of Zimbabwe", "SWZ": "Eswatini",
-    # rows that gather dependencies (not Natural Earth codes)
+    # rows that are not one Natural Earth country
     "BOT": "British Overseas Territories", "BCD": "British Crown Dependencies",
+    "CSK": "Czechoslovakia", "SCG": "Serbia-Montenegro",
 }
 # Dependencies, leases and special regions are drawn with the state that holds them, as Cliopatria did
 # (Greenland with Denmark, Puerto Rico with the United States); British territories keep their own two rows.
@@ -105,24 +112,46 @@ PART_OF = {
     "ASM": "USA", "GUM": "USA", "MNP": "USA", "PRI": "USA", "UMI": "USA", "VIR": "USA",
     "KAS": "IND",  # Siachen Glacier: held by India since 1984
     "BRI": "BRA",  # Brazilian Island: administered by Brazil
+    "CRM": "RUS",  # Crimea (split out of Natural Earth's Russia below): held by Russia since 2014
 }
-# Not drawn as any state: Antarctica, reefs and banks without a settled holder, the UN buffer zone in Cyprus, unclaimed
-# Bir Tawil, and the stretch of the Chile-Argentina border in the Southern Patagonian Ice Field that is not yet defined.
-SKIP = {"ATA", "BJN", "SER", "SCR", "PGA", "CNM", "BRT", "SPI"}
-# Composite (group) key of a row, as Cliopatria had it in 2024.
+# Border changes since FROM: (piece, last year, holder until then). A piece is held by its PART_OF row (or is its own
+# row) after the last year. Years are those in which the change took effect; one in late December counts from the next.
+HELD_BY = [
+    ("CZE", 1992, "CSK"), ("SVK", 1992, "CSK"),  # Czechoslovakia dissolved on 1 January 1993
+    ("ERI", 1992, "ETH"),                        # Eritrea independent 24 May 1993 (de facto from 1991)
+    ("KOS", 1998, "SCG"),                        # under UN administration from June 1999, independent 17 February 2008
+    ("SRB", 2005, "SCG"), ("MNE", 2005, "SCG"),  # Montenegro independent 3 June 2006
+    ("PLW", 1993, "USA"),                        # Palau independent 1 October 1994 (US trust territory before)
+    ("HKG", 1996, "BOT"),                        # Hong Kong to China 1 July 1997
+    ("MAC", 1999, "PRT"),                        # Macau to China 20 December 1999
+    ("TLS", 1999, "IDN"),                        # Indonesia left East Timor in October 1999; independent 20 May 2002
+    ("SDS", 2010, "SDN"),                        # South Sudan independent 9 July 2011
+    ("CRM", 2013, "UKR"),                        # Crimea annexed by Russia in March 2014
+]
+# (row, last year, name until then): names of the time where a state was renamed and its old name is the one known.
+DATED_NAMES = [("COD", 1996, "Zaire")]  # Zaire became the Democratic Republic of the Congo on 17 May 1997
+# Composite (group) key of a row, as Cliopatria had it; (name, last year, key until then) for keys that changed.
 KEYS = {"Russian Federation": "(Russian Federation)", "Netherlands": "(Netherlands)",
         "United Kingdom": "(Commonwealth of Nations)", "British Overseas Territories": "(Commonwealth of Nations)",
         "British Crown Dependencies": "(Commonwealth of Nations)"}
-# Cliopatria's 2024 names that were wrong or out of date in 2024 -> the name used from FROM on (None = no such state;
-# the land is drawn under the state Natural Earth gives it to).
-RENAMED = {
+DATED_KEYS = [("United Kingdom", 1997, "(British Empire)"),  # the British Empire story ends with Hong Kong in 1997
+              ("British Overseas Territories", 1997, "(British Empire)")]
+# Not drawn as any state: Antarctica, reefs and banks without a settled holder, the UN buffer zone in Cyprus, unclaimed
+# Bir Tawil, and the stretch of the Chile-Argentina border in the Southern Patagonian Ice Field that is not yet defined.
+SKIP = {"ATA", "BJN", "SER", "SCR", "PGA", "CNM", "BRT", "SPI"}
+# Cliopatria names drawn in FROM..2024 that are not drawn any more, and why.
+REPLACED = {
     "Communist Cuba": "Cuba", "Communist Laos": "Laos", "Federated Republic of Germany": "Germany",
-    "Former Yugoslav Republic of Macedonia": "North Macedonia", "People's Republic of Angola": "Angola",
+    "Former Yugoslav Republic of Macedonia": "North Macedonia", "People's Republic of Angola": "Angola (renamed 1992)",
     "Éire": "Ireland", "Union of Myanmar": "Myanmar", "Kingdom of Great Britain": "United Kingdom",
-    "Mali Federation": "Republic of Mali", "Saint Kitts": "Saint Kitts and Nevis",
-    "Saint Vincent": "Saint Vincent and the Grenadines",
-    "Estado Novo": None, "Gaza/Hamas": None, "Mujahideen": None, "Netherlands Antilles": None,
-    "Russian-occupied territories": None,
+    "Mali Federation": "Republic of Mali", "Saint Kitts": "Saint Kitts and Nevis (the shape was Saint Croix)",
+    "Saint Vincent": "Saint Vincent and the Grenadines", "Iraqi Republic": "Republic of Iraq",
+    "Libyan Arab Republic": "State of Libya", "Estado Novo": "Portugal (the Estado Novo ended in 1974)",
+    "Taliban": "Afghanistan", "Mujahideen": "Afghanistan and Syria", "Chechen Republic": "Russian Federation",
+    "Gaza/Hamas": "Palestine", "Netherlands Antilles": "Netherlands",
+    "Russian-occupied territories": "Republic of Moldova (Transnistria) and Georgia",
+    "British Colonial Empire": "British Overseas Territories, and China for Hong Kong from 1997",
+    "People's Republic of Kampuchea": "Kingdom of Cambodia",
 }
 # Realm-page links for names the index does not have yet (Wikipedia article title, Wikidata id).
 NEW_REALMS = {
@@ -132,14 +161,16 @@ NEW_REALMS = {
     "United Kingdom": ("United Kingdom", "Q145"), "Saint Kitts and Nevis": ("Saint Kitts and Nevis", "Q763"),
     "Saint Vincent and the Grenadines": ("Saint Vincent and the Grenadines", "Q757"), "Comoros": ("Comoros", "Q970"),
     "Palestine": ("State of Palestine", "Q219060"), "Kiribati": ("Kiribati", "Q710"),
-    "Liechtenstein": ("Liechtenstein", "Q347"), "Maldives": ("Maldives", "Q826"),
+    "Principality of Liechtenstein": ("Liechtenstein", "Q347"), "Maldives": ("Maldives", "Q826"),
     "Marshall Islands": ("Marshall Islands", "Q709"), "Nauru": ("Nauru", "Q697"), "Samoa": ("Samoa", "Q683"),
-    "San Marino": ("San Marino", "Q238"), "Somaliland": ("Somaliland", "Q34754"), "Tonga": ("Tonga", "Q678"),
+    "Republic of San Marino": ("San Marino", "Q238"), "Somaliland": ("Somaliland", "Q34754"), "Tonga": ("Tonga", "Q678"),
     "Tuvalu": ("Tuvalu", "Q672"), "Vatican City": ("Vatican City", "Q237"), "Western Sahara": ("Western Sahara", "Q6250"),
-    "British Crown Dependencies": ("Crown Dependencies", ""),
+    "British Crown Dependencies": ("Crown Dependencies", ""), "Republic of Iraq": ("Iraq", "Q796"),
+    "State of Libya": ("Libya", "Q1016"),
 }
 # Cliopatria gives these realms another country's Wikidata id.
-WD_FIX = {"Guinea": "Q1006", "Republic of China": "Q865", "Republic of Korea": "Q884", "Republic of the Congo": "Q971"}
+WD_FIX = {"Guinea": "Q1006", "Republic of China": "Q865", "Republic of Korea": "Q884", "Republic of the Congo": "Q971",
+          "Slovakia": "Q214", "Czechoslovakia": "Q33946"}
 
 
 def signed_area(r):  # planar shoelace over an open ring; > 0 = counter-clockwise
@@ -160,8 +191,8 @@ def diag(pts):
 
 
 def dissolve(polys):
-    """Merge polygons of one row that share a border (Hong Kong with China, the Baikonur lease with Kazakhstan):
-    an edge walked in both directions is an inner line and goes; what is left is stitched back into rings."""
+    """Merge polygons that share a border (Hong Kong with China, Eritrea with Ethiopia): an edge walked in both
+    directions is an inner line and goes; what is left is stitched back into rings."""
     count = collections.Counter()
     for poly in polys:
         for r in poly:
@@ -220,7 +251,9 @@ def simplify_arc(pts, shared):
 
 
 def simplify_ring(r, own):
-    """r: open ring. Cut it where the set of states sharing the border changes, simplify each stretch on its own."""
+    """r: open ring. Cut it where the set of pieces sharing the border changes, simplify each stretch on its own.
+    The cuts come from Natural Earth's pieces, not from the rows, so a border is cut at the same points whichever
+    pieces are merged in a given year, and the merged rows of different years still share their borders exactly."""
     n = len(r)
     o = [own[p] for p in r]
     brk = [i for i in range(n) if o[i] != o[i - 1] or o[i] != o[(i + 1) % n]]
@@ -235,34 +268,12 @@ def simplify_ring(r, own):
     return out + [out[0]]
 
 
-def gc_mid(a, b):
-    def v(p):
-        lo, la = math.radians(p[0]), math.radians(p[1])
-        return (math.cos(la) * math.cos(lo), math.cos(la) * math.sin(lo), math.sin(la))
-    x, y, z = (s + t for s, t in zip(v(a), v(b)))
-    return math.degrees(math.atan2(y, x)), math.degrees(math.atan2(z, math.hypot(x, y)))
-
-
-def densify(a, b, depth=0):
-    """Points to add between a and b so the great-circle arcs the app draws stay within TOL of the straight
-    lon/lat line (a border along a parallel, like the 49th, would otherwise bulge toward the pole)."""
-    if abs(a[0] - b[0]) < 0.5 or depth > 8:
-        return []
-    if a > b:
-        return densify(b, a, depth)[::-1]
-    m = ((a[0] + b[0]) / 2, (a[1] + b[1]) / 2)
-    gx, gy = gc_mid(a, b)
-    if math.hypot((gx - m[0]) * math.cos(math.radians(m[1])), gy - m[1]) <= TOL:
-        return []
-    return densify(a, m, depth + 1) + [m] + densify(m, b, depth + 1)
-
-
 def finish(ring):
     """Closed, simplified ring -> densified, rounded, without repeats; None if nothing is left of it."""
     dec = 4 if diag(ring) < 0.05 else 3
     out = []
     for a, b in zip(ring, ring[1:]):
-        for p in [a] + densify(a, b):
+        for p in [a] + densify(a, b, TOL):
             q = [round(p[0], dec), round(p[1], dec)]
             if not out or q != out[-1]:
                 out.append(q)
@@ -273,26 +284,28 @@ def finish(ring):
     return out + [out[0]]
 
 
-def main():
-    if len(sys.argv) < 2:
-        sys.exit(__doc__)
-    ne = json.load(open(sys.argv[1]))["features"]
+def dated(table, ident, y, default):
+    """Value from a [(ident, last year, value)] table for year y, else default."""
+    best = None
+    for i, last, v in table:
+        if i == ident and y <= last and (best is None or last < best[0]):
+            best = (last, v)
+    return best[1] if best else default
 
-    # 1. gather Natural Earth's polygons into the atlas's rows
-    rows = {}
-    for f in ne:
+
+def load_pieces(path):
+    """Natural Earth countries -> {piece id: {"polys": [[ring, ...], ...], "label": [x, y] or None}}, rings open,
+    outer rings counter-clockwise. Crimea is split out of Russia as its own piece (CRM)."""
+    pieces = {}
+    for f in json.load(open(path))["features"]:
         p = f["properties"]
         a3 = p["ADM0_A3"]
         if a3 in SKIP:
             continue
-        rid = PART_OF.get(a3, a3)
-        if rid not in NAMES:
+        if PART_OF.get(a3, a3) not in NAMES:
             sys.exit(f"Natural Earth feature {a3} ({p['ADMIN']}) is not mapped: add it to NAMES, PART_OF or SKIP")
-        row = rows.setdefault(rid, {"name": NAMES[rid], "polys": [], "label": None, "parts": 0})
-        row["parts"] += 1
-        if rid == a3 and p.get("LABEL_X") is not None:
-            row["label"] = [round(p["LABEL_X"], 2), round(p["LABEL_Y"], 2)]
         g = f["geometry"]
+        polys = []
         for poly in g["coordinates"] if g["type"] == "MultiPolygon" else [g["coordinates"]]:
             rings = []
             for k, r in enumerate(poly):
@@ -300,73 +313,138 @@ def main():
                 if (signed_area(r) > 0) != (k == 0):  # outer rings counter-clockwise, holes clockwise
                     r.reverse()
                 rings.append(r)
-            row["polys"].append(rings)
-    missing = [a for a in NAMES if a not in rows]
-    if missing:
-        sys.exit(f"no Natural Earth feature for {missing}")
-    for row in rows.values():
-        if row["parts"] > 1:
-            row["polys"] = dissolve(row["polys"])
-        row["area"] = max(1, round(sum(ring_km2(p[0]) - sum(ring_km2(h) for h in p[1:]) for p in row["polys"])))
+            polys.append(rings)
+        label = [round(p["LABEL_X"], 2), round(p["LABEL_Y"], 2)] if p.get("LABEL_X") is not None else None
+        pieces[a3] = {"polys": polys, "label": label}
+    crimea = [q for q in pieces["RUS"]["polys"]
+              if 32 < min(x for x, _ in q[0]) and max(x for x, _ in q[0]) < 37 and 44 < min(y for _, y in q[0]) and max(y for _, y in q[0]) < 47]
+    if len(crimea) != 1:
+        sys.exit(f"expected one Crimea polygon in Natural Earth's Russia, found {len(crimea)}")
+    pieces["RUS"]["polys"].remove(crimea[0])
+    pieces["CRM"] = {"polys": crimea, "label": None}
+    return pieces
 
-    # 2. which rows meet at each point (decides where a border stretch starts and ends)
+
+def piece_owners(pieces):
+    """Point -> the set of pieces it belongs to (decides where a border stretch starts and ends)."""
     sets = collections.defaultdict(set)
-    for rid, row in rows.items():
-        for poly in row["polys"]:
+    for pid, pc in pieces.items():
+        for poly in pc["polys"]:
             for r in poly:
                 for pt in r:
-                    sets[pt].add(rid)
-    own = {pt: frozenset(s) for pt, s in sets.items()}
+                    sets[pt].add(pid)
+    return {pt: frozenset(s) for pt, s in sets.items()}
 
-    # 3. simplify, densify, round
-    feats, nv = [], 0
-    for rid, row in sorted(rows.items(), key=lambda kv: kv[1]["name"]):
-        polys = sorted(row["polys"], key=lambda p: -abs(signed_area(p[0])))
-        out = []
-        for i, poly in enumerate(polys):
-            alone = all(len(own[pt]) == 1 for pt in poly[0])
-            if i >= KEEP_TOP and alone and diag(poly[0]) < MIN_DIAG and row["area"] >= SMALL:
-                continue  # a speck of an island
-            rings = [finish(simplify_ring(r, own)) for r in poly]
-            if rings[0] is None:
-                continue
-            rings = [orient(r, k == 0) for k, r in enumerate(rings) if r]
-            out.append(rings)
-            nv += sum(len(r) for r in rings)
-        if not out:
-            sys.exit(f"nothing left of {row['name']}")
-        name = row["name"]
-        props = {"n": name, "f": FROM, "t": PRESENT, "a": row["area"], "k": KEYS.get(name, name),
-                 "l": row["label"] or label_point(out[0])}
-        feats.append({"type": "Feature", "properties": props, "geometry": {"type": "MultiPolygon", "coordinates": out}})
 
-    # 4. the chunks: Cliopatria's last chunk loses its rows for FROM, the present-day rows get a chunk of their own
+def make_shape(pieces, ps, own, home=None):
+    """The pieces ps merged, simplified, densified and rounded: {"coords": MultiPolygon, "area": km², "label": [x, y]}."""
+    raw = [poly for p in sorted(ps) for poly in pieces[p]["polys"]]
+    polys = dissolve(raw) if len(ps) > 1 else raw
+    area = max(1, round(sum(ring_km2(p[0]) - sum(ring_km2(h) for h in p[1:]) for p in polys)))
+    polys = sorted(polys, key=lambda p: -abs(signed_area(p[0])))
+    out = []
+    for i, poly in enumerate(polys):
+        alone = all(len(own[pt]) == 1 for pt in poly[0])
+        if i >= KEEP_TOP and alone and diag(poly[0]) < MIN_DIAG and area >= SMALL:
+            continue  # a speck of an island
+        rings = [finish(simplify_ring(r, own)) for r in poly]
+        if rings[0] is None:
+            continue
+        out.append([orient(r, k == 0) for k, r in enumerate(rings) if r])
+    if not out:
+        sys.exit(f"nothing left of {sorted(ps)}")
+    label = pieces[home]["label"] if home else None
+    return {"coords": out, "area": area, "label": label or label_point(out[0])}
+
+
+def holder(piece, y):
+    return dated(HELD_BY, piece, y, PART_OF.get(piece, piece))
+
+
+def main():
+    if len(sys.argv) < 2:
+        sys.exit(__doc__)
+    pieces = load_pieces(sys.argv[1])
+    for p, last, h in HELD_BY:
+        if p not in pieces or h not in NAMES:
+            sys.exit(f"HELD_BY entry {p, last, h} names an unknown piece or row")
+
+    # 1. who holds what in each year -> runs of years with the same pieces, name and key = the rows
+    runs = []  # [row id, name, key, frozenset(pieces), from, to]
+    open_runs = {}
+    for y in range(FROM, PRESENT + 1):
+        held = collections.defaultdict(set)
+        for p in pieces:
+            held[holder(p, y)].add(p)
+        seen = set()
+        for rid, ps in held.items():
+            name = dated(DATED_NAMES, rid, y, NAMES[rid])
+            key = dated(DATED_KEYS, name, y, KEYS.get(name, name))
+            sig = (name, key, frozenset(ps))
+            cur = open_runs.get(rid)
+            if cur and cur[0] == sig and cur[1][5] == y - 1:
+                cur[1][5] = y
+            else:
+                run = [rid, name, key, frozenset(ps), y, y]
+                runs.append(run)
+                open_runs[rid] = (sig, run)
+            seen.add(rid)
+        for rid in [r for r in open_runs if r not in seen]:
+            del open_runs[rid]
+
+    # 2. which pieces meet at each point (decides where a border stretch starts and ends)
+    own = piece_owners(pieces)
+
+    # 3. geometry of each distinct set of pieces: merged, simplified, densified, rounded
+    shapes = {}
+    for rid, name, key, ps, fy, ty in runs:
+        if ps not in shapes:
+            shapes[ps] = make_shape(pieces, ps, own, rid if rid in ps else None)
+    nv = sum(len(r) for sh in shapes.values() for q in sh["coords"] for r in q)
+    feats = []
+    for rid, name, key, ps, fy, ty in sorted(runs, key=lambda r: (r[1], r[4])):
+        sh = shapes[ps]
+        props = {"n": name, "f": fy, "t": ty, "a": sh["area"], "k": key, "l": sh["label"]}
+        feats.append({"type": "Feature", "properties": props, "geometry": {"type": "MultiPolygon", "coordinates": sh["coords"]}})
+    names = {f["properties"]["n"] for f in feats}
+
+    # 4. the chunks: earlier chunks lose their rows from FROM on (rows running past FROM end at FROM - 1),
+    #    later chunks go, and the new rows get a chunk of their own
     ipath = os.path.join(OUT, "index.json")
     idx = json.load(open(ipath))
-    last = max(c for c in idx["chunks"] if c < FROM)
-    path = os.path.join(OUT, f"{last}.json")
-    chunk = json.load(open(path))
-    old = [f["properties"] for f in chunk["features"] if f["properties"]["t"] >= FROM]
-    if any(p["f"] < FROM for p in old):
-        sys.exit("a row starts before FROM and runs past it: " + ", ".join(p["n"] for p in old if p["f"] < FROM))
-    names = {f["properties"]["n"] for f in feats}
-    for p in old:  # every name Cliopatria drew in 2024 is either still drawn or knowingly replaced
-        if p["f"] == p["t"] == FROM and p["n"] not in names and p["n"] not in RENAMED:
-            sys.exit(f"Cliopatria's 2024 row {p['n']!r} has no present-day row: map it in NAMES or RENAMED")
-    if old:
-        chunk["features"] = [f for f in chunk["features"] if f["properties"]["t"] < FROM]
-        with open(path, "w") as fh:
-            json.dump(chunk, fh, separators=(",", ":"))
+    chunks = {c: json.load(open(os.path.join(OUT, f"{c}.json"))) for c in idx["chunks"]}
+    gone_names = {f["properties"]["n"] for fc in chunks.values() for f in fc["features"] if f["properties"]["t"] >= FROM}
+    unknown = sorted(n for n in gone_names - names if n not in REPLACED)
+    if unknown:  # every name drawn from FROM on is either still drawn or knowingly replaced
+        sys.exit(f"Cliopatria rows from {FROM} on with no row here: {unknown}: map them in NAMES or REPLACED")
+    kept = sorted(c for c in idx["chunks"] if c < FROM)
+    for c, fc in chunks.items():
+        path = os.path.join(OUT, f"{c}.json")
+        if c >= FROM:
+            os.remove(path)
+            continue
+        out = []
+        for f in fc["features"]:
+            p = f["properties"]
+            if p["f"] >= FROM:
+                continue
+            if p["t"] >= FROM:
+                f = {**f, "properties": {**p, "t": FROM - 1}}
+            out.append(f)
+        if out != fc["features"]:
+            fc["features"] = out
+            with open(path, "w") as fh:
+                json.dump(fc, fh, separators=(",", ":"))
     path = os.path.join(OUT, f"{FROM}.json")
     with open(path, "w") as fh:
         json.dump({"type": "FeatureCollection", "features": feats}, fh, separators=(",", ":"))
-    idx["chunks"] = sorted(set(idx["chunks"]) | {FROM})
+    idx["chunks"] = kept + [FROM]
 
-    # 5. the index: timelines end at FROM - 1, then one row FROM..PRESENT per present-day realm
+    # 5. the index: timelines end at FROM - 1, then this step's rows; composite groups get the sum of their members
     R = idx["realms"]
     for r in R.values():
         r["tl"] = [[a, min(b, FROM - 1), ar] for a, b, ar in r["tl"] if a < FROM]
-    groups = collections.Counter()
+    group = collections.defaultdict(lambda: collections.Counter())  # key -> year -> km²
     for f in feats:
         p = f["properties"]
         r = R.get(p["n"])
@@ -376,22 +454,31 @@ def main():
             if wd:
                 r["wd"] = wd
         if p["k"] != p["n"]:
-            groups[p["k"]] += p["a"]
+            for y in range(p["f"], p["t"] + 1):
+                group[p["k"]][y] += p["a"]
             if p["k"] not in r.setdefault("memberOf", []):
                 r["memberOf"].append(p["k"])
-        r["tl"].append([FROM, PRESENT, p["a"]])
-    for k, a in groups.items():
-        R[k]["tl"].append([FROM, PRESENT, a])
+        r["tl"].append([p["f"], p["t"], p["a"]])
+    for k, by_year in group.items():
+        rows = []
+        for y in sorted(by_year):
+            if rows and rows[-1][1] == y - 1 and rows[-1][2] == by_year[y]:
+                rows[-1][1] = y
+            else:
+                rows.append([y, y, by_year[y]])
+        R.setdefault(k, {"tl": [], "group": True})["tl"] += rows
+    for r in R.values():
+        r["tl"].sort()
     for n, wd in WD_FIX.items():
         R[n]["wd"] = wd
-    gone = [n for n, r in R.items() if not r["tl"]]
-    for n in gone:
+    dropped = sorted(n for n, r in R.items() if not r["tl"])
+    for n in dropped:
         del R[n]
     idx["range"][1] = PRESENT
     with open(ipath, "w") as fh:
         json.dump(idx, fh, ensure_ascii=False, separators=(",", ":"))
-    print(f"{len(old)} Cliopatria rows dropped, {len(feats)} rows {FROM}-{PRESENT}, {nv} points, "
-          f"chunk {os.path.getsize(path) / 1e3:.0f} KB, {len(R)} realms" + (f", dropped {gone}" if gone else ""))
+    print(f"{len(feats)} rows {FROM}-{PRESENT} ({len(shapes)} distinct shapes, {nv} points), "
+          f"chunk {os.path.getsize(path) / 1e3:.0f} KB, {len(R)} realms" + (f"; realms left with no rows: {dropped}" if dropped else ""))
 
 
 if __name__ == "__main__":

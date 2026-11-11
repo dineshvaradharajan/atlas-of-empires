@@ -19,12 +19,13 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from build import dp, inside, orient, seg_dist  # noqa: E402  (shared geometry helpers)
+from build import densify, dp, inside, orient, seg_dist  # noqa: E402  (shared geometry helpers)
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, "public", "data", "clio")
 CHUNK = 100
 EPS = 0.03  # degrees (~3 km): ample for a world map zoomed up to ~20x
+TOL = 0.01  # degrees: how far a drawn edge (a great-circle arc) may stray from the straight lon/lat line it stands for
 
 
 def simplify_ring(r):
@@ -38,7 +39,17 @@ def simplify_ring(r):
         out = dp(out[: m + 1], EPS)[:-1] + dp(out[m:], EPS)
     if out and out[0] != out[-1]:
         out.append(out[0])
-    return out if len(out) >= 4 else None
+    if len(out) < 4:
+        return None
+    dense = [out[0]]  # long east-west edges get points along them, so they are not drawn as bulging arcs
+    for a, b in zip(out, out[1:]):
+        for q in densify(a, b, TOL):
+            q = [round(q[0], 2), round(q[1], 2)]
+            if q != dense[-1]:
+                dense.append(q)
+        if b != dense[-1]:
+            dense.append(b)
+    return dense
 
 
 def ring_area_planar(r):

@@ -1248,7 +1248,7 @@
       "crop": [
         {
           "from": 1950,
-          "to": 2023,
+          "to": 1991,
           "box": [
             117.5,
             21.5,
@@ -1436,7 +1436,7 @@
         },
         {
           "from": 1973,
-          "to": 2023,
+          "to": 1991,
           "box": [
             -180,
             -20,
@@ -2389,7 +2389,7 @@
       ]
     },
     "Kingdom of Great Britain": {
-      "note": "United Kingdom (from 1801; the Kingdom of Great Britain existed 1707–1800) The United Kingdom's shape no longer includes the Gulf states after 1971: Bahrain and Qatar became independent in August–September 1971 and the United Arab Emirates on 2 December 1971 (Oman was never a British colony). Before 1972 the map also keeps Kuwait (independent 1961), Cyprus (1960) and Aden (1967) inside the United Kingdom for a few years too long. The United Kingdom's shape is removed from South Yemen after independence (Nov 1967), Kuwait after 1961 and Cyprus after 1960; the British sovereign base areas on Cyprus (Akrotiri and Dhekelia) are too small to draw here.",
+      "note": "United Kingdom (from 1801; the Kingdom of Great Britain existed 1707–1800) The United Kingdom's shape no longer includes the Gulf states after 1971: Bahrain and Qatar became independent in August–September 1971 and the United Arab Emirates on 2 December 1971 (Oman was never a British colony). Before 1972 the map also keeps Kuwait (independent 1961), Cyprus (1960) and Aden (1967) inside the United Kingdom for a few years too long. The United Kingdom's shape is removed from South Yemen after independence (Nov 1967), Kuwait after 1961 and Cyprus after 1960; the British sovereign base areas on Cyprus (Akrotiri and Dhekelia) are too small to draw here. Malta is not shown as British after its independence on 21 September 1964.",
       "sources": [
         {
           "title": "Kingdom of Great Britain (Wikipedia)",
@@ -2422,6 +2422,10 @@
         {
           "title": "Wikipedia: Cyprus",
           "url": "https://en.wikipedia.org/wiki/Cyprus"
+        },
+        {
+          "title": "Wikipedia: Malta",
+          "url": "https://en.wikipedia.org/wiki/Malta"
         }
       ],
       "relabel": [
@@ -2474,6 +2478,16 @@
             34.5,
             34.7,
             35.75
+          ]
+        },
+        {
+          "from": 1964,
+          "to": 1966,
+          "box": [
+            14.15,
+            35.78,
+            14.6,
+            36.1
           ]
         }
       ]
@@ -5303,7 +5317,7 @@
       "cut": [
         {
           "from": 1958,
-          "to": 2023,
+          "to": 1991,
           "box": [
             13.0,
             52.3,
@@ -5313,7 +5327,7 @@
         },
         {
           "from": 1962,
-          "to": 2023,
+          "to": 1991,
           "box": [
             -9.0,
             18.5,
@@ -5323,7 +5337,7 @@
         },
         {
           "from": 1975,
-          "to": 2023,
+          "to": 1991,
           "box": [
             43.0,
             -12.6,
@@ -5333,7 +5347,7 @@
         },
         {
           "from": 1977,
-          "to": 2023,
+          "to": 1991,
           "box": [
             41.5,
             10.5,
@@ -5623,7 +5637,7 @@
       "crop": [
         {
           "from": 1642,
-          "to": 2023,
+          "to": 1991,
           "box": [
             7.36,
             43.7,
@@ -7314,18 +7328,7 @@
         }
       ],
       "log": "border review (border-review-southeast-asia.json)",
-      "cut": [
-        {
-          "from": 2000,
-          "to": 2023,
-          "box": [
-            125.05,
-            -9.55,
-            127.4,
-            -8.1
-          ]
-        }
-      ]
+      "cut": []
     },
     "Blue Horde": {
       "relabel": [
@@ -9290,7 +9293,7 @@
           ]
         }
       ],
-      "note": "Territories are removed from this shape once independent or transferred: Newfoundland and Labrador (joined Canada 1949), Fiji (1970), the Solomon Islands (1978), Belize (1981), the Bahamas (1973, removed from 1982) and Hong Kong (returned to China on 1 July 1997). Brunei (1984), Grenada (1974), Dominica (1978) and St Lucia (1979) remain drawn until 1995. The map also keeps Malaya and Singapore British during the Japanese occupation of 1942–45 (Singapore fell on 15 February 1942) and shades the British-occupied part of Iran in 1942–45 as British. Brunei is not shown as British after independence (1984); Malaya, Singapore, British Borneo, Burma and Hong Kong are not shown as British during the Japanese occupation (1942–1945).",
+      "note": "Territories are removed from this shape once independent or transferred: Newfoundland and Labrador (joined Canada 1949), Fiji (1970), the Solomon Islands (1978), Belize (1981), the Bahamas (1973, removed from 1982) and Hong Kong (returned to China on 1 July 1997). Brunei (1984), Grenada (1974), Dominica (1978) and St Lucia (1979) remain drawn until 1995. The map also keeps Malaya and Singapore British during the Japanese occupation of 1942–45 (Singapore fell on 15 February 1942) and shades the British-occupied part of Iran in 1942–45 as British. Brunei is not shown as British after independence (1984); Malaya, Singapore, British Borneo, Burma and Hong Kong are not shown as British during the Japanese occupation (1942–1945). Barbados (independent 1966), Grenada (1974), Dominica and Saint Lucia (both 1979) are not shown as British after independence.",
       "sources": [
         {
           "title": "Dominion of Newfoundland — Wikipedia",
@@ -9331,6 +9334,22 @@
         {
           "title": "History of Singapore (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/History_of_Singapore"
+        },
+        {
+          "title": "Wikipedia: Barbados",
+          "url": "https://en.wikipedia.org/wiki/Barbados"
+        },
+        {
+          "title": "Wikipedia: Grenada",
+          "url": "https://en.wikipedia.org/wiki/Grenada"
+        },
+        {
+          "title": "Wikipedia: Dominica",
+          "url": "https://en.wikipedia.org/wiki/Dominica"
+        },
+        {
+          "title": "Wikipedia: Saint Lucia",
+          "url": "https://en.wikipedia.org/wiki/Saint_Lucia"
         }
       ],
       "log": "border review (border-review-v4.json)",
@@ -9383,6 +9402,46 @@
             22.15,
             114.45,
             22.6
+          ]
+        },
+        {
+          "from": 1967,
+          "to": 1991,
+          "box": [
+            -59.7,
+            13.0,
+            -59.4,
+            13.4
+          ]
+        },
+        {
+          "from": 1974,
+          "to": 1991,
+          "box": [
+            -61.85,
+            11.95,
+            -61.55,
+            12.55
+          ]
+        },
+        {
+          "from": 1979,
+          "to": 1991,
+          "box": [
+            -61.55,
+            15.15,
+            -61.2,
+            15.7
+          ]
+        },
+        {
+          "from": 1979,
+          "to": 1991,
+          "box": [
+            -61.1,
+            13.65,
+            -60.85,
+            14.15
           ]
         }
       ]
@@ -9527,6 +9586,182 @@
           "url": "https://dsal.uchicago.edu/reference/schwartzberg/"
         }
       ]
+    },
+    "Mujahideen": {
+      "relabel": [
+        {
+          "from": 1987,
+          "to": 1991,
+          "name": "Afghanistan",
+          "key": "Afghanistan"
+        }
+      ],
+      "note": "Kabul and the main cities were held by the Republic of Afghanistan (the Democratic Republic until 1987) until April 1992; the mujahideen held much of the countryside but formed no state. The shape is shown as Afghanistan; the war maps show who controlled which areas.",
+      "sources": [
+        {
+          "title": "Wikipedia: Republic of Afghanistan (1987–1992)",
+          "url": "https://en.wikipedia.org/wiki/Democratic_Republic_of_Afghanistan"
+        },
+        {
+          "title": "Wikipedia: Afghan Civil War (1989–1992)",
+          "url": "https://en.wikipedia.org/wiki/Afghan_Civil_War_(1989%E2%80%931992)"
+        }
+      ],
+      "log": "present-day border audit, November 2026 (earlier-year findings)"
+    },
+    "North Yemen": {
+      "relabel": [
+        {
+          "from": 1919,
+          "to": 1961,
+          "name": "Mutawakkilite Kingdom of Yemen",
+          "key": "North Yemen"
+        },
+        {
+          "from": 1962,
+          "to": 1989,
+          "name": "Yemen Arab Republic",
+          "key": "North Yemen"
+        }
+      ],
+      "note": "North Yemen was the Mutawakkilite Kingdom of Yemen from the Ottoman withdrawal in 1918 until the revolution of 26 September 1962, and the Yemen Arab Republic until unification with the south on 22 May 1990.",
+      "sources": [
+        {
+          "title": "Wikipedia: Mutawakkilite Kingdom of Yemen",
+          "url": "https://en.wikipedia.org/wiki/Mutawakkilite_Kingdom_of_Yemen"
+        },
+        {
+          "title": "Wikipedia: Yemen Arab Republic",
+          "url": "https://en.wikipedia.org/wiki/Yemen_Arab_Republic"
+        }
+      ],
+      "log": "present-day border audit, November 2026 (earlier-year findings)"
+    },
+    "People's Democratic Republic of Yemen": {
+      "relabel": [
+        {
+          "from": 1968,
+          "to": 1970,
+          "name": "People's Republic of Southern Yemen",
+          "key": "People's Democratic Republic of Yemen"
+        }
+      ],
+      "note": "South Yemen became independent on 30 November 1967 as the People's Republic of Southern Yemen and was renamed the People's Democratic Republic of Yemen on 30 November 1970.",
+      "sources": [
+        {
+          "title": "Wikipedia: South Yemen",
+          "url": "https://en.wikipedia.org/wiki/South_Yemen"
+        }
+      ],
+      "log": "present-day border audit, November 2026 (earlier-year findings)"
+    },
+    "Communist Cuba": {
+      "relabel": [
+        {
+          "from": 1960,
+          "to": 1991,
+          "name": "Cuba",
+          "key": "Cuba"
+        }
+      ],
+      "note": "The state has been the Republic of Cuba throughout; \"Communist Cuba\" is a description, not a name. Shown as Cuba, on one page with today's country.",
+      "sources": [
+        {
+          "title": "Wikipedia: Cuba",
+          "url": "https://en.wikipedia.org/wiki/Cuba"
+        }
+      ],
+      "log": "present-day border audit, November 2026 (earlier-year findings)"
+    },
+    "Communist Laos": {
+      "relabel": [
+        {
+          "from": 1976,
+          "to": 1991,
+          "name": "Laos",
+          "key": "Laos"
+        }
+      ],
+      "note": "The Lao People's Democratic Republic has been the state's name since December 1975; \"Communist Laos\" is a description. Shown as Laos, on one page with today's country.",
+      "sources": [
+        {
+          "title": "Wikipedia: Laos",
+          "url": "https://en.wikipedia.org/wiki/Laos"
+        }
+      ],
+      "log": "present-day border audit, November 2026 (earlier-year findings)"
+    },
+    "Union of Myanmar": {
+      "relabel": [
+        {
+          "from": 1990,
+          "to": 1991,
+          "name": "Myanmar",
+          "key": "Myanmar"
+        }
+      ],
+      "note": "Burma was renamed Myanmar in 1989 (officially the Union of Myanmar until 2010). Shown as Myanmar, on one page with today's country.",
+      "sources": [
+        {
+          "title": "Wikipedia: Myanmar",
+          "url": "https://en.wikipedia.org/wiki/Myanmar"
+        }
+      ],
+      "log": "present-day border audit, November 2026 (earlier-year findings)"
+    },
+    "Éire": {
+      "relabel": [
+        {
+          "from": 1938,
+          "to": 1991,
+          "name": "Ireland",
+          "key": "Ireland"
+        }
+      ],
+      "note": "Under the 1937 constitution the state's name is Éire, or in English, Ireland. Shown as Ireland, on one page with today's country.",
+      "sources": [
+        {
+          "title": "Wikipedia: Names of the Irish state",
+          "url": "https://en.wikipedia.org/wiki/Names_of_the_Irish_state"
+        }
+      ],
+      "log": "present-day border audit, November 2026 (earlier-year findings)"
+    },
+    "Federated Republic of Germany": {
+      "relabel": [
+        {
+          "from": 1991,
+          "to": 1991,
+          "name": "Germany",
+          "key": "Germany"
+        }
+      ],
+      "note": "Reunified Germany (from 3 October 1990) is the Federal Republic of Germany; \"Federated\" is a slip. Shown as Germany, on one page with today's country.",
+      "sources": [
+        {
+          "title": "Wikipedia: German reunification",
+          "url": "https://en.wikipedia.org/wiki/German_reunification"
+        }
+      ],
+      "log": "present-day border audit, November 2026 (earlier-year findings)"
+    },
+    "Democratic Republic of the Congo": {
+      "relabel": [
+        {
+          "from": 1972,
+          "to": 1972,
+          "name": "Zaire",
+          "key": "Zaire"
+        }
+      ],
+      "note": "The country was renamed Zaire on 27 October 1971 and took back the name Democratic Republic of the Congo on 17 May 1997.",
+      "sources": [
+        {
+          "title": "Wikipedia: Zaire",
+          "url": "https://en.wikipedia.org/wiki/Zaire"
+        }
+      ],
+      "log": "present-day border audit, November 2026 (earlier-year findings)"
     }
   },
   "base": {

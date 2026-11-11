@@ -1,5 +1,5 @@
 /* The World Atlas — interactive historical world map, 10,000 BCE – today.
-   State borders: Cliopatria, Seshat Global History Databank (CC BY 4.0); from 2024 on: Natural Earth (public domain).
+   State borders: Cliopatria, Seshat Global History Databank (CC BY 4.0); from 1992 on: Natural Earth (public domain).
    Peoples & cultures layer: historical-basemaps by A. Ourednik (GPL-3.0).
    Reference maps: Wikimedia Commons (per-file licences, credited in the panel). */
 (() => {
@@ -299,14 +299,14 @@ function correctFeature(f, y) {
     cr.box2 ||= boxFeature(cr.box);
     let byName = relabelCache.get(f);
     if (!byName) relabelCache.set(f, (byName = {}));
-    f = byName["crop:" + cr.box.join(",")] ||= { type: "Feature", geometry: f.geometry, properties: { ...f.properties, crop: cr.box2 } };
+    f = byName["crop:" + cr.box.join(",")] ||= { type: "Feature", geometry: f.geometry, properties: { ...f.properties, crop: cr.box2, cropBox: cr.box } };
   }
   const cuts = c.cut ? c.cut.filter((r) => inRange(y, [r.from, r.to])) : [];
   if (cuts.length) { // draw the shape except inside these lon/lat boxes (territory it never held)
     cuts.forEach((r) => (r.box2 ||= boxFeature(r.box)));
     let byName = relabelCache.get(f);
     if (!byName) relabelCache.set(f, (byName = {}));
-    f = byName["cut:" + cuts.map((r) => r.box.join(",")).join("|") + (f.properties.crop ? ":c" : "")] ||= { type: "Feature", geometry: f.geometry, properties: { ...f.properties, cut: cuts.map((r) => r.box2) } };
+    f = byName["cut:" + cuts.map((r) => r.box.join(",")).join("|") + (f.properties.crop ? ":c" : "")] ||= { type: "Feature", geometry: f.geometry, properties: { ...f.properties, cut: cuts.map((r) => r.box2), cutBoxes: cuts.map((r) => r.box) } };
   }
   const rl = c.relabel && c.relabel.find((r) => inRange(y, [r.from, r.to]));
   if (!rl) return f;
@@ -1394,6 +1394,8 @@ function drawLabels() {
     const id = it.p.n, an = anchors.get(id);
     let ll = it.p.l;
     if (an && d3.geoDistance(an.l, ll) * 6371 < 0.3 * Math.sqrt(it.p.a)) ll = an.l;
+    const inBox = ([w, s, e, n]) => ll[0] >= w && ll[0] <= e && ll[1] >= s && ll[1] <= n;
+    if ((it.p.cropBox && !inBox(it.p.cropBox)) || it.p.cutBoxes?.some(inBox)) continue; // the name's spot is clipped away
     const [x0, y0] = projection(ll);
     const x = t.applyX(x0), y = t.applyY(y0);
     if (x < -50 || y < -20 || x > S.width + 50 || y > S.height + 20) continue;
@@ -1966,7 +1968,7 @@ function sourcesHTML() { // the About page (#about; #sources still opens it)
     <h3 class="sec">Borders and map data</h3>
     <ol class="sources-list">
       <li><b>State borders</b>: ${L("https://github.com/Seshat-Global-History-Databank/cliopatria", "Cliopatria")}, Seshat Global History Databank (${L("https://creativecommons.org/licenses/by/4.0/", "CC BY 4.0")}); paper in <i>Scientific Data</i> (2025), ${L("https://doi.org/10.1038/s41597-025-04516-9", "doi:10.1038/s41597-025-04516-9")}. Simplified for the web.</li>
-      <li><b>Present-day borders</b> (2024 onward): ${L("https://www.naturalearthdata.com/", "Natural Earth")} 1:10m countries (public domain). A disputed place is drawn under the state that administers it.</li>
+      <li><b>Borders from 1992 to today</b>: ${L("https://www.naturalearthdata.com/", "Natural Earth")} 1:10m countries (public domain), with the changes since 1992 dated (Czechoslovakia, Eritrea, Hong Kong, South Sudan, Crimea and others). Disputed places follow Natural Earth's default view and are outlined with dashes.</li>
       <li><b>Peoples and other polities</b> (hatched layer): ${L("https://github.com/aourednik/historical-basemaps", "historical-basemaps")} by André Ourednik (GPL-3.0).</li>
       <li><b>Map corrections</b>: ${n(Object.keys(S.corr.realms).length)} realms carry reviewed fixes or notes where the border data contradicts scholarship, each with its sources ("How accurate is this map?" on a realm).</li>
       <li><b>Reconstruction layers</b> (e.g. Sangam-age Tamilakam) and <b>archaeological cultures and ancient sites</b>: compiled for this atlas from the publications cited on each page.</li>

@@ -1,0 +1,999 @@
+{
+ "_about": "Sourced geometry fixes to the border data before 1992, applied by tools/build_patches.py after tools/build_clio.py. Each patch says what was wrong and how it is fixed; the operations are described in the tool's header. Fixes that only rename, hide or clip a shape belong in content/corrections.json instead.",
+ "patches": [
+  {
+   "id": "soviet-union-outline",
+   "note": "Cliopatria draws Czechoslovakia inside the Soviet Union in 1969-1990, the years Soviet troops were stationed there after the 1968 invasion, and parts of Afghanistan as Soviet territory in 1979-1989. Czechoslovakia remained a separate state, and Afghanistan was ruled by its own communist government. The Soviet Union's frontiers did not change between 1953 and Lithuania's declaration of independence in 1990, so its 1953-1968 outline is used for 1969-1989 and its 1991 outline for 1990.",
+   "ops": [
+    {
+     "op": "geometry",
+     "realm": "Union of Soviet Socialist Republics",
+     "years": [
+      1969,
+      1989
+     ],
+     "year": 1953
+    },
+    {
+     "op": "geometry",
+     "realm": "Union of Soviet Socialist Republics",
+     "years": [
+      1990,
+      1990
+     ],
+     "year": 1991
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Warsaw Pact invasion of Czechoslovakia",
+     "url": "https://en.wikipedia.org/wiki/Warsaw_Pact_invasion_of_Czechoslovakia"
+    },
+    {
+     "title": "Wikipedia: Central Group of Forces",
+     "url": "https://en.wikipedia.org/wiki/Central_Group_of_Forces"
+    },
+    {
+     "title": "Wikipedia: Soviet–Afghan War",
+     "url": "https://en.wikipedia.org/wiki/Soviet%E2%80%93Afghan_War"
+    }
+   ]
+  },
+  {
+   "id": "czechoslovakia-1945-1990",
+   "note": "Czechoslovakia was restored as a state in 1945 and existed until 31 December 1992. The border data leaves it out in 1945-1946 and 1969-1990, when it draws the country as Soviet; its 1953-1968 outline is used for those years. Soviet forces left in December 1945 and were stationed again from 1968 to 1991.",
+   "ops": [
+    {
+     "op": "copy",
+     "realm": "Czechoslovakia",
+     "year": 1953,
+     "years": [
+      1945,
+      1946
+     ]
+    },
+    {
+     "op": "copy",
+     "realm": "Czechoslovakia",
+     "year": 1953,
+     "years": [
+      1969,
+      1990
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Czechoslovakia",
+     "url": "https://en.wikipedia.org/wiki/Czechoslovakia"
+    },
+    {
+     "title": "Wikipedia: Third Czechoslovak Republic",
+     "url": "https://en.wikipedia.org/wiki/Third_Czechoslovak_Republic"
+    },
+    {
+     "title": "Wikipedia: Central Group of Forces",
+     "url": "https://en.wikipedia.org/wiki/Central_Group_of_Forces"
+    }
+   ]
+  },
+  {
+   "id": "afghanistan-1979-1991",
+   "note": "With the Soviet outline trimmed to the Soviet Union itself (soviet-union-outline), Afghanistan is drawn whole in 1979-1991, with the border data's own outline of 1976-1978, which fits the Soviet outline. Afghanistan's borders did not change. (That outline, like the border data's for every year from 1919, puts a strip north of the Amu Darya around Termez on the Afghan side.) The Democratic Republic of Afghanistan (from 1987 the Republic of Afghanistan) held Kabul and the main cities until April 1992; the war maps show the areas each side controlled.",
+   "ops": [
+    {
+     "op": "geometry",
+     "realm": "Afghanistan",
+     "years": [
+      1979,
+      1986
+     ],
+     "from": "Republic of Afghanistan",
+     "year": 1976
+    },
+    {
+     "op": "geometry",
+     "realm": "Mujahideen",
+     "years": [
+      1987,
+      1991
+     ],
+     "from": "Republic of Afghanistan",
+     "year": 1976
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Democratic Republic of Afghanistan",
+     "url": "https://en.wikipedia.org/wiki/Democratic_Republic_of_Afghanistan"
+    },
+    {
+     "title": "Wikipedia: Soviet–Afghan War",
+     "url": "https://en.wikipedia.org/wiki/Soviet%E2%80%93Afghan_War"
+    }
+   ]
+  },
+  {
+   "id": "south-yemen-1968",
+   "note": "Southern Yemen became independent on 30 November 1967; the border data has no state there in 1968.",
+   "ops": [
+    {
+     "op": "copy",
+     "realm": "People's Democratic Republic of Yemen",
+     "year": 1969,
+     "years": [
+      1968,
+      1968
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: South Yemen",
+     "url": "https://en.wikipedia.org/wiki/South_Yemen"
+    }
+   ]
+  },
+  {
+   "id": "bangladesh-1972",
+   "note": "Bangladesh became independent in December 1971; the border data has no state there in 1972.",
+   "ops": [
+    {
+     "op": "copy",
+     "realm": "People's Republic of Bangladesh",
+     "year": 1973,
+     "years": [
+      1972,
+      1972
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Bangladesh Liberation War",
+     "url": "https://en.wikipedia.org/wiki/Bangladesh_Liberation_War"
+    }
+   ]
+  },
+  {
+   "id": "qatar-1972",
+   "note": "Qatar became independent on 3 September 1971; the border data has no state there in 1972.",
+   "ops": [
+    {
+     "op": "copy",
+     "realm": "State of Qatar",
+     "year": 1973,
+     "years": [
+      1972,
+      1972
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Qatar",
+     "url": "https://en.wikipedia.org/wiki/Qatar"
+    }
+   ]
+  },
+  {
+   "id": "bahrain-1972",
+   "note": "Bahrain became independent on 15 August 1971; the border data has no state there in 1972.",
+   "ops": [
+    {
+     "op": "copy",
+     "realm": "Kingdom of Bahrain",
+     "year": 1973,
+     "years": [
+      1972,
+      1972
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Bahrain",
+     "url": "https://en.wikipedia.org/wiki/Bahrain"
+    }
+   ]
+  },
+  {
+   "id": "oman-1972",
+   "note": "The Sultanate of Oman (so named after the 1970 coup) has no outline in the border data in 1972.",
+   "ops": [
+    {
+     "op": "copy",
+     "realm": "Sultanate of Oman",
+     "year": 1973,
+     "years": [
+      1972,
+      1972
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Oman",
+     "url": "https://en.wikipedia.org/wiki/Oman"
+    }
+   ]
+  },
+  {
+   "id": "uae-1972",
+   "note": "The United Arab Emirates were formed on 2 December 1971; the border data has no state there in 1972.",
+   "ops": [
+    {
+     "op": "copy",
+     "realm": "United Arab Emirates",
+     "year": 1973,
+     "years": [
+      1972,
+      1972
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: United Arab Emirates",
+     "url": "https://en.wikipedia.org/wiki/United_Arab_Emirates"
+    }
+   ]
+  },
+  {
+   "id": "jordan-1959",
+   "note": "The Arab Federation of Iraq and Jordan ended in August 1958; the border data has no state in Jordan in 1959.",
+   "ops": [
+    {
+     "op": "copy",
+     "realm": "Kingdom of Jordan",
+     "year": 1960,
+     "years": [
+      1959,
+      1959
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Arab Federation",
+     "url": "https://en.wikipedia.org/wiki/Arab_Federation"
+    }
+   ]
+  },
+  {
+   "id": "cyprus-1960",
+   "note": "Cyprus became independent on 16 August 1960; the border data has no state there in 1960.",
+   "ops": [
+    {
+     "op": "copy",
+     "realm": "Republic of Cyprus",
+     "year": 1961,
+     "years": [
+      1960,
+      1960
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Cyprus",
+     "url": "https://en.wikipedia.org/wiki/Cyprus"
+    }
+   ]
+  },
+  {
+   "id": "gambia-1965",
+   "note": "The Gambia became independent on 18 February 1965; the border data has no state there in 1965-1966.",
+   "ops": [
+    {
+     "op": "copy",
+     "realm": "Republic of The Gambia",
+     "year": 1967,
+     "years": [
+      1965,
+      1966
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: The Gambia",
+     "url": "https://en.wikipedia.org/wiki/The_Gambia"
+    }
+   ]
+  },
+  {
+   "id": "malawi-1965",
+   "note": "Malawi became independent on 6 July 1964; the border data has no state there in 1965-1966.",
+   "ops": [
+    {
+     "op": "copy",
+     "realm": "Malawi",
+     "year": 1967,
+     "years": [
+      1965,
+      1966
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Malawi",
+     "url": "https://en.wikipedia.org/wiki/Malawi"
+    }
+   ]
+  },
+  {
+   "id": "zambia-1965",
+   "note": "Zambia became independent on 24 October 1964; the border data has no state there in 1965-1966.",
+   "ops": [
+    {
+     "op": "copy",
+     "realm": "Zambia",
+     "year": 1967,
+     "years": [
+      1965,
+      1966
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Zambia",
+     "url": "https://en.wikipedia.org/wiki/Zambia"
+    }
+   ]
+  },
+  {
+   "id": "djibouti-1977",
+   "note": "Djibouti became independent on 27 June 1977; the border data has no state there in 1977-1978.",
+   "ops": [
+    {
+     "op": "copy",
+     "realm": "Republic of Djibouti",
+     "year": 1979,
+     "years": [
+      1977,
+      1978
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Djibouti",
+     "url": "https://en.wikipedia.org/wiki/Djibouti"
+    }
+   ]
+  },
+  {
+   "id": "algeria-1962",
+   "note": "Algeria became independent on 5 July 1962; the border data has no state there in 1962.",
+   "ops": [
+    {
+     "op": "copy",
+     "realm": "People's Democratic Republic of Algeria",
+     "year": 1963,
+     "years": [
+      1962,
+      1962
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Algeria",
+     "url": "https://en.wikipedia.org/wiki/Algeria"
+    }
+   ]
+  },
+  {
+   "id": "ghana-1957",
+   "note": "Ghana became independent on 6 March 1957; the border data has no state there in 1957.",
+   "ops": [
+    {
+     "op": "copy",
+     "realm": "Ghana",
+     "year": 1958,
+     "years": [
+      1957,
+      1957
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Ghana",
+     "url": "https://en.wikipedia.org/wiki/Ghana"
+    }
+   ]
+  },
+  {
+   "id": "libya-1951",
+   "note": "Libya became independent on 24 December 1951 after two years of UN-supervised transition from British and French administration; the border data has no state there in 1951-1952.",
+   "ops": [
+    {
+     "op": "copy",
+     "realm": "Kingdom of Libya",
+     "year": 1953,
+     "years": [
+      1951,
+      1952
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Kingdom of Libya",
+     "url": "https://en.wikipedia.org/wiki/Kingdom_of_Libya"
+    }
+   ]
+  },
+  {
+   "id": "fiji-1971",
+   "note": "Fiji became independent on 10 October 1970; the border data has no state there in 1971-1972.",
+   "ops": [
+    {
+     "op": "copy",
+     "realm": "Republic of Fiji",
+     "year": 1973,
+     "years": [
+      1971,
+      1972
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Fiji",
+     "url": "https://en.wikipedia.org/wiki/Fiji"
+    }
+   ]
+  },
+  {
+   "id": "grenada-1974",
+   "note": "Grenada became independent on 7 February 1974; the border data draws it as a British colony until 1975.",
+   "ops": [
+    {
+     "op": "copy",
+     "realm": "Grenada",
+     "year": 1976,
+     "years": [
+      1974,
+      1975
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Grenada",
+     "url": "https://en.wikipedia.org/wiki/Grenada"
+    }
+   ]
+  },
+  {
+   "id": "malta-1964",
+   "note": "Malta became independent on 21 September 1964; the border data draws it as British until 1966.",
+   "ops": [
+    {
+     "op": "copy",
+     "realm": "Malta",
+     "year": 1967,
+     "years": [
+      1964,
+      1966
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Malta",
+     "url": "https://en.wikipedia.org/wiki/Malta"
+    }
+   ]
+  },
+  {
+   "id": "singapore-1965",
+   "note": "Singapore left Malaysia and became independent on 9 August 1965; the border data draws it inside Malaysia until 1966.",
+   "ops": [
+    {
+     "op": "copy",
+     "realm": "Republic of Singapore",
+     "year": 1967,
+     "years": [
+      1965,
+      1966
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Singapore in Malaysia",
+     "url": "https://en.wikipedia.org/wiki/Singapore_in_Malaysia"
+    }
+   ]
+  },
+  {
+   "id": "brunei-1984",
+   "note": "Brunei became independent on 1 January 1984; the border data draws it inside Malaysia until 1986.",
+   "ops": [
+    {
+     "op": "copy",
+     "realm": "Sultanate of Brunei",
+     "year": 1987,
+     "years": [
+      1984,
+      1986
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Brunei",
+     "url": "https://en.wikipedia.org/wiki/Brunei"
+    }
+   ]
+  },
+  {
+   "id": "zanzibar-1965",
+   "note": "Tanganyika and Zanzibar united as Tanzania on 26 April 1964; the border data leaves Zanzibar out of Tanzania until 1966. Tanzania's 1967 outline is used for 1965-1966.",
+   "ops": [
+    {
+     "op": "geometry",
+     "realm": "Tanzania",
+     "years": [
+      1965,
+      1966
+     ],
+     "year": 1967
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Tanzania",
+     "url": "https://en.wikipedia.org/wiki/Tanzania"
+    }
+   ]
+  },
+  {
+   "id": "chukotka-not-american",
+   "note": "A piece of Chukotka around Cape Dezhnev is drawn as part of the United States from the Alaska Purchase on; it was always Russian (then Soviet).",
+   "ops": [
+    {
+     "op": "drop_parts",
+     "realm": "United States of America",
+     "years": [
+      1868,
+      1991
+     ],
+     "box": [
+      -170.5,
+      65.9,
+      -169.5,
+      66.3
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Alaska Purchase",
+     "url": "https://en.wikipedia.org/wiki/Alaska_Purchase"
+    },
+    {
+     "title": "Wikipedia: Cape Dezhnev",
+     "url": "https://en.wikipedia.org/wiki/Cape_Dezhnev"
+    }
+   ]
+  },
+  {
+   "id": "india-specks-in-afghanistan-and-pakistan",
+   "note": "Two specks of the Republic of India lie far outside it, in southern Afghanistan (63.8E 29.5N) and near Quetta in Pakistan (66.3E 29.95N).",
+   "ops": [
+    {
+     "op": "drop_parts",
+     "realm": "Republic of India",
+     "years": [
+      1948,
+      1991
+     ],
+     "box": [
+      63.7,
+      29.4,
+      63.9,
+      29.6
+     ]
+    },
+    {
+     "op": "drop_parts",
+     "realm": "Republic of India",
+     "years": [
+      1948,
+      1991
+     ],
+     "box": [
+      66.2,
+      29.85,
+      66.4,
+      30.05
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Durand Line",
+     "url": "https://en.wikipedia.org/wiki/Durand_Line"
+    }
+   ]
+  },
+  {
+   "id": "pakistan-speck-in-bangladesh",
+   "note": "After Bangladesh's independence (1971) a speck of Pakistan is left on the Bangladesh coast (90.05E 22.0N).",
+   "ops": [
+    {
+     "op": "drop_parts",
+     "realm": "Islamic Republic of Pakistan",
+     "years": [
+      1973,
+      1991
+     ],
+     "box": [
+      89.9,
+      21.9,
+      90.2,
+      22.1
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Bangladesh Liberation War",
+     "url": "https://en.wikipedia.org/wiki/Bangladesh_Liberation_War"
+    }
+   ]
+  },
+  {
+   "id": "comoros-not-cabo-verde",
+   "note": "The Comoros (independent 6 July 1975) are drawn as part of the Republic of Cabo Verde, an archipelago off West Africa. The Comoro islands are taken out of Cabo Verde and drawn as the Comoros, from Natural Earth, without Mayotte, which stayed French.",
+   "ops": [
+    {
+     "op": "drop_parts",
+     "realm": "Republic of Cabo Verde",
+     "years": [
+      1976,
+      1991
+     ],
+     "box": [
+      43.0,
+      -13.1,
+      45.2,
+      -11.2
+     ]
+    },
+    {
+     "op": "ne",
+     "a3": "COM",
+     "name": "Comoros",
+     "years": [
+      1975,
+      1991
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Comoros",
+     "url": "https://en.wikipedia.org/wiki/Comoros"
+    },
+    {
+     "title": "Wikipedia: Mayotte",
+     "url": "https://en.wikipedia.org/wiki/Mayotte"
+    }
+   ]
+  },
+  {
+   "id": "maldives",
+   "note": "The Maldives became independent on 26 July 1965 (a British protectorate before); the border data never draws them.",
+   "ops": [
+    {
+     "op": "ne",
+     "a3": "MDV",
+     "name": "Maldives",
+     "years": [
+      1965,
+      1991
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Maldives",
+     "url": "https://en.wikipedia.org/wiki/Maldives"
+    }
+   ]
+  },
+  {
+   "id": "samoa",
+   "note": "Western Samoa became independent on 1 January 1962; the border data never draws it.",
+   "ops": [
+    {
+     "op": "ne",
+     "a3": "WSM",
+     "name": "Samoa",
+     "years": [
+      1962,
+      1991
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Samoa",
+     "url": "https://en.wikipedia.org/wiki/Samoa"
+    }
+   ]
+  },
+  {
+   "id": "tonga",
+   "note": "Tonga, a kingdom under British protection from 1900, regained full sovereignty on 4 June 1970; the border data never draws it.",
+   "ops": [
+    {
+     "op": "ne",
+     "a3": "TON",
+     "name": "Tonga",
+     "years": [
+      1970,
+      1991
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Tonga",
+     "url": "https://en.wikipedia.org/wiki/Tonga"
+    }
+   ]
+  },
+  {
+   "id": "nauru",
+   "note": "Nauru became independent on 31 January 1968; the border data never draws it.",
+   "ops": [
+    {
+     "op": "ne",
+     "a3": "NRU",
+     "name": "Nauru",
+     "years": [
+      1968,
+      1991
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Nauru",
+     "url": "https://en.wikipedia.org/wiki/Nauru"
+    }
+   ]
+  },
+  {
+   "id": "tuvalu",
+   "note": "Tuvalu became independent on 1 October 1978; the border data never draws it.",
+   "ops": [
+    {
+     "op": "ne",
+     "a3": "TUV",
+     "name": "Tuvalu",
+     "years": [
+      1978,
+      1991
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Tuvalu",
+     "url": "https://en.wikipedia.org/wiki/Tuvalu"
+    }
+   ]
+  },
+  {
+   "id": "kiribati",
+   "note": "Kiribati became independent on 12 July 1979; the border data never draws it.",
+   "ops": [
+    {
+     "op": "ne",
+     "a3": "KIR",
+     "name": "Kiribati",
+     "years": [
+      1979,
+      1991
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Kiribati",
+     "url": "https://en.wikipedia.org/wiki/Kiribati"
+    }
+   ]
+  },
+  {
+   "id": "marshall-islands",
+   "note": "The Marshall Islands became self-governing in free association with the United States on 21 October 1986; the border data never draws them.",
+   "ops": [
+    {
+     "op": "ne",
+     "a3": "MHL",
+     "name": "Marshall Islands",
+     "years": [
+      1986,
+      1991
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Marshall Islands",
+     "url": "https://en.wikipedia.org/wiki/Marshall_Islands"
+    }
+   ]
+  },
+  {
+   "id": "saint-kitts-and-nevis",
+   "note": "Saint Kitts and Nevis became independent on 19 September 1983; the border data never draws it.",
+   "ops": [
+    {
+     "op": "ne",
+     "a3": "KNA",
+     "name": "Saint Kitts and Nevis",
+     "years": [
+      1983,
+      1991
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Saint Kitts and Nevis",
+     "url": "https://en.wikipedia.org/wiki/Saint_Kitts_and_Nevis"
+    }
+   ]
+  },
+  {
+   "id": "vatican",
+   "note": "Vatican City became a sovereign state under the Lateran Treaty of 11 February 1929; the border data draws it as part of Italy.",
+   "ops": [
+    {
+     "op": "ne",
+     "a3": "VAT",
+     "name": "Vatican City",
+     "years": [
+      1929,
+      1991
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Vatican City",
+     "url": "https://en.wikipedia.org/wiki/Vatican_City"
+    }
+   ]
+  },
+  {
+   "id": "san-marino",
+   "note": "San Marino's independence was recognised by the Papacy in 1631 and its borders have not changed since 1463; the border data draws it only in 1797-1799. Natural Earth's outline is used for 1631-1991.",
+   "ops": [
+    {
+     "op": "ne",
+     "a3": "SMR",
+     "name": "Republic of San Marino",
+     "years": [
+      1631,
+      1991
+     ],
+     "replace": true
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: San Marino",
+     "url": "https://en.wikipedia.org/wiki/San_Marino"
+    }
+   ]
+  },
+  {
+   "id": "liechtenstein",
+   "note": "Liechtenstein has been sovereign since 1806 within its 1719 borders; the border data draws it until 1814 and then as part of its neighbours. Natural Earth's outline is used for 1815-1991.",
+   "ops": [
+    {
+     "op": "ne",
+     "a3": "LIE",
+     "name": "Principality of Liechtenstein",
+     "years": [
+      1815,
+      1991
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Liechtenstein",
+     "url": "https://en.wikipedia.org/wiki/Liechtenstein"
+    }
+   ]
+  },
+  {
+   "id": "monaco",
+   "note": "Monaco has had its present borders since the Franco-Monegasque Treaty of 1861. The border data has no Monaco from 1815 to 1944, and from 1945 draws it over Nice; Natural Earth's outline is used for 1861-1991.",
+   "ops": [
+    {
+     "op": "ne",
+     "a3": "MCO",
+     "name": "Principality of Monaco",
+     "years": [
+      1861,
+      1991
+     ],
+     "replace": true
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Monaco",
+     "url": "https://en.wikipedia.org/wiki/Monaco"
+    }
+   ]
+  },
+  {
+   "id": "bahamas-outline",
+   "note": "The Bahamas (independent 10 July 1973) are drawn as a few misplaced blobs that miss New Providence and Nassau; Natural Earth's outline is used instead.",
+   "ops": [
+    {
+     "op": "ne",
+     "a3": "BHS",
+     "name": "Commonwealth of The Bahamas",
+     "years": [
+      1973,
+      1991
+     ],
+     "replace": true
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: The Bahamas",
+     "url": "https://en.wikipedia.org/wiki/The_Bahamas"
+    }
+   ]
+  },
+  {
+   "id": "uk-gulf-after-1971",
+   "note": "After Bahrain, Qatar and the Trucial States became independent in 1971, the United Kingdom's shape still contains them and Oman (the corrections layer hides these pieces, but the map put the United Kingdom's name there). The pieces are removed from 1972 on.",
+   "ops": [
+    {
+     "op": "drop_parts",
+     "realm": "Kingdom of Great Britain",
+     "years": [
+      1972,
+      1991
+     ],
+     "box": [
+      50.3,
+      16.5,
+      60.0,
+      26.5
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Trucial States",
+     "url": "https://en.wikipedia.org/wiki/Trucial_States"
+    },
+    {
+     "title": "Wikipedia: Oman",
+     "url": "https://en.wikipedia.org/wiki/Oman"
+    }
+   ]
+  }
+ ]
+}

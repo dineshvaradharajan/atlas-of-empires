@@ -93,6 +93,30 @@ def orient(ring, clockwise):
     return ring if is_cw == clockwise else ring[::-1]
 
 
+def gc_mid(a, b):
+    """Midpoint of the great-circle arc from a to b (lon/lat degrees)."""
+    def v(p):
+        lo, la = math.radians(p[0]), math.radians(p[1])
+        return (math.cos(la) * math.cos(lo), math.cos(la) * math.sin(lo), math.sin(la))
+    x, y, z = (s + t for s, t in zip(v(a), v(b)))
+    return math.degrees(math.atan2(y, x)), math.degrees(math.atan2(z, math.hypot(x, y)))
+
+
+def densify(a, b, tol, depth=0):
+    """Points to add between a and b so that the great-circle arcs the app draws (d3.geoPath) stay within tol degrees
+    of the straight lon/lat line the data means: a border along a parallel, like the 49th, would otherwise bulge
+    toward the pole. The points depend only on the two ends, so two neighbours sharing an edge get the same ones."""
+    if abs(a[0] - b[0]) < 0.5 or depth > 8:
+        return []
+    if tuple(a) > tuple(b):
+        return densify(b, a, tol, depth)[::-1]
+    m = ((a[0] + b[0]) / 2, (a[1] + b[1]) / 2)
+    gx, gy = gc_mid(a, b)
+    if math.hypot((gx - m[0]) * math.cos(math.radians(m[1])), gy - m[1]) <= tol:
+        return []
+    return densify(a, m, tol, depth + 1) + [m] + densify(m, b, tol, depth + 1)
+
+
 def inside(pt, ring):
     x, y = pt
     c = False

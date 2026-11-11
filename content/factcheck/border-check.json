@@ -1191,7 +1191,8 @@
     "New France"
    ],
    "map": [
-    "New France"
+    "New France",
+    "Waalo"
    ],
    "region": "africa",
    "source": {
@@ -4952,10 +4953,10 @@
     23.13
    ],
    "expected": [
-    "Communist Cuba"
+    "Cuba"
    ],
    "map": [
-    "Communist Cuba"
+    "Cuba"
    ],
    "region": "americas",
    "source": {
@@ -9796,7 +9797,8 @@
     "Almoravid Dynasty"
    ],
    "map": [
-    "Almoravid Dynasty"
+    "Almoravid Dynasty",
+    "Taifa of Majorca (Banu Ghaniya)"
    ],
    "region": "europe",
    "source": {
@@ -13409,6 +13411,7 @@
     "Regional emirates"
    ],
    "map": [
+    "Mirdasid dynasty",
     "Regional emirates"
    ],
    "region": "mena",
@@ -15166,7 +15169,7 @@
     "North Yemen"
    ],
    "map": [
-    "North Yemen"
+    "Mutawakkilite Kingdom of Yemen"
    ],
    "region": "mena",
    "source": {
@@ -15176,7 +15179,7 @@
    "file": "claims-mena.json"
   },
   {
-   "ok": false,
+   "ok": true,
    "place": "Aden",
    "year": 1968,
    "lonlat": [
@@ -15187,7 +15190,7 @@
     "People's Democratic Republic of Yemen"
    ],
    "map": [
-    "(nothing drawn)"
+    "People's Republic of Southern Yemen"
    ],
    "region": "mena",
    "source": {
@@ -15811,7 +15814,7 @@
    "file": "claims-mena.json"
   },
   {
-   "ok": false,
+   "ok": true,
    "place": "Tripoli (Libya)",
    "year": 1952,
    "lonlat": [
@@ -15822,7 +15825,7 @@
     "Kingdom of Libya"
    ],
    "map": [
-    "(nothing drawn)"
+    "Kingdom of Libya"
    ],
    "region": "mena",
    "source": {
@@ -17827,7 +17830,7 @@
     "Kingdom of Mysore"
    ],
    "map": [
-    "Kingdom of Mysore"
+    "Mysore under Tipu Sultan after the Treaty of Seringapatam"
    ],
    "region": "south-asia",
    "source": {
@@ -17848,7 +17851,7 @@
     "Kingdom of Mysore"
    ],
    "map": [
-    "Kingdom of Mysore"
+    "Mysore under Hyder Ali and Tipu Sultan"
    ],
    "region": "south-asia",
    "source": {
@@ -20080,10 +20083,10 @@
     17.97
    ],
    "expected": [
-    "Communist Laos"
+    "Laos"
    ],
    "map": [
-    "Communist Laos"
+    "Laos"
    ],
    "region": "southeast-asia",
    "source": {
@@ -20294,7 +20297,8 @@
     "Âu Lạc"
    ],
    "map": [
-    "Âu Lạc"
+    "Âu Lạc",
+    "Đông Sơn culture"
    ],
    "region": "southeast-asia",
    "source": {
@@ -20315,7 +20319,8 @@
     "Nanyue"
    ],
    "map": [
-    "Nanyue"
+    "Nanyue",
+    "Đông Sơn culture"
    ],
    "region": "southeast-asia",
    "source": {
@@ -20336,7 +20341,8 @@
     "Han Dynasty"
    ],
    "map": [
-    "Han Dynasty"
+    "Han Dynasty",
+    "Đông Sơn culture"
    ],
    "region": "southeast-asia",
    "source": {
@@ -20357,7 +20363,7 @@
     "Trưng sisters"
    ],
    "map": [
-    "(nothing drawn)"
+    "Đông Sơn culture"
    ],
    "region": "southeast-asia",
    "source": {
@@ -20378,7 +20384,7 @@
     "Han Dynasty"
    ],
    "map": [
-    "(nothing drawn)"
+    "Đông Sơn culture"
    ],
    "region": "southeast-asia",
    "source": {
@@ -22213,7 +22219,7 @@
    "file": "claims-southeast-asia.json"
   },
   {
-   "ok": false,
+   "ok": true,
    "place": "Dili",
    "year": 2003,
    "lonlat": [
@@ -22224,7 +22230,7 @@
     "East Timor"
    ],
    "map": [
-    "(nothing drawn)"
+    "East Timor"
    ],
    "region": "southeast-asia",
    "source": {
@@ -24291,6 +24297,7 @@
     "Great Seljuk Empire"
    ],
    "map": [
+    "Emirate of Tbilisi",
     "Great Seljuk Empire"
    ],
    "region": "steppe",
@@ -24603,10 +24610,10 @@
     40.18
    ],
    "expected": [
-    "Khanates of the Caucasus"
+    "Erivan Khanate"
    ],
    "map": [
-    "Khanates of the Caucasus"
+    "Erivan Khanate"
    ],
    "region": "steppe",
    "source": {
@@ -24729,10 +24736,10 @@
     40.41
    ],
    "expected": [
-    "Khanates of the Caucasus"
+    "Baku Khanate"
    ],
    "map": [
-    "Khanates of the Caucasus"
+    "Baku Khanate"
    ],
    "region": "steppe",
    "source": {
@@ -25680,10 +25687,11 @@
     35.6
    ],
    "expected": [
-    "Hittites"
+    "Hittites",
+    "Ugarit"
    ],
    "map": [
-    "Hittites"
+    "Ugarit"
    ],
    "region": "v1",
    "source": {
@@ -28180,7 +28188,7 @@
     "Late Pallava Empire"
    ],
    "map": [
-    "Kalabhra Dynasty"
+    "Late Pallava Empire"
    ],
    "region": "v2",
    "source": {
@@ -31960,6 +31968,7 @@
     "Great Seljuk Empire"
    ],
    "map": [
+    "Eldiguzids (Atabegs of Azerbaijan)",
     "Great Seljuk Empire"
    ],
    "region": "v3",
@@ -34218,7 +34227,7 @@
     "British Colonial Empire"
    ],
    "map": [
-    "British Colonial Empire"
+    "British Overseas Territories"
    ],
    "region": "v4",
    "source": {
@@ -35505,7 +35514,7 @@
    ],
    "map_years": [
     1973,
-    2024
+    2026
    ],
    "wiki": "Syria"
   },
@@ -35519,7 +35528,7 @@
    ],
    "map_years": [
     1992,
-    2024
+    2026
    ],
    "wiki": "Russia"
   },
@@ -35533,7 +35542,7 @@
    ],
    "map_years": [
     1992,
-    2024
+    2026
    ],
    "wiki": "Russia"
   }
@@ -35639,15 +35648,6 @@
    "label": "Pandya dynasty"
   },
   {
-   "realm": "Republic of San Marino",
-   "kind": "starts",
-   "map": 1797,
-   "wikidata": 301,
-   "diff": 1496,
-   "wd": "Q238",
-   "label": "San Marino"
-  },
-  {
    "realm": "Republic of Italy",
    "kind": "starts",
    "map": 1946,
@@ -35693,7 +35693,7 @@
    "label": "Phoenicia"
   },
   {
-   "realm": "Federated Republic of Germany",
+   "realm": "Germany",
    "kind": "starts",
    "map": 1991,
    "wikidata": 641,
@@ -35727,6 +35727,15 @@
    "diff": -1331,
    "wd": "Q124661",
    "label": "Strathclyde"
+  },
+  {
+   "realm": "Republic of San Marino",
+   "kind": "starts",
+   "map": 1631,
+   "wikidata": 301,
+   "diff": 1330,
+   "wd": "Q238",
+   "label": "San Marino"
   },
   {
    "realm": "Jin",
@@ -36055,9 +36064,9 @@
   {
    "realm": "Czech Republic",
    "kind": "starts",
-   "map": 1992,
+   "map": 1993,
    "wikidata": 1198,
-   "diff": 794,
+   "diff": 795,
    "wd": "Q213",
    "label": "Czech Republic"
   },
@@ -36692,15 +36701,6 @@
    "label": "Kingdom of Bohemia"
   },
   {
-   "realm": "State of Libya",
-   "kind": "starts",
-   "map": 2014,
-   "wikidata": 1551,
-   "diff": 463,
-   "wd": "Q1016",
-   "label": "Libya"
-  },
-  {
    "realm": "Principality of Transylvania",
    "kind": "starts",
    "map": 1572,
@@ -36762,6 +36762,15 @@
    "diff": -442,
    "wd": "Q918153",
    "label": "British Ceylon"
+  },
+  {
+   "realm": "State of Libya",
+   "kind": "starts",
+   "map": 1992,
+   "wikidata": 1551,
+   "diff": 441,
+   "wd": "Q1016",
+   "label": "Libya"
   },
   {
    "realm": "Dauphiné",
@@ -38438,6 +38447,15 @@
    "label": "Sultanate of Gowa"
   },
   {
+   "realm": "Netherlands Antilles",
+   "kind": "ends",
+   "map": 1819,
+   "wikidata": 2010,
+   "diff": -191,
+   "wd": "Q25227",
+   "label": "Netherlands Antilles"
+  },
+  {
    "realm": "Regency of Algiers",
    "kind": "starts",
    "map": 1706,
@@ -39167,15 +39185,6 @@
    "label": "Ghurid dynasty"
   },
   {
-   "realm": "Republic of Singapore",
-   "kind": "starts",
-   "map": 1967,
-   "wikidata": 1826,
-   "diff": 141,
-   "wd": "Q334",
-   "label": "Singapore"
-  },
-  {
    "realm": "Kingdom of Gwynedd",
    "kind": "starts",
    "map": 540,
@@ -39201,6 +39210,15 @@
    "diff": -139,
    "wd": "Q25227",
    "label": "Netherlands Antilles"
+  },
+  {
+   "realm": "Republic of Singapore",
+   "kind": "starts",
+   "map": 1965,
+   "wikidata": 1826,
+   "diff": 139,
+   "wd": "Q334",
+   "label": "Singapore"
   },
   {
    "realm": "Kushan Empire",
@@ -40058,15 +40076,6 @@
    "label": "Nogai Horde"
   },
   {
-   "realm": "State of Qatar",
-   "kind": "starts",
-   "map": 1973,
-   "wikidata": 1870,
-   "diff": 103,
-   "wd": "Q846",
-   "label": "Qatar"
-  },
-  {
    "realm": "Magna Frisia",
    "kind": "starts",
    "map": 602,
@@ -40092,6 +40101,15 @@
    "diff": -102,
    "wd": "Q1483495",
    "label": "Principality of Smolensk"
+  },
+  {
+   "realm": "State of Qatar",
+   "kind": "starts",
+   "map": 1972,
+   "wikidata": 1870,
+   "diff": 102,
+   "wd": "Q846",
+   "label": "Qatar"
   },
   {
    "realm": "Neo-Hittite states",
@@ -40193,15 +40211,6 @@
    "label": "Eswatini"
   },
   {
-   "realm": "Republic of Iraq",
-   "kind": "starts",
-   "map": 2014,
-   "wikidata": 1932,
-   "diff": 82,
-   "wd": "Q796",
-   "label": "Iraq"
-  },
-  {
    "realm": "Mongolia",
    "kind": "starts",
    "map": 1992,
@@ -40301,15 +40310,6 @@
    "label": "Trinidad and Tobago"
   },
   {
-   "realm": "Slovakia",
-   "kind": "starts",
-   "map": 1992,
-   "wikidata": 1918,
-   "diff": 74,
-   "wd": "Q33946",
-   "label": "Czechoslovakia"
-  },
-  {
    "realm": "Republic of Estonia",
    "kind": "starts",
    "map": 1992,
@@ -40355,15 +40355,6 @@
    "label": "Oyo Empire"
   },
   {
-   "realm": "Chechen Republic",
-   "kind": "starts",
-   "map": 1992,
-   "wikidata": 1922,
-   "diff": 70,
-   "wd": "Q5187",
-   "label": "Chechnya"
-  },
-  {
    "realm": "Sultanate of Bima",
    "kind": "ends",
    "map": 1889,
@@ -40380,15 +40371,6 @@
    "diff": -69,
    "wd": "Q690821",
    "label": "Republic of Baden"
-  },
-  {
-   "realm": "(Commonwealth of Nations)",
-   "kind": "starts",
-   "map": 2000,
-   "wikidata": 1931,
-   "diff": 69,
-   "wd": "Q7785",
-   "label": "Commonwealth of Nations"
   },
   {
    "realm": "Khoshut Khanate",
@@ -40472,7 +40454,7 @@
    "label": "Johor Sultanate"
   },
   {
-   "realm": "Communist Cuba",
+   "realm": "Cuba",
    "kind": "starts",
    "map": 1960,
    "wikidata": 1898,
@@ -40497,6 +40479,24 @@
    "diff": -61,
    "wd": "Q6500483",
    "label": "Nguyen dynasty"
+  },
+  {
+   "realm": "(Commonwealth of Nations)",
+   "kind": "starts",
+   "map": 1992,
+   "wikidata": 1931,
+   "diff": 61,
+   "wd": "Q7785",
+   "label": "Commonwealth of Nations"
+  },
+  {
+   "realm": "Republic of Iraq",
+   "kind": "starts",
+   "map": 1992,
+   "wikidata": 1932,
+   "diff": 60,
+   "wd": "Q796",
+   "label": "Iraq"
   },
   {
    "realm": "Mali Empire",
@@ -40868,7 +40868,7 @@
    "label": "Syria"
   },
   {
-   "realm": "Union of Myanmar",
+   "realm": "Myanmar",
    "kind": "starts",
    "map": 1990,
    "wikidata": 1948,
@@ -40949,15 +40949,6 @@
    "label": "Majeerteen Sultanate"
   },
   {
-   "realm": "Republic of China",
-   "kind": "starts",
-   "map": 1912,
-   "wikidata": 1949,
-   "diff": -37,
-   "wd": "Q148",
-   "label": "People's Republic of China"
-  },
-  {
    "realm": "Sultanate of Sulu",
    "kind": "ends",
    "map": 1879,
@@ -41019,15 +41010,6 @@
    "diff": 31,
    "wd": "Q79",
    "label": "Egypt"
-  },
-  {
-   "realm": "East Timor",
-   "kind": "starts",
-   "map": 2006,
-   "wikidata": 1975,
-   "diff": 31,
-   "wd": "Q574",
-   "label": "Timor-Leste"
   },
   {
    "realm": "Federated Republic of Mexico",
@@ -41102,7 +41084,7 @@
    "label": "Iraq"
   },
   {
-   "realm": "Communist Laos",
+   "realm": "Laos",
    "kind": "starts",
    "map": 1976,
    "wikidata": 1949,
@@ -41163,6 +41145,15 @@
    "diff": 25,
    "wd": "Q191764",
    "label": "Communist Party of the Cambodia (Khmer Rouge)"
+  },
+  {
+   "realm": "East Timor",
+   "kind": "starts",
+   "map": 2000,
+   "wikidata": 1975,
+   "diff": 25,
+   "wd": "Q574",
+   "label": "Timor-Leste"
   },
   {
    "realm": "Ottoman Tripolitania",
@@ -41327,6 +41318,15 @@
    "label": "Socialist Republic of Romania"
   },
   {
+   "realm": "Angola",
+   "kind": "starts",
+   "map": 1992,
+   "wikidata": 1975,
+   "diff": 17,
+   "wd": "Q916",
+   "label": "Angola"
+  },
+  {
    "realm": "Second Syrian Republic",
    "kind": "starts",
    "map": 1946,
@@ -41354,15 +41354,6 @@
    "label": "Muscat and Oman"
   },
   {
-   "realm": "Palau",
-   "kind": "starts",
-   "map": 1996,
-   "wikidata": 1981,
-   "diff": 15,
-   "wd": "Q695",
-   "label": "Palau"
-  },
-  {
    "realm": "Grand Duchy of Berg",
    "kind": "ends",
    "map": 1827,
@@ -41379,6 +41370,24 @@
    "diff": 14,
    "wd": "Q15984928",
    "label": "Conservative Party"
+  },
+  {
+   "realm": "Palau",
+   "kind": "starts",
+   "map": 1994,
+   "wikidata": 1981,
+   "diff": 13,
+   "wd": "Q695",
+   "label": "Palau"
+  },
+  {
+   "realm": "Saint Vincent and the Grenadines",
+   "kind": "starts",
+   "map": 1992,
+   "wikidata": 1979,
+   "diff": 13,
+   "wd": "Q757",
+   "label": "Saint Vincent and the Grenadines"
   },
   {
    "realm": "Electorate of Hanover",
@@ -42189,6 +42198,26 @@
   },
   {
    "year": 1945,
+   "a": "Polish People's Republic",
+   "b": "Union of Soviet Socialist Republics",
+   "cells": 42,
+   "where": [
+    19.5,
+    52.1
+   ]
+  },
+  {
+   "year": 1950,
+   "a": "Polish People's Republic",
+   "b": "Union of Soviet Socialist Republics",
+   "cells": 42,
+   "where": [
+    19.5,
+    52.1
+   ]
+  },
+  {
+   "year": 1945,
    "a": "Communist Party of China",
    "b": "East Turkestan Republic",
    "cells": 32,
@@ -42298,6 +42327,16 @@
    ]
   },
   {
+   "year": 1850,
+   "a": "British Empire",
+   "b": "Hyderabad State (with Berar)",
+   "cells": 22,
+   "where": [
+    77.7,
+    18.3
+   ]
+  },
+  {
    "year": 1950,
    "a": "Federal Republic of Germany",
    "b": "United States of America",
@@ -42305,6 +42344,96 @@
    "where": [
     9.4,
     51.4
+   ]
+  },
+  {
+   "year": 1800,
+   "a": "Durrani Empire",
+   "b": "Khanate of Kalat (Nasir Khan's khanate and successors)",
+   "cells": 21,
+   "where": [
+    65.3,
+    27.2
+   ]
+  },
+  {
+   "year": 1850,
+   "a": "British Empire",
+   "b": "Khanate of Kalat (Nasir Khan's khanate and successors)",
+   "cells": 21,
+   "where": [
+    65.3,
+    27.2
+   ]
+  },
+  {
+   "year": 1880,
+   "a": "British Raj",
+   "b": "Hyderabad",
+   "cells": 20,
+   "where": [
+    77.6,
+    18.1
+   ]
+  },
+  {
+   "year": 1900,
+   "a": "British Raj",
+   "b": "Hyderabad",
+   "cells": 20,
+   "where": [
+    77.6,
+    18.1
+   ]
+  },
+  {
+   "year": 1914,
+   "a": "British Raj",
+   "b": "Hyderabad",
+   "cells": 20,
+   "where": [
+    77.6,
+    18.1
+   ]
+  },
+  {
+   "year": 1920,
+   "a": "British Raj",
+   "b": "Hyderabad",
+   "cells": 20,
+   "where": [
+    77.6,
+    18.1
+   ]
+  },
+  {
+   "year": 1945,
+   "a": "British Raj",
+   "b": "Hyderabad",
+   "cells": 20,
+   "where": [
+    77.6,
+    18.1
+   ]
+  },
+  {
+   "year": 1750,
+   "a": "Mamluk dynasty of Iraq",
+   "b": "Ottoman Empire",
+   "cells": 19,
+   "where": [
+    45.0,
+    32.9
+   ]
+  },
+  {
+   "year": 1800,
+   "a": "Mamluk dynasty of Iraq",
+   "b": "Ottoman Empire",
+   "cells": 19,
+   "where": [
+    45.0,
+    32.9
    ]
   },
   {
@@ -42318,6 +42447,46 @@
    ]
   },
   {
+   "year": 1900,
+   "a": "British Raj",
+   "b": "Jammu and Kashmir",
+   "cells": 18,
+   "where": [
+    75.8,
+    34.6
+   ]
+  },
+  {
+   "year": 1914,
+   "a": "British Raj",
+   "b": "Jammu and Kashmir",
+   "cells": 18,
+   "where": [
+    75.8,
+    34.6
+   ]
+  },
+  {
+   "year": 1920,
+   "a": "British Raj",
+   "b": "Jammu and Kashmir",
+   "cells": 18,
+   "where": [
+    75.8,
+    34.6
+   ]
+  },
+  {
+   "year": 1945,
+   "a": "British Raj",
+   "b": "Jammu and Kashmir",
+   "cells": 18,
+   "where": [
+    75.8,
+    34.6
+   ]
+  },
+  {
    "year": 1100,
    "a": "Kievan Rus'",
    "b": "Principality of Smolensk",
@@ -42325,6 +42494,76 @@
    "where": [
     32.8,
     55.0
+   ]
+  },
+  {
+   "year": 1300,
+   "a": "Ilkhanate",
+   "b": "Qutlugh-Khanids",
+   "cells": 17,
+   "where": [
+    56.7,
+    29.4
+   ]
+  },
+  {
+   "year": 1880,
+   "a": "British Raj",
+   "b": "Kalat (with Kharan, Las Bela and Makran)",
+   "cells": 17,
+   "where": [
+    65.3,
+    27.1
+   ]
+  },
+  {
+   "year": 1900,
+   "a": "British Raj",
+   "b": "Kalat (with Kharan, Las Bela and Makran)",
+   "cells": 17,
+   "where": [
+    65.3,
+    27.1
+   ]
+  },
+  {
+   "year": 1914,
+   "a": "British Raj",
+   "b": "Kalat (with Kharan, Las Bela and Makran)",
+   "cells": 17,
+   "where": [
+    65.3,
+    27.1
+   ]
+  },
+  {
+   "year": 1920,
+   "a": "British Raj",
+   "b": "Kalat (with Kharan, Las Bela and Makran)",
+   "cells": 17,
+   "where": [
+    65.3,
+    27.1
+   ]
+  },
+  {
+   "year": 1945,
+   "a": "British Raj",
+   "b": "Kalat (with Kharan, Las Bela and Makran)",
+   "cells": 17,
+   "where": [
+    65.3,
+    27.1
+   ]
+  },
+  {
+   "year": 1945,
+   "a": "Soviet zone",
+   "b": "Union of Soviet Socialist Republics",
+   "cells": 16,
+   "where": [
+    12.5,
+    52.1
    ]
   },
   {
@@ -42338,6 +42577,46 @@
    ]
   },
   {
+   "year": 1880,
+   "a": "Jammu and Kashmir",
+   "b": "Kashmir and Jammu",
+   "cells": 14,
+   "where": [
+    76.1,
+    34.1
+   ]
+  },
+  {
+   "year": 1945,
+   "a": "Czechoslovakia",
+   "b": "Union of Soviet Socialist Republics",
+   "cells": 14,
+   "where": [
+    16.9,
+    49.4
+   ]
+  },
+  {
+   "year": -1500,
+   "a": "Jeulmun (Chulmun) culture",
+   "b": "Mumun culture",
+   "cells": 12,
+   "where": [
+    127.2,
+    36.8
+   ]
+  },
+  {
+   "year": -300,
+   "a": "Jōmon culture",
+   "b": "Yayoi culture",
+   "cells": 12,
+   "where": [
+    138.9,
+    36.6
+   ]
+  },
+  {
    "year": 1100,
    "a": "Kievan Rus'",
    "b": "Principality of Volhynia",
@@ -42375,6 +42654,36 @@
    "where": [
     34.1,
     50.1
+   ]
+  },
+  {
+   "year": 1850,
+   "a": "British Empire",
+   "b": "Kingdom of Nagpur (Bhonsle)",
+   "cells": 12,
+   "where": [
+    80.7,
+    21.1
+   ]
+  },
+  {
+   "year": 1800,
+   "a": "British Empire",
+   "b": "Hyderabad State (the Nizam's dominions)",
+   "cells": 11,
+   "where": [
+    78.6,
+    17.4
+   ]
+  },
+  {
+   "year": 1945,
+   "a": "British zone",
+   "b": "United Kingdom",
+   "cells": 11,
+   "where": [
+    8.5,
+    52.6
    ]
   },
   {
@@ -42408,6 +42717,66 @@
    ]
   },
   {
+   "year": -1500,
+   "a": "Late Harappan (Cemetery H, Jhukar and Rangpur phases)",
+   "b": "Ochre Coloured Pottery culture (with the Copper Hoards)",
+   "cells": 9,
+   "where": [
+    76.1,
+    29.6
+   ]
+  },
+  {
+   "year": 800,
+   "a": "Dál Riata",
+   "b": "Pictland (kingdom of Fortriu)",
+   "cells": 9,
+   "where": [
+    -4.3,
+    57.5
+   ]
+  },
+  {
+   "year": 1850,
+   "a": "British Empire",
+   "b": "Kingdom of Marwar (Jodhpur)",
+   "cells": 9,
+   "where": [
+    72.8,
+    26.3
+   ]
+  },
+  {
+   "year": 1880,
+   "a": "French Africa",
+   "b": "Toucouleur Empire",
+   "cells": 9,
+   "where": [
+    -8.3,
+    14.1
+   ]
+  },
+  {
+   "year": 1945,
+   "a": "American zone",
+   "b": "United States of America",
+   "cells": 9,
+   "where": [
+    10.7,
+    49.6
+   ]
+  },
+  {
+   "year": 1000,
+   "a": "Hamdanid Emirates",
+   "b": "Rawadid dynasty",
+   "cells": 8,
+   "where": [
+    46.5,
+    38.1
+   ]
+  },
+  {
    "year": 1200,
    "a": "Kievan Rus'",
    "b": "Principality of Halych",
@@ -42428,6 +42797,86 @@
    ]
   },
   {
+   "year": 1800,
+   "a": "Hyderabad State (the Nizam's dominions)",
+   "b": "Maratha Empire",
+   "cells": 8,
+   "where": [
+    76.5,
+    18.8
+   ]
+  },
+  {
+   "year": 1880,
+   "a": "British Raj",
+   "b": "Central India Agency (other states): Dewas, Dhar, Ratlam, Jaora, Rajgarh, Sitamau, Jhabua, Alirajpur, Barwani, Sailana, Kurwai, Gwalior (Ujjain district), Gwalior (Mandsaur district)",
+   "cells": 8,
+   "where": [
+    76.0,
+    23.0
+   ]
+  },
+  {
+   "year": 1900,
+   "a": "British Raj",
+   "b": "Central India Agency (other states): Dewas, Dhar, Ratlam, Jaora, Rajgarh, Sitamau, Jhabua, Alirajpur, Barwani, Sailana, Kurwai, Gwalior (Ujjain district), Gwalior (Mandsaur district)",
+   "cells": 8,
+   "where": [
+    76.0,
+    23.0
+   ]
+  },
+  {
+   "year": 1914,
+   "a": "British Raj",
+   "b": "Central India Agency (other states): Dewas, Dhar, Ratlam, Jaora, Rajgarh, Sitamau, Jhabua, Alirajpur, Barwani, Sailana, Kurwai, Gwalior (Ujjain district), Gwalior (Mandsaur district)",
+   "cells": 8,
+   "where": [
+    76.0,
+    23.0
+   ]
+  },
+  {
+   "year": 1920,
+   "a": "British Raj",
+   "b": "Central India Agency (other states): Dewas, Dhar, Ratlam, Jaora, Rajgarh, Sitamau, Jhabua, Alirajpur, Barwani, Sailana, Kurwai, Gwalior (Ujjain district), Gwalior (Mandsaur district)",
+   "cells": 8,
+   "where": [
+    76.0,
+    23.0
+   ]
+  },
+  {
+   "year": 1945,
+   "a": "British Raj",
+   "b": "Central India Agency (other states): Dewas, Dhar, Ratlam, Jaora, Rajgarh, Sitamau, Jhabua, Alirajpur, Barwani, Sailana, Kurwai, Gwalior (Ujjain district), Gwalior (Mandsaur district)",
+   "cells": 8,
+   "where": [
+    76.0,
+    23.0
+   ]
+  },
+  {
+   "year": 1000,
+   "a": "Hamdanid Emirates",
+   "b": "Uqaylid dynasty",
+   "cells": 7,
+   "where": [
+    42.2,
+    36.1
+   ]
+  },
+  {
+   "year": 1100,
+   "a": "Eastern Ganga Kingdom",
+   "b": "Somavamshi kingdom",
+   "cells": 7,
+   "where": [
+    85.2,
+    20.9
+   ]
+  },
+  {
    "year": 1200,
    "a": "Kievan Rus'",
    "b": "Principality of Minsk",
@@ -42435,6 +42884,146 @@
    "where": [
     27.2,
     54.1
+   ]
+  },
+  {
+   "year": 1300,
+   "a": "Kashmir",
+   "b": "Kingdom of Maryul (Ladakh)",
+   "cells": 7,
+   "where": [
+    77.6,
+    33.8
+   ]
+  },
+  {
+   "year": 1400,
+   "a": "Kashmiri Sultanate",
+   "b": "Kingdom of Maryul (Ladakh)",
+   "cells": 7,
+   "where": [
+    77.6,
+    33.8
+   ]
+  },
+  {
+   "year": 1500,
+   "a": "Kashmiri Sultanate",
+   "b": "Kingdom of Maryul (Ladakh)",
+   "cells": 7,
+   "where": [
+    77.6,
+    33.8
+   ]
+  },
+  {
+   "year": 1850,
+   "a": "Bikaner State",
+   "b": "British Empire",
+   "cells": 7,
+   "where": [
+    73.9,
+    28.6
+   ]
+  },
+  {
+   "year": 1850,
+   "a": "British Empire",
+   "b": "Kingdom of Mysore (restored Wodeyars)",
+   "cells": 7,
+   "where": [
+    76.5,
+    13.5
+   ]
+  },
+  {
+   "year": 1850,
+   "a": "British Empire",
+   "b": "Kingdom of Awadh (Oudh), reduced",
+   "cells": 7,
+   "where": [
+    81.4,
+    27.2
+   ]
+  },
+  {
+   "year": 1880,
+   "a": "British Raj",
+   "b": "Jodhpur (Marwar)",
+   "cells": 7,
+   "where": [
+    72.8,
+    26.2
+   ]
+  },
+  {
+   "year": 1880,
+   "a": "Bikaner",
+   "b": "British Raj",
+   "cells": 7,
+   "where": [
+    73.9,
+    28.6
+   ]
+  },
+  {
+   "year": 1900,
+   "a": "British Raj",
+   "b": "Jodhpur (Marwar)",
+   "cells": 7,
+   "where": [
+    72.8,
+    26.2
+   ]
+  },
+  {
+   "year": 1900,
+   "a": "Bikaner",
+   "b": "British Raj",
+   "cells": 7,
+   "where": [
+    73.9,
+    28.6
+   ]
+  },
+  {
+   "year": 1914,
+   "a": "British Raj",
+   "b": "Jodhpur (Marwar)",
+   "cells": 7,
+   "where": [
+    72.8,
+    26.2
+   ]
+  },
+  {
+   "year": 1914,
+   "a": "Bikaner",
+   "b": "British Raj",
+   "cells": 7,
+   "where": [
+    73.9,
+    28.6
+   ]
+  },
+  {
+   "year": 1920,
+   "a": "British Raj",
+   "b": "Jodhpur (Marwar)",
+   "cells": 7,
+   "where": [
+    72.8,
+    26.2
+   ]
+  },
+  {
+   "year": 1920,
+   "a": "Bikaner",
+   "b": "British Raj",
+   "cells": 7,
+   "where": [
+    73.9,
+    28.6
    ]
   },
   {
@@ -42448,6 +43037,46 @@
    ]
   },
   {
+   "year": 1945,
+   "a": "British Raj",
+   "b": "Jodhpur (Marwar)",
+   "cells": 7,
+   "where": [
+    72.8,
+    26.2
+   ]
+  },
+  {
+   "year": 1945,
+   "a": "Bikaner",
+   "b": "British Raj",
+   "cells": 7,
+   "where": [
+    73.9,
+    28.6
+   ]
+  },
+  {
+   "year": -200,
+   "a": "Nanyue",
+   "b": "Đông Sơn culture",
+   "cells": 6,
+   "where": [
+    105.7,
+    20.7
+   ]
+  },
+  {
+   "year": 1,
+   "a": "Han Dynasty",
+   "b": "Đông Sơn culture",
+   "cells": 6,
+   "where": [
+    105.7,
+    20.7
+   ]
+  },
+  {
    "year": 1100,
    "a": "Kievan Rus'",
    "b": "Principality of Peremyshl",
@@ -42455,6 +43084,386 @@
    "where": [
     24.3,
     49.5
+   ]
+  },
+  {
+   "year": 1100,
+   "a": "Soomra Dynasty",
+   "b": "Soomra dynasty (Lower Sindh)",
+   "cells": 6,
+   "where": [
+    68.3,
+    25.3
+   ]
+  },
+  {
+   "year": 1200,
+   "a": "Soomra Dynasty",
+   "b": "Soomra dynasty (Lower Sindh)",
+   "cells": 6,
+   "where": [
+    68.3,
+    25.3
+   ]
+  },
+  {
+   "year": 1400,
+   "a": "Jolof Empire",
+   "b": "Mali Empire",
+   "cells": 6,
+   "where": [
+    -15.5,
+    15.0
+   ]
+  },
+  {
+   "year": 1600,
+   "a": "Kingdom of Ladakh (Maryul, Namgyal dynasty)",
+   "b": "Mughal Empire",
+   "cells": 6,
+   "where": [
+    77.5,
+    34.0
+   ]
+  },
+  {
+   "year": 1700,
+   "a": "Kingdom of Ladakh (Maryul, Namgyal dynasty)",
+   "b": "Mughal Empire",
+   "cells": 6,
+   "where": [
+    77.5,
+    34.0
+   ]
+  },
+  {
+   "year": 1750,
+   "a": "Afsharid Iran",
+   "b": "Kingdom of Ladakh (Maryul, Namgyal dynasty)",
+   "cells": 6,
+   "where": [
+    77.5,
+    34.0
+   ]
+  },
+  {
+   "year": 1800,
+   "a": "British Empire",
+   "b": "Kingdom of Mysore (restored Wodeyars)",
+   "cells": 6,
+   "where": [
+    76.7,
+    13.3
+   ]
+  },
+  {
+   "year": 1880,
+   "a": "British Raj",
+   "b": "Mysore (under British commission)",
+   "cells": 6,
+   "where": [
+    76.7,
+    13.3
+   ]
+  },
+  {
+   "year": 1900,
+   "a": "British Raj",
+   "b": "Mysore",
+   "cells": 6,
+   "where": [
+    76.7,
+    13.3
+   ]
+  },
+  {
+   "year": 1914,
+   "a": "British Raj",
+   "b": "Mysore",
+   "cells": 6,
+   "where": [
+    76.7,
+    13.3
+   ]
+  },
+  {
+   "year": 1920,
+   "a": "British Raj",
+   "b": "Mysore",
+   "cells": 6,
+   "where": [
+    76.7,
+    13.3
+   ]
+  },
+  {
+   "year": 1945,
+   "a": "British Raj",
+   "b": "Mysore",
+   "cells": 6,
+   "where": [
+    76.7,
+    13.3
+   ]
+  },
+  {
+   "year": 1100,
+   "a": "Great Seljuk Empire",
+   "b": "Nizari Ismaili state (Quhistan)",
+   "cells": 5,
+   "where": [
+    58.3,
+    33.9
+   ]
+  },
+  {
+   "year": 1200,
+   "a": "Ghurid Dynasty",
+   "b": "Nizari Ismaili state (Quhistan)",
+   "cells": 5,
+   "where": [
+    58.3,
+    33.9
+   ]
+  },
+  {
+   "year": 1200,
+   "a": "Kashmir",
+   "b": "Kingdom of Maryul (Ladakh)",
+   "cells": 5,
+   "where": [
+    77.3,
+    33.7
+   ]
+  },
+  {
+   "year": 1300,
+   "a": "Hazaraspids",
+   "b": "Ilkhanate",
+   "cells": 5,
+   "where": [
+    50.3,
+    31.9
+   ]
+  },
+  {
+   "year": 1400,
+   "a": "Hazaraspids",
+   "b": "Timurid Empire",
+   "cells": 5,
+   "where": [
+    50.3,
+    31.9
+   ]
+  },
+  {
+   "year": 1500,
+   "a": "Gajapati Empire",
+   "b": "Vijayanagara Empire",
+   "cells": 5,
+   "where": [
+    80.5,
+    16.5
+   ]
+  },
+  {
+   "year": 1600,
+   "a": "Bornu Empire",
+   "b": "Kingdom of Baguirmi",
+   "cells": 5,
+   "where": [
+    16.7,
+    11.1
+   ]
+  },
+  {
+   "year": 1700,
+   "a": "Bornu Empire",
+   "b": "Kingdom of Baguirmi",
+   "cells": 5,
+   "where": [
+    16.7,
+    11.1
+   ]
+  },
+  {
+   "year": 1700,
+   "a": "Mughal Empire",
+   "b": "Ratanpur (Haihaya kingdom of Chhattisgarh)",
+   "cells": 5,
+   "where": [
+    81.9,
+    21.7
+   ]
+  },
+  {
+   "year": 1750,
+   "a": "Bornu Empire",
+   "b": "Kingdom of Baguirmi",
+   "cells": 5,
+   "where": [
+    16.7,
+    11.1
+   ]
+  },
+  {
+   "year": 1800,
+   "a": "Bornu Empire",
+   "b": "Kingdom of Baguirmi",
+   "cells": 5,
+   "where": [
+    16.7,
+    11.1
+   ]
+  },
+  {
+   "year": 1850,
+   "a": "Bornu Empire",
+   "b": "Kingdom of Baguirmi",
+   "cells": 5,
+   "where": [
+    16.7,
+    11.1
+   ]
+  },
+  {
+   "year": 1850,
+   "a": "British Empire",
+   "b": "Gwalior State (Scindia)",
+   "cells": 5,
+   "where": [
+    77.9,
+    25.5
+   ]
+  },
+  {
+   "year": 1880,
+   "a": "Bornu Empire",
+   "b": "Kingdom of Baguirmi",
+   "cells": 5,
+   "where": [
+    16.7,
+    11.1
+   ]
+  },
+  {
+   "year": 1880,
+   "a": "British Colonial Empire",
+   "b": "Mahra Sultanate",
+   "cells": 5,
+   "where": [
+    51.9,
+    16.7
+   ]
+  },
+  {
+   "year": 1880,
+   "a": "British Raj",
+   "b": "Orissa feudatory states: Patna, Kalahandi, Sonpur, Bamra, Gangpur, Keonjhar, Dhenkanal, Bonai, Nayagarh, Baud, Talcher, Nilgiri, Athmallik",
+   "cells": 5,
+   "where": [
+    84.7,
+    20.9
+   ]
+  },
+  {
+   "year": 1900,
+   "a": "British Raj",
+   "b": "Orissa feudatory states: Patna, Kalahandi, Sonpur, Bamra, Gangpur, Keonjhar, Dhenkanal, Bonai, Nayagarh, Baud, Talcher, Nilgiri, Athmallik",
+   "cells": 5,
+   "where": [
+    84.7,
+    20.9
+   ]
+  },
+  {
+   "year": 1914,
+   "a": "British Raj",
+   "b": "Orissa feudatory states: Patna, Kalahandi, Sonpur, Bamra, Gangpur, Keonjhar, Dhenkanal, Bonai, Nayagarh, Baud, Talcher, Nilgiri, Athmallik",
+   "cells": 5,
+   "where": [
+    84.7,
+    20.9
+   ]
+  },
+  {
+   "year": 1920,
+   "a": "British Raj",
+   "b": "Orissa feudatory states: Patna, Kalahandi, Sonpur, Bamra, Gangpur, Keonjhar, Dhenkanal, Bonai, Nayagarh, Baud, Talcher, Nilgiri, Athmallik",
+   "cells": 5,
+   "where": [
+    84.7,
+    20.9
+   ]
+  },
+  {
+   "year": 1945,
+   "a": "British Raj",
+   "b": "Orissa feudatory states: Patna, Kalahandi, Sonpur, Bamra, Gangpur, Keonjhar, Dhenkanal, Bonai, Nayagarh, Baud, Talcher, Nilgiri, Athmallik",
+   "cells": 5,
+   "where": [
+    84.7,
+    20.9
+   ]
+  },
+  {
+   "year": 1945,
+   "a": "French Fourth Republic",
+   "b": "French zone",
+   "cells": 5,
+   "where": [
+    7.9,
+    49.3
+   ]
+  },
+  {
+   "year": -1000,
+   "a": "Janapada of Kuru",
+   "b": "Painted Grey Ware culture",
+   "cells": 4,
+   "where": [
+    77.0,
+    29.0
+   ]
+  },
+  {
+   "year": -1000,
+   "a": "Janapada of Pañcāla",
+   "b": "Painted Grey Ware culture",
+   "cells": 4,
+   "where": [
+    79.0,
+    28.5
+   ]
+  },
+  {
+   "year": -300,
+   "a": "Carthage",
+   "b": "Nuragic civilisation",
+   "cells": 4,
+   "where": [
+    9.0,
+    40.0
+   ]
+  },
+  {
+   "year": 1,
+   "a": "Characene",
+   "b": "Parthian Empire",
+   "cells": 4,
+   "where": [
+    47.5,
+    31.0
+   ]
+  },
+  {
+   "year": 200,
+   "a": "Characene",
+   "b": "Parthian Empire",
+   "cells": 4,
+   "where": [
+    47.5,
+    31.0
    ]
   },
   {
@@ -42498,6 +43507,276 @@
    ]
   },
   {
+   "year": 1400,
+   "a": "Duchy of Pomerania",
+   "b": "Holy Roman Empire Minor States",
+   "cells": 4,
+   "where": [
+    15.5,
+    54.2
+   ]
+  },
+  {
+   "year": 1500,
+   "a": "Duchy of Pomerania",
+   "b": "Holy Roman Empire Minor States",
+   "cells": 4,
+   "where": [
+    15.5,
+    54.2
+   ]
+  },
+  {
+   "year": 1600,
+   "a": "Duchy of Pomerania",
+   "b": "Holy Roman Empire Minor States",
+   "cells": 4,
+   "where": [
+    15.5,
+    54.2
+   ]
+  },
+  {
+   "year": 1850,
+   "a": "British Empire",
+   "b": "Kingdom of Jaisalmer",
+   "cells": 4,
+   "where": [
+    71.0,
+    27.0
+   ]
+  },
+  {
+   "year": 1880,
+   "a": "British Raj",
+   "b": "Cutch",
+   "cells": 4,
+   "where": [
+    70.0,
+    23.5
+   ]
+  },
+  {
+   "year": 1880,
+   "a": "British Raj",
+   "b": "Jaisalmer",
+   "cells": 4,
+   "where": [
+    71.2,
+    27.2
+   ]
+  },
+  {
+   "year": 1900,
+   "a": "British Raj",
+   "b": "Cutch",
+   "cells": 4,
+   "where": [
+    70.0,
+    23.5
+   ]
+  },
+  {
+   "year": 1900,
+   "a": "British Raj",
+   "b": "Jaisalmer",
+   "cells": 4,
+   "where": [
+    71.2,
+    27.2
+   ]
+  },
+  {
+   "year": 1914,
+   "a": "British Raj",
+   "b": "Cutch",
+   "cells": 4,
+   "where": [
+    70.0,
+    23.5
+   ]
+  },
+  {
+   "year": 1914,
+   "a": "British Raj",
+   "b": "Jaisalmer",
+   "cells": 4,
+   "where": [
+    71.2,
+    27.2
+   ]
+  },
+  {
+   "year": 1920,
+   "a": "British Raj",
+   "b": "Cutch",
+   "cells": 4,
+   "where": [
+    70.0,
+    23.5
+   ]
+  },
+  {
+   "year": 1920,
+   "a": "British Raj",
+   "b": "Jaisalmer",
+   "cells": 4,
+   "where": [
+    71.2,
+    27.2
+   ]
+  },
+  {
+   "year": 1945,
+   "a": "British Raj",
+   "b": "Cutch",
+   "cells": 4,
+   "where": [
+    70.0,
+    23.5
+   ]
+  },
+  {
+   "year": 1945,
+   "a": "British Raj",
+   "b": "Jaisalmer",
+   "cells": 4,
+   "where": [
+    71.2,
+    27.2
+   ]
+  },
+  {
+   "year": 1945,
+   "a": "Slovak Republic",
+   "b": "Union of Soviet Socialist Republics",
+   "cells": 4,
+   "where": [
+    18.8,
+    48.8
+   ]
+  },
+  {
+   "year": 1945,
+   "a": "Czechoslovakia",
+   "b": "Slovak Republic",
+   "cells": 4,
+   "where": [
+    18.8,
+    48.8
+   ]
+  },
+  {
+   "year": -300,
+   "a": "Iron Age megalithic cultures of South India",
+   "b": "Kongu Nadu (Kosar and local chiefs)",
+   "cells": 3,
+   "where": [
+    77.5,
+    11.5
+   ]
+  },
+  {
+   "year": -300,
+   "a": "Iron Age megalithic cultures of South India",
+   "b": "Pandya kingdom (Pandya Nadu)",
+   "cells": 3,
+   "where": [
+    77.8,
+    9.2
+   ]
+  },
+  {
+   "year": 1,
+   "a": "Elymais",
+   "b": "Parthian Empire",
+   "cells": 3,
+   "where": [
+    49.2,
+    32.2
+   ]
+  },
+  {
+   "year": 200,
+   "a": "Elymais",
+   "b": "Parthian Empire",
+   "cells": 3,
+   "where": [
+    49.2,
+    32.2
+   ]
+  },
+  {
+   "year": 1000,
+   "a": "Kashmir",
+   "b": "Kingdom of Maryul (Ladakh)",
+   "cells": 3,
+   "where": [
+    77.8,
+    33.5
+   ]
+  },
+  {
+   "year": 1000,
+   "a": "Kingdom of Maryul (Ladakh)",
+   "b": "Tibetans",
+   "cells": 3,
+   "where": [
+    78.8,
+    33.8
+   ]
+  },
+  {
+   "year": 1000,
+   "a": "Guge kingdom",
+   "b": "Tibetans",
+   "cells": 3,
+   "where": [
+    79.8,
+    31.8
+   ]
+  },
+  {
+   "year": 1000,
+   "a": "Chera Perumal kingdom (Mahodayapuram)",
+   "b": "Chola Empire",
+   "cells": 3,
+   "where": [
+    76.2,
+    10.5
+   ]
+  },
+  {
+   "year": 1100,
+   "a": "Kashmir",
+   "b": "Kingdom of Maryul (Ladakh)",
+   "cells": 3,
+   "where": [
+    77.8,
+    33.5
+   ]
+  },
+  {
+   "year": 1100,
+   "a": "Kingdom of Maryul (Ladakh)",
+   "b": "Tibetans",
+   "cells": 3,
+   "where": [
+    78.8,
+    33.8
+   ]
+  },
+  {
+   "year": 1100,
+   "a": "Guge kingdom",
+   "b": "Tibetans",
+   "cells": 3,
+   "where": [
+    79.8,
+    31.8
+   ]
+  },
+  {
    "year": 1100,
    "a": "Almoravid Dynasty",
    "b": "Taifa of Dénia",
@@ -42508,6 +43787,146 @@
    ]
   },
   {
+   "year": 1100,
+   "a": "Karnats of Mithila (Tirhut)",
+   "b": "Pala Empire",
+   "cells": 3,
+   "where": [
+    86.2,
+    26.2
+   ]
+  },
+  {
+   "year": 1100,
+   "a": "Great Seljuk Empire",
+   "b": "Saltukids",
+   "cells": 3,
+   "where": [
+    41.5,
+    40.5
+   ]
+  },
+  {
+   "year": 1100,
+   "a": "Bavand dynasty",
+   "b": "Great Seljuk Empire",
+   "cells": 3,
+   "where": [
+    52.5,
+    36.5
+   ]
+  },
+  {
+   "year": 1100,
+   "a": "Chera Perumal kingdom (Mahodayapuram)",
+   "b": "Chola Empire",
+   "cells": 3,
+   "where": [
+    76.2,
+    10.5
+   ]
+  },
+  {
+   "year": 1200,
+   "a": "Chaulukya Dynasty",
+   "b": "Kutch (Samma-Jadeja chiefs)",
+   "cells": 3,
+   "where": [
+    69.5,
+    23.5
+   ]
+  },
+  {
+   "year": 1200,
+   "a": "Kingdom of Maryul (Ladakh)",
+   "b": "Tibetans",
+   "cells": 3,
+   "where": [
+    78.8,
+    33.8
+   ]
+  },
+  {
+   "year": 1200,
+   "a": "Guge kingdom",
+   "b": "Tibetans",
+   "cells": 3,
+   "where": [
+    79.8,
+    31.8
+   ]
+  },
+  {
+   "year": 1200,
+   "a": "Artuqids",
+   "b": "Ayyubid Sultanate",
+   "cells": 3,
+   "where": [
+    40.5,
+    37.8
+   ]
+  },
+  {
+   "year": 1200,
+   "a": "Regional emirates",
+   "b": "Saltukids",
+   "cells": 3,
+   "where": [
+    41.5,
+    40.5
+   ]
+  },
+  {
+   "year": 1300,
+   "a": "Guge kingdom",
+   "b": "Yuan Dynasty",
+   "cells": 3,
+   "where": [
+    79.8,
+    31.8
+   ]
+  },
+  {
+   "year": 1300,
+   "a": "Bavand dynasty",
+   "b": "Ilkhanate",
+   "cells": 3,
+   "where": [
+    52.5,
+    36.5
+   ]
+  },
+  {
+   "year": 1400,
+   "a": "Ceylon",
+   "b": "Kingdom of Gampola",
+   "cells": 3,
+   "where": [
+    80.8,
+    6.8
+   ]
+  },
+  {
+   "year": 1400,
+   "a": "Guge kingdom",
+   "b": "Tibet",
+   "cells": 3,
+   "where": [
+    79.8,
+    31.8
+   ]
+  },
+  {
+   "year": 1500,
+   "a": "Guge kingdom",
+   "b": "Tibet",
+   "cells": 3,
+   "where": [
+    79.8,
+    31.8
+   ]
+  },
+  {
    "year": 1600,
    "a": "Small Horde",
    "b": "Tsardom of Russia",
@@ -42515,6 +43934,556 @@
    "where": [
     51.2,
     47.8
+   ]
+  },
+  {
+   "year": 1600,
+   "a": "Cutch (Kingdom of Kutch)",
+   "b": "Mughal Empire",
+   "cells": 3,
+   "where": [
+    69.5,
+    23.5
+   ]
+  },
+  {
+   "year": 1600,
+   "a": "Kingdom of Mewar (Udaipur)",
+   "b": "Mughal Empire",
+   "cells": 3,
+   "where": [
+    74.2,
+    24.8
+   ]
+  },
+  {
+   "year": 1600,
+   "a": "Kingdom of Kumaon (Chand dynasty)",
+   "b": "Mughal Empire",
+   "cells": 3,
+   "where": [
+    79.8,
+    30.2
+   ]
+  },
+  {
+   "year": 1700,
+   "a": "Khanate of Kalat (Brahui confederacy)",
+   "b": "Safavid Dynasty",
+   "cells": 3,
+   "where": [
+    66.5,
+    28.2
+   ]
+  },
+  {
+   "year": 1700,
+   "a": "Cutch (Kingdom of Kutch)",
+   "b": "Mughal Empire",
+   "cells": 3,
+   "where": [
+    69.5,
+    23.5
+   ]
+  },
+  {
+   "year": 1700,
+   "a": "Kingdom of Kumaon (Chand dynasty)",
+   "b": "Mughal Empire",
+   "cells": 3,
+   "where": [
+    79.8,
+    30.2
+   ]
+  },
+  {
+   "year": 1700,
+   "a": "Bastar (Kakatiya kingdom)",
+   "b": "Mughal Empire",
+   "cells": 3,
+   "where": [
+    81.2,
+    19.2
+   ]
+  },
+  {
+   "year": 1750,
+   "a": "Mughal Empire",
+   "b": "Rohilkhand (Rohilla state)",
+   "cells": 3,
+   "where": [
+    78.8,
+    28.8
+   ]
+  },
+  {
+   "year": 1850,
+   "a": "Circassia",
+   "b": "Russian Empire",
+   "cells": 3,
+   "where": [
+    39.5,
+    44.5
+   ]
+  },
+  {
+   "year": 1850,
+   "a": "British Empire",
+   "b": "Cutch (Kingdom of Kutch)",
+   "cells": 3,
+   "where": [
+    69.5,
+    23.5
+   ]
+  },
+  {
+   "year": 1850,
+   "a": "British Empire",
+   "b": "Kingdom of Mewar (Udaipur State)",
+   "cells": 3,
+   "where": [
+    74.2,
+    24.8
+   ]
+  },
+  {
+   "year": 1850,
+   "a": "British Empire",
+   "b": "Kingdom of Amber (Jaipur)",
+   "cells": 3,
+   "where": [
+    75.8,
+    26.8
+   ]
+  },
+  {
+   "year": 1880,
+   "a": "British Raj",
+   "b": "Kathiawar states",
+   "cells": 3,
+   "where": [
+    71.2,
+    22.2
+   ]
+  },
+  {
+   "year": 1880,
+   "a": "Bahawalpur",
+   "b": "British Raj",
+   "cells": 3,
+   "where": [
+    71.5,
+    28.8
+   ]
+  },
+  {
+   "year": 1880,
+   "a": "British Raj",
+   "b": "Gujarat states: Palanpur, Radhanpur, Idar, Rajpipla, Lunavada, Chhota Udaipur",
+   "cells": 3,
+   "where": [
+    72.8,
+    23.2
+   ]
+  },
+  {
+   "year": 1880,
+   "a": "British Raj",
+   "b": "Udaipur (Mewar)",
+   "cells": 3,
+   "where": [
+    74.2,
+    24.8
+   ]
+  },
+  {
+   "year": 1880,
+   "a": "British Raj",
+   "b": "Rajputana Agency (other states): Alwar, Bharatpur, Dholpur, Karauli, Bundi, Tonk",
+   "cells": 3,
+   "where": [
+    76.5,
+    26.5
+   ]
+  },
+  {
+   "year": 1880,
+   "a": "British Raj",
+   "b": "Jaipur",
+   "cells": 3,
+   "where": [
+    75.8,
+    26.8
+   ]
+  },
+  {
+   "year": 1880,
+   "a": "Berar (Hyderabad Assigned Districts)",
+   "b": "British Raj",
+   "cells": 3,
+   "where": [
+    77.5,
+    20.5
+   ]
+  },
+  {
+   "year": 1880,
+   "a": "British Raj",
+   "b": "Gwalior",
+   "cells": 3,
+   "where": [
+    77.8,
+    25.5
+   ]
+  },
+  {
+   "year": 1880,
+   "a": "British Raj",
+   "b": "Rewa",
+   "cells": 3,
+   "where": [
+    81.8,
+    24.2
+   ]
+  },
+  {
+   "year": 1900,
+   "a": "British Raj",
+   "b": "Kathiawar states",
+   "cells": 3,
+   "where": [
+    71.2,
+    22.2
+   ]
+  },
+  {
+   "year": 1900,
+   "a": "Bahawalpur",
+   "b": "British Raj",
+   "cells": 3,
+   "where": [
+    71.5,
+    28.8
+   ]
+  },
+  {
+   "year": 1900,
+   "a": "British Raj",
+   "b": "Gujarat states: Palanpur, Radhanpur, Idar, Rajpipla, Lunavada, Chhota Udaipur",
+   "cells": 3,
+   "where": [
+    72.8,
+    23.2
+   ]
+  },
+  {
+   "year": 1900,
+   "a": "British Raj",
+   "b": "Udaipur (Mewar)",
+   "cells": 3,
+   "where": [
+    74.2,
+    24.8
+   ]
+  },
+  {
+   "year": 1900,
+   "a": "British Raj",
+   "b": "Rajputana Agency (other states): Alwar, Bharatpur, Dholpur, Karauli, Bundi, Tonk",
+   "cells": 3,
+   "where": [
+    76.5,
+    26.5
+   ]
+  },
+  {
+   "year": 1900,
+   "a": "British Raj",
+   "b": "Jaipur",
+   "cells": 3,
+   "where": [
+    75.8,
+    26.8
+   ]
+  },
+  {
+   "year": 1900,
+   "a": "Berar (Hyderabad Assigned Districts)",
+   "b": "British Raj",
+   "cells": 3,
+   "where": [
+    77.5,
+    20.5
+   ]
+  },
+  {
+   "year": 1900,
+   "a": "British Raj",
+   "b": "Gwalior",
+   "cells": 3,
+   "where": [
+    77.8,
+    25.5
+   ]
+  },
+  {
+   "year": 1900,
+   "a": "British Raj",
+   "b": "Rewa",
+   "cells": 3,
+   "where": [
+    81.8,
+    24.2
+   ]
+  },
+  {
+   "year": 1914,
+   "a": "British Raj",
+   "b": "Kathiawar states",
+   "cells": 3,
+   "where": [
+    71.2,
+    22.2
+   ]
+  },
+  {
+   "year": 1914,
+   "a": "Bahawalpur",
+   "b": "British Raj",
+   "cells": 3,
+   "where": [
+    71.5,
+    28.8
+   ]
+  },
+  {
+   "year": 1914,
+   "a": "British Raj",
+   "b": "Gujarat states: Palanpur, Radhanpur, Idar, Rajpipla, Lunavada, Chhota Udaipur",
+   "cells": 3,
+   "where": [
+    72.8,
+    23.2
+   ]
+  },
+  {
+   "year": 1914,
+   "a": "British Raj",
+   "b": "Udaipur (Mewar)",
+   "cells": 3,
+   "where": [
+    74.2,
+    24.8
+   ]
+  },
+  {
+   "year": 1914,
+   "a": "British Raj",
+   "b": "Rajputana Agency (other states): Alwar, Bharatpur, Dholpur, Karauli, Bundi, Tonk",
+   "cells": 3,
+   "where": [
+    76.5,
+    26.5
+   ]
+  },
+  {
+   "year": 1914,
+   "a": "British Raj",
+   "b": "Jaipur",
+   "cells": 3,
+   "where": [
+    75.8,
+    26.8
+   ]
+  },
+  {
+   "year": 1914,
+   "a": "British Raj",
+   "b": "Gwalior",
+   "cells": 3,
+   "where": [
+    77.8,
+    25.5
+   ]
+  },
+  {
+   "year": 1914,
+   "a": "British Raj",
+   "b": "Rewa",
+   "cells": 3,
+   "where": [
+    81.8,
+    24.2
+   ]
+  },
+  {
+   "year": 1920,
+   "a": "British Raj",
+   "b": "Kathiawar states",
+   "cells": 3,
+   "where": [
+    71.2,
+    22.2
+   ]
+  },
+  {
+   "year": 1920,
+   "a": "Bahawalpur",
+   "b": "British Raj",
+   "cells": 3,
+   "where": [
+    71.5,
+    28.8
+   ]
+  },
+  {
+   "year": 1920,
+   "a": "British Raj",
+   "b": "Gujarat states: Palanpur, Radhanpur, Idar, Rajpipla, Lunavada, Chhota Udaipur",
+   "cells": 3,
+   "where": [
+    72.8,
+    23.2
+   ]
+  },
+  {
+   "year": 1920,
+   "a": "British Raj",
+   "b": "Udaipur (Mewar)",
+   "cells": 3,
+   "where": [
+    74.2,
+    24.8
+   ]
+  },
+  {
+   "year": 1920,
+   "a": "British Raj",
+   "b": "Rajputana Agency (other states): Alwar, Bharatpur, Dholpur, Karauli, Bundi, Tonk",
+   "cells": 3,
+   "where": [
+    76.5,
+    26.5
+   ]
+  },
+  {
+   "year": 1920,
+   "a": "British Raj",
+   "b": "Jaipur",
+   "cells": 3,
+   "where": [
+    75.8,
+    26.8
+   ]
+  },
+  {
+   "year": 1920,
+   "a": "British Raj",
+   "b": "Gwalior",
+   "cells": 3,
+   "where": [
+    77.8,
+    25.5
+   ]
+  },
+  {
+   "year": 1920,
+   "a": "British Raj",
+   "b": "Rewa",
+   "cells": 3,
+   "where": [
+    81.8,
+    24.2
+   ]
+  },
+  {
+   "year": 1945,
+   "a": "British Raj",
+   "b": "Kathiawar states",
+   "cells": 3,
+   "where": [
+    71.2,
+    22.2
+   ]
+  },
+  {
+   "year": 1945,
+   "a": "Bahawalpur",
+   "b": "British Raj",
+   "cells": 3,
+   "where": [
+    71.5,
+    28.8
+   ]
+  },
+  {
+   "year": 1945,
+   "a": "British Raj",
+   "b": "Gujarat states: Palanpur, Radhanpur, Idar, Rajpipla, Lunavada, Chhota Udaipur",
+   "cells": 3,
+   "where": [
+    72.8,
+    23.2
+   ]
+  },
+  {
+   "year": 1945,
+   "a": "British Raj",
+   "b": "Udaipur (Mewar)",
+   "cells": 3,
+   "where": [
+    74.2,
+    24.8
+   ]
+  },
+  {
+   "year": 1945,
+   "a": "British Raj",
+   "b": "Rajputana Agency (other states): Alwar, Bharatpur, Dholpur, Karauli, Bundi, Tonk",
+   "cells": 3,
+   "where": [
+    76.5,
+    26.5
+   ]
+  },
+  {
+   "year": 1945,
+   "a": "British Raj",
+   "b": "Jaipur",
+   "cells": 3,
+   "where": [
+    75.8,
+    26.8
+   ]
+  },
+  {
+   "year": 1945,
+   "a": "British Raj",
+   "b": "Gwalior",
+   "cells": 3,
+   "where": [
+    77.8,
+    25.5
+   ]
+  },
+  {
+   "year": 1945,
+   "a": "British Raj",
+   "b": "Rewa",
+   "cells": 3,
+   "where": [
+    81.8,
+    24.2
+   ]
+  },
+  {
+   "year": 1945,
+   "a": "American zone",
+   "b": "French Fourth Republic",
+   "cells": 3,
+   "where": [
+    9.8,
+    48.8
    ]
   }
  ],
@@ -43393,7 +45362,7 @@
   },
   {
    "realm": "(British Empire)",
-   "issue": "area jumps 806,458 → 289,867 km² at 1996"
+   "issue": "area jumps 806,458 → 261,073 km² at 1992"
   },
   {
    "realm": "British Colonial Empire",
@@ -43753,11 +45722,7 @@
   },
   {
    "realm": "Czechoslovakia",
-   "issue": "missing 1939–1946 (8 years), present before and after"
-  },
-  {
-   "realm": "Czechoslovakia",
-   "issue": "missing 1969–1990 (22 years), present before and after"
+   "issue": "missing 1939–1944 (6 years), present before and after"
   },
   {
    "realm": "Kingdom of Romania",
@@ -43829,7 +45794,7 @@
   },
   {
    "realm": "Kingdom of Jordan",
-   "issue": "missing 1958–1959 (2 years), present before and after"
+   "issue": "missing 1958–1958 (1 years), present before and after"
   },
   {
    "realm": "Republic of Vietnam",
@@ -43837,7 +45802,7 @@
   },
   {
    "realm": "Kingdom of Cambodia",
-   "issue": "missing 1970–1993 (24 years), present before and after"
+   "issue": "missing 1970–1991 (22 years), present before and after"
   },
   {
    "realm": "French Fifth Republic",
@@ -43845,27 +45810,19 @@
   },
   {
    "realm": "French Fifth Republic",
-   "issue": "area jumps 3,029,276 → 680,260 km² at 2024"
+   "issue": "area jumps 3,029,276 → 665,713 km² at 1992"
   },
   {
    "realm": "Democratic Republic of the Congo",
-   "issue": "missing 1973–1995 (23 years), present before and after"
+   "issue": "missing 1972–1996 (25 years), present before and after"
   },
   {
-   "realm": "Afghanistan",
-   "issue": "missing 1987–1995 (9 years), present before and after"
+   "realm": "United Kingdom",
+   "issue": "area jumps 356,892 → 665,755 km² at 1890"
   },
   {
-   "realm": "Afghanistan",
-   "issue": "area jumps 192,790 → 83,240 km² at 2000"
-  },
-  {
-   "realm": "Afghanistan",
-   "issue": "area jumps 83,240 → 643,926 km² at 2006"
-  },
-  {
-   "realm": "Mujahideen",
-   "issue": "missing 1996–2013 (18 years), present before and after"
+   "realm": "United Kingdom",
+   "issue": "area jumps 672,038 → 265,759 km² at 1972"
   },
   {
    "realm": "Mongol khanates",
@@ -43874,14 +45831,6 @@
   {
    "realm": "Mongol khanates",
    "issue": "area jumps 2,118,129 → 621,835 km² at 1687"
-  },
-  {
-   "realm": "United Kingdom",
-   "issue": "area jumps 356,892 → 665,755 km² at 1890"
-  },
-  {
-   "realm": "United Kingdom",
-   "issue": "area jumps 672,038 → 266,470 km² at 2024"
   },
   {
    "realm": "Dutch colonies in the Americas",
