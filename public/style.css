@@ -506,3 +506,11 @@ aside.about-insp { border-left-color: var(--ink); }
 .brand { display: inline-flex; align-items: center; gap: 9px; }
 .brand img { width: 26px; height: 26px; display: block; flex: none; }
 @media (max-width: 420px) { .brand { gap: 7px; } .brand img { width: 22px; height: 22px; } }
+/* world-changing moments */
+.mrow.wc .mt { font-weight: 700; }
+.mrow.wc .mt::before { content: "★"; color: var(--highlight); margin-right: 6px; }
+section.wcbox { border: 1px solid var(--ink); padding: 4px 14px 10px; }
+section.wcbox .sec { color: var(--highlight); }
+section.wcbox .note { margin: 0 0 4px; }
+#chart .lmk.wc { width: 13px; height: 13px; margin-left: -6.5px; background: var(--highlight); z-index: 2; }
+.wcchip { color: var(--highlight); font-weight: 700; }

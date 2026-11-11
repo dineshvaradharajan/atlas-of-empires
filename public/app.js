@@ -109,8 +109,16 @@ function sourcesList(list, title = "Sources") {
 }
 const vivid = () => (theme.dark ? VIVID_DARK : VIVID_LIGHT);
 const RECON_COLORS = ["#C0662F", "#2F7D6D", "#7A5FB0", "#A67C00", "#5E8FC4", "#B5487A", "#3B6E3B", "#8C4A2F"];
+const PRINCELY = "Indian princely states"; // key shared by every region of content/supplements/princely-states.json
+function tint(c, f) { // mix a colour with the page background (f = share of background)
+  const v = c.match(/^#([0-9a-f]{6})$/i) ? [1, 3, 5].map((i) => parseInt(c.slice(i, i + 2), 16)) : null;
+  const b = theme.bg.match(/^#([0-9a-f]{6})$/i) ? [1, 3, 5].map((i) => parseInt(theme.bg.slice(i, i + 2), 16)) : [255, 255, 255];
+  if (!v) return c;
+  return "#" + v.map((x, i) => Math.round(x * (1 - f) + b[i] * f).toString(16).padStart(2, "0")).join("");
+}
 function colorOf(key) {
   if (S.war) { const m = S.warMap || warSides(S.war, warT()); return m.has(key) ? SIDE_COLORS[m.get(key) % SIDE_COLORS.length] : [theme.other1, theme.other2, theme.other3][hash(clean(key)) % 3]; }
+  if (key === PRINCELY && key !== S.sel && !S.journey) return tint(colorOf("(British Empire)"), 0.5); // under British paramountcy, not British-ruled: a lighter shade of the Raj
   if (S.reconKeys?.has(key) && key !== S.sel) { // reconstruction groups: distinct, stable inks (e.g. all Chola lands share one)
     const ks = [...S.reconKeys]; return RECON_COLORS[ks.indexOf(key) % RECON_COLORS.length];
   }
@@ -1518,7 +1526,7 @@ function prehistoryHTML(y) {
   const em = S.content.moments.filter((m) => m.year < -3400 && m.year <= y + 2000 && m.year >= y - 3000);
   if (em.length) {
     h += `<h3 class="sec">Defining moments</h3><ul class="mlist">`;
-    for (const m of em) h += `<li><button class="mrow" data-moment="${esc(m.id)}"><span class="my">${esc(m.yearLabel || shortYear(m.year))}</span><span class="mt">${esc(m.title)}</span></button></li>`;
+    for (const m of em) h += `<li><button class="mrow${m.worldChanging ? " wc" : ""}" data-moment="${esc(m.id)}"><span class="my">${esc(m.yearLabel || shortYear(m.year))}</span><span class="mt">${esc(m.title)}</span></button></li>`;
     h += `</ul>`;
   }
   return h;
@@ -1558,7 +1566,7 @@ function worldHTML() {
   const em = S.content.moments.filter((m) => (m.year >= ea && m.year < eb) || (ea === S.range[0] && m.year < ea));
   if (em.length) {
     h += `<h3 class="sec">Defining moments · ${esc(eLabel)}</h3><ul class="mlist">`;
-    for (const m of em) h += `<li><button class="mrow" data-moment="${esc(m.id)}"><span class="my">${esc(m.yearLabel || shortYear(m.year))}</span><span class="mt">${esc(m.title)}</span></button></li>`;
+    for (const m of em) h += `<li><button class="mrow${m.worldChanging ? " wc" : ""}" data-moment="${esc(m.id)}"><span class="my">${esc(m.yearLabel || shortYear(m.year))}</span><span class="mt">${esc(m.title)}</span></button></li>`;
     h += `</ul>`;
   }
   if (ch) {
@@ -2644,7 +2652,7 @@ function momentHTML() {
   const m = S.moment, list = S.content.moments, i = list.indexOf(m);
   const prev = list[i - 1], next = list[i + 1];
   let h = `<button class="back" data-act="world">${backLabel(`← The world in ${plainYear(S.year)}`)}</button>`;
-  h += `<div class="kicker">Defining moment · ${esc(CAT[m.category] || m.category || "")}</div>`;
+  h += `<div class="kicker">${m.worldChanging ? `<span class="wcchip">★ World-changing</span> ` : ""}Defining moment · ${esc(CAT[m.category] || m.category || "")}</div>`;
   h += `<p class="year mom">${esc(m.yearLabel || plainYear(m.year))}</p><h1 class="head">${esc(m.title)}</h1>`;
   if (m.place) h += `<p class="note">${esc(m.place)}</p>`;
   const mw = S.content.wars.find((w) => w.moment === m.id);
@@ -2662,11 +2670,17 @@ function momentHTML() {
 function momentsListHTML() {
   let h = `<button class="back" data-act="world">← Back to the map</button><div class="kicker">From the first farms to today</div><h2 class="realm">Defining moments</h2>
     <p class="prose">The turning points that changed humanity, each placed on the map where it happened. Click one to travel there.</p>`;
+  const wc = S.content.moments.filter((m) => m.worldChanging);
+  if (wc.length) {
+    h += `<section class="wcbox"><h3 class="sec">★ World-changing</h3><p class="note">Inventions and discoveries that changed how most people live, from the first farms to generative AI.</p><ul class="mlist">`;
+    for (const m of wc) h += `<li><button class="mrow wc" data-moment="${esc(m.id)}"><span class="my">${esc(m.yearLabel || shortYear(m.year))}</span><span class="mt">${esc(m.title)}</span></button></li>`;
+    h += `</ul></section>`;
+  }
   let last = null;
   for (const m of S.content.moments) {
     const era = m.year < S.range[0] ? "Prelude: before the first states" : eraOf(m.year)[2];
     if (era !== last) { h += `${last ? "</ul>" : ""}<h3 class="sec">${esc(era)}</h3><ul class="mlist">`; last = era; }
-    h += `<li><button class="mrow" data-moment="${esc(m.id)}"><span class="my">${esc(m.yearLabel || shortYear(m.year))}</span><span class="mt">${esc(m.title)}</span></button></li>`;
+    h += `<li><button class="mrow${m.worldChanging ? " wc" : ""}" data-moment="${esc(m.id)}"><span class="my">${esc(m.yearLabel || shortYear(m.year))}</span><span class="mt">${esc(m.title)}</span></button></li>`;
   }
   return h + (last ? "</ul>" : "");
 }
@@ -2731,7 +2745,7 @@ function listPins() {
   S.pinCache ||= {};
   if (S.pinCache[S.view]) return S.pinCache[S.view];
   const C = S.content;
-  const pins = S.view === "moments" ? C.moments.filter((m) => m.lonlat).map((m) => ({ id: m.id, name: m.title, when: m.yearLabel || shortYear(m.year), place: m.place, lonlat: m.lonlat, dot: true, open: () => openMoment(m.id) }))
+  const pins = S.view === "moments" ? C.moments.filter((m) => m.lonlat).map((m) => ({ id: m.id, name: m.title, when: m.yearLabel || shortYear(m.year), place: m.place, lonlat: m.lonlat, dot: !m.worldChanging, wc: !!m.worldChanging, open: () => openMoment(m.id) }))
     : S.view === "wars" ? C.wars.map((w) => ({ id: w.id, name: w.name, when: w.dateLabel, lonlat: middleOf(w.events), open: () => openWar(w.id) }))
     : C.journeys.map((j) => ({ id: j.id, name: j.name, when: `${shortYear(j.span[0])}–${shortYear(j.span[1])}`, lonlat: middleOf(j.events), open: () => openJourney(j.id) }));
   return (S.pinCache[S.view] = pins.filter((p) => p.lonlat));
@@ -2750,9 +2764,9 @@ function drawListPins() {
   const pts = pins.map((p) => { const [x0, y0] = projection(p.lonlat); return { p, x: S.t.applyX(x0), y: S.t.applyY(y0) }; });
   for (const { p, x, y } of pts) {
     if (x < -10 || y < -10 || x > S.width + 10 || y > S.height + 10) continue;
-    const isHot = p.id === hot, r = isHot ? 7 : p.dot ? 4 : 5.5;
+    const isHot = p.id === hot, r = isHot ? 7 : p.wc ? 6 : p.dot ? 3.5 : 5.5;
     ctx.beginPath(); ctx.arc(x, y, r, 0, 2 * Math.PI);
-    ctx.fillStyle = isHot ? theme.highlight : p.dot ? theme.highlight : theme.ink; ctx.fill();
+    ctx.fillStyle = isHot || p.wc ? theme.highlight : p.dot ? theme.ink3 : theme.ink; ctx.fill(); // world-changing moments in red, the rest quieter
     ctx.lineWidth = 1.5; ctx.strokeStyle = theme.bg; ctx.stroke();
     S.pinHits.push({ x, y, pin: p });
   }
@@ -2870,7 +2884,7 @@ function renderListChart(kind) {
   const el = $("#chart"), Wpx = Math.max(320, el.clientWidth || 900), H = 130;
   const items = kind === "wars" ? S.content.wars.map((w) => ({ id: w.id, name: w.name, a: w.span[0], b: w.span[1] + 1, attr: "data-war", hot: !!w.cinema, when: w.dateLabel }))
     : kind === "empires" ? S.content.journeys.map((j) => ({ id: j.id, name: j.name, a: j.span[0], b: j.span[1], attr: "data-journey", when: `${shortYear(j.span[0])}–${shortYear(j.span[1])}` }))
-    : S.content.moments.map((m) => ({ id: m.id, name: m.title, a: m.year, b: m.year, attr: "data-moment", when: m.yearLabel || shortYear(m.year) }));
+    : S.content.moments.map((m) => ({ id: m.id, name: m.title, a: m.year, b: m.year, attr: "data-moment", when: m.yearLabel || shortYear(m.year), wc: !!m.worldChanging }));
   const a = Math.min(...items.map((i) => i.a)), b = Math.max(2024, ...items.map((i) => i.b));
   const p0 = yToPos(a), p1 = yToPos(b);
   const X = (S.chartScale = (y) => (yToPos(Math.max(a, Math.min(b, y))) - p0) / (p1 - p0));
@@ -2879,12 +2893,12 @@ function renderListChart(kind) {
   let body = "";
   if (kind === "moments") { // diamonds, stacked into rows where they would overlap
     const rows = [], rowH = 15, nRows = Math.floor((H - 8) / rowH);
-    for (const it of [...items].sort((p, q) => p.a - q.a)) {
+    for (const it of [...items].sort((p, q) => q.wc - p.wc || p.a - q.a)) { // world-changing ones claim the bottom row first
       const x = X(it.a) * Wpx;
       let r = rows.findIndex((last) => x - last >= 12);
       if (r < 0) r = rows.length < nRows ? rows.length : rows.indexOf(Math.min(...rows));
       rows[r] = x;
-      body += `<button class="lmk" ${it.attr}="${esc(it.id)}" style="left:${pct(X(it.a))};bottom:${4 + r * rowH}px" aria-label="${esc(it.name)}, ${esc(it.when)}"><span class="tipm">${esc(it.when)} · ${esc(it.name)}</span></button>`;
+      body += `<button class="lmk${it.wc ? " wc" : ""}" ${it.attr}="${esc(it.id)}" style="left:${pct(X(it.a))};bottom:${4 + r * rowH}px" aria-label="${esc(it.name)}, ${esc(it.when)}"><span class="tipm">${esc(it.when)} · ${esc(it.name)}</span></button>`;
     }
   } else { // a bar per war or empire with its name beside it, packed into lanes
     const laneH = kind === "wars" ? 16 : 12, nLanes = Math.floor(H / laneH), lanes = [];

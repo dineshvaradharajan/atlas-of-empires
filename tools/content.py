@@ -199,6 +199,14 @@ def main():
             check_sources(f"moment {m.get('id')}", m)
             moments.append(m)
     moments.sort(key=lambda m: m["year"])
+    # World-changing moments (content/world-changing.json): highlighted in the app
+    wc_path = os.path.join(ROOT, "content", "world-changing.json")
+    if os.path.exists(wc_path):
+        wc = set(json.load(open(wc_path)).get("ids", []))
+        for m in moments:
+            if m["id"] in wc: m["worldChanging"] = True
+        for i in sorted(wc - {m["id"] for m in moments}):
+            problems.append(f"world-changing: no moment with id {i!r}")
 
     # Reconstruction layers (content/supplements/*.json): polities the border data lacks or draws too crudely.
     supplements = []
