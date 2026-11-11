@@ -1,0 +1,8397 @@
+{
+ "id": "sa-medieval",
+ "title": "South Asia's regional kingdoms, 1000–1550",
+ "from": 1000,
+ "to": 1550,
+ "replaces": [],
+ "summary": "Between the Ghaznavid raids and the Mughal conquest, South Asia was shared by dozens of regional states that the border data leaves out: the Madurai Sultanate in the Tamil country, the sultanates of Gujarat, Malwa and Khandesh, the Reddi and Velama kingdoms of Andhra, the Gajapatis of Odisha, the Rajput kingdoms of Mewar and Marwar, the Ahom, Chutia, Kamata and Tripura kingdoms of the north-east, the successors of the Chera Perumals on the Malabar coast, and the Sinhala kingdoms of Gampola, Kotte and Kandy. Their dates and capitals come from cited reference works; their borders are reconstructions checked against Joppen's Historical Atlas of India (1914) and Schwartzberg's Historical Atlas of South Asia. Few medieval sources describe frontiers, so every line here is approximate.",
+ "regions": [
+  {
+   "name": "Madurai Sultanate (Ma'bar)",
+   "key": "Madurai Sultanate",
+   "kind": "sultanate",
+   "from": 1335,
+   "to": 1370,
+   "capital": "Madurai",
+   "rulers": [
+    {
+     "name": "Jalaluddin Ahsan Khan",
+     "when": "1335–1339"
+    },
+    {
+     "name": "Ghiyath ad-Din Muhammad Damghani",
+     "when": "c. 1340–1344"
+    },
+    {
+     "name": "Fakhr ad-Din Mubarak Shah",
+     "when": "c. 1359–1368"
+    },
+    {
+     "name": "Ala ad-Din Sikandar Shah",
+     "when": "1368–1378"
+    }
+   ],
+   "note": "Proclaimed in 1335 when Jalaluddin Ahsan Khan, Delhi's governor of Ma'bar, threw off Muhammad bin Tughluq's authority; Ibn Battuta visited in 1344. The extent (Vaigai and lower Kaveri down to the Tamirabarani, Ghats crest on the west) follows the old Pandya country and the sultanate's wars with the Hoysala Ballala III, who died besieging its fort near Tiruchirappalli in 1343. The southern limit (Tirunelveli, where Pandya princes survived) and the hold on the Thanjavur delta are uncertain. Dates: Wikipedia 'Madurai Sultanate'; Schwartzberg plate V.2 (Ma'bar 1334–1378).",
+   "coords": [
+    [
+     78.35,
+     10.98
+    ],
+    [
+     78.0,
+     10.6
+    ],
+    [
+     77.75,
+     10.35
+    ],
+    [
+     77.45,
+     10.15
+    ],
+    [
+     77.25,
+     9.7
+    ],
+    [
+     77.2,
+     9.3
+    ],
+    [
+     77.32,
+     8.95
+    ],
+    [
+     77.45,
+     8.7
+    ],
+    [
+     77.6,
+     8.62
+    ],
+    [
+     78.15,
+     8.6
+    ],
+    [
+     78.35,
+     8.6
+    ],
+    [
+     78.6,
+     8.9
+    ],
+    [
+     79.1,
+     9.15
+    ],
+    [
+     79.45,
+     9.2
+    ],
+    [
+     79.5,
+     9.5
+    ],
+    [
+     79.6,
+     9.9
+    ],
+    [
+     79.9,
+     10.25
+    ],
+    [
+     80.0,
+     10.6
+    ],
+    [
+     80.0,
+     11.37
+    ],
+    [
+     79.83,
+     11.37
+    ],
+    [
+     79.4,
+     11.1
+    ],
+    [
+     78.8,
+     11.0
+    ],
+    [
+     78.35,
+     10.98
+    ]
+   ]
+  },
+  {
+   "name": "Madurai Sultanate (Ma'bar)",
+   "key": "Madurai Sultanate",
+   "kind": "sultanate",
+   "from": 1371,
+   "to": 1378,
+   "capital": "Madurai",
+   "rulers": [
+    {
+     "name": "Jalaluddin Ahsan Khan",
+     "when": "1335–1339"
+    },
+    {
+     "name": "Ghiyath ad-Din Muhammad Damghani",
+     "when": "c. 1340–1344"
+    },
+    {
+     "name": "Fakhr ad-Din Mubarak Shah",
+     "when": "c. 1359–1368"
+    },
+    {
+     "name": "Ala ad-Din Sikandar Shah",
+     "when": "1368–1378"
+    }
+   ],
+   "note": "Rump sultanate after Vijayanagara's prince Kumara Kampana took Srirangam and the Kaveri country (the Ranganatha image was reinstalled at Srirangam in 1371). Madurai fell and the last sultan was killed in 1378 (Wikipedia 'Madurai Sultanate'). The exact line of the shrinking frontier is not recorded; this slice simply drops the Kaveri belt.",
+   "coords": [
+    [
+     77.75,
+     10.35
+    ],
+    [
+     77.45,
+     10.15
+    ],
+    [
+     77.25,
+     9.7
+    ],
+    [
+     77.2,
+     9.3
+    ],
+    [
+     77.32,
+     8.95
+    ],
+    [
+     77.45,
+     8.7
+    ],
+    [
+     77.6,
+     8.62
+    ],
+    [
+     78.15,
+     8.6
+    ],
+    [
+     78.35,
+     8.6
+    ],
+    [
+     78.6,
+     8.9
+    ],
+    [
+     79.1,
+     9.15
+    ],
+    [
+     79.45,
+     9.2
+    ],
+    [
+     79.5,
+     9.5
+    ],
+    [
+     79.6,
+     9.9
+    ],
+    [
+     79.9,
+     10.25
+    ],
+    [
+     79.3,
+     10.35
+    ],
+    [
+     78.4,
+     10.4
+    ],
+    [
+     77.75,
+     10.35
+    ]
+   ]
+  },
+  {
+   "name": "Sambuvaraya chiefdom (Tondaimandalam)",
+   "key": "Sambuvarayas",
+   "kind": "chiefdom",
+   "from": 1337,
+   "to": 1362,
+   "capital": "Padaiveedu",
+   "rulers": [
+    {
+     "name": "Venrumankonda Sambuvaraya",
+     "when": "1322–1337"
+    },
+    {
+     "name": "Rajanarayana Sambuvaraya",
+     "when": "1337–c. 1373 (regnal years)"
+    }
+   ],
+   "note": "Former Chola and Pandya vassals who issued records in their own regnal years in the mid-14th century (Wikipedia 'Sambuvarayar'). Kumara Kampana of Vijayanagara defeated Rajanarayana on his march south (Madhura Vijayam); c. 1362 is used here, though some lists run the line to 1375. Extent = northern Tondaimandalam (Palar basin, Ponnaiyar to Pulicat); approximate.",
+   "coords": [
+    [
+     79.75,
+     11.85
+    ],
+    [
+     79.3,
+     11.95
+    ],
+    [
+     78.9,
+     12.1
+    ],
+    [
+     78.6,
+     12.35
+    ],
+    [
+     78.55,
+     12.7
+    ],
+    [
+     78.8,
+     13.0
+    ],
+    [
+     79.2,
+     13.3
+    ],
+    [
+     79.7,
+     13.55
+    ],
+    [
+     80.35,
+     13.5
+    ],
+    [
+     80.5,
+     13.5
+    ],
+    [
+     80.4,
+     12.5
+    ],
+    [
+     80.0,
+     11.85
+    ],
+    [
+     79.75,
+     11.85
+    ]
+   ]
+  },
+  {
+   "name": "Early Vijayanagara (Sangama brothers)",
+   "key": "Vijayanagara Empire",
+   "kind": "kingdom",
+   "from": 1336,
+   "to": 1343,
+   "capital": "Vijayanagara (Hampi)",
+   "rulers": [
+    {
+     "name": "Harihara I",
+     "when": "1336–1356"
+    },
+    {
+     "name": "Bukka Raya I",
+     "when": "1356–1377, co-ruler before"
+    }
+   ],
+   "note": "Vijayanagara's founding years, before the border data begins (1344). Harihara and Bukka took over the former Kampili kingdom on the Tungabhadra c. 1336; the Hoysala Ballala III still held the south until 1343. Extent = Kampili's lands around Hampi (Schwartzberg V.2 inset e). The 1336 founding date is traditional.",
+   "coords": [
+    [
+     75.8,
+     15.9
+    ],
+    [
+     76.5,
+     16.0
+    ],
+    [
+     77.3,
+     15.85
+    ],
+    [
+     77.6,
+     15.4
+    ],
+    [
+     77.5,
+     14.8
+    ],
+    [
+     77.0,
+     14.4
+    ],
+    [
+     76.2,
+     14.35
+    ],
+    [
+     75.7,
+     14.7
+    ],
+    [
+     75.6,
+     15.3
+    ],
+    [
+     75.8,
+     15.9
+    ]
+   ]
+  },
+  {
+   "name": "Early Bahmani Sultanate",
+   "key": "Bahmani Sultanate",
+   "kind": "sultanate",
+   "from": 1347,
+   "to": 1351,
+   "capital": "Gulbarga (Ahsanabad)",
+   "rulers": [
+    {
+     "name": "Ala-ud-Din Bahman Shah",
+     "when": "1347–1358"
+    }
+   ],
+   "note": "The Bahmani state's first years, before the border data begins (1352). Founded by rebel Tughluq officers at Daulatabad in 1347; its four provinces were Gulbarga, Daulatabad, Berar and Bidar (Joppen p. 19; Wikipedia 'Bahmani Sultanate'). The eastern line against the Musunuri Nayakas of Warangal is approximate.",
+   "coords": [
+    [
+     73.7,
+     19.9
+    ],
+    [
+     74.2,
+     20.6
+    ],
+    [
+     75.5,
+     20.7
+    ],
+    [
+     76.3,
+     21.0
+    ],
+    [
+     77.0,
+     21.4
+    ],
+    [
+     77.8,
+     21.4
+    ],
+    [
+     78.5,
+     21.0
+    ],
+    [
+     78.9,
+     20.4
+    ],
+    [
+     79.0,
+     19.9
+    ],
+    [
+     78.3,
+     19.4
+    ],
+    [
+     77.75,
+     18.8
+    ],
+    [
+     77.75,
+     17.9
+    ],
+    [
+     77.7,
+     17.0
+    ],
+    [
+     77.3,
+     16.4
+    ],
+    [
+     76.6,
+     16.2
+    ],
+    [
+     75.8,
+     16.3
+    ],
+    [
+     75.0,
+     16.6
+    ],
+    [
+     74.3,
+     17.0
+    ],
+    [
+     73.9,
+     17.5
+    ],
+    [
+     73.7,
+     18.3
+    ],
+    [
+     73.6,
+     19.2
+    ],
+    [
+     73.7,
+     19.9
+    ]
+   ]
+  },
+  {
+   "name": "Reddi kingdom",
+   "key": "Reddi kingdom",
+   "kind": "kingdom",
+   "from": 1325,
+   "to": 1363,
+   "capital": "Addanki, later Kondavidu",
+   "rulers": [
+    {
+     "name": "Prolaya Vema Reddi",
+     "when": "1325–1353"
+    },
+    {
+     "name": "Anavota Reddi",
+     "when": "1353–1364"
+    },
+    {
+     "name": "Anavema Reddi",
+     "when": "1364–1386"
+    },
+    {
+     "name": "Kumaragiri Reddi",
+     "when": "1386–1402"
+    }
+   ],
+   "note": "Founded by Prolaya Vema Reddi after the fall of the Kakatiyas (1323), between the lower Krishna and the Gundlakamma (Wikipedia 'Reddi Kingdom'). Boundaries approximate; Joppen (1398) folds the Reddis into a single 'Telingana'.",
+   "coords": [
+    [
+     79.35,
+     16.4
+    ],
+    [
+     79.9,
+     16.55
+    ],
+    [
+     80.6,
+     16.35
+    ],
+    [
+     81.0,
+     15.95
+    ],
+    [
+     81.2,
+     15.7
+    ],
+    [
+     80.5,
+     15.2
+    ],
+    [
+     80.2,
+     15.05
+    ],
+    [
+     79.6,
+     15.15
+    ],
+    [
+     79.3,
+     15.4
+    ],
+    [
+     79.15,
+     15.9
+    ],
+    [
+     79.35,
+     16.4
+    ]
+   ]
+  },
+  {
+   "name": "Reddi kingdom",
+   "key": "Reddi kingdom",
+   "kind": "kingdom",
+   "from": 1364,
+   "to": 1423,
+   "capital": "Kondavidu; Rajahmundry (branch)",
+   "rulers": [
+    {
+     "name": "Prolaya Vema Reddi",
+     "when": "1325–1353"
+    },
+    {
+     "name": "Anavota Reddi",
+     "when": "1353–1364"
+    },
+    {
+     "name": "Anavema Reddi",
+     "when": "1364–1386"
+    },
+    {
+     "name": "Kumaragiri Reddi",
+     "when": "1386–1402"
+    }
+   ],
+   "note": "Peak under Anavema and Kumaragiri: from Srisailam to the sea and north to the Godavari delta, where a Rajahmundry branch ruled from the 1390s. Kondavidu fell to Vijayanagara in 1424. Wikipedia 'Reddi Kingdom'; extent approximate.",
+   "coords": [
+    [
+     78.75,
+     16.1
+    ],
+    [
+     79.0,
+     16.55
+    ],
+    [
+     79.6,
+     16.75
+    ],
+    [
+     80.2,
+     16.95
+    ],
+    [
+     80.9,
+     17.3
+    ],
+    [
+     81.5,
+     17.45
+    ],
+    [
+     81.9,
+     17.35
+    ],
+    [
+     82.25,
+     16.95
+    ],
+    [
+     82.5,
+     16.9
+    ],
+    [
+     81.6,
+     16.1
+    ],
+    [
+     81.2,
+     15.7
+    ],
+    [
+     80.5,
+     15.2
+    ],
+    [
+     80.2,
+     15.05
+    ],
+    [
+     79.6,
+     15.15
+    ],
+    [
+     79.0,
+     15.4
+    ],
+    [
+     78.7,
+     15.8
+    ],
+    [
+     78.75,
+     16.1
+    ]
+   ]
+  },
+  {
+   "name": "Reddi kingdom of Rajahmundry",
+   "key": "Reddi kingdom",
+   "kind": "kingdom",
+   "from": 1424,
+   "to": 1447,
+   "capital": "Rajahmundry",
+   "rulers": [
+    {
+     "name": "Allada Reddi",
+     "when": "early 15th c."
+    },
+    {
+     "name": "Virabhadra Reddi",
+     "when": "c. 1423–1448"
+    }
+   ],
+   "note": "After Kondavidu fell (1424) the Rajahmundry branch held the Godavari delta until the Gajapati Kapilendra took it c. 1448 (Wikipedia 'Reddi Kingdom').",
+   "coords": [
+    [
+     80.9,
+     16.4
+    ],
+    [
+     80.95,
+     17.2
+    ],
+    [
+     81.5,
+     17.45
+    ],
+    [
+     81.9,
+     17.35
+    ],
+    [
+     82.25,
+     16.95
+    ],
+    [
+     82.5,
+     16.9
+    ],
+    [
+     81.6,
+     16.1
+    ],
+    [
+     81.2,
+     16.0
+    ],
+    [
+     80.9,
+     16.4
+    ]
+   ]
+  },
+  {
+   "name": "Musunuri Nayakas",
+   "key": "Musunuri Nayakas",
+   "kind": "kingdom",
+   "from": 1336,
+   "to": 1367,
+   "capital": "Warangal",
+   "rulers": [
+    {
+     "name": "Prolaya Nayaka",
+     "when": "c. 1325–1333"
+    },
+    {
+     "name": "Kapaya Nayaka",
+     "when": "c. 1333–1368"
+    }
+   ],
+   "note": "Telugu chiefs who drove Tughluq forces from Warangal c. 1336; Kapaya ceded Golconda to the Bahmanis (c. 1365) and was overthrown by the Recherla Nayakas in 1368 (Wikipedia 'Musunuri Nayakas'). Extent = Telangana; the western edge facing the Bahmanis moved repeatedly.",
+   "coords": [
+    [
+     77.9,
+     18.0
+    ],
+    [
+     78.4,
+     18.9
+    ],
+    [
+     79.2,
+     19.3
+    ],
+    [
+     80.2,
+     19.0
+    ],
+    [
+     80.9,
+     18.3
+    ],
+    [
+     81.0,
+     17.7
+    ],
+    [
+     80.9,
+     17.5
+    ],
+    [
+     80.2,
+     17.1
+    ],
+    [
+     79.6,
+     16.85
+    ],
+    [
+     79.0,
+     16.65
+    ],
+    [
+     78.6,
+     16.6
+    ],
+    [
+     78.3,
+     16.6
+    ],
+    [
+     77.9,
+     17.1
+    ],
+    [
+     77.9,
+     18.0
+    ]
+   ]
+  },
+  {
+   "name": "Recherla Nayakas (Velamas)",
+   "key": "Recherla Nayakas",
+   "kind": "kingdom",
+   "from": 1368,
+   "to": 1432,
+   "capital": "Rachakonda and Devarakonda",
+   "rulers": [
+    {
+     "name": "Anavota Nayaka I",
+     "when": "c. 1361–1384"
+    },
+    {
+     "name": "Singama Nayaka II",
+     "when": "c. 1384–1399"
+    }
+   ],
+   "note": "Padmanayaka Velama chiefs who killed Kapaya Nayaka (1368) and dominated Telangana in the late 14th and early 15th century from Rachakonda and Devarakonda (Wikipedia 'Recherla Nayakas', r. 1375–1435). The Bahmanis took Warangal (1420s) and later the Velama forts; end date approximate.",
+   "coords": [
+    [
+     78.4,
+     16.65
+    ],
+    [
+     78.2,
+     17.2
+    ],
+    [
+     78.6,
+     17.7
+    ],
+    [
+     79.3,
+     18.1
+    ],
+    [
+     79.9,
+     17.9
+    ],
+    [
+     80.3,
+     17.4
+    ],
+    [
+     80.0,
+     17.0
+    ],
+    [
+     79.5,
+     16.8
+    ],
+    [
+     78.9,
+     16.62
+    ],
+    [
+     78.4,
+     16.65
+    ]
+   ]
+  },
+  {
+   "name": "Eastern Ganga Kingdom",
+   "key": "Eastern Ganga Kingdom",
+   "kind": "kingdom",
+   "from": 1352,
+   "to": 1434,
+   "capital": "Cuttack (Varanasi Kataka)",
+   "rulers": [
+    {
+     "name": "Narasimha Deva III",
+     "when": "c. 1352–1378"
+    },
+    {
+     "name": "Narasimha Deva IV",
+     "when": "c. 1378–1414"
+    },
+    {
+     "name": "Bhanu Deva IV",
+     "when": "c. 1414–1434"
+    }
+   ],
+   "note": "Last century of the Eastern Gangas (Wikipedia 'Eastern Ganga dynasty'); Firuz Shah Tughluq raided Odisha in 1360. Odisha and northern Kalinga after the border data stops (1351). Western hill limit and southern limit near Simhachalam follow Schwartzberg plate XIV.3(d); approximate.",
+   "coords": [
+    [
+     87.6,
+     21.4
+    ],
+    [
+     87.5,
+     21.9
+    ],
+    [
+     87.0,
+     22.25
+    ],
+    [
+     86.4,
+     22.4
+    ],
+    [
+     85.6,
+     22.3
+    ],
+    [
+     85.0,
+     22.0
+    ],
+    [
+     84.4,
+     21.9
+    ],
+    [
+     84.2,
+     21.3
+    ],
+    [
+     84.3,
+     20.6
+    ],
+    [
+     83.9,
+     20.2
+    ],
+    [
+     83.6,
+     19.6
+    ],
+    [
+     83.3,
+     19.1
+    ],
+    [
+     83.0,
+     18.6
+    ],
+    [
+     82.9,
+     18.2
+    ],
+    [
+     82.7,
+     18.0
+    ],
+    [
+     83.0,
+     17.6
+    ],
+    [
+     83.3,
+     17.55
+    ],
+    [
+     83.6,
+     17.4
+    ],
+    [
+     85.0,
+     18.6
+    ],
+    [
+     86.5,
+     19.6
+    ],
+    [
+     87.3,
+     20.5
+    ],
+    [
+     87.6,
+     21.4
+    ]
+   ]
+  },
+  {
+   "name": "Gajapati Empire",
+   "key": "Gajapati Empire",
+   "kind": "empire",
+   "from": 1435,
+   "to": 1448,
+   "capital": "Cuttack",
+   "rulers": [
+    {
+     "name": "Kapilendra Deva",
+     "when": "1434–1467"
+    },
+    {
+     "name": "Purushottama Deva",
+     "when": "1467–1497"
+    },
+    {
+     "name": "Prataparudra Deva",
+     "when": "1497–1540"
+    }
+   ],
+   "note": "Kapilendra Deva seized the throne on the death of the last Ganga king (1434; Wikipedia 'Gajapati Empire'). Odisha and northern Kalinga after the border data stops (1351). Western hill limit and southern limit near Simhachalam follow Schwartzberg plate XIV.3(d); approximate.",
+   "coords": [
+    [
+     87.6,
+     21.4
+    ],
+    [
+     87.5,
+     21.9
+    ],
+    [
+     87.0,
+     22.25
+    ],
+    [
+     86.4,
+     22.4
+    ],
+    [
+     85.6,
+     22.3
+    ],
+    [
+     85.0,
+     22.0
+    ],
+    [
+     84.4,
+     21.9
+    ],
+    [
+     84.2,
+     21.3
+    ],
+    [
+     84.3,
+     20.6
+    ],
+    [
+     83.9,
+     20.2
+    ],
+    [
+     83.6,
+     19.6
+    ],
+    [
+     83.3,
+     19.1
+    ],
+    [
+     83.0,
+     18.6
+    ],
+    [
+     82.9,
+     18.2
+    ],
+    [
+     82.7,
+     18.0
+    ],
+    [
+     83.0,
+     17.6
+    ],
+    [
+     83.3,
+     17.55
+    ],
+    [
+     83.6,
+     17.4
+    ],
+    [
+     85.0,
+     18.6
+    ],
+    [
+     86.5,
+     19.6
+    ],
+    [
+     87.3,
+     20.5
+    ],
+    [
+     87.6,
+     21.4
+    ]
+   ]
+  },
+  {
+   "name": "Gajapati Empire",
+   "key": "Gajapati Empire",
+   "kind": "empire",
+   "from": 1449,
+   "to": 1463,
+   "capital": "Cuttack",
+   "rulers": [
+    {
+     "name": "Kapilendra Deva",
+     "when": "1434–1467"
+    },
+    {
+     "name": "Purushottama Deva",
+     "when": "1467–1497"
+    },
+    {
+     "name": "Prataparudra Deva",
+     "when": "1497–1540"
+    }
+   ],
+   "note": "Kapilendra took the Reddi lands: Rajahmundry (c. 1448) and Kondavidu (1454), bringing the frontier to the Krishna (Wikipedia 'Gajapati Empire'). Raids into Telangana and Bahmani territory are not shown as annexations.",
+   "coords": [
+    [
+     87.6,
+     21.4
+    ],
+    [
+     87.5,
+     21.9
+    ],
+    [
+     87.0,
+     22.25
+    ],
+    [
+     86.4,
+     22.4
+    ],
+    [
+     85.6,
+     22.3
+    ],
+    [
+     85.0,
+     22.0
+    ],
+    [
+     84.4,
+     21.9
+    ],
+    [
+     84.2,
+     21.3
+    ],
+    [
+     84.3,
+     20.6
+    ],
+    [
+     83.9,
+     20.2
+    ],
+    [
+     83.6,
+     19.6
+    ],
+    [
+     83.3,
+     19.1
+    ],
+    [
+     83.0,
+     18.6
+    ],
+    [
+     82.9,
+     18.2
+    ],
+    [
+     82.3,
+     17.9
+    ],
+    [
+     81.6,
+     17.6
+    ],
+    [
+     80.9,
+     17.45
+    ],
+    [
+     80.2,
+     17.05
+    ],
+    [
+     79.6,
+     16.75
+    ],
+    [
+     79.6,
+     16.3
+    ],
+    [
+     79.9,
+     16.1
+    ],
+    [
+     80.5,
+     15.9
+    ],
+    [
+     81.0,
+     15.7
+    ],
+    [
+     81.5,
+     15.75
+    ],
+    [
+     82.5,
+     16.6
+    ],
+    [
+     83.6,
+     17.4
+    ],
+    [
+     85.0,
+     18.6
+    ],
+    [
+     86.5,
+     19.6
+    ],
+    [
+     87.3,
+     20.5
+    ],
+    [
+     87.6,
+     21.4
+    ]
+   ]
+  },
+  {
+   "name": "Gajapati Empire (peak)",
+   "key": "Gajapati Empire",
+   "kind": "empire",
+   "from": 1464,
+   "to": 1470,
+   "capital": "Cuttack",
+   "rulers": [
+    {
+     "name": "Kapilendra Deva",
+     "when": "1434–1467"
+    },
+    {
+     "name": "Purushottama Deva",
+     "when": "1467–1497"
+    },
+    {
+     "name": "Prataparudra Deva",
+     "when": "1497–1540"
+    }
+   ],
+   "note": "Prince Hamvira's southern campaign (c. 1463–64) carried Gajapati arms down the Coromandel coast through Udayagiri and Kanchi to the Kaveri; Wikipedia gives the peak as reaching Tiruchirappalli. This was a short military occupation of the coastal belt, lost again by the 1470s; the inland line is a guess.",
+   "coords": [
+    [
+     87.6,
+     21.4
+    ],
+    [
+     87.5,
+     21.9
+    ],
+    [
+     87.0,
+     22.25
+    ],
+    [
+     86.4,
+     22.4
+    ],
+    [
+     85.6,
+     22.3
+    ],
+    [
+     85.0,
+     22.0
+    ],
+    [
+     84.4,
+     21.9
+    ],
+    [
+     84.2,
+     21.3
+    ],
+    [
+     84.3,
+     20.6
+    ],
+    [
+     83.9,
+     20.2
+    ],
+    [
+     83.6,
+     19.6
+    ],
+    [
+     83.3,
+     19.1
+    ],
+    [
+     83.0,
+     18.6
+    ],
+    [
+     82.9,
+     18.2
+    ],
+    [
+     82.3,
+     17.9
+    ],
+    [
+     81.6,
+     17.6
+    ],
+    [
+     80.9,
+     17.45
+    ],
+    [
+     80.2,
+     17.05
+    ],
+    [
+     79.6,
+     16.75
+    ],
+    [
+     79.3,
+     16.2
+    ],
+    [
+     79.2,
+     15.2
+    ],
+    [
+     79.3,
+     14.3
+    ],
+    [
+     79.4,
+     13.6
+    ],
+    [
+     79.2,
+     13.0
+    ],
+    [
+     79.0,
+     12.4
+    ],
+    [
+     78.85,
+     11.8
+    ],
+    [
+     78.7,
+     11.2
+    ],
+    [
+     78.8,
+     10.85
+    ],
+    [
+     79.85,
+     10.9
+    ],
+    [
+     80.3,
+     11.5
+    ],
+    [
+     80.4,
+     12.5
+    ],
+    [
+     80.5,
+     13.6
+    ],
+    [
+     80.4,
+     14.6
+    ],
+    [
+     80.4,
+     15.3
+    ],
+    [
+     81.0,
+     15.6
+    ],
+    [
+     81.5,
+     15.75
+    ],
+    [
+     82.5,
+     16.6
+    ],
+    [
+     83.6,
+     17.4
+    ],
+    [
+     85.0,
+     18.6
+    ],
+    [
+     86.5,
+     19.6
+    ],
+    [
+     87.3,
+     20.5
+    ],
+    [
+     87.6,
+     21.4
+    ]
+   ]
+  },
+  {
+   "name": "Gajapati Empire",
+   "key": "Gajapati Empire",
+   "kind": "empire",
+   "from": 1471,
+   "to": 1484,
+   "capital": "Cuttack",
+   "rulers": [
+    {
+     "name": "Kapilendra Deva",
+     "when": "1434–1467"
+    },
+    {
+     "name": "Purushottama Deva",
+     "when": "1467–1497"
+    },
+    {
+     "name": "Prataparudra Deva",
+     "when": "1497–1540"
+    }
+   ],
+   "note": "During the succession war between Purushottama and Hamvira (who sought Bahmani help, 1471) the Bahmanis took Rajahmundry and Kondavidu; the frontier fell back to about the Godavari.",
+   "coords": [
+    [
+     87.6,
+     21.4
+    ],
+    [
+     87.5,
+     21.9
+    ],
+    [
+     87.0,
+     22.25
+    ],
+    [
+     86.4,
+     22.4
+    ],
+    [
+     85.6,
+     22.3
+    ],
+    [
+     85.0,
+     22.0
+    ],
+    [
+     84.4,
+     21.9
+    ],
+    [
+     84.2,
+     21.3
+    ],
+    [
+     84.3,
+     20.6
+    ],
+    [
+     83.9,
+     20.2
+    ],
+    [
+     83.6,
+     19.6
+    ],
+    [
+     83.3,
+     19.1
+    ],
+    [
+     83.0,
+     18.6
+    ],
+    [
+     82.9,
+     18.2
+    ],
+    [
+     82.6,
+     17.9
+    ],
+    [
+     82.0,
+     17.55
+    ],
+    [
+     81.95,
+     17.25
+    ],
+    [
+     82.3,
+     16.85
+    ],
+    [
+     82.6,
+     16.9
+    ],
+    [
+     83.6,
+     17.4
+    ],
+    [
+     85.0,
+     18.6
+    ],
+    [
+     86.5,
+     19.6
+    ],
+    [
+     87.3,
+     20.5
+    ],
+    [
+     87.6,
+     21.4
+    ]
+   ]
+  },
+  {
+   "name": "Gajapati Empire",
+   "key": "Gajapati Empire",
+   "kind": "empire",
+   "from": 1485,
+   "to": 1512,
+   "capital": "Cuttack",
+   "rulers": [
+    {
+     "name": "Kapilendra Deva",
+     "when": "1434–1467"
+    },
+    {
+     "name": "Purushottama Deva",
+     "when": "1467–1497"
+    },
+    {
+     "name": "Prataparudra Deva",
+     "when": "1497–1540"
+    }
+   ],
+   "note": "Purushottama recovered the coast to the Krishna as the Bahmani state broke up, and the Gajapatis held Udayagiri until Krishnadevaraya took it in 1513. Approximate.",
+   "coords": [
+    [
+     87.6,
+     21.4
+    ],
+    [
+     87.5,
+     21.9
+    ],
+    [
+     87.0,
+     22.25
+    ],
+    [
+     86.4,
+     22.4
+    ],
+    [
+     85.6,
+     22.3
+    ],
+    [
+     85.0,
+     22.0
+    ],
+    [
+     84.4,
+     21.9
+    ],
+    [
+     84.2,
+     21.3
+    ],
+    [
+     84.3,
+     20.6
+    ],
+    [
+     83.9,
+     20.2
+    ],
+    [
+     83.6,
+     19.6
+    ],
+    [
+     83.3,
+     19.1
+    ],
+    [
+     83.0,
+     18.6
+    ],
+    [
+     82.9,
+     18.2
+    ],
+    [
+     82.3,
+     17.9
+    ],
+    [
+     81.6,
+     17.6
+    ],
+    [
+     80.9,
+     17.45
+    ],
+    [
+     80.2,
+     17.05
+    ],
+    [
+     79.6,
+     16.75
+    ],
+    [
+     79.3,
+     16.2
+    ],
+    [
+     79.2,
+     15.2
+    ],
+    [
+     79.3,
+     14.6
+    ],
+    [
+     80.2,
+     14.55
+    ],
+    [
+     80.4,
+     15.3
+    ],
+    [
+     81.0,
+     15.6
+    ],
+    [
+     81.5,
+     15.75
+    ],
+    [
+     82.5,
+     16.6
+    ],
+    [
+     83.6,
+     17.4
+    ],
+    [
+     85.0,
+     18.6
+    ],
+    [
+     86.5,
+     19.6
+    ],
+    [
+     87.3,
+     20.5
+    ],
+    [
+     87.6,
+     21.4
+    ]
+   ]
+  },
+  {
+   "name": "Gajapati Empire",
+   "key": "Gajapati Empire",
+   "kind": "empire",
+   "from": 1513,
+   "to": 1540,
+   "capital": "Cuttack",
+   "rulers": [
+    {
+     "name": "Kapilendra Deva",
+     "when": "1434–1467"
+    },
+    {
+     "name": "Purushottama Deva",
+     "when": "1467–1497"
+    },
+    {
+     "name": "Prataparudra Deva",
+     "when": "1497–1540"
+    }
+   ],
+   "note": "After Krishnadevaraya's campaigns (Udayagiri 1513, Kondavidu 1515) the 1519 peace left the Gajapatis the land north of the Krishna; Golconda soon pressed on the Godavari districts. Drawn to the Godavari delta. Joppen's 1525 map instead gives the whole coast to Golconda; the mainstream account is followed here.",
+   "coords": [
+    [
+     87.6,
+     21.4
+    ],
+    [
+     87.5,
+     21.9
+    ],
+    [
+     87.0,
+     22.25
+    ],
+    [
+     86.4,
+     22.4
+    ],
+    [
+     85.6,
+     22.3
+    ],
+    [
+     85.0,
+     22.0
+    ],
+    [
+     84.4,
+     21.9
+    ],
+    [
+     84.2,
+     21.3
+    ],
+    [
+     84.3,
+     20.6
+    ],
+    [
+     83.9,
+     20.2
+    ],
+    [
+     83.6,
+     19.6
+    ],
+    [
+     83.3,
+     19.1
+    ],
+    [
+     83.0,
+     18.6
+    ],
+    [
+     82.9,
+     18.2
+    ],
+    [
+     82.6,
+     17.9
+    ],
+    [
+     82.0,
+     17.55
+    ],
+    [
+     81.95,
+     17.25
+    ],
+    [
+     82.3,
+     16.85
+    ],
+    [
+     82.6,
+     16.9
+    ],
+    [
+     83.6,
+     17.4
+    ],
+    [
+     85.0,
+     18.6
+    ],
+    [
+     86.5,
+     19.6
+    ],
+    [
+     87.3,
+     20.5
+    ],
+    [
+     87.6,
+     21.4
+    ]
+   ]
+  },
+  {
+   "name": "Odisha under the Bhoi dynasty",
+   "key": "Gajapati Empire",
+   "kind": "kingdom",
+   "from": 1541,
+   "to": 1550,
+   "capital": "Cuttack",
+   "rulers": [
+    {
+     "name": "Govinda Vidyadhara",
+     "when": "1541–1548"
+    },
+    {
+     "name": "Chakrapratapa",
+     "when": "1548–1557"
+    }
+   ],
+   "note": "Govinda Vidyadhara usurped the Gajapati throne in 1541; the kingdom kept its core in Odisha (Wikipedia 'Bhoi dynasty'). Same colour as the Gajapatis because it is the same state under a new house. Southern limit approximate.",
+   "coords": [
+    [
+     87.6,
+     21.4
+    ],
+    [
+     87.5,
+     21.9
+    ],
+    [
+     87.0,
+     22.25
+    ],
+    [
+     86.4,
+     22.4
+    ],
+    [
+     85.6,
+     22.3
+    ],
+    [
+     85.0,
+     22.0
+    ],
+    [
+     84.4,
+     21.9
+    ],
+    [
+     84.2,
+     21.3
+    ],
+    [
+     84.3,
+     20.6
+    ],
+    [
+     83.9,
+     20.2
+    ],
+    [
+     83.6,
+     19.6
+    ],
+    [
+     83.3,
+     19.1
+    ],
+    [
+     83.0,
+     18.6
+    ],
+    [
+     82.9,
+     18.2
+    ],
+    [
+     82.6,
+     17.9
+    ],
+    [
+     82.0,
+     17.55
+    ],
+    [
+     81.95,
+     17.25
+    ],
+    [
+     82.3,
+     16.85
+    ],
+    [
+     82.6,
+     16.9
+    ],
+    [
+     83.6,
+     17.4
+    ],
+    [
+     85.0,
+     18.6
+    ],
+    [
+     86.5,
+     19.6
+    ],
+    [
+     87.3,
+     20.5
+    ],
+    [
+     87.6,
+     21.4
+    ]
+   ]
+  },
+  {
+   "name": "Somavamshi kingdom",
+   "key": "Somavamshi dynasty",
+   "kind": "kingdom",
+   "from": 1000,
+   "to": 1110,
+   "capital": "Yayatinagara; Abhinava-Yayatinagara (Jajpur)",
+   "rulers": [
+    {
+     "name": "Yayati II Chandihara",
+     "when": "c. 1025–1040"
+    },
+    {
+     "name": "Uddyotakesari",
+     "when": "c. 1040–1065"
+    },
+    {
+     "name": "Karnadeva",
+     "when": "c. 1100–1110, last"
+    }
+   ],
+   "note": "The Somavamshi (Keshari) kings held Utkala and western Odisha until the Eastern Ganga Anantavarman Chodaganga absorbed Utkala early in the 12th century (Wikipedia 'Somavamshi dynasty', 9th–12th c.). Their Kosala lands went to the Kalachuris; regnal dates are approximate.",
+   "coords": [
+    [
+     87.4,
+     21.6
+    ],
+    [
+     87.0,
+     22.2
+    ],
+    [
+     85.6,
+     22.3
+    ],
+    [
+     84.5,
+     22.0
+    ],
+    [
+     83.4,
+     21.9
+    ],
+    [
+     83.3,
+     21.2
+    ],
+    [
+     83.3,
+     20.4
+    ],
+    [
+     83.6,
+     19.9
+    ],
+    [
+     84.6,
+     19.9
+    ],
+    [
+     85.2,
+     19.6
+    ],
+    [
+     85.6,
+     19.55
+    ],
+    [
+     86.2,
+     19.7
+    ],
+    [
+     87.0,
+     20.4
+    ],
+    [
+     87.5,
+     21.2
+    ],
+    [
+     87.4,
+     21.6
+    ]
+   ]
+  },
+  {
+   "name": "Kalachuris of Tripuri (Chedi)",
+   "key": "Kalachuris of Tripuri",
+   "kind": "kingdom",
+   "from": 1000,
+   "to": 1211,
+   "capital": "Tripuri (Tewar, near Jabalpur)",
+   "rulers": [
+    {
+     "name": "Gangeyadeva",
+     "when": "c. 1015–1041"
+    },
+    {
+     "name": "Lakshmikarna",
+     "when": "1041–1073"
+    },
+    {
+     "name": "Yashahkarna",
+     "when": "1073–1123"
+    },
+    {
+     "name": "Trailokyamalla",
+     "when": "1210–1212, last"
+    }
+   ],
+   "note": "Core of the Chedi (Dahala-mandala) kingdom on the upper Narmada and Son. Under Lakshmikarna its hegemony briefly reached far beyond; the core is drawn. Joppen p. 14 equates the old kingdom of Chedi with the region south of Bundelkhand; Wikipedia 'Kalachuris of Tripuri'.",
+   "coords": [
+    [
+     79.0,
+     23.4
+    ],
+    [
+     79.2,
+     24.1
+    ],
+    [
+     79.9,
+     24.4
+    ],
+    [
+     80.8,
+     24.5
+    ],
+    [
+     81.6,
+     24.2
+    ],
+    [
+     82.0,
+     23.6
+    ],
+    [
+     81.6,
+     23.0
+    ],
+    [
+     81.0,
+     22.5
+    ],
+    [
+     80.2,
+     22.4
+    ],
+    [
+     79.5,
+     22.7
+    ],
+    [
+     79.0,
+     23.4
+    ]
+   ]
+  },
+  {
+   "name": "Kalachuris of Ratnapura",
+   "key": "Kalachuris of Ratnapura",
+   "kind": "kingdom",
+   "from": 1090,
+   "to": 1225,
+   "capital": "Ratnapura (Ratanpur)",
+   "rulers": [
+    {
+     "name": "Jajalladeva I",
+     "when": "c. 1090–1120"
+    },
+    {
+     "name": "Ratnadeva II",
+     "when": "c. 1120–1135"
+    },
+    {
+     "name": "Prithvideva II",
+     "when": "c. 1135–1165"
+    },
+    {
+     "name": "Pratapamalla",
+     "when": "early 13th c."
+    }
+   ],
+   "note": "Offshoot of the Tripuri Kalachuris in Dakshina Kosala (Chhattisgarh plains), independent from the end of the 11th century (Wikipedia 'Kalachuris of Ratnapura'). Extent = upper Mahanadi plains; approximate.",
+   "coords": [
+    [
+     81.2,
+     22.2
+    ],
+    [
+     81.6,
+     22.9
+    ],
+    [
+     82.4,
+     23.0
+    ],
+    [
+     83.2,
+     22.6
+    ],
+    [
+     83.2,
+     21.9
+    ],
+    [
+     82.8,
+     21.0
+    ],
+    [
+     82.2,
+     20.7
+    ],
+    [
+     81.6,
+     20.8
+    ],
+    [
+     81.1,
+     21.3
+    ],
+    [
+     81.2,
+     22.2
+    ]
+   ]
+  },
+  {
+   "name": "Haihayas of Ratanpur",
+   "key": "Kalachuris of Ratnapura",
+   "kind": "kingdom",
+   "from": 1226,
+   "to": 1550,
+   "capital": "Ratanpur; Raipur branch",
+   "rulers": [
+    {
+     "name": "Pratapamalla",
+     "when": "early 13th c., last confirmed of the early line"
+    }
+   ],
+   "note": "After Pratapamalla the record is thin; a Haihaya dynasty of Ratanpur (with a Raipur branch from about the 14th century) ruled the Chhattisgarh plains until the Marathas (1740s; Wikipedia 'Kalachuris of Ratnapura' gives 1758). Joppen's 1525 map labels the area Chattisgarh within Gondwana. Shown with the same colour; continuity of the line is uncertain.",
+   "coords": [
+    [
+     81.2,
+     22.2
+    ],
+    [
+     81.6,
+     22.9
+    ],
+    [
+     82.4,
+     23.0
+    ],
+    [
+     83.2,
+     22.6
+    ],
+    [
+     83.2,
+     21.9
+    ],
+    [
+     82.8,
+     21.0
+    ],
+    [
+     82.2,
+     20.7
+    ],
+    [
+     81.6,
+     20.8
+    ],
+    [
+     81.1,
+     21.3
+    ],
+    [
+     81.2,
+     22.2
+    ]
+   ]
+  },
+  {
+   "name": "Garha kingdom (Garha-Mandla)",
+   "key": "Garha kingdom",
+   "kind": "kingdom",
+   "from": 1440,
+   "to": 1490,
+   "capital": "Garha (Jabalpur)",
+   "rulers": [
+    {
+     "name": "Yadavaraya (traditional founder)",
+     "when": "date legendary"
+    }
+   ],
+   "note": "Gond kingdom of the upper Narmada, founded in the 15th century (Wikipedia 'Garha kingdom', from 1440). Early extent (Garha-Mandla core) is a guess.",
+   "coords": [
+    [
+     79.4,
+     22.6
+    ],
+    [
+     79.5,
+     23.4
+    ],
+    [
+     80.1,
+     23.6
+    ],
+    [
+     80.8,
+     23.3
+    ],
+    [
+     81.0,
+     22.7
+    ],
+    [
+     80.7,
+     22.2
+    ],
+    [
+     80.0,
+     22.1
+    ],
+    [
+     79.4,
+     22.6
+    ]
+   ]
+  },
+  {
+   "name": "Garha kingdom (Garha-Mandla)",
+   "key": "Garha kingdom",
+   "kind": "kingdom",
+   "from": 1491,
+   "to": 1550,
+   "capital": "Garha; Singorgarh",
+   "rulers": [
+    {
+     "name": "Sangram Shah",
+     "when": "c. 1491–1543"
+    },
+    {
+     "name": "Dalpat Shah",
+     "when": "c. 1543–1550"
+    },
+    {
+     "name": "Rani Durgavati",
+     "when": "regent from c. 1550"
+    }
+   ],
+   "note": "Sangram Shah enlarged the kingdom to a traditional 52 forts; Joppen's 1525 map marks Jabalpur and Mandla within Gondwana. Extent approximate; dates of Sangram Shah vary between sources.",
+   "coords": [
+    [
+     79.0,
+     22.5
+    ],
+    [
+     79.4,
+     23.2
+    ],
+    [
+     79.6,
+     23.8
+    ],
+    [
+     80.0,
+     24.05
+    ],
+    [
+     80.6,
+     23.9
+    ],
+    [
+     81.3,
+     23.5
+    ],
+    [
+     81.15,
+     22.7
+    ],
+    [
+     80.9,
+     22.1
+    ],
+    [
+     80.2,
+     21.8
+    ],
+    [
+     79.4,
+     22.0
+    ],
+    [
+     79.0,
+     22.5
+    ]
+   ]
+  },
+  {
+   "name": "Khandesh Sultanate (Faruqi)",
+   "key": "Khandesh Sultanate",
+   "kind": "sultanate",
+   "from": 1382,
+   "to": 1550,
+   "capital": "Thalner, later Burhanpur",
+   "rulers": [
+    {
+     "name": "Malik Raja (Malik Ahmad)",
+     "when": "1382–1399"
+    },
+    {
+     "name": "Nasir Khan",
+     "when": "1399–1437"
+    },
+    {
+     "name": "Adil Khan II",
+     "when": "1457–1501"
+    },
+    {
+     "name": "Miran Muhammad Shah I",
+     "when": "1520–1537"
+    }
+   ],
+   "note": "Faruqi sultanate of the Tapti valley, often a vassal of Gujarat (Wikipedia 'Farooqui dynasty', 1382–1601; Joppen 1398 map: capital Thalner). Bounded by the Satpuras (Malwa), the Ajanta hills (Bahmani/Ahmadnagar), Berar on the east and Gujarat's Nandurbar district on the west. Continues to 1601 beyond this layer.",
+   "coords": [
+    [
+     74.3,
+     21.55
+    ],
+    [
+     74.5,
+     21.7
+    ],
+    [
+     75.5,
+     21.68
+    ],
+    [
+     76.2,
+     21.68
+    ],
+    [
+     76.8,
+     21.6
+    ],
+    [
+     76.95,
+     21.3
+    ],
+    [
+     76.8,
+     20.9
+    ],
+    [
+     76.3,
+     20.65
+    ],
+    [
+     75.5,
+     20.55
+    ],
+    [
+     74.8,
+     20.6
+    ],
+    [
+     74.4,
+     20.85
+    ],
+    [
+     74.25,
+     21.2
+    ],
+    [
+     74.3,
+     21.55
+    ]
+   ]
+  },
+  {
+   "name": "Tomaras of Gwalior",
+   "key": "Tomaras of Gwalior",
+   "kind": "kingdom",
+   "from": 1394,
+   "to": 1518,
+   "capital": "Gwalior",
+   "rulers": [
+    {
+     "name": "Virasimhadeva",
+     "when": "c. 1394–1400"
+    },
+    {
+     "name": "Dungarendra Singh",
+     "when": "c. 1425–1459"
+    },
+    {
+     "name": "Man Singh Tomar",
+     "when": "1486–1516"
+    },
+    {
+     "name": "Vikramaditya",
+     "when": "1516–1518"
+    }
+   ],
+   "note": "Tughluq feudatories who took Gwalior in the 1390s and kept it against Delhi until Ibrahim Lodi's siege (Wikipedia 'Tomaras of Gwalior', c. 1390–c. 1518). Extent around Gwalior fort; approximate.",
+   "coords": [
+    [
+     77.5,
+     25.7
+    ],
+    [
+     77.6,
+     26.3
+    ],
+    [
+     78.2,
+     26.75
+    ],
+    [
+     78.9,
+     26.6
+    ],
+    [
+     79.1,
+     26.0
+    ],
+    [
+     78.7,
+     25.5
+    ],
+    [
+     78.0,
+     25.4
+    ],
+    [
+     77.5,
+     25.7
+    ]
+   ]
+  },
+  {
+   "name": "Malwa Sultanate",
+   "key": "Malwa Sultanate",
+   "kind": "sultanate",
+   "from": 1401,
+   "to": 1435,
+   "capital": "Dhar, then Mandu (from 1406)",
+   "rulers": [
+    {
+     "name": "Dilawar Khan",
+     "when": "1401–1406"
+    },
+    {
+     "name": "Hoshang Shah",
+     "when": "1406–1435"
+    },
+    {
+     "name": "Mahmud Khalji I",
+     "when": "1436–1469"
+    },
+    {
+     "name": "Mahmud Shah II",
+     "when": "1511–1531"
+    }
+   ],
+   "note": "Dilawar Khan, Tughluq governor, made Malwa independent in 1401; Hoshang Shah moved the capital to Mandu and took Gagron (1423). Wikipedia 'Malwa Sultanate'; extent checked against Joppen's 1398 and 1525 maps (Ujjain, Mandu, Chanderi; Narmada valley to the Satpuras).",
+   "coords": [
+    [
+     74.65,
+     23.0
+    ],
+    [
+     74.75,
+     23.6
+    ],
+    [
+     74.85,
+     24.05
+    ],
+    [
+     75.05,
+     24.2
+    ],
+    [
+     75.4,
+     24.5
+    ],
+    [
+     75.9,
+     24.75
+    ],
+    [
+     76.3,
+     24.85
+    ],
+    [
+     76.9,
+     24.7
+    ],
+    [
+     77.5,
+     24.9
+    ],
+    [
+     78.1,
+     24.9
+    ],
+    [
+     78.4,
+     24.6
+    ],
+    [
+     78.7,
+     24.0
+    ],
+    [
+     78.6,
+     23.4
+    ],
+    [
+     78.3,
+     22.9
+    ],
+    [
+     77.9,
+     22.6
+    ],
+    [
+     77.4,
+     22.4
+    ],
+    [
+     76.8,
+     22.0
+    ],
+    [
+     76.2,
+     21.75
+    ],
+    [
+     75.5,
+     21.75
+    ],
+    [
+     74.9,
+     21.9
+    ],
+    [
+     74.6,
+     22.3
+    ],
+    [
+     74.5,
+     22.7
+    ],
+    [
+     74.65,
+     23.0
+    ]
+   ]
+  },
+  {
+   "name": "Malwa Sultanate",
+   "key": "Malwa Sultanate",
+   "kind": "sultanate",
+   "from": 1436,
+   "to": 1518,
+   "capital": "Mandu (Shadiabad)",
+   "rulers": [
+    {
+     "name": "Dilawar Khan",
+     "when": "1401–1406"
+    },
+    {
+     "name": "Hoshang Shah",
+     "when": "1406–1435"
+    },
+    {
+     "name": "Mahmud Khalji I",
+     "when": "1436–1469"
+    },
+    {
+     "name": "Mahmud Shah II",
+     "when": "1511–1531"
+    }
+   ],
+   "note": "Peak under Mahmud Khalji I, who fought Gujarat, Mewar and the Bahmanis; eastern districts (Bhilsa, Raisen, Damoh) included as on Joppen's 1525 map. Raids and short occupations (Ajmer, Ranthambore) not shown.",
+   "coords": [
+    [
+     74.65,
+     23.0
+    ],
+    [
+     74.75,
+     23.6
+    ],
+    [
+     74.85,
+     24.05
+    ],
+    [
+     75.05,
+     24.2
+    ],
+    [
+     75.4,
+     24.5
+    ],
+    [
+     75.9,
+     24.75
+    ],
+    [
+     76.3,
+     24.85
+    ],
+    [
+     76.9,
+     24.7
+    ],
+    [
+     77.5,
+     24.9
+    ],
+    [
+     78.1,
+     24.9
+    ],
+    [
+     78.7,
+     24.6
+    ],
+    [
+     79.2,
+     24.2
+    ],
+    [
+     79.45,
+     23.8
+    ],
+    [
+     79.3,
+     23.3
+    ],
+    [
+     78.8,
+     23.0
+    ],
+    [
+     78.3,
+     22.9
+    ],
+    [
+     77.9,
+     22.6
+    ],
+    [
+     77.4,
+     22.4
+    ],
+    [
+     76.8,
+     22.0
+    ],
+    [
+     76.2,
+     21.75
+    ],
+    [
+     75.5,
+     21.75
+    ],
+    [
+     74.9,
+     21.9
+    ],
+    [
+     74.6,
+     22.3
+    ],
+    [
+     74.5,
+     22.7
+    ],
+    [
+     74.65,
+     23.0
+    ]
+   ]
+  },
+  {
+   "name": "Malwa Sultanate",
+   "key": "Malwa Sultanate",
+   "kind": "sultanate",
+   "from": 1519,
+   "to": 1530,
+   "capital": "Mandu",
+   "rulers": [
+    {
+     "name": "Dilawar Khan",
+     "when": "1401–1406"
+    },
+    {
+     "name": "Hoshang Shah",
+     "when": "1406–1435"
+    },
+    {
+     "name": "Mahmud Khalji I",
+     "when": "1436–1469"
+    },
+    {
+     "name": "Mahmud Shah II",
+     "when": "1511–1531"
+    }
+   ],
+   "note": "After Rana Sanga's victory at Gagron (1519) the north and east (Chanderi under Medini Rai, Raisen and Bhilsa under Silhadi) slipped from the sultan, who kept Mandu, Dhar and Ujjain (Wikipedia 'Malwa Sultanate'). Bahadur Shah of Gujarat annexed Malwa in 1531.",
+   "coords": [
+    [
+     74.65,
+     23.0
+    ],
+    [
+     74.75,
+     23.6
+    ],
+    [
+     75.1,
+     24.0
+    ],
+    [
+     75.7,
+     23.9
+    ],
+    [
+     76.2,
+     23.4
+    ],
+    [
+     76.3,
+     22.9
+    ],
+    [
+     76.6,
+     22.4
+    ],
+    [
+     77.0,
+     22.1
+    ],
+    [
+     76.8,
+     22.0
+    ],
+    [
+     76.2,
+     21.75
+    ],
+    [
+     75.5,
+     21.75
+    ],
+    [
+     74.9,
+     21.9
+    ],
+    [
+     74.6,
+     22.3
+    ],
+    [
+     74.5,
+     22.7
+    ],
+    [
+     74.65,
+     23.0
+    ]
+   ]
+  },
+  {
+   "name": "Paramara Dynasty",
+   "key": "Paramara Dynasty",
+   "kind": "kingdom",
+   "from": 1236,
+   "to": 1305,
+   "capital": "Dhara (Dhar), Mandu",
+   "rulers": [
+    {
+     "name": "Devapala",
+     "when": "c. 1218–1239"
+    },
+    {
+     "name": "Jaitugideva",
+     "when": "c. 1239–1255"
+    },
+    {
+     "name": "Jayavarman II",
+     "when": "c. 1255–1274"
+    },
+    {
+     "name": "Mahalakadeva",
+     "when": "1301–1305, last"
+    }
+   ],
+   "note": "Continues the Paramara realm after the border data stops (1235): the dynasty held western Malwa until Alauddin Khalji's conquest in 1305 (Wikipedia 'Paramara dynasty', 948–1305). Reduced extent after Iltutmish's raid on Ujjain (1234–35); approximate.",
+   "coords": [
+    [
+     74.9,
+     23.3
+    ],
+    [
+     75.1,
+     24.0
+    ],
+    [
+     75.6,
+     24.3
+    ],
+    [
+     76.2,
+     24.2
+    ],
+    [
+     76.8,
+     23.9
+    ],
+    [
+     77.5,
+     23.6
+    ],
+    [
+     77.7,
+     23.1
+    ],
+    [
+     77.4,
+     22.6
+    ],
+    [
+     76.6,
+     22.3
+    ],
+    [
+     75.9,
+     22.05
+    ],
+    [
+     75.2,
+     22.05
+    ],
+    [
+     74.7,
+     22.4
+    ],
+    [
+     74.6,
+     22.9
+    ],
+    [
+     74.9,
+     23.3
+    ]
+   ]
+  },
+  {
+   "name": "Gujarat Sultanate",
+   "key": "Gujarat Sultanate",
+   "kind": "sultanate",
+   "from": 1407,
+   "to": 1471,
+   "capital": "Anhilwad Patan; Ahmedabad from 1411",
+   "rulers": [
+    {
+     "name": "Muzaffar Shah I",
+     "when": "1407–1411"
+    },
+    {
+     "name": "Ahmad Shah I",
+     "when": "1411–1442"
+    },
+    {
+     "name": "Mahmud Begada",
+     "when": "1458–1511"
+    },
+    {
+     "name": "Bahadur Shah",
+     "when": "1526–1537"
+    }
+   ],
+   "note": "Zafar Khan (Muzaffar Shah I), Tughluq governor, was effectively independent from the 1390s and took the royal title in 1407 (Wikipedia 'Gujarat Sultanate'; Joppen p. 19). Mainland Gujarat with eastern Saurashtra and the north Konkan ports (Thana, Mahim, contested with the Bahmanis). Champaner, Idar, Junagadh and Kutch were outside or only tributary.",
+   "coords": [
+    [
+     71.25,
+     23.9
+    ],
+    [
+     71.8,
+     24.25
+    ],
+    [
+     72.3,
+     24.4
+    ],
+    [
+     72.75,
+     24.3
+    ],
+    [
+     73.0,
+     24.0
+    ],
+    [
+     72.95,
+     23.7
+    ],
+    [
+     73.3,
+     23.35
+    ],
+    [
+     73.6,
+     23.2
+    ],
+    [
+     73.25,
+     22.85
+    ],
+    [
+     73.2,
+     22.45
+    ],
+    [
+     73.45,
+     22.15
+    ],
+    [
+     73.9,
+     22.05
+    ],
+    [
+     74.2,
+     21.9
+    ],
+    [
+     74.2,
+     21.6
+    ],
+    [
+     74.0,
+     21.2
+    ],
+    [
+     73.8,
+     20.9
+    ],
+    [
+     73.4,
+     20.6
+    ],
+    [
+     73.35,
+     20.0
+    ],
+    [
+     73.2,
+     19.5
+    ],
+    [
+     73.0,
+     19.15
+    ],
+    [
+     72.85,
+     19.1
+    ],
+    [
+     72.5,
+     19.1
+    ],
+    [
+     72.4,
+     20.5
+    ],
+    [
+     72.4,
+     21.3
+    ],
+    [
+     71.9,
+     20.9
+    ],
+    [
+     71.5,
+     20.8
+    ],
+    [
+     71.35,
+     21.2
+    ],
+    [
+     71.3,
+     21.8
+    ],
+    [
+     71.2,
+     22.3
+    ],
+    [
+     70.95,
+     22.75
+    ],
+    [
+     71.1,
+     23.15
+    ],
+    [
+     71.25,
+     23.9
+    ]
+   ]
+  },
+  {
+   "name": "Gujarat Sultanate",
+   "key": "Gujarat Sultanate",
+   "kind": "sultanate",
+   "from": 1472,
+   "to": 1483,
+   "capital": "Ahmedabad",
+   "rulers": [
+    {
+     "name": "Muzaffar Shah I",
+     "when": "1407–1411"
+    },
+    {
+     "name": "Ahmad Shah I",
+     "when": "1411–1442"
+    },
+    {
+     "name": "Mahmud Begada",
+     "when": "1458–1511"
+    },
+    {
+     "name": "Bahadur Shah",
+     "when": "1526–1537"
+    }
+   ],
+   "note": "Mahmud Begada annexed Junagadh (1472) and Dwarka (1473), bringing all Saurashtra under the sultanate. Kutch stayed under its Jadeja chiefs; Champaner held out until 1484. Wikipedia 'Gujarat Sultanate'.",
+   "coords": [
+    [
+     71.25,
+     23.9
+    ],
+    [
+     71.8,
+     24.25
+    ],
+    [
+     72.3,
+     24.4
+    ],
+    [
+     72.75,
+     24.3
+    ],
+    [
+     73.0,
+     24.0
+    ],
+    [
+     72.95,
+     23.7
+    ],
+    [
+     73.3,
+     23.35
+    ],
+    [
+     73.6,
+     23.2
+    ],
+    [
+     73.25,
+     22.85
+    ],
+    [
+     73.2,
+     22.45
+    ],
+    [
+     73.45,
+     22.15
+    ],
+    [
+     73.9,
+     22.05
+    ],
+    [
+     74.2,
+     21.9
+    ],
+    [
+     74.2,
+     21.6
+    ],
+    [
+     74.0,
+     21.2
+    ],
+    [
+     73.8,
+     20.9
+    ],
+    [
+     73.4,
+     20.6
+    ],
+    [
+     73.35,
+     20.0
+    ],
+    [
+     73.2,
+     19.5
+    ],
+    [
+     73.0,
+     19.15
+    ],
+    [
+     72.85,
+     19.1
+    ],
+    [
+     72.5,
+     19.1
+    ],
+    [
+     72.4,
+     20.5
+    ],
+    [
+     72.3,
+     21.0
+    ],
+    [
+     71.5,
+     20.6
+    ],
+    [
+     70.6,
+     20.6
+    ],
+    [
+     69.8,
+     21.1
+    ],
+    [
+     69.2,
+     21.8
+    ],
+    [
+     68.9,
+     22.3
+    ],
+    [
+     69.1,
+     22.58
+    ],
+    [
+     69.6,
+     22.6
+    ],
+    [
+     70.0,
+     22.62
+    ],
+    [
+     70.4,
+     22.85
+    ],
+    [
+     70.75,
+     22.95
+    ],
+    [
+     71.1,
+     23.15
+    ],
+    [
+     71.25,
+     23.9
+    ]
+   ]
+  },
+  {
+   "name": "Gujarat Sultanate",
+   "key": "Gujarat Sultanate",
+   "kind": "sultanate",
+   "from": 1484,
+   "to": 1530,
+   "capital": "Champaner (Muhammadabad)",
+   "rulers": [
+    {
+     "name": "Muzaffar Shah I",
+     "when": "1407–1411"
+    },
+    {
+     "name": "Ahmad Shah I",
+     "when": "1411–1442"
+    },
+    {
+     "name": "Mahmud Begada",
+     "when": "1458–1511"
+    },
+    {
+     "name": "Bahadur Shah",
+     "when": "1526–1537"
+    }
+   ],
+   "note": "Mahmud Begada took Champaner (1484) and made it his capital; the sultanate now held all mainland Gujarat and Saurashtra, as on Joppen's 1525 map.",
+   "coords": [
+    [
+     71.25,
+     23.9
+    ],
+    [
+     71.8,
+     24.25
+    ],
+    [
+     72.3,
+     24.4
+    ],
+    [
+     72.75,
+     24.3
+    ],
+    [
+     73.0,
+     24.0
+    ],
+    [
+     72.95,
+     23.7
+    ],
+    [
+     73.3,
+     23.35
+    ],
+    [
+     73.6,
+     23.2
+    ],
+    [
+     73.9,
+     23.15
+    ],
+    [
+     74.25,
+     22.95
+    ],
+    [
+     74.3,
+     22.6
+    ],
+    [
+     74.15,
+     22.2
+    ],
+    [
+     74.2,
+     21.9
+    ],
+    [
+     74.2,
+     21.6
+    ],
+    [
+     74.0,
+     21.2
+    ],
+    [
+     73.8,
+     20.9
+    ],
+    [
+     73.4,
+     20.6
+    ],
+    [
+     73.35,
+     20.0
+    ],
+    [
+     73.2,
+     19.5
+    ],
+    [
+     73.0,
+     19.15
+    ],
+    [
+     72.85,
+     19.1
+    ],
+    [
+     72.5,
+     19.1
+    ],
+    [
+     72.4,
+     20.5
+    ],
+    [
+     72.3,
+     21.0
+    ],
+    [
+     71.5,
+     20.6
+    ],
+    [
+     70.6,
+     20.6
+    ],
+    [
+     69.8,
+     21.1
+    ],
+    [
+     69.2,
+     21.8
+    ],
+    [
+     68.9,
+     22.3
+    ],
+    [
+     69.1,
+     22.58
+    ],
+    [
+     69.6,
+     22.6
+    ],
+    [
+     70.0,
+     22.62
+    ],
+    [
+     70.4,
+     22.85
+    ],
+    [
+     70.75,
+     22.95
+    ],
+    [
+     71.1,
+     23.15
+    ],
+    [
+     71.25,
+     23.9
+    ]
+   ]
+  },
+  {
+   "name": "Gujarat Sultanate (with Malwa)",
+   "key": "Gujarat Sultanate",
+   "kind": "sultanate",
+   "from": 1531,
+   "to": 1535,
+   "capital": "Champaner",
+   "rulers": [
+    {
+     "name": "Muzaffar Shah I",
+     "when": "1407–1411"
+    },
+    {
+     "name": "Ahmad Shah I",
+     "when": "1411–1442"
+    },
+    {
+     "name": "Mahmud Begada",
+     "when": "1458–1511"
+    },
+    {
+     "name": "Bahadur Shah",
+     "when": "1526–1537"
+    }
+   ],
+   "note": "Bahadur Shah annexed Malwa (1531) and Raisen (1532) and sacked Chittor (1535) before Humayun overran Gujarat (1535–36). Bassein went to the Portuguese in 1534. The hill country between Gujarat and Malwa (Jhabua, Alirajpur) is bridged over.",
+   "coords": [
+    [
+     71.25,
+     23.9
+    ],
+    [
+     71.8,
+     24.25
+    ],
+    [
+     72.3,
+     24.4
+    ],
+    [
+     72.75,
+     24.3
+    ],
+    [
+     73.0,
+     24.0
+    ],
+    [
+     72.95,
+     23.7
+    ],
+    [
+     73.3,
+     23.35
+    ],
+    [
+     73.6,
+     23.2
+    ],
+    [
+     73.9,
+     23.15
+    ],
+    [
+     74.3,
+     23.2
+    ],
+    [
+     74.75,
+     23.6
+    ],
+    [
+     74.85,
+     24.05
+    ],
+    [
+     75.05,
+     24.2
+    ],
+    [
+     75.4,
+     24.5
+    ],
+    [
+     75.9,
+     24.75
+    ],
+    [
+     76.3,
+     24.85
+    ],
+    [
+     76.9,
+     24.7
+    ],
+    [
+     77.5,
+     24.9
+    ],
+    [
+     78.1,
+     24.9
+    ],
+    [
+     78.7,
+     24.6
+    ],
+    [
+     79.2,
+     24.2
+    ],
+    [
+     79.45,
+     23.8
+    ],
+    [
+     79.3,
+     23.3
+    ],
+    [
+     78.8,
+     23.0
+    ],
+    [
+     78.3,
+     22.9
+    ],
+    [
+     77.9,
+     22.6
+    ],
+    [
+     77.4,
+     22.4
+    ],
+    [
+     76.8,
+     22.0
+    ],
+    [
+     76.2,
+     21.75
+    ],
+    [
+     75.5,
+     21.75
+    ],
+    [
+     74.9,
+     21.9
+    ],
+    [
+     74.5,
+     21.85
+    ],
+    [
+     74.2,
+     21.6
+    ],
+    [
+     74.0,
+     21.2
+    ],
+    [
+     73.8,
+     20.9
+    ],
+    [
+     73.4,
+     20.6
+    ],
+    [
+     73.35,
+     20.0
+    ],
+    [
+     73.2,
+     19.5
+    ],
+    [
+     73.0,
+     19.15
+    ],
+    [
+     72.85,
+     19.1
+    ],
+    [
+     72.5,
+     19.1
+    ],
+    [
+     72.4,
+     20.5
+    ],
+    [
+     72.3,
+     21.0
+    ],
+    [
+     71.5,
+     20.6
+    ],
+    [
+     70.6,
+     20.6
+    ],
+    [
+     69.8,
+     21.1
+    ],
+    [
+     69.2,
+     21.8
+    ],
+    [
+     68.9,
+     22.3
+    ],
+    [
+     69.1,
+     22.58
+    ],
+    [
+     69.6,
+     22.6
+    ],
+    [
+     70.0,
+     22.62
+    ],
+    [
+     70.4,
+     22.85
+    ],
+    [
+     70.75,
+     22.95
+    ],
+    [
+     71.1,
+     23.15
+    ],
+    [
+     71.25,
+     23.9
+    ]
+   ]
+  },
+  {
+   "name": "Gujarat Sultanate",
+   "key": "Gujarat Sultanate",
+   "kind": "sultanate",
+   "from": 1536,
+   "to": 1550,
+   "capital": "Ahmedabad",
+   "rulers": [
+    {
+     "name": "Muzaffar Shah I",
+     "when": "1407–1411"
+    },
+    {
+     "name": "Ahmad Shah I",
+     "when": "1411–1442"
+    },
+    {
+     "name": "Mahmud Begada",
+     "when": "1458–1511"
+    },
+    {
+     "name": "Bahadur Shah",
+     "when": "1526–1537"
+    }
+   ],
+   "note": "Restored after Humayun's withdrawal (1536); Malwa was lost to Mallu Khan (1537), the north Konkan and Diu fort to the Portuguese. The sultanate lasted until Akbar's conquest (1573).",
+   "coords": [
+    [
+     71.25,
+     23.9
+    ],
+    [
+     71.8,
+     24.25
+    ],
+    [
+     72.3,
+     24.4
+    ],
+    [
+     72.75,
+     24.3
+    ],
+    [
+     73.0,
+     24.0
+    ],
+    [
+     72.95,
+     23.7
+    ],
+    [
+     73.3,
+     23.35
+    ],
+    [
+     73.6,
+     23.2
+    ],
+    [
+     73.9,
+     23.15
+    ],
+    [
+     74.25,
+     22.95
+    ],
+    [
+     74.3,
+     22.6
+    ],
+    [
+     74.15,
+     22.2
+    ],
+    [
+     74.2,
+     21.9
+    ],
+    [
+     74.2,
+     21.6
+    ],
+    [
+     74.0,
+     21.2
+    ],
+    [
+     73.8,
+     20.9
+    ],
+    [
+     73.4,
+     20.6
+    ],
+    [
+     73.1,
+     20.3
+    ],
+    [
+     72.85,
+     20.25
+    ],
+    [
+     72.5,
+     20.3
+    ],
+    [
+     72.3,
+     21.0
+    ],
+    [
+     71.5,
+     20.6
+    ],
+    [
+     70.6,
+     20.6
+    ],
+    [
+     69.8,
+     21.1
+    ],
+    [
+     69.2,
+     21.8
+    ],
+    [
+     68.9,
+     22.3
+    ],
+    [
+     69.1,
+     22.58
+    ],
+    [
+     69.6,
+     22.6
+    ],
+    [
+     70.0,
+     22.62
+    ],
+    [
+     70.4,
+     22.85
+    ],
+    [
+     70.75,
+     22.95
+    ],
+    [
+     71.1,
+     23.15
+    ],
+    [
+     71.25,
+     23.9
+    ]
+   ]
+  },
+  {
+   "name": "Vaghela dynasty (Gujarat)",
+   "key": "Vaghela dynasty",
+   "kind": "kingdom",
+   "from": 1244,
+   "to": 1304,
+   "capital": "Dhavalakka (Dholka); Anhilwad",
+   "rulers": [
+    {
+     "name": "Visaladeva",
+     "when": "1244–1262"
+    },
+    {
+     "name": "Arjunadeva",
+     "when": "1262–1275"
+    },
+    {
+     "name": "Sarangadeva",
+     "when": "1275–1296"
+    },
+    {
+     "name": "Karna II",
+     "when": "1296–1304"
+    }
+   ],
+   "note": "Former Chaulukya generals who took the throne in the mid-1240s and ruled Gujarat until Alauddin Khalji's conquest (1299–1304; Wikipedia 'Vaghela dynasty'). Mainland Gujarat with eastern Saurashtra; the Chudasamas and Kutch chiefs stayed separate.",
+   "coords": [
+    [
+     71.25,
+     23.9
+    ],
+    [
+     71.8,
+     24.25
+    ],
+    [
+     72.3,
+     24.45
+    ],
+    [
+     72.75,
+     24.3
+    ],
+    [
+     73.1,
+     24.0
+    ],
+    [
+     73.3,
+     23.4
+    ],
+    [
+     73.6,
+     23.2
+    ],
+    [
+     73.9,
+     22.9
+    ],
+    [
+     74.1,
+     22.6
+    ],
+    [
+     73.9,
+     22.1
+    ],
+    [
+     73.6,
+     21.7
+    ],
+    [
+     73.4,
+     21.1
+    ],
+    [
+     73.1,
+     20.6
+    ],
+    [
+     72.9,
+     20.4
+    ],
+    [
+     72.5,
+     20.4
+    ],
+    [
+     72.4,
+     21.3
+    ],
+    [
+     71.9,
+     20.9
+    ],
+    [
+     71.5,
+     20.8
+    ],
+    [
+     71.35,
+     21.2
+    ],
+    [
+     71.3,
+     21.8
+    ],
+    [
+     71.2,
+     22.3
+    ],
+    [
+     70.95,
+     22.75
+    ],
+    [
+     71.1,
+     23.15
+    ],
+    [
+     71.25,
+     23.9
+    ]
+   ]
+  },
+  {
+   "name": "Chudasama kingdom (Sorath)",
+   "key": "Chudasama dynasty",
+   "kind": "kingdom",
+   "from": 1000,
+   "to": 1471,
+   "capital": "Vamanasthali (Vanthali); Junagadh",
+   "rulers": [
+    {
+     "name": "Navaghana",
+     "when": "late 11th c."
+    },
+    {
+     "name": "Khengara",
+     "when": "early 12th c."
+    },
+    {
+     "name": "Mandalika III",
+     "when": "1451–1472, last"
+    }
+   ],
+   "note": "Rulers of Sorath (south-western Saurashtra) with the fortress of Uparkot and Mount Girnar; often tributary to the Chaulukyas and later to Gujarat, conquered by Mahmud Begada in 1472 (Wikipedia 'Chudasama dynasty'). Joppen marks western Kathiawar independent in 1318 and 1398. Extent (Sorath only) approximate; early chronology is mostly bardic.",
+   "coords": [
+    [
+     69.95,
+     21.6
+    ],
+    [
+     70.4,
+     21.85
+    ],
+    [
+     70.9,
+     21.75
+    ],
+    [
+     71.25,
+     21.5
+    ],
+    [
+     71.3,
+     21.15
+    ],
+    [
+     71.2,
+     20.85
+    ],
+    [
+     70.9,
+     20.6
+    ],
+    [
+     70.3,
+     20.8
+    ],
+    [
+     69.85,
+     21.15
+    ],
+    [
+     69.95,
+     21.6
+    ]
+   ]
+  },
+  {
+   "name": "Champaner (Khichi Chauhans)",
+   "key": "Champaner kingdom",
+   "kind": "kingdom",
+   "from": 1305,
+   "to": 1483,
+   "capital": "Champaner (Pavagadh)",
+   "rulers": [
+    {
+     "name": "Jayasimha (Patai Rawal)",
+     "when": "last, defeated 1484"
+    }
+   ],
+   "note": "Khichi Chauhan chiefs held the hill fort of Pavagadh and Champaner from about 1300 until Mahmud Begada's 20-month siege (1484), after which Champaner became Gujarat's capital (Wikipedia 'Champaner'; 'Gujarat Sultanate'). Small territory; start date approximate.",
+   "coords": [
+    [
+     73.35,
+     22.85
+    ],
+    [
+     73.65,
+     23.1
+    ],
+    [
+     74.05,
+     22.95
+    ],
+    [
+     74.15,
+     22.55
+    ],
+    [
+     73.95,
+     22.15
+    ],
+    [
+     73.5,
+     22.22
+    ],
+    [
+     73.3,
+     22.45
+    ],
+    [
+     73.35,
+     22.85
+    ]
+   ]
+  },
+  {
+   "name": "Kutch (Samma-Jadeja chiefs)",
+   "key": "Kingdom of Kutch",
+   "kind": "kingdom",
+   "from": 1147,
+   "to": 1550,
+   "capital": "Lakhiarviro; Bhuj from 1549",
+   "rulers": [
+    {
+     "name": "Jam Rawal",
+     "when": "fl. 1530s (founded Nawanagar 1540)"
+    },
+    {
+     "name": "Khengarji I",
+     "when": "1548–1585"
+    }
+   ],
+   "note": "Kutch was held by Samma (later Jadeja) chiefs from the 12th century (Wikipedia 'Cutch State', from 1147, capital Lakhiarviro until 1548). Joppen shows Kutch independent in 1318 and 1398. It was divided among branches until Khengarji I united it; its Rann and Wagad edges are approximate.",
+   "coords": [
+    [
+     68.3,
+     23.4
+    ],
+    [
+     68.4,
+     23.8
+    ],
+    [
+     69.0,
+     24.05
+    ],
+    [
+     70.0,
+     24.18
+    ],
+    [
+     70.9,
+     24.0
+    ],
+    [
+     71.0,
+     23.6
+    ],
+    [
+     70.75,
+     23.2
+    ],
+    [
+     70.35,
+     22.98
+    ],
+    [
+     70.0,
+     22.7
+    ],
+    [
+     69.4,
+     22.65
+    ],
+    [
+     68.9,
+     22.7
+    ],
+    [
+     68.6,
+     22.95
+    ],
+    [
+     68.3,
+     23.4
+    ]
+   ]
+  },
+  {
+   "name": "Kingdom of Mewar (Guhilas)",
+   "key": "Kingdom of Mewar",
+   "kind": "kingdom",
+   "from": 1000,
+   "to": 1302,
+   "capital": "Nagda and Aghata (Ahar); Chittor in the 13th c.",
+   "rulers": [
+    {
+     "name": "Jaitrasimha",
+     "when": "c. 1213–1252"
+    },
+    {
+     "name": "Ratnasimha",
+     "when": "d. 1303"
+    }
+   ],
+   "note": "The Guhilas of Medapata, sovereign from the 10th century and fighting Paramaras, Chaulukyas and Chahamanas (Wikipedia 'Guhila dynasty'). Chittor fell to Alauddin Khalji in 1303. Core Mewar between the Aravallis and the Banas; approximate.",
+   "coords": [
+    [
+     73.4,
+     24.4
+    ],
+    [
+     73.5,
+     25.0
+    ],
+    [
+     73.75,
+     25.4
+    ],
+    [
+     74.3,
+     25.5
+    ],
+    [
+     74.8,
+     25.2
+    ],
+    [
+     74.9,
+     24.7
+    ],
+    [
+     74.6,
+     24.2
+    ],
+    [
+     74.0,
+     24.1
+    ],
+    [
+     73.6,
+     24.2
+    ],
+    [
+     73.4,
+     24.4
+    ]
+   ]
+  },
+  {
+   "name": "Kingdom of Mewar (Sisodias)",
+   "key": "Kingdom of Mewar",
+   "kind": "kingdom",
+   "from": 1326,
+   "to": 1432,
+   "capital": "Chittor",
+   "rulers": [
+    {
+     "name": "Hammir Singh",
+     "when": "1326–1364"
+    },
+    {
+     "name": "Rana Kumbha",
+     "when": "1433–1468"
+    },
+    {
+     "name": "Rana Sanga",
+     "when": "1508–1528"
+    },
+    {
+     "name": "Udai Singh II",
+     "when": "1537–1572"
+    }
+   ],
+   "note": "Hammir Singh of the Sisodia branch recovered Chittor (1326) and refounded the kingdom (Wikipedia 'Kingdom of Mewar'). Approximate.",
+   "coords": [
+    [
+     73.35,
+     24.4
+    ],
+    [
+     73.45,
+     25.0
+    ],
+    [
+     73.75,
+     25.5
+    ],
+    [
+     74.3,
+     25.7
+    ],
+    [
+     74.9,
+     25.55
+    ],
+    [
+     75.3,
+     25.2
+    ],
+    [
+     75.25,
+     24.7
+    ],
+    [
+     74.8,
+     24.2
+    ],
+    [
+     74.2,
+     24.05
+    ],
+    [
+     73.7,
+     24.1
+    ],
+    [
+     73.35,
+     24.4
+    ]
+   ]
+  },
+  {
+   "name": "Kingdom of Mewar",
+   "key": "Kingdom of Mewar",
+   "kind": "kingdom",
+   "from": 1433,
+   "to": 1508,
+   "capital": "Chittor; Kumbhalgarh",
+   "rulers": [
+    {
+     "name": "Hammir Singh",
+     "when": "1326–1364"
+    },
+    {
+     "name": "Rana Kumbha",
+     "when": "1433–1468"
+    },
+    {
+     "name": "Rana Sanga",
+     "when": "1508–1528"
+    },
+    {
+     "name": "Udai Singh II",
+     "when": "1537–1572"
+    }
+   ],
+   "note": "Rana Kumbha built Kumbhalgarh, took Mandalgarh and fought Malwa and Gujarat; Marwar was under Mewar control 1438–1453. Approximate.",
+   "coords": [
+    [
+     73.3,
+     24.4
+    ],
+    [
+     73.4,
+     25.0
+    ],
+    [
+     73.7,
+     25.6
+    ],
+    [
+     74.2,
+     25.95
+    ],
+    [
+     75.0,
+     25.9
+    ],
+    [
+     75.5,
+     25.5
+    ],
+    [
+     75.7,
+     25.0
+    ],
+    [
+     75.45,
+     24.65
+    ],
+    [
+     75.1,
+     24.35
+    ],
+    [
+     74.85,
+     24.15
+    ],
+    [
+     74.5,
+     24.0
+    ],
+    [
+     74.2,
+     23.95
+    ],
+    [
+     73.7,
+     24.05
+    ],
+    [
+     73.3,
+     24.4
+    ]
+   ]
+  },
+  {
+   "name": "Kingdom of Mewar (Rana Sanga)",
+   "key": "Kingdom of Mewar",
+   "kind": "kingdom",
+   "from": 1509,
+   "to": 1527,
+   "capital": "Chittor",
+   "rulers": [
+    {
+     "name": "Hammir Singh",
+     "when": "1326–1364"
+    },
+    {
+     "name": "Rana Kumbha",
+     "when": "1433–1468"
+    },
+    {
+     "name": "Rana Sanga",
+     "when": "1508–1528"
+    },
+    {
+     "name": "Udai Singh II",
+     "when": "1537–1572"
+    }
+   ],
+   "note": "Rana Sanga's hegemony: Ranthambore and the Hadoti country, victory over Malwa at Gagron (1519) with Chanderi and Raisen held by his vassals (not drawn). Ended by Babur's victory at Khanwa (1527). Extent approximate.",
+   "coords": [
+    [
+     73.3,
+     24.4
+    ],
+    [
+     73.4,
+     25.0
+    ],
+    [
+     73.7,
+     25.6
+    ],
+    [
+     74.2,
+     26.0
+    ],
+    [
+     75.0,
+     26.1
+    ],
+    [
+     75.8,
+     26.3
+    ],
+    [
+     76.6,
+     26.3
+    ],
+    [
+     76.95,
+     25.9
+    ],
+    [
+     76.8,
+     25.3
+    ],
+    [
+     76.5,
+     25.0
+    ],
+    [
+     76.3,
+     24.95
+    ],
+    [
+     75.9,
+     24.85
+    ],
+    [
+     75.45,
+     24.65
+    ],
+    [
+     75.1,
+     24.35
+    ],
+    [
+     74.85,
+     24.15
+    ],
+    [
+     74.5,
+     24.0
+    ],
+    [
+     74.2,
+     23.95
+    ],
+    [
+     73.7,
+     24.05
+    ],
+    [
+     73.3,
+     24.4
+    ]
+   ]
+  },
+  {
+   "name": "Kingdom of Mewar",
+   "key": "Kingdom of Mewar",
+   "kind": "kingdom",
+   "from": 1528,
+   "to": 1550,
+   "capital": "Chittor",
+   "rulers": [
+    {
+     "name": "Hammir Singh",
+     "when": "1326–1364"
+    },
+    {
+     "name": "Rana Kumbha",
+     "when": "1433–1468"
+    },
+    {
+     "name": "Rana Sanga",
+     "when": "1508–1528"
+    },
+    {
+     "name": "Udai Singh II",
+     "when": "1537–1572"
+    }
+   ],
+   "note": "After Khanwa Mewar fell back to its core; Bahadur Shah of Gujarat sacked Chittor in 1535 and Sher Shah received its submission in 1544. Approximate.",
+   "coords": [
+    [
+     73.3,
+     24.4
+    ],
+    [
+     73.4,
+     25.0
+    ],
+    [
+     73.7,
+     25.6
+    ],
+    [
+     74.2,
+     25.95
+    ],
+    [
+     75.0,
+     25.9
+    ],
+    [
+     75.5,
+     25.5
+    ],
+    [
+     75.7,
+     25.0
+    ],
+    [
+     75.45,
+     24.65
+    ],
+    [
+     75.1,
+     24.35
+    ],
+    [
+     74.85,
+     24.15
+    ],
+    [
+     74.5,
+     24.0
+    ],
+    [
+     74.2,
+     23.95
+    ],
+    [
+     73.7,
+     24.05
+    ],
+    [
+     73.3,
+     24.4
+    ]
+   ]
+  },
+  {
+   "name": "Kingdom of Marwar (Mandore)",
+   "key": "Kingdom of Marwar",
+   "kind": "kingdom",
+   "from": 1395,
+   "to": 1437,
+   "capital": "Mandore",
+   "rulers": [
+    {
+     "name": "Rao Chunda",
+     "when": "took Mandore 1395"
+    },
+    {
+     "name": "Rao Ranmal",
+     "when": "d. 1438"
+    },
+    {
+     "name": "Rao Jodha",
+     "when": "1453–1489"
+    },
+    {
+     "name": "Rao Ganga",
+     "when": "1515–1532"
+    },
+    {
+     "name": "Rao Maldeo",
+     "when": "1532–1562"
+    }
+   ],
+   "note": "The Rathores, at Pali since the 13th century, moved to Mandore under Rao Chunda in 1395 (Wikipedia 'Kingdom of Marwar'). After Rao Ranmal's murder at Chittor (1438) Mewar held Mandore until Jodha retook it (1453). Approximate.",
+   "coords": [
+    [
+     72.7,
+     25.6
+    ],
+    [
+     72.65,
+     26.3
+    ],
+    [
+     73.0,
+     26.8
+    ],
+    [
+     73.6,
+     26.85
+    ],
+    [
+     74.0,
+     26.5
+    ],
+    [
+     73.9,
+     26.0
+    ],
+    [
+     73.6,
+     25.6
+    ],
+    [
+     73.2,
+     25.45
+    ],
+    [
+     72.7,
+     25.6
+    ]
+   ]
+  },
+  {
+   "name": "Kingdom of Marwar",
+   "key": "Kingdom of Marwar",
+   "kind": "kingdom",
+   "from": 1453,
+   "to": 1531,
+   "capital": "Mandore; Jodhpur from 1459",
+   "rulers": [
+    {
+     "name": "Rao Chunda",
+     "when": "took Mandore 1395"
+    },
+    {
+     "name": "Rao Ranmal",
+     "when": "d. 1438"
+    },
+    {
+     "name": "Rao Jodha",
+     "when": "1453–1489"
+    },
+    {
+     "name": "Rao Ganga",
+     "when": "1515–1532"
+    },
+    {
+     "name": "Rao Maldeo",
+     "when": "1532–1562"
+    }
+   ],
+   "note": "Rao Jodha recovered Mandore (1453) and founded Jodhpur (1459); kinsmen founded Bikaner and Merta. Approximate.",
+   "coords": [
+    [
+     72.4,
+     25.4
+    ],
+    [
+     72.3,
+     26.3
+    ],
+    [
+     72.7,
+     26.9
+    ],
+    [
+     73.4,
+     27.0
+    ],
+    [
+     74.1,
+     26.9
+    ],
+    [
+     74.4,
+     26.4
+    ],
+    [
+     74.1,
+     25.97
+    ],
+    [
+     73.75,
+     25.7
+    ],
+    [
+     73.4,
+     25.45
+    ],
+    [
+     72.9,
+     25.3
+    ],
+    [
+     72.4,
+     25.4
+    ]
+   ]
+  },
+  {
+   "name": "Kingdom of Marwar (Maldeo)",
+   "key": "Kingdom of Marwar",
+   "kind": "kingdom",
+   "from": 1532,
+   "to": 1543,
+   "capital": "Jodhpur",
+   "rulers": [
+    {
+     "name": "Rao Chunda",
+     "when": "took Mandore 1395"
+    },
+    {
+     "name": "Rao Ranmal",
+     "when": "d. 1438"
+    },
+    {
+     "name": "Rao Jodha",
+     "when": "1453–1489"
+    },
+    {
+     "name": "Rao Ganga",
+     "when": "1515–1532"
+    },
+    {
+     "name": "Rao Maldeo",
+     "when": "1532–1562"
+    }
+   ],
+   "note": "Rao Maldeo took Nagaur, Ajmer, Merta, Jalore and Sambhar and briefly Bikaner (1542), until Sher Shah's victory at Sammel (1544). Wikipedia 'Kingdom of Marwar'. Bikaner's occupation is not drawn. Approximate.",
+   "coords": [
+    [
+     71.9,
+     24.9
+    ],
+    [
+     71.8,
+     25.8
+    ],
+    [
+     72.2,
+     26.6
+    ],
+    [
+     72.8,
+     27.3
+    ],
+    [
+     73.6,
+     27.6
+    ],
+    [
+     74.5,
+     27.4
+    ],
+    [
+     75.1,
+     27.0
+    ],
+    [
+     75.2,
+     26.4
+    ],
+    [
+     74.8,
+     26.15
+    ],
+    [
+     74.2,
+     26.0
+    ],
+    [
+     73.75,
+     25.7
+    ],
+    [
+     73.4,
+     25.45
+    ],
+    [
+     72.9,
+     25.0
+    ],
+    [
+     72.4,
+     24.8
+    ],
+    [
+     71.9,
+     24.9
+    ]
+   ]
+  },
+  {
+   "name": "Kingdom of Marwar",
+   "key": "Kingdom of Marwar",
+   "kind": "kingdom",
+   "from": 1545,
+   "to": 1550,
+   "capital": "Jodhpur",
+   "rulers": [
+    {
+     "name": "Rao Chunda",
+     "when": "took Mandore 1395"
+    },
+    {
+     "name": "Rao Ranmal",
+     "when": "d. 1438"
+    },
+    {
+     "name": "Rao Jodha",
+     "when": "1453–1489"
+    },
+    {
+     "name": "Rao Ganga",
+     "when": "1515–1532"
+    },
+    {
+     "name": "Rao Maldeo",
+     "when": "1532–1562"
+    }
+   ],
+   "note": "Maldeo recovered Jodhpur after Sher Shah's death (1545); drawn at its core extent. Approximate.",
+   "coords": [
+    [
+     72.4,
+     25.4
+    ],
+    [
+     72.3,
+     26.3
+    ],
+    [
+     72.7,
+     26.9
+    ],
+    [
+     73.4,
+     27.0
+    ],
+    [
+     74.1,
+     26.9
+    ],
+    [
+     74.4,
+     26.4
+    ],
+    [
+     74.1,
+     25.97
+    ],
+    [
+     73.75,
+     25.7
+    ],
+    [
+     73.4,
+     25.45
+    ],
+    [
+     72.9,
+     25.3
+    ],
+    [
+     72.4,
+     25.4
+    ]
+   ]
+  },
+  {
+   "name": "Bikaner kingdom",
+   "key": "Bikaner State",
+   "kind": "kingdom",
+   "from": 1465,
+   "to": 1550,
+   "capital": "Bikaner (founded 1488)",
+   "rulers": [
+    {
+     "name": "Rao Bika",
+     "when": "1465–1504"
+    },
+    {
+     "name": "Rao Lunkaran",
+     "when": "1504–1526"
+    },
+    {
+     "name": "Rao Jait Singh",
+     "when": "1526–1542"
+    }
+   ],
+   "note": "Rao Bika, a son of Rao Jodha, conquered the Jat clans of Jangladesh from 1465 (Wikipedia 'Bikaner State'). Maldeo of Marwar held it 1542–44 (not shown). Continues as a princely state. Approximate.",
+   "coords": [
+    [
+     72.0,
+     27.7
+    ],
+    [
+     72.3,
+     28.6
+    ],
+    [
+     72.9,
+     29.3
+    ],
+    [
+     73.8,
+     29.4
+    ],
+    [
+     74.5,
+     29.0
+    ],
+    [
+     74.9,
+     28.4
+    ],
+    [
+     74.8,
+     27.8
+    ],
+    [
+     74.4,
+     27.55
+    ],
+    [
+     73.6,
+     27.75
+    ],
+    [
+     72.8,
+     27.5
+    ],
+    [
+     72.4,
+     27.55
+    ],
+    [
+     72.0,
+     27.7
+    ]
+   ]
+  },
+  {
+   "name": "Kingdom of Jaisalmer",
+   "key": "Kingdom of Jaisalmer",
+   "kind": "kingdom",
+   "from": 1156,
+   "to": 1550,
+   "capital": "Jaisalmer",
+   "rulers": [
+    {
+     "name": "Rawal Jaisal",
+     "when": "1156–1168"
+    }
+   ],
+   "note": "Rawal Jaisal moved the Bhati capital from Lodhruva to Jaisalmer in 1156 (Wikipedia 'Kingdom of Jaisalmer'); the desert kingdom was sacked by Delhi's forces c. 1299 but survived. Borders in the Thar are notional.",
+   "coords": [
+    [
+     70.0,
+     26.2
+    ],
+    [
+     70.1,
+     27.2
+    ],
+    [
+     70.5,
+     27.85
+    ],
+    [
+     71.2,
+     28.1
+    ],
+    [
+     71.9,
+     27.6
+    ],
+    [
+     72.2,
+     27.0
+    ],
+    [
+     71.9,
+     26.3
+    ],
+    [
+     71.4,
+     25.8
+    ],
+    [
+     70.7,
+     25.65
+    ],
+    [
+     70.3,
+     25.85
+    ],
+    [
+     70.0,
+     26.2
+    ]
+   ]
+  },
+  {
+   "name": "Chahamanas of Jalor",
+   "key": "Chahamanas of Jalor",
+   "kind": "kingdom",
+   "from": 1160,
+   "to": 1311,
+   "capital": "Jalor",
+   "rulers": [
+    {
+     "name": "Kirtipala",
+     "when": "c. 1160–1182"
+    },
+    {
+     "name": "Udayasimha",
+     "when": "c. 1204–1257"
+    },
+    {
+     "name": "Kanhadadeva",
+     "when": "c. 1292–1311"
+    }
+   ],
+   "note": "Branch of the Naddula Chahamanas, Chaulukya feudatories and then independent, ended by Alauddin Khalji's siege of Jalore (1311; Wikipedia 'Chahamanas of Jalor'). Joppen's 1398 map marks Jalor. Approximate.",
+   "coords": [
+    [
+     71.7,
+     24.8
+    ],
+    [
+     71.9,
+     25.3
+    ],
+    [
+     72.4,
+     25.6
+    ],
+    [
+     72.9,
+     25.65
+    ],
+    [
+     73.35,
+     25.3
+    ],
+    [
+     73.0,
+     24.85
+    ],
+    [
+     72.8,
+     24.65
+    ],
+    [
+     72.3,
+     24.55
+    ],
+    [
+     71.9,
+     24.6
+    ],
+    [
+     71.7,
+     24.8
+    ]
+   ]
+  },
+  {
+   "name": "Chahamanas of Ranthambore",
+   "key": "Chahamanas of Ranastambhapura",
+   "kind": "kingdom",
+   "from": 1192,
+   "to": 1301,
+   "capital": "Ranastambhapura (Ranthambore)",
+   "rulers": [
+    {
+     "name": "Govindaraja",
+     "when": "from 1192"
+    },
+    {
+     "name": "Vagbhata",
+     "when": "mid-13th c."
+    },
+    {
+     "name": "Hammira",
+     "when": "1283–1301"
+    }
+   ],
+   "note": "Founded by Prithviraja III's son Govindaraja as a Ghurid vassal in 1192, alternately subject to and independent of Delhi, ended by Alauddin Khalji's siege (1301; Wikipedia 'Chahamanas of Ranastambhapura'). Approximate.",
+   "coords": [
+    [
+     75.8,
+     25.6
+    ],
+    [
+     75.9,
+     26.3
+    ],
+    [
+     76.5,
+     26.6
+    ],
+    [
+     77.1,
+     26.3
+    ],
+    [
+     77.0,
+     25.7
+    ],
+    [
+     76.5,
+     25.3
+    ],
+    [
+     76.0,
+     25.3
+    ],
+    [
+     75.8,
+     25.6
+    ]
+   ]
+  },
+  {
+   "name": "Emirate of Multan",
+   "key": "Emirate of Multan",
+   "kind": "emirate",
+   "from": 1000,
+   "to": 1009,
+   "capital": "Multan",
+   "rulers": [
+    {
+     "name": "Abu'l-Fath Dawud",
+     "when": "c. 985–1010"
+    }
+   ],
+   "note": "Isma'ili emirate of Multan, conquered by Mahmud of Ghazni in 1010 (Wikipedia 'Emirate of Multan', 855–1010). Extent approximate.",
+   "coords": [
+    [
+     70.5,
+     29.0
+    ],
+    [
+     70.6,
+     30.3
+    ],
+    [
+     71.2,
+     31.0
+    ],
+    [
+     72.2,
+     30.9
+    ],
+    [
+     72.7,
+     30.3
+    ],
+    [
+     72.3,
+     29.4
+    ],
+    [
+     71.4,
+     28.9
+    ],
+    [
+     70.5,
+     29.0
+    ]
+   ]
+  },
+  {
+   "name": "Soomra dynasty (Lower Sindh)",
+   "key": "Soomra dynasty",
+   "kind": "kingdom",
+   "from": 1026,
+   "to": 1343,
+   "capital": "Thari; Mansura early",
+   "rulers": [
+    {
+     "name": "Dodo I",
+     "when": "11th c. (traditional)"
+    },
+    {
+     "name": "Hamir Soomro",
+     "when": "1333–1351, last"
+    }
+   ],
+   "note": "Local dynasty of Lower Sindh, tributary at times to the Ghaznavids, Qabacha and Delhi (Wikipedia 'Soomra dynasty', 1026–1351). Drawn to 1343 because the border data shows the Samma state from 1344; the Samma takeover (1335–1351) is gradual. King lists are largely traditional.",
+   "coords": [
+    [
+     67.2,
+     25.9
+    ],
+    [
+     67.8,
+     26.6
+    ],
+    [
+     68.6,
+     26.7
+    ],
+    [
+     69.4,
+     26.3
+    ],
+    [
+     70.1,
+     25.7
+    ],
+    [
+     70.4,
+     24.9
+    ],
+    [
+     69.8,
+     24.45
+    ],
+    [
+     69.0,
+     24.2
+    ],
+    [
+     68.5,
+     23.95
+    ],
+    [
+     68.3,
+     23.75
+    ],
+    [
+     67.6,
+     23.6
+    ],
+    [
+     66.9,
+     24.2
+    ],
+    [
+     66.6,
+     24.8
+    ],
+    [
+     67.2,
+     25.9
+    ]
+   ]
+  },
+  {
+   "name": "Qabacha's sultanate (Multan and Uch)",
+   "key": "Nasir ad-Din Qabacha",
+   "kind": "sultanate",
+   "from": 1206,
+   "to": 1228,
+   "capital": "Uch and Multan",
+   "rulers": [
+    {
+     "name": "Nasir ad-Din Qabacha",
+     "when": "governor from 1203, independent 1206–1228"
+    }
+   ],
+   "note": "Muhammad of Ghor's governor of Multan made himself independent after 1206 and held Upper Sindh and Multan until Iltutmish took Uch (1228). Lower Sindh's Soomras paid him tribute and are drawn separately. Extent approximate.",
+   "coords": [
+    [
+     67.5,
+     26.8
+    ],
+    [
+     67.6,
+     27.6
+    ],
+    [
+     68.2,
+     28.6
+    ],
+    [
+     69.4,
+     29.0
+    ],
+    [
+     70.2,
+     29.9
+    ],
+    [
+     70.7,
+     30.8
+    ],
+    [
+     71.6,
+     31.3
+    ],
+    [
+     72.6,
+     30.9
+    ],
+    [
+     73.0,
+     30.2
+    ],
+    [
+     72.4,
+     29.3
+    ],
+    [
+     71.4,
+     28.6
+    ],
+    [
+     70.5,
+     28.0
+    ],
+    [
+     69.6,
+     27.3
+    ],
+    [
+     69.2,
+     26.75
+    ],
+    [
+     68.6,
+     26.85
+    ],
+    [
+     68.0,
+     26.8
+    ],
+    [
+     67.5,
+     26.8
+    ]
+   ]
+  },
+  {
+   "name": "Langah Sultanate",
+   "key": "Langah Sultanate",
+   "kind": "sultanate",
+   "from": 1445,
+   "to": 1527,
+   "capital": "Multan",
+   "rulers": [
+    {
+     "name": "Qutb ud-Din Mahmud (Rai Sahra)",
+     "when": "1445–1469"
+    },
+    {
+     "name": "Husain Langah I",
+     "when": "1469–1498"
+    },
+    {
+     "name": "Mahmud Langah",
+     "when": "c. 1502–1525"
+    }
+   ],
+   "note": "Sultanate of the lower Punjab doab around Multan and Uch; annexed by the Arghuns in 1528 (Wikipedia 'Langah Sultanate'). Joppen's 1525 map shows 'Multan' as a strip along the Sutlej and Indus. Approximate.",
+   "coords": [
+    [
+     70.3,
+     28.9
+    ],
+    [
+     70.5,
+     30.0
+    ],
+    [
+     70.9,
+     30.8
+    ],
+    [
+     71.6,
+     31.2
+    ],
+    [
+     72.5,
+     30.9
+    ],
+    [
+     72.9,
+     30.3
+    ],
+    [
+     72.5,
+     29.4
+    ],
+    [
+     71.6,
+     28.75
+    ],
+    [
+     70.9,
+     28.55
+    ],
+    [
+     70.3,
+     28.9
+    ]
+   ]
+  },
+  {
+   "name": "Arghun dynasty (Sindh)",
+   "key": "Arghun dynasty",
+   "kind": "kingdom",
+   "from": 1521,
+   "to": 1550,
+   "capital": "Bukkur; Thatta",
+   "rulers": [
+    {
+     "name": "Shah Beg Arghun",
+     "when": "c. 1520–1524"
+    },
+    {
+     "name": "Shah Husayn Arghun",
+     "when": "1524–1554"
+    }
+   ],
+   "note": "Shah Beg Arghun, driven from Kandahar by Babur, took Thatta from the Sammas (c. 1520); his son conquered Multan (1528, not drawn) (Wikipedia 'Arghun dynasty'). The border data keeps the Samma state to 1525. Approximate.",
+   "coords": [
+    [
+     67.0,
+     26.0
+    ],
+    [
+     67.5,
+     27.4
+    ],
+    [
+     68.0,
+     28.5
+    ],
+    [
+     68.8,
+     28.9
+    ],
+    [
+     69.6,
+     28.6
+    ],
+    [
+     70.2,
+     28.2
+    ],
+    [
+     70.0,
+     27.4
+    ],
+    [
+     69.6,
+     26.6
+    ],
+    [
+     70.2,
+     25.7
+    ],
+    [
+     70.4,
+     24.9
+    ],
+    [
+     69.8,
+     24.45
+    ],
+    [
+     69.0,
+     24.2
+    ],
+    [
+     68.5,
+     23.95
+    ],
+    [
+     68.3,
+     23.75
+    ],
+    [
+     67.6,
+     23.6
+    ],
+    [
+     66.9,
+     24.2
+    ],
+    [
+     66.6,
+     24.8
+    ],
+    [
+     67.0,
+     26.0
+    ]
+   ]
+  },
+  {
+   "name": "Khasa Malla kingdom",
+   "key": "Khasa Kingdom",
+   "kind": "kingdom",
+   "from": 1100,
+   "to": 1389,
+   "capital": "Sinja",
+   "rulers": [
+    {
+     "name": "Nagaraja",
+     "when": "11th c., founder"
+    },
+    {
+     "name": "Krachalla",
+     "when": "fl. 1223"
+    },
+    {
+     "name": "Ripu Malla",
+     "when": "fl. 1312–1314"
+    },
+    {
+     "name": "Prithvi Malla",
+     "when": "fl. 1338–1358"
+    }
+   ],
+   "note": "Himalayan kingdom of the Karnali basin with its capital at Sinja, which at times also ruled Purang and Guge; it broke up into the Baise principalities in the late 14th century (Wikipedia 'Khasa Kingdom'). Schwartzberg V.2 marks the Mallas here. Hill extent only; approximate.",
+   "coords": [
+    [
+     80.25,
+     29.2
+    ],
+    [
+     80.35,
+     29.8
+    ],
+    [
+     80.85,
+     30.3
+    ],
+    [
+     81.3,
+     30.65
+    ],
+    [
+     81.8,
+     30.55
+    ],
+    [
+     82.4,
+     30.1
+    ],
+    [
+     83.0,
+     29.6
+    ],
+    [
+     83.6,
+     29.2
+    ],
+    [
+     83.7,
+     28.7
+    ],
+    [
+     83.1,
+     28.5
+    ],
+    [
+     82.4,
+     28.3
+    ],
+    [
+     81.6,
+     28.5
+    ],
+    [
+     80.9,
+     28.8
+    ],
+    [
+     80.4,
+     28.95
+    ],
+    [
+     80.25,
+     29.2
+    ]
+   ]
+  },
+  {
+   "name": "Guge kingdom",
+   "key": "Guge",
+   "kind": "kingdom",
+   "from": 1000,
+   "to": 1550,
+   "capital": "Tsaparang (Tholing)",
+   "rulers": [
+    {
+     "name": "Yeshe-Ö",
+     "when": "late 10th c."
+    },
+    {
+     "name": "Jangchub-Ö",
+     "when": "invited Atisha, 1042"
+    }
+   ],
+   "note": "Western Tibetan kingdom of the upper Sutlej, at times holding Spiti, Kinnaur and Zanskar (Wikipedia 'Guge'); its line was interrupted in the 12th–14th centuries when Khasa Malla kings held sway. Continues to 1630. Extent approximate.",
+   "coords": [
+    [
+     78.4,
+     31.3
+    ],
+    [
+     78.7,
+     32.2
+    ],
+    [
+     79.4,
+     32.6
+    ],
+    [
+     80.2,
+     32.5
+    ],
+    [
+     80.9,
+     31.9
+    ],
+    [
+     81.6,
+     31.2
+    ],
+    [
+     81.6,
+     30.85
+    ],
+    [
+     81.0,
+     30.9
+    ],
+    [
+     80.2,
+     31.0
+    ],
+    [
+     79.6,
+     30.95
+    ],
+    [
+     79.0,
+     31.0
+    ],
+    [
+     78.4,
+     31.3
+    ]
+   ]
+  },
+  {
+   "name": "Kingdom of Maryul (Ladakh)",
+   "key": "Kingdom of Maryul",
+   "kind": "kingdom",
+   "from": 1000,
+   "to": 1550,
+   "capital": "Shey",
+   "rulers": [
+    {
+     "name": "Lhachen Utpala",
+     "when": "c. 1080–1110"
+    },
+    {
+     "name": "Rinchana",
+     "when": "left for Kashmir c. 1320"
+    },
+    {
+     "name": "Lhachen Bhagan",
+     "when": "founded the Namgyal line c. 1460"
+    }
+   ],
+   "note": "Westernmost Tibetan kingdom, from the Zoji La to Demchok with Rudok (Wikipedia 'Kingdom of Maryul', c. 930–1842). Extent approximate.",
+   "coords": [
+    [
+     75.8,
+     34.6
+    ],
+    [
+     76.4,
+     35.1
+    ],
+    [
+     77.5,
+     35.4
+    ],
+    [
+     78.3,
+     34.9
+    ],
+    [
+     79.4,
+     34.3
+    ],
+    [
+     79.9,
+     33.6
+    ],
+    [
+     79.5,
+     32.75
+    ],
+    [
+     78.8,
+     32.4
+    ],
+    [
+     77.9,
+     32.6
+    ],
+    [
+     77.2,
+     33.0
+    ],
+    [
+     76.3,
+     33.4
+    ],
+    [
+     75.8,
+     34.0
+    ],
+    [
+     75.8,
+     34.6
+    ]
+   ]
+  },
+  {
+   "name": "Karnats of Mithila (Tirhut)",
+   "key": "Karnats of Mithila",
+   "kind": "kingdom",
+   "from": 1097,
+   "to": 1324,
+   "capital": "Simraungadh; Darbhanga",
+   "rulers": [
+    {
+     "name": "Nanyadeva",
+     "when": "1097–1147"
+    },
+    {
+     "name": "Gangadeva",
+     "when": "1147–1187"
+    },
+    {
+     "name": "Harisimhadeva",
+     "when": "1295–1324"
+    }
+   ],
+   "note": "Dynasty of Mithila (Tirhut) founded by Nanyadeva in 1097, ended when Ghiyath ad-Din Tughluq took Tirhut (1324) (Wikipedia 'Karnats of Mithila'; Schwartzberg V.2). Between the Gandak and the Kosi; approximate.",
+   "coords": [
+    [
+     84.4,
+     26.8
+    ],
+    [
+     84.6,
+     27.25
+    ],
+    [
+     85.5,
+     27.15
+    ],
+    [
+     86.3,
+     26.95
+    ],
+    [
+     87.2,
+     26.7
+    ],
+    [
+     87.6,
+     26.35
+    ],
+    [
+     87.4,
+     25.85
+    ],
+    [
+     86.8,
+     25.5
+    ],
+    [
+     86.0,
+     25.45
+    ],
+    [
+     85.2,
+     25.6
+    ],
+    [
+     84.6,
+     25.95
+    ],
+    [
+     84.35,
+     26.4
+    ],
+    [
+     84.4,
+     26.8
+    ]
+   ]
+  },
+  {
+   "name": "Sonargaon Sultanate",
+   "key": "Sonargaon Sultanate",
+   "kind": "sultanate",
+   "from": 1338,
+   "to": 1351,
+   "capital": "Sonargaon",
+   "rulers": [
+    {
+     "name": "Fakhruddin Mubarak Shah",
+     "when": "1338–1349"
+    },
+    {
+     "name": "Ikhtiyaruddin Ghazi Shah",
+     "when": "1349–1352"
+    }
+   ],
+   "note": "East Bengal broke from Delhi under Fakhruddin Mubarak Shah (1338), who also took Chittagong; Ilyas Shah annexed it in 1352 (Joppen p. 19: Bengal independent 1340; Wikipedia 'Bengal Sultanate'). Western line along the Jamuna-Padma; approximate.",
+   "coords": [
+    [
+     89.9,
+     25.15
+    ],
+    [
+     89.7,
+     24.6
+    ],
+    [
+     89.75,
+     24.0
+    ],
+    [
+     89.6,
+     23.5
+    ],
+    [
+     89.6,
+     22.5
+    ],
+    [
+     89.6,
+     21.6
+    ],
+    [
+     90.5,
+     21.7
+    ],
+    [
+     91.6,
+     21.7
+    ],
+    [
+     92.0,
+     21.9
+    ],
+    [
+     91.9,
+     22.4
+    ],
+    [
+     91.5,
+     23.0
+    ],
+    [
+     91.3,
+     23.5
+    ],
+    [
+     91.6,
+     24.2
+    ],
+    [
+     92.2,
+     24.5
+    ],
+    [
+     92.0,
+     24.9
+    ],
+    [
+     91.2,
+     25.05
+    ],
+    [
+     90.3,
+     25.05
+    ],
+    [
+     89.9,
+     25.15
+    ]
+   ]
+  },
+  {
+   "name": "Sultanate of Lakhnauti (Ilyas Shah)",
+   "key": "Sultanate of Bengal",
+   "kind": "sultanate",
+   "from": 1339,
+   "to": 1351,
+   "capital": "Lakhnauti; Pandua",
+   "rulers": [
+    {
+     "name": "Alauddin Ali Shah",
+     "when": "1339–1342"
+    },
+    {
+     "name": "Shamsuddin Ilyas Shah",
+     "when": "1342–1358"
+    }
+   ],
+   "note": "West and north Bengal (Lakhnauti and Satgaon) before Ilyas Shah united Bengal in 1352; shares the Bengal Sultanate's colour because Ilyas Shah founded it. The border data's tiny 1344–51 polygon is left in place. Approximate.",
+   "coords": [
+    [
+     89.6,
+     21.6
+    ],
+    [
+     89.6,
+     22.5
+    ],
+    [
+     89.6,
+     23.5
+    ],
+    [
+     89.75,
+     24.0
+    ],
+    [
+     89.7,
+     24.6
+    ],
+    [
+     89.9,
+     25.15
+    ],
+    [
+     89.25,
+     25.3
+    ],
+    [
+     88.75,
+     25.45
+    ],
+    [
+     88.3,
+     25.75
+    ],
+    [
+     87.8,
+     25.55
+    ],
+    [
+     87.3,
+     25.0
+    ],
+    [
+     86.9,
+     24.3
+    ],
+    [
+     87.0,
+     23.6
+    ],
+    [
+     86.8,
+     22.9
+    ],
+    [
+     87.2,
+     22.2
+    ],
+    [
+     87.4,
+     21.7
+    ],
+    [
+     88.5,
+     21.4
+    ],
+    [
+     89.6,
+     21.6
+    ]
+   ]
+  },
+  {
+   "name": "Kamata kingdom",
+   "key": "Kamata Kingdom",
+   "kind": "kingdom",
+   "from": 1257,
+   "to": 1497,
+   "capital": "Kamatapur (Gosanimari)",
+   "rulers": [
+    {
+     "name": "Sandhya",
+     "when": "c. 1250–1270"
+    },
+    {
+     "name": "Niladhvaja (Khen)",
+     "when": "c. 1440–1460"
+    },
+    {
+     "name": "Nilambara",
+     "when": "c. 1480–1498"
+    }
+   ],
+   "note": "Successor of western Kamarupa after Sandhya moved his seat to Kamatapur sometime after 1257 (Wikipedia 'Kamata Kingdom'); conquered by Alauddin Husain Shah of Bengal in 1498. Goalpara, Kamrup, Cooch Behar, Jalpaiguri and Rangpur; eastern limit approximate.",
+   "coords": [
+    [
+     88.55,
+     26.4
+    ],
+    [
+     88.7,
+     26.9
+    ],
+    [
+     89.5,
+     26.85
+    ],
+    [
+     90.3,
+     26.75
+    ],
+    [
+     91.0,
+     26.8
+    ],
+    [
+     91.8,
+     26.85
+    ],
+    [
+     92.1,
+     26.6
+    ],
+    [
+     91.9,
+     26.15
+    ],
+    [
+     91.3,
+     26.0
+    ],
+    [
+     90.6,
+     25.95
+    ],
+    [
+     90.0,
+     25.6
+    ],
+    [
+     89.3,
+     25.4
+    ],
+    [
+     88.8,
+     25.6
+    ],
+    [
+     88.5,
+     26.0
+    ],
+    [
+     88.55,
+     26.4
+    ]
+   ]
+  },
+  {
+   "name": "Koch kingdom",
+   "key": "Koch dynasty",
+   "kind": "kingdom",
+   "from": 1515,
+   "to": 1550,
+   "capital": "Chikanagram; Hingulabas",
+   "rulers": [
+    {
+     "name": "Biswa Singha",
+     "when": "1515–1540"
+    },
+    {
+     "name": "Nara Narayan",
+     "when": "1540–1587"
+    }
+   ],
+   "note": "Biswa Singha rebuilt the former Kamata kingdom after Bengal's rule there collapsed (Wikipedia 'Koch dynasty', from 1515). Same frame as Kamata; approximate.",
+   "coords": [
+    [
+     88.55,
+     26.4
+    ],
+    [
+     88.7,
+     26.9
+    ],
+    [
+     89.5,
+     26.85
+    ],
+    [
+     90.3,
+     26.75
+    ],
+    [
+     91.0,
+     26.8
+    ],
+    [
+     91.8,
+     26.85
+    ],
+    [
+     92.1,
+     26.6
+    ],
+    [
+     91.9,
+     26.15
+    ],
+    [
+     91.3,
+     26.0
+    ],
+    [
+     90.6,
+     25.95
+    ],
+    [
+     90.0,
+     25.6
+    ],
+    [
+     89.3,
+     25.4
+    ],
+    [
+     88.8,
+     25.6
+    ],
+    [
+     88.5,
+     26.0
+    ],
+    [
+     88.55,
+     26.4
+    ]
+   ]
+  },
+  {
+   "name": "Ahom kingdom",
+   "key": "Ahom kingdom",
+   "kind": "kingdom",
+   "from": 1228,
+   "to": 1396,
+   "capital": "Charaideo",
+   "rulers": [
+    {
+     "name": "Sukaphaa",
+     "when": "1228–1268"
+    },
+    {
+     "name": "Sudangphaa",
+     "when": "1397–1407"
+    },
+    {
+     "name": "Suhungmung",
+     "when": "1497–1539"
+    },
+    {
+     "name": "Suklenmung",
+     "when": "1539–1552"
+    }
+   ],
+   "note": "Sukaphaa's small Tai principality on the south bank of the upper Brahmaputra (Wikipedia 'Ahom kingdom', 1228–1826). Approximate.",
+   "coords": [
+    [
+     94.35,
+     26.75
+    ],
+    [
+     94.6,
+     27.05
+    ],
+    [
+     95.0,
+     27.4
+    ],
+    [
+     95.45,
+     27.42
+    ],
+    [
+     95.7,
+     27.2
+    ],
+    [
+     95.5,
+     26.9
+    ],
+    [
+     95.1,
+     26.7
+    ],
+    [
+     94.7,
+     26.55
+    ],
+    [
+     94.35,
+     26.75
+    ]
+   ]
+  },
+  {
+   "name": "Ahom kingdom",
+   "key": "Ahom kingdom",
+   "kind": "kingdom",
+   "from": 1397,
+   "to": 1523,
+   "capital": "Charaideo; Garhgaon",
+   "rulers": [
+    {
+     "name": "Sukaphaa",
+     "when": "1228–1268"
+    },
+    {
+     "name": "Sudangphaa",
+     "when": "1397–1407"
+    },
+    {
+     "name": "Suhungmung",
+     "when": "1497–1539"
+    },
+    {
+     "name": "Suklenmung",
+     "when": "1539–1552"
+    }
+   ],
+   "note": "Gradual growth down the south bank and against the Kacharis. Approximate.",
+   "coords": [
+    [
+     94.0,
+     26.55
+    ],
+    [
+     94.2,
+     26.85
+    ],
+    [
+     94.6,
+     27.1
+    ],
+    [
+     95.0,
+     27.45
+    ],
+    [
+     95.6,
+     27.5
+    ],
+    [
+     95.9,
+     27.3
+    ],
+    [
+     95.7,
+     26.9
+    ],
+    [
+     95.2,
+     26.6
+    ],
+    [
+     94.6,
+     26.35
+    ],
+    [
+     94.2,
+     26.35
+    ],
+    [
+     94.0,
+     26.55
+    ]
+   ]
+  },
+  {
+   "name": "Ahom kingdom",
+   "key": "Ahom kingdom",
+   "kind": "kingdom",
+   "from": 1524,
+   "to": 1535,
+   "capital": "Garhgaon",
+   "rulers": [
+    {
+     "name": "Sukaphaa",
+     "when": "1228–1268"
+    },
+    {
+     "name": "Sudangphaa",
+     "when": "1397–1407"
+    },
+    {
+     "name": "Suhungmung",
+     "when": "1497–1539"
+    },
+    {
+     "name": "Suklenmung",
+     "when": "1539–1552"
+    }
+   ],
+   "note": "Suhungmung annexed the Chutia kingdom (1523–24) and pushed west to Kaliabor while repelling Bengal's invasions. Approximate.",
+   "coords": [
+    [
+     93.5,
+     26.35
+    ],
+    [
+     93.55,
+     26.75
+    ],
+    [
+     93.9,
+     27.0
+    ],
+    [
+     94.2,
+     27.3
+    ],
+    [
+     94.7,
+     27.6
+    ],
+    [
+     95.3,
+     27.95
+    ],
+    [
+     95.9,
+     28.0
+    ],
+    [
+     96.3,
+     27.85
+    ],
+    [
+     96.1,
+     27.4
+    ],
+    [
+     95.9,
+     27.2
+    ],
+    [
+     95.7,
+     26.9
+    ],
+    [
+     95.2,
+     26.6
+    ],
+    [
+     94.6,
+     26.35
+    ],
+    [
+     94.0,
+     26.3
+    ],
+    [
+     93.5,
+     26.35
+    ]
+   ]
+  },
+  {
+   "name": "Ahom kingdom",
+   "key": "Ahom kingdom",
+   "kind": "kingdom",
+   "from": 1536,
+   "to": 1550,
+   "capital": "Garhgaon",
+   "rulers": [
+    {
+     "name": "Sukaphaa",
+     "when": "1228–1268"
+    },
+    {
+     "name": "Sudangphaa",
+     "when": "1397–1407"
+    },
+    {
+     "name": "Suhungmung",
+     "when": "1497–1539"
+    },
+    {
+     "name": "Suklenmung",
+     "when": "1539–1552"
+    }
+   ],
+   "note": "The Ahoms sacked the Dimasa capital Dimapur (1536) and took the Dhansiri valley. Approximate.",
+   "coords": [
+    [
+     93.5,
+     26.35
+    ],
+    [
+     93.55,
+     26.75
+    ],
+    [
+     93.9,
+     27.0
+    ],
+    [
+     94.2,
+     27.3
+    ],
+    [
+     94.7,
+     27.6
+    ],
+    [
+     95.3,
+     27.95
+    ],
+    [
+     95.9,
+     28.0
+    ],
+    [
+     96.3,
+     27.85
+    ],
+    [
+     96.1,
+     27.4
+    ],
+    [
+     95.9,
+     27.2
+    ],
+    [
+     95.7,
+     26.9
+    ],
+    [
+     95.2,
+     26.6
+    ],
+    [
+     94.6,
+     26.35
+    ],
+    [
+     94.0,
+     26.3
+    ],
+    [
+     93.9,
+     26.0
+    ],
+    [
+     93.6,
+     25.95
+    ],
+    [
+     93.3,
+     26.2
+    ],
+    [
+     93.5,
+     26.35
+    ]
+   ]
+  },
+  {
+   "name": "Chutia kingdom",
+   "key": "Chutia kingdom",
+   "kind": "kingdom",
+   "from": 1300,
+   "to": 1523,
+   "capital": "Sadiya (Sadhayapura)",
+   "rulers": [
+    {
+     "name": "Satyanarayana",
+     "when": "late 14th c. (copper plates)"
+    },
+    {
+     "name": "Lakshminarayana",
+     "when": "early 15th c. (copper plates)"
+    },
+    {
+     "name": "Dhirnarayana",
+     "when": "last, d. 1523–24"
+    }
+   ],
+   "note": "North-bank kingdom around Sadiya (Lakhimpur, Dhemaji, Tinsukia and the Arunachal foothills), believed founded in the 13th century and prominent from the 14th; annexed by the Ahoms in 1523–24 (Wikipedia 'Chutia kingdom'). Start date approximate.",
+   "coords": [
+    [
+     93.9,
+     27.0
+    ],
+    [
+     94.15,
+     27.35
+    ],
+    [
+     94.7,
+     27.65
+    ],
+    [
+     95.3,
+     28.0
+    ],
+    [
+     95.9,
+     28.1
+    ],
+    [
+     96.35,
+     27.9
+    ],
+    [
+     96.2,
+     27.45
+    ],
+    [
+     95.95,
+     27.4
+    ],
+    [
+     95.6,
+     27.55
+    ],
+    [
+     95.0,
+     27.52
+    ],
+    [
+     94.6,
+     27.18
+    ],
+    [
+     94.2,
+     26.93
+    ],
+    [
+     93.9,
+     27.0
+    ]
+   ]
+  },
+  {
+   "name": "Dimasa (Kachari) kingdom",
+   "key": "Dimasa Kingdom",
+   "kind": "kingdom",
+   "from": 1250,
+   "to": 1535,
+   "capital": "Dimapur",
+   "rulers": [
+    {
+     "name": "Detsung",
+     "when": "killed 1536"
+    }
+   ],
+   "note": "Kachari kingdom of the Dhansiri valley and North Cachar hills, one of the states that grew out of Kamarupa (Wikipedia 'Dimasa Kingdom'). Its founding date is unknown; Ahom chronicles place Kacharis here from the 13th century. Few rulers before the 16th century are securely dated.",
+   "coords": [
+    [
+     93.3,
+     26.25
+    ],
+    [
+     93.6,
+     26.25
+    ],
+    [
+     94.0,
+     26.25
+    ],
+    [
+     94.25,
+     26.0
+    ],
+    [
+     94.0,
+     25.6
+    ],
+    [
+     93.6,
+     25.3
+    ],
+    [
+     93.1,
+     25.1
+    ],
+    [
+     92.7,
+     25.3
+    ],
+    [
+     92.6,
+     25.7
+    ],
+    [
+     92.9,
+     26.1
+    ],
+    [
+     93.3,
+     26.25
+    ]
+   ]
+  },
+  {
+   "name": "Dimasa (Kachari) kingdom",
+   "key": "Dimasa Kingdom",
+   "kind": "kingdom",
+   "from": 1536,
+   "to": 1550,
+   "capital": "Maibang",
+   "rulers": [
+    {
+     "name": "Detsung",
+     "when": "killed 1536"
+    }
+   ],
+   "note": "After the Ahoms sacked Dimapur (1536) the Dimasa capital moved to Maibang in the North Cachar hills. Approximate.",
+   "coords": [
+    [
+     92.7,
+     25.75
+    ],
+    [
+     93.2,
+     25.75
+    ],
+    [
+     93.5,
+     25.55
+    ],
+    [
+     93.5,
+     25.2
+    ],
+    [
+     93.1,
+     25.05
+    ],
+    [
+     92.7,
+     25.2
+    ],
+    [
+     92.55,
+     25.5
+    ],
+    [
+     92.7,
+     25.75
+    ]
+   ]
+  },
+  {
+   "name": "Twipra (Tripura) kingdom",
+   "key": "Twipra Kingdom",
+   "kind": "kingdom",
+   "from": 1400,
+   "to": 1489,
+   "capital": "Rangamati (Udaipur)",
+   "rulers": [
+    {
+     "name": "Maha Manikya",
+     "when": "c. 1400–1431"
+    },
+    {
+     "name": "Dharma Manikya I",
+     "when": "1431–1462"
+    },
+    {
+     "name": "Dhanya Manikya",
+     "when": "1490–1515"
+    },
+    {
+     "name": "Vijaya Manikya II",
+     "when": "1532–1563"
+    }
+   ],
+   "note": "Manikya kingdom of the Tripuri people, established by Maha Manikya c. 1400 (Wikipedia 'Twipra Kingdom'). Hill core; approximate.",
+   "coords": [
+    [
+     91.15,
+     24.4
+    ],
+    [
+     91.6,
+     24.45
+    ],
+    [
+     92.1,
+     24.25
+    ],
+    [
+     92.3,
+     23.8
+    ],
+    [
+     92.2,
+     23.2
+    ],
+    [
+     91.9,
+     22.9
+    ],
+    [
+     91.6,
+     23.0
+    ],
+    [
+     91.3,
+     23.3
+    ],
+    [
+     91.15,
+     23.8
+    ],
+    [
+     91.15,
+     24.4
+    ]
+   ]
+  },
+  {
+   "name": "Twipra (Tripura) kingdom",
+   "key": "Twipra Kingdom",
+   "kind": "kingdom",
+   "from": 1490,
+   "to": 1550,
+   "capital": "Rangamati (Udaipur)",
+   "rulers": [
+    {
+     "name": "Maha Manikya",
+     "when": "c. 1400–1431"
+    },
+    {
+     "name": "Dharma Manikya I",
+     "when": "1431–1462"
+    },
+    {
+     "name": "Dhanya Manikya",
+     "when": "1490–1515"
+    },
+    {
+     "name": "Vijaya Manikya II",
+     "when": "1532–1563"
+    }
+   ],
+   "note": "Dhanya Manikya and his successors pushed into the Comilla plains and contested Chittagong with Bengal and Arakan (Chittagong not drawn). Approximate.",
+   "coords": [
+    [
+     90.9,
+     24.45
+    ],
+    [
+     91.6,
+     24.55
+    ],
+    [
+     92.1,
+     24.3
+    ],
+    [
+     92.35,
+     23.8
+    ],
+    [
+     92.3,
+     23.1
+    ],
+    [
+     92.0,
+     22.6
+    ],
+    [
+     91.6,
+     22.7
+    ],
+    [
+     91.2,
+     23.0
+    ],
+    [
+     90.9,
+     23.4
+    ],
+    [
+     90.8,
+     23.9
+    ],
+    [
+     90.9,
+     24.45
+    ]
+   ]
+  },
+  {
+   "name": "Manipur (Kangleipak)",
+   "key": "Manipur Kingdom",
+   "kind": "kingdom",
+   "from": 1110,
+   "to": 1550,
+   "capital": "Kangla (Imphal)",
+   "rulers": [
+    {
+     "name": "Loiyumba",
+     "when": "c. 1074–1121"
+    },
+    {
+     "name": "Kiyamba",
+     "when": "1467–1508"
+    }
+   ],
+   "note": "Meitei kingdom of the Imphal valley (Wikipedia 'Manipur (princely state)', kingdom from 1110). The surrounding hills are included only roughly. Continues as a princely state.",
+   "coords": [
+    [
+     93.0,
+     24.6
+    ],
+    [
+     93.15,
+     25.0
+    ],
+    [
+     93.6,
+     25.15
+    ],
+    [
+     94.05,
+     25.45
+    ],
+    [
+     94.55,
+     25.25
+    ],
+    [
+     94.4,
+     24.5
+    ],
+    [
+     94.1,
+     24.0
+    ],
+    [
+     93.6,
+     23.9
+    ],
+    [
+     93.2,
+     24.1
+    ],
+    [
+     93.0,
+     24.6
+    ]
+   ]
+  },
+  {
+   "name": "Chera Perumal kingdom (Mahodayapuram)",
+   "key": "Chera Perumals",
+   "kind": "kingdom",
+   "from": 1000,
+   "to": 1123,
+   "capital": "Mahodayapuram (Kodungallur)",
+   "rulers": [
+    {
+     "name": "Bhaskara Ravi Manukuladitya",
+     "when": "962–1021"
+    },
+    {
+     "name": "Rama Kulasekhara",
+     "when": "c. 1089–1124, last"
+    }
+   ],
+   "note": "The medieval Chera kingdom, from the Chandragiri river to Nagercoil at its height (Wikipedia 'Chera Perumals of Kerala', c. 844–c. 1124); Chola invasions in the early 11th century did not end it. Its break-up c. 1124 produced Venad, Kolathunadu, Calicut and Cochin. Approximate.",
+   "coords": [
+    [
+     75.0,
+     12.48
+    ],
+    [
+     75.4,
+     12.5
+    ],
+    [
+     75.7,
+     12.1
+    ],
+    [
+     76.0,
+     11.7
+    ],
+    [
+     76.4,
+     11.4
+    ],
+    [
+     76.7,
+     10.9
+    ],
+    [
+     76.9,
+     10.6
+    ],
+    [
+     77.2,
+     10.1
+    ],
+    [
+     77.3,
+     9.5
+    ],
+    [
+     77.2,
+     8.9
+    ],
+    [
+     77.45,
+     8.35
+    ],
+    [
+     77.55,
+     8.07
+    ],
+    [
+     77.3,
+     7.9
+    ],
+    [
+     76.3,
+     8.6
+    ],
+    [
+     75.8,
+     9.8
+    ],
+    [
+     75.5,
+     11.0
+    ],
+    [
+     74.8,
+     12.0
+    ],
+    [
+     74.85,
+     12.5
+    ],
+    [
+     75.0,
+     12.48
+    ]
+   ]
+  },
+  {
+   "name": "Venad (Kingdom of Quilon)",
+   "key": "Venad",
+   "kind": "kingdom",
+   "from": 1124,
+   "to": 1550,
+   "capital": "Kollam (Quilon)",
+   "rulers": [
+    {
+     "name": "Ravi Varma Kulasekhara",
+     "when": "1299–1314"
+    }
+   ],
+   "note": "Southernmost successor of the Chera Perumals: Kollam, Thiruvananthapuram and Nanjinad (Wikipedia 'Venadu kingdom'). The northern limit against Kayamkulam and the Ghats line are approximate; Ravi Varma's campaign to Kanchi (1312–13) is not drawn.",
+   "coords": [
+    [
+     76.45,
+     9.25
+    ],
+    [
+     76.85,
+     9.3
+    ],
+    [
+     77.15,
+     9.15
+    ],
+    [
+     77.25,
+     8.85
+    ],
+    [
+     77.38,
+     8.62
+    ],
+    [
+     77.5,
+     8.42
+    ],
+    [
+     77.65,
+     8.2
+    ],
+    [
+     77.55,
+     8.05
+    ],
+    [
+     77.3,
+     7.95
+    ],
+    [
+     76.6,
+     8.6
+    ],
+    [
+     76.3,
+     9.2
+    ],
+    [
+     76.45,
+     9.25
+    ]
+   ]
+  },
+  {
+   "name": "Kolathunadu (Cannanore)",
+   "key": "Kolathunadu",
+   "kind": "kingdom",
+   "from": 1124,
+   "to": 1550,
+   "capital": "Ezhimala; Valapattanam",
+   "rulers": [
+    {
+     "name": "Kolathiri (dynastic title)",
+     "when": "received the Portuguese at Cannanore, 1501"
+    }
+   ],
+   "note": "North Malabar between the Chandragiri and Korapuzha rivers (Wikipedia 'Kolathunadu'). Inland limit approximate.",
+   "coords": [
+    [
+     75.0,
+     12.5
+    ],
+    [
+     75.35,
+     12.5
+    ],
+    [
+     75.55,
+     12.2
+    ],
+    [
+     75.85,
+     11.85
+    ],
+    [
+     76.0,
+     11.6
+    ],
+    [
+     75.85,
+     11.42
+    ],
+    [
+     75.72,
+     11.4
+    ],
+    [
+     75.5,
+     11.42
+    ],
+    [
+     74.75,
+     12.3
+    ],
+    [
+     74.8,
+     12.5
+    ],
+    [
+     75.0,
+     12.5
+    ]
+   ]
+  },
+  {
+   "name": "Calicut (Zamorin's kingdom)",
+   "key": "Zamorin of Calicut",
+   "kind": "kingdom",
+   "from": 1300,
+   "to": 1550,
+   "capital": "Kozhikode (Calicut)",
+   "rulers": [
+    {
+     "name": "Samoothiri (dynastic title)",
+     "when": "Ibn Battuta at Calicut, 1342; Vasco da Gama, 1498"
+    }
+   ],
+   "note": "The Samoothiri of Nediyiruppu Swaroopam made Calicut the chief port of the Malabar coast (Wikipedia 'Zamorin'). It was flourishing when Ibn Battuta came in 1342; its start date is uncertain (c. 1300 used). Extent between the Korapuzha and Ponnani with Eranad; approximate.",
+   "coords": [
+    [
+     75.72,
+     11.37
+    ],
+    [
+     75.95,
+     11.4
+    ],
+    [
+     76.35,
+     11.35
+    ],
+    [
+     76.45,
+     11.05
+    ],
+    [
+     76.3,
+     10.8
+    ],
+    [
+     76.05,
+     10.7
+    ],
+    [
+     75.93,
+     10.6
+    ],
+    [
+     75.6,
+     10.7
+    ],
+    [
+     75.5,
+     11.3
+    ],
+    [
+     75.72,
+     11.37
+    ]
+   ]
+  },
+  {
+   "name": "Kingdom of Cochin (Perumpadappu Swaroopam)",
+   "key": "Kingdom of Cochin",
+   "kind": "kingdom",
+   "from": 1124,
+   "to": 1550,
+   "capital": "Perumpadappu; Kodungallur; Kochi",
+   "rulers": [
+    {
+     "name": "Unni Goda Varma",
+     "when": "allied with Cabral, 1500"
+    }
+   ],
+   "note": "Perumpadappu Swaroopam became a free principality after the Chera Perumals fell in the 12th century and rose to importance with the Portuguese (Wikipedia 'Kingdom of Cochin'). Extent around Kodungallur and Kochi; approximate, and much smaller before 1500.",
+   "coords": [
+    [
+     76.02,
+     10.5
+    ],
+    [
+     76.35,
+     10.6
+    ],
+    [
+     76.6,
+     10.45
+    ],
+    [
+     76.6,
+     10.1
+    ],
+    [
+     76.4,
+     9.85
+    ],
+    [
+     76.25,
+     9.8
+    ],
+    [
+     76.0,
+     9.9
+    ],
+    [
+     75.85,
+     10.4
+    ],
+    [
+     76.02,
+     10.5
+    ]
+   ]
+  },
+  {
+   "name": "Kingdom of Gampola",
+   "key": "Kingdom of Gampola",
+   "kind": "kingdom",
+   "from": 1341,
+   "to": 1411,
+   "capital": "Gampola",
+   "rulers": [
+    {
+     "name": "Bhuvanaikabahu IV",
+     "when": "1341–1351"
+    },
+    {
+     "name": "Vikramabahu III",
+     "when": "1357–1374"
+    },
+    {
+     "name": "Bhuvanaikabahu V",
+     "when": "1372–1408"
+    }
+   ],
+   "note": "Sinhala kingdom of the south-west and centre, with the Alagakkonara ministers dominant at Kotte late in the century (Wikipedia 'Kingdom of Gampola', 1341–1408). The Jaffna kingdom and the Vanni chiefs held the north. Approximate.",
+   "coords": [
+    [
+     79.6,
+     8.1
+    ],
+    [
+     80.3,
+     8.1
+    ],
+    [
+     80.9,
+     7.9
+    ],
+    [
+     81.3,
+     7.4
+    ],
+    [
+     81.4,
+     6.8
+    ],
+    [
+     81.9,
+     6.6
+    ],
+    [
+     82.0,
+     6.3
+    ],
+    [
+     81.0,
+     5.7
+    ],
+    [
+     80.0,
+     5.8
+    ],
+    [
+     79.6,
+     6.6
+    ],
+    [
+     79.5,
+     7.5
+    ],
+    [
+     79.6,
+     8.1
+    ]
+   ]
+  },
+  {
+   "name": "Kingdom of Kotte",
+   "key": "Kingdom of Kotte",
+   "kind": "kingdom",
+   "from": 1412,
+   "to": 1449,
+   "capital": "Kotte",
+   "rulers": [
+    {
+     "name": "Parakramabahu VI",
+     "when": "1412–1467"
+    },
+    {
+     "name": "Bhuvanaikabahu VI",
+     "when": "1472–1480"
+    },
+    {
+     "name": "Parakramabahu VIII",
+     "when": "1484–1518"
+    },
+    {
+     "name": "Bhuvanaikabahu VII",
+     "when": "1521–1551"
+    }
+   ],
+   "note": "Parakramabahu VI moved the capital to Kotte (1412) (Wikipedia 'Kingdom of Kotte'). Approximate.",
+   "coords": [
+    [
+     79.6,
+     8.1
+    ],
+    [
+     80.3,
+     8.1
+    ],
+    [
+     80.9,
+     7.9
+    ],
+    [
+     81.3,
+     7.4
+    ],
+    [
+     81.4,
+     6.8
+    ],
+    [
+     81.9,
+     6.6
+    ],
+    [
+     82.0,
+     6.3
+    ],
+    [
+     81.0,
+     5.7
+    ],
+    [
+     80.0,
+     5.8
+    ],
+    [
+     79.6,
+     6.6
+    ],
+    [
+     79.5,
+     7.5
+    ],
+    [
+     79.6,
+     8.1
+    ]
+   ]
+  },
+  {
+   "name": "Kingdom of Kotte (whole island)",
+   "key": "Kingdom of Kotte",
+   "kind": "kingdom",
+   "from": 1450,
+   "to": 1467,
+   "capital": "Kotte",
+   "rulers": [
+    {
+     "name": "Parakramabahu VI",
+     "when": "1412–1467"
+    },
+    {
+     "name": "Bhuvanaikabahu VI",
+     "when": "1472–1480"
+    },
+    {
+     "name": "Parakramabahu VIII",
+     "when": "1484–1518"
+    },
+    {
+     "name": "Bhuvanaikabahu VII",
+     "when": "1521–1551"
+    }
+   ],
+   "note": "Prince Sapumal conquered the Jaffna kingdom (c. 1450) and the Vanni was brought under Kotte, uniting the island until Parakramabahu VI's death (1467) (Wikipedia 'Kingdom of Kotte').",
+   "coords": [
+    [
+     79.5,
+     9.0
+    ],
+    [
+     79.6,
+     9.9
+    ],
+    [
+     80.2,
+     10.0
+    ],
+    [
+     80.6,
+     9.6
+    ],
+    [
+     81.1,
+     8.9
+    ],
+    [
+     81.6,
+     8.1
+    ],
+    [
+     82.0,
+     7.2
+    ],
+    [
+     82.0,
+     6.2
+    ],
+    [
+     80.8,
+     5.7
+    ],
+    [
+     79.9,
+     5.8
+    ],
+    [
+     79.5,
+     6.8
+    ],
+    [
+     79.5,
+     8.0
+    ],
+    [
+     79.5,
+     9.0
+    ]
+   ]
+  },
+  {
+   "name": "Kingdom of Kotte",
+   "key": "Kingdom of Kotte",
+   "kind": "kingdom",
+   "from": 1468,
+   "to": 1520,
+   "capital": "Kotte",
+   "rulers": [
+    {
+     "name": "Parakramabahu VI",
+     "when": "1412–1467"
+    },
+    {
+     "name": "Bhuvanaikabahu VI",
+     "when": "1472–1480"
+    },
+    {
+     "name": "Parakramabahu VIII",
+     "when": "1484–1518"
+    },
+    {
+     "name": "Bhuvanaikabahu VII",
+     "when": "1521–1551"
+    }
+   ],
+   "note": "Jaffna regained independence and the hill country broke away as Kandy (c. 1469). Approximate.",
+   "coords": [
+    [
+     79.6,
+     8.1
+    ],
+    [
+     80.5,
+     8.1
+    ],
+    [
+     80.4,
+     7.6
+    ],
+    [
+     80.35,
+     7.25
+    ],
+    [
+     80.6,
+     7.0
+    ],
+    [
+     80.95,
+     6.85
+    ],
+    [
+     81.35,
+     6.85
+    ],
+    [
+     81.95,
+     6.75
+    ],
+    [
+     82.0,
+     6.3
+    ],
+    [
+     81.0,
+     5.7
+    ],
+    [
+     80.0,
+     5.8
+    ],
+    [
+     79.6,
+     6.6
+    ],
+    [
+     79.5,
+     7.5
+    ],
+    [
+     79.6,
+     8.1
+    ]
+   ]
+  },
+  {
+   "name": "Kingdom of Kotte",
+   "key": "Kingdom of Kotte",
+   "kind": "kingdom",
+   "from": 1521,
+   "to": 1550,
+   "capital": "Kotte",
+   "rulers": [
+    {
+     "name": "Parakramabahu VI",
+     "when": "1412–1467"
+    },
+    {
+     "name": "Bhuvanaikabahu VI",
+     "when": "1472–1480"
+    },
+    {
+     "name": "Parakramabahu VIII",
+     "when": "1484–1518"
+    },
+    {
+     "name": "Bhuvanaikabahu VII",
+     "when": "1521–1551"
+    }
+   ],
+   "note": "After the 'Spoiling of Vijayabahu' (1521) Kotte kept the western coast around Colombo and leaned on the Portuguese. Approximate.",
+   "coords": [
+    [
+     79.75,
+     7.35
+    ],
+    [
+     80.05,
+     7.35
+    ],
+    [
+     80.2,
+     7.05
+    ],
+    [
+     80.15,
+     6.75
+    ],
+    [
+     80.0,
+     6.55
+    ],
+    [
+     79.7,
+     6.6
+    ],
+    [
+     79.6,
+     7.2
+    ],
+    [
+     79.75,
+     7.35
+    ]
+   ]
+  },
+  {
+   "name": "Kingdom of Kandy",
+   "key": "Kingdom of Kandy",
+   "kind": "kingdom",
+   "from": 1469,
+   "to": 1550,
+   "capital": "Senkadagalapura (Kandy)",
+   "rulers": [
+    {
+     "name": "Senasammata Vikramabahu",
+     "when": "1469–1511"
+    },
+    {
+     "name": "Jayavira Bandara",
+     "when": "1511–1552"
+    }
+   ],
+   "note": "Hill-country kingdom founded in the late 15th century (Wikipedia 'Kingdom of Kandy', 1469–1815), with influence over the east coast. Approximate.",
+   "coords": [
+    [
+     80.5,
+     8.1
+    ],
+    [
+     80.4,
+     7.6
+    ],
+    [
+     80.35,
+     7.25
+    ],
+    [
+     80.6,
+     7.0
+    ],
+    [
+     80.95,
+     6.85
+    ],
+    [
+     81.35,
+     6.85
+    ],
+    [
+     81.95,
+     6.75
+    ],
+    [
+     82.1,
+     6.9
+    ],
+    [
+     82.0,
+     7.6
+    ],
+    [
+     81.6,
+     8.5
+    ],
+    [
+     81.25,
+     8.75
+    ],
+    [
+     80.9,
+     8.5
+    ],
+    [
+     80.5,
+     8.1
+    ]
+   ]
+  },
+  {
+   "name": "Kingdom of Sitawaka",
+   "key": "Kingdom of Sitawaka",
+   "kind": "kingdom",
+   "from": 1521,
+   "to": 1550,
+   "capital": "Sitawaka (Avissawella)",
+   "rulers": [
+    {
+     "name": "Mayadunne",
+     "when": "1521–1581"
+    }
+   ],
+   "note": "Mayadunne's share of the 1521 partition of Kotte, which absorbed Raigama in 1538 (Raigama not drawn separately) (Wikipedia 'Kingdom of Sitawaka'). Approximate.",
+   "coords": [
+    [
+     80.05,
+     7.35
+    ],
+    [
+     80.3,
+     7.4
+    ],
+    [
+     80.35,
+     7.25
+    ],
+    [
+     80.6,
+     7.0
+    ],
+    [
+     80.95,
+     6.85
+    ],
+    [
+     81.35,
+     6.85
+    ],
+    [
+     81.95,
+     6.75
+    ],
+    [
+     82.0,
+     6.3
+    ],
+    [
+     81.0,
+     5.7
+    ],
+    [
+     80.0,
+     5.8
+    ],
+    [
+     79.85,
+     6.4
+    ],
+    [
+     80.0,
+     6.55
+    ],
+    [
+     80.15,
+     6.75
+    ],
+    [
+     80.2,
+     7.05
+    ],
+    [
+     80.05,
+     7.35
+    ]
+   ]
+  }
+ ],
+ "sites": [
+  {
+   "name": "Madurai",
+   "lonlat": [
+    78.12,
+    9.92
+   ],
+   "what": "capital of the Madurai Sultanate (Ma'bar), 1335–1378"
+  },
+  {
+   "name": "Padaiveedu",
+   "lonlat": [
+    79.0,
+    12.65
+   ],
+   "what": "seat of the Sambuvaraya chiefs"
+  },
+  {
+   "name": "Vijayanagara (Hampi)",
+   "lonlat": [
+    76.46,
+    15.33
+   ],
+   "what": "capital founded by the Sangama brothers, c. 1336"
+  },
+  {
+   "name": "Gulbarga",
+   "lonlat": [
+    76.83,
+    17.33
+   ],
+   "what": "first Bahmani capital, 1347"
+  },
+  {
+   "name": "Kondavidu",
+   "lonlat": [
+    80.06,
+    16.25
+   ],
+   "what": "Reddi capital; taken by Vijayanagara 1424, Gajapatis 1454"
+  },
+  {
+   "name": "Addanki",
+   "lonlat": [
+    79.97,
+    15.81
+   ],
+   "what": "first Reddi capital"
+  },
+  {
+   "name": "Rajahmundry",
+   "lonlat": [
+    81.78,
+    17.0
+   ],
+   "what": "seat of the Rajahmundry Reddis"
+  },
+  {
+   "name": "Warangal",
+   "lonlat": [
+    79.6,
+    17.97
+   ],
+   "what": "Musunuri Nayaka capital"
+  },
+  {
+   "name": "Rachakonda",
+   "lonlat": [
+    78.88,
+    17.18
+   ],
+   "what": "Recherla Velama fort"
+  },
+  {
+   "name": "Cuttack",
+   "lonlat": [
+    85.88,
+    20.46
+   ],
+   "what": "Eastern Ganga and Gajapati capital"
+  },
+  {
+   "name": "Jajpur",
+   "lonlat": [
+    86.33,
+    20.85
+   ],
+   "what": "Abhinava-Yayatinagara, Somavamshi capital"
+  },
+  {
+   "name": "Tripuri",
+   "lonlat": [
+    79.88,
+    23.13
+   ],
+   "what": "Kalachuri capital near Jabalpur"
+  },
+  {
+   "name": "Ratanpur",
+   "lonlat": [
+    82.17,
+    22.29
+   ],
+   "what": "Kalachuri (Haihaya) capital of Dakshina Kosala"
+  },
+  {
+   "name": "Mandla",
+   "lonlat": [
+    80.37,
+    22.6
+   ],
+   "what": "Gond fort of Garha-Mandla"
+  },
+  {
+   "name": "Thalner",
+   "lonlat": [
+    74.97,
+    21.25
+   ],
+   "what": "first Faruqi capital"
+  },
+  {
+   "name": "Burhanpur",
+   "lonlat": [
+    76.23,
+    21.31
+   ],
+   "what": "Faruqi capital of Khandesh"
+  },
+  {
+   "name": "Gwalior",
+   "lonlat": [
+    78.17,
+    26.23
+   ],
+   "what": "Tomara fort and capital"
+  },
+  {
+   "name": "Mandu",
+   "lonlat": [
+    75.4,
+    22.35
+   ],
+   "what": "capital of the Malwa Sultanate"
+  },
+  {
+   "name": "Dhar",
+   "lonlat": [
+    75.3,
+    22.6
+   ],
+   "what": "Paramara capital; first Malwa sultanate capital"
+  },
+  {
+   "name": "Ahmedabad",
+   "lonlat": [
+    72.58,
+    23.03
+   ],
+   "what": "Gujarat Sultanate capital from 1411"
+  },
+  {
+   "name": "Anhilwad Patan",
+   "lonlat": [
+    72.12,
+    23.85
+   ],
+   "what": "first Gujarat sultanate capital; old Chaulukya capital"
+  },
+  {
+   "name": "Champaner",
+   "lonlat": [
+    73.53,
+    22.49
+   ],
+   "what": "Khichi Chauhan seat; Gujarat capital 1484–1535"
+  },
+  {
+   "name": "Dholka",
+   "lonlat": [
+    72.44,
+    22.73
+   ],
+   "what": "Vaghela capital"
+  },
+  {
+   "name": "Junagadh",
+   "lonlat": [
+    70.46,
+    21.52
+   ],
+   "what": "Chudasama capital (Uparkot)"
+  },
+  {
+   "name": "Chittor",
+   "lonlat": [
+    74.64,
+    24.88
+   ],
+   "what": "capital of Mewar"
+  },
+  {
+   "name": "Kumbhalgarh",
+   "lonlat": [
+    73.58,
+    25.15
+   ],
+   "what": "Rana Kumbha's fortress"
+  },
+  {
+   "name": "Mandore",
+   "lonlat": [
+    73.05,
+    26.35
+   ],
+   "what": "Rathore capital 1395–1459"
+  },
+  {
+   "name": "Jodhpur",
+   "lonlat": [
+    73.02,
+    26.29
+   ],
+   "what": "founded by Rao Jodha, 1459"
+  },
+  {
+   "name": "Bikaner",
+   "lonlat": [
+    73.31,
+    28.02
+   ],
+   "what": "Rao Bika's capital, founded 1488"
+  },
+  {
+   "name": "Jaisalmer",
+   "lonlat": [
+    70.91,
+    26.91
+   ],
+   "what": "Bhati capital from 1156"
+  },
+  {
+   "name": "Jalore",
+   "lonlat": [
+    72.62,
+    25.35
+   ],
+   "what": "Chahamana fort"
+  },
+  {
+   "name": "Ranthambore",
+   "lonlat": [
+    76.46,
+    26.02
+   ],
+   "what": "Chahamana fort"
+  },
+  {
+   "name": "Multan",
+   "lonlat": [
+    71.47,
+    30.2
+   ],
+   "what": "seat of the emirate and the Langah sultanate"
+  },
+  {
+   "name": "Uch",
+   "lonlat": [
+    71.06,
+    29.23
+   ],
+   "what": "Qabacha's capital"
+  },
+  {
+   "name": "Thatta",
+   "lonlat": [
+    67.92,
+    24.75
+   ],
+   "what": "Lower Sindh capital"
+  },
+  {
+   "name": "Bukkur",
+   "lonlat": [
+    68.9,
+    27.7
+   ],
+   "what": "Arghun fortress"
+  },
+  {
+   "name": "Sinja",
+   "lonlat": [
+    82.12,
+    29.37
+   ],
+   "what": "Khasa Malla capital"
+  },
+  {
+   "name": "Tsaparang",
+   "lonlat": [
+    79.81,
+    31.48
+   ],
+   "what": "Guge capital"
+  },
+  {
+   "name": "Shey",
+   "lonlat": [
+    77.63,
+    34.07
+   ],
+   "what": "capital of Maryul"
+  },
+  {
+   "name": "Darbhanga",
+   "lonlat": [
+    85.9,
+    26.15
+   ],
+   "what": "second Karnat capital"
+  },
+  {
+   "name": "Sonargaon",
+   "lonlat": [
+    90.6,
+    23.65
+   ],
+   "what": "capital of the Sonargaon sultanate"
+  },
+  {
+   "name": "Pandua",
+   "lonlat": [
+    88.15,
+    25.13
+   ],
+   "what": "Ilyas Shahi capital"
+  },
+  {
+   "name": "Kamatapur (Gosanimari)",
+   "lonlat": [
+    89.36,
+    26.15
+   ],
+   "what": "Kamata capital"
+  },
+  {
+   "name": "Charaideo",
+   "lonlat": [
+    94.86,
+    26.93
+   ],
+   "what": "first Ahom capital"
+  },
+  {
+   "name": "Sadiya",
+   "lonlat": [
+    95.67,
+    27.83
+   ],
+   "what": "Chutia capital"
+  },
+  {
+   "name": "Dimapur",
+   "lonlat": [
+    93.73,
+    25.91
+   ],
+   "what": "Dimasa capital until 1536"
+  },
+  {
+   "name": "Maibang",
+   "lonlat": [
+    93.13,
+    25.3
+   ],
+   "what": "Dimasa capital after 1536"
+  },
+  {
+   "name": "Udaipur (Rangamati)",
+   "lonlat": [
+    91.48,
+    23.53
+   ],
+   "what": "Manikya capital of Tripura"
+  },
+  {
+   "name": "Imphal",
+   "lonlat": [
+    93.94,
+    24.81
+   ],
+   "what": "Meitei capital (Kangla)"
+  },
+  {
+   "name": "Kodungallur",
+   "lonlat": [
+    76.2,
+    10.22
+   ],
+   "what": "Mahodayapuram, Chera Perumal capital"
+  },
+  {
+   "name": "Kollam",
+   "lonlat": [
+    76.6,
+    8.88
+   ],
+   "what": "capital of Venad"
+  },
+  {
+   "name": "Kozhikode",
+   "lonlat": [
+    75.78,
+    11.25
+   ],
+   "what": "Zamorin's port capital"
+  },
+  {
+   "name": "Ezhimala",
+   "lonlat": [
+    75.21,
+    12.03
+   ],
+   "what": "Kolathiri seat"
+  },
+  {
+   "name": "Kochi",
+   "lonlat": [
+    76.26,
+    9.96
+   ],
+   "what": "seat of the Cochin rajas"
+  },
+  {
+   "name": "Gampola",
+   "lonlat": [
+    80.57,
+    7.16
+   ],
+   "what": "Sinhala capital 1341–1412"
+  },
+  {
+   "name": "Kotte",
+   "lonlat": [
+    79.9,
+    6.89
+   ],
+   "what": "Sinhala capital from 1412"
+  },
+  {
+   "name": "Kandy",
+   "lonlat": [
+    80.64,
+    7.29
+   ],
+   "what": "capital of the hill kingdom"
+  },
+  {
+   "name": "Sitawaka",
+   "lonlat": [
+    80.21,
+    6.95
+   ],
+   "what": "Mayadunne's capital"
+  }
+ ],
+ "sources": [
+  {
+   "title": "C. Joppen, Historical Atlas of India (1914), maps 10–14: India in 1022, 1236, 1318, 1398, 1525 (archive.org)",
+   "url": "https://archive.org/details/historicalatlaso00jopprich"
+  },
+  {
+   "title": "J. E. Schwartzberg (ed.), A Historical Atlas of South Asia, plates V.2–V.4 and XIV.3 (DSAL)",
+   "url": "https://dsal.uchicago.edu/reference/schwartzberg/"
+  },
+  {
+   "title": "Wikipedia: Madurai Sultanate",
+   "url": "https://en.wikipedia.org/wiki/Madurai_Sultanate"
+  },
+  {
+   "title": "Wikipedia: Sambuvarayar",
+   "url": "https://en.wikipedia.org/wiki/Sambuvarayar"
+  },
+  {
+   "title": "Wikipedia: Reddi Kingdom",
+   "url": "https://en.wikipedia.org/wiki/Reddi_Kingdom"
+  },
+  {
+   "title": "Wikipedia: Musunuri Nayakas",
+   "url": "https://en.wikipedia.org/wiki/Musunuri_Nayakas"
+  },
+  {
+   "title": "Wikipedia: Recherla Nayakas",
+   "url": "https://en.wikipedia.org/wiki/Recherla_Nayakas"
+  },
+  {
+   "title": "Wikipedia: Eastern Ganga dynasty",
+   "url": "https://en.wikipedia.org/wiki/Eastern_Ganga_dynasty"
+  },
+  {
+   "title": "Wikipedia: Gajapati Empire",
+   "url": "https://en.wikipedia.org/wiki/Gajapati_Empire"
+  },
+  {
+   "title": "Wikipedia: Bhoi dynasty",
+   "url": "https://en.wikipedia.org/wiki/Bhoi_dynasty"
+  },
+  {
+   "title": "Wikipedia: Somavamshi dynasty",
+   "url": "https://en.wikipedia.org/wiki/Somavamshi_dynasty"
+  },
+  {
+   "title": "Wikipedia: Kalachuris of Tripuri",
+   "url": "https://en.wikipedia.org/wiki/Kalachuris_of_Tripuri"
+  },
+  {
+   "title": "Wikipedia: Kalachuris of Ratnapura",
+   "url": "https://en.wikipedia.org/wiki/Kalachuris_of_Ratnapura"
+  },
+  {
+   "title": "Wikipedia: Garha kingdom",
+   "url": "https://en.wikipedia.org/wiki/Garha_kingdom"
+  },
+  {
+   "title": "Wikipedia: Farooqui dynasty",
+   "url": "https://en.wikipedia.org/wiki/Farooqui_dynasty"
+  },
+  {
+   "title": "Wikipedia: Tomaras of Gwalior",
+   "url": "https://en.wikipedia.org/wiki/Tomaras_of_Gwalior"
+  },
+  {
+   "title": "Wikipedia: Malwa Sultanate",
+   "url": "https://en.wikipedia.org/wiki/Malwa_Sultanate"
+  },
+  {
+   "title": "Wikipedia: Paramara dynasty",
+   "url": "https://en.wikipedia.org/wiki/Paramara_dynasty"
+  },
+  {
+   "title": "Wikipedia: Gujarat Sultanate",
+   "url": "https://en.wikipedia.org/wiki/Gujarat_Sultanate"
+  },
+  {
+   "title": "Wikipedia: Vaghela dynasty",
+   "url": "https://en.wikipedia.org/wiki/Vaghela_dynasty"
+  },
+  {
+   "title": "Wikipedia: Chudasama dynasty",
+   "url": "https://en.wikipedia.org/wiki/Chudasama_dynasty"
+  },
+  {
+   "title": "Wikipedia: Champaner",
+   "url": "https://en.wikipedia.org/wiki/Champaner"
+  },
+  {
+   "title": "Wikipedia: Cutch State",
+   "url": "https://en.wikipedia.org/wiki/Cutch_State"
+  },
+  {
+   "title": "Wikipedia: Guhila dynasty",
+   "url": "https://en.wikipedia.org/wiki/Guhila_dynasty"
+  },
+  {
+   "title": "Wikipedia: Kingdom of Mewar",
+   "url": "https://en.wikipedia.org/wiki/Kingdom_of_Mewar"
+  },
+  {
+   "title": "Wikipedia: Kingdom of Marwar",
+   "url": "https://en.wikipedia.org/wiki/Kingdom_of_Marwar"
+  },
+  {
+   "title": "Wikipedia: Bikaner State",
+   "url": "https://en.wikipedia.org/wiki/Bikaner_State"
+  },
+  {
+   "title": "Wikipedia: Kingdom of Jaisalmer",
+   "url": "https://en.wikipedia.org/wiki/Kingdom_of_Jaisalmer"
+  },
+  {
+   "title": "Wikipedia: Chahamanas of Jalor",
+   "url": "https://en.wikipedia.org/wiki/Chahamanas_of_Jalor"
+  },
+  {
+   "title": "Wikipedia: Chahamanas of Ranastambhapura",
+   "url": "https://en.wikipedia.org/wiki/Chahamanas_of_Ranastambhapura"
+  },
+  {
+   "title": "Wikipedia: Emirate of Multan",
+   "url": "https://en.wikipedia.org/wiki/Emirate_of_Multan"
+  },
+  {
+   "title": "Wikipedia: Soomra dynasty",
+   "url": "https://en.wikipedia.org/wiki/Soomra_dynasty"
+  },
+  {
+   "title": "Wikipedia: Nasir ad-Din Qabacha",
+   "url": "https://en.wikipedia.org/wiki/Nasir_ad-Din_Qabacha"
+  },
+  {
+   "title": "Wikipedia: Langah Sultanate",
+   "url": "https://en.wikipedia.org/wiki/Langah_Sultanate"
+  },
+  {
+   "title": "Wikipedia: Arghun dynasty",
+   "url": "https://en.wikipedia.org/wiki/Arghun_dynasty"
+  },
+  {
+   "title": "Wikipedia: Khasa Kingdom",
+   "url": "https://en.wikipedia.org/wiki/Khasa_Kingdom"
+  },
+  {
+   "title": "Wikipedia: Guge",
+   "url": "https://en.wikipedia.org/wiki/Guge"
+  },
+  {
+   "title": "Wikipedia: Kingdom of Maryul",
+   "url": "https://en.wikipedia.org/wiki/Kingdom_of_Maryul"
+  },
+  {
+   "title": "Wikipedia: Karnats of Mithila",
+   "url": "https://en.wikipedia.org/wiki/Karnats_of_Mithila"
+  },
+  {
+   "title": "Wikipedia: Bengal Sultanate",
+   "url": "https://en.wikipedia.org/wiki/Bengal_Sultanate"
+  },
+  {
+   "title": "Wikipedia: Kamata Kingdom",
+   "url": "https://en.wikipedia.org/wiki/Kamata_Kingdom"
+  },
+  {
+   "title": "Wikipedia: Koch dynasty",
+   "url": "https://en.wikipedia.org/wiki/Koch_dynasty"
+  },
+  {
+   "title": "Wikipedia: Ahom kingdom",
+   "url": "https://en.wikipedia.org/wiki/Ahom_kingdom"
+  },
+  {
+   "title": "Wikipedia: Chutia kingdom",
+   "url": "https://en.wikipedia.org/wiki/Chutia_kingdom"
+  },
+  {
+   "title": "Wikipedia: Dimasa Kingdom",
+   "url": "https://en.wikipedia.org/wiki/Dimasa_Kingdom"
+  },
+  {
+   "title": "Wikipedia: Twipra Kingdom",
+   "url": "https://en.wikipedia.org/wiki/Twipra_Kingdom"
+  },
+  {
+   "title": "Wikipedia: Manipur (princely state)",
+   "url": "https://en.wikipedia.org/wiki/Manipur_(princely_state)"
+  },
+  {
+   "title": "Wikipedia: Chera Perumals of Kerala",
+   "url": "https://en.wikipedia.org/wiki/Chera_Perumals_of_Kerala"
+  },
+  {
+   "title": "Wikipedia: Venadu kingdom",
+   "url": "https://en.wikipedia.org/wiki/Venadu_kingdom"
+  },
+  {
+   "title": "Wikipedia: Kolathunadu",
+   "url": "https://en.wikipedia.org/wiki/Kolathunadu"
+  },
+  {
+   "title": "Wikipedia: Zamorin",
+   "url": "https://en.wikipedia.org/wiki/Zamorin"
+  },
+  {
+   "title": "Wikipedia: Kingdom of Cochin",
+   "url": "https://en.wikipedia.org/wiki/Kingdom_of_Cochin"
+  },
+  {
+   "title": "Wikipedia: Kingdom of Gampola",
+   "url": "https://en.wikipedia.org/wiki/Kingdom_of_Gampola"
+  },
+  {
+   "title": "Wikipedia: Kingdom of Kotte",
+   "url": "https://en.wikipedia.org/wiki/Kingdom_of_Kotte"
+  },
+  {
+   "title": "Wikipedia: Kingdom of Kandy",
+   "url": "https://en.wikipedia.org/wiki/Kingdom_of_Kandy"
+  },
+  {
+   "title": "Wikipedia: Kingdom of Sitawaka",
+   "url": "https://en.wikipedia.org/wiki/Kingdom_of_Sitawaka"
+  },
+  {
+   "title": "Wikipedia: Bahmani Sultanate",
+   "url": "https://en.wikipedia.org/wiki/Bahmani_Sultanate"
+  },
+  {
+   "title": "Wikipedia: Vijayanagara Empire",
+   "url": "https://en.wikipedia.org/wiki/Vijayanagara_Empire"
+  }
+ ]
+}
