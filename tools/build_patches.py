@@ -12,6 +12,12 @@ the data files themselves, so the app, the checks and "this place through time" 
   drop_parts  rows of `realm` in `years` lose their polygon pieces that lie wholly inside `box` [w, s, e, n]
   ne          a new row named `name` for `years`, outlined from Natural Earth country `a3`
               (island and enclave states the border data never drew); "replace": true as for copy
+  drop_at     rows of `realm` in `years` lose the polygon pieces that contain any of the points `at`
+  add_parts   rows of `realm` in `years` gain polygon pieces: those of `from` in year `year` (all, or the ones
+              containing the points `at`), or the explicit rings `coords`
+  shape       a new row named `name` for `years` with the explicit rings `coords` (`wiki` and `wd` for its page)
+  holes       rows of `realm` in `years` lose the holes that lie inside `box` and get the rings `coords` as holes
+              in the piece around them (an enclave redrawn, e.g. West Berlin inside the GDR)
 
 Input : content/borders/patches.json, ne_10m_admin_0_countries.geojson (for "ne")
 Output: public/data/clio/<chunk>.json and index.json, edited in place
@@ -43,6 +49,20 @@ def poly_km2(q):
 def row_id(f):
     p = f["properties"]
     return (p["n"], p["f"], p["t"], p["a"], p["k"], json.dumps(f["geometry"]["coordinates"][0][0][:2]))
+
+
+def closed(r):
+    r = [list(p) for p in r]
+    return r if r[0] == r[-1] else r + [r[0]]
+
+
+def orient_ring(r, outer):
+    return bm.orient(r, outer)
+
+
+def inside_poly(pt, q):
+    """pt inside the polygon q (outer ring minus holes)."""
+    return bm.inside(pt, q[0]) and not any(bm.inside(pt, h) for h in q[1:])
 
 
 def overlaps(f, a, b):
@@ -195,6 +215,66 @@ def main():
                 if not dropped[0]:
                     sys.exit(f"patch {patch['id']}: no piece of {op['realm']!r} in {a}-{b} lies wholly inside {op['box']}")
                 tl_edits.append((op["realm"], a, b, None, "recount"))
+            elif kind == "drop_at":
+                hit = [0]
+                def dropat(g, hit=hit):
+                    keep = [q for q in g["geometry"]["coordinates"] if not any(inside_poly(pt, q) for pt in op["at"])]
+                    if len(keep) == len(g["geometry"]["coordinates"]) or not keep:
+                        return g
+                    hit[0] += 1
+                    lost = sum(poly_km2(q) for q in g["geometry"]["coordinates"] if q not in keep)
+                    big = max(keep, key=lambda q: abs(poly_km2(q)))
+                    return piece(g, g["properties"]["f"], g["properties"]["t"], {"a": max(1, round(g["properties"]["a"] - lost)), "l": label_point(big)}, keep)
+                edit(op["realm"], a, b, dropat)
+                if not hit[0]:
+                    sys.exit(f"patch {patch['id']}: no piece of {op['realm']!r} in {a}-{b} contains {op['at']}")
+                tl_edits.append((op["realm"], a, b, None, "recount"))
+            elif kind == "add_parts":
+                if "coords" in op:
+                    extra = [[closed(r)] for r in op["coords"]]
+                else:
+                    src = find(op["from"], op["year"])["geometry"]["coordinates"]
+                    extra = [q for q in src if "at" not in op or any(inside_poly(pt, q) for pt in op["at"])]
+                if not extra:
+                    sys.exit(f"patch {patch['id']}: nothing to add")
+                extra = [[orient_ring(r, k == 0) for k, r in enumerate(q)] for q in extra]
+                gain = sum(poly_km2(q) for q in extra)
+                if not edit(op["realm"], a, b, lambda g: piece(g, g["properties"]["f"], g["properties"]["t"], {"a": round(g["properties"]["a"] + gain)}, g["geometry"]["coordinates"] + extra)):
+                    sys.exit(f"patch {patch['id']}: {op['realm']!r} has no rows in {a}-{b}")
+                tl_edits.append((op["realm"], a, b, None, "recount"))
+            elif kind == "holes":
+                w, s_, e, n = op["box"]
+                rings = [orient_ring(closed(r), False) for r in op["coords"]]
+                done = [0]
+                def reh(g, done=done):
+                    polys = []
+                    delta = 0.0
+                    for q in g["geometry"]["coordinates"]:
+                        keep = [h for h in q[1:] if not all(w <= x <= e and s_ <= y <= n for x, y in h)]
+                        delta -= sum(ring_km2(h) for h in q[1:] if h not in keep)
+                        if bm.inside(rings[0][0], q[0]):
+                            keep += rings
+                            delta += sum(ring_km2(r) for r in rings)
+                            done[0] += 1
+                        polys.append([q[0]] + keep)
+                    return piece(g, g["properties"]["f"], g["properties"]["t"], {"a": max(1, round(g["properties"]["a"] - delta))}, polys)
+                edit(op["realm"], a, b, reh)
+                if not done[0]:
+                    sys.exit(f"patch {patch['id']}: no piece of {op['realm']!r} in {a}-{b} surrounds the new hole")
+                tl_edits.append((op["realm"], a, b, None, "recount"))
+            elif kind == "shape":
+                name = op["name"]
+                if has_rows(name, a, b):
+                    sys.exit(f"patch {patch['id']}: {name!r} already has rows in {a}-{b}")
+                polys = [[orient_ring(closed(r), True)] for r in op["coords"]]
+                area = max(1, round(sum(poly_km2(q) for q in polys)))
+                big = max(polys, key=lambda q: abs(poly_km2(q)))
+                f = {"type": "Feature", "properties": {"n": name, "f": a, "t": b, "a": area, "k": name, "l": label_point(big)},
+                     "geometry": {"type": "MultiPolygon", "coordinates": polys}}
+                added.append((None, f))
+                if name not in idx["realms"] and op.get("wiki"):
+                    idx["realms"][name] = {"wiki": op["wiki"], "tl": [], **({"wd": op["wd"]} if op.get("wd") else {})}
+                tl_edits.append((name, a, b, area, None))
             else:
                 sys.exit(f"patch {patch['id']}: unknown op {kind!r}")
 

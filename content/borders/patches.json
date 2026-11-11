@@ -40,6 +40,441 @@
    ]
   },
   {
+   "id": "berlin-1949-1990",
+   "note": "From 1949 to 1990 East Berlin was the capital of the German Democratic Republic and West Berlin a separate city tied to the Federal Republic, under the Western Allies. The border data draws East Berlin as part of the Soviet Union, the American, British and French sectors of West Berlin as parts of those countries, all of Berlin as East German in 1973-1975, and the city about 8 km north of where it is. West Berlin is redrawn from its boundary (Glienicke Bridge, Staaken, Spandau, Frohnau, the Wall at Bornholmer Straße, the Brandenburg Gate, Checkpoint Charlie and the Oberbaum Bridge, Rudow, Lichtenrade), cut out of the GDR, and East Berlin is part of the GDR.",
+   "ops": [
+    {
+     "op": "geometry",
+     "realm": "German Democratic Republic",
+     "years": [
+      1973,
+      1975
+     ],
+     "year": 1976
+    },
+    {
+     "op": "holes",
+     "realm": "German Democratic Republic",
+     "years": [
+      1949,
+      1990
+     ],
+     "box": [
+      12.9,
+      52.3,
+      13.9,
+      52.8
+     ],
+     "coords": [
+      [
+       [
+        13.3,
+        52.675
+       ],
+       [
+        13.335,
+        52.655
+       ],
+       [
+        13.365,
+        52.64
+       ],
+       [
+        13.385,
+        52.628
+       ],
+       [
+        13.372,
+        52.6
+       ],
+       [
+        13.37,
+        52.585
+       ],
+       [
+        13.385,
+        52.565
+       ],
+       [
+        13.398,
+        52.555
+       ],
+       [
+        13.392,
+        52.54
+       ],
+       [
+        13.381,
+        52.531
+       ],
+       [
+        13.375,
+        52.522
+       ],
+       [
+        13.377,
+        52.516
+       ],
+       [
+        13.376,
+        52.509
+       ],
+       [
+        13.39,
+        52.507
+       ],
+       [
+        13.41,
+        52.507
+       ],
+       [
+        13.43,
+        52.503
+       ],
+       [
+        13.446,
+        52.502
+       ],
+       [
+        13.46,
+        52.49
+       ],
+       [
+        13.471,
+        52.477
+       ],
+       [
+        13.49,
+        52.455
+       ],
+       [
+        13.52,
+        52.43
+       ],
+       [
+        13.505,
+        52.405
+       ],
+       [
+        13.455,
+        52.4
+       ],
+       [
+        13.4,
+        52.375
+       ],
+       [
+        13.36,
+        52.39
+       ],
+       [
+        13.3,
+        52.4
+       ],
+       [
+        13.25,
+        52.41
+       ],
+       [
+        13.17,
+        52.395
+       ],
+       [
+        13.12,
+        52.392
+       ],
+       [
+        13.09,
+        52.413
+       ],
+       [
+        13.11,
+        52.44
+       ],
+       [
+        13.14,
+        52.47
+       ],
+       [
+        13.12,
+        52.53
+       ],
+       [
+        13.115,
+        52.56
+       ],
+       [
+        13.18,
+        52.6
+       ],
+       [
+        13.215,
+        52.62
+       ],
+       [
+        13.27,
+        52.66
+       ],
+       [
+        13.3,
+        52.675
+       ]
+      ]
+     ]
+    },
+    {
+     "op": "drop_at",
+     "realm": "Union of Soviet Socialist Republics",
+     "years": [
+      1949,
+      1990
+     ],
+     "at": [
+      [
+       13.55,
+       52.6
+      ]
+     ]
+    },
+    {
+     "op": "shape",
+     "name": "West Berlin",
+     "years": [
+      1949,
+      1990
+     ],
+     "coords": [
+      [
+       [
+        13.3,
+        52.675
+       ],
+       [
+        13.335,
+        52.655
+       ],
+       [
+        13.365,
+        52.64
+       ],
+       [
+        13.385,
+        52.628
+       ],
+       [
+        13.372,
+        52.6
+       ],
+       [
+        13.37,
+        52.585
+       ],
+       [
+        13.385,
+        52.565
+       ],
+       [
+        13.398,
+        52.555
+       ],
+       [
+        13.392,
+        52.54
+       ],
+       [
+        13.381,
+        52.531
+       ],
+       [
+        13.375,
+        52.522
+       ],
+       [
+        13.377,
+        52.516
+       ],
+       [
+        13.376,
+        52.509
+       ],
+       [
+        13.39,
+        52.507
+       ],
+       [
+        13.41,
+        52.507
+       ],
+       [
+        13.43,
+        52.503
+       ],
+       [
+        13.446,
+        52.502
+       ],
+       [
+        13.46,
+        52.49
+       ],
+       [
+        13.471,
+        52.477
+       ],
+       [
+        13.49,
+        52.455
+       ],
+       [
+        13.52,
+        52.43
+       ],
+       [
+        13.505,
+        52.405
+       ],
+       [
+        13.455,
+        52.4
+       ],
+       [
+        13.4,
+        52.375
+       ],
+       [
+        13.36,
+        52.39
+       ],
+       [
+        13.3,
+        52.4
+       ],
+       [
+        13.25,
+        52.41
+       ],
+       [
+        13.17,
+        52.395
+       ],
+       [
+        13.12,
+        52.392
+       ],
+       [
+        13.09,
+        52.413
+       ],
+       [
+        13.11,
+        52.44
+       ],
+       [
+        13.14,
+        52.47
+       ],
+       [
+        13.12,
+        52.53
+       ],
+       [
+        13.115,
+        52.56
+       ],
+       [
+        13.18,
+        52.6
+       ],
+       [
+        13.215,
+        52.62
+       ],
+       [
+        13.27,
+        52.66
+       ],
+       [
+        13.3,
+        52.675
+       ]
+      ]
+     ],
+     "wiki": "West Berlin",
+     "wd": "Q56036"
+    },
+    {
+     "op": "drop_parts",
+     "realm": "United States of America",
+     "years": [
+      1949,
+      1990
+     ],
+     "box": [
+      13.1,
+      52.4,
+      13.5,
+      52.75
+     ]
+    },
+    {
+     "op": "drop_parts",
+     "realm": "Kingdom of Great Britain",
+     "years": [
+      1949,
+      1990
+     ],
+     "box": [
+      13.1,
+      52.4,
+      13.5,
+      52.75
+     ]
+    },
+    {
+     "op": "drop_parts",
+     "realm": "French Fourth Republic",
+     "years": [
+      1949,
+      1958
+     ],
+     "box": [
+      13.1,
+      52.4,
+      13.5,
+      52.75
+     ]
+    },
+    {
+     "op": "drop_parts",
+     "realm": "French Fifth Republic",
+     "years": [
+      1958,
+      1990
+     ],
+     "box": [
+      13.1,
+      52.4,
+      13.5,
+      52.75
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: East Berlin",
+     "url": "https://en.wikipedia.org/wiki/East_Berlin"
+    },
+    {
+     "title": "Wikipedia: West Berlin",
+     "url": "https://en.wikipedia.org/wiki/West_Berlin"
+    },
+    {
+     "title": "Wikipedia: Berlin Wall",
+     "url": "https://en.wikipedia.org/wiki/Berlin_Wall"
+    }
+   ]
+  },
+  {
    "id": "czechoslovakia-1945-1990",
    "note": "Czechoslovakia was restored as a state in 1945 and existed until 31 December 1992. The border data leaves it out in 1945-1946 and 1969-1990, when it draws the country as Soviet; its 1953-1968 outline is used for those years. Soviet forces left in December 1945 and were stationed again from 1968 to 1991.",
    "ops": [
@@ -992,6 +1427,197 @@
     {
      "title": "Wikipedia: Oman",
      "url": "https://en.wikipedia.org/wiki/Oman"
+    }
+   ]
+  },
+  {
+   "id": "oman-not-british",
+   "note": "The Sultanate of Muscat and Oman (renamed the Sultanate of Oman in August 1970) was an independent state with close British ties, never a British colony or protectorate. The border data draws Muscat and Salalah as British from the 1920s and all of Oman as British from 1956 to 1971, merged with the Trucial States (British-protected, today's United Arab Emirates) and the Aden protectorates. Oman is drawn as its own state, with its 1973 outline from 1956, and the British shape keeps only the Trucial States and, until 1967, Aden. (In 1947-1955 the border data files Oman's outline under the name Qatar Protectorate, which the corrections layer shows as the Sultanate of Muscat and Oman.)",
+   "ops": [
+    {
+     "op": "add_parts",
+     "realm": "Sultanate of Muscat and Oman",
+     "years": [
+      1920,
+      1946
+     ],
+     "from": "Kingdom of Great Britain",
+     "year": 1930,
+     "at": [
+      [
+       58.4,
+       23.6
+      ]
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Sultanate of Muscat and Oman",
+     "years": [
+      1922,
+      1946
+     ],
+     "from": "Kingdom of Great Britain",
+     "year": 1930,
+     "at": [
+      [
+       54.09,
+       17.02
+      ]
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Qatar Protectorate",
+     "years": [
+      1947,
+      1955
+     ],
+     "from": "Kingdom of Great Britain",
+     "year": 1930,
+     "at": [
+      [
+       58.4,
+       23.6
+      ],
+      [
+       54.09,
+       17.02
+      ]
+     ]
+    },
+    {
+     "op": "drop_at",
+     "realm": "Kingdom of Great Britain",
+     "years": [
+      1920,
+      1955
+     ],
+     "at": [
+      [
+       58.4,
+       23.6
+      ],
+      [
+       54.09,
+       17.02
+      ]
+     ]
+    },
+    {
+     "op": "drop_at",
+     "realm": "Kingdom of Great Britain",
+     "years": [
+      1956,
+      1971
+     ],
+     "at": [
+      [
+       58.4,
+       23.6
+      ],
+      [
+       58.85,
+       20.4
+      ]
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Kingdom of Great Britain",
+     "years": [
+      1956,
+      1967
+     ],
+     "from": "People's Democratic Republic of Yemen",
+     "year": 1969,
+     "at": [
+      [
+       47.0,
+       15.0
+      ]
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Kingdom of Great Britain",
+     "years": [
+      1956,
+      1971
+     ],
+     "from": "United Arab Emirates",
+     "year": 1973
+    },
+    {
+     "op": "copy",
+     "realm": "Sultanate of Oman",
+     "year": 1973,
+     "name": "Sultanate of Muscat and Oman",
+     "years": [
+      1956,
+      1969
+     ]
+    },
+    {
+     "op": "copy",
+     "realm": "Sultanate of Oman",
+     "year": 1973,
+     "years": [
+      1970,
+      1971
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Muscat and Oman",
+     "url": "https://en.wikipedia.org/wiki/Muscat_and_Oman"
+    },
+    {
+     "title": "Wikipedia: Trucial States",
+     "url": "https://en.wikipedia.org/wiki/Trucial_States"
+    },
+    {
+     "title": "Wikipedia: Oman–United Kingdom relations",
+     "url": "https://en.wikipedia.org/wiki/Oman%E2%80%93United_Kingdom_relations"
+    }
+   ]
+  },
+  {
+   "id": "malaysia-singapore-brunei",
+   "note": "Malaysia's shape still contains Singapore after its separation on 9 August 1965, and a strip of Brunei until 1986; from 1984 it also lacks Limbang (part of Sarawak, so Malaysian since 1963). Malaysia's 1967 outline (without Singapore) is used for 1965-1966 and its 1987 outline (with Limbang, without Brunei) for 1984-1986.",
+   "ops": [
+    {
+     "op": "geometry",
+     "realm": "Malaysia",
+     "years": [
+      1965,
+      1966
+     ],
+     "year": 1967
+    },
+    {
+     "op": "geometry",
+     "realm": "Malaysia",
+     "years": [
+      1984,
+      1986
+     ],
+     "year": 1987
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Singapore in Malaysia",
+     "url": "https://en.wikipedia.org/wiki/Singapore_in_Malaysia"
+    },
+    {
+     "title": "Wikipedia: Limbang District",
+     "url": "https://en.wikipedia.org/wiki/Limbang_District"
+    },
+    {
+     "title": "Wikipedia: Brunei",
+     "url": "https://en.wikipedia.org/wiki/Brunei"
     }
    ]
   }
