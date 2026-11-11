@@ -1,0 +1,9265 @@
+{
+ "id": "eu-west",
+ "title": "Western and central Europe: states the border data leaves out, 430–1956",
+ "from": 410,
+ "to": 1956,
+ "replaces": [],
+ "summary": "The border data draws Europe's great kingdoms but folds most of the Holy Roman Empire into one 'minor states' blob, leaves early medieval Ireland and Pictland empty, and colours many Italian and Low Countries states as their nominal overlords. This layer adds them: the Irish kingdoms of Meath, Osraige, Breifne, Thomond, Desmond and Tyrconnell, Pictish Fortriu, the Welsh kingdoms of Dyfed, Ceredigion and Deheubarth, Elmet, the taifas of Málaga, Majorca and Menorca, the prince-bishoprics of Liège and Utrecht, Guelders, Brabant, Namur, Limburg, Luxembourg, Cleves and Jülich, Bar and Provence, the Electoral Palatinate, Mainz, Hesse, the Welf principalities, Württemberg, Baden, Ansbach, Bayreuth, Nuremberg, Salzburg, Meissen, Saxe-Wittenberg, Saxe-Lauenburg, Oldenburg and Pomerania, the Visconti, Gonzaga, Este, Montefeltro and Appiani states, Siena, Lucca and Gaeta, and in the 20th century the four occupation zones of Germany, the Saar Protectorate and the Free Territory of Trieste. Dates come from cited reference works; borders are simplified reconstructions checked against Shepherd's Historical Atlas. Small exclaves are left out and every line is approximate.",
+ "regions": [
+  {
+   "name": "Kingdom of Meath (Mide)",
+   "key": "Kingdom of Meath",
+   "kind": "kingdom",
+   "from": 800,
+   "to": 1172,
+   "capital": "Tara (ceremonial); seats near Mullingar",
+   "rulers": [
+    {
+     "name": "Máel Sechnaill mac Máele Ruanaid",
+     "when": "d. 862"
+    },
+    {
+     "name": "Donnchad Donn",
+     "when": "d. 944"
+    },
+    {
+     "name": "Máel Sechnaill mac Domnaill",
+     "when": "975–1022"
+    },
+    {
+     "name": "Murchad Ua Máel Sechlainn",
+     "when": "d. 1153"
+    }
+   ],
+   "note": "Mide, the midland kingdom of the southern Uí Néill (Clann Cholmáin), whose kings were often High Kings of Ireland. Drawn at its 12th-century extent (Meath and Westmeath with parts of Longford and Offaly), which Henry II granted to Hugh de Lacy as the Lordship of Meath in 1172; north County Dublin (Fingal) is left to the Norse kingdom of Dublin. Brega in the east was a separate Uí Néill kingdom for much of the 8th–10th centuries, so the early extent is generous. Wikidata's start date (100) is legendary; drawn from 800.",
+   "coords": [
+    [
+     -6.15,
+     53.62
+    ],
+    [
+     -6.22,
+     53.74
+    ],
+    [
+     -6.4,
+     53.85
+    ],
+    [
+     -6.75,
+     53.9
+    ],
+    [
+     -7.05,
+     53.85
+    ],
+    [
+     -7.3,
+     53.82
+    ],
+    [
+     -7.55,
+     53.78
+    ],
+    [
+     -7.8,
+     53.72
+    ],
+    [
+     -7.98,
+     53.66
+    ],
+    [
+     -7.95,
+     53.5
+    ],
+    [
+     -7.95,
+     53.38
+    ],
+    [
+     -8.02,
+     53.3
+    ],
+    [
+     -7.7,
+     53.26
+    ],
+    [
+     -7.4,
+     53.25
+    ],
+    [
+     -7.1,
+     53.3
+    ],
+    [
+     -6.85,
+     53.35
+    ],
+    [
+     -6.55,
+     53.37
+    ],
+    [
+     -6.4,
+     53.45
+    ],
+    [
+     -6.3,
+     53.55
+    ],
+    [
+     -6.15,
+     53.62
+    ]
+   ]
+  },
+  {
+   "name": "Kingdom of Osraige (Ossory)",
+   "key": "Kingdom of Osraige",
+   "kind": "kingdom",
+   "from": 800,
+   "to": 1169,
+   "capital": "Kilkenny area (Achad Bó, later Kilkenny)",
+   "rulers": [
+    {
+     "name": "Cerball mac Dúnlainge",
+     "when": "842–888"
+    },
+    {
+     "name": "Donnchad mac Gilla Pátraic",
+     "when": "d. 1039"
+    }
+   ],
+   "note": "Osraige (Ossory), the kingdom between Leinster and Munster in what is now County Kilkenny and south Laois, at its height under Cerball mac Dúnlainge in the 9th century. Ends with the Anglo-Norman invasion of 1169, after which Ossory became part of the Lordship of Ireland. Western boundary on the Suir and the Slieve Bloom foothills is approximate; drawn from 800 (Wikidata gives a legendary 150).",
+   "coords": [
+    [
+     -7.55,
+     53.0
+    ],
+    [
+     -7.2,
+     53.02
+    ],
+    [
+     -7.0,
+     52.85
+    ],
+    [
+     -6.95,
+     52.6
+    ],
+    [
+     -7.0,
+     52.4
+    ],
+    [
+     -6.98,
+     52.25
+    ],
+    [
+     -7.15,
+     52.27
+    ],
+    [
+     -7.35,
+     52.3
+    ],
+    [
+     -7.5,
+     52.45
+    ],
+    [
+     -7.6,
+     52.6
+    ],
+    [
+     -7.62,
+     52.82
+    ],
+    [
+     -7.55,
+     53.0
+    ]
+   ]
+  },
+  {
+   "name": "Kingdom of Breifne",
+   "key": "Kingdom of Breifne",
+   "kind": "kingdom",
+   "from": 1000,
+   "to": 1256,
+   "capital": "Dromahair (Uí Ruairc seat)",
+   "rulers": [
+    {
+     "name": "Fergal Ua Ruairc",
+     "when": "d. 966"
+    },
+    {
+     "name": "Tigernán Ua Ruairc",
+     "when": "c. 1124–1172"
+    }
+   ],
+   "note": "Bréifne, the kingdom of the Uí Ruairc (O'Rourkes) in Leitrim and Cavan, which under Tigernán Ua Ruairc in the 12th century also pushed into Meath. Split in 1256 into West Breifne (O'Rourke) and East Breifne (O'Reilly). Drawn from 1000 at the Leitrim–Cavan extent; the eastern limit toward Kells shifted often.",
+   "coords": [
+    [
+     -6.75,
+     53.9
+    ],
+    [
+     -6.9,
+     54.02
+    ],
+    [
+     -7.2,
+     54.12
+    ],
+    [
+     -7.45,
+     54.15
+    ],
+    [
+     -7.65,
+     54.22
+    ],
+    [
+     -7.85,
+     54.35
+    ],
+    [
+     -8.05,
+     54.42
+    ],
+    [
+     -8.2,
+     54.47
+    ],
+    [
+     -8.35,
+     54.48
+    ],
+    [
+     -8.4,
+     54.38
+    ],
+    [
+     -8.3,
+     54.27
+    ],
+    [
+     -8.2,
+     54.15
+    ],
+    [
+     -8.15,
+     54.02
+    ],
+    [
+     -8.05,
+     53.85
+    ],
+    [
+     -7.98,
+     53.66
+    ],
+    [
+     -7.8,
+     53.72
+    ],
+    [
+     -7.55,
+     53.78
+    ],
+    [
+     -7.3,
+     53.82
+    ],
+    [
+     -7.05,
+     53.85
+    ],
+    [
+     -6.75,
+     53.9
+    ]
+   ]
+  },
+  {
+   "name": "Kingdom of Thomond",
+   "key": "Kingdom of Thomond",
+   "kind": "kingdom",
+   "from": 1118,
+   "to": 1194,
+   "capital": "Limerick, later Clonroad (Ennis)",
+   "rulers": [
+    {
+     "name": "Conchobar Ua Briain",
+     "when": "d. 1142"
+    },
+    {
+     "name": "Toirdelbach Ua Briain",
+     "when": "d. 1167"
+    },
+    {
+     "name": "Domnall Mór Ua Briain",
+     "when": "1168–1194"
+    },
+    {
+     "name": "Murchad Carrach Ó Briain",
+     "when": "1539–1543, then 1st Earl of Thomond"
+    }
+   ],
+   "note": "Tuadmumu, the O'Brien kingdom of north Munster, created when Munster was partitioned with the MacCarthys of Desmond in 1118 (Treaty of Glanmire). Until the Anglo-Normans took Limerick (c. 1195) it held Clare, Limerick and north Tipperary; afterwards it was reduced to Clare and the lands west of the Shannon. Murchad O'Brien surrendered it to Henry VIII in 1543 under surrender and regrant.",
+   "coords": [
+    [
+     -9.95,
+     52.55
+    ],
+    [
+     -10.2,
+     52.8
+    ],
+    [
+     -9.6,
+     53.15
+    ],
+    [
+     -9.0,
+     53.16
+    ],
+    [
+     -8.75,
+     53.07
+    ],
+    [
+     -8.45,
+     53.05
+    ],
+    [
+     -8.2,
+     53.08
+    ],
+    [
+     -7.95,
+     53.12
+    ],
+    [
+     -7.75,
+     53.0
+    ],
+    [
+     -7.62,
+     52.82
+    ],
+    [
+     -7.6,
+     52.6
+    ],
+    [
+     -7.85,
+     52.45
+    ],
+    [
+     -8.0,
+     52.35
+    ],
+    [
+     -8.2,
+     52.3
+    ],
+    [
+     -8.5,
+     52.25
+    ],
+    [
+     -8.85,
+     52.2
+    ],
+    [
+     -9.15,
+     52.25
+    ],
+    [
+     -9.25,
+     52.35
+    ],
+    [
+     -9.36,
+     52.58
+    ],
+    [
+     -9.95,
+     52.55
+    ]
+   ]
+  },
+  {
+   "name": "Kingdom of Thomond",
+   "key": "Kingdom of Thomond",
+   "kind": "kingdom",
+   "from": 1195,
+   "to": 1543,
+   "capital": "Limerick, later Clonroad (Ennis)",
+   "rulers": [
+    {
+     "name": "Conchobar Ua Briain",
+     "when": "d. 1142"
+    },
+    {
+     "name": "Toirdelbach Ua Briain",
+     "when": "d. 1167"
+    },
+    {
+     "name": "Domnall Mór Ua Briain",
+     "when": "1168–1194"
+    },
+    {
+     "name": "Murchad Carrach Ó Briain",
+     "when": "1539–1543, then 1st Earl of Thomond"
+    }
+   ],
+   "note": "Tuadmumu, the O'Brien kingdom of north Munster, created when Munster was partitioned with the MacCarthys of Desmond in 1118 (Treaty of Glanmire). Until the Anglo-Normans took Limerick (c. 1195) it held Clare, Limerick and north Tipperary; afterwards it was reduced to Clare and the lands west of the Shannon. Murchad O'Brien surrendered it to Henry VIII in 1543 under surrender and regrant.",
+   "coords": [
+    [
+     -9.95,
+     52.55
+    ],
+    [
+     -10.2,
+     52.8
+    ],
+    [
+     -9.6,
+     53.15
+    ],
+    [
+     -9.0,
+     53.16
+    ],
+    [
+     -8.75,
+     53.07
+    ],
+    [
+     -8.45,
+     53.05
+    ],
+    [
+     -8.35,
+     52.95
+    ],
+    [
+     -8.42,
+     52.82
+    ],
+    [
+     -8.55,
+     52.7
+    ],
+    [
+     -8.65,
+     52.66
+    ],
+    [
+     -9.0,
+     52.6
+    ],
+    [
+     -9.36,
+     52.58
+    ],
+    [
+     -9.95,
+     52.55
+    ]
+   ]
+  },
+  {
+   "name": "Kingdom of Desmond",
+   "key": "Kingdom of Desmond",
+   "kind": "kingdom",
+   "from": 1118,
+   "to": 1176,
+   "capital": "Cork area; later Pallis (MacCarthy Mór)",
+   "rulers": [
+    {
+     "name": "Tadhg Mac Carthaig",
+     "when": "1118–1123"
+    },
+    {
+     "name": "Cormac Mac Carthaig",
+     "when": "1123–1138"
+    },
+    {
+     "name": "Diarmait Mac Carthaig",
+     "when": "1143–1185"
+    },
+    {
+     "name": "Domhnall IX MacCarthy Mór",
+     "when": "d. 1596, Earl of Clancare"
+    }
+   ],
+   "note": "Deasmumhain, the MacCarthy kingdom of south Munster from the 1118 partition. Before the Anglo-Norman advance (Cork fell in 1177) it held Cork, Kerry, west Waterford and south Tipperary; after it the MacCarthy Mór kingdom survived in south Kerry and west Cork until the death of Domhnall MacCarthy Mór in 1596. Not to be confused with the FitzGerald Earldom of Desmond, which the border data draws.",
+   "coords": [
+    [
+     -9.36,
+     52.58
+    ],
+    [
+     -9.25,
+     52.35
+    ],
+    [
+     -9.15,
+     52.25
+    ],
+    [
+     -8.85,
+     52.2
+    ],
+    [
+     -8.5,
+     52.25
+    ],
+    [
+     -8.2,
+     52.3
+    ],
+    [
+     -8.0,
+     52.35
+    ],
+    [
+     -7.85,
+     52.45
+    ],
+    [
+     -7.6,
+     52.6
+    ],
+    [
+     -7.5,
+     52.45
+    ],
+    [
+     -7.35,
+     52.3
+    ],
+    [
+     -6.95,
+     52.15
+    ],
+    [
+     -7.0,
+     51.85
+    ],
+    [
+     -8.4,
+     51.45
+    ],
+    [
+     -10.0,
+     51.35
+    ],
+    [
+     -10.75,
+     51.8
+    ],
+    [
+     -10.5,
+     52.3
+    ],
+    [
+     -9.95,
+     52.55
+    ],
+    [
+     -9.36,
+     52.58
+    ]
+   ]
+  },
+  {
+   "name": "Kingdom of Desmond (MacCarthy Mór)",
+   "key": "Kingdom of Desmond",
+   "kind": "kingdom",
+   "from": 1177,
+   "to": 1596,
+   "capital": "Cork area; later Pallis (MacCarthy Mór)",
+   "rulers": [
+    {
+     "name": "Tadhg Mac Carthaig",
+     "when": "1118–1123"
+    },
+    {
+     "name": "Cormac Mac Carthaig",
+     "when": "1123–1138"
+    },
+    {
+     "name": "Diarmait Mac Carthaig",
+     "when": "1143–1185"
+    },
+    {
+     "name": "Domhnall IX MacCarthy Mór",
+     "when": "d. 1596, Earl of Clancare"
+    }
+   ],
+   "note": "Deasmumhain, the MacCarthy kingdom of south Munster from the 1118 partition. Before the Anglo-Norman advance (Cork fell in 1177) it held Cork, Kerry, west Waterford and south Tipperary; after it the MacCarthy Mór kingdom survived in south Kerry and west Cork until the death of Domhnall MacCarthy Mór in 1596. Not to be confused with the FitzGerald Earldom of Desmond, which the border data draws.",
+   "coords": [
+    [
+     -10.5,
+     52.25
+    ],
+    [
+     -9.7,
+     52.2
+    ],
+    [
+     -9.3,
+     52.1
+    ],
+    [
+     -9.0,
+     52.0
+    ],
+    [
+     -8.85,
+     51.85
+    ],
+    [
+     -8.95,
+     51.6
+    ],
+    [
+     -9.1,
+     51.45
+    ],
+    [
+     -10.0,
+     51.35
+    ],
+    [
+     -10.75,
+     51.8
+    ],
+    [
+     -10.5,
+     52.25
+    ]
+   ]
+  },
+  {
+   "name": "Tyrconnell (Tír Chonaill)",
+   "key": "Tyrconnell",
+   "kind": "kingdom",
+   "from": 1200,
+   "to": 1607,
+   "capital": "Donegal",
+   "rulers": [
+    {
+     "name": "Domhnall Mór Ó Domhnaill",
+     "when": "1208–1241"
+    },
+    {
+     "name": "Aodh Ruadh Ó Domhnaill (Red Hugh)",
+     "when": "1592–1602"
+    },
+    {
+     "name": "Ruaidhrí Ó Domhnaill",
+     "when": "1602–1607, Earl of Tyrconnell"
+    }
+   ],
+   "note": "Tír Chonaill, the O'Donnell lordship of what is now County Donegal (with Inishowen under its O'Doherty sub-kings). It ended with the Flight of the Earls in 1607 and the Plantation of Ulster. Drawn from 1200, when the O'Donnells were established as its kings; Cenél Conaill rule there is much older (Wikidata gives 401). O'Donnell overlordship over Fermanagh and north Connacht is not drawn.",
+   "coords": [
+    [
+     -6.95,
+     55.2
+    ],
+    [
+     -7.15,
+     55.05
+    ],
+    [
+     -7.3,
+     54.98
+    ],
+    [
+     -7.42,
+     54.88
+    ],
+    [
+     -7.5,
+     54.8
+    ],
+    [
+     -7.7,
+     54.68
+    ],
+    [
+     -7.85,
+     54.58
+    ],
+    [
+     -8.0,
+     54.52
+    ],
+    [
+     -8.19,
+     54.49
+    ],
+    [
+     -8.4,
+     54.5
+    ],
+    [
+     -8.9,
+     54.6
+    ],
+    [
+     -8.9,
+     54.95
+    ],
+    [
+     -8.4,
+     55.35
+    ],
+    [
+     -7.6,
+     55.45
+    ],
+    [
+     -7.0,
+     55.35
+    ],
+    [
+     -6.95,
+     55.2
+    ]
+   ]
+  },
+  {
+   "name": "Fortriu (northern Picts)",
+   "key": "Fortriu",
+   "kind": "kingdom",
+   "from": 430,
+   "to": 684,
+   "capital": "Burghead / Craig Phadrig (Moray)",
+   "rulers": [
+    {
+     "name": "Bridei son of Maelchon",
+     "when": "d. c. 584"
+    },
+    {
+     "name": "Bridei son of Beli",
+     "when": "c. 671–693"
+    },
+    {
+     "name": "Óengus son of Fergus",
+     "when": "729–761"
+    },
+    {
+     "name": "Constantín son of Fergus",
+     "when": "789–820"
+    }
+   ],
+   "note": "Fortriu, the leading Pictish kingdom, now generally placed north of the Mounth around the Moray Firth (Woolf 2006) rather than in Strathearn. Its kings became kings of all the Picts after Bridei son of Beli defeated Northumbria at Dun Nechtain in 685; the second slice shows that Pictish kingdom north of the Forth, minus Dál Riata in Argyll. It merged with Dál Riata into the kingdom of Alba under Kenneth MacAlpin c. 843–848. Frontiers are conjectural; Orkney and Shetland are not drawn.",
+   "coords": [
+    [
+     -2.1,
+     56.95
+    ],
+    [
+     -2.9,
+     56.88
+    ],
+    [
+     -3.8,
+     56.82
+    ],
+    [
+     -4.6,
+     56.78
+    ],
+    [
+     -5.15,
+     56.82
+    ],
+    [
+     -5.8,
+     56.72
+    ],
+    [
+     -6.3,
+     56.75
+    ],
+    [
+     -6.6,
+     57.5
+    ],
+    [
+     -6.3,
+     58.3
+    ],
+    [
+     -5.0,
+     58.7
+    ],
+    [
+     -3.0,
+     58.75
+    ],
+    [
+     -2.8,
+     58.55
+    ],
+    [
+     -3.5,
+     58.0
+    ],
+    [
+     -3.9,
+     57.7
+    ],
+    [
+     -1.7,
+     57.7
+    ],
+    [
+     -1.7,
+     57.2
+    ],
+    [
+     -2.1,
+     56.95
+    ]
+   ]
+  },
+  {
+   "name": "Pictland (kingdom of Fortriu)",
+   "key": "Fortriu",
+   "kind": "kingdom",
+   "from": 685,
+   "to": 848,
+   "capital": "Burghead / Craig Phadrig (Moray)",
+   "rulers": [
+    {
+     "name": "Bridei son of Maelchon",
+     "when": "d. c. 584"
+    },
+    {
+     "name": "Bridei son of Beli",
+     "when": "c. 671–693"
+    },
+    {
+     "name": "Óengus son of Fergus",
+     "when": "729–761"
+    },
+    {
+     "name": "Constantín son of Fergus",
+     "when": "789–820"
+    }
+   ],
+   "note": "Fortriu, the leading Pictish kingdom, now generally placed north of the Mounth around the Moray Firth (Woolf 2006) rather than in Strathearn. Its kings became kings of all the Picts after Bridei son of Beli defeated Northumbria at Dun Nechtain in 685; the second slice shows that Pictish kingdom north of the Forth, minus Dál Riata in Argyll. It merged with Dál Riata into the kingdom of Alba under Kenneth MacAlpin c. 843–848. Frontiers are conjectural; Orkney and Shetland are not drawn.",
+   "coords": [
+    [
+     -2.5,
+     56.25
+    ],
+    [
+     -2.9,
+     56.05
+    ],
+    [
+     -3.4,
+     56.02
+    ],
+    [
+     -3.95,
+     56.1
+    ],
+    [
+     -4.3,
+     56.15
+    ],
+    [
+     -4.65,
+     56.25
+    ],
+    [
+     -4.75,
+     56.6
+    ],
+    [
+     -5.15,
+     56.82
+    ],
+    [
+     -5.8,
+     56.72
+    ],
+    [
+     -6.3,
+     56.75
+    ],
+    [
+     -6.6,
+     57.5
+    ],
+    [
+     -6.3,
+     58.3
+    ],
+    [
+     -5.0,
+     58.7
+    ],
+    [
+     -3.0,
+     58.75
+    ],
+    [
+     -2.8,
+     58.55
+    ],
+    [
+     -3.5,
+     58.0
+    ],
+    [
+     -3.9,
+     57.7
+    ],
+    [
+     -1.7,
+     57.7
+    ],
+    [
+     -1.7,
+     57.2
+    ],
+    [
+     -2.0,
+     56.8
+    ],
+    [
+     -2.5,
+     56.25
+    ]
+   ]
+  },
+  {
+   "name": "Kingdom of Dyfed",
+   "key": "Kingdom of Dyfed",
+   "kind": "kingdom",
+   "from": 410,
+   "to": 919,
+   "capital": "St Davids / Narberth area",
+   "rulers": [
+    {
+     "name": "Vortiporius (Gwrthefyr)",
+     "when": "6th century"
+    },
+    {
+     "name": "Hyfaidd ap Bleddri",
+     "when": "d. 893"
+    },
+    {
+     "name": "Llywarch ap Hyfaidd",
+     "when": "d. 904"
+    }
+   ],
+   "note": "The post-Roman kingdom of the Demetae in Pembrokeshire and west Carmarthenshire, ruled by a dynasty of Irish (Déisi) origin. Absorbed c. 920 by Hywel Dda into Deheubarth. Its eastern limit with Ystrad Tywi is approximate.",
+   "coords": [
+    [
+     -5.5,
+     51.55
+    ],
+    [
+     -5.5,
+     52.1
+    ],
+    [
+     -4.7,
+     52.13
+    ],
+    [
+     -4.47,
+     52.04
+    ],
+    [
+     -4.3,
+     51.97
+    ],
+    [
+     -4.3,
+     51.86
+    ],
+    [
+     -4.35,
+     51.72
+    ],
+    [
+     -4.4,
+     51.55
+    ],
+    [
+     -5.5,
+     51.55
+    ]
+   ]
+  },
+  {
+   "name": "Kingdom of Ceredigion",
+   "key": "Kingdom of Ceredigion",
+   "kind": "kingdom",
+   "from": 500,
+   "to": 730,
+   "capital": "Llanbadarn Fawr",
+   "rulers": [
+    {
+     "name": "Ceredig ap Cunedda",
+     "when": "5th century (traditional founder)"
+    },
+    {
+     "name": "Seisyll ap Clydog",
+     "when": "8th century"
+    }
+   ],
+   "note": "Ceredigion, between the Teifi and the Dyfi, traditionally founded by Ceredig son of Cunedda. In the 8th century Seisyll ap Clydog added Ystrad Tywi, forming Seisyllwg, which the border data draws; the region is therefore ended at 730 (Wikidata gives 680).",
+   "coords": [
+    [
+     -4.7,
+     52.13
+    ],
+    [
+     -4.47,
+     52.04
+    ],
+    [
+     -4.2,
+     52.08
+    ],
+    [
+     -3.9,
+     52.2
+    ],
+    [
+     -3.75,
+     52.35
+    ],
+    [
+     -3.8,
+     52.55
+    ],
+    [
+     -3.95,
+     52.56
+    ],
+    [
+     -4.15,
+     52.55
+    ],
+    [
+     -4.5,
+     52.4
+    ],
+    [
+     -4.75,
+     52.15
+    ],
+    [
+     -4.7,
+     52.13
+    ]
+   ]
+  },
+  {
+   "name": "Deheubarth",
+   "key": "Deheubarth",
+   "kind": "kingdom",
+   "from": 920,
+   "to": 1093,
+   "capital": "Dinefwr",
+   "rulers": [
+    {
+     "name": "Hywel Dda",
+     "when": "c. 920–950"
+    },
+    {
+     "name": "Maredudd ab Owain",
+     "when": "986–999"
+    },
+    {
+     "name": "Rhys ap Tewdwr",
+     "when": "1081–1093"
+    },
+    {
+     "name": "Rhys ap Gruffydd (the Lord Rhys)",
+     "when": "1155–1197"
+    }
+   ],
+   "note": "The realm of south-west Wales of the House of Dinefwr, formed when Hywel Dda united Dyfed and Seisyllwg c. 920 (historians note that Deheubarth was a regional name rather than a kingdom of fixed form). Overrun by the Normans after Rhys ap Tewdwr was killed in 1093; rebuilt from 1155 by the Lord Rhys, without Norman south Pembrokeshire and Gower (second slice), and divided among his sons after his death in 1197. The border data covers Wales with the generic 'Brythons' polygon.",
+   "coords": [
+    [
+     -5.5,
+     51.55
+    ],
+    [
+     -5.5,
+     52.1
+    ],
+    [
+     -4.75,
+     52.15
+    ],
+    [
+     -4.5,
+     52.4
+    ],
+    [
+     -4.15,
+     52.55
+    ],
+    [
+     -3.95,
+     52.56
+    ],
+    [
+     -3.8,
+     52.55
+    ],
+    [
+     -3.75,
+     52.35
+    ],
+    [
+     -3.6,
+     52.15
+    ],
+    [
+     -3.65,
+     51.95
+    ],
+    [
+     -3.75,
+     51.8
+    ],
+    [
+     -3.85,
+     51.62
+    ],
+    [
+     -3.9,
+     51.55
+    ],
+    [
+     -4.3,
+     51.5
+    ],
+    [
+     -5.5,
+     51.55
+    ]
+   ]
+  },
+  {
+   "name": "Deheubarth (the Lord Rhys)",
+   "key": "Deheubarth",
+   "kind": "kingdom",
+   "from": 1155,
+   "to": 1197,
+   "capital": "Dinefwr",
+   "rulers": [
+    {
+     "name": "Hywel Dda",
+     "when": "c. 920–950"
+    },
+    {
+     "name": "Maredudd ab Owain",
+     "when": "986–999"
+    },
+    {
+     "name": "Rhys ap Tewdwr",
+     "when": "1081–1093"
+    },
+    {
+     "name": "Rhys ap Gruffydd (the Lord Rhys)",
+     "when": "1155–1197"
+    }
+   ],
+   "note": "The realm of south-west Wales of the House of Dinefwr, formed when Hywel Dda united Dyfed and Seisyllwg c. 920 (historians note that Deheubarth was a regional name rather than a kingdom of fixed form). Overrun by the Normans after Rhys ap Tewdwr was killed in 1093; rebuilt from 1155 by the Lord Rhys, without Norman south Pembrokeshire and Gower (second slice), and divided among his sons after his death in 1197. The border data covers Wales with the generic 'Brythons' polygon.",
+   "coords": [
+    [
+     -4.75,
+     52.15
+    ],
+    [
+     -4.5,
+     52.4
+    ],
+    [
+     -4.15,
+     52.55
+    ],
+    [
+     -3.95,
+     52.56
+    ],
+    [
+     -3.8,
+     52.55
+    ],
+    [
+     -3.75,
+     52.35
+    ],
+    [
+     -3.6,
+     52.15
+    ],
+    [
+     -3.65,
+     51.95
+    ],
+    [
+     -3.75,
+     51.8
+    ],
+    [
+     -3.9,
+     51.75
+    ],
+    [
+     -4.2,
+     51.78
+    ],
+    [
+     -4.6,
+     51.85
+    ],
+    [
+     -4.85,
+     51.95
+    ],
+    [
+     -5.1,
+     52.02
+    ],
+    [
+     -5.0,
+     52.1
+    ],
+    [
+     -4.75,
+     52.15
+    ]
+   ]
+  },
+  {
+   "name": "Elmet",
+   "key": "Elmet",
+   "kind": "kingdom",
+   "from": 500,
+   "to": 617,
+   "capital": "Leeds area (Loidis)",
+   "rulers": [
+    {
+     "name": "Gwallog ap Lleënog",
+     "when": "late 6th century"
+    },
+    {
+     "name": "Ceretic",
+     "when": "d. c. 617"
+    }
+   ],
+   "note": "The Brittonic kingdom of Elmet in the West Riding of Yorkshire, between the Wharfe and the Don, one of the last British kingdoms in eastern England. Edwin of Northumbria expelled its king Ceretic c. 617. Its extent is known only from place-names (Sherburn-in-Elmet, Barwick-in-Elmet); the border data puts the area in Deira.",
+   "coords": [
+    [
+     -2.05,
+     53.9
+    ],
+    [
+     -1.6,
+     53.97
+    ],
+    [
+     -1.2,
+     53.9
+    ],
+    [
+     -1.1,
+     53.7
+    ],
+    [
+     -1.15,
+     53.55
+    ],
+    [
+     -1.5,
+     53.5
+    ],
+    [
+     -1.9,
+     53.55
+    ],
+    [
+     -2.1,
+     53.7
+    ],
+    [
+     -2.05,
+     53.9
+    ]
+   ]
+  },
+  {
+   "name": "Taifa of Málaga (Hammudid)",
+   "key": "Taifa of Málaga",
+   "kind": "taifa",
+   "from": 1026,
+   "to": 1057,
+   "capital": "Málaga",
+   "rulers": [
+    {
+     "name": "Yahya ibn Ali ibn Hammud",
+     "when": "d. 1035"
+    },
+    {
+     "name": "Idris I al-Muta'ayyad",
+     "when": "1035–1039"
+    },
+    {
+     "name": "Idris II",
+     "when": "1042–1047, 1053–1055"
+    }
+   ],
+   "note": "The Hammudid taifa of Málaga, held by the Hammudid claimants to the Córdoba caliphate after the caliphate broke up, until Badis of Granada annexed it in 1057. Málaga was again briefly independent in 1073–1090, 1145–1153 and 1229–1239 (not drawn). Ronda and Algeciras to the west were separate taifas.",
+   "coords": [
+    [
+     -4.95,
+     36.4
+    ],
+    [
+     -4.95,
+     36.65
+    ],
+    [
+     -4.8,
+     36.82
+    ],
+    [
+     -4.55,
+     36.98
+    ],
+    [
+     -4.3,
+     37.05
+    ],
+    [
+     -4.05,
+     37.0
+    ],
+    [
+     -3.85,
+     36.85
+    ],
+    [
+     -3.8,
+     36.6
+    ],
+    [
+     -4.95,
+     36.4
+    ]
+   ]
+  },
+  {
+   "name": "Taifa of Majorca",
+   "key": "Taifa of Majorca",
+   "kind": "taifa",
+   "from": 1076,
+   "to": 1115,
+   "capital": "Madina Mayurqa (Palma)",
+   "rulers": [
+    {
+     "name": "Mubashshir Nasir al-Dawla",
+     "when": "1076–1114"
+    },
+    {
+     "name": "Muhammad ibn Ghaniya",
+     "when": "c. 1126–1155"
+    },
+    {
+     "name": "Ishaq ibn Ghaniya",
+     "when": "1155–1183"
+    },
+    {
+     "name": "Abdallah ibn Ghaniya",
+     "when": "d. 1203"
+    }
+   ],
+   "note": "The Balearic taifa: independent of Dénia from 1076 under Mubashshir, sacked by the Pisan-Catalan crusade of 1114–1115 and then taken by the Almoravids. From the 1140s the Almoravid Banu Ghaniya governors ruled it as an independent emirate, the last Almoravid state, until the Almohads conquered it in 1203. The border data colours it Dénia and then Almoravid.",
+   "coords": [
+    [
+     2.2,
+     39.2
+    ],
+    [
+     3.6,
+     39.2
+    ],
+    [
+     3.6,
+     40.02
+    ],
+    [
+     2.2,
+     40.02
+    ],
+    [
+     2.2,
+     39.2
+    ]
+   ]
+  },
+  {
+   "name": "Taifa of Majorca",
+   "key": "Taifa of Majorca",
+   "kind": "taifa",
+   "from": 1076,
+   "to": 1115,
+   "capital": "Madina Mayurqa (Palma)",
+   "rulers": [
+    {
+     "name": "Mubashshir Nasir al-Dawla",
+     "when": "1076–1114"
+    },
+    {
+     "name": "Muhammad ibn Ghaniya",
+     "when": "c. 1126–1155"
+    },
+    {
+     "name": "Ishaq ibn Ghaniya",
+     "when": "1155–1183"
+    },
+    {
+     "name": "Abdallah ibn Ghaniya",
+     "when": "d. 1203"
+    }
+   ],
+   "note": "The Balearic taifa: independent of Dénia from 1076 under Mubashshir, sacked by the Pisan-Catalan crusade of 1114–1115 and then taken by the Almoravids. From the 1140s the Almoravid Banu Ghaniya governors ruled it as an independent emirate, the last Almoravid state, until the Almohads conquered it in 1203. The border data colours it Dénia and then Almoravid.",
+   "coords": [
+    [
+     3.75,
+     39.75
+    ],
+    [
+     4.4,
+     39.75
+    ],
+    [
+     4.4,
+     40.15
+    ],
+    [
+     3.75,
+     40.15
+    ],
+    [
+     3.75,
+     39.75
+    ]
+   ]
+  },
+  {
+   "name": "Taifa of Majorca",
+   "key": "Taifa of Majorca",
+   "kind": "taifa",
+   "from": 1076,
+   "to": 1115,
+   "capital": "Madina Mayurqa (Palma)",
+   "rulers": [
+    {
+     "name": "Mubashshir Nasir al-Dawla",
+     "when": "1076–1114"
+    },
+    {
+     "name": "Muhammad ibn Ghaniya",
+     "when": "c. 1126–1155"
+    },
+    {
+     "name": "Ishaq ibn Ghaniya",
+     "when": "1155–1183"
+    },
+    {
+     "name": "Abdallah ibn Ghaniya",
+     "when": "d. 1203"
+    }
+   ],
+   "note": "The Balearic taifa: independent of Dénia from 1076 under Mubashshir, sacked by the Pisan-Catalan crusade of 1114–1115 and then taken by the Almoravids. From the 1140s the Almoravid Banu Ghaniya governors ruled it as an independent emirate, the last Almoravid state, until the Almohads conquered it in 1203. The border data colours it Dénia and then Almoravid.",
+   "coords": [
+    [
+     1.15,
+     38.6
+    ],
+    [
+     1.7,
+     38.6
+    ],
+    [
+     1.7,
+     39.15
+    ],
+    [
+     1.15,
+     39.15
+    ],
+    [
+     1.15,
+     38.6
+    ]
+   ]
+  },
+  {
+   "name": "Taifa of Majorca (Banu Ghaniya)",
+   "key": "Taifa of Majorca",
+   "kind": "taifa",
+   "from": 1147,
+   "to": 1203,
+   "capital": "Madina Mayurqa (Palma)",
+   "rulers": [
+    {
+     "name": "Mubashshir Nasir al-Dawla",
+     "when": "1076–1114"
+    },
+    {
+     "name": "Muhammad ibn Ghaniya",
+     "when": "c. 1126–1155"
+    },
+    {
+     "name": "Ishaq ibn Ghaniya",
+     "when": "1155–1183"
+    },
+    {
+     "name": "Abdallah ibn Ghaniya",
+     "when": "d. 1203"
+    }
+   ],
+   "note": "The Balearic taifa: independent of Dénia from 1076 under Mubashshir, sacked by the Pisan-Catalan crusade of 1114–1115 and then taken by the Almoravids. From the 1140s the Almoravid Banu Ghaniya governors ruled it as an independent emirate, the last Almoravid state, until the Almohads conquered it in 1203. The border data colours it Dénia and then Almoravid.",
+   "coords": [
+    [
+     2.2,
+     39.2
+    ],
+    [
+     3.6,
+     39.2
+    ],
+    [
+     3.6,
+     40.02
+    ],
+    [
+     2.2,
+     40.02
+    ],
+    [
+     2.2,
+     39.2
+    ]
+   ]
+  },
+  {
+   "name": "Taifa of Majorca (Banu Ghaniya)",
+   "key": "Taifa of Majorca",
+   "kind": "taifa",
+   "from": 1147,
+   "to": 1203,
+   "capital": "Madina Mayurqa (Palma)",
+   "rulers": [
+    {
+     "name": "Mubashshir Nasir al-Dawla",
+     "when": "1076–1114"
+    },
+    {
+     "name": "Muhammad ibn Ghaniya",
+     "when": "c. 1126–1155"
+    },
+    {
+     "name": "Ishaq ibn Ghaniya",
+     "when": "1155–1183"
+    },
+    {
+     "name": "Abdallah ibn Ghaniya",
+     "when": "d. 1203"
+    }
+   ],
+   "note": "The Balearic taifa: independent of Dénia from 1076 under Mubashshir, sacked by the Pisan-Catalan crusade of 1114–1115 and then taken by the Almoravids. From the 1140s the Almoravid Banu Ghaniya governors ruled it as an independent emirate, the last Almoravid state, until the Almohads conquered it in 1203. The border data colours it Dénia and then Almoravid.",
+   "coords": [
+    [
+     3.75,
+     39.75
+    ],
+    [
+     4.4,
+     39.75
+    ],
+    [
+     4.4,
+     40.15
+    ],
+    [
+     3.75,
+     40.15
+    ],
+    [
+     3.75,
+     39.75
+    ]
+   ]
+  },
+  {
+   "name": "Taifa of Majorca (Banu Ghaniya)",
+   "key": "Taifa of Majorca",
+   "kind": "taifa",
+   "from": 1147,
+   "to": 1203,
+   "capital": "Madina Mayurqa (Palma)",
+   "rulers": [
+    {
+     "name": "Mubashshir Nasir al-Dawla",
+     "when": "1076–1114"
+    },
+    {
+     "name": "Muhammad ibn Ghaniya",
+     "when": "c. 1126–1155"
+    },
+    {
+     "name": "Ishaq ibn Ghaniya",
+     "when": "1155–1183"
+    },
+    {
+     "name": "Abdallah ibn Ghaniya",
+     "when": "d. 1203"
+    }
+   ],
+   "note": "The Balearic taifa: independent of Dénia from 1076 under Mubashshir, sacked by the Pisan-Catalan crusade of 1114–1115 and then taken by the Almoravids. From the 1140s the Almoravid Banu Ghaniya governors ruled it as an independent emirate, the last Almoravid state, until the Almohads conquered it in 1203. The border data colours it Dénia and then Almoravid.",
+   "coords": [
+    [
+     1.15,
+     38.6
+    ],
+    [
+     1.7,
+     38.6
+    ],
+    [
+     1.7,
+     39.15
+    ],
+    [
+     1.15,
+     39.15
+    ],
+    [
+     1.15,
+     38.6
+    ]
+   ]
+  },
+  {
+   "name": "Taifa of Menorca",
+   "key": "Taifa of Menorca",
+   "kind": "taifa",
+   "from": 1228,
+   "to": 1287,
+   "capital": "Medina Minurqa (Ciutadella)",
+   "rulers": [
+    {
+     "name": "Abu Uthman Sa'id ibn Hakam",
+     "when": "1234–1282"
+    },
+    {
+     "name": "Abu Umar ibn Sa'id",
+     "when": "1282–1287"
+    }
+   ],
+   "note": "The last Muslim state in the Balearics. After James I of Aragon took Majorca, Menorca's leaders accepted his overlordship by the Treaty of Capdepera (1231) and kept self-government as a tributary state until Alfonso III of Aragon conquered the island in 1287.",
+   "coords": [
+    [
+     3.75,
+     39.75
+    ],
+    [
+     4.4,
+     39.75
+    ],
+    [
+     4.4,
+     40.15
+    ],
+    [
+     3.75,
+     40.15
+    ],
+    [
+     3.75,
+     39.75
+    ]
+   ]
+  },
+  {
+   "name": "Prince-Bishopric of Liège",
+   "key": "Prince-Bishopric of Liège",
+   "kind": "prince-bishopric",
+   "from": 985,
+   "to": 1365,
+   "capital": "Liège",
+   "rulers": [
+    {
+     "name": "Notger",
+     "when": "972–1008"
+    },
+    {
+     "name": "Wazo",
+     "when": "1042–1048"
+    },
+    {
+     "name": "Adolph II de la Marck",
+     "when": "1313–1344"
+    },
+    {
+     "name": "Érard de La Marck",
+     "when": "1505–1538"
+    },
+    {
+     "name": "César-Constantin-François de Hoensbroeck",
+     "when": "1784–1792"
+    }
+   ],
+   "note": "The ecclesiastical principality of Liège, a long strip along the Meuse from the Kempen to Bouillon, separate from the Burgundian and Habsburg Netherlands until the French annexed it in 1795. Founded as a territory under Bishop Notger (count of Huy 985); the County of Loon (Hasselt) was annexed in 1366 (second slice). Bouillon was held from 1096 and the Thuin–Couvin district in the west is drawn as a separate piece; the Namur and Stavelot enclaves and many small exclaves are simplified. The border data puts it in the generic 'Holy Roman Empire Minor States'.",
+   "coords": [
+    [
+     5.05,
+     50.88
+    ],
+    [
+     5.45,
+     50.85
+    ],
+    [
+     5.68,
+     50.82
+    ],
+    [
+     5.8,
+     50.75
+    ],
+    [
+     5.9,
+     50.6
+    ],
+    [
+     5.85,
+     50.45
+    ],
+    [
+     5.6,
+     50.3
+    ],
+    [
+     5.35,
+     50.25
+    ],
+    [
+     5.2,
+     50.05
+    ],
+    [
+     5.2,
+     49.85
+    ],
+    [
+     5.1,
+     49.72
+    ],
+    [
+     4.95,
+     49.78
+    ],
+    [
+     4.85,
+     49.98
+    ],
+    [
+     4.8,
+     50.1
+    ],
+    [
+     4.95,
+     50.2
+    ],
+    [
+     5.0,
+     50.35
+    ],
+    [
+     5.15,
+     50.45
+    ],
+    [
+     5.1,
+     50.55
+    ],
+    [
+     5.0,
+     50.7
+    ],
+    [
+     5.05,
+     50.88
+    ]
+   ]
+  },
+  {
+   "name": "Prince-Bishopric of Liège",
+   "key": "Prince-Bishopric of Liège",
+   "kind": "prince-bishopric",
+   "from": 985,
+   "to": 1365,
+   "capital": "Liège",
+   "rulers": [
+    {
+     "name": "Notger",
+     "when": "972–1008"
+    },
+    {
+     "name": "Wazo",
+     "when": "1042–1048"
+    },
+    {
+     "name": "Adolph II de la Marck",
+     "when": "1313–1344"
+    },
+    {
+     "name": "Érard de La Marck",
+     "when": "1505–1538"
+    },
+    {
+     "name": "César-Constantin-François de Hoensbroeck",
+     "when": "1784–1792"
+    }
+   ],
+   "note": "The ecclesiastical principality of Liège, a long strip along the Meuse from the Kempen to Bouillon, separate from the Burgundian and Habsburg Netherlands until the French annexed it in 1795. Founded as a territory under Bishop Notger (count of Huy 985); the County of Loon (Hasselt) was annexed in 1366 (second slice). Bouillon was held from 1096 and the Thuin–Couvin district in the west is drawn as a separate piece; the Namur and Stavelot enclaves and many small exclaves are simplified. The border data puts it in the generic 'Holy Roman Empire Minor States'.",
+   "coords": [
+    [
+     4.5,
+     50.35
+    ],
+    [
+     4.62,
+     50.2
+    ],
+    [
+     4.8,
+     50.1
+    ],
+    [
+     4.7,
+     49.98
+    ],
+    [
+     4.45,
+     49.95
+    ],
+    [
+     4.3,
+     50.05
+    ],
+    [
+     4.2,
+     50.25
+    ],
+    [
+     4.3,
+     50.38
+    ],
+    [
+     4.5,
+     50.35
+    ]
+   ]
+  },
+  {
+   "name": "Prince-Bishopric of Liège",
+   "key": "Prince-Bishopric of Liège",
+   "kind": "prince-bishopric",
+   "from": 1366,
+   "to": 1795,
+   "capital": "Liège",
+   "rulers": [
+    {
+     "name": "Notger",
+     "when": "972–1008"
+    },
+    {
+     "name": "Wazo",
+     "when": "1042–1048"
+    },
+    {
+     "name": "Adolph II de la Marck",
+     "when": "1313–1344"
+    },
+    {
+     "name": "Érard de La Marck",
+     "when": "1505–1538"
+    },
+    {
+     "name": "César-Constantin-François de Hoensbroeck",
+     "when": "1784–1792"
+    }
+   ],
+   "note": "The ecclesiastical principality of Liège, a long strip along the Meuse from the Kempen to Bouillon, separate from the Burgundian and Habsburg Netherlands until the French annexed it in 1795. Founded as a territory under Bishop Notger (count of Huy 985); the County of Loon (Hasselt) was annexed in 1366 (second slice). Bouillon was held from 1096 and the Thuin–Couvin district in the west is drawn as a separate piece; the Namur and Stavelot enclaves and many small exclaves are simplified. The border data puts it in the generic 'Holy Roman Empire Minor States'.",
+   "coords": [
+    [
+     5.15,
+     51.3
+    ],
+    [
+     5.6,
+     51.22
+    ],
+    [
+     5.8,
+     51.1
+    ],
+    [
+     5.72,
+     50.9
+    ],
+    [
+     5.8,
+     50.75
+    ],
+    [
+     5.9,
+     50.6
+    ],
+    [
+     5.85,
+     50.45
+    ],
+    [
+     5.6,
+     50.3
+    ],
+    [
+     5.35,
+     50.25
+    ],
+    [
+     5.2,
+     50.05
+    ],
+    [
+     5.2,
+     49.85
+    ],
+    [
+     5.1,
+     49.72
+    ],
+    [
+     4.95,
+     49.78
+    ],
+    [
+     4.85,
+     49.98
+    ],
+    [
+     4.8,
+     50.1
+    ],
+    [
+     4.95,
+     50.2
+    ],
+    [
+     5.0,
+     50.35
+    ],
+    [
+     5.15,
+     50.45
+    ],
+    [
+     5.1,
+     50.55
+    ],
+    [
+     5.0,
+     50.7
+    ],
+    [
+     5.05,
+     50.85
+    ],
+    [
+     5.1,
+     51.0
+    ],
+    [
+     5.05,
+     51.15
+    ],
+    [
+     5.15,
+     51.3
+    ]
+   ]
+  },
+  {
+   "name": "Prince-Bishopric of Liège",
+   "key": "Prince-Bishopric of Liège",
+   "kind": "prince-bishopric",
+   "from": 1366,
+   "to": 1795,
+   "capital": "Liège",
+   "rulers": [
+    {
+     "name": "Notger",
+     "when": "972–1008"
+    },
+    {
+     "name": "Wazo",
+     "when": "1042–1048"
+    },
+    {
+     "name": "Adolph II de la Marck",
+     "when": "1313–1344"
+    },
+    {
+     "name": "Érard de La Marck",
+     "when": "1505–1538"
+    },
+    {
+     "name": "César-Constantin-François de Hoensbroeck",
+     "when": "1784–1792"
+    }
+   ],
+   "note": "The ecclesiastical principality of Liège, a long strip along the Meuse from the Kempen to Bouillon, separate from the Burgundian and Habsburg Netherlands until the French annexed it in 1795. Founded as a territory under Bishop Notger (count of Huy 985); the County of Loon (Hasselt) was annexed in 1366 (second slice). Bouillon was held from 1096 and the Thuin–Couvin district in the west is drawn as a separate piece; the Namur and Stavelot enclaves and many small exclaves are simplified. The border data puts it in the generic 'Holy Roman Empire Minor States'.",
+   "coords": [
+    [
+     4.5,
+     50.35
+    ],
+    [
+     4.62,
+     50.2
+    ],
+    [
+     4.8,
+     50.1
+    ],
+    [
+     4.7,
+     49.98
+    ],
+    [
+     4.45,
+     49.95
+    ],
+    [
+     4.3,
+     50.05
+    ],
+    [
+     4.2,
+     50.25
+    ],
+    [
+     4.3,
+     50.38
+    ],
+    [
+     4.5,
+     50.35
+    ]
+   ]
+  },
+  {
+   "name": "Duchy of Brabant",
+   "key": "Duchy of Brabant",
+   "kind": "duchy",
+   "from": 1183,
+   "to": 1259,
+   "capital": "Leuven, later Brussels",
+   "rulers": [
+    {
+     "name": "Henry I",
+     "when": "1183–1235"
+    },
+    {
+     "name": "Henry II",
+     "when": "1235–1248"
+    },
+    {
+     "name": "Henry III",
+     "when": "1248–1261"
+    }
+   ],
+   "note": "The duchy of Brabant (from the counts of Leuven, styled dukes from 1183/1190), drawn before the border data's 'County of Brabant' begins in 1260: Leuven, Brussels, Antwerp, 's-Hertogenbosch (founded 1185) and the Kempen. Limburg was added after Worringen (1288) and the duchy passed to Burgundy in 1430, both already shown by the border data.",
+   "coords": [
+    [
+     4.25,
+     51.38
+    ],
+    [
+     4.45,
+     51.48
+    ],
+    [
+     4.75,
+     51.55
+    ],
+    [
+     5.0,
+     51.72
+    ],
+    [
+     5.3,
+     51.75
+    ],
+    [
+     5.6,
+     51.75
+    ],
+    [
+     5.85,
+     51.5
+    ],
+    [
+     5.7,
+     51.3
+    ],
+    [
+     5.3,
+     51.2
+    ],
+    [
+     5.1,
+     51.0
+    ],
+    [
+     5.05,
+     50.88
+    ],
+    [
+     5.0,
+     50.7
+    ],
+    [
+     4.9,
+     50.65
+    ],
+    [
+     4.55,
+     50.6
+    ],
+    [
+     4.3,
+     50.6
+    ],
+    [
+     4.1,
+     50.75
+    ],
+    [
+     4.15,
+     50.95
+    ],
+    [
+     4.15,
+     51.15
+    ],
+    [
+     4.25,
+     51.38
+    ]
+   ]
+  },
+  {
+   "name": "Duchy of Guelders",
+   "key": "Duchy of Guelders",
+   "kind": "duchy",
+   "from": 1138,
+   "to": 1543,
+   "capital": "Geldern, later Arnhem",
+   "rulers": [
+    {
+     "name": "Otto II",
+     "when": "1229–1271"
+    },
+    {
+     "name": "Reginald II",
+     "when": "1326–1343, duke from 1339"
+    },
+    {
+     "name": "Arnold of Egmond",
+     "when": "1423–1465, 1471–1473"
+    },
+    {
+     "name": "Charles of Egmond",
+     "when": "1492–1538"
+    },
+    {
+     "name": "William of Jülich-Cleves-Berg",
+     "when": "1538–1543"
+    }
+   ],
+   "note": "Guelders (Gelre) with the County of Zutphen (united 1138): the Veluwe, the Betuwe, Nijmegen and Zutphen, plus the Upper Quarter around Geldern, Venlo and Roermond (separate piece). A county raised to a duchy in 1339; it resisted Burgundy and Habsburg until Charles V took it by the Treaty of Venlo in 1543. Drawn from 1138 (Wikidata gives 1096 for the county).",
+   "coords": [
+    [
+     5.15,
+     51.83
+    ],
+    [
+     5.25,
+     52.0
+    ],
+    [
+     5.45,
+     52.2
+    ],
+    [
+     5.62,
+     52.38
+    ],
+    [
+     5.88,
+     52.5
+    ],
+    [
+     6.1,
+     52.3
+    ],
+    [
+     6.4,
+     52.18
+    ],
+    [
+     6.7,
+     52.05
+    ],
+    [
+     6.75,
+     51.9
+    ],
+    [
+     6.45,
+     51.85
+    ],
+    [
+     6.2,
+     51.9
+    ],
+    [
+     5.95,
+     51.85
+    ],
+    [
+     5.85,
+     51.75
+    ],
+    [
+     5.5,
+     51.79
+    ],
+    [
+     5.15,
+     51.83
+    ]
+   ]
+  },
+  {
+   "name": "Duchy of Guelders",
+   "key": "Duchy of Guelders",
+   "kind": "duchy",
+   "from": 1138,
+   "to": 1543,
+   "capital": "Geldern, later Arnhem",
+   "rulers": [
+    {
+     "name": "Otto II",
+     "when": "1229–1271"
+    },
+    {
+     "name": "Reginald II",
+     "when": "1326–1343, duke from 1339"
+    },
+    {
+     "name": "Arnold of Egmond",
+     "when": "1423–1465, 1471–1473"
+    },
+    {
+     "name": "Charles of Egmond",
+     "when": "1492–1538"
+    },
+    {
+     "name": "William of Jülich-Cleves-Berg",
+     "when": "1538–1543"
+    }
+   ],
+   "note": "Guelders (Gelre) with the County of Zutphen (united 1138): the Veluwe, the Betuwe, Nijmegen and Zutphen, plus the Upper Quarter around Geldern, Venlo and Roermond (separate piece). A county raised to a duchy in 1339; it resisted Burgundy and Habsburg until Charles V took it by the Treaty of Venlo in 1543. Drawn from 1138 (Wikidata gives 1096 for the county).",
+   "coords": [
+    [
+     5.85,
+     51.45
+    ],
+    [
+     6.1,
+     51.6
+    ],
+    [
+     6.4,
+     51.55
+    ],
+    [
+     6.45,
+     51.4
+    ],
+    [
+     6.25,
+     51.25
+    ],
+    [
+     6.05,
+     51.1
+    ],
+    [
+     5.9,
+     51.1
+    ],
+    [
+     5.8,
+     51.25
+    ],
+    [
+     5.85,
+     51.45
+    ]
+   ]
+  },
+  {
+   "name": "Prince-Bishopric of Utrecht (Nedersticht)",
+   "key": "Prince-Bishopric of Utrecht",
+   "kind": "prince-bishopric",
+   "from": 1024,
+   "to": 1528,
+   "capital": "Utrecht",
+   "rulers": [
+    {
+     "name": "Bernold",
+     "when": "1027–1054"
+    },
+    {
+     "name": "Henry of Vianden",
+     "when": "1250–1267"
+    },
+    {
+     "name": "David of Burgundy",
+     "when": "1456–1496"
+    },
+    {
+     "name": "Henry of the Palatinate",
+     "when": "1524–1529"
+    }
+   ],
+   "note": "The Sticht: the temporal lands of the bishops of Utrecht, in two parts, the Nedersticht (the modern province of Utrecht) and the Oversticht (Overijssel and Drenthe). Emperor Henry II and Conrad II granted the counties from 1024; Bishop Henry of the Palatinate sold the temporal power to Charles V in 1528. The city of Groningen and its Ommelanden, often contested, are left out.",
+   "coords": [
+    [
+     4.8,
+     51.98
+    ],
+    [
+     4.85,
+     52.2
+    ],
+    [
+     5.05,
+     52.32
+    ],
+    [
+     5.3,
+     52.35
+    ],
+    [
+     5.5,
+     52.3
+    ],
+    [
+     5.62,
+     52.38
+    ],
+    [
+     5.45,
+     52.2
+    ],
+    [
+     5.25,
+     52.0
+    ],
+    [
+     5.0,
+     51.95
+    ],
+    [
+     4.8,
+     51.98
+    ]
+   ]
+  },
+  {
+   "name": "Prince-Bishopric of Utrecht (Oversticht)",
+   "key": "Prince-Bishopric of Utrecht",
+   "kind": "prince-bishopric",
+   "from": 1024,
+   "to": 1528,
+   "capital": "Utrecht",
+   "rulers": [
+    {
+     "name": "Bernold",
+     "when": "1027–1054"
+    },
+    {
+     "name": "Henry of Vianden",
+     "when": "1250–1267"
+    },
+    {
+     "name": "David of Burgundy",
+     "when": "1456–1496"
+    },
+    {
+     "name": "Henry of the Palatinate",
+     "when": "1524–1529"
+    }
+   ],
+   "note": "The Sticht: the temporal lands of the bishops of Utrecht, in two parts, the Nedersticht (the modern province of Utrecht) and the Oversticht (Overijssel and Drenthe). Emperor Henry II and Conrad II granted the counties from 1024; Bishop Henry of the Palatinate sold the temporal power to Charles V in 1528. The city of Groningen and its Ommelanden, often contested, are left out.",
+   "coords": [
+    [
+     5.88,
+     52.5
+    ],
+    [
+     5.75,
+     52.62
+    ],
+    [
+     5.9,
+     52.85
+    ],
+    [
+     6.2,
+     52.95
+    ],
+    [
+     6.35,
+     53.15
+    ],
+    [
+     6.65,
+     53.12
+    ],
+    [
+     6.95,
+     53.0
+    ],
+    [
+     7.05,
+     52.65
+    ],
+    [
+     7.05,
+     52.38
+    ],
+    [
+     6.92,
+     52.2
+    ],
+    [
+     6.7,
+     52.05
+    ],
+    [
+     6.4,
+     52.18
+    ],
+    [
+     6.1,
+     52.3
+    ],
+    [
+     5.88,
+     52.5
+    ]
+   ]
+  },
+  {
+   "name": "County of Namur",
+   "key": "County of Namur",
+   "kind": "county",
+   "from": 981,
+   "to": 1421,
+   "capital": "Namur",
+   "rulers": [
+    {
+     "name": "Albert I",
+     "when": "c. 981–1011"
+    },
+    {
+     "name": "Henry the Blind",
+     "when": "1139–1196"
+    },
+    {
+     "name": "Guy of Dampierre",
+     "when": "1263–1297"
+    },
+    {
+     "name": "John III",
+     "when": "1418–1429"
+    }
+   ],
+   "note": "A small county on the Sambre and Meuse between Brabant, Liège and Hainaut. John III sold it to Philip the Good of Burgundy in 1421 (effective at his death in 1429); drawn to 1421.",
+   "coords": [
+    [
+     4.55,
+     50.6
+    ],
+    [
+     4.9,
+     50.65
+    ],
+    [
+     5.1,
+     50.55
+    ],
+    [
+     5.15,
+     50.45
+    ],
+    [
+     5.0,
+     50.35
+    ],
+    [
+     4.95,
+     50.2
+    ],
+    [
+     4.8,
+     50.1
+    ],
+    [
+     4.62,
+     50.2
+    ],
+    [
+     4.5,
+     50.35
+    ],
+    [
+     4.45,
+     50.5
+    ],
+    [
+     4.55,
+     50.6
+    ]
+   ]
+  },
+  {
+   "name": "Duchy of Limburg",
+   "key": "Duchy of Limburg",
+   "kind": "duchy",
+   "from": 1065,
+   "to": 1288,
+   "capital": "Limbourg",
+   "rulers": [
+    {
+     "name": "Henry I",
+     "when": "c. 1082–1119"
+    },
+    {
+     "name": "Henry III",
+     "when": "1167–1221"
+    },
+    {
+     "name": "Waleran IV",
+     "when": "1247–1279"
+    }
+   ],
+   "note": "The small duchy of Limbourg on the Vesdre between Liège and Aachen. After the War of the Limburg Succession, decided at Worringen in 1288, it passed to Brabant, under which the border data already includes it.",
+   "coords": [
+    [
+     5.8,
+     50.75
+    ],
+    [
+     6.0,
+     50.78
+    ],
+    [
+     6.15,
+     50.68
+    ],
+    [
+     6.1,
+     50.55
+    ],
+    [
+     5.95,
+     50.52
+    ],
+    [
+     5.9,
+     50.6
+    ],
+    [
+     5.8,
+     50.75
+    ]
+   ]
+  },
+  {
+   "name": "County of Luxembourg",
+   "key": "County of Luxembourg",
+   "kind": "county",
+   "from": 963,
+   "to": 1259,
+   "capital": "Luxembourg",
+   "rulers": [
+    {
+     "name": "Siegfried",
+     "when": "963–998"
+    },
+    {
+     "name": "Conrad I",
+     "when": "1059–1086"
+    },
+    {
+     "name": "Ermesinde",
+     "when": "1197–1247"
+    },
+    {
+     "name": "Henry V the Blond",
+     "when": "1247–1281"
+    }
+   ],
+   "note": "The county grew from the castle Count Siegfried acquired in 963; the title count of Luxembourg is used from Conrad I (1059). Drawn to 1259, before the border data's 'House of Luxembourg' (from 1260); later a duchy (1354).",
+   "coords": [
+    [
+     5.75,
+     49.5
+    ],
+    [
+     5.8,
+     49.75
+    ],
+    [
+     5.65,
+     50.0
+    ],
+    [
+     5.8,
+     50.2
+    ],
+    [
+     6.05,
+     50.2
+    ],
+    [
+     6.35,
+     50.05
+    ],
+    [
+     6.55,
+     49.85
+    ],
+    [
+     6.4,
+     49.55
+    ],
+    [
+     6.15,
+     49.45
+    ],
+    [
+     5.95,
+     49.45
+    ],
+    [
+     5.75,
+     49.5
+    ]
+   ]
+  },
+  {
+   "name": "Duchy of Cleves",
+   "key": "Duchy of Cleves",
+   "kind": "duchy",
+   "from": 1092,
+   "to": 1520,
+   "capital": "Kleve",
+   "rulers": [
+    {
+     "name": "Adolph I",
+     "when": "count 1368–1394"
+    },
+    {
+     "name": "Adolph II",
+     "when": "1394–1448, duke from 1417"
+    },
+    {
+     "name": "John I",
+     "when": "1448–1481"
+    },
+    {
+     "name": "John II",
+     "when": "1481–1521"
+    }
+   ],
+   "note": "The county (duke from 1417) on both banks of the lower Rhine around Kleve, Wesel, Emmerich and Duisburg, in personal union with the County of Mark from 1368 (Mark not drawn here). United with Jülich and Berg in 1521. Drawn from 1092 (first count), at its later extent.",
+   "coords": [
+    [
+     5.95,
+     51.85
+    ],
+    [
+     6.2,
+     51.9
+    ],
+    [
+     6.45,
+     51.85
+    ],
+    [
+     6.7,
+     51.75
+    ],
+    [
+     6.85,
+     51.6
+    ],
+    [
+     6.8,
+     51.42
+    ],
+    [
+     6.7,
+     51.4
+    ],
+    [
+     6.55,
+     51.5
+    ],
+    [
+     6.35,
+     51.6
+    ],
+    [
+     6.15,
+     51.65
+    ],
+    [
+     6.0,
+     51.72
+    ],
+    [
+     5.95,
+     51.85
+    ]
+   ]
+  },
+  {
+   "name": "Duchy of Jülich",
+   "key": "Duchy of Jülich",
+   "kind": "duchy",
+   "from": 1100,
+   "to": 1520,
+   "capital": "Jülich",
+   "rulers": [
+    {
+     "name": "William V (I)",
+     "when": "1328–1361, duke from 1356"
+    },
+    {
+     "name": "Adolph",
+     "when": "1423–1437"
+    },
+    {
+     "name": "Gerhard",
+     "when": "1437–1475"
+    },
+    {
+     "name": "William IV",
+     "when": "1475–1511"
+    }
+   ],
+   "note": "The county (duke from 1356) west of Cologne around Jülich and Düren, between the Rhine, the Rur and the Eifel, in union with Berg from 1423. United with Cleves in 1521. Drawn from 1100 (Wikidata gives 1003, the first mention of a count in the Jülichgau).",
+   "coords": [
+    [
+     6.1,
+     51.05
+    ],
+    [
+     6.4,
+     51.1
+    ],
+    [
+     6.65,
+     51.0
+    ],
+    [
+     6.75,
+     50.9
+    ],
+    [
+     6.7,
+     50.7
+    ],
+    [
+     6.5,
+     50.55
+    ],
+    [
+     6.25,
+     50.5
+    ],
+    [
+     6.15,
+     50.68
+    ],
+    [
+     6.0,
+     50.78
+    ],
+    [
+     6.05,
+     50.9
+    ],
+    [
+     6.1,
+     51.05
+    ]
+   ]
+  },
+  {
+   "name": "United Duchies of Jülich-Cleves-Berg",
+   "key": "United Duchies of Jülich-Cleves-Berg",
+   "kind": "duchy",
+   "from": 1521,
+   "to": 1609,
+   "capital": "Düsseldorf",
+   "rulers": [
+    {
+     "name": "John III",
+     "when": "1521–1539"
+    },
+    {
+     "name": "William the Rich",
+     "when": "1539–1592"
+    },
+    {
+     "name": "John William",
+     "when": "1592–1609"
+    }
+   ],
+   "note": "The union of Jülich, Cleves, Berg, Mark and Ravensberg formed by the marriage of John III of Cleves and Maria of Jülich-Berg (1521). John William's death without heirs in 1609 set off the War of the Jülich Succession; the Treaty of Xanten (1614) divided the lands between Brandenburg (Cleves, Mark, Ravensberg) and Palatinate-Neuburg (Jülich, Berg). Drawn as four pieces: Jülich, Cleves, Berg with Mark, and Ravensberg.",
+   "coords": [
+    [
+     6.1,
+     51.05
+    ],
+    [
+     6.4,
+     51.1
+    ],
+    [
+     6.65,
+     51.0
+    ],
+    [
+     6.75,
+     50.9
+    ],
+    [
+     6.7,
+     50.7
+    ],
+    [
+     6.5,
+     50.55
+    ],
+    [
+     6.25,
+     50.5
+    ],
+    [
+     6.15,
+     50.68
+    ],
+    [
+     6.0,
+     50.78
+    ],
+    [
+     6.05,
+     50.9
+    ],
+    [
+     6.1,
+     51.05
+    ]
+   ]
+  },
+  {
+   "name": "United Duchies of Jülich-Cleves-Berg",
+   "key": "United Duchies of Jülich-Cleves-Berg",
+   "kind": "duchy",
+   "from": 1521,
+   "to": 1609,
+   "capital": "Düsseldorf",
+   "rulers": [
+    {
+     "name": "John III",
+     "when": "1521–1539"
+    },
+    {
+     "name": "William the Rich",
+     "when": "1539–1592"
+    },
+    {
+     "name": "John William",
+     "when": "1592–1609"
+    }
+   ],
+   "note": "The union of Jülich, Cleves, Berg, Mark and Ravensberg formed by the marriage of John III of Cleves and Maria of Jülich-Berg (1521). John William's death without heirs in 1609 set off the War of the Jülich Succession; the Treaty of Xanten (1614) divided the lands between Brandenburg (Cleves, Mark, Ravensberg) and Palatinate-Neuburg (Jülich, Berg). Drawn as four pieces: Jülich, Cleves, Berg with Mark, and Ravensberg.",
+   "coords": [
+    [
+     5.95,
+     51.85
+    ],
+    [
+     6.2,
+     51.9
+    ],
+    [
+     6.45,
+     51.85
+    ],
+    [
+     6.7,
+     51.75
+    ],
+    [
+     6.85,
+     51.6
+    ],
+    [
+     6.8,
+     51.42
+    ],
+    [
+     6.7,
+     51.4
+    ],
+    [
+     6.55,
+     51.5
+    ],
+    [
+     6.35,
+     51.6
+    ],
+    [
+     6.15,
+     51.65
+    ],
+    [
+     6.0,
+     51.72
+    ],
+    [
+     5.95,
+     51.85
+    ]
+   ]
+  },
+  {
+   "name": "United Duchies of Jülich-Cleves-Berg",
+   "key": "United Duchies of Jülich-Cleves-Berg",
+   "kind": "duchy",
+   "from": 1521,
+   "to": 1609,
+   "capital": "Düsseldorf",
+   "rulers": [
+    {
+     "name": "John III",
+     "when": "1521–1539"
+    },
+    {
+     "name": "William the Rich",
+     "when": "1539–1592"
+    },
+    {
+     "name": "John William",
+     "when": "1592–1609"
+    }
+   ],
+   "note": "The union of Jülich, Cleves, Berg, Mark and Ravensberg formed by the marriage of John III of Cleves and Maria of Jülich-Berg (1521). John William's death without heirs in 1609 set off the War of the Jülich Succession; the Treaty of Xanten (1614) divided the lands between Brandenburg (Cleves, Mark, Ravensberg) and Palatinate-Neuburg (Jülich, Berg). Drawn as four pieces: Jülich, Cleves, Berg with Mark, and Ravensberg.",
+   "coords": [
+    [
+     6.8,
+     51.42
+    ],
+    [
+     7.1,
+     51.5
+    ],
+    [
+     7.4,
+     51.62
+    ],
+    [
+     7.8,
+     51.7
+    ],
+    [
+     8.1,
+     51.6
+    ],
+    [
+     7.95,
+     51.35
+    ],
+    [
+     7.7,
+     51.2
+    ],
+    [
+     7.6,
+     51.0
+    ],
+    [
+     7.4,
+     50.85
+    ],
+    [
+     7.15,
+     50.75
+    ],
+    [
+     7.0,
+     50.95
+    ],
+    [
+     6.85,
+     51.15
+    ],
+    [
+     6.75,
+     51.3
+    ],
+    [
+     6.8,
+     51.42
+    ]
+   ]
+  },
+  {
+   "name": "United Duchies of Jülich-Cleves-Berg",
+   "key": "United Duchies of Jülich-Cleves-Berg",
+   "kind": "duchy",
+   "from": 1521,
+   "to": 1609,
+   "capital": "Düsseldorf",
+   "rulers": [
+    {
+     "name": "John III",
+     "when": "1521–1539"
+    },
+    {
+     "name": "William the Rich",
+     "when": "1539–1592"
+    },
+    {
+     "name": "John William",
+     "when": "1592–1609"
+    }
+   ],
+   "note": "The union of Jülich, Cleves, Berg, Mark and Ravensberg formed by the marriage of John III of Cleves and Maria of Jülich-Berg (1521). John William's death without heirs in 1609 set off the War of the Jülich Succession; the Treaty of Xanten (1614) divided the lands between Brandenburg (Cleves, Mark, Ravensberg) and Palatinate-Neuburg (Jülich, Berg). Drawn as four pieces: Jülich, Cleves, Berg with Mark, and Ravensberg.",
+   "coords": [
+    [
+     8.25,
+     52.1
+    ],
+    [
+     8.6,
+     52.15
+    ],
+    [
+     8.75,
+     52.0
+    ],
+    [
+     8.55,
+     51.92
+    ],
+    [
+     8.3,
+     51.95
+    ],
+    [
+     8.25,
+     52.1
+    ]
+   ]
+  },
+  {
+   "name": "County, later Duchy of Bar",
+   "key": "Duchy of Bar",
+   "kind": "county",
+   "from": 1033,
+   "to": 1430,
+   "capital": "Bar-le-Duc",
+   "rulers": [
+    {
+     "name": "Sophie",
+     "when": "1033–1093"
+    },
+    {
+     "name": "Theobald II",
+     "when": "1239–1291"
+    },
+    {
+     "name": "Robert I",
+     "when": "1352–1411, duke from 1354"
+    },
+    {
+     "name": "Louis, cardinal",
+     "when": "1415–1430"
+    }
+   ],
+   "note": "The county (duke from 1354) of Bar between Champagne and Lorraine, partly a French fief (the Barrois mouvant west of the Meuse after 1301). René of Anjou inherited it in 1430 and married the heiress of Lorraine, so from 1431 it is shown with the border data's Duchy of Lorraine. Longwy and other northern holdings and the Verdun enclave are simplified.",
+   "coords": [
+    [
+     4.9,
+     48.55
+    ],
+    [
+     4.88,
+     48.95
+    ],
+    [
+     5.1,
+     49.12
+    ],
+    [
+     5.4,
+     49.05
+    ],
+    [
+     5.65,
+     49.15
+    ],
+    [
+     5.8,
+     49.35
+    ],
+    [
+     5.95,
+     49.42
+    ],
+    [
+     6.05,
+     49.2
+    ],
+    [
+     5.95,
+     48.95
+    ],
+    [
+     6.05,
+     48.85
+    ],
+    [
+     5.95,
+     48.6
+    ],
+    [
+     5.6,
+     48.4
+    ],
+    [
+     5.25,
+     48.4
+    ],
+    [
+     4.9,
+     48.55
+    ]
+   ]
+  },
+  {
+   "name": "County of Provence",
+   "key": "County of Provence",
+   "kind": "county",
+   "from": 972,
+   "to": 1245,
+   "capital": "Aix-en-Provence (from the 12th century), earlier Arles",
+   "rulers": [
+    {
+     "name": "William I the Liberator",
+     "when": "972–993"
+    },
+    {
+     "name": "Raymond Berengar I",
+     "when": "1112–1131"
+    },
+    {
+     "name": "Alfonso II",
+     "when": "1185–1209"
+    },
+    {
+     "name": "Raymond Berengar IV",
+     "when": "1209–1245"
+    }
+   ],
+   "note": "Provence between the Rhône, the Durance and the Var, nominally in the Kingdom of Arles and then the Empire but ruled as a sovereign county: by the Bosonid counts after William the Liberator expelled the Saracens of Fraxinetum (973), then by the House of Barcelona from 1112. Drawn to 1245, when it passed by marriage to Charles of Anjou (the border data's 'Capetian House of Anjou'). The County of Forcalquier north of the Durance (joined 1209) is left out.",
+   "coords": [
+    [
+     4.6,
+     43.3
+    ],
+    [
+     4.65,
+     43.7
+    ],
+    [
+     4.8,
+     43.92
+    ],
+    [
+     5.2,
+     43.75
+    ],
+    [
+     5.6,
+     43.75
+    ],
+    [
+     5.85,
+     43.75
+    ],
+    [
+     6.2,
+     43.85
+    ],
+    [
+     6.6,
+     44.0
+    ],
+    [
+     6.9,
+     44.0
+    ],
+    [
+     7.2,
+     43.9
+    ],
+    [
+     7.25,
+     43.65
+    ],
+    [
+     7.3,
+     43.4
+    ],
+    [
+     6.0,
+     42.95
+    ],
+    [
+     4.6,
+     43.3
+    ]
+   ]
+  },
+  {
+   "name": "Electoral Palatinate",
+   "key": "Electoral Palatinate",
+   "kind": "electorate",
+   "from": 1214,
+   "to": 1328,
+   "capital": "Heidelberg",
+   "rulers": [
+    {
+     "name": "Rudolf II and Rupert I",
+     "when": "1329–1390"
+    },
+    {
+     "name": "Rupert III (King of the Romans 1400–1410)",
+     "when": "1398–1410"
+    },
+    {
+     "name": "Frederick I the Victorious",
+     "when": "1451–1476"
+    },
+    {
+     "name": "Frederick V (the Winter King)",
+     "when": "1610–1623"
+    },
+    {
+     "name": "Charles Theodore",
+     "when": "1742–1799"
+    }
+   ],
+   "note": "The Rhenish Palatinate of the Wittelsbachs (counts palatine of the Rhine from 1214), one of the seven electorates from the Golden Bull of 1356. The Treaty of Pavia (1329) added the Upper Palatinate around Amberg, lost to Bavaria in 1623–1628 after Frederick V's defeat in Bohemia. The Lower Palatinate's many enclaves (Speyer, Worms, Leiningen) are smoothed. Drawn to 1797, when France took the left bank. The border data shows the area as minor states and, oddly, as the Electorate of Trier in places.",
+   "coords": [
+    [
+     7.5,
+     50.05
+    ],
+    [
+     7.75,
+     50.08
+    ],
+    [
+     7.82,
+     49.9
+    ],
+    [
+     8.1,
+     49.8
+    ],
+    [
+     8.4,
+     49.75
+    ],
+    [
+     8.6,
+     49.7
+    ],
+    [
+     8.95,
+     49.6
+    ],
+    [
+     9.25,
+     49.45
+    ],
+    [
+     9.15,
+     49.25
+    ],
+    [
+     8.85,
+     49.15
+    ],
+    [
+     8.6,
+     49.05
+    ],
+    [
+     8.35,
+     49.05
+    ],
+    [
+     8.1,
+     49.05
+    ],
+    [
+     7.85,
+     49.2
+    ],
+    [
+     7.6,
+     49.35
+    ],
+    [
+     7.45,
+     49.55
+    ],
+    [
+     7.4,
+     49.8
+    ],
+    [
+     7.5,
+     50.05
+    ]
+   ]
+  },
+  {
+   "name": "Electoral Palatinate",
+   "key": "Electoral Palatinate",
+   "kind": "electorate",
+   "from": 1329,
+   "to": 1622,
+   "capital": "Heidelberg",
+   "rulers": [
+    {
+     "name": "Rudolf II and Rupert I",
+     "when": "1329–1390"
+    },
+    {
+     "name": "Rupert III (King of the Romans 1400–1410)",
+     "when": "1398–1410"
+    },
+    {
+     "name": "Frederick I the Victorious",
+     "when": "1451–1476"
+    },
+    {
+     "name": "Frederick V (the Winter King)",
+     "when": "1610–1623"
+    },
+    {
+     "name": "Charles Theodore",
+     "when": "1742–1799"
+    }
+   ],
+   "note": "The Rhenish Palatinate of the Wittelsbachs (counts palatine of the Rhine from 1214), one of the seven electorates from the Golden Bull of 1356. The Treaty of Pavia (1329) added the Upper Palatinate around Amberg, lost to Bavaria in 1623–1628 after Frederick V's defeat in Bohemia. The Lower Palatinate's many enclaves (Speyer, Worms, Leiningen) are smoothed. Drawn to 1797, when France took the left bank. The border data shows the area as minor states and, oddly, as the Electorate of Trier in places.",
+   "coords": [
+    [
+     7.5,
+     50.05
+    ],
+    [
+     7.75,
+     50.08
+    ],
+    [
+     7.82,
+     49.9
+    ],
+    [
+     8.1,
+     49.8
+    ],
+    [
+     8.4,
+     49.75
+    ],
+    [
+     8.6,
+     49.7
+    ],
+    [
+     8.95,
+     49.6
+    ],
+    [
+     9.25,
+     49.45
+    ],
+    [
+     9.15,
+     49.25
+    ],
+    [
+     8.85,
+     49.15
+    ],
+    [
+     8.6,
+     49.05
+    ],
+    [
+     8.35,
+     49.05
+    ],
+    [
+     8.1,
+     49.05
+    ],
+    [
+     7.85,
+     49.2
+    ],
+    [
+     7.6,
+     49.35
+    ],
+    [
+     7.45,
+     49.55
+    ],
+    [
+     7.4,
+     49.8
+    ],
+    [
+     7.5,
+     50.05
+    ]
+   ]
+  },
+  {
+   "name": "Electoral Palatinate",
+   "key": "Electoral Palatinate",
+   "kind": "electorate",
+   "from": 1329,
+   "to": 1622,
+   "capital": "Heidelberg",
+   "rulers": [
+    {
+     "name": "Rudolf II and Rupert I",
+     "when": "1329–1390"
+    },
+    {
+     "name": "Rupert III (King of the Romans 1400–1410)",
+     "when": "1398–1410"
+    },
+    {
+     "name": "Frederick I the Victorious",
+     "when": "1451–1476"
+    },
+    {
+     "name": "Frederick V (the Winter King)",
+     "when": "1610–1623"
+    },
+    {
+     "name": "Charles Theodore",
+     "when": "1742–1799"
+    }
+   ],
+   "note": "The Rhenish Palatinate of the Wittelsbachs (counts palatine of the Rhine from 1214), one of the seven electorates from the Golden Bull of 1356. The Treaty of Pavia (1329) added the Upper Palatinate around Amberg, lost to Bavaria in 1623–1628 after Frederick V's defeat in Bohemia. The Lower Palatinate's many enclaves (Speyer, Worms, Leiningen) are smoothed. Drawn to 1797, when France took the left bank. The border data shows the area as minor states and, oddly, as the Electorate of Trier in places.",
+   "coords": [
+    [
+     11.55,
+     49.45
+    ],
+    [
+     11.55,
+     49.6
+    ],
+    [
+     11.8,
+     49.85
+    ],
+    [
+     12.1,
+     50.0
+    ],
+    [
+     12.45,
+     49.8
+    ],
+    [
+     12.55,
+     49.55
+    ],
+    [
+     12.75,
+     49.3
+    ],
+    [
+     12.45,
+     49.15
+    ],
+    [
+     12.1,
+     49.05
+    ],
+    [
+     11.75,
+     49.1
+    ],
+    [
+     11.5,
+     49.15
+    ],
+    [
+     11.4,
+     49.35
+    ],
+    [
+     11.55,
+     49.45
+    ]
+   ]
+  },
+  {
+   "name": "Electoral Palatinate",
+   "key": "Electoral Palatinate",
+   "kind": "electorate",
+   "from": 1623,
+   "to": 1797,
+   "capital": "Heidelberg",
+   "rulers": [
+    {
+     "name": "Rudolf II and Rupert I",
+     "when": "1329–1390"
+    },
+    {
+     "name": "Rupert III (King of the Romans 1400–1410)",
+     "when": "1398–1410"
+    },
+    {
+     "name": "Frederick I the Victorious",
+     "when": "1451–1476"
+    },
+    {
+     "name": "Frederick V (the Winter King)",
+     "when": "1610–1623"
+    },
+    {
+     "name": "Charles Theodore",
+     "when": "1742–1799"
+    }
+   ],
+   "note": "The Rhenish Palatinate of the Wittelsbachs (counts palatine of the Rhine from 1214), one of the seven electorates from the Golden Bull of 1356. The Treaty of Pavia (1329) added the Upper Palatinate around Amberg, lost to Bavaria in 1623–1628 after Frederick V's defeat in Bohemia. The Lower Palatinate's many enclaves (Speyer, Worms, Leiningen) are smoothed. Drawn to 1797, when France took the left bank. The border data shows the area as minor states and, oddly, as the Electorate of Trier in places.",
+   "coords": [
+    [
+     7.5,
+     50.05
+    ],
+    [
+     7.75,
+     50.08
+    ],
+    [
+     7.82,
+     49.9
+    ],
+    [
+     8.1,
+     49.8
+    ],
+    [
+     8.4,
+     49.75
+    ],
+    [
+     8.6,
+     49.7
+    ],
+    [
+     8.95,
+     49.6
+    ],
+    [
+     9.25,
+     49.45
+    ],
+    [
+     9.15,
+     49.25
+    ],
+    [
+     8.85,
+     49.15
+    ],
+    [
+     8.6,
+     49.05
+    ],
+    [
+     8.35,
+     49.05
+    ],
+    [
+     8.1,
+     49.05
+    ],
+    [
+     7.85,
+     49.2
+    ],
+    [
+     7.6,
+     49.35
+    ],
+    [
+     7.45,
+     49.55
+    ],
+    [
+     7.4,
+     49.8
+    ],
+    [
+     7.5,
+     50.05
+    ]
+   ]
+  },
+  {
+   "name": "Electorate of Mainz",
+   "key": "Electorate of Mainz",
+   "kind": "electorate",
+   "from": 1200,
+   "to": 1797,
+   "capital": "Mainz",
+   "rulers": [
+    {
+     "name": "Siegfried III von Eppstein",
+     "when": "1230–1249"
+    },
+    {
+     "name": "Gerlach of Nassau",
+     "when": "1346–1371"
+    },
+    {
+     "name": "Albert of Brandenburg",
+     "when": "1514–1545"
+    },
+    {
+     "name": "Johann Philipp von Schönborn",
+     "when": "1647–1673"
+    },
+    {
+     "name": "Friedrich Karl Joseph von Erthal",
+     "when": "1774–1802"
+    }
+   ],
+   "note": "The temporal lands of the archbishops of Mainz, arch-chancellors of the Empire and senior electors: the Rheingau and Mainz, the Aschaffenburg–Spessart block on the Main, and the Eichsfeld and Erfurt in Thuringia, drawn as four pieces; scattered Hessian and Franconian holdings are left out. Drawn from 1200 (the territory took shape in the 12th–13th centuries; Wikidata gives 780 for the archdiocese) to 1797, when France took the left bank.",
+   "coords": [
+    [
+     7.85,
+     49.92
+    ],
+    [
+     7.8,
+     50.08
+    ],
+    [
+     8.15,
+     50.12
+    ],
+    [
+     8.35,
+     50.05
+    ],
+    [
+     8.35,
+     49.95
+    ],
+    [
+     8.2,
+     49.88
+    ],
+    [
+     7.85,
+     49.92
+    ]
+   ]
+  },
+  {
+   "name": "Electorate of Mainz",
+   "key": "Electorate of Mainz",
+   "kind": "electorate",
+   "from": 1200,
+   "to": 1797,
+   "capital": "Mainz",
+   "rulers": [
+    {
+     "name": "Siegfried III von Eppstein",
+     "when": "1230–1249"
+    },
+    {
+     "name": "Gerlach of Nassau",
+     "when": "1346–1371"
+    },
+    {
+     "name": "Albert of Brandenburg",
+     "when": "1514–1545"
+    },
+    {
+     "name": "Johann Philipp von Schönborn",
+     "when": "1647–1673"
+    },
+    {
+     "name": "Friedrich Karl Joseph von Erthal",
+     "when": "1774–1802"
+    }
+   ],
+   "note": "The temporal lands of the archbishops of Mainz, arch-chancellors of the Empire and senior electors: the Rheingau and Mainz, the Aschaffenburg–Spessart block on the Main, and the Eichsfeld and Erfurt in Thuringia, drawn as four pieces; scattered Hessian and Franconian holdings are left out. Drawn from 1200 (the territory took shape in the 12th–13th centuries; Wikidata gives 780 for the archdiocese) to 1797, when France took the left bank.",
+   "coords": [
+    [
+     9.0,
+     49.95
+    ],
+    [
+     9.1,
+     50.15
+    ],
+    [
+     9.5,
+     50.15
+    ],
+    [
+     9.6,
+     49.95
+    ],
+    [
+     9.4,
+     49.7
+    ],
+    [
+     9.2,
+     49.6
+    ],
+    [
+     9.05,
+     49.7
+    ],
+    [
+     9.0,
+     49.95
+    ]
+   ]
+  },
+  {
+   "name": "Electorate of Mainz",
+   "key": "Electorate of Mainz",
+   "kind": "electorate",
+   "from": 1200,
+   "to": 1797,
+   "capital": "Mainz",
+   "rulers": [
+    {
+     "name": "Siegfried III von Eppstein",
+     "when": "1230–1249"
+    },
+    {
+     "name": "Gerlach of Nassau",
+     "when": "1346–1371"
+    },
+    {
+     "name": "Albert of Brandenburg",
+     "when": "1514–1545"
+    },
+    {
+     "name": "Johann Philipp von Schönborn",
+     "when": "1647–1673"
+    },
+    {
+     "name": "Friedrich Karl Joseph von Erthal",
+     "when": "1774–1802"
+    }
+   ],
+   "note": "The temporal lands of the archbishops of Mainz, arch-chancellors of the Empire and senior electors: the Rheingau and Mainz, the Aschaffenburg–Spessart block on the Main, and the Eichsfeld and Erfurt in Thuringia, drawn as four pieces; scattered Hessian and Franconian holdings are left out. Drawn from 1200 (the territory took shape in the 12th–13th centuries; Wikidata gives 780 for the archdiocese) to 1797, when France took the left bank.",
+   "coords": [
+    [
+     9.9,
+     51.3
+    ],
+    [
+     10.0,
+     51.5
+    ],
+    [
+     10.4,
+     51.55
+    ],
+    [
+     10.55,
+     51.4
+    ],
+    [
+     10.35,
+     51.25
+    ],
+    [
+     9.9,
+     51.3
+    ]
+   ]
+  },
+  {
+   "name": "Electorate of Mainz",
+   "key": "Electorate of Mainz",
+   "kind": "electorate",
+   "from": 1200,
+   "to": 1797,
+   "capital": "Mainz",
+   "rulers": [
+    {
+     "name": "Siegfried III von Eppstein",
+     "when": "1230–1249"
+    },
+    {
+     "name": "Gerlach of Nassau",
+     "when": "1346–1371"
+    },
+    {
+     "name": "Albert of Brandenburg",
+     "when": "1514–1545"
+    },
+    {
+     "name": "Johann Philipp von Schönborn",
+     "when": "1647–1673"
+    },
+    {
+     "name": "Friedrich Karl Joseph von Erthal",
+     "when": "1774–1802"
+    }
+   ],
+   "note": "The temporal lands of the archbishops of Mainz, arch-chancellors of the Empire and senior electors: the Rheingau and Mainz, the Aschaffenburg–Spessart block on the Main, and the Eichsfeld and Erfurt in Thuringia, drawn as four pieces; scattered Hessian and Franconian holdings are left out. Drawn from 1200 (the territory took shape in the 12th–13th centuries; Wikidata gives 780 for the archdiocese) to 1797, when France took the left bank.",
+   "coords": [
+    [
+     10.85,
+     50.9
+    ],
+    [
+     10.85,
+     51.08
+    ],
+    [
+     11.15,
+     51.1
+    ],
+    [
+     11.2,
+     50.92
+    ],
+    [
+     10.85,
+     50.9
+    ]
+   ]
+  },
+  {
+   "name": "Landgraviate of Hesse",
+   "key": "Landgraviate of Hesse",
+   "kind": "landgraviate",
+   "from": 1264,
+   "to": 1478,
+   "capital": "Marburg, later Kassel",
+   "rulers": [
+    {
+     "name": "Henry I the Child",
+     "when": "1264–1308"
+    },
+    {
+     "name": "Louis I",
+     "when": "1413–1458"
+    },
+    {
+     "name": "Philip I the Magnanimous",
+     "when": "1509–1567"
+    }
+   ],
+   "note": "Hesse became a landgraviate of its own in 1264 under Henry the Child, grandson of St Elisabeth: Upper Hesse around Marburg and Giessen and Lower Hesse around Kassel. It gained the County of Katzenelnbogen in 1479 (second slice, two pieces on the Rhine and around Darmstadt). Philip the Magnanimous, leader of the Protestant princes, divided it among his four sons at his death in 1567 (Hesse-Kassel, Hesse-Darmstadt, Hesse-Marburg, Hesse-Rheinfels).",
+   "coords": [
+    [
+     8.5,
+     50.55
+    ],
+    [
+     8.45,
+     50.85
+    ],
+    [
+     8.65,
+     51.1
+    ],
+    [
+     8.95,
+     51.35
+    ],
+    [
+     9.25,
+     51.5
+    ],
+    [
+     9.6,
+     51.45
+    ],
+    [
+     9.8,
+     51.2
+    ],
+    [
+     9.7,
+     50.95
+    ],
+    [
+     9.45,
+     50.8
+    ],
+    [
+     9.1,
+     50.7
+    ],
+    [
+     8.85,
+     50.5
+    ],
+    [
+     8.5,
+     50.55
+    ]
+   ]
+  },
+  {
+   "name": "Landgraviate of Hesse",
+   "key": "Landgraviate of Hesse",
+   "kind": "landgraviate",
+   "from": 1479,
+   "to": 1567,
+   "capital": "Marburg, later Kassel",
+   "rulers": [
+    {
+     "name": "Henry I the Child",
+     "when": "1264–1308"
+    },
+    {
+     "name": "Louis I",
+     "when": "1413–1458"
+    },
+    {
+     "name": "Philip I the Magnanimous",
+     "when": "1509–1567"
+    }
+   ],
+   "note": "Hesse became a landgraviate of its own in 1264 under Henry the Child, grandson of St Elisabeth: Upper Hesse around Marburg and Giessen and Lower Hesse around Kassel. It gained the County of Katzenelnbogen in 1479 (second slice, two pieces on the Rhine and around Darmstadt). Philip the Magnanimous, leader of the Protestant princes, divided it among his four sons at his death in 1567 (Hesse-Kassel, Hesse-Darmstadt, Hesse-Marburg, Hesse-Rheinfels).",
+   "coords": [
+    [
+     8.5,
+     50.55
+    ],
+    [
+     8.45,
+     50.85
+    ],
+    [
+     8.65,
+     51.1
+    ],
+    [
+     8.95,
+     51.35
+    ],
+    [
+     9.25,
+     51.5
+    ],
+    [
+     9.6,
+     51.45
+    ],
+    [
+     9.8,
+     51.2
+    ],
+    [
+     9.7,
+     50.95
+    ],
+    [
+     9.45,
+     50.8
+    ],
+    [
+     9.1,
+     50.7
+    ],
+    [
+     8.85,
+     50.5
+    ],
+    [
+     8.5,
+     50.55
+    ]
+   ]
+  },
+  {
+   "name": "Landgraviate of Hesse",
+   "key": "Landgraviate of Hesse",
+   "kind": "landgraviate",
+   "from": 1479,
+   "to": 1567,
+   "capital": "Marburg, later Kassel",
+   "rulers": [
+    {
+     "name": "Henry I the Child",
+     "when": "1264–1308"
+    },
+    {
+     "name": "Louis I",
+     "when": "1413–1458"
+    },
+    {
+     "name": "Philip I the Magnanimous",
+     "when": "1509–1567"
+    }
+   ],
+   "note": "Hesse became a landgraviate of its own in 1264 under Henry the Child, grandson of St Elisabeth: Upper Hesse around Marburg and Giessen and Lower Hesse around Kassel. It gained the County of Katzenelnbogen in 1479 (second slice, two pieces on the Rhine and around Darmstadt). Philip the Magnanimous, leader of the Protestant princes, divided it among his four sons at his death in 1567 (Hesse-Kassel, Hesse-Darmstadt, Hesse-Marburg, Hesse-Rheinfels).",
+   "coords": [
+    [
+     8.35,
+     49.9
+    ],
+    [
+     8.45,
+     50.0
+    ],
+    [
+     8.7,
+     49.98
+    ],
+    [
+     8.9,
+     49.88
+    ],
+    [
+     8.85,
+     49.72
+    ],
+    [
+     8.6,
+     49.72
+    ],
+    [
+     8.4,
+     49.78
+    ],
+    [
+     8.35,
+     49.9
+    ]
+   ]
+  },
+  {
+   "name": "Landgraviate of Hesse",
+   "key": "Landgraviate of Hesse",
+   "kind": "landgraviate",
+   "from": 1479,
+   "to": 1567,
+   "capital": "Marburg, later Kassel",
+   "rulers": [
+    {
+     "name": "Henry I the Child",
+     "when": "1264–1308"
+    },
+    {
+     "name": "Louis I",
+     "when": "1413–1458"
+    },
+    {
+     "name": "Philip I the Magnanimous",
+     "when": "1509–1567"
+    }
+   ],
+   "note": "Hesse became a landgraviate of its own in 1264 under Henry the Child, grandson of St Elisabeth: Upper Hesse around Marburg and Giessen and Lower Hesse around Kassel. It gained the County of Katzenelnbogen in 1479 (second slice, two pieces on the Rhine and around Darmstadt). Philip the Magnanimous, leader of the Protestant princes, divided it among his four sons at his death in 1567 (Hesse-Kassel, Hesse-Darmstadt, Hesse-Marburg, Hesse-Rheinfels).",
+   "coords": [
+    [
+     7.6,
+     50.1
+    ],
+    [
+     7.65,
+     50.3
+    ],
+    [
+     8.05,
+     50.42
+    ],
+    [
+     8.15,
+     50.3
+    ],
+    [
+     7.9,
+     50.15
+    ],
+    [
+     7.6,
+     50.1
+    ]
+   ]
+  },
+  {
+   "name": "Duchy of Brunswick-Lüneburg",
+   "key": "Duchy of Brunswick-Lüneburg",
+   "kind": "duchy",
+   "from": 1235,
+   "to": 1268,
+   "capital": "Brunswick",
+   "rulers": [
+    {
+     "name": "Otto the Child",
+     "when": "1235–1252"
+    },
+    {
+     "name": "Albert I and John",
+     "when": "1252–1269"
+    }
+   ],
+   "note": "The Welf duchy created in 1235 when Otto the Child, grandson of Henry the Lion, gave his allodial lands to Frederick II and received them back as an imperial duchy. Divided in 1269 into the principalities of Lüneburg and Brunswick(-Wolfenbüttel), which carried on the ducal title; drawn here only before the division (Wikidata dates the whole family of duchies 1235–1806).",
+   "coords": [
+    [
+     9.3,
+     52.75
+    ],
+    [
+     9.6,
+     53.15
+    ],
+    [
+     9.95,
+     53.4
+    ],
+    [
+     10.35,
+     53.42
+    ],
+    [
+     10.6,
+     53.37
+    ],
+    [
+     11.05,
+     53.2
+    ],
+    [
+     11.25,
+     53.05
+    ],
+    [
+     11.05,
+     52.85
+    ],
+    [
+     10.85,
+     52.6
+    ],
+    [
+     11.05,
+     52.3
+    ],
+    [
+     11.05,
+     52.05
+    ],
+    [
+     10.8,
+     51.9
+    ],
+    [
+     10.2,
+     51.75
+    ],
+    [
+     10.05,
+     51.55
+    ],
+    [
+     9.9,
+     51.4
+    ],
+    [
+     9.72,
+     51.38
+    ],
+    [
+     9.6,
+     51.47
+    ],
+    [
+     9.45,
+     51.8
+    ],
+    [
+     9.35,
+     52.05
+    ],
+    [
+     9.2,
+     52.25
+    ],
+    [
+     9.35,
+     52.55
+    ],
+    [
+     9.3,
+     52.75
+    ]
+   ]
+  },
+  {
+   "name": "Principality of Lüneburg",
+   "key": "Principality of Lüneburg",
+   "kind": "principality",
+   "from": 1269,
+   "to": 1705,
+   "capital": "Lüneburg, from 1371 Celle",
+   "rulers": [
+    {
+     "name": "John",
+     "when": "1269–1277"
+    },
+    {
+     "name": "Otto II the Strict",
+     "when": "1277–1330"
+    },
+    {
+     "name": "Ernest I the Confessor",
+     "when": "1520–1546"
+    },
+    {
+     "name": "George William",
+     "when": "1665–1705"
+    }
+   ],
+   "note": "The northern Welf principality (Lüneburg Heath, Celle, Gifhorn, Uelzen, Dannenberg from 1303) from the division of 1269. After the War of the Lüneburg Succession the dukes moved to Celle (1371). Inherited by Hanover (Calenberg) in 1705. Small exclaves are left out.",
+   "coords": [
+    [
+     9.3,
+     52.75
+    ],
+    [
+     9.6,
+     53.15
+    ],
+    [
+     9.95,
+     53.4
+    ],
+    [
+     10.35,
+     53.42
+    ],
+    [
+     10.6,
+     53.37
+    ],
+    [
+     11.05,
+     53.2
+    ],
+    [
+     11.25,
+     53.05
+    ],
+    [
+     11.05,
+     52.85
+    ],
+    [
+     10.85,
+     52.6
+    ],
+    [
+     10.75,
+     52.42
+    ],
+    [
+     10.45,
+     52.42
+    ],
+    [
+     10.1,
+     52.5
+    ],
+    [
+     9.75,
+     52.58
+    ],
+    [
+     9.5,
+     52.6
+    ],
+    [
+     9.3,
+     52.75
+    ]
+   ]
+  },
+  {
+   "name": "Principality of Brunswick-Wolfenbüttel",
+   "key": "Principality of Brunswick-Wolfenbüttel",
+   "kind": "principality",
+   "from": 1269,
+   "to": 1806,
+   "capital": "Wolfenbüttel",
+   "rulers": [
+    {
+     "name": "Albert I the Tall",
+     "when": "1269–1279"
+    },
+    {
+     "name": "Henry the Younger",
+     "when": "1514–1568"
+    },
+    {
+     "name": "Julius",
+     "when": "1568–1589"
+    },
+    {
+     "name": "Anthony Ulrich",
+     "when": "1685–1714"
+    },
+    {
+     "name": "Charles William Ferdinand",
+     "when": "1780–1806"
+    }
+   ],
+   "note": "The southern Welf principality from the 1269 division, centred on Wolfenbüttel and the city of Brunswick, with the Harz district and Blankenburg. Its extent changed with many Welf partitions; Calenberg and Göttingen, ruled by Wolfenbüttel princes at times, are drawn separately from 1495. Annexed to the Kingdom of Westphalia in 1807; the border data resumes with the Duchy of Brunswick in 1814.",
+   "coords": [
+    [
+     10.3,
+     52.32
+    ],
+    [
+     10.75,
+     52.38
+    ],
+    [
+     11.05,
+     52.3
+    ],
+    [
+     11.05,
+     52.05
+    ],
+    [
+     10.8,
+     51.9
+    ],
+    [
+     10.45,
+     51.85
+    ],
+    [
+     10.2,
+     51.82
+    ],
+    [
+     10.05,
+     51.9
+    ],
+    [
+     10.1,
+     52.1
+    ],
+    [
+     10.3,
+     52.32
+    ]
+   ]
+  },
+  {
+   "name": "Principality of Calenberg",
+   "key": "Principality of Calenberg",
+   "kind": "principality",
+   "from": 1495,
+   "to": 1708,
+   "capital": "Calenberg, from 1636 Hanover",
+   "rulers": [
+    {
+     "name": "Eric I",
+     "when": "1495–1540"
+    },
+    {
+     "name": "Eric II",
+     "when": "1540–1584"
+    },
+    {
+     "name": "George",
+     "when": "1635–1641"
+    },
+    {
+     "name": "Ernest Augustus",
+     "when": "1679–1698, elector from 1692"
+    },
+    {
+     "name": "George Louis (George I of Great Britain)",
+     "when": "1698–1727"
+    }
+   ],
+   "note": "The Welf principality between the Deister and the Leine, with the Göttingen district to the south (separate piece), formed in the 1495 partition. The dukes moved to Hanover in 1636; Ernest Augustus was made an elector in 1692, and the border data shows the Electorate of Hanover from 1709. Drawn to 1708.",
+   "coords": [
+    [
+     9.2,
+     52.25
+    ],
+    [
+     9.35,
+     52.55
+    ],
+    [
+     9.75,
+     52.55
+    ],
+    [
+     9.95,
+     52.35
+    ],
+    [
+     9.85,
+     52.15
+    ],
+    [
+     9.6,
+     52.0
+    ],
+    [
+     9.35,
+     52.0
+    ],
+    [
+     9.2,
+     52.25
+    ]
+   ]
+  },
+  {
+   "name": "Principality of Calenberg",
+   "key": "Principality of Calenberg",
+   "kind": "principality",
+   "from": 1495,
+   "to": 1708,
+   "capital": "Calenberg, from 1636 Hanover",
+   "rulers": [
+    {
+     "name": "Eric I",
+     "when": "1495–1540"
+    },
+    {
+     "name": "Eric II",
+     "when": "1540–1584"
+    },
+    {
+     "name": "George",
+     "when": "1635–1641"
+    },
+    {
+     "name": "Ernest Augustus",
+     "when": "1679–1698, elector from 1692"
+    },
+    {
+     "name": "George Louis (George I of Great Britain)",
+     "when": "1698–1727"
+    }
+   ],
+   "note": "The Welf principality between the Deister and the Leine, with the Göttingen district to the south (separate piece), formed in the 1495 partition. The dukes moved to Hanover in 1636; Ernest Augustus was made an elector in 1692, and the border data shows the Electorate of Hanover from 1709. Drawn to 1708.",
+   "coords": [
+    [
+     9.6,
+     51.47
+    ],
+    [
+     9.65,
+     51.65
+    ],
+    [
+     9.9,
+     51.8
+    ],
+    [
+     10.15,
+     51.7
+    ],
+    [
+     10.05,
+     51.55
+    ],
+    [
+     9.9,
+     51.4
+    ],
+    [
+     9.72,
+     51.38
+    ],
+    [
+     9.6,
+     51.47
+    ]
+   ]
+  },
+  {
+   "name": "Duchy of Saxe-Lauenburg",
+   "key": "Duchy of Saxe-Lauenburg",
+   "kind": "duchy",
+   "from": 1296,
+   "to": 1689,
+   "capital": "Lauenburg, later Ratzeburg",
+   "rulers": [
+    {
+     "name": "John I and Albert III",
+     "when": "1296–1305"
+    },
+    {
+     "name": "Eric I",
+     "when": "1305–1361"
+    },
+    {
+     "name": "Francis I",
+     "when": "1543–1581"
+    },
+    {
+     "name": "Julius Francis",
+     "when": "1666–1689"
+    }
+   ],
+   "note": "The Ascanian duchy north of the lower Elbe around Lauenburg, Ratzeburg and Mölln, split from Saxony in 1296. When its last duke died in 1689 it was occupied by Celle and passed to Hanover; the exclave of Land Hadeln is left out.",
+   "coords": [
+    [
+     10.3,
+     53.45
+    ],
+    [
+     10.45,
+     53.75
+    ],
+    [
+     10.8,
+     53.85
+    ],
+    [
+     10.95,
+     53.65
+    ],
+    [
+     10.85,
+     53.45
+    ],
+    [
+     10.6,
+     53.37
+    ],
+    [
+     10.3,
+     53.45
+    ]
+   ]
+  },
+  {
+   "name": "County of Oldenburg",
+   "key": "County of Oldenburg",
+   "kind": "county",
+   "from": 1180,
+   "to": 1667,
+   "capital": "Oldenburg",
+   "rulers": [
+    {
+     "name": "Dietrich the Fortunate",
+     "when": "1423–1440"
+    },
+    {
+     "name": "Anton Günther",
+     "when": "1603–1667"
+    }
+   ],
+   "note": "The county on the Hunte and the Jade, held by the House of Oldenburg, whose Christian I became king of Denmark in 1448. Delmenhorst was ruled by a branch line and Jever was added in 1575. When Anton Günther died in 1667 it passed to the Danish crown (Denmark–Norway in the border data from 1769). Drawn from 1180 (first counts c. 1100; Wikidata gives 1091) to 1667.",
+   "coords": [
+    [
+     7.95,
+     53.0
+    ],
+    [
+     8.0,
+     53.3
+    ],
+    [
+     8.3,
+     53.5
+    ],
+    [
+     8.5,
+     53.45
+    ],
+    [
+     8.65,
+     53.2
+    ],
+    [
+     8.6,
+     53.0
+    ],
+    [
+     8.35,
+     52.95
+    ],
+    [
+     7.95,
+     53.0
+    ]
+   ]
+  },
+  {
+   "name": "County of Württemberg",
+   "key": "Württemberg",
+   "kind": "county",
+   "from": 1083,
+   "to": 1300,
+   "capital": "Stuttgart",
+   "rulers": [
+    {
+     "name": "Conrad I",
+     "when": "c. 1081–1110"
+    },
+    {
+     "name": "Ulrich I the Founder",
+     "when": "1241–1265"
+    },
+    {
+     "name": "Eberhard I the Illustrious",
+     "when": "1279–1325"
+    },
+    {
+     "name": "Eberhard II the Quarreller",
+     "when": "1344–1392"
+    },
+    {
+     "name": "Eberhard V im Bart",
+     "when": "1459–1496, duke from 1495"
+    }
+   ],
+   "note": "The County of Württemberg on the middle Neckar, which grew from the castle on the Wirtemberg (first count c. 1081) into the largest secular state of Swabia; Stuttgart became the residence under Eberhard I. Its extent is drawn small to 1300 and larger to 1494; it was divided 1442–1482. Raised to a duchy in 1495 (next entry).",
+   "coords": [
+    [
+     9.0,
+     48.7
+    ],
+    [
+     9.15,
+     48.95
+    ],
+    [
+     9.45,
+     48.95
+    ],
+    [
+     9.6,
+     48.8
+    ],
+    [
+     9.5,
+     48.65
+    ],
+    [
+     9.2,
+     48.6
+    ],
+    [
+     9.0,
+     48.7
+    ]
+   ]
+  },
+  {
+   "name": "County of Württemberg",
+   "key": "Württemberg",
+   "kind": "county",
+   "from": 1301,
+   "to": 1494,
+   "capital": "Stuttgart",
+   "rulers": [
+    {
+     "name": "Conrad I",
+     "when": "c. 1081–1110"
+    },
+    {
+     "name": "Ulrich I the Founder",
+     "when": "1241–1265"
+    },
+    {
+     "name": "Eberhard I the Illustrious",
+     "when": "1279–1325"
+    },
+    {
+     "name": "Eberhard II the Quarreller",
+     "when": "1344–1392"
+    },
+    {
+     "name": "Eberhard V im Bart",
+     "when": "1459–1496, duke from 1495"
+    }
+   ],
+   "note": "The County of Württemberg on the middle Neckar, which grew from the castle on the Wirtemberg (first count c. 1081) into the largest secular state of Swabia; Stuttgart became the residence under Eberhard I. Its extent is drawn small to 1300 and larger to 1494; it was divided 1442–1482. Raised to a duchy in 1495 (next entry).",
+   "coords": [
+    [
+     8.6,
+     48.55
+    ],
+    [
+     8.75,
+     48.95
+    ],
+    [
+     9.05,
+     49.05
+    ],
+    [
+     9.5,
+     48.98
+    ],
+    [
+     9.75,
+     48.8
+    ],
+    [
+     9.7,
+     48.6
+    ],
+    [
+     9.5,
+     48.45
+    ],
+    [
+     9.25,
+     48.35
+    ],
+    [
+     9.0,
+     48.4
+    ],
+    [
+     8.8,
+     48.35
+    ],
+    [
+     8.6,
+     48.55
+    ]
+   ]
+  },
+  {
+   "name": "Duchy of Württemberg",
+   "key": "Württemberg",
+   "kind": "duchy",
+   "from": 1495,
+   "to": 1802,
+   "capital": "Stuttgart",
+   "rulers": [
+    {
+     "name": "Eberhard I",
+     "when": "1495–1496"
+    },
+    {
+     "name": "Ulrich",
+     "when": "1498–1519, 1534–1550"
+    },
+    {
+     "name": "Christoph",
+     "when": "1550–1568"
+    },
+    {
+     "name": "Eberhard Ludwig",
+     "when": "1693–1733"
+    },
+    {
+     "name": "Charles Eugene",
+     "when": "1744–1793"
+    },
+    {
+     "name": "Frederick II",
+     "when": "1797–1803"
+    }
+   ],
+   "note": "Raised to a duchy at the Diet of Worms (1495). Under Habsburg administration 1520–1534 after Duke Ulrich was expelled; Protestant from 1534. The exclave of Montbéliard (Mömpelgard) and small holdings are left out. Became an electorate in 1803, shown by the border data from then.",
+   "coords": [
+    [
+     8.4,
+     48.4
+    ],
+    [
+     8.55,
+     48.75
+    ],
+    [
+     8.75,
+     48.95
+    ],
+    [
+     9.0,
+     49.08
+    ],
+    [
+     9.3,
+     49.05
+    ],
+    [
+     9.6,
+     48.98
+    ],
+    [
+     9.85,
+     48.85
+    ],
+    [
+     10.25,
+     48.75
+    ],
+    [
+     10.2,
+     48.55
+    ],
+    [
+     9.85,
+     48.5
+    ],
+    [
+     9.55,
+     48.45
+    ],
+    [
+     9.35,
+     48.3
+    ],
+    [
+     9.1,
+     48.1
+    ],
+    [
+     8.85,
+     48.0
+    ],
+    [
+     8.7,
+     48.2
+    ],
+    [
+     8.45,
+     48.25
+    ],
+    [
+     8.4,
+     48.4
+    ]
+   ]
+  },
+  {
+   "name": "Margraviate of Baden-Durlach",
+   "key": "Margraviate of Baden-Durlach",
+   "kind": "margraviate",
+   "from": 1535,
+   "to": 1771,
+   "capital": "Pforzheim, from 1565 Durlach, from 1718 Karlsruhe",
+   "rulers": [
+    {
+     "name": "Ernest",
+     "when": "1535–1553"
+    },
+    {
+     "name": "Charles II",
+     "when": "1553–1577"
+    },
+    {
+     "name": "George Frederick",
+     "when": "1604–1622"
+    },
+    {
+     "name": "Charles III William",
+     "when": "1709–1738"
+    },
+    {
+     "name": "Charles Frederick",
+     "when": "1738–1771"
+    }
+   ],
+   "note": "The Protestant (Ernestine) half of Baden after the division of 1535: the lower margraviate around Pforzheim and Durlach and the upper lands of Hachberg, Rötteln and Badenweiler in the Breisgau (two pieces). Charles William founded Karlsruhe in 1715. Reunited with Baden-Baden in 1771.",
+   "coords": [
+    [
+     8.3,
+     48.92
+    ],
+    [
+     8.38,
+     49.03
+    ],
+    [
+     8.6,
+     49.03
+    ],
+    [
+     8.72,
+     48.93
+    ],
+    [
+     8.55,
+     48.75
+    ],
+    [
+     8.45,
+     48.8
+    ],
+    [
+     8.3,
+     48.92
+    ]
+   ]
+  },
+  {
+   "name": "Margraviate of Baden-Durlach",
+   "key": "Margraviate of Baden-Durlach",
+   "kind": "margraviate",
+   "from": 1535,
+   "to": 1771,
+   "capital": "Pforzheim, from 1565 Durlach, from 1718 Karlsruhe",
+   "rulers": [
+    {
+     "name": "Ernest",
+     "when": "1535–1553"
+    },
+    {
+     "name": "Charles II",
+     "when": "1553–1577"
+    },
+    {
+     "name": "George Frederick",
+     "when": "1604–1622"
+    },
+    {
+     "name": "Charles III William",
+     "when": "1709–1738"
+    },
+    {
+     "name": "Charles Frederick",
+     "when": "1738–1771"
+    }
+   ],
+   "note": "The Protestant (Ernestine) half of Baden after the division of 1535: the lower margraviate around Pforzheim and Durlach and the upper lands of Hachberg, Rötteln and Badenweiler in the Breisgau (two pieces). Charles William founded Karlsruhe in 1715. Reunited with Baden-Baden in 1771.",
+   "coords": [
+    [
+     7.55,
+     47.6
+    ],
+    [
+     7.6,
+     47.85
+    ],
+    [
+     7.7,
+     48.1
+    ],
+    [
+     7.85,
+     48.15
+    ],
+    [
+     7.95,
+     48.05
+    ],
+    [
+     7.85,
+     47.85
+    ],
+    [
+     7.8,
+     47.65
+    ],
+    [
+     7.65,
+     47.55
+    ],
+    [
+     7.55,
+     47.6
+    ]
+   ]
+  },
+  {
+   "name": "Margraviate of Baden-Baden",
+   "key": "Margraviate of Baden-Baden",
+   "kind": "margraviate",
+   "from": 1535,
+   "to": 1771,
+   "capital": "Baden-Baden, from 1705 Rastatt",
+   "rulers": [
+    {
+     "name": "Bernhard III",
+     "when": "1535–1536"
+    },
+    {
+     "name": "Philibert",
+     "when": "1536–1569"
+    },
+    {
+     "name": "Louis William (Türkenlouis)",
+     "when": "1677–1707"
+    },
+    {
+     "name": "August George",
+     "when": "1761–1771"
+    }
+   ],
+   "note": "The Catholic (Bernhardine) half of Baden after the division of 1535, on the Rhine plain and northern Black Forest around Baden-Baden and Rastatt (its Spanheim and Luxembourg holdings are left out). Passed to Baden-Durlach when August George died in 1771.",
+   "coords": [
+    [
+     7.95,
+     48.85
+    ],
+    [
+     8.2,
+     48.95
+    ],
+    [
+     8.3,
+     48.92
+    ],
+    [
+     8.45,
+     48.8
+    ],
+    [
+     8.4,
+     48.6
+    ],
+    [
+     8.2,
+     48.55
+    ],
+    [
+     8.05,
+     48.62
+    ],
+    [
+     7.95,
+     48.85
+    ]
+   ]
+  },
+  {
+   "name": "Margraviate of Baden",
+   "key": "Margraviate of Baden",
+   "kind": "margraviate",
+   "from": 1772,
+   "to": 1802,
+   "capital": "Karlsruhe",
+   "rulers": [
+    {
+     "name": "Charles Frederick",
+     "when": "1771–1803, then elector and grand duke"
+    }
+   ],
+   "note": "Baden reunited under Charles Frederick of Baden-Durlach in 1772 after the Baden-Baden line died out (1771). Made an electorate in 1803, from when the border data shows it.",
+   "coords": [
+    [
+     7.95,
+     48.85
+    ],
+    [
+     8.2,
+     48.95
+    ],
+    [
+     8.3,
+     48.92
+    ],
+    [
+     8.38,
+     49.03
+    ],
+    [
+     8.6,
+     49.03
+    ],
+    [
+     8.72,
+     48.93
+    ],
+    [
+     8.55,
+     48.75
+    ],
+    [
+     8.45,
+     48.8
+    ],
+    [
+     8.4,
+     48.6
+    ],
+    [
+     8.2,
+     48.55
+    ],
+    [
+     8.05,
+     48.62
+    ],
+    [
+     7.95,
+     48.85
+    ]
+   ]
+  },
+  {
+   "name": "Margraviate of Baden",
+   "key": "Margraviate of Baden",
+   "kind": "margraviate",
+   "from": 1772,
+   "to": 1802,
+   "capital": "Karlsruhe",
+   "rulers": [
+    {
+     "name": "Charles Frederick",
+     "when": "1771–1803, then elector and grand duke"
+    }
+   ],
+   "note": "Baden reunited under Charles Frederick of Baden-Durlach in 1772 after the Baden-Baden line died out (1771). Made an electorate in 1803, from when the border data shows it.",
+   "coords": [
+    [
+     7.55,
+     47.6
+    ],
+    [
+     7.6,
+     47.85
+    ],
+    [
+     7.7,
+     48.1
+    ],
+    [
+     7.85,
+     48.15
+    ],
+    [
+     7.95,
+     48.05
+    ],
+    [
+     7.85,
+     47.85
+    ],
+    [
+     7.8,
+     47.65
+    ],
+    [
+     7.65,
+     47.55
+    ],
+    [
+     7.55,
+     47.6
+    ]
+   ]
+  },
+  {
+   "name": "Principality of Ansbach",
+   "key": "Principality of Ansbach",
+   "kind": "principality",
+   "from": 1486,
+   "to": 1791,
+   "capital": "Ansbach",
+   "rulers": [
+    {
+     "name": "Frederick I (V)",
+     "when": "1486–1515"
+    },
+    {
+     "name": "George the Pious",
+     "when": "1515–1543"
+    },
+    {
+     "name": "Charles William Frederick",
+     "when": "1723–1757"
+    },
+    {
+     "name": "Charles Alexander",
+     "when": "1757–1791"
+    }
+   ],
+   "note": "The Franconian Hohenzollern principality 'below the mountains' (Brandenburg-Ansbach), separated from Bayreuth in 1486. Charles Alexander sold it to Prussia in 1791; Bavaria took it in 1806. Its many small exclaves are smoothed.",
+   "coords": [
+    [
+     10.0,
+     49.2
+    ],
+    [
+     10.15,
+     49.4
+    ],
+    [
+     10.5,
+     49.5
+    ],
+    [
+     10.8,
+     49.45
+    ],
+    [
+     10.85,
+     49.4
+    ],
+    [
+     10.95,
+     49.32
+    ],
+    [
+     11.1,
+     49.28
+    ],
+    [
+     11.05,
+     49.1
+    ],
+    [
+     10.8,
+     48.98
+    ],
+    [
+     10.5,
+     48.98
+    ],
+    [
+     10.2,
+     49.05
+    ],
+    [
+     10.0,
+     49.2
+    ]
+   ]
+  },
+  {
+   "name": "Principality of Bayreuth",
+   "key": "Principality of Bayreuth",
+   "kind": "principality",
+   "from": 1486,
+   "to": 1791,
+   "capital": "Kulmbach (Plassenburg), from 1604 Bayreuth",
+   "rulers": [
+    {
+     "name": "Sigismund",
+     "when": "1486–1495"
+    },
+    {
+     "name": "Albert Alcibiades",
+     "when": "1527–1553"
+    },
+    {
+     "name": "Frederick",
+     "when": "1735–1763"
+    },
+    {
+     "name": "Charles Alexander",
+     "when": "1769–1791"
+    }
+   ],
+   "note": "The Franconian Hohenzollern principality 'above the mountains' (Brandenburg-Kulmbach, later Brandenburg-Bayreuth) around Kulmbach, Bayreuth and Hof, separated from Ansbach in 1486. Its lower district around Erlangen and Neustadt an der Aisch is left out. Passed to Prussia with Ansbach in 1791.",
+   "coords": [
+    [
+     11.25,
+     49.95
+    ],
+    [
+     11.35,
+     50.15
+    ],
+    [
+     11.6,
+     50.4
+    ],
+    [
+     12.0,
+     50.35
+    ],
+    [
+     12.15,
+     50.2
+    ],
+    [
+     12.1,
+     50.0
+    ],
+    [
+     11.8,
+     49.85
+    ],
+    [
+     11.55,
+     49.75
+    ],
+    [
+     11.35,
+     49.8
+    ],
+    [
+     11.25,
+     49.95
+    ]
+   ]
+  },
+  {
+   "name": "Free Imperial City of Nuremberg",
+   "key": "Free Imperial City of Nuremberg",
+   "kind": "free imperial city",
+   "from": 1505,
+   "to": 1796,
+   "capital": "Nuremberg",
+   "rulers": [
+    {
+     "name": "Inner Council of patrician families",
+     "when": "1219–1806"
+    }
+   ],
+   "note": "Nuremberg, a free imperial city from 1219, bought the burgraves' rights in 1427 and won the largest territory of any imperial city (Lauf, Hersbruck, Altdorf) in the Landshut War of Succession in 1504–1505. Drawn from 1505 to 1796, when Prussia occupied its outer districts; annexed by Bavaria in 1806.",
+   "coords": [
+    [
+     10.85,
+     49.4
+    ],
+    [
+     10.95,
+     49.6
+    ],
+    [
+     11.2,
+     49.65
+    ],
+    [
+     11.5,
+     49.6
+    ],
+    [
+     11.55,
+     49.45
+    ],
+    [
+     11.4,
+     49.35
+    ],
+    [
+     11.2,
+     49.3
+    ],
+    [
+     10.95,
+     49.32
+    ],
+    [
+     10.85,
+     49.4
+    ]
+   ]
+  },
+  {
+   "name": "Prince-Archbishopric of Salzburg",
+   "key": "Prince-Archbishopric of Salzburg",
+   "kind": "prince-archbishopric",
+   "from": 1328,
+   "to": 1802,
+   "capital": "Salzburg",
+   "rulers": [
+    {
+     "name": "Frederick III of Leibnitz",
+     "when": "1315–1338"
+    },
+    {
+     "name": "Leonhard von Keutschach",
+     "when": "1495–1519"
+    },
+    {
+     "name": "Wolf Dietrich von Raitenau",
+     "when": "1587–1612"
+    },
+    {
+     "name": "Paris Lodron",
+     "when": "1619–1653"
+    },
+    {
+     "name": "Hieronymus von Colloredo",
+     "when": "1772–1803"
+    }
+   ],
+   "note": "The ecclesiastical principality of the archbishops of Salzburg in the Salzach valley (Pongau, Pinzgau, Lungau), which became fully separate from Bavaria with its own territorial law in 1328. Rich from salt and gold; it expelled its Protestants in 1731. Secularised in 1803 (the border data's 'Electorate of Salzburg'). Berchtesgaden, a separate provostry, is left out of the outline only roughly.",
+   "coords": [
+    [
+     12.1,
+     47.25
+    ],
+    [
+     12.3,
+     47.5
+    ],
+    [
+     12.6,
+     47.45
+    ],
+    [
+     12.95,
+     47.75
+    ],
+    [
+     12.9,
+     47.95
+    ],
+    [
+     13.1,
+     48.05
+    ],
+    [
+     13.35,
+     47.95
+    ],
+    [
+     13.5,
+     47.75
+    ],
+    [
+     13.7,
+     47.5
+    ],
+    [
+     14.0,
+     47.25
+    ],
+    [
+     13.95,
+     47.05
+    ],
+    [
+     13.6,
+     46.98
+    ],
+    [
+     13.25,
+     47.05
+    ],
+    [
+     12.75,
+     47.1
+    ],
+    [
+     12.35,
+     47.05
+    ],
+    [
+     12.1,
+     47.25
+    ]
+   ]
+  },
+  {
+   "name": "Margraviate of Meissen",
+   "key": "Margraviate of Meissen",
+   "kind": "margraviate",
+   "from": 1089,
+   "to": 1422,
+   "capital": "Meissen, later Dresden",
+   "rulers": [
+    {
+     "name": "Henry I of Eilenburg",
+     "when": "1089–1103"
+    },
+    {
+     "name": "Conrad the Great",
+     "when": "1123–1156"
+    },
+    {
+     "name": "Otto the Rich",
+     "when": "1156–1190"
+    },
+    {
+     "name": "Henry III the Illustrious",
+     "when": "1221–1288"
+    },
+    {
+     "name": "Frederick IV the Warlike",
+     "when": "1407–1428"
+    }
+   ],
+   "note": "The march on the middle Elbe held by the House of Wettin from 1089 (silver found at Freiberg in 1168 made it rich). Henry the Illustrious added Thuringia in 1247 (not drawn here). When Frederick the Warlike received the Saxon electorate in 1423 the Wettin lands became 'Saxony'; the border data's 'Electorate of Saxony' shows them from then.",
+   "coords": [
+    [
+     12.3,
+     51.25
+    ],
+    [
+     12.4,
+     51.45
+    ],
+    [
+     12.95,
+     51.5
+    ],
+    [
+     13.3,
+     51.45
+    ],
+    [
+     13.65,
+     51.35
+    ],
+    [
+     14.05,
+     51.2
+    ],
+    [
+     14.2,
+     51.0
+    ],
+    [
+     14.0,
+     50.85
+    ],
+    [
+     13.55,
+     50.7
+    ],
+    [
+     13.2,
+     50.6
+    ],
+    [
+     12.95,
+     50.75
+    ],
+    [
+     12.8,
+     51.0
+    ],
+    [
+     12.3,
+     51.25
+    ]
+   ]
+  },
+  {
+   "name": "Duchy of Saxe-Wittenberg",
+   "key": "Duchy of Saxe-Wittenberg",
+   "kind": "duchy",
+   "from": 1296,
+   "to": 1422,
+   "capital": "Wittenberg",
+   "rulers": [
+    {
+     "name": "Albert II",
+     "when": "1260–1298"
+    },
+    {
+     "name": "Rudolf I",
+     "when": "1298–1356"
+    },
+    {
+     "name": "Rudolf III",
+     "when": "1388–1419"
+    },
+    {
+     "name": "Albert III",
+     "when": "1419–1422"
+    }
+   ],
+   "note": "The Ascanian duchy of Saxony around Wittenberg on the middle Elbe, split from Saxe-Lauenburg in 1296; the Golden Bull (1356) made its duke an elector. When the line died out in 1422 Emperor Sigismund gave it to the Wettin margrave of Meissen.",
+   "coords": [
+    [
+     12.2,
+     51.85
+    ],
+    [
+     12.3,
+     52.1
+    ],
+    [
+     12.65,
+     52.15
+    ],
+    [
+     13.0,
+     52.0
+    ],
+    [
+     13.35,
+     51.85
+    ],
+    [
+     13.25,
+     51.65
+    ],
+    [
+     12.9,
+     51.6
+    ],
+    [
+     12.5,
+     51.7
+    ],
+    [
+     12.2,
+     51.85
+    ]
+   ]
+  },
+  {
+   "name": "Duchy of Pomerania",
+   "key": "Duchy of Pomerania",
+   "kind": "duchy",
+   "from": 1181,
+   "to": 1324,
+   "capital": "Stettin (Szczecin) and Wolgast",
+   "rulers": [
+    {
+     "name": "Bogislaw I",
+     "when": "1156–1187"
+    },
+    {
+     "name": "Barnim I",
+     "when": "1220–1278"
+    },
+    {
+     "name": "Bogislaw X",
+     "when": "1474–1523"
+    },
+    {
+     "name": "Bogislaw XIV",
+     "when": "1620–1637"
+    }
+   ],
+   "note": "The Griffin dukes' Pomerania on the Baltic from the Recknitz to the Łeba, a fief of the Empire from 1181. The second slice adds Rügen (inherited 1325) and the eastern lands of Schlawe and Stolp. Partitioned among lines (Stettin, Wolgast) for most of its history. When Bogislaw XIV died in 1637 it was occupied by Sweden and divided with Brandenburg in 1648. The region runs east of 15°E; the border data shows it as minor states.",
+   "coords": [
+    [
+     12.85,
+     53.9
+    ],
+    [
+     13.0,
+     54.0
+    ],
+    [
+     13.4,
+     54.12
+    ],
+    [
+     13.8,
+     54.2
+    ],
+    [
+     14.3,
+     54.1
+    ],
+    [
+     15.0,
+     54.15
+    ],
+    [
+     15.5,
+     54.25
+    ],
+    [
+     16.2,
+     54.35
+    ],
+    [
+     16.4,
+     54.2
+    ],
+    [
+     16.3,
+     53.9
+    ],
+    [
+     16.0,
+     53.6
+    ],
+    [
+     15.6,
+     53.4
+    ],
+    [
+     15.3,
+     53.15
+    ],
+    [
+     14.6,
+     53.05
+    ],
+    [
+     14.3,
+     53.25
+    ],
+    [
+     13.9,
+     53.4
+    ],
+    [
+     13.5,
+     53.5
+    ],
+    [
+     13.1,
+     53.65
+    ],
+    [
+     12.85,
+     53.9
+    ]
+   ]
+  },
+  {
+   "name": "Duchy of Pomerania",
+   "key": "Duchy of Pomerania",
+   "kind": "duchy",
+   "from": 1325,
+   "to": 1637,
+   "capital": "Stettin (Szczecin) and Wolgast",
+   "rulers": [
+    {
+     "name": "Bogislaw I",
+     "when": "1156–1187"
+    },
+    {
+     "name": "Barnim I",
+     "when": "1220–1278"
+    },
+    {
+     "name": "Bogislaw X",
+     "when": "1474–1523"
+    },
+    {
+     "name": "Bogislaw XIV",
+     "when": "1620–1637"
+    }
+   ],
+   "note": "The Griffin dukes' Pomerania on the Baltic from the Recknitz to the Łeba, a fief of the Empire from 1181. The second slice adds Rügen (inherited 1325) and the eastern lands of Schlawe and Stolp. Partitioned among lines (Stettin, Wolgast) for most of its history. When Bogislaw XIV died in 1637 it was occupied by Sweden and divided with Brandenburg in 1648. The region runs east of 15°E; the border data shows it as minor states.",
+   "coords": [
+    [
+     12.4,
+     54.3
+    ],
+    [
+     13.0,
+     54.5
+    ],
+    [
+     13.5,
+     54.75
+    ],
+    [
+     14.3,
+     54.2
+    ],
+    [
+     15.0,
+     54.18
+    ],
+    [
+     16.2,
+     54.6
+    ],
+    [
+     17.3,
+     54.8
+    ],
+    [
+     17.7,
+     54.7
+    ],
+    [
+     17.5,
+     54.3
+    ],
+    [
+     17.2,
+     54.1
+    ],
+    [
+     16.6,
+     53.95
+    ],
+    [
+     16.3,
+     53.7
+    ],
+    [
+     16.0,
+     53.45
+    ],
+    [
+     15.6,
+     53.3
+    ],
+    [
+     15.3,
+     53.1
+    ],
+    [
+     14.6,
+     53.05
+    ],
+    [
+     14.3,
+     53.25
+    ],
+    [
+     13.9,
+     53.4
+    ],
+    [
+     13.5,
+     53.5
+    ],
+    [
+     13.1,
+     53.65
+    ],
+    [
+     12.85,
+     53.9
+    ],
+    [
+     12.5,
+     54.05
+    ],
+    [
+     12.4,
+     54.3
+    ]
+   ]
+  },
+  {
+   "name": "American zone",
+   "key": "Allied-occupied Germany",
+   "kind": "occupation zone",
+   "from": 1945,
+   "to": 1949,
+   "capital": "Berlin (Allied Control Council)",
+   "rulers": [
+    {
+     "name": "Dwight D. Eisenhower, then Lucius D. Clay (US)",
+     "when": "1945, 1947–1949"
+    },
+    {
+     "name": "Bernard Montgomery (UK)",
+     "when": "1945–1946"
+    },
+    {
+     "name": "Georgy Zhukov, then Vasily Sokolovsky (USSR)",
+     "when": "1945–1949"
+    },
+    {
+     "name": "Marie-Pierre Kœnig (France)",
+     "when": "1945–1949"
+    }
+   ],
+   "note": "Germany west of the Oder–Neisse line after the surrender of May 1945, divided into American, British, French and Soviet zones under the Allied Control Council. The western zones became the Federal Republic in May 1949 and the Soviet zone the German Democratic Republic in October 1949. Berlin, under four-power rule, lies inside the Soviet zone outline; the American enclave of Bremen is part of the British zone here. The Saar was split from the French zone in 1947 (separate entry). The border data colours the zones as the United States and the Soviet Union.",
+   "coords": [
+    [
+     8.12,
+     50.7
+    ],
+    [
+     8.3,
+     50.95
+    ],
+    [
+     8.55,
+     51.25
+    ],
+    [
+     8.85,
+     51.35
+    ],
+    [
+     9.15,
+     51.48
+    ],
+    [
+     9.45,
+     51.65
+    ],
+    [
+     9.62,
+     51.4
+    ],
+    [
+     9.9,
+     51.42
+    ],
+    [
+     10.35,
+     51.55
+    ],
+    [
+     10.15,
+     51.4
+    ],
+    [
+     10.05,
+     51.25
+    ],
+    [
+     9.95,
+     51.05
+    ],
+    [
+     9.95,
+     50.85
+    ],
+    [
+     10.05,
+     50.65
+    ],
+    [
+     10.4,
+     50.4
+    ],
+    [
+     10.75,
+     50.3
+    ],
+    [
+     11.25,
+     50.3
+    ],
+    [
+     11.6,
+     50.4
+    ],
+    [
+     11.95,
+     50.35
+    ],
+    [
+     12.1,
+     50.3
+    ],
+    [
+     12.5,
+     50.0
+    ],
+    [
+     12.45,
+     49.75
+    ],
+    [
+     12.8,
+     49.35
+    ],
+    [
+     13.4,
+     49.0
+    ],
+    [
+     13.8,
+     48.75
+    ],
+    [
+     13.45,
+     48.55
+    ],
+    [
+     13.0,
+     48.3
+    ],
+    [
+     12.75,
+     48.1
+    ],
+    [
+     12.9,
+     47.95
+    ],
+    [
+     13.0,
+     47.7
+    ],
+    [
+     12.8,
+     47.6
+    ],
+    [
+     12.2,
+     47.6
+    ],
+    [
+     11.5,
+     47.45
+    ],
+    [
+     11.0,
+     47.4
+    ],
+    [
+     10.5,
+     47.55
+    ],
+    [
+     9.85,
+     47.55
+    ],
+    [
+     10.0,
+     47.7
+    ],
+    [
+     10.1,
+     48.0
+    ],
+    [
+     10.0,
+     48.45
+    ],
+    [
+     9.7,
+     48.62
+    ],
+    [
+     9.3,
+     48.68
+    ],
+    [
+     8.9,
+     48.75
+    ],
+    [
+     8.5,
+     48.88
+    ],
+    [
+     8.25,
+     48.95
+    ],
+    [
+     8.35,
+     49.2
+    ],
+    [
+     8.45,
+     49.5
+    ],
+    [
+     8.4,
+     49.85
+    ],
+    [
+     8.27,
+     50.0
+    ],
+    [
+     8.0,
+     50.0
+    ],
+    [
+     7.8,
+     50.04
+    ],
+    [
+     7.85,
+     50.15
+    ],
+    [
+     8.0,
+     50.45
+    ],
+    [
+     8.12,
+     50.7
+    ]
+   ]
+  },
+  {
+   "name": "British zone",
+   "key": "Allied-occupied Germany",
+   "kind": "occupation zone",
+   "from": 1945,
+   "to": 1949,
+   "capital": "Berlin (Allied Control Council)",
+   "rulers": [
+    {
+     "name": "Dwight D. Eisenhower, then Lucius D. Clay (US)",
+     "when": "1945, 1947–1949"
+    },
+    {
+     "name": "Bernard Montgomery (UK)",
+     "when": "1945–1946"
+    },
+    {
+     "name": "Georgy Zhukov, then Vasily Sokolovsky (USSR)",
+     "when": "1945–1949"
+    },
+    {
+     "name": "Marie-Pierre Kœnig (France)",
+     "when": "1945–1949"
+    }
+   ],
+   "note": "Germany west of the Oder–Neisse line after the surrender of May 1945, divided into American, British, French and Soviet zones under the Allied Control Council. The western zones became the Federal Republic in May 1949 and the Soviet zone the German Democratic Republic in October 1949. Berlin, under four-power rule, lies inside the Soviet zone outline; the American enclave of Bremen is part of the British zone here. The Saar was split from the French zone in 1947 (separate entry). The border data colours the zones as the United States and the Soviet Union.",
+   "coords": [
+    [
+     8.4,
+     55.05
+    ],
+    [
+     9.4,
+     54.85
+    ],
+    [
+     10.0,
+     54.82
+    ],
+    [
+     11.3,
+     54.5
+    ],
+    [
+     10.9,
+     54.0
+    ],
+    [
+     10.8,
+     53.7
+    ],
+    [
+     10.95,
+     53.6
+    ],
+    [
+     10.75,
+     53.37
+    ],
+    [
+     11.55,
+     53.03
+    ],
+    [
+     11.3,
+     52.88
+    ],
+    [
+     10.95,
+     52.85
+    ],
+    [
+     10.95,
+     52.6
+    ],
+    [
+     11.05,
+     52.35
+    ],
+    [
+     11.0,
+     52.2
+    ],
+    [
+     10.75,
+     52.05
+    ],
+    [
+     10.6,
+     51.82
+    ],
+    [
+     10.65,
+     51.65
+    ],
+    [
+     10.35,
+     51.55
+    ],
+    [
+     9.9,
+     51.42
+    ],
+    [
+     9.62,
+     51.4
+    ],
+    [
+     9.45,
+     51.65
+    ],
+    [
+     9.15,
+     51.48
+    ],
+    [
+     8.85,
+     51.35
+    ],
+    [
+     8.55,
+     51.25
+    ],
+    [
+     8.3,
+     50.95
+    ],
+    [
+     8.12,
+     50.7
+    ],
+    [
+     7.75,
+     50.7
+    ],
+    [
+     7.45,
+     50.68
+    ],
+    [
+     7.2,
+     50.6
+    ],
+    [
+     6.95,
+     50.45
+    ],
+    [
+     6.6,
+     50.35
+    ],
+    [
+     6.4,
+     50.32
+    ],
+    [
+     6.25,
+     50.55
+    ],
+    [
+     6.1,
+     50.65
+    ],
+    [
+     6.0,
+     50.75
+    ],
+    [
+     6.1,
+     51.0
+    ],
+    [
+     6.2,
+     51.4
+    ],
+    [
+     5.95,
+     51.8
+    ],
+    [
+     6.4,
+     51.85
+    ],
+    [
+     6.85,
+     52.1
+    ],
+    [
+     7.05,
+     52.4
+    ],
+    [
+     7.05,
+     52.65
+    ],
+    [
+     7.2,
+     53.0
+    ],
+    [
+     7.25,
+     53.35
+    ],
+    [
+     6.9,
+     53.5
+    ],
+    [
+     8.0,
+     54.0
+    ],
+    [
+     8.4,
+     55.05
+    ]
+   ]
+  },
+  {
+   "name": "Soviet zone",
+   "key": "Allied-occupied Germany",
+   "kind": "occupation zone",
+   "from": 1945,
+   "to": 1949,
+   "capital": "Berlin (Allied Control Council)",
+   "rulers": [
+    {
+     "name": "Dwight D. Eisenhower, then Lucius D. Clay (US)",
+     "when": "1945, 1947–1949"
+    },
+    {
+     "name": "Bernard Montgomery (UK)",
+     "when": "1945–1946"
+    },
+    {
+     "name": "Georgy Zhukov, then Vasily Sokolovsky (USSR)",
+     "when": "1945–1949"
+    },
+    {
+     "name": "Marie-Pierre Kœnig (France)",
+     "when": "1945–1949"
+    }
+   ],
+   "note": "Germany west of the Oder–Neisse line after the surrender of May 1945, divided into American, British, French and Soviet zones under the Allied Control Council. The western zones became the Federal Republic in May 1949 and the Soviet zone the German Democratic Republic in October 1949. Berlin, under four-power rule, lies inside the Soviet zone outline; the American enclave of Bremen is part of the British zone here. The Saar was split from the French zone in 1947 (separate entry). The border data colours the zones as the United States and the Soviet Union.",
+   "coords": [
+    [
+     10.9,
+     54.0
+    ],
+    [
+     10.8,
+     53.7
+    ],
+    [
+     10.95,
+     53.6
+    ],
+    [
+     10.75,
+     53.37
+    ],
+    [
+     11.55,
+     53.03
+    ],
+    [
+     11.3,
+     52.88
+    ],
+    [
+     10.95,
+     52.85
+    ],
+    [
+     10.95,
+     52.6
+    ],
+    [
+     11.05,
+     52.35
+    ],
+    [
+     11.0,
+     52.2
+    ],
+    [
+     10.75,
+     52.05
+    ],
+    [
+     10.6,
+     51.82
+    ],
+    [
+     10.65,
+     51.65
+    ],
+    [
+     10.35,
+     51.55
+    ],
+    [
+     10.15,
+     51.4
+    ],
+    [
+     10.05,
+     51.25
+    ],
+    [
+     9.95,
+     51.05
+    ],
+    [
+     9.95,
+     50.85
+    ],
+    [
+     10.05,
+     50.65
+    ],
+    [
+     10.4,
+     50.4
+    ],
+    [
+     10.75,
+     50.3
+    ],
+    [
+     11.25,
+     50.3
+    ],
+    [
+     11.6,
+     50.4
+    ],
+    [
+     11.95,
+     50.35
+    ],
+    [
+     12.1,
+     50.3
+    ],
+    [
+     12.5,
+     50.4
+    ],
+    [
+     13.0,
+     50.55
+    ],
+    [
+     13.5,
+     50.72
+    ],
+    [
+     14.3,
+     50.9
+    ],
+    [
+     14.85,
+     50.85
+    ],
+    [
+     15.0,
+     51.1
+    ],
+    [
+     14.75,
+     51.6
+    ],
+    [
+     14.6,
+     52.05
+    ],
+    [
+     14.65,
+     52.55
+    ],
+    [
+     14.15,
+     52.85
+    ],
+    [
+     14.4,
+     53.3
+    ],
+    [
+     14.25,
+     53.75
+    ],
+    [
+     14.2,
+     53.95
+    ],
+    [
+     14.4,
+     54.3
+    ],
+    [
+     13.0,
+     54.75
+    ],
+    [
+     11.3,
+     54.5
+    ],
+    [
+     10.9,
+     54.0
+    ]
+   ]
+  },
+  {
+   "name": "French zone",
+   "key": "Allied-occupied Germany",
+   "kind": "occupation zone",
+   "from": 1945,
+   "to": 1946,
+   "capital": "Berlin (Allied Control Council)",
+   "rulers": [
+    {
+     "name": "Dwight D. Eisenhower, then Lucius D. Clay (US)",
+     "when": "1945, 1947–1949"
+    },
+    {
+     "name": "Bernard Montgomery (UK)",
+     "when": "1945–1946"
+    },
+    {
+     "name": "Georgy Zhukov, then Vasily Sokolovsky (USSR)",
+     "when": "1945–1949"
+    },
+    {
+     "name": "Marie-Pierre Kœnig (France)",
+     "when": "1945–1949"
+    }
+   ],
+   "note": "Germany west of the Oder–Neisse line after the surrender of May 1945, divided into American, British, French and Soviet zones under the Allied Control Council. The western zones became the Federal Republic in May 1949 and the Soviet zone the German Democratic Republic in October 1949. Berlin, under four-power rule, lies inside the Soviet zone outline; the American enclave of Bremen is part of the British zone here. The Saar was split from the French zone in 1947 (separate entry). The border data colours the zones as the United States and the Soviet Union.",
+   "coords": [
+    [
+     6.4,
+     50.32
+    ],
+    [
+     6.6,
+     50.35
+    ],
+    [
+     6.95,
+     50.45
+    ],
+    [
+     7.2,
+     50.6
+    ],
+    [
+     7.45,
+     50.68
+    ],
+    [
+     7.75,
+     50.7
+    ],
+    [
+     8.12,
+     50.7
+    ],
+    [
+     8.0,
+     50.45
+    ],
+    [
+     7.85,
+     50.15
+    ],
+    [
+     7.8,
+     50.04
+    ],
+    [
+     8.0,
+     50.0
+    ],
+    [
+     8.27,
+     50.0
+    ],
+    [
+     8.4,
+     49.85
+    ],
+    [
+     8.45,
+     49.5
+    ],
+    [
+     8.35,
+     49.2
+    ],
+    [
+     8.25,
+     48.95
+    ],
+    [
+     8.5,
+     48.88
+    ],
+    [
+     8.9,
+     48.75
+    ],
+    [
+     9.3,
+     48.68
+    ],
+    [
+     9.7,
+     48.62
+    ],
+    [
+     10.0,
+     48.45
+    ],
+    [
+     10.1,
+     48.0
+    ],
+    [
+     10.0,
+     47.7
+    ],
+    [
+     9.85,
+     47.55
+    ],
+    [
+     9.6,
+     47.55
+    ],
+    [
+     8.7,
+     47.7
+    ],
+    [
+     8.4,
+     47.6
+    ],
+    [
+     7.6,
+     47.58
+    ],
+    [
+     7.55,
+     47.9
+    ],
+    [
+     7.75,
+     48.4
+    ],
+    [
+     8.0,
+     48.8
+    ],
+    [
+     8.2,
+     48.97
+    ],
+    [
+     7.6,
+     49.05
+    ],
+    [
+     7.05,
+     49.12
+    ],
+    [
+     6.75,
+     49.17
+    ],
+    [
+     6.55,
+     49.35
+    ],
+    [
+     6.4,
+     49.47
+    ],
+    [
+     6.5,
+     49.8
+    ],
+    [
+     6.15,
+     50.15
+    ],
+    [
+     6.3,
+     50.3
+    ],
+    [
+     6.4,
+     50.32
+    ]
+   ]
+  },
+  {
+   "name": "French zone",
+   "key": "Allied-occupied Germany",
+   "kind": "occupation zone",
+   "from": 1947,
+   "to": 1949,
+   "capital": "Berlin (Allied Control Council)",
+   "rulers": [
+    {
+     "name": "Dwight D. Eisenhower, then Lucius D. Clay (US)",
+     "when": "1945, 1947–1949"
+    },
+    {
+     "name": "Bernard Montgomery (UK)",
+     "when": "1945–1946"
+    },
+    {
+     "name": "Georgy Zhukov, then Vasily Sokolovsky (USSR)",
+     "when": "1945–1949"
+    },
+    {
+     "name": "Marie-Pierre Kœnig (France)",
+     "when": "1945–1949"
+    }
+   ],
+   "note": "Germany west of the Oder–Neisse line after the surrender of May 1945, divided into American, British, French and Soviet zones under the Allied Control Council. The western zones became the Federal Republic in May 1949 and the Soviet zone the German Democratic Republic in October 1949. Berlin, under four-power rule, lies inside the Soviet zone outline; the American enclave of Bremen is part of the British zone here. The Saar was split from the French zone in 1947 (separate entry). The border data colours the zones as the United States and the Soviet Union.",
+   "coords": [
+    [
+     6.4,
+     50.32
+    ],
+    [
+     6.6,
+     50.35
+    ],
+    [
+     6.95,
+     50.45
+    ],
+    [
+     7.2,
+     50.6
+    ],
+    [
+     7.45,
+     50.68
+    ],
+    [
+     7.75,
+     50.7
+    ],
+    [
+     8.12,
+     50.7
+    ],
+    [
+     8.0,
+     50.45
+    ],
+    [
+     7.85,
+     50.15
+    ],
+    [
+     7.8,
+     50.04
+    ],
+    [
+     8.0,
+     50.0
+    ],
+    [
+     8.27,
+     50.0
+    ],
+    [
+     8.4,
+     49.85
+    ],
+    [
+     8.45,
+     49.5
+    ],
+    [
+     8.35,
+     49.2
+    ],
+    [
+     8.25,
+     48.95
+    ],
+    [
+     8.5,
+     48.88
+    ],
+    [
+     8.9,
+     48.75
+    ],
+    [
+     9.3,
+     48.68
+    ],
+    [
+     9.7,
+     48.62
+    ],
+    [
+     10.0,
+     48.45
+    ],
+    [
+     10.1,
+     48.0
+    ],
+    [
+     10.0,
+     47.7
+    ],
+    [
+     9.85,
+     47.55
+    ],
+    [
+     9.6,
+     47.55
+    ],
+    [
+     8.7,
+     47.7
+    ],
+    [
+     8.4,
+     47.6
+    ],
+    [
+     7.6,
+     47.58
+    ],
+    [
+     7.55,
+     47.9
+    ],
+    [
+     7.75,
+     48.4
+    ],
+    [
+     8.0,
+     48.8
+    ],
+    [
+     8.2,
+     48.97
+    ],
+    [
+     7.6,
+     49.05
+    ],
+    [
+     7.4,
+     49.2
+    ],
+    [
+     7.4,
+     49.45
+    ],
+    [
+     7.2,
+     49.55
+    ],
+    [
+     6.9,
+     49.62
+    ],
+    [
+     6.55,
+     49.65
+    ],
+    [
+     6.4,
+     49.47
+    ],
+    [
+     6.5,
+     49.8
+    ],
+    [
+     6.15,
+     50.15
+    ],
+    [
+     6.3,
+     50.3
+    ],
+    [
+     6.4,
+     50.32
+    ]
+   ]
+  },
+  {
+   "name": "Saar Protectorate",
+   "key": "Saar Protectorate",
+   "kind": "protectorate",
+   "from": 1947,
+   "to": 1956,
+   "capital": "Saarbrücken",
+   "rulers": [
+    {
+     "name": "Gilbert Grandval (French high commissioner)",
+     "when": "1945–1955"
+    },
+    {
+     "name": "Johannes Hoffmann",
+     "when": "1947–1955"
+    }
+   ],
+   "note": "The Saar, detached from the French zone in 1947 as a protectorate with its own constitution and government in customs and currency union with France. After voters rejected the European statute in the 1955 referendum it joined West Germany on 1 January 1957. Drawn at its 1947–1956 borders, simplified; the border data colours it French.",
+   "coords": [
+    [
+     7.6,
+     49.05
+    ],
+    [
+     7.4,
+     49.2
+    ],
+    [
+     7.4,
+     49.45
+    ],
+    [
+     7.2,
+     49.55
+    ],
+    [
+     6.9,
+     49.62
+    ],
+    [
+     6.55,
+     49.65
+    ],
+    [
+     6.4,
+     49.47
+    ],
+    [
+     6.55,
+     49.35
+    ],
+    [
+     6.75,
+     49.17
+    ],
+    [
+     7.05,
+     49.12
+    ],
+    [
+     7.6,
+     49.05
+    ]
+   ]
+  },
+  {
+   "name": "Signoria of Milan",
+   "key": "Milan",
+   "kind": "signoria",
+   "from": 1259,
+   "to": 1329,
+   "capital": "Milan",
+   "rulers": [
+    {
+     "name": "Martino della Torre",
+     "when": "1259–1263"
+    },
+    {
+     "name": "Ottone Visconti, archbishop",
+     "when": "1277–1295"
+    },
+    {
+     "name": "Matteo I Visconti",
+     "when": "1287–1302, 1311–1322"
+    },
+    {
+     "name": "Azzone Visconti",
+     "when": "1329–1339"
+    },
+    {
+     "name": "Bernabò and Galeazzo II Visconti",
+     "when": "1354–1385"
+    },
+    {
+     "name": "Gian Galeazzo Visconti",
+     "when": "1378–1395"
+    }
+   ],
+   "note": "The lordship over Milan, held by the della Torre from 1259 and by the Visconti after Archbishop Ottone's victory at Desio (1277); the della Torre returned in 1302–1311. Under Azzone and his successors it spread over most of Lombardy (Bergamo, Brescia, Cremona, Pavia, Novara, Piacenza, Parma by 1346; second slice). Gian Galeazzo took Verona and Vicenza in 1387 (third slice) and bought the ducal title in 1395. Extents are approximate; Mantua stays outside.",
+   "coords": [
+    [
+     8.75,
+     45.35
+    ],
+    [
+     8.8,
+     45.6
+    ],
+    [
+     9.0,
+     45.9
+    ],
+    [
+     9.35,
+     45.85
+    ],
+    [
+     9.55,
+     45.5
+    ],
+    [
+     9.55,
+     45.25
+    ],
+    [
+     9.2,
+     45.15
+    ],
+    [
+     8.9,
+     45.2
+    ],
+    [
+     8.75,
+     45.35
+    ]
+   ]
+  },
+  {
+   "name": "Signoria of Milan",
+   "key": "Milan",
+   "kind": "signoria",
+   "from": 1330,
+   "to": 1386,
+   "capital": "Milan",
+   "rulers": [
+    {
+     "name": "Martino della Torre",
+     "when": "1259–1263"
+    },
+    {
+     "name": "Ottone Visconti, archbishop",
+     "when": "1277–1295"
+    },
+    {
+     "name": "Matteo I Visconti",
+     "when": "1287–1302, 1311–1322"
+    },
+    {
+     "name": "Azzone Visconti",
+     "when": "1329–1339"
+    },
+    {
+     "name": "Bernabò and Galeazzo II Visconti",
+     "when": "1354–1385"
+    },
+    {
+     "name": "Gian Galeazzo Visconti",
+     "when": "1378–1395"
+    }
+   ],
+   "note": "The lordship over Milan, held by the della Torre from 1259 and by the Visconti after Archbishop Ottone's victory at Desio (1277); the della Torre returned in 1302–1311. Under Azzone and his successors it spread over most of Lombardy (Bergamo, Brescia, Cremona, Pavia, Novara, Piacenza, Parma by 1346; second slice). Gian Galeazzo took Verona and Vicenza in 1387 (third slice) and bought the ducal title in 1395. Extents are approximate; Mantua stays outside.",
+   "coords": [
+    [
+     10.4,
+     44.7
+    ],
+    [
+     10.1,
+     44.5
+    ],
+    [
+     9.6,
+     44.65
+    ],
+    [
+     9.2,
+     44.7
+    ],
+    [
+     8.9,
+     44.75
+    ],
+    [
+     8.6,
+     44.8
+    ],
+    [
+     8.4,
+     45.0
+    ],
+    [
+     8.3,
+     45.3
+    ],
+    [
+     8.45,
+     45.75
+    ],
+    [
+     8.7,
+     46.0
+    ],
+    [
+     9.3,
+     46.3
+    ],
+    [
+     10.2,
+     46.4
+    ],
+    [
+     10.5,
+     46.2
+    ],
+    [
+     10.6,
+     45.85
+    ],
+    [
+     10.55,
+     45.55
+    ],
+    [
+     10.5,
+     45.3
+    ],
+    [
+     10.4,
+     45.0
+    ],
+    [
+     10.3,
+     44.9
+    ],
+    [
+     10.4,
+     44.7
+    ]
+   ]
+  },
+  {
+   "name": "Signoria of Milan",
+   "key": "Milan",
+   "kind": "signoria",
+   "from": 1387,
+   "to": 1394,
+   "capital": "Milan",
+   "rulers": [
+    {
+     "name": "Martino della Torre",
+     "when": "1259–1263"
+    },
+    {
+     "name": "Ottone Visconti, archbishop",
+     "when": "1277–1295"
+    },
+    {
+     "name": "Matteo I Visconti",
+     "when": "1287–1302, 1311–1322"
+    },
+    {
+     "name": "Azzone Visconti",
+     "when": "1329–1339"
+    },
+    {
+     "name": "Bernabò and Galeazzo II Visconti",
+     "when": "1354–1385"
+    },
+    {
+     "name": "Gian Galeazzo Visconti",
+     "when": "1378–1395"
+    }
+   ],
+   "note": "The lordship over Milan, held by the della Torre from 1259 and by the Visconti after Archbishop Ottone's victory at Desio (1277); the della Torre returned in 1302–1311. Under Azzone and his successors it spread over most of Lombardy (Bergamo, Brescia, Cremona, Pavia, Novara, Piacenza, Parma by 1346; second slice). Gian Galeazzo took Verona and Vicenza in 1387 (third slice) and bought the ducal title in 1395. Extents are approximate; Mantua stays outside.",
+   "coords": [
+    [
+     10.4,
+     44.7
+    ],
+    [
+     10.1,
+     44.5
+    ],
+    [
+     9.6,
+     44.65
+    ],
+    [
+     9.2,
+     44.7
+    ],
+    [
+     8.9,
+     44.75
+    ],
+    [
+     8.6,
+     44.8
+    ],
+    [
+     8.4,
+     45.0
+    ],
+    [
+     8.3,
+     45.3
+    ],
+    [
+     8.45,
+     45.75
+    ],
+    [
+     8.7,
+     46.0
+    ],
+    [
+     9.3,
+     46.3
+    ],
+    [
+     10.2,
+     46.4
+    ],
+    [
+     10.5,
+     46.2
+    ],
+    [
+     10.6,
+     45.85
+    ],
+    [
+     10.85,
+     45.9
+    ],
+    [
+     11.2,
+     46.0
+    ],
+    [
+     11.6,
+     46.1
+    ],
+    [
+     12.0,
+     46.2
+    ],
+    [
+     12.2,
+     46.1
+    ],
+    [
+     12.0,
+     45.9
+    ],
+    [
+     11.8,
+     45.7
+    ],
+    [
+     11.7,
+     45.45
+    ],
+    [
+     11.5,
+     45.35
+    ],
+    [
+     11.3,
+     45.2
+    ],
+    [
+     11.2,
+     45.1
+    ],
+    [
+     11.0,
+     45.3
+    ],
+    [
+     10.75,
+     45.42
+    ],
+    [
+     10.5,
+     45.3
+    ],
+    [
+     10.4,
+     45.0
+    ],
+    [
+     10.3,
+     44.9
+    ],
+    [
+     10.4,
+     44.7
+    ]
+   ]
+  },
+  {
+   "name": "Duchy of Milan",
+   "key": "Milan",
+   "kind": "duchy",
+   "from": 1395,
+   "to": 1401,
+   "capital": "Milan",
+   "rulers": [
+    {
+     "name": "Gian Galeazzo Visconti",
+     "when": "duke 1395–1402"
+    }
+   ],
+   "note": "Gian Galeazzo Visconti bought the title of duke from King Wenceslaus in 1395; by his death in 1402 he also held Pisa, Siena, Perugia and Bologna (not drawn). The border data shows the Duchy of Milan from 1402.",
+   "coords": [
+    [
+     10.4,
+     44.7
+    ],
+    [
+     10.1,
+     44.5
+    ],
+    [
+     9.6,
+     44.65
+    ],
+    [
+     9.2,
+     44.7
+    ],
+    [
+     8.9,
+     44.75
+    ],
+    [
+     8.6,
+     44.8
+    ],
+    [
+     8.4,
+     45.0
+    ],
+    [
+     8.3,
+     45.3
+    ],
+    [
+     8.45,
+     45.75
+    ],
+    [
+     8.7,
+     46.0
+    ],
+    [
+     9.3,
+     46.3
+    ],
+    [
+     10.2,
+     46.4
+    ],
+    [
+     10.5,
+     46.2
+    ],
+    [
+     10.6,
+     45.85
+    ],
+    [
+     10.85,
+     45.9
+    ],
+    [
+     11.2,
+     46.0
+    ],
+    [
+     11.6,
+     46.1
+    ],
+    [
+     12.0,
+     46.2
+    ],
+    [
+     12.2,
+     46.1
+    ],
+    [
+     12.0,
+     45.9
+    ],
+    [
+     11.8,
+     45.7
+    ],
+    [
+     11.7,
+     45.45
+    ],
+    [
+     11.5,
+     45.35
+    ],
+    [
+     11.3,
+     45.2
+    ],
+    [
+     11.2,
+     45.1
+    ],
+    [
+     11.0,
+     45.3
+    ],
+    [
+     10.75,
+     45.42
+    ],
+    [
+     10.5,
+     45.3
+    ],
+    [
+     10.4,
+     45.0
+    ],
+    [
+     10.3,
+     44.9
+    ],
+    [
+     10.4,
+     44.7
+    ]
+   ]
+  },
+  {
+   "name": "Lordship of Mantua",
+   "key": "Mantua",
+   "kind": "marquisate",
+   "from": 1328,
+   "to": 1432,
+   "capital": "Mantua",
+   "rulers": [
+    {
+     "name": "Luigi I Gonzaga",
+     "when": "1328–1360"
+    },
+    {
+     "name": "Gianfrancesco I",
+     "when": "1407–1444, marquis from 1433"
+    },
+    {
+     "name": "Federico II",
+     "when": "1519–1540, duke from 1530"
+    },
+    {
+     "name": "Vincenzo I",
+     "when": "1587–1612"
+    },
+    {
+     "name": "Ferdinando Carlo",
+     "when": "1665–1708"
+    }
+   ],
+   "note": "The Gonzaga state of Mantua: a lordship (capitanato) from Luigi Gonzaga's coup of 1328, a marquisate from 1433 and a duchy from 1530. After the War of the Mantuan Succession (1628–1631) it passed to the Gonzaga-Nevers; Austria annexed it in 1708 when Ferdinando Carlo sided with France. The border data shows the area as minor states.",
+   "coords": [
+    [
+     10.4,
+     45.0
+    ],
+    [
+     10.5,
+     45.3
+    ],
+    [
+     10.75,
+     45.42
+    ],
+    [
+     11.0,
+     45.3
+    ],
+    [
+     11.2,
+     45.1
+    ],
+    [
+     11.05,
+     44.95
+    ],
+    [
+     10.75,
+     44.95
+    ],
+    [
+     10.5,
+     44.92
+    ],
+    [
+     10.4,
+     45.0
+    ]
+   ]
+  },
+  {
+   "name": "Marquisate of Mantua",
+   "key": "Mantua",
+   "kind": "marquisate",
+   "from": 1433,
+   "to": 1529,
+   "capital": "Mantua",
+   "rulers": [
+    {
+     "name": "Luigi I Gonzaga",
+     "when": "1328–1360"
+    },
+    {
+     "name": "Gianfrancesco I",
+     "when": "1407–1444, marquis from 1433"
+    },
+    {
+     "name": "Federico II",
+     "when": "1519–1540, duke from 1530"
+    },
+    {
+     "name": "Vincenzo I",
+     "when": "1587–1612"
+    },
+    {
+     "name": "Ferdinando Carlo",
+     "when": "1665–1708"
+    }
+   ],
+   "note": "The Gonzaga state of Mantua: a lordship (capitanato) from Luigi Gonzaga's coup of 1328, a marquisate from 1433 and a duchy from 1530. After the War of the Mantuan Succession (1628–1631) it passed to the Gonzaga-Nevers; Austria annexed it in 1708 when Ferdinando Carlo sided with France. The border data shows the area as minor states.",
+   "coords": [
+    [
+     10.4,
+     45.0
+    ],
+    [
+     10.5,
+     45.3
+    ],
+    [
+     10.75,
+     45.42
+    ],
+    [
+     11.0,
+     45.3
+    ],
+    [
+     11.2,
+     45.1
+    ],
+    [
+     11.05,
+     44.95
+    ],
+    [
+     10.75,
+     44.95
+    ],
+    [
+     10.5,
+     44.92
+    ],
+    [
+     10.4,
+     45.0
+    ]
+   ]
+  },
+  {
+   "name": "Duchy of Mantua",
+   "key": "Mantua",
+   "kind": "marquisate",
+   "from": 1530,
+   "to": 1708,
+   "capital": "Mantua",
+   "rulers": [
+    {
+     "name": "Luigi I Gonzaga",
+     "when": "1328–1360"
+    },
+    {
+     "name": "Gianfrancesco I",
+     "when": "1407–1444, marquis from 1433"
+    },
+    {
+     "name": "Federico II",
+     "when": "1519–1540, duke from 1530"
+    },
+    {
+     "name": "Vincenzo I",
+     "when": "1587–1612"
+    },
+    {
+     "name": "Ferdinando Carlo",
+     "when": "1665–1708"
+    }
+   ],
+   "note": "The Gonzaga state of Mantua: a lordship (capitanato) from Luigi Gonzaga's coup of 1328, a marquisate from 1433 and a duchy from 1530. After the War of the Mantuan Succession (1628–1631) it passed to the Gonzaga-Nevers; Austria annexed it in 1708 when Ferdinando Carlo sided with France. The border data shows the area as minor states.",
+   "coords": [
+    [
+     10.4,
+     45.0
+    ],
+    [
+     10.5,
+     45.3
+    ],
+    [
+     10.75,
+     45.42
+    ],
+    [
+     11.0,
+     45.3
+    ],
+    [
+     11.2,
+     45.1
+    ],
+    [
+     11.05,
+     44.95
+    ],
+    [
+     10.75,
+     44.95
+    ],
+    [
+     10.5,
+     44.92
+    ],
+    [
+     10.4,
+     45.0
+    ]
+   ]
+  },
+  {
+   "name": "Lordship of Ferrara (Este)",
+   "key": "Duchy of Ferrara",
+   "kind": "duchy",
+   "from": 1264,
+   "to": 1287,
+   "capital": "Ferrara",
+   "rulers": [
+    {
+     "name": "Obizzo II d'Este",
+     "when": "1264–1293"
+    },
+    {
+     "name": "Niccolò III d'Este",
+     "when": "1393–1441"
+    },
+    {
+     "name": "Borso d'Este",
+     "when": "1450–1471, duke of Modena 1452, of Ferrara 1471"
+    },
+    {
+     "name": "Ercole I",
+     "when": "1471–1505"
+    },
+    {
+     "name": "Alfonso II",
+     "when": "1559–1597"
+    }
+   ],
+   "note": "The lands of the House of Este: Ferrara, a papal fief, from Obizzo II's acclamation as perpetual lord in 1264, and the imperial fiefs of Modena (1288) and Reggio (1289; lost 1306–1409), with the Garfagnana from 1429. Ferrara was a duchy from 1471. When Alfonso II died without a legitimate heir in 1597 the pope took Ferrara back and the Este kept Modena and Reggio. The border data puts Ferrara in the Papal States.",
+   "coords": [
+    [
+     11.35,
+     44.95
+    ],
+    [
+     11.7,
+     45.05
+    ],
+    [
+     12.15,
+     45.0
+    ],
+    [
+     12.4,
+     44.85
+    ],
+    [
+     12.3,
+     44.6
+    ],
+    [
+     11.8,
+     44.6
+    ],
+    [
+     11.5,
+     44.7
+    ],
+    [
+     11.35,
+     44.95
+    ]
+   ]
+  },
+  {
+   "name": "Este state: Ferrara, Modena and Reggio",
+   "key": "Duchy of Ferrara",
+   "kind": "duchy",
+   "from": 1288,
+   "to": 1597,
+   "capital": "Ferrara",
+   "rulers": [
+    {
+     "name": "Obizzo II d'Este",
+     "when": "1264–1293"
+    },
+    {
+     "name": "Niccolò III d'Este",
+     "when": "1393–1441"
+    },
+    {
+     "name": "Borso d'Este",
+     "when": "1450–1471, duke of Modena 1452, of Ferrara 1471"
+    },
+    {
+     "name": "Ercole I",
+     "when": "1471–1505"
+    },
+    {
+     "name": "Alfonso II",
+     "when": "1559–1597"
+    }
+   ],
+   "note": "The lands of the House of Este: Ferrara, a papal fief, from Obizzo II's acclamation as perpetual lord in 1264, and the imperial fiefs of Modena (1288) and Reggio (1289; lost 1306–1409), with the Garfagnana from 1429. Ferrara was a duchy from 1471. When Alfonso II died without a legitimate heir in 1597 the pope took Ferrara back and the Este kept Modena and Reggio. The border data puts Ferrara in the Papal States.",
+   "coords": [
+    [
+     10.45,
+     44.75
+    ],
+    [
+     10.5,
+     44.9
+    ],
+    [
+     10.75,
+     44.93
+    ],
+    [
+     11.05,
+     44.93
+    ],
+    [
+     11.3,
+     45.0
+    ],
+    [
+     11.7,
+     45.05
+    ],
+    [
+     12.15,
+     45.0
+    ],
+    [
+     12.4,
+     44.85
+    ],
+    [
+     12.3,
+     44.6
+    ],
+    [
+     11.8,
+     44.6
+    ],
+    [
+     11.5,
+     44.7
+    ],
+    [
+     11.3,
+     44.68
+    ],
+    [
+     11.1,
+     44.55
+    ],
+    [
+     11.0,
+     44.3
+    ],
+    [
+     10.8,
+     44.1
+    ],
+    [
+     10.45,
+     44.2
+    ],
+    [
+     10.3,
+     44.25
+    ],
+    [
+     10.35,
+     44.5
+    ],
+    [
+     10.45,
+     44.75
+    ]
+   ]
+  },
+  {
+   "name": "Republic of Siena",
+   "key": "Republic of Siena",
+   "kind": "republic",
+   "from": 1200,
+   "to": 1555,
+   "capital": "Siena",
+   "rulers": [
+    {
+     "name": "Government of the Nine (Noveschi)",
+     "when": "1287–1355"
+    },
+    {
+     "name": "Pandolfo Petrucci",
+     "when": "1487–1512"
+    }
+   ],
+   "note": "The commune of Siena and its contado over southern Tuscany (Montalcino, Grosseto, Massa Marittima, the Maremma coast to Talamone). Visconti lordship 1399–1404 and Spanish garrisons in the 1540s; after the siege of 1554–1555 Siena surrendered to Charles V's forces, and in 1557 it was granted to Cosimo de' Medici. Drawn from 1200 (commune from 1125 per Wikidata).",
+   "coords": [
+    [
+     10.95,
+     43.5
+    ],
+    [
+     11.2,
+     43.45
+    ],
+    [
+     11.45,
+     43.4
+    ],
+    [
+     11.75,
+     43.2
+    ],
+    [
+     11.95,
+     43.05
+    ],
+    [
+     11.85,
+     42.85
+    ],
+    [
+     11.6,
+     42.65
+    ],
+    [
+     11.45,
+     42.45
+    ],
+    [
+     11.15,
+     42.4
+    ],
+    [
+     10.9,
+     42.65
+    ],
+    [
+     10.75,
+     42.9
+    ],
+    [
+     10.9,
+     43.1
+    ],
+    [
+     10.95,
+     43.5
+    ]
+   ]
+  },
+  {
+   "name": "Republic of Lucca",
+   "key": "Republic of Lucca",
+   "kind": "republic",
+   "from": 1160,
+   "to": 1799,
+   "capital": "Lucca",
+   "rulers": [
+    {
+     "name": "Castruccio Castracani",
+     "when": "1316–1328"
+    },
+    {
+     "name": "Paolo Guinigi",
+     "when": "1400–1430"
+    }
+   ],
+   "note": "The city-republic of Lucca with its contado and part of the Garfagnana, independent from the 12th century (Wikidata 1160) until the French made it the Principality of Lucca and Piombino in 1805. Under Castruccio Castracani (1316–1328) it briefly ruled much of western Tuscany (not drawn). Drawn to 1799; the border data puts it in Tuscany from 1800.",
+   "coords": [
+    [
+     10.25,
+     43.85
+    ],
+    [
+     10.3,
+     44.05
+    ],
+    [
+     10.45,
+     44.1
+    ],
+    [
+     10.6,
+     44.0
+    ],
+    [
+     10.7,
+     43.85
+    ],
+    [
+     10.65,
+     43.75
+    ],
+    [
+     10.45,
+     43.73
+    ],
+    [
+     10.3,
+     43.8
+    ],
+    [
+     10.25,
+     43.85
+    ]
+   ]
+  },
+  {
+   "name": "Duchy of Lucca",
+   "key": "Duchy of Lucca",
+   "kind": "duchy",
+   "from": 1815,
+   "to": 1847,
+   "capital": "Lucca",
+   "rulers": [
+    {
+     "name": "Maria Luisa of Spain",
+     "when": "1817–1824"
+    },
+    {
+     "name": "Charles Louis of Bourbon-Parma",
+     "when": "1824–1847"
+    }
+   ],
+   "note": "Created by the Congress of Vienna in 1815 for the Bourbon-Parma heirs; Charles Louis ceded it to Tuscany in 1847, a year before he inherited Parma. Drawn on the old republic's outline; the border data shows Tuscany here.",
+   "coords": [
+    [
+     10.25,
+     43.85
+    ],
+    [
+     10.3,
+     44.05
+    ],
+    [
+     10.45,
+     44.1
+    ],
+    [
+     10.6,
+     44.0
+    ],
+    [
+     10.7,
+     43.85
+    ],
+    [
+     10.65,
+     43.75
+    ],
+    [
+     10.45,
+     43.73
+    ],
+    [
+     10.3,
+     43.8
+    ],
+    [
+     10.25,
+     43.85
+    ]
+   ]
+  },
+  {
+   "name": "Duchy of Urbino",
+   "key": "Duchy of Urbino",
+   "kind": "duchy",
+   "from": 1443,
+   "to": 1512,
+   "capital": "Urbino, from 1523 Pesaro",
+   "rulers": [
+    {
+     "name": "Federico da Montefeltro",
+     "when": "1444–1482, duke from 1474"
+    },
+    {
+     "name": "Guidobaldo da Montefeltro",
+     "when": "1482–1508"
+    },
+    {
+     "name": "Francesco Maria I della Rovere",
+     "when": "1508–1538"
+    },
+    {
+     "name": "Francesco Maria II della Rovere",
+     "when": "1574–1631"
+    }
+   ],
+   "note": "The Montefeltro and della Rovere duchy in the northern Marche (Urbino, Gubbio, Cagli, Fossombrone, San Leo), a papal fief ruled as an independent court, famed under Federico da Montefeltro. Pesaro and Senigallia were added from 1513 (second slice). Devolved to the Papal States in 1631. Drawn from 1443, when Oddantonio da Montefeltro was made duke; San Marino lies within the outline.",
+   "coords": [
+    [
+     12.25,
+     43.85
+    ],
+    [
+     12.45,
+     43.95
+    ],
+    [
+     12.75,
+     43.85
+    ],
+    [
+     12.95,
+     43.72
+    ],
+    [
+     12.9,
+     43.5
+    ],
+    [
+     12.75,
+     43.3
+    ],
+    [
+     12.55,
+     43.25
+    ],
+    [
+     12.4,
+     43.4
+    ],
+    [
+     12.25,
+     43.6
+    ],
+    [
+     12.25,
+     43.85
+    ]
+   ]
+  },
+  {
+   "name": "Duchy of Urbino",
+   "key": "Duchy of Urbino",
+   "kind": "duchy",
+   "from": 1513,
+   "to": 1631,
+   "capital": "Urbino, from 1523 Pesaro",
+   "rulers": [
+    {
+     "name": "Federico da Montefeltro",
+     "when": "1444–1482, duke from 1474"
+    },
+    {
+     "name": "Guidobaldo da Montefeltro",
+     "when": "1482–1508"
+    },
+    {
+     "name": "Francesco Maria I della Rovere",
+     "when": "1508–1538"
+    },
+    {
+     "name": "Francesco Maria II della Rovere",
+     "when": "1574–1631"
+    }
+   ],
+   "note": "The Montefeltro and della Rovere duchy in the northern Marche (Urbino, Gubbio, Cagli, Fossombrone, San Leo), a papal fief ruled as an independent court, famed under Federico da Montefeltro. Pesaro and Senigallia were added from 1513 (second slice). Devolved to the Papal States in 1631. Drawn from 1443, when Oddantonio da Montefeltro was made duke; San Marino lies within the outline.",
+   "coords": [
+    [
+     12.25,
+     43.85
+    ],
+    [
+     12.45,
+     43.98
+    ],
+    [
+     12.75,
+     44.0
+    ],
+    [
+     13.0,
+     43.85
+    ],
+    [
+     13.3,
+     43.68
+    ],
+    [
+     13.1,
+     43.6
+    ],
+    [
+     12.9,
+     43.45
+    ],
+    [
+     12.75,
+     43.3
+    ],
+    [
+     12.55,
+     43.25
+    ],
+    [
+     12.4,
+     43.4
+    ],
+    [
+     12.25,
+     43.6
+    ],
+    [
+     12.25,
+     43.85
+    ]
+   ]
+  },
+  {
+   "name": "Duchy of Gaeta",
+   "key": "Duchy of Gaeta",
+   "kind": "duchy",
+   "from": 839,
+   "to": 1140,
+   "capital": "Gaeta",
+   "rulers": [
+    {
+     "name": "Docibilis I",
+     "when": "c. 867–906"
+    },
+    {
+     "name": "John I",
+     "when": "906–933"
+    }
+   ],
+   "note": "A small coastal duchy between Rome and Naples, nominally Byzantine, independent under the Docibilian dynasty from the 9th century; from 1032 it was held by Lombard and then Norman lords and in 1140 was absorbed into Roger II's Kingdom of Sicily. Extent (Gaeta, Fondi, Traetto, the lower Garigliano) approximate.",
+   "coords": [
+    [
+     13.2,
+     41.28
+    ],
+    [
+     13.3,
+     41.4
+    ],
+    [
+     13.55,
+     41.42
+    ],
+    [
+     13.75,
+     41.35
+    ],
+    [
+     13.8,
+     41.22
+    ],
+    [
+     13.6,
+     41.18
+    ],
+    [
+     13.2,
+     41.28
+    ]
+   ]
+  },
+  {
+   "name": "Lordship, later Principality of Piombino",
+   "key": "Principality of Piombino",
+   "kind": "principality",
+   "from": 1399,
+   "to": 1801,
+   "capital": "Piombino",
+   "rulers": [
+    {
+     "name": "Gherardo Leonardo Appiani",
+     "when": "1399–1405"
+    },
+    {
+     "name": "Jacopo IV Appiani",
+     "when": "1474–1511"
+    },
+    {
+     "name": "Niccolò Ludovisi",
+     "when": "1634–1664"
+    }
+   ],
+   "note": "A small coastal state facing Elba, founded when Gherardo Appiani sold Pisa to the Visconti in 1399 and kept Piombino; a principality from 1594. Elba (drawn as a second piece) belonged to it except Portoferraio, Medici from 1548. Ceded to France in 1801 and given to Elisa Bonaparte in 1805.",
+   "coords": [
+    [
+     10.45,
+     42.88
+    ],
+    [
+     10.5,
+     43.08
+    ],
+    [
+     10.7,
+     43.08
+    ],
+    [
+     10.76,
+     42.95
+    ],
+    [
+     10.65,
+     42.85
+    ],
+    [
+     10.45,
+     42.88
+    ]
+   ]
+  },
+  {
+   "name": "Lordship, later Principality of Piombino",
+   "key": "Principality of Piombino",
+   "kind": "principality",
+   "from": 1399,
+   "to": 1801,
+   "capital": "Piombino",
+   "rulers": [
+    {
+     "name": "Gherardo Leonardo Appiani",
+     "when": "1399–1405"
+    },
+    {
+     "name": "Jacopo IV Appiani",
+     "when": "1474–1511"
+    },
+    {
+     "name": "Niccolò Ludovisi",
+     "when": "1634–1664"
+    }
+   ],
+   "note": "A small coastal state facing Elba, founded when Gherardo Appiani sold Pisa to the Visconti in 1399 and kept Piombino; a principality from 1594. Elba (drawn as a second piece) belonged to it except Portoferraio, Medici from 1548. Ceded to France in 1801 and given to Elisa Bonaparte in 1805.",
+   "coords": [
+    [
+     10.05,
+     42.68
+    ],
+    [
+     10.48,
+     42.68
+    ],
+    [
+     10.48,
+     42.84
+    ],
+    [
+     10.05,
+     42.84
+    ],
+    [
+     10.05,
+     42.68
+    ]
+   ]
+  },
+  {
+   "name": "Duchy of Montferrat",
+   "key": "Duchy of Montferrat",
+   "kind": "duchy",
+   "from": 1574,
+   "to": 1708,
+   "capital": "Casale Monferrato",
+   "rulers": [
+    {
+     "name": "Guglielmo Gonzaga",
+     "when": "1550–1587, duke from 1574"
+    },
+    {
+     "name": "Vincenzo I Gonzaga",
+     "when": "1587–1612"
+    },
+    {
+     "name": "Ferdinando Carlo Gonzaga",
+     "when": "1665–1708"
+    }
+   ],
+   "note": "The old marquisate of Montferrat, held by the Gonzaga of Mantua from 1536 and raised to a duchy in 1574. Savoy took part of it after the War of the Mantuan Succession (Treaty of Cherasco, 1631) and the rest in 1708. Upper and lower Montferrat are drawn as one simplified piece; the border data shows Spanish Milan here.",
+   "coords": [
+    [
+     8.1,
+     45.0
+    ],
+    [
+     8.25,
+     45.2
+    ],
+    [
+     8.55,
+     45.2
+    ],
+    [
+     8.65,
+     45.05
+    ],
+    [
+     8.55,
+     44.85
+    ],
+    [
+     8.6,
+     44.6
+    ],
+    [
+     8.35,
+     44.5
+    ],
+    [
+     8.1,
+     44.55
+    ],
+    [
+     8.0,
+     44.75
+    ],
+    [
+     8.1,
+     45.0
+    ]
+   ]
+  },
+  {
+   "name": "Free Territory of Trieste",
+   "key": "Free Territory of Trieste",
+   "kind": "free territory",
+   "from": 1947,
+   "to": 1954,
+   "capital": "Trieste",
+   "rulers": [
+    {
+     "name": "Terence Airey (Zone A military governor)",
+     "when": "1947–1951"
+    },
+    {
+     "name": "Thomas Winterton (Zone A military governor)",
+     "when": "1951–1954"
+    }
+   ],
+   "note": "The free territory created by the 1947 peace treaty with Italy, never given its UN governor: Zone A (Trieste) was run by British and American forces, Zone B (Koper, Buje) by Yugoslavia. The 1954 London Memorandum gave Zone A to Italy and Zone B to Yugoslavia. The border data shows the whole area as Yugoslavia.",
+   "coords": [
+    [
+     13.58,
+     45.82
+    ],
+    [
+     13.75,
+     45.75
+    ],
+    [
+     13.9,
+     45.6
+    ],
+    [
+     13.95,
+     45.5
+    ],
+    [
+     13.9,
+     45.4
+    ],
+    [
+     13.75,
+     45.33
+    ],
+    [
+     13.5,
+     45.3
+    ],
+    [
+     13.4,
+     45.6
+    ],
+    [
+     13.58,
+     45.82
+    ]
+   ]
+  }
+ ],
+ "sites": [
+  {
+   "name": "Hill of Tara",
+   "lonlat": [
+    -6.61,
+    53.58
+   ],
+   "what": "royal site of the kings of Mide and High Kings"
+  },
+  {
+   "name": "Kilkenny",
+   "lonlat": [
+    -7.25,
+    52.65
+   ],
+   "what": "seat of the kings of Osraige"
+  },
+  {
+   "name": "Dromahair",
+   "lonlat": [
+    -8.31,
+    54.25
+   ],
+   "what": "seat of the Uí Ruairc kings of Breifne"
+  },
+  {
+   "name": "Limerick",
+   "lonlat": [
+    -8.63,
+    52.66
+   ],
+   "what": "O'Brien capital of Thomond until c. 1195"
+  },
+  {
+   "name": "Cork",
+   "lonlat": [
+    -8.47,
+    51.9
+   ],
+   "what": "MacCarthy seat of Desmond until 1177"
+  },
+  {
+   "name": "Donegal Castle",
+   "lonlat": [
+    -8.11,
+    54.65
+   ],
+   "what": "O'Donnell seat of Tyrconnell"
+  },
+  {
+   "name": "Burghead",
+   "lonlat": [
+    -3.49,
+    57.71
+   ],
+   "what": "largest Pictish fort, probable royal centre of Fortriu"
+  },
+  {
+   "name": "St Davids",
+   "lonlat": [
+    -5.27,
+    51.88
+   ],
+   "what": "chief church of Dyfed"
+  },
+  {
+   "name": "Llanbadarn Fawr",
+   "lonlat": [
+    -4.05,
+    52.41
+   ],
+   "what": "chief church of Ceredigion"
+  },
+  {
+   "name": "Dinefwr",
+   "lonlat": [
+    -3.99,
+    51.88
+   ],
+   "what": "seat of the princes of Deheubarth"
+  },
+  {
+   "name": "Leeds (Loidis)",
+   "lonlat": [
+    -1.55,
+    53.8
+   ],
+   "what": "centre of Elmet"
+  },
+  {
+   "name": "Málaga",
+   "lonlat": [
+    -4.42,
+    36.72
+   ],
+   "what": "capital of the Hammudid taifa"
+  },
+  {
+   "name": "Madina Mayurqa (Palma)",
+   "lonlat": [
+    2.65,
+    39.57
+   ],
+   "what": "capital of the Balearic taifa"
+  },
+  {
+   "name": "Medina Minurqa (Ciutadella)",
+   "lonlat": [
+    3.84,
+    40.0
+   ],
+   "what": "capital of Muslim Menorca"
+  },
+  {
+   "name": "Liège",
+   "lonlat": [
+    5.57,
+    50.64
+   ],
+   "what": "seat of the prince-bishops"
+  },
+  {
+   "name": "Leuven",
+   "lonlat": [
+    4.7,
+    50.88
+   ],
+   "what": "early seat of the dukes of Brabant"
+  },
+  {
+   "name": "Arnhem",
+   "lonlat": [
+    5.9,
+    51.98
+   ],
+   "what": "capital of the duchy of Guelders"
+  },
+  {
+   "name": "Utrecht",
+   "lonlat": [
+    5.12,
+    52.09
+   ],
+   "what": "seat of the prince-bishops"
+  },
+  {
+   "name": "Namur",
+   "lonlat": [
+    4.87,
+    50.47
+   ],
+   "what": "seat of the counts"
+  },
+  {
+   "name": "Limbourg",
+   "lonlat": [
+    5.94,
+    50.61
+   ],
+   "what": "seat of the dukes"
+  },
+  {
+   "name": "Luxembourg",
+   "lonlat": [
+    6.13,
+    49.61
+   ],
+   "what": "seat of the counts"
+  },
+  {
+   "name": "Kleve",
+   "lonlat": [
+    6.14,
+    51.79
+   ],
+   "what": "seat of the counts and dukes"
+  },
+  {
+   "name": "Jülich",
+   "lonlat": [
+    6.36,
+    50.92
+   ],
+   "what": "seat of the counts and dukes"
+  },
+  {
+   "name": "Düsseldorf",
+   "lonlat": [
+    6.77,
+    51.23
+   ],
+   "what": "residence of the dukes of Jülich-Cleves-Berg"
+  },
+  {
+   "name": "Bar-le-Duc",
+   "lonlat": [
+    5.16,
+    48.77
+   ],
+   "what": "seat of the counts and dukes"
+  },
+  {
+   "name": "Aix-en-Provence",
+   "lonlat": [
+    5.45,
+    43.53
+   ],
+   "what": "residence of the counts"
+  },
+  {
+   "name": "Heidelberg",
+   "lonlat": [
+    8.69,
+    49.41
+   ],
+   "what": "residence of the Electors Palatine"
+  },
+  {
+   "name": "Mainz",
+   "lonlat": [
+    8.27,
+    50.0
+   ],
+   "what": "seat of the archbishop-electors"
+  },
+  {
+   "name": "Marburg",
+   "lonlat": [
+    8.77,
+    50.81
+   ],
+   "what": "first residence of the landgraves of Hesse"
+  },
+  {
+   "name": "Brunswick",
+   "lonlat": [
+    10.52,
+    52.26
+   ],
+   "what": "Welf residence (Dankwarderode)"
+  },
+  {
+   "name": "Celle",
+   "lonlat": [
+    10.08,
+    52.62
+   ],
+   "what": "residence of the dukes of Lüneburg from 1371"
+  },
+  {
+   "name": "Wolfenbüttel",
+   "lonlat": [
+    10.54,
+    52.16
+   ],
+   "what": "residence of the dukes"
+  },
+  {
+   "name": "Hanover",
+   "lonlat": [
+    9.73,
+    52.37
+   ],
+   "what": "residence of the Calenberg dukes from 1636"
+  },
+  {
+   "name": "Lauenburg",
+   "lonlat": [
+    10.57,
+    53.37
+   ],
+   "what": "castle of the dukes"
+  },
+  {
+   "name": "Oldenburg",
+   "lonlat": [
+    8.21,
+    53.14
+   ],
+   "what": "residence of the counts"
+  },
+  {
+   "name": "Stuttgart",
+   "lonlat": [
+    9.18,
+    48.78
+   ],
+   "what": "residence of the counts and dukes of Württemberg"
+  },
+  {
+   "name": "Karlsruhe",
+   "lonlat": [
+    8.4,
+    49.01
+   ],
+   "what": "residence of Baden-Durlach from 1718"
+  },
+  {
+   "name": "Rastatt",
+   "lonlat": [
+    8.21,
+    48.86
+   ],
+   "what": "residence of Baden-Baden from 1705"
+  },
+  {
+   "name": "Ansbach",
+   "lonlat": [
+    10.57,
+    49.3
+   ],
+   "what": "residence of the margraves"
+  },
+  {
+   "name": "Bayreuth",
+   "lonlat": [
+    11.58,
+    49.95
+   ],
+   "what": "residence of the margraves from 1604"
+  },
+  {
+   "name": "Nuremberg",
+   "lonlat": [
+    11.08,
+    49.45
+   ],
+   "what": "free imperial city"
+  },
+  {
+   "name": "Salzburg",
+   "lonlat": [
+    13.05,
+    47.8
+   ],
+   "what": "seat of the prince-archbishops"
+  },
+  {
+   "name": "Meissen",
+   "lonlat": [
+    13.47,
+    51.16
+   ],
+   "what": "Albrechtsburg castle of the margraves"
+  },
+  {
+   "name": "Wittenberg",
+   "lonlat": [
+    12.65,
+    51.87
+   ],
+   "what": "seat of the Ascanian dukes"
+  },
+  {
+   "name": "Stettin (Szczecin)",
+   "lonlat": [
+    14.55,
+    53.43
+   ],
+   "what": "residence of the dukes of Pomerania"
+  },
+  {
+   "name": "Berlin",
+   "lonlat": [
+    13.4,
+    52.52
+   ],
+   "what": "seat of the Allied Control Council"
+  },
+  {
+   "name": "Saarbrücken",
+   "lonlat": [
+    6.99,
+    49.23
+   ],
+   "what": "capital of the Saar Protectorate"
+  },
+  {
+   "name": "Milan",
+   "lonlat": [
+    9.19,
+    45.46
+   ],
+   "what": "seat of the Visconti"
+  },
+  {
+   "name": "Mantua",
+   "lonlat": [
+    10.79,
+    45.16
+   ],
+   "what": "Gonzaga capital"
+  },
+  {
+   "name": "Ferrara",
+   "lonlat": [
+    11.62,
+    44.84
+   ],
+   "what": "Este capital until 1598"
+  },
+  {
+   "name": "Siena",
+   "lonlat": [
+    11.33,
+    43.32
+   ],
+   "what": "seat of the republic"
+  },
+  {
+   "name": "Lucca",
+   "lonlat": [
+    10.5,
+    43.84
+   ],
+   "what": "seat of the republic"
+  },
+  {
+   "name": "Urbino",
+   "lonlat": [
+    12.64,
+    43.73
+   ],
+   "what": "ducal palace of the Montefeltro"
+  },
+  {
+   "name": "Gaeta",
+   "lonlat": [
+    13.57,
+    41.21
+   ],
+   "what": "seat of the dukes"
+  },
+  {
+   "name": "Piombino",
+   "lonlat": [
+    10.52,
+    42.93
+   ],
+   "what": "seat of the Appiani lords"
+  },
+  {
+   "name": "Casale Monferrato",
+   "lonlat": [
+    8.45,
+    45.13
+   ],
+   "what": "capital of Montferrat"
+  },
+  {
+   "name": "Trieste",
+   "lonlat": [
+    13.77,
+    45.65
+   ],
+   "what": "seat of the Zone A administration"
+  }
+ ],
+ "sources": [
+  {
+   "title": "W. R. Shepherd, Historical Atlas (1923): The British Isles about 802",
+   "url": "https://maps.lib.utexas.edu/maps/historical/shepherd/british_isles_802.jpg"
+  },
+  {
+   "title": "W. R. Shepherd, Historical Atlas (1923): The British Isles about 1300",
+   "url": "https://maps.lib.utexas.edu/maps/historical/shepherd/british_isles_1300.jpg"
+  },
+  {
+   "title": "W. R. Shepherd, Historical Atlas (1923): Britain about 600",
+   "url": "https://maps.lib.utexas.edu/maps/historical/shepherd/britain_settlement_600_1923.jpg"
+  },
+  {
+   "title": "W. R. Shepherd, Historical Atlas (1923): Spain 910–1492",
+   "url": "https://maps.lib.utexas.edu/maps/historical/shepherd/spain_910_1492.jpg"
+  },
+  {
+   "title": "W. R. Shepherd, Historical Atlas (1923): Central Europe 919–1125",
+   "url": "https://maps.lib.utexas.edu/maps/historical/shepherd/central_europe_919_1125.jpg"
+  },
+  {
+   "title": "W. R. Shepherd, Historical Atlas (1923): Italy about 1050",
+   "url": "https://maps.lib.utexas.edu/maps/historical/shepherd/italy_1050.jpg"
+  },
+  {
+   "title": "W. R. Shepherd, Historical Atlas (1923): Central Europe about 1378",
+   "url": "https://maps.lib.utexas.edu/maps/historical/shepherd/central_europe_1378.jpg"
+  },
+  {
+   "title": "W. R. Shepherd, Historical Atlas (1923): Wettin lands 1221–1485",
+   "url": "https://maps.lib.utexas.edu/maps/historical/shepherd/wettin_lands_1221_1485.jpg"
+  },
+  {
+   "title": "W. R. Shepherd, Historical Atlas (1923): Central Europe about 1477",
+   "url": "https://maps.lib.utexas.edu/maps/historical/shepherd/central_europe_1477.jpg"
+  },
+  {
+   "title": "W. R. Shepherd, Historical Atlas (1923): Italy about 1494",
+   "url": "https://maps.lib.utexas.edu/maps/historical/shepherd/italy_1494_shepherd.jpg"
+  },
+  {
+   "title": "W. R. Shepherd, Historical Atlas (1923): Central Europe about 1547",
+   "url": "https://maps.lib.utexas.edu/maps/historical/shepherd/central_europe_1547.jpg"
+  },
+  {
+   "title": "W. R. Shepherd, Historical Atlas (1923): The Netherlands 1559–1608",
+   "url": "https://maps.lib.utexas.edu/maps/historical/shepherd/netherlands_1559-1608.jpg"
+  },
+  {
+   "title": "W. R. Shepherd, Historical Atlas (1923): Central Europe about 1648",
+   "url": "https://maps.lib.utexas.edu/maps/historical/shepherd/central_europe_1648.jpg"
+  },
+  {
+   "title": "W. R. Shepherd, Historical Atlas (1923): Central Europe about 1786",
+   "url": "https://maps.lib.utexas.edu/maps/historical/shepherd/central_europe_1786.jpg"
+  },
+  {
+   "title": "Wikipedia: Kingdom of Meath",
+   "url": "https://en.wikipedia.org/wiki/Kingdom_of_Meath"
+  },
+  {
+   "title": "Wikipedia: Osraige",
+   "url": "https://en.wikipedia.org/wiki/Osraige"
+  },
+  {
+   "title": "Wikipedia: Kingdom of Breifne",
+   "url": "https://en.wikipedia.org/wiki/Kingdom_of_Breifne"
+  },
+  {
+   "title": "Wikipedia: Thomond",
+   "url": "https://en.wikipedia.org/wiki/Thomond"
+  },
+  {
+   "title": "Wikipedia: Kingdom of Desmond",
+   "url": "https://en.wikipedia.org/wiki/Kingdom_of_Desmond"
+  },
+  {
+   "title": "Wikipedia: Tyrconnell",
+   "url": "https://en.wikipedia.org/wiki/Tyrconnell"
+  },
+  {
+   "title": "Wikipedia: Fortriu",
+   "url": "https://en.wikipedia.org/wiki/Fortriu"
+  },
+  {
+   "title": "Wikipedia: Kingdom of Dyfed",
+   "url": "https://en.wikipedia.org/wiki/Kingdom_of_Dyfed"
+  },
+  {
+   "title": "Wikipedia: Kingdom of Ceredigion",
+   "url": "https://en.wikipedia.org/wiki/Kingdom_of_Ceredigion"
+  },
+  {
+   "title": "Wikipedia: Deheubarth",
+   "url": "https://en.wikipedia.org/wiki/Deheubarth"
+  },
+  {
+   "title": "Wikipedia: Kingdom of Elmet",
+   "url": "https://en.wikipedia.org/wiki/Kingdom_of_Elmet"
+  },
+  {
+   "title": "Wikipedia: Taifa of Málaga",
+   "url": "https://en.wikipedia.org/wiki/Taifa_of_Málaga"
+  },
+  {
+   "title": "Wikipedia: Taifa of Majorca",
+   "url": "https://en.wikipedia.org/wiki/Taifa_of_Majorca"
+  },
+  {
+   "title": "Wikipedia: Taifa of Menorca",
+   "url": "https://en.wikipedia.org/wiki/Taifa_of_Menorca"
+  },
+  {
+   "title": "Wikipedia: Prince-Bishopric of Liège",
+   "url": "https://en.wikipedia.org/wiki/Prince-Bishopric_of_Liège"
+  },
+  {
+   "title": "Wikipedia: Duchy of Brabant",
+   "url": "https://en.wikipedia.org/wiki/Duchy_of_Brabant"
+  },
+  {
+   "title": "Wikipedia: Duchy of Guelders",
+   "url": "https://en.wikipedia.org/wiki/Duchy_of_Guelders"
+  },
+  {
+   "title": "Wikipedia: Prince-Bishopric of Utrecht",
+   "url": "https://en.wikipedia.org/wiki/Prince-Bishopric_of_Utrecht"
+  },
+  {
+   "title": "Wikipedia: County of Namur",
+   "url": "https://en.wikipedia.org/wiki/County_of_Namur"
+  },
+  {
+   "title": "Wikipedia: Duchy of Limburg",
+   "url": "https://en.wikipedia.org/wiki/Duchy_of_Limburg"
+  },
+  {
+   "title": "Wikipedia: County of Luxembourg",
+   "url": "https://en.wikipedia.org/wiki/County_of_Luxembourg"
+  },
+  {
+   "title": "Wikipedia: Duchy of Cleves",
+   "url": "https://en.wikipedia.org/wiki/Duchy_of_Cleves"
+  },
+  {
+   "title": "Wikipedia: Duchy of Jülich",
+   "url": "https://en.wikipedia.org/wiki/Duchy_of_Jülich"
+  },
+  {
+   "title": "Wikipedia: United Duchies of Jülich-Cleves-Berg",
+   "url": "https://en.wikipedia.org/wiki/United_Duchies_of_Jülich-Cleves-Berg"
+  },
+  {
+   "title": "Wikipedia: Duchy of Bar",
+   "url": "https://en.wikipedia.org/wiki/Duchy_of_Bar"
+  },
+  {
+   "title": "Wikipedia: County of Provence",
+   "url": "https://en.wikipedia.org/wiki/County_of_Provence"
+  },
+  {
+   "title": "Wikipedia: Electoral Palatinate",
+   "url": "https://en.wikipedia.org/wiki/Electoral_Palatinate"
+  },
+  {
+   "title": "Wikipedia: Electorate of Mainz",
+   "url": "https://en.wikipedia.org/wiki/Electorate_of_Mainz"
+  },
+  {
+   "title": "Wikipedia: Landgraviate of Hesse",
+   "url": "https://en.wikipedia.org/wiki/Landgraviate_of_Hesse"
+  },
+  {
+   "title": "Wikipedia: Duchy of Brunswick-Lüneburg",
+   "url": "https://en.wikipedia.org/wiki/Duchy_of_Brunswick-Lüneburg"
+  },
+  {
+   "title": "Wikipedia: Principality of Lüneburg",
+   "url": "https://en.wikipedia.org/wiki/Principality_of_Lüneburg"
+  },
+  {
+   "title": "Wikipedia: Principality of Brunswick-Wolfenbüttel",
+   "url": "https://en.wikipedia.org/wiki/Principality_of_Brunswick-Wolfenbüttel"
+  },
+  {
+   "title": "Wikipedia: Principality of Calenberg",
+   "url": "https://en.wikipedia.org/wiki/Principality_of_Calenberg"
+  },
+  {
+   "title": "Wikipedia: Saxe-Lauenburg",
+   "url": "https://en.wikipedia.org/wiki/Saxe-Lauenburg"
+  },
+  {
+   "title": "Wikipedia: County of Oldenburg",
+   "url": "https://en.wikipedia.org/wiki/County_of_Oldenburg"
+  },
+  {
+   "title": "Wikipedia: County of Württemberg",
+   "url": "https://en.wikipedia.org/wiki/County_of_Württemberg"
+  },
+  {
+   "title": "Wikipedia: Duchy of Württemberg",
+   "url": "https://en.wikipedia.org/wiki/Duchy_of_Württemberg"
+  },
+  {
+   "title": "Wikipedia: Margraviate of Baden-Durlach",
+   "url": "https://en.wikipedia.org/wiki/Margraviate_of_Baden-Durlach"
+  },
+  {
+   "title": "Wikipedia: Margraviate of Baden-Baden",
+   "url": "https://en.wikipedia.org/wiki/Margraviate_of_Baden-Baden"
+  },
+  {
+   "title": "Wikipedia: Margraviate of Baden",
+   "url": "https://en.wikipedia.org/wiki/Margraviate_of_Baden"
+  },
+  {
+   "title": "Wikipedia: Principality of Ansbach",
+   "url": "https://en.wikipedia.org/wiki/Principality_of_Ansbach"
+  },
+  {
+   "title": "Wikipedia: Principality of Bayreuth",
+   "url": "https://en.wikipedia.org/wiki/Principality_of_Bayreuth"
+  },
+  {
+   "title": "Wikipedia: Free Imperial City of Nuremberg",
+   "url": "https://en.wikipedia.org/wiki/Free_Imperial_City_of_Nuremberg"
+  },
+  {
+   "title": "Wikipedia: Prince-Archbishopric of Salzburg",
+   "url": "https://en.wikipedia.org/wiki/Prince-Archbishopric_of_Salzburg"
+  },
+  {
+   "title": "Wikipedia: Margravate of Meissen",
+   "url": "https://en.wikipedia.org/wiki/Margravate_of_Meissen"
+  },
+  {
+   "title": "Wikipedia: Saxe-Wittenberg",
+   "url": "https://en.wikipedia.org/wiki/Saxe-Wittenberg"
+  },
+  {
+   "title": "Wikipedia: Duchy of Pomerania",
+   "url": "https://en.wikipedia.org/wiki/Duchy_of_Pomerania"
+  },
+  {
+   "title": "Wikipedia: Allied-occupied Germany",
+   "url": "https://en.wikipedia.org/wiki/Allied-occupied_Germany"
+  },
+  {
+   "title": "Wikipedia: Saar Protectorate",
+   "url": "https://en.wikipedia.org/wiki/Saar_Protectorate"
+  },
+  {
+   "title": "Wikipedia: Lordship of Milan",
+   "url": "https://en.wikipedia.org/wiki/Lordship_of_Milan"
+  },
+  {
+   "title": "Wikipedia: Duchy of Milan",
+   "url": "https://en.wikipedia.org/wiki/Duchy_of_Milan"
+  },
+  {
+   "title": "Wikipedia: Duchy of Mantua",
+   "url": "https://en.wikipedia.org/wiki/Duchy_of_Mantua"
+  },
+  {
+   "title": "Wikipedia: Duchy of Ferrara",
+   "url": "https://en.wikipedia.org/wiki/Duchy_of_Ferrara"
+  },
+  {
+   "title": "Wikipedia: Republic of Siena",
+   "url": "https://en.wikipedia.org/wiki/Republic_of_Siena"
+  },
+  {
+   "title": "Wikipedia: Republic of Lucca",
+   "url": "https://en.wikipedia.org/wiki/Republic_of_Lucca"
+  },
+  {
+   "title": "Wikipedia: Duchy of Lucca",
+   "url": "https://en.wikipedia.org/wiki/Duchy_of_Lucca"
+  },
+  {
+   "title": "Wikipedia: Duchy of Urbino",
+   "url": "https://en.wikipedia.org/wiki/Duchy_of_Urbino"
+  },
+  {
+   "title": "Wikipedia: Duchy of Gaeta",
+   "url": "https://en.wikipedia.org/wiki/Duchy_of_Gaeta"
+  },
+  {
+   "title": "Wikipedia: Principality of Piombino",
+   "url": "https://en.wikipedia.org/wiki/Principality_of_Piombino"
+  },
+  {
+   "title": "Wikipedia: Duchy of Montferrat",
+   "url": "https://en.wikipedia.org/wiki/Duchy_of_Montferrat"
+  },
+  {
+   "title": "Wikipedia: Free Territory of Trieste",
+   "url": "https://en.wikipedia.org/wiki/Free_Territory_of_Trieste"
+  }
+ ]
+}
