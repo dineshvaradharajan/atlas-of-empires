@@ -10,6 +10,7 @@ Run: python3 -I tools/gaps.py [wikidata-results.json]   (without a file it queri
 import glob, json, os, re, sys, urllib.parse, urllib.request
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+CACHE = os.path.join(ROOT, "data", "wikidata-states.json")
 CLASSES = ("Q3024240 Q1250464 Q48349 Q417175 Q28171280 Q3624078 Q1520223 Q11514315 Q133311 Q164950 Q5398426 Q15642541 "
            "Q1336152 Q208500 Q154547 Q12759805 Q331644 Q1371288 Q217177 Q189898 Q133442")  # states, kingdoms, empires, sultanates, khanates, principalities, duchies, emirates, princely and vassal states, taifas, city-states
 QUERY = ("SELECT ?item ?itemLabel ?start ?end ?coord ?sl WHERE { ?item wdt:P31 ?cls . VALUES ?cls { "
@@ -32,6 +33,14 @@ REGIONS = [
 ]
 
 
+STOP = {"kingdom", "kingdoms", "of", "the", "dynasty", "empire", "sultanate", "state", "states", "principality", "khanate", "emirate", "rule", "in", "and"}
+
+
+def core(name):
+    words = re.sub(r"\(.*?\)", " ", name.lower()).replace("-", " ").split()
+    return " ".join(sorted(w.strip(".,'") for w in words if w not in STOP)) or name.lower()
+
+
 def year(v):
     m = re.match(r"(-?)(\d+)-", v or "")
     return (-1 if m.group(1) else 1) * int(m.group(2)) if m else None
@@ -43,20 +52,24 @@ def main(src=None):
     else:
         url = "https://query.wikidata.org/sparql?" + urllib.parse.urlencode({"query": QUERY, "format": "json"})
         req = urllib.request.Request(url, headers={"User-Agent": "AtlasOfEmpires/0.1 (educational map)", "Accept": "application/sparql-results+json"})
-        rows = json.load(urllib.request.urlopen(req, timeout=180))["results"]["bindings"]
+        body = json.load(urllib.request.urlopen(req, timeout=180))
+        json.dump(body, open(CACHE, "w"))  # re-run offline with: tools/gaps.py data/wikidata-states.json
+        rows = body["results"]["bindings"]
     realms = json.load(open(os.path.join(ROOT, "public", "data", "clio", "index.json")))["realms"]
     have_q = {r.get("wd") for r in realms.values() if r.get("wd")}
     names = {n.strip("()").lower() for n in realms}
     for p in glob.glob(os.path.join(ROOT, "content", "supplements", "*.json")):
         for rg in json.load(open(p)).get("regions", []):
             names.add(rg["name"].lower())
+    # names match loosely: "Madurai Sultanate (Ma'bar)" = "Madurai Sultanate"; "Kingdom of Cochin" = "Cochin kingdom"
+    cores = {core(n) for n in names}
     items = {}
     for r in rows:
         q = r["item"]["value"].rsplit("/", 1)[1]
         label = r.get("itemLabel", {}).get("value", q)
         s, e = year(r.get("start", {}).get("value")), year(r.get("end", {}).get("value"))
         m = re.match(r"Point\(([-\d.]+) ([-\d.]+)\)", r.get("coord", {}).get("value", ""))
-        if not m or s is None or e is None or e < -3400 or s > 2024 or q in have_q or label.lower() in names or re.fullmatch(r"Q\d+", label):
+        if not m or s is None or e is None or e < -3400 or s > 2024 or q in have_q or core(label) in cores or re.fullmatch(r"Q\d+", label):
             continue
         x, y = float(m.group(1)), float(m.group(2))
         cur = items.get(q)
