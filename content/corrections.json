@@ -9478,6 +9478,55 @@
         }
       ],
       "log": "border review (border-review-v4.json)"
+    },
+    "Kalabhra Dynasty": {
+      "note": "The Kalabhras are known mainly from hostile Pandya and Pallava records written centuries later, so both their dates and their extent are uncertain. Their rule probably began in the 3rd or 4th century (the map starts it only in 353), and Upinder Singh notes that 4th-century Pallava charters show they did not then rule near the Penner and Vellar rivers, so the northern edge drawn here, just south of Kanchipuram, is doubtful. Their rule ended in the last quarter of the 6th century: the Pallava Simhavishnu (c. 575–600) conquered the country up to the Kaveri and the Pandya Kadungon (c. 590–620; some date him c. 560–590) revived the Pandya kingdom south of it. The map's 592–601 remnant north of the Kaveri is therefore shown as Pallava; Kongu in the west, which the Western Gangas took in the mid-6th century, is left out.",
+      "log": "kalabhras.md",
+      "crop": [
+        {
+          "from": 592,
+          "to": 601,
+          "box": [
+            78.4,
+            10.0,
+            81.0,
+            13.5
+          ]
+        }
+      ],
+      "relabel": [
+        {
+          "from": 592,
+          "to": 601,
+          "name": "Late Pallava Empire",
+          "key": "Late Pallava Empire",
+          "addTo": [
+            "Late Pallava Empire"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "title": "Wikipedia: Kalabhra dynasty",
+          "url": "https://en.wikipedia.org/wiki/Kalabhra_dynasty"
+        },
+        {
+          "title": "K. A. Nilakanta Sastri, A History of South India (1958), pp. 139-140, 144-146 (Internet Archive)",
+          "url": "https://archive.org/details/dli.ernet.505532"
+        },
+        {
+          "title": "Wikipedia: Simhavishnu",
+          "url": "https://en.wikipedia.org/wiki/Simhavishnu"
+        },
+        {
+          "title": "Wikipedia: Kadunkon",
+          "url": "https://en.wikipedia.org/wiki/Kadunkon"
+        },
+        {
+          "title": "Schwartzberg, Historical Atlas of South Asia, plates III.D.1 (c. 300-550) and III.D.2 (c. 550-700) (DSAL)",
+          "url": "https://dsal.uchicago.edu/reference/schwartzberg/"
+        }
+      ]
     }
   },
   "base": {
