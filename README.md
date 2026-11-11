@@ -1,6 +1,6 @@
 # The World Atlas
 
-An interactive world map from **10,000 BCE to 2024 CE**, live at https://www.worldatlas.site. Drag the timeline to any year and see who ruled
+An interactive world map from **10,000 BCE to today**, live at https://www.worldatlas.site. Drag the timeline to any year and see who ruled
 what, how far each empire reached, and what was happening in every region of the world.
 
 - **Any year, accurate borders.** State borders come from Cliopatria (Seshat Global History Databank),
@@ -27,17 +27,23 @@ between chapters, Space plays and pauses, Esc clears the selection. Links are sh
 ```bash
 python3 -I tools/build.py        # historical-basemaps snapshots -> public/data/<year>.json (peoples layer)
 python3 -I tools/build_clio.py   # Cliopatria -> public/data/clio/<chunk>.json + index.json (state borders)
+python3 -I tools/build_today.py <ne_10m_admin_0_countries.geojson>   # Natural Earth -> clio/2024.json (borders from 2024 to today)
+python3 -I tools/placeindex.py   # border chunks -> public/data/place/ ("this place through time")
 python3 -I tools/content.py      # content/eras + content/empires -> public/data/content.json, links to Cliopatria
 python3 -I tools/commons.py      # Wikimedia Commons reference maps -> public/data/commons.json
 ```
 
-Raw sources live in `data/` (`data/geo/` holds historical-basemaps, `data/clio/` holds Cliopatria).
+Raw sources live in `data/` (`data/geo/` holds historical-basemaps, `data/clio/` holds Cliopatria). Natural Earth files
+come from the `geojson/` folder of [natural-earth-vector](https://github.com/nvkelso/natural-earth-vector) and are passed
+by path. `build_today.py` must run after `build_clio.py`, which rewrites the files it edits; its `PRESENT` constant is
+the map's last year.
 
 ## Sources and licences
 
 | What | Source | Licence |
 |---|---|---|
 | State borders | [Cliopatria](https://github.com/Seshat-Global-History-Databank/cliopatria), Seshat Global History Databank. Paper: *Scientific Data* (2025), [doi:10.1038/s41597-025-04516-9](https://doi.org/10.1038/s41597-025-04516-9). Geometry simplified for the web. | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) |
+| Present-day borders (2024 onward) | [Natural Earth](https://www.naturalearthdata.com/) 1:10m countries, default (de facto) view: a disputed place is drawn under the state that administers it. Geometry simplified for the web. | Public domain |
 | Peoples & other polities layer | [historical-basemaps](https://github.com/aourednik/historical-basemaps), A. Ourednik | GPL-3.0 |
 | Reference maps | [Wikimedia Commons](https://commons.wikimedia.org/). Each image is credited with its author and licence in the app. | Per file (CC BY-SA, CC BY, PD, …) |
 | Narrative text | Written for this project. Structure follows the 12 regional rows of the SenseForMaps decade-by-decade timeline. | MIT |

@@ -1,5 +1,5 @@
-/* The World Atlas — interactive historical world map, 10,000 BCE – 2024 CE.
-   State borders: Cliopatria, Seshat Global History Databank (CC BY 4.0).
+/* The World Atlas — interactive historical world map, 10,000 BCE – today.
+   State borders: Cliopatria, Seshat Global History Databank (CC BY 4.0); from 2024 on: Natural Earth (public domain).
    Peoples & cultures layer: historical-basemaps by A. Ourednik (GPL-3.0).
    Reference maps: Wikimedia Commons (per-file licences, credited in the panel). */
 (() => {
@@ -32,10 +32,10 @@ const ERAS = [
   [1300, 1500, "Late Middle Ages"],
   [1500, 1800, "Early Modern"],
   [1800, 1914, "Industrial & Imperial Age"],
-  [1914, 2024, "Modern World"],
+  [1914, 2026, "Modern World"], // ends at the data's last year (set in init)
 ];
 // Piecewise-linear time axis for the era strip: recent centuries get more room.
-const BREAKS = [[-10000, 0], [-3400, 0.14], [-1000, 0.27], [0, 0.39], [1000, 0.54], [1500, 0.68], [1800, 0.84], [2024, 1]];
+const BREAKS = [[-10000, 0], [-3400, 0.14], [-1000, 0.27], [0, 0.39], [1000, 0.54], [1500, 0.68], [1800, 0.84], [2026, 1]]; // the last stop is the data's last year (set in init)
 const SHOW_ARROWS = false; // war maps: offensive arrows are not drawn (the data is kept; the history checker still tests them)
 const WRITING = -3200; // earliest writing (Mesopotamia, Egypt): before this the map shows archaeology only
 const EARLIEST = -10000; // the timeline starts here, before the border data (3400 BCE): cultures and sites only
@@ -56,7 +56,7 @@ const NOT_A_REALM = /^\((Alliance|Allegiance|Personal union)/;
 
 // ---------------------------------------------------------------- state
 const S = {
-  year: 1500, range: [-3400, 2024], clio: null, baseYears: [], commons: {}, corr: { realms: {}, base: {} }, supps: [],
+  year: 1500, range: [-3400, 2026], clio: null, baseYears: [], commons: {}, corr: { realms: {}, base: {} }, supps: [],
   content: { eras: [], empires: {}, byClio: {}, moments: [], journeys: [], wars: [] }, moment: null, journey: null, rings: [], war: null,
   chunks: new Map(), bases: new Map(), windows: new Map(),
   items: [], states: [], featured: new Map(), win: null,
@@ -197,6 +197,7 @@ async function init() {
   ]);
   S.media = media;
   S.clio = clio; S.range = [Math.min(EARLIEST, clio.range[0]), clio.range[1]]; S.baseYears = base.years; S.commons = commons;
+  ERAS[ERAS.length - 1][1] = BREAKS[BREAKS.length - 1][0] = S.range[1]; // the last era and the time axis end at the present
   S.sites = sites;
   fetchJSON("data/physical.json").then(preparePhysical).then(() => draw()).catch(() => {}); // rivers, lakes, sea names: drawn once loaded
   if (GL) { GL.loadTexture("relief", "data/relief.jpg"); GL.loadTexture("shelf", "data/shelf.png"); } // terrain shading; seabed for ice-age coasts
@@ -1627,7 +1628,7 @@ function placeHTML() {
   for (const r of runs) {
     if (last != null && r.from > last + 1) h += `<li class="gap"><span class="py">${shortYear(last + 1)} – ${shortYear(r.from - 1)}</span><span>No state recorded</span></li>`;
     const now = r.from <= S.year && S.year <= r.to;
-    h += `<li${now ? ' class="now"' : ""}><button class="prow" data-pkey="${esc(r.name)}" data-pyear="${Math.max(r.from, Math.min(r.to, Math.round((r.from + r.to) / 2)))}"><span class="py">${shortYear(r.from)}${r.to !== r.from ? ` – ${r.to >= 2024 ? "today" : shortYear(r.to)}` : ""}</span><span class="pn"><i class="sq" style="background:${colorOf(r.name)}"></i>${esc(displayName(r.name))}</span></button></li>`;
+    h += `<li${now ? ' class="now"' : ""}><button class="prow" data-pkey="${esc(r.name)}" data-pyear="${Math.max(r.from, Math.min(r.to, Math.round((r.from + r.to) / 2)))}"><span class="py">${shortYear(r.from)}${r.to !== r.from ? ` – ${r.to >= S.range[1] ? "today" : shortYear(r.to)}` : ""}</span><span class="pn"><i class="sq" style="background:${colorOf(r.name)}"></i>${esc(displayName(r.name))}</span></button></li>`;
     last = Math.max(last ?? r.to, r.to);
   }
   return h + `</ol>`;
@@ -1666,7 +1667,7 @@ function realmHTML() {
   const area = areaAt(key, y), rank = realmsNow(true).findIndex((x) => x.key === key);
   const peak = r.tl.reduce((m, row) => (row[2] > m[2] ? row : m));
   const end = r.tl[r.tl.length - 1][1];
-  const span = `${shortYear(r.tl[0][0])} – ${end >= 2024 ? "today" : shortYear(end)}`;
+  const span = `${shortYear(r.tl[0][0])} – ${end >= S.range[1] ? "today" : shortYear(end)}`;
   const media = S.commons[r.wiki] || (emp?.wiki && S.commons[emp.wiki]);
   const now = activeFeats(key);
   let h = `<button class="back" data-act="close">← The world in ${plainYear(y)}</button>`;
@@ -1778,7 +1779,7 @@ function extentChart(r) {
     <path d="${area}" fill="${theme.highlight}" opacity=".14"/><path d="${line}" fill="none" stroke="${theme.highlight}" stroke-width="1.8" vector-effect="non-scaling-stroke"/>
     <line x1="0" x2="${W}" y1="${H - padB}" y2="${H - padB}" stroke="${theme.ink}" stroke-width="1" vector-effect="non-scaling-stroke"/>
     ${inside ? `<line x1="${cx}" x2="${cx}" y1="0" y2="${H - padB}" stroke="${theme.ink}" stroke-width="1.5" vector-effect="non-scaling-stroke"/>` : ""}
-    <text x="0" y="${H - 3}">${shortYear(f0)}</text><text x="${W}" y="${H - 3}" text-anchor="end">${t1 >= 2024 ? "today" : shortYear(t1)}</text>
+    <text x="0" y="${H - 3}">${shortYear(f0)}</text><text x="${W}" y="${H - 3}" text-anchor="end">${t1 >= S.range[1] ? "today" : shortYear(t1)}</text>
     <text x="2" y="11">${mkm(max)}M km²</text></svg>`;
 }
 function sourcesHTML() { // the About page (#about; #sources still opens it)
@@ -1798,6 +1799,7 @@ function sourcesHTML() { // the About page (#about; #sources still opens it)
     <h3 class="sec">Borders and map data</h3>
     <ol class="sources-list">
       <li><b>State borders</b>: ${L("https://github.com/Seshat-Global-History-Databank/cliopatria", "Cliopatria")}, Seshat Global History Databank (${L("https://creativecommons.org/licenses/by/4.0/", "CC BY 4.0")}); paper in <i>Scientific Data</i> (2025), ${L("https://doi.org/10.1038/s41597-025-04516-9", "doi:10.1038/s41597-025-04516-9")}. Simplified for the web.</li>
+      <li><b>Present-day borders</b> (2024 onward): ${L("https://www.naturalearthdata.com/", "Natural Earth")} 1:10m countries (public domain). A disputed place is drawn under the state that administers it.</li>
       <li><b>Peoples and other polities</b> (hatched layer): ${L("https://github.com/aourednik/historical-basemaps", "historical-basemaps")} by André Ourednik (GPL-3.0).</li>
       <li><b>Map corrections</b>: ${n(Object.keys(S.corr.realms).length)} realms carry reviewed fixes or notes where the border data contradicts scholarship, each with its sources ("How accurate is this map?" on a realm).</li>
       <li><b>Reconstruction layers</b> (e.g. Sangam-age Tamilakam) and <b>archaeological cultures and ancient sites</b>: compiled for this atlas from the publications cited on each page.</li>
@@ -2885,7 +2887,7 @@ function renderListChart(kind) {
   const items = kind === "wars" ? S.content.wars.map((w) => ({ id: w.id, name: w.name, a: w.span[0], b: w.span[1] + 1, attr: "data-war", hot: !!w.cinema, when: w.dateLabel }))
     : kind === "empires" ? S.content.journeys.map((j) => ({ id: j.id, name: j.name, a: j.span[0], b: j.span[1], attr: "data-journey", when: `${shortYear(j.span[0])}–${shortYear(j.span[1])}` }))
     : S.content.moments.map((m) => ({ id: m.id, name: m.title, a: m.year, b: m.year, attr: "data-moment", when: m.yearLabel || shortYear(m.year), wc: !!m.worldChanging }));
-  const a = Math.min(...items.map((i) => i.a)), b = Math.max(2024, ...items.map((i) => i.b));
+  const a = Math.min(...items.map((i) => i.a)), b = Math.max(S.range[1], ...items.map((i) => i.b));
   const p0 = yToPos(a), p1 = yToPos(b);
   const X = (S.chartScale = (y) => (yToPos(Math.max(a, Math.min(b, y))) - p0) / (p1 - p0));
   S.chartInv = (fx) => posToY(p0 + Math.max(0, Math.min(1, fx)) * (p1 - p0));
@@ -2985,8 +2987,8 @@ function buildStrip() {
   const strip = $("#strip");
   let h = "";
   ERAS.forEach(([a, b, label], i) => { h += `<div class="seg" data-i="${i}" title="${label}: ${plainYear(a)} – ${plainYear(b)}" style="left:${100 * yToPos(a)}%;width:${100 * (yToPos(b) - yToPos(a))}%"></div>`; });
-  for (const [y, txt] of [[EARLIEST, "10,000 BCE"], [1, "1 CE"], [1500, "1500"], [2024, "2024"]]) {
-    h += `<span class="lab" style="left:${100 * yToPos(y)}%;transform:translateX(${y === EARLIEST ? 0 : y === 2024 ? -100 : -50}%)">${txt}</span>`;
+  for (const [y, txt] of [[EARLIEST, "10,000 BCE"], [1, "1 CE"], [1500, "1500"], [S.range[1], String(S.range[1])]]) {
+    h += `<span class="lab" style="left:${100 * yToPos(y)}%;transform:translateX(${y === EARLIEST ? 0 : y === S.range[1] ? -100 : -50}%)">${txt}</span>`;
   }
   for (const m of S.content.moments) h += `<i class="mdot" style="left:${100 * yToPos(Math.max(S.range[0], m.year))}%"></i>`;
   strip.innerHTML = h + `<div class="now"></div>`;
@@ -3063,7 +3065,7 @@ function setupSearch() {
   const all = Object.entries(S.clio.realms).filter(([k]) => !NOT_A_REALM.test(k)).map(([key, r]) => ({
     key, name: displayName(key), raw: clean(key), from: r.tl[0][0], to: r.tl[r.tl.length - 1][1],
     area: Math.max(...r.tl.map((x) => x[2])), emp: !!empireOf(key),
-  })).concat((S.sites || []).map((st) => ({ key: "site:" + st.id, name: st.name, raw: (st.altNames || []).join(" "), from: st.built, to: st.until ?? 2024, area: 5e5, emp: false, site: true, kind: "Site", legend: st.built == null })));
+  })).concat((S.sites || []).map((st) => ({ key: "site:" + st.id, name: st.name, raw: (st.altNames || []).join(" "), from: st.built, to: st.until ?? S.range[1], area: 5e5, emp: false, site: true, kind: "Site", legend: st.built == null })));
   // Beyond realms and sites: empire stories, wars and their battles, defining moments and notable rulers.
   const C = S.content, pri = { Empire: 6, War: 5, Moment: 4, Ruler: 2, Battle: 1, Event: 1 };
   for (const j of C.journeys) all.push({ key: "journey:" + j.id, name: j.name, raw: "", from: j.span[0], to: j.span[1], kind: "Empire", area: 9e9 });
@@ -3087,7 +3089,7 @@ function setupSearch() {
     shown = all.filter((e) => e.name.toLowerCase().includes(q) || e.raw.toLowerCase().includes(q))
       .sort((a, b) => (b.name.toLowerCase().startsWith(q) - a.name.toLowerCase().startsWith(q)) || ((pri[b.kind] || 3) - (pri[a.kind] || 3)) || (b.emp - a.emp) || (b.area - a.area)).slice(0, 16);
     active = 0;
-    list.innerHTML = shown.length ? shown.map((e, i) => `<li data-k="${esc(e.key)}" class="${i ? "" : "active"}"><span>${e.kind ? `<i class="kind">${e.kind}</i> ` : ""}${esc(e.name)}${e.name !== e.raw && e.raw ? ` <small>(${esc(e.raw)})</small>` : ""}</span><small>${e.legend ? "legend · not proven" : e.when ? esc(e.when) : e.from == null ? "" : e.from === e.to ? shortYear(e.from) : `${shortYear(e.from)} – ${e.to >= 2024 ? "today" : shortYear(e.to)}`}</small></li>`).join("")
+    list.innerHTML = shown.length ? shown.map((e, i) => `<li data-k="${esc(e.key)}" class="${i ? "" : "active"}"><span>${e.kind ? `<i class="kind">${e.kind}</i> ` : ""}${esc(e.name)}${e.name !== e.raw && e.raw ? ` <small>(${esc(e.raw)})</small>` : ""}</span><small>${e.legend ? "legend · not proven" : e.when ? esc(e.when) : e.from == null ? "" : e.from === e.to ? shortYear(e.from) : `${shortYear(e.from)} – ${e.to >= S.range[1] ? "today" : shortYear(e.to)}`}</small></li>`).join("")
       : `<li><span>No match</span></li>`;
     list.hidden = false;
   };
