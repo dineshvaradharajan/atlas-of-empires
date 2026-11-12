@@ -283,13 +283,15 @@ def main():
     # Empire journeys (content/journeys/*.json): validate chains against Cliopatria and include.
     journeys, jids = [], set()
     profile_ids = {e["id"] for e in empires}
+    # a chain stage may also name a reconstruction layer's region key (e.g. "Chera Perumals", which Cliopatria lacks)
+    drawable = set(realms or ()) | {rg.get("key") or rg.get("name") for sp in supplements for rg in sp.get("regions", [])}
     for p in sorted(glob.glob(os.path.join(ROOT, "content", "journeys", "*.json"))):
         for j in json.load(open(p)):
             if j.get("id") in jids:
                 problems.append(f"journey id duplicated: {j.get('id')}")
                 continue
             jids.add(j["id"])
-            j["chain"] = [c for c in j.get("chain", []) if not (realms and c.get("clio") not in realms and not problems.append(f"journey {j['id']}: chain realm not in Cliopatria: {c.get('clio')!r}"))]
+            j["chain"] = [c for c in j.get("chain", []) if not (realms and c.get("clio") not in drawable and not problems.append(f"journey {j['id']}: chain realm not on the map: {c.get('clio')!r}"))]
             if j.get("profile") and j["profile"] not in profile_ids:
                 problems.append(f"journey {j['id']}: unknown profile {j['profile']!r}")
                 j["profile"] = None
