@@ -103,6 +103,7 @@ const I = {
   chart: ic('<path d="M3 20h18M3 16l5-6 4 3 5-8 4 5"/>'), close: ic('<path d="M6 6l12 12M18 6 6 18"/>'),
   today: ic('<rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M9 3v4M15 3v4"/>'),
   crown: ic('<path d="M4 18h16l-1.5-10-4.5 4-2-6-2 6-4.5-4z"/>'), sword: ic('<path d="M14.5 4H20v5.5L9 20.5 3.5 15z"/><path d="m6 12 6 6"/>'),
+  evpin: ic('<path d="M12 22s-7-6.4-7-12a7 7 0 0 1 14 0c0 5.6-7 12-7 12z"/><circle cx="12" cy="10" r="2.6"/>'),
   star: ic('<path d="m12 4 2.4 5 5.6.6-4.2 3.8 1.2 5.6L12 16.2 7 19l1.2-5.6L4 9.6 9.6 9z"/>'),
 };
 // What this viewer has read, kept in their browser: events seen per empire story and war, moments seen, days visited.
@@ -966,7 +967,7 @@ function setupMap() {
     if (!it) { tip.hidden = true; canvas.classList.remove("pointing"); return; }
     canvas.classList.toggle("pointing", !S.war && !S.journey);
     if (it.kind === "state") {
-      const p = it.p, grp = p.k !== p.n && p.k !== p.n ? `<div>Part of <strong>${esc(displayName(p.k))}</strong></div>` : "";
+      const p = it.p, grp = p.k !== p.n && displayName(p.k) !== clean(p.n) ? `<div>Part of <strong>${esc(displayName(p.k))}</strong></div>` : "";
       const fix = p.fixed ? `<div class="m">Corrected label (map data says “${esc(clean(p.fixed))}”)</div>` : corrOf(p.n) || corrOf(p.k) ? `<div class="m">Map note: see realm panel</div>` : "";
       tip.innerHTML = p.recon
         ? `<b>${esc(p.n)}</b><div class="m">Reconstructed from ${esc(S.supps.find((x) => x.id === p.supp)?.title || "historical sources")} · approximate borders, c. ${shortYear(p.f)}–${shortYear(p.t)}</div>`
@@ -1581,6 +1582,7 @@ function syncChrome() {
   $("#legend").hidden = !S.war;
   $("#compare").hidden = !(S.compare && !S.war && !S.journey && !S.tstory);
   document.body.classList.toggle("sdock", !!(S.war && !S.tstory || S.journey || S.view === "moment"));
+  document.body.classList.toggle("jdock", !!S.journey);
 }
 // Card building blocks.
 const cardHead = (back, right = "", act = "back") => `<div class="chead">${back ? `<button class="back" data-act="${act}">${I.left}${esc(back)}</button>` : "<span></span>"}${right ? `<span class="count">${right}</span>` : ""}</div>`;
@@ -2704,7 +2706,7 @@ async function openJourney(id, year) {
   noteFrom();
   stopPlay();
   if (S.war) exitWar();
-  S.sel = null; S.ghost = null; S.moment = null; S.journey = j; S.view = "journey"; S.jEvent = null; S.jOpen = new Set(); S.jTab = "story";
+  S.sel = null; S.ghost = null; S.moment = null; S.journey = j; S.view = "journey"; S.jEvent = null; S.jOpen = new Set(); S.jTab = "story"; S.jKing = null;
   S.rings = [];
   await go(year ?? j.span[0], { keepJourney: true });
   renderJourneyChart(); updateChartCursor(); renderCol(true); writeHash();
@@ -2766,7 +2768,44 @@ function reignOf(j, y) { // the reign covering y, else the nearest one
 }
 const jEventIdx = (j) => (S.jEvent != null ? S.jEvent : j.events.indexOf(currentEvent(j, S.year)));
 const reignName = (r) => r.name.replace(/\s*\(r\..*?\)\s*/, "").replace(/\s*\(.*\)$/, "");
+// A king, opened from his crown on the timeline: portrait (when the profile has one), reign, note, land won or lost, events.
+function kingProfile(j, r) { // the empire profile's entry for this king, matched by name
+  const prof = j.profile ? Object.values(S.content.byClio).find((e) => e.id === j.profile) : null;
+  if (!prof?.rulers?.length) return {};
+  const nm = reignName(r).toLowerCase();
+  const i = prof.rulers.findIndex((x) => { const a = x.name.toLowerCase(); return a === nm || nm.startsWith(a + " ") || a.startsWith(nm + " ") || nm.startsWith(a + ","); });
+  if (i < 0) return {};
+  const m = S.media[`ruler:${prof.id}:${i}`]?.[0];
+  return { note: prof.rulers[i].note, pic: m && m.caption.startsWith(prof.rulers[i].name) ? m : null };
+}
+function kingHTML(j) {
+  const i = S.jKing, r = j.reigns[i], kp = kingProfile(j, r), n = j.reigns.length;
+  const from = Math.max(r.from, j.span[0]), to = Math.min(r.to, j.span[1]), years = Math.max(1, r.to - r.from);
+  const a0 = journeyArea(j, from), a1 = journeyArea(j, to);
+  const evs = j.events.map((e, k) => ({ e, k })).filter((x) => reignOf(j, x.e.year) === i);
+  let h = cardHead(j.name, `King ${i + 1} of ${n}`, "king-close") + kick(`King · ${esc(j.name)}`);
+  if (kp.pic) { const cr = /^no machine-readable|^unknown/i.test(kp.pic.credit || "") || !kp.pic.credit ? "Wikimedia Commons" : short(kp.pic.credit.replace(/\s+/g, " "), 48);
+    h += `<figure class="kpic"><img src="${safeUrl(kp.pic.image)}" alt="Portrait of ${esc(reignName(r))}"><figcaption><a href="${safeUrl(kp.pic.page)}" target="_blank" rel="noopener">${esc(cr)}</a> · ${esc(kp.pic.license || "")}</figcaption></figure>`; }
+  h += `<div class="stack"><h1 class="ttl xl">${esc(reignName(r))}</h1><p class="sub" style="margin:0">Reigned ${rangeText(r.from, r.to)} · ${years} year${years > 1 ? "s" : ""}</p></div>`;
+  if (kp.note) h += `<p class="prose">${esc(kp.note)}.</p>`.replace("..</p>", ".</p>");
+  if (a0 || a1) {
+    const ch = a0 ? Math.round((100 * (a1 - a0)) / a0) : null;
+    h += `<div class="facts two"><div><span>Land when it began</span><b>${a0 ? `${mkm(a0)} million km²` : "Not drawn"}</b></div><div><span>Land when it ended</span><b>${a1 ? `${mkm(a1)} million km²` : "Not drawn"}</b>${ch != null && a1 ? `<em class="${ch > 0 ? "up" : ch < 0 ? "down" : ""}">${ch > 0 ? "+" : ""}${ch}% in this reign</em>` : ""}</div></div>`;
+  }
+  h += `<h3 class="sec">${evs.length ? `In this reign · ${evs.length} event${evs.length > 1 ? "s" : ""}` : "In this reign"}</h3>`;
+  h += evs.length ? `<div class="lgroup">${evs.map(({ e, k }) => { const t = evText(e); return `<button class="lrow" data-jev="${k}">${I.evpin}<span class="t"><b>${esc(t.text)}</b><small>${esc(t.when || shortYear(e.year))}</small></span>${I.right}</button>`; }).join("")}</div>`
+    : `<p class="note">The atlas has no events recorded in this reign.</p>`;
+  const nx = j.reigns[i + 1];
+  return h + navRow(i > 0 ? `data-king="${i - 1}"` : "", nx ? { attr: `data-king="${i + 1}"`, small: `Next king · ${shortYear(nx.from)}–${shortYear(nx.to)}`, title: reignName(nx) } : null);
+}
+async function openKing(i) { // jump to the start of a reign and show the king in the card
+  const j = S.journey; if (!j?.reigns[i]) return;
+  stopPlay(); S.jKing = i; S.jEvent = null; S.jTab = "story";
+  await go(Math.max(j.span[0], j.reigns[i].from));
+  renderCol(true);
+}
 function journeyHTML() {
+  if (S.jKing != null && S.journey.reigns[S.jKing]) return kingHTML(S.journey);
   const j = S.journey, y = S.year, prof = j.profile ? Object.values(S.content.byClio).find((e) => e.id === j.profile) : null;
   const total = j.events.length, ei = jEventIdx(j), ev = j.events[ei];
   markSeen("e", j.id, ei);
@@ -2896,15 +2935,37 @@ function drawAncientSites() {
   ctx.restore();
 }
 const siteAt = (x, y) => { let best = null, bd = 9; for (const h of S.siteHits || []) { const d = Math.hypot(h.x - x, h.y - y); if (d < bd) { bd = d; best = h.st; } } return best; };
-function drawSites() { // capitals, ports and excavations of active reconstruction layers, once zoomed in
-  if (S.t.k < 5) return;
-  const act = S.supps.filter((sp) => sp.from <= S.year && S.year <= sp.to);
+// Capitals, seats and ports of the reconstruction layers. A city shows only when it lies inside a state drawn this year,
+// and only where it matters: on a realm's page or in an empire's story, that realm's cities; on the open map, a few
+// non-overlapping names once zoomed well in.
+function sitesThisYear() {
+  if (S.siteCtx?.year === S.year && S.siteCtx.states === S.states) return S.siteCtx.list;
+  const list = [];
+  for (const sp of S.supps) if (sp.from <= S.year && S.year <= sp.to && sp.sites?.length) {
+    const feats = S.states.filter((f) => f.properties.supp === sp.id);
+    for (const st of sp.sites) { const f = feats.find((g) => d3.geoContains(g, st.lonlat)); if (f) list.push({ st, n: f.properties.n, k: f.properties.k }); }
+  }
+  S.siteCtx = { year: S.year, states: S.states, list };
+  return list;
+}
+function drawSites() {
+  if (S.war || listOnMap()) return;
+  const focus = S.journey ? chainKeys(S.journey, S.year) : S.sel ? new Set([S.sel, realmKey(S.sel)]) : null;
+  if (!focus && S.t.k < 8) return;
+  let list = sitesThisYear();
+  if (focus) list = list.filter((x) => focus.has(x.n) || focus.has(x.k));
+  if (!list.length) return;
+  const placed = focus ? [] : (S.labels && S.labelBoxes ? [...S.labelBoxes] : mapObstacles());
+  let named = 0; const maxNamed = focus ? Infinity : S.t.k < 12 ? 6 : 14;
   ctx.save(); ctx.textAlign = "left"; ctx.textBaseline = "middle"; ctx.font = '600 11px Inter, sans-serif';
-  for (const sp of act) for (const st of sp.sites || []) {
+  for (const { st } of list) {
     const [x0, y0] = projection(st.lonlat), x = S.t.applyX(x0), y = S.t.applyY(y0);
     if (x < 0 || y < 0 || x > S.width || y > S.height) continue;
+    const w = ctx.measureText(st.name).width, box = [x - 4, y - 8, x + 10 + w, y + 8];
+    const free = !placed.some((q) => box[0] < q[2] && box[2] > q[0] && box[1] < q[3] && box[3] > q[1]);
+    if (!focus && (!free || named >= maxNamed)) continue; // the open map: no crowding, no overlaps
     ctx.beginPath(); ctx.arc(x, y, 3.5, 0, 2 * Math.PI); ctx.fillStyle = theme.ink; ctx.fill(); ctx.lineWidth = 1.5; ctx.strokeStyle = theme.bg; ctx.stroke();
-    ctx.lineWidth = 3; ctx.strokeStyle = theme.bg; ctx.strokeText(st.name, x + 6, y); ctx.fillStyle = theme.ink; ctx.fillText(st.name, x + 6, y);
+    if (free) { placed.push(box); named++; ctx.lineWidth = 3; ctx.strokeStyle = theme.bg; ctx.strokeText(st.name, x + 6, y); ctx.fillStyle = theme.ink; ctx.fillText(st.name, x + 6, y); }
   }
   ctx.restore();
 }
@@ -3215,13 +3276,11 @@ function togglePlay() {
     return;
   }
   let span = 0, jstep = 0, interval = 300;
-  if (S.journey) { // this reign, from its start
-    const j = S.journey, r = j.reigns[reignOf(j, S.year)];
-    S.playEnd = r ? Math.min(j.span[1], r.to) : j.span[1];
-    const from = r ? Math.max(j.span[0], r.from) : j.span[0];
-    if (S.year >= S.playEnd || S.year < from) go(from);
-    span = Math.max(1, S.playEnd - Math.min(S.year, from));
-    interval = Math.min(600, Math.max(110, 8000 / span)); jstep = Math.max(1, Math.round(span / (8000 / interval)));
+  if (S.journey) { // the whole empire, from here to its end (about 30 seconds for the whole span)
+    const j = S.journey; S.playEnd = j.span[1]; S.jKing = null;
+    if (S.year >= j.span[1] - 1) go(j.span[0]);
+    span = Math.max(1, j.span[1] - j.span[0]);
+    interval = Math.min(600, Math.max(110, 30000 / span)); jstep = Math.max(1, Math.round(span / (30000 / interval)));
   } else if (S.year >= S.range[1]) go(S.range[0]);
   setPlayIcon(true);
   S.playing = setInterval(() => {
@@ -3238,6 +3297,16 @@ function togglePlay() {
 const TICKS = [[-10000, "10,000 BCE"], [-3000, "3000 BCE"], [-1000, "1000 BCE"], [1, "1 CE"], [1000, "1000"], [1500, "1500"], [1800, "1800"]];
 const dockMode = () => S.tstory && S.war ? "tstory" : S.war ? "war" : S.journey ? "journey" : S.view === "moment" && S.moment ? "moment" : "time";
 const playSvg = (on) => (on ? I.pause : I.play);
+function journeyCurve(j) { // the empire's territory over its whole life, as an SVG area (0–1000 wide, 0–100 high)
+  if (S.jCurve?.id === j.id) return S.jCurve;
+  const [a, b] = j.span, N = 220, pts = [];
+  let max = 0, peak = a;
+  for (let i = 0; i < N; i++) { const y = Math.round(a + (i * (b - a)) / (N - 1)), v = journeyArea(j, y); pts.push([y, v]); if (v > max) { max = v; peak = y; } }
+  const X = (y) => ((1000 * (y - a)) / Math.max(1, b - a)).toFixed(1), Y = (v) => (100 - (max ? (v / max) * 92 : 0)).toFixed(1);
+  const line = "M" + pts.map(([y, v]) => `${X(y)},${Y(v)}`).join("L");
+  return (S.jCurve = { id: j.id, max, peak, line, d: `${line}L1000,100L0,100Z` });
+}
+const jx = (j) => { const [a, b] = j.span; return (y) => (100 * Math.max(0, Math.min(1, (y - a) / Math.max(1, b - a)))).toFixed(2); }; // year -> % along the empire's timeline
 function partBtn(i, cur, small, name, note, attr) {
   const cls = i === cur ? "on" : i < cur ? "seen" : "";
   return `<button class="part ${cls}" ${attr} aria-pressed="${i === cur}"><small>${esc(small)}</small><b>${esc(name)}</b>${note && i !== cur ? `<em>${esc(note)}</em>` : ""}</button>`;
@@ -3263,14 +3332,25 @@ function renderDock() {
     const parts = years.map((y, i) => partBtn(i, ci, i === ci ? `Year ${i + 1} of ${years.length}` : "", shortYear(y), `${w.events.filter((e) => e.year === y).length} events`, `data-wev="${w.events.findIndex((e) => e.year === y)}"`)).join("");
     const chips = w.events.map((e, i) => ({ e, i })).filter((x) => x.e.year === cy).map(({ e, i }) => evChip(e.label || shortYear(e.year), e.text, i === S.wIdx ? "on" : seen.has(i) ? "seen" : "", `data-wev="${i}"`)).join("");
     h = storyDock(parts, chips, "Play the war", cy, "Years of the war", "Events this year");
-  } else if (mode === "journey") {
-    const j = S.journey, ei = jEventIdx(j), seen = new Set(P.e[j.id] || []);
-    const byReign = j.events.map((e) => reignOf(j, e.year));
+  } else if (mode === "journey") { // the empire as one timeline: its rulers as named spans, its events as markers, one Play
+    const j = S.journey, ei = jEventIdx(j), seen = new Set(P.e[j.id] || []), X = jx(j);
     const cur = j.reigns.length ? reignOf(j, ei >= 0 ? j.events[ei].year : S.year) : -1;
-    const parts = j.reigns.map((r, i) => { const n = byReign.filter((x) => x === i).length;
-      return partBtn(i, cur, i === cur ? `Ruler ${i + 1} of ${j.reigns.length} · ${shortYear(r.from)}–${shortYear(r.to)}` : `${shortYear(r.from)}–${shortYear(r.to)}`, reignName(r), n ? `${n} event${n > 1 ? "s" : ""}` : "", `data-reign="${i}"`); }).join("");
-    const chips = j.events.map((e, i) => ({ e, i })).filter((x) => byReign[x.i] === cur).map(({ e, i }) => { const t = evText(e); return evChip(t.when || shortYear(e.year), t.text, i === ei ? "on" : seen.has(i) ? "seen" : "", `data-jev="${i}"`); }).join("");
-    h = storyDock(parts, chips, "Play this reign", ei >= 0 ? j.events[ei].year : S.year, `Rulers of ${j.name}`, "Events in this reign");
+    const rgs = j.reigns.map((r, i) => { const x = X(Math.max(r.from, j.span[0])), lab = `${reignName(r)} · ${shortYear(r.from)}–${shortYear(r.to)}`; // a crown where each king's reign begins; the name on hover
+      return `<button class="crown${i === cur ? " on" : ""}${+x > 88 ? " r" : +x < 12 ? " l" : ""}" data-reign="${i}" style="left:${x}%" aria-label="${esc(reignName(r))}, ${shortYear(r.from)} to ${shortYear(r.to)}" data-label="${esc(lab)}">${I.crown}</button>`; }).join("");
+    const evs = j.events.map((e, i) => { const t = evText(e), when = t.when || shortYear(e.year);
+      const x = X(e.year); return `<button class="ev${i === ei ? " on" : seen.has(i) ? " seen" : ""}${+x > 88 ? " r" : +x < 12 ? " l" : ""}" data-jev="${i}" style="left:${x}%" aria-label="${esc(when)}: ${esc(t.text)}" data-label="${esc(when)} · ${esc(short(t.text, 40))}">${I.evpin}</button>`; }).join("");
+    // each king's name under his crown, in the room up to the next crown (cut short with … when they are close)
+    const starts = j.reigns.map((r) => +X(Math.max(r.from, j.span[0])));
+    const cnames = j.reigns.map((r, i) => { const gap = (i + 1 < starts.length ? Math.max(starts[i + 1], starts[i]) : 100 + 1.5) - starts[i];
+      return `<span class="cname${i === cur ? " on" : ""}" aria-hidden="true" style="left:${starts[i]}%;max-width:calc(${gap.toFixed(2)}% - 2px)">${esc(reignName(r))}</span>`; }).join("");
+    let cap = "";
+    if (ei >= 0) { const e = j.events[ei], t = evText(e), x = X(e.year); cap = `<div class="ecap${x < 18 ? " l" : x > 82 ? " r" : ""}" style="left:${x}%"><b>${esc(t.when || shortYear(e.year))}</b> ${esc(short(t.text, 56))}</div>`; }
+    const A = journeyCurve(j);
+    h = `<div class="etl"><div class="eplay"><button class="play" id="play" aria-label="Play the whole empire">${playSvg(S.playing)}</button><b class="eyear"></b></div>
+      <div class="lane jt" role="group" aria-label="Timeline of ${esc(j.name)}: territory, rulers and events">
+      ${A.max ? `<svg class="jarea" viewBox="0 0 1000 100" preserveAspectRatio="none" aria-hidden="true"><path class="fillp" d="${A.d}"/><path class="linep" d="${A.line}"/></svg><span class="jpeak">Largest: ${mkm(A.max)} million km², ${shortYear(A.peak)}</span>` : `<span class="jpeak l">No borders on the map for this empire</span>`}
+      <span class="erail"></span><span class="edone"></span>${evs}<span class="ehead"></span>${cap}<div class="crowns" role="group" aria-label="Kings of ${esc(j.name)}">${rgs}${cnames}</div></div>
+      <button class="pillbtn" data-act="world-in" data-year="${ei >= 0 ? j.events[ei].year : S.year}">${I.globe}The world in ${shortYear(ei >= 0 ? j.events[ei].year : S.year)}</button></div>`;
   } else if (mode === "moment") {
     const m = S.moment, cur = ageOf(m.year);
     const parts = AGES.map((a, i) => { const n = ageMoments(i).length; return partBtn(i, cur, i === cur ? `Age ${i + 1} of ${AGES.length} · ${a[3]}` : a[3], a[2], `${n} moments`, `data-age="${i}"`); }).join("");
@@ -3290,7 +3370,8 @@ function renderDock() {
       <button class="pillbtn${S.compare ? " dark" : ""}" data-act="compare" aria-pressed="${!!S.compare}">${I.chart}Compare empires</button></div>`;
   }
   if (el.dataset.h !== h) { el.innerHTML = h; el.dataset.h = h; el.dataset.mode = mode; }
-  if (mode === "time") { dockMarks(); updateDock(); }
+  if (mode === "time") dockMarks();
+  if (mode === "time" || mode === "journey") updateDock();
   el.querySelector(".part.on")?.scrollIntoView({ block: "nearest", inline: "center" });
   el.querySelector(".echip.on")?.scrollIntoView({ block: "nearest", inline: "center" });
 }
@@ -3314,6 +3395,14 @@ function dockMarks() {
 }
 function updateDock() {
   const el = $("#dock");
+  if (el.dataset.mode === "journey" && S.journey) { // the playhead, the part played and the current ruler follow the year
+    const j = S.journey, x = jx(j)(S.year), cur = reignOf(j, S.year);
+    const hd = el.querySelector(".ehead"); if (hd) hd.style.left = `${x}%`;
+    const dn = el.querySelector(".edone"); if (dn) dn.style.width = `${x}%`;
+    const ey = el.querySelector(".eyear"); if (ey) ey.innerHTML = yearLabel(S.year);
+    if (S.playing) el.querySelectorAll(".crown").forEach((b, i) => b.classList.toggle("on", i === cur));
+    return;
+  }
   if (el.dataset.mode !== "time") return;
   const p = 100 * yToPos(S.year);
   const ty = el.querySelector(".tyear"); if (ty) ty.innerHTML = yearLabel(S.year);
@@ -3327,11 +3416,14 @@ function setupDock() {
   const el = $("#dock");
   let drag = false;
   const toYear = (ev) => { const r = $("#track").getBoundingClientRect(); return posToY((ev.clientX - r.left) / r.width); };
+  const laneYear = (ev) => { const r = el.querySelector(".lane").getBoundingClientRect(), [a, b] = S.journey.span; return Math.round(a + Math.max(0, Math.min(1, (ev.clientX - r.left) / r.width)) * (b - a)); };
   el.addEventListener("pointerdown", (ev) => {
+    const lane = ev.target.closest(".lane");
+    if (lane && S.journey && !ev.target.closest("button")) { drag = "lane"; lane.setPointerCapture(ev.pointerId); stopPlay(); S.jEvent = null; S.jKing = null; return go(laneYear(ev)); }
     if (!ev.target.closest("#track")) return;
     drag = true; ev.target.closest("#track").setPointerCapture(ev.pointerId); stopPlay(); go(toYear(ev));
   });
-  el.addEventListener("pointermove", (ev) => { if (drag && $("#track")) go(toYear(ev)); });
+  el.addEventListener("pointermove", (ev) => { if (drag === "lane" && S.journey) { S.jEvent = null; return go(laneYear(ev)); } if (drag && $("#track")) go(toYear(ev)); });
   el.addEventListener("pointerup", () => (drag = false));
   let sPos = null, sRaf = 0, sAt = 0;
   el.addEventListener("wheel", (ev) => {
@@ -3356,12 +3448,8 @@ function setupDock() {
     if (b.dataset.tstep != null) return openTodayStory(+b.dataset.tstep);
     if (b.dataset.chap != null && story()) { stopPlay(); return openChapter(+b.dataset.chap); }
     if (b.dataset.wev != null && S.war) { stopPlay(); return goWarEvent(+b.dataset.wev); }
-    if (b.dataset.reign != null && S.journey) { // a ruler: their first event, else the start of the reign
-      stopPlay(); const j = S.journey, i = +b.dataset.reign, k = j.events.findIndex((e) => reignOf(j, e.year) === i);
-      if (k >= 0) { S.jEvent = k; return go(j.events[k].year); }
-      S.jEvent = null; return go(Math.max(j.span[0], j.reigns[i].from));
-    }
-    if (b.dataset.jev != null && S.journey) { stopPlay(); const i = +b.dataset.jev; S.jEvent = i; return go(S.journey.events[i].year); }
+    if (b.dataset.reign != null && S.journey) return openKing(+b.dataset.reign); // a crown: that king
+    if (b.dataset.jev != null && S.journey) { stopPlay(); const i = +b.dataset.jev; S.jEvent = i; S.jKing = null; return go(S.journey.events[i].year); }
     if (b.dataset.age != null) { const ms = ageMoments(+b.dataset.age); if (ms.length) return openMoment((ms.find((m) => !P.m.includes(m.id)) || ms[0]).id); }
     if (b.dataset.moment) return openMoment(b.dataset.moment);
   });
@@ -3527,6 +3615,7 @@ function setupUI() {
     const act = ev.target.closest("[data-act]")?.dataset.act;
     if (act) {
       if (act === "back") return backFromStory();
+      if (act === "king-close") { S.jKing = null; return renderCol(true); }
       if (act === "today") return goToday();
       if (act === "tstory") return openTodayStory(0);
       if (act === "about") return openAbout();
@@ -3563,7 +3652,8 @@ function setupUI() {
     if (d.chap != null && story()) { S.tstory = null; return openChapter(+d.chap); }
     if (d.war) { hidePop(); return S.war?.id === d.war ? (S.tstory = null, renderCol(true)) : openWar(d.war); }
     if (d.journey) { hidePop(); return openJourney(d.journey); }
-    if (d.jev != null && S.journey) { const e = S.journey.events[+d.jev]; S.jEvent = +d.jev; stopPlay(); return go(e.year); }
+    if (d.king != null && S.journey) return openKing(+d.king);
+    if (d.jev != null && S.journey) { const e = S.journey.events[+d.jev]; S.jEvent = +d.jev; S.jKing = null; stopPlay(); return go(e.year); }
     if (d.pkey) { stopPlay(); const y = +d.pyear; await go(y); renderCol(false); draw(); return; } // stay on the place, move the map to that year
     if (d.rkey) { stopPlay(); const ll = S.realmPlace?.ll; await go(+d.pyear); return select(d.rkey, { ll }); }
     if (d.key) { stopPlay(); hidePop(); return select(d.key, { fly: true, ll: S.pop?.ll }); }
