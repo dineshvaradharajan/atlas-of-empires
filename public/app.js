@@ -1025,20 +1025,25 @@ function draw() {
 
   const sel = S.sel;
   theme.hatch.setTransform(new DOMMatrix().scale(1 / t.k)); // constant stripe width at any zoom
+  let coast = false; // consecutive reconstructions share one coastline clip (one per realm exhausts memory, see drawGL)
+  const toCoast = (on) => { if (on === coast) return; if (on) { ctx.save(); ctx.clip(S.landClip); } else ctx.restore(); coast = on; };
   for (const it of S.items) {
+    toCoast(!!it.p.recon);
     const fl = fillOf(it); ctx.fillStyle = fl === "HATCH" ? theme.hatch : fl;
-    if (it.p.recon || it.p.crop || it.p.cut) { ctx.save(); clipFor(ctx, it); ctx.fill(pathOf(it.f)); ctx.restore(); }
+    if (it.p.crop || it.p.cut) { ctx.save(); clipFor(ctx, { p: { crop: it.p.crop, cut: it.p.cut } }); ctx.fill(pathOf(it.f)); ctx.restore(); }
     else ctx.fill(pathOf(it.f));
   }
+  toCoast(false);
   ctx.lineJoin = "round";
-  ctx.strokeStyle = theme.border; ctx.lineWidth = 0.7 / t.k;
+  ctx.lineWidth = 0.7 / t.k;
   for (const it of S.items) {
     if (it.kind !== "state") continue;
-    if ((it.p.crop || it.p.cut) && !it.p.recon) { ctx.save(); clipFor(ctx, it); ctx.stroke(pathOf(it.f)); ctx.restore(); continue; }
-    if (!it.p.recon) { ctx.stroke(pathOf(it.f)); continue; }
-    ctx.save(); ctx.clip(S.landClip); ctx.setLineDash([3 / t.k, 2.5 / t.k]); ctx.strokeStyle = theme.ink3; ctx.stroke(pathOf(it.f)); ctx.restore();
-    ctx.strokeStyle = theme.border;
+    toCoast(!!it.p.recon);
+    if (it.p.recon) { ctx.setLineDash([3 / t.k, 2.5 / t.k]); ctx.strokeStyle = theme.ink3; } else { ctx.setLineDash([]); ctx.strokeStyle = theme.border; }
+    if (it.p.crop || it.p.cut) { ctx.save(); clipFor(ctx, { p: { crop: it.p.crop, cut: it.p.cut } }); ctx.stroke(pathOf(it.f)); ctx.restore(); }
+    else ctx.stroke(pathOf(it.f));
   }
+  toCoast(false); ctx.setLineDash([]); ctx.strokeStyle = theme.border;
   drawWater();
   drawIce();
   drawDisputed();
@@ -1327,12 +1332,20 @@ function drawGL() {
   drawWater();
   drawIce();
   drawDisputed();
-  for (const it of S.items) { // borders the GPU skips: reconstructions (dashed, coast-clipped) and crops
-    if (it.kind !== "state" || !(it.p.recon || it.p.crop || it.p.cut)) continue;
-    ctx.save(); clipFor(ctx, it);
-    if (it.p.recon) { ctx.setLineDash([3 / t.k, 2.5 / t.k]); ctx.strokeStyle = theme.ink3; } else ctx.strokeStyle = theme.border;
-    ctx.lineWidth = 0.7 / t.k; ctx.stroke(pathOf(it.f)); ctx.restore();
+  // borders the GPU skips: reconstructions (dashed, coast-clipped) and crops. All reconstructions share one coastline
+  // clip: a clip per realm made a full-screen mask for each, every frame, and playback ran the browser out of memory.
+  const recon = S.items.filter((it) => it.kind === "state" && it.p.recon), cropped = S.items.filter((it) => it.kind === "state" && !it.p.recon && (it.p.crop || it.p.cut));
+  ctx.lineWidth = 0.7 / t.k;
+  if (recon.length) {
+    ctx.save(); ctx.clip(S.landClip); ctx.setLineDash([3 / t.k, 2.5 / t.k]); ctx.strokeStyle = theme.ink3;
+    for (const it of recon) {
+      if (it.p.crop || it.p.cut) { ctx.save(); clipFor(ctx, { p: { crop: it.p.crop, cut: it.p.cut } }); ctx.stroke(pathOf(it.f)); ctx.restore(); }
+      else ctx.stroke(pathOf(it.f));
+    }
+    ctx.restore();
   }
+  ctx.strokeStyle = theme.border;
+  for (const it of cropped) { ctx.save(); clipFor(ctx, it); ctx.stroke(pathOf(it.f)); ctx.restore(); }
   drawOccupations();
   const sel = S.sel;
   if (S.showGhost && S.ghost && sel === S.ghost.key && S.ghost.year !== S.year) {
