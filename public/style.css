@@ -661,3 +661,9 @@ body.sdock #dock { border-radius: 24px; }
 .noscript { position: fixed; z-index: 50; left: var(--gut); right: var(--gut); top: var(--top); max-width: 520px; padding: 20px 24px; background: var(--bg); color: var(--ink-2); border-radius: 16px; box-shadow: var(--shadow); font: 15px/1.55 var(--sans); }
 .noscript h1 { margin: 0 0 8px; font: 800 24px/1.1 var(--display); color: var(--ink); }
 .noscript a { color: var(--ink); }
+
+/* About: the maker and the Bharat Rajya credit stand out */
+.about-by b { color: var(--ink); }
+aside.about-insp { padding: 14px 16px; }
+aside.about-insp .insp-site { margin: 2px 0 6px; font: 800 22px/1.15 var(--display); }
+aside.about-insp .insp-site a { color: var(--ink); text-decoration-color: var(--highlight); text-underline-offset: 3px; }

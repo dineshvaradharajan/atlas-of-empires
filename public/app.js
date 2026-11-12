@@ -1957,12 +1957,14 @@ function sourcesHTML() { // the About page (#about; #sources still opens it)
   const L = (url, text) => `<a href="${safeUrl(url)}" target="_blank" rel="noopener">${text}</a>`;
   const n = (x) => x.toLocaleString("en");
   const leads = Object.keys(S.media || {}).filter((k) => k.startsWith("empire:")).length;
-  const media = Object.keys(S.media || {}).filter((k) => !k.startsWith("empire:")).length;
+  const media = Object.keys(S.media || {}).filter((k) => k.startsWith("moment:")).length;
+  const portraits = Object.keys(S.media || {}).filter((k) => k.startsWith("ruler:")).length;
   const sitePics = (S.sites || []).filter((x) => x.image?.image).length;
   return `${cardHead("Back to the map", "", "world")}
     ${kick("About")}<h1 class="ttl l">The World Atlas</h1>
     <p class="prose">An interactive map of world history from 10,000 BCE to today: who ruled what in any year, how far every empire reached, the wars that redrew the map and the moments that changed it, with the sources behind each one.</p>
-    <aside class="mapnote about-insp"><b>Inspiration</b><p>The idea for this atlas came from ${L("https://www.bharatrajya.com/", "Bharat Rajya")}, an interactive map of the kingdoms of Indian history. Thank you for showing what a history map can be.</p></aside>
+    <p class="note about-by">Made by <b>Dinesh Varadharajan</b> · <a href="mailto:gvdinesh@gmail.com">gvdinesh@gmail.com</a></p>
+    <aside class="mapnote about-insp"><b>Inspired by</b><p class="insp-site">${L("https://www.bharatrajya.com/", "bharatrajya.com")}</p><p>The idea for this atlas came from <strong>Bharat Rajya</strong>, an interactive map of the kingdoms of Indian history. Thank you for showing what a history map can be.</p></aside>
 
     <h3 class="sec">Read without the map</h3>
     <p class="note">Every story is also a plain page: <a href="/empires/">empires</a>, <a href="/wars/">wars</a>, <a href="/moments/">moments</a>, <a href="/eras/">chapters</a>, <a href="/realms/">realms</a> and <a href="/sites/">ancient sites</a>.</p>
@@ -1988,8 +1990,8 @@ function sourcesHTML() { // the About page (#about; #sources still opens it)
     <h3 class="sec">Pictures</h3>
     <ol class="sources-list">
       <li><b>Wikimedia Commons</b>: ${n(Object.keys(S.commons || {}).length)} reference maps, ${n(leads)} empire pictures and ${n(sitePics)} site photos, each credited with its author and licence where it appears (CC BY, CC BY-SA, CC0 or public domain).</li>
-      <li><b>Period photos and newspapers</b> (${n(media)} moments and events): Wikimedia Commons, the Library of Congress (Chronicling America), the US National Archives, UN Archives and the Internet Archive, each credited where shown.</li>
-      <li><b>Ruler portraits</b>: lead images of Wikipedia articles, matched through Wikidata, freely licensed on Wikimedia Commons and credited per portrait.</li>
+      <li><b>Period photos and newspapers</b> (${n(media)} moments): Wikimedia Commons, the Library of Congress (Chronicling America), the US National Archives, UN Archives and the Internet Archive, each credited where shown.</li>
+      <li><b>Ruler portraits</b> (${n(portraits)}): lead images of Wikipedia articles, matched through Wikidata, freely licensed on Wikimedia Commons and credited per portrait.</li>
     </ol>
 
     <h3 class="sec">Facts and writing</h3>
@@ -2006,7 +2008,7 @@ function sourcesHTML() { // the About page (#about; #sources still opens it)
     </ol>
 
     <h3 class="sec">Corrections</h3>
-    <p class="note">Borders are scholarly approximations. Spotted an error? Open an issue on ${L("https://github.com/dineshvaradharajan/atlas-of-empires", "GitHub")}; border errors are best reported to Cliopatria too, so every user of the dataset benefits.</p>
+    <p class="note">Borders are scholarly approximations. Spotted an error? Write to <a href="mailto:gvdinesh@gmail.com">gvdinesh@gmail.com</a> or open an issue on ${L("https://github.com/dineshvaradharajan/atlas-of-empires", "GitHub")}; border errors are best reported to Cliopatria too, so every user of the dataset benefits.</p>
     <p class="note">Keyboard: ← → move 10 years (Shift: 1 year) · [ ] previous/next chapter · Space play · Esc clear.</p>`;
 }
 
