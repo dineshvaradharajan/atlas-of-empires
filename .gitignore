@@ -7,3 +7,14 @@ data/clio/*.zip
 .DS_Store
 *.swp
 __pycache__/
+
+# Written by tools/seo.py (tools/deploy.sh runs it on each release)
+public/empires/
+public/wars/
+public/moments/
+public/eras/
+public/realms/
+public/sites/
+public/sitemap*.xml
+public/llms.txt
+public/404.html

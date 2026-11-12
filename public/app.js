@@ -1964,6 +1964,9 @@ function sourcesHTML() { // the About page (#about; #sources still opens it)
     <p class="prose">An interactive map of world history from 10,000 BCE to today: who ruled what in any year, how far every empire reached, the wars that redrew the map and the moments that changed it, with the sources behind each one.</p>
     <aside class="mapnote about-insp"><b>Inspiration</b><p>The idea for this atlas came from ${L("https://www.bharatrajya.com/", "Bharat Rajya")}, an interactive map of the kingdoms of Indian history. Thank you for showing what a history map can be.</p></aside>
 
+    <h3 class="sec">Read without the map</h3>
+    <p class="note">Every story is also a plain page: <a href="/empires/">empires</a>, <a href="/wars/">wars</a>, <a href="/moments/">moments</a>, <a href="/eras/">chapters</a>, <a href="/realms/">realms</a> and <a href="/sites/">ancient sites</a>.</p>
+
     <h3 class="sec">Licence</h3>
     <p class="note">The atlas's code and its own writing are released under the ${L("https://github.com/dineshvaradharajan/atlas-of-empires/blob/main/LICENSE", "MIT licence")}. The datasets and images below keep their own licences, credited here and wherever they appear.</p>
 

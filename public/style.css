@@ -656,3 +656,8 @@ body.sdock #dock { border-radius: 24px; }
   body.searching #tabbar a[data-tab="search"] { color: var(--ink); font-weight: 700; }
   #toast { top: auto; bottom: calc(var(--tab-h) + var(--sheet-h) + 84px); }
 }
+
+/* Without JavaScript: say what the atlas is and link to the plain pages (tools/seo.py) */
+.noscript { position: fixed; z-index: 50; left: var(--gut); right: var(--gut); top: var(--top); max-width: 520px; padding: 20px 24px; background: var(--bg); color: var(--ink-2); border-radius: 16px; box-shadow: var(--shadow); font: 15px/1.55 var(--sans); }
+.noscript h1 { margin: 0 0 8px; font: 800 24px/1.1 var(--display); color: var(--ink); }
+.noscript a { color: var(--ink); }

@@ -1,0 +1,74 @@
+/* The World Atlas: the plain reading pages (/empires/, /wars/, …) written by tools/seo.py. Same type and colours as the map. */
+:root {
+  --bg: #ffffff; --ink: #111111; --ink-2: #2b2b28; --ink-3: #6b6b66; --rule: #e6e6e1; --kick: #c8321e; --chip: #f0f0ec;
+  --display: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  --sans: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #121211; --ink: #f2f2ee; --ink-2: #d6d6d0; --ink-3: #9a9a93; --rule: #2a2a27; --kick: #ff6b55; --chip: #232321; }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--ink-2); font: 16px/1.6 var(--sans); }
+a { color: var(--ink); text-decoration-color: var(--rule); text-underline-offset: 3px; }
+a:hover { text-decoration-color: var(--kick); }
+
+.top, .foot { max-width: 1040px; margin: 0 auto; padding: 18px 20px; display: flex; flex-wrap: wrap; gap: 10px 24px; align-items: center; justify-content: space-between; }
+.top { border-bottom: 1px solid var(--rule); }
+.brand { display: inline-flex; gap: 8px; align-items: center; font: 800 14px/1 var(--display); letter-spacing: .08em; text-decoration: none; color: var(--ink); }
+.brand svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.6; }
+.top nav, .foot nav { display: flex; flex-wrap: wrap; gap: 4px 16px; font-size: 14px; }
+.top nav a, .foot nav a { text-decoration: none; color: var(--ink-3); }
+.top nav a:hover, .foot nav a:hover { color: var(--ink); }
+
+.page { max-width: 720px; margin: 0 auto; padding: 24px 20px 48px; }
+.crumbs { font-size: 13px; color: var(--ink-3); margin-bottom: 28px; }
+.crumbs a { color: var(--ink-3); }
+.kicker { margin: 0 0 6px; font: 600 12px/1.4 var(--sans); letter-spacing: .08em; text-transform: uppercase; color: var(--kick); }
+h1 { margin: 0 0 8px; font: 800 clamp(30px, 6vw, 44px)/1.08 var(--display); color: var(--ink); letter-spacing: -.01em; }
+h2 { margin: 40px 0 12px; font: 800 22px/1.2 var(--display); color: var(--ink); }
+h3 { margin: 22px 0 6px; font: 600 16px/1.3 var(--display); color: var(--ink); }
+.sub { margin: 0 0 16px; color: var(--ink-3); }
+.lede { font-size: 18px; line-height: 1.6; color: var(--ink-2); }
+.note { font-size: 14px; color: var(--ink-3); }
+p { margin: 0 0 14px; }
+
+.cta { margin: 24px 0 28px; }
+.btn { display: inline-block; padding: 12px 20px; border-radius: 999px; background: var(--ink); color: var(--bg); font-weight: 600; text-decoration: none; }
+.btn:hover { opacity: .88; }
+
+figure { margin: 28px 0; }
+figure img { display: block; width: 100%; height: auto; max-height: 460px; object-fit: cover; border-radius: 10px; background: var(--chip); }
+figcaption { margin-top: 8px; font-size: 13px; color: var(--ink-3); }
+figcaption a { color: var(--ink-3); }
+
+.facts { display: flex; flex-wrap: wrap; gap: 0 24px; margin: 24px 0; border-top: 1px solid var(--rule); }
+.facts div { flex: 1 1 200px; padding: 12px 0; border-bottom: 1px solid var(--rule); }
+.facts dt { font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--ink-3); }
+.facts dd { margin: 2px 0 0; color: var(--ink); font-weight: 600; }
+
+ul.links, ul.rulers, .sources ul { list-style: none; margin: 0; padding: 0; }
+ul.links li { padding: 7px 0; border-bottom: 1px solid var(--rule); }
+ul.links li span, ul.rulers li span { color: var(--ink-3); font-size: 14px; }
+ul.links.cols { columns: 2 280px; column-gap: 32px; }
+ul.links.cols li { break-inside: avoid; }
+ul.rulers li { padding: 10px 0; border-bottom: 1px solid var(--rule); }
+ul.rulers li p { margin: 2px 0 0; font-size: 15px; }
+.sides { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 0 32px; }
+
+ol.timeline { list-style: none; margin: 0; padding: 0; }
+ol.timeline li { display: grid; grid-template-columns: 112px 1fr; gap: 16px; padding: 12px 0; border-bottom: 1px solid var(--rule); }
+ol.timeline time { font-size: 14px; font-weight: 600; color: var(--kick); }
+ol.timeline b { color: var(--ink); }
+ol.timeline p { margin: 4px 0 0; font-size: 15px; }
+@media (max-width: 520px) { ol.timeline li { grid-template-columns: 1fr; gap: 2px; } }
+
+table.tl { width: 100%; border-collapse: collapse; font-size: 15px; }
+table.tl th, table.tl td { text-align: left; padding: 6px 0; border-bottom: 1px solid var(--rule); }
+table.tl th { font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--ink-3); font-weight: 600; }
+
+.sources li { padding: 4px 0; font-size: 14px; }
+.foot { border-top: 1px solid var(--rule); font-size: 13px; color: var(--ink-3); flex-direction: column; align-items: flex-start; }
+.foot p { margin: 0; max-width: 720px; }
+.foot a { color: var(--ink-3); }

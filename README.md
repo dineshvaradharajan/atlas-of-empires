@@ -32,6 +32,7 @@ python3 -I tools/build_modern.py <ne_10m_admin_0_countries.geojson>  # Natural E
 python3 -I tools/placeindex.py   # border chunks -> public/data/place/ ("this place through time")
 python3 -I tools/content.py      # content/eras + content/empires -> public/data/content.json, links to Cliopatria
 python3 -I tools/commons.py      # Wikimedia Commons reference maps -> public/data/commons.json
+python3 -I tools/seo.py          # plain HTML pages, sitemaps and llms.txt for search engines (deploy.sh runs it; not committed)
 ```
 
 Raw sources live in `data/` (`data/geo/` holds historical-basemaps, `data/clio/` holds Cliopatria). Natural Earth files
