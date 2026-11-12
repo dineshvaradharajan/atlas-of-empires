@@ -65,7 +65,7 @@ ol.timeline p { margin: 4px 0 0; font-size: 15px; }
 @media (max-width: 520px) { ol.timeline li { grid-template-columns: 1fr; gap: 2px; } }
 
 table.tl { width: 100%; border-collapse: collapse; font-size: 15px; }
-table.tl th, table.tl td { text-align: left; padding: 6px 0; border-bottom: 1px solid var(--rule); }
+table.tl th, table.tl td { text-align: left; vertical-align: top; padding: 6px 12px 6px 0; border-bottom: 1px solid var(--rule); }
 table.tl th { font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--ink-3); font-weight: 600; }
 
 .sources li { padding: 4px 0; font-size: 14px; }

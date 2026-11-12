@@ -28,7 +28,7 @@ SITE = "https://www.worldatlas.site"
 NAME = "The World Atlas"
 TAGLINE = "An interactive map of world history from 10,000 BCE to today"
 SECTIONS = {"empires": "Empires", "wars": "Wars", "moments": "Moments", "eras": "Chapters", "realms": "Realms", "sites": "Ancient sites"}
-OUTPUTS = list(SECTIONS) + ["sitemap.xml", "llms.txt", "404.html"]  # plus sitemap-<section>.xml
+OUTPUTS = list(SECTIONS) + ["about", "sitemap.xml", "llms.txt", "404.html"]  # plus sitemap-<section>.xml
 REGIONS = {"southern-africa": "Southern Africa", "northern-africa": "Northern Africa", "europe": "Europe",
            "middle-east-south-asia": "Middle East & South Asia", "north-central-asia": "Northern & Central Asia",
            "east-asia": "East Asia", "southeast-asia": "Southeast Asia", "northern-north-america": "Northern North America",
@@ -159,7 +159,7 @@ def page(path, title, description, body, crumbs=(), image=None, image_alt="", js
 {f'<nav class="crumbs" aria-label="Breadcrumb">{crumbs_html}</nav>' if crumbs_html else ''}
 {body}
 </main>
-<footer class="foot"><p><a href="/">{NAME}</a>: an interactive map of world history from 10,000 BCE to today. Borders from <a href="https://github.com/Seshat-Global-History-Databank/cliopatria">Cliopatria</a> (CC BY 4.0) and <a href="https://www.naturalearthdata.com/">Natural Earth</a>; text written for the atlas (MIT). <a href="/#about">About and sources</a>.</p><nav aria-label="Browse">{nav}</nav></footer>
+<footer class="foot"><p><a href="/">{NAME}</a>: an interactive map of world history from 10,000 BCE to today. Borders from <a href="https://github.com/Seshat-Global-History-Databank/cliopatria">Cliopatria</a> (CC BY 4.0) and <a href="https://www.naturalearthdata.com/">Natural Earth</a>; text written for the atlas (MIT). <a href="/about/">About and sources</a>.</p><nav aria-label="Browse">{nav}</nav></footer>
 </body>
 </html>
 """
@@ -758,9 +758,65 @@ def main():
                f"{len(sites)} ancient sites, from rock art 45,000 years old to the cities of the first empires: what they were, how they are dated and where they stand.",
                [("", [(f"/sites/{s['id']}/", s["name"], s["dateLabel"]) for s in sites])])
 
+    # ---- about
+    def L(url, text):
+        return f'<a href="{esc(url)}" rel="noopener">{esc(text)}</a>'
+    src_rows = [
+        ("State borders", L("https://github.com/Seshat-Global-History-Databank/cliopatria", "Cliopatria") + ", Seshat Global History Databank; paper in <i>Scientific Data</i> (2025), " + L("https://doi.org/10.1038/s41597-025-04516-9", "doi:10.1038/s41597-025-04516-9") + ". Simplified for the web.", "CC BY 4.0"),
+        ("Borders from 1992 to today, and island and micro states before 1992", L("https://www.naturalearthdata.com/", "Natural Earth") + " 1:10m countries, in its default view of disputed places, with the border changes since 1992 dated by hand.", "Public domain"),
+        ("Peoples and other polities", L("https://github.com/aourednik/historical-basemaps", "historical-basemaps") + " by André Ourednik.", "GPL-3.0"),
+        ("Reconstructions, archaeological cultures and ancient sites", "Compiled for the atlas from the publications cited on each page.", "MIT"),
+        ("Reference maps, pictures and ruler portraits", L("https://commons.wikimedia.org/", "Wikimedia Commons") + ", the Library of Congress, the US National Archives, UN Archives and the Internet Archive; each credited where it appears.", "Per item"),
+        ("Rivers, lakes, sea names and disputed areas", L("https://www.naturalearthdata.com/", "Natural Earth") + " 1:50m and 1:10m.", "Public domain"),
+        ("Terrain shading and the ice-age coastline", L("https://www.ngdc.noaa.gov/mgg/global/relief/ETOPO5/TOPO/ETOPO5/", "NOAA ETOPO5") + "; ice-age sea level from Lambeck et al. 2014, <i>PNAS</i> 111:15296 (" + L("https://doi.org/10.1073/pnas.1411762111", "doi:10.1073/pnas.1411762111") + ").", "Public domain"),
+        ("Ice sheets", "NADI-1, Dalton et al. 2023 (" + L("https://zenodo.org/records/8161764", "Zenodo") + "); DATED-1, Hughes et al. 2016 (" + L("https://doi.pangaea.de/10.1594/PANGAEA.848117", "PANGAEA") + ").", "CC BY 4.0 / CC BY 3.0"),
+        ("Narrative text", "Written for the atlas; every empire, war, moment and chapter lists its sources.", "MIT"),
+    ]
+    n_cult = sum(1 for lst in recon.values() if lst[0][0].get("kind") == "cultures")
+    path = "/about/"
+    desc = clip(f"About {NAME}: an interactive map of world history from 10,000 BCE to today, built on the Cliopatria border data, with {len(emp_pages)} empires, {len(wars)} wars, {len(moments)} moments and {len(eras)} chapters, each with its sources.")
+    body = f'<p class="kicker">About</p><h1>{NAME}</h1>'
+    body += (f'<p class="lede">{esc(TAGLINE)}: drag the timeline to any year and see who ruled what, how far every empire reached, '
+             'the wars that redrew the map and the moments that changed it.</p>')
+    body += cta("/", "Open the atlas")
+    body += facts([("Empires", f'<a href="/empires/">{len(emp_pages)}</a>'), ("Wars", f'<a href="/wars/">{len(wars)}</a>'),
+                   ("Moments", f'<a href="/moments/">{len(moments)}</a>'), ("Chapters", f'<a href="/eras/">{len(eras)}</a>'),
+                   ("Realms on the map", f'<a href="/realms/">{len(R):,}</a>'), ("Ancient sites", f'<a href="/sites/">{len(sites)}</a>')])
+    body += ('<section><h2>What it shows</h2>'
+             '<p><b>Any year, sourced borders.</b> State borders come from Cliopatria, a peer-reviewed dataset of more than 1,600 polities with '
+             'year-by-year territories from 3400 BCE, and from Natural Earth after 1992. Where the data leaves states out or contradicts '
+             'scholarship, the atlas adds reviewed corrections and reconstructions, each with its sources.</p>'
+             '<p><b>Who ruled what.</b> Colonies and member states share their empire\'s colour. Click a realm to see its territory through '
+             'time, its greatest extent, its rulers and its story.</p>'
+             f'<p><b>Stories.</b> {len(journeys)} empire stories follow an empire reign by reign; {len(wars)} wars are told event by event with '
+             f'their front lines; {len(moments)} moments mark the turning points of history; {len(eras)} chapters describe the whole world, '
+             'region by region, at moments from 3000 BCE to today.</p>'
+             f'<p><b>Before writing.</b> From 10,000 BCE the map shows the ice-age coastline, {n_cult} archaeological cultures and '
+             f'{len(sites)} ancient sites, marked as known from archaeology.</p>'
+             '<p>All historical borders are scholarly approximations. Areas with no recorded state are grey; peoples and polities missing from '
+             'the border data appear as an approximate hatched layer.</p></section>')
+    body += ('<section><h2>Sources and licences</h2><table class="tl"><thead><tr><th>What</th><th>Source</th><th>Licence</th></tr></thead><tbody>'
+             + "".join(f"<tr><td>{esc(w)}</td><td>{src}</td><td>{esc(lic)}</td></tr>" for w, src, lic in src_rows) + "</tbody></table>"
+             '<p class="note">The atlas\'s code and its own writing are released under the '
+             + L("https://github.com/dineshvaradharajan/atlas-of-empires/blob/main/LICENSE", "MIT licence")
+             + '. Libraries and fonts: D3.js and earcut (ISC); Archivo and Inter (SIL OFL).</p></section>')
+    body += ('<section><h2>Inspiration</h2><p>The idea for this atlas came from ' + L("https://www.bharatrajya.com/", "Bharat Rajya")
+             + ', an interactive map of the kingdoms of Indian history.</p></section>')
+    body += ('<section><h2>Corrections</h2><p>Found an error? The source code and data are on '
+             + L("https://github.com/dineshvaradharajan/atlas-of-empires", "GitHub")
+             + '. Errors in the Cliopatria borders are best reported to '
+             + L("https://github.com/Seshat-Global-History-Databank/cliopatria", "Cliopatria")
+             + ' directly, so that every user of the dataset benefits.</p></section>')
+    ld = {"@context": "https://schema.org", "@type": "AboutPage", "name": f"About {NAME}", "url": SITE + path, "description": desc,
+          "isPartOf": {"@type": "WebSite", "name": NAME, "url": SITE + "/"},
+          "mainEntity": {"@type": "WebSite", "name": NAME, "url": SITE + "/", "image": DEFAULT_IMAGE,
+                         "license": "https://github.com/dineshvaradharajan/atlas-of-empires/blob/main/LICENSE"}}
+    pages["pages"].append((path, f"About {NAME}", desc))
+    out.append((path, page(path, f"About {NAME}: sources and licences", desc, body, [("About", path)], jsonld=[ld], kind="website")))
+
     # ---- 404 (a real "not found" also stops Cloudflare Pages serving the map for every unknown path)
     body404 = ('<h1>Page not found</h1><p class="lede">There is no page at this address. The map and every story start from the home page.</p>'
-               + cta("/", "Open the atlas") + links([(f"/{k}/", v, None) for k, v in SECTIONS.items()], "Browse"))
+               + cta("/", "Open the atlas") + links([(f"/{k}/", v, None) for k, v in SECTIONS.items()] + [("/about/", "About", None)], "Browse"))
     out.append(("/404.html", page("/404.html", f"Page not found | {NAME}", "This page isn't in the atlas.", body404, kind="website")
                 .replace('<link rel="canonical" href="https://www.worldatlas.site/404.html">\n', '<meta name="robots" content="noindex">\n')))
 
@@ -825,7 +881,8 @@ def main():
     sec("Empires", "empires")
     sec("Wars", "wars")
     sec("Moments that changed the world", "moments")
-    L += ["## Optional", "",
+    L += ["## About", "", f"- [About {NAME}]({SITE}/about/): what the atlas shows, its sources and licences", "",
+          "## Optional", "",
           f"- [Every realm on the map]({SITE}/realms/): {len(R):,} states, countries and archaeological cultures with their territory through time",
           f"- [Ancient sites]({SITE}/sites/): {len(sites)} archaeological sites",
           f"- [Sitemap]({SITE}/sitemap.xml)",
