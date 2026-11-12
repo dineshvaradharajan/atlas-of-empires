@@ -8,7 +8,8 @@
   "Early Pandyas",
   "Early Cheras"
  ],
- "summary": "Sangam poetry (the Purananuru, Akananuru, Ten Idylls and Patirruppattu) describes a Tamil country running from the Venkatam hills to Cape Kumari. It was shared by three 'crowned kings' and a ring of Velir chiefs in the hills between them. The Cholas held the Kaveri delta, the Pandyas the Vaigai and Tamirabarani basins, and the Cheras the Malabar coast and later Kongu. Ashoka's edicts, the Hathigumpha inscription, the Periplus, Pliny, Ptolemy, Tamil-Brahmi inscriptions and digs at Keezhadi, Kodumanal, Arikamedu and Pattanam confirm the kingdoms, capitals and ports. No source draws a frontier, though: these borders are inferred from where named places, rivers and hills cluster, and they are approximate. The changes over time follow Nilakanta Sastri's dating, which puts most named kings in c. 100–250 CE. Other scholars place them a century or more earlier.",
+ "summary": "Sangam poetry (the Purananuru, Akananuru, Ten Idylls and Patirruppattu) describes a Tamil country running from the Venkatam hills to Cape Kumari. It was shared by three 'crowned kings' and a ring of Velir chiefs in the hills between them. The Cholas held the Kaveri delta, the Pandyas the Vaigai and Tamirabarani basins, and the Cheras the Malabar coast and later Kongu. Ashoka's edicts, the Hathigumpha inscription, the Periplus, Pliny, Ptolemy, Tamil-Brahmi inscriptions and digs at Keezhadi, Kodumanal, Arikamedu and Pattanam confirm the kingdoms, capitals and ports. No source draws a frontier, though. The changes over time follow Nilakanta Sastri's dating, which puts most named kings in c. 100–250 CE. Other scholars place them a century or more earlier.",
+ "dataNote": "These borders are inferred from where named places, rivers and hills cluster, and they are approximate.",
  "regions": [
   {
    "name": "Chola kingdom (Chola Nadu)",
@@ -116,7 +117,8 @@
     "Arikamedu (Poduke of the Periplus and Ptolemy, probably)"
    ],
    "attested": "Pattinappalai (the Aruvalar); Ptolemy's 'Aruvarnoi' (as read by Kanakasabhai); Arikamedu excavations (Wheeler 1945; Begley 1989–92)",
-   "note": "Sastri places the Aruvalar's country in the lower Pennai valley, north of the Kaveri delta. Kanakasabhai uses Aruva Nadu more widely, for the whole country around Kanchi, so this region is grouped with Tondai Nadu. Its southern edge on the Vellar and its northern edge near Marakkanam are approximate.",
+   "note": "Sastri places the Aruvalar's country in the lower Pennai valley, north of the Kaveri delta. Kanakasabhai uses Aruva Nadu more widely, for the whole country around Kanchi.",
+   "dataNote": "This region is grouped with Tondai Nadu because Kanakasabhai uses Aruva Nadu for the whole country around Kanchi. Its southern edge on the Vellar and its northern edge near Marakkanam are approximate.",
    "coords": [
     [
      79.4,
@@ -349,7 +351,7 @@
    "capital": "Kovalur (Tirukkoyilur) on the Pennai; hill fort of Mullur",
    "ports": [],
    "attested": "Purananuru (Kapilar's songs on Kari); Akananuru 208 (Kari kills Ori); Jambai Tamil-Brahmi inscription of Adiyaman Anji, near Tirukkoyilur (1st century CE)",
-   "note": "This region covers the middle Pennai valley between the Chola delta and Tondai Nadu. Kanakasabhai treats the Malaiyaman as a Chola vassal: when Kari took the crown, the Cholas invaded. Adiyaman also stormed Kovalur, and his inscription at Jambai shows how much the chiefs' territories overlapped.",
+   "note": "Malaiyaman Nadu lay in the middle Pennai valley between the Chola delta and Tondai Nadu. Kanakasabhai treats the Malaiyaman as a Chola vassal: when Kari took the crown, the Cholas invaded. Adiyaman also stormed Kovalur, and his inscription at Jambai shows how much the chiefs' territories overlapped.",
    "coords": [
     [
      78.85,
@@ -420,7 +422,8 @@
    "capital": "Chenkanma (Chengam), in the valley of the Cheyyar",
    "ports": [],
    "attested": "Malaipadukadam of Perunkausikanar (Kanakasabhai's reading)",
-   "note": "This is a different chief from Nannan of Ezhimalai. Kanakasabhai places him in the Chengam valley of the Cheyyar. Others put the Malaipadukadam's Nannan in Tondai Nadu, which is the same general area. The boundary is a rough box around the Javadi hills and the Chengam pass.",
+   "note": "This is a different chief from Nannan of Ezhimalai. Kanakasabhai places him in the Chengam valley of the Cheyyar. Others put the Malaipadukadam's Nannan in Tondai Nadu, which is the same general area.",
+   "dataNote": "The boundary is a rough box around the Javadi hills and the Chengam pass.",
    "coords": [
     [
      78.55,
@@ -1005,7 +1008,8 @@
    "capital": "Avinankudi / Pothini (Palani)",
    "ports": [],
    "attested": "Purananuru (songs on Pekan); Tirumurugarruppadai (Avinankudi)",
-   "note": "Identifying Pekan's country with Palani rests on tradition, linking Avinankudi and Pothini with Palani. The sources consulted support this only weakly. The boundary is drawn around the Palani hills.",
+   "note": "Identifying Pekan's country with Palani rests on tradition, linking Avinankudi and Pothini with Palani. The sources consulted support this only weakly.",
+   "dataNote": "The boundary is drawn around the Palani hills.",
    "coords": [
     [
      77.05,
@@ -1147,7 +1151,8 @@
    "capital": "Parambu hill (Piranmalai / Kodungunram)",
    "ports": [],
    "attested": "Purananuru c. 105–120 (Kapilar's songs and the lament of Pari's daughters)",
-   "note": "Sastri places Parambu at Piranmalai, in the Pandya country. The poems give it 300 villages around a fortified hill. The boundary is a small notional area.",
+   "note": "Sastri places Parambu at Piranmalai, in the Pandya country. The poems give it 300 villages around a fortified hill.",
+   "dataNote": "The boundary is a small notional area.",
    "coords": [
     [
      78.35,
@@ -1213,7 +1218,8 @@
    "capital": "Parambu hill (Piranmalai)",
    "ports": [],
    "attested": "Purananuru (siege by the three crowned kings)",
-   "note": "All three kings besieged Parambu, and no source says who kept it. It is assigned to the Pandyas only because Piranmalai lies in Pandya country.",
+   "note": "All three kings besieged Parambu, and no source says who kept it.",
+   "dataNote": "It is assigned to the Pandyas only because Piranmalai lies in Pandya country.",
    "coords": [
     [
      78.35,
@@ -1295,7 +1301,8 @@
     "Saliyur (unidentified)"
    ],
    "attested": "Ashoka RE II and XIII ('Pandyas'); Hathigumpha inscription of Kharavela (pearls from the Pandya); Maduraikkanchi; Pliny ('Pandion' at Madura); Periplus (Colchi, Nelcynda); Ptolemy",
-   "note": "The core is the Vaigai and Tamirabarani basins, bounded on the west by the crest of the Ghats at Podiyil. The northern line, against Palani, Kongu and the Pudukkottai chiefs, is a guess. Nedunjeliyan's annexation of the Milalai and Mutturu districts (Sastri) is not drawn.",
+   "note": "The core is the Vaigai and Tamirabarani basins, bounded on the west by the crest of the Ghats at Podiyil. Nedunjeliyan annexed the Milalai and Mutturu districts (Sastri).",
+   "dataNote": "The northern line, against Palani, Kongu and the Pudukkottai chiefs, is a guess. Nedunjeliyan's annexation of the Milalai and Mutturu districts (Sastri) is not drawn.",
    "coords": [
     [
      77.2,
@@ -1409,7 +1416,8 @@
    "capital": "unknown",
    "ports": [],
    "attested": "Kanakasabhai counts Kuttanad among the five Chera nadus (based on later sources)",
-   "note": "No early evidence names the ruler of the backwater coast south of Muziris. It is shaded Chera only by default.",
+   "note": "No early evidence names the ruler of the backwater coast south of Muziris.",
+   "dataNote": "It is shaded Chera only by default.",
    "coords": [
     [
      75.9,
@@ -1638,7 +1646,7 @@
     "Komaria (Cape Kumari)"
    ],
    "attested": "Purananuru 127–136 (Ay); 137–140 (Nanjil Nadu); Ptolemy's 'Aioi', with Cape Komaria and Mount Bettigo",
-   "note": "This region covers the southern end of the Ghats and the coast to Kanyakumari, including Porunan's Nanjil Nadu. The Periplus instead puts the coast from Comari eastward under the Pandyas, so the line near the cape is contested.",
+   "note": "The chiefdom covered the southern end of the Ghats and the coast to Kanyakumari, including Porunan's Nanjil Nadu. The Periplus instead puts the coast from Comari eastward under the Pandyas, so the line near the cape is contested.",
    "coords": [
     [
      76.2,

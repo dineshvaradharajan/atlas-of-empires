@@ -3,7 +3,8 @@
  "title": "South Asian kingdoms, 1550–1857",
  "from": 1550,
  "to": 1857,
- "summary": "From the fall of Vijayanagara's capital to the Revolt of 1857, the map's border data (Cliopatria) draws the Mughal, Maratha, Durrani and British realms and a few successor states, but leaves out many kingdoms that ruled themselves. This layer adds them. In the south: Travancore, Cochin, the Zamorin's Calicut, the Keladi Nayakas, the last Aravidu kings of Vijayanagara, the Nayaks of Gingee, and Mysore redrawn through the Wodeyar, Hyder Ali and Tipu Sultan periods. In the Deccan and centre: the Gond kingdoms of Garha-Mandla, Deogarh and Chanda, Bastar, Ratanpur, Hyderabad after 1799, Nagpur, Satara, and the Holkar, Scindia and Gaekwad states after 1818. In the north: the Rajput kingdoms and Jat Bharatpur after the Mughal collapse, Rohilkhand, the reduced Awadh of 1803–56, Kumaon, Garhwal, Ladakh and Sikkim. In the east: the Ahom, Koch, Kachari, Jaintia, Manipur and Tripura kingdoms. In the west: Kutch and the Khanate of Kalat. Outlines are traced from the Imperial Gazetteer Atlas historical plates (1765, 1805, 1837, 1857) where those show a state, and otherwise reconstructed from rivers, hill lines and the later princely-state borders; they are approximate. States that continued as princely states end in 1857, where the princely-states layer begins.",
+ "summary": "From the fall of Vijayanagara's capital to the Revolt of 1857, beside the Mughal, Maratha, Durrani and British realms and a few successor states, many kingdoms ruled themselves. In the south: Travancore, Cochin, the Zamorin's Calicut, the Keladi Nayakas, the last Aravidu kings of Vijayanagara, the Nayaks of Gingee, and Mysore through the Wodeyar, Hyder Ali and Tipu Sultan periods. In the Deccan and centre: the Gond kingdoms of Garha-Mandla, Deogarh and Chanda, Bastar, Ratanpur, Hyderabad after 1799, Nagpur, Satara, and the Holkar, Scindia and Gaekwad states after 1818. In the north: the Rajput kingdoms and Jat Bharatpur after the Mughal collapse, Rohilkhand, the reduced Awadh of 1803–56, Kumaon, Garhwal, Ladakh and Sikkim. In the east: the Ahom, Koch, Kachari, Jaintia, Manipur and Tripura kingdoms. In the west: Kutch and the Khanate of Kalat.",
+ "dataNote": "The map's border data (Cliopatria) draws the Mughal, Maratha, Durrani and British realms and a few successor states, but leaves out many kingdoms that ruled themselves. This layer adds them. Mysore is redrawn through the Wodeyar, Hyder Ali and Tipu Sultan periods. Outlines are traced from the Imperial Gazetteer Atlas historical plates (1765, 1805, 1837, 1857) where those show a state, and otherwise reconstructed from rivers, hill lines and the later princely-state borders; they are approximate. States that continued as princely states end in 1857, where the princely-states layer begins.",
  "replaces": [
   "Kingdom of Mysore"
  ],
@@ -25,7 +26,8 @@
      "when": "1724–1729"
     }
    ],
-   "note": "Venad, the kingdom from which Travancore grew, held the south-western tip of India: Thiruvananthapuram and Kanyakumari, with Attingal. Kollam (Desinganad), Kayamkulam and the lands further north were separate chiefdoms. Its 16th–17th century rulers are poorly documented; the outline follows the Wikipedia description of Venad's core districts, and the northern edge near Varkala is a convention. Sibling layers may draw Venad before 1550.",
+   "note": "Venad, the kingdom from which Travancore grew, held the south-western tip of India: Thiruvananthapuram and Kanyakumari, with Attingal. Kollam (Desinganad), Kayamkulam and the lands further north were separate chiefdoms. Its 16th–17th century rulers are poorly documented.",
+   "dataNote": "The outline follows the Wikipedia description of Venad's core districts, and the northern edge near Varkala is a convention. Sibling layers may draw Venad before 1550.",
    "coords": [
     [
      77.75,
@@ -94,7 +96,8 @@
      "when": "1758–1798"
     }
    ],
-   "note": "Marthanda Varma (r. 1729–1758) turned Venad into Travancore: he annexed Attingal, Kollam/Desinganad (1742) and Kayamkulam (1746) and beat the Dutch at Colachel (1741). One outline is drawn for this whole phase of conquest, with its northern edge just beyond Kayamkulam, so the 1730s are drawn somewhat too large.",
+   "note": "Marthanda Varma (r. 1729–1758) turned Venad into Travancore: he annexed Attingal, Kollam/Desinganad (1742) and Kayamkulam (1746) and beat the Dutch at Colachel (1741).",
+   "dataNote": "One outline is drawn for this whole phase of conquest, with its northern edge just beyond Kayamkulam, so the 1730s are drawn somewhat too large.",
    "coords": [
     [
      77.75,
@@ -191,7 +194,8 @@
      "when": "1846–1860"
     }
    ],
-   "note": "After taking Ambalappuzha, Thekkumkur and Vadakkumkur (1749–54; Treaty of Mavelikkara with Cochin, 1753), Travancore reached roughly the extent it kept until 1949. Plates 28 and 29 of the Imperial Gazetteer Atlas show it this way in 1765, 1805, 1837 and 1857. It accepted a subsidiary alliance with the East India Company (1795, 1805). Drawn here to 1857; the princely-states layer takes over in 1858. The border with Cochin around Kochi was a patchwork of enclaves and is simplified here.",
+   "note": "After taking Ambalappuzha, Thekkumkur and Vadakkumkur (1749–54; Treaty of Mavelikkara with Cochin, 1753), Travancore reached roughly the extent it kept until 1949. It accepted a subsidiary alliance with the East India Company (1795, 1805). The border with Cochin around Kochi was a patchwork of enclaves.",
+   "dataNote": "Plates 28 and 29 of the Imperial Gazetteer Atlas show it this way in 1765, 1805, 1837 and 1857. Drawn here to 1857; the princely-states layer takes over in 1858. The border with Cochin is simplified here.",
    "coords": [
     [
      77.75,
@@ -308,7 +312,8 @@
      "when": "1828–1837"
     }
    ],
-   "note": "Cochin was a Portuguese ally (1503–1663) and then a Dutch protectorate (1663–1795). The Zamorin occupied its northern districts in 1756–62, Mysore exacted tribute from 1774, and it became a British subsidiary state in 1791/1809. The outline follows the Cochin State of plates 28–29 (1805–1857), which matches the 1909 state. Its 16th–17th-century borders with the Zamorin and with the Travancore chiefdoms moved often and are not drawn. Drawn to 1857; the princely-states layer covers 1858 onwards.",
+   "note": "Cochin was a Portuguese ally (1503–1663) and then a Dutch protectorate (1663–1795). The Zamorin occupied its northern districts in 1756–62, Mysore exacted tribute from 1774, and it became a British subsidiary state in 1791/1809. Its 16th–17th-century borders with the Zamorin and with the Travancore chiefdoms moved often.",
+   "dataNote": "The outline follows the Cochin State of plates 28–29 (1805–1857), which matches the 1909 state. Its 16th–17th-century borders with the Zamorin and with the Travancore chiefdoms are not drawn. Drawn to 1857; the princely-states layer covers 1858 onwards.",
    "coords": [
     [
      76.22,
@@ -389,7 +394,8 @@
      "when": "1766"
     }
    ],
-   "note": "The Zamorins held south Malabar, from the Korapuzha river south to Chettuva, inland through Ernad and Nilambur, and fought Portugal and Cochin for a century. Palakkad (Palghat) under its own raja, and the northern Kolathiri lands, are outside the outline. Hyder Ali conquered Calicut in 1766. Zamorins took personal names that are rarely recorded, so the rulers listed are by event. The inland edge is approximate.",
+   "note": "The Zamorins held south Malabar, from the Korapuzha river south to Chettuva, inland through Ernad and Nilambur, and fought Portugal and Cochin for a century. Palakkad (Palghat), under its own raja, and the northern Kolathiri lands were separate. Hyder Ali conquered Calicut in 1766. Zamorins took personal names that are rarely recorded.",
+   "dataNote": "Palakkad (Palghat) and the northern Kolathiri lands are outside the outline. The rulers listed are by event. The inland edge is approximate.",
    "coords": [
     [
      76.05,
@@ -462,7 +468,8 @@
      "when": "1757–1763"
     }
    ],
-   "note": "The Keladi Nayakas were Vijayanagara governors who became independent after Talikota (1565). They held Shimoga and Chikmagalur on the plateau and the Canara coast from about Kasaragod to Honnavar. Shivappa Nayaka drove the Portuguese from the Canara ports. Hyder Ali took Bidanur in 1763. The northern edge (Sonda, Banavasi) and the line against Mysore and Coorg are approximate.",
+   "note": "The Keladi Nayakas were Vijayanagara governors who became independent after Talikota (1565). They held Shimoga and Chikmagalur on the plateau and the Canara coast from about Kasaragod to Honnavar. Shivappa Nayaka drove the Portuguese from the Canara ports. Hyder Ali took Bidanur in 1763.",
+   "dataNote": "The northern edge (Sonda, Banavasi) and the line against Mysore and Coorg are approximate.",
    "coords": [
     [
      74.6,
@@ -535,7 +542,8 @@
      "when": "1578–1617"
     }
    ],
-   "note": "This is the small Wodeyar principality around Mysore while it was a Vijayanagara feudatory. Raja Wodeyar took Srirangapatna from the Vijayanagara viceroy in 1610. In this period the layer replaces the map's Cliopatria 'Kingdom of Mysore' polygons with its own outlines (1572–1857).",
+   "note": "This is the small Wodeyar principality around Mysore while it was a Vijayanagara feudatory. Raja Wodeyar took Srirangapatna from the Vijayanagara viceroy in 1610.",
+   "dataNote": "In this period the layer replaces the map's Cliopatria 'Kingdom of Mysore' polygons with its own outlines (1572–1857).",
    "coords": [
     [
      76.4,
@@ -584,7 +592,8 @@
      "when": "1638–1659"
     }
    ],
-   "note": "After taking Srirangapatna in 1610, the Wodeyars expanded over Mandya, southern Hassan, Chamarajanagar and the Kaveri country under Raja Wodeyar and Kanthirava Narasaraja I. The edges are approximate.",
+   "note": "After taking Srirangapatna in 1610, the Wodeyars expanded over Mandya, southern Hassan, Chamarajanagar and the Kaveri country under Raja Wodeyar and Kanthirava Narasaraja I.",
+   "dataNote": "The edges are approximate.",
    "coords": [
     [
      76.1,
@@ -653,7 +662,8 @@
      "when": "1734–1766"
     }
    ],
-   "note": "Chikka Devaraja Wodeyar (r. 1673–1704) brought Mysore close to its later core: Hassan, Tumkur and Bangalore (bought from the Mughals in 1689), with Baramahal and Salem on the eastern edge. The outline follows the Cliopatria extent for 1673–1798 with Coorg and Keladi left out. From 1734 the Dalavayi brothers, and from 1761 Hyder Ali, held real power.",
+   "note": "Chikka Devaraja Wodeyar (r. 1673–1704) brought Mysore close to its later core: Hassan, Tumkur and Bangalore (bought from the Mughals in 1689), with Baramahal and Salem on the eastern edge. From 1734 the Dalavayi brothers, and from 1761 Hyder Ali, held real power.",
+   "dataNote": "The outline follows the Cliopatria extent for 1673–1798 with Coorg and Keladi left out.",
    "coords": [
     [
      75.9,
@@ -730,7 +740,8 @@
      "when": "1761–1782"
     }
    ],
-   "note": "Hyder Ali took Bidanur (the Keladi kingdom) and the Canara coast in 1763 and Sonda in 1764. Sira was also taken in the 1760s, but its exact extent is not drawn.",
+   "note": "Hyder Ali took Bidanur (the Keladi kingdom) and the Canara coast in 1763 and Sonda in 1764. Sira was also taken in the 1760s.",
+   "dataNote": "Sira was also taken in the 1760s, but its exact extent is not drawn.",
    "coords": [
     [
      74.6,
@@ -847,7 +858,8 @@
      "when": "1766–1770"
     }
    ],
-   "note": "Hyder conquered Malabar in 1766 (Calicut, the Kolathiri lands, Palakkad), Coorg in 1773, and held Coimbatore, Dindigul and Baramahal. Cochin paid tribute but is drawn separately; Travancore stayed independent. Chitradurga (taken 1779) lies outside this outline.",
+   "note": "Hyder conquered Malabar in 1766 (Calicut, the Kolathiri lands, Palakkad), Coorg in 1773, and held Coimbatore, Dindigul and Baramahal. Cochin paid tribute; Travancore stayed independent. Chitradurga was taken in 1779.",
+   "dataNote": "Cochin is drawn separately. Chitradurga (taken 1779) lies outside this outline.",
    "coords": [
     [
      75.85,
@@ -1004,7 +1016,8 @@
      "when": "1782–1799"
     }
    ],
-   "note": "The kingdom was at its largest after Hyder took Bellary and Gooty (1775–76) and Chitradurga, Cuddapah and the Savanur country (1776–79). The Treaty of Gajendragad (1787) returned some northern districts to the Marathas. The northern edge is a mainstream simplification along the Tungabhadra and Krishna watershed. Plate 28 (1765) and contemporary accounts were used to check it.",
+   "note": "The kingdom was at its largest after Hyder took Bellary and Gooty (1775–76) and Chitradurga, Cuddapah and the Savanur country (1776–79). The Treaty of Gajendragad (1787) returned some northern districts to the Marathas.",
+   "dataNote": "The northern edge is a mainstream simplification along the Tungabhadra and Krishna watershed. Plate 28 (1765) and contemporary accounts were used to check it.",
    "coords": [
     [
      75.85,
@@ -1161,7 +1174,8 @@
      "when": "1782–1799"
     }
    ],
-   "note": "The Treaty of Seringapatam (1792) took half of Tipu's lands. Malabar, Coorg, Dindigul and Salem–Baramahal went to the Company, and the lands north of the Tungabhadra to the Nizam and the Marathas. Tipu kept the plateau, Coimbatore and Canara. He died when Srirangapatna fell on 4 May 1799. Whether Wayanad stayed with Mysore is disputed; it is left out here.",
+   "note": "The Treaty of Seringapatam (1792) took half of Tipu's lands. Malabar, Coorg, Dindigul and Salem–Baramahal went to the Company, and the lands north of the Tungabhadra to the Nizam and the Marathas. Tipu kept the plateau, Coimbatore and Canara. He died when Srirangapatna fell on 4 May 1799. Whether Wayanad stayed with Mysore is disputed.",
+   "dataNote": "Wayanad is left out here.",
    "coords": [
     [
      74.65,
@@ -1302,7 +1316,8 @@
      "when": "1799–1811"
     }
    ],
-   "note": "In 1799 the Company restored the Wodeyars to a reduced, landlocked Mysore that matches the princely state of plate 29 (1837, 1857) and of 1909. The Company ran it directly through a commission from 1831 to 1881. Drawn to 1857; the princely-states layer covers 1858 onwards.",
+   "note": "In 1799 the Company restored the Wodeyars to a reduced, landlocked Mysore. The Company ran it directly through a commission from 1831 to 1881.",
+   "dataNote": "It matches the princely state of plate 29 (1837, 1857) and of 1909. Drawn to 1857; the princely-states layer covers 1858 onwards.",
    "coords": [
     [
      75.0,
@@ -1419,7 +1434,8 @@
      "when": "1586–1614"
     }
    ],
-   "note": "After Talikota (1565) and the sack of Hampi, the Aravidu kings ruled from Penukonda and then Chandragiri. They still held Anantapur, Chittoor, Kolar and the Vellore country and claimed overlordship of the Nayaks of Madurai, Thanjavur and Gingee and of Mysore. The map's Cliopatria 'Vijayanagara Empire' stops in 1571, so these last decades were blank. Only lands under direct Aravidu rule are drawn. Their northern and eastern edges against Golconda and Bijapur moved often and are approximate.",
+   "note": "After Talikota (1565) and the sack of Hampi, the Aravidu kings ruled from Penukonda and then Chandragiri. They still held Anantapur, Chittoor, Kolar and the Vellore country and claimed overlordship of the Nayaks of Madurai, Thanjavur and Gingee and of Mysore. The northern and eastern edges of their lands against Golconda and Bijapur moved often.",
+   "dataNote": "The map's Cliopatria 'Vijayanagara Empire' stops in 1571, so these last decades were blank. Only lands under direct Aravidu rule are drawn. Their edges are approximate.",
    "coords": [
     [
      77.2,
@@ -1520,7 +1536,8 @@
      "when": "1642–1646 (to 1678 in exile)"
     }
    ],
-   "note": "The civil war after Venkatapati Raya's death (Battle of Toppur, 1616), followed by Golconda's and Bijapur's advance into the Carnatic, reduced the empire to the Chandragiri–Vellore country. Vellore fell around 1646, which is taken as the empire's end (Wikipedia: 1336–1646); Sriranga III lived on in exile until 1678. The outline is approximate.",
+   "note": "The civil war after Venkatapati Raya's death (Battle of Toppur, 1616), followed by Golconda's and Bijapur's advance into the Carnatic, reduced the empire to the Chandragiri–Vellore country. Vellore fell around 1646, which is taken as the empire's end (1336–1646); Sriranga III lived on in exile until 1678.",
+   "dataNote": "Dates follow Wikipedia (1336–1646). The outline is approximate.",
    "coords": [
     [
      78.3,
@@ -1597,7 +1614,8 @@
      "when": "to 1649"
     }
    ],
-   "note": "Gingee was one of the three Tamil Nayakships under Vijayanagara, alongside Madurai and Thanjavur (both drawn on the map). It held the land between the Palar and the Kollidam (Coleroon) until Bijapur took the fort in 1649. It is drawn from 1572 only, because the map draws it inside the Vijayanagara Empire before then. Its line with the Aravidu territory to the north and with Thanjavur to the south is approximate.",
+   "note": "Gingee was one of the three Tamil Nayakships under Vijayanagara, alongside Madurai and Thanjavur. It held the land between the Palar and the Kollidam (Coleroon) until Bijapur took the fort in 1649.",
+   "dataNote": "Madurai and Thanjavur are both drawn on the map. It is drawn from 1572 only, because the map draws it inside the Vijayanagara Empire before then. Its line with the Aravidu territory to the north and with Thanjavur to the south is approximate.",
    "coords": [
     [
      78.6,
@@ -1654,7 +1672,8 @@
      "when": "1762–1803"
     }
    ],
-   "note": "The map's Cliopatria Hyderabad stops in 1798. The Nizam entered a subsidiary alliance in 1798 and in 1800 ceded his share of the Mysore conquests (the 'Ceded Districts': Bellary, Cuddapah and others). From then on the state matched the Nizam's dominions of plate 28 (1805), plate 29 (1837, 1857) and 1909. Berar was then still under the Bhonsles of Nagpur.",
+   "note": "The Nizam entered a subsidiary alliance in 1798 and in 1800 ceded his share of the Mysore conquests (the 'Ceded Districts': Bellary, Cuddapah and others). Berar was then still under the Bhonsles of Nagpur.",
+   "dataNote": "The map's Cliopatria Hyderabad stops in 1798. From then on the state matched the Nizam's dominions of plate 28 (1805), plate 29 (1837, 1857) and 1909.",
    "coords": [
     [
      74.6,
@@ -1807,7 +1826,8 @@
      "when": "1829–1857"
     }
    ],
-   "note": "The Treaty of Deogaon (1803) gave the Nizam Berar west of the Wardha river, which is drawn as part of Hyderabad. Plate 29 (1837) colours Berar with the Nizam's lands. In 1853 Berar was 'assigned' to the Company to pay for the Hyderabad Contingent.",
+   "note": "The Treaty of Deogaon (1803) gave the Nizam Berar west of the Wardha river. In 1853 Berar was 'assigned' to the Company to pay for the Hyderabad Contingent.",
+   "dataNote": "Berar is drawn as part of Hyderabad. Plate 29 (1837) colours Berar with the Nizam's lands.",
    "coords": [
     [
      74.6,
@@ -1972,7 +1992,8 @@
      "when": "1857–1869"
     }
    ],
-   "note": "After the Treaty of 1853 assigned Berar to the Company, plate 29 (1857) still shades it with the Nizam's lands (formal sovereignty stayed with the Nizam). Here it is left out, because the Company administered it. Drawn to 1857; the princely-states layer covers 1858 onwards.",
+   "note": "The Treaty of 1853 assigned Berar to the Company, which administered it; formal sovereignty stayed with the Nizam.",
+   "dataNote": "Plate 29 (1857) still shades Berar with the Nizam's lands. Here it is left out, because the Company administered it. Drawn to 1857; the princely-states layer covers 1858 onwards.",
    "coords": [
     [
      74.6,
@@ -2121,7 +2142,8 @@
      "when": "1818–1853"
     }
    ],
-   "note": "After the Third Anglo-Maratha War (Sitabuldi, 1817) the Bhonsles lost the Saugor and Narmada territories and kept Nagpur, Wardha (east of the river), Chanda, Bhandara, Chhindwara and Chhattisgarh as a protected state. The Company annexed it by lapse in 1853. Plate 29 (1837, 'Bhonsla') shows this extent. Before 1818 the Bhonsle lands are part of the map's Maratha Empire. Bastar and the other feudatory chiefdoms are left out.",
+   "note": "After the Third Anglo-Maratha War (Sitabuldi, 1817) the Bhonsles lost the Saugor and Narmada territories and kept Nagpur, Wardha (east of the river), Chanda, Bhandara, Chhindwara and Chhattisgarh as a protected state. The Company annexed it by lapse in 1853. Bastar and the other chiefdoms were its feudatories.",
+   "dataNote": "Plate 29 (1837, 'Bhonsla') shows this extent. Before 1818 the Bhonsle lands are part of the map's Maratha Empire. Bastar and the other feudatory chiefdoms are left out.",
    "coords": [
     [
      78.45,
@@ -2230,7 +2252,8 @@
      "when": "1839–1848"
     }
    ],
-   "note": "After the Peshwa's fall the Company set up Shivaji's descendant Pratap Singh in a small state around Satara. It was annexed by lapse in 1848–49. The outline is approximate.",
+   "note": "After the Peshwa's fall the Company set up Shivaji's descendant Pratap Singh in a small state around Satara. It was annexed by lapse in 1848–49.",
+   "dataNote": "The outline is approximate.",
    "coords": [
     [
      73.6,
@@ -2283,7 +2306,8 @@
      "when": "1844–1886"
     }
    ],
-   "note": "After Mahidpur (1817) and the Treaty of Mandsaur (1818), Holkar's state was reduced to scattered districts under British protection. Drawn here are its Indore–Nimar core and (as a separate region) the Rampura–Bhanpura district; smaller enclaves are left out. Before 1818 Holkar's lands are part of the map's Maratha Empire.",
+   "note": "After Mahidpur (1817) and the Treaty of Mandsaur (1818), Holkar's state was reduced to scattered districts under British protection. These included the Indore–Nimar core, the Rampura–Bhanpura district and smaller enclaves.",
+   "dataNote": "Drawn here are its Indore–Nimar core and (as a separate region) the Rampura–Bhanpura district; smaller enclaves are left out. Before 1818 Holkar's lands are part of the map's Maratha Empire.",
    "coords": [
     [
      75.0,
@@ -2340,7 +2364,8 @@
      "when": "1844–1886"
     }
    ],
-   "note": "This is Holkar's northern district around Rampura and Bhanpura, between Mewar, Kota and Scindia's Malwa lands. The edges are approximate.",
+   "note": "This is Holkar's northern district around Rampura and Bhanpura, between Mewar, Kota and Scindia's Malwa lands.",
+   "dataNote": "The edges are approximate.",
    "coords": [
     [
      75.2,
@@ -2389,7 +2414,8 @@
      "when": "1843–1886"
     }
    ],
-   "note": "The map draws Scindia's state from 1820 to 1845 (as a relabelled Cliopatria polygon), but nothing from 1846. This outline continues the northern block of that polygon (Gwalior, Narwar, Guna, Bhind) to 1857. It is unchanged by the Gwalior campaign of 1843 (Maharajpur, Panniar), which brought a British-officered contingent but little loss of land.",
+   "note": "The northern block of Scindia's state (Gwalior, Narwar, Guna, Bhind). The Gwalior campaign of 1843 (Maharajpur, Panniar) brought a British-officered contingent but little loss of land.",
+   "dataNote": "The map draws Scindia's state from 1820 to 1845 (as a relabelled Cliopatria polygon), but nothing from 1846. This outline continues the northern block of that polygon to 1857. It is unchanged by the Gwalior campaign of 1843.",
    "coords": [
     [
      78.21,
@@ -2566,7 +2592,8 @@
      "when": "1843–1886"
     }
    ],
-   "note": "Scindia's Malwa districts around Ujjain, Shajapur and Mandsaur, drawn approximately without Holkar's and the small Rajput states' enclaves.",
+   "note": "Scindia's Malwa districts around Ujjain, Shajapur and Mandsaur.",
+   "dataNote": "Drawn approximately without Holkar's and the small Rajput states' enclaves.",
    "coords": [
     [
      75.35,
@@ -2639,7 +2666,8 @@
      "when": "1856–1870"
     }
    ],
-   "note": "From 1802 the Gaekwads were allied with the Company, and after 1818 their state, scattered across Gujarat, was a protected state. Only the two largest blocks are drawn: the Baroda district here and the Kadi district separately. Navsari and Amreli are left out. Before 1818 Gujarat is drawn inside the map's Maratha Empire.",
+   "note": "From 1802 the Gaekwads were allied with the Company, and after 1818 their state, scattered across Gujarat, was a protected state. Its two largest blocks were the Baroda and Kadi districts; Navsari and Amreli were smaller ones.",
+   "dataNote": "Only the two largest blocks are drawn: the Baroda district here and the Kadi district separately. Navsari and Amreli are left out. Before 1818 Gujarat is drawn inside the map's Maratha Empire.",
    "coords": [
     [
      72.9,
@@ -2696,7 +2724,8 @@
      "when": "1856–1870"
     }
    ],
-   "note": "The Gaekwads' northern district around Kadi and Patan. The outline is approximate.",
+   "note": "The Gaekwads' northern district around Kadi and Patan.",
+   "dataNote": "The outline is approximate.",
    "coords": [
     [
      72.0,
@@ -2757,7 +2786,8 @@
      "when": "1819–1860"
     }
    ],
-   "note": "The Jadeja Raos ruled Kutch and the Rann from Bhuj, founded in 1549. They paid tribute to the Mughals from the 1590s while ruling themselves, and came under British protection in 1819. The map draws Kutch inside the Mughal Empire (to 1751) and then leaves it blank, so it is drawn here as its own kingdom throughout. Plates 28 and 29 show 'Cutch' with this extent. The northern edge across the Rann is a convention. Drawn to 1857; the princely-states layer covers 1858 onwards.",
+   "note": "The Jadeja Raos ruled Kutch and the Rann from Bhuj, founded in 1549. They paid tribute to the Mughals from the 1590s while ruling themselves, and came under British protection in 1819.",
+   "dataNote": "The map draws Kutch inside the Mughal Empire (to 1751) and then leaves it blank, so it is drawn here as its own kingdom throughout. Plates 28 and 29 show 'Cutch' with this extent. The northern edge across the Rann is a convention. Drawn to 1857; the princely-states layer covers 1858 onwards.",
    "coords": [
     [
      68.2,
@@ -2834,7 +2864,8 @@
      "when": "1597–1620"
     }
    ],
-   "note": "Mewar was the one major Rajput kingdom that refused Mughal suzerainty. Akbar took Chittor in 1568, and Pratap fought at Haldighati (1576) and later won back most of the hill country; Amar Singh I submitted by treaty in 1615. The map draws Mewar inside the Mughal Empire from 1564, so this region overlaps that outline. The extent is its 1909 territory, with Chittor (lost 1568) included throughout; this is approximate.",
+   "note": "Mewar was the one major Rajput kingdom that refused Mughal suzerainty. Akbar took Chittor in 1568, and Pratap fought at Haldighati (1576) and later won back most of the hill country; Amar Singh I submitted by treaty in 1615.",
+   "dataNote": "The map draws Mewar inside the Mughal Empire from 1564, so this region overlaps that outline. The extent is its 1909 territory, with Chittor (lost 1568) included throughout; this is approximate.",
    "coords": [
     [
      74.0,
@@ -2923,7 +2954,8 @@
      "when": "1842–1861"
     }
    ],
-   "note": "From 1752 the map's Mughal outline no longer covers Rajputana, so the Rajput states, which had been Mughal vassal kingdoms and are drawn inside the Mughal Empire before then, are drawn here as states. Maratha (Scindia, Holkar) armies took tribute and districts until the treaties of 1817–18 put them under British protection. The borders follow the 1909 Rajputana states, which changed little after 1818; before 1818 parts were held by Maratha chiefs (Ajmer by Scindia, 1756–1818), and this is not drawn. Drawn to 1857; the princely-states layer covers 1858 onwards.",
+   "note": "The Rajput states had been Mughal vassal kingdoms. Maratha (Scindia, Holkar) armies took tribute and districts until the treaties of 1817–18 put them under British protection. Their borders changed little after 1818; before 1818 parts were held by Maratha chiefs (Ajmer by Scindia, 1756–1818).",
+   "dataNote": "From 1752 the map's Mughal outline no longer covers Rajputana, so the Rajput states, which are drawn inside the Mughal Empire before then, are drawn here as states. The borders follow the 1909 Rajputana states; the pre-1818 Maratha holdings are not drawn. Drawn to 1857; the princely-states layer covers 1858 onwards.",
    "coords": [
     [
      74.0,
@@ -3012,7 +3044,8 @@
      "when": "1843–1873"
     }
    ],
-   "note": "From 1752 the map's Mughal outline no longer covers Rajputana, so the Rajput states, which had been Mughal vassal kingdoms and are drawn inside the Mughal Empire before then, are drawn here as states. Maratha (Scindia, Holkar) armies took tribute and districts until the treaties of 1817–18 put them under British protection. The borders follow the 1909 Rajputana states, which changed little after 1818; before 1818 parts were held by Maratha chiefs (Ajmer by Scindia, 1756–1818), and this is not drawn. Drawn to 1857; the princely-states layer covers 1858 onwards.",
+   "note": "The Rajput states had been Mughal vassal kingdoms. Maratha (Scindia, Holkar) armies took tribute and districts until the treaties of 1817–18 put them under British protection. Their borders changed little after 1818; before 1818 parts were held by Maratha chiefs (Ajmer by Scindia, 1756–1818).",
+   "dataNote": "From 1752 the map's Mughal outline no longer covers Rajputana, so the Rajput states, which are drawn inside the Mughal Empire before then, are drawn here as states. The borders follow the 1909 Rajputana states; the pre-1818 Maratha holdings are not drawn. Drawn to 1857; the princely-states layer covers 1858 onwards.",
    "coords": [
     [
      70.6,
@@ -3133,7 +3166,8 @@
      "when": "1835–1880"
     }
    ],
-   "note": "From 1752 the map's Mughal outline no longer covers Rajputana, so the Rajput states, which had been Mughal vassal kingdoms and are drawn inside the Mughal Empire before then, are drawn here as states. Maratha (Scindia, Holkar) armies took tribute and districts until the treaties of 1817–18 put them under British protection. The borders follow the 1909 Rajputana states, which changed little after 1818; before 1818 parts were held by Maratha chiefs (Ajmer by Scindia, 1756–1818), and this is not drawn. Drawn to 1857; the princely-states layer covers 1858 onwards. The Shekhawati chiefs in the north were Jaipur's tributaries and are included; Alwar (independent from 1770) and Tonk (1817) are not.",
+   "note": "The Rajput states had been Mughal vassal kingdoms. Maratha (Scindia, Holkar) armies took tribute and districts until the treaties of 1817–18 put them under British protection. Their borders changed little after 1818; before 1818 parts were held by Maratha chiefs (Ajmer by Scindia, 1756–1818). The Shekhawati chiefs in the north were Jaipur's tributaries; Alwar (independent from 1770) and Tonk (1817) were separate.",
+   "dataNote": "From 1752 the map's Mughal outline no longer covers Rajputana, so the Rajput states, which are drawn inside the Mughal Empire before then, are drawn here as states. The borders follow the 1909 Rajputana states; the pre-1818 Maratha holdings are not drawn. The Shekhawati chiefs are included; Alwar and Tonk are not. Drawn to 1857; the princely-states layer covers 1858 onwards.",
    "coords": [
     [
      74.6,
@@ -3222,7 +3256,8 @@
      "when": "1851–1872"
     }
    ],
-   "note": "From 1752 the map's Mughal outline no longer covers Rajputana, so the Rajput states, which had been Mughal vassal kingdoms and are drawn inside the Mughal Empire before then, are drawn here as states. Maratha (Scindia, Holkar) armies took tribute and districts until the treaties of 1817–18 put them under British protection. The borders follow the 1909 Rajputana states, which changed little after 1818; before 1818 parts were held by Maratha chiefs (Ajmer by Scindia, 1756–1818), and this is not drawn. Drawn to 1857; the princely-states layer covers 1858 onwards.",
+   "note": "The Rajput states had been Mughal vassal kingdoms. Maratha (Scindia, Holkar) armies took tribute and districts until the treaties of 1817–18 put them under British protection. Their borders changed little after 1818; before 1818 parts were held by Maratha chiefs (Ajmer by Scindia, 1756–1818).",
+   "dataNote": "From 1752 the map's Mughal outline no longer covers Rajputana, so the Rajput states, which are drawn inside the Mughal Empire before then, are drawn here as states. The borders follow the 1909 Rajputana states; the pre-1818 Maratha holdings are not drawn. Drawn to 1857; the princely-states layer covers 1858 onwards.",
    "coords": [
     [
      72.15,
@@ -3319,7 +3354,8 @@
      "when": "1846–1864"
     }
    ],
-   "note": "From 1752 the map's Mughal outline no longer covers Rajputana, so the Rajput states, which had been Mughal vassal kingdoms and are drawn inside the Mughal Empire before then, are drawn here as states. Maratha (Scindia, Holkar) armies took tribute and districts until the treaties of 1817–18 put them under British protection. The borders follow the 1909 Rajputana states, which changed little after 1818; before 1818 parts were held by Maratha chiefs (Ajmer by Scindia, 1756–1818), and this is not drawn. Drawn to 1857; the princely-states layer covers 1858 onwards. Jaisalmer's desert border with Sindh and Bahawalpur was unsurveyed before the 1840s.",
+   "note": "The Rajput states had been Mughal vassal kingdoms. Maratha (Scindia, Holkar) armies took tribute and districts until the treaties of 1817–18 put them under British protection. Their borders changed little after 1818; before 1818 parts were held by Maratha chiefs (Ajmer by Scindia, 1756–1818). Jaisalmer's desert border with Sindh and Bahawalpur was unsurveyed before the 1840s.",
+   "dataNote": "From 1752 the map's Mughal outline no longer covers Rajputana, so the Rajput states, which are drawn inside the Mughal Empire before then, are drawn here as states. The borders follow the 1909 Rajputana states; the pre-1818 Maratha holdings are not drawn. Drawn to 1857; the princely-states layer covers 1858 onwards.",
    "coords": [
     [
      69.45,
@@ -3412,7 +3448,8 @@
      "when": "1828–1866"
     }
    ],
-   "note": "From 1752 the map's Mughal outline no longer covers Rajputana, so the Rajput states, which had been Mughal vassal kingdoms and are drawn inside the Mughal Empire before then, are drawn here as states. Maratha (Scindia, Holkar) armies took tribute and districts until the treaties of 1817–18 put them under British protection. The borders follow the 1909 Rajputana states, which changed little after 1818; before 1818 parts were held by Maratha chiefs (Ajmer by Scindia, 1756–1818), and this is not drawn. Drawn to 1857; the princely-states layer covers 1858 onwards. Zalim Singh, the regent, ruled Kota in practice c. 1771–1824. Jhalawar was split off in 1838 but is kept inside the outline here.",
+   "note": "The Rajput states had been Mughal vassal kingdoms. Maratha (Scindia, Holkar) armies took tribute and districts until the treaties of 1817–18 put them under British protection. Their borders changed little after 1818; before 1818 parts were held by Maratha chiefs (Ajmer by Scindia, 1756–1818). Zalim Singh, the regent, ruled Kota in practice c. 1771–1824. Jhalawar was split off in 1838.",
+   "dataNote": "From 1752 the map's Mughal outline no longer covers Rajputana, so the Rajput states, which are drawn inside the Mughal Empire before then, are drawn here as states. The borders follow the 1909 Rajputana states; the pre-1818 Maratha holdings are not drawn. Jhalawar is kept inside the outline here. Drawn to 1857; the princely-states layer covers 1858 onwards.",
    "coords": [
     [
      75.45,
@@ -3501,7 +3538,8 @@
      "when": "1821–1889"
     }
    ],
-   "note": "From 1752 the map's Mughal outline no longer covers Rajputana, so the Rajput states, which had been Mughal vassal kingdoms and are drawn inside the Mughal Empire before then, are drawn here as states. Maratha (Scindia, Holkar) armies took tribute and districts until the treaties of 1817–18 put them under British protection. The borders follow the 1909 Rajputana states, which changed little after 1818; before 1818 parts were held by Maratha chiefs (Ajmer by Scindia, 1756–1818), and this is not drawn. Drawn to 1857; the princely-states layer covers 1858 onwards.",
+   "note": "The Rajput states had been Mughal vassal kingdoms. Maratha (Scindia, Holkar) armies took tribute and districts until the treaties of 1817–18 put them under British protection. Their borders changed little after 1818; before 1818 parts were held by Maratha chiefs (Ajmer by Scindia, 1756–1818).",
+   "dataNote": "From 1752 the map's Mughal outline no longer covers Rajputana, so the Rajput states, which are drawn inside the Mughal Empire before then, are drawn here as states. The borders follow the 1909 Rajputana states; the pre-1818 Maratha holdings are not drawn. Drawn to 1857; the princely-states layer covers 1858 onwards.",
    "coords": [
     [
      75.22,
@@ -3570,7 +3608,8 @@
      "when": "1847–1856"
     }
    ],
-   "note": "The treaty of 1801 took about half of Awadh (Rohilkhand, the lower Doab and Gorakhpur) for the Company. The map's Cliopatria 'Nawab of Awadh' stops in 1802, although the rest, the Oudh of plate 29 (1837), survived as a protected kingdom until Dalhousie annexed it in February 1856. Its nawabs took the title of king (padshah) from 1819. The northern edge includes the Tarai lands added after the Anglo-Nepalese war (1816).",
+   "note": "The treaty of 1801 took about half of Awadh (Rohilkhand, the lower Doab and Gorakhpur) for the Company. The rest survived as a protected kingdom until Dalhousie annexed it in February 1856. Its nawabs took the title of king (padshah) from 1819. Tarai lands on its northern edge were added after the Anglo-Nepalese war (1816).",
+   "dataNote": "The map's Cliopatria 'Nawab of Awadh' stops in 1802; the rest is the Oudh of plate 29 (1837). The northern edge includes the Tarai lands added after the Anglo-Nepalese war (1816).",
    "coords": [
     [
      79.6,
@@ -3663,7 +3702,8 @@
      "when": "to 1770"
     }
    ],
-   "note": "Rohilla Afghan chiefs led by Ali Muhammad Khan made the country between the Ganges and Kumaon (Bareilly, Moradabad, Bijnor, Budaun) a state independent of Delhi by the 1740s. Awadh, helped by Company troops, conquered it in the Rohilla War of 1774, leaving only Rampur to the Rohillas. The map leaves it blank in these years. Najib-ud-Daula's Najibabad (Bijnor) is included, which simplifies matters. It is drawn from 1748 (Ali Muhammad's death and the Durrani-backed restoration); earlier dates are uncertain. Plate 28 shows 'Rohilkhand' in 1765.",
+   "note": "Rohilla Afghan chiefs led by Ali Muhammad Khan made the country between the Ganges and Kumaon (Bareilly, Moradabad, Bijnor, Budaun) a state independent of Delhi by the 1740s. Awadh, helped by Company troops, conquered it in the Rohilla War of 1774, leaving only Rampur to the Rohillas. Najib-ud-Daula held Najibabad (Bijnor). The year 1748 brought Ali Muhammad's death and the Durrani-backed restoration; earlier dates are uncertain.",
+   "dataNote": "The map leaves it blank in these years. Najib-ud-Daula's Najibabad (Bijnor) is included, which simplifies matters. It is drawn from 1748. Plate 28 shows 'Rohilkhand' in 1765.",
    "coords": [
     [
      78.15,
@@ -3740,7 +3780,8 @@
      "when": "1730–1748"
     }
    ],
-   "note": "The Chand rajas held Kumaon, from the Kali river to the Garhwal border, and the Tarai below the hills. Gorkha Nepal conquered it in 1790. The map draws these hills inside the Mughal Empire until 1751 and leaves them blank afterwards; the Chands paid occasional tribute but were never under Mughal rule. The southern edge against Rohilkhand and the Tarai is approximate.",
+   "note": "The Chand rajas held Kumaon, from the Kali river to the Garhwal border, and the Tarai below the hills. Gorkha Nepal conquered it in 1790. The Chands paid occasional tribute to the Mughals but were never under Mughal rule.",
+   "dataNote": "The map draws these hills inside the Mughal Empire until 1751 and leaves them blank afterwards. The southern edge against Rohilkhand and the Tarai is approximate.",
    "coords": [
     [
      78.95,
@@ -3821,7 +3862,8 @@
      "when": "1785–1804"
     }
    ],
-   "note": "The Panwar kings of Garhwal held the upper Ganges and Yamuna hills and Dehradun. Nepal conquered it in 1803–04, and Pradyumna Shah died at Khurbura in 1804. Like Kumaon, the map draws it inside the Mughal outline before 1752 and leaves it blank afterwards.",
+   "note": "The Panwar kings of Garhwal held the upper Ganges and Yamuna hills and Dehradun. Nepal conquered it in 1803–04, and Pradyumna Shah died at Khurbura in 1804.",
+   "dataNote": "Like Kumaon, the map draws it inside the Mughal outline before 1752 and leaves it blank afterwards.",
    "coords": [
     [
      77.6,
@@ -3890,7 +3932,8 @@
      "when": "1815–1859"
     }
    ],
-   "note": "After the Anglo-Nepalese War the Company kept Dehradun and eastern Garhwal and gave the lands west of the Alaknanda back to Sudarshan Shah, who ruled from Tehri. Drawn to 1857; the princely-states layer covers 1858 onwards.",
+   "note": "After the Anglo-Nepalese War the Company kept Dehradun and eastern Garhwal and gave the lands west of the Alaknanda back to Sudarshan Shah, who ruled from Tehri.",
+   "dataNote": "Drawn to 1857; the princely-states layer covers 1858 onwards.",
    "coords": [
     [
      77.8,
@@ -3959,7 +4002,8 @@
      "when": "1802–1837"
     }
    ],
-   "note": "The Namgyal kings ruled Ladakh, with Purig, Zanskar and Nubra, from Shey and Leh. They lost Rudok and Guge to Tibet after the war of 1679–84 (Treaty of Tingmosgang), which is not drawn separately. The Dogra general Zorawar Singh conquered Ladakh for Jammu in 1834–41, and the Treaty of Chushul (1842) ended its independence. The map leaves Ladakh blank or draws it inside its neighbours' outlines. Borders in the high, uninhabited north and east are conventional.",
+   "note": "The Namgyal kings ruled Ladakh, with Purig, Zanskar and Nubra, from Shey and Leh. They lost Rudok and Guge to Tibet after the war of 1679–84 (Treaty of Tingmosgang). The Dogra general Zorawar Singh conquered Ladakh for Jammu in 1834–41, and the Treaty of Chushul (1842) ended its independence.",
+   "dataNote": "The loss of Rudok and Guge is not drawn separately. The map leaves Ladakh blank or draws it inside its neighbours' outlines. Borders in the high, uninhabited north and east are conventional.",
    "coords": [
     [
      75.6,
@@ -4190,7 +4234,8 @@
      "when": "1793–1863"
     }
    ],
-   "note": "This is Sikkim without the Darjeeling tract, granted in 1835, and without the Morang lowlands annexed by the Company in 1850. Plate 29 (1837, 1857) marks 'Sikkim' here. Drawn to 1857; the princely-states layer covers 1858 onwards.",
+   "note": "This is Sikkim without the Darjeeling tract, granted in 1835, and without the Morang lowlands annexed by the Company in 1850.",
+   "dataNote": "Plate 29 (1837, 1857) marks 'Sikkim' here. Drawn to 1857; the princely-states layer covers 1858 onwards.",
    "coords": [
     [
      88.05,
@@ -4259,7 +4304,8 @@
      "when": "1603–1641"
     }
    ],
-   "note": "The Ahom kings held the Brahmaputra valley from Sadiya down to the Bharali–Kallang line, where the Koch kingdom began. Their hold on the hill peoples on both sides varied, and the outline keeps to the valley floor. The map leaves Assam blank in this period.",
+   "note": "The Ahom kings held the Brahmaputra valley from Sadiya down to the Bharali–Kallang line, where the Koch kingdom began. Their hold on the hill peoples on both sides varied.",
+   "dataNote": "The outline keeps to the valley floor. The map leaves Assam blank in this period.",
    "coords": [
     [
      92.6,
@@ -4336,7 +4382,8 @@
      "when": "1681–1696"
     }
    ],
-   "note": "The Ahom–Mughal wars moved the western frontier back and forth around Guwahati: the Mughals held Kamrup in 1639–67 and 1679–82, and the Ahoms won at Saraighat in 1671. The western edge is drawn at the Barnadi, the frontier agreed in 1639; Guwahati itself changed hands several times.",
+   "note": "The Ahom–Mughal wars moved the western frontier back and forth around Guwahati: the Mughals held Kamrup in 1639–67 and 1679–82, and the Ahoms won at Saraighat in 1671. The frontier agreed in 1639 was the Barnadi; Guwahati itself changed hands several times.",
+   "dataNote": "The western edge is drawn at the Barnadi.",
    "coords": [
     [
      91.75,
@@ -4429,7 +4476,8 @@
      "when": "1818–1819, 1833–1838"
     }
    ],
-   "note": "Gadadhar Singha's victory at Itakhuli (1682) fixed the frontier at the Manas river until the end of the kingdom. The Moamoria rebellion (1769–1805) and the Burmese invasions of 1817–1826 wrecked the state, and the Burmese ruled Assam outright from 1821. The Treaty of Yandabo (1826) gave Assam to the Company. Plate 28 shows 'Assam' in 1765 and 1805.",
+   "note": "Gadadhar Singha's victory at Itakhuli (1682) fixed the frontier at the Manas river until the end of the kingdom. The Moamoria rebellion (1769–1805) and the Burmese invasions of 1817–1826 wrecked the state, and the Burmese ruled Assam outright from 1821. The Treaty of Yandabo (1826) gave Assam to the Company.",
+   "dataNote": "Plate 28 shows 'Assam' in 1765 and 1805.",
    "coords": [
     [
      90.95,
@@ -4526,7 +4574,8 @@
      "when": "d. 1571"
     }
    ],
-   "note": "Under Nara Narayan and his general Chilarai, the Koch kingdom held the land from the Karatoya and Tista to the Bharali river. Its campaigns made Ahom, Manipur, Jaintia, Tripura and the Kachari kingdom tributaries, but those are drawn separately. In 1581 the kingdom split into Koch Bihar and Koch Hajo. The southern edge in Rangpur and Goalpara is approximate.",
+   "note": "Under Nara Narayan and his general Chilarai, the Koch kingdom held the land from the Karatoya and Tista to the Bharali river. Its campaigns made Ahom, Manipur, Jaintia, Tripura and the Kachari kingdom tributaries. In 1581 the kingdom split into Koch Bihar and Koch Hajo.",
+   "dataNote": "Those tributaries are drawn separately. The southern edge in Rangpur and Goalpara is approximate.",
    "coords": [
     [
      88.5,
@@ -4688,7 +4737,8 @@
      "when": "1847–1863"
     }
    ],
-   "note": "Koch Bihar was reduced to roughly the later princely state. A treaty of 1773 with the Company, made to expel the Bhutanese, put it under British protection. Plates 28 (1805) and 29 mark 'Cooch Behar'. Drawn to 1857; the princely-states layer covers 1858 onwards.",
+   "note": "Koch Bihar was reduced to roughly the later princely state. A treaty of 1773 with the Company, made to expel the Bhutanese, put it under British protection.",
+   "dataNote": "Plates 28 (1805) and 29 mark 'Cooch Behar'. Drawn to 1857; the princely-states layer covers 1858 onwards.",
    "coords": [
     [
      88.75,
@@ -4741,7 +4791,8 @@
      "when": "1603–1613"
     }
    ],
-   "note": "Koch Hajo was the eastern half of the divided Koch kingdom, from the Sankosh to the Bharali on the north bank, with Goalpara on the south bank. The Mughals conquered it in 1612–13 and the Ahoms and Mughals then fought over it; that contested Kamrup is left blank.",
+   "note": "Koch Hajo was the eastern half of the divided Koch kingdom, from the Sankosh to the Bharali on the north bank, with Goalpara on the south bank. The Mughals conquered it in 1612–13 and the Ahoms and Mughals then fought over it.",
+   "dataNote": "That contested Kamrup is left blank.",
    "coords": [
     [
      89.85,
@@ -4818,7 +4869,8 @@
      "when": "c. 1700–1708"
     }
    ],
-   "note": "After the Ahoms sacked Dimapur (1536) the Dimasa kings ruled the North Cachar hills and the Kopili–Dhansiri uplands from Maibang. The outline is approximate.",
+   "note": "After the Ahoms sacked Dimapur (1536) the Dimasa kings ruled the North Cachar hills and the Kopili–Dhansiri uplands from Maibang.",
+   "dataNote": "The outline is approximate.",
    "coords": [
     [
      92.45,
@@ -4952,7 +5004,8 @@
      "when": "1832–1835"
     }
    ],
-   "note": "The Syiem Sutnga rajas of Jaintia held the Jaintia hills and the plains below them at Jaintiapur (Sylhet). The Company annexed the plains and then the hills in 1835. The outline is approximate, especially in the plains.",
+   "note": "The Syiem Sutnga rajas of Jaintia held the Jaintia hills and the plains below them at Jaintiapur (Sylhet). The Company annexed the plains and then the hills in 1835.",
+   "dataNote": "The outline is approximate, especially in the plains.",
    "coords": [
     [
      91.8,
@@ -5013,7 +5066,8 @@
      "when": "1825–1834"
     }
    ],
-   "note": "The Meitei kingdom of the Imphal valley and the surrounding hills reached into the Kabaw valley, which Garib Niwaz raided deep into Burma. The Burmese occupied it in 1819–25 ('Seven Years Devastation'). Gambhir Singh won it back with Company help; the Kabaw valley went to Burma in 1834. Drawn to 1857; the princely-states layer covers 1858 onwards.",
+   "note": "The Meitei kingdom of the Imphal valley and the surrounding hills reached into the Kabaw valley, which Garib Niwaz raided deep into Burma. The Burmese occupied it in 1819–25 ('Seven Years Devastation'). Gambhir Singh won it back with Company help; the Kabaw valley went to Burma in 1834.",
+   "dataNote": "Drawn to 1857; the princely-states layer covers 1858 onwards.",
    "coords": [
     [
      93.08,
@@ -5155,7 +5209,8 @@
      "when": "1849–1862"
     }
    ],
-   "note": "The Manikyas kept 'Hill Tipperah' (marked 'Tipperah' on plates 28–29) as a kingdom. They held the plains estate of Chakla Roshnabad only as zamindars under Bengal and then the Company, so it is left out. Drawn to 1857; the princely-states layer covers 1858 onwards.",
+   "note": "The Manikyas kept 'Hill Tipperah' as a kingdom. They held the plains estate of Chakla Roshnabad only as zamindars under Bengal and then the Company.",
+   "dataNote": "Marked 'Tipperah' on plates 28–29. Chakla Roshnabad is left out. Drawn to 1857; the princely-states layer covers 1858 onwards.",
    "coords": [
     [
      91.15,
@@ -5220,7 +5275,8 @@
      "when": "1736–1749"
     }
    ],
-   "note": "The Ahmadzai khans united the Brahui tribes of Sarawan and Jhalawan around Kalat, under Safavid, Mughal and then Afsharid and Durrani overlordship. Nadir Shah gave them Kachhi in 1740. The outline is the Brahui heartland only. Several of the map's outlines (Mughal, Safavid, Afsharid, Durrani) may overlap it.",
+   "note": "The Ahmadzai khans united the Brahui tribes of Sarawan and Jhalawan around Kalat, under Safavid, Mughal and then Afsharid and Durrani overlordship. Nadir Shah gave them Kachhi in 1740.",
+   "dataNote": "The outline is the Brahui heartland only. Several of the map's outlines (Mughal, Safavid, Afsharid, Durrani) may overlap it.",
    "coords": [
     [
      66.0,
@@ -5293,7 +5349,8 @@
      "when": "1840–1857"
     }
    ],
-   "note": "Nasir Khan I threw off Durrani control (Treaty of Kalat, 1758) and brought Makran, Kharan, Las Bela and Kachhi under the khanate, its greatest extent. It is drawn here with its vassals, while the Durrani outline on the map still includes the region until c. 1820. Gwadar went to Muscat in 1783 (not cut out). The British stormed Kalat in 1839 (Mehrab Khan killed), and the treaty of 1854 made it a British ally. Drawn to 1857; the princely-states layer covers 1858 onwards. The western edge in Makran is approximate.",
+   "note": "Nasir Khan I threw off Durrani control (Treaty of Kalat, 1758) and brought Makran, Kharan, Las Bela and Kachhi under the khanate, its greatest extent. Gwadar went to Muscat in 1783. The British stormed Kalat in 1839 (Mehrab Khan killed), and the treaty of 1854 made it a British ally.",
+   "dataNote": "It is drawn here with its vassals, while the Durrani outline on the map still includes the region until c. 1820. Gwadar is not cut out. The western edge in Makran is approximate. Drawn to 1857; the princely-states layer covers 1858 onwards.",
    "coords": [
     [
      61.6,
@@ -5402,7 +5459,8 @@
      "when": "1550–1564"
     }
    ],
-   "note": "At its height under Rani Durgavati, the Gond kingdom of Garha held the upper Narmada valley (Jabalpur, Mandla, Narsinghpur, Damoh and Seoni). She died fighting Akbar's general Asaf Khan in 1564. The map leaves the Gondwana uplands blank until the Maratha outline covers them in 1752. The outline is approximate.",
+   "note": "At its height under Rani Durgavati, the Gond kingdom of Garha held the upper Narmada valley (Jabalpur, Mandla, Narsinghpur, Damoh and Seoni). She died fighting Akbar's general Asaf Khan in 1564.",
+   "dataNote": "The map leaves the Gondwana uplands blank until the Maratha outline covers them in 1752. The outline is approximate.",
    "coords": [
     [
      78.6,
@@ -5471,7 +5529,8 @@
      "when": "1776–1780"
     }
    ],
-   "note": "After 1564 the Gond rajas kept a reduced kingdom around Mandla as Mughal and later Maratha tributaries. The Saugor Marathas annexed it in 1781. From 1752 it lies inside the map's Maratha outline. The map leaves the Gondwana uplands blank until the Maratha outline covers them in 1752.",
+   "note": "After 1564 the Gond rajas kept a reduced kingdom around Mandla as Mughal and later Maratha tributaries. The Saugor Marathas annexed it in 1781.",
+   "dataNote": "From 1752 it lies inside the map's Maratha outline. The map leaves the Gondwana uplands blank until the Maratha outline covers them in 1752.",
    "coords": [
     [
      79.3,
@@ -5532,7 +5591,8 @@
      "when": "1735–1743"
     }
    ],
-   "note": "The Gond kings of Deogarh held the Chhindwara plateau and the Nagpur plain. Bakht Buland founded Nagpur, and the Bhonsle Raghoji I, called in during a succession dispute, made Burhan Shah a pensioner and founded the Bhonsle kingdom of Nagpur (Wikipedia gives 1739; Raghoji's control is usually dated 1743). The map leaves the Gondwana uplands blank until the Maratha outline covers them in 1752. Dates for the early rulers are uncertain.",
+   "note": "The Gond kings of Deogarh held the Chhindwara plateau and the Nagpur plain. Bakht Buland founded Nagpur, and the Bhonsle Raghoji I, called in during a succession dispute, made Burhan Shah a pensioner and founded the Bhonsle kingdom of Nagpur (Wikipedia gives 1739; Raghoji's control is usually dated 1743). Dates for the early rulers are uncertain.",
+   "dataNote": "The map leaves the Gondwana uplands blank until the Maratha outline covers them in 1752.",
    "coords": [
     [
      78.2,
@@ -5597,7 +5657,8 @@
      "when": "1735–1751"
     }
    ],
-   "note": "The Gond kingdom of Chanda held the Wardha–Wainganga country south of Deogarh. Raghoji I Bhonsle conquered it in 1751. The map leaves the Gondwana uplands blank until the Maratha outline covers them in 1752. The outline is approximate; the southern edge on the Pranhita–Godavari is a convention.",
+   "note": "The Gond kingdom of Chanda held the Wardha–Wainganga country south of Deogarh. Raghoji I Bhonsle conquered it in 1751.",
+   "dataNote": "The map leaves the Gondwana uplands blank until the Maratha outline covers them in 1752. The outline is approximate; the southern edge on the Pranhita–Godavari is a convention.",
    "coords": [
     [
      78.75,
@@ -5662,7 +5723,8 @@
      "when": "1731–1774"
     }
    ],
-   "note": "The Kakatiya-descended rajas of Bastar ruled the forested Dandakaranya plateau. They became tributaries of the Bhonsles of Nagpur in the 1770s. The map leaves the Gondwana uplands blank until the Maratha outline covers them in 1752. The outline follows the later Bastar State roughly; the early borders are unknown. After 1751 Bastar is part of the Maratha outline, and from 1818 a Nagpur feudatory (left out of the Nagpur region).",
+   "note": "The Kakatiya-descended rajas of Bastar ruled the forested Dandakaranya plateau. They became tributaries of the Bhonsles of Nagpur in the 1770s. Its early borders are unknown. From 1818 Bastar was a Nagpur feudatory.",
+   "dataNote": "The map leaves the Gondwana uplands blank until the Maratha outline covers them in 1752. The outline follows the later Bastar State roughly. After 1751 Bastar is part of the Maratha outline; from 1818 it is left out of the Nagpur region.",
    "coords": [
     [
      80.45,
@@ -5727,7 +5789,8 @@
      "when": "to 1741"
     }
    ],
-   "note": "The Haihaya (Kalachuri) rajas of Ratanpur ruled Chhattisgarh, with a cadet line at Raipur, until the Bhonsle general Bhaskar Pant took Ratanpur in 1741. Wikipedia gives 1758 as the dynasty's final end, under Maratha control. The map leaves the Gondwana uplands blank until the Maratha outline covers them in 1752. The outline is approximate.",
+   "note": "The Haihaya (Kalachuri) rajas of Ratanpur ruled Chhattisgarh, with a cadet line at Raipur, until the Bhonsle general Bhaskar Pant took Ratanpur in 1741. Wikipedia gives 1758 as the dynasty's final end, under Maratha control.",
+   "dataNote": "The map leaves the Gondwana uplands blank until the Maratha outline covers them in 1752. The outline is approximate.",
    "coords": [
     [
      81.2,
@@ -5800,7 +5863,8 @@
      "when": "1826–1853"
     }
    ],
-   "note": "The Jat state of the Sinsinwars. Under Suraj Mal (1755–63) its power stretched far beyond this outline, over Agra (held 1761–74), Mathura and Mewat; that larger dominion is not drawn. The outline is the later state, which withstood Lake's siege in 1805 and fell to Combermere in 1826. The map's small Mughal outline around Delhi and Agra may overlap its northern part. Drawn to 1857; the princely-states layer covers 1858 onwards.",
+   "note": "The Jat state of the Sinsinwars. Under Suraj Mal (1755–63) its power stretched far beyond the later state, over Agra (held 1761–74), Mathura and Mewat. The later state withstood Lake's siege in 1805 and fell to Combermere in 1826.",
+   "dataNote": "Under Suraj Mal its power stretched far beyond this outline; that larger dominion is not drawn. The outline is the later state. The map's small Mughal outline around Delhi and Agra may overlap its northern part. Drawn to 1857; the princely-states layer covers 1858 onwards.",
    "coords": [
     [
      77.02,

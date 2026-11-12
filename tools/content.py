@@ -221,6 +221,10 @@ def main():
             ok.append(rg)
         sup["regions"] = ok
         check_sources(f"supplement {sup.get('id')}", sup)
+        # dataNote = notes about the map data for the people who maintain it; readers never see them
+        sup.pop("dataNote", None)
+        for rg in ok:
+            rg.pop("dataNote", None)
         supplements.append(sup)
     # Archaeological cultures (content/ancient/cultures-*.json) become one reconstruction layer of kind "cultures":
     # approximate regions with an evidence label, drawn dashed and clipped to land like other reconstructions.
@@ -353,6 +357,7 @@ def main():
                 bad.append(f"arrow {a.get('name')}: bad path or dates")
         problems += [f"cinema {wid}: {b}" for b in bad]
         check_sources(f"cinema {wid}", c)
+        c.pop("dataNote", None)  # notes about the map data, for maintainers only
         with open(os.path.join(cdir, f"{wid}.json"), "w") as fh:
             json.dump(c, fh, ensure_ascii=False, separators=(",", ":"))
         by_id[wid]["cinema"] = True
@@ -380,8 +385,12 @@ def main():
             json.dump(out_ia, fh, ensure_ascii=False, separators=(",", ":"))
 
     out = os.path.join(ROOT, "public", "data", "content.json")
+    def public(o):  # without the notes about the map data, which are for the people who maintain it (dataNote)
+        if isinstance(o, dict): return {k: public(v) for k, v in o.items() if k != "dataNote"}
+        if isinstance(o, list): return [public(v) for v in o]
+        return o
     with open(out, "w") as fh:
-        json.dump({"eras": eras, "empires": empires, "moments": moments, "journeys": journeys, "wars": wars}, fh, ensure_ascii=False, separators=(",", ":"))
+        json.dump(public({"eras": eras, "empires": empires, "moments": moments, "journeys": journeys, "wars": wars}), fh, ensure_ascii=False, separators=(",", ":"))
     with open(os.path.join(ROOT, "content", "empires.json"), "w") as fh:
         json.dump(empires, fh, ensure_ascii=False, indent=1)
     print(f"{len(eras)} eras, {len(empires)} empires, {len(moments)} moments, {len(journeys)} journeys, {len(wars)} wars, {len(seen_clio)} clio links, {len(seen_alias)} aliases -> {os.path.relpath(out, ROOT)} ({os.path.getsize(out) // 1024} KB)")

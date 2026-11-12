@@ -4,7 +4,8 @@
  "from": 1000,
  "to": 1550,
  "replaces": [],
- "summary": "Between the Ghaznavid raids and the Mughal conquest, South Asia was shared by dozens of regional states that the border data leaves out: the Madurai Sultanate in the Tamil country, the sultanates of Gujarat, Malwa and Khandesh, the Reddi and Velama kingdoms of Andhra, the Gajapatis of Odisha, the Rajput kingdoms of Mewar and Marwar, the Ahom, Chutia, Kamata and Tripura kingdoms of the north-east, the successors of the Chera Perumals on the Malabar coast, and the Sinhala kingdoms of Gampola, Kotte and Kandy. Their dates and capitals come from cited reference works; their borders are reconstructions checked against Joppen's Historical Atlas of India (1914) and Schwartzberg's Historical Atlas of South Asia. Few medieval sources describe frontiers, so every line here is approximate.",
+ "summary": "Between the Ghaznavid raids and the Mughal conquest, South Asia was shared by dozens of regional states: the Madurai Sultanate in the Tamil country, the sultanates of Gujarat, Malwa and Khandesh, the Reddi and Velama kingdoms of Andhra, the Gajapatis of Odisha, the Rajput kingdoms of Mewar and Marwar, the Ahom, Chutia, Kamata and Tripura kingdoms of the north-east, the successors of the Chera Perumals on the Malabar coast, and the Sinhala kingdoms of Gampola, Kotte and Kandy. Few medieval sources describe frontiers.",
+ "dataNote": "The border data leaves these states out. Their dates and capitals come from cited reference works; their borders are reconstructions checked against Joppen's Historical Atlas of India (1914) and Schwartzberg's Historical Atlas of South Asia. Every line here is approximate.",
  "regions": [
   {
    "name": "Madurai Sultanate (Ma'bar)",
@@ -152,7 +153,8 @@
      "when": "1368–1378"
     }
    ],
-   "note": "Rump sultanate after Vijayanagara's prince Kumara Kampana took Srirangam and the Kaveri country (the Ranganatha image was reinstalled at Srirangam in 1371). Madurai fell and the last sultan was killed in 1378 (Wikipedia 'Madurai Sultanate'). The exact line of the shrinking frontier is not recorded; this slice simply drops the Kaveri belt.",
+   "note": "Rump sultanate after Vijayanagara's prince Kumara Kampana took Srirangam and the Kaveri country (the Ranganatha image was reinstalled at Srirangam in 1371). Madurai fell and the last sultan was killed in 1378 (Wikipedia 'Madurai Sultanate'). The exact line of the shrinking frontier is not recorded.",
+   "dataNote": "This slice simply drops the Kaveri belt.",
    "coords": [
     [
      77.75,
@@ -245,7 +247,8 @@
      "when": "1337–c. 1373 (regnal years)"
     }
    ],
-   "note": "Former Chola and Pandya vassals who issued records in their own regnal years in the mid-14th century (Wikipedia 'Sambuvarayar'). Kumara Kampana of Vijayanagara defeated Rajanarayana on his march south (Madhura Vijayam); c. 1362 is used here, though some lists run the line to 1375. Extent = northern Tondaimandalam (Palar basin, Ponnaiyar to Pulicat); approximate.",
+   "note": "Former Chola and Pandya vassals who issued records in their own regnal years in the mid-14th century (Wikipedia 'Sambuvarayar'). Kumara Kampana of Vijayanagara defeated Rajanarayana on his march south (Madhura Vijayam), c. 1362, though some lists run the line to 1375. Extent = northern Tondaimandalam (Palar basin, Ponnaiyar to Pulicat).",
+   "dataNote": "c. 1362 is used here. Extent approximate.",
    "coords": [
     [
      79.75,
@@ -318,7 +321,8 @@
      "when": "1356–1377, co-ruler before"
     }
    ],
-   "note": "Vijayanagara's founding years, before the border data begins (1344). Harihara and Bukka took over the former Kampili kingdom on the Tungabhadra c. 1336; the Hoysala Ballala III still held the south until 1343. Extent = Kampili's lands around Hampi (Schwartzberg V.2 inset e). The 1336 founding date is traditional.",
+   "note": "Vijayanagara's founding years. Harihara and Bukka took over the former Kampili kingdom on the Tungabhadra c. 1336; the Hoysala Ballala III still held the south until 1343. Extent = Kampili's lands around Hampi (Schwartzberg V.2 inset e). The 1336 founding date is traditional.",
+   "dataNote": "Before the border data begins (1344).",
    "coords": [
     [
      75.8,
@@ -375,7 +379,8 @@
      "when": "1347–1358"
     }
    ],
-   "note": "The Bahmani state's first years, before the border data begins (1352). Founded by rebel Tughluq officers at Daulatabad in 1347; its four provinces were Gulbarga, Daulatabad, Berar and Bidar (Joppen p. 19; Wikipedia 'Bahmani Sultanate'). The eastern line against the Musunuri Nayakas of Warangal is approximate.",
+   "note": "The Bahmani state's first years. Founded by rebel Tughluq officers at Daulatabad in 1347; its four provinces were Gulbarga, Daulatabad, Berar and Bidar (Joppen p. 19; Wikipedia 'Bahmani Sultanate').",
+   "dataNote": "Before the border data begins (1352). The eastern line against the Musunuri Nayakas of Warangal is approximate.",
    "coords": [
     [
      73.7,
@@ -492,7 +497,8 @@
      "when": "1386–1402"
     }
    ],
-   "note": "Founded by Prolaya Vema Reddi after the fall of the Kakatiyas (1323), between the lower Krishna and the Gundlakamma (Wikipedia 'Reddi Kingdom'). Boundaries approximate; Joppen (1398) folds the Reddis into a single 'Telingana'.",
+   "note": "Founded by Prolaya Vema Reddi after the fall of the Kakatiyas (1323), between the lower Krishna and the Gundlakamma (Wikipedia 'Reddi Kingdom'). Joppen (1398) folds the Reddis into a single 'Telingana'.",
+   "dataNote": "Boundaries approximate.",
    "coords": [
     [
      79.35,
@@ -565,7 +571,8 @@
      "when": "1386–1402"
     }
    ],
-   "note": "Peak under Anavema and Kumaragiri: from Srisailam to the sea and north to the Godavari delta, where a Rajahmundry branch ruled from the 1390s. Kondavidu fell to Vijayanagara in 1424. Wikipedia 'Reddi Kingdom'; extent approximate.",
+   "note": "Peak under Anavema and Kumaragiri: from Srisailam to the sea and north to the Godavari delta, where a Rajahmundry branch ruled from the 1390s. Kondavidu fell to Vijayanagara in 1424. Wikipedia 'Reddi Kingdom'.",
+   "dataNote": "Extent approximate.",
    "coords": [
     [
      78.75,
@@ -853,7 +860,8 @@
      "when": "c. 1414–1434"
     }
    ],
-   "note": "Last century of the Eastern Gangas (Wikipedia 'Eastern Ganga dynasty'); Firuz Shah Tughluq raided Odisha in 1360. Odisha and northern Kalinga after the border data stops (1351). Western hill limit and southern limit near Simhachalam follow Schwartzberg plate XIV.3(d); approximate.",
+   "note": "Last century of the Eastern Gangas (Wikipedia 'Eastern Ganga dynasty'); Firuz Shah Tughluq raided Odisha in 1360. Odisha and northern Kalinga.",
+   "dataNote": "After the border data stops (1351). Western hill limit and southern limit near Simhachalam follow Schwartzberg plate XIV.3(d); approximate.",
    "coords": [
     [
      87.6,
@@ -966,7 +974,8 @@
      "when": "1497–1540"
     }
    ],
-   "note": "Kapilendra Deva seized the throne on the death of the last Ganga king (1434; Wikipedia 'Gajapati Empire'). Odisha and northern Kalinga after the border data stops (1351). Western hill limit and southern limit near Simhachalam follow Schwartzberg plate XIV.3(d); approximate.",
+   "note": "Kapilendra Deva seized the throne on the death of the last Ganga king (1434; Wikipedia 'Gajapati Empire'). Odisha and northern Kalinga.",
+   "dataNote": "After the border data stops (1351). Western hill limit and southern limit near Simhachalam follow Schwartzberg plate XIV.3(d); approximate.",
    "coords": [
     [
      87.6,
@@ -1079,7 +1088,8 @@
      "when": "1497–1540"
     }
    ],
-   "note": "Kapilendra took the Reddi lands: Rajahmundry (c. 1448) and Kondavidu (1454), bringing the frontier to the Krishna (Wikipedia 'Gajapati Empire'). Raids into Telangana and Bahmani territory are not shown as annexations.",
+   "note": "Kapilendra took the Reddi lands: Rajahmundry (c. 1448) and Kondavidu (1454), bringing the frontier to the Krishna (Wikipedia 'Gajapati Empire'). Raids into Telangana and Bahmani territory were not annexations.",
+   "dataNote": "Raids into Telangana and Bahmani territory are not shown as annexations.",
    "coords": [
     [
      87.6,
@@ -1224,7 +1234,8 @@
      "when": "1497–1540"
     }
    ],
-   "note": "Prince Hamvira's southern campaign (c. 1463–64) carried Gajapati arms down the Coromandel coast through Udayagiri and Kanchi to the Kaveri; Wikipedia gives the peak as reaching Tiruchirappalli. This was a short military occupation of the coastal belt, lost again by the 1470s; the inland line is a guess.",
+   "note": "Prince Hamvira's southern campaign (c. 1463–64) carried Gajapati arms down the Coromandel coast through Udayagiri and Kanchi to the Kaveri; Wikipedia gives the peak as reaching Tiruchirappalli. This was a short military occupation of the coastal belt, lost again by the 1470s.",
+   "dataNote": "The inland line is a guess.",
    "coords": [
     [
      87.6,
@@ -1538,7 +1549,8 @@
      "when": "1497–1540"
     }
    ],
-   "note": "Purushottama recovered the coast to the Krishna as the Bahmani state broke up, and the Gajapatis held Udayagiri until Krishnadevaraya took it in 1513. Approximate.",
+   "note": "Purushottama recovered the coast to the Krishna as the Bahmani state broke up, and the Gajapatis held Udayagiri until Krishnadevaraya took it in 1513.",
+   "dataNote": "Approximate.",
    "coords": [
     [
      87.6,
@@ -1691,7 +1703,8 @@
      "when": "1497–1540"
     }
    ],
-   "note": "After Krishnadevaraya's campaigns (Udayagiri 1513, Kondavidu 1515) the 1519 peace left the Gajapatis the land north of the Krishna; Golconda soon pressed on the Godavari districts. Drawn to the Godavari delta. Joppen's 1525 map instead gives the whole coast to Golconda; the mainstream account is followed here.",
+   "note": "After Krishnadevaraya's campaigns (Udayagiri 1513, Kondavidu 1515) the 1519 peace left the Gajapatis the land north of the Krishna; Golconda soon pressed on the Godavari districts. Joppen's 1525 map instead gives the whole coast to Golconda.",
+   "dataNote": "Drawn to the Godavari delta. The mainstream account is followed here.",
    "coords": [
     [
      87.6,
@@ -1808,7 +1821,8 @@
      "when": "1548–1557"
     }
    ],
-   "note": "Govinda Vidyadhara usurped the Gajapati throne in 1541; the kingdom kept its core in Odisha (Wikipedia 'Bhoi dynasty'). Same colour as the Gajapatis because it is the same state under a new house. Southern limit approximate.",
+   "note": "Govinda Vidyadhara usurped the Gajapati throne in 1541; the kingdom kept its core in Odisha (Wikipedia 'Bhoi dynasty'). It was the same state under a new house.",
+   "dataNote": "Same colour as the Gajapatis because it is the same state under a new house. Southern limit approximate.",
    "coords": [
     [
      87.6,
@@ -2018,7 +2032,8 @@
      "when": "1210–1212, last"
     }
    ],
-   "note": "Core of the Chedi (Dahala-mandala) kingdom on the upper Narmada and Son. Under Lakshmikarna its hegemony briefly reached far beyond; the core is drawn. Joppen p. 14 equates the old kingdom of Chedi with the region south of Bundelkhand; Wikipedia 'Kalachuris of Tripuri'.",
+   "note": "Core of the Chedi (Dahala-mandala) kingdom on the upper Narmada and Son. Under Lakshmikarna its hegemony briefly reached far beyond. Joppen p. 14 equates the old kingdom of Chedi with the region south of Bundelkhand; Wikipedia 'Kalachuris of Tripuri'.",
+   "dataNote": "The core is drawn.",
    "coords": [
     [
      79.0,
@@ -2091,7 +2106,8 @@
      "when": "early 13th c."
     }
    ],
-   "note": "Offshoot of the Tripuri Kalachuris in Dakshina Kosala (Chhattisgarh plains), independent from the end of the 11th century (Wikipedia 'Kalachuris of Ratnapura'). Extent = upper Mahanadi plains; approximate.",
+   "note": "Offshoot of the Tripuri Kalachuris in Dakshina Kosala (Chhattisgarh plains), independent from the end of the 11th century (Wikipedia 'Kalachuris of Ratnapura'). Extent = upper Mahanadi plains.",
+   "dataNote": "Approximate.",
    "coords": [
     [
      81.2,
@@ -2148,7 +2164,8 @@
      "when": "early 13th c., last confirmed of the early line"
     }
    ],
-   "note": "After Pratapamalla the record is thin; a Haihaya dynasty of Ratanpur (with a Raipur branch from about the 14th century) ruled the Chhattisgarh plains until the Marathas (1740s; Wikipedia 'Kalachuris of Ratnapura' gives 1758). Joppen's 1525 map labels the area Chattisgarh within Gondwana. Shown with the same colour; continuity of the line is uncertain.",
+   "note": "After Pratapamalla the record is thin; a Haihaya dynasty of Ratanpur (with a Raipur branch from about the 14th century) ruled the Chhattisgarh plains until the Marathas (1740s; Wikipedia 'Kalachuris of Ratnapura' gives 1758). Joppen's 1525 map labels the area Chattisgarh within Gondwana. Continuity of the line is uncertain.",
+   "dataNote": "Shown with the same colour.",
    "coords": [
     [
      81.2,
@@ -2205,7 +2222,8 @@
      "when": "date legendary"
     }
    ],
-   "note": "Gond kingdom of the upper Narmada, founded in the 15th century (Wikipedia 'Garha kingdom', from 1440). Early extent (Garha-Mandla core) is a guess.",
+   "note": "Gond kingdom of the upper Narmada, founded in the 15th century (Wikipedia 'Garha kingdom', from 1440).",
+   "dataNote": "Early extent (Garha-Mandla core) is a guess.",
    "coords": [
     [
      79.4,
@@ -2262,7 +2280,8 @@
      "when": "regent from c. 1550"
     }
    ],
-   "note": "Sangram Shah enlarged the kingdom to a traditional 52 forts; Joppen's 1525 map marks Jabalpur and Mandla within Gondwana. Extent approximate; dates of Sangram Shah vary between sources.",
+   "note": "Sangram Shah enlarged the kingdom to a traditional 52 forts; Joppen's 1525 map marks Jabalpur and Mandla within Gondwana. Dates of Sangram Shah vary between sources.",
+   "dataNote": "Extent approximate.",
    "coords": [
     [
      79.0,
@@ -2335,7 +2354,8 @@
      "when": "1520–1537"
     }
    ],
-   "note": "Faruqi sultanate of the Tapti valley, often a vassal of Gujarat (Wikipedia 'Farooqui dynasty', 1382–1601; Joppen 1398 map: capital Thalner). Bounded by the Satpuras (Malwa), the Ajanta hills (Bahmani/Ahmadnagar), Berar on the east and Gujarat's Nandurbar district on the west. Continues to 1601 beyond this layer.",
+   "note": "Faruqi sultanate of the Tapti valley, often a vassal of Gujarat (Wikipedia 'Farooqui dynasty', 1382–1601; Joppen 1398 map: capital Thalner). Bounded by the Satpuras (Malwa), the Ajanta hills (Bahmani/Ahmadnagar), Berar on the east and Gujarat's Nandurbar district on the west. Continues to 1601.",
+   "dataNote": "Continues beyond this layer.",
    "coords": [
     [
      74.3,
@@ -2416,7 +2436,8 @@
      "when": "1516–1518"
     }
    ],
-   "note": "Tughluq feudatories who took Gwalior in the 1390s and kept it against Delhi until Ibrahim Lodi's siege (Wikipedia 'Tomaras of Gwalior', c. 1390–c. 1518). Extent around Gwalior fort; approximate.",
+   "note": "Tughluq feudatories who took Gwalior in the 1390s and kept it against Delhi until Ibrahim Lodi's siege (Wikipedia 'Tomaras of Gwalior', c. 1390–c. 1518). Extent around Gwalior fort.",
+   "dataNote": "Approximate.",
    "coords": [
     [
      77.5,
@@ -2477,7 +2498,8 @@
      "when": "1511–1531"
     }
    ],
-   "note": "Dilawar Khan, Tughluq governor, made Malwa independent in 1401; Hoshang Shah moved the capital to Mandu and took Gagron (1423). Wikipedia 'Malwa Sultanate'; extent checked against Joppen's 1398 and 1525 maps (Ujjain, Mandu, Chanderi; Narmada valley to the Satpuras).",
+   "note": "Dilawar Khan, Tughluq governor, made Malwa independent in 1401; Hoshang Shah moved the capital to Mandu and took Gagron (1423). Wikipedia 'Malwa Sultanate'; Joppen's 1398 and 1525 maps (Ujjain, Mandu, Chanderi; Narmada valley to the Satpuras).",
+   "dataNote": "Extent checked against Joppen's 1398 and 1525 maps.",
    "coords": [
     [
      74.65,
@@ -2598,7 +2620,8 @@
      "when": "1511–1531"
     }
    ],
-   "note": "Peak under Mahmud Khalji I, who fought Gujarat, Mewar and the Bahmanis; eastern districts (Bhilsa, Raisen, Damoh) included as on Joppen's 1525 map. Raids and short occupations (Ajmer, Ranthambore) not shown.",
+   "note": "Peak under Mahmud Khalji I, who fought Gujarat, Mewar and the Bahmanis, with the eastern districts (Bhilsa, Raisen, Damoh), as on Joppen's 1525 map. Raids and short occupations reached Ajmer and Ranthambore.",
+   "dataNote": "Eastern districts (Bhilsa, Raisen, Damoh) included as on Joppen's 1525 map. Raids and short occupations (Ajmer, Ranthambore) not shown.",
    "coords": [
     [
      74.65,
@@ -2816,7 +2839,8 @@
      "when": "1301–1305, last"
     }
    ],
-   "note": "Continues the Paramara realm after the border data stops (1235): the dynasty held western Malwa until Alauddin Khalji's conquest in 1305 (Wikipedia 'Paramara dynasty', 948–1305). Reduced extent after Iltutmish's raid on Ujjain (1234–35); approximate.",
+   "note": "The dynasty held western Malwa until Alauddin Khalji's conquest in 1305 (Wikipedia 'Paramara dynasty', 948–1305). Reduced extent after Iltutmish's raid on Ujjain (1234–35).",
+   "dataNote": "Continues the Paramara realm after the border data stops (1235). Approximate.",
    "coords": [
     [
      74.9,
@@ -3404,7 +3428,8 @@
      "when": "1526–1537"
     }
    ],
-   "note": "Bahadur Shah annexed Malwa (1531) and Raisen (1532) and sacked Chittor (1535) before Humayun overran Gujarat (1535–36). Bassein went to the Portuguese in 1534. The hill country between Gujarat and Malwa (Jhabua, Alirajpur) is bridged over.",
+   "note": "Bahadur Shah annexed Malwa (1531) and Raisen (1532) and sacked Chittor (1535) before Humayun overran Gujarat (1535–36). Bassein went to the Portuguese in 1534.",
+   "dataNote": "The hill country between Gujarat and Malwa (Jhabua, Alirajpur) is bridged over.",
    "coords": [
     [
      71.25,
@@ -3935,7 +3960,8 @@
      "when": "1451–1472, last"
     }
    ],
-   "note": "Rulers of Sorath (south-western Saurashtra) with the fortress of Uparkot and Mount Girnar; often tributary to the Chaulukyas and later to Gujarat, conquered by Mahmud Begada in 1472 (Wikipedia 'Chudasama dynasty'). Joppen marks western Kathiawar independent in 1318 and 1398. Extent (Sorath only) approximate; early chronology is mostly bardic.",
+   "note": "Rulers of Sorath (south-western Saurashtra) with the fortress of Uparkot and Mount Girnar; often tributary to the Chaulukyas and later to Gujarat, conquered by Mahmud Begada in 1472 (Wikipedia 'Chudasama dynasty'). Joppen marks western Kathiawar independent in 1318 and 1398. Early chronology is mostly bardic.",
+   "dataNote": "Extent (Sorath only) approximate.",
    "coords": [
     [
      69.95,
@@ -4045,7 +4071,8 @@
      "when": "1548–1585"
     }
    ],
-   "note": "Kutch was held by Samma (later Jadeja) chiefs from the 12th century (Wikipedia 'Cutch State', from 1147, capital Lakhiarviro until 1548). Joppen shows Kutch independent in 1318 and 1398. It was divided among branches until Khengarji I united it; its Rann and Wagad edges are approximate.",
+   "note": "Kutch was held by Samma (later Jadeja) chiefs from the 12th century (Wikipedia 'Cutch State', from 1147, capital Lakhiarviro until 1548). Joppen shows Kutch independent in 1318 and 1398. It was divided among branches until Khengarji I united it.",
+   "dataNote": "Its Rann and Wagad edges are approximate.",
    "coords": [
     [
      68.3,
@@ -4118,7 +4145,8 @@
      "when": "d. 1303"
     }
    ],
-   "note": "The Guhilas of Medapata, sovereign from the 10th century and fighting Paramaras, Chaulukyas and Chahamanas (Wikipedia 'Guhila dynasty'). Chittor fell to Alauddin Khalji in 1303. Core Mewar between the Aravallis and the Banas; approximate.",
+   "note": "The Guhilas of Medapata, sovereign from the 10th century and fighting Paramaras, Chaulukyas and Chahamanas (Wikipedia 'Guhila dynasty'). Chittor fell to Alauddin Khalji in 1303. Core Mewar between the Aravallis and the Banas.",
+   "dataNote": "Approximate.",
    "coords": [
     [
      73.4,
@@ -4187,7 +4215,8 @@
      "when": "1537–1572"
     }
    ],
-   "note": "Hammir Singh of the Sisodia branch recovered Chittor (1326) and refounded the kingdom (Wikipedia 'Kingdom of Mewar'). Approximate.",
+   "note": "Hammir Singh of the Sisodia branch recovered Chittor (1326) and refounded the kingdom (Wikipedia 'Kingdom of Mewar').",
+   "dataNote": "Approximate.",
    "coords": [
     [
      73.35,
@@ -4260,7 +4289,8 @@
      "when": "1537–1572"
     }
    ],
-   "note": "Rana Kumbha built Kumbhalgarh, took Mandalgarh and fought Malwa and Gujarat; Marwar was under Mewar control 1438–1453. Approximate.",
+   "note": "Rana Kumbha built Kumbhalgarh, took Mandalgarh and fought Malwa and Gujarat; Marwar was under Mewar control 1438–1453.",
+   "dataNote": "Approximate.",
    "coords": [
     [
      73.3,
@@ -4345,7 +4375,8 @@
      "when": "1537–1572"
     }
    ],
-   "note": "Rana Sanga's hegemony: Ranthambore and the Hadoti country, victory over Malwa at Gagron (1519) with Chanderi and Raisen held by his vassals (not drawn). Ended by Babur's victory at Khanwa (1527). Extent approximate.",
+   "note": "Rana Sanga's hegemony: Ranthambore and the Hadoti country, victory over Malwa at Gagron (1519) with Chanderi and Raisen held by his vassals. Ended by Babur's victory at Khanwa (1527).",
+   "dataNote": "Chanderi and Raisen (held by his vassals) not drawn. Extent approximate.",
    "coords": [
     [
      73.3,
@@ -4450,7 +4481,8 @@
      "when": "1537–1572"
     }
    ],
-   "note": "After Khanwa Mewar fell back to its core; Bahadur Shah of Gujarat sacked Chittor in 1535 and Sher Shah received its submission in 1544. Approximate.",
+   "note": "After Khanwa Mewar fell back to its core; Bahadur Shah of Gujarat sacked Chittor in 1535 and Sher Shah received its submission in 1544.",
+   "dataNote": "Approximate.",
    "coords": [
     [
      73.3,
@@ -4539,7 +4571,8 @@
      "when": "1532–1562"
     }
    ],
-   "note": "The Rathores, at Pali since the 13th century, moved to Mandore under Rao Chunda in 1395 (Wikipedia 'Kingdom of Marwar'). After Rao Ranmal's murder at Chittor (1438) Mewar held Mandore until Jodha retook it (1453). Approximate.",
+   "note": "The Rathores, at Pali since the 13th century, moved to Mandore under Rao Chunda in 1395 (Wikipedia 'Kingdom of Marwar'). After Rao Ranmal's murder at Chittor (1438) Mewar held Mandore until Jodha retook it (1453).",
+   "dataNote": "Approximate.",
    "coords": [
     [
      72.7,
@@ -4608,7 +4641,8 @@
      "when": "1532–1562"
     }
    ],
-   "note": "Rao Jodha recovered Mandore (1453) and founded Jodhpur (1459); kinsmen founded Bikaner and Merta. Approximate.",
+   "note": "Rao Jodha recovered Mandore (1453) and founded Jodhpur (1459); kinsmen founded Bikaner and Merta.",
+   "dataNote": "Approximate.",
    "coords": [
     [
      72.4,
@@ -4685,7 +4719,8 @@
      "when": "1532–1562"
     }
    ],
-   "note": "Rao Maldeo took Nagaur, Ajmer, Merta, Jalore and Sambhar and briefly Bikaner (1542), until Sher Shah's victory at Sammel (1544). Wikipedia 'Kingdom of Marwar'. Bikaner's occupation is not drawn. Approximate.",
+   "note": "Rao Maldeo took Nagaur, Ajmer, Merta, Jalore and Sambhar and briefly Bikaner (1542), until Sher Shah's victory at Sammel (1544). Wikipedia 'Kingdom of Marwar'.",
+   "dataNote": "Bikaner's occupation is not drawn. Approximate.",
    "coords": [
     [
      71.9,
@@ -4778,7 +4813,8 @@
      "when": "1532–1562"
     }
    ],
-   "note": "Maldeo recovered Jodhpur after Sher Shah's death (1545); drawn at its core extent. Approximate.",
+   "note": "Maldeo recovered Jodhpur after Sher Shah's death (1545).",
+   "dataNote": "Drawn at its core extent. Approximate.",
    "coords": [
     [
      72.4,
@@ -4847,7 +4883,8 @@
      "when": "1526–1542"
     }
    ],
-   "note": "Rao Bika, a son of Rao Jodha, conquered the Jat clans of Jangladesh from 1465 (Wikipedia 'Bikaner State'). Maldeo of Marwar held it 1542–44 (not shown). Continues as a princely state. Approximate.",
+   "note": "Rao Bika, a son of Rao Jodha, conquered the Jat clans of Jangladesh from 1465 (Wikipedia 'Bikaner State'). Maldeo of Marwar held it 1542–44. Continues as a princely state.",
+   "dataNote": "Maldeo's hold on Bikaner (1542–44) not shown. Approximate.",
    "coords": [
     [
      72.0,
@@ -4912,7 +4949,8 @@
      "when": "1156–1168"
     }
    ],
-   "note": "Rawal Jaisal moved the Bhati capital from Lodhruva to Jaisalmer in 1156 (Wikipedia 'Kingdom of Jaisalmer'); the desert kingdom was sacked by Delhi's forces c. 1299 but survived. Borders in the Thar are notional.",
+   "note": "Rawal Jaisal moved the Bhati capital from Lodhruva to Jaisalmer in 1156 (Wikipedia 'Kingdom of Jaisalmer'); the desert kingdom was sacked by Delhi's forces c. 1299 but survived.",
+   "dataNote": "Borders in the Thar are notional.",
    "coords": [
     [
      70.0,
@@ -4981,7 +5019,8 @@
      "when": "c. 1292–1311"
     }
    ],
-   "note": "Branch of the Naddula Chahamanas, Chaulukya feudatories and then independent, ended by Alauddin Khalji's siege of Jalore (1311; Wikipedia 'Chahamanas of Jalor'). Joppen's 1398 map marks Jalor. Approximate.",
+   "note": "Branch of the Naddula Chahamanas, Chaulukya feudatories and then independent, ended by Alauddin Khalji's siege of Jalore (1311; Wikipedia 'Chahamanas of Jalor'). Joppen's 1398 map marks Jalor.",
+   "dataNote": "Approximate.",
    "coords": [
     [
      71.7,
@@ -5046,7 +5085,8 @@
      "when": "1283–1301"
     }
    ],
-   "note": "Founded by Prithviraja III's son Govindaraja as a Ghurid vassal in 1192, alternately subject to and independent of Delhi, ended by Alauddin Khalji's siege (1301; Wikipedia 'Chahamanas of Ranastambhapura'). Approximate.",
+   "note": "Founded by Prithviraja III's son Govindaraja as a Ghurid vassal in 1192, alternately subject to and independent of Delhi, ended by Alauddin Khalji's siege (1301; Wikipedia 'Chahamanas of Ranastambhapura').",
+   "dataNote": "Approximate.",
    "coords": [
     [
      75.8,
@@ -5095,7 +5135,8 @@
      "when": "c. 985–1010"
     }
    ],
-   "note": "Isma'ili emirate of Multan, conquered by Mahmud of Ghazni in 1010 (Wikipedia 'Emirate of Multan', 855–1010). Extent approximate.",
+   "note": "Isma'ili emirate of Multan, conquered by Mahmud of Ghazni in 1010 (Wikipedia 'Emirate of Multan', 855–1010).",
+   "dataNote": "Extent approximate.",
    "coords": [
     [
      70.5,
@@ -5148,7 +5189,8 @@
      "when": "1333–1351, last"
     }
    ],
-   "note": "Local dynasty of Lower Sindh, tributary at times to the Ghaznavids, Qabacha and Delhi (Wikipedia 'Soomra dynasty', 1026–1351). Drawn to 1343 because the border data shows the Samma state from 1344; the Samma takeover (1335–1351) is gradual. King lists are largely traditional.",
+   "note": "Local dynasty of Lower Sindh, tributary at times to the Ghaznavids, Qabacha and Delhi (Wikipedia 'Soomra dynasty', 1026–1351). The Samma takeover (1335–1351) was gradual. King lists are largely traditional.",
+   "dataNote": "Drawn to 1343 because the border data shows the Samma state from 1344.",
    "coords": [
     [
      67.2,
@@ -5221,7 +5263,8 @@
      "when": "governor from 1203, independent 1206–1228"
     }
    ],
-   "note": "Muhammad of Ghor's governor of Multan made himself independent after 1206 and held Upper Sindh and Multan until Iltutmish took Uch (1228). Lower Sindh's Soomras paid him tribute and are drawn separately. Extent approximate.",
+   "note": "Muhammad of Ghor's governor of Multan made himself independent after 1206 and held Upper Sindh and Multan until Iltutmish took Uch (1228). Lower Sindh's Soomras paid him tribute.",
+   "dataNote": "The Soomras are drawn separately. Extent approximate.",
    "coords": [
     [
      67.5,
@@ -5314,7 +5357,8 @@
      "when": "c. 1502–1525"
     }
    ],
-   "note": "Sultanate of the lower Punjab doab around Multan and Uch; annexed by the Arghuns in 1528 (Wikipedia 'Langah Sultanate'). Joppen's 1525 map shows 'Multan' as a strip along the Sutlej and Indus. Approximate.",
+   "note": "Sultanate of the lower Punjab doab around Multan and Uch; annexed by the Arghuns in 1528 (Wikipedia 'Langah Sultanate'). Joppen's 1525 map shows 'Multan' as a strip along the Sutlej and Indus.",
+   "dataNote": "Approximate.",
    "coords": [
     [
      70.3,
@@ -5375,7 +5419,8 @@
      "when": "1524–1554"
     }
    ],
-   "note": "Shah Beg Arghun, driven from Kandahar by Babur, took Thatta from the Sammas (c. 1520); his son conquered Multan (1528, not drawn) (Wikipedia 'Arghun dynasty'). The border data keeps the Samma state to 1525. Approximate.",
+   "note": "Shah Beg Arghun, driven from Kandahar by Babur, took Thatta from the Sammas (c. 1520); his son conquered Multan (1528) (Wikipedia 'Arghun dynasty').",
+   "dataNote": "Multan not drawn. The border data keeps the Samma state to 1525. Approximate.",
    "coords": [
     [
      67.0,
@@ -5476,7 +5521,8 @@
      "when": "fl. 1338–1358"
     }
    ],
-   "note": "Himalayan kingdom of the Karnali basin with its capital at Sinja, which at times also ruled Purang and Guge; it broke up into the Baise principalities in the late 14th century (Wikipedia 'Khasa Kingdom'). Schwartzberg V.2 marks the Mallas here. Hill extent only; approximate.",
+   "note": "Himalayan kingdom of the Karnali basin with its capital at Sinja, which at times also ruled Purang and Guge; it broke up into the Baise principalities in the late 14th century (Wikipedia 'Khasa Kingdom'). Schwartzberg V.2 marks the Mallas here.",
+   "dataNote": "Hill extent only; approximate.",
    "coords": [
     [
      80.25,
@@ -5557,7 +5603,8 @@
      "when": "invited Atisha, 1042"
     }
    ],
-   "note": "Western Tibetan kingdom of the upper Sutlej, at times holding Spiti, Kinnaur and Zanskar (Wikipedia 'Guge'); its line was interrupted in the 12th–14th centuries when Khasa Malla kings held sway. Continues to 1630. Extent approximate.",
+   "note": "Western Tibetan kingdom of the upper Sutlej, at times holding Spiti, Kinnaur and Zanskar (Wikipedia 'Guge'); its line was interrupted in the 12th–14th centuries when Khasa Malla kings held sway. Continues to 1630.",
+   "dataNote": "Extent approximate.",
    "coords": [
     [
      78.4,
@@ -5630,7 +5677,8 @@
      "when": "founded the Namgyal line c. 1460"
     }
    ],
-   "note": "Westernmost Tibetan kingdom, from the Zoji La to Demchok with Rudok (Wikipedia 'Kingdom of Maryul', c. 930–1842). Extent approximate.",
+   "note": "Westernmost Tibetan kingdom, from the Zoji La to Demchok with Rudok (Wikipedia 'Kingdom of Maryul', c. 930–1842).",
+   "dataNote": "Extent approximate.",
    "coords": [
     [
      75.8,
@@ -5707,7 +5755,8 @@
      "when": "1295–1324"
     }
    ],
-   "note": "Dynasty of Mithila (Tirhut) founded by Nanyadeva in 1097, ended when Ghiyath ad-Din Tughluq took Tirhut (1324) (Wikipedia 'Karnats of Mithila'; Schwartzberg V.2). Between the Gandak and the Kosi; approximate.",
+   "note": "Dynasty of Mithila (Tirhut) founded by Nanyadeva in 1097, ended when Ghiyath ad-Din Tughluq took Tirhut (1324) (Wikipedia 'Karnats of Mithila'; Schwartzberg V.2). Between the Gandak and the Kosi.",
+   "dataNote": "Approximate.",
    "coords": [
     [
      84.4,
@@ -5780,7 +5829,8 @@
      "when": "1349–1352"
     }
    ],
-   "note": "East Bengal broke from Delhi under Fakhruddin Mubarak Shah (1338), who also took Chittagong; Ilyas Shah annexed it in 1352 (Joppen p. 19: Bengal independent 1340; Wikipedia 'Bengal Sultanate'). Western line along the Jamuna-Padma; approximate.",
+   "note": "East Bengal broke from Delhi under Fakhruddin Mubarak Shah (1338), who also took Chittagong; Ilyas Shah annexed it in 1352 (Joppen p. 19: Bengal independent 1340; Wikipedia 'Bengal Sultanate'). Western line along the Jamuna-Padma.",
+   "dataNote": "Approximate.",
    "coords": [
     [
      89.9,
@@ -5873,7 +5923,8 @@
      "when": "1342–1358"
     }
    ],
-   "note": "West and north Bengal (Lakhnauti and Satgaon) before Ilyas Shah united Bengal in 1352; shares the Bengal Sultanate's colour because Ilyas Shah founded it. The border data's tiny 1344–51 polygon is left in place. Approximate.",
+   "note": "West and north Bengal (Lakhnauti and Satgaon) before Ilyas Shah united Bengal in 1352.",
+   "dataNote": "Shares the Bengal Sultanate's colour because Ilyas Shah founded it. The border data's tiny 1344–51 polygon is left in place. Approximate.",
    "coords": [
     [
      89.6,
@@ -5970,7 +6021,8 @@
      "when": "c. 1480–1498"
     }
    ],
-   "note": "Successor of western Kamarupa after Sandhya moved his seat to Kamatapur sometime after 1257 (Wikipedia 'Kamata Kingdom'); conquered by Alauddin Husain Shah of Bengal in 1498. Goalpara, Kamrup, Cooch Behar, Jalpaiguri and Rangpur; eastern limit approximate.",
+   "note": "Successor of western Kamarupa after Sandhya moved his seat to Kamatapur sometime after 1257 (Wikipedia 'Kamata Kingdom'); conquered by Alauddin Husain Shah of Bengal in 1498. Goalpara, Kamrup, Cooch Behar, Jalpaiguri and Rangpur.",
+   "dataNote": "Eastern limit approximate.",
    "coords": [
     [
      88.55,
@@ -6051,7 +6103,8 @@
      "when": "1540–1587"
     }
    ],
-   "note": "Biswa Singha rebuilt the former Kamata kingdom after Bengal's rule there collapsed (Wikipedia 'Koch dynasty', from 1515). Same frame as Kamata; approximate.",
+   "note": "Biswa Singha rebuilt the former Kamata kingdom after Bengal's rule there collapsed (Wikipedia 'Koch dynasty', from 1515).",
+   "dataNote": "Same frame as Kamata; approximate.",
    "coords": [
     [
      88.55,
@@ -6140,7 +6193,8 @@
      "when": "1539–1552"
     }
    ],
-   "note": "Sukaphaa's small Tai principality on the south bank of the upper Brahmaputra (Wikipedia 'Ahom kingdom', 1228–1826). Approximate.",
+   "note": "Sukaphaa's small Tai principality on the south bank of the upper Brahmaputra (Wikipedia 'Ahom kingdom', 1228–1826).",
+   "dataNote": "Approximate.",
    "coords": [
     [
      94.35,
@@ -6205,7 +6259,8 @@
      "when": "1539–1552"
     }
    ],
-   "note": "Gradual growth down the south bank and against the Kacharis. Approximate.",
+   "note": "Gradual growth down the south bank and against the Kacharis.",
+   "dataNote": "Approximate.",
    "coords": [
     [
      94.0,
@@ -6278,7 +6333,8 @@
      "when": "1539–1552"
     }
    ],
-   "note": "Suhungmung annexed the Chutia kingdom (1523–24) and pushed west to Kaliabor while repelling Bengal's invasions. Approximate.",
+   "note": "Suhungmung annexed the Chutia kingdom (1523–24) and pushed west to Kaliabor while repelling Bengal's invasions.",
+   "dataNote": "Approximate.",
    "coords": [
     [
      93.5,
@@ -6367,7 +6423,8 @@
      "when": "1539–1552"
     }
    ],
-   "note": "The Ahoms sacked the Dimasa capital Dimapur (1536) and took the Dhansiri valley. Approximate.",
+   "note": "The Ahoms sacked the Dimasa capital Dimapur (1536) and took the Dhansiri valley.",
+   "dataNote": "Approximate.",
    "coords": [
     [
      93.5,
@@ -6594,7 +6651,8 @@
      "when": "killed 1536"
     }
    ],
-   "note": "After the Ahoms sacked Dimapur (1536) the Dimasa capital moved to Maibang in the North Cachar hills. Approximate.",
+   "note": "After the Ahoms sacked Dimapur (1536) the Dimasa capital moved to Maibang in the North Cachar hills.",
+   "dataNote": "Approximate.",
    "coords": [
     [
      92.7,
@@ -6655,7 +6713,8 @@
      "when": "1532–1563"
     }
    ],
-   "note": "Manikya kingdom of the Tripuri people, established by Maha Manikya c. 1400 (Wikipedia 'Twipra Kingdom'). Hill core; approximate.",
+   "note": "Manikya kingdom of the Tripuri people, established by Maha Manikya c. 1400 (Wikipedia 'Twipra Kingdom').",
+   "dataNote": "Hill core; approximate.",
    "coords": [
     [
      91.15,
@@ -6724,7 +6783,8 @@
      "when": "1532–1563"
     }
    ],
-   "note": "Dhanya Manikya and his successors pushed into the Comilla plains and contested Chittagong with Bengal and Arakan (Chittagong not drawn). Approximate.",
+   "note": "Dhanya Manikya and his successors pushed into the Comilla plains and contested Chittagong with Bengal and Arakan.",
+   "dataNote": "Chittagong not drawn. Approximate.",
    "coords": [
     [
      90.9,
@@ -6789,7 +6849,8 @@
      "when": "1467–1508"
     }
    ],
-   "note": "Meitei kingdom of the Imphal valley (Wikipedia 'Manipur (princely state)', kingdom from 1110). The surrounding hills are included only roughly. Continues as a princely state.",
+   "note": "Meitei kingdom of the Imphal valley (Wikipedia 'Manipur (princely state)', kingdom from 1110). Continues as a princely state.",
+   "dataNote": "The surrounding hills are included only roughly.",
    "coords": [
     [
      93.0,
@@ -6850,7 +6911,8 @@
      "when": "c. 1089–1124, last"
     }
    ],
-   "note": "The medieval Chera kingdom, from the Chandragiri river to Nagercoil at its height (Wikipedia 'Chera Perumals of Kerala', c. 844–c. 1124); Chola invasions in the early 11th century did not end it. Its break-up c. 1124 produced Venad, Kolathunadu, Calicut and Cochin. Approximate.",
+   "note": "The medieval Chera kingdom, from the Chandragiri river to Nagercoil at its height (Wikipedia 'Chera Perumals of Kerala', c. 844–c. 1124); Chola invasions in the early 11th century did not end it. Its break-up c. 1124 produced Venad, Kolathunadu, Calicut and Cochin.",
+   "dataNote": "Approximate.",
    "coords": [
     [
      75.0,
@@ -6943,7 +7005,8 @@
      "when": "1299–1314"
     }
    ],
-   "note": "Southernmost successor of the Chera Perumals: Kollam, Thiruvananthapuram and Nanjinad (Wikipedia 'Venadu kingdom'). The northern limit against Kayamkulam and the Ghats line are approximate; Ravi Varma's campaign to Kanchi (1312–13) is not drawn.",
+   "note": "Southernmost successor of the Chera Perumals: Kollam, Thiruvananthapuram and Nanjinad (Wikipedia 'Venadu kingdom'). Ravi Varma led a campaign to Kanchi (1312–13).",
+   "dataNote": "The northern limit against Kayamkulam and the Ghats line are approximate; Ravi Varma's campaign to Kanchi (1312–13) is not drawn.",
    "coords": [
     [
      76.45,
@@ -7008,7 +7071,8 @@
      "when": "received the Portuguese at Cannanore, 1501"
     }
    ],
-   "note": "North Malabar between the Chandragiri and Korapuzha rivers (Wikipedia 'Kolathunadu'). Inland limit approximate.",
+   "note": "North Malabar between the Chandragiri and Korapuzha rivers (Wikipedia 'Kolathunadu').",
+   "dataNote": "Inland limit approximate.",
    "coords": [
     [
      75.0,
@@ -7069,7 +7133,8 @@
      "when": "Ibn Battuta at Calicut, 1342; Vasco da Gama, 1498"
     }
    ],
-   "note": "The Samoothiri of Nediyiruppu Swaroopam made Calicut the chief port of the Malabar coast (Wikipedia 'Zamorin'). It was flourishing when Ibn Battuta came in 1342; its start date is uncertain (c. 1300 used). Extent between the Korapuzha and Ponnani with Eranad; approximate.",
+   "note": "The Samoothiri of Nediyiruppu Swaroopam made Calicut the chief port of the Malabar coast (Wikipedia 'Zamorin'). It was flourishing when Ibn Battuta came in 1342; its start date is uncertain (c. 1300). Extent between the Korapuzha and Ponnani with Eranad.",
+   "dataNote": "c. 1300 used. Extent approximate.",
    "coords": [
     [
      75.72,
@@ -7126,7 +7191,8 @@
      "when": "allied with Cabral, 1500"
     }
    ],
-   "note": "Perumpadappu Swaroopam became a free principality after the Chera Perumals fell in the 12th century and rose to importance with the Portuguese (Wikipedia 'Kingdom of Cochin'). Extent around Kodungallur and Kochi; approximate, and much smaller before 1500.",
+   "note": "Perumpadappu Swaroopam became a free principality after the Chera Perumals fell in the 12th century and rose to importance with the Portuguese (Wikipedia 'Kingdom of Cochin'). Extent around Kodungallur and Kochi, much smaller before 1500.",
+   "dataNote": "Extent approximate.",
    "coords": [
     [
      76.02,
@@ -7187,7 +7253,8 @@
      "when": "1372–1408"
     }
    ],
-   "note": "Sinhala kingdom of the south-west and centre, with the Alagakkonara ministers dominant at Kotte late in the century (Wikipedia 'Kingdom of Gampola', 1341–1408). The Jaffna kingdom and the Vanni chiefs held the north. Approximate.",
+   "note": "Sinhala kingdom of the south-west and centre, with the Alagakkonara ministers dominant at Kotte late in the century (Wikipedia 'Kingdom of Gampola', 1341–1408). The Jaffna kingdom and the Vanni chiefs held the north.",
+   "dataNote": "Approximate.",
    "coords": [
     [
      79.6,
@@ -7264,7 +7331,8 @@
      "when": "1521–1551"
     }
    ],
-   "note": "Parakramabahu VI moved the capital to Kotte (1412) (Wikipedia 'Kingdom of Kotte'). Approximate.",
+   "note": "Parakramabahu VI moved the capital to Kotte (1412) (Wikipedia 'Kingdom of Kotte').",
+   "dataNote": "Approximate.",
    "coords": [
     [
      79.6,
@@ -7422,7 +7490,8 @@
      "when": "1521–1551"
     }
    ],
-   "note": "Jaffna regained independence and the hill country broke away as Kandy (c. 1469). Approximate.",
+   "note": "Jaffna regained independence and the hill country broke away as Kandy (c. 1469).",
+   "dataNote": "Approximate.",
    "coords": [
     [
      79.6,
@@ -7507,7 +7576,8 @@
      "when": "1521–1551"
     }
    ],
-   "note": "After the 'Spoiling of Vijayabahu' (1521) Kotte kept the western coast around Colombo and leaned on the Portuguese. Approximate.",
+   "note": "After the 'Spoiling of Vijayabahu' (1521) Kotte kept the western coast around Colombo and leaned on the Portuguese.",
+   "dataNote": "Approximate.",
    "coords": [
     [
      79.75,
@@ -7560,7 +7630,8 @@
      "when": "1511–1552"
     }
    ],
-   "note": "Hill-country kingdom founded in the late 15th century (Wikipedia 'Kingdom of Kandy', 1469–1815), with influence over the east coast. Approximate.",
+   "note": "Hill-country kingdom founded in the late 15th century (Wikipedia 'Kingdom of Kandy', 1469–1815), with influence over the east coast.",
+   "dataNote": "Approximate.",
    "coords": [
     [
      80.5,
@@ -7629,7 +7700,8 @@
      "when": "1521–1581"
     }
    ],
-   "note": "Mayadunne's share of the 1521 partition of Kotte, which absorbed Raigama in 1538 (Raigama not drawn separately) (Wikipedia 'Kingdom of Sitawaka'). Approximate.",
+   "note": "Mayadunne's share of the 1521 partition of Kotte, which absorbed Raigama in 1538 (Wikipedia 'Kingdom of Sitawaka').",
+   "dataNote": "Raigama not drawn separately. Approximate.",
    "coords": [
     [
      80.05,
@@ -7714,7 +7786,8 @@
    ],
    "from": 1044,
    "to": 1055,
-   "note": "The Tomaras ruled Delhi and parts of Haryana from the 8th to the 12th century. Mahipala probably took Hansi and Thanesar from the Ghaznavid Mawdud in the 1040s. Until 1055 the border data's Chauhan outline covers the country west of Delhi, so this shape stops short of Hansi. Boundaries approximate.",
+   "note": "The Tomaras ruled Delhi and parts of Haryana from the 8th to the 12th century. Mahipala probably took Hansi and Thanesar from the Ghaznavid Mawdud in the 1040s.",
+   "dataNote": "Until 1055 the border data's Chauhan outline covers the country west of Delhi, so this shape stops short of Hansi. Boundaries approximate.",
    "coords": [
     [
      76.6,
@@ -7779,7 +7852,8 @@
    ],
    "from": 1056,
    "to": 1151,
-   "note": "The Tomara kingdom of Delhi stretched to Hansi and Thanesar; Lal Kot in Delhi was its capital from about 1052. The Chahamana Arnoraja's raid (c. 1135-1150) was not decisive; his son Vigraharaja IV took Delhi (Dhillika) and Hansi (Ashika) around 1152. Boundaries approximate.",
+   "note": "The Tomara kingdom of Delhi stretched to Hansi and Thanesar; Lal Kot in Delhi was its capital from about 1052. The Chahamana Arnoraja's raid (c. 1135-1150) was not decisive; his son Vigraharaja IV took Delhi (Dhillika) and Hansi (Ashika) around 1152.",
+   "dataNote": "Boundaries approximate.",
    "coords": [
     [
      76.45,
@@ -7852,7 +7926,8 @@
      "when": "c. 1177–1192"
     }
    ],
-   "note": "Vigraharaja IV of the Shakambhari Chahamanas took Delhi and Hansi from the Tomaras around 1152; Delhi stayed Chahamana until Muhammad of Ghor ended Chahamana rule in 1192. The rest of the kingdom is the border data's Chauhan outline. Boundaries approximate.",
+   "note": "Vigraharaja IV of the Shakambhari Chahamanas took Delhi and Hansi from the Tomaras around 1152; Delhi stayed Chahamana until Muhammad of Ghor ended Chahamana rule in 1192.",
+   "dataNote": "The rest of the kingdom is the border data's Chauhan outline. Boundaries approximate.",
    "coords": [
     [
      76.45,
@@ -7915,7 +7990,8 @@
    "from": 1044,
    "to": 1191,
    "capital": "Nagarkot (Kangra fort)",
-   "note": "The hill kingdom of the Katoch rajas in old Trigarta, between the Beas and the Ravi, ruled from the fort of Nagarkot. Mahmud of Ghazni sacked Nagarkot in 1009 and a Ghaznavid garrison held it until the 1040s (the border data draws it as Ghaznavid until 1043). Chamba, to the north, is drawn within Kashmir by the border data. Boundaries approximate.",
+   "note": "The hill kingdom of the Katoch rajas in old Trigarta, between the Beas and the Ravi, ruled from the fort of Nagarkot. Mahmud of Ghazni sacked Nagarkot in 1009 and a Ghaznavid garrison held it until the 1040s.",
+   "dataNote": "The border data draws Nagarkot as Ghaznavid until 1043. Chamba, to the north, is drawn within Kashmir by the border data. Boundaries approximate.",
    "coords": [
     [
      75.95,
@@ -7972,7 +8048,8 @@
      "when": "1060–1064"
     }
    ],
-   "note": "The Katyuri kings ruled Kumaon, Garhwal and far-western Nepal from Kartikeyapura (Baijnath), where they had moved from Joshimath around 850. The dates follow Wikipedia's article, whose accuracy is disputed. Boundaries approximate.",
+   "note": "The Katyuri kings ruled Kumaon, Garhwal and far-western Nepal from Kartikeyapura (Baijnath), where they had moved from Joshimath around 850. The dates follow Wikipedia's article, whose accuracy is disputed.",
+   "dataNote": "Boundaries approximate.",
    "coords": [
     [
      77.85,
@@ -8039,7 +8116,8 @@
    "from": 1066,
    "to": 1200,
    "capital": "Baijnath, Dwarahat, Askot and other seats",
-   "note": "A civil war among the sons of Virdeo around 1065 split the Katyuri kingdom into branches at Sui, Doti, Askot, Baramandal, Baijnath and Dwarahat; Chand kings later displaced the Dwarahat branch. Drawn is Kumaon: Doti is drawn under the Khasa Mallas from 1100, and Garhwal, divided among petty chiefs, is left undrawn. The end date is uncertain. Boundaries approximate.",
+   "note": "A civil war among the sons of Virdeo around 1065 split the Katyuri kingdom into branches at Sui, Doti, Askot, Baramandal, Baijnath and Dwarahat; Chand kings later displaced the Dwarahat branch. Garhwal was divided among petty chiefs. The end date is uncertain.",
+   "dataNote": "Drawn is Kumaon: Doti is drawn under the Khasa Mallas from 1100, and Garhwal, divided among petty chiefs, is left undrawn. Boundaries approximate.",
    "coords": [
     [
      78.8,
@@ -8104,7 +8182,8 @@
      "when": "1099–1126"
     }
    ],
-   "note": "The Thakuri kings followed the Licchavis in the Kathmandu valley (879 to about 1200) and mostly ruled around Nuwakot and the valley, where Gunakama Deva founded Kantipur (Kathmandu). Some historians dispute the dynasty. The Malla kings followed. Boundaries approximate.",
+   "note": "The Thakuri kings followed the Licchavis in the Kathmandu valley (879 to about 1200) and mostly ruled around Nuwakot and the valley, where Gunakama Deva founded Kantipur (Kathmandu). Some historians dispute the dynasty. The Malla kings followed.",
+   "dataNote": "Boundaries approximate.",
    "coords": [
     [
      84.9,
@@ -8157,7 +8236,8 @@
      "when": "c. 1069–after 1114"
     }
    ],
-   "note": "The Nagas of Chakrakota mandala ruled the present-day districts of Bastar, Koraput and Kalahandi from 1023; the Kalachuri Jajalla-deva I invaded in 1114 and captured Somesvara, and the last known ruler appears in a 1324 inscription. Drawn is Bastar, until 1176: Koraput and Kalahandi lie under the border data's Eastern Ganga outline, and from 1177 its Kakatiya outline covers Bastar. Boundaries approximate.",
+   "note": "The Nagas of Chakrakota mandala ruled the present-day districts of Bastar, Koraput and Kalahandi from 1023; the Kalachuri Jajalla-deva I invaded in 1114 and captured Somesvara, and the last known ruler appears in a 1324 inscription.",
+   "dataNote": "Drawn is Bastar, until 1176: Koraput and Kalahandi lie under the border data's Eastern Ganga outline, and from 1177 its Kakatiya outline covers Bastar. Boundaries approximate.",
    "coords": [
     [
      80.85,
@@ -8210,7 +8290,8 @@
      "when": "c. 1015–1035"
     }
    ],
-   "note": "Chandela vassals until Vidyadhara's death in 1035, ruling Gwalior, Narwar, Dubkund, Kadwaha and the Morena and Shivpuri country; Kirtiraja repulsed the Paramara Bhoja. The border data draws this area as Paramara. Boundaries approximate.",
+   "note": "Chandela vassals until Vidyadhara's death in 1035, ruling Gwalior, Narwar, Dubkund, Kadwaha and the Morena and Shivpuri country; Kirtiraja repulsed the Paramara Bhoja.",
+   "dataNote": "The border data draws this area as Paramara. Boundaries approximate.",
    "coords": [
     [
      76.7,
@@ -8279,7 +8360,8 @@
      "when": "grant of 1120–21"
     }
    ],
-   "note": "Independent of the Chandelas after 1035; Mahipala built the Sas-Bahu temple at Gwalior in 1096. Inscriptions show Kachchhapaghata rule until at least 1155; Qutb al-Din Aibak took Gwalior fort in 1196. Bhind (Kherata) is included from 1040, after the border data's Gurjara-Pratihara outline ends. Boundaries approximate.",
+   "note": "Independent of the Chandelas after 1035; Mahipala built the Sas-Bahu temple at Gwalior in 1096. Inscriptions show Kachchhapaghata rule until at least 1155; Qutb al-Din Aibak took Gwalior fort in 1196.",
+   "dataNote": "Bhind (Kherata) is included from 1040, after the border data's Gurjara-Pratihara outline ends. Boundaries approximate.",
    "coords": [
     [
      77.05,
@@ -8352,7 +8434,8 @@
      "when": "1119–1132"
     }
    ],
-   "note": "A Chahamana branch ruling Marwar around Nadol from about 950; Anahilla (c. 1024-1055) took Shakambhari and fought the Chaulukyas, and Kirtipala's branch held Jalore from the 1160s. Qutb al-Din Aibak's invasion of 1197 ended the kingdom. Drawn is the core around Nadol: until 1055 the border data's Chauhan outline covers it, and later its Chaulukya and Jalor outlines overlap the south and west. Boundaries approximate.",
+   "note": "A Chahamana branch ruling Marwar around Nadol from about 950; Anahilla (c. 1024-1055) took Shakambhari and fought the Chaulukyas, and Kirtipala's branch held Jalore from the 1160s. Qutb al-Din Aibak's invasion of 1197 ended the kingdom.",
+   "dataNote": "Drawn is the core around Nadol: until 1055 the border data's Chauhan outline covers it, and later its Chaulukya and Jalor outlines overlap the south and west. Boundaries approximate.",
    "coords": [
     [
      73.15,
@@ -8387,7 +8470,8 @@
    "from": 1040,
    "to": 1201,
    "capital": "Mahoba and Khajuraho (Kalinjar fort)",
-   "note": "The western part of the Chandela kingdom of Jejakabhukti (Bundelkhand), around Jhansi, Orchha and Datia, between the Kachchhapaghatas of Gwalior and the Chandela heartland at Mahoba and Khajuraho, which the border data draws; the border data had this strip as Paramara or left it empty. Drawn from 1040, after its Gurjara-Pratihara outline ends. Boundaries approximate.",
+   "note": "The western part of the Chandela kingdom of Jejakabhukti (Bundelkhand), around Jhansi, Orchha and Datia, between the Kachchhapaghatas of Gwalior and the Chandela heartland at Mahoba and Khajuraho.",
+   "dataNote": "The border data draws the Chandela heartland; it had this strip as Paramara or left it empty. Drawn from 1040, after its Gurjara-Pratihara outline ends. Boundaries approximate.",
    "coords": [
     [
      78.35,

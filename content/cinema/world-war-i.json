@@ -2,7 +2,8 @@
  "war": "world-war-i",
  "start": "1914-07-28",
  "end": "1918-11-11",
- "note": "Front lines, occupied areas and arrows are approximate reconstructions traced by hand from campaign maps (chiefly the US Military Academy atlas of the Great War) and clipped to 1914 borders; they show the general shape and timing of each front, not exact trench positions.",
+ "note": "Front lines, occupied areas and arrows are approximate; they show the general shape and timing of each front, not exact trench positions.",
+ "dataNote": "Front lines, occupied areas and arrows are approximate reconstructions traced by hand from campaign maps (chiefly the US Military Academy atlas of the Great War) and clipped to 1914 borders.",
  "chapters": [
   {
    "id": "sweep",

@@ -1,9 +1,10 @@
 {
  "id": "sa-fixes",
- "title": "South Asia checklist fixes",
+ "title": "More South Asian kingdoms, 1200 BCE–1578",
  "from": -1200,
  "to": 1578,
- "summary": "Gaps that the India checklist (content/factcheck/india-dynasties.md) showed in the map: the late Vedic kingdoms of the Kurus, Panchalas and Kashi and the first Mahajanapadas before Cliopatria's outlines begin in 600 BCE; the first century of the Anuradhapura kingdom; the last decades of the Gujarat, Khandesh and Malwa sultanates and of the Rajput kingdoms of Marwar, Jaisalmer and Bikaner between the medieval layer's end (1550) and the arrival of Cliopatria's Mughal outline; and the Deora kingdom of Sirohi and the Garhwal kingdom, which no layer drew. Most outlines continue shapes already traced in the other South Asia layers; the Vedic ones are core areas around known capitals. All frontiers are approximate.",
+ "summary": "The late Vedic kingdoms of the Kurus, Panchalas and Kashi and the first Mahajanapadas before 600 BCE; the first century of the Anuradhapura kingdom; the last decades of the Gujarat, Khandesh and Malwa sultanates and of the Rajput kingdoms of Marwar, Jaisalmer and Bikaner; and the Deora kingdom of Sirohi and the Garhwal kingdom.",
+ "dataNote": "Gaps that the India checklist (content/factcheck/india-dynasties.md) showed in the map: the late Vedic kingdoms of the Kurus, Panchalas and Kashi and the first Mahajanapadas before Cliopatria's outlines begin in 600 BCE; the first century of the Anuradhapura kingdom; the last decades of the Gujarat, Khandesh and Malwa sultanates and of the Rajput kingdoms of Marwar, Jaisalmer and Bikaner between the medieval layer's end (1550) and the arrival of Cliopatria's Mughal outline; and the Deora kingdom of Sirohi and the Garhwal kingdom, which no layer drew. Most outlines continue shapes already traced in the other South Asia layers; the Vedic ones are core areas around known capitals. All frontiers are approximate.",
  "replaces": [],
  "regions": [
   {
@@ -23,7 +24,8 @@
      "when": "middle Vedic period; traditional"
     }
    ],
-   "note": "Wikipedia 'Kuru Kingdom': formed c. 1200–900 BCE by the Bharata and Puru tribes in Kurukshetra and the upper Doab, the first state-level society of the subcontinent (Witzel); a backwater by the Mahajanapada period. Drawn from 1200 BCE, the early end of that range. Late Vedic kingdom reconstructed from its capitals and river frontiers (core area only); Cliopatria begins its Mahajanapada outlines in 600 BCE, so this region carries the state back from 1200 BCE. Frontiers are conventions: no source of the period describes them.",
+   "note": "Wikipedia 'Kuru Kingdom': formed c. 1200–900 BCE by the Bharata and Puru tribes in Kurukshetra and the upper Doab, the first state-level society of the subcontinent (Witzel); a backwater by the Mahajanapada period. No source of the period describes its frontiers.",
+   "dataNote": "Drawn from 1200 BCE, the early end of that range. Late Vedic kingdom reconstructed from its capitals and river frontiers (core area only); Cliopatria begins its Mahajanapada outlines in 600 BCE, so this region carries the state back from 1200 BCE. Frontiers are conventions: no source of the period describes them.",
    "coords": [
     [
      75.9,
@@ -88,7 +90,8 @@
      "when": "late Vedic (Upaniṣads); undated"
     }
    ],
-   "note": "Wikipedia 'Panchala': c. 1100 BCE in the late Vedic period, one of the most powerful states of the time, allied with the Kurus; the Ganges divided northern Panchala (Ahichchhatra) from southern Panchala (Kampilya). Late Vedic kingdom reconstructed from its capitals and river frontiers (core area only); Cliopatria begins its Mahajanapada outlines in 600 BCE, so this region carries the state back from 1100 BCE. Frontiers are conventions: no source of the period describes them.",
+   "note": "Wikipedia 'Panchala': c. 1100 BCE in the late Vedic period, one of the most powerful states of the time, allied with the Kurus; the Ganges divided northern Panchala (Ahichchhatra) from southern Panchala (Kampilya). No source of the period describes its frontiers.",
+   "dataNote": "Late Vedic kingdom reconstructed from its capitals and river frontiers (core area only); Cliopatria begins its Mahajanapada outlines in 600 BCE, so this region carries the state back from 1100 BCE. Frontiers are conventions: no source of the period describes them.",
    "coords": [
     [
      78.2,
@@ -153,7 +156,8 @@
      "when": "late Vedic (Bṛhadāraṇyaka Upaniṣad); undated"
     }
    ],
-   "note": "Wikidata dates the kingdom from 1000 BCE (Wikipedia 'Kāśī (kingdom)' gives c. 1375 BCE, which rests on epic tradition); the late Vedic texts name its kings. Conquered by Kosala c. 600 BCE. Late Vedic kingdom reconstructed from its capitals and river frontiers (core area only); Cliopatria begins its Mahajanapada outlines in 600 BCE, so this region carries the state back from 1000 BCE. Frontiers are conventions: no source of the period describes them.",
+   "note": "Wikidata dates the kingdom from 1000 BCE (Wikipedia 'Kāśī (kingdom)' gives c. 1375 BCE, which rests on epic tradition); the late Vedic texts name its kings. Conquered by Kosala c. 600 BCE. No source of the period describes its frontiers.",
+   "dataNote": "Late Vedic kingdom reconstructed from its capitals and river frontiers (core area only); Cliopatria begins its Mahajanapada outlines in 600 BCE, so this region carries the state back from 1000 BCE. Frontiers are conventions: no source of the period describes them.",
    "coords": [
     [
      82.3,
@@ -196,7 +200,8 @@
    "from": -700,
    "to": -601,
    "capital": "Ayodhyā; Śrāvastī",
-   "note": "Wikipedia 'Kosala': emerged as a small state in the late Vedic period, c. 7th century BCE; bounded by the Himalayan foothills, the Gomti and the Sadanira (Gandak). No ruler of the 7th century is securely dated. Late Vedic kingdom reconstructed from its capitals and river frontiers (core area only); Cliopatria begins its Mahajanapada outlines in 600 BCE, so this region carries the state back from 700 BCE. Frontiers are conventions: no source of the period describes them.",
+   "note": "Wikipedia 'Kosala': emerged as a small state in the late Vedic period, c. 7th century BCE; bounded by the Himalayan foothills, the Gomti and the Sadanira (Gandak). No ruler of the 7th century is securely dated. No source of the period describes its frontiers.",
+   "dataNote": "Late Vedic kingdom reconstructed from its capitals and river frontiers (core area only); Cliopatria begins its Mahajanapada outlines in 600 BCE, so this region carries the state back from 700 BCE. Frontiers are conventions: no source of the period describes them.",
    "coords": [
     [
      80.6,
@@ -247,7 +252,8 @@
    "from": -700,
    "to": -601,
    "capital": "Rājagṛha (Girivraja)",
-   "note": "South Bihar between the Son, the Ganges and the Chota Nagpur hills. The Magadha people appear in Vedic texts; as a kingdom it is datable from the 7th–6th century BCE (the Brihadratha kings are legendary). Drawn from 700 BCE. Late Vedic kingdom reconstructed from its capitals and river frontiers (core area only); Cliopatria begins its Mahajanapada outlines in 600 BCE, so this region carries the state back from 700 BCE. Frontiers are conventions: no source of the period describes them.",
+   "note": "South Bihar between the Son, the Ganges and the Chota Nagpur hills. The Magadha people appear in Vedic texts; as a kingdom it is datable from the 7th–6th century BCE (the Brihadratha kings are legendary). No source of the period describes its frontiers.",
+   "dataNote": "Drawn from 700 BCE. Late Vedic kingdom reconstructed from its capitals and river frontiers (core area only); Cliopatria begins its Mahajanapada outlines in 600 BCE, so this region carries the state back from 700 BCE. Frontiers are conventions: no source of the period describes them.",
    "coords": [
     [
      84.4,
@@ -290,7 +296,8 @@
    "from": -700,
    "to": -601,
    "capital": "Campā",
-   "note": "Around Champa (Bhagalpur), east of Magadha, which annexed it under Bimbisara (Wikipedia 'Anga': end c. 530 BCE). Drawn from 700 BCE; the Wikidata start (1100 BCE) is a guess marked 'unknown' on Wikipedia. Late Vedic kingdom reconstructed from its capitals and river frontiers (core area only); Cliopatria begins its Mahajanapada outlines in 600 BCE, so this region carries the state back from 700 BCE. Frontiers are conventions: no source of the period describes them.",
+   "note": "Around Champa (Bhagalpur), east of Magadha, which annexed it under Bimbisara (Wikipedia 'Anga': end c. 530 BCE). The Wikidata start (1100 BCE) is a guess marked 'unknown' on Wikipedia. No source of the period describes its frontiers.",
+   "dataNote": "Drawn from 700 BCE. Late Vedic kingdom reconstructed from its capitals and river frontiers (core area only); Cliopatria begins its Mahajanapada outlines in 600 BCE, so this region carries the state back from 700 BCE. Frontiers are conventions: no source of the period describes them.",
    "coords": [
     [
      86.4,
@@ -333,7 +340,8 @@
    "from": -700,
    "to": -601,
    "capital": "Kauśāmbī",
-   "note": "Wikipedia 'Vatsa': c. 700 BCE, a successor of the Kurus (who moved to Kaushambi after Hastinapura was flooded, per tradition). Late Vedic kingdom reconstructed from its capitals and river frontiers (core area only); Cliopatria begins its Mahajanapada outlines in 600 BCE, so this region carries the state back from 700 BCE. Frontiers are conventions: no source of the period describes them.",
+   "note": "Wikipedia 'Vatsa': c. 700 BCE, a successor of the Kurus (who moved to Kaushambi after Hastinapura was flooded, per tradition). No source of the period describes its frontiers.",
+   "dataNote": "Late Vedic kingdom reconstructed from its capitals and river frontiers (core area only); Cliopatria begins its Mahajanapada outlines in 600 BCE, so this region carries the state back from 700 BCE. Frontiers are conventions: no source of the period describes them.",
    "coords": [
     [
      80.5,
@@ -376,7 +384,8 @@
    "from": -700,
    "to": -601,
    "capital": "Mathurā",
-   "note": "Wikipedia 'Surasena': c. 700 BCE, the Braj country around Mathura. Late Vedic kingdom reconstructed from its capitals and river frontiers (core area only); Cliopatria begins its Mahajanapada outlines in 600 BCE, so this region carries the state back from 700 BCE. Frontiers are conventions: no source of the period describes them.",
+   "note": "Wikipedia 'Surasena': c. 700 BCE, the Braj country around Mathura. No source of the period describes its frontiers.",
+   "dataNote": "Late Vedic kingdom reconstructed from its capitals and river frontiers (core area only); Cliopatria begins its Mahajanapada outlines in 600 BCE, so this region carries the state back from 700 BCE. Frontiers are conventions: no source of the period describes them.",
    "coords": [
     [
      77.2,
@@ -419,7 +428,8 @@
    "from": -700,
    "to": -601,
    "capital": "Virāṭanagara (Bairat)",
-   "note": "Vedic kingdom of the Jaipur–Alwar country with its capital at Bairat (Wikipedia 'Matsya (kingdom)'). Drawn from 700 BCE, the Wikidata start. Late Vedic kingdom reconstructed from its capitals and river frontiers (core area only); Cliopatria begins its Mahajanapada outlines in 600 BCE, so this region carries the state back from 700 BCE. Frontiers are conventions: no source of the period describes them.",
+   "note": "Vedic kingdom of the Jaipur–Alwar country with its capital at Bairat (Wikipedia 'Matsya (kingdom)'). No source of the period describes its frontiers.",
+   "dataNote": "Drawn from 700 BCE, the Wikidata start. Late Vedic kingdom reconstructed from its capitals and river frontiers (core area only); Cliopatria begins its Mahajanapada outlines in 600 BCE, so this region carries the state back from 700 BCE. Frontiers are conventions: no source of the period describes them.",
    "coords": [
     [
      75.6,
@@ -462,7 +472,8 @@
    "from": -700,
    "to": -601,
    "capital": "Ujjayinī; Māhiṣmatī",
-   "note": "Western Malwa with Ujjain and Mahishmati on the Narmada. Drawn from 700 BCE, the Wikidata start. Late Vedic kingdom reconstructed from its capitals and river frontiers (core area only); Cliopatria begins its Mahajanapada outlines in 600 BCE, so this region carries the state back from 700 BCE. Frontiers are conventions: no source of the period describes them.",
+   "note": "Western Malwa with Ujjain and Mahishmati on the Narmada. No source of the period describes its frontiers.",
+   "dataNote": "Drawn from 700 BCE, the Wikidata start. Late Vedic kingdom reconstructed from its capitals and river frontiers (core area only); Cliopatria begins its Mahajanapada outlines in 600 BCE, so this region carries the state back from 700 BCE. Frontiers are conventions: no source of the period describes them.",
    "coords": [
     [
      75.0,
@@ -509,7 +520,8 @@
    "from": -700,
    "to": -616,
    "capital": "Puṣkalāvatī; Takṣaśilā",
-   "note": "The Peshawar valley and Taxila, conquered by the Achaemenids c. 535 BCE. The Gandhari people appear in the Rigveda and Atharvaveda; drawn as a kingdom from 700 BCE. Cliopatria's 600 BCE outline sits east of the Indus, in the Poonch hills; this region follows the capitals. Late Vedic kingdom reconstructed from its capitals and river frontiers (core area only); Cliopatria begins its Mahajanapada outlines in 600 BCE, so this region carries the state back from 700 BCE. Frontiers are conventions: no source of the period describes them.",
+   "note": "The Peshawar valley and Taxila, conquered by the Achaemenids c. 535 BCE. The Gandhari people appear in the Rigveda and Atharvaveda. No source of the period describes its frontiers.",
+   "dataNote": "Drawn as a kingdom from 700 BCE. Cliopatria's 600 BCE outline sits east of the Indus, in the Poonch hills; this region follows the capitals. Late Vedic kingdom reconstructed from its capitals and river frontiers (core area only); Cliopatria begins its Mahajanapada outlines in 600 BCE, so this region carries the state back from 700 BCE. Frontiers are conventions: no source of the period describes them.",
    "coords": [
     [
      71.2,
@@ -552,7 +564,8 @@
    "from": -615,
    "to": -601,
    "capital": "Puṣkalāvatī; Takṣaśilā",
-   "note": "The Peshawar valley and Taxila, conquered by the Achaemenids c. 535 BCE. The Gandhari people appear in the Rigveda and Atharvaveda; drawn as a kingdom from 700 BCE. Cliopatria's 600 BCE outline sits east of the Indus, in the Poonch hills; this region follows the capitals. Late Vedic kingdom reconstructed from its capitals and river frontiers (core area only); Cliopatria begins its Mahajanapada outlines in 600 BCE, so this region carries the state back from 700 BCE. Frontiers are conventions: no source of the period describes them. Cut back where Median Kingdom already is drawn in these years.",
+   "note": "The Peshawar valley and Taxila, conquered by the Achaemenids c. 535 BCE. The Gandhari people appear in the Rigveda and Atharvaveda. No source of the period describes its frontiers.",
+   "dataNote": "Drawn as a kingdom from 700 BCE. Cliopatria's 600 BCE outline sits east of the Indus, in the Poonch hills; this region follows the capitals. Late Vedic kingdom reconstructed from its capitals and river frontiers (core area only); Cliopatria begins its Mahajanapada outlines in 600 BCE, so this region carries the state back from 700 BCE. Frontiers are conventions: no source of the period describes them. Cut back where Median Kingdom already is drawn in these years.",
    "coords": [
     [
      71.76,
@@ -625,7 +638,8 @@
      "when": "367–307 BCE (Mahavamsa)"
     }
    ],
-   "note": "Pandukabhaya (reigned 437–367 BCE in the Mahavamsa chronology, Wikipedia 'Pandukabhaya') made Anuradhapura his capital c. 377 BCE, the start date Wikidata uses; Wikipedia 'Anuradhapura kingdom' counts from 437 BCE. Drawn over the north-central dry zone (Rajarata) until Cliopatria's island-wide outline begins in 291 BCE; the early kingdom's reach to the south and the Jaffna peninsula is unknown.",
+   "note": "Pandukabhaya (reigned 437–367 BCE in the Mahavamsa chronology, Wikipedia 'Pandukabhaya') made Anuradhapura his capital c. 377 BCE, the start date Wikidata uses; Wikipedia 'Anuradhapura kingdom' counts from 437 BCE. The early kingdom's reach to the south and the Jaffna peninsula is unknown.",
+   "dataNote": "Drawn over the north-central dry zone (Rajarata) until Cliopatria's island-wide outline begins in 291 BCE.",
    "coords": [
     [
      79.8,
@@ -690,7 +704,8 @@
      "when": "1561–1573"
     }
    ],
-   "note": "The last sultans ruled under regent nobles until Akbar's conquest (1572–73; Wikipedia 'Gujarat Sultanate': end 1573, capital Ahmedabad 1535–73). Same outline as the sa-medieval layer's 1536–1550 slice, continued to 1571; Cliopatria's Mughal outline covers Gujarat from 1572.",
+   "note": "The last sultans ruled under regent nobles until Akbar's conquest (1572–73; Wikipedia 'Gujarat Sultanate': end 1573, capital Ahmedabad 1535–73).",
+   "dataNote": "Same outline as the sa-medieval layer's 1536–1550 slice, continued to 1571; Cliopatria's Mughal outline covers Gujarat from 1572.",
    "coords": [
     [
      71.25,
@@ -843,7 +858,8 @@
      "when": "1566–1576"
     }
    ],
-   "note": "The Faruqi sultanate of the Tapti valley lasted until Akbar took Burhanpur and Asirgarh (1599–1601; Wikipedia 'Farooqui dynasty', 1382–1601). Outline of the sa-medieval layer continued; drawn to 1571 because Cliopatria's Mughal outline covers Khandesh from 1572 (Khandesh was in fact a Mughal tributary from 1577 and annexed in 1601). Cut back where Ahmadnagar Sultanate, Berar Sultanate already are drawn in these years.",
+   "note": "The Faruqi sultanate of the Tapti valley lasted until Akbar took Burhanpur and Asirgarh (1599–1601; Wikipedia 'Farooqui dynasty', 1382–1601). Khandesh was a Mughal tributary from 1577 and annexed in 1601.",
+   "dataNote": "Outline of the sa-medieval layer continued; drawn to 1571 because Cliopatria's Mughal outline covers Khandesh from 1572 (Khandesh was in fact a Mughal tributary from 1577 and annexed in 1601). Cut back where Ahmadnagar Sultanate, Berar Sultanate already are drawn in these years.",
    "coords": [
     [
      74.25,
@@ -956,7 +972,8 @@
      "when": "1537–1542"
     }
    ],
-   "note": "After Humayun withdrew, Mallu Khan, a Khalji officer, ruled Malwa as Qadir Shah (1537–1542) until Sher Shah took it. Outline of the sa-medieval layer's 1519–1530 slice (Mandu, Dhar, Ujjain); Wikipedia 'Malwa Sultanate'. Cut back where Mughal Empire already is drawn in these years.",
+   "note": "After Humayun withdrew, Mallu Khan, a Khalji officer, ruled Malwa as Qadir Shah (1537–1542) until Sher Shah took it.",
+   "dataNote": "Outline of the sa-medieval layer's 1519–1530 slice (Mandu, Dhar, Ujjain); Wikipedia 'Malwa Sultanate'. Cut back where Mughal Empire already is drawn in these years.",
    "coords": [
     [
      74.74,
@@ -1121,7 +1138,8 @@
      "when": "1537–1542"
     }
    ],
-   "note": "After Humayun withdrew, Mallu Khan, a Khalji officer, ruled Malwa as Qadir Shah (1537–1542) until Sher Shah took it. Outline of the sa-medieval layer's 1519–1530 slice (Mandu, Dhar, Ujjain); Wikipedia 'Malwa Sultanate'.",
+   "note": "After Humayun withdrew, Mallu Khan, a Khalji officer, ruled Malwa as Qadir Shah (1537–1542) until Sher Shah took it.",
+   "dataNote": "Outline of the sa-medieval layer's 1519–1530 slice (Mandu, Dhar, Ujjain); Wikipedia 'Malwa Sultanate'.",
    "coords": [
     [
      74.65,
@@ -1198,7 +1216,8 @@
      "when": "1555–1562"
     }
    ],
-   "note": "Baz Bahadur, son of the Sur governor Shuja'at Khan, declared himself sultan in 1555 and ruled until Akbar's general Adham Khan defeated him at Sarangpur (1561; Wikipedia 'Malwa Sultanate'). The Sur years 1542–1555 are not drawn: Malwa was then a province of the Sur Empire, which Cliopatria draws only in part. Outline as in 1537–1541.",
+   "note": "Baz Bahadur, son of the Sur governor Shuja'at Khan, declared himself sultan in 1555 and ruled until Akbar's general Adham Khan defeated him at Sarangpur (1561; Wikipedia 'Malwa Sultanate'). In the Sur years 1542–1555 Malwa was a province of the Sur Empire.",
+   "dataNote": "The Sur years 1542–1555 are not drawn: Malwa was then a province of the Sur Empire, which Cliopatria draws only in part. Outline as in 1537–1541.",
    "coords": [
     [
      74.65,
@@ -1279,7 +1298,8 @@
      "when": "1562–1581"
     }
    ],
-   "note": "Rao Maldeo's kingdom after he recovered Jodhpur (1545), continued from the sa-medieval layer's 1545–1550 outline. The Mughals took Jodhpur fort in 1564; Chandrasen held out in the Siwana hills until his death in 1581 (Wikipedia 'Kingdom of Marwar': independent until 1581), but his shrinking domain is not drawn. Cut back where Sur Empire already is drawn in these years.",
+   "note": "Rao Maldeo's kingdom after he recovered Jodhpur (1545). The Mughals took Jodhpur fort in 1564; Chandrasen held out in a shrinking domain in the Siwana hills until his death in 1581 (Wikipedia 'Kingdom of Marwar': independent until 1581).",
+   "dataNote": "Continued from the sa-medieval layer's 1545–1550 outline. Chandrasen's shrinking domain is not drawn. Cut back where Sur Empire already is drawn in these years.",
    "coords": [
     [
      72.3,
@@ -1452,7 +1472,8 @@
      "when": "1562–1581"
     }
    ],
-   "note": "Rao Maldeo's kingdom after he recovered Jodhpur (1545), continued from the sa-medieval layer's 1545–1550 outline. The Mughals took Jodhpur fort in 1564; Chandrasen held out in the Siwana hills until his death in 1581 (Wikipedia 'Kingdom of Marwar': independent until 1581), but his shrinking domain is not drawn.",
+   "note": "Rao Maldeo's kingdom after he recovered Jodhpur (1545). The Mughals took Jodhpur fort in 1564; Chandrasen held out in a shrinking domain in the Siwana hills until his death in 1581 (Wikipedia 'Kingdom of Marwar': independent until 1581).",
+   "dataNote": "Continued from the sa-medieval layer's 1545–1550 outline. Chandrasen's shrinking domain is not drawn.",
    "coords": [
     [
      72.4,
@@ -1513,7 +1534,8 @@
      "when": "c. 1561–1577"
     }
    ],
-   "note": "The Bhati kingdom of the Thar, continued from the sa-medieval outline until Cliopatria's Mughal outline reaches it in 1579. Rawal Har Raj accepted Akbar's overlordship in 1570; from then on Jaisalmer was a tributary kingdom with its own rulers (Wikipedia 'Kingdom of Jaisalmer'). Borders in the desert are notional. Cut back where Sur Empire already is drawn in these years.",
+   "note": "The Bhati kingdom of the Thar. Rawal Har Raj accepted Akbar's overlordship in 1570; from then on Jaisalmer was a tributary kingdom with its own rulers (Wikipedia 'Kingdom of Jaisalmer').",
+   "dataNote": "Continued from the sa-medieval outline until Cliopatria's Mughal outline reaches it in 1579. Borders in the desert are notional. Cut back where Sur Empire already is drawn in these years.",
    "coords": [
     [
      70.0,
@@ -1606,7 +1628,8 @@
      "when": "c. 1561–1577"
     }
    ],
-   "note": "The Bhati kingdom of the Thar, continued from the sa-medieval outline until Cliopatria's Mughal outline reaches it in 1579. Rawal Har Raj accepted Akbar's overlordship in 1570; from then on Jaisalmer was a tributary kingdom with its own rulers (Wikipedia 'Kingdom of Jaisalmer'). Borders in the desert are notional.",
+   "note": "The Bhati kingdom of the Thar. Rawal Har Raj accepted Akbar's overlordship in 1570; from then on Jaisalmer was a tributary kingdom with its own rulers (Wikipedia 'Kingdom of Jaisalmer').",
+   "dataNote": "Continued from the sa-medieval outline until Cliopatria's Mughal outline reaches it in 1579. Borders in the desert are notional.",
    "coords": [
     [
      70.0,
@@ -1667,7 +1690,8 @@
      "when": "1542–1571"
     }
    ],
-   "note": "Rao Kalyan Mal, restored with Sher Shah's help in 1544, ruled the Rathore kingdom of Jangladesh after the Sur collapse; he submitted to Akbar at Nagaur in 1570 (Wikipedia 'Bikaner State'). Drawn between Cliopatria's Sur outline (to 1555) and its Mughal outline (from 1564), with the sa-medieval layer's outline.",
+   "note": "Rao Kalyan Mal, restored with Sher Shah's help in 1544, ruled the Rathore kingdom of Jangladesh after the Sur collapse; he submitted to Akbar at Nagaur in 1570 (Wikipedia 'Bikaner State').",
+   "dataNote": "Drawn between Cliopatria's Sur outline (to 1555) and its Mughal outline (from 1564), with the sa-medieval layer's outline.",
    "coords": [
     [
      72.0,
@@ -1744,7 +1768,8 @@
      "when": "1562–1572"
     }
    ],
-   "note": "The Deora Chauhan state around Mount Abu, founded before c. 1311 (Wikipedia 'Sirohi State': capitals Chandravati 1311–1405, Shivpuri 1405–1425, Sirohi from 1425). Drawn with its 1909 border (princely-states layer, from the Imperial Gazetteer and OpenHistoricalMap), which follows the Aravalli and Abu hills; the medieval state's limits towards Jalor and Idar are not recorded. Drawn from 1352, when Cliopatria's Khalji and Tughluq outlines stop covering the area, to 1571, when its Mughal outline arrives; Surtan Deora (1572–1610) resisted Akbar.",
+   "note": "The Deora Chauhan state around Mount Abu, founded before c. 1311 (Wikipedia 'Sirohi State': capitals Chandravati 1311–1405, Shivpuri 1405–1425, Sirohi from 1425). The medieval state's limits towards Jalor and Idar are not recorded. Surtan Deora (1572–1610) resisted Akbar.",
+   "dataNote": "Drawn with its 1909 border (princely-states layer, from the Imperial Gazetteer and OpenHistoricalMap), which follows the Aravalli and Abu hills. Drawn from 1352, when Cliopatria's Khalji and Tughluq outlines stop covering the area, to 1571, when its Mughal outline arrives.",
    "coords": [
     [
      72.398,
@@ -1905,7 +1930,8 @@
      "when": "1562–1572"
     }
    ],
-   "note": "The Deora Chauhan state around Mount Abu, founded before c. 1311 (Wikipedia 'Sirohi State': capitals Chandravati 1311–1405, Shivpuri 1405–1425, Sirohi from 1425). Drawn with its 1909 border (princely-states layer, from the Imperial Gazetteer and OpenHistoricalMap), which follows the Aravalli and Abu hills; the medieval state's limits towards Jalor and Idar are not recorded. Drawn from 1352, when Cliopatria's Khalji and Tughluq outlines stop covering the area, to 1571, when its Mughal outline arrives; Surtan Deora (1572–1610) resisted Akbar. Cut back where Kingdom of Marwar (Maldeo) already is drawn in these years.",
+   "note": "The Deora Chauhan state around Mount Abu, founded before c. 1311 (Wikipedia 'Sirohi State': capitals Chandravati 1311–1405, Shivpuri 1405–1425, Sirohi from 1425). The medieval state's limits towards Jalor and Idar are not recorded. Surtan Deora (1572–1610) resisted Akbar.",
+   "dataNote": "Drawn with its 1909 border (princely-states layer, from the Imperial Gazetteer and OpenHistoricalMap), which follows the Aravalli and Abu hills. Drawn from 1352, when Cliopatria's Khalji and Tughluq outlines stop covering the area, to 1571, when its Mughal outline arrives. Cut back where Kingdom of Marwar (Maldeo) already is drawn in these years.",
    "coords": [
     [
      72.252,
@@ -2014,7 +2040,8 @@
      "when": "1562–1572"
     }
    ],
-   "note": "The Deora Chauhan state around Mount Abu, founded before c. 1311 (Wikipedia 'Sirohi State': capitals Chandravati 1311–1405, Shivpuri 1405–1425, Sirohi from 1425). Drawn with its 1909 border (princely-states layer, from the Imperial Gazetteer and OpenHistoricalMap), which follows the Aravalli and Abu hills; the medieval state's limits towards Jalor and Idar are not recorded. Drawn from 1352, when Cliopatria's Khalji and Tughluq outlines stop covering the area, to 1571, when its Mughal outline arrives; Surtan Deora (1572–1610) resisted Akbar.",
+   "note": "The Deora Chauhan state around Mount Abu, founded before c. 1311 (Wikipedia 'Sirohi State': capitals Chandravati 1311–1405, Shivpuri 1405–1425, Sirohi from 1425). The medieval state's limits towards Jalor and Idar are not recorded. Surtan Deora (1572–1610) resisted Akbar.",
+   "dataNote": "Drawn with its 1909 border (princely-states layer, from the Imperial Gazetteer and OpenHistoricalMap), which follows the Aravalli and Abu hills. Drawn from 1352, when Cliopatria's Khalji and Tughluq outlines stop covering the area, to 1571, when its Mughal outline arrives.",
    "coords": [
     [
      72.398,
@@ -2175,7 +2202,8 @@
      "when": "1562–1572"
     }
    ],
-   "note": "The Deora Chauhan state around Mount Abu, founded before c. 1311 (Wikipedia 'Sirohi State': capitals Chandravati 1311–1405, Shivpuri 1405–1425, Sirohi from 1425). Drawn with its 1909 border (princely-states layer, from the Imperial Gazetteer and OpenHistoricalMap), which follows the Aravalli and Abu hills; the medieval state's limits towards Jalor and Idar are not recorded. Drawn from 1352, when Cliopatria's Khalji and Tughluq outlines stop covering the area, to 1571, when its Mughal outline arrives; Surtan Deora (1572–1610) resisted Akbar. Cut back where Kingdom of Mewar (Udaipur) already is drawn in these years.",
+   "note": "The Deora Chauhan state around Mount Abu, founded before c. 1311 (Wikipedia 'Sirohi State': capitals Chandravati 1311–1405, Shivpuri 1405–1425, Sirohi from 1425). The medieval state's limits towards Jalor and Idar are not recorded. Surtan Deora (1572–1610) resisted Akbar.",
+   "dataNote": "Drawn with its 1909 border (princely-states layer, from the Imperial Gazetteer and OpenHistoricalMap), which follows the Aravalli and Abu hills. Drawn from 1352, when Cliopatria's Khalji and Tughluq outlines stop covering the area, to 1571, when its Mughal outline arrives. Cut back where Kingdom of Mewar (Udaipur) already is drawn in these years.",
    "coords": [
     [
      72.252,
@@ -2284,7 +2312,8 @@
      "when": "14th or 15th century (disputed)"
     }
    ],
-   "note": "The Panwar kingdom of the upper Ganges and Yamuna hills (Wikipedia 'Garhwal kingdom': capitals Chandpur Garhi until 1512, Devalgarh 1512–17, Srinagar from 1517). Wikidata dates the unified kingdom from 1358; tradition credits the union of the 52 hill forts (garhs) to Ajay Pal, whose reign is variously put in the 14th or late 15th century, so the early extent is uncertain. Drawn with the sa-earlymodern layer's 1550 outline until 1539; Cliopatria draws a Sur Empire outline over these hills from 1540. Cut back where Guge kingdom already is drawn in these years.",
+   "note": "The Panwar kingdom of the upper Ganges and Yamuna hills (Wikipedia 'Garhwal kingdom': capitals Chandpur Garhi until 1512, Devalgarh 1512–17, Srinagar from 1517). Wikidata dates the unified kingdom from 1358; tradition credits the union of the 52 hill forts (garhs) to Ajay Pal, whose reign is variously put in the 14th or late 15th century, so the early extent is uncertain.",
+   "dataNote": "Drawn with the sa-earlymodern layer's 1550 outline until 1539; Cliopatria draws a Sur Empire outline over these hills from 1540. Cut back where Guge kingdom already is drawn in these years.",
    "coords": [
     [
      77.6,

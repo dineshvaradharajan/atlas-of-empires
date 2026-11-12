@@ -303,7 +303,8 @@
   "dateLabel": "c. 1400–400 BCE (shown here until c. 650 BCE)",
   "evidence": "archaeology",
   "evidenceNote": "A few Olmec carvings and the Cascajal Block may carry signs, but nothing can be read, so knowledge comes from excavation.",
-  "summary": "The earliest major civilization of Mesoamerica, in the hot, wet lowlands of southern Veracruz and western Tabasco, Mexico. Its centres, first San Lorenzo and then La Venta, carved colossal basalt heads, thrones and fine jade. Olmec art and ideas spread widely. This layer draws its heartland before 650 BCE; from then on the map's own 'Olmec Civilization' state polygon takes over.",
+  "summary": "The earliest major civilization of Mesoamerica, in the hot, wet lowlands of southern Veracruz and western Tabasco, Mexico. Its centres, first San Lorenzo and then La Venta, carved colossal basalt heads, thrones and fine jade. Olmec art and ideas spread widely.",
+  "dataNote": "The culture layer draws its heartland before 650 BCE; from then on the map's own 'Olmec Civilization' state polygon takes over.",
   "extents": [
    {
     "from": -1400,
@@ -451,7 +452,8 @@
   "dateLabel": "c. 1000 BCE – 250 CE (shown here until c. 250 BCE)",
   "evidence": "written",
   "evidenceNote": "The earliest Maya writing, from about 300 BCE at San Bartolo, can be dated but mostly not yet read; the rest is archaeology.",
-  "summary": "The early centuries of Maya civilization in the lowlands of Guatemala, Belize and southern Mexico and the highlands around Kaminaljuyu. Farming villages grew into cities with huge pyramids, such as El Mirador, joined by causeways, and painted murals and the first Maya hieroglyphs appeared at San Bartolo. This layer draws the Maya area until about 250 BCE, when the map's own 'Mayan City-States' polygon begins.",
+  "summary": "The early centuries of Maya civilization in the lowlands of Guatemala, Belize and southern Mexico and the highlands around Kaminaljuyu. Farming villages grew into cities with huge pyramids, such as El Mirador, joined by causeways, and painted murals and the first Maya hieroglyphs appeared at San Bartolo.",
+  "dataNote": "The culture layer draws the Maya area until about 250 BCE, when the map's own 'Mayan City-States' polygon begins.",
   "extents": [
    {
     "from": -1000,
@@ -811,7 +813,8 @@
   "dateLabel": "c. 100–1050 CE (early phase to c. 500 CE)",
   "evidence": "archaeology",
   "evidenceNote": "No writing existed; its founding date is debated, with careful radiocarbon work pointing to about 110 CE rather than older claims.",
-  "summary": "A society centred on the city of Tiwanaku near the southern shore of Lake Titicaca in Bolivia. From modest beginnings it grew in power across the Titicaca basin in 200–500 CE and peaked around 500–600 CE and later, building stone platforms and courts and spreading its religious art. This layer draws only its early home area; it later influenced lands far to the south and west.",
+  "summary": "A society centred on the city of Tiwanaku near the southern shore of Lake Titicaca in Bolivia. From modest beginnings it grew in power across the Titicaca basin in 200–500 CE and peaked around 500–600 CE and later, building stone platforms and courts and spreading its religious art. It later influenced lands far to the south and west.",
+  "dataNote": "The culture layer draws only its early home area; it later influenced lands far to the south and west.",
   "extents": [
    {
     "from": 100,
@@ -1861,7 +1864,8 @@
   "dateLabel": "c. 800–50 BCE (Dʿmt c. 8th–6th century BCE, dates uncertain)",
   "evidence": "written",
   "evidenceNote": "A few inscriptions in South Arabian script name the kingdom of Dʿmt and its kings, but they are scarce and their dates uncertain; most knowledge comes from sites such as Yeha.",
-  "summary": "The highland societies of Eritrea and northern Tigray before the Kingdom of Aksum. A kingdom called Dʿmt, probably with its capital at Yeha, built Sabaean-style temples and wrote in South Arabian script, showing close ties across the Red Sea. Whether Dʿmt became Aksum or was absorbed by it is unknown. This layer stops at about 50 BCE, when the map's own 'Kingdom of Axum' begins.",
+  "summary": "The highland societies of Eritrea and northern Tigray before the Kingdom of Aksum. A kingdom called Dʿmt, probably with its capital at Yeha, built Sabaean-style temples and wrote in South Arabian script, showing close ties across the Red Sea. Whether Dʿmt became Aksum or was absorbed by it is unknown.",
+  "dataNote": "The culture layer stops at about 50 BCE, when the map's own 'Kingdom of Axum' begins.",
   "extents": [
    {
     "from": -800,

@@ -1,12 +1,13 @@
 {
  "id": "me",
- "title": "Middle East: states the border data lacks, 2400 BCE–1886",
+ "title": "States of the Middle East, 2400 BCE–1886",
  "from": -2400,
  "to": 1886,
  "replaces": [
   "Khanates of the Caucasus"
  ],
- "summary": "Cliopatria's borders leave out many states of Anatolia, the Levant, Mesopotamia, Arabia, Iran and the South Caucasus. This layer adds 76 of them: Bronze and Iron Age kingdoms (Ebla, Mari, Yamhad, Kizzuwatna, Arzawa, Ugarit, Aram-Damascus, Ammon, Moab, Edom, Mannaea), the city-kingdoms of Cyprus, Characene, Elymais, Hatra, Kinda and Muhammad's state at Medina; the Caucasian kingdoms and emirates of the 9th–12th centuries (Tbilisi, Lori, Kakheti-Hereti, Syunik, Kars) and the dynasties of the 'Iranian intermezzo' (Sallarids, Rawwadids, Hasanwayhids, Kakuyids, Marwanids, Uqaylids, Mirdasids, Mazyadids, Ikhshidids); the Burids of Damascus, the Nizari Ismaili castles, the atabegs of Azerbaijan, Fars, Luristan and Kerman; the eastern Anatolian beyliks (Saltukids, Mengujekids, Shah-Armens, Artuqids, Eretnids, Kadi Burhan al-Din, Erzincan, Tacettin, Lâdik, Alaiye); the Mamluk pashas of Baghdad; Arabian states from the Sulayhids to the Jabrids, Bani Khalid, Kathiri, Mahra and Lahej; and the South Caucasus khanates of 1747–1828, which replace the border data's single 'Khanates of the Caucasus'. Dates and capitals come from cited reference articles; borders are reconstructions checked against Shepherd's Historical Atlas and the descriptions in those articles. Few pre-modern sources describe frontiers, so every line here is approximate.",
+ "summary": "Among the smaller states of Anatolia, the Levant, Mesopotamia, Arabia, Iran and the South Caucasus were Bronze and Iron Age kingdoms (Ebla, Mari, Yamhad, Kizzuwatna, Arzawa, Ugarit, Aram-Damascus, Ammon, Moab, Edom, Mannaea), the city-kingdoms of Cyprus, Characene, Elymais, Hatra, Kinda and Muhammad's state at Medina; the Caucasian kingdoms and emirates of the 9th–12th centuries (Tbilisi, Lori, Kakheti-Hereti, Syunik, Kars) and the dynasties of the 'Iranian intermezzo' (Sallarids, Rawwadids, Hasanwayhids, Kakuyids, Marwanids, Uqaylids, Mirdasids, Mazyadids, Ikhshidids); the Burids of Damascus, the Nizari Ismaili castles, the atabegs of Azerbaijan, Fars, Luristan and Kerman; the eastern Anatolian beyliks (Saltukids, Mengujekids, Shah-Armens, Artuqids, Eretnids, Kadi Burhan al-Din, Erzincan, Tacettin, Lâdik, Alaiye); the Mamluk pashas of Baghdad; Arabian states from the Sulayhids to the Jabrids, Bani Khalid, Kathiri, Mahra and Lahej; and the South Caucasus khanates of 1747–1828. Few pre-modern sources describe frontiers.",
+ "dataNote": "Cliopatria's borders leave out many states of Anatolia, the Levant, Mesopotamia, Arabia, Iran and the South Caucasus. This layer adds 76 of them. The South Caucasus khanates replace the border data's single 'Khanates of the Caucasus'. Dates and capitals come from cited reference articles; borders are reconstructions checked against Shepherd's Historical Atlas and the descriptions in those articles. Every line here is approximate.",
  "regions": [
   {
    "name": "Ebla",
@@ -98,7 +99,8 @@
      "when": "c. 1793–1792 BCE"
     }
    ],
-   "note": "The Amorite Lim dynasty of Mari controlled the middle Euphrates from Terqa to the Suhum border and the lower Khabur. Between the two slices Mari was held by Shamshi-Adad's Kingdom of Upper Mesopotamia (his son Yasmah-Addu as king); Hammurabi of Babylon conquered Zimri-Lim in 1761 and destroyed the city c. 1759 BCE. Middle chronology. Sources: Wikipedia 'Mari, Syria'.",
+   "note": "The Amorite Lim dynasty of Mari controlled the middle Euphrates from Terqa to the Suhum border and the lower Khabur. Between the two periods of Lim rule Mari was held by Shamshi-Adad's Kingdom of Upper Mesopotamia (his son Yasmah-Addu as king); Hammurabi of Babylon conquered Zimri-Lim in 1761 and destroyed the city c. 1759 BCE. Middle chronology. Sources: Wikipedia 'Mari, Syria'.",
+   "dataNote": "Drawn as two slices, before and after Shamshi-Adad's rule.",
    "coords": [
     [
      40.05,
@@ -175,7 +177,8 @@
      "when": "c. 1775–1761 BCE"
     }
    ],
-   "note": "The Amorite Lim dynasty of Mari controlled the middle Euphrates from Terqa to the Suhum border and the lower Khabur. Between the two slices Mari was held by Shamshi-Adad's Kingdom of Upper Mesopotamia (his son Yasmah-Addu as king); Hammurabi of Babylon conquered Zimri-Lim in 1761 and destroyed the city c. 1759 BCE. Middle chronology. Sources: Wikipedia 'Mari, Syria'.",
+   "note": "The Amorite Lim dynasty of Mari controlled the middle Euphrates from Terqa to the Suhum border and the lower Khabur. Between the two periods of Lim rule Mari was held by Shamshi-Adad's Kingdom of Upper Mesopotamia (his son Yasmah-Addu as king); Hammurabi of Babylon conquered Zimri-Lim in 1761 and destroyed the city c. 1759 BCE. Middle chronology. Sources: Wikipedia 'Mari, Syria'.",
+   "dataNote": "Drawn as two slices, before and after Shamshi-Adad's rule.",
    "coords": [
     [
      40.05,
@@ -264,7 +267,8 @@
      "when": "c. 1620–1600 BCE"
     }
    ],
-   "note": "Amorite kingdom centred on Halab (Aleppo), the leading Syrian power of the 18th century BCE (Yarim-Lim I and Hammurabi I had some twenty vassal kings). Only the core realm is drawn, from the Amuq to the Euphrates bend and south to the Qatna frontier; vassals such as Alalakh lie inside. Ended by the Hittite conquests of Hattusili I and Mursili I (Aleppo destroyed c. 1600/1595 BCE). Middle chronology. Sources: Wikipedia 'Yamhad'.",
+   "note": "Amorite kingdom centred on Halab (Aleppo), the leading Syrian power of the 18th century BCE (Yarim-Lim I and Hammurabi I had some twenty vassal kings). The core realm ran from the Amuq to the Euphrates bend and south to the Qatna frontier. Ended by the Hittite conquests of Hattusili I and Mursili I (Aleppo destroyed c. 1600/1595 BCE). Middle chronology. Sources: Wikipedia 'Yamhad'.",
+   "dataNote": "Only the core realm is drawn, from the Amuq to the Euphrates bend and south to the Qatna frontier; vassals such as Alalakh lie inside.",
    "coords": [
     [
      36.15,
@@ -402,7 +406,8 @@
      "when": "c. 1320 BCE"
     }
    ],
-   "note": "Arzawa Minor, the chief state of the Arzawa lands of western Anatolia, with its capital at Apasa (Ephesus); its king Tarhundaradu corresponded with Amenhotep III. Mursili II conquered it c. 1320 BCE and divided it into the vassal kingdoms of Mira, Hapalla and the Seha River Land. The extent (Hermus to the Maeander, inland to the Lakes) is approximate. Sources: Wikipedia 'Arzawa'.",
+   "note": "Arzawa Minor, the chief state of the Arzawa lands of western Anatolia, with its capital at Apasa (Ephesus); its king Tarhundaradu corresponded with Amenhotep III. Mursili II conquered it c. 1320 BCE and divided it into the vassal kingdoms of Mira, Hapalla and the Seha River Land. It stretched roughly from the Hermus to the Maeander and inland to the Lakes. Sources: Wikipedia 'Arzawa'.",
+   "dataNote": "The extent (Hermus to the Maeander, inland to the Lakes) is approximate.",
    "coords": [
     [
      26.6,
@@ -479,7 +484,8 @@
      "when": "c. 1215–1185 BCE"
     }
    ],
-   "note": "Coastal kingdom of Ras Shamra between Mount Casius (Jebel Aqra) and the Siyannu border, a vassal first of Egypt and from c. 1350 BCE of the Hittites, but ruled by its own dynasty until its destruction c. 1185 BCE. Area about 2,000 km²; the inland border is approximate. Sources: Wikipedia 'Ugarit'.",
+   "note": "Coastal kingdom of Ras Shamra between Mount Casius (Jebel Aqra) and the Siyannu border, a vassal first of Egypt and from c. 1350 BCE of the Hittites, but ruled by its own dynasty until its destruction c. 1185 BCE. Area about 2,000 km². Sources: Wikipedia 'Ugarit'.",
+   "dataNote": "The inland border is approximate.",
    "coords": [
     [
      35.7,
@@ -528,7 +534,8 @@
      "when": "c. 870–856 BCE"
     }
    ],
-   "note": "Aramaean kingdom on both banks of the Euphrates below Carchemish, with its capital at Til Barsip (Tell Ahmar); Shalmaneser III of Assyria took it from Ahuni in 856 BCE and renamed the capital Kar-Shalmaneser. Carchemish (drawn by the border data among the Neo-Hittite states) is left outside. Sources: Wikipedia 'Bit Adini'.",
+   "note": "Aramaean kingdom on both banks of the Euphrates below Carchemish, with its capital at Til Barsip (Tell Ahmar); Shalmaneser III of Assyria took it from Ahuni in 856 BCE and renamed the capital Kar-Shalmaneser. Sources: Wikipedia 'Bit Adini'.",
+   "dataNote": "Carchemish (drawn by the border data among the Neo-Hittite states) is left outside.",
    "coords": [
     [
      38.05,
@@ -585,7 +592,8 @@
      "when": "c. 865–842 BCE"
     }
    ],
-   "note": "Aramaean kingdom of Damascus and the Hauran. Under Hazael (c. 842–796 BCE) it dominated Israel and took Gilead and Bashan; the middle slice extends to the Jabbok. Tiglath-Pileser III annexed it in 732 BCE. Sources: Wikipedia 'Aram-Damascus'; Shepherd plate 5 (750–625 BCE).",
+   "note": "Aramaean kingdom of Damascus and the Hauran. Under Hazael (c. 842–796 BCE) it dominated Israel and took Gilead and Bashan. Tiglath-Pileser III annexed it in 732 BCE. Sources: Wikipedia 'Aram-Damascus'; Shepherd plate 5 (750–625 BCE).",
+   "dataNote": "The middle slice extends to the Jabbok.",
    "coords": [
     [
      35.75,
@@ -638,7 +646,8 @@
      "when": "c. 842–796 BCE"
     }
    ],
-   "note": "Aramaean kingdom of Damascus and the Hauran. Under Hazael (c. 842–796 BCE) it dominated Israel and took Gilead and Bashan; the middle slice extends to the Jabbok. Tiglath-Pileser III annexed it in 732 BCE. Sources: Wikipedia 'Aram-Damascus'; Shepherd plate 5 (750–625 BCE).",
+   "note": "Aramaean kingdom of Damascus and the Hauran. Under Hazael (c. 842–796 BCE) it dominated Israel and took Gilead and Bashan. Tiglath-Pileser III annexed it in 732 BCE. Sources: Wikipedia 'Aram-Damascus'; Shepherd plate 5 (750–625 BCE).",
+   "dataNote": "The middle slice extends to the Jabbok.",
    "coords": [
     [
      35.65,
@@ -703,7 +712,8 @@
      "when": "c. 754–732 BCE"
     }
    ],
-   "note": "Aramaean kingdom of Damascus and the Hauran. Under Hazael (c. 842–796 BCE) it dominated Israel and took Gilead and Bashan; the middle slice extends to the Jabbok. Tiglath-Pileser III annexed it in 732 BCE. Sources: Wikipedia 'Aram-Damascus'; Shepherd plate 5 (750–625 BCE).",
+   "note": "Aramaean kingdom of Damascus and the Hauran. Under Hazael (c. 842–796 BCE) it dominated Israel and took Gilead and Bashan. Tiglath-Pileser III annexed it in 732 BCE. Sources: Wikipedia 'Aram-Damascus'; Shepherd plate 5 (750–625 BCE).",
+   "dataNote": "The middle slice extends to the Jabbok.",
    "coords": [
     [
      35.75,
@@ -768,7 +778,8 @@
      "when": "c. 580s BCE"
     }
    ],
-   "note": "Kingdom east of the Jordan between the Jabbok and the Arnon around Rabbath Ammon (Amman); an Assyrian tributary from 734 BCE, absorbed after the Babylonian campaign of 582 BCE. The frontier with Moab moved repeatedly; the line here is a compromise. Sources: Wikipedia 'Ammon'.",
+   "note": "Kingdom east of the Jordan between the Jabbok and the Arnon around Rabbath Ammon (Amman); an Assyrian tributary from 734 BCE, absorbed after the Babylonian campaign of 582 BCE. The frontier with Moab moved repeatedly. Sources: Wikipedia 'Ammon'.",
+   "dataNote": "The line here is a compromise.",
    "coords": [
     [
      35.75,
@@ -878,7 +889,8 @@
      "when": "c. 670 BCE"
     }
    ],
-   "note": "Kingdom south of the Zered as far as the Gulf of Aqaba, with its capital at Bozrah (Busayra); it broke from Judah in the mid-9th century BCE, paid tribute to Assyria from 734, and fell to Nabonidus of Babylon c. 552 BCE. The western border on the Arabah is approximate; later Edomite expansion into the Negev is not drawn. Sources: Wikipedia 'Edom'; Shepherd plate 5.",
+   "note": "Kingdom south of the Zered as far as the Gulf of Aqaba, with its capital at Bozrah (Busayra); it broke from Judah in the mid-9th century BCE, paid tribute to Assyria from 734, and fell to Nabonidus of Babylon c. 552 BCE. The western border on the Arabah is approximate; Edom later expanded into the Negev. Sources: Wikipedia 'Edom'; Shepherd plate 5.",
+   "dataNote": "Later Edomite expansion into the Negev is not drawn.",
    "coords": [
     [
      35.5,
@@ -943,7 +955,8 @@
      "when": "c. 675–660 BCE"
     }
    ],
-   "note": "Kingdom south and south-east of Lake Urmia (capital probably Izirtu, near Saqqez), a buffer between Urartu and Assyria; absorbed by the Medes after 616 BCE. Extent approximate. Sources: Wikipedia 'Mannaea'.",
+   "note": "Kingdom south and south-east of Lake Urmia (capital probably Izirtu, near Saqqez), a buffer between Urartu and Assyria; absorbed by the Medes after 616 BCE. Sources: Wikipedia 'Mannaea'.",
+   "dataNote": "Extent approximate.",
    "coords": [
     [
      45.4,
@@ -996,7 +1009,8 @@
      "when": "c. 330–312 BCE"
     }
    ],
-   "note": "One of the city-kingdoms of Iron Age Cyprus, listed (with nine others) on the Prism of Esarhaddon (673 BCE) or attested on Persian-period coins; tributary in turn to Assyria, Egypt (c. 570–545 BCE) and the Achaemenids, but ruled by its own kings until Ptolemy I abolished the kingdoms in 312–310 BCE. The island-wide division into kingdoms is a modern reconstruction from the location of the capitals, sanctuaries and the main valleys; no ancient source gives frontiers, so every line is conjectural. Start date simplified to 600 BCE (after the end of Assyrian domination in 609). Sources: Wikipedia 'Ancient history of Cyprus' and the city's article; Shepherd plate 5.",
+   "note": "One of the city-kingdoms of Iron Age Cyprus, listed (with nine others) on the Prism of Esarhaddon (673 BCE) or attested on Persian-period coins; tributary in turn to Assyria (until 609), Egypt (c. 570–545 BCE) and the Achaemenids, but ruled by its own kings until Ptolemy I abolished the kingdoms in 312–310 BCE. No ancient source gives the kingdoms' frontiers. Sources: Wikipedia 'Ancient history of Cyprus' and the city's article; Shepherd plate 5.",
+   "dataNote": "The island-wide division into kingdoms is a modern reconstruction from the location of the capitals, sanctuaries and the main valleys; every line is conjectural. Start date simplified to 600 BCE (after the end of Assyrian domination in 609).",
    "coords": [
     [
      32.2,
@@ -1037,7 +1051,8 @@
      "when": "c. 321–306 BCE"
     }
    ],
-   "note": "One of the city-kingdoms of Iron Age Cyprus, listed (with nine others) on the Prism of Esarhaddon (673 BCE) or attested on Persian-period coins; tributary in turn to Assyria, Egypt (c. 570–545 BCE) and the Achaemenids, but ruled by its own kings until Ptolemy I abolished the kingdoms in 312–310 BCE. The island-wide division into kingdoms is a modern reconstruction from the location of the capitals, sanctuaries and the main valleys; no ancient source gives frontiers, so every line is conjectural. Start date simplified to 600 BCE (after the end of Assyrian domination in 609). Sources: Wikipedia 'Ancient history of Cyprus' and the city's article; Shepherd plate 5. Nicocles of Paphos survived the 312 BCE abolition until 306 BCE (not drawn).",
+   "note": "One of the city-kingdoms of Iron Age Cyprus, listed (with nine others) on the Prism of Esarhaddon (673 BCE) or attested on Persian-period coins; tributary in turn to Assyria (until 609), Egypt (c. 570–545 BCE) and the Achaemenids, but ruled by its own kings until Ptolemy I abolished the kingdoms in 312–310 BCE. No ancient source gives the kingdoms' frontiers. Sources: Wikipedia 'Ancient history of Cyprus' and the city's article; Shepherd plate 5. Nicocles of Paphos survived the 312 BCE abolition until 306 BCE.",
+   "dataNote": "The island-wide division into kingdoms is a modern reconstruction from the location of the capitals, sanctuaries and the main valleys; every line is conjectural. Start date simplified to 600 BCE (after the end of Assyrian domination in 609). Nicocles's survival to 306 BCE is not drawn.",
    "coords": [
     [
      32.2,
@@ -1086,7 +1101,8 @@
      "when": "fl. 331 BCE"
     }
    ],
-   "note": "One of the city-kingdoms of Iron Age Cyprus, listed (with nine others) on the Prism of Esarhaddon (673 BCE) or attested on Persian-period coins; tributary in turn to Assyria, Egypt (c. 570–545 BCE) and the Achaemenids, but ruled by its own kings until Ptolemy I abolished the kingdoms in 312–310 BCE. The island-wide division into kingdoms is a modern reconstruction from the location of the capitals, sanctuaries and the main valleys; no ancient source gives frontiers, so every line is conjectural. Start date simplified to 600 BCE (after the end of Assyrian domination in 609). Sources: Wikipedia 'Ancient history of Cyprus' and the city's article; Shepherd plate 5.",
+   "note": "One of the city-kingdoms of Iron Age Cyprus, listed (with nine others) on the Prism of Esarhaddon (673 BCE) or attested on Persian-period coins; tributary in turn to Assyria (until 609), Egypt (c. 570–545 BCE) and the Achaemenids, but ruled by its own kings until Ptolemy I abolished the kingdoms in 312–310 BCE. No ancient source gives the kingdoms' frontiers. Sources: Wikipedia 'Ancient history of Cyprus' and the city's article; Shepherd plate 5.",
+   "dataNote": "The island-wide division into kingdoms is a modern reconstruction from the location of the capitals, sanctuaries and the main valleys; every line is conjectural. Start date simplified to 600 BCE (after the end of Assyrian domination in 609).",
    "coords": [
     [
      32.85,
@@ -1127,7 +1143,8 @@
      "when": "fl. 331 BCE"
     }
    ],
-   "note": "One of the city-kingdoms of Iron Age Cyprus, listed (with nine others) on the Prism of Esarhaddon (673 BCE) or attested on Persian-period coins; tributary in turn to Assyria, Egypt (c. 570–545 BCE) and the Achaemenids, but ruled by its own kings until Ptolemy I abolished the kingdoms in 312–310 BCE. The island-wide division into kingdoms is a modern reconstruction from the location of the capitals, sanctuaries and the main valleys; no ancient source gives frontiers, so every line is conjectural. Start date simplified to 600 BCE (after the end of Assyrian domination in 609). Sources: Wikipedia 'Ancient history of Cyprus' and the city's article; Shepherd plate 5.",
+   "note": "One of the city-kingdoms of Iron Age Cyprus, listed (with nine others) on the Prism of Esarhaddon (673 BCE) or attested on Persian-period coins; tributary in turn to Assyria (until 609), Egypt (c. 570–545 BCE) and the Achaemenids, but ruled by its own kings until Ptolemy I abolished the kingdoms in 312–310 BCE. No ancient source gives the kingdoms' frontiers. Sources: Wikipedia 'Ancient history of Cyprus' and the city's article; Shepherd plate 5.",
+   "dataNote": "The island-wide division into kingdoms is a modern reconstruction from the location of the capitals, sanctuaries and the main valleys; every line is conjectural. Start date simplified to 600 BCE (after the end of Assyrian domination in 609).",
    "coords": [
     [
      33.05,
@@ -1176,7 +1193,8 @@
      "when": "fl. 331 BCE"
     }
    ],
-   "note": "One of the city-kingdoms of Iron Age Cyprus, listed (with nine others) on the Prism of Esarhaddon (673 BCE) or attested on Persian-period coins; tributary in turn to Assyria, Egypt (c. 570–545 BCE) and the Achaemenids, but ruled by its own kings until Ptolemy I abolished the kingdoms in 312–310 BCE. The island-wide division into kingdoms is a modern reconstruction from the location of the capitals, sanctuaries and the main valleys; no ancient source gives frontiers, so every line is conjectural. Start date simplified to 600 BCE (after the end of Assyrian domination in 609). Sources: Wikipedia 'Ancient history of Cyprus' and the city's article; Shepherd plate 5.",
+   "note": "One of the city-kingdoms of Iron Age Cyprus, listed (with nine others) on the Prism of Esarhaddon (673 BCE) or attested on Persian-period coins; tributary in turn to Assyria (until 609), Egypt (c. 570–545 BCE) and the Achaemenids, but ruled by its own kings until Ptolemy I abolished the kingdoms in 312–310 BCE. No ancient source gives the kingdoms' frontiers. Sources: Wikipedia 'Ancient history of Cyprus' and the city's article; Shepherd plate 5.",
+   "dataNote": "The island-wide division into kingdoms is a modern reconstruction from the location of the capitals, sanctuaries and the main valleys; every line is conjectural. Start date simplified to 600 BCE (after the end of Assyrian domination in 609).",
    "coords": [
     [
      32.75,
@@ -1221,7 +1239,8 @@
      "when": "fl. 312 BCE"
     }
    ],
-   "note": "One of the city-kingdoms of Iron Age Cyprus, listed (with nine others) on the Prism of Esarhaddon (673 BCE) or attested on Persian-period coins; tributary in turn to Assyria, Egypt (c. 570–545 BCE) and the Achaemenids, but ruled by its own kings until Ptolemy I abolished the kingdoms in 312–310 BCE. The island-wide division into kingdoms is a modern reconstruction from the location of the capitals, sanctuaries and the main valleys; no ancient source gives frontiers, so every line is conjectural. Start date simplified to 600 BCE (after the end of Assyrian domination in 609). Sources: Wikipedia 'Ancient history of Cyprus' and the city's article; Shepherd plate 5.",
+   "note": "One of the city-kingdoms of Iron Age Cyprus, listed (with nine others) on the Prism of Esarhaddon (673 BCE) or attested on Persian-period coins; tributary in turn to Assyria (until 609), Egypt (c. 570–545 BCE) and the Achaemenids, but ruled by its own kings until Ptolemy I abolished the kingdoms in 312–310 BCE. No ancient source gives the kingdoms' frontiers. Sources: Wikipedia 'Ancient history of Cyprus' and the city's article; Shepherd plate 5.",
+   "dataNote": "The island-wide division into kingdoms is a modern reconstruction from the location of the capitals, sanctuaries and the main valleys; every line is conjectural. Start date simplified to 600 BCE (after the end of Assyrian domination in 609).",
    "coords": [
     [
      33.05,
@@ -1266,7 +1285,8 @@
      "when": "4th century BCE"
     }
    ],
-   "note": "One of the city-kingdoms of Iron Age Cyprus, listed (with nine others) on the Prism of Esarhaddon (673 BCE) or attested on Persian-period coins; tributary in turn to Assyria, Egypt (c. 570–545 BCE) and the Achaemenids, but ruled by its own kings until Ptolemy I abolished the kingdoms in 312–310 BCE. The island-wide division into kingdoms is a modern reconstruction from the location of the capitals, sanctuaries and the main valleys; no ancient source gives frontiers, so every line is conjectural. Start date simplified to 600 BCE (after the end of Assyrian domination in 609). Sources: Wikipedia 'Ancient history of Cyprus' and the city's article; Shepherd plate 5. Sold to Kition in the 340s BCE, then given to Salamis by Alexander (332 BCE).",
+   "note": "One of the city-kingdoms of Iron Age Cyprus, listed (with nine others) on the Prism of Esarhaddon (673 BCE) or attested on Persian-period coins; tributary in turn to Assyria (until 609), Egypt (c. 570–545 BCE) and the Achaemenids, but ruled by its own kings until Ptolemy I abolished the kingdoms in 312–310 BCE. No ancient source gives the kingdoms' frontiers. Sources: Wikipedia 'Ancient history of Cyprus' and the city's article; Shepherd plate 5. Sold to Kition in the 340s BCE, then given to Salamis by Alexander (332 BCE).",
+   "dataNote": "The island-wide division into kingdoms is a modern reconstruction from the location of the capitals, sanctuaries and the main valleys; every line is conjectural. Start date simplified to 600 BCE (after the end of Assyrian domination in 609).",
    "coords": [
     [
      33.1,
@@ -1303,7 +1323,8 @@
      "when": "c. 450s BCE"
     }
    ],
-   "note": "One of the city-kingdoms of Iron Age Cyprus, listed (with nine others) on the Prism of Esarhaddon (673 BCE) or attested on Persian-period coins; tributary in turn to Assyria, Egypt (c. 570–545 BCE) and the Achaemenids, but ruled by its own kings until Ptolemy I abolished the kingdoms in 312–310 BCE. The island-wide division into kingdoms is a modern reconstruction from the location of the capitals, sanctuaries and the main valleys; no ancient source gives frontiers, so every line is conjectural. Start date simplified to 600 BCE (after the end of Assyrian domination in 609). Sources: Wikipedia 'Ancient history of Cyprus' and the city's article; Shepherd plate 5. Annexed by Kition c. 450 BCE.",
+   "note": "One of the city-kingdoms of Iron Age Cyprus, listed (with nine others) on the Prism of Esarhaddon (673 BCE) or attested on Persian-period coins; tributary in turn to Assyria (until 609), Egypt (c. 570–545 BCE) and the Achaemenids, but ruled by its own kings until Ptolemy I abolished the kingdoms in 312–310 BCE. No ancient source gives the kingdoms' frontiers. Sources: Wikipedia 'Ancient history of Cyprus' and the city's article; Shepherd plate 5. Annexed by Kition c. 450 BCE.",
+   "dataNote": "The island-wide division into kingdoms is a modern reconstruction from the location of the capitals, sanctuaries and the main valleys; every line is conjectural. Start date simplified to 600 BCE (after the end of Assyrian domination in 609).",
    "coords": [
     [
      33.35,
@@ -1352,7 +1373,8 @@
      "when": "c. 450 BCE"
     }
    ],
-   "note": "One of the city-kingdoms of Iron Age Cyprus, listed (with nine others) on the Prism of Esarhaddon (673 BCE) or attested on Persian-period coins; tributary in turn to Assyria, Egypt (c. 570–545 BCE) and the Achaemenids, but ruled by its own kings until Ptolemy I abolished the kingdoms in 312–310 BCE. The island-wide division into kingdoms is a modern reconstruction from the location of the capitals, sanctuaries and the main valleys; no ancient source gives frontiers, so every line is conjectural. Start date simplified to 600 BCE (after the end of Assyrian domination in 609). Sources: Wikipedia 'Ancient history of Cyprus' and the city's article; Shepherd plate 5. Kition (Phoenician dynasty) annexed Idalion c. 450 BCE and bought Tamassos in the 340s; Alexander gave Tamassos to Pnytagoras of Salamis (332 BCE). Slices follow those changes, with approximate dates.",
+   "note": "One of the city-kingdoms of Iron Age Cyprus, listed (with nine others) on the Prism of Esarhaddon (673 BCE) or attested on Persian-period coins; tributary in turn to Assyria (until 609), Egypt (c. 570–545 BCE) and the Achaemenids, but ruled by its own kings until Ptolemy I abolished the kingdoms in 312–310 BCE. No ancient source gives the kingdoms' frontiers. Sources: Wikipedia 'Ancient history of Cyprus' and the city's article; Shepherd plate 5. Kition (Phoenician dynasty) annexed Idalion c. 450 BCE and bought Tamassos in the 340s; Alexander gave Tamassos to Pnytagoras of Salamis (332 BCE).",
+   "dataNote": "The island-wide division into kingdoms is a modern reconstruction from the location of the capitals, sanctuaries and the main valleys; every line is conjectural. Start date simplified to 600 BCE (after the end of Assyrian domination in 609). Slices follow those changes, with approximate dates.",
    "coords": [
     [
      33.45,
@@ -1405,7 +1427,8 @@
      "when": "c. 392–362 BCE"
     }
    ],
-   "note": "One of the city-kingdoms of Iron Age Cyprus, listed (with nine others) on the Prism of Esarhaddon (673 BCE) or attested on Persian-period coins; tributary in turn to Assyria, Egypt (c. 570–545 BCE) and the Achaemenids, but ruled by its own kings until Ptolemy I abolished the kingdoms in 312–310 BCE. The island-wide division into kingdoms is a modern reconstruction from the location of the capitals, sanctuaries and the main valleys; no ancient source gives frontiers, so every line is conjectural. Start date simplified to 600 BCE (after the end of Assyrian domination in 609). Sources: Wikipedia 'Ancient history of Cyprus' and the city's article; Shepherd plate 5. Kition (Phoenician dynasty) annexed Idalion c. 450 BCE and bought Tamassos in the 340s; Alexander gave Tamassos to Pnytagoras of Salamis (332 BCE). Slices follow those changes, with approximate dates.",
+   "note": "One of the city-kingdoms of Iron Age Cyprus, listed (with nine others) on the Prism of Esarhaddon (673 BCE) or attested on Persian-period coins; tributary in turn to Assyria (until 609), Egypt (c. 570–545 BCE) and the Achaemenids, but ruled by its own kings until Ptolemy I abolished the kingdoms in 312–310 BCE. No ancient source gives the kingdoms' frontiers. Sources: Wikipedia 'Ancient history of Cyprus' and the city's article; Shepherd plate 5. Kition (Phoenician dynasty) annexed Idalion c. 450 BCE and bought Tamassos in the 340s; Alexander gave Tamassos to Pnytagoras of Salamis (332 BCE).",
+   "dataNote": "The island-wide division into kingdoms is a modern reconstruction from the location of the capitals, sanctuaries and the main valleys; every line is conjectural. Start date simplified to 600 BCE (after the end of Assyrian domination in 609). Slices follow those changes, with approximate dates.",
    "coords": [
     [
      33.35,
@@ -1462,7 +1485,8 @@
      "when": "c. 361–312 BCE"
     }
    ],
-   "note": "One of the city-kingdoms of Iron Age Cyprus, listed (with nine others) on the Prism of Esarhaddon (673 BCE) or attested on Persian-period coins; tributary in turn to Assyria, Egypt (c. 570–545 BCE) and the Achaemenids, but ruled by its own kings until Ptolemy I abolished the kingdoms in 312–310 BCE. The island-wide division into kingdoms is a modern reconstruction from the location of the capitals, sanctuaries and the main valleys; no ancient source gives frontiers, so every line is conjectural. Start date simplified to 600 BCE (after the end of Assyrian domination in 609). Sources: Wikipedia 'Ancient history of Cyprus' and the city's article; Shepherd plate 5. Kition (Phoenician dynasty) annexed Idalion c. 450 BCE and bought Tamassos in the 340s; Alexander gave Tamassos to Pnytagoras of Salamis (332 BCE). Slices follow those changes, with approximate dates.",
+   "note": "One of the city-kingdoms of Iron Age Cyprus, listed (with nine others) on the Prism of Esarhaddon (673 BCE) or attested on Persian-period coins; tributary in turn to Assyria (until 609), Egypt (c. 570–545 BCE) and the Achaemenids, but ruled by its own kings until Ptolemy I abolished the kingdoms in 312–310 BCE. No ancient source gives the kingdoms' frontiers. Sources: Wikipedia 'Ancient history of Cyprus' and the city's article; Shepherd plate 5. Kition (Phoenician dynasty) annexed Idalion c. 450 BCE and bought Tamassos in the 340s; Alexander gave Tamassos to Pnytagoras of Salamis (332 BCE).",
+   "dataNote": "The island-wide division into kingdoms is a modern reconstruction from the location of the capitals, sanctuaries and the main valleys; every line is conjectural. Start date simplified to 600 BCE (after the end of Assyrian domination in 609). Slices follow those changes, with approximate dates.",
    "coords": [
     [
      33.0,
@@ -1527,7 +1551,8 @@
      "when": "c. 361–312 BCE"
     }
    ],
-   "note": "One of the city-kingdoms of Iron Age Cyprus, listed (with nine others) on the Prism of Esarhaddon (673 BCE) or attested on Persian-period coins; tributary in turn to Assyria, Egypt (c. 570–545 BCE) and the Achaemenids, but ruled by its own kings until Ptolemy I abolished the kingdoms in 312–310 BCE. The island-wide division into kingdoms is a modern reconstruction from the location of the capitals, sanctuaries and the main valleys; no ancient source gives frontiers, so every line is conjectural. Start date simplified to 600 BCE (after the end of Assyrian domination in 609). Sources: Wikipedia 'Ancient history of Cyprus' and the city's article; Shepherd plate 5. Kition (Phoenician dynasty) annexed Idalion c. 450 BCE and bought Tamassos in the 340s; Alexander gave Tamassos to Pnytagoras of Salamis (332 BCE). Slices follow those changes, with approximate dates.",
+   "note": "One of the city-kingdoms of Iron Age Cyprus, listed (with nine others) on the Prism of Esarhaddon (673 BCE) or attested on Persian-period coins; tributary in turn to Assyria (until 609), Egypt (c. 570–545 BCE) and the Achaemenids, but ruled by its own kings until Ptolemy I abolished the kingdoms in 312–310 BCE. No ancient source gives the kingdoms' frontiers. Sources: Wikipedia 'Ancient history of Cyprus' and the city's article; Shepherd plate 5. Kition (Phoenician dynasty) annexed Idalion c. 450 BCE and bought Tamassos in the 340s; Alexander gave Tamassos to Pnytagoras of Salamis (332 BCE).",
+   "dataNote": "The island-wide division into kingdoms is a modern reconstruction from the location of the capitals, sanctuaries and the main valleys; every line is conjectural. Start date simplified to 600 BCE (after the end of Assyrian domination in 609). Slices follow those changes, with approximate dates.",
    "coords": [
     [
      33.35,
@@ -1596,7 +1621,8 @@
      "when": "c. 331–311 BCE"
     }
    ],
-   "note": "One of the city-kingdoms of Iron Age Cyprus, listed (with nine others) on the Prism of Esarhaddon (673 BCE) or attested on Persian-period coins; tributary in turn to Assyria, Egypt (c. 570–545 BCE) and the Achaemenids, but ruled by its own kings until Ptolemy I abolished the kingdoms in 312–310 BCE. The island-wide division into kingdoms is a modern reconstruction from the location of the capitals, sanctuaries and the main valleys; no ancient source gives frontiers, so every line is conjectural. Start date simplified to 600 BCE (after the end of Assyrian domination in 609). Sources: Wikipedia 'Ancient history of Cyprus' and the city's article; Shepherd plate 5. The leading kingdom; Evagoras I briefly united most of the island (c. 391–380 BCE), not drawn. The separate Tamassos piece (332–312 BCE) was Alexander's gift to Salamis.",
+   "note": "One of the city-kingdoms of Iron Age Cyprus, listed (with nine others) on the Prism of Esarhaddon (673 BCE) or attested on Persian-period coins; tributary in turn to Assyria, Egypt (c. 570–545 BCE) and the Achaemenids, but ruled by its own kings until Ptolemy I abolished the kingdoms in 312–310 BCE. No ancient source gives the frontiers between the kingdoms. Sources: Wikipedia 'Ancient history of Cyprus' and the city's article; Shepherd plate 5. The leading kingdom; Evagoras I briefly united most of the island (c. 391–380 BCE). Tamassos (332–312 BCE) was Alexander's gift to Salamis.",
+   "dataNote": "The island-wide division into kingdoms is a modern reconstruction from the location of the capitals, sanctuaries and the main valleys; every line is conjectural. Start date simplified to 600 BCE (after the end of Assyrian domination in 609). Evagoras I's union of the island (c. 391–380 BCE) is not drawn. Tamassos (332–312 BCE) is drawn as a separate piece.",
    "coords": [
     [
      33.55,
@@ -1661,7 +1687,8 @@
      "when": "c. 331–311 BCE"
     }
    ],
-   "note": "One of the city-kingdoms of Iron Age Cyprus, listed (with nine others) on the Prism of Esarhaddon (673 BCE) or attested on Persian-period coins; tributary in turn to Assyria, Egypt (c. 570–545 BCE) and the Achaemenids, but ruled by its own kings until Ptolemy I abolished the kingdoms in 312–310 BCE. The island-wide division into kingdoms is a modern reconstruction from the location of the capitals, sanctuaries and the main valleys; no ancient source gives frontiers, so every line is conjectural. Start date simplified to 600 BCE (after the end of Assyrian domination in 609). Sources: Wikipedia 'Ancient history of Cyprus' and the city's article; Shepherd plate 5. The leading kingdom; Evagoras I briefly united most of the island (c. 391–380 BCE), not drawn. The separate Tamassos piece (332–312 BCE) was Alexander's gift to Salamis.",
+   "note": "One of the city-kingdoms of Iron Age Cyprus, listed (with nine others) on the Prism of Esarhaddon (673 BCE) or attested on Persian-period coins; tributary in turn to Assyria, Egypt (c. 570–545 BCE) and the Achaemenids, but ruled by its own kings until Ptolemy I abolished the kingdoms in 312–310 BCE. No ancient source gives the frontiers between the kingdoms. Sources: Wikipedia 'Ancient history of Cyprus' and the city's article; Shepherd plate 5. The leading kingdom; Evagoras I briefly united most of the island (c. 391–380 BCE). Tamassos (332–312 BCE) was Alexander's gift to Salamis.",
+   "dataNote": "The island-wide division into kingdoms is a modern reconstruction from the location of the capitals, sanctuaries and the main valleys; every line is conjectural. Start date simplified to 600 BCE (after the end of Assyrian domination in 609). Evagoras I's union of the island (c. 391–380 BCE) is not drawn. Tamassos (332–312 BCE) is drawn as a separate piece.",
    "coords": [
     [
      33.1,
@@ -1710,7 +1737,8 @@
      "when": "c. 210s CE"
     }
    ],
-   "note": "Kingdom at the head of the Persian Gulf founded by Hyspaosines after the Seleucid collapse; capital Charax Spasinou. Frequently a Parthian vassal but with its own kings and coinage until Ardashir I annexed it c. 222. Drawn over the Parthian outline. Sources: Wikipedia 'Characene'.",
+   "note": "Kingdom at the head of the Persian Gulf founded by Hyspaosines after the Seleucid collapse; capital Charax Spasinou. Frequently a Parthian vassal but with its own kings and coinage until Ardashir I annexed it c. 222. Sources: Wikipedia 'Characene'.",
+   "dataNote": "Drawn over the Parthian outline.",
    "coords": [
     [
      46.0,
@@ -1783,7 +1811,8 @@
      "when": "c. 2nd century CE"
     }
    ],
-   "note": "Autonomous kingdom in the Zagros foothills of Khuzestan (Susiana), often a Parthian vassal; held Susa at times. Conquered by Ardashir I c. 221. Extent approximate. Sources: Wikipedia 'Elymais'.",
+   "note": "Autonomous kingdom in the Zagros foothills of Khuzestan (Susiana), often a Parthian vassal; held Susa at times. Conquered by Ardashir I c. 221. Sources: Wikipedia 'Elymais'.",
+   "dataNote": "Extent approximate.",
    "coords": [
     [
      48.3,
@@ -1848,7 +1877,8 @@
      "when": "c. 200–241"
     }
    ],
-   "note": "Arab kingdom of the caravan city of Hatra in the Jazira steppe, under Parthian suzerainty; its rulers took the title 'king of the Arabs' from the mid-2nd century. It repelled Trajan (117) and Septimius Severus (198/199) and fell to the Sasanian Shapur I in 240/241. Only the steppe around the city is drawn. Sources: Wikipedia 'Hatra' and 'Kingdom of Hatra'.",
+   "note": "Arab kingdom of the caravan city of Hatra in the Jazira steppe, under Parthian suzerainty; its rulers took the title 'king of the Arabs' from the mid-2nd century. It repelled Trajan (117) and Septimius Severus (198/199) and fell to the Sasanian Shapur I in 240/241. Sources: Wikipedia 'Hatra' and 'Kingdom of Hatra'.",
+   "dataNote": "Only the steppe around the city is drawn.",
    "coords": [
     [
      42.0,
@@ -1901,7 +1931,8 @@
      "when": "c. 500–528"
     }
    ],
-   "note": "Hujrid kings of Kinda ruled the Ma'add tribes of north and central Arabia c. 450–550, as clients of Himyar; their power collapsed after al-Harith ibn Amr's death in 528. The area drawn (Najd and al-Yamama) is a rough indication of tribal hegemony, not a frontier. Sources: Wikipedia 'Kingdom of Kinda'.",
+   "note": "Hujrid kings of Kinda ruled the Ma'add tribes of north and central Arabia c. 450–550, as clients of Himyar; their power collapsed after al-Harith ibn Amr's death in 528. Their tribal hegemony (Najd and al-Yamama) had no fixed frontier. Sources: Wikipedia 'Kingdom of Kinda'.",
+   "dataNote": "The area drawn (Najd and al-Yamama) is a rough indication of tribal hegemony, not a frontier.",
    "coords": [
     [
      42.5,
@@ -1958,7 +1989,8 @@
      "when": "622–632"
     }
    ],
-   "note": "The polity Muhammad founded at Medina in 622 under the Constitution of Medina. Slices: the Medina oasis (622–627); after the Treaty of Hudaybiyya and the conquest of Khaybar (628–629); after the conquest of Mecca (630), Hunayn and Ta'if, most of the Hejaz, Tihama and western Najd (630–632). The many deputations of 630–631 brought looser allegiances from the rest of Arabia, not drawn. Succeeded by the Rashidun Caliphate (drawn by the border data from 633). Sources: Wikipedia 'First Islamic state' and 'Constitution of Medina'.",
+   "note": "The polity Muhammad founded at Medina in 622 under the Constitution of Medina. It held the Medina oasis (622–627) and grew after the Treaty of Hudaybiyya and the conquest of Khaybar (628–629); after the conquest of Mecca (630), Hunayn and Ta'if it held most of the Hejaz, Tihama and western Najd (630–632). The many deputations of 630–631 brought looser allegiances from the rest of Arabia. Succeeded by the Rashidun Caliphate. Sources: Wikipedia 'First Islamic state' and 'Constitution of Medina'.",
+   "dataNote": "Slices: the Medina oasis (622–627); after the Treaty of Hudaybiyya and the conquest of Khaybar (628–629); after the conquest of Mecca (630), Hunayn and Ta'if, most of the Hejaz, Tihama and western Najd (630–632). The looser allegiances of 630–631 from the rest of Arabia are not drawn. The Rashidun Caliphate is drawn by the border data from 633.",
    "coords": [
     [
      39.3,
@@ -1999,7 +2031,8 @@
      "when": "622–632"
     }
    ],
-   "note": "The polity Muhammad founded at Medina in 622 under the Constitution of Medina. Slices: the Medina oasis (622–627); after the Treaty of Hudaybiyya and the conquest of Khaybar (628–629); after the conquest of Mecca (630), Hunayn and Ta'if, most of the Hejaz, Tihama and western Najd (630–632). The many deputations of 630–631 brought looser allegiances from the rest of Arabia, not drawn. Succeeded by the Rashidun Caliphate (drawn by the border data from 633). Sources: Wikipedia 'First Islamic state' and 'Constitution of Medina'.",
+   "note": "The polity Muhammad founded at Medina in 622 under the Constitution of Medina. It held the Medina oasis (622–627) and grew after the Treaty of Hudaybiyya and the conquest of Khaybar (628–629); after the conquest of Mecca (630), Hunayn and Ta'if it held most of the Hejaz, Tihama and western Najd (630–632). The many deputations of 630–631 brought looser allegiances from the rest of Arabia. Succeeded by the Rashidun Caliphate. Sources: Wikipedia 'First Islamic state' and 'Constitution of Medina'.",
+   "dataNote": "Slices: the Medina oasis (622–627); after the Treaty of Hudaybiyya and the conquest of Khaybar (628–629); after the conquest of Mecca (630), Hunayn and Ta'if, most of the Hejaz, Tihama and western Najd (630–632). The looser allegiances of 630–631 from the rest of Arabia are not drawn. The Rashidun Caliphate is drawn by the border data from 633.",
    "coords": [
     [
      38.6,
@@ -2052,7 +2085,8 @@
      "when": "622–632"
     }
    ],
-   "note": "The polity Muhammad founded at Medina in 622 under the Constitution of Medina. Slices: the Medina oasis (622–627); after the Treaty of Hudaybiyya and the conquest of Khaybar (628–629); after the conquest of Mecca (630), Hunayn and Ta'if, most of the Hejaz, Tihama and western Najd (630–632). The many deputations of 630–631 brought looser allegiances from the rest of Arabia, not drawn. Succeeded by the Rashidun Caliphate (drawn by the border data from 633). Sources: Wikipedia 'First Islamic state' and 'Constitution of Medina'.",
+   "note": "The polity Muhammad founded at Medina in 622 under the Constitution of Medina. It held the Medina oasis (622–627) and grew after the Treaty of Hudaybiyya and the conquest of Khaybar (628–629); after the conquest of Mecca (630), Hunayn and Ta'if it held most of the Hejaz, Tihama and western Najd (630–632). The many deputations of 630–631 brought looser allegiances from the rest of Arabia. Succeeded by the Rashidun Caliphate. Sources: Wikipedia 'First Islamic state' and 'Constitution of Medina'.",
+   "dataNote": "Slices: the Medina oasis (622–627); after the Treaty of Hudaybiyya and the conquest of Khaybar (628–629); after the conquest of Mecca (630), Hunayn and Ta'if, most of the Hejaz, Tihama and western Najd (630–632). The looser allegiances of 630–631 from the rest of Arabia are not drawn. The Rashidun Caliphate is drawn by the border data from 633.",
    "coords": [
     [
      36.5,
@@ -2133,7 +2167,8 @@
      "when": "c. 914–952"
     }
    ],
-   "note": "Arab emirate based in Tbilisi from 736; effectively independent of the caliphate from the 830s (Ishaq ibn Ismail, crushed by Bugha al-Kabir in 853), later a city-state ruled by its emirs and then a council of elders until David IV of Georgia took it in 1122. The first slice covers central Kartli, the second only the city's district. Sources: Wikipedia 'Emirate of Tbilisi'.",
+   "note": "Arab emirate based in Tbilisi from 736; effectively independent of the caliphate from the 830s (Ishaq ibn Ismail, crushed by Bugha al-Kabir in 853), later a city-state ruled by its emirs and then a council of elders until David IV of Georgia took it in 1122. At first it held central Kartli, later only the city's district. Sources: Wikipedia 'Emirate of Tbilisi'.",
+   "dataNote": "The first slice covers central Kartli, the second only the city's district.",
    "coords": [
     [
      44.3,
@@ -2186,7 +2221,8 @@
      "when": "c. 1080–1122"
     }
    ],
-   "note": "Arab emirate based in Tbilisi from 736; effectively independent of the caliphate from the 830s (Ishaq ibn Ismail, crushed by Bugha al-Kabir in 853), later a city-state ruled by its emirs and then a council of elders until David IV of Georgia took it in 1122. The first slice covers central Kartli, the second only the city's district. Sources: Wikipedia 'Emirate of Tbilisi'.",
+   "note": "Arab emirate based in Tbilisi from 736; effectively independent of the caliphate from the 830s (Ishaq ibn Ismail, crushed by Bugha al-Kabir in 853), later a city-state ruled by its emirs and then a council of elders until David IV of Georgia took it in 1122. At first it held central Kartli, later only the city's district. Sources: Wikipedia 'Emirate of Tbilisi'.",
+   "dataNote": "The first slice covers central Kartli, the second only the city's district.",
    "coords": [
     [
      44.6,
@@ -2235,7 +2271,8 @@
      "when": "1048–1089"
     }
    ],
-   "note": "Kiurikian (Bagratid) kingdom of Tashir-Dzoraget in northern Armenia, nominally a vassal of Ani; the Seljuks took Lori in 1065 and the dynasty survived in Tavush and Matsnaberd until the 12th century (not drawn). Sources: Wikipedia 'Kingdom of Tashir-Dzoraget'.",
+   "note": "Kiurikian (Bagratid) kingdom of Tashir-Dzoraget in northern Armenia, nominally a vassal of Ani; the Seljuks took Lori in 1065 and the dynasty survived in Tavush and Matsnaberd until the 12th century. Sources: Wikipedia 'Kingdom of Tashir-Dzoraget'.",
+   "dataNote": "The Tavush and Matsnaberd remnant (to the 12th century) is not drawn.",
    "coords": [
     [
      44.0,
@@ -2292,7 +2329,8 @@
      "when": "1102–1104"
     }
    ],
-   "note": "Georgian kingdom of Kakheti and Hereti, independent of the united Kingdom of Georgia from c. 1014 until David IV annexed it in 1104. The border data folds it into Georgia; drawn on top. Sources: Wikipedia 'Kingdom of Kakheti-Hereti'.",
+   "note": "Georgian kingdom of Kakheti and Hereti, independent of the united Kingdom of Georgia from c. 1014 until David IV annexed it in 1104. Sources: Wikipedia 'Kingdom of Kakheti-Hereti'.",
+   "dataNote": "The border data folds it into Georgia; drawn on top.",
    "coords": [
     [
      45.0,
@@ -2369,7 +2407,8 @@
      "when": "1094–1166"
     }
    ],
-   "note": "Armenian kingdom of Syunik (Kapan), 987–1170. Drawn to 1104, when the Seljuks took Kapan; afterwards it was reduced to a few fortresses (Baghaberd) until 1170. Its frontier on the Aras and with Nakhchivan is approximate. Sources: Wikipedia 'Kingdom of Syunik'.",
+   "note": "Armenian kingdom of Syunik (Kapan), 987–1170. In 1104 the Seljuks took Kapan; afterwards it was reduced to a few fortresses (Baghaberd) until 1170. Sources: Wikipedia 'Kingdom of Syunik'.",
+   "dataNote": "Drawn to 1104. Its frontier on the Aras and with Nakhchivan is approximate.",
    "coords": [
     [
      45.2,
@@ -2491,7 +2530,8 @@
      "when": "1067–1073"
     }
    ],
-   "note": "Kurdish dynasty of Dvin and Ganja ruling Arran; drawn at Ganja (Arran between the Kura and the Karabakh hills) until the Seljuk takeover of 1075. A junior branch then governed Ani for the Seljuks and Georgians to 1199 (not drawn, a vassal). Sources: Wikipedia 'Shaddadids'.",
+   "note": "Kurdish dynasty of Dvin and Ganja ruling Arran (between the Kura and the Karabakh hills) from Ganja until the Seljuk takeover of 1075. A junior branch then governed Ani for the Seljuks and Georgians to 1199. Sources: Wikipedia 'Shaddadids'.",
+   "dataNote": "Drawn at Ganja until 1075. The junior branch at Ani (to 1199) is not drawn, a vassal.",
    "coords": [
     [
      45.9,
@@ -2548,7 +2588,8 @@
      "when": "c. 962–979"
     }
    ],
-   "note": "Daylamite dynasty (Musafirids) that took Azerbaijan in 941 under Marzuban ibn Muhammad; drawn over Azerbaijan until the Rawwadids replaced them in the 980s. Their hold on Arran and Armenia was looser and is not drawn. Sources: Wikipedia 'Sallarid dynasty'.",
+   "note": "Daylamite dynasty (Musafirids) that took Azerbaijan in 941 under Marzuban ibn Muhammad; ruling Azerbaijan until the Rawwadids replaced them in the 980s. Their hold on Arran and Armenia was looser. Sources: Wikipedia 'Sallarid dynasty'.",
+   "dataNote": "Drawn over Azerbaijan until the 980s. Their hold on Arran and Armenia is not drawn.",
    "coords": [
     [
      44.8,
@@ -2819,7 +2860,8 @@
      "when": "1041–1051"
     }
    ],
-   "note": "Daylamite dynasty related to the Buyids that ruled Isfahan and Hamadan from c. 1008 (Muhammad ibn Rustam Dushmanziyar, Avicenna's patron) until Tughril took Isfahan in 1051; afterwards they were Seljuk atabegs of Yazd (to 1141, not drawn). Their brief hold on Rayy is not drawn. Sources: Wikipedia 'Kakuyids'.",
+   "note": "Daylamite dynasty related to the Buyids that ruled Isfahan and Hamadan from c. 1008 (Muhammad ibn Rustam Dushmanziyar, Avicenna's patron) until Tughril took Isfahan in 1051; afterwards they were Seljuk atabegs of Yazd (to 1141). They briefly held Rayy. Sources: Wikipedia 'Kakuyids'.",
+   "dataNote": "The Yazd atabegate (to 1141) is not drawn. Their brief hold on Rayy is not drawn.",
    "coords": [
     [
      48.3,
@@ -2892,7 +2934,8 @@
      "when": "1061–1079"
     }
    ],
-   "note": "Kurdish dynasty of Diyar Bakr centred on Mayyafariqin (Silvan) and Amid, holding Ahlat and Manzikert for much of the period; ended by the Seljuks in 1085. The border data shows this area as Byzantine; drawn on top. Sources: Wikipedia 'Marwanid dynasty (Diyar Bakr)'.",
+   "note": "Kurdish dynasty of Diyar Bakr centred on Mayyafariqin (Silvan) and Amid, holding Ahlat and Manzikert for much of the period; ended by the Seljuks in 1085. Sources: Wikipedia 'Marwanid dynasty (Diyar Bakr)'.",
+   "dataNote": "The border data shows this area as Byzantine; drawn on top.",
    "coords": [
     [
      39.6,
@@ -2973,7 +3016,8 @@
      "when": "1061–1085"
     }
    ],
-   "note": "Arab dynasty of Mosul controlling the Jazira (Nisibis, Sinjar, at times Harran and Raqqa); its height under Muslim ibn Quraysh (1061–1085), who briefly held Aleppo. Mosul passed to the Seljuks in 1096. Extent approximate. Sources: Wikipedia 'Uqaylid dynasty'.",
+   "note": "Arab dynasty of Mosul controlling the Jazira (Nisibis, Sinjar, at times Harran and Raqqa); its height under Muslim ibn Quraysh (1061–1085), who briefly held Aleppo. Mosul passed to the Seljuks in 1096. Sources: Wikipedia 'Uqaylid dynasty'.",
+   "dataNote": "Extent approximate.",
    "coords": [
     [
      40.0,
@@ -3115,7 +3159,8 @@
      "when": "1108–1135"
     }
    ],
-   "note": "Arab Banu Asad dynasty ruling an autonomous emirate between Kufa and Hit, from c. 961 under the Buyids and then the Seljuks; al-Hilla, founded as their camp, became the capital. Sadaqa I (1086–1108) was the strongest ruler; the emirate ended c. 1150–1160. Extent approximate. Sources: Wikipedia 'Banu Mazyad'.",
+   "note": "Arab Banu Asad dynasty ruling an autonomous emirate between Kufa and Hit, from c. 961 under the Buyids and then the Seljuks; al-Hilla, founded as their camp, became the capital. Sadaqa I (1086–1108) was the strongest ruler; the emirate ended c. 1150–1160. Sources: Wikipedia 'Banu Mazyad'.",
+   "dataNote": "Extent approximate.",
    "coords": [
     [
      43.7,
@@ -3176,7 +3221,8 @@
      "when": "1140–1154"
     }
    ],
-   "note": "Turkic dynasty founded by the atabeg Toghtekin, ruling the emirate of Damascus (with the Hauran, Baalbek and at times Homs) nominally under the Seljuks; Nur ad-Din took Damascus in 1154. Extent follows Shepherd's plate 'Asia Minor and the States of the Crusaders in Syria, about 1140' (Emirate of Damascus). Sources: Wikipedia 'Burid dynasty'.",
+   "note": "Turkic dynasty founded by the atabeg Toghtekin, ruling the emirate of Damascus (with the Hauran, Baalbek and at times Homs) nominally under the Seljuks; Nur ad-Din took Damascus in 1154. Sources: Wikipedia 'Burid dynasty'.",
+   "dataNote": "Extent follows Shepherd's plate 'Asia Minor and the States of the Crusaders in Syria, about 1140' (Emirate of Damascus).",
    "coords": [
     [
      35.9,
@@ -3229,7 +3275,8 @@
      "when": "935–946"
     }
    ],
-   "note": "Turkic governors of Egypt for the Abbasids, in practice autonomous: Muhammad ibn Tughj al-Ikhshid held Egypt and Palestine from 935 and, after the 944–947 settlement with the Hamdanids, southern Syria with Damascus; the Fatimids took Fustat in 969. The border data shows Egypt as Abbasid; drawn on top. Nominal suzerainty over the Hejaz not drawn. Sources: Wikipedia 'Ikhshidid dynasty'.",
+   "note": "Turkic governors of Egypt for the Abbasids, in practice autonomous: Muhammad ibn Tughj al-Ikhshid held Egypt and Palestine from 935 and, after the 944–947 settlement with the Hamdanids, southern Syria with Damascus; the Fatimids took Fustat in 969. They also held nominal suzerainty over the Hejaz. Sources: Wikipedia 'Ikhshidid dynasty'.",
+   "dataNote": "The border data shows Egypt as Abbasid; drawn on top. Nominal suzerainty over the Hejaz not drawn.",
    "coords": [
     [
      29.6,
@@ -3414,7 +3461,8 @@
      "when": "968–969"
     }
    ],
-   "note": "Turkic governors of Egypt for the Abbasids, in practice autonomous: Muhammad ibn Tughj al-Ikhshid held Egypt and Palestine from 935 and, after the 944–947 settlement with the Hamdanids, southern Syria with Damascus; the Fatimids took Fustat in 969. The border data shows Egypt as Abbasid; drawn on top. Nominal suzerainty over the Hejaz not drawn. Sources: Wikipedia 'Ikhshidid dynasty'.",
+   "note": "Turkic governors of Egypt for the Abbasids, in practice autonomous: Muhammad ibn Tughj al-Ikhshid held Egypt and Palestine from 935 and, after the 944–947 settlement with the Hamdanids, southern Syria with Damascus; the Fatimids took Fustat in 969. They also held nominal suzerainty over the Hejaz. Sources: Wikipedia 'Ikhshidid dynasty'.",
+   "dataNote": "The border data shows Egypt as Abbasid; drawn on top. Nominal suzerainty over the Hejaz not drawn.",
    "coords": [
     [
      29.6,
@@ -3623,7 +3671,8 @@
      "when": "1255–1256"
     }
    ],
-   "note": "The Alamut state founded by Hasan-i Sabbah in 1090: a network of castles rather than a contiguous realm. Drawn: the Rudbar valley of Alamut, Quhistan (from 1091), Girdkuh (from 1096) and the Jabal Bahra castles in Syria (acquired from the 1130s; Masyaf 1140/41). The Mongols took Alamut in 1256; Girdkuh held out to 1270 and the Syrian castles fell to Baybars by 1273 (not drawn after 1256). Sources: Wikipedia 'Nizari Ismaili state'.",
+   "note": "The Alamut state founded by Hasan-i Sabbah in 1090: a network of castles rather than a contiguous realm. It held the Rudbar valley of Alamut, Quhistan (from 1091), Girdkuh (from 1096) and the Jabal Bahra castles in Syria (acquired from the 1130s; Masyaf 1140/41). The Mongols took Alamut in 1256; Girdkuh held out to 1270 and the Syrian castles fell to Baybars by 1273. Sources: Wikipedia 'Nizari Ismaili state'.",
+   "dataNote": "Drawn: the Rudbar valley of Alamut, Quhistan (from 1091), Girdkuh (from 1096) and the Jabal Bahra castles in Syria. Not drawn after 1256.",
    "coords": [
     [
      49.9,
@@ -3668,7 +3717,8 @@
      "when": "1090–1124"
     }
    ],
-   "note": "The Alamut state founded by Hasan-i Sabbah in 1090: a network of castles rather than a contiguous realm. Drawn: the Rudbar valley of Alamut, Quhistan (from 1091), Girdkuh (from 1096) and the Jabal Bahra castles in Syria (acquired from the 1130s; Masyaf 1140/41). The Mongols took Alamut in 1256; Girdkuh held out to 1270 and the Syrian castles fell to Baybars by 1273 (not drawn after 1256). Sources: Wikipedia 'Nizari Ismaili state'.",
+   "note": "The Alamut state founded by Hasan-i Sabbah in 1090: a network of castles rather than a contiguous realm. It held the Rudbar valley of Alamut, Quhistan (from 1091), Girdkuh (from 1096) and the Jabal Bahra castles in Syria (acquired from the 1130s; Masyaf 1140/41). The Mongols took Alamut in 1256; Girdkuh held out to 1270 and the Syrian castles fell to Baybars by 1273. Sources: Wikipedia 'Nizari Ismaili state'.",
+   "dataNote": "Drawn: the Rudbar valley of Alamut, Quhistan (from 1091), Girdkuh (from 1096) and the Jabal Bahra castles in Syria. Not drawn after 1256.",
    "coords": [
     [
      57.0,
@@ -3713,7 +3763,8 @@
      "when": "1090–1124"
     }
    ],
-   "note": "The Alamut state founded by Hasan-i Sabbah in 1090: a network of castles rather than a contiguous realm. Drawn: the Rudbar valley of Alamut, Quhistan (from 1091), Girdkuh (from 1096) and the Jabal Bahra castles in Syria (acquired from the 1130s; Masyaf 1140/41). The Mongols took Alamut in 1256; Girdkuh held out to 1270 and the Syrian castles fell to Baybars by 1273 (not drawn after 1256). Sources: Wikipedia 'Nizari Ismaili state'.",
+   "note": "The Alamut state founded by Hasan-i Sabbah in 1090: a network of castles rather than a contiguous realm. It held the Rudbar valley of Alamut, Quhistan (from 1091), Girdkuh (from 1096) and the Jabal Bahra castles in Syria (acquired from the 1130s; Masyaf 1140/41). The Mongols took Alamut in 1256; Girdkuh held out to 1270 and the Syrian castles fell to Baybars by 1273. Sources: Wikipedia 'Nizari Ismaili state'.",
+   "dataNote": "Drawn: the Rudbar valley of Alamut, Quhistan (from 1091), Girdkuh (from 1096) and the Jabal Bahra castles in Syria. Not drawn after 1256.",
    "coords": [
     [
      54.1,
@@ -3750,7 +3801,8 @@
      "when": "c. 1162–1193"
     }
    ],
-   "note": "The Alamut state founded by Hasan-i Sabbah in 1090: a network of castles rather than a contiguous realm. Drawn: the Rudbar valley of Alamut, Quhistan (from 1091), Girdkuh (from 1096) and the Jabal Bahra castles in Syria (acquired from the 1130s; Masyaf 1140/41). The Mongols took Alamut in 1256; Girdkuh held out to 1270 and the Syrian castles fell to Baybars by 1273 (not drawn after 1256). Sources: Wikipedia 'Nizari Ismaili state'.",
+   "note": "The Alamut state founded by Hasan-i Sabbah in 1090: a network of castles rather than a contiguous realm. It held the Rudbar valley of Alamut, Quhistan (from 1091), Girdkuh (from 1096) and the Jabal Bahra castles in Syria (acquired from the 1130s; Masyaf 1140/41). The Mongols took Alamut in 1256; Girdkuh held out to 1270 and the Syrian castles fell to Baybars by 1273. Sources: Wikipedia 'Nizari Ismaili state'.",
+   "dataNote": "Drawn: the Rudbar valley of Alamut, Quhistan (from 1091), Girdkuh (from 1096) and the Jabal Bahra castles in Syria. Not drawn after 1256.",
    "coords": [
     [
      35.95,
@@ -3803,7 +3855,8 @@
      "when": "1205–1210"
     }
    ],
-   "note": "Iranian dynasty of Tabaristan (Mazandaran), 651–1349, alternating between independence and vassalage; drawn for the Ispahbadiyya line (1074–1210) and the Kinkhwariyya line (1238–1349). Sources: Wikipedia 'Bavand dynasty'.",
+   "note": "Iranian dynasty of Tabaristan (Mazandaran), 651–1349, alternating between independence and vassalage; among its lines were the Ispahbadiyya (1074–1210) and the Kinkhwariyya (1238–1349). Sources: Wikipedia 'Bavand dynasty'.",
+   "dataNote": "Drawn for the Ispahbadiyya line (1074–1210) and the Kinkhwariyya line (1238–1349).",
    "coords": [
     [
      51.3,
@@ -3864,7 +3917,8 @@
      "when": "1334–1349"
     }
    ],
-   "note": "Iranian dynasty of Tabaristan (Mazandaran), 651–1349, alternating between independence and vassalage; drawn for the Ispahbadiyya line (1074–1210) and the Kinkhwariyya line (1238–1349). Sources: Wikipedia 'Bavand dynasty'.",
+   "note": "Iranian dynasty of Tabaristan (Mazandaran), 651–1349, alternating between independence and vassalage; among its lines were the Ispahbadiyya (1074–1210) and the Kinkhwariyya (1238–1349). Sources: Wikipedia 'Bavand dynasty'.",
+   "dataNote": "Drawn for the Ispahbadiyya line (1074–1210) and the Kinkhwariyya line (1238–1349).",
    "coords": [
     [
      51.3,
@@ -3929,7 +3983,8 @@
      "when": "1263–1282"
     }
    ],
-   "note": "Turkmen atabegs of Fars, vassals first of the Seljuks and then of the Khwarazmshahs and the Mongols, but ruling Fars as a hereditary state until the reign of Abish Khatun, married to an Ilkhanid prince, in the 1280s (Wikidata ends the state in 1282). Extent of Fars approximate. Sources: Wikipedia 'Salghurids'.",
+   "note": "Turkmen atabegs of Fars, vassals first of the Seljuks and then of the Khwarazmshahs and the Mongols, but ruling Fars as a hereditary state until the reign of Abish Khatun, married to an Ilkhanid prince, in the 1280s. Sources: Wikipedia 'Salghurids'.",
+   "dataNote": "Wikidata ends the state in 1282. Extent of Fars approximate.",
    "coords": [
     [
      50.6,
@@ -4002,7 +4057,8 @@
      "when": "1296"
     }
    ],
-   "note": "Kurdish (Fadluyid) atabegs of Greater Lur in the Zagros, from the mid-12th century until the Timurids ended them in 1424. Wikipedia dates the dynasty from 1115; 1155 is the usual date for Abu Tahir's atabegate. Extent approximate. Sources: Wikipedia 'Hazaraspids'.",
+   "note": "Kurdish (Fadluyid) atabegs of Greater Lur in the Zagros, from the mid-12th century until the Timurids ended them in 1424. Wikipedia dates the dynasty from 1115; 1155 is the usual date for Abu Tahir's atabegate. Sources: Wikipedia 'Hazaraspids'.",
+   "dataNote": "Extent approximate.",
    "coords": [
     [
      48.9,
@@ -4136,7 +4192,8 @@
      "when": "1186–1191"
     }
    ],
-   "note": "Atabegs of Azerbaijan, founded by Shams al-Din Eldiguz (atabeg from 1136), who controlled the Seljuk sultans of Iraq and with them Azerbaijan, Arran and the Jibal (first slice, 1146–1194); after Tughril III's death (1194) they held Azerbaijan and Arran until Jalal al-Din Khwarazmshah took Tabriz in 1225. The Alamut castles are left outside. Sources: Wikipedia 'Eldiguzids'.",
+   "note": "Atabegs of Azerbaijan, founded by Shams al-Din Eldiguz (atabeg from 1136), who controlled the Seljuk sultans of Iraq and with them Azerbaijan, Arran and the Jibal (1146–1194); after Tughril III's death (1194) they held Azerbaijan and Arran until Jalal al-Din Khwarazmshah took Tabriz in 1225. Sources: Wikipedia 'Eldiguzids'.",
+   "dataNote": "First slice, 1146–1194. The Alamut castles are left outside.",
    "coords": [
     [
      44.3,
@@ -4253,7 +4310,8 @@
      "when": "1210–1225"
     }
    ],
-   "note": "Atabegs of Azerbaijan, founded by Shams al-Din Eldiguz (atabeg from 1136), who controlled the Seljuk sultans of Iraq and with them Azerbaijan, Arran and the Jibal (first slice, 1146–1194); after Tughril III's death (1194) they held Azerbaijan and Arran until Jalal al-Din Khwarazmshah took Tabriz in 1225. The Alamut castles are left outside. Sources: Wikipedia 'Eldiguzids'.",
+   "note": "Atabegs of Azerbaijan, founded by Shams al-Din Eldiguz (atabeg from 1136), who controlled the Seljuk sultans of Iraq and with them Azerbaijan, Arran and the Jibal (1146–1194); after Tughril III's death (1194) they held Azerbaijan and Arran until Jalal al-Din Khwarazmshah took Tabriz in 1225. Sources: Wikipedia 'Eldiguzids'.",
+   "dataNote": "First slice, 1146–1194. The Alamut castles are left outside.",
    "coords": [
     [
      44.3,
@@ -4350,7 +4408,8 @@
      "when": "1191–1202"
     }
    ],
-   "note": "Turkmen beylik of Erzurum founded after Manzikert (1071); drawn from 1081. Annexed by the Seljuk Sultanate of Rum in 1202. Sources: Wikipedia 'Saltukids'.",
+   "note": "Turkmen beylik of Erzurum founded after Manzikert (1071). Annexed by the Seljuk Sultanate of Rum in 1202. Sources: Wikipedia 'Saltukids'.",
+   "dataNote": "Drawn from 1081.",
    "coords": [
     [
      40.4,
@@ -4411,7 +4470,8 @@
      "when": "1225–1228"
     }
    ],
-   "note": "Turkmen beylik of Erzincan, Kemah, Şebinkarahisar and Divriği; the Erzincan line was annexed by Rum in 1228 (the Divriği branch lasted to 1277 as a vassal, not drawn). Sources: Wikipedia 'House of Mengüjek'.",
+   "note": "Turkmen beylik of Erzincan, Kemah, Şebinkarahisar and Divriği; the Erzincan line was annexed by Rum in 1228 (the Divriği branch lasted to 1277 as a vassal). Sources: Wikipedia 'House of Mengüjek'.",
+   "dataNote": "The Divriği branch (to 1277, a vassal) is not drawn.",
    "coords": [
     [
      38.2,
@@ -4537,7 +4597,8 @@
      "when": "1144–1167"
     }
    ],
-   "note": "Turkmen dynasty with branches at Hasankeyf (from 1102; at Amid from 1183), Mardin (from 1106/08) and Harput (1112–1234). Slices: the combined Artuqid lands with Amid left to the Inalids (1102–1183); with Amid (1184–1231); after the Ayyubids took Hasankeyf and Amid (1232) only the Mardin branch, a vassal of the Mongols and Turkmen confederations until the Qara Qoyunlu ended it in 1409. Sources: Wikipedia 'Artuqids'.",
+   "note": "Turkmen dynasty with branches at Hasankeyf (from 1102; at Amid from 1183), Mardin (from 1106/08) and Harput (1112–1234). Amid was held by the Inalids until 1183 and by the Artuqids from 1184 to 1231; after the Ayyubids took Hasankeyf and Amid (1232) only the Mardin branch remained, a vassal of the Mongols and Turkmen confederations until the Qara Qoyunlu ended it in 1409. Sources: Wikipedia 'Artuqids'.",
+   "dataNote": "Slices: the combined Artuqid lands with Amid left to the Inalids (1102–1183); with Amid (1184–1231); after 1232 only the Mardin branch.",
    "coords": [
     [
      38.9,
@@ -4630,7 +4691,8 @@
      "when": "1222–1232"
     }
    ],
-   "note": "Turkmen dynasty with branches at Hasankeyf (from 1102; at Amid from 1183), Mardin (from 1106/08) and Harput (1112–1234). Slices: the combined Artuqid lands with Amid left to the Inalids (1102–1183); with Amid (1184–1231); after the Ayyubids took Hasankeyf and Amid (1232) only the Mardin branch, a vassal of the Mongols and Turkmen confederations until the Qara Qoyunlu ended it in 1409. Sources: Wikipedia 'Artuqids'.",
+   "note": "Turkmen dynasty with branches at Hasankeyf (from 1102; at Amid from 1183), Mardin (from 1106/08) and Harput (1112–1234). Amid was held by the Inalids until 1183 and by the Artuqids from 1184 to 1231; after the Ayyubids took Hasankeyf and Amid (1232) only the Mardin branch remained, a vassal of the Mongols and Turkmen confederations until the Qara Qoyunlu ended it in 1409. Sources: Wikipedia 'Artuqids'.",
+   "dataNote": "Slices: the combined Artuqid lands with Amid left to the Inalids (1102–1183); with Amid (1184–1231); after 1232 only the Mardin branch.",
    "coords": [
     [
      38.9,
@@ -4707,7 +4769,8 @@
      "when": "1408–1409"
     }
    ],
-   "note": "Turkmen dynasty with branches at Hasankeyf (from 1102; at Amid from 1183), Mardin (from 1106/08) and Harput (1112–1234). Slices: the combined Artuqid lands with Amid left to the Inalids (1102–1183); with Amid (1184–1231); after the Ayyubids took Hasankeyf and Amid (1232) only the Mardin branch, a vassal of the Mongols and Turkmen confederations until the Qara Qoyunlu ended it in 1409. Sources: Wikipedia 'Artuqids'.",
+   "note": "Turkmen dynasty with branches at Hasankeyf (from 1102; at Amid from 1183), Mardin (from 1106/08) and Harput (1112–1234). Amid was held by the Inalids until 1183 and by the Artuqids from 1184 to 1231; after the Ayyubids took Hasankeyf and Amid (1232) only the Mardin branch remained, a vassal of the Mongols and Turkmen confederations until the Qara Qoyunlu ended it in 1409. Sources: Wikipedia 'Artuqids'.",
+   "dataNote": "Slices: the combined Artuqid lands with Amid left to the Inalids (1102–1183); with Amid (1184–1231); after 1232 only the Mardin branch.",
    "coords": [
     [
      40.2,
@@ -4752,7 +4815,8 @@
      "when": "1335–1352"
     }
    ],
-   "note": "Founded by Eretna, the Ilkhanid governor of Anatolia, who declared himself sultan after the Battle of Karanbük (1343); his realm covered central and eastern Anatolia (Sivas, Kayseri, Amasya, Erzincan, Erzurum). After his death (1352) the east fell away (Erzincan became autonomous) and the state was reduced to the Sivas–Kayseri core; Kadi Burhan al-Din took over in 1381. The border data labels this realm 'Ottoman Empire' (1344–1401); drawn on top. Sources: Wikipedia 'Eretnid dynasty'.",
+   "note": "Founded by Eretna, the Ilkhanid governor of Anatolia, who declared himself sultan after the Battle of Karanbük (1343); his realm covered central and eastern Anatolia (Sivas, Kayseri, Amasya, Erzincan, Erzurum). After his death (1352) the east fell away (Erzincan became autonomous) and the state was reduced to the Sivas–Kayseri core; Kadi Burhan al-Din took over in 1381. Sources: Wikipedia 'Eretnid dynasty'.",
+   "dataNote": "The border data labels this realm 'Ottoman Empire' (1344–1401); drawn on top.",
    "coords": [
     [
      33.8,
@@ -4853,7 +4917,8 @@
      "when": "1365–1380"
     }
    ],
-   "note": "Founded by Eretna, the Ilkhanid governor of Anatolia, who declared himself sultan after the Battle of Karanbük (1343); his realm covered central and eastern Anatolia (Sivas, Kayseri, Amasya, Erzincan, Erzurum). After his death (1352) the east fell away (Erzincan became autonomous) and the state was reduced to the Sivas–Kayseri core; Kadi Burhan al-Din took over in 1381. The border data labels this realm 'Ottoman Empire' (1344–1401); drawn on top. Sources: Wikipedia 'Eretnid dynasty'.",
+   "note": "Founded by Eretna, the Ilkhanid governor of Anatolia, who declared himself sultan after the Battle of Karanbük (1343); his realm covered central and eastern Anatolia (Sivas, Kayseri, Amasya, Erzincan, Erzurum). After his death (1352) the east fell away (Erzincan became autonomous) and the state was reduced to the Sivas–Kayseri core; Kadi Burhan al-Din took over in 1381. Sources: Wikipedia 'Eretnid dynasty'.",
+   "dataNote": "The border data labels this realm 'Ottoman Empire' (1344–1401); drawn on top.",
    "coords": [
     [
      33.8,
@@ -5125,7 +5190,8 @@
      "when": "1335–1368"
     }
    ],
-   "note": "The İnançoğulları beylik of Lâdik (Denizli), from the Seljuk collapse of the 1260s; later dependent on the Germiyanids and absorbed c. 1368. The border data shows the area as Hamid and Germiyan territory; drawn on top. Dates from Wikidata (Q717451). Sources: Wikipedia 'Beylik of Lâdik'.",
+   "note": "The İnançoğulları beylik of Lâdik (Denizli), from the Seljuk collapse of the 1260s; later dependent on the Germiyanids and absorbed c. 1368. Sources: Wikipedia 'Beylik of Lâdik'.",
+   "dataNote": "The border data shows the area as Hamid and Germiyan territory; drawn on top. Dates from Wikidata (Q717451).",
    "coords": [
     [
      28.7,
@@ -5243,7 +5309,8 @@
      "when": "1817–1831"
     }
    ],
-   "note": "The Georgian mamluk pashas of Baghdad, from Hasan Pasha (1704) and his son Ahmad to Dawud Pasha, governed Baghdad and Basra (with Shahrizor at times) with near-complete autonomy from the Ottoman sultan until the Ottoman reconquest of 1831. Drawn on top of the Ottoman outline; Mosul (under the Jalilis) is left out. Sources: Wikipedia 'Mamluk dynasty of Iraq'.",
+   "note": "The Georgian mamluk pashas of Baghdad, from Hasan Pasha (1704) and his son Ahmad to Dawud Pasha, governed Baghdad and Basra (with Shahrizor at times) with near-complete autonomy from the Ottoman sultan until the Ottoman reconquest of 1831. Mosul was under the Jalilis. Sources: Wikipedia 'Mamluk dynasty of Iraq'.",
+   "dataNote": "Drawn on top of the Ottoman outline; Mosul (under the Jalilis) is left out.",
    "coords": [
     [
      43.3,
@@ -5328,7 +5395,8 @@
      "when": "1047–1067"
     }
    ],
-   "note": "Ismaili dynasty founded by Ali al-Sulayhi in 1047, allied to the Fatimids; at its height (1063–1067) it ruled most of Yemen. Drawn: the northern highlands (1047–1055) and the central highlands from Sana'a to Dhu Jibla (1066–1138, under Queen Arwa from 1084); the 1056–1065 extent is drawn by the border data. Sources: Wikipedia 'Sulayhid dynasty'.",
+   "note": "Ismaili dynasty founded by Ali al-Sulayhi in 1047, allied to the Fatimids; at its height (1063–1067) it ruled most of Yemen. It held the northern highlands (1047–1055) and later the central highlands from Sana'a to Dhu Jibla (1066–1138, under Queen Arwa from 1084). Sources: Wikipedia 'Sulayhid dynasty'.",
+   "dataNote": "Drawn: the northern highlands (1047–1055) and the central highlands from Sana'a to Dhu Jibla (1066–1138); the 1056–1065 extent is drawn by the border data.",
    "coords": [
     [
      43.6,
@@ -5381,7 +5449,8 @@
      "when": "1084–1138"
     }
    ],
-   "note": "Ismaili dynasty founded by Ali al-Sulayhi in 1047, allied to the Fatimids; at its height (1063–1067) it ruled most of Yemen. Drawn: the northern highlands (1047–1055) and the central highlands from Sana'a to Dhu Jibla (1066–1138, under Queen Arwa from 1084); the 1056–1065 extent is drawn by the border data. Sources: Wikipedia 'Sulayhid dynasty'.",
+   "note": "Ismaili dynasty founded by Ali al-Sulayhi in 1047, allied to the Fatimids; at its height (1063–1067) it ruled most of Yemen. It held the northern highlands (1047–1055) and later the central highlands from Sana'a to Dhu Jibla (1066–1138, under Queen Arwa from 1084). Sources: Wikipedia 'Sulayhid dynasty'.",
+   "dataNote": "Drawn: the northern highlands (1047–1055) and the central highlands from Sana'a to Dhu Jibla (1066–1138); the 1056–1065 extent is drawn by the border data.",
    "coords": [
     [
      43.6,
@@ -5438,7 +5507,8 @@
      "when": "1507–1521"
     }
    ],
-   "note": "Bedouin dynasty of the Banu Jabr that ruled al-Hasa and al-Qatif from the early 15th century (taking Bahrain and coastal Oman later in the century) until the Muntafiq and the Ottomans displaced them in the 1520s. Only the al-Hasa/Qatif core is drawn; Wikipedia's wider claims (most of Arabia) are not. Dates approximate. Sources: Wikipedia 'Jabrids'.",
+   "note": "Bedouin dynasty of the Banu Jabr that ruled al-Hasa and al-Qatif from the early 15th century (taking Bahrain and coastal Oman later in the century) until the Muntafiq and the Ottomans displaced them in the 1520s. Dates approximate. Sources: Wikipedia 'Jabrids'.",
+   "dataNote": "Only the al-Hasa/Qatif core is drawn; Wikipedia's wider claims (most of Arabia) are not.",
    "coords": [
     [
      48.8,
@@ -5588,7 +5658,8 @@
      "when": "late 16th century"
     }
    ],
-   "note": "The Kathiri sultanate (established 1379) ruled most of Hadhramaut; drawn for its strongest period under Badr Bu Tuwayriq (1516–1565) and his successors, when it held the Wadi Hadhramaut and the coast at al-Shihr and Mukalla (earlier the border data shows the area as Rasulid/Tahirid). The Zaydi imamate occupied Hadhramaut from 1658; the fragmented 18th–19th-century state is not drawn. Extent approximate. Sources: Wikipedia 'Kathiri'.",
+   "note": "The Kathiri sultanate (established 1379) ruled most of Hadhramaut; its strongest period was under Badr Bu Tuwayriq (1516–1565) and his successors, when it held the Wadi Hadhramaut and the coast at al-Shihr and Mukalla. The Zaydi imamate occupied Hadhramaut from 1658; in the 18th–19th centuries the state was fragmented. Sources: Wikipedia 'Kathiri'.",
+   "dataNote": "Drawn for its strongest period (1516–1565 and successors); earlier the border data shows the area as Rasulid/Tahirid. The fragmented 18th–19th-century state is not drawn. Extent approximate.",
    "coords": [
     [
      47.6,
@@ -5657,7 +5728,8 @@
      "when": "c. 1834"
     }
    ],
-   "note": "Banu Afrar sultanate of Mahra (capital Qishn) and the island of Socotra, which it held from the 16th century after the Portuguese withdrawal; drawn until it accepted British protection in 1886. Inland limits approximate. Sources: Wikipedia 'Mahra Sultanate'.",
+   "note": "Banu Afrar sultanate of Mahra (capital Qishn) and the island of Socotra, which it held from the 16th century after the Portuguese withdrawal; it accepted British protection in 1886. Sources: Wikipedia 'Mahra Sultanate'.",
+   "dataNote": "Drawn until 1886. Inland limits approximate.",
    "coords": [
     [
      51.0,
@@ -5710,7 +5782,8 @@
      "when": "c. 1834"
     }
    ],
-   "note": "Banu Afrar sultanate of Mahra (capital Qishn) and the island of Socotra, which it held from the 16th century after the Portuguese withdrawal; drawn until it accepted British protection in 1886. Inland limits approximate. Sources: Wikipedia 'Mahra Sultanate'.",
+   "note": "Banu Afrar sultanate of Mahra (capital Qishn) and the island of Socotra, which it held from the 16th century after the Portuguese withdrawal; it accepted British protection in 1886. Sources: Wikipedia 'Mahra Sultanate'.",
+   "dataNote": "Drawn until 1886. Inland limits approximate.",
    "coords": [
     [
      53.25,
@@ -5812,7 +5885,8 @@
      "when": "1807–1827"
     }
    ],
-   "note": "One of the khanates that became self-governing after Nader Shah's death (1747) under nominal Iranian suzerainty. The border data draws these khanates as one realm ('Khanates of the Caucasus', 1748–1796), which this layer replaces with the individual khanates. End date = annexation by Russia or the treaty transferring it (Gulistan 1813, Turkmenchay 1828); several khans ruled on as Russian vassals for some years. Borders approximate, mainly following rivers (Aras, Kura) and the area descriptions in each khanate's article. Covered c. 19,500 km² (central Armenia, Iğdır, Sharur); taken by Russia in October 1827 and ceded at Turkmenchay (1828). Sources: Wikipedia 'Erivan Khanate'.",
+   "note": "One of the khanates that became self-governing after Nader Shah's death (1747) under nominal Iranian suzerainty. Russia annexed the khanates or acquired them by treaty (Gulistan 1813, Turkmenchay 1828); several khans ruled on as Russian vassals for some years. Covered c. 19,500 km² (central Armenia, Iğdır, Sharur); taken by Russia in October 1827 and ceded at Turkmenchay (1828). Sources: Wikipedia 'Erivan Khanate'.",
+   "dataNote": "The border data draws these khanates as one realm ('Khanates of the Caucasus', 1748–1796), which this layer replaces with the individual khanates. End date = annexation by Russia or the treaty transferring it. Borders approximate, mainly following rivers (Aras, Kura) and the area descriptions in each khanate's article.",
    "coords": [
     [
      43.65,
@@ -5893,7 +5967,8 @@
      "when": "1823–1828"
     }
    ],
-   "note": "One of the khanates that became self-governing after Nader Shah's death (1747) under nominal Iranian suzerainty. The border data draws these khanates as one realm ('Khanates of the Caucasus', 1748–1796), which this layer replaces with the individual khanates. End date = annexation by Russia or the treaty transferring it (Gulistan 1813, Turkmenchay 1828); several khans ruled on as Russian vassals for some years. Borders approximate, mainly following rivers (Aras, Kura) and the area descriptions in each khanate's article. Nakhchivan and Vayots Dzor; occupied by Russia in 1827 and ceded at Turkmenchay (1828). Sources: Wikipedia 'Nakhichevan Khanate'.",
+   "note": "One of the khanates that became self-governing after Nader Shah's death (1747) under nominal Iranian suzerainty. Russia annexed the khanates or acquired them by treaty (Gulistan 1813, Turkmenchay 1828); several khans ruled on as Russian vassals for some years. Nakhchivan and Vayots Dzor; occupied by Russia in 1827 and ceded at Turkmenchay (1828). Sources: Wikipedia 'Nakhichevan Khanate'.",
+   "dataNote": "The border data draws these khanates as one realm ('Khanates of the Caucasus', 1748–1796), which this layer replaces with the individual khanates. End date = annexation by Russia or the treaty transferring it. Borders approximate, mainly following rivers (Aras, Kura) and the area descriptions in each khanate's article.",
    "coords": [
     [
      44.8,
@@ -5958,7 +6033,8 @@
      "when": "1763–1806"
     }
    ],
-   "note": "One of the khanates that became self-governing after Nader Shah's death (1747) under nominal Iranian suzerainty. The border data draws these khanates as one realm ('Khanates of the Caucasus', 1748–1796), which this layer replaces with the individual khanates. End date = annexation by Russia or the treaty transferring it (Gulistan 1813, Turkmenchay 1828); several khans ruled on as Russian vassals for some years. Borders approximate, mainly following rivers (Aras, Kura) and the area descriptions in each khanate's article. Founded by Panah Ali Khan (fortress of Shusha, 1752); accepted Russian suzerainty by the Treaty of Kurekchay (1805), abolished 1822. Salyan, lost to Quba in 1755, is not drawn. Sources: Wikipedia 'Karabakh Khanate'.",
+   "note": "One of the khanates that became self-governing after Nader Shah's death (1747) under nominal Iranian suzerainty. Russia annexed the khanates or acquired them by treaty (Gulistan 1813, Turkmenchay 1828); several khans ruled on as Russian vassals for some years. Founded by Panah Ali Khan (fortress of Shusha, 1752); accepted Russian suzerainty by the Treaty of Kurekchay (1805), abolished 1822. Salyan was lost to Quba in 1755. Sources: Wikipedia 'Karabakh Khanate'.",
+   "dataNote": "The border data draws these khanates as one realm ('Khanates of the Caucasus', 1748–1796), which this layer replaces with the individual khanates. End date = annexation by Russia or the treaty transferring it. Borders approximate, mainly following rivers (Aras, Kura) and the area descriptions in each khanate's article. Salyan, lost to Quba in 1755, is not drawn.",
    "coords": [
     [
      45.55,
@@ -6051,7 +6127,8 @@
      "when": "1786–1804"
     }
    ],
-   "note": "One of the khanates that became self-governing after Nader Shah's death (1747) under nominal Iranian suzerainty. The border data draws these khanates as one realm ('Khanates of the Caucasus', 1748–1796), which this layer replaces with the individual khanates. End date = annexation by Russia or the treaty transferring it (Gulistan 1813, Turkmenchay 1828); several khans ruled on as Russian vassals for some years. Borders approximate, mainly following rivers (Aras, Kura) and the area descriptions in each khanate's article. Ziyadoghlu Qajar khans; stormed by the Russians under Tsitsianov in January 1804. Sources: Wikipedia 'Ganja Khanate'.",
+   "note": "One of the khanates that became self-governing after Nader Shah's death (1747) under nominal Iranian suzerainty. Russia annexed the khanates or acquired them by treaty (Gulistan 1813, Turkmenchay 1828); several khans ruled on as Russian vassals for some years. Ziyadoghlu Qajar khans; stormed by the Russians under Tsitsianov in January 1804. Sources: Wikipedia 'Ganja Khanate'.",
+   "dataNote": "The border data draws these khanates as one realm ('Khanates of the Caucasus', 1748–1796), which this layer replaces with the individual khanates. End date = annexation by Russia or the treaty transferring it. Borders approximate, mainly following rivers (Aras, Kura) and the area descriptions in each khanate's article.",
    "coords": [
     [
      45.2,
@@ -6120,7 +6197,8 @@
      "when": "1795–1806"
     }
    ],
-   "note": "One of the khanates that became self-governing after Nader Shah's death (1747) under nominal Iranian suzerainty. The border data draws these khanates as one realm ('Khanates of the Caucasus', 1748–1796), which this layer replaces with the individual khanates. End date = annexation by Russia or the treaty transferring it (Gulistan 1813, Turkmenchay 1828); several khans ruled on as Russian vassals for some years. Borders approximate, mainly following rivers (Aras, Kura) and the area descriptions in each khanate's article. Founded by Haji Chalabi (1743); accepted Russian suzerainty in 1805, abolished 1819. Sources: Wikipedia 'Shaki Khanate'.",
+   "note": "One of the khanates that became self-governing after Nader Shah's death (1747) under nominal Iranian suzerainty. Russia annexed the khanates or acquired them by treaty (Gulistan 1813, Turkmenchay 1828); several khans ruled on as Russian vassals for some years. Founded by Haji Chalabi (1743); accepted Russian suzerainty in 1805, abolished 1819. Sources: Wikipedia 'Shaki Khanate'.",
+   "dataNote": "The border data draws these khanates as one realm ('Khanates of the Caucasus', 1748–1796), which this layer replaces with the individual khanates. End date = annexation by Russia or the treaty transferring it. Borders approximate, mainly following rivers (Aras, Kura) and the area descriptions in each khanate's article.",
    "coords": [
     [
      46.4,
@@ -6189,7 +6267,8 @@
      "when": "1792–1820"
     }
    ],
-   "note": "One of the khanates that became self-governing after Nader Shah's death (1747) under nominal Iranian suzerainty. The border data draws these khanates as one realm ('Khanates of the Caucasus', 1748–1796), which this layer replaces with the individual khanates. End date = annexation by Russia or the treaty transferring it (Gulistan 1813, Turkmenchay 1828); several khans ruled on as Russian vassals for some years. Borders approximate, mainly following rivers (Aras, Kura) and the area descriptions in each khanate's article. Khanate of Shamakhi; Wikipedia dates it 1761–1820 (khans at Shamakhi from 1748). Russian suzerainty from 1805, abolished 1820. Sources: Wikipedia 'Shirvan Khanate'.",
+   "note": "One of the khanates that became self-governing after Nader Shah's death (1747) under nominal Iranian suzerainty. Russia annexed the khanates or acquired them by treaty (Gulistan 1813, Turkmenchay 1828); several khans ruled on as Russian vassals for some years. Khanate of Shamakhi; Wikipedia dates it 1761–1820 (khans at Shamakhi from 1748). Russian suzerainty from 1805, abolished 1820. Sources: Wikipedia 'Shirvan Khanate'.",
+   "dataNote": "The border data draws these khanates as one realm ('Khanates of the Caucasus', 1748–1796), which this layer replaces with the individual khanates. End date = annexation by Russia or the treaty transferring it. Borders approximate, mainly following rivers (Aras, Kura) and the area descriptions in each khanate's article.",
    "coords": [
     [
      47.85,
@@ -6262,7 +6341,8 @@
      "when": "1792–1806"
     }
    ],
-   "note": "One of the khanates that became self-governing after Nader Shah's death (1747) under nominal Iranian suzerainty. The border data draws these khanates as one realm ('Khanates of the Caucasus', 1748–1796), which this layer replaces with the individual khanates. End date = annexation by Russia or the treaty transferring it (Gulistan 1813, Turkmenchay 1828); several khans ruled on as Russian vassals for some years. Borders approximate, mainly following rivers (Aras, Kura) and the area descriptions in each khanate's article. Baku and the Absheron peninsula, 1747–1806 (taken by Russia 1806). Sources: Wikipedia 'Baku Khanate'.",
+   "note": "One of the khanates that became self-governing after Nader Shah's death (1747) under nominal Iranian suzerainty. Russia annexed the khanates or acquired them by treaty (Gulistan 1813, Turkmenchay 1828); several khans ruled on as Russian vassals for some years. Baku and the Absheron peninsula, 1747–1806 (taken by Russia 1806). Sources: Wikipedia 'Baku Khanate'.",
+   "dataNote": "The border data draws these khanates as one realm ('Khanates of the Caucasus', 1748–1796), which this layer replaces with the individual khanates. End date = annexation by Russia or the treaty transferring it. Borders approximate, mainly following rivers (Aras, Kura) and the area descriptions in each khanate's article.",
    "coords": [
     [
      49.3,
@@ -6311,7 +6391,8 @@
      "when": "1758–1789"
     }
    ],
-   "note": "One of the khanates that became self-governing after Nader Shah's death (1747) under nominal Iranian suzerainty. The border data draws these khanates as one realm ('Khanates of the Caucasus', 1748–1796), which this layer replaces with the individual khanates. End date = annexation by Russia or the treaty transferring it (Gulistan 1813, Turkmenchay 1828); several khans ruled on as Russian vassals for some years. Borders approximate, mainly following rivers (Aras, Kura) and the area descriptions in each khanate's article. Under Fath-Ali Khan (1758–1789) Quba took Derbent (1759) and dominated Baku, Shirvan and Talysh (that hegemony is not drawn). Annexed by Russia 1806. Sources: Wikipedia 'Quba Khanate' and 'Fath-Ali Khan of Quba'.",
+   "note": "One of the khanates that became self-governing after Nader Shah's death (1747) under nominal Iranian suzerainty. Russia annexed the khanates or acquired them by treaty (Gulistan 1813, Turkmenchay 1828); several khans ruled on as Russian vassals for some years. Under Fath-Ali Khan (1758–1789) Quba took Derbent (1759) and dominated Baku, Shirvan and Talysh. Annexed by Russia 1806. Sources: Wikipedia 'Quba Khanate' and 'Fath-Ali Khan of Quba'.",
+   "dataNote": "The border data draws these khanates as one realm ('Khanates of the Caucasus', 1748–1796), which this layer replaces with the individual khanates. End date = annexation by Russia or the treaty transferring it. Borders approximate, mainly following rivers (Aras, Kura) and the area descriptions in each khanate's article. Quba's hegemony over Baku, Shirvan and Talysh is not drawn.",
    "coords": [
     [
      48.0,
@@ -6364,7 +6445,8 @@
      "when": "1791–1806"
     }
    ],
-   "note": "One of the khanates that became self-governing after Nader Shah's death (1747) under nominal Iranian suzerainty. The border data draws these khanates as one realm ('Khanates of the Caucasus', 1748–1796), which this layer replaces with the individual khanates. End date = annexation by Russia or the treaty transferring it (Gulistan 1813, Turkmenchay 1828); several khans ruled on as Russian vassals for some years. Borders approximate, mainly following rivers (Aras, Kura) and the area descriptions in each khanate's article. Under Fath-Ali Khan (1758–1789) Quba took Derbent (1759) and dominated Baku, Shirvan and Talysh (that hegemony is not drawn). Annexed by Russia 1806. Sources: Wikipedia 'Quba Khanate' and 'Fath-Ali Khan of Quba'.",
+   "note": "One of the khanates that became self-governing after Nader Shah's death (1747) under nominal Iranian suzerainty. Russia annexed the khanates or acquired them by treaty (Gulistan 1813, Turkmenchay 1828); several khans ruled on as Russian vassals for some years. Under Fath-Ali Khan (1758–1789) Quba took Derbent (1759) and dominated Baku, Shirvan and Talysh. Annexed by Russia 1806. Sources: Wikipedia 'Quba Khanate' and 'Fath-Ali Khan of Quba'.",
+   "dataNote": "The border data draws these khanates as one realm ('Khanates of the Caucasus', 1748–1796), which this layer replaces with the individual khanates. End date = annexation by Russia or the treaty transferring it. Borders approximate, mainly following rivers (Aras, Kura) and the area descriptions in each khanate's article. Quba's hegemony over Baku, Shirvan and Talysh is not drawn.",
    "coords": [
     [
      48.0,
@@ -6421,7 +6503,8 @@
      "when": "c. 1747–1758"
     }
    ],
-   "note": "One of the khanates that became self-governing after Nader Shah's death (1747) under nominal Iranian suzerainty. The border data draws these khanates as one realm ('Khanates of the Caucasus', 1748–1796), which this layer replaces with the individual khanates. End date = annexation by Russia or the treaty transferring it (Gulistan 1813, Turkmenchay 1828); several khans ruled on as Russian vassals for some years. Borders approximate, mainly following rivers (Aras, Kura) and the area descriptions in each khanate's article. Southern Dagestan around Derbent; taken by Fath-Ali Khan of Quba in 1759. Sources: Wikipedia 'Derbent Khanate'; 'Fath-Ali Khan of Quba'.",
+   "note": "One of the khanates that became self-governing after Nader Shah's death (1747) under nominal Iranian suzerainty. Russia annexed the khanates or acquired them by treaty (Gulistan 1813, Turkmenchay 1828); several khans ruled on as Russian vassals for some years. Southern Dagestan around Derbent; taken by Fath-Ali Khan of Quba in 1759. Sources: Wikipedia 'Derbent Khanate'; 'Fath-Ali Khan of Quba'.",
+   "dataNote": "The border data draws these khanates as one realm ('Khanates of the Caucasus', 1748–1796), which this layer replaces with the individual khanates. End date = annexation by Russia or the treaty transferring it. Borders approximate, mainly following rivers (Aras, Kura) and the area descriptions in each khanate's article.",
    "coords": [
     [
      48.2,
@@ -6470,7 +6553,8 @@
      "when": "1786–1814"
     }
    ],
-   "note": "One of the khanates that became self-governing after Nader Shah's death (1747) under nominal Iranian suzerainty. The border data draws these khanates as one realm ('Khanates of the Caucasus', 1748–1796), which this layer replaces with the individual khanates. End date = annexation by Russia or the treaty transferring it (Gulistan 1813, Turkmenchay 1828); several khans ruled on as Russian vassals for some years. Borders approximate, mainly following rivers (Aras, Kura) and the area descriptions in each khanate's article. Caspian khanate of Lankaran; passed to Russia by the Treaty of Gulistan (1813). Sources: Wikipedia 'Talysh Khanate'.",
+   "note": "One of the khanates that became self-governing after Nader Shah's death (1747) under nominal Iranian suzerainty. Russia annexed the khanates or acquired them by treaty (Gulistan 1813, Turkmenchay 1828); several khans ruled on as Russian vassals for some years. Caspian khanate of Lankaran; passed to Russia by the Treaty of Gulistan (1813). Sources: Wikipedia 'Talysh Khanate'.",
+   "dataNote": "The border data draws these khanates as one realm ('Khanates of the Caucasus', 1748–1796), which this layer replaces with the individual khanates. End date = annexation by Russia or the treaty transferring it. Borders approximate, mainly following rivers (Aras, Kura) and the area descriptions in each khanate's article.",
    "coords": [
     [
      48.3,

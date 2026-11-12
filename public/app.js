@@ -968,16 +968,15 @@ function setupMap() {
     canvas.classList.toggle("pointing", !S.war && !S.journey);
     if (it.kind === "state") {
       const p = it.p, grp = p.k !== p.n && displayName(p.k) !== clean(p.n) ? `<div>Part of <strong>${esc(displayName(p.k))}</strong></div>` : "";
-      const fix = p.fixed ? `<div class="m">Corrected label (map data says “${esc(clean(p.fixed))}”)</div>` : corrOf(p.n) || corrOf(p.k) ? `<div class="m">Map note: see realm panel</div>` : "";
       tip.innerHTML = p.recon
-        ? `<b>${esc(p.n)}</b><div class="m">Reconstructed from ${esc(S.supps.find((x) => x.id === p.supp)?.title || "historical sources")} · approximate borders, c. ${shortYear(p.f)}–${shortYear(p.t)}</div>`
-        : `<b>${esc(clean(p.n))}</b>${grp}<div class="m">${fmtArea(p.a)} · borders ${shortYear(p.f)}–${shortYear(p.t)}</div>${fix}`;
+        ? `<b>${esc(p.n)}</b><div class="m">Approximate borders, c. ${shortYear(p.f)}–${shortYear(p.t)}</div>`
+        : `<b>${esc(clean(p.n))}</b>${grp}<div class="m">${fmtArea(p.a)} · borders ${shortYear(p.f)}–${shortYear(p.t)}</div>`;
       const da = S.disputed && !S.war ? disputedAt(projection.invert([S.t.invertX(x), S.t.invertY(y)])) : null;
       if (da && !(VIEWER && da.admin === VIEWER)) tip.innerHTML += disputedNote(da);
     } else if (it.kind === "culture") {
       tip.innerHTML = it.corrected
-        ? `<b>${esc(it.p.n)}</b><div class="m">No unified state in ${plainYear(S.year)} (map correction; the data draws “${esc(clean(it.p.fixed))}”)</div>`
-        : `<b>${esc(it.p.n)}</b><div class="m">${isCulture(it.p) ? "People or culture without a state" : "Polity outside the main border data"} · approximate, c. ${plainYear(baseYearFor(S.year))}</div><div class="m">Click to see who ruled this spot</div>`;
+        ? `<b>${esc(it.p.n)}</b><div class="m">No unified state in ${plainYear(S.year)}</div>`
+        : `<b>${esc(it.p.n)}</b><div class="m">${isCulture(it.p) ? "People or culture without a state" : "Smaller state or chiefdom"} · approximate, c. ${plainYear(baseYearFor(S.year))}</div><div class="m">Click to see who ruled this spot</div>`;
     } else {
       tip.innerHTML = `<b>Unrecorded</b><div class="m">No state is drawn here in ${plainYear(S.year)}. Click to see who ruled this spot.</div>`;
     }
@@ -1822,14 +1821,14 @@ function realmHTML() {
     const { sp, rg } = r.recon;
     if (sp.kind === "cultures") { // an archaeological culture: say how it is known
       h += `<aside class="mapnote evnote">${evidenceBadge(rg.evidence)}<p>${esc(rg.evidenceNote || "")}</p></aside>`;
-      if (rg.dateLabel) h += `<p class="note">${esc(rg.dateLabel)} · the outline is approximate, drawn from where its sites have been found.</p>`;
+      if (rg.dateLabel) h += `<p class="note">${esc(rg.dateLabel)} · its extent is approximate, from where its sites have been found.</p>`;
       if (rg.summary) h += `<p class="prose">${esc(rg.summary)}</p>`;
       const ss = (S.sites || []).filter((x) => x.culture === rg.key);
       if (ss.length) h += `<h3 class="sec">Sites</h3><ul class="mlist">${ss.map((x) => `<li><button class="mrow" data-site="${esc(x.id)}"><span class="my">${esc(x.dateLabel || "")}</span><span class="mt">${esc(x.name)}</span></button></li>`).join("")}</ul>`;
       h += sourcesList(rg.sources || sp.sources);
       return h;
     }
-    h += `<aside class="mapnote recon"><b>Reconstruction · ${esc(sp.title)}</b><p>${esc(rg.note || "")}</p>`;
+    h += `<aside class="mapnote recon"><b>Approximate borders</b>${rg.note ? `<p>${esc(rg.note)}</p>` : ""}`;
     if (rg.capital) h += `<p><strong>Capital:</strong> ${esc(rg.capital)}</p>`;
     if (rg.ports?.length) h += `<p><strong>Ports:</strong> ${esc(rg.ports.join(", "))}</p>`;
     if (rg.rulers?.length) h += `<p><strong>Rulers named in the sources:</strong> ${rg.rulers.map((x) => `${esc(x.name)}${x.when ? ` (${esc(x.when)})` : ""}`).join("; ")}</p>`;
@@ -1879,9 +1878,8 @@ function realmHTML() {
     h += `</ul>`;
   }
   const mc = corrOf(key) || (now[0] && corrOf(now[0].properties.fixed || now[0].properties.n));
-  if (mc && (mc.note || mc.scholarly)) {
-    h += `<details class="more mapacc"><summary>How accurate is this map?</summary><aside class="mapnote">${mc.note ? `<p>${esc(mc.note)}</p>` : ""}${mc.scholarly ? `<p>Scholarly peak estimate: <strong>${mkm(mc.scholarly.km2)}M km²</strong>${mc.scholarly.year != null ? ` c. ${shortYear(mc.scholarly.year)}` : ""} (${esc(mc.scholarly.source)}), against ${mkm(peak[2])}M km² drawn on this map.</p>` : ""}${(mc.sources || []).filter((x) => /^https?:\/\//.test(x.url)).length ? `<p class="msrc">${mc.sources.filter((x) => /^https?:\/\//.test(x.url)).map((x) => `<a href="${safeUrl(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a>`).join(" · ")}</p>` : ""}</aside></details>`;
-  }
+  if (mc?.scholarly) // published estimates of the realm's size (the notes beside it are for the people who maintain the map)
+    h += `<details class="more mapacc"><summary>How big did it get?</summary><aside class="mapnote"><p>Scholarly peak estimate: <strong>${mkm(mc.scholarly.km2)}M km²</strong>${mc.scholarly.year != null ? ` c. ${shortYear(mc.scholarly.year)}` : ""} (${esc(mc.scholarly.source)}), against ${mkm(peak[2])}M km² on this map.</p></aside></details>`;
   const links = [r.wiki && `<a href="https://en.wikipedia.org/wiki/${encodeURIComponent(r.wiki.replace(/ /g, "_"))}" target="_blank" rel="noopener">Wikipedia</a>`,
     r.wd && `<a href="https://www.wikidata.org/wiki/${esc(r.wd)}" target="_blank" rel="noopener">Wikidata</a>`,
     r.seshat && `<a href="https://seshat-db.com/core/polity/${esc(r.seshat)}" target="_blank" rel="noopener">Seshat</a>`].filter(Boolean);
@@ -1977,7 +1975,7 @@ function sourcesHTML() { // the About page (#about; #sources still opens it)
       <li><b>State borders</b>: ${L("https://github.com/Seshat-Global-History-Databank/cliopatria", "Cliopatria")}, Seshat Global History Databank (${L("https://creativecommons.org/licenses/by/4.0/", "CC BY 4.0")}); paper in <i>Scientific Data</i> (2025), ${L("https://doi.org/10.1038/s41597-025-04516-9", "doi:10.1038/s41597-025-04516-9")}. Simplified for the web.</li>
       <li><b>Borders from 1992 to today</b>: ${L("https://www.naturalearthdata.com/", "Natural Earth")} 1:10m countries (public domain), with the changes since 1992 dated (Czechoslovakia, Eritrea, Hong Kong, South Sudan, Crimea and others). Disputed places follow Natural Earth's default view and are outlined with dashes.</li>
       <li><b>Peoples and other polities</b> (hatched layer): ${L("https://github.com/aourednik/historical-basemaps", "historical-basemaps")} by André Ourednik (GPL-3.0).</li>
-      <li><b>Map corrections</b>: ${n(Object.keys(S.corr.realms).length)} realms carry reviewed fixes or notes where the border data contradicts scholarship, each with its sources ("How accurate is this map?" on a realm).</li>
+      <li><b>Map corrections</b>: ${n(Object.keys(S.corr.realms).length)} realms carry reviewed fixes where the border data contradicts scholarship, each with its sources in the atlas's data files.</li>
       <li><b>Reconstruction layers</b> (e.g. Sangam-age Tamilakam) and <b>archaeological cultures and ancient sites</b>: compiled for this atlas from the publications cited on each page.</li>
       <li><b>Rivers, lakes and sea names</b>: ${L("https://www.naturalearthdata.com/", "Natural Earth")} 1:50m (public domain).</li>
       <li><b>Disputed areas</b>: Natural Earth 1:10m admin-0 disputed areas (public domain), shown the way local maps show them.</li>
@@ -2821,7 +2819,7 @@ function journeyHTML() {
     const area = journeyArea(j, y);
     h += `<div class="facts two">${prof?.capital ? `<div><span>Capital</span><b>${esc(prof.capital)}</b></div>` : ""}<div><span>At its peak</span><b>${prof?.peak ? `${prof.peak.year != null ? shortYear(prof.peak.year) + ". " : ""}${esc(prof.peak.note || "")}` : "—"}</b></div><div><span>Held in ${shortYear(y)}</span><b>${area ? `${mkm(area)} million km²` : "Not drawn"}</b></div></div>`;
     if (prof?.legacy) h += `<h3 class="sec">Legacy</h3><p class="prose">${esc(prof.legacy)}</p>`;
-    if (!j.chain.length) h += `<p class="note">The map data has no borders for this empire, so its territory can't be drawn.</p>`;
+    if (!j.chain.length) h += `<p class="note">Its territory isn't shown on the map.</p>`;
     return h + srcFold(j.sources);
   }
   const ri = reignOf(j, ev ? ev.year : y), rg = j.reigns[ri];
@@ -2832,8 +2830,8 @@ function journeyHTML() {
     if (ev.detail) h += `<p class="prose">${esc(firstSentences(ev.detail, 3))}</p>`;
     h += mediaHTML(`journey:${j.id}:${ei}`);
   } else h += `<div class="stack"><p class="bigy live">${yearLabel(y)}</p><h2 class="ttl s">The story begins</h2></div><p class="prose">${esc(firstSentences(j.summary || prof?.summary, 2))}</p>`;
-  if (!j.chain.length) h += `<p class="note">The map data has no borders for this empire, so its territory can't be drawn; the story still applies.</p>`;
-  else if (!chainAt(j, y)) h += `<p class="note">No border data for this empire in ${plainYear(y)}.</p>`;
+  if (!j.chain.length) h += `<p class="note">Its territory isn't shown on the map, but the story still applies.</p>`;
+  else if (!chainAt(j, y)) h += `<p class="note">Its territory isn't shown for ${plainYear(y)}.</p>`;
   const nx = j.events[ei + 1];
   return h + navRow(ei > 0 ? `data-jev="${ei - 1}"` : "", nx ? { attr: `data-jev="${ei + 1}"`, small: `Next · ${evText(nx).when || shortYear(nx.year)}`, title: evText(nx).text } : null);
 }
@@ -2896,7 +2894,7 @@ function momentHTML() {
   let h = cardHead(backLabel("Moments"), `${i + 1} of ${list.length}`);
   h += kick(`Moment · ${esc(CAT[m.category] || m.category || "")}${m.worldChanging ? " · World-changing" : ""}`);
   h += `<div class="stack"><p class="bigy m">${esc(m.yearLabel || plainYear(m.year))}</p><h1 class="ttl">${esc(m.title)}</h1>${m.place ? `<div class="placeline">${I.pin}${esc(m.place)}</div>` : ""}</div>`;
-  if (m.year < S.range[0]) h += `<p class="note">This happened before the map's border data begins (${plainYear(S.range[0])}).</p>`;
+  if (m.year < S.range[0]) h += `<p class="note">This happened before the earliest borders on the map (${plainYear(S.range[0])}).</p>`;
   h += `<p class="prose">${esc(m.summary || "")}</p>`;
   h += mediaHTML("moment:" + m.id);
   if (m.why) h += kick("Why it mattered", 1) + `<p class="prose" style="margin-top:-6px">${esc(m.why)}</p>`;
@@ -3704,6 +3702,6 @@ function openAbout() { leaveStories(); S.from = null; S.view = "sources"; render
 Promise.all([document.fonts.load("900 40px Archivo"), document.fonts.load("600 14px Archivo"), document.fonts.load("400 14px Inter")])
   .catch(() => {}).finally(() => init().catch((e) => {
     console.error(e);
-    $("#loading").textContent = "Could not load the map data. Serve the public/ folder over HTTP.";
+    $("#loading").textContent = "Could not load the map. Please reload the page.";
   }));
 })();

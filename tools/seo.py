@@ -161,7 +161,7 @@ def page(path, title, description, body, crumbs=(), image=None, image_alt="", js
 {f'<nav class="crumbs" aria-label="Breadcrumb">{crumbs_html}</nav>' if crumbs_html else ''}
 {body}
 </main>
-<footer class="foot"><p><a href="/">{NAME}</a>: an interactive map of world history from 10,000 BCE to today. Borders from <a href="https://github.com/Seshat-Global-History-Databank/cliopatria">Cliopatria</a> (CC BY 4.0) and <a href="https://www.naturalearthdata.com/">Natural Earth</a>; text written for the atlas (MIT). Made by {AUTHOR}, inspired by <a href="https://www.bharatrajya.com/">Bharat Rajya</a>. <a href="/about/">About and credits</a>.</p><nav aria-label="Browse">{nav}</nav></footer>
+<footer class="foot"><p><a href="/">{NAME}</a>: an interactive map of world history from 10,000 BCE to today. Made by {AUTHOR}, inspired by <a href="https://www.bharatrajya.com/">Bharat Rajya</a>. <a href="/about/">About, sources and credits</a>.</p><nav aria-label="Browse">{nav}</nav></footer>
 </body>
 </html>
 """
@@ -606,7 +606,7 @@ def main():
             text = text or regs[0][0].get("summary") or ""
             desc = clip(f"{name} ({when}): {sentences(text, 2)}")
             title = ttl(f"{name} ({when if len(when) <= 24 else span(a, b)})", ": archaeological culture" if culture else ": history and map", " on the map")
-            body = f'<p class="kicker">{"Archaeological culture" if culture else "Realm · reconstruction"} · {esc(when)}</p><h1>{esc(name)}</h1>'
+            body = f'<p class="kicker">{"Archaeological culture" if culture else "Realm · approximate borders"} · {esc(when)}</p><h1>{esc(name)}</h1>'
             body += lede(text) + cta(app_realm(pk[0], n), f"See {name} on the map in {yr(pk[0])}")
             caps = list(dict.fromkeys(rg["capital"] for _, rg in regs if rg.get("capital")))
             rul = [x for _, rg in regs for x in rg.get("rulers") or []]
@@ -624,7 +624,8 @@ def main():
             sps = list({id(sp): sp for sp, _ in regs}.values())
             if not culture:
                 for sp in sps:
-                    body += f'<section><h2>{esc(sp["title"])}</h2><p class="note">This realm is missing from the Cliopatria border data and is drawn from a reconstruction made for the atlas.</p><p>{esc(sp.get("summary") or "")}</p></section>'
+                    if sp.get("summary"):
+                        body += f'<section><h2>{esc(sp["title"])}</h2><p>{esc(sp["summary"])}</p></section>'
             body += sources(rg0.get("sources") if culture and rg0.get("sources") else [x for sp in sps for x in sp.get("sources") or []])
             ld = article_ld(path, f"{name} ({when})", desc, None, {"@type": "Place" if culture else "Country", "name": name},
                             {"temporalCoverage": f"{iso(a)}/{iso(b)}"})
@@ -636,10 +637,10 @@ def main():
         when = f"since {a}" if alive and a >= 0 else span(a, b)
         group = bool(r.get("group"))
         what = "Group of realms" if group else ("Country" if alive else "Realm")
-        intro = (f"{name} is drawn on the map from {yr(a)} to {'today' if alive else yr(b)}. "
+        intro = (f"{name} appears on the map from {yr(a)} to {'today' if alive else yr(b)}. "
                  f"At its greatest recorded extent, in {yr(pk[0])}, it covered about {km2(pk[2])}.")
         if group:
-            intro = (f"{name} groups several realms that the border data draws together, from {yr(a)} to {'today' if alive else yr(b)}. "
+            intro = (f"{name} brings together several realms, from {yr(a)} to {'today' if alive else yr(b)}. "
                      f"At its greatest recorded extent, in {yr(pk[0])}, its lands covered about {km2(pk[2])}.")
         desc = clip(intro + (f" Part of {emp['name']}." if emp and emp["name"] != name else ""))
         title = ttl(f"{name}{', all member realms' if group and slug(name) in plain_slugs else ''} ({when})", ": territory and map", " on the map")

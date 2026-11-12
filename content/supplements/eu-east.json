@@ -1,10 +1,11 @@
 {
  "id": "eu-east",
- "title": "Eastern Europe's missing states, 82 BC – 1952",
+ "title": "Eastern European states, 82 BC – 1952",
  "from": -82,
  "to": 1952,
  "replaces": [],
- "summary": "States of central-eastern and south-eastern Europe, the Baltic and the north-western Caucasus that the border data leaves out or paints as a neighbour: Burebista's and Decebalus' Dacia, the principality of Abasgia, Rus' Tmutarakan, Circassia until the Russian conquest of 1864, the Emirate of Bari, the Albanian principalities of Arbanon and the Thopia and Skanderbeg's League of Lezhë, Zeta under the Balšići and Crnojevići, Lombard Negroponte, Acciaioli Athens, the Livonian prince-bishoprics of Riga and Ösel–Wiek, the prince-bishops of Montenegro, the wartime Slovak Republic and post-war Poland before 1953. Dates and rulers come from cited reference articles; borders are reconstructions checked against Shepherd's Historical Atlas where it covers them. Few of these frontiers were ever surveyed, so every line is approximate.",
+ "summary": "States of central-eastern and south-eastern Europe, the Baltic and the north-western Caucasus: Burebista's and Decebalus' Dacia, the principality of Abasgia, Rus' Tmutarakan, Circassia until the Russian conquest of 1864, the Emirate of Bari, the Albanian principalities of Arbanon and the Thopia and Skanderbeg's League of Lezhë, Zeta under the Balšići and Crnojevići, Lombard Negroponte, Acciaioli Athens, the Livonian prince-bishoprics of Riga and Ösel–Wiek, the prince-bishops of Montenegro, the wartime Slovak Republic and post-war Poland before 1953. Few of these frontiers were ever surveyed.",
+ "dataNote": "These are states that the border data leaves out or paints as a neighbour. Dates and rulers come from cited reference articles; borders are reconstructions checked against Shepherd's Historical Atlas where it covers them. Every line is approximate.",
  "regions": [
   {
    "name": "Dacia under Burebista",
@@ -19,7 +20,8 @@
      "when": "c. 82–44 BC"
     }
    ],
-   "note": "Burebista united the Geto-Dacian tribes from about 82 BC and briefly ruled from the middle Danube to the Black Sea, taking the Greek coastal towns of Dobruja; Strabo says the realm broke into four or five parts at his death in 44 BC. The western limit (the Danube bend in Pannonia, after his war with the Boii) and the northern limit in the Carpathian foothills are approximate; his overlordship south of the Danube and on the Pontic coast beyond Dobruja is left out. Dates and rulers: Wikipedia 'Dacia' and 'Burebista'; extent is a reconstruction from these descriptions.",
+   "note": "Burebista united the Geto-Dacian tribes from about 82 BC and briefly ruled from the middle Danube to the Black Sea, taking the Greek coastal towns of Dobruja; Strabo says the realm broke into four or five parts at his death in 44 BC. The western limit (the Danube bend in Pannonia, after his war with the Boii) and the northern limit in the Carpathian foothills are approximate; he also held overlordship south of the Danube and on the Pontic coast beyond Dobruja. Dates and rulers: Wikipedia 'Dacia' and 'Burebista'.",
+   "dataNote": "His overlordship south of the Danube and on the Pontic coast beyond Dobruja is left out. Extent is a reconstruction from these descriptions.",
    "coords": [
     [
      19.0,
@@ -176,7 +178,8 @@
      "when": "87–106"
     }
    ],
-   "note": "After Burebista the kingdom split; the line of kings at Sarmizegetusa Regia in the Orăștie Mountains (Deceneus, Comosicus, Scorilo, Duras) kept the Carpathian core, and Decebalus (87–106) reunited the Dacians, fought Domitian and Trajan, and lost the kingdom in Trajan's second war (105–106). Drawn as the Transylvanian plateau, the Banat to the Tisza, Oltenia and Muntenia to the Danube, which is roughly Decebalus' realm; between 44 BC and AD 87 the eastern and northern parts were held by separate Dacian rulers, and Moldavia beyond the Carpathians (free Dacians, Bastarnae) is left out. Dates and rulers: Wikipedia 'Dacia', 'Decebalus', 'Trajan's Dacian Wars'.",
+   "note": "After Burebista the kingdom split; the line of kings at Sarmizegetusa Regia in the Orăștie Mountains (Deceneus, Comosicus, Scorilo, Duras) kept the Carpathian core, and Decebalus (87–106) reunited the Dacians, fought Domitian and Trajan, and lost the kingdom in Trajan's second war (105–106). Decebalus' realm was roughly the Transylvanian plateau, the Banat to the Tisza, Oltenia and Muntenia to the Danube; between 44 BC and AD 87 the eastern and northern parts were held by separate Dacian rulers, and Moldavia beyond the Carpathians belonged to free Dacians and Bastarnae. Dates and rulers: Wikipedia 'Dacia', 'Decebalus', 'Trajan's Dacian Wars'.",
+   "dataNote": "Drawn as the Transylvanian plateau, the Banat to the Tisza, Oltenia and Muntenia to the Danube, which is roughly Decebalus' realm. Moldavia beyond the Carpathians (free Dacians, Bastarnae) is left out.",
    "coords": [
     [
      20.35,
@@ -297,7 +300,8 @@
      "when": "767–828 (king from c. 778)"
     }
    ],
-   "note": "The Abasgians of the north-western Black Sea coast, between the Zygii to the north and the Apsilae around Sebastopolis (Sukhumi), were ruled by their own princes under Lazic and Byzantine suzerainty; Justinian had them converted and built Pityus and Sebastopolis during the Lazic War (Procopius). Their princes at Anacopia (New Athos) grew stronger as Byzantium weakened, and Leon II took the royal title around 778 with Khazar backing, founding the Kingdom of Abkhazia (drawn by the border data under 'Georgia'). Wikidata dates the polity 64–786; the region here starts at the Justinianic period, when sources describe it as a distinct principality. Extent (coast from Gagra to the Kodori, inland to the Caucasus crest) is approximate. Sources: Wikipedia 'Abasgia', 'Kingdom of Abkhazia'.",
+   "note": "The Abasgians of the north-western Black Sea coast, between the Zygii to the north and the Apsilae around Sebastopolis (Sukhumi), were ruled by their own princes under Lazic and Byzantine suzerainty; Justinian had them converted and built Pityus and Sebastopolis during the Lazic War (Procopius). Their princes at Anacopia (New Athos) grew stronger as Byzantium weakened, and Leon II took the royal title around 778 with Khazar backing, founding the Kingdom of Abkhazia. Sources describe it as a distinct principality from the Justinianic period. Extent (coast from Gagra to the Kodori, inland to the Caucasus crest) is approximate. Sources: Wikipedia 'Abasgia', 'Kingdom of Abkhazia'.",
+   "dataNote": "The Kingdom of Abkhazia is drawn by the border data under 'Georgia'. Wikidata dates the polity 64–786; the region here starts at the Justinianic period, when sources describe it as a distinct principality.",
    "coords": [
     [
      40.0,
@@ -435,7 +439,8 @@
      "when": "1550s–1571"
     }
    ],
-   "note": "Land of the Adyghe (Circassian) princes and free communities between the Kuban, the Black Sea and the Caucasus crest, with Kabarda on the upper Terek to the east. Circassian tradition credits Inal the Great with uniting the principalities in the first half of the 15th century (the 1427 start date follows Wikipedia; Inal's own dates are legendary and Nogmov gives 1427 as the year of his death); afterwards they were a loose confederation, often paying tribute to the Crimean khans and Ottomans but never governed by them. The Kuban formed the northern edge; Taman and Anapa were Crimean and Ottoman footholds and are left out. Russia claimed Kabarda from the 1770s and subdued it in 1822, so this slice ends then. All frontiers approximate. Sources: Wikipedia 'Circassia', 'Inal the Great', 'Kabardia', 'Russo-Circassian War'.",
+   "note": "Land of the Adyghe (Circassian) princes and free communities between the Kuban, the Black Sea and the Caucasus crest, with Kabarda on the upper Terek to the east. Circassian tradition credits Inal the Great with uniting the principalities in the first half of the 15th century (Inal's own dates are legendary and Nogmov gives 1427 as the year of his death); afterwards they were a loose confederation, often paying tribute to the Crimean khans and Ottomans but never governed by them. The Kuban formed the northern edge; Taman and Anapa were Crimean and Ottoman footholds. Russia claimed Kabarda from the 1770s and subdued it in 1822. Sources: Wikipedia 'Circassia', 'Inal the Great', 'Kabardia', 'Russo-Circassian War'.",
+   "dataNote": "The 1427 start date follows Wikipedia. Taman and Anapa are left out. This slice ends in 1822. All frontiers approximate.",
    "coords": [
     [
      37.55,
@@ -572,7 +577,8 @@
      "when": "1850s–1864"
     }
    ],
-   "note": "Western Circassia (Natukhai, Shapsug, Abadzekh, Ubykh, Bzhedug, Temirgoy, Besleney and smaller communities) between the Kuban and the Black Sea, after Russia subdued Kabarda (1822). Russia fortified the Kuban as the Caucasus Line from the 1790s, claimed the coast under the treaty of Adrianople (1829) and built Black Sea forts in the 1830s, but most of the country stayed outside its control until the final campaign of 1859–1864, which ended with the expulsion of most of the Circassians to the Ottoman Empire. The border data shows this area as Russian in some years; this region shows the de facto independent highlands. Eastern limit (the Urup and upper Kuban, beyond which lived the Karachays) is approximate. Sources: Wikipedia 'Circassia', 'Russo-Circassian War', 'Circassian genocide'.",
+   "note": "Western Circassia (Natukhai, Shapsug, Abadzekh, Ubykh, Bzhedug, Temirgoy, Besleney and smaller communities) between the Kuban and the Black Sea, after Russia subdued Kabarda (1822). Russia fortified the Kuban as the Caucasus Line from the 1790s, claimed the coast under the treaty of Adrianople (1829) and built Black Sea forts in the 1830s, but most of the country stayed outside its control until the final campaign of 1859–1864, which ended with the expulsion of most of the Circassians to the Ottoman Empire. Eastern limit (the Urup and upper Kuban, beyond which lived the Karachays) is approximate. Sources: Wikipedia 'Circassia', 'Russo-Circassian War', 'Circassian genocide'.",
+   "dataNote": "The border data shows this area as Russian in some years; this region shows the de facto independent highlands.",
    "coords": [
     [
      37.55,
@@ -673,7 +679,8 @@
      "when": "c. 857–871"
     }
    ],
-   "note": "Short-lived Muslim emirate in Apulia, founded when the commander Khalfun took Bari around 847; his successor Mufarrag ibn Sallam obtained recognition as governor (wali) from the Abbasid caliph al-Mutawakkil, and Sawdan ruled it as emir until the Carolingian emperor Louis II took Bari in 871. The border data paints the area as Aghlabid, but Bari answered to Baghdad, not to Kairouan. Extent (the Terra di Bari coast and the Murge hinterland) is approximate; Taranto, held by another Muslim group until 880, is left out. Source: Wikipedia 'Emirate of Bari'.",
+   "note": "Short-lived Muslim emirate in Apulia, founded when the commander Khalfun took Bari around 847; his successor Mufarrag ibn Sallam obtained recognition as governor (wali) from the Abbasid caliph al-Mutawakkil, and Sawdan ruled it as emir until the Carolingian emperor Louis II took Bari in 871. Bari answered to Baghdad, not to Kairouan. Extent (the Terra di Bari coast and the Murge hinterland) is approximate; Taranto was held by another Muslim group until 880. Source: Wikipedia 'Emirate of Bari'.",
+   "dataNote": "The border data paints the area as Aghlabid. Taranto is left out.",
    "coords": [
     [
      16.28,
@@ -742,7 +749,8 @@
      "when": "1208–1216"
     }
    ],
-   "note": "First Albanian state recorded in the sources, ruled by Progon and his sons from Krujë east and north-east of the Byzantine and Venetian coast. In 1208 Dhimitër Progoni described his land to Pope Innocent III as the mountain region between Shkodër, Durrës, Ohrid and Prizren, which is what is drawn (the cities themselves excluded). After 1216 it passed under Epirus, then Bulgaria and Nicaea. Extent approximate. Sources: Wikipedia 'Principality of Arbanon' (citing Elsie 2010, Winnifrith 1992, Nicol 1986); Shepherd plate 89 (Byzantine Empire 1265) for the later setting.",
+   "note": "First Albanian state recorded in the sources, ruled by Progon and his sons from Krujë east and north-east of the Byzantine and Venetian coast. In 1208 Dhimitër Progoni described his land to Pope Innocent III as the mountain region between Shkodër, Durrës, Ohrid and Prizren. After 1216 it passed under Epirus, then Bulgaria and Nicaea. Sources: Wikipedia 'Principality of Arbanon' (citing Elsie 2010, Winnifrith 1992, Nicol 1986); Shepherd plate 89 (Byzantine Empire 1265) for the later setting.",
+   "dataNote": "That region is what is drawn (the cities themselves excluded). Extent approximate.",
    "coords": [
     [
      19.62,
@@ -811,7 +819,8 @@
      "when": "1388–1392"
     }
    ],
-   "note": "Karl Thopia, styling himself princeps Albaniae, held central Albania between the Mat and the Shkumbin from 1359 and took Durrës from the Angevins in 1368 (lost briefly to the Navarrese in 1376 and to Balša II in 1383–85). His son Gjergj gave Durrës to Venice in 1392, after which the Thopia kept only Krujë and its hinterland. The border data's 'Albanian Principalities' lumps several lordships here and leaves Durrës uncovered. Extent approximate. Sources: Wikipedia 'Principality of Albania (medieval)' (citing Elsie 2010, Ducellier 1981); Shepherd plate 89 (1355).",
+   "note": "Karl Thopia, styling himself princeps Albaniae, held central Albania between the Mat and the Shkumbin from 1359 and took Durrës from the Angevins in 1368 (lost briefly to the Navarrese in 1376 and to Balša II in 1383–85). His son Gjergj gave Durrës to Venice in 1392, after which the Thopia kept only Krujë and its hinterland. Sources: Wikipedia 'Principality of Albania (medieval)' (citing Elsie 2010, Ducellier 1981); Shepherd plate 89 (1355).",
+   "dataNote": "The border data's 'Albanian Principalities' lumps several lordships here and leaves Durrës uncovered. Extent approximate.",
    "coords": [
     [
      19.4,
@@ -888,7 +897,8 @@
      "when": "1403–1421"
     }
    ],
-   "note": "The Balšić brothers held Zeta (the lands around Lake Shkodër and the coast from Budva to the Buna) from the 1360s and were fully independent once Serbian imperial authority lapsed in 1371; Balša II briefly added Durrës and Berat (1372–85). Đurađ II ceded Shkodër to Venice in 1396 and Balša III fought Venice over the coastal towns; at his death in 1421 Zeta passed to the Serbian Despotate. The border data folds this into its 'Serbian Despots' polygon. Shkodër city (Venetian from 1396) and Kotor are left out; extent approximate. Sources: Wikipedia 'Zeta under the Balšići', 'Zeta under the Crnojevići'; Shepherd plates 89 and 93.",
+   "note": "The Balšić brothers held Zeta (the lands around Lake Shkodër and the coast from Budva to the Buna) from the 1360s and were fully independent once Serbian imperial authority lapsed in 1371; Balša II briefly added Durrës and Berat (1372–85). Đurađ II ceded Shkodër to Venice in 1396 and Balša III fought Venice over the coastal towns; at his death in 1421 Zeta passed to the Serbian Despotate. Sources: Wikipedia 'Zeta under the Balšići', 'Zeta under the Crnojevići'; Shepherd plates 89 and 93.",
+   "dataNote": "The border data folds this into its 'Serbian Despots' polygon. Shkodër city (Venetian from 1396) and Kotor are left out; extent approximate.",
    "coords": [
     [
      18.85,
@@ -957,7 +967,8 @@
      "when": "1490–1496"
     }
    ],
-   "note": "After the Serbian Despotate lost its hold, Stefan Crnojević ruled upper Zeta from 1451, between Venetian Kotor, Budva and Shkodër and the Ottomans. Ivan Crnojević moved the capital from Žabljak to Cetinje in 1482 after the Ottomans took the lowlands, and founded the Cetinje monastery and press; Đurađ fled in 1496 and Zeta was annexed to the Ottoman sanjak of Shkodër. The border data shows the area as Herzegovina ('Duchy of Saint Sava') and then Ottoman. Extent approximate; the lake-shore lowlands were lost in the 1470s. Sources: Wikipedia 'Zeta under the Balšići', 'Zeta under the Crnojevići'; Shepherd plates 89 and 93.",
+   "note": "After the Serbian Despotate lost its hold, Stefan Crnojević ruled upper Zeta from 1451, between Venetian Kotor, Budva and Shkodër and the Ottomans. Ivan Crnojević moved the capital from Žabljak to Cetinje in 1482 after the Ottomans took the lowlands, and founded the Cetinje monastery and press; Đurađ fled in 1496 and Zeta was annexed to the Ottoman sanjak of Shkodër. The lake-shore lowlands were lost in the 1470s. Sources: Wikipedia 'Zeta under the Balšići', 'Zeta under the Crnojevići'.",
+   "dataNote": "The border data shows the area as Herzegovina ('Duchy of Saint Sava') and then Ottoman. Extent approximate. Source: Shepherd plates 89 and 93.",
    "coords": [
     [
      18.85,
@@ -1010,7 +1021,8 @@
      "when": "1468–1479"
     }
    ],
-   "note": "Alliance of the Albanian lords (Kastrioti, Arianiti, Zaharia, Muzaka, Spani, Thopia, Dukagjini, Balsha, with the Crnojevići of Zeta) formed at Lezhë on 2 March 1444 under Skanderbeg, who held off Ottoman armies at Krujë until his death in 1468; the league then dissolved, and Krujë fell in 1478. Drawn as the inland lands Skanderbeg and his allies held, following Shepherd's plate 93 ('Albania under George Castriota, 1448–1467'); Venetian Durrës, Lezhë and Shkodër on the coast are left out. The border data paints this area Ottoman. Extent approximate and shifting with each campaign. Sources: Wikipedia 'League of Lezhë', 'Skanderbeg'; Shepherd plate 93.",
+   "note": "Alliance of the Albanian lords (Kastrioti, Arianiti, Zaharia, Muzaka, Spani, Thopia, Dukagjini, Balsha, with the Crnojevići of Zeta) formed at Lezhë on 2 March 1444 under Skanderbeg, who held off Ottoman armies at Krujë until his death in 1468; the league then dissolved, and Krujë fell in 1478. Skanderbeg and his allies held the inland lands; Durrës, Lezhë and Shkodër on the coast were Venetian. The lands they held shifted with each campaign. Sources: Wikipedia 'League of Lezhë', 'Skanderbeg'.",
+   "dataNote": "Drawn as the inland lands Skanderbeg and his allies held, following Shepherd's plate 93 ('Albania under George Castriota, 1448–1467'); Venetian Durrës, Lezhë and Shkodër on the coast are left out. The border data paints this area Ottoman. Extent approximate. Source: Shepherd plate 93.",
    "coords": [
     [
      19.6,
@@ -1103,7 +1115,8 @@
      "when": "c. 1294–1317"
     }
    ],
-   "note": "After the Fourth Crusade Euboea was granted to Lombard lords, the dalle Carceri and their heirs, who shared the island as three baronies ('terzieri') under the suzerainty of the Principality of Achaea and as a Venetian protectorate from 1209, with a Venetian bailo at Chalkis; Catalan Athens took part of the island in 1317. Venice bought out the last lords and ruled Euboea directly from 1390 until the Ottoman conquest of 1470, so this region ends in 1389. The border data colours the island as the Duchy of Athens or the Catalan Company. Sources: Wikipedia 'Triarchy of Negroponte'; Shepherd plate 89 (1265, 1355).",
+   "note": "After the Fourth Crusade Euboea was granted to Lombard lords, the dalle Carceri and their heirs, who shared the island as three baronies ('terzieri') under the suzerainty of the Principality of Achaea and as a Venetian protectorate from 1209, with a Venetian bailo at Chalkis; Catalan Athens took part of the island in 1317. Venice bought out the last lords and ruled Euboea directly from 1390 until the Ottoman conquest of 1470. Source: Wikipedia 'Triarchy of Negroponte'.",
+   "dataNote": "This region ends in 1389. The border data colours the island as the Duchy of Athens or the Catalan Company. Source: Shepherd plate 89 (1265, 1355).",
    "coords": [
     [
      22.84,
@@ -1224,7 +1237,8 @@
      "when": "1455–1456"
     }
    ],
-   "note": "The Florentine Nerio Acciaioli took Athens from the Catalans in 1388; apart from a Venetian interlude (1395–1402) his family ruled Attica and Boeotia from the Acropolis and Thebes, tributary to the Ottomans and from 1444 to the Despot of the Morea, until Turahanoğlu Ömer Bey conquered the duchy in 1456 (the Acropolis held out until 1458). The border data shows the duchy as part of the 'Crown of Aragon' after 1388, which is wrong; this region continues the drawn 'Duchy of Athens'. Extent (Attica, Boeotia and the Megarid) approximate. Sources: Wikipedia 'Duchy of Athens'; Shepherd plate 93.",
+   "note": "The Florentine Nerio Acciaioli took Athens from the Catalans in 1388; apart from a Venetian interlude (1395–1402) his family ruled Attica and Boeotia from the Acropolis and Thebes, tributary to the Ottomans and from 1444 to the Despot of the Morea, until Turahanoğlu Ömer Bey conquered the duchy in 1456 (the Acropolis held out until 1458). Extent (Attica, Boeotia and the Megarid) approximate. Source: Wikipedia 'Duchy of Athens'.",
+   "dataNote": "The border data shows the duchy as part of the 'Crown of Aragon' after 1388, which is wrong; this region continues the drawn 'Duchy of Athens'. Source: Shepherd plate 93.",
    "coords": [
     [
      22.85,
@@ -1317,7 +1331,8 @@
      "when": "1393–1418"
     }
    ],
-   "note": "Terra Mariana (medieval Livonia) was a confederation of the Livonian Order and four prince-bishoprics. The border data draws the Order's lands (as 'Teutonic Order') but leaves the bishops' territories empty until its 'Livonian Conference' polygon begins in 1422, so this region fills that hole. Northern part: the archbishop's lands north and east of Riga, from the Daugava to the Salaca (Treyden, Lemsal). The see was raised to an archbishopric in 1255; the city of Riga itself was often at war with the Order and the archbishop. Extent approximate. Sources: Wikipedia 'Archbishopric of Riga', 'Terra Mariana'; Shepherd plate 88.",
+   "note": "Terra Mariana (medieval Livonia) was a confederation of the Livonian Order and four prince-bishoprics. The archbishop's northern lands lay north and east of Riga, from the Daugava to the Salaca (Treyden, Lemsal). The see was raised to an archbishopric in 1255; the city of Riga itself was often at war with the Order and the archbishop. Sources: Wikipedia 'Archbishopric of Riga', 'Terra Mariana'.",
+   "dataNote": "The border data draws the Order's lands (as 'Teutonic Order') but leaves the bishops' territories empty until its 'Livonian Conference' polygon begins in 1422, so this region fills that hole. Northern part. Extent approximate. Source: Shepherd plate 88.",
    "coords": [
     [
      24.05,
@@ -1382,7 +1397,8 @@
      "when": "1393–1418"
     }
    ],
-   "note": "Terra Mariana (medieval Livonia) was a confederation of the Livonian Order and four prince-bishoprics. The border data draws the Order's lands (as 'Teutonic Order') but leaves the bishops' territories empty until its 'Livonian Conference' polygon begins in 1422, so this region fills that hole. Eastern part: the archbishop's lands along and north of the Daugava from Kokenhusen (Koknese) east towards Lake Lubāns and the Russian border. Extent approximate. Sources: Wikipedia 'Archbishopric of Riga'; Shepherd plate 88.",
+   "note": "Terra Mariana (medieval Livonia) was a confederation of the Livonian Order and four prince-bishoprics. The archbishop's eastern lands lay along and north of the Daugava from Kokenhusen (Koknese) east towards Lake Lubāns and the Russian border. Source: Wikipedia 'Archbishopric of Riga'.",
+   "dataNote": "The border data draws the Order's lands (as 'Teutonic Order') but leaves the bishops' territories empty until its 'Livonian Conference' polygon begins in 1422, so this region fills that hole. Eastern part. Extent approximate. Source: Shepherd plate 88.",
    "coords": [
     [
      25.0,
@@ -1455,7 +1471,8 @@
      "when": "1385–1419"
     }
    ],
-   "note": "The Bishopric of Ösel–Wiek (1228–1560) held the Wiek (Läänemaa) coast and most of the islands of Ösel (Saaremaa) and Dagö (Hiiumaa); the Livonian Order held part of Ösel. The border data draws the Order's lands (as 'Teutonic Order') but leaves the bishops' territories empty until its 'Livonian Conference' polygon begins in 1422, so this region fills that hole. Mainland part (the Wiek, with Leal/Lihula and Hapsal). Extent approximate. Sources: Wikipedia 'Bishopric of Ösel–Wiek'; Shepherd plate 88.",
+   "note": "The Bishopric of Ösel–Wiek (1228–1560) held the Wiek (Läänemaa) coast and most of the islands of Ösel (Saaremaa) and Dagö (Hiiumaa); the Livonian Order held part of Ösel. Its mainland part was the Wiek, with Leal/Lihula and Hapsal. Source: Wikipedia 'Bishopric of Ösel–Wiek'.",
+   "dataNote": "The border data draws the Order's lands (as 'Teutonic Order') but leaves the bishops' territories empty until its 'Livonian Conference' polygon begins in 1422, so this region fills that hole. Mainland part. Extent approximate. Source: Shepherd plate 88.",
    "coords": [
     [
      23.4,
@@ -1520,7 +1537,8 @@
      "when": "1385–1419"
     }
    ],
-   "note": "The Bishopric of Ösel–Wiek (1228–1560) held the Wiek (Läänemaa) coast and most of the islands of Ösel (Saaremaa) and Dagö (Hiiumaa); the Livonian Order held part of Ösel. The border data draws the Order's lands (as 'Teutonic Order') but leaves the bishops' territories empty until its 'Livonian Conference' polygon begins in 1422, so this region fills that hole. Ösel (Saaremaa), conquered in 1227; the Order's share around Sonneburg is not separated out. Extent approximate. Sources: Wikipedia 'Bishopric of Ösel–Wiek'; Shepherd plate 88.",
+   "note": "The Bishopric of Ösel–Wiek (1228–1560) held the Wiek (Läänemaa) coast and most of the islands of Ösel (Saaremaa) and Dagö (Hiiumaa); the Livonian Order held part of Ösel. Ösel (Saaremaa) was conquered in 1227; the Order's share lay around Sonneburg. Source: Wikipedia 'Bishopric of Ösel–Wiek'.",
+   "dataNote": "The border data draws the Order's lands (as 'Teutonic Order') but leaves the bishops' territories empty until its 'Livonian Conference' polygon begins in 1422, so this region fills that hole. The Order's share around Sonneburg is not separated out. Extent approximate. Source: Shepherd plate 88.",
    "coords": [
     [
      21.75,
@@ -1585,7 +1603,8 @@
      "when": "1385–1419"
     }
    ],
-   "note": "The Bishopric of Ösel–Wiek (1228–1560) held the Wiek (Läänemaa) coast and most of the islands of Ösel (Saaremaa) and Dagö (Hiiumaa); the Livonian Order held part of Ösel. The border data draws the Order's lands (as 'Teutonic Order') but leaves the bishops' territories empty until its 'Livonian Conference' polygon begins in 1422, so this region fills that hole. Dagö (Hiiumaa). Extent approximate. Sources: Wikipedia 'Bishopric of Ösel–Wiek'.",
+   "note": "The Bishopric of Ösel–Wiek (1228–1560) held the Wiek (Läänemaa) coast and most of the islands of Ösel (Saaremaa) and Dagö (Hiiumaa); the Livonian Order held part of Ösel. Sources: Wikipedia 'Bishopric of Ösel–Wiek'.",
+   "dataNote": "The border data draws the Order's lands (as 'Teutonic Order') but leaves the bishops' territories empty until its 'Livonian Conference' polygon begins in 1422, so this region fills that hole. Dagö (Hiiumaa). Extent approximate.",
    "coords": [
     [
      22.0,
@@ -1642,7 +1661,8 @@
      "when": "1784–1830"
     }
    ],
-   "note": "Theocracy of the Orthodox metropolitans of Cetinje, hereditary in the Petrović-Njegoš family from Danilo I (1697). Nominally Ottoman, it was effectively independent in its mountains (Old Montenegro: the Katun, Rijeka, Crmnica and Lješanska districts) between Venetian Kotor and Budva and the Ottoman lowlands of Podgorica and Spuž. The border data paints all of it Ottoman until 1852. Extent approximate. Source: Wikipedia 'Prince-Bishopric of Montenegro'.",
+   "note": "Theocracy of the Orthodox metropolitans of Cetinje, hereditary in the Petrović-Njegoš family from Danilo I (1697). Nominally Ottoman, it was effectively independent in its mountains (Old Montenegro: the Katun, Rijeka, Crmnica and Lješanska districts) between Venetian Kotor and Budva and the Ottoman lowlands of Podgorica and Spuž. Source: Wikipedia 'Prince-Bishopric of Montenegro'.",
+   "dataNote": "The border data paints all of it Ottoman until 1852. Extent approximate.",
    "coords": [
     [
      18.75,
@@ -1707,7 +1727,8 @@
      "when": "1851–1852"
     }
    ],
-   "note": "After Petar I defeated the pasha of Shkodër at Martinići and Krusi (1796), the Brda tribes (Bjelopavlići, Piperi and part of the Kuči) joined Montenegro, which Petar II Njegoš gave a senate and courts; Danilo II secularised the state as a principality in 1852 (drawn by the border data as 'Montenegro' from 1853). Podgorica and Spuž stayed Ottoman. The border data paints the area Ottoman until 1852. Extent approximate. Sources: Wikipedia 'Prince-Bishopric of Montenegro', 'Battle of Krusi'.",
+   "note": "After Petar I defeated the pasha of Shkodër at Martinići and Krusi (1796), the Brda tribes (Bjelopavlići, Piperi and part of the Kuči) joined Montenegro, which Petar II Njegoš gave a senate and courts; Danilo II secularised the state as a principality in 1852. Podgorica and Spuž stayed Ottoman. Sources: Wikipedia 'Prince-Bishopric of Montenegro', 'Battle of Krusi'.",
+   "dataNote": "Drawn by the border data as 'Montenegro' from 1853. The border data paints the area Ottoman until 1852. Extent approximate.",
    "coords": [
     [
      18.75,
@@ -1796,7 +1817,8 @@
      "when": "1944–1945"
     }
    ],
-   "note": "Declared on 14 March 1939 as Germany broke up Czecho-Slovakia; a client state of Nazi Germany and Axis member, recognised by some 27 states, until the Red Army took Bratislava on 4 April 1945. The southern strip with Košice, Komárno and Lučenec had gone to Hungary by the First Vienna Award (November 1938) and more of the east in the Slovak–Hungarian war of March 1939; small areas of Orava and Spiš were taken from Poland in September 1939. The border data shows the country as Hungary or Nazi Germany in these years. Southern border approximate. Sources: Wikipedia 'Slovak Republic (1939–1945)', 'First Vienna Award', 'Slovak–Hungarian War'.",
+   "note": "Declared on 14 March 1939 as Germany broke up Czecho-Slovakia; a client state of Nazi Germany and Axis member, recognised by some 27 states, until the Red Army took Bratislava on 4 April 1945. The southern strip with Košice, Komárno and Lučenec had gone to Hungary by the First Vienna Award (November 1938) and more of the east in the Slovak–Hungarian war of March 1939; small areas of Orava and Spiš were taken from Poland in September 1939. Sources: Wikipedia 'Slovak Republic (1939–1945)', 'First Vienna Award', 'Slovak–Hungarian War'.",
+   "dataNote": "The border data shows the country as Hungary or Nazi Germany in these years. Southern border approximate.",
    "coords": [
     [
      16.97,
@@ -1957,7 +1979,8 @@
      "when": "1947–1952"
     }
    ],
-   "note": "Post-war Poland within the borders set at Yalta and Potsdam: the Oder–Neisse line in the west, the Curzon line (roughly) in the east, and the southern half of East Prussia. Formally the Republic of Poland until the 1952 constitution renamed it the Polish People's Republic; a Soviet satellite from the communist takeover of 1947. The border data paints Poland as part of the USSR for 1945–1952 and starts its 'Republic of Poland' in 1953, so this region fills the gap. The Oder–Neisse line uses the same points as the 'Soviet zone' region of the eu-west layer. The small 1951 border exchange with the Soviet Union (Ustrzyki Dolne for the Sokal area) is not shown. Sources: Wikipedia 'Polish People's Republic', 'Oder–Neisse line', 'Curzon Line'.",
+   "note": "Post-war Poland within the borders set at Yalta and Potsdam: the Oder–Neisse line in the west, the Curzon line (roughly) in the east, and the southern half of East Prussia. Formally the Republic of Poland until the 1952 constitution renamed it the Polish People's Republic; a Soviet satellite from the communist takeover of 1947. A small border exchange with the Soviet Union followed in 1951 (Ustrzyki Dolne for the Sokal area). Sources: Wikipedia 'Polish People's Republic', 'Oder–Neisse line', 'Curzon Line'.",
+   "dataNote": "The border data paints Poland as part of the USSR for 1945–1952 and starts its 'Republic of Poland' in 1953, so this region fills the gap. The Oder–Neisse line uses the same points as the 'Soviet zone' region of the eu-west layer. The small 1951 border exchange with the Soviet Union (Ustrzyki Dolne for the Sokal area) is not shown.",
    "coords": [
     [
      14.2,

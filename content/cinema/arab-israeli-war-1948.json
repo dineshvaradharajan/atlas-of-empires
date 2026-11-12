@@ -2,7 +2,8 @@
  "war": "arab-israeli-war-1948",
  "start": "1947-11-29",
  "end": "1949-07-20",
- "note": "Held areas and lines are approximate reconstructions from contemporary CIA and US Military Academy maps; during the civil war control was a patchwork of towns and villages, so blocks of Jewish settlement are drawn as areas, and ground that no force held shows the base map.",
+ "note": "Held areas and lines are approximate; during the civil war control was a patchwork of towns and villages, so blocks of Jewish settlement are drawn as areas, and ground that no force held is not shaded.",
+ "dataNote": "Held areas and lines are approximate reconstructions from contemporary CIA and US Military Academy maps. Ground that no force held shows the base map.",
  "chapters": [
   {
    "id": "civil-war",
