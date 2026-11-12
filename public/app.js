@@ -1559,7 +1559,7 @@ function bestYear(key) {
 }
 
 // ---------------------------------------------------------------- left column
-const tabOf = () => (S.view === "today" || S.tstory ? "today" : LISTS.has(S.view) && S.view !== "sources" || S.war || S.journey || S.view === "moment" ? "stories" : S.view === "sources" ? "" : "map");
+const tabOf = () => (S.view === "today" || S.tstory ? "today" : LISTS.has(S.view) && S.view !== "sources" || S.war || S.journey || S.view === "moment" ? "stories" : S.view === "sources" ? "about" : "map");
 function renderCol(resetScroll) {
   syncChart();
   const col = $("#col"), scroll = col.scrollTop;
@@ -3596,6 +3596,7 @@ function setupUI() {
     if (k === "today") return goToday();
     if (k === "map") return goMap();
     if (k === "stories") return goStories();
+    if (k === "about") return openAbout();
     if (k === "search") { document.body.classList.add("searching"); return $("#search").focus(); }
   });
   $("#home").onclick = (ev) => { ev.preventDefault(); goToday(); };
