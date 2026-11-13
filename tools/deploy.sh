@@ -2,13 +2,14 @@
 # Deploy the committed site to Cloudflare Pages (project "worldatlas" -> www.worldatlas.site).
 # Exports HEAD (never uncommitted work), stamps the release version on index.html so app.js, style.css and
 # every data request carry ?v=<commit>, which lets browsers and the edge cache them for a year (public/_headers),
-# preloads the two data files the map needs first, and writes the crawlable pages, sitemaps and llms.txt (tools/seo.py).
+# preloads the two data files the map needs first, writes the crawlable pages, sitemaps and llms.txt (tools/seo.py), and packs the map files (tools/compact.py).
 set -e
 cd "$(dirname "$0")/.."
 V=$(git rev-parse --short HEAD)
 D=$(mktemp -d)
-git archive HEAD public tools/seo.py | tar -x -C "$D"
+git archive HEAD public tools/seo.py tools/compact.py | tar -x -C "$D"
 python3 -I "$D/tools/seo.py" --public "$D/public"
+python3 -I "$D/tools/compact.py" --public "$D/public" # border files and base maps in packed form (about half the download)
 python3 -I - "$D/public/index.html" "$V" <<'PY'
 import sys
 p, v = sys.argv[1], sys.argv[2]

@@ -64,9 +64,8 @@ const S = {
   labels: true, peoples: true, playing: null, width: 0, height: 0, dpr: 1, token: 0,
 };
 const $ = (s) => document.querySelector(s);
-window.__atlas = S; S.fx = { draw: () => draw(), renderCol: () => renderCol(), setWp: (p) => setWp(p), seek: (t) => setWp(pOf(S.cineK, t), true), scr: (ll) => scr(ll), story: (t) => setStoryT(t) }; // debugging handles // read-only handle for debugging in the console
+window.__atlas = S; S.fx = { draw: () => draw(), renderCol: () => renderCol(), setWp: (p) => setWp(p), seek: (t) => setWp(pOf(S.cineK, t), true), scr: (ll) => scr(ll), story: (t) => setStoryT(t), pick: (x, y) => pickAt(x, y) }; // debugging handles // read-only handle for debugging in the console
 const canvas = $("#map"), ctx = canvas.getContext("2d");
-const pick = document.createElement("canvas"), pctx = pick.getContext("2d", { willReadFrequently: true });
 const projection = d3.geoNaturalEarth1();
 const geoPath = d3.geoPath(projection);
 let sphere2d = null, grat2d = null, theme = {}, pathCache = new WeakMap();
@@ -235,11 +234,95 @@ function rewind(fc) {
     if (d3.geoArea({ type: "Polygon", coordinates: [poly[0]] }) > 2 * Math.PI) poly.forEach((r) => r.reverse());
   return fc;
 }
+// d3.geoArea of one ring (d3-geo's spherical excess sum), self-contained so the worker below can use it without d3.
+function ringArea(ring) {
+  const rad = Math.PI / 180, q = Math.PI / 4;
+  let sum = 0, l0 = ring[0][0] * rad, c0 = Math.cos(ring[0][1] * rad / 2 + q), s0 = Math.sin(ring[0][1] * rad / 2 + q);
+  const n = ring.length - (ring.length > 1 && ring[0][0] === ring[ring.length - 1][0] && ring[0][1] === ring[ring.length - 1][1] ? 1 : 0);
+  for (let i = 1; i <= n; i++) {
+    const pt = ring[i % n], l = pt[0] * rad, ph = pt[1] * rad / 2 + q;
+    const d = l - l0, sd = d >= 0 ? 1 : -1, ad = sd * d, c = Math.cos(ph), sn = Math.sin(ph), k = s0 * sn;
+    sum += Math.atan2(k * sd * Math.sin(ad), c0 * c + k * Math.cos(ad));
+    l0 = l; c0 = c; s0 = sn;
+  }
+  return 2 * (sum < 0 ? 2 * Math.PI + sum : sum);
+}
+// The deployed border files and base maps store coordinates as scaled whole-number steps (tools/compact.py, about half
+// the download); this turns them back into ordinary GeoJSON. Files without the packing pass through unchanged.
+function unpackGeo(fc) {
+  if (fc.scale == null) return fc;
+  const m = 10 ** fc.scale;
+  for (const f of fc.features) {
+    const g = f.geometry;
+    if (!g.q) continue;
+    g.coordinates = g.q.map((poly) => poly.map((q) => { const ring = new Array(q.length / 2); let x = 0, y = 0; for (let i = 0; i < q.length; i += 2) { x += q[i]; y += q[i + 1]; ring[i / 2] = [x / m, y / m]; } return ring; }));
+    delete g.q;
+  }
+  delete fc.scale;
+  return fc;
+}
+// Border files and base maps are downloaded, parsed and rewound in a background worker, so a year change never
+// freezes the page (the winding check alone took 25–70 ms of main-thread time per border file). The worker can also
+// answer small questions about a file ("this realm's shapes in year Y") without the whole file crossing over.
+const dataWorker = (() => {
+  try {
+    if (typeof Worker !== "function") return null;
+    const code = `${ringArea.toString()}
+${unpackGeo.toString()}
+const kept = new Map(), ready = new Map();
+const flipsOf = (fc) => { const out = []; let i = 0; for (const f of fc.features) for (const poly of f.geometry.coordinates) { if (ringArea(poly[0]) > 2 * Math.PI) out.push(i); i++; } return out; };
+const rewind = (fc) => { const fl = new Set(flipsOf(fc)); let i = 0; for (const f of fc.features) for (const poly of f.geometry.coordinates) { if (fl.has(i)) poly.forEach((r) => r.reverse()); i++; } return fc; };
+const text = (url) => fetch(url).then((r) => { if (!r.ok) throw new Error(r.status + " " + url); return r.arrayBuffer(); });
+onmessage = async (e) => {
+  const { id, op, url, key, year } = e.data;
+  try {
+    const prep = async () => { // plain GeoJSON bytes plus the list of polygons to flip
+      let buf = await text(url);
+      const fc = JSON.parse(new TextDecoder().decode(buf));
+      if (fc.scale != null) buf = new TextEncoder().encode(JSON.stringify(unpackGeo(fc))).buffer; // packed file: the page gets plain GeoJSON
+      return { buf, flips: Int32Array.from(flipsOf(fc)) };
+    };
+    if (op === "warm") { // fetched and prepared ahead; the page parses it only if it is asked for
+      if (!ready.has(url)) { const p = prep(); ready.set(url, p); p.catch(() => ready.delete(url)); while (ready.size > 3) ready.delete(ready.keys().next().value); }
+      return postMessage({ id, fc: null });
+    }
+    if (op === "load") { // the bytes go back as a transfer (no copy): parsing on the page is far quicker than receiving a parsed copy
+      const p = ready.get(url) || prep(); ready.delete(url);
+      const { buf, flips } = await p;
+      return postMessage({ id, buf, flips }, [buf, flips.buffer]);
+    }
+    if (!kept.has(url)) { const p = text(url).then((b) => rewind(unpackGeo(JSON.parse(new TextDecoder().decode(b))))); kept.set(url, p); p.catch(() => kept.delete(url)); while (kept.size > 4) kept.delete(kept.keys().next().value); }
+    const fc = await kept.get(url);
+    postMessage({ id, fc: { type: "FeatureCollection", features: fc.features.filter((f) => f.properties.f <= year && year <= f.properties.t && (f.properties.k === key || f.properties.n === key)) } });
+  } catch (err) { postMessage({ id, err: String((err && err.message) || err) }); }
+};`;
+    const w = new Worker(URL.createObjectURL(new Blob([code], { type: "text/javascript" })));
+    const waiting = new Map(); let seq = 0, broken = false;
+    w.onmessage = (e) => {
+      const d = e.data, q = waiting.get(d.id); if (!q) return; waiting.delete(d.id);
+      if (d.err) return q.reject(new Error(d.err));
+      if (!d.buf) return q.resolve(d.fc);
+      const fc = JSON.parse(new TextDecoder().decode(d.buf)), fl = d.flips; let i = 0, j = 0;
+      for (const f of fc.features) for (const poly of f.geometry.coordinates) { if (fl[j] === i) { poly.forEach((r) => r.reverse()); j++; } i++; }
+      q.resolve(fc);
+    };
+    w.onerror = (e) => { e.preventDefault?.(); broken = true; for (const q of waiting.values()) q.reject(new Error("worker failed")); waiting.clear(); };
+    const ask = (msg) => broken ? Promise.reject(new Error("worker failed")) : new Promise((resolve, reject) => { const id = ++seq; waiting.set(id, { resolve, reject }); w.postMessage({ ...msg, id, url: new URL(V(msg.url), location.href).href }); });
+    return { load: (url) => ask({ op: "load", url }), warm: (url) => ask({ op: "warm", url }).catch(() => {}), realmAt: (url, key, year) => ask({ op: "realm", url, key, year }) };
+  } catch { return null; }
+})();
+const loadRewound = (url) => { const here = () => fetchJSON(url).then(unpackGeo).then(rewind); return dataWorker ? dataWorker.load(url).catch(here) : here(); }; // the main thread is the fallback
+function memoW(map, key, url, max) { // memo() for files the worker loads and rewinds
+  if (map.has(key)) { const v = map.get(key); map.delete(key); map.set(key, v); return v; }
+  map.set(key, loadRewound(url).catch((e) => { map.delete(key); throw e; }));
+  for (const k of map.keys()) { if (map.size <= max) break; if (k !== key) map.delete(k); }
+  return map.get(key);
+}
 const chunkOf = (y) => { let c = S.clio.chunks[0]; for (const s of S.clio.chunks) if (s <= y) c = s; return c; };
-const loadChunk = (c) => memo(S.chunks, c, `data/clio/${c}.json`, rewind, 12);
+const loadChunk = (c) => memoW(S.chunks, c, `data/clio/${c}.json`, 12);
 let HOME_YEAR = 1683; // the year the atlas opens on: replaced at start-up by the year of something that happened on today's date
 const baseYearFor = (y) => S.baseYears.reduce((b, v) => (Math.abs(v - y) < Math.abs(b - y) ? v : b), S.baseYears[0]);
-const loadBase = (by) => memo(S.bases, by, `data/${by}.json`, rewind, 8);
+const loadBase = (by) => memoW(S.bases, by, `data/${by}.json`, 8);
 
 async function init() {
   readTheme();
@@ -430,7 +513,10 @@ async function go(y, opts = {}) {
   writeHash();
   if (GL && S.playing > 0) warmAhead(y);
   const n = S.clio.chunks, ci = n.indexOf(chunkOf(y));
-  [n[ci - 1], n[ci + 1]].forEach((k) => k !== undefined && loadChunk(k).catch(() => {}));
+  for (const k of [n[ci - 1], n[ci + 1]]) { // the neighbouring border files, ready for the next step through time
+    if (k === undefined || S.chunks.has(k)) continue;
+    if (dataWorker) dataWorker.warm(`data/clio/${k}.json`); else loadChunk(k).catch(() => {});
+  }
 }
 function warmAhead(y) { // during timeline playback, load and triangulate the next base map / border chunk before they are needed
   const ahead = posToY(yToPos(y) + 0.02), key = `${baseYearFor(ahead)}|${chunkOf(ahead)}`;
@@ -712,7 +798,7 @@ const GL = (() => {
     return { items, fb, lb, ranges };
   }
   const freeLayer = (l) => { if (l) { gl.deleteBuffer(l.fb); gl.deleteBuffer(l.lb); } };
-  let cur = null, prev = null, fadeT0 = 0, statics = null, landLayer = null;
+  let cur = null, prev = null, fadeT0 = 0, statics = null, landLayer = null, pending = null;
   const FADE = 260;
   function setItems(items) {
     if (cur && cur.items === items) return;
@@ -750,7 +836,26 @@ const GL = (() => {
       gl.drawArrays(gl.TRIANGLES, r.f0, r.fn);
     }
     // clipped items (reconstructions to the coastline, crops to their box) via the stencil buffer
+    // Consecutive reconstructions clipped only to the coastline share one stencil: the land is written once and each
+    // realm is filled through it, in the original order. (A clear + full land redraw per realm made ~130 full-screen
+    // passes a frame and was most of the cost of every frame while zooming.)
+    let landStencil = false;
     for (const r of later) {
+      if (r.it.p.recon && !r.it.p.crop && !r.it.p.cut) {
+        gl.enable(gl.STENCIL_TEST);
+        if (!landStencil) {
+          gl.clearStencil(0); gl.clear(gl.STENCIL_BUFFER_BIT);
+          gl.colorMask(false, false, false, false); gl.stencilFunc(gl.ALWAYS, 1, 0xff); gl.stencilOp(gl.KEEP, gl.KEEP, gl.REPLACE);
+          if (!landLayer) landLayer = makeLayer(S.items.filter((it) => it.kind !== "state"));
+          bindPos(landLayer.fb); color("#000"); for (const q of landLayer.ranges) if (q.fn) gl.drawArrays(gl.TRIANGLES, q.f0, q.fn);
+          gl.colorMask(true, true, true, true); gl.stencilOp(gl.KEEP, gl.KEEP, gl.KEEP); gl.stencilFunc(gl.EQUAL, 1, 0xff);
+          landStencil = true;
+        }
+        bindPos(layer.fb); color(fillOf(r.it), alpha); gl.drawArrays(gl.TRIANGLES, r.f0, r.fn);
+        gl.disable(gl.STENCIL_TEST);
+        continue;
+      }
+      landStencil = false; // the item below rewrites the stencil
       gl.enable(gl.STENCIL_TEST);
       gl.clearStencil(r.it.p.cut && !r.it.p.crop && !r.it.p.recon ? 1 : 0); gl.clear(gl.STENCIL_BUFFER_BIT); gl.clearStencil(0); // a cut-only item starts everywhere
 
@@ -855,6 +960,24 @@ const GL = (() => {
       };
       if (todo.length) (window.requestIdleCallback || setTimeout)(step);
     },
+    // Are all of this map's shapes triangulated? If not, they are triangulated a few milliseconds at a time (the page
+    // stays responsive; the previous map stays on screen meanwhile) and onReady runs when they all are.
+    ready(items, onReady) {
+      if (cur && cur.items === items) return true;
+      const todo = [];
+      for (const it of items) { if (!geo.has(it.f)) todo.push(it.f); if (it.p.crop && !geo.has(it.p.crop)) todo.push(it.p.crop); }
+      if (todo.length < 12) return true; // a handful: quicker to do now than to wait
+      if (pending === items) return false;
+      pending = items;
+      const run = () => {
+        if (pending !== items) return; // a newer map took over
+        const end = performance.now() + 6;
+        while (todo.length && performance.now() < end) build(todo.pop());
+        if (todo.length) setTimeout(run, 0); else { pending = null; onReady(); }
+      };
+      setTimeout(run, 0);
+      return false;
+    },
     fading: () => prev && performance.now() - fadeT0 < FADE,
     frame(t, fillOf) {
       if (!statics) statics = makeStatics();
@@ -880,15 +1003,19 @@ if (GL) document.documentElement.classList.add("webgl");
 // ---------------------------------------------------------------- map
 function pathOf(f) {
   let p = pathCache.get(f);
-  if (!p) { p = new Path2D(geoPath(f) || ""); pathCache.set(f, p); }
+  if (!p) { p = new Path2D(); geoPath.context(p)(f); geoPath.context(null); pathCache.set(f, p); } // drawn straight into the path: no SVG text to write and re-read
   return p;
+}
+function buildLandClip() {
+  S.landClip = new Path2D();
+  for (const f of S.base.features) S.landClip.addPath(pathOf(f));
+  S.landClipFor = S.base;
 }
 function buildItems() {
   const items = [];
   // Named areas in the older dataset (peoples, chiefdoms, polities Cliopatria doesn't map) form an
   // approximate hatched layer; only unnamed land stays plain = unrecorded.
-  S.landClip = new Path2D();
-  for (const f of S.base.features) S.landClip.addPath(pathOf(f));
+  if (S.landClipFor !== S.base) buildLandClip(); // the coastline clip changes only with the base map
   const bc = S.corr.base[String(baseYearFor(S.year))] || {};
   for (const f of S.base.features) {
     let p = f.properties;
@@ -900,6 +1027,18 @@ function buildItems() {
   const st = [...S.states].sort((a, b) => b.properties.a - a.properties.a); // small realms on top
   for (const f of st) items.push({ f, p: f.properties, kind: "state", key: f.properties.k });
   S.items = items;
+  warmHits(items);
+}
+// Build the hit-test shapes for a new map in idle moments, so the first hover or click after a year change is instant.
+function warmHits(items) {
+  const idle = window.requestIdleCallback || ((f) => setTimeout(() => f({ timeRemaining: () => 8 }), 1));
+  let i = 0;
+  const step = (dl) => {
+    if (S.items !== items) return; // a newer year took over
+    while (i < items.length && dl.timeRemaining() > 2) { const it = items[i++]; hitGeo(it.f); if (it.p.crop) hitGeo(it.p.crop); }
+    if (i < items.length) idle(step); else for (const f of S.base?.features || []) hitGeo(f);
+  };
+  idle(step);
 }
 
 function setupMap() {
@@ -911,7 +1050,6 @@ function setupMap() {
     canvas.width = r.width * S.dpr; canvas.height = r.height * S.dpr;
     if (GL) GL.resize(r.width, r.height, S.dpr);
     if (S.chartKind && !S.war && !S.journey) { renderListChart(S.chartKind); updateChartCursor(); } // its lanes are packed to the width
-    pick.width = r.width; pick.height = r.height;
     const small = r.width < 600, pad = small ? 8 : 28;
     // fit the lived-in world (84°N to 57°S), not the whole sphere: Antarctica and the empty polar seas wasted a third of the canvas
     const edge = []; for (let lon = -180; lon <= 180; lon += 5) edge.push([lon, 84], [lon, -57]);
@@ -920,8 +1058,9 @@ function setupMap() {
     else projection.fitExtent([[small ? 4 : 10, small ? 4 : 8], [r.width - (small ? 40 : 56), r.height - (small ? 4 : 30)]], { type: "MultiPoint", coordinates: edge });
     sphere2d = new Path2D(geoPath({ type: "Sphere" }));
     grat2d = new Path2D(geoPath(d3.geoGraticule10()));
-    pathCache = new WeakMap();
-    if (S.ghost) S.ghost.paths = S.ghost.feats.map((f) => new Path2D(geoPath(f) || ""));
+    pathCache = new WeakMap(); hitCache = new WeakMap();
+    if (S.base) { buildLandClip(); warmHits(S.items); } // shapes in screen units follow the new fit
+    if (S.ghost) S.ghost.paths = S.ghost.feats.map(pathOf);
     if (keep && isFinite(keep[0]) && isFinite(keep[1]) && Math.abs(keep[1]) <= 85 && Math.abs(keep[0]) <= 180 && S.t.k > 1.01) { // only when zoomed in on a real place
       const [x, y] = projection(keep), k = S.t.k;
       d3.select(canvas).interrupt().call(S.zoom.transform, d3.zoomIdentity.translate(S.width / 2 - k * x, S.height / 2 - k * y).scale(k));
@@ -933,7 +1072,7 @@ function setupMap() {
   new ResizeObserver(resize).observe(canvas);
   resize();
 
-  S.zoom = d3.zoom().scaleExtent([1, 24]).translateExtent([[-200, -200], [10000, 10000]])
+  S.zoom = d3.zoom().scaleExtent([1, 24]).translateExtent([[-200, -200], [10000, 10000]]).clickDistance(4) // a click that moves a pixel or two is still a click (d3 swallows it by default)
     .on("start", (ev) => { S.zooming = true; if (ev.sourceEvent?.type === "mousedown") canvas.classList.add("dragging"); })
     .on("zoom", (ev) => { S.t = ev.transform; if (!S.cinePlay) scheduleDraw(); }) // playback redraws every frame itself
     .on("end", () => { S.zooming = false; canvas.classList.remove("dragging"); draw(); });
@@ -956,13 +1095,15 @@ function setupMap() {
       const tip = $("#tooltip");
       tip.innerHTML = `<b>${esc(sh.name)}</b><div class="m">${esc(sh.dateLabel || "")} · ${esc((EVIDENCE[sh.evidence] || EVIDENCE.archaeology)[0])}</div>`;
       tip.hidden = false; tip.style.left = Math.min(x, S.width - 300) + "px"; tip.style.top = y + "px";
-      canvas.classList.toggle("pointing", !S.war && !S.journey); if (S.hover !== -1) { S.hover = -1; draw(); }
+      canvas.classList.toggle("pointing", !S.war && !S.journey); if (S.hover !== -1) { S.hover = -1; scheduleDraw(); }
       return;
     }
     let i = pickAt(x, y); const own = claimedPick(x, y); if (own >= 0) i = own; // a claim drawn as the viewer's country hovers as it
     const it = S.items[i];
+    clearTimeout(S.prefetchT); // resting on a spot fetches its "who ruled this spot" data, so a click shows it at once
+    if (it) S.prefetchT = setTimeout(() => { const ll = projection.invert([S.t.invertX(x), S.t.invertY(y)]); if (ll) placeRuns(ll).catch(() => {}); }, 150);
     const hv = it && it.kind === "state" ? i : -1;
-    if (hv !== S.hover) { S.hover = hv; draw(); }
+    if (hv !== S.hover) { S.hover = hv; scheduleDraw(); } // at most one redraw a frame, however fast the mouse moves
     const tip = $("#tooltip");
     if (!it) { tip.hidden = true; canvas.classList.remove("pointing"); return; }
     canvas.classList.toggle("pointing", !S.war && !S.journey);
@@ -1063,8 +1204,6 @@ function draw() {
   if (S.hover >= 0) { ctx.strokeStyle = theme.ink; ctx.lineWidth = 2 / t.k; strokeItem(ctx, S.items[S.hover]); }
   drawClaims();
   ctx.restore();
-  if (S.zooming || S.cinePlay || S.playing > 0) { clearTimeout(S.pickTimer); S.pickTimer = setTimeout(drawPick, 100); }
-  else drawPick(); // label placement reads the pick buffer, so keep it current when at rest
   if (S.labels) drawLabels();
   drawWaterLabels();
   drawCinema();
@@ -1322,7 +1461,7 @@ function drawWaterLabels() { // screen space, after the realm names, avoiding th
 }
 function drawGL() {
   const { t } = S;
-  GL.setItems(S.items);
+  if (GL.ready(S.items, () => draw())) GL.setItems(S.items); // else the previous map's shapes stay up until the new ones are built
   GL.frame(t, fillOf);
   ctx.setTransform(S.dpr, 0, 0, S.dpr, 0, 0);
   ctx.clearRect(0, 0, S.width, S.height);
@@ -1359,8 +1498,6 @@ function drawGL() {
   if (S.hover >= 0) { ctx.strokeStyle = theme.ink; ctx.lineWidth = 2 / t.k; strokeItem(ctx, S.items[S.hover]); }
   drawClaims();
   ctx.restore();
-  if (S.zooming || GL.fading() || S.cinePlay || S.playing > 0) { clearTimeout(S.pickTimer); S.pickTimer = setTimeout(drawPick, 120); } // the hit-test layer waits until the map is still
-  else drawPick();
   if (S.labels) drawLabels();
   drawWaterLabels();
   drawCinema();
@@ -1386,8 +1523,39 @@ function updateLegend() {
   const show = { peoples: S.peoples && S.items.some((it) => it.kind === "culture"), site: !S.war && S.view !== "journey" && sitesNow().length > 0 };
   for (const sp of lg.querySelectorAll("[data-l]")) sp.hidden = show[sp.dataset.l] === false;
 }
+// One placed name, drawn at screen point (x, y). Shared by the full layout and the replay used while the camera moves.
+function paintLabel(L, x, y) {
+  ctx.font = L.font; ctx.letterSpacing = L.ls;
+  const ly = (k) => y + (k - (L.lines.length - 1) / 2) * L.size * 1.1;
+  if (L.style === "chip") {
+    ctx.fillStyle = theme.highlight; ctx.fillRect(x + L.box[0], y + L.box[1], L.box[2] - L.box[0], L.box[3] - L.box[1]);
+    ctx.fillStyle = "#ffffff"; L.lines.forEach((ln, k) => ctx.fillText(ln, x, ly(k)));
+  } else if (L.style === "war") {
+    ctx.globalAlpha = 0.62; ctx.fillStyle = theme.ink; L.lines.forEach((ln, k) => ctx.fillText(ln, x, ly(k))); ctx.globalAlpha = 1;
+  } else {
+    ctx.lineWidth = L.lw; ctx.lineJoin = "round"; ctx.strokeStyle = L.stroke; ctx.fillStyle = L.fill;
+    L.lines.forEach((ln, k) => { ctx.strokeText(ln, x, ly(k)); ctx.fillText(ln, x, ly(k)); });
+  }
+}
 function drawLabels() {
   const { t } = S;
+  // While the camera moves, the names placed when it started slide along with the map: no re-measuring, no collision
+  // search, no names popping in and out mid-gesture. They are placed afresh once the map is still.
+  const lc = S.lblCache;
+  if (S.zooming && lc && lc.items === S.items && lc.sel === S.sel && lc.w === S.width && lc.h === S.height) {
+    ctx.textAlign = "center"; ctx.textBaseline = "middle";
+    const boxes = mapObstacles();
+    for (const L of lc.list) {
+      const [x0, y0] = projection(L.ll), x = t.applyX(x0), y = t.applyY(y0);
+      if (x < -200 || y < -60 || x > S.width + 200 || y > S.height + 60) continue;
+      paintLabel(L, x, y);
+      boxes.push([x + L.box[0], y + L.box[1], x + L.box[2], y + L.box[3]]);
+    }
+    ctx.letterSpacing = "0px";
+    S.labelBoxes = boxes;
+    return;
+  }
+  const list = [];
   const pxPerKm = (projection.scale() * t.k) / 6371;
   const placed = mapObstacles(); // keep names off the legend and the zoom buttons
   const rank = (it) => (it.key === S.sel ? 3 : S.featured.has(it.key) ? 2 : it.kind === "state" ? 1 : 0);
@@ -1444,47 +1612,66 @@ function drawLabels() {
     if (box[0] < 2 || box[1] < 2 || box[2] > S.width - 2 || box[3] > S.height - 2) continue; // never cut a name at the map's edge
     if (placed.some((b) => box[0] < b[2] && box[2] > b[0] && box[1] < b[3] && box[3] > b[1])) continue;
     placed.push(box); now.add(id); anchors.set(id, { l: ll, size });
-    if (it.key === S.sel || (it.p.recon && it.p.n === S.sel) || (S.journey && inJourney(it))) { // red chip, like the design's highlighted realm
-      ctx.fillStyle = theme.highlight; ctx.fillRect(box[0], box[1], box[2] - box[0], box[3] - box[1]);
-      ctx.fillStyle = "#ffffff";
-      lines.forEach((ln, k) => ctx.fillText(ln, x, y + (k - (lines.length - 1) / 2) * size * 1.1));
-      continue;
+    const L = { ll, lines, size, font: ctx.font, ls: ctx.letterSpacing, box: [box[0] - x, box[1] - y, box[2] - x, box[3] - y] };
+    if (it.key === S.sel || (it.p.recon && it.p.n === S.sel) || (S.journey && inJourney(it))) L.style = "chip"; // red chip, like the design's highlighted realm
+    else if (S.war) L.style = "war"; // quiet names under the action
+    else { // a name on a coloured realm keeps a rim of that colour, so it stays readable at the edges
+      L.lw = strong ? 2.5 : 3; L.stroke = strong ? colorOf(it.key) : theme.bg; L.fill = strong ? inkOn(colorOf(it.key)) : theme.labelSoft;
     }
-    if (S.war) { ctx.globalAlpha = 0.62; ctx.fillStyle = theme.ink; lines.forEach((ln, k) => ctx.fillText(ln, x, y + (k - (lines.length - 1) / 2) * size * 1.1)); ctx.globalAlpha = 1; continue; } // quiet names under the action
-    ctx.lineWidth = strong ? 2.5 : 3; ctx.lineJoin = "round";
-    ctx.strokeStyle = strong ? colorOf(it.key) : theme.bg; // a name on a coloured realm keeps a rim of that colour, so it stays readable at the edges
-    ctx.fillStyle = strong ? inkOn(colorOf(it.key)) : theme.labelSoft;
-    lines.forEach((ln, k) => {
-      const ly = y + (k - (lines.length - 1) / 2) * size * 1.1;
-      ctx.strokeText(ln, x, ly);
-      ctx.fillText(ln, x, ly);
-    });
+    paintLabel(L, x, y);
+    list.push(L);
   }
   ctx.letterSpacing = "0px";
   S.labelBoxes = placed; S.lastPlaced = now;
+  S.lblCache = { items: S.items, sel: S.sel, w: S.width, h: S.height, list };
 }
 
-function drawPick() {
-  if (!S.items.length) return;
-  const { t } = S;
-  if (S.pickFor && S.pickFor.items === S.items && S.pickFor.k === t.k && S.pickFor.x === t.x && S.pickFor.y === t.y && S.pickFor.w === pick.width) return; // unchanged
-  S.pickFor = { items: S.items, k: t.k, x: t.x, y: t.y, w: pick.width };
-  pctx.setTransform(1, 0, 0, 1, 0, 0);
-  pctx.clearRect(0, 0, pick.width, pick.height);
-  pctx.translate(t.x, t.y); pctx.scale(t.k, t.k);
-  S.items.forEach((it, i) => {
-    const id = i + 1;
-    pctx.fillStyle = `rgb(${id & 255},${(id >> 8) & 255},${(id >> 16) & 255})`;
-    if (it.p.recon || it.p.crop || it.p.cut) { pctx.save(); clipFor(pctx, it); pctx.fill(pathOf(it.f)); pctx.restore(); }
-    else pctx.fill(pathOf(it.f));
-  });
+// Hit-testing from the shapes themselves (no hidden pick image to repaint after every move): each shape's projected
+// rings and box are cached at zoom 1, a click is mapped back to zoom 1, and the topmost shape containing it wins.
+let hitCache = new WeakMap();
+function hitGeo(f) {
+  let g = hitCache.get(f);
+  if (g) return g;
+  const rs = []; let cur = null;
+  const rec = { beginPath() {}, moveTo(x, y) { cur = [x, y]; rs.push(cur); }, lineTo(x, y) { cur.push(x, y); }, closePath() {}, arc() {} };
+  geoPath.context(rec)(f); geoPath.context(null);
+  let x0 = Infinity, y0 = Infinity, x1 = -Infinity, y1 = -Infinity;
+  const r = [];
+  for (const a of rs) {
+    if (a.length < 6) continue;
+    for (let i = 0; i < a.length; i += 2) { const x = a[i], y = a[i + 1]; if (x < x0) x0 = x; if (x > x1) x1 = x; if (y < y0) y0 = y; if (y > y1) y1 = y; }
+    r.push(Float64Array.from(a));
+  }
+  g = { b: [x0, y0, x1, y1], r };
+  hitCache.set(f, g);
+  return g;
 }
-function pickAt(x, y) {
-  if (x < 0 || y < 0 || x >= pick.width || y >= pick.height) return -1;
-  const d = pctx.getImageData(Math.floor(x), Math.floor(y), 1, 1).data;
-  if (d[3] < 255) return -1;
-  const id = d[0] + (d[1] << 8) + (d[2] << 16);
-  return id ? id - 1 : -1;
+function inGeo(f, x, y) { // even-odd point-in-polygon over all rings (holes included)
+  const g = hitGeo(f), b = g.b;
+  if (x < b[0] || x > b[2] || y < b[1] || y > b[3]) return false;
+  let inside = false;
+  for (const a of g.r) {
+    for (let i = 0, j = a.length - 2; i < a.length; j = i, i += 2) {
+      const yi = a[i + 1], yj = a[j + 1];
+      if ((yi > y) !== (yj > y) && x < ((a[j] - a[i]) * (y - yi)) / (yj - yi) + a[i]) inside = !inside;
+    }
+  }
+  return inside;
+}
+function pickAt(x, y) { // index in S.items of the shape drawn at screen point (x, y), else -1
+  if (!S.items.length || x < 0 || y < 0 || x >= S.width || y >= S.height) return -1;
+  const px = (x - S.t.x) / S.t.k, py = (y - S.t.y) / S.t.k;
+  let land = null;
+  const onLand = () => (land ??= S.base.features.some((f) => inGeo(f, px, py))); // reconstructions are clipped to the coast
+  for (let i = S.items.length - 1; i >= 0; i--) { // drawn last = on top
+    const it = S.items[i];
+    if (!inGeo(it.f, px, py)) continue;
+    if (it.p.recon && !onLand()) continue;
+    if (it.p.crop && !inGeo(it.p.crop, px, py)) continue;
+    if (it.p.cut && it.p.cut.some((cf) => inGeo(cf, px, py))) continue;
+    return i;
+  }
+  return -1;
 }
 
 // The part of the map the card, the tools and the bottom bar leave free: the camera frames things inside it.
@@ -1547,18 +1734,23 @@ async function select(key, opts = {}) {
   draw();
   updateChartCursor();
   if (!key) { S.ghost = null; return; }
-  loadRealmPlace(key, opts.ll);
   if (opts.fly) flyTo(boundsOf(activeFeats(key)));
+  await afterPaint(); // the card and the highlight reach the screen first; the slower extras follow
+  if (S.sel !== key) return;
+  loadRealmPlace(key, opts.ll);
   // dashed outline of the realm at its greatest recorded extent
   const r = realm(key);
   if (!r || (S.ghost && S.ghost.key === key)) return;
   const [py] = r.tl.reduce((m, row) => (row[2] > m[2] ? row : m));
-  const chunk = await loadChunk(chunkOf(py));
+  const ck = chunkOf(py), mine = (f) => f.properties.f <= py && py <= f.properties.t && (f.properties.k === key || f.properties.n === key);
+  const feats = S.chunks.has(ck) || !dataWorker ? (await loadChunk(ck)).features.filter(mine) // already here: filter it
+    : (await dataWorker.realmAt(`data/clio/${ck}.json`, key, py).catch(() => loadChunk(ck).then((c) => ({ features: c.features.filter(mine) })))).features; // else only this realm's shapes come over
   if (S.sel !== key) return;
-  const feats = chunk.features.filter((f) => f.properties.f <= py && py <= f.properties.t && (f.properties.k === key || f.properties.n === key));
-  S.ghost = { key, year: py, feats, paths: feats.map((f) => new Path2D(geoPath(f) || "")) };
+  S.ghost = { key, year: py, feats, paths: feats.map(pathOf) };
   draw();
 }
+// Resolves once the current frame has been painted (or soon after, in a tab that is not painting).
+const afterPaint = () => new Promise((r) => { const t = setTimeout(r, 60); requestAnimationFrame(() => setTimeout(() => { clearTimeout(t); r(); }, 0)); });
 async function jumpTo(key, year) {
   if (year != null && year !== S.year) await go(year);
   await select(key, { fly: true });
