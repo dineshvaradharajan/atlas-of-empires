@@ -743,6 +743,10 @@ def main():
       "convention fits. These are judgements from the cited pages, not edits: nothing in the atlas was changed.")
     w("")
     hand_table([h for h in HAND if h.get("top")])
+    w("Fixed on 2026-11-13 in content/borders/patches.json: Roman North Africa 261-429 (roman-africa-261-429), the "
+      "Severan Saharan frontier (severan-saharan-frontier), Persian Thrace (persian-thrace-skudra), Gallia Narbonensis "
+      "(gallia-narbonensis-121bce) and Batanaea/Trachonitis (herod-batanaea-trachonitis); verdicts are kept as found.")
+    w("")
     w("### Further checks (smaller blocks)")
     w("")
     hand_table([h for h in HAND if not h.get("top")])

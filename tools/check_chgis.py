@@ -79,7 +79,7 @@ DYNASTIES = [
     "Ming Dynasty", "Southern Ming", "Later Jin Dynasty", "Qing Dynasty",
 ]
 RIVALS = ["Li Zicheng", "Revolt of the Three Feudatories", "Kingdom of Tungning", "Taiping Heavenly Kingdom",
-          "Panthay Rebellion"]
+          "Panthay Rebellion", "Sui–Tang rival regimes"]
 CHINA = {**{n: "dynasty" for n in DYNASTIES}, **{n: "rival" for n in RIVALS}}
 # Realms the atlas only renames (same state, new name): no transition is tested at the rename.
 RENAMED = {"Qin": "Qin Dynasty", "Han": "Han Dynasty", "Cao Cao": "Cao Wei", "Later Jin Dynasty": "Qing Dynasty"}
@@ -570,6 +570,10 @@ def main():
     w("")
     dis_table(problems, args.top)
     w("### Hand checks of the top five")
+    w("")
+    w("Fixed on 2026-11-13 in content/borders/patches.json: Northern Yuan 1369 (ming-1368-1374), blank 908 "
+      "(five-dynasties-908-910), blank 619 (tang-619-622) and the southern blank of 221-229 (eastern-wu-220-237); the "
+      "verdicts below are kept as found.")
     w("")
     w("Checked against Wikipedia (fetched 2026-11-13). *Atlas error*: the atlas should change. *CHGIS scope "
       "difference*: CHGIS maps as administered land that was not the Chinese state's (or vice versa); the atlas stands. "

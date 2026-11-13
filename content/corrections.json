@@ -335,20 +335,30 @@
           "key": "Northern Yuan"
         }
       ],
-      "note": "Yuan rule in China ended in 1368; the remnant on the steppe is the Northern Yuan. The map starts the Yuan in 1294 (proclaimed 1271), and draws it larger than scholarly estimates.",
+      "note": "Yuan rule in China ended in 1368, when the Ming took Dadu; from 1368 the Yuan is drawn on the steppe only, and from 1369 it is labelled the Northern Yuan. The map starts the Yuan in 1294 (proclaimed 1271), and draws it larger than scholarly estimates.",
       "scholarly": {
         "km2": 11000000,
         "year": 1310,
         "source": "Taagepera 1997"
       },
-      "log": "east-asia.md"
+      "log": "east-asia.md",
+      "sources": [
+        {
+          "title": "Wikipedia: Ming dynasty",
+          "url": "https://en.wikipedia.org/wiki/Ming_dynasty"
+        },
+        {
+          "title": "Wikipedia: Northern Yuan",
+          "url": "https://en.wikipedia.org/wiki/Northern_Yuan"
+        }
+      ]
     },
     "Han Dynasty": {
       "clip": [
         -202,
         223
       ],
-      "note": "The Han fell in 220 CE; later polygons are hidden. The map draws its peak smaller than scholarly estimates. From 196 the Han emperor lived at Xuchang under Cao Cao's control, so in the last years the red 'Han' area is land held by other warlords who still recognised the Han, such as Liu Bei in Sichuan. Liu Bei proclaimed himself Han emperor at Chengdu in 221; that outline (cut to Sichuan, Hanzhong and Yunnan) is shown as Shu Han for 221-223. Goguryeo's capital Gungnae (Ji'an) lay outside Han rule, so from 30 CE the Han is drawn west of 126°E (keeping Lelang at Pyongyang). In 40-42 CE the Trưng sisters' rising held Jiaozhi and the commanderies to its south, so Han is drawn north of 21.8°N in those years; Ma Yuan restored Han rule in 43, but the map has no Han outline in northern Vietnam for 44-50.",
+      "note": "The Han fell in 220 CE; later polygons are hidden. The map draws its peak smaller than scholarly estimates. From 196 the Han emperor lived at Xuchang under Cao Cao's control, so in the last years the red 'Han' area is land held by other warlords who still recognised the Han, such as Liu Bei in Sichuan. Sun Quan took southern Jing Province from Liu Bei in 219-220 (and Jiao Province had been his since 210), so from 220 the Han is drawn with Shu Han's 224 outline (Sichuan, Hanzhong and Yunnan) and that land is part of Eastern Wu. Liu Bei proclaimed himself Han emperor at Chengdu in 221; his realm is shown as Shu Han for 221-223. Goguryeo's capital Gungnae (Ji'an) lay outside Han rule, so from 30 CE the Han is drawn west of 126°E (keeping Lelang at Pyongyang). In 40-42 CE the Trưng sisters' rising held Jiaozhi and the commanderies to its south, so Han is drawn north of 21.8°N in those years; Ma Yuan restored Han rule in 43, but the map has no Han outline in northern Vietnam for 44-50.",
       "scholarly": {
         "km2": 6500000,
         "year": 100,
@@ -385,16 +395,6 @@
             126.0,
             56
           ]
-        },
-        {
-          "from": 221,
-          "to": 223,
-          "box": [
-            97,
-            23.0,
-            110.2,
-            34.0
-          ]
         }
       ],
       "relabel": [
@@ -425,21 +425,56 @@
         {
           "title": "Wikipedia: Trưng sisters",
           "url": "https://en.wikipedia.org/wiki/Trưng_sisters"
+        },
+        {
+          "title": "Wikipedia: Eastern Wu",
+          "url": "https://en.wikipedia.org/wiki/Eastern_Wu"
+        },
+        {
+          "title": "Wikipedia: Lü Meng's invasion of Jing Province",
+          "url": "https://en.wikipedia.org/wiki/L%C3%BC_Meng%27s_invasion_of_Jing_Province"
         }
       ]
     },
     "Sui Dynasty": {
       "clip": [
         581,
-        618
+        625
       ],
-      "note": "The Sui fell in 618; later polygons are hidden.",
+      "note": "The Sui fell in 618 (Emperor Yang was killed at Jiangdu and Li Yuan proclaimed the Tang). The border data keeps a 'Sui' outline until 627 for the land not yet under the Tang: in 619-622 it is shown as the land of the rival regimes that divided the Sui lands (Wang Shichong's Zheng at Luoyang, Dou Jiande's Xia in Hebei, Xiao Xian's Liang on the middle Yangtze, Li Zitong's Wu, Du Fuwei in Anhui, Lin Shihong's Chu in Jiangxi and Guangdong); by 623 these had fallen or submitted, so in 623-625 it is shown as Tang (Fu Gongshi's rising at Danyang, 623-624, aside). Its last piece (626-627, Liang Shidu's Liang in the Ordos, to 628) is hidden.",
       "scholarly": {
         "km2": 3100000,
         "year": 610,
         "source": "Taagepera 1997"
       },
-      "log": "east-asia.md"
+      "log": "east-asia.md",
+      "relabel": [
+        {
+          "from": 619,
+          "to": 622,
+          "name": "Sui–Tang rival regimes",
+          "key": "Sui–Tang rival regimes"
+        },
+        {
+          "from": 623,
+          "to": 625,
+          "name": "Tang Dynasty",
+          "key": "Tang Dynasty",
+          "addTo": [
+            "Tang Dynasty"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "title": "Wikipedia: Transition from Sui to Tang",
+          "url": "https://en.wikipedia.org/wiki/Transition_from_Sui_to_Tang"
+        },
+        {
+          "title": "Wikipedia: Tang dynasty",
+          "url": "https://en.wikipedia.org/wiki/Tang_dynasty"
+        }
+      ]
     },
     "Tibetan Empire": {
       "clip": [
@@ -685,7 +720,7 @@
       ]
     },
     "Tang Dynasty": {
-      "note": "The map starts the Tang in 623 (founded 618) and draws it larger than scholarly estimates. The Tang ended in 907; the map leaves 908-910 empty rather than show a united Tang. In 658-665 the map stretched the Tang to the Aral Sea; Sogdiana and the western steppe were loose 'jimi' prefectures under local rulers, so the empire is drawn east of 71°E in those years. Its 661-665 peak (8.7 million km²) also counts the Mongolian protectorates, well above Taagepera's 5.4 million km² (715). Turfan (Xizhou) was a Tang prefecture from 640 to about 790, and the Tarim garrisons held out until about 790, longer than the map shows.",
+      "note": "The Tang was proclaimed on 18 June 618; the map draws it from 619 with its 623 outline, beside the rival regimes it defeated in 620-622 and Gao Kaidao in the far north (to 624), and draws it larger than scholarly estimates. The Tang ended on 1 June 907; from 908 the map shows the Later Liang and the southern kingdoms. In 658-665 the map stretched the Tang to the Aral Sea; Sogdiana and the western steppe were loose 'jimi' prefectures under local rulers, so the empire is drawn east of 71°E in those years. Its 661-665 peak (8.7 million km²) also counts the Mongolian protectorates, well above Taagepera's 5.4 million km² (715). Turfan (Xizhou) was a Tang prefecture from 640 to about 790, and the Tarim garrisons held out until about 790, longer than the map shows.",
       "scholarly": {
         "km2": 5400000,
         "year": 715,
@@ -724,11 +759,15 @@
         {
           "title": "Wikimedia Commons: The T'ang Dynasty 618-906 AD, boundaries of 700 AD (A. Herrmann, Atlas of China)",
           "url": "https://commons.wikimedia.org/wiki/File:The_T%27ang_Dynasty_618-906_AD_--_Boundaries_of_700_AD.jpg"
+        },
+        {
+          "title": "Wikipedia: Transition from Sui to Tang",
+          "url": "https://en.wikipedia.org/wiki/Transition_from_Sui_to_Tang"
         }
       ]
     },
     "Ming Dynasty": {
-      "note": "The map starts the Ming in 1375; it was proclaimed in 1368. Zhu Yuanzhang held Nanjing from 1356 and proclaimed the Ming there in 1368, but the map shows the Yuan (from 1369 the Northern Yuan) at Nanjing until 1374. Manchuria beyond Liaodong came under the Ming only after Naghachu surrendered in 1387, and the Later Jin took Fushun (1618) and Liaoyang and Shenyang (1621); the outline is cut to match. The Liaoxi corridor (Jinzhou, Ningyuan, Shanhaiguan) stayed Ming until 1642-44; it is cut out of the Qing outline until then, but the Ming outline does not cover it, so it is blank. The long arms to the lower Amur (the Nurgan command, 1409-35) and towards Hami were loose garrisons and tributary peoples rather than provinces.",
+      "note": "Zhu Yuanzhang held Nanjing from 1356 and proclaimed the Ming there on 23 January 1368; his armies took Dadu that September. The map draws the Ming from 1368 with its 1375 outline, so it runs slightly ahead of the conquest of Sichuan (1371), Gansu and Liaodong; Yunnan, held for the Yuan by Basalawarmi until 1381-82, is left blank. Manchuria beyond Liaodong came under the Ming only after Naghachu surrendered in 1387, and the Later Jin took Fushun (1618) and Liaoyang and Shenyang (1621); the outline is cut to match. The Liaoxi corridor (Jinzhou, Ningyuan, Shanhaiguan) stayed Ming until 1642-44; it is cut out of the Qing outline until then, but the Ming outline does not cover it, so it is blank. The long arms to the lower Amur (the Nurgan command, 1409-35) and towards Hami were loose garrisons and tributary peoples rather than provinces.",
       "scholarly": {
         "km2": 6500000,
         "year": 1450,
@@ -737,7 +776,7 @@
       "log": "east-asia.md",
       "crop": [
         {
-          "from": 1375,
+          "from": 1368,
           "to": 1386,
           "box": [
             70,
@@ -793,6 +832,10 @@
         {
           "title": "Wikipedia: Nurgan Regional Military Commission",
           "url": "https://en.wikipedia.org/wiki/Nurgan_Regional_Military_Commission"
+        },
+        {
+          "title": "Wikipedia: Northern Yuan",
+          "url": "https://en.wikipedia.org/wiki/Northern_Yuan"
         }
       ]
     },
@@ -1513,7 +1556,7 @@
       ]
     },
     "Roman Empire": {
-      "note": "Hadrian gave up Trajan's conquests east of the Euphrates (Armenia, Mesopotamia, Assyria) in 117; Rome did not hold a province of Mesopotamia again until Septimius Severus in 198. Hadrian gave up Trajan's conquests beyond the Euphrates in 117. Later sacks of Ctesiphon (165, 198, 283) were raids and not conquests. The map no longer draws Babylonia as Roman in those years, and after Jovian's treaty of 363 it leaves out Nisibis and the lands east of the Tigris. Zenobia's Palmyrene empire held Syria and Egypt in 270–271, so they are left blank, and the Gallic Empire, retaken by Aurelian in 274, is shown as Roman from 275. In 198 Severus made Nisibis the capital of a Roman province of Mesopotamia, but the map still draws it outside the empire.",
+      "note": "Hadrian gave up Trajan's conquests east of the Euphrates (Armenia, Mesopotamia, Assyria) in 117; Rome did not hold a province of Mesopotamia again until Septimius Severus in 198. Hadrian gave up Trajan's conquests beyond the Euphrates in 117. Later sacks of Ctesiphon (165, 198, 283) were raids and not conquests. The map no longer draws Babylonia as Roman in those years, and after Jovian's treaty of 363 it leaves out Nisibis and the lands east of the Tigris. Zenobia's Palmyrene empire held Syria and Egypt in 270–271, so they are left blank, and the Gallic Empire, retaken by Aurelian in 274, is shown as Roman from 275. In 198 Severus made Nisibis the capital of a Roman province of Mesopotamia, but the map still draws it outside the empire. Augustus gave Batanaea, Trachonitis and Auranitis to Herod in 22 BCE, so they are drawn as part of Judea until Herod's death in 4 BCE.",
       "sources": [
         {
           "title": "Mesopotamia (Roman province) (Wikipedia): evacuated 117 by Hadrian, re-established by Severus in 198",
@@ -1538,6 +1581,10 @@
         {
           "title": "Wikipedia: Gallic Empire",
           "url": "https://en.wikipedia.org/wiki/Gallic_Empire"
+        },
+        {
+          "title": "Wikipedia: Herod the Great",
+          "url": "https://en.wikipedia.org/wiki/Herod_the_Great"
         }
       ],
       "log": "reference check (refcheck-01.json)",
@@ -1602,6 +1649,16 @@
             21.0,
             40.5,
             37.5
+          ]
+        },
+        {
+          "from": -22,
+          "to": -4,
+          "box": [
+            35.7,
+            32.62,
+            36.95,
+            33.33
           ]
         }
       ]
@@ -2951,7 +3008,7 @@
       ]
     },
     "Weimar Republic": {
-      "note": "The Weimar Republic ended in 1933 when the Nazis took power; from then on Germany is the Third Reich. Northern Schleswig voted to join Denmark in 1920 and was transferred on 15 June 1920; it is no longer drawn as German.",
+      "note": "The Weimar Republic ended in 1933 when the Nazis took power; from then on Germany is the Third Reich. The border data's 1932–1935 shape is shown as Nazi Germany in 1934–1935 (Nazi Germany's own rows start only in 1936). Northern Schleswig voted to join Denmark in 1920 and was transferred on 15 June 1920; it is no longer drawn as German.",
       "sources": [
         {
           "title": "Wikipedia: Weimar Republic (\"from 9 November 1918 to 23 March 1933\")",
@@ -2960,23 +3017,35 @@
         {
           "title": "1920 Schleswig plebiscites (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/1920_Schleswig_plebiscites"
+        },
+        {
+          "title": "Wikipedia: Nazi Germany",
+          "url": "https://en.wikipedia.org/wiki/Nazi_Germany"
         }
       ],
       "clip": [
         1919,
-        1933
+        1935
       ],
       "log": "reference check (refcheck-07.json)",
       "cut": [
         {
           "from": 1920,
-          "to": 1933,
+          "to": 1935,
           "box": [
             8.6,
             54.84,
             10.2,
             55.6
           ]
+        }
+      ],
+      "relabel": [
+        {
+          "from": 1934,
+          "to": 1935,
+          "name": "Nazi Germany",
+          "key": "Nazi Germany"
         }
       ]
     },
@@ -3229,11 +3298,15 @@
       ]
     },
     "Sultanate of Muscat and Oman": {
-      "note": "The Qatar peninsula drawn here was never part of Muscat and Oman: from 1916 it was a separate British protectorate under the Al Thani. From 1920 the interior around Nizwa was ruled by the autonomous Imamate of Oman.",
+      "note": "Kuwait (1900–1921) and the Qatar peninsula (1916–1935), which the border data draws inside Muscat and Oman, were never part of it: they were British-protected sheikhdoms (Kuwait from the 1899 agreement, Qatar from the 1916 treaty) and are shown with the British shape. From 1920 the interior around Nizwa was ruled by the autonomous Imamate of Oman.",
       "sources": [
         {
           "title": "History of Qatar (Wikipedia): 1916 Anglo-Qatari treaty made Qatar a British protectorate",
           "url": "https://en.wikipedia.org/wiki/History_of_Qatar"
+        },
+        {
+          "title": "Wikipedia: Sheikhdom of Kuwait",
+          "url": "https://en.wikipedia.org/wiki/Sheikhdom_of_Kuwait"
         }
       ],
       "log": "reference check (refcheck-09.json)"
@@ -4473,17 +4546,21 @@
     "Later Jin": {
       "relabel": [
         {
-          "from": 911,
+          "from": 908,
           "to": 921,
           "name": "Former Jin",
           "key": "Former Jin"
         }
       ],
-      "note": "In 911-921 this outline is the Jin state of Li Keyong and Li Cunxu, based at Taiyuan, not the Later Jin dynasty of 936-947.",
+      "note": "In 908-921 this outline is the Jin state of Li Keyong and Li Cunxu, based at Taiyuan, not the Later Jin dynasty of 936-947.",
       "sources": [
         {
           "title": "Five Dynasties and Ten Kingdoms period (Wikipedia): Later Liang 907-923, Jin at Taiyuan, Later Tang 923, Later Jin 936-947, Later Han 947-951, Later Zhou 951-960",
           "url": "https://en.wikipedia.org/wiki/Five_Dynasties_and_Ten_Kingdoms_period"
+        },
+        {
+          "title": "Wikipedia: Jin (Later Tang precursor)",
+          "url": "https://en.wikipedia.org/wiki/Jin_(Later_Tang_precursor)"
         }
       ],
       "log": "border review (border-review-east-asia.json)"
@@ -4560,7 +4637,7 @@
           ]
         }
       ],
-      "note": "Wu's capital Jianye fell to the Jin in 280, ending the Three Kingdoms.",
+      "note": "Sun Quan held Jiao Province (Guangdong, Guangxi, northern Vietnam) from 210 and took southern Jing Province (Hunan) from Liu Bei in 219-220; the map draws Wu with these from 220 (the border data gives them to the Han until 237). Wu's capital Jianye fell to the Jin in 280, ending the Three Kingdoms.",
       "sources": [
         {
           "title": "Three Kingdoms (Wikipedia): Wei 220 (Luoyang), Shu 221 (Chengdu), Wu at Jianye; Shu fell 263, Jin 266, Wu fell 280",
@@ -4569,6 +4646,18 @@
         {
           "title": "Jin dynasty (266-420) (Wikipedia): Luoyang sacked 311, Chang'an taken 316; Eastern Jin at Jiankang 317-420; Liu Song 420",
           "url": "https://en.wikipedia.org/wiki/Jin_dynasty_(266%E2%80%93420)"
+        },
+        {
+          "title": "Wikipedia: Eastern Wu",
+          "url": "https://en.wikipedia.org/wiki/Eastern_Wu"
+        },
+        {
+          "title": "Wikipedia: Bu Zhi",
+          "url": "https://en.wikipedia.org/wiki/Bu_Zhi"
+        },
+        {
+          "title": "Wikipedia: Lü Meng's invasion of Jing Province",
+          "url": "https://en.wikipedia.org/wiki/L%C3%BC_Meng%27s_invasion_of_Jing_Province"
         }
       ],
       "log": "border review (border-review-east-asia.json)"
@@ -9976,6 +10065,41 @@
         }
       ],
       "log": "content/factcheck/sa-earlymodern.md (Rajputana, 2026-11)"
+    },
+    "Papua New Guinea": {
+      "relabel": [
+        {
+          "from": 1946,
+          "to": 1974,
+          "name": "Commonwealth of Australia",
+          "key": "Commonwealth of Australia",
+          "addTo": [
+            "Commonwealth of Australia"
+          ]
+        }
+      ],
+      "note": "Papua and New Guinea were Australian territories (in an administrative union from 1945–46, as the Territory of Papua and New Guinea from 1 July 1949) until independence on 16 September 1975; in 1946–1974 the shape is shown as Australian.",
+      "sources": [
+        {
+          "title": "Wikipedia: Territory of Papua and New Guinea",
+          "url": "https://en.wikipedia.org/wiki/Territory_of_Papua_and_New_Guinea"
+        },
+        {
+          "title": "Wikipedia: Territory of New Guinea",
+          "url": "https://en.wikipedia.org/wiki/Territory_of_New_Guinea"
+        }
+      ],
+      "log": "COW and CShapes cross-checks (cow-check.md §0, cshapes-check.md)"
+    },
+    "Italian Africa": {
+      "note": "In 1950–1959 the shape in Somalia is the UN Trust Territory of Somaliland, administered by Italy from 1 April 1950 until it joined British Somaliland as the Somali Republic on 1 July 1960.",
+      "sources": [
+        {
+          "title": "Wikipedia: Trust Territory of Somaliland",
+          "url": "https://en.wikipedia.org/wiki/Trust_Territory_of_Somaliland"
+        }
+      ],
+      "log": "COW and CShapes cross-checks (cow-check.md §0, cshapes-check.md)"
     }
   },
   "base": {

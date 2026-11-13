@@ -674,6 +674,12 @@ def main():
       "atlas is wrong by the historical record. *COW coding*: the atlas is right and COW's date or parties are a "
       "convention or a slip. *Ambiguous*: both are defensible readings.")
     w("")
+    w("Fixed on 2026-11-13 in content/borders/patches.json and content/corrections.json: Kaiser-Wilhelmsland and "
+      "Papua (papua-new-guinea-australian), Kuwait and Qatar (kuwait-qatar-not-omani), East Upper Silesia "
+      "(east-upper-silesia-1922-1939), Luxembourg (luxembourg-not-dutch), Mahdist Sudan (mahdist-state-1885), Papua "
+      "New Guinea before 1975 (relabelled as Australia) and Somaliland 1950-59 (somaliland-trust-territory-1950-1959); "
+      "the verdicts below are kept as found.")
+    w("")
     w("| # | Finding | COW | Atlas | Source checked | Verdict |")
     w("|---|---|---|---|---|---|")
     for i, v in enumerate(VERIFIED, 1):
