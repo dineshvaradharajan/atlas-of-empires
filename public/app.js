@@ -467,7 +467,7 @@ const corrOf = (key) => S.corr.realms[key] || null;
 // (e.g. Sangam-age Tamilakam). Regions are clipped to the coastline when drawn and marked as reconstructed.
 function prepareSupplements(list) {
   S.reconKeys = new Set(list.flatMap((sp) => sp.regions.map((rg) => rg.key || rg.name)));
-  S.reconName = new Map();
+  S.reconName = new Map(); S.reconTl = {};
   for (const sp of list) for (const rg of sp.regions) if (rg.key && rg.key !== rg.name && !S.reconName.has(rg.key)) S.reconName.set(rg.key, rg.name);
   for (const sp of list) {
     sp.feats = sp.regions.map((rg) => {
@@ -482,6 +482,7 @@ function prepareSupplements(list) {
       const R = S.clio.realms;
       if (!R[rg.name]) R[rg.name] = { tl: [], recon: { sp, rg } };
       R[rg.name].tl.push([f, t, area]); R[rg.name].tl.sort((a, b) => a[0] - b[0]);
+      if (rg.key && rg.key !== rg.name) (S.reconTl[rg.key] ||= []).push([f, t, area]); // for journeys that follow a region key
       return feat;
     });
   }
@@ -2039,6 +2040,8 @@ function realmHTML() {
     if (rg.rulers?.length) h += `<p><strong>Rulers named in the sources:</strong> ${rg.rulers.map((x) => `${esc(x.name)}${x.when ? ` (${esc(x.when)})` : ""}`).join("; ")}</p>`;
     if (rg.attested) h += `<p><strong>Attested in:</strong> ${esc(rg.attested)}</p>`;
     h += `</aside>`;
+    const rj = journeyForRealm(rg.key || rg.name);
+    if (rj) h += `<button class="pillbtn dark block" data-journey="${esc(rj.id)}">${I.book}Follow ${esc(rj.name)} through its history</button>`;
     if (sp.summary) h += `<h3 class="sec">${esc(sp.title)}</h3><p class="prose">${esc(sp.summary)}</p>`;
     h += sourcesList(sp.sources);
     return h;
@@ -2896,7 +2899,9 @@ const chainAll = (j, y) => j.chain.filter((c) => c.from <= y && y <= c.to);
 const chainAt = (j, y) => chainAll(j, y)[0] || null;
 const chainKeys = (j, y) => new Set(chainAll(j, y).map((c) => c.clio));
 const inJourney = (it, y = S.year) => { if (!S.journey || it.kind !== "state") return false; const ks = chainKeys(S.journey, y); return ks.has(it.p.n) || ks.has(it.p.k); };
-const journeyArea = (j, y) => chainAll(j, y).reduce((sum, c) => sum + areaAt(c.clio, y), 0);
+// a stage can name a reconstruction region key (several regions, e.g. "Chera Perumals") instead of a realm
+const keyAreaAt = (key, y) => areaAt(key, y) || (S.reconTl?.[key] || []).reduce((s, [f, t, a]) => s + (f <= y && y <= t ? a : 0), 0);
+const journeyArea = (j, y) => chainAll(j, y).reduce((sum, c) => sum + keyAreaAt(c.clio, y), 0);
 function journeyRings(j) { // years whose borders are drawn as fading "growth rings"
   const [a, b] = j.span, n = Math.min(12, Math.max(4, Math.round((b - a) / 25)));
   return [...new Set(Array.from({ length: n }, (_, i) => Math.round(a + (i * (b - a)) / (n - 1))))];

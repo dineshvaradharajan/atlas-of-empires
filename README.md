@@ -29,8 +29,8 @@ python3 -I tools/build.py        # historical-basemaps snapshots -> public/data/
 python3 -I tools/build_clio.py   # Cliopatria -> public/data/clio/<chunk>.json + index.json (state borders)
 python3 -I tools/build_patches.py <ne_10m_admin_0_countries.geojson> # content/borders/patches.json: sourced fixes to rows before 1992
 python3 -I tools/build_modern.py <ne_10m_admin_0_countries.geojson>  # Natural Earth -> clio/1992.json (borders from 1992 to today)
-python3 -I tools/placeindex.py   # border chunks -> public/data/place/ ("this place through time")
 python3 -I tools/content.py      # content/eras + content/empires -> public/data/content.json, links to Cliopatria
+python3 -I tools/placeindex.py   # borders as drawn (corrections + reconstruction layers) -> public/data/place/ ("this place through time")
 python3 -I tools/commons.py      # Wikimedia Commons reference maps -> public/data/commons.json
 python3 -I tools/seo.py          # plain HTML pages, sitemaps and llms.txt for search engines (deploy.sh runs it; not committed)
 ```
