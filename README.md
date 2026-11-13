@@ -40,6 +40,11 @@ come from the `geojson/` folder of [natural-earth-vector](https://github.com/nvk
 by path. Run the three border steps in this order: `build_clio.py` rewrites the files the other two edit, and
 `build_patches.py` refuses to run twice. `PRESENT` in `build_modern.py` is the map's last year.
 
+## Contributing
+
+Found a wrong border, date or fact? [Open an issue](https://github.com/dineshvaradharajan/atlas-of-empires/issues/new/choose)
+with a source, or send a pull request; see [CONTRIBUTING.md](CONTRIBUTING.md). Only the maintainer merges into `main` and deploys the site.
+
 ## Sources and licences
 
 | What | Source | Licence |

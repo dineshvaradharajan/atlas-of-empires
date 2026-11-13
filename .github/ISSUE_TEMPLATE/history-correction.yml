@@ -1,0 +1,30 @@
+name: History text correction
+description: A wrong fact, ruler, date or spelling in a chapter, realm profile, war or moment.
+title: "Text: <what>, <year>"
+labels: ["history text", "needs source check"]
+body:
+  - type: input
+    id: link
+    attributes:
+      label: Link to the page or map view
+      placeholder: https://www.worldatlas.site/#1683/Ottoman Empire
+    validations:
+      required: true
+  - type: textarea
+    id: quote
+    attributes:
+      label: The text as it reads now
+    validations:
+      required: true
+  - type: textarea
+    id: fix
+    attributes:
+      label: What it should say
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Source
+    validations:
+      required: true

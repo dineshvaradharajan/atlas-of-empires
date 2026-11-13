@@ -1,0 +1,14 @@
+name: Suggestion
+description: A feature, a missing realm or people, or anything else that would make the atlas better.
+labels: ["suggestion"]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your suggestion
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why it would help, and any sources or examples

@@ -1,0 +1,38 @@
+name: Border or date fix
+description: A realm drawn in the wrong place, at the wrong size, in the wrong years or under the wrong name.
+title: "Border: <realm>, <year>"
+labels: ["border", "needs source check"]
+body:
+  - type: input
+    id: link
+    attributes:
+      label: Link to what you saw
+      description: Copy the address from the map, e.g. https://www.worldatlas.site/#1683/Ottoman Empire
+    validations:
+      required: true
+  - type: input
+    id: realm
+    attributes:
+      label: Realm or place
+    validations:
+      required: true
+  - type: input
+    id: years
+    attributes:
+      label: Year or years affected
+      placeholder: e.g. 1871 or 1919-1939
+    validations:
+      required: true
+  - type: textarea
+    id: wrong
+    attributes:
+      label: What is wrong, and what it should be
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Source
+      description: A book, paper, atlas or referenced article that supports the fix (page or map number if you have it).
+    validations:
+      required: true
