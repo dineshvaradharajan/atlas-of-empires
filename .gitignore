@@ -21,3 +21,9 @@ public/404.html
 
 # CShapes 2.0 (CC BY-NC-SA 4.0), raw source for tools/check_cshapes.py: re-fetch with the steps in its header
 data/cshapes/
+
+# Reference datasets for cross-checking borders (raw sources; not published, not committed):
+# Correlates of War Territorial Change v6 (1816-2018; free with citation): https://correlatesofwar.org/wp-content/uploads/terr-changes-v6.zip
+data/cow-territorial/
+# Ancient World Mapping Center geodata (ODbL 1.0; Roman provinces, Alexander, Persia...): git clone --depth 1 https://github.com/AWMC/geodata.git data/awmc
+data/awmc/
