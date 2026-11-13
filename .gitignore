@@ -27,3 +27,7 @@ data/cshapes/
 data/cow-territorial/
 # Ancient World Mapping Center geodata (ODbL 1.0; Roman provinces, Alexander, Persia...): git clone --depth 1 https://github.com/AWMC/geodata.git data/awmc
 data/awmc/
+# CHGIS V6 time-series prefecture polygons, 221 BCE-1911 (non-commercial academic/educational use only; no
+# redistribution; cite "CHGIS Version 6." (c) Fairbank Center for Chinese Studies and the Institute for Chinese
+# Historical Geography at Fudan University, Dec 2016): https://dataverse.harvard.edu/api/access/datafile/2966510
+data/chgis/
