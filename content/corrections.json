@@ -836,6 +836,22 @@
         {
           "title": "Wikipedia: Northern Yuan",
           "url": "https://en.wikipedia.org/wiki/Northern_Yuan"
+        },
+        {
+          "title": "Wikipedia: Three Guards",
+          "url": "https://en.wikipedia.org/wiki/Three_Guards"
+        }
+      ],
+      "cut": [
+        {
+          "from": 1403,
+          "to": 1515,
+          "box": [
+            113.5,
+            41.8,
+            122.8,
+            47.0
+          ]
         }
       ]
     },
@@ -1529,6 +1545,14 @@
         {
           "title": "Wikipedia: Kingdom of Libya",
           "url": "https://en.wikipedia.org/wiki/Kingdom_of_Libya"
+        },
+        {
+          "title": "Wikipedia: Kufra",
+          "url": "https://en.wikipedia.org/wiki/Kufra"
+        },
+        {
+          "title": "Wikipedia: Italian Libya",
+          "url": "https://en.wikipedia.org/wiki/Italian_Libya"
         }
       ],
       "log": "reference check (refcheck-01.json)",
@@ -1551,6 +1575,16 @@
             19.4,
             25.2,
             33.3
+          ]
+        },
+        {
+          "from": 1922,
+          "to": 1929,
+          "box": [
+            9.0,
+            21.89,
+            25.0,
+            34.0
           ]
         }
       ]

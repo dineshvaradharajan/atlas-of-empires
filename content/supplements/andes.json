@@ -1,0 +1,73 @@
+{
+ "id": "andes",
+ "title": "Andean states before the Inca, 500–1000",
+ "from": 500,
+ "to": 1000,
+ "replaces": [],
+ "summary": "Two states dominated the central Andes in the Middle Horizon (c. 600–1000). Wari, from its capital near Ayacucho, built administrative centres along the highlands from Viracochapampa in the north to Pikillacta near Cusco and a colony at Cerro Baúl in Moquegua. Tiwanaku, on the southern shore of Lake Titicaca, ruled the altiplano around the lake and kept colonies in the Moquegua valley and trade links as far as San Pedro de Atacama. Both declined around 1000. Their extent comes from archaeology: no written records survive.",
+ "dataNote": "The border data draws neither state. These are conservative outlines of each core, drawn from the distribution of their administrative centres; outlying colonies and trade partners are left out.",
+ "sites": [
+  {
+   "name": "Huari",
+   "lonlat": [-74.2, -13.06],
+   "what": "capital of Wari"
+  },
+  {
+   "name": "Pikillacta",
+   "lonlat": [-71.7, -13.6],
+   "what": "Wari administrative centre"
+  },
+  {
+   "name": "Viracochapampa",
+   "lonlat": [-78.03, -7.83],
+   "what": "Wari administrative centre (unfinished)"
+  },
+  {
+   "name": "Tiwanaku",
+   "lonlat": [-68.67, -16.55],
+   "what": "capital of Tiwanaku"
+  }
+ ],
+ "regions": [
+  {
+   "name": "Wari Empire",
+   "key": "Wari Empire",
+   "kind": "empire",
+   "from": 600,
+   "to": 1000,
+   "capital": "Huari (near Ayacucho)",
+   "note": "Highland state of the central Andes in the Middle Horizon, centred on its capital near Ayacucho. Its planned administrative centres at Pikillacta, Viracochapampa and Honcopampa and its road network foreshadowed the Inca. It declined around 1000. Source: Wikipedia 'Wari culture'.",
+   "dataNote": "Highland core from Viracochapampa to Pikillacta; the Moquegua colony (Cerro Baúl) and the coast are left out. Dates and extent from archaeology; approximate.",
+   "coords": [[-78.3, -7.4], [-77.5, -7.35], [-76.8, -8.8], [-75.9, -10.5], [-75.0, -11.7], [-73.9, -12.5], [-72.6, -12.95], [-71.5, -13.25], [-71.3, -13.9], [-72.1, -14.35], [-73.4, -14.3], [-74.6, -14.0], [-75.5, -13.4], [-76.2, -12.4], [-76.9, -11.0], [-77.7, -9.5], [-78.5, -8.2], [-78.3, -7.4]]
+  },
+  {
+   "name": "Tiwanaku",
+   "key": "Tiwanaku",
+   "kind": "state",
+   "from": 500,
+   "to": 1000,
+   "capital": "Tiwanaku",
+   "note": "State of the Lake Titicaca basin, centred on the ceremonial city of Tiwanaku south of the lake, which drew on raised-field farming and llama caravans. It held colonies in the Moquegua valley and traded with San Pedro de Atacama and Cochabamba, and collapsed around 1000, perhaps after a long drought. Source: Wikipedia 'Tiwanaku'.",
+   "dataNote": "Core around the lake and the southern altiplano; the Moquegua and Cochabamba colonies are left out. Dates and extent from archaeology; approximate.",
+   "coords": [[-69.95, -15.55], [-69.1, -15.25], [-68.45, -15.75], [-67.85, -16.6], [-67.65, -17.55], [-68.25, -18.15], [-69.05, -17.9], [-69.7, -17.3], [-70.1, -16.5], [-69.95, -15.55]]
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Wari culture",
+   "url": "https://en.wikipedia.org/wiki/Wari_culture"
+  },
+  {
+   "title": "Wikipedia: Tiwanaku",
+   "url": "https://en.wikipedia.org/wiki/Tiwanaku"
+  },
+  {
+   "title": "Wikipedia: Middle Horizon",
+   "url": "https://en.wikipedia.org/wiki/Middle_Horizon"
+  },
+  {
+   "title": "Wikipedia: Pikillacta",
+   "url": "https://en.wikipedia.org/wiki/Pikillacta"
+  }
+ ]
+}

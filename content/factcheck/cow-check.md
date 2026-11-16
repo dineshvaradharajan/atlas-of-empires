@@ -1,6 +1,6 @@
 # Dated territorial changes cross-checked against Correlates of War (1816–1991)
 
-Written by `tools/check_cow.py` on 2026-11-13. Read-only: nothing in the atlas was changed.
+Written by `tools/check_cow.py` on 2026-11-16. Read-only: nothing in the atlas was changed.
 
 The Correlates of War (COW) Territorial Change dataset v6 lists every transfer of territory involving at least one COW state from 1816 to 2018, with the year and month, the gaining and losing entity, the territory's area and whether it was an independence. It records no shapes, so this report tests *when* the atlas moves a territory and *to whom*, not where the borders run (for borders see `cshapes-check.md`, 1886–1991).
 
@@ -82,7 +82,7 @@ The atlas shows the gainer taking the point, but in another year. *Error* = atla
 | 33 | 1888 | 310 | French West Africa: French Sudan (Kita, approx.) (13.00°N 9.00°W) | France ← — | 635,821 | nothing drawn (1879) | French Africa (1889) | 1880 | -8 |
 | 34 | 1849-12 | 106 | Kashmir: Kashmir valley (34.10°N 74.80°E) | United Kingdom ← Kashmir | 259,000 | Kashmir and Jammu (1857) | Kashmir and Jammu (1850) | 1858 | +8 |
 | 35 | 1924-10 | 543 | Rwanda-Urundi (2.80°S 29.80°E) | Belgium ← Germany | 54,222 | German Africa (1915) | Belgian Congo (1925) | 1916 | -8 |
-| 36 | 1926-06 | 550 | Iraq (Mesopotamia): Mosul (36.30°N 43.50°E) | United Kingdom ← Turkey | 91,009 | Ottoman Empire (1918) | British Africa (1927) | 1919 | -7 |
+| 36 | 1926-06 | 550 | Iraq (Mesopotamia): Mosul (36.30°N 43.50°E) | United Kingdom ← Turkey | 91,009 | Ottoman Empire (1918) | British Colonial Empire (1927) | 1919 | -7 |
 | 37 | 1867 | 181 | Cochin China: western Cochin China (10.40°N 105.40°E) | France ← Vietnam (Annam) | 33,864 | nothing drawn (1859) | French Indochina (1868) | 1860 | -7 |
 | 38 | 1954-08 | 895 | Portugal: Dadra and Nagar Haveli (20.20°N 73.00°E) | India ← Portugal | 491 | British Raj (1946) | Republic of India (1955) | 1947 | -7 |
 | 39 | 1854 | 121 | Union of Soviet Socialist Republics / Russia: Kazakh steppe (approx.) (49.00°N 70.00°E) | Russia ← — | 1,820,000 | Kazakh Khanate (1847) | Russian Empire (1855) | 1848 | -6 |

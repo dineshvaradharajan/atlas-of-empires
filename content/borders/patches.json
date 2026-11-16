@@ -5896,6 +5896,984 @@
      "url": "https://en.wikipedia.org/wiki/Trust_Territory_of_Somaliland"
     }
    ]
+  },
+  {
+   "id": "mexico-1913-1919",
+   "note": "The border data has no row for Mexico from 1913 to 1919, so the whole country was blank during the later years of the Revolution (Huerta's coup of February 1913, the Constitutionalist war, Carranza's government from 1914 and the Constitution of 1917). The revolutionary factions fought over the government, not over Mexico's borders, which did not change. Mexico's 1912 outline is copied into 1913-1919.",
+   "ops": [
+    {
+     "op": "copy",
+     "realm": "Mexico",
+     "years": [
+      1913,
+      1919
+     ],
+     "year": 1912
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Mexican Revolution",
+     "url": "https://en.wikipedia.org/wiki/Mexican_Revolution"
+    },
+    {
+     "title": "Wikipedia: Victoriano Huerta",
+     "url": "https://en.wikipedia.org/wiki/Victoriano_Huerta"
+    },
+    {
+     "title": "Wikipedia: Venustiano Carranza",
+     "url": "https://en.wikipedia.org/wiki/Venustiano_Carranza"
+    }
+   ]
+  },
+  {
+   "id": "mongolia-1920-1921",
+   "note": "Chinese troops under Xu Shuzheng occupied Urga in October 1919 and Mongolia's autonomy was abolished on 22 November 1919. Baron Ungern-Sternberg took Urga on 4 February 1921 and restored the Bogd Khan, and the Mongolian People's Party and Soviet troops took Urga on 6 July 1921, keeping the Bogd Khan as a limited monarch until his death in 1924. The border data draws the Great Mongol State to 1919 and from 1922 and nothing in 1920-1921. For 1920 the 1919 outline goes to the Republic of China (stored as the Kuomintang row, which the corrections layer labels Republic of China in 1917-1929); for 1921 the Great Mongol State's 1922 outline is used.",
+   "ops": [
+    {
+     "op": "add_parts",
+     "realm": "Kuomintang",
+     "years": [
+      1920,
+      1920
+     ],
+     "from": "Great Mongol State",
+     "year": 1919
+    },
+    {
+     "op": "copy",
+     "realm": "Great Mongol State",
+     "years": [
+      1921,
+      1921
+     ],
+     "year": 1922
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Occupation of Mongolia",
+     "url": "https://en.wikipedia.org/wiki/Occupation_of_Mongolia"
+    },
+    {
+     "title": "Wikipedia: Bogd Khanate of Mongolia",
+     "url": "https://en.wikipedia.org/wiki/Bogd_Khanate_of_Mongolia"
+    },
+    {
+     "title": "Wikipedia: Mongolian Revolution of 1921",
+     "url": "https://en.wikipedia.org/wiki/Mongolian_Revolution_of_1921"
+    }
+   ]
+  },
+  {
+   "id": "canada-north-west-1870-1910",
+   "note": "Canada acquired Rupert's Land and the North-Western Territory from the Hudson's Bay Company on 15 July 1870 (Manitoba was created the same day), British Columbia joined in 1871 and Britain transferred the Arctic islands in 1880. The border data draws British North America in 1870-1910 as a southern band that grows slowly north, leaving the North-West Territories, the Yukon and the northern prairies blank until 1911. For 1870-1910 the mainland piece of the British shape (the one containing Ottawa) is replaced by its 1911 outline. Rupert's Land before 1870 (a Hudson's Bay Company charter territory) is left as the data draws it.",
+   "ops": [
+    {
+     "op": "drop_at",
+     "realm": "British Colonial Empire",
+     "years": [
+      1870,
+      1910
+     ],
+     "at": [
+      [
+       -75.7,
+       45.4
+      ]
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "British Colonial Empire",
+     "years": [
+      1870,
+      1910
+     ],
+     "from": "British Colonial Empire",
+     "year": 1911,
+     "at": [
+      [
+       -75.7,
+       45.4
+      ]
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Rupert's Land Act 1868",
+     "url": "https://en.wikipedia.org/wiki/Rupert's_Land_Act_1868"
+    },
+    {
+     "title": "Wikipedia: Northwest Territories",
+     "url": "https://en.wikipedia.org/wiki/Northwest_Territories"
+    },
+    {
+     "title": "Wikipedia: Adjacent Territories Order",
+     "url": "https://en.wikipedia.org/wiki/Adjacent_Territories_Order"
+    }
+   ]
+  },
+  {
+   "id": "mandates-not-british-africa",
+   "note": "The League of Nations mandates of Palestine, Transjordan and Iraq (assigned at San Remo in 1920, in force from 1922-1923; Iraq independent in October 1932) are drawn in 1922-1945 as a separate piece of the British Africa shape, so the map named them British Africa. The piece moves to the British shape the data uses for them in 1921 and 1946. It still includes Iraq in 1943-1945, which the data draws as British after the 1941 war.",
+   "ops": [
+    {
+     "op": "add_parts",
+     "realm": "British Colonial Empire",
+     "years": [
+      1922,
+      1925
+     ],
+     "from": "British Africa",
+     "year": 1922,
+     "at": [
+      [
+       35.2,
+       31.8
+      ]
+     ]
+    },
+    {
+     "op": "drop_at",
+     "realm": "British Africa",
+     "years": [
+      1922,
+      1925
+     ],
+     "at": [
+      [
+       35.2,
+       31.8
+      ]
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "British Colonial Empire",
+     "years": [
+      1926,
+      1926
+     ],
+     "from": "British Africa",
+     "year": 1926,
+     "at": [
+      [
+       35.2,
+       31.8
+      ]
+     ]
+    },
+    {
+     "op": "drop_at",
+     "realm": "British Africa",
+     "years": [
+      1926,
+      1926
+     ],
+     "at": [
+      [
+       35.2,
+       31.8
+      ]
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "British Colonial Empire",
+     "years": [
+      1927,
+      1929
+     ],
+     "from": "British Africa",
+     "year": 1927,
+     "at": [
+      [
+       35.2,
+       31.8
+      ]
+     ]
+    },
+    {
+     "op": "drop_at",
+     "realm": "British Africa",
+     "years": [
+      1927,
+      1929
+     ],
+     "at": [
+      [
+       35.2,
+       31.8
+      ]
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "British Colonial Empire",
+     "years": [
+      1930,
+      1931
+     ],
+     "from": "British Africa",
+     "year": 1930,
+     "at": [
+      [
+       35.2,
+       31.8
+      ]
+     ]
+    },
+    {
+     "op": "drop_at",
+     "realm": "British Africa",
+     "years": [
+      1930,
+      1931
+     ],
+     "at": [
+      [
+       35.2,
+       31.8
+      ]
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "British Colonial Empire",
+     "years": [
+      1932,
+      1935
+     ],
+     "from": "British Africa",
+     "year": 1932,
+     "at": [
+      [
+       35.2,
+       31.8
+      ]
+     ]
+    },
+    {
+     "op": "drop_at",
+     "realm": "British Africa",
+     "years": [
+      1932,
+      1935
+     ],
+     "at": [
+      [
+       35.2,
+       31.8
+      ]
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "British Colonial Empire",
+     "years": [
+      1940,
+      1940
+     ],
+     "from": "British Africa",
+     "year": 1940,
+     "at": [
+      [
+       35.2,
+       31.8
+      ]
+     ]
+    },
+    {
+     "op": "drop_at",
+     "realm": "British Africa",
+     "years": [
+      1940,
+      1940
+     ],
+     "at": [
+      [
+       35.2,
+       31.8
+      ]
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "British Colonial Empire",
+     "years": [
+      1941,
+      1941
+     ],
+     "from": "British Africa",
+     "year": 1941,
+     "at": [
+      [
+       35.2,
+       31.8
+      ]
+     ]
+    },
+    {
+     "op": "drop_at",
+     "realm": "British Africa",
+     "years": [
+      1941,
+      1941
+     ],
+     "at": [
+      [
+       35.2,
+       31.8
+      ]
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "British Colonial Empire",
+     "years": [
+      1942,
+      1942
+     ],
+     "from": "British Africa",
+     "year": 1942,
+     "at": [
+      [
+       35.2,
+       31.8
+      ]
+     ]
+    },
+    {
+     "op": "drop_at",
+     "realm": "British Africa",
+     "years": [
+      1942,
+      1942
+     ],
+     "at": [
+      [
+       35.2,
+       31.8
+      ]
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "British Colonial Empire",
+     "years": [
+      1943,
+      1943
+     ],
+     "from": "British Africa",
+     "year": 1943,
+     "at": [
+      [
+       35.2,
+       31.8
+      ]
+     ]
+    },
+    {
+     "op": "drop_at",
+     "realm": "British Africa",
+     "years": [
+      1943,
+      1943
+     ],
+     "at": [
+      [
+       35.2,
+       31.8
+      ]
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "British Colonial Empire",
+     "years": [
+      1944,
+      1944
+     ],
+     "from": "British Africa",
+     "year": 1944,
+     "at": [
+      [
+       35.2,
+       31.8
+      ]
+     ]
+    },
+    {
+     "op": "drop_at",
+     "realm": "British Africa",
+     "years": [
+      1944,
+      1944
+     ],
+     "at": [
+      [
+       35.2,
+       31.8
+      ]
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "British Colonial Empire",
+     "years": [
+      1945,
+      1945
+     ],
+     "from": "British Africa",
+     "year": 1945,
+     "at": [
+      [
+       35.2,
+       31.8
+      ]
+     ]
+    },
+    {
+     "op": "drop_at",
+     "realm": "British Africa",
+     "years": [
+      1945,
+      1945
+     ],
+     "at": [
+      [
+       35.2,
+       31.8
+      ]
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Mandate for Palestine",
+     "url": "https://en.wikipedia.org/wiki/Mandate_for_Palestine"
+    },
+    {
+     "title": "Wikipedia: Emirate of Transjordan",
+     "url": "https://en.wikipedia.org/wiki/Emirate_of_Transjordan"
+    },
+    {
+     "title": "Wikipedia: Mandatory Iraq",
+     "url": "https://en.wikipedia.org/wiki/Mandatory_Iraq"
+    }
+   ]
+  },
+  {
+   "id": "kufra-italian-libya-1922-1929",
+   "note": "Italy claimed all of Libya under the Treaty of Ouchy (1912); the Senussi held the Kufra oases until Graziani took them in January 1931. The Italo-Egyptian agreement of 6 December 1925 fixed the frontier on 25 E and gave Jaghbub to Italy, and Anglo-Egyptian Sudan ended at 22 N. The border data nevertheless draws the Kufra region (south-east Libya, about 470,000 km2) inside British Africa until 1929. For 1922-1929 Italian Libya takes its 1930 outline (so Jaghbub appears from 1922, three years early) and the corrections layer cuts British Africa west of 25 E and north of 21.89 N, the line the data uses from 1930. Before 1922, when the British shape still includes Egypt and the Egyptian frontier was undefined, it is left as it is.",
+   "ops": [
+    {
+     "op": "drop_at",
+     "realm": "Italian Africa",
+     "years": [
+      1922,
+      1929
+     ],
+     "at": [
+      [
+       13.2,
+       32.9
+      ]
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Italian Africa",
+     "years": [
+      1922,
+      1929
+     ],
+     "from": "Italian Africa",
+     "year": 1930,
+     "at": [
+      [
+       13.2,
+       32.9
+      ]
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Italian Libya",
+     "url": "https://en.wikipedia.org/wiki/Italian_Libya"
+    },
+    {
+     "title": "Wikipedia: Kufra",
+     "url": "https://en.wikipedia.org/wiki/Kufra"
+    },
+    {
+     "title": "Wikipedia: Jaghbub",
+     "url": "https://en.wikipedia.org/wiki/Jaghbub"
+    }
+   ]
+  },
+  {
+   "id": "ming-north-of-frontier-1403-1515",
+   "note": "The Yongle Emperor withdrew the Daning command north of the Great Wall in 1403 and left the land to the Uriankhai Mongols (the Three Guards), and the Kaiping garrison at the old Yuan capital Shangdu was pulled back to Dushikou in 1430. The border data nevertheless draws the Ming north to about 46 N between the Ordos and the Liao river (Horqin, Jirem, Shangdu) until 1515. The corrections layer cuts the Ming outline in 113.5-122.8 E, 41.8-47 N for 1403-1515 (Liaodong and the Jurchen guards east of it are kept), and that part of the outline goes to the Mongol realm the data draws immediately to the north in each year.",
+   "ops": [
+    {
+     "op": "add_parts",
+     "realm": "Northern Yuan",
+     "years": [
+      1403,
+      1406
+     ],
+     "coords": [
+      [
+       [
+        122.8,
+        41.8
+       ],
+       [
+        113.5,
+        41.8
+       ],
+       [
+        113.5,
+        43.7537
+       ],
+       [
+        114.3,
+        43.93
+       ],
+       [
+        115.31,
+        44.39
+       ],
+       [
+        116.44,
+        44.52
+       ],
+       [
+        118.73,
+        45.43
+       ],
+       [
+        120.33,
+        45.56
+       ],
+       [
+        121.92,
+        45.69
+       ],
+       [
+        122.8,
+        45.9281
+       ]
+      ]
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Northern Yuan",
+     "years": [
+      1407,
+      1414
+     ],
+     "coords": [
+      [
+       [
+        122.8,
+        41.8
+       ],
+       [
+        113.5,
+        41.8
+       ],
+       [
+        113.5,
+        43.7537
+       ],
+       [
+        114.3,
+        43.93
+       ],
+       [
+        115.31,
+        44.39
+       ],
+       [
+        116.44,
+        44.52
+       ],
+       [
+        118.73,
+        45.43
+       ],
+       [
+        120.33,
+        45.56
+       ],
+       [
+        121.92,
+        45.69
+       ],
+       [
+        122.8,
+        45.9281
+       ]
+      ]
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Northern Yuan",
+     "years": [
+      1415,
+      1421
+     ],
+     "coords": [
+      [
+       [
+        122.8,
+        41.8
+       ],
+       [
+        113.5,
+        41.8
+       ],
+       [
+        113.5,
+        43.7537
+       ],
+       [
+        114.3,
+        43.93
+       ],
+       [
+        115.31,
+        44.39
+       ],
+       [
+        116.44,
+        44.52
+       ],
+       [
+        118.73,
+        45.43
+       ],
+       [
+        120.33,
+        45.56
+       ],
+       [
+        121.92,
+        45.69
+       ],
+       [
+        122.8,
+        45.9281
+       ]
+      ]
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Northern Yuan",
+     "years": [
+      1422,
+      1428
+     ],
+     "coords": [
+      [
+       [
+        122.8,
+        41.8
+       ],
+       [
+        113.5,
+        41.8
+       ],
+       [
+        113.5,
+        43.7537
+       ],
+       [
+        114.3,
+        43.93
+       ],
+       [
+        115.31,
+        44.39
+       ],
+       [
+        116.44,
+        44.52
+       ],
+       [
+        118.73,
+        45.43
+       ],
+       [
+        120.33,
+        45.56
+       ],
+       [
+        121.92,
+        45.69
+       ],
+       [
+        122.8,
+        45.9281
+       ]
+      ]
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Northern Yuan",
+     "years": [
+      1429,
+      1439
+     ],
+     "coords": [
+      [
+       [
+        122.8,
+        41.8
+       ],
+       [
+        113.5,
+        41.8
+       ],
+       [
+        113.5,
+        43.7537
+       ],
+       [
+        114.3,
+        43.93
+       ],
+       [
+        115.31,
+        44.39
+       ],
+       [
+        116.44,
+        44.52
+       ],
+       [
+        118.73,
+        45.43
+       ],
+       [
+        120.33,
+        45.56
+       ],
+       [
+        121.92,
+        45.69
+       ],
+       [
+        122.8,
+        45.9281
+       ]
+      ]
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Four Oirats",
+     "years": [
+      1440,
+      1449
+     ],
+     "coords": [
+      [
+       [
+        122.8,
+        41.8
+       ],
+       [
+        113.5,
+        41.8
+       ],
+       [
+        113.5,
+        43.7537
+       ],
+       [
+        114.3,
+        43.93
+       ],
+       [
+        115.31,
+        44.39
+       ],
+       [
+        116.44,
+        44.52
+       ],
+       [
+        118.73,
+        45.43
+       ],
+       [
+        120.33,
+        45.56
+       ],
+       [
+        121.92,
+        45.69
+       ],
+       [
+        122.8,
+        45.9281
+       ]
+      ]
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Four Oirats",
+     "years": [
+      1450,
+      1467
+     ],
+     "coords": [
+      [
+       [
+        122.8,
+        41.8
+       ],
+       [
+        113.5,
+        41.8
+       ],
+       [
+        113.5,
+        42.2906
+       ],
+       [
+        113.77,
+        42.63
+       ],
+       [
+        114.67,
+        43.6
+       ],
+       [
+        115.39,
+        44.12
+       ],
+       [
+        116.2,
+        44.39
+       ],
+       [
+        116.48,
+        44.58
+       ],
+       [
+        117.25,
+        44.78
+       ],
+       [
+        118.73,
+        45.43
+       ],
+       [
+        120.33,
+        45.56
+       ],
+       [
+        121.92,
+        45.69
+       ],
+       [
+        122.8,
+        45.9281
+       ]
+      ]
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Mongol Khanate",
+     "years": [
+      1468,
+      1515
+     ],
+     "coords": [
+      [
+       [
+        122.8,
+        41.8
+       ],
+       [
+        113.5,
+        41.8
+       ],
+       [
+        113.5,
+        42.2906
+       ],
+       [
+        113.77,
+        42.63
+       ],
+       [
+        114.67,
+        43.6
+       ],
+       [
+        115.39,
+        44.12
+       ],
+       [
+        116.2,
+        44.39
+       ],
+       [
+        116.48,
+        44.58
+       ],
+       [
+        117.25,
+        44.78
+       ],
+       [
+        118.73,
+        45.43
+       ],
+       [
+        120.33,
+        45.56
+       ],
+       [
+        121.92,
+        45.69
+       ],
+       [
+        122.8,
+        45.9281
+       ]
+      ]
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Three Guards",
+     "url": "https://en.wikipedia.org/wiki/Three_Guards"
+    },
+    {
+     "title": "Wikipedia: Ming–Mongol relations",
+     "url": "https://en.wikipedia.org/wiki/Ming–Mongol_relations"
+    },
+    {
+     "title": "Wikipedia: Northern Yuan",
+     "url": "https://en.wikipedia.org/wiki/Northern_Yuan"
+    }
+   ]
   }
  ]
 }

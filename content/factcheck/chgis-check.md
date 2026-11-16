@@ -1,6 +1,6 @@
 # Chinese dynasties cross-checked against CHGIS V6 (221 BCE–1911)
 
-Written by `tools/check_chgis.py` on 2026-11-13. Read-only: nothing in the atlas was changed.
+Written by `tools/check_chgis.py` on 2026-11-16. Read-only: nothing in the atlas was changed.
 
 CHGIS V6 (China Historical GIS, Harvard and Fudan) maps the prefecture-level units of the Chinese state(s) from 221 BCE to 1911 as dated polygons. The union of the prefectures valid in a year is the territory the Chinese state(s) administered directly that year, so it is compared here with the atlas's Chinese realms. CHGIS records carry no dynasty, and V6 was compiled region by region: before the Yuan it covers mainly southern China and Shanxi, so the comparison is made inside the *CHGIS footprint* (land CHGIS administers at some time before and some time after the year in question). Frontier zones, protectorates and tributaries that were never prefectures fall outside CHGIS by design.
 
@@ -120,11 +120,11 @@ km². *CHGIS* = administered that year; *Atlas (fp)* = atlas Chinese realms insi
 | 1354 | Yuan Dynasty | 3,844,000 | 3,790,000 | 99% | 99% | 47,000 (Shan States) | 6,200 | 0 | 10,440,000 (Russian Far East (Amur)) |
 | 1369 (Ming) | Ming Dynasty | 3,752,000 | 3,293,000 | 85% | 86% | 60,000 (Shan States) | 448,000 | 48,000 | 863,000 (Gansu (Hexi)) |
 | 1379 | Ming Dynasty | 3,761,000 | 3,327,000 | 84% | 86% | 62,000 (Shan States) | 465,000 | 93,000 | 830,000 (Inner Mongolia (Alxa)) |
-| 1404 | Ming Dynasty | 3,682,000 | 3,883,000 | 93% | 99% | 28,000 (Lan Xang) | 6,200 | 236,000 | 1,566,000 (Inner Mongolia (Chifeng)) |
-| 1429 | Ming Dynasty | 3,899,000 | 4,019,000 | 92% | 98% | 90,000 (Moghulistan) | 6,200 | 216,000 | 2,123,000 (Russian Far East) |
-| 1454 | Ming Dynasty | 3,917,000 | 3,903,000 | 92% | 96% | 166,000 (Four Oirats) | 6,200 | 158,000 | 1,063,000 (Inner Mongolia (Chifeng)) |
-| 1479 | Ming Dynasty | 3,717,000 | 3,573,000 | 89% | 92% | 287,000 (Mongol Khanate) | 6,200 | 150,000 | 767,000 (Inner Mongolia (Chifeng)) |
-| 1504 | Ming Dynasty | 3,717,000 | 3,573,000 | 89% | 92% | 287,000 (Mongol Khanate) | 6,200 | 150,000 | 767,000 (Inner Mongolia (Chifeng)) |
+| 1404 | Ming Dynasty | 3,682,000 | 3,843,000 | 94% | 99% | 28,000 (Lan Xang) | 6,200 | 195,000 | 1,336,000 (Qinghai (Qaidam)) |
+| 1429 | Ming Dynasty | 3,899,000 | 3,979,000 | 93% | 98% | 90,000 (Moghulistan) | 6,200 | 176,000 | 1,893,000 (Russian Far East) |
+| 1454 | Ming Dynasty | 3,917,000 | 3,863,000 | 93% | 96% | 166,000 (Four Oirats) | 6,200 | 117,000 | 848,000 (Jilin) |
+| 1479 | Ming Dynasty | 3,717,000 | 3,533,000 | 89% | 92% | 287,000 (Mongol Khanate) | 6,200 | 109,000 | 552,000 (Jilin) |
+| 1504 | Ming Dynasty | 3,717,000 | 3,533,000 | 89% | 92% | 287,000 (Mongol Khanate) | 6,200 | 109,000 | 552,000 (Jilin) |
 | 1529 | Ming Dynasty | 3,539,000 | 3,473,000 | 95% | 96% | 118,000 (Mongol Khanate) | 6,200 | 59,000 | 269,000 (Liaoning) |
 | 1554 | Ming Dynasty | 3,540,000 | 3,471,000 | 95% | 96% | 118,000 (Tümed) | 6,800 | 57,000 | 269,000 (Liaoning) |
 | 1579 | Ming Dynasty | 3,540,000 | 3,402,000 | 93% | 94% | 188,000 (Tümed) | 6,800 | 57,000 | 264,000 (Liaoning) |
@@ -406,7 +406,7 @@ Inside the CHGIS footprint only. Often a frontier the dynasty claimed or garriso
 | # | Years (samples) | Peak km² (year) | Atlas draws | Regions (share of area) | CHGIS prefectures there (most area) |
 |---|---|---|---|---|---|
 | 1 | 1645–1904 (15) | 339,000 (1704) | Qing Dynasty | Inner Mongolia 24%, Inner Mongolia (Chifeng) 19%, Shaanxi (Yulin) 17%, Beijing 16% (of 14 regions) | Dongsheng Ting 东胜厅, Duolunnuo'er Ting 多伦诺尔厅, Rehe Ting 热河厅, Anxi Zhou 安西厅 |
-| 2 | 1369–1629 (12) | 236,000 (1404) | Ming Dynasty | Beijing 18%, Inner Mongolia 18%, Inner Mongolia (Chifeng) 16%, Gansu 12% (of 16 regions) | Shangdu Lu 上都路, Datong Lu 大同路, Xinghe Lu 兴和路, Zhuanglang Wei 庄浪卫 |
+| 2 | 1369–1629 (12) | 195,000 (1404) | Ming Dynasty | Inner Mongolia 20%, Beijing 18%, Gansu 14%, Qinghai 12% (of 16 regions) | Shangdu Lu 上都路, Datong Lu 大同路, Zhuanglang Wei 庄浪卫, Yan'an Lu 延安路 |
 | 3 | 619–904 (13) | 161,000 (629) | Tang Dynasty | Guangxi (Guilin) 29%, Guangxi 20%, Hunan (west) 15%, Jiangsu (Xuzhou) 11% (of 17 regions) | Yuanling Jun 沅陵郡, Yongzhou Lu 邕州路, Feng Zhou 封州, Yidu Lu 益都路 |
 | 4 | 318–404 (6) | 220,000 (404) | Eastern Jin | Hubei (Yichang) 30%, Jiangsu (Xuzhou) 20%, Guangxi 16%, Jiangsu 11% (of 15 regions) | Xiang Jun 象郡, Nan Jun 南郡, Ting Zhou 亭州, Donghai Jun 东海郡 |
 | 5 | 421–479 (5) | 233,000 (440) | Liu Song Dynasty | Hubei (Yichang) 25%, Jiangsu (Xuzhou) 22%, Jiangsu 18%, Guangxi 14% (of 15 regions) | Guangling Jun 广陵郡, Xiang Jun 象郡, Ting Zhou 亭州, Yang Zhou 扬州 |
@@ -459,9 +459,9 @@ Not ranked as disagreements: protectorates, tributaries and steppe, or regions C
 | 4 | 619–904 (13) | 4,979,000 (654) | Tang Dynasty | Shaanxi 9%, Sichuan 7%, Chongqing 5%, Henan 5% (of 59 regions) |
 | 5 | 201 BCE–4 (10) | 3,285,000 (46 BCE) | Han Dynasty | Shaanxi 9%, Sichuan 7%, Henan 6%, Chongqing 5% (of 51 regions) |
 | 6 | 26–204 (9) | 3,355,000 (104) | Han Dynasty | Shaanxi 9%, Sichuan 7%, Chongqing 5%, Gansu 5% (of 51 regions) |
-| 7 | 1369–1629 (12) | 2,123,000 (1429) | Ming Dynasty | Liaoning 12%, Inner Mongolia (Chifeng) 11%, Jilin 8%, Gansu (Hexi) 6% (of 40 regions) |
-| 8 | 267–305 (5) | 3,119,000 (281) | Western Jin | Shaanxi 7%, Xinjiang (Aksu, Kucha) 7%, Xinjiang (Lop Nur) 6%, Sichuan 5% (of 50 regions) |
-| 9 | 908–1116 (13) | 1,900,000 (954) | Liao Dynasty | Mongolia (Gobi) 18%, Inner Mongolia (Chifeng) 16%, Inner Mongolia 13%, Mongolia 10% (of 19 regions) |
+| 7 | 267–305 (5) | 3,119,000 (281) | Western Jin | Shaanxi 7%, Xinjiang (Aksu, Kucha) 7%, Xinjiang (Lop Nur) 6%, Sichuan 5% (of 50 regions) |
+| 8 | 908–1116 (13) | 1,900,000 (954) | Liao Dynasty | Mongolia (Gobi) 18%, Inner Mongolia (Chifeng) 16%, Inner Mongolia 13%, Mongolia 10% (of 19 regions) |
+| 9 | 1369–1629 (12) | 1,893,000 (1429) | Ming Dynasty | Liaoning 12%, Jilin 9%, Gansu (Hexi) 7%, Sichuan (Garzê) 6% (of 40 regions) |
 | 10 | 1128–1235 (7) | 1,830,000 (1154) | Great Jin | Russian Far East 21%, Inner Mongolia (Chifeng) 10%, Jilin 10%, Liaoning 7% (of 22 regions) |
 | 11 | 421–479 (5) | 1,697,000 (421) | Liu Song Dynasty | Sichuan 11%, Guizhou 10%, Chongqing 9%, Yunnan 8% (of 33 regions) |
 | 12 | 387–529 (11) | 1,122,000 (479) | Northern Wei | Shaanxi 15%, Henan 10%, Gansu 9%, Shanxi 9% (of 23 regions) |

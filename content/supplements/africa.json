@@ -2556,6 +2556,60 @@
    "note": "Sakalava kingdom of the Maroseraña dynasty on the west coast of Madagascar, the first Sakalava state, which rose under Andriandahifotsy in the 17th century. Radama I ravaged it in 1820–22; the Merina subjugated its southern lands in 1834 and resistance continued to 1846 and beyond. Founding date approximate. Source: Wikipedia 'Menabe'.",
    "dataNote": "Drawn to 1823, since the border data's Merina outline covers most of it from 1824. Approximate frontiers.",
    "coords": [[43.57, -21.34], [43.59, -21.24], [43.6, -21.15], [43.61, -21.06], [43.62, -20.96], [43.64, -20.87], [43.66, -20.77], [43.67, -20.68], [43.69, -20.58], [43.71, -20.48], [43.73, -20.39], [43.74, -20.29], [43.76, -20.19], [43.78, -20.1], [43.81, -20.0], [43.83, -19.9], [43.85, -19.8], [43.88, -19.7], [43.9, -19.6], [43.93, -19.5], [43.95, -19.4], [43.99, -19.29], [44.03, -19.18], [44.07, -19.06], [44.11, -18.97], [44.16, -18.88], [44.21, -18.79], [44.28, -18.68], [44.36, -18.57], [44.45, -18.5], [44.54, -18.43], [44.62, -18.39], [44.71, -18.36], [44.79, -18.36], [44.87, -18.37], [44.95, -18.42], [45.02, -18.46], [45.1, -18.55], [45.17, -18.64], [45.23, -18.75], [45.29, -18.87], [45.32, -18.96], [45.35, -19.06], [45.38, -19.16], [45.4, -19.27], [45.42, -19.39], [45.44, -19.5], [45.44, -19.6], [45.45, -19.7], [45.46, -19.8], [45.46, -19.9], [45.46, -20.0], [45.46, -20.1], [45.46, -20.2], [45.46, -20.29], [45.45, -20.39], [45.44, -20.49], [45.43, -20.58], [45.42, -20.68], [45.4, -20.78], [45.38, -20.87], [45.37, -20.97], [45.35, -21.06], [45.32, -21.16], [45.3, -21.25], [45.28, -21.34], [45.25, -21.44], [45.2, -21.54], [45.15, -21.65], [45.11, -21.75], [45.04, -21.83], [44.98, -21.92], [44.92, -22.0], [44.8, -22.09], [44.69, -22.19], [44.6, -22.23], [44.5, -22.27], [44.41, -22.31], [44.29, -22.34], [44.17, -22.37], [44.08, -22.36], [43.98, -22.36], [43.89, -22.32], [43.81, -22.28], [43.75, -22.2], [43.69, -22.12], [43.65, -22.02], [43.61, -21.92], [43.59, -21.83], [43.58, -21.74], [43.57, -21.66], [43.57, -21.55], [43.57, -21.44], [43.57, -21.34]]
+  },
+  {
+   "name": "Kingdom of Imerina",
+   "key": "Imerina",
+   "kind": "kingdom",
+   "from": 1540,
+   "to": 1791,
+   "capital": "Alasora, then Ambohimanga and Antananarivo",
+   "rulers": [
+    {
+     "name": "Andriamanelo",
+     "when": "c. 1540–1575"
+    },
+    {
+     "name": "Ralambo",
+     "when": "c. 1575–1612"
+    },
+    {
+     "name": "Andriamasinavalona",
+     "when": "c. 1675–1710"
+    },
+    {
+     "name": "Andrianampoinimerina",
+     "when": "c. 1787–1810"
+    }
+   ],
+   "note": "The Merina kingdom of the central highlands of Madagascar, founded by Andriamanelo around 1540; his son Ralambo gave it the name Imerina. After Andriamasinavalona (d. c. 1710) it split into four rival kingdoms, which Andrianampoinimerina reunited from Ambohimanga at the end of the 18th century. Dates before the 19th century are traditional. Source: Wikipedia 'Kingdom of Imerina'.",
+   "dataNote": "Drawn to 1791, since the border data's Merina outline starts in 1792. The four-way split of c. 1710–1790 is not shown. Approximate frontiers around the twelve sacred hills of Imerina.",
+   "coords": [[47.0, -18.3], [47.35, -18.15], [47.7, -18.2], [48.0, -18.5], [48.05, -18.85], [47.95, -19.15], [47.7, -19.45], [47.35, -19.55], [47.05, -19.4], [46.85, -19.05], [46.8, -18.7], [47.0, -18.3]]
+  },
+  {
+   "name": "Betsimisaraka Confederation",
+   "key": "Betsimisaraka",
+   "kind": "confederation",
+   "from": 1712,
+   "to": 1791,
+   "capital": "Foulpointe and Fénérive",
+   "rulers": [
+    {
+     "name": "Ratsimilaho",
+     "when": "c. 1712–1750"
+    },
+    {
+     "name": "Zanahary",
+     "when": "1750–1767"
+    },
+    {
+     "name": "Iavy",
+     "when": "1767–1791"
+    }
+   ],
+   "note": "Confederation of the peoples of Madagascar's east coast, from the Bay of Antongil to the Vatomandry region, formed around 1712 by Ratsimilaho, son of an English pirate and a local princess, after he drove the Tsikoa from the ports. Under his successors it lost cohesion, and the Merina conquered the coast in 1817–1823. Source: Wikipedia 'Betsimisaraka people'.",
+   "dataNote": "Drawn to 1791, the death of Iavy, after which the confederation broke apart into rival chiefdoms. A coastal strip about 50 km deep; approximate.",
+   "coords": [[49.55, -15.25], [50.0, -15.45], [50.1, -16.2], [49.95, -16.95], [49.75, -17.45], [49.75, -17.75], [49.65, -18.2], [49.45, -18.75], [49.2, -19.4], [48.75, -19.35], [48.8, -18.75], [48.95, -18.15], [49.05, -17.45], [49.2, -16.85], [49.3, -16.15], [49.3, -15.55], [49.55, -15.25]]
   }
  ],
  "sites": [
@@ -2848,6 +2902,16 @@
    "name": "Mahabo",
    "lonlat": [44.66, -20.38],
    "what": "capital of Menabe"
+  },
+  {
+   "name": "Ambohimanga",
+   "lonlat": [47.56, -18.76],
+   "what": "royal seat of Imerina"
+  },
+  {
+   "name": "Foulpointe (Mahavelona)",
+   "lonlat": [49.52, -17.68],
+   "what": "seat of Ratsimilaho (approximate)"
   }
  ],
  "sources": [
@@ -3230,6 +3294,18 @@
   {
    "title": "Wikimedia Commons, Map sketches of the development of the Luba-Lunda Empire - map 2.jpg (Public domain), used for positions and extents",
    "url": "https://commons.wikimedia.org/wiki/File:Map_sketches_of_the_development_of_the_Luba-Lunda_Empire_-_map_2.jpg"
+  },
+  {
+   "title": "Wikipedia: Kingdom of Imerina",
+   "url": "https://en.wikipedia.org/wiki/Kingdom_of_Imerina"
+  },
+  {
+   "title": "Wikipedia: Betsimisaraka people",
+   "url": "https://en.wikipedia.org/wiki/Betsimisaraka_people"
+  },
+  {
+   "title": "Wikipedia: Ratsimilaho",
+   "url": "https://en.wikipedia.org/wiki/Ratsimilaho"
   }
  ]
 }

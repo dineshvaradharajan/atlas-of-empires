@@ -72,25 +72,32 @@ STATEWORDS = re.compile(r"empire|kingdom|sultanate|caliphate|khanate|khaganate|d
                         r"colony|viceroyalty|federation|commonwealth|county|margraviate|electorate|order|knights", re.I)
 
 
-# Leads checked by hand against the atlas (probing what it draws at a point) on 2026-11-14. Each is a candidate fix,
-# still to be sourced before any border changes.
+# Leads checked by hand against the atlas (probing what it draws at a point) on 2026-11-14, all fixed on 2026-11-15.
 HANDCHECK = [
     ("Mexico", "1913–1919", "Nothing is drawn anywhere in Mexico (Mexico City, Chihuahua, Guadalajara all blank): the Cliopatria "
      "row skips the revolution years. CShapes flags the same gap. Mexico should be drawn throughout."),
     ("Mongolia", "1920–1921", "Blank between the Great Mongol State (to 1919) and its return (1922). China occupied Urga from "
      "late 1919; Ungern restored the Bogd Khan in February 1921 and the people's government took over in July 1921."),
-    ("Canada, North-West Territories", "1870 – c. 1906", "The interior (Rupert's Land, bought by Canada in 1870) is blank until "
-     "about 1906, when the British shape takes it in. Rupert's Land before 1870 (the Hudson's Bay Company) is also blank."),
-    ("Iraq, Palestine, Transjordan", "1922–1947", "The British mandates are labelled \"British Africa\" (Baghdad to 1931, "
+    ("Canada, North-West Territories", "1870–1910", "The interior (Rupert's Land, bought by Canada in 1870) is blank until "
+     "1911, when the British shape takes it in (the southern band grows north in steps from 1873). Rupert's Land before 1870 (the Hudson's Bay Company) is also blank."),
+    ("Iraq, Palestine, Transjordan", "1922–1945", "The British mandates are labelled \"British Africa\" (Baghdad to 1931, "
      "Jerusalem and Amman to the 1940s). Iraq in 1921 already shows the correct \"British Colonial Empire\"."),
     ("South-east Libya (Kufra)", "1912–1929", "Drawn as British Africa; Italy claimed all of Libya from 1912 and the Senussi "
      "held Kufra until Italy took it in January 1931. Britain and Egypt never held land west of 25° E here."),
-    ("Horqin, Inner Mongolia", "1403 – c. 1510", "Drawn as Ming as far as 43.7° N, 121.3° E; the Ming gave up the Daning "
-     "command in 1403 and the land went to the Uriankhai Mongols. Mongol from 1520 in the atlas."),
-    ("Madagascar", "before 1792", "Blank until the Merina Kingdom appears in 1792; the Sakalava, Betsimisaraka and early "
-     "Merina kingdoms (16th–18th centuries) are not drawn."),
+    ("Horqin, Inner Mongolia", "1403–1515", "Drawn as Ming as far as 43.7° N, 121.3° E; the Ming gave up the Daning "
+     "command in 1403 and the land went to the Uriankhai Mongols. Mongol from 1516 in the atlas."),
+    ("Madagascar", "before 1792", "The highlands are blank until the Merina Kingdom appears in 1792: early Imerina (from "
+     "c. 1540) and the Betsimisaraka confederation of the east coast (1712–1791) are not drawn. The Sakalava kingdoms "
+     "(Menabe, Boina) already are, in the African kingdoms layer."),
     ("Andes: Wari and Tiwanaku", "c. 600–1000", "Neither is drawn at all (no atlas realm overlaps either snapshot shape)."),
 ]
+FIXED = ("Fixed on 2026-11-15 in content/borders/patches.json (mexico-1913-1919, mongolia-1920-1921, "
+         "canada-north-west-1870-1910, mandates-not-british-africa, kufra-italian-libya-1922-1929, "
+         "ming-north-of-frontier-1403-1515), content/corrections.json (cuts on British Africa 1922–1929 and the Ming "
+         "1403–1515) and the reconstruction layers (Kingdom of Imerina and the Betsimisaraka Confederation in "
+         "content/supplements/africa.json, Wari and Tiwanaku in content/supplements/andes.json). Kufra stays British in "
+         "1912–1921, while the British shape still includes Egypt and the frontier was undefined; Rupert's Land before 1870 "
+         "stays blank.")
 REJECTED = ("Checked and left alone (the snapshot is wrong or it is a judgement call): the Amur as Qing in 1815 (Russian "
             "only from 1858), Safavid Azerbaijan in 1650–1700, Durrani Multan in 1815, Russia in Transbaikal in 1700, Ordos as "
             "Mongol in 1600, Qing Qinghai from 1700 (the Khoshut submitted in 1697), and the Anglo-Soviet occupation of Iran "
@@ -262,8 +269,8 @@ def write(rows, summary, shapes, absent, args, nfiles, secs):
          "snapshot polities by shared land, so a different name for the same state is not a mismatch.", "",
          f"Source: {CREDIT}.", "",
          "## Checked by hand", "",
-         "The largest leads, probed against what the atlas draws at the place and year. These are errors in the atlas, "
-         "not yet fixed:", "", "| Where | Years | What the atlas draws |", "|---|---|---|"]
+         "The largest leads, probed against what the atlas draws at the place and year: errors in the atlas as it "
+         "stood on 2026-11-14.", "", FIXED, "", "| Where | Years | What the atlas draws |", "|---|---|---|"]
     L += [f"| {w} | {y} | {t} |" for w, y, t in HANDCHECK]
     L += ["", REJECTED, "",
          "## Per snapshot", "",
