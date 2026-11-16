@@ -651,7 +651,7 @@ async function applyHash(h, first = false) {
   if (first || year !== S.year) await go(year);
   if (key !== S.sel || wasDrill) await select(key, { fly: !!key });
   if (home && !key) { S.view = "today"; S.place = null; renderCol(true); draw(); }
-  if (home && !first) d3.select(canvas).transition().duration(600).call(S.zoom.transform, d3.zoomIdentity);
+  if (home && !first) d3.select(canvas).transition().duration(600).call(S.zoom.transform, homeT());
   writeHash(); // tidy the address (a broken link is replaced by the page actually shown)
 }
 function writeHash() { if (!S.hashQueued) { S.hashQueued = true; queueMicrotask(commitHash); } }
@@ -1057,6 +1057,11 @@ function setupMap() {
     for (let lat = -57; lat <= 84; lat += 3) edge.push([-180, lat], [180, lat]);
     if (phone()) projection.fitExtent([[4, 72], [r.width - 4, Math.max(220, r.height - 300)]], { type: "MultiPoint", coordinates: edge }); // above the card
     else projection.fitExtent([[small ? 4 : 10, small ? 4 : 8], [r.width - (small ? 40 : 56), r.height - (small ? 4 : 30)]], { type: "MultiPoint", coordinates: edge });
+    if (phone()) { // phones: the home view fills the screen above the card, centred on Europe, Africa and Asia; pinch out for the whole world
+      const b = geoPath.bounds({ type: "MultiPoint", coordinates: edge }), top = 72, bot = r.height - 210;
+      const k = Math.max(1, Math.min(4, (bot - top) / Math.max(1, b[1][1] - b[0][1]))), fx = projection([35, 20])[0];
+      S.homeT = d3.zoomIdentity.translate(r.width / 2 - k * fx, (top + bot) / 2 - k * (b[0][1] + b[1][1]) / 2).scale(k);
+    } else S.homeT = null;
     sphere2d = new Path2D(geoPath({ type: "Sphere" }));
     grat2d = new Path2D(geoPath(d3.geoGraticule10()));
     pathCache = new WeakMap(); hitCache = new WeakMap();
@@ -1086,6 +1091,7 @@ function setupMap() {
     document.body.classList.add("reveal"); clearTimeout(S.revealT); S.revealT = setTimeout(() => document.body.classList.remove("reveal"), 3000);
   });
   d3.select(canvas).call(S.zoom).on("dblclick.zoom", null);
+  if (S.homeT) d3.select(canvas).call(S.zoom.transform, S.homeT); // phones open on the filled home view
 
   const local = (ev) => { const r = canvas.getBoundingClientRect(); return [ev.clientX - r.left, ev.clientY - r.top]; };
   canvas.addEventListener("mousemove", (ev) => {
@@ -3883,13 +3889,14 @@ function setupSearch() {
 }
 
 // ---------------------------------------------------------------- UI wiring
-const wholeWorld = () => { if (S.t.k > 1.05) d3.select(canvas).transition().duration(600).call(S.zoom.transform, d3.zoomIdentity); }; // lists show the whole world
+const homeT = () => S.homeT || d3.zoomIdentity; // the home view: the whole world on desktop, the world filling the screen on phones
+const wholeWorld = () => { if (S.t.k > homeT().k * 1.05) d3.select(canvas).transition().duration(600).call(S.zoom.transform, homeT()); }; // lists show the whole world
 function leaveStories() { stopPlay(); S.tstory = null; if (S.war) exitWar(); if (S.journey) exitJourney(); S.moment = null; S.site = null; hidePop(); }
 async function goToday() {
   leaveStories(); S.from = null; S.sel = null; S.place = null; S.view = "today"; S.ghost = null;
   if (S.year !== HOME_YEAR) await go(HOME_YEAR);
   S.view = "today";
-  d3.select(canvas).transition().duration(600).call(S.zoom.transform, d3.zoomIdentity);
+  d3.select(canvas).transition().duration(600).call(S.zoom.transform, homeT());
   draw(); renderCol(true); writeHash();
 }
 function goMap() {
@@ -3941,7 +3948,7 @@ function setupUI() {
   document.addEventListener("pointerdown", (ev) => { if (!lp.hidden && !ev.target.closest("#mapTools")) { lp.hidden = true; lb.setAttribute("aria-expanded", "false"); } });
   $("#zoomIn").onclick = () => d3.select(canvas).transition().duration(300).call(S.zoom.scaleBy, 1.6);
   $("#zoomOut").onclick = () => d3.select(canvas).transition().duration(300).call(S.zoom.scaleBy, 1 / 1.6);
-  $("#zoomReset").onclick = () => d3.select(canvas).transition().duration(600).call(S.zoom.transform, d3.zoomIdentity);
+  $("#zoomReset").onclick = () => d3.select(canvas).transition().duration(600).call(S.zoom.transform, homeT());
   $("#labelsBtn").onchange = (ev) => { S.labels = ev.target.checked; draw(); };
   $("#peoplesBtn").onchange = (ev) => { S.peoples = ev.target.checked; buildItems(); draw(); };
   try { S.relief = localStorage.getItem("atlas.terrain") === "on"; } catch { S.relief = false; } // off unless the viewer turned it on
