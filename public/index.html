@@ -57,7 +57,11 @@
     </div>
   </header>
 
-  <section id="col" aria-live="polite"></section>
+  <div id="sheet">
+    <button type="button" id="grab" aria-label="Show more" aria-expanded="false"></button>
+    <footer id="dock"></footer>
+    <section id="col" aria-live="polite"></section>
+  </div>
   <aside id="side" hidden></aside>
 
   <div id="mapTools">
@@ -81,6 +85,7 @@
     </div>
   </div>
   <div id="legend" hidden></div>
+  <div id="bigyear" aria-hidden="true"><b></b><span></span></div>
 
   <section id="compare" hidden aria-label="Compare empires">
     <div class="dock-head">
@@ -89,8 +94,6 @@
     </div>
     <div id="chart"></div>
   </section>
-
-  <footer id="dock"></footer>
 
   <nav id="tabbar" aria-label="Sections">
     <a href="#" data-tab="today"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M9 3v4M15 3v4"/></svg>Today</a>

@@ -407,6 +407,10 @@ ul.changed i.newg { height: 12px; background: #E5402A; opacity: .7; }
 /* ---------- the bottom bar ---------- */
 #dock { position: absolute; z-index: 5; left: var(--gut); right: var(--gut); bottom: var(--dock-b); height: var(--dock-h); background: var(--bg); border: 1px solid var(--rule-strong); border-radius: 34px; box-shadow: var(--shadow); }
 #dock:empty { display: none; }
+#sheet { display: contents; } /* phones: one floating card around the bar and the card */
+.kyr, .nowyr { display: none; } /* phones only: the year in the world card's kicker, and on the ruler of a spot shown now */
+#grab { display: none; }
+#bigyear { display: none; }
 body.sdock #dock { border-radius: 24px; }
 .play { width: 44px; height: 44px; flex: none; display: grid; place-items: center; border: 0; border-radius: 22px; background: var(--ink); color: var(--bg); padding: 0; }
 .play svg { width: 16px; height: 16px; fill: currentColor !important; stroke: none !important; }
@@ -597,32 +601,41 @@ body.sdock #dock { border-radius: 24px; }
 /* ---------- phone tab bar (hidden on wide screens) ---------- */
 #tabbar { display: none; }
 
-/* ---------- phones: the map on top, a sheet below it, tabs at the bottom ---------- */
+/* ---------- phones: the map fills the screen; one floating card holds the year and the page, at three heights ---------- */
 @media (max-width: 760px) {
-  :root { --gut: 16px; --tab-h: 64px; --sheet-h: 0px; --dock-ph: 0px; }
+  :root { --gut: 16px; --tab-h: 0px; --sheet-h: 0px; --dock-ph: 0px; --peek: 180px; }
   body.sdock { --dock-ph: 128px; }
   body.jdock { --dock-ph: 166px; }
   body.wdock { --dock-ph: 82px; }
-  #bar { top: calc(12px + env(safe-area-inset-top)); left: 16px; right: 16px; }
+  #bar { top: calc(12px + env(safe-area-inset-top)); left: 16px; right: 72px; }
   #bar .tabs { display: none; }
-  .brand { height: 44px; padding: 0 14px; font-size: 13px; gap: 8px; border-radius: 22px; }
-  .brand svg { width: 18px; height: 18px; }
-  .search { display: none; }
+  .brand { display: none; }
+  .search, .search:focus-within { flex: 1; width: auto; height: 48px; padding: 0 16px; border-width: 1px; box-shadow: 0 6px 18px rgba(0,0,0,.08); }
   body.searching .search { display: flex; position: fixed; left: 8px; right: 8px; top: calc(8px + env(safe-area-inset-top)); width: auto; height: 48px; z-index: 30; padding: 0 8px 0 16px; border-width: 2px; }
   body.searching .search .cancel { display: block; }
   body.searching #results { position: fixed; left: 0; right: 0; top: calc(64px + env(safe-area-inset-top)); bottom: calc(var(--tab-h) + env(safe-area-inset-bottom)); width: auto; max-height: none; border: 0; border-radius: 0; box-shadow: none; }
   body.searching #stage::after { background: var(--bg); }
-  body.searching #col, body.searching #dock, body.searching #mapTools { display: none; }
+  body.searching #sheet, body.searching #mapTools { display: none; }
   #mapTools { top: calc(12px + env(safe-area-inset-top)); right: 16px; }
-  #layersBtn { height: 44px; }
+  #layersBtn { width: 48px; height: 48px; padding: 0; gap: 0; font-size: 0; box-shadow: 0 6px 18px rgba(0,0,0,.08); }
   .zoom, #side, #compare, #noRecords, #cine .cinfo { display: none !important; }
   #legend { display: none !important; }
-  /* the sheet */
-  #col { left: 0; right: 0; top: auto; bottom: calc(var(--tab-h) + env(safe-area-inset-bottom)); width: auto; max-width: none; --card-w: 100% !important;
-    max-height: calc(60% - var(--tab-h) - var(--dock-ph)); padding: 18px 20px 16px; gap: 12px; border-radius: 20px 20px 0 0; border-bottom: 0; border-left: 0; border-right: 0; }
-  #col::before { content: ""; position: absolute; left: 50%; top: 7px; width: 36px; height: 4px; margin-left: -18px; border-radius: 2px; background: var(--rule-2); }
-  body.sdock #col { border-radius: 0; border-top: 1px solid var(--rule); padding-top: 14px; }
-  body.sdock #col::before { display: none; }
+  /* the card: floats above the bottom edge; the year bar (or a story's bar) on top, the page below.
+     Three heights: peek (a summary), half (the card, scrolling), full (reading). */
+  #sheet { display: flex; flex-direction: column; position: absolute; z-index: 5; left: 8px; right: 8px; bottom: calc(10px + env(safe-area-inset-bottom));
+    max-height: calc(100% - 84px - env(safe-area-inset-top) - env(safe-area-inset-bottom)); background: var(--bg); border: 1px solid var(--rule-strong); border-radius: 26px; box-shadow: 0 10px 30px rgba(0,0,0,.16); overflow: hidden; }
+  #sheet:has(> #col:empty):has(> #dock:empty) { display: none; }
+  #sheet[data-detent="full"] { top: calc(76px + env(safe-area-inset-top)); }
+  #grab { display: grid; place-items: center; flex: none; width: 100%; height: 22px; padding: 0; border: 0; background: none; cursor: grab; touch-action: none; }
+  #grab::before { content: ""; width: 36px; height: 4px; border-radius: 2px; background: var(--rule-2); }
+  #sheet > #col { position: static; flex: 0 1 auto; min-height: 0; width: auto; max-width: none; --card-w: 100% !important; max-height: var(--peek); overflow: hidden;
+    padding: 12px 20px 16px; gap: 12px; border: 0; border-radius: 0; box-shadow: none;
+    -webkit-mask-image: linear-gradient(#000 calc(100% - 40px), transparent); mask-image: linear-gradient(#000 calc(100% - 40px), transparent); }
+  #sheet > #dock:not(:empty) + #col { border-top: 1px solid var(--rule); }
+  #sheet[data-detent="half"] > #col { height: 46vh; height: 46dvh; max-height: none; overflow: auto; -webkit-mask-image: none; mask-image: none; } /* a fixed height: the map does not shift as the card fills in */
+  #sheet[data-detent="full"] > #col { flex: 1 1 auto; max-height: none; overflow: auto; -webkit-mask-image: none; mask-image: none; }
+  body.sdock #sheet[data-detent="peek"] > #col { max-height: 120px; }
+  #sheet[data-detent="peek"] > #col:has(> .navrow) { --peek: 232px; -webkit-mask-image: none; mask-image: none; } /* the card's main action stays readable at the bottom */
   #col > .navrow { bottom: -16px; margin: 0 -20px -16px; padding: 10px 20px 16px; border-radius: 0; }
   .bigy { font-size: 44px; }
   .bigy.m { font-size: 36px; }
@@ -635,18 +648,18 @@ body.sdock #dock { border-radius: 24px; }
   .srow.doing .mt, .srow .mt:has(b) { display: inline; }
   .seg2 button { font-size: 13px; }
   .navnext { height: 52px; } .round { width: 52px; height: 52px; }
-  /* the bottom bar: a floating time pill, or a story's two strips on top of the sheet */
-  #dock { left: 12px; right: 12px; bottom: calc(var(--tab-h) + env(safe-area-inset-bottom) + var(--sheet-h) + 12px); height: 56px; border-radius: 28px; }
+  /* the bar at the top of the card: the year, or a story's strips */
+  #sheet > #dock { position: static; flex: none; height: 56px; border: 0; border-radius: 0; box-shadow: none; background: none; }
+  body.sdock #sheet > #dock { height: var(--dock-ph); }
   .tbar { padding: 0 8px 0 6px; gap: 0; }
   .tbar .step:first-of-type { margin-left: 4px; }
   .tyear { font-size: 20px; min-width: 56px; }
-  .track { margin: 0 8px 0 12px; height: 28px; }
-  .track .rail, .track .fill { top: 12px; }
-  .track .segs i { top: 10px; } .track .ticks i { top: 9px; }
-  .track .thumb { top: 4px; }
+  .track { margin: 0 8px 0 12px; height: 44px; } /* a full 44 px to grab */
+  .track .rail, .track .fill { top: 20px; }
+  .track .segs i { top: 18px; } .track .ticks i { top: 17px; }
+  .track .thumb { top: 12px; }
   .track .labs, .tbar .pillbtn, .tsteps { display: none; }
   .tbar:has(.tsteps) .step + .tyear + .step { margin-right: auto; }
-  body.sdock #dock { left: 0; right: 0; bottom: calc(var(--tab-h) + env(safe-area-inset-bottom) + var(--sheet-h)); height: var(--dock-ph); border-radius: 20px 20px 0 0; border-left: 0; border-right: 0; border-bottom: 0; box-shadow: 0 -6px 24px rgba(0,0,0,.08); }
   .sdock { padding: 14px 0 8px; gap: 8px; }
   .parts { height: 56px; padding: 0 16px; scroll-padding: 0 16px; }
   .part { flex: none; min-width: 0; width: auto; max-width: 170px; height: 56px; padding: 0 12px; }
@@ -674,15 +687,70 @@ body.sdock #dock { border-radius: 24px; }
   .rg:not(.on) b, .rg:not(.on) small { visibility: hidden; }
   .rg.on { min-width: max-content; }
   .ecap { font-size: 12px; }
-  #cSub { bottom: calc(var(--tab-h) + var(--sheet-h) + var(--dock-ph) + 80px); max-width: 90%; font-size: 13px; }
-  /* tabs */
-  #tabbar { display: flex; position: absolute; z-index: 7; left: 0; right: 0; bottom: 0; height: calc(var(--tab-h) + env(safe-area-inset-bottom)); padding-bottom: env(safe-area-inset-bottom); background: var(--bg); border-top: 1px solid var(--rule-strong); }
-  #tabbar a { flex: 1; position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; font: 500 11px var(--sans); color: var(--ink-3); text-decoration: none; }
-  #tabbar a svg { width: 22px; height: 22px; }
-  #tabbar a[aria-current="page"] { color: var(--ink); font-weight: 700; }
-  #tabbar a[aria-current="page"]::before { content: ""; position: absolute; left: 0; right: 0; top: -1px; height: 3px; background: var(--highlight); }
-  body.searching #tabbar a[data-tab="search"] { color: var(--ink); font-weight: 700; }
-  #toast { top: auto; bottom: calc(var(--tab-h) + var(--sheet-h) + 84px); }
+  #cSub { bottom: calc(var(--sheet-h) + 28px + env(safe-area-inset-bottom)); max-width: 90%; font-size: 13px; }
+  /* no tab bar: the search pill opens one menu with the sections (built in app.js, shown in #results) */
+  #tabbar { display: none; }
+  #results .mtoday { display: flex; flex-direction: column; gap: 4px; width: calc(100% - 32px); margin: 16px 16px 4px; padding: 16px 18px; border: 0; border-radius: 16px; background: var(--ink); color: var(--bg); text-align: left; }
+  #results .mtoday .kicker { color: #ff9b8c; }
+  :root[data-theme="dark"] #results .mtoday .kicker { color: #c8321e; } /* the card turns light in dark mode */
+  #results .mtoday b { font: 800 19px/1.2 var(--display); }
+  #results .mgrid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; padding: 8px 16px 4px; }
+  #results .mgrid button { display: flex; flex-direction: column; align-items: flex-start; gap: 4px; min-height: 96px; padding: 14px; border: 1px solid var(--rule); border-radius: 14px; background: var(--bg); color: var(--ink); text-align: left; }
+  #results .mgrid button svg { width: 22px; height: 22px; }
+  #results .mgrid b { font: 700 15px var(--sans); }
+  #results .mgrid small { font: 400 13px/1.35 var(--sans); color: var(--ink-3); }
+  #results .mjump { display: flex; flex-wrap: wrap; gap: 6px; padding: 4px 16px 16px; }
+  #results .mjump button { height: 40px; padding: 0 14px; border: 1px solid var(--rule-2); border-radius: 20px; background: var(--bg); color: var(--ink-2); font: 500 14px var(--sans); }
+  #toast { top: auto; bottom: calc(var(--sheet-h) + 28px + env(safe-area-inset-bottom)); }
+  /* ---- the pages ---- */
+  .kyr { display: inline; }
+  #sheet:has(> #dock[data-mode="time"]) > #col > .bigy.live { display: none; } /* the bar above already shows the year */
+  /* at peek a card is a summary: its head, two lines and its first row of actions or realms */
+  #sheet[data-detent="peek"] > #col > .prose { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  #sheet[data-detent="peek"] > #col > .kicker.grey, #sheet[data-detent="peek"] > #col > .note { display: none; }
+  #sheet[data-detent="peek"] > #col > .chiprow { flex-wrap: nowrap; overflow: hidden; }
+  #sheet[data-detent="peek"] > #col > .chiprow > * { flex: none; white-space: nowrap; }
+  /* Today: a dark card over the map at the day's event; the story's Play is the one control */
+  body[data-view="today"] #sheet > #dock { display: none; }
+  body[data-view="today"] #sheet { --bg: #111111; --ink: #f2f2ee; --ink-2: #d6d6d0; --ink-3: #a6a69f; --rule: #2a2a27; --rule-2: #4a4a45; --rule-strong: #f2f2ee; --chip: #232321; --kick: #ff9b8c; --highlight: #ff5a43;
+    color: var(--ink); border-color: #111111; box-shadow: 0 10px 30px rgba(0,0,0,.28); }
+  :root[data-theme="dark"] body[data-view="today"] #sheet { --bg: #ffffff; --ink: #111111; --ink-2: #2b2b28; --ink-3: #6b6b66; --rule: #e6e6e1; --rule-2: #c9c9c4; --rule-strong: #111111; --chip: #f0f0ec; --kick: #c8321e; --highlight: #e5402a; border-color: #ffffff; }
+  /* who ruled this spot: each ruler's row is as tall as the time it held the spot, with a colour bar down its side */
+  #sheet .hrows { gap: 3px; margin: 0 -8px; }
+  #sheet .hrow { align-items: flex-start; min-height: clamp(44px, calc(40px + var(--yrs, 0) * .12px), 150px); padding: 10px 12px 10px 8px; }
+  #sheet .hrow i.sq { align-self: stretch; height: auto; margin: -6px 0; border-radius: 4px; }
+  #sheet .hrow.gap i.sq { border: 1px solid var(--rule-2); background: repeating-linear-gradient(45deg, var(--rule) 0 3px, var(--bg) 3px 6px); }
+  #sheet .hrow .nm b { font: 800 16px/1.2 var(--display); }
+  #sheet .hrow.gap .nm b { font: 600 14px var(--sans); }
+  #sheet .hrow .nowyr { display: block; width: max-content; margin-top: 6px; padding: 3px 9px; border-radius: 11px; background: var(--ink); color: var(--bg); font: 600 11px var(--sans); }
+  /* Stories: a close button and the story to carry on with */
+  .sclose { width: 44px; height: 44px; margin-left: 4px; flex: none; }
+  .sclose svg { width: 16px; height: 16px; }
+  #col .carry { display: flex; align-items: center; gap: 14px; padding: 14px 16px; border: 0; border-radius: 16px; background: var(--ink); color: var(--bg); text-align: left; }
+  .carry .t { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 4px; }
+  .carry small { font: 600 11px var(--sans); letter-spacing: .12em; text-transform: uppercase; color: #ff9b8c; }
+  :root[data-theme="dark"] .carry small { color: #c8321e; }
+  .carry b { font: 800 19px/1.15 var(--display); }
+  .carry .bar { height: 3px; margin-top: 4px; border-radius: 2px; background: var(--ink-3); }
+  .carry .bar i { display: block; height: 100%; border-radius: 2px; background: var(--bg); }
+  .carry .go { width: 44px; height: 44px; flex: none; display: grid; place-items: center; border-radius: 22px; background: var(--bg); color: var(--ink); }
+  #app .carry .go svg { width: 14px; height: 14px; fill: currentColor; stroke: none; }
+  /* a story playing: the search and Layers step aside; the card stays a short caption */
+  #bar, #mapTools { transition: opacity .3s; }
+  body.playing #bar, body.playing #mapTools { opacity: 0; pointer-events: none; }
+  body.playing #sheet[data-detent="peek"] > #col { max-height: 120px; }
+  /* ---- polish ---- */
+  /* while the map is dragged or the year is dragged, search and Layers step aside; a tap during a story brings them back */
+  body.moving #bar, body.moving #mapTools, body.scrubbing #bar, body.scrubbing #mapTools { opacity: 0; pointer-events: none; }
+  body.playing.reveal #bar, body.playing.reveal #mapTools { opacity: 1; pointer-events: auto; }
+  #bigyear { position: absolute; z-index: 6; left: 50%; top: calc(56px + env(safe-area-inset-top)); transform: translateX(-50%); flex-direction: column; align-items: center;
+    padding: 10px 26px 12px; border-radius: 22px; background: var(--bg); box-shadow: var(--shadow); pointer-events: none; white-space: nowrap; }
+  body.scrubbing #bigyear { display: flex; }
+  #bigyear b { font: 900 60px/.95 var(--display); letter-spacing: -.02em; font-variant-numeric: lining-nums; }
+  #bigyear b small { margin-left: .12em; font-size: .36em; font-weight: 800; letter-spacing: 0; }
+  #bigyear span { margin-top: 6px; font: 600 12px var(--sans); letter-spacing: .1em; text-transform: uppercase; color: var(--kick); }
+  /* touch targets: chips at least 40 px tall */
+  .fchip, .pchip { height: 40px; }
 }
 
 /* Without JavaScript: say what the atlas is and link to the plain pages (tools/seo.py) */

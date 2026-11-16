@@ -1055,7 +1055,7 @@ function setupMap() {
     // fit the lived-in world (84°N to 57°S), not the whole sphere: Antarctica and the empty polar seas wasted a third of the canvas
     const edge = []; for (let lon = -180; lon <= 180; lon += 5) edge.push([lon, 84], [lon, -57]);
     for (let lat = -57; lat <= 84; lat += 3) edge.push([-180, lat], [180, lat]);
-    if (phone()) projection.fitExtent([[4, 60], [r.width - 4, Math.max(200, r.height * 0.3)]], { type: "MultiPoint", coordinates: edge }); // above the sheet
+    if (phone()) projection.fitExtent([[4, 72], [r.width - 4, Math.max(220, r.height - 300)]], { type: "MultiPoint", coordinates: edge }); // above the card
     else projection.fitExtent([[small ? 4 : 10, small ? 4 : 8], [r.width - (small ? 40 : 56), r.height - (small ? 4 : 30)]], { type: "MultiPoint", coordinates: edge });
     sphere2d = new Path2D(geoPath({ type: "Sphere" }));
     grat2d = new Path2D(geoPath(d3.geoGraticule10()));
@@ -1074,9 +1074,17 @@ function setupMap() {
   resize();
 
   S.zoom = d3.zoom().scaleExtent([1, 24]).translateExtent([[-200, -200], [10000, 10000]]).clickDistance(4) // a click that moves a pixel or two is still a click (d3 swallows it by default)
-    .on("start", (ev) => { S.zooming = true; if (ev.sourceEvent?.type === "mousedown") canvas.classList.add("dragging"); })
+    .on("start", (ev) => { S.zooming = true; if (ev.sourceEvent?.type === "mousedown") canvas.classList.add("dragging"); if (ev.sourceEvent && phone()) { clearTimeout(S.moveT); document.body.classList.add("moving"); } })
     .on("zoom", (ev) => { S.t = ev.transform; if (!S.cinePlay) scheduleDraw(); }) // playback redraws every frame itself
-    .on("end", () => { S.zooming = false; canvas.classList.remove("dragging"); draw(); });
+    .on("end", () => { S.zooming = false; canvas.classList.remove("dragging"); draw(); clearTimeout(S.moveT); S.moveT = setTimeout(() => document.body.classList.remove("moving"), 1200); });
+  // phones, while a story plays: a tap on the map brings search and Layers back for a few seconds
+  let tapAt = null;
+  canvas.addEventListener("pointerdown", (ev) => { tapAt = [ev.clientX, ev.clientY]; });
+  canvas.addEventListener("pointerup", (ev) => {
+    if (!tapAt || !phone() || !document.body.classList.contains("playing")) return;
+    if (Math.hypot(ev.clientX - tapAt[0], ev.clientY - tapAt[1]) > 8) return;
+    document.body.classList.add("reveal"); clearTimeout(S.revealT); S.revealT = setTimeout(() => document.body.classList.remove("reveal"), 3000);
+  });
   d3.select(canvas).call(S.zoom).on("dblclick.zoom", null);
 
   const local = (ev) => { const r = canvas.getBoundingClientRect(); return [ev.clientX - r.left, ev.clientY - r.top]; };
@@ -1680,8 +1688,8 @@ function freeBox() {
   const c = canvas.getBoundingClientRect(), box = { l: 0, t: 0, r: S.width, b: S.height };
   if (!c.width) return box;
   if (phone()) {
-    box.t = 64;
-    for (const el of [$("#col"), $("#dock")]) if (el && el.offsetHeight) box.b = Math.min(box.b, el.getBoundingClientRect().top - c.top - 8);
+    box.t = 72;
+    const sh = $("#sheet"); if (sh && sh.offsetHeight) box.b = Math.min(box.b, sh.getBoundingClientRect().top - c.top - 8);
     return box;
   }
   box.t = 80; box.r = S.width - 76;
@@ -1775,10 +1783,59 @@ function renderCol(resetScroll) {
     : v === "journey" && S.journey ? journeyHTML() : v === "war" && S.war ? warHTML()
     : v === "moment" && S.moment ? momentHTML() : v === "site" && S.site ? siteHTML() : v === "place" && S.place ? placeHTML() : S.sel && realm(S.sel) ? realmHTML() : worldHTML();
   col.scrollTop = resetScroll ? 0 : scroll;
+  if (resetScroll && phone()) setDetent(LISTS.has(v) && !S.war && !S.journey ? "full" : v === "place" && !S.war && !S.journey ? "half" : "peek", v === "place"); // lists and About open tall, who ruled a spot at half, the rest as a summary
   if (S.pop && (S.war || S.journey || v !== "world" && v !== "realm")) hidePop();
   syncChrome();
   renderDock();
   renderSide();
+}
+// Phones: the card's three heights. Peek shows a summary, half the card (scrolling), full is for reading.
+const DETENTS = ["peek", "half", "full"];
+function setDetent(d, refly = true) {
+  const sh = $("#sheet"); if (!sh || sh.dataset.detent === d) return;
+  sh.dataset.detent = d;
+  const g = $("#grab"); g.setAttribute("aria-expanded", String(d !== "peek")); g.setAttribute("aria-label", d === "full" ? "Show less" : "Show more");
+  if (d === "peek") $("#col").scrollTop = 0;
+  if (refly && phone()) requestAnimationFrame(() => requestAnimationFrame(reframe));
+}
+const stepDetent = (n) => setDetent(DETENTS[Math.max(0, Math.min(2, DETENTS.indexOf($("#sheet").dataset.detent || "peek") + n))]);
+function reframe() { // the card changed height: keep what it describes in the part of the map left free
+  if (S.war && story()) return flyTo(boxBounds(S.cine.chapters[S.chap].bbox), 24, 600, hudInset());
+  if (S.view === "place" && S.place?.ll) return flyCenter(S.place.ll, Math.max(S.t.k, 4), 600);
+  if (S.sel && realm(S.sel) && !S.war && !S.journey) return flyTo(boundsOf(activeFeats(S.sel)), 8, 500);
+}
+function setupSheet() {
+  const sh = $("#sheet"), g = $("#grab"), col = $("#col");
+  sh.dataset.detent = "peek";
+  let gy = null, dragged = false;
+  g.addEventListener("click", () => { if (dragged) { dragged = false; return; } const d = sh.dataset.detent; setDetent(d === "peek" ? "half" : d === "half" ? "full" : "peek"); });
+  g.addEventListener("pointerdown", (ev) => { gy = ev.clientY; dragged = false; g.setPointerCapture(ev.pointerId); });
+  g.addEventListener("pointerup", (ev) => { if (gy == null) return; const dy = ev.clientY - gy; gy = null; if (Math.abs(dy) < 24) return; dragged = true; stepDetent(dy < 0 ? (dy < -220 ? 2 : 1) : (dy > 220 ? -2 : -1)); });
+  // a vertical swipe on the card: up shows more; down shows less once the card is scrolled to its top
+  for (const el of [col, $("#dock")]) {
+    let x0 = 0, y0 = null, top0 = false;
+    el.addEventListener("touchstart", (ev) => { const t = ev.touches[0]; x0 = t.clientX; y0 = t.clientY; top0 = col.scrollTop <= 0; }, { passive: true });
+    el.addEventListener("touchend", (ev) => {
+      if (y0 == null || !phone()) return; const t = ev.changedTouches[0], dx = t.clientX - x0, dy = t.clientY - y0; y0 = null;
+      if (Math.abs(dy) < 40 || Math.abs(dx) > Math.abs(dy) || ev.target.closest("#track, .lane, .wbar")) return;
+      const d = sh.dataset.detent;
+      if (dy < 0 && (d === "peek" || el !== col)) stepDetent(1);
+      else if (dy > 0 && (top0 || d === "peek" || el !== col)) stepDetent(-1);
+    }, { passive: true });
+  }
+}
+// Phones: the search pill opens one menu with the sections, today's story and a few years to jump to.
+function menuHTML() {
+  const t = S.today, md = new Date().toLocaleDateString("en-GB", { day: "numeric", month: "long" }), C = S.content;
+  let h = "";
+  if (t) h += `<button class="mtoday" data-tab="today"><span class="kicker">${t.exact ? "Today in history" : "Near this day"} · ${esc(t.exact ? md : t.e.label || md)}</span><b>${esc(shortYear(t.e.year))} · ${esc(t.e.text)}</b></button>`;
+  h += `<nav class="mgrid" aria-label="Sections">
+    <button data-tab="today">${I.today}<b>Today</b><small>On this day in history</small></button>
+    <button data-tab="map">${I.globe}<b>Map</b><small>The world in ${esc(plainYear(S.year))}</small></button>
+    <button data-tab="stories">${I.book}<b>Stories</b><small>${C.journeys.length} empires, ${C.wars.length} wars, ${C.moments.length} moments</small></button>
+    <button data-tab="about">${ic('<circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.5"/>')}<b>About</b><small>The atlas and its sources</small></button></nav>`;
+  h += `<div class="grp">Jump to a year</div><div class="mjump">${[-323, 800, 1279, 1492, 1914].map((y) => `<button data-k="year:${y}">${esc(plainYear(y))}</button>`).join("")}</div>`;
+  return h;
 }
 // Header tab, body classes and the floating extras that follow the page shown.
 function syncChrome() {
@@ -1788,6 +1845,7 @@ function syncChrome() {
   $("#compare").hidden = !(S.compare && !S.war && !S.journey && !S.tstory);
   document.body.classList.toggle("sdock", !!(S.war && !S.tstory || S.journey || S.view === "moment"));
   document.body.classList.toggle("jdock", !!S.journey);
+  document.body.dataset.view = S.tstory && S.war ? "tstory" : S.war ? "war" : S.journey ? "journey" : S.view; // phones style each page's card
 }
 // Card building blocks.
 const cardHead = (back, right = "", act = "back") => `<div class="chead">${back ? `<button class="back" data-act="${act}">${I.left}${esc(back)}</button>` : "<span></span>"}${right ? `<span class="count">${right}</span>` : ""}</div>`;
@@ -1854,7 +1912,7 @@ function worldHTML() {
   if (y < (S.clio.range?.[0] ?? -3400)) return prehistoryHTML(y);
   const ch = chapterFor(y), near = chapterNear(ch, y);
   const top = realmsNow().slice(0, 6);
-  let h = kick("The world in") + `<p class="bigy live">${yearLabel(y)}</p><h1 class="ttl">${esc(near ? ch.title : eraOf(y)[2])}</h1>`;
+  let h = kick(`The world in<span class="kyr"> ${esc(shortYear(y))}</span>`) + `<p class="bigy live">${yearLabel(y)}</p><h1 class="ttl">${esc(near ? ch.title : eraOf(y)[2])}</h1>`;
   if (ch) {
     h += `<p class="prose">${esc(firstSentences(ch.overview, 2))}</p>`;
     if (!near) h += `<p class="note">From the chapter for <button class="linkish" data-year="${ch.year}">${plainYear(ch.year)}</button>${chapterAfter(y) ? ` · next chapter: <button class="linkish" data-year="${chapterAfter(y).year}">${plainYear(chapterAfter(y).year)}</button>` : ""}</p>`;
@@ -1974,9 +2032,9 @@ function placeHTML() {
   h += `<div class="hrows">`;
   let last = null;
   for (const r of runs) {
-    if (last != null && r.from > last + 1) h += `<div class="hrow gap"><i class="sq"></i><span class="nm"><b>No state on record</b></span><span class="yr">${rangeText(last + 1, r.from - 1)}</span><svg></svg></div>`;
+    if (last != null && r.from > last + 1) h += `<div class="hrow gap" style="--yrs:${r.from - 1 - last}"><i class="sq"></i><span class="nm"><b>No state on record</b></span><span class="yr">${rangeText(last + 1, r.from - 1)}</span><svg></svg></div>`;
     const now = r.from <= S.year && S.year <= r.to;
-    h += `<button class="hrow${now ? " now" : ""}" data-pkey="${esc(r.name)}" data-pyear="${Math.max(r.from, Math.min(r.to, Math.round((r.from + r.to) / 2)))}"><i class="sq" style="background:${colorOf(r.name)}"></i><span class="nm"><b>${esc(displayName(r.name))}</b></span><span class="yr">${rangeText(r.from, r.to)}</span>${I.right}</button>`;
+    h += `<button class="hrow${now ? " now" : ""}" style="--yrs:${r.to - r.from + 1}" data-pkey="${esc(r.name)}" data-pyear="${Math.max(r.from, Math.min(r.to, Math.round((r.from + r.to) / 2)))}"><i class="sq" style="background:${colorOf(r.name)}"></i><span class="nm"><b>${esc(displayName(r.name))}</b>${now ? `<small class="nowyr">You are in ${esc(shortYear(S.year))}</small>` : ""}</span><span class="yr">${rangeText(r.from, r.to)}</span>${I.right}</button>`;
     last = Math.max(last ?? r.to, r.to);
   }
   h += `</div><p class="note">A gap between two rows means the atlas has no state on record here for those years. Pick a row to see the map in that year.</p>`;
@@ -2637,7 +2695,7 @@ async function openChapter(n, opts = {}) {
   const C = S.cine; if (!C?.chapters?.length) return;
   n = Math.max(0, Math.min(C.chapters.length - 1, n));
   const ch = C.chapters[n];
-  if (!opts.keepPlay) stopPlay();
+  if (!opts.keepPlay) { stopPlay(); S.playedChap = null; } // a stage opened by hand starts afresh
   S.chap = n; S.wt = opts.t ?? ch.t1;
   S.wIdx = opts.wIdx ?? eventAt(S.wt); // -1 until the chapter's first event
   S.subAt = performance.now(); S.warMap = null;
@@ -2668,7 +2726,7 @@ function playChapter(chain) { // animate the current chapter from its start; wit
     const t = Math.min(ch.t1, S.wt + (dt * (S.cineSpeed || 1) * (ch.t1 - ch.t0)) / dur);
     setStoryT(t);
     if (t < ch.t1) { S.cineRaf = requestAnimationFrame(tick); return; }
-    S.cinePlay = false; draw();
+    S.cinePlay = false; S.playedChap = n; draw();
     if (!S.chain || n >= S.cine.chapters.length - 1) return stopPlay();
     const sp = S.cineSpeed || 1;
     S.chainTimer = setTimeout(async () => {
@@ -3059,7 +3117,10 @@ function storiesHTML() {
   const C = S.content;
   const count = kind === "empires" ? `${all.filter((x) => x.st === "done").length} of ${all.length} finished` : kind === "wars" ? `${all.filter((x) => x.st).length} of ${all.length} started`
     : per[0] === "all" ? `${all.filter((x) => x.st).length} of ${all.length} read` : `${items.length} ${per[1].replace(/^./, (c) => c.toLowerCase())} shown`;
-  let h = `<div class="chead"><h1 class="ttl l">Stories</h1><span class="count">${count}</span></div>`;
+  let h = `<div class="chead"><h1 class="ttl l">Stories</h1><span class="count">${count}</span>${phone() ? `<button class="round sclose" data-tab="map" aria-label="Close and return to the map">${I.close}</button>` : ""}</div>`;
+  const last = phone() && P.last && (P.last.k === "e" ? journeyById(P.last.id) : warById(P.last.id));
+  if (last) { const total = last.events.length, n = Math.min(total, seenCount(P.last.k, last.id));
+    if (n < total) h += `<button class="carry" data-act="continue"><span class="t"><small>Carry on · ${n} of ${total}</small><b>${esc(last.name)}</b><span class="bar"><i style="width:${(100 * n) / total}%"></i></span></span><span class="go">${I.play}</span></button>`; }
   h += seg2([["empires", `Empires · ${C.journeys.length}`], ["wars", `Wars · ${C.wars.length}`], ["moments", `Moments · ${C.moments.length}`]], kind, "stab");
   h += `<div class="chiprow" role="group" aria-label="Period">${PERIODS.map(([k, t]) => `<button class="fchip" data-period="${k}" aria-pressed="${k === per[0]}">${t}</button>`).join("")}</div>`;
   h += `<div class="srows">${items.map((x) => {
@@ -3267,7 +3328,7 @@ function drawMomentPin() {
   else if (S.view === "place" && S.place) m = { lonlat: S.place.ll, ring: true, kicker: S.place.runs?.length ? `${S.place.name ? S.place.name.replace(/^Capital of /, "") + " in " : ""}${shortYear(S.year)}` : "", title: (() => { const r = S.place.runs?.find((x) => x.from <= S.year && S.year <= x.to); return r ? displayName(r.name) : ""; })() };
   else if (S.view === "today" && S.today && !S.war) m = { lonlat: S.today.e.lonlat, kicker: `Today, ${S.today.e.label || shortYear(S.today.e.year)}`, title: short(S.today.e.text, 40) };
   else if (S.pop) m = { lonlat: S.pop.ll, ring: true };
-  if (!m && S.war && !S.callPt) { const e = S.war.events[S.wIdx]; if (e && e.lonlat && S.cineK.T[S.wIdx + 1] <= S.wt + 1e-6) m = { lonlat: e.lonlat }; }
+  if (!m && S.war && !S.callPt) { const e = S.war.events[S.wIdx]; if (e && e.lonlat && S.cineK?.T && S.cineK.T[S.wIdx + 1] <= S.wt + 1e-6) m = { lonlat: e.lonlat }; }
   if (!m && S.journey) {
     const ev = S.jEvent != null ? S.journey.events[S.jEvent] : currentEvent(S.journey, S.year);
     if (ev && ev.lonlat && S.year - ev.year <= Math.max(3, (S.journey.span[1] - S.journey.span[0]) / 25)) m = { lonlat: ev.lonlat, kicker: evText(ev).when || shortYear(ev.year), title: short(evText(ev).text) };
@@ -3457,6 +3518,9 @@ function stepChapter(dir) {
   if (target) go(target.year);
 }
 function setPlayIcon(playing) {
+  const story = !!playing && !!(S.war || S.tstory || S.journey); // phones: while a story plays, only its caption stays on screen
+  document.body.classList.toggle("playing", story);
+  if (story && phone()) setDetent("peek");
   const b = $("#play"); if (!b) return;
   const svg = b.querySelector("svg"); if (svg) svg.outerHTML = playSvg(playing);
   b.setAttribute("aria-label", playing ? "Pause" : b.textContent.trim() || "Play");
@@ -3481,7 +3545,16 @@ function togglePlay() {
     const tick = () => { if (!S.playing) return; const ms = ageMoments(ageOf(S.moment.year)), i = ms.indexOf(S.moment); if (i < 0 || i >= ms.length - 1) return stopPlay(); openMoment(ms[i + 1].id, true).then(() => { S.stepTimer = setTimeout(tick, 5000); }); };
     S.stepTimer = setTimeout(tick, 1200); return;
   }
-  if (story()) { setPlayIcon(true); playChapter(false); return; } // this stage
+  if (story()) { // the war plays on, stage after stage; once a stage has played to its end, Play carries on with the next (after the last, from the start)
+    const C = S.cine, ch = C.chapters[S.chap];
+    if (S.playedChap === S.chap && S.wt >= ch.t1 - 1e-4) {
+      const nx = S.chap < C.chapters.length - 1 ? S.chap + 1 : 0;
+      S.playing = -1; setPlayIcon(true);
+      openChapter(nx, { t: C.chapters[nx].t0, keepPlay: true }).then(() => { if (S.playing && S.chap === nx) playChapter(true); });
+      return;
+    }
+    setPlayIcon(true); playChapter(true); return;
+  }
   if (S.war) {
     setPlayIcon(true);
     if (S.wp >= S.cineK.D - 0.05) { S.shotIdx = -1; setWp(0); }
@@ -3558,7 +3631,7 @@ function warStageBar() {
   let last = -99, py = null; // a year label where the year changes between stages, if there is room
   const yrs = C.chapters.map((c, i) => { const y = Math.floor(c.t0 + 1e-9); if (y === py) return ""; py = y; const x = G[i].x; if (x - last < gap || x > 100 - gap * 0.8) return ""; last = x; return `<span style="left:${x.toFixed(2)}%">${shortYear(y)}</span>`; }).join("");
   const wy = Math.floor((S.wt ?? S.year) + 1e-9);
-  return `<div class="wtl"><button class="play" id="play" aria-label="Play this stage">${playSvg(S.playing)}</button>
+  return `<div class="wtl"><button class="play" id="play" aria-label="${S.playing ? "Pause" : "Play the war"}">${playSvg(S.playing)}</button>
     <div class="wlane"><div class="whead"><b>${S.chap + 1} of ${n} · ${esc(ch.title)}</b><span>${esc(chapRange(ch))}</span><em class="wnow" aria-live="off"></em></div>
     <div class="wbar" role="group" aria-label="Stages of the war">${segs}<div class="wcur" style="left:${g.x.toFixed(2)}%;width:${g.w.toFixed(2)}%">${evs}<i class="wph"></i></div></div>
     <div class="wyrs" aria-hidden="true">${yrs}</div></div>
@@ -3659,6 +3732,7 @@ function updateDock() {
   if (el.dataset.mode !== "time") return;
   const p = 100 * yToPos(S.year);
   const ty = el.querySelector(".tyear"); if (ty) ty.innerHTML = yearLabel(S.year);
+  const by = $("#bigyear"); if (by && document.body.classList.contains("scrubbing")) { by.firstChild.innerHTML = S.year < 0 ? yearLabel(S.year) : `${S.year}<small>CE</small>`; by.lastChild.textContent = `${eraOf(S.year)[2]} · ${S.fine ? "fine steps" : "slide up for finer steps"}`; }
   const th = el.querySelector(".thumb"); if (th) th.style.left = `${p}%`;
   const fl = el.querySelector(".fill"); if (fl) fl.style.width = (S.view === "realm" || S.view === "place") ? "0" : `${p}%`;
   const tr = $("#track"); if (tr) { tr.setAttribute("aria-valuenow", S.year); tr.setAttribute("aria-valuetext", plainYear(S.year)); }
@@ -3674,10 +3748,20 @@ function setupDock() {
     const lane = ev.target.closest(".lane");
     if (lane && S.journey && !ev.target.closest("button")) { drag = "lane"; lane.setPointerCapture(ev.pointerId); stopPlay(); S.jEvent = null; S.jKing = null; return go(laneYear(ev)); }
     if (!ev.target.closest("#track")) return;
-    drag = true; ev.target.closest("#track").setPointerCapture(ev.pointerId); stopPlay(); go(toYear(ev));
+    drag = true; ev.target.closest("#track").setPointerCapture(ev.pointerId); stopPlay();
+    if (phone()) document.body.classList.add("scrubbing");
+    go(toYear(ev));
   });
-  el.addEventListener("pointermove", (ev) => { if (drag === "lane" && S.journey) { S.jEvent = null; return go(laneYear(ev)); } if (drag && $("#track")) go(toYear(ev)); });
-  el.addEventListener("pointerup", () => (drag = false));
+  const scrubYear = (ev) => { // phones: 48 px above the bar, the same swipe covers a tenth of the time
+    const r = $("#track").getBoundingClientRect(), fine = phone() && r.top - ev.clientY > 48;
+    if (!fine) { S.fine = null; return toYear(ev); }
+    if (!S.fine) S.fine = { x: ev.clientX, p: yToPos(S.year) };
+    return posToY(Math.max(0, Math.min(1, S.fine.p + (ev.clientX - S.fine.x) / r.width / 10)));
+  };
+  const endScrub = () => { drag = false; S.fine = null; document.body.classList.remove("scrubbing"); };
+  el.addEventListener("pointermove", (ev) => { if (drag === "lane" && S.journey) { S.jEvent = null; return go(laneYear(ev)); } if (drag && $("#track")) go(scrubYear(ev)); });
+  el.addEventListener("pointerup", endScrub);
+  el.addEventListener("pointercancel", endScrub);
   let sPos = null, sRaf = 0, sAt = 0;
   el.addEventListener("wheel", (ev) => {
     const tr = ev.target.closest("#track"), row = ev.target.closest(".parts, .chips");
@@ -3754,7 +3838,7 @@ function setupSearch() {
   const render = () => {
     const q = input.value.trim().toLowerCase();
     document.body.classList.toggle("searching", !!q || phone() && document.activeElement === input);
-    if (!q) { list.hidden = true; return; }
+    if (!q) { if (phone() && document.body.classList.contains("searching")) { list.innerHTML = menuHTML(); list.hidden = false; } else list.hidden = true; return; }
     const pool = all.filter((e) => e.name.toLowerCase().includes(q) || e.raw.toLowerCase().includes(q))
       .sort((a, b) => (b.name.toLowerCase().startsWith(q) - a.name.toLowerCase().startsWith(q)) || ((pri[b.kind] || 3) - (pri[a.kind] || 3)) || (b.emp - a.emp) || (b.area - a.area));
     const ym = q.match(/^(\d{1,5})\s*(bce|bc|ce|ad)?$/);
@@ -3793,7 +3877,7 @@ function setupSearch() {
       list.querySelectorAll(".res").forEach((li, i) => li.classList.toggle("active", i === active));
     } else if (ev.key === "Enter") { ev.preventDefault(); choose(shown[active].key); }
   });
-  list.addEventListener("mousedown", (ev) => { const li = ev.target.closest("[data-k]"); if (li) { ev.preventDefault(); choose(li.dataset.k); } });
+  list.addEventListener("mousedown", (ev) => { if (ev.target.closest("[data-tab]")) return ev.preventDefault(); const li = ev.target.closest("[data-k]"); if (li) { ev.preventDefault(); choose(li.dataset.k); } });
   input.addEventListener("blur", () => setTimeout(() => { list.hidden = true; if (!phone() || !input.value) document.body.classList.remove("searching"); }, 150));
   $("#searchCancel").addEventListener("click", () => { input.value = ""; list.hidden = true; input.blur(); document.body.classList.remove("searching"); });
 }
@@ -3838,7 +3922,8 @@ function toast(msg) {
   t.textContent = msg; t.classList.add("on"); clearTimeout(S.toastT); S.toastT = setTimeout(() => t.classList.remove("on"), 3500);
 }
 function setupUI() {
-  new ResizeObserver(() => { const c = $("#col"); document.documentElement.style.setProperty("--sheet-h", `${c.innerHTML ? c.offsetHeight : 0}px`); }).observe($("#col"));
+  new ResizeObserver(() => { const sh = $("#sheet"); document.documentElement.style.setProperty("--sheet-h", `${phone() ? sh.offsetHeight : 0}px`); }).observe($("#sheet"));
+  setupSheet();
   document.addEventListener("click", (ev) => { // the section tabs, wherever they appear (header, phone tab bar, cards)
     const t = ev.target.closest("[data-tab]"); if (!t) return;
     ev.preventDefault(); $("#search").blur();
