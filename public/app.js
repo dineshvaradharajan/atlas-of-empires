@@ -2695,7 +2695,7 @@ async function openChapter(n, opts = {}) {
   const C = S.cine; if (!C?.chapters?.length) return;
   n = Math.max(0, Math.min(C.chapters.length - 1, n));
   const ch = C.chapters[n];
-  if (!opts.keepPlay) stopPlay();
+  if (!opts.keepPlay) { stopPlay(); S.playedChap = null; } // a stage opened by hand starts afresh
   S.chap = n; S.wt = opts.t ?? ch.t1;
   S.wIdx = opts.wIdx ?? eventAt(S.wt); // -1 until the chapter's first event
   S.subAt = performance.now(); S.warMap = null;
@@ -2726,7 +2726,7 @@ function playChapter(chain) { // animate the current chapter from its start; wit
     const t = Math.min(ch.t1, S.wt + (dt * (S.cineSpeed || 1) * (ch.t1 - ch.t0)) / dur);
     setStoryT(t);
     if (t < ch.t1) { S.cineRaf = requestAnimationFrame(tick); return; }
-    S.cinePlay = false; draw();
+    S.cinePlay = false; S.playedChap = n; draw();
     if (!S.chain || n >= S.cine.chapters.length - 1) return stopPlay();
     const sp = S.cineSpeed || 1;
     S.chainTimer = setTimeout(async () => {
@@ -3545,7 +3545,16 @@ function togglePlay() {
     const tick = () => { if (!S.playing) return; const ms = ageMoments(ageOf(S.moment.year)), i = ms.indexOf(S.moment); if (i < 0 || i >= ms.length - 1) return stopPlay(); openMoment(ms[i + 1].id, true).then(() => { S.stepTimer = setTimeout(tick, 5000); }); };
     S.stepTimer = setTimeout(tick, 1200); return;
   }
-  if (story()) { setPlayIcon(true); playChapter(false); return; } // this stage
+  if (story()) { // the war plays on, stage after stage; once a stage has played to its end, Play carries on with the next (after the last, from the start)
+    const C = S.cine, ch = C.chapters[S.chap];
+    if (S.playedChap === S.chap && S.wt >= ch.t1 - 1e-4) {
+      const nx = S.chap < C.chapters.length - 1 ? S.chap + 1 : 0;
+      S.playing = -1; setPlayIcon(true);
+      openChapter(nx, { t: C.chapters[nx].t0, keepPlay: true }).then(() => { if (S.playing && S.chap === nx) playChapter(true); });
+      return;
+    }
+    setPlayIcon(true); playChapter(true); return;
+  }
   if (S.war) {
     setPlayIcon(true);
     if (S.wp >= S.cineK.D - 0.05) { S.shotIdx = -1; setWp(0); }
@@ -3622,7 +3631,7 @@ function warStageBar() {
   let last = -99, py = null; // a year label where the year changes between stages, if there is room
   const yrs = C.chapters.map((c, i) => { const y = Math.floor(c.t0 + 1e-9); if (y === py) return ""; py = y; const x = G[i].x; if (x - last < gap || x > 100 - gap * 0.8) return ""; last = x; return `<span style="left:${x.toFixed(2)}%">${shortYear(y)}</span>`; }).join("");
   const wy = Math.floor((S.wt ?? S.year) + 1e-9);
-  return `<div class="wtl"><button class="play" id="play" aria-label="Play this stage">${playSvg(S.playing)}</button>
+  return `<div class="wtl"><button class="play" id="play" aria-label="${S.playing ? "Pause" : "Play the war"}">${playSvg(S.playing)}</button>
     <div class="wlane"><div class="whead"><b>${S.chap + 1} of ${n} · ${esc(ch.title)}</b><span>${esc(chapRange(ch))}</span><em class="wnow" aria-live="off"></em></div>
     <div class="wbar" role="group" aria-label="Stages of the war">${segs}<div class="wcur" style="left:${g.x.toFixed(2)}%;width:${g.w.toFixed(2)}%">${evs}<i class="wph"></i></div></div>
     <div class="wyrs" aria-hidden="true">${yrs}</div></div>
