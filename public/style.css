@@ -55,6 +55,7 @@ svg { flex: none; }
 #app svg:not(.chart-s):not(.pc) { fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
 body.sdock { --dock-h: 144px; }
 body.jdock { --dock-h: 172px; }
+body.wdock { --dock-h: 84px; }
 body.nodock { --dock-h: 0px; --dock-b: 0px; }
 
 #app { position: fixed; inset: 0; overflow: hidden; }
@@ -458,6 +459,30 @@ body.sdock #dock { border-radius: 24px; }
 .echip.on { background: var(--ink); color: var(--bg); }
 .echip.on i { background: var(--highlight); border-color: #fff; }
 .chips .none { align-self: center; font-size: 13px; color: var(--ink-3); white-space: nowrap; }
+/* a war in stages: one time bar, a segment per stage, the current one named with its events and a playhead */
+.wtl { display: flex; align-items: center; gap: 16px; height: 100%; padding: 0 16px 0 18px; }
+.wlane { flex: 1; min-width: 0; }
+.whead { display: flex; align-items: baseline; gap: 10px; min-width: 0; margin-bottom: 7px; font: 400 13px/18px var(--sans); color: var(--ink-3); white-space: nowrap; }
+.whead b { min-width: 0; overflow: hidden; text-overflow: ellipsis; font: 700 14px/18px var(--sans); color: var(--ink); }
+.whead em { margin-left: auto; padding-left: 8px; font: 600 13px/18px var(--sans); font-style: normal; color: var(--ink); font-variant-numeric: lining-nums tabular-nums; }
+.wbar { position: relative; height: 14px; }
+.wseg { position: absolute; top: 3px; height: 8px; padding: 0; border: 0; border-left: 2px solid var(--bg); border-radius: 3px; background: var(--rule); background-clip: padding-box; }
+.wseg:first-child { border-left: 0; }
+.wseg.seen { background: var(--ink-3); background-clip: padding-box; }
+.wseg.on { background: var(--ink); background-clip: padding-box; }
+.wseg:hover { top: 1px; height: 12px; background: var(--ink-2); background-clip: padding-box; }
+.wcur { position: absolute; top: 0; height: 14px; pointer-events: none; }
+.wev { position: absolute; top: 1px; width: 12px; height: 12px; margin-left: -6px; padding: 0; border: 2px solid var(--bg); border-radius: 6px; background: var(--ink-3); pointer-events: auto; z-index: 2; }
+.wev.seen { background: var(--bg); border-color: var(--ink); }
+.wev.on { top: -1px; width: 16px; height: 16px; margin-left: -8px; border-radius: 8px; background: var(--highlight); border: 3px solid var(--bg); box-shadow: 0 0 0 1px var(--ink); z-index: 3; }
+.wev:hover { transform: scale(1.25); z-index: 4; }
+.wph { position: absolute; top: -6px; width: 3px; height: 26px; margin-left: -1.5px; border-radius: 2px; background: var(--highlight); pointer-events: none; z-index: 1; }
+.wseg::after, .wev::after { content: attr(data-label); display: none; position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); padding: 4px 8px; border-radius: 6px; background: var(--ink); color: var(--bg); font: 600 12px var(--sans); white-space: nowrap; pointer-events: none; z-index: 6; }
+.wseg:hover::after, .wev:hover::after { display: block; }
+.wseg.l::after, .wev.l::after { left: 0; transform: none; }
+.wseg.r::after, .wev.r::after { left: auto; right: 0; transform: none; }
+.wyrs { position: relative; height: 14px; margin-top: 5px; font-size: 11px; line-height: 14px; color: var(--ink-3); pointer-events: none; }
+.wyrs span { position: absolute; white-space: nowrap; }
 /* an empire: one timeline, rulers as named spans, events as markers on it */
 .etl { display: flex; align-items: center; gap: 18px; height: 100%; padding: 12px 16px 12px 14px; }
 .eplay { display: flex; flex-direction: column; align-items: center; gap: 8px; flex: none; width: 76px; }
@@ -577,6 +602,7 @@ body.sdock #dock { border-radius: 24px; }
   :root { --gut: 16px; --tab-h: 64px; --sheet-h: 0px; --dock-ph: 0px; }
   body.sdock { --dock-ph: 128px; }
   body.jdock { --dock-ph: 166px; }
+  body.wdock { --dock-ph: 82px; }
   #bar { top: calc(12px + env(safe-area-inset-top)); left: 16px; right: 16px; }
   #bar .tabs { display: none; }
   .brand { height: 44px; padding: 0 14px; font-size: 13px; gap: 8px; border-radius: 22px; }
@@ -636,6 +662,8 @@ body.sdock #dock { border-radius: 24px; }
   .echip { height: 40px; font-size: 13px; padding: 0 14px 0 11px; max-width: 280px; }
   .etl { gap: 10px; padding: 10px 12px; }
   .etl .pillbtn { display: none; }
+  .wtl { gap: 12px; padding: 0 16px 6px 14px; }
+  .wtl .pillbtn, .whead span { display: none; }
   .eplay { width: 48px; gap: 6px; }
   .eplay .play { width: 48px; height: 48px; }
   .eyear { font-size: 14px; }

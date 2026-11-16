@@ -2788,6 +2788,7 @@ function updateHud() {
   }
   const nowHTML = now.slice(0, 4).join("");
   const nl = $("#cNow"); if (nl.dataset.h !== nowHTML) { nl.innerHTML = nowHTML; nl.dataset.h = nowHTML; }
+  warDockHead();
   const e = w.events[S.wIdx], te = e ? evTime(e) : 0;
   const reached = e && (ch ? te >= ch.t0 - 0.01 && te <= t + 1e-6 && inChapter(e.lonlat, ch) : S.cineK.T[S.wIdx + 1] <= t + 1e-6);
   const show = reached && (!S.cinePlay || performance.now() - S.subAt < 6500);
@@ -3531,14 +3532,52 @@ function storyDock(parts, chips, playLabel, worldYear, partsLabel, chipsLabel) {
     <div class="chips" role="group" aria-label="${esc(chipsLabel)}">${chips || `<span class="none">No events recorded in this part</span>`}</div>
     <button class="pillbtn" data-act="world-in" data-year="${worldYear}">${I.globe}The world in ${shortYear(worldYear)}</button></div></div>`;
 }
+// A war told in stages: one time bar. Each stage is a segment as long as it lasted (with a minimum width so a short
+// one can still be clicked), the current stage is named above it, its events are markers on it, and a playhead shows
+// the date on the map. Other stages are named on hover.
+function stageGeom(C, cur) { // the current stage gets at least 14% of the bar, so its events have room
+  if (S.stageGeom?.c === C && S.stageGeom.cur === cur) return S.stageGeom.segs;
+  const durs = C.chapters.map((c) => Math.max(0, c.t1 - c.t0)), tot = durs.reduce((a, b) => a + b, 0) || 1;
+  const wts = durs.map((d) => Math.max(d, tot / 28)), rest = wts.reduce((a, b) => a + b, 0) - wts[cur];
+  wts[cur] = Math.max(wts[cur], (0.14 * rest) / 0.86);
+  const W = rest + wts[cur];
+  let x = 0;
+  const segs = wts.map((wt) => { const s = { x: (100 * x) / W, w: (100 * wt) / W }; x += wt; return s; });
+  S.stageGeom = { c: C, cur, segs };
+  return segs;
+}
+const tipEdge = (x) => (x > 85 ? " r" : x < 15 ? " l" : ""); // tooltips near the ends open inwards
+function warStageBar() {
+  const C = S.cine, w = S.war, n = C.chapters.length, ch = C.chapters[S.chap], seen = new Set(P.w[w.id] || []), G = stageGeom(C, S.chap);
+  const segs = C.chapters.map((c, i) => { const g = G[i];
+    return `<button class="wseg ${i === S.chap ? "on" : i < S.chap ? "seen" : ""}${tipEdge(g.x + g.w / 2)}" data-chap="${i}" style="left:${g.x.toFixed(2)}%;width:${g.w.toFixed(2)}%" aria-pressed="${i === S.chap}" aria-label="Stage ${i + 1} of ${n}: ${esc(c.title)}, ${esc(chapRange(c))}" data-label="${i + 1} · ${esc(c.title)} · ${esc(chapRange(c, true))}"></button>`; }).join("");
+  const g = G[S.chap], len = Math.max(1e-6, ch.t1 - ch.t0);
+  const evs = chapterEvents(ch).map(({ e, i, t }) => { const f = Math.max(0, Math.min(1, (t - ch.t0) / len)), when = e.label || shortYear(e.year);
+    return `<button class="wev${i === S.wIdx ? " on" : seen.has(i) ? " seen" : ""}${tipEdge(g.x + f * g.w)}" data-wev="${i}" style="left:${(100 * f).toFixed(2)}%" aria-label="${esc(when)}: ${esc(e.text)}" data-label="${esc(when)} · ${esc(short(e.text, 44))}"></button>`; }).join("");
+  const gap = (100 * 40) / Math.max(200, innerWidth - (innerWidth <= 760 ? 100 : 380)); // ~40 px between year labels
+  let last = -99, py = null; // a year label where the year changes between stages, if there is room
+  const yrs = C.chapters.map((c, i) => { const y = Math.floor(c.t0 + 1e-9); if (y === py) return ""; py = y; const x = G[i].x; if (x - last < gap || x > 100 - gap * 0.8) return ""; last = x; return `<span style="left:${x.toFixed(2)}%">${shortYear(y)}</span>`; }).join("");
+  const wy = Math.floor((S.wt ?? S.year) + 1e-9);
+  return `<div class="wtl"><button class="play" id="play" aria-label="Play this stage">${playSvg(S.playing)}</button>
+    <div class="wlane"><div class="whead"><b>${S.chap + 1} of ${n} · ${esc(ch.title)}</b><span>${esc(chapRange(ch))}</span><em class="wnow" aria-live="off"></em></div>
+    <div class="wbar" role="group" aria-label="Stages of the war">${segs}<div class="wcur" style="left:${g.x.toFixed(2)}%;width:${g.w.toFixed(2)}%">${evs}<i class="wph"></i></div></div>
+    <div class="wyrs" aria-hidden="true">${yrs}</div></div>
+    <button class="pillbtn" data-act="world-in" data-year="${wy}">${I.globe}The world in ${shortYear(wy)}</button></div>`;
+}
+function warDockHead() { // the playhead and the date follow the war's clock (every frame while a stage plays)
+  const el = $("#dock");
+  if (!S.war || !story() || el.dataset.mode !== "war") return;
+  const ch = S.cine.chapters[S.chap], t = S.wt ?? ch.t0, y = Math.floor(t + 1e-9);
+  const ph = el.querySelector(".wph"); if (ph) ph.style.left = `${(100 * Math.max(0, Math.min(1, (t - ch.t0) / Math.max(1e-6, ch.t1 - ch.t0)))).toFixed(2)}%`;
+  const e = !S.playing && S.wIdx >= 0 ? S.war.events[S.wIdx] : null;
+  const nw = el.querySelector(".wnow"); if (nw) nw.textContent = e?.label || (t >= 0 ? `${MON3[Math.max(0, Math.min(11, Math.floor((t - y) * 12)))]} ${y}` : shortYear(y));
+}
 function renderDock() {
   const el = $("#dock"), mode = dockMode();
   let h = "";
+  document.body.classList.toggle("wdock", mode === "war" && !!story());
   if (mode === "war" && story()) {
-    const C = S.cine, w = S.war, seen = new Set(P.w[w.id] || []);
-    const parts = C.chapters.map((c, i) => partBtn(i, S.chap, i === S.chap ? `Stage ${i + 1} of ${C.chapters.length} · ${chapRange(c, true)}` : `${i + 1} · ${chapRange(c, true).replace(/^[A-Z][a-z]{2}(–[A-Z][a-z]{2})? /, "")}`, c.title, "", `data-chap="${i}"`)).join("");
-    const chips = chapterEvents(C.chapters[S.chap]).map(({ e, i }) => evChip((e.label || shortYear(e.year)).replace(/\s+\d{4}$/, ""), e.text, i === S.wIdx ? "on" : seen.has(i) ? "seen" : "", `data-wev="${i}"`)).join("");
-    h = storyDock(parts, chips, "Play this stage", Math.floor(S.wt ?? S.year), "Stages of the war", "Events in this stage");
+    h = warStageBar();
   } else if (mode === "war") {
     const w = S.war, seen = new Set(P.w[w.id] || []);
     const years = [...new Set(w.events.map((e) => e.year))], cy = w.events[S.wIdx]?.year ?? years[0], ci = years.indexOf(cy);
@@ -3585,6 +3624,7 @@ function renderDock() {
   if (el.dataset.h !== h) { el.innerHTML = h; el.dataset.h = h; el.dataset.mode = mode; }
   if (mode === "time") dockMarks();
   if (mode === "time" || mode === "journey") updateDock();
+  if (mode === "war") warDockHead();
   el.querySelector(".part.on")?.scrollIntoView({ block: "nearest", inline: "center" });
   el.querySelector(".echip.on")?.scrollIntoView({ block: "nearest", inline: "center" });
 }
@@ -3891,7 +3931,7 @@ function setupUI() {
     S.restoring = true;
     try { await applyHash(parseHash()); } finally { setTimeout(() => (S.restoring = false), 0); }
   });
-  addEventListener("resize", () => renderSide());
+  addEventListener("resize", () => { renderSide(); renderDock(); }); // the war bar spaces its year labels by width
   addEventListener("keydown", (ev) => {
     if (ev.target.matches("input, textarea")) return;
     const step = ev.shiftKey ? 1 : 10;
