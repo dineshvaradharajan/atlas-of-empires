@@ -1,0 +1,8406 @@
+{
+ "war": "mexican-american-war",
+ "start": "1846-04-25",
+ "end": "1848-05-30",
+ "note": "There was no continuous front: shaded areas show the ground US forces held in Mexico as it grew (and the Californio rising of 1846–47); areas and arrows are approximate reconstructions from campaign maps and the cited accounts.",
+ "dataNote": "Drawn on 1847 borders throughout; the occupied areas show the wartime changes. The 1847 border data covers only parts of Alta California, so much of the province shows as unrecorded until US or Californio forces held it.",
+ "chapters": [
+  {
+   "id": "rio-grande",
+   "title": "Taylor on the Rio Grande",
+   "start": "1846-04-25",
+   "end": "1846-05-18",
+   "bbox": [
+    -98.25,
+    25.15,
+    -96.95,
+    26.35
+   ],
+   "arrows": [
+    "Mexican cavalry cross the Rio Grande and ambush Thornton's patrol (25 April 1846)",
+    "Arista's army crosses the Rio Grande below Matamoros (30 April – 8 May 1846)",
+    "Taylor marches to secure his supply base at Point Isabel (1–2 May 1846)",
+    "Taylor returns to relieve Fort Texas: Palo Alto and Resaca de la Palma (7–9 May 1846)",
+    "Arista's beaten army recrosses the river and retreats toward Linares (9–18 May 1846)",
+    "Taylor crosses the Rio Grande and occupies Matamoros (18 May 1846)"
+   ],
+   "text": "In March 1846 General Zachary Taylor's army marched into the land between the Nueces and the Rio Grande, which both Texas and Mexico claimed, and built Fort Texas opposite Matamoros. On 25 April Mexican cavalry who had crossed the river ambushed a US patrol, and in early May Mexican guns bombarded the fort while Taylor secured his supply base at Point Isabel. Marching back, Taylor beat General Mariano Arista's larger army at Palo Alto on 8 May and routed it at Resaca de la Palma the next day; Congress declared war on 13 May, and on 18 May Taylor crossed the Rio Grande and occupied Matamoros."
+  },
+  {
+   "id": "monterrey",
+   "title": "Up the Rio Grande to Monterrey",
+   "start": "1846-05-18",
+   "end": "1846-09-26",
+   "bbox": [
+    -100.9,
+    25.0,
+    -97.1,
+    26.8
+   ],
+   "arrows": [
+    "Taylor's army moves up the Rio Grande to Camargo (July – August 1846)",
+    "Taylor advances on Monterrey by way of Cerralvo (late August – 20 September 1846)",
+    "Worth's division swings west to the Saltillo road and fights into the city (20–24 September 1846)",
+    "Ampudia's army marches out of Monterrey by the Saltillo road (25 September 1846)"
+   ],
+   "text": "Taylor moved his army up the Rio Grande to Camargo, where disease swept through his camps, and from there marched inland by way of Cerralvo. On 21 September he attacked Monterrey, held by General Pedro de Ampudia, and after three days of fighting, much of it house to house, the Mexicans were pushed back into the central plaza. On 24 September Ampudia gave up the city in return for an eight-week armistice and the right to march his army out of the city, terms that President Polk rejected."
+  },
+  {
+   "id": "california",
+   "title": "The conquest of California",
+   "start": "1846-06-14",
+   "end": "1847-01-13",
+   "bbox": [
+    -123.2,
+    32.3,
+    -115.7,
+    39.2
+   ],
+   "arrows": [
+    "Bear Flag rebels seize Sonoma (14 June 1846)",
+    "Sloat's sailors and marines land at Monterey (7 July 1846)",
+    "Stockton lands at San Pedro and enters Los Angeles (1–13 August 1846)",
+    "Flores's Californios drive the Americans out of Los Angeles (22–30 September 1846)",
+    "Kearny marches from Santa Fe to California (25 September – 12 December 1846)",
+    "Frémont's California Battalion marches south (late November 1846 – 13 January 1847)",
+    "Stockton and Kearny march from San Diego to Los Angeles (29 December 1846 – 10 January 1847)"
+   ],
+   "text": "On 14 June 1846 American settlers seized Sonoma and proclaimed a California Republic, and in July the US Navy took Monterey, the capital, and Yerba Buena (San Francisco) without a fight; on 13 August Commodore Robert Stockton entered Los Angeles. In late September the Californios rose under José María Flores and drove the small US garrisons out of Los Angeles, Santa Barbara and San Diego, though the Americans soon retook San Diego. General Stephen W. Kearny, arriving from New Mexico with about 100 dragoons, was cut up by Andrés Pico's lancers at San Pasqual on 6 December. Stockton and Kearny then marched north, won at the San Gabriel River and La Mesa on 8–9 January 1847 and retook Los Angeles, and on 13 January the Californios surrendered to John C. Frémont at Cahuenga."
+  },
+  {
+   "id": "new-mexico",
+   "title": "Kearny takes New Mexico",
+   "start": "1846-06-30",
+   "end": "1847-03-03",
+   "bbox": [
+    -108.4,
+    28.3,
+    -103.0,
+    38.3
+   ],
+   "arrows": [
+    "Kearny's Army of the West marches down the Santa Fe Trail (June – August 1846)",
+    "Armijo abandons Apache Canyon and flees to Chihuahua (August 1846)",
+    "Doniphan's Missouri volunteers march down the Rio Grande to El Paso (December 1846)",
+    "Price marches north against the Taos rebels (January – February 1847)",
+    "Doniphan marches on Chihuahua (8 February – 2 March 1847)"
+   ],
+   "text": "At the end of June 1846 Kearny led his Army of the West down the Santa Fe Trail from Fort Leavenworth. Governor Manuel Armijo abandoned his defences at Apache Canyon and fled south, and on 18 August Kearny took possession of Santa Fe and New Mexico without a shot. In December Colonel Alexander Doniphan's Missouri volunteers marched south, won at El Brazito on Christmas Day and occupied El Paso del Norte, while in January 1847 Hispano and Pueblo rebels killed Governor Charles Bent at Taos and were crushed by Colonel Sterling Price at Taos Pueblo on 3–5 February. On 28 February Doniphan beat the Chihuahua army at the Sacramento River and entered Chihuahua two days later."
+  },
+  {
+   "id": "buena-vista",
+   "title": "Saltillo and Buena Vista",
+   "start": "1846-11-13",
+   "end": "1847-02-28",
+   "bbox": [
+    -102.4,
+    24.75,
+    -99.9,
+    26.05
+   ],
+   "arrows": [
+    "Worth's division occupies Saltillo (16 November 1846)",
+    "Wool's column marches from Monclova by way of Parras to Agua Nueva (November – December 1846)",
+    "Santa Anna marches north from San Luis Potosí (27 January – 22 February 1847)",
+    "Taylor falls back from Agua Nueva to La Angostura (21 February 1847)",
+    "Santa Anna withdraws to Agua Nueva and back toward San Luis Potosí (late February 1847)"
+   ],
+   "text": "Taylor ended the armistice, and General William Worth occupied Saltillo on 16 November 1846, and General John Wool's column, which had marched from San Antonio by way of Monclova and Parras, joined Taylor and in December moved to Agua Nueva, south of Saltillo. Many of Taylor's regulars were then taken for Scott's landing at Veracruz, and Santa Anna marched north from San Luis Potosí with more than 20,000 men, losing thousands on the way. As he approached, Taylor fell back to the narrow pass of La Angostura near the Buena Vista hacienda, where on 22–23 February 1847 his 4,600 men, mostly volunteers, held off some 15,000 Mexicans until Santa Anna withdrew."
+  },
+  {
+   "id": "veracruz",
+   "title": "The landing at Veracruz",
+   "start": "1847-03-09",
+   "end": "1847-03-30",
+   "bbox": [
+    -96.7,
+    18.85,
+    -95.95,
+    19.45
+   ],
+   "arrows": [
+    "Scott's army lands on Collado Beach (9 March 1847)",
+    "The siege line closes round Veracruz from Collado to Vergara (10–13 March 1847)"
+   ],
+   "text": "President Polk decided to strike at Mexico City from the sea. On 9 March 1847 General Winfield Scott landed about 12,000 men unopposed on Collado Beach, south of Veracruz, and within days his troops had closed a seven-mile siege line round the walled city. From 22 March army and navy guns bombarded Veracruz, killing hundreds of civilians, and on 29 March the city and the island fortress of San Juan de Ulúa surrendered."
+  },
+  {
+   "id": "cerro-gordo",
+   "title": "From Cerro Gordo to Puebla",
+   "start": "1847-04-02",
+   "end": "1847-05-16",
+   "bbox": [
+    -98.45,
+    18.6,
+    -95.95,
+    19.85
+   ],
+   "arrows": [
+    "Scott's advance up the National Road to Plan del Río (2–12 April 1847)",
+    "Scott's flank march round the Mexican left at Cerro Gordo (17–18 April 1847)",
+    "Pursuit to Jalapa and Perote (19–22 April 1847)",
+    "Worth's division advances to Puebla (May 1847)"
+   ],
+   "text": "Eager to leave the coast before the yellow-fever season, Scott marched inland along the National Road in early April. Santa Anna blocked the road at the mountain pass of Cerro Gordo, but scouts including Captain Robert E. Lee found a way round his left, and on 18 April the Mexican army was routed, losing more than 1,000 killed and wounded and about 3,000 prisoners. Scott's troops pushed on to Jalapa, took the fortress of Perote on 22 April, and on 15 May occupied Puebla, Mexico's second-largest city, without a fight."
+  },
+  {
+   "id": "mexico-city",
+   "title": "The fall of Mexico City",
+   "start": "1847-08-07",
+   "end": "1847-09-15",
+   "bbox": [
+    -99.45,
+    18.95,
+    -98.0,
+    19.65
+   ],
+   "arrows": [
+    "Scott marches from Puebla into the Valley of Mexico (7–11 August 1847)",
+    "Round Lake Chalco to San Agustín (15–18 August 1847)",
+    "Contreras and Churubusco (19–20 August 1847)",
+    "Molino del Rey and Chapultepec (8–13 September 1847)",
+    "US troops march into the capital (14 September 1847)"
+   ],
+   "text": "After waiting at Puebla for reinforcements, Scott cut loose from the coast and marched on Mexico City on 7 August with about 10,000 men. Skirting the lakes to the south, he routed General Gabriel Valencia at Contreras on 19–20 August and stormed the fortified convent of Churubusco the same day; an armistice followed, but peace talks broke down on 6 September. The Americans took Molino del Rey on 8 September and stormed Chapultepec Castle on 13 September, then fought their way to the city gates, and after Santa Anna withdrew in the night Scott's army marched into the capital on 14 September."
+  },
+  {
+   "id": "occupation",
+   "title": "Occupation and peace",
+   "start": "1847-09-15",
+   "end": "1848-05-30",
+   "bbox": [
+    -100.6,
+    18.7,
+    -95.95,
+    20.8
+   ],
+   "arrows": [
+    "Santa Anna leaves the capital and joins the siege of Puebla (14–22 September 1847)",
+    "Santa Anna moves out to intercept Lane at Huamantla (early October 1847)",
+    "Lane's relief column marches from Veracruz to Huamantla and Puebla (October 1847)"
+   ],
+   "text": "While Scott held the capital, Mexican forces besieged the small US garrison left at Puebla and Santa Anna joined them, but a relief column under General Joseph Lane beat him at Huamantla on 9 October and relieved Puebla on 12 October. Mexico's government moved to Querétaro, guerrillas attacked the convoys, and by November Scott had garrisons at Jalapa, Perote and other posts along the road to the coast. On 2 February 1848 the envoy Nicholas Trist and Mexican commissioners signed the Treaty of Guadalupe Hidalgo, which gave the United States about 55 percent of Mexico's territory for $15 million. Fighting formally ended on 6 March, and after both countries had ratified the treaty, ratifications were exchanged at Querétaro on 30 May 1848."
+  }
+ ],
+ "fronts": [],
+ "occupations": [
+  {
+   "name": "US-held lower Rio Grande, Nuevo León and Saltillo (1846–1848)",
+   "side": 0,
+   "keys": [
+    {
+     "date": "1846-04-25",
+     "coords": [
+      [
+       -98.05,
+       28.35
+      ],
+      [
+       -96.6,
+       28.35
+      ],
+      [
+       -96.6,
+       25.96
+      ],
+      [
+       -97.14,
+       25.96
+      ],
+      [
+       -97.3,
+       25.94
+      ],
+      [
+       -97.42,
+       25.905
+      ],
+      [
+       -97.48,
+       25.888
+      ],
+      [
+       -97.53,
+       25.89
+      ],
+      [
+       -97.6,
+       25.95
+      ],
+      [
+       -97.68,
+       26.02
+      ],
+      [
+       -97.72,
+       26.2
+      ],
+      [
+       -97.85,
+       26.7
+      ],
+      [
+       -97.95,
+       27.4
+      ]
+     ]
+    },
+    {
+     "date": "1846-05-17",
+     "coords": [
+      [
+       -98.05,
+       28.35
+      ],
+      [
+       -96.6,
+       28.35
+      ],
+      [
+       -96.6,
+       25.96
+      ],
+      [
+       -97.14,
+       25.96
+      ],
+      [
+       -97.3,
+       25.94
+      ],
+      [
+       -97.42,
+       25.905
+      ],
+      [
+       -97.48,
+       25.888
+      ],
+      [
+       -97.53,
+       25.89
+      ],
+      [
+       -97.6,
+       25.95
+      ],
+      [
+       -97.68,
+       26.02
+      ],
+      [
+       -97.72,
+       26.2
+      ],
+      [
+       -97.85,
+       26.7
+      ],
+      [
+       -97.95,
+       27.4
+      ]
+     ]
+    },
+    {
+     "date": "1846-05-18",
+     "coords": [
+      [
+       -98.05,
+       28.35
+      ],
+      [
+       -96.6,
+       28.35
+      ],
+      [
+       -96.6,
+       25.62
+      ],
+      [
+       -97.3,
+       25.6
+      ],
+      [
+       -97.62,
+       25.64
+      ],
+      [
+       -97.82,
+       25.78
+      ],
+      [
+       -97.88,
+       26.06
+      ],
+      [
+       -97.85,
+       26.7
+      ],
+      [
+       -97.95,
+       27.4
+      ]
+     ]
+    },
+    {
+     "date": "1846-07-06",
+     "coords": [
+      [
+       -98.05,
+       28.35
+      ],
+      [
+       -96.6,
+       28.35
+      ],
+      [
+       -96.6,
+       25.62
+      ],
+      [
+       -97.3,
+       25.6
+      ],
+      [
+       -97.62,
+       25.64
+      ],
+      [
+       -97.82,
+       25.78
+      ],
+      [
+       -97.88,
+       26.06
+      ],
+      [
+       -97.85,
+       26.7
+      ],
+      [
+       -97.95,
+       27.4
+      ]
+     ]
+    },
+    {
+     "date": "1846-08-08",
+     "coords": [
+      [
+       -99.1,
+       28.95
+      ],
+      [
+       -98.4,
+       28.6
+      ],
+      [
+       -96.6,
+       28.35
+      ],
+      [
+       -96.6,
+       25.6
+      ],
+      [
+       -97.3,
+       25.6
+      ],
+      [
+       -97.62,
+       25.64
+      ],
+      [
+       -98.0,
+       25.78
+      ],
+      [
+       -98.4,
+       25.86
+      ],
+      [
+       -98.85,
+       26.05
+      ],
+      [
+       -99.05,
+       26.18
+      ],
+      [
+       -99.25,
+       26.4
+      ],
+      [
+       -99.2,
+       26.65
+      ],
+      [
+       -99.1,
+       27.1
+      ]
+     ]
+    },
+    {
+     "date": "1846-09-09",
+     "coords": [
+      [
+       -99.1,
+       28.95
+      ],
+      [
+       -98.4,
+       28.6
+      ],
+      [
+       -96.6,
+       28.35
+      ],
+      [
+       -96.6,
+       25.6
+      ],
+      [
+       -97.3,
+       25.6
+      ],
+      [
+       -97.62,
+       25.64
+      ],
+      [
+       -98.0,
+       25.78
+      ],
+      [
+       -98.4,
+       25.86
+      ],
+      [
+       -98.85,
+       25.98
+      ],
+      [
+       -99.3,
+       25.92
+      ],
+      [
+       -99.75,
+       25.95
+      ],
+      [
+       -99.85,
+       26.15
+      ],
+      [
+       -99.55,
+       26.35
+      ],
+      [
+       -99.25,
+       26.45
+      ],
+      [
+       -99.2,
+       26.65
+      ],
+      [
+       -99.1,
+       27.1
+      ]
+     ]
+    },
+    {
+     "date": "1846-09-20",
+     "coords": [
+      [
+       -99.1,
+       28.95
+      ],
+      [
+       -98.4,
+       28.6
+      ],
+      [
+       -96.6,
+       28.35
+      ],
+      [
+       -96.6,
+       25.6
+      ],
+      [
+       -97.3,
+       25.6
+      ],
+      [
+       -97.62,
+       25.64
+      ],
+      [
+       -98.0,
+       25.78
+      ],
+      [
+       -98.4,
+       25.86
+      ],
+      [
+       -98.85,
+       25.95
+      ],
+      [
+       -99.4,
+       25.8
+      ],
+      [
+       -99.9,
+       25.72
+      ],
+      [
+       -100.2,
+       25.7
+      ],
+      [
+       -100.28,
+       25.72
+      ],
+      [
+       -100.3,
+       25.78
+      ],
+      [
+       -100.15,
+       25.95
+      ],
+      [
+       -99.85,
+       26.18
+      ],
+      [
+       -99.55,
+       26.38
+      ],
+      [
+       -99.25,
+       26.45
+      ],
+      [
+       -99.2,
+       26.65
+      ],
+      [
+       -99.1,
+       27.1
+      ]
+     ]
+    },
+    {
+     "date": "1846-09-24",
+     "coords": [
+      [
+       -99.1,
+       28.95
+      ],
+      [
+       -98.4,
+       28.6
+      ],
+      [
+       -96.6,
+       28.35
+      ],
+      [
+       -96.6,
+       25.6
+      ],
+      [
+       -97.3,
+       25.6
+      ],
+      [
+       -97.62,
+       25.64
+      ],
+      [
+       -98.0,
+       25.78
+      ],
+      [
+       -98.4,
+       25.86
+      ],
+      [
+       -98.85,
+       25.95
+      ],
+      [
+       -99.4,
+       25.8
+      ],
+      [
+       -99.9,
+       25.72
+      ],
+      [
+       -100.2,
+       25.7
+      ],
+      [
+       -100.28,
+       25.72
+      ],
+      [
+       -100.3,
+       25.78
+      ],
+      [
+       -100.15,
+       25.95
+      ],
+      [
+       -99.85,
+       26.18
+      ],
+      [
+       -99.55,
+       26.38
+      ],
+      [
+       -99.25,
+       26.45
+      ],
+      [
+       -99.2,
+       26.65
+      ],
+      [
+       -99.1,
+       27.1
+      ]
+     ]
+    },
+    {
+     "date": "1846-09-25",
+     "coords": [
+      [
+       -99.1,
+       28.95
+      ],
+      [
+       -98.4,
+       28.6
+      ],
+      [
+       -96.6,
+       28.35
+      ],
+      [
+       -96.6,
+       25.6
+      ],
+      [
+       -97.3,
+       25.6
+      ],
+      [
+       -97.62,
+       25.64
+      ],
+      [
+       -98.0,
+       25.78
+      ],
+      [
+       -98.4,
+       25.86
+      ],
+      [
+       -98.85,
+       25.95
+      ],
+      [
+       -99.4,
+       25.75
+      ],
+      [
+       -99.9,
+       25.55
+      ],
+      [
+       -100.25,
+       25.5
+      ],
+      [
+       -100.55,
+       25.55
+      ],
+      [
+       -100.6,
+       25.75
+      ],
+      [
+       -100.35,
+       25.95
+      ],
+      [
+       -99.85,
+       26.2
+      ],
+      [
+       -99.55,
+       26.38
+      ],
+      [
+       -99.25,
+       26.45
+      ],
+      [
+       -99.2,
+       26.65
+      ],
+      [
+       -99.1,
+       27.1
+      ]
+     ]
+    },
+    {
+     "date": "1846-11-15",
+     "coords": [
+      [
+       -99.1,
+       28.95
+      ],
+      [
+       -98.4,
+       28.6
+      ],
+      [
+       -96.6,
+       28.35
+      ],
+      [
+       -96.6,
+       25.6
+      ],
+      [
+       -97.3,
+       25.6
+      ],
+      [
+       -97.62,
+       25.64
+      ],
+      [
+       -98.0,
+       25.78
+      ],
+      [
+       -98.4,
+       25.86
+      ],
+      [
+       -98.85,
+       25.95
+      ],
+      [
+       -99.4,
+       25.75
+      ],
+      [
+       -99.9,
+       25.55
+      ],
+      [
+       -100.25,
+       25.5
+      ],
+      [
+       -100.55,
+       25.55
+      ],
+      [
+       -100.6,
+       25.75
+      ],
+      [
+       -100.35,
+       25.95
+      ],
+      [
+       -99.85,
+       26.2
+      ],
+      [
+       -99.55,
+       26.38
+      ],
+      [
+       -99.25,
+       26.45
+      ],
+      [
+       -99.2,
+       26.65
+      ],
+      [
+       -99.1,
+       27.1
+      ]
+     ]
+    },
+    {
+     "date": "1846-11-16",
+     "coords": [
+      [
+       -99.1,
+       28.95
+      ],
+      [
+       -98.4,
+       28.6
+      ],
+      [
+       -96.6,
+       28.35
+      ],
+      [
+       -96.6,
+       25.6
+      ],
+      [
+       -97.3,
+       25.6
+      ],
+      [
+       -97.62,
+       25.64
+      ],
+      [
+       -98.0,
+       25.78
+      ],
+      [
+       -98.4,
+       25.86
+      ],
+      [
+       -98.85,
+       25.95
+      ],
+      [
+       -99.4,
+       25.75
+      ],
+      [
+       -99.9,
+       25.55
+      ],
+      [
+       -100.25,
+       25.5
+      ],
+      [
+       -100.6,
+       25.4
+      ],
+      [
+       -100.85,
+       25.28
+      ],
+      [
+       -101.1,
+       25.3
+      ],
+      [
+       -101.15,
+       25.45
+      ],
+      [
+       -100.95,
+       25.55
+      ],
+      [
+       -100.65,
+       25.62
+      ],
+      [
+       -100.6,
+       25.75
+      ],
+      [
+       -100.35,
+       25.95
+      ],
+      [
+       -99.85,
+       26.2
+      ],
+      [
+       -99.55,
+       26.38
+      ],
+      [
+       -99.25,
+       26.45
+      ],
+      [
+       -99.2,
+       26.65
+      ],
+      [
+       -99.1,
+       27.1
+      ]
+     ]
+    },
+    {
+     "date": "1846-12-20",
+     "coords": [
+      [
+       -99.1,
+       28.95
+      ],
+      [
+       -98.4,
+       28.6
+      ],
+      [
+       -96.6,
+       28.35
+      ],
+      [
+       -96.6,
+       25.6
+      ],
+      [
+       -97.3,
+       25.6
+      ],
+      [
+       -97.62,
+       25.64
+      ],
+      [
+       -98.0,
+       25.78
+      ],
+      [
+       -98.4,
+       25.86
+      ],
+      [
+       -98.85,
+       25.95
+      ],
+      [
+       -99.4,
+       25.75
+      ],
+      [
+       -99.9,
+       25.55
+      ],
+      [
+       -100.25,
+       25.5
+      ],
+      [
+       -100.6,
+       25.4
+      ],
+      [
+       -100.85,
+       25.28
+      ],
+      [
+       -101.1,
+       25.3
+      ],
+      [
+       -101.15,
+       25.45
+      ],
+      [
+       -100.95,
+       25.55
+      ],
+      [
+       -100.65,
+       25.62
+      ],
+      [
+       -100.6,
+       25.75
+      ],
+      [
+       -100.35,
+       25.95
+      ],
+      [
+       -99.85,
+       26.2
+      ],
+      [
+       -99.55,
+       26.38
+      ],
+      [
+       -99.25,
+       26.45
+      ],
+      [
+       -99.2,
+       26.65
+      ],
+      [
+       -99.1,
+       27.1
+      ]
+     ]
+    },
+    {
+     "date": "1846-12-21",
+     "coords": [
+      [
+       -99.1,
+       28.95
+      ],
+      [
+       -98.4,
+       28.6
+      ],
+      [
+       -96.6,
+       28.35
+      ],
+      [
+       -96.6,
+       25.6
+      ],
+      [
+       -97.3,
+       25.6
+      ],
+      [
+       -97.62,
+       25.64
+      ],
+      [
+       -98.0,
+       25.78
+      ],
+      [
+       -98.4,
+       25.86
+      ],
+      [
+       -98.85,
+       25.95
+      ],
+      [
+       -99.4,
+       25.75
+      ],
+      [
+       -99.9,
+       25.55
+      ],
+      [
+       -100.25,
+       25.5
+      ],
+      [
+       -100.6,
+       25.4
+      ],
+      [
+       -100.85,
+       25.28
+      ],
+      [
+       -100.98,
+       25.12
+      ],
+      [
+       -101.2,
+       25.12
+      ],
+      [
+       -101.18,
+       25.32
+      ],
+      [
+       -101.15,
+       25.45
+      ],
+      [
+       -100.95,
+       25.55
+      ],
+      [
+       -100.65,
+       25.62
+      ],
+      [
+       -100.6,
+       25.75
+      ],
+      [
+       -100.35,
+       25.95
+      ],
+      [
+       -99.85,
+       26.2
+      ],
+      [
+       -99.55,
+       26.38
+      ],
+      [
+       -99.25,
+       26.45
+      ],
+      [
+       -99.2,
+       26.65
+      ],
+      [
+       -99.1,
+       27.1
+      ]
+     ]
+    },
+    {
+     "date": "1847-02-20",
+     "coords": [
+      [
+       -99.1,
+       28.95
+      ],
+      [
+       -98.4,
+       28.6
+      ],
+      [
+       -96.6,
+       28.35
+      ],
+      [
+       -96.6,
+       25.6
+      ],
+      [
+       -97.3,
+       25.6
+      ],
+      [
+       -97.62,
+       25.64
+      ],
+      [
+       -98.0,
+       25.78
+      ],
+      [
+       -98.4,
+       25.86
+      ],
+      [
+       -98.85,
+       25.95
+      ],
+      [
+       -99.4,
+       25.75
+      ],
+      [
+       -99.9,
+       25.55
+      ],
+      [
+       -100.25,
+       25.5
+      ],
+      [
+       -100.6,
+       25.4
+      ],
+      [
+       -100.85,
+       25.28
+      ],
+      [
+       -100.98,
+       25.12
+      ],
+      [
+       -101.2,
+       25.12
+      ],
+      [
+       -101.18,
+       25.32
+      ],
+      [
+       -101.15,
+       25.45
+      ],
+      [
+       -100.95,
+       25.55
+      ],
+      [
+       -100.65,
+       25.62
+      ],
+      [
+       -100.6,
+       25.75
+      ],
+      [
+       -100.35,
+       25.95
+      ],
+      [
+       -99.85,
+       26.2
+      ],
+      [
+       -99.55,
+       26.38
+      ],
+      [
+       -99.25,
+       26.45
+      ],
+      [
+       -99.2,
+       26.65
+      ],
+      [
+       -99.1,
+       27.1
+      ]
+     ]
+    },
+    {
+     "date": "1847-02-21",
+     "coords": [
+      [
+       -99.1,
+       28.95
+      ],
+      [
+       -98.4,
+       28.6
+      ],
+      [
+       -96.6,
+       28.35
+      ],
+      [
+       -96.6,
+       25.6
+      ],
+      [
+       -97.3,
+       25.6
+      ],
+      [
+       -97.62,
+       25.64
+      ],
+      [
+       -98.0,
+       25.78
+      ],
+      [
+       -98.4,
+       25.86
+      ],
+      [
+       -98.85,
+       25.95
+      ],
+      [
+       -99.4,
+       25.75
+      ],
+      [
+       -99.9,
+       25.55
+      ],
+      [
+       -100.25,
+       25.5
+      ],
+      [
+       -100.6,
+       25.4
+      ],
+      [
+       -100.88,
+       25.27
+      ],
+      [
+       -101.1,
+       25.28
+      ],
+      [
+       -101.15,
+       25.45
+      ],
+      [
+       -100.95,
+       25.55
+      ],
+      [
+       -100.65,
+       25.62
+      ],
+      [
+       -100.6,
+       25.75
+      ],
+      [
+       -100.35,
+       25.95
+      ],
+      [
+       -99.85,
+       26.2
+      ],
+      [
+       -99.55,
+       26.38
+      ],
+      [
+       -99.25,
+       26.45
+      ],
+      [
+       -99.2,
+       26.65
+      ],
+      [
+       -99.1,
+       27.1
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "name": "US-held Tampico (from November 1846)",
+   "side": 0,
+   "keys": [
+    {
+     "date": "1846-11-15",
+     "coords": [
+      [
+       -97.7365,
+       22.25
+      ],
+      [
+       -97.7469,
+       22.3115
+      ],
+      [
+       -97.7773,
+       22.367
+      ],
+      [
+       -97.8245,
+       22.411
+      ],
+      [
+       -97.884,
+       22.4392
+      ],
+      [
+       -97.95,
+       22.449
+      ],
+      [
+       -98.016,
+       22.4392
+      ],
+      [
+       -98.0755,
+       22.411
+      ],
+      [
+       -98.1227,
+       22.367
+      ],
+      [
+       -98.1531,
+       22.3115
+      ],
+      [
+       -98.1635,
+       22.25
+      ],
+      [
+       -98.1531,
+       22.1885
+      ],
+      [
+       -98.1227,
+       22.133
+      ],
+      [
+       -98.0755,
+       22.089
+      ],
+      [
+       -98.016,
+       22.0608
+      ],
+      [
+       -97.95,
+       22.051
+      ],
+      [
+       -97.884,
+       22.0608
+      ],
+      [
+       -97.8245,
+       22.089
+      ],
+      [
+       -97.7773,
+       22.133
+      ],
+      [
+       -97.7469,
+       22.1885
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "name": "US-held New Mexico (1846–1848)",
+   "side": 0,
+   "keys": [
+    {
+     "date": "1846-08-15",
+     "coords": [
+      [
+       -104.977,
+       35.59
+      ],
+      [
+       -104.9889,
+       35.6515
+      ],
+      [
+       -105.0234,
+       35.707
+      ],
+      [
+       -105.0772,
+       35.751
+      ],
+      [
+       -105.1449,
+       35.7792
+      ],
+      [
+       -105.22,
+       35.789
+      ],
+      [
+       -105.2951,
+       35.7792
+      ],
+      [
+       -105.3628,
+       35.751
+      ],
+      [
+       -105.4166,
+       35.707
+      ],
+      [
+       -105.4511,
+       35.6515
+      ],
+      [
+       -105.463,
+       35.59
+      ],
+      [
+       -105.4511,
+       35.5285
+      ],
+      [
+       -105.4166,
+       35.473
+      ],
+      [
+       -105.3628,
+       35.429
+      ],
+      [
+       -105.2951,
+       35.4008
+      ],
+      [
+       -105.22,
+       35.391
+      ],
+      [
+       -105.1449,
+       35.4008
+      ],
+      [
+       -105.0772,
+       35.429
+      ],
+      [
+       -105.0234,
+       35.473
+      ],
+      [
+       -104.9889,
+       35.5285
+      ]
+     ]
+    },
+    {
+     "date": "1846-08-18",
+     "coords": [
+      [
+       -106.25,
+       35.95
+      ],
+      [
+       -105.6,
+       35.95
+      ],
+      [
+       -104.95,
+       35.75
+      ],
+      [
+       -104.95,
+       35.4
+      ],
+      [
+       -105.6,
+       35.35
+      ],
+      [
+       -106.25,
+       35.45
+      ]
+     ]
+    },
+    {
+     "date": "1846-10-06",
+     "coords": [
+      [
+       -106.2,
+       36.95
+      ],
+      [
+       -105.35,
+       36.95
+      ],
+      [
+       -105.05,
+       36.6
+      ],
+      [
+       -104.9,
+       36.2
+      ],
+      [
+       -104.95,
+       35.6
+      ],
+      [
+       -105.1,
+       35.3
+      ],
+      [
+       -105.6,
+       35.1
+      ],
+      [
+       -106.2,
+       34.5
+      ],
+      [
+       -106.6,
+       33.8
+      ],
+      [
+       -107.05,
+       33.8
+      ],
+      [
+       -107.1,
+       34.4
+      ],
+      [
+       -107.0,
+       35.0
+      ],
+      [
+       -106.95,
+       35.4
+      ],
+      [
+       -106.5,
+       36.0
+      ],
+      [
+       -106.3,
+       36.5
+      ]
+     ]
+    },
+    {
+     "date": "1847-01-19",
+     "coords": [
+      [
+       -106.2,
+       36.95
+      ],
+      [
+       -105.35,
+       36.95
+      ],
+      [
+       -105.05,
+       36.6
+      ],
+      [
+       -104.9,
+       36.2
+      ],
+      [
+       -104.95,
+       35.6
+      ],
+      [
+       -105.1,
+       35.3
+      ],
+      [
+       -105.6,
+       35.1
+      ],
+      [
+       -106.2,
+       34.5
+      ],
+      [
+       -106.6,
+       33.8
+      ],
+      [
+       -107.05,
+       33.8
+      ],
+      [
+       -107.1,
+       34.4
+      ],
+      [
+       -107.0,
+       35.0
+      ],
+      [
+       -106.95,
+       35.4
+      ],
+      [
+       -106.5,
+       36.0
+      ],
+      [
+       -106.3,
+       36.5
+      ]
+     ]
+    },
+    {
+     "date": "1847-01-20",
+     "coords": [
+      [
+       -106.4,
+       35.92
+      ],
+      [
+       -105.8,
+       35.92
+      ],
+      [
+       -105.55,
+       35.8
+      ],
+      [
+       -105.15,
+       35.78
+      ],
+      [
+       -104.95,
+       35.6
+      ],
+      [
+       -105.1,
+       35.3
+      ],
+      [
+       -105.6,
+       35.1
+      ],
+      [
+       -106.2,
+       34.5
+      ],
+      [
+       -106.6,
+       33.8
+      ],
+      [
+       -107.05,
+       33.8
+      ],
+      [
+       -107.1,
+       34.4
+      ],
+      [
+       -107.0,
+       35.0
+      ],
+      [
+       -106.95,
+       35.4
+      ],
+      [
+       -106.6,
+       35.85
+      ]
+     ]
+    },
+    {
+     "date": "1847-01-24",
+     "coords": [
+      [
+       -106.4,
+       35.92
+      ],
+      [
+       -105.8,
+       35.92
+      ],
+      [
+       -105.55,
+       35.8
+      ],
+      [
+       -105.15,
+       35.78
+      ],
+      [
+       -104.95,
+       35.6
+      ],
+      [
+       -105.1,
+       35.3
+      ],
+      [
+       -105.6,
+       35.1
+      ],
+      [
+       -106.2,
+       34.5
+      ],
+      [
+       -106.6,
+       33.8
+      ],
+      [
+       -107.05,
+       33.8
+      ],
+      [
+       -107.1,
+       34.4
+      ],
+      [
+       -107.0,
+       35.0
+      ],
+      [
+       -106.95,
+       35.4
+      ],
+      [
+       -106.6,
+       35.85
+      ]
+     ]
+    },
+    {
+     "date": "1847-01-25",
+     "coords": [
+      [
+       -106.4,
+       36.1
+      ],
+      [
+       -105.8,
+       36.1
+      ],
+      [
+       -105.6,
+       35.9
+      ],
+      [
+       -105.15,
+       35.78
+      ],
+      [
+       -104.95,
+       35.6
+      ],
+      [
+       -105.1,
+       35.3
+      ],
+      [
+       -105.6,
+       35.1
+      ],
+      [
+       -106.2,
+       34.5
+      ],
+      [
+       -106.6,
+       33.8
+      ],
+      [
+       -107.05,
+       33.8
+      ],
+      [
+       -107.1,
+       34.4
+      ],
+      [
+       -107.0,
+       35.0
+      ],
+      [
+       -106.95,
+       35.4
+      ],
+      [
+       -106.6,
+       35.95
+      ]
+     ]
+    },
+    {
+     "date": "1847-01-29",
+     "coords": [
+      [
+       -106.4,
+       36.1
+      ],
+      [
+       -105.8,
+       36.1
+      ],
+      [
+       -105.6,
+       35.9
+      ],
+      [
+       -105.15,
+       35.78
+      ],
+      [
+       -104.95,
+       35.6
+      ],
+      [
+       -105.1,
+       35.3
+      ],
+      [
+       -105.6,
+       35.1
+      ],
+      [
+       -106.2,
+       34.5
+      ],
+      [
+       -106.6,
+       33.8
+      ],
+      [
+       -107.05,
+       33.8
+      ],
+      [
+       -107.1,
+       34.4
+      ],
+      [
+       -107.0,
+       35.0
+      ],
+      [
+       -106.95,
+       35.4
+      ],
+      [
+       -106.6,
+       35.95
+      ]
+     ]
+    },
+    {
+     "date": "1847-01-30",
+     "coords": [
+      [
+       -106.4,
+       36.25
+      ],
+      [
+       -105.8,
+       36.25
+      ],
+      [
+       -105.65,
+       36.0
+      ],
+      [
+       -105.15,
+       35.78
+      ],
+      [
+       -104.95,
+       35.6
+      ],
+      [
+       -105.1,
+       35.3
+      ],
+      [
+       -105.6,
+       35.1
+      ],
+      [
+       -106.2,
+       34.5
+      ],
+      [
+       -106.6,
+       33.8
+      ],
+      [
+       -107.05,
+       33.8
+      ],
+      [
+       -107.1,
+       34.4
+      ],
+      [
+       -107.0,
+       35.0
+      ],
+      [
+       -106.95,
+       35.4
+      ],
+      [
+       -106.6,
+       36.05
+      ]
+     ]
+    },
+    {
+     "date": "1847-02-01",
+     "coords": [
+      [
+       -106.4,
+       36.25
+      ],
+      [
+       -105.8,
+       36.25
+      ],
+      [
+       -105.5,
+       36.15
+      ],
+      [
+       -105.1,
+       36.1
+      ],
+      [
+       -104.9,
+       35.9
+      ],
+      [
+       -104.95,
+       35.6
+      ],
+      [
+       -105.1,
+       35.3
+      ],
+      [
+       -105.6,
+       35.1
+      ],
+      [
+       -106.2,
+       34.5
+      ],
+      [
+       -106.6,
+       33.8
+      ],
+      [
+       -107.05,
+       33.8
+      ],
+      [
+       -107.1,
+       34.4
+      ],
+      [
+       -107.0,
+       35.0
+      ],
+      [
+       -106.95,
+       35.4
+      ],
+      [
+       -106.6,
+       36.05
+      ]
+     ]
+    },
+    {
+     "date": "1847-02-04",
+     "coords": [
+      [
+       -106.4,
+       36.25
+      ],
+      [
+       -105.8,
+       36.25
+      ],
+      [
+       -105.5,
+       36.15
+      ],
+      [
+       -105.1,
+       36.1
+      ],
+      [
+       -104.9,
+       35.9
+      ],
+      [
+       -104.95,
+       35.6
+      ],
+      [
+       -105.1,
+       35.3
+      ],
+      [
+       -105.6,
+       35.1
+      ],
+      [
+       -106.2,
+       34.5
+      ],
+      [
+       -106.6,
+       33.8
+      ],
+      [
+       -107.05,
+       33.8
+      ],
+      [
+       -107.1,
+       34.4
+      ],
+      [
+       -107.0,
+       35.0
+      ],
+      [
+       -106.95,
+       35.4
+      ],
+      [
+       -106.6,
+       36.05
+      ]
+     ]
+    },
+    {
+     "date": "1847-02-05",
+     "coords": [
+      [
+       -106.2,
+       36.95
+      ],
+      [
+       -105.35,
+       36.95
+      ],
+      [
+       -105.05,
+       36.6
+      ],
+      [
+       -104.9,
+       36.2
+      ],
+      [
+       -104.95,
+       35.6
+      ],
+      [
+       -105.1,
+       35.3
+      ],
+      [
+       -105.6,
+       35.1
+      ],
+      [
+       -106.2,
+       34.5
+      ],
+      [
+       -106.6,
+       33.8
+      ],
+      [
+       -107.05,
+       33.8
+      ],
+      [
+       -107.1,
+       34.4
+      ],
+      [
+       -107.0,
+       35.0
+      ],
+      [
+       -106.95,
+       35.4
+      ],
+      [
+       -106.5,
+       36.0
+      ],
+      [
+       -106.3,
+       36.5
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Doniphan's column at El Paso del Norte (December 1846 – February 1847)",
+   "side": 0,
+   "keys": [
+    {
+     "date": "1846-12-27",
+     "coords": [
+      [
+       -106.2388,
+       31.72
+      ],
+      [
+       -106.2491,
+       31.7759
+      ],
+      [
+       -106.2791,
+       31.8263
+      ],
+      [
+       -106.3259,
+       31.8663
+      ],
+      [
+       -106.3847,
+       31.892
+      ],
+      [
+       -106.45,
+       31.9009
+      ],
+      [
+       -106.5153,
+       31.892
+      ],
+      [
+       -106.5741,
+       31.8663
+      ],
+      [
+       -106.6209,
+       31.8263
+      ],
+      [
+       -106.6509,
+       31.7759
+      ],
+      [
+       -106.6612,
+       31.72
+      ],
+      [
+       -106.6509,
+       31.6641
+      ],
+      [
+       -106.6209,
+       31.6137
+      ],
+      [
+       -106.5741,
+       31.5737
+      ],
+      [
+       -106.5153,
+       31.548
+      ],
+      [
+       -106.45,
+       31.5391
+      ],
+      [
+       -106.3847,
+       31.548
+      ],
+      [
+       -106.3259,
+       31.5737
+      ],
+      [
+       -106.2791,
+       31.6137
+      ],
+      [
+       -106.2491,
+       31.6641
+      ]
+     ]
+    }
+   ],
+   "end": "1847-02-08"
+  },
+  {
+   "name": "Doniphan's column in Chihuahua (March – April 1847)",
+   "side": 0,
+   "keys": [
+    {
+     "date": "1847-03-02",
+     "coords": [
+      [
+       -105.8753,
+       28.66
+      ],
+      [
+       -105.8853,
+       28.7159
+      ],
+      [
+       -105.9144,
+       28.7663
+      ],
+      [
+       -105.9597,
+       28.8063
+      ],
+      [
+       -106.0167,
+       28.832
+      ],
+      [
+       -106.08,
+       28.8409
+      ],
+      [
+       -106.1433,
+       28.832
+      ],
+      [
+       -106.2003,
+       28.8063
+      ],
+      [
+       -106.2456,
+       28.7663
+      ],
+      [
+       -106.2747,
+       28.7159
+      ],
+      [
+       -106.2847,
+       28.66
+      ],
+      [
+       -106.2747,
+       28.6041
+      ],
+      [
+       -106.2456,
+       28.5537
+      ],
+      [
+       -106.2003,
+       28.5137
+      ],
+      [
+       -106.1433,
+       28.488
+      ],
+      [
+       -106.08,
+       28.4791
+      ],
+      [
+       -106.0167,
+       28.488
+      ],
+      [
+       -105.9597,
+       28.5137
+      ],
+      [
+       -105.9144,
+       28.5537
+      ],
+      [
+       -105.8853,
+       28.6041
+      ]
+     ]
+    }
+   ],
+   "end": "1847-04-28"
+  },
+  {
+   "name": "US-held northern California (from June 1846)",
+   "side": 0,
+   "keys": [
+    {
+     "date": "1846-06-14",
+     "coords": [
+      [
+       -123.2,
+       39.3
+      ],
+      [
+       -121.2,
+       39.3
+      ],
+      [
+       -121.2,
+       38.35
+      ],
+      [
+       -122.0,
+       38.1
+      ],
+      [
+       -122.3,
+       38.03
+      ],
+      [
+       -122.7,
+       37.95
+      ],
+      [
+       -123.1,
+       38.2
+      ]
+     ]
+    },
+    {
+     "date": "1846-07-01",
+     "coords": [
+      [
+       -123.2,
+       39.3
+      ],
+      [
+       -121.2,
+       39.3
+      ],
+      [
+       -121.2,
+       38.35
+      ],
+      [
+       -122.0,
+       38.1
+      ],
+      [
+       -122.3,
+       38.03
+      ],
+      [
+       -122.7,
+       37.95
+      ],
+      [
+       -123.1,
+       38.2
+      ]
+     ]
+    },
+    {
+     "date": "1846-07-02",
+     "coords": [
+      [
+       -123.2,
+       39.3
+      ],
+      [
+       -121.2,
+       39.3
+      ],
+      [
+       -121.2,
+       38.35
+      ],
+      [
+       -122.0,
+       38.1
+      ],
+      [
+       -122.25,
+       37.95
+      ],
+      [
+       -122.33,
+       37.72
+      ],
+      [
+       -122.55,
+       37.7
+      ],
+      [
+       -122.62,
+       37.85
+      ],
+      [
+       -122.75,
+       37.95
+      ],
+      [
+       -123.1,
+       38.2
+      ]
+     ]
+    },
+    {
+     "date": "1846-07-29",
+     "coords": [
+      [
+       -123.2,
+       39.3
+      ],
+      [
+       -121.2,
+       39.3
+      ],
+      [
+       -121.2,
+       38.35
+      ],
+      [
+       -121.6,
+       37.9
+      ],
+      [
+       -121.4,
+       37.3
+      ],
+      [
+       -121.3,
+       36.8
+      ],
+      [
+       -121.55,
+       36.45
+      ],
+      [
+       -121.95,
+       36.45
+      ],
+      [
+       -122.05,
+       36.95
+      ],
+      [
+       -122.45,
+       37.3
+      ],
+      [
+       -122.6,
+       37.7
+      ],
+      [
+       -122.75,
+       37.95
+      ],
+      [
+       -123.1,
+       38.2
+      ]
+     ]
+    },
+    {
+     "date": "1846-12-13",
+     "coords": [
+      [
+       -123.2,
+       39.3
+      ],
+      [
+       -121.2,
+       39.3
+      ],
+      [
+       -121.2,
+       38.35
+      ],
+      [
+       -121.6,
+       37.9
+      ],
+      [
+       -121.4,
+       37.3
+      ],
+      [
+       -121.3,
+       36.8
+      ],
+      [
+       -121.55,
+       36.45
+      ],
+      [
+       -121.95,
+       36.45
+      ],
+      [
+       -122.05,
+       36.95
+      ],
+      [
+       -122.45,
+       37.3
+      ],
+      [
+       -122.6,
+       37.7
+      ],
+      [
+       -122.75,
+       37.95
+      ],
+      [
+       -123.1,
+       38.2
+      ]
+     ]
+    },
+    {
+     "date": "1846-12-14",
+     "coords": [
+      [
+       -123.2,
+       39.3
+      ],
+      [
+       -121.2,
+       39.3
+      ],
+      [
+       -121.2,
+       38.35
+      ],
+      [
+       -121.6,
+       37.9
+      ],
+      [
+       -121.4,
+       37.3
+      ],
+      [
+       -121.3,
+       36.8
+      ],
+      [
+       -121.55,
+       36.45
+      ],
+      [
+       -120.9,
+       35.7
+      ],
+      [
+       -120.4,
+       35.2
+      ],
+      [
+       -120.75,
+       35.05
+      ],
+      [
+       -121.3,
+       35.7
+      ],
+      [
+       -121.95,
+       36.45
+      ],
+      [
+       -122.05,
+       36.95
+      ],
+      [
+       -122.45,
+       37.3
+      ],
+      [
+       -122.6,
+       37.7
+      ],
+      [
+       -122.75,
+       37.95
+      ],
+      [
+       -123.1,
+       38.2
+      ]
+     ]
+    },
+    {
+     "date": "1846-12-27",
+     "coords": [
+      [
+       -123.2,
+       39.3
+      ],
+      [
+       -121.2,
+       39.3
+      ],
+      [
+       -121.2,
+       38.35
+      ],
+      [
+       -121.6,
+       37.9
+      ],
+      [
+       -121.4,
+       37.3
+      ],
+      [
+       -121.3,
+       36.8
+      ],
+      [
+       -121.55,
+       36.45
+      ],
+      [
+       -120.9,
+       35.7
+      ],
+      [
+       -120.3,
+       35.0
+      ],
+      [
+       -119.55,
+       34.55
+      ],
+      [
+       -119.5,
+       34.36
+      ],
+      [
+       -119.9,
+       34.38
+      ],
+      [
+       -120.55,
+       34.45
+      ],
+      [
+       -120.75,
+       35.05
+      ],
+      [
+       -121.3,
+       35.7
+      ],
+      [
+       -121.95,
+       36.45
+      ],
+      [
+       -122.05,
+       36.95
+      ],
+      [
+       -122.45,
+       37.3
+      ],
+      [
+       -122.6,
+       37.7
+      ],
+      [
+       -122.75,
+       37.95
+      ],
+      [
+       -123.1,
+       38.2
+      ]
+     ]
+    },
+    {
+     "date": "1847-01-08",
+     "coords": [
+      [
+       -123.2,
+       39.3
+      ],
+      [
+       -121.2,
+       39.3
+      ],
+      [
+       -121.2,
+       38.35
+      ],
+      [
+       -121.6,
+       37.9
+      ],
+      [
+       -121.4,
+       37.3
+      ],
+      [
+       -121.3,
+       36.8
+      ],
+      [
+       -121.55,
+       36.45
+      ],
+      [
+       -120.9,
+       35.7
+      ],
+      [
+       -120.3,
+       35.0
+      ],
+      [
+       -119.55,
+       34.55
+      ],
+      [
+       -118.95,
+       34.45
+      ],
+      [
+       -118.35,
+       34.35
+      ],
+      [
+       -118.38,
+       34.18
+      ],
+      [
+       -118.95,
+       34.12
+      ],
+      [
+       -119.5,
+       34.3
+      ],
+      [
+       -119.9,
+       34.38
+      ],
+      [
+       -120.55,
+       34.45
+      ],
+      [
+       -120.75,
+       35.05
+      ],
+      [
+       -121.3,
+       35.7
+      ],
+      [
+       -121.95,
+       36.45
+      ],
+      [
+       -122.05,
+       36.95
+      ],
+      [
+       -122.45,
+       37.3
+      ],
+      [
+       -122.6,
+       37.7
+      ],
+      [
+       -122.75,
+       37.95
+      ],
+      [
+       -123.1,
+       38.2
+      ]
+     ]
+    },
+    {
+     "date": "1847-01-13",
+     "coords": [
+      [
+       -123.2,
+       39.3
+      ],
+      [
+       -121.2,
+       39.3
+      ],
+      [
+       -121.2,
+       38.35
+      ],
+      [
+       -121.6,
+       37.9
+      ],
+      [
+       -121.4,
+       37.3
+      ],
+      [
+       -121.3,
+       36.8
+      ],
+      [
+       -121.55,
+       36.45
+      ],
+      [
+       -120.9,
+       35.7
+      ],
+      [
+       -120.3,
+       35.0
+      ],
+      [
+       -119.55,
+       34.55
+      ],
+      [
+       -118.95,
+       34.45
+      ],
+      [
+       -118.3,
+       34.38
+      ],
+      [
+       -118.15,
+       34.12
+      ],
+      [
+       -118.4,
+       34.0
+      ],
+      [
+       -118.95,
+       34.05
+      ],
+      [
+       -119.5,
+       34.3
+      ],
+      [
+       -119.9,
+       34.38
+      ],
+      [
+       -120.55,
+       34.45
+      ],
+      [
+       -120.75,
+       35.05
+      ],
+      [
+       -121.3,
+       35.7
+      ],
+      [
+       -121.95,
+       36.45
+      ],
+      [
+       -122.05,
+       36.95
+      ],
+      [
+       -122.45,
+       37.3
+      ],
+      [
+       -122.6,
+       37.7
+      ],
+      [
+       -122.75,
+       37.95
+      ],
+      [
+       -123.1,
+       38.2
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "name": "US-held Monterey (July 1846)",
+   "side": 0,
+   "keys": [
+    {
+     "date": "1846-07-07",
+     "coords": [
+      [
+       -121.6262,
+       36.62
+      ],
+      [
+       -121.6371,
+       36.6759
+      ],
+      [
+       -121.6689,
+       36.7263
+      ],
+      [
+       -121.7184,
+       36.7663
+      ],
+      [
+       -121.7808,
+       36.792
+      ],
+      [
+       -121.85,
+       36.8009
+      ],
+      [
+       -121.9192,
+       36.792
+      ],
+      [
+       -121.9816,
+       36.7663
+      ],
+      [
+       -122.0311,
+       36.7263
+      ],
+      [
+       -122.0629,
+       36.6759
+      ],
+      [
+       -122.0738,
+       36.62
+      ],
+      [
+       -122.0629,
+       36.5641
+      ],
+      [
+       -122.0311,
+       36.5137
+      ],
+      [
+       -121.9816,
+       36.4737
+      ],
+      [
+       -121.9192,
+       36.448
+      ],
+      [
+       -121.85,
+       36.4391
+      ],
+      [
+       -121.7808,
+       36.448
+      ],
+      [
+       -121.7184,
+       36.4737
+      ],
+      [
+       -121.6689,
+       36.5137
+      ],
+      [
+       -121.6371,
+       36.5641
+      ]
+     ]
+    }
+   ],
+   "end": "1846-07-30"
+  },
+  {
+   "name": "US-held southern California (July – September 1846)",
+   "side": 0,
+   "keys": [
+    {
+     "date": "1846-07-29",
+     "coords": [
+      [
+       -116.927,
+       32.76
+      ],
+      [
+       -116.937,
+       32.8131
+      ],
+      [
+       -116.9658,
+       32.861
+      ],
+      [
+       -117.0107,
+       32.899
+      ],
+      [
+       -117.0673,
+       32.9234
+      ],
+      [
+       -117.13,
+       32.9318
+      ],
+      [
+       -117.1927,
+       32.9234
+      ],
+      [
+       -117.2493,
+       32.899
+      ],
+      [
+       -117.2942,
+       32.861
+      ],
+      [
+       -117.323,
+       32.8131
+      ],
+      [
+       -117.333,
+       32.76
+      ],
+      [
+       -117.323,
+       32.7069
+      ],
+      [
+       -117.2942,
+       32.659
+      ],
+      [
+       -117.2493,
+       32.621
+      ],
+      [
+       -117.1927,
+       32.5966
+      ],
+      [
+       -117.13,
+       32.5882
+      ],
+      [
+       -117.0673,
+       32.5966
+      ],
+      [
+       -117.0107,
+       32.621
+      ],
+      [
+       -116.9658,
+       32.659
+      ],
+      [
+       -116.937,
+       32.7069
+      ]
+     ]
+    },
+    {
+     "date": "1846-08-13",
+     "coords": [
+      [
+       -120.1,
+       34.65
+      ],
+      [
+       -119.4,
+       34.6
+      ],
+      [
+       -118.6,
+       34.4
+      ],
+      [
+       -117.8,
+       34.25
+      ],
+      [
+       -117.2,
+       33.7
+      ],
+      [
+       -116.85,
+       33.2
+      ],
+      [
+       -116.85,
+       32.55
+      ],
+      [
+       -117.3,
+       32.55
+      ],
+      [
+       -117.4,
+       33.1
+      ],
+      [
+       -117.8,
+       33.55
+      ],
+      [
+       -118.4,
+       33.7
+      ],
+      [
+       -118.9,
+       34.0
+      ],
+      [
+       -119.5,
+       34.3
+      ],
+      [
+       -120.1,
+       34.4
+      ]
+     ]
+    },
+    {
+     "date": "1846-09-22",
+     "coords": [
+      [
+       -120.1,
+       34.65
+      ],
+      [
+       -119.4,
+       34.6
+      ],
+      [
+       -118.6,
+       34.4
+      ],
+      [
+       -117.8,
+       34.25
+      ],
+      [
+       -117.2,
+       33.7
+      ],
+      [
+       -116.85,
+       33.2
+      ],
+      [
+       -116.85,
+       32.55
+      ],
+      [
+       -117.3,
+       32.55
+      ],
+      [
+       -117.4,
+       33.1
+      ],
+      [
+       -117.8,
+       33.55
+      ],
+      [
+       -118.4,
+       33.7
+      ],
+      [
+       -118.9,
+       34.0
+      ],
+      [
+       -119.5,
+       34.3
+      ],
+      [
+       -120.1,
+       34.4
+      ]
+     ]
+    },
+    {
+     "date": "1846-09-29",
+     "coords": [
+      [
+       -116.927,
+       32.76
+      ],
+      [
+       -116.937,
+       32.8131
+      ],
+      [
+       -116.9658,
+       32.861
+      ],
+      [
+       -117.0107,
+       32.899
+      ],
+      [
+       -117.0673,
+       32.9234
+      ],
+      [
+       -117.13,
+       32.9318
+      ],
+      [
+       -117.1927,
+       32.9234
+      ],
+      [
+       -117.2493,
+       32.899
+      ],
+      [
+       -117.2942,
+       32.861
+      ],
+      [
+       -117.323,
+       32.8131
+      ],
+      [
+       -117.333,
+       32.76
+      ],
+      [
+       -117.323,
+       32.7069
+      ],
+      [
+       -117.2942,
+       32.659
+      ],
+      [
+       -117.2493,
+       32.621
+      ],
+      [
+       -117.1927,
+       32.5966
+      ],
+      [
+       -117.13,
+       32.5882
+      ],
+      [
+       -117.0673,
+       32.5966
+      ],
+      [
+       -117.0107,
+       32.621
+      ],
+      [
+       -116.9658,
+       32.659
+      ],
+      [
+       -116.937,
+       32.7069
+      ]
+     ]
+    }
+   ],
+   "end": "1846-10-01"
+  },
+  {
+   "name": "US-held San Diego and the south (from late October 1846)",
+   "side": 0,
+   "keys": [
+    {
+     "date": "1846-10-25",
+     "coords": [
+      [
+       -116.927,
+       32.76
+      ],
+      [
+       -116.937,
+       32.8131
+      ],
+      [
+       -116.9658,
+       32.861
+      ],
+      [
+       -117.0107,
+       32.899
+      ],
+      [
+       -117.0673,
+       32.9234
+      ],
+      [
+       -117.13,
+       32.9318
+      ],
+      [
+       -117.1927,
+       32.9234
+      ],
+      [
+       -117.2493,
+       32.899
+      ],
+      [
+       -117.2942,
+       32.861
+      ],
+      [
+       -117.323,
+       32.8131
+      ],
+      [
+       -117.333,
+       32.76
+      ],
+      [
+       -117.323,
+       32.7069
+      ],
+      [
+       -117.2942,
+       32.659
+      ],
+      [
+       -117.2493,
+       32.621
+      ],
+      [
+       -117.1927,
+       32.5966
+      ],
+      [
+       -117.13,
+       32.5882
+      ],
+      [
+       -117.0673,
+       32.5966
+      ],
+      [
+       -117.0107,
+       32.621
+      ],
+      [
+       -116.9658,
+       32.659
+      ],
+      [
+       -116.937,
+       32.7069
+      ]
+     ]
+    },
+    {
+     "date": "1846-12-29",
+     "coords": [
+      [
+       -116.927,
+       32.76
+      ],
+      [
+       -116.937,
+       32.8131
+      ],
+      [
+       -116.9658,
+       32.861
+      ],
+      [
+       -117.0107,
+       32.899
+      ],
+      [
+       -117.0673,
+       32.9234
+      ],
+      [
+       -117.13,
+       32.9318
+      ],
+      [
+       -117.1927,
+       32.9234
+      ],
+      [
+       -117.2493,
+       32.899
+      ],
+      [
+       -117.2942,
+       32.861
+      ],
+      [
+       -117.323,
+       32.8131
+      ],
+      [
+       -117.333,
+       32.76
+      ],
+      [
+       -117.323,
+       32.7069
+      ],
+      [
+       -117.2942,
+       32.659
+      ],
+      [
+       -117.2493,
+       32.621
+      ],
+      [
+       -117.1927,
+       32.5966
+      ],
+      [
+       -117.13,
+       32.5882
+      ],
+      [
+       -117.0673,
+       32.5966
+      ],
+      [
+       -117.0107,
+       32.621
+      ],
+      [
+       -116.9658,
+       32.659
+      ],
+      [
+       -116.937,
+       32.7069
+      ]
+     ]
+    },
+    {
+     "date": "1847-01-04",
+     "coords": [
+      [
+       -116.95,
+       32.55
+      ],
+      [
+       -117.3,
+       32.55
+      ],
+      [
+       -117.45,
+       33.05
+      ],
+      [
+       -117.5,
+       33.35
+      ],
+      [
+       -117.2,
+       33.35
+      ],
+      [
+       -117.05,
+       33.0
+      ],
+      [
+       -116.95,
+       32.75
+      ]
+     ]
+    },
+    {
+     "date": "1847-01-08",
+     "coords": [
+      [
+       -116.95,
+       32.55
+      ],
+      [
+       -117.3,
+       32.55
+      ],
+      [
+       -117.7,
+       33.4
+      ],
+      [
+       -118.1,
+       33.75
+      ],
+      [
+       -118.15,
+       33.95
+      ],
+      [
+       -117.95,
+       34.05
+      ],
+      [
+       -117.6,
+       33.8
+      ],
+      [
+       -117.25,
+       33.4
+      ],
+      [
+       -117.05,
+       33.0
+      ],
+      [
+       -116.95,
+       32.75
+      ]
+     ]
+    },
+    {
+     "date": "1847-01-10",
+     "coords": [
+      [
+       -116.95,
+       32.55
+      ],
+      [
+       -117.3,
+       32.55
+      ],
+      [
+       -117.7,
+       33.4
+      ],
+      [
+       -118.1,
+       33.75
+      ],
+      [
+       -118.4,
+       33.85
+      ],
+      [
+       -118.45,
+       34.1
+      ],
+      [
+       -118.2,
+       34.15
+      ],
+      [
+       -117.9,
+       34.1
+      ],
+      [
+       -117.6,
+       33.8
+      ],
+      [
+       -117.25,
+       33.4
+      ],
+      [
+       -117.05,
+       33.0
+      ],
+      [
+       -116.95,
+       32.75
+      ]
+     ]
+    },
+    {
+     "date": "1847-01-13",
+     "coords": [
+      [
+       -116.4,
+       32.6
+      ],
+      [
+       -117.3,
+       32.55
+      ],
+      [
+       -118.1,
+       33.7
+      ],
+      [
+       -118.6,
+       33.95
+      ],
+      [
+       -118.7,
+       34.25
+      ],
+      [
+       -118.3,
+       34.4
+      ],
+      [
+       -117.6,
+       34.3
+      ],
+      [
+       -117.0,
+       33.9
+      ],
+      [
+       -116.5,
+       33.2
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "name": "US-held Veracruz (from March 1847)",
+   "side": 0,
+   "keys": [
+    {
+     "date": "1847-03-09",
+     "coords": [
+      [
+       -96.155,
+       19.105
+      ],
+      [
+       -96.05,
+       19.1
+      ],
+      [
+       -96.04,
+       19.16
+      ],
+      [
+       -96.12,
+       19.158
+      ]
+     ]
+    },
+    {
+     "date": "1847-03-13",
+     "coords": [
+      [
+       -96.12,
+       19.31
+      ],
+      [
+       -96.24,
+       19.31
+      ],
+      [
+       -96.31,
+       19.2
+      ],
+      [
+       -96.26,
+       19.07
+      ],
+      [
+       -96.05,
+       19.06
+      ],
+      [
+       -96.03,
+       19.15
+      ],
+      [
+       -96.12,
+       19.162
+      ],
+      [
+       -96.162,
+       19.168
+      ],
+      [
+       -96.18,
+       19.195
+      ],
+      [
+       -96.172,
+       19.222
+      ],
+      [
+       -96.15,
+       19.24
+      ]
+     ]
+    },
+    {
+     "date": "1847-03-28",
+     "coords": [
+      [
+       -96.12,
+       19.31
+      ],
+      [
+       -96.24,
+       19.31
+      ],
+      [
+       -96.31,
+       19.2
+      ],
+      [
+       -96.26,
+       19.07
+      ],
+      [
+       -96.05,
+       19.06
+      ],
+      [
+       -96.03,
+       19.15
+      ],
+      [
+       -96.12,
+       19.162
+      ],
+      [
+       -96.162,
+       19.168
+      ],
+      [
+       -96.18,
+       19.195
+      ],
+      [
+       -96.172,
+       19.222
+      ],
+      [
+       -96.15,
+       19.24
+      ]
+     ]
+    },
+    {
+     "date": "1847-03-29",
+     "coords": [
+      [
+       -96.12,
+       19.31
+      ],
+      [
+       -96.24,
+       19.31
+      ],
+      [
+       -96.31,
+       19.2
+      ],
+      [
+       -96.26,
+       19.07
+      ],
+      [
+       -96.05,
+       19.06
+      ],
+      [
+       -96.03,
+       19.15
+      ],
+      [
+       -96.08,
+       19.25
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Scott's army on the National Road (April – August 1847)",
+   "side": 0,
+   "keys": [
+    {
+     "date": "1847-04-02",
+     "coords": [
+      [
+       -96.192,
+       19.1253
+      ],
+      [
+       -96.302,
+       19.2054
+      ],
+      [
+       -96.3291,
+       19.2388
+      ],
+      [
+       -96.3349,
+       19.2805
+      ],
+      [
+       -96.318,
+       19.3195
+      ],
+      [
+       -96.2829,
+       19.3452
+      ],
+      [
+       -96.2389,
+       19.3507
+      ],
+      [
+       -96.198,
+       19.3346
+      ],
+      [
+       -96.088,
+       19.2547
+      ],
+      [
+       -96.061,
+       19.2213
+      ],
+      [
+       -96.0551,
+       19.1795
+      ],
+      [
+       -96.072,
+       19.1405
+      ],
+      [
+       -96.1071,
+       19.1148
+      ],
+      [
+       -96.151,
+       19.1093
+      ]
+     ]
+    },
+    {
+     "date": "1847-04-12",
+     "coords": [
+      [
+       -96.192,
+       19.1253
+      ],
+      [
+       -96.2874,
+       19.1968
+      ],
+      [
+       -96.4227,
+       19.2315
+      ],
+      [
+       -96.5104,
+       19.2539
+      ],
+      [
+       -96.6167,
+       19.3014
+      ],
+      [
+       -96.6505,
+       19.3287
+      ],
+      [
+       -96.6654,
+       19.3684
+      ],
+      [
+       -96.6574,
+       19.4099
+      ],
+      [
+       -96.6287,
+       19.442
+      ],
+      [
+       -96.5869,
+       19.4561
+      ],
+      [
+       -96.5433,
+       19.4486
+      ],
+      [
+       -96.4496,
+       19.4061
+      ],
+      [
+       -96.3773,
+       19.3885
+      ],
+      [
+       -96.2126,
+       19.3432
+      ],
+      [
+       -96.088,
+       19.2547
+      ],
+      [
+       -96.061,
+       19.2213
+      ],
+      [
+       -96.0551,
+       19.1795
+      ],
+      [
+       -96.072,
+       19.1405
+      ],
+      [
+       -96.1071,
+       19.1148
+      ],
+      [
+       -96.151,
+       19.1093
+      ]
+     ]
+    },
+    {
+     "date": "1847-04-17",
+     "coords": [
+      [
+       -96.192,
+       19.1253
+      ],
+      [
+       -96.2874,
+       19.1968
+      ],
+      [
+       -96.4227,
+       19.2315
+      ],
+      [
+       -96.5104,
+       19.2539
+      ],
+      [
+       -96.6167,
+       19.3014
+      ],
+      [
+       -96.6505,
+       19.3287
+      ],
+      [
+       -96.6654,
+       19.3684
+      ],
+      [
+       -96.6574,
+       19.4099
+      ],
+      [
+       -96.6287,
+       19.442
+      ],
+      [
+       -96.5869,
+       19.4561
+      ],
+      [
+       -96.5433,
+       19.4486
+      ],
+      [
+       -96.4496,
+       19.4061
+      ],
+      [
+       -96.3773,
+       19.3885
+      ],
+      [
+       -96.2126,
+       19.3432
+      ],
+      [
+       -96.088,
+       19.2547
+      ],
+      [
+       -96.061,
+       19.2213
+      ],
+      [
+       -96.0551,
+       19.1795
+      ],
+      [
+       -96.072,
+       19.1405
+      ],
+      [
+       -96.1071,
+       19.1148
+      ],
+      [
+       -96.151,
+       19.1093
+      ]
+     ]
+    },
+    {
+     "date": "1847-04-18",
+     "coords": [
+      [
+       -96.192,
+       19.1253
+      ],
+      [
+       -96.2874,
+       19.1968
+      ],
+      [
+       -96.4227,
+       19.2315
+      ],
+      [
+       -96.5104,
+       19.2539
+      ],
+      [
+       -96.6187,
+       19.3024
+      ],
+      [
+       -96.732,
+       19.3602
+      ],
+      [
+       -96.8472,
+       19.432
+      ],
+      [
+       -96.8767,
+       19.4635
+      ],
+      [
+       -96.8856,
+       19.5048
+      ],
+      [
+       -96.8716,
+       19.5448
+      ],
+      [
+       -96.8384,
+       19.5728
+      ],
+      [
+       -96.795,
+       19.5813
+      ],
+      [
+       -96.7528,
+       19.568
+      ],
+      [
+       -96.644,
+       19.4998
+      ],
+      [
+       -96.5413,
+       19.4476
+      ],
+      [
+       -96.4496,
+       19.4061
+      ],
+      [
+       -96.3773,
+       19.3885
+      ],
+      [
+       -96.2126,
+       19.3432
+      ],
+      [
+       -96.088,
+       19.2547
+      ],
+      [
+       -96.061,
+       19.2213
+      ],
+      [
+       -96.0551,
+       19.1795
+      ],
+      [
+       -96.072,
+       19.1405
+      ],
+      [
+       -96.1071,
+       19.1148
+      ],
+      [
+       -96.151,
+       19.1093
+      ]
+     ]
+    },
+    {
+     "date": "1847-04-19",
+     "coords": [
+      [
+       -96.192,
+       19.1253
+      ],
+      [
+       -96.2874,
+       19.1968
+      ],
+      [
+       -96.4227,
+       19.2315
+      ],
+      [
+       -96.5104,
+       19.2539
+      ],
+      [
+       -96.6187,
+       19.3024
+      ],
+      [
+       -96.732,
+       19.3602
+      ],
+      [
+       -96.8355,
+       19.4259
+      ],
+      [
+       -96.9499,
+       19.4537
+      ],
+      [
+       -97.0159,
+       19.4912
+      ],
+      [
+       -97.046,
+       19.5222
+      ],
+      [
+       -97.0557,
+       19.5633
+      ],
+      [
+       -97.0425,
+       19.6035
+      ],
+      [
+       -97.0099,
+       19.6321
+      ],
+      [
+       -96.9665,
+       19.6413
+      ],
+      [
+       -96.9241,
+       19.6288
+      ],
+      [
+       -96.8901,
+       19.6063
+      ],
+      [
+       -96.7645,
+       19.5741
+      ],
+      [
+       -96.644,
+       19.4998
+      ],
+      [
+       -96.5413,
+       19.4476
+      ],
+      [
+       -96.4496,
+       19.4061
+      ],
+      [
+       -96.3773,
+       19.3885
+      ],
+      [
+       -96.2126,
+       19.3432
+      ],
+      [
+       -96.088,
+       19.2547
+      ],
+      [
+       -96.061,
+       19.2213
+      ],
+      [
+       -96.0551,
+       19.1795
+      ],
+      [
+       -96.072,
+       19.1405
+      ],
+      [
+       -96.1071,
+       19.1148
+      ],
+      [
+       -96.151,
+       19.1093
+      ]
+     ]
+    },
+    {
+     "date": "1847-04-22",
+     "coords": [
+      [
+       -96.192,
+       19.1253
+      ],
+      [
+       -96.2874,
+       19.1968
+      ],
+      [
+       -96.4227,
+       19.2315
+      ],
+      [
+       -96.5104,
+       19.2539
+      ],
+      [
+       -96.6187,
+       19.3024
+      ],
+      [
+       -96.732,
+       19.3602
+      ],
+      [
+       -96.8355,
+       19.4259
+      ],
+      [
+       -96.9579,
+       19.457
+      ],
+      [
+       -97.1084,
+       19.559
+      ],
+      [
+       -97.197,
+       19.4896
+      ],
+      [
+       -97.26,
+       19.458
+      ],
+      [
+       -97.3033,
+       19.4487
+      ],
+      [
+       -97.3457,
+       19.4611
+      ],
+      [
+       -97.3759,
+       19.4921
+      ],
+      [
+       -97.3857,
+       19.5331
+      ],
+      [
+       -97.3726,
+       19.5734
+      ],
+      [
+       -97.34,
+       19.602
+      ],
+      [
+       -97.283,
+       19.6304
+      ],
+      [
+       -97.0916,
+       19.721
+      ],
+      [
+       -96.8821,
+       19.603
+      ],
+      [
+       -96.7645,
+       19.5741
+      ],
+      [
+       -96.644,
+       19.4998
+      ],
+      [
+       -96.5413,
+       19.4476
+      ],
+      [
+       -96.4496,
+       19.4061
+      ],
+      [
+       -96.3773,
+       19.3885
+      ],
+      [
+       -96.2126,
+       19.3432
+      ],
+      [
+       -96.088,
+       19.2547
+      ],
+      [
+       -96.061,
+       19.2213
+      ],
+      [
+       -96.0551,
+       19.1795
+      ],
+      [
+       -96.072,
+       19.1405
+      ],
+      [
+       -96.1071,
+       19.1148
+      ],
+      [
+       -96.151,
+       19.1093
+      ]
+     ]
+    },
+    {
+     "date": "1847-05-01",
+     "coords": [
+      [
+       -96.192,
+       19.1253
+      ],
+      [
+       -96.2874,
+       19.1968
+      ],
+      [
+       -96.4227,
+       19.2315
+      ],
+      [
+       -96.5104,
+       19.2539
+      ],
+      [
+       -96.6187,
+       19.3024
+      ],
+      [
+       -96.732,
+       19.3602
+      ],
+      [
+       -96.8355,
+       19.4259
+      ],
+      [
+       -96.9579,
+       19.457
+      ],
+      [
+       -97.1084,
+       19.559
+      ],
+      [
+       -97.197,
+       19.4896
+      ],
+      [
+       -97.26,
+       19.458
+      ],
+      [
+       -97.3033,
+       19.4487
+      ],
+      [
+       -97.3457,
+       19.4611
+      ],
+      [
+       -97.3759,
+       19.4921
+      ],
+      [
+       -97.3857,
+       19.5331
+      ],
+      [
+       -97.3726,
+       19.5734
+      ],
+      [
+       -97.34,
+       19.602
+      ],
+      [
+       -97.283,
+       19.6304
+      ],
+      [
+       -97.0916,
+       19.721
+      ],
+      [
+       -96.8821,
+       19.603
+      ],
+      [
+       -96.7645,
+       19.5741
+      ],
+      [
+       -96.644,
+       19.4998
+      ],
+      [
+       -96.5413,
+       19.4476
+      ],
+      [
+       -96.4496,
+       19.4061
+      ],
+      [
+       -96.3773,
+       19.3885
+      ],
+      [
+       -96.2126,
+       19.3432
+      ],
+      [
+       -96.088,
+       19.2547
+      ],
+      [
+       -96.061,
+       19.2213
+      ],
+      [
+       -96.0551,
+       19.1795
+      ],
+      [
+       -96.072,
+       19.1405
+      ],
+      [
+       -96.1071,
+       19.1148
+      ],
+      [
+       -96.151,
+       19.1093
+      ]
+     ]
+    },
+    {
+     "date": "1847-05-15",
+     "coords": [
+      [
+       -96.192,
+       19.1253
+      ],
+      [
+       -96.2874,
+       19.1968
+      ],
+      [
+       -96.4227,
+       19.2315
+      ],
+      [
+       -96.5104,
+       19.2539
+      ],
+      [
+       -96.6187,
+       19.3024
+      ],
+      [
+       -96.732,
+       19.3602
+      ],
+      [
+       -96.8355,
+       19.4259
+      ],
+      [
+       -96.9579,
+       19.457
+      ],
+      [
+       -97.1084,
+       19.559
+      ],
+      [
+       -97.1974,
+       19.4894
+      ],
+      [
+       -97.4064,
+       19.3799
+      ],
+      [
+       -97.5999,
+       19.264
+      ],
+      [
+       -97.7473,
+       19.1459
+      ],
+      [
+       -98.0051,
+       18.9657
+      ],
+      [
+       -98.2,
+       18.9586
+      ],
+      [
+       -98.2428,
+       18.9695
+      ],
+      [
+       -98.2741,
+       18.9993
+      ],
+      [
+       -98.2855,
+       19.04
+      ],
+      [
+       -98.2741,
+       19.0807
+      ],
+      [
+       -98.2428,
+       19.1105
+      ],
+      [
+       -98.2,
+       19.1214
+      ],
+      [
+       -98.0749,
+       19.1143
+      ],
+      [
+       -97.8527,
+       19.2741
+      ],
+      [
+       -97.7001,
+       19.396
+      ],
+      [
+       -97.4936,
+       19.5201
+      ],
+      [
+       -97.2826,
+       19.6306
+      ],
+      [
+       -97.0916,
+       19.721
+      ],
+      [
+       -96.8821,
+       19.603
+      ],
+      [
+       -96.7645,
+       19.5741
+      ],
+      [
+       -96.644,
+       19.4998
+      ],
+      [
+       -96.5413,
+       19.4476
+      ],
+      [
+       -96.4496,
+       19.4061
+      ],
+      [
+       -96.3773,
+       19.3885
+      ],
+      [
+       -96.2126,
+       19.3432
+      ],
+      [
+       -96.088,
+       19.2547
+      ],
+      [
+       -96.061,
+       19.2213
+      ],
+      [
+       -96.0551,
+       19.1795
+      ],
+      [
+       -96.072,
+       19.1405
+      ],
+      [
+       -96.1071,
+       19.1148
+      ],
+      [
+       -96.151,
+       19.1093
+      ]
+     ]
+    }
+   ],
+   "end": "1847-08-07"
+  },
+  {
+   "name": "US-held Puebla (May 1847 – June 1848)",
+   "side": 0,
+   "keys": [
+    {
+     "date": "1847-05-15",
+     "coords": [
+      [
+       -98.0765,
+       19.04
+      ],
+      [
+       -98.0825,
+       19.0763
+      ],
+      [
+       -98.1001,
+       19.1091
+      ],
+      [
+       -98.1274,
+       19.1351
+      ],
+      [
+       -98.1618,
+       19.1518
+      ],
+      [
+       -98.2,
+       19.1576
+      ],
+      [
+       -98.2382,
+       19.1518
+      ],
+      [
+       -98.2726,
+       19.1351
+      ],
+      [
+       -98.2999,
+       19.1091
+      ],
+      [
+       -98.3175,
+       19.0763
+      ],
+      [
+       -98.3235,
+       19.04
+      ],
+      [
+       -98.3175,
+       19.0037
+      ],
+      [
+       -98.2999,
+       18.9709
+      ],
+      [
+       -98.2726,
+       18.9449
+      ],
+      [
+       -98.2382,
+       18.9282
+      ],
+      [
+       -98.2,
+       18.9224
+      ],
+      [
+       -98.1618,
+       18.9282
+      ],
+      [
+       -98.1274,
+       18.9449
+      ],
+      [
+       -98.1001,
+       18.9709
+      ],
+      [
+       -98.0825,
+       19.0037
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Scott's army in the Valley of Mexico (August 1847 – June 1848)",
+   "side": 0,
+   "keys": [
+    {
+     "date": "1847-08-07",
+     "coords": [
+      [
+       -98.2859,
+       19.12
+      ],
+      [
+       -98.2915,
+       19.1535
+      ],
+      [
+       -98.3077,
+       19.1838
+      ],
+      [
+       -98.3329,
+       19.2078
+      ],
+      [
+       -98.3647,
+       19.2232
+      ],
+      [
+       -98.4,
+       19.2285
+      ],
+      [
+       -98.4353,
+       19.2232
+      ],
+      [
+       -98.4671,
+       19.2078
+      ],
+      [
+       -98.4923,
+       19.1838
+      ],
+      [
+       -98.5085,
+       19.1535
+      ],
+      [
+       -98.5141,
+       19.12
+      ],
+      [
+       -98.5085,
+       19.0865
+      ],
+      [
+       -98.4923,
+       19.0562
+      ],
+      [
+       -98.4671,
+       19.0322
+      ],
+      [
+       -98.4353,
+       19.0168
+      ],
+      [
+       -98.4,
+       19.0115
+      ],
+      [
+       -98.3647,
+       19.0168
+      ],
+      [
+       -98.3329,
+       19.0322
+      ],
+      [
+       -98.3077,
+       19.0562
+      ],
+      [
+       -98.2915,
+       19.0865
+      ]
+     ]
+    },
+    {
+     "date": "1847-08-11",
+     "coords": [
+      [
+       -98.62,
+       19.4
+      ],
+      [
+       -98.95,
+       19.37
+      ],
+      [
+       -99.01,
+       19.28
+      ],
+      [
+       -98.88,
+       19.21
+      ],
+      [
+       -98.6,
+       19.29
+      ]
+     ]
+    },
+    {
+     "date": "1847-08-15",
+     "coords": [
+      [
+       -98.93,
+       19.31
+      ],
+      [
+       -99.05,
+       19.27
+      ],
+      [
+       -99.19,
+       19.29
+      ],
+      [
+       -99.19,
+       19.22
+      ],
+      [
+       -98.95,
+       19.19
+      ],
+      [
+       -98.85,
+       19.24
+      ]
+     ]
+    },
+    {
+     "date": "1847-08-18",
+     "coords": [
+      [
+       -98.95,
+       19.27
+      ],
+      [
+       -99.12,
+       19.33
+      ],
+      [
+       -99.19,
+       19.31
+      ],
+      [
+       -99.2,
+       19.25
+      ],
+      [
+       -99.0,
+       19.2
+      ]
+     ]
+    },
+    {
+     "date": "1847-08-20",
+     "coords": [
+      [
+       -98.95,
+       19.27
+      ],
+      [
+       -99.1,
+       19.36
+      ],
+      [
+       -99.135,
+       19.37
+      ],
+      [
+       -99.16,
+       19.395
+      ],
+      [
+       -99.21,
+       19.405
+      ],
+      [
+       -99.25,
+       19.33
+      ],
+      [
+       -99.24,
+       19.27
+      ],
+      [
+       -99.0,
+       19.2
+      ]
+     ]
+    },
+    {
+     "date": "1847-09-07",
+     "coords": [
+      [
+       -98.95,
+       19.27
+      ],
+      [
+       -99.1,
+       19.36
+      ],
+      [
+       -99.135,
+       19.37
+      ],
+      [
+       -99.16,
+       19.395
+      ],
+      [
+       -99.21,
+       19.405
+      ],
+      [
+       -99.25,
+       19.33
+      ],
+      [
+       -99.24,
+       19.27
+      ],
+      [
+       -99.0,
+       19.2
+      ]
+     ]
+    },
+    {
+     "date": "1847-09-08",
+     "coords": [
+      [
+       -98.95,
+       19.27
+      ],
+      [
+       -99.1,
+       19.36
+      ],
+      [
+       -99.135,
+       19.37
+      ],
+      [
+       -99.165,
+       19.4
+      ],
+      [
+       -99.19,
+       19.42
+      ],
+      [
+       -99.205,
+       19.425
+      ],
+      [
+       -99.225,
+       19.41
+      ],
+      [
+       -99.25,
+       19.33
+      ],
+      [
+       -99.24,
+       19.27
+      ],
+      [
+       -99.0,
+       19.2
+      ]
+     ]
+    },
+    {
+     "date": "1847-09-12",
+     "coords": [
+      [
+       -98.95,
+       19.27
+      ],
+      [
+       -99.1,
+       19.36
+      ],
+      [
+       -99.135,
+       19.37
+      ],
+      [
+       -99.165,
+       19.4
+      ],
+      [
+       -99.19,
+       19.42
+      ],
+      [
+       -99.205,
+       19.425
+      ],
+      [
+       -99.225,
+       19.41
+      ],
+      [
+       -99.25,
+       19.33
+      ],
+      [
+       -99.24,
+       19.27
+      ],
+      [
+       -99.0,
+       19.2
+      ]
+     ]
+    },
+    {
+     "date": "1847-09-13",
+     "coords": [
+      [
+       -98.95,
+       19.27
+      ],
+      [
+       -99.1,
+       19.36
+      ],
+      [
+       -99.13,
+       19.38
+      ],
+      [
+       -99.145,
+       19.42
+      ],
+      [
+       -99.155,
+       19.445
+      ],
+      [
+       -99.18,
+       19.45
+      ],
+      [
+       -99.215,
+       19.43
+      ],
+      [
+       -99.25,
+       19.33
+      ],
+      [
+       -99.24,
+       19.27
+      ],
+      [
+       -99.0,
+       19.2
+      ]
+     ]
+    },
+    {
+     "date": "1847-09-14",
+     "coords": [
+      [
+       -98.95,
+       19.27
+      ],
+      [
+       -99.05,
+       19.4
+      ],
+      [
+       -99.08,
+       19.5
+      ],
+      [
+       -99.15,
+       19.52
+      ],
+      [
+       -99.22,
+       19.47
+      ],
+      [
+       -99.25,
+       19.33
+      ],
+      [
+       -99.24,
+       19.27
+      ],
+      [
+       -99.0,
+       19.2
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "name": "US posts on the road from Veracruz to Mexico City (from autumn 1847)",
+   "side": 0,
+   "keys": [
+    {
+     "date": "1847-11-01",
+     "coords": [
+      [
+       -96.192,
+       19.1253
+      ],
+      [
+       -96.2874,
+       19.1968
+      ],
+      [
+       -96.4227,
+       19.2315
+      ],
+      [
+       -96.5104,
+       19.2539
+      ],
+      [
+       -96.6187,
+       19.3024
+      ],
+      [
+       -96.732,
+       19.3602
+      ],
+      [
+       -96.8355,
+       19.4259
+      ],
+      [
+       -96.9579,
+       19.457
+      ],
+      [
+       -97.1084,
+       19.559
+      ],
+      [
+       -97.1974,
+       19.4894
+      ],
+      [
+       -97.4064,
+       19.3799
+      ],
+      [
+       -97.5999,
+       19.264
+      ],
+      [
+       -97.7473,
+       19.1459
+      ],
+      [
+       -98.0051,
+       18.9657
+      ],
+      [
+       -98.2324,
+       18.9647
+      ],
+      [
+       -98.4981,
+       19.1327
+      ],
+      [
+       -98.7001,
+       19.2709
+      ],
+      [
+       -98.9373,
+       19.2289
+      ],
+      [
+       -99.0961,
+       19.3114
+      ],
+      [
+       -99.1808,
+       19.3655
+      ],
+      [
+       -99.21,
+       19.3972
+      ],
+      [
+       -99.2185,
+       19.4386
+      ],
+      [
+       -99.2041,
+       19.4784
+      ],
+      [
+       -99.1707,
+       19.5061
+      ],
+      [
+       -99.1271,
+       19.5142
+      ],
+      [
+       -99.0852,
+       19.5005
+      ],
+      [
+       -99.0039,
+       19.4486
+      ],
+      [
+       -98.9227,
+       19.3911
+      ],
+      [
+       -98.6599,
+       19.4291
+      ],
+      [
+       -98.4019,
+       19.2673
+      ],
+      [
+       -98.1676,
+       19.1153
+      ],
+      [
+       -98.0749,
+       19.1143
+      ],
+      [
+       -97.8527,
+       19.2741
+      ],
+      [
+       -97.7001,
+       19.396
+      ],
+      [
+       -97.4936,
+       19.5201
+      ],
+      [
+       -97.2826,
+       19.6306
+      ],
+      [
+       -97.0916,
+       19.721
+      ],
+      [
+       -96.8821,
+       19.603
+      ],
+      [
+       -96.7645,
+       19.5741
+      ],
+      [
+       -96.644,
+       19.4998
+      ],
+      [
+       -96.5413,
+       19.4476
+      ],
+      [
+       -96.4496,
+       19.4061
+      ],
+      [
+       -96.3773,
+       19.3885
+      ],
+      [
+       -96.2126,
+       19.3432
+      ],
+      [
+       -96.088,
+       19.2547
+      ],
+      [
+       -96.061,
+       19.2213
+      ],
+      [
+       -96.0551,
+       19.1795
+      ],
+      [
+       -96.072,
+       19.1405
+      ],
+      [
+       -96.1071,
+       19.1148
+      ],
+      [
+       -96.151,
+       19.1093
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Californio-held southern California (September 1846 – January 1847)",
+   "side": 1,
+   "keys": [
+    {
+     "date": "1846-09-29",
+     "coords": [
+      [
+       -118.7,
+       34.3
+      ],
+      [
+       -117.8,
+       34.25
+      ],
+      [
+       -117.5,
+       33.8
+      ],
+      [
+       -117.9,
+       33.55
+      ],
+      [
+       -118.4,
+       33.7
+      ],
+      [
+       -118.6,
+       33.95
+      ]
+     ]
+    },
+    {
+     "date": "1846-10-01",
+     "coords": [
+      [
+       -120.1,
+       34.65
+      ],
+      [
+       -119.4,
+       34.6
+      ],
+      [
+       -118.6,
+       34.4
+      ],
+      [
+       -117.8,
+       34.25
+      ],
+      [
+       -117.2,
+       33.7
+      ],
+      [
+       -116.7,
+       33.2
+      ],
+      [
+       -116.6,
+       32.55
+      ],
+      [
+       -117.3,
+       32.55
+      ],
+      [
+       -117.4,
+       33.1
+      ],
+      [
+       -117.8,
+       33.55
+      ],
+      [
+       -118.4,
+       33.7
+      ],
+      [
+       -118.9,
+       34.0
+      ],
+      [
+       -119.5,
+       34.3
+      ],
+      [
+       -120.1,
+       34.4
+      ]
+     ]
+    },
+    {
+     "date": "1846-10-24",
+     "coords": [
+      [
+       -120.1,
+       34.65
+      ],
+      [
+       -119.4,
+       34.6
+      ],
+      [
+       -118.6,
+       34.4
+      ],
+      [
+       -117.8,
+       34.25
+      ],
+      [
+       -117.2,
+       33.7
+      ],
+      [
+       -116.7,
+       33.2
+      ],
+      [
+       -116.6,
+       32.55
+      ],
+      [
+       -117.3,
+       32.55
+      ],
+      [
+       -117.4,
+       33.1
+      ],
+      [
+       -117.8,
+       33.55
+      ],
+      [
+       -118.4,
+       33.7
+      ],
+      [
+       -118.9,
+       34.0
+      ],
+      [
+       -119.5,
+       34.3
+      ],
+      [
+       -120.1,
+       34.4
+      ]
+     ]
+    },
+    {
+     "date": "1846-10-25",
+     "coords": [
+      [
+       -120.1,
+       34.65
+      ],
+      [
+       -119.4,
+       34.6
+      ],
+      [
+       -118.6,
+       34.4
+      ],
+      [
+       -117.8,
+       34.25
+      ],
+      [
+       -117.2,
+       33.7
+      ],
+      [
+       -116.7,
+       33.2
+      ],
+      [
+       -116.8,
+       32.98
+      ],
+      [
+       -117.05,
+       33.03
+      ],
+      [
+       -117.3,
+       33.0
+      ],
+      [
+       -117.4,
+       33.1
+      ],
+      [
+       -117.8,
+       33.55
+      ],
+      [
+       -118.4,
+       33.7
+      ],
+      [
+       -118.9,
+       34.0
+      ],
+      [
+       -119.5,
+       34.3
+      ],
+      [
+       -120.1,
+       34.4
+      ]
+     ]
+    },
+    {
+     "date": "1846-12-26",
+     "coords": [
+      [
+       -120.1,
+       34.65
+      ],
+      [
+       -119.4,
+       34.6
+      ],
+      [
+       -118.6,
+       34.4
+      ],
+      [
+       -117.8,
+       34.25
+      ],
+      [
+       -117.2,
+       33.7
+      ],
+      [
+       -116.7,
+       33.2
+      ],
+      [
+       -116.8,
+       32.98
+      ],
+      [
+       -117.05,
+       33.03
+      ],
+      [
+       -117.3,
+       33.0
+      ],
+      [
+       -117.4,
+       33.1
+      ],
+      [
+       -117.8,
+       33.55
+      ],
+      [
+       -118.4,
+       33.7
+      ],
+      [
+       -118.9,
+       34.0
+      ],
+      [
+       -119.5,
+       34.3
+      ],
+      [
+       -120.1,
+       34.4
+      ]
+     ]
+    },
+    {
+     "date": "1846-12-27",
+     "coords": [
+      [
+       -119.4,
+       34.62
+      ],
+      [
+       -118.6,
+       34.4
+      ],
+      [
+       -117.8,
+       34.25
+      ],
+      [
+       -117.2,
+       33.7
+      ],
+      [
+       -116.7,
+       33.2
+      ],
+      [
+       -116.8,
+       32.98
+      ],
+      [
+       -117.05,
+       33.03
+      ],
+      [
+       -117.3,
+       33.0
+      ],
+      [
+       -117.4,
+       33.1
+      ],
+      [
+       -117.8,
+       33.55
+      ],
+      [
+       -118.4,
+       33.7
+      ],
+      [
+       -118.9,
+       34.0
+      ],
+      [
+       -119.4,
+       34.25
+      ]
+     ]
+    },
+    {
+     "date": "1847-01-03",
+     "coords": [
+      [
+       -119.4,
+       34.62
+      ],
+      [
+       -118.6,
+       34.4
+      ],
+      [
+       -117.8,
+       34.25
+      ],
+      [
+       -117.2,
+       33.7
+      ],
+      [
+       -116.7,
+       33.2
+      ],
+      [
+       -116.8,
+       32.98
+      ],
+      [
+       -117.05,
+       33.03
+      ],
+      [
+       -117.3,
+       33.0
+      ],
+      [
+       -117.4,
+       33.1
+      ],
+      [
+       -117.8,
+       33.55
+      ],
+      [
+       -118.4,
+       33.7
+      ],
+      [
+       -118.9,
+       34.0
+      ],
+      [
+       -119.4,
+       34.25
+      ]
+     ]
+    },
+    {
+     "date": "1847-01-04",
+     "coords": [
+      [
+       -119.4,
+       34.62
+      ],
+      [
+       -118.6,
+       34.4
+      ],
+      [
+       -117.8,
+       34.25
+      ],
+      [
+       -117.2,
+       33.7
+      ],
+      [
+       -116.7,
+       33.3
+      ],
+      [
+       -117.2,
+       33.42
+      ],
+      [
+       -117.55,
+       33.45
+      ],
+      [
+       -117.8,
+       33.58
+      ],
+      [
+       -118.4,
+       33.7
+      ],
+      [
+       -118.9,
+       34.0
+      ],
+      [
+       -119.4,
+       34.25
+      ]
+     ]
+    },
+    {
+     "date": "1847-01-08",
+     "coords": [
+      [
+       -119.4,
+       34.62
+      ],
+      [
+       -118.4,
+       34.42
+      ],
+      [
+       -117.7,
+       34.3
+      ],
+      [
+       -117.55,
+       33.88
+      ],
+      [
+       -117.95,
+       34.09
+      ],
+      [
+       -118.18,
+       33.98
+      ],
+      [
+       -118.4,
+       33.87
+      ],
+      [
+       -118.9,
+       34.02
+      ],
+      [
+       -119.4,
+       34.25
+      ]
+     ]
+    },
+    {
+     "date": "1847-01-10",
+     "coords": [
+      [
+       -118.3,
+       34.36
+      ],
+      [
+       -117.7,
+       34.3
+      ],
+      [
+       -117.55,
+       33.9
+      ],
+      [
+       -117.9,
+       34.12
+      ],
+      [
+       -118.2,
+       34.17
+      ]
+     ]
+    }
+   ],
+   "end": "1847-01-13"
+  }
+ ],
+ "arrows": [
+  {
+   "name": "Mexican cavalry cross the Rio Grande and ambush Thornton's patrol (25 April 1846)",
+   "side": 1,
+   "start": "1846-04-25",
+   "end": "1846-04-25",
+   "path": [
+    [
+     -97.86,
+     25.96
+    ],
+    [
+     -97.83,
+     26.02
+    ],
+    [
+     -97.784,
+     26.062
+    ]
+   ]
+  },
+  {
+   "name": "Arista's army crosses the Rio Grande below Matamoros (30 April – 8 May 1846)",
+   "side": 1,
+   "start": "1846-04-30",
+   "end": "1846-05-08",
+   "path": [
+    [
+     -97.5,
+     25.87
+    ],
+    [
+     -97.38,
+     25.87
+    ],
+    [
+     -97.41,
+     25.95
+    ],
+    [
+     -97.46,
+     26.01
+    ]
+   ]
+  },
+  {
+   "name": "Taylor marches to secure his supply base at Point Isabel (1–2 May 1846)",
+   "side": 0,
+   "start": "1846-05-01",
+   "end": "1846-05-02",
+   "path": [
+    [
+     -97.49,
+     25.9
+    ],
+    [
+     -97.36,
+     26.0
+    ],
+    [
+     -97.21,
+     26.07
+    ]
+   ]
+  },
+  {
+   "name": "Taylor returns to relieve Fort Texas: Palo Alto and Resaca de la Palma (7–9 May 1846)",
+   "side": 0,
+   "start": "1846-05-07",
+   "end": "1846-05-09",
+   "path": [
+    [
+     -97.21,
+     26.07
+    ],
+    [
+     -97.33,
+     26.06
+    ],
+    [
+     -97.44,
+     26.03
+    ],
+    [
+     -97.465,
+     26.02
+    ],
+    [
+     -97.486,
+     25.937
+    ],
+    [
+     -97.488,
+     25.91
+    ]
+   ]
+  },
+  {
+   "name": "Arista's beaten army recrosses the river and retreats toward Linares (9–18 May 1846)",
+   "side": 1,
+   "start": "1846-05-09",
+   "end": "1846-05-18",
+   "path": [
+    [
+     -97.5,
+     25.93
+    ],
+    [
+     -97.5,
+     25.87
+    ],
+    [
+     -97.9,
+     25.55
+    ],
+    [
+     -98.6,
+     25.2
+    ],
+    [
+     -99.57,
+     24.86
+    ]
+   ]
+  },
+  {
+   "name": "Taylor crosses the Rio Grande and occupies Matamoros (18 May 1846)",
+   "side": 0,
+   "start": "1846-05-18",
+   "end": "1846-05-18",
+   "path": [
+    [
+     -97.44,
+     25.93
+    ],
+    [
+     -97.47,
+     25.895
+    ],
+    [
+     -97.5,
+     25.87
+    ]
+   ]
+  },
+  {
+   "name": "Taylor's army moves up the Rio Grande to Camargo (July – August 1846)",
+   "side": 0,
+   "start": "1846-07-06",
+   "end": "1846-08-08",
+   "path": [
+    [
+     -97.5,
+     25.87
+    ],
+    [
+     -97.95,
+     25.98
+    ],
+    [
+     -98.3,
+     26.08
+    ],
+    [
+     -98.6,
+     26.18
+    ],
+    [
+     -98.83,
+     26.31
+    ]
+   ]
+  },
+  {
+   "name": "Taylor advances on Monterrey by way of Cerralvo (late August – 20 September 1846)",
+   "side": 0,
+   "start": "1846-08-31",
+   "end": "1846-09-20",
+   "path": [
+    [
+     -98.83,
+     26.31
+    ],
+    [
+     -99.2,
+     26.2
+    ],
+    [
+     -99.62,
+     26.09
+    ],
+    [
+     -100.03,
+     25.88
+    ],
+    [
+     -100.26,
+     25.73
+    ]
+   ]
+  },
+  {
+   "name": "Worth's division swings west to the Saltillo road and fights into the city (20–24 September 1846)",
+   "side": 0,
+   "start": "1846-09-20",
+   "end": "1846-09-25",
+   "path": [
+    [
+     -100.27,
+     25.75
+    ],
+    [
+     -100.38,
+     25.76
+    ],
+    [
+     -100.43,
+     25.7
+    ],
+    [
+     -100.37,
+     25.67
+    ],
+    [
+     -100.32,
+     25.67
+    ]
+   ]
+  },
+  {
+   "name": "Ampudia's army marches out of Monterrey by the Saltillo road (25 September 1846)",
+   "side": 1,
+   "start": "1846-09-25",
+   "end": "1846-09-26",
+   "path": [
+    [
+     -100.33,
+     25.65
+    ],
+    [
+     -100.45,
+     25.58
+    ],
+    [
+     -100.62,
+     25.5
+    ],
+    [
+     -100.85,
+     25.45
+    ],
+    [
+     -101.0,
+     25.42
+    ]
+   ]
+  },
+  {
+   "name": "Bear Flag rebels seize Sonoma (14 June 1846)",
+   "side": 0,
+   "start": "1846-06-13",
+   "end": "1846-06-14",
+   "path": [
+    [
+     -121.75,
+     38.7
+    ],
+    [
+     -122.15,
+     38.45
+    ],
+    [
+     -122.46,
+     38.29
+    ]
+   ]
+  },
+  {
+   "name": "Sloat's sailors and marines land at Monterey (7 July 1846)",
+   "side": 0,
+   "start": "1846-07-07",
+   "end": "1846-07-07",
+   "path": [
+    [
+     -122.05,
+     36.7
+    ],
+    [
+     -121.89,
+     36.6
+    ]
+   ]
+  },
+  {
+   "name": "Stockton lands at San Pedro and enters Los Angeles (1–13 August 1846)",
+   "side": 0,
+   "start": "1846-08-01",
+   "end": "1846-08-13",
+   "path": [
+    [
+     -118.29,
+     33.74
+    ],
+    [
+     -118.27,
+     33.9
+    ],
+    [
+     -118.24,
+     34.05
+    ]
+   ]
+  },
+  {
+   "name": "Flores's Californios drive the Americans out of Los Angeles (22–30 September 1846)",
+   "side": 1,
+   "start": "1846-09-22",
+   "end": "1846-09-30",
+   "path": [
+    [
+     -118.05,
+     34.15
+    ],
+    [
+     -118.15,
+     34.1
+    ],
+    [
+     -118.24,
+     34.05
+    ]
+   ]
+  },
+  {
+   "name": "Kearny marches from Santa Fe to California (25 September – 12 December 1846)",
+   "side": 0,
+   "start": "1846-09-25",
+   "end": "1846-12-12",
+   "path": [
+    [
+     -105.94,
+     35.69
+    ],
+    [
+     -106.65,
+     35.08
+    ],
+    [
+     -106.89,
+     34.06
+    ],
+    [
+     -107.25,
+     32.85
+    ],
+    [
+     -108.07,
+     32.79
+    ],
+    [
+     -109.3,
+     33.0
+    ],
+    [
+     -110.9,
+     33.0
+    ],
+    [
+     -112.0,
+     33.05
+    ],
+    [
+     -113.5,
+     32.85
+    ],
+    [
+     -114.62,
+     32.73
+    ],
+    [
+     -116.0,
+     32.95
+    ],
+    [
+     -116.66,
+     33.23
+    ],
+    [
+     -116.99,
+     33.086
+    ],
+    [
+     -117.1,
+     32.85
+    ],
+    [
+     -117.19,
+     32.75
+    ]
+   ]
+  },
+  {
+   "name": "Frémont's California Battalion marches south (late November 1846 – 13 January 1847)",
+   "side": 0,
+   "start": "1846-11-30",
+   "end": "1847-01-13",
+   "path": [
+    [
+     -121.54,
+     36.85
+    ],
+    [
+     -121.45,
+     36.15
+    ],
+    [
+     -120.66,
+     35.28
+    ],
+    [
+     -120.25,
+     34.75
+    ],
+    [
+     -119.7,
+     34.42
+    ],
+    [
+     -119.29,
+     34.28
+    ],
+    [
+     -118.44,
+     34.28
+    ],
+    [
+     -118.36,
+     34.14
+    ]
+   ]
+  },
+  {
+   "name": "Stockton and Kearny march from San Diego to Los Angeles (29 December 1846 – 10 January 1847)",
+   "side": 0,
+   "start": "1846-12-29",
+   "end": "1847-01-10",
+   "path": [
+    [
+     -117.19,
+     32.75
+    ],
+    [
+     -117.32,
+     33.23
+    ],
+    [
+     -117.66,
+     33.5
+    ],
+    [
+     -117.95,
+     33.8
+    ],
+    [
+     -118.085,
+     33.99
+    ],
+    [
+     -118.205,
+     34.002
+    ],
+    [
+     -118.24,
+     34.05
+    ]
+   ]
+  },
+  {
+   "name": "Kearny's Army of the West marches down the Santa Fe Trail (June – August 1846)",
+   "side": 0,
+   "start": "1846-06-30",
+   "end": "1846-08-18",
+   "path": [
+    [
+     -94.92,
+     39.35
+    ],
+    [
+     -96.49,
+     38.66
+    ],
+    [
+     -98.76,
+     38.36
+    ],
+    [
+     -100.0,
+     37.75
+    ],
+    [
+     -103.43,
+     38.04
+    ],
+    [
+     -104.5,
+     37.0
+    ],
+    [
+     -105.22,
+     35.59
+    ],
+    [
+     -105.94,
+     35.69
+    ]
+   ]
+  },
+  {
+   "name": "Armijo abandons Apache Canyon and flees to Chihuahua (August 1846)",
+   "side": 1,
+   "start": "1846-08-14",
+   "end": "1846-08-31",
+   "path": [
+    [
+     -105.8,
+     35.56
+    ],
+    [
+     -106.4,
+     35.2
+    ],
+    [
+     -106.75,
+     34.5
+    ],
+    [
+     -106.85,
+     33.3
+    ],
+    [
+     -106.75,
+     32.3
+    ],
+    [
+     -106.48,
+     31.74
+    ],
+    [
+     -106.3,
+     30.2
+    ],
+    [
+     -106.08,
+     28.63
+    ]
+   ]
+  },
+  {
+   "name": "Doniphan's Missouri volunteers march down the Rio Grande to El Paso (December 1846)",
+   "side": 0,
+   "start": "1846-12-15",
+   "end": "1846-12-27",
+   "path": [
+    [
+     -106.88,
+     33.8
+    ],
+    [
+     -106.95,
+     33.2
+    ],
+    [
+     -106.85,
+     32.6
+    ],
+    [
+     -106.8,
+     32.18
+    ],
+    [
+     -106.6,
+     31.95
+    ],
+    [
+     -106.48,
+     31.74
+    ]
+   ]
+  },
+  {
+   "name": "Price marches north against the Taos rebels (January – February 1847)",
+   "side": 0,
+   "start": "1847-01-23",
+   "end": "1847-02-05",
+   "path": [
+    [
+     -105.94,
+     35.69
+    ],
+    [
+     -105.97,
+     36.0
+    ],
+    [
+     -105.96,
+     36.21
+    ],
+    [
+     -105.7,
+     36.35
+    ],
+    [
+     -105.546,
+     36.439
+    ]
+   ]
+  },
+  {
+   "name": "Doniphan marches on Chihuahua (8 February – 2 March 1847)",
+   "side": 0,
+   "start": "1847-02-08",
+   "end": "1847-03-02",
+   "path": [
+    [
+     -106.48,
+     31.74
+    ],
+    [
+     -106.65,
+     30.6
+    ],
+    [
+     -106.35,
+     29.45
+    ],
+    [
+     -106.1,
+     28.84
+    ],
+    [
+     -106.08,
+     28.63
+    ]
+   ]
+  },
+  {
+   "name": "Worth's division occupies Saltillo (16 November 1846)",
+   "side": 0,
+   "start": "1846-11-14",
+   "end": "1846-11-16",
+   "path": [
+    [
+     -100.31,
+     25.67
+    ],
+    [
+     -100.62,
+     25.5
+    ],
+    [
+     -100.85,
+     25.45
+    ],
+    [
+     -101.0,
+     25.42
+    ]
+   ]
+  },
+  {
+   "name": "Wool's column marches from Monclova by way of Parras to Agua Nueva (November – December 1846)",
+   "side": 0,
+   "start": "1846-11-24",
+   "end": "1846-12-21",
+   "path": [
+    [
+     -101.42,
+     26.9
+    ],
+    [
+     -101.75,
+     26.35
+    ],
+    [
+     -102.05,
+     25.85
+    ],
+    [
+     -102.18,
+     25.44
+    ],
+    [
+     -101.6,
+     25.38
+    ],
+    [
+     -101.2,
+     25.3
+    ],
+    [
+     -101.1,
+     25.2
+    ]
+   ]
+  },
+  {
+   "name": "Santa Anna marches north from San Luis Potosí (27 January – 22 February 1847)",
+   "side": 1,
+   "start": "1847-01-27",
+   "end": "1847-02-22",
+   "path": [
+    [
+     -100.98,
+     22.15
+    ],
+    [
+     -100.65,
+     23.65
+    ],
+    [
+     -101.1,
+     24.4
+    ],
+    [
+     -101.22,
+     24.88
+    ],
+    [
+     -101.13,
+     25.1
+    ],
+    [
+     -101.08,
+     25.24
+    ]
+   ]
+  },
+  {
+   "name": "Taylor falls back from Agua Nueva to La Angostura (21 February 1847)",
+   "side": 0,
+   "start": "1847-02-20",
+   "end": "1847-02-21",
+   "path": [
+    [
+     -101.1,
+     25.2
+    ],
+    [
+     -101.07,
+     25.27
+    ],
+    [
+     -101.04,
+     25.31
+    ]
+   ]
+  },
+  {
+   "name": "Santa Anna withdraws to Agua Nueva and back toward San Luis Potosí (late February 1847)",
+   "side": 1,
+   "start": "1847-02-23",
+   "end": "1847-02-26",
+   "path": [
+    [
+     -101.07,
+     25.25
+    ],
+    [
+     -101.1,
+     25.2
+    ],
+    [
+     -101.18,
+     25.0
+    ],
+    [
+     -101.22,
+     24.88
+    ]
+   ]
+  },
+  {
+   "name": "Scott's army lands on Collado Beach (9 March 1847)",
+   "side": 0,
+   "start": "1847-03-09",
+   "end": "1847-03-09",
+   "path": [
+    [
+     -96.0,
+     19.09
+    ],
+    [
+     -96.06,
+     19.12
+    ],
+    [
+     -96.1,
+     19.14
+    ]
+   ]
+  },
+  {
+   "name": "The siege line closes round Veracruz from Collado to Vergara (10–13 March 1847)",
+   "side": 0,
+   "start": "1847-03-10",
+   "end": "1847-03-13",
+   "path": [
+    [
+     -96.1,
+     19.14
+    ],
+    [
+     -96.2,
+     19.13
+    ],
+    [
+     -96.25,
+     19.2
+    ],
+    [
+     -96.21,
+     19.27
+    ]
+   ]
+  },
+  {
+   "name": "Scott's advance up the National Road to Plan del Río (2–12 April 1847)",
+   "side": 0,
+   "start": "1847-04-02",
+   "end": "1847-04-12",
+   "path": [
+    [
+     -96.14,
+     19.19
+    ],
+    [
+     -96.25,
+     19.27
+    ],
+    [
+     -96.4,
+     19.31
+    ],
+    [
+     -96.48,
+     19.33
+    ],
+    [
+     -96.58,
+     19.375
+    ]
+   ]
+  },
+  {
+   "name": "Scott's flank march round the Mexican left at Cerro Gordo (17–18 April 1847)",
+   "side": 0,
+   "start": "1847-04-17",
+   "end": "1847-04-18",
+   "path": [
+    [
+     -96.6,
+     19.39
+    ],
+    [
+     -96.64,
+     19.45
+    ],
+    [
+     -96.7,
+     19.46
+    ],
+    [
+     -96.74,
+     19.45
+    ]
+   ]
+  },
+  {
+   "name": "Pursuit to Jalapa and Perote (19–22 April 1847)",
+   "side": 0,
+   "start": "1847-04-19",
+   "end": "1847-04-22",
+   "path": [
+    [
+     -96.75,
+     19.47
+    ],
+    [
+     -96.92,
+     19.53
+    ],
+    [
+     -97.1,
+     19.64
+    ],
+    [
+     -97.24,
+     19.56
+    ]
+   ]
+  },
+  {
+   "name": "Worth's division advances to Puebla (May 1847)",
+   "side": 0,
+   "start": "1847-05-01",
+   "end": "1847-05-15",
+   "path": [
+    [
+     -97.24,
+     19.56
+    ],
+    [
+     -97.45,
+     19.45
+    ],
+    [
+     -97.65,
+     19.33
+    ],
+    [
+     -97.8,
+     19.21
+    ],
+    [
+     -98.04,
+     19.04
+    ],
+    [
+     -98.2,
+     19.04
+    ]
+   ]
+  },
+  {
+   "name": "Scott marches from Puebla into the Valley of Mexico (7–11 August 1847)",
+   "side": 0,
+   "start": "1847-08-07",
+   "end": "1847-08-11",
+   "path": [
+    [
+     -98.2,
+     19.04
+    ],
+    [
+     -98.45,
+     19.2
+    ],
+    [
+     -98.68,
+     19.35
+    ],
+    [
+     -98.93,
+     19.31
+    ]
+   ]
+  },
+  {
+   "name": "Round Lake Chalco to San Agustín (15–18 August 1847)",
+   "side": 0,
+   "start": "1847-08-15",
+   "end": "1847-08-18",
+   "path": [
+    [
+     -98.93,
+     19.31
+    ],
+    [
+     -98.9,
+     19.26
+    ],
+    [
+     -99.05,
+     19.24
+    ],
+    [
+     -99.17,
+     19.29
+    ]
+   ]
+  },
+  {
+   "name": "Contreras and Churubusco (19–20 August 1847)",
+   "side": 0,
+   "start": "1847-08-19",
+   "end": "1847-08-20",
+   "path": [
+    [
+     -99.17,
+     19.29
+    ],
+    [
+     -99.21,
+     19.3
+    ],
+    [
+     -99.22,
+     19.31
+    ],
+    [
+     -99.19,
+     19.35
+    ],
+    [
+     -99.15,
+     19.355
+    ]
+   ]
+  },
+  {
+   "name": "Molino del Rey and Chapultepec (8–13 September 1847)",
+   "side": 0,
+   "start": "1847-09-08",
+   "end": "1847-09-13",
+   "path": [
+    [
+     -99.19,
+     19.4
+    ],
+    [
+     -99.195,
+     19.415
+    ],
+    [
+     -99.1815,
+     19.4204
+    ],
+    [
+     -99.155,
+     19.43
+    ]
+   ]
+  },
+  {
+   "name": "US troops march into the capital (14 September 1847)",
+   "side": 0,
+   "start": "1847-09-14",
+   "end": "1847-09-14",
+   "path": [
+    [
+     -99.155,
+     19.432
+    ],
+    [
+     -99.133,
+     19.433
+    ]
+   ]
+  },
+  {
+   "name": "Santa Anna leaves the capital and joins the siege of Puebla (14–22 September 1847)",
+   "side": 1,
+   "start": "1847-09-15",
+   "end": "1847-09-22",
+   "path": [
+    [
+     -99.12,
+     19.47
+    ],
+    [
+     -98.9,
+     19.52
+    ],
+    [
+     -98.55,
+     19.35
+    ],
+    [
+     -98.33,
+     19.13
+    ]
+   ]
+  },
+  {
+   "name": "Santa Anna moves out to intercept Lane at Huamantla (early October 1847)",
+   "side": 1,
+   "start": "1847-09-30",
+   "end": "1847-10-09",
+   "path": [
+    [
+     -98.25,
+     19.11
+    ],
+    [
+     -98.1,
+     19.2
+    ],
+    [
+     -97.92,
+     19.31
+    ]
+   ]
+  },
+  {
+   "name": "Lane's relief column marches from Veracruz to Huamantla and Puebla (October 1847)",
+   "side": 0,
+   "start": "1847-10-01",
+   "end": "1847-10-12",
+   "path": [
+    [
+     -96.14,
+     19.19
+    ],
+    [
+     -96.48,
+     19.33
+    ],
+    [
+     -96.92,
+     19.53
+    ],
+    [
+     -97.24,
+     19.56
+    ],
+    [
+     -97.65,
+     19.35
+    ],
+    [
+     -97.92,
+     19.31
+    ],
+    [
+     -98.05,
+     19.18
+    ],
+    [
+     -98.2,
+     19.04
+    ]
+   ]
+  }
+ ],
+ "battles": [
+  {
+   "name": "Thornton Affair",
+   "start": "1846-04-25",
+   "end": "1846-04-25",
+   "lonlat": [
+    -97.7842,
+    26.0619
+   ],
+   "casualties": "11–14 Americans killed, a few wounded and about 52 captured; Mexican losses light",
+   "casNum": 70
+  },
+  {
+   "name": "Siege of Fort Texas",
+   "start": "1846-05-03",
+   "end": "1846-05-09",
+   "lonlat": [
+    -97.49,
+    25.9
+   ],
+   "casualties": "2 Americans killed and 10–13 wounded; light Mexican losses",
+   "casNum": 15
+  },
+  {
+   "name": "Battle of Palo Alto",
+   "start": "1846-05-08",
+   "end": "1846-05-08",
+   "lonlat": [
+    -97.465,
+    26.02
+   ],
+   "casualties": "US: 9 killed, 47 wounded; Mexican: 102 killed, 129 wounded, 26 missing (some estimates higher)",
+   "casNum": 315
+  },
+  {
+   "name": "Battle of Resaca de la Palma",
+   "start": "1846-05-09",
+   "end": "1846-05-09",
+   "lonlat": [
+    -97.486,
+    25.937
+   ],
+   "casualties": "US: 33 killed, 89 wounded; Mexican: 154 killed, 205 wounded, 156 missing",
+   "casNum": 640
+  },
+  {
+   "name": "Battle of Monterrey",
+   "start": "1846-09-21",
+   "end": "1846-09-24",
+   "lonlat": [
+    -100.31,
+    25.67
+   ],
+   "casualties": "US: 120 killed, 368 wounded, 43 missing; Mexican: 367 killed and wounded by Ampudia's report (probably more)",
+   "casNum": 900
+  },
+  {
+   "name": "Battle of Dominguez Rancho",
+   "start": "1846-10-08",
+   "end": "1846-10-09",
+   "lonlat": [
+    -118.2175,
+    33.867
+   ],
+   "casualties": "4 Americans killed and about 8 badly wounded; no Californio losses",
+   "casNum": 12
+  },
+  {
+   "name": "Battle of San Pasqual",
+   "start": "1846-12-06",
+   "end": "1846-12-07",
+   "lonlat": [
+    -116.99,
+    33.086
+   ],
+   "casualties": "18–22 Americans killed and 13–16 wounded; 2–6 Californios killed and about 12 wounded",
+   "casNum": 45
+  },
+  {
+   "name": "Battle of Río San Gabriel",
+   "start": "1847-01-08",
+   "end": "1847-01-08",
+   "lonlat": [
+    -118.085,
+    33.99
+   ],
+   "casualties": "A few killed and about 10 wounded on each side",
+   "casNum": 25
+  },
+  {
+   "name": "Battle of La Mesa",
+   "start": "1847-01-09",
+   "end": "1847-01-09",
+   "lonlat": [
+    -118.205,
+    34.002
+   ],
+   "casualties": "US: 1 killed, 5 wounded; Californio: 1 killed, 20 or more wounded",
+   "casNum": 27
+  },
+  {
+   "name": "Battle of El Brazito",
+   "start": "1846-12-25",
+   "end": "1846-12-25",
+   "lonlat": [
+    -106.8,
+    32.18
+   ],
+   "casualties": "US: 7 wounded; Mexican: about 11–43 killed and 17–150 wounded",
+   "casNum": 100
+  },
+  {
+   "name": "Battle of Cañada",
+   "start": "1847-01-24",
+   "end": "1847-01-24",
+   "lonlat": [
+    -105.97,
+    36.0
+   ],
+   "casualties": "US: 2 killed, 6–7 wounded; rebels: about 36 killed and 45 captured or wounded",
+   "casNum": 90
+  },
+  {
+   "name": "Battle of Embudo Pass",
+   "start": "1847-01-29",
+   "end": "1847-01-29",
+   "lonlat": [
+    -105.96,
+    36.21
+   ],
+   "casualties": "US: 1 killed, 1 wounded; rebels: about 20 killed and 60 wounded",
+   "casNum": 82
+  },
+  {
+   "name": "Siege of Pueblo de Taos",
+   "start": "1847-02-03",
+   "end": "1847-02-05",
+   "lonlat": [
+    -105.546,
+    36.439
+   ],
+   "casualties": "US: 7–10 killed, about 45 wounded; about 150 rebels killed and 400 captured",
+   "casNum": 600
+  },
+  {
+   "name": "Battle of Buena Vista",
+   "start": "1847-02-22",
+   "end": "1847-02-23",
+   "lonlat": [
+    -101.04,
+    25.33
+   ],
+   "casualties": "US: 267 killed, 387 wounded, 6 missing; Mexican: 591 killed, 1,048 wounded, 1,894 missing",
+   "casNum": 4190
+  },
+  {
+   "name": "Siege of Veracruz",
+   "start": "1847-03-09",
+   "end": "1847-03-29",
+   "lonlat": [
+    -96.14,
+    19.19
+   ],
+   "casualties": "US: 13–19 killed, 55–63 wounded; Mexican: 80–350 killed and about 3,000 captured, with hundreds of civilians killed",
+   "casNum": 3400
+  },
+  {
+   "name": "Battle of Cerro Gordo",
+   "start": "1847-04-18",
+   "end": "1847-04-18",
+   "lonlat": [
+    -96.688,
+    19.429
+   ],
+   "casualties": "US: 63–64 killed, 353–368 wounded; Mexican: over 1,000 killed and wounded and about 3,000 captured",
+   "casNum": 4400
+  },
+  {
+   "name": "Battle of Contreras",
+   "start": "1847-08-19",
+   "end": "1847-08-20",
+   "lonlat": [
+    -99.22,
+    19.31
+   ],
+   "casualties": "US: about 300; Mexican: about 700 killed, 1,225 wounded and some 850 captured",
+   "casNum": 3000
+  },
+  {
+   "name": "Battle of Churubusco",
+   "start": "1847-08-20",
+   "end": "1847-08-20",
+   "lonlat": [
+    -99.15,
+    19.355
+   ],
+   "casualties": "US: 139 killed, 865 wounded, 40 missing; Mexican: 263 killed, 460 wounded, 1,261 captured",
+   "casNum": 3030
+  },
+  {
+   "name": "Battle of Molino del Rey",
+   "start": "1847-09-08",
+   "end": "1847-09-08",
+   "lonlat": [
+    -99.195,
+    19.415
+   ],
+   "casualties": "US: 116 killed, 671 wounded, 18 missing; Mexican: 269 killed, 500 wounded, 685 captured",
+   "casNum": 2260
+  },
+  {
+   "name": "Battle of Chapultepec",
+   "start": "1847-09-12",
+   "end": "1847-09-13",
+   "lonlat": [
+    -99.1815,
+    19.4204
+   ],
+   "casualties": "US: 138 killed, 673 wounded, 29 missing; Mexican: about 200 killed and 632 wounded or captured",
+   "casNum": 1670
+  },
+  {
+   "name": "Siege of Puebla",
+   "start": "1847-09-14",
+   "end": "1847-10-12",
+   "lonlat": [
+    -98.2,
+    19.04
+   ],
+   "casualties": "The US garrison lost about 78; Mexican losses not recorded",
+   "casNum": 78
+  },
+  {
+   "name": "Battle of Huamantla",
+   "start": "1847-10-09",
+   "end": "1847-10-09",
+   "lonlat": [
+    -97.92,
+    19.31
+   ],
+   "casualties": "US: 13 killed, 22 wounded, 10 missing; Mexican losses not recorded",
+   "casNum": 45
+  }
+ ],
+ "claims": [
+  {
+   "chapter": "rio-grande",
+   "place": "Fort Texas",
+   "lonlat": [
+    -97.49,
+    25.9
+   ],
+   "date": "1846-05-06",
+   "holder": 0,
+   "source": {
+    "title": "Wikipedia: Siege of Fort Texas",
+    "url": "https://en.wikipedia.org/wiki/Siege_of_Fort_Texas"
+   }
+  },
+  {
+   "chapter": "rio-grande",
+   "place": "Palo Alto battlefield",
+   "lonlat": [
+    -97.465,
+    26.02
+   ],
+   "date": "1846-05-09",
+   "holder": 0,
+   "source": {
+    "title": "Wikipedia: Battle of Palo Alto",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Palo_Alto"
+   }
+  },
+  {
+   "chapter": "rio-grande",
+   "place": "Resaca de la Palma",
+   "lonlat": [
+    -97.486,
+    25.937
+   ],
+   "date": "1846-05-10",
+   "holder": 0,
+   "source": {
+    "title": "Wikipedia: Battle of Resaca de la Palma",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Resaca_de_la_Palma"
+   }
+  },
+  {
+   "chapter": "rio-grande",
+   "place": "Matamoros",
+   "lonlat": [
+    -97.5,
+    25.87
+   ],
+   "date": "1846-05-10",
+   "holder": 1,
+   "source": {
+    "title": "Wikipedia: Battle of Resaca de la Palma",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Resaca_de_la_Palma"
+   }
+  },
+  {
+   "chapter": "rio-grande",
+   "place": "Matamoros",
+   "lonlat": [
+    -97.5,
+    25.87
+   ],
+   "date": "1846-05-19",
+   "holder": 0,
+   "source": {
+    "title": "Wikipedia: Mexican–American War",
+    "url": "https://en.wikipedia.org/wiki/Mexican%E2%80%93American_War"
+   }
+  },
+  {
+   "chapter": "monterrey",
+   "place": "Matamoros",
+   "lonlat": [
+    -97.5,
+    25.87
+   ],
+   "date": "1846-06-15",
+   "holder": 0,
+   "source": {
+    "title": "Wikipedia: Mexican–American War",
+    "url": "https://en.wikipedia.org/wiki/Mexican%E2%80%93American_War"
+   }
+  },
+  {
+   "chapter": "monterrey",
+   "place": "Camargo",
+   "lonlat": [
+    -98.83,
+    26.31
+   ],
+   "date": "1846-08-10",
+   "holder": 0,
+   "source": {
+    "title": "Wikipedia: Battle of Monterrey",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Monterrey"
+   }
+  },
+  {
+   "chapter": "monterrey",
+   "place": "Cerralvo",
+   "lonlat": [
+    -99.62,
+    26.09
+   ],
+   "date": "1846-09-10",
+   "holder": 0,
+   "source": {
+    "title": "Wikipedia: Battle of Monterrey",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Monterrey"
+   }
+  },
+  {
+   "chapter": "monterrey",
+   "place": "Monterrey",
+   "lonlat": [
+    -100.31,
+    25.67
+   ],
+   "date": "1846-09-21",
+   "holder": 1,
+   "source": {
+    "title": "Wikipedia: Battle of Monterrey",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Monterrey"
+   }
+  },
+  {
+   "chapter": "monterrey",
+   "place": "Monterrey",
+   "lonlat": [
+    -100.31,
+    25.67
+   ],
+   "date": "1846-09-26",
+   "holder": 0,
+   "source": {
+    "title": "Wikipedia: Mexican–American War campaigns",
+    "url": "https://en.wikipedia.org/wiki/Mexican%E2%80%93American_War_campaigns"
+   }
+  },
+  {
+   "chapter": "monterrey",
+   "place": "Saltillo",
+   "lonlat": [
+    -101.0,
+    25.42
+   ],
+   "date": "1846-09-26",
+   "holder": 1,
+   "source": {
+    "title": "Wikipedia: Battle of Monterrey",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Monterrey"
+   }
+  },
+  {
+   "chapter": "california",
+   "place": "Sonoma",
+   "lonlat": [
+    -122.46,
+    38.29
+   ],
+   "date": "1846-06-15",
+   "holder": 0,
+   "source": {
+    "title": "Wikipedia: Conquest of California",
+    "url": "https://en.wikipedia.org/wiki/Conquest_of_California"
+   }
+  },
+  {
+   "chapter": "california",
+   "place": "Monterey",
+   "lonlat": [
+    -121.89,
+    36.6
+   ],
+   "date": "1846-07-08",
+   "holder": 0,
+   "source": {
+    "title": "Wikipedia: Battle of Monterey",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Monterey"
+   }
+  },
+  {
+   "chapter": "california",
+   "place": "Yerba Buena (San Francisco)",
+   "lonlat": [
+    -122.42,
+    37.79
+   ],
+   "date": "1846-07-10",
+   "holder": 0,
+   "source": {
+    "title": "Wikipedia: Conquest of California",
+    "url": "https://en.wikipedia.org/wiki/Conquest_of_California"
+   }
+  },
+  {
+   "chapter": "california",
+   "place": "Los Angeles",
+   "lonlat": [
+    -118.24,
+    34.05
+   ],
+   "date": "1846-08-14",
+   "holder": 0,
+   "source": {
+    "title": "Wikipedia: Conquest of California",
+    "url": "https://en.wikipedia.org/wiki/Conquest_of_California"
+   }
+  },
+  {
+   "chapter": "california",
+   "place": "Los Angeles",
+   "lonlat": [
+    -118.24,
+    34.05
+   ],
+   "date": "1846-10-15",
+   "holder": 1,
+   "source": {
+    "title": "Wikipedia: Siege of Los Angeles",
+    "url": "https://en.wikipedia.org/wiki/Siege_of_Los_Angeles"
+   }
+  },
+  {
+   "chapter": "california",
+   "place": "San Pasqual",
+   "lonlat": [
+    -116.99,
+    33.086
+   ],
+   "date": "1846-12-06",
+   "holder": 1,
+   "source": {
+    "title": "Wikipedia: Battle of San Pasqual",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_San_Pasqual"
+   }
+  },
+  {
+   "chapter": "california",
+   "place": "San Diego",
+   "lonlat": [
+    -117.19,
+    32.75
+   ],
+   "date": "1846-12-12",
+   "holder": 0,
+   "source": {
+    "title": "Wikipedia: Mexican–American War campaigns",
+    "url": "https://en.wikipedia.org/wiki/Mexican%E2%80%93American_War_campaigns"
+   }
+  },
+  {
+   "chapter": "california",
+   "place": "Los Angeles",
+   "lonlat": [
+    -118.24,
+    34.05
+   ],
+   "date": "1847-01-11",
+   "holder": 0,
+   "source": {
+    "title": "Wikipedia: Conquest of California",
+    "url": "https://en.wikipedia.org/wiki/Conquest_of_California"
+   }
+  },
+  {
+   "chapter": "new-mexico",
+   "place": "Santa Fe",
+   "lonlat": [
+    -105.94,
+    35.69
+   ],
+   "date": "1846-08-10",
+   "holder": 1,
+   "source": {
+    "title": "Wikipedia: Capture of Santa Fe",
+    "url": "https://en.wikipedia.org/wiki/Capture_of_Santa_Fe"
+   }
+  },
+  {
+   "chapter": "new-mexico",
+   "place": "Santa Fe",
+   "lonlat": [
+    -105.94,
+    35.69
+   ],
+   "date": "1846-08-19",
+   "holder": 0,
+   "source": {
+    "title": "Wikipedia: Capture of Santa Fe",
+    "url": "https://en.wikipedia.org/wiki/Capture_of_Santa_Fe"
+   }
+  },
+  {
+   "chapter": "new-mexico",
+   "place": "Albuquerque",
+   "lonlat": [
+    -106.65,
+    35.08
+   ],
+   "date": "1846-10-10",
+   "holder": 0,
+   "source": {
+    "title": "Wikipedia: Mexican–American War",
+    "url": "https://en.wikipedia.org/wiki/Mexican%E2%80%93American_War"
+   }
+  },
+  {
+   "chapter": "new-mexico",
+   "place": "El Paso del Norte",
+   "lonlat": [
+    -106.48,
+    31.74
+   ],
+   "date": "1847-01-05",
+   "holder": 0,
+   "source": {
+    "title": "Wikipedia: Battle of El Brazito",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_El_Brazito"
+   }
+  },
+  {
+   "chapter": "new-mexico",
+   "place": "Taos",
+   "lonlat": [
+    -105.57,
+    36.41
+   ],
+   "date": "1847-01-25",
+   "holder": 1,
+   "source": {
+    "title": "Wikipedia: Taos Revolt",
+    "url": "https://en.wikipedia.org/wiki/Taos_Revolt"
+   }
+  },
+  {
+   "chapter": "new-mexico",
+   "place": "Taos",
+   "lonlat": [
+    -105.57,
+    36.41
+   ],
+   "date": "1847-02-06",
+   "holder": 0,
+   "source": {
+    "title": "Wikipedia: Siege of Pueblo de Taos",
+    "url": "https://en.wikipedia.org/wiki/Siege_of_Pueblo_de_Taos"
+   }
+  },
+  {
+   "chapter": "new-mexico",
+   "place": "Chihuahua",
+   "lonlat": [
+    -106.08,
+    28.63
+   ],
+   "date": "1847-02-20",
+   "holder": 1,
+   "source": {
+    "title": "Wikipedia: Battle of Sacramento (Mexico)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Sacramento_(Mexico)"
+   }
+  },
+  {
+   "chapter": "new-mexico",
+   "place": "Chihuahua",
+   "lonlat": [
+    -106.08,
+    28.63
+   ],
+   "date": "1847-03-03",
+   "holder": 0,
+   "source": {
+    "title": "Wikipedia: Battle of Sacramento (Mexico)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Sacramento_(Mexico)"
+   }
+  },
+  {
+   "chapter": "buena-vista",
+   "place": "Saltillo",
+   "lonlat": [
+    -101.0,
+    25.42
+   ],
+   "date": "1846-11-17",
+   "holder": 0,
+   "source": {
+    "title": "Wikipedia: Battle of Buena Vista",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Buena_Vista"
+   }
+  },
+  {
+   "chapter": "buena-vista",
+   "place": "Agua Nueva",
+   "lonlat": [
+    -101.1,
+    25.2
+   ],
+   "date": "1847-01-15",
+   "holder": 0,
+   "source": {
+    "title": "Wikipedia: Battle of Buena Vista",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Buena_Vista"
+   }
+  },
+  {
+   "chapter": "buena-vista",
+   "place": "Saltillo",
+   "lonlat": [
+    -101.0,
+    25.42
+   ],
+   "date": "1847-02-23",
+   "holder": 0,
+   "source": {
+    "title": "Wikipedia: Battle of Buena Vista",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Buena_Vista"
+   }
+  },
+  {
+   "chapter": "buena-vista",
+   "place": "Agua Nueva",
+   "lonlat": [
+    -101.1,
+    25.2
+   ],
+   "date": "1847-02-23",
+   "holder": 1,
+   "source": {
+    "title": "Wikipedia: Battle of Buena Vista",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Buena_Vista"
+   }
+  },
+  {
+   "chapter": "buena-vista",
+   "place": "La Angostura (Buena Vista)",
+   "lonlat": [
+    -101.04,
+    25.33
+   ],
+   "date": "1847-02-24",
+   "holder": 0,
+   "source": {
+    "title": "Wikipedia: Battle of Buena Vista",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Buena_Vista"
+   }
+  },
+  {
+   "chapter": "veracruz",
+   "place": "Collado Beach",
+   "lonlat": [
+    -96.1,
+    19.14
+   ],
+   "date": "1847-03-10",
+   "holder": 0,
+   "source": {
+    "title": "Wikipedia: Siege of Veracruz",
+    "url": "https://en.wikipedia.org/wiki/Siege_of_Veracruz"
+   }
+  },
+  {
+   "chapter": "veracruz",
+   "place": "Veracruz",
+   "lonlat": [
+    -96.14,
+    19.19
+   ],
+   "date": "1847-03-20",
+   "holder": 1,
+   "source": {
+    "title": "Wikipedia: Siege of Veracruz",
+    "url": "https://en.wikipedia.org/wiki/Siege_of_Veracruz"
+   }
+  },
+  {
+   "chapter": "veracruz",
+   "place": "Veracruz",
+   "lonlat": [
+    -96.14,
+    19.19
+   ],
+   "date": "1847-03-30",
+   "holder": 0,
+   "source": {
+    "title": "Wikipedia: Siege of Veracruz",
+    "url": "https://en.wikipedia.org/wiki/Siege_of_Veracruz"
+   }
+  },
+  {
+   "chapter": "veracruz",
+   "place": "San Juan de Ulúa",
+   "lonlat": [
+    -96.135,
+    19.21
+   ],
+   "date": "1847-03-30",
+   "holder": 0,
+   "source": {
+    "title": "Wikipedia: Siege of Veracruz",
+    "url": "https://en.wikipedia.org/wiki/Siege_of_Veracruz"
+   }
+  },
+  {
+   "chapter": "cerro-gordo",
+   "place": "Cerro Gordo",
+   "lonlat": [
+    -96.688,
+    19.429
+   ],
+   "date": "1847-04-17",
+   "holder": 1,
+   "source": {
+    "title": "Wikipedia: Battle of Cerro Gordo",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Cerro_Gordo"
+   }
+  },
+  {
+   "chapter": "cerro-gordo",
+   "place": "Cerro Gordo",
+   "lonlat": [
+    -96.688,
+    19.429
+   ],
+   "date": "1847-04-19",
+   "holder": 0,
+   "source": {
+    "title": "Wikipedia: Battle of Cerro Gordo",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Cerro_Gordo"
+   }
+  },
+  {
+   "chapter": "cerro-gordo",
+   "place": "Jalapa",
+   "lonlat": [
+    -96.92,
+    19.53
+   ],
+   "date": "1847-04-25",
+   "holder": 0,
+   "source": {
+    "title": "Wikipedia: Mexican–American War campaigns",
+    "url": "https://en.wikipedia.org/wiki/Mexican%E2%80%93American_War_campaigns"
+   }
+  },
+  {
+   "chapter": "cerro-gordo",
+   "place": "Perote (San Carlos fortress)",
+   "lonlat": [
+    -97.24,
+    19.56
+   ],
+   "date": "1847-04-23",
+   "holder": 0,
+   "source": {
+    "title": "Wikipedia: Battle of Cerro Gordo",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Cerro_Gordo"
+   }
+  },
+  {
+   "chapter": "cerro-gordo",
+   "place": "Puebla",
+   "lonlat": [
+    -98.2,
+    19.04
+   ],
+   "date": "1847-05-10",
+   "holder": 1,
+   "source": {
+    "title": "Wikipedia: Battle of Cerro Gordo",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Cerro_Gordo"
+   }
+  },
+  {
+   "chapter": "cerro-gordo",
+   "place": "Puebla",
+   "lonlat": [
+    -98.2,
+    19.04
+   ],
+   "date": "1847-05-16",
+   "holder": 0,
+   "source": {
+    "title": "Wikipedia: Battle of Cerro Gordo",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Cerro_Gordo"
+   }
+  },
+  {
+   "chapter": "mexico-city",
+   "place": "Puebla",
+   "lonlat": [
+    -98.2,
+    19.04
+   ],
+   "date": "1847-08-20",
+   "holder": 0,
+   "source": {
+    "title": "Wikipedia: Mexican–American War",
+    "url": "https://en.wikipedia.org/wiki/Mexican%E2%80%93American_War"
+   }
+  },
+  {
+   "chapter": "mexico-city",
+   "place": "Ayotla",
+   "lonlat": [
+    -98.93,
+    19.31
+   ],
+   "date": "1847-08-12",
+   "holder": 0,
+   "source": {
+    "title": "Wikipedia: Battle of Contreras",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Contreras"
+   }
+  },
+  {
+   "chapter": "mexico-city",
+   "place": "Churubusco",
+   "lonlat": [
+    -99.15,
+    19.355
+   ],
+   "date": "1847-08-21",
+   "holder": 0,
+   "source": {
+    "title": "Wikipedia: Battle of Churubusco",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Churubusco"
+   }
+  },
+  {
+   "chapter": "mexico-city",
+   "place": "Molino del Rey",
+   "lonlat": [
+    -99.195,
+    19.415
+   ],
+   "date": "1847-09-09",
+   "holder": 0,
+   "source": {
+    "title": "Wikipedia: Battle of Molino del Rey",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Molino_del_Rey"
+   }
+  },
+  {
+   "chapter": "mexico-city",
+   "place": "Chapultepec Castle",
+   "lonlat": [
+    -99.1815,
+    19.4204
+   ],
+   "date": "1847-09-12",
+   "holder": 1,
+   "source": {
+    "title": "Wikipedia: Battle of Chapultepec",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Chapultepec"
+   }
+  },
+  {
+   "chapter": "mexico-city",
+   "place": "Chapultepec Castle",
+   "lonlat": [
+    -99.1815,
+    19.4204
+   ],
+   "date": "1847-09-14",
+   "holder": 0,
+   "source": {
+    "title": "Wikipedia: Battle of Chapultepec",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Chapultepec"
+   }
+  },
+  {
+   "chapter": "mexico-city",
+   "place": "Mexico City",
+   "lonlat": [
+    -99.133,
+    19.433
+   ],
+   "date": "1847-09-12",
+   "holder": 1,
+   "source": {
+    "title": "Wikipedia: Battle for Mexico City",
+    "url": "https://en.wikipedia.org/wiki/Battle_for_Mexico_City"
+   }
+  },
+  {
+   "chapter": "mexico-city",
+   "place": "Mexico City",
+   "lonlat": [
+    -99.133,
+    19.433
+   ],
+   "date": "1847-09-15",
+   "holder": 0,
+   "source": {
+    "title": "Wikipedia: Battle for Mexico City",
+    "url": "https://en.wikipedia.org/wiki/Battle_for_Mexico_City"
+   }
+  },
+  {
+   "chapter": "occupation",
+   "place": "Puebla",
+   "lonlat": [
+    -98.2,
+    19.04
+   ],
+   "date": "1847-09-25",
+   "holder": 0,
+   "source": {
+    "title": "Wikipedia: Siege of Puebla (1847)",
+    "url": "https://en.wikipedia.org/wiki/Siege_of_Puebla_(1847)"
+   }
+  },
+  {
+   "chapter": "occupation",
+   "place": "Mexico City",
+   "lonlat": [
+    -99.133,
+    19.433
+   ],
+   "date": "1847-10-15",
+   "holder": 0,
+   "source": {
+    "title": "Wikipedia: Mexican–American War",
+    "url": "https://en.wikipedia.org/wiki/Mexican%E2%80%93American_War"
+   }
+  },
+  {
+   "chapter": "occupation",
+   "place": "Jalapa",
+   "lonlat": [
+    -96.92,
+    19.53
+   ],
+   "date": "1847-11-15",
+   "holder": 0,
+   "source": {
+    "title": "Wikipedia: Mexican–American War",
+    "url": "https://en.wikipedia.org/wiki/Mexican%E2%80%93American_War"
+   }
+  },
+  {
+   "chapter": "occupation",
+   "place": "Perote",
+   "lonlat": [
+    -97.24,
+    19.56
+   ],
+   "date": "1847-11-15",
+   "holder": 0,
+   "source": {
+    "title": "Wikipedia: Mexican–American War",
+    "url": "https://en.wikipedia.org/wiki/Mexican%E2%80%93American_War"
+   }
+  },
+  {
+   "chapter": "occupation",
+   "place": "Río Frío",
+   "lonlat": [
+    -98.68,
+    19.35
+   ],
+   "date": "1847-11-15",
+   "holder": 0,
+   "source": {
+    "title": "Wikipedia: Mexican–American War",
+    "url": "https://en.wikipedia.org/wiki/Mexican%E2%80%93American_War"
+   }
+  },
+  {
+   "chapter": "occupation",
+   "place": "Querétaro",
+   "lonlat": [
+    -100.39,
+    20.59
+   ],
+   "date": "1848-01-15",
+   "holder": 1,
+   "source": {
+    "title": "Wikipedia: Mexican–American War",
+    "url": "https://en.wikipedia.org/wiki/Mexican%E2%80%93American_War"
+   }
+  },
+  {
+   "chapter": "occupation",
+   "place": "Veracruz",
+   "lonlat": [
+    -96.14,
+    19.19
+   ],
+   "date": "1848-03-01",
+   "holder": 0,
+   "source": {
+    "title": "Wikipedia: Siege of Veracruz",
+    "url": "https://en.wikipedia.org/wiki/Siege_of_Veracruz"
+   }
+  },
+  {
+   "chapter": "occupation",
+   "place": "Mexico City",
+   "lonlat": [
+    -99.133,
+    19.433
+   ],
+   "date": "1848-05-01",
+   "holder": 0,
+   "source": {
+    "title": "National Archives: Treaty of Guadalupe Hidalgo (1848)",
+    "url": "https://www.archives.gov/milestone-documents/treaty-of-guadalupe-hidalgo"
+   }
+  }
+ ],
+ "baseYears": [
+  {
+   "start": "1846-04-25",
+   "end": "1848-05-30",
+   "year": 1847,
+   "why": "the 1846 border data draws a California Republic over the San Francisco Bay area for the whole year (neutral until June, then American), and the 1848 data already shows the cession (California American, New Mexico and the Nueces Strip blank); 1847 shows Mexico with Texas American"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Mexican–American War",
+   "url": "https://en.wikipedia.org/wiki/Mexican%E2%80%93American_War"
+  },
+  {
+   "title": "Wikipedia: Mexican–American War campaigns",
+   "url": "https://en.wikipedia.org/wiki/Mexican%E2%80%93American_War_campaigns"
+  },
+  {
+   "title": "Office of the Historian: The Annexation of Texas, the Mexican-American War, and the Treaty of Guadalupe-Hidalgo, 1845–1848",
+   "url": "https://history.state.gov/milestones/1830-1860/texas-annexation"
+  },
+  {
+   "title": "National Archives: Treaty of Guadalupe Hidalgo (1848)",
+   "url": "https://www.archives.gov/milestone-documents/treaty-of-guadalupe-hidalgo"
+  },
+  {
+   "title": "Wikimedia Commons: The Mexican War 1846–1848 (campaign map)",
+   "url": "https://commons.wikimedia.org/wiki/File:Mexican%E2%80%93American_War-en.svg"
+  },
+  {
+   "title": "Wikipedia: Siege of Fort Texas",
+   "url": "https://en.wikipedia.org/wiki/Siege_of_Fort_Texas"
+  },
+  {
+   "title": "Wikipedia: Thornton Affair",
+   "url": "https://en.wikipedia.org/wiki/Thornton_Affair"
+  },
+  {
+   "title": "Wikipedia: Battle of Palo Alto",
+   "url": "https://en.wikipedia.org/wiki/Battle_of_Palo_Alto"
+  },
+  {
+   "title": "Wikipedia: Battle of Resaca de la Palma",
+   "url": "https://en.wikipedia.org/wiki/Battle_of_Resaca_de_la_Palma"
+  },
+  {
+   "title": "Wikipedia: Battle of Monterrey",
+   "url": "https://en.wikipedia.org/wiki/Battle_of_Monterrey"
+  },
+  {
+   "title": "Wikipedia: Battle of Buena Vista",
+   "url": "https://en.wikipedia.org/wiki/Battle_of_Buena_Vista"
+  },
+  {
+   "title": "Wikipedia: John E. Wool",
+   "url": "https://en.wikipedia.org/wiki/John_E._Wool"
+  },
+  {
+   "title": "Wikipedia: Conquest of California",
+   "url": "https://en.wikipedia.org/wiki/Conquest_of_California"
+  },
+  {
+   "title": "Wikipedia: California Republic",
+   "url": "https://en.wikipedia.org/wiki/California_Republic"
+  },
+  {
+   "title": "Wikipedia: Battle of Monterey",
+   "url": "https://en.wikipedia.org/wiki/Battle_of_Monterey"
+  },
+  {
+   "title": "Wikipedia: Siege of Los Angeles",
+   "url": "https://en.wikipedia.org/wiki/Siege_of_Los_Angeles"
+  },
+  {
+   "title": "Wikipedia: Battle of Dominguez Rancho",
+   "url": "https://en.wikipedia.org/wiki/Battle_of_Dominguez_Rancho"
+  },
+  {
+   "title": "Wikipedia: Battle of San Pasqual",
+   "url": "https://en.wikipedia.org/wiki/Battle_of_San_Pasqual"
+  },
+  {
+   "title": "Wikipedia: Battle of Río San Gabriel",
+   "url": "https://en.wikipedia.org/wiki/Battle_of_R%C3%ADo_San_Gabriel"
+  },
+  {
+   "title": "Wikipedia: Battle of La Mesa",
+   "url": "https://en.wikipedia.org/wiki/Battle_of_La_Mesa"
+  },
+  {
+   "title": "Wikipedia: Treaty of Cahuenga",
+   "url": "https://en.wikipedia.org/wiki/Treaty_of_Cahuenga"
+  },
+  {
+   "title": "Wikipedia: Army of the West (1846)",
+   "url": "https://en.wikipedia.org/wiki/Army_of_the_West_(1846)"
+  },
+  {
+   "title": "Wikipedia: Capture of Santa Fe",
+   "url": "https://en.wikipedia.org/wiki/Capture_of_Santa_Fe"
+  },
+  {
+   "title": "Wikipedia: Taos Revolt",
+   "url": "https://en.wikipedia.org/wiki/Taos_Revolt"
+  },
+  {
+   "title": "Wikipedia: Battle of Cañada",
+   "url": "https://en.wikipedia.org/wiki/Battle_of_Ca%C3%B1ada"
+  },
+  {
+   "title": "Wikipedia: Battle of Embudo Pass",
+   "url": "https://en.wikipedia.org/wiki/Battle_of_Embudo_Pass"
+  },
+  {
+   "title": "Wikipedia: Siege of Pueblo de Taos",
+   "url": "https://en.wikipedia.org/wiki/Siege_of_Pueblo_de_Taos"
+  },
+  {
+   "title": "Wikipedia: Battle of El Brazito",
+   "url": "https://en.wikipedia.org/wiki/Battle_of_El_Brazito"
+  },
+  {
+   "title": "Wikipedia: Battle of Sacramento (Mexico)",
+   "url": "https://en.wikipedia.org/wiki/Battle_of_Sacramento_(Mexico)"
+  },
+  {
+   "title": "Wikipedia: Siege of Veracruz",
+   "url": "https://en.wikipedia.org/wiki/Siege_of_Veracruz"
+  },
+  {
+   "title": "Wikipedia: Battle of Cerro Gordo",
+   "url": "https://en.wikipedia.org/wiki/Battle_of_Cerro_Gordo"
+  },
+  {
+   "title": "Wikipedia: Battle of Contreras",
+   "url": "https://en.wikipedia.org/wiki/Battle_of_Contreras"
+  },
+  {
+   "title": "Wikipedia: Battle of Churubusco",
+   "url": "https://en.wikipedia.org/wiki/Battle_of_Churubusco"
+  },
+  {
+   "title": "Wikipedia: Battle of Molino del Rey",
+   "url": "https://en.wikipedia.org/wiki/Battle_of_Molino_del_Rey"
+  },
+  {
+   "title": "Wikipedia: Battle of Chapultepec",
+   "url": "https://en.wikipedia.org/wiki/Battle_of_Chapultepec"
+  },
+  {
+   "title": "Wikipedia: Battle for Mexico City",
+   "url": "https://en.wikipedia.org/wiki/Battle_for_Mexico_City"
+  },
+  {
+   "title": "Wikipedia: Siege of Puebla (1847)",
+   "url": "https://en.wikipedia.org/wiki/Siege_of_Puebla_(1847)"
+  },
+  {
+   "title": "Wikipedia: Battle of Huamantla",
+   "url": "https://en.wikipedia.org/wiki/Battle_of_Huamantla"
+  },
+  {
+   "title": "Wikipedia: Treaty of Guadalupe Hidalgo",
+   "url": "https://en.wikipedia.org/wiki/Treaty_of_Guadalupe_Hidalgo"
+  }
+ ]
+}

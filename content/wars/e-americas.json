@@ -319,6 +319,1057 @@
     ]
   },
   {
+    "id": "war-of-1812",
+    "name": "War of 1812",
+    "moment": null,
+    "span": [
+      1812,
+      1815
+    ],
+    "dateLabel": "18 June 1812 – 17 February 1815",
+    "summary": "While Britain fought Napoleon, its blockade of France and the impressment of seamen from American ships angered the United States, and Americans blamed Britain for backing Indigenous resistance in the Old Northwest, where the Shawnee leader Tecumseh had built a confederacy of nations. Some Americans also hoped to annex Canada. Congress declared war in June 1812, but invasions of Upper and Lower Canada failed, and in August 1812 an American army surrendered Detroit to British troops and Tecumseh's warriors. In 1813 Oliver Hazard Perry won control of Lake Erie and Tecumseh was killed at the Thames, while in the south the Creek War ended in 1814 with heavy Creek land cessions. After Napoleon's defeat in 1814 Britain went on the offensive, burning Washington, but it was repulsed at Baltimore and Plattsburgh. The Treaty of Ghent, signed in December 1814, restored the prewar borders. Andrew Jackson's victory at New Orleans came weeks later, before news of the peace arrived. Canada stayed British, while Indigenous nations lost most of their remaining lands south of the Great Lakes.",
+    "casualties": "An estimated 15,000 Americans died from all causes, about 2,200 of them in battle; British and Canadian deaths are estimated at up to about 10,000, and Indigenous nations lost an estimated 10,000 warriors and civilians, many from disease.",
+    "sides": [
+      {
+        "name": "United States",
+        "members": [
+          {
+            "clio": "United States of America",
+            "from": 1812,
+            "to": 1815
+          }
+        ]
+      },
+      {
+        "name": "Britain, its North American colonies and Indigenous allies",
+        "members": [
+          {
+            "clio": "(British Empire)",
+            "from": 1812,
+            "to": 1815
+          }
+        ]
+      }
+    ],
+    "events": [
+      {
+        "date": "1812-06-18",
+        "year": 1812,
+        "label": "18 Jun 1812",
+        "text": "The United States declares war on Britain",
+        "detail": "British orders in council restricting neutral trade with France, the impressment of seamen from American ships and British support for Indigenous resistance in the Northwest had soured relations for years. On 1 June President James Madison asked Congress for war. The House voted 79 to 49 and the Senate 19 to 13, and Madison signed the declaration on 18 June. Opposition was strongest among Federalists in New England, whose trade depended on peace with Britain.",
+        "lonlat": [
+          -77.04,
+          38.9
+        ],
+        "kind": "political"
+      },
+      {
+        "date": "1812-07-17",
+        "year": 1812,
+        "label": "17 Jul 1812",
+        "text": "British and Indigenous force takes Fort Mackinac without a fight",
+        "detail": "On Brock's orders, Captain Charles Roberts set out from Fort St. Joseph with British soldiers, fur traders and voyageurs and Ojibwe, Odawa, Menominee, Ho-Chunk and Sioux warriors. They landed on Mackinac Island and hauled a cannon onto the heights above the fort. Its commander, who had not yet heard that war had been declared, surrendered on 17 July. The easy success drew more Indigenous nations to the British side.",
+        "lonlat": [
+          -84.62,
+          45.85
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1812-08-16",
+        "year": 1812,
+        "label": "16 Aug 1812",
+        "text": "Hull surrenders Detroit to Brock and Tecumseh",
+        "detail": "General William Hull invaded Upper Canada from Detroit on 12 July, but with his supply line threatened by Tecumseh's warriors he retreated to Detroit. Isaac Brock crossed the river with British troops, Canadian militia and Tecumseh's fighters and warned that his Indigenous allies might be beyond his control in an assault. Hull surrendered on 16 August with more than 2,000 men. The defeat left the British in control of Michigan Territory for more than a year.",
+        "lonlat": [
+          -83.05,
+          42.33
+        ],
+        "kind": "turning-point"
+      },
+      {
+        "date": "1812-08-19",
+        "year": 1812,
+        "label": "19 Aug 1812",
+        "text": "USS Constitution defeats HMS Guerriere",
+        "detail": "About 400 miles south-east of Halifax, the American frigate Constitution under Isaac Hull met the British frigate Guerriere under James Dacres. In a short, close action Guerriere's masts were shot away, and she was so badly damaged that her captors set her on fire. The British lost 15 killed and 78 wounded, the Americans 7 killed. Though of little military weight for the Royal Navy, the victory lifted American spirits days after Detroit fell.",
+        "lonlat": [
+          -55.8,
+          41.7
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1812-10-13",
+        "year": 1812,
+        "label": "13 Oct 1812",
+        "text": "Battle of Queenston Heights: Brock killed as an invasion fails",
+        "detail": "American troops under Stephen Van Rensselaer crossed the Niagara River and seized the heights above Queenston. Brock was killed leading a counterattack early in the fighting. Roger Sheaffe then brought up British regulars, militia and Mohawk warriors under John Norton, while many New York militiamen refused to cross the river to reinforce their comrades. The Americans on the heights, among them Winfield Scott, surrendered; about 955 were taken prisoner.",
+        "lonlat": [
+          -79.05,
+          43.16
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1813-01-22",
+        "year": 1813,
+        "label": "22 Jan 1813",
+        "text": "Battle of Frenchtown on the River Raisin",
+        "detail": "An American force under James Winchester, advancing towards Detroit in midwinter, occupied Frenchtown on the River Raisin. On 22 January British troops and Indigenous warriors under Henry Procter attacked and forced it to surrender. Wounded American prisoners left behind were killed the next day, about 60 by some accounts. The killings became a rallying cry in Kentucky and the West and hardened American resolve to retake Detroit.",
+        "lonlat": [
+          -83.38,
+          41.91
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1813-04-27",
+        "year": 1813,
+        "label": "27 Apr 1813",
+        "text": "Americans capture and burn York, capital of Upper Canada",
+        "detail": "Using their new squadron on Lake Ontario, American forces landed near York and drove off the outnumbered British regulars, who blew up their powder magazine as they withdrew, killing and wounding many attackers, among them General Zebulon Pike. During an occupation of nearly two weeks American troops burned the legislative buildings and other public property. The raid gained little militarily, but the British later cited it when they burned Washington in 1814.",
+        "lonlat": [
+          -79.38,
+          43.65
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1813-05-27",
+        "year": 1813,
+        "label": "27 May 1813",
+        "text": "Americans take Fort George, but are checked on the Niagara",
+        "detail": "After a two-day bombardment, American troops stormed ashore at the mouth of the Niagara River on 27 May and captured Fort George. The retreating British struck back: a night attack at Stoney Creek on 5 June drove the American advance back, and on 24 June an American column surrendered at Beaver Dams to a smaller British and Indigenous force. The Americans were left holding little beyond Fort George itself.",
+        "lonlat": [
+          -79.07,
+          43.25
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1813-08-30",
+        "year": 1813,
+        "label": "30 Aug 1813",
+        "text": "Red Stick Creeks storm Fort Mims, widening the war in the south",
+        "detail": "In summer 1813 a civil war split the Creek Nation between the Red Sticks, who opposed land cessions and American ways, and Creeks who favoured accommodation. After American militia ambushed a Red Stick supply train at Burnt Corn in July, Red Stick warriors under Peter McQueen and William Weatherford stormed Fort Mims, a stockade about 35 miles north of Mobile, on 30 August. Most of the 500 or so militia, settlers and mixed-race Creek families inside were killed, and the Creek civil war became a war with the United States.",
+        "lonlat": [
+          -87.84,
+          31.18
+        ],
+        "kind": "atrocity"
+      },
+      {
+        "date": "1813-09-10",
+        "year": 1813,
+        "label": "10 Sep 1813",
+        "text": "Battle of Lake Erie: Perry captures the British squadron",
+        "detail": "Both sides raced to build warships on Lake Erie. Near Put-in-Bay, Oliver Hazard Perry's squadron engaged Robert Barclay's. When Perry's flagship Lawrence was battered into surrender he crossed in a small boat to the Niagara and led a renewed attack, and all six British vessels struck their colours. 'We have met the enemy and they are ours,' Perry reported. Control of the lake cut the supply line of the British army at Detroit.",
+        "lonlat": [
+          -82.85,
+          41.7
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1813-10-05",
+        "year": 1813,
+        "label": "5 Oct 1813",
+        "text": "Battle of the Thames: Tecumseh is killed",
+        "detail": "Without supplies by water, Henry Procter abandoned Detroit and Amherstburg and retreated up the Thames River, against Tecumseh's protests. William Henry Harrison's army of some 3,000 caught his roughly 950 British troops and Indigenous warriors near Moraviantown on 5 October. Richard Johnson's mounted infantry broke the British line, and Tecumseh was killed, after which his warriors withdrew. His death broke up the confederacy, and the United States regained Detroit and Michigan Territory.",
+        "lonlat": [
+          -81.88,
+          42.57
+        ],
+        "kind": "turning-point"
+      },
+      {
+        "date": "1813-11-11",
+        "year": 1813,
+        "label": "11 Nov 1813",
+        "text": "Battle of Crysler's Farm ends the campaign against Montreal",
+        "detail": "In autumn 1813 two American armies advanced on Montreal. In late October Charles de Salaberry's small force of Canadian Voltigeurs, militia and Mohawk warriors turned back Wade Hampton's 4,000 men at the Châteauguay River. On 11 November, at Crysler's Farm on the St. Lawrence, about 800 British and Canadian troops under Joseph Morrison defeated James Wilkinson's rearguard of some 2,500. Both American armies withdrew into winter quarters, and Lower Canada was safe.",
+        "lonlat": [
+          -75.08,
+          44.95
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1813-12-30",
+        "year": 1813,
+        "label": "30 Dec 1813",
+        "text": "British and Indigenous forces burn Buffalo",
+        "detail": "Abandoning Fort George in December, American militia burned the Canadian town of Newark on 10 December, leaving its people homeless in winter. The British retaliated across the Niagara frontier: they took Fort Niagara, raided and burned Lewiston, where civilians were killed, and on 30 December attacked and burned Buffalo and Black Rock. The cycle of reprisals left both banks of the Niagara devastated by the end of the year.",
+        "lonlat": [
+          -78.88,
+          42.89
+        ],
+        "kind": "other"
+      },
+      {
+        "date": "1814-03-27",
+        "year": 1814,
+        "label": "27 Mar 1814",
+        "text": "Battle of Horseshoe Bend breaks the Red Stick Creeks",
+        "detail": "Andrew Jackson's Tennessee militia, US regulars and Cherokee and Creek allies attacked about 1,000 Red Sticks fortified in a bend of the Tallapoosa River. Some 800 Red Sticks were killed, against 49 of Jackson's men killed and 154 wounded. In the Treaty of Fort Jackson that August, Jackson forced the Creek Nation, including the Creeks who had fought beside him, to give up about 23 million acres, roughly half its land.",
+        "lonlat": [
+          -85.73,
+          32.97
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1814-05-31",
+        "year": 1814,
+        "label": "31 May 1814",
+        "text": "Britain extends its blockade to the whole American coast",
+        "detail": "The Royal Navy had declared Chesapeake and Delaware Bays under blockade in December 1812. With Napoleon defeated and abdicated in April 1814, Britain sent more ships and veteran troops across the Atlantic, and on 31 May it extended the blockade to the entire coast. American exports, worth $130 million in 1807, fell to about $7 million in 1814, and customs revenue, the government's main income, fell by more than half.",
+        "lonlat": [
+          -70.0,
+          41.5
+        ],
+        "kind": "other"
+      },
+      {
+        "date": "1814-07-25",
+        "year": 1814,
+        "label": "25 Jul 1814",
+        "text": "Battle of Lundy's Lane, the war's bloodiest battle",
+        "detail": "Jacob Brown's American army crossed the Niagara River, took Fort Erie on 3 July and defeated a British force at Chippawa on 5 July. On 25 July it met the British again at Lundy's Lane, close to Niagara Falls, in a battle that raged into the night and became the costliest of the war. Neither side could claim victory, but the Americans fell back to Fort Erie, where they beat off a British assault in August.",
+        "lonlat": [
+          -79.09,
+          43.09
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1814-08-24",
+        "year": 1814,
+        "label": "24 Aug 1814",
+        "text": "British troops defeat the Americans at Bladensburg and burn Washington",
+        "detail": "A British force of about 4,500 under Robert Ross, guided by Rear Admiral George Cockburn, landed in Maryland and routed American militia at Bladensburg on 24 August. That evening the troops entered Washington and set fire to the Capitol, with the Library of Congress inside it, the President's House, the Treasury and the War Department. President Madison fled. The British, citing the burning of York, left after about a day.",
+        "lonlat": [
+          -77.01,
+          38.89
+        ],
+        "kind": "invasion"
+      },
+      {
+        "date": "1814-09",
+        "year": 1814,
+        "label": "Sep 1814",
+        "text": "British forces occupy eastern Maine",
+        "detail": "Britain hoped to gain a land route between Halifax and Quebec in any peace. Its forces took Moose Island at Eastport in July, and in September John Sherbrooke led some 3,000 troops from Halifax up the Penobscot River, capturing Castine and destroying or seizing 17 American ships in a campaign of 26 days. The coast of Maine east of the Penobscot was held for the rest of the war and returned under the peace treaty.",
+        "lonlat": [
+          -68.8,
+          44.39
+        ],
+        "kind": "invasion"
+      },
+      {
+        "date": "1814-09-11",
+        "year": 1814,
+        "label": "11 Sep 1814",
+        "text": "Battle of Plattsburgh: invasion from Canada turned back",
+        "detail": "George Prevost marched south from Canada along Lake Champlain with more than 8,000 troops. On 11 September Thomas Macdonough's American squadron, anchored in Plattsburgh Bay, defeated and captured the British flotilla, whose commander George Downie was killed. Without control of the lake to supply his army, Prevost called off the land attack and withdrew, weakening Britain's hand at the peace talks.",
+        "lonlat": [
+          -73.44,
+          44.69
+        ],
+        "kind": "turning-point"
+      },
+      {
+        "date": "1814-09-12",
+        "year": 1814,
+        "label": "12–14 Sep 1814",
+        "text": "Baltimore holds: Fort McHenry withstands bombardment",
+        "detail": "About 5,000 British troops landed at North Point to attack Baltimore. On 12 September American militia delayed them, and Robert Ross was killed by a sharpshooter. On 13 and 14 September British ships bombarded Fort McHenry for about 25 hours, but its garrison held, and the British withdrew. Seeing the flag still flying at dawn, the lawyer Francis Scott Key wrote the verses that became 'The Star-Spangled Banner'.",
+        "lonlat": [
+          -76.58,
+          39.26
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1814-12-24",
+        "year": 1814,
+        "label": "24 Dec 1814",
+        "text": "Treaty of Ghent signed",
+        "detail": "Peace talks had begun at Ghent in August 1814, with Britain at first demanding territory and an Indigenous buffer state. The British failures at Plattsburgh and Baltimore removed the case for territorial gains, and both sides settled for the prewar status quo. Signed on 24 December, the treaty returned captured territory, set up commissions for disputed boundaries and promised to restore Indigenous nations' rights of 1811, but it said nothing about impressment or neutral rights.",
+        "lonlat": [
+          3.72,
+          51.05
+        ],
+        "kind": "treaty"
+      },
+      {
+        "date": "1815-01-08",
+        "year": 1815,
+        "label": "8 Jan 1815",
+        "text": "Battle of New Orleans: Jackson repulses the British",
+        "detail": "A British expedition under Edward Pakenham landed below New Orleans in December. On 8 January about 8,000 British troops assaulted Andrew Jackson's earthworks at Chalmette, defended by some 5,700 regulars, militia and volunteers. The attack failed within hours: the British lost about 2,000 killed, wounded or captured, Pakenham among the dead, while the Americans lost 71. The battle came after the treaty was signed but before word reached America.",
+        "lonlat": [
+          -89.99,
+          29.94
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1815-02-17",
+        "year": 1815,
+        "label": "16–17 Feb 1815",
+        "text": "The United States ratifies the peace and the war ends",
+        "detail": "News of the treaty reached Washington in February, just after news of New Orleans and as Federalist delegates from the Hartford Convention arrived with New England's complaints about the war. The Senate approved the treaty on 16 February and ratifications were exchanged on 17 February, ending the war. On the Gulf Coast the British had taken Fort Bowyer on 12 February, but word of peace halted their attack on Mobile.",
+        "lonlat": [
+          -77.04,
+          38.9
+        ],
+        "kind": "treaty"
+      }
+    ],
+    "sources": [
+      {
+        "title": "War of 1812 (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/War_of_1812"
+      },
+      {
+        "title": "Office of the Historian: The War of 1812, 1812–1815",
+        "url": "https://history.state.gov/milestones/1801-1829/war-of-1812"
+      },
+      {
+        "title": "Siege of Detroit (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Siege_of_Detroit"
+      },
+      {
+        "title": "Battle of Queenston Heights (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Battle_of_Queenston_Heights"
+      },
+      {
+        "title": "Battle of the Thames (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Battle_of_the_Thames"
+      },
+      {
+        "title": "Burning of Washington (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Burning_of_Washington"
+      },
+      {
+        "title": "Battle of Plattsburgh (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Battle_of_Plattsburgh"
+      },
+      {
+        "title": "Battle of New Orleans (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Battle_of_New_Orleans"
+      }
+    ]
+  },
+  {
+    "id": "texas-revolution",
+    "name": "Texas Revolution",
+    "moment": null,
+    "span": [
+      1835,
+      1836
+    ],
+    "dateLabel": "2 October 1835 – 21 April 1836",
+    "summary": "In the early 1830s Mexico's government tried to slow the flood of settlers from the United States into Texas, then part of the state of Coahuila y Texas: a law of 1830 banned further American immigration and new imports of enslaved people. When Antonio López de Santa Anna abandoned the federal Constitution of 1824 and concentrated power in Mexico City, Anglo-American settlers and many Tejanos rose in revolt. Fighting began at Gonzales on 2 October 1835, and by December Texian volunteers had driven the last Mexican garrison out of San Antonio de Béxar. Early in 1836 Santa Anna led an army north. His troops stormed the Alamo on 6 March, while General José de Urrea swept up the coast and some 350 Texian prisoners were executed at Goliad. A convention declared independence on 2 March. Sam Houston's army retreated east, then routed Santa Anna at San Jacinto on 21 April 1836 and captured him the next day. The Treaties of Velasco promised a Mexican withdrawal, but Mexico refused to recognise the Republic of Texas.",
+    "casualties": "An estimated 600 Texian and 1,000 Mexican soldiers died in the fighting and executions of 1835–36, with about 350 Texians and 400 Mexicans wounded and some 700 Mexican soldiers captured.",
+    "sides": [
+      {
+        "name": "Texian and Tejano rebels (Republic of Texas from 2 March 1836)",
+        "members": [
+          {
+            "clio": "Republic of Texas",
+            "from": 1836,
+            "to": 1836,
+            "fromDate": "1836-03-02",
+            "toDate": "1836-05-15"
+          }
+        ]
+      },
+      {
+        "name": "Mexico",
+        "members": [
+          {
+            "clio": "Federated Republic of Mexico",
+            "from": 1835,
+            "to": 1835,
+            "fromDate": "1835-10-02"
+          },
+          {
+            "clio": "Centralist Mexico",
+            "from": 1836,
+            "to": 1836,
+            "toDate": "1836-05-15"
+          }
+        ]
+      }
+    ],
+    "events": [
+      {
+        "date": "1835-10-02",
+        "year": 1835,
+        "label": "2 Oct 1835",
+        "text": "Battle of Gonzales: the first shots of the revolution",
+        "detail": "Tension had been rising as Santa Anna's government turned against federalism, and in September 1835 General Martín Perfecto de Cos landed at Copano with about 500 soldiers. Troops from San Antonio de Béxar were sent to take back a small cannon lent to the settlers of Gonzales for defence. The settlers refused to give it up, and on 2 October 1835 Texian volunteers attacked Lieutenant Francisco de Castañeda's dragoons, who withdrew to Béxar after a brief skirmish. The clash began open war.",
+        "lonlat": [
+          -97.45,
+          29.5
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1835-10-10",
+        "year": 1835,
+        "label": "10 Oct 1835",
+        "text": "Texian volunteers capture the presidio at Goliad",
+        "detail": "Presidio La Bahía at Goliad guarded the road between the coast and San Antonio and held supplies the Mexican army needed. On 10 October 1835 about 125 Texian volunteers under George Collingsworth stormed it and took the small garrison after a fight of about half an hour. The loss cut Cos off from the port of Copano. The next day the volunteers gathered at Gonzales elected Stephen F. Austin to command their army, which then marched on San Antonio.",
+        "lonlat": [
+          -97.38,
+          28.65
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1835-10-28",
+        "year": 1835,
+        "label": "28 Oct 1835",
+        "text": "Battle of Concepción outside San Antonio",
+        "detail": "As the Texian army advanced on San Antonio de Béxar, where Cos had gathered his troops, about 90 men under James Bowie and James Fannin camped by Mission Concepción. On 28 October 1835 Colonel Domingo Ugartechea attacked them with about 275 infantry and cavalry and two cannon. Sheltered along a riverbank, the Texians beat back the attacks and lost one man killed, while Mexican dead are estimated at 14 to 76. The Texians then settled down to besiege Béxar.",
+        "lonlat": [
+          -98.5,
+          29.39
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1835-11-03",
+        "year": 1835,
+        "label": "3 Nov 1835",
+        "text": "The Consultation meets at San Felipe and names Sam Houston to command",
+        "detail": "Delegates from the Texas settlements met at San Felipe de Austin on 3 November 1835 to decide what they were fighting for. Most still hoped to restore Mexico's federal Constitution of 1824 rather than break away. The Consultation set up a provisional government with a governor and a council, created a regular army and on 13 November named Sam Houston its commander-in-chief. Quarrels between governor and council soon left Texas with weak and divided leadership.",
+        "lonlat": [
+          -96.1,
+          29.8
+        ],
+        "kind": "political"
+      },
+      {
+        "date": "1835-11-26",
+        "year": 1835,
+        "label": "26 Nov 1835",
+        "text": "The Grass Fight outside Béxar",
+        "detail": "During the siege of Béxar, Texian scouts reported a Mexican pack train approaching the town on 26 November 1835, and many believed it carried silver to pay Cos's troops. Edward Burleson's men attacked and drove the escort back into the town, killing an estimated 50 Mexican soldiers for two Texians wounded. The mules turned out to be carrying fodder for the garrison's horses, and the skirmish became known as the Grass Fight. The siege dragged on into December.",
+        "lonlat": [
+          -98.52,
+          29.43
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1835-12-05",
+        "year": 1835,
+        "label": "5–10 Dec 1835",
+        "text": "Texians storm San Antonio de Béxar and Cos surrenders",
+        "detail": "After weeks of siege, Ben Milam and Frank Johnson led volunteers into San Antonio de Béxar on 5 December 1835, fighting from house to house for four days; Milam was killed on 7 December. On 9 December Cos withdrew into the Alamo mission and asked for terms, agreed early on 10 December. His men pledged not to oppose the Constitution of 1824, and Cos left Béxar on 14 December with about 800 soldiers, leaving no Mexican garrison in Texas.",
+        "lonlat": [
+          -98.49,
+          29.42
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1835-12-30",
+        "year": 1835,
+        "label": "30 Dec 1835",
+        "text": "Mexico decrees that armed foreign volunteers will be treated as pirates",
+        "detail": "Many volunteers had arrived from the United States, among them the New Orleans Greys, and Mexico's government believed the revolt was being fed from across the border. At Santa Anna's urging, a decree issued in late December 1835 and known after the war minister José María Tornel declared that armed foreigners taken fighting Mexican troops would be treated as pirates and could be executed. It would be invoked to justify the killing of prisoners in the spring of 1836.",
+        "lonlat": [
+          -99.13,
+          19.43
+        ],
+        "kind": "political"
+      },
+      {
+        "date": "1836-02",
+        "year": 1836,
+        "label": "Feb 1836",
+        "text": "Santa Anna's army crosses the Rio Grande into Texas",
+        "detail": "Determined to crush the revolt himself, Santa Anna gathered an army of several thousand men at Saltillo and marched it north through a harsh winter. His main force crossed the Rio Grande in mid-February 1836 and made for San Antonio, while General José de Urrea led a second column up the coast from Matamoros. The Texians were poorly prepared: their government was paralysed by quarrels, and many volunteers had gone off to join a planned expedition against Matamoros.",
+        "lonlat": [
+          -100.38,
+          28.31
+        ],
+        "kind": "invasion"
+      },
+      {
+        "date": "1836-02-23",
+        "year": 1836,
+        "label": "23 Feb 1836",
+        "text": "Siege of the Alamo begins",
+        "detail": "On 23 February 1836 about 1,500 Mexican soldiers entered San Antonio de Béxar, and the town's small Texian garrison under William B. Travis and James Bowie fell back into the fortified Alamo mission. On 24 February Travis wrote his famous appeal 'To the People of Texas & All Americans in the World', pledging to hold out and asking for reinforcements. Few came. Mexican artillery bombarded the walls while more of Santa Anna's troops arrived, and the siege lasted thirteen days.",
+        "lonlat": [
+          -98.49,
+          29.43
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1836-02-27",
+        "year": 1836,
+        "label": "27 Feb – 2 Mar 1836",
+        "text": "Urrea routs the Matamoros expedition at San Patricio and Agua Dulce",
+        "detail": "Advancing up the coast, Urrea's column surprised Frank Johnson's men at San Patricio on 27 February 1836; six Texians escaped and the rest were killed or captured. On 2 March Mexican dragoons ambushed James Grant's party at Agua Dulce Creek, killing twelve, Grant among them. Both groups were what remained of the planned expedition against Matamoros, which had pulled men and supplies away from San Antonio and Goliad. Urrea's victories opened the coastal road to Goliad.",
+        "lonlat": [
+          -97.52,
+          27.96
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1836-03-02",
+        "year": 1836,
+        "label": "2 Mar 1836",
+        "text": "Texas declares independence at Washington-on-the-Brazos",
+        "detail": "While the Alamo was under siege, an elected convention met at Washington-on-the-Brazos on 1 March 1836. The next day it adopted a declaration of independence proclaiming the Republic of Texas and accusing Santa Anna's government of abandoning the federal constitution. The delegates went on to write a constitution, adopted on 17 March, and chose David G. Burnet as interim president. Sam Houston was confirmed as commander of all Texian forces and left to take charge of the army.",
+        "lonlat": [
+          -96.16,
+          30.33
+        ],
+        "kind": "political"
+      },
+      {
+        "date": "1836-03-06",
+        "year": 1836,
+        "label": "6 Mar 1836",
+        "text": "The Alamo falls",
+        "detail": "Before dawn on 6 March 1836 Mexican columns stormed the Alamo from several sides and, after their first attacks were thrown back, broke into the compound. Within about an hour nearly all of the roughly 182 to 257 defenders were dead, including Travis, Bowie and Davy Crockett; a handful who surrendered were executed on Santa Anna's orders. Mexican losses are estimated at 400 to 600 killed and wounded. Susanna Dickinson, her infant daughter and Travis's enslaved servant Joe were spared and sent to Gonzales.",
+        "lonlat": [
+          -98.49,
+          29.43
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1836-03-13",
+        "year": 1836,
+        "label": "13 Mar 1836",
+        "text": "Houston abandons Gonzales and the Runaway Scrape begins",
+        "detail": "Sam Houston had reached Gonzales to gather an army when the survivors of the Alamo brought news of its fall. Around midnight on 13 March 1836 the Texian force evacuated the town, burning whatever it could not carry, and retreated east. Settlers fled ahead of the Mexican advance along flooded rivers and muddy roads, in what became known as the Runaway Scrape. Volunteers kept arriving, and by 19 March about 1,400 men had joined Houston's army.",
+        "lonlat": [
+          -97.45,
+          29.5
+        ],
+        "kind": "other"
+      },
+      {
+        "date": "1836-03-19",
+        "year": 1836,
+        "label": "19–20 Mar 1836",
+        "text": "Fannin surrenders after the Battle of Coleto",
+        "detail": "Ordered by Houston to abandon Goliad and fall back, James Fannin delayed and set out only on 19 March 1836. Urrea's troops caught his roughly 300 men on open prairie near Coleto Creek. The Texians held off attacks through the day, losing about nine killed and 51 wounded against some 50 Mexican dead and 140 wounded. Short of water and surrounded, Fannin surrendered on 20 March, believing his men would be treated as prisoners of war, and they were marched back to Goliad.",
+        "lonlat": [
+          -97.22,
+          28.69
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1836-03-27",
+        "year": 1836,
+        "label": "27 Mar 1836",
+        "text": "Goliad massacre: Texian prisoners are executed",
+        "detail": "Fannin's men and other captured Texians were held at Presidio La Bahía. Urrea appealed for clemency, but Santa Anna, citing the decree on foreign volunteers, ordered them executed, and the commander at Goliad, José Nicolás de la Portilla, obeyed. On Palm Sunday, 27 March 1836, the prisoners were marched out and shot: about 350 by the most common count, with some estimates higher. Twenty-eight escaped and others were spared to work as doctors or labourers. 'Remember Goliad' became a Texian rallying cry.",
+        "lonlat": [
+          -97.38,
+          28.65
+        ],
+        "kind": "atrocity"
+      },
+      {
+        "date": "1836-04",
+        "year": 1836,
+        "label": "Mid-Apr 1836",
+        "text": "Santa Anna burns Harrisburg as Houston turns to fight",
+        "detail": "Houston retreated to the Brazos and drilled his army at Groce's Landing before marching east. Santa Anna, hoping to seize the Texian government, pushed ahead with part of his army and reached Harrisburg in mid-April 1836, but the interim government had fled, and he ordered the town burned. Learning on 18 April that Santa Anna's force was small and close by, Houston hurried toward Lynch's Ferry on Buffalo Bayou, arriving on the morning of 20 April.",
+        "lonlat": [
+          -95.3,
+          29.72
+        ],
+        "kind": "other"
+      },
+      {
+        "date": "1836-04-21",
+        "year": 1836,
+        "label": "21 Apr 1836",
+        "text": "Battle of San Jacinto: Houston routs Santa Anna",
+        "detail": "Santa Anna camped beside the San Jacinto River, reinforced by Cos to about 1,200–1,360 men. At about 4:30 in the afternoon of 21 April 1836, roughly 900 Texians attacked across open ground shouting 'Remember the Alamo! Remember Goliad!' The Mexican line broke in about 18 minutes, and the killing went on as Texians shot men trying to surrender. About 650 Mexicans were killed and some 300 captured; the Texians lost 11 dead and about 30 wounded, Houston among them.",
+        "lonlat": [
+          -95.08,
+          29.75
+        ],
+        "kind": "turning-point"
+      },
+      {
+        "date": "1836-04-22",
+        "year": 1836,
+        "label": "22 Apr 1836",
+        "text": "Santa Anna is captured",
+        "detail": "Santa Anna escaped the battlefield and hid in the marshes, wearing a private's uniform jacket. Texian search parties captured him on 22 April 1836 and brought him before the wounded Houston. Held as a prisoner, he agreed to order the remaining Mexican forces in Texas, under Vicente Filisola and Urrea, to withdraw. Although those armies were still larger than Houston's, they began pulling back toward the Rio Grande.",
+        "lonlat": [
+          -95.08,
+          29.76
+        ],
+        "kind": "turning-point"
+      },
+      {
+        "date": "1836-05-14",
+        "year": 1836,
+        "label": "14 May 1836",
+        "text": "Treaties of Velasco: Santa Anna agrees to withdraw",
+        "detail": "At Velasco on 14 May 1836 Santa Anna, still a prisoner, signed two agreements with interim president David G. Burnet. The public treaty ended hostilities and required Mexican troops to withdraw beyond the Rio Grande, exchange prisoners and return captured property, including enslaved people. A secret treaty bound Santa Anna to work for recognition of Texas with a border no farther south than the Rio Grande. Mexico's government disowned both, and did not recognise Texan independence until 1848.",
+        "lonlat": [
+          -95.29,
+          28.95
+        ],
+        "kind": "treaty"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Texas Revolution (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Texas_Revolution"
+      },
+      {
+        "title": "Handbook of Texas (TSHA): Texas Revolution",
+        "url": "https://www.tshaonline.org/handbook/entries/texas-revolution"
+      },
+      {
+        "title": "Battle of Concepción (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Battle_of_Concepci%C3%B3n"
+      },
+      {
+        "title": "Siege of Béxar (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Siege_of_B%C3%A9xar"
+      },
+      {
+        "title": "Battle of the Alamo (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Battle_of_the_Alamo"
+      },
+      {
+        "title": "Goliad massacre (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Goliad_massacre"
+      },
+      {
+        "title": "Battle of San Jacinto (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Battle_of_San_Jacinto"
+      },
+      {
+        "title": "Treaties of Velasco (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Treaties_of_Velasco"
+      }
+    ]
+  },
+  {
+    "id": "mexican-american-war",
+    "name": "Mexican–American War",
+    "moment": null,
+    "span": [
+      1846,
+      1848
+    ],
+    "dateLabel": "25 April 1846 – 2 February 1848",
+    "summary": "In 1845 the United States annexed Texas, which had broken away from Mexico in 1836. Mexico had never recognised Texan independence and had threatened war over annexation, and the two countries also disputed the border: Texas claimed the Rio Grande, Mexico the Nueces River farther north. President James K. Polk, who also wanted California and New Mexico, sent John Slidell to buy them and moved Zachary Taylor's army to the Rio Grande. A Mexican attack on a US patrol in the disputed zone on 25 April 1846 led Congress to declare war. Taylor won at Palo Alto, Resaca de la Palma and Monterrey and held off Santa Anna at Buena Vista, while US forces occupied New Mexico and, after a Californio uprising, California. In March 1847 Winfield Scott landed at Veracruz and fought his way inland, taking Mexico City in September. The Treaty of Guadalupe Hidalgo of 1848 gave the United States about 55 percent of Mexico's territory for $15 million, and the fight over slavery in the new lands sharpened the sectional crisis in the United States.",
+    "casualties": "An estimated 13,000 Americans died, about 1,700 of them killed in battle and most of the rest from disease, while Mexican military and civilian deaths are estimated at up to about 25,000.",
+    "sides": [
+      {
+        "name": "United States (with the Bear Flag rebels in California, 1846)",
+        "members": [
+          {
+            "clio": "United States of America",
+            "from": 1846,
+            "to": 1848,
+            "fromDate": "1846-04-25",
+            "toDate": "1848-05-31"
+          },
+          {
+            "clio": "California Republic",
+            "from": 1846,
+            "to": 1846,
+            "fromDate": "1846-06-14"
+          }
+        ]
+      },
+      {
+        "name": "Mexico",
+        "members": [
+          {
+            "clio": "Federated Republic of Mexico",
+            "from": 1846,
+            "to": 1848,
+            "fromDate": "1846-04-25",
+            "toDate": "1848-05-31"
+          },
+          {
+            "clio": "Centralist Mexico",
+            "from": 1846,
+            "to": 1847,
+            "fromDate": "1846-04-25"
+          }
+        ]
+      }
+    ],
+    "events": [
+      {
+        "date": "1846-03",
+        "year": 1846,
+        "label": "Mar 1846",
+        "text": "Taylor's army advances to the Rio Grande",
+        "detail": "Texas had become the 28th US state on 29 December 1845, and Mexico, which still regarded it as Mexican, had broken off diplomatic relations. Polk's envoy John Slidell, sent with an offer to buy the Rio Grande border, California and New Mexico, was refused. Polk then ordered General Zachary Taylor, camped on the Nueces since 1845, into the disputed land beyond it. In March 1846 Taylor's army reached the Rio Grande opposite Matamoros and began building a fort, later called Fort Texas.",
+        "lonlat": [
+          -97.49,
+          25.9
+        ],
+        "kind": "invasion"
+      },
+      {
+        "date": "1846-04-25",
+        "year": 1846,
+        "label": "25 Apr 1846",
+        "text": "Thornton Affair: Mexican cavalry ambush a US patrol",
+        "detail": "On 23 April 1846 Mexico's president, General Mariano Paredes, declared a defensive war. Two days later a large Mexican cavalry force that had crossed the Rio Grande surrounded a patrol of about 70 US dragoons under Captain Seth Thornton at a ranch upriver from Taylor's fort, killing 11 and capturing 52. Taylor reported to Washington that hostilities had begun, and Polk, who had already been preparing to ask Congress for war, used the clash to argue that Mexico had started it.",
+        "lonlat": [
+          -97.7,
+          26.05
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1846-05-03",
+        "year": 1846,
+        "label": "3 May 1846",
+        "text": "Mexican guns at Matamoros bombard Fort Texas",
+        "detail": "General Mariano Arista crossed the Rio Grande with most of his army, threatening Taylor's supply base at Point Isabel on the coast, and Taylor marched off to secure it. From 3 May 1846 Mexican artillery in Matamoros shelled the fort he had left behind, keeping up the bombardment for some 160 hours. Its commander, Major Jacob Brown, was one of two defenders killed, and the post was renamed Fort Brown in his honour, giving its name to the later city of Brownsville.",
+        "lonlat": [
+          -97.49,
+          25.9
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1846-05-08",
+        "year": 1846,
+        "label": "8 May 1846",
+        "text": "Battle of Palo Alto: US artillery wins the first major battle",
+        "detail": "Returning to relieve the fort, Taylor's roughly 2,300 men met Arista's army of about 3,700 on the coastal prairie of Palo Alto on 8 May 1846. The battle was fought largely with artillery. Mobile US 'flying artillery' batteries fired, moved and fired again, causing heavy losses that the Mexican guns could not match. Mexican casualties were about 102 killed and 129 wounded against nine Americans killed; Major Samuel Ringgold was mortally wounded. That evening Arista pulled back to the south.",
+        "lonlat": [
+          -97.47,
+          26.02
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1846-05-09",
+        "year": 1846,
+        "label": "9 May 1846",
+        "text": "Battle of Resaca de la Palma: Arista's army is routed",
+        "detail": "Arista made a new stand the next day in a dry riverbed, or resaca, lined with thick brush on the road to Matamoros. In close fighting on 9 May 1846 US dragoons captured Mexican artillery, and the Mexican army broke and fled back across the Rio Grande. Fort Texas was relieved. Later in May Taylor crossed the river and occupied Matamoros, which Arista had abandoned, and the war moved south into northern Mexico.",
+        "lonlat": [
+          -97.49,
+          25.94
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1846-05-13",
+        "year": 1846,
+        "label": "13 May 1846",
+        "text": "The United States declares war on Mexico",
+        "detail": "Polk asked Congress for war, arguing that Mexico had begun hostilities on American soil, and Congress approved the declaration on 13 May 1846. Critics, mostly Whigs, accused Polk of provoking the war by sending troops into disputed land; among them, later in the war, was the young congressman Abraham Lincoln, whose 'spot resolutions' challenged Polk to name the spot where the first blood had been shed. Mexico's Congress formally declared war on 7 July 1846.",
+        "lonlat": [
+          -77.01,
+          38.89
+        ],
+        "kind": "political"
+      },
+      {
+        "date": "1846-06-14",
+        "year": 1846,
+        "label": "14 Jun 1846",
+        "text": "Bear Flag Revolt: American settlers proclaim a California Republic",
+        "detail": "In Mexico's thinly held province of Alta California, American settlers in the Sacramento Valley, emboldened by the US Army explorer John C. Frémont and his armed party, rose against the Mexican authorities. On 14 June 1846 they seized the barracks at Sonoma and raised a flag bearing a grizzly bear and a star, proclaiming the California Republic under William B. Ide. It lasted 25 days: on 9 July the US flag was raised at Sonoma, and the rebels joined Frémont's California Battalion.",
+        "lonlat": [
+          -122.46,
+          38.29
+        ],
+        "kind": "political"
+      },
+      {
+        "date": "1846-07-07",
+        "year": 1846,
+        "label": "7 Jul 1846",
+        "text": "US Navy takes Monterey, capital of Alta California",
+        "detail": "Commodore John D. Sloat's Pacific Squadron landed sailors and marines at Monterey, the capital of Alta California, on 7 July 1846 and took the town without a shot. Two days later another landing party took Yerba Buena, the future San Francisco. Commodore Robert Stockton, who succeeded Sloat, joined forces with Frémont, and on 13 August 1846 US troops entered Los Angeles unopposed. Within weeks of the first landings, California seemed to be won.",
+        "lonlat": [
+          -121.89,
+          36.6
+        ],
+        "kind": "invasion"
+      },
+      {
+        "date": "1846-08",
+        "year": 1846,
+        "label": "Aug 1846",
+        "text": "Mexico restores its federal constitution and Santa Anna returns",
+        "detail": "The defeats on the Rio Grande discredited the centralist government of Paredes, who was overthrown in the summer of 1846. Federalist liberals restored the Constitution of 1824, and José Mariano Salas became acting president. Santa Anna, in exile in Cuba, returned in August after the US Navy let him through its blockade of the Gulf coast, in the belief that he would make peace. Instead he took command of the army and raised a new force at San Luis Potosí.",
+        "lonlat": [
+          -99.13,
+          19.43
+        ],
+        "kind": "political"
+      },
+      {
+        "date": "1846-08-18",
+        "year": 1846,
+        "label": "18 Aug 1846",
+        "text": "Kearny occupies Santa Fe and New Mexico without a fight",
+        "detail": "General Stephen W. Kearny led the Army of the West, about 1,600 regulars and volunteers, from Fort Leavenworth down the Santa Fe Trail. Governor Manuel Armijo gathered militia at Apache Canyon east of Santa Fe, then withdrew without fighting and fled south to Chihuahua. Kearny entered Santa Fe and on 18 August 1846 took possession of New Mexico, declaring himself military governor and setting up a civil government. Leaving a garrison behind, he set out for California the following month.",
+        "lonlat": [
+          -105.94,
+          35.69
+        ],
+        "kind": "invasion"
+      },
+      {
+        "date": "1846-09-20",
+        "year": 1846,
+        "label": "20–24 Sep 1846",
+        "text": "Battle of Monterrey",
+        "detail": "Taylor advanced on Monterrey, a fortified city in Nuevo León held by General Pedro de Ampudia. From 20 September 1846 his troops attacked the forts on the city's outskirts and then fought their way street by street into the centre, taking heavy losses. On 24 September Ampudia agreed to give up Monterrey in return for an eight-week armistice and the free withdrawal of his army. Polk disliked the terms, and Taylor later ended the truce by occupying Saltillo.",
+        "lonlat": [
+          -100.31,
+          25.67
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1846-09-29",
+        "year": 1846,
+        "label": "Late Sep 1846",
+        "text": "Californios rise and retake Los Angeles",
+        "detail": "The small US garrison left in Los Angeles under Archibald Gillespie imposed strict rules that angered the Californios, the Mexican residents of the province. In late September 1846 they rose under José María Flores and forced the garrison to withdraw, and the revolt spread across southern California, where Mexican control was restored for the rest of the year. US forces could not retake the city that autumn, and the conquest of California had to be fought again.",
+        "lonlat": [
+          -118.24,
+          34.05
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1846-12-06",
+        "year": 1846,
+        "label": "6 Dec 1846",
+        "text": "Battle of San Pasqual: Californio lancers defeat Kearny",
+        "detail": "Kearny reached southern California after a hard march across the desert with a small force of dragoons. On 6 December 1846, near the village of San Pasqual, about 150 Americans attacked some 100 Californio lancers under Andrés Pico. The lancers, expert horsemen, turned on the scattered American column and cut it up in about half an hour; 22 Americans were killed and Kearny himself was wounded. Pinned on a hilltop, his force was rescued by sailors and marines sent from San Diego.",
+        "lonlat": [
+          -116.95,
+          33.09
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1847-01-08",
+        "year": 1847,
+        "label": "8–13 Jan 1847",
+        "text": "Los Angeles is retaken and the Californios capitulate at Cahuenga",
+        "detail": "Stockton and Kearny marched north from San Diego with a combined force of sailors, marines and soldiers. They defeated Flores's Californios at the Río San Gabriel on 8 January 1847 and at La Mesa the next day, and entered Los Angeles unopposed on 10 January. On 13 January Andrés Pico and John C. Frémont signed the Articles of Capitulation at Cahuenga Pass, which allowed the Californios to go home and ended the fighting in California.",
+        "lonlat": [
+          -118.36,
+          34.14
+        ],
+        "kind": "treaty"
+      },
+      {
+        "date": "1847-01-19",
+        "year": 1847,
+        "label": "19 Jan 1847",
+        "text": "Taos Revolt against the US occupation of New Mexico",
+        "detail": "Many New Mexicans resented the American occupation. On 19 January 1847 Hispano and Pueblo insurgents at Taos killed the new governor, Charles Bent, and other officials, and the next day attacked Turley's mill at Arroyo Hondo. Colonel Sterling Price marched north from Santa Fe with more than 300 soldiers and volunteers and besieged the rebels in Taos Pueblo in early February. About 150 rebels were killed and some 400 captured, against seven Americans dead, and the revolt was crushed.",
+        "lonlat": [
+          -105.57,
+          36.41
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1847-02-22",
+        "year": 1847,
+        "label": "22–23 Feb 1847",
+        "text": "Battle of Buena Vista: Taylor holds off Santa Anna",
+        "detail": "Many of Taylor's regulars had been sent to join Winfield Scott's planned landing at Veracruz. Santa Anna marched north from San Luis Potosí, losing thousands of men on the way, and on 22–23 February 1847 attacked Taylor's roughly 4,600 men, mostly volunteers, at the pass of La Angostura near the Buena Vista hacienda south of Saltillo. His army of about 15,000 came close to breaking the US line. Both sides claimed victory, but Santa Anna withdrew, and the battle made Taylor a national hero.",
+        "lonlat": [
+          -101.05,
+          25.34
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1847-03-09",
+        "year": 1847,
+        "label": "9–29 Mar 1847",
+        "text": "Scott lands at Veracruz and takes the city",
+        "detail": "Polk decided to strike at Mexico City from the sea. On 9 March 1847 Winfield Scott put his army ashore on the beaches south of Veracruz without opposition, the first major amphibious landing in US history. His troops surrounded the walled port, and from 22 March siege and naval guns bombarded it, killing hundreds of civilians. The defenders asked for terms on 26 March, and on 29 March the city and the island fortress of San Juan de Ulúa surrendered, with some 3,000 soldiers taken prisoner.",
+        "lonlat": [
+          -96.15,
+          19.19
+        ],
+        "kind": "invasion"
+      },
+      {
+        "date": "1847-04-18",
+        "year": 1847,
+        "label": "18 Apr 1847",
+        "text": "Battle of Cerro Gordo: Scott breaks through to the highlands",
+        "detail": "Scott marched inland along the National Road, eager to leave the coast before the yellow-fever season. Santa Anna blocked the road at the mountain pass of Cerro Gordo with a large army in strong positions. Scouts, among them Captain Robert E. Lee, found a path around the Mexican left, and on 18 April 1847 Scott's army of about 8,500 attacked from flank and front. The Mexican army collapsed, losing more than 1,000 killed and wounded and about 3,000 prisoners, against some 400 US casualties.",
+        "lonlat": [
+          -96.68,
+          19.43
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1847-08-19",
+        "year": 1847,
+        "label": "19–20 Aug 1847",
+        "text": "Battles of Contreras and Churubusco outside Mexico City",
+        "detail": "After waiting months at Puebla for reinforcements, Scott advanced on Mexico City in August 1847. On 19–20 August his army routed a Mexican force at Contreras (Padierna) and then stormed the fortified convent of Churubusco, defended to the last by Mexican troops and the Saint Patrick's Battalion, made up mostly of Irish and other immigrant deserters from the US Army. US losses at Churubusco were more than 1,000 killed, wounded and missing. An armistice followed, but peace talks broke down on 6 September.",
+        "lonlat": [
+          -99.15,
+          19.36
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1847-09-08",
+        "year": 1847,
+        "label": "8 Sep 1847",
+        "text": "Battle of Molino del Rey",
+        "detail": "When the armistice ended, Scott sent William Worth's division against Molino del Rey, a group of stone mill buildings about a thousand yards west of the hill of Chapultepec, where he believed cannon were being cast. Mexican troops put up a fierce defence on 8 September 1847, and the Americans took the buildings only at heavy cost to both sides. Scott then turned on Chapultepec Castle, the hilltop fortress and military college that guarded the western approaches to the capital.",
+        "lonlat": [
+          -99.19,
+          19.41
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1847-09-13",
+        "year": 1847,
+        "label": "13 Sep 1847",
+        "text": "Storming of Chapultepec Castle",
+        "detail": "After a bombardment that began on 12 September, US troops stormed Chapultepec Castle on the morning of 13 September 1847 and took it by about 9 a.m. Among its roughly 830 defenders were cadets of the military college; six who died there are honoured in Mexico as the Niños Héroes. Nearby, thirty captured members of the Saint Patrick's Battalion were hanged at the moment the US flag replaced the Mexican one over the castle. US troops then fought their way to the city gates of Belén and San Cosme.",
+        "lonlat": [
+          -99.18,
+          19.42
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1847-09-14",
+        "year": 1847,
+        "label": "14 Sep 1847",
+        "text": "US troops occupy Mexico City",
+        "detail": "Santa Anna withdrew his remaining troops from the capital during the night, and on 14 September 1847 Scott's army marched into Mexico City and raised the US flag over the National Palace. Scott became military governor of the occupied city. Santa Anna soon gave up the presidency, and a new Mexican government gathered at Querétaro, while guerrillas attacked US supply lines between the capital and the coast. Fighting dwindled, but peace still had to be negotiated.",
+        "lonlat": [
+          -99.13,
+          19.43
+        ],
+        "kind": "turning-point"
+      },
+      {
+        "date": "1847-10-09",
+        "year": 1847,
+        "label": "9 Oct 1847",
+        "text": "Battle of Huamantla: Santa Anna's last battle",
+        "detail": "Santa Anna made a final attempt to cut Scott's communications by besieging the US garrison left at Puebla. A relief column under General Joseph Lane, marching inland from Veracruz, defeated his troops at Huamantla on 9 October 1847, after which Lane's men sacked the town. Puebla was relieved on 12 October. It was the last battle Santa Anna fought in the war, and the remaining Mexican resistance was left to guerrilla bands.",
+        "lonlat": [
+          -97.92,
+          19.31
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1848-02-02",
+        "year": 1848,
+        "label": "2 Feb 1848",
+        "text": "Treaty of Guadalupe Hidalgo ends the war",
+        "detail": "The US envoy Nicholas Trist, ignoring Polk's order recalling him, negotiated with Mexico's government, and on 2 February 1848 a treaty was signed at Guadalupe Hidalgo, just north of Mexico City. Mexico gave up all claims to Texas, with the border on the Rio Grande, and ceded about 55 percent of its territory: present-day California, Nevada, Utah, New Mexico, most of Arizona and parts of several other states. The United States paid $15 million and assumed up to $3.25 million in its citizens' claims against Mexico.",
+        "lonlat": [
+          -99.12,
+          19.48
+        ],
+        "kind": "treaty"
+      },
+      {
+        "date": "1848-03-10",
+        "year": 1848,
+        "label": "10 Mar 1848",
+        "text": "The US Senate ratifies the treaty",
+        "detail": "Polk, angry with Trist but content with the terms, sent the treaty to the Senate, where some members wanted to annex more of Mexico and others wanted no territory at all. The Senate approved it on 10 March 1848 by 38 votes to 14, after deleting Article X, which protected Mexican land grants. Formal hostilities had ended on 6 March. The war left a bitter question behind: the Wilmot Proviso, which would have barred slavery from the new lands, had passed the House in 1847 but failed in the Senate.",
+        "lonlat": [
+          -77.01,
+          38.89
+        ],
+        "kind": "political"
+      },
+      {
+        "date": "1848-05-30",
+        "year": 1848,
+        "label": "30 May 1848",
+        "text": "Ratifications exchanged at Querétaro; US troops withdraw",
+        "detail": "Mexico's Congress, meeting at Querétaro, debated the amended treaty and approved it in May 1848. Ratifications were exchanged there on 30 May, and the treaty was proclaimed in the United States on 4 July. US troops left Mexico City in June and had evacuated Mexico by August. Mexicans living in the ceded lands could stay and keep their property; those who did not choose Mexican citizenship within a year would become citizens of the United States.",
+        "lonlat": [
+          -100.39,
+          20.59
+        ],
+        "kind": "treaty"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Mexican–American War (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Mexican%E2%80%93American_War"
+      },
+      {
+        "title": "Office of the Historian: The Annexation of Texas, the Mexican-American War, and the Treaty of Guadalupe-Hidalgo, 1845–1848",
+        "url": "https://history.state.gov/milestones/1830-1860/texas-annexation"
+      },
+      {
+        "title": "National Archives: Treaty of Guadalupe Hidalgo (1848)",
+        "url": "https://www.archives.gov/milestone-documents/treaty-of-guadalupe-hidalgo"
+      },
+      {
+        "title": "Conquest of California (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Conquest_of_California"
+      },
+      {
+        "title": "Battle of Palo Alto (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Battle_of_Palo_Alto"
+      },
+      {
+        "title": "Battle of Buena Vista (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Battle_of_Buena_Vista"
+      },
+      {
+        "title": "Siege of Veracruz (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Siege_of_Veracruz"
+      },
+      {
+        "title": "Battle of Chapultepec (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Battle_of_Chapultepec"
+      }
+    ]
+  },
+  {
     "id": "paraguayan-war",
     "name": "Paraguayan War (War of the Triple Alliance)",
     "moment": null,
@@ -691,6 +1742,297 @@
       {
         "title": "Mato Grosso campaign (Wikipedia)",
         "url": "https://en.wikipedia.org/wiki/Mato_Grosso_campaign"
+      }
+    ]
+  },
+  {
+    "id": "spanish-american-war",
+    "name": "Spanish–American War",
+    "moment": null,
+    "span": [
+      1898,
+      1898
+    ],
+    "dateLabel": "21 April – 13 August 1898",
+    "summary": "In 1895 Cuban nationalists rose again against Spanish rule, and Spain's harsh campaign against them, including the forced relocation of rural civilians into fortified towns, outraged opinion in the United States, whose newspapers covered the war intensely. When the battleship USS Maine blew up in Havana harbour in February 1898, intervention became likely. In April Congress demanded Spain's withdrawal from Cuba and the two countries went to war. On 1 May George Dewey's squadron destroyed the Spanish fleet in Manila Bay, and Filipino revolutionaries under Emilio Aguinaldo declared independence and besieged Manila. In Cuba, American troops took the heights above Santiago on 1 July, the US Navy destroyed Admiral Cervera's squadron on 3 July and Santiago surrendered on 17 July. US forces landed on Puerto Rico and took Guam, and the United States annexed Hawaii. An armistice on 12 August ended the fighting, and in the Treaty of Paris Spain gave up Cuba and ceded Puerto Rico, Guam and the Philippines, making the United States a colonial power in the Caribbean and the Pacific.",
+    "casualties": "About 2,450 US servicemen are estimated to have died, some 385 of them in combat and most of the rest from disease; Spanish deaths are estimated at about 15,000 to 16,000, the great majority from disease, while losses among Cuban and Filipino revolutionaries are not well recorded.",
+    "sides": [
+      {
+        "name": "United States, with Cuban and Filipino revolutionaries",
+        "members": [
+          {
+            "clio": "United States of America",
+            "from": 1898,
+            "to": 1898
+          },
+          {
+            "clio": "Cuban Nationalists",
+            "from": 1898,
+            "to": 1898
+          }
+        ]
+      },
+      {
+        "name": "Spain",
+        "members": [
+          {
+            "clio": "(Spanish Empire)",
+            "from": 1898,
+            "to": 1898
+          }
+        ]
+      }
+    ],
+    "events": [
+      {
+        "date": "1898-02-15",
+        "year": 1898,
+        "label": "15 Feb 1898",
+        "text": "USS Maine explodes and sinks in Havana harbour",
+        "detail": "The battleship Maine had arrived at Havana on 25 January to protect American interests during the Cuban revolt. At 9:40 that night an explosion tore apart the front of the ship, killing about 260 of her 355 crew outright; a few more died later. A US naval court blamed an external mine, while a Spanish inquiry pointed to an internal coal fire. The cause is still debated, but 'Remember the Maine!' became a call for war.",
+        "lonlat": [
+          -82.34,
+          23.14
+        ],
+        "kind": "other"
+      },
+      {
+        "date": "1898-04-20",
+        "year": 1898,
+        "label": "20 Apr 1898",
+        "text": "Congress demands Spain leave Cuba and authorises force",
+        "detail": "On 11 April President William McKinley asked Congress for authority to end the fighting in Cuba. The joint resolution he signed on 20 April recognised Cuban independence, demanded that Spain withdraw and empowered the president to use the army and navy. Senator Henry Teller's amendment, passed by large majorities, disclaimed any intention to annex Cuba. An ultimatum was sent to Madrid, and Spain broke off diplomatic relations the next day.",
+        "lonlat": [
+          -77.01,
+          38.89
+        ],
+        "kind": "political"
+      },
+      {
+        "date": "1898-04-22",
+        "year": 1898,
+        "label": "22 Apr 1898",
+        "text": "US Navy blockades Cuba; war is formally declared on 25 April",
+        "detail": "Warships under William T. Sampson began blockading Cuban ports, and McKinley called for 125,000 volunteers. Spain declared war, and on 25 April Congress declared that a state of war had existed since 21 April. The blockade aimed to cut off the Spanish army in Cuba, more than 200,000 strong, and to force the Spanish navy to come out and fight.",
+        "lonlat": [
+          -82.36,
+          23.25
+        ],
+        "kind": "other"
+      },
+      {
+        "date": "1898-05-01",
+        "year": 1898,
+        "label": "1 May 1898",
+        "text": "Battle of Manila Bay: Dewey destroys the Spanish Pacific squadron",
+        "detail": "Commodore George Dewey's Asiatic Squadron sailed from near Hong Kong and entered Manila Bay on the night of 30 April. At dawn on 1 May it attacked Admiral Patricio Montojo's ships anchored off Cavite and destroyed the whole squadron. Spain lost 77 killed and 271 wounded; US sources report no American combat deaths. Dewey held the bay and awaited troops, and the victory made the fate of the Philippines a question of the war.",
+        "lonlat": [
+          120.9,
+          14.5
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1898-05-12",
+        "year": 1898,
+        "label": "12 May 1898",
+        "text": "American squadron bombards San Juan, Puerto Rico",
+        "detail": "Searching for the Spanish squadron of Admiral Pascual Cervera, which had sailed for the Caribbean, Sampson's ships bombarded the fortifications of San Juan on 12 May and found the harbour empty. The damage was limited, and the fleet soon left to look for Cervera elsewhere, but San Juan Bay was afterwards placed under blockade. Cervera instead reached Santiago de Cuba, where American warships soon blockaded him.",
+        "lonlat": [
+          -66.12,
+          18.47
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1898-06-10",
+        "year": 1898,
+        "label": "10 Jun 1898",
+        "text": "US Marines land at Guantánamo Bay",
+        "detail": "US warships arrived at Guantánamo Bay, east of Santiago, on 6 June to secure a sheltered harbour for the fleet. On 10 June the First Marine Battalion, about 650 men, landed and set up camp, and for three days Spanish troops attacked it. On 14 June Marines and Cuban insurgents, supported by the gunboat Dolphin, drove the Spanish from Cuzco Well, the only fresh water nearby. The bay was secured, and in 1903 the United States acquired it as a naval station.",
+        "lonlat": [
+          -75.15,
+          19.95
+        ],
+        "kind": "invasion"
+      },
+      {
+        "date": "1898-06-12",
+        "year": 1898,
+        "label": "12 Jun 1898",
+        "text": "Aguinaldo proclaims Philippine independence at Kawit",
+        "detail": "Exiled to Hong Kong after an earlier revolt, Emilio Aguinaldo returned to Cavite with US Navy help on 19 May and took command of the revived revolution. By early June his forces controlled much of Luzon and were besieging Manila. On 12 June, at his family home in Kawit, he proclaimed the independence of the Philippines; 98 people signed the act. Neither Spain nor the United States recognised the declaration.",
+        "lonlat": [
+          120.9,
+          14.44
+        ],
+        "kind": "political"
+      },
+      {
+        "date": "1898-06-20",
+        "year": 1898,
+        "label": "20–21 Jun 1898",
+        "text": "The cruiser Charleston takes Guam without bloodshed",
+        "detail": "On its way to Manila with three troop transports, the cruiser USS Charleston under Captain Henry Glass entered Apra Harbor, Guam, on 20 June. The island's Spanish officials had received no news from Spain for two months and did not know that war had been declared. On 21 June Governor Juan Marina accepted an ultimatum and surrendered his garrison of 54 soldiers. Glass raised the American flag and sailed on to the Philippines the next day.",
+        "lonlat": [
+          144.66,
+          13.45
+        ],
+        "kind": "invasion"
+      },
+      {
+        "date": "1898-06-22",
+        "year": 1898,
+        "label": "22–24 Jun 1898",
+        "text": "US Army lands at Daiquirí and Siboney near Santiago",
+        "detail": "From 22 June William Shafter's Fifth Army Corps, including Theodore Roosevelt's volunteer cavalry, the Rough Riders, came ashore at Daiquirí and Siboney, east of Santiago de Cuba. The Spanish garrisons had withdrawn, and the landings were unopposed, while a Cuban advance guard skirmished with Spanish troops nearby. On 24 June American cavalry fought the first land battle of the war at Las Guasimas, after which the Spanish rearguard resumed its retreat towards Santiago.",
+        "lonlat": [
+          -75.63,
+          19.92
+        ],
+        "kind": "invasion"
+      },
+      {
+        "date": "1898-07-01",
+        "year": 1898,
+        "label": "1 Jul 1898",
+        "text": "Battles of San Juan Hill and El Caney",
+        "detail": "On 1 July about 15,000 American troops attacked some 1,270 entrenched Spanish defenders on the heights east of Santiago. Henry Lawton's division took the village of El Caney after a day-long fight, while dismounted cavalry, including the Rough Riders and the Black soldiers of the 10th Cavalry, stormed Kettle Hill and infantry took San Juan Hill. The Americans lost more than 1,000 killed and wounded but gained the heights and laid siege to the city, aided by Cuban insurgents.",
+        "lonlat": [
+          -75.79,
+          20.02
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1898-07-03",
+        "year": 1898,
+        "label": "3 Jul 1898",
+        "text": "Battle of Santiago de Cuba: Cervera's squadron is destroyed",
+        "detail": "With American troops above the city, Admiral Cervera was ordered to break out. On the morning of 3 July his four armoured cruisers and two destroyers steamed out one by one and were chased down along the coast by the blockading fleet under Winfield Scott Schley, in the absence of Sampson. All six ships were wrecked or run aground. Spain lost 343 killed and some 1,600 to 1,900 captured, Cervera among them, against one American killed.",
+        "lonlat": [
+          -75.87,
+          19.95
+        ],
+        "kind": "turning-point"
+      },
+      {
+        "date": "1898-07-07",
+        "year": 1898,
+        "label": "7 Jul 1898",
+        "text": "The United States annexes Hawaii",
+        "detail": "The Republic of Hawaii, whose leaders had overthrown the Hawaiian monarchy in 1893, sought annexation, and during the war Honolulu became a stopover for American troops bound for Manila, showing its value as a mid-Pacific base. Congress passed a joint resolution, the Newlands Resolution: the House voted 209 to 91 on 15 June and the Senate 42 to 21 on 6 July. McKinley signed it on 7 July, and sovereignty was formally transferred in Honolulu on 12 August.",
+        "lonlat": [
+          -157.86,
+          21.31
+        ],
+        "kind": "political"
+      },
+      {
+        "date": "1898-07-17",
+        "year": 1898,
+        "label": "17 Jul 1898",
+        "text": "Santiago de Cuba surrenders",
+        "detail": "Besieged on land and cut off from the sea after the loss of Cervera's squadron, the Spanish commander at Santiago agreed to surrender, and on 17 July the city was handed over to American forces. Disease, including typhoid and yellow fever, was spreading through Shafter's army, and from early August most of the invasion force was shipped home. On 26 July Spain asked for peace terms through Jules Cambon, the French ambassador in Washington.",
+        "lonlat": [
+          -75.82,
+          20.02
+        ],
+        "kind": "turning-point"
+      },
+      {
+        "date": "1898-07-25",
+        "year": 1898,
+        "label": "25 Jul 1898",
+        "text": "US troops land at Guánica to invade Puerto Rico",
+        "detail": "General Nelson A. Miles chose the lightly defended south coast rather than the fortified east, and on 25 July his first 1,300 infantrymen came ashore at Guánica after a brief skirmish. Reinforced by further landings, American columns took Ponce, the island's second city, where the Spanish garrison withdrew, and began to advance inland along several routes towards San Juan, meeting little resistance in the south.",
+        "lonlat": [
+          -66.91,
+          17.97
+        ],
+        "kind": "invasion"
+      },
+      {
+        "date": "1898-08-09",
+        "year": 1898,
+        "label": "9 Aug 1898",
+        "text": "Americans win at Coamo as columns push inland on Puerto Rico",
+        "detail": "On 9 August American troops encircled the Spanish position at Coamo in central Puerto Rico and forced its defenders to retreat. Further along the road, at Asomante near Aibonito, Spanish and Puerto Rican troops held a mountain pass and checked the advance. Fighting stopped the next day on news of the armistice, before American forces reached San Juan. The campaign cost the Americans few casualties.",
+        "lonlat": [
+          -66.36,
+          18.08
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1898-08-12",
+        "year": 1898,
+        "label": "12 Aug 1898",
+        "text": "Protocol of Peace signed in Washington",
+        "detail": "Cambon signed a protocol for Spain with the American government on 12 August, and hostilities were halted. Spain agreed to give up Cuba and to cede Puerto Rico and an island in the Marianas, while the fate of the Philippines was left to a peace conference in Paris. News of the armistice took time to reach distant fronts, and in the Philippines fighting went on for one more day.",
+        "lonlat": [
+          -77.04,
+          38.9
+        ],
+        "kind": "treaty"
+      },
+      {
+        "date": "1898-08-13",
+        "year": 1898,
+        "label": "13 Aug 1898",
+        "text": "Battle of Manila: the city surrenders to American forces",
+        "detail": "Unaware of the armistice, the Spanish governor-general Fermín Jáudenes arranged with Dewey and General Wesley Merritt to surrender Manila to the Americans after a brief show of resistance, rather than to the Filipino revolutionaries who surrounded it. On 13 August American troops advanced and took the city, though real fighting broke out and men were killed on both sides. Filipino forces were kept out of Manila, and their resentment fed the coming Philippine–American War.",
+        "lonlat": [
+          120.98,
+          14.59
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1898-12-10",
+        "year": 1898,
+        "label": "10 Dec 1898",
+        "text": "Treaty of Paris: Spain cedes Puerto Rico, Guam and the Philippines",
+        "detail": "Signed in Paris on 10 December, the treaty ended the war. Spain gave up sovereignty over Cuba, which came under American military rule, and ceded Puerto Rico and Guam to the United States, along with the Philippines in return for $20 million. After a bitter debate over overseas empire, the US Senate ratified it on 6 February 1899 by 57 votes to 27, two days after fighting broke out between American and Filipino forces near Manila.",
+        "lonlat": [
+          2.35,
+          48.86
+        ],
+        "kind": "treaty"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Spanish–American War (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Spanish%E2%80%93American_War"
+      },
+      {
+        "title": "Office of the Historian: The Spanish-American War, 1898",
+        "url": "https://history.state.gov/milestones/1866-1898/spanish-american-war"
+      },
+      {
+        "title": "Battle of Manila Bay (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Battle_of_Manila_Bay"
+      },
+      {
+        "title": "Capture of Guam (1898) (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Capture_of_Guam_(1898)"
+      },
+      {
+        "title": "Battle of Santiago de Cuba (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Battle_of_Santiago_de_Cuba"
+      },
+      {
+        "title": "Puerto Rico campaign (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Puerto_Rico_campaign"
+      },
+      {
+        "title": "Battle of Manila (1898) (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Battle_of_Manila_(1898)"
+      },
+      {
+        "title": "Treaty of Paris (1898) (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Treaty_of_Paris_(1898)"
       }
     ]
   }
