@@ -30,6 +30,22 @@
     ]
   },
   {
+    "id": "second-temple-destroyed",
+    "year": 70,
+    "yearLabel": "70 CE",
+    "title": "Rome destroys the Second Temple",
+    "place": "Jerusalem",
+    "lonlat": [35.23, 31.78],
+    "category": "war",
+    "summary": "A Jewish revolt against Roman rule broke out in 66 CE. In 70 CE the future emperor Titus besieged Jerusalem, and in the month of Av (July–August) his troops captured the Temple Mount and destroyed the Second Temple, a loss still mourned every year on Tisha B'Av. After a second great revolt, led by Simon bar Kokhba in 132–136, Hadrian refounded Jerusalem as the Roman colony of Aelia Capitolina.",
+    "why": "With the Temple and its sacrifices gone, Judaism was rebuilt around the synagogue, prayer and the study of law led by rabbis, and Jewish life increasingly continued in a diaspora spread across the Roman and Persian worlds.",
+    "sources": [
+      {"title": "Wikipedia: Siege of Jerusalem (70 CE)", "url": "https://en.wikipedia.org/wiki/Siege_of_Jerusalem_(70_CE)"},
+      {"title": "Wikipedia: Bar Kokhba Revolt", "url": "https://en.wikipedia.org/wiki/Bar_Kokhba_Revolt"},
+      {"title": "Wikipedia: Rabbinic Judaism", "url": "https://en.wikipedia.org/wiki/Rabbinic_Judaism"}
+    ]
+  },
+  {
     "id": "teotihuacan",
     "year": 100,
     "yearLabel": "c. 100–550 CE",
@@ -87,6 +103,21 @@
     "sources": [
       {"title": "Wikipedia: Kushan Empire", "url": "https://en.wikipedia.org/wiki/Kushan_Empire"},
       {"title": "Wikipedia: Kanishka", "url": "https://en.wikipedia.org/wiki/Kanishka"}
+    ]
+  },
+  {
+    "id": "mishnah",
+    "year": 200,
+    "yearLabel": "c. 200 CE",
+    "title": "The Mishnah: Jewish oral law is written down",
+    "place": "Galilee",
+    "lonlat": [35.28, 32.75],
+    "category": "ideas",
+    "summary": "Fearing that the oral traditions of the Second Temple period would be forgotten after the disasters of the two revolts, Judah ha-Nasi (Judah the Prince), the leader of the Jewish community in Galilee, compiled them into the Mishnah in the late second or early third century CE. It arranges Jewish law in six orders: prayer and farming, the Sabbath and festivals, marriage and divorce, civil and criminal law, the Temple and its sacrifices, and ritual purity.",
+    "why": "The Mishnah became the foundation of rabbinic Judaism: the scholars who discussed it produced the Jerusalem and Babylonian Talmuds, which still guide Jewish law and learning.",
+    "sources": [
+      {"title": "Wikipedia: Mishnah", "url": "https://en.wikipedia.org/wiki/Mishnah"},
+      {"title": "Wikipedia: Rabbinic Judaism", "url": "https://en.wikipedia.org/wiki/Rabbinic_Judaism"}
     ]
   },
   {
@@ -224,6 +255,21 @@
     "sources": [
       {"title": "Wikipedia: Early Muslim conquests", "url": "https://en.wikipedia.org/wiki/Early_Muslim_conquests"},
       {"title": "Wikipedia: Umayyad Caliphate", "url": "https://en.wikipedia.org/wiki/Umayyad_Caliphate"}
+    ]
+  },
+  {
+    "id": "dome-of-the-rock",
+    "year": 691,
+    "yearLabel": "691–692 CE",
+    "title": "The Dome of the Rock: Jerusalem holy to three faiths",
+    "place": "Jerusalem",
+    "lonlat": [35.235, 31.778],
+    "category": "ideas",
+    "summary": "The Umayyad caliph Abd al-Malik built the Dome of the Rock in 691–692 on the Temple Mount, over the rock where Jews locate the site of their ancient Temples and where Muslims believe Muhammad's Night Journey began. Jerusalem had already been at the heart of Christianity for three centuries, with the Church of the Holy Sepulchre built over the traditional site of Jesus's crucifixion.",
+    "why": "It is the oldest surviving work of Islamic architecture, and it marks how one city became sacred to Judaism, Christianity and Islam, which has made it contested ever since, from the Crusades to today.",
+    "sources": [
+      {"title": "Wikipedia: Dome of the Rock", "url": "https://en.wikipedia.org/wiki/Dome_of_the_Rock"},
+      {"title": "Wikipedia: Church of the Holy Sepulchre", "url": "https://en.wikipedia.org/wiki/Church_of_the_Holy_Sepulchre"}
     ]
   },
   {

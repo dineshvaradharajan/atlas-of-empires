@@ -6874,6 +6874,289 @@
      "url": "https://en.wikipedia.org/wiki/Northern_Yuan"
     }
    ]
+  },
+  {
+   "id": "judah-700-587bce",
+   "note": "The border data ends the Kingdom of Judah in 701 BCE (Sennacherib's campaign) and draws Jerusalem as Assyrian, then blank, then Babylonian. Judah was not annexed: it stayed a kingdom under its own kings, an Assyrian vassal under Hezekiah's successors (Manasseh paid tribute to Esarhaddon and Ashurbanipal), free of Assyria under Josiah as Assyria declined, then subject to Egypt (609 BCE) and Babylon (605 BCE), until Nebuchadnezzar II besieged and destroyed Jerusalem in 587/586 BCE and ended the monarchy. Judah's 750-701 BCE outline is copied to 700-587 BCE and cut out of the Assyrian, Assyrian-Egyptian and Babylonian shapes that cover it in those years.",
+   "ops": [
+    {
+     "op": "copy",
+     "realm": "Kingdom of Judah",
+     "years": [
+      -700,
+      -587
+     ],
+     "year": -701
+    },
+    {
+     "op": "holes",
+     "realm": "Neo-Assyrian Empire",
+     "years": [
+      -700,
+      -601
+     ],
+     "box": [
+      34.6,
+      31.33,
+      35.64,
+      31.92
+     ],
+     "coords": [
+      [
+       [
+        35.57,
+        31.91
+       ],
+       [
+        35.63,
+        31.72
+       ],
+       [
+        35.55,
+        31.72
+       ],
+       [
+        35.53,
+        31.46
+       ],
+       [
+        35.22,
+        31.34
+       ],
+       [
+        34.61,
+        31.34
+       ],
+       [
+        34.62,
+        31.46
+       ],
+       [
+        34.69,
+        31.46
+       ],
+       [
+        34.7,
+        31.53
+       ],
+       [
+        34.78,
+        31.53
+       ],
+       [
+        34.78,
+        31.59
+       ],
+       [
+        34.86,
+        31.59
+       ],
+       [
+        34.87,
+        31.72
+       ],
+       [
+        34.94,
+        31.72
+       ],
+       [
+        34.95,
+        31.85
+       ],
+       [
+        35.03,
+        31.85
+       ],
+       [
+        35.04,
+        31.91
+       ]
+      ]
+     ]
+    },
+    {
+     "op": "holes",
+     "realm": "Assyrian Egypt",
+     "years": [
+      -650,
+      -616
+     ],
+     "box": [
+      34.6,
+      31.33,
+      35.64,
+      31.92
+     ],
+     "coords": [
+      [
+       [
+        35.57,
+        31.91
+       ],
+       [
+        35.63,
+        31.72
+       ],
+       [
+        35.55,
+        31.72
+       ],
+       [
+        35.53,
+        31.46
+       ],
+       [
+        35.22,
+        31.34
+       ],
+       [
+        34.61,
+        31.34
+       ],
+       [
+        34.62,
+        31.46
+       ],
+       [
+        34.69,
+        31.46
+       ],
+       [
+        34.7,
+        31.53
+       ],
+       [
+        34.78,
+        31.53
+       ],
+       [
+        34.78,
+        31.59
+       ],
+       [
+        34.86,
+        31.59
+       ],
+       [
+        34.87,
+        31.72
+       ],
+       [
+        34.94,
+        31.72
+       ],
+       [
+        34.95,
+        31.85
+       ],
+       [
+        35.03,
+        31.85
+       ],
+       [
+        35.04,
+        31.91
+       ]
+      ]
+     ]
+    },
+    {
+     "op": "holes",
+     "realm": "Neo-Babylonian Empire",
+     "years": [
+      -600,
+      -587
+     ],
+     "box": [
+      34.6,
+      31.33,
+      35.64,
+      31.92
+     ],
+     "coords": [
+      [
+       [
+        35.57,
+        31.91
+       ],
+       [
+        35.63,
+        31.72
+       ],
+       [
+        35.55,
+        31.72
+       ],
+       [
+        35.53,
+        31.46
+       ],
+       [
+        35.22,
+        31.34
+       ],
+       [
+        34.61,
+        31.34
+       ],
+       [
+        34.62,
+        31.46
+       ],
+       [
+        34.69,
+        31.46
+       ],
+       [
+        34.7,
+        31.53
+       ],
+       [
+        34.78,
+        31.53
+       ],
+       [
+        34.78,
+        31.59
+       ],
+       [
+        34.86,
+        31.59
+       ],
+       [
+        34.87,
+        31.72
+       ],
+       [
+        34.94,
+        31.72
+       ],
+       [
+        34.95,
+        31.85
+       ],
+       [
+        35.03,
+        31.85
+       ],
+       [
+        35.04,
+        31.91
+       ]
+      ]
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Kingdom of Judah",
+     "url": "https://en.wikipedia.org/wiki/Kingdom_of_Judah"
+    },
+    {
+     "title": "Wikipedia: Siege of Jerusalem (587 BC)",
+     "url": "https://en.wikipedia.org/wiki/Siege_of_Jerusalem_(587_BC)"
+    }
+   ]
   }
  ]
 }

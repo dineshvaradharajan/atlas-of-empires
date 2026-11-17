@@ -321,6 +321,22 @@
     ]
   },
   {
+    "id": "israel-and-judah",
+    "year": -1000,
+    "yearLabel": "c. 1200–720 BCE",
+    "title": "Israel and Judah: the worship of Yahweh",
+    "place": "Jerusalem",
+    "lonlat": [35.23, 31.78],
+    "category": "ideas",
+    "summary": "In the 12th century BCE many new villages appeared in the central hill country of Canaan, the settlements of the people later called Israelites. By the 9th century BCE they formed two kingdoms: Israel in the north, with its capital at Samaria, and Judah in the south, ruled from Jerusalem. Both worshipped Yahweh as their national god, at first alongside other gods. Assyria conquered Israel in about 722–720 BCE, while Judah survived as an Assyrian vassal.",
+    "why": "Over the following centuries the worship of Yahweh became strictly monotheistic, and the traditions of these two kingdoms became the core of the Hebrew Bible, the foundation of Judaism and, through it, of Christianity and Islam.",
+    "sources": [
+      {"title": "Wikipedia: Ancient Israel and Judah", "url": "https://en.wikipedia.org/wiki/Ancient_Israel_and_Judah"},
+      {"title": "Wikipedia: Israelites", "url": "https://en.wikipedia.org/wiki/Israelites"},
+      {"title": "Wikipedia: Origins of Judaism", "url": "https://en.wikipedia.org/wiki/Origins_of_Judaism"}
+    ]
+  },
+  {
     "id": "lapita",
     "year": -890,
     "yearLabel": "c. 1200–890 BCE",
@@ -385,6 +401,22 @@
     ]
   },
   {
+    "id": "babylonian-exile",
+    "year": -587,
+    "yearLabel": "597–582 BCE",
+    "title": "Babylon destroys Jerusalem: the exile",
+    "place": "Jerusalem and Babylon",
+    "lonlat": [35.23, 31.78],
+    "category": "ideas",
+    "summary": "After Judah rebelled against Babylon, Nebuchadnezzar II took Jerusalem in 597 BCE and exiled about 7,000 people to Mesopotamia. A second revolt ended in 587/586 BCE, when his army destroyed the city and Solomon's Temple and ended the kingdom of Judah. More of the population was deported then and in 582 BCE, and the exiles settled in Babylonia.",
+    "why": "Without a king, a temple or a land of their own, the exiles held on to their identity through their scriptures and laws, and many scholars date the final victory of monotheism among the Judeans to the exile and the decades after it.",
+    "sources": [
+      {"title": "Wikipedia: Babylonian captivity", "url": "https://en.wikipedia.org/wiki/Babylonian_captivity"},
+      {"title": "Wikipedia: Kingdom of Judah", "url": "https://en.wikipedia.org/wiki/Kingdom_of_Judah"},
+      {"title": "Wikipedia: Origins of Judaism", "url": "https://en.wikipedia.org/wiki/Origins_of_Judaism"}
+    ]
+  },
+  {
     "id": "cyrus-persia",
     "year": -550,
     "yearLabel": "550 BCE",
@@ -397,6 +429,21 @@
     "sources": [
       {"title": "Wikipedia: Cyrus the Great", "url": "https://en.wikipedia.org/wiki/Cyrus_the_Great"},
       {"title": "Wikipedia: Pasargadae", "url": "https://en.wikipedia.org/wiki/Pasargadae"}
+    ]
+  },
+  {
+    "id": "return-to-zion",
+    "year": -538,
+    "yearLabel": "538–c. 516 BCE",
+    "title": "The exiles return and the Second Temple is built",
+    "place": "Jerusalem",
+    "lonlat": [35.23, 31.78],
+    "category": "ideas",
+    "summary": "Cyrus the Great took Babylon in 539 BCE, and according to the books of Ezra and Nehemiah he allowed the exiles to return to Judah the following year. Returning Judeans rebuilt the Temple in Jerusalem, traditionally completed around 516 BCE under Darius I, though some scholars date it later. Judah became Yehud, a small self-governing province of the Persian Empire.",
+    "why": "The rebuilt Temple opened the Second Temple period (516 BCE – 70 CE), when the Torah became the community's central text and Judaism took the shape from which both rabbinic Judaism and Christianity later grew.",
+    "sources": [
+      {"title": "Wikipedia: Return to Zion", "url": "https://en.wikipedia.org/wiki/Return_to_Zion"},
+      {"title": "Wikipedia: Second Temple", "url": "https://en.wikipedia.org/wiki/Second_Temple"}
     ]
   },
   {
@@ -520,6 +567,22 @@
     "sources": [
       {"title": "Wikipedia: Han dynasty", "url": "https://en.wikipedia.org/wiki/Han_dynasty"},
       {"title": "Wikipedia: Emperor Gaozu of Han", "url": "https://en.wikipedia.org/wiki/Emperor_Gaozu_of_Han"}
+    ]
+  },
+  {
+    "id": "maccabean-revolt",
+    "year": -167,
+    "yearLabel": "167–160 BCE",
+    "title": "The Maccabean revolt",
+    "place": "Jerusalem",
+    "lonlat": [35.23, 31.78],
+    "category": "war",
+    "summary": "The Seleucid king Antiochus IV banned Jewish religious practices and turned the Temple in Jerusalem over to Greek worship. In 167 BCE Jewish fighters led by Judas Maccabeus and his family rose against him, captured Jerusalem in 164 BCE and rededicated the Temple, the event Hanukkah celebrates. The fighting went on for decades, and the Maccabees' descendants, the Hasmoneans, came to rule an independent Judea.",
+    "why": "The revolt saved Jewish worship from forced Hellenisation and created the last independent Jewish state in the region until modern times, which lasted until Rome made it a client state in 63 BCE.",
+    "sources": [
+      {"title": "Wikipedia: Maccabean Revolt", "url": "https://en.wikipedia.org/wiki/Maccabean_Revolt"},
+      {"title": "Wikipedia: Hanukkah", "url": "https://en.wikipedia.org/wiki/Hanukkah"},
+      {"title": "Wikipedia: Hasmonean dynasty", "url": "https://en.wikipedia.org/wiki/Hasmonean_dynasty"}
     ]
   },
   {
