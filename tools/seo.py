@@ -156,7 +156,7 @@ def page(path, title, description, body, crumbs=(), image=None, image_alt="", js
 <script type="application/ld+json">{json.dumps(ld if len(ld) > 1 else ld[0], ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")}</script>
 </head>
 <body>
-<header class="top"><a class="brand" href="/"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.2 3 14.8 0 18M12 3c-3 3.2-3 14.8 0 18"/></svg>THE WORLD ATLAS</a><nav aria-label="Sections">{nav}</nav></header>
+<header class="top"><a class="brand" href="/"><img src="/logo.png" alt="" width="34" height="24">THE WORLD ATLAS</a><nav aria-label="Sections">{nav}</nav></header>
 <main class="page">
 {f'<nav class="crumbs" aria-label="Breadcrumb">{crumbs_html}</nav>' if crumbs_html else ''}
 {body}

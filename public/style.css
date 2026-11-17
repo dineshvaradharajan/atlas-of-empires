@@ -84,7 +84,7 @@ body.nodock { --dock-h: 0px; --dock-b: 0px; }
 #bar { position: absolute; left: var(--gut); right: var(--gut); top: 16px; z-index: 6; display: flex; align-items: center; gap: 12px; pointer-events: none; }
 #bar > * { pointer-events: auto; }
 .brand { display: flex; align-items: center; gap: 10px; height: 52px; padding: 0 18px; font: 900 15px var(--display); letter-spacing: .08em; text-decoration: none; color: var(--ink); white-space: nowrap; }
-.brand svg { width: 22px; height: 22px; }
+.brand img { width: auto; height: 24px; flex: none; }
 .brand:hover { color: var(--ink); background: var(--chip); }
 .tabs { display: flex; gap: 2px; height: 52px; padding: 4px; margin: 0 auto; }
 .tabs a { display: flex; align-items: center; padding: 0 20px; border-radius: 22px; color: var(--ink-2); font: 500 14px var(--sans); text-decoration: none; }
