@@ -1061,7 +1061,11 @@ function setupMap() {
       const b = geoPath.bounds({ type: "MultiPoint", coordinates: edge }), top = 72, bot = r.height - 210;
       const k = Math.max(1, Math.min(4, (bot - top) / Math.max(1, b[1][1] - b[0][1]))), fx = projection([35, 20])[0];
       S.homeT = d3.zoomIdentity.translate(r.width / 2 - k * fx, (top + bot) / 2 - k * (b[0][1] + b[1][1]) / 2).scale(k);
-    } else S.homeT = null;
+    } else { // desktop: the home view fills the page edge to edge, top to bottom; zoom out for the whole world
+      const b = geoPath.bounds({ type: "MultiPoint", coordinates: edge }), bw = Math.max(1, b[1][0] - b[0][0]), bh = Math.max(1, b[1][1] - b[0][1]);
+      const k = Math.max(1, Math.min(3, Math.max(r.width / bw, r.height / bh)));
+      S.homeT = k > 1.01 ? d3.zoomIdentity.translate(r.width / 2 - (k * (b[0][0] + b[1][0])) / 2, r.height / 2 - (k * (b[0][1] + b[1][1])) / 2).scale(k) : null;
+    }
     sphere2d = new Path2D(geoPath({ type: "Sphere" }));
     grat2d = new Path2D(geoPath(d3.geoGraticule10()));
     pathCache = new WeakMap(); hitCache = new WeakMap();
