@@ -600,6 +600,7 @@ body.sdock #dock { border-radius: 24px; }
 
 /* ---------- phone tab bar (hidden on wide screens) ---------- */
 #tabbar { display: none; }
+#stopbar { display: none; }
 
 /* ---------- phones: the map fills the screen; one floating card holds the year and the page, at three heights ---------- */
 @media (max-width: 760px) {
@@ -697,6 +698,37 @@ body.sdock #dock { border-radius: 24px; }
   #tabbar a[aria-current="page"] { background: var(--chip); color: var(--ink); font-weight: 700; }
   #tabbar a[data-tab="search"] { display: none; }
   body[data-view="war"] #tabbar, body[data-view="journey"] #tabbar, body[data-view="tstory"] #tabbar, body[data-view="moment"] #tabbar, body.playing #tabbar, body.searching #tabbar, body.years #tabbar { display: none; }
+  /* Stories: the switch at the top, the story cards along the bottom, the map between them */
+  #stopbar:not([hidden]) { display: flex; position: absolute; z-index: 6; left: 12px; right: 12px; top: calc(12px + env(safe-area-inset-top)); align-items: center; gap: 8px; }
+  body.st-cards #bar, body.st-cards #mapTools, body.st-list #bar, body.st-list #mapTools { display: none; }
+  #stopbar .stabs { flex: 1; min-width: 0; height: 52px; box-sizing: border-box; display: flex; padding: 3px; border: 1px solid var(--rule-strong); border-radius: 26px; background: var(--bg); box-shadow: 0 6px 18px rgba(0,0,0,.08); }
+  #stopbar .stabs button { flex: 1; min-width: 0; height: 44px; display: flex; align-items: center; justify-content: center; gap: 5px; padding: 0; border: 0; border-radius: 22px; background: none; color: var(--ink); font: 600 14px var(--sans); cursor: pointer; }
+  #stopbar .stabs small { font: 500 12px var(--sans); color: var(--ink-3); }
+  #stopbar .stabs button[aria-selected="true"] { background: var(--ink); color: var(--bg); font-weight: 700; }
+  #stopbar .stabs button[aria-selected="true"] small { color: var(--rule-2); }
+  #stopbar .slistbtn { width: 52px; height: 52px; flex: none; display: grid; place-items: center; padding: 0; border: 1px solid var(--rule-strong); border-radius: 26px; background: var(--bg); color: var(--ink); box-shadow: 0 6px 18px rgba(0,0,0,.08); cursor: pointer; }
+  #stopbar .slistbtn svg { width: 20px; height: 20px; }
+  body.st-cards #sheet { left: 0; right: 0; background: none; border: 0; border-radius: 0; box-shadow: none; overflow: visible; }
+  body.st-cards #grab, body.st-cards #sheet > #dock { display: none; }
+  body.st-cards #sheet > #col { max-height: none; padding: 0; overflow: visible; background: none; -webkit-mask-image: none; mask-image: none; }
+  .scards { display: flex; gap: 8px; overflow-x: auto; scroll-snap-type: x mandatory; padding: 12px 32px 14px; scrollbar-width: none; overscroll-behavior-x: contain; }
+  .scards::-webkit-scrollbar { display: none; }
+  .scard { flex: none; width: calc(100% - 64px); box-sizing: border-box; scroll-snap-align: center; display: flex; align-items: center; gap: 12px; padding: 14px 12px 14px 18px;
+    border: 1px solid var(--rule-strong); border-radius: 24px; background: var(--bg); box-shadow: 0 10px 30px rgba(0,0,0,.16); }
+  .scard .sc-t { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 3px; padding: 0; border: 0; background: none; color: var(--ink); text-align: left; cursor: pointer; }
+  .scard .sc-t b { font: 800 20px/1.15 var(--display); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  .scard .sc-t small { font: 500 13px var(--sans); color: var(--ink-3); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .scard .sc-play { width: 60px; height: 60px; flex: none; display: grid; place-items: center; padding: 0; border: 0; border-radius: 30px; background: var(--ink); color: var(--bg); cursor: pointer; }
+  #app .scard .sc-play svg { width: 20px; height: 20px; fill: currentColor; stroke: none; }
+  /* the full list, with a field to find a story */
+  body.st-list #sheet[data-detent="full"] { top: calc(12px + env(safe-area-inset-top)); max-height: none; }
+  body.st-list #sheet > #dock { display: none; }
+  #col .sfhead { display: flex; align-items: center; gap: 8px; }
+  #col .sfhead .round { width: 48px; height: 48px; flex: none; }
+  #col .sfind { flex: 1; min-width: 0; height: 48px; box-sizing: border-box; padding: 0 16px; border: 1px solid var(--rule-strong); border-radius: 24px; background: var(--bg); color: var(--ink); font: 500 16px var(--sans); }
+  body.st-list .srow { min-height: 60px; border-bottom: 1px solid var(--rule); border-radius: 0; }
+  body.st-list .srow .nm { display: flex; flex-direction: column; gap: 2px; white-space: normal; }
+  body.st-list .srow .nm small { font: 400 13px var(--sans); color: var(--ink-3); }
   /* the search pill's menu: today's story and a few years (built in app.js, shown in #results) */
   #results .mtoday { display: flex; flex-direction: column; gap: 4px; width: calc(100% - 32px); margin: 16px 16px 4px; padding: 16px 18px; border: 0; border-radius: 16px; background: var(--ink); color: var(--bg); text-align: left; }
   #results .mtoday .kicker { color: #ff9b8c; }
