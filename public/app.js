@@ -1142,6 +1142,11 @@ function setupMap() {
   canvas.addEventListener("mouseleave", () => { S.hover = -1; $("#tooltip").hidden = true; draw(); });
   canvas.addEventListener("click", (ev) => {
     if (S.yearSheet) return closeYears(); // a tap on the map puts the year sheet away
+    if (document.body.classList.contains("frame")) { // phones, in a story: tap the left third to go back, the right third to go on
+      const [tx] = local(ev);
+      if (tx < S.width / 3) return void $("#framebar .fprev:not(:disabled)")?.click();
+      if (tx > (2 * S.width) / 3) return void $("#col .fplate .fnext")?.click();
+    }
     if (S.war || S.journey) return; // a war replay or empire journey keeps the screen: the map only shows hover details
     const [x, y] = local(ev);
     if (listOnMap()) { const lp = pinAt(x, y); if (lp) { S.listHot = null; return lp.open(); } return; } // the map shows the list: only its pins are clickable
@@ -1695,7 +1700,7 @@ function freeBox() {
   const c = canvas.getBoundingClientRect(), box = { l: 0, t: 0, r: S.width, b: S.height };
   if (!c.width) return box;
   if (phone()) {
-    box.t = 72;
+    box.t = document.body.classList.contains("frame") ? 124 : 72;
     const sh = $("#sheet"); if (sh && sh.offsetHeight) box.b = Math.min(box.b, sh.getBoundingClientRect().top - c.top - 8);
     return box;
   }
@@ -1789,6 +1794,8 @@ function renderCol(resetScroll) {
   col.innerHTML = S.yearSheet ? yearsHTML() : S.tstory && S.war ? todayStoryHTML() : v === "today" ? homeHTML() : v === "sources" ? sourcesHTML() : (v === "moments" || v === "empires" || v === "wars") && !S.war && !S.journey ? storiesHTML()
     : v === "journey" && S.journey ? journeyHTML() : v === "war" && S.war ? warHTML()
     : v === "moment" && S.moment ? momentHTML() : v === "site" && S.site ? siteHTML() : v === "place" && S.place ? placeHTML() : S.sel && realm(S.sel) ? realmHTML() : worldHTML();
+  const fr = phone() && inFrames() ? frameOf() : null;
+  if (fr) col.insertAdjacentHTML("afterbegin", framePlateHTML(fr));
   col.scrollTop = resetScroll ? 0 : scroll;
   const cards = col.querySelector(".scards");
   if (cards && !resetScroll && cardsLeft != null) cards.scrollLeft = cardsLeft;
@@ -1799,6 +1806,7 @@ function renderCol(resetScroll) {
   renderDock();
   renderSide();
   syncStopbar();
+  syncFramebar(fr);
   if (cards && resetScroll) requestAnimationFrame(() => cardToStart(cards));
 }
 // Phones: the card's three heights. Peek shows a summary, half the card (scrolling), full is for reading.
@@ -1857,6 +1865,7 @@ function syncChrome() {
   const slist = phone() && listOnMap() && !S.yearSheet;
   document.body.classList.toggle("st-cards", slist && !S.storyList);
   document.body.classList.toggle("st-list", slist && !!S.storyList);
+  document.body.classList.toggle("frame", phone() && inFrames());
   document.body.dataset.view = S.tstory && S.war ? "tstory" : S.war ? "war" : S.journey ? "journey" : S.view; // phones style each page's card
 }
 // Card building blocks.
@@ -3128,6 +3137,75 @@ function storyItems(kind) {
   if (kind === "moments") return C.moments.map((m) => ({ id: m.id, name: m.title, a: m.year, b: m.year, when: m.yearLabel || shortYear(m.year), cat: CAT[m.category] || "", st: P.m.includes(m.id) ? "done" : "", attr: "data-moment", wc: m.worldChanging, place: m.place }));
   return C.journeys.map((j) => ({ id: j.id, name: j.name, a: j.span[0], b: j.span[1], total: j.events.length, st: storyState("e", j.id, j.events.length), n: Math.min(j.events.length, seenCount("e", j.id)), attr: "data-journey" }));
 }
+// Phones: a story is a run of full-screen map frames. #framebar holds the frames (ticks), Back, the story's name
+// (tap to pause) and Close; the caption plate holds the date, a short title, one line and Next. Swipe the plate up to read more.
+const inFrames = () => !!(S.war || S.journey || (S.view === "moment" && S.moment)) && !S.yearSheet;
+const splitTitle = (s) => { s = String(s || ""); const i = s.indexOf(": "); return i > 0 ? [s.slice(0, i), s.slice(i + 2).replace(/^./, (c) => c.toUpperCase())] : [s, ""]; };
+function nextStory(kind, id) { // the next war or empire in time, for "Up next"
+  const list = kind === "w" ? S.content.wars.map((w) => ({ kind, id: w.id, name: w.name, a: w.span[0], b: w.span[1] })) : S.content.journeys.map((j) => ({ kind, id: j.id, name: j.name, a: j.span[0], b: j.span[1] }));
+  list.sort((x, y) => x.a - y.a);
+  const i = list.findIndex((x) => x.id === id);
+  return i >= 0 ? list[i + 1] || null : null;
+}
+function frameOf() {
+  if (S.war && S.tstory) {
+    const steps = todaySteps(), i = S.tstory.step, st = steps[i], w = S.today.war, [t, l] = splitTitle(st.title);
+    return { key: `t:${i}`, name: "Today's story", total: steps.length, cur: i, frac: 1, kick: st.last ? w.name : st.kick || "", title: t, line: l || firstSentences(st.text, 1),
+      prev: i > 0 ? `data-tstep="${i - 1}"` : "", next: i < steps.length - 1 ? `data-tstep="${i + 1}"` : `data-war="${esc(w.id)}"`, nextLabel: i < steps.length - 1 ? "Next" : `The whole story of the ${w.name}` };
+  }
+  if (S.war && story()) {
+    const w = S.war, C = S.cine, ch = C.chapters[S.chap], e = S.wIdx >= 0 ? w.events[S.wIdx] : null;
+    const evs = chapterEvents(ch), k = evs.findIndex((x) => x.i === S.wIdx);
+    const nextEv = k >= 0 ? evs[k + 1] : evs.find((x) => x.t > S.wt - 1e-6) || null, nc = C.chapters[S.chap + 1];
+    const [t, l] = e ? splitTitle(e.text) : [ch.title, ""];
+    const next = nextEv ? `data-wev="${nextEv.i}"` : nc ? `data-chap="${S.chap + 1}"` : "";
+    return { key: `w:${w.id}:${S.chap}:${S.wIdx}`, name: w.name, total: C.chapters.length, cur: S.chap, frac: Math.max(0, Math.min(1, ((S.wt ?? ch.t1) - ch.t0) / Math.max(1e-6, ch.t1 - ch.t0))),
+      kick: e ? e.label || shortYear(e.year) : chapRange(ch), title: t, line: l || (e ? evPlace(e) : `Part ${S.chap + 1} of ${C.chapters.length}`),
+      prev: k > 0 ? `data-wev="${evs[k - 1].i}"` : S.chap > 0 ? `data-chap="${S.chap - 1}"` : "", next, end: !next, up: !next && nextStory("w", w.id) };
+  }
+  if (S.war) {
+    const w = S.war, i = Math.max(0, S.wIdx), e = w.events[i], [t, l] = splitTitle(e.text), next = i < w.events.length - 1 ? `data-wev="${i + 1}"` : "";
+    return { key: `w:${w.id}:${i}`, name: w.name, total: w.events.length, cur: i, frac: 1, kick: e.label || shortYear(e.year), title: t, line: l || evPlace(e),
+      prev: i > 0 ? `data-wev="${i - 1}"` : "", next, end: !next, up: !next && nextStory("w", w.id) };
+  }
+  if (S.journey) {
+    const j = S.journey, ei = jEventIdx(j), ev = j.events[ei], rg = j.reigns[reignOf(j, ev ? ev.year : S.year)];
+    const tx = ev ? evText(ev) : null, [t, l] = ev ? splitTitle(tx.text) : ["The story begins", ""], next = ei < j.events.length - 1 ? `data-jev="${ei + 1}"` : "";
+    return { key: `e:${j.id}:${ei}`, name: j.name, total: j.events.length + 1, cur: ei + 1, frac: 1, // the opening frame, then one per event
+      kick: ev ? tx.when || shortYear(ev.year) : plainYear(S.year), title: t, line: l || (rg ? `Under ${reignName(rg)}` : j.name),
+      prev: ei > 0 ? `data-jev="${ei - 1}"` : "", next, end: !next, up: !next && nextStory("e", j.id) };
+  }
+  const m = S.moment, all = S.content.moments, i = all.indexOf(m), age = ageMoments(ageOf(m.year)), ai = age.indexOf(m);
+  return { key: `m:${m.id}`, name: AGES[ageOf(m.year)][2], total: age.length, cur: Math.max(0, ai), frac: 1, kick: m.yearLabel || plainYear(m.year), title: m.title, line: m.place || "",
+    prev: all[i - 1] ? `data-moment="${esc(all[i - 1].id)}"` : "", next: all[i + 1] ? `data-moment="${esc(all[i + 1].id)}"` : "" };
+}
+function framePlateHTML(f) {
+  if (f.end && S.upNext?.key === f.key) { // the end of a war or an empire: the next one
+    const u = f.up, count = S.upNext.count && u && S.upNext.cancelled !== f.key;
+    if (!u) return `<div class="fplate"><div class="fp-t"><span class="kicker">The end</span><b>${esc(f.name)}</b></div><button class="fnext" data-act="back" aria-label="Back to Stories">${I.close}</button></div>`;
+    return `<div class="fplate fup"><div class="fp-t"><span class="kicker">Up next · ${rangeShort(u.a, u.b)}</span><b>${esc(u.name)}</b></div>${count ? `<span class="fcount" role="img" aria-label="Starts in 5 seconds">5</span>` : ""}</div>
+      <div class="fupbtns"><button class="pillbtn" data-act="${count ? "up-cancel" : "back"}">${count ? "Not now" : "Back to Stories"}</button><button class="pillbtn dark" data-act="play-next" data-kind="${u.kind}" data-id="${esc(u.id)}">${I.play}Play now</button></div>`;
+  }
+  const nx = f.next ? `<button class="fnext" ${f.next} aria-label="${esc(f.nextLabel || "Next")}">${I.right}</button>` : f.end ? `<button class="fnext" data-act="upnext" aria-label="What comes next">${I.right}</button>` : "";
+  const wy = Math.floor((S.war ? S.wt ?? S.year : S.year) + 1e-9);
+  const extra = `<div class="fextra"><button class="pillbtn" data-act="world-in" data-year="${wy}">${I.globe}The world in ${shortYear(wy)}</button></div>`;
+  return extra + `<div class="fplate"><button class="fp-t" data-act="fmore"><span class="kicker">${esc(f.kick)}</span><b>${esc(f.title)}</b>${f.line ? `<small>${esc(f.line)}</small>` : ""}</button>${nx}</div>`;
+}
+function syncFramebar(f) {
+  const el = $("#framebar");
+  if (!f) { if (!el.hidden) { el.hidden = true; el.innerHTML = ""; } clearInterval(S.upT); S.upT = null; return; }
+  const ticks = Array.from({ length: f.total }, (_, i) => `<i class="${i < f.cur ? "done" : i === f.cur ? "on" : ""}">${i === f.cur ? `<b style="width:${(100 * f.frac).toFixed(1)}%"></b>` : ""}</i>`).join("");
+  el.innerHTML = `<div class="fticks" role="img" aria-label="Part ${f.cur + 1} of ${f.total}">${ticks}</div><div class="frow"><button class="round fprev" ${f.prev || "disabled"} aria-label="Back">${I.left}</button><button class="fpill" id="play" aria-label="${S.playing ? "Pause" : "Play"} · ${esc(f.name)}, part ${f.cur + 1} of ${f.total}">${playSvg(S.playing)}<b>${esc(f.name)}</b><small>${f.cur + 1}/${f.total}</small></button><span class="fgap"></span><button class="round" data-act="back" aria-label="Close the story">${I.close}</button></div>`;
+  el.hidden = false;
+  if ($("#col .fcount") && !S.upT) { // the countdown to the next story
+    let n = 5;
+    S.upT = setInterval(() => {
+      const c = $("#col .fcount"); if (!c) { clearInterval(S.upT); S.upT = null; return; }
+      n -= 1; c.textContent = n; c.setAttribute("aria-label", `Starts in ${n} seconds`);
+      if (n <= 0) { clearInterval(S.upT); S.upT = null; $("#col [data-act=play-next]")?.click(); }
+    }, 1000);
+  }
+}
 // Phones: Stories. The switch sits at the top of the screen (#stopbar); each story is a card along the bottom,
 // and the map moves to the card in view. The list button opens every story as a list with a field to find one.
 const KIND_ONE = { wars: "a war", empires: "an empire", moments: "a moment" };
@@ -3596,6 +3674,7 @@ function setPlayIcon(playing) {
 }
 function stopPlay() {
   if (!S.playing) return;
+  if (phone() && inFrames() && !S.tstory) { const f = frameOf(); if (f.end && (!story() || S.wt >= S.cine.chapters[S.chap].t1 - 1e-4)) { S.upNext = { key: f.key, count: true }; setTimeout(() => renderCol(false), 0); } }
   const timeline = S.playing > 0;
   clearInterval(S.playing); clearTimeout(S.stepTimer); cancelAnimationFrame(S.cineRaf); clearTimeout(S.chainTimer); S.playing = null; S.playEnd = null; setPlayIcon(false);
   if (S.cinePlay) { S.cinePlay = false; updateHud(); draw(); }
@@ -3707,6 +3786,8 @@ function warStageBar() {
 }
 function warDockHead() { // the playhead and the date follow the war's clock (every frame while a stage plays)
   const el = $("#dock");
+  const tk = S.war && story() && $("#framebar .fticks i.on b");
+  if (tk) { const ch = S.cine.chapters[S.chap]; tk.style.width = `${(100 * Math.max(0, Math.min(1, ((S.wt ?? ch.t0) - ch.t0) / Math.max(1e-6, ch.t1 - ch.t0)))).toFixed(1)}%`; }
   if (!S.war || !story() || el.dataset.mode !== "war") return;
   const ch = S.cine.chapters[S.chap], t = S.wt ?? ch.t0, y = Math.floor(t + 1e-9);
   const ph = el.querySelector(".wph"); if (ph) ph.style.left = `${(100 * Math.max(0, Math.min(1, (t - ch.t0) / Math.max(1e-6, ch.t1 - ch.t0)))).toFixed(2)}%`;
@@ -3717,7 +3798,9 @@ function renderDock() {
   const el = $("#dock"), mode = dockMode();
   let h = "";
   document.body.classList.toggle("wdock", mode === "war" && !!story());
-  if (mode === "war" && story()) {
+  if (phone() && mode !== "time") { // phones: a story's frames are shown in #framebar and the caption plate
+    h = "";
+  } else if (mode === "war" && story()) {
     h = warStageBar();
   } else if (mode === "war") {
     const w = S.war, seen = new Set(P.w[w.id] || []);
@@ -4066,6 +4149,16 @@ function setupUI() {
     if (act) {
       if (act === "years-close") return closeYears();
       if (act === "slist-back") { S.storyList = false; return renderCol(true); }
+      if (act === "fmore") return stepDetent(1);
+      if (act === "world-in") return leaveToWorld(+ev.target.closest("[data-act]").dataset.year);
+      if (act === "upnext") { S.upNext = { key: frameOf().key, count: false }; return renderCol(false); }
+      if (act === "up-cancel") { clearInterval(S.upT); S.upT = null; S.upNext.cancelled = S.upNext.key; S.upNext.count = false; return renderCol(false); }
+      if (act === "play-next") {
+        const b = ev.target.closest("[data-act]"), kind = b.dataset.kind, id = b.dataset.id;
+        clearInterval(S.upT); S.upT = null; S.upNext = null; S.from = null;
+        await (kind === "w" ? openWar(id) : openJourney(id));
+        return setTimeout(() => { if (!S.playing && (S.war?.id === id || S.journey?.id === id)) togglePlay(); }, 700);
+      }
       if (act === "years-play") { closeYears(); return togglePlay(); }
       if (act === "back") return backFromStory();
       if (act === "king-close") { S.jKing = null; return renderCol(true); }
@@ -4115,7 +4208,8 @@ function setupUI() {
     if (d.member) return select(d.member, { fly: true });
     if (t.matches("svg.chart-s")) { const r = t.getBoundingClientRect(); stopPlay(); go(+d.x0 + ((ev.clientX - r.left) / r.width) * (+d.x1 - +d.x0)); }
   };
-  for (const id of ["#col", "#side", "#pop"]) $(id).addEventListener("click", onStoryClick);
+  for (const id of ["#col", "#side", "#pop", "#framebar"]) $(id).addEventListener("click", onStoryClick);
+  $("#framebar").addEventListener("click", (ev) => { if (ev.target.closest("#play")) { togglePlay(); syncFramebar(frameOf()); } });
   $("#col").addEventListener("submit", (ev) => {
     if (!ev.target.matches("[data-yform]")) return;
     ev.preventDefault();

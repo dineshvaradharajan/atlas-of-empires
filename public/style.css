@@ -601,6 +601,7 @@ body.sdock #dock { border-radius: 24px; }
 /* ---------- phone tab bar (hidden on wide screens) ---------- */
 #tabbar { display: none; }
 #stopbar { display: none; }
+#framebar { display: none; }
 
 /* ---------- phones: the map fills the screen; one floating card holds the year and the page, at three heights ---------- */
 @media (max-width: 760px) {
@@ -729,6 +730,38 @@ body.sdock #dock { border-radius: 24px; }
   body.st-list .srow { min-height: 60px; border-bottom: 1px solid var(--rule); border-radius: 0; }
   body.st-list .srow .nm { display: flex; flex-direction: column; gap: 2px; white-space: normal; }
   body.st-list .srow .nm small { font: 400 13px var(--sans); color: var(--ink-3); }
+  /* a story: the frames and controls at the top, one caption plate at the bottom, the map between */
+  #framebar:not([hidden]) { display: flex; flex-direction: column; gap: 10px; position: absolute; z-index: 7; left: 12px; right: 12px; top: calc(12px + env(safe-area-inset-top)); }
+  body.frame #bar, body.frame #mapTools, body.frame #cSub, body.frame #cCall, body.frame #sheet > #dock { display: none !important; }
+  .fticks { display: flex; gap: 3px; height: 4px; }
+  .fticks i { position: relative; flex: 1; height: 4px; overflow: hidden; border-radius: 2px; background: var(--bg); box-shadow: 0 0 0 1px rgba(17,17,17,.3); }
+  .fticks i.done { background: var(--ink); box-shadow: none; }
+  .fticks i b { position: absolute; left: 0; top: 0; bottom: 0; background: var(--highlight); }
+  .frow { display: flex; align-items: center; gap: 8px; }
+  .frow .fgap { flex: 1; }
+  .frow .round { width: 44px; height: 44px; flex: none; background: var(--bg); border: 1px solid var(--rule-strong); box-shadow: 0 6px 18px rgba(0,0,0,.08); }
+  .frow .round:disabled { opacity: .45; }
+  .fpill { min-width: 0; height: 44px; display: inline-flex; align-items: center; gap: 8px; padding: 0 14px 0 12px; border: 1px solid var(--rule-strong); border-radius: 22px; background: var(--bg); color: var(--ink); box-shadow: 0 6px 18px rgba(0,0,0,.08); cursor: pointer; }
+  .fpill b { min-width: 0; font: 700 14px var(--sans); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .fpill small { flex: none; font: 500 13px var(--sans); color: var(--ink-3); }
+  #app .fpill svg { flex: none; width: 14px; height: 14px; fill: currentColor; stroke: none; }
+  body.frame #sheet[data-detent="peek"] > #col { max-height: none !important; padding-top: 2px; -webkit-mask-image: none; mask-image: none; }
+  body.frame #sheet[data-detent="peek"] > #col > :not(.fplate):not(.fupbtns) { display: none; }
+  body.frame #col > .chead, body.frame #col > .prog, body.frame #col > .stack, body.frame #col > .navrow { display: none !important; }
+  .fplate { display: flex; align-items: center; gap: 12px; }
+  #col .fextra { order: 2; display: flex; gap: 8px; }
+  #col .fextra .pillbtn { height: 44px; }
+  body.frame #col { display: flex; flex-direction: column; }
+  body.frame #col > .fplate { order: 0; } body.frame #col > :not(.fplate):not(.fextra):not(.fupbtns) { order: 3; } body.frame #col > .fupbtns { order: 1; }
+  .fplate .fp-t { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px; padding: 0; border: 0; background: none; color: var(--ink); text-align: left; cursor: pointer; }
+  .fplate .fp-t b { font: 800 21px/1.15 var(--display); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  .fplate .fp-t small { font: 400 14px/1.35 var(--sans); color: var(--ink-2); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .fplate .fnext { width: 60px; height: 60px; flex: none; display: grid; place-items: center; padding: 0; border: 0; border-radius: 30px; background: var(--ink); color: var(--bg); cursor: pointer; }
+  #app .fplate .fnext svg { width: 24px; height: 24px; stroke-width: 2.2; }
+  .fplate .fcount { width: 44px; height: 44px; flex: none; display: grid; place-items: center; box-sizing: border-box; border: 3px solid var(--ink); border-right-color: var(--rule); border-radius: 22px; font: 800 17px var(--display); }
+  #col .fupbtns { display: flex; gap: 8px; margin-top: -2px; }
+  #col .fupbtns .pillbtn { flex: 1; height: 52px; justify-content: center; }
+  #app #col .fupbtns .pillbtn svg { width: 12px; height: 12px; fill: currentColor; stroke: none; }
   /* the search pill's menu: today's story and a few years (built in app.js, shown in #results) */
   #results .mtoday { display: flex; flex-direction: column; gap: 4px; width: calc(100% - 32px); margin: 16px 16px 4px; padding: 16px 18px; border: 0; border-radius: 16px; background: var(--ink); color: var(--bg); text-align: left; }
   #results .mtoday .kicker { color: #ff9b8c; }
