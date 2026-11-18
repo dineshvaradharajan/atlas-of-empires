@@ -762,6 +762,29 @@ body.sdock #dock { border-radius: 24px; }
   #col .fupbtns { display: flex; gap: 8px; margin-top: -2px; }
   #col .fupbtns .pillbtn { flex: 1; height: 52px; justify-content: center; }
   #app #col .fupbtns .pillbtn svg { width: 12px; height: 12px; fill: currentColor; stroke: none; }
+  /* a realm tapped on the map, or a spot pressed and held: one plate at the bottom, the way back at the top */
+  body.mplate #bar, body.mplate #mapTools, body.mplate #cSub, body.mplate #cCall, body.mplate #sheet > #dock { display: none !important; }
+  #stopbar .frow { flex: 1; min-width: 0; }
+  #app #stopbar .fpill svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2.2; }
+  #stopbar .fpill.back { padding: 0 16px 0 10px; }
+  #stopbar .fpill.spot b { font-size: 15px; }
+  #stopbar .fyear { height: 44px; flex: none; display: inline-flex; align-items: center; box-sizing: border-box; padding: 0 16px; border: 1px solid var(--rule-strong); border-radius: 22px; background: var(--bg); color: var(--ink); font: 900 17px var(--display); box-shadow: 0 6px 18px rgba(0,0,0,.08); }
+  body.mplate #sheet[data-detent="peek"] > #col { max-height: none !important; padding-top: 2px; -webkit-mask-image: none; mask-image: none; }
+  body.mplate #sheet[data-detent="peek"] > #col > :not(.fplate):not(.fupbtns) { display: none; }
+  body.mplate #col { display: flex; flex-direction: column; }
+  body.mplate #col > .fplate { order: 0; } body.mplate #col > .fupbtns { order: 1; } body.mplate #col > :not(.fplate):not(.fextra):not(.fupbtns) { order: 3; }
+  body.mplate #col > .chead, body.mplate #col > .kicker, body.mplate #col > h1.ttl { display: none !important; }
+  #app .fplate .fnext[data-journey] svg { width: 20px; height: 20px; fill: currentColor; stroke: none; }
+  #col .spotnav .pillbtn { min-width: 0; justify-content: flex-start; gap: 8px; padding: 0 12px 0 10px; }
+  #col .spotnav .pillbtn.dark { justify-content: flex-end; padding: 0 10px 0 12px; }
+  #col .spotnav .pillbtn:disabled { opacity: .45; justify-content: center; }
+  #app #col .spotnav .pillbtn svg { flex: none; width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2.2; }
+  .spotnav .pillbtn span { min-width: 0; display: flex; flex-direction: column; text-align: left; }
+  .spotnav .pillbtn.dark span { align-items: flex-end; text-align: right; }
+  .spotnav .pillbtn small { font: 600 11px var(--sans); letter-spacing: .08em; text-transform: uppercase; color: var(--ink-3); }
+  .spotnav .pillbtn.dark small { color: var(--rule-2); }
+  .spotnav .pillbtn b { max-width: 100%; font: 600 14px var(--sans); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  #map { -webkit-touch-callout: none; -webkit-user-select: none; user-select: none; }
   /* the search pill's menu: today's story and a few years (built in app.js, shown in #results) */
   #results .mtoday { display: flex; flex-direction: column; gap: 4px; width: calc(100% - 32px); margin: 16px 16px 4px; padding: 16px 18px; border: 0; border-radius: 16px; background: var(--ink); color: var(--bg); text-align: left; }
   #results .mtoday .kicker { color: #ff9b8c; }

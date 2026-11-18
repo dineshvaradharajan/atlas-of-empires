@@ -1090,6 +1090,24 @@ function setupMap() {
     if (Math.hypot(ev.clientX - tapAt[0], ev.clientY - tapAt[1]) > 8) return;
     document.body.classList.add("reveal"); clearTimeout(S.revealT); S.revealT = setTimeout(() => document.body.classList.remove("reveal"), 3000);
   });
+  // phones: press and hold a spot on the map to see who ruled it through history
+  let holdT = 0, holdAt = null;
+  const holdOff = () => { clearTimeout(holdT); holdT = 0; };
+  canvas.addEventListener("pointerdown", (ev) => {
+    holdOff(); S.held = false;
+    if (!phone() || ev.isPrimary === false || S.war || S.journey || listOnMap() || S.yearSheet) return;
+    holdAt = [ev.clientX, ev.clientY];
+    holdT = setTimeout(() => {
+      holdT = 0; S.held = true;
+      const r = canvas.getBoundingClientRect(), ll = projection.invert([S.t.invertX(holdAt[0] - r.left), S.t.invertY(holdAt[1] - r.top)]);
+      if (!ll) return;
+      navigator.vibrate?.(12);
+      openPlace(ll, { from: S.view === "realm" ? S.sel : null });
+    }, 550);
+  });
+  canvas.addEventListener("pointermove", (ev) => { if (holdT && Math.hypot(ev.clientX - holdAt[0], ev.clientY - holdAt[1]) > 10) holdOff(); });
+  for (const t of ["pointerup", "pointercancel", "pointerleave"]) canvas.addEventListener(t, holdOff);
+  canvas.addEventListener("contextmenu", (ev) => { if (phone()) ev.preventDefault(); }); // the long press is ours, not the browser's menu
   d3.select(canvas).call(S.zoom).on("dblclick.zoom", null);
   if (S.homeT) d3.select(canvas).call(S.zoom.transform, S.homeT); // phones open on the filled home view
 
@@ -1141,6 +1159,7 @@ function setupMap() {
   });
   canvas.addEventListener("mouseleave", () => { S.hover = -1; $("#tooltip").hidden = true; draw(); });
   canvas.addEventListener("click", (ev) => {
+    if (S.held) { S.held = false; return; } // the end of a press and hold, not a tap
     if (S.yearSheet) return closeYears(); // a tap on the map puts the year sheet away
     if (document.body.classList.contains("frame")) { // phones, in a story: tap the left third to go back, the right third to go on
       const [tx] = local(ev);
@@ -1157,7 +1176,7 @@ function setupMap() {
     const own = claimedPick(x, y), it = S.items[own >= 0 ? own : pickAt(x, y)]; // clicks on a claim drawn as the viewer's country select that country
     if (it && it.kind !== "state") return openPlace(S.clickLL); // a gap between drawn states: who ruled this spot
     if (!it) return S.view === "realm" ? select(null) : null;
-    select(it.p.recon ? it.p.n : it.key, { ll: S.clickLL }); // the country's page opens straight away
+    select(it.p.recon ? it.p.n : it.key, { ll: S.clickLL, fly: phone() }); // the country's page opens straight away (phones also bring the realm into view)
   });
 }
 
@@ -1755,7 +1774,7 @@ async function select(key, opts = {}) {
   draw();
   updateChartCursor();
   if (!key) { S.ghost = null; return; }
-  if (opts.fly) flyTo(boundsOf(activeFeats(key)));
+  if (opts.fly) phone() ? requestAnimationFrame(() => flyTo(boundsOf(activeFeats(key)), 8, 700)) : flyTo(boundsOf(activeFeats(key))); // phones: after the plate has its height
   await afterPaint(); // the card and the highlight reach the screen first; the slower extras follow
   if (S.sel !== key) return;
   loadRealmPlace(key, opts.ll);
@@ -1796,11 +1815,12 @@ function renderCol(resetScroll) {
     : v === "moment" && S.moment ? momentHTML() : v === "site" && S.site ? siteHTML() : v === "place" && S.place ? placeHTML() : S.sel && realm(S.sel) ? realmHTML() : worldHTML();
   const fr = phone() && inFrames() ? frameOf() : null;
   if (fr) col.insertAdjacentHTML("afterbegin", framePlateHTML(fr));
+  else if (mapPlateOn()) col.insertAdjacentHTML("afterbegin", mapPlateHTML());
   col.scrollTop = resetScroll ? 0 : scroll;
   const cards = col.querySelector(".scards");
   if (cards && !resetScroll && cardsLeft != null) cards.scrollLeft = cardsLeft;
   if (S.yearSheet && S.ysScroll) { S.ysScroll = false; col.querySelector(".yr.on")?.scrollIntoView({ block: "start" }); } // a jump or a typed year: show where it landed
-  if (resetScroll && phone()) setDetent(S.yearSheet ? "half" : LISTS.has(v) && !S.war && !S.journey ? (v !== "sources" && !S.storyList ? "peek" : "full") : v === "place" && !S.war && !S.journey ? "half" : "peek", v === "place"); // lists and About open tall, who ruled a spot at half, the rest as a summary
+  if (resetScroll && phone()) setDetent(S.yearSheet ? "half" : LISTS.has(v) && !S.war && !S.journey ? (v !== "sources" && !S.storyList ? "peek" : "full") : "peek", v === "place"); // lists and About open tall, the rest as a summary
   if (S.pop && (S.war || S.journey || v !== "world" && v !== "realm")) hidePop();
   syncChrome();
   renderDock();
@@ -1866,6 +1886,7 @@ function syncChrome() {
   document.body.classList.toggle("st-cards", slist && !S.storyList);
   document.body.classList.toggle("st-list", slist && !!S.storyList);
   document.body.classList.toggle("frame", phone() && inFrames());
+  document.body.classList.toggle("mplate", mapPlateOn());
   document.body.dataset.view = S.tstory && S.war ? "tstory" : S.war ? "war" : S.journey ? "journey" : S.view; // phones style each page's card
 }
 // Card building blocks.
@@ -3224,8 +3245,61 @@ function storyCardsHTML() {
     return `<div class="scard" role="listitem" data-id="${esc(x.id)}"><button class="sc-t" ${x.attr}="${esc(x.id)}"><span class="kicker">${kick2}</span><b>${esc(x.name)}</b><small>${meta}</small></button><button class="sc-play" ${x.attr}="${esc(x.id)}" aria-label="${verb} ${esc(x.name)}">${I.play}</button></div>`;
   }).join("")}</div>`;
 }
+// Phones: a realm tapped on the map, or a spot pressed and held, is one plate at the bottom with the map above.
+// Swipe the plate up for the rest. The top of the screen holds the way back (and, for a spot, its name and year).
+const mapPlateOn = () => phone() && !S.war && !S.journey && !S.yearSheet && ((S.view === "realm" && !!S.sel && !!realm(S.sel)) || (S.view === "place" && !!S.place));
+function reignRuns(s) { // "1658–1707", "27 BCE – 14 CE", "1530–1540, 1555–1556" → [[from, to], …]
+  const out = [];
+  for (const m of String(s || "").matchAll(/(\d{1,4})\s*(BCE|BC|CE|AD)?\s*[–-]\s*(\d{1,4})\s*(BCE|BC|CE|AD)?/g)) {
+    const bc2 = /^B/.test(m[4] || ""), bc1 = m[2] ? /^B/.test(m[2]) : bc2;
+    out.push([bc1 ? -m[1] : +m[1], bc2 ? -m[3] : +m[3]]);
+  }
+  return out;
+}
+function rulerAt(emp, y) {
+  let best = null, b0 = -Infinity;
+  for (const r of emp?.rulers || []) for (const [a, b] of reignRuns(r.reign)) if (a <= y && y <= b && a > b0) { best = r; b0 = a; }
+  return best;
+}
+const simpleCapital = (c) => (c && !/[,;]| and | from | at /.test(c) ? c.trim() : "");
+const plainSpot = () => (S.place?.name ? S.place.name.replace(/^Capital of /, "") : "");
+function mapPlateHTML() {
+  const up = ic('<path d="m6 15 6-6 6 6"/>');
+  if (S.view === "realm") {
+    const key = S.sel, r = realm(key), emp = empireOf(key), y = S.year, end = r.tl[r.tl.length - 1][1];
+    const alive = end >= S.range[1] - 1;
+    const kicker = alive && !r.group ? `Country · since ${shortYear(r.tl[0][0])}` : `${r.group ? "Empire" : "Realm"} · ${shortYear(r.tl[0][0])} to ${end >= S.range[1] ? "today" : shortYear(end)}`;
+    const ru = rulerAt(emp, y), cap = simpleCapital(emp?.capital), area = areaAt(key, y);
+    const line = ru ? `In ${shortYear(y)}: ${ru.name}${cap ? `, from ${cap}` : ""}` : cap ? `Ruled from ${cap}` : area ? `${mkm(area)} million km² in ${shortYear(y)}` : emp && emp.name !== displayName(key) ? emp.name : "";
+    const jr = journeyForRealm(key);
+    const btn = jr ? `<button class="fnext" data-journey="${esc(jr.id)}" aria-label="Follow ${esc(jr.name)} through its history">${I.play}</button>`
+      : `<button class="fnext" data-act="fmore" aria-label="More about ${esc(displayName(key))}">${up}</button>`;
+    return `<div class="fextra"><button class="pillbtn" data-act="place">${I.pin}Who ruled here?</button></div><div class="fplate"><button class="fp-t" data-act="fmore"><span class="kicker">${esc(kicker)}</span><b>${esc(displayName(key))}</b>${line ? `<small>${esc(line)}</small>` : ""}</button>${btn}</div>`;
+  }
+  const runs = S.place.runs, y = S.year, spot = plainSpot() || "this spot";
+  if (!runs) return `<div class="fplate"><div class="fp-t"><span class="kicker">Who ruled ${esc(spot)}</span><b>Looking it up…</b></div></div>`;
+  const i = runs.findIndex((x) => x.from <= y && y <= x.to), cur = runs[i];
+  const mid = (x) => Math.max(x.from, Math.min(x.to, Math.round((x.from + x.to) / 2)));
+  const prev = cur ? runs[i - 1] : [...runs].reverse().find((x) => x.to < y), next = cur ? runs[i + 1] : runs.find((x) => x.from > y);
+  let kicker, title, line;
+  if (cur) {
+    const ru = rulerAt(empireOf(cur.name), y);
+    kicker = `Ruled ${spot} · ${shortYear(cur.from)} to ${cur.to >= S.range[1] ? "today" : shortYear(cur.to)}`; title = displayName(cur.name);
+    line = ru ? `In ${shortYear(y)}: ${ru.name}` : `${new Set(runs.map((x) => x.name)).size} rulers on record here`;
+  } else { kicker = `${spot} in ${shortYear(y)}`; title = runs.length ? "No state on record" : "No state has held it"; line = runs.length ? "Before and After show who held it" : "Try a spot nearer to land"; }
+  const nav = (x, dir) => x ? `<button class="pillbtn${dir === "After" ? " dark" : ""}" data-pkey="${esc(x.name)}" data-pyear="${mid(x)}">${dir === "Before" ? I.left : ""}<span><small>${dir}</small><b>${esc(displayName(x.name))}</b></span>${dir === "After" ? I.right : ""}</button>`
+    : `<button class="pillbtn" disabled><span><small>${dir}</small><b>${dir === "Before" ? "Nothing earlier" : cur && cur.to >= S.range[1] - 1 ? "Still today" : "Nothing later"}</b></span></button>`;
+  return `<div class="fplate"><button class="fp-t" data-act="fmore"><span class="kicker">${esc(kicker)}</span><b>${esc(title)}</b><small>${esc(line)}</small></button></div>${runs.length ? `<div class="fupbtns spotnav">${nav(prev, "Before")}${nav(next, "After")}</div>` : ""}`;
+}
+function mapTopHTML() {
+  if (S.view === "realm") return `<button class="fpill back" data-act="close">${I.left}<b>The world in ${esc(shortYear(S.year))}</b></button>`;
+  const from = S.place.from, spot = plainSpot() || "This spot";
+  return `<button class="round" data-act="close-place" aria-label="Back to ${from === "today" ? "Today" : from ? esc(displayName(from)) : "the map"}">${I.left}</button><button class="fpill spot" data-act="pickplace" aria-label="${esc(spot)}. Choose another place">${I.pin}<b>${esc(spot)}</b></button><span class="fgap"></span><span class="fyear">${esc(shortYear(S.year))}</span>`;
+}
 function syncStopbar() {
-  const el = $("#stopbar"), on = phone() && listOnMap() && !S.storyList && !S.yearSheet;
+  const el = $("#stopbar");
+  if (mapPlateOn()) { el.innerHTML = `<div class="frow">${mapTopHTML()}</div>`; el.hidden = false; return; }
+  const on = phone() && listOnMap() && !S.storyList && !S.yearSheet;
   el.hidden = !on; if (!on) return;
   const C = S.content, k = S.view;
   el.innerHTML = `<div class="stabs" role="tablist" aria-label="Kind of story">${[["wars", "Wars", C.wars.length], ["empires", "Empires", C.journeys.length], ["moments", "Moments", C.moments.length]].map(([key, t, n]) => `<button role="tab" data-stab="${key}" aria-selected="${key === k}">${t}<small>${n}</small></button>`).join("")}</div><button class="slistbtn" data-act="slist" aria-label="See all ${k} as a list">${ic('<path d="M9 7h11M9 12h11M9 17h11M4.5 7h.01M4.5 12h.01M4.5 17h.01"/>')}</button>`;
@@ -3485,7 +3559,7 @@ function drawMomentPin() {
   if (m.ring) { ctx.beginPath(); ctx.arc(x, y, 9, 0, 2 * Math.PI); ctx.fillStyle = "#ffffff"; ctx.fill(); ctx.beginPath(); ctx.arc(x, y, 6, 0, 2 * Math.PI); ctx.fillStyle = theme.ink; ctx.fill(); ctx.lineWidth = 1.5; ctx.strokeStyle = theme.ink; ctx.beginPath(); ctx.arc(x, y, 9, 0, 2 * Math.PI); ctx.stroke(); }
   else { ctx.beginPath(); ctx.arc(x, y, 10, 0, 2 * Math.PI); ctx.fillStyle = theme.highlight; ctx.fill(); ctx.lineWidth = 3; ctx.strokeStyle = "#ffffff"; ctx.stroke(); ctx.lineWidth = 2; ctx.strokeStyle = theme.ink; ctx.beginPath(); ctx.arc(x, y, 12, 0, 2 * Math.PI); ctx.stroke(); }
   ctx.restore();
-  if (m.title) drawCallout(x, y, m.kicker, m.title);
+  if (m.title && !(S.view === "place" && mapPlateOn())) drawCallout(x, y, m.kicker, m.title); // phones: the plate already says who ruled the spot
 }
 
 // ---------------------------------------------------------------- power chart (the timeline)
@@ -4220,7 +4294,8 @@ function setupUI() {
   $("#stopbar").addEventListener("click", (ev) => {
     const b = ev.target.closest("button"); if (!b) return;
     if (b.dataset.act === "slist") { S.storyList = true; return renderCol(true); }
-    if (b.dataset.stab && b.dataset.stab !== S.view) { S.view = S.lastList = b.dataset.stab; S.listHot = null; draw(); writeHash(); renderCol(true); }
+    if (b.dataset.stab) { if (b.dataset.stab !== S.view) { S.view = S.lastList = b.dataset.stab; S.listHot = null; draw(); writeHash(); renderCol(true); } return; }
+    if (mapPlateOn()) onStoryClick(ev); // a realm's or a spot's way back
   });
   $("#col").addEventListener("scroll", (ev) => { // the cards: the map follows the one that settles in the middle
     if (!ev.target.classList?.contains("scards")) return;
