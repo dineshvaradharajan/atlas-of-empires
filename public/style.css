@@ -603,7 +603,9 @@ body.sdock #dock { border-radius: 24px; }
 
 /* ---------- phones: the map fills the screen; one floating card holds the year and the page, at three heights ---------- */
 @media (max-width: 760px) {
-  :root { --gut: 16px; --tab-h: 0px; --sheet-h: 0px; --dock-ph: 0px; --peek: 180px; }
+  :root { --gut: 16px; --tab-h: 70px; --sheet-h: 0px; --dock-ph: 0px; --peek: 180px; }
+  /* the bar of sections, floating at the bottom; it steps aside during a story, a search and the year sheet */
+  body[data-view="war"], body[data-view="journey"], body[data-view="tstory"], body[data-view="moment"], body.playing, body.searching, body.years { --tab-h: 0px; }
   body.sdock { --dock-ph: 128px; }
   body.jdock { --dock-ph: 166px; }
   body.wdock { --dock-ph: 82px; }
@@ -622,8 +624,8 @@ body.sdock #dock { border-radius: 24px; }
   #legend { display: none !important; }
   /* the card: floats above the bottom edge; the year bar (or a story's bar) on top, the page below.
      Three heights: peek (a summary), half (the card, scrolling), full (reading). */
-  #sheet { display: flex; flex-direction: column; position: absolute; z-index: 5; left: 8px; right: 8px; bottom: calc(10px + env(safe-area-inset-bottom));
-    max-height: calc(100% - 84px - env(safe-area-inset-top) - env(safe-area-inset-bottom)); background: var(--bg); border: 1px solid var(--rule-strong); border-radius: 26px; box-shadow: 0 10px 30px rgba(0,0,0,.16); overflow: hidden; }
+  #sheet { display: flex; flex-direction: column; position: absolute; z-index: 5; left: 8px; right: 8px; bottom: calc(10px + var(--tab-h) + env(safe-area-inset-bottom));
+    max-height: calc(100% - 84px - var(--tab-h) - env(safe-area-inset-top) - env(safe-area-inset-bottom)); background: var(--bg); border: 1px solid var(--rule-strong); border-radius: 26px; box-shadow: 0 10px 30px rgba(0,0,0,.16); overflow: hidden; }
   #sheet:has(> #col:empty):has(> #dock:empty) { display: none; }
   #sheet[data-detent="full"] { top: calc(76px + env(safe-area-inset-top)); }
   #grab { display: grid; place-items: center; flex: none; width: 100%; height: 22px; padding: 0; border: 0; background: none; cursor: grab; touch-action: none; }
@@ -687,9 +689,15 @@ body.sdock #dock { border-radius: 24px; }
   .rg:not(.on) b, .rg:not(.on) small { visibility: hidden; }
   .rg.on { min-width: max-content; }
   .ecap { font-size: 12px; }
-  #cSub { bottom: calc(var(--sheet-h) + 28px + env(safe-area-inset-bottom)); max-width: 90%; font-size: 13px; }
-  /* no tab bar: the search pill opens one menu with the sections (built in app.js, shown in #results) */
-  #tabbar { display: none; }
+  #cSub { bottom: calc(var(--sheet-h) + var(--tab-h) + 28px + env(safe-area-inset-bottom)); max-width: 90%; font-size: 13px; }
+  #tabbar { display: flex; position: absolute; z-index: 6; left: 8px; right: 8px; bottom: calc(10px + env(safe-area-inset-bottom)); height: 60px; box-sizing: border-box; padding: 4px;
+    background: var(--bg); border: 1px solid var(--rule-strong); border-radius: 30px; box-shadow: 0 10px 30px rgba(0,0,0,.16); }
+  #tabbar a { flex: 1; min-width: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; border-radius: 26px; color: var(--ink-3); font: 600 11px var(--sans); text-decoration: none; }
+  #tabbar a svg { width: 20px; height: 20px; }
+  #tabbar a[aria-current="page"] { background: var(--chip); color: var(--ink); font-weight: 700; }
+  #tabbar a[data-tab="search"] { display: none; }
+  body[data-view="war"] #tabbar, body[data-view="journey"] #tabbar, body[data-view="tstory"] #tabbar, body[data-view="moment"] #tabbar, body.playing #tabbar, body.searching #tabbar, body.years #tabbar { display: none; }
+  /* the search pill's menu: today's story and a few years (built in app.js, shown in #results) */
   #results .mtoday { display: flex; flex-direction: column; gap: 4px; width: calc(100% - 32px); margin: 16px 16px 4px; padding: 16px 18px; border: 0; border-radius: 16px; background: var(--ink); color: var(--bg); text-align: left; }
   #results .mtoday .kicker { color: #ff9b8c; }
   :root[data-theme="dark"] #results .mtoday .kicker { color: #c8321e; } /* the card turns light in dark mode */
@@ -701,7 +709,7 @@ body.sdock #dock { border-radius: 24px; }
   #results .mgrid small { font: 400 13px/1.35 var(--sans); color: var(--ink-3); }
   #results .mjump { display: flex; flex-wrap: wrap; gap: 6px; padding: 4px 16px 16px; }
   #results .mjump button { height: 40px; padding: 0 14px; border: 1px solid var(--rule-2); border-radius: 20px; background: var(--bg); color: var(--ink-2); font: 500 14px var(--sans); }
-  #toast { top: auto; bottom: calc(var(--sheet-h) + 28px + env(safe-area-inset-bottom)); }
+  #toast { top: auto; bottom: calc(var(--sheet-h) + var(--tab-h) + 28px + env(safe-area-inset-bottom)); }
   /* ---- the pages ---- */
   .kyr { display: inline; }
   #sheet:has(> #dock[data-mode="time"]) > #col > .bigy.live { display: none; } /* the bar above already shows the year */
@@ -710,11 +718,44 @@ body.sdock #dock { border-radius: 24px; }
   #sheet[data-detent="peek"] > #col > .kicker.grey, #sheet[data-detent="peek"] > #col > .note { display: none; }
   #sheet[data-detent="peek"] > #col > .chiprow { flex-wrap: nowrap; overflow: hidden; }
   #sheet[data-detent="peek"] > #col > .chiprow > * { flex: none; white-space: nowrap; }
-  /* Today: a dark card over the map at the day's event; the story's Play is the one control */
+  /* Today: one plate over the map, the day's event and Play; the rest on a swipe up */
   body[data-view="today"] #sheet > #dock { display: none; }
-  body[data-view="today"] #sheet { --bg: #111111; --ink: #f2f2ee; --ink-2: #d6d6d0; --ink-3: #a6a69f; --rule: #2a2a27; --rule-2: #4a4a45; --rule-strong: #f2f2ee; --chip: #232321; --kick: #ff9b8c; --highlight: #ff5a43;
-    color: var(--ink); border-color: #111111; box-shadow: 0 10px 30px rgba(0,0,0,.28); }
-  :root[data-theme="dark"] body[data-view="today"] #sheet { --bg: #ffffff; --ink: #111111; --ink-2: #2b2b28; --ink-3: #6b6b66; --rule: #e6e6e1; --rule-2: #c9c9c4; --rule-strong: #111111; --chip: #f0f0ec; --kick: #c8321e; --highlight: #e5402a; border-color: #ffffff; }
+  body[data-view="today"] #sheet[data-detent="peek"] > #col { max-height: none; -webkit-mask-image: none; mask-image: none; padding-top: 2px; }
+  body[data-view="today"] #sheet[data-detent="peek"] > #col > :not(.tplate) { display: none; }
+  .tplate { display: flex; align-items: center; gap: 12px; }
+  .tplate .tp-t { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 4px; padding: 0; border: 0; background: none; color: var(--ink); text-align: left; cursor: pointer; }
+  .tplate .tp-t b { font: 800 21px/1.15 var(--display); }
+  .tplate .tp-play { width: 60px; height: 60px; flex: none; display: grid; place-items: center; padding: 0; border: 0; border-radius: 30px; background: var(--ink); color: var(--bg); cursor: pointer; }
+  #app .tplate .tp-play svg { width: 20px; height: 20px; fill: currentColor; stroke: none; }
+  /* Map: the year plate. Back a chapter, the year (opens the year sheet), on a chapter; the world's summary on a swipe up */
+  #sheet > #dock[data-mode="time"] { height: 72px; }
+  body[data-view="world"] #sheet[data-detent="peek"] > #col { display: none; }
+  .yplate { display: flex; align-items: center; gap: 8px; height: 100%; padding: 0 10px 8px; box-sizing: border-box; }
+  .yplate .step { width: 52px; height: 52px; flex: none; display: grid; place-items: center; padding: 0; margin: 0 !important; border: 1px solid var(--rule-2); border-radius: 26px; background: var(--bg); color: var(--ink); }
+  .yplate .step:disabled { opacity: .35; }
+  .yplate .step svg { width: 20px; height: 20px; stroke-width: 2.2; }
+  .yplate .ybtn { flex: 1; min-width: 0; height: 56px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; padding: 0; border: 0; background: none; color: var(--ink); cursor: pointer; }
+  .yplate .tyear { min-width: 0; font: 900 24px/1 var(--display); }
+  .yplate .tyear small { margin-left: .15em; font-size: .5em; }
+  .yplate .ych { max-width: 100%; font: 500 13px/1.2 var(--sans); color: var(--ink-3); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .yplate .play { width: 52px; height: 52px; flex: none; }
+  /* the year sheet */
+  body.years #sheet > #dock { display: none; }
+  #col .yhead { position: sticky; z-index: 2; top: -12px; display: flex; flex-direction: column; gap: 12px; margin: -12px -20px 0; padding: 12px 20px 12px; background: var(--bg); border-bottom: 1px solid var(--rule); }
+  #col .yform { display: flex; align-items: center; gap: 8px; }
+  #col .yform input { flex: 1; min-width: 0; height: 48px; box-sizing: border-box; padding: 0 16px; border: 1px solid var(--rule-strong); border-radius: 24px; background: var(--bg); color: var(--ink); font: 500 16px var(--sans); }
+  #col .yform .pillbtn { height: 48px; padding: 0 18px; }
+  #col .yform .round { width: 48px; height: 48px; flex: none; }
+  #col .ychips { flex-wrap: nowrap; overflow-x: auto; margin: 0 -20px; padding: 0 20px; scrollbar-width: none; }
+  #col .ychips .fchip { flex: none; height: 44px; }
+  #col .yplay { align-self: flex-start; height: 44px; }
+  #app #col .yplay svg { fill: currentColor; stroke: none; width: 12px; height: 12px; }
+  #col .yrs { display: flex; flex-direction: column; margin: -6px -8px 0; }
+  #col .yr { scroll-margin-top: 250px; min-height: 52px; display: flex; align-items: center; gap: 14px; padding: 0 12px; border: 0; border-radius: 14px; background: none; color: var(--ink); text-align: left; cursor: pointer; }
+  #col .yr b { width: 74px; flex: none; font: 800 17px/1 var(--display); }
+  #col .yr span { flex: 1; min-width: 0; font: 500 15px/1.3 var(--sans); color: var(--ink-2); }
+  #col .yr.on { background: var(--chip); }
+  #col .yr.on span { color: var(--ink); font-weight: 600; }
   /* who ruled this spot: each ruler's row is as tall as the time it held the spot, with a colour bar down its side */
   #sheet .hrows { gap: 3px; margin: 0 -8px; }
   #sheet .hrow { align-items: flex-start; min-height: clamp(44px, calc(40px + var(--yrs, 0) * .12px), 150px); padding: 10px 12px 10px 8px; }

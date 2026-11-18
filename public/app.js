@@ -1141,6 +1141,7 @@ function setupMap() {
   });
   canvas.addEventListener("mouseleave", () => { S.hover = -1; $("#tooltip").hidden = true; draw(); });
   canvas.addEventListener("click", (ev) => {
+    if (S.yearSheet) return closeYears(); // a tap on the map puts the year sheet away
     if (S.war || S.journey) return; // a war replay or empire journey keeps the screen: the map only shows hover details
     const [x, y] = local(ev);
     if (listOnMap()) { const lp = pinAt(x, y); if (lp) { S.listHot = null; return lp.open(); } return; } // the map shows the list: only its pins are clickable
@@ -1785,11 +1786,12 @@ function renderCol(resetScroll) {
   const col = $("#col"), scroll = col.scrollTop;
   const v = S.view;
   col.dataset.w = LISTS.has(v) && v !== "sources" && !S.war && !S.journey ? "wide" : S.war || S.journey || v === "realm" || v === "place" || v === "sources" ? "story" : "";
-  col.innerHTML = S.tstory && S.war ? todayStoryHTML() : v === "today" ? homeHTML() : v === "sources" ? sourcesHTML() : (v === "moments" || v === "empires" || v === "wars") && !S.war && !S.journey ? storiesHTML()
+  col.innerHTML = S.yearSheet ? yearsHTML() : S.tstory && S.war ? todayStoryHTML() : v === "today" ? homeHTML() : v === "sources" ? sourcesHTML() : (v === "moments" || v === "empires" || v === "wars") && !S.war && !S.journey ? storiesHTML()
     : v === "journey" && S.journey ? journeyHTML() : v === "war" && S.war ? warHTML()
     : v === "moment" && S.moment ? momentHTML() : v === "site" && S.site ? siteHTML() : v === "place" && S.place ? placeHTML() : S.sel && realm(S.sel) ? realmHTML() : worldHTML();
   col.scrollTop = resetScroll ? 0 : scroll;
-  if (resetScroll && phone()) setDetent(LISTS.has(v) && !S.war && !S.journey ? "full" : v === "place" && !S.war && !S.journey ? "half" : "peek", v === "place"); // lists and About open tall, who ruled a spot at half, the rest as a summary
+  if (S.yearSheet && S.ysScroll) { S.ysScroll = false; col.querySelector(".yr.on")?.scrollIntoView({ block: "start" }); } // a jump or a typed year: show where it landed
+  if (resetScroll && phone()) setDetent(S.yearSheet ? "half" : LISTS.has(v) && !S.war && !S.journey ? "full" : v === "place" && !S.war && !S.journey ? "half" : "peek", v === "place"); // lists and About open tall, who ruled a spot at half, the rest as a summary
   if (S.pop && (S.war || S.journey || v !== "world" && v !== "realm")) hidePop();
   syncChrome();
   renderDock();
@@ -1799,6 +1801,7 @@ function renderCol(resetScroll) {
 const DETENTS = ["peek", "half", "full"];
 function setDetent(d, refly = true) {
   const sh = $("#sheet"); if (!sh || sh.dataset.detent === d) return;
+  if (d === "peek" && S.yearSheet) return closeYears();
   sh.dataset.detent = d;
   const g = $("#grab"); g.setAttribute("aria-expanded", String(d !== "peek")); g.setAttribute("aria-label", d === "full" ? "Show less" : "Show more");
   if (d === "peek") $("#col").scrollTop = 0;
@@ -1832,14 +1835,9 @@ function setupSheet() {
 }
 // Phones: the search pill opens one menu with the sections, today's story and a few years to jump to.
 function menuHTML() {
-  const t = S.today, md = new Date().toLocaleDateString("en-GB", { day: "numeric", month: "long" }), C = S.content;
+  const t = S.today, md = new Date().toLocaleDateString("en-GB", { day: "numeric", month: "long" });
   let h = "";
   if (t) h += `<button class="mtoday" data-tab="today"><span class="kicker">${t.exact ? "Today in history" : "Near this day"} · ${esc(t.exact ? md : t.e.label || md)}</span><b>${esc(shortYear(t.e.year))} · ${esc(t.e.text)}</b></button>`;
-  h += `<nav class="mgrid" aria-label="Sections">
-    <button data-tab="today">${I.today}<b>Today</b><small>On this day in history</small></button>
-    <button data-tab="map">${I.globe}<b>Map</b><small>The world in ${esc(plainYear(S.year))}</small></button>
-    <button data-tab="stories">${I.book}<b>Stories</b><small>${C.journeys.length} empires, ${C.wars.length} wars, ${C.moments.length} moments</small></button>
-    <button data-tab="about">${ic('<circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.5"/>')}<b>About</b><small>The atlas and its sources</small></button></nav>`;
   h += `<div class="grp">Jump to a year</div><div class="mjump">${[-323, 800, 1279, 1492, 1914].map((y) => `<button data-k="year:${y}">${esc(plainYear(y))}</button>`).join("")}</div>`;
   return h;
 }
@@ -1851,6 +1849,7 @@ function syncChrome() {
   $("#compare").hidden = !(S.compare && !S.war && !S.journey && !S.tstory);
   document.body.classList.toggle("sdock", !!(S.war && !S.tstory || S.journey || S.view === "moment"));
   document.body.classList.toggle("jdock", !!S.journey);
+  document.body.classList.toggle("years", !!S.yearSheet);
   document.body.dataset.view = S.tstory && S.war ? "tstory" : S.war ? "war" : S.journey ? "journey" : S.view; // phones style each page's card
 }
 // Card building blocks.
@@ -1952,7 +1951,12 @@ function worldHTML() {
 function homeHTML() {
   const t = S.today, d = new Date(), md = d.toLocaleDateString("en-GB", { day: "numeric", month: "long" });
   let h = "";
-  if (t) {
+  if (t && phone()) {
+    const when = t.exact ? `${md} ${shortYear(t.e.year)}` : t.e.label || `${md} ${shortYear(t.e.year)}`;
+    h += `<div class="tplate"><button class="tp-t" data-act="tstory"><span class="kicker">${t.exact ? "Today in history" : "Near this day"} · ${esc(when)}</span><b>${esc(t.e.text)}</b></button><button class="tp-play" data-act="tstory" aria-label="Play today's story">${I.play}</button></div>`;
+    if (t.e.detail) h += `<p class="prose">${esc(firstSentences(t.e.detail, 2))}</p>`;
+    h += `<button class="pillbtn" data-act="share">${I.share}Share today's story</button>`;
+  } else if (t) {
     h += kick(`${t.exact ? "Today in history" : "Near this day"} · ${esc(t.exact ? md : t.e.label || md)}`) + `<p class="bigy">${yearLabel(t.e.year)}</p><h1 class="ttl">${esc(t.e.text)}</h1>`;
     if (t.e.detail) h += `<p class="prose">${esc(firstSentences(t.e.detail, 2))}</p>`;
     h += `<div class="navrow"><button class="pillbtn dark" data-act="tstory" style="flex:1;height:48px">${I.play.replace("<svg", '<svg style="fill:currentColor;stroke:none;width:12px;height:12px"')}Play today's story · 1 min</button><button class="round" data-act="share" aria-label="Share today's story" style="width:48px;height:48px">${I.share}</button></div>`;
@@ -3693,6 +3697,8 @@ function renderDock() {
       <button class="step" data-tstep="${Math.max(0, i - 1)}" aria-label="Previous step">${I.left}</button><b class="tyear">${shortYear(S.today.e.year)}</b><button class="step" data-tstep="${Math.min(steps.length - 1, i + 1)}" aria-label="Next step">${I.right}</button>
       <div class="tsteps"><span class="fill" style="width:calc(${(100 * i) / Math.max(1, steps.length - 1)}% - 12px)"></span>${steps.map((st, k) => `<button class="tstep ${k === i ? "on" : k < i ? "seen" : ""}" data-tstep="${k}"><i></i>${esc(st.label.length > 34 ? st.label.slice(0, 32) + "…" : st.label)}</button>`).join("")}</div>
       <button class="pillbtn" data-act="world-in" data-year="${S.today.e.year}">${I.globe}The world in ${shortYear(S.today.e.year)}</button></div>`;
+  } else if (phone()) { // phones: the year plate; the arrows step through the chapters, the year opens the year sheet
+    h = `<div class="yplate"><button class="step" data-chstep="-1">${I.left}</button><button class="ybtn" data-act="years"><b class="tyear"></b><span class="ych"></span></button>${S.playing ? `<button class="play" id="play" aria-label="Pause">${I.pause}</button>` : ""}<button class="step" data-chstep="1">${I.right}</button></div>`;
   } else {
     const labs = TICKS.filter(([y]) => y >= S.range[0]).map(([y, t]) => `<span style="left:${100 * yToPos(y)}%">${t}</span>`).join("") + `<span style="left:100%">Today</span>`;
     h = `<div class="tbar"><button class="play" id="play" aria-label="Play through time">${playSvg(S.playing)}</button>
@@ -3738,11 +3744,47 @@ function updateDock() {
   if (el.dataset.mode !== "time") return;
   const p = 100 * yToPos(S.year);
   const ty = el.querySelector(".tyear"); if (ty) ty.innerHTML = yearLabel(S.year);
+  const yc = el.querySelector(".ych"); if (yc) {
+    const ch = chapterFor(S.year), title = S.year < (S.clio.range?.[0] ?? -3400) ? eraOf(S.year)[2] : chapterNear(ch, S.year) ? ch.title : eraOf(S.year)[2];
+    yc.textContent = title;
+    el.querySelector(".ybtn").setAttribute("aria-label", `Change the year. The map shows ${plainYear(S.year)}, ${title}`);
+    const [a, b] = [chapStep(-1), chapStep(1)], st = el.querySelectorAll("[data-chstep]");
+    st[0].setAttribute("aria-label", `Back to ${plainYear(a)}`); st[0].disabled = a >= S.year;
+    st[1].setAttribute("aria-label", `On to ${plainYear(b)}`); st[1].disabled = b <= S.year;
+  }
   const by = $("#bigyear"); if (by && document.body.classList.contains("scrubbing")) { by.firstChild.innerHTML = S.year < 0 ? yearLabel(S.year) : `${S.year}<small>CE</small>`; by.lastChild.textContent = `${eraOf(S.year)[2]} · ${S.fine ? "fine steps" : "slide up for finer steps"}`; }
   const th = el.querySelector(".thumb"); if (th) th.style.left = `${p}%`;
   const fl = el.querySelector(".fill"); if (fl) fl.style.width = (S.view === "realm" || S.view === "place") ? "0" : `${p}%`;
   const tr = $("#track"); if (tr) { tr.setAttribute("aria-valuenow", S.year); tr.setAttribute("aria-valuetext", plainYear(S.year)); }
   dockMarks();
+}
+// Phones: the next or previous chapter's year (before the first chapter, big steps through prehistory).
+function chapStep(d) {
+  const E = S.content.eras, y = S.year;
+  const e = d > 0 ? E.find((x) => x.year > y) : [...E].reverse().find((x) => x.year < y);
+  if (e) return e.year;
+  return d > 0 ? (y >= E[E.length - 1].year ? S.range[1] : y + 1000) : Math.max(S.range[0], y - 1000);
+}
+// Phones: the year sheet. The chapters of the world, a few jumps across the ages, and a field for a typed year.
+const YEAR_JUMPS = [[-3000, "3000 BCE"], [-1000, "1000 BCE"], [1, "1 CE"], [1000, "1000"], [1500, "1500"], [1800, "1800"]];
+function yearsHTML() {
+  const cur = chapterFor(S.year);
+  let h = `<div class="yhead"><form class="yform" data-yform><input type="text" name="y" enterkeyhint="go" autocomplete="off" placeholder="Type a year" aria-label="Type a year, such as 1066 or 500 BCE"><button type="submit" class="pillbtn dark">Go</button><button type="button" class="round" data-act="years-close" aria-label="Close">${I.close}</button></form>`;
+  h += `<div class="chiprow ychips" role="group" aria-label="Jump across the ages">${YEAR_JUMPS.map(([y, t]) => `<button class="fchip" data-ygo="${y}">${t}</button>`).join("")}<button class="fchip" data-ygo="${S.range[1]}">Today</button></div>`;
+  h += `<button class="pillbtn yplay" data-act="years-play">${I.play}Play through time</button></div>`;
+  h += `<h3 class="sec">${S.content.eras.length} chapters of the world</h3><div class="yrs">${S.content.eras.map((e) => `<button class="yr${e === cur ? " on" : ""}" data-ygo="${e.year}"${e === cur ? ' aria-current="true"' : ""}><b>${esc(shortYear(e.year))}</b><span>${esc(e.title)}</span></button>`).join("")}</div>`;
+  return h;
+}
+function openYears() {
+  stopPlay(); S.yearSheet = true; renderCol(true);
+  requestAnimationFrame(() => $("#col .yr.on")?.scrollIntoView({ block: "start" }));
+}
+function closeYears() { S.yearSheet = false; renderCol(true); }
+function parseYear(str) { // "1066", "500 BCE", "-500", "44 BC", "AD 800"
+  const m = String(str).trim().replace(/,/g, "").match(/^(?:ad\s*)?(-?\d{1,5})\s*(bce|bc|ce|ad)?$/i);
+  if (!m) return null;
+  const n = +m[1];
+  return /^b/i.test(m[2] || "") ? -Math.abs(n) : n;
 }
 const yearStep = (y) => (y >= 1800 ? 1 : y >= 1000 ? 5 : y >= 0 ? 10 : y >= -3000 ? 50 : 250);
 function setupDock() {
@@ -3784,7 +3826,9 @@ function setupDock() {
   });
   el.addEventListener("click", async (ev) => {
     const b = ev.target.closest("button"); if (!b) return;
-    if (b.id === "play") return togglePlay();
+    if (b.id === "play") { togglePlay(); if (phone() && dockMode() === "time") { $("#dock").dataset.h = ""; renderDock(); } return; }
+    if (b.dataset.chstep) { stopPlay(); return go(chapStep(+b.dataset.chstep)); }
+    if (b.dataset.act === "years") return openYears();
     if (b.dataset.step) { stopPlay(); return go(S.year + +b.dataset.step * yearStep(S.year)); }
     if (b.dataset.act === "compare") { S.compare = !S.compare; if (S.compare) { if (S.win) renderChart(); updateChartCursor(); } syncChrome(); return renderDock(); }
     if (b.dataset.act === "world-in") { const y = +b.dataset.year; return leaveToWorld(y); }
@@ -3891,7 +3935,7 @@ function setupSearch() {
 // ---------------------------------------------------------------- UI wiring
 const homeT = () => S.homeT || d3.zoomIdentity; // the home view: the whole world on desktop, the world filling the screen on phones
 const wholeWorld = () => { if (S.t.k > homeT().k * 1.05) d3.select(canvas).transition().duration(600).call(S.zoom.transform, homeT()); }; // lists show the whole world
-function leaveStories() { stopPlay(); S.tstory = null; if (S.war) exitWar(); if (S.journey) exitJourney(); S.moment = null; S.site = null; hidePop(); }
+function leaveStories() { S.yearSheet = false; stopPlay(); S.tstory = null; if (S.war) exitWar(); if (S.journey) exitJourney(); S.moment = null; S.site = null; hidePop(); }
 async function goToday() {
   leaveStories(); S.from = null; S.sel = null; S.place = null; S.view = "today"; S.ghost = null;
   if (S.year !== HOME_YEAR) await go(HOME_YEAR);
@@ -3958,8 +4002,12 @@ function setupUI() {
   $("#compare").addEventListener("click", (ev) => { if (ev.target.closest("[data-act=compare]")) { S.compare = false; syncChrome(); renderDock(); } });
 
   const onStoryClick = async (ev) => { // clicks inside the card, the side card and the map popover
+    const yg = ev.target.closest("[data-ygo]");
+    if (yg) { stopPlay(); S.ysScroll = !yg.classList.contains("yr"); return go(+yg.dataset.ygo); }
     const act = ev.target.closest("[data-act]")?.dataset.act;
     if (act) {
+      if (act === "years-close") return closeYears();
+      if (act === "years-play") { closeYears(); return togglePlay(); }
       if (act === "back") return backFromStory();
       if (act === "king-close") { S.jKing = null; return renderCol(true); }
       if (act === "today") return goToday();
@@ -4009,6 +4057,13 @@ function setupUI() {
     if (t.matches("svg.chart-s")) { const r = t.getBoundingClientRect(); stopPlay(); go(+d.x0 + ((ev.clientX - r.left) / r.width) * (+d.x1 - +d.x0)); }
   };
   for (const id of ["#col", "#side", "#pop"]) $(id).addEventListener("click", onStoryClick);
+  $("#col").addEventListener("submit", (ev) => {
+    if (!ev.target.matches("[data-yform]")) return;
+    ev.preventDefault();
+    const y = parseYear(ev.target.elements.y.value);
+    if (y == null) return toast("Type a year, such as 1066 or 500 BCE.");
+    ev.target.elements.y.blur(); stopPlay(); S.ysScroll = true; go(y);
+  });
   $("#col").addEventListener("change", (ev) => { if (ev.target.id === "ghostToggle") { S.showGhost = ev.target.checked; draw(); } });
   const hotFromRow = (ev) => { // pointing at a list row picks out its pin on the map and its span on the time bar
     if (!listOnMap()) return;
