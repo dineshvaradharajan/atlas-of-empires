@@ -1,0 +1,53 @@
+{
+  "war": "spanish-american-war",
+  "hook": "Cubans were fighting for freedom from Spain, Americans were outraged by Spain's harsh war, and when the USS Maine blew up in Havana, the United States went to war.",
+  "sides": [
+    {
+      "strength": "c. 275,000",
+      "strengthWhat": "army strength in 1898",
+      "who": "The United States, fighting alongside Cuban rebels of the Liberation Army and Filipino revolutionaries under Emilio Aguinaldo",
+      "leaders": ["William McKinley", "George Dewey", "Theodore Roosevelt"]
+    },
+    {
+      "strength": "c. 260,000–340,000",
+      "strengthWhat": "colonial army in 1898",
+      "who": "The Kingdom of Spain, with its garrisons in Cuba, Puerto Rico, the Philippines and Guam",
+      "leaders": ["Práxedes Mateo Sagasta", "Pascual Cervera", "Patricio Montojo"]
+    }
+  ],
+  "winner": 0,
+  "status": "ended",
+  "result": "US victory",
+  "resultLine": "A ceasefire took effect on 12 August 1898, and in the Treaty of Paris of 10 December Spain gave up Cuba and handed Puerto Rico, Guam and the Philippines to the United States.",
+  "strategies": [
+    {
+      "side": 0,
+      "name": "Dewey's strike at Manila Bay",
+      "text": "Ready in Hong Kong before war began, Dewey's squadron steamed into Manila Bay and destroyed the Spanish fleet on 1 May. In one morning Spain lost its navy in Asia.",
+      "chapter": "manila-bay"
+    },
+    {
+      "side": 0,
+      "name": "Blockade of Cuba",
+      "text": "The US Navy blockaded Cuba from April and bottled Admiral Cervera's squadron up in Santiago. When it tried to break out on 3 July it was destroyed, and Santiago surrendered two weeks later.",
+      "chapter": "santiago-sea"
+    },
+    {
+      "side": 0,
+      "name": "Three years of Cuban rebellion",
+      "text": "Cuban rebels had fought Spain since 1895, tying down a huge Spanish army. Disease and the guerrilla war had already worn it down before the first American soldier landed.",
+      "chapter": "maine-and-blockade"
+    }
+  ],
+  "impact": [
+    "The United States became a colonial power, ruling Puerto Rico, Guam and the Philippines.",
+    "Cuba became independent in 1902, but under the Platt Amendment it lived as an American protectorate.",
+    "Filipinos who wanted independence fought their new American rulers in the Philippine–American War from 1899.",
+    "In Spain, the loss of the last great colonies set off a soul-searching known as the Generation of '98."
+  ],
+  "sources": [
+    { "title": "Office of the Historian: The Spanish-American War, 1898", "url": "https://history.state.gov/milestones/1866-1898/spanish-american-war" },
+    { "title": "US Army Heritage and Education Center: The Spanish-American War, Manifest Destiny Goes Abroad", "url": "https://www.armyheritage.org/soldier-stories-information/the-spanish-american-war-manifest-destiny-goes-abroad/" },
+    { "title": "Spanish–American War (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Spanish%E2%80%93American_War" }
+  ]
+}

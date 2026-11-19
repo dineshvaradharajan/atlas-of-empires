@@ -1,0 +1,51 @@
+{
+  "war": "first-italo-ethiopian-war",
+  "hook": "Italy claimed a treaty had made Ethiopia its protectorate; Emperor Menelik II said it had not, and Italian troops marched south from Eritrea to enforce the claim.",
+  "sides": [
+    {
+      "strength": "c. 17,700",
+      "strengthWhat": "at the Battle of Adwa",
+      "who": "The Kingdom of Italy, with Eritrean askaris, colonial soldiers recruited in its Red Sea colony",
+      "leaders": ["Francesco Crispi", "Oreste Baratieri"]
+    },
+    {
+      "strength": "c. 73,000–100,000",
+      "strengthWhat": "at the Battle of Adwa",
+      "who": "The Ethiopian Empire, with the armies of nobles from every region, including Ras Mengesha of Tigray and Ras Makonnen of Harar",
+      "leaders": ["Menelik II", "Empress Taytu Betul", "Ras Makonnen"]
+    }
+  ],
+  "winner": 1,
+  "status": "ended",
+  "result": "Ethiopian victory",
+  "resultLine": "Routed at Adwa on 1 March 1896, Italy signed the Treaty of Addis Ababa on 26 October 1896, scrapping the Wuchale treaty and recognising Ethiopia's full independence.",
+  "strategies": [
+    {
+      "side": 1,
+      "name": "Modern rifles and a mass army",
+      "text": "Menelik spent years buying tens of thousands of modern rifles from France, Russia and even Italy. In 1895 he called up the whole empire and marched north with over 100,000 men.",
+      "chapter": "mekelle"
+    },
+    {
+      "side": 1,
+      "name": "Menelik's march to Adwa",
+      "text": "Instead of attacking the strong Italian base at Adigrat, Menelik swung west to Adwa, where the passes were unfortified. Baratieri, short of supplies and fearing for Eritrea, was drawn into attacking him.",
+      "chapter": "manoeuvre"
+    },
+    {
+      "side": 0,
+      "name": "Baratieri's divided night march",
+      "text": "Badly underestimating Menelik's numbers, Baratieri sent his brigades by night along separate mountain tracks with poor maps. At dawn they were miles apart, and the Ethiopians destroyed them one by one.",
+      "chapter": "adwa"
+    }
+  ],
+  "impact": [
+    "Ethiopia stayed independent while almost all of Africa fell to European rule, until Italy invaded again in 1935.",
+    "The defeat caused riots in Italy and brought down Prime Minister Crispi within two weeks.",
+    "Adwa became a lasting symbol of African resistance, celebrated by anti-colonial and Pan-African movements."
+  ],
+  "sources": [
+    { "title": "First Italo-Ethiopian War (Wikipedia)", "url": "https://en.wikipedia.org/wiki/First_Italo-Ethiopian_War" },
+    { "title": "Encyclopedia.com: Addis Ababa, Treaty of", "url": "https://encyclopedia.com/history/encyclopedias-almanacs-transcripts-and-maps/addis-ababa-treaty" }
+  ]
+}

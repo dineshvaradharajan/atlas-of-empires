@@ -1,0 +1,53 @@
+{
+  "war": "thirty-years-war",
+  "hook": "Bohemia's Protestant nobles threw their Catholic king's officials from a window in Prague, and a local revolt grew into a war across Europe.",
+  "sides": [
+    {
+      "strength": "c. 110,000",
+      "strengthWhat": "Imperial army at its peak",
+      "who": "The Austrian Habsburg emperors, Habsburg Spain, Bavaria and the Catholic League, and at times Saxony",
+      "leaders": ["Ferdinand II", "Albrecht von Wallenstein", "Count of Tilly"]
+    },
+    {
+      "strength": "100,000–140,000",
+      "strengthWhat": "Swedish army at its peak",
+      "who": "Bohemian rebels and German Protestant princes, Denmark, Sweden, the Dutch Republic, Transylvania and Catholic France",
+      "leaders": ["Gustavus Adolphus", "Cardinal Richelieu", "Christian IV"]
+    }
+  ],
+  "winner": 1,
+  "status": "ended",
+  "result": "Peace of Westphalia; Habsburgs checked",
+  "resultLine": "The Peace of Westphalia, signed at Münster and Osnabrück on 24 October 1648, gave Sweden and France land and left the emperor far weaker within Germany.",
+  "strategies": [
+    {
+      "side": 0,
+      "name": "War paid for by war",
+      "text": "Short of money, Emperor Ferdinand let Wallenstein raise a huge army that fed itself by ransoming towns and plundering the land. It crushed Denmark but turned German princes of both faiths against the emperor.",
+      "chapter": "denmark"
+    },
+    {
+      "side": 1,
+      "name": "Gustavus's new tactics",
+      "text": "Gustavus Adolphus drew up his men in thin lines, with musketeers firing disciplined volleys, light guns attached to each regiment and aggressive cavalry. At Breitenfeld in 1631 they routed Tilly's deep, slow formations.",
+      "chapter": "breitenfeld"
+    },
+    {
+      "side": 1,
+      "name": "French money, then French armies",
+      "text": "Cardinal Richelieu paid Sweden to fight from 1631 and hired Bernard of Saxe-Weimar's army, which took the Rhine fortress of Breisach. From 1635 France fought Spain openly, wearing the Habsburgs down.",
+      "chapter": "breisach"
+    }
+  ],
+  "impact": [
+    "Germany lost perhaps a quarter to a third of its people, and took about a century to recover.",
+    "German princes won the right to their own foreign policies, and the emperor's power faded.",
+    "Calvinism was recognised alongside Catholicism and Lutheranism, ending the religious wars within the Empire.",
+    "The Dutch Republic and Switzerland were accepted as sovereign states outside the Empire."
+  ],
+  "sources": [
+    { "title": "Library of Congress Country Studies, Germany: The Peace of Westphalia", "url": "https://countrystudies.us/germany/18.htm" },
+    { "title": "Thirty Years' War (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Thirty_Years%27_War" },
+    { "title": "Battle of Breitenfeld (1631) (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Battle_of_Breitenfeld_(1631)" }
+  ]
+}

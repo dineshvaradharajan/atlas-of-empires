@@ -1,0 +1,82 @@
+{
+  "war": "russian-invasion-of-ukraine",
+  "hook": "Russia seized Crimea in 2014 and backed rebels in Donbas; in February 2022 it launched a full-scale invasion to bring Ukraine to heel.",
+  "sides": [
+    {
+      "strength": "c. 880,000",
+      "strengthWhat": "under arms, early 2025",
+      "who": "Ukraine's armed forces and volunteers, armed and funded by the United States, European countries and other partners",
+      "leaders": [
+        "Volodymyr Zelensky",
+        "Valerii Zaluzhnyi",
+        "Oleksandr Syrskyi"
+      ]
+    },
+    {
+      "strength": "c. 600,000",
+      "strengthWhat": "in or near Ukraine, early 2025",
+      "who": "Russia's army, with mercenaries such as the Wagner Group, troops from occupied Donbas and, from late 2024, some 11,000–12,000 North Korean soldiers",
+      "leaders": [
+        "Vladimir Putin",
+        "Sergei Shoigu",
+        "Valery Gerasimov"
+      ]
+    }
+  ],
+  "winner": null,
+  "status": "ongoing",
+  "result": "Still being fought",
+  "resultLine": "At the end of 2024 the war was still being fought, with Russia holding roughly a fifth of Ukraine and pressing slow, costly attacks in the east.",
+  "strategies": [
+    {
+      "side": 0,
+      "name": "Holding Kyiv with artillery",
+      "text": "Russia bet on taking Kyiv in days and had no fallback plan. Massed fire from Ukrainian artillery stalled the columns north of the city, and by early April they had pulled back.",
+      "chapter": "kyiv"
+    },
+    {
+      "side": 0,
+      "name": "Striking the supply lines",
+      "text": "With Western long-range weapons, Ukraine hit Russian depots and the bridges over the Dnipro. Cut off from supplies, Russian troops abandoned Kherson's west bank in November 2022.",
+      "chapter": "kherson-2022"
+    },
+    {
+      "side": 1,
+      "name": "Fortified lines and attrition",
+      "text": "Russia built the deepest minefields and trench lines seen in Europe since 1945, which halted Ukraine's 2023 counteroffensive. Its own assaults then gained ground only slowly, at a heavy cost in lives.",
+      "chapter": "counteroffensive-2023"
+    }
+  ],
+  "impact": [
+    "By late 2024 some 6.7 million Ukrainians were refugees abroad, and about 3.7 million more were displaced at home.",
+    "Military dead and wounded ran into the hundreds of thousands, by most estimates, though neither side publishes full figures.",
+    "Finland joined NATO in 2023 and Sweden in 2024, abandoning long traditions of staying out of military alliances.",
+    "Cheap drones and dense minefields reshaped war on land, making large breakthroughs very hard for either side."
+  ],
+  "sources": [
+    {
+      "title": "Council on Foreign Relations, Global Conflict Tracker: War in Ukraine",
+      "url": "https://www.cfr.org/global-conflict-tracker/conflict/conflict-ukraine"
+    },
+    {
+      "title": "Council on Foreign Relations: Comparing the size and capabilities of the Russian and Ukrainian militaries",
+      "url": "https://www.cfr.org/articles/comparing-size-and-capabilities-russian-and-ukrainian-militaries"
+    },
+    {
+      "title": "RUSI: Preliminary Lessons in Conventional Warfighting from Russia's Invasion of Ukraine, February–July 2022",
+      "url": "https://www.rusi.org/explore-our-research/publications/special-resources/preliminary-lessons-conventional-warfighting-russias-invasion-ukraine-february-july-2022"
+    },
+    {
+      "title": "CSIS: Seizing the Initiative in Ukraine, Waging War in a Defense Dominant World",
+      "url": "https://www.csis.org/analysis/seizing-initiative-ukraine-waging-war-defense-dominant-world"
+    },
+    {
+      "title": "Military Times: North Korean troops killed fighting against Ukraine, Pentagon confirms",
+      "url": "https://www.militarytimes.com/flashpoints/ukraine/2024/12/16/north-korean-troops-were-reportedly-killed-fighting-against-ukraine/"
+    },
+    {
+      "title": "UNRIC: Ukraine, over 6 million refugees spread across Europe",
+      "url": "https://unric.org/en/ukraine-over-6-million-refugees-spread-across-europe/"
+    }
+  ]
+}

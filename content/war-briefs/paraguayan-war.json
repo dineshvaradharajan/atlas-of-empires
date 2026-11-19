@@ -1,0 +1,52 @@
+{
+  "war": "paraguayan-war",
+  "hook": "When Brazil marched into Uruguay against Paraguay's ally, Paraguay's president Francisco Solano López struck first, and soon found himself at war with three neighbours at once.",
+  "sides": [
+    {
+      "strength": "c. 26,000",
+      "strengthWhat": "under arms at the start",
+      "who": "The Empire of Brazil, the Argentine Republic and Uruguay under its pro-Brazilian Colorado government, bound by the 1865 Treaty of the Triple Alliance",
+      "leaders": ["Pedro II", "Duke of Caxias", "Bartolomé Mitre"]
+    },
+    {
+      "strength": "c. 30,000–40,000",
+      "strengthWhat": "under arms at the start",
+      "who": "The Republic of Paraguay, which in the end called up almost every man and boy who could carry a gun",
+      "leaders": ["Francisco Solano López", "José E. Díaz"]
+    }
+  ],
+  "winner": 0,
+  "status": "ended",
+  "result": "Triple Alliance victory",
+  "resultLine": "Brazilian troops caught and killed López at Cerro Corá on 1 March 1870; peace treaties with Brazil (1872) and Argentina (1876) followed, and allied troops stayed until 1876.",
+  "strategies": [
+    {
+      "side": 0,
+      "name": "Command of the rivers",
+      "text": "Brazil's victory at Riachuelo in June 1865 gave the allies the Paraná and Paraguay rivers, the only highways into landlocked Paraguay. From then on the allies could move and supply armies while Paraguay was cut off.",
+      "chapter": "corrientes"
+    },
+    {
+      "side": 1,
+      "name": "Fortress Humaitá and the trenches",
+      "text": "Paraguay held the river at the fortress of Humaitá and dug deep lines in the swamps before it. At Curupayty in September 1866 these defences cut down the attacking allies and stalled the war for a year.",
+      "chapter": "tuyuti"
+    },
+    {
+      "side": 0,
+      "name": "Caxias's encirclement of Humaitá",
+      "text": "The Marquess of Caxias marched round Humaitá to cut it off by land, while Brazilian ironclads forced the river past it in February 1868. Starved of supplies, the fortress fell in July 1868.",
+      "chapter": "humaita"
+    }
+  ],
+  "impact": [
+    "Paraguay lost perhaps 60 to 70 percent of its people by one widely cited estimate, though historians still dispute the toll.",
+    "Brazil and Argentina took the disputed lands north of the Apa River, Misiones and part of the Chaco.",
+    "Brazil's army grew into a strong national force, one of the strains that helped bring down the monarchy in 1889."
+  ],
+  "sources": [
+    { "title": "Paraguayan War (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Paraguayan_War" },
+    { "title": "Library of Congress Country Studies: Paraguay, Francisco Solano López", "url": "https://countrystudies.us/paraguay/10.htm" },
+    { "title": "Library of Congress Country Studies: Paraguay, The War of the Triple Alliance", "url": "https://countrystudies.us/paraguay/11.htm" }
+  ]
+}

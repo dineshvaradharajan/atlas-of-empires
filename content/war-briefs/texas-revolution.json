@@ -1,0 +1,51 @@
+{
+  "war": "texas-revolution",
+  "hook": "When Santa Anna tore up Mexico's federal constitution and tightened his grip on Texas, its American settlers and many Tejanos took up arms.",
+  "sides": [
+    {
+      "strength": "c. 2,000",
+      "strengthWhat": "in arms, 1835–36",
+      "who": "Anglo-American settlers, Tejano federalists and volunteers from the United States, who declared the Republic of Texas in March 1836",
+      "leaders": ["Sam Houston", "William B. Travis", "James Bowie"]
+    },
+    {
+      "strength": "c. 6,500",
+      "strengthWhat": "in arms, 1835–36",
+      "who": "Mexico's centralist government under President Santa Anna, its garrisons in Texas and the army he marched north in 1836",
+      "leaders": ["Antonio López de Santa Anna", "José de Urrea", "Martín Perfecto de Cos"]
+    }
+  ],
+  "winner": 0,
+  "status": "ended",
+  "result": "Texian victory; independence",
+  "resultLine": "Houston routed Santa Anna at San Jacinto on 21 April 1836; the captured president signed the Treaties of Velasco, but Mexico refused to recognise Texan independence.",
+  "strategies": [
+    {
+      "side": 1,
+      "name": "No quarter",
+      "text": "Santa Anna treated foreign volunteers as pirates and took few prisoners. Nearly all the Alamo's defenders died, and about 350 men who had surrendered were shot at Goliad.",
+      "chapter": "the-alamo"
+    },
+    {
+      "side": 0,
+      "name": "Houston's retreat",
+      "text": "Houston fell back east with civilians fleeing alongside, drilling his small army while critics fumed. Captured couriers finally showed him where Santa Anna was, with only part of his divided army.",
+      "chapter": "runaway-scrape"
+    },
+    {
+      "side": 0,
+      "name": "Surprise at San Jacinto",
+      "text": "About 900 Texians charged the Mexican camp during the afternoon rest and overran it in some eighteen minutes. About 630 Mexicans were killed and 730 captured; nine Texians died.",
+      "chapter": "san-jacinto"
+    }
+  ],
+  "impact": [
+    "Texas lived as an independent republic for nearly ten years, until the United States annexed it in 1845.",
+    "Annexation, and a dispute over the new state's border, led directly to the Mexican–American War of 1846–48.",
+    "Through that war, Texas and much of today's American Southwest passed from Mexico to the United States."
+  ],
+  "sources": [
+    { "title": "Handbook of Texas (TSHA): Texas Revolution", "url": "https://www.tshaonline.org/handbook/entries/texas-revolution" },
+    { "title": "Texas Revolution (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Texas_Revolution" }
+  ]
+}

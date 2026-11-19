@@ -1,0 +1,58 @@
+{
+  "war": "arab-israeli-war-1948",
+  "hook": "As British rule in Palestine ended, Jews and Palestinian Arabs fought over a UN plan to divide the land, and neighbouring Arab states sent in their armies.",
+  "sides": [
+    {
+      "strength": "c. 115,000",
+      "strengthWhat": "at its peak, early 1949",
+      "who": "The Jewish community of Palestine, whose Haganah and other militias became the Israel Defense Forces after independence in May 1948",
+      "leaders": ["David Ben-Gurion", "Yigael Yadin", "Yigal Allon"]
+    },
+    {
+      "who": "Palestinian Arab fighters, including the Army of the Holy War and local village militias, with the volunteer Arab Liberation Army",
+      "leaders": ["Abd al-Qadir al-Husayni", "Amin al-Husseini", "Fawzi al-Qawuqji"]
+    },
+    {
+      "strength": "c. 50,000–65,000",
+      "strengthWhat": "at its peak, early 1949",
+      "who": "The armies of Egypt, Transjordan, Iraq, Syria and Lebanon, with a Saudi contingent",
+      "leaders": ["King Abdullah I", "John Bagot Glubb", "King Farouk"]
+    }
+  ],
+  "winner": 0,
+  "status": "ended",
+  "result": "Israeli victory; armistice",
+  "resultLine": "Israel signed armistice agreements with Egypt, Lebanon, Transjordan and Syria between February and July 1949, leaving it holding about 78 percent of former Mandatory Palestine.",
+  "strategies": [
+    {
+      "side": 0,
+      "name": "Plan Dalet",
+      "text": "From April 1948 the Haganah moved to take control of the land allotted to the Jewish state and of Jewish settlements and roads beyond it. Arab towns and villages were captured, and many inhabitants fled or were expelled.",
+      "chapter": "plan-dalet"
+    },
+    {
+      "side": 0,
+      "name": "Rearming during the truces",
+      "text": "Arms bought abroad, above all from Czechoslovakia, and steady call-ups during the UN truces let Israel's forces grow from about 30,000 to over 100,000 and take the offensive.",
+      "chapter": "ten-days"
+    },
+    {
+      "side": 2,
+      "name": "Separate fronts, separate aims",
+      "text": "The Arab armies entered on separate fronts without a joint command. Transjordan's Arab Legion kept mostly to Jerusalem and the areas meant for the Arab state, and Israel could fight its enemies one at a time.",
+      "chapter": "invasion"
+    }
+  ],
+  "impact": [
+    "Israelis remember the war as their War of Independence, which secured the new state.",
+    "For Palestinians it is the Nakba, the catastrophe: about 700,000–750,000 fled or were expelled and were not allowed to return.",
+    "Transjordan held the West Bank and East Jerusalem and Egypt held Gaza, along lines that lasted until 1967.",
+    "In the years after the war, hundreds of thousands of Jews left or were driven from Arab countries, many settling in Israel."
+  ],
+  "sources": [
+    { "title": "Office of the Historian: The Arab-Israeli War of 1948", "url": "https://history.state.gov/milestones/1945-1952/arab-israeli-war" },
+    { "title": "1948 Arab–Israeli War (Wikipedia)", "url": "https://en.wikipedia.org/wiki/1948_Arab%E2%80%93Israeli_War" },
+    { "title": "1948 Palestinian expulsion and flight (Wikipedia)", "url": "https://en.wikipedia.org/wiki/1948_Palestinian_expulsion_and_flight" },
+    { "title": "Plan Dalet (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Plan_Dalet" }
+  ]
+}

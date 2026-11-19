@@ -1,0 +1,53 @@
+{
+  "war": "mexican-american-war",
+  "hook": "After the United States annexed Texas, a quarrel over its border and President Polk's wish for California and New Mexico brought war with Mexico.",
+  "sides": [
+    {
+      "strength": "c. 79,000",
+      "strengthWhat": "in arms over the war",
+      "who": "The United States regular army, state volunteers and navy, with American settlers of the Bear Flag revolt in California",
+      "leaders": ["James K. Polk", "Zachary Taylor", "Winfield Scott"]
+    },
+    {
+      "strength": "c. 82,000",
+      "strengthWhat": "in arms over the war",
+      "who": "The Mexican Republic's army and national guard, though only 7 of its 19 states sent men, arms or money",
+      "leaders": ["Antonio López de Santa Anna", "Mariano Arista", "Pedro de Ampudia"]
+    }
+  ],
+  "winner": 0,
+  "status": "ended",
+  "result": "US victory",
+  "resultLine": "Scott's army took Mexico City in September 1847, and the Treaty of Guadalupe Hidalgo, signed on 2 February 1848, handed Mexico's northern lands to the United States.",
+  "strategies": [
+    {
+      "side": 0,
+      "name": "Flying artillery",
+      "text": "At Palo Alto in May 1846, American gunners fired their light cannon, galloped to a new spot and fired again. They outgunned the Mexican artillery and broke up cavalry charges.",
+      "chapter": "rio-grande"
+    },
+    {
+      "side": 0,
+      "name": "Scott's landing at Veracruz",
+      "text": "Striking at the heart of Mexico, Scott landed his army on the beach near Veracruz in March 1847 without losing a man, took the port after twenty days and marched inland on the capital.",
+      "chapter": "veracruz"
+    },
+    {
+      "side": 1,
+      "name": "A nation divided",
+      "text": "Mexico changed presidents four times in 1846, liberals and conservatives fought each other, and conservatives revolted in early 1847 against seizing Church property to pay for the war.",
+      "chapter": "buena-vista"
+    }
+  ],
+  "impact": [
+    "Mexico lost about 55 percent of its territory, some 525,000 square miles, for $15 million.",
+    "The United States now reached the Pacific, taking in California, Nevada, Utah and parts of several future states.",
+    "The fight over slavery in the new lands, begun with the Wilmot Proviso, deepened the split that led to civil war."
+  ],
+  "sources": [
+    { "title": "Office of the Historian: The Annexation of Texas, the Mexican-American War, and the Treaty of Guadalupe-Hidalgo, 1845–1848", "url": "https://history.state.gov/milestones/1830-1860/texas-annexation" },
+    { "title": "Mexican–American War (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Mexican%E2%80%93American_War" },
+    { "title": "American Battlefield Trust: Palo Alto", "url": "https://www.battlefields.org/learn/battles/palo-alto" },
+    { "title": "Siege of Veracruz (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Siege_of_Veracruz" }
+  ]
+}

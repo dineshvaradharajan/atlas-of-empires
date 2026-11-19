@@ -1,0 +1,59 @@
+{
+  "war": "seven-years-war",
+  "hook": "Austria wanted back the rich province of Silesia that Prussia had seized, while Britain and France fought over who would rule North America and India.",
+  "sides": [
+    {
+      "strength": "c. 925,000",
+      "strengthWhat": "served over the war",
+      "who": "Great Britain and its colonies and East India Company, Prussia, Hanover and other German allies, and from 1762 Portugal",
+      "leaders": ["Frederick the Great", "William Pitt the Elder", "Robert Clive"]
+    },
+    {
+      "strength": "c. 1.7 million",
+      "strengthWhat": "served over the war",
+      "who": "France, Austria and most of the Holy Roman Empire, Russia until 1762, Sweden, Saxony and from 1762 Spain",
+      "leaders": ["Maria Theresa", "Louis XV", "Empress Elizabeth"]
+    },
+    {
+      "who": "The Nawab of Bengal, who fought the East India Company with some French help",
+      "leaders": ["Siraj ud-Daulah"]
+    }
+  ],
+  "winner": 0,
+  "status": "ended",
+  "result": "British and Prussian victory",
+  "resultLine": "The Treaty of Paris on 10 February 1763 ended the war overseas, and the Treaty of Hubertusburg on 15 February left Silesia with Prussia.",
+  "strategies": [
+    {
+      "side": 0,
+      "name": "Pitt's dual strategy",
+      "text": "William Pitt paid Prussia and other allies to tie down France's armies in Europe, while the Royal Navy carried British troops to seize French colonies, from Louisbourg and Quebec to Pondicherry.",
+      "chapter": "quebec"
+    },
+    {
+      "side": 0,
+      "name": "Frederick's oblique attack",
+      "text": "At Leuthen in December 1757, Frederick hid his march behind low hills and struck the end of the Austrian line with most of his army. A force far smaller than the enemy's won his greatest victory.",
+      "chapter": "rossbach-leuthen"
+    },
+    {
+      "side": 0,
+      "name": "Bribery at Plassey",
+      "text": "Robert Clive secretly promised Mir Jafar, the Nawab's commander, the throne of Bengal. At Plassey in 1757 much of the Nawab's army held back, and Clive's 3,000 men won.",
+      "chapter": "bengal"
+    }
+  ],
+  "impact": [
+    "France lost Canada and all its land east of the Mississippi to Britain, and gave Louisiana to Spain.",
+    "Britain became the leading power in India, starting with East India Company rule in Bengal.",
+    "Prussia kept Silesia and was accepted as a great power, a rival to Austria in Germany.",
+    "Britain's huge war debts led it to tax its American colonists, feeding the quarrel that became the American Revolution."
+  ],
+  "sources": [
+    { "title": "Office of the Historian (US State Dept.): The French and Indian War/Seven Years' War, 1754–63", "url": "https://history.state.gov/milestones/1750-1775/french-indian-war" },
+    { "title": "Seven Years' War (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Seven_Years%27_War" },
+    { "title": "Battle of Leuthen (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Battle_of_Leuthen" },
+    { "title": "Battle of Plassey (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Battle_of_Plassey" },
+    { "title": "Treaty of Paris (1763) (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Treaty_of_Paris_(1763)" }
+  ]
+}

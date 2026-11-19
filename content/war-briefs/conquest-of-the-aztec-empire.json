@@ -1,0 +1,50 @@
+{
+  "war": "conquest-of-the-aztec-empire",
+  "hook": "Hernán Cortés sailed from Cuba against orders with a few hundred men, hunting the gold of an empire whose subject peoples were tired of paying it tribute.",
+  "sides": [
+    {
+      "strength": "50,000–200,000",
+      "strengthWhat": "at the siege, 1521",
+      "who": "About 900–1,300 Spaniards with far larger armies from Tlaxcala, Texcoco, Chalco, Huexotzinco and other Indigenous city-states",
+      "leaders": ["Hernán Cortés", "Pedro de Alvarado", "Ixtlilxóchitl II"]
+    },
+    {
+      "who": "The Mexica of Tenochtitlan with Tlatelolco and the cities that stayed loyal to the Triple Alliance",
+      "leaders": ["Moctezuma II", "Cuitláhuac", "Cuauhtémoc"]
+    }
+  ],
+  "winner": 0,
+  "status": "ended",
+  "result": "Spanish and allied victory",
+  "resultLine": "After a siege of nearly three months, Cuauhtémoc was captured fleeing by canoe on 13 August 1521, and the starving, ruined city of Tenochtitlan surrendered.",
+  "strategies": [
+    {
+      "side": 0,
+      "name": "Alliance with Tlaxcala",
+      "text": "After hard fighting, Cortés allied with Tlaxcala, the Aztecs' unconquered enemy, and later won over Texcoco and the lakeside towns. Indigenous allies supplied most of the soldiers, porters and food.",
+      "chapter": "tlaxcala"
+    },
+    {
+      "side": 1,
+      "name": "Rising and the broken causeways",
+      "text": "After the massacre at the festival, the Mexica besieged the Spaniards in their palace and cut the bridges on the causeways. On the night of the escape, hundreds of Spaniards and thousands of allies died.",
+      "chapter": "noche-triste"
+    },
+    {
+      "side": 0,
+      "name": "Brigantines and blockade",
+      "text": "Thirteen gunboats built for the lake swept away Aztec canoes, while armies on the causeways cut the aqueduct and food supply. The island city was starved and taken district by district.",
+      "chapter": "siege"
+    }
+  ],
+  "impact": [
+    "Spain built Mexico City on the ruins of Tenochtitlan and made it the capital of New Spain.",
+    "Smallpox, brought by the invaders in 1520, killed perhaps 5 to 8 million people in Mexico.",
+    "Mexico's population did not recover to its pre-conquest size until the 20th century."
+  ],
+  "sources": [
+    { "title": "Acuña-Soto et al., Megadrought and Megadeath in 16th Century Mexico (Emerging Infectious Diseases, CDC)", "url": "https://wwwnc.cdc.gov/eid/article/8/4/01-0175_article" },
+    { "title": "Spanish conquest of the Aztec Empire (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Spanish_conquest_of_the_Aztec_Empire" },
+    { "title": "Fall of Tenochtitlan (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Fall_of_Tenochtitlan" }
+  ]
+}

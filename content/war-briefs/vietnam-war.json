@@ -1,0 +1,70 @@
+{
+  "war": "vietnam-war",
+  "hook": "Vietnam was split in two in 1954; the communist North set out to unite it, and America stepped in to stop the South from falling.",
+  "sides": [
+    {
+      "strength": "c. 860,000",
+      "strengthWhat": "at the peak, late 1960s",
+      "who": "North Vietnam and the Viet Cong guerrillas in the South, with the Pathet Lao and Khmer Rouge, armed by China and the Soviet Union",
+      "leaders": [
+        "Ho Chi Minh",
+        "Le Duan",
+        "Vo Nguyen Giap"
+      ]
+    },
+    {
+      "strength": "c. 1.4 million",
+      "strengthWhat": "at the peak, late 1960s",
+      "who": "South Vietnam and the United States, with South Korea, Australia, New Zealand, Thailand, the Philippines, royal Laos and, from 1970, Cambodia",
+      "leaders": [
+        "Nguyen Van Thieu",
+        "Lyndon B. Johnson",
+        "Richard Nixon"
+      ]
+    }
+  ],
+  "winner": 0,
+  "status": "ended",
+  "result": "North Vietnamese victory",
+  "resultLine": "US forces left after the Paris Peace Accords of January 1973; on 30 April 1975 North Vietnamese tanks smashed into Saigon's presidential palace and South Vietnam surrendered.",
+  "strategies": [
+    {
+      "side": 0,
+      "name": "The Ho Chi Minh Trail",
+      "text": "A web of jungle tracks through Laos and Cambodia carried men and supplies south year after year. American bombing and raids into both countries never managed to cut it for long.",
+      "chapter": "cambodia-laos"
+    },
+    {
+      "side": 1,
+      "name": "Attrition and body counts",
+      "text": "General Westmoreland used helicopters and firepower to hunt down enemy units, measuring success by the number killed. The North kept sending replacements, and the body count proved a poor guide to winning.",
+      "chapter": "ia-drang"
+    },
+    {
+      "side": 0,
+      "name": "The Tet Offensive",
+      "text": "At the lunar new year of 1968, communist forces struck towns and cities across the South at once. They were beaten back with heavy losses, but the shock turned American opinion against the war.",
+      "chapter": "tet"
+    }
+  ],
+  "impact": [
+    "Vietnam was reunified under communist rule in 1976, and communists also took power in Laos and Cambodia.",
+    "In Cambodia the Khmer Rouge carried out a genocide; Vietnam invaded in 1978, and China attacked Vietnam in return.",
+    "Hundreds of thousands of 'boat people' fled Vietnam by sea, and many died on the way.",
+    "Some 58,000 American servicemen were killed, along with far greater numbers of Vietnamese soldiers and civilians."
+  ],
+  "sources": [
+    {
+      "title": "Office of the Historian, US State Department: Ending the Vietnam War, 1969–1973",
+      "url": "https://history.state.gov/milestones/1969-1976/ending-vietnam"
+    },
+    {
+      "title": "US National Archives: Vietnam War U.S. Military Fatal Casualty Statistics",
+      "url": "https://www.archives.gov/research/military/vietnam-war/casualty-statistics"
+    },
+    {
+      "title": "Vietnam War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Vietnam_War"
+    }
+  ]
+}

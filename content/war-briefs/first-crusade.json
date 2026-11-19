@@ -1,0 +1,64 @@
+{
+  "war": "first-crusade",
+  "hook": "With the Seljuk Turks overrunning Anatolia, the Byzantine emperor asked the West for help, and Pope Urban II called on Christians to march and recover Jerusalem.",
+  "sides": [
+    {
+      "strength": "c. 60,000–100,000",
+      "strengthWhat": "set out, with non-combatants",
+      "who": "Knights, foot soldiers and pilgrims from France, Lorraine, Flanders and Norman Italy, helped at first by the Byzantine Empire",
+      "leaders": [
+        "Godfrey of Bouillon",
+        "Bohemond of Taranto",
+        "Raymond of Toulouse"
+      ]
+    },
+    {
+      "who": "The Seljuk Sultanate of Rum in Anatolia, the Danishmendids, and the rival Turkish emirs of Syria such as Kerbogha of Mosul",
+      "leaders": [
+        "Kilij Arslan I",
+        "Kerbogha"
+      ]
+    },
+    {
+      "who": "The Fatimid Caliphate of Egypt, which had taken Jerusalem from the Turks in 1098",
+      "leaders": [
+        "al-Afdal Shahanshah"
+      ]
+    }
+  ],
+  "winner": 0,
+  "status": "ended",
+  "result": "Crusader victory",
+  "resultLine": "The crusaders stormed Jerusalem on 15 July 1099 and, on 12 August, routed the Fatimid army sent to retake it at Ascalon.",
+  "strategies": [
+    {
+      "side": 0,
+      "name": "The Byzantine alliance",
+      "text": "At Nicaea in 1097 a Byzantine naval attack backed the crusaders' assault, and the city surrendered to the emperor. The alliance gave the princes a safe crossing into Asia and a firm start.",
+      "chapter": "nicaea"
+    },
+    {
+      "side": 0,
+      "name": "Treachery at Antioch",
+      "text": "Antioch's walls were too strong to storm. In June 1098 Bohemond struck a secret deal with Firouz, a commander inside, who let a small party over the wall to open a gate for the army.",
+      "chapter": "antioch"
+    },
+    {
+      "side": 0,
+      "name": "Exploiting Muslim divisions",
+      "text": "Seljuk emirs in Syria were at odds with each other and with Fatimid Egypt, so they never united against the crusaders. Relief armies came one at a time, and each was beaten.",
+      "chapter": "antioch"
+    }
+  ],
+  "impact": [
+    "Four crusader states were founded: Jerusalem, Edessa, Antioch and, in 1109, Tripoli.",
+    "After the victory most crusaders went home, leaving only about 300 knights and 2,000 foot soldiers to hold Palestine.",
+    "Saladin retook Jerusalem in 1187, and the last crusader strongholds on the mainland fell with Acre in 1291."
+  ],
+  "sources": [
+    {
+      "title": "First Crusade (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/First_Crusade"
+    }
+  ]
+}

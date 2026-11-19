@@ -1,0 +1,78 @@
+{
+  "war": "peloponnesian-war",
+  "hook": "Athens had grown rich and powerful on a sea empire of tribute-paying cities, and Sparta, leader of the strongest land alliance in Greece, feared it.",
+  "sides": [
+    {
+      "strength": "c. 29,000",
+      "strengthWhat": "hoplites at the start",
+      "who": "Athens and the Aegean cities of its Delian League, with allies such as Plataea, Corcyra and, early on, the Thracian Odrysians",
+      "leaders": [
+        "Pericles",
+        "Alcibiades",
+        "Nicias"
+      ]
+    },
+    {
+      "strength": "perhaps 60,000",
+      "strengthWhat": "hoplites invading Attica, 431 BCE",
+      "who": "Sparta and its Peloponnesian League, with Corinth, Thebes and Syracuse; from 412 BCE the Persian Empire paid for its fleet",
+      "leaders": [
+        "Archidamus II",
+        "Brasidas",
+        "Lysander"
+      ]
+    }
+  ],
+  "winner": 1,
+  "status": "ended",
+  "result": "Spartan victory",
+  "resultLine": "After losing its last fleet at Aegospotami, a starving Athens surrendered in April 404 BCE, tore down its Long Walls and gave up its navy and empire.",
+  "strategies": [
+    {
+      "side": 0,
+      "name": "Pericles' island strategy",
+      "text": "Pericles refused to fight Sparta's far stronger army on land. Athenians left their farms, sheltered behind the Long Walls and lived on food shipped in by sea while the fleet raided the Peloponnese.",
+      "chapter": "attica"
+    },
+    {
+      "side": 1,
+      "name": "The fort at Decelea",
+      "text": "In 413 BCE Sparta built a permanent fort at Decelea in Attica. Athens lost its fields and silver mines all year round, perhaps 20,000 slaves ran away, and supplies had to come by sea.",
+      "chapter": "decelea"
+    },
+    {
+      "side": 1,
+      "name": "Persian gold and Lysander",
+      "text": "Persian money, above all from Prince Cyrus, let Sparta build and pay a fleet. In 405 BCE Lysander caught the Athenian ships beached at Aegospotami and took almost all of them, cutting Athens' grain route.",
+      "chapter": "aegospotami"
+    }
+  ],
+  "impact": [
+    "Sparta took over Athens' empire and its tribute, but was too small to rule Greece for long.",
+    "Athens restored its democracy in 403 BCE, and rebuilt its Long Walls with Persian help in the 390s BCE.",
+    "Persia won back the Greek cities of Asia Minor and gained a strong say in Greek affairs.",
+    "Thebes rose as a new power, and many exiled soldiers turned to fighting as paid mercenaries."
+  ],
+  "sources": [
+    {
+      "title": "Thucydides 2.13 (Crawley translation, Vancouver Island University)",
+      "url": "https://web.viu.ca/johnstoi/thucydides/thucydides_2.htm"
+    },
+    {
+      "title": "Plutarch, Life of Pericles (LacusCurtius)",
+      "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Lives/Pericles*.html"
+    },
+    {
+      "title": "Livius: Peloponnesian War",
+      "url": "https://www.livius.org/articles/concept/peloponnesian-war/"
+    },
+    {
+      "title": "Peloponnesian War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Peloponnesian_War"
+    },
+    {
+      "title": "Battle of Aegospotami (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Aegospotami"
+    }
+  ]
+}

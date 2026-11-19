@@ -1845,7 +1845,7 @@ function setDetent(d, refly = true) {
 }
 const stepDetent = (n) => setDetent(DETENTS[Math.max(0, Math.min(2, DETENTS.indexOf($("#sheet").dataset.detent || "peek") + n))]);
 function reframe() { // the card changed height: keep what it describes in the part of the map left free
-  if (S.war && story()) return flyTo(boxBounds(S.cine.chapters[S.chap].bbox), 24, 600, hudInset());
+  if (S.war && story()) return flyTo(boxBounds(S.wPart ? warBox() : S.cine.chapters[S.chap].bbox), 24, 600, hudInset());
   if (S.view === "place" && S.place?.ll) return flyCenter(S.place.ll, Math.max(S.t.k, 4), 600);
   if (S.sel && realm(S.sel) && !S.war && !S.journey) return flyTo(boundsOf(activeFeats(S.sel)), 8, 500);
 }
@@ -2375,7 +2375,56 @@ async function openWar(id, idx = 0, chap = null) {
   if (S.legendHTML == null) S.legendHTML = $("#legend").innerHTML;
   if (story()) await openChapter(chap ?? chapterForTime(evTime(w.events[S.wIdx] || {})));
   else await goWarEvent(S.wIdx, true);
+  if (S.war === w && story() && w.brief && idx === 0 && chap == null) await openWarPart("cover"); // from the start: who fought, and how many
 }
+// A war's opening (the sides, their armies and leaders) and its outcome (who won, how, and what it changed),
+// either side of its stages. The map shows the whole war.
+async function openWarPart(part) {
+  const C = S.cine, w = S.war; if (!story() || !w.brief) return;
+  const last = C.chapters.length - 1;
+  await openChapter(part === "cover" ? 0 : last, { t: part === "cover" ? C.chapters[0].t0 : C.chapters[last].t1, fast: true });
+  if (S.war !== w) return;
+  S.wPart = part; S.upNext = null;
+  renderCol(true);
+  requestAnimationFrame(() => flyTo(boxBounds(warBox()), 24, 1100, hudInset()));
+}
+const warBox = () => S.cine.chapters.reduce((b, c) => [Math.min(b[0], c.bbox[0]), Math.min(b[1], c.bbox[1]), Math.max(b[2], c.bbox[2]), Math.max(b[3], c.bbox[3])], [180, 90, -180, -90]); // every stage at once
+const sideName = (sd) => sd.name.replace(/\s*\([^)]*\)\s*$/, ""); // "Mexico", not "Mexico (with …)": the brief's "who" names everyone
+const sideColor = (i) => SIDE_COLORS[i % SIDE_COLORS.length];
+const stratFor = (w, ch) => (ch && w.brief?.strategies?.filter((s) => s.chapter === ch.id)) || [];
+function warCoverHTML(w) {
+  const B = w.brief;
+  let h = B.hook ? `<p class="whook">${esc(B.hook)}</p>` : "";
+  h += `<div class="vs${w.sides.length > 2 ? " many" : ""}">${w.sides.map((sd, i) => {
+    const b = B.sides?.[i] || {};
+    return `${i && w.sides.length === 2 ? `<span class="vsx" aria-hidden="true">vs</span>` : ""}<div class="vside" style="--c:${sideColor(i)}"><b class="vname">${esc(sideName(sd))}</b>${b.strength ? `<span class="vnum">${esc(b.strength)}</span><small class="vwhat">${esc(b.strengthWhat || "")}</small>` : ""}${b.leaders?.length ? `<span class="vlead">Led by ${esc(b.leaders.join(", "))}</span>` : ""}${b.who ? `<span class="vwho">${esc(b.who)}</span>` : ""}</div>`;
+  }).join("")}</div>`;
+  if (w.casualties) h += `<p class="note">${esc(w.casualties)}</p>`;
+  return h;
+}
+function warEndHTML(w) {
+  const B = w.brief, win = B.winner;
+  let h = `<div class="outcome" style="--c:${win != null ? sideColor(win) : "var(--ink-3)"}"><span class="kicker">${B.status === "ongoing" ? "Where it stands" : "The outcome"}</span><b>${esc(B.result || "")}</b>${B.resultLine ? `<p>${esc(B.resultLine)}</p>` : ""}</div>`;
+  if (B.strategies?.length) {
+    h += `<h3 class="sec">${B.status === "ongoing" ? "How it is being fought" : win == null ? "Why neither side could win" : "How it was won"}</h3><ol class="strats">`;
+    for (const s of B.strategies) h += `<li style="--c:${sideColor(s.side ?? 0)}"><span class="st-side">${esc(sideName(w.sides[s.side ?? 0] || { name: "" }))}</span><b>${esc(s.name)}</b><p>${esc(s.text)}</p></li>`;
+    h += `</ol>`;
+  }
+  if (w.casualties) h += `<h3 class="sec">What it cost</h3><p class="prose">${esc(w.casualties)}</p>`;
+  if (B.impact?.length) h += `<h3 class="sec">What it changed</h3><ul class="impact">${B.impact.map((x) => `<li>${esc(x)}</li>`).join("")}</ul>`;
+  return h + srcFold(B.sources || []);
+}
+const STAR = ic('<path d="m12 3.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8-4.3-4.1 5.9-.9z"/>');
+function coverPlateHTML(w) { // phones: the war's opening card, the sides face to face
+  const B = w.brief;
+  const sides = w.sides.map((sd, i) => { const b = B.sides?.[i] || {}; return `<div class="fvside" style="--c:${sideColor(i)}"><b>${esc(sideName(sd))}</b>${b.strength ? `<span>${esc(b.strength)}</span>` : ""}</div>`; }).join("");
+  return `<div class="fplate"><button class="fp-t" data-act="fmore"><span class="kicker">War · ${esc(rangeText(w.span[0], w.span[1]))}</span><b>${esc(w.name)}</b><small>${B.sides?.some((x) => x.strength) ? "Who fought, and how many" : "Who fought"}</small></button><button class="fnext" data-chap="0" aria-label="Begin the story">${I.right}</button></div><div class="fvs${w.sides.length > 2 ? " many" : ""}">${sides}</div>`;
+}
+function endPlateHTML(w) { // phones: who won
+  const B = w.brief, win = B.winner;
+  return `<div class="fplate"><button class="fp-t" data-act="fmore"><span class="kicker">${B.status === "ongoing" ? "Where it stands" : "How it ended"}</span><b class="fwin" style="--c:${win != null ? sideColor(win) : "var(--ink-3)"}">${esc(B.result || "")}</b>${B.resultLine ? `<small>${esc(B.resultLine)}</small>` : ""}</button><button class="fnext" data-act="upnext" aria-label="What comes next">${I.right}</button></div><div class="fupbtns fhow"><button class="pillbtn" data-act="fmore">${STAR}${B.status === "ongoing" ? "How it is being fought" : win == null ? "Why no one won" : "How it was won"}</button></div>`;
+}
+const stratBox = (w, s) => `<aside class="strat" style="--c:${sideColor(s.side ?? 0)}"><span class="kicker">Strategy · ${esc(sideName(w.sides[s.side ?? 0] || { name: "" }))}</span><b>${esc(s.name)}</b><p>${esc(s.text)}</p></aside>`;
 async function goWarEvent(i, fit, keepPlay) {
   const w = S.war; if (!w) return;
   if (story()) {
@@ -2406,7 +2455,7 @@ async function goWarEvent(i, fit, keepPlay) {
 }
 function exitWar() {
   stopPlay();
-  S.war = null; S.warMap = null; S.cine = null; S.view = "world"; S.tstory = null;
+  S.war = null; S.warMap = null; S.cine = null; S.view = "world"; S.tstory = null; S.wPart = null;
   $("#cine").hidden = true; document.body.classList.remove("warmode");
   if (S.legendHTML != null) $("#legend").innerHTML = S.legendHTML;
   S.win = null; updateWindow(); computeFeatured(); draw(); updateChartCursor(); renderCol(true); writeHash();
@@ -2747,6 +2796,7 @@ async function openChapter(n, opts = {}) {
   n = Math.max(0, Math.min(C.chapters.length - 1, n));
   const ch = C.chapters[n];
   if (!opts.keepPlay) { stopPlay(); S.playedChap = null; } // a stage opened by hand starts afresh
+  S.wPart = null;
   S.chap = n; S.wt = opts.t ?? ch.t1;
   S.wIdx = opts.wIdx ?? eventAt(S.wt); // -1 until the chapter's first event
   S.subAt = performance.now(); S.warMap = null;
@@ -2866,18 +2916,23 @@ function storyHTML() { // a war told stage by stage (its chapters)
   markSeen("w", w.id, S.wIdx);
   let h = warHead(w, w.events.length, Math.max(0, S.wIdx + 1));
   if ((S.wTab || "story") === "about") return h + warAboutHTML(w);
+  const last = C.chapters.length - 1;
+  if (S.wPart === "cover") return h + `<div class="kicker grey wpk">Who fought</div>` + warCoverHTML(w) + navRow("", { attr: `data-chap="0"`, small: `Stage 1 · ${chapRange(C.chapters[0], true)}`, title: C.chapters[0].title });
+  if (S.wPart === "end") return h + `<div class="kicker grey wpk">${w.brief.status === "ongoing" ? "So far" : "How it ended"}</div>` + warEndHTML(w) + navRow(`data-chap="${last}"`, null);
   h += kick(`Stage ${S.chap + 1} of ${C.chapters.length} · ${esc(ch.title)}`, 1);
   if (e) {
     h += `<div class="stack"><p class="bigy s">${esc((e.label || shortYear(e.year)).replace(/\s*[–-]\s*/, " to "))}</p><h2 class="ttl s">${esc(e.text)}</h2>${evPlace(e) ? `<div class="placeline">${I.pin}${esc(evPlace(e))}</div>` : ""}</div>`;
     if (e.detail) h += `<p class="prose">${esc(firstSentences(e.detail, 3))}</p>`;
     h += mediaHTML(`war:${w.id}:${S.wIdx}`);
   } else h += `<div class="stack"><p class="bigy s">${esc(chapRange(ch))}</p><h2 class="ttl s">${esc(ch.title)}</h2></div><p class="prose">${esc(ch.text)}</p>`;
+  for (const s of stratFor(w, ch)) h += stratBox(w, s);
   const evs = chapterEvents(ch), k = evs.findIndex((x) => x.i === S.wIdx);
   const nextEv = k >= 0 ? evs[k + 1] : evs.find((x) => x.t > S.wt - 1e-6) || null;
-  const prev = k > 0 ? `data-wev="${evs[k - 1].i}"` : S.chap > 0 ? `data-chap="${S.chap - 1}"` : "";
+  const prev = k > 0 ? `data-wev="${evs[k - 1].i}"` : S.chap > 0 ? `data-chap="${S.chap - 1}"` : w.brief ? `data-wpart="cover"` : "";
   const nc = C.chapters[S.chap + 1];
   const next = nextEv ? { attr: `data-wev="${nextEv.i}"`, small: `Next · ${nextEv.e.label || shortYear(nextEv.e.year)}`, title: nextEv.e.text }
-    : nc ? { attr: `data-chap="${S.chap + 1}"`, small: `Next stage · ${chapRange(nc, true)}`, title: nc.title } : null;
+    : nc ? { attr: `data-chap="${S.chap + 1}"`, small: `Next stage · ${chapRange(nc, true)}`, title: nc.title }
+    : w.brief ? { attr: `data-wpart="end"`, small: "The end", title: w.brief.status === "ongoing" ? "Where it stands" : "How it ended" } : null;
   return h + navRow(prev, next);
 }
 const MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
@@ -3179,14 +3234,18 @@ function frameOf() {
       prev: i > 0 ? `data-tstep="${i - 1}"` : "", next: i < steps.length - 1 ? `data-tstep="${i + 1}"` : `data-war="${esc(w.id)}"`, nextLabel: i < steps.length - 1 ? "Next" : `The whole story of the ${w.name}` };
   }
   if (S.war && story()) {
-    const w = S.war, C = S.cine, ch = C.chapters[S.chap], e = S.wIdx >= 0 ? w.events[S.wIdx] : null;
+    const w = S.war, C = S.cine, ch = C.chapters[S.chap], e = S.wIdx >= 0 ? w.events[S.wIdx] : null, B = w.brief, ex = B ? 1 : 0;
+    const total = C.chapters.length + 2 * ex, last = C.chapters.length - 1;
+    if (S.wPart === "cover") return { key: `w:${w.id}:cover`, name: w.name, total, cur: 0, frac: 1, plate: coverPlateHTML(w), prev: "", next: `data-chap="0"` };
+    if (S.wPart === "end") return { key: `w:${w.id}:end`, name: w.name, total, cur: total - 1, frac: 1, plate: endPlateHTML(w), prev: `data-chap="${last}"`, next: "", end: true, up: nextStory("w", w.id) };
     const evs = chapterEvents(ch), k = evs.findIndex((x) => x.i === S.wIdx);
     const nextEv = k >= 0 ? evs[k + 1] : evs.find((x) => x.t > S.wt - 1e-6) || null, nc = C.chapters[S.chap + 1];
     const [t, l] = e ? splitTitle(e.text) : [ch.title, ""];
-    const next = nextEv ? `data-wev="${nextEv.i}"` : nc ? `data-chap="${S.chap + 1}"` : "";
-    return { key: `w:${w.id}:${S.chap}:${S.wIdx}`, name: w.name, total: C.chapters.length, cur: S.chap, frac: Math.max(0, Math.min(1, ((S.wt ?? ch.t1) - ch.t0) / Math.max(1e-6, ch.t1 - ch.t0))),
-      kick: e ? e.label || shortYear(e.year) : chapRange(ch), title: t, line: l || (e ? evPlace(e) : `Part ${S.chap + 1} of ${C.chapters.length}`),
-      prev: k > 0 ? `data-wev="${evs[k - 1].i}"` : S.chap > 0 ? `data-chap="${S.chap - 1}"` : "", next, end: !next, up: !next && nextStory("w", w.id) };
+    const next = nextEv ? `data-wev="${nextEv.i}"` : nc ? `data-chap="${S.chap + 1}"` : ex ? `data-wpart="end"` : "";
+    return { key: `w:${w.id}:${S.chap}:${S.wIdx}`, name: w.name, total, cur: S.chap + ex, frac: Math.max(0, Math.min(1, ((S.wt ?? ch.t1) - ch.t0) / Math.max(1e-6, ch.t1 - ch.t0))),
+      kick: e ? e.label || shortYear(e.year) : chapRange(ch), title: t, line: l || (e ? evPlace(e) : `Part ${S.chap + 1} of ${C.chapters.length}`), strat: stratFor(w, ch)[0],
+      nextLabel: !nextEv && !nc && ex ? "How it ended" : "",
+      prev: k > 0 ? `data-wev="${evs[k - 1].i}"` : S.chap > 0 ? `data-chap="${S.chap - 1}"` : ex ? `data-wpart="cover"` : "", next, end: !next, up: !next && nextStory("w", w.id) };
   }
   if (S.war) {
     const w = S.war, i = Math.max(0, S.wIdx), e = w.events[i], [t, l] = splitTitle(e.text), next = i < w.events.length - 1 ? `data-wev="${i + 1}"` : "";
@@ -3211,10 +3270,12 @@ function framePlateHTML(f) {
     return `<div class="fplate fup"><div class="fp-t"><span class="kicker">Up next · ${rangeShort(u.a, u.b)}</span><b>${esc(u.name)}</b></div>${count ? `<span class="fcount" role="img" aria-label="Starts in 5 seconds">5</span>` : ""}</div>
       <div class="fupbtns"><button class="pillbtn" data-act="${count ? "up-cancel" : "back"}">${count ? "Not now" : "Back to Stories"}</button><button class="pillbtn dark" data-act="play-next" data-kind="${u.kind}" data-id="${esc(u.id)}">${I.play}Play now</button></div>`;
   }
+  if (f.plate) return f.plate;
   const nx = f.next ? `<button class="fnext" ${f.next} aria-label="${esc(f.nextLabel || "Next")}">${I.right}</button>` : f.end ? `<button class="fnext" data-act="upnext" aria-label="What comes next">${I.right}</button>` : "";
   const wy = Math.floor((S.war ? S.wt ?? S.year : S.year) + 1e-9);
   const extra = `<div class="fextra"><button class="pillbtn" data-act="world-in" data-year="${wy}">${I.globe}The world in ${shortYear(wy)}</button></div>`;
-  return extra + `<div class="fplate"><button class="fp-t" data-act="fmore"><span class="kicker">${esc(f.kick)}</span><b>${esc(f.title)}</b>${f.line ? `<small>${esc(f.line)}</small>` : ""}</button>${nx}</div>`;
+  const st = f.strat ? `<span class="fstrat" style="--c:${sideColor(f.strat.side ?? 0)}">${STAR}Strategy: ${esc(f.strat.name)}</span>` : "";
+  return extra + `<div class="fplate"><button class="fp-t" data-act="fmore">${st}<span class="kicker">${esc(f.kick)}</span><b>${esc(f.title)}</b>${f.line ? `<small>${esc(f.line)}</small>` : ""}</button>${nx}</div>`;
 }
 function syncFramebar(f) {
   const el = $("#framebar");
@@ -3752,7 +3813,9 @@ function setPlayIcon(playing) {
 }
 function stopPlay() {
   if (!S.playing) return;
-  if (phone() && inFrames() && !S.tstory) { const f = frameOf(); if (f.end && (!story() || S.wt >= S.cine.chapters[S.chap].t1 - 1e-4)) { S.upNext = { key: f.key, count: true }; setTimeout(() => renderCol(false), 0); } }
+  if (story() && S.war.brief && !S.wPart && !S.tstory && S.chap === S.cine.chapters.length - 1 && S.wt >= S.cine.chapters[S.chap].t1 - 1e-4) { // the war played to its end: the outcome
+    const w = S.war; setTimeout(() => { if (S.war === w && !S.wPart && S.chap === S.cine.chapters.length - 1) openWarPart("end"); }, 0);
+  } else if (phone() && inFrames() && !S.tstory) { const f = frameOf(); if (f.end && (!story() || S.wt >= S.cine.chapters[S.chap].t1 - 1e-4)) { S.upNext = { key: f.key, count: true }; setTimeout(() => renderCol(false), 0); } }
   const timeline = S.playing > 0;
   clearInterval(S.playing); clearTimeout(S.stepTimer); cancelAnimationFrame(S.cineRaf); clearTimeout(S.chainTimer); S.playing = null; S.playEnd = null; setPlayIcon(false);
   if (S.cinePlay) { S.cinePlay = false; updateHud(); draw(); }
@@ -3772,6 +3835,11 @@ function togglePlay() {
   }
   if (story()) { // the war plays on, stage after stage; once a stage has played to its end, Play carries on with the next (after the last, from the start)
     const C = S.cine, ch = C.chapters[S.chap];
+    if (S.wPart) { // from the opening or the outcome: play from the first stage
+      S.playing = -1; setPlayIcon(true);
+      openChapter(0, { t: C.chapters[0].t0, keepPlay: true }).then(() => { if (S.playing && S.chap === 0) playChapter(true); });
+      return;
+    }
     if (S.playedChap === S.chap && S.wt >= ch.t1 - 1e-4) {
       const nx = S.chap < C.chapters.length - 1 ? S.chap + 1 : 0;
       S.playing = -1; setPlayIcon(true);
@@ -4274,6 +4342,7 @@ function setupUI() {
     if (d.site) return openSite(d.site);
     if (d.wev != null && S.war) { stopPlay(); S.tstory = null; return goWarEvent(+d.wev); }
     if (d.chap != null && story()) { S.tstory = null; return openChapter(+d.chap); }
+    if (d.wpart && story()) { S.tstory = null; return openWarPart(d.wpart); }
     if (d.war) { hidePop(); return S.war?.id === d.war ? (S.tstory = null, renderCol(true)) : openWar(d.war); }
     if (d.journey) { hidePop(); return openJourney(d.journey); }
     if (d.king != null && S.journey) return openKing(+d.king);

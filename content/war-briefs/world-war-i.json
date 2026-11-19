@@ -1,0 +1,55 @@
+{
+  "war": "world-war-i",
+  "hook": "A young Bosnian Serb shot Austria-Hungary's heir in Sarajevo, and within weeks a web of alliances had dragged all of Europe's great powers into war.",
+  "sides": [
+    {
+      "strength": "c. 42 million",
+      "strengthWhat": "mobilised over the war",
+      "who": "France, the British Empire, Russia, Serbia and Belgium, later joined by Japan, Italy, Romania, the United States and others",
+      "leaders": ["Georges Clemenceau", "David Lloyd George", "Ferdinand Foch"]
+    },
+    {
+      "strength": "c. 23–25 million",
+      "strengthWhat": "mobilised over the war",
+      "who": "The German Empire and Austria-Hungary, joined by the Ottoman Empire in 1914 and Bulgaria in 1915",
+      "leaders": ["Wilhelm II", "Paul von Hindenburg", "Erich Ludendorff"]
+    }
+  ],
+  "winner": 0,
+  "status": "ended",
+  "result": "Allied victory",
+  "resultLine": "Bulgaria, the Ottoman Empire and Austria-Hungary gave up one by one, and Germany signed the armistice of 11 November 1918; the Treaty of Versailles followed in 1919.",
+  "strategies": [
+    {
+      "side": 1,
+      "name": "The Schlieffen Plan",
+      "text": "Germany hoped to crush France in about six weeks by swinging through neutral Belgium, then turn on Russia. The plan failed on the Marne and left Germany fighting on two fronts.",
+      "chapter": "sweep"
+    },
+    {
+      "side": 0,
+      "name": "The naval blockade",
+      "text": "Britain's navy cut Germany off from imports by sea for the whole war. Food, fertiliser, oil and metals ran short, and hunger at home helped wear Germany down.",
+      "chapter": null
+    },
+    {
+      "side": 0,
+      "name": "The Hundred Days",
+      "text": "From August 1918 Foch's armies, with fresh American troops, struck again and again along the front, using tanks, aircraft, artillery and infantry together. The worn-out German army was pushed back until it asked for peace.",
+      "chapter": "hundred-days"
+    }
+  ],
+  "impact": [
+    "Four old empires collapsed in the war and its aftermath: the Russian, German, Austro-Hungarian and Ottoman.",
+    "New states rose on their ruins, among them Poland, Czechoslovakia, Yugoslavia, Finland and the Baltic states.",
+    "The League of Nations was founded to keep the peace, but it could not prevent a second world war.",
+    "Germany lost land, was disarmed and had to pay reparations, a grievance that poisoned the peace."
+  ],
+  "sources": [
+    { "title": "World War I (Wikipedia)", "url": "https://en.wikipedia.org/wiki/World_War_I" },
+    { "title": "Allies of World War I (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Allies_of_World_War_I" },
+    { "title": "Central Powers (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Central_Powers" },
+    { "title": "Blockade of Germany, 1914–1919 (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Blockade_of_Germany_(1914%E2%80%931919)" },
+    { "title": "National WWI Museum and Memorial: Hundred Days Offensive", "url": "https://www.theworldwar.org/learn/about-wwi/hundred-days-offensive" }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "war": "war-of-1812",
+  "hook": "Angered by British seizures of its ships and sailors, and by British backing for Indigenous resistance in the West, the United States declared war in 1812.",
+  "sides": [
+    {
+      "strength": "c. 7,000",
+      "strengthWhat": "regular troops at the start",
+      "who": "The United States, with its small regular army, state militias, navy and privateers, and some Indigenous allies such as Cherokee and Choctaw warriors",
+      "leaders": ["James Madison", "Andrew Jackson", "William Henry Harrison"]
+    },
+    {
+      "strength": "c. 5,200",
+      "strengthWhat": "regular troops at the start",
+      "who": "Britain and its colonies of Upper and Lower Canada and the Maritimes, with Canadian militia and Indigenous nations of Tecumseh's confederacy",
+      "leaders": ["Isaac Brock", "Tecumseh", "George Prevost"]
+    }
+  ],
+  "winner": null,
+  "status": "ended",
+  "result": "Stalemate; prewar borders restored",
+  "resultLine": "The Treaty of Ghent, signed on 24 December 1814 and ratified by the US Senate on 17 February 1815, restored the borders as they had been before the war.",
+  "strategies": [
+    {
+      "side": 1,
+      "name": "Brock and Tecumseh's bluff",
+      "text": "At Detroit in August 1812, Tecumseh's warriors circled through the woods to look far more numerous, and Brock warned of a massacre. General Hull surrendered over 2,000 men to a smaller force.",
+      "chapter": "detroit"
+    },
+    {
+      "side": 0,
+      "name": "Command of the lakes",
+      "text": "No army could invade without the Great Lakes. Perry's win on Lake Erie in 1813 let the Americans retake Detroit, and Macdonough's on Lake Champlain in 1814 sent a British invasion back to Canada.",
+      "chapter": "lake-erie-thames"
+    },
+    {
+      "side": 1,
+      "name": "The Royal Navy blockade",
+      "text": "An ever tighter British blockade shut in American shipping, and once Napoleon fell, British troops raided the coast at will, burning Washington in 1814. Yet neither side could win a decisive victory.",
+      "chapter": "washington"
+    }
+  ],
+  "impact": [
+    "Canada stayed British, and Canadians came to remember the war as a successful defence against American invasion.",
+    "Tecumseh's death broke his confederacy, and Britain dropped its plan for a protected Indigenous homeland south of the Great Lakes.",
+    "In August 1814 Andrew Jackson forced the defeated Creeks to give up about 23 million acres of land.",
+    "Jackson's victory at New Orleans made him a national hero and gave Americans a triumphant memory of the war."
+  ],
+  "sources": [
+    { "title": "Office of the Historian: The War of 1812, 1812–1815", "url": "https://history.state.gov/milestones/1801-1829/war-of-1812" },
+    { "title": "War of 1812 (Wikipedia)", "url": "https://en.wikipedia.org/wiki/War_of_1812" },
+    { "title": "Siege of Detroit (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Siege_of_Detroit" },
+    { "title": "National Park Service: The enemy is ours, American freshwater victories turn the tide of war", "url": "https://www.nps.gov/articles/the-enemy-is-ours.htm" },
+    { "title": "American Battlefield Trust: No Good Feelings, Native Americans and the Outcomes of the War of 1812", "url": "https://www.battlefields.org/learn/articles/no-good-feelings-native-americans-and-outcomes-war-1812" }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "war": "hundred-years-war",
+  "hook": "English kings ruled Gascony as vassals of the French crown; when Philip VI seized it in 1337, Edward III claimed the throne of France itself.",
+  "sides": [
+    {
+      "strength": "c. 6,000–9,000",
+      "strengthWhat": "at Agincourt, 1415",
+      "who": "The Kingdom of England with English Gascony, Welsh archers and, from 1419 to 1435, the Duchy of Burgundy",
+      "leaders": [
+        "Edward III",
+        "Edward the Black Prince",
+        "Henry V"
+      ]
+    },
+    {
+      "strength": "c. 12,000–15,000",
+      "strengthWhat": "at Agincourt, 1415",
+      "who": "The Kingdom of France, with its old ally Scotland and, from 1369, the Crown of Castile and its fleet",
+      "leaders": [
+        "Charles V",
+        "Joan of Arc",
+        "Charles VII"
+      ]
+    }
+  ],
+  "winner": 1,
+  "status": "ended",
+  "result": "French victory",
+  "resultLine": "After the French beat the English at Castillon on 17 July 1453, Bordeaux surrendered on 19 October; no peace was signed, but England kept only Calais.",
+  "strategies": [
+    {
+      "side": 0,
+      "name": "Longbows and the chevauchée",
+      "text": "English armies were mostly longbowmen, who shot down charging French knights at Crécy and Agincourt. Between battles, mounted raids called chevauchées burned French towns and farms to ruin the king's revenue.",
+      "chapter": "crecy-calais"
+    },
+    {
+      "side": 1,
+      "name": "Avoiding battle",
+      "text": "Charles V and his constable du Guesclin refused pitched battles. They let English raids pass, picked off foragers and retook the lands lost at Brétigny town by town in the 1370s.",
+      "chapter": "charles-v"
+    },
+    {
+      "side": 1,
+      "name": "Guns and a standing army",
+      "text": "In 1445 Charles VII set up a permanent paid army, and Jean Bureau built a powerful artillery train. Its guns helped retake Normandy and broke Talbot's attack at Castillon in 1453.",
+      "chapter": "gascony"
+    }
+  ],
+  "impact": [
+    "England lost all its lands in France except Calais, which it held until 1558.",
+    "France built one of the first standing armies in Western Europe since Roman times, and gunpowder artillery proved its worth.",
+    "Defeat left the English crown deep in debt, and quarrels among its nobles fed the Wars of the Roses from 1455."
+  ],
+  "sources": [
+    {
+      "title": "Hundred Years' War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Hundred_Years%27_War"
+    },
+    {
+      "title": "Battle of Agincourt (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Agincourt"
+    },
+    {
+      "title": "Battle of Castillon (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Castillon"
+    }
+  ]
+}

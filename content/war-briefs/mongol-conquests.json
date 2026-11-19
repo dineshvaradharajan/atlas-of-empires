@@ -1,0 +1,82 @@
+{
+  "war": "mongol-conquests",
+  "hook": "Temüjin united the feuding tribes of the Mongolian steppe, took the title Genghis Khan in 1206, and turned their horse archers against the rich settled lands around them.",
+  "sides": [
+    {
+      "strength": "c. 95,000",
+      "strengthWhat": "in 1206, nominal strength",
+      "who": "Mongol and Turkic steppe tribes united by Genghis Khan, later joined by conquered peoples and Chinese and Muslim siege engineers",
+      "leaders": [
+        "Genghis Khan",
+        "Subutai",
+        "Hulagu"
+      ]
+    },
+    {
+      "who": "Western Xia, Jin China, Qara Khitai, the Khwarazmian Empire, Georgia, the Rus' principalities, Poland, Hungary and the Abbasid caliphate",
+      "leaders": [
+        "Muhammad II of Khwarazm",
+        "Jalal al-Din",
+        "Béla IV of Hungary"
+      ]
+    },
+    {
+      "who": "The Mamluk sultanate of Egypt and Syria, ruled by former slave-soldiers",
+      "leaders": [
+        "Qutuz",
+        "Baybars"
+      ]
+    }
+  ],
+  "winner": 0,
+  "status": "ended",
+  "result": "Mongol victory; halted 1260",
+  "resultLine": "By 1260 the Mongols ruled from northern China to Russia and Iran, but on 3 September 1260 the Mamluks beat a reduced Mongol army at Ain Jalut and stopped their advance.",
+  "strategies": [
+    {
+      "side": 0,
+      "name": "Speed, horses and the decimal army",
+      "text": "Genghis organised his men in units of ten, a hundred, a thousand and ten thousand. Each rider had several horses, so armies could cover huge distances fast and use feigned retreats to trap enemies.",
+      "chapter": "jebe-subutai"
+    },
+    {
+      "side": 0,
+      "name": "Siege engineers and terror",
+      "text": "The Mongols recruited Chinese and Muslim engineers to build catapults. Cities that resisted were massacred and the news spread on purpose, so many others surrendered without a fight.",
+      "chapter": "khorasan"
+    },
+    {
+      "side": 2,
+      "name": "The ambush at Ain Jalut",
+      "text": "Hulagu had taken most of his army east, leaving one tumen under Kitbuqa. Baybars pretended to flee, drew the Mongols into the hills, and hidden Mamluk troops closed in.",
+      "chapter": "syria"
+    }
+  ],
+  "impact": [
+    "The sack of Baghdad in 1258 ended the Abbasid caliphate after about 500 years.",
+    "Civil war after 1260 split the empire into four khanates: the Golden Horde, the Chagatai Khanate, the Ilkhanate and Yuan China.",
+    "Under Mongol peace, merchants, envoys, goods, technologies and ideas moved more freely across Eurasia than ever before."
+  ],
+  "sources": [
+    {
+      "title": "Timothy May, 'The Chinggis Exchange: the Mongol Empire and Global Impact on Warfare', World History Connected",
+      "url": "https://journals.gmu.edu/whc/article/download/4473/2440?inline=1"
+    },
+    {
+      "title": "Mongol Empire (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Mongol_Empire"
+    },
+    {
+      "title": "Mongol invasions and conquests (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Mongol_invasions_and_conquests"
+    },
+    {
+      "title": "Battle of Ain Jalut (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Ain_Jalut"
+    },
+    {
+      "title": "Siege of Baghdad (1258) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Siege_of_Baghdad_(1258)"
+    }
+  ]
+}

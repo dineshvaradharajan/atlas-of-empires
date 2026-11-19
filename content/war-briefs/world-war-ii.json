@@ -1,0 +1,56 @@
+{
+  "war": "world-war-ii",
+  "hook": "Hitler's Germany invaded Poland, and Britain and France declared war; Japan had been fighting China for two years, and the two wars merged into one.",
+  "sides": [
+    {
+      "who": "Britain and its empire, Poland, the Free French, China, and from 1941 the Soviet Union and the United States",
+      "leaders": ["Winston Churchill", "Franklin D. Roosevelt", "Joseph Stalin"]
+    },
+    {
+      "who": "Nazi Germany, Fascist Italy and Imperial Japan, with Hungary, Romania, Bulgaria, Finland, Croatia and Thailand",
+      "leaders": ["Adolf Hitler", "Benito Mussolini", "Hideki Tojo"]
+    },
+    {
+      "who": "Marshal Pétain's French State, based at Vichy, and the colonies loyal to it, which worked with Germany after France's defeat",
+      "leaders": ["Philippe Pétain", "Pierre Laval", "François Darlan"]
+    }
+  ],
+  "winner": 0,
+  "status": "ended",
+  "result": "Allied victory",
+  "resultLine": "Germany surrendered unconditionally on 8 May 1945; Japan, after two atomic bombs and a Soviet attack, announced its surrender on 15 August and signed it on 2 September.",
+  "strategies": [
+    {
+      "side": 1,
+      "name": "Blitzkrieg through the Ardennes",
+      "text": "In May 1940 German tanks, backed by dive-bombers, drove through the wooded Ardennes, crossed the Meuse at Sedan and raced to the Channel. They trapped the Allied armies in Belgium, and France fell in six weeks.",
+      "chapter": "france"
+    },
+    {
+      "side": 0,
+      "name": "Operation Uranus",
+      "text": "While the Germans fought street by street in Stalingrad, the Red Army struck the weak Romanian armies guarding their flanks in November 1942. The pincers closed, trapping some 250,000–300,000 Axis troops.",
+      "chapter": "stalingrad"
+    },
+    {
+      "side": 0,
+      "name": "Island hopping",
+      "text": "In the Pacific, American forces seized chosen islands for airfields and bypassed strong bases such as Rabaul, leaving them to starve. Each leap brought them closer, until bombers could reach Japan from the Marianas.",
+      "chapter": "pacific"
+    }
+  ],
+  "impact": [
+    "An estimated 60 to 75 million people died, most of them civilians, including some six million Jews murdered in the Holocaust.",
+    "The United States and the Soviet Union emerged as rival superpowers, and the Cold War began.",
+    "The United Nations was founded in 1945 to keep the peace, and German and Japanese leaders were tried for war crimes.",
+    "Weakened European empires soon gave up their colonies across Asia and Africa."
+  ],
+  "sources": [
+    { "title": "World War II (Wikipedia)", "url": "https://en.wikipedia.org/wiki/World_War_II" },
+    { "title": "The National WWII Museum: Research Starters, Worldwide Deaths in World War II", "url": "https://www.nationalww2museum.org/students-teachers/student-resources/research-starters/research-starters-worldwide-deaths-world-war" },
+    { "title": "The National WWII Museum: The Pacific Strategy, 1941–1944", "url": "https://www.nationalww2museum.org/node/1038" },
+    { "title": "Operation Uranus (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Operation_Uranus" },
+    { "title": "Battle of France (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Battle_of_France" },
+    { "title": "Vichy France (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Vichy_France" }
+  ]
+}
