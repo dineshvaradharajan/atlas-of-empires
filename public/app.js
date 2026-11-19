@@ -2373,9 +2373,9 @@ async function openWar(id, idx = 0, chap = null) {
   S.cineK = cineKnots(w, S.cine);
   $("#cine").hidden = false; document.body.classList.add("warmode");
   if (S.legendHTML == null) S.legendHTML = $("#legend").innerHTML;
-  if (story()) await openChapter(chap ?? chapterForTime(evTime(w.events[S.wIdx] || {})));
+  if (story() && w.brief && idx === 0 && chap == null) await openWarPart("cover"); // from the start: who fought, and how many
+  else if (story()) await openChapter(chap ?? chapterForTime(evTime(w.events[S.wIdx] || {})));
   else await goWarEvent(S.wIdx, true);
-  if (S.war === w && story() && w.brief && idx === 0 && chap == null) await openWarPart("cover"); // from the start: who fought, and how many
 }
 // A war's opening (the sides, their armies and leaders) and its outcome (who won, how, and what it changed),
 // either side of its stages. The map shows the whole war.
@@ -2555,9 +2555,17 @@ function alignTo(pts, prev, closed) { // match point order to the previous keyfr
   if (!prev) return pts;
   if (!closed) return d2(pts[0], prev[0]) + d2(pts[pts.length - 1], prev[prev.length - 1]) > d2(pts[0], prev[prev.length - 1]) + d2(pts[pts.length - 1], prev[0]) ? pts.slice().reverse() : pts;
   let r = Math.sign(sArea(pts)) !== Math.sign(sArea(prev)) ? pts.slice().reverse() : pts;
+  // the rotation of r closest to prev; flat arrays (r written twice, so no modulo) and each try stops once it is already worse
+  const n = r.length, m = Math.min(n, prev.length), R = new Float64Array(4 * n), Q = new Float64Array(2 * m);
+  for (let j = 0; j < n; j++) { R[2 * j] = R[2 * (j + n)] = r[j][0]; R[2 * j + 1] = R[2 * (j + n) + 1] = r[j][1]; }
+  for (let j = 0; j < m; j++) { Q[2 * j] = prev[j][0]; Q[2 * j + 1] = prev[j][1]; }
   let best = 0, bestD = Infinity;
-  for (let o = 0; o < r.length; o++) { let s = 0; for (let j = 0; j < r.length; j++) s += d2(r[(j + o) % r.length], prev[j]); if (s < bestD) { bestD = s; best = o; } }
-  return r.map((_, j) => r[(j + best) % r.length]);
+  for (let o = 0; o < n; o++) {
+    let s = 0;
+    for (let j = 0, a = 2 * o; j < 2 * m && s < bestD; j += 2, a += 2) { const dx = R[a] - Q[j], dy = R[a + 1] - Q[j + 1]; s += dx * dx + dy * dy; }
+    if (s < bestD) { bestD = s; best = o; }
+  }
+  return r.map((_, j) => r[(j + best) % n]);
 }
 function smoothLL(pts) { // Catmull-Rom through the path's points
   if (pts.length < 3) return pts.map((p) => [p[0], p[1]]);
@@ -2575,7 +2583,8 @@ function smoothLL(pts) { // Catmull-Rom through the path's points
 async function loadCinema(w) {
   if (!w.cinema) return null;
   if (w._cine) return w._cine;
-  const c = await fetchJSON(`data/cinema/${encodeURIComponent(w.id)}.json`);
+  const c = await prefetchCinema(w);
+  if (w._cine) return w._cine; // another caller prepared it while this one waited
   const prep = (x, closed) => {
     let prev = null;
     x.keys = (x.keys || []).map((k) => { const pts = alignTo(resample(k.line || k.coords, closed ? 192 : 128, closed), prev, closed); prev = pts; return { t: fracDate(k.date), pts }; });
@@ -2589,6 +2598,12 @@ async function loadCinema(w) {
   (c.chapters = c.chapters || []).forEach((ch) => { ch.t0 = fracDate(ch.start); ch.t1 = fracDate(ch.end); ch.arrowSet = new Set(ch.arrows || []); });
   return (w._cine = c);
 }
+// start downloading a war's stages as soon as a finger or pointer lands on its link, so they are there by the click
+function prefetchCinema(w) {
+  if (!w?.cinema) return Promise.resolve(null);
+  return (w._cineP ||= fetchJSON(`data/cinema/${encodeURIComponent(w.id)}.json`).catch((e) => { w._cineP = null; throw e; }));
+}
+for (const ev of ["pointerover", "touchstart", "focusin"]) document.addEventListener(ev, (e) => { const id = e.target.closest?.("[data-war]")?.dataset.war; if (id) prefetchCinema(warById(id)).catch(() => {}); }, { passive: true });
 function trackAt(x, t, holdTo) { // interpolated shape of a front or occupied area at time t, with fade in/out
   const k = x.keys, FADE = 0.05;
   if (!k.length || t < k[0].t - FADE) return null;
