@@ -1,0 +1,27 @@
+{
+  "war": "russian-invasion-of-ukraine",
+  "sides": [
+    [
+      {
+        "name": "Ukraine",
+        "flag": "flags/flag-of-ukraine.png",
+        "commons": "File:Flag_of_Ukraine.svg",
+        "licence": "Public domain"
+      }
+    ],
+    [
+      {
+        "name": "Russia",
+        "flag": "flags/flag-of-russia.png",
+        "commons": "File:Flag_of_Russia.svg",
+        "licence": "Public domain"
+      },
+      {
+        "name": "North Korea",
+        "flag": "flags/flag-of-north-korea.png",
+        "commons": "File:Flag_of_North_Korea.svg",
+        "licence": "Public domain"
+      }
+    ]
+  ]
+}

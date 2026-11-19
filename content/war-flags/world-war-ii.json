@@ -1,0 +1,65 @@
+{
+ "war": "world-war-ii",
+ "sides": [
+  [
+   {
+    "name": "British Empire",
+    "flag": "flags/flag-of-the-united-kingdom--1-2-.png",
+    "commons": "File:Flag_of_the_United_Kingdom_(1-2).svg",
+    "licence": "Public domain"
+   },
+   {
+    "name": "Soviet Union",
+    "flag": "flags/flag-of-the-soviet-union--1936---1955-.png",
+    "commons": "File:Flag_of_the_Soviet_Union_(1936_–_1955).svg",
+    "licence": "Public domain"
+   },
+   {
+    "name": "United States",
+    "flag": "flags/flag-of-the-united-states--1912-1959-.png",
+    "commons": "File:Flag_of_the_United_States_(1912-1959).svg",
+    "licence": "Public domain"
+   },
+   {
+    "name": "Republic of China",
+    "flag": "flags/flag-of-the-republic-of-china.png",
+    "commons": "File:Flag_of_the_Republic_of_China.svg",
+    "licence": "Public domain"
+   }
+  ],
+  [
+   {
+    "name": "Empire of Japan",
+    "flag": "flags/flag-of-japan--1870-1999-.png",
+    "commons": "File:Flag_of_Japan_(1870–1999).svg",
+    "licence": "Public domain"
+   },
+   {
+    "name": "Kingdom of Italy",
+    "flag": "flags/flag-of-italy--1861-1946-.png",
+    "commons": "File:Flag_of_Italy_(1861–1946).svg",
+    "licence": "Public domain"
+   },
+   {
+    "name": "Hungary",
+    "flag": "flags/flag-of-hungary--1915-1918--1919-1946-.png",
+    "commons": "File:Flag_of_Hungary_(1915-1918,_1919-1946).svg",
+    "licence": "Public domain"
+   },
+   {
+    "name": "Romania",
+    "flag": "flags/flag-of-romania.png",
+    "commons": "File:Flag_of_Romania.svg",
+    "licence": "Public domain"
+   }
+  ],
+  [
+   {
+    "name": "French State (Vichy)",
+    "flag": "flags/flag-of-france.png",
+    "commons": "File:Flag_of_France.svg",
+    "licence": "Public domain"
+   }
+  ]
+ ]
+}

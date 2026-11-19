@@ -1,0 +1,46 @@
+{
+  "war": "seven-years-war",
+  "sides": [
+    [
+      {
+        "name": "Great Britain",
+        "flag": "flags/flag-of-great-britain--1707-1800-.png",
+        "commons": "File:Flag_of_Great_Britain_(1707–1800).svg",
+        "licence": "Public domain"
+      },
+      {
+        "name": "Kingdom of Prussia",
+        "flag": "flags/flag-of-the-kingdom-of-prussia--1750-1801-.png",
+        "commons": "File:Flag_of_the_Kingdom_of_Prussia_(1750-1801).svg",
+        "licence": "Attribution"
+      }
+    ],
+    [
+      {
+        "name": "Kingdom of France",
+        "flag": "flags/royal-standard-of-the-king-of-france.png",
+        "commons": "File:Royal_Standard_of_the_King_of_France.svg",
+        "licence": "CC BY-SA 3.0"
+      },
+      {
+        "name": "Habsburg Austria",
+        "flag": "flags/flag-of-the-habsburg-monarchy.png",
+        "commons": "File:Flag_of_the_Habsburg_Monarchy.svg",
+        "licence": "Public domain"
+      },
+      {
+        "name": "Russian Empire",
+        "flag": "flags/flag-of-russia.png",
+        "commons": "File:Flag_of_Russia.svg",
+        "licence": "Public domain"
+      },
+      {
+        "name": "Sweden",
+        "flag": "flags/flag-of-sweden.png",
+        "commons": "File:Flag_of_Sweden.svg",
+        "licence": "Public domain"
+      }
+    ],
+    []
+  ]
+}

@@ -2392,14 +2392,33 @@ const warBox = () => S.cine.chapters.reduce((b, c) => [Math.min(b[0], c.bbox[0])
 const sideName = (sd) => sd.name.replace(/\s*\([^)]*\)\s*$/, ""); // "Mexico", not "Mexico (with …)": the brief's "who" names everyone
 const sideColor = (i) => SIDE_COLORS[i % SIDE_COLORS.length];
 const stratFor = (w, ch) => (ch && w.brief?.strategies?.filter((s) => s.chapter === ch.id)) || [];
+// "c. 60,000–100,000" → {lo, hi}; "c. 23–25 million" and "c. 750,000–1 million" both read right
+function armyNum(s) {
+  const m = String(s || "").replace(/,/g, "").match(/(\d+(?:\.\d+)?)\s*(million)?(?:\s*[–-]\s*(\d+(?:\.\d+)?)\s*(million)?)?/i);
+  if (!m) return null;
+  let lo = +m[1], hi = m[3] ? +m[3] : lo;
+  if (m[4]) { hi *= 1e6; if (!m[2] && lo < 1000) lo *= 1e6; }
+  if (m[2]) { lo *= 1e6; if (!m[3]) hi = lo; }
+  return lo > 0 ? { lo, hi: Math.max(lo, hi) } : null;
+}
+function sideCards(w) { // each side with its brief, colour and, when two or more sides have figures, its share of the largest army
+  const sides = w.sides.map((sd, i) => { const b = w.brief?.sides?.[i] || {}; return { name: sideName(sd), b, c: sideColor(i), n: armyNum(b.strength) }; });
+  // only like with like: when two or more sides count the same thing, a side counting something else gets no bar
+  const what = {}; for (const s of sides) if (s.n) what[s.b.strengthWhat || ""] = (what[s.b.strengthWhat || ""] || 0) + 1;
+  const common = Object.entries(what).sort((a, b) => b[1] - a[1])[0], basis = common && common[1] > 1 ? common[0] : null;
+  for (const s of sides) if (s.n && basis != null && (s.b.strengthWhat || "") !== basis) s.n = null;
+  const max = Math.max(0, ...sides.map((s) => s.n?.hi || 0)), bars = sides.filter((s) => s.n).length > 1;
+  for (const s of sides) s.bar = bars && s.n ?`<span class="armybar" aria-hidden="true"><i style="width:${Math.max(1.5, s.n.lo / max * 100).toFixed(1)}%"></i>${s.n.hi > s.n.lo ? `<i class="r" style="width:${((s.n.hi - s.n.lo) / max * 100).toFixed(1)}%"></i>` : ""}</span>` : "";
+  return sides;
+}
+const sideFlags = (b, cls) => b.flags?.length ? `<span class="${cls}">${b.flags.map((f) => `<img src="${esc(f.flag)}" alt="" title="${esc(f.name)}" loading="lazy">`).join("")}</span>` : "";
 function warCoverHTML(w) {
   const B = w.brief;
   let h = B.hook ? `<p class="whook">${esc(B.hook)}</p>` : "";
-  h += `<div class="vs${w.sides.length > 2 ? " many" : ""}">${w.sides.map((sd, i) => {
-    const b = B.sides?.[i] || {};
-    return `${i && w.sides.length === 2 ? `<span class="vsx" aria-hidden="true">vs</span>` : ""}<div class="vside" style="--c:${sideColor(i)}"><b class="vname">${esc(sideName(sd))}</b>${b.strength ? `<span class="vnum">${esc(b.strength)}</span><small class="vwhat">${esc(b.strengthWhat || "")}</small>` : ""}${b.leaders?.length ? `<span class="vlead">Led by ${esc(b.leaders.join(", "))}</span>` : ""}${b.who ? `<span class="vwho">${esc(b.who)}</span>` : ""}</div>`;
-  }).join("")}</div>`;
+  h += `<div class="ob">${sideCards(w).map(({ name, b, c, bar }) => `<section class="obside" style="--c:${c}"><div class="ob-h"><i class="ob-sw"></i><b>${esc(name)}</b>${sideFlags(b, "ob-fl")}</div>${b.strength ? `<div class="ob-n"><span>${esc(b.strength)}</span>${b.strengthWhat ? `<small>${esc(b.strengthWhat)}</small>` : ""}</div>` : ""}${bar}${b.leaders?.length ? `<p class="ob-led"><span>Led by</span> ${b.leaders.map(esc).join(" · ")}</p>` : ""}${b.who ? `<p class="ob-who">${esc(b.who)}</p>` : ""}</section>`).join("")}</div>`;
   if (w.casualties) h += `<p class="note">${esc(w.casualties)}</p>`;
+  const flags = (B.sides || []).flatMap((b) => b.flags || []).filter((f) => f.commons);
+  if (flags.length) h += `<details class="srcs"><summary>Flags</summary><ol class="refs">${flags.map((f) => `<li><a href="https://commons.wikimedia.org/wiki/${encodeURI(f.commons.replace(/ /g, "_"))}" target="_blank" rel="noopener">${esc(f.name)}</a>${f.licence ? ` · ${esc(f.licence)}` : ""}, Wikimedia Commons</li>`).join("")}</ol></details>`;
   return h;
 }
 function warEndHTML(w) {
@@ -2417,8 +2436,8 @@ function warEndHTML(w) {
 const STAR = ic('<path d="m12 3.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8-4.3-4.1 5.9-.9z"/>');
 function coverPlateHTML(w) { // phones: the war's opening card, the sides face to face
   const B = w.brief;
-  const sides = w.sides.map((sd, i) => { const b = B.sides?.[i] || {}; return `<div class="fvside" style="--c:${sideColor(i)}"><b>${esc(sideName(sd))}</b>${b.strength ? `<span>${esc(b.strength)}</span>` : ""}</div>`; }).join("");
-  return `<div class="fplate"><button class="fp-t" data-act="fmore"><span class="kicker">War · ${esc(rangeText(w.span[0], w.span[1]))}</span><b>${esc(w.name)}</b><small>${B.sides?.some((x) => x.strength) ? "Who fought, and how many" : "Who fought"}</small></button><button class="fnext" data-chap="0" aria-label="Begin the story">${I.right}</button></div><div class="fvs${w.sides.length > 2 ? " many" : ""}">${sides}</div>`;
+  const sides = sideCards(w).map(({ name, b, c, bar }) => `<div class="fvside" style="--c:${c}">${sideFlags(b, "fv-fl") || `<i class="ob-sw"></i>`}<b>${esc(name)}</b>${b.strength ? `<span>${esc(b.strength)}</span>` : ""}${bar}</div>`).join("");
+  return `<div class="fplate"><button class="fp-t" data-act="fmore"><span class="kicker">War · ${esc(rangeText(w.span[0], w.span[1]))}</span><b>${esc(w.name)}</b><small>${B.sides?.some((x) => x.strength) ? "Who fought, and how many" : "Who fought"}</small></button><button class="fnext" data-chap="0" aria-label="Begin the story">${I.right}</button></div><div class="fvs">${sides}</div>`;
 }
 function endPlateHTML(w) { // phones: who won
   const B = w.brief, win = B.winner;

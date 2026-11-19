@@ -339,6 +339,22 @@ def main():
             problems.append(f"war brief {wid}: bad winner {b['winner']!r}"); b["winner"] = None
         check_sources(f"war brief {wid}", b)
         w["brief"] = b
+    # period flags for each side (content/war-flags/<war-id>.json), shown on the war's opening card
+    for p in sorted(glob.glob(os.path.join(ROOT, "content", "war-flags", "*.json"))):
+        fl = json.load(open(p)); wid = fl.get("war"); w = by_war.get(wid)
+        if not w or "brief" not in w:
+            problems.append(f"war flags {os.path.basename(p)}: no war brief for {wid!r}"); continue
+        if len(fl.get("sides", [])) != len(w["sides"]):
+            problems.append(f"war flags {wid}: {len(fl.get('sides', []))} sides, the war has {len(w['sides'])}"); continue
+        bs = w["brief"].setdefault("sides", [])
+        while len(bs) < len(w["sides"]): bs.append({})
+        for i, side in enumerate(fl["sides"]):
+            ok = []
+            for f in side[:4]:
+                if not os.path.exists(os.path.join(ROOT, "public", f.get("flag", ""))):
+                    problems.append(f"war flags {wid}: missing image {f.get('flag')}"); continue
+                ok.append({k: f[k] for k in ("name", "flag", "commons", "licence") if f.get(k)})
+            if ok: bs[i]["flags"] = ok
 
     # Cinematic war layers (content/cinema/<war>.json): front lines, occupied areas, offensives, battles, camera shots.
     cdir = os.path.join(ROOT, "public", "data", "cinema")

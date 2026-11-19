@@ -1,0 +1,39 @@
+{
+ "war": "american-revolutionary-war",
+ "sides": [
+  [
+   {
+    "name": "United States",
+    "flag": "flags/flag-of-the-united-states--1777-1795-.png",
+    "commons": "File:Flag_of_the_United_States_(1777–1795).svg",
+    "licence": "Public domain"
+   },
+   {
+    "name": "Kingdom of France",
+    "flag": "flags/royal-standard-of-the-king-of-france.png",
+    "commons": "File:Royal_Standard_of_the_King_of_France.svg",
+    "licence": "CC BY-SA 3.0"
+   },
+   {
+    "name": "Spain",
+    "flag": "flags/flag-of-cross-of-burgundy.png",
+    "commons": "File:Flag_of_Cross_of_Burgundy.svg",
+    "licence": "Public domain"
+   },
+   {
+    "name": "Dutch Republic",
+    "flag": "flags/statenvlag.png",
+    "commons": "File:Statenvlag.svg",
+    "licence": "Public domain"
+   }
+  ],
+  [
+   {
+    "name": "Great Britain",
+    "flag": "flags/flag-of-great-britain--1707-1800-.png",
+    "commons": "File:Flag_of_Great_Britain_(1707–1800).svg",
+    "licence": "Public domain"
+   }
+  ]
+ ]
+}
