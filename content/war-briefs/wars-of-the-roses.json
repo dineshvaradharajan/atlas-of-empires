@@ -1,0 +1,55 @@
+{
+  "war": "wars-of-the-roses",
+  "hook": "Henry VI was a weak and sometimes mentally ill king; his cousin Richard, Duke of York, armed his followers to seize power and then the crown.",
+  "sides": [
+    {
+      "strength": "5,000–8,000",
+      "strengthWhat": "at Bosworth, 1485",
+      "who": "Lancastrian lords loyal to Henry VI and Queen Margaret, later Henry Tudor's exiles, Welsh supporters and French mercenaries",
+      "leaders": ["Henry VI", "Margaret of Anjou", "Henry VII"]
+    },
+    {
+      "strength": "7,500–12,000",
+      "strengthWhat": "at Bosworth, 1485",
+      "who": "Richard of York and his sons, backed by the powerful Neville family and welcomed by London",
+      "leaders": ["Richard, Duke of York", "Edward IV", "Richard III"]
+    }
+  ],
+  "winner": 0,
+  "status": "ended",
+  "result": "Lancastrian–Tudor victory",
+  "resultLine": "Henry Tudor killed Richard III at Bosworth on 22 August 1485, married Elizabeth of York, and crushed the last Yorkist rising at Stoke Field on 16 June 1487.",
+  "strategies": [
+    {
+      "side": 1,
+      "name": "Archers with the wind",
+      "text": "At Towton in March 1461, Lord Fauconberg's archers shot with a snowstorm wind at their backs. The Lancastrians' arrows fell short, so they had to leave their position and charge, and Edward IV won his crown.",
+      "chapter": "towton"
+    },
+    {
+      "side": 0,
+      "name": "The Kingmaker changes sides",
+      "text": "The Earl of Warwick, who had helped make Edward IV king, fell out with him and joined Queen Margaret. His invasion in 1470 drove Edward into exile and briefly restored Henry VI.",
+      "chapter": "readeption"
+    },
+    {
+      "side": 0,
+      "name": "Winning over Yorkists",
+      "text": "Henry Tudor swore to marry Edward IV's daughter Elizabeth, drawing Yorkists who hated Richard III to his side. At Bosworth, Sir William Stanley's men charged in for Henry and Richard was cut down.",
+      "chapter": "bosworth"
+    }
+  ],
+  "impact": [
+    "The marriage of Henry VII and Elizabeth of York joined the houses of Lancaster and York under the Tudors.",
+    "The Tudor dynasty ruled England until 1603, a time of much stronger royal power.",
+    "Henry VII rebuilt the crown's wealth, raising royal income from about £52,000 to £142,000 a year."
+  ],
+  "sources": [
+    { "title": "Bosworth Battlefield Heritage Centre: History", "url": "https://www.bosworthbattlefield.org.uk/history/" },
+    { "title": "The Royal Family: Henry VII", "url": "https://www.royal.uk/henry-vii" },
+    { "title": "Nottinghamshire HER: The Battle of Stoke Field 1487", "url": "https://her.nottinghamshire.gov.uk/whats-new/the-nottinghamshire-battlefield-the-battle-of-stoke-field-1487" },
+    { "title": "Battle of Bosworth Field (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Battle_of_Bosworth_Field" },
+    { "title": "Battle of Towton (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Battle_of_Towton" },
+    { "title": "Wars of the Roses (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Wars_of_the_Roses" }
+  ]
+}

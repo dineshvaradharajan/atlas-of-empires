@@ -1,0 +1,57 @@
+{
+  "war": "imjin-war",
+  "hook": "Toyotomi Hideyoshi had just united Japan and dreamed of conquering China; when Korea refused to let his armies pass, he invaded it instead.",
+  "sides": [
+    {
+      "strength": "c. 158,000",
+      "strengthWhat": "in the 1592 invasion",
+      "who": "The armies of Japan's lords, sent by Hideyoshi in nine divisions with labourers and sailors",
+      "leaders": ["Toyotomi Hideyoshi", "Konishi Yukinaga", "Katō Kiyomasa"]
+    },
+    {
+      "strength": "c. 84,500",
+      "strengthWhat": "regulars, 1592–93",
+      "who": "The Joseon kingdom of Korea, its navy, and volunteer Righteous Armies of scholars, peasants and Buddhist monks",
+      "leaders": ["King Seonjo", "Yi Sun-sin", "Kwon Yul"]
+    },
+    {
+      "strength": "c. 43,000",
+      "strengthWhat": "relief army, 1593",
+      "who": "Ming China, Korea's overlord and protector, which sent armies and later a fleet",
+      "leaders": ["Wanli Emperor", "Li Rusong", "Chen Lin"]
+    }
+  ],
+  "winner": 1,
+  "status": "ended",
+  "result": "Joseon and Ming victory",
+  "resultLine": "After Hideyoshi died in September 1598, Japan pulled its armies out; on 16 December Yi Sun-sin was killed at Noryang, the war's last battle.",
+  "strategies": [
+    {
+      "side": 0,
+      "name": "Arquebus blitz",
+      "text": "Veterans of Japan's civil wars, armed with many arquebuses, stormed Busan and raced north in three columns. They took the capital Hanseong in under three weeks and Pyongyang soon after.",
+      "chapter": "busan-to-hanseong"
+    },
+    {
+      "side": 1,
+      "name": "Cutting the sea lanes",
+      "text": "Admiral Yi Sun-sin's cannon-armed warships, led by turtle ships, wrecked Japanese fleets at Okpo and Hansan Island. Japan could no longer ship supplies up the west coast to its armies in the north.",
+      "chapter": "yi-sun-sin"
+    },
+    {
+      "side": 2,
+      "name": "The Ming relief army",
+      "text": "In early 1593 a Ming army under Li Rusong joined Korean troops and monks to storm Pyongyang. Short of food, the Japanese abandoned the north and fell back to forts on the south coast.",
+      "chapter": "ming-relief"
+    }
+  ],
+  "impact": [
+    "Korea was devastated: perhaps a million people died, farmland shrank sharply and tens of thousands were carried off to Japan.",
+    "The cost of the war strained the Ming treasury and helped weaken the dynasty, which fell in 1644.",
+    "The war weakened Hideyoshi's family, and Tokugawa Ieyasu took power in Japan as shogun in 1603."
+  ],
+  "sources": [
+    { "title": "University of Texas at Austin, HIST 341K: Invasion of Korea", "url": "https://laits.utexas.edu/~mr56267/HIST_341K/Sengoku_pages/Invasion_of_Korea.html" },
+    { "title": "Imjin War (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Imjin_War" }
+  ]
+}

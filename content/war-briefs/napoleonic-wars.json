@@ -1,0 +1,55 @@
+{
+  "war": "napoleonic-wars",
+  "hook": "Britain and France went back to war in 1803, and Napoleon's bid to master Europe drew one coalition of kings after another against him.",
+  "sides": [
+    {
+      "strength": "c. 1.2 million",
+      "strengthWhat": "French forces at peak",
+      "who": "France with its satellites and allies, including Italy, Naples, Holland, Bavaria, Saxony, Württemberg, Westphalia, the Duchy of Warsaw and, for a time, Spain",
+      "leaders": ["Napoleon Bonaparte", "Joachim Murat", "Józef Poniatowski"]
+    },
+    {
+      "strength": "c. 3 million",
+      "strengthWhat": "all allies at peak",
+      "who": "Britain, Russia, Austria, Prussia, Sweden, Portugal and Spanish patriots in shifting coalitions, joined by most German states in 1813",
+      "leaders": ["Duke of Wellington", "Alexander I of Russia", "Gebhard von Blücher"]
+    }
+  ],
+  "winner": 1,
+  "status": "ended",
+  "result": "Coalition victory",
+  "resultLine": "Beaten at Waterloo on 18 June 1815, Napoleon abdicated a second time and was exiled to St Helena; peace was signed in Paris on 20 November 1815.",
+  "strategies": [
+    {
+      "side": 0,
+      "name": "The Continental System",
+      "text": "From 1806 Napoleon barred his allies and subjects from trading with Britain. Enforcing the ban drew him into Portugal and Spain, and Russia's break with it in 1810 led to the invasion of 1812.",
+      "chapter": "spain-rises"
+    },
+    {
+      "side": 1,
+      "name": "Trading space for time",
+      "text": "Russia's generals fell back deep into their country instead of risking all in battle, even abandoning Moscow. Of over 450,000 men who invaded in 1812, only about 120,000 were left by the end.",
+      "chapter": "russia-retreat"
+    },
+    {
+      "side": 1,
+      "name": "The Trachenberg Plan",
+      "text": "In 1813 the allies agreed to avoid fighting Napoleon himself and to beat his marshals one by one, until they could gather a force he could not match. It worked at Leipzig.",
+      "chapter": "germany-1813"
+    }
+  ],
+  "impact": [
+    "The Congress of Vienna redrew Europe's borders, and the great powers avoided a general war, apart from Crimea, until 1914.",
+    "The ancient Holy Roman Empire was dissolved in 1806, after Austria's defeat at Austerlitz.",
+    "The Napoleonic Code spread French civil law across Europe, and much of it stayed in force where it was adopted.",
+    "Britain's navy, unchallenged after Trafalgar, left Britain the leading sea power for generations."
+  ],
+  "sources": [
+    { "title": "Napoleonic Wars (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Napoleonic_Wars" },
+    { "title": "Continental System (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Continental_System" },
+    { "title": "French invasion of Russia (Wikipedia)", "url": "https://en.wikipedia.org/wiki/French_invasion_of_Russia" },
+    { "title": "Trachenberg Plan (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Trachenberg_Plan" },
+    { "title": "National Army Museum: Battle of Waterloo", "url": "https://www.nam.ac.uk/explore/battle-waterloo" }
+  ]
+}

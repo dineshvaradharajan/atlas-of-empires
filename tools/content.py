@@ -327,6 +327,19 @@ def main():
             wars.append(w)
     wars.sort(key=lambda w: w["span"][0])
 
+    # War briefs (content/war-briefs/<war>.json): the sides' strength and leaders, who won, the strategies, the impact.
+    by_war = {w["id"]: w for w in wars}
+    for p in sorted(glob.glob(os.path.join(ROOT, "content", "war-briefs", "*.json"))):
+        b = json.load(open(p)); wid = b.pop("war", None); w = by_war.get(wid)
+        if not w:
+            problems.append(f"war brief {os.path.basename(p)}: unknown war {wid!r}"); continue
+        if len(b.get("sides", [])) != len(w["sides"]):
+            problems.append(f"war brief {wid}: {len(b.get('sides', []))} sides, the war has {len(w['sides'])}")
+        if b.get("winner") is not None and not (0 <= b["winner"] < len(w["sides"])):
+            problems.append(f"war brief {wid}: bad winner {b['winner']!r}"); b["winner"] = None
+        check_sources(f"war brief {wid}", b)
+        w["brief"] = b
+
     # Cinematic war layers (content/cinema/<war>.json): front lines, occupied areas, offensives, battles, camera shots.
     cdir = os.path.join(ROOT, "public", "data", "cinema")
     os.makedirs(cdir, exist_ok=True)

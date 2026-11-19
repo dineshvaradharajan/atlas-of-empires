@@ -1,0 +1,70 @@
+{
+  "war": "third-crusade",
+  "hook": "In 1187 Saladin crushed the crusader army at Hattin and took Jerusalem; three of Europe's mightiest kings took the cross to win it back.",
+  "sides": [
+    {
+      "strength": "c. 11,000–25,000",
+      "strengthWhat": "at Arsuf, 1191",
+      "who": "Armies of the Holy Roman Empire, England and its Angevin lands, and France, with the barons of the Kingdom of Jerusalem and the military orders",
+      "leaders": [
+        "Richard I of England",
+        "Philip II of France",
+        "Frederick Barbarossa"
+      ]
+    },
+    {
+      "strength": "c. 25,000–35,000",
+      "strengthWhat": "at Arsuf, 1191",
+      "who": "The Ayyubid sultanate of Egypt and Syria, with Turkish horse archers, Bedouin and Sudanese troops",
+      "leaders": [
+        "Saladin",
+        "al-Adil"
+      ]
+    },
+    {
+      "who": "The Seljuk Sultanate of Rum in Anatolia, which fought Barbarossa's German army in 1190",
+      "leaders": [
+        "Kilij Arslan II",
+        "Qutb al-Din"
+      ]
+    }
+  ],
+  "winner": null,
+  "status": "ended",
+  "result": "Compromise peace",
+  "resultLine": "By the Treaty of Jaffa, on 2 September 1192, Richard and Saladin agreed a three-year truce: Jerusalem stayed Muslim, but unarmed Christian pilgrims could visit it.",
+  "strategies": [
+    {
+      "side": 0,
+      "name": "The fighting march",
+      "text": "Richard marched down the coast in tight order, infantry and crossbowmen shielding the knights, with the fleet alongside. He beat Saladin at Arsuf and regained the coast as far as Jaffa.",
+      "chapter": "arsuf"
+    },
+    {
+      "side": 1,
+      "name": "Guarding Jerusalem",
+      "text": "Saladin had the walls of Ascalon pulled down and held on to Jerusalem. Richard twice came within reach but turned back, fearing that an army besieging it far from the sea would be trapped by a relief force.",
+      "chapter": "jerusalem"
+    }
+  ],
+  "impact": [
+    "A coastal Kingdom of Jerusalem, from Tyre to Jaffa, survived for another century.",
+    "Richard's conquest of Cyprus gave the crusaders a lasting Christian base in the eastern Mediterranean.",
+    "Saladin died in 1193, and his heirs quarrelled and divided his empire.",
+    "Richard was captured in Austria on the way home and released only for a ransom of 150,000 marks."
+  ],
+  "sources": [
+    {
+      "title": "Third Crusade (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Third_Crusade"
+    },
+    {
+      "title": "Battle of Arsuf (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Arsuf"
+    },
+    {
+      "title": "Battle of Iconium (1190) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Iconium_(1190)"
+    }
+  ]
+}

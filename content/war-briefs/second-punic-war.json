@@ -1,0 +1,73 @@
+{
+  "war": "second-punic-war",
+  "hook": "Beaten by Rome in the first war, Carthage rebuilt its power in Spain; when Hannibal sacked Saguntum, Rome's ally, the two great powers fought again.",
+  "sides": [
+    {
+      "strength": "c. 86,000",
+      "strengthWhat": "at Cannae, 216 BCE",
+      "who": "The Roman Republic and its Latin and Italian allies, later joined by the Aetolian League, Pergamon and the Numidian prince Masinissa",
+      "leaders": [
+        "Scipio Africanus",
+        "Fabius Maximus",
+        "Marcellus"
+      ]
+    },
+    {
+      "strength": "c. 50,000",
+      "strengthWhat": "at Cannae, 216 BCE",
+      "who": "Carthage with Libyan, Spanish, Gallic and Numidian troops, rebel Italian cities such as Capua, and Syracuse and Philip V of Macedon",
+      "leaders": [
+        "Hannibal",
+        "Hasdrubal Barca",
+        "Mago Barca"
+      ]
+    }
+  ],
+  "winner": 0,
+  "status": "ended",
+  "result": "Roman victory",
+  "resultLine": "Beaten at Zama in 202 BCE, Carthage accepted peace in 201: it lost its lands overseas, paid 10,000 talents over 50 years and could wage war only with Rome's permission.",
+  "strategies": [
+    {
+      "side": 1,
+      "name": "Break Rome's alliances",
+      "text": "Hannibal marched over the Alps to fight in Italy itself. He hoped that crushing wins like Cannae would make Rome's Italian allies desert it, and Capua and much of the south did.",
+      "chapter": "italy"
+    },
+    {
+      "side": 0,
+      "name": "Fabian strategy",
+      "text": "After the disasters of 217 BCE the dictator Fabius shadowed Hannibal without giving battle, harassing his foragers. Mocked as 'the Delayer', he bought time while Rome raised more than 20 legions.",
+      "chapter": "cannae"
+    },
+    {
+      "side": 0,
+      "name": "Scipio strikes at Spain and Africa",
+      "text": "Instead of chasing Hannibal, Scipio took Carthage's base in Spain, then landed in Africa in 204 BCE. Carthage recalled Hannibal, and Masinissa's Numidian horsemen helped Scipio beat him at Zama.",
+      "chapter": "africa"
+    }
+  ],
+  "impact": [
+    "Rome became the dominant power of the western Mediterranean, and Carthage was left with ten warships and no elephants.",
+    "Rome made two provinces in Spain in 197 BCE but needed nearly two centuries to conquer the whole peninsula.",
+    "Masinissa's Numidia kept seizing Carthaginian land, and the quarrel led to the Third Punic War and Carthage's destruction in 146 BCE."
+  ],
+  "sources": [
+    {
+      "title": "Polybius, Histories, Book 3 (LacusCurtius)",
+      "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Polybius/3*.html"
+    },
+    {
+      "title": "Second Punic War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Second_Punic_War"
+    },
+    {
+      "title": "Battle of Cannae (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Cannae"
+    },
+    {
+      "title": "Hispania (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Hispania"
+    }
+  ]
+}

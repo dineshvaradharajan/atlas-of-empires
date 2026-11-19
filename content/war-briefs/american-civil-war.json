@@ -1,0 +1,55 @@
+{
+  "war": "american-civil-war",
+  "hook": "After Lincoln's election, eleven slave states broke away to protect slavery; the Union went to war to hold the country together.",
+  "sides": [
+    {
+      "strength": "c. 2.2 million",
+      "strengthWhat": "served over the war",
+      "who": "The free states of the North and West, with the border slave states of Kentucky, Missouri, Maryland and Delaware",
+      "leaders": ["Abraham Lincoln", "Ulysses S. Grant", "William T. Sherman"]
+    },
+    {
+      "strength": "c. 750,000–1 million",
+      "strengthWhat": "served over the war",
+      "who": "Eleven Southern slave states, from Virginia and the Carolinas west to Texas",
+      "leaders": ["Jefferson Davis", "Robert E. Lee", "Stonewall Jackson"]
+    }
+  ],
+  "winner": 0,
+  "status": "ended",
+  "result": "Union victory",
+  "resultLine": "Lee surrendered at Appomattox on 9 April 1865; the last major Confederate armies gave up by late May, and slavery was abolished that December.",
+  "strategies": [
+    {
+      "side": 0,
+      "name": "The Anaconda Plan",
+      "text": "A naval blockade of Southern ports cut cotton exports by about 95 percent, and the drive down the Mississippi, completed at Vicksburg in July 1863, split the Confederacy in two.",
+      "chapter": "vicksburg"
+    },
+    {
+      "side": 0,
+      "name": "Emancipation and Black soldiers",
+      "text": "Lincoln's Emancipation Proclamation made freedom a Union war aim and opened the army and navy to Black men. Almost 200,000 Black soldiers and sailors fought for the Union by the war's end.",
+      "chapter": "antietam"
+    },
+    {
+      "side": 0,
+      "name": "Sherman's hard war",
+      "text": "In late 1864 Sherman's 62,000 men lived off the land on a 300-mile march from Atlanta to Savannah, wrecking railways, farms and mills to break the South's ability to fight.",
+      "chapter": "atlanta"
+    }
+  ],
+  "impact": [
+    "The Thirteenth Amendment, ratified in December 1865, abolished slavery and freed about four million people.",
+    "Some 620,000 to 750,000 or more soldiers died, about two-thirds of them from disease.",
+    "The Confederacy was dissolved, and its states were brought back into the Union during Reconstruction."
+  ],
+  "sources": [
+    { "title": "American Civil War (Wikipedia)", "url": "https://en.wikipedia.org/wiki/American_Civil_War" },
+    { "title": "American Battlefield Trust: Civil War Facts", "url": "https://www.battlefields.org/learn/articles/civil-war-facts" },
+    { "title": "National Archives: The Emancipation Proclamation", "url": "https://www.archives.gov/exhibits/featured-documents/emancipation-proclamation" },
+    { "title": "National Archives: 13th Amendment to the U.S. Constitution", "url": "https://www.archives.gov/milestone-documents/13th-amendment" },
+    { "title": "Anaconda Plan (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Anaconda_Plan" },
+    { "title": "Sherman's March to the Sea (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Sherman%27s_March_to_the_Sea" }
+  ]
+}

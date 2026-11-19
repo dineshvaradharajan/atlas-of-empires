@@ -1,0 +1,74 @@
+{
+  "war": "korean-war",
+  "hook": "Korea had been split in two since 1945; in June 1950 the communist North invaded the South to unite the peninsula by force.",
+  "sides": [
+    {
+      "strength": "c. 970,000",
+      "strengthWhat": "at the peak, 1953",
+      "who": "South Korea and the United States, with troops from Britain, Canada, Australia, Turkey, the Philippines, Thailand and ten other UN members",
+      "leaders": [
+        "Syngman Rhee",
+        "Harry S. Truman",
+        "Douglas MacArthur"
+      ]
+    },
+    {
+      "strength": "c. 1.7 million",
+      "strengthWhat": "at the peak, 1953",
+      "who": "North Korea and China's 'People's Volunteers', armed and supplied by the Soviet Union, which also sent its own airmen and advisers",
+      "leaders": [
+        "Kim Il Sung",
+        "Mao Zedong",
+        "Peng Dehuai"
+      ]
+    }
+  ],
+  "winner": null,
+  "status": "ended",
+  "result": "Stalemate; armistice",
+  "resultLine": "The armistice signed at Panmunjom on 27 July 1953 stopped the fighting close to where it began; no peace treaty followed, and Korea stayed divided.",
+  "strategies": [
+    {
+      "side": 0,
+      "name": "The Inchon landing",
+      "text": "MacArthur landed troops at Inchon, far behind the North Korean front, despite treacherous tides and a sea wall. It cut the invaders' supply lines, freed the Pusan pocket and retook Seoul within two weeks.",
+      "chapter": "inchon"
+    },
+    {
+      "side": 1,
+      "name": "China's hidden intervention",
+      "text": "Some 300,000 Chinese soldiers slipped into North Korea unseen, marching by night and freezing when planes passed. Their night attacks, with bugles and gongs, broke the UN advance and drove it back south.",
+      "chapter": "china"
+    },
+    {
+      "side": 0,
+      "name": "Trenches, bombs and talks",
+      "text": "From 1951 both sides dug in along the 38th parallel. UN bombers flattened much of the North, but could not force a settlement; talks dragged on for two years over whether prisoners could refuse to go home.",
+      "chapter": "stalemate"
+    }
+  ],
+  "impact": [
+    "Korea remained split along a demilitarised zone, still one of the most heavily armed borders on earth.",
+    "Perhaps two million Korean civilians died, and both Koreas were left in ruins.",
+    "The United States came to accept a large standing army, ready to fight anywhere in the world.",
+    "No peace treaty was ever signed, and a US-led United Nations Command still watches over the armistice."
+  ],
+  "sources": [
+    {
+      "title": "National Army Museum: Korean War",
+      "url": "https://www.nam.ac.uk/explore/korean-war"
+    },
+    {
+      "title": "US Army Heritage and Education Center: The Hot Spot in the Cold War, Korea 1950–1953",
+      "url": "https://www.armyheritage.org/soldier-stories-information/the-hot-spot-in-the-cold-war-korea-1950-1953/"
+    },
+    {
+      "title": "Defense Media Network: The Coalition War, the United Nations in Korea",
+      "url": "https://defensemedianetwork.com/stories/the-coalition-war-the-united-nations-in-korea/2"
+    },
+    {
+      "title": "Korean War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Korean_War"
+    }
+  ]
+}

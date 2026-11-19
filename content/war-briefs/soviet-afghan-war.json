@@ -1,0 +1,70 @@
+{
+  "war": "soviet-afghan-war",
+  "hook": "Afghanistan's new communist rulers faced revolt across the country; in December 1979 the Soviet army marched in to save them.",
+  "sides": [
+    {
+      "strength": "c. 115,000–120,000",
+      "strengthWhat": "Soviet troops at the peak",
+      "who": "The Soviet Union's 40th Army and the forces of Afghanistan's communist government: its army, police and secret police",
+      "leaders": [
+        "Leonid Brezhnev",
+        "Mikhail Gorbachev",
+        "Mohammad Najibullah"
+      ]
+    },
+    {
+      "strength": "c. 200,000–250,000",
+      "strengthWhat": "fighters at the peak",
+      "who": "Afghan Islamic resistance groups, based in the mountains and in Pakistan, armed by the United States, Pakistan, Saudi Arabia, China and others",
+      "leaders": [
+        "Ahmad Shah Massoud",
+        "Gulbuddin Hekmatyar",
+        "Burhanuddin Rabbani"
+      ]
+    }
+  ],
+  "winner": 1,
+  "status": "ended",
+  "result": "Soviet withdrawal",
+  "resultLine": "Under the Geneva Accords of April 1988 the Soviet army pulled out, its last soldiers leaving on 15 February 1989; the Afghan civil war went on.",
+  "strategies": [
+    {
+      "side": 1,
+      "name": "Guerrilla war from the mountains",
+      "text": "The mujahideen avoided set battles. They ambushed convoys on the mountain roads and slipped back to valleys like the Panjshir or to camps in Pakistan, so the Soviets held the cities but never the countryside.",
+      "chapter": "panjshir"
+    },
+    {
+      "side": 0,
+      "name": "Scorched earth",
+      "text": "Soviet aircraft levelled villages, wrecked irrigation channels and sowed millions of mines to empty the countryside that fed the rebels. Millions of Afghans fled, but the resistance survived.",
+      "chapter": "panjshir"
+    },
+    {
+      "side": 1,
+      "name": "Foreign arms and the Stinger",
+      "text": "American and Saudi money, passed out by Pakistan's intelligence service, rose to hundreds of millions of dollars a year. From 1986 shoulder-fired Stinger missiles let rebels shoot down helicopters, challenging Soviet control of the sky.",
+      "chapter": "zhawar-stinger"
+    }
+  ],
+  "impact": [
+    "Perhaps one to three million Afghans died, and about five million fled abroad, mostly to Pakistan and Iran.",
+    "The costly, unwinnable war is widely seen as one cause of the Soviet Union's collapse in 1991.",
+    "Afghanistan slid into civil war among the mujahideen, from which the Taliban rose to power in the 1990s.",
+    "The Taliban later gave Osama bin Laden a base, setting the stage for the American war of 2001."
+  ],
+  "sources": [
+    {
+      "title": "Office of the Historian, US State Department: The Soviet Invasion of Afghanistan and the U.S. Response, 1978–1980",
+      "url": "https://history.state.gov/milestones/1977-1980/soviet-invasion-afghanistan"
+    },
+    {
+      "title": "Soviet–Afghan War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Soviet%E2%80%93Afghan_War"
+    },
+    {
+      "title": "Operation Cyclone (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Operation_Cyclone"
+    }
+  ]
+}

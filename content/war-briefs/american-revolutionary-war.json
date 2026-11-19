@@ -1,0 +1,56 @@
+{
+  "war": "american-revolutionary-war",
+  "hook": "After the Seven Years' War, Britain taxed its American colonies through a Parliament where they had no seats; protest turned to rebellion, and then to a war for independence.",
+  "sides": [
+    {
+      "strength": "c. 19,900",
+      "strengthWhat": "at Yorktown, 1781",
+      "who": "The Thirteen Colonies as the United States, joined by France in 1778, Spain in 1779 and the Dutch Republic in 1780",
+      "leaders": ["George Washington", "Nathanael Greene", "Comte de Rochambeau"]
+    },
+    {
+      "strength": "c. 9,000",
+      "strengthWhat": "at Yorktown, 1781",
+      "who": "Great Britain, with hired German troops from Hesse and other states, American Loyalists and many Native American nations",
+      "leaders": ["George III", "William Howe", "Charles Cornwallis"]
+    }
+  ],
+  "winner": 0,
+  "status": "ended",
+  "result": "American independence",
+  "resultLine": "Cornwallis surrendered at Yorktown on 19 October 1781, and the Treaty of Paris, signed on 3 September 1783, recognised the independence of the United States.",
+  "strategies": [
+    {
+      "side": 0,
+      "name": "Keeping the army alive",
+      "text": "Washington avoided head-on battles against Britain's professional troops and struck where they were weak, as at Trenton and Princeton. As long as his army survived, so did the Revolution.",
+      "chapter": "trenton-princeton"
+    },
+    {
+      "side": 1,
+      "name": "The southern strategy",
+      "text": "From 1778 Britain turned south, counting on Loyalists to rise and hold the land. It took Savannah and Charleston, but backcountry militia won at Kings Mountain and Cowpens, and the countryside stayed hostile.",
+      "chapter": "south"
+    },
+    {
+      "side": 0,
+      "name": "The French alliance and Yorktown",
+      "text": "France sent money, troops and a fleet. In 1781 de Grasse's ships drove off the Royal Navy at the Chesapeake while American and French armies besieged Cornwallis, trapping him by land and sea.",
+      "chapter": "yorktown"
+    }
+  ],
+  "impact": [
+    "The new United States gained all the land between the Appalachians and the Mississippi, south of Canada and north of Florida.",
+    "Spain won back East and West Florida and Minorca from Britain in the peace.",
+    "Tens of thousands of Loyalists, Black and white, left for Nova Scotia, Britain and the Caribbean.",
+    "The Revolution's example inspired later revolutions in France, Haiti and Latin America."
+  ],
+  "sources": [
+    { "title": "American Battlefield Trust: Yorktown", "url": "https://www.battlefields.org/learn/revolutionary-war/battles/yorktown" },
+    { "title": "American Battlefield Trust: Overview of the American Revolutionary War", "url": "https://www.battlefields.org/learn/articles/overview-american-revolutionary-war" },
+    { "title": "Office of the Historian (US State Dept.): The Treaty of Paris, 1783", "url": "https://history.state.gov/milestones/1776-1783/treaty" },
+    { "title": "Office of the Historian (US State Dept.): The French Alliance, 1778", "url": "https://history.state.gov/milestones/1776-1783/french-alliance" },
+    { "title": "American Revolutionary War (Wikipedia)", "url": "https://en.wikipedia.org/wiki/American_Revolutionary_War" },
+    { "title": "British Army during the American Revolutionary War (Wikipedia)", "url": "https://en.wikipedia.org/wiki/British_Army_during_the_American_Revolutionary_War" }
+  ]
+}

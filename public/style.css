@@ -187,6 +187,33 @@ h3.sec { margin: 4px 0 -4px; font: 600 12px var(--sans); letter-spacing: .12em; 
 .streak .dots i { width: 8px; height: 8px; border-radius: 4px; background: var(--rule); }
 .streak .dots i.on { background: var(--ink); }
 .streak .dots i.now { background: var(--highlight); }
+/* a war's opening (the sides face to face), its strategies and its outcome */
+.whook { font: 500 18px/1.4 var(--sans); color: var(--ink); }
+.vs { display: grid; grid-template-columns: minmax(0, 1fr); gap: 6px; }
+.vsx { justify-self: center; position: relative; z-index: 1; width: 34px; height: 34px; margin: -14px 0; display: grid; place-items: center; border-radius: 17px; background: var(--ink); color: var(--bg); box-shadow: 0 0 0 4px var(--bg); font: 800 13px var(--display); text-transform: uppercase; }
+.vside { min-width: 0; display: flex; flex-direction: column; gap: 4px; padding: 14px 14px 14px 16px; border: 1px solid var(--rule); border-left: 5px solid var(--c); border-radius: 16px; background: var(--bg); }
+.vside .vname { font: 700 14px/1.25 var(--sans); }
+.vside .vnum { font: 900 26px/1.05 var(--display); color: var(--c); letter-spacing: -.01em; }
+.vside .vwhat { font: 500 12px var(--sans); color: var(--ink-3); margin-top: -2px; }
+.vside .vlead { font: 600 13px/1.35 var(--sans); color: var(--ink); margin-top: 4px; }
+.vside .vwho { font: 400 13px/1.4 var(--sans); color: var(--ink-2); }
+.strat { display: flex; flex-direction: column; gap: 4px; padding: 14px 16px; border-radius: 16px; background: var(--chip); border-left: 5px solid var(--c); }
+.strat b { font: 800 18px/1.2 var(--display); }
+.strat p { margin: 0; font: 400 15px/1.45 var(--sans); color: var(--ink-2); }
+.outcome { display: flex; flex-direction: column; gap: 6px; padding: 16px; border-radius: 18px; background: var(--ink); color: var(--bg); }
+.outcome .kicker { color: var(--rule-2); }
+.outcome b { display: flex; align-items: center; gap: 10px; font: 900 26px/1.1 var(--display); }
+.outcome b::before { content: ""; width: 14px; height: 14px; flex: none; border-radius: 7px; background: var(--c); box-shadow: 0 0 0 2px var(--bg); }
+.outcome p { margin: 0; font: 400 15px/1.45 var(--sans); color: var(--rule-2); }
+.strats { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; counter-reset: st; }
+.strats li { position: relative; display: flex; flex-direction: column; gap: 3px; padding: 12px 14px 12px 52px; border: 1px solid var(--rule); border-radius: 16px; counter-increment: st; }
+.strats li::before { content: counter(st); position: absolute; left: 12px; top: 12px; width: 28px; height: 28px; display: grid; place-items: center; border-radius: 14px; background: var(--c); color: #fff; font: 800 14px var(--display); }
+.strats .st-side { font: 600 11px var(--sans); letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); }
+.strats b { font: 800 17px/1.2 var(--display); }
+.strats p { margin: 0; font: 400 14px/1.45 var(--sans); color: var(--ink-2); }
+.impact { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 8px; }
+.impact li { position: relative; padding-left: 20px; font: 400 15px/1.45 var(--sans); color: var(--ink); }
+.impact li::before { content: ""; position: absolute; left: 2px; top: .55em; width: 8px; height: 8px; border-radius: 4px; background: var(--highlight); }
 .facts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
 .facts.two { grid-template-columns: 1fr 1fr; }
 .facts div { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
@@ -746,7 +773,25 @@ body.sdock #dock { border-radius: 24px; }
   .fpill small { flex: none; font: 500 13px var(--sans); color: var(--ink-3); }
   #app .fpill svg { flex: none; width: 14px; height: 14px; fill: currentColor; stroke: none; }
   body.frame #sheet[data-detent="peek"] > #col { max-height: none !important; padding-top: 2px; -webkit-mask-image: none; mask-image: none; }
-  body.frame #sheet[data-detent="peek"] > #col > :not(.fplate):not(.fupbtns) { display: none; }
+  body.frame #sheet[data-detent="peek"] > #col > :not(.fplate):not(.fupbtns):not(.fvs) { display: none; }
+  body.frame #col > .fvs { order: 1; }
+  body.frame #col > .wpk, body.frame #sheet:not([data-detent="peek"]) > #col > .fhow { display: none; }
+  .whook { font-size: 17px; }
+  body.frame[data-view="war"] #col > .kicker:not(.grey), body.frame[data-view="war"] #col > h1.ttl { display: none; } /* the plate already names the war */
+  body.frame #sheet:not([data-detent="peek"]) > #col > .fvs, body.frame #col > .outcome { display: none; }
+  .fvs { display: flex; gap: 6px; }
+  .fvs.many { flex-direction: column; gap: 4px; }
+  .fvside { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 1px; padding: 8px 12px; border-radius: 14px; background: var(--chip); border-left: 4px solid var(--c); }
+  .fvs.many .fvside { flex-direction: row; align-items: baseline; justify-content: space-between; gap: 8px; padding: 6px 12px; }
+  .fvside b { min-width: 0; font: 600 12px var(--sans); color: var(--ink-2); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .fvside span { flex: none; font: 900 19px/1.1 var(--display); color: var(--c); }
+  .fvs.many .fvside span { font-size: 15px; }
+  .fplate .fp-t .fstrat { align-self: flex-start; display: inline-flex; align-items: center; gap: 5px; margin-bottom: 4px; padding: 3px 9px 3px 7px; border-radius: 11px; background: var(--c); color: #fff; font: 700 11px var(--sans); letter-spacing: .04em; }
+  #app .fplate .fstrat svg { width: 12px; height: 12px; fill: currentColor; stroke: none; }
+  .fplate .fp-t b.fwin { display: flex; align-items: center; gap: 8px; }
+  .fplate .fp-t b.fwin::before { content: ""; width: 12px; height: 12px; flex: none; border-radius: 6px; background: var(--c); }
+  .fplate .fp-t b.fwin + small { white-space: normal; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+  #app #col .fhow .pillbtn svg { width: 14px; height: 14px; }
   body.frame #col > .chead, body.frame #col > .prog, body.frame #col > .stack, body.frame #col > .navrow { display: none !important; }
   .fplate { display: flex; align-items: center; gap: 12px; }
   #col .fextra { order: 2; display: flex; gap: 8px; }

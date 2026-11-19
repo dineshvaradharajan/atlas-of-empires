@@ -1,0 +1,55 @@
+{
+  "war": "taiping-rebellion",
+  "hook": "Hong Xiuquan, a failed examination candidate who believed he was Jesus's younger brother, raised an army of the poor to overthrow China's Manchu Qing rulers.",
+  "sides": [
+    {
+      "strength": "c. 860,000",
+      "strengthWhat": "regular troops, 1851",
+      "who": "The Qing empire's Banner and Green Standard armies, new provincial forces such as the Xiang and Huai armies, and Western-officered units",
+      "leaders": ["Zeng Guofan", "Li Hongzhang", "Charles Gordon"]
+    },
+    {
+      "strength": "c. 500,000",
+      "strengthWhat": "under arms, 1852",
+      "who": "Hong Xiuquan's God Worshippers, first drawn from the poor of Guangxi, and the Taiping Heavenly Kingdom they ruled from Nanjing",
+      "leaders": ["Hong Xiuquan", "Yang Xiuqing", "Li Xiucheng"]
+    }
+  ],
+  "winner": 0,
+  "status": "ended",
+  "result": "Qing victory",
+  "resultLine": "Qing troops under Zeng Guoquan blew a breach in Nanjing's walls and took the city on 19 July 1864, seven weeks after Hong Xiuquan's death.",
+  "strategies": [
+    {
+      "side": 1,
+      "name": "The Northern Expedition",
+      "text": "In 1853 the Taiping sent an army north to seize Beijing. Swelling to some 70,000–80,000 men, it turned aside for Tianjin instead, then froze, starved and was destroyed by 1855.",
+      "chapter": "northern"
+    },
+    {
+      "side": 0,
+      "name": "Zeng Guofan's Xiang Army",
+      "text": "When imperial troops failed, Zeng raised a well-paid, well-drilled army from Hunan villages. With troops and warships it fought slowly down the Yangtze, taking Anqing in 1861 and closing on Nanjing.",
+      "chapter": "anqing"
+    },
+    {
+      "side": 0,
+      "name": "The Ever Victorious Army",
+      "text": "Chinese soldiers trained and led by Western officers, first Frederick Ward and then Charles Gordon, about 5,000 strong, helped beat off the attack on Shanghai in 1862 and retake rebel strongholds.",
+      "chapter": "zhejiang"
+    }
+  ],
+  "impact": [
+    "With 20–30 million or more dead, it was among the deadliest wars ever, and parts of central China took a century to recover.",
+    "Power shifted from the court to provincial armies and their commanders, weakening the Qing hold on central China.",
+    "The shock spurred the Self-Strengthening Movement, an effort to modernise China's armies and industry."
+  ],
+  "sources": [
+    { "title": "Columbia University, Asia for Educators: Taiping Rebellion (1850–1864)", "url": "http://afe.easia.columbia.edu/special/china_1750_taiping.htm" },
+    { "title": "Taiping Rebellion (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Taiping_Rebellion" },
+    { "title": "Northern Expedition (Taiping Rebellion) (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Northern_Expedition_(Taiping_Rebellion)" },
+    { "title": "Battle of Anqing (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Battle_of_Anqing" },
+    { "title": "Ever Victorious Army (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Ever_Victorious_Army" },
+    { "title": "Third Battle of Nanjing (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Third_Battle_of_Nanjing" }
+  ]
+}
