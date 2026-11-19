@@ -1,0 +1,51 @@
+{
+ "war": "korean-war",
+ "sides": [
+  [
+   {
+    "name": "South Korea",
+    "flag": "flags/flag-of-south-korea--1949-1984-.png",
+    "commons": "File:Flag_of_South_Korea_(1949–1984).svg",
+    "licence": "Public domain"
+   },
+   {
+    "name": "United States",
+    "flag": "flags/flag-of-the-united-states--1912-1959-.png",
+    "commons": "File:Flag_of_the_United_States_(1912-1959).svg",
+    "licence": "Public domain"
+   },
+   {
+    "name": "United Nations",
+    "flag": "flags/flag-of-the-united-nations.png",
+    "commons": "File:Flag_of_the_United_Nations.svg",
+    "licence": "Public domain"
+   },
+   {
+    "name": "United Kingdom",
+    "flag": "flags/flag-of-the-united-kingdom--1-2-.png",
+    "commons": "File:Flag_of_the_United_Kingdom_(1-2).svg",
+    "licence": "Public domain"
+   }
+  ],
+  [
+   {
+    "name": "North Korea",
+    "flag": "flags/flag-of-north-korea.png",
+    "commons": "File:Flag_of_North_Korea.svg",
+    "licence": "Public domain"
+   },
+   {
+    "name": "China",
+    "flag": "flags/flag-of-the-people-s-republic-of-china.png",
+    "commons": "File:Flag_of_the_People's_Republic_of_China.svg",
+    "licence": "Public domain"
+   },
+   {
+    "name": "Soviet Union",
+    "flag": "flags/flag-of-the-soviet-union--1936---1955-.png",
+    "commons": "File:Flag_of_the_Soviet_Union_(1936_–_1955).svg",
+    "licence": "Public domain"
+   }
+  ]
+ ]
+}

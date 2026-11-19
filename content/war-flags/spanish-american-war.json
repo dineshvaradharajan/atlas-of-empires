@@ -1,0 +1,33 @@
+{
+  "war": "spanish-american-war",
+  "sides": [
+    [
+      {
+        "name": "United States",
+        "flag": "flags/flag-of-the-united-states--1896-1908-.png",
+        "commons": "File:Flag_of_the_United_States_(1896–1908).svg",
+        "licence": "Public domain"
+      },
+      {
+        "name": "Cuban Liberation Army",
+        "flag": "flags/flag-of-cuba.png",
+        "commons": "File:Flag_of_Cuba.svg",
+        "licence": "Public domain"
+      },
+      {
+        "name": "Philippine revolutionaries",
+        "flag": "flags/flag-of-the-philippines--1898-1901-.png",
+        "commons": "File:Flag_of_the_Philippines_(1898–1901).svg",
+        "licence": "Public domain"
+      }
+    ],
+    [
+      {
+        "name": "Kingdom of Spain",
+        "flag": "flags/flag-of-spain--1785-1873--1875-1931-.png",
+        "commons": "File:Flag_of_Spain_(1785–1873,_1875–1931).svg",
+        "licence": "CC BY-SA 3.0"
+      }
+    ]
+  ]
+}

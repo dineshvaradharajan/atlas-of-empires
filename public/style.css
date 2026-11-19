@@ -189,15 +189,24 @@ h3.sec { margin: 4px 0 -4px; font: 600 12px var(--sans); letter-spacing: .12em; 
 .streak .dots i.now { background: var(--highlight); }
 /* a war's opening (the sides face to face), its strategies and its outcome */
 .whook { font: 500 18px/1.4 var(--sans); color: var(--ink); }
-.vs { display: grid; grid-template-columns: minmax(0, 1fr); gap: 6px; }
-.vsx { justify-self: center; position: relative; z-index: 1; width: 34px; height: 34px; margin: -14px 0; display: grid; place-items: center; border-radius: 17px; background: var(--ink); color: var(--bg); box-shadow: 0 0 0 4px var(--bg); font: 800 13px var(--display); text-transform: uppercase; }
-.vside { min-width: 0; display: flex; flex-direction: column; gap: 4px; padding: 14px 14px 14px 16px; border: 1px solid var(--rule); border-left: 5px solid var(--c); border-radius: 16px; background: var(--bg); }
-.vside .vname { font: 700 14px/1.25 var(--sans); }
-.vside .vnum { font: 900 26px/1.05 var(--display); color: var(--c); letter-spacing: -.01em; }
-.vside .vwhat { font: 500 12px var(--sans); color: var(--ink-3); margin-top: -2px; }
-.vside .vlead { font: 600 13px/1.35 var(--sans); color: var(--ink); margin-top: 4px; }
-.vside .vwho { font: 400 13px/1.4 var(--sans); color: var(--ink-2); }
-.strat { display: flex; flex-direction: column; gap: 4px; padding: 14px 16px; border-radius: 16px; background: var(--chip); border-left: 5px solid var(--c); }
+/* the sides as an order of battle: ruled rows, flags, the army in ink and a bar in the side's map colour */
+.ob { border-top: 1px solid var(--ink); }
+.obside { min-width: 0; display: flex; flex-direction: column; gap: 6px; padding: 14px 0 16px; border-bottom: 1px solid var(--rule); }
+.ob-h { display: flex; align-items: center; gap: 8px; min-width: 0; }
+.ob-sw { width: 10px; height: 10px; flex: none; border-radius: 2px; background: var(--c); }
+.ob-h b { flex: 1 1 auto; min-width: 0; font: 800 16px/1.25 var(--display); }
+.ob-fl, .fv-fl { display: flex; flex: none; gap: 4px; }
+.ob-fl img, .fv-fl img { display: block; height: 16px; width: auto; max-width: 32px; border-radius: 2px; box-shadow: 0 0 0 1px rgba(0, 0, 0, .14); }
+.ob-n { display: flex; align-items: baseline; flex-wrap: wrap; gap: 2px 8px; }
+.ob-n span { font: 900 24px/1.05 var(--display); letter-spacing: -.01em; font-variant-numeric: tabular-nums; }
+.ob-n small { font: 500 13px var(--sans); color: var(--ink-3); }
+.armybar { display: flex; height: 6px; border-radius: 3px; background: var(--chip); overflow: hidden; }
+.armybar i { background: var(--c); }
+.armybar i.r { opacity: .35; } /* the upper end of a range */
+.ob-led { margin: 2px 0 0; font: 500 14px/1.4 var(--sans); color: var(--ink); }
+.ob-led span { font-weight: 400; color: var(--ink-3); }
+.ob-who { margin: 0; font: 400 13px/1.45 var(--sans); color: var(--ink-2); }
+.strat { display: flex; flex-direction: column; gap: 4px; padding: 12px 0 2px; border-top: 2px solid var(--c); }
 .strat b { font: 800 18px/1.2 var(--display); }
 .strat p { margin: 0; font: 400 15px/1.45 var(--sans); color: var(--ink-2); }
 .outcome { display: flex; flex-direction: column; gap: 6px; padding: 16px; border-radius: 18px; background: var(--ink); color: var(--bg); }
@@ -205,9 +214,9 @@ h3.sec { margin: 4px 0 -4px; font: 600 12px var(--sans); letter-spacing: .12em; 
 .outcome b { display: flex; align-items: center; gap: 10px; font: 900 26px/1.1 var(--display); }
 .outcome b::before { content: ""; width: 14px; height: 14px; flex: none; border-radius: 7px; background: var(--c); box-shadow: 0 0 0 2px var(--bg); }
 .outcome p { margin: 0; font: 400 15px/1.45 var(--sans); color: var(--rule-2); }
-.strats { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; counter-reset: st; }
-.strats li { position: relative; display: flex; flex-direction: column; gap: 3px; padding: 12px 14px 12px 52px; border: 1px solid var(--rule); border-radius: 16px; counter-increment: st; }
-.strats li::before { content: counter(st); position: absolute; left: 12px; top: 12px; width: 28px; height: 28px; display: grid; place-items: center; border-radius: 14px; background: var(--c); color: #fff; font: 800 14px var(--display); }
+.strats { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; border-top: 1px solid var(--ink); counter-reset: st; }
+.strats li { position: relative; display: flex; flex-direction: column; gap: 3px; padding: 12px 0 14px 40px; border-bottom: 1px solid var(--rule); counter-increment: st; }
+.strats li::before { content: counter(st); position: absolute; left: 0; top: 10px; font: 900 24px/1 var(--display); color: var(--c); font-variant-numeric: tabular-nums; }
 .strats .st-side { font: 600 11px var(--sans); letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); }
 .strats b { font: 800 17px/1.2 var(--display); }
 .strats p { margin: 0; font: 400 14px/1.45 var(--sans); color: var(--ink-2); }
@@ -779,13 +788,13 @@ body.sdock #dock { border-radius: 24px; }
   .whook { font-size: 17px; }
   body.frame[data-view="war"] #col > .kicker:not(.grey), body.frame[data-view="war"] #col > h1.ttl { display: none; } /* the plate already names the war */
   body.frame #sheet:not([data-detent="peek"]) > #col > .fvs, body.frame #col > .outcome { display: none; }
-  .fvs { display: flex; gap: 6px; }
-  .fvs.many { flex-direction: column; gap: 4px; }
-  .fvside { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 1px; padding: 8px 12px; border-radius: 14px; background: var(--chip); border-left: 4px solid var(--c); }
-  .fvs.many .fvside { flex-direction: row; align-items: baseline; justify-content: space-between; gap: 8px; padding: 6px 12px; }
-  .fvside b { min-width: 0; font: 600 12px var(--sans); color: var(--ink-2); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-  .fvside span { flex: none; font: 900 19px/1.1 var(--display); color: var(--c); }
-  .fvs.many .fvside span { font-size: 15px; }
+  .fvs { display: flex; flex-direction: column; padding: 2px 4px 0; }
+  .fvside { min-width: 0; display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 5px 8px; padding: 8px 0; border-top: 1px solid var(--rule); }
+  .fvside:first-child { border-top: 0; }
+  .fvside .fv-fl img { height: 14px; max-width: 26px; }
+  .fvside b { min-width: 0; font: 600 13px var(--sans); color: var(--ink); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .fvside span { font: 900 16px/1.1 var(--display); font-variant-numeric: tabular-nums; }
+  .fvside .armybar { grid-column: 1 / -1; height: 4px; }
   .fplate .fp-t .fstrat { align-self: flex-start; display: inline-flex; align-items: center; gap: 5px; margin-bottom: 4px; padding: 3px 9px 3px 7px; border-radius: 11px; background: var(--c); color: #fff; font: 700 11px var(--sans); letter-spacing: .04em; }
   #app .fplate .fstrat svg { width: 12px; height: 12px; fill: currentColor; stroke: none; }
   .fplate .fp-t b.fwin { display: flex; align-items: center; gap: 8px; }

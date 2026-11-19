@@ -1,0 +1,33 @@
+{
+  "war": "paraguayan-war",
+  "sides": [
+    [
+      {
+        "name": "Empire of Brazil",
+        "flag": "flags/flag-of-brazil--1853-1889-.png",
+        "commons": "File:Flag_of_Brazil_(1853-1889).svg",
+        "licence": "Public domain"
+      },
+      {
+        "name": "Argentina",
+        "flag": "flags/flag-of-argentina.png",
+        "commons": "File:Flag_of_Argentina.svg",
+        "licence": "Public domain"
+      },
+      {
+        "name": "Uruguay",
+        "flag": "flags/flag-of-uruguay.png",
+        "commons": "File:Flag_of_Uruguay.svg",
+        "licence": "Public domain"
+      }
+    ],
+    [
+      {
+        "name": "Paraguay",
+        "flag": "flags/flag-of-paraguay--1842-1954-.png",
+        "commons": "File:Flag_of_Paraguay_(1842–1954).svg",
+        "licence": "Public domain"
+      }
+    ]
+  ]
+}

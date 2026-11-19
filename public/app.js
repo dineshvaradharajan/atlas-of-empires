@@ -2373,9 +2373,9 @@ async function openWar(id, idx = 0, chap = null) {
   S.cineK = cineKnots(w, S.cine);
   $("#cine").hidden = false; document.body.classList.add("warmode");
   if (S.legendHTML == null) S.legendHTML = $("#legend").innerHTML;
-  if (story()) await openChapter(chap ?? chapterForTime(evTime(w.events[S.wIdx] || {})));
+  if (story() && w.brief && idx === 0 && chap == null) await openWarPart("cover"); // from the start: who fought, and how many
+  else if (story()) await openChapter(chap ?? chapterForTime(evTime(w.events[S.wIdx] || {})));
   else await goWarEvent(S.wIdx, true);
-  if (S.war === w && story() && w.brief && idx === 0 && chap == null) await openWarPart("cover"); // from the start: who fought, and how many
 }
 // A war's opening (the sides, their armies and leaders) and its outcome (who won, how, and what it changed),
 // either side of its stages. The map shows the whole war.
@@ -2392,14 +2392,33 @@ const warBox = () => S.cine.chapters.reduce((b, c) => [Math.min(b[0], c.bbox[0])
 const sideName = (sd) => sd.name.replace(/\s*\([^)]*\)\s*$/, ""); // "Mexico", not "Mexico (with …)": the brief's "who" names everyone
 const sideColor = (i) => SIDE_COLORS[i % SIDE_COLORS.length];
 const stratFor = (w, ch) => (ch && w.brief?.strategies?.filter((s) => s.chapter === ch.id)) || [];
+// "c. 60,000–100,000" → {lo, hi}; "c. 23–25 million" and "c. 750,000–1 million" both read right
+function armyNum(s) {
+  const m = String(s || "").replace(/,/g, "").match(/(\d+(?:\.\d+)?)\s*(million)?(?:\s*[–-]\s*(\d+(?:\.\d+)?)\s*(million)?)?/i);
+  if (!m) return null;
+  let lo = +m[1], hi = m[3] ? +m[3] : lo;
+  if (m[4]) { hi *= 1e6; if (!m[2] && lo < 1000) lo *= 1e6; }
+  if (m[2]) { lo *= 1e6; if (!m[3]) hi = lo; }
+  return lo > 0 ? { lo, hi: Math.max(lo, hi) } : null;
+}
+function sideCards(w) { // each side with its brief, colour and, when two or more sides have figures, its share of the largest army
+  const sides = w.sides.map((sd, i) => { const b = w.brief?.sides?.[i] || {}; return { name: sideName(sd), b, c: sideColor(i), n: armyNum(b.strength) }; });
+  // only like with like: when two or more sides count the same thing, a side counting something else gets no bar
+  const what = {}; for (const s of sides) if (s.n) what[s.b.strengthWhat || ""] = (what[s.b.strengthWhat || ""] || 0) + 1;
+  const common = Object.entries(what).sort((a, b) => b[1] - a[1])[0], basis = common && common[1] > 1 ? common[0] : null;
+  for (const s of sides) if (s.n && basis != null && (s.b.strengthWhat || "") !== basis) s.n = null;
+  const max = Math.max(0, ...sides.map((s) => s.n?.hi || 0)), bars = sides.filter((s) => s.n).length > 1;
+  for (const s of sides) s.bar = bars && s.n ?`<span class="armybar" aria-hidden="true"><i style="width:${Math.max(1.5, s.n.lo / max * 100).toFixed(1)}%"></i>${s.n.hi > s.n.lo ? `<i class="r" style="width:${((s.n.hi - s.n.lo) / max * 100).toFixed(1)}%"></i>` : ""}</span>` : "";
+  return sides;
+}
+const sideFlags = (b, cls) => b.flags?.length ? `<span class="${cls}">${b.flags.map((f) => `<img src="${esc(f.flag)}" alt="" title="${esc(f.name)}" loading="lazy">`).join("")}</span>` : "";
 function warCoverHTML(w) {
   const B = w.brief;
   let h = B.hook ? `<p class="whook">${esc(B.hook)}</p>` : "";
-  h += `<div class="vs${w.sides.length > 2 ? " many" : ""}">${w.sides.map((sd, i) => {
-    const b = B.sides?.[i] || {};
-    return `${i && w.sides.length === 2 ? `<span class="vsx" aria-hidden="true">vs</span>` : ""}<div class="vside" style="--c:${sideColor(i)}"><b class="vname">${esc(sideName(sd))}</b>${b.strength ? `<span class="vnum">${esc(b.strength)}</span><small class="vwhat">${esc(b.strengthWhat || "")}</small>` : ""}${b.leaders?.length ? `<span class="vlead">Led by ${esc(b.leaders.join(", "))}</span>` : ""}${b.who ? `<span class="vwho">${esc(b.who)}</span>` : ""}</div>`;
-  }).join("")}</div>`;
+  h += `<div class="ob">${sideCards(w).map(({ name, b, c, bar }) => `<section class="obside" style="--c:${c}"><div class="ob-h"><i class="ob-sw"></i><b>${esc(name)}</b>${sideFlags(b, "ob-fl")}</div>${b.strength ? `<div class="ob-n"><span>${esc(b.strength)}</span>${b.strengthWhat ? `<small>${esc(b.strengthWhat)}</small>` : ""}</div>` : ""}${bar}${b.leaders?.length ? `<p class="ob-led"><span>Led by</span> ${b.leaders.map(esc).join(" · ")}</p>` : ""}${b.who ? `<p class="ob-who">${esc(b.who)}</p>` : ""}</section>`).join("")}</div>`;
   if (w.casualties) h += `<p class="note">${esc(w.casualties)}</p>`;
+  const flags = (B.sides || []).flatMap((b) => b.flags || []).filter((f) => f.commons);
+  if (flags.length) h += `<details class="srcs"><summary>Flags</summary><ol class="refs">${flags.map((f) => `<li><a href="https://commons.wikimedia.org/wiki/${encodeURI(f.commons.replace(/ /g, "_"))}" target="_blank" rel="noopener">${esc(f.name)}</a>${f.licence ? ` · ${esc(f.licence)}` : ""}, Wikimedia Commons</li>`).join("")}</ol></details>`;
   return h;
 }
 function warEndHTML(w) {
@@ -2417,8 +2436,8 @@ function warEndHTML(w) {
 const STAR = ic('<path d="m12 3.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8-4.3-4.1 5.9-.9z"/>');
 function coverPlateHTML(w) { // phones: the war's opening card, the sides face to face
   const B = w.brief;
-  const sides = w.sides.map((sd, i) => { const b = B.sides?.[i] || {}; return `<div class="fvside" style="--c:${sideColor(i)}"><b>${esc(sideName(sd))}</b>${b.strength ? `<span>${esc(b.strength)}</span>` : ""}</div>`; }).join("");
-  return `<div class="fplate"><button class="fp-t" data-act="fmore"><span class="kicker">War · ${esc(rangeText(w.span[0], w.span[1]))}</span><b>${esc(w.name)}</b><small>${B.sides?.some((x) => x.strength) ? "Who fought, and how many" : "Who fought"}</small></button><button class="fnext" data-chap="0" aria-label="Begin the story">${I.right}</button></div><div class="fvs${w.sides.length > 2 ? " many" : ""}">${sides}</div>`;
+  const sides = sideCards(w).map(({ name, b, c, bar }) => `<div class="fvside" style="--c:${c}">${sideFlags(b, "fv-fl") || `<i class="ob-sw"></i>`}<b>${esc(name)}</b>${b.strength ? `<span>${esc(b.strength)}</span>` : ""}${bar}</div>`).join("");
+  return `<div class="fplate"><button class="fp-t" data-act="fmore"><span class="kicker">War · ${esc(rangeText(w.span[0], w.span[1]))}</span><b>${esc(w.name)}</b><small>${B.sides?.some((x) => x.strength) ? "Who fought, and how many" : "Who fought"}</small></button><button class="fnext" data-chap="0" aria-label="Begin the story">${I.right}</button></div><div class="fvs">${sides}</div>`;
 }
 function endPlateHTML(w) { // phones: who won
   const B = w.brief, win = B.winner;
@@ -2536,9 +2555,17 @@ function alignTo(pts, prev, closed) { // match point order to the previous keyfr
   if (!prev) return pts;
   if (!closed) return d2(pts[0], prev[0]) + d2(pts[pts.length - 1], prev[prev.length - 1]) > d2(pts[0], prev[prev.length - 1]) + d2(pts[pts.length - 1], prev[0]) ? pts.slice().reverse() : pts;
   let r = Math.sign(sArea(pts)) !== Math.sign(sArea(prev)) ? pts.slice().reverse() : pts;
+  // the rotation of r closest to prev; flat arrays (r written twice, so no modulo) and each try stops once it is already worse
+  const n = r.length, m = Math.min(n, prev.length), R = new Float64Array(4 * n), Q = new Float64Array(2 * m);
+  for (let j = 0; j < n; j++) { R[2 * j] = R[2 * (j + n)] = r[j][0]; R[2 * j + 1] = R[2 * (j + n) + 1] = r[j][1]; }
+  for (let j = 0; j < m; j++) { Q[2 * j] = prev[j][0]; Q[2 * j + 1] = prev[j][1]; }
   let best = 0, bestD = Infinity;
-  for (let o = 0; o < r.length; o++) { let s = 0; for (let j = 0; j < r.length; j++) s += d2(r[(j + o) % r.length], prev[j]); if (s < bestD) { bestD = s; best = o; } }
-  return r.map((_, j) => r[(j + best) % r.length]);
+  for (let o = 0; o < n; o++) {
+    let s = 0;
+    for (let j = 0, a = 2 * o; j < 2 * m && s < bestD; j += 2, a += 2) { const dx = R[a] - Q[j], dy = R[a + 1] - Q[j + 1]; s += dx * dx + dy * dy; }
+    if (s < bestD) { bestD = s; best = o; }
+  }
+  return r.map((_, j) => r[(j + best) % n]);
 }
 function smoothLL(pts) { // Catmull-Rom through the path's points
   if (pts.length < 3) return pts.map((p) => [p[0], p[1]]);
@@ -2556,7 +2583,8 @@ function smoothLL(pts) { // Catmull-Rom through the path's points
 async function loadCinema(w) {
   if (!w.cinema) return null;
   if (w._cine) return w._cine;
-  const c = await fetchJSON(`data/cinema/${encodeURIComponent(w.id)}.json`);
+  const c = await prefetchCinema(w);
+  if (w._cine) return w._cine; // another caller prepared it while this one waited
   const prep = (x, closed) => {
     let prev = null;
     x.keys = (x.keys || []).map((k) => { const pts = alignTo(resample(k.line || k.coords, closed ? 192 : 128, closed), prev, closed); prev = pts; return { t: fracDate(k.date), pts }; });
@@ -2570,6 +2598,12 @@ async function loadCinema(w) {
   (c.chapters = c.chapters || []).forEach((ch) => { ch.t0 = fracDate(ch.start); ch.t1 = fracDate(ch.end); ch.arrowSet = new Set(ch.arrows || []); });
   return (w._cine = c);
 }
+// start downloading a war's stages as soon as a finger or pointer lands on its link, so they are there by the click
+function prefetchCinema(w) {
+  if (!w?.cinema) return Promise.resolve(null);
+  return (w._cineP ||= fetchJSON(`data/cinema/${encodeURIComponent(w.id)}.json`).catch((e) => { w._cineP = null; throw e; }));
+}
+for (const ev of ["pointerover", "touchstart", "focusin"]) document.addEventListener(ev, (e) => { const id = e.target.closest?.("[data-war]")?.dataset.war; if (id) prefetchCinema(warById(id)).catch(() => {}); }, { passive: true });
 function trackAt(x, t, holdTo) { // interpolated shape of a front or occupied area at time t, with fade in/out
   const k = x.keys, FADE = 0.05;
   if (!k.length || t < k[0].t - FADE) return null;
