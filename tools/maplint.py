@@ -129,6 +129,26 @@ def raster(states):
     return owner, over
 
 
+BAND_CELLS = int(os.environ.get("BAND_CELLS", "1"))  # the app's coast band (BAND_KM in public/app.js, ~14 km) at 0.1°
+
+
+def band_fill(owner, land, states):
+    """What the app's coast band covers: unclaimed land next to an ordinary realm takes that realm's colour."""
+    if not BAND_CELLS:
+        return owner
+    ok = [False] + [not (st.recon or st.crop or st.cut) for st in states]
+    out = array.array("H", owner)
+    for _ in range(BAND_CELLS):
+        src = array.array("H", out)
+        for i in range(W * H):
+            if land[i] and not src[i]:
+                for j in neighbours8(i):
+                    o = src[j]
+                    if o and ok[o]:
+                        out[i] = o; break
+    return out
+
+
 def neighbours4(i):
     r, c = divmod(i, W)
     if c > 0: yield i - 1
@@ -288,7 +308,7 @@ def lint_years(years):
         states = B.states(y)
         by, land = land_for(y)
         owner, over = raster(states)
-        sl = slivers(owner, land, states)
+        sl = slivers(band_fill(owner, land, states), land, states)
         fr = fragments(owner, land, states)
         bl = blocky(states)
         for it in sl:

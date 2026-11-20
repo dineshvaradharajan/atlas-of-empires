@@ -731,6 +731,14 @@ function realmsNow(raw = false) {
 // Territory fills, borders and graticule are drawn on the GPU (#gl) when WebGL is available; labels, pins and
 // highlight outlines stay on the 2D overlay (#map). Shapes are projected once, triangulated with earcut and cached,
 // so pan/zoom only change two uniforms; year changes cross-fade. Falls back to Canvas2D if WebGL is unavailable.
+// Coast band: the land layer's coastline and the realms' outlines come from different sources, so thin strips of land
+// (and thin gaps between realms) are left unclaimed and show as grey or hatched. Under every realm a band of its own
+// colour, about BAND_KM wide beyond its edge and clipped to land, is drawn before any realm is filled: it shows only
+// where no realm covers the land (tools/maplint.py measures these strips). Cropped, cut and reconstructed shapes get none.
+const BAND_KM = 14;
+const banded = (it) => it.kind === "state" && !it.p.recon && !it.p.crop && !it.p.cut;
+const bandUnits = () => { const a = projection([0, 0]), b = projection([1, 0]); return (BAND_KM * Math.hypot(b[0] - a[0], b[1] - a[1])) / 111.32; }; // km in zoom-1 map units
+
 const GL = (() => {
   const cv = document.getElementById("gl");
   if (!cv || typeof earcut !== "function") return null;
@@ -786,6 +794,24 @@ const GL = (() => {
     geo.set(feature, g);
     return g;
   }
+  let bandGeo = new WeakMap(); // feature -> Float32Array of band triangles (quads along each edge, squares at corners)
+  function band(feature) {
+    let g = bandGeo.get(feature);
+    if (g) return g;
+    const h = bandUnits(), out = [];
+    for (const r of rings(feature)) {
+      for (let i = 0; i < r.length; i += 2) {
+        const j = (i + 2) % r.length, x1 = r[i], y1 = r[i + 1], x2 = r[j], y2 = r[j + 1], dx = x2 - x1, dy = y2 - y1, len = Math.hypot(dx, dy);
+        if (len > 0) {
+          const nx = (-dy / len) * h, ny = (dx / len) * h;
+          out.push(x1 + nx, y1 + ny, x1 - nx, y1 - ny, x2 + nx, y2 + ny, x2 + nx, y2 + ny, x1 - nx, y1 - ny, x2 - nx, y2 - ny);
+        }
+        out.push(x1 - h, y1 - h, x1 + h, y1 - h, x1 + h, y1 + h, x1 - h, y1 - h, x1 + h, y1 + h, x1 - h, y1 + h); // corner
+      }
+    }
+    g = new Float32Array(out); bandGeo.set(feature, g);
+    return g;
+  }
   // A "layer" = one uploaded vertex buffer for a set of items, with per-item ranges.
   function makeLayer(items) {
     let nf = 0, nl = 0;
@@ -796,9 +822,15 @@ const GL = (() => {
     const fb = gl.createBuffer(), lb = gl.createBuffer();
     gl.bindBuffer(gl.ARRAY_BUFFER, fb); gl.bufferData(gl.ARRAY_BUFFER, fill, gl.STATIC_DRAW);
     gl.bindBuffer(gl.ARRAY_BUFFER, lb); gl.bufferData(gl.ARRAY_BUFFER, line, gl.STATIC_DRAW);
-    return { items, fb, lb, ranges };
+    // coast bands (see BAND_KM), in the realms' drawing order
+    const bs = items.map((it) => (banded(it) ? band(it.f) : null)), nb = bs.reduce((n, g) => n + (g ? g.length : 0), 0);
+    const bandArr = new Float32Array(nb), bandRanges = [];
+    let ob = 0;
+    bs.forEach((g, i) => { if (g && g.length) { bandArr.set(g, ob); bandRanges.push({ it: items[i], b0: ob / 2, bn: g.length / 2 }); ob += g.length; } });
+    const bb = gl.createBuffer(); gl.bindBuffer(gl.ARRAY_BUFFER, bb); gl.bufferData(gl.ARRAY_BUFFER, bandArr, gl.STATIC_DRAW);
+    return { items, fb, lb, ranges, bb, bandRanges };
   }
-  const freeLayer = (l) => { if (l) { gl.deleteBuffer(l.fb); gl.deleteBuffer(l.lb); } };
+  const freeLayer = (l) => { if (l) { gl.deleteBuffer(l.fb); gl.deleteBuffer(l.lb); gl.deleteBuffer(l.bb); } };
   let cur = null, prev = null, fadeT0 = 0, statics = null, landLayer = null, pending = null;
   const FADE = 260;
   function setItems(items) {
@@ -828,8 +860,23 @@ const GL = (() => {
   function drawLayer(layer, fillOf, alpha) {
     bindPos(layer.fb);
     const later = [];
+    let bandsDone = false;
     for (const r of layer.ranges) {
       if (!r.fn) continue;
+      if (!bandsDone && r.it.kind === "state") { // coast bands under every realm, clipped to land (see BAND_KM)
+        bandsDone = true;
+        if (layer.bandRanges.length) {
+          gl.enable(gl.STENCIL_TEST); gl.clearStencil(0); gl.clear(gl.STENCIL_BUFFER_BIT);
+          gl.colorMask(false, false, false, false); gl.stencilFunc(gl.ALWAYS, 1, 0xff); gl.stencilOp(gl.KEEP, gl.KEEP, gl.REPLACE);
+          if (!landLayer) landLayer = makeLayer(S.items.filter((it) => it.kind !== "state"));
+          bindPos(landLayer.fb); color("#000"); for (const q of landLayer.ranges) if (q.fn) gl.drawArrays(gl.TRIANGLES, q.f0, q.fn);
+          gl.colorMask(true, true, true, true); gl.stencilOp(gl.KEEP, gl.KEEP, gl.KEEP); gl.stencilFunc(gl.EQUAL, 1, 0xff);
+          bindPos(layer.bb);
+          for (const q of layer.bandRanges) { const f = fillOf(q.it); if (f !== "HATCH") { color(f, alpha); gl.drawArrays(gl.TRIANGLES, q.b0, q.bn); } }
+          gl.disable(gl.STENCIL_TEST);
+          bindPos(layer.fb);
+        }
+      }
       if (r.it.p.recon || r.it.p.crop || r.it.p.cut) { later.push(r); continue; }
       const f = fillOf(r.it);
       if (f === "HATCH") { const a = rgba(theme.peoplesBg), b = rgba(theme.peoplesLine); gl.uniform4f(U.c, ...a); gl.uniform4f(U.c2, ...b); gl.uniform1f(U.hatch, 1); gl.uniform1f(U.a, alpha); }
@@ -950,7 +997,7 @@ const GL = (() => {
   }
   return {
     loadTexture,
-    resize(w, h, dpr) { cv.width = Math.round(w * dpr); cv.height = Math.round(h * dpr); geo = new WeakMap(); freeLayer(cur); freeLayer(prev); freeLayer(landLayer); cur = prev = landLayer = null; statics = null; mesh = null; },
+    resize(w, h, dpr) { cv.width = Math.round(w * dpr); cv.height = Math.round(h * dpr); geo = new WeakMap(); bandGeo = new WeakMap(); freeLayer(cur); freeLayer(prev); freeLayer(landLayer); cur = prev = landLayer = null; statics = null; mesh = null; },
     setItems,
     warm(features) { // triangulate shapes ahead of time, a few milliseconds at a time while the browser is idle
       const todo = features.filter((f) => f && !geo.has(f));
@@ -1212,7 +1259,14 @@ function draw() {
   theme.hatch.setTransform(new DOMMatrix().scale(1 / t.k)); // constant stripe width at any zoom
   let coast = false; // consecutive reconstructions share one coastline clip (one per realm exhausts memory, see drawGL)
   const toCoast = (on) => { if (on === coast) return; if (on) { ctx.save(); ctx.clip(S.landClip); } else ctx.restore(); coast = on; };
+  let bandsDone = false;
   for (const it of S.items) {
+    if (!bandsDone && it.kind === "state") { // coast bands under every realm, clipped to land (see BAND_KM)
+      bandsDone = true; toCoast(false);
+      ctx.save(); ctx.clip(S.landClip); ctx.lineJoin = "round"; ctx.lineWidth = 2 * bandUnits();
+      for (const b of S.items) if (banded(b)) { const f = fillOf(b); if (f !== "HATCH") { ctx.strokeStyle = f; ctx.stroke(pathOf(b.f)); } }
+      ctx.restore();
+    }
     toCoast(!!it.p.recon);
     const fl = fillOf(it); ctx.fillStyle = fl === "HATCH" ? theme.hatch : fl;
     if (it.p.crop || it.p.cut) { ctx.save(); clipFor(ctx, { p: { crop: it.p.crop, cut: it.p.cut } }); ctx.fill(pathOf(it.f)); ctx.restore(); }
