@@ -1,0 +1,56 @@
+{
+  "war": "spanish-american-wars-of-independence",
+  "hook": "When Napoleon seized Spain's king in 1808, Spanish Americans began to rule themselves; within two years their juntas were at war with Spain's loyal subjects across a continent.",
+  "sides": [
+    {
+      "strength": "c. 130,000",
+      "strengthWhat": "across all Spanish America",
+      "who": "Juntas and republics of Venezuela, New Granada, the Río de la Plata, Chile and Peru, later Gran Colombia, with British and Irish volunteers",
+      "leaders": ["Simón Bolívar", "José de San Martín", "Antonio José de Sucre"]
+    },
+    {
+      "strength": "c. 30,000",
+      "strengthWhat": "troops sent from Spain",
+      "who": "The Spanish Crown and its American loyalists, who made up most of the royalist armies, from Venezuelan plainsmen to the Royal Army of Peru",
+      "leaders": ["Pablo Morillo", "José de la Serna", "José Tomás Boves"]
+    }
+  ],
+  "winner": 0,
+  "status": "ended",
+  "result": "Patriot victory",
+  "resultLine": "After Sucre destroyed the Royal Army of Peru at Ayacucho on 9 December 1824, the last Spanish garrison in South America, at Callao, surrendered on 23 January 1826.",
+  "strategies": [
+    {
+      "side": 1,
+      "name": "The llanero war",
+      "text": "José Tomás Boves raised the cowboys of the Venezuelan plains against the creole republic, promising them the property of the rich. His mobile, merciless cavalry destroyed the Second Republic in 1814.",
+      "chapter": "second-republic"
+    },
+    {
+      "side": 0,
+      "name": "Crossing the Andes",
+      "text": "San Martín in 1817 and Bolívar in 1819 marched armies over passes thousands of metres high where no one expected them. Each surprise ended in a decisive victory, at Chacabuco and at Boyacá.",
+      "chapter": "boyaca"
+    },
+    {
+      "side": 0,
+      "name": "The continental strategy",
+      "text": "Both liberators saw that no country was safe while royalist Peru stood. San Martín went from Chile to Lima by sea, and Bolívar carried Gran Colombia's armies south through Quito until Junín and Ayacucho broke Spain's last army.",
+      "chapter": "junin-ayacucho"
+    }
+  ],
+  "impact": [
+    "Spain lost all its mainland American empire, keeping only Cuba and Puerto Rico until 1898.",
+    "New republics took shape: Gran Colombia, Peru, Bolivia, Chile and the United Provinces of the Río de la Plata.",
+    "Gran Colombia split into Venezuela, Colombia and Ecuador by 1831, ending Bolívar's dream of a great American union.",
+    "Bolívar freed enslaved men who joined his armies, the promise he had made to Haiti's president Alexandre Pétion in return for arms."
+  ],
+  "sources": [
+    { "title": "Wikipedia: Spanish American wars of independence", "url": "https://en.wikipedia.org/wiki/Spanish_American_wars_of_independence" },
+    { "title": "Wikipedia: Military career of Simón Bolívar", "url": "https://en.wikipedia.org/wiki/Military_career_of_Sim%C3%B3n_Bol%C3%ADvar" },
+    { "title": "Wikipedia: José Tomás Boves", "url": "https://en.wikipedia.org/wiki/Jos%C3%A9_Tom%C3%A1s_Boves" },
+    { "title": "Wikipedia: Battle of Ayacucho", "url": "https://en.wikipedia.org/wiki/Battle_of_Ayacucho" },
+    { "title": "Wikipedia: Second siege of Callao", "url": "https://en.wikipedia.org/wiki/Second_siege_of_Callao" },
+    { "title": "Wikipedia: Bolivian War of Independence", "url": "https://en.wikipedia.org/wiki/Bolivian_War_of_Independence" }
+  ]
+}
