@@ -7978,6 +7978,73 @@
      "url": "https://en.wikipedia.org/wiki/Dutch_Malacca"
     }
    ]
+  },
+  {
+   "id": "mongol-khanates-1260-1293",
+   "note": "After the Great Khan Möngke died in 1259, the Toluid civil war (1260-64) between Kublai and Ariq Böke broke the Mongol Empire into four khanates: the Golden Horde, the Chagatai Khanate, the Ilkhanate and Kublai's realm in Mongolia and China, which he proclaimed the Yuan dynasty in 1271. The border data draws one Mongol Empire until 1293 and starts the khanates in 1294. The khanates' 1294 outlines are used from 1260; Kublai's realm is drawn as the Mongol Empire (the Great Khanate) in 1260-1270 and as the Yuan from 1271, and the corrections layer ends the undivided empire in 1270. The Song still held southern China until 1276-79 and is drawn on top.",
+   "ops": [
+    {
+     "op": "copy",
+     "realm": "Golden Horde",
+     "year": 1294,
+     "years": [
+      1260,
+      1293
+     ]
+    },
+    {
+     "op": "copy",
+     "realm": "Chagatai Khanate",
+     "year": 1294,
+     "years": [
+      1260,
+      1293
+     ]
+    },
+    {
+     "op": "copy",
+     "realm": "Ilkhanate",
+     "year": 1294,
+     "years": [
+      1260,
+      1293
+     ]
+    },
+    {
+     "op": "copy",
+     "realm": "Yuan Dynasty",
+     "year": 1294,
+     "years": [
+      1271,
+      1293
+     ]
+    },
+    {
+     "op": "copy",
+     "realm": "Yuan Dynasty",
+     "year": 1294,
+     "name": "Mongol Empire",
+     "years": [
+      1260,
+      1270
+     ],
+     "replace": true
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Division of the Mongol Empire",
+     "url": "https://en.wikipedia.org/wiki/Division_of_the_Mongol_Empire"
+    },
+    {
+     "title": "Wikipedia: Toluid Civil War",
+     "url": "https://en.wikipedia.org/wiki/Toluid_Civil_War"
+    },
+    {
+     "title": "Wikipedia: Yuan dynasty",
+     "url": "https://en.wikipedia.org/wiki/Yuan_dynasty"
+    }
+   ]
   }
  ]
 }

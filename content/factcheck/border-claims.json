@@ -7332,7 +7332,7 @@
     "Yuan Dynasty"
    ],
    "map": [
-    "Mongol Empire"
+    "Yuan Dynasty"
    ],
    "region": "east-asia",
    "source": {
@@ -8278,7 +8278,8 @@
     "Southern Song"
    ],
    "map": [
-    "Southern Song"
+    "Southern Song",
+    "Yuan Dynasty"
    ],
    "region": "east-asia",
    "source": {
@@ -32110,10 +32111,11 @@
     33.31
    ],
    "expected": [
+    "Ilkhanate",
     "Mongol Empire"
    ],
    "map": [
-    "Mongol Empire"
+    "Ilkhanate"
    ],
    "region": "v3",
    "source": {

@@ -265,6 +265,13 @@ h3.sec { margin: 4px 0 -4px; font: 600 12px var(--sans); letter-spacing: .12em; 
 .hrow.gap { color: var(--ink-3); cursor: default; }
 .hrow.gap:hover { background: none; }
 .hrow.gap i.sq { border: 1.5px dashed var(--ink-3); }
+.hrows.rp { overflow-anchor: none; } /* earlier rulers slide in above the shown ones and push them down, in view */
+.hrow.more { color: var(--ink-2); }
+.hrow.more > svg { width: 12px; height: 16px; flex: none; }
+.hrow.more .nm b { font-weight: 600; }
+.hrow.enter { overflow: hidden; animation: hrow-in .42s cubic-bezier(.2, .7, .2, 1) var(--d, 0ms) backwards; }
+@keyframes hrow-in { from { opacity: 0; max-height: 0; min-height: 0; padding-top: 0; padding-bottom: 0; transform: translateY(-12px); } to { opacity: 1; max-height: 160px; transform: none; } }
+@media (prefers-reduced-motion: reduce) { .hrow.enter { animation: none; } }
 
 /* old content blocks kept inside the card */
 table.rulers { border-collapse: collapse; width: 100%; font-size: 14px; }

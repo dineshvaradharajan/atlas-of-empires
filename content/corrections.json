@@ -167,7 +167,7 @@
           "key": "Mongol khanates"
         }
       ],
-      "note": "The Golden Horde ended in 1502; The map also starts it only in 1294 (it existed from the 1240s as part of the Mongol Empire). Tokhtamysh raided Azerbaijan and sacked Tabriz in 1385 but did not hold it; south of Derbent, Shirvan was ruled by its own Shirvanshahs, vassals of Timur from 1386. The polygons dated 1547–1695 under this name lie over Mongolia, not the Volga: they are the Mongol khanates (the Khalkha in the north and centre, the Oirats in the west), shown under that name; the Khalkha became Qing vassals in 1691. Western Georgia was never Horde territory and is left out. Tokhtamysh only raided Azerbaijan in 1385, and Timur destroyed Urgench in 1388, so Transcaucasia (1385–94) and Khwarezm (from 1389) are left out.",
+      "note": "The Golden Horde ended in 1502; It existed from the 1240s as Batu's ulus within the Mongol Empire and became a separate khanate in the 1260s. Tokhtamysh raided Azerbaijan and sacked Tabriz in 1385 but did not hold it; south of Derbent, Shirvan was ruled by its own Shirvanshahs, vassals of Timur from 1386. The polygons dated 1547–1695 under this name lie over Mongolia, not the Volga: they are the Mongol khanates (the Khalkha in the north and centre, the Oirats in the west), shown under that name; the Khalkha became Qing vassals in 1691. Western Georgia was never Horde territory and is left out. Tokhtamysh only raided Azerbaijan in 1385, and Timur destroyed Urgench in 1388, so Transcaucasia (1385–94) and Khwarezm (from 1389) are left out.",
       "log": "islamic-iran-central-asia.md",
       "sources": [
         {
@@ -185,6 +185,10 @@
         {
           "title": "Tokhtamysh (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/Tokhtamysh"
+        },
+        {
+          "title": "Wikipedia: Division of the Mongol Empire",
+          "url": "https://en.wikipedia.org/wiki/Division_of_the_Mongol_Empire"
         }
       ],
       "cut": [
@@ -365,7 +369,7 @@
           "key": "Northern Yuan"
         }
       ],
-      "note": "Yuan rule in China ended in 1368, when the Ming took Dadu; from 1368 the Yuan is drawn on the steppe only, and from 1369 it is labelled the Northern Yuan. The map starts the Yuan in 1294 (proclaimed 1271), and draws it larger than scholarly estimates.",
+      "note": "Yuan rule in China ended in 1368, when the Ming took Dadu; from 1368 the Yuan is drawn on the steppe only, and from 1369 it is labelled the Northern Yuan. Kublai Khan proclaimed the Yuan dynasty in 1271 and completed the conquest of the Song in 1279.",
       "scholarly": {
         "km2": 11000000,
         "year": 1310,
@@ -380,6 +384,10 @@
         {
           "title": "Wikipedia: Northern Yuan",
           "url": "https://en.wikipedia.org/wiki/Northern_Yuan"
+        },
+        {
+          "title": "Wikipedia: Division of the Mongol Empire",
+          "url": "https://en.wikipedia.org/wiki/Division_of_the_Mongol_Empire"
         }
       ]
     },
@@ -921,7 +929,7 @@
       ]
     },
     "Mongol Empire": {
-      "note": "The map's peak exceeds scholarly estimates of the empire's extent. From 1260 the empire was split into four khanates (the Yuan, the Golden Horde, the Chagatai Khanate and the Ilkhanate); the map draws them as one realm until 1294. It also keeps Syria Mongol after 1260, though the Mamluks retook Damascus and Aleppo within weeks of Ain Jalut (3 September 1260). After the Mamluk victory at Ain Jalut (1260) Syria is not shown as Mongol; the Mongols briefly took Damascus again only in 1299–1300.",
+      "note": "The map's peak exceeds scholarly estimates of the empire's extent. After Möngke's death in 1259 and the civil war of 1260–64 the empire split into four khanates: the Golden Horde, the Chagatai Khanate, the Ilkhanate and Kublai's Great Khanate in Mongolia and China, which became the Yuan dynasty in 1271. It also keeps Syria Mongol after 1260, though the Mamluks retook Damascus and Aleppo within weeks of Ain Jalut (3 September 1260). After the Mamluk victory at Ain Jalut (1260) Syria is not shown as Mongol; the Mongols briefly took Damascus again only in 1299–1300.",
       "scholarly": {
         "km2": 24000000,
         "year": 1270,
@@ -949,14 +957,24 @@
             37.2
           ]
         }
+      ],
+      "clip": [
+        1206,
+        1270
       ]
     },
     "Ilkhanate": {
-      "note": "The map starts the Ilkhanate in 1294; it was founded in 1256 (earlier it is drawn inside the Mongol Empire).",
-      "log": "islamic-iran-central-asia.md"
+      "note": "Hulagu founded the Ilkhanate in 1256 and ruled it as a separate khanate from 1260.",
+      "log": "islamic-iran-central-asia.md",
+      "sources": [
+        {
+          "title": "Wikipedia: Division of the Mongol Empire",
+          "url": "https://en.wikipedia.org/wiki/Division_of_the_Mongol_Empire"
+        }
+      ]
     },
     "Chagatai Khanate": {
-      "note": "The map starts the Chagatai Khanate in 1294; it existed from the 1220s (earlier it is drawn inside the Mongol Empire). From 1347 the khanate's eastern half became independent as Moghulistan (the Eastern Chagatai Khanate), centred on the Ili region. From 1352 this shape no longer includes Transoxiana, so it is shown as Moghulistan.",
+      "note": "The Chagatai Khanate grew from the lands Genghis Khan gave his son Chagatai in the 1220s and became a separate khanate in the 1260s. From 1347 the khanate's eastern half became independent as Moghulistan (the Eastern Chagatai Khanate), centred on the Ili region. From 1352 this shape no longer includes Transoxiana, so it is shown as Moghulistan.",
       "log": "islamic-iran-central-asia.md",
       "relabel": [
         {
@@ -970,6 +988,10 @@
         {
           "title": "Moghulistan (Wikipedia): independent from 1347 under Tughlugh Timur; also called the Eastern Chagatai Khanate",
           "url": "https://en.wikipedia.org/wiki/Moghulistan"
+        },
+        {
+          "title": "Wikipedia: Division of the Mongol Empire",
+          "url": "https://en.wikipedia.org/wiki/Division_of_the_Mongol_Empire"
         }
       ]
     },

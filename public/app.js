@@ -93,7 +93,7 @@ const matches = (it, key) => it.p.k === key || it.p.n === key;
 // ---------------------------------------------------------------- direction B: icons, progress, ages
 const ic = (d, cls = "") => `<svg viewBox="0 0 24 24" aria-hidden="true"${cls ? ` class="${cls}"` : ""}>${d}</svg>`;
 const I = {
-  right: ic('<path d="m9 6 6 6-6 6"/>'), left: ic('<path d="m15 6-6 6 6 6"/>'),
+  right: ic('<path d="m9 6 6 6-6 6"/>'), left: ic('<path d="m15 6-6 6 6 6"/>'), up: ic('<path d="m6 15 6-6 6 6"/>'),
   pin: ic('<path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/>'),
   globe: ic('<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.2 3 14.8 0 18M12 3c-3 3.2-3 14.8 0 18"/>'),
   play: ic('<path d="M7 4.5v15l13-7.5z"/>'), pause: ic('<path d="M7 5h4v14H7zM13 5h4v14h-4z"/>'),
@@ -2205,23 +2205,30 @@ function realmHTML() {
   h += sourcesList(emp?.sources);
   return h;
 }
-// A realm's page: every state recorded at one spot of it (where it was clicked, else its middle), newest first.
+// A realm's page: every state recorded at one spot of it (where it was clicked, else its middle), in time order as on
+// "who ruled this spot". The latest six show first; a row at the top slides the earlier rulers in above them.
 function realmPlaceHTML(key) {
   const rp = S.realmPlace;
   if (!rp || rp.key !== key) return "";
   let h = `<h3 class="sec">Who ruled this spot</h3>`;
   if (!rp.runs) return h + `<p class="note">Looking it up…</p>`;
   if (!rp.runs.length) return "";
-  const rows = [...rp.runs].reverse(), shown = rows.slice(0, 6);
-  h += `<div class="hrows">${shown.map((r) => {
-    const now = r.from <= S.year && S.year <= r.to;
-    return `<button class="hrow${now ? " now" : ""}" data-rkey="${esc(r.name)}" data-pyear="${Math.max(r.from, Math.min(r.to, Math.round((r.from + r.to) / 2)))}"><i class="sq" style="background:${colorOf(r.name)}"></i><span class="nm"><b>${esc(displayName(r.name))}</b></span><span class="yr">${rangeText(r.from, r.to)}</span>${I.right}</button>`;
-  }).join("")}`;
-  const first = rows[rows.length - 1].from;
-  if (first > S.range[0] + 10) h += `<div class="hrow gap"><i class="sq"></i><span class="nm"><b>No state on record here yet</b></span><span class="yr">Before ${shortYear(first)}</span><svg></svg></div>`;
-  h += `</div>`;
-  if (rows.length > shown.length) h += `<button class="pillbtn block" data-act="place">${I.pin}All ${rows.length} rulers of this spot</button>`;
-  return h;
+  const runs = rp.runs, cut = rp.all ? 0 : Math.max(0, runs.length - 6);
+  const fresh = rp.anim ? rp.prevCut : 0; rp.anim = false; // rows 0..fresh-1 have just been revealed: they grow in
+  const enter = (i) => (i < fresh ? ` enter" style="--d:${(fresh - 1 - i) * 45}ms` : ""); // nearest the shown rows first, then upwards
+  h += `<div class="hrows rp">`;
+  if (cut) h += `<button class="hrow more" data-act="rp-more">${I.up}<span class="nm"><b>${cut} earlier ruler${cut > 1 ? "s" : ""}</b></span><span class="yr">${rangeText(runs[0].from, runs[cut - 1].to)}</span></button>`;
+  else if (runs[0].from > S.range[0] + 10) h += `<div class="hrow gap${enter(0)}"><i class="sq"></i><span class="nm"><b>No state on record here yet</b></span><span class="yr">Before ${shortYear(runs[0].from)}</span></div>`;
+  let last = null;
+  runs.forEach((r, i) => {
+    if (i >= cut) {
+      if (last != null && r.from > last + 1) h += `<div class="hrow gap${enter(i)}"><i class="sq"></i><span class="nm"><b>No state on record</b></span><span class="yr">${rangeText(last + 1, r.from - 1)}</span></div>`;
+      const now = r.from <= S.year && S.year <= r.to;
+      h += `<button class="hrow${now ? " now" : ""}${enter(i)}" data-rkey="${esc(r.name)}" data-pyear="${Math.max(r.from, Math.min(r.to, Math.round((r.from + r.to) / 2)))}"><i class="sq" style="background:${colorOf(r.name)}"></i><span class="nm"><b>${esc(displayName(r.name))}</b></span><span class="yr">${rangeText(r.from, r.to)}</span>${I.right}</button>`;
+    }
+    last = Math.max(last ?? r.to, r.to);
+  });
+  return h + `</div>`;
 }
 async function loadRealmPlace(key, ll) {
   if (!ll) { // no click: the middle of the realm's biggest piece this year
@@ -4349,6 +4356,7 @@ function setupUI() {
       if (act === "pop-close") return hidePop();
       if (act === "close") { S.realmPlace = null; return select(null); }
       if (act === "back-place") { const pb = S.placeBack; S.placeBack = null; if (!pb) return select(null); S.sel = null; return openPlace(pb.ll, { from: pb.from, name: pb.name }); }
+      if (act === "rp-more") { const rp = S.realmPlace; if (rp?.runs) { rp.prevCut = Math.max(0, rp.runs.length - 6); rp.all = rp.anim = true; } return renderCol(false); }
       if (act === "place") { const ll = S.pop?.ll || S.realmPlace?.ll || S.clickLL; if (ll) return openPlace(ll, { from: S.sel || S.pop?.key ? S.sel : null }); return; }
       if (act === "pickplace") { S.picking = true; canvas.classList.add("picking"); return toast("Click any spot on the map to see who ruled it."); }
       if (act === "myplace") { const mp = myPlace(); if (mp) return openPlace(mp.ll, { name: mp.name, from: "today" }); S.picking = true; canvas.classList.add("picking"); return toast("Click any spot on the map to see who ruled it."); }

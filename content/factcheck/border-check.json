@@ -7332,7 +7332,7 @@
     "Yuan Dynasty"
    ],
    "map": [
-    "Mongol Empire"
+    "Yuan Dynasty"
    ],
    "region": "east-asia",
    "source": {
@@ -8278,7 +8278,8 @@
     "Southern Song"
    ],
    "map": [
-    "Southern Song"
+    "Southern Song",
+    "Yuan Dynasty"
    ],
    "region": "east-asia",
    "source": {
@@ -14813,7 +14814,7 @@
    "file": "claims-mena.json"
   },
   {
-   "ok": false,
+   "ok": true,
    "place": "Khartoum",
    "year": 1887,
    "lonlat": [
@@ -14824,7 +14825,7 @@
     "Mahdist State"
    ],
    "map": [
-    "(nothing drawn)"
+    "Mahdist State"
    ],
    "region": "mena",
    "source": {
@@ -15359,7 +15360,7 @@
     "(British Empire)"
    ],
    "map": [
-    "British Africa"
+    "British Colonial Empire"
    ],
    "region": "mena",
    "source": {
@@ -15485,7 +15486,7 @@
     "(British Empire)"
    ],
    "map": [
-    "British Africa"
+    "British Colonial Empire"
    ],
    "region": "mena",
    "source": {
@@ -15506,7 +15507,7 @@
     "(British Empire)"
    ],
    "map": [
-    "British Africa"
+    "British Colonial Empire"
    ],
    "region": "mena",
    "source": {
@@ -21064,7 +21065,7 @@
    "file": "claims-southeast-asia.json"
   },
   {
-   "ok": false,
+   "ok": true,
    "place": "Malacca",
    "year": 1480,
    "lonlat": [
@@ -21075,7 +21076,7 @@
     "Sultanate of Malacca"
    ],
    "map": [
-    "(nothing drawn)"
+    "Sultanate of Malacca"
    ],
    "region": "southeast-asia",
    "source": {
@@ -21967,7 +21968,7 @@
    "file": "claims-southeast-asia.json"
   },
   {
-   "ok": false,
+   "ok": true,
    "place": "Banda Aceh (Kutaraja)",
    "year": 1890,
    "lonlat": [
@@ -21981,7 +21982,7 @@
     "Dutch East Indies"
    ],
    "map": [
-    "(nothing drawn)"
+    "Dutch East Indies"
    ],
    "region": "southeast-asia",
    "source": {
@@ -22185,8 +22186,7 @@
     "Empire of Japan"
    ],
    "map": [
-    "Empire of Japan",
-    "Estado Novo"
+    "Empire of Japan"
    ],
    "region": "southeast-asia",
    "source": {
@@ -22238,7 +22238,7 @@
    "file": "claims-southeast-asia.json"
   },
   {
-   "ok": false,
+   "ok": true,
    "place": "Jayapura (Hollandia)",
    "year": 1955,
    "lonlat": [
@@ -22252,7 +22252,7 @@
     "Dutch East Indies"
    ],
    "map": [
-    "(nothing drawn)"
+    "Netherlands New Guinea"
    ],
    "region": "southeast-asia",
    "source": {
@@ -32111,10 +32111,11 @@
     33.31
    ],
    "expected": [
+    "Ilkhanate",
     "Mongol Empire"
    ],
    "map": [
-    "Mongol Empire"
+    "Ilkhanate"
    ],
    "region": "v3",
    "source": {
@@ -36519,15 +36520,6 @@
    "label": "Andorra"
   },
   {
-   "realm": "Luxembourg",
-   "kind": "starts",
-   "map": 1890,
-   "wikidata": 1353,
-   "diff": 537,
-   "wd": "Q2719360",
-   "label": "Duchy of Luxembourg"
-  },
-  {
    "realm": "Anglo-Saxon England",
    "kind": "ends",
    "map": 533,
@@ -36652,6 +36644,15 @@
    "diff": -490,
    "wd": "Q62651",
    "label": "Denmark–Norway"
+  },
+  {
+   "realm": "Luxembourg",
+   "kind": "starts",
+   "map": 1840,
+   "wikidata": 1353,
+   "diff": 487,
+   "wd": "Q2719360",
+   "label": "Duchy of Luxembourg"
   },
   {
    "realm": "Kathmandu",
@@ -39696,15 +39697,6 @@
    "label": "Moghulistan"
   },
   {
-   "realm": "Kingdom of Judah",
-   "kind": "ends",
-   "map": -701,
-   "wikidata": -586,
-   "diff": -115,
-   "wd": "Q48685",
-   "label": "Kingdom of Judah"
-  },
-  {
    "realm": "French Algeria",
    "kind": "ends",
    "map": 1847,
@@ -41037,15 +41029,6 @@
    "label": "Kuwait"
   },
   {
-   "realm": "Papua New Guinea",
-   "kind": "starts",
-   "map": 1946,
-   "wikidata": 1975,
-   "diff": -29,
-   "wd": "Q691",
-   "label": "Papua New Guinea"
-  },
-  {
    "realm": "Republic of Iceland",
    "kind": "starts",
    "map": 1946,
@@ -41278,15 +41261,6 @@
    "diff": 17,
    "wd": "Q207162",
    "label": "Bourbon Restoration in France"
-  },
-  {
-   "realm": "Italian Africa",
-   "kind": "ends",
-   "map": 1943,
-   "wikidata": 1960,
-   "diff": -17,
-   "wd": "Q926295",
-   "label": "Italian Empire"
   },
   {
    "realm": "New Hebrides",
@@ -41897,15 +41871,6 @@
    "issue": "peak area 1.69M km² vs published 1.0M (169%); peak year -650 vs published -400 (-250)"
   },
   {
-   "title": "Shu Han",
-   "realm": "Shu Han",
-   "map_mkm2": 1.67,
-   "map_year": 221,
-   "published_mkm2": 1.0,
-   "published_year": 221,
-   "issue": "peak area 1.67M km² vs published 1.0M (167%)"
-  },
-  {
    "title": "Tahirid dynasty",
    "realm": "Tahirid Sultanate",
    "map_mkm2": 0.38,
@@ -41944,11 +41909,11 @@
   {
    "title": "Twenty-sixth Dynasty of Egypt",
    "realm": "Twenty-sixth Dynasty of Egypt",
-   "map_mkm2": 1.44,
+   "map_mkm2": 1.43,
    "map_year": -630,
    "published_mkm2": 0.65,
    "published_year": -550,
-   "issue": "peak area 1.44M km² vs published 0.65M (221%)"
+   "issue": "peak area 1.43M km² vs published 0.65M (220%)"
   },
   {
    "title": "Rozvi Empire",
@@ -42726,16 +42691,6 @@
    ]
   },
   {
-   "year": 1850,
-   "a": "British Empire",
-   "b": "Kingdom of Marwar (Jodhpur)",
-   "cells": 9,
-   "where": [
-    72.8,
-    26.3
-   ]
-  },
-  {
    "year": 1880,
    "a": "French Africa",
    "b": "Toucouleur Empire",
@@ -42903,6 +42858,16 @@
    "where": [
     77.6,
     33.8
+   ]
+  },
+  {
+   "year": 1850,
+   "a": "British Empire",
+   "b": "Kingdom of Marwar (Jodhpur)",
+   "cells": 7,
+   "where": [
+    72.8,
+    26.2
    ]
   },
   {
@@ -43316,16 +43281,6 @@
    ]
   },
   {
-   "year": 1850,
-   "a": "British Empire",
-   "b": "Gwalior State (Scindia)",
-   "cells": 5,
-   "where": [
-    77.9,
-    25.5
-   ]
-  },
-  {
    "year": 1880,
    "a": "Bornu Empire",
    "b": "Kingdom of Baguirmi",
@@ -43531,8 +43486,18 @@
    "b": "Kingdom of Jaisalmer",
    "cells": 4,
    "where": [
-    71.0,
-    27.0
+    71.2,
+    27.2
+   ]
+  },
+  {
+   "year": 1850,
+   "a": "British Empire",
+   "b": "Gwalior State (Scindia)",
+   "cells": 4,
+   "where": [
+    78.0,
+    25.2
    ]
   },
   {
@@ -44006,6 +43971,16 @@
    ]
   },
   {
+   "year": 1800,
+   "a": "Bahawalpur State",
+   "b": "Durrani Empire",
+   "cells": 3,
+   "where": [
+    71.5,
+    28.8
+   ]
+  },
+  {
    "year": 1850,
    "a": "Circassia",
    "b": "Russian Empire",
@@ -44027,22 +44002,12 @@
   },
   {
    "year": 1850,
-   "a": "British Empire",
-   "b": "Kingdom of Mewar (Udaipur State)",
+   "a": "Bahawalpur State",
+   "b": "British Empire",
    "cells": 3,
    "where": [
-    74.2,
-    24.8
-   ]
-  },
-  {
-   "year": 1850,
-   "a": "British Empire",
-   "b": "Kingdom of Amber (Jaipur)",
-   "cells": 3,
-   "where": [
-    75.8,
-    26.8
+    71.5,
+    28.8
    ]
   },
   {
@@ -45363,11 +45328,15 @@
   },
   {
    "realm": "British Colonial Empire",
-   "issue": "area jumps 13,690,182 → 6,370,221 km² at 1905"
+   "issue": "area jumps 8,072,422 → 16,197,728 km² at 1870"
   },
   {
    "realm": "British Colonial Empire",
-   "issue": "area jumps 11,649,865 → 1,904,904 km² at 1932"
+   "issue": "area jumps 11,731,290 → 1,538,397 km² at 1932"
+  },
+  {
+   "realm": "British Colonial Empire",
+   "issue": "area jumps 1,469,906 → 2,700,837 km² at 1943"
   },
   {
    "realm": "British Colonial Empire",
@@ -45468,6 +45437,14 @@
   {
    "realm": "Sikh Empire",
    "issue": "area jumps 397,813 → 208,932 km² at 1846"
+  },
+  {
+   "realm": "Dutch East Indies",
+   "issue": "area jumps 289,688 → 150,705 km² at 1811"
+  },
+  {
+   "realm": "Dutch East Indies",
+   "issue": "area jumps 2,023,054 → 1,007,235 km² at 1942"
   },
   {
    "realm": "Dutch East Indies",
@@ -45638,10 +45615,6 @@
    "issue": "area jumps 748,352 → 2,055,535 km² at 1932"
   },
   {
-   "realm": "Mexico",
-   "issue": "missing 1913–1919 (7 years), present before and after"
-  },
-  {
    "realm": "German Africa",
    "issue": "area jumps 1,061,859 → 2,106,054 km² at 1895"
   },
@@ -45682,12 +45655,16 @@
    "issue": "area jumps 3,514,816 → 1,538,477 km² at 1941"
   },
   {
+   "realm": "Italian Africa",
+   "issue": "missing 1944–1949 (6 years), present before and after"
+  },
+  {
    "realm": "Brazilian Republic",
    "issue": "missing 1932–1945 (14 years), present before and after"
   },
   {
    "realm": "Sultanate of Muscat and Oman",
-   "issue": "area jumps 138,221 → 329,358 km² at 1922"
+   "issue": "area jumps 119,831 → 316,500 km² at 1922"
   },
   {
    "realm": "Republic of Cuba",
@@ -45703,7 +45680,7 @@
   },
   {
    "realm": "Great Mongol State",
-   "issue": "missing 1920–1921 (2 years), present before and after"
+   "issue": "missing 1920–1920 (1 years), present before and after"
   },
   {
    "realm": "Kingdom of Hejaz",
@@ -45743,7 +45720,7 @@
   },
   {
    "realm": "Nazi Germany",
-   "issue": "area jumps 699,301 → 1,637,988 km² at 1940"
+   "issue": "area jumps 696,419 → 1,637,988 km² at 1940"
   },
   {
    "realm": "Free French",
