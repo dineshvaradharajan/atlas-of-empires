@@ -1773,6 +1773,7 @@ async function select(key, opts = {}) {
   S.sel = key || null;
   S.view = key ? "realm" : "world";
   S.moment = null;
+  S.placeBack = (key && opts.placeBack) || null; // opened from "who ruled this spot": the card's back button returns there
   writeHash();
   renderCol(true);
   draw();
@@ -2085,10 +2086,10 @@ function placeHTML() {
   for (const r of runs) {
     if (last != null && r.from > last + 1) h += `<div class="hrow gap" style="--yrs:${r.from - 1 - last}"><i class="sq"></i><span class="nm"><b>No state on record</b></span><span class="yr">${rangeText(last + 1, r.from - 1)}</span><svg></svg></div>`;
     const now = r.from <= S.year && S.year <= r.to;
-    h += `<button class="hrow${now ? " now" : ""}" style="--yrs:${r.to - r.from + 1}" data-pkey="${esc(r.name)}" data-pyear="${Math.max(r.from, Math.min(r.to, Math.round((r.from + r.to) / 2)))}"><i class="sq" style="background:${colorOf(r.name)}"></i><span class="nm"><b>${esc(displayName(r.name))}</b>${now ? `<small class="nowyr">You are in ${esc(shortYear(S.year))}</small>` : ""}</span><span class="yr">${rangeText(r.from, r.to)}</span>${I.right}</button>`;
+    h += `<button class="hrow${now ? " now" : ""}" style="--yrs:${r.to - r.from + 1}" data-prealm="${esc(r.name)}" data-pyear="${Math.max(r.from, Math.min(r.to, Math.round((r.from + r.to) / 2)))}"><i class="sq" style="background:${colorOf(r.name)}"></i><span class="nm"><b>${esc(displayName(r.name))}</b>${now ? `<small class="nowyr">You are in ${esc(shortYear(S.year))}</small>` : ""}</span><span class="yr">${rangeText(r.from, r.to)}</span>${I.right}</button>`;
     last = Math.max(last ?? r.to, r.to);
   }
-  h += `</div><p class="note">A gap between two rows means the atlas has no state on record here for those years. Pick a row to see the map in that year.</p>`;
+  h += `</div><p class="note">A gap between two rows means the atlas has no state on record here for those years. Pick a row to see that realm on the map in that year.</p>`;
   return h + `<button class="pillbtn block" data-act="pickplace">${I.pin}Choose another place</button>`;
 }
 function siteHTML() {
@@ -2129,7 +2130,7 @@ function realmHTML() {
   const media = S.commons[r.wiki] || (emp?.wiki && S.commons[emp.wiki]);
   const now = activeFeats(key);
   const alive = end >= S.range[1] - 1;
-  let h = cardHead(`The world in ${plainYear(y)}`, "", "close");
+  let h = S.placeBack ? cardHead(S.placeBack.name || "This spot", "", "back-place") : cardHead(`The world in ${plainYear(y)}`, "", "close");
   h += kick(alive && !r.group ? `Country · since ${shortYear(r.tl[0][0])}` : `${r.group ? "Empire" : "Realm"} · ${span.replace(" – ", " to ")}`) + `<h1 class="ttl xl">${esc(displayName(key))}</h1>`;
   if (emp && emp.name !== displayName(key) && !r.recon) h += `<p class="sub">${esc(emp.name)}</p>`;
   if (r.recon) {
@@ -4347,6 +4348,7 @@ function setupUI() {
       if (act === "about") return openAbout();
       if (act === "pop-close") return hidePop();
       if (act === "close") { S.realmPlace = null; return select(null); }
+      if (act === "back-place") { const pb = S.placeBack; S.placeBack = null; if (!pb) return select(null); S.sel = null; return openPlace(pb.ll, { from: pb.from, name: pb.name }); }
       if (act === "place") { const ll = S.pop?.ll || S.realmPlace?.ll || S.clickLL; if (ll) return openPlace(ll, { from: S.sel || S.pop?.key ? S.sel : null }); return; }
       if (act === "pickplace") { S.picking = true; canvas.classList.add("picking"); return toast("Click any spot on the map to see who ruled it."); }
       if (act === "myplace") { const mp = myPlace(); if (mp) return openPlace(mp.ll, { name: mp.name, from: "today" }); S.picking = true; canvas.classList.add("picking"); return toast("Click any spot on the map to see who ruled it."); }
@@ -4382,6 +4384,11 @@ function setupUI() {
     if (d.king != null && S.journey) return openKing(+d.king);
     if (d.jev != null && S.journey) { const e = S.journey.events[+d.jev]; S.jEvent = +d.jev; S.jKing = null; stopPlay(); return go(e.year); }
     if (d.pkey) { stopPlay(); const y = +d.pyear; await go(y); renderCol(false); draw(); return; } // stay on the place, move the map to that year
+    if (d.prealm) { // a row of "who ruled this spot": that realm, highlighted, in that year; its card leads back to the spot
+      stopPlay(); const pl = S.place; await go(+d.pyear);
+      if (!realm(d.prealm) || !pl) { renderCol(false); draw(); return; }
+      return select(d.prealm, { ll: pl.ll, placeBack: { ll: pl.ll, name: pl.name, from: pl.from } });
+    }
     if (d.rkey) { stopPlay(); const ll = S.realmPlace?.ll; await go(+d.pyear); return select(d.rkey, { ll }); }
     if (d.key) { stopPlay(); hidePop(); return select(d.key, { fly: true, ll: S.pop?.ll }); }
     if (d.year) { stopPlay(); return go(+d.year); }
