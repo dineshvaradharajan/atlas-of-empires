@@ -319,6 +319,482 @@
     ]
   },
   {
+    "id": "spanish-american-wars-of-independence",
+    "name": "Spanish American Wars of Independence (South America)",
+    "moment": "latin-american-independence",
+    "span": [
+      1810,
+      1826
+    ],
+    "dateLabel": "19 April 1810 – 23 January 1826",
+    "summary": "Napoleon's capture of Spain's king in 1808 left Spanish America without a legitimate government, and in 1810 juntas took power in Caracas, Buenos Aires, Bogotá and Santiago, setting off wars between patriots and royalists across South America. In the north, Simón Bolívar lost two Venezuelan republics, in 1812 and 1814, and Spain's expedition under Pablo Morillo reconquered New Granada in 1815–16. From a base on the Orinoco, Bolívar crossed the Andes and won at Boyacá in 1819, joined Venezuela and New Granada into Gran Colombia, and won Venezuela at Carabobo in 1821. In the south, José de San Martín crossed the Andes from Argentina, freed Chile at Chacabuco and Maipú, and took Lima in 1821. After the two liberators met at Guayaquil in 1822, Bolívar and Antonio José de Sucre finished the war in Peru at Junín and Ayacucho in 1824. Bolivia was founded in 1825, and the last royalist fortress, Callao, surrendered in January 1826.",
+    "casualties": "No reliable total exists; one estimate quoted for all of Spanish America from Mexico to Argentina is about 1,000,000 deaths, some 400,000 of them in New Granada and Venezuela, many from disease, hunger and massacres rather than battle.",
+    "sides": [
+      {
+        "name": "Patriots (independence movements)",
+        "members": [
+          {
+            "clio": "Republic of Venezuela",
+            "from": 1810,
+            "to": 1815,
+            "fromDate": "1810-04-19",
+            "toDate": "1815-01-01"
+          },
+          {
+            "clio": "Río de la Plata",
+            "from": 1810,
+            "to": 1826,
+            "fromDate": "1810-05-25",
+            "toDate": "1826-02-01"
+          },
+          {
+            "clio": "New Granada",
+            "from": 1810,
+            "to": 1822,
+            "fromDate": "1810-07-20",
+            "toDate": "1822-01-01"
+          },
+          {
+            "clio": "Republic of Chile",
+            "from": 1817,
+            "to": 1826,
+            "fromDate": "1817-02-12",
+            "toDate": "1826-02-01"
+          },
+          {
+            "clio": "Gran Colombia",
+            "from": 1819,
+            "to": 1826,
+            "fromDate": "1819-12-17",
+            "toDate": "1826-02-01"
+          },
+          {
+            "clio": "Republic of Peru",
+            "from": 1821,
+            "to": 1826,
+            "fromDate": "1821-07-28",
+            "toDate": "1826-02-01"
+          },
+          {
+            "clio": "Bolivia",
+            "from": 1825,
+            "to": 1826,
+            "fromDate": "1825-08-06",
+            "toDate": "1826-02-01"
+          }
+        ]
+      },
+      {
+        "name": "Spanish Empire (royalists)",
+        "members": [
+          {
+            "clio": "(Spanish Empire)",
+            "from": 1810,
+            "to": 1826,
+            "fromDate": "1810-04-19",
+            "toDate": "1826-02-01"
+          }
+        ]
+      }
+    ],
+    "events": [
+      {
+        "date": "1810-04-19",
+        "year": 1810,
+        "label": "19 Apr 1810",
+        "text": "Caracas deposes its captain general and forms a junta",
+        "detail": "Napoleon had forced Spain's king, Ferdinand VII, to abdicate in 1808, and by 1810 French armies had cornered Spain's resistance government in Cádiz. When news reached Caracas, the town council met on 19 April 1810 and deposed Captain General Vicente Emparan. It set up a Supreme Junta that claimed to rule in Ferdinand's name. Juntas soon followed across Spanish America, and civil war broke out between their supporters and royalists loyal to the government in Spain.",
+        "lonlat": [
+          -66.92,
+          10.49
+        ],
+        "kind": "political"
+      },
+      {
+        "date": "1810-05-25",
+        "year": 1810,
+        "label": "25 May 1810",
+        "text": "The May Revolution in Buenos Aires",
+        "detail": "In Buenos Aires, capital of the Viceroyalty of the Río de la Plata, an open town meeting removed the viceroy and on 25 May 1810 installed a governing junta. Córdoba, Montevideo, Paraguay and Upper Peru resisted it, and Buenos Aires sent armies against them. The new government never fell to Spain again, and its region became the base of the southern war against the royalists.",
+        "lonlat": [
+          -58.38,
+          -34.6
+        ],
+        "kind": "political"
+      },
+      {
+        "date": "1811-07-05",
+        "year": 1811,
+        "label": "5 Jul 1811",
+        "text": "Venezuela declares independence",
+        "detail": "Pushed by Francisco de Miranda and the young radicals of the Patriotic Society, the Venezuelan congress voted on 5 July 1811 to declare independence, the first Spanish American colony to do so. Seven of the ten provinces of the old captaincy general joined the new confederation. Maracaibo, Guayana and the district of Coro stayed loyal to Spain, and an expedition to bring Coro under the republic failed.",
+        "lonlat": [
+          -66.92,
+          10.49
+        ],
+        "kind": "political"
+      },
+      {
+        "date": "1812-03-26",
+        "year": 1812,
+        "label": "26 Mar 1812",
+        "text": "An earthquake devastates republican Venezuela",
+        "detail": "On Maundy Thursday, 26 March 1812, a powerful earthquake struck Venezuela. It did most of its damage in republican towns such as Caracas, while royalist areas were largely spared, and some clergy preached that it was God's punishment for rebellion. The disaster came just as the Spanish naval captain Domingo de Monteverde was advancing from Coro, and it helped turn many people against the young republic.",
+        "lonlat": [
+          -66.92,
+          10.49
+        ],
+        "kind": "other"
+      },
+      {
+        "date": "1812-07-25",
+        "year": 1812,
+        "label": "25 Jul 1812",
+        "text": "Miranda surrenders at San Mateo: the First Republic falls",
+        "detail": "Monteverde's small force grew as it marched from Coro, entering Valencia on 3 May 1812. On 30 June royalist prisoners seized the castle of Puerto Cabello, with its ammunition, from its commander Simón Bolívar. Believing the cause lost, Miranda signed a capitulation with Monteverde at San Mateo on 25 July, and royalist troops entered Caracas on 1 August. Bolívar escaped to Curaçao; Miranda was handed to the Spanish and died in a Cádiz prison.",
+        "lonlat": [
+          -67.42,
+          10.21
+        ],
+        "kind": "turning-point"
+      },
+      {
+        "date": "1812-12-15",
+        "year": 1812,
+        "label": "15 Dec 1812",
+        "text": "Bolívar's Cartagena Manifesto",
+        "detail": "From exile, Bolívar went to Cartagena, which had declared itself an independent republic. On 15 December 1812 he published his Cartagena Manifesto, blaming the fall of Venezuela on its weak federal government, divisions among republicans and the effects of the earthquake. He warned New Granada that royalist Venezuela threatened it too, and asked its leaders to back a campaign to retake Caracas. He then cleared royalists from the Magdalena River.",
+        "lonlat": [
+          -75.5,
+          10.4
+        ],
+        "kind": "political"
+      },
+      {
+        "date": "1813-06-15",
+        "year": 1813,
+        "label": "15 Jun 1813",
+        "text": "Bolívar declares 'war to the death' at Trujillo",
+        "detail": "With New Granada's approval, Bolívar crossed into Venezuela in May 1813 in what became the Admirable Campaign. At Trujillo on 15 June he issued his Decree of War to the Death: Spaniards and Canary Islanders who did not actively support independence would be killed, while American-born people would be spared even if they had served the royalists. He meant to divide Venezuelans from Spaniards. Both sides went on to kill prisoners on a terrible scale.",
+        "lonlat": [
+          -70.43,
+          9.37
+        ],
+        "kind": "atrocity"
+      },
+      {
+        "date": "1813-08-06",
+        "year": 1813,
+        "label": "6 Aug 1813",
+        "text": "Bolívar enters Caracas at the end of the Admirable Campaign",
+        "detail": "Bolívar's small army won a string of battles across the Andes and the western plains, while Santiago Mariño freed the east from a base in Cumaná. The royalist government surrendered on 4 August, and Bolívar entered Caracas in triumph on 6 August 1813, besieging Monteverde in Puerto Cabello. He restored the republic, now called the Second Republic, under his own military rule, and was hailed as the Liberator.",
+        "lonlat": [
+          -66.92,
+          10.49
+        ],
+        "kind": "turning-point"
+      },
+      {
+        "date": "1814-06-15",
+        "year": 1814,
+        "label": "15 Jun 1814",
+        "text": "Boves crushes the republicans at La Puerta",
+        "detail": "The Second Republic never won over the poor. José Tomás Boves, a Spanish-born trader turned royalist chieftain, raised an army of llaneros, the mixed-race cowboys of the plains, promising them the property of the rich. After several defeats he routed Bolívar and Mariño at La Puerta on 15 June 1814. He took Valencia and Caracas in July, and thousands of people fled east with Bolívar in a terrible exodus.",
+        "lonlat": [
+          -67.49,
+          10.04
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1814-10-02",
+        "year": 1814,
+        "label": "2 Oct 1814",
+        "text": "Royalists destroy the Chilean patriots at Rancagua",
+        "detail": "Chile had set up its own junta in September 1810. In 1814 the viceroy of Peru sent an army under Mariano Osorio to crush it. Divided between Bernardo O'Higgins and José Miguel Carrera, the patriots made their stand in the town of Rancagua on 1–2 October and were overwhelmed. Chile returned to royalist rule, and O'Higgins and many others fled across the Andes to Mendoza.",
+        "lonlat": [
+          -70.74,
+          -34.17
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1814-12-05",
+        "year": 1814,
+        "label": "5 Dec 1814",
+        "text": "Boves is killed at Urica as the Second Republic ends",
+        "detail": "In the east the republicans made a last stand. At Urica on 5 December 1814 Boves's army beat them again, though Boves himself was killed by a lance. His lieutenant Francisco Tomás Morales finished the campaign, capturing and executing José Félix Ribas and taking the last republican town, Maturín. By the end of 1814 Venezuela was royalist again, and Bolívar had gone to serve New Granada.",
+        "lonlat": [
+          -64.01,
+          9.71
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1815-09",
+        "year": 1815,
+        "label": "Sep 1815",
+        "text": "Bolívar writes the Jamaica Letter",
+        "detail": "Bolívar left New Granada for Jamaica in May 1815, defeated and without resources. In Kingston, in September 1815, he wrote a long letter to a British gentleman, now called the Jamaica Letter. It explained why Spanish Americans were justified in seeking independence, called on Europe to help, and sketched the future of the new nations, which he thought should be republics with strong governments. It became one of the founding texts of Latin American independence.",
+        "lonlat": [
+          -76.79,
+          17.99
+        ],
+        "kind": "political"
+      },
+      {
+        "date": "1815-12-06",
+        "year": 1815,
+        "label": "6 Dec 1815",
+        "text": "Cartagena falls to Morillo after a 105-day siege",
+        "detail": "With Napoleon defeated, Ferdinand VII sent General Pablo Morillo to America with about 10,000 men, the largest expedition Spain had ever sent there. After securing Venezuela, Morillo besieged Cartagena from 26 August 1815. Cut off by land and sea, the city starved; thousands of its people died of hunger and disease before it surrendered on 6 December. Morillo's army then pushed into the interior of New Granada.",
+        "lonlat": [
+          -75.5,
+          10.4
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1816-05-06",
+        "year": 1816,
+        "label": "6 May 1816",
+        "text": "Royalists take Bogotá and end New Granada's republic",
+        "detail": "While Morillo marched south from the coast, a second royalist column under Sebastián de la Calzada invaded from the Venezuelan plains, won at Cachirí in February 1816 and entered Bogotá on 6 May. The last republican forces were beaten at Cuchilla del Tambo in June. Morillo's courts executed many of the republic's leaders, and some 7,000 people are estimated to have been executed between 1816 and 1819.",
+        "lonlat": [
+          -74.07,
+          4.6
+        ],
+        "kind": "turning-point"
+      },
+      {
+        "date": "1817-02-12",
+        "year": 1817,
+        "label": "12 Feb 1817",
+        "text": "San Martín crosses the Andes and wins at Chacabuco",
+        "detail": "José de San Martín spent two years building the Army of the Andes at Mendoza. From 19 January 1817 about 4,000 men crossed the mountains in columns by passes averaging some 3,000 metres high, a march of about three weeks. On 12 February they beat the royalists at Chacabuco, north of Santiago, and entered the capital. San Martín declined to rule Chile, and O'Higgins became its Supreme Director.",
+        "lonlat": [
+          -70.68,
+          -32.99
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1817-07-17",
+        "year": 1817,
+        "label": "17 Jul 1817",
+        "text": "Patriots take Angostura on the Orinoco",
+        "detail": "Back from Haiti, where President Alexandre Pétion had armed him in exchange for a promise to free the slaves, Bolívar joined Manuel Piar in Guayana. Piar beat the royalists at San Félix in April, and on 17 July 1817 the starving garrison of Angostura abandoned the city by river. Angostura gave the patriots a capital, a port open to foreign trade and a route up the Orinoco to the plains held by José Antonio Páez.",
+        "lonlat": [
+          -63.55,
+          8.13
+        ],
+        "kind": "turning-point"
+      },
+      {
+        "date": "1818-04-05",
+        "year": 1818,
+        "label": "5 Apr 1818",
+        "text": "Maipú secures Chile's independence",
+        "detail": "Chile declared independence on 12 February 1818, but a new royalist army under Osorio landed in the south and surprised the patriots at night at Cancha Rayada on 19 March. San Martín rallied his scattered army near Santiago, and on 5 April 1818 he crushed Osorio on the plains of Maipú. The royalists never threatened Santiago again, and Chile became the base for an attack on Peru.",
+        "lonlat": [
+          -70.77,
+          -33.5
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1819-02-15",
+        "year": 1819,
+        "label": "15 Feb 1819",
+        "text": "The Congress of Angostura opens",
+        "detail": "Bolívar called a congress of delegates from the patriot-held parts of Venezuela, with a few exiles from New Granada. It opened at Angostura on 15 February 1819, where Bolívar gave a famous address calling for a strong central government and equality among races. The congress elected him president. It went on to proclaim, in December, the union of Venezuela and New Granada.",
+        "lonlat": [
+          -63.55,
+          8.13
+        ],
+        "kind": "political"
+      },
+      {
+        "date": "1819-07-06",
+        "year": 1819,
+        "label": "6 Jul 1819",
+        "text": "Bolívar's army crosses the Andes by the Páramo de Pisba",
+        "detail": "Instead of attacking Morillo in Venezuela, Bolívar struck at New Granada in the rainy season, when no one expected it. He marched from the Apure across flooded plains, met Francisco de Paula Santander at Tame on 11 June and began climbing the Eastern Andes on 22 June. On the bleak Páramo de Pisba many soldiers died of cold and most of the horses were lost, but on 6 July the army came down into New Granada.",
+        "lonlat": [
+          -72.48,
+          5.72
+        ],
+        "kind": "invasion"
+      },
+      {
+        "date": "1819-08-07",
+        "year": 1819,
+        "label": "7 Aug 1819",
+        "text": "Bolívar wins at Boyacá and takes Bogotá",
+        "detail": "After a hard fight at Vargas Swamp on 25 July, Bolívar slipped round the royalist army of José María Barreiro and reached Tunja first. On 7 August 1819, as Barreiro hurried to protect Bogotá, Bolívar caught his army crossing the bridge at Boyacá and forced most of it to surrender. The viceroy fled, and Bolívar entered Bogotá on 10 August. New Granada became the base for the rest of his campaigns.",
+        "lonlat": [
+          -73.43,
+          5.45
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1819-12-17",
+        "year": 1819,
+        "label": "17 Dec 1819",
+        "text": "The Congress of Angostura proclaims the Republic of Colombia",
+        "detail": "On 17 December 1819 the congress at Angostura passed a Fundamental Law joining Venezuela and New Granada into a single Republic of Colombia, which historians call Gran Colombia to tell it apart from today's Colombia. Quito was to join once freed. Bolívar was its president. The union was confirmed by the Congress of Cúcuta, which adopted a constitution on 30 August 1821.",
+        "lonlat": [
+          -63.55,
+          8.13
+        ],
+        "kind": "political"
+      },
+      {
+        "date": "1820-09-08",
+        "year": 1820,
+        "label": "8 Sep 1820",
+        "text": "San Martín's Liberating Expedition lands in Peru",
+        "detail": "Peru was the centre of royal power in South America. San Martín's expedition of about 4,000 soldiers, most of them Chileans, sailed from Valparaíso on 20 August 1820 escorted by Lord Cochrane's fleet. It landed at Paracas Bay near Pisco on 8 September. San Martín preferred to win Peruvians over rather than fight, while Juan Antonio Álvarez de Arenales led a column through the highlands and Trujillo declared for independence in December.",
+        "lonlat": [
+          -76.25,
+          -13.83
+        ],
+        "kind": "invasion"
+      },
+      {
+        "date": "1821-06-24",
+        "year": 1821,
+        "label": "24 Jun 1821",
+        "text": "Bolívar and Páez win the Battle of Carabobo",
+        "detail": "A liberal revolution in Spain in 1820 stopped reinforcements for Morillo, who agreed a truce with Bolívar in November and went home. The war resumed in April 1821 after Maracaibo joined Colombia. Bolívar marched from New Granada with about 7,000 men and, with Páez's plainsmen and the British Legion, routed Miguel de la Torre at Carabobo on 24 June 1821. He entered Caracas on 29 June; Venezuela was effectively free.",
+        "lonlat": [
+          -68.17,
+          10.0
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1821-07-28",
+        "year": 1821,
+        "label": "28 Jul 1821",
+        "text": "San Martín proclaims the independence of Peru in Lima",
+        "detail": "As patriot guerrillas closed in and the north of the country went over to independence, the new viceroy, José de la Serna, abandoned Lima and withdrew his army to the highlands, leaving a garrison in the fortress of Callao. San Martín entered the city, became Protector of Peru and proclaimed its independence on 28 July 1821. Callao surrendered in September, but the royalist army remained strong in the Andes.",
+        "lonlat": [
+          -77.03,
+          -12.05
+        ],
+        "kind": "political"
+      },
+      {
+        "date": "1822-05-24",
+        "year": 1822,
+        "label": "24 May 1822",
+        "text": "Sucre wins the Battle of Pichincha and frees Quito",
+        "detail": "Guayaquil had declared independence in October 1820, and Bolívar sent Antonio José de Sucre to take Quito. After two failed advances, Sucre marched south through Cuenca and then north up the Andes, joined by Peruvian and Argentine troops sent by San Martín. On 24 May 1822 his men climbed the slopes of the Pichincha volcano above Quito and beat the royalists. Quito surrendered the next day, and Pasto gave up in June.",
+        "lonlat": [
+          -78.53,
+          -0.22
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1822-07-26",
+        "year": 1822,
+        "label": "26 Jul 1822",
+        "text": "Bolívar and San Martín meet at Guayaquil",
+        "detail": "On 26 and 27 July 1822 the two liberators met in private at Guayaquil, which Bolívar had just annexed to Colombia. No record was kept. San Martín seems to have asked for troops and even offered to serve under Bolívar, but they disagreed over how the new states should be governed. Soon afterwards San Martín resigned his command in Peru and left for Chile, Argentina and finally France, leaving the war to Bolívar.",
+        "lonlat": [
+          -79.9,
+          -2.19
+        ],
+        "kind": "political"
+      },
+      {
+        "date": "1824-08-06",
+        "year": 1824,
+        "label": "6 Aug 1824",
+        "text": "Bolívar's cavalry wins at Junín",
+        "detail": "Royalist armies retook Lima twice, in June 1823 and in February 1824, after the patriot garrison of Callao mutinied and handed the fortress to Spain. Named dictator by Peru's congress, Bolívar rebuilt his army at Trujillo and marched south over the Andes. On the high plain of Junín on 6 August 1824 his cavalry met José de Canterac's horsemen in a battle of lances and sabres, and the royalists fell back towards Cuzco.",
+        "lonlat": [
+          -76.0,
+          -11.1
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1824-12-09",
+        "year": 1824,
+        "label": "9 Dec 1824",
+        "text": "Sucre's victory at Ayacucho ends Spain's main army",
+        "detail": "Viceroy la Serna advanced with a larger army against Sucre, who chose to fight on the plain of Ayacucho near Quinua on 9 December 1824. In a few hours the patriots, about 6,000 Colombians, Peruvians and others, broke the royalist attack and captured the viceroy. His generals signed a capitulation surrendering the Royal Army of Peru. The battle effectively secured the independence of Peru and of Spanish South America.",
+        "lonlat": [
+          -74.13,
+          -13.04
+        ],
+        "kind": "battle"
+      },
+      {
+        "date": "1825-08-06",
+        "year": 1825,
+        "label": "6 Aug 1825",
+        "text": "Upper Peru declares its independence as Bolivia",
+        "detail": "The royalist general Pedro Antonio de Olañeta refused to accept Ayacucho and held Upper Peru. Sucre entered it on 25 February 1825 as royalist units deserted or changed sides, and Olañeta was mortally wounded at Tumusla on 1 April. An assembly met at Chuquisaca and on 6 August 1825 declared Upper Peru an independent republic, named after Bolívar. Sucre became its first president.",
+        "lonlat": [
+          -65.26,
+          -19.04
+        ],
+        "kind": "political"
+      },
+      {
+        "date": "1826-01-23",
+        "year": 1826,
+        "label": "23 Jan 1826",
+        "text": "Callao surrenders, ending Spanish rule in South America",
+        "detail": "In the fortress of Callao, the Spanish brigadier José Ramón Rodil refused to recognise the surrender at Ayacucho and held out, hoping for help from Spain. About 8,000 refugees crowded in with his garrison, and thousands died of hunger and disease as the siege dragged on. With food and ammunition gone and no help coming, Rodil negotiated and handed over the fortress on 23 January 1826, the last Spanish stronghold on the South American mainland.",
+        "lonlat": [
+          -77.15,
+          -12.06
+        ],
+        "kind": "turning-point"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: Spanish American wars of independence",
+        "url": "https://en.wikipedia.org/wiki/Spanish_American_wars_of_independence"
+      },
+      {
+        "title": "Wikipedia: Venezuelan War of Independence",
+        "url": "https://en.wikipedia.org/wiki/Venezuelan_War_of_Independence"
+      },
+      {
+        "title": "Wikipedia: Military career of Simón Bolívar",
+        "url": "https://en.wikipedia.org/wiki/Military_career_of_Sim%C3%B3n_Bol%C3%ADvar"
+      },
+      {
+        "title": "Wikipedia: Simón Bolívar",
+        "url": "https://en.wikipedia.org/wiki/Sim%C3%B3n_Bol%C3%ADvar"
+      },
+      {
+        "title": "Wikipedia: José de San Martín",
+        "url": "https://en.wikipedia.org/wiki/Jos%C3%A9_de_San_Mart%C3%ADn"
+      },
+      {
+        "title": "Wikipedia: Peruvian War of Independence",
+        "url": "https://en.wikipedia.org/wiki/Peruvian_War_of_Independence"
+      },
+      {
+        "title": "Wikipedia: Chilean War of Independence",
+        "url": "https://en.wikipedia.org/wiki/Chilean_War_of_Independence"
+      },
+      {
+        "title": "Wikipedia: Spanish reconquest of New Granada",
+        "url": "https://en.wikipedia.org/wiki/Spanish_reconquest_of_New_Granada"
+      }
+    ]
+  },
+  {
     "id": "war-of-1812",
     "name": "War of 1812",
     "moment": null,
