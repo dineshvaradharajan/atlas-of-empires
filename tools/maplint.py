@@ -362,6 +362,14 @@ def lint_war(war_id):
                         if st.cut and any(q[0] <= x <= q[2] and q[1] <= yy <= q[3] for q in st.cut):
                             continue
                         side.setdefault(r * W + c, s)
+        for _ in range(BAND_CELLS):  # the coast band: unclaimed land next to a realm takes that realm's colour
+            grow = {}
+            for i, s in side.items():
+                if s is not None:
+                    for j in neighbours8(i):
+                        if j not in side and land[j]:
+                            grow.setdefault(j, s)
+            side.update(grow)
         for o in Wr.occs:  # occupied areas count on anything but the occupier's own ground
             ring = o.at(t)
             if not ring:

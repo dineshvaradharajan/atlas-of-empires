@@ -207,10 +207,23 @@ def main(out):
         cap = f'<b>{esc(g["war"].replace("-", " ").capitalize())}, stage {g["chapter"]}</b><span>{esc(g["title"])} ({esc(g["date"])})</span><span>grey {esc(g["kind"])}, {g["km2"]:,} km²</span>'
         return f'<figure class="case">{svg(F, y, fills, g["at"], "grey strip")}<figcaption>{cap}</figcaption></figure>'
 
+    def table_raw(rows, head):
+        return '<div class="tw"><table><thead><tr>' + "".join(f"<th>{esc(h)}</th>" for h in head) + "</tr></thead><tbody>" + "".join(rows) + "</tbody></table></div>"
+
     def table(rows, head):
         return '<div class="tw"><table><thead><tr>' + "".join(f"<th>{esc(h)}</th>" for h in head) + "</tr></thead><tbody>" + "".join("<tr>" + "".join(f"<td>{c}</td>" for c in r) + "</tr>" for r in rows) + "</tbody></table></div>"
 
     by_kind = lambda k: [g for g in sl if g["kind"] == k]
+    bd = REP.get("band")
+    band_html = ""
+    if bd:
+        row = lambda label, k: f"<tr><td>{label}</td><td>{bd['before'][k]:,}</td><td>{bd['after'][k]:,}</td><td>{round(100 * (bd['after'][k] - bd['before'][k]) / bd['before'][k]):+d}%</td></tr>"
+        band_html = ('<section><h2>What the coast band fixed</h2><p class="lede">Under every realm the map now draws a band of the realm\'s own colour, '
+                     f'{bd["km"]} km beyond its edge and clipped to land, before any realm is filled. It shows only where no realm covers the land. '
+                     'The lists and maps below are what is left after it.</p>'
+                     + table_raw([row("Slivers of unclaimed land", "slivers"), row("Coastal strips", "coastal"), row("Gaps between realms", "gaps"),
+                                  row("Sliver area, km²", "km2"), row("Grey strips in war stages", "wars"), row("of them between an area and the sea", "wars_coast")],
+                                 ["", "Before", "After", "Change"]) + "</section>")
     war_by = collections.Counter(g["war"] for g in wr)
     page = f"""<title>Atlas Map Lint</title>
 <meta name="claude:viewport-fit-sides" content="cover">
@@ -261,8 +274,10 @@ code {{ font-size:13px; }}
 
 <div class="key">
 <b>The main finding</b>
-<p>Nine in ten slivers are strips of land between a realm's edge and the coast ({km['coastal strip']:,} km² summed over the worst year of each strip, against {km['gap between realms']:,} km² in gaps between realms). They are not mainly errors in the realms. Even the borders from 1992 onwards, which come from Natural Earth's detailed coastline, leave 341 such strips against the land layer the app draws, because that land layer comes from a different source with a coastline of its own. Patching realms one by one would never end; the fix belongs in the drawing.</p>
+<p>Before the fix, nine in ten slivers were strips of land between a realm's edge and the coast (2.9 million km², against 0.7 million km² in gaps between realms). They are not mainly errors in the realms. Even the borders from 1992 onwards, which come from Natural Earth's detailed coastline, leave 341 such strips against the land layer the app draws, because that land layer comes from a different source with a coastline of its own. Patching realms one by one would never end; the fix belongs in the drawing.</p>
 </div>
+
+{band_html}
 
 <section>
 <h2>How many slivers each sampled year</h2>
@@ -273,7 +288,7 @@ code {{ font-size:13px; }}
 <section>
 <h2>Recommended fixes</h2>
 <ol class="fix">
-<li><b>Fill thin unclaimed land with the neighbouring realm's colour.</b> Under every realm, draw a wide stroke of its own colour clipped to land, then the realms on top. The stroke shows only where nothing else is drawn: the coastal strips and the thin gaps. It is one change in the renderer, works at every zoom and in war stages too, and leaves real stateless land almost untouched (a band of about 15 km).</li>
+<li><b>Done: fill thin unclaimed land with the neighbouring realm's colour.</b> Under every realm, draw a wide stroke of its own colour clipped to land, then the realms on top. The stroke shows only where nothing else is drawn: the coastal strips and the thin gaps. It is one change in the renderer, works at every zoom and in war stages too, and leaves real stateless land almost untouched (a band of about 15 km).</li>
 <li><b>Use one coastline.</b> Draw land from the same detailed coastline as the realms and the war areas (Natural Earth), or clip the realms to it, so the two layers cannot disagree. The zoom-detail session is measuring this together with sharper borders when zoomed in.</li>
 <li><b>Snap war areas to the coast and to the borders below them</b> ({len(wr)} grey strips, {sum(1 for g in wr if g['kind'] == 'between an area and the coast')} of them between an occupied area and the sea).</li>
 <li><b>Fix the gaps between realms and the cut-off pieces case by case</b> with sourced border patches, worst first, from the lists below.</li>
