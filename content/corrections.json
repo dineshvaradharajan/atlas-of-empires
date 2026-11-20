@@ -281,11 +281,21 @@
           "key": "Sultanate of Johor"
         }
       ],
-      "note": "Malacca fell to Portugal in 1511; later polygons under its name are its successor, Johor. At its height (15th century) Malacca ruled much of the Malay Peninsula, the Riau Islands and part of eastern Sumatra, but the map draws only a small area at the southern tip and does not reach Malacca town itself. Pieces in central Java and northern Sumatra that the map once gave to Malacca's successor Johor were never Johor's and are removed.",
-      "log": "southeast-asia-oceania.md",
+      "note": "Parameswara, a prince from Palembang who had ruled Singapura, founded Malacca around 1400. Under Ming protection from 1405 and after its rulers turned to Islam, it became the leading port of the Strait. At its height under Mansur Shah (1459–77) and his successors it ruled the southern Malay Peninsula, Pahang, the Riau Islands and the Sumatran coast from Rokan to Indragiri, with Kedah, Kelantan and Terengganu as dependencies. The Portuguese took the city in 1511; the sultan's court moved south and founded Johor, shown under that name from 1512.",
+      "log": "indonesia-malaysia-review.md",
       "crop": [
         {
-          "from": 1552,
+          "from": 1456,
+          "to": 1511,
+          "box": [
+            99.8,
+            -1.0,
+            106.0,
+            8.0
+          ]
+        },
+        {
+          "from": 1512,
           "to": 1861,
           "box": [
             100.5,
@@ -297,8 +307,28 @@
       ],
       "sources": [
         {
-          "title": "Malacca Sultanate (Wikipedia)",
+          "title": "Wikipedia: Malacca Sultanate",
           "url": "https://en.wikipedia.org/wiki/Malacca_Sultanate"
+        },
+        {
+          "title": "Wikipedia: Parameswara (king)",
+          "url": "https://en.wikipedia.org/wiki/Parameswara_(king)"
+        },
+        {
+          "title": "Wikipedia: Johor Sultanate",
+          "url": "https://en.wikipedia.org/wiki/Johor_Sultanate"
+        }
+      ],
+      "cut": [
+        {
+          "from": 1512,
+          "to": 1861,
+          "box": [
+            101.3,
+            4.85,
+            102.45,
+            6.4
+          ]
         }
       ]
     },
@@ -3218,18 +3248,22 @@
       "log": "reference check (refcheck-08.json)"
     },
     "Malaysia": {
-      "note": "From September 1963 to August 1965 Singapore was a state of Malaysia; the island is not shaded here for those years. Singapore left Malaysia on 9 August 1965; the map shows it inside Malaysia until 1966.",
+      "note": "Malaysia was formed on 16 September 1963 by joining the Federation of Malaya (independent since 31 August 1957) with Singapore, Sarawak and North Borneo (Sabah); Brunei stayed out. Indonesia opposed the new state in the Confrontation of 1963–66. Singapore was expelled and became independent on 9 August 1965.",
       "sources": [
         {
-          "title": "Singapore in Malaysia — Wikipedia (state of Malaysia 16 September 1963 – 9 August 1965)",
+          "title": "Wikipedia: Malaysia Agreement",
+          "url": "https://en.wikipedia.org/wiki/Malaysia_Agreement"
+        },
+        {
+          "title": "Wikipedia: Singapore in Malaysia",
           "url": "https://en.wikipedia.org/wiki/Singapore_in_Malaysia"
         },
         {
-          "title": "History of Singapore (Wikipedia)",
-          "url": "https://en.wikipedia.org/wiki/History_of_Singapore"
+          "title": "Wikipedia: Indonesia–Malaysia confrontation",
+          "url": "https://en.wikipedia.org/wiki/Indonesia–Malaysia_confrontation"
         }
       ],
-      "log": "reference check (refcheck-08.json)"
+      "log": "indonesia-malaysia-review.md"
     },
     "Kingdom of Prussia": {
       "note": "From 1815 to 1867 most of Prussia's territory is drawn under the German Confederation label; the small area shown here is Neuchâtel, a Swiss principality ruled by the Prussian king. Northern Bohemia is not drawn as Prussian in 1757-1761: Frederick II's army was in Bohemia only from April to July 1757, and the province stayed Austrian.",
@@ -7515,18 +7549,26 @@
           ]
         }
       ],
-      "note": "Western New Guinea stayed Dutch after 1949 and passed to Indonesia only in 1963 (under UN administration from October 1962). East Timor, occupied from 1975, came under UN administration in 1999 and became independent on 20 May 2002; the map still shows it as Indonesian until 2005. East Timor is not shown as Indonesian after the 1999 referendum; it became independent in 2002 (the small Oecusse exclave is too small to separate here).",
+      "note": "Sukarno and Hatta proclaimed Indonesia's independence on 17 August 1945. The Republic held much of Java and Sumatra while the Dutch returned to the other islands and the cities, and two Dutch offensives (1947 and 1948) were followed by the transfer of sovereignty on 27 December 1949; the federal state became the unitary Republic in August 1950. Western New Guinea stayed Dutch until 1962 and joined Indonesia on 1 May 1963. Indonesia invaded East Timor in December 1975 and annexed it in 1976; after the 1999 referendum it came under UN administration and became independent on 20 May 2002.",
       "sources": [
         {
-          "title": "Netherlands New Guinea (Wikipedia)",
+          "title": "Wikipedia: Proclamation of Indonesian Independence",
+          "url": "https://en.wikipedia.org/wiki/Proclamation_of_Indonesian_Independence"
+        },
+        {
+          "title": "Wikipedia: Indonesian National Revolution",
+          "url": "https://en.wikipedia.org/wiki/Indonesian_National_Revolution"
+        },
+        {
+          "title": "Wikipedia: Netherlands New Guinea",
           "url": "https://en.wikipedia.org/wiki/Netherlands_New_Guinea"
         },
         {
-          "title": "East Timor (Wikipedia)",
+          "title": "Wikipedia: East Timor",
           "url": "https://en.wikipedia.org/wiki/East_Timor"
         }
       ],
-      "log": "border review (border-review-southeast-asia.json)",
+      "log": "indonesia-malaysia-review.md",
       "cut": []
     },
     "Blue Horde": {
@@ -9712,18 +9754,30 @@
           ]
         }
       ],
-      "note": "Small shapes that the map attached to the Dutch East Indies in India (one of them over Calcutta, 1809–45) and on the Danish-held Nicobar Islands are removed; the Dutch post in Bengal was at Chinsurah, north of Calcutta, until 1825.",
+      "note": "In 1800 the Dutch state took over the possessions of the bankrupt East India Company (VOC). Britain held Java and most Dutch posts from 1811 to 1816. Over the 19th and early 20th centuries Dutch rule spread from Java and the Moluccas across the archipelago through wars such as the Java War (1825–30), the Padri War (1803–38), the Banjarmasin War (1859–63), the Aceh War (1873–1904) and the conquests of Lombok (1894) and Bali (1906–08); the cultivation system (1830–70) made Java a plantation colony. Japan occupied the islands from 1942 to 1945, and the Netherlands recognised Indonesian independence on 27 December 1949.",
       "sources": [
         {
-          "title": "Dutch Bengal — Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Dutch_Bengal"
+          "title": "Wikipedia: Dutch East Indies",
+          "url": "https://en.wikipedia.org/wiki/Dutch_East_Indies"
         },
         {
-          "title": "Danish India — Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Danish_India"
+          "title": "Wikipedia: Java War",
+          "url": "https://en.wikipedia.org/wiki/Java_War"
+        },
+        {
+          "title": "Wikipedia: Aceh War",
+          "url": "https://en.wikipedia.org/wiki/Aceh_War"
+        },
+        {
+          "title": "Wikipedia: Cultivation System",
+          "url": "https://en.wikipedia.org/wiki/Cultivation_System"
+        },
+        {
+          "title": "Wikipedia: Japanese occupation of the Dutch East Indies",
+          "url": "https://en.wikipedia.org/wiki/Japanese_occupation_of_the_Dutch_East_Indies"
         }
       ],
-      "log": "border review (border-review-v4.json)"
+      "log": "indonesia-malaysia-review.md"
     },
     "Portuguese Empire": {
       "crop": [
@@ -10134,6 +10188,62 @@
         }
       ],
       "log": "COW and CShapes cross-checks (cow-check.md §0, cshapes-check.md)"
+    },
+    "Sultanate of Johor": {
+      "crop": [
+        {
+          "from": 1529,
+          "to": 1669,
+          "box": [
+            99.0,
+            -1.0,
+            106.0,
+            8.0
+          ]
+        }
+      ],
+      "cut": [
+        {
+          "from": 1529,
+          "to": 1861,
+          "box": [
+            101.3,
+            4.85,
+            102.45,
+            6.4
+          ]
+        }
+      ],
+      "note": "Alauddin Riayat Shah II, a son of the last sultan of Malacca, founded Johor around 1528. It held the southern tip of the Peninsula, the Riau-Lingga islands and, for long periods, Pahang and the Sumatran coast opposite. It fought the Portuguese, Aceh and Jambi for control of the Strait, joined the Dutch to take Malacca in 1641, and was divided by the Anglo-Dutch Treaty of 1824, when its island half became the Riau-Lingga Sultanate. Jambi and Kelantan were never under Johor.",
+      "sources": [
+        {
+          "title": "Wikipedia: Johor Sultanate",
+          "url": "https://en.wikipedia.org/wiki/Johor_Sultanate"
+        },
+        {
+          "title": "Wikipedia: Riau-Lingga Sultanate",
+          "url": "https://en.wikipedia.org/wiki/Riau-Lingga_Sultanate"
+        }
+      ],
+      "log": "indonesia-malaysia-review.md"
+    },
+    "Netherlands New Guinea": {
+      "note": "The western half of New Guinea, kept by the Netherlands when Indonesia became independent in 1949 and prepared for self-government in the 1950s. After Indonesian military pressure, the New York Agreement transferred it to UN administration on 1 October 1962 and to Indonesia on 1 May 1963. A 1969 vote by about a thousand selected representatives, the Act of Free Choice, endorsed Indonesian rule; its fairness is widely disputed.",
+      "sources": [
+        {
+          "title": "Wikipedia: Netherlands New Guinea",
+          "url": "https://en.wikipedia.org/wiki/Netherlands_New_Guinea"
+        },
+        {
+          "title": "Wikipedia: New York Agreement",
+          "url": "https://en.wikipedia.org/wiki/New_York_Agreement"
+        },
+        {
+          "title": "Wikipedia: Act of Free Choice",
+          "url": "https://en.wikipedia.org/wiki/Act_of_Free_Choice"
+        }
+      ],
+      "log": "indonesia-malaysia-review.md"
     }
   },
   "base": {

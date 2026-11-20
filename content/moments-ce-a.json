@@ -258,6 +258,22 @@
     ]
   },
   {
+    "id": "srivijaya",
+    "year": 682,
+    "yearLabel": "682 CE",
+    "title": "Srivijaya rises at Palembang",
+    "place": "Palembang, South Sumatra (Indonesia)",
+    "lonlat": [104.75, -2.99],
+    "category": "state",
+    "summary": "The Kedukan Bukit inscription, dated 682 CE and one of the oldest texts in Old Malay, records how a ruler called Dapunta Hyang set out with some 20,000 men and founded a settlement at Palembang. The Chinese monk Yijing, who stayed there in 671 and again in 687–695, describes Srivijaya as a Buddhist centre where pilgrims learned Sanskrit before going on to India. Within a few decades it controlled both the Strait of Malacca and the Sunda Strait.",
+    "why": "Srivijaya was the first great sea power of the archipelago: for some five centuries it taxed the trade between China, India and the Middle East that had to pass its straits, and it spread Buddhism and the Malay language across the region.",
+    "sources": [
+      {"title": "Wikipedia: Srivijaya", "url": "https://en.wikipedia.org/wiki/Srivijaya"},
+      {"title": "Wikipedia: Kedukan Bukit inscription", "url": "https://en.wikipedia.org/wiki/Kedukan_Bukit_inscription"},
+      {"title": "Wikipedia: Yijing (monk)", "url": "https://en.wikipedia.org/wiki/Yijing_(monk)"}
+    ]
+  },
+  {
     "id": "dome-of-the-rock",
     "year": 691,
     "yearLabel": "691–692 CE",
@@ -317,6 +333,22 @@
     "sources": [
       {"title": "Wikipedia: Classic Maya collapse", "url": "https://en.wikipedia.org/wiki/Classic_Maya_collapse"},
       {"title": "Wikipedia: Tikal", "url": "https://en.wikipedia.org/wiki/Tikal"}
+    ]
+  },
+  {
+    "id": "borobudur",
+    "year": 800,
+    "yearLabel": "c. 780–833 CE",
+    "title": "Borobudur is built in central Java",
+    "place": "Borobudur, Magelang, Central Java (Indonesia)",
+    "lonlat": [110.2, -7.61],
+    "category": "culture",
+    "summary": "Under the Buddhist Sailendra dynasty, builders in the Kedu Plain raised Borobudur, a stepped stone monument shaped as a mandala and crowned by 72 perforated stupas. Pilgrims walking its terraces pass 2,672 relief panels and 504 statues of the Buddha. Half a century later the Hindu temple complex of Prambanan was built nearby. Borobudur was abandoned in the following centuries, buried under volcanic ash and jungle, until it was cleared from 1814 onwards.",
+    "why": "It is the largest Buddhist monument in the world and the masterpiece of the Javanese kingdoms that had absorbed Indian religion, writing and art while building their own civilisation.",
+    "sources": [
+      {"title": "Wikipedia: Borobudur", "url": "https://en.wikipedia.org/wiki/Borobudur"},
+      {"title": "Wikipedia: Shailendra dynasty", "url": "https://en.wikipedia.org/wiki/Shailendra_dynasty"},
+      {"title": "Wikipedia: Prambanan", "url": "https://en.wikipedia.org/wiki/Prambanan"}
     ]
   },
   {
@@ -519,6 +551,23 @@
     ]
   },
   {
+    "id": "majapahit",
+    "year": 1293,
+    "yearLabel": "1293–1389 CE",
+    "title": "Majapahit: Java's last Hindu-Buddhist empire",
+    "place": "Trowulan, East Java (Indonesia)",
+    "lonlat": [112.38, -7.56],
+    "category": "state",
+    "summary": "In 1293 the Javanese prince Raden Wijaya used a Mongol invasion force sent by Kublai Khan to defeat his rival, the king of Kediri, then turned on the Mongols and drove them out. He founded Majapahit, with its capital at Trowulan. Under King Hayam Wuruk (1350–89) and his chief minister Gajah Mada, who is said to have sworn not to rest until the islands were united, Majapahit claimed tribute from ports across the archipelago, listed in the court poem Nagarakretagama of 1365.",
+    "why": "Majapahit was the last great Hindu-Buddhist state of the islands before Islam spread through them, and Indonesian nationalists later held it up as a precursor of a united Indonesia.",
+    "sources": [
+      {"title": "Wikipedia: Majapahit", "url": "https://en.wikipedia.org/wiki/Majapahit"},
+      {"title": "Wikipedia: Mongol invasion of Java", "url": "https://en.wikipedia.org/wiki/Mongol_invasion_of_Java"},
+      {"title": "Wikipedia: Gajah Mada", "url": "https://en.wikipedia.org/wiki/Gajah_Mada"},
+      {"title": "Wikipedia: Nagarakretagama", "url": "https://en.wikipedia.org/wiki/Nagarakretagama"}
+    ]
+  },
+  {
     "id": "mansa-musa",
     "year": 1324,
     "yearLabel": "1324–1325 CE",
@@ -561,6 +610,21 @@
     "sources": [
       {"title": "Wikipedia: Black Death", "url": "https://en.wikipedia.org/wiki/Black_Death"},
       {"title": "Wikipedia: Siege of Caffa", "url": "https://en.wikipedia.org/wiki/Siege_of_Caffa"}
+    ]
+  },
+  {
+    "id": "malacca",
+    "year": 1400,
+    "yearLabel": "c. 1400–1511 CE",
+    "title": "Malacca becomes the hub of the Strait",
+    "place": "Malacca (Melaka), Malaysia",
+    "lonlat": [102.25, 2.19],
+    "category": "trade",
+    "summary": "Around 1400 Parameswara, a prince from Palembang who had been driven out of Singapura, founded a port at Malacca. The Ming emperor recognised it in 1405, Zheng He's fleets used it as a base, and its rulers adopted Islam. By the late 15th century merchants from Gujarat, Tamil country, China, Java and the Moluccas met there to exchange spices, cloth and porcelain, and the sultans ruled the southern Malay Peninsula and the Sumatran coast opposite.",
+    "why": "Malacca made Islam and the Malay language the common culture of the archipelago's trading ports, and its court became the model for later Malay sultanates; the Portuguese conquest of 1511 began European rule in Southeast Asia.",
+    "sources": [
+      {"title": "Wikipedia: Malacca Sultanate", "url": "https://en.wikipedia.org/wiki/Malacca_Sultanate"},
+      {"title": "Wikipedia: Parameswara (king)", "url": "https://en.wikipedia.org/wiki/Parameswara_(king)"}
     ]
   },
   {

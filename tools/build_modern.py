@@ -166,7 +166,7 @@ NEW_REALMS = {
     "Republic of San Marino": ("San Marino", "Q238"), "Somaliland": ("Somaliland", "Q34754"), "Tonga": ("Tonga", "Q678"),
     "Tuvalu": ("Tuvalu", "Q672"), "Vatican City": ("Vatican City", "Q237"), "Western Sahara": ("Western Sahara", "Q6250"),
     "British Crown Dependencies": ("Crown Dependencies", ""), "Republic of Iraq": ("Iraq", "Q796"),
-    "State of Libya": ("Libya", "Q1016"),
+    "State of Libya": ("Libya", "Q1016"), "Netherlands New Guinea": ("Netherlands New Guinea", ""),
 }
 # Cliopatria gives these realms another country's Wikidata id.
 WD_FIX = {"Guinea": "Q1006", "Republic of China": "Q865", "Republic of Korea": "Q884", "Republic of the Congo": "Q971",

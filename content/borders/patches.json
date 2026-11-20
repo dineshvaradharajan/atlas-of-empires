@@ -7157,6 +7157,827 @@
      "url": "https://en.wikipedia.org/wiki/Siege_of_Jerusalem_(587_BC)"
     }
    ]
+  },
+  {
+   "id": "dutch-east-indies-qajar-swap-1895",
+   "note": "In 1895-1897 the border data gives the Dutch East Indies' islands to the Qajar row and Persia's outline to the Dutch East Indies row (a swap; both rows are right in 1894 and 1898). Each takes back its own outline: the Dutch East Indies the islands of 1895 without the stray piece near Tehran, Persia its 1894 outline.",
+   "ops": [
+    {
+     "op": "geometry",
+     "realm": "Dutch East Indies",
+     "years": [
+      1895,
+      1897
+     ],
+     "from": "Qajar Dynasty",
+     "year": 1895
+    },
+    {
+     "op": "drop_parts",
+     "realm": "Dutch East Indies",
+     "years": [
+      1895,
+      1897
+     ],
+     "box": [
+      44,
+      24,
+      64,
+      40
+     ]
+    },
+    {
+     "op": "geometry",
+     "realm": "Qajar Dynasty",
+     "years": [
+      1895,
+      1897
+     ],
+     "year": 1894
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Dutch East Indies",
+     "url": "https://en.wikipedia.org/wiki/Dutch_East_Indies"
+    },
+    {
+     "title": "Wikipedia: Qajar Iran",
+     "url": "https://en.wikipedia.org/wiki/Qajar_Iran"
+    }
+   ]
+  },
+  {
+   "id": "malacca-sultanate-1400-1511",
+   "note": "The Malacca Sultanate was founded around 1400 by Parameswara and by the 1450s-70s ruled the southern Malay Peninsula, Pahang, the Riau Islands and the Sumatran coast opposite (Rokan, Siak, Kampar, Indragiri). The border data draws it before 1511 only as a sliver at the tip of Johor and puts its 15th-century extent in 1512-1528, after the Portuguese conquest. Malacca's own area is drawn for 1400-1455; its 1512 outline (shown as Johor from 1512 by the corrections layer), which leaves out the Portuguese-held town, is used for 1456-1511 in place of the sliver, with the town's area added. Majapahit's claims on the peninsula and Sumatra are not drawn after 1401: Malacca and Pasai were under Ming protection from 1405 and Palembang under a Ming-appointed ruler from 1407.",
+   "ops": [
+    {
+     "op": "shape",
+     "name": "Sultanate of Malacca",
+     "years": [
+      1400,
+      1455
+     ],
+     "coords": [
+      [
+       [
+        101.75,
+        2.6
+       ],
+       [
+        102.0,
+        2.98
+       ],
+       [
+        102.55,
+        2.98
+       ],
+       [
+        102.95,
+        2.5
+       ],
+       [
+        102.75,
+        2.0
+       ],
+       [
+        102.45,
+        1.95
+       ],
+       [
+        102.15,
+        2.12
+       ],
+       [
+        101.85,
+        2.38
+       ],
+       [
+        101.75,
+        2.6
+       ]
+      ]
+     ]
+    },
+    {
+     "op": "copy",
+     "realm": "Sultanate of Malacca",
+     "year": 1512,
+     "years": [
+      1456,
+      1511
+     ],
+     "replace": true
+    },
+    {
+     "op": "add_parts",
+     "realm": "Sultanate of Malacca",
+     "years": [
+      1456,
+      1511
+     ],
+     "coords": [
+      [
+       [
+        101.75,
+        2.6
+       ],
+       [
+        102.0,
+        2.98
+       ],
+       [
+        102.55,
+        2.98
+       ],
+       [
+        102.95,
+        2.5
+       ],
+       [
+        102.75,
+        2.0
+       ],
+       [
+        102.45,
+        1.95
+       ],
+       [
+        102.15,
+        2.12
+       ],
+       [
+        101.85,
+        2.38
+       ],
+       [
+        101.75,
+        2.6
+       ]
+      ]
+     ]
+    },
+    {
+     "op": "drop_parts",
+     "realm": "Majapahit",
+     "years": [
+      1402,
+      1474
+     ],
+     "box": [
+      99.0,
+      1.0,
+      105.5,
+      7.5
+     ]
+    },
+    {
+     "op": "drop_parts",
+     "realm": "Majapahit",
+     "years": [
+      1402,
+      1474
+     ],
+     "box": [
+      94.5,
+      -6.5,
+      106.5,
+      6.0
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Malacca Sultanate",
+     "url": "https://en.wikipedia.org/wiki/Malacca_Sultanate"
+    },
+    {
+     "title": "Wikipedia: Parameswara (king)",
+     "url": "https://en.wikipedia.org/wiki/Parameswara_(king)"
+    },
+    {
+     "title": "Wikipedia: Majapahit",
+     "url": "https://en.wikipedia.org/wiki/Majapahit"
+    },
+    {
+     "title": "Wikipedia: Palembang",
+     "url": "https://en.wikipedia.org/wiki/Palembang"
+    }
+   ]
+  },
+  {
+   "id": "netherlands-new-guinea-1950-1962",
+   "note": "Western New Guinea stayed under Dutch rule as Netherlands New Guinea when the rest of the Dutch East Indies became independent in December 1949; it passed to UN administration in October 1962 and to Indonesia on 1 May 1963. The border data leaves it empty in 1950-1962; the Dutch East Indies' 1949 New Guinea outline is drawn for those years.",
+   "ops": [
+    {
+     "op": "copy",
+     "realm": "Dutch East Indies",
+     "year": 1949,
+     "name": "Netherlands New Guinea",
+     "years": [
+      1950,
+      1962
+     ]
+    },
+    {
+     "op": "drop_parts",
+     "realm": "Netherlands New Guinea",
+     "years": [
+      1950,
+      1962
+     ],
+     "box": [
+      94.0,
+      -11.5,
+      131.0,
+      6.5
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Netherlands New Guinea",
+     "url": "https://en.wikipedia.org/wiki/Netherlands_New_Guinea"
+    },
+    {
+     "title": "Wikipedia: United Nations Temporary Executive Authority",
+     "url": "https://en.wikipedia.org/wiki/United_Nations_Temporary_Executive_Authority"
+    }
+   ]
+  },
+  {
+   "id": "japanese-dutch-east-indies-1942",
+   "note": "Japan invaded the Dutch East Indies in January 1942; the Dutch surrendered Java on 8 March 1942 and Singapore fell on 15 February. Japanese troops landed on Portuguese Timor in February 1942 and held it until September 1945. The border data keeps Java, Sumatra, Sulawesi, the Moluccas and the Lesser Sundas Dutch, and Singapore empty, in 1942, and draws Portuguese Timor over the Japanese occupation in 1943-44; Japan's 1943 outline of these islands is used for 1942 and the Portuguese shape is left out in 1942-44. New Guinea, where the Dutch held the south coast throughout the war, is left as it is.",
+   "ops": [
+    {
+     "op": "add_parts",
+     "realm": "Empire of Japan",
+     "years": [
+      1942,
+      1942
+     ],
+     "from": "Empire of Japan",
+     "year": 1943,
+     "at": [
+      [
+       110.0,
+       -7.3
+      ],
+      [
+       113.4,
+       -7.05
+      ],
+      [
+       101.5,
+       0.5
+      ],
+      [
+       106.0,
+       -2.2
+      ],
+      [
+       107.9,
+       -2.85
+      ],
+      [
+       115.2,
+       -8.4
+      ],
+      [
+       116.3,
+       -8.6
+      ],
+      [
+       118.0,
+       -8.6
+      ],
+      [
+       121.0,
+       -8.6
+      ],
+      [
+       120.0,
+       -9.7
+      ],
+      [
+       124.0,
+       -9.8
+      ],
+      [
+       120.0,
+       -2.0
+      ],
+      [
+       128.0,
+       1.0
+      ],
+      [
+       129.5,
+       -3.2
+      ],
+      [
+       126.5,
+       -3.4
+      ],
+      [
+       128.15,
+       -3.65
+      ],
+      [
+       103.82,
+       1.36
+      ]
+     ]
+    },
+    {
+     "op": "drop_at",
+     "realm": "Dutch East Indies",
+     "years": [
+      1942,
+      1942
+     ],
+     "at": [
+      [
+       110.0,
+       -7.3
+      ],
+      [
+       113.4,
+       -7.05
+      ],
+      [
+       101.5,
+       0.5
+      ],
+      [
+       106.0,
+       -2.2
+      ],
+      [
+       107.9,
+       -2.85
+      ],
+      [
+       115.2,
+       -8.4
+      ],
+      [
+       116.3,
+       -8.6
+      ],
+      [
+       118.0,
+       -8.6
+      ],
+      [
+       121.0,
+       -8.6
+      ],
+      [
+       120.0,
+       -9.7
+      ],
+      [
+       124.0,
+       -9.8
+      ],
+      [
+       120.0,
+       -2.0
+      ],
+      [
+       128.0,
+       1.0
+      ],
+      [
+       129.5,
+       -3.2
+      ],
+      [
+       126.5,
+       -3.4
+      ],
+      [
+       128.15,
+       -3.65
+      ]
+     ]
+    },
+    {
+     "op": "drop_at",
+     "realm": "Estado Novo",
+     "years": [
+      1942,
+      1944
+     ],
+     "at": [
+      [
+       125.57,
+       -8.56
+      ]
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Dutch East Indies campaign",
+     "url": "https://en.wikipedia.org/wiki/Dutch_East_Indies_campaign"
+    },
+    {
+     "title": "Wikipedia: Japanese occupation of the Dutch East Indies",
+     "url": "https://en.wikipedia.org/wiki/Japanese_occupation_of_the_Dutch_East_Indies"
+    },
+    {
+     "title": "Wikipedia: Battle of Timor",
+     "url": "https://en.wikipedia.org/wiki/Battle_of_Timor"
+    },
+    {
+     "title": "Wikipedia: Fall of Singapore",
+     "url": "https://en.wikipedia.org/wiki/Fall_of_Singapore"
+    }
+   ]
+  },
+  {
+   "id": "aceh-kutaraja-1874-1913",
+   "note": "The Dutch took Aceh's capital, Kutaraja (Banda Aceh), in January 1874. The corrections layer takes the capital out of the sultanate from 1874 and hides the sultanate after 1903, but the border data gives the Dutch East Indies no part of Aceh until 1914, so the north tip of Sumatra is empty; the Dutch East Indies' 1914 Sumatra outline is added for 1874-1913 (the sultanate is drawn on top of it until 1903).",
+   "ops": [
+    {
+     "op": "add_parts",
+     "realm": "Dutch East Indies",
+     "years": [
+      1874,
+      1913
+     ],
+     "from": "Dutch East Indies",
+     "year": 1914,
+     "at": [
+      [
+       95.4,
+       5.45
+      ]
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Aceh War",
+     "url": "https://en.wikipedia.org/wiki/Aceh_War"
+    }
+   ]
+  },
+  {
+   "id": "british-java-1811-1816",
+   "note": "Britain took the Moluccas in 1810 and Java in August-September 1811 and held them until August 1816, when they were handed back under the Anglo-Dutch Treaty of 1814; Malacca, taken in 1795, was returned in 1818. The border data draws the British posts only in 1811-1813, under the Dutch shape, and makes them Dutch again from 1814; the Dutch shapes are left out in 1811-1816 (Malacca 1814-1817) and the British 1813 outline is used for 1811 and 1814-1816 (Malacca to 1817).",
+   "ops": [
+    {
+     "op": "drop_at",
+     "realm": "Dutch East Indies",
+     "years": [
+      1811,
+      1816
+     ],
+     "at": [
+      [
+       110.0,
+       -7.3
+      ],
+      [
+       113.4,
+       -7.05
+      ],
+      [
+       104.0,
+       -4.0
+      ],
+      [
+       120.0,
+       -2.0
+      ],
+      [
+       128.15,
+       -3.65
+      ],
+      [
+       124.0,
+       -9.8
+      ],
+      [
+       124.84,
+       1.47
+      ]
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "British Colonial Empire",
+     "years": [
+      1811,
+      1811
+     ],
+     "from": "British Colonial Empire",
+     "year": 1813,
+     "at": [
+      [
+       110.0,
+       -7.3
+      ],
+      [
+       113.4,
+       -7.05
+      ],
+      [
+       104.0,
+       -4.0
+      ],
+      [
+       120.0,
+       -2.0
+      ],
+      [
+       128.15,
+       -3.65
+      ],
+      [
+       124.0,
+       -9.8
+      ],
+      [
+       124.84,
+       1.47
+      ]
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "British Colonial Empire",
+     "years": [
+      1814,
+      1816
+     ],
+     "from": "British Colonial Empire",
+     "year": 1813,
+     "at": [
+      [
+       110.0,
+       -7.3
+      ],
+      [
+       113.4,
+       -7.05
+      ],
+      [
+       104.0,
+       -4.0
+      ],
+      [
+       120.0,
+       -2.0
+      ],
+      [
+       128.15,
+       -3.65
+      ],
+      [
+       124.0,
+       -9.8
+      ],
+      [
+       124.84,
+       1.47
+      ]
+     ]
+    },
+    {
+     "op": "drop_at",
+     "realm": "Dutch East Indies",
+     "years": [
+      1814,
+      1817
+     ],
+     "at": [
+      [
+       102.25,
+       2.19
+      ]
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "British Colonial Empire",
+     "years": [
+      1814,
+      1817
+     ],
+     "from": "British Colonial Empire",
+     "year": 1813,
+     "at": [
+      [
+       102.25,
+       2.19
+      ]
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Invasion of Java (1811)",
+     "url": "https://en.wikipedia.org/wiki/Invasion_of_Java_(1811)"
+    },
+    {
+     "title": "Wikipedia: Anglo-Dutch Treaty of 1814",
+     "url": "https://en.wikipedia.org/wiki/Anglo-Dutch_Treaty_of_1814"
+    },
+    {
+     "title": "Wikipedia: Dutch Malacca",
+     "url": "https://en.wikipedia.org/wiki/Dutch_Malacca"
+    }
+   ]
+  },
+  {
+   "id": "british-bencoolen-1685-1824",
+   "note": "The English East India Company founded Bencoolen (Bengkulu) on the west coast of Sumatra in 1685 and built Fort Marlborough in 1714; the coast from Indrapura to Krui stayed British until the Anglo-Dutch Treaty of 1824 handed it to the Netherlands. The border data has no British territory on Sumatra in these years.",
+   "ops": [
+    {
+     "op": "shape",
+     "name": "British Bencoolen",
+     "key": "(British Empire)",
+     "wiki": "British Bencoolen",
+     "years": [
+      1685,
+      1824
+     ],
+     "coords": [
+      [
+       [
+        101.05,
+        -2.35
+       ],
+       [
+        101.5,
+        -2.35
+       ],
+       [
+        102.65,
+        -3.45
+       ],
+       [
+        103.35,
+        -4.15
+       ],
+       [
+        104.3,
+        -4.95
+       ],
+       [
+        104.15,
+        -5.45
+       ],
+       [
+        103.8,
+        -5.3
+       ],
+       [
+        102.85,
+        -4.62
+       ],
+       [
+        102.15,
+        -3.98
+       ],
+       [
+        101.6,
+        -3.25
+       ],
+       [
+        101.0,
+        -2.75
+       ],
+       [
+        101.05,
+        -2.35
+       ]
+      ]
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: British Bencoolen",
+     "url": "https://en.wikipedia.org/wiki/British_Bencoolen"
+    },
+    {
+     "title": "Wikipedia: Fort Marlborough",
+     "url": "https://en.wikipedia.org/wiki/Fort_Marlborough"
+    },
+    {
+     "title": "Wikipedia: Anglo-Dutch Treaty of 1824",
+     "url": "https://en.wikipedia.org/wiki/Anglo-Dutch_Treaty_of_1824"
+    }
+   ]
+  },
+  {
+   "id": "penang-1786-1799",
+   "note": "Francis Light took possession of Penang Island for the East India Company in August 1786 under an agreement with the Sultan of Kedah; the mainland strip (Province Wellesley) followed in 1800. The border data makes Penang British only from 1800.",
+   "ops": [
+    {
+     "op": "shape",
+     "name": "Penang",
+     "key": "(British Empire)",
+     "wiki": "Penang",
+     "years": [
+      1786,
+      1799
+     ],
+     "coords": [
+      [
+       [
+        100.18,
+        5.27
+       ],
+       [
+        100.18,
+        5.47
+       ],
+       [
+        100.28,
+        5.49
+       ],
+       [
+        100.35,
+        5.43
+       ],
+       [
+        100.33,
+        5.29
+       ],
+       [
+        100.26,
+        5.24
+       ],
+       [
+        100.18,
+        5.27
+       ]
+      ]
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Penang",
+     "url": "https://en.wikipedia.org/wiki/Penang"
+    },
+    {
+     "title": "Wikipedia: Francis Light",
+     "url": "https://en.wikipedia.org/wiki/Francis_Light"
+    }
+   ]
+  },
+  {
+   "id": "dutch-malacca-1641",
+   "note": "The Dutch East India Company and Johor took Malacca from the Portuguese on 14 January 1641. The border data keeps it Portuguese until 1647 (and Dutch only from 1645); the Portuguese shape there is left out from 1641 and the Dutch 1648 outline is used for 1641-1644.",
+   "ops": [
+    {
+     "op": "drop_at",
+     "realm": "Portuguese Colonies",
+     "years": [
+      1641,
+      1647
+     ],
+     "at": [
+      [
+       102.25,
+       2.19
+      ]
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Dutch Republic",
+     "years": [
+      1641,
+      1644
+     ],
+     "from": "Dutch Republic",
+     "year": 1648,
+     "at": [
+      [
+       102.25,
+       2.19
+      ]
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Siege of Malacca (1641)",
+     "url": "https://en.wikipedia.org/wiki/Siege_of_Malacca_(1641)"
+    },
+    {
+     "title": "Wikipedia: Dutch Malacca",
+     "url": "https://en.wikipedia.org/wiki/Dutch_Malacca"
+    }
+   ]
   }
  ]
 }

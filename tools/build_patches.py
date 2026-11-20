@@ -15,7 +15,8 @@ the data files themselves, so the app, the checks and "this place through time" 
   drop_at     rows of `realm` in `years` lose the polygon pieces that contain any of the points `at`
   add_parts   rows of `realm` in `years` gain polygon pieces: those of `from` in year `year` (all, or the ones
               containing the points `at`), or the explicit rings `coords`
-  shape       a new row named `name` for `years` with the explicit rings `coords` (`wiki` and `wd` for its page)
+  shape       a new row named `name` for `years` with the explicit rings `coords` (`wiki` and `wd` for its page;
+              `key` puts it in another realm's colour group, e.g. "(British Empire)" for a small British post)
   holes       rows of `realm` in `years` lose the holes that lie inside `box` and get the rings `coords` as holes
               in the piece around them (an enclave redrawn, e.g. West Berlin inside the GDR)
 
@@ -141,6 +142,17 @@ def main():
                     new.append(g)
             if new != lst:
                 repl[i] = new
+        kept = []  # rows added by earlier ops (copy, ne, shape) can be edited too
+        for anchor, g in added:
+            if g["properties"]["n"] == name and overlaps(g, a, b):
+                inner, outer = split(g, a, b)
+                res = fn(inner)
+                kept += [(anchor, o) for o in outer] + ([(anchor, res)] if res else [])
+                n += 1
+                print(f"  edit reaches added row {name!r} {g['properties']['f']}-{g['properties']['t']}", file=sys.stderr)
+            else:
+                kept.append((anchor, g))
+        added[:] = kept
         return n
 
     def drop_rows(name, a, b):
@@ -269,7 +281,7 @@ def main():
                 polys = [[orient_ring(closed(r), True)] for r in op["coords"]]
                 area = max(1, round(sum(poly_km2(q) for q in polys)))
                 big = max(polys, key=lambda q: abs(poly_km2(q)))
-                f = {"type": "Feature", "properties": {"n": name, "f": a, "t": b, "a": area, "k": name, "l": label_point(big)},
+                f = {"type": "Feature", "properties": {"n": name, "f": a, "t": b, "a": area, "k": op.get("key", name), "l": label_point(big)},
                      "geometry": {"type": "MultiPolygon", "coordinates": polys}}
                 added.append((None, f))
                 if name not in idx["realms"] and op.get("wiki"):

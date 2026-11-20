@@ -29,6 +29,34 @@
   ]
  },
  {
+  "id": "portuguese-malacca",
+  "year": 1511,
+  "yearLabel": "1511 CE",
+  "title": "Portugal takes Malacca",
+  "place": "Malacca (Melaka), Malaysia",
+  "lonlat": [
+   102.25,
+   2.19
+  ],
+  "category": "war",
+  "summary": "Afonso de Albuquerque, governor of Portuguese India, arrived off Malacca in July 1511 with about 1,000 Portuguese and several hundred Indian soldiers. After two assaults the city fell on 24 August; Sultan Mahmud Shah fled south, and the Portuguese built the fortress later called A Famosa. From Malacca their ships reached the Moluccas, the source of cloves and nutmeg, in 1512.",
+  "why": "It was the first European conquest in Southeast Asia. Muslim traders moved to rival ports such as Aceh, Johor, Banten and Brunei, and the struggle for the spice trade drew in the Dutch and English a century later.",
+  "sources": [
+   {
+    "title": "Wikipedia: Capture of Malacca (1511)",
+    "url": "https://en.wikipedia.org/wiki/Capture_of_Malacca_(1511)"
+   },
+   {
+    "title": "Wikipedia: Portuguese Malacca",
+    "url": "https://en.wikipedia.org/wiki/Portuguese_Malacca"
+   },
+   {
+    "title": "Wikipedia: Afonso de Albuquerque",
+    "url": "https://en.wikipedia.org/wiki/Afonso_de_Albuquerque"
+   }
+  ]
+ },
+ {
   "id": "reformation",
   "year": 1517,
   "yearLabel": "1517",
@@ -240,6 +268,34 @@
    {
     "title": "Wikipedia: Columbian exchange",
     "url": "https://en.wikipedia.org/wiki/Columbian_exchange"
+   }
+  ]
+ },
+ {
+  "id": "batavia-banda",
+  "year": 1619,
+  "yearLabel": "1619–1621 CE",
+  "title": "The Dutch found Batavia and conquer Banda",
+  "place": "Jakarta (Batavia), Indonesia",
+  "lonlat": [
+   106.81,
+   -6.13
+  ],
+  "category": "trade",
+  "summary": "The Dutch East India Company (VOC), chartered in 1602, wanted a fixed base in Asia. In May 1619 its governor-general Jan Pieterszoon Coen stormed Jayakarta, a port of the Banten sultanate, razed it and built Batavia on its ruins. In 1621 Coen conquered the Banda Islands, the only source of nutmeg: their population of about 15,000 was reduced to about 1,000 by killing, starvation, flight and enslavement, and the land was given to Company planters worked by slaves.",
+  "why": "Batavia became the headquarters of the VOC's Asian trade network for nearly two centuries and the core of the later Dutch East Indies; today it is Jakarta, Indonesia's capital.",
+  "sources": [
+   {
+    "title": "Wikipedia: Dutch East India Company",
+    "url": "https://en.wikipedia.org/wiki/Dutch_East_India_Company"
+   },
+   {
+    "title": "Wikipedia: Batavia, Dutch East Indies",
+    "url": "https://en.wikipedia.org/wiki/Batavia,_Dutch_East_Indies"
+   },
+   {
+    "title": "Wikipedia: Dutch conquest of the Banda Islands",
+    "url": "https://en.wikipedia.org/wiki/Dutch_conquest_of_the_Banda_Islands"
    }
   ]
  },
@@ -558,6 +614,58 @@
   ]
  },
  {
+  "id": "tambora",
+  "year": 1815,
+  "yearLabel": "1815 CE",
+  "title": "Mount Tambora erupts",
+  "place": "Mount Tambora, Sumbawa (Indonesia)",
+  "lonlat": [
+   118.0,
+   -8.25
+  ],
+  "category": "collapse",
+  "summary": "After rumbling for days, Mount Tambora on Sumbawa exploded on the evening of 10 April 1815 in the most powerful volcanic eruption in recorded history. Pyroclastic flows and ash destroyed the small kingdoms of Tambora and Pekat, and at least 71,000 people died on Sumbawa and Lombok, most of them in the famine and disease that followed. The ash and sulphur thrown into the stratosphere dimmed the sun around the world.",
+  "why": "In 1816, the 'Year Without a Summer', frosts and rains ruined harvests in Europe and North America, causing famine, food riots and emigration; it was the deadliest eruption of modern times.",
+  "sources": [
+   {
+    "title": "Wikipedia: 1815 eruption of Mount Tambora",
+    "url": "https://en.wikipedia.org/wiki/1815_eruption_of_Mount_Tambora"
+   },
+   {
+    "title": "Wikipedia: Year Without a Summer",
+    "url": "https://en.wikipedia.org/wiki/Year_Without_a_Summer"
+   }
+  ]
+ },
+ {
+  "id": "singapore-1824-treaty",
+  "year": 1819,
+  "yearLabel": "1819–1824 CE",
+  "title": "Raffles founds Singapore; the Strait is divided",
+  "place": "Singapore",
+  "lonlat": [
+   103.85,
+   1.29
+  ],
+  "category": "state",
+  "summary": "On 6 February 1819 Stamford Raffles of the East India Company signed a treaty with a claimant to the Johor throne, Hussein Shah, and the local Temenggong, allowing a British trading post on the island of Singapore. It grew quickly as a free port. In the Anglo-Dutch Treaty of 1824 Britain and the Netherlands divided the Malay world along the Strait of Malacca: Britain gave up Bencoolen in Sumatra, the Dutch gave up Malacca, and each promised to keep out of the other's side.",
+  "why": "The 1824 line split the old Johor-Riau realm and still separates Malaysia and Singapore from Indonesia; Singapore became the commercial capital of the region.",
+  "sources": [
+   {
+    "title": "Wikipedia: Founding of modern Singapore",
+    "url": "https://en.wikipedia.org/wiki/Founding_of_modern_Singapore"
+   },
+   {
+    "title": "Wikipedia: Anglo-Dutch Treaty of 1824",
+    "url": "https://en.wikipedia.org/wiki/Anglo-Dutch_Treaty_of_1824"
+   },
+   {
+    "title": "Wikipedia: Stamford Raffles",
+    "url": "https://en.wikipedia.org/wiki/Stamford_Raffles"
+   }
+  ]
+ },
+ {
   "id": "latin-american-independence",
   "year": 1824,
   "yearLabel": "1808–1826",
@@ -586,6 +694,34 @@
    {
     "title": "Wikipedia: Independence of Brazil",
     "url": "https://en.wikipedia.org/wiki/Independence_of_Brazil"
+   }
+  ]
+ },
+ {
+  "id": "java-war",
+  "year": 1825,
+  "yearLabel": "1825–1830 CE",
+  "title": "Diponegoro's Java War",
+  "place": "Tegalrejo, Yogyakarta (Indonesia)",
+  "lonlat": [
+   110.35,
+   -7.79
+  ],
+  "category": "war",
+  "summary": "Prince Diponegoro of Yogyakarta, angered by Dutch interference at court, rising taxes and a road staked out across his family's land, rose in revolt in July 1825 as a Muslim leader of the Javanese. For five years his guerrilla forces fought the Dutch and the courts allied with them across central Java. The war ended when the Dutch arrested him during negotiations at Magelang in March 1830 and exiled him to Sulawesi. About 200,000 Javanese died, along with some 15,000 soldiers on the Dutch side.",
+  "why": "It was the last great resistance of the Javanese aristocracy; afterwards the Dutch imposed the Cultivation System, forcing Javanese villages to grow export crops for the government, and Diponegoro became a national hero of Indonesia.",
+  "sources": [
+   {
+    "title": "Wikipedia: Java War",
+    "url": "https://en.wikipedia.org/wiki/Java_War"
+   },
+   {
+    "title": "Wikipedia: Diponegoro",
+    "url": "https://en.wikipedia.org/wiki/Diponegoro"
+   },
+   {
+    "title": "Wikipedia: Cultivation System",
+    "url": "https://en.wikipedia.org/wiki/Cultivation_System"
    }
   ]
  },
@@ -739,6 +875,26 @@
    {
     "title": "Wikipedia: Tokugawa shogunate",
     "url": "https://en.wikipedia.org/wiki/Tokugawa_shogunate"
+   }
+  ]
+ },
+ {
+  "id": "krakatoa",
+  "year": 1883,
+  "yearLabel": "1883 CE",
+  "title": "Krakatoa explodes",
+  "place": "Krakatoa, Sunda Strait (Indonesia)",
+  "lonlat": [
+   105.42,
+   -6.1
+  ],
+  "category": "collapse",
+  "summary": "On 26–27 August 1883 the volcanic island of Krakatoa, between Java and Sumatra, blew itself apart. The final explosion was heard on Rodrigues, nearly 4,800 km away, and its pressure wave circled the globe several times. Tsunamis up to 30 metres high swept the coasts of the Sunda Strait, and the official death toll was 36,417. Ash in the upper atmosphere caused vivid red sunsets worldwide and lowered average Northern Hemisphere summer temperatures by about 0.4 °C.",
+  "why": "Reported within hours by the new undersea telegraph cables, it was one of the first disasters followed as news around the world, and it gave scientists their first global study of a volcano's effect on climate.",
+  "sources": [
+   {
+    "title": "Wikipedia: 1883 eruption of Krakatoa",
+    "url": "https://en.wikipedia.org/wiki/1883_eruption_of_Krakatoa"
    }
   ]
  },
@@ -1016,6 +1172,34 @@
   ]
  },
  {
+  "id": "indonesian-independence",
+  "year": 1945,
+  "yearLabel": "1945–1949 CE",
+  "title": "Indonesia declares independence",
+  "place": "Jalan Pegangsaan Timur 56, Jakarta (Indonesia)",
+  "lonlat": [
+   106.845,
+   -6.2
+  ],
+  "category": "state",
+  "summary": "Two days after Japan surrendered, on 17 August 1945, the nationalist leaders Sukarno and Mohammad Hatta read a short proclamation of independence outside Sukarno's house in Jakarta. The Netherlands, returning behind British troops, tried to restore its colony, and four years of war and diplomacy followed, from the Battle of Surabaya in November 1945 to two large Dutch offensives in 1947 and 1948. Under pressure from the United Nations and the United States, the Netherlands transferred sovereignty on 27 December 1949.",
+  "why": "Indonesia, the world's largest archipelago state and later the country with the most Muslims, was one of the first colonies to win independence after the Second World War, and its revolution encouraged anti-colonial movements across Asia and Africa.",
+  "sources": [
+   {
+    "title": "Wikipedia: Proclamation of Indonesian Independence",
+    "url": "https://en.wikipedia.org/wiki/Proclamation_of_Indonesian_Independence"
+   },
+   {
+    "title": "Wikipedia: Indonesian National Revolution",
+    "url": "https://en.wikipedia.org/wiki/Indonesian_National_Revolution"
+   },
+   {
+    "title": "Wikipedia: Battle of Surabaya",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Surabaya"
+   }
+  ]
+ },
+ {
   "id": "india-independence-partition",
   "year": 1947,
   "yearLabel": "1947",
@@ -1112,6 +1296,62 @@
   ]
  },
  {
+  "id": "bandung-conference",
+  "year": 1955,
+  "yearLabel": "1955 CE",
+  "title": "The Bandung Conference",
+  "place": "Gedung Merdeka, Bandung (Indonesia)",
+  "lonlat": [
+   107.61,
+   -6.92
+  ],
+  "category": "ideas",
+  "summary": "From 18 to 24 April 1955 Indonesia hosted leaders of 29 Asian and African countries, most of them recently independent, among them Sukarno, Jawaharlal Nehru, Zhou Enlai, Gamal Abdel Nasser and U Nu. They condemned colonialism in all its forms and adopted ten principles of peaceful coexistence, including respect for sovereignty, non-aggression and non-interference.",
+  "why": "Bandung gave the newly independent countries of the 'Third World' a common voice outside the Cold War blocs and led to the Non-Aligned Movement, founded in Belgrade in 1961.",
+  "sources": [
+   {
+    "title": "Wikipedia: Asian–African Conference",
+    "url": "https://en.wikipedia.org/wiki/Asian–African_Conference"
+   },
+   {
+    "title": "Wikipedia: Non-Aligned Movement",
+    "url": "https://en.wikipedia.org/wiki/Non-Aligned_Movement"
+   }
+  ]
+ },
+ {
+  "id": "merdeka-malaysia",
+  "year": 1957,
+  "yearLabel": "1957–1965 CE",
+  "title": "Merdeka: Malaya and Malaysia",
+  "place": "Stadium Merdeka, Kuala Lumpur (Malaysia)",
+  "lonlat": [
+   101.7,
+   3.14
+  ],
+  "category": "state",
+  "summary": "While British and Commonwealth forces were still fighting a communist insurgency, the Malayan Emergency of 1948–60, Malay, Chinese and Indian parties negotiated independence together. On 31 August 1957 Tunku Abdul Rahman proclaimed 'Merdeka' (independence) in Kuala Lumpur. On 16 September 1963 Malaya joined Singapore, Sarawak and North Borneo (Sabah) to form Malaysia, despite armed opposition from Indonesia; disputes between Kuala Lumpur and Singapore led to Singapore's separation on 9 August 1965.",
+  "why": "It created the federations of Malaysia and the city-state of Singapore that still exist, on a compromise between their Malay, Chinese, Indian and Bornean peoples.",
+  "sources": [
+   {
+    "title": "Wikipedia: Malayan Declaration of Independence",
+    "url": "https://en.wikipedia.org/wiki/Malayan_Declaration_of_Independence"
+   },
+   {
+    "title": "Wikipedia: Malayan Emergency",
+    "url": "https://en.wikipedia.org/wiki/Malayan_Emergency"
+   },
+   {
+    "title": "Wikipedia: Malaysia Agreement",
+    "url": "https://en.wikipedia.org/wiki/Malaysia_Agreement"
+   },
+   {
+    "title": "Wikipedia: Singapore in Malaysia",
+    "url": "https://en.wikipedia.org/wiki/Singapore_in_Malaysia"
+   }
+  ]
+ },
+ {
   "id": "year-of-africa",
   "year": 1960,
   "yearLabel": "1960",
@@ -1156,6 +1396,34 @@
    {
     "title": "Wikipedia: Cuban Missile Crisis",
     "url": "https://en.wikipedia.org/wiki/Cuban_Missile_Crisis"
+   }
+  ]
+ },
+ {
+  "id": "indonesia-1965",
+  "year": 1965,
+  "yearLabel": "1965–1966 CE",
+  "title": "Indonesia's mass killings and the New Order",
+  "place": "Lubang Buaya, Jakarta (Indonesia)",
+  "lonlat": [
+   106.89,
+   -6.29
+  ],
+  "category": "state",
+  "summary": "On the night of 30 September 1965 a group calling itself the 30 September Movement kidnapped and killed six army generals in Jakarta. The army, led by Major General Suharto, blamed the Indonesian Communist Party (PKI), then the largest communist party outside the communist states, and organised a purge. Over the following months soldiers and civilian militias killed an estimated 500,000 to 1,000,000 people and imprisoned hundreds of thousands more. Suharto took executive power from Sukarno in March 1966 and ruled until 1998.",
+  "why": "One of the largest mass killings of the 20th century, it destroyed the PKI, moved Indonesia to the Western side of the Cold War and began Suharto's 32-year military-backed 'New Order'.",
+  "sources": [
+   {
+    "title": "Wikipedia: Indonesian mass killings of 1965–66",
+    "url": "https://en.wikipedia.org/wiki/Indonesian_mass_killings_of_1965–66"
+   },
+   {
+    "title": "Wikipedia: 30 September Movement",
+    "url": "https://en.wikipedia.org/wiki/30_September_Movement"
+   },
+   {
+    "title": "Wikipedia: Transition to the New Order",
+    "url": "https://en.wikipedia.org/wiki/Transition_to_the_New_Order"
    }
   ]
  },
