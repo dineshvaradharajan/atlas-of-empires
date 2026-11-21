@@ -10,6 +10,14 @@ Rows named "(X)" are composites (an empire = its member polities); members carry
 MemberOf "(X)". We draw members, colour them by their outermost group, and use the
 composite rows only for metadata/area (their geometry duplicates the members).
 
+Coasts: each realm's coastline is carried out to the real coast (tools/coast.py,
+snap_ring): Cliopatria's coasts lie a median 5-9 km inland or offshore of it, which showed as grey strips and stray
+capes when zoomed in. Borders between realms are left exactly as Cliopatria draws them: no simplification either, so
+two neighbours keep one shared line (simplifying each realm on its own split shared borders into slivers and gaps).
+
+The real coast is Natural Earth 1:10m land as tools/build_detail.py stores it (public/data/coast/), so run that first
+when Natural Earth changes.
+
 Run: python3 -I tools/build_clio.py
 """
 import glob
@@ -19,12 +27,12 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from build import densify, dp, inside, orient, seg_dist  # noqa: E402  (shared geometry helpers)
+from build import densify, inside, orient, seg_dist  # noqa: E402  (shared geometry helpers)
+from coast import Land, snap_ring  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, "public", "data", "clio")
 CHUNK = 100
-EPS = 0.03  # degrees (~3 km): ample for a world map zoomed up to ~20x
 TOL = 0.01  # degrees: how far a drawn edge (a great-circle arc) may stray from the straight lon/lat line it stands for
 
 
@@ -34,9 +42,6 @@ def simplify_ring(r):
         p = [round(x, 2), round(y, 2)]
         if not out or p != out[-1]:
             out.append(p)
-    if len(out) > 8:
-        m = len(out) // 2
-        out = dp(out[: m + 1], EPS)[:-1] + dp(out[m:], EPS)
     if out and out[0] != out[-1]:
         out.append(out[0])
     if len(out) < 4:
@@ -90,10 +95,101 @@ def groups_of(p):
     return [g for g in m.split(";") if g and not g.startswith(("(Alliance", "(Allegiance"))] if m else []
 
 
+def polys_of(geom):
+    return [geom["coordinates"]] if geom["type"] == "Polygon" else geom["coordinates"]
+
+
+def shared_edges(feats):
+    """For every ring of every drawn row, which of its edges another row of overlapping years also has (a border
+    between two realms), and the points inside such borders. Edges are compared exactly, as Cliopatria stores them."""
+    key = lambda p: (p[0], p[1])
+    by_edge = {}
+    for i, f in enumerate(feats):
+        p = f["properties"]
+        if p["Name"].startswith("("):
+            continue
+        for pi, poly in enumerate(polys_of(f["geometry"])):
+            for ri, r in enumerate(poly):
+                for ei in range(len(r) - 1):
+                    a, b = key(r[ei]), key(r[ei + 1])
+                    by_edge.setdefault((a, b) if a < b else (b, a), []).append((i, pi, ri, ei))
+    yrs = [(int(f["properties"]["FromYear"]), int(f["properties"]["ToYear"])) for f in feats]
+    flags = {}
+    for lst in by_edge.values():
+        if len(lst) < 2:
+            continue
+        for x in lst:
+            fx, tx = yrs[x[0]]
+            if any(y[0] != x[0] and yrs[y[0]][0] <= tx and fx <= yrs[y[0]][1] for y in lst):
+                flags.setdefault(x[:3], set()).add(x[3])
+    pinned = {}  # point -> the years of the rows in which it lies inside a shared border
+    for (i, pi, ri), es in flags.items():
+        r = polys_of(feats[i]["geometry"])[pi][ri]
+        n = len(r) - 1
+        for e in es:
+            if (e + 1) % n in es:
+                pinned.setdefault(key(r[e + 1]), set()).add(yrs[i])
+    return flags, pinned
+
+
+class PinnedFor:
+    """The points that stay put for one row: inside a border it shares with a realm of overlapping years. Cliopatria
+    reuses points across centuries, so a point on a border in one era may be on the coast in another."""
+
+    def __init__(self, pinned, years):
+        self.pinned, (self.f, self.t) = pinned, years
+
+    def __contains__(self, p):
+        return any(a <= self.t and self.f <= b for a, b in self.pinned.get(p, ()))
+
+
 def main():
     src = sorted(glob.glob(os.path.join(ROOT, "data", "clio", "cliopatria_polities_only_v*.geojson")))[-1]
     feats = json.load(open(src))["features"]
     os.makedirs(OUT, exist_ok=True)
+    land = Land.tiles()
+    if True:
+        flags, pinned = shared_edges(feats)
+        # A point never moves across another realm of overlapping years (an unmatched border that faces the sea, as
+        # Egypt's at Eilat in 1949): the realms are indexed by 1° cell, as drawn before any point moves.
+        yrs = [(int(f["properties"]["FromYear"]), int(f["properties"]["ToYear"])) for f in feats]
+        cells = {}
+        for i, f in enumerate(feats):
+            if f["properties"]["Name"].startswith("("):
+                continue
+            for poly in polys_of(f["geometry"]):
+                xs, ys = [q[0] for q in poly[0]], [q[1] for q in poly[0]]
+                box = (min(xs), min(ys), max(xs), max(ys))
+                item = (i, box, [list(map(tuple, r)) for r in poly])
+                for cx in range(math.floor(box[0]), math.floor(box[2]) + 1):
+                    for cy in range(math.floor(box[1]), math.floor(box[3]) + 1):
+                        cells.setdefault((cx, cy), []).append(item)
+
+        def other_realm(i):
+            f0, t0 = yrs[i]
+
+            def veto(x, y):
+                for j, (x0, y0, x1, y1), rings in cells.get((math.floor(x), math.floor(y)), ()):
+                    if j != i and x0 <= x <= x1 and y0 <= y <= y1 and yrs[j][0] <= t0 and f0 <= yrs[j][1] \
+                            and inside((x, y), rings[0]) and not any(inside((x, y), h) for h in rings[1:]):
+                        return True
+                return False
+            return veto
+
+        moved = 0
+        for i, f in enumerate(feats):
+            if f["properties"]["Name"].startswith("("):
+                continue
+            polys = polys_of(f["geometry"])
+            veto = other_realm(i)
+            for pi, poly in enumerate(polys):
+                for ri, r in enumerate(poly):
+                    es = flags.get((i, pi, ri), ())
+                    poly[ri], m = snap_ring(r, ri > 0, [e in es for e in range(len(r) - 1)], PinnedFor(pinned, yrs[i]), land, veto=veto)
+                    moved += m
+            if i % 2000 == 0:
+                print(f"  coasts {i}/{len(feats)}", flush=True)
+        print(f"coasts: {moved} points moved to the Natural Earth coast; {len(pinned)} points lie inside shared borders", flush=True)
 
     # overall size of each composite group -> pick the outermost group for colouring
     gsize = {}

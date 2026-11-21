@@ -13,6 +13,16 @@ import subprocess
 import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.join(ROOT, "tools"))
+from coast import Land, snap_occupations  # noqa: E402
+
+_land = []
+
+
+def coast_land():  # the real coastline, read once (public/data/coast/, tools/build_detail.py)
+    if not _land:
+        _land.append(Land.tiles())
+    return _land[0]
 NAMES = os.path.join(ROOT, "data", "names")
 REGIONS = {"southern-africa", "northern-africa", "europe", "middle-east-south-asia", "north-central-asia",
            "east-asia", "southeast-asia", "northern-north-america", "southern-north-america",
@@ -389,6 +399,7 @@ def main():
         problems += [f"cinema {wid}: {b}" for b in bad]
         check_sources(f"cinema {wid}", c)
         c.pop("dataNote", None)  # notes about the map data, for maintainers only
+        snap_occupations(c, coast_land(), fy)  # occupied areas carried out to the real coast (tools/coast.py)
         with open(os.path.join(cdir, f"{wid}.json"), "w") as fh:
             json.dump(c, fh, ensure_ascii=False, separators=(",", ":"))
         by_id[wid]["cinema"] = True

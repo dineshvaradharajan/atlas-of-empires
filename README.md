@@ -26,7 +26,8 @@ between chapters, Space plays and pauses, Esc clears the selection. Links are sh
 
 ```bash
 python3 -I tools/build.py        # historical-basemaps snapshots -> public/data/<year>.json (peoples layer)
-python3 -I tools/build_clio.py   # Cliopatria -> public/data/clio/<chunk>.json + index.json (state borders)
+python3 -I tools/build_detail.py <ne_10m_admin_0_countries.geojson> # Natural Earth 1:10m land -> public/data/coast/ (the coast drawn when zoomed in)
+python3 -I tools/build_clio.py   # Cliopatria -> public/data/clio/<chunk>.json + index.json (state borders, coasts carried to public/data/coast/)
 python3 -I tools/build_patches.py <ne_10m_admin_0_countries.geojson> # content/borders/patches.json: sourced fixes to rows before 1992
 python3 -I tools/build_modern.py <ne_10m_admin_0_countries.geojson>  # Natural Earth -> clio/1992.json (borders from 1992 to today)
 python3 -I tools/content.py      # content/eras + content/empires -> public/data/content.json, links to Cliopatria
@@ -37,7 +38,8 @@ python3 -I tools/seo.py          # plain HTML pages, sitemaps and llms.txt for s
 
 Raw sources live in `data/` (`data/geo/` holds historical-basemaps, `data/clio/` holds Cliopatria). Natural Earth files
 come from the `geojson/` folder of [natural-earth-vector](https://github.com/nvkelso/natural-earth-vector) and are passed
-by path. Run the three border steps in this order: `build_clio.py` rewrites the files the other two edit, and
+by path. `build_detail.py` only needs rerunning when Natural Earth changes; `build_clio.py` and `content.py` read its
+tiles. Run the three border steps in this order: `build_clio.py` rewrites the files the other two edit, and
 `build_patches.py` refuses to run twice. `PRESENT` in `build_modern.py` is the map's last year.
 
 ## Contributing

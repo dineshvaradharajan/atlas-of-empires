@@ -447,7 +447,7 @@ function strokeVisible(list, inGroup) { // list: items to outline with ctx's cur
   }
 }
 function clipFor(c, it) { // apply the clip a feature needs (coastline for reconstructions, box for crops)
-  if (it.p.recon) c.clip(S.landClip);
+  if (it.p.recon) c.clip(landClip());
   if (it.p.crop) c.clip(pathOf(it.p.crop));
   if (it.p.cut) { const p = new Path2D(); p.rect(-1e5, -1e5, 2e5, 2e5); for (const cf of it.p.cut) p.addPath(pathOf(cf)); c.clip(p, "evenodd"); }
 }
@@ -886,9 +886,30 @@ const GL = (() => {
     const mk = (arr) => { const b = gl.createBuffer(); gl.bindBuffer(gl.ARRAY_BUFFER, b); gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(arr), gl.STATIC_DRAW); return { b, n: arr.length / 2 }; };
     return { grat: mk(ls[0]), sphereLine: mk(ls[1]), sphereFill: mk(Array.from(sph.fill)) };
   }
+  // Zoomed in, every territory is clipped to the detailed coastline (data/coast/): the land is written to the top stencil
+  // bit (LB) once a frame and every fill and border is tested against it; the clips of single realms below keep to
+  // the lower bits.
+  let LB = 0;
+  const sf = (fn, ref, mask) => gl.stencilFunc(fn, ref | LB, mask | LB);
+  function plain() { // no clip of its own: only the land clip, when zoomed in
+    if (!LB) { gl.disable(gl.STENCIL_TEST); gl.stencilMask(0xff); return; }
+    gl.enable(gl.STENCIL_TEST); gl.stencilMask(0x7f); gl.stencilFunc(gl.EQUAL, LB, LB); gl.stencilOp(gl.KEEP, gl.KEEP, gl.KEEP);
+  }
+  let landBufs = [];
+  function landStencil(d) { // the detailed land, written to the stencil by inverting it under a fan per ring (even-odd)
+    gl.enable(gl.STENCIL_TEST); gl.stencilMask(0x80); gl.colorMask(false, false, false, false);
+    gl.stencilFunc(gl.ALWAYS, 0, 0); gl.stencilOp(gl.KEEP, gl.KEEP, gl.INVERT);
+    for (const tile of d.tiles) {
+      if (!tile.gl) { tile.gl = gl.createBuffer(); gl.bindBuffer(gl.ARRAY_BUFFER, tile.gl); gl.bufferData(gl.ARRAY_BUFFER, tile.flat, gl.STATIC_DRAW); landBufs.push(tile.gl); }
+      bindPos(tile.gl);
+      for (let i = 0; i < tile.starts.length; i++) gl.drawArrays(gl.TRIANGLE_FAN, tile.starts[i], tile.counts[i]);
+    }
+    gl.colorMask(true, true, true, true); LB = 0x80; plain();
+  }
   function bindPos(buf) { gl.bindBuffer(gl.ARRAY_BUFFER, buf); gl.enableVertexAttribArray(aP); gl.vertexAttribPointer(aP, 2, gl.FLOAT, false, 0, 0); }
   function color(c, a = 1) { const v = rgba(c); gl.uniform4f(U.c, v[0], v[1], v[2], v[3]); gl.uniform1f(U.hatch, 0); gl.uniform1f(U.a, a); }
   function drawLayer(layer, fillOf, alpha) {
+    plain();
     bindPos(layer.fb);
     const later = [];
     let bandsDone = false;
@@ -897,14 +918,16 @@ const GL = (() => {
       if (!bandsDone && r.it.kind === "state") { // coast bands under every realm, clipped to land (see BAND_KM)
         bandsDone = true;
         if (layer.bandRanges.length) {
-          gl.enable(gl.STENCIL_TEST); gl.clearStencil(0); gl.clear(gl.STENCIL_BUFFER_BIT);
-          gl.colorMask(false, false, false, false); gl.stencilFunc(gl.ALWAYS, 1, 0xff); gl.stencilOp(gl.KEEP, gl.KEEP, gl.REPLACE);
-          if (!landLayer) landLayer = makeLayer(S.items.filter((it) => it.kind !== "state"));
-          bindPos(landLayer.fb); color("#000"); for (const q of landLayer.ranges) if (q.fn) gl.drawArrays(gl.TRIANGLES, q.f0, q.fn);
-          gl.colorMask(true, true, true, true); gl.stencilOp(gl.KEEP, gl.KEEP, gl.KEEP); gl.stencilFunc(gl.EQUAL, 1, 0xff);
+          if (!LB) { // the base map's land; zoomed in, the detailed land already in the stencil (LB) clips the bands
+            gl.enable(gl.STENCIL_TEST); gl.clearStencil(0); gl.clear(gl.STENCIL_BUFFER_BIT);
+            gl.colorMask(false, false, false, false); gl.stencilFunc(gl.ALWAYS, 1, 0xff); gl.stencilOp(gl.KEEP, gl.KEEP, gl.REPLACE);
+            if (!landLayer) landLayer = makeLayer(S.items.filter((it) => it.kind !== "state"));
+            bindPos(landLayer.fb); color("#000"); for (const q of landLayer.ranges) if (q.fn) gl.drawArrays(gl.TRIANGLES, q.f0, q.fn);
+            gl.colorMask(true, true, true, true); gl.stencilOp(gl.KEEP, gl.KEEP, gl.KEEP); gl.stencilFunc(gl.EQUAL, 1, 0xff);
+          }
           bindPos(layer.bb);
           for (const q of layer.bandRanges) { const f = fillOf(q.it); if (f !== "HATCH") { color(f, alpha); gl.drawArrays(gl.TRIANGLES, q.b0, q.bn); } }
-          gl.disable(gl.STENCIL_TEST);
+          plain();
           bindPos(layer.fb);
         }
       }
@@ -926,21 +949,21 @@ const GL = (() => {
         gl.enable(gl.STENCIL_TEST);
         if (!landStencil) {
           gl.clearStencil(0); gl.clear(gl.STENCIL_BUFFER_BIT);
-          gl.colorMask(false, false, false, false); gl.stencilFunc(gl.ALWAYS, 1, 0xff); gl.stencilOp(gl.KEEP, gl.KEEP, gl.REPLACE);
+          gl.colorMask(false, false, false, false); sf(gl.ALWAYS, 1, 0xff); gl.stencilOp(gl.KEEP, gl.KEEP, gl.REPLACE);
           if (!landLayer) landLayer = makeLayer(S.items.filter((it) => it.kind !== "state"));
           bindPos(landLayer.fb); color("#000"); for (const q of landLayer.ranges) if (q.fn) gl.drawArrays(gl.TRIANGLES, q.f0, q.fn);
-          gl.colorMask(true, true, true, true); gl.stencilOp(gl.KEEP, gl.KEEP, gl.KEEP); gl.stencilFunc(gl.EQUAL, 1, 0xff);
+          gl.colorMask(true, true, true, true); gl.stencilOp(gl.KEEP, gl.KEEP, gl.KEEP); sf(gl.EQUAL, 1, 0xff);
           landStencil = true;
         }
         bindPos(layer.fb); color(fillOf(r.it), alpha); gl.drawArrays(gl.TRIANGLES, r.f0, r.fn);
-        gl.disable(gl.STENCIL_TEST);
+        plain();
         continue;
       }
       landStencil = false; // the item below rewrites the stencil
       gl.enable(gl.STENCIL_TEST);
       gl.clearStencil(r.it.p.cut && !r.it.p.crop && !r.it.p.recon ? 1 : 0); gl.clear(gl.STENCIL_BUFFER_BIT); gl.clearStencil(0); // a cut-only item starts everywhere
 
-      gl.colorMask(false, false, false, false); gl.stencilFunc(gl.ALWAYS, 1, 0xff); gl.stencilOp(gl.KEEP, gl.KEEP, gl.REPLACE);
+      gl.colorMask(false, false, false, false); sf(gl.ALWAYS, 1, 0xff); gl.stencilOp(gl.KEEP, gl.KEEP, gl.REPLACE);
       if (r.it.p.recon) {
         if (!landLayer) landLayer = makeLayer(S.items.filter((it) => it.kind !== "state"));
         bindPos(landLayer.fb); color("#000"); for (const q of landLayer.ranges) if (q.fn) gl.drawArrays(gl.TRIANGLES, q.f0, q.fn);
@@ -948,21 +971,22 @@ const GL = (() => {
       if (r.it.p.crop) {
         const g = build(r.it.p.crop), b = gl.createBuffer();
         gl.bindBuffer(gl.ARRAY_BUFFER, b); gl.bufferData(gl.ARRAY_BUFFER, g.fill, gl.STREAM_DRAW); bindPos(b);
-        if (r.it.p.recon) { gl.stencilFunc(gl.EQUAL, 1, 0xff); gl.stencilOp(gl.KEEP, gl.KEEP, gl.INCR); gl.drawArrays(gl.TRIANGLES, 0, g.fill.length / 2); gl.stencilFunc(gl.EQUAL, 2, 0xff); }
-        else { gl.drawArrays(gl.TRIANGLES, 0, g.fill.length / 2); gl.stencilFunc(gl.EQUAL, 1, 0xff); }
+        if (r.it.p.recon) { sf(gl.EQUAL, 1, 0xff); gl.stencilOp(gl.KEEP, gl.KEEP, gl.INCR); gl.drawArrays(gl.TRIANGLES, 0, g.fill.length / 2); sf(gl.EQUAL, 2, 0xff); }
+        else { gl.drawArrays(gl.TRIANGLES, 0, g.fill.length / 2); sf(gl.EQUAL, 1, 0xff); }
         gl.deleteBuffer(b);
-      } else gl.stencilFunc(gl.EQUAL, 1, 0xff);
+      } else sf(gl.EQUAL, 1, 0xff);
       if (r.it.p.cut) { // punch the cut boxes out of the stencil
         const ref = r.it.p.recon && r.it.p.crop ? 2 : 1;
-        gl.stencilFunc(gl.ALWAYS, 0, 0xff); gl.stencilOp(gl.KEEP, gl.KEEP, gl.REPLACE);
+        sf(gl.ALWAYS, 0, 0xff); gl.stencilOp(gl.KEEP, gl.KEEP, gl.REPLACE);
         for (const cf of r.it.p.cut) { const g = build(cf), b = gl.createBuffer(); gl.bindBuffer(gl.ARRAY_BUFFER, b); gl.bufferData(gl.ARRAY_BUFFER, g.fill, gl.STREAM_DRAW); bindPos(b); gl.drawArrays(gl.TRIANGLES, 0, g.fill.length / 2); gl.deleteBuffer(b); }
-        gl.stencilFunc(gl.EQUAL, ref, 0xff);
+        sf(gl.EQUAL, ref, 0xff);
       }
       gl.colorMask(true, true, true, true); gl.stencilOp(gl.KEEP, gl.KEEP, gl.KEEP);
       bindPos(layer.fb); color(fillOf(r.it), alpha); gl.drawArrays(gl.TRIANGLES, r.f0, r.fn);
-      gl.disable(gl.STENCIL_TEST);
+      plain();
     }
     // (borders of ordinary states are drawn with their fills; reconstructed/cropped borders on the 2D overlay)
+    plain();
   }
   // ---- world images draped on the map (data/relief.jpg terrain shading, data/shelf.png shallow seabed)
   // A lon/lat grid of vertices, projected on the CPU like every other shape, with texture coordinates in lon/lat.
@@ -1028,7 +1052,7 @@ const GL = (() => {
   }
   return {
     loadTexture,
-    resize(w, h, dpr) { cv.width = Math.round(w * dpr); cv.height = Math.round(h * dpr); geo = new WeakMap(); bandGeo = new WeakMap(); freeLayer(cur); freeLayer(prev); freeLayer(landLayer); cur = prev = landLayer = null; statics = null; mesh = null; },
+    resize(w, h, dpr) { for (const b of landBufs) gl.deleteBuffer(b); landBufs = []; cv.width = Math.round(w * dpr); cv.height = Math.round(h * dpr); geo = new WeakMap(); bandGeo = new WeakMap(); freeLayer(cur); freeLayer(prev); freeLayer(landLayer); cur = prev = landLayer = null; statics = null; mesh = null; },
     setItems,
     warm(features) { // triangulate shapes ahead of time, a few milliseconds at a time while the browser is idle
       const todo = features.filter((f) => f && !geo.has(f));
@@ -1067,12 +1091,18 @@ const GL = (() => {
       bindPos(statics.grat.b); color(theme.grat); gl.drawArrays(gl.LINES, 0, statics.grat.n);
       const drop = seaDrop(S.year);
       if (drop > 0.5) drawRaster("shelf", t, { mode: 1, drop, land: theme.unknown }); // land the lower sea left dry
+      LB = 0;
+      if (S.detail) { // zoomed in: the detailed land, unrecorded until a territory covers it
+        landStencil(S.detail);
+        bindPos(statics.sphereFill.b); color(theme.unknown); gl.drawArrays(gl.TRIANGLES, 0, statics.sphereFill.n);
+      }
       const e = prev ? Math.min(1, (performance.now() - fadeT0) / FADE) : 1;
       if (prev && e < 1) drawLayer(prev, fillOf, 1);
       if (cur) drawLayer(cur, fillOf, prev && e < 1 ? e * e * (3 - 2 * e) : 1);
       const fade = Math.max(0, Math.min(1, (14 - t.k) / 8)); // the shading grid is ~18 km a cell: fade it out when zoomed in close
       if (S.relief === true && fade > 0) drawRaster("relief", t, { mode: 0, str: (theme.dark ? 0.55 : 0.8) * fade }); // hills and mountains
       if (e >= 1 && prev) { freeLayer(prev); prev = null; }
+      LB = 0; plain();
       bindPos(statics.sphereLine.b); color(theme.rule); gl.drawArrays(gl.LINES, 0, statics.sphereLine.n);
     },
   };
@@ -1090,6 +1120,74 @@ function buildLandClip() {
   for (const f of S.base.features) S.landClip.addPath(pathOf(f));
   S.landClipFor = S.base;
 }
+// ---------------------------------------------------------------- detailed coastline (data/coast/, tools/build_detail.py)
+// The border files and base maps follow the coast only roughly (a median 5-9 km off it): fine at world scale, blocky
+// and off the shore when zoomed in. Past DETAIL_PX the page loads the Natural Earth 1:10m land tiles in view and clips
+// every territory, occupied area and reconstruction to them, so the coast is drawn to within about half a kilometre.
+// The tiles are a few KB each and only fetched when zoomed in.
+const DETAIL_PX = 16; // map pixels per degree (at the equator) past which the detailed coast is used
+const coastTiles = new Map(); // "lon_lat" -> { ready, rings: [Int32Array of lon/lat thousandths] }
+let coastIndex = null, coastProj = new WeakMap(); // tile -> its rings projected (land Path2D, coast Path2D, GL vertices)
+function coastTile(k) {
+  let tile = coastTiles.get(k);
+  if (tile) return tile;
+  tile = { ready: false };
+  coastTiles.set(k, tile);
+  fetchJSON(`data/coast/${k}.json`).then((d) => {
+    tile.rings = d.rings.map((q) => { const r = new Int32Array(q.length); let x = 0, y = 0; for (let i = 0; i < q.length; i += 2) { x += q[i]; y += q[i + 1]; r[i] = x; r[i + 1] = y; } return r; });
+    tile.ready = true;
+  }, () => { coastTiles.delete(k); }).then(() => scheduleDraw());
+  return tile;
+}
+function projectTile(k, tile) { // land rings for fills and clips; the coast line leaves out the cuts along the tile's edges
+  let pt = coastProj.get(tile);
+  if (pt) return pt;
+  const T = coastIndex.tile * 1000, [tx, ty] = k.split("_").map((v) => +v * 1000), land = new Path2D(), coast = new Path2D();
+  const cut = (ax, ay, bx, by) => (ax === bx && (ax === tx || ax === tx + T)) || (ay === by && (ay === ty || ay === ty + T));
+  const flat = [], starts = [], counts = [];
+  for (const r of tile.rings) {
+    starts.push(flat.length / 2);
+    let pen = false;
+    for (let i = 0; i < r.length; i += 2) {
+      const p = projection([r[i] / 1000, r[i + 1] / 1000]); if (!p) continue;
+      flat.push(p[0], p[1]);
+      i ? land.lineTo(p[0], p[1]) : land.moveTo(p[0], p[1]);
+      if (i && !cut(r[i - 2], r[i - 1], r[i], r[i + 1])) { if (!pen) { const q = projection([r[i - 2] / 1000, r[i - 1] / 1000]); coast.moveTo(q[0], q[1]); } coast.lineTo(p[0], p[1]); pen = true; }
+      else pen = false;
+    }
+    land.closePath();
+    counts.push(flat.length / 2 - starts[starts.length - 1]);
+  }
+  pt = { land, coast, flat: new Float32Array(flat), starts, counts };
+  coastProj.set(tile, pt);
+  return pt;
+}
+function updateDetail() { // S.detail: the detailed land in view, or null (world scale, or tiles still loading)
+  const px = projection.scale() * S.t.k * Math.PI / 180;
+  if (px < DETAIL_PX || !S.width) { S.detail = null; return; }
+  if (!coastIndex) {
+    if (!S.coastIdxP) S.coastIdxP = fetchJSON("data/coast/index.json").then((d) => { coastIndex = d; scheduleDraw(); }).catch(() => { S.coastIdxP = null; });
+    S.detail = null; return;
+  }
+  let x0 = 180, x1 = -180, y0 = 90, y1 = -90;
+  for (let i = 0; i <= 6; i++) for (let j = 0; j <= 6; j++) {
+    const ll = projection.invert(S.t.invert([(S.width * i) / 6, (S.height * j) / 6]));
+    if (!ll || !isFinite(ll[0]) || !isFinite(ll[1])) continue;
+    x0 = Math.min(x0, ll[0]); x1 = Math.max(x1, ll[0]); y0 = Math.min(y0, ll[1]); y1 = Math.max(y1, ll[1]);
+  }
+  const T = coastIndex.tile, keys = [];
+  for (let x = Math.floor((x0 - 0.5) / T) * T; x <= x1 + 0.5; x += T) for (let y = Math.floor((y0 - 0.5) / T) * T; y <= y1 + 0.5; y += T) { const k = `${x}_${y}`; if (coastIndex.tiles[k]) keys.push(k); }
+  if (keys.length > 48) { S.detail = null; return; }
+  const key = keys.join(" ");
+  if (S.detail && S.detail.key === key && S.detail.proj === coastProj) return;
+  const tiles = keys.map(coastTile);
+  if (!tiles.every((tl) => tl.ready)) { if (!(S.detail && S.detail.proj === coastProj)) S.detail = null; return; } // keep the last clip while the next tiles load
+  const land = new Path2D(), coast = new Path2D(), pts = tiles.map((tl, i) => projectTile(keys[i], tl));
+  for (const p of pts) { land.addPath(p.land); coast.addPath(p.coast); }
+  S.detail = { key, proj: coastProj, tiles: pts, land, coast };
+  S.detailV = (S.detailV || 0) + 1;
+}
+const landClip = () => S.detail?.land || S.landClip; // the coastline clip: detailed when zoomed in
 function buildItems() {
   const items = [];
   // Named areas in the older dataset (peoples, chiefdoms, polities Cliopatria doesn't map) form an
@@ -1146,7 +1244,7 @@ function setupMap() {
     }
     sphere2d = new Path2D(geoPath({ type: "Sphere" }));
     grat2d = new Path2D(geoPath(d3.geoGraticule10()));
-    pathCache = new WeakMap(); hitCache = new WeakMap();
+    pathCache = new WeakMap(); hitCache = new WeakMap(); coastProj = new WeakMap(); S.detail = null;
     if (S.base) { buildLandClip(); warmHits(S.items); } // shapes in screen units follow the new fit
     if (S.ghost) S.ghost.paths = S.ghost.feats.map(pathOf);
     if (keep && isFinite(keep[0]) && isFinite(keep[1]) && Math.abs(keep[1]) <= 85 && Math.abs(keep[0]) <= 180 && S.t.k > 1.01) { // only when zoomed in on a real place
@@ -1287,14 +1385,16 @@ function draw() {
   ctx.strokeStyle = theme.rule; ctx.lineWidth = 1 / t.k; ctx.stroke(sphere2d);
 
   const sel = S.sel;
+  updateDetail();
+  if (S.detail) { ctx.save(); ctx.clip(S.detail.land); ctx.fillStyle = theme.unknown; ctx.fill(S.detail.land); } // zoomed in: clipped to the detailed coast
   theme.hatch.setTransform(new DOMMatrix().scale(1 / t.k)); // constant stripe width at any zoom
   let coast = false; // consecutive reconstructions share one coastline clip (one per realm exhausts memory, see drawGL)
-  const toCoast = (on) => { if (on === coast) return; if (on) { ctx.save(); ctx.clip(S.landClip); } else ctx.restore(); coast = on; };
+  const toCoast = (on) => { if (on === coast) return; if (on) { ctx.save(); ctx.clip(landClip()); } else ctx.restore(); coast = on; };
   let bandsDone = false;
   for (const it of S.items) {
     if (!bandsDone && it.kind === "state") { // coast bands under every realm, clipped to land (see BAND_KM)
       bandsDone = true; toCoast(false);
-      ctx.save(); ctx.clip(S.landClip); ctx.lineJoin = "round"; ctx.lineWidth = 2 * bandUnits();
+      ctx.save(); ctx.clip(landClip()); ctx.lineJoin = "round"; ctx.lineWidth = 2 * bandUnits();
       for (const b of S.items) if (banded(b)) { const f = fillOf(b); if (f !== "HATCH") { ctx.strokeStyle = f; ctx.stroke(pathOf(b.f)); } }
       ctx.restore();
     }
@@ -1318,6 +1418,7 @@ function draw() {
     else ctx.stroke(pathOf(it.f));
   }
   toCoast(false); ctx.setLineDash([]); ctx.strokeStyle = theme.border;
+  if (S.detail) { ctx.restore(); strokeCoast(); }
   drawWater();
   drawIce();
   drawDisputed();
@@ -1329,6 +1430,7 @@ function draw() {
     ctx.setLineDash([]);
   }
   drawRings();
+  if (S.detail) { ctx.save(); ctx.clip(S.detail.land); } // zoomed in: outlines end at the detailed coast
   if (S.journey) { ctx.strokeStyle = theme.ink; ctx.lineWidth = 1.4 / t.k; strokeVisible(S.items.filter(inJourney), inJourney); }
   if (sel) {
     ctx.strokeStyle = theme.ink; ctx.lineWidth = 1.4 / t.k;
@@ -1336,6 +1438,7 @@ function draw() {
     strokeVisible(S.items.filter(isSel), isSel);
   }
   if (S.hover >= 0) { const hv = S.items[S.hover]; ctx.strokeStyle = theme.ink; ctx.lineWidth = 2 / t.k; strokeVisible([hv], (e) => e === hv || (e.kind === "state" && hv.kind === "state" && e.key === hv.key)); }
+  if (S.detail) ctx.restore();
   drawClaims();
   ctx.restore();
   if (S.labels) drawLabels();
@@ -1593,8 +1696,12 @@ function drawWaterLabels() { // screen space, after the realm names, avoiding th
   ctx.letterSpacing = "0px";
   ctx.restore();
 }
+function strokeCoast() { // the detailed coastline, as thin as the borders
+  ctx.strokeStyle = theme.borderLine || theme.border; ctx.lineWidth = 0.7 / S.t.k; ctx.stroke(S.detail.coast);
+}
 function drawGL() {
   const { t } = S;
+  updateDetail();
   if (GL.ready(S.items, () => draw())) GL.setItems(S.items); // else the previous map's shapes stay up until the new ones are built
   GL.frame(t, fillOf);
   ctx.setTransform(S.dpr, 0, 0, S.dpr, 0, 0);
@@ -1602,6 +1709,7 @@ function drawGL() {
   ctx.save();
   ctx.translate(t.x, t.y); ctx.scale(t.k, t.k);
   ctx.lineJoin = "round";
+  if (S.detail) strokeCoast();
   drawWater();
   drawIce();
   drawDisputed();
@@ -1610,7 +1718,7 @@ function drawGL() {
   const recon = S.items.filter((it) => it.kind === "state" && it.p.recon), cropped = S.items.filter((it) => it.kind === "state" && !it.p.recon && (it.p.crop || it.p.cut));
   ctx.lineWidth = 0.7 / t.k;
   if (recon.length) {
-    ctx.save(); ctx.clip(S.landClip); ctx.setLineDash([3 / t.k, 2.5 / t.k]); ctx.strokeStyle = theme.ink3;
+    ctx.save(); ctx.clip(landClip()); ctx.setLineDash([3 / t.k, 2.5 / t.k]); ctx.strokeStyle = theme.ink3;
     for (const it of recon) {
       if (it.p.crop || it.p.cut) { ctx.save(); clipFor(ctx, { p: { crop: it.p.crop, cut: it.p.cut } }); ctx.stroke(pathOf(it.f)); ctx.restore(); }
       else ctx.stroke(pathOf(it.f));
@@ -1627,9 +1735,11 @@ function drawGL() {
     ctx.setLineDash([]);
   }
   drawRings();
+  if (S.detail) { ctx.save(); ctx.clip(S.detail.land); } // zoomed in: outlines end at the detailed coast
   if (S.journey) { ctx.strokeStyle = theme.ink; ctx.lineWidth = 1.4 / t.k; strokeVisible(S.items.filter(inJourney), inJourney); }
   if (sel) { ctx.strokeStyle = theme.ink; ctx.lineWidth = 1.4 / t.k; const isSel = (it) => it.kind === "state" && (matches(it, sel) || (it.p.recon && it.p.n === sel)); strokeVisible(S.items.filter(isSel), isSel); }
   if (S.hover >= 0) { const hv = S.items[S.hover]; ctx.strokeStyle = theme.ink; ctx.lineWidth = 2 / t.k; strokeVisible([hv], (e) => e === hv || (e.kind === "state" && hv.kind === "state" && e.key === hv.key)); }
+  if (S.detail) ctx.restore();
   drawClaims();
   ctx.restore();
   if (S.labels) drawLabels();
@@ -2870,7 +2980,7 @@ function drawOccupations() { // inside the map transform: occupied land takes th
     ac.drawImage(L, 0, 0); drew = true;
   }
   if (!drew) return;
-  ac.globalCompositeOperation = "destination-in"; blit(ac, "land|", (x) => x.fill(S.landClip)); // land only
+  ac.globalCompositeOperation = "destination-in"; blit(ac, `land|${S.detail ? S.detailV : ""}|`, (x) => x.fill(landClip())); // land only
   ac.globalCompositeOperation = "source-over";
   ctx.save(); ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.drawImage(A, 0, 0, canvas.width, canvas.height); ctx.restore();
   ctx.globalAlpha = 1;
