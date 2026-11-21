@@ -882,7 +882,7 @@ def main():
         return ('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
                 + "".join(f"<url><loc>{esc(SITE + p)}</loc></url>\n" for p in items) + "</urlset>\n")
     maps = []
-    for sec, items in [("pages", ["/"] + [p for p, _, _ in pages["pages"]])] + [(k, [p for p, _, _ in pages[k]]) for k in SECTIONS]:
+    for sec, items in [("pages", ["/", "/earth-history/"] + [p for p, _, _ in pages["pages"]])] + [(k, [p for p, _, _ in pages[k]]) for k in SECTIONS]:
         name = f"sitemap-{sec}.xml"
         open(os.path.join(P, name), "w", encoding="utf-8").write(urlset(items))
         maps.append(name)
@@ -908,6 +908,10 @@ def main():
     sec("Empires", "empires")
     sec("Wars", "wars")
     sec("Moments that changed the world", "moments")
+    L += ["## Earth history", "",
+          f"- [Earth history]({SITE}/earth-history/): a globe of the ancient Earth from its formation 4.57 billion years ago to today: "
+          "how the continents moved (PALEOMAP, Scotese and Wright 2018, CC BY 4.0), what changed in every geological period, "
+          "when each group of living things first appeared, and step-by-step stories such as the Cambrian explosion and the Great Dying", ""]
     L += ["## About", "", f"- [About {NAME}]({SITE}/about/): made by {AUTHOR} ({EMAIL}), inspired by Bharat Rajya (bharatrajya.com); what the atlas shows and every credit", "",
           "## Optional", "",
           f"- [Every realm on the map]({SITE}/realms/): {len(R):,} states, countries and archaeological cultures with their territory through time",
