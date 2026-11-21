@@ -1,6 +1,6 @@
 # Chinese dynasties cross-checked against CHGIS V6 (221 BCE–1911)
 
-Written by `tools/check_chgis.py` on 2026-11-16. Read-only: nothing in the atlas was changed.
+Written by `tools/check_chgis.py` on 2026-11-21. Read-only: nothing in the atlas was changed.
 
 CHGIS V6 (China Historical GIS, Harvard and Fudan) maps the prefecture-level units of the Chinese state(s) from 221 BCE to 1911 as dated polygons. The union of the prefectures valid in a year is the territory the Chinese state(s) administered directly that year, so it is compared here with the atlas's Chinese realms. CHGIS records carry no dynasty, and V6 was compiled region by region: before the Yuan it covers mainly southern China and Shanxi, so the comparison is made inside the *CHGIS footprint* (land CHGIS administers at some time before and some time after the year in question). Frontier zones, protectorates and tributaries that were never prefectures fall outside CHGIS by design.
 
@@ -112,9 +112,9 @@ km². *CHGIS* = administered that year; *Atlas (fp)* = atlas Chinese realms insi
 | 1229 | Mongol Empire, Southern Song, Great Jin | 1,501,000 | 1,704,000 | 87% | 99% | 0 | 8,100 | 211,000 | 15,222,000 (Tajikistan) |
 | 1235 (Mongols take Jin) | Mongol Empire, Southern Song, Great Jin | 1,520,000 | 1,723,000 | 87% | 99% | 0 | 8,100 | 211,000 | 15,203,000 (Tajikistan) |
 | 1254 | Mongol Empire, Southern Song | 1,653,000 | 1,856,000 | 88% | 100% | 0 | 5,600 | 209,000 | 24,014,000 (Tajikistan) |
-| 1272 (Yuan) | Mongol Empire, Southern Song | 1,997,000 | 2,187,000 | 90% | 99% | 0 | 14,000 | 204,000 | 25,168,000 (Tajikistan) |
-| 1279 | Mongol Empire | 2,809,000 | 2,835,000 | 97% | 99% | 2,800 (Pagan Kingdom) | 27,000 | 56,000 | 24,524,000 (Tajikistan) |
-| 1280 (Song falls) | Mongol Empire | 2,954,000 | 2,980,000 | 97% | 99% | 2,800 (Pagan Kingdom) | 27,000 | 56,000 | 24,378,000 (Tajikistan) |
+| 1272 (Yuan) | Yuan Dynasty, Southern Song | 1,997,000 | 2,187,000 | 90% | 99% | 0 | 14,000 | 204,000 | 12,042,000 (Russian Far East (Amur)) |
+| 1279 | Yuan Dynasty | 2,809,000 | 2,835,000 | 97% | 99% | 2,800 (Pagan Kingdom) | 27,000 | 56,000 | 11,394,000 (Russian Far East (Amur)) |
+| 1280 (Song falls) | Yuan Dynasty | 2,954,000 | 2,980,000 | 97% | 99% | 2,800 (Pagan Kingdom) | 27,000 | 56,000 | 11,248,000 (Russian Far East (Amur)) |
 | 1304 | Yuan Dynasty | 3,405,000 | 3,412,000 | 98% | 99% | 27,000 (Shan States) | 6,200 | 40,000 | 10,817,000 (Russian Far East (Amur)) |
 | 1329 | Yuan Dynasty | 3,734,000 | 3,720,000 | 98% | 99% | 47,000 (Shan States) | 6,200 | 40,000 | 10,508,000 (Russian Far East (Amur)) |
 | 1354 | Yuan Dynasty | 3,844,000 | 3,790,000 | 99% | 99% | 47,000 (Shan States) | 6,200 | 0 | 10,440,000 (Russian Far East (Amur)) |
@@ -337,7 +337,7 @@ CHGIS has no dynasty attribute, so it cannot say which state a prefecture belong
 | 1235 | Great Jin | 783,000 | 314,000 | 75% | 235,000 |
 | 1254 | Mongol Empire | 23,928,000 | 461,000 | 81% | 374,000 |
 | 1254 | Southern Song | 1,942,000 | 1,395,000 | 91% | 1,273,000 |
-| 1272 | Mongol Empire | 25,623,000 | 801,000 | 90% | 718,000 |
+| 1272 | Yuan Dynasty | 14,229,000 | 2,187,000 | 91% | 1,983,000 |
 | 1272 | Southern Song | 1,733,000 | 1,386,000 | 91% | 1,264,000 |
 | 1629 | Ming Dynasty | 3,782,000 | 3,484,000 | 98% | 3,427,000 |
 | 1629 | Later Jin Dynasty | 159,000 | 0 | — | 0 |
@@ -420,20 +420,20 @@ Inside the CHGIS footprint only. Often a frontier the dynasty claimed or garriso
 | 13 | 221–279 (5) | 115,000 (254) | Eastern Wu | Hubei (Yichang) 46%, Guangxi 24%, Jiangsu 6%, Shanghai 6% (of 11 regions) | Nan Jun 南郡, Xiang Jun 象郡, Xiapi Guo 下邳国, Yang Zhou 扬州 |
 | 14 | 582–604 (3) | 135,000 (604) | Sui Dynasty | Jiangsu (Xuzhou) 28%, Hubei (Yichang) 18%, Guangxi 17%, Jiangsu 10% (of 15 regions) | Yongzhou Lu 邕州路, Yuanling Jun 沅陵郡, Donghai Jun 东海郡, Yang Zhou 扬州 |
 | 15 | 480 (1) | 186,000 (480) | Southern Qi | Hubei (Yichang) 27%, Jiangsu 21%, Guangxi 17%, Jiangsu (Xuzhou) 12% (of 13 regions) | Xiang Jun 象郡, Guangling Jun 广陵郡, Ting Zhou 亭州, Yang Zhou 扬州 |
-| 16 | 1154–1235 (5) | 79,000 (1235) | Great Jin | Shanxi 42%, Jiangsu (Xuzhou) 30%, Hebei 9%, Shandong 7% (of 8 regions) | Yidu Lu 益都路, Taiyuan Lu 太原路, Taiyuan Fu 太原府, Shi Zhou 石州 |
-| 17 | 1254–1280 (4) | 87,000 (1254) | Mongol Empire | Shanxi 32%, Hunan (west) 19%, Jiangsu (Xuzhou) 14%, Hubei (Yichang) 8% (of 15 regions) | Taiyuan Lu 太原路, Sizhou Xuanfusi 思州宣抚司, Yidu Lu 益都路, Kuizhou Lu 夔州路 |
+| 16 | 1272–1329 (5) | 82,000 (1272) | Yuan Dynasty | Hunan (west) 38%, Shanxi 16%, Guizhou 10%, Hubei (Yichang) 8% (of 14 regions) | Sizhou Xuanfusi 思州宣抚司, Taiyuan Lu 太原路, Kuizhou Lu 夔州路, Yidu Lu 益都路 |
+| 17 | 1154–1235 (5) | 79,000 (1235) | Great Jin | Shanxi 42%, Jiangsu (Xuzhou) 30%, Hebei 9%, Shandong 7% (of 8 regions) | Yidu Lu 益都路, Taiyuan Lu 太原路, Taiyuan Fu 太原府, Shi Zhou 石州 |
 | 18 | 908–954 (4) | 75,000 (954) | Southern Chu | Guangxi (Guilin) 63%, Hunan (west) 23%, Guizhou 10%, Guangdong 4% (of 5 regions) | Yuanling Jun 沅陵郡, Jingjiang Lu 静江路, Zhao Zhou 昭州, Feng Zhou 封州 |
 | 19 | 579 (1) | 125,000 (579) | Northern Zhou | Jiangsu (Xuzhou) 52%, Jiangsu 29%, Shanghai 6%, Anhui 5% (of 9 regions) | Yang Zhou 扬州, Xu Zhou 徐州, Si Zhou 泗州, Hai Zhou 海州 |
 | 20 | 619 (1) | 118,000 (619) | Sui–Tang rival regimes | Guangxi (Guilin) 33%, Guangxi 27%, Hunan (west) 22%, Guizhou 6% (of 8 regions) | Yuanling Jun 沅陵郡, Yongzhou Lu 邕州路, Feng Zhou 封州, Lingling Jun 零陵郡 |
 | 21 | 961–979 (2) | 75,000 (961) | Southern Tang | Guangxi (Guilin) 64%, Hunan (west) 22%, Guizhou 10%, Guangdong 4% (of 5 regions) | Sizhou Xuanfusi 思州宣抚司, Jingjiang Lu 静江路, Zhao Zhou 昭州, He Zhou 贺州 |
 | 22 | 454–529 (6) | 43,000 (454) | Northern Wei | Jiangsu (Xuzhou) 97%, Shandong (Qingdao) 1%, Shandong 1% | Xu Zhou 徐州, Donghai Jun 东海郡, Bo Zhou 亳州, Pi Zhou 邳州 |
-| 23 | 924–929 (2) | 58,000 (929) | Later Tang | Jiangsu (Xuzhou) 33%, Shanxi 18%, Shaanxi 16%, Hunan (west) 10% (of 10 regions) | Yidu Lu 益都路, Lan Zhou 岚州, Yuanling Jun 沅陵郡, Pu Zhou 蒲州 |
-| 24 | 221–254 (3) | 37,000 (221) | Cao Wei | Jiangsu (Xuzhou) 79%, Anhui 9%, Hubei (Yichang) 5%, Shandong (Qingdao) 4% (of 6 regions) | Donghai Jun 东海郡, Xu Zhou 徐州, Bo Zhou 亳州, Pei Guo 沛国 |
-| 25 | 908–979 (6) | 26,000 (908) | Southern Han | Guangxi 83%, Guangdong 14%, Vietnam (north) 3% | Yongzhou Lu 邕州路, Hengzhou Lu 横州路, Hepu Jun 合浦郡, Yulin Zhou 郁林州 |
-| 26 | 10 (1) | 61,000 (10) | Xin Dynasty | Guangxi 41%, Jiangsu (Xuzhou) 38%, Shanghai 11%, Anhui 4% (of 7 regions) | Xiang Jun 象郡, Pengcheng Jun 彭城郡, Donghai Jun 东海郡, Guiyang Jun 桂阳郡 |
-| 27 | 554–558 (2) | 43,000 (554) | Northern Qi | Jiangsu (Xuzhou) 97%, Shandong (Qingdao) 1%, Shandong 1% | Xu Zhou 徐州, Donghai Jun 东海郡, Bo Zhou 亳州, Pi Zhou 邳州 |
-| 28 | 579–582 (2) | 42,000 (579) | Later Western Liang | Hubei (Yichang) 98%, Hubei 2% | Nan Jun 南郡, Ting Zhou 亭州, Gui Zhou 归州, Xia Zhou 硖州 |
-| 29 | 1304–1329 (2) | 40,000 (1304) | Yuan Dynasty | Hunan (west) 63%, Guizhou 17%, Guangxi (Guilin) 14%, Chongqing 5% (of 5 regions) | Sizhou Xuanfusi 思州宣抚司, Huaiqing Lu 怀庆路 |
+| 23 | 1254 (1) | 87,000 (1254) | Mongol Empire | Shanxi 51%, Jiangsu (Xuzhou) 22%, Hebei 10%, Shaanxi (Yulin) 8% (of 7 regions) | Taiyuan Lu 太原路, Yidu Lu 益都路, Pu Zhou 濮州, Jining Lu 济宁路 |
+| 24 | 924–929 (2) | 58,000 (929) | Later Tang | Jiangsu (Xuzhou) 33%, Shanxi 18%, Shaanxi 16%, Hunan (west) 10% (of 10 regions) | Yidu Lu 益都路, Lan Zhou 岚州, Yuanling Jun 沅陵郡, Pu Zhou 蒲州 |
+| 25 | 221–254 (3) | 37,000 (221) | Cao Wei | Jiangsu (Xuzhou) 79%, Anhui 9%, Hubei (Yichang) 5%, Shandong (Qingdao) 4% (of 6 regions) | Donghai Jun 东海郡, Xu Zhou 徐州, Bo Zhou 亳州, Pei Guo 沛国 |
+| 26 | 908–979 (6) | 26,000 (908) | Southern Han | Guangxi 83%, Guangdong 14%, Vietnam (north) 3% | Yongzhou Lu 邕州路, Hengzhou Lu 横州路, Hepu Jun 合浦郡, Yulin Zhou 郁林州 |
+| 27 | 10 (1) | 61,000 (10) | Xin Dynasty | Guangxi 41%, Jiangsu (Xuzhou) 38%, Shanghai 11%, Anhui 4% (of 7 regions) | Xiang Jun 象郡, Pengcheng Jun 彭城郡, Donghai Jun 东海郡, Guiyang Jun 桂阳郡 |
+| 28 | 554–558 (2) | 43,000 (554) | Northern Qi | Jiangsu (Xuzhou) 97%, Shandong (Qingdao) 1%, Shandong 1% | Xu Zhou 徐州, Donghai Jun 东海郡, Bo Zhou 亳州, Pi Zhou 邳州 |
+| 29 | 579–582 (2) | 42,000 (579) | Later Western Liang | Hubei (Yichang) 98%, Hubei 2% | Nan Jun 南郡, Ting Zhou 亭州, Gui Zhou 归州, Xia Zhou 硖州 |
 | 30 | 354 (1) | 57,000 (354) | Former Yan | Jiangsu (Xuzhou) 96%, Shandong (Qingdao) 3%, Shandong 1% | Donghai Jun 东海郡, Pei Guo 沛国, Linhuai Jun 临淮郡, Bo Zhou 亳州 |
 | 31 | 379 (1) | 57,000 (379) | Former Qin | Jiangsu (Xuzhou) 96%, Shandong (Qingdao) 3%, Shandong 1% | Donghai Jun 东海郡, Pei Guo 沛国, Linhuai Jun 临淮郡, Bo Zhou 亳州 |
 | 32 | 536 (1) | 43,000 (536) | Eastern Wei | Jiangsu (Xuzhou) 97%, Shandong (Qingdao) 1%, Shandong 1% | Xu Zhou 徐州, Donghai Jun 东海郡, Bo Zhou 亳州, Pi Zhou 邳州 |
@@ -453,9 +453,9 @@ Not ranked as disagreements: protectorates, tributaries and steppe, or regions C
 
 | # | Years (samples) | Peak km² (year) | Atlas realm | Regions (share of area) |
 |---|---|---|---|---|
-| 1 | 1229–1280 (6) | 24,822,000 (1272) | Mongol Empire | Tajikistan 23%, Kazakhstan 10%, Russia (Tuva) 7%, Russian Far East (Amur) 6% (of 72 regions) |
+| 1 | 1229–1254 (3) | 23,467,000 (1254) | Mongol Empire | Tajikistan 19%, Kazakhstan 10%, Russia (Tuva) 8%, Russian Far East (Amur) 7% (of 53 regions) |
 | 2 | 1645–1911 (16) | 8,020,000 (1804) | Qing Dynasty | Russian Far East 8%, Mongolia 6%, Mongolia (Gobi) 6%, Russian Far East (Amur) 6% (of 60 regions) |
-| 3 | 1304–1354 (3) | 10,817,000 (1304) | Yuan Dynasty | Russian Far East (Amur) 11%, Russia (Transbaikal) 11%, Russia (Tuva) 11%, Mongolia 6% (of 59 regions) |
+| 3 | 1272–1354 (6) | 11,695,000 (1272) | Yuan Dynasty | Russian Far East (Amur) 11%, Russia (Transbaikal) 10%, Russia (Tuva) 10%, Mongolia 5% (of 65 regions) |
 | 4 | 619–904 (13) | 4,979,000 (654) | Tang Dynasty | Shaanxi 9%, Sichuan 7%, Chongqing 5%, Henan 5% (of 59 regions) |
 | 5 | 201 BCE–4 (10) | 3,285,000 (46 BCE) | Han Dynasty | Shaanxi 9%, Sichuan 7%, Henan 6%, Chongqing 5% (of 51 regions) |
 | 6 | 26–204 (9) | 3,355,000 (104) | Han Dynasty | Shaanxi 9%, Sichuan 7%, Chongqing 5%, Gansu 5% (of 51 regions) |
@@ -551,9 +551,9 @@ For each year the atlas starts or ends a Chinese realm (as drawn near China), th
 | Northern Song | last drawn 1126 | 1127 | 1,442,000 | none | 1142 (5%) | 4% |  |
 | Southern Song | starts 1127 | 1127 | 1,445,000 | none | 1142 (5%) | 4% |  |
 | Great Jin | last drawn 1235 | 1234 | 235,000 | 1235 (22%) | 1218 (32%) | 22% |  |
+| Mongol Empire | last drawn 1270 | 1271 | 1,880,000 | 1277 (32%) | 1277 (32%) | 3% | **yes** |
+| Yuan Dynasty | starts 1271 | 1271 | 1,976,000 | 1277 (31%) | 1277 (31%) | 7% | **yes** |
 | Southern Song | last drawn 1278 | 1279 | 944,000 | 1277 (45%) | 1277 (45%) | 17% |  |
-| Mongol Empire | last drawn 1293 | 1271 | 3,333,000 | 1277 (21%) | 1277 (21%) | 3% | **yes** |
-| Yuan Dynasty | starts 1294 | 1271 | 3,334,000 | 1277 (20%) | 1277 (20%) | 3% | **yes** |
 | Ming Dynasty | starts 1368 | 1368 | 3,340,000 | 1368 (32%) | 1368 (32%) | 32% |  |
 | Li Zicheng | starts 1632 | 1644 | 30,000 | none | 1615 (14%) | 0% |  |
 | Li Zicheng | last drawn 1644 | 1645 | 396,000 | none | 1648 (7%) | 0% |  |

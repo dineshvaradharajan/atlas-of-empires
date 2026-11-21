@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-20",
+ "generated": "2026-11-21",
  "grid_deg": 0.1,
  "slivers": [
   {
@@ -31962,24 +31962,5 @@
     "Axis"
    ]
   }
- ],
- "band": {
-  "km": 14,
-  "before": {
-   "slivers": 2075,
-   "coastal": 1953,
-   "gaps": 111,
-   "km2": 3627050,
-   "wars": 249,
-   "wars_coast": 157
-  },
-  "after": {
-   "slivers": 606,
-   "coastal": 441,
-   "gaps": 145,
-   "km2": 1538641,
-   "wars": 84,
-   "wars_coast": 24
-  }
- }
+ ]
 }

@@ -1,6 +1,6 @@
 # Dated territorial changes cross-checked against Correlates of War (1816–1991)
 
-Written by `tools/check_cow.py` on 2026-11-16. Read-only: nothing in the atlas was changed.
+Written by `tools/check_cow.py` on 2026-11-21. Read-only: nothing in the atlas was changed.
 
 The Correlates of War (COW) Territorial Change dataset v6 lists every transfer of territory involving at least one COW state from 1816 to 2018, with the year and month, the gaining and losing entity, the territory's area and whether it was an independence. It records no shapes, so this report tests *when* the atlas moves a territory and *to whom*, not where the borders run (for borders see `cshapes-check.md`, 1886–1991).
 
@@ -18,8 +18,8 @@ The Correlates of War (COW) Territorial Change dataset v6 lists every transfer o
 
 - COW transfers 1816–1991: 802 (and 40 from 1992 to 2018, not tested: the atlas draws Natural Earth borders from 1992).
 - Located and tested: 570 transfers (582 points); not located: 211; to or from the League of Nations / UN, not tested: 19; a state transferring to itself (UAE federation): 2.
-- Of the 582 points: 266 match, 65 are one year off, 131 differ by 2 years or more, 56 never show the change (16 with no change drawn, 40 with nothing drawn), 36 show the gainer holding the point throughout, 0 give it to a third state, 13 show the gainer taking it from someone other than the COW loser, and 15 are 1991 changes whose year after falls in the Natural Earth period.
-- Of the 131 differences of 2+ years, 52 have the atlas switching in a year ending in 0 or 5 (about 26 would by chance): many come from the decade or half-decade snapshots the atlas's base layer (Cliopatria) is built from, which move a border to the next snapshot year.
+- Of the 582 points: 266 match, 65 are one year off, 130 differ by 2 years or more, 56 never show the change (16 with no change drawn, 40 with nothing drawn), 37 show the gainer holding the point throughout, 0 give it to a third state, 13 show the gainer taking it from someone other than the COW loser, and 15 are 1991 changes whose year after falls in the Natural Earth period.
+- Of the 130 differences of 2+ years, 52 have the atlas switching in a year ending in 0 or 5 (about 26 would by chance): many come from the decade or half-decade snapshots the atlas's base layer (Cliopatria) is built from, which move a border to the next snapshot year.
 - Independences: 181; the atlas starts the new state in the COW year (or the next) for 125, one year off for 12, 2+ years off for 28, never draws it as a state for 1, drew it only before the COW date for 0, and 15 are 1991 independences (the state appears with the Natural Earth borders of 1992).
 
 ## 0. Hand-checked top findings
@@ -89,95 +89,94 @@ The atlas shows the gainer taking the point, but in another year. *Error* = atla
 | 40 | 1874-06 | 201 | Paraguay: Formosa (Chaco) (25.00°S 59.50°W) | Argentina ← Paraguay | 117,000 | Paraguay (1867) | Argentine Republic (1875) | 1868 | -6 |
 | 41 | 1888-05 | 304 | Sabah (North Borneo) (5.50°N 116.50°E) | United Kingdom ← — | 76,024 | nothing drawn (1894) | nothing drawn (1889) | 1895 | +6 |
 | 42 | 1898-06 | 372 | Nigeria: Borgu (9.60°N 4.00°E) | United Kingdom ← France | 71,500 | nothing drawn (1904) | nothing drawn (1899) | 1905 | +6 |
-| 43 | 1907-12 | 421 | Indonesia (Dutch East Indies): Aceh (4.30°N 96.50°E) | Netherlands ← — | 53,020 | nothing drawn (1913) | nothing drawn (1908) | 1914 | +6 |
-| 44 | 1888-05 | 308 | Sarawak (2.20°N 112.50°E) | United Kingdom ← — | 48,250 | Kingdom of Sarawak (1894) | Kingdom of Sarawak (1889) | 1895 | +6 |
-| 45 | 1859-04 | 135 | Indonesia (Dutch East Indies): Flores (8.60°S 121.50°E) | Netherlands ← Portugal | 15,850 | nothing drawn (1865) | nothing drawn (1860) | 1866 | +6 |
-| 46 | 1878-07 | 241 | Turkey: Podgorica (42.44°N 19.26°E) | Montenegro ← Turkey | 4,610 | Ottoman Empire (1884) | Ottoman Empire (1879) | 1885 | +6 |
-| 47 | 1899-12 | 386 | French West Africa: Zinder (approx.) (13.80°N 8.99°E) | France ← — | 2,394,466 | nothing drawn (1904) | nothing drawn (1900) | 1905 | +5 |
-| 48 | 1879 | 247 | Argentina: northern Patagonia (39.00°S 67.00°W) | Argentina ← — | 669,972 | nothing drawn (1884) | nothing drawn (1880) | 1885 | +5 |
-| 49 | 1884 | 275 | Ethiopia (Abyssinia): Harar (approx.) (9.30°N 42.10°E) | Ethiopia ← Egypt | 468,000 | nothing drawn (1889) | nothing drawn (1885) | 1890 | +5 |
-| 50 | 1890 | 328 | Angola: Angolan interior (approx.) (11.00°S 18.50°E) | Portugal ← — | 468,000 | nothing drawn (1884) | Kingdom of Portugal (1891) | 1885 | -5 |
-| 51 | 1889-01 | 320 | Ivory Coast: Ivory Coast interior (7.70°N 5.00°W) | France ← — | 322,463 | nothing drawn (1894) | nothing drawn (1890) | 1895 | +5 |
-| 52 | 1920-12 | 524 | New Guinea (German New Guinea) (Kaiser Wilhelmsland) (5.80°S 145.00°E) | Australia ← Germany | 240,870 | German Empire (1914) | Commonwealth of Australia (1921) | 1915 | -5 |
-| 53 | 1905-08 | 416 | Korea (Chosen) (36.40°N 127.80°E) | Japan ← Korea | 220,891 | Korean Empire (1910) | Korean Empire (1906) | 1911 | +5 |
-| 54 | 1884-12 | 269 | British Somaliland (Somaliland Republic) (9.80°N 45.00°E) | United Kingdom ← — | 192,000 | nothing drawn (1889) | nothing drawn (1885) | 1890 | +5 |
-| 55 | 1889-09 | 315 | Malawi (Nyasaland) (13.30°S 34.00°E) | United Kingdom ← — | 119,311 | nothing drawn (1894) | nothing drawn (1890) | 1895 | +5 |
-| 56 | 1954-03 | 657 | German Democratic Republic (51.50°N 12.00°E) | German Democratic Republic ← Russia | 107,834 | Union of Soviet Socialist Republics, Soviet zone (1948) | German Democratic Republic (1955) | 1949 | -5 |
-| 57 | 1853 | 118 | Union of Soviet Socialist Republics / Russia: Ak-Mechet (Syr Darya) (44.85°N 65.50°E) | Russia ← — | 66,120 | Kazakh Khanate (1847) | Russian Empire (1854) | 1848 | -5 |
-| 58 | 1884-07 | 272 | German Togoland (7.00°N 1.10°E) | Germany ← — | 41,440 | nothing drawn (1889) | nothing drawn (1885) | 1890 | +5 |
-| 59 | 1913-12 | 447 | Crete (35.25°N 24.90°E) | Greece ← United Kingdom | 8,715 | Cretan State (1907) | Kingdom of Greece (1914) | 1908 | -5 |
-| 60 | 1839-12 | 77 | Luxemburg: Belgian Luxembourg (49.90°N 5.50°E) | Belgium ← Netherlands | 4,408 | Netherlands (1833) | Kingdom of Belgium (1840) | 1834 | -5 |
-| 61 | 1909-01 | 428 | Mauritania: Adrar (Atar) (20.50°N 13.00°W) | France ← — | 893,700 | nothing drawn (1904) | French Africa (1910) | 1905 | -4 |
-| 62 | 1880-04 | 252 | Transvaal (25.50°S 28.00°E) | Transvaal ← United Kingdom | 285,363 | British Cape Colony (1884) | British Cape Colony (1881) | 1885 | +4 |
-| 63 | 1885-01 | 283 | Spanish Sahara (25.00°N 13.00°W) | Spain ← — | 266,000 | nothing drawn (1889) | nothing drawn (1886) | 1890 | +4 |
-| 64 | 1826 | 54 | Cape Colony: Cape northern frontier (31.00°S 22.50°E) | United Kingdom ← — | 200,000 | nothing drawn (1821) | British Cape Colony (1827) | 1822 | -4 |
-| 65 | 1868-06 | 197 | Tajikistan: Samarkand (39.65°N 66.96°E) | Russia ← Tajikistan | 156,000 | Emirate of Bukhara (1863) | Russian Empire (1869) | 1864 | -4 |
-| 66 | 1890 | 331 | Tanzania (Tanganyika) (German east Africa): Tabora (5.00°S 32.80°E) | Germany ← — | 130,000 | nothing drawn (1894) | nothing drawn (1891) | 1895 | +4 |
-| 67 | 1863-12 | 161 | Kampuchea (Cambodia) (11.80°N 104.80°E) | France ← Cambodia | 83,861 | Kingdom of Cambodia (post-Angkor) (1867) | Kingdom of Cambodia (post-Angkor) (1864) | 1868 | +4 |
-| 68 | 1919-05 | 478 | Togo (French Togoland) (8.50°N 1.15°E) | France ← Germany | 56,600 | German Africa (1914) | French Africa (1920) | 1915 | -4 |
-| 69 | 1890-11 | 323 | Kenya (British East Africa Protectorate): Machakos (approx.) (1.50°S 37.30°E) | United Kingdom ← — | 48,000 | nothing drawn (1894) | nothing drawn (1891) | 1895 | +4 |
-| 70 | 1909-03 | 427 | Unfederated Malay States: Kelantan (5.50°N 102.00°E) | United Kingdom ← Thailand | 38,195 | Kelantan (1904) | British Colonial Empire (1910) | 1905 | -4 |
-| 71 | 1824-03 | 47 | Singapore (1.35°N 103.82°E) | United Kingdom ← — | 583 | Sultanate of Johor (1819) | British Colonial Empire (1825) | 1820 | -4 |
-| 72 | 1920-01 | 501 | Tanzania (Tanganyika) (German east Africa) (6.00°S 35.00°E) | United Kingdom ← Germany | 939,361 | German Africa (1916) | British Africa (1921) | 1917 | -3 |
-| 73 | 1891 | 332 | Zambia (Northern Rhodesia) (14.50°S 28.40°E) | United Kingdom ← — | 624,107 | nothing drawn (1894) | nothing drawn (1892) | 1895 | +3 |
-| 74 | 1919-05 | 479 | Cameroun (French Cameroons) (4.50°N 12.00°E) | France ← Germany | 432,012 | German Africa (1915) | French Africa (1920) | 1916 | -3 |
-| 75 | 1893-07 | 340 | Zimbabwe (Rhodesia) (Southern Rhodesia) (19.40°S 29.80°E) | United Kingdom ← — | 389,362 | Mthwakazi (Ndebele kingdom) (1889) | British Africa (1894) | 1890 | -3 |
-| 76 | 1852-01 | 115 | Transvaal (25.50°S 28.00°E) | Transvaal ← United Kingdom | 286,065 | nothing drawn (1855) | nothing drawn (1853) | 1856 | +3 |
-| 77 | 1920-04 | 500 | Iraq (Mesopotamia) (33.00°N 44.00°E) | United Kingdom ← Turkey | 280,031 | Ottoman Empire (1916) | British Colonial Empire (1921) | 1917 | -3 |
-| 78 | 1830-09 | 65 | Algeria: Algiers (36.50°N 3.00°E) | France ← Turkey | 275,317 | nothing drawn (1833) | nothing drawn (1831) | 1834 | +3 |
-| 79 | 1919-06 | 480 | French Equatorial Africa: Neukamerun (2.00°N 16.00°E) | France ← Germany | 259,000 | German Africa (1915) | French Africa (1920) | 1916 | -3 |
-| 80 | 1920-08 | 520 | Hejaz Sultanate (21.50°N 39.90°E) | Hejaz Sultanate ← Turkey | 259,000 | Ottoman Empire (1916) | Kingdom of Hejaz (1921) | 1917 | -3 |
-| 81 | 1881-05 | 257 | Tunisia (35.68°N 10.10°E) | France ← Tunisia | 116,348 | Beylik of Tunis (1884) | Beylik of Tunis (1882) | 1885 | +3 |
-| 82 | 1919-05 | 475 | British Cameroons (6.00°N 10.10°E) | United Kingdom ← Germany | 80,290 | German Africa (1915) | British Gold Coast (1920) | 1916 | -3 |
-| 83 | 1845 | 95 | Gabon: Libreville estuary (0.40°N 9.60°E) | France ← — | 66,914 | nothing drawn (1848) | nothing drawn (1846) | 1849 | +3 |
-| 84 | 1883-10 | 262 | Peru: Tarapacá (20.00°S 69.60°W) | Chile ← Peru | 51,480 | Republic of Peru (1879) | Republic of Chile (1884) | 1880 | -3 |
-| 85 | 1947-02 | 618 | Rumania: Bessarabia (47.00°N 28.86°E) | Russia ← Romania | 49,987 | Kingdom of Romania (1943) | Union of Soviet Socialist Republics (1948) | 1944 | -3 |
-| 86 | 1947-02 | 618 | Rumania: northern Bukovina (48.29°N 25.94°E) | Russia ← Romania | 49,987 | Nazi Germany (1943) | Union of Soviet Socialist Republics (1948) | 1944 | -3 |
-| 87 | 1947-02 | 619 | Finland: Vyborg (Karelia) (60.71°N 28.75°E) | Russia ← Finland | 44,104 | Republic of Finland (1943) | Union of Soviet Socialist Republics (1948) | 1944 | -3 |
-| 88 | 1881-02 | 260 | Union of Soviet Socialist Republics / Russia: Ili (Kulja) (43.90°N 81.30°E) | China ← Russia | 42,900 | Russian Empire (1884) | Russian Empire (1882) | 1885 | +3 |
-| 89 | 1867-07 | 194 | Mecklenburg Schwerin (53.75°N 12.10°E) | Germany ← Mecklenburg Schwerin | 13,442 | Duchy of Mecklenburg (1870) | Duchy of Mecklenburg (1868) | 1871 | +3 |
-| 90 | 1881-07 | 258 | Turkey: Thessaly (39.60°N 22.40°E) | Greece ← Turkey | 13,364 | Ottoman Empire (1884) | Ottoman Empire (1882) | 1885 | +3 |
-| 91 | 1867-07 | 190 | Saxe Weimar (50.98°N 11.33°E) | Germany ← Saxe Weimar | 9,407 | Grand Duchy of Saxe-Weimar-Eisenach (1870) | Grand Duchy of Saxe-Weimar-Eisenach (1868) | 1871 | +3 |
-| 92 | 1950-12 | 649 | Sikkim (27.50°N 88.60°E) | India ← Sikkim | 7,298 | British Raj, Sikkim (1946) | Republic of India, Kingdom of Sikkim (1951) | 1947 | -3 |
-| 93 | 1867-07 | 182 | Oldenburg (52.90°N 8.10°E) | Germany ← Oldenburg | 6,291 | Duchy of Oldenburg (1870) | Duchy of Oldenburg (1868) | 1871 | +3 |
-| 94 | 1867-07 | 191 | Brunswick (52.27°N 10.52°E) | Germany ← Brunswick | 3,691 | Duchy of Brunswick (1870) | Duchy of Brunswick (1868) | 1871 | +3 |
-| 95 | 1839 | 74 | Sikkim: Darjeeling (27.04°N 88.26°E) | United Kingdom ← Sikkim | 3,016 | nothing drawn (1835) | British Empire (1840) | 1836 | -3 |
-| 96 | 1867-07 | 185 | Mecklenburg Strelitz (53.36°N 13.06°E) | Germany ← Mecklenburg Strelitz | 2,725 | Free City of Lübeck (1870) | Free City of Lübeck (1868) | 1871 | +3 |
-| 97 | 1867-07 | 189 | Anhalt Dessau (51.83°N 12.25°E) | Germany ← Anhalt Dessau | 2,383 | Duchy of Anhalt (1870) | Duchy of Anhalt (1868) | 1871 | +3 |
-| 98 | 1867-07 | 187 | Lippe (51.94°N 8.88°E) | Germany ← Lippe | 1,577 | Principality of Lippe (1870) | Principality of Lippe (1868) | 1871 | +3 |
-| 99 | 1849-12 | 108 | Hohenzollern Hechingen (48.35°N 8.97°E) | Germany ← Hohenzollern Hechingen | 1,173 | Principality of Hohenzollern-Sigmaringen (1852) | Principality of Hohenzollern-Sigmaringen (1850) | 1853 | +3 |
-| 100 | 1867-07 | 188 | Schwartzburg Sonderhausen (51.37°N 10.87°E) | Germany ← Schwartzburg Sonderhausen | 1,121 | Principality of Schwarzburg-Sonderhausen (1870) | Principality of Schwarzburg-Sonderhausen (1868) | 1871 | +3 |
-| 101 | 1867-07 | 186 | Hamburg (53.55°N 10.00°E) | Germany ← Hamburg | 352 | Free City of Hamburg (1870) | Free City of Hamburg (1868) | 1871 | +3 |
-| 102 | 1867-07 | 184 | Schwartzburg Rodolstadt (50.72°N 11.33°E) | Germany ← Schwartzburg Rodolstadt | 329 | Principality of Schwarzburg-Sonderhausen (1870) | Principality of Schwarzburg-Sonderhausen (1868) | 1871 | +3 |
-| 103 | 1824-12 | 46 | Brazil (20.00°S 45.00°W) | Brazil ← Portugal | 8,259,504 | Portuguese Empire (1821) | Empire of Brazil (1825) | 1822 | -2 |
-| 104 | 1874 | 221 | Sudan (Anglo-Egyptian): Darfur (13.50°N 25.00°E) | Egypt ← — | 2,658,063 | Sultanate of Darfur (1876) | Sultanate of Darfur (1875) | 1877 | +2 |
-| 105 | 1882-09 | 261 | Egypt/United Arab Republic (29.30°N 30.90°E) | United Kingdom ← Egypt | 1,021,081 | Khedivate of Egypt (1884) | Khedivate of Egypt (1883) | 1885 | +2 |
-| 106 | 1819-12 | 37 | Colombia (Gran Colombia) (4.60°N 74.10°W) | Colombia ← Spain | 660,760 | New Granada (1821) | New Granada (1820) | 1822 | +2 |
-| 107 | 1879-12 | 248 | Ethiopia (Abyssinia): Harar (approx.) (9.30°N 42.10°E) | Egypt ← Ethiopia | 468,000 | nothing drawn (1876) | Khedivate of Egypt (1880) | 1877 | -2 |
-| 108 | 1902-05 | 397 | Transvaal (25.50°S 28.00°E) | United Kingdom ← Transvaal | 286,065 | South African Republic (1899) | British Africa (1903) | 1900 | -2 |
-| 109 | 1953-12 | 661 | Laos (19.30°N 103.30°E) | Laos ← France | 236,800 | nothing drawn (1955) | French Indochina (1954) | 1956 | +2 |
-| 110 | 1819-02 | 36 | Cuba: Florida (29.50°N 82.50°W) | United States of America ← Spain | 186,488 | Spanish Empire (1821) | Spanish Empire (1820) | 1822 | +2 |
-| 111 | 1953-11 | 656 | Kampuchea (Cambodia) (11.80°N 104.80°E) | Cambodia ← France | 172,511 | nothing drawn (1955) | French Indochina (1954) | 1956 | +2 |
-| 112 | 1902-05 | 398 | Orange Free State (Orange River Colony) (28.50°S 26.50°E) | United Kingdom ← Orange Free State | 129,153 | Free Orange State (1899) | British Africa (1903) | 1900 | -2 |
-| 113 | 1843-02 | 87 | Sind (26.00°N 68.50°E) | United Kingdom ← Sind | 126,340 | Talpur Dynasty (1845) | Talpur Dynasty (1844) | 1846 | +2 |
-| 114 | 1902-05 | 393 | Cuba (22.00°N 79.00°W) | Cuba ← United States of America | 114,525 | United States of America (1904) | United States of America (1903) | 1905 | +2 |
-| 115 | 1875 | 225 | Al Hasa (25.40°N 49.60°E) | Turkey ← Al Hasa | 107,120 | Emirate of Nejd (1872) | Ottoman Empire (1876) | 1873 | -2 |
-| 116 | 1914 | 455 | Asir (18.20°N 42.50°E) | Asir ← Turkey | 104,338 | Ottoman Empire (1916) | Ottoman Empire (1915) | 1917 | +2 |
-| 117 | 1897 | 363 | Ghana (Gold Coast): Northern Territories (9.50°N 1.00°W) | United Kingdom ← — | 98,080 | nothing drawn (1899) | nothing drawn (1898) | 1900 | +2 |
-| 118 | 1892-03 | 336 | United Arab Emirates (Trucail Oman) (24.30°N 55.50°E) | United Kingdom ← United Arab Emirates | 92,100 | Trucial States (1894) | Trucial States (1893) | 1895 | +2 |
-| 119 | 1870-06 | 200 | Paraguay: Apa–Branco (approx.) (21.70°S 56.50°W) | Brazil ← Paraguay | 65,000 | Paraguay (1867) | Empire of Brazil (1871) | 1868 | -2 |
-| 120 | 1874-01 | 219 | Federated Malay States: Perak (4.60°N 101.00°E) | United Kingdom ← — | 29,068 | Sultanate of Perak (1876) | Sultanate of Perak (1875) | 1877 | +2 |
-| 121 | 1920-03 | 498 | Israel (32.30°N 34.95°E) | United Kingdom ← Turkey | 23,310 | Ottoman Empire (1917) | British Africa (1921) | 1918 | -2 |
-| 122 | 1862-06 | 158 | Cochin China: eastern Cochin China (10.90°N 106.60°E) | France ← Vietnam (Annam) | 22,380 | nothing drawn (1859) | French Indochina (1863) | 1860 | -2 |
-| 123 | 1975-11 | 799 | Egypt/United Arab Republic: Abu Rudeis (Sinai) (28.90°N 33.20°E) | Egypt ← Israel | 20,000 | State of Israel (1972) | State of Israel (1976) | 1973 (lost again) | -2 |
-| 124 | 1874-12 | 218 | Fiji (17.80°S 178.00°E) | United Kingdom ← Fiji | 18,272 | Kingdom of Fiji (1876) | Kingdom of Fiji (1875) | 1877 | +2 |
-| 125 | 1853-12 | 117 | New Caledonia and Dependencies (21.30°S 165.50°E) | France ← — | 16,112 | nothing drawn (1855) | nothing drawn (1854) | 1856 | +2 |
-| 126 | 1980-07 | 821 | Vanuatu (New Hebrides) (15.40°S 167.00°E) | Vanuatu ← France | 14,760 | New Hebrides (1982) | New Hebrides (1981) | 1983 | +2 |
-| 127 | 1915 | 458 | Qatar (25.30°N 51.20°E) | Qatar ← Turkey | 11,000 | Ottoman Empire (1912) | United Kingdom (1916) | 1913 (lost again) | -2 |
-| 128 | 1946-08 | 608 | Lebanon (33.90°N 35.75°E) | Lebanon ← France | 10,400 | French Mandate for Syria and Lebanon (1943) | Lebanon (1947) | 1944 | -2 |
-| 129 | 1887-05 | 299 | Kenya (British East Africa Protectorate): Mombasa coast (4.00°S 39.60°E) | United Kingdom ← Zanzibar | 7,020 | Sultanate of Zanzibar (1889) | Sultanate of Zanzibar (1888) | 1890 | +2 |
-| 130 | 1947-02 | 616 | Italy/Sardinia: Istria (45.24°N 13.94°E) | Yugoslavia ← Italy | 3,600 | Nazi Germany (1944) | Socialist Federal Republic of Yugoslavia (1948) | 1945 | -2 |
-| 131 | 1947-10 | 613 | Saar (49.35°N 7.00°E) | France ← German Federal Republic | 2,567 | Nazi Germany (1944) | French Fourth Republic, Saar Protectorate (1948) | 1945 | -2 |
+| 43 | 1888-05 | 308 | Sarawak (2.20°N 112.50°E) | United Kingdom ← — | 48,250 | Kingdom of Sarawak (1894) | Kingdom of Sarawak (1889) | 1895 | +6 |
+| 44 | 1859-04 | 135 | Indonesia (Dutch East Indies): Flores (8.60°S 121.50°E) | Netherlands ← Portugal | 15,850 | nothing drawn (1865) | nothing drawn (1860) | 1866 | +6 |
+| 45 | 1878-07 | 241 | Turkey: Podgorica (42.44°N 19.26°E) | Montenegro ← Turkey | 4,610 | Ottoman Empire (1884) | Ottoman Empire (1879) | 1885 | +6 |
+| 46 | 1899-12 | 386 | French West Africa: Zinder (approx.) (13.80°N 8.99°E) | France ← — | 2,394,466 | nothing drawn (1904) | nothing drawn (1900) | 1905 | +5 |
+| 47 | 1879 | 247 | Argentina: northern Patagonia (39.00°S 67.00°W) | Argentina ← — | 669,972 | nothing drawn (1884) | nothing drawn (1880) | 1885 | +5 |
+| 48 | 1884 | 275 | Ethiopia (Abyssinia): Harar (approx.) (9.30°N 42.10°E) | Ethiopia ← Egypt | 468,000 | nothing drawn (1889) | nothing drawn (1885) | 1890 | +5 |
+| 49 | 1890 | 328 | Angola: Angolan interior (approx.) (11.00°S 18.50°E) | Portugal ← — | 468,000 | nothing drawn (1884) | Kingdom of Portugal (1891) | 1885 | -5 |
+| 50 | 1889-01 | 320 | Ivory Coast: Ivory Coast interior (7.70°N 5.00°W) | France ← — | 322,463 | nothing drawn (1894) | nothing drawn (1890) | 1895 | +5 |
+| 51 | 1920-12 | 524 | New Guinea (German New Guinea) (Kaiser Wilhelmsland) (5.80°S 145.00°E) | Australia ← Germany | 240,870 | German Empire (1914) | Commonwealth of Australia (1921) | 1915 | -5 |
+| 52 | 1905-08 | 416 | Korea (Chosen) (36.40°N 127.80°E) | Japan ← Korea | 220,891 | Korean Empire (1910) | Korean Empire (1906) | 1911 | +5 |
+| 53 | 1884-12 | 269 | British Somaliland (Somaliland Republic) (9.80°N 45.00°E) | United Kingdom ← — | 192,000 | nothing drawn (1889) | nothing drawn (1885) | 1890 | +5 |
+| 54 | 1889-09 | 315 | Malawi (Nyasaland) (13.30°S 34.00°E) | United Kingdom ← — | 119,311 | nothing drawn (1894) | nothing drawn (1890) | 1895 | +5 |
+| 55 | 1954-03 | 657 | German Democratic Republic (51.50°N 12.00°E) | German Democratic Republic ← Russia | 107,834 | Union of Soviet Socialist Republics, Soviet zone (1948) | German Democratic Republic (1955) | 1949 | -5 |
+| 56 | 1853 | 118 | Union of Soviet Socialist Republics / Russia: Ak-Mechet (Syr Darya) (44.85°N 65.50°E) | Russia ← — | 66,120 | Kazakh Khanate (1847) | Russian Empire (1854) | 1848 | -5 |
+| 57 | 1884-07 | 272 | German Togoland (7.00°N 1.10°E) | Germany ← — | 41,440 | nothing drawn (1889) | nothing drawn (1885) | 1890 | +5 |
+| 58 | 1913-12 | 447 | Crete (35.25°N 24.90°E) | Greece ← United Kingdom | 8,715 | Cretan State (1907) | Kingdom of Greece (1914) | 1908 | -5 |
+| 59 | 1839-12 | 77 | Luxemburg: Belgian Luxembourg (49.90°N 5.50°E) | Belgium ← Netherlands | 4,408 | Netherlands (1833) | Kingdom of Belgium (1840) | 1834 | -5 |
+| 60 | 1909-01 | 428 | Mauritania: Adrar (Atar) (20.50°N 13.00°W) | France ← — | 893,700 | nothing drawn (1904) | French Africa (1910) | 1905 | -4 |
+| 61 | 1880-04 | 252 | Transvaal (25.50°S 28.00°E) | Transvaal ← United Kingdom | 285,363 | British Cape Colony (1884) | British Cape Colony (1881) | 1885 | +4 |
+| 62 | 1885-01 | 283 | Spanish Sahara (25.00°N 13.00°W) | Spain ← — | 266,000 | nothing drawn (1889) | nothing drawn (1886) | 1890 | +4 |
+| 63 | 1826 | 54 | Cape Colony: Cape northern frontier (31.00°S 22.50°E) | United Kingdom ← — | 200,000 | nothing drawn (1821) | British Cape Colony (1827) | 1822 | -4 |
+| 64 | 1868-06 | 197 | Tajikistan: Samarkand (39.65°N 66.96°E) | Russia ← Tajikistan | 156,000 | Emirate of Bukhara (1863) | Russian Empire (1869) | 1864 | -4 |
+| 65 | 1890 | 331 | Tanzania (Tanganyika) (German east Africa): Tabora (5.00°S 32.80°E) | Germany ← — | 130,000 | nothing drawn (1894) | nothing drawn (1891) | 1895 | +4 |
+| 66 | 1863-12 | 161 | Kampuchea (Cambodia) (11.80°N 104.80°E) | France ← Cambodia | 83,861 | Kingdom of Cambodia (post-Angkor) (1867) | Kingdom of Cambodia (post-Angkor) (1864) | 1868 | +4 |
+| 67 | 1919-05 | 478 | Togo (French Togoland) (8.50°N 1.15°E) | France ← Germany | 56,600 | German Africa (1914) | French Africa (1920) | 1915 | -4 |
+| 68 | 1890-11 | 323 | Kenya (British East Africa Protectorate): Machakos (approx.) (1.50°S 37.30°E) | United Kingdom ← — | 48,000 | nothing drawn (1894) | nothing drawn (1891) | 1895 | +4 |
+| 69 | 1909-03 | 427 | Unfederated Malay States: Kelantan (5.50°N 102.00°E) | United Kingdom ← Thailand | 38,195 | Kelantan (1904) | British Colonial Empire (1910) | 1905 | -4 |
+| 70 | 1824-03 | 47 | Singapore (1.35°N 103.82°E) | United Kingdom ← — | 583 | Sultanate of Johor (1819) | British Colonial Empire (1825) | 1820 | -4 |
+| 71 | 1920-01 | 501 | Tanzania (Tanganyika) (German east Africa) (6.00°S 35.00°E) | United Kingdom ← Germany | 939,361 | German Africa (1916) | British Africa (1921) | 1917 | -3 |
+| 72 | 1891 | 332 | Zambia (Northern Rhodesia) (14.50°S 28.40°E) | United Kingdom ← — | 624,107 | nothing drawn (1894) | nothing drawn (1892) | 1895 | +3 |
+| 73 | 1919-05 | 479 | Cameroun (French Cameroons) (4.50°N 12.00°E) | France ← Germany | 432,012 | German Africa (1915) | French Africa (1920) | 1916 | -3 |
+| 74 | 1893-07 | 340 | Zimbabwe (Rhodesia) (Southern Rhodesia) (19.40°S 29.80°E) | United Kingdom ← — | 389,362 | Mthwakazi (Ndebele kingdom) (1889) | British Africa (1894) | 1890 | -3 |
+| 75 | 1852-01 | 115 | Transvaal (25.50°S 28.00°E) | Transvaal ← United Kingdom | 286,065 | nothing drawn (1855) | nothing drawn (1853) | 1856 | +3 |
+| 76 | 1920-04 | 500 | Iraq (Mesopotamia) (33.00°N 44.00°E) | United Kingdom ← Turkey | 280,031 | Ottoman Empire (1916) | British Colonial Empire (1921) | 1917 | -3 |
+| 77 | 1830-09 | 65 | Algeria: Algiers (36.50°N 3.00°E) | France ← Turkey | 275,317 | nothing drawn (1833) | nothing drawn (1831) | 1834 | +3 |
+| 78 | 1919-06 | 480 | French Equatorial Africa: Neukamerun (2.00°N 16.00°E) | France ← Germany | 259,000 | German Africa (1915) | French Africa (1920) | 1916 | -3 |
+| 79 | 1920-08 | 520 | Hejaz Sultanate (21.50°N 39.90°E) | Hejaz Sultanate ← Turkey | 259,000 | Ottoman Empire (1916) | Kingdom of Hejaz (1921) | 1917 | -3 |
+| 80 | 1881-05 | 257 | Tunisia (35.68°N 10.10°E) | France ← Tunisia | 116,348 | Beylik of Tunis (1884) | Beylik of Tunis (1882) | 1885 | +3 |
+| 81 | 1919-05 | 475 | British Cameroons (6.00°N 10.10°E) | United Kingdom ← Germany | 80,290 | German Africa (1915) | British Gold Coast (1920) | 1916 | -3 |
+| 82 | 1845 | 95 | Gabon: Libreville estuary (0.40°N 9.60°E) | France ← — | 66,914 | nothing drawn (1848) | nothing drawn (1846) | 1849 | +3 |
+| 83 | 1883-10 | 262 | Peru: Tarapacá (20.00°S 69.60°W) | Chile ← Peru | 51,480 | Republic of Peru (1879) | Republic of Chile (1884) | 1880 | -3 |
+| 84 | 1947-02 | 618 | Rumania: Bessarabia (47.00°N 28.86°E) | Russia ← Romania | 49,987 | Kingdom of Romania (1943) | Union of Soviet Socialist Republics (1948) | 1944 | -3 |
+| 85 | 1947-02 | 618 | Rumania: northern Bukovina (48.29°N 25.94°E) | Russia ← Romania | 49,987 | Nazi Germany (1943) | Union of Soviet Socialist Republics (1948) | 1944 | -3 |
+| 86 | 1947-02 | 619 | Finland: Vyborg (Karelia) (60.71°N 28.75°E) | Russia ← Finland | 44,104 | Republic of Finland (1943) | Union of Soviet Socialist Republics (1948) | 1944 | -3 |
+| 87 | 1881-02 | 260 | Union of Soviet Socialist Republics / Russia: Ili (Kulja) (43.90°N 81.30°E) | China ← Russia | 42,900 | Russian Empire (1884) | Russian Empire (1882) | 1885 | +3 |
+| 88 | 1867-07 | 194 | Mecklenburg Schwerin (53.75°N 12.10°E) | Germany ← Mecklenburg Schwerin | 13,442 | Duchy of Mecklenburg (1870) | Duchy of Mecklenburg (1868) | 1871 | +3 |
+| 89 | 1881-07 | 258 | Turkey: Thessaly (39.60°N 22.40°E) | Greece ← Turkey | 13,364 | Ottoman Empire (1884) | Ottoman Empire (1882) | 1885 | +3 |
+| 90 | 1867-07 | 190 | Saxe Weimar (50.98°N 11.33°E) | Germany ← Saxe Weimar | 9,407 | Grand Duchy of Saxe-Weimar-Eisenach (1870) | Grand Duchy of Saxe-Weimar-Eisenach (1868) | 1871 | +3 |
+| 91 | 1950-12 | 649 | Sikkim (27.50°N 88.60°E) | India ← Sikkim | 7,298 | British Raj, Sikkim (1946) | Republic of India, Kingdom of Sikkim (1951) | 1947 | -3 |
+| 92 | 1867-07 | 182 | Oldenburg (52.90°N 8.10°E) | Germany ← Oldenburg | 6,291 | Duchy of Oldenburg (1870) | Duchy of Oldenburg (1868) | 1871 | +3 |
+| 93 | 1867-07 | 191 | Brunswick (52.27°N 10.52°E) | Germany ← Brunswick | 3,691 | Duchy of Brunswick (1870) | Duchy of Brunswick (1868) | 1871 | +3 |
+| 94 | 1839 | 74 | Sikkim: Darjeeling (27.04°N 88.26°E) | United Kingdom ← Sikkim | 3,016 | nothing drawn (1835) | British Empire (1840) | 1836 | -3 |
+| 95 | 1867-07 | 185 | Mecklenburg Strelitz (53.36°N 13.06°E) | Germany ← Mecklenburg Strelitz | 2,725 | Free City of Lübeck (1870) | Free City of Lübeck (1868) | 1871 | +3 |
+| 96 | 1867-07 | 189 | Anhalt Dessau (51.83°N 12.25°E) | Germany ← Anhalt Dessau | 2,383 | Duchy of Anhalt (1870) | Duchy of Anhalt (1868) | 1871 | +3 |
+| 97 | 1867-07 | 187 | Lippe (51.94°N 8.88°E) | Germany ← Lippe | 1,577 | Principality of Lippe (1870) | Principality of Lippe (1868) | 1871 | +3 |
+| 98 | 1849-12 | 108 | Hohenzollern Hechingen (48.35°N 8.97°E) | Germany ← Hohenzollern Hechingen | 1,173 | Principality of Hohenzollern-Sigmaringen (1852) | Principality of Hohenzollern-Sigmaringen (1850) | 1853 | +3 |
+| 99 | 1867-07 | 188 | Schwartzburg Sonderhausen (51.37°N 10.87°E) | Germany ← Schwartzburg Sonderhausen | 1,121 | Principality of Schwarzburg-Sonderhausen (1870) | Principality of Schwarzburg-Sonderhausen (1868) | 1871 | +3 |
+| 100 | 1867-07 | 186 | Hamburg (53.55°N 10.00°E) | Germany ← Hamburg | 352 | Free City of Hamburg (1870) | Free City of Hamburg (1868) | 1871 | +3 |
+| 101 | 1867-07 | 184 | Schwartzburg Rodolstadt (50.72°N 11.33°E) | Germany ← Schwartzburg Rodolstadt | 329 | Principality of Schwarzburg-Sonderhausen (1870) | Principality of Schwarzburg-Sonderhausen (1868) | 1871 | +3 |
+| 102 | 1824-12 | 46 | Brazil (20.00°S 45.00°W) | Brazil ← Portugal | 8,259,504 | Portuguese Empire (1821) | Empire of Brazil (1825) | 1822 | -2 |
+| 103 | 1874 | 221 | Sudan (Anglo-Egyptian): Darfur (13.50°N 25.00°E) | Egypt ← — | 2,658,063 | Sultanate of Darfur (1876) | Sultanate of Darfur (1875) | 1877 | +2 |
+| 104 | 1882-09 | 261 | Egypt/United Arab Republic (29.30°N 30.90°E) | United Kingdom ← Egypt | 1,021,081 | Khedivate of Egypt (1884) | Khedivate of Egypt (1883) | 1885 | +2 |
+| 105 | 1819-12 | 37 | Colombia (Gran Colombia) (4.60°N 74.10°W) | Colombia ← Spain | 660,760 | New Granada (1821) | New Granada (1820) | 1822 | +2 |
+| 106 | 1879-12 | 248 | Ethiopia (Abyssinia): Harar (approx.) (9.30°N 42.10°E) | Egypt ← Ethiopia | 468,000 | nothing drawn (1876) | Khedivate of Egypt (1880) | 1877 | -2 |
+| 107 | 1902-05 | 397 | Transvaal (25.50°S 28.00°E) | United Kingdom ← Transvaal | 286,065 | South African Republic (1899) | British Africa (1903) | 1900 | -2 |
+| 108 | 1953-12 | 661 | Laos (19.30°N 103.30°E) | Laos ← France | 236,800 | nothing drawn (1955) | French Indochina (1954) | 1956 | +2 |
+| 109 | 1819-02 | 36 | Cuba: Florida (29.50°N 82.50°W) | United States of America ← Spain | 186,488 | Spanish Empire (1821) | Spanish Empire (1820) | 1822 | +2 |
+| 110 | 1953-11 | 656 | Kampuchea (Cambodia) (11.80°N 104.80°E) | Cambodia ← France | 172,511 | nothing drawn (1955) | French Indochina (1954) | 1956 | +2 |
+| 111 | 1902-05 | 398 | Orange Free State (Orange River Colony) (28.50°S 26.50°E) | United Kingdom ← Orange Free State | 129,153 | Free Orange State (1899) | British Africa (1903) | 1900 | -2 |
+| 112 | 1843-02 | 87 | Sind (26.00°N 68.50°E) | United Kingdom ← Sind | 126,340 | Talpur Dynasty (1845) | Talpur Dynasty (1844) | 1846 | +2 |
+| 113 | 1902-05 | 393 | Cuba (22.00°N 79.00°W) | Cuba ← United States of America | 114,525 | United States of America (1904) | United States of America (1903) | 1905 | +2 |
+| 114 | 1875 | 225 | Al Hasa (25.40°N 49.60°E) | Turkey ← Al Hasa | 107,120 | Emirate of Nejd (1872) | Ottoman Empire (1876) | 1873 | -2 |
+| 115 | 1914 | 455 | Asir (18.20°N 42.50°E) | Asir ← Turkey | 104,338 | Ottoman Empire (1916) | Ottoman Empire (1915) | 1917 | +2 |
+| 116 | 1897 | 363 | Ghana (Gold Coast): Northern Territories (9.50°N 1.00°W) | United Kingdom ← — | 98,080 | nothing drawn (1899) | nothing drawn (1898) | 1900 | +2 |
+| 117 | 1892-03 | 336 | United Arab Emirates (Trucail Oman) (24.30°N 55.50°E) | United Kingdom ← United Arab Emirates | 92,100 | Trucial States (1894) | Trucial States (1893) | 1895 | +2 |
+| 118 | 1870-06 | 200 | Paraguay: Apa–Branco (approx.) (21.70°S 56.50°W) | Brazil ← Paraguay | 65,000 | Paraguay (1867) | Empire of Brazil (1871) | 1868 | -2 |
+| 119 | 1874-01 | 219 | Federated Malay States: Perak (4.60°N 101.00°E) | United Kingdom ← — | 29,068 | Sultanate of Perak (1876) | Sultanate of Perak (1875) | 1877 | +2 |
+| 120 | 1920-03 | 498 | Israel (32.30°N 34.95°E) | United Kingdom ← Turkey | 23,310 | Ottoman Empire (1917) | British Africa (1921) | 1918 | -2 |
+| 121 | 1862-06 | 158 | Cochin China: eastern Cochin China (10.90°N 106.60°E) | France ← Vietnam (Annam) | 22,380 | nothing drawn (1859) | French Indochina (1863) | 1860 | -2 |
+| 122 | 1975-11 | 799 | Egypt/United Arab Republic: Abu Rudeis (Sinai) (28.90°N 33.20°E) | Egypt ← Israel | 20,000 | State of Israel (1972) | State of Israel (1976) | 1973 (lost again) | -2 |
+| 123 | 1874-12 | 218 | Fiji (17.80°S 178.00°E) | United Kingdom ← Fiji | 18,272 | Kingdom of Fiji (1876) | Kingdom of Fiji (1875) | 1877 | +2 |
+| 124 | 1853-12 | 117 | New Caledonia and Dependencies (21.30°S 165.50°E) | France ← — | 16,112 | nothing drawn (1855) | nothing drawn (1854) | 1856 | +2 |
+| 125 | 1980-07 | 821 | Vanuatu (New Hebrides) (15.40°S 167.00°E) | Vanuatu ← France | 14,760 | New Hebrides (1982) | New Hebrides (1981) | 1983 | +2 |
+| 126 | 1915 | 458 | Qatar (25.30°N 51.20°E) | Qatar ← Turkey | 11,000 | Ottoman Empire (1912) | United Kingdom (1916) | 1913 (lost again) | -2 |
+| 127 | 1946-08 | 608 | Lebanon (33.90°N 35.75°E) | Lebanon ← France | 10,400 | French Mandate for Syria and Lebanon (1943) | Lebanon (1947) | 1944 | -2 |
+| 128 | 1887-05 | 299 | Kenya (British East Africa Protectorate): Mombasa coast (4.00°S 39.60°E) | United Kingdom ← Zanzibar | 7,020 | Sultanate of Zanzibar (1889) | Sultanate of Zanzibar (1888) | 1890 | +2 |
+| 129 | 1947-02 | 616 | Italy/Sardinia: Istria (45.24°N 13.94°E) | Yugoslavia ← Italy | 3,600 | Nazi Germany (1944) | Socialist Federal Republic of Yugoslavia (1948) | 1945 | -2 |
+| 130 | 1947-10 | 613 | Saar (49.35°N 7.00°E) | France ← German Federal Republic | 2,567 | Nazi Germany (1944) | French Fourth Republic, Saar Protectorate (1948) | 1945 | -2 |
 
 65 one-year differences not listed.
 
@@ -242,46 +241,47 @@ Within 25 years either side the atlas never shows the gainer arriving at the poi
 | 18 | 1973-06 | 784 | Chad: Aouzou strip (21.83°N 17.43°E) | Libya ← Chad | 78,000 | Republic of Chad (1972) | Republic of Chad (1974) | unchanged |
 | 19 | 1853-12 | 116 | Mexico: Gadsden Purchase (32.00°N 111.50°W) | United States of America ← Mexico | 76,768 | Federated Republic of Mexico (1852) | Federated Republic of Mexico (1854) | unchanged |
 | 20 | 1896-08 | 358 | Sierra Leone: Sierra Leone hinterland (8.80°N 11.50°W) | United Kingdom ← — | 71,939 | British Africa (1895) | British Africa (1897) | always |
-| 21 | 1910-01 | 430 | Bhutan (27.40°N 90.40°E) | United Kingdom ← Bhutan | 46,600 | Kingdom of Bhutan (1909) | Kingdom of Bhutan (1911) | unchanged |
-| 22 | 1949-08 | 645 | Bhutan (27.40°N 90.40°E) | Bhutan ← India | 46,600 | Kingdom of Bhutan (1948) | Kingdom of Bhutan (1950) | always |
-| 23 | 1878-07 | 238 | Yugoslavia/Serbia (44.00°N 20.80°E) | Yugoslavia ← Turkey | 42,994 | Principality of Serbia (1877) | Principality of Serbia (1879) | always |
-| 24 | 1866-12 | 170 | Bolivia: Atacama 24°–25°S (24.50°S 70.00°W) | Chile ← Bolivia | 42,896 | Republic of Chile (1865) | Republic of Chile (1867) | always |
-| 25 | 1818-10 | 32 | United States of America: Milk River basin north of 49°N (49.50°N 110.50°W) | United Kingdom ← United States of America | 41,600 | nothing drawn (1817) | nothing drawn (1819) | blank |
-| 26 | 1906-05 | 418 | Sudan (Anglo-Egyptian): Lado Enclave (4.00°N 30.80°E) | Belgium ← United Kingdom | 38,850 | British Africa (1905) | British Africa (1907) | unchanged |
-| 27 | 1864-06 | 167 | Union of Soviet Socialist Republics / Russia: Circassia (44.50°N 39.80°E) | Russia ← — | 36,400 | Russian Empire, Circassia (1863) | Russian Empire (1865) | always |
-| 28 | 1867 | 195 | Kampuchea (Cambodia): Battambang (13.10°N 103.20°E) | Thailand ← France | 35,641 | Rattanakosin Kingdom (1866) | Rattanakosin Kingdom (1868) | always |
-| 29 | 1916 | 461 | Spanish Morocco: Cape Juby (27.90°N 11.50°W) | Spain ← France | 33,020 | Kingdom of Spain (1915) | Kingdom of Spain (1917) | always |
-| 30 | 1895-03 | 353 | Manchukuo: Pamirs (37.80°N 73.50°E) | Russia ← Afghanistan | 26,000 | Russian Empire (1894) | Russian Empire (1896) | always |
-| 31 | 1909 | 426 | Bolivia: Madre de Dios (approx.) (12.00°S 69.50°W) | Peru ← Bolivia | 26,000 | Republic of Peru (1908) | Republic of Peru (1910) | always |
-| 32 | 1824-03 | 49 | Indonesia (Dutch East Indies): Bencoolen (3.70°S 102.40°E) | Netherlands ← United Kingdom | 25,089 | Dutch East Indies (1823) | Dutch East Indies (1825) | always |
-| 33 | 1899-11 | 382 | Solomon Islands: Choiseul (7.10°S 157.20°E) | United Kingdom ← Germany | 23,310 | nothing drawn (1898) | nothing drawn (1900) | blank |
-| 34 | 1960-11 | 688 | Nicaragua: Mosquitia north of the Coco (14.80°N 84.50°W) | Honduras ← Nicaragua | 20,720 | Honduras (1959) | Honduras (1961) | always |
-| 35 | 1979-05 | 817 | Egypt/United Arab Republic: El Arish (Sinai) (31.10°N 33.80°E) | Egypt ← Israel | 20,000 | nothing drawn (1978) | nothing drawn (1980) | blank |
-| 36 | 1849-04 | 107 | Guinea (French Guinea) (Rivieres du Sud): Boké (Guinea coast) (10.95°N 14.30°W) | France ← — | 19,500 | nothing drawn (1848) | nothing drawn (1850) | blank |
-| 37 | 1859-04 | 136 | Portuguese Timor (8.80°S 125.90°E) | Portugal ← Netherlands | 18,989 | Portuguese Colonies (1858) | Portuguese Colonies (1860) | always |
-| 38 | 1914-05 | 452 | Unfederated Malay States: Johor (2.00°N 103.30°E) | United Kingdom ← Unfederated Malay States | 18,985 | British Colonial Empire (1913) | British Colonial Empire (1915) | always |
-| 39 | 1856-03 | 126 | Union of Soviet Socialist Republics / Russia: Kars (guess) (40.60°N 43.10°E) | Turkey ← Russia | 18,557 | Ottoman Empire (1855) | Ottoman Empire (1857) | always |
-| 40 | 1884-12 | 270 | Djibouti (Afar and Issas) (French Somaliland): Tadjoura (11.60°N 42.90°E) | France ← — | 16,000 | nothing drawn (1883) | nothing drawn (1885) | blank |
-| 41 | 1887-11 | 296 | Vanuatu (New Hebrides) (15.40°S 167.00°E) | United Kingdom ← — | 14,763 | nothing drawn (1886) | nothing drawn (1888) | blank |
-| 42 | 1887-11 | 300 | Vanuatu (New Hebrides) (15.40°S 167.00°E) | France ← — | 14,763 | nothing drawn (1886) | nothing drawn (1888) | blank |
-| 43 | 1842-08 | 83 | United States of America: northern New Brunswick (47.60°N 67.50°W) | United Kingdom ← United States of America | 12,950 | British Colonial Empire (1841) | British Colonial Empire (1843) | always |
-| 44 | 1878-07 | 239 | Turkey: Niš (43.30°N 21.90°E) | Yugoslavia ← Turkey | 11,097 | Principality of Serbia (1877) | Principality of Serbia (1879) | always |
-| 45 | 1889 | 318 | Gambia: Gambia valley (13.50°N 15.00°W) | United Kingdom ← — | 11,000 | French Africa (1888) | French Africa (1890) | unchanged |
-| 46 | 1922-08 | 538 | Germany/Prussia: Upper Silesia, German part (50.67°N 17.93°E) | Germany ← Poland | 9,702 | Weimar Republic (1921) | Weimar Republic (1923) | always |
-| 47 | 1865-11 | 169 | Bhutan: Bengal Duars (26.70°N 90.00°E) | United Kingdom ← Bhutan | 8,889 | British Raj (1864) | British Raj (1866) | always |
-| 48 | 1898-11 | 377 | Crete (35.25°N 24.90°E) | United Kingdom ← Turkey | 8,614 | Ottoman Empire (1897) | Ottoman Empire, Cretan State (1899) | unchanged |
-| 49 | 1829-09 | 62 | Turkey: Akhaltsikhe (41.64°N 42.98°E) | Russia ← Turkey | 8,580 | Russian Empire (1828) | Russian Empire (1830) | always |
-| 50 | 1817 | 28 | Senegal: Saint-Louis (15.90°N 16.30°W) | France ← United Kingdom | 7,819 | Bourbon Kingdom of France, Waalo (1816) | Bourbon Kingdom of France, Waalo (1818) | always |
-| 51 | 1890 | 327 | Sikkim (27.50°N 88.60°E) | United Kingdom ← Sikkim | 7,298 | Sikkim (1889) | British Raj, Sikkim (1891) | always |
-| 52 | 1939-10 | 582 | Poland: Vilnius (54.70°N 25.30°E) | Lithuania ← Russia | 6,656 | Second Polish Republic (1938) | Union of Soviet Socialist Republics (1940) | unchanged |
-| 53 | 1843-06 | 90 | Ivory Coast: Grand-Bassam (5.40°N 3.80°W) | France ← — | 6,370 | nothing drawn (1842) | nothing drawn (1844) | blank |
-| 54 | 1904-02 | 411 | French Indochina: Chanthaburi (12.60°N 102.10°E) | Thailand ← France | 6,076 | Rattanakosin Kingdom (1903) | Rattanakosin Kingdom (1905) | always |
-| 55 | 1862-03 | 157 | Djibouti (Afar and Issas) (French Somaliland): Obock (12.00°N 43.00°E) | France ← — | 6,000 | nothing drawn (1861) | nothing drawn (1863) | blank |
-| 56 | 1878-07 | 240 | Montenegro (42.60°N 19.00°E) | Montenegro ← Turkey | 4,584 | Montenegro (1877) | Montenegro (1879) | always |
-| 57 | 1885-05 | 288 | Kenya (British East Africa Protectorate): Witu (2.40°S 40.45°E) | Germany ← — | 3,120 | nothing drawn (1884) | nothing drawn (1886) | blank |
-| 58 | 1920-12 | 526 | Western Samoa (13.90°S 171.80°W) | New Zealand ← Germany | 2,823 | nothing drawn (1919) | nothing drawn (1921) | blank |
-| 59 | 1963-12 | 729 | Zanzibar (6.10°S 39.30°E) | Zanzibar ← United Kingdom | 2,642 | British colonies in Africa (1962) | British colonies in Africa (1964) | unchanged |
-| 60 | 1867-12 | 180 | Luxemburg (49.80°N 6.13°E) | Luxembourg ← Netherlands | 2,567 | Luxembourg (1866) | Luxembourg (1868) | always |
+| 21 | 1907-12 | 421 | Indonesia (Dutch East Indies): Aceh (4.30°N 96.50°E) | Netherlands ← — | 53,020 | Dutch East Indies (1906) | Dutch East Indies (1908) | always |
+| 22 | 1910-01 | 430 | Bhutan (27.40°N 90.40°E) | United Kingdom ← Bhutan | 46,600 | Kingdom of Bhutan (1909) | Kingdom of Bhutan (1911) | unchanged |
+| 23 | 1949-08 | 645 | Bhutan (27.40°N 90.40°E) | Bhutan ← India | 46,600 | Kingdom of Bhutan (1948) | Kingdom of Bhutan (1950) | always |
+| 24 | 1878-07 | 238 | Yugoslavia/Serbia (44.00°N 20.80°E) | Yugoslavia ← Turkey | 42,994 | Principality of Serbia (1877) | Principality of Serbia (1879) | always |
+| 25 | 1866-12 | 170 | Bolivia: Atacama 24°–25°S (24.50°S 70.00°W) | Chile ← Bolivia | 42,896 | Republic of Chile (1865) | Republic of Chile (1867) | always |
+| 26 | 1818-10 | 32 | United States of America: Milk River basin north of 49°N (49.50°N 110.50°W) | United Kingdom ← United States of America | 41,600 | nothing drawn (1817) | nothing drawn (1819) | blank |
+| 27 | 1906-05 | 418 | Sudan (Anglo-Egyptian): Lado Enclave (4.00°N 30.80°E) | Belgium ← United Kingdom | 38,850 | British Africa (1905) | British Africa (1907) | unchanged |
+| 28 | 1864-06 | 167 | Union of Soviet Socialist Republics / Russia: Circassia (44.50°N 39.80°E) | Russia ← — | 36,400 | Russian Empire, Circassia (1863) | Russian Empire (1865) | always |
+| 29 | 1867 | 195 | Kampuchea (Cambodia): Battambang (13.10°N 103.20°E) | Thailand ← France | 35,641 | Rattanakosin Kingdom (1866) | Rattanakosin Kingdom (1868) | always |
+| 30 | 1916 | 461 | Spanish Morocco: Cape Juby (27.90°N 11.50°W) | Spain ← France | 33,020 | Kingdom of Spain (1915) | Kingdom of Spain (1917) | always |
+| 31 | 1895-03 | 353 | Manchukuo: Pamirs (37.80°N 73.50°E) | Russia ← Afghanistan | 26,000 | Russian Empire (1894) | Russian Empire (1896) | always |
+| 32 | 1909 | 426 | Bolivia: Madre de Dios (approx.) (12.00°S 69.50°W) | Peru ← Bolivia | 26,000 | Republic of Peru (1908) | Republic of Peru (1910) | always |
+| 33 | 1824-03 | 49 | Indonesia (Dutch East Indies): Bencoolen (3.70°S 102.40°E) | Netherlands ← United Kingdom | 25,089 | British Bencoolen, Dutch East Indies (1823) | Dutch East Indies (1825) | always |
+| 34 | 1899-11 | 382 | Solomon Islands: Choiseul (7.10°S 157.20°E) | United Kingdom ← Germany | 23,310 | nothing drawn (1898) | nothing drawn (1900) | blank |
+| 35 | 1960-11 | 688 | Nicaragua: Mosquitia north of the Coco (14.80°N 84.50°W) | Honduras ← Nicaragua | 20,720 | Honduras (1959) | Honduras (1961) | always |
+| 36 | 1979-05 | 817 | Egypt/United Arab Republic: El Arish (Sinai) (31.10°N 33.80°E) | Egypt ← Israel | 20,000 | nothing drawn (1978) | nothing drawn (1980) | blank |
+| 37 | 1849-04 | 107 | Guinea (French Guinea) (Rivieres du Sud): Boké (Guinea coast) (10.95°N 14.30°W) | France ← — | 19,500 | nothing drawn (1848) | nothing drawn (1850) | blank |
+| 38 | 1859-04 | 136 | Portuguese Timor (8.80°S 125.90°E) | Portugal ← Netherlands | 18,989 | Portuguese Colonies (1858) | Portuguese Colonies (1860) | always |
+| 39 | 1914-05 | 452 | Unfederated Malay States: Johor (2.00°N 103.30°E) | United Kingdom ← Unfederated Malay States | 18,985 | British Colonial Empire (1913) | British Colonial Empire (1915) | always |
+| 40 | 1856-03 | 126 | Union of Soviet Socialist Republics / Russia: Kars (guess) (40.60°N 43.10°E) | Turkey ← Russia | 18,557 | Ottoman Empire (1855) | Ottoman Empire (1857) | always |
+| 41 | 1884-12 | 270 | Djibouti (Afar and Issas) (French Somaliland): Tadjoura (11.60°N 42.90°E) | France ← — | 16,000 | nothing drawn (1883) | nothing drawn (1885) | blank |
+| 42 | 1887-11 | 296 | Vanuatu (New Hebrides) (15.40°S 167.00°E) | United Kingdom ← — | 14,763 | nothing drawn (1886) | nothing drawn (1888) | blank |
+| 43 | 1887-11 | 300 | Vanuatu (New Hebrides) (15.40°S 167.00°E) | France ← — | 14,763 | nothing drawn (1886) | nothing drawn (1888) | blank |
+| 44 | 1842-08 | 83 | United States of America: northern New Brunswick (47.60°N 67.50°W) | United Kingdom ← United States of America | 12,950 | British Colonial Empire (1841) | British Colonial Empire (1843) | always |
+| 45 | 1878-07 | 239 | Turkey: Niš (43.30°N 21.90°E) | Yugoslavia ← Turkey | 11,097 | Principality of Serbia (1877) | Principality of Serbia (1879) | always |
+| 46 | 1889 | 318 | Gambia: Gambia valley (13.50°N 15.00°W) | United Kingdom ← — | 11,000 | French Africa (1888) | French Africa (1890) | unchanged |
+| 47 | 1922-08 | 538 | Germany/Prussia: Upper Silesia, German part (50.67°N 17.93°E) | Germany ← Poland | 9,702 | Weimar Republic (1921) | Weimar Republic (1923) | always |
+| 48 | 1865-11 | 169 | Bhutan: Bengal Duars (26.70°N 90.00°E) | United Kingdom ← Bhutan | 8,889 | British Raj (1864) | British Raj (1866) | always |
+| 49 | 1898-11 | 377 | Crete (35.25°N 24.90°E) | United Kingdom ← Turkey | 8,614 | Ottoman Empire (1897) | Ottoman Empire, Cretan State (1899) | unchanged |
+| 50 | 1829-09 | 62 | Turkey: Akhaltsikhe (41.64°N 42.98°E) | Russia ← Turkey | 8,580 | Russian Empire (1828) | Russian Empire (1830) | always |
+| 51 | 1817 | 28 | Senegal: Saint-Louis (15.90°N 16.30°W) | France ← United Kingdom | 7,819 | Bourbon Kingdom of France, Waalo (1816) | Bourbon Kingdom of France, Waalo (1818) | always |
+| 52 | 1890 | 327 | Sikkim (27.50°N 88.60°E) | United Kingdom ← Sikkim | 7,298 | Sikkim (1889) | British Raj, Sikkim (1891) | always |
+| 53 | 1939-10 | 582 | Poland: Vilnius (54.70°N 25.30°E) | Lithuania ← Russia | 6,656 | Second Polish Republic (1938) | Union of Soviet Socialist Republics (1940) | unchanged |
+| 54 | 1843-06 | 90 | Ivory Coast: Grand-Bassam (5.40°N 3.80°W) | France ← — | 6,370 | nothing drawn (1842) | nothing drawn (1844) | blank |
+| 55 | 1904-02 | 411 | French Indochina: Chanthaburi (12.60°N 102.10°E) | Thailand ← France | 6,076 | Rattanakosin Kingdom (1903) | Rattanakosin Kingdom (1905) | always |
+| 56 | 1862-03 | 157 | Djibouti (Afar and Issas) (French Somaliland): Obock (12.00°N 43.00°E) | France ← — | 6,000 | nothing drawn (1861) | nothing drawn (1863) | blank |
+| 57 | 1878-07 | 240 | Montenegro (42.60°N 19.00°E) | Montenegro ← Turkey | 4,584 | Montenegro (1877) | Montenegro (1879) | always |
+| 58 | 1885-05 | 288 | Kenya (British East Africa Protectorate): Witu (2.40°S 40.45°E) | Germany ← — | 3,120 | nothing drawn (1884) | nothing drawn (1886) | blank |
+| 59 | 1920-12 | 526 | Western Samoa (13.90°S 171.80°W) | New Zealand ← Germany | 2,823 | nothing drawn (1919) | nothing drawn (1921) | blank |
+| 60 | 1963-12 | 729 | Zanzibar (6.10°S 39.30°E) | Zanzibar ← United Kingdom | 2,642 | British colonies in Africa (1962) | British colonies in Africa (1964) | unchanged |
+| 61 | 1867-12 | 180 | Luxemburg (49.80°N 6.13°E) | Luxembourg ← Netherlands | 2,567 | Luxembourg (1866) | Luxembourg (1868) | always |
 
 32 more under 2,500 km² (mostly islands the atlas does not draw at all): 1920-12 U. S. Pacific Trust Territories (Japan ← Germany, blank); 1829 Fernando Po (Bioko) (United Kingdom ← Spain, unchanged); 1843 Fernando Po (Bioko) (Spain ← United Kingdom, always); 1947-04 U. S. Pacific Trust Territories (United States of America ← Japan, blank); 1903-11 Panama Canal Zone (United States of America ← Panama, unchanged); 1978-04 Panama Canal Zone (Panama ← United States of America, always); 1844 French Polynesia (France ← —, blank); 1860-09 Ifni (Spain ← Morocco, unchanged); 1892 Gilbert and Ellice Is. (United Kingdom ← —, blank); 1900-12 Tonga (United Kingdom ← Tonga, blank); 1970-06 Tonga (Tonga ← United Kingdom, blank); 1862 Bahrain (United Kingdom ← Bahrain, unchanged); 1979-07 Kiribati (Kiribati ← United Kingdom, blank); 1976-06 Seychelles (Seychelles ← United Kingdom, blank); 1885 U. S. Pacific Trust Territories: Marshall Islands (Germany ← —, blank); 1976-02 Mayotte (France ← Comoros, blank); 1917-12 Virgin Islands (United States of America ← Denmark, unchanged); 1887 Maldive Islands (United Kingdom ← Maldives, blank); 1965-07 Maldive Islands (Maldives ← United Kingdom, blank); 1888-12 Cook Is. (United Kingdom ← —, blank); 1986-10 Marshall Is. (Marshall Islands ← United States of America, blank); 1888 Christmas I. (United Kingdom ← —, blank); 1958-10 Cocos (Keeling) Is. (Australia ← United Kingdom, blank); 1888-09 Easter I. (Chile ← —, blank); 1847-01 Labuan I. (United Kingdom ← Brunei, blank); 1854 Oman (United Kingdom ← Oman, unchanged); 1978-10 Tuvalu (Tuvalu ← United Kingdom, blank); 1888 Nauru (Germany ← —, blank); 1919-07 Nauru (Australia ← Germany, blank); 1955-11 Cocos (Keeling) Is. (Australia ← United Kingdom, blank); 1857 Cocos (Keeling) Is. (United Kingdom ← —, blank); 1890-07 Heligoland (Germany ← United Kingdom, blank).
 

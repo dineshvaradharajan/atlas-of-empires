@@ -1,0 +1,105 @@
+{
+ "date": "2026-11-21",
+ "checks": {
+  "claims": {
+   "status": "ran",
+   "seconds": 20,
+   "report_date": "2026-11-21",
+   "headline": "1,654 of 1,665 claims pass",
+   "score": 99.3,
+   "numbers": {
+    "claims pass": 1654,
+    "claims": 1665,
+    "overlapping states": 231,
+    "dates off from Wikidata": 661,
+    "areas off": 83,
+    "gaps and jumps": 343
+   },
+   "error": null
+  },
+  "cow": {
+   "status": "ran",
+   "seconds": 7,
+   "report_date": "2026-11-21",
+   "headline": "331 of 582 transfers within a year",
+   "score": 56.9,
+   "numbers": {
+    "transfers within a year": 331,
+    "transfers tested": 582,
+    "2+ years off": 130,
+    "never shown": 56,
+    "independences within a year": 137,
+    "independences": 181
+   },
+   "error": null
+  },
+  "cshapes": {
+   "status": "ran",
+   "seconds": 37,
+   "report_date": "2026-11-21",
+   "headline": "90 wrong-owner and 124 blank runs to check",
+   "score": null,
+   "numbers": {
+    "territory disagreements": 587,
+    "different state, peacetime": 90,
+    "atlas blank": 124,
+    "area off >10%": 135,
+    "independence dates 2+ years off": 54,
+    "realms mostly outside their state": 24
+   },
+   "error": null
+  },
+  "awmc": {
+   "status": "ran",
+   "seconds": 6,
+   "report_date": "2026-11-21",
+   "headline": "median shape overlap 76% across 9 layers",
+   "score": 76,
+   "numbers": {
+    "median overlap %": 76
+   },
+   "error": null
+  },
+  "chgis": {
+   "status": "ran",
+   "seconds": 6,
+   "report_date": "2026-11-21",
+   "headline": "atlas covers 99% of Chinese-administered land (median year)",
+   "score": 99,
+   "numbers": {
+    "median coverage %": 99,
+    "runs given away or blank": 26,
+    "runs beyond": 41
+   },
+   "error": null
+  },
+  "geo": {
+   "status": "ran",
+   "seconds": 16,
+   "report_date": "2026-11-21",
+   "headline": "94.5% of land agrees 1880–2000, 56.3% before 1816",
+   "score": 94.5,
+   "numbers": {
+    "agree % 1880-2000": 94.5,
+    "agree % before 1816": 56.3,
+    "missing blocks": 399
+   },
+   "error": null
+  },
+  "lint": {
+   "status": "ran",
+   "seconds": 380,
+   "report_date": "2026-11-21",
+   "headline": "1,902 drawing problems listed",
+   "score": null,
+   "numbers": {
+    "slivers": 606,
+    "fragments": 130,
+    "blocky realms": 319,
+    "overlap pairs": 763,
+    "war grey strips": 84
+   },
+   "error": null
+  }
+ }
+}

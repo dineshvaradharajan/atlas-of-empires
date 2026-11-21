@@ -1,6 +1,6 @@
 # Border cross-check against CShapes 2.0 (1886–1991)
 
-Written by `tools/check_cshapes.py` on 2026-11-16. Read-only: nothing in the atlas was changed.
+Written by `tools/check_cshapes.py` on 2026-11-21. Read-only: nothing in the atlas was changed.
 
 CShapes 2.0 (ETH Zurich, International Conflict Research) is a peer-reviewed dataset of the borders of independent states and their dependencies, with dated boundary changes, 1886–2019. It follows the Gleditsch & Ward (GW) list of states, so it leaves out microstates and counts a state only from the date GW recognise it; native states before conquest and protected states are inside their colonial owner. Some disagreements below are those conventions, not errors on either side.
 
@@ -16,10 +16,10 @@ CShapes 2.0 (ETH Zurich, International Conflict Research) is a peer-reviewed dat
 
 ## Summary
 
-- 587 territory disagreements over 10,000 km² (runs of years): 123 gaps where CShapes has a state and the atlas draws nothing, 91 where the two give the land to different states outside wartime, 108 wartime occupations, 142 where the same land is a colony on one side and a state on the other (or a polity GW does not list), and 123 where CShapes has no state.
+- 587 territory disagreements over 10,000 km² (runs of years): 124 gaps where CShapes has a state and the atlas draws nothing, 90 where the two give the land to different states outside wartime, 108 wartime occupations, 141 where the same land is a colony on one side and a state on the other (or a polity GW does not list), and 124 where CShapes has no state.
 - 135 runs where a state's total area differs by more than 10% (and 50,000 km²).
 - 54 date differences of 2 years or more between GW independence in CShapes and the years the atlas draws the state; 43 shorter offsets are counted, not listed.
-- 92 atlas realms with no GW counterpart; 1 GW states the atlas never draws as a state in these years.
+- 93 atlas realms with no GW counterpart; 1 GW states the atlas never draws as a state in these years.
 - 24 linked atlas realms lie mostly outside their GW state.
 
 ## 1. Largest territory disagreements
@@ -37,61 +37,61 @@ Peak = the largest single-year area of the run; typical = its median year. Where
 | 3 | 1886–1991 | 2,751,000 (1918) | 370,000 | nothing drawn | Russia (Soviet Union) | 30°E–40°E, 50°N–60°N (25%) | gap |
 | 4 | 1886–1889 | 2,430,000 (1886) | 2,430,000 | nothing drawn | Western Australia (colony, United Kingdom) | 120°E–130°E, 30°S–20°S (39%) | gap |
 | 5 | 1886–1959 | 1,820,000 (1888) | 25,000 | nothing drawn | Congo, Democratic Republic of (Zaire) (colony, Belgium) | 20°E–30°E, 10°S–0°N (43%) | gap |
-| 6 | 1895–1897 | 1,601,000 (1895) | 1,601,000 | nothing drawn | Iran (Persia) | 50°E–60°E, 30°N–40°N (47%) | gap |
-| 7 | 1895–1897 | 1,583,000 (1895) | 1,583,000 | Iran (Persia): Qajar Dynasty | Indonesia (colony, Netherlands) | 110°E–120°E, 10°S–0°N (24%) | border |
-| 8 | 1912–1919 | 1,564,000 (1912) | 1,561,000 | Mongolia: Great Mongol State | China | 100°E–110°E, 40°N–50°N (42%) | border |
-| 9 | 1903–1904 | 1,498,000 (1903) | 1,498,000 | nothing drawn | Algeria (colony, France) | 0°E–10°E, 20°N–30°N (55%) | gap |
-| 10 | 1886–1991 | 1,132,000 (1898) | 273,000 | nothing drawn | Canada | 120°W–110°W, 70°N–80°N (13%) | gap |
-| 11 | 1898–1900 | 960,000 (1898) | 960,000 | nothing drawn | Congo (colony, France) | 10°E–20°E, 10°N–20°N (49%) | gap |
-| 12 | 1889–1907 | 939,000 (1891) | 69,000 | nothing drawn | Kenya (protectorate, United Kingdom) | 30°E–40°E, 0°N–10°N (54%) | gap |
-| 13 | 1913–1950 | 910,000 (1913) | 907,000 | China: Republic of China, Empire of China | Tibet | 90°E–100°E, 30°N–40°N (82%) | border |
-| 14 | 1912–1952 | 907,000 (1912) | 13,000 | Tibet: Tibet | China | 80°E–90°E, 30°N–40°N (67%) | border |
-| 15 | 1891–1916 | 901,000 (1891) | 56,000 | nothing drawn | Tanzania (Tanganyika) (colony, Germany (Prussia)) | 30°E–40°E, 10°S–0°N (88%) | gap |
-| 16 | 1901–1904 | 854,000 (1901) | 854,000 | nothing drawn | Chad (occupied, France) | 10°E–20°E, 10°N–20°N (41%) | gap |
-| 17 | 1921–1931 | 815,000 (1921) | 815,000 | United Kingdom: British Africa | Namibia (mandate, South Africa) | 10°E–20°E, 30°S–20°S (64%) | border |
-| 18 | 1912 | 815,000 (1912) | 815,000 | Italy/Sardinia: Italian Africa, Kingdom of Italy | Turkey (Ottoman Empire) | 10°E–20°E, 20°N–30°N (58%) | border |
-| 19 | 1904 | 796,000 (1904) | 796,000 | nothing drawn | Mauritania (protectorate, France) | 20°W–10°W, 10°N–20°N (34%) | gap |
-| 20 | 1886–1920 | 756,000 (1900) | 28,000 | Russia (Soviet Union): Russian Empire, Russia (Civil War) | China | 120°E–130°E, 40°N–50°N (76%) | border |
-| 21 | 1886–1945 | 723,000 (1886) | 105,000 | nothing drawn | Indonesia (colony, Netherlands) | 110°E–120°E, 10°S–0°N (37%) | gap |
-| 22 | 1886–1991 | 685,000 (1886) | 190,000 | nothing drawn | United States of America | 110°W–100°W, 30°N–40°N (43%) | gap |
-| 23 | 1926 | 561,000 (1926) | 561,000 | nothing drawn | Tibet | 90°E–100°E, 30°N–40°N (89%) | gap |
-| 24 | 1891–1894 | 558,000 (1891) | 558,000 | nothing drawn | Zimbabwe (Rhodesia) (colony, United Kingdom) | 20°E–30°E, 20°S–10°S (56%) | gap |
-| 25 | 1886–1904 | 462,000 (1899) | 90,000 | nothing drawn | Egypt (colony, United Kingdom) | 20°E–30°E, 20°N–30°N (77%) | gap |
-| 26 | 1886–1917 | 417,000 (1886) | 16,000 | nothing drawn | Mozambique (colony, Portugal) | 30°E–40°E, 20°S–10°S (89%) | gap |
-| 27 | 1950–1962 | 407,000 (1950) | 407,000 | nothing drawn | West Irian (Dutch New Guinea) (colony, Netherlands) | 130°E–140°E, 10°S–0°N (82%) | gap |
-| 28 | 1946 | 371,000 (1946) | 371,000 | nothing drawn | China | 110°E–120°E, 40°N–50°N (67%) | gap |
-| 29 | 1886–1904 | 354,000 (1886) | 104,000 | nothing drawn | Kamerun (colony, Germany (Prussia)) | 10°E–20°E, 0°N–10°N (92%) | gap |
-| 30 | 1886–1894 | 342,000 (1886) | 324,000 | nothing drawn | Congo (colony, France) | 10°E–20°E, 10°S–0°N (58%) | gap |
-| 31 | 1917 | 322,000 (1917) | 322,000 | nothing drawn | Tibet | 90°E–100°E, 30°N–40°N (71%) | gap |
-| 32 | 1905 | 311,000 (1905) | 311,000 | Norway: Kingdom of Norway | Sweden | 10°E–20°E, 60°N–70°N (39%) | border |
-| 33 | 1894–1915 | 304,000 (1894) | 36,000 | nothing drawn | Uganda (protectorate, United Kingdom) | 30°E–40°E, 0°N–10°N (74%) | gap |
-| 34 | 1899–1904 | 294,000 (1899) | 150,000 | nothing drawn | Sudan (colony, United Kingdom) | 30°E–40°E, 0°N–10°N (58%) | gap |
-| 35 | 1943–1945 | 294,000 (1943) | 294,000 | nothing drawn | Iran (Persia) | 40°E–50°E, 30°N–40°N (71%) | gap |
-| 36 | 1891–1913 | 289,000 (1891) | 230,000 | nothing drawn | Angola (colony, Portugal) | 20°E–30°E, 20°S–10°S (59%) | gap |
-| 37 | 1886–1907 | 286,000 (1897) | 62,000 | nothing drawn | Ethiopia | 40°E–50°E, 0°N–10°N (66%) | gap |
-| 38 | 1899 | 285,000 (1899) | 285,000 | nothing drawn | Philippines (colony, United States of America) | 120°E–130°E, 10°N–20°N (57%) | gap |
-| 39 | 1976–1991 | 276,000 (1980) | 276,000 | nothing drawn | Morocco | 20°W–10°W, 20°N–30°N (91%) | gap |
-| 40 | 1889 | 273,000 (1889) | 273,000 | nothing drawn | Zimbabwe (Rhodesia) (colony, United Kingdom) | 30°E–40°E, 20°S–10°S (47%) | gap |
-| 41 | 1933–1972 | 266,000 (1933) | 11,000 | nothing drawn | Saudi Arabia | 40°E–50°E, 10°N–20°N (38%) | gap |
-| 42 | 1889–1892 | 260,000 (1889) | 247,000 | nothing drawn | Cote D'Ivoire (protectorate, France) | 10°W–0°E, 0°N–10°N (96%) | gap |
-| 43 | 1886–1899 | 255,000 (1886) | 255,000 | nothing drawn | Gabon (protectorate, France) | 10°E–20°E, 10°S–0°N (58%) | gap |
-| 44 | 1893–1894 | 246,000 (1893) | 246,000 | nothing drawn | Cote D'Ivoire (colony, France) | 10°W–0°E, 0°N–10°N (94%) | gap |
-| 45 | 1955 | 225,000 (1955) | 225,000 | nothing drawn | Laos | 100°E–110°E, 10°N–20°N (70%) | gap |
-| 46 | 1886–1894 | 203,000 (1886) | 203,000 | nothing drawn | Algeria (colony, France) | 0°E–10°E, 30°N–40°N (95%) | gap |
-| 47 | 1886–1921 | 189,000 (1898) | 189,000 | nothing drawn | Oman | 50°E–60°E, 10°N–20°N (68%) | gap |
-| 48 | 1960 | 189,000 (1960) | 189,000 | Mali: Mali Federation | Senegal | 20°W–10°W, 10°N–20°N (100%) | border |
-| 49 | 1958–1960 | 182,000 (1958) | 182,000 | Egypt: United Arab Republic | Syria | 30°E–40°E, 30°N–40°N (78%) | border |
-| 50 | 1886–1896 | 182,000 (1886) | 182,000 | nothing drawn | Madagascar (Malagasy) | 40°E–50°E, 30°S–20°S (64%) | gap |
-| 51 | 1897 | 182,000 (1897) | 182,000 | nothing drawn | Madagascar (Malagasy) (colony, France) | 40°E–50°E, 30°S–20°S (64%) | gap |
-| 52 | 1955 | 182,000 (1955) | 182,000 | nothing drawn | Cambodia (Kampuchea) | 100°E–110°E, 10°N–20°N (100%) | gap |
-| 53 | 1899–1904 | 174,000 (1899) | 153,000 | nothing drawn | Northern Nigeria (protectorate, United Kingdom) | 10°E–20°E, 10°N–20°N (41%) | gap |
-| 54 | 1955 | 173,000 (1955) | 173,000 | nothing drawn | Vietnam, Republic of | 100°E–110°E, 10°N–20°N (89%) | gap |
-| 55 | 1967–1972 | 171,000 (1967) | 171,000 | nothing drawn | Vietnam, Republic of | 100°E–110°E, 10°N–20°N (88%) | gap |
-| 56 | 1886–1889 | 170,000 (1887) | 170,000 | nothing drawn | British Somaliland (Somaliland Republic) (colony, United Kingdom) | 40°E–50°E, 0°N–10°N (59%) | gap |
-| 57 | 1921 | 162,000 (1921) | 162,000 | nothing drawn | Iraq (mandate, United Kingdom) | 40°E–50°E, 30°N–40°N (75%) | gap |
-| 58 | 1975 | 156,000 (1975) | 156,000 | Vietnam, Republic of: Republic of Vietnam | Vietnam, Democratic Republic of | 100°E–110°E, 10°N–20°N (87%) | border |
-| 59 | 1886–1889 | 152,000 (1886) | 152,000 | nothing drawn | Spanish West Africa (protectorate, Spain) | 20°W–10°W, 20°N–30°N (100%) | gap |
-| 60 | 1886–1991 | 152,000 (1944) | 18,000 | nothing drawn | Italy/Sardinia | 10°E–20°E, 40°N–50°N (57%) | gap |
+| 6 | 1912–1919 | 1,564,000 (1912) | 1,561,000 | Mongolia: Great Mongol State | China | 100°E–110°E, 40°N–50°N (42%) | border |
+| 7 | 1903–1904 | 1,498,000 (1903) | 1,498,000 | nothing drawn | Algeria (colony, France) | 0°E–10°E, 20°N–30°N (55%) | gap |
+| 8 | 1886–1991 | 1,132,000 (1898) | 273,000 | nothing drawn | Canada | 120°W–110°W, 70°N–80°N (13%) | gap |
+| 9 | 1898–1900 | 960,000 (1898) | 960,000 | nothing drawn | Congo (colony, France) | 10°E–20°E, 10°N–20°N (49%) | gap |
+| 10 | 1889–1907 | 939,000 (1891) | 69,000 | nothing drawn | Kenya (protectorate, United Kingdom) | 30°E–40°E, 0°N–10°N (54%) | gap |
+| 11 | 1886–1945 | 923,000 (1886) | 105,000 | nothing drawn | Indonesia (colony, Netherlands) | 110°E–120°E, 10°S–0°N (29%) | gap |
+| 12 | 1913–1950 | 910,000 (1913) | 907,000 | China: Republic of China, Empire of China | Tibet | 90°E–100°E, 30°N–40°N (82%) | border |
+| 13 | 1912–1952 | 907,000 (1912) | 13,000 | Tibet: Tibet | China | 80°E–90°E, 30°N–40°N (67%) | border |
+| 14 | 1891–1916 | 901,000 (1891) | 56,000 | nothing drawn | Tanzania (Tanganyika) (colony, Germany (Prussia)) | 30°E–40°E, 10°S–0°N (88%) | gap |
+| 15 | 1901–1904 | 854,000 (1901) | 854,000 | nothing drawn | Chad (occupied, France) | 10°E–20°E, 10°N–20°N (41%) | gap |
+| 16 | 1921–1931 | 815,000 (1921) | 815,000 | United Kingdom: British Africa | Namibia (mandate, South Africa) | 10°E–20°E, 30°S–20°S (64%) | border |
+| 17 | 1912 | 815,000 (1912) | 815,000 | Italy/Sardinia: Italian Africa, Kingdom of Italy | Turkey (Ottoman Empire) | 10°E–20°E, 20°N–30°N (58%) | border |
+| 18 | 1904 | 796,000 (1904) | 796,000 | nothing drawn | Mauritania (protectorate, France) | 20°W–10°W, 10°N–20°N (34%) | gap |
+| 19 | 1886–1920 | 756,000 (1900) | 28,000 | Russia (Soviet Union): Russian Empire, Russia (Civil War) | China | 120°E–130°E, 40°N–50°N (76%) | border |
+| 20 | 1886–1991 | 685,000 (1886) | 190,000 | nothing drawn | United States of America | 110°W–100°W, 30°N–40°N (43%) | gap |
+| 21 | 1926 | 561,000 (1926) | 561,000 | nothing drawn | Tibet | 90°E–100°E, 30°N–40°N (89%) | gap |
+| 22 | 1891–1894 | 558,000 (1891) | 558,000 | nothing drawn | Zimbabwe (Rhodesia) (colony, United Kingdom) | 20°E–30°E, 20°S–10°S (56%) | gap |
+| 23 | 1886–1904 | 462,000 (1899) | 90,000 | nothing drawn | Egypt (colony, United Kingdom) | 20°E–30°E, 20°N–30°N (77%) | gap |
+| 24 | 1886–1917 | 417,000 (1886) | 16,000 | nothing drawn | Mozambique (colony, Portugal) | 30°E–40°E, 20°S–10°S (89%) | gap |
+| 25 | 1946 | 371,000 (1946) | 371,000 | nothing drawn | China | 110°E–120°E, 40°N–50°N (67%) | gap |
+| 26 | 1886–1904 | 354,000 (1886) | 104,000 | nothing drawn | Kamerun (colony, Germany (Prussia)) | 10°E–20°E, 0°N–10°N (92%) | gap |
+| 27 | 1886–1894 | 342,000 (1886) | 324,000 | nothing drawn | Congo (colony, France) | 10°E–20°E, 10°S–0°N (58%) | gap |
+| 28 | 1917 | 322,000 (1917) | 322,000 | nothing drawn | Tibet | 90°E–100°E, 30°N–40°N (71%) | gap |
+| 29 | 1905 | 311,000 (1905) | 311,000 | Norway: Kingdom of Norway | Sweden | 10°E–20°E, 60°N–70°N (39%) | border |
+| 30 | 1894–1915 | 304,000 (1894) | 36,000 | nothing drawn | Uganda (protectorate, United Kingdom) | 30°E–40°E, 0°N–10°N (74%) | gap |
+| 31 | 1899–1904 | 294,000 (1899) | 150,000 | nothing drawn | Sudan (colony, United Kingdom) | 30°E–40°E, 0°N–10°N (58%) | gap |
+| 32 | 1943–1945 | 294,000 (1943) | 294,000 | nothing drawn | Iran (Persia) | 40°E–50°E, 30°N–40°N (71%) | gap |
+| 33 | 1891–1913 | 289,000 (1891) | 230,000 | nothing drawn | Angola (colony, Portugal) | 20°E–30°E, 20°S–10°S (59%) | gap |
+| 34 | 1886–1907 | 286,000 (1897) | 62,000 | nothing drawn | Ethiopia | 40°E–50°E, 0°N–10°N (66%) | gap |
+| 35 | 1899 | 285,000 (1899) | 285,000 | nothing drawn | Philippines (colony, United States of America) | 120°E–130°E, 10°N–20°N (57%) | gap |
+| 36 | 1976–1991 | 276,000 (1980) | 276,000 | nothing drawn | Morocco | 20°W–10°W, 20°N–30°N (91%) | gap |
+| 37 | 1889 | 273,000 (1889) | 273,000 | nothing drawn | Zimbabwe (Rhodesia) (colony, United Kingdom) | 30°E–40°E, 20°S–10°S (47%) | gap |
+| 38 | 1933–1972 | 266,000 (1933) | 11,000 | nothing drawn | Saudi Arabia | 40°E–50°E, 10°N–20°N (38%) | gap |
+| 39 | 1889–1892 | 260,000 (1889) | 247,000 | nothing drawn | Cote D'Ivoire (protectorate, France) | 10°W–0°E, 0°N–10°N (96%) | gap |
+| 40 | 1886–1899 | 255,000 (1886) | 255,000 | nothing drawn | Gabon (protectorate, France) | 10°E–20°E, 10°S–0°N (58%) | gap |
+| 41 | 1893–1894 | 246,000 (1893) | 246,000 | nothing drawn | Cote D'Ivoire (colony, France) | 10°W–0°E, 0°N–10°N (94%) | gap |
+| 42 | 1955 | 225,000 (1955) | 225,000 | nothing drawn | Laos | 100°E–110°E, 10°N–20°N (70%) | gap |
+| 43 | 1886–1894 | 203,000 (1886) | 203,000 | nothing drawn | Algeria (colony, France) | 0°E–10°E, 30°N–40°N (95%) | gap |
+| 44 | 1886–1921 | 189,000 (1898) | 189,000 | nothing drawn | Oman | 50°E–60°E, 10°N–20°N (68%) | gap |
+| 45 | 1960 | 189,000 (1960) | 189,000 | Mali: Mali Federation | Senegal | 20°W–10°W, 10°N–20°N (100%) | border |
+| 46 | 1958–1960 | 182,000 (1958) | 182,000 | Egypt: United Arab Republic | Syria | 30°E–40°E, 30°N–40°N (78%) | border |
+| 47 | 1886–1896 | 182,000 (1886) | 182,000 | nothing drawn | Madagascar (Malagasy) | 40°E–50°E, 30°S–20°S (64%) | gap |
+| 48 | 1897 | 182,000 (1897) | 182,000 | nothing drawn | Madagascar (Malagasy) (colony, France) | 40°E–50°E, 30°S–20°S (64%) | gap |
+| 49 | 1955 | 182,000 (1955) | 182,000 | nothing drawn | Cambodia (Kampuchea) | 100°E–110°E, 10°N–20°N (100%) | gap |
+| 50 | 1899–1904 | 174,000 (1899) | 153,000 | nothing drawn | Northern Nigeria (protectorate, United Kingdom) | 10°E–20°E, 10°N–20°N (41%) | gap |
+| 51 | 1955 | 173,000 (1955) | 173,000 | nothing drawn | Vietnam, Republic of | 100°E–110°E, 10°N–20°N (89%) | gap |
+| 52 | 1967–1972 | 171,000 (1967) | 171,000 | nothing drawn | Vietnam, Republic of | 100°E–110°E, 10°N–20°N (88%) | gap |
+| 53 | 1886–1889 | 170,000 (1887) | 170,000 | nothing drawn | British Somaliland (Somaliland Republic) (colony, United Kingdom) | 40°E–50°E, 0°N–10°N (59%) | gap |
+| 54 | 1921 | 162,000 (1921) | 162,000 | nothing drawn | Iraq (mandate, United Kingdom) | 40°E–50°E, 30°N–40°N (75%) | gap |
+| 55 | 1975 | 156,000 (1975) | 156,000 | Vietnam, Republic of: Republic of Vietnam | Vietnam, Democratic Republic of | 100°E–110°E, 10°N–20°N (87%) | border |
+| 56 | 1886–1889 | 152,000 (1886) | 152,000 | nothing drawn | Spanish West Africa (protectorate, Spain) | 20°W–10°W, 20°N–30°N (100%) | gap |
+| 57 | 1886–1991 | 152,000 (1944) | 18,000 | nothing drawn | Italy/Sardinia | 10°E–20°E, 40°N–50°N (57%) | gap |
+| 58 | 1955 | 151,000 (1955) | 151,000 | nothing drawn | Vietnam, Democratic Republic of | 100°E–110°E, 20°N–30°N (76%) | gap |
+| 59 | 1935 | 148,000 (1935) | 148,000 | nothing drawn | China | 110°E–120°E, 20°N–30°N (86%) | gap |
+| 60 | 1911–1915 | 146,000 (1911) | 22,000 | Germany (Prussia): German Africa | Central African Republic (colony, France) | 10°E–20°E, 0°N–10°N (100%) | border |
 
 154 smaller runs are not listed (rerun with `--top`).
 
@@ -110,7 +110,7 @@ Peak = the largest single-year area of the run; typical = its median year. Where
 | 7 | 1886–1940 | 2,222,000 (1936) | 172,000 | Denmark: Greenland, Denmark | no state | 50°W–40°W, 60°N–70°N (20%) | coverage |
 | 8 | 1945–1991 | 2,222,000 (1946) | 2,222,000 | Denmark: Denmark | no state | 50°W–40°W, 60°N–70°N (20%) | coverage |
 | 9 | 1899 | 2,164,000 (1899) | 2,164,000 | Mahdist State (no GW counterpart) | Sudan (colony, United Kingdom) | 20°E–30°E, 10°N–20°N (36%) | status |
-| 10 | 1942–1945 | 1,780,000 (1943) | 1,766,000 | Japan: Empire of Japan | Indonesia (colony, Netherlands) | 110°E–120°E, 10°S–0°N (24%) | wartime |
+| 10 | 1942–1945 | 1,782,000 (1943) | 1,768,000 | Japan: Empire of Japan | Indonesia (colony, Netherlands) | 110°E–120°E, 10°S–0°N (23%) | wartime |
 | 11 | 1947 | 1,701,000 (1947) | 1,701,000 | India: Republic of India | India (colony, United Kingdom) | 80°E–90°E, 20°N–30°N (32%) | status |
 | 12 | 1905–1932 | 1,655,000 (1932) | 459,000 | Saudi Arabia: Kingdom of Hejaz and Nejd, Emirate of Nejd | no state | 40°E–50°E, 20°N–30°N (61%) | coverage |
 | 13 | 1946–1949 | 1,653,000 (1949) | 1,407,000 | Netherlands: Dutch East Indies | Indonesia | 110°E–120°E, 10°S–0°N (25%) | status |
@@ -159,27 +159,27 @@ Area of everything linked to the GW code (the state with its colonies) in each d
 | 17 | Denmark (390) | 1886–1941 | 1936 | 143,000 | 2,259,000 | +2,116,000 (+1476%) | +123,000 |
 | 18 | South Africa (560) | 1910–1931 | 1916 | 2,042,000 | 0 | −2,042,000 (-100%) | −2,042,000 |
 | 19 | Belgium (211) | 1886–1889 | 1886 | 2,047,000 | 47,000 | −2,000,000 (-98%) | −2,000,000 |
-| 20 | Netherlands (210) | 1943–1962 | 1943 | 2,070,000 | 152,000 | −1,918,000 (-93%) | −403,000 |
-| 21 | Netherlands (210) | 1886–1897 | 1895 | 2,070,000 | 191,000 | −1,879,000 (-91%) | −609,000 |
-| 22 | China (710) | 1938–1946 | 1945 | 7,496,000 | 5,732,000 | −1,764,000 (-24%) | −1,692,000 |
-| 23 | Indonesia (850) | 1946–1949 | 1949 | 1,889,000 | 163,000 | −1,726,000 (-91%) | −1,444,000 |
-| 24 | Italy/Sardinia (325) | 1943–1944 | 1943 | 300,000 | 1,999,000 | +1,699,000 (+567%) | +1,699,000 |
-| 25 | Saudi Arabia (670) | 1905–1935 | 1932 | 0 | 1,659,000 | +1,659,000 | +460,000 |
-| 26 | United Kingdom (200) | 1964–1981 | 1964 | 2,063,000 | 3,685,000 | +1,622,000 (+79%) | +72,000 |
-| 27 | Libya (620) | 1951 | 1951 | 0 | 1,611,000 | +1,611,000 | +1,611,000 |
-| 28 | Mongolia (712) | 1912–1919 | 1912 | 0 | 1,567,000 | +1,567,000 | +1,567,000 |
-| 29 | Mali (432) | 1960 | 1960 | 0 | 1,446,000 | +1,446,000 | +1,446,000 |
-| 30 | Italy/Sardinia (325) | 1936–1940 | 1940 | 2,512,000 | 3,848,000 | +1,336,000 (+53%) | +1,122,000 |
-| 31 | United Kingdom (200) | 1951 | 1951 | 10,621,000 | 9,349,000 | −1,273,000 (-12%) | −1,273,000 |
-| 32 | Germany (Prussia) (255) | 1886–1894 | 1891 | 3,161,000 | 1,922,000 | −1,239,000 (-39%) | −546,000 |
-| 33 | France (220) | 1960 | 1960 | 9,731,000 | 8,494,000 | −1,236,000 (-13%) | −1,236,000 |
-| 34 | Ethiopia (530) | 1936–1941 | 1936 | 1,131,000 | 0 | −1,131,000 (-100%) | −1,131,000 |
-| 35 | Tibet (711) | 1912–1952 | 1914 | 1,889,000 | 909,000 | −980,000 (-52%) | −901,000 |
-| 36 | United Kingdom (200) | 1961 | 1961 | 4,892,000 | 3,914,000 | −978,000 (-20%) | −978,000 |
-| 37 | Italy/Sardinia (325) | 1912 | 1912 | 781,000 | 1,752,000 | +971,000 (+124%) | +971,000 |
-| 38 | China (710) | 1950–1952 | 1951 | 9,369,000 | 8,412,000 | −957,000 (-10%) | −957,000 |
-| 39 | Pakistan (770) | 1947 | 1947 | 0 | 943,000 | +943,000 | +943,000 |
-| 40 | Germany (Prussia) (255) | 1917–1918 | 1918 | 541,000 | 1,454,000 | +913,000 (+169%) | +913,000 |
+| 20 | Netherlands (210) | 1942–1962 | 1943 | 2,070,000 | 152,000 | −1,918,000 (-93%) | −403,000 |
+| 21 | China (710) | 1938–1946 | 1945 | 7,496,000 | 5,732,000 | −1,764,000 (-24%) | −1,692,000 |
+| 22 | Indonesia (850) | 1946–1949 | 1949 | 1,889,000 | 163,000 | −1,726,000 (-91%) | −1,444,000 |
+| 23 | Italy/Sardinia (325) | 1943–1944 | 1943 | 300,000 | 1,999,000 | +1,699,000 (+567%) | +1,699,000 |
+| 24 | Saudi Arabia (670) | 1905–1935 | 1932 | 0 | 1,659,000 | +1,659,000 | +460,000 |
+| 25 | United Kingdom (200) | 1964–1981 | 1964 | 2,063,000 | 3,685,000 | +1,622,000 (+79%) | +72,000 |
+| 26 | Libya (620) | 1951 | 1951 | 0 | 1,611,000 | +1,611,000 | +1,611,000 |
+| 27 | Mongolia (712) | 1912–1919 | 1912 | 0 | 1,567,000 | +1,567,000 | +1,567,000 |
+| 28 | Mali (432) | 1960 | 1960 | 0 | 1,446,000 | +1,446,000 | +1,446,000 |
+| 29 | Italy/Sardinia (325) | 1936–1940 | 1940 | 2,512,000 | 3,848,000 | +1,336,000 (+53%) | +1,122,000 |
+| 30 | United Kingdom (200) | 1951 | 1951 | 10,621,000 | 9,349,000 | −1,273,000 (-12%) | −1,273,000 |
+| 31 | Germany (Prussia) (255) | 1886–1894 | 1891 | 3,161,000 | 1,922,000 | −1,239,000 (-39%) | −546,000 |
+| 32 | France (220) | 1960 | 1960 | 9,731,000 | 8,494,000 | −1,236,000 (-13%) | −1,236,000 |
+| 33 | Ethiopia (530) | 1936–1941 | 1936 | 1,131,000 | 0 | −1,131,000 (-100%) | −1,131,000 |
+| 34 | Tibet (711) | 1912–1952 | 1914 | 1,889,000 | 909,000 | −980,000 (-52%) | −901,000 |
+| 35 | United Kingdom (200) | 1961 | 1961 | 4,892,000 | 3,914,000 | −978,000 (-20%) | −978,000 |
+| 36 | Italy/Sardinia (325) | 1912 | 1912 | 781,000 | 1,752,000 | +971,000 (+124%) | +971,000 |
+| 37 | China (710) | 1950–1952 | 1951 | 9,369,000 | 8,412,000 | −957,000 (-10%) | −957,000 |
+| 38 | Pakistan (770) | 1947 | 1947 | 0 | 943,000 | +943,000 | +943,000 |
+| 39 | Germany (Prussia) (255) | 1917–1918 | 1918 | 541,000 | 1,454,000 | +913,000 (+169%) | +913,000 |
+| 40 | Turkey (Ottoman Empire) (640) | 1917–1921 | 1919 | 1,662,000 | 762,000 | −899,000 (-54%) | −439,000 |
 
 95 more runs not listed.
 
@@ -256,94 +256,95 @@ Native states before conquest, protected states, breakaways and unions. CShapes 
 | 2 | Sokoto Caliphate | Q600524 | 1886–1904 | 746,000 | no CShapes unit, Northern Nigeria (protectorate, United Kingdom), Kamerun (colony, Germany (Prussia)) | Cliopatria |
 | 3 | Emirate of Jabal Shammar | Q5362837 | 1886–1921 | 674,000 | no CShapes unit, Turkey (Ottoman Empire) | Cliopatria |
 | 4 | Arab Federation | Q146713 | 1958 | 539,000 | Iraq, Jordan, Saudi Arabia | Cliopatria |
-| 5 | Kingdom of Hejaz | Q956357 | 1916–1925 | 438,000 | no CShapes unit, Turkey (Ottoman Empire), Jordan (occupied, United Kingdom) | Cliopatria |
-| 6 | Khanate of Khiva | Q491106 | 1918–1919 | 385,000 | Russia (Soviet Union), Khiva (protectorate, Russia (Soviet Union)), Bokhara (protectorate, Russia (Soviet Union)) | Cliopatria |
-| 7 | Wadai Empire | Q1132786 | 1886–1910 | 279,000 | no CShapes unit, Chad (occupied, France), Congo (colony, France) | Cliopatria |
-| 8 | East Turkestan Republic | Q840601 | 1945–1949 | 271,000 | China, Russia (Soviet Union), Mongolia | Cliopatria |
-| 9 | Bornu Empire | Q1139762 | 1886–1894 | 229,000 | no CShapes unit, Kamerun (colony, Germany (Prussia)) | Cliopatria |
-| 10 | Toucouleur Empire |  | 1886–1890 | 221,000 | no CShapes unit | supplement africa |
-| 11 | Emirate of Bukhara | Q746558 | 1918–1919 | 219,000 | Bokhara (protectorate, Russia (Soviet Union)), Russia (Soviet Union), Khiva (protectorate, Russia (Soviet Union)) | Cliopatria |
-| 12 | Hyderabad State | Q1240096 | 1947 | 217,000 | India (colony, United Kingdom) | Cliopatria |
-| 13 | Lunda Empire |  | 1886–1887 | 207,000 | no CShapes unit, Congo, Democratic Republic of (Zaire) (colony, Belgium) | supplement africa |
-| 14 | Gaza Empire |  | 1886–1895 | 193,000 | Mozambique (colony, Portugal), no CShapes unit, Zimbabwe (Rhodesia) (colony, United Kingdom) | supplement africa |
-| 15 | Kashmir and Jammu | Q2571484 | 1947 | 183,000 | India (colony, United Kingdom), Tibet, Afghanistan | Cliopatria |
-| 16 | Ashanti Empire | Q722071 | 1886–1897 | 153,000 | Ghana (colony, United Kingdom), no CShapes unit, Cote D'Ivoire (protectorate, France) | Cliopatria |
-| 17 | Republic of Uryankhay | Q56282578 | 1912–1913 | 149,000 | China, Russia (Soviet Union) | Cliopatria |
-| 18 | Kingdom of Luang Phrabang | Q190165 | 1886–1894 | 148,000 | Thailand, Vietnam (Annam/Cochin China/Tonkin), Laos (colony, France) | Cliopatria |
-| 19 | Luba Empire |  | 1886–1889 | 142,000 | Congo, Democratic Republic of (Zaire) (colony, Belgium) | supplement africa |
-| 20 | Sultanate of Hobyo | Q862404 | 1886–1894 | 139,000 | no CShapes unit, Italian Somaliland (colony, Italy/Sardinia) | Cliopatria |
-| 21 | Lozi Kingdom (Barotseland) |  | 1886–1899 | 128,000 | Zimbabwe (Rhodesia) (colony, United Kingdom), no CShapes unit, Angola (colony, Portugal) | supplement africa |
-| 22 | Kingdom of Sarawak | Q1658411 | 1886–1894, 1946 | 127,000 | Sarawak (protectorate, United Kingdom), no CShapes unit, Sarawak (colony, United Kingdom) | Cliopatria |
-| 23 | Samorian State (Wassoulou Empire) |  | 1886–1898 | 127,000 | no CShapes unit, Cote D'Ivoire (colony, France), Cote D'Ivoire (protectorate, France) | supplement africa |
-| 24 | Mthwakazi (Ndebele kingdom) |  | 1886–1893 | 113,000 | Zimbabwe (Rhodesia) (colony, United Kingdom), no CShapes unit, Botswana (protectorate, United Kingdom) | supplement africa |
-| 25 | Imamate of Oman | Q2342282 | 1913–1919 | 105,000 | Oman, no CShapes unit | Cliopatria |
-| 26 | Sultanate of Agadez |  | 1886–1899 | 101,000 | no CShapes unit, French West Africa (colony, France) | supplement africa |
-| 27 | Asir | Q15728206 | 1917–1923 | 97,000 | no CShapes unit, Turkey (Ottoman Empire), Yemen (Arab Republic of Yemen) | Cliopatria |
-| 28 | Independent State of Croatia | Q153128 | 1941–1944 | 95,000 | Yugoslavia | Cliopatria |
-| 29 | Majeerteen Sultanate | Q2257830 | 1886–1889 | 93,000 | no CShapes unit, British Somaliland (Somaliland Republic) (colony, United Kingdom) | Cliopatria |
-| 30 | Kingdom of Kongo | Q796583 | 1886–1889 | 76,000 | Angola (colony, Portugal), no CShapes unit | Cliopatria |
-| 31 | Kingdom of Baguirmi |  | 1886–1897 | 74,000 | no CShapes unit | supplement africa |
-| 32 | Cuban Nationalists | Q11256 | 1895–1899 | 57,000 | Cuba (colony, Spain), Cuba (occupied, United States of America), no CShapes unit | Cliopatria |
-| 33 | Imamate of Futa Jallon |  | 1886–1896 | 49,000 | no CShapes unit, Guinea (colony, France) | supplement africa |
-| 34 | Mahra Sultanate |  | 1886 | 49,000 | no CShapes unit | supplement me |
-| 35 | Pahang Sultanate | Q30592233 | 1886–1889 | 45,000 | no CShapes unit, Pahang (colony, United Kingdom), Thailand | Cliopatria |
-| 36 | Kénédougou Kingdom |  | 1886–1898 | 45,000 | no CShapes unit, French West Africa (colony, France) | supplement africa |
-| 37 | Sultanate of Aceh | Q1061057 | 1886–1903 | 42,000 | Indonesia (colony, Netherlands), no CShapes unit | Cliopatria |
-| 38 | Slovak Republic |  | 1939–1945 | 38,000 | Czechoslovakia, Hungary, Poland | supplement eu-east |
-| 39 | Emirate of Trarza |  | 1886–1902 | 38,000 | no CShapes unit, French West Africa (colony, France) | supplement africa |
-| 40 | Sultanate of Damagaram |  | 1886–1899 | 37,000 | no CShapes unit, French West Africa (colony, France), Northern Nigeria (protectorate, United Kingdom) | supplement africa |
-| 41 | Buganda |  | 1886–1894 | 36,000 | no CShapes unit, Kenya (protectorate, United Kingdom), Uganda (protectorate, United Kingdom) | supplement africa |
-| 42 | Kingdom of Champasak | Q403369 | 1886–1894 | 36,000 | Thailand, Laos (colony, France), Vietnam (Annam/Cochin China/Tonkin) | Cliopatria |
-| 43 | Kingdom of Benin |  | 1886–1897 | 35,000 | Oil Rivers Protectorate (protectorate, United Kingdom), Lagos (colony, United Kingdom), no CShapes unit | supplement africa |
-| 44 | Kingdom of Wogodogo (Mossi) |  | 1886–1896 | 32,000 | no CShapes unit, French West Africa (colony, France) | supplement africa |
-| 45 | Kingdom of Kazembe |  | 1886–1894 | 31,000 | no CShapes unit, Zimbabwe (Rhodesia) (colony, United Kingdom), Congo, Democratic Republic of (Zaire) (colony, Belgium) | supplement africa |
-| 46 | Sultanate of Jambi | Q1679856 | 1886–1904 | 27,000 | Indonesia (colony, Netherlands) | Cliopatria |
-| 47 | Bunyoro (Bunyoro-Kitara) |  | 1886–1899 | 27,000 | no CShapes unit, Uganda (protectorate, United Kingdom), Kenya (protectorate, United Kingdom) | supplement africa |
-| 48 | Kingdom of Rwanda |  | 1886–1897 | 27,000 | Tanzania (Tanganyika) (colony, Germany (Prussia)), no CShapes unit, Congo, Democratic Republic of (Zaire) (colony, Belgium) | supplement africa |
-| 49 | Kingdom of Dahomey |  | 1886–1894 | 26,000 | no CShapes unit, German Togoland (colony, Germany (Prussia)) | supplement africa |
-| 50 | Kingdom of Hawaï'i | Q156418 | 1886–1892 | 26,000 | no CShapes unit | Cliopatria |
-| 51 | Provisional Government of Hawaii |  | 1893 | 26,000 | no CShapes unit | Cliopatria |
-| 52 | Republic of Hawai'i | Q1057542 | 1894–1897 | 26,000 | no CShapes unit | Cliopatria |
-| 53 | Kuba Kingdom |  | 1886–1900 | 25,000 | Congo, Democratic Republic of (Zaire) (colony, Belgium) | supplement africa |
-| 54 | Zululand | Q13558877 | 1886 | 25,000 | no CShapes unit, Transvaal, Natal (colony, United Kingdom) | Cliopatria |
-| 55 | Kingdom of Dagbon |  | 1886–1896 | 25,000 | no CShapes unit | supplement africa |
-| 56 | Kong Empire |  | 1886–1897 | 24,000 | no CShapes unit, Cote D'Ivoire (colony, France), Cote D'Ivoire (protectorate, France) | supplement africa |
-| 57 | Kingdom of Burundi |  | 1886–1899 | 23,000 | Tanzania (Tanganyika) (colony, Germany (Prussia)), no CShapes unit, Congo, Democratic Republic of (Zaire) (colony, Belgium) | supplement africa |
-| 58 | Emirate of Brakna |  | 1886–1903 | 22,000 | no CShapes unit, French West Africa (colony, France) | supplement africa |
-| 59 | Sultanate of Aussa |  | 1886–1895 | 22,000 | no CShapes unit, Djibouti (colony, France) | supplement africa |
-| 60 | Warsangali Sultanate |  | 1886 | 20,000 | British Somaliland (Somaliland Republic) (colony, United Kingdom), no CShapes unit | supplement africa |
-| 61 | Kingdom of Jolof |  | 1886–1890 | 19,000 | Senegal (colony, France) | supplement africa |
-| 62 | Saloum |  | 1886–1891 | 16,000 | Senegal (colony, France) | supplement africa |
-| 63 | New Hebrides | Q752431 | 1890–1982 | 16,000 | no CShapes unit | Cliopatria |
-| 64 | Kasanje Kingdom |  | 1886–1911 | 15,000 | Angola (colony, Portugal), no CShapes unit | supplement africa |
-| 65 | Sultanate of Terengganu | Q5769444 | 1886–1904 | 15,000 | Thailand, no CShapes unit, Federated Malay States (colony, United Kingdom) | Cliopatria |
-| 66 | Yatenga |  | 1886–1895 | 12,000 | no CShapes unit, French West Africa (colony, France) | supplement africa |
-| 67 | Ankole (Nkore) |  | 1886–1899 | 12,000 | Uganda (protectorate, United Kingdom), no CShapes unit, Kenya (protectorate, United Kingdom) | supplement africa |
-| 68 | Dendi Kingdom |  | 1886–1898 | 11,000 | no CShapes unit, French West Africa (colony, France), Benin (colony, France) | supplement africa |
-| 69 | Nieuwe Republiek | Q552157 | 1886–1889 | 10,000 | no CShapes unit, Transvaal | Cliopatria |
-| 70 | Sultanate of Kedah | Q1317579 | 1886–1909 | 10,000 | Thailand, Unfederated Malay States (protectorate, United Kingdom) | Cliopatria |
-| 71 | Kingdom of Kaffa |  | 1886–1897 | 10,000 | no CShapes unit, Ethiopia | supplement africa |
-| 72 | Republic of the Rif | Q37102 | 1922–1925 | 8,800 | Spanish Morocco (protectorate, Spain) | Cliopatria |
-| 73 | Kelantan | Q185944 | 1886–1904 | 8,500 | Thailand | Cliopatria |
-| 74 | Geledi Sultanate |  | 1886–1889 | 7,700 | no CShapes unit | supplement africa |
-| 75 | Mahra Sultanate (Socotra) |  | 1886 | 7,500 | no CShapes unit | supplement me |
-| 76 | Kingdom of Sikkim |  | 1949–1974 | 7,500 | India, Nepal | supplement sikkim-protectorate |
-| 77 | Sultanate of Bima | Q2817348 | 1886–1889 | 6,900 | Indonesia (colony, Netherlands), no CShapes unit | Cliopatria |
-| 78 | Palestinians | Q201190 | 1948 | 6,600 | West Bank (occupied, Jordan), Jordan | Cliopatria |
-| 79 | Karagwe |  | 1886–1890 | 6,200 | no CShapes unit | supplement africa |
-| 80 | Cretan State | Q72785 | 1898–1907 | 5,100 | Turkey (Ottoman Empire) | Cliopatria |
-| 81 | Turkish Republic of Northern Cyprus | Q23681 | 1976–1991 | 5,000 | no CShapes unit, Cyprus | Cliopatria |
-| 82 | Negeri Sembilan | Q213893 | 1886–1894 | 3,900 | no CShapes unit, Straits Settlements (colony, United Kingdom) | Cliopatria |
-| 83 | Baol |  | 1886–1894 | 3,700 | Senegal (colony, France) | supplement africa |
-| 84 | Saar Protectorate |  | 1947–1956 | 3,500 | German Federal Republic, German Federal Republic (occupied, United States of America), France | supplement eu-west |
-| 85 | Limmu-Ennarea |  | 1886–1891 | 3,100 | no CShapes unit | supplement africa |
-| 86 | Kingdom of Sine |  | 1886–1891 | 3,000 | Senegal (colony, France), no CShapes unit | supplement africa |
-| 87 | Bali | Q3125978 | 1886–1907 | 2,300 | Indonesia (colony, Netherlands) | Cliopatria |
-| 88 | Free Territory of Trieste |  | 1947–1954 | 1,600 | Yugoslavia, no CShapes unit, Italy/Sardinia | supplement eu-west |
-| 89 | Kedah-Perlis District | Q213467 | 1886–1910 | 1,500 | no CShapes unit | Cliopatria |
-| 90 | Kingdom of Gomma |  | 1886 | 1,500 | no CShapes unit | supplement africa |
-| 91 | Kingdom of Gera |  | 1886–1887 | 800 | no CShapes unit | supplement africa |
-| 92 | Tangier International Zone | Q3497642 | 1912–1957 | 600 | Spanish Morocco (protectorate, Spain), Morocco, no CShapes unit | Cliopatria |
+| 5 | Netherlands New Guinea |  | 1950–1962 | 451,000 | West Irian (Dutch New Guinea) (colony, Netherlands), no CShapes unit, Indonesia | Cliopatria |
+| 6 | Kingdom of Hejaz | Q956357 | 1916–1925 | 438,000 | no CShapes unit, Turkey (Ottoman Empire), Jordan (occupied, United Kingdom) | Cliopatria |
+| 7 | Khanate of Khiva | Q491106 | 1918–1919 | 385,000 | Russia (Soviet Union), Khiva (protectorate, Russia (Soviet Union)), Bokhara (protectorate, Russia (Soviet Union)) | Cliopatria |
+| 8 | Wadai Empire | Q1132786 | 1886–1910 | 279,000 | no CShapes unit, Chad (occupied, France), Congo (colony, France) | Cliopatria |
+| 9 | East Turkestan Republic | Q840601 | 1945–1949 | 271,000 | China, Russia (Soviet Union), Mongolia | Cliopatria |
+| 10 | Bornu Empire | Q1139762 | 1886–1894 | 229,000 | no CShapes unit, Kamerun (colony, Germany (Prussia)) | Cliopatria |
+| 11 | Toucouleur Empire |  | 1886–1890 | 221,000 | no CShapes unit | supplement africa |
+| 12 | Emirate of Bukhara | Q746558 | 1918–1919 | 219,000 | Bokhara (protectorate, Russia (Soviet Union)), Russia (Soviet Union), Khiva (protectorate, Russia (Soviet Union)) | Cliopatria |
+| 13 | Hyderabad State | Q1240096 | 1947 | 217,000 | India (colony, United Kingdom) | Cliopatria |
+| 14 | Lunda Empire |  | 1886–1887 | 207,000 | no CShapes unit, Congo, Democratic Republic of (Zaire) (colony, Belgium) | supplement africa |
+| 15 | Gaza Empire |  | 1886–1895 | 193,000 | Mozambique (colony, Portugal), no CShapes unit, Zimbabwe (Rhodesia) (colony, United Kingdom) | supplement africa |
+| 16 | Kashmir and Jammu | Q2571484 | 1947 | 183,000 | India (colony, United Kingdom), Tibet, Afghanistan | Cliopatria |
+| 17 | Ashanti Empire | Q722071 | 1886–1897 | 153,000 | Ghana (colony, United Kingdom), no CShapes unit, Cote D'Ivoire (protectorate, France) | Cliopatria |
+| 18 | Republic of Uryankhay | Q56282578 | 1912–1913 | 149,000 | China, Russia (Soviet Union) | Cliopatria |
+| 19 | Kingdom of Luang Phrabang | Q190165 | 1886–1894 | 148,000 | Thailand, Vietnam (Annam/Cochin China/Tonkin), Laos (colony, France) | Cliopatria |
+| 20 | Luba Empire |  | 1886–1889 | 142,000 | Congo, Democratic Republic of (Zaire) (colony, Belgium) | supplement africa |
+| 21 | Sultanate of Hobyo | Q862404 | 1886–1894 | 139,000 | no CShapes unit, Italian Somaliland (colony, Italy/Sardinia) | Cliopatria |
+| 22 | Lozi Kingdom (Barotseland) |  | 1886–1899 | 128,000 | Zimbabwe (Rhodesia) (colony, United Kingdom), no CShapes unit, Angola (colony, Portugal) | supplement africa |
+| 23 | Kingdom of Sarawak | Q1658411 | 1886–1894, 1946 | 127,000 | Sarawak (protectorate, United Kingdom), no CShapes unit, Sarawak (colony, United Kingdom) | Cliopatria |
+| 24 | Samorian State (Wassoulou Empire) |  | 1886–1898 | 127,000 | no CShapes unit, Cote D'Ivoire (colony, France), Cote D'Ivoire (protectorate, France) | supplement africa |
+| 25 | Mthwakazi (Ndebele kingdom) |  | 1886–1893 | 113,000 | Zimbabwe (Rhodesia) (colony, United Kingdom), no CShapes unit, Botswana (protectorate, United Kingdom) | supplement africa |
+| 26 | Imamate of Oman | Q2342282 | 1913–1919 | 105,000 | Oman, no CShapes unit | Cliopatria |
+| 27 | Sultanate of Agadez |  | 1886–1899 | 101,000 | no CShapes unit, French West Africa (colony, France) | supplement africa |
+| 28 | Asir | Q15728206 | 1917–1923 | 97,000 | no CShapes unit, Turkey (Ottoman Empire), Yemen (Arab Republic of Yemen) | Cliopatria |
+| 29 | Independent State of Croatia | Q153128 | 1941–1944 | 95,000 | Yugoslavia | Cliopatria |
+| 30 | Majeerteen Sultanate | Q2257830 | 1886–1889 | 93,000 | no CShapes unit, British Somaliland (Somaliland Republic) (colony, United Kingdom) | Cliopatria |
+| 31 | Kingdom of Kongo | Q796583 | 1886–1889 | 76,000 | Angola (colony, Portugal), no CShapes unit | Cliopatria |
+| 32 | Kingdom of Baguirmi |  | 1886–1897 | 74,000 | no CShapes unit | supplement africa |
+| 33 | Cuban Nationalists | Q11256 | 1895–1899 | 57,000 | Cuba (colony, Spain), Cuba (occupied, United States of America), no CShapes unit | Cliopatria |
+| 34 | Imamate of Futa Jallon |  | 1886–1896 | 49,000 | no CShapes unit, Guinea (colony, France) | supplement africa |
+| 35 | Mahra Sultanate |  | 1886 | 49,000 | no CShapes unit | supplement me |
+| 36 | Pahang Sultanate | Q30592233 | 1886–1889 | 45,000 | no CShapes unit, Pahang (colony, United Kingdom), Thailand | Cliopatria |
+| 37 | Kénédougou Kingdom |  | 1886–1898 | 45,000 | no CShapes unit, French West Africa (colony, France) | supplement africa |
+| 38 | Sultanate of Aceh | Q1061057 | 1886–1903 | 42,000 | Indonesia (colony, Netherlands), no CShapes unit | Cliopatria |
+| 39 | Slovak Republic |  | 1939–1945 | 38,000 | Czechoslovakia, Hungary, Poland | supplement eu-east |
+| 40 | Emirate of Trarza |  | 1886–1902 | 38,000 | no CShapes unit, French West Africa (colony, France) | supplement africa |
+| 41 | Sultanate of Damagaram |  | 1886–1899 | 37,000 | no CShapes unit, French West Africa (colony, France), Northern Nigeria (protectorate, United Kingdom) | supplement africa |
+| 42 | Buganda |  | 1886–1894 | 36,000 | no CShapes unit, Kenya (protectorate, United Kingdom), Uganda (protectorate, United Kingdom) | supplement africa |
+| 43 | Kingdom of Champasak | Q403369 | 1886–1894 | 36,000 | Thailand, Laos (colony, France), Vietnam (Annam/Cochin China/Tonkin) | Cliopatria |
+| 44 | Kingdom of Benin |  | 1886–1897 | 35,000 | Oil Rivers Protectorate (protectorate, United Kingdom), Lagos (colony, United Kingdom), no CShapes unit | supplement africa |
+| 45 | Kingdom of Wogodogo (Mossi) |  | 1886–1896 | 32,000 | no CShapes unit, French West Africa (colony, France) | supplement africa |
+| 46 | Kingdom of Kazembe |  | 1886–1894 | 31,000 | no CShapes unit, Zimbabwe (Rhodesia) (colony, United Kingdom), Congo, Democratic Republic of (Zaire) (colony, Belgium) | supplement africa |
+| 47 | Sultanate of Jambi | Q1679856 | 1886–1904 | 27,000 | Indonesia (colony, Netherlands) | Cliopatria |
+| 48 | Bunyoro (Bunyoro-Kitara) |  | 1886–1899 | 27,000 | no CShapes unit, Uganda (protectorate, United Kingdom), Kenya (protectorate, United Kingdom) | supplement africa |
+| 49 | Kingdom of Rwanda |  | 1886–1897 | 27,000 | Tanzania (Tanganyika) (colony, Germany (Prussia)), no CShapes unit, Congo, Democratic Republic of (Zaire) (colony, Belgium) | supplement africa |
+| 50 | Kingdom of Dahomey |  | 1886–1894 | 26,000 | no CShapes unit, German Togoland (colony, Germany (Prussia)) | supplement africa |
+| 51 | Kingdom of Hawaï'i | Q156418 | 1886–1892 | 26,000 | no CShapes unit | Cliopatria |
+| 52 | Provisional Government of Hawaii |  | 1893 | 26,000 | no CShapes unit | Cliopatria |
+| 53 | Republic of Hawai'i | Q1057542 | 1894–1897 | 26,000 | no CShapes unit | Cliopatria |
+| 54 | Kuba Kingdom |  | 1886–1900 | 25,000 | Congo, Democratic Republic of (Zaire) (colony, Belgium) | supplement africa |
+| 55 | Zululand | Q13558877 | 1886 | 25,000 | no CShapes unit, Transvaal, Natal (colony, United Kingdom) | Cliopatria |
+| 56 | Kingdom of Dagbon |  | 1886–1896 | 25,000 | no CShapes unit | supplement africa |
+| 57 | Kong Empire |  | 1886–1897 | 24,000 | no CShapes unit, Cote D'Ivoire (colony, France), Cote D'Ivoire (protectorate, France) | supplement africa |
+| 58 | Kingdom of Burundi |  | 1886–1899 | 23,000 | Tanzania (Tanganyika) (colony, Germany (Prussia)), no CShapes unit, Congo, Democratic Republic of (Zaire) (colony, Belgium) | supplement africa |
+| 59 | Emirate of Brakna |  | 1886–1903 | 22,000 | no CShapes unit, French West Africa (colony, France) | supplement africa |
+| 60 | Sultanate of Aussa |  | 1886–1895 | 22,000 | no CShapes unit, Djibouti (colony, France) | supplement africa |
+| 61 | Warsangali Sultanate |  | 1886 | 20,000 | British Somaliland (Somaliland Republic) (colony, United Kingdom), no CShapes unit | supplement africa |
+| 62 | Kingdom of Jolof |  | 1886–1890 | 19,000 | Senegal (colony, France) | supplement africa |
+| 63 | Saloum |  | 1886–1891 | 16,000 | Senegal (colony, France) | supplement africa |
+| 64 | New Hebrides | Q752431 | 1890–1982 | 16,000 | no CShapes unit | Cliopatria |
+| 65 | Kasanje Kingdom |  | 1886–1911 | 15,000 | Angola (colony, Portugal), no CShapes unit | supplement africa |
+| 66 | Sultanate of Terengganu | Q5769444 | 1886–1904 | 15,000 | Thailand, no CShapes unit, Federated Malay States (colony, United Kingdom) | Cliopatria |
+| 67 | Yatenga |  | 1886–1895 | 12,000 | no CShapes unit, French West Africa (colony, France) | supplement africa |
+| 68 | Ankole (Nkore) |  | 1886–1899 | 12,000 | Uganda (protectorate, United Kingdom), no CShapes unit, Kenya (protectorate, United Kingdom) | supplement africa |
+| 69 | Dendi Kingdom |  | 1886–1898 | 11,000 | no CShapes unit, French West Africa (colony, France), Benin (colony, France) | supplement africa |
+| 70 | Nieuwe Republiek | Q552157 | 1886–1889 | 10,000 | no CShapes unit, Transvaal | Cliopatria |
+| 71 | Sultanate of Kedah | Q1317579 | 1886–1909 | 10,000 | Thailand, Unfederated Malay States (protectorate, United Kingdom) | Cliopatria |
+| 72 | Kingdom of Kaffa |  | 1886–1897 | 10,000 | no CShapes unit, Ethiopia | supplement africa |
+| 73 | Republic of the Rif | Q37102 | 1922–1925 | 8,800 | Spanish Morocco (protectorate, Spain) | Cliopatria |
+| 74 | Kelantan | Q185944 | 1886–1904 | 8,500 | Thailand | Cliopatria |
+| 75 | Geledi Sultanate |  | 1886–1889 | 7,700 | no CShapes unit | supplement africa |
+| 76 | Mahra Sultanate (Socotra) |  | 1886 | 7,500 | no CShapes unit | supplement me |
+| 77 | Kingdom of Sikkim |  | 1949–1974 | 7,500 | India, Nepal | supplement sikkim-protectorate |
+| 78 | Sultanate of Bima | Q2817348 | 1886–1889 | 6,900 | Indonesia (colony, Netherlands), no CShapes unit | Cliopatria |
+| 79 | Palestinians | Q201190 | 1948 | 6,600 | West Bank (occupied, Jordan), Jordan | Cliopatria |
+| 80 | Karagwe |  | 1886–1890 | 6,200 | no CShapes unit | supplement africa |
+| 81 | Cretan State | Q72785 | 1898–1907 | 5,100 | Turkey (Ottoman Empire) | Cliopatria |
+| 82 | Turkish Republic of Northern Cyprus | Q23681 | 1976–1991 | 5,000 | no CShapes unit, Cyprus | Cliopatria |
+| 83 | Negeri Sembilan | Q213893 | 1886–1894 | 3,900 | no CShapes unit, Straits Settlements (colony, United Kingdom) | Cliopatria |
+| 84 | Baol |  | 1886–1894 | 3,700 | Senegal (colony, France) | supplement africa |
+| 85 | Saar Protectorate |  | 1947–1956 | 3,500 | German Federal Republic, German Federal Republic (occupied, United States of America), France | supplement eu-west |
+| 86 | Limmu-Ennarea |  | 1886–1891 | 3,100 | no CShapes unit | supplement africa |
+| 87 | Kingdom of Sine |  | 1886–1891 | 3,000 | Senegal (colony, France), no CShapes unit | supplement africa |
+| 88 | Bali | Q3125978 | 1886–1907 | 2,300 | Indonesia (colony, Netherlands) | Cliopatria |
+| 89 | Free Territory of Trieste |  | 1947–1954 | 1,600 | Yugoslavia, no CShapes unit, Italy/Sardinia | supplement eu-west |
+| 90 | Kedah-Perlis District | Q213467 | 1886–1910 | 1,500 | no CShapes unit | Cliopatria |
+| 91 | Kingdom of Gomma |  | 1886 | 1,500 | no CShapes unit | supplement africa |
+| 92 | Kingdom of Gera |  | 1886–1887 | 800 | no CShapes unit | supplement africa |
+| 93 | Tangier International Zone | Q3497642 | 1912–1957 | 600 | Spanish Morocco (protectorate, Spain), Morocco, no CShapes unit | Cliopatria |
 
 ### GW states the atlas never draws as a state (1886–1991)
 
@@ -382,7 +383,7 @@ Share of the realm's area (summed over the years it is drawn) that CShapes gives
 | 21 | Nazi Germany | Germany (Prussia) (255) | 33% | 1934–1944 | 3,289,000 |
 | 22 | Kingdom of Bhutan | Bhutan (760) | 36% | 1886–1991 | 73,000 |
 | 23 | Sultanate of Brunei | Brunei (835) | 39% | 1886–1889, 1984–1991 | 12,000 |
-| 24 | Empire of Japan | Japan (740) | 42% | 1886–1945 | 7,052,000 |
+| 24 | Empire of Japan | Japan (740) | 41% | 1886–1945 | 7,052,000 |
 
 ## Limits
 

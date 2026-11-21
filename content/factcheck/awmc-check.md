@@ -1,6 +1,6 @@
 # Ancient border cross-check against the Ancient World Mapping Center (AWMC)
 
-Written by `tools/check_awmc.py` on 2026-11-13. Read-only: nothing in the atlas was changed.
+Written by `tools/check_awmc.py` on 2026-11-21. Read-only: nothing in the atlas was changed.
 
 The Ancient World Mapping Center at the University of North Carolina publishes the vector layers behind its maps, drawn from the *Barrington Atlas of the Greek and Roman World* (Princeton, 2000). Its `political_shading` folder has ten layers: four Roman extents and province sets, the senatorial provinces, and the empires of Persia, Alexander, the Hasmoneans and Herod. They are small-scale map shading, not a dated border database: none carries a date or a name, so the year each stands for is inferred below, and their edges follow natural lines (deserts, rivers) at map scale.
 
