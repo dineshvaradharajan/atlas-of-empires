@@ -4563,16 +4563,22 @@ function setupSearch() {
 }
 
 // ---------------------------------------------------------------- UI wiring
-// The home view. Phones: the world filling the screen above the card. Desktop: the lived-in world fitted into the
-// part of the map the card leaves free, so no continent sits under the card; edge to edge when there is no card.
+// The home view. Phones: the world filling the screen above the card. Desktop: the lived-in world as tall as the map
+// area, starting right of the card so no continent sits under it; edge to edge when there is no card.
 function homeT() {
   const fill = S.homeT || d3.zoomIdentity;
   if (phone() || !S.homeB || !S.width) return fill;
   const f = freeBox();
   if (!f.l) return fill;
-  const [[x0, y0], [x1, y1]] = S.homeB, pad = 8;
-  const k = Math.min(fill.k, (f.r - f.l - 2 * pad) / (x1 - x0), (f.b - f.t - 2 * pad) / (y1 - y0));
-  return d3.zoomIdentity.translate((f.l + f.r) / 2 - (k * (x0 + x1)) / 2, (f.t + f.b) / 2 - (k * (y0 + y1)) / 2).scale(k);
+  // The world fills the height between the bar and the dock. Alaska's west coast starts just right of the card; what
+  // does not fit runs off the right edge (the far Pacific: eastern Australia, New Zealand) unless the window is wide.
+  const [[, y0], [x1, y1]] = S.homeB, pad = 8;
+  const xa = Math.min(projection([-168.1, 65.6])[0], projection([-166.2, 60.4])[0]); // Cape Prince of Wales, Nunivak
+  const xb = Math.max(projection([153.6, -28.6])[0], projection([145.8, 43.4])[0]); // eastern Australia, Hokkaido: keep on screen
+  const k = Math.min(fill.k, (f.b - f.t - 2 * pad) / (y1 - y0), (S.width - pad - f.l - pad) / (xb - xa));
+  let tx = f.l + pad - k * xa;
+  if (tx + k * x1 < f.r) tx = (f.l + f.r) / 2 - (k * (xa + x1)) / 2; // room to spare: centre it beside the card
+  return d3.zoomIdentity.translate(tx, (f.t + f.b) / 2 - (k * (y0 + y1)) / 2).scale(k);
 }
 const wholeWorld = () => { if (S.t.k > homeT().k * 1.05) d3.select(canvas).transition().duration(600).call(S.zoom.transform, homeT()); }; // lists show the whole world
 function leaveStories() { S.yearSheet = false; stopPlay(); S.tstory = null; if (S.war) exitWar(); if (S.journey) exitJourney(); S.moment = null; S.site = null; hidePop(); }
