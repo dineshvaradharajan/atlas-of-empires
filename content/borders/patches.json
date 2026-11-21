@@ -11769,6 +11769,1068 @@
      "url": "https://en.wikipedia.org/wiki/Buddhism_in_the_Maldives"
     }
    ]
+  },
+  {
+   "id": "island-peoples-2",
+   "note": "More islands the border data and the base map leave blank before a state or colony took them, drawn as the peoples who lived there (shown as peoples by the corrections layer). Each ends where the border data's first state or colony on the island begins.",
+   "ops": [
+    {
+     "op": "ne",
+     "a3": "CUB",
+     "name": "Taíno chiefdoms",
+     "years": [
+      1500,
+      1515
+     ],
+     "wiki": "Taíno"
+    },
+    {
+     "op": "add_parts",
+     "realm": "Taíno chiefdoms",
+     "years": [
+      1500,
+      1506
+     ],
+     "ne": "HTI"
+    },
+    {
+     "op": "add_parts",
+     "realm": "Taíno chiefdoms",
+     "years": [
+      1500,
+      1506
+     ],
+     "ne": "DOM"
+    },
+    {
+     "op": "add_parts",
+     "realm": "Taíno chiefdoms",
+     "years": [
+      1500,
+      1511
+     ],
+     "ne": "JAM"
+    },
+    {
+     "op": "add_parts",
+     "realm": "Taíno chiefdoms",
+     "years": [
+      1500,
+      1511
+     ],
+     "ne": "PRI"
+    },
+    {
+     "op": "ne",
+     "a3": "DMA",
+     "name": "Kalinago (Island Carib) chiefdoms",
+     "years": [
+      1500,
+      1714
+     ],
+     "wiki": "Kalinago"
+    },
+    {
+     "op": "add_parts",
+     "realm": "Kalinago (Island Carib) chiefdoms",
+     "years": [
+      1500,
+      1714
+     ],
+     "ne": "VCT"
+    },
+    {
+     "op": "add_parts",
+     "realm": "Kalinago (Island Carib) chiefdoms",
+     "years": [
+      1500,
+      1635
+     ],
+     "ne": "FRA",
+     "box": [
+      -61.9,
+      15.8,
+      -61.0,
+      16.6
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Kalinago (Island Carib) chiefdoms",
+     "years": [
+      1500,
+      1635
+     ],
+     "ne": "FRA",
+     "box": [
+      -61.3,
+      14.3,
+      -60.8,
+      14.9
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Kalinago (Island Carib) chiefdoms",
+     "years": [
+      1500,
+      1644
+     ],
+     "ne": "LCA"
+    },
+    {
+     "op": "add_parts",
+     "realm": "Kalinago (Island Carib) chiefdoms",
+     "years": [
+      1500,
+      1652
+     ],
+     "ne": "GRD"
+    },
+    {
+     "op": "add_parts",
+     "realm": "Kalinago (Island Carib) chiefdoms",
+     "years": [
+      1500,
+      1631
+     ],
+     "ne": "ATG"
+    },
+    {
+     "op": "add_parts",
+     "realm": "Kalinago (Island Carib) chiefdoms",
+     "years": [
+      1500,
+      1622
+     ],
+     "ne": "KNA"
+    },
+    {
+     "op": "add_parts",
+     "realm": "Kalinago (Island Carib) chiefdoms",
+     "years": [
+      1500,
+      1631
+     ],
+     "ne": "MSR"
+    },
+    {
+     "op": "add_parts",
+     "realm": "Kalinago (Island Carib) chiefdoms",
+     "years": [
+      1500,
+      1628
+     ],
+     "ne": "TTO",
+     "box": [
+      -60.9,
+      11.0,
+      -60.4,
+      11.4
+     ]
+    },
+    {
+     "op": "ne",
+     "a3": "TTO",
+     "name": "Trinidad peoples",
+     "years": [
+      1500,
+      1533
+     ],
+     "wiki": "History of Trinidad and Tobago",
+     "box": [
+      -62.0,
+      9.9,
+      -60.8,
+      10.9
+     ]
+    },
+    {
+     "op": "ne",
+     "a3": "ABW",
+     "name": "Caquetío chiefdoms",
+     "years": [
+      1500,
+      1528
+     ],
+     "wiki": "Caquetio people"
+    },
+    {
+     "op": "add_parts",
+     "realm": "Caquetío chiefdoms",
+     "years": [
+      1500,
+      1528
+     ],
+     "ne": "CUW"
+    },
+    {
+     "op": "add_parts",
+     "realm": "Caquetío chiefdoms",
+     "years": [
+      1500,
+      1528
+     ],
+     "ne": "NLD",
+     "box": [
+      -68.5,
+      12.0,
+      -68.1,
+      12.4
+     ]
+    },
+    {
+     "op": "ne",
+     "a3": "TCA",
+     "name": "Lucayan chiefdoms (Turks and Caicos)",
+     "years": [
+      800,
+      1520
+     ],
+     "wiki": "Lucayan people"
+    },
+    {
+     "op": "ne",
+     "a3": "CAN",
+     "name": "Mi'kmaq people",
+     "years": [
+      1000,
+      1720
+     ],
+     "wiki": "Mi'kmaq",
+     "box": [
+      -64.5,
+      45.9,
+      -61.9,
+      47.1
+     ]
+    },
+    {
+     "op": "ne",
+     "a3": "GRL",
+     "name": "Kalaallit (Greenland Inuit)",
+     "years": [
+      1530,
+      1743
+     ],
+     "wiki": "Greenlandic Inuit"
+    },
+    {
+     "op": "ne",
+     "a3": "TWN",
+     "name": "Formosan peoples",
+     "years": [
+      1530,
+      1682
+     ],
+     "wiki": "Taiwanese indigenous peoples",
+     "box": [
+      119.9,
+      21.8,
+      122.1,
+      25.4
+     ]
+    },
+    {
+     "op": "ne",
+     "a3": "RUS",
+     "name": "Ainu and Nivkh peoples (Sakhalin)",
+     "years": [
+      1715,
+      1856
+     ],
+     "wiki": "Sakhalin",
+     "box": [
+      141.5,
+      45.8,
+      144.8,
+      54.5
+     ]
+    },
+    {
+     "op": "ne",
+     "a3": "CAN",
+     "name": "Peoples of Vancouver Island",
+     "years": [
+      1700,
+      1847
+     ],
+     "wiki": "Vancouver Island",
+     "box": [
+      -128.5,
+      48.2,
+      -123.0,
+      50.95
+     ]
+    },
+    {
+     "op": "ne",
+     "a3": "USA",
+     "name": "Kauaʻi chiefdoms",
+     "years": [
+      1100,
+      1810
+     ],
+     "wiki": "Kauai",
+     "box": [
+      -160.6,
+      21.6,
+      -159.2,
+      22.4
+     ]
+    },
+    {
+     "op": "ne",
+     "a3": "TUV",
+     "name": "Tuvaluan chiefdoms",
+     "years": [
+      1300,
+      1891
+     ],
+     "wiki": "History of Tuvalu"
+    },
+    {
+     "op": "ne",
+     "a3": "KIR",
+     "name": "Banaban people",
+     "years": [
+      0,
+      1899
+     ],
+     "wiki": "Banaba Island",
+     "box": [
+      169.4,
+      -1.0,
+      169.7,
+      -0.7
+     ]
+    },
+    {
+     "op": "ne",
+     "a3": "FJI",
+     "name": "Rotuman chiefdoms",
+     "years": [
+      0,
+      1880
+     ],
+     "wiki": "Rotuma",
+     "box": [
+      176.9,
+      -12.6,
+      177.2,
+      -12.4
+     ]
+    },
+    {
+     "op": "ne",
+     "a3": "PNG",
+     "name": "Peoples of the Bismarck Archipelago and Bougainville",
+     "years": [
+      -3400,
+      1884
+     ],
+     "wiki": "Bismarck Archipelago",
+     "box": [
+      146.5,
+      -7.0,
+      156.0,
+      -1.0
+     ]
+    },
+    {
+     "op": "ne",
+     "a3": "IDN",
+     "name": "Bandanese chiefdoms",
+     "years": [
+      1000,
+      1620
+     ],
+     "wiki": "Banda Islands",
+     "box": [
+      129.6,
+      -4.75,
+      130.1,
+      -4.4
+     ]
+    },
+    {
+     "op": "ne",
+     "a3": "GNB",
+     "name": "Bijago people",
+     "years": [
+      1450,
+      1878
+     ],
+     "wiki": "Bijago people",
+     "box": [
+      -16.9,
+      10.5,
+      -15.4,
+      11.7
+     ]
+    },
+    {
+     "op": "ne",
+     "a3": "IDN",
+     "name": "Nias chiefdoms",
+     "years": [
+      1000,
+      1611
+     ],
+     "wiki": "Nias",
+     "box": [
+      96.9,
+      0.4,
+      98.0,
+      1.6
+     ]
+    },
+    {
+     "op": "ne",
+     "a3": "IDN",
+     "name": "Nias chiefdoms",
+     "years": [
+      1640,
+      1855
+     ],
+     "wiki": "Nias",
+     "box": [
+      96.9,
+      0.4,
+      98.0,
+      1.6
+     ]
+    },
+    {
+     "op": "ne",
+     "a3": "IDN",
+     "name": "Mentawai peoples",
+     "years": [
+      1000,
+      1611
+     ],
+     "wiki": "Mentawai people",
+     "box": [
+      98.4,
+      -3.5,
+      100.6,
+      -0.8
+     ]
+    },
+    {
+     "op": "ne",
+     "a3": "IDN",
+     "name": "Mentawai peoples",
+     "years": [
+      1640,
+      1855
+     ],
+     "wiki": "Mentawai people",
+     "box": [
+      98.4,
+      -3.5,
+      100.6,
+      -0.8
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Indigenous peoples of the Caribbean",
+     "url": "https://en.wikipedia.org/wiki/Indigenous_peoples_of_the_Caribbean"
+    },
+    {
+     "title": "Wikipedia: Austronesian peoples",
+     "url": "https://en.wikipedia.org/wiki/Austronesian_peoples"
+    }
+   ]
+  },
+  {
+   "id": "island-ryukyu-1521",
+   "note": "The border data draws Okinawa and the Ryukyu Islands inside Maynila (Manila) from 1521 to 1599 and ends the Ryukyu Kingdom in 1520. The kingdom ruled the islands, Amami included, until the Satsuma invasion of 1609 (and remained a vassal kingdom until 1879). The kingdom's 1520 outline is kept to 1599, where the data's Tokugawa rows begin, and the Amami Islands, which it held from 1466, are added.",
+   "ops": [
+    {
+     "op": "drop_parts",
+     "realm": "Maynila",
+     "years": [
+      1521,
+      1599
+     ],
+     "box": [
+      122.9,
+      23.9,
+      131.5,
+      28.9
+     ]
+    },
+    {
+     "op": "copy",
+     "realm": "Ryukyu Kingdom",
+     "year": 1520,
+     "years": [
+      1521,
+      1599
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Ryukyu Kingdom",
+     "years": [
+      1466,
+      1599
+     ],
+     "ne": "JPN",
+     "box": [
+      128.9,
+      27.0,
+      130.0,
+      28.6
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Ryukyu Kingdom",
+     "url": "https://en.wikipedia.org/wiki/Ryukyu_Kingdom"
+    },
+    {
+     "title": "Wikipedia: Invasion of Ryukyu",
+     "url": "https://en.wikipedia.org/wiki/Invasion_of_Ryukyu"
+    }
+   ]
+  },
+  {
+   "id": "island-lombok",
+   "note": "Lombok is blank in 1519-1608 and 1683-1894. After Majapahit it was ruled by Sasak kingdoms (Selaparang and others) under shifting Balinese and Makassarese influence; from the 1740s the Balinese of Karangasem ruled it from Cakranegara until the Dutch conquest of 1894.",
+   "ops": [
+    {
+     "op": "ne",
+     "a3": "IDN",
+     "box": [
+      115.8,
+      -9.1,
+      116.8,
+      -8.1
+     ],
+     "name": "Sasak kingdoms",
+     "years": [
+      1519,
+      1608
+     ],
+     "wiki": "Sasak people"
+    },
+    {
+     "op": "ne",
+     "a3": "IDN",
+     "box": [
+      115.8,
+      -9.1,
+      116.8,
+      -8.1
+     ],
+     "name": "Sasak kingdoms",
+     "years": [
+      1683,
+      1739
+     ]
+    },
+    {
+     "op": "ne",
+     "a3": "IDN",
+     "box": [
+      115.8,
+      -9.1,
+      116.8,
+      -8.1
+     ],
+     "name": "Balinese kingdom of Lombok",
+     "years": [
+      1740,
+      1894
+     ],
+     "wiki": "Lombok"
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Lombok",
+     "url": "https://en.wikipedia.org/wiki/Lombok"
+    },
+    {
+     "title": "Wikipedia: Dutch intervention in Lombok and Karangasem",
+     "url": "https://en.wikipedia.org/wiki/Dutch_intervention_in_Lombok_and_Karangasem"
+    }
+   ]
+  },
+  {
+   "id": "island-red-sea-arabian-sea",
+   "note": "The Dahlak Archipelago, the Farasan Islands and Masirah are blank for centuries. They followed the nearby coast: the Dahlak islands Massawa (Ottoman from 1557, Egyptian from 1866, Italian from 1885), the Farasan islands the Tihama coast, and Masirah the rulers of Oman.",
+   "ops": [
+    {
+     "op": "add_parts",
+     "realm": "Ottoman Empire",
+     "years": [
+      1557,
+      1865
+     ],
+     "ne": "ERI",
+     "box": [
+      39.5,
+      15.3,
+      40.8,
+      16.4
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Khedivate of Egypt",
+     "years": [
+      1866,
+      1884
+     ],
+     "ne": "ERI",
+     "box": [
+      39.5,
+      15.3,
+      40.8,
+      16.4
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Kingdom of Italy",
+     "years": [
+      1885,
+      1889
+     ],
+     "ne": "ERI",
+     "box": [
+      39.5,
+      15.3,
+      40.8,
+      16.4
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Rasulid Dynasty",
+     "years": [
+      1450,
+      1458
+     ],
+     "ne": "SAU",
+     "box": [
+      41.4,
+      16.4,
+      42.3,
+      17.0
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Tahirid Sultanate",
+     "years": [
+      1459,
+      1515
+     ],
+     "ne": "SAU",
+     "box": [
+      41.4,
+      16.4,
+      42.3,
+      17.0
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Mamluk Sultanate",
+     "years": [
+      1516,
+      1518
+     ],
+     "ne": "SAU",
+     "box": [
+      41.4,
+      16.4,
+      42.3,
+      17.0
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Ottoman Empire",
+     "years": [
+      1519,
+      1795
+     ],
+     "ne": "SAU",
+     "box": [
+      41.4,
+      16.4,
+      42.3,
+      17.0
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Emirate of Diriyah",
+     "years": [
+      1796,
+      1814
+     ],
+     "ne": "SAU",
+     "box": [
+      41.4,
+      16.4,
+      42.3,
+      17.0
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Imamate of Yemen",
+     "years": [
+      1815,
+      1833
+     ],
+     "ne": "SAU",
+     "box": [
+      41.4,
+      16.4,
+      42.3,
+      17.0
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Imamate of Yemen",
+     "years": [
+      1834,
+      1841
+     ],
+     "ne": "SAU",
+     "box": [
+      41.4,
+      16.4,
+      42.3,
+      17.0
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Imamate of Yemen",
+     "years": [
+      1842,
+      1872
+     ],
+     "ne": "SAU",
+     "box": [
+      41.4,
+      16.4,
+      42.3,
+      17.0
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Ottoman Empire",
+     "years": [
+      1873,
+      1876
+     ],
+     "ne": "SAU",
+     "box": [
+      41.4,
+      16.4,
+      42.3,
+      17.0
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Mahdids",
+     "years": [
+      1450,
+      1506
+     ],
+     "ne": "OMN",
+     "box": [
+      58.5,
+      20.1,
+      59.0,
+      20.8
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Kingdom of Portugal",
+     "years": [
+      1507,
+      1551
+     ],
+     "ne": "OMN",
+     "box": [
+      58.5,
+      20.1,
+      59.0,
+      20.8
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Kingdom of Portugal",
+     "years": [
+      1552,
+      1555
+     ],
+     "ne": "OMN",
+     "box": [
+      58.5,
+      20.1,
+      59.0,
+      20.8
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Kingdom of Portugal",
+     "years": [
+      1556,
+      1581
+     ],
+     "ne": "OMN",
+     "box": [
+      58.5,
+      20.1,
+      59.0,
+      20.8
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Iberian Union",
+     "years": [
+      1582,
+      1625
+     ],
+     "ne": "OMN",
+     "box": [
+      58.5,
+      20.1,
+      59.0,
+      20.8
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Iberian Union",
+     "years": [
+      1626,
+      1639
+     ],
+     "ne": "OMN",
+     "box": [
+      58.5,
+      20.1,
+      59.0,
+      20.8
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Kingdom of Portugal",
+     "years": [
+      1640,
+      1705
+     ],
+     "ne": "OMN",
+     "box": [
+      58.5,
+      20.1,
+      59.0,
+      20.8
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Yarubid dynasty",
+     "years": [
+      1706,
+      1740
+     ],
+     "ne": "OMN",
+     "box": [
+      58.5,
+      20.1,
+      59.0,
+      20.8
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Afsharid Iran",
+     "years": [
+      1741,
+      1743
+     ],
+     "ne": "OMN",
+     "box": [
+      58.5,
+      20.1,
+      59.0,
+      20.8
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Afsharid Iran",
+     "years": [
+      1744,
+      1747
+     ],
+     "ne": "OMN",
+     "box": [
+      58.5,
+      20.1,
+      59.0,
+      20.8
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Sultanate of Oman",
+     "years": [
+      1748,
+      1810
+     ],
+     "ne": "OMN",
+     "box": [
+      58.5,
+      20.1,
+      59.0,
+      20.8
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Emirate of Diriyah",
+     "years": [
+      1811,
+      1811
+     ],
+     "ne": "OMN",
+     "box": [
+      58.5,
+      20.1,
+      59.0,
+      20.8
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Sultanate of Oman",
+     "years": [
+      1812,
+      1899
+     ],
+     "ne": "OMN",
+     "box": [
+      58.5,
+      20.1,
+      59.0,
+      20.8
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Sultanate of Muscat and Oman",
+     "years": [
+      1900,
+      1912
+     ],
+     "ne": "OMN",
+     "box": [
+      58.5,
+      20.1,
+      59.0,
+      20.8
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Imamate of Oman",
+     "years": [
+      1913,
+      1919
+     ],
+     "ne": "OMN",
+     "box": [
+      58.5,
+      20.1,
+      59.0,
+      20.8
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Sultanate of Muscat and Oman",
+     "years": [
+      1920,
+      1946
+     ],
+     "ne": "OMN",
+     "box": [
+      58.5,
+      20.1,
+      59.0,
+      20.8
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Sultanate of Muscat and Oman",
+     "years": [
+      1956,
+      1969
+     ],
+     "ne": "OMN",
+     "box": [
+      58.5,
+      20.1,
+      59.0,
+      20.8
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Sultanate of Oman",
+     "years": [
+      1970,
+      1991
+     ],
+     "ne": "OMN",
+     "box": [
+      58.5,
+      20.1,
+      59.0,
+      20.8
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Dahlak Archipelago",
+     "url": "https://en.wikipedia.org/wiki/Dahlak_Archipelago"
+    },
+    {
+     "title": "Wikipedia: Farasan Islands",
+     "url": "https://en.wikipedia.org/wiki/Farasan_Islands"
+    },
+    {
+     "title": "Wikipedia: Masirah Island",
+     "url": "https://en.wikipedia.org/wiki/Masirah_Island"
+    }
+   ]
   }
  ]
 }

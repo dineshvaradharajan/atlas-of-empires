@@ -1539,36 +1539,136 @@
           "url": "https://en.wikipedia.org/wiki/Japanese_occupation_of_the_Philippines"
         }
       ],
-      "log": "reference check (refcheck-01.json)",
-      "crop": [
+      "log": "reference check (refcheck-01.json); crops replaced by cuts so Guam, the Marianas, American Samoa, the Trust Territory, the western Aleutians and the Canal Zone stay drawn (island coverage)",
+      "cut": [
         {
           "from": 1942,
           "to": 1944,
           "box": [
-            -180,
-            -20,
-            -60,
-            72
+            -75,
+            59,
+            -10,
+            85
+          ]
+        },
+        {
+          "from": 1942,
+          "to": 1944,
+          "box": [
+            116,
+            4,
+            127,
+            21.5
+          ]
+        },
+        {
+          "from": 1942,
+          "to": 1943,
+          "box": [
+            144,
+            13,
+            146.5,
+            21
+          ]
+        },
+        {
+          "from": 1942,
+          "to": 1944,
+          "box": [
+            166.4,
+            19.1,
+            166.9,
+            19.5
+          ]
+        },
+        {
+          "from": 1942,
+          "to": 1943,
+          "box": [
+            172,
+            51.5,
+            178,
+            53.3
+          ]
+        },
+        {
+          "from": 1942,
+          "to": 1944,
+          "box": [
+            130,
+            0,
+            164,
+            11
+          ]
+        },
+        {
+          "from": 1942,
+          "to": 1943,
+          "box": [
+            160,
+            4,
+            173,
+            15
+          ]
+        },
+        {
+          "from": 1953,
+          "to": 1991,
+          "box": [
+            102,
+            8,
+            110,
+            17.5
           ]
         },
         {
           "from": 1953,
           "to": 1972,
           "box": [
-            -180,
-            17.6,
-            129.4,
-            72
+            129.6,
+            30,
+            146,
+            46
+          ]
+        },
+        {
+          "from": 1953,
+          "to": 1972,
+          "box": [
+            129.1,
+            34.0,
+            129.55,
+            34.75
+          ]
+        },
+        {
+          "from": 1954,
+          "to": 1972,
+          "box": [
+            128.9,
+            27.8,
+            130,
+            28.7
           ]
         },
         {
           "from": 1973,
           "to": 1991,
           "box": [
-            -180,
-            -20,
-            -60,
-            72
+            126.5,
+            24,
+            129,
+            27.5
+          ]
+        },
+        {
+          "from": 1973,
+          "to": 1991,
+          "box": [
+            13,
+            52.3,
+            13.8,
+            52.8
           ]
         }
       ]
@@ -10677,6 +10777,379 @@
         }
       ],
       "log": "island coverage (patches.json island-peoples)"
+    },
+    "Taíno chiefdoms": {
+      "asPeople": [
+        {
+          "from": 1500,
+          "to": 1515,
+          "name": "Taíno chiefdoms"
+        }
+      ],
+      "note": "The Taíno lived in chiefdoms (cacicazgos) across Cuba, Hispaniola, Jamaica and Puerto Rico. Spain conquered Hispaniola by 1504, Puerto Rico and Jamaica in 1508-09 and Cuba in 1511-15; war, forced labour and disease destroyed most of the population within a generation.",
+      "sources": [
+        {
+          "title": "Wikipedia: Taíno",
+          "url": "https://en.wikipedia.org/wiki/Taíno"
+        },
+        {
+          "title": "Wikipedia: Cacique",
+          "url": "https://en.wikipedia.org/wiki/Cacique"
+        }
+      ],
+      "log": "island coverage (patches.json island-peoples-2)"
+    },
+    "Kalinago (Island Carib) chiefdoms": {
+      "asPeople": [
+        {
+          "from": 1500,
+          "to": 1714,
+          "name": "Kalinago (Island Carib) chiefdoms"
+        }
+      ],
+      "note": "The Kalinago held the Lesser Antilles against Spain. The French and English settled St Kitts, Guadeloupe, Martinique and the other islands from the 1620s-50s; Dominica and St Vincent stayed in Kalinago hands until the 18th century.",
+      "sources": [
+        {
+          "title": "Wikipedia: Kalinago",
+          "url": "https://en.wikipedia.org/wiki/Kalinago"
+        },
+        {
+          "title": "Wikipedia: Island Caribs",
+          "url": "https://en.wikipedia.org/wiki/Island_Caribs"
+        }
+      ],
+      "log": "island coverage (patches.json island-peoples-2)"
+    },
+    "Trinidad peoples": {
+      "asPeople": [
+        {
+          "from": 1500,
+          "to": 1533,
+          "name": "Trinidad peoples"
+        }
+      ],
+      "note": "Trinidad was home to Arawak-speaking and Carib-speaking peoples when Columbus sighted it in 1498; Spain began to settle it in the 16th century.",
+      "sources": [
+        {
+          "title": "Wikipedia: History of Trinidad and Tobago",
+          "url": "https://en.wikipedia.org/wiki/History_of_Trinidad_and_Tobago"
+        }
+      ],
+      "log": "island coverage (patches.json island-peoples-2)"
+    },
+    "Caquetío chiefdoms": {
+      "asPeople": [
+        {
+          "from": 1500,
+          "to": 1528,
+          "name": "Caquetío chiefdoms"
+        }
+      ],
+      "note": "The Caquetío, an Arawak people of the Venezuelan coast, lived on Aruba, Curaçao and Bonaire. Spain declared them 'useless islands' in 1513 and deported many of their people; the Dutch took the islands in 1634-36.",
+      "sources": [
+        {
+          "title": "Wikipedia: Caquetio people",
+          "url": "https://en.wikipedia.org/wiki/Caquetio_people"
+        }
+      ],
+      "log": "island coverage (patches.json island-peoples-2)"
+    },
+    "Lucayan chiefdoms (Turks and Caicos)": {
+      "asPeople": [
+        {
+          "from": 800,
+          "to": 1520,
+          "name": "Lucayan chiefdoms (Turks and Caicos)"
+        }
+      ],
+      "note": "The Lucayans, a Taíno people, also lived on the Turks and Caicos Islands until Spanish slave raids emptied the islands by about 1520.",
+      "sources": [
+        {
+          "title": "Wikipedia: Lucayan people",
+          "url": "https://en.wikipedia.org/wiki/Lucayan_people"
+        },
+        {
+          "title": "Wikipedia: Turks and Caicos Islands",
+          "url": "https://en.wikipedia.org/wiki/Turks_and_Caicos_Islands"
+        }
+      ],
+      "log": "island coverage (patches.json island-peoples-2)"
+    },
+    "Mi'kmaq people": {
+      "asPeople": [
+        {
+          "from": 1000,
+          "to": 1720,
+          "name": "Mi'kmaq people"
+        }
+      ],
+      "note": "Prince Edward Island (Epekwitk) was part of Mi'kma'ki, the country of the Mi'kmaq, until the French founded Port-la-Joye in 1720. Dates approximate.",
+      "sources": [
+        {
+          "title": "Wikipedia: Mi'kmaq",
+          "url": "https://en.wikipedia.org/wiki/Mi'kmaq"
+        },
+        {
+          "title": "Wikipedia: Prince Edward Island",
+          "url": "https://en.wikipedia.org/wiki/Prince_Edward_Island"
+        }
+      ],
+      "log": "island coverage (patches.json island-peoples-2)"
+    },
+    "Kalaallit (Greenland Inuit)": {
+      "asPeople": [
+        {
+          "from": 1530,
+          "to": 1743,
+          "name": "Kalaallit (Greenland Inuit)"
+        }
+      ],
+      "note": "After the Norse settlements died out in the 15th century, Greenland's coasts were held by the Inuit (Kalaallit), descendants of the Thule people, until Danish-Norwegian colonisation spread from Godthåb (Nuuk), founded in 1728.",
+      "sources": [
+        {
+          "title": "Wikipedia: Greenlandic Inuit",
+          "url": "https://en.wikipedia.org/wiki/Greenlandic_Inuit"
+        },
+        {
+          "title": "Wikipedia: Thule people",
+          "url": "https://en.wikipedia.org/wiki/Thule_people"
+        }
+      ],
+      "log": "island coverage (patches.json island-peoples-2)"
+    },
+    "Formosan peoples": {
+      "asPeople": [
+        {
+          "from": 1530,
+          "to": 1682,
+          "name": "Formosan peoples"
+        }
+      ],
+      "note": "Taiwan was home to Austronesian peoples (the Siraya, Atayal, Paiwan and many others) before the Dutch (1624), the Spanish in the north (1626-42) and Koxinga's Kingdom of Tungning (1662-83) took parts of it; the Qing annexed the west in 1683, but the mountains stayed in indigenous hands into the 20th century.",
+      "sources": [
+        {
+          "title": "Wikipedia: Taiwanese indigenous peoples",
+          "url": "https://en.wikipedia.org/wiki/Taiwanese_indigenous_peoples"
+        }
+      ],
+      "log": "island coverage (patches.json island-peoples-2)"
+    },
+    "Ainu and Nivkh peoples (Sakhalin)": {
+      "asPeople": [
+        {
+          "from": 1715,
+          "to": 1856,
+          "name": "Ainu and Nivkh peoples (Sakhalin)"
+        }
+      ],
+      "note": "Sakhalin was home to the Ainu in the south and the Nivkh and Orok in the north, paying tribute at times to the Qing and trading with Japan's Matsumae domain, until Russia and Japan divided the island in the 1850s-70s.",
+      "sources": [
+        {
+          "title": "Wikipedia: Sakhalin",
+          "url": "https://en.wikipedia.org/wiki/Sakhalin"
+        },
+        {
+          "title": "Wikipedia: Nivkh people",
+          "url": "https://en.wikipedia.org/wiki/Nivkh_people"
+        },
+        {
+          "title": "Wikipedia: Ainu people",
+          "url": "https://en.wikipedia.org/wiki/Ainu_people"
+        }
+      ],
+      "log": "island coverage (patches.json island-peoples-2)"
+    },
+    "Peoples of Vancouver Island": {
+      "asPeople": [
+        {
+          "from": 1700,
+          "to": 1847,
+          "name": "Peoples of Vancouver Island"
+        }
+      ],
+      "note": "Vancouver Island was home to the Nuu-chah-nulth, Kwakwaka'wakw and Coast Salish peoples until Britain made it a colony in 1849.",
+      "sources": [
+        {
+          "title": "Wikipedia: Vancouver Island",
+          "url": "https://en.wikipedia.org/wiki/Vancouver_Island"
+        },
+        {
+          "title": "Wikipedia: Nuu-chah-nulth",
+          "url": "https://en.wikipedia.org/wiki/Nuu-chah-nulth"
+        }
+      ],
+      "log": "island coverage (patches.json island-peoples-2)"
+    },
+    "Kauaʻi chiefdoms": {
+      "asPeople": [
+        {
+          "from": 1100,
+          "to": 1810,
+          "name": "Kauaʻi chiefdoms"
+        }
+      ],
+      "note": "Kauaʻi and Niʻihau, settled by Polynesians, stayed outside Kamehameha's kingdom under their own ruling chiefs until Kaumualiʻi submitted in 1810.",
+      "sources": [
+        {
+          "title": "Wikipedia: Kauai",
+          "url": "https://en.wikipedia.org/wiki/Kauai"
+        },
+        {
+          "title": "Wikipedia: Kaumualiʻi",
+          "url": "https://en.wikipedia.org/wiki/Kaumualiʻi"
+        }
+      ],
+      "log": "island coverage (patches.json island-peoples-2)"
+    },
+    "Tuvaluan chiefdoms": {
+      "asPeople": [
+        {
+          "from": 1300,
+          "to": 1891,
+          "name": "Tuvaluan chiefdoms"
+        }
+      ],
+      "note": "Tuvalu was settled by Polynesians, by tradition from Samoa and Tonga; each atoll had its own chiefs (aliki) until the British protectorate of 1892. Dates approximate.",
+      "sources": [
+        {
+          "title": "Wikipedia: History of Tuvalu",
+          "url": "https://en.wikipedia.org/wiki/History_of_Tuvalu"
+        }
+      ],
+      "log": "island coverage (patches.json island-peoples-2)"
+    },
+    "Banaban people": {
+      "asPeople": [
+        {
+          "from": 0,
+          "to": 1899,
+          "name": "Banaban people"
+        }
+      ],
+      "note": "Banaba (Ocean Island) was home to the Banabans until Britain annexed it for its phosphate in 1900. Dates approximate.",
+      "sources": [
+        {
+          "title": "Wikipedia: Banaba Island",
+          "url": "https://en.wikipedia.org/wiki/Banaba_Island"
+        }
+      ],
+      "log": "island coverage (patches.json island-peoples-2)"
+    },
+    "Rotuman chiefdoms": {
+      "asPeople": [
+        {
+          "from": 0,
+          "to": 1880,
+          "name": "Rotuman chiefdoms"
+        }
+      ],
+      "note": "Rotuma, a Polynesian island, was divided among its own districts and chiefs until it was ceded to Britain in 1881. Dates approximate.",
+      "sources": [
+        {
+          "title": "Wikipedia: Rotuma",
+          "url": "https://en.wikipedia.org/wiki/Rotuma"
+        }
+      ],
+      "log": "island coverage (patches.json island-peoples-2)"
+    },
+    "Peoples of the Bismarck Archipelago and Bougainville": {
+      "asPeople": [
+        {
+          "from": -3400,
+          "to": 1884,
+          "name": "Peoples of the Bismarck Archipelago and Bougainville"
+        }
+      ],
+      "note": "New Ireland, New Britain, Manus and Bougainville were settled at least 30,000 years ago and later became the homeland of the Lapita culture. Their many small societies lived independently until the German protectorate of 1884-86.",
+      "sources": [
+        {
+          "title": "Wikipedia: Bismarck Archipelago",
+          "url": "https://en.wikipedia.org/wiki/Bismarck_Archipelago"
+        },
+        {
+          "title": "Wikipedia: Bougainville Island",
+          "url": "https://en.wikipedia.org/wiki/Bougainville_Island"
+        }
+      ],
+      "log": "island coverage (patches.json island-peoples-2)"
+    },
+    "Bandanese chiefdoms": {
+      "asPeople": [
+        {
+          "from": 1000,
+          "to": 1620,
+          "name": "Bandanese chiefdoms"
+        }
+      ],
+      "note": "The Banda Islands, the world's only source of nutmeg and mace, were governed by councils of orang kaya (rich men) who traded with Javanese, Malay and Arab merchants, until the Dutch East India Company conquered them in 1621. Dates approximate.",
+      "sources": [
+        {
+          "title": "Wikipedia: Banda Islands",
+          "url": "https://en.wikipedia.org/wiki/Banda_Islands"
+        }
+      ],
+      "log": "island coverage (patches.json island-peoples-2)"
+    },
+    "Bijago people": {
+      "asPeople": [
+        {
+          "from": 1450,
+          "to": 1878,
+          "name": "Bijago people"
+        }
+      ],
+      "note": "The Bissagos Islands were home to the Bijago, who resisted Portuguese rule until 1936.",
+      "sources": [
+        {
+          "title": "Wikipedia: Bijago people",
+          "url": "https://en.wikipedia.org/wiki/Bijago_people"
+        }
+      ],
+      "log": "island coverage (patches.json island-peoples-2)"
+    },
+    "Nias chiefdoms": {
+      "asPeople": [
+        {
+          "from": 1000,
+          "to": 1611,
+          "name": "Nias chiefdoms"
+        },
+        {
+          "from": 1640,
+          "to": 1855,
+          "name": "Nias chiefdoms"
+        }
+      ],
+      "note": "Nias was divided among chiefdoms known for megaliths and stone-jumping, outside the Sumatran sultanates' control except for Aceh's influence in the early 17th century, until Dutch rule spread from the 1850s. Dates approximate.",
+      "sources": [
+        {
+          "title": "Wikipedia: Nias",
+          "url": "https://en.wikipedia.org/wiki/Nias"
+        }
+      ],
+      "log": "island coverage (patches.json island-peoples-2)"
+    },
+    "Mentawai peoples": {
+      "asPeople": [
+        {
+          "from": 1000,
+          "to": 1611,
+          "name": "Mentawai peoples"
+        },
+        {
+          "from": 1640,
+          "to": 1855,
+          "name": "Mentawai peoples"
+        }
+      ],
+      "note": "The Mentawai Islands were home to the Mentawai, who lived in clan longhouses (uma) outside any state until Dutch rule in the 19th century. Dates approximate.",
+      "sources": [
+        {
+          "title": "Wikipedia: Mentawai people",
+          "url": "https://en.wikipedia.org/wiki/Mentawai_people"
+        }
+      ],
+      "log": "island coverage (patches.json island-peoples-2)"
     }
   },
   "base": {

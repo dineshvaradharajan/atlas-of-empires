@@ -358,6 +358,7 @@ async function init() {
   pickToday();
   S.restoring = true;
   await applyHash(parseHash(), true);
+  if (!phone() && !S.sel && !S.war && !S.journey && !S.moment && !S.site && S.t.k <= (S.homeT?.k || 1) * 1.01) d3.select(canvas).call(S.zoom.transform, homeT()); // open on the world beside the card
   setTimeout(() => (S.restoring = false), 0);
   $("#loading").classList.add("done");
   setTimeout(() => $("#loading")?.remove(), 400);
@@ -1241,24 +1242,26 @@ function setupMap() {
       const b = geoPath.bounds({ type: "MultiPoint", coordinates: edge }), bw = Math.max(1, b[1][0] - b[0][0]), bh = Math.max(1, b[1][1] - b[0][1]);
       const k = Math.max(1, Math.min(3, Math.max(r.width / bw, r.height / bh)));
       S.homeT = k > 1.01 ? d3.zoomIdentity.translate(r.width / 2 - (k * (b[0][0] + b[1][0])) / 2, r.height / 2 - (k * (b[0][1] + b[1][1])) / 2).scale(k) : null;
+      S.homeB = b; // homeT() fits these bounds beside the card
     }
     sphere2d = new Path2D(geoPath({ type: "Sphere" }));
     grat2d = new Path2D(geoPath(d3.geoGraticule10()));
     pathCache = new WeakMap(); hitCache = new WeakMap(); coastProj = new WeakMap(); S.detail = null;
     if (S.base) { buildLandClip(); warmHits(S.items); } // shapes in screen units follow the new fit
     if (S.ghost) S.ghost.paths = S.ghost.feats.map(pathOf);
-    if (keep && isFinite(keep[0]) && isFinite(keep[1]) && Math.abs(keep[1]) <= 85 && Math.abs(keep[0]) <= 180 && S.t.k > 1.01) { // only when zoomed in on a real place
+    const atHome = S.zoom && S.t.k <= (S.homeT?.k || 1) * 1.01; // showing the whole world: refit it to the new size
+    if (keep && isFinite(keep[0]) && isFinite(keep[1]) && Math.abs(keep[1]) <= 85 && Math.abs(keep[0]) <= 180 && !atHome) { // only when zoomed in on a real place
       const [x, y] = projection(keep), k = S.t.k;
       d3.select(canvas).interrupt().call(S.zoom.transform, d3.zoomIdentity.translate(S.width / 2 - k * x, S.height / 2 - k * y).scale(k));
       if (story()) flyTo(boxBounds(S.cine.chapters[S.chap].bbox), 24, 600, hudInset()); // the map area changed: re-frame the chapter
       else if (S.war && S.cine?.shots?.length) { S.shotIdx = -1; camFor(S.wt, null, true); }
-    }
+    } else if (atHome && !phone()) d3.select(canvas).interrupt().call(S.zoom.transform, homeT());
     draw();
   };
   new ResizeObserver(resize).observe(canvas);
   resize();
 
-  S.zoom = d3.zoom().scaleExtent([1, 24]).translateExtent([[-200, -200], [10000, 10000]]).clickDistance(4) // a click that moves a pixel or two is still a click (d3 swallows it by default)
+  S.zoom = d3.zoom().scaleExtent([0.4, 24]).translateExtent([[-3000, -3000], [10000, 10000]]).clickDistance(4) // a click that moves a pixel or two is still a click (d3 swallows it by default)
     .on("start", (ev) => { S.zooming = true; if (ev.sourceEvent?.type === "mousedown") canvas.classList.add("dragging"); if (ev.sourceEvent && phone()) { clearTimeout(S.moveT); document.body.classList.add("moving"); } })
     .on("zoom", (ev) => { S.t = ev.transform; if (!S.cinePlay) scheduleDraw(); }) // playback redraws every frame itself
     .on("end", () => { S.zooming = false; canvas.classList.remove("dragging"); draw(); clearTimeout(S.moveT); S.moveT = setTimeout(() => document.body.classList.remove("moving"), 1200); });
@@ -1289,7 +1292,7 @@ function setupMap() {
   for (const t of ["pointerup", "pointercancel", "pointerleave"]) canvas.addEventListener(t, holdOff);
   canvas.addEventListener("contextmenu", (ev) => { if (phone()) ev.preventDefault(); }); // the long press is ours, not the browser's menu
   d3.select(canvas).call(S.zoom).on("dblclick.zoom", null);
-  if (S.homeT) d3.select(canvas).call(S.zoom.transform, S.homeT); // phones open on the filled home view
+  if (S.homeT && phone()) d3.select(canvas).call(S.zoom.transform, S.homeT); // phones open on the filled home view (desktop: init() fits it beside the card)
 
   const local = (ev) => { const r = canvas.getBoundingClientRect(); return [ev.clientX - r.left, ev.clientY - r.top]; };
   canvas.addEventListener("mousemove", (ev) => {
@@ -1880,13 +1883,15 @@ function hitGeo(f) {
   const rec = { beginPath() {}, moveTo(x, y) { cur = [x, y]; rs.push(cur); }, lineTo(x, y) { cur.push(x, y); }, closePath() {}, arc() {} };
   geoPath.context(rec)(f); geoPath.context(null);
   let x0 = Infinity, y0 = Infinity, x1 = -Infinity, y1 = -Infinity;
-  const r = [];
+  const r = [], rb = []; // rings, and each ring's box [x0, y0, x1, y1]
   for (const a of rs) {
     if (a.length < 6) continue;
-    for (let i = 0; i < a.length; i += 2) { const x = a[i], y = a[i + 1]; if (x < x0) x0 = x; if (x > x1) x1 = x; if (y < y0) y0 = y; if (y > y1) y1 = y; }
-    r.push(Float64Array.from(a));
+    let a0 = Infinity, b0 = Infinity, a1 = -Infinity, b1 = -Infinity;
+    for (let i = 0; i < a.length; i += 2) { const x = a[i], y = a[i + 1]; if (x < a0) a0 = x; if (x > a1) a1 = x; if (y < b0) b0 = y; if (y > b1) b1 = y; }
+    if (a0 < x0) x0 = a0; if (a1 > x1) x1 = a1; if (b0 < y0) y0 = b0; if (b1 > y1) y1 = b1;
+    r.push(Float64Array.from(a)); rb.push([a0, b0, a1, b1]);
   }
-  g = { b: [x0, y0, x1, y1], r };
+  g = { b: [x0, y0, x1, y1], r, rb };
   hitCache.set(f, g);
   return g;
 }
@@ -1915,7 +1920,33 @@ function pickAt(x, y) { // index in S.items of the shape drawn at screen point (
     if (it.p.cut && it.p.cut.some((cf) => inGeo(cf, px, py))) continue;
     return i;
   }
-  return -1;
+  return pickIsland(px, py);
+}
+// A miss near a small island (a few pixels across at this zoom, e.g. Guam or Midway) takes the island nearest the
+// pointer within SNAP_PX, so islands can be clicked without zooming in. Large coasts never snap.
+const SNAP_PX = 7, SMALL_PX = 24;
+function pickIsland(px, py) {
+  const tol = SNAP_PX / S.t.k, small = SMALL_PX / S.t.k;
+  let best = -1, bestD = tol * tol;
+  for (let i = S.items.length - 1; i >= 0; i--) {
+    const it = S.items[i];
+    if (it.kind === "land" || it.p.recon) continue;
+    const g = hitGeo(it.f), b = g.b;
+    if (px < b[0] - tol || px > b[2] + tol || py < b[1] - tol || py > b[3] + tol) continue;
+    if ((it.p.crop && !inGeo(it.p.crop, px, py)) || (it.p.cut && it.p.cut.some((cf) => inGeo(cf, px, py)))) continue;
+    for (let n = 0; n < g.r.length; n++) {
+      const a = g.r[n], [x0, y0, x1, y1] = g.rb[n];
+      if (x1 - x0 > small || y1 - y0 > small) continue; // only rings small at this zoom
+      if (px < x0 - tol || px > x1 + tol || py < y0 - tol || py > y1 + tol) continue;
+      for (let k = 0, j = a.length - 2; k < a.length; j = k, k += 2) { // squared distance to each edge
+        const ax = a[j], ay = a[j + 1], dx = a[k] - ax, dy = a[k + 1] - ay, L = dx * dx + dy * dy;
+        const t = L ? Math.max(0, Math.min(1, ((px - ax) * dx + (py - ay) * dy) / L)) : 0;
+        const ex = ax + t * dx - px, ey = ay + t * dy - py, d = ex * ex + ey * ey;
+        if (d < bestD) { bestD = d; best = i; }
+      }
+    }
+  }
+  return best;
 }
 
 // The part of the map the card, the tools and the bottom bar leave free: the camera frames things inside it.
@@ -4532,7 +4563,17 @@ function setupSearch() {
 }
 
 // ---------------------------------------------------------------- UI wiring
-const homeT = () => S.homeT || d3.zoomIdentity; // the home view: the whole world on desktop, the world filling the screen on phones
+// The home view. Phones: the world filling the screen above the card. Desktop: the lived-in world fitted into the
+// part of the map the card leaves free, so no continent sits under the card; edge to edge when there is no card.
+function homeT() {
+  const fill = S.homeT || d3.zoomIdentity;
+  if (phone() || !S.homeB || !S.width) return fill;
+  const f = freeBox();
+  if (!f.l) return fill;
+  const [[x0, y0], [x1, y1]] = S.homeB, pad = 8;
+  const k = Math.min(fill.k, (f.r - f.l - 2 * pad) / (x1 - x0), (f.b - f.t - 2 * pad) / (y1 - y0));
+  return d3.zoomIdentity.translate((f.l + f.r) / 2 - (k * (x0 + x1)) / 2, (f.t + f.b) / 2 - (k * (y0 + y1)) / 2).scale(k);
+}
 const wholeWorld = () => { if (S.t.k > homeT().k * 1.05) d3.select(canvas).transition().duration(600).call(S.zoom.transform, homeT()); }; // lists show the whole world
 function leaveStories() { S.yearSheet = false; stopPlay(); S.tstory = null; if (S.war) exitWar(); if (S.journey) exitJourney(); S.moment = null; S.site = null; hidePop(); }
 async function goToday() {
