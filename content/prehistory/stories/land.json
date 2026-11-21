@@ -1,0 +1,1198 @@
+{
+ "id": "land",
+ "title": "Life moves onto land",
+ "summary": "Between about 470 and 300 million years ago the bare continents were taken over, first by tiny plants and millipedes, then by forests, four-legged animals, flying insects and the first egg-layers on dry land. This story follows that conquest from the earliest spores to the collapse of the great coal rainforests.",
+ "from": 470,
+ "to": 300,
+ "chapters": [
+  {
+   "id": "spores-on-bare-land",
+   "title": "First spores on a bare land",
+   "ma": 470,
+   "dateLabel": "c. 470 million years ago",
+   "focus": [
+    -64.9,
+    -24.0
+   ],
+   "place": "North-west Argentina",
+   "text": "For most of Earth's history the land was bare rock, sand and mud, with no more life on it than thin films and crusts of microbes; fossils from lake beds a billion years old show such life on land. Plants grew out of green algae that lived in fresh water. The first sign of them is their spores: tiny grains with tough walls, about 470 million years old, found in rocks in Argentina and, a few million years later, in Saudi Arabia and Czechia. The plants that shed them were probably small and low, and their bodies do not turn up as fossils for another 40 million years.",
+   "species": [
+    "Cryptospores (spores of the first land plants)",
+    "Microbial crusts",
+    "Freshwater green algae"
+   ],
+   "sites": [
+    {
+     "name": "Early Middle Ordovician spore beds, Argentina",
+     "lonlat": [
+      -64.9,
+      -24.0
+     ],
+     "ma": 471,
+     "note": "A mix of five kinds of plant spores, the oldest accepted trace of land plants."
+    }
+   ],
+   "route": null,
+   "refs": [
+    "o:land-plants",
+    "o:green-algae"
+   ],
+   "imageIds": [],
+   "images": [
+    {
+     "id": "land-soil-crust-utah",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Biological_soil_crusts_near_Butler_Wash_Ruins%2C_February_2019.jpg/1920px-Biological_soil_crusts_near_Butler_Wash_Ruins%2C_February_2019.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Biological_soil_crusts_near_Butler_Wash_Ruins,_February_2019.jpg",
+     "caption": "A dark, knobbly biological soil crust on bare desert ground in Utah, a living hint of how the land may have looked before plants.",
+     "credit": "Steven Baltakatei Sandoval",
+     "license": "CC BY-SA 4.0",
+     "note": "A present-day desert crust in Utah, USA; today's crusts include organisms that did not yet exist, so Ordovician crusts were probably simpler.",
+     "width": 6000,
+     "height": 4000,
+     "type": "landscape"
+    },
+    {
+     "id": "land-cryptobiotic-soil-canyonlands",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Cryptobiotic_5675.jpg/1920px-Cryptobiotic_5675.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Cryptobiotic_5675.jpg",
+     "caption": "Clumps of dark living soil crust spread over red sand in Canyonlands National Park, Utah.",
+     "credit": "Nolabob",
+     "license": "CC0",
+     "note": "Present-day crust with modern grasses and flowers, which did not exist 470 million years ago.",
+     "width": 6000,
+     "height": 4000,
+     "type": "landscape"
+    }
+   ],
+   "evidence": "disputed",
+   "evidenceNote": "Spores with tough walls survive where soft plants rot away; the 470-million-year-old spores from Argentina are widely accepted as coming from land plants, but older spore-like fossils, some from the Cambrian, may come from algae on their way to becoming plants.",
+   "sources": [
+    {
+     "title": "Europe PMC record: Early Middle Ordovician evidence for land plants in Argentina (Rubinstein et al., New Phytologist 2010)",
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22Early%20Middle%20Ordovician%20evidence%20for%20land%20plants%20in%20Argentina%22&resultType=core&format=json&pageSize=2"
+    },
+    {
+     "title": "Wikipedia: Evolutionary history of plants",
+     "url": "https://en.wikipedia.org/wiki/Evolutionary_history_of_plants"
+    },
+    {
+     "title": "Wikipedia: Embryophyte",
+     "url": "https://en.wikipedia.org/wiki/Embryophyte"
+    },
+    {
+     "title": "Wikipedia: Cryptospore",
+     "url": "https://en.wikipedia.org/wiki/Cryptospore"
+    }
+   ]
+  },
+  {
+   "id": "cooksonia",
+   "title": "Cooksonia, the first plants with pipes",
+   "ma": 427,
+   "dateLabel": "c. 427 million years ago",
+   "focus": [
+    -7.92,
+    52.82
+   ],
+   "place": "Devilsbit Mountain, County Tipperary, Ireland",
+   "text": "Cooksonia was a plant only a few centimetres tall: a bare stalk that forked a few times, with no leaves and no roots, each branch tipped with a little capsule of spores. In at least one kind a dark strand runs up the middle of the stem, the earliest known tissue for carrying water. Water pipes like these would later let plants grow tall. Some of the oldest Cooksonia come from Ireland and Wales, where tiny zircon crystals dated in 2024 show the rocks are no older than about 426 to 427 million years; a Cooksonia from Czechia may be about 432 million years old.",
+   "species": [
+    "Cooksonia pertoni",
+    "Cooksonia barrandei",
+    "Early vascular plants"
+   ],
+   "sites": [
+    {
+     "name": "Devilsbit and Borrisnoe Mountains, County Tipperary",
+     "lonlat": [
+      -7.92,
+      52.82
+     ],
+     "ma": 426,
+     "note": "Cooksonia in Silurian rocks no older than about 426 million years."
+    },
+    {
+     "name": "Capel Horeb quarry, near Llandovery, Wales",
+     "lonlat": [
+      -3.71,
+      52.01
+     ],
+     "ma": 427,
+     "note": "Cooksonia in rocks no older than about 427 million years."
+    }
+   ],
+   "route": null,
+   "refs": [
+    "o:vascular-plants"
+   ],
+   "imageIds": [
+    "cooksonia-model"
+   ],
+   "images": [
+    {
+     "id": "land-cooksonia-pertoni-fossil",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Amgueddfa_Cymru_-_Cooksonia_pertoni_-_211800.jpeg/1920px-Amgueddfa_Cymru_-_Cooksonia_pertoni_-_211800.jpeg",
+     "page": "https://commons.wikimedia.org/wiki/File:Amgueddfa_Cymru_-_Cooksonia_pertoni_-_211800.jpeg",
+     "caption": "A fossil of Cooksonia pertoni: a slender forked stem, each branch ending in a small spore capsule, pressed into Silurian rock.",
+     "credit": "Amgueddfa Cymru – Museum Wales",
+     "license": "CC BY-SA 4.0",
+     "note": "The find spot is not given on the file page; the stem is only a few centimetres long.",
+     "width": 4000,
+     "height": 2667,
+     "type": "fossil"
+    },
+    {
+     "id": "land-cooksonia-barrandei-prague",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Cooksonia_barrandei_%28National_Museum_in_Prague%29.jpg/1920px-Cooksonia_barrandei_%28National_Museum_in_Prague%29.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Cooksonia_barrandei_(National_Museum_in_Prague).jpg",
+     "caption": "Cooksonia barrandei from Czechia, about 432 million years old, on show in the National Museum in Prague; the dark forked lines are its stems.",
+     "credit": "Skot",
+     "license": "CC BY-SA 4.0",
+     "note": "The museum label calls it the oldest land plant in the world; other finds are of similar age.",
+     "width": 6000,
+     "height": 4002,
+     "type": "fossil"
+    },
+    {
+     "id": "land-cooksonia-artists-impression",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Cooksonia_Artist%27s_Impression.png/1920px-Cooksonia_Artist%27s_Impression.png",
+     "page": "https://commons.wikimedia.org/wiki/File:Cooksonia_Artist%27s_Impression.png",
+     "caption": "An artist's impression of Cooksonia pertoni next to a ruler, showing how small the first upright land plants were, only about 6 cm tall.",
+     "credit": "Tim Bertelink",
+     "license": "CC BY-SA 4.0",
+     "note": "Colours are guessed.",
+     "width": 1972,
+     "height": 2045,
+     "type": "reconstruction"
+    }
+   ],
+   "evidence": "fossil",
+   "evidenceNote": "The plants are pressed flat in Silurian rocks, and the ages come from uranium and lead in zircon grains washed into the same beds, which give the oldest age the rock can have.",
+   "sources": [
+    {
+     "title": "Wikipedia: Cooksonia",
+     "url": "https://en.wikipedia.org/wiki/Cooksonia"
+    },
+    {
+     "title": "Geological Magazine: Detrital U-Pb ages for the first well-preserved vascular plant Cooksonia (Garza et al. 2024)",
+     "url": "https://www.cambridge.org/core/journals/geological-magazine/article/detrital-upb-ages-for-the-first-wellpreserved-vascular-plant-cooksonia-from-the-uk-and-irish-macrofossil-record/79976340870DE8948EC37DB9B46219F6"
+    },
+    {
+     "title": "University College Cork: Cooksonia",
+     "url": "http://www.ucc.ie/en/fossil-heritage/irishfossils/cooksonia/"
+    }
+   ]
+  },
+  {
+   "id": "first-land-animals",
+   "title": "Millipedes and scorpions creep ashore",
+   "ma": 425,
+   "dateLabel": "c. 425 million years ago",
+   "focus": [
+    -5.55,
+    56.4
+   ],
+   "place": "Isle of Kerrera, near Oban, Scotland",
+   "text": "Animals followed the plants onto land. Kampecaris, a small millipede from old lake beds on the Scottish island of Kerrera, about 425 million years old, is one of the oldest land animals known and probably fed on rotting plants. A younger millipede from Stonehaven, Pneumodesmus, about 414 million years old, has breathing holes along its body, so it must have breathed air. Scorpions were around even earlier: Dolichophonus, from the Pentland Hills near Edinburgh and 436 to 428 million years old, is the oldest scorpion known, though nobody can yet say whether it lived on land or in water.",
+   "species": [
+    "Kampecaris obanensis",
+    "Pneumodesmus newmani",
+    "Dolichophonus loudonensis"
+   ],
+   "sites": [
+    {
+     "name": "Kerrera, Argyll",
+     "lonlat": [
+      -5.55,
+      56.4
+     ],
+     "ma": 425,
+     "note": "Kampecaris, one of the oldest known land animals."
+    },
+    {
+     "name": "Cowie shore, near Stonehaven",
+     "lonlat": [
+      -2.2,
+      56.97
+     ],
+     "ma": 414,
+     "note": "Pneumodesmus, the oldest animal with clear air-breathing holes."
+    },
+    {
+     "name": "Gutterford Burn, Pentland Hills",
+     "lonlat": [
+      -3.3,
+      55.85
+     ],
+     "ma": 432,
+     "note": "Dolichophonus, the oldest known scorpion."
+    }
+   ],
+   "route": null,
+   "refs": [
+    "o:myriapods",
+    "o:arachnids"
+   ],
+   "imageIds": [],
+   "images": [
+    {
+     "id": "land-pneumodesmus-fossil",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Pneumodesmus_newmani.jpg/1280px-Pneumodesmus_newmani.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Pneumodesmus_newmani.jpg",
+     "caption": "The only known fossil of Pneumodesmus, a millipede from Cowie near Stonehaven, Scotland, with its body segments and legs seen under a microscope.",
+     "credit": "Xenarachne",
+     "license": "CC BY-SA 2.5",
+     "note": "The fragment is about 1 cm long. Once dated to the Silurian; zircon dating in 2017 put it at about 414 million years old.",
+     "width": 1280,
+     "height": 1024,
+     "type": "fossil"
+    },
+    {
+     "id": "land-pocock-silurian-scorpion",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Pocock%2C_The_Scottish_Silurian_Scorpion_pl._19.jpg/960px-Pocock%2C_The_Scottish_Silurian_Scorpion_pl._19.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Pocock,_The_Scottish_Silurian_Scorpion_pl._19.jpg",
+     "caption": "A 1901 drawing of the Silurian scorpion from the Pentland Hills, Scotland, now called Dolichophonus, the oldest known scorpion.",
+     "credit": "Reginald Innes Pocock",
+     "license": "Public domain",
+     "note": "Drawn by R. I. Pocock in 1901, when it was called Palaeophonus loudonensis; some details of the drawing reflect interpretations of the time.",
+     "width": 991,
+     "height": 1799,
+     "type": "fossil"
+    },
+    {
+     "id": "land-kerrera-from-oban",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Kerrera_from_Oban.jpg/1920px-Kerrera_from_Oban.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Kerrera_from_Oban.jpg",
+     "caption": "The Isle of Kerrera at sunset, seen across the bay from Oban; its old lake beds hold Kampecaris, one of the first land animals.",
+     "credit": "Prosthetic Head",
+     "license": "CC BY-SA 4.0",
+     "note": "The tower on the skyline is a 19th-century monument.",
+     "width": 2048,
+     "height": 1536,
+     "type": "landscape"
+    }
+   ],
+   "evidence": "fossil",
+   "evidenceNote": "Zircon crystals in volcanic ash give the ages of the rocks; gene-based estimates suggest millipedes began some 75 million years earlier, but no older fossils have been found.",
+   "sources": [
+    {
+     "title": "University of Texas Jackson School of Geosciences: World's oldest bug is fossil millipede from Scotland (2020)",
+     "url": "https://www.jsg.utexas.edu/news/2020/05/worlds-oldest-bug-is-fossil-millipede-from-scotland/"
+    },
+    {
+     "title": "Wikipedia: Kampecaris",
+     "url": "https://en.wikipedia.org/wiki/Kampecaris"
+    },
+    {
+     "title": "Wikipedia: Pneumodesmus",
+     "url": "https://en.wikipedia.org/wiki/Pneumodesmus"
+    },
+    {
+     "title": "PLOS ONE: A U-Pb zircon age constraint on the oldest-recorded air-breathing land animal (Suarez et al. 2017)",
+     "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0179262"
+    },
+    {
+     "title": "Wikipedia: Dolichophonus",
+     "url": "https://en.wikipedia.org/wiki/Dolichophonus"
+    }
+   ]
+  },
+  {
+   "id": "rhynie-chert",
+   "title": "A whole world frozen in stone",
+   "ma": 410,
+   "dateLabel": "c. 410 million years ago",
+   "focus": [
+    -2.84,
+    57.34
+   ],
+   "place": "Rhynie, Aberdeenshire, Scotland",
+   "text": "Near Rhynie in Scotland, hot springs rich in silica flooded a marshy plain and turned its life to stone where it stood, down to single cells. The plants, such as Rhynia and Aglaophyton, were leafless green stems, and inside them are the oldest known mycorrhizal fungi, the partner fungi that live in plant roots to this day. Mites, springtails, harvestmen and spider-like trigonotarbids lived among the stems. Towering over everything was Prototaxites, a tall trunk-like column long thought to be a giant fungus; a 2026 study argued that it was neither fungus nor plant but a lost branch of life.",
+   "species": [
+    "Rhynia gwynne-vaughanii",
+    "Aglaophyton major",
+    "Mycorrhizal fungi",
+    "Prototaxites",
+    "Rhyniella praecursor (a springtail)",
+    "Trigonotarbids"
+   ],
+   "sites": [
+    {
+     "name": "Rhynie chert, Aberdeenshire",
+     "lonlat": [
+      -2.84,
+      57.34
+     ],
+     "ma": 410,
+     "note": "A hot-spring ecosystem preserved cell by cell."
+    }
+   ],
+   "route": null,
+   "refs": [
+    "e:rhynie-chert",
+    "o:fungi",
+    "o:vascular-plants",
+    "o:arachnids"
+   ],
+   "imageIds": [],
+   "images": [
+    {
+     "id": "land-rhynie-chert-rhynia",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Rhynie_chert_with_Rhynia_1.png/1920px-Rhynie_chert_with_Rhynia_1.png",
+     "page": "https://commons.wikimedia.org/wiki/File:Rhynie_chert_with_Rhynia_1.png",
+     "caption": "A polished piece of Rhynie chert crowded with round cross-sections of Rhynia stems, turned to stone where they grew about 410 million years ago.",
+     "credit": "Peter coxhead",
+     "license": "CC BY-SA 3.0",
+     "note": "The scale bar is 1 cm.",
+     "width": 2812,
+     "height": 2277,
+     "type": "fossil"
+    },
+    {
+     "id": "land-rhynie-flora-drawing",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Rhynie_Chert_flora.jpg/1280px-Rhynie_Chert_flora.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Rhynie_Chert_flora.jpg",
+     "caption": "Drawings of six Rhynie chert plants, including Rhynia (A), Aglaophyton (B) and the leafy Asteroxylon (D), small leafless or scaly stems with spore capsules.",
+     "credit": "Falconaumanni",
+     "license": "CC BY-SA 3.0",
+     "note": "The plants are not drawn to one scale.",
+     "width": 1688,
+     "height": 1391,
+     "type": "reconstruction"
+    },
+    {
+     "id": "land-aglaophyton-chert",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Aglaophyton_kz01-2.jpg/1920px-Aglaophyton_kz01-2.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Aglaophyton_kz01-2.jpg",
+     "caption": "A slab of Rhynie chert, silicified peat with sections of Aglaophyton stems and spore capsules, the plant that holds the oldest known mycorrhizal fungi.",
+     "credit": "Krzysztof Ziarnek, Kenraiz",
+     "license": "CC BY 4.0",
+     "note": "On show in the Museo de Paleobotánica Roberto Wagner, Córdoba, Spain.",
+     "width": 4410,
+     "height": 3150,
+     "type": "fossil"
+    },
+    {
+     "id": "land-prototaxites-section",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Prototaxites_sp..jpg/1920px-Prototaxites_sp..jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Prototaxites_sp..jpg",
+     "caption": "A polished slab of a Prototaxites trunk, built of countless fine tubes, from Devonian rocks of Melville Island in Arctic Canada.",
+     "credit": "Bloopityboop",
+     "license": "CC BY-SA 4.0",
+     "note": "This specimen is from Arctic Canada, not Rhynie. What kind of living thing Prototaxites was is still argued over.",
+     "width": 2080,
+     "height": 3297,
+     "type": "fossil"
+    }
+   ],
+   "evidence": "fossil",
+   "evidenceNote": "Silica from the springs filled the cells before they could rot, so thin slices of the chert show plants, fungi and animals under the microscope; only Prototaxites' place in the tree of life is still argued over.",
+   "sources": [
+    {
+     "title": "Wikipedia: Rhynie chert",
+     "url": "https://en.wikipedia.org/wiki/Rhynie_chert"
+    },
+    {
+     "title": "University of Edinburgh: Prototaxites fossils are structurally and chemically distinct from extinct and extant Fungi (Loron et al., Science Advances 2026)",
+     "url": "https://biology.ed.ac.uk/drp/news-events/selected-publications/prototaxites-fossils"
+    },
+    {
+     "title": "UC Museum of Paleontology: The Devonian Period",
+     "url": "https://ucmp.berkeley.edu/devonian/devonian.php"
+    }
+   ]
+  },
+  {
+   "id": "first-forests",
+   "title": "The first forests rise",
+   "ma": 390,
+   "dateLabel": "c. 390 million years ago",
+   "focus": [
+    -3.47,
+    51.21
+   ],
+   "place": "Sea cliffs near Minehead, Somerset, England",
+   "text": "In 2024 scientists described fossil tree trunks, fallen branches and roots in sandstone cliffs on the Somerset coast, about 390 million years old: the oldest forest yet found. Its trees, Calamophyton, looked a little like tree ferns, with a crown of twigs on a slender trunk up to about 4 metres tall, and the branches they shed littered the forest floor. A few million years later forests at Cairo and Gilboa in New York State held Wattieza trees 8 metres or more tall and Archaeopteris, whose deep, spreading roots were much like those of modern trees. Roots broke up rock and carried carbon deeper into the soil, and as forests spread, carbon dioxide in the air fell steeply.",
+   "species": [
+    "Calamophyton",
+    "Wattieza (stumps called Eospermatopteris)",
+    "Archaeopteris"
+   ],
+   "sites": [
+    {
+     "name": "Hangman Sandstone cliffs, near Minehead",
+     "lonlat": [
+      -3.47,
+      51.21
+     ],
+     "ma": 390,
+     "note": "The oldest known fossil forest, described in 2024."
+    },
+    {
+     "name": "Cairo, New York",
+     "lonlat": [
+      -73.99,
+      42.3
+     ],
+     "ma": 386,
+     "note": "A fossil soil with the oldest known Archaeopteris roots."
+    },
+    {
+     "name": "Gilboa, New York",
+     "lonlat": [
+      -74.45,
+      42.4
+     ],
+     "ma": 385,
+     "note": "Stumps of Wattieza trees, known since the 1870s."
+    }
+   ],
+   "route": null,
+   "refs": [
+    "o:first-trees",
+    "o:ferns",
+    "e:gilboa-forest"
+   ],
+   "imageIds": [],
+   "images": [
+    {
+     "id": "land-calamophyton-drawing",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Calamophyton_reconstruccion.jpg/960px-Calamophyton_reconstruccion.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Calamophyton_reconstruccion.jpg",
+     "caption": "A drawing of Calamophyton, the tree of the 390-million-year-old Somerset forest, with a crown of twigs on a slender trunk that swells at the base.",
+     "credit": "Falconaumanni",
+     "license": "CC BY-SA 3.0",
+     "note": "An artist's drawing from fossil remains; Calamophyton trunks ranged from under a metre to about 4 metres tall.",
+     "width": 1000,
+     "height": 1500,
+     "type": "reconstruction"
+    },
+    {
+     "id": "land-wattieza-drawing",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Wattieza_reconstruccion.jpg/960px-Wattieza_reconstruccion.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Wattieza_reconstruccion.jpg",
+     "caption": "A drawing of Wattieza, the fern-like tree of the Gilboa forest, at least 8 metres tall with a crown of branches instead of leaves.",
+     "credit": "Falconaumanni",
+     "license": "CC BY-SA 3.0",
+     "note": "An approximate reconstruction from fossil remains.",
+     "width": 1000,
+     "height": 1376,
+     "type": "reconstruction"
+    },
+    {
+     "id": "land-eospermatopteris-stump",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Eospermatopteris_textilis_fossil_tree_trunk_%28Ithaca_Formation%2C_Upper_Devonian%3B_Riverside_Quarry%2C_Gilboa%2C_Schoharie_County%2C_New_York_State%2C_USA%29_%2815523316876%29.jpg/1280px-Eospermatopteris_textilis_fossil_tree_trunk_%28Ithaca_Formation%2C_Upper_Devonian%3B_Riverside_Quarry%2C_Gilboa%2C_Schoharie_County%2C_New_York_State%2C_USA%29_%2815523316876%29.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Eospermatopteris_textilis_fossil_tree_trunk_(Ithaca_Formation,_Upper_Devonian;_Riverside_Quarry,_Gilboa,_Schoharie_County,_New_York_State,_USA)_(15523316876).jpg",
+     "caption": "A fossil stump of a Wattieza tree, known as Eospermatopteris, from Riverside Quarry at Gilboa, New York, on show at the Field Museum in Chicago.",
+     "credit": "James St. John",
+     "license": "CC BY 2.0",
+     "note": null,
+     "width": 1798,
+     "height": 1902,
+     "type": "fossil"
+    },
+    {
+     "id": "land-archaeopteris-drawing",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Archaeopteris_reconstruction.jpg/1920px-Archaeopteris_reconstruction.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Archaeopteris_reconstruction.jpg",
+     "caption": "Archaeopteris, the first tree with true wood and deep roots, shown with its shoots, spore cases, spores and a section of its conifer-like wood.",
+     "credit": "Retallack",
+     "license": "CC BY-SA 4.0",
+     "note": "A scientific drawing of Archaeopteris macilenta from the Catskill Mountains of New York, a Late Devonian species.",
+     "width": 2028,
+     "height": 3384,
+     "type": "reconstruction"
+    }
+   ],
+   "evidence": "fossil",
+   "evidenceNote": "Trunks, roots and fallen branches are preserved where they grew in ancient soils, and the ages come from tiny fossil spores and the layers above and below.",
+   "sources": [
+    {
+     "title": "Natural History Museum, London: Earliest fossilised forest discovered in Somerset (2024)",
+     "url": "https://www.nhm.ac.uk/discover/news/2024/march/earliest-fossilised-forest-discovered-in-somerset.html"
+    },
+    {
+     "title": "Wikipedia: Calamophyton",
+     "url": "https://en.wikipedia.org/wiki/Calamophyton"
+    },
+    {
+     "title": "Wikipedia: Wattieza",
+     "url": "https://en.wikipedia.org/wiki/Wattieza"
+    },
+    {
+     "title": "Europe PMC record: Mid-Devonian Archaeopteris roots signal revolutionary change in earliest fossil forests (Stein et al., Current Biology 2020)",
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22Mid-Devonian%20Archaeopteris%20Roots%20Signal%20Revolutionary%20Change%20in%20Earliest%20Fossil%20Forests%22&resultType=core&format=json&pageSize=2"
+    },
+    {
+     "title": "Wikipedia: Evolutionary history of plants",
+     "url": "https://en.wikipedia.org/wiki/Evolutionary_history_of_plants"
+    }
+   ]
+  },
+  {
+   "id": "tiktaalik",
+   "title": "A fish with a neck and wrists",
+   "ma": 375,
+   "dateLabel": "c. 375 million years ago",
+   "focus": [
+    -86.0,
+    77.2
+   ],
+   "place": "Ellesmere Island, Nunavut, Canada",
+   "text": "Shallow streams in what is now Arctic Canada, then close to the equator, were home to Tiktaalik, a fish up to about 2.7 metres long. It had scales, fins and gills, but also a neck, strong bones like a wrist inside its front fins and probably simple lungs, so it could prop itself up in shallow water. Found in 2004, it shows the body of four-legged animals taking shape inside a fish. It was a cousin of the first four-legged animals rather than their ancestor: footprints in a Polish quarry, about 395 million years old, suggest that animals with legs were already walking 20 million years earlier, though some experts think fish made the marks.",
+   "species": [
+    "Tiktaalik roseae",
+    "Elpistostegalians (fish close to four-legged animals)",
+    "Zachełmie trackmakers"
+   ],
+   "sites": [
+    {
+     "name": "Fram Formation, Ellesmere Island",
+     "lonlat": [
+      -86.0,
+      77.2
+     ],
+     "ma": 375,
+     "note": "Where Tiktaalik was found in 2004."
+    },
+    {
+     "name": "Zachełmie quarry, Holy Cross Mountains, Poland",
+     "lonlat": [
+      20.7,
+      50.97
+     ],
+     "ma": 395,
+     "note": "Footprints claimed as the oldest tracks of four-legged animals."
+    }
+   ],
+   "route": null,
+   "refs": [
+    "e:tiktaalik",
+    "o:lobe-finned-fish",
+    "o:tetrapods"
+   ],
+   "imageIds": [
+    "tiktaalik-shoreline",
+    "tiktaalik-fossil"
+   ],
+   "images": [],
+   "evidence": "disputed",
+   "evidenceNote": "Tiktaalik's bones are not in doubt; what is argued over is whether the older Polish footprints were made by four-legged animals, as their finders Grzegorz Niedźwiedzki and Per Ahlberg hold, or by fish, as Spencer Lucas has argued.",
+   "sources": [
+    {
+     "title": "Wikipedia: Tiktaalik",
+     "url": "https://en.wikipedia.org/wiki/Tiktaalik"
+    },
+    {
+     "title": "Wikipedia: Zachelmie trackways",
+     "url": "https://en.wikipedia.org/wiki/Zachelmie_trackways"
+    },
+    {
+     "title": "Wikipedia: Zachełmie, Świętokrzyskie Voivodeship",
+     "url": "https://en.wikipedia.org/wiki/Zache%C5%82mie,_%C5%9Awi%C4%99tokrzyskie_Voivodeship"
+    }
+   ]
+  },
+  {
+   "id": "late-devonian-extinction",
+   "title": "Crisis in the Devonian seas",
+   "ma": 372,
+   "dateLabel": "c. 372 million years ago",
+   "focus": [
+    10.43,
+    51.82
+   ],
+   "place": "Kellwasser valley, Lower Saxony, Germany",
+   "text": "About 372 million years ago, and again about 359, the seas ran short of oxygen and black, lifeless mud settled on the sea floor. The first crisis, named after the Kellwasser valley in Germany, wiped out the great reefs built by corals and sponge-like stromatoporoids and perhaps 40 percent of sea species; the second ended the armoured placoderm fishes. One idea blames the new forests: deep roots broke up rock, rivers carried the freed nutrients to the sea, and blooms of algae used up the oxygen. Tiktaalik's kind, the fish with necks and wrists, died out, while the true four-legged animals came through.",
+   "species": [
+    "Stromatoporoids",
+    "Rugose and tabulate corals",
+    "Placoderms (armoured fish)"
+   ],
+   "sites": [
+    {
+     "name": "Kellwassertal, Harz mountains",
+     "lonlat": [
+      10.43,
+      51.82
+     ],
+     "ma": 372,
+     "note": "Dark limestone layers that name the first crisis."
+    }
+   ],
+   "route": null,
+   "refs": [
+    "e:late-devonian-extinction",
+    "o:placoderms"
+   ],
+   "imageIds": [
+    "dunkleosteus-skull"
+   ],
+   "images": [
+    {
+     "id": "land-kellwasser-valley",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Kellwasser_01.jpg/1920px-Kellwasser_01.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Kellwasser_01.jpg",
+     "caption": "The Kellwasser stream in the Harz mountains of Germany, whose valley gave its name to the first great Late Devonian extinction.",
+     "credit": "Leonhard Lenz",
+     "license": "CC BY-SA 4.0",
+     "note": null,
+     "width": 5184,
+     "height": 3888,
+     "type": "landscape"
+    },
+    {
+     "id": "land-kellwasser-limestone-kielce",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Kielce_Centrum_Geoedukacji_wapie%C5%84_Kellwasser_sprzed_372_mln_lat_2026-01-02_p.jpg/1920px-Kielce_Centrum_Geoedukacji_wapie%C5%84_Kellwasser_sprzed_372_mln_lat_2026-01-02_p.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Kielce_Centrum_Geoedukacji_wapie%C5%84_Kellwasser_sprzed_372_mln_lat_2026-01-02_p.jpg",
+     "caption": "A block of Kellwasser limestone about 372 million years old, packed with shells, on show at the Geoeducation Centre in Kielce, Poland.",
+     "credit": "Przykuta",
+     "license": "CC BY-SA 3.0",
+     "note": "Shown in Kielce, Poland; the file page does not say where the block was collected.",
+     "width": 5111,
+     "height": 3146,
+     "type": "rock"
+    }
+   ],
+   "evidence": "disputed",
+   "evidenceNote": "Black shales and the sudden loss of reef fossils show the crises happened; their cause is argued over, with nutrients from the first forests (Thomas Algeo and Stephen Scheckler), volcanic eruptions and a cooling climate all proposed.",
+   "sources": [
+    {
+     "title": "Wikipedia: Late Devonian mass extinction",
+     "url": "https://en.wikipedia.org/wiki/Late_Devonian_mass_extinction"
+    },
+    {
+     "title": "UC Museum of Paleontology: The Devonian Period",
+     "url": "https://ucmp.berkeley.edu/devonian/devonian.php"
+    }
+   ]
+  },
+  {
+   "id": "greenland-tetrapods",
+   "title": "Many-toed legs in Greenland",
+   "ma": 365,
+   "dateLabel": "c. 365 million years ago",
+   "focus": [
+    -23.17,
+    73.5
+   ],
+   "place": "Gauss Peninsula, East Greenland",
+   "text": "After the crisis four-legged animals spread. In the mountains of East Greenland, in rocks about 365 million years old, lie Acanthostega, about 60 cm long with eight webbed fingers on each hand and gills like a fish, and Ichthyostega, about 1.5 metres long with seven toes on each hind foot. Acanthostega probably spent nearly all its life in shallow, weedy water, which suggests that legs with toes first evolved for water, not for walking. Ichthyostega could drag itself over flat ground on its strong front legs, moving more like a seal than a salamander.",
+   "species": [
+    "Acanthostega gunnari",
+    "Ichthyostega"
+   ],
+   "sites": [
+    {
+     "name": "Stensiö Bjerg and Sederholm Bjerg, Gauss Peninsula",
+     "lonlat": [
+      -23.17,
+      73.5
+     ],
+     "ma": 365,
+     "note": "Britta Dal Formation beds with Acanthostega and Ichthyostega."
+    }
+   ],
+   "route": null,
+   "refs": [
+    "o:tetrapods"
+   ],
+   "imageIds": [],
+   "images": [
+    {
+     "id": "land-acanthostega-model",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Acanthostega_model.jpg/1280px-Acanthostega_model.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Acanthostega_model.jpg",
+     "caption": "A life model of Acanthostega swimming among water plants, at the State Museum of Natural History in Stuttgart, Germany.",
+     "credit": "Dr. Günter Bechly",
+     "license": "CC BY-SA 3.0",
+     "note": "The colours and skin pattern are guessed.",
+     "width": 1291,
+     "height": 894,
+     "type": "reconstruction"
+    },
+    {
+     "id": "land-ichthyostega-model",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Ichthyostega_model.jpg/960px-Ichthyostega_model.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Ichthyostega_model.jpg",
+     "caption": "A life model of Ichthyostega, about 1.5 metres long, at the State Museum of Natural History in Stuttgart, Germany.",
+     "credit": "Dr. Günter Bechly",
+     "license": "CC BY-SA 3.0",
+     "note": "Ichthyostega had seven toes on each hind foot; the model makers deliberately show only five fingers and toes. Colours are guessed.",
+     "width": 1136,
+     "height": 1000,
+     "type": "reconstruction"
+    },
+    {
+     "id": "land-ichthyostega-skull-cast",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Ichthyostega_%28cast%29_from_Greenland_at_G%C3%B6teborgs_Naturhistoriska_Museum_8582.jpg/1920px-Ichthyostega_%28cast%29_from_Greenland_at_G%C3%B6teborgs_Naturhistoriska_Museum_8582.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Ichthyostega_(cast)_from_Greenland_at_G%C3%B6teborgs_Naturhistoriska_Museum_8582.jpg",
+     "caption": "A cast of the skull roof of Ichthyostega from the Gauss Peninsula, East Greenland, with its pitted bone and eye socket, in the Gothenburg Natural History Museum.",
+     "credit": "Gunnar Creutz",
+     "license": "CC BY-SA 4.0",
+     "note": "A cast, not the original fossil.",
+     "width": 2976,
+     "height": 4323,
+     "type": "fossil"
+    }
+   ],
+   "evidence": "fossil",
+   "evidenceNote": "Skeletons were dug from Late Devonian river rocks in East Greenland on expeditions from 1931 onwards, above all by Jennifer Clack's team from 1987.",
+   "sources": [
+    {
+     "title": "Wikipedia: Acanthostega",
+     "url": "https://en.wikipedia.org/wiki/Acanthostega"
+    },
+    {
+     "title": "Wikipedia: Ichthyostega",
+     "url": "https://en.wikipedia.org/wiki/Ichthyostega"
+    },
+    {
+     "title": "Meddelelser om Grønland, Geoscience: Localities, distribution and stratigraphical context of the Late Devonian tetrapods of East Greenland (Blom, Clack & Ahlberg 2005)",
+     "url": "https://tidsskrift.dk/meddrgroenland_geosci/article/view/140286"
+    },
+    {
+     "title": "Wikipedia: Gauss Peninsula",
+     "url": "https://en.wikipedia.org/wiki/Gauss_Peninsula"
+    }
+   ]
+  },
+  {
+   "id": "first-seeds",
+   "title": "Seeds free plants from water",
+   "ma": 365,
+   "dateLabel": "c. 365 million years ago",
+   "focus": [
+    -79.85,
+    38.93
+   ],
+   "place": "Elkins, West Virginia, USA",
+   "text": "Spore plants have a weak spot: their sperm must swim through a film of water to reach the egg, which ties them to damp ground. Seed plants got round it. The oldest known seeds, about 365 million years old from West Virginia, belong to Elkinsia, whose young seeds sat in small cup-shaped cases. A seed wraps a baby plant and its food in a coat that keeps it from drying out, so it can wait for rain before it sprouts, and pollen carries the sperm through the air. Seed plants could now grow on dry slopes where spore plants failed, and their descendants dominate the land today.",
+   "species": [
+    "Elkinsia polymorpha",
+    "Runcaria (a seed forerunner)",
+    "Seed ferns"
+   ],
+   "sites": [
+    {
+     "name": "Hampshire Formation near Elkins, Randolph County",
+     "lonlat": [
+      -79.85,
+      38.93
+     ],
+     "ma": 365,
+     "note": "Young seeds of Elkinsia, the oldest known seed plant."
+    }
+   ],
+   "route": null,
+   "refs": [
+    "o:seed-plants"
+   ],
+   "imageIds": [],
+   "images": [
+    {
+     "id": "land-elkinsia-fossil",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Elkinsia_polymorpha_kz01.jpg/1920px-Elkinsia_polymorpha_kz01.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Elkinsia_polymorpha_kz01.jpg",
+     "caption": "A fossil of Elkinsia polymorpha from West Virginia, about 365 million years old, the oldest known seed plant.",
+     "credit": "Krzysztof Ziarnek, Kenraiz",
+     "license": "CC BY-SA 4.0",
+     "note": "On show in the Museo de Paleobotánica Roberto Wagner, Córdoba, Spain. The small seeds and their cup-like cases are hard to see at this size.",
+     "width": 3945,
+     "height": 2818,
+     "type": "fossil"
+    },
+    {
+     "id": "land-runcaria-drawing",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/0/04/Runcaria_megasporangium_and_cupule_drawing.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Runcaria_megasporangium_and_cupule_drawing.jpg",
+     "caption": "A drawing of Runcaria from Belgium, about 385 million years old: a spore case wrapped in a cup of lobes, an early step towards the seed.",
+     "credit": "Chiswick Chap",
+     "license": "CC BY-SA 3.0",
+     "note": "The structure is only a few millimetres long (scale bar 1 mm).",
+     "width": 458,
+     "height": 1262,
+     "type": "reconstruction"
+    }
+   ],
+   "evidence": "fossil",
+   "evidenceNote": "Seeds with their cup-like cases are preserved in Late Devonian rocks; Runcaria from Belgium, about 385 million years old, shows an earlier, not yet fully wrapped stage.",
+   "sources": [
+    {
+     "title": "UC Museum of Paleontology: Fossil record of the seed plants",
+     "url": "https://ucmp.berkeley.edu/seedplants/seedplantsfr.html"
+    },
+    {
+     "title": "Wikipedia: Seed",
+     "url": "https://en.wikipedia.org/wiki/Seed"
+    },
+    {
+     "title": "Wikipedia: Evolutionary history of plants",
+     "url": "https://en.wikipedia.org/wiki/Evolutionary_history_of_plants"
+    },
+    {
+     "title": "Wikipedia: Seed plant",
+     "url": "https://en.wikipedia.org/wiki/Spermatophyte"
+    }
+   ]
+  },
+  {
+   "id": "insects-take-flight",
+   "title": "Insects become the first flyers",
+   "ma": 325,
+   "dateLabel": "c. 325 million years ago",
+   "focus": [
+    12.33,
+    51.6
+   ],
+   "place": "Bitterfeld and Delitzsch, Saxony-Anhalt and Saxony, Germany",
+   "text": "Insects were the first animals to fly. The oldest fossils of winged insects are about 328 to 324 million years old, and they already come in several kinds, so flight probably began earlier. One of the oldest, Delitzschala from eastern Germany, had wings spanning just 2.5 cm, still showing their spots. By the end of the Carboniferous, griffinflies such as Meganeura from France had wings spanning about 70 cm, among the largest flying insects ever. A popular idea is that oxygen-rich air let them grow so big, but some recent studies doubt the link.",
+   "species": [
+    "Delitzschala bitterfeldensis",
+    "Palaeodictyoptera",
+    "Meganeura monyi (a griffinfly)"
+   ],
+   "sites": [
+    {
+     "name": "Bitterfeld and Delitzsch area",
+     "lonlat": [
+      12.33,
+      51.6
+     ],
+     "ma": 325,
+     "note": "Delitzschala, one of the oldest known winged insects."
+    },
+    {
+     "name": "Commentry coal mines, Allier, France",
+     "lonlat": [
+      2.74,
+      46.29
+     ],
+     "ma": 302,
+     "note": "The giant griffinfly Meganeura, found from 1880."
+    }
+   ],
+   "route": null,
+   "refs": [
+    "o:insects",
+    "o:winged-insects"
+   ],
+   "imageIds": [
+    "meganeura-diorama",
+    "griffinfly-fossil-arctotypus"
+   ],
+   "images": [
+    {
+     "id": "land-palaeodictyoptera-drawings",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Larvae_and_adults_of_Megasecoptera_and_Palaeodictyoptera.jpg/1920px-Larvae_and_adults_of_Megasecoptera_and_Palaeodictyoptera.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Larvae_and_adults_of_Megasecoptera_and_Palaeodictyoptera.jpg",
+     "caption": "Drawings of Late Carboniferous and Early Permian winged insects and their young, from France and Mazon Creek, many with boldly patterned wings.",
+     "credit": "Jakub Prokop and colleagues",
+     "license": "CC BY 4.0",
+     "note": "A figure from a scientific paper; these insects are somewhat younger than the very first winged insects of about 325 million years ago.",
+     "width": 3402,
+     "height": 1907,
+     "type": "reconstruction"
+    },
+    {
+     "id": "land-stenodictya-diorama",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Diorama_of_a_Pennsylanian_forest_floor_-_Stenodictya_insect_%2845556166392%29.jpg/1920px-Diorama_of_a_Pennsylanian_forest_floor_-_Stenodictya_insect_%2845556166392%29.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Diorama_of_a_Pennsylanian_forest_floor_-_Stenodictya_insect_(45556166392).jpg",
+     "caption": "A model of Stenodictya, one of the palaeodictyopteran insects of the Carboniferous, with two pairs of broad wings, in a coal-forest diorama.",
+     "credit": "James St. John",
+     "license": "CC BY 2.0",
+     "note": "Photograph of a museum diorama at the Cincinnati Museum of Natural History and Science.",
+     "width": 3008,
+     "height": 2000,
+     "type": "reconstruction"
+    }
+   ],
+   "evidence": "fossil",
+   "evidenceNote": "Wings are the toughest part of an insect and are pressed into the rock with their veins; gene-based estimates put the start of flight much earlier, near 400 million years ago, but no such fossils are known.",
+   "sources": [
+    {
+     "title": "Wikipedia: Pterygota",
+     "url": "https://en.wikipedia.org/wiki/Pterygota"
+    },
+    {
+     "title": "Wikipedia: Delitzschala",
+     "url": "https://en.wikipedia.org/wiki/Delitzschala"
+    },
+    {
+     "title": "Wikipedia: Evolution of insects",
+     "url": "https://en.wikipedia.org/wiki/Evolution_of_insects"
+    },
+    {
+     "title": "Wikipedia: Meganeura",
+     "url": "https://en.wikipedia.org/wiki/Meganeura"
+    }
+   ]
+  },
+  {
+   "id": "joggins-eggs-on-land",
+   "title": "Eggs for dry land at Joggins",
+   "ma": 315,
+   "dateLabel": "c. 315 million years ago",
+   "focus": [
+    -64.44,
+    45.69
+   ],
+   "place": "Joggins Fossil Cliffs, Nova Scotia, Canada",
+   "text": "At Joggins in Nova Scotia, sea cliffs cut through a coal forest of giant clubmoss trees up to 30 metres tall. Inside their hollow fossil stumps lie small animals that seem to have fallen in and been trapped, among them Hylonomus, a lizard-like animal about 20 to 25 cm long that probably ate millipedes and early insects. It was long called the oldest reptile. Reptiles, mammals and their kin, the amniotes, lay eggs with a shell and inner bags of fluid that keep the young from drying out, so they could breed far from water. A 2025 study placed Hylonomus just outside the amniotes, so who laid the first such eggs is an open question again.",
+   "species": [
+    "Hylonomus lyelli",
+    "Dendrerpeton",
+    "Giant clubmoss trees (lycopsids)"
+   ],
+   "sites": [
+    {
+     "name": "Joggins Fossil Cliffs, Chignecto Bay",
+     "lonlat": [
+      -64.44,
+      45.69
+     ],
+     "ma": 315,
+     "note": "Fossil tree stumps holding early four-legged animals."
+    }
+   ],
+   "route": null,
+   "refs": [
+    "e:joggins",
+    "o:amniotes",
+    "o:lycophytes",
+    "o:temnospondyls"
+   ],
+   "imageIds": [],
+   "images": [
+    {
+     "id": "land-joggins-cliffs",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Joggins_Fossil_Cliffs.jpg/1920px-Joggins_Fossil_Cliffs.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Joggins_Fossil_Cliffs.jpg",
+     "caption": "The Joggins Fossil Cliffs on the shore of Chignecto Bay, Nova Scotia, where layers of a Carboniferous coal forest are exposed.",
+     "credit": "Staka",
+     "license": "CC BY-SA 4.0",
+     "note": null,
+     "width": 2304,
+     "height": 1728,
+     "type": "landscape"
+    },
+    {
+     "id": "land-joggins-upright-lycopsid",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Lycopsid_joggins_mcr1.JPG/1920px-Lycopsid_joggins_mcr1.JPG",
+     "page": "https://commons.wikimedia.org/wiki/File:Lycopsid_joggins_mcr1.JPG",
+     "caption": "A fossil clubmoss tree trunk, probably Sigillaria, still standing upright in the Joggins cliffs where it grew, with a rock hammer for scale.",
+     "credit": "Michael C. Rygel",
+     "license": "CC BY-SA 3.0",
+     "note": "Hollow stumps like this one trapped Hylonomus and other small animals.",
+     "width": 2272,
+     "height": 1704,
+     "type": "fossil"
+    },
+    {
+     "id": "land-hylonomus-drawing",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/5/56/Hylonomus_BW.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Hylonomus_BW.jpg",
+     "caption": "Hylonomus, a lizard-like animal about 20 to 25 cm long from Joggins, long counted as the oldest known reptile.",
+     "credit": "Nobu Tamura",
+     "license": "CC BY 2.5",
+     "note": "Colours are guessed.",
+     "width": 800,
+     "height": 338,
+     "type": "reconstruction"
+    }
+   ],
+   "evidence": "disputed",
+   "evidenceNote": "Hylonomus's bones are well known, but whether it was a true amniote is argued over, and 350-million-year-old clawed footprints from Australia, claimed in 2025 as amniote tracks, may have been made by other animals.",
+   "sources": [
+    {
+     "title": "Wikipedia: Hylonomus",
+     "url": "https://en.wikipedia.org/wiki/Hylonomus"
+    },
+    {
+     "title": "Wikipedia: Joggins Formation",
+     "url": "https://en.wikipedia.org/wiki/Joggins_Formation"
+    },
+    {
+     "title": "Wikipedia: Amniote",
+     "url": "https://en.wikipedia.org/wiki/Amniote"
+    },
+    {
+     "title": "UC Museum of Paleontology: The Carboniferous Period",
+     "url": "https://ucmp.berkeley.edu/carboniferous/carboniferous.php"
+    }
+   ]
+  },
+  {
+   "id": "mazon-creek",
+   "title": "A coal-swamp shore in ironstone",
+   "ma": 309,
+   "dateLabel": "c. 309 million years ago",
+   "focus": [
+    -88.35,
+    41.32
+   ],
+   "place": "Mazon Creek, near Morris, Illinois, USA",
+   "text": "By now swamp forests of giant clubmosses, ferns, horsetails and seed ferns covered the warm lowlands, and their buried remains became the coal that gave the Carboniferous its name. At Mazon Creek in Illinois, plants and animals that washed into a muddy bay about 309 million years ago were quickly sealed inside ironstone nodules. Split open, the nodules show more than 400 kinds of plants and over 320 kinds of animals: insects, the giant millipede relative Arthropleura, early four-legged animals and the strange Tully monster. Few places show so fully what lived in and around a coal forest.",
+   "species": [
+    "Tullimonstrum gregarium (the Tully monster)",
+    "Arthropleura",
+    "Neuropteris (a seed fern)",
+    "Annularia (a giant horsetail)"
+   ],
+   "sites": [
+    {
+     "name": "Mazon Creek and the Braidwood strip mines",
+     "lonlat": [
+      -88.35,
+      41.32
+     ],
+     "ma": 309,
+     "note": "Ironstone nodules from the Francis Creek Shale."
+    }
+   ],
+   "route": null,
+   "refs": [
+    "e:mazon-creek",
+    "o:ferns",
+    "o:myriapods",
+    "o:insects"
+   ],
+   "imageIds": [
+    "coal-forest-diorama"
+   ],
+   "images": [
+    {
+     "id": "land-tullimonstrum-fossil",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Tullimonstrum_gregarium1.JPG/1920px-Tullimonstrum_gregarium1.JPG",
+     "page": "https://commons.wikimedia.org/wiki/File:Tullimonstrum_gregarium1.JPG",
+     "caption": "An ironstone nodule from Mazon Creek split in two to show both halves of a Tully monster, Tullimonstrum, in the Natural History Museum of Milan.",
+     "credit": "Ghedoghedo",
+     "license": "CC BY-SA 3.0",
+     "note": null,
+     "width": 2409,
+     "height": 1865,
+     "type": "fossil"
+    },
+    {
+     "id": "land-tullimonstrum-reconstruction",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Tullimonstrum_recon.png/1280px-Tullimonstrum_recon.png",
+     "page": "https://commons.wikimedia.org/wiki/File:Tullimonstrum_recon.png",
+     "caption": "An artist's reconstruction of the Tully monster, with eyes on a crossbar and a long snout ending in toothed jaws.",
+     "credit": "Entelognathus",
+     "license": "CC BY-SA 4.0",
+     "note": "What kind of animal Tullimonstrum was is still argued over, so its appearance is uncertain.",
+     "width": 1369,
+     "height": 862,
+     "type": "reconstruction"
+    },
+    {
+     "id": "land-neuropteris-mazon-creek",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Neuropteris_flexuosa_fossil_plant_%28Mazon_Creek_Lagerstatte%2C_Francis_Creek_Shale%2C_Middle_Pennsylvanian%3B_coal_mine_dump_pile_near_Essex%2C_northern_Illinois%2C_USA%29_%2814910119354%29.jpg/1920px-Neuropteris_flexuosa_fossil_plant_%28Mazon_Creek_Lagerstatte%2C_Francis_Creek_Shale%2C_Middle_Pennsylvanian%3B_coal_mine_dump_pile_near_Essex%2C_northern_Illinois%2C_USA%29_%2814910119354%29.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Neuropteris_flexuosa_fossil_plant_(Mazon_Creek_Lagerstatte,_Francis_Creek_Shale,_Middle_Pennsylvanian;_coal_mine_dump_pile_near_Essex,_northern_Illinois,_USA)_(14910119354).jpg",
+     "caption": "Fronds of the seed fern Neuropteris from a coal-mine spoil heap near Essex, Illinois, part of the Mazon Creek fossil beds.",
+     "credit": "James St. John",
+     "license": "CC BY 2.0",
+     "note": "On show at the Field Museum, Chicago.",
+     "width": 4000,
+     "height": 3000,
+     "type": "fossil"
+    }
+   ],
+   "evidence": "fossil",
+   "evidenceNote": "Bacteria rotting the buried bodies made the iron mineral siderite, which cast them in hard nodules, often with their soft parts.",
+   "sources": [
+    {
+     "title": "Wikipedia: Mazon Creek fossil beds",
+     "url": "https://en.wikipedia.org/wiki/Mazon_Creek_fossil_beds"
+    },
+    {
+     "title": "UC Museum of Paleontology: The Carboniferous Period",
+     "url": "https://ucmp.berkeley.edu/carboniferous/carboniferous.php"
+    }
+   ]
+  },
+  {
+   "id": "rainforest-collapse",
+   "title": "The coal rainforests break apart",
+   "ma": 305,
+   "dateLabel": "c. 305 million years ago",
+   "focus": [
+    -87.7,
+    40.05
+   ],
+   "place": "Former Riola and Vermilion Grove coal mines, near Danville, Illinois, USA",
+   "text": "In coal mines near Danville, Illinois, miners and geologists found a whole fossil forest of giant clubmosses, tree ferns, seed ferns and horsetails spread over about 1,000 hectares, drowned when the ground dropped below sea level. Not long afterwards, around 305 million years ago, a short, sharp ice age dried and cooled the tropics, and the great rainforests broke up into patches. The giant clubmoss trees almost vanished and tree ferns took over. Many amphibians died out, while amniotes, with their shelled eggs, coped better with the drier world, and among them were the first synapsids, the line that would one day lead to mammals.",
+   "species": [
+    "Lepidodendron (a giant clubmoss tree)",
+    "Tree ferns",
+    "Archaeothyris (an early synapsid)"
+   ],
+   "sites": [
+    {
+     "name": "Riola and Vermilion Grove mines, near Danville",
+     "lonlat": [
+      -87.7,
+      40.05
+     ],
+     "ma": 307,
+     "note": "A coal forest drowned just before the collapse, preserved over about 1,000 hectares."
+    },
+    {
+     "name": "Florence, Cape Breton, Nova Scotia",
+     "lonlat": [
+      -60.27,
+      46.26
+     ],
+     "ma": 307,
+     "note": "Archaeothyris, one of the oldest known synapsids."
+    }
+   ],
+   "route": null,
+   "refs": [
+    "e:late-paleozoic-ice-age",
+    "e:pangaea-assembles",
+    "o:lycophytes",
+    "o:amniotes",
+    "o:synapsids",
+    "o:temnospondyls"
+   ],
+   "imageIds": [
+    "coal-forest-amphibian-diorama"
+   ],
+   "images": [
+    {
+     "id": "land-lepidodendron-drawing",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Lepidodendron_reconstrucci%C3%B3n.jpg/960px-Lepidodendron_reconstrucci%C3%B3n.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Lepidodendron_reconstrucci%C3%B3n.jpg",
+     "caption": "A drawing of Lepidodendron, a giant clubmoss tree of the coal forests, with a tall scaly trunk, a branching crown and spreading roots.",
+     "credit": "Falconaumanni",
+     "license": "CC BY-SA 3.0",
+     "note": "Trees like this almost vanished from the tropical swamps around 305 million years ago.",
+     "width": 1090,
+     "height": 1500,
+     "type": "reconstruction"
+    }
+   ],
+   "evidence": "disputed",
+   "evidenceNote": "Fossil plants and coal layers show the clubmoss forests collapsing; Sarda Sahney, Michael Benton and Howard Falcon-Lang (2010) argued this split animals into isolated pockets and drove their evolution, but Emma Dunne and colleagues (2018) found no sign of such isolation once uneven fossil collecting is allowed for.",
+   "sources": [
+    {
+     "title": "Wikipedia: Carboniferous rainforest collapse",
+     "url": "https://en.wikipedia.org/wiki/Carboniferous_rainforest_collapse"
+    },
+    {
+     "title": "Illinois Mines wiki (Illinois State Geological Survey): Pennsylvanian Age Mire Forest",
+     "url": "https://ilmineswiki.web.illinois.edu/wiki/Pennsylvanian_Age_Mire_Forest"
+    },
+    {
+     "title": "Europe PMC record: Diversity change during the rise of tetrapods and the impact of the 'Carboniferous rainforest collapse' (Dunne et al., Proc. R. Soc. B 2018)",
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1098/rspb.2017.2730%22&resultType=core&format=json"
+    },
+    {
+     "title": "Wikipedia: Amniote",
+     "url": "https://en.wikipedia.org/wiki/Amniote"
+    }
+   ]
+  }
+ ]
+}

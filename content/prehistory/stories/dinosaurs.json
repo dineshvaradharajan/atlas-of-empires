@@ -1,0 +1,1173 @@
+{
+ "id": "dinosaurs",
+ "title": "How the dinosaurs evolved",
+ "summary": "From small survivors of the Great Dying 252 million years ago, dinosaurs rose to rule the land for more than 130 million years, growing into giants and evolving feathers and flight. An asteroid ended their reign 66 million years ago, but one branch, the birds, lives on.",
+ "from": 252,
+ "to": 66,
+ "chapters": [
+  {
+   "id": "survivors-of-the-great-dying",
+   "title": "Survivors of the Great Dying",
+   "ma": 251.9,
+   "dateLabel": "c. 252 million years ago",
+   "focus": [
+    24.54,
+    -32.25
+   ],
+   "place": "Karoo Basin near Graaff-Reinet, South Africa",
+   "text": "About 252 million years ago the worst mass extinction known wiped out about 81 percent of species in the sea and 70 percent of land vertebrate species. In the Karoo of South Africa the rocks laid down just afterwards are crowded with Lystrosaurus, a tusked plant-eater that was one of the few survivors. Alongside it lived Proterosuchus, a sprawling, crocodile-shaped hunter up to about 3.5 metres long. Proterosuchus was one of the earliest archosauriforms, the wider group that would later produce crocodiles, pterosaurs and dinosaurs. Life on land took millions of years to recover, leaving room for new kinds of animals.",
+   "species": [
+    "Lystrosaurus murrayi",
+    "Proterosuchus fergusi",
+    "Prolacerta broomi"
+   ],
+   "sites": [
+    {
+     "name": "Lystrosaurus Assemblage Zone, Karoo Basin",
+     "lonlat": [
+      24.54,
+      -32.25
+     ],
+     "ma": 251.9,
+     "note": "Earliest Triassic river beds with Lystrosaurus and the early archosaur relatives Proterosuchus and Prolacerta."
+    }
+   ],
+   "refs": [
+    "e:end-permian-extinction",
+    "e:karoo-fossil-beds"
+   ],
+   "imageIds": [
+    "lystrosaurus-bogdanov",
+    "moschorhinus-lystrosaurus"
+   ],
+   "images": [
+    {
+     "id": "proterosuchus-lystrosaurus",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Lystrosaurus_murrayi_and_Proterosuchus_fergusi.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Lystrosaurus_murrayi_and_Proterosuchus_fergusi.jpg",
+     "width": 930,
+     "height": 901,
+     "type": "scene",
+     "caption": "Lystrosaurus, a tusked survivor of the Great Dying, with two Proterosuchus, early relatives of the archosaurs, in Early Triassic South Africa.",
+     "credit": "ABelov2014",
+     "license": "CC BY-SA 3.0",
+     "note": "A pencil drawing; skin colours and patterns are the artist's guess."
+    }
+   ],
+   "evidence": "fossil",
+   "evidenceNote": "Layer after layer of Karoo river mud records which animals lived before and after the extinction, and the layers just above it are dominated by survivors such as Lystrosaurus.",
+   "sources": [
+    {
+     "title": "Wikipedia: Permian–Triassic extinction event",
+     "url": "https://en.wikipedia.org/wiki/Permian–Triassic_extinction_event"
+    },
+    {
+     "title": "Wikipedia: Lystrosaurus",
+     "url": "https://en.wikipedia.org/wiki/Lystrosaurus"
+    },
+    {
+     "title": "Wikipedia: Lystrosaurus Assemblage Zone",
+     "url": "https://en.wikipedia.org/wiki/Lystrosaurus_Assemblage_Zone"
+    },
+    {
+     "title": "Wikipedia: Proterosuchus",
+     "url": "https://en.wikipedia.org/wiki/Proterosuchus"
+    }
+   ]
+  },
+  {
+   "id": "dinosaur-cousins-appear",
+   "title": "The first dinosaur cousins",
+   "ma": 245,
+   "dateLabel": "c. 245 million years ago",
+   "focus": [
+    34.67,
+    -10.5
+   ],
+   "place": "Ruhuhu Basin, southern Tanzania",
+   "text": "Within a few million years of the extinction the archosaurs had split into two lines: one leading to crocodiles, the other to pterosaurs, dinosaurs and birds. Some of the oldest known members of the bird line come from the Manda Beds of Tanzania. Teleocrater, 2 to 3 metres long, was a long-necked meat-eater that still walked on four crocodile-like legs, while Asilisaurus was a slender four-legged cousin of the dinosaurs with leaf-shaped teeth and a beak-like lower jaw. Nyasasaurus, known only from an upper arm bone and a few backbones, may be the earliest dinosaur of all or a very close relative. Small footprints from Poland suggest that dinosaur relatives were already walking about 250 million years ago, though not everyone agrees who made them.",
+   "species": [
+    "Teleocrater rhadinus",
+    "Asilisaurus kongwe",
+    "Nyasasaurus parringtoni",
+    "Prorotodactylus mirus"
+   ],
+   "sites": [
+    {
+     "name": "Lifua Member, Manda Beds, Ruhuhu Basin",
+     "lonlat": [
+      34.67,
+      -10.5
+     ],
+     "ma": 245,
+     "note": "River beds that yielded Teleocrater, Asilisaurus and Nyasasaurus; the spot shown is the Ruhuhu River, not an exact quarry."
+    },
+    {
+     "name": "Stryczowice, Holy Cross Mountains, Poland",
+     "lonlat": [
+      21.29,
+      50.87
+     ],
+     "ma": 250,
+     "note": "Early Triassic sandstone with rare, small Prorotodactylus footprints that may be the oldest trace of the dinosaur line."
+    }
+   ],
+   "refs": [
+    "o:archosaurs",
+    "o:dinosaurs"
+   ],
+   "imageIds": [],
+   "images": [
+    {
+     "id": "teleocrater-pezzoni",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Teleocrater_v1.png/1280px-Teleocrater_v1.png",
+     "page": "https://commons.wikimedia.org/wiki/File:Teleocrater_v1.png",
+     "width": 1800,
+     "height": 481,
+     "type": "reconstruction",
+     "caption": "Teleocrater, one of the earliest known reptiles on the bird and dinosaur side of the family tree, still walking on four crocodile-like legs.",
+     "credit": "Neil Pezzoni",
+     "license": "CC BY 4.0",
+     "note": null
+    },
+    {
+     "id": "asilisaurus-smokeybjb",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Asilisaurus.jpg/1920px-Asilisaurus.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Asilisaurus.jpg",
+     "width": 6000,
+     "height": 2515,
+     "type": "reconstruction",
+     "caption": "Asilisaurus, a slender, beaked cousin of the dinosaurs from Middle Triassic Tanzania, walking on all fours.",
+     "credit": "Smokeybjb",
+     "license": "CC BY-SA 3.0",
+     "note": "Some researchers now think silesaurs such as Asilisaurus may be early bird-hipped dinosaurs rather than close cousins."
+    },
+    {
+     "id": "asilisaurus-cast-fmnh",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Asilisaurus_FMNH.jpg/1920px-Asilisaurus_FMNH.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Asilisaurus_FMNH.jpg",
+     "width": 2592,
+     "height": 1728,
+     "type": "fossil",
+     "caption": "A cast of the Asilisaurus skeleton, rebuilt from at least 14 individuals found together in one Tanzanian bone bed, at the Field Museum in Chicago.",
+     "credit": "Jonathan Chen",
+     "license": "CC BY-SA 4.0",
+     "note": null
+    }
+   ],
+   "evidence": "disputed",
+   "evidenceNote": "The Manda Beds have long been placed in the Middle Triassic, about 245 million years ago, but some recent studies think parts may be as young as the start of the Late Triassic, about 237 million years ago, and the Polish footprints may have been made by dinosaur relatives or by other early archosaurs.",
+   "sources": [
+    {
+     "title": "University of Birmingham: Discovery of early croc-like reptile sheds new light on evolution of dinosaurs (Teleocrater)",
+     "url": "https://www.birmingham.ac.uk/news/latest/2017/04/teleocrater-discovery.aspx"
+    },
+    {
+     "title": "Nesbitt et al. 2010, Nature: Ecologically distinct dinosaurian sister group shows early diversification of Ornithodira (Asilisaurus)",
+     "url": "https://doi.org/10.1038/nature08718"
+    },
+    {
+     "title": "Brusatte, Niedźwiedzki and Butler 2011, Proceedings of the Royal Society B: Footprints pull origin and diversification of dinosaur stem lineage deep into Early Triassic",
+     "url": "https://doi.org/10.1098/rspb.2010.1746"
+    },
+    {
+     "title": "Wikipedia: Manda Formation",
+     "url": "https://en.wikipedia.org/wiki/Manda_Formation"
+    },
+    {
+     "title": "Wikipedia: Nyasasaurus",
+     "url": "https://en.wikipedia.org/wiki/Nyasasaurus"
+    }
+   ]
+  },
+  {
+   "id": "the-first-dinosaurs",
+   "title": "The first dinosaurs",
+   "ma": 231,
+   "dateLabel": "c. 231 million years ago",
+   "focus": [
+    -67.91,
+    -30.12
+   ],
+   "place": "Ischigualasto Provincial Park, San Juan, Argentina",
+   "text": "The oldest dinosaurs that nearly everyone accepts come from Brazil and Argentina and are about 233 to 231 million years old, a few million years after a spell of very wet climate called the Carnian Pluvial Episode. In Argentina's 'Valley of the Moon', Herrerasaurus was the commonest meat-eater, and Eoraptor was a lightly built dinosaur weighing about 10 kilograms. The main dinosaur lines had already split: Eoraptor is now usually placed near the start of the long-necked sauropod line, and Eodromaeus near the start of the theropods. They shared the land with many rhynchosaurs such as Hyperodapedon and mammal relatives such as Exaeretodon.",
+   "species": [
+    "Herrerasaurus ischigualastensis",
+    "Eoraptor lunensis",
+    "Eodromaeus murphi",
+    "Saturnalia tupiniquim"
+   ],
+   "sites": [
+    {
+     "name": "Ischigualasto Formation, Valle de la Luna",
+     "lonlat": [
+      -67.91,
+      -30.12
+     ],
+     "ma": 231,
+     "note": "Volcanic ash layers date these dinosaur-bearing river beds to about 231.7 to 225 million years ago."
+    },
+    {
+     "name": "Cerro da Alemoa, Santa Maria Formation, Brazil",
+     "lonlat": [
+      -53.8,
+      -29.68
+     ],
+     "ma": 233.2,
+     "note": "Home of the early sauropodomorph Saturnalia, dated to about 233 million years ago; the point shown is the city of Santa Maria."
+    }
+   ],
+   "refs": [
+    "e:ischigualasto",
+    "e:carnian-pluvial-episode",
+    "o:dinosaurs",
+    "o:theropods",
+    "o:sauropods"
+   ],
+   "imageIds": [
+    "herrerasaurus-wierum",
+    "herrerasaurus-eoraptor-skeletons"
+   ],
+   "images": [
+    {
+     "id": "eoraptor-reconstruction",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Eoraptor_lunensis_recon.jpg/1920px-Eoraptor_lunensis_recon.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Eoraptor_lunensis_recon.jpg",
+     "width": 3428,
+     "height": 1569,
+     "type": "reconstruction",
+     "caption": "Eoraptor, a lightly built dinosaur about the weight of a small dog, from the oldest dinosaur beds of Argentina.",
+     "credit": "Ildarotyrannus",
+     "license": "CC BY-SA 4.0",
+     "note": "A pencil drawing showing scaly skin; whether the earliest dinosaurs had any fuzz is unknown. Eoraptor has been classed both as an early theropod and as an early sauropodomorph."
+    },
+    {
+     "id": "ischigualasto-valle-de-la-luna",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Valle_de_la_luna_-_Ischigualasto_-_panoramio.jpg/1920px-Valle_de_la_luna_-_Ischigualasto_-_panoramio.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Valle_de_la_luna_-_Ischigualasto_-_panoramio.jpg",
+     "width": 5154,
+     "height": 2036,
+     "type": "landscape",
+     "caption": "The eroded badlands of Ischigualasto, the 'Valley of the Moon', whose Late Triassic rocks hold some of the oldest known dinosaurs.",
+     "credit": "littletroll",
+     "license": "CC BY-SA 3.0",
+     "note": null
+    }
+   ],
+   "evidence": "disputed",
+   "evidenceNote": "Dated ash layers fix the age of the bones, but how the first dinosaurs are related is argued: the usual tree joins theropods with the long-necked sauropodomorphs, while a 2017 study (Baron and colleagues) joined theropods with the bird-hipped plant-eaters instead, and a reanalysis later that year favoured the usual tree again.",
+   "sources": [
+    {
+     "title": "Martinez et al. 2011, Science: A basal dinosaur from the dawn of the dinosaur era in southwestern Pangaea",
+     "url": "https://doi.org/10.1126/science.1198467"
+    },
+    {
+     "title": "Wikipedia: Ischigualasto Formation",
+     "url": "https://en.wikipedia.org/wiki/Ischigualasto_Formation"
+    },
+    {
+     "title": "Wikipedia: Santa Maria Formation",
+     "url": "https://en.wikipedia.org/wiki/Santa_Maria_Formation"
+    },
+    {
+     "title": "Natural History Museum, London, Dino Directory: Eoraptor",
+     "url": "https://www.nhm.ac.uk/discover/dino-directory/eoraptor.html"
+    },
+    {
+     "title": "Wikipedia: Ornithoscelida",
+     "url": "https://en.wikipedia.org/wiki/Ornithoscelida"
+    }
+   ]
+  },
+  {
+   "id": "spreading-across-pangaea",
+   "title": "Dinosaurs spread across Pangaea",
+   "ma": 210,
+   "dateLabel": "c. 210 million years ago",
+   "focus": [
+    8.64,
+    48.08
+   ],
+   "place": "Trossingen, Baden-Württemberg, Germany",
+   "text": "With all the continents still joined in one supercontinent, Pangaea, dinosaurs could spread almost anywhere on land. Between about 214 and 204 million years ago Plateosaurus, a long-necked plant-eater about 7 metres long that walked on its hind legs, lived in large numbers in what is now Germany, Switzerland and France. Clay pits at Trossingen and Frick have yielded many complete skeletons, and the finds hint that it may have lived in herds. In North America a quarry at Ghost Ranch, New Mexico, yielded many skeletons of the small, fast hunter Coelophysis. Yet in many places crocodile-line reptiles and phytosaurs were still the commonest large animals.",
+   "species": [
+    "Plateosaurus trossingensis",
+    "Coelophysis bauri"
+   ],
+   "sites": [
+    {
+     "name": "Trossingen clay pit",
+     "lonlat": [
+      8.64,
+      48.08
+     ],
+     "ma": 210,
+     "note": "Type locality of Plateosaurus trossingensis; many skeletons were dug here in the 20th century."
+    },
+    {
+     "name": "Frick clay pit, Switzerland",
+     "lonlat": [
+      8.02,
+      47.51
+     ],
+     "ma": 210,
+     "note": "Plateosaurus skeletons first noticed in 1976 in a working clay pit; the point is the town of Frick."
+    },
+    {
+     "name": "Ghost Ranch Coelophysis quarry",
+     "lonlat": [
+      -106.47,
+      36.33
+     ],
+     "ma": 210,
+     "note": "Excavated in 1947 and 1948, yielding blocks packed with Coelophysis skeletons."
+    }
+   ],
+   "refs": [
+    "e:ghost-ranch",
+    "o:sauropods",
+    "o:theropods"
+   ],
+   "imageIds": [
+    "coelophysis-martz",
+    "triassic-coelophysids-landscape"
+   ],
+   "images": [
+    {
+     "id": "plateosaurus-trossingen-skeletons",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Plateosaurus_panorama.jpg/1920px-Plateosaurus_panorama.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Plateosaurus_panorama.jpg",
+     "width": 4915,
+     "height": 2001,
+     "type": "fossil",
+     "caption": "Two Plateosaurus skeletons dug from the clay pit at Trossingen, Germany, on display at the University of Tübingen.",
+     "credit": "FunkMonk",
+     "license": "CC BY-SA 3.0",
+     "note": "Old mounts: the right-hand skeleton is posed on all fours, but Plateosaurus is now generally seen as walking on its hind legs. The species was then called P. engelhardti; the Trossingen animals are now P. trossingensis."
+    },
+    {
+     "id": "plateosaurus-restoration",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Life_restoration_of_Plateosaurus_trossingensis.jpg/1920px-Life_restoration_of_Plateosaurus_trossingensis.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Life_restoration_of_Plateosaurus_trossingensis.jpg",
+     "width": 8104,
+     "height": 3402,
+     "type": "reconstruction",
+     "caption": "Plateosaurus trossingensis, a long-necked plant-eater about 7 metres long, walking on its hind legs.",
+     "credit": "Anonymous Dinonerd",
+     "license": "CC BY-SA 4.0",
+     "note": "A simple pencil outline drawing."
+    }
+   ],
+   "evidence": "fossil",
+   "evidenceNote": "Many complete skeletons in Late Triassic mudstones of Germany and Switzerland, and a dense bone bed of Coelophysis in New Mexico, show how common these dinosaurs had become.",
+   "sources": [
+    {
+     "title": "Wikipedia: Plateosaurus",
+     "url": "https://en.wikipedia.org/wiki/Plateosaurus"
+    },
+    {
+     "title": "Natural History Museum, London, Dino Directory: Plateosaurus",
+     "url": "https://www.nhm.ac.uk/discover/dino-directory/plateosaurus.html"
+    },
+    {
+     "title": "Wikipedia: Coelophysis",
+     "url": "https://en.wikipedia.org/wiki/Coelophysis"
+    },
+    {
+     "title": "Wikipedia: Triassic–Jurassic extinction event",
+     "url": "https://en.wikipedia.org/wiki/Triassic–Jurassic_extinction_event"
+    }
+   ]
+  },
+  {
+   "id": "rivals-vanish",
+   "title": "Rivals vanish, dinosaurs take over",
+   "ma": 201.4,
+   "dateLabel": "c. 201 million years ago",
+   "focus": [
+    -74.5,
+    40.6
+   ],
+   "place": "Newark Basin, New Jersey, USA",
+   "text": "About 201 million years ago, as Pangaea began to tear apart, huge volcanic eruptions of the Central Atlantic magmatic province set off one of the five great mass extinctions. On land the phytosaurs and nearly all the crocodile-line reptiles died out, except small crocodile relatives, while dinosaurs, pterosaurs and mammals came through. In the rift valleys of eastern North America, footprints show large meat-eating dinosaurs appearing less than 10,000 years after the boundary. Big three-toed tracks called Eubrontes, 25 to 50 centimetres long, are common in Early Jurassic rocks such as those at Rocky Hill, Connecticut. From then on, dinosaurs were the main large land animals for the next 135 million years.",
+   "species": [
+    "Eubrontes giganteus (footprints)",
+    "Dilophosaurus wetherilli"
+   ],
+   "sites": [
+    {
+     "name": "Newark Basin",
+     "lonlat": [
+      -74.5,
+      40.6
+     ],
+     "ma": 201.4,
+     "note": "Lake and river beds with footprints that record the extinction and the arrival of large theropods."
+    },
+    {
+     "name": "Dinosaur State Park, Rocky Hill, Connecticut",
+     "lonlat": [
+      -72.66,
+      41.65
+     ],
+     "ma": 200,
+     "note": "Hundreds of Eubrontes tracks uncovered in 1966 in sandstone about 200 million years old."
+    }
+   ],
+   "refs": [
+    "e:end-triassic-extinction",
+    "e:central-atlantic-magmatic-province",
+    "o:dinosaurs"
+   ],
+   "imageIds": [
+    "jurassic-ciechocinek-forest-scene"
+   ],
+   "images": [
+    {
+     "id": "eubrontes-track-connecticut",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Eubrontes_%28dinosaur_track%29_%28East_Berlin_Formation%2C_Lower_Jurassic%3B_Rocky_Hill%2C_Connecticut%2C_USA%29.jpg/1920px-Eubrontes_%28dinosaur_track%29_%28East_Berlin_Formation%2C_Lower_Jurassic%3B_Rocky_Hill%2C_Connecticut%2C_USA%29.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Eubrontes_(dinosaur_track)_(East_Berlin_Formation,_Lower_Jurassic;_Rocky_Hill,_Connecticut,_USA).jpg",
+     "width": 2762,
+     "height": 3658,
+     "type": "fossil",
+     "caption": "A three-toed Eubrontes footprint from Early Jurassic rocks at Rocky Hill, Connecticut, left by a large meat-eating dinosaur.",
+     "credit": "James St. John",
+     "license": "CC BY 2.0",
+     "note": "No bones have been found with these tracks, so the exact maker is unknown."
+    },
+    {
+     "id": "hudson-palisades-sill",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Hudson_River_Palisades_from_Hastings-On-Hudson.jpg/1920px-Hudson_River_Palisades_from_Hastings-On-Hudson.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Hudson_River_Palisades_from_Hastings-On-Hudson.jpg",
+     "width": 5312,
+     "height": 2988,
+     "type": "rock",
+     "caption": "The Palisades cliffs on the Hudson River, a thick sheet of volcanic rock that forced its way into the sediments of the Newark rift basin as Pangaea began to split.",
+     "credit": "PointsofNoReturn",
+     "license": "CC BY-SA 4.0",
+     "note": null
+    }
+   ],
+   "evidence": "fossil",
+   "evidenceNote": "Footprints and bones from more than 70 sites in eastern North America show the old reptiles disappearing and large dinosaur tracks appearing right at the Triassic-Jurassic boundary.",
+   "sources": [
+    {
+     "title": "Olsen et al. 2002, Science: Ascent of dinosaurs linked to an iridium anomaly at the Triassic-Jurassic boundary",
+     "url": "https://doi.org/10.1126/science.1065522"
+    },
+    {
+     "title": "Wikipedia: Triassic–Jurassic extinction event",
+     "url": "https://en.wikipedia.org/wiki/Triassic–Jurassic_extinction_event"
+    },
+    {
+     "title": "Wikipedia: Eubrontes",
+     "url": "https://en.wikipedia.org/wiki/Eubrontes"
+    },
+    {
+     "title": "Wikipedia: Dinosaur State Park",
+     "url": "https://en.wikipedia.org/wiki/Dinosaur_State_Park"
+    },
+    {
+     "title": "Wikipedia: Newark Supergroup",
+     "url": "https://en.wikipedia.org/wiki/Newark_Supergroup"
+    }
+   ]
+  },
+  {
+   "id": "feathers-before-flight",
+   "title": "Feathered dinosaurs before the first bird",
+   "ma": 160,
+   "dateLabel": "c. 160 million years ago",
+   "focus": [
+    119.8,
+    40.81
+   ],
+   "place": "Jianchang County, Liaoning, China",
+   "text": "Lake beds in north-east China, laid down about 160 million years ago, preserve small dinosaurs with their feathers in astonishing detail. Anchiornis, a small relative of birds known from hundreds of specimens, had long feathers on its arms, legs and feet, giving it four wings. Tiny pigment grains in its fossil feathers show it was grey and dark with white, black-tipped wing feathers and a reddish crest. Anchiornis lived about 10 million years before Archaeopteryx, proving that bird-like feathered dinosaurs already existed before the famous 'first bird'. Whether Anchiornis itself counts as a bird depends on where scientists draw a line that is genuinely blurred.",
+   "species": [
+    "Anchiornis huxleyi",
+    "Eosinopteryx brevipenna"
+   ],
+   "sites": [
+    {
+     "name": "Tiaojishan Formation, Yaolugou area, Jianchang County",
+     "lonlat": [
+      119.8,
+      40.81
+     ],
+     "ma": 160,
+     "note": "Where the first Anchiornis fossil was dug up; the point shown is the county, not the exact site."
+    }
+   ],
+   "refs": [
+    "o:birds",
+    "o:theropods"
+   ],
+   "imageIds": [],
+   "images": [
+    {
+     "id": "anchiornis-feathers-fossil",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Anchiornis_feathers.jpg/1920px-Anchiornis_feathers.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Anchiornis_feathers.jpg",
+     "width": 2967,
+     "height": 2736,
+     "type": "fossil",
+     "caption": "A fossil of Anchiornis from Liaoning with long feathers fanning out from its arms and legs.",
+     "credit": "★Kumiko★ from Tokyo, Japan",
+     "license": "CC BY-SA 2.0",
+     "note": null
+    }
+   ],
+   "evidence": "disputed",
+   "evidenceNote": "Hundreds of feathered fossils dated to about 160 million years show the animal clearly, but whether Anchiornis is an early bird or a close cousin is disputed, because birds and their feathered relatives grade into each other.",
+   "sources": [
+    {
+     "title": "Hu et al. 2009, Nature: A pre-Archaeopteryx troodontid theropod from China with long feathers on the metatarsus",
+     "url": "https://doi.org/10.1038/nature08322"
+    },
+    {
+     "title": "Li et al. 2010, Science: Plumage color patterns of an extinct dinosaur",
+     "url": "https://doi.org/10.1126/science.1186290"
+    },
+    {
+     "title": "Wikipedia: Anchiornis",
+     "url": "https://en.wikipedia.org/wiki/Anchiornis"
+    },
+    {
+     "title": "Wikipedia: Yanliao Biota",
+     "url": "https://en.wikipedia.org/wiki/Yanliao_Biota"
+    },
+    {
+     "title": "Natural History Museum, London, Dino Directory: Archaeopteryx",
+     "url": "https://www.nhm.ac.uk/discover/dino-directory/Archaeopteryx.html"
+    }
+   ]
+  },
+  {
+   "id": "giants-of-the-jurassic",
+   "title": "Giants of the Late Jurassic",
+   "ma": 152,
+   "dateLabel": "c. 152 million years ago",
+   "focus": [
+    -105.19,
+    39.65
+   ],
+   "place": "Morrison, Colorado, USA",
+   "text": "By the Late Jurassic dinosaurs had become giants. The Morrison Formation, river and floodplain rocks spread over 1.5 million square kilometres of the western United States, holds long-necked sauropods such as Diplodocus, about 26 metres long, as well as Brachiosaurus, Apatosaurus and Camarasaurus, the commonest of them. The plated Stegosaurus browsed nearer the ground, and meat-eaters such as Allosaurus and Ceratosaurus hunted them all. Strikingly similar animals, including the giant sauropod Giraffatitan, lived at the same time at Tendaguru in Tanzania.",
+   "species": [
+    "Diplodocus carnegii",
+    "Brachiosaurus altithorax",
+    "Stegosaurus stenops",
+    "Allosaurus fragilis",
+    "Giraffatitan brancai"
+   ],
+   "sites": [
+    {
+     "name": "Morrison Formation near Morrison, Colorado",
+     "lonlat": [
+      -105.19,
+      39.65
+     ],
+     "ma": 152,
+     "note": "Type area of the formation, on the edge of the Rocky Mountains west of Denver."
+    },
+    {
+     "name": "Tendaguru Hill, Tanzania",
+     "lonlat": [
+      39.12,
+      -10.05
+     ],
+     "ma": 150,
+     "note": "Late Jurassic beds whose dinosaurs closely resemble those of the Morrison Formation."
+    }
+   ],
+   "refs": [
+    "e:morrison-formation",
+    "o:sauropods",
+    "o:theropods",
+    "o:ornithischians"
+   ],
+   "imageIds": [
+    "jurassic-morrison-mural-nps",
+    "diplodocus-wierum",
+    "stegosaurus-wierum",
+    "jurassic-mygatt-moore-dry-season"
+   ],
+   "images": [],
+   "evidence": "fossil",
+   "evidenceNote": "Volcanic ash layers dated by radioactive decay place the Morrison Formation between about 156 and 147 million years ago.",
+   "sources": [
+    {
+     "title": "Wikipedia: Morrison Formation",
+     "url": "https://en.wikipedia.org/wiki/Morrison_Formation"
+    },
+    {
+     "title": "Natural History Museum, London, Dino Directory: Diplodocus",
+     "url": "https://www.nhm.ac.uk/discover/dino-directory/diplodocus.html"
+    },
+    {
+     "title": "Natural History Museum, London, Dino Directory: Stegosaurus",
+     "url": "https://www.nhm.ac.uk/discover/dino-directory/stegosaurus.html"
+    },
+    {
+     "title": "Wikipedia: Tendaguru Formation",
+     "url": "https://en.wikipedia.org/wiki/Tendaguru_Formation"
+    },
+    {
+     "title": "Wikipedia: Giraffatitan",
+     "url": "https://en.wikipedia.org/wiki/Giraffatitan"
+    }
+   ]
+  },
+  {
+   "id": "archaeopteryx",
+   "title": "Archaeopteryx, the famous in-between animal",
+   "ma": 150,
+   "dateLabel": "c. 150 million years ago",
+   "focus": [
+    11.0,
+    48.88
+   ],
+   "place": "Solnhofen, Bavaria, Germany",
+   "text": "In 1861, just two years after Darwin published On the Origin of Species, a fossil feather and then a skeleton of Archaeopteryx were found in Bavarian limestone laid down in warm lagoons about 150 million years ago. It was about half a metre long with broad feathered wings, but it also had sharp teeth, three clawed fingers and a long bony tail, like a small meat-eating dinosaur. It soon became key evidence that birds evolved from reptiles, and fourteen skeletons are now known. Whether it could flap and fly well or mostly glided is still debated.",
+   "species": [
+    "Archaeopteryx lithographica",
+    "Compsognathus longipes"
+   ],
+   "sites": [
+    {
+     "name": "Solnhofen limestone quarries",
+     "lonlat": [
+      11.0,
+      48.88
+     ],
+     "ma": 150,
+     "note": "Fine lagoon limestone from the end of the Jurassic, quarried for printing stone."
+    }
+   ],
+   "refs": [
+    "e:solnhofen-limestone",
+    "o:birds"
+   ],
+   "imageIds": [
+    "archaeopteryx-berlin-specimen",
+    "archaeopteryx-durbed"
+   ],
+   "images": [
+    {
+     "id": "archaeopteryx-london-replica",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Archaeopteryx_lithographica%2C_replica_of_London_specimen%2C_Staatliches_Museum_f%C3%BCr_Naturkunde_Karlsruhe%2C_Germany_-_20100925.jpg/1920px-Archaeopteryx_lithographica%2C_replica_of_London_specimen%2C_Staatliches_Museum_f%C3%BCr_Naturkunde_Karlsruhe%2C_Germany_-_20100925.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Archaeopteryx_lithographica,_replica_of_London_specimen,_Staatliches_Museum_f%C3%BCr_Naturkunde_Karlsruhe,_Germany_-_20100925.jpg",
+     "width": 4208,
+     "height": 5625,
+     "type": "fossil",
+     "caption": "A replica of the London specimen of Archaeopteryx, the first skeleton found (1861), with feather impressions on the wings and the long bony tail.",
+     "credit": "H. Zell",
+     "license": "CC BY-SA 3.0",
+     "note": "This is a cast at the Karlsruhe natural history museum; the original is in the Natural History Museum, London."
+    }
+   ],
+   "evidence": "fossil",
+   "evidenceNote": "Fourteen skeletons, many with clear feather impressions, come from finely layered limestone of latest Jurassic age.",
+   "sources": [
+    {
+     "title": "Natural History Museum, London, Dino Directory: Archaeopteryx",
+     "url": "https://www.nhm.ac.uk/discover/dino-directory/Archaeopteryx.html"
+    },
+    {
+     "title": "Natural History Museum, London: Fossil birds collection (London specimen of Archaeopteryx)",
+     "url": "https://www.nhm.ac.uk/our-science/services/collections/palaeontology/fossil-birds.html"
+    },
+    {
+     "title": "Wikipedia: Archaeopteryx",
+     "url": "https://en.wikipedia.org/wiki/Archaeopteryx"
+    }
+   ]
+  },
+  {
+   "id": "feathers-flowers-and-birds",
+   "title": "Feathers, flowers and early birds",
+   "ma": 125,
+   "dateLabel": "c. 125 million years ago",
+   "focus": [
+    121.24,
+    41.53
+   ],
+   "place": "Yixian Formation, Liaoning, China",
+   "text": "About 125 million years ago, volcanic ash repeatedly fell into the lakes of north-east China, burying animals and plants so gently that feathers, skin and even colour patterns survive. Sinosauropteryx, described in 1996, was the first dinosaur outside the bird line found with feathers: a coat of simple filaments, with a banded tail. Several hundred complete skeletons of Confuciusornis, a crow-sized bird with a toothless beak, show that true birds were now common. The same rocks hold Archaefructus, one of the oldest known flowering plants, an early sign of the plants that would come to dominate the land.",
+   "species": [
+    "Sinosauropteryx prima",
+    "Confuciusornis sanctus",
+    "Microraptor zhaoianus",
+    "Archaefructus liaoningensis"
+   ],
+   "sites": [
+    {
+     "name": "Yixian Formation, Sihetun area",
+     "lonlat": [
+      121.24,
+      41.53
+     ],
+     "ma": 125,
+     "note": "Lake beds between dated volcanic ash layers, the heart of the Jehol Biota."
+    }
+   ],
+   "refs": [
+    "e:jehol-biota",
+    "e:first-flowering-plants",
+    "o:birds",
+    "o:flowering-plants"
+   ],
+   "imageIds": [
+    "sinosauropteryx-fossil",
+    "microraptor-wierum"
+   ],
+   "images": [
+    {
+     "id": "confuciusornis-sihetun-fossil",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Confuciusornis_sanctus_fossil_bird_%28Yixian_Formation%2C_Lower_Cretaceous%3B_Sihetun_Quarry%2C_Liaoning_Province%2C_northeastern_China%29_2.jpg/1280px-Confuciusornis_sanctus_fossil_bird_%28Yixian_Formation%2C_Lower_Cretaceous%3B_Sihetun_Quarry%2C_Liaoning_Province%2C_northeastern_China%29_2.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Confuciusornis_sanctus_fossil_bird_(Yixian_Formation,_Lower_Cretaceous;_Sihetun_Quarry,_Liaoning_Province,_northeastern_China)_2.jpg",
+     "width": 1708,
+     "height": 2999,
+     "type": "fossil",
+     "caption": "Confuciusornis, a crow-sized early bird with a toothless beak, preserved with its feathers in lake beds at Sihetun, Liaoning.",
+     "credit": "James St. John",
+     "license": "CC BY 2.0",
+     "note": "The photographer has added a label pointing to a hole in the upper arm bone."
+    },
+    {
+     "id": "archaefructus-fossil",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Archaefructus_liaoningensis_BMNHC.jpg/1920px-Archaefructus_liaoningensis_BMNHC.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Archaefructus_liaoningensis_BMNHC.jpg",
+     "width": 2981,
+     "height": 2890,
+     "type": "fossil",
+     "caption": "Archaefructus liaoningensis, one of the oldest known flowering plants, preserved in the same Yixian lake beds as the feathered dinosaurs.",
+     "credit": "Jonathan Chen",
+     "license": "CC BY 4.0",
+     "note": "Whether its fertile shoots are single flowers or clusters of tiny flowers is still argued."
+    }
+   ],
+   "evidence": "fossil",
+   "evidenceNote": "Volcanic ash between the lake beds has been dated by radioactive decay to between about 126 and 124 million years ago.",
+   "sources": [
+    {
+     "title": "Wikipedia: Yixian Formation",
+     "url": "https://en.wikipedia.org/wiki/Yixian_Formation"
+    },
+    {
+     "title": "Wikipedia: Sinosauropteryx",
+     "url": "https://en.wikipedia.org/wiki/Sinosauropteryx"
+    },
+    {
+     "title": "Wikipedia: Confuciusornis",
+     "url": "https://en.wikipedia.org/wiki/Confuciusornis"
+    },
+    {
+     "title": "Sun et al. 2002, Science: Archaefructaceae, a new basal angiosperm family",
+     "url": "https://doi.org/10.1126/science.1069439"
+    },
+    {
+     "title": "Wikipedia: Microraptor",
+     "url": "https://en.wikipedia.org/wiki/Microraptor"
+    }
+   ]
+  },
+  {
+   "id": "titans-of-the-south",
+   "title": "Titans on a splitting supercontinent",
+   "ma": 101.6,
+   "dateLabel": "c. 102 million years ago",
+   "focus": [
+    -68.6,
+    -43.8
+   ],
+   "place": "La Flecha, Chubut, Patagonia, Argentina",
+   "text": "During the Cretaceous the southern continents drifted apart, and South America's dinosaurs went their own way. Titanosaurs, the most varied group of long-necked sauropods, included the largest land animals known. Patagotitan, known from at least six young adults found on a ranch near La Flecha in rocks about 101.6 million years old, was first estimated at 37 metres and 69 tonnes; later work suggests nearer 31 metres and 50 to 60 tonnes. Most of the giants, including Argentinosaurus from near Plaza Huincul, belonged to one group of titanosaurs found only in Patagonia.",
+   "species": [
+    "Patagotitan mayorum",
+    "Argentinosaurus huinculensis",
+    "Mapusaurus roseae"
+   ],
+   "sites": [
+    {
+     "name": "La Flecha, Cerro Barcino Formation",
+     "lonlat": [
+      -68.6,
+      -43.8
+     ],
+     "ma": 101.6,
+     "note": "Six partial skeletons of Patagotitan; the point is approximate, about 250 km west of Trelew."
+    },
+    {
+     "name": "Huincul Formation near Plaza Huincul, Neuquén",
+     "lonlat": [
+      -69.2,
+      -38.93
+     ],
+     "ma": 100.5,
+     "note": "Argentinosaurus was found in 1987 on a farm about 8 km east of the town shown."
+    }
+   ],
+   "refs": [
+    "o:sauropods",
+    "e:south-atlantic-opens"
+   ],
+   "imageIds": [],
+   "images": [
+    {
+     "id": "patagotitan-skeleton-brisbane",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Patagotitan_and_Brachytrachelopan.jpg/1920px-Patagotitan_and_Brachytrachelopan.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Patagotitan_and_Brachytrachelopan.jpg",
+     "width": 4722,
+     "height": 3104,
+     "type": "fossil",
+     "caption": "A cast of Patagotitan towers over the smaller Patagonian sauropod Brachytrachelopan in a touring exhibition at the Queensland Museum, with a giant thigh bone in front.",
+     "credit": "Luke McKernan",
+     "license": "CC BY-SA 2.0",
+     "note": "The exhibition banner calls it the world's largest dinosaur; later studies suggest it was about the same size as Argentinosaurus, not clearly bigger."
+    },
+    {
+     "id": "patagotitan-restoration",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Patagotitan_mayorum.jpg/1920px-Patagotitan_mayorum.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Patagotitan_mayorum.jpg",
+     "width": 2903,
+     "height": 1895,
+     "type": "reconstruction",
+     "caption": "Patagotitan mayorum, one of the giant titanosaurs of Cretaceous Patagonia.",
+     "credit": "Levi Martinez-Reza",
+     "license": "CC BY-SA 3.0",
+     "note": null
+    }
+   ],
+   "evidence": "fossil",
+   "evidenceNote": "The Patagotitan skeletons lie in rock layers dated by radioactive decay to about 101.6 million years ago; their weights are estimates and have been revised downwards since 2017.",
+   "sources": [
+    {
+     "title": "Carballido et al. 2017, Proceedings of the Royal Society B: A new giant titanosaur sheds light on body mass evolution among sauropod dinosaurs",
+     "url": "https://doi.org/10.1098/rspb.2017.1219"
+    },
+    {
+     "title": "Wikipedia: Patagotitan",
+     "url": "https://en.wikipedia.org/wiki/Patagotitan"
+    },
+    {
+     "title": "Wikipedia: Argentinosaurus",
+     "url": "https://en.wikipedia.org/wiki/Argentinosaurus"
+    },
+    {
+     "title": "Wikipedia: Huincul Formation",
+     "url": "https://en.wikipedia.org/wiki/Huincul_Formation"
+    }
+   ]
+  },
+  {
+   "id": "horns-and-duck-bills",
+   "title": "Horned and duck-billed dinosaurs flourish",
+   "ma": 75.5,
+   "dateLabel": "c. 76 to 74 million years ago",
+   "focus": [
+    -111.49,
+    50.76
+   ],
+   "place": "Dinosaur Provincial Park, Alberta, Canada",
+   "text": "The badlands of Dinosaur Provincial Park were laid down by rivers on a coastal plain beside an inland sea, about 76.5 to 74.4 million years ago, and 58 dinosaur species have been found there. Horned dinosaurs such as Centrosaurus and Styracosaurus and crested duck-bills such as Corythosaurus and Lambeosaurus lived alongside armoured ankylosaurs and tyrannosaurs. Different groups of species replace each other up through the rock layers, showing how fast these plant-eaters evolved. Some studies argue that dinosaurs overall were already producing new species too slowly by this time, but the horned and duck-billed dinosaurs were still multiplying fast.",
+   "species": [
+    "Centrosaurus apertus",
+    "Corythosaurus casuarius",
+    "Styracosaurus albertensis",
+    "Lambeosaurus lambei",
+    "Euoplocephalus tutus"
+   ],
+   "sites": [
+    {
+     "name": "Dinosaur Park Formation, Red Deer River valley",
+     "lonlat": [
+      -111.49,
+      50.76
+     ],
+     "ma": 75.5,
+     "note": "A UNESCO World Heritage Site since 1979 for its badlands and fossils."
+    }
+   ],
+   "refs": [
+    "o:ornithischians",
+    "o:tyrannosaurs",
+    "e:western-interior-seaway",
+    "e:were-dinosaurs-declining"
+   ],
+   "imageIds": [
+    "cretaceous-dinosaur-park-panorama"
+   ],
+   "images": [
+    {
+     "id": "dinosaur-provincial-park-badlands",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Dinosaur_Provincial_Park_Badlands.jpg/1920px-Dinosaur_Provincial_Park_Badlands.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Dinosaur_Provincial_Park_Badlands.jpg",
+     "width": 4080,
+     "height": 3072,
+     "type": "landscape",
+     "caption": "The badlands of Dinosaur Provincial Park in Alberta, where rivers have cut into Late Cretaceous rocks rich in dinosaur bones.",
+     "credit": "Hirgax",
+     "license": "CC BY-SA 4.0",
+     "note": null
+    },
+    {
+     "id": "corythosaurus-rom",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Corythosaurus_intermedius_ROM.jpg/1920px-Corythosaurus_intermedius_ROM.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Corythosaurus_intermedius_ROM.jpg",
+     "width": 4272,
+     "height": 2848,
+     "type": "fossil",
+     "caption": "A skeleton of the crested duck-bill Corythosaurus with a growth series of its skulls, at the Royal Ontario Museum.",
+     "credit": "IJReid",
+     "license": "CC BY 4.0",
+     "note": null
+    },
+    {
+     "id": "centrosaurus-wierum",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Centrosaurus.png/1920px-Centrosaurus.png",
+     "page": "https://commons.wikimedia.org/wiki/File:Centrosaurus.png",
+     "width": 3750,
+     "height": 2707,
+     "type": "reconstruction",
+     "caption": "Centrosaurus, a horned dinosaur that is one of the commonest fossils in the lower part of the Dinosaur Park Formation.",
+     "credit": "Fred Wierum",
+     "license": "CC BY-SA 4.0",
+     "note": null
+    }
+   ],
+   "evidence": "disputed",
+   "evidenceNote": "The bone beds are well dated, but whether dinosaur diversity was already falling is disputed: Sakamoto and colleagues (2016) found a long decline, while Bonsor and colleagues (2020) found no strong sign of one.",
+   "sources": [
+    {
+     "title": "Wikipedia: Dinosaur Provincial Park",
+     "url": "https://en.wikipedia.org/wiki/Dinosaur_Provincial_Park"
+    },
+    {
+     "title": "Wikipedia: Dinosaur Park Formation",
+     "url": "https://en.wikipedia.org/wiki/Dinosaur_Park_Formation"
+    },
+    {
+     "title": "Natural History Museum, London, Dino Directory: Corythosaurus",
+     "url": "https://www.nhm.ac.uk/discover/dino-directory/corythosaurus.html"
+    },
+    {
+     "title": "Sakamoto, Benton and Venditti 2016, PNAS: Dinosaurs in decline tens of millions of years before their final extinction",
+     "url": "https://doi.org/10.1073/pnas.1521478113"
+    },
+    {
+     "title": "Bonsor et al. 2020, Royal Society Open Science: Dinosaur diversification rates were not in decline prior to the K-Pg boundary",
+     "url": "https://doi.org/10.1098/rsos.201195"
+    }
+   ]
+  },
+  {
+   "id": "the-last-dinosaurs",
+   "title": "Tyrannosaurus and the last dinosaurs",
+   "ma": 67,
+   "dateLabel": "c. 67 million years ago",
+   "focus": [
+    -106.91,
+    47.32
+   ],
+   "place": "Hell Creek, near Jordan, Montana, USA",
+   "text": "The river and swamp deposits of the Hell Creek Formation preserve some of the very last non-bird dinosaurs. Tyrannosaurus rex, about 12 metres long and weighing 5 to 7 tonnes, was the giant predator. It shared the land with Triceratops, the duck-bill Edmontosaurus, dome-headed pachycephalosaurs and armoured ankylosaurs, as well as crocodiles, turtles, lizards and small mammals. The climate was mild, with palm trees. Just above the formation lies the thin boundary layer rich in iridium, a metal rare on Earth but common in asteroids, which marks the end of the dinosaur age.",
+   "species": [
+    "Tyrannosaurus rex",
+    "Triceratops horridus",
+    "Edmontosaurus annectens",
+    "Pachycephalosaurus wyomingensis",
+    "Anzu wyliei"
+   ],
+   "sites": [
+    {
+     "name": "Hell Creek Formation near Jordan, Montana",
+     "lonlat": [
+      -106.91,
+      47.32
+     ],
+     "ma": 67,
+     "note": "The formation is named after exposures along Hell Creek near this town."
+    }
+   ],
+   "refs": [
+    "e:hell-creek-formation",
+    "o:tyrannosaurs",
+    "o:ornithischians"
+   ],
+   "imageIds": [
+    "cretaceous-hell-creek-tyrannosaurus-scene",
+    "tyrannosaurus-sue-skeleton",
+    "triceratops-totaldino"
+   ],
+   "images": [],
+   "evidence": "fossil",
+   "evidenceNote": "Argon dating of volcanic ash in these rocks ties the boundary layer, and the extinction, to the Chicxulub impact within 32,000 years.",
+   "sources": [
+    {
+     "title": "Wikipedia: Hell Creek Formation",
+     "url": "https://en.wikipedia.org/wiki/Hell_Creek_Formation"
+    },
+    {
+     "title": "Natural History Museum, London, Dino Directory: Tyrannosaurus",
+     "url": "https://www.nhm.ac.uk/discover/dino-directory/tyrannosaurus.html"
+    },
+    {
+     "title": "Renne et al. 2013, Science: Time scales of critical events around the Cretaceous-Paleogene boundary",
+     "url": "https://doi.org/10.1126/science.1230492"
+    }
+   ]
+  },
+  {
+   "id": "the-asteroid-strikes",
+   "title": "The asteroid strikes",
+   "ma": 66,
+   "dateLabel": "c. 66 million years ago",
+   "focus": [
+    -89.5,
+    21.4
+   ],
+   "place": "Chicxulub, Yucatán Peninsula, Mexico",
+   "text": "About 66 million years ago an asteroid roughly 10 kilometres across hit the sea where Mexico's Yucatán Peninsula is now, blasting a crater about 200 kilometres wide that lies buried under about a kilometre of younger rock. Its debris forms a thin layer found all over the world, and dating ties the impact to the extinction within 32,000 years. Darkness and cold followed, halting the growth of plants and plankton, and about three quarters of plant and animal species died out, including all non-bird dinosaurs and all pterosaurs. Huge volcanic eruptions in India, the Deccan Traps, were also under way at the time; most researchers see the impact as the main cause.",
+   "species": [
+    "Tyrannosaurus rex",
+    "Triceratops horridus"
+   ],
+   "sites": [
+    {
+     "name": "Chicxulub crater",
+     "lonlat": [
+      -89.5,
+      21.4
+     ],
+     "ma": 66,
+     "note": "The buried crater, found in oil-company surveys in 1978 and identified in 1991."
+    },
+    {
+     "name": "Deccan Traps, Western Ghats",
+     "lonlat": [
+      73.66,
+      17.92
+     ],
+     "ma": 66.3,
+     "note": "Thick lava flows in western India that erupted across the time of the extinction."
+    }
+   ],
+   "refs": [
+    "e:chicxulub-impact",
+    "e:end-cretaceous-extinction",
+    "e:deccan-traps"
+   ],
+   "imageIds": [
+    "chicxulub-impact-davis",
+    "chicxulub-crater-radar",
+    "kpg-boundary-stevns-klint"
+   ],
+   "images": [],
+   "evidence": "disputed",
+   "evidenceNote": "A single layer of impact debris marks the extinction worldwide, and most studies (Schulte and colleagues 2010; Chiarenza and colleagues 2020) find the impact enough to explain it, while others argue the Deccan eruptions played a large part.",
+   "sources": [
+    {
+     "title": "Schulte et al. 2010, Science: The Chicxulub asteroid impact and mass extinction at the Cretaceous-Paleogene boundary",
+     "url": "https://doi.org/10.1126/science.1177265"
+    },
+    {
+     "title": "Chiarenza et al. 2020, PNAS: Asteroid impact, not volcanism, caused the end-Cretaceous dinosaur extinction",
+     "url": "https://doi.org/10.1073/pnas.2006087117"
+    },
+    {
+     "title": "Wikipedia: Chicxulub crater",
+     "url": "https://en.wikipedia.org/wiki/Chicxulub_crater"
+    },
+    {
+     "title": "Wikipedia: Cretaceous–Paleogene extinction event",
+     "url": "https://en.wikipedia.org/wiki/Cretaceous–Paleogene_extinction_event"
+    }
+   ]
+  },
+  {
+   "id": "the-birds-survive",
+   "title": "The dinosaurs that survived: birds",
+   "ma": 66,
+   "dateLabel": "c. 66 million years ago and after",
+   "focus": [
+    5.68,
+    50.8
+   ],
+   "place": "Eben-Emael, near Maastricht, Belgium",
+   "text": "One branch of the dinosaurs made it through: the birds. A skull found in a quarry near Maastricht, about 66.7 million years old, belongs to Asteriornis, nicknamed the 'wonderchicken', a small, long-legged shore bird with features of both landfowl and waterfowl. It lived alongside toothed birds such as Ichthyornis relatives, which all died out. The impact destroyed forests across the world, and the birds that survived were probably small ground-dwellers with a varied diet. Every living bird descends from those few survivors, so dinosaurs are still all around us.",
+   "species": [
+    "Asteriornis maastrichtensis",
+    "Vegavis iaai"
+   ],
+   "sites": [
+    {
+     "name": "CBR-Romontbos quarry, Maastricht Formation",
+     "lonlat": [
+      5.68,
+      50.8
+     ],
+     "ma": 66.7,
+     "note": "Where the Asteriornis skull was found in 2000; the point is Eben-Emael, beside the quarry."
+    }
+   ],
+   "refs": [
+    "o:modern-birds",
+    "o:birds",
+    "e:end-cretaceous-extinction"
+   ],
+   "imageIds": [],
+   "images": [
+    {
+     "id": "asteriornis-beach",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Asteriornis_on_the_beach.png/1280px-Asteriornis_on_the_beach.png",
+     "page": "https://commons.wikimedia.org/wiki/File:Asteriornis_on_the_beach.png",
+     "width": 1542,
+     "height": 1996,
+     "type": "scene",
+     "caption": "Asteriornis, the 'wonderchicken', on the shore of a shallow sea in Late Cretaceous Europe, while smaller birds pick at a stranded marine reptile behind.",
+     "credit": "Daniel J. Field, Juan Benito, Sarah Werning, Albert Chen, Pei-Chen Kuo, Abi Crane, Klara E. Widrig, Daniel T. Ksepka, and John W.M. Jagt",
+     "license": "CC BY 4.0",
+     "note": "An artist's reconstruction (signed PMK 19) republished in a 2023 open-access paper; plumage colours are guesses."
+    },
+    {
+     "id": "asteriornis-skull-model",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/CT_scan_and_3D_printed_Asteriornis_skull.png/1920px-CT_scan_and_3D_printed_Asteriornis_skull.png",
+     "page": "https://commons.wikimedia.org/wiki/File:CT_scan_and_3D_printed_Asteriornis_skull.png",
+     "width": 2126,
+     "height": 2016,
+     "type": "fossil",
+     "caption": "A 3D print and CT scan of the skull of Asteriornis, a 66.7-million-year-old bird close to the ancestor of chickens and ducks.",
+     "credit": "Daniel J. Field, Juan Benito, Sarah Werning, Albert Chen, Pei-Chen Kuo, Abi Crane, Klara E. Widrig, Daniel T. Ksepka, and John W.M. Jagt",
+     "license": "CC BY 4.0",
+     "note": null
+    }
+   ],
+   "evidence": "disputed",
+   "evidenceNote": "The Belgian skull is accepted as a modern-type bird, but Vegavis from Antarctica, slightly older, was argued over for two decades before a skull described in 2025 supported it as a waterfowl relative, and gene studies place the first modern birds earlier still.",
+   "sources": [
+    {
+     "title": "Field et al. 2020, Nature: Late Cretaceous neornithine from Europe illuminates the origins of crown birds",
+     "url": "https://doi.org/10.1038/s41586-020-2096-0"
+    },
+    {
+     "title": "Field et al. 2018, Current Biology: Early evolution of modern birds structured by global forest collapse at the end-Cretaceous mass extinction",
+     "url": "https://doi.org/10.1016/j.cub.2018.04.062"
+    },
+    {
+     "title": "Wikipedia: Asteriornis",
+     "url": "https://en.wikipedia.org/wiki/Asteriornis"
+    },
+    {
+     "title": "Wikipedia: Vegavis",
+     "url": "https://en.wikipedia.org/wiki/Vegavis"
+    },
+    {
+     "title": "Wikipedia: Cretaceous–Paleogene extinction event",
+     "url": "https://en.wikipedia.org/wiki/Cretaceous–Paleogene_extinction_event"
+    }
+   ]
+  }
+ ]
+}

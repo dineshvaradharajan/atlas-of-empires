@@ -1,0 +1,1738 @@
+{
+ "id": "humans",
+ "title": "How humans evolved",
+ "summary": "From the first apes that may have walked upright about 7 million years ago to the end of the last Ice Age, this story follows the fossils, footprints, tools and DNA that show how our family tree grew and branched. Many kinds of humans lived at the same time, met and sometimes mixed, until our own species was the only one left.",
+ "from": 7,
+ "to": 0.012,
+ "chapters": [
+  {
+   "id": "first-upright-apes",
+   "title": "The first upright apes?",
+   "ma": 7.0,
+   "dateLabel": "c. 7 million years ago",
+   "focus": [
+    17.48,
+    16.24
+   ],
+   "place": "Djurab Desert, northern Chad",
+   "text": "DNA suggests that our line and the line leading to chimpanzees parted somewhere between about 13 and 5 million years ago. The oldest fossil that may belong on our side is Toumaï, a skull found in the Djurab Desert of Chad in 2001 and dated to about 7 million years ago. The hole where its spinal cord left the skull sits further forward than in apes, a hint that it held its head over an upright body. Orrorin from Kenya, about 6 million years old, and Ardipithecus from Ethiopia, 5.6 to 4.4 million years old, also seem to have walked upright on the ground while still climbing trees. Toumaï's brain was slightly smaller than a chimpanzee's.",
+   "species": [
+    "Sahelanthropus tchadensis",
+    "Orrorin tugenensis",
+    "Ardipithecus kadabba",
+    "Ardipithecus ramidus"
+   ],
+   "sites": [
+    {
+     "name": "Toros-Menalla (TM 266), Djurab Desert",
+     "lonlat": [
+      17.48,
+      16.24
+     ],
+     "ma": 7.0,
+     "note": "Where the Toumaï skull of Sahelanthropus was found in 2001."
+    },
+    {
+     "name": "Lukeino Formation, Tugen Hills",
+     "lonlat": [
+      35.67,
+      0.5
+     ],
+     "ma": 6.0,
+     "note": "Orrorin bones, including a thigh bone that suggests upright walking, about 6.1 to 5.7 million years old."
+    },
+    {
+     "name": "Aramis, Middle Awash",
+     "lonlat": [
+      40.47,
+      10.52
+     ],
+     "ma": 4.4,
+     "note": "Ardi, a partial Ardipithecus ramidus skeleton 4.4 million years old with a grasping big toe; older Ardipithecus kadabba teeth come from the same valley."
+    }
+   ],
+   "route": null,
+   "refs": [
+    "o:hominins",
+    "e:grasslands-spread"
+   ],
+   "imageIds": [],
+   "images": [
+    {
+     "id": "sahelanthropus-toumai-cast",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Sahelanthropus_tchadensis_-_TM_266-01-060-1.jpg/1920px-Sahelanthropus_tchadensis_-_TM_266-01-060-1.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Sahelanthropus_tchadensis_-_TM_266-01-060-1.jpg",
+     "width": 4239,
+     "height": 3571,
+     "type": "fossil",
+     "caption": "A cast of Toumaï, the 7-million-year-old skull of Sahelanthropus tchadensis from Chad.",
+     "credit": "Didier Descouens",
+     "license": "CC BY-SA 4.0",
+     "note": "A cast, photographed against a black background."
+    },
+    {
+     "id": "ardi-bones-addis",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Resti_di_ardipithecus_ramidus_detto_ardi%2C_da_aramis_%28afar%29%2C_4%2C4_milioni_di_anni_fa_01.jpg/1920px-Resti_di_ardipithecus_ramidus_detto_ardi%2C_da_aramis_%28afar%29%2C_4%2C4_milioni_di_anni_fa_01.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Resti_di_ardipithecus_ramidus_detto_ardi%2C_da_aramis_%28afar%29%2C_4%2C4_milioni_di_anni_fa_01.jpg",
+     "width": 3654,
+     "height": 3060,
+     "type": "fossil",
+     "caption": "The bones of Ardi, a 4.4-million-year-old Ardipithecus ramidus from Aramis, laid out at the National Museum of Ethiopia.",
+     "credit": "Sailko",
+     "license": "CC BY 3.0",
+     "note": "Photographed in the museum display; it may be a replica of the original bones."
+    }
+   ],
+   "evidence": "disputed",
+   "evidenceNote": "The skulls and bones are dated by the animal fossils and rock layers around them, but scientists still disagree about whether Sahelanthropus walked on two legs: studies in 2022 and 2026 say yes, while studies in 2020, 2023 and 2024 doubt it.",
+   "sources": [
+    {
+     "title": "Smithsonian Human Origins: Sahelanthropus tchadensis",
+     "url": "https://humanorigins.si.edu/evidence/human-fossils/species/sahelanthropus-tchadensis"
+    },
+    {
+     "title": "Wikipedia: Sahelanthropus",
+     "url": "https://en.wikipedia.org/wiki/Sahelanthropus"
+    },
+    {
+     "title": "Wikipedia: Orrorin",
+     "url": "https://en.wikipedia.org/wiki/Orrorin"
+    },
+    {
+     "title": "Wikipedia: Ardipithecus",
+     "url": "https://en.wikipedia.org/wiki/Ardipithecus"
+    },
+    {
+     "title": "Science Advances: Earliest evidence of hominin bipedalism in Sahelanthropus tchadensis (Williams et al. 2026)",
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1126%2Fsciadv.adv0130%22&resultType=core&format=json"
+    }
+   ]
+  },
+  {
+   "id": "lucys-kind",
+   "title": "Lucy's kind walks upright",
+   "ma": 3.66,
+   "dateLabel": "c. 3.66 million years ago",
+   "focus": [
+    35.21,
+    -3.22
+   ],
+   "place": "Laetoli, northern Tanzania",
+   "text": "About 3.66 million years ago, at Laetoli in Tanzania, upright walkers left trails of footprints in wet volcanic ash that soon hardened. Found by Mary Leakey's team in the 1970s, they are the oldest footprints that everyone agrees were made by a creature walking on two legs. They were most likely made by Australopithecus afarensis, the species of Lucy, a skeleton found at Hadar in Ethiopia in 1974 and about 3.2 million years old. Lucy's kind had brains not much bigger than a chimpanzee's and long arms with curved fingers for climbing, but hips and legs built for walking. A second trail at Laetoli, cleaned and studied again in 2019, has a different shape, so two kinds of upright walkers may have shared the area.",
+   "species": [
+    "Australopithecus anamensis",
+    "Australopithecus afarensis"
+   ],
+   "sites": [
+    {
+     "name": "Laetoli, Site G",
+     "lonlat": [
+      35.21,
+      -3.22
+     ],
+     "ma": 3.66,
+     "note": "Trails of footprints left by three upright walkers in volcanic ash."
+    },
+    {
+     "name": "Hadar, Afar",
+     "lonlat": [
+      40.63,
+      11.17
+     ],
+     "ma": 3.2,
+     "note": "Lucy, about 40 percent of one skeleton of Australopithecus afarensis, found in 1974."
+    },
+    {
+     "name": "Kanapoi, Lake Turkana",
+     "lonlat": [
+      36.07,
+      2.3
+     ],
+     "ma": 4.2,
+     "note": "The oldest Australopithecus fossils, of the species A. anamensis, about 4.2 million years old."
+    }
+   ],
+   "route": null,
+   "refs": [
+    "o:australopiths"
+   ],
+   "imageIds": [
+    "laetoli-footprints",
+    "lucy-skeleton",
+    "lucy-face"
+   ],
+   "images": [],
+   "evidence": "archaeology",
+   "evidenceNote": "The footprints and Lucy's bones lie between layers of volcanic ash whose age can be measured from the radioactive decay of argon.",
+   "sources": [
+    {
+     "title": "Smithsonian Human Origins: Australopithecus afarensis",
+     "url": "https://humanorigins.si.edu/evidence/human-fossils/species/australopithecus-afarensis"
+    },
+    {
+     "title": "Wikipedia: Laetoli",
+     "url": "https://en.wikipedia.org/wiki/Laetoli"
+    },
+    {
+     "title": "Wikipedia: Lucy (Australopithecus)",
+     "url": "https://en.wikipedia.org/wiki/Lucy_(Australopithecus)"
+    },
+    {
+     "title": "Nature: Footprint evidence of early hominin locomotor diversity at Laetoli, Tanzania (McNutt et al. 2021)",
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1038%2Fs41586-021-04187-7%22&resultType=core&format=json"
+    }
+   ]
+  },
+  {
+   "id": "first-stone-tools",
+   "title": "The first stone tools",
+   "ma": 3.3,
+   "dateLabel": "c. 3.3 million years ago",
+   "focus": [
+    35.75,
+    3.87
+   ],
+   "place": "Lomekwi, west shore of Lake Turkana, Kenya",
+   "text": "In 2011, on the west shore of Lake Turkana in Kenya, a team led by Sonia Harmand found stone cores, flakes and heavy anvils in layers dated to about 3.3 million years ago. That is about half a million years older than the oldest fossils of our own genus, so the toolmakers may have been Australopithecus or Kenyanthropus, whose fossils come from the same area. Some archaeologists doubt the date, arguing that the tools could have been washed down a slope from younger layers. The oldest tools of the Oldowan kind, sharp flakes struck from pebbles with a hammerstone, come from Nyayanga in western Kenya, about 2.9 million years old. They lay among butchered hippo bones and teeth of Paranthropus, a big-toothed cousin of ours.",
+   "species": [
+    "Kenyanthropus platyops",
+    "Australopithecus afarensis",
+    "Paranthropus (species not identified)"
+   ],
+   "sites": [
+    {
+     "name": "Lomekwi 3, West Turkana",
+     "lonlat": [
+      35.75,
+      3.87
+     ],
+     "ma": 3.3,
+     "note": "About 20 excavated and 130 surface stone artefacts, the oldest claimed stone tools."
+    },
+    {
+     "name": "Nyayanga, Homa Peninsula",
+     "lonlat": [
+      34.45,
+      -0.4
+     ],
+     "ma": 2.9,
+     "note": "The oldest known Oldowan tools, with butchered hippo bones and Paranthropus teeth, dated to about 3.0 to 2.6 million years ago."
+    }
+   ],
+   "route": null,
+   "refs": [],
+   "imageIds": [],
+   "images": [
+    {
+     "id": "kenyanthropus-skull",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Kenyanthropus_platyops_IMG_2945.JPG/1920px-Kenyanthropus_platyops_IMG_2945.JPG",
+     "page": "https://commons.wikimedia.org/wiki/File:Kenyanthropus_platyops_IMG_2945.JPG",
+     "width": 4416,
+     "height": 3312,
+     "type": "fossil",
+     "caption": "A skull of Kenyanthropus platyops on museum display; its fossils come from the Lomekwi area, so it is one possible maker of the first stone tools.",
+     "credit": "Rama",
+     "license": "Public domain",
+     "note": "Probably a cast. Who made the Lomekwi tools is not known."
+    },
+    {
+     "id": "olduvai-chopper-british-museum",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Olduvai_Chopper.JPG/1920px-Olduvai_Chopper.JPG",
+     "page": "https://commons.wikimedia.org/wiki/File:Olduvai_Chopper.JPG",
+     "width": 3648,
+     "height": 2736,
+     "type": "rock",
+     "caption": "An Oldowan chopper from Olduvai Gorge, about 1.8 million years old, in the British Museum: a pebble with flakes struck off one edge.",
+     "credit": "Archaeomoonwalker",
+     "license": "CC BY 3.0",
+     "note": "Younger than the Nyayanga tools, but made in the same Oldowan way."
+    }
+   ],
+   "evidence": "disputed",
+   "evidenceNote": "The Lomekwi tools are dated by the volcanic ash and magnetic reversals in the layers that hold them, but critics argue the tools may not have been made at the same time as those layers.",
+   "sources": [
+    {
+     "title": "Wikipedia: Lomekwi",
+     "url": "https://en.wikipedia.org/wiki/Lomekwi"
+    },
+    {
+     "title": "Nature: 3.3-million-year-old stone tools from Lomekwi 3, West Turkana, Kenya (Harmand et al. 2015)",
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1038%2Fnature14464%22&resultType=core&format=json"
+    },
+    {
+     "title": "Science News: Hominids may have been cutting-edge tool makers 2.6 million years ago (the Lomekwi dating doubts)",
+     "url": "https://www.sciencenews.org/article/homo-genus-earliest-stone-tool-artifacts-ethiopia-contested"
+    },
+    {
+     "title": "Max Planck Institute of Geoanthropology: Somebody used stone tools to butcher hippos 2.9 million years ago",
+     "url": "https://www.gea.mpg.de/39185/stone-tools-to-butcher-hippos"
+    },
+    {
+     "title": "Wikipedia: Oldowan",
+     "url": "https://en.wikipedia.org/wiki/Oldowan"
+    }
+   ]
+  },
+  {
+   "id": "first-of-our-genus",
+   "title": "The first of our genus, Homo",
+   "ma": 2.8,
+   "dateLabel": "c. 2.8 million years ago",
+   "focus": [
+    40.87,
+    11.37
+   ],
+   "place": "Ledi-Geraru, Afar, Ethiopia",
+   "text": "In 2013 Chalachew Seyoum found half a lower jaw at Ledi-Geraru in Ethiopia, lying in silts dated by volcanic ash to about 2.8 million years ago. Its shape leans towards Homo, making it the oldest known fossil of our genus. Teeth reported from the same area in 2025 show that early Homo and a new, still unnamed kind of Australopithecus lived there side by side between about 2.8 and 2.6 million years ago. Nearby, at Bokol Dora, toolmakers struck sharp-edged Oldowan tools between 2.61 and 2.58 million years ago. Later came Homo habilis, the 'handy man', named from fossils found at Olduvai Gorge in Tanzania in 1960.",
+   "species": [
+    "Homo (early, species not named)",
+    "Australopithecus (Ledi-Geraru, species not named)",
+    "Homo habilis"
+   ],
+   "sites": [
+    {
+     "name": "Ledi-Geraru (LD 350-1 jaw)",
+     "lonlat": [
+      40.87,
+      11.37
+     ],
+     "ma": 2.8,
+     "note": "The oldest known jaw of Homo, about 2.80 to 2.75 million years old."
+    },
+    {
+     "name": "Bokol Dora 1, Ledi-Geraru",
+     "lonlat": [
+      40.9,
+      11.4
+     ],
+     "ma": 2.6,
+     "note": "Systematically flaked Oldowan tools from layers dated to between 2.61 and 2.58 million years ago."
+    },
+    {
+     "name": "Olduvai Gorge",
+     "lonlat": [
+      35.35,
+      -2.99
+     ],
+     "ma": 1.75,
+     "note": "OH 7, the type fossil of Homo habilis, about 1.75 million years old, found in 1960."
+    }
+   ],
+   "route": null,
+   "refs": [
+    "o:homo"
+   ],
+   "imageIds": [],
+   "images": [
+    {
+     "id": "ld-350-1-jaw",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/LD_350-1_mandible.jpg/1920px-LD_350-1_mandible.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:LD_350-1_mandible.jpg",
+     "width": 2484,
+     "height": 2696,
+     "type": "fossil",
+     "caption": "The LD 350-1 jaw from Ledi-Geraru, about 2.8 million years old, the oldest known fossil of the genus Homo, seen from the side and from above.",
+     "credit": "Brian Villmoare",
+     "license": "CC BY 4.0",
+     "note": "The original fossil with a centimetre scale; the letters a and b label the two views."
+    },
+    {
+     "id": "homo-habilis-oh-24-replica",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/OH_24_replica_01.JPG/1920px-OH_24_replica_01.JPG",
+     "page": "https://commons.wikimedia.org/wiki/File:OH_24_replica_01.JPG",
+     "width": 3085,
+     "height": 2274,
+     "type": "fossil",
+     "caption": "A replica of OH 24, nicknamed Twiggy, a Homo habilis skull from Olduvai Gorge.",
+     "credit": "Nachosan",
+     "license": "CC BY-SA 3.0",
+     "note": "A museum replica."
+    },
+    {
+     "id": "olduvai-gorge",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Olduvai_Gorge_or_Oldupai_Gorge.jpg/1920px-Olduvai_Gorge_or_Oldupai_Gorge.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Olduvai_Gorge_or_Oldupai_Gorge.jpg",
+     "width": 7445,
+     "height": 3494,
+     "type": "landscape",
+     "caption": "Olduvai Gorge in Tanzania, where layers of old lake and volcanic deposits have yielded Homo habilis and Oldowan tools.",
+     "credit": "Noel Feans",
+     "license": "CC BY 2.0",
+     "note": "A modern photograph taken from the Olduvai Gorge Museum."
+    }
+   ],
+   "evidence": "archaeology",
+   "evidenceNote": "The jaw, the teeth and the tools are sandwiched between volcanic ash layers whose crystals record when each eruption happened.",
+   "sources": [
+    {
+     "title": "Wikipedia: LD 350-1",
+     "url": "https://en.wikipedia.org/wiki/LD_350-1"
+    },
+    {
+     "title": "Arizona State University News: New fossils and a new species of ancient human ancestor (Ledi-Geraru, 2025)",
+     "url": "https://news.asu.edu/20250813-science-and-technology-asu-scientists-uncover-new-fossils-and-new-species-ancient-human"
+    },
+    {
+     "title": "Nature: New discoveries of Australopithecus and Homo from Ledi-Geraru, Ethiopia (Villmoare et al. 2025)",
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1038%2Fs41586-025-09390-4%22&resultType=core&format=json"
+    },
+    {
+     "title": "PNAS: Earliest known Oldowan artifacts at >2.58 Ma from Ledi-Geraru, Ethiopia (Braun et al. 2019)",
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1073%2Fpnas.1820177116%22&resultType=core&format=json"
+    },
+    {
+     "title": "Smithsonian Human Origins: Homo habilis",
+     "url": "https://humanorigins.si.edu/evidence/human-fossils/species/homo-habilis"
+    }
+   ]
+  },
+  {
+   "id": "homo-erectus",
+   "title": "Homo erectus: a body like ours",
+   "ma": 2.04,
+   "dateLabel": "c. 2 million years ago",
+   "focus": [
+    27.76,
+    -25.99
+   ],
+   "place": "Drimolen cave, Cradle of Humankind, South Africa",
+   "text": "A small child's skull, rebuilt from more than 150 fragments dug from Drimolen cave near Johannesburg, is the oldest known fossil of Homo erectus, about 2 million years old. The same cave held the skull of Paranthropus robustus, so Homo, Paranthropus and Australopithecus all lived in South Africa at the same time. Homo erectus had long legs and shorter arms, a body like ours made for walking long distances on open ground. By about 1.76 million years ago, toolmakers at Kokiselei in Kenya were shaping the first hand-axes. The Turkana Boy, a nearly complete skeleton from Nariokotome in Kenya, about 1.5 to 1.6 million years old, was already about 1.5 metres tall when he died as a child.",
+   "species": [
+    "Homo erectus",
+    "Paranthropus robustus"
+   ],
+   "sites": [
+    {
+     "name": "Drimolen Main Quarry",
+     "lonlat": [
+      27.76,
+      -25.99
+     ],
+     "ma": 2.04,
+     "note": "DNH 134, the oldest Homo erectus skull, and DNH 152, the oldest Paranthropus robustus skull, about 2.04 to 1.95 million years old."
+    },
+    {
+     "name": "Kokiselei 4, West Turkana",
+     "lonlat": [
+      35.73,
+      4.1
+     ],
+     "ma": 1.76,
+     "note": "The oldest known hand-axes, about 1.76 million years old."
+    },
+    {
+     "name": "Nariokotome, West Turkana",
+     "lonlat": [
+      35.82,
+      4.27
+     ],
+     "ma": 1.55,
+     "note": "The Turkana Boy, the most complete Homo erectus skeleton, found in 1984."
+    }
+   ],
+   "route": null,
+   "refs": [
+    "o:homo"
+   ],
+   "imageIds": [],
+   "images": [
+    {
+     "id": "turkana-boy-nairobi",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Ni%C3%B1o_de_Turkana_-_Museo_Nacional_de_Nairobi.jpg/1920px-Ni%C3%B1o_de_Turkana_-_Museo_Nacional_de_Nairobi.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Ni%C3%B1o_de_Turkana_-_Museo_Nacional_de_Nairobi.jpg",
+     "width": 3072,
+     "height": 4080,
+     "type": "fossil",
+     "caption": "The Turkana Boy, the most complete skeleton of Homo erectus, on display at the National Museum in Nairobi, Kenya.",
+     "credit": "ProtoplasmaKid",
+     "license": "CC BY-SA 4.0",
+     "note": "The display may be a replica. Tall picture."
+    },
+    {
+     "id": "acheulean-hand-axe",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Biface_de_St_Acheul_MHNT.jpg/1920px-Biface_de_St_Acheul_MHNT.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Biface_de_St_Acheul_MHNT.jpg",
+     "width": 4061,
+     "height": 4060,
+     "type": "rock",
+     "caption": "A flint hand-axe from Saint-Acheul in France, the site that gave the Acheulean hand-axe tradition its name.",
+     "credit": "Didier Descouens",
+     "license": "CC BY-SA 4.0",
+     "note": "Much younger than the first African hand-axes, but shaped in the same way on both faces."
+    },
+    {
+     "id": "homo-erectus-head-nhm",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Homo_erectus_reconstruction%2C_Natural_History_Museum%2C_London.jpg/1920px-Homo_erectus_reconstruction%2C_Natural_History_Museum%2C_London.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Homo_erectus_reconstruction%2C_Natural_History_Museum%2C_London.jpg",
+     "width": 4896,
+     "height": 3264,
+     "type": "reconstruction",
+     "caption": "A model of a Homo erectus head made for the Natural History Museum in London.",
+     "credit": "Werner Ustorf",
+     "license": "CC BY-SA 2.0",
+     "note": "Photographed in black and white. The shape follows fossil skulls; skin, hair and expression are informed guesses."
+    }
+   ],
+   "evidence": "archaeology",
+   "evidenceNote": "The Drimolen skulls are dated from layers of flowstone, a kind of cave rock, laid down above and below them about 2.04 to 1.95 million years ago.",
+   "sources": [
+    {
+     "title": "University of Cape Town News: Fossil discoveries rewrite human history (Drimolen, 2020)",
+     "url": "https://news.uct.ac.za/article/-2020-04-03-fossil-discoveries-rewrite-human-history"
+    },
+    {
+     "title": "Science: Contemporaneity of Australopithecus, Paranthropus, and early Homo erectus in South Africa (Herries et al. 2020)",
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1126%2Fscience.aaw7293%22&resultType=core&format=json"
+    },
+    {
+     "title": "Smithsonian Human Origins: Homo erectus",
+     "url": "https://humanorigins.si.edu/evidence/human-fossils/species/homo-erectus"
+    },
+    {
+     "title": "Nature: An earlier origin for the Acheulian (Lepre et al. 2011)",
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1038%2Fnature10372%22&resultType=core&format=json"
+    },
+    {
+     "title": "Wikipedia: Turkana Boy",
+     "url": "https://en.wikipedia.org/wiki/Turkana_Boy"
+    }
+   ]
+  },
+  {
+   "id": "out-of-africa",
+   "title": "The first humans leave Africa",
+   "ma": 1.8,
+   "dateLabel": "c. 1.8 million years ago",
+   "focus": [
+    44.2,
+    41.33
+   ],
+   "place": "Dmanisi, southern Georgia",
+   "text": "By about 1.8 million years ago, humans had reached Dmanisi in Georgia, in the hills between the Black Sea and the Caspian. Five skulls and more than 10,000 simple stone tools have been found there, dated by volcanic rock and magnetic signals to between 1.85 and 1.77 million years ago. The Dmanisi people had small brains, 546 to 775 cubic centimetres, and are usually counted as an early form of Homo erectus. One old man had lost all but one tooth years before he died, so others may have helped him to eat. Stone tools from Shangchen in China are even older, about 2.1 million years, so the first journeys out of Africa may have begun earlier still.",
+   "species": [
+    "Homo erectus (Dmanisi form, sometimes called Homo georgicus)"
+   ],
+   "sites": [
+    {
+     "name": "Dmanisi",
+     "lonlat": [
+      44.2,
+      41.33
+     ],
+     "ma": 1.8,
+     "note": "Five skulls, about a hundred other bones and over 10,000 Oldowan-style tools, 1.85 to 1.77 million years old."
+    },
+    {
+     "name": "Shangchen, Loess Plateau",
+     "lonlat": [
+      109.49,
+      34.22
+     ],
+     "ma": 2.12,
+     "note": "96 stone tools in layers from about 2.12 to 1.26 million years old; no human bones."
+    }
+   ],
+   "route": {
+    "label": "Early Homo spreads from East Africa to the Caucasus",
+    "evidence": "archaeology",
+    "path": [
+     [
+      36.2,
+      3.9,
+      1.9
+     ],
+     [
+      36.0,
+      15.0,
+      1.87
+     ],
+     [
+      34.5,
+      29.5,
+      1.85
+     ],
+     [
+      36.5,
+      35.5,
+      1.83
+     ],
+     [
+      44.2,
+      41.33,
+      1.8
+     ]
+    ]
+   },
+   "refs": [
+    "o:homo"
+   ],
+   "imageIds": [],
+   "images": [
+    {
+     "id": "dmanisi-skull-5",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Dmanisi_hominin_skull_D4500_and_mandible_D2600._National_Museum_of_Georgia.jpg/1920px-Dmanisi_hominin_skull_D4500_and_mandible_D2600._National_Museum_of_Georgia.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Dmanisi_hominin_skull_D4500_and_mandible_D2600._National_Museum_of_Georgia.jpg",
+     "width": 2906,
+     "height": 2891,
+     "type": "fossil",
+     "caption": "Dmanisi Skull 5 (D4500) with its jaw (D2600), about 1.8 million years old, at the National Museum of Georgia.",
+     "credit": "Kober",
+     "license": "CC0",
+     "note": null
+    },
+    {
+     "id": "dmanisi-skull-in-ground",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Skull_in_dmanisi_archaeological_site.JPG/1920px-Skull_in_dmanisi_archaeological_site.JPG",
+     "page": "https://commons.wikimedia.org/wiki/File:Skull_in_dmanisi_archaeological_site.JPG",
+     "width": 3264,
+     "height": 2448,
+     "type": "fossil",
+     "caption": "Skull 5 lying in the ground during excavation at Dmanisi, Georgia.",
+     "credit": "Guy Bar-Oz",
+     "license": "CC BY-SA 3.0",
+     "note": null
+    }
+   ],
+   "evidence": "archaeology",
+   "evidenceNote": "The volcanic rock under the Dmanisi bones is dated by argon, and the magnetic direction frozen in the layers above it narrows the age to about 1.8 million years.",
+   "sources": [
+    {
+     "title": "Wikipedia: Dmanisi hominins",
+     "url": "https://en.wikipedia.org/wiki/Dmanisi_hominins"
+    },
+    {
+     "title": "Smithsonian Human Origins: Homo erectus",
+     "url": "https://humanorigins.si.edu/evidence/human-fossils/species/homo-erectus"
+    },
+    {
+     "title": "Wikipedia: Shangchen",
+     "url": "https://en.wikipedia.org/wiki/Shangchen"
+    },
+    {
+     "title": "Nature: Hominin occupation of the Chinese Loess Plateau since about 2.1 million years ago (Zhu et al. 2018)",
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1038%2Fs41586-018-0299-4%22&resultType=core&format=json"
+    }
+   ]
+  },
+  {
+   "id": "java-and-china",
+   "title": "Homo erectus reaches Java and China",
+   "ma": 1.3,
+   "dateLabel": "c. 1.3 million years ago",
+   "focus": [
+    110.83,
+    -7.45
+   ],
+   "place": "Sangiran, Central Java, Indonesia",
+   "text": "Homo erectus reached Java by about 1.3 million years ago, and no earlier than 1.5 million. That date for the Sangiran fossil beds comes from tiny volcanic crystals in the layers above, below and among the bones, and it replaced older estimates of up to 1.7 million years. On the way east, hand-axe makers had reached Attirampakkam in southern India by about 1.5 million years ago. In northern China, the 'Peking Man' fossils from Zhoukoudian near Beijing are about 770,000 years old; the original bones were lost in 1941. Homo erectus lived on in Asia for a very long time, perhaps until about 110,000 years ago.",
+   "species": [
+    "Homo erectus"
+   ],
+   "sites": [
+    {
+     "name": "Sangiran",
+     "lonlat": [
+      110.83,
+      -7.45
+     ],
+     "ma": 1.3,
+     "note": "Java's richest Homo erectus fossil beds; the first humans arrived about 1.3 million years ago."
+    },
+    {
+     "name": "Attirampakkam",
+     "lonlat": [
+      79.89,
+      13.23
+     ],
+     "ma": 1.51,
+     "note": "Hand-axes and cleavers dated to about 1.51 million years ago by the decay of aluminium and beryllium in buried quartz."
+    },
+    {
+     "name": "Zhoukoudian (Peking Man site)",
+     "lonlat": [
+      115.92,
+      39.73
+     ],
+     "ma": 0.77,
+     "note": "Peking Man fossils and tools from the lower layers, about 770,000 years old."
+    }
+   ],
+   "route": {
+    "label": "Homo erectus spreads across southern Asia to Java",
+    "evidence": "archaeology",
+    "path": [
+     [
+      44.2,
+      41.33,
+      1.8
+     ],
+     [
+      58.0,
+      27.0,
+      1.65
+     ],
+     [
+      79.89,
+      13.23,
+      1.51
+     ],
+     [
+      98.5,
+      12.0,
+      1.4
+     ],
+     [
+      104.0,
+      1.5,
+      1.35
+     ],
+     [
+      110.83,
+      -7.45,
+      1.3
+     ]
+    ]
+   },
+   "refs": [
+    "o:homo"
+   ],
+   "imageIds": [],
+   "images": [
+    {
+     "id": "sangiran-17-replica",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Sangiran_17-01.JPG/1920px-Sangiran_17-01.JPG",
+     "page": "https://commons.wikimedia.org/wiki/File:Sangiran_17-01.JPG",
+     "width": 2816,
+     "height": 2112,
+     "type": "fossil",
+     "caption": "A replica of Sangiran 17, a Homo erectus skull from Sangiran, Java.",
+     "credit": "Gerbil",
+     "license": "CC BY-SA 3.0",
+     "note": "Replica in the museum at Tautavel, France; the white dotted line on the side is part of the display."
+    },
+    {
+     "id": "peking-man-skull-replica",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Peking_Man_Skull_%289886362044%29.jpg/1920px-Peking_Man_Skull_%289886362044%29.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Peking_Man_Skull_%289886362044%29.jpg",
+     "width": 3888,
+     "height": 2592,
+     "type": "fossil",
+     "caption": "A replica of a Peking Man skullcap from Zhoukoudian, shown at the Capital Museum in Beijing.",
+     "credit": "Gary Todd from Xinzheng, China",
+     "license": "CC0",
+     "note": "The original Peking Man fossils were lost in 1941."
+    }
+   ],
+   "evidence": "archaeology",
+   "evidenceNote": "Zircon crystals from volcanic ash at Sangiran were dated by uranium-lead and fission-track methods, and buried quartz at Attirampakkam and Zhoukoudian by the decay of aluminium-26 and beryllium-10.",
+   "sources": [
+    {
+     "title": "EurekAlert (AAAS): Homo erectus arrived in Sangiran 300,000 years later than thought (Matsu'ura et al. 2020)",
+     "url": "https://www.eurekalert.org/news-releases/766424"
+    },
+    {
+     "title": "Science: Early Pleistocene presence of Acheulian hominins in South India (Pappu et al. 2011)",
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1126%2Fscience.1200183%22&resultType=core&format=json"
+    },
+    {
+     "title": "Nature: Age of Zhoukoudian Homo erectus determined with 26Al/10Be burial dating (Shen et al. 2009)",
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1038%2Fnature07741%22&resultType=core&format=json"
+    },
+    {
+     "title": "Wikipedia: Peking Man",
+     "url": "https://en.wikipedia.org/wiki/Peking_Man"
+    },
+    {
+     "title": "Smithsonian Human Origins: Homo erectus",
+     "url": "https://humanorigins.si.edu/evidence/human-fossils/species/homo-erectus"
+    }
+   ]
+  },
+  {
+   "id": "atapuerca",
+   "title": "Early Europeans and the Neanderthal line",
+   "ma": 0.43,
+   "dateLabel": "c. 430,000 years ago",
+   "focus": [
+    -3.52,
+    42.35
+   ],
+   "place": "Sierra de Atapuerca, Burgos, Spain",
+   "text": "Humans were in Spain by 1.4 to 1.1 million years ago: part of a face from Sima del Elefante, in the Atapuerca hills, is the oldest human face yet found in western Europe. Nearby at Gran Dolina, Homo antecessor lived about 900,000 to 800,000 years ago. In a deep pit in the same hills, Sima de los Huesos, lie the bones of at least 28 people, about 430,000 years old. Their faces already have Neanderthal features, and DNA from their bones shows they belonged to the Neanderthal line. Further north, the Mauer jaw from Germany, about 609,000 years old, gave its name to Homo heidelbergensis.",
+   "species": [
+    "Homo aff. erectus",
+    "Homo antecessor",
+    "Homo heidelbergensis",
+    "Homo neanderthalensis (early)"
+   ],
+   "sites": [
+    {
+     "name": "Sima de los Huesos, Atapuerca",
+     "lonlat": [
+      -3.52,
+      42.35
+     ],
+     "ma": 0.43,
+     "note": "Bones of at least 28 early members of the Neanderthal line, with a single hand-axe."
+    },
+    {
+     "name": "Sima del Elefante, Atapuerca",
+     "lonlat": [
+      -3.52,
+      42.35
+     ],
+     "ma": 1.25,
+     "note": "ATE7-1, the oldest human face in western Europe, 1.4 to 1.1 million years old."
+    },
+    {
+     "name": "Gran Dolina, Atapuerca",
+     "lonlat": [
+      -3.52,
+      42.35
+     ],
+     "ma": 0.85,
+     "note": "Fossils of Homo antecessor, about 900,000 to 800,000 years old."
+    },
+    {
+     "name": "Mauer",
+     "lonlat": [
+      8.8,
+      49.35
+     ],
+     "ma": 0.609,
+     "note": "The Mauer jaw, type fossil of Homo heidelbergensis, dated to about 609,000 years ago."
+    }
+   ],
+   "route": null,
+   "refs": [
+    "o:neanderthals"
+   ],
+   "imageIds": [],
+   "images": [
+    {
+     "id": "sima-de-los-huesos-cranium-5",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Natural_History_Museum_054_%288043309935%29.jpg/1920px-Natural_History_Museum_054_%288043309935%29.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Natural_History_Museum_054_%288043309935%29.jpg",
+     "width": 4288,
+     "height": 3216,
+     "type": "fossil",
+     "caption": "A cast of Cranium 5, one of the key finds from Sima de los Huesos, shown at the Natural History Museum in London.",
+     "credit": "AnemoneProjectors (talk) (on Flickr)",
+     "license": "CC BY-SA 2.0",
+     "note": null
+    },
+    {
+     "id": "mauer-jaw",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Mandibel_from_Mauer.JPG/1920px-Mandibel_from_Mauer.JPG",
+     "page": "https://commons.wikimedia.org/wiki/File:Mandibel_from_Mauer.JPG",
+     "width": 2882,
+     "height": 2506,
+     "type": "fossil",
+     "caption": "The Mauer jaw from near Heidelberg, about 609,000 years old, the type fossil of Homo heidelbergensis.",
+     "credit": "Gerbil",
+     "license": "CC BY 3.0",
+     "note": "The original fossil."
+    }
+   ],
+   "evidence": "archaeology",
+   "evidenceNote": "The Sima de los Huesos layer is dated by several methods, including uranium-series dating of cave rock and luminescence of sediments, and ancient DNA from the bones ties them to the Neanderthals.",
+   "sources": [
+    {
+     "title": "Science: Neandertal roots: cranial and chronological evidence from Sima de los Huesos (Arsuaga et al. 2014)",
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1126%2Fscience.1253958%22&resultType=core&format=json"
+    },
+    {
+     "title": "Nature: Nuclear DNA sequences from the Middle Pleistocene Sima de los Huesos hominins (Meyer et al. 2016)",
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1038%2Fnature17405%22&resultType=core&format=json"
+    },
+    {
+     "title": "Nature: The earliest human face of Western Europe (Huguet et al. 2025)",
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1038%2Fs41586-025-08681-0%22&resultType=core&format=json"
+    },
+    {
+     "title": "PNAS: Radiometric dating of the type-site for Homo heidelbergensis at Mauer, Germany (Wagner et al. 2010)",
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1073%2Fpnas.1012722107%22&resultType=core&format=json"
+    },
+    {
+     "title": "Smithsonian Human Origins: Homo heidelbergensis",
+     "url": "https://humanorigins.si.edu/evidence/human-fossils/species/homo-heidelbergensis"
+    }
+   ]
+  },
+  {
+   "id": "our-species",
+   "title": "Our species appears in Africa",
+   "ma": 0.315,
+   "dateLabel": "c. 315,000 years ago",
+   "focus": [
+    -8.87,
+    31.85
+   ],
+   "place": "Jebel Irhoud, Morocco",
+   "text": "Skulls, jaws and teeth from Jebel Irhoud, an old cave in Morocco, are the oldest known fossils of our own species, Homo sapiens, about 315,000 years old. They were dated using flint tools found with them that had been heated in fires. Their faces look like ours, but their braincases were longer and lower, so the modern head shape came together only gradually. Fossils from Omo Kibish in Ethiopia, at least 233,000 years old, have fully modern skulls. Together the finds suggest that our species took shape across Africa, not in one spot.",
+   "species": [
+    "Homo sapiens"
+   ],
+   "sites": [
+    {
+     "name": "Jebel Irhoud",
+     "lonlat": [
+      -8.87,
+      31.85
+     ],
+     "ma": 0.315,
+     "note": "The oldest Homo sapiens fossils, with Middle Stone Age tools, about 315,000 years old."
+    },
+    {
+     "name": "Omo Kibish",
+     "lonlat": [
+      35.97,
+      4.8
+     ],
+     "ma": 0.233,
+     "note": "Omo I, a fully modern skull, at least 233,000 years old."
+    }
+   ],
+   "route": null,
+   "refs": [
+    "o:homo-sapiens"
+   ],
+   "imageIds": [],
+   "images": [
+    {
+     "id": "jebel-irhoud-1-cast",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Jebel_Irhoud-1_NMNH.jpg/1280px-Jebel_Irhoud-1_NMNH.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Jebel_Irhoud-1_NMNH.jpg",
+     "width": 1453,
+     "height": 1546,
+     "type": "fossil",
+     "caption": "A cast of the Jebel Irhoud 1 skull from Morocco, with a face like ours and a long, low braincase.",
+     "credit": "Jonathan Chen",
+     "license": "CC BY-SA 4.0",
+     "note": "Cast on display at the Smithsonian's National Museum of Natural History."
+    },
+    {
+     "id": "omo-kibish-skull-replica",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Omo_Kibish_-_MCN_4152_%28cropped%29.jpg/1920px-Omo_Kibish_-_MCN_4152_%28cropped%29.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Omo_Kibish_-_MCN_4152_%28cropped%29.jpg",
+     "width": 2352,
+     "height": 2571,
+     "type": "fossil",
+     "caption": "A reproduction of the Omo I skull from Omo Kibish, Ethiopia, at least 233,000 years old.",
+     "credit": "GuillaumeG",
+     "license": "CC BY-SA 4.0",
+     "note": "The pale pieces are the fossil fragments; the dark parts are filled in. On display at the Museum of Black Civilisations in Dakar."
+    }
+   ],
+   "evidence": "archaeology",
+   "evidenceNote": "Burnt flints from Jebel Irhoud were dated by thermoluminescence, which measures how long ago they were last heated; a tooth gave a similar age by another method.",
+   "sources": [
+    {
+     "title": "Nature: The age of the hominin fossils from Jebel Irhoud, Morocco (Richter et al. 2017)",
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1038%2Fnature22335%22&resultType=core&format=json"
+    },
+    {
+     "title": "Nature: New fossils from Jebel Irhoud, Morocco and the pan-African origin of Homo sapiens (Hublin et al. 2017)",
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1038%2Fnature22336%22&resultType=core&format=json"
+    },
+    {
+     "title": "Nature: Age of the oldest known Homo sapiens from eastern Africa (Vidal et al. 2022)",
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1038%2Fs41586-021-04275-8%22&resultType=core&format=json"
+    }
+   ]
+  },
+  {
+   "id": "many-kinds-of-humans",
+   "title": "Many kinds of humans at once",
+   "ma": 0.3,
+   "dateLabel": "c. 335,000 to 236,000 years ago",
+   "focus": [
+    27.71,
+    -26.02
+   ],
+   "place": "Rising Star cave, Cradle of Humankind, South Africa",
+   "text": "Deep inside the Rising Star cave system near Johannesburg, excavations from 2013 recovered the bones of at least 15 individuals of a new species, Homo naledi. They lived between about 335,000 and 236,000 years ago, yet had a mix of old and new features: shoulders and hips like Australopithecus, hands and feet more like ours. The Kabwe skull from Zambia, about 299,000 years old, belongs to yet another group, often called Homo heidelbergensis. So Africa held at least three kinds of humans at the same time as early Homo sapiens, while Neanderthals, Denisovans and Homo erectus lived in Europe and Asia. The team that found Homo naledi argues that it buried its dead on purpose, but other scientists say the evidence does not show this.",
+   "species": [
+    "Homo naledi",
+    "Homo heidelbergensis (or Homo rhodesiensis)",
+    "Homo sapiens"
+   ],
+   "sites": [
+    {
+     "name": "Rising Star cave (Dinaledi Chamber)",
+     "lonlat": [
+      27.71,
+      -26.02
+     ],
+     "ma": 0.3,
+     "note": "More than 15 Homo naledi individuals, dated to between about 335,000 and 236,000 years ago."
+    },
+    {
+     "name": "Kabwe (Broken Hill)",
+     "lonlat": [
+      28.45,
+      -14.43
+     ],
+     "ma": 0.299,
+     "note": "A well-preserved skull found by miners in 1921, dated directly to about 299,000 years ago."
+    }
+   ],
+   "route": null,
+   "refs": [],
+   "imageIds": [],
+   "images": [
+    {
+     "id": "homo-naledi-skull",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Homo_naledi_assembled_skull.jpg/1280px-Homo_naledi_assembled_skull.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Homo_naledi_assembled_skull.jpg",
+     "width": 1357,
+     "height": 1215,
+     "type": "fossil",
+     "caption": "The pieced-together skull of Dinaledi Hominin 1, the type fossil of Homo naledi from the Rising Star cave.",
+     "credit": "Berger et al. 2015",
+     "license": "CC BY 4.0",
+     "note": null
+    },
+    {
+     "id": "kabwe-skull-replica",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Broken_Hill_Skull_%28Replica01%29.jpg/1920px-Broken_Hill_Skull_%28Replica01%29.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Broken_Hill_Skull_%28Replica01%29.jpg",
+     "width": 1996,
+     "height": 2127,
+     "type": "fossil",
+     "caption": "A replica of the Kabwe (Broken Hill) skull from Zambia, about 299,000 years old.",
+     "credit": "Gerbil",
+     "license": "CC BY-SA 3.0",
+     "note": "Replica in the museum at Mauer, Germany."
+    },
+    {
+     "id": "four-homo-skulls-nhm",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Comparison_of_skull_features_of_Homo_naledi_and_other_early_human_species.jpg/1920px-Comparison_of_skull_features_of_Homo_naledi_and_other_early_human_species.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Comparison_of_skull_features_of_Homo_naledi_and_other_early_human_species.jpg",
+     "width": 4473,
+     "height": 2241,
+     "type": "fossil",
+     "caption": "Replica skulls of Homo habilis, Homo erectus, Homo floresiensis and Homo naledi side by side, with the features that tell them apart.",
+     "credit": "Chris Stringer, Natural History Museum, United Kingdom",
+     "license": "CC BY 4.0",
+     "note": "A labelled comparison prepared at the Natural History Museum, London."
+    }
+   ],
+   "evidence": "disputed",
+   "evidenceNote": "The age of Homo naledi comes from dating its teeth and the cave rock above them, but the claim that the bodies were deliberately buried is strongly contested.",
+   "sources": [
+    {
+     "title": "Smithsonian Human Origins: Homo naledi",
+     "url": "https://humanorigins.si.edu/evidence/human-fossils/species/homo-naledi"
+    },
+    {
+     "title": "eLife: The age of Homo naledi and associated sediments in the Rising Star Cave (Dirks et al. 2017)",
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.7554%2Felife.24231%22&resultType=core&format=json"
+    },
+    {
+     "title": "eLife: Evidence for deliberate burial of the dead by Homo naledi (Berger et al. 2025)",
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.7554%2Felife.89106%22&resultType=core&format=json"
+    },
+    {
+     "title": "Journal of Human Evolution: No scientific evidence that Homo naledi buried their dead and produced rock art (Martinón-Torres et al. 2024)",
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1016%2Fj.jhevol.2023.103464%22&resultType=core&format=json"
+    },
+    {
+     "title": "Nature: Dating the skull from Broken Hill, Zambia (Grün et al. 2020)",
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1038%2Fs41586-020-2165-4%22&resultType=core&format=json"
+    }
+   ]
+  },
+  {
+   "id": "denisovans",
+   "title": "Denisovans: humans found by DNA",
+   "ma": 0.2,
+   "dateLabel": "c. 200,000 to 50,000 years ago",
+   "focus": [
+    84.68,
+    51.4
+   ],
+   "place": "Denisova Cave, Altai Mountains, Siberia",
+   "text": "In 2010, DNA from a child's tiny finger bone found in Denisova Cave in Siberia revealed a kind of human that nobody had known about: the Denisovans. They were close relatives of the Neanderthals, and one girl from the cave, nicknamed Denny, had a Neanderthal mother and a Denisovan father. Denisovan DNA in the cave's layers goes back about 217,000 years. A jaw from a cave high on the Tibetan Plateau, at least 160,000 years old, and a nearly complete skull from Harbin in China, at least 146,000 years old, have been identified as Denisovan from ancient proteins and DNA, at last giving them a face. Denisovans also had children with our species: up to about 5 percent of the DNA of people in New Guinea and nearby islands comes from them.",
+   "species": [
+    "Denisovans",
+    "Homo neanderthalensis"
+   ],
+   "sites": [
+    {
+     "name": "Denisova Cave",
+     "lonlat": [
+      84.68,
+      51.4
+     ],
+     "ma": 0.2,
+     "note": "Bones and sediment DNA of Denisovans and Neanderthals, from about 217,000 to 55,000 years ago."
+    },
+    {
+     "name": "Baishiya Karst Cave, Xiahe",
+     "lonlat": [
+      102.57,
+      35.45
+     ],
+     "ma": 0.16,
+     "note": "A Denisovan jaw at least 160,000 years old, 3,280 metres above sea level."
+    },
+    {
+     "name": "Harbin",
+     "lonlat": [
+      126.83,
+      45.75
+     ],
+     "ma": 0.146,
+     "note": "A nearly complete skull, at least 146,000 years old, shown in 2025 to be Denisovan."
+    }
+   ],
+   "route": null,
+   "refs": [],
+   "imageIds": [],
+   "images": [
+    {
+     "id": "baishiya-karst-cave",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Baishiya_Karst_Cave.jpg/1920px-Baishiya_Karst_Cave.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Baishiya_Karst_Cave.jpg",
+     "width": 5355,
+     "height": 3575,
+     "type": "landscape",
+     "caption": "The entrance of Baishiya Karst Cave, 3,280 metres up on the Tibetan Plateau, where a Denisovan jaw was found.",
+     "credit": "Dongju Zhang",
+     "license": "CC BY-SA 4.0",
+     "note": "A modern photograph."
+    },
+    {
+     "id": "xiahe-mandible",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Xiahe_mandible.jpg/1920px-Xiahe_mandible.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Xiahe_mandible.jpg",
+     "width": 4044,
+     "height": 2196,
+     "type": "fossil",
+     "caption": "The Xiahe jaw, at least 160,000 years old, the first Denisovan fossil found outside Denisova Cave.",
+     "credit": "Dongju Zhang",
+     "license": "CC BY-SA 4.0",
+     "note": null
+    }
+   ],
+   "evidence": "genetic",
+   "evidenceNote": "Most of what we know about Denisovans comes from DNA and proteins recovered from small bones, teeth and cave dirt, and from Denisovan pieces in the DNA of living people.",
+   "sources": [
+    {
+     "title": "Wikipedia: Denisovan",
+     "url": "https://en.wikipedia.org/wiki/Denisovan"
+    },
+    {
+     "title": "Nature: Timing of archaic hominin occupation of Denisova Cave in southern Siberia (Jacobs et al. 2019)",
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1038%2Fs41586-018-0843-2%22&resultType=core&format=json"
+    },
+    {
+     "title": "Nature: A late Middle Pleistocene Denisovan mandible from the Tibetan Plateau (Chen et al. 2019)",
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1038%2Fs41586-019-1139-x%22&resultType=core&format=json"
+    },
+    {
+     "title": "Science: The proteome of the late Middle Pleistocene Harbin individual (Fu et al. 2025)",
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1126%2Fscience.adu9677%22&resultType=core&format=json"
+    },
+    {
+     "title": "Cell: Denisovan mitochondrial DNA from dental calculus of the >146,000-year-old Harbin cranium (Fu et al. 2025)",
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1016%2Fj.cell.2025.05.040%22&resultType=core&format=json"
+    }
+   ]
+  },
+  {
+   "id": "island-humans",
+   "title": "Small humans on the islands",
+   "ma": 0.1,
+   "dateLabel": "c. 100,000 to 60,000 years ago",
+   "focus": [
+    120.44,
+    -8.53
+   ],
+   "place": "Liang Bua, Flores, Indonesia",
+   "text": "In 2003, in Liang Bua cave on the island of Flores in Indonesia, scientists found the skeleton of a tiny adult, about 1 metre tall with a brain of about 380 cubic centimetres. The species, Homo floresiensis, lived there between about 100,000 and 60,000 years ago. Jaws, teeth and an arm bone from Mata Menge on the same island show that very small humans were on Flores by about 700,000 years ago. In 2019 another small species, Homo luzonensis, was named from bones and teeth in Callao Cave in the Philippines, found in a layer about 67,000 years old. Whether these island people came from Homo erectus that shrank over time, or from an older and smaller kind of human, is still argued.",
+   "species": [
+    "Homo floresiensis",
+    "Homo luzonensis"
+   ],
+   "sites": [
+    {
+     "name": "Liang Bua",
+     "lonlat": [
+      120.44,
+      -8.53
+     ],
+     "ma": 0.1,
+     "note": "Skeletons of Homo floresiensis, about 100,000 to 60,000 years old; their stone tools range from 190,000 to 50,000 years."
+    },
+    {
+     "name": "Mata Menge, So'a Basin",
+     "lonlat": [
+      121.12,
+      -8.65
+     ],
+     "ma": 0.7,
+     "note": "Small jaws, teeth and an arm bone about 700,000 years old, probably ancestors of Homo floresiensis."
+    },
+    {
+     "name": "Callao Cave",
+     "lonlat": [
+      121.82,
+      17.7
+     ],
+     "ma": 0.067,
+     "note": "Teeth and bones of at least three Homo luzonensis individuals, in the layer of a foot bone dated to 67,000 years ago."
+    }
+   ],
+   "route": null,
+   "refs": [],
+   "imageIds": [],
+   "images": [
+    {
+     "id": "liang-bua-cave",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Homo_floresiensis_cave.jpg/1920px-Homo_floresiensis_cave.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Homo_floresiensis_cave.jpg",
+     "width": 3008,
+     "height": 2000,
+     "type": "landscape",
+     "caption": "Inside Liang Bua cave on Flores, where Homo floresiensis was found in 2003.",
+     "credit": "Rosino",
+     "license": "CC BY-SA 2.0",
+     "note": "Photographed in 2007, with excavation pits on the cave floor."
+    },
+    {
+     "id": "homo-floresiensis-skull-cast",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Homo_floresiensis_skull_-_Naturmuseum_Senckenberg_-_DSC02091.JPG/1920px-Homo_floresiensis_skull_-_Naturmuseum_Senckenberg_-_DSC02091.JPG",
+     "page": "https://commons.wikimedia.org/wiki/File:Homo_floresiensis_skull_-_Naturmuseum_Senckenberg_-_DSC02091.JPG",
+     "width": 3240,
+     "height": 4320,
+     "type": "fossil",
+     "caption": "A cast of the skull of LB1, the small adult Homo floresiensis from Liang Bua.",
+     "credit": "Daderot",
+     "license": "CC0",
+     "note": "Cast on display at the Senckenberg Natural History Museum, Frankfurt. Tall picture."
+    },
+    {
+     "id": "callao-cave",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Callao_Cave_%289407095908%29.jpg/1920px-Callao_Cave_%289407095908%29.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Callao_Cave_%289407095908%29.jpg",
+     "width": 4928,
+     "height": 3264,
+     "type": "landscape",
+     "caption": "Light falling into Callao Cave in northern Luzon, the Philippines, where Homo luzonensis was found.",
+     "credit": "mkirader",
+     "license": "CC BY 2.0",
+     "note": "A modern photograph of the show cave."
+    }
+   ],
+   "evidence": "disputed",
+   "evidenceNote": "The island fossils are well dated, but where these small humans came from is disputed: most researchers now favour shrunken Homo erectus, others an earlier, smaller ancestor from Africa.",
+   "sources": [
+    {
+     "title": "Nature: A new small-bodied hominin from the Late Pleistocene of Flores, Indonesia (Brown et al. 2004)",
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1038%2Fnature02999%22&resultType=core&format=json"
+    },
+    {
+     "title": "Nature: Revised stratigraphy and chronology for Homo floresiensis at Liang Bua (Sutikna et al. 2016)",
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1038%2Fnature17179%22&resultType=core&format=json"
+    },
+    {
+     "title": "Nature: Homo floresiensis-like fossils from the early Middle Pleistocene of Flores (van den Bergh et al. 2016)",
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1038%2Fnature17999%22&resultType=core&format=json"
+    },
+    {
+     "title": "Nature Communications: Early evolution of small body size in Homo floresiensis (Kaifu et al. 2024)",
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1038%2Fs41467-024-50649-7%22&resultType=core&format=json"
+    },
+    {
+     "title": "Nature: A new species of Homo from the Late Pleistocene of the Philippines (Détroit et al. 2019)",
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1038%2Fs41586-019-1067-9%22&resultType=core&format=json"
+    }
+   ]
+  },
+  {
+   "id": "across-the-sea-to-sahul",
+   "title": "Across the sea to Sahul",
+   "ma": 0.065,
+   "dateLabel": "c. 65,000 or 50,000 years ago (disputed)",
+   "focus": [
+    132.88,
+    -12.5
+   ],
+   "place": "Madjedbebe rock shelter, Arnhem Land, Australia",
+   "text": "Our species spread out of Africa and along southern Asia to Sahul, the single landmass that joined Australia and New Guinea when the sea was low. Even then, reaching it meant crossing stretches of open sea between the islands of Wallacea. At Madjedbebe, a rock shelter in northern Australia, stone tools, grinding stones and ground ochre lie in layers dated to about 65,000 years ago by measuring light-sensitive signals in sand grains. Other researchers argue that this dating is unreliable and that people arrived closer to 50,000 years ago. A 2025 study of mitochondrial DNA from living people supports arrival about 60,000 years ago, although many geneticists favour the later date.",
+   "species": [
+    "Homo sapiens"
+   ],
+   "sites": [
+    {
+     "name": "Madjedbebe",
+     "lonlat": [
+      132.88,
+      -12.5
+     ],
+     "ma": 0.065,
+     "note": "Tools, grinding stones and ochre in layers dated to about 65,000 years ago, a date many dispute."
+    }
+   ],
+   "route": {
+    "label": "Homo sapiens along the coasts of southern Asia to Sahul (timing disputed)",
+    "evidence": "disputed",
+    "path": [
+     [
+      43.4,
+      12.6,
+      0.07
+     ],
+     [
+      57.5,
+      21.0,
+      0.069
+     ],
+     [
+      72.5,
+      19.0,
+      0.068
+     ],
+     [
+      80.0,
+      8.0,
+      0.0675
+     ],
+     [
+      96.0,
+      10.0,
+      0.067
+     ],
+     [
+      106.0,
+      0.0,
+      0.0665
+     ],
+     [
+      118.0,
+      -8.5,
+      0.066
+     ],
+     [
+      125.5,
+      -9.5,
+      0.0655
+     ],
+     [
+      132.88,
+      -12.5,
+      0.065
+     ]
+    ]
+   },
+   "refs": [],
+   "imageIds": [],
+   "images": [
+    {
+     "id": "arnhem-escarpment",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Arnhem_Escarpment%2C_Northern_Territory_%288851990389%29.jpg/1920px-Arnhem_Escarpment%2C_Northern_Territory_%288851990389%29.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Arnhem_Escarpment%2C_Northern_Territory_%288851990389%29.jpg",
+     "width": 5184,
+     "height": 3456,
+     "type": "landscape",
+     "caption": "Sandstone outcrops and the Arnhem Land escarpment in northern Australia, the country around the Madjedbebe rock shelter.",
+     "credit": "Matt from Melbourne, Australia",
+     "license": "CC BY 2.0",
+     "note": "Not the Madjedbebe shelter itself, but the same escarpment country."
+    },
+    {
+     "id": "sunda-sahul-map",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Map_of_Sunda_and_Sahul.svg/960px-Map_of_Sunda_and_Sahul.svg.png",
+     "page": "https://commons.wikimedia.org/wiki/File:Map_of_Sunda_and_Sahul.svg",
+     "width": 976,
+     "height": 907,
+     "type": "landscape",
+     "caption": "A map of Sunda and Sahul when the sea was about 125 metres lower, with the deep-water islands of Wallacea between them.",
+     "credit": "listfiles/Kanguole",
+     "license": "CC BY-SA 4.0",
+     "note": "A map, not a photograph; the shaded land shows the coast at the 125-metre depth line."
+    }
+   ],
+   "evidence": "disputed",
+   "evidenceNote": "Madjedbebe was dated by luminescence, which measures when sand grains were last exposed to sunlight; critics doubt the dates, and DNA clocks give answers from about 60,000 to under 50,000 years.",
+   "sources": [
+    {
+     "title": "Nature: Human occupation of northern Australia by 65,000 years ago (Clarkson et al. 2017)",
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1038%2Fnature22968%22&resultType=core&format=json"
+    },
+    {
+     "title": "PNAS: When did Homo sapiens first reach Southeast Asia and Sahul? (O'Connell et al. 2018)",
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1073%2Fpnas.1808385115%22&resultType=core&format=json"
+    },
+    {
+     "title": "University of Southampton: Ancient Australian settlers arrived about 60,000 years ago (Science Advances, 2025)",
+     "url": "https://www.southampton.ac.uk/news/2025/11/ancient-australian-settlers.page"
+    },
+    {
+     "title": "Wikipedia: Sahul",
+     "url": "https://en.wikipedia.org/wiki/Sahul"
+    }
+   ]
+  },
+  {
+   "id": "meeting-neanderthals",
+   "title": "Meeting and mixing with Neanderthals",
+   "ma": 0.045,
+   "dateLabel": "c. 50,000 to 43,000 years ago",
+   "focus": [
+    11.53,
+    50.65
+   ],
+   "place": "Ilsenhöhle cave, Ranis, Thuringia, Germany",
+   "text": "As our species spread into Europe and western Asia, it met the Neanderthals, who had lived there for hundreds of thousands of years. Bones from a cave at Ranis in Germany, about 45,000 years old, are among the oldest Homo sapiens in Europe, and their DNA carries Neanderthal pieces from a mixing that happened about 45,000 to 49,000 years ago. Genomes of more than 300 ancient and living people show that most of this mixing happened in one long period between about 50,500 and 43,500 years ago. A person from Peștera cu Oase in Romania, who lived 37,000 to 42,000 years ago, had a Neanderthal ancestor only four to six generations back. Today people in Europe and Asia carry about 1 to 3 percent Neanderthal DNA.",
+   "species": [
+    "Homo sapiens",
+    "Homo neanderthalensis"
+   ],
+   "sites": [
+    {
+     "name": "Ilsenhöhle, Ranis",
+     "lonlat": [
+      11.53,
+      50.65
+     ],
+     "ma": 0.045,
+     "note": "Some of the earliest directly dated Homo sapiens in Europe, about 45,000 years old, with Neanderthal DNA."
+    },
+    {
+     "name": "Bacho Kiro Cave",
+     "lonlat": [
+      25.43,
+      42.95
+     ],
+     "ma": 0.046,
+     "note": "Homo sapiens bones and cave-bear-tooth pendants from before 45,000 years ago."
+    },
+    {
+     "name": "Peștera cu Oase",
+     "lonlat": [
+      21.85,
+      45.02
+     ],
+     "ma": 0.04,
+     "note": "Remains of a modern human 37,000 to 42,000 years old whose DNA is 6 to 9 percent Neanderthal."
+    }
+   ],
+   "route": {
+    "label": "Homo sapiens into Europe",
+    "evidence": "archaeology",
+    "path": [
+     [
+      32.5,
+      30.0,
+      0.052
+     ],
+     [
+      35.5,
+      33.0,
+      0.05
+     ],
+     [
+      33.0,
+      39.0,
+      0.048
+     ],
+     [
+      28.5,
+      41.5,
+      0.047
+     ],
+     [
+      25.43,
+      42.95,
+      0.046
+     ],
+     [
+      17.0,
+      47.0,
+      0.0455
+     ],
+     [
+      11.56,
+      50.66,
+      0.045
+     ]
+    ]
+   },
+   "refs": [
+    "o:neanderthals",
+    "o:homo-sapiens"
+   ],
+   "imageIds": [
+    "neanderthal-mr-n"
+   ],
+   "images": [
+    {
+     "id": "ilsenhohle-ranis",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Ilsenh%C3%B6hle_unter_der_Burg_Ranis%2C_151002%2C_ako.jpg/1920px-Ilsenh%C3%B6hle_unter_der_Burg_Ranis%2C_151002%2C_ako.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Ilsenh%C3%B6hle_unter_der_Burg_Ranis%2C_151002%2C_ako.jpg",
+     "width": 3648,
+     "height": 5472,
+     "type": "landscape",
+     "caption": "The Ilsenhöhle cave below Ranis castle in Germany, where bones of some of the earliest Homo sapiens in Europe were found.",
+     "credit": "Ansgar Koreng",
+     "license": "CC BY 3.0 de",
+     "note": "Tall picture."
+    }
+   ],
+   "evidence": "genetic",
+   "evidenceNote": "The timing of the mixing is worked out from the length of the Neanderthal pieces in ancient genomes, which get shorter with every generation after the mixing.",
+   "sources": [
+    {
+     "title": "Nature: Homo sapiens reached the higher latitudes of Europe by 45,000 years ago (Mylopotamitaki et al. 2024)",
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1038%2Fs41586-023-06923-7%22&resultType=core&format=json"
+    },
+    {
+     "title": "Nature: Earliest modern human genomes constrain timing of Neanderthal admixture (Sümer et al. 2025)",
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1038%2Fs41586-024-08420-x%22&resultType=core&format=json"
+    },
+    {
+     "title": "Science: Neanderthal ancestry through time (Iasi et al. 2024)",
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1126%2Fscience.adq3010%22&resultType=core&format=json"
+    },
+    {
+     "title": "Nature: An early modern human from Romania with a recent Neanderthal ancestor (Fu et al. 2015)",
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1038%2Fnature14558%22&resultType=core&format=json"
+    },
+    {
+     "title": "Nature: Initial Upper Palaeolithic Homo sapiens from Bacho Kiro Cave, Bulgaria (Hublin et al. 2020)",
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1038%2Fs41586-020-2259-z%22&resultType=core&format=json"
+    }
+   ]
+  },
+  {
+   "id": "last-neanderthals",
+   "title": "The last Neanderthals",
+   "ma": 0.04,
+   "dateLabel": "c. 41,000 to 39,000 years ago",
+   "focus": [
+    -5.34,
+    36.12
+   ],
+   "place": "Gorham's Cave, Gibraltar",
+   "text": "Careful radiocarbon dating of 40 sites from Russia to Spain shows that the Neanderthals' way of making stone tools ended across Europe by about 41,000 to 39,000 years ago. They had shared Europe with incoming modern humans for between 2,600 and 5,400 years, and disappeared at different times in different places. At Gorham's Cave in Gibraltar, researchers argued in 2006 that Neanderthals survived until about 28,000 years ago. But when other late sites in southern Spain were re-dated with cleaner methods they turned out at least 10,000 years older, so most researchers now doubt such late survival. The Neanderthals themselves are gone, but pieces of their DNA live on in most people today.",
+   "species": [
+    "Homo neanderthalensis",
+    "Homo sapiens"
+   ],
+   "sites": [
+    {
+     "name": "Gorham's Cave",
+     "lonlat": [
+      -5.34,
+      36.12
+     ],
+     "ma": 0.028,
+     "note": "Claimed in 2006 as the last Neanderthal home, about 28,000 radiocarbon years ago; the late date is disputed."
+    },
+    {
+     "name": "Zafarraya",
+     "lonlat": [
+      -4.13,
+      36.97
+     ],
+     "ma": 0.045,
+     "note": "Neanderthal fossils once dated to less than 42,000 years ago, re-dated in 2013 to at least 10,000 radiocarbon years older."
+    }
+   ],
+   "route": null,
+   "refs": [
+    "o:neanderthals"
+   ],
+   "imageIds": [
+    "neanderthal-nhm",
+    "neanderthal-skull"
+   ],
+   "images": [
+    {
+     "id": "gorhams-cave",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Gorham%27s_Cave.jpg/1920px-Gorham%27s_Cave.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Gorham%27s_Cave.jpg",
+     "width": 4272,
+     "height": 2848,
+     "type": "landscape",
+     "caption": "Gorham's Cave, a sea cave in the east face of the Rock of Gibraltar, one of the last known Neanderthal homes.",
+     "credit": "Gibmetal77",
+     "license": "CC BY 3.0",
+     "note": "A modern photograph taken from the sea."
+    }
+   ],
+   "evidence": "disputed",
+   "evidenceNote": "Radiocarbon dates near its 50,000-year limit are easily made too young by tiny amounts of modern carbon, which is why the latest Neanderthal dates keep being argued over.",
+   "sources": [
+    {
+     "title": "Nature: The timing and spatiotemporal patterning of Neanderthal disappearance (Higham et al. 2014)",
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1038%2Fnature13621%22&resultType=core&format=json"
+    },
+    {
+     "title": "Nature: Late survival of Neanderthals at the southernmost extreme of Europe (Finlayson et al. 2006)",
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1038%2Fnature05195%22&resultType=core&format=json"
+    },
+    {
+     "title": "PNAS: Radiocarbon dating casts doubt on the late chronology of the Middle to Upper Palaeolithic transition in southern Iberia (Wood et al. 2013)",
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1073%2Fpnas.1207656110%22&resultType=core&format=json"
+    },
+    {
+     "title": "Nature: An early modern human from Romania with a recent Neanderthal ancestor (Fu et al. 2015)",
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1038%2Fnature14558%22&resultType=core&format=json"
+    }
+   ]
+  },
+  {
+   "id": "into-the-americas",
+   "title": "Into the Americas as the ice melts",
+   "ma": 0.013,
+   "dateLabel": "c. 23,000 to 13,000 years ago",
+   "focus": [
+    -103.32,
+    34.28
+   ],
+   "place": "Blackwater Draw, near Clovis, New Mexico, USA",
+   "text": "Most researchers think that during the last Ice Age people from north-east Siberia crossed Beringia, a land bridge exposed by the low sea, into the Americas. When they first arrived is fiercely argued. Human footprints at White Sands in New Mexico are dated to about 23,000 to 21,000 years ago; critics questioned the first radiocarbon dates, but pollen and luminescence dates published in 2023 agreed with them. Monte Verde in Chile, long accepted at about 14,500 years old, was argued in 2026 to be less than 8,000 years old, a claim its excavators reject. By about 13,000 years ago the Clovis people, named after finds at Blackwater Draw in New Mexico, were hunting mammoths across North America, and, as far as the evidence shows, ours was the only kind of human left on Earth.",
+   "species": [
+    "Homo sapiens"
+   ],
+   "sites": [
+    {
+     "name": "White Sands National Park",
+     "lonlat": [
+      -106.17,
+      32.78
+     ],
+     "ma": 0.0225,
+     "note": "Human footprints dated to about 23,000 to 21,000 years ago, beside the tracks of giant ice-age animals."
+    },
+    {
+     "name": "Paisley Caves",
+     "lonlat": [
+      -120.55,
+      42.76
+     ],
+     "ma": 0.0143,
+     "note": "Human dung with DNA dated to about 14,300 years ago; some doubt the samples."
+    },
+    {
+     "name": "Monte Verde",
+     "lonlat": [
+      -73.2,
+      -41.51
+     ],
+     "ma": 0.0145,
+     "note": "A camp long dated to about 14,500 years ago, re-dated in 2026 to under 8,000 years; disputed."
+    },
+    {
+     "name": "Blackwater Draw",
+     "lonlat": [
+      -103.32,
+      34.28
+     ],
+     "ma": 0.013,
+     "note": "Type site of the Clovis culture, about 13,050 to 12,750 years ago, with mammoth bones."
+    }
+   ],
+   "route": {
+    "label": "A possible route south along the Pacific coast from Beringia",
+    "evidence": "disputed",
+    "path": [
+     [
+      -170.0,
+      64.0,
+      0.025
+     ],
+     [
+      -160.0,
+      56.0,
+      0.0245
+     ],
+     [
+      -145.0,
+      59.0,
+      0.024
+     ],
+     [
+      -133.0,
+      54.0,
+      0.0237
+     ],
+     [
+      -125.0,
+      46.0,
+      0.0234
+     ],
+     [
+      -119.0,
+      36.0,
+      0.0231
+     ],
+     [
+      -106.17,
+      32.78,
+      0.0225
+     ]
+    ]
+   },
+   "refs": [
+    "e:last-glacial-maximum",
+    "e:megafauna-extinctions"
+   ],
+   "imageIds": [],
+   "images": [
+    {
+     "id": "white-sands-footprints",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Human_fossil_tracks_at_White_Sands_New_Mexico.jpg/1920px-Human_fossil_tracks_at_White_Sands_New_Mexico.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Human_fossil_tracks_at_White_Sands_New_Mexico.jpg",
+     "width": 4032,
+     "height": 3024,
+     "type": "fossil",
+     "caption": "Human footprints preserved in gypsum at White Sands, New Mexico, dated to about 23,000 to 21,000 years ago.",
+     "credit": "US Geological Service",
+     "license": "Public domain",
+     "note": "The age of these footprints is still debated by some researchers."
+    },
+    {
+     "id": "clovis-point-utah",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Clovis_point%2C_11500-9000_BC%2C_Sevier_County%2C_Utah%2C_chert_-_Natural_History_Museum_of_Utah_-_DSC07376.JPG/1920px-Clovis_point%2C_11500-9000_BC%2C_Sevier_County%2C_Utah%2C_chert_-_Natural_History_Museum_of_Utah_-_DSC07376.JPG",
+     "page": "https://commons.wikimedia.org/wiki/File:Clovis_point%2C_11500-9000_BC%2C_Sevier_County%2C_Utah%2C_chert_-_Natural_History_Museum_of_Utah_-_DSC07376.JPG",
+     "width": 3240,
+     "height": 4320,
+     "type": "rock",
+     "caption": "A fluted Clovis spear point of chert from Utah, at the Natural History Museum of Utah.",
+     "credit": "Daderot",
+     "license": "CC0",
+     "note": "The museum label gives a broad age range; Clovis points are now dated to about 13,050 to 12,750 years ago. Tall picture."
+    }
+   ],
+   "evidence": "disputed",
+   "evidenceNote": "The earliest American sites are dated by radiocarbon on seeds, pollen, bone and wood, but whether the dated material is truly as old as the human traces beside it is argued site by site.",
+   "sources": [
+    {
+     "title": "Wikipedia: Settlement of the Americas",
+     "url": "https://en.wikipedia.org/wiki/Settlement_of_the_Americas"
+    },
+    {
+     "title": "Science: Independent age estimates resolve the controversy of ancient human footprints at White Sands (Pigati et al. 2023)",
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1126%2Fscience.adh5007%22&resultType=core&format=json"
+    },
+    {
+     "title": "Science: A mid-Holocene age for Monte Verde challenges the timeline of human colonization of South America (Surovell et al. 2026)",
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1126%2Fscience.adw9217%22&resultType=core&format=json"
+    },
+    {
+     "title": "National Geographic: When did humans arrive in the Americas? A new study reignites the debate",
+     "url": "https://www.nationalgeographic.com/history/article/monte-verde-redated"
+    },
+    {
+     "title": "Wikipedia: Clovis culture",
+     "url": "https://en.wikipedia.org/wiki/Clovis_culture"
+    }
+   ]
+  }
+ ]
+}

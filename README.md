@@ -34,6 +34,8 @@ python3 -I tools/content.py      # content/eras + content/empires -> public/data
 python3 -I tools/placeindex.py   # borders as drawn (corrections + reconstruction layers) -> public/data/place/ ("this place through time")
 python3 -I tools/commons.py      # Wikimedia Commons reference maps -> public/data/commons.json
 python3 -I tools/seo.py          # plain HTML pages, sitemaps and llms.txt for search engines (deploy.sh runs it; not committed)
+.venv-paleo/bin/python tools/paleo.py <PaleoDEMS 6-minute zip>  # the ancient Earth, 540 million years ago to today -> public/data/paleo/ (needs numpy, netCDF4)
+python3 -I tools/prehistory.py   # content/prehistory -> public/data/earth-history.json (the Earth history page at /earth-history/, with an Atlas view and a Space view)
 ```
 
 Raw sources live in `data/` (`data/geo/` holds historical-basemaps, `data/clio/` holds Cliopatria). Natural Earth files
@@ -61,6 +63,8 @@ with a source, or send a pull request; see [CONTRIBUTING.md](CONTRIBUTING.md). O
 | Ice-age sea level | Lambeck et al. 2014, *PNAS* 111:15296, [doi:10.1073/pnas.1411762111](https://doi.org/10.1073/pnas.1411762111) | (cited; values digitised) |
 | Ice sheets | NADI-1, Dalton et al. 2023 ([Zenodo](https://zenodo.org/records/8161764)); DATED-1, Hughes et al. 2016 ([PANGAEA](https://doi.pangaea.de/10.1594/PANGAEA.848117)) | CC BY 4.0 / CC BY 3.0 |
 | Empire pictures, ruler portraits, period photos | Wikimedia Commons, Library of Congress, US National Archives, UN Archives, Internet Archive; each credited in the app | Per item |
+| Earth history globe (`/earth-history/`): land height and sea depth, 540 million years ago to today | PALEOMAP PaleoDEMs, C. R. Scotese & N. M. Wright 2018, [doi:10.5281/zenodo.5460860](https://doi.org/10.5281/zenodo.5460860); places carried back in time with the PALEOMAP plate model through the [GPlates Web Service](https://gwsdoc.gplates.org) | CC BY 4.0 |
+| Deep-time records (temperature, CO2, oxygen, sea level, sea life, day length) and pictures | Listed with their licences in `content/prehistory/curves.json` and `images.json`, and on the page under "About this map" | CC BY 4.0, CC0, CC BY-SA or public domain, per item |
 | Libraries and fonts | D3.js, earcut (ISC); Archivo, Inter (SIL OFL) | as stated |
 
 All historical borders are scholarly approximations. Polities that existed but are absent from both

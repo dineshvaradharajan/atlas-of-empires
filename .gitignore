@@ -32,3 +32,10 @@ data/awmc/
 # redistribution; cite "CHGIS Version 6." (c) Fairbank Center for Chinese Studies and the Institute for Chinese
 # Historical Geography at Fudan University, Dec 2016): https://dataverse.harvard.edu/api/access/datafile/2966510
 data/chgis/
+
+# Deep-time page, raw sources (not committed):
+# Scotese & Wright 2018 PaleoDEMs, 6-minute NetCDF (CC BY 4.0, 202 MB), read by tools/paleo.py:
+# https://zenodo.org/records/5460860/files/Scotese_Wright_2018_Maps_1-88_6minX6min_PaleoDEMS_nc.zip -> data/prehistory/paleodem/
+data/prehistory/
+# Build environment for tools/paleo.py (numpy, netCDF4): python3 -m venv .venv-paleo && .venv-paleo/bin/pip install numpy netCDF4
+.venv-paleo/

@@ -1,0 +1,1710 @@
+[
+ {
+  "id": "earth-forms",
+  "title": "The Earth forms",
+  "ma": 4540,
+  "maRange": [
+   4590,
+   4490
+  ],
+  "dateLabel": "c. 4.54 billion years ago",
+  "kind": "planet",
+  "lonlat": null,
+  "place": null,
+  "evidence": "geology",
+  "evidenceNote": "Radioactive uranium turns into lead at a steady, known rate, so the amounts of each in meteorites show how long ago they formed.",
+  "text": "The Sun and planets grew from a disc of gas and dust. The oldest solid grains in meteorites are 4,567 million years old, and the Earth reached nearly its full size some tens of millions of years later. The usual figure for the Earth's age, 4.54 billion years, give or take 50 million, comes from uranium-lead dating of meteorites, above all the Canyon Diablo iron meteorite, first measured by Clair Patterson in 1956.",
+  "sources": [
+   {
+    "title": "USGS: Geologic Time, Age of the Earth",
+    "url": "https://pubs.usgs.gov/gip/geotime/age.html"
+   },
+   {
+    "title": "Wikipedia: Age of Earth",
+    "url": "https://en.wikipedia.org/wiki/Age_of_Earth"
+   },
+   {
+    "title": "International Commission on Stratigraphy: International Chronostratigraphic Chart, v2026/06",
+    "url": "https://stratigraphy.org/chart"
+   }
+  ]
+ },
+ {
+  "id": "moon-forming-impact",
+  "title": "A giant impact forms the Moon",
+  "ma": 4510,
+  "maRange": [
+   4537,
+   4367
+  ],
+  "dateLabel": "c. 4.5 billion years ago",
+  "kind": "impact",
+  "lonlat": null,
+  "place": null,
+  "evidence": "disputed",
+  "evidenceNote": "Moon rocks brought back by the Apollo astronauts are chemically so like the Earth's that most scientists think the Moon was made from the debris of a collision; when and how exactly is still argued over.",
+  "text": "Most scientists think a Mars-sized body, nicknamed Theia, struck the young Earth and the debris gathered into the Moon. Disputed: the details. Canup and Asphaug (2001) modelled a glancing blow by a Mars-sized body; Cuk and Stewart, and Canup (2012), proposed a fast-spinning Earth or a larger impactor to explain why Moon and Earth rocks are almost identical. Dates range from about 30 to 200 million years after the Solar System formed; Apollo zircons suggest by 4.51 billion years ago.",
+  "sources": [
+   {
+    "title": "NASA Science: Moon formation",
+    "url": "https://science.nasa.gov/moon/formation/"
+   },
+   {
+    "title": "Canup & Asphaug 2001, Nature: Origin of the Moon in a giant impact near the end of the Earth's formation",
+    "url": "https://www.nature.com/articles/35089010"
+   },
+   {
+    "title": "Cuk & Stewart 2012, Science: Making the Moon from a fast-spinning Earth",
+    "url": "https://doi.org/10.1126/science.1225542"
+   },
+   {
+    "title": "Canup 2012, Science: Forming a Moon with an Earth-like composition via a giant impact",
+    "url": "https://doi.org/10.1126/science.1226073"
+   },
+   {
+    "title": "Barboni et al. 2017, Science Advances: Early formation of the Moon 4.51 billion years ago",
+    "url": "https://doi.org/10.1126/sciadv.1602365"
+   },
+   {
+    "title": "Thiemens et al. 2019, Nature Geoscience: Early Moon formation inferred from hafnium-tungsten systematics",
+    "url": "https://www.nature.com/articles/s41561-019-0398-3"
+   },
+   {
+    "title": "Wikipedia: Giant-impact hypothesis",
+    "url": "https://en.wikipedia.org/wiki/Giant-impact_hypothesis"
+   }
+  ]
+ },
+ {
+  "id": "jack-hills-zircons",
+  "title": "Oldest mineral grains hint at early oceans",
+  "ma": 4404,
+  "maRange": null,
+  "dateLabel": "c. 4.4 billion years ago",
+  "kind": "rock",
+  "lonlat": [
+   117.15,
+   -26.12
+  ],
+  "place": "Jack Hills, Western Australia",
+  "evidence": "geology",
+  "evidenceNote": "Zircon crystals trap uranium, which slowly decays to lead, so each grain carries its own clock; the oldest reads 4,404 million years, give or take 8 million.",
+  "text": "Sand-sized zircon crystals, washed long ago into younger rocks of the Jack Hills, are the oldest known pieces of the Earth; one is 4,404 million years old. Their chemistry points to granite-like crust and to rock that had been in contact with liquid water, so the planet probably had a solid surface and oceans within about 150 million years of forming. Some researchers are cautious about reading so much from such tiny grains.",
+  "sources": [
+   {
+    "title": "Wilde et al. 2001, Nature: Evidence from detrital zircons for the existence of continental crust and oceans on the Earth 4.4 Gyr ago",
+    "url": "https://www.nature.com/articles/35051550"
+   },
+   {
+    "title": "Valley et al. 2014, Nature Geoscience: Hadean age for a post-magma-ocean zircon confirmed by atom-probe tomography",
+    "url": "https://www.nature.com/articles/ngeo2075"
+   },
+   {
+    "title": "USGS: Geologic Time, Age of the Earth",
+    "url": "https://pubs.usgs.gov/gip/geotime/age.html"
+   },
+   {
+    "title": "Wikipedia: Jack Hills",
+    "url": "https://en.wikipedia.org/wiki/Jack_Hills"
+   },
+   {
+    "title": "Wikipedia: Hadean",
+    "url": "https://en.wikipedia.org/wiki/Hadean"
+   }
+  ]
+ },
+ {
+  "id": "last-universal-common-ancestor",
+  "title": "The last common ancestor of all life",
+  "ma": 4200,
+  "maRange": [
+   4330,
+   4090
+  ],
+  "dateLabel": "c. 4.2 billion years ago (estimate from DNA)",
+  "kind": "life",
+  "lonlat": null,
+  "place": null,
+  "evidence": "genetic",
+  "evidenceNote": "Scientists compare the DNA of living things and count the differences, using dated fossils to set the pace of this 'molecular clock'; the answer has wide error bars.",
+  "text": "All living things descend from a single ancestor, known as LUCA. A 2024 study comparing genes across the whole tree of life estimated that it lived about 4.2 billion years ago (between 4.09 and 4.33), only a few hundred million years after the Earth formed, and that it was already a fairly complex microbe. A 2018 study placed it before 3.9 billion years ago. No fossil of this age is known, so the date rests on DNA alone.",
+  "sources": [
+   {
+    "title": "Moody et al. 2024, Nature Ecology & Evolution: The nature of the last universal common ancestor and its impact on the early Earth system",
+    "url": "https://www.nature.com/articles/s41559-024-02461-1"
+   },
+   {
+    "title": "Betts et al. 2018, Nature Ecology & Evolution: Integrated genomic and fossil evidence illuminates life's early evolution and eukaryote origin",
+    "url": "https://www.nature.com/articles/s41559-018-0644-x"
+   }
+  ]
+ },
+ {
+  "id": "jack-hills-carbon",
+  "title": "Carbon in a zircon: life's oldest trace?",
+  "ma": 4100,
+  "maRange": null,
+  "dateLabel": "c. 4.1 billion years ago",
+  "kind": "life",
+  "lonlat": [
+   117.15,
+   -26.12
+  ],
+  "place": "Jack Hills, Western Australia",
+  "evidence": "disputed",
+  "evidenceNote": "Living things prefer the lighter kind of carbon atom, and a speck of carbon rich in light atoms was found sealed inside a 4.1-billion-year-old crystal; chemistry without life can sometimes produce the same pattern.",
+  "text": "In 2015 Elizabeth Bell and colleagues reported specks of graphite (pure carbon) sealed inside a 4.10-billion-year-old Jack Hills zircon. The carbon is rich in the light form that living things favour, and the team suggested that life may already have existed. Disputed: the authors themselves call it only 'potentially' biological; it is one crystal out of more than 10,000 examined, and light carbon can also form without life. The find still awaits confirmation.",
+  "sources": [
+   {
+    "title": "Bell et al. 2015, PNAS: Potentially biogenic carbon preserved in a 4.1 billion-year-old zircon",
+    "url": "https://doi.org/10.1073/pnas.1517557112"
+   },
+   {
+    "title": "Wikipedia: Archean",
+    "url": "https://en.wikipedia.org/wiki/Archean"
+   },
+   {
+    "title": "Brasier et al. 2002, Nature: Questioning the evidence for Earth's oldest fossils",
+    "url": "https://www.nature.com/articles/416076a"
+   }
+  ]
+ },
+ {
+  "id": "acasta-gneiss",
+  "title": "The oldest surviving rocks",
+  "ma": 4031,
+  "maRange": null,
+  "dateLabel": "c. 4.03 billion years ago",
+  "kind": "rock",
+  "lonlat": [
+   -115.58,
+   65.17
+  ],
+  "place": "Acasta River, Northwest Territories, Canada",
+  "evidence": "geology",
+  "evidenceNote": "Zircon crystals inside the rock act as radioactive clocks and give ages of about 4.02 to 4.03 billion years.",
+  "text": "The Acasta Gneiss, about 300 kilometres north of Yellowknife, contains the oldest known rock that is still in one piece, about 4.03 billion years old. The international time scale uses this age to mark the end of the Hadean and the start of the Archean. Rocks on Hudson Bay in northern Quebec may be older still, but their age is disputed.",
+  "sources": [
+   {
+    "title": "USGS: Geologic Time, Age of the Earth",
+    "url": "https://pubs.usgs.gov/gip/geotime/age.html"
+   },
+   {
+    "title": "Wikipedia: Acasta Gneiss",
+    "url": "https://en.wikipedia.org/wiki/Acasta_Gneiss"
+   },
+   {
+    "title": "International Commission on Stratigraphy: International Chronostratigraphic Chart, v2026/06",
+    "url": "https://stratigraphy.org/chart"
+   },
+   {
+    "title": "Wilde et al. 2001, Nature: Evidence from detrital zircons for the existence of continental crust and oceans on the Earth 4.4 Gyr ago",
+    "url": "https://www.nature.com/articles/35051550"
+   }
+  ]
+ },
+ {
+  "id": "nuvvuagittuq",
+  "title": "Nuvvuagittuq: oldest rocks, oldest fossils?",
+  "ma": 3770,
+  "maRange": [
+   4280,
+   3750
+  ],
+  "dateLabel": "at least 3.77 billion years ago, perhaps 4.3",
+  "kind": "life",
+  "lonlat": [
+   -77.75,
+   58.3
+  ],
+  "place": "Nuvvuagittuq, near Inukjuak, Quebec, Canada",
+  "evidence": "disputed",
+  "evidenceNote": "Different radioactive clocks in these rocks give different ages, and tiny rusty tubes in them look like microbes but might have formed without life.",
+  "text": "On the shore of Hudson Bay lie volcanic rocks at least 3.75 billion years old. O'Neil and colleagues (2008) and Sole and colleagues (2025) argue from neodymium isotopes that they are about 4.2 to 4.3 billion years old, which would make them the only known Hadean rocks; other teams accept only the younger zircon dates. In 2017 Dodd and colleagues described tiny iron-oxide tubes and filaments here as fossil microbes from sea-floor hot vents, a reading others question.",
+  "sources": [
+   {
+    "title": "Dodd et al. 2017, Nature: Evidence for early life in Earth's oldest hydrothermal vent precipitates",
+    "url": "https://www.nature.com/articles/nature21377"
+   },
+   {
+    "title": "O'Neil et al. 2008, Science: Neodymium-142 evidence for Hadean mafic crust",
+    "url": "https://doi.org/10.1126/science.1161925"
+   },
+   {
+    "title": "Sole et al. 2025, Science: Evidence for Hadean mafic intrusions in the Nuvvuagittuq Greenstone Belt, Canada",
+    "url": "https://doi.org/10.1126/science.ads8461"
+   },
+   {
+    "title": "Wikipedia: Nuvvuagittuq Greenstone Belt",
+    "url": "https://en.wikipedia.org/wiki/Nuvvuagittuq_Greenstone_Belt"
+   },
+   {
+    "title": "Wikipedia: Earliest known life forms",
+    "url": "https://en.wikipedia.org/wiki/Earliest_known_life_forms"
+   }
+  ]
+ },
+ {
+  "id": "isua",
+  "title": "Isua: carbon and 'stromatolites' in Greenland",
+  "ma": 3700,
+  "maRange": [
+   3800,
+   3700
+  ],
+  "dateLabel": "c. 3.7 to 3.8 billion years ago",
+  "kind": "life",
+  "lonlat": [
+   -49.9,
+   65.15
+  ],
+  "place": "Isua Greenstone Belt, near Nuuk, south-west Greenland",
+  "evidence": "disputed",
+  "evidenceNote": "These rocks have been squeezed and heated so strongly that signs of life are hard to tell from marks made by the squeezing itself.",
+  "text": "Isua holds some of the oldest sea-floor sediments on Earth. Mojzsis and colleagues (1996) and Ohtomo and colleagues (2014) found graphite rich in light carbon and read it as the remains of microbes; others think hot fluids could have deposited it. In 2016 Nutman and colleagues reported 3.7-billion-year-old stromatolites, mounds built by microbes. In 2018 Allwood and colleagues re-examined them and concluded that they formed when the rock was deformed, not by life.",
+  "sources": [
+   {
+    "title": "Nutman et al. 2016, Nature: Rapid emergence of life shown by discovery of 3,700-million-year-old microbial structures",
+    "url": "https://www.nature.com/articles/nature19355"
+   },
+   {
+    "title": "Allwood et al. 2018, Nature: Reassessing evidence of life in 3,700-million-year-old rocks of Greenland",
+    "url": "https://www.nature.com/articles/s41586-018-0610-4"
+   },
+   {
+    "title": "Ohtomo et al. 2014, Nature Geoscience: Evidence for biogenic graphite in early Archaean Isua metasedimentary rocks",
+    "url": "https://www.nature.com/articles/ngeo2025"
+   },
+   {
+    "title": "Mojzsis et al. 1996, Nature: Evidence for life on Earth before 3,800 million years ago",
+    "url": "https://www.nature.com/articles/384055a0"
+   },
+   {
+    "title": "Wikipedia: Isua Greenstone Belt",
+    "url": "https://en.wikipedia.org/wiki/Isua_Greenstone_Belt"
+   },
+   {
+    "title": "USGS: Geologic Time, Age of the Earth",
+    "url": "https://pubs.usgs.gov/gip/geotime/age.html"
+   }
+  ]
+ },
+ {
+  "id": "pilbara-stromatolites",
+  "title": "Pilbara stromatolites: the oldest accepted fossils",
+  "ma": 3480,
+  "maRange": [
+   3480,
+   3430
+  ],
+  "dateLabel": "c. 3.48 billion years ago",
+  "kind": "life",
+  "lonlat": [
+   119.4,
+   -21.15
+  ],
+  "place": "North Pole Dome, Pilbara, Western Australia",
+  "evidence": "disputed",
+  "evidenceNote": "Layered mounds in these rocks match the shapes that mats of microbes build today, and volcanic layers around them have been dated.",
+  "text": "Layered mounds called stromatolites in the 3.48-billion-year-old Dresser Formation, and a whole reef of them in the nearby 3.43-billion-year-old Strelley Pool Chert, are the oldest evidence of life that most researchers accept. Still disputed: whether every such structure was built by microbes, and the 3.46-billion-year-old 'microfossils' of the nearby Apex chert, which Brasier and colleagues (2002) argued are mineral artefacts, not cells.",
+  "sources": [
+   {
+    "title": "Djokic et al. 2017, Nature Communications: Earliest signs of life on land preserved in ca. 3.5 Ga hot spring deposits",
+    "url": "https://www.nature.com/articles/ncomms15263"
+   },
+   {
+    "title": "Allwood et al. 2006, Nature: Stromatolite reef from the Early Archaean era of Australia",
+    "url": "https://www.nature.com/articles/nature04764"
+   },
+   {
+    "title": "Brasier et al. 2002, Nature: Questioning the evidence for Earth's oldest fossils",
+    "url": "https://www.nature.com/articles/416076a"
+   },
+   {
+    "title": "Nutman et al. 2016, Nature: Rapid emergence of life shown by discovery of 3,700-million-year-old microbial structures",
+    "url": "https://www.nature.com/articles/nature19355"
+   },
+   {
+    "title": "Wikipedia: Dresser Formation",
+    "url": "https://en.wikipedia.org/wiki/Dresser_Formation"
+   }
+  ]
+ },
+ {
+  "id": "plate-tectonics-begins",
+  "title": "The plates begin to move",
+  "ma": 3200,
+  "maRange": [
+   3200,
+   2500
+  ],
+  "dateLabel": "perhaps 3.2 to 2.5 billion years ago",
+  "kind": "continents",
+  "lonlat": null,
+  "place": null,
+  "evidence": "disputed",
+  "evidenceNote": "Magnetic minerals in old lavas record the latitude at which they cooled, and the kinds of rock made at plate edges first appear at different times; experts read this patchy record differently.",
+  "text": "Today the Earth's outer shell is broken into plates that drift, collide and dive beneath one another. When this began is disputed, with estimates from over 4 billion to under 1 billion years ago. Hopkins and colleagues (2008) saw signs of it in Hadean zircons. Cawood and colleagues (2018) place the change between 3.2 and 2.5 billion years ago, and Brenner and colleagues (2020) found that part of the Pilbara was drifting at modern plate speeds 3.2 billion years ago.",
+  "sources": [
+   {
+    "title": "Cawood et al. 2018, Philosophical Transactions A: Geological archive of the onset of plate tectonics",
+    "url": "https://doi.org/10.1098/rsta.2017.0405"
+   },
+   {
+    "title": "Brenner et al. 2020, Science Advances: Paleomagnetic evidence for modern-like plate motion velocities at 3.2 Ga",
+    "url": "https://doi.org/10.1126/sciadv.aaz8670"
+   },
+   {
+    "title": "Hopkins, Harrison & Manning 2008, Nature: Low heat flow inferred from >4 Gyr zircons suggests Hadean plate boundary interactions",
+    "url": "https://www.nature.com/articles/nature07465"
+   },
+   {
+    "title": "Mitchell et al. 2021, Nature Reviews Earth & Environment: The supercontinent cycle",
+    "url": "https://www.nature.com/articles/s43017-021-00160-0"
+   }
+  ]
+ },
+ {
+  "id": "vaalbara-ur",
+  "title": "Vaalbara and Ur: the first continents?",
+  "ma": 3100,
+  "maRange": [
+   3600,
+   2700
+  ],
+  "dateLabel": "perhaps 3.6 to 2.7 billion years ago",
+  "kind": "continents",
+  "lonlat": null,
+  "place": null,
+  "evidence": "disputed",
+  "evidenceNote": "Two very old blocks of crust, now in South Africa and Western Australia, have such similar rock layers that some geologists think they were once joined.",
+  "text": "The Kaapvaal block of southern Africa and the Pilbara block of Western Australia are built of crust 3.6 to 2.7 billion years old. Some geologists join them in a single early continent, Vaalbara. A rival idea, Ur, proposed by John Rogers, groups rocks of India, Western Australia and southern Africa from about 3.1 billion years ago; the two ideas conflict in part. Both are hypotheses: too little rock survives to test them firmly, and either landmass would have been small.",
+  "sources": [
+   {
+    "title": "Wikipedia: Vaalbara",
+    "url": "https://en.wikipedia.org/wiki/Vaalbara"
+   },
+   {
+    "title": "Wikipedia: Ur (continent)",
+    "url": "https://en.wikipedia.org/wiki/Ur_(continent)"
+   },
+   {
+    "title": "Wikipedia: Archean",
+    "url": "https://en.wikipedia.org/wiki/Archean"
+   },
+   {
+    "title": "Mitchell et al. 2021, Nature Reviews Earth & Environment: The supercontinent cycle",
+    "url": "https://www.nature.com/articles/s43017-021-00160-0"
+   }
+  ]
+ },
+ {
+  "id": "oxygenic-photosynthesis",
+  "title": "Microbes start making oxygen",
+  "ma": 2950,
+  "maRange": [
+   3700,
+   2400
+  ],
+  "dateLabel": "by c. 3.0 billion years ago? (disputed)",
+  "kind": "life",
+  "lonlat": null,
+  "place": null,
+  "evidence": "disputed",
+  "evidenceNote": "Certain metals in old sea-floor rocks only behave as they did if some oxygen was present, but later changes to the rocks can leave the same signal.",
+  "text": "Cyanobacteria learned to split water using sunlight, releasing oxygen: the source of nearly all the oxygen we breathe. When is disputed. Planavsky and colleagues (2014) found chemical signs of oxygen in 2.95-billion-year-old sea-floor rocks in South Africa, and Patry and colleagues (2025) date oxygen-making microbes in Canada to 2.87 billion years ago. Kopp and colleagues (2005) argue instead that the ability evolved only shortly before oxygen filled the air. Supposed 2.7-billion-year-old chemical fossils of cyanobacteria proved to be later contamination.",
+  "sources": [
+   {
+    "title": "Planavsky et al. 2014, Nature Geoscience: Evidence for oxygenic photosynthesis half a billion years before the Great Oxidation Event",
+    "url": "https://www.nature.com/articles/ngeo2122"
+   },
+   {
+    "title": "Patry et al. 2025, Nature: Dating the evolution of oxygenic photosynthesis using La-Ce geochronology",
+    "url": "https://www.nature.com/articles/s41586-025-09009-8"
+   },
+   {
+    "title": "Kopp et al. 2005, PNAS: The Paleoproterozoic snowball Earth: a climate disaster triggered by the evolution of oxygenic photosynthesis",
+    "url": "https://doi.org/10.1073/pnas.0504878102"
+   },
+   {
+    "title": "Rasmussen et al. 2008, Nature: Reassessing the first appearance of eukaryotes and cyanobacteria",
+    "url": "https://www.nature.com/articles/nature07381"
+   },
+   {
+    "title": "Anbar et al. 2007, Science: A whiff of oxygen before the Great Oxidation Event?",
+    "url": "https://doi.org/10.1126/science.1140325"
+   },
+   {
+    "title": "Slotznick et al. 2023, Science Advances: Response to comment on 'Reexamination of 2.5-Ga whiff of oxygen interval points to anoxic ocean before GOE'",
+    "url": "https://doi.org/10.1126/sciadv.adg1530"
+   }
+  ]
+ },
+ {
+  "id": "kenorland",
+  "title": "Kenorland, a possible early supercontinent",
+  "ma": 2720,
+  "maRange": null,
+  "dateLabel": "c. 2.7 billion years ago",
+  "kind": "continents",
+  "lonlat": [
+   -94.48,
+   49.77
+  ],
+  "place": "Kenora, Ontario, Canada (Superior Craton)",
+  "evidence": "disputed",
+  "evidenceNote": "The old cores of several continents formed or were welded together at about the same time, which may mean they were joined; how they were arranged cannot be checked directly.",
+  "text": "Around 2.72 billion years ago several old continental cores, including parts of Canada, Scandinavia and Western Australia, grew quickly and may have merged into one landmass. It is called Kenorland after mountain-building rocks near Kenora in Ontario. It remains a hypothesis: geologists disagree about which blocks belonged to it, and some prefer several separate 'supercratons' to a single supercontinent (Mitchell and colleagues, 2021).",
+  "sources": [
+   {
+    "title": "Wikipedia: Kenorland",
+    "url": "https://en.wikipedia.org/wiki/Kenorland"
+   },
+   {
+    "title": "Mitchell et al. 2021, Nature Reviews Earth & Environment: The supercontinent cycle",
+    "url": "https://www.nature.com/articles/s43017-021-00160-0"
+   }
+  ]
+ },
+ {
+  "id": "hamersley-iron-formations",
+  "title": "The seas rust: great iron formations",
+  "ma": 2460,
+  "maRange": null,
+  "dateLabel": "c. 2.46 billion years ago",
+  "kind": "rock",
+  "lonlat": [
+   118.4,
+   -22.5
+  ],
+  "place": "Hamersley Range, Western Australia",
+  "evidence": "geology",
+  "evidenceNote": "Thin, regular layers in these iron-rich rocks follow known wobbles in the Earth's orbit, and volcanic ash between them gives the date.",
+  "text": "Thick banded iron formations settled on the sea floor as iron dissolved in the oceans met oxygen, probably made by early cyanobacteria, and rusted out of the water. Rocks of this kind hold more than 60 percent of the world's iron reserves. Rhythmic layers in the Hamersley iron beds, dated to 2.46 billion years ago, also show that a day then lasted only about 17 hours and that the Moon was about 322,000 kilometres away, closer than today.",
+  "sources": [
+   {
+    "title": "Lantink et al. 2022, PNAS: Milankovitch cycles in banded iron formations constrain the Earth-Moon system 2.46 billion years ago",
+    "url": "https://doi.org/10.1073/pnas.2117146119"
+   },
+   {
+    "title": "Wikipedia: Banded iron formation",
+    "url": "https://en.wikipedia.org/wiki/Banded_iron_formation"
+   }
+  ]
+ },
+ {
+  "id": "great-oxidation-event",
+  "title": "The Great Oxidation Event",
+  "ma": 2400,
+  "maRange": [
+   2460,
+   2060
+  ],
+  "dateLabel": "c. 2.46 to 2.06 billion years ago",
+  "kind": "climate",
+  "lonlat": null,
+  "place": null,
+  "evidence": "geology",
+  "evidenceNote": "Before this time, sulfur in rocks carries a chemical fingerprint that can form only in air without oxygen; afterwards the fingerprint disappears for good.",
+  "text": "For the first time, free oxygen built up in the air and shallow seas: from almost nothing to a level still far below today's. The source was oxygen-making cyanobacteria, though the timing is debated. It began between 2.46 and 2.43 billion years ago, came in fits and starts, and settled by about 2.06 billion years ago. Oxygen was toxic to many microbes, let others evolve to breathe it, and may have helped to trigger severe ice ages.",
+  "sources": [
+   {
+    "title": "Gumsley et al. 2017, PNAS: Timing and tempo of the Great Oxidation Event",
+    "url": "https://doi.org/10.1073/pnas.1608824114"
+   },
+   {
+    "title": "Warke et al. 2020, PNAS: The Great Oxidation Event preceded a Paleoproterozoic 'snowball Earth'",
+    "url": "https://doi.org/10.1073/pnas.2003090117"
+   },
+   {
+    "title": "Lyons, Reinhard & Planavsky 2014, Nature: The rise of oxygen in Earth's early ocean and atmosphere",
+    "url": "https://www.nature.com/articles/nature13068"
+   },
+   {
+    "title": "Wikipedia: Great Oxidation Event",
+    "url": "https://en.wikipedia.org/wiki/Great_Oxidation_Event"
+   },
+   {
+    "title": "UC Museum of Paleontology: The Proterozoic Eon",
+    "url": "https://ucmp.berkeley.edu/precambrian/proterozoic.php"
+   }
+  ]
+ },
+ {
+  "id": "huronian-glaciation",
+  "title": "The Huronian ice ages",
+  "ma": 2300,
+  "maRange": [
+   2400,
+   2100
+  ],
+  "dateLabel": "c. 2.4 to 2.1 billion years ago",
+  "kind": "climate",
+  "lonlat": [
+   -82.65,
+   46.38
+  ],
+  "place": "North shore of Lake Huron, Ontario, Canada",
+  "evidence": "geology",
+  "evidenceNote": "Layers of boulder-filled mud dropped by glaciers lie in rocks of this age near Lake Huron and in South Africa.",
+  "text": "Three separate layers of glacier-dropped rubble north of Lake Huron record a series of ice ages. In South Africa, glacial deposits of about this age formed close to the equator, so at least one of these freezes may have been a 'Snowball Earth'. Kopp and colleagues (2005) proposed a cause: the new oxygen destroyed methane, a powerful greenhouse gas. Later dating confirmed that oxygen began to rise before the tropical glaciation (Warke and colleagues, 2020).",
+  "sources": [
+   {
+    "title": "Wikipedia: Huronian glaciation",
+    "url": "https://en.wikipedia.org/wiki/Huronian_glaciation"
+   },
+   {
+    "title": "Kopp et al. 2005, PNAS: The Paleoproterozoic snowball Earth: a climate disaster triggered by the evolution of oxygenic photosynthesis",
+    "url": "https://doi.org/10.1073/pnas.0504878102"
+   },
+   {
+    "title": "Gumsley et al. 2017, PNAS: Timing and tempo of the Great Oxidation Event",
+    "url": "https://doi.org/10.1073/pnas.1608824114"
+   },
+   {
+    "title": "Warke et al. 2020, PNAS: The Great Oxidation Event preceded a Paleoproterozoic 'snowball Earth'",
+    "url": "https://doi.org/10.1073/pnas.2003090117"
+   }
+  ]
+ },
+ {
+  "id": "francevillian-biota",
+  "title": "Gabon's Francevillian 'fossils'",
+  "ma": 2100,
+  "maRange": null,
+  "dateLabel": "c. 2.1 billion years ago",
+  "kind": "fossil-site",
+  "lonlat": [
+   13.58,
+   -1.63
+  ],
+  "place": "Franceville, Gabon",
+  "evidence": "disputed",
+  "evidenceNote": "Centimetre-sized lobed shapes sit in dated black shale; their regular form suggests living things, but minerals can grow into similar shapes.",
+  "text": "Black shales near Franceville hold flattened, lobed and disc-like structures up to several centimetres across. El Albani and colleagues (2010) described them as the oldest large, many-celled organisms, living soon after oxygen first rose. Disputed: Adolf Seilacher regarded them as mineral growths of pyrite, not fossils, and a 2016 study of similar structures in Michigan found those to be mineral lumps. Nothing comparable is known from the following billion years.",
+  "sources": [
+   {
+    "title": "El Albani et al. 2010, Nature: Large colonial organisms with coordinated growth in oxygenated environments 2.1 Gyr ago",
+    "url": "https://www.nature.com/articles/nature09166"
+   },
+   {
+    "title": "Wikipedia: Francevillian biota",
+    "url": "https://en.wikipedia.org/wiki/Francevillian_biota"
+   }
+  ]
+ },
+ {
+  "id": "vredefort-impact",
+  "title": "The Vredefort impact",
+  "ma": 2023,
+  "maRange": null,
+  "dateLabel": "c. 2.02 billion years ago",
+  "kind": "impact",
+  "lonlat": [
+   27.5,
+   -27.0
+  ],
+  "place": "Vredefort, Free State, South Africa",
+  "evidence": "geology",
+  "evidenceNote": "Rock melted by the impact contains crystals that can be dated, and the surrounding rocks are shattered in ways that only an impact can cause.",
+  "text": "An asteroid perhaps 20 to 25 kilometres across struck what is now South Africa 2,023 million years ago, give or take 4 million. The crater, since worn away by erosion, was between 170 and 300 kilometres wide, which makes Vredefort one of the largest impact structures known on Earth and one of the oldest. Only the deeply eroded central part of the structure can be seen today.",
+  "sources": [
+   {
+    "title": "Wikipedia: Vredefort impact structure",
+    "url": "https://en.wikipedia.org/wiki/Vredefort_impact_structure"
+   }
+  ]
+ },
+ {
+  "id": "sudbury-impact",
+  "title": "The Sudbury impact",
+  "ma": 1849,
+  "maRange": null,
+  "dateLabel": "c. 1.85 billion years ago",
+  "kind": "impact",
+  "lonlat": [
+   -81.18,
+   46.6
+  ],
+  "place": "Sudbury, Ontario, Canada",
+  "evidence": "geology",
+  "evidenceNote": "The basin's shattered and melted rocks can only be explained by an impact, and crystals in the melt give its age.",
+  "text": "A body about 10 to 15 kilometres across hit what is now Ontario 1,849 million years ago, leaving one of the oldest and largest impact structures known. Debris was thrown more than 800 kilometres, as far as Minnesota. The rocks of the Sudbury Basin are rich in nickel, copper and other metals, which are mined there today.",
+  "sources": [
+   {
+    "title": "Wikipedia: Sudbury Basin",
+    "url": "https://en.wikipedia.org/wiki/Sudbury_Basin"
+   }
+  ]
+ },
+ {
+  "id": "columbia-nuna",
+  "title": "Supercontinent Columbia (Nuna) comes together",
+  "ma": 1800,
+  "maRange": [
+   2100,
+   1800
+  ],
+  "dateLabel": "c. 2.1 to 1.8 billion years ago",
+  "kind": "continents",
+  "lonlat": null,
+  "place": null,
+  "evidence": "geology",
+  "evidenceNote": "Belts of crumpled, once deeply buried rock of the same age on many continents mark the places where older landmasses collided.",
+  "text": "Between about 2.1 and 1.8 billion years ago nearly all of the Earth's continental blocks collided and joined into what many geologists count as the first true supercontinent: Columbia, also called Nuna, first proposed in 2002. Its exact layout is uncertain. It began to break apart about 1.5 billion years ago, and its pieces later came together again as Rodinia.",
+  "sources": [
+   {
+    "title": "Wikipedia: Columbia (supercontinent)",
+    "url": "https://en.wikipedia.org/wiki/Columbia_(supercontinent)"
+   },
+   {
+    "title": "Mitchell et al. 2021, Nature Reviews Earth & Environment: The supercontinent cycle",
+    "url": "https://www.nature.com/articles/s43017-021-00160-0"
+   },
+   {
+    "title": "Wikipedia: Mesoproterozoic",
+    "url": "https://en.wikipedia.org/wiki/Mesoproterozoic"
+   }
+  ]
+ },
+ {
+  "id": "first-eukaryotes",
+  "title": "The first cells with a nucleus",
+  "ma": 1650,
+  "maRange": [
+   1800,
+   1600
+  ],
+  "dateLabel": "by c. 1.65 billion years ago",
+  "kind": "life",
+  "lonlat": [
+   117.4,
+   40.1
+  ],
+  "place": "Changcheng Group, North China",
+  "evidence": "fossil",
+  "evidenceNote": "Microscopic fossils of this age are too large and too elaborately shaped to be bacteria; DNA comparisons suggest that such cells arose somewhat earlier.",
+  "text": "Eukaryotes are cells with a nucleus; all animals, plants and fungi are built of them. Their oldest widely accepted fossils, in rocks about 1.65 billion years old in North China, are already varied. Molecular clocks place the last common ancestor of living eukaryotes between about 1.2 and more than 1.8 billion years ago. Older candidates are doubtful: coiled Grypania, 1.87 billion years old, could be a giant bacterium or a colony of bacteria.",
+  "sources": [
+   {
+    "title": "Wikipedia: Eukaryote",
+    "url": "https://en.wikipedia.org/wiki/Eukaryote"
+   },
+   {
+    "title": "Wikipedia: Paleoproterozoic",
+    "url": "https://en.wikipedia.org/wiki/Paleoproterozoic"
+   },
+   {
+    "title": "Brocks et al. 2023, Nature: Lost world of complex life and the late rise of the eukaryotic crown",
+    "url": "https://www.nature.com/articles/s41586-023-06170-w"
+   },
+   {
+    "title": "Rasmussen et al. 2008, Nature: Reassessing the first appearance of eukaryotes and cyanobacteria",
+    "url": "https://www.nature.com/articles/nature07381"
+   },
+   {
+    "title": "Wikipedia: Grypania",
+    "url": "https://en.wikipedia.org/wiki/Grypania"
+   }
+  ]
+ },
+ {
+  "id": "rodinia-assembles",
+  "title": "Rodinia assembles and the Grenville mountains rise",
+  "ma": 1100,
+  "maRange": [
+   1250,
+   900
+  ],
+  "dateLabel": "c. 1.25 to 0.9 billion years ago",
+  "kind": "continents",
+  "lonlat": [
+   -73.92,
+   44.11
+  ],
+  "place": "Adirondack Mountains, New York, USA (Grenville Province)",
+  "evidence": "geology",
+  "evidenceNote": "The deep roots of a worn-down mountain chain of this age run from Labrador to Mexico, and matching belts lie on other continents.",
+  "text": "The fragments of Columbia came together again as a new supercontinent, Rodinia, complete by about 900 million years ago. Where other continents collided with Laurentia (ancient North America), in a collision compared with the one raising the Himalaya today, the Grenville mountains rose. Their eroded roots are exposed from Labrador through Quebec and the Adirondacks to Texas and Mexico, and in Scotland. How the continents fitted together inside Rodinia is still debated.",
+  "sources": [
+   {
+    "title": "Wikipedia: Rodinia",
+    "url": "https://en.wikipedia.org/wiki/Rodinia"
+   },
+   {
+    "title": "Wikipedia: Grenville orogeny",
+    "url": "https://en.wikipedia.org/wiki/Grenville_orogeny"
+   },
+   {
+    "title": "Wikipedia: Mesoproterozoic",
+    "url": "https://en.wikipedia.org/wiki/Mesoproterozoic"
+   }
+  ]
+ },
+ {
+  "id": "bangiomorpha",
+  "title": "Bangiomorpha: the first known sex",
+  "ma": 1047,
+  "maRange": null,
+  "dateLabel": "c. 1.05 billion years ago",
+  "kind": "life",
+  "lonlat": [
+   -93.5,
+   73.25
+  ],
+  "place": "Somerset Island, Nunavut, Canada",
+  "evidence": "fossil",
+  "evidenceNote": "The fossil threads show the same cell patterns as a living red seaweed, and the rock layers that hold them have been dated.",
+  "text": "Microscopic threads in Arctic Canadian rocks dated to 1,047 million years ago look almost exactly like the living red seaweed Bangia. Bangiomorpha is a red alga built of many cells and is the first organism known to have reproduced sexually. Sex shuffles genes in every generation, and many-celled bodies allow cells to take on different jobs; both steps opened the way to larger and more complex life.",
+  "sources": [
+   {
+    "title": "Wikipedia: Bangiomorpha",
+    "url": "https://en.wikipedia.org/wiki/Bangiomorpha"
+   },
+   {
+    "title": "Wikipedia: Mesoproterozoic",
+    "url": "https://en.wikipedia.org/wiki/Mesoproterozoic"
+   }
+  ]
+ },
+ {
+  "id": "rodinia-breaks-up",
+  "title": "Rodinia breaks apart",
+  "ma": 750,
+  "maRange": [
+   750,
+   633
+  ],
+  "dateLabel": "c. 750 to 633 million years ago",
+  "kind": "continents",
+  "lonlat": null,
+  "place": null,
+  "evidence": "geology",
+  "evidenceNote": "Rift valleys filled with sediment and lava of this age line the edges of the old continental blocks, showing where they tore apart.",
+  "text": "Rodinia began to stretch and rift late in the Tonian, and from about 750 million years ago it split into separate continents. The break-up seems linked to what came next: the first Snowball Earth glaciation followed the break-up of a supercontinent that lay in the tropics, and many researchers think the changes it caused in the oceans and the air helped to tip the planet into the deep freeze.",
+  "sources": [
+   {
+    "title": "Wikipedia: Rodinia",
+    "url": "https://en.wikipedia.org/wiki/Rodinia"
+   },
+   {
+    "title": "Wikipedia: Tonian",
+    "url": "https://en.wikipedia.org/wiki/Tonian"
+   },
+   {
+    "title": "Hoffman et al. 2017, Science Advances: Snowball Earth climate dynamics and Cryogenian geology-geobiology",
+    "url": "https://doi.org/10.1126/sciadv.1600983"
+   }
+  ]
+ },
+ {
+  "id": "sturtian-glaciation",
+  "title": "Snowball Earth I: the Sturtian glaciation",
+  "ma": 717,
+  "maRange": [
+   717,
+   660
+  ],
+  "dateLabel": "c. 717 to 660 million years ago",
+  "kind": "climate",
+  "lonlat": [
+   138.58,
+   -35.04
+  ],
+  "place": "Sturt Gorge, Adelaide, South Australia",
+  "evidence": "disputed",
+  "evidenceNote": "Volcanic ash dated to 716.5 million years ago lies among glacier-dropped rubble in rocks that formed near the equator, so ice reached sea level in the tropics.",
+  "text": "For about 57 million years ice sheets reached sea level even near the equator. The glaciation is named after glacial rocks at Sturt Gorge. Disputed: how complete the freeze was. Paul Hoffman and colleagues argue that the whole ocean froze over (a 'hard snowball'); climate models by Hyde and colleagues (2000) allow a belt of open water in the tropics (a 'slushball'), which would more easily explain how sunlight-dependent life survived.",
+  "sources": [
+   {
+    "title": "Macdonald et al. 2010, Science: Calibrating the Cryogenian",
+    "url": "https://doi.org/10.1126/science.1183325"
+   },
+   {
+    "title": "Hoffman et al. 2017, Science Advances: Snowball Earth climate dynamics and Cryogenian geology-geobiology",
+    "url": "https://doi.org/10.1126/sciadv.1600983"
+   },
+   {
+    "title": "Hyde et al. 2000, Nature: Neoproterozoic 'snowball Earth' simulations with a coupled climate/ice-sheet model",
+    "url": "https://www.nature.com/articles/35013005"
+   },
+   {
+    "title": "Wikipedia: Sturtian glaciation",
+    "url": "https://en.wikipedia.org/wiki/Sturtian_glaciation"
+   },
+   {
+    "title": "Wikipedia: Snowball Earth",
+    "url": "https://en.wikipedia.org/wiki/Snowball_Earth"
+   }
+  ]
+ },
+ {
+  "id": "sponge-biomarkers",
+  "title": "Chemical traces of the first animals?",
+  "ma": 645,
+  "maRange": [
+   660,
+   635
+  ],
+  "dateLabel": "before 635 million years ago",
+  "kind": "life",
+  "lonlat": [
+   55.5,
+   18.5
+  ],
+  "place": "South Oman Salt Basin, Oman",
+  "evidence": "disputed",
+  "evidenceNote": "Oil-like molecules in these rocks match fats made by living sponges, but some algae and single-celled organisms make the same molecules.",
+  "text": "Love and colleagues (2009) found fossil fat molecules in Oman, in rocks laid down before the end of the Marinoan ice age, and argued that sponges made them: the oldest evidence of animals, 100 million years before the Cambrian explosion. Disputed: Nettersheim and colleagues (2019) showed that single-celled Rhizaria can make the same molecules, while Zumberge and colleagues (2018) reported a second molecule pointing to sponges. DNA-based estimates do place the first animals in or just before this period.",
+  "sources": [
+   {
+    "title": "Love et al. 2009, Nature: Fossil steroids record the appearance of Demospongiae during the Cryogenian period",
+    "url": "https://www.nature.com/articles/nature07673"
+   },
+   {
+    "title": "Nettersheim et al. 2019, Nature Ecology & Evolution: Putative sponge biomarkers in unicellular Rhizaria question an early rise of animals",
+    "url": "https://www.nature.com/articles/s41559-019-0806-5"
+   },
+   {
+    "title": "Zumberge et al. 2018, Nature Ecology & Evolution: Demosponge steroid biomarker 26-methylstigmastane provides evidence for Neoproterozoic animals",
+    "url": "https://www.nature.com/articles/s41559-018-0676-2"
+   },
+   {
+    "title": "dos Reis et al. 2015, Current Biology: Uncertainty in the timing of origin of animals and the limits of precision in molecular timescales",
+    "url": "https://doi.org/10.1016/j.cub.2015.09.066"
+   },
+   {
+    "title": "Wikipedia: 24-isopropylcholestane",
+    "url": "https://en.wikipedia.org/wiki/24-isopropylcholestane"
+   }
+  ]
+ },
+ {
+  "id": "marinoan-glaciation",
+  "title": "Snowball Earth II: the Marinoan glaciation",
+  "ma": 639,
+  "maRange": [
+   639,
+   635
+  ],
+  "dateLabel": "ended c. 635 million years ago",
+  "kind": "climate",
+  "lonlat": [
+   138.7,
+   -31.42
+  ],
+  "place": "Flinders Ranges, South Australia",
+  "evidence": "disputed",
+  "evidenceNote": "Glacial rubble of this age is capped around the world by an unusual layer of limestone, the mark of a sudden swing from freezing to warm seas.",
+  "text": "A second world-wide freeze, named after Marino near Adelaide, ended 635 million years ago. Its start is poorly dated; it lasted at least four or five million years. Carbon dioxide from volcanoes built up to perhaps a hundred times today's level before the ice gave way, and 'cap' limestones were then laid down over the glacial rubble. As with the Sturtian, whether open water survived at the equator is disputed. The thaw marks the start of the Ediacaran Period.",
+  "sources": [
+   {
+    "title": "Hoffman et al. 2017, Science Advances: Snowball Earth climate dynamics and Cryogenian geology-geobiology",
+    "url": "https://doi.org/10.1126/sciadv.1600983"
+   },
+   {
+    "title": "Hyde et al. 2000, Nature: Neoproterozoic 'snowball Earth' simulations with a coupled climate/ice-sheet model",
+    "url": "https://www.nature.com/articles/35013005"
+   },
+   {
+    "title": "Wikipedia: Marinoan glaciation",
+    "url": "https://en.wikipedia.org/wiki/Marinoan_glaciation"
+   },
+   {
+    "title": "Wikipedia: Ediacaran",
+    "url": "https://en.wikipedia.org/wiki/Ediacaran"
+   }
+  ]
+ },
+ {
+  "id": "pannotia",
+  "title": "Pannotia: a brief supercontinent?",
+  "ma": 600,
+  "maRange": [
+   633,
+   573
+  ],
+  "dateLabel": "c. 630 to 570 million years ago (if it existed)",
+  "kind": "continents",
+  "lonlat": null,
+  "place": null,
+  "evidence": "disputed",
+  "evidenceNote": "The fit depends on where magnetic minerals say each continent lay, and those readings are sparse and uncertain for this time.",
+  "text": "Some reconstructions gather the fragments of Rodinia briefly into a new southern supercontinent, Pannotia (named by Powell in 1995), with Laurentia lying against South America before the Iapetus Ocean opened between them. Disputed: a 2022 study argued that Pannotia never fully existed, because it had begun to break up before it was fully assembled. What is agreed is that the southern continents were merging into Gondwana at about this time.",
+  "sources": [
+   {
+    "title": "Wikipedia: Pannotia",
+    "url": "https://en.wikipedia.org/wiki/Pannotia"
+   },
+   {
+    "title": "Wikipedia: Rodinia",
+    "url": "https://en.wikipedia.org/wiki/Rodinia"
+   }
+  ]
+ },
+ {
+  "id": "mistaken-point",
+  "title": "Mistaken Point: the oldest large living things",
+  "ma": 570,
+  "maRange": [
+   575,
+   560
+  ],
+  "dateLabel": "c. 575 to 560 million years ago",
+  "kind": "fossil-site",
+  "lonlat": [
+   -53.19,
+   46.63
+  ],
+  "place": "Mistaken Point, Newfoundland, Canada",
+  "evidence": "fossil",
+  "evidenceNote": "Volcanic ash buried the sea floor and preserved the creatures where they lived; crystals in the ash give the date, and one layer is 565 million years old.",
+  "text": "On a deep sea floor lived fronds, bushes and spindle-shaped creatures such as Fractofusus and Charniodiscus, among the oldest large and complex organisms known. Falls of volcanic ash buried whole communities where they stood. They appear a few million years after the short Gaskiers ice age of about 580 million years ago. The first fossil was found in 1967 by the student Shiva Balak Misra. Mistaken Point is now a UNESCO World Heritage Site.",
+  "sources": [
+   {
+    "title": "Wikipedia: Mistaken Point Formation",
+    "url": "https://en.wikipedia.org/wiki/Mistaken_Point_Formation"
+   },
+   {
+    "title": "Wikipedia: Mistaken Point Ecological Reserve",
+    "url": "https://en.wikipedia.org/wiki/Mistaken_Point_Ecological_Reserve"
+   },
+   {
+    "title": "Wikipedia: Gaskiers glaciation",
+    "url": "https://en.wikipedia.org/wiki/Gaskiers_glaciation"
+   },
+   {
+    "title": "UC Museum of Paleontology: The Ediacaran Period",
+    "url": "https://ucmp.berkeley.edu/vendian/ediacaran.php"
+   }
+  ]
+ },
+ {
+  "id": "ediacara-hills",
+  "title": "Ediacara Hills: Dickinsonia and its neighbours",
+  "ma": 555,
+  "maRange": [
+   560,
+   550
+  ],
+  "dateLabel": "c. 555 million years ago",
+  "kind": "fossil-site",
+  "lonlat": [
+   138.13,
+   -30.82
+  ],
+  "place": "Ediacara Hills, Flinders Ranges, South Australia",
+  "evidence": "disputed",
+  "evidenceNote": "The soft bodies left clear impressions in sandstone; similar fossils in Russia lie beside volcanic ash dated to 555 million years, and fat molecules preserved in some show that they were animals.",
+  "text": "The fossils that Reg Sprigg noticed here in 1946 gave the Ediacaran Period its name: flat, quilted Dickinsonia, discs and fronds, all soft-bodied. Disputed: what they were. They have been called early animals, giant single cells, lichens, or a lost branch of life (Adolf Seilacher's 'Vendobionta'). In 2018 Bobrovskiy and colleagues found cholesterol, a hallmark of animals, in Dickinsonia fossils from Russia. Other Ediacaran forms remain puzzles.",
+  "sources": [
+   {
+    "title": "UC Museum of Paleontology: The Ediacaran Period",
+    "url": "https://ucmp.berkeley.edu/vendian/ediacaran.php"
+   },
+   {
+    "title": "Bobrovskiy et al. 2018, Science: Ancient steroids establish the Ediacaran fossil Dickinsonia as one of the earliest animals",
+    "url": "https://doi.org/10.1126/science.aat7228"
+   },
+   {
+    "title": "Martin et al. 2000, Science: Age of Neoproterozoic bilaterian body and trace fossils, White Sea, Russia",
+    "url": "https://doi.org/10.1126/science.288.5467.841"
+   },
+   {
+    "title": "Wikipedia: Ediacaran biota",
+    "url": "https://en.wikipedia.org/wiki/Ediacaran_biota"
+   },
+   {
+    "title": "Wikipedia: Ediacara Hills",
+    "url": "https://en.wikipedia.org/wiki/Ediacara_Hills"
+   }
+  ]
+ },
+ {
+  "id": "gondwana-assembles",
+  "title": "Gondwana is welded together",
+  "ma": 550,
+  "maRange": [
+   650,
+   530
+  ],
+  "dateLabel": "c. 600 to 530 million years ago",
+  "kind": "continents",
+  "lonlat": null,
+  "place": null,
+  "evidence": "geology",
+  "evidenceNote": "Worn-down mountain belts of this age stitch together the old cores of Africa, South America, India, Antarctica and Australia.",
+  "text": "A series of collisions, together called the Pan-African mountain building, joined the future southern continents (South America, Africa, Arabia, India, Antarctica and Australia) into one giant landmass, Gondwana. It began when India and Madagascar met East Africa, about 800 to 650 million years ago, and was complete about 600 to 530 million years ago. What is left of Gondwana makes up about two-thirds of today's continental area.",
+  "sources": [
+   {
+    "title": "Wikipedia: Gondwana",
+    "url": "https://en.wikipedia.org/wiki/Gondwana"
+   },
+   {
+    "title": "Wikipedia: Pannotia",
+    "url": "https://en.wikipedia.org/wiki/Pannotia"
+   }
+  ]
+ },
+ {
+  "id": "cambrian-explosion",
+  "title": "The Cambrian explosion begins",
+  "ma": 538.8,
+  "maRange": [
+   538.8,
+   514
+  ],
+  "dateLabel": "from c. 539 million years ago",
+  "kind": "life",
+  "lonlat": [
+   -55.86,
+   47.07
+  ],
+  "place": "Fortune Head, Newfoundland, Canada",
+  "evidence": "fossil",
+  "evidenceNote": "Rock layers from this time onward suddenly contain shells, skeletons and complex burrows; the first such burrows, at Fortune Head, officially mark the start of the Cambrian.",
+  "text": "Over about 13 to 25 million years most of the major groups of animals alive today appear in the fossil record, many with shells, legs and eyes. The start of the Cambrian is defined at Fortune Head by the first complex burrows, called Treptichnus pedum. Genes suggest that the groups had begun to split earlier, before any clear fossils. Why the burst came when it did (more oxygen, new predators, new genes) is debated.",
+  "sources": [
+   {
+    "title": "Wikipedia: Cambrian explosion",
+    "url": "https://en.wikipedia.org/wiki/Cambrian_explosion"
+   },
+   {
+    "title": "UC Museum of Paleontology: The Cambrian Period",
+    "url": "https://ucmp.berkeley.edu/cambrian/cambrian.php"
+   },
+   {
+    "title": "Erwin et al. 2011, Science: The Cambrian conundrum: early divergence and later ecological success in the early history of animals",
+    "url": "https://doi.org/10.1126/science.1206375"
+   },
+   {
+    "title": "Wikipedia: Cambrian",
+    "url": "https://en.wikipedia.org/wiki/Cambrian"
+   },
+   {
+    "title": "International Commission on Stratigraphy: International Chronostratigraphic Chart, v2026/06",
+    "url": "https://stratigraphy.org/chart"
+   }
+  ]
+ },
+ {
+  "id": "chengjiang",
+  "title": "The Chengjiang fossils",
+  "ma": 518,
+  "maRange": null,
+  "dateLabel": "c. 518 million years ago",
+  "kind": "fossil-site",
+  "lonlat": [
+   102.98,
+   24.67
+  ],
+  "place": "Maotianshan, Chengjiang, Yunnan, China",
+  "evidence": "fossil",
+  "evidenceNote": "Fine mud buried animals so quickly that soft parts such as legs and antennae were preserved; the rock layers are dated to about 518 million years.",
+  "text": "Mudstones at Maotianshan preserve an early Cambrian sea floor in fine detail: soft-bodied worms, sponges, trilobites with their legs and antennae, and the earliest fish-like vertebrates, such as Haikouichthys. First recognised for its exceptional fossils in 1984, and about ten million years older than the Burgess Shale, Chengjiang shows that complex animal communities were established early in the Cambrian explosion. It became a UNESCO World Heritage Site in 2012.",
+  "sources": [
+   {
+    "title": "Wikipedia: Maotianshan Shales",
+    "url": "https://en.wikipedia.org/wiki/Maotianshan_Shales"
+   },
+   {
+    "title": "Shu et al. 1999, Nature: Lower Cambrian vertebrates from south China",
+    "url": "https://www.nature.com/articles/46965"
+   },
+   {
+    "title": "Wikipedia: Haikouichthys",
+    "url": "https://en.wikipedia.org/wiki/Haikouichthys"
+   }
+  ]
+ },
+ {
+  "id": "burgess-shale",
+  "title": "The Burgess Shale",
+  "ma": 508,
+  "maRange": [
+   508,
+   505
+  ],
+  "dateLabel": "c. 508 million years ago",
+  "kind": "fossil-site",
+  "lonlat": [
+   -116.47,
+   51.44
+  ],
+  "place": "Yoho National Park, British Columbia, Canada",
+  "evidence": "fossil",
+  "evidenceNote": "Animals were buried in fine mud that kept their soft tissues as thin dark films; the rocks are dated to about 508 million years.",
+  "text": "Discovered by Charles Walcott in 1909, high in the Canadian Rockies, the Burgess Shale preserves soft-bodied sea animals of the middle Cambrian as dark films on the rock. Walcott collected more than 65,000 specimens. Strange forms such as five-eyed Opabinia, spiny Wiwaxia and the predator Anomalocaris, one of the largest animals of its time, showed how varied early animals were. It is one of the most famous fossil sites in the world.",
+  "sources": [
+   {
+    "title": "Wikipedia: Burgess Shale",
+    "url": "https://en.wikipedia.org/wiki/Burgess_Shale"
+   },
+   {
+    "title": "Royal Ontario Museum: The Burgess Shale",
+    "url": "https://burgess-shale.rom.on.ca/"
+   },
+   {
+    "title": "UC Museum of Paleontology: The Cambrian Period",
+    "url": "https://ucmp.berkeley.edu/cambrian/cambrian.php"
+   },
+   {
+    "title": "Wikipedia: Cambrian explosion",
+    "url": "https://en.wikipedia.org/wiki/Cambrian_explosion"
+   }
+  ]
+ },
+ {
+  "id": "late-ordovician-extinction",
+  "title": "The Late Ordovician mass extinction",
+  "ma": 445,
+  "maRange": [
+   445,
+   443
+  ],
+  "dateLabel": "c. 445 to 443 million years ago",
+  "kind": "extinction",
+  "lonlat": [
+   9.0,
+   25.5
+  ],
+  "place": "Central Sahara, North Africa (glacial deposits)",
+  "evidence": "disputed",
+  "evidenceNote": "Fossil counts show sea life crashing in two steps, and glacial deposits in North Africa and Arabia show a great ice sheet over the South Pole at the same time.",
+  "text": "The first of the 'big five' extinctions removed about 85 percent of marine species in two pulses. The usual explanation: an ice sheet spread over Gondwana at the South Pole, cooling the seas and draining the shallow shelves, and a second pulse came as the ice melted and oxygen-poor water spread. Disputed: Finnegan and colleagues (2012) tie the losses to cooling and lost habitat, while some later studies blame volcanic eruptions and link the first pulse to warming instead.",
+  "sources": [
+   {
+    "title": "Wikipedia: Late Ordovician mass extinction",
+    "url": "https://en.wikipedia.org/wiki/Late_Ordovician_mass_extinction"
+   },
+   {
+    "title": "Finnegan et al. 2012, PNAS: Climate change and the selective signature of the Late Ordovician mass extinction",
+    "url": "https://doi.org/10.1073/pnas.1117039109"
+   },
+   {
+    "title": "Judd et al. 2024, Science: A 485-million-year history of Earth's surface temperature (accepted manuscript, NSF PAR)",
+    "url": "https://par.nsf.gov/servlets/purl/10587582"
+   },
+   {
+    "title": "Wikipedia: Hirnantian glaciation",
+    "url": "https://en.wikipedia.org/wiki/Hirnantian_glaciation"
+   },
+   {
+    "title": "UC Museum of Paleontology: The Ordovician Period",
+    "url": "https://ucmp.berkeley.edu/ordovician/ordovician.php"
+   }
+  ]
+ },
+ {
+  "id": "caledonian-orogeny",
+  "title": "The Caledonian mountains rise",
+  "ma": 425,
+  "maRange": [
+   490,
+   390
+  ],
+  "dateLabel": "c. 490 to 390 million years ago",
+  "kind": "continents",
+  "lonlat": [
+   -4.71,
+   57.12
+  ],
+  "place": "Scottish Highlands, United Kingdom",
+  "evidence": "geology",
+  "evidenceNote": "Folded and baked rocks of the same age run in one belt from Scandinavia through Scotland to Greenland, pieces of a single chain later split apart by the Atlantic.",
+  "text": "As the Iapetus Ocean closed, the continents Laurentia (North America and Greenland) and Baltica (northern Europe) and the smaller Avalonia (which included England) collided. The result was a great mountain chain named after Caledonia, the Latin name for Scotland. Its worn-down remains form the Scottish Highlands and the mountains of Norway and eastern Greenland. The main collision between Baltica and Laurentia came about 425 to 415 million years ago.",
+  "sources": [
+   {
+    "title": "Wikipedia: Caledonian orogeny",
+    "url": "https://en.wikipedia.org/wiki/Caledonian_orogeny"
+   },
+   {
+    "title": "UC Museum of Paleontology: The Silurian Period",
+    "url": "https://ucmp.berkeley.edu/silurian/silurian.php"
+   },
+   {
+    "title": "British Geological Survey: Geological timechart",
+    "url": "https://www.bgs.ac.uk/discovering-geology/fossils-and-geological-time/geological-timechart/"
+   }
+  ]
+ },
+ {
+  "id": "rhynie-chert",
+  "title": "The Rhynie chert",
+  "ma": 410,
+  "maRange": null,
+  "dateLabel": "c. 410 million years ago",
+  "kind": "fossil-site",
+  "lonlat": [
+   -2.84,
+   57.34
+  ],
+  "place": "Rhynie, Aberdeenshire, Scotland",
+  "evidence": "fossil",
+  "evidenceNote": "Silica-rich water from hot springs flooded a patch of ground and turned the plants and animals to stone, cell by cell.",
+  "text": "Hot-spring water rich in silica petrified an entire early land community where it stood, almost instantly, down to single cells. The chert, discovered by William Mackie between 1910 and 1913, preserves simple leafless plants with water-carrying cells, together with fungi, lichens, algae and small arthropods. It is one of the best windows we have on life's early steps onto land.",
+  "sources": [
+   {
+    "title": "Wikipedia: Rhynie chert",
+    "url": "https://en.wikipedia.org/wiki/Rhynie_chert"
+   },
+   {
+    "title": "UC Museum of Paleontology: The Devonian Period",
+    "url": "https://ucmp.berkeley.edu/devonian/devonian.php"
+   }
+  ]
+ },
+ {
+  "id": "gilboa-forest",
+  "title": "The first forests: Gilboa",
+  "ma": 385,
+  "maRange": null,
+  "dateLabel": "c. 385 million years ago",
+  "kind": "fossil-site",
+  "lonlat": [
+   -74.45,
+   42.4
+  ],
+  "place": "Gilboa, New York, USA",
+  "evidence": "fossil",
+  "evidenceNote": "Fossil tree stumps still stand where they grew, in rock layers about 385 million years old.",
+  "text": "Fossil stumps known at Gilboa since the 1870s are the remains of one of the oldest known forests. For over a century nobody knew what the trees looked like; in 2007 a complete fossil showed that they were Wattieza, tree-sized relatives of ferns with a crown of branches. Forests like this spread across the lowlands, and the growth of land plants is thought to have drawn carbon dioxide out of the air over time.",
+  "sources": [
+   {
+    "title": "Stein et al. 2007, Nature: Giant cladoxylopsid trees resolve the enigma of the Earth's earliest forest stumps at Gilboa",
+    "url": "https://www.nature.com/articles/nature05705"
+   },
+   {
+    "title": "Wikipedia: Gilboa Fossil Forest",
+    "url": "https://en.wikipedia.org/wiki/Gilboa_Fossil_Forest"
+   },
+   {
+    "title": "UC Museum of Paleontology: The Devonian Period",
+    "url": "https://ucmp.berkeley.edu/devonian/devonian.php"
+   },
+   {
+    "title": "Foster, Royer & Lunt 2017, Nature Communications: Future climate forcing potentially without precedent in the last 420 million years",
+    "url": "https://www.nature.com/articles/ncomms14845"
+   }
+  ]
+ },
+ {
+  "id": "tiktaalik",
+  "title": "Tiktaalik, a fish with a neck and wrists",
+  "ma": 375,
+  "maRange": null,
+  "dateLabel": "c. 375 million years ago",
+  "kind": "fossil-site",
+  "lonlat": [
+   -86.0,
+   77.2
+  ],
+  "place": "Ellesmere Island, Nunavut, Canada",
+  "evidence": "fossil",
+  "evidenceNote": "The bones were found in rocks of known age and show a mix of fish features and those of four-legged animals.",
+  "text": "Found in 2004 and described by Edward Daeschler, Neil Shubin and Farish Jenkins, Tiktaalik was a lobe-finned fish with scales and fin rays, but also a mobile neck and a working wrist joint: a form between fishes and four-legged animals (tetrapods). It lived in shallow water. Trackways in Poland, almost 400 million years old, suggest however that the first tetrapods were already walking well before it.",
+  "sources": [
+   {
+    "title": "Daeschler, Shubin & Jenkins 2006, Nature: A Devonian tetrapod-like fish and the evolution of the tetrapod body plan",
+    "url": "https://www.nature.com/articles/nature04639"
+   },
+   {
+    "title": "Wikipedia: Tiktaalik",
+    "url": "https://en.wikipedia.org/wiki/Tiktaalik"
+   },
+   {
+    "title": "Niedzwiedzki et al. 2010, Nature: Tetrapod trackways from the early Middle Devonian period of Poland",
+    "url": "https://www.nature.com/articles/nature08623"
+   }
+  ]
+ },
+ {
+  "id": "late-devonian-extinction",
+  "title": "The Late Devonian extinctions",
+  "ma": 372,
+  "maRange": [
+   372,
+   359
+  ],
+  "dateLabel": "c. 372 and 359 million years ago",
+  "kind": "extinction",
+  "lonlat": [
+   10.43,
+   51.82
+  ],
+  "place": "Kellwasser valley, Lower Saxony, Germany",
+  "evidence": "disputed",
+  "evidenceNote": "Black, oxygen-starved mud layers found around the world mark the two crises, and the fossils of reef builders and armoured fishes stop at those layers.",
+  "text": "Two crises 13 million years apart: the Kellwasser event (about 372 million years ago), which destroyed the great reefs and perhaps 40 percent of marine species, and the Hangenberg event (about 359), which ended the armoured placoderm fishes. Both left black shales from oxygen-starved seas. The cause is disputed: nutrients washed in by the first forests (Algeo and Scheckler), volcanic eruptions, cooling and glaciers, or, for the Hangenberg, ozone damage, perhaps from a nearby supernova (Fields and colleagues, 2020).",
+  "sources": [
+   {
+    "title": "Wikipedia: Late Devonian mass extinction",
+    "url": "https://en.wikipedia.org/wiki/Late_Devonian_mass_extinction"
+   },
+   {
+    "title": "Wikipedia: Hangenberg event",
+    "url": "https://en.wikipedia.org/wiki/Hangenberg_event"
+   },
+   {
+    "title": "Sallan & Coates 2010, PNAS: End-Devonian extinction and a bottleneck in the early evolution of modern jawed vertebrates",
+    "url": "https://doi.org/10.1073/pnas.0914000107"
+   },
+   {
+    "title": "Algeo & Scheckler 1998, Philosophical Transactions B: Terrestrial-marine teleconnections in the Devonian: links between the evolution of land plants, weathering processes, and marine anoxic events",
+    "url": "https://doi.org/10.1098/rstb.1998.0195"
+   },
+   {
+    "title": "Fields et al. 2020, PNAS: Supernova triggers for end-Devonian extinctions",
+    "url": "https://doi.org/10.1073/pnas.2013774117"
+   },
+   {
+    "title": "UC Museum of Paleontology: The Devonian Period",
+    "url": "https://ucmp.berkeley.edu/devonian/devonian.php"
+   },
+   {
+    "title": "Judd et al. 2024, Science: A 485-million-year history of Earth's surface temperature (accepted manuscript, NSF PAR)",
+    "url": "https://par.nsf.gov/servlets/purl/10587582"
+   }
+  ]
+ },
+ {
+  "id": "pangaea-assembles",
+  "title": "Pangaea comes together",
+  "ma": 335,
+  "maRange": [
+   335,
+   300
+  ],
+  "dateLabel": "from c. 335 million years ago",
+  "kind": "continents",
+  "lonlat": null,
+  "place": null,
+  "evidence": "geology",
+  "evidenceNote": "Matching rocks, fossils and mountain belts on continents now far apart fit together like a jigsaw, as Alfred Wegener pointed out in 1912.",
+  "text": "Gondwana in the south collided with Laurussia (North America and Europe) in the north, and Siberia joined them. From about 335 million years ago nearly all land formed one supercontinent, Pangaea, meaning 'all lands': a C-shaped mass reaching from pole to pole and surrounded by the world ocean Panthalassa. It held together into the age of the dinosaurs.",
+  "sources": [
+   {
+    "title": "Wikipedia: Pangaea",
+    "url": "https://en.wikipedia.org/wiki/Pangaea"
+   },
+   {
+    "title": "USGS: This Dynamic Earth, Historical perspective",
+    "url": "https://pubs.usgs.gov/gip/dynamic/historical.html"
+   },
+   {
+    "title": "UC Museum of Paleontology: The Carboniferous Period",
+    "url": "https://ucmp.berkeley.edu/carboniferous/carboniferous.php"
+   },
+   {
+    "title": "UC Museum of Paleontology: The Permian Period",
+    "url": "https://ucmp.berkeley.edu/permian/permian.php"
+   }
+  ]
+ },
+ {
+  "id": "variscan-orogeny",
+  "title": "The Variscan mountains of Europe",
+  "ma": 330,
+  "maRange": [
+   380,
+   290
+  ],
+  "dateLabel": "c. 380 to 290 million years ago",
+  "kind": "continents",
+  "lonlat": [
+   3.0,
+   46.0
+  ],
+  "place": "Massif Central, France",
+  "evidence": "geology",
+  "evidenceNote": "Stumps of this old mountain chain, made of folded rock of the same age, crop out in upland blocks across Europe.",
+  "text": "As Gondwana pushed into Laurussia, a great mountain range rose across what is now central and western Europe, part of a chain that ran from the Urals to the Appalachians through the heart of Pangaea. Its eroded roots survive as upland blocks: the Massif Central, Brittany, Cornwall, the Ardennes, the Black Forest and Bohemia. The collision began in the Devonian and continued through the Carboniferous.",
+  "sources": [
+   {
+    "title": "Wikipedia: Variscan orogeny",
+    "url": "https://en.wikipedia.org/wiki/Variscan_orogeny"
+   },
+   {
+    "title": "Wikipedia: Devonian",
+    "url": "https://en.wikipedia.org/wiki/Devonian"
+   },
+   {
+    "title": "UC Museum of Paleontology: The Carboniferous Period",
+    "url": "https://ucmp.berkeley.edu/carboniferous/carboniferous.php"
+   }
+  ]
+ },
+ {
+  "id": "joggins",
+  "title": "Joggins Fossil Cliffs: the earliest reptile",
+  "ma": 315,
+  "maRange": [
+   318,
+   315
+  ],
+  "dateLabel": "c. 315 million years ago",
+  "kind": "fossil-site",
+  "lonlat": [
+   -64.44,
+   45.69
+  ],
+  "place": "Joggins, Nova Scotia, Canada",
+  "evidence": "fossil",
+  "evidenceNote": "Sea cliffs expose coal-forest layers of known age, and small animals were trapped inside hollow tree stumps.",
+  "text": "On the shore of the Bay of Fundy, sea cliffs expose a Carboniferous coal forest. Inside hollow fossil stumps of giant clubmoss trees lie the bones of Hylonomus, the earliest known reptile, described by William Dawson in 1860: small animals seem to have sheltered in the rotting stumps and become trapped. As an amniote, Hylonomus could lay its eggs on dry land. Joggins became a UNESCO World Heritage Site in 2008.",
+  "sources": [
+   {
+    "title": "Wikipedia: Joggins Formation",
+    "url": "https://en.wikipedia.org/wiki/Joggins_Formation"
+   },
+   {
+    "title": "Wikipedia: Hylonomus",
+    "url": "https://en.wikipedia.org/wiki/Hylonomus"
+   },
+   {
+    "title": "UC Museum of Paleontology: The Carboniferous Period",
+    "url": "https://ucmp.berkeley.edu/carboniferous/carboniferous.php"
+   }
+  ]
+ },
+ {
+  "id": "mazon-creek",
+  "title": "Mazon Creek",
+  "ma": 309,
+  "maRange": null,
+  "dateLabel": "c. 309 million years ago",
+  "kind": "fossil-site",
+  "lonlat": [
+   -88.35,
+   41.32
+  ],
+  "place": "Mazon Creek, near Morris, Illinois, USA",
+  "evidence": "fossil",
+  "evidenceNote": "Animals and plants buried in mud were quickly sealed inside hard ironstone lumps, which preserved even soft bodies.",
+  "text": "Beside the coal swamps of what is now Illinois, plants and animals were buried in mud and sealed inside ironstone nodules about 309 million years ago. Split open, the nodules reveal plants and the animals of a Carboniferous shore, among them jellyfish, sea worms, snails and shrimps, and the famous 'Tully Monster' (Tullimonstrum), the state fossil of Illinois. Few sites show so fully what lived in and around a coal forest.",
+  "sources": [
+   {
+    "title": "Wikipedia: Mazon Creek fossil beds",
+    "url": "https://en.wikipedia.org/wiki/Mazon_Creek_fossil_beds"
+   }
+  ]
+ },
+ {
+  "id": "alleghanian-orogeny",
+  "title": "The Appalachians are pushed up",
+  "ma": 300,
+  "maRange": [
+   325,
+   260
+  ],
+  "dateLabel": "c. 325 to 260 million years ago",
+  "kind": "continents",
+  "lonlat": [
+   -80.5,
+   37.5
+  ],
+  "place": "Appalachian Mountains, eastern USA",
+  "evidence": "geology",
+  "evidenceNote": "Rock layers along eastern North America are folded and stacked, and minerals that grew during the squeezing can be dated.",
+  "text": "The Appalachians were built in stages. Earlier collisions in the Ordovician and Devonian (the Taconic and Acadian mountain building) raised their northern parts. Then, between about 325 and 260 million years ago, Africa, as part of Gondwana, collided with North America in the Alleghanian mountain building, as Pangaea came together. The range then lay deep inside the supercontinent, part of a chain that ran on through Europe to the Urals.",
+  "sources": [
+   {
+    "title": "Wikipedia: Alleghanian orogeny",
+    "url": "https://en.wikipedia.org/wiki/Alleghanian_orogeny"
+   },
+   {
+    "title": "Wikipedia: Variscan orogeny",
+    "url": "https://en.wikipedia.org/wiki/Variscan_orogeny"
+   },
+   {
+    "title": "Wikipedia: Taconic orogeny",
+    "url": "https://en.wikipedia.org/wiki/Taconic_orogeny"
+   },
+   {
+    "title": "UC Museum of Paleontology: The Carboniferous Period",
+    "url": "https://ucmp.berkeley.edu/carboniferous/carboniferous.php"
+   }
+  ]
+ },
+ {
+  "id": "late-paleozoic-ice-age",
+  "title": "The Late Paleozoic ice age",
+  "ma": 300,
+  "maRange": [
+   360,
+   255
+  ],
+  "dateLabel": "c. 360 to 255 million years ago",
+  "kind": "climate",
+  "lonlat": [
+   22.31,
+   -32.26
+  ],
+  "place": "Karoo Basin, South Africa",
+  "evidence": "geology",
+  "evidenceNote": "Glacial deposits of this age are found across southern Africa, South America, India and Australia, which were then joined together near the South Pole.",
+  "text": "With Gondwana lying over the South Pole and carbon dioxide low, ice sheets spread across the southern continents. The ice age proper began about 335 to 330 million years ago and had two main cold phases, in the later Carboniferous and around the start of the Permian. Global average temperature fell to about 12 degrees Celsius, cooler than today. As the ice grew and melted, sea level swung up and down, stacking coal seams between marine layers.",
+  "sources": [
+   {
+    "title": "Wikipedia: Late Paleozoic icehouse",
+    "url": "https://en.wikipedia.org/wiki/Late_Paleozoic_icehouse"
+   },
+   {
+    "title": "PhanDA data release (Judd et al. 2024): global mean temperature and CO2 by stage",
+    "url": "https://github.com/EJJudd/PhanDA"
+   },
+   {
+    "title": "Judd et al. 2024, Science: A 485-million-year history of Earth's surface temperature (accepted manuscript, NSF PAR)",
+    "url": "https://par.nsf.gov/servlets/purl/10587582"
+   },
+   {
+    "title": "UC Museum of Paleontology: The Carboniferous Period",
+    "url": "https://ucmp.berkeley.edu/carboniferous/carboniferous.php"
+   }
+  ]
+ },
+ {
+  "id": "ural-orogeny",
+  "title": "The Ural Mountains rise",
+  "ma": 290,
+  "maRange": [
+   323,
+   251
+  ],
+  "dateLabel": "c. 320 to 250 million years ago",
+  "kind": "continents",
+  "lonlat": [
+   59.0,
+   60.0
+  ],
+  "place": "Ural Mountains, Russia",
+  "evidence": "geology",
+  "evidenceNote": "A long, narrow belt of folded rock marks where an ocean closed between ancient Europe and Asia.",
+  "text": "Baltica (eastern Europe), Siberia and the smaller continent Kazakhstania converged, raising the Urals, the seam between Europe and Asia. The main collisions took place in the late Carboniferous and the Permian, with the last movements in the Triassic and early Jurassic. With them, Siberia and its neighbours were joined to Pangaea, completing the supercontinent.",
+  "sources": [
+   {
+    "title": "Wikipedia: Uralian orogeny",
+    "url": "https://en.wikipedia.org/wiki/Uralian_orogeny"
+   },
+   {
+    "title": "UC Museum of Paleontology: The Carboniferous Period",
+    "url": "https://ucmp.berkeley.edu/carboniferous/carboniferous.php"
+   },
+   {
+    "title": "Wikipedia: Pangaea",
+    "url": "https://en.wikipedia.org/wiki/Pangaea"
+   }
+  ]
+ },
+ {
+  "id": "karoo-fossil-beds",
+  "title": "The Karoo: world of the mammal ancestors",
+  "ma": 255,
+  "maRange": [
+   265,
+   250
+  ],
+  "dateLabel": "c. 265 to 250 million years ago",
+  "kind": "fossil-site",
+  "lonlat": [
+   24.54,
+   -32.25
+  ],
+  "place": "Karoo Basin near Graaff-Reinet, South Africa",
+  "evidence": "fossil",
+  "evidenceNote": "River muds that piled up for millions of years buried skeletons in order, with volcanic ash layers that can be dated.",
+  "text": "The Beaufort Group rocks of the Karoo, up to 6 kilometres thick, are famous for their fossils of therapsids, the 'mammal-like reptiles' on the line leading to mammals. Layer by layer they record life on land before, during and after the end-Permian extinction, which the therapsid Lystrosaurus survived. Dated ash beds suggest that the turnover of land animals here began over 300,000 years before the extinction in the sea (Gastaldo and colleagues, 2020).",
+  "sources": [
+   {
+    "title": "Wikipedia: Beaufort Group",
+    "url": "https://en.wikipedia.org/wiki/Beaufort_Group"
+   },
+   {
+    "title": "Wikipedia: Karoo Supergroup",
+    "url": "https://en.wikipedia.org/wiki/Karoo_Supergroup"
+   },
+   {
+    "title": "Gastaldo et al. 2020, Nature Communications: The base of the Lystrosaurus Assemblage Zone, Karoo Basin, predates the end-Permian marine extinction",
+    "url": "https://www.nature.com/articles/s41467-020-15243-7"
+   }
+  ]
+ },
+ {
+  "id": "siberian-traps",
+  "title": "The Siberian Traps erupt",
+  "ma": 252,
+  "maRange": [
+   252.5,
+   250.5
+  ],
+  "dateLabel": "c. 252 million years ago",
+  "kind": "volcanism",
+  "lonlat": [
+   94.16,
+   69.05
+  ],
+  "place": "Putorana Plateau, Siberia, Russia",
+  "evidence": "geology",
+  "evidenceNote": "Crystals in the lavas and in ash beds date the eruptions to the same narrow window as the extinction.",
+  "text": "One of the largest volcanic outpourings of the last 500 million years flooded Siberia with lava: about 7 million square kilometres of basalt remain today, some 4 million cubic kilometres. About two-thirds of the lava erupted within roughly 300,000 years, just before and during the end-Permian extinction. Sheets of magma also spread underground through rocks rich in coal, limestone and salt, and the carbon dioxide and other gases released are the leading suspect for the extinction.",
+  "sources": [
+   {
+    "title": "Wikipedia: Siberian Traps",
+    "url": "https://en.wikipedia.org/wiki/Siberian_Traps"
+   },
+   {
+    "title": "Burgess & Bowring 2015, Science Advances: High-precision geochronology confirms voluminous magmatism before, during, and after Earth's most severe extinction",
+    "url": "https://doi.org/10.1126/sciadv.1500470"
+   },
+   {
+    "title": "Jurikova et al. 2020, Nature Geoscience: Permian-Triassic mass extinction pulses driven by major marine carbon cycle perturbations",
+    "url": "https://www.nature.com/articles/s41561-020-00646-4"
+   }
+  ]
+ },
+ {
+  "id": "end-permian-extinction",
+  "title": "The end-Permian extinction (the 'Great Dying')",
+  "ma": 251.94,
+  "maRange": [
+   251.941,
+   251.88
+  ],
+  "dateLabel": "c. 251.9 million years ago",
+  "kind": "extinction",
+  "lonlat": [
+   119.71,
+   31.08
+  ],
+  "place": "Meishan, Zhejiang, China",
+  "evidence": "disputed",
+  "evidenceNote": "At Meishan, layers of volcanic ash just below and above the level where most fossils vanish give dates only about 60,000 years apart.",
+  "text": "The worst extinction known: about 81 percent of marine species and 70 percent of land vertebrate species died, in the sea within about 60,000 years. The Siberian Traps eruptions are the agreed trigger. Disputed: what did the killing, and how fast. Proposals include extreme warming with loss of oxygen in the sea (Penn and colleagues, 2018), acid oceans (Jurikova and colleagues, 2020, though fossil shells from Norway show little acid damage), and ozone loss and acid rain on land.",
+  "sources": [
+   {
+    "title": "Burgess, Bowring & Shen 2014, PNAS: High-precision timeline for Earth's most severe extinction",
+    "url": "https://doi.org/10.1073/pnas.1317692111"
+   },
+   {
+    "title": "Wikipedia: Permian-Triassic extinction event",
+    "url": "https://en.wikipedia.org/wiki/Permian%E2%80%93Triassic_extinction_event"
+   },
+   {
+    "title": "Penn et al. 2018, Science: Temperature-dependent hypoxia explains biogeography and severity of end-Permian marine mass extinction",
+    "url": "https://doi.org/10.1126/science.aat1327"
+   },
+   {
+    "title": "Jurikova et al. 2020, Nature Geoscience: Permian-Triassic mass extinction pulses driven by major marine carbon cycle perturbations",
+    "url": "https://www.nature.com/articles/s41561-020-00646-4"
+   },
+   {
+    "title": "Dal Corso et al. 2022, Nature Reviews Earth & Environment: Environmental crises at the Permian-Triassic mass extinction",
+    "url": "https://www.nature.com/articles/s43017-021-00259-4"
+   },
+   {
+    "title": "Natural History Museum, London: Snails narrow down impacts of largest ever extinction (2022)",
+    "url": "https://www.nhm.ac.uk/discover/news/2022/january/snails-narrow-down-impacts-of-largest-ever-extinction.html"
+   }
+  ]
+ }
+]

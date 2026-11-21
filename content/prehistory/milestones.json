@@ -1,0 +1,20 @@
+[
+  {"ref": "e:earth-forms", "label": "Earth forms", "kind": "planet", "priority": 1},
+  {"ref": "e:pilbara-stromatolites", "label": "Oldest fossils", "kind": "life", "priority": 2},
+  {"ref": "e:great-oxidation-event", "label": "Oxygen rises", "kind": "life", "priority": 2},
+  {"ref": "e:first-eukaryotes", "label": "Complex cells", "kind": "life", "priority": 3},
+  {"ref": "e:sturtian-glaciation", "label": "Snowball Earth", "kind": "climate", "priority": 3},
+  {"ref": "e:cambrian-explosion", "label": "Cambrian explosion", "kind": "life", "priority": 1},
+  {"ref": "o:land-plants", "label": "Plants reach land", "kind": "life", "priority": 3},
+  {"ref": "e:late-ordovician-extinction", "label": "Extinction", "kind": "extinction", "priority": 4},
+  {"ref": "o:tetrapods", "label": "Four-legged animals", "kind": "life", "priority": 3},
+  {"ref": "e:late-devonian-extinction", "label": "Extinction", "kind": "extinction", "priority": 5},
+  {"ref": "e:end-permian-extinction", "label": "The Great Dying", "kind": "extinction", "priority": 1},
+  {"ref": "e:ischigualasto", "label": "First dinosaurs", "kind": "life", "priority": 3},
+  {"ref": "o:mammals", "label": "First mammals", "kind": "life", "priority": 4},
+  {"ref": "e:end-triassic-extinction", "label": "Extinction", "kind": "extinction", "priority": 4},
+  {"ref": "e:first-flowering-plants", "label": "First flowers", "kind": "life", "priority": 3},
+  {"ref": "e:end-cretaceous-extinction", "label": "Asteroid ends the dinosaurs", "kind": "extinction", "priority": 1},
+  {"ref": "o:homo", "label": "First humans", "kind": "life", "priority": 3},
+  {"ref": "o:homo-sapiens", "label": "Our species", "kind": "life", "priority": 2}
+]

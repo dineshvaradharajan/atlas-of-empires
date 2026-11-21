@@ -1,0 +1,1172 @@
+[
+ {
+  "id": "mesozoic",
+  "name": "Mesozoic",
+  "rank": "era",
+  "parent": "phanerozoic",
+  "from": 251.902,
+  "to": 66.0,
+  "color": "#67C5CA",
+  "tagline": "The age of reptiles; Pangaea breaks apart",
+  "world": "At the start almost all land was joined in one supercontinent, Pangaea, surrounded by a single vast ocean. Over the next 186 million years it tore apart: the Atlantic opened, the southern landmass Gondwana split into Africa, South America, India, Antarctica and Australia, and shallow seas flooded the continents. By the end the map was starting to look familiar.",
+  "climate": "Mostly a warm greenhouse world with little or no lasting ice at the poles. Average temperatures were about 10 °C or more above today's, and for much of the era the seas stood tens of metres higher, drowning low-lying land.",
+  "life": "Life rebuilt itself after the worst extinction in Earth's history. Reptiles ruled: dinosaurs on land, ichthyosaurs and plesiosaurs in the sea, pterosaurs in the air. The first mammals, birds and flowering plants all appeared. The era ended when an asteroid struck and about three quarters of species, including every dinosaur except the birds, died out.",
+  "changes": [],
+  "stats": {
+   "dayHours": 23.0,
+   "o2Percent": null,
+   "co2ppm": 850,
+   "seaLevelM": null,
+   "tempC": 26
+  },
+  "evidence": "fossil",
+  "evidenceNote": "Fossils in the rock layers show what lived when, and volcanic ash between the layers is dated by the steady decay of radioactive elements inside its crystals.",
+  "sources": [
+   {
+    "title": "ICS International Chronostratigraphic Chart v2026/06 (PDF)",
+    "url": "https://stratigraphy.org/ICSchart/ChronostratChart2026-06.pdf"
+   },
+   {
+    "title": "ICS chart data file (unit ages and official CGMW colours)",
+    "url": "https://raw.githubusercontent.com/i-c-stratigraphy/chart/main/chart.ttl"
+   },
+   {
+    "title": "UC Museum of Paleontology: The Mesozoic Era",
+    "url": "https://ucmp.berkeley.edu/mesozoic/mesozoic.php"
+   },
+   {
+    "title": "USGS This Dynamic Earth: Historical perspective (break-up of Pangaea)",
+    "url": "https://pubs.usgs.gov/gip/dynamic/historical.html"
+   },
+   {
+    "title": "PhanDA data file: global temperature and CO2 by geological stage (Judd et al. 2024)",
+    "url": "https://raw.githubusercontent.com/EJJudd/PhanDA/main/5_Outputs/PhanDA_GMSTandCO2_percentiles.csv"
+   },
+   {
+    "title": "Huang et al. 2024, PNAS: Geological evidence reveals a staircase pattern in Earth's rotational deceleration",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11331090/"
+   },
+   {
+    "title": "AGU: Ancient shell shows days were half-hour shorter 70 million years ago",
+    "url": "https://news.agu.org/press-release/ancient-shell-shows-days-were-half-hour-shorter-70-million-years-ago/"
+   },
+   {
+    "title": "Wikipedia: Mesozoic",
+    "url": "https://en.wikipedia.org/wiki/Mesozoic"
+   }
+  ]
+ },
+ {
+  "id": "triassic",
+  "name": "Triassic",
+  "rank": "period",
+  "parent": "mesozoic",
+  "from": 251.902,
+  "to": 201.4,
+  "color": "#812B92",
+  "tagline": "Life recovers; first dinosaurs and mammals appear",
+  "world": "Nearly all land formed the C-shaped supercontinent Pangaea, stretching from pole to pole. The Tethys Sea cut into its eastern side, and one giant ocean, Panthalassa, covered the rest of the globe. Mountains rose along the western edge of the Americas. Late in the period rift valleys opened between North America and Africa: the first cracks of the future Atlantic.",
+  "climate": "Hot and mostly dry, with no ice caps at the poles. The huge landmass drove fierce seasonal monsoons and its interior was desert. Sea level stayed low compared with later periods, so few shallow seas flooded the land.",
+  "life": "Survivors of the end-Permian extinction, such as the plant-eater Lystrosaurus, spread across Pangaea. New groups followed: the first dinosaurs, pterosaurs, crocodile relatives, turtles and small early mammals on land, ichthyosaurs in the sea, and the first reefs built by modern-type corals. Conifers, cycads and ferns were the main plants. Dinosaurs stayed mostly small until the very end.",
+  "changes": [
+   {
+    "ma": 251.9,
+    "title": "Slow recovery from the Great Dying",
+    "text": "The period opens just after the end-Permian extinction, the worst in Earth's history. No coal is known from the earliest Triassic anywhere, a sign of how badly plant life had been hit."
+   },
+   {
+    "ma": 233,
+    "title": "The Carnian Pluvial Episode",
+    "text": "For one to two million years the dry climate turned much wetter, probably because of huge eruptions. About a third of marine genera died out, and dinosaurs and many modern groups spread afterwards."
+   },
+   {
+    "ma": 231,
+    "title": "Oldest well-dated dinosaurs",
+    "text": "Rocks at Ischigualasto in Argentina, dated to about 231 million years ago, hold some of the oldest known dinosaurs, including Eoraptor and Herrerasaurus."
+   },
+   {
+    "ma": 227,
+    "title": "Early mammals appear",
+    "text": "In the Late Triassic small, probably night-active insect-eaters evolved from cynodonts, the mammal-like reptiles. Exactly which fossils count as the first true mammals is debated."
+   },
+   {
+    "ma": 220,
+    "title": "Pangaea starts to crack",
+    "text": "Between about 225 and 200 million years ago the crust began to stretch and split where North America met Africa."
+   },
+   {
+    "ma": 201.6,
+    "title": "The Central Atlantic eruptions",
+    "text": "Lava flooded more than 7 million square kilometres around the future Atlantic in four pulses over about 600,000 years."
+   },
+   {
+    "ma": 201.4,
+    "title": "End-Triassic mass extinction",
+    "text": "Up to about half of marine species diversity was lost and most large land reptiles other than dinosaurs vanished, leaving the dinosaurs to take over."
+   }
+  ],
+  "stats": {
+   "dayHours": 22.6,
+   "o2Percent": 18.5,
+   "co2ppm": 900,
+   "seaLevelM": 20,
+   "tempC": 24
+  },
+  "evidence": "fossil",
+  "evidenceNote": "Fossils of each stage lie in rock layers whose ages come from uranium slowly turning to lead in zircon crystals from volcanic ash.",
+  "sources": [
+   {
+    "title": "ICS International Chronostratigraphic Chart v2026/06 (PDF)",
+    "url": "https://stratigraphy.org/ICSchart/ChronostratChart2026-06.pdf"
+   },
+   {
+    "title": "UC Museum of Paleontology: The Triassic Period",
+    "url": "https://ucmp.berkeley.edu/mesozoic/triassic/triassic.php"
+   },
+   {
+    "title": "Wikipedia: Triassic",
+    "url": "https://en.wikipedia.org/wiki/Triassic"
+   },
+   {
+    "title": "Dal Corso et al. 2020, Science Advances: Extinction and dawn of the modern world in the Carnian",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/32938682/"
+   },
+   {
+    "title": "Blackburn et al. 2013, Science: Zircon U-Pb geochronology links the end-Triassic extinction with the Central Atlantic Magmatic Province",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/23519213/"
+   },
+   {
+    "title": "Huang et al. 2024, PNAS: Geological evidence reveals a staircase pattern in Earth's rotational deceleration",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11331090/"
+   },
+   {
+    "title": "Krause et al. 2018, Nature Communications: Stepwise oxygenation of the Paleozoic atmosphere",
+    "url": "https://www.nature.com/articles/s41467-018-06383-y"
+   },
+   {
+    "title": "PhanDA data file: global temperature and CO2 by geological stage (Judd et al. 2024)",
+    "url": "https://raw.githubusercontent.com/EJJudd/PhanDA/main/5_Outputs/PhanDA_GMSTandCO2_percentiles.csv"
+   }
+  ]
+ },
+ {
+  "id": "jurassic",
+  "name": "Jurassic",
+  "rank": "period",
+  "parent": "mesozoic",
+  "from": 201.4,
+  "to": 143.1,
+  "color": "#34B2C9",
+  "tagline": "Giant dinosaurs, first birds, the Atlantic is born",
+  "world": "Pangaea broke in two: Laurasia in the north and Gondwana in the south. A narrow young ocean, the central Atlantic, opened between North America and Africa. About 180 million years ago Gondwana itself began to split, as Africa and South America pulled away from Antarctica, India and Australia. The South Atlantic had not yet opened. Rising seas spread over low-lying land.",
+  "climate": "Warmer than today, with no ice caps and forests growing close to the poles, though polar winters could be cold. Low latitudes had large dry regions. Sea level rose through the period, perhaps to more than 100 metres above today's near the end.",
+  "life": "Dinosaurs took over the land. Long-necked sauropods such as Diplodocus and Brachiosaurus were the largest land animals ever, hunted by predators like Allosaurus. The first birds, including Archaeopteryx, evolved from small meat-eating dinosaurs. Ichthyosaurs, plesiosaurs and ammonites filled the seas and pterosaurs flew overhead. There were no flowers: forests were conifers, cycads, ginkgoes and ferns. Mammals stayed small.",
+  "changes": [
+   {
+    "ma": 201.4,
+    "title": "Dinosaurs inherit the land",
+    "text": "With many rival reptiles gone after the end-Triassic extinction, dinosaurs spread across the world and grew larger."
+   },
+   {
+    "ma": 185,
+    "title": "The central Atlantic opens",
+    "text": "New sea floor began to form between North America and north-west Africa: the first ocean to split Pangaea."
+   },
+   {
+    "ma": 183,
+    "title": "Karoo-Ferrar eruptions and an ocean crisis",
+    "text": "Lava floods in southern Africa and Antarctica coincided with the Toarcian Oceanic Anoxic Event, when large parts of the sea lost their oxygen and many marine species died."
+   },
+   {
+    "ma": 180,
+    "title": "Gondwana begins to split",
+    "text": "East Gondwana (Antarctica, Madagascar, India and Australia) started to separate from Africa and South America."
+   },
+   {
+    "ma": 160,
+    "title": "An early relative of placental mammals",
+    "text": "Juramaia lived about 160 million years ago and is the earliest known member of the group that includes today's placental mammals."
+   },
+   {
+    "ma": 155,
+    "title": "Dinosaurs of the Morrison Formation",
+    "text": "From about 156 to 147 million years ago rivers in western North America buried Stegosaurus, Allosaurus, Diplodocus and Brachiosaurus."
+   },
+   {
+    "ma": 150,
+    "title": "Archaeopteryx, an early bird",
+    "text": "Fine limestone at Solnhofen in Germany preserved a feathered animal with wings, but also teeth and a long bony tail."
+   }
+  ],
+  "stats": {
+   "dayHours": 23.0,
+   "o2Percent": null,
+   "co2ppm": 850,
+   "seaLevelM": 50,
+   "tempC": 24
+  },
+  "evidence": "fossil",
+  "evidenceNote": "Rock layers are matched worldwide by their ammonite fossils, which changed quickly through time, and dated by radioactive decay in volcanic ash.",
+  "sources": [
+   {
+    "title": "ICS International Chronostratigraphic Chart v2026/06 (PDF)",
+    "url": "https://stratigraphy.org/ICSchart/ChronostratChart2026-06.pdf"
+   },
+   {
+    "title": "UC Museum of Paleontology: The Jurassic Period",
+    "url": "https://ucmp.berkeley.edu/mesozoic/jurassic/jurassic.php"
+   },
+   {
+    "title": "Wikipedia: Jurassic",
+    "url": "https://en.wikipedia.org/wiki/Jurassic"
+   },
+   {
+    "title": "Wikipedia: Gondwana",
+    "url": "https://en.wikipedia.org/wiki/Gondwana"
+   },
+   {
+    "title": "Wikipedia: Evolution of mammals",
+    "url": "https://en.wikipedia.org/wiki/Evolution_of_mammals"
+   },
+   {
+    "title": "Huang et al. 2024, PNAS: Geological evidence reveals a staircase pattern in Earth's rotational deceleration",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11331090/"
+   },
+   {
+    "title": "AGU: Ancient shell shows days were half-hour shorter 70 million years ago",
+    "url": "https://news.agu.org/press-release/ancient-shell-shows-days-were-half-hour-shorter-70-million-years-ago/"
+   },
+   {
+    "title": "PhanDA data file: global temperature and CO2 by geological stage (Judd et al. 2024)",
+    "url": "https://raw.githubusercontent.com/EJJudd/PhanDA/main/5_Outputs/PhanDA_GMSTandCO2_percentiles.csv"
+   }
+  ]
+ },
+ {
+  "id": "cretaceous",
+  "name": "Cretaceous",
+  "rank": "period",
+  "parent": "mesozoic",
+  "from": 143.1,
+  "to": 66.0,
+  "color": "#7FC64E",
+  "tagline": "Flowers bloom, seas rise, an asteroid ends it",
+  "world": "The continents moved towards their modern places. South America split from Africa, opening the South Atlantic from south to north; India broke from Madagascar and headed north; Australia was still joined to Antarctica. Seas were so high that at the peak about a third of today's land was under water, and a seaway cut North America in two. The Rocky Mountains began to rise.",
+  "climate": "One of the warmest times of the last 500 million years: about 92 million years ago the global average probably topped 30 °C. There were no lasting ice sheets, forests grew near both poles, and sea level stood perhaps 100 metres or more above today's.",
+  "life": "Flowering plants appeared and spread until they dominated most landscapes, alongside the oldest known ants, bees and butterflies. Dinosaurs included Tyrannosaurus, Triceratops and the duck-bills. Birds diversified and mammals stayed small. Mosasaurs, plesiosaurs and ammonites lived in the chalk-forming seas. The period ended with a mass extinction that killed about three quarters of all species.",
+  "changes": [
+   {
+    "ma": 134,
+    "title": "The South Atlantic starts to open",
+    "text": "Flood basalts erupted across what are now southern Brazil and Namibia 136 to 132 million years ago as South America began to tear away from Africa."
+   },
+   {
+    "ma": 130,
+    "title": "First flowering plants",
+    "text": "The oldest fossil flowering plants date from about 130 to 125 million years ago; by 100 million years ago they were spreading fast."
+   },
+   {
+    "ma": 125,
+    "title": "Feathered dinosaurs of Liaoning",
+    "text": "Lake beds in north-east China preserved dinosaurs with feathers, early birds and mammals in fine detail."
+   },
+   {
+    "ma": 120.5,
+    "title": "An ocean without oxygen",
+    "text": "During Oceanic Anoxic Event 1a large parts of the sea ran short of oxygen and black carbon-rich mud covered the sea floor."
+   },
+   {
+    "ma": 94,
+    "title": "Peak heat and highest seas",
+    "text": "Around 94 to 92 million years ago the Cretaceous hothouse reached its peak, the oceans again lost oxygen, and a shallow sea covered the middle of North America."
+   },
+   {
+    "ma": 88,
+    "title": "India leaves Madagascar",
+    "text": "India broke away and began a fast journey north towards Asia."
+   },
+   {
+    "ma": 66.0,
+    "title": "Asteroid impact and mass extinction",
+    "text": "An asteroid about 10 km wide struck at Chicxulub in Mexico while huge eruptions were under way in India. All dinosaurs except birds died out."
+   }
+  ],
+  "stats": {
+   "dayHours": 23.5,
+   "o2Percent": null,
+   "co2ppm": 850,
+   "seaLevelM": 100,
+   "tempC": 29
+  },
+  "evidence": "fossil",
+  "evidenceNote": "Fossils of sea plankton and land animals, dated volcanic ash and flips of Earth's magnetic field recorded in the rocks together give the ages; a fossil shell with daily growth lines even shows how long a day was.",
+  "sources": [
+   {
+    "title": "ICS International Chronostratigraphic Chart v2026/06 (PDF)",
+    "url": "https://stratigraphy.org/ICSchart/ChronostratChart2026-06.pdf"
+   },
+   {
+    "title": "UC Museum of Paleontology: The Cretaceous Period",
+    "url": "https://ucmp.berkeley.edu/mesozoic/cretaceous/cretaceous.php"
+   },
+   {
+    "title": "Wikipedia: Cretaceous",
+    "url": "https://en.wikipedia.org/wiki/Cretaceous"
+   },
+   {
+    "title": "Miller et al. 2005, Science: The Phanerozoic record of global sea-level change",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/16311326/"
+   },
+   {
+    "title": "NOAA Climate.gov: What's the hottest Earth's ever been?",
+    "url": "https://www.climate.gov/news-features/climate-qa/whats-hottest-earths-ever-been"
+   },
+   {
+    "title": "AGU: Ancient shell shows days were half-hour shorter 70 million years ago",
+    "url": "https://news.agu.org/press-release/ancient-shell-shows-days-were-half-hour-shorter-70-million-years-ago/"
+   },
+   {
+    "title": "Schulte et al. 2010, Science: The Chicxulub asteroid impact and mass extinction at the Cretaceous-Paleogene boundary",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/20203042/"
+   },
+   {
+    "title": "PhanDA data file: global temperature and CO2 by geological stage (Judd et al. 2024)",
+    "url": "https://raw.githubusercontent.com/EJJudd/PhanDA/main/5_Outputs/PhanDA_GMSTandCO2_percentiles.csv"
+   }
+  ]
+ },
+ {
+  "id": "cenozoic",
+  "name": "Cenozoic",
+  "rank": "era",
+  "parent": "phanerozoic",
+  "from": 66.0,
+  "to": 0,
+  "color": "#F2F91D",
+  "tagline": "The age of mammals; the world cools",
+  "world": "The continents drifted into today's positions. India collided with Asia and pushed up the Himalayas and Tibet; Africa pressed into Europe, raising the Alps; the Atlantic kept widening; Australia broke from Antarctica and moved north; and North and South America were finally joined at Panama. New sea passages around Antarctica let a cold current circle it.",
+  "climate": "A long slide from hothouse to ice age. The early era was 10 °C or more warmer than today, with no polar ice. Ice sheets formed on Antarctica about 34 million years ago and in the north about 2.7 million years ago.",
+  "life": "With the big dinosaurs gone, mammals and birds diversified into whales, bats, horses, elephants, cats and primates. Grasslands spread as the climate cooled and dried, and grazing animals with them. Apes evolved in the Miocene, upright-walking apes by about 7 to 6 million years ago, and our own species about 300,000 years ago.",
+  "changes": [],
+  "stats": {
+   "dayHours": 23.8,
+   "o2Percent": null,
+   "co2ppm": 750,
+   "seaLevelM": null,
+   "tempC": 25
+  },
+  "evidence": "geology",
+  "evidenceNote": "Mud drilled from the deep sea floor holds tiny shells whose chemistry records temperature and ice volume, layer by layer, for the whole 66 million years.",
+  "sources": [
+   {
+    "title": "ICS International Chronostratigraphic Chart v2026/06 (PDF)",
+    "url": "https://stratigraphy.org/ICSchart/ChronostratChart2026-06.pdf"
+   },
+   {
+    "title": "ICS chart data file (unit ages and official CGMW colours)",
+    "url": "https://raw.githubusercontent.com/i-c-stratigraphy/chart/main/chart.ttl"
+   },
+   {
+    "title": "UC Museum of Paleontology: The Cenozoic Era",
+    "url": "https://ucmp.berkeley.edu/cenozoic/cenozoic.php"
+   },
+   {
+    "title": "Westerhold et al. 2020, Science: An astronomically dated record of Earth's climate over the last 66 million years",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/32913105/"
+   },
+   {
+    "title": "Miller et al. 2020, Science Advances: Cenozoic sea-level and cryospheric evolution",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7228749/"
+   },
+   {
+    "title": "Judd et al. 2024, Science: A 485-million-year history of Earth's surface temperature",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/39298603/"
+   },
+   {
+    "title": "PhanDA data file: global temperature and CO2 by geological stage (Judd et al. 2024)",
+    "url": "https://raw.githubusercontent.com/EJJudd/PhanDA/main/5_Outputs/PhanDA_GMSTandCO2_percentiles.csv"
+   },
+   {
+    "title": "AGU: Ancient shell shows days were half-hour shorter 70 million years ago",
+    "url": "https://news.agu.org/press-release/ancient-shell-shows-days-were-half-hour-shorter-70-million-years-ago/"
+   }
+  ]
+ },
+ {
+  "id": "paleogene",
+  "name": "Paleogene",
+  "rank": "period",
+  "parent": "cenozoic",
+  "from": 66.0,
+  "to": 23.04,
+  "color": "#FD9A52",
+  "tagline": "Mammals take over a hothouse that slowly cools",
+  "world": "Covers the Paleocene, Eocene and Oligocene epochs. The North Atlantic opened between Greenland and Europe, India met Asia, and Australia and South America parted from Antarctica, leaving it alone at the South Pole. The Alps and Himalayas began to rise. By the end a cold ocean current circled Antarctica and an ice sheet covered it.",
+  "climate": "Very warm for the first half, peaking 56 to 50 million years ago with no polar ice and palms in the Arctic. Then came long cooling, and about 34 million years ago the first continent-wide Antarctic ice sheet.",
+  "life": "Mammals grew from small survivors of the extinction into whales, bats, early horses, elephants' relatives and primates. Modern bird groups spread. Forests covered most land at first; as the climate cooled, more open country and the first widespread grasses appeared.",
+  "changes": [],
+  "stats": {
+   "dayHours": 23.7,
+   "o2Percent": null,
+   "co2ppm": 900,
+   "seaLevelM": null,
+   "tempC": 27
+  },
+  "evidence": "geology",
+  "evidenceNote": "Deep-sea mud cores record temperature and ice through the chemistry of tiny shells, and volcanic ash layers on land give dates in years.",
+  "sources": [
+   {
+    "title": "ICS International Chronostratigraphic Chart v2026/06 (PDF)",
+    "url": "https://stratigraphy.org/ICSchart/ChronostratChart2026-06.pdf"
+   },
+   {
+    "title": "ICS chart data file (unit ages and official CGMW colours)",
+    "url": "https://raw.githubusercontent.com/i-c-stratigraphy/chart/main/chart.ttl"
+   },
+   {
+    "title": "Wikipedia: Paleogene",
+    "url": "https://en.wikipedia.org/wiki/Paleogene"
+   },
+   {
+    "title": "Westerhold et al. 2020, Science: An astronomically dated record of Earth's climate over the last 66 million years",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/32913105/"
+   },
+   {
+    "title": "Miller et al. 2020, Science Advances: Cenozoic sea-level and cryospheric evolution",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7228749/"
+   },
+   {
+    "title": "NOAA Climate.gov: What's the hottest Earth's ever been?",
+    "url": "https://www.climate.gov/news-features/climate-qa/whats-hottest-earths-ever-been"
+   },
+   {
+    "title": "PhanDA data file: global temperature and CO2 by geological stage (Judd et al. 2024)",
+    "url": "https://raw.githubusercontent.com/EJJudd/PhanDA/main/5_Outputs/PhanDA_GMSTandCO2_percentiles.csv"
+   },
+   {
+    "title": "AGU: Ancient shell shows days were half-hour shorter 70 million years ago",
+    "url": "https://news.agu.org/press-release/ancient-shell-shows-days-were-half-hour-shorter-70-million-years-ago/"
+   }
+  ]
+ },
+ {
+  "id": "paleocene",
+  "name": "Paleocene",
+  "rank": "epoch",
+  "parent": "paleogene",
+  "from": 66.0,
+  "to": 56.0,
+  "color": "#FDA75F",
+  "tagline": "Recovery after the asteroid",
+  "world": "The continents were close to today's layout, but India was still an island continent crossing the ocean towards Asia, Australia was joined to Antarctica, and North and South America were separate. Greenland began to split from north-west Europe amid huge eruptions. The Rocky Mountains were still rising, and the shallow sea across North America drained away.",
+  "climate": "Warm and largely ice-free, with palms and crocodiles living inside the Arctic Circle. The global average was around 25 °C or more, some 10 °C above today's. The epoch ended with a sudden extra burst of warming.",
+  "life": "Forests regrew after the impact, and the survivors spread into an emptied world. Mammals, small at first, quickly became bigger and more varied, taking over roles the dinosaurs had filled. Birds diversified too: the ones that came through the extinction seem to have been mostly ground-dwellers. Crocodiles, turtles and many plants carried on much as before.",
+  "changes": [
+   {
+    "ma": 66.0,
+    "title": "Aftermath of the impact",
+    "text": "Forests were destroyed across the world, yet in western North America mammal communities were recovering within about 20,000 years."
+   },
+   {
+    "ma": 65.6,
+    "title": "The Deccan eruptions end",
+    "text": "The lava floods in India went on until about 65.6 million years ago; by one dating study, about three quarters of the lava erupted after the impact."
+   },
+   {
+    "ma": 62,
+    "title": "North Atlantic eruptions begin",
+    "text": "From about 62 million years ago lava poured out across what are now Greenland, Scotland and Northern Ireland as the crust stretched before the ocean opened."
+   },
+   {
+    "ma": 56.0,
+    "title": "Sudden global warming",
+    "text": "At the very end of the epoch a huge release of carbon set off the Paleocene-Eocene Thermal Maximum."
+   }
+  ],
+  "stats": {
+   "dayHours": 23.6,
+   "o2Percent": null,
+   "co2ppm": 850,
+   "seaLevelM": null,
+   "tempC": 28
+  },
+  "evidence": "geology",
+  "evidenceNote": "The epoch begins at the thin layer of asteroid debris found worldwide, dated by radioactive argon in volcanic ash just above and below it.",
+  "sources": [
+   {
+    "title": "ICS International Chronostratigraphic Chart v2026/06 (PDF)",
+    "url": "https://stratigraphy.org/ICSchart/ChronostratChart2026-06.pdf"
+   },
+   {
+    "title": "Renne et al. 2013, Science: Time scales of critical events around the Cretaceous-Paleogene boundary",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/23393261/"
+   },
+   {
+    "title": "Field et al. 2018, Current Biology: Early evolution of modern birds structured by global forest collapse",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/29804807/"
+   },
+   {
+    "title": "Sprain et al. 2019, Science: The eruptive tempo of Deccan volcanism in relation to the Cretaceous-Paleogene boundary",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/30792301/"
+   },
+   {
+    "title": "Wikipedia: North Atlantic Igneous Province",
+    "url": "https://en.wikipedia.org/wiki/North_Atlantic_Igneous_Province"
+   },
+   {
+    "title": "NOAA Climate.gov: What's the hottest Earth's ever been?",
+    "url": "https://www.climate.gov/news-features/climate-qa/whats-hottest-earths-ever-been"
+   },
+   {
+    "title": "PhanDA data file: global temperature and CO2 by geological stage (Judd et al. 2024)",
+    "url": "https://raw.githubusercontent.com/EJJudd/PhanDA/main/5_Outputs/PhanDA_GMSTandCO2_percentiles.csv"
+   },
+   {
+    "title": "AGU: Ancient shell shows days were half-hour shorter 70 million years ago",
+    "url": "https://news.agu.org/press-release/ancient-shell-shows-days-were-half-hour-shorter-70-million-years-ago/"
+   }
+  ]
+ },
+ {
+  "id": "eocene",
+  "name": "Eocene",
+  "rank": "epoch",
+  "parent": "paleogene",
+  "from": 56.0,
+  "to": 33.9,
+  "color": "#FDB46C",
+  "tagline": "Hothouse Earth; whales, horses and primates emerge",
+  "world": "Greenland parted from Europe about 55 million years ago, opening the North Atlantic. India ran into Asia, starting the rise of the Himalayas and Tibet, and Africa's push against Europe began to build the Alps. Australia pulled away from Antarctica, and sea passages opened south of Tasmania and South America, leaving Antarctica isolated by the end of the epoch.",
+  "climate": "The warmest time of the last 66 million years. Around 53 to 51 million years ago the world was more than 10 °C warmer than before industry, CO2 was about 1,400 ppm, and near-tropical forest grew on Antarctica. Then it cooled steadily.",
+  "life": "The oldest known fossils of most modern groups of mammals appear early in the Eocene, all of them small: early horses, bats and primates among them. Whales evolved from land mammals; Basilosaurus still had tiny hind legs. Lake beds at Green River in Wyoming and Messel in Germany preserve fish, bats, insects and palms in fine detail.",
+  "changes": [
+   {
+    "ma": 56.0,
+    "title": "Paleocene-Eocene Thermal Maximum",
+    "text": "Global temperature jumped by about 5 to 8 °C in under 10,000 years and stayed high for about 200,000 years."
+   },
+   {
+    "ma": 55.5,
+    "title": "The North Atlantic opens",
+    "text": "Greenland separated from north-west Europe and sea floor began to form between them."
+   },
+   {
+    "ma": 52,
+    "title": "Peak warmth",
+    "text": "The Early Eocene Climatic Optimum, about 53 to 51 million years ago, was the hottest long spell since the dinosaurs."
+   },
+   {
+    "ma": 50,
+    "title": "India collides with Asia",
+    "text": "First contact is usually dated to about 55 to 50 million years ago, though the timing is disputed. The Himalayas began to rise."
+   },
+   {
+    "ma": 49,
+    "title": "The Azolla event",
+    "text": "For about 800,000 years mats of a floating fern covered the Arctic Ocean, burying carbon as they died."
+   },
+   {
+    "ma": 41,
+    "title": "A passage opens south of South America",
+    "text": "Pacific water first reached the Atlantic through the Drake Passage about 41 million years ago, by one estimate; the date is disputed."
+   },
+   {
+    "ma": 34.0,
+    "title": "Antarctica starts to freeze",
+    "text": "As the epoch ended a continent-wide ice sheet grew on Antarctica and sea level fell by about 55 metres."
+   }
+  ],
+  "stats": {
+   "dayHours": 23.7,
+   "o2Percent": null,
+   "co2ppm": 1000,
+   "seaLevelM": 45,
+   "tempC": 29
+  },
+  "evidence": "geology",
+  "evidenceNote": "Chemical signals in sea-floor shells and in drill cores from the Arctic and Antarctic record the warmth, and volcanic ash layers date the fossil beds.",
+  "sources": [
+   {
+    "title": "ICS International Chronostratigraphic Chart v2026/06 (PDF)",
+    "url": "https://stratigraphy.org/ICSchart/ChronostratChart2026-06.pdf"
+   },
+   {
+    "title": "UC Museum of Paleontology: The Eocene Epoch",
+    "url": "https://ucmp.berkeley.edu/tertiary/eocene.php"
+   },
+   {
+    "title": "Anagnostou et al. 2016, Nature: Changing atmospheric CO2 concentration was the primary driver of early Cenozoic climate",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/27111509/"
+   },
+   {
+    "title": "Pross et al. 2012, Nature: Persistent near-tropical warmth on the Antarctic continent during the early Eocene",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/22859204/"
+   },
+   {
+    "title": "NOAA Climate.gov: What's the hottest Earth's ever been?",
+    "url": "https://www.climate.gov/news-features/climate-qa/whats-hottest-earths-ever-been"
+   },
+   {
+    "title": "Miller et al. 2020, Science Advances: Cenozoic sea-level and cryospheric evolution",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7228749/"
+   },
+   {
+    "title": "PhanDA data file: global temperature and CO2 by geological stage (Judd et al. 2024)",
+    "url": "https://raw.githubusercontent.com/EJJudd/PhanDA/main/5_Outputs/PhanDA_GMSTandCO2_percentiles.csv"
+   },
+   {
+    "title": "AGU: Ancient shell shows days were half-hour shorter 70 million years ago",
+    "url": "https://news.agu.org/press-release/ancient-shell-shows-days-were-half-hour-shorter-70-million-years-ago/"
+   }
+  ]
+ },
+ {
+  "id": "oligocene",
+  "name": "Oligocene",
+  "rank": "epoch",
+  "parent": "paleogene",
+  "from": 33.9,
+  "to": 23.04,
+  "color": "#FEC07A",
+  "tagline": "Antarctica freezes; grasses and open country spread",
+  "world": "Antarctica now sat alone over the South Pole, ringed by a cold current once deep water flowed past Tasmania and through the Drake Passage. The Alps were rising quickly as Africa pushed into Europe, and the Himalayas and Tibet kept growing. In East Africa floods of lava poured out and the Red Sea began to open, splitting Arabia from Africa.",
+  "climate": "Much cooler than the Eocene. An ice sheet covered Antarctica from about 34 million years ago and sea level dropped by about 55 metres as it grew. The global average, around 23 °C, was still far warmer than today's.",
+  "life": "Tropical forests shrank back towards the equator, and open woodland, scrub and grasses took their place. In Europe many older mammal families died out and newcomers replaced them, a turnover called the Grande Coupure. Early relatives of monkeys and apes lived in Africa. Horses and other mammals began adapting to life in open country.",
+  "changes": [
+   {
+    "ma": 33.9,
+    "title": "The Grande Coupure",
+    "text": "Cooling and falling seas brought a wave of extinctions; in Europe many native mammals were replaced by new arrivals."
+   },
+   {
+    "ma": 33.5,
+    "title": "Deep water flows past Tasmania",
+    "text": "The sea passage between Australia and Antarctica became deep enough for ocean currents, 33.5 million years ago give or take 1.5 million."
+   },
+   {
+    "ma": 30,
+    "title": "The Antarctic Circumpolar Current begins",
+    "text": "A cold current started to flow right around Antarctica about 30 million years ago, cutting it off from warmer waters."
+   },
+   {
+    "ma": 30,
+    "title": "The Red Sea starts to open",
+    "text": "Volcanic eruptions in East Africa about 30 million years ago came with rifting that began to split Arabia from Africa."
+   },
+   {
+    "ma": 25,
+    "title": "Mammals of Riversleigh",
+    "text": "From about 28 million years ago limestone in northern Australia began to record the continent's unique marsupials and other mammals."
+   }
+  ],
+  "stats": {
+   "dayHours": 23.8,
+   "o2Percent": null,
+   "co2ppm": 600,
+   "seaLevelM": 0,
+   "tempC": 23
+  },
+  "evidence": "geology",
+  "evidenceNote": "A sharp change in the oxygen chemistry of sea-floor shells marks the growth of Antarctic ice, and sand dropped by icebergs appears in sea-bed mud around the continent.",
+  "sources": [
+   {
+    "title": "ICS International Chronostratigraphic Chart v2026/06 (PDF)",
+    "url": "https://stratigraphy.org/ICSchart/ChronostratChart2026-06.pdf"
+   },
+   {
+    "title": "UC Museum of Paleontology: The Oligocene Epoch",
+    "url": "https://ucmp.berkeley.edu/tertiary/oligocene.php"
+   },
+   {
+    "title": "Wikipedia: Oligocene",
+    "url": "https://en.wikipedia.org/wiki/Oligocene"
+   },
+   {
+    "title": "Wikipedia: East African Rift",
+    "url": "https://en.wikipedia.org/wiki/East_African_Rift"
+   },
+   {
+    "title": "Scher et al. 2015, Nature: Onset of Antarctic Circumpolar Current 30 million years ago as Tasmanian Gateway aligned with westerlies",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/26223626/"
+   },
+   {
+    "title": "Miller et al. 2020, Science Advances: Cenozoic sea-level and cryospheric evolution",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7228749/"
+   },
+   {
+    "title": "PhanDA data file: global temperature and CO2 by geological stage (Judd et al. 2024)",
+    "url": "https://raw.githubusercontent.com/EJJudd/PhanDA/main/5_Outputs/PhanDA_GMSTandCO2_percentiles.csv"
+   },
+   {
+    "title": "AGU: Ancient shell shows days were half-hour shorter 70 million years ago",
+    "url": "https://news.agu.org/press-release/ancient-shell-shows-days-were-half-hour-shorter-70-million-years-ago/"
+   }
+  ]
+ },
+ {
+  "id": "neogene",
+  "name": "Neogene",
+  "rank": "period",
+  "parent": "cenozoic",
+  "from": 23.04,
+  "to": 2.58,
+  "color": "#FFE619",
+  "tagline": "Grasslands, great mountain ranges and the first hominins",
+  "world": "Covers the Miocene and Pliocene epochs. The continents reached almost their present positions. Africa and Arabia met Eurasia, closing the old Tethys seaway and creating the Mediterranean, which dried out and refilled. The Himalayas, Tibet, Alps and Andes rose to great heights, and near the end North and South America were joined at Panama.",
+  "climate": "Warm at first, with a peak 17 to 14 million years ago, then steadily cooler and drier. The East Antarctic ice sheet became permanent, and by the end large ice sheets were starting to grow in the north.",
+  "life": "Grasslands spread across the continents and grazing mammals with them. Apes appeared and spread through Africa, Europe and Asia. The first upright-walking apes lived in Africa by about 7 to 6 million years ago, and the oldest known stone tools are 3.3 million years old.",
+  "changes": [],
+  "stats": {
+   "dayHours": 23.9,
+   "o2Percent": null,
+   "co2ppm": 500,
+   "seaLevelM": null,
+   "tempC": 21
+  },
+  "evidence": "geology",
+  "evidenceNote": "Sea-floor cores give a continuous climate record, and the regular wobbles of Earth's orbit recorded in the layers date them to within a few thousand years.",
+  "sources": [
+   {
+    "title": "ICS International Chronostratigraphic Chart v2026/06 (PDF)",
+    "url": "https://stratigraphy.org/ICSchart/ChronostratChart2026-06.pdf"
+   },
+   {
+    "title": "ICS chart data file (unit ages and official CGMW colours)",
+    "url": "https://raw.githubusercontent.com/i-c-stratigraphy/chart/main/chart.ttl"
+   },
+   {
+    "title": "Wikipedia: Miocene",
+    "url": "https://en.wikipedia.org/wiki/Miocene"
+   },
+   {
+    "title": "Miller et al. 2020, Science Advances: Cenozoic sea-level and cryospheric evolution",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7228749/"
+   },
+   {
+    "title": "Brunet et al. 2002, Nature: A new hominid from the Upper Miocene of Chad, Central Africa",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/12110880/"
+   },
+   {
+    "title": "Harmand et al. 2015, Nature: 3.3-million-year-old stone tools from Lomekwi 3, West Turkana, Kenya",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/25993961/"
+   },
+   {
+    "title": "PhanDA data file: global temperature and CO2 by geological stage (Judd et al. 2024)",
+    "url": "https://raw.githubusercontent.com/EJJudd/PhanDA/main/5_Outputs/PhanDA_GMSTandCO2_percentiles.csv"
+   },
+   {
+    "title": "AGU: Ancient shell shows days were half-hour shorter 70 million years ago",
+    "url": "https://news.agu.org/press-release/ancient-shell-shows-days-were-half-hour-shorter-70-million-years-ago/"
+   }
+  ]
+ },
+ {
+  "id": "miocene",
+  "name": "Miocene",
+  "rank": "epoch",
+  "parent": "neogene",
+  "from": 23.04,
+  "to": 5.333,
+  "color": "#FFFF00",
+  "tagline": "Apes, grasslands and rising mountain chains",
+  "world": "The map looked almost modern, except that North and South America were still apart. Arabia and Africa met Eurasia, closing the old Tethys seaway and leaving the Mediterranean. The Himalayas, Tibet, the Alps and the Andes all rose higher, and the East African Rift began to tear open. At the very end the Mediterranean was cut off from the Atlantic and largely dried out.",
+  "climate": "Warm at first, peaking 17 to 14 million years ago, when floods of lava erupted in the north-western United States. Then it cooled: the East Antarctic ice sheet became large and permanent by about 13 million years ago, and the world grew drier.",
+  "life": "Grasslands kept spreading and forests shrank, and grazing mammals multiplied. Apes arose early in the Miocene and spread through Africa, Europe and Asia. Kelp forests appeared in the seas, home to whales and seals. Plants and animals were recognisably modern. Near the end, the line leading to humans split from the line leading to chimpanzees.",
+  "changes": [
+   {
+    "ma": 23,
+    "title": "Apes appear",
+    "text": "The first apes evolved early in the Miocene and soon spread widely across the Old World."
+   },
+   {
+    "ma": 22,
+    "title": "The East African Rift begins",
+    "text": "From about 25 to 22 million years ago the crust of East Africa began to pull apart along what is now the Rift Valley."
+   },
+   {
+    "ma": 20,
+    "title": "The Tethys seaway closes",
+    "text": "Arabia's collision with Eurasia began to cut the sea link between the Indian Ocean and the Mediterranean about 20 million years ago."
+   },
+   {
+    "ma": 16.7,
+    "title": "Lava floods and a warm spell",
+    "text": "The Columbia River basalts erupted, mostly 16.7 to 15.9 million years ago, during the warm Miocene Climatic Optimum."
+   },
+   {
+    "ma": 13.8,
+    "title": "Antarctic ice expands for good",
+    "text": "Sharp cooling about 14 million years ago rebuilt the East Antarctic ice sheet, which has been permanent ever since."
+   },
+   {
+    "ma": 7,
+    "title": "Upright apes and tropical grasslands",
+    "text": "Sahelanthropus, possibly the oldest known member of the human line, lived in Chad 7 to 6 million years ago, as tropical grasslands expanded."
+   },
+   {
+    "ma": 5.96,
+    "title": "The Mediterranean dries out",
+    "text": "Cut off from the Atlantic, the Mediterranean partly or almost wholly evaporated between 5.96 and 5.33 million years ago."
+   }
+  ],
+  "stats": {
+   "dayHours": 23.9,
+   "o2Percent": null,
+   "co2ppm": 550,
+   "seaLevelM": null,
+   "tempC": 22
+  },
+  "evidence": "geology",
+  "evidenceNote": "Deep-sea cores record temperature and ice volume, thick salt under the Mediterranean shows it dried, and volcanic layers date the fossil beds.",
+  "sources": [
+   {
+    "title": "ICS International Chronostratigraphic Chart v2026/06 (PDF)",
+    "url": "https://stratigraphy.org/ICSchart/ChronostratChart2026-06.pdf"
+   },
+   {
+    "title": "UC Museum of Paleontology: The Miocene Epoch",
+    "url": "https://ucmp.berkeley.edu/tertiary/miocene.php"
+   },
+   {
+    "title": "Wikipedia: Miocene",
+    "url": "https://en.wikipedia.org/wiki/Miocene"
+   },
+   {
+    "title": "Miller et al. 2020, Science Advances: Cenozoic sea-level and cryospheric evolution",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7228749/"
+   },
+   {
+    "title": "Wikipedia: East African Rift",
+    "url": "https://en.wikipedia.org/wiki/East_African_Rift"
+   },
+   {
+    "title": "Smithsonian Human Origins: Sahelanthropus tchadensis",
+    "url": "https://humanorigins.si.edu/evidence/human-fossils/species/sahelanthropus-tchadensis"
+   },
+   {
+    "title": "PhanDA data file: global temperature and CO2 by geological stage (Judd et al. 2024)",
+    "url": "https://raw.githubusercontent.com/EJJudd/PhanDA/main/5_Outputs/PhanDA_GMSTandCO2_percentiles.csv"
+   },
+   {
+    "title": "AGU: Ancient shell shows days were half-hour shorter 70 million years ago",
+    "url": "https://news.agu.org/press-release/ancient-shell-shows-days-were-half-hour-shorter-70-million-years-ago/"
+   }
+  ]
+ },
+ {
+  "id": "pliocene",
+  "name": "Pliocene",
+  "rank": "epoch",
+  "parent": "neogene",
+  "from": 5.333,
+  "to": 2.58,
+  "color": "#FFFF99",
+  "tagline": "The Americas join; northern ice begins to grow",
+  "world": "The continents lay within a few tens of kilometres of where they are now. At the start the Atlantic burst back into the dried-out Mediterranean in a giant flood. Rising land finally joined North and South America at Panama, about 2.8 million years ago by the usual estimate, separating the Pacific from the Caribbean. The Himalayas and Andes kept rising.",
+  "climate": "A little warmer than today: about 2 to 4 °C above pre-industrial temperatures in its warm spells, with sea level 10 to 25 metres higher. Cooling late in the epoch let large ice sheets grow in the north from about 2.7 million years ago.",
+  "life": "Animals were close to modern kinds. When the Panama land bridge formed, ground sloths, armadillos and opossums walked north while cats, horses and tapirs went south. In Africa, upright-walking Australopithecus lived in a landscape of woods and grassland, and the oldest known stone tools, from Kenya, are 3.3 million years old.",
+  "changes": [
+   {
+    "ma": 5.33,
+    "title": "The Mediterranean refills",
+    "text": "The Atlantic broke through at Gibraltar; most of the basin may have filled in as little as a few months to two years."
+   },
+   {
+    "ma": 4.4,
+    "title": "Warm spells with high seas",
+    "text": "Between about 4.4 and 3.3 million years ago, cave deposits on Mallorca show sea level stood 16 to 24 metres above today's."
+   },
+   {
+    "ma": 3.3,
+    "title": "Oldest known stone tools",
+    "text": "Stone tools 3.3 million years old were found at Lomekwi in Kenya, older than our own genus Homo."
+   },
+   {
+    "ma": 2.8,
+    "title": "The Isthmus of Panama forms",
+    "text": "A complete land bridge joined the Americas about 2.8 million years ago, though some researchers argue for a much earlier date."
+   },
+   {
+    "ma": 2.7,
+    "title": "Northern ice sheets and a great migration",
+    "text": "Ice sheets began to grow on northern lands, and animals started crossing between North and South America in large numbers."
+   }
+  ],
+  "stats": {
+   "dayHours": 24.0,
+   "o2Percent": null,
+   "co2ppm": 280,
+   "seaLevelM": 17,
+   "tempC": 16
+  },
+  "evidence": "geology",
+  "evidenceNote": "Old shorelines, cave deposits formed at sea level and sea-floor cores show how warm it was and how high the sea stood; volcanic ash dates the African fossil sites.",
+  "sources": [
+   {
+    "title": "ICS International Chronostratigraphic Chart v2026/06 (PDF)",
+    "url": "https://stratigraphy.org/ICSchart/ChronostratChart2026-06.pdf"
+   },
+   {
+    "title": "UC Museum of Paleontology: The Pliocene Epoch",
+    "url": "https://ucmp.berkeley.edu/tertiary/pliocene.php"
+   },
+   {
+    "title": "Wikipedia: Pliocene",
+    "url": "https://en.wikipedia.org/wiki/Pliocene"
+   },
+   {
+    "title": "Dumitru et al. 2019, Nature: Constraints on global mean sea level during Pliocene warmth",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/31471591/"
+   },
+   {
+    "title": "O'Dea et al. 2016, Science Advances: Formation of the Isthmus of Panama",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/27540590/"
+   },
+   {
+    "title": "Harmand et al. 2015, Nature: 3.3-million-year-old stone tools from Lomekwi 3, West Turkana, Kenya",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/25993961/"
+   },
+   {
+    "title": "PhanDA data file: global temperature and CO2 by geological stage (Judd et al. 2024)",
+    "url": "https://raw.githubusercontent.com/EJJudd/PhanDA/main/5_Outputs/PhanDA_GMSTandCO2_percentiles.csv"
+   },
+   {
+    "title": "AGU: Ancient shell shows days were half-hour shorter 70 million years ago",
+    "url": "https://news.agu.org/press-release/ancient-shell-shows-days-were-half-hour-shorter-70-million-years-ago/"
+   }
+  ]
+ },
+ {
+  "id": "quaternary",
+  "name": "Quaternary",
+  "rank": "period",
+  "parent": "cenozoic",
+  "from": 2.58,
+  "to": 0,
+  "color": "#F9F97F",
+  "tagline": "The ice ages and the rise of humans",
+  "world": "Covers the Pleistocene and Holocene epochs. The continents were in their present places, but coastlines moved back and forth as ice sheets grew and melted. At cold peaks ice buried Canada and northern Europe, the sea fell by up to about 130 metres, and land bridges joined Asia to North America and Australia to New Guinea.",
+  "climate": "An ice age still under way: long cold glacial periods broken by shorter warm ones like the present. The swings followed regular changes in Earth's orbit, about every 41,000 years at first and about every 100,000 years later.",
+  "life": "Mammoths, giant sloths and other huge animals thrived and then mostly died out. Humans spread from Africa to every continent except Antarctica. In the last 12,000 years people took up farming and became the main force changing the planet's surface.",
+  "changes": [],
+  "stats": {
+   "dayHours": 24.0,
+   "o2Percent": null,
+   "co2ppm": 260,
+   "seaLevelM": null,
+   "tempC": 13
+  },
+  "evidence": "geology",
+  "evidenceNote": "Ice cores from Greenland and Antarctica hold trapped air and yearly layers going back hundreds of thousands of years, and sea-floor cores extend the record further.",
+  "sources": [
+   {
+    "title": "ICS International Chronostratigraphic Chart v2026/06 (PDF)",
+    "url": "https://stratigraphy.org/ICSchart/ChronostratChart2026-06.pdf"
+   },
+   {
+    "title": "ICS chart data file (unit ages and official CGMW colours)",
+    "url": "https://raw.githubusercontent.com/i-c-stratigraphy/chart/main/chart.ttl"
+   },
+   {
+    "title": "Wikipedia: Quaternary",
+    "url": "https://en.wikipedia.org/wiki/Quaternary"
+   },
+   {
+    "title": "Wikipedia: Quaternary glaciation",
+    "url": "https://en.wikipedia.org/wiki/Quaternary_glaciation"
+   },
+   {
+    "title": "Miller et al. 2005, Science: The Phanerozoic record of global sea-level change",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/16311326/"
+   },
+   {
+    "title": "Lambeck et al. 2014, PNAS: Sea level and global ice volumes from the Last Glacial Maximum to the Holocene",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/25313072/"
+   },
+   {
+    "title": "PhanDA data file: global temperature and CO2 by geological stage (Judd et al. 2024)",
+    "url": "https://raw.githubusercontent.com/EJJudd/PhanDA/main/5_Outputs/PhanDA_GMSTandCO2_percentiles.csv"
+   },
+   {
+    "title": "AGU: Ancient shell shows days were half-hour shorter 70 million years ago",
+    "url": "https://news.agu.org/press-release/ancient-shell-shows-days-were-half-hour-shorter-70-million-years-ago/"
+   }
+  ]
+ },
+ {
+  "id": "pleistocene",
+  "name": "Pleistocene",
+  "rank": "epoch",
+  "parent": "quaternary",
+  "from": 2.58,
+  "to": 0.0117,
+  "color": "#FFEFAF",
+  "tagline": "Ice ages come and go; humans spread worldwide",
+  "world": "The continents were where they are today, but coastlines kept shifting. In each cold phase ice sheets covered Canada, Scandinavia and much of Britain, and sea level fell by as much as 130 metres. Dry land then joined Siberia to Alaska, Britain to mainland Europe, and New Guinea to Australia. In warm phases the ice melted back and the seas returned.",
+  "climate": "Cold on average, swinging between long glacial periods and shorter warm ones: every 41,000 years at first, then about every 100,000 years. At the last cold peak the world was about 6 °C colder than before industry, and ice covered about a quarter of all land.",
+  "life": "The time of mammoths, giant ground sloths, sabre-toothed cats and other large 'megafauna', most of which died out between about 50,000 and 10,000 years ago. Several kinds of human lived through the ice ages. Our own species, Homo sapiens, appeared in Africa about 300,000 years ago and later reached every continent except Antarctica.",
+  "changes": [
+   {
+    "ma": 2.58,
+    "title": "The ice-age cycles set in",
+    "text": "With large ice sheets now in both hemispheres, the climate began to swing between cold and warm about every 41,000 years."
+   },
+   {
+    "ma": 1.25,
+    "title": "Longer, deeper ice ages",
+    "text": "Between about 1.25 and 0.7 million years ago the cycles lengthened to about 100,000 years and the cold phases became more severe."
+   },
+   {
+    "ma": 0.315,
+    "title": "Homo sapiens appears",
+    "text": "The oldest known fossils of our species, from Jebel Irhoud in Morocco, are about 315,000 years old."
+   },
+   {
+    "ma": 0.065,
+    "title": "People reach Australia",
+    "text": "Tools at Madjedbebe in northern Australia have been dated to about 65,000 years ago, though that early date is debated."
+   },
+   {
+    "ma": 0.0265,
+    "title": "The Last Glacial Maximum",
+    "text": "Ice sheets were at their greatest extent from 26,500 to about 19,000 years ago and sea level was about 125 to 134 metres lower."
+   },
+   {
+    "ma": 0.023,
+    "title": "People in the Americas",
+    "text": "Footprints at White Sands in New Mexico are dated to 23,000 to 21,000 years ago; the dating is still argued over."
+   },
+   {
+    "ma": 0.0129,
+    "title": "A last cold snap",
+    "text": "The Younger Dryas, 12,900 to 11,700 years ago, returned the north to near-glacial cold before the final warming."
+   }
+  ],
+  "stats": {
+   "dayHours": 24.0,
+   "o2Percent": null,
+   "co2ppm": 260,
+   "seaLevelM": null,
+   "tempC": 13
+  },
+  "evidence": "geology",
+  "evidenceNote": "Yearly layers in ice cores and the chemistry of sea-floor shells record each cold and warm swing, and radiocarbon dates the last 50,000 years of bones and campsites.",
+  "sources": [
+   {
+    "title": "ICS International Chronostratigraphic Chart v2026/06 (PDF)",
+    "url": "https://stratigraphy.org/ICSchart/ChronostratChart2026-06.pdf"
+   },
+   {
+    "title": "Wikipedia: Pleistocene",
+    "url": "https://en.wikipedia.org/wiki/Pleistocene"
+   },
+   {
+    "title": "Lambeck et al. 2014, PNAS: Sea level and global ice volumes from the Last Glacial Maximum to the Holocene",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/25313072/"
+   },
+   {
+    "title": "Hublin et al. 2017, Nature: New fossils from Jebel Irhoud, Morocco and the pan-African origin of Homo sapiens",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/28593953/"
+   },
+   {
+    "title": "Clarkson et al. 2017, Nature: Human occupation of northern Australia by 65,000 years ago",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/28726833/"
+   },
+   {
+    "title": "Bennett et al. 2021, Science: Evidence of humans in North America during the Last Glacial Maximum",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/34554787/"
+   },
+   {
+    "title": "PhanDA data file: global temperature and CO2 by geological stage (Judd et al. 2024)",
+    "url": "https://raw.githubusercontent.com/EJJudd/PhanDA/main/5_Outputs/PhanDA_GMSTandCO2_percentiles.csv"
+   },
+   {
+    "title": "AGU: Ancient shell shows days were half-hour shorter 70 million years ago",
+    "url": "https://news.agu.org/press-release/ancient-shell-shows-days-were-half-hour-shorter-70-million-years-ago/"
+   }
+  ]
+ },
+ {
+  "id": "holocene",
+  "name": "Holocene",
+  "rank": "epoch",
+  "parent": "quaternary",
+  "from": 0.0117,
+  "to": 0,
+  "color": "#FEEBD2",
+  "tagline": "The warm, steady time of farming and cities",
+  "world": "Today's geography. As the ice sheets melted the sea rose by more than 100 metres, drowning the land bridges and coastal plains of the ice age: Britain and New Guinea became islands and the Bering Strait separated Asia from America. Most of the rise was over by about 8,000 years ago, and sea level has been nearly steady for the last few thousand years.",
+  "climate": "Warm and unusually steady. By one reconstruction, global temperature peaked about 6,500 years ago at roughly 0.7 °C above the 1800s. CO2 stayed near 280 ppm until the industrial age; in late 2026 it is about 427 ppm.",
+  "life": "Today's plants and animals, without most of the ice-age giants. People took up farming, built cities and now shape much of the land, the climate and the wildlife. A proposal to name a new human-made epoch, the Anthropocene, was rejected by geology's governing bodies in 2024, so officially we still live in the Holocene.",
+  "changes": [
+   {
+    "ma": 0.0117,
+    "title": "The Holocene begins",
+    "text": "The epoch is defined as starting 11,700 years ago, when the last cold snap of the ice age ended, a moment recorded in Greenland ice."
+   },
+   {
+    "ma": 0.0082,
+    "title": "A sudden chill",
+    "text": "About 8,200 years ago global temperatures dropped rapidly for two to four centuries. The date is used to divide the Holocene."
+   },
+   {
+    "ma": 0.0065,
+    "title": "The warmest centuries",
+    "text": "By one reconstruction the warmest 200 years of the Holocene, before the present, fell around 6,500 years ago."
+   },
+   {
+    "ma": 0.0042,
+    "title": "The latest age begins",
+    "text": "Geologists start the Meghalayan Age, the present subdivision of the Holocene, 4,200 years ago."
+   },
+   {
+    "ma": 7e-05,
+    "title": "The Anthropocene proposed and rejected",
+    "text": "A new epoch starting in 1952 was proposed, but the responsible commission voted it down in March 2024."
+   }
+  ],
+  "stats": {
+   "dayHours": 24.0,
+   "o2Percent": 21,
+   "co2ppm": 280,
+   "seaLevelM": 0,
+   "tempC": 14
+  },
+  "evidence": "geology",
+  "evidenceNote": "Yearly layers in Greenland ice, counted back one by one, mark the start of the epoch, and tree rings, lake mud and cave formations record the climate since.",
+  "sources": [
+   {
+    "title": "ICS International Chronostratigraphic Chart v2026/06 (PDF)",
+    "url": "https://stratigraphy.org/ICSchart/ChronostratChart2026-06.pdf"
+   },
+   {
+    "title": "Wikipedia: Holocene",
+    "url": "https://en.wikipedia.org/wiki/Holocene"
+   },
+   {
+    "title": "Lambeck et al. 2014, PNAS: Sea level and global ice volumes from the Last Glacial Maximum to the Holocene",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/25313072/"
+   },
+   {
+    "title": "Kaufman et al. 2020, Scientific Data: Holocene global mean surface temperature",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/32606396/"
+   },
+   {
+    "title": "NOAA Global Monitoring Laboratory: Trends in atmospheric CO2 (Mauna Loa)",
+    "url": "https://gml.noaa.gov/ccgg/trends/"
+   },
+   {
+    "title": "IUGS-ICS statement on the Anthropocene, March 2024 (PDF)",
+    "url": "https://www.iugs.org/wp-content/uploads/2024/03/Anthropocene_short_IUGS-ICS_Statement-1.pdf"
+   },
+   {
+    "title": "PhanDA data file: global temperature and CO2 by geological stage (Judd et al. 2024)",
+    "url": "https://raw.githubusercontent.com/EJJudd/PhanDA/main/5_Outputs/PhanDA_GMSTandCO2_percentiles.csv"
+   },
+   {
+    "title": "Wikipedia: Geological history of oxygen",
+    "url": "https://en.wikipedia.org/wiki/Geological_history_of_oxygen"
+   }
+  ]
+ }
+]

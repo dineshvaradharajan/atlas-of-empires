@@ -1,0 +1,272 @@
+/* The "Atlas" view of the Earth history page (the default; "Space" is earth.css alone). Every rule sits under
+   body.light and re-dresses earth.css in the look of ../style.css: white ground, black ink, 1px black outlines,
+   pills and one red highlight. The globe switches to its light drawing through the same class (see earth.js). */
+body.light {
+  --space: #ffffff; --panel: #ffffff; --ink: #111111; --ink-2: #2b2b28; --ink-3: #6b6b66; --rule: #e6e6e1; --rule-2: #c9c9c4;
+  --highlight: #e5402a; --kick: #c8321e; --chip: #f0f0ec; --shadow: 0 10px 30px rgba(0, 0, 0, .12);
+  --dock-h: 186px; --pad-l: 104px; --pad-r: 52px; color-scheme: light;
+}
+body.light :focus-visible { outline-color: var(--highlight); }
+body.light #tip { background: #fff; color: var(--ink); border: 1px solid var(--ink); border-radius: 8px; box-shadow: var(--shadow); font: 800 14px/1.25 var(--display); padding: 8px 12px; }
+body.light .x { background: #fff; border: 1px solid var(--rule-2); }
+body.light .x:hover { background: var(--ink); color: #fff; border-color: var(--ink); }
+
+/* top bar: the atlas's pills */
+body.light #bar { top: 16px; gap: 12px; }
+body.light .brand { height: 52px; padding: 0 18px; background: #fff; border: 1px solid var(--ink); border-radius: 26px; font: 900 15px var(--display); letter-spacing: .08em; text-transform: uppercase; color: var(--ink); }
+body.light .brand img { filter: none; opacity: 1; height: 24px; width: auto; }
+body.light .brand:hover { background: var(--chip); }
+body.light .here { height: 44px; display: flex; align-items: center; padding: 0 20px; border: 0; border-radius: 22px; background: var(--ink); color: #fff; font: 600 14px var(--sans); }
+body.light #bar nav { gap: 8px; }
+body.light #bar nav.tools > button { height: 44px; padding: 0 18px; border: 1px solid var(--ink); border-radius: 22px; background: #fff; backdrop-filter: none; font: 500 14px var(--sans); color: var(--ink); }
+body.light #bar nav.tools > button:hover { background: var(--chip); border-color: var(--ink); }
+body.light #bar nav.tools > button[aria-pressed="true"] { background: var(--ink); color: #fff; font-weight: 600; }
+body.light .viewsw { height: 44px; padding: 3px; border: 1px solid var(--ink); border-radius: 22px; background: #fff; backdrop-filter: none; }
+body.light .viewsw button { height: 36px; padding: 0 16px; border-radius: 18px; font: 500 14px var(--sans); color: var(--ink-2); }
+body.light .viewsw button:hover { background: var(--chip); }
+body.light .viewsw button[aria-pressed="true"] { background: var(--ink); color: #fff; font-weight: 600; }
+
+/* left: the atlas's card. It is as tall as its contents; only the text under the tabs gives way and scrolls */
+body.light #now { top: 88px; bottom: auto; width: 372px; max-height: calc(100% - 88px - var(--dock-h) - 16px); padding: 22px 24px 18px; background: #fff; border: 1px solid var(--ink); border-radius: 14px; box-shadow: var(--shadow); overflow-y: auto; overscroll-behavior: contain; scrollbar-width: thin; }
+body.light #now > * { flex-shrink: 0; }
+body.light #now > .tabbody { flex: 0 1 auto; min-height: 64px; }
+body.light .age b { font: 900 64px/.95 var(--display); font-stretch: 100%; letter-spacing: -.02em; }
+body.light .age span { color: var(--ink-3); font: 600 15px/1.2 var(--sans); }
+body.light #unitName { margin-top: 14px; font: 800 30px/1.1 var(--display); font-stretch: 100%; letter-spacing: -.005em; }
+body.light .line { color: var(--ink-3); font-size: 13px; }
+body.light .tagline { font: 600 16px/1.35 var(--sans); }
+body.light .tabs { height: 44px; padding: 3px; margin-top: 16px; gap: 0; border: 0; border-radius: 22px; background: var(--chip); flex: none; }
+body.light .tabs button, body.light .tabs button:first-child { flex: 1; padding: 0 6px; margin: 0; border: 0; border-radius: 19px; font: 500 13.5px var(--sans); color: var(--ink-2); white-space: nowrap; }
+body.light .tabs button[aria-selected="true"] { background: #fff; color: var(--ink); font-weight: 600; box-shadow: 0 1px 3px rgba(0, 0, 0, .14); }
+body.light .tabbody { color: var(--ink-2); font: 400 15px/1.55 var(--sans); padding-top: 14px; scrollbar-color: var(--rule-2) transparent; }
+body.light .tabbody li button { font: 800 13px var(--display); text-decoration: underline; text-decoration-color: var(--highlight); text-underline-offset: 3px; }
+body.light .tabbody li button:hover { color: var(--highlight); }
+body.light .trust { font-size: 13px; line-height: 1.5; }
+body.light .trust.art b { color: var(--kick); }
+
+/* right: picture, detail and the list of events, each a card */
+body.light #rail { top: 88px; bottom: calc(var(--dock-h) + 16px); }
+body.light #pic, body.light #detail { background: #fff; border: 1px solid var(--ink); border-radius: 14px; box-shadow: var(--shadow); backdrop-filter: none; }
+body.light #pic img { background: var(--chip); }
+body.light #pic figcaption { font-size: 13px; }
+body.light .picnav { background: #fff; border: 1px solid var(--ink); }
+body.light .picnav button:hover { background: var(--ink); color: #fff; }
+body.light #detail { padding: 20px 20px 16px; }
+body.light #detail h3 { font: 800 22px/1.15 var(--display); margin-right: 34px; }
+body.light #detail p { font-size: 14.5px; line-height: 1.55; }
+body.light #detail .chip { background: var(--chip); color: var(--ink-2); font: 600 12px var(--sans); }
+body.light #detail .chip.disputed { background: var(--highlight); color: #fff; }
+body.light #detail .src a:hover { color: var(--highlight); }
+body.light #around { background: #fff; border: 1px solid var(--ink); border-radius: 14px; box-shadow: var(--shadow); padding: 16px 20px 10px; }
+body.light #around h2 { text-align: left; margin: 0 0 4px; font: 600 12px var(--sans); letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); }
+body.light #aroundList li button { text-align: left; padding: 8px 0; color: var(--ink); font-size: 14px; }
+body.light #aroundList li:first-child button { border-top: 0; }
+body.light #aroundList li button.past { color: var(--ink-3); }
+body.light #aroundList li button:hover { color: var(--highlight); }
+body.light #aroundList li button.on .t { text-decoration-color: var(--highlight); }
+body.light #aroundList .d { font: 800 12px var(--display); }
+body.light #aroundList .none { text-align: left; }
+
+/* bottom: the atlas's time bar, with the rock column on it. The curve is shorter so the axis sits inside the pill */
+body.light #dock { background: none; padding-top: 12px; }
+body.light #dock::before { content: ""; position: absolute; left: var(--gut); right: var(--gut); top: 2px; bottom: 6px; background: #fff; border: 1px solid var(--ink); border-radius: 30px; box-shadow: var(--shadow); }
+body.light .curvebar, body.light .trackwrap { position: relative; }
+body.light .trackwrap { height: 104px; }
+body.light #play { left: 40px; top: 34px; width: 44px; height: 44px; border-radius: 22px; background: var(--ink); color: #fff; }
+body.light #play:hover { background: #2b2b28; }
+body.light #curvePick button[aria-pressed="true"] { background: var(--chip); }
+body.light #curve { height: 30px; }
+body.light #curve .ln { stroke: var(--ink); }
+body.light #curve .base { stroke: var(--rule); }
+body.light #ticksE { top: 34px; }
+body.light #ticksE i { background: var(--ink-3); opacity: .6; }
+body.light #ticksE i.x5 { background: var(--highlight); opacity: 1; }
+body.light .strata.a { top: 42px; }
+body.light .strata.b { top: 52px; }
+body.light .strata span { color: rgba(17, 17, 17, .88); box-shadow: inset -1px 0 0 #fff; }
+body.light .strata.b span.cur { box-shadow: inset 0 0 0 2px var(--ink); }
+body.light #axis { top: 81px; }
+body.light #cursor { bottom: 27px; }
+body.light #cursor::after { background: #fff; border: 3px solid var(--ink); width: 14px; height: 14px; border-radius: 10px; left: -11px; bottom: -8px; }
+body.light #cursorLabel { font: 800 12.5px var(--display); text-shadow: 0 0 4px #fff, 0 0 4px #fff, 0 0 4px #fff; }
+
+/* life through time */
+body.light #life { left: var(--gut); right: var(--gut); bottom: calc(var(--dock-h) - 4px); background: #fff; backdrop-filter: none; border: 1px solid var(--ink); border-radius: 14px; box-shadow: var(--shadow); overflow: hidden; }
+body.light .lifehead { padding: 14px 56px 10px 24px; border-bottom: 1px solid var(--rule); }
+body.light .lifehead h2 { font: 800 20px var(--display); }
+body.light .k { background: var(--ink-2); }
+body.light .k.clock { background: repeating-linear-gradient(90deg, var(--ink-3) 0 3px, transparent 3px 6px); }
+body.light .k.claim { background: none; border-color: var(--highlight); }
+body.light .k.gone { background: var(--highlight); }
+body.light .grp { padding-left: 24px; background: #fff; letter-spacing: .12em; text-transform: uppercase; font: 600 11.5px var(--sans); }
+body.light .row:hover, body.light .row.on { background: var(--chip); }
+body.light .row .nm { left: 24px; text-shadow: 0 0 4px #fff, 0 0 4px #fff, 0 0 4px #fff; }
+body.light .row .tr { left: calc(var(--pad-l) - var(--gut) - 1px); right: calc(var(--pad-r) - var(--gut) - 1px); }
+body.light .row .bar { opacity: .3; }
+body.light .row.alive .bar { opacity: 1; }
+body.light .row .clm { border-color: var(--highlight); background: #fff; }
+body.light .row .end { background: var(--highlight); }
+body.light #lifeLine { border-left-color: var(--ink); margin-left: calc(-1 * var(--gut) - 1px); }
+body.light #app[data-view="life"] #now, body.light #app[data-view="life"] #rail { bottom: calc(var(--dock-h) + min(46vh, 430px) + 12px); }
+body.light #app[data-view="life"] #now { max-height: calc(100% - 88px - var(--dock-h) - min(46vh, 430px) - 12px); overflow: hidden; }
+
+/* about */
+body.light #about { background: rgba(17, 17, 17, .32); }
+body.light #about .sheet { background: #fff; border: 1px solid var(--ink); box-shadow: var(--shadow); }
+body.light #about h2 { font: 800 30px/1.1 var(--display); }
+body.light #about h3 { font: 600 12px var(--sans); letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); }
+body.light #loading { color: var(--ink-3); }
+
+@media (max-width: 980px) {
+  body.light #app[data-sel] #rail { bottom: calc(var(--dock-h) + 12px); top: auto; }
+}
+@media (max-width: 760px) {
+  body.light { --dock-h: 186px; --pad-l: 74px; --pad-r: 26px; --gut: 10px; }
+  body.light #bar { top: 10px; }
+  body.light .brand { height: 44px; padding: 0 12px; }
+  body.light #bar nav.tools > button { padding: 0 12px; font-size: 13px; }
+  body.light .viewsw button { padding: 0 11px; font-size: 13px; }
+  body.light .trackwrap { height: 96px; }
+  body.light #play { left: 20px; top: 12px; }
+  body.light #dock::before { top: 2px; bottom: calc(var(--tab-h) + 22px); border-radius: 26px; }
+  body.light .strata.a { top: 14px; }
+  body.light .strata.b { top: 24px; }
+  body.light #axis { top: 54px; }
+  body.light #cursor { top: 6px; bottom: 44px; }
+  body.light #now { top: auto; bottom: calc(var(--dock-h) - 14px); left: var(--gut); right: var(--gut); width: auto; max-height: 42vh; padding: 16px 18px 12px; background: #fff; }
+  body.light .age b { font-size: 44px; }
+  body.light #unitName { font-size: 24px; margin-top: 8px; }
+  body.light #life { height: 60vh; }
+}
+
+body.light .sitesw { height: 52px; padding: 4px; gap: 2px; border: 1px solid var(--ink); border-radius: 26px; background: #fff; backdrop-filter: none; }
+body.light .sitesw a, body.light .sitesw span { height: 42px; padding: 0 20px; border-radius: 22px; font: 500 14px var(--sans); color: var(--ink-2); }
+body.light .sitesw a:hover { background: var(--chip); color: var(--ink); }
+body.light .sitesw [aria-current="page"] { background: var(--ink); color: #fff; font-weight: 600; }
+body.light #viewsw { background: #fff; box-shadow: var(--shadow); }
+body.light #tabbar { background: #fff; border: 1px solid var(--ink); box-shadow: 0 10px 30px rgba(0, 0, 0, .16); backdrop-filter: none; }
+body.light #tabbar [aria-current="page"], body.light #tabbar [aria-pressed="true"] { background: var(--chip); color: var(--ink); }
+
+body.light #miles { height: 38px; margin-top: 4px; }
+body.light #milesIn .mile { background: #fff; border: 1px solid var(--ink); color: var(--ink); font: 600 11.5px/16px var(--sans); height: 18px; }
+body.light #milesIn .mile.extinction { color: var(--kick); border-color: var(--highlight); background: #fff; }
+body.light #milesIn .mile:hover, body.light #milesIn .mile.on { background: var(--ink); color: #fff; border-color: var(--ink); }
+body.light #milesIn .mile.extinction:hover, body.light #milesIn .mile.extinction.on { background: var(--highlight); border-color: var(--highlight); color: #fff; }
+body.light #milesIn .mile.flash { animation-name: mileflashL; }
+@keyframes mileflashL { 0% { transform: scale(1.35); box-shadow: 0 0 0 0 rgba(17, 17, 17, .35); } 40% { transform: scale(1.12); box-shadow: 0 0 0 10px rgba(17, 17, 17, 0); } 100% { transform: scale(1); } }
+body.light #mileMarks { top: 32px; }
+body.light #mileMarks i { background: var(--ink); box-shadow: 0 0 0 1.5px #fff; }
+body.light #mileMarks i.extinction { background: var(--highlight); }
+body.light #aroundList li button.turn .t { color: var(--ink); }
+@media (max-width: 760px) { body.light #mileMarks { top: 5px; } }
+
+/* pictures, stories and chapters in the atlas's look */
+body.light .picgo { background: #fff; color: var(--ink); border: 1px solid var(--ink); }
+body.light .picopen:hover .picgo { background: var(--ink); color: #fff; }
+body.light #storyList { background: rgba(17, 17, 17, .32); }
+body.light #storyList .sheet { background: #fff; border: 1px solid var(--ink); box-shadow: var(--shadow); }
+body.light #storyList h2 { font: 800 30px/1.1 var(--display); }
+body.light .scard { border-color: var(--rule-2); }
+body.light .scard:hover { border-color: var(--ink); background: var(--chip); }
+body.light .scard img, body.light .scard i { background: var(--chip); }
+body.light #story { top: 88px; bottom: auto; max-height: calc(100% - 88px - var(--dock-h) - 16px); padding: 22px 24px 0; background: #fff; border: 1px solid var(--ink); border-radius: 14px; box-shadow: var(--shadow); }
+body.light #story .x { top: 14px; right: 14px; }
+body.light .skick { font: 600 12px var(--sans); letter-spacing: .12em; text-transform: uppercase; color: var(--kick); }
+body.light .skick span { letter-spacing: 0; text-transform: none; font-size: 13px; }
+body.light #story h1 { font: 800 30px/1.1 var(--display); }
+body.light .stext { font-size: 15px; line-height: 1.55; }
+body.light .sspec span { background: var(--chip); }
+body.light #story .chip { background: var(--chip); color: var(--ink-2); font: 600 12px var(--sans); }
+body.light #story .chip.disputed { background: var(--highlight); color: #fff; }
+body.light .srel .linkish { text-decoration-color: var(--highlight); }
+body.light .snav { background: linear-gradient(180deg, rgba(255, 255, 255, 0), #fff 40%); padding-bottom: 18px; margin: 0 -2px; }
+body.light .snav button { height: 44px; border-radius: 22px; border: 1px solid var(--ink); background: #fff; font: 500 14px var(--sans); }
+body.light .snav button.dark { background: var(--ink); color: #fff; font-weight: 600; }
+body.light #chapters { margin-top: 4px; }
+body.light .chap { border-color: var(--rule-2); background: #fff; }
+body.light .chap.seen { background: var(--chip); border-color: var(--chip); }
+body.light .chap:hover { border-color: var(--ink); }
+body.light .chap.on { background: var(--ink); border-color: var(--ink); color: #fff; }
+body.light .chap.on small { color: #c9c9c4; }
+body.light .chap.on b { font: 800 14px/17px var(--display); }
+@media (max-width: 760px) {
+  body.light #story { top: auto; bottom: calc(var(--dock-h) - 14px); left: var(--gut); right: var(--gut); width: auto; max-height: 46vh; padding: 16px 18px 0; }
+  body.light #story h1 { font-size: 24px; }
+}
+
+body.light #recBtn { left: 40px; top: 18px; width: 44px; height: 28px; border: 1px solid var(--ink); background: #fff; color: var(--ink); }
+body.light #recBtn:hover { background: var(--chip); }
+body.light #recBtn[aria-expanded="true"] { background: var(--ink); color: #fff; }
+body.light #app { --dock-h: 128px; }
+body.light #app[data-records] { --dock-h: 186px; }
+
+@media (max-width: 760px) { body.light #app, body.light #app[data-records], body.light #app[data-story] { --dock-h: 186px; } }
+
+/* layout A in the atlas look: the account of this time is open text beside the globe, not a boxed card */
+body.light #now { top: 92px; width: 340px; padding: 0 10px 0 2px; background: none; border: 0; border-radius: 0; box-shadow: none; max-height: calc(100% - 92px - var(--dock-h) - 16px); }
+body.light .age b { font-size: 76px; }
+body.light #unitName { font-size: 32px; }
+body.light .readings { margin-top: 14px; padding: 10px 12px; border: 1px solid var(--rule-2); border-radius: 12px; background: #fff; }
+body.light .tabbody { border-top-color: var(--rule); font-size: 14.5px; }
+body.light #rail { width: 264px; }
+@media (max-width: 1180px) { body.light #now { width: 310px; } body.light #rail { width: 240px; } }
+@media (max-width: 760px) {
+  body.light #now { top: auto; left: var(--gut); right: var(--gut); width: auto; padding: 16px 18px 12px; background: #fff; border: 1px solid var(--ink); border-radius: 14px; box-shadow: var(--shadow); max-height: 42vh; }
+  body.light .age b { font-size: 44px; }
+  body.light .readings { padding: 8px 10px; }
+}
+
+@media (min-width: 761px) {
+  body.light #app:not([data-records]) #cursor::after { top: -9px; bottom: auto; left: -9px; width: 10px; height: 10px; }
+}
+
+body.light .iconbtn { width: 44px; height: 44px; border-radius: 22px; border: 1px solid var(--ink); background: #fff; backdrop-filter: none; }
+body.light .iconbtn svg { width: 18px; height: 18px; }
+body.light .iconbtn:hover { background: var(--chip); }
+
+body.light #app[data-story] { --dock-h: 104px; }
+body.light .splay { background: var(--ink); color: #fff; }
+body.light .sseg { border-left-color: #fff; }
+body.light .sseg.on { background: var(--rule-2); }
+body.light .sseg.on i { background: var(--ink); }
+body.light .sseg::after { color: #fff; }
+body.light .sout { height: 44px; border: 1px solid var(--ink); border-radius: 22px; background: #fff; font: 500 14px var(--sans); }
+body.light .sout:hover { background: var(--chip); }
+body.light #storybar { padding: 0 calc(var(--gut) + 18px) 0 calc(var(--gut) + 16px); }
+@media (max-width: 760px) { body.light #app[data-story] { --dock-h: 186px; } }
+
+body.light .sera { color: var(--ink); }
+body.light .scard { border-color: var(--rule-2); background: #fff; }
+body.light .scard:hover { border-color: var(--ink); background: #fff; box-shadow: var(--shadow); }
+body.light .scard > img, body.light .scard > .noimg { background: var(--chip); }
+body.light .smrock { opacity: .7; }
+body.light .sgo { background: var(--ink); color: #fff; }
+body.light .scard:hover .sgo { background: var(--highlight); }
+
+body.light #nudge { background: #fff; border: 1px solid var(--ink); box-shadow: var(--shadow); backdrop-filter: none; }
+body.light .ngo { background: var(--ink); color: #fff; }
+body.light .ngo:hover { background: var(--highlight); }
+body.light .nalt { text-decoration-color: var(--highlight); }
+
+/* the left card in World history's own form: a boxed card, red kicker, big date, the period as the title */
+body.light #now { top: 88px; width: 372px; padding: 24px; gap: 0; background: #fff; border: 1px solid var(--ink); border-radius: 14px; box-shadow: var(--shadow); max-height: calc(100% - 88px - var(--dock-h) - 16px); overflow-y: auto; }
+body.light #now .kicker { color: var(--kick); margin-bottom: 6px; }
+body.light .age { gap: 0; }
+body.light .age b { font: 900 64px/.95 var(--display); letter-spacing: -.02em; }
+body.light .age span { font: 800 24px/1 var(--display); color: var(--ink); margin-left: .3em; letter-spacing: 0; max-width: none; }
+body.light #unitName { margin-top: 14px; padding-left: 0; border: 0; display: flex; align-items: center; gap: 10px; font: 800 30px/1.1 var(--display); }
+body.light #unitName::before { content: ""; flex: none; width: 14px; height: 14px; border-radius: 4px; background: var(--unit); }
+body.light .line { margin: 6px 0 0; font-size: 13px; }
+body.light .tagline { margin-top: 12px; font: 400 15px/1.55 var(--sans); color: var(--ink-2); }
+body.light .readings { margin-top: 14px; padding: 10px 0; border: 0; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); border-radius: 0; background: none; gap: 6px 18px; }
+body.light .readings dt { font: 600 10.5px var(--sans); letter-spacing: .1em; text-transform: uppercase; }
+body.light .tabbody { margin-top: 4px; padding-top: 0; border-top: 0; color: var(--ink-2); font: 400 15px/1.55 var(--sans); overflow: visible; }
+body.light .tabbody h3 { margin: 18px 0 6px; font: 600 12px var(--sans); letter-spacing: .12em; color: var(--ink-3); }
+body.light .tabbody .how { font-size: 13px; color: var(--ink-3); }
+body.light #now .mrow:hover .mt b { color: var(--highlight); }
+body.light #now .trust { margin-top: 16px; background: var(--chip); border-left-color: var(--highlight); color: var(--ink-2); }
+body.light #now .trust b { color: var(--kick); }
+body.light #now .trust.art { border-left-color: var(--highlight); }
+@media (max-width: 1180px) { body.light #now { width: 330px; padding: 20px; } }
+@media (max-width: 760px) { body.light #now { top: auto; bottom: calc(var(--dock-h) - 14px); width: auto; max-height: 42vh; padding: 16px 18px; } body.light .age b { font-size: 44px; } body.light .age span { font-size: 18px; } body.light #unitName { margin-top: 8px; font-size: 24px; } }
+body.light #now > .tabbody { flex: none; }

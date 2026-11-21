@@ -21,7 +21,17 @@ head = (f'<meta name="data-version" content="{v}">\n'
 s = s.replace('<meta charset="utf-8">', '<meta charset="utf-8">\n' + head, 1)
 open(p, "w").write(s)
 PY
+# Earth history (public/earth-history/): the same version on its page, its scripts and styles; earth.js adds it to every data request
+python3 -I - "$D/public/earth-history/index.html" "$V" <<'PY'
+import sys
+p, v = sys.argv[1], sys.argv[2]
+s = open(p).read()
+for f in ("earth.js", "earth.css", "atlas.css"): s = s.replace(f'"{f}"', f'"{f}?v={v}"')
+s = s.replace('<meta charset="utf-8">', f'<meta charset="utf-8">\n<meta name="data-version" content="{v}">', 1)
+open(p, "w").write(s)
+PY
 grep -q "data-version" "$D/public/index.html"
+grep -q "data-version" "$D/public/earth-history/index.html"
 test -f "$D/public/sitemap.xml" && test -f "$D/public/404.html"
 wrangler pages deploy "$D/public" --project-name=worldatlas --branch=main --commit-dirty=true
 rm -rf "$D"

@@ -1,0 +1,1304 @@
+[
+ {
+  "id": "hadean",
+  "name": "Hadean",
+  "rank": "eon",
+  "parent": null,
+  "from": 4567,
+  "to": 4031,
+  "color": "#AE027E",
+  "tagline": "A molten world gains a Moon and oceans",
+  "world": "There were no continents as we know them. The newborn Earth was covered at first by an ocean of molten rock. Early on, a Mars-sized body probably struck it, and the debris formed the Moon. As the surface cooled, a crust hardened and water gathered, perhaps into a world-wide ocean. Almost no rock survives; tiny zircon crystals from Western Australia are the main witnesses.",
+  "climate": "Scorching at first, under thick steam and carbon dioxide, with no free oxygen. Zircon crystals suggest liquid water by about 4.4 to 4.3 billion years ago. The young Sun was much fainter than today, and just after the Moon formed a day may have lasted only five hours.",
+  "life": "No fossils are known. Life may have begun in this eon: comparisons of DNA place the last common ancestor of all living things at about 4.2 billion years ago, and carbon sealed in one 4.1-billion-year-old zircon may be a trace of living things. Both claims are debated, and large asteroid impacts would have made survival hard.",
+  "changes": [
+   {
+    "ma": 4567,
+    "title": "First solids in the Solar System",
+    "text": "The oldest grains in meteorites are 4,567 million years old. The international time scale uses this age as the start of the Hadean."
+   },
+   {
+    "ma": 4540,
+    "title": "The Earth reaches nearly full size",
+    "text": "Uranium-lead dating of meteorites gives the Earth an age of about 4.54 billion years, give or take 50 million."
+   },
+   {
+    "ma": 4510,
+    "title": "A giant impact forms the Moon",
+    "text": "A Mars-sized body, nicknamed Theia, probably hit the young Earth, and the debris gathered into the Moon. The date and the details of the collision are disputed."
+   },
+   {
+    "ma": 4404,
+    "title": "Oldest known mineral grain forms",
+    "text": "A zircon crystal from the Jack Hills of Western Australia is 4,404 million years old. Its chemistry points to a solid crust and probably liquid water."
+   },
+   {
+    "ma": 4100,
+    "title": "A possible first trace of life",
+    "text": "Carbon inside a 4.1-billion-year-old Jack Hills zircon has the light make-up that living things produce. Whether life made it is disputed."
+   },
+   {
+    "ma": 4031,
+    "title": "Oldest surviving rocks form",
+    "text": "The Acasta Gneiss of northern Canada is about 4.03 billion years old. Its age marks the end of the Hadean."
+   }
+  ],
+  "stats": {
+   "dayHours": null,
+   "o2Percent": null,
+   "co2ppm": null,
+   "seaLevelM": null,
+   "tempC": null
+  },
+  "evidence": "geology",
+  "evidenceNote": "No rock survives from this time, so we rely on meteorites, Moon rocks and tiny zircon crystals dated by radioactive decay; no reliable figures exist for day length, air or temperature.",
+  "sources": [
+   {
+    "title": "International Commission on Stratigraphy: International Chronostratigraphic Chart, v2026/06",
+    "url": "https://stratigraphy.org/chart"
+   },
+   {
+    "title": "USGS: Geologic Time, Age of the Earth",
+    "url": "https://pubs.usgs.gov/gip/geotime/age.html"
+   },
+   {
+    "title": "UC Museum of Paleontology: The Hadean",
+    "url": "https://ucmp.berkeley.edu/precambrian/hadean.html"
+   },
+   {
+    "title": "Wilde et al. 2001, Nature: Evidence from detrital zircons for the existence of continental crust and oceans on the Earth 4.4 Gyr ago",
+    "url": "https://www.nature.com/articles/35051550"
+   },
+   {
+    "title": "NASA Science: Moon formation",
+    "url": "https://science.nasa.gov/moon/formation/"
+   },
+   {
+    "title": "Moody et al. 2024, Nature Ecology & Evolution: The nature of the last universal common ancestor and its impact on the early Earth system",
+    "url": "https://www.nature.com/articles/s41559-024-02461-1"
+   },
+   {
+    "title": "Wikipedia: Hadean",
+    "url": "https://en.wikipedia.org/wiki/Hadean"
+   },
+   {
+    "title": "Wikipedia: Earth's rotation",
+    "url": "https://en.wikipedia.org/wiki/Earth%27s_rotation"
+   }
+  ]
+ },
+ {
+  "id": "archean",
+  "name": "Archean",
+  "rank": "eon",
+  "parent": null,
+  "from": 4031,
+  "to": 2500,
+  "color": "#F0047F",
+  "tagline": "A water world where microbes take hold",
+  "world": "The Earth was mostly ocean, dotted with volcanic islands and small early continents called cratons, such as the Pilbara in Australia and the Kaapvaal in southern Africa. The interior was hotter and volcanoes more active than today. When plates began to move as they do now is disputed; many geologists place it between 3.2 and 2.5 billion years ago. The proposed first supercontinents (Vaalbara, Ur, Kenorland) are uncertain.",
+  "climate": "Mild enough for liquid oceans, probably somewhere between 0 and 40 degrees Celsius, although the Sun gave 20 to 25 percent less light. Extra carbon dioxide and methane kept the planet warm. The air held almost no free oxygen. The oldest known ice age came about 2.9 billion years ago.",
+  "life": "Only single-celled microbes, bacteria and archaea, existed. The oldest widely accepted fossils are 3.48-billion-year-old stromatolites, layered mounds built by mats of microbes, in Western Australia; older claims from Greenland and Canada are disputed. By about 3.2 billion years ago microbes also lived on land. At some point cyanobacteria began to make oxygen from sunlight and water.",
+  "changes": [
+   {
+    "ma": 3770,
+    "title": "Possible fossil microbes in Quebec",
+    "text": "Tiny iron-oxide tubes in rocks at least 3.77 billion years old at Nuvvuagittuq may be microbes from sea-floor hot vents. Both the age of the rocks and the fossils are disputed."
+   },
+   {
+    "ma": 3700,
+    "title": "Isua rocks hold possible signs of life",
+    "text": "Light carbon and mound-like structures in 3.7-billion-year-old Greenland rocks have been read as traces of microbes. Later studies argue that heat and squeezing made them."
+   },
+   {
+    "ma": 3480,
+    "title": "Stromatolites grow in the Pilbara",
+    "text": "Layered mounds in the Dresser Formation of Western Australia are the oldest fossils that most researchers accept."
+   },
+   {
+    "ma": 3200,
+    "title": "Signs of drifting plates",
+    "text": "Magnetic records show part of the Pilbara moved at modern plate speeds 3.2 billion years ago. Many geologists think plate tectonics took hold between then and 2.5 billion years ago."
+   },
+   {
+    "ma": 2900,
+    "title": "The first known ice age",
+    "text": "Glacial deposits in the Pongola rocks of South Africa and Eswatini, about 2.9 billion years old, record the oldest known glaciation."
+   },
+   {
+    "ma": 2720,
+    "title": "Continents grow and may merge",
+    "text": "Around 2.72 billion years ago several old continental cores grew and may have joined in a landmass called Kenorland. It remains a hypothesis."
+   },
+   {
+    "ma": 2501,
+    "title": "A whiff of oxygen?",
+    "text": "Metals in 2.5-billion-year-old Australian shale were read in 2007 as a first brief pulse of oxygen. A later re-study argues the signal was added to the rock afterwards."
+   }
+  ],
+  "stats": {
+   "dayHours": 13,
+   "o2Percent": 0,
+   "co2ppm": null,
+   "seaLevelM": null,
+   "tempC": null
+  },
+  "evidence": "geology",
+  "evidenceNote": "Archean rocks are dated by the steady decay of radioactive elements in their minerals; the day length (from tidal layers 3.2 billion years old) and the near-zero oxygen figure (from rock chemistry) are approximate.",
+  "sources": [
+   {
+    "title": "International Commission on Stratigraphy: International Chronostratigraphic Chart, v2026/06",
+    "url": "https://stratigraphy.org/chart"
+   },
+   {
+    "title": "Wikipedia: Archean",
+    "url": "https://en.wikipedia.org/wiki/Archean"
+   },
+   {
+    "title": "Catling & Zahnle 2020, Science Advances: The Archean atmosphere",
+    "url": "https://doi.org/10.1126/sciadv.aax1420"
+   },
+   {
+    "title": "Djokic et al. 2017, Nature Communications: Earliest signs of life on land preserved in ca. 3.5 Ga hot spring deposits",
+    "url": "https://www.nature.com/articles/ncomms15263"
+   },
+   {
+    "title": "Cawood et al. 2018, Philosophical Transactions A: Geological archive of the onset of plate tectonics",
+    "url": "https://doi.org/10.1098/rsta.2017.0405"
+   },
+   {
+    "title": "Brenner et al. 2020, Science Advances: Paleomagnetic evidence for modern-like plate motion velocities at 3.2 Ga",
+    "url": "https://doi.org/10.1126/sciadv.aaz8670"
+   },
+   {
+    "title": "Eulenfeld & Heubeck 2023, JGR Planets: Constraints on Moon's orbit 3.2 billion years ago from tidal bundle data (arXiv)",
+    "url": "https://arxiv.org/abs/2207.05464"
+   },
+   {
+    "title": "Wikipedia: Pongola glaciation",
+    "url": "https://en.wikipedia.org/wiki/Pongola_glaciation"
+   }
+  ]
+ },
+ {
+  "id": "proterozoic",
+  "name": "Proterozoic",
+  "rank": "eon",
+  "parent": null,
+  "from": 2500,
+  "to": 538.8,
+  "color": "#F73563",
+  "tagline": "Oxygen arrives and cells grow complex",
+  "world": "The longest eon, lasting nearly two billion years. Oxygen built up in the air for the first time. Continents joined into the supercontinents Columbia (Nuna) and then Rodinia, and split apart again. Cells with a nucleus appeared, then seaweeds and, near the end, the first animals. At least twice, ice may have covered almost the whole planet.",
+  "climate": "Two bursts of severe ice ages, near the start and near the end, with a long, warm, stable stretch between them. Oxygen rose in two main steps but stayed below today's level.",
+  "life": "Microbes throughout; cells with a nucleus by about 1.65 billion years ago; many-celled seaweeds by about one billion; large soft-bodied creatures and the first animals in the last 40 million years.",
+  "changes": [],
+  "stats": {
+   "dayHours": null,
+   "o2Percent": null,
+   "co2ppm": null,
+   "seaLevelM": null,
+   "tempC": null
+  },
+  "evidence": "geology",
+  "evidenceNote": "Dated volcanic rocks, the chemistry of ancient sea-floor mud and a thin record of mostly microscopic fossils tell this story; see the three eras inside it for figures.",
+  "sources": [
+   {
+    "title": "International Commission on Stratigraphy: International Chronostratigraphic Chart, v2026/06",
+    "url": "https://stratigraphy.org/chart"
+   },
+   {
+    "title": "UC Museum of Paleontology: The Proterozoic Eon",
+    "url": "https://ucmp.berkeley.edu/precambrian/proterozoic.php"
+   },
+   {
+    "title": "Wikipedia: Proterozoic",
+    "url": "https://en.wikipedia.org/wiki/Proterozoic"
+   },
+   {
+    "title": "Lyons, Reinhard & Planavsky 2014, Nature: The rise of oxygen in Earth's early ocean and atmosphere",
+    "url": "https://www.nature.com/articles/nature13068"
+   },
+   {
+    "title": "Mitchell et al. 2021, Nature Reviews Earth & Environment: The supercontinent cycle",
+    "url": "https://www.nature.com/articles/s43017-021-00160-0"
+   }
+  ]
+ },
+ {
+  "id": "paleoproterozoic",
+  "name": "Paleoproterozoic",
+  "rank": "era",
+  "parent": "proterozoic",
+  "from": 2500,
+  "to": 1600,
+  "color": "#F74370",
+  "tagline": "Oxygen changes the air for good",
+  "world": "Small continents collided and merged. Between about 2.1 and 1.8 billion years ago these collisions built the supercontinent Columbia, also called Nuna, raising long mountain belts. Two giant asteroids struck: at Vredefort in South Africa 2.02 billion years ago and at Sudbury in Canada 1.85 billion years ago. They left two of the oldest and largest impact structures known.",
+  "climate": "Oxygen made by cyanobacteria first built up in the air between about 2.46 and 2.06 billion years ago, the Great Oxidation Event. Around the same time the planet froze in the Huronian ice ages, when ice reached the tropics at least once. Banded iron formations rusted out of the seas.",
+  "life": "Still a world of microbes, but a changing one. Oxygen was toxic to many microbes, while others evolved to breathe it. The first cells with a nucleus (eukaryotes) appear as fossils by about 1.65 billion years ago. Centimetre-sized shapes in 2.1-billion-year-old rocks in Gabon may be early many-celled life, but this is disputed.",
+  "changes": [
+   {
+    "ma": 2460,
+    "title": "The Great Oxidation Event begins",
+    "text": "Free oxygen starts to build up in the air and shallow seas, in fits and starts, between about 2.46 and 2.43 billion years ago."
+   },
+   {
+    "ma": 2426,
+    "title": "Ice reaches the tropics",
+    "text": "Glacial deposits in South Africa formed about 11 degrees from the equator around 2.43 billion years ago, part of the Huronian ice ages (about 2.4 to 2.1 billion years ago)."
+   },
+   {
+    "ma": 2100,
+    "title": "Gabon's puzzling large 'fossils'",
+    "text": "Lobed structures up to several centimetres across in black shale near Franceville may be the oldest large living things, or may be mineral growths."
+   },
+   {
+    "ma": 2023,
+    "title": "The Vredefort impact",
+    "text": "An asteroid perhaps 20 to 25 kilometres across struck what is now South Africa, leaving a crater 170 to 300 kilometres wide."
+   },
+   {
+    "ma": 1849,
+    "title": "The Sudbury impact",
+    "text": "A body 10 to 15 kilometres across hit what is now Ontario, Canada, scattering debris for more than 800 kilometres."
+   },
+   {
+    "ma": 1800,
+    "title": "Supercontinent Columbia is complete",
+    "text": "Collisions between 2.1 and 1.8 billion years ago joined nearly all the continental blocks into Columbia (Nuna)."
+   },
+   {
+    "ma": 1650,
+    "title": "Oldest accepted cells with a nucleus",
+    "text": "Microscopic fossils from North China show that eukaryotes, the kind of cell that builds all animals and plants, already existed and were varied."
+   }
+  ],
+  "stats": {
+   "dayHours": 17,
+   "o2Percent": null,
+   "co2ppm": null,
+   "seaLevelM": null,
+   "tempC": null
+  },
+  "evidence": "geology",
+  "evidenceNote": "The rise of oxygen is read from sulfur and iron chemistry in dated rocks; the 17-hour day is measured from rhythmic layers 2.46 billion years old, near the start of the era, so it is approximate for the era as a whole.",
+  "sources": [
+   {
+    "title": "International Commission on Stratigraphy: International Chronostratigraphic Chart, v2026/06",
+    "url": "https://stratigraphy.org/chart"
+   },
+   {
+    "title": "Wikipedia: Paleoproterozoic",
+    "url": "https://en.wikipedia.org/wiki/Paleoproterozoic"
+   },
+   {
+    "title": "Gumsley et al. 2017, PNAS: Timing and tempo of the Great Oxidation Event",
+    "url": "https://doi.org/10.1073/pnas.1608824114"
+   },
+   {
+    "title": "Lantink et al. 2022, PNAS: Milankovitch cycles in banded iron formations constrain the Earth-Moon system 2.46 billion years ago",
+    "url": "https://doi.org/10.1073/pnas.2117146119"
+   },
+   {
+    "title": "Lyons, Reinhard & Planavsky 2014, Nature: The rise of oxygen in Earth's early ocean and atmosphere",
+    "url": "https://www.nature.com/articles/nature13068"
+   },
+   {
+    "title": "El Albani et al. 2010, Nature: Large colonial organisms with coordinated growth in oxygenated environments 2.1 Gyr ago",
+    "url": "https://www.nature.com/articles/nature09166"
+   },
+   {
+    "title": "Wikipedia: Vredefort impact structure",
+    "url": "https://en.wikipedia.org/wiki/Vredefort_impact_structure"
+   },
+   {
+    "title": "Wikipedia: Columbia (supercontinent)",
+    "url": "https://en.wikipedia.org/wiki/Columbia_(supercontinent)"
+   }
+  ]
+ },
+ {
+  "id": "mesoproterozoic",
+  "name": "Mesoproterozoic",
+  "rank": "era",
+  "parent": "proterozoic",
+  "from": 1600,
+  "to": 1000,
+  "color": "#FDB462",
+  "tagline": "The quiet middle age of the Earth",
+  "world": "Columbia slowly broke apart between about 1.5 and 1.35 billion years ago. Its pieces drifted, then came together again, and by about 1.1 to 0.9 billion years ago they had formed a new supercontinent, Rodinia. The collisions raised the Grenville mountains, whose worn-down roots run from Labrador through Quebec and the Adirondacks to Texas and Mexico.",
+  "climate": "A long calm with no known ice ages, part of the so-called Boring Billion. Oxygen stayed low: somewhere between a thousandth and a tenth of today's level (researchers disagree), and the deep sea had little or none. A day lasted about 19 hours.",
+  "life": "Bacteria still ruled the seas, while cells with a nucleus slowly diversified. Near the end of the era the red seaweed Bangiomorpha, found in Arctic Canada and dated to 1,047 million years ago, shows two great steps: a body built of many cells, and the first known sexual reproduction. On land there were at most thin crusts of microbes.",
+  "changes": [
+   {
+    "ma": 1500,
+    "title": "Columbia starts to break apart",
+    "text": "The supercontinent splits into separate blocks between about 1.5 and 1.35 billion years ago."
+   },
+   {
+    "ma": 1400,
+    "title": "A day lasts under 19 hours",
+    "text": "Rhythmic layers in 1.4-billion-year-old rocks show a day of about 18.7 hours and a Moon about 341,000 kilometres away, closer than today."
+   },
+   {
+    "ma": 1250,
+    "title": "Grenville mountain building begins",
+    "text": "Continental blocks begin to collide with ancient North America (Laurentia), a process that lasts until about 980 million years ago."
+   },
+   {
+    "ma": 1100,
+    "title": "Rodinia assembles",
+    "text": "From about 1.1 billion years ago the drifting continents gather into a new supercontinent, Rodinia."
+   },
+   {
+    "ma": 1047,
+    "title": "Bangiomorpha, the first known sex",
+    "text": "A fossil red seaweed from Somerset Island, Canada, is the first known organism to reproduce sexually."
+   }
+  ],
+  "stats": {
+   "dayHours": 19,
+   "o2Percent": null,
+   "co2ppm": null,
+   "seaLevelM": null,
+   "tempC": null
+  },
+  "evidence": "geology",
+  "evidenceNote": "Day length comes from rhythmic rock layers that record wobbles in the Earth's orbit; oxygen estimates come from metals in ancient mud and differ a hundredfold between studies, so no single figure is given.",
+  "sources": [
+   {
+    "title": "International Commission on Stratigraphy: International Chronostratigraphic Chart, v2026/06",
+    "url": "https://stratigraphy.org/chart"
+   },
+   {
+    "title": "Wikipedia: Mesoproterozoic",
+    "url": "https://en.wikipedia.org/wiki/Mesoproterozoic"
+   },
+   {
+    "title": "Mitchell & Kirscher 2023, Nature Geoscience: Mid-Proterozoic day length stalled by tidal resonance",
+    "url": "https://www.nature.com/articles/s41561-023-01202-6"
+   },
+   {
+    "title": "Meyers & Malinverno 2018, PNAS: Proterozoic Milankovitch cycles and the history of the solar system",
+    "url": "https://doi.org/10.1073/pnas.1717689115"
+   },
+   {
+    "title": "Planavsky et al. 2014, Science: Low mid-Proterozoic atmospheric oxygen levels and the delayed rise of animals",
+    "url": "https://doi.org/10.1126/science.1258410"
+   },
+   {
+    "title": "Wikipedia: Great Oxidation Event",
+    "url": "https://en.wikipedia.org/wiki/Great_Oxidation_Event"
+   },
+   {
+    "title": "Wikipedia: Bangiomorpha",
+    "url": "https://en.wikipedia.org/wiki/Bangiomorpha"
+   },
+   {
+    "title": "Wikipedia: Grenville orogeny",
+    "url": "https://en.wikipedia.org/wiki/Grenville_orogeny"
+   }
+  ]
+ },
+ {
+  "id": "neoproterozoic",
+  "name": "Neoproterozoic",
+  "rank": "era",
+  "parent": "proterozoic",
+  "from": 1000,
+  "to": 538.8,
+  "color": "#FEB342",
+  "tagline": "Rodinia splits, the Earth freezes, animals appear",
+  "world": "The era opened with the supercontinent Rodinia lying across the equator. From about 750 million years ago it broke into pieces, and by the end the southern pieces were joining again as Gondwana. In between came the most severe ice ages known, the Snowball Earth glaciations of the Cryogenian, followed in the Ediacaran by the first large living things.",
+  "climate": "Warm and stable at first, then two long world-wide freezes between about 717 and 635 million years ago, then warmth again with rising oxygen.",
+  "life": "Seaweeds and other cells with a nucleus diversified; the first animals arose, known from disputed chemical traces and then from the soft-bodied Ediacaran fossils.",
+  "changes": [],
+  "stats": {
+   "dayHours": null,
+   "o2Percent": null,
+   "co2ppm": null,
+   "seaLevelM": null,
+   "tempC": null
+  },
+  "evidence": "geology",
+  "evidenceNote": "Glacial rubble, dated volcanic ash and, late in the era, the first large fossils record these events; see the three periods inside it for figures.",
+  "sources": [
+   {
+    "title": "International Commission on Stratigraphy: International Chronostratigraphic Chart, v2026/06",
+    "url": "https://stratigraphy.org/chart"
+   },
+   {
+    "title": "Wikipedia: Neoproterozoic",
+    "url": "https://en.wikipedia.org/wiki/Neoproterozoic"
+   },
+   {
+    "title": "Hoffman et al. 2017, Science Advances: Snowball Earth climate dynamics and Cryogenian geology-geobiology",
+    "url": "https://doi.org/10.1126/sciadv.1600983"
+   },
+   {
+    "title": "Wikipedia: Rodinia",
+    "url": "https://en.wikipedia.org/wiki/Rodinia"
+   },
+   {
+    "title": "UC Museum of Paleontology: The Proterozoic Eon",
+    "url": "https://ucmp.berkeley.edu/precambrian/proterozoic.php"
+   }
+  ]
+ },
+ {
+  "id": "tonian",
+  "name": "Tonian",
+  "rank": "period",
+  "parent": "neoproterozoic",
+  "from": 1000,
+  "to": 720,
+  "color": "#FEBF4E",
+  "tagline": "Rodinia holds, then starts to tear",
+  "world": "Rodinia lay across the equator, surrounded by a single world ocean called Mirovia, and stayed in one piece until at least 900 million years ago. Late in the period it began to stretch and rift; the name Tonian comes from the Greek for 'stretch'. Most geologists date the start of the real break-up to about 750 million years ago.",
+  "climate": "Mostly warm and free of ice, the last stretch of the long calm before the great freezes. Oxygen was still far below today's level. At the very end of the period the planet cooled towards the first Snowball Earth glaciation.",
+  "life": "Seaweeds and single-celled eukaryotes diversified, and chemical fossils show that modern kinds of algae became common only from about 800 million years ago. DNA comparisons suggest the first animals arose in this period or the next, but no certain animal fossils are known. Sponge-like textures in 890-million-year-old reef rocks have been proposed as the oldest; this is disputed.",
+  "changes": [
+   {
+    "ma": 1000,
+    "title": "Rodinia in one piece",
+    "text": "The supercontinent, assembled by about 900 million years ago, and its surrounding ocean Mirovia stay stable through the early Tonian."
+   },
+   {
+    "ma": 890,
+    "title": "The oldest sponge fossils?",
+    "text": "Net-like textures in reef rocks about 890 million years old resemble the skeletons of horny sponges. If they are sponges, they are the oldest animal fossils known; many researchers are unconvinced."
+   },
+   {
+    "ma": 800,
+    "title": "Modern kinds of algae spread",
+    "text": "Fossil fat molecules show that older, more primitive eukaryotes dominated until about 800 million years ago, after which modern groups took over."
+   },
+   {
+    "ma": 750,
+    "title": "Rodinia begins to break up",
+    "text": "Rifts open across the supercontinent and its fragments start to drift apart."
+   }
+  ],
+  "stats": {
+   "dayHours": null,
+   "o2Percent": null,
+   "co2ppm": null,
+   "seaLevelM": null,
+   "tempC": null
+  },
+  "evidence": "geology",
+  "evidenceNote": "Dated volcanic rocks and rift deposits show where Rodinia tore; microscopic fossils and fossil fat molecules record life. No reliable figures exist for day length, air or temperature.",
+  "sources": [
+   {
+    "title": "International Commission on Stratigraphy: International Chronostratigraphic Chart, v2026/06",
+    "url": "https://stratigraphy.org/chart"
+   },
+   {
+    "title": "Wikipedia: Tonian",
+    "url": "https://en.wikipedia.org/wiki/Tonian"
+   },
+   {
+    "title": "Wikipedia: Rodinia",
+    "url": "https://en.wikipedia.org/wiki/Rodinia"
+   },
+   {
+    "title": "Turner 2021, Nature: Possible poriferan body fossils in early Neoproterozoic microbial reefs",
+    "url": "https://www.nature.com/articles/s41586-021-03773-z"
+   },
+   {
+    "title": "Brocks et al. 2023, Nature: Lost world of complex life and the late rise of the eukaryotic crown",
+    "url": "https://www.nature.com/articles/s41586-023-06170-w"
+   },
+   {
+    "title": "dos Reis et al. 2015, Current Biology: Uncertainty in the timing of origin of animals and the limits of precision in molecular timescales",
+    "url": "https://doi.org/10.1016/j.cub.2015.09.066"
+   }
+  ]
+ },
+ {
+  "id": "cryogenian",
+  "name": "Cryogenian",
+  "rank": "period",
+  "parent": "neoproterozoic",
+  "from": 720,
+  "to": 635,
+  "color": "#FECC5C",
+  "tagline": "Snowball Earth: ice reaches the tropics",
+  "world": "Rodinia was breaking up, with most of its fragments near the equator. Twice, ice spread from the poles until glaciers reached sea level in the tropics: the Sturtian glaciation, about 717 to 660 million years ago, and the shorter Marinoan, which ended 635 million years ago. Rubble dropped by that ice is found on every continent.",
+  "climate": "The coldest times the Earth has known. Whether the oceans froze over completely ('hard snowball') or kept open water near the equator ('slushball') is disputed. Each freeze ended when carbon dioxide from volcanoes built up, to perhaps a hundred times today's level, and the ice melted fast.",
+  "life": "Life survived, perhaps in meltwater ponds on top of the ice or in patches of open sea. Algae and microbes carried on. Molecules in Oman rocks older than 635 million years have been read as the oldest sign of animals (sponges), but some single-celled organisms make the same molecules, so the claim is disputed.",
+  "changes": [
+   {
+    "ma": 717,
+    "title": "The Sturtian glaciation begins",
+    "text": "Volcanic ash dated to 716.5 million years ago lies among glacial deposits that formed near the equator in what is now north-west Canada."
+   },
+   {
+    "ma": 660,
+    "title": "The Sturtian ice melts",
+    "text": "After about 57 million years the first Snowball Earth ends."
+   },
+   {
+    "ma": 645,
+    "title": "Sponge molecules in Oman?",
+    "text": "Fossil fats of a kind made by sponges appear in rocks laid down before the end of the Marinoan glaciation. Whether sponges made them is disputed."
+   },
+   {
+    "ma": 639,
+    "title": "The Marinoan glaciation begins",
+    "text": "A second world-wide freeze is under way by about 639 million years ago; its start is poorly dated and may be earlier."
+   },
+   {
+    "ma": 635,
+    "title": "A sudden thaw",
+    "text": "The ice retreats quickly and an unusual 'cap' of limestone is laid down over the glacial rubble around the world. This marks the end of the period."
+   }
+  ],
+  "stats": {
+   "dayHours": 21.9,
+   "o2Percent": null,
+   "co2ppm": null,
+   "seaLevelM": null,
+   "tempC": null
+  },
+  "evidence": "geology",
+  "evidenceNote": "Rocks dropped by ice, found in layers that formed near the equator, show how far the ice reached; the 21.9-hour day comes from tidal layers dated to about 620 million years ago, just after the period, and is approximate.",
+  "sources": [
+   {
+    "title": "International Commission on Stratigraphy: International Chronostratigraphic Chart, v2026/06",
+    "url": "https://stratigraphy.org/chart"
+   },
+   {
+    "title": "Hoffman et al. 2017, Science Advances: Snowball Earth climate dynamics and Cryogenian geology-geobiology",
+    "url": "https://doi.org/10.1126/sciadv.1600983"
+   },
+   {
+    "title": "Macdonald et al. 2010, Science: Calibrating the Cryogenian",
+    "url": "https://doi.org/10.1126/science.1183325"
+   },
+   {
+    "title": "Hyde et al. 2000, Nature: Neoproterozoic 'snowball Earth' simulations with a coupled climate/ice-sheet model",
+    "url": "https://www.nature.com/articles/35013005"
+   },
+   {
+    "title": "Love et al. 2009, Nature: Fossil steroids record the appearance of Demospongiae during the Cryogenian period",
+    "url": "https://www.nature.com/articles/nature07673"
+   },
+   {
+    "title": "Nettersheim et al. 2019, Nature Ecology & Evolution: Putative sponge biomarkers in unicellular Rhizaria question an early rise of animals",
+    "url": "https://www.nature.com/articles/s41559-019-0806-5"
+   },
+   {
+    "title": "Wikipedia: Cryogenian",
+    "url": "https://en.wikipedia.org/wiki/Cryogenian"
+   },
+   {
+    "title": "Wikipedia: Tidal acceleration",
+    "url": "https://en.wikipedia.org/wiki/Tidal_acceleration"
+   }
+  ]
+ },
+ {
+  "id": "ediacaran",
+  "name": "Ediacaran",
+  "rank": "period",
+  "parent": "neoproterozoic",
+  "from": 635,
+  "to": 538.8,
+  "color": "#FED96A",
+  "tagline": "The first large living things",
+  "world": "The fragments of Rodinia were regrouping. Collisions across what are now Africa, South America, Arabia and India welded the southern continents into Gondwana by about 550 million years ago. Laurentia (North America), Baltica and Siberia drifted apart as the Iapetus Ocean opened. A short-lived supercontinent, Pannotia, may have existed along the way; many geologists doubt it.",
+  "climate": "Warmer after the great freezes, with one more short ice age, the Gaskiers, about 580 million years ago. Oxygen rose in the sea and the air, though still below today's level and probably unevenly. A day lasted about 22 hours.",
+  "life": "Soft-bodied creatures up to about a metre long appear from about 575 million years ago: fronds, discs and quilted mats such as Charnia and Dickinsonia. What they were is disputed; fat molecules preserved in Dickinsonia show that it was an animal, but others may have been something else. Late in the period, trails and burrows show animals that could move.",
+  "changes": [
+   {
+    "ma": 635,
+    "title": "The seas warm and gain oxygen",
+    "text": "Sea-floor muds laid down in South China just after the Marinoan ice record a rise in oxygen in the ocean."
+   },
+   {
+    "ma": 580,
+    "title": "The Gaskiers ice age",
+    "text": "A short glaciation, lasting about 250,000 years, leaves thick glacial deposits in Newfoundland."
+   },
+   {
+    "ma": 570,
+    "title": "Large life at Mistaken Point",
+    "text": "Frond-shaped and spindle-shaped creatures, the oldest large and complex organisms known, live on a deep sea floor now exposed in Newfoundland."
+   },
+   {
+    "ma": 555,
+    "title": "Dickinsonia and Kimberella",
+    "text": "Volcanic ash in Russia dates a rich community of soft-bodied creatures, including the slug-like Kimberella, to before 555 million years ago."
+   },
+   {
+    "ma": 550,
+    "title": "Gondwana is assembled",
+    "text": "The collisions that joined the southern continents are largely complete."
+   },
+   {
+    "ma": 539,
+    "title": "The Ediacaran creatures fade",
+    "text": "Most of the soft-bodied forms disappear as burrowing animals spread, at the threshold of the Cambrian."
+   }
+  ],
+  "stats": {
+   "dayHours": 21.9,
+   "o2Percent": null,
+   "co2ppm": null,
+   "seaLevelM": null,
+   "tempC": null
+  },
+  "evidence": "fossil",
+  "evidenceNote": "Soft-bodied creatures left impressions in sandstone and under volcanic ash that can be dated; the day length comes from tidal layers about 620 million years old and is approximate.",
+  "sources": [
+   {
+    "title": "International Commission on Stratigraphy: International Chronostratigraphic Chart, v2026/06",
+    "url": "https://stratigraphy.org/chart"
+   },
+   {
+    "title": "UC Museum of Paleontology: The Ediacaran Period",
+    "url": "https://ucmp.berkeley.edu/vendian/ediacaran.php"
+   },
+   {
+    "title": "Bobrovskiy et al. 2018, Science: Ancient steroids establish the Ediacaran fossil Dickinsonia as one of the earliest animals",
+    "url": "https://doi.org/10.1126/science.aat7228"
+   },
+   {
+    "title": "Sahoo et al. 2012, Nature: Ocean oxygenation in the wake of the Marinoan glaciation",
+    "url": "https://www.nature.com/articles/nature11445"
+   },
+   {
+    "title": "Wikipedia: Ediacaran biota",
+    "url": "https://en.wikipedia.org/wiki/Ediacaran_biota"
+   },
+   {
+    "title": "Wikipedia: Gondwana",
+    "url": "https://en.wikipedia.org/wiki/Gondwana"
+   },
+   {
+    "title": "Wikipedia: Pannotia",
+    "url": "https://en.wikipedia.org/wiki/Pannotia"
+   },
+   {
+    "title": "Wikipedia: Tidal acceleration",
+    "url": "https://en.wikipedia.org/wiki/Tidal_acceleration"
+   }
+  ]
+ },
+ {
+  "id": "phanerozoic",
+  "name": "Phanerozoic",
+  "rank": "eon",
+  "parent": null,
+  "from": 538.8,
+  "to": 0,
+  "color": "#9AD9DD",
+  "tagline": "The eon of visible life",
+  "world": "The present eon, whose name means 'visible life'. Animals with shells and skeletons fill the seas, life spreads onto the land, and the continents gather into the supercontinent Pangaea and then break apart towards today's map. Five mass extinctions reshape the living world. It is divided into three eras: the Paleozoic, the Mesozoic and the Cenozoic.",
+  "climate": "Swings between warm 'greenhouse' and cold 'icehouse' states; global average temperature has ranged from about 11 to 36 degrees Celsius over the last 485 million years.",
+  "life": "From the Cambrian explosion of animal groups to forests, insects, reptiles, dinosaurs, mammals and, at the very end, people.",
+  "changes": [],
+  "stats": {
+   "dayHours": null,
+   "o2Percent": null,
+   "co2ppm": null,
+   "seaLevelM": null,
+   "tempC": null
+  },
+  "evidence": "fossil",
+  "evidenceNote": "From this eon onward rocks contain abundant fossils with hard parts, which, together with dated volcanic ash, let geologists divide time finely; see the periods for figures.",
+  "sources": [
+   {
+    "title": "International Commission on Stratigraphy: International Chronostratigraphic Chart, v2026/06",
+    "url": "https://stratigraphy.org/chart"
+   },
+   {
+    "title": "Wikipedia: Phanerozoic",
+    "url": "https://en.wikipedia.org/wiki/Phanerozoic"
+   },
+   {
+    "title": "Judd et al. 2024, Science: A 485-million-year history of Earth's surface temperature (accepted manuscript, NSF PAR)",
+    "url": "https://par.nsf.gov/servlets/purl/10587582"
+   },
+   {
+    "title": "USGS: This Dynamic Earth, Historical perspective",
+    "url": "https://pubs.usgs.gov/gip/dynamic/historical.html"
+   }
+  ]
+ },
+ {
+  "id": "paleozoic",
+  "name": "Paleozoic",
+  "rank": "era",
+  "parent": "phanerozoic",
+  "from": 538.8,
+  "to": 251.902,
+  "color": "#99C08D",
+  "tagline": "From a burst of sea life to Pangaea",
+  "world": "The era began with most land in the south as Gondwana, and smaller continents (Laurentia, Baltica, Siberia) scattered in warm latitudes. One by one the oceans between them closed, raising the Caledonian, Appalachian, Variscan and Ural mountains, until nearly all land was joined in Pangaea. Life left the sea, forests spread, and the era ended with the largest extinction known.",
+  "climate": "Mostly warm with high seas, broken by two ice ages: a short one at the end of the Ordovician and a long one in the Carboniferous and Permian.",
+  "life": "Animal groups appear in the Cambrian; fishes, land plants, insects, amphibians and reptiles follow; about 81 percent of marine species die out at the end.",
+  "changes": [],
+  "stats": {
+   "dayHours": null,
+   "o2Percent": null,
+   "co2ppm": null,
+   "seaLevelM": null,
+   "tempC": null
+  },
+  "evidence": "fossil",
+  "evidenceNote": "Fossils in layered rocks, tied to dated volcanic ash beds, give the order and timing of events; see the six periods inside it for figures.",
+  "sources": [
+   {
+    "title": "International Commission on Stratigraphy: International Chronostratigraphic Chart, v2026/06",
+    "url": "https://stratigraphy.org/chart"
+   },
+   {
+    "title": "Wikipedia: Paleozoic",
+    "url": "https://en.wikipedia.org/wiki/Paleozoic"
+   },
+   {
+    "title": "British Geological Survey: Geological timechart",
+    "url": "https://www.bgs.ac.uk/discovering-geology/fossils-and-geological-time/geological-timechart/"
+   },
+   {
+    "title": "Haq & Schutter 2008, Science: A chronology of Paleozoic sea-level changes",
+    "url": "https://doi.org/10.1126/science.1161648"
+   },
+   {
+    "title": "Judd et al. 2024, Science: A 485-million-year history of Earth's surface temperature (accepted manuscript, NSF PAR)",
+    "url": "https://par.nsf.gov/servlets/purl/10587582"
+   }
+  ]
+ },
+ {
+  "id": "cambrian",
+  "name": "Cambrian",
+  "rank": "period",
+  "parent": "paleozoic",
+  "from": 538.8,
+  "to": 486.85,
+  "color": "#7FA056",
+  "tagline": "Animal life explodes in the seas",
+  "world": "Most land lay south of the equator. Gondwana (today's Africa, South America, Antarctica, India and Australia) was the giant, stretching from the far south to beyond the equator. Laurentia (North America) lay across the equator, with Siberia and Baltica (northern Europe) as separate continents and the Iapetus Ocean opening between them. Sea level rose through the period and shallow seas flooded the edges and interiors of the continents.",
+  "climate": "Warm, with no significant ice: global average temperature was probably 23 to 25 degrees Celsius for most of the period. Sea level rose from near today's to about 90 metres higher. Oxygen was lower than now, perhaps 2 to 11 percent of the air.",
+  "life": "Within about 13 to 25 million years most major animal groups appear in the fossil record: arthropods such as trilobites, molluscs, worms, echinoderms and the first fish-like vertebrates. Shells, eyes, hunting and deep burrowing become common. Chengjiang in China and the Burgess Shale in Canada preserve soft bodies in fine detail. The land was bare apart from microbes.",
+  "changes": [
+   {
+    "ma": 538.8,
+    "title": "Complex burrows mark the start",
+    "text": "The first branching burrows, called Treptichnus pedum, define the base of the Cambrian at Fortune Head, Newfoundland."
+   },
+   {
+    "ma": 521,
+    "title": "Trilobites appear",
+    "text": "These armoured arthropods become some of the most common fossils of the Paleozoic and last almost 270 million years."
+   },
+   {
+    "ma": 518,
+    "title": "Chengjiang: the first fish-like animals",
+    "text": "Fine mudstones in Yunnan, China, preserve soft-bodied animals including Haikouichthys, one of the earliest known vertebrates."
+   },
+   {
+    "ma": 508,
+    "title": "The Burgess Shale is buried",
+    "text": "Mud buries a rich sea-floor community in what is now British Columbia, preserving soft-bodied animals as dark films."
+   },
+   {
+    "ma": 497,
+    "title": "A new wave of diversity begins",
+    "text": "By one detailed count, the long build-up of sea life called the Great Ordovician Biodiversification starts about now."
+   }
+  ],
+  "stats": {
+   "dayHours": null,
+   "o2Percent": 6,
+   "co2ppm": null,
+   "seaLevelM": 50,
+   "tempC": 24
+  },
+  "evidence": "fossil",
+  "evidenceNote": "Fossils with hard parts, plus rare sites that kept soft bodies, record the burst of animal life; temperature, sea-level and oxygen figures come from rock chemistry and models and are approximate.",
+  "sources": [
+   {
+    "title": "International Commission on Stratigraphy: International Chronostratigraphic Chart, v2026/06",
+    "url": "https://stratigraphy.org/chart"
+   },
+   {
+    "title": "UC Museum of Paleontology: The Cambrian Period",
+    "url": "https://ucmp.berkeley.edu/cambrian/cambrian.php"
+   },
+   {
+    "title": "Wikipedia: Cambrian",
+    "url": "https://en.wikipedia.org/wiki/Cambrian"
+   },
+   {
+    "title": "Wikipedia: Cambrian explosion",
+    "url": "https://en.wikipedia.org/wiki/Cambrian_explosion"
+   },
+   {
+    "title": "Shu et al. 1999, Nature: Lower Cambrian vertebrates from south China",
+    "url": "https://www.nature.com/articles/46965"
+   },
+   {
+    "title": "Krause et al. 2018, Nature Communications: Stepwise oxygenation of the Paleozoic atmosphere",
+    "url": "https://www.nature.com/articles/s41467-018-06383-y"
+   },
+   {
+    "title": "Haq & Schutter 2008, Science: A chronology of Paleozoic sea-level changes",
+    "url": "https://doi.org/10.1126/science.1161648"
+   },
+   {
+    "title": "British Geological Survey: Geological timechart",
+    "url": "https://www.bgs.ac.uk/discovering-geology/fossils-and-geological-time/geological-timechart/"
+   }
+  ]
+ },
+ {
+  "id": "ordovician",
+  "name": "Ordovician",
+  "rank": "period",
+  "parent": "paleozoic",
+  "from": 486.85,
+  "to": 443.1,
+  "color": "#009270",
+  "tagline": "Seas brim with life, then ice strikes",
+  "world": "Gondwana drifted over the South Pole. Laurentia lay across the equator, at first almost entirely under shallow sea. Baltica and the small continent Avalonia (which included England and Wales) moved north towards it, narrowing the Iapetus Ocean. A highland rose along Laurentia's eastern edge, the first stage of the Appalachians. North of the tropics the globe was almost all ocean.",
+  "climate": "Hot for most of the period, with a global average near 30 degrees Celsius, carbon dioxide several times today's level and seas about 200 metres higher than now. Then came cooling, and at the very end an ice sheet spread across Gondwana and sea level fell sharply.",
+  "life": "The Great Ordovician Biodiversification multiplied the variety of sea life several times over: corals, bryozoans, brachiopods, sea lilies, nautiloids, graptolites and jawless armoured fishes. Spores show that small moss-like plants had reached the land by about 470 million years ago. The period closed with the first of the five great mass extinctions.",
+  "changes": [
+   {
+    "ma": 480,
+    "title": "Sea life multiplies",
+    "text": "The Great Ordovician Biodiversification is under way, with new kinds of animals building reefs and filling open water."
+   },
+   {
+    "ma": 470,
+    "title": "Plants reach the land",
+    "text": "Spores like those of primitive land plants appear in rocks of this age, for example in Argentina."
+   },
+   {
+    "ma": 460,
+    "title": "Highlands rise on Laurentia's edge",
+    "text": "A highland rises along the eastern margin of Laurentia (the Taconic mountain building), where the Appalachians now stand, as the Iapetus Ocean narrows."
+   },
+   {
+    "ma": 455,
+    "title": "Seas reach their highest level",
+    "text": "Sea level peaks about 220 metres above today's, the highest of the whole Paleozoic."
+   },
+   {
+    "ma": 445,
+    "title": "Ice covers southern Gondwana",
+    "text": "In the Hirnantian age an ice sheet spreads over the polar parts of Gondwana, including what is now the Sahara, and the sea falls."
+   },
+   {
+    "ma": 444,
+    "title": "The Late Ordovician mass extinction",
+    "text": "In two pulses, as the ice grows and then melts, about 85 percent of marine species die out."
+   }
+  ],
+  "stats": {
+   "dayHours": null,
+   "o2Percent": 8,
+   "co2ppm": 2100,
+   "seaLevelM": 200,
+   "tempC": 30
+  },
+  "evidence": "fossil",
+  "evidenceNote": "Fossils date the rocks and record the extinction; temperature and carbon dioxide are period averages from a 2024 reconstruction, and the sea-level and oxygen figures are approximate (oxygen especially so).",
+  "sources": [
+   {
+    "title": "International Commission on Stratigraphy: International Chronostratigraphic Chart, v2026/06",
+    "url": "https://stratigraphy.org/chart"
+   },
+   {
+    "title": "UC Museum of Paleontology: The Ordovician Period",
+    "url": "https://ucmp.berkeley.edu/ordovician/ordovician.php"
+   },
+   {
+    "title": "PhanDA data release (Judd et al. 2024): global mean temperature and CO2 by stage",
+    "url": "https://github.com/EJJudd/PhanDA"
+   },
+   {
+    "title": "Judd et al. 2024, Science: A 485-million-year history of Earth's surface temperature (accepted manuscript, NSF PAR)",
+    "url": "https://par.nsf.gov/servlets/purl/10587582"
+   },
+   {
+    "title": "Haq & Schutter 2008, Science: A chronology of Paleozoic sea-level changes",
+    "url": "https://doi.org/10.1126/science.1161648"
+   },
+   {
+    "title": "Krause et al. 2018, Nature Communications: Stepwise oxygenation of the Paleozoic atmosphere",
+    "url": "https://www.nature.com/articles/s41467-018-06383-y"
+   },
+   {
+    "title": "Wikipedia: Ordovician",
+    "url": "https://en.wikipedia.org/wiki/Ordovician"
+   },
+   {
+    "title": "Wikipedia: Late Ordovician mass extinction",
+    "url": "https://en.wikipedia.org/wiki/Late_Ordovician_mass_extinction"
+   }
+  ]
+ },
+ {
+  "id": "silurian",
+  "name": "Silurian",
+  "rank": "period",
+  "parent": "paleozoic",
+  "from": 443.1,
+  "to": 419.62,
+  "color": "#B3E1B6",
+  "tagline": "Reefs recover and life edges onto land",
+  "world": "The Iapetus Ocean closed. Baltica and Avalonia collided with Laurentia to begin a larger northern continent, Laurussia (also called Euramerica), raising the Caledonian mountains across what are now Scandinavia, Scotland, Greenland and eastern North America. Gondwana, with South America and Africa over the South Pole, filled the far south. The continents lay low and the sea stood high.",
+  "climate": "Warmer and steadier once the ice had melted, though with sharp swings: the global average was about 25 degrees Celsius. Seas stood roughly 180 metres above today's. Oxygen was climbing towards modern levels.",
+  "life": "Coral reefs spread widely. Fishes with jaws appeared beside the jawless kinds, among them some of the first bony fishes. On land, the first plants with water-carrying stems, such as Cooksonia, stood only a few centimetres tall, and millipede-like animals, among the oldest known land animals, lived among them.",
+  "changes": [
+   {
+    "ma": 443,
+    "title": "Ice melts and the seas flood back",
+    "text": "Sea level rises from its ice-age low through the first half of the period."
+   },
+   {
+    "ma": 430,
+    "title": "Cooksonia, the first stemmed plants",
+    "text": "The oldest known plants with water-carrying tissue in their stems appear in the middle of the Silurian."
+   },
+   {
+    "ma": 425.6,
+    "title": "One of the oldest bony fishes",
+    "text": "Guiyu, found in Yunnan, China, is one of the earliest bony fishes known from a nearly complete skeleton."
+   },
+   {
+    "ma": 425,
+    "title": "The Caledonian collision peaks",
+    "text": "Baltica and Laurentia finally collide between about 425 and 415 million years ago, at the height of the Caledonian mountain building."
+   },
+   {
+    "ma": 420,
+    "title": "The first wildfires",
+    "text": "Fossil charcoal appears in rocks from about 419 million years ago, showing there was now enough oxygen, and enough plant fuel, for fire."
+   }
+  ],
+  "stats": {
+   "dayHours": null,
+   "o2Percent": 15,
+   "co2ppm": 800,
+   "seaLevelM": 180,
+   "tempC": 25
+  },
+  "evidence": "fossil",
+  "evidenceNote": "Reef, fish and early land-plant fossils date and describe the period; temperature and carbon dioxide are period averages from a 2024 reconstruction, and the oxygen figure is a rough reading of a model, so treat it as approximate.",
+  "sources": [
+   {
+    "title": "International Commission on Stratigraphy: International Chronostratigraphic Chart, v2026/06",
+    "url": "https://stratigraphy.org/chart"
+   },
+   {
+    "title": "UC Museum of Paleontology: The Silurian Period",
+    "url": "https://ucmp.berkeley.edu/silurian/silurian.php"
+   },
+   {
+    "title": "PhanDA data release (Judd et al. 2024): global mean temperature and CO2 by stage",
+    "url": "https://github.com/EJJudd/PhanDA"
+   },
+   {
+    "title": "Haq & Schutter 2008, Science: A chronology of Paleozoic sea-level changes",
+    "url": "https://doi.org/10.1126/science.1161648"
+   },
+   {
+    "title": "Krause et al. 2018, Nature Communications: Stepwise oxygenation of the Paleozoic atmosphere",
+    "url": "https://www.nature.com/articles/s41467-018-06383-y"
+   },
+   {
+    "title": "Wikipedia: Silurian",
+    "url": "https://en.wikipedia.org/wiki/Silurian"
+   },
+   {
+    "title": "Wikipedia: Caledonian orogeny",
+    "url": "https://en.wikipedia.org/wiki/Caledonian_orogeny"
+   },
+   {
+    "title": "Wikipedia: Cooksonia",
+    "url": "https://en.wikipedia.org/wiki/Cooksonia"
+   }
+  ]
+ },
+ {
+  "id": "devonian",
+  "name": "Devonian",
+  "rank": "period",
+  "parent": "paleozoic",
+  "from": 419.62,
+  "to": 358.86,
+  "color": "#CB8C37",
+  "tagline": "Age of Fishes and the first forests",
+  "world": "Two great landmasses faced each other: Laurussia (Euramerica) near the equator, where the Old Red Sandstone was laid down, and Gondwana to the south, with Siberia to the north. The Rheic Ocean between them was closing, starting the collisions that would build Pangaea. The Acadian mountain building raised the northern Appalachians, and the Variscan belt began to form in Europe.",
+  "climate": "Warm, with a global average of about 26 degrees Celsius. Carbon dioxide fell from roughly 2,000 to under 1,000 parts per million as forests spread. Sea level was high, near 190 metres above today's, and slowly falling. The period ended with cooling.",
+  "life": "Fishes diversified hugely: armoured placoderms, sharks, ray-finned and lobe-finned fishes. Plants grew from ankle-high stems into the first trees and forests, about 385 million years ago, and evolved seeds. Early insects, mites and spider relatives lived among them. Lobe-finned fishes gave rise to four-limbed animals (tetrapods). Two extinction crises near the end destroyed the great reefs.",
+  "changes": [
+   {
+    "ma": 410,
+    "title": "The Rhynie chert",
+    "text": "Hot-spring water in what is now Scotland turns an early land community of plants, fungi and tiny animals to stone."
+   },
+   {
+    "ma": 395,
+    "title": "Footprints before bones?",
+    "text": "Trackways in Poland almost 400 million years old suggest four-limbed animals were walking tidal flats about 18 million years before the oldest tetrapod bones."
+   },
+   {
+    "ma": 385,
+    "title": "The first forests",
+    "text": "Fossil stumps at Gilboa, New York, are the remains of one of the earliest known forests."
+   },
+   {
+    "ma": 375,
+    "title": "Tiktaalik",
+    "text": "A lobe-finned fish from Arctic Canada has a neck and wrist-like fin bones, a step between fishes and tetrapods."
+   },
+   {
+    "ma": 372,
+    "title": "The Kellwasser extinction",
+    "text": "Oxygen-starved seas kill the great reefs and perhaps 40 percent of marine species."
+   },
+   {
+    "ma": 365,
+    "title": "Tetrapods with fingers and toes",
+    "text": "Acanthostega, found in Greenland, has four limbs with digits but still lives mainly in water."
+   },
+   {
+    "ma": 359,
+    "title": "The Hangenberg extinction",
+    "text": "A second crisis at the very end of the period wipes out the armoured placoderm fishes."
+   }
+  ],
+  "stats": {
+   "dayHours": 22,
+   "o2Percent": 17,
+   "co2ppm": 1300,
+   "seaLevelM": 170,
+   "tempC": 26
+  },
+  "evidence": "fossil",
+  "evidenceNote": "Fossils record the fishes, forests and first tetrapods; daily growth lines in fossil corals show a year of about 400 days (a day of about 22 hours); the temperature, carbon dioxide, sea-level and oxygen figures are approximate.",
+  "sources": [
+   {
+    "title": "International Commission on Stratigraphy: International Chronostratigraphic Chart, v2026/06",
+    "url": "https://stratigraphy.org/chart"
+   },
+   {
+    "title": "UC Museum of Paleontology: The Devonian Period",
+    "url": "https://ucmp.berkeley.edu/devonian/devonian.php"
+   },
+   {
+    "title": "PhanDA data release (Judd et al. 2024): global mean temperature and CO2 by stage",
+    "url": "https://github.com/EJJudd/PhanDA"
+   },
+   {
+    "title": "Haq & Schutter 2008, Science: A chronology of Paleozoic sea-level changes",
+    "url": "https://doi.org/10.1126/science.1161648"
+   },
+   {
+    "title": "Krause et al. 2018, Nature Communications: Stepwise oxygenation of the Paleozoic atmosphere",
+    "url": "https://www.nature.com/articles/s41467-018-06383-y"
+   },
+   {
+    "title": "Wikipedia: Devonian",
+    "url": "https://en.wikipedia.org/wiki/Devonian"
+   },
+   {
+    "title": "Wikipedia: Rugosa",
+    "url": "https://en.wikipedia.org/wiki/Rugosa"
+   },
+   {
+    "title": "Wikipedia: Late Devonian mass extinction",
+    "url": "https://en.wikipedia.org/wiki/Late_Devonian_mass_extinction"
+   }
+  ]
+ },
+ {
+  "id": "carboniferous",
+  "name": "Carboniferous",
+  "rank": "period",
+  "parent": "paleozoic",
+  "from": 358.86,
+  "to": 298.9,
+  "color": "#67A599",
+  "tagline": "Coal swamps, giant insects, Pangaea assembles",
+  "world": "Gondwana moved north and collided with Laurussia, closing the Rheic Ocean. From about 335 million years ago the two merged into the supercontinent Pangaea. The collision raised a mountain chain across its centre: the Variscan ranges of Europe and the Appalachians of North America. In the east, Siberia and Kazakhstania closed on Baltica and the Ural Mountains began to rise.",
+  "climate": "Cooling into a long ice age: the global average was about 16 degrees Celsius, with ice sheets growing and shrinking over southern Gondwana and sea level swinging with them. Carbon dioxide fell to about 400 parts per million, while oxygen rose to 25 to 30 percent of the air.",
+  "life": "Vast tropical swamp forests of giant clubmosses, horsetails and tree ferns laid down the peat that became much of the world's coal. Arthropods grew huge: the dragonfly-like Meganeura had a wingspan near 70 centimetres and the millipede Arthropleura reached about 2.6 metres. The first amniotes, animals that lay eggs on dry land, appeared; reptiles and the ancestors of mammals descend from them.",
+  "changes": [
+   {
+    "ma": 335,
+    "title": "Pangaea begins to assemble",
+    "text": "Gondwana and Laurussia meet, joining most of the world's land into one mass."
+   },
+   {
+    "ma": 330,
+    "title": "The Late Paleozoic ice age sets in",
+    "text": "Between about 335 and 330 million years ago ice sheets start to spread across southern Gondwana."
+   },
+   {
+    "ma": 325,
+    "title": "The Appalachians are pushed up",
+    "text": "Africa, as part of Gondwana, collides with North America in the Alleghanian mountain building, which lasts until about 260 million years ago."
+   },
+   {
+    "ma": 315,
+    "title": "Hylonomus, the earliest known reptile",
+    "text": "A small lizard-like animal is preserved inside hollow tree stumps at Joggins, Nova Scotia."
+   },
+   {
+    "ma": 309,
+    "title": "Mazon Creek",
+    "text": "Ironstone nodules in Illinois preserve the plants and soft-bodied animals of a coal-swamp delta."
+   },
+   {
+    "ma": 305,
+    "title": "The rainforests collapse",
+    "text": "The great coal forests of the tropics break up into isolated patches, causing a minor extinction among plants and animals."
+   },
+   {
+    "ma": 300,
+    "title": "Giant insects fly",
+    "text": "Meganeura, a dragonfly relative from the coal forests of France, has wings 32 centimetres long."
+   }
+  ],
+  "stats": {
+   "dayHours": null,
+   "o2Percent": 25,
+   "co2ppm": 400,
+   "seaLevelM": 20,
+   "tempC": 16
+  },
+  "evidence": "fossil",
+  "evidenceNote": "Coal seams and their fossils record the forests, and glacial deposits record the ice; temperature and carbon dioxide are period averages from a 2024 reconstruction, and the oxygen and sea-level figures are approximate.",
+  "sources": [
+   {
+    "title": "International Commission on Stratigraphy: International Chronostratigraphic Chart, v2026/06",
+    "url": "https://stratigraphy.org/chart"
+   },
+   {
+    "title": "UC Museum of Paleontology: The Carboniferous Period",
+    "url": "https://ucmp.berkeley.edu/carboniferous/carboniferous.php"
+   },
+   {
+    "title": "PhanDA data release (Judd et al. 2024): global mean temperature and CO2 by stage",
+    "url": "https://github.com/EJJudd/PhanDA"
+   },
+   {
+    "title": "Haq & Schutter 2008, Science: A chronology of Paleozoic sea-level changes",
+    "url": "https://doi.org/10.1126/science.1161648"
+   },
+   {
+    "title": "Krause et al. 2018, Nature Communications: Stepwise oxygenation of the Paleozoic atmosphere",
+    "url": "https://www.nature.com/articles/s41467-018-06383-y"
+   },
+   {
+    "title": "Wikipedia: Carboniferous",
+    "url": "https://en.wikipedia.org/wiki/Carboniferous"
+   },
+   {
+    "title": "Wikipedia: Pangaea",
+    "url": "https://en.wikipedia.org/wiki/Pangaea"
+   },
+   {
+    "title": "Wikipedia: Late Paleozoic icehouse",
+    "url": "https://en.wikipedia.org/wiki/Late_Paleozoic_icehouse"
+   }
+  ]
+ },
+ {
+  "id": "permian",
+  "name": "Permian",
+  "rank": "period",
+  "parent": "paleozoic",
+  "from": 298.9,
+  "to": 251.902,
+  "color": "#F04028",
+  "tagline": "One supercontinent, then the Great Dying",
+  "world": "Nearly all land was joined in Pangaea, a C-shaped supercontinent reaching from pole to pole, wrapped around the Tethys sea and surrounded by the world ocean Panthalassa. Mountain chains from the Appalachians to the Urals crossed it. Only parts of Asia remained separate. At the very end, huge eruptions in Siberia flooded millions of square kilometres with lava.",
+  "climate": "The southern ice sheets shrank and Pangaea's vast interior grew dry, with strong seasons. The global average was about 19 degrees Celsius until the very end, when the Siberian eruptions drove rapid warming of roughly 10 degrees. Sea level fell to its lowest of the era.",
+  "life": "Conifers and other seed plants replaced many swamp trees. Synapsids, the lineage leading to mammals, ruled the land: first sail-backed Dimetrodon, then the more mammal-like therapsids. Reptiles diversified and the first beetles appeared. At the end, the worst extinction on record killed about 81 percent of marine species and 70 percent of land vertebrate species.",
+  "changes": [
+   {
+    "ma": 294,
+    "title": "Dimetrodon, a sail-backed hunter",
+    "text": "This relative of mammals, not a dinosaur, lives from about 294 to 271 million years ago in what is now North America and Europe."
+   },
+   {
+    "ma": 290,
+    "title": "The southern ice sheets shrink",
+    "text": "From about 290 million years ago the ice retreats and the long ice age eases."
+   },
+   {
+    "ma": 272,
+    "title": "Therapsids appear",
+    "text": "More mammal-like synapsids appear around 275 to 272 million years ago and soon dominate the land."
+   },
+   {
+    "ma": 259,
+    "title": "The Capitanian extinction",
+    "text": "Eruptions of the Emeishan lavas in China coincide with an extinction on land and in the sea; how severe it was is debated."
+   },
+   {
+    "ma": 252,
+    "title": "The Siberian Traps erupt",
+    "text": "One of the largest volcanic outpourings of the last 500 million years begins in Siberia."
+   },
+   {
+    "ma": 251.94,
+    "title": "The end-Permian mass extinction",
+    "text": "Within about 60,000 years most species in the sea die out. It is the largest extinction known."
+   }
+  ],
+  "stats": {
+   "dayHours": null,
+   "o2Percent": 27,
+   "co2ppm": 570,
+   "seaLevelM": null,
+   "tempC": 19
+  },
+  "evidence": "fossil",
+  "evidenceNote": "Fossils and precisely dated ash beds record the period and its catastrophic end; temperature and carbon dioxide are period averages from a 2024 reconstruction, and the oxygen figure is approximate.",
+  "sources": [
+   {
+    "title": "International Commission on Stratigraphy: International Chronostratigraphic Chart, v2026/06",
+    "url": "https://stratigraphy.org/chart"
+   },
+   {
+    "title": "UC Museum of Paleontology: The Permian Period",
+    "url": "https://ucmp.berkeley.edu/permian/permian.php"
+   },
+   {
+    "title": "PhanDA data release (Judd et al. 2024): global mean temperature and CO2 by stage",
+    "url": "https://github.com/EJJudd/PhanDA"
+   },
+   {
+    "title": "Krause et al. 2018, Nature Communications: Stepwise oxygenation of the Paleozoic atmosphere",
+    "url": "https://www.nature.com/articles/s41467-018-06383-y"
+   },
+   {
+    "title": "Burgess, Bowring & Shen 2014, PNAS: High-precision timeline for Earth's most severe extinction",
+    "url": "https://doi.org/10.1073/pnas.1317692111"
+   },
+   {
+    "title": "Wikipedia: Permian",
+    "url": "https://en.wikipedia.org/wiki/Permian"
+   },
+   {
+    "title": "Wikipedia: Permian-Triassic extinction event",
+    "url": "https://en.wikipedia.org/wiki/Permian%E2%80%93Triassic_extinction_event"
+   },
+   {
+    "title": "Wikipedia: Dimetrodon",
+    "url": "https://en.wikipedia.org/wiki/Dimetrodon"
+   }
+  ]
+ }
+]

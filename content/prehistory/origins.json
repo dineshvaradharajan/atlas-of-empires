@@ -1,0 +1,3988 @@
+[
+ {
+  "id": "first-life",
+  "name": "First life",
+  "sci": "Last universal common ancestor (LUCA) and earlier",
+  "group": "microbes",
+  "parent": null,
+  "fossilMa": 3480,
+  "claimMa": 4280,
+  "clockMa": [
+   4090,
+   4330
+  ],
+  "extinctMa": null,
+  "peakMa": null,
+  "oldest": {
+   "name": "Stromatolites and hot-spring microbial deposits of the Dresser Formation",
+   "place": "Pilbara, Western Australia",
+   "lonlat": [
+    119.43,
+    -21.15
+   ]
+  },
+  "dateLabel": "c. 3.5 billion years ago",
+  "evidence": "disputed",
+  "evidenceNote": "Layered mounds built by microbes 3.48 billion years ago are widely accepted; older claims from Greenland (3.7 billion), Quebec (3.77 to 4.28 billion) and a 4.1-billion-year-old Australian crystal are argued over, because heat and pressure can make lifeless rock look alive.",
+  "text": "All living things share one ancestor, a single-celled microbe that scientists call LUCA. The oldest fossils everyone accepts are mats of microbes preserved in Australian rocks 3.48 billion years old. Gene studies suggest LUCA lived far earlier, about 4.2 billion years ago, soon after the oceans formed. Life then stayed microscopic for most of Earth's history.",
+  "sources": [
+   {
+    "title": "Wikipedia: Earliest known life forms",
+    "url": "https://en.wikipedia.org/wiki/Earliest_known_life_forms"
+   },
+   {
+    "title": "Nature Communications: Earliest signs of life on land preserved in ca. 3.5 Ga hot spring deposits (Djokic et al. 2017)",
+    "url": "https://www.nature.com/articles/ncomms15263"
+   },
+   {
+    "title": "Nature: Rapid emergence of life shown by 3,700-million-year-old microbial structures (Nutman et al. 2016)",
+    "url": "https://www.nature.com/articles/nature19355"
+   },
+   {
+    "title": "Nature: Reassessing evidence of life in 3,700-million-year-old rocks of Greenland (Allwood et al. 2018)",
+    "url": "https://www.nature.com/articles/s41586-018-0610-4"
+   },
+   {
+    "title": "Nature Ecology & Evolution: The nature of the last universal common ancestor (Moody et al. 2024)",
+    "url": "https://www.nature.com/articles/s41559-024-02461-1"
+   }
+  ]
+ },
+ {
+  "id": "bacteria",
+  "name": "Bacteria",
+  "sci": "Bacteria",
+  "group": "microbes",
+  "parent": "first-life",
+  "fossilMa": 3480,
+  "claimMa": null,
+  "clockMa": [
+   4090,
+   4330
+  ],
+  "extinctMa": null,
+  "peakMa": null,
+  "oldest": {
+   "name": "Stromatolites (microbial mats) of the Dresser Formation",
+   "place": "Pilbara, Western Australia",
+   "lonlat": [
+    119.43,
+    -21.15
+   ]
+  },
+  "dateLabel": "c. 3.5 billion years ago",
+  "evidence": "fossil",
+  "evidenceNote": "The oldest fossil mats were built by microbes that looked like bacteria, though shape alone cannot tell bacteria from archaea; gene studies put the split between the two lines at about 4.2 billion years ago.",
+  "text": "Bacteria are tiny single cells without a nucleus, and they were among the first living things. For over a billion years they and the archaea had the planet to themselves. Bacteria invented most of life's chemistry, including photosynthesis, and they still outnumber every other kind of organism. Every plant and animal depends on them.",
+  "sources": [
+   {
+    "title": "Wikipedia: Bacteria",
+    "url": "https://en.wikipedia.org/wiki/Bacteria"
+   },
+   {
+    "title": "Wikipedia: Earliest known life forms",
+    "url": "https://en.wikipedia.org/wiki/Earliest_known_life_forms"
+   },
+   {
+    "title": "Nature Communications: Earliest signs of life on land preserved in ca. 3.5 Ga hot spring deposits (Djokic et al. 2017)",
+    "url": "https://www.nature.com/articles/ncomms15263"
+   },
+   {
+    "title": "Nature Ecology & Evolution: Integrated genomic and fossil evidence illuminates life's early evolution (Betts et al. 2018)",
+    "url": "https://www.nature.com/articles/s41559-018-0644-x"
+   },
+   {
+    "title": "Nature Ecology & Evolution: The nature of the last universal common ancestor (Moody et al. 2024)",
+    "url": "https://www.nature.com/articles/s41559-024-02461-1"
+   }
+  ]
+ },
+ {
+  "id": "archaea",
+  "name": "Archaea",
+  "sci": "Archaea",
+  "group": "microbes",
+  "parent": "first-life",
+  "fossilMa": 3480,
+  "claimMa": null,
+  "clockMa": [
+   4090,
+   4330
+  ],
+  "extinctMa": null,
+  "peakMa": null,
+  "oldest": {
+   "name": "Methane made by microbes, trapped in tiny fluid bubbles in hydrothermal rocks",
+   "place": "Pilbara, Western Australia",
+   "lonlat": [
+    119.43,
+    -21.15
+   ]
+  },
+  "dateLabel": "c. 3.5 billion years ago",
+  "evidence": "geology",
+  "evidenceNote": "No archaeal body fossils can be recognised; the evidence is methane with a chemical fingerprint of microbes, sealed inside 3.5-billion-year-old Australian rock, and methane-making today is done only by archaea.",
+  "text": "Archaea look like bacteria but are built differently inside and form a separate branch of life. Many thrive in extreme places such as hot springs and salt lakes, and some make methane gas. They matter to our own story: the cells of animals, plants and fungi descend from an archaeon that took in a bacterium.",
+  "sources": [
+   {
+    "title": "Wikipedia: Archaea",
+    "url": "https://en.wikipedia.org/wiki/Archaea"
+   },
+   {
+    "title": "Nature: Evidence from fluid inclusions for microbial methanogenesis in the early Archaean era (Ueno et al. 2006)",
+    "url": "https://www.nature.com/articles/nature04584"
+   },
+   {
+    "title": "Nature Ecology & Evolution: Integrated genomic and fossil evidence illuminates life's early evolution (Betts et al. 2018)",
+    "url": "https://www.nature.com/articles/s41559-018-0644-x"
+   },
+   {
+    "title": "Nature Ecology & Evolution: The nature of the last universal common ancestor (Moody et al. 2024)",
+    "url": "https://www.nature.com/articles/s41559-024-02461-1"
+   }
+  ]
+ },
+ {
+  "id": "cyanobacteria",
+  "name": "Cyanobacteria (oxygen-making bacteria)",
+  "sci": "Cyanobacteria",
+  "group": "microbes",
+  "parent": "bacteria",
+  "fossilMa": 2400,
+  "claimMa": null,
+  "clockMa": [
+   2000,
+   2700
+  ],
+  "extinctMa": null,
+  "peakMa": null,
+  "oldest": {
+   "name": "Chemical signs of the first oxygen-rich air (Great Oxidation Event); oldest undisputed body fossil Eoentophysalis belcherensis, c. 2.0 to 1.85 billion years ago",
+   "place": "Belcher Islands, Hudson Bay, Canada",
+   "lonlat": [
+    -79.2,
+    56.2
+   ]
+  },
+  "dateLabel": "c. 2.4 billion years ago",
+  "evidence": "geology",
+  "evidenceNote": "Rocks show that oxygen first built up in the air about 2.4 billion years ago, which only oxygen-making bacteria could cause; the oldest fossils that are surely cyanobacteria are about 2.0 to 1.85 billion years old, and claims of 3.5-billion-year-old ones are not accepted by all.",
+  "text": "Cyanobacteria were the first living things to split water using sunlight and release oxygen. Over hundreds of millions of years their waste gas changed the air and the oceans, poisoning much older life but making animals possible later. The green parts of every plant cell descend from cyanobacteria swallowed by an ancient alga.",
+  "sources": [
+   {
+    "title": "Wikipedia: Cyanobacteria",
+    "url": "https://en.wikipedia.org/wiki/Cyanobacteria"
+   },
+   {
+    "title": "Wikipedia: Great Oxidation Event",
+    "url": "https://en.wikipedia.org/wiki/Great_Oxidation_Event"
+   },
+   {
+    "title": "Nature: Oldest thylakoids in fossil cells directly evidence oxygenic photosynthesis (Demoulin et al. 2024)",
+    "url": "https://www.nature.com/articles/s41586-023-06896-7"
+   },
+   {
+    "title": "Nature Ecology & Evolution: Integrated genomic and fossil evidence illuminates life's early evolution (Betts et al. 2018)",
+    "url": "https://www.nature.com/articles/s41559-018-0644-x"
+   }
+  ]
+ },
+ {
+  "id": "eukaryotes",
+  "name": "Cells with a nucleus (eukaryotes)",
+  "sci": "Eukaryota",
+  "group": "microbes",
+  "parent": "archaea",
+  "fossilMa": 1650,
+  "claimMa": 2100,
+  "clockMa": [
+   1230,
+   1840
+  ],
+  "extinctMa": null,
+  "peakMa": null,
+  "oldest": {
+   "name": "Tappania and other large, ornamented single-celled fossils",
+   "place": "Ruyang Group, North China",
+   "lonlat": [
+    112.5,
+    34.2
+   ]
+  },
+  "dateLabel": "c. 1.65 billion years ago",
+  "evidence": "disputed",
+  "evidenceNote": "Large, complex cell fossils about 1.65 billion years old are accepted as eukaryotes; older finds such as the 2.1-billion-year-old Gabon shapes and the coiled Grypania (1.87 billion) may be bacterial colonies or not fossils at all.",
+  "text": "Eukaryotes keep their DNA in a nucleus and have tiny power stations called mitochondria. They arose when an archaeon took a bacterium inside itself and the two became partners. Every animal, plant, fungus and alga is built from such cells. The oldest sure fossils come from China and Australia; simple many-celled forms followed quickly.",
+  "sources": [
+   {
+    "title": "Wikipedia: Eukaryote",
+    "url": "https://en.wikipedia.org/wiki/Eukaryote"
+   },
+   {
+    "title": "Science Advances: 1.63-billion-year-old multicellular eukaryotes from North China (Miao et al. 2024)",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10807817/"
+   },
+   {
+    "title": "Nature: Early fossil eukaryotes were benthic aerobes (2026)",
+    "url": "https://www.nature.com/articles/s41586-026-10533-4"
+   },
+   {
+    "title": "Nature: Large colonial organisms with coordinated growth in oxygenated environments 2.1 Gyr ago (El Albani et al. 2010)",
+    "url": "https://www.nature.com/articles/nature09166"
+   },
+   {
+    "title": "Nature Ecology & Evolution: Integrated genomic and fossil evidence illuminates life's early evolution (Betts et al. 2018)",
+    "url": "https://www.nature.com/articles/s41559-018-0644-x"
+   }
+  ]
+ },
+ {
+  "id": "red-algae",
+  "name": "Red algae",
+  "sci": "Rhodophyta",
+  "group": "algae-plants",
+  "parent": "eukaryotes",
+  "fossilMa": 1047,
+  "claimMa": 1600,
+  "clockMa": [
+   1160,
+   1450
+  ],
+  "extinctMa": null,
+  "peakMa": null,
+  "oldest": {
+   "name": "Bangiomorpha pubescens",
+   "place": "Somerset Island, Arctic Canada",
+   "lonlat": [
+    -93.5,
+    73.2
+   ]
+  },
+  "dateLabel": "c. 1.05 billion years ago",
+  "evidence": "disputed",
+  "evidenceNote": "Bangiomorpha, about 1.05 billion years old, looks so like a living red seaweed that it is widely accepted; Indian fossils 1.6 billion years old may be red algae too, but that reading is not yet agreed.",
+  "text": "Red algae are seaweeds, and Bangiomorpha is the oldest fossil that can be placed in a living group of complex organisms. It is also the oldest known organism with two sexes. Its threads of cells show that many-celled life and sexual reproduction were under way a billion years ago.",
+  "sources": [
+   {
+    "title": "Wikipedia: Bangiomorpha",
+    "url": "https://en.wikipedia.org/wiki/Bangiomorpha"
+   },
+   {
+    "title": "Wikipedia: Red algae",
+    "url": "https://en.wikipedia.org/wiki/Red_algae"
+   },
+   {
+    "title": "PLOS Biology: 1.6 billion-year-old crown-group red algae (Bengtson et al. 2017)",
+    "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.2000735"
+   },
+   {
+    "title": "TimeTree: divergence time of a red alga (Pyropia) and thale cress",
+    "url": "http://timetree.temple.edu/api/pairwise/2788/3702"
+   }
+  ]
+ },
+ {
+  "id": "green-algae",
+  "name": "Green algae",
+  "sci": "Chlorophyta and relatives (Viridiplantae)",
+  "group": "algae-plants",
+  "parent": "eukaryotes",
+  "fossilMa": 1000,
+  "claimMa": null,
+  "clockMa": [
+   860,
+   1090
+  ],
+  "extinctMa": null,
+  "peakMa": null,
+  "oldest": {
+   "name": "Proterocladus antiquus",
+   "place": "Nanfen Formation, Liaoning, China",
+   "lonlat": [
+    123.8,
+    41.1
+   ]
+  },
+  "dateLabel": "c. 1 billion years ago",
+  "evidence": "fossil",
+  "evidenceNote": "Tiny branching seaweed fossils from Chinese rocks one billion years old match living green algae; gene studies date the first split among green plants to roughly the same time.",
+  "text": "Green algae use the same green pigments as land plants, because land plants are their descendants. The tiny seaweed Proterocladus, a billion years old, already had branches and specialised cells. Green algae filled seas and fresh water for half a billion years before one line moved onto land and became the plants.",
+  "sources": [
+   {
+    "title": "Wikipedia: Proterocladus",
+    "url": "https://en.wikipedia.org/wiki/Proterocladus"
+   },
+   {
+    "title": "Wikipedia: Green algae",
+    "url": "https://en.wikipedia.org/wiki/Green_algae"
+   },
+   {
+    "title": "Nature Ecology & Evolution: A one-billion-year-old multicellular chlorophyte (Tang et al. 2020)",
+    "url": "https://www.nature.com/articles/s41559-020-1122-9"
+   },
+   {
+    "title": "TimeTree: divergence time of thale cress and the green alga Chlamydomonas",
+    "url": "http://timetree.temple.edu/api/pairwise/3702/3055"
+   }
+  ]
+ },
+ {
+  "id": "ediacaran-biota",
+  "name": "Ediacaran biota",
+  "sci": "Ediacaran macrobiota (rangeomorphs, dickinsoniomorphs and others)",
+  "group": "invertebrates",
+  "parent": "animals",
+  "fossilMa": 574,
+  "claimMa": null,
+  "clockMa": null,
+  "extinctMa": 539,
+  "peakMa": [
+   575,
+   539
+  ],
+  "oldest": {
+   "name": "Rangeomorph fronds such as Charnia",
+   "place": "Mistaken Point, Newfoundland, Canada",
+   "lonlat": [
+    -53.16,
+    46.63
+   ]
+  },
+  "dateLabel": "c. 574 million years ago",
+  "evidence": "fossil",
+  "evidenceNote": "Fossil beds dated by volcanic ash show large soft-bodied organisms from about 574 million years ago; they are older than the first proven animal because, for many of them, scientists still debate whether they were animals at all.",
+  "text": "The Ediacaran biota were the first large, complex living things: fronds, discs and quilted mats, from millimetres to metres across, lying on the sea floor with no mouths, shells or legs. Some were early animals, others remain a puzzle. Almost all vanished about 539 million years ago, as burrowing and hunting animals took over.",
+  "sources": [
+   {
+    "title": "Wikipedia: Ediacaran biota",
+    "url": "https://en.wikipedia.org/wiki/Ediacaran_biota"
+   },
+   {
+    "title": "Wikipedia: Mistaken Point",
+    "url": "https://en.wikipedia.org/wiki/Mistaken_Point"
+   },
+   {
+    "title": "Europe PMC record: Ancient steroids establish the Ediacaran fossil Dickinsonia as one of the earliest animals (Science 2018)",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1126/science.aat7228%22&resultType=core&format=json"
+   },
+   {
+    "title": "Nature Ecology & Evolution: A crown-group cnidarian from the Ediacaran of Charnwood Forest, UK (Dunn et al. 2022)",
+    "url": "https://www.nature.com/articles/s41559-022-01807-x"
+   }
+  ]
+ },
+ {
+  "id": "cnidarians",
+  "name": "Jellyfish, corals and relatives",
+  "sci": "Cnidaria",
+  "group": "invertebrates",
+  "parent": "animals",
+  "fossilMa": 560,
+  "claimMa": null,
+  "clockMa": [
+   631,
+   733
+  ],
+  "extinctMa": null,
+  "peakMa": null,
+  "oldest": {
+   "name": "Auroralumina attenboroughii",
+   "place": "Charnwood Forest, Leicestershire, England",
+   "lonlat": [
+    -1.25,
+    52.72
+   ]
+  },
+  "dateLabel": "c. 560 million years ago",
+  "evidence": "fossil",
+  "evidenceNote": "A fossil from England, dated to 557 to 562 million years ago, shows two tentacled polyps in a stiff skeleton and is the oldest animal that can be placed in a living group; gene studies put the group's origin at least 70 million years earlier.",
+  "text": "Cnidarians are simple animals with stinging cells and a single body opening: jellyfish, sea anemones and corals. Auroralumina, named in 2022 after David Attenborough, may be the oldest known animal predator. Much later, reef-building corals made some of the largest structures built by any living thing.",
+  "sources": [
+   {
+    "title": "Wikipedia: Auroralumina",
+    "url": "https://en.wikipedia.org/wiki/Auroralumina"
+   },
+   {
+    "title": "Wikipedia: Cnidaria",
+    "url": "https://en.wikipedia.org/wiki/Cnidaria"
+   },
+   {
+    "title": "Nature Ecology & Evolution: A crown-group cnidarian from the Ediacaran of Charnwood Forest, UK (Dunn et al. 2022)",
+    "url": "https://www.nature.com/articles/s41559-022-01807-x"
+   },
+   {
+    "title": "TimeTree: divergence time of humans and the sea anemone Nematostella",
+    "url": "http://timetree.temple.edu/api/pairwise/9606/45351"
+   }
+  ]
+ },
+ {
+  "id": "animals",
+  "name": "First animals",
+  "sci": "Metazoa",
+  "group": "invertebrates",
+  "parent": "eukaryotes",
+  "fossilMa": 558,
+  "claimMa": 890,
+  "clockMa": [
+   700,
+   800
+  ],
+  "extinctMa": null,
+  "peakMa": null,
+  "oldest": {
+   "name": "Dickinsonia (with preserved animal fats) and Kimberella",
+   "place": "White Sea coast, Russia",
+   "lonlat": [
+    39.7,
+    65.5
+   ]
+  },
+  "dateLabel": "c. 558 million years ago",
+  "evidence": "disputed",
+  "evidenceNote": "Dickinsonia fossils 558 million years old still hold cholesterol, a fat made by animals, which settles that they were animals; older claims, such as sponge-like textures in 890-million-year-old Canadian reefs and 'sponge' chemicals in rocks over 635 million years old, are disputed because algae or non-living processes might explain them.",
+  "text": "Animals are many-celled creatures that eat other living things. Genes suggest the first ones lived 700 to 800 million years ago, but they were tiny and soft and left almost no trace. The oldest fossils that are certainly animals are flat, quilted creatures and a slug-like grazer from the last stretch of the Ediacaran Period.",
+  "sources": [
+   {
+    "title": "Wikipedia: Animal",
+    "url": "https://en.wikipedia.org/wiki/Animal"
+   },
+   {
+    "title": "Wikipedia: Dickinsonia",
+    "url": "https://en.wikipedia.org/wiki/Dickinsonia"
+   },
+   {
+    "title": "Europe PMC record: Ancient steroids establish the Ediacaran fossil Dickinsonia as one of the earliest animals (Science 2018)",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1126/science.aat7228%22&resultType=core&format=json"
+   },
+   {
+    "title": "Nature Ecology & Evolution: Putative sponge biomarkers in unicellular Rhizaria question an early rise of animals (Nettersheim et al. 2019)",
+    "url": "https://www.nature.com/articles/s41559-019-0806-5"
+   },
+   {
+    "title": "Nature: Possible poriferan body fossils in early Neoproterozoic microbial reefs (Turner 2021)",
+    "url": "https://www.nature.com/articles/s41586-021-03773-z"
+   }
+  ]
+ },
+ {
+  "id": "bilaterians",
+  "name": "Animals with a head and tail (bilaterians)",
+  "sci": "Bilateria",
+  "group": "invertebrates",
+  "parent": "animals",
+  "fossilMa": 558,
+  "claimMa": null,
+  "clockMa": [
+   646,
+   797
+  ],
+  "extinctMa": null,
+  "peakMa": null,
+  "oldest": {
+   "name": "Kimberella quadrata; also Ikaria wariootia (South Australia, 560 to 551 million years ago)",
+   "place": "White Sea coast, Russia",
+   "lonlat": [
+    39.7,
+    65.5
+   ]
+  },
+  "dateLabel": "c. 558 million years ago",
+  "evidence": "fossil",
+  "evidenceNote": "Kimberella, a slug-like grazer with a front and a back, is found in Russian rocks 558 to 555 million years old, and the rice-grain-sized burrower Ikaria is of similar age; gene studies place the origin of the group 100 million years or more earlier.",
+  "text": "Most animals, from worms to whales, have a left and a right side, a front end with a mouth and a gut running through to the back. This body plan allowed animals to move with purpose, burrow and hunt. Within about 30 million years of these first fossils, nearly every major animal group had appeared.",
+  "sources": [
+   {
+    "title": "Wikipedia: Kimberella",
+    "url": "https://en.wikipedia.org/wiki/Kimberella"
+   },
+   {
+    "title": "Wikipedia: Ikaria",
+    "url": "https://en.wikipedia.org/wiki/Ikaria_wariootia"
+   },
+   {
+    "title": "PNAS: Discovery of the oldest bilaterian from the Ediacaran of South Australia (Evans et al. 2020)",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7149385/"
+   },
+   {
+    "title": "Nature Ecology & Evolution: Putative sponge biomarkers in unicellular Rhizaria question an early rise of animals (Nettersheim et al. 2019)",
+    "url": "https://www.nature.com/articles/s41559-019-0806-5"
+   },
+   {
+    "title": "TimeTree: divergence time of humans and fruit flies",
+    "url": "http://timetree.temple.edu/api/pairwise/9606/7227"
+   }
+  ]
+ },
+ {
+  "id": "sponges",
+  "name": "Sponges",
+  "sci": "Porifera",
+  "group": "invertebrates",
+  "parent": "animals",
+  "fossilMa": 535,
+  "claimMa": 890,
+  "clockMa": [
+   700,
+   800
+  ],
+  "extinctMa": null,
+  "peakMa": null,
+  "oldest": {
+   "name": "Glass-sponge spicules (tiny skeleton needles) of the early Cambrian",
+   "place": "Early Cambrian marine rocks",
+   "lonlat": null
+  },
+  "dateLabel": "c. 535 million years ago",
+  "evidence": "disputed",
+  "evidenceNote": "The oldest remains that are surely sponges are glassy needles about 535 million years old; a likely sponge about 545 million years old was described from China in 2024, and older claims (890-million-year-old reef textures; sponge-type chemicals older than 635 million years) are still argued over.",
+  "text": "Sponges are the simplest animals: bags of cells with no nerves or gut, filtering food from sea water. Genes suggest they were among the first animal branches, perhaps 700 to 800 million years ago, yet clear fossils are much younger, probably because early sponges had no hard parts. That gap is one of the big puzzles of early animal life.",
+  "sources": [
+   {
+    "title": "Wikipedia: Sponge",
+    "url": "https://en.wikipedia.org/wiki/Sponge"
+   },
+   {
+    "title": "Nature Ecology & Evolution: Putative sponge biomarkers in unicellular Rhizaria question an early rise of animals (Nettersheim et al. 2019)",
+    "url": "https://www.nature.com/articles/s41559-019-0806-5"
+   },
+   {
+    "title": "Nature: A late-Ediacaran crown-group sponge animal (Wang et al. 2024)",
+    "url": "https://www.nature.com/articles/s41586-024-07520-y"
+   },
+   {
+    "title": "Nature: Possible poriferan body fossils in early Neoproterozoic microbial reefs (Turner 2021)",
+    "url": "https://www.nature.com/articles/s41586-021-03773-z"
+   },
+   {
+    "title": "PNAS: Chemical characterization of C31 sterols from sponges and Neoproterozoic fossil sterane counterparts (2025)",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12541326/"
+   }
+  ]
+ },
+ {
+  "id": "arthropods",
+  "name": "Arthropods (jointed-legged animals)",
+  "sci": "Arthropoda",
+  "group": "invertebrates",
+  "parent": "bilaterians",
+  "fossilMa": 535,
+  "claimMa": null,
+  "clockMa": [
+   537,
+   582
+  ],
+  "extinctMa": null,
+  "peakMa": null,
+  "oldest": {
+   "name": "Rusophycus resting traces, dug by animals with jointed legs",
+   "place": "Earliest Cambrian sea-floor sediments on several continents",
+   "lonlat": null
+  },
+  "dateLabel": "c. 535 million years ago",
+  "evidence": "fossil",
+  "evidenceNote": "Scratch marks and resting hollows made by jointed legs appear in the earliest Cambrian rocks, somewhat before the first arthropod bodies (trilobites, about 521 million years ago) are preserved.",
+  "text": "Arthropods have a hard outer skeleton and jointed legs: insects, spiders, crabs, millipedes and the extinct trilobites. They appear early in the Cambrian explosion and quickly became the most varied animals in the sea. Today four out of five known animal species are arthropods.",
+  "sources": [
+   {
+    "title": "Wikipedia: Arthropod",
+    "url": "https://en.wikipedia.org/wiki/Arthropod"
+   },
+   {
+    "title": "Wikipedia: Rusophycus",
+    "url": "https://en.wikipedia.org/wiki/Rusophycus"
+   },
+   {
+    "title": "UC Museum of Paleontology: Fossil record of Arthropoda",
+    "url": "https://ucmp.berkeley.edu/arthropoda/arthropodafr.html"
+   },
+   {
+    "title": "TimeTree: divergence time of fruit flies and ticks",
+    "url": "http://timetree.temple.edu/api/pairwise/7227/6945"
+   }
+  ]
+ },
+ {
+  "id": "molluscs",
+  "name": "Molluscs (snails, clams and relatives)",
+  "sci": "Mollusca",
+  "group": "invertebrates",
+  "parent": "bilaterians",
+  "fossilMa": 535,
+  "claimMa": 558,
+  "clockMa": [
+   552,
+   613
+  ],
+  "extinctMa": null,
+  "peakMa": null,
+  "oldest": {
+   "name": "Helcionellids: tiny cap-shaped shells among the 'small shelly fossils'",
+   "place": "Early Cambrian marine rocks",
+   "lonlat": null
+  },
+  "dateLabel": "c. 535 million years ago",
+  "evidence": "disputed",
+  "evidenceNote": "Tiny shells about 535 million years old are the first fossils that can be placed on the mollusc line; the older, shell-less Kimberella (558 million years) grazed like a mollusc and may be an early relative, but scientists do not agree that it was one.",
+  "text": "Molluscs are soft-bodied animals that usually build a shell: snails, clams, and the squid and octopus. Their first shells were only a millimetre or two across. Molluscs became one of the most successful animal groups in the sea, and their shells make up a large share of the fossil record.",
+  "sources": [
+   {
+    "title": "Wikipedia: Mollusca",
+    "url": "https://en.wikipedia.org/wiki/Mollusca"
+   },
+   {
+    "title": "Wikipedia: Small shelly fauna",
+    "url": "https://en.wikipedia.org/wiki/Small_shelly_fauna"
+   },
+   {
+    "title": "Wikipedia: Kimberella",
+    "url": "https://en.wikipedia.org/wiki/Kimberella"
+   },
+   {
+    "title": "TimeTree: divergence time of octopus and the lamp shell Lingula",
+    "url": "http://timetree.temple.edu/api/pairwise/7574/37653"
+   }
+  ]
+ },
+ {
+  "id": "brachiopods",
+  "name": "Lamp shells (brachiopods)",
+  "sci": "Brachiopoda",
+  "group": "invertebrates",
+  "parent": "bilaterians",
+  "fossilMa": 530,
+  "claimMa": null,
+  "clockMa": [
+   552,
+   613
+  ],
+  "extinctMa": null,
+  "peakMa": [
+   485,
+   252
+  ],
+  "oldest": {
+   "name": "Early inarticulate (hingeless) brachiopods",
+   "place": "Early Cambrian marine rocks",
+   "lonlat": null
+  },
+  "dateLabel": "c. 530 million years ago",
+  "evidence": "fossil",
+  "evidenceNote": "Shells of simple lamp shells appear in early Cambrian rocks about 530 million years old; gene studies date their split from the mollusc line to 550 to 610 million years ago.",
+  "text": "Brachiopods look like clams but are built differently, with an upper and a lower shell and a feathery feeding organ. For 250 million years they carpeted sea floors and are among the commonest fossils of that time. Most were wiped out in the great extinction 252 million years ago; a few hundred species survive.",
+  "sources": [
+   {
+    "title": "Wikipedia: Brachiopod",
+    "url": "https://en.wikipedia.org/wiki/Brachiopod"
+   },
+   {
+    "title": "TimeTree: divergence time of octopus and the lamp shell Lingula",
+    "url": "http://timetree.temple.edu/api/pairwise/7574/37653"
+   }
+  ]
+ },
+ {
+  "id": "trilobites",
+  "name": "Trilobites",
+  "sci": "Trilobita",
+  "group": "invertebrates",
+  "parent": "arthropods",
+  "fossilMa": 521,
+  "claimMa": null,
+  "clockMa": null,
+  "extinctMa": 252,
+  "peakMa": [
+   510,
+   445
+  ],
+  "oldest": {
+   "name": "Profallotaspis jakutensis (other contenders: Fritzaspis, Hupetina)",
+   "place": "Siberia, Russia",
+   "lonlat": [
+    127.3,
+    61.1
+   ]
+  },
+  "dateLabel": "c. 521 million years ago",
+  "evidence": "fossil",
+  "evidenceNote": "Hard-shelled trilobites appear suddenly in rocks about 521 million years old in Siberia, North America, Morocco and Spain; the last ones died in the mass extinction 252 million years ago.",
+  "text": "Trilobites were armoured sea animals with many legs and, in most kinds, eyes built from crystal lenses. They were the first arthropods with hard shells, so they fossilised well: over 22,000 species have been described. They thrived for almost 270 million years before the largest of all extinctions finished them.",
+  "sources": [
+   {
+    "title": "Wikipedia: Trilobite",
+    "url": "https://en.wikipedia.org/wiki/Trilobite"
+   },
+   {
+    "title": "Wikipedia: Profallotaspis",
+    "url": "https://en.wikipedia.org/wiki/Profallotaspis"
+   },
+   {
+    "title": "UC Museum of Paleontology: Fossil record of the Trilobita",
+    "url": "https://ucmp.berkeley.edu/arthropoda/trilobita/trilobitafr.html"
+   }
+  ]
+ },
+ {
+  "id": "chordates",
+  "name": "Chordates (animals with a backbone or its forerunner)",
+  "sci": "Chordata",
+  "group": "fish",
+  "parent": "bilaterians",
+  "fossilMa": 518,
+  "claimMa": null,
+  "clockMa": [
+   591,
+   663
+  ],
+  "extinctMa": null,
+  "peakMa": null,
+  "oldest": {
+   "name": "Chengjiang chordates such as Yunnanozoon and the first fish-like animals",
+   "place": "Chengjiang, Yunnan, China",
+   "lonlat": [
+    102.98,
+    24.67
+   ]
+  },
+  "dateLabel": "c. 518 million years ago",
+  "evidence": "fossil",
+  "evidenceNote": "Soft-bodied animals with a stiffening rod along the back and blocks of muscle are preserved in Chinese mudstones 518 million years old; gene studies suggest the line began in the Ediacaran, 590 to 660 million years ago.",
+  "text": "Chordates have a flexible rod along the back, with a nerve cord above it and muscles in blocks on either side. In most, the rod is replaced by a backbone. The group includes every fish, amphibian, reptile, bird and mammal, as well as sea squirts and lancelets. The first were small, soft-bodied swimmers.",
+  "sources": [
+   {
+    "title": "Wikipedia: Chordate",
+    "url": "https://en.wikipedia.org/wiki/Chordate"
+   },
+   {
+    "title": "Wikipedia: Maotianshan Shales",
+    "url": "https://en.wikipedia.org/wiki/Maotianshan_Shales"
+   },
+   {
+    "title": "Nature: Lower Cambrian vertebrates from south China (Shu et al. 1999)",
+    "url": "https://www.nature.com/articles/46965"
+   },
+   {
+    "title": "TimeTree: divergence time of humans and sea urchins",
+    "url": "http://timetree.temple.edu/api/pairwise/7668/9606"
+   }
+  ]
+ },
+ {
+  "id": "jawless-fish",
+  "name": "Jawless fish (first vertebrates)",
+  "sci": "Vertebrata (early jawless forms; living lampreys and hagfish)",
+  "group": "fish",
+  "parent": "chordates",
+  "fossilMa": 518,
+  "claimMa": null,
+  "clockMa": [
+   515,
+   611
+  ],
+  "extinctMa": null,
+  "peakMa": null,
+  "oldest": {
+   "name": "Haikouichthys ercaicunensis and Myllokunmingia",
+   "place": "Haikou, near Kunming, Yunnan, China",
+   "lonlat": [
+    102.57,
+    24.78
+   ]
+  },
+  "dateLabel": "c. 518 million years ago",
+  "evidence": "fossil",
+  "evidenceNote": "Small fish-shaped fossils with gills, a distinct head and fins are preserved in Chinese rocks 518 million years old; they are the oldest known animals on the vertebrate line.",
+  "text": "The first vertebrates were small jawless fish that sucked or filtered food. For a hundred million years all fish were jawless, many of them armoured with bony plates. Their invention of a skull, eyes and a brain set the pattern for every later backboned animal. Lampreys and hagfish are the only jawless fish alive today.",
+  "sources": [
+   {
+    "title": "Wikipedia: Haikouichthys",
+    "url": "https://en.wikipedia.org/wiki/Haikouichthys"
+   },
+   {
+    "title": "Wikipedia: Agnatha",
+    "url": "https://en.wikipedia.org/wiki/Agnatha"
+   },
+   {
+    "title": "Nature: Lower Cambrian vertebrates from south China (Shu et al. 1999)",
+    "url": "https://www.nature.com/articles/46965"
+   },
+   {
+    "title": "TimeTree: divergence time of humans and lampreys",
+    "url": "http://timetree.temple.edu/api/pairwise/9606/7757"
+   }
+  ]
+ },
+ {
+  "id": "echinoderms",
+  "name": "Starfish, sea urchins and relatives",
+  "sci": "Echinodermata",
+  "group": "invertebrates",
+  "parent": "bilaterians",
+  "fossilMa": 516,
+  "claimMa": null,
+  "clockMa": [
+   591,
+   663
+  ],
+  "extinctMa": null,
+  "peakMa": null,
+  "oldest": {
+   "name": "Helicoplacus and other early Cambrian echinoderms",
+   "place": "White Mountains, California, USA",
+   "lonlat": [
+    -118.2,
+    37.5
+   ]
+  },
+  "dateLabel": "c. 516 million years ago",
+  "evidence": "fossil",
+  "evidenceNote": "The first fossils with the special chalky skeleton plates of echinoderms appear in early Cambrian rocks about 516 million years old; gene studies put their split from our own branch well before that.",
+  "text": "Echinoderms are the starfish, sea urchins, sea lilies and sea cucumbers: sea animals with a skeleton of chalky plates and, in living forms, a five-rayed body. Surprisingly, they are among the closest relatives of animals with backbones. Sea lilies formed vast underwater meadows in later ages.",
+  "sources": [
+   {
+    "title": "Wikipedia: Echinoderm",
+    "url": "https://en.wikipedia.org/wiki/Echinoderm"
+   },
+   {
+    "title": "Wikipedia: Helicoplacus",
+    "url": "https://en.wikipedia.org/wiki/Helicoplacus"
+   },
+   {
+    "title": "TimeTree: divergence time of humans and sea urchins",
+    "url": "http://timetree.temple.edu/api/pairwise/7668/9606"
+   }
+  ]
+ },
+ {
+  "id": "cephalopods",
+  "name": "Cephalopods (squid, octopus, nautilus)",
+  "sci": "Cephalopoda",
+  "group": "invertebrates",
+  "parent": "molluscs",
+  "fossilMa": 495,
+  "claimMa": 522,
+  "clockMa": null,
+  "extinctMa": null,
+  "peakMa": null,
+  "oldest": {
+   "name": "Plectronoceras",
+   "place": "Northern China",
+   "lonlat": [
+    117.0,
+    36.6
+   ]
+  },
+  "dateLabel": "c. 495 million years ago",
+  "evidence": "disputed",
+  "evidenceNote": "Small chambered shells from the late Cambrian of China are the oldest agreed cephalopods; cone-shaped fossils 522 million years old from Newfoundland were proposed as cephalopods in 2021, but other specialists argue they are mixed-up remains of different animals.",
+  "text": "Cephalopods are molluscs that turned their shell into a float with gas-filled chambers and their foot into arms. That let them rise off the sea floor and become the first large swimming hunters. Squid and octopus later lost the outer shell and evolved the biggest brains of any animals without a backbone.",
+  "sources": [
+   {
+    "title": "Wikipedia: Cephalopod",
+    "url": "https://en.wikipedia.org/wiki/Cephalopod"
+   },
+   {
+    "title": "Wikipedia: Plectronoceras",
+    "url": "https://en.wikipedia.org/wiki/Plectronoceras"
+   },
+   {
+    "title": "Communications Biology: A potential cephalopod from the early Cambrian of eastern Newfoundland (Hildenbrand et al. 2021)",
+    "url": "https://www.nature.com/articles/s42003-021-01885-w"
+   },
+   {
+    "title": "Communications Biology: Proposed Early Cambrian cephalopods are chimaeras (Landing et al. 2023)",
+    "url": "https://www.nature.com/articles/s42003-022-04383-9"
+   }
+  ]
+ },
+ {
+  "id": "land-plants",
+  "name": "Land plants",
+  "sci": "Embryophyta",
+  "group": "algae-plants",
+  "parent": "green-algae",
+  "fossilMa": 470,
+  "claimMa": 480,
+  "clockMa": [
+   474,
+   515
+  ],
+  "extinctMa": null,
+  "peakMa": null,
+  "oldest": {
+   "name": "Cryptospores (tough-walled spores of the first land plants)",
+   "place": "North-west Argentina",
+   "lonlat": [
+    -64.9,
+    -24.0
+   ]
+  },
+  "dateLabel": "c. 470 million years ago",
+  "evidence": "disputed",
+  "evidenceNote": "The first sign of land plants is their spores, about 470 million years old; plant bodies are not found until about 430 million years ago. Spore-like fossils 480 million years old and older are argued over, some saying they come from algae on the way to becoming plants.",
+  "text": "Plants came ashore from freshwater green algae. The first were small and moss-like, with no roots or leaves, and clung to damp ground. By breaking down rock, making soil and adding oxygen to the air, they prepared the land for animals. Genes suggest plants reached land tens of millions of years before their first known spores.",
+  "sources": [
+   {
+    "title": "Wikipedia: Embryophyte",
+    "url": "https://en.wikipedia.org/wiki/Embryophyte"
+   },
+   {
+    "title": "Wikipedia: Evolutionary history of plants",
+    "url": "https://en.wikipedia.org/wiki/Evolutionary_history_of_plants"
+   },
+   {
+    "title": "Europe PMC record: Early Middle Ordovician evidence for land plants in Argentina (New Phytologist 2010)",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22Early%20Middle%20Ordovician%20evidence%20for%20land%20plants%20in%20Argentina%22&resultType=core&format=json&pageSize=2"
+   },
+   {
+    "title": "Europe PMC record: A fossil record of land plant origins from charophyte algae (Science 2021)",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22fossil%20record%20of%20land%20plant%20origins%20from%20charophyte%20algae%22&resultType=core&format=json&pageSize=2"
+   },
+   {
+    "title": "PNAS: The timescale of early land plant evolution (Morris et al. 2018)",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5877938/"
+   }
+  ]
+ },
+ {
+  "id": "eurypterids",
+  "name": "Sea scorpions",
+  "sci": "Eurypterida",
+  "group": "invertebrates",
+  "parent": "arthropods",
+  "fossilMa": 467,
+  "claimMa": null,
+  "clockMa": null,
+  "extinctMa": 252,
+  "peakMa": [
+   444,
+   393
+  ],
+  "oldest": {
+   "name": "Pentecopterus decorahensis",
+   "place": "Decorah, Iowa, USA",
+   "lonlat": [
+    -91.79,
+    43.3
+   ]
+  },
+  "dateLabel": "c. 467 million years ago",
+  "evidence": "fossil",
+  "evidenceNote": "The oldest named sea scorpion comes from rocks in Iowa about 467 million years old; undescribed finds may push the group back to about 480 million years, and the last ones died out by the end of the Permian.",
+  "text": "Sea scorpions were armoured hunters related to spiders and horseshoe crabs. The largest grew to about 2.5 metres, the biggest arthropods ever known. They were top predators of Silurian seas and later moved into rivers and lakes. Despite the name, they were not true scorpions.",
+  "sources": [
+   {
+    "title": "Wikipedia: Eurypterid",
+    "url": "https://en.wikipedia.org/wiki/Eurypterid"
+   },
+   {
+    "title": "Wikipedia: Pentecopterus",
+    "url": "https://en.wikipedia.org/wiki/Pentecopterus"
+   }
+  ]
+ },
+ {
+  "id": "jawed-fish",
+  "name": "Jawed fish",
+  "sci": "Gnathostomata",
+  "group": "fish",
+  "parent": "jawless-fish",
+  "fossilMa": 439,
+  "claimMa": 455,
+  "clockMa": [
+   447,
+   479
+  ],
+  "extinctMa": null,
+  "peakMa": null,
+  "oldest": {
+   "name": "Qianodus duplicis (tooth whorls) and Fanjingshania renovata",
+   "place": "Shiqian, Guizhou, China",
+   "lonlat": [
+    108.2,
+    27.5
+   ]
+  },
+  "dateLabel": "c. 439 million years ago",
+  "evidence": "disputed",
+  "evidenceNote": "Teeth and spiny fish remains from China, 439 million years old, are the oldest sure jawed vertebrates, with whole fish from 436 million years ago; loose scales from the Late Ordovician (about 458 to 443 million years ago) may be older jawed fish but cannot be identified for certain.",
+  "text": "Jaws, probably made from the front gill supports, let fish bite, grasp and chew. It was one of the great turning points for animals with backbones: almost every vertebrate alive today, including people, descends from the first jawed fish. Finds from China reported in 2022 pushed their record back by about 14 million years.",
+  "sources": [
+   {
+    "title": "Wikipedia: Gnathostomata",
+    "url": "https://en.wikipedia.org/wiki/Gnathostomata"
+   },
+   {
+    "title": "Nature: The oldest complete jawed vertebrates from the early Silurian of China (Zhu et al. 2022)",
+    "url": "https://www.nature.com/articles/s41586-022-05136-8"
+   },
+   {
+    "title": "Nature: The oldest gnathostome teeth (Andreev et al. 2022)",
+    "url": "https://www.nature.com/articles/s41586-022-05166-2"
+   },
+   {
+    "title": "Nature: Spiny chondrichthyan from the lower Silurian of South China (Andreev et al. 2022)",
+    "url": "https://www.nature.com/articles/s41586-022-05233-8"
+   },
+   {
+    "title": "TimeTree: divergence time of humans and the elephant shark",
+    "url": "http://timetree.temple.edu/api/pairwise/9606/7868"
+   }
+  ]
+ },
+ {
+  "id": "cartilaginous-fish",
+  "name": "Sharks, rays and relatives",
+  "sci": "Chondrichthyes",
+  "group": "fish",
+  "parent": "jawed-fish",
+  "fossilMa": 439,
+  "claimMa": 455,
+  "clockMa": [
+   447,
+   479
+  ],
+  "extinctMa": null,
+  "peakMa": null,
+  "oldest": {
+   "name": "Fanjingshania renovata",
+   "place": "Shiqian, Guizhou, China",
+   "lonlat": [
+    108.2,
+    27.5
+   ]
+  },
+  "dateLabel": "c. 439 million years ago",
+  "evidence": "disputed",
+  "evidenceNote": "Spines, scales and plates of a shark relative lie in Chinese rocks 439 million years old; shark-like scales from the Late Ordovician could be older still, but nobody has found the fish they came from.",
+  "text": "Sharks, rays and chimaeras have skeletons of cartilage, the bendy material in your nose, in place of bone. The earliest relatives were small, spiny fish. Cartilage seldom fossilises, so most of their history is read from teeth and scales. Sharks have survived every mass extinction since.",
+  "sources": [
+   {
+    "title": "Wikipedia: Chondrichthyes",
+    "url": "https://en.wikipedia.org/wiki/Chondrichthyes"
+   },
+   {
+    "title": "Nature: Spiny chondrichthyan from the lower Silurian of South China (Andreev et al. 2022)",
+    "url": "https://www.nature.com/articles/s41586-022-05233-8"
+   },
+   {
+    "title": "Nature: The oldest complete jawed vertebrates from the early Silurian of China (Zhu et al. 2022)",
+    "url": "https://www.nature.com/articles/s41586-022-05136-8"
+   },
+   {
+    "title": "TimeTree: divergence time of humans and the elephant shark",
+    "url": "http://timetree.temple.edu/api/pairwise/9606/7868"
+   }
+  ]
+ },
+ {
+  "id": "placoderms",
+  "name": "Armoured fish (placoderms)",
+  "sci": "Placodermi",
+  "group": "fish",
+  "parent": "jawed-fish",
+  "fossilMa": 436,
+  "claimMa": null,
+  "clockMa": null,
+  "extinctMa": 359,
+  "peakMa": [
+   419,
+   359
+  ],
+  "oldest": {
+   "name": "Xiushanosteus mirabilis",
+   "place": "Xiushan, Chongqing, China",
+   "lonlat": [
+    109.0,
+    28.45
+   ]
+  },
+  "dateLabel": "c. 436 million years ago",
+  "evidence": "fossil",
+  "evidenceNote": "A 3-centimetre armoured fish from Chongqing, 436 million years old, is the oldest complete placoderm; the group disappears from the rocks at the end of the Devonian, about 359 million years ago.",
+  "text": "Placoderms were fish with heads and shoulders cased in bony plates, and they are the earliest branch of jawed fish. In the Devonian, the 'Age of Fishes', they reached their greatest variety, and some became large hunters. All died out at the end of that period.",
+  "sources": [
+   {
+    "title": "Wikipedia: Placoderm",
+    "url": "https://en.wikipedia.org/wiki/Placoderm"
+   },
+   {
+    "title": "Nature: The oldest complete jawed vertebrates from the early Silurian of China (Zhu et al. 2022)",
+    "url": "https://www.nature.com/articles/s41586-022-05136-8"
+   },
+   {
+    "title": "UC Museum of Paleontology: Introduction to the Placodermi",
+    "url": "https://ucmp.berkeley.edu/vertebrates/basalfish/placodermi.html"
+   }
+  ]
+ },
+ {
+  "id": "bony-fish",
+  "name": "Bony fish",
+  "sci": "Osteichthyes",
+  "group": "fish",
+  "parent": "jawed-fish",
+  "fossilMa": 436,
+  "claimMa": null,
+  "clockMa": [
+   447,
+   479
+  ],
+  "extinctMa": null,
+  "peakMa": null,
+  "oldest": {
+   "name": "Eosteus chongqingensis",
+   "place": "Xiushan, Chongqing, China",
+   "lonlat": [
+    109.0,
+    28.45
+   ]
+  },
+  "dateLabel": "c. 436 million years ago",
+  "evidence": "fossil",
+  "evidenceNote": "A nearly complete bony fish under 3 centimetres long, described in 2026 from Chinese rocks about 436 million years old, is the oldest known; before it, the record began with Guiyu at about 425 million years.",
+  "text": "Bony fish have skeletons of true bone. They split early into two lines: ray-finned fish, which became nearly all the fish in today's seas and rivers, and lobe-finned fish, which gave rise to every land animal with a backbone. Counting those land descendants, bony fish make up about 98 per cent of vertebrate species.",
+  "sources": [
+   {
+    "title": "Wikipedia: Osteichthyes",
+    "url": "https://en.wikipedia.org/wiki/Osteichthyes"
+   },
+   {
+    "title": "Nature: The oldest articulated bony fish from the early Silurian period (2026)",
+    "url": "https://www.nature.com/articles/s41586-026-10125-2"
+   },
+   {
+    "title": "Nature Portfolio press release: Evidence of early bony fish evolution caught in Chinese fossils (2026)",
+    "url": "https://www.natureasia.com/en/info/press-releases/detail/9257"
+   },
+   {
+    "title": "Nature: The oldest articulated osteichthyan reveals mosaic gnathostome characters (Zhu et al. 2009)",
+    "url": "https://www.nature.com/articles/nature07855"
+   }
+  ]
+ },
+ {
+  "id": "arachnids",
+  "name": "Arachnids (scorpions, spiders, mites)",
+  "sci": "Arachnida",
+  "group": "invertebrates",
+  "parent": "arthropods",
+  "fossilMa": 435,
+  "claimMa": null,
+  "clockMa": [
+   460,
+   505
+  ],
+  "extinctMa": null,
+  "peakMa": null,
+  "oldest": {
+   "name": "Dolichophonus loudonensis (a scorpion)",
+   "place": "Pentland Hills, Scotland",
+   "lonlat": [
+    -3.3,
+    55.85
+   ]
+  },
+  "dateLabel": "c. 435 million years ago",
+  "evidence": "fossil",
+  "evidenceNote": "A scorpion from Scottish rocks between 436 and 428 million years old is the oldest known arachnid; an older American fossil called a scorpion in 2020 was shown in 2021 to be a different kind of arthropod.",
+  "text": "Arachnids have eight legs and no antennae. Scorpions are the oldest known, and the first may still have lived in or near water. Arachnids were among the earliest animals to breathe air and hunt on land. True spiders, with silk-spinning organs, appear in the coal forests over 100 million years later.",
+  "sources": [
+   {
+    "title": "Wikipedia: Arachnid",
+    "url": "https://en.wikipedia.org/wiki/Arachnid"
+   },
+   {
+    "title": "Wikipedia: Dolichophonus",
+    "url": "https://en.wikipedia.org/wiki/Dolichophonus"
+   },
+   {
+    "title": "Wikipedia: Parioscorpio",
+    "url": "https://en.wikipedia.org/wiki/Parioscorpio"
+   },
+   {
+    "title": "Scientific Reports: A Silurian ancestral scorpion with fossilised internal anatomy (Wendruff et al. 2020)",
+    "url": "https://www.nature.com/articles/s41598-019-56010-z"
+   },
+   {
+    "title": "TimeTree: divergence time of ticks and horseshoe crabs",
+    "url": "http://timetree.temple.edu/api/pairwise/6945/6850"
+   }
+  ]
+ },
+ {
+  "id": "vascular-plants",
+  "name": "Vascular plants (plants with water pipes)",
+  "sci": "Tracheophyta",
+  "group": "algae-plants",
+  "parent": "land-plants",
+  "fossilMa": 427,
+  "claimMa": null,
+  "clockMa": [
+   419,
+   451
+  ],
+  "extinctMa": null,
+  "peakMa": null,
+  "oldest": {
+   "name": "Cooksonia",
+   "place": "Devilsbit Mountain, County Tipperary, Ireland",
+   "lonlat": [
+    -7.92,
+    52.82
+   ]
+  },
+  "dateLabel": "c. 430 to 426 million years ago",
+  "evidence": "fossil",
+  "evidenceNote": "Leafless forked stems a few centimetres tall, tipped with spore capsules, come from Irish and Welsh rocks of the mid-Silurian; a 2024 study dated the oldest beds to at most 426 million years.",
+  "text": "Vascular plants have tubes that carry water from the ground to their tips and stiffen the stem. This plumbing let plants stand upright and grow tall, away from damp ground. Cooksonia, the earliest, was only a few centimetres high. Ferns, conifers and flowering plants are all vascular plants.",
+  "sources": [
+   {
+    "title": "Wikipedia: Cooksonia",
+    "url": "https://en.wikipedia.org/wiki/Cooksonia"
+   },
+   {
+    "title": "University College Cork: Cooksonia",
+    "url": "https://www.ucc.ie/en/fossil-heritage/irishfossils/cooksonia"
+   },
+   {
+    "title": "Nature: Records of Cooksonia-type sporangia from late Wenlock strata in Ireland (Edwards & Feehan 1980)",
+    "url": "https://www.nature.com/articles/287041a0"
+   },
+   {
+    "title": "Geological Magazine: Detrital U-Pb ages for the first well-preserved vascular plant Cooksonia (2024)",
+    "url": "https://www.cambridge.org/core/journals/geological-magazine/article/detrital-upb-ages-for-the-first-wellpreserved-vascular-plant-cooksonia-from-the-uk-and-irish-macrofossil-record/79976340870DE8948EC37DB9B46219F6"
+   },
+   {
+    "title": "PNAS: The timescale of early land plant evolution (Morris et al. 2018)",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5877938/"
+   }
+  ]
+ },
+ {
+  "id": "lobe-finned-fish",
+  "name": "Lobe-finned fish",
+  "sci": "Sarcopterygii",
+  "group": "fish",
+  "parent": "bony-fish",
+  "fossilMa": 425,
+  "claimMa": null,
+  "clockMa": [
+   428,
+   442
+  ],
+  "extinctMa": null,
+  "peakMa": null,
+  "oldest": {
+   "name": "Guiyu oneiros",
+   "place": "Qujing, Yunnan, China",
+   "lonlat": [
+    103.8,
+    25.5
+   ]
+  },
+  "dateLabel": "c. 425 million years ago",
+  "evidence": "fossil",
+  "evidenceNote": "Guiyu, a well-preserved fish from Yunnan about 425 million years old, already shows features of the lobe-finned line; gene studies date the split from ray-finned fish slightly earlier.",
+  "text": "Lobe-finned fish have fleshy fins with bones inside, arranged like the bones of an arm or leg. Only coelacanths and lungfish survive, but in the Devonian the group was large and varied. One branch used its sturdy fins to push through shallow water and became the four-legged animals.",
+  "sources": [
+   {
+    "title": "Wikipedia: Guiyu oneiros",
+    "url": "https://en.wikipedia.org/wiki/Guiyu_oneiros"
+   },
+   {
+    "title": "Wikipedia: Sarcopterygii",
+    "url": "https://en.wikipedia.org/wiki/Sarcopterygii"
+   },
+   {
+    "title": "Nature: The oldest articulated osteichthyan reveals mosaic gnathostome characters (Zhu et al. 2009)",
+    "url": "https://www.nature.com/articles/nature07855"
+   },
+   {
+    "title": "TimeTree: divergence time of zebrafish and the coelacanth",
+    "url": "http://timetree.temple.edu/api/pairwise/7955/7897"
+   }
+  ]
+ },
+ {
+  "id": "lycophytes",
+  "name": "Clubmosses and scale trees",
+  "sci": "Lycophyta",
+  "group": "algae-plants",
+  "parent": "vascular-plants",
+  "fossilMa": 425,
+  "claimMa": null,
+  "clockMa": [
+   418,
+   439
+  ],
+  "extinctMa": null,
+  "peakMa": [
+   323,
+   299
+  ],
+  "oldest": {
+   "name": "Baragwanathia longifolia",
+   "place": "Victoria, Australia",
+   "lonlat": [
+    145.43,
+    -37.21
+   ]
+  },
+  "dateLabel": "c. 425 million years ago",
+  "evidence": "fossil",
+  "evidenceNote": "Leafy stems of Baragwanathia from Australian rocks of the late Silurian, about 425 million years old, are among the oldest fossils of this group.",
+  "text": "Clubmosses are today small creeping plants, but they are one of the oldest plant lines with true leaves. In the Carboniferous their relatives the scale trees grew over 40 metres tall in vast swamp forests. The buried remains of those forests became much of the coal that powered the Industrial Revolution.",
+  "sources": [
+   {
+    "title": "Wikipedia: Lycophyte",
+    "url": "https://en.wikipedia.org/wiki/Lycophyte"
+   },
+   {
+    "title": "Wikipedia: Baragwanathia",
+    "url": "https://en.wikipedia.org/wiki/Baragwanathia"
+   },
+   {
+    "title": "TimeTree: divergence time of thale cress and the spikemoss Selaginella",
+    "url": "http://timetree.temple.edu/api/pairwise/3702/88036"
+   }
+  ]
+ },
+ {
+  "id": "myriapods",
+  "name": "Millipedes and centipedes (first land animals)",
+  "sci": "Myriapoda",
+  "group": "invertebrates",
+  "parent": "arthropods",
+  "fossilMa": 425,
+  "claimMa": null,
+  "clockMa": [
+   534,
+   571
+  ],
+  "extinctMa": null,
+  "peakMa": null,
+  "oldest": {
+   "name": "Kampecaris obanensis",
+   "place": "Isle of Kerrera, Scotland",
+   "lonlat": [
+    -5.55,
+    56.4
+   ]
+  },
+  "dateLabel": "c. 425 million years ago",
+  "evidence": "fossil",
+  "evidenceNote": "Millipede-like fossils from Scotland about 425 million years old are among the oldest land animals; the famous millipede Pneumodesmus, once dated to 428 million years, was re-dated in 2017 to about 414 million.",
+  "text": "Millipedes were among the first animals to live on land and breathe air, feeding on rotting plants. Their walking tracks are older than their bodies. Genes say the group itself began in the sea far earlier. Centipedes, which are hunters, belong to the same group, as did the giant Arthropleura of the coal forests.",
+  "sources": [
+   {
+    "title": "Wikipedia: Kampecaris",
+    "url": "https://en.wikipedia.org/wiki/Kampecaris"
+   },
+   {
+    "title": "Wikipedia: Myriapoda",
+    "url": "https://en.wikipedia.org/wiki/Myriapoda"
+   },
+   {
+    "title": "Wikipedia: Pneumodesmus",
+    "url": "https://en.wikipedia.org/wiki/Pneumodesmus"
+   },
+   {
+    "title": "PLOS ONE: A U-Pb zircon age constraint on the oldest-recorded air-breathing land animal (Suarez et al. 2017)",
+    "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0179262"
+   },
+   {
+    "title": "TimeTree: divergence time of centipedes and fruit flies",
+    "url": "http://timetree.temple.edu/api/pairwise/126957/7227"
+   }
+  ]
+ },
+ {
+  "id": "ray-finned-fish",
+  "name": "Ray-finned fish (including teleosts)",
+  "sci": "Actinopterygii",
+  "group": "fish",
+  "parent": "bony-fish",
+  "fossilMa": 415,
+  "claimMa": 420,
+  "clockMa": [
+   428,
+   442
+  ],
+  "extinctMa": null,
+  "peakMa": null,
+  "oldest": {
+   "name": "Meemannia eos",
+   "place": "Yunnan, China",
+   "lonlat": [
+    103.75,
+    25.45
+   ]
+  },
+  "dateLabel": "c. 415 million years ago (Early Devonian)",
+  "evidence": "disputed",
+  "evidenceNote": "Meemannia from the Early Devonian of China is the oldest fish placed on the ray-finned line by a 2016 restudy; scales of Andreolepis, about 420 million years old, were long called the oldest ray-fin but may belong to an earlier side branch.",
+  "text": "Ray-finned fish have fins that are webs of skin spread over thin bony rods. They began as a minor group but now make up the great majority of fish in seas, rivers and lakes. Nearly all belong to the teleosts, a branch whose first fossils appear in the Triassic and which includes cod, salmon, eels and seahorses.",
+  "sources": [
+   {
+    "title": "Wikipedia: Actinopterygii",
+    "url": "https://en.wikipedia.org/wiki/Actinopterygii"
+   },
+   {
+    "title": "Wikipedia: Meemannia",
+    "url": "https://en.wikipedia.org/wiki/Meemannia"
+   },
+   {
+    "title": "Wikipedia: Andreolepis",
+    "url": "https://en.wikipedia.org/wiki/Andreolepis"
+   },
+   {
+    "title": "Wikipedia: Teleost",
+    "url": "https://en.wikipedia.org/wiki/Teleost"
+   },
+   {
+    "title": "TimeTree: divergence time of zebrafish and the coelacanth",
+    "url": "http://timetree.temple.edu/api/pairwise/7955/7897"
+   }
+  ]
+ },
+ {
+  "id": "ammonites",
+  "name": "Ammonites",
+  "sci": "Ammonoidea",
+  "group": "invertebrates",
+  "parent": "cephalopods",
+  "fossilMa": 409,
+  "claimMa": null,
+  "clockMa": null,
+  "extinctMa": 66,
+  "peakMa": [
+   201,
+   66
+  ],
+  "oldest": {
+   "name": "Earliest ammonoids, descended from straight-shelled bactritids",
+   "place": "Early Devonian (Emsian) marine rocks",
+   "lonlat": null
+  },
+  "dateLabel": "c. 409 million years ago",
+  "evidence": "fossil",
+  "evidenceNote": "Coiled ammonoid shells first appear about 410 to 408 million years ago, and the last ones vanish at or just after the extinction 66 million years ago that also killed the dinosaurs.",
+  "text": "Ammonites were squid-like animals living in coiled, chambered shells. They evolved so fast, and are so common, that geologists use them to tell the age of rocks, especially from the Jurassic and Cretaceous. They survived three mass extinctions by a whisker before the fourth ended them. The living nautilus is only a distant cousin.",
+  "sources": [
+   {
+    "title": "Wikipedia: Ammonoidea",
+    "url": "https://en.wikipedia.org/wiki/Ammonoidea"
+   },
+   {
+    "title": "Wikipedia: Cephalopod",
+    "url": "https://en.wikipedia.org/wiki/Cephalopod"
+   }
+  ]
+ },
+ {
+  "id": "fungi",
+  "name": "Fungi",
+  "sci": "Fungi",
+  "group": "fungi",
+  "parent": "eukaryotes",
+  "fossilMa": 407,
+  "claimMa": 1000,
+  "clockMa": [
+   900,
+   1500
+  ],
+  "extinctMa": null,
+  "peakMa": null,
+  "oldest": {
+   "name": "Fungi preserved in the Rhynie chert",
+   "place": "Rhynie, Aberdeenshire, Scotland",
+   "lonlat": [
+    -2.84,
+    57.34
+   ]
+  },
+  "dateLabel": "c. 407 million years ago",
+  "evidence": "disputed",
+  "evidenceNote": "Fungi that nobody doubts are preserved in Scottish rock about 407 million years old; microscopic fossils from Arctic Canada (about 1 billion years), Congo (810 to 715 million) and China (635 million) are claimed as fungi, but simple threads are hard to tell from other microbes.",
+  "text": "Fungi are neither plants nor animals: they feed by soaking up food from their surroundings. Genes show they are close relatives of animals and split from them over a billion years ago, but their soft bodies rarely fossilise. Fungi helped the first plants take root on land and still feed most plants through their roots.",
+  "sources": [
+   {
+    "title": "Wikipedia: Fungus",
+    "url": "https://en.wikipedia.org/wiki/Fungus"
+   },
+   {
+    "title": "Wikipedia: Rhynie chert",
+    "url": "https://en.wikipedia.org/wiki/Rhynie_chert"
+   },
+   {
+    "title": "Nature: Early fungi from the Proterozoic era in Arctic Canada (Loron et al. 2019)",
+    "url": "https://www.nature.com/articles/s41586-019-1217-0"
+   },
+   {
+    "title": "Science Advances: Molecular identification of fungi microfossils in a Neoproterozoic shale rock (Bonneville et al. 2020)",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6976295/"
+   },
+   {
+    "title": "Nature Communications: Cryptic terrestrial fungus-like fossils of the early Ediacaran Period (Gan et al. 2021)",
+    "url": "https://www.nature.com/articles/s41467-021-20975-1"
+   }
+  ]
+ },
+ {
+  "id": "first-trees",
+  "name": "First trees and forests",
+  "sci": "Cladoxylopsids (Calamophyton, Wattieza) and Archaeopteris",
+  "group": "algae-plants",
+  "parent": "vascular-plants",
+  "fossilMa": 390,
+  "claimMa": null,
+  "clockMa": null,
+  "extinctMa": null,
+  "peakMa": null,
+  "oldest": {
+   "name": "Calamophyton forest",
+   "place": "Hangman Sandstone, near Minehead, Somerset, England",
+   "lonlat": [
+    -3.47,
+    51.21
+   ]
+  },
+  "dateLabel": "c. 390 million years ago",
+  "evidence": "fossil",
+  "evidenceNote": "Fossil trunks and fallen branches in sea cliffs in Somerset, about 390 million years old, are the oldest known forest; the forests at Cairo and Gilboa in New York State are about 385 million years old.",
+  "text": "The first trees were not related to modern ones. Calamophyton and Wattieza looked like palms or tree ferns, from under 1 to about 8 metres tall; Archaeopteris, soon after, had wood and deep roots like a modern tree. Forests drew carbon dioxide from the air, cooled the climate and held river banks together.",
+  "sources": [
+   {
+    "title": "Wikipedia: Calamophyton",
+    "url": "https://en.wikipedia.org/wiki/Calamophyton"
+   },
+   {
+    "title": "Natural History Museum, London: Earliest fossilised forest discovered in Somerset",
+    "url": "https://www.nhm.ac.uk/discover/news/2024/march/earliest-fossilised-forest-discovered-in-somerset.html"
+   },
+   {
+    "title": "Nature: Giant cladoxylopsid trees resolve the enigma of the Earth's earliest forest stumps at Gilboa (Stein et al. 2007)",
+    "url": "https://www.nature.com/articles/nature05705"
+   },
+   {
+    "title": "Europe PMC record: Mid-Devonian Archaeopteris roots signal revolutionary change in earliest fossil forests (Current Biology 2020)",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22Mid-Devonian%20Archaeopteris%20Roots%20Signal%20Revolutionary%20Change%20in%20Earliest%20Fossil%20Forests%22&resultType=core&format=json&pageSize=2"
+   },
+   {
+    "title": "Wikipedia: Archaeopteris",
+    "url": "https://en.wikipedia.org/wiki/Archaeopteris"
+   }
+  ]
+ },
+ {
+  "id": "ferns",
+  "name": "Ferns and fern-like plants",
+  "sci": "Polypodiopsida and extinct relatives",
+  "group": "algae-plants",
+  "parent": "vascular-plants",
+  "fossilMa": 385,
+  "claimMa": null,
+  "clockMa": [
+   394,
+   423
+  ],
+  "extinctMa": null,
+  "peakMa": null,
+  "oldest": {
+   "name": "Wattieza (a fern-like tree)",
+   "place": "Gilboa, New York, USA",
+   "lonlat": [
+    -74.45,
+    42.4
+   ]
+  },
+  "dateLabel": "c. 390 to 385 million years ago",
+  "evidence": "fossil",
+  "evidenceNote": "Fern-like plants first appear in the middle Devonian, and the best known is the tree Wattieza from New York, about 385 million years old; gene studies date the fern line a little earlier.",
+  "text": "Ferns reproduce by spores, not seeds, and uncurl their fronds from coiled tips. Their early relatives were among the first trees, and tree ferns shaded the coal swamps. Four in five ferns alive today belong to one much younger branch, the Polypodiales.",
+  "sources": [
+   {
+    "title": "Wikipedia: Fern",
+    "url": "https://en.wikipedia.org/wiki/Fern"
+   },
+   {
+    "title": "Wikipedia: Wattieza",
+    "url": "https://en.wikipedia.org/wiki/Wattieza"
+   },
+   {
+    "title": "Nature: Giant cladoxylopsid trees resolve the enigma of the Earth's earliest forest stumps at Gilboa (Stein et al. 2007)",
+    "url": "https://www.nature.com/articles/nature05705"
+   },
+   {
+    "title": "TimeTree: divergence time of thale cress and the fern Ceratopteris",
+    "url": "http://timetree.temple.edu/api/pairwise/49495/3702"
+   }
+  ]
+ },
+ {
+  "id": "tetrapods",
+  "name": "Four-legged animals (tetrapods)",
+  "sci": "Tetrapoda (limbed vertebrates)",
+  "group": "amphibians",
+  "parent": "lobe-finned-fish",
+  "fossilMa": 375,
+  "claimMa": 390,
+  "clockMa": null,
+  "extinctMa": null,
+  "peakMa": null,
+  "oldest": {
+   "name": "Elginerpeton pancheni",
+   "place": "Scat Craig, near Elgin, Scotland",
+   "lonlat": [
+    -3.3,
+    57.6
+   ]
+  },
+  "dateLabel": "c. 375 million years ago",
+  "evidence": "disputed",
+  "evidenceNote": "The oldest bones of four-legged animals are about 375 million years old; footprints in a Polish quarry, about 390 million years old, would be 18 million years older, but some specialists think the marks were not made by walking animals.",
+  "text": "Tetrapods are the animals with four limbs: amphibians, reptiles, birds and mammals. They arose from lobe-finned fish whose fins became legs with fingers and toes, at first for moving through weedy shallows. The fish Tiktaalik, 375 million years old, shows the change half-way, with a neck and wrist-like fins.",
+  "sources": [
+   {
+    "title": "Wikipedia: Tetrapod",
+    "url": "https://en.wikipedia.org/wiki/Tetrapod"
+   },
+   {
+    "title": "Wikipedia: Elginerpeton",
+    "url": "https://en.wikipedia.org/wiki/Elginerpeton"
+   },
+   {
+    "title": "Wikipedia: Zachelmie trackways",
+    "url": "https://en.wikipedia.org/wiki/Zachelmie_trackways"
+   },
+   {
+    "title": "Nature: Tetrapod trackways from the early Middle Devonian period of Poland (Niedzwiedzki et al. 2010)",
+    "url": "https://www.nature.com/articles/nature08623"
+   },
+   {
+    "title": "Wikipedia: Tiktaalik",
+    "url": "https://en.wikipedia.org/wiki/Tiktaalik"
+   }
+  ]
+ },
+ {
+  "id": "seed-plants",
+  "name": "Seed plants",
+  "sci": "Spermatophyta",
+  "group": "algae-plants",
+  "parent": "vascular-plants",
+  "fossilMa": 365,
+  "claimMa": null,
+  "clockMa": null,
+  "extinctMa": null,
+  "peakMa": null,
+  "oldest": {
+   "name": "Elkinsia polymorpha",
+   "place": "Elkins, West Virginia, USA",
+   "lonlat": [
+    -79.85,
+    38.93
+   ]
+  },
+  "dateLabel": "c. 365 million years ago",
+  "evidence": "fossil",
+  "evidenceNote": "Small seed-bearing shoots from the Late Devonian of West Virginia are the oldest known seed plant; a 385-million-year-old plant from Belgium, Runcaria, was a forerunner with a seed that was not yet fully wrapped.",
+  "text": "A seed is a baby plant packed with food inside a protective coat. Seeds freed plants from needing wet ground to reproduce, so they could spread into dry country and uplands. The first seed plants looked like ferns. Their descendants are the conifers, cycads, ginkgos and all flowering plants.",
+  "sources": [
+   {
+    "title": "UC Museum of Paleontology: Fossil record of the seed plants",
+    "url": "https://ucmp.berkeley.edu/seedplants/seedplantsfr.html"
+   },
+   {
+    "title": "Wikipedia: Seed plant",
+    "url": "https://en.wikipedia.org/wiki/Spermatophyte"
+   },
+   {
+    "title": "Wikipedia: Runcaria",
+    "url": "https://en.wikipedia.org/wiki/Runcaria"
+   }
+  ]
+ },
+ {
+  "id": "temnospondyls",
+  "name": "Giant early amphibians (temnospondyls)",
+  "sci": "Temnospondyli",
+  "group": "amphibians",
+  "parent": "tetrapods",
+  "fossilMa": 330,
+  "claimMa": null,
+  "clockMa": null,
+  "extinctMa": 120,
+  "peakMa": [
+   300,
+   240
+  ],
+  "oldest": {
+   "name": "Balanerpeton woodi",
+   "place": "East Kirkton, West Lothian, Scotland",
+   "lonlat": [
+    -3.62,
+    55.9
+   ]
+  },
+  "dateLabel": "c. 330 million years ago",
+  "evidence": "fossil",
+  "evidenceNote": "The first temnospondyl bones are about 330 million years old, from Scotland and Germany; the last, Koolasuchus, lived in Australia about 125 to 120 million years ago.",
+  "text": "Before reptiles ruled, the largest land and river animals were temnospondyls, flat-headed relatives of amphibians. Some looked like salamanders, others like crocodiles several metres long. They lived for 200 million years, and many scientists think frogs and salamanders descend from small members of the group.",
+  "sources": [
+   {
+    "title": "Wikipedia: Temnospondyli",
+    "url": "https://en.wikipedia.org/wiki/Temnospondyli"
+   },
+   {
+    "title": "Wikipedia: Balanerpeton",
+    "url": "https://en.wikipedia.org/wiki/Balanerpeton"
+   },
+   {
+    "title": "Wikipedia: Koolasuchus",
+    "url": "https://en.wikipedia.org/wiki/Koolasuchus"
+   }
+  ]
+ },
+ {
+  "id": "insects",
+  "name": "Insects",
+  "sci": "Insecta",
+  "group": "invertebrates",
+  "parent": "arthropods",
+  "fossilMa": 325,
+  "claimMa": 407,
+  "clockMa": [
+   456,
+   507
+  ],
+  "extinctMa": null,
+  "peakMa": null,
+  "oldest": {
+   "name": "Delitzschala bitterfeldensis, one of the oldest undoubted insects",
+   "place": "Bitterfeld, Germany",
+   "lonlat": [
+    12.33,
+    51.6
+   ]
+  },
+  "dateLabel": "c. 325 million years ago",
+  "evidence": "disputed",
+  "evidenceNote": "The oldest fossils that are certainly insects are winged ones about 328 to 324 million years old; a 407-million-year-old jaw from Scotland, Rhyniognatha, was called the first insect, but a 2017 study argued it is more likely a centipede. Gene studies put the origin of insects near 479 million years ago.",
+  "text": "Insects have six legs and a body in three parts. Genes say they arose from crustacean-like ancestors soon after plants reached land, but for 150 million years they left almost no fossils. They became the most varied animals on Earth: more than a million species have been described, over half of all known animal species.",
+  "sources": [
+   {
+    "title": "Wikipedia: Insect",
+    "url": "https://en.wikipedia.org/wiki/Insect"
+   },
+   {
+    "title": "Wikipedia: Evolution of insects",
+    "url": "https://en.wikipedia.org/wiki/Evolution_of_insects"
+   },
+   {
+    "title": "Wikipedia: Rhyniognatha",
+    "url": "https://en.wikipedia.org/wiki/Rhyniognatha"
+   },
+   {
+    "title": "PeerJ: The presumed oldest flying insect: more likely a myriapod? (Haug & Haug 2017)",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5452959/"
+   },
+   {
+    "title": "Europe PMC record: Phylogenomics resolves the timing and pattern of insect evolution (Science 2014)",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1126/science.1257570%22&resultType=core&format=json"
+   }
+  ]
+ },
+ {
+  "id": "winged-insects",
+  "name": "Flying insects",
+  "sci": "Pterygota",
+  "group": "invertebrates",
+  "parent": "insects",
+  "fossilMa": 325,
+  "claimMa": null,
+  "clockMa": [
+   406,
+   406
+  ],
+  "extinctMa": null,
+  "peakMa": null,
+  "oldest": {
+   "name": "Delitzschala bitterfeldensis and other mid-Carboniferous winged insects",
+   "place": "Bitterfeld, Germany",
+   "lonlat": [
+    12.33,
+    51.6
+   ]
+  },
+  "dateLabel": "c. 325 million years ago",
+  "evidence": "fossil",
+  "evidenceNote": "Winged insects appear in the rocks about 328 to 324 million years ago, already varied, which suggests flight began earlier; one gene study estimates about 406 million years ago.",
+  "text": "Insects were the first animals to fly, some 100 million years before any reptile, bird or bat. Wings let them escape hunters, find mates and reach new food. In the oxygen-rich air of the coal forests, dragonfly-like griffinflies reached wingspans of about 70 centimetres, the largest insects ever.",
+  "sources": [
+   {
+    "title": "Wikipedia: Pterygota",
+    "url": "https://en.wikipedia.org/wiki/Pterygota"
+   },
+   {
+    "title": "Wikipedia: Delitzschala",
+    "url": "https://en.wikipedia.org/wiki/Delitzschala"
+   },
+   {
+    "title": "Wikipedia: Meganisoptera",
+    "url": "https://en.wikipedia.org/wiki/Meganisoptera"
+   },
+   {
+    "title": "Europe PMC record: Phylogenomics resolves the timing and pattern of insect evolution (Science 2014)",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1126/science.1257570%22&resultType=core&format=json"
+   }
+  ]
+ },
+ {
+  "id": "amniotes",
+  "name": "Amniotes (reptiles and their relatives)",
+  "sci": "Amniota",
+  "group": "reptiles",
+  "parent": "tetrapods",
+  "fossilMa": 318,
+  "claimMa": 355,
+  "clockMa": [
+   317,
+   355
+  ],
+  "extinctMa": null,
+  "peakMa": null,
+  "oldest": {
+   "name": "Hylonomus lyelli",
+   "place": "Joggins, Nova Scotia, Canada",
+   "lonlat": [
+    -64.45,
+    45.7
+   ]
+  },
+  "dateLabel": "c. 318 million years ago",
+  "evidence": "disputed",
+  "evidenceNote": "Hylonomus, found inside fossil tree stumps 318 million years old, is the classic oldest reptile, though some recent studies place it just outside the group; clawed footprints from Australia about 355 million years old were reported in 2025 as reptile tracks, which others question because some non-reptiles may have had claws.",
+  "text": "Amniotes lay eggs with a waterproof inner membrane, or carry their young inside the body, so they can breed away from water. This freed backboned animals to live anywhere on land. Early on they split into two great lines: one led to reptiles and birds, the other to mammals.",
+  "sources": [
+   {
+    "title": "Wikipedia: Amniote",
+    "url": "https://en.wikipedia.org/wiki/Amniote"
+   },
+   {
+    "title": "Wikipedia: Hylonomus",
+    "url": "https://en.wikipedia.org/wiki/Hylonomus"
+   },
+   {
+    "title": "Nature: Earliest amniote tracks recalibrate the timeline of tetrapod evolution (Long et al. 2025)",
+    "url": "https://www.nature.com/articles/s41586-025-08884-5"
+   },
+   {
+    "title": "TimeTree: divergence time of humans and chickens",
+    "url": "http://timetree.temple.edu/api/pairwise/9606/9031"
+   }
+  ]
+ },
+ {
+  "id": "conifers",
+  "name": "Conifers",
+  "sci": "Pinophyta",
+  "group": "algae-plants",
+  "parent": "seed-plants",
+  "fossilMa": 307,
+  "claimMa": null,
+  "clockMa": null,
+  "extinctMa": null,
+  "peakMa": [
+   252,
+   100
+  ],
+  "oldest": {
+   "name": "Earliest conifer remains (Late Carboniferous)",
+   "place": "Late Carboniferous rocks of Europe and North America",
+   "lonlat": null
+  },
+  "dateLabel": "c. 307 million years ago",
+  "evidence": "fossil",
+  "evidenceNote": "Conifers first appear in the fossil record in the Late Carboniferous, a little over 300 million years ago.",
+  "text": "Conifers carry their seeds in cones and most have needle or scale leaves: pines, firs, cedars, redwoods. Their tough leaves cope with drought and cold, which helped them spread as the coal swamps dried. They were the main trees of the dinosaur age, and the tallest and oldest living trees are conifers.",
+  "sources": [
+   {
+    "title": "Wikipedia: Conifer",
+    "url": "https://en.wikipedia.org/wiki/Conifer"
+   },
+   {
+    "title": "TimeTree: divergence time of thale cress and loblolly pine",
+    "url": "http://timetree.temple.edu/api/pairwise/3702/3352"
+   }
+  ]
+ },
+ {
+  "id": "synapsids",
+  "name": "Synapsids (the mammal line)",
+  "sci": "Synapsida",
+  "group": "reptiles",
+  "parent": "amniotes",
+  "fossilMa": 307,
+  "claimMa": 318,
+  "clockMa": [
+   317,
+   321
+  ],
+  "extinctMa": null,
+  "peakMa": [
+   299,
+   252
+  ],
+  "oldest": {
+   "name": "Archaeothyris florensis",
+   "place": "Florence, Nova Scotia, Canada",
+   "lonlat": [
+    -60.27,
+    46.26
+   ]
+  },
+  "dateLabel": "c. 307 million years ago",
+  "evidence": "disputed",
+  "evidenceNote": "Archaeothyris and Melanedaphodon, about 307 million years old, are the oldest confidently identified members; a skull from Joggins, Asaphestera, about 318 million years old, was reinterpreted in 2020 as an even older one, but it is fragmentary.",
+  "text": "Synapsids are the branch of amniotes that leads to mammals, marked by a single opening in the skull behind each eye. Early ones, such as the sail-backed Dimetrodon, are often called mammal-like reptiles, though they were never reptiles. Before the dinosaurs, synapsids were the dominant land animals.",
+  "sources": [
+   {
+    "title": "Wikipedia: Synapsida",
+    "url": "https://en.wikipedia.org/wiki/Synapsida"
+   },
+   {
+    "title": "Wikipedia: Archaeothyris",
+    "url": "https://en.wikipedia.org/wiki/Archaeothyris"
+   },
+   {
+    "title": "Wikipedia: Asaphestera",
+    "url": "https://en.wikipedia.org/wiki/Asaphestera"
+   },
+   {
+    "title": "Wikipedia: Amniote",
+    "url": "https://en.wikipedia.org/wiki/Amniote"
+   },
+   {
+    "title": "TimeTree: divergence time of humans and chickens",
+    "url": "http://timetree.temple.edu/api/pairwise/9606/9031"
+   }
+  ]
+ },
+ {
+  "id": "beetles",
+  "name": "Beetles",
+  "sci": "Coleoptera",
+  "group": "invertebrates",
+  "parent": "winged-insects",
+  "fossilMa": 297,
+  "claimMa": null,
+  "clockMa": [
+   311,
+   352
+  ],
+  "extinctMa": null,
+  "peakMa": null,
+  "oldest": {
+   "name": "Coleopsis archaica",
+   "place": "South-western Germany",
+   "lonlat": [
+    7.3,
+    49.6
+   ]
+  },
+  "dateLabel": "c. 297 million years ago",
+  "evidence": "fossil",
+  "evidenceNote": "A single small fossil from the early Permian of Germany, about 297 million years old, is the oldest known beetle; gene studies place the split of the beetle line from wasps and bees somewhat earlier.",
+  "text": "Beetles turned their front wings into hard cases that protect the flying wings beneath. That armour let them squeeze under bark, into soil and through water. They are the most species-rich order of animals: roughly one in every four named animal species is a beetle.",
+  "sources": [
+   {
+    "title": "Wikipedia: Beetle",
+    "url": "https://en.wikipedia.org/wiki/Beetle"
+   },
+   {
+    "title": "Wikipedia: Coleopsis",
+    "url": "https://en.wikipedia.org/wiki/Coleopsis"
+   },
+   {
+    "title": "TimeTree: divergence time of honeybees and the flour beetle",
+    "url": "http://timetree.temple.edu/api/pairwise/7460/7070"
+   }
+  ]
+ },
+ {
+  "id": "ginkgos",
+  "name": "Ginkgos",
+  "sci": "Ginkgoales",
+  "group": "algae-plants",
+  "parent": "seed-plants",
+  "fossilMa": 295,
+  "claimMa": null,
+  "clockMa": [
+   272,
+   301
+  ],
+  "extinctMa": null,
+  "peakMa": [
+   200,
+   100
+  ],
+  "oldest": {
+   "name": "Trichopitys",
+   "place": "France",
+   "lonlat": [
+    3.32,
+    43.73
+   ]
+  },
+  "dateLabel": "c. 295 million years ago",
+  "evidence": "fossil",
+  "evidenceNote": "The earliest probable ginkgo relative, Trichopitys, comes from French rocks of the earliest Permian, between 299 and 293 million years old.",
+  "text": "Ginkgos are seed plants with fan-shaped leaves. They were common across the world in the age of dinosaurs, then dwindled until a single species, Ginkgo biloba, survived in China. It is often called a living fossil: plants with seeds like those of the living tree are known from the Middle Jurassic, over 160 million years ago.",
+  "sources": [
+   {
+    "title": "Wikipedia: Ginkgoales",
+    "url": "https://en.wikipedia.org/wiki/Ginkgoales"
+   },
+   {
+    "title": "TimeTree: divergence time of ginkgo and loblolly pine",
+    "url": "http://timetree.temple.edu/api/pairwise/3311/3352"
+   }
+  ]
+ },
+ {
+  "id": "cycads",
+  "name": "Cycads",
+  "sci": "Cycadales",
+  "group": "algae-plants",
+  "parent": "seed-plants",
+  "fossilMa": 280,
+  "claimMa": 300,
+  "clockMa": [
+   236,
+   287
+  ],
+  "extinctMa": null,
+  "peakMa": [
+   252,
+   145
+  ],
+  "oldest": {
+   "name": "Early cycad leaves (probable examples such as Crossozamia are older)",
+   "place": "China and South Korea",
+   "lonlat": null
+  },
+  "dateLabel": "c. 280 million years ago",
+  "evidence": "disputed",
+  "evidenceNote": "Leaves that are probably cycads are known from China and South Korea about 300 million years ago, but they cannot be identified for certain; fossils that are clearly cycads appear in the early to middle Permian, around 280 to 270 million years ago.",
+  "text": "Cycads look like stubby palms with a crown of stiff leaves and large cones, but they are not related to palms. They were a common part of the vegetation in the age of dinosaurs. Two families survive today, in warm regions.",
+  "sources": [
+   {
+    "title": "Wikipedia: Cycad",
+    "url": "https://en.wikipedia.org/wiki/Cycad"
+   },
+   {
+    "title": "TimeTree: divergence time of the sago palm Cycas and loblolly pine",
+    "url": "http://timetree.temple.edu/api/pairwise/3396/3352"
+   }
+  ]
+ },
+ {
+  "id": "therapsids",
+  "name": "Therapsids (advanced mammal relatives)",
+  "sci": "Therapsida",
+  "group": "reptiles",
+  "parent": "synapsids",
+  "fossilMa": 272,
+  "claimMa": null,
+  "clockMa": null,
+  "extinctMa": null,
+  "peakMa": [
+   265,
+   252
+  ],
+  "oldest": {
+   "name": "Raranimus dashankouensis",
+   "place": "Dashankou, Gansu, China",
+   "lonlat": [
+    97.6,
+    39.8
+   ]
+  },
+  "dateLabel": "c. 272 million years ago",
+  "evidence": "fossil",
+  "evidenceNote": "Raranimus, a partial skull from China about 272 million years old, is the most primitive therapsid known; a sabre-toothed gorgonopsian from Mallorca, reported in 2024, may be as old or slightly older.",
+  "text": "Therapsids were synapsids with legs held more upright beneath the body and teeth of different kinds for biting and chewing. Many were probably warm-blooded and some may have had hair. They ruled the land in the late Permian, were almost wiped out 252 million years ago, and one small branch became the mammals.",
+  "sources": [
+   {
+    "title": "Wikipedia: Therapsida",
+    "url": "https://en.wikipedia.org/wiki/Therapsida"
+   },
+   {
+    "title": "Wikipedia: Raranimus",
+    "url": "https://en.wikipedia.org/wiki/Raranimus"
+   },
+   {
+    "title": "Nature Communications: Early-middle Permian Mediterranean gorgonopsian suggests an equatorial origin of therapsids (2024)",
+    "url": "https://www.nature.com/articles/s41467-024-54425-5"
+   }
+  ]
+ },
+ {
+  "id": "amphibians",
+  "name": "Modern amphibians (frogs, salamanders, caecilians)",
+  "sci": "Lissamphibia",
+  "group": "amphibians",
+  "parent": "tetrapods",
+  "fossilMa": 250,
+  "claimMa": 290,
+  "clockMa": [
+   279,
+   355
+  ],
+  "extinctMa": null,
+  "peakMa": null,
+  "oldest": {
+   "name": "Triadobatrachus massinoti (an early frog relative)",
+   "place": "Northern Madagascar",
+   "lonlat": [
+    49.0,
+    -13.2
+   ]
+  },
+  "dateLabel": "c. 250 million years ago",
+  "evidence": "disputed",
+  "evidenceNote": "A frog-like fossil from Madagascar about 250 million years old is the oldest sure member of the modern amphibians; Gerobatrachus, 290 million years old from Texas, may be an earlier relative of frogs and salamanders, but its place is debated. Gene studies suggest the group is older than both.",
+  "text": "Frogs, salamanders and the legless caecilians have thin, moist skin and most lay eggs in water. They are the survivors of the first four-legged animals, though they have changed greatly. Triadobatrachus still had a short tail and many more backbones than a modern frog.",
+  "sources": [
+   {
+    "title": "Wikipedia: Lissamphibia",
+    "url": "https://en.wikipedia.org/wiki/Lissamphibia"
+   },
+   {
+    "title": "Wikipedia: Triadobatrachus",
+    "url": "https://en.wikipedia.org/wiki/Triadobatrachus"
+   },
+   {
+    "title": "Wikipedia: Gerobatrachus",
+    "url": "https://en.wikipedia.org/wiki/Gerobatrachus"
+   },
+   {
+    "title": "TimeTree: divergence time of the clawed frog and the axolotl",
+    "url": "http://timetree.temple.edu/api/pairwise/8364/8296"
+   },
+   {
+    "title": "TimeTree: divergence time of the clawed frog and chickens",
+    "url": "http://timetree.temple.edu/api/pairwise/8364/9031"
+   }
+  ]
+ },
+ {
+  "id": "ichthyosaurs",
+  "name": "Ichthyosaurs",
+  "sci": "Ichthyosauria (Ichthyopterygia)",
+  "group": "reptiles",
+  "parent": "amniotes",
+  "fossilMa": 250,
+  "claimMa": null,
+  "clockMa": null,
+  "extinctMa": 94,
+  "peakMa": [
+   245,
+   175
+  ],
+  "oldest": {
+   "name": "Ichthyosaur tail bones from Spitsbergen; oldest good skeletons: Cartorhynchus and Chaohusaurus, Chaohu, China, c. 248 million years ago",
+   "place": "Spitsbergen, Svalbard, Norway",
+   "lonlat": [
+    16.0,
+    78.3
+   ]
+  },
+  "dateLabel": "c. 250 million years ago",
+  "evidence": "fossil",
+  "evidenceNote": "Bones from Arctic Spitsbergen, reported in 2023, show ichthyosaurs already at sea about 250 million years ago, within 2 million years of the great Permian extinction; the group died out about 94 million years ago.",
+  "text": "Ichthyosaurs were reptiles that returned to the sea and evolved the shape of dolphins, with flippers, a tail fin and huge eyes. They breathed air and gave birth to live young. They ranged from 1 metre to about 26 metres long. They vanished about 28 million years before the dinosaurs.",
+  "sources": [
+   {
+    "title": "Wikipedia: Ichthyosauria",
+    "url": "https://en.wikipedia.org/wiki/Ichthyosauria"
+   },
+   {
+    "title": "Wikipedia: Cartorhynchus",
+    "url": "https://en.wikipedia.org/wiki/Cartorhynchus"
+   },
+   {
+    "title": "Europe PMC record: Earliest Triassic ichthyosaur fossils push back oceanic reptile origins (Current Biology 2023)",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22Earliest%20Triassic%20ichthyosaur%20fossils%20push%20back%20oceanic%20reptile%20origins%22&resultType=core&format=json&pageSize=2"
+   }
+  ]
+ },
+ {
+  "id": "archosaurs",
+  "name": "Archosaurs (ruling reptiles)",
+  "sci": "Archosauria",
+  "group": "reptiles",
+  "parent": "amniotes",
+  "fossilMa": 248,
+  "claimMa": null,
+  "clockMa": null,
+  "extinctMa": null,
+  "peakMa": null,
+  "oldest": {
+   "name": "Ctenosauriscus koeneni (a sail-backed crocodile relative); also Xilousuchus from China",
+   "place": "Near Gottingen, Germany",
+   "lonlat": [
+    9.9,
+    51.55
+   ]
+  },
+  "dateLabel": "c. 248 million years ago",
+  "evidence": "fossil",
+  "evidenceNote": "The oldest true archosaurs are sail-backed reptiles from Germany and China, about 247 to 248 million years old, only a few million years after the Permian extinction.",
+  "text": "Archosaurs are the group that contains crocodiles, pterosaurs, dinosaurs and birds. They rose from the ruins of the greatest mass extinction and dominated the land for the next 180 million years. Birds and crocodiles, the only survivors, are each other's closest living relatives.",
+  "sources": [
+   {
+    "title": "Wikipedia: Archosaur",
+    "url": "https://en.wikipedia.org/wiki/Archosaur"
+   },
+   {
+    "title": "Wikipedia: Ctenosauriscus",
+    "url": "https://en.wikipedia.org/wiki/Ctenosauriscus"
+   },
+   {
+    "title": "Wikipedia: Xilousuchus",
+    "url": "https://en.wikipedia.org/wiki/Xilousuchus"
+   },
+   {
+    "title": "TimeTree: divergence time of chickens and alligators",
+    "url": "http://timetree.temple.edu/api/pairwise/9031/8496"
+   }
+  ]
+ },
+ {
+  "id": "squamates",
+  "name": "Lizards and snakes",
+  "sci": "Squamata",
+  "group": "reptiles",
+  "parent": "amniotes",
+  "fossilMa": 240,
+  "claimMa": null,
+  "clockMa": [
+   237,
+   253
+  ],
+  "extinctMa": null,
+  "peakMa": null,
+  "oldest": {
+   "name": "Megachirella wachtleri",
+   "place": "Dolomites, northern Italy",
+   "lonlat": [
+    12.1,
+    46.7
+   ]
+  },
+  "dateLabel": "c. 240 million years ago",
+  "evidence": "fossil",
+  "evidenceNote": "A small reptile from the Italian Alps, about 240 million years old, was shown in 2018 to be the oldest known member of the lizard line; fossils of the modern lizard groups begin about 168 million years ago, and a claimed 202-million-year-old one from England is disputed.",
+  "text": "Lizards and snakes shed their scaly skin and have very flexible skulls. With nearly 12,000 species they are the most varied reptiles alive. Their early fossils are scarce because small, light bones rarely survive, leaving a gap of about 70 million years between the first lizard relative and the next good fossils.",
+  "sources": [
+   {
+    "title": "Wikipedia: Squamata",
+    "url": "https://en.wikipedia.org/wiki/Squamata"
+   },
+   {
+    "title": "Wikipedia: Megachirella",
+    "url": "https://en.wikipedia.org/wiki/Megachirella"
+   },
+   {
+    "title": "Nature: The origin of squamates revealed by a Middle Triassic lizard from the Italian Alps (Simoes et al. 2018)",
+    "url": "https://www.nature.com/articles/s41586-018-0093-3"
+   },
+   {
+    "title": "Royal Society Open Science: The affinities of the Late Triassic Cryptovaranoides and the age of crown squamates (2023)",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10565374/"
+   },
+   {
+    "title": "TimeTree: divergence time of anole lizards and the tuatara",
+    "url": "http://timetree.temple.edu/api/pairwise/28377/8508"
+   }
+  ]
+ },
+ {
+  "id": "dinosaurs",
+  "name": "Dinosaurs",
+  "sci": "Dinosauria",
+  "group": "dinosaurs",
+  "parent": "archosaurs",
+  "fossilMa": 233,
+  "claimMa": 243,
+  "clockMa": null,
+  "extinctMa": null,
+  "peakMa": [
+   201,
+   66
+  ],
+  "oldest": {
+   "name": "Staurikosaurus, Buriolestes and other Santa Maria Formation dinosaurs",
+   "place": "Santa Maria, Rio Grande do Sul, Brazil",
+   "lonlat": [
+    -53.8,
+    -29.7
+   ]
+  },
+  "dateLabel": "c. 233 million years ago",
+  "evidence": "disputed",
+  "evidenceNote": "The oldest sure dinosaurs come from Brazil and Argentina, about 233 to 231 million years old; Nyasasaurus from Tanzania, about 243 million years old, is known from an arm bone and a few backbones and is either the earliest dinosaur or a very close cousin.",
+  "text": "Dinosaurs were reptiles that walked with their legs straight under the body. They began small and two-legged, as minor players in a world of crocodile relatives, and took over after an extinction 201 million years ago. All died out 66 million years ago, except one branch that is still with us: the birds.",
+  "sources": [
+   {
+    "title": "Wikipedia: Dinosaur",
+    "url": "https://en.wikipedia.org/wiki/Dinosaur"
+   },
+   {
+    "title": "Wikipedia: Nyasasaurus",
+    "url": "https://en.wikipedia.org/wiki/Nyasasaurus"
+   },
+   {
+    "title": "Biology Letters: The oldest dinosaur? A Middle Triassic dinosauriform from Tanzania (Nesbitt et al. 2013)",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3565515/"
+   },
+   {
+    "title": "Wikipedia: Santa Maria Formation",
+    "url": "https://en.wikipedia.org/wiki/Santa_Maria_Formation"
+   },
+   {
+    "title": "University of Wisconsin-Madison News: oldest North American dinosaur fossils (Ahvaytum, 2025)",
+    "url": "https://news.wisc.edu/?p=110068"
+   }
+  ]
+ },
+ {
+  "id": "sauropods",
+  "name": "Long-necked dinosaurs (sauropods and their relatives)",
+  "sci": "Sauropodomorpha",
+  "group": "dinosaurs",
+  "parent": "dinosaurs",
+  "fossilMa": 233,
+  "claimMa": null,
+  "clockMa": null,
+  "extinctMa": 66,
+  "peakMa": [
+   160,
+   66
+  ],
+  "oldest": {
+   "name": "Buriolestes schultzi",
+   "place": "Santa Maria Formation, southern Brazil",
+   "lonlat": [
+    -53.5,
+    -29.6
+   ]
+  },
+  "dateLabel": "c. 233 million years ago",
+  "evidence": "fossil",
+  "evidenceNote": "Buriolestes, a small two-legged meat-eater from Brazil about 233 million years old, is the earliest known member of the long-necked line; true giant sauropods on four legs are certain from the Early Jurassic, about 200 million years ago.",
+  "text": "The ancestors of the long-necked giants were dog-sized runners. Their descendants walked on four pillar-like legs, grew long necks to reach high leaves and became the largest animals ever to live on land. Sauropods such as Diplodocus and Brachiosaurus belong here, and the group lasted until the end of the dinosaur age.",
+  "sources": [
+   {
+    "title": "Wikipedia: Sauropodomorpha",
+    "url": "https://en.wikipedia.org/wiki/Sauropodomorpha"
+   },
+   {
+    "title": "Wikipedia: Buriolestes",
+    "url": "https://en.wikipedia.org/wiki/Buriolestes"
+   },
+   {
+    "title": "Wikipedia: Sauropoda",
+    "url": "https://en.wikipedia.org/wiki/Sauropoda"
+   }
+  ]
+ },
+ {
+  "id": "theropods",
+  "name": "Meat-eating dinosaurs (theropods)",
+  "sci": "Theropoda",
+  "group": "dinosaurs",
+  "parent": "dinosaurs",
+  "fossilMa": 231,
+  "claimMa": null,
+  "clockMa": null,
+  "extinctMa": null,
+  "peakMa": null,
+  "oldest": {
+   "name": "Eodromaeus murphi",
+   "place": "Ischigualasto, San Juan, Argentina",
+   "lonlat": [
+    -67.9,
+    -30.1
+   ]
+  },
+  "dateLabel": "c. 231 million years ago",
+  "evidence": "fossil",
+  "evidenceNote": "Eodromaeus, a slim hunter about 1.2 metres long from Argentine rocks about 231 million years old, is among the earliest theropods.",
+  "text": "Theropods were two-legged dinosaurs with hollow bones and, in most, sharp teeth and claws. They include Allosaurus, Velociraptor and Tyrannosaurus. Many had feathers. One branch of small feathered theropods took to the air and became the birds, so theropods are the only dinosaurs still alive.",
+  "sources": [
+   {
+    "title": "Wikipedia: Theropoda",
+    "url": "https://en.wikipedia.org/wiki/Theropoda"
+   },
+   {
+    "title": "Wikipedia: Eodromaeus",
+    "url": "https://en.wikipedia.org/wiki/Eodromaeus"
+   }
+  ]
+ },
+ {
+  "id": "crocodilians",
+  "name": "Crocodiles and their relatives",
+  "sci": "Crocodylomorpha (living members: Crocodylia)",
+  "group": "reptiles",
+  "parent": "archosaurs",
+  "fossilMa": 230,
+  "claimMa": null,
+  "clockMa": [
+   240,
+   247
+  ],
+  "extinctMa": null,
+  "peakMa": null,
+  "oldest": {
+   "name": "Hesperosuchus and other small, long-legged 'sphenosuchians'",
+   "place": "Arizona and New Mexico, USA",
+   "lonlat": [
+    -109.8,
+    35.0
+   ]
+  },
+  "dateLabel": "c. 230 million years ago",
+  "evidence": "fossil",
+  "evidenceNote": "The first crocodile relatives are small, slender land-runners from Late Triassic rocks, roughly 235 to 225 million years old; gene studies date the split of the crocodile line from the bird line to about 245 million years ago.",
+  "text": "The first crocodile relatives were not river ambushers but lightly built animals that ran on long legs. Over time the group produced sea-going forms with flippers, plant-eaters and giants. The modern crocodiles, alligators and gharials belong to a branch that appeared in the Cretaceous and survived the extinction that killed the dinosaurs.",
+  "sources": [
+   {
+    "title": "Wikipedia: Crocodylomorpha",
+    "url": "https://en.wikipedia.org/wiki/Crocodylomorpha"
+   },
+   {
+    "title": "Wikipedia: Hesperosuchus",
+    "url": "https://en.wikipedia.org/wiki/Hesperosuchus"
+   },
+   {
+    "title": "Wikipedia: Crocodilia",
+    "url": "https://en.wikipedia.org/wiki/Crocodilia"
+   },
+   {
+    "title": "TimeTree: divergence time of chickens and alligators",
+    "url": "http://timetree.temple.edu/api/pairwise/9031/8496"
+   }
+  ]
+ },
+ {
+  "id": "pterosaurs",
+  "name": "Pterosaurs (flying reptiles)",
+  "sci": "Pterosauria",
+  "group": "reptiles",
+  "parent": "archosaurs",
+  "fossilMa": 228,
+  "claimMa": null,
+  "clockMa": null,
+  "extinctMa": 66,
+  "peakMa": [
+   150,
+   66
+  ],
+  "oldest": {
+   "name": "Preondactylus buffarinii and other Late Triassic pterosaurs of the Alps",
+   "place": "Preone valley, Friuli, Italy",
+   "lonlat": [
+    12.87,
+    46.4
+   ]
+  },
+  "dateLabel": "c. 228 million years ago",
+  "evidence": "fossil",
+  "evidenceNote": "The oldest pterosaur skeletons come from Late Triassic rocks of the Italian Alps and nearby, up to about 228 million years old; they were already fully able to fly, so their beginnings are still unknown.",
+  "text": "Pterosaurs were the first animals with backbones to fly under their own power, on wings of skin stretched from one enormously long finger. They were close cousins of dinosaurs, not dinosaurs. Early kinds had wingspans of up to 2 metres; later ones included the largest flying animals known. They died out with the dinosaurs.",
+  "sources": [
+   {
+    "title": "Wikipedia: Pterosaur",
+    "url": "https://en.wikipedia.org/wiki/Pterosaur"
+   },
+   {
+    "title": "Wikipedia: Preondactylus",
+    "url": "https://en.wikipedia.org/wiki/Preondactylus"
+   }
+  ]
+ },
+ {
+  "id": "turtles",
+  "name": "Turtles and tortoises",
+  "sci": "Testudines and their stem group",
+  "group": "reptiles",
+  "parent": "amniotes",
+  "fossilMa": 220,
+  "claimMa": 260,
+  "clockMa": [
+   249,
+   265
+  ],
+  "extinctMa": null,
+  "peakMa": null,
+  "oldest": {
+   "name": "Odontochelys semitestacea",
+   "place": "Guanling, Guizhou, China",
+   "lonlat": [
+    105.6,
+    25.9
+   ]
+  },
+  "dateLabel": "c. 220 million years ago",
+  "evidence": "disputed",
+  "evidenceNote": "Odontochelys, 220 million years old, had teeth and only the lower half of a shell; Pappochelys from Germany (240 million years) is a shell-less forerunner, and Eunotosaurus from South Africa (about 260 million years) has turtle-like broad ribs, but whether it is a true turtle ancestor is debated.",
+  "text": "Turtles are reptiles whose ribs and backbone grew into a bony shell. Where they fit among reptiles was argued over for a century; DNA now places them nearest the crocodiles and birds. Fossils show the shell was built in stages, the belly plate first. The body plan has barely changed in 200 million years.",
+  "sources": [
+   {
+    "title": "Wikipedia: Turtle",
+    "url": "https://en.wikipedia.org/wiki/Turtle"
+   },
+   {
+    "title": "Wikipedia: Odontochelys",
+    "url": "https://en.wikipedia.org/wiki/Odontochelys"
+   },
+   {
+    "title": "Nature: An ancestral turtle from the Late Triassic of southwestern China (Li et al. 2008)",
+    "url": "https://www.nature.com/articles/nature07533"
+   },
+   {
+    "title": "Nature: A Middle Triassic stem-turtle and the evolution of the turtle body plan (Schoch & Sues 2015)",
+    "url": "https://www.nature.com/articles/nature14472"
+   },
+   {
+    "title": "TimeTree: divergence time of chickens and painted turtles",
+    "url": "http://timetree.temple.edu/api/pairwise/9031/8479"
+   }
+  ]
+ },
+ {
+  "id": "mammals",
+  "name": "Mammals",
+  "sci": "Mammalia (in the broad sense, Mammaliaformes)",
+  "group": "mammals",
+  "parent": "therapsids",
+  "fossilMa": 205,
+  "claimMa": 225,
+  "clockMa": null,
+  "extinctMa": null,
+  "peakMa": null,
+  "oldest": {
+   "name": "Morganucodon",
+   "place": "Glamorgan, Wales",
+   "lonlat": [
+    -3.5,
+    51.47
+   ]
+  },
+  "dateLabel": "c. 205 million years ago",
+  "evidence": "disputed",
+  "evidenceNote": "Shrew-sized Morganucodon, about 205 million years old, is usually called the first mammal; Brasilodon from Brazil, 225 million years old, changed its teeth only once as mammals do and was called the oldest mammal in 2022, but others say that makes it a very close relative, not a mammal.",
+  "text": "Mammals have hair, feed their young on milk and hear with three tiny bones in the middle ear. They appeared at almost the same time as the dinosaurs and stayed small, mostly active at night, for 140 million years. The last shared ancestor of today's mammals lived about 180 million years ago.",
+  "sources": [
+   {
+    "title": "Wikipedia: Mammal",
+    "url": "https://en.wikipedia.org/wiki/Mammal"
+   },
+   {
+    "title": "Wikipedia: Morganucodon",
+    "url": "https://en.wikipedia.org/wiki/Morganucodon"
+   },
+   {
+    "title": "Natural History Museum, London: Earliest known mammal is identified using fossil tooth records",
+    "url": "https://www.nhm.ac.uk/press-office/press-releases/earliest-known-mammal-is-identified-using-fossil-tooth-records.html"
+   },
+   {
+    "title": "Europe PMC record: Diphyodont tooth replacement of Brasilodon, a Late Triassic eucynodont that challenges the time of origin of mammals (Journal of Anatomy 2022)",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1111/joa.13756%22&resultType=core&format=json"
+   },
+   {
+    "title": "TimeTree: divergence time of humans and the platypus",
+    "url": "http://timetree.temple.edu/api/pairwise/9606/9258"
+   }
+  ]
+ },
+ {
+  "id": "plesiosaurs",
+  "name": "Plesiosaurs",
+  "sci": "Plesiosauria",
+  "group": "reptiles",
+  "parent": "amniotes",
+  "fossilMa": 205,
+  "claimMa": null,
+  "clockMa": null,
+  "extinctMa": 66,
+  "peakMa": [
+   190,
+   70
+  ],
+  "oldest": {
+   "name": "Rhaeticosaurus mertensi",
+   "place": "North-western Germany",
+   "lonlat": [
+    9.05,
+    51.57
+   ]
+  },
+  "dateLabel": "c. 205 million years ago",
+  "evidence": "fossil",
+  "evidenceNote": "The only plesiosaur skeleton known from the Triassic, about 205 million years old, was described from Germany in 2017; the group lasted until the extinction 66 million years ago.",
+  "text": "Plesiosaurs were sea reptiles that swam with four large flippers, as if flying under water. Some had small heads on very long necks; others, the pliosaurs, had short necks and huge jaws. They breathed air, and they shared the seas of the Jurassic and Cretaceous with ichthyosaurs and later mosasaurs.",
+  "sources": [
+   {
+    "title": "Wikipedia: Plesiosaur",
+    "url": "https://en.wikipedia.org/wiki/Plesiosaur"
+   },
+   {
+    "title": "Wikipedia: Rhaeticosaurus",
+    "url": "https://en.wikipedia.org/wiki/Rhaeticosaurus"
+   },
+   {
+    "title": "Science Advances: A Triassic plesiosaurian skeleton and bone histology inform on evolution of a unique body plan (Wintrich et al. 2017)",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5729018/"
+   }
+  ]
+ },
+ {
+  "id": "butterflies-moths",
+  "name": "Moths and butterflies",
+  "sci": "Lepidoptera",
+  "group": "invertebrates",
+  "parent": "winged-insects",
+  "fossilMa": 201,
+  "claimMa": 236,
+  "clockMa": [
+   249,
+   320
+  ],
+  "extinctMa": null,
+  "peakMa": null,
+  "oldest": {
+   "name": "Fossil wing scales (oldest body fossil: Archaeolepis mane, Dorset, England, c. 190 million years ago)",
+   "place": "Northern Germany",
+   "lonlat": [
+    10.7,
+    52.3
+   ]
+  },
+  "dateLabel": "c. 201 million years ago",
+  "evidence": "disputed",
+  "evidenceNote": "Wing scales from a German drill core, about 201 million years old, are the oldest sure trace of moths; scales in 236-million-year-old dung from Argentina are probably from moths too, but that is less certain.",
+  "text": "Moths and butterflies are insects whose wings are covered in tiny coloured scales. Surprisingly, the first moths with sucking mouthparts lived tens of millions of years before flowers existed, so they must have drunk something else. When flowering plants spread, moths became some of their most important pollinators.",
+  "sources": [
+   {
+    "title": "Wikipedia: Lepidoptera",
+    "url": "https://en.wikipedia.org/wiki/Lepidoptera"
+   },
+   {
+    "title": "Wikipedia: Archaeolepis",
+    "url": "https://en.wikipedia.org/wiki/Archaeolepis"
+   },
+   {
+    "title": "Europe PMC record: A Triassic-Jurassic window into the evolution of Lepidoptera (Science Advances 2018)",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1126/sciadv.1701568%22&resultType=core&format=json"
+   },
+   {
+    "title": "TimeTree: divergence time of silk moths and fruit flies",
+    "url": "http://timetree.temple.edu/api/pairwise/7091/7227"
+   }
+  ]
+ },
+ {
+  "id": "ornithischians",
+  "name": "Bird-hipped dinosaurs (armoured, horned and duck-billed)",
+  "sci": "Ornithischia",
+  "group": "dinosaurs",
+  "parent": "dinosaurs",
+  "fossilMa": 200,
+  "claimMa": 229,
+  "clockMa": null,
+  "extinctMa": 66,
+  "peakMa": [
+   160,
+   66
+  ],
+  "oldest": {
+   "name": "Lesothosaurus and other Early Jurassic forms",
+   "place": "Lesotho, southern Africa",
+   "lonlat": [
+    27.9,
+    -29.9
+   ]
+  },
+  "dateLabel": "c. 200 million years ago",
+  "evidence": "disputed",
+  "evidenceNote": "Sure members of this group appear at the start of the Jurassic, about 200 million years ago; Pisanosaurus from Argentina, about 229 million years old, was long counted as the oldest, but since 2017 many researchers place it outside the dinosaurs.",
+  "text": "This great branch of plant-eating dinosaurs includes Stegosaurus, Triceratops, Ankylosaurus and the duck-bills. They had a beak at the front of the mouth and rows of grinding teeth behind. Despite the name bird-hipped, birds did not come from them. Their near absence from the Triassic is an unsolved puzzle.",
+  "sources": [
+   {
+    "title": "Wikipedia: Ornithischia",
+    "url": "https://en.wikipedia.org/wiki/Ornithischia"
+   },
+   {
+    "title": "Wikipedia: Pisanosaurus",
+    "url": "https://en.wikipedia.org/wiki/Pisanosaurus"
+   },
+   {
+    "title": "Wikipedia: Lesothosaurus",
+    "url": "https://en.wikipedia.org/wiki/Lesothosaurus"
+   }
+  ]
+ },
+ {
+  "id": "tyrannosaurs",
+  "name": "Tyrannosaurs",
+  "sci": "Tyrannosauroidea",
+  "group": "dinosaurs",
+  "parent": "theropods",
+  "fossilMa": 166,
+  "claimMa": null,
+  "clockMa": null,
+  "extinctMa": 66,
+  "peakMa": [
+   80,
+   66
+  ],
+  "oldest": {
+   "name": "Proceratosaurus bradleyi (also Kileskus from Siberia)",
+   "place": "Minchinhampton, Gloucestershire, England",
+   "lonlat": [
+    -2.19,
+    51.7
+   ]
+  },
+  "dateLabel": "c. 166 million years ago",
+  "evidence": "fossil",
+  "evidenceNote": "A crested skull found in England in rocks about 166 million years old belongs to the earliest known tyrannosaur relative, an animal about 3 metres long.",
+  "text": "For their first 80 million years tyrannosaurs were small or middle-sized hunters living in the shadow of bigger meat-eaters, and some had feathers. Only near the end of the dinosaur age did they become giants. Tyrannosaurus, which grew over 12 metres long, was among the very last dinosaurs.",
+  "sources": [
+   {
+    "title": "Wikipedia: Tyrannosauroidea",
+    "url": "https://en.wikipedia.org/wiki/Tyrannosauroidea"
+   },
+   {
+    "title": "Wikipedia: Proceratosaurus",
+    "url": "https://en.wikipedia.org/wiki/Proceratosaurus"
+   }
+  ]
+ },
+ {
+  "id": "birds",
+  "name": "Birds",
+  "sci": "Avialae",
+  "group": "birds",
+  "parent": "theropods",
+  "fossilMa": 150,
+  "claimMa": 160,
+  "clockMa": null,
+  "extinctMa": null,
+  "peakMa": null,
+  "oldest": {
+   "name": "Archaeopteryx lithographica",
+   "place": "Solnhofen, Bavaria, Germany",
+   "lonlat": [
+    10.99,
+    48.9
+   ]
+  },
+  "dateLabel": "c. 150 million years ago",
+  "evidence": "disputed",
+  "evidenceNote": "Archaeopteryx, 150 million years old, has long been called the first bird; feathered Chinese animals about 160 million years old, such as Anchiornis and Aurornis, are birds in some family trees and bird-like dinosaurs in others, because there is no sharp line between the two.",
+  "text": "Birds are living dinosaurs, descended from small feathered meat-eaters. Archaeopteryx had wings and flight feathers but also teeth, clawed fingers and a long bony tail. Baminornis, a bird of the same age described from China in 2025, already had a short tail, showing that birds were varied by the Late Jurassic.",
+  "sources": [
+   {
+    "title": "Wikipedia: Archaeopteryx",
+    "url": "https://en.wikipedia.org/wiki/Archaeopteryx"
+   },
+   {
+    "title": "Wikipedia: Bird",
+    "url": "https://en.wikipedia.org/wiki/Bird"
+   },
+   {
+    "title": "Nature: Earliest short-tailed bird from the Late Jurassic of China (Chen et al. 2025)",
+    "url": "https://www.nature.com/articles/s41586-024-08410-z"
+   },
+   {
+    "title": "Natural History Museum, London: New early bird species revealed by fossils unearthed in China",
+    "url": "https://www.nhm.ac.uk/discover/news/2025/february/new-early-bird-species-revealed-fossils-unearthed-china.html"
+   },
+   {
+    "title": "Wikipedia: Aurornis",
+    "url": "https://en.wikipedia.org/wiki/Aurornis"
+   }
+  ]
+ },
+ {
+  "id": "flowering-plants",
+  "name": "Flowering plants",
+  "sci": "Angiosperms",
+  "group": "algae-plants",
+  "parent": "seed-plants",
+  "fossilMa": 130,
+  "claimMa": 174,
+  "clockMa": [
+   149,
+   256
+  ],
+  "extinctMa": null,
+  "peakMa": null,
+  "oldest": {
+   "name": "Montsechia vidalii (older flowering-plant pollen is known from about 135 million years ago)",
+   "place": "Montsec, Pyrenees, Spain",
+   "lonlat": [
+    0.9,
+    42.0
+   ]
+  },
+  "dateLabel": "c. 130 million years ago",
+  "evidence": "disputed",
+  "evidenceNote": "Pollen and water plants such as Montsechia show flowering plants by about 135 to 125 million years ago; Nanjinganthus, a 174-million-year-old Chinese fossil described as a flower in 2018, is read by critics as a conifer cone, while gene studies point to an origin tens of millions of years before any sure fossil.",
+  "text": "Flowering plants enclose their seeds in fruit and use flowers to recruit insects and other animals as pollen carriers. They appear late and then spread with astonishing speed, which Darwin called an abominable mystery. With about 300,000 known species they are by far the most varied land plants, and they provide nearly all our food.",
+  "sources": [
+   {
+    "title": "Wikipedia: Flowering plant",
+    "url": "https://en.wikipedia.org/wiki/Flowering_plant"
+   },
+   {
+    "title": "PNAS: Montsechia, an ancient aquatic angiosperm (Gomez et al. 2015)",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4568254/"
+   },
+   {
+    "title": "eLife: An unexpected noncarpellate epigynous flower from the Jurassic of China (Fu et al. 2018)",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6298773/"
+   },
+   {
+    "title": "Europe PMC record: How deep is the conflict between molecular and fossil evidence on the age of angiosperms? (New Phytologist 2019)",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1111/nph.15708%22&resultType=core&format=json"
+   },
+   {
+    "title": "New Phytologist: Constraining uncertainty in the timescale of angiosperm evolution (Barba-Montoya et al. 2018)",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6055841/"
+   }
+  ]
+ },
+ {
+  "id": "monotremes",
+  "name": "Egg-laying mammals (monotremes)",
+  "sci": "Monotremata",
+  "group": "mammals",
+  "parent": "mammals",
+  "fossilMa": 125,
+  "claimMa": null,
+  "clockMa": [
+   168,
+   194
+  ],
+  "extinctMa": null,
+  "peakMa": null,
+  "oldest": {
+   "name": "Teinolophos trusleri",
+   "place": "Flat Rocks, Victoria, Australia",
+   "lonlat": [
+    145.68,
+    -38.66
+   ]
+  },
+  "dateLabel": "c. 125 million years ago",
+  "evidence": "fossil",
+  "evidenceNote": "Tiny jawbones from Australian rocks about 125 million years old belong to the earliest known monotreme; gene studies show the line split from other mammals about 180 million years ago, so some 55 million years of its history are missing.",
+  "text": "The platypus and the echidnas are the only mammals that lay eggs. They feed their young on milk, but it oozes from the skin because they have no teats. Monotremes are the last survivors of the oldest branch of living mammals and have always been known only from the southern continents.",
+  "sources": [
+   {
+    "title": "Wikipedia: Monotreme",
+    "url": "https://en.wikipedia.org/wiki/Monotreme"
+   },
+   {
+    "title": "Wikipedia: Teinolophos",
+    "url": "https://en.wikipedia.org/wiki/Teinolophos"
+   },
+   {
+    "title": "TimeTree: divergence time of humans and the platypus",
+    "url": "http://timetree.temple.edu/api/pairwise/9606/9258"
+   }
+  ]
+ },
+ {
+  "id": "ants",
+  "name": "Ants",
+  "sci": "Formicidae",
+  "group": "invertebrates",
+  "parent": "winged-insects",
+  "fossilMa": 113,
+  "claimMa": null,
+  "clockMa": [
+   111,
+   135
+  ],
+  "extinctMa": null,
+  "peakMa": null,
+  "oldest": {
+   "name": "Vulcanidris cratensis (a 'hell ant')",
+   "place": "Crato Formation, north-eastern Brazil",
+   "lonlat": [
+    -39.5,
+    -7.2
+   ]
+  },
+  "dateLabel": "c. 113 million years ago",
+  "evidence": "fossil",
+  "evidenceNote": "A winged 'hell ant' with scythe-like jaws, found in Brazilian limestone and described in 2025, is 113 million years old, about 13 million years older than the previous record; gene studies suggest ants began a little before that.",
+  "text": "Ants evolved from wasps and live in colonies where most members are workers that never breed. The earliest known ants already lived alongside the dinosaurs. They later became some of the most numerous animals on land, turning over soil, spreading seeds and farming fungi and aphids.",
+  "sources": [
+   {
+    "title": "Wikipedia: Ant",
+    "url": "https://en.wikipedia.org/wiki/Ant"
+   },
+   {
+    "title": "Wikipedia: Vulcanidris",
+    "url": "https://en.wikipedia.org/wiki/Vulcanidris"
+   },
+   {
+    "title": "Europe PMC record: A hell ant from the Lower Cretaceous of Brazil (Current Biology 2025)",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22hell%20ant%20from%20the%20Lower%20Cretaceous%20of%20Brazil%22&resultType=core&format=json&pageSize=2"
+   },
+   {
+    "title": "TimeTree: divergence time of honeybees and fire ants",
+    "url": "http://timetree.temple.edu/api/pairwise/7460/13686"
+   }
+  ]
+ },
+ {
+  "id": "marsupials",
+  "name": "Marsupials and their relatives",
+  "sci": "Metatheria (living members: Marsupialia)",
+  "group": "mammals",
+  "parent": "mammals",
+  "fossilMa": 110,
+  "claimMa": 125,
+  "clockMa": [
+   152,
+   166
+  ],
+  "extinctMa": null,
+  "peakMa": null,
+  "oldest": {
+   "name": "Early metatherians of the mid-Cretaceous",
+   "place": "Western North America",
+   "lonlat": null
+  },
+  "dateLabel": "c. 110 million years ago",
+  "evidence": "disputed",
+  "evidenceNote": "The oldest fossils on the marsupial line are from the mid-Cretaceous, about 110 million years ago; Sinodelphys from China, 125 million years old, was hailed as the first, but a 2018 study moved it to the placental side. Gene studies date the split between the two lines to about 160 million years ago.",
+  "text": "Marsupials give birth to tiny young that finish growing while attached to a teat, often inside a pouch. Their line began in the northern continents, reached South America and crossed Antarctica to Australia, where it produced kangaroos, koalas and wombats. Opossums are their best-known representatives in the Americas.",
+  "sources": [
+   {
+    "title": "Wikipedia: Metatheria",
+    "url": "https://en.wikipedia.org/wiki/Metatheria"
+   },
+   {
+    "title": "Wikipedia: Marsupial",
+    "url": "https://en.wikipedia.org/wiki/Marsupial"
+   },
+   {
+    "title": "Nature: An Early Cretaceous eutherian and the placental-marsupial dichotomy (Bi et al. 2018)",
+    "url": "https://www.nature.com/articles/s41586-018-0210-3"
+   },
+   {
+    "title": "TimeTree: divergence time of humans and the opossum",
+    "url": "http://timetree.temple.edu/api/pairwise/9606/13616"
+   }
+  ]
+ },
+ {
+  "id": "grasses",
+  "name": "Grasses",
+  "sci": "Poaceae",
+  "group": "algae-plants",
+  "parent": "flowering-plants",
+  "fossilMa": 105,
+  "claimMa": null,
+  "clockMa": null,
+  "extinctMa": null,
+  "peakMa": null,
+  "oldest": {
+   "name": "Grass skin cells and silica bodies stuck to the teeth of the dinosaur Equijubus",
+   "place": "Northern China",
+   "lonlat": [
+    97.5,
+    41.5
+   ]
+  },
+  "dateLabel": "c. 113 to 100 million years ago",
+  "evidence": "fossil",
+  "evidenceNote": "Microscopic grass remains were found in 2018 on the teeth of a plant-eating dinosaur from China that lived 113 to 100 million years ago; grass fragments also occur in dinosaur dung from India about 66 million years old.",
+  "text": "Grasses grow from the base, so they survive being grazed or burned. They were a minor part of the dinosaurs' world and only formed open grasslands tens of millions of years later. Grazing mammals such as horses evolved with them, and wheat, rice and maize are grasses.",
+  "sources": [
+   {
+    "title": "Wikipedia: Poaceae",
+    "url": "https://en.wikipedia.org/wiki/Poaceae"
+   },
+   {
+    "title": "Wikipedia: Equijubus",
+    "url": "https://en.wikipedia.org/wiki/Equijubus"
+   }
+  ]
+ },
+ {
+  "id": "snakes",
+  "name": "Snakes",
+  "sci": "Serpentes (Ophidia)",
+  "group": "reptiles",
+  "parent": "squamates",
+  "fossilMa": 100,
+  "claimMa": 167,
+  "clockMa": [
+   155,
+   169
+  ],
+  "extinctMa": null,
+  "peakMa": null,
+  "oldest": {
+   "name": "Haasiophis, Pachyrhachis and other sea snakes with small hind legs",
+   "place": "Ein Yabrud, West Bank",
+   "lonlat": [
+    35.24,
+    31.95
+   ]
+  },
+  "dateLabel": "c. 100 million years ago",
+  "evidence": "disputed",
+  "evidenceNote": "The oldest snakes known from good skeletons are about 100 to 95 million years old and still had small back legs; jaw fragments from England about 167 million years old were described in 2015 as the oldest snakes, but not everyone accepts scraps of jaw as proof.",
+  "text": "Snakes are lizards that lost their legs and evolved long bodies with hundreds of backbones and jaws that open extremely wide. Fossils with small hind legs show the change under way. Whether the first snakes burrowed underground or swam in the sea is still debated. Today there are about 4,000 species.",
+  "sources": [
+   {
+    "title": "Wikipedia: Snake",
+    "url": "https://en.wikipedia.org/wiki/Snake"
+   },
+   {
+    "title": "Wikipedia: Haasiophis",
+    "url": "https://en.wikipedia.org/wiki/Haasiophis"
+   },
+   {
+    "title": "Wikipedia: Najash",
+    "url": "https://en.wikipedia.org/wiki/Najash"
+   },
+   {
+    "title": "Nature Communications: The oldest known snakes from the Middle Jurassic-Lower Cretaceous (Caldwell et al. 2015)",
+    "url": "https://www.nature.com/articles/ncomms6996"
+   },
+   {
+    "title": "TimeTree: divergence time of anole lizards and pythons",
+    "url": "http://timetree.temple.edu/api/pairwise/28377/176946"
+   }
+  ]
+ },
+ {
+  "id": "mosasaurs",
+  "name": "Mosasaurs",
+  "sci": "Mosasauridae",
+  "group": "reptiles",
+  "parent": "squamates",
+  "fossilMa": 94,
+  "claimMa": null,
+  "clockMa": null,
+  "extinctMa": 66,
+  "peakMa": [
+   85,
+   66
+  ],
+  "oldest": {
+   "name": "Dallasaurus turneri, one of the earliest and smallest",
+   "place": "Dallas, Texas, USA",
+   "lonlat": [
+    -96.9,
+    32.7
+   ]
+  },
+  "dateLabel": "c. 94 million years ago",
+  "evidence": "fossil",
+  "evidenceNote": "Mosasaurs appear in sea rocks about 94 million years old (possibly 98); Dallasaurus, under a metre long, still had limbs that could walk. All died out 66 million years ago.",
+  "text": "Mosasaurs were lizards, relatives of monitor lizards and snakes, that took to the sea just as the ichthyosaurs disappeared. They soon evolved flippers and became the dominant hunters of the seas for the last 20 million years of the dinosaur age.",
+  "sources": [
+   {
+    "title": "Wikipedia: Mosasaur",
+    "url": "https://en.wikipedia.org/wiki/Mosasaur"
+   },
+   {
+    "title": "Wikipedia: Dallasaurus",
+    "url": "https://en.wikipedia.org/wiki/Dallasaurus"
+   }
+  ]
+ },
+ {
+  "id": "bees",
+  "name": "Bees",
+  "sci": "Anthophila",
+  "group": "invertebrates",
+  "parent": "winged-insects",
+  "fossilMa": 70,
+  "claimMa": 100,
+  "clockMa": [
+   111,
+   135
+  ],
+  "extinctMa": null,
+  "peakMa": null,
+  "oldest": {
+   "name": "Cretotrigona prisca (a stingless bee in amber)",
+   "place": "New Jersey, USA",
+   "lonlat": [
+    -74.4,
+    40.2
+   ]
+  },
+  "dateLabel": "c. 70 million years ago",
+  "evidence": "disputed",
+  "evidenceNote": "The oldest bee body fossil is in New Jersey amber about 70 million years old; fossil nests from Patagonia were reported in 2020 as bee nests 100 million years old, and an insect in 100-million-year-old amber has been called a bee, but both are debated.",
+  "text": "Bees are wasps that switched from hunting insects to feeding their young on pollen. They rose alongside the flowering plants, each shaping the other: flowers evolved colours, scents and nectar to attract bees, and bees evolved hairy bodies to carry pollen. Much of our fruit depends on them.",
+  "sources": [
+   {
+    "title": "Wikipedia: Bee",
+    "url": "https://en.wikipedia.org/wiki/Bee"
+   },
+   {
+    "title": "Wikipedia: Cretotrigona",
+    "url": "https://en.wikipedia.org/wiki/Cretotrigona"
+   },
+   {
+    "title": "Wikipedia: Melittosphex",
+    "url": "https://en.wikipedia.org/wiki/Melittosphex"
+   },
+   {
+    "title": "PLOS ONE: 100 Ma sweat bee nests (Genise et al. 2020)",
+    "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0227789"
+   },
+   {
+    "title": "TimeTree: divergence time of honeybees and fire ants",
+    "url": "http://timetree.temple.edu/api/pairwise/7460/13686"
+   }
+  ]
+ },
+ {
+  "id": "modern-birds",
+  "name": "Modern birds",
+  "sci": "Neornithes (crown-group Aves)",
+  "group": "birds",
+  "parent": "birds",
+  "fossilMa": 67,
+  "claimMa": 69,
+  "clockMa": [
+   95,
+   114
+  ],
+  "extinctMa": null,
+  "peakMa": null,
+  "oldest": {
+   "name": "Asteriornis maastrichtensis, the 'wonderchicken'",
+   "place": "Near Maastricht, Belgium",
+   "lonlat": [
+    5.67,
+    50.79
+   ]
+  },
+  "dateLabel": "c. 67 million years ago",
+  "evidence": "disputed",
+  "evidenceNote": "A skull from Belgium, 66.7 million years old, is the oldest fossil that is beyond doubt a modern-type bird; Vegavis from Antarctica, 69 million years old, is argued by some to be a relative of ducks and by others to lie outside modern birds. Gene studies place the first modern birds about 95 to 110 million years ago.",
+  "text": "All of today's 11,000 and more bird species descend from a few lineages that were already alive just before the asteroid struck 66 million years ago. All other dinosaurs died; the survivors then spread rapidly into forests, seas and skies. Asteriornis may be close to the ancestry of chickens and ducks.",
+  "sources": [
+   {
+    "title": "Wikipedia: Asteriornis",
+    "url": "https://en.wikipedia.org/wiki/Asteriornis"
+   },
+   {
+    "title": "Nature: Late Cretaceous neornithine from Europe illuminates the origins of crown birds (Field et al. 2020)",
+    "url": "https://www.nature.com/articles/s41586-020-2096-0"
+   },
+   {
+    "title": "Nature: Cretaceous Antarctic bird skull elucidates early avian ecological diversity (Torres et al. 2025)",
+    "url": "https://www.nature.com/articles/s41586-024-08390-0"
+   },
+   {
+    "title": "Wikipedia: Evolution of birds",
+    "url": "https://en.wikipedia.org/wiki/Evolution_of_birds"
+   },
+   {
+    "title": "TimeTree: divergence time of chickens and ostriches",
+    "url": "http://timetree.temple.edu/api/pairwise/9031/8801"
+   }
+  ]
+ },
+ {
+  "id": "placental-mammals",
+  "name": "Placental mammals",
+  "sci": "Placentalia (and their Eutherian forerunners)",
+  "group": "mammals",
+  "parent": "mammals",
+  "fossilMa": 66,
+  "claimMa": 160,
+  "clockMa": [
+   92,
+   101
+  ],
+  "extinctMa": null,
+  "peakMa": null,
+  "oldest": {
+   "name": "Earliest Paleocene placentals such as Purgatorius",
+   "place": "North-eastern Montana, USA",
+   "lonlat": [
+    -106.9,
+    47.5
+   ]
+  },
+  "dateLabel": "c. 66 million years ago",
+  "evidence": "disputed",
+  "evidenceNote": "No fossil older than 66 million years is accepted by all as a placental, yet gene studies say the group began in the Late Cretaceous, some 90 to 100 million years ago; Juramaia from China, about 160 million years old, is the oldest claimed animal on the placental side of the family tree, and its age and position are both questioned.",
+  "text": "Placental mammals nourish their young inside the womb through a placenta until they are well developed. They include the great majority of living mammals, from bats to blue whales. Their early history is hidden: they seem to have lived unnoticed beside the dinosaurs, then spread explosively once the dinosaurs were gone.",
+  "sources": [
+   {
+    "title": "Wikipedia: Placentalia",
+    "url": "https://en.wikipedia.org/wiki/Placentalia"
+   },
+   {
+    "title": "Nature: A Jurassic eutherian mammal and divergence of marsupials and placentals (Luo et al. 2011)",
+    "url": "https://www.nature.com/articles/nature10291"
+   },
+   {
+    "title": "Current Biology: A timescale for placental mammal diversification based on Bayesian modeling of the fossil record (Carlisle et al. 2023)",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7617171/"
+   },
+   {
+    "title": "Europe PMC record: The placental mammal ancestor and the post-K-Pg radiation of placentals (Science 2013)",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1126/science.1229237%22&resultType=core&format=json"
+   },
+   {
+    "title": "Nature: A species-level timeline of mammal evolution integrating phylogenomic data (Alvarez-Carretero et al. 2022)",
+    "url": "https://www.nature.com/articles/s41586-021-04341-1"
+   }
+  ]
+ },
+ {
+  "id": "carnivorans",
+  "name": "Carnivorans (cats, dogs, bears and relatives)",
+  "sci": "Carnivoramorpha (living members: Carnivora)",
+  "group": "mammals",
+  "parent": "placental-mammals",
+  "fossilMa": 64.5,
+  "claimMa": null,
+  "clockMa": [
+   51,
+   78
+  ],
+  "extinctMa": null,
+  "peakMa": null,
+  "oldest": {
+   "name": "Ravenictis krausei, an early relative",
+   "place": "Saskatchewan, Canada",
+   "lonlat": [
+    -109.0,
+    49.5
+   ]
+  },
+  "dateLabel": "c. 64.5 million years ago",
+  "evidence": "fossil",
+  "evidenceNote": "A fossil from Canada about 64.5 million years old belongs to one of the earliest known relatives of the carnivorans; members of the living group appear about 42 million years ago, while gene studies date the split between the cat and dog branches to about 54 million years ago.",
+  "text": "Carnivorans are the mammals with a pair of blade-like cheek teeth for slicing meat. Their first relatives were small, weasel-like tree climbers. The group later split into a cat branch, with hyenas and mongooses, and a dog branch, with bears, weasels and seals. Not all eat meat: the giant panda lives on bamboo.",
+  "sources": [
+   {
+    "title": "Wikipedia: Carnivora",
+    "url": "https://en.wikipedia.org/wiki/Carnivora"
+   },
+   {
+    "title": "Wikipedia: Carnivoramorpha",
+    "url": "https://en.wikipedia.org/wiki/Carnivoramorpha"
+   },
+   {
+    "title": "Wikipedia: Ravenictis",
+    "url": "https://en.wikipedia.org/wiki/Ravenictis"
+   },
+   {
+    "title": "TimeTree: divergence time of dogs and cats",
+    "url": "http://timetree.temple.edu/api/pairwise/9615/9685"
+   },
+   {
+    "title": "TimeTree: divergence time of dogs and pangolins",
+    "url": "http://timetree.temple.edu/api/pairwise/9615/9974"
+   }
+  ]
+ },
+ {
+  "id": "elephants",
+  "name": "Elephants and their relatives",
+  "sci": "Proboscidea",
+  "group": "mammals",
+  "parent": "placental-mammals",
+  "fossilMa": 60,
+  "claimMa": null,
+  "clockMa": [
+   58,
+   65
+  ],
+  "extinctMa": null,
+  "peakMa": null,
+  "oldest": {
+   "name": "Eritherium azzouzorum",
+   "place": "Ouled Abdoun Basin, Morocco",
+   "lonlat": [
+    -6.9,
+    32.9
+   ]
+  },
+  "dateLabel": "c. 60 million years ago",
+  "evidence": "fossil",
+  "evidenceNote": "Jaw and tooth fossils from Morocco about 60 million years old belong to a rabbit-sized animal that is the oldest and most primitive known elephant relative.",
+  "text": "The elephant line began in Africa with an animal that weighed only a few kilograms and had no trunk. Over 60 million years it produced many kinds of trunked giants, including mastodons and mammoths. The family of modern elephants appeared in Africa about 10 million years ago, and only three species remain.",
+  "sources": [
+   {
+    "title": "Wikipedia: Proboscidea",
+    "url": "https://en.wikipedia.org/wiki/Proboscidea"
+   },
+   {
+    "title": "Wikipedia: Eritherium",
+    "url": "https://en.wikipedia.org/wiki/Eritherium"
+   },
+   {
+    "title": "PNAS: Paleocene emergence of elephant relatives (Gheerbrant 2009)",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2705600/"
+   },
+   {
+    "title": "TimeTree: divergence time of elephants and manatees",
+    "url": "http://timetree.temple.edu/api/pairwise/9785/9778"
+   }
+  ]
+ },
+ {
+  "id": "butterflies",
+  "name": "Butterflies",
+  "sci": "Papilionoidea",
+  "group": "invertebrates",
+  "parent": "butterflies-moths",
+  "fossilMa": 56,
+  "claimMa": null,
+  "clockMa": [
+   86,
+   109
+  ],
+  "extinctMa": null,
+  "peakMa": null,
+  "oldest": {
+   "name": "Earliest butterfly fossils (Paleocene)",
+   "place": "Paleocene deposits",
+   "lonlat": null
+  },
+  "dateLabel": "c. 56 million years ago",
+  "evidence": "genetic",
+  "evidenceNote": "Butterfly fossils are rare and the oldest are only about 56 million years old, so their origin is worked out mainly from DNA: a 2023 study of 2,300 species puts it at about 100 million years ago.",
+  "text": "Butterflies are a branch of moths that took to flying by day. A study of the DNA of thousands of species concluded that the first butterflies lived about 100 million years ago in what is now the Americas, while dinosaurs were still alive, and that their caterpillars fed on plants of the bean family.",
+  "sources": [
+   {
+    "title": "Wikipedia: Butterfly",
+    "url": "https://en.wikipedia.org/wiki/Butterfly"
+   },
+   {
+    "title": "Nature Ecology & Evolution: A global phylogeny of butterflies reveals their evolutionary history (Kawahara et al. 2023)",
+    "url": "https://www.nature.com/articles/s41559-023-02041-9"
+   },
+   {
+    "title": "TimeTree: divergence time of silk moths and monarch butterflies",
+    "url": "http://timetree.temple.edu/api/pairwise/7091/13037"
+   }
+  ]
+ },
+ {
+  "id": "primates",
+  "name": "Primates",
+  "sci": "Primates",
+  "group": "primates",
+  "parent": "placental-mammals",
+  "fossilMa": 56,
+  "claimMa": 65.9,
+  "clockMa": [
+   66,
+   85
+  ],
+  "extinctMa": null,
+  "peakMa": null,
+  "oldest": {
+   "name": "Teilhardina and other early true primates (Altiatlasius from Morocco, c. 57 million years old, may be older)",
+   "place": "Asia (Teilhardina asiatica, China); also Europe and North America",
+   "lonlat": [
+    112.6,
+    26.9
+   ]
+  },
+  "dateLabel": "c. 56 million years ago",
+  "evidence": "disputed",
+  "evidenceNote": "Animals that all agree are primates appear about 56 million years ago; Purgatorius, known from teeth and ankle bones in Montana within about 100,000 to 140,000 years after the dinosaur extinction (65.9 million years ago), is the oldest claimed primate relative, but some researchers do not count its group as true primates.",
+  "text": "Primates are tree-living mammals with grasping hands, nails in place of claws, and forward-facing eyes. Purgatorius, their likely forerunner, was a mouse-sized animal that scampered through the branches right after the dinosaurs died. Genes suggest the primate line began even earlier, while the dinosaurs were still alive.",
+  "sources": [
+   {
+    "title": "Wikipedia: Primate",
+    "url": "https://en.wikipedia.org/wiki/Primate"
+   },
+   {
+    "title": "Wikipedia: Purgatorius",
+    "url": "https://en.wikipedia.org/wiki/Purgatorius"
+   },
+   {
+    "title": "Royal Society Open Science: Earliest Palaeocene purgatoriids and the initial radiation of stem primates (Wilson Mantilla et al. 2021)",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8074693/"
+   },
+   {
+    "title": "Wikipedia: Teilhardina",
+    "url": "https://en.wikipedia.org/wiki/Teilhardina"
+   },
+   {
+    "title": "TimeTree: divergence time of humans and mouse lemurs",
+    "url": "http://timetree.temple.edu/api/pairwise/9606/30608"
+   }
+  ]
+ },
+ {
+  "id": "rodents",
+  "name": "Rodents",
+  "sci": "Rodentia",
+  "group": "mammals",
+  "parent": "placental-mammals",
+  "fossilMa": 56,
+  "claimMa": null,
+  "clockMa": [
+   63,
+   79
+  ],
+  "extinctMa": null,
+  "peakMa": null,
+  "oldest": {
+   "name": "Paramys and other late Paleocene rodents",
+   "place": "North America, Europe and Asia",
+   "lonlat": null
+  },
+  "dateLabel": "c. 56 million years ago",
+  "evidence": "fossil",
+  "evidenceNote": "The first mammals with the rodent pattern of ever-growing gnawing teeth appear in rocks from the end of the Paleocene, about 56 million years ago; gene studies place their split from rabbits 15 to 20 million years earlier.",
+  "text": "Rodents have a single pair of chisel-like front teeth, top and bottom, that never stop growing. Mice, rats, squirrels, beavers and porcupines are all rodents. They are the most successful mammals: about four in every ten mammal species is a rodent.",
+  "sources": [
+   {
+    "title": "Wikipedia: Rodent",
+    "url": "https://en.wikipedia.org/wiki/Rodent"
+   },
+   {
+    "title": "Wikipedia: Paramys",
+    "url": "https://en.wikipedia.org/wiki/Paramys"
+   },
+   {
+    "title": "TimeTree: divergence time of mice and rabbits",
+    "url": "http://timetree.temple.edu/api/pairwise/10090/9986"
+   },
+   {
+    "title": "TimeTree: divergence time of mice and guinea pigs",
+    "url": "http://timetree.temple.edu/api/pairwise/10090/10141"
+   }
+  ]
+ },
+ {
+  "id": "horses",
+  "name": "Horses",
+  "sci": "Equidae",
+  "group": "mammals",
+  "parent": "placental-mammals",
+  "fossilMa": 56,
+  "claimMa": null,
+  "clockMa": [
+   54,
+   56
+  ],
+  "extinctMa": null,
+  "peakMa": null,
+  "oldest": {
+   "name": "Sifrhippus sandrae",
+   "place": "Bighorn Basin, Wyoming, USA",
+   "lonlat": [
+    -108.2,
+    44.4
+   ]
+  },
+  "dateLabel": "c. 56 million years ago",
+  "evidence": "fossil",
+  "evidenceNote": "The oldest known member of the horse family, a forest animal the size of a small dog, comes from Wyoming rocks about 56 million years old.",
+  "text": "The first horses were small woodland browsers with four toes on the front feet. As grasslands spread, their descendants grew larger, ran on a single hoofed toe and evolved tall teeth for grinding gritty grass. The many fossils of this change made horses a classic example of evolution. Most of it happened in North America.",
+  "sources": [
+   {
+    "title": "Wikipedia: Sifrhippus",
+    "url": "https://en.wikipedia.org/wiki/Sifrhippus"
+   },
+   {
+    "title": "Wikipedia: Equidae",
+    "url": "https://en.wikipedia.org/wiki/Equidae"
+   },
+   {
+    "title": "TimeTree: divergence time of horses and white rhinoceroses",
+    "url": "http://timetree.temple.edu/api/pairwise/9796/9807"
+   }
+  ]
+ },
+ {
+  "id": "bats",
+  "name": "Bats",
+  "sci": "Chiroptera",
+  "group": "mammals",
+  "parent": "placental-mammals",
+  "fossilMa": 55,
+  "claimMa": null,
+  "clockMa": [
+   60,
+   63
+  ],
+  "extinctMa": null,
+  "peakMa": null,
+  "oldest": {
+   "name": "Isolated bat teeth (Archaeonycteris praecursor, Altaynycteris aurora); oldest skeletons: Icaronycteris gunnelli, c. 52 million years ago",
+   "place": "Fossil Lake, near Kemmerer, Wyoming, USA (oldest skeletons)",
+   "lonlat": [
+    -110.76,
+    41.86
+   ]
+  },
+  "dateLabel": "c. 55 million years ago",
+  "evidence": "fossil",
+  "evidenceNote": "A few bat teeth are 55 to 56 million years old, and the oldest whole skeletons, from Wyoming, are about 52 million years old; those bats could already fly, and no fossil of a half-way stage has been found.",
+  "text": "Bats are the only mammals that truly fly, on wings of skin stretched between very long fingers. The earliest skeletons look much like modern bats, so how flight began is unknown. Most bats find their way and catch insects in the dark by echolocation. One in five mammal species is a bat.",
+  "sources": [
+   {
+    "title": "Wikipedia: Bat",
+    "url": "https://en.wikipedia.org/wiki/Bat"
+   },
+   {
+    "title": "Wikipedia: Icaronycteris",
+    "url": "https://en.wikipedia.org/wiki/Icaronycteris"
+   },
+   {
+    "title": "PLOS ONE: The oldest known bat skeletons (Rietbergen et al. 2023)",
+    "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0283505"
+   },
+   {
+    "title": "TimeTree: divergence time of little brown bats and flying foxes",
+    "url": "http://timetree.temple.edu/api/pairwise/59463/132908"
+   }
+  ]
+ },
+ {
+  "id": "whales",
+  "name": "Whales and dolphins",
+  "sci": "Cetacea",
+  "group": "mammals",
+  "parent": "placental-mammals",
+  "fossilMa": 49,
+  "claimMa": 53.5,
+  "clockMa": [
+   52,
+   54
+  ],
+  "extinctMa": null,
+  "peakMa": null,
+  "oldest": {
+   "name": "Pakicetus",
+   "place": "Northern Pakistan",
+   "lonlat": [
+    72.2,
+    33.6
+   ]
+  },
+  "dateLabel": "c. 49 million years ago",
+  "evidence": "disputed",
+  "evidenceNote": "Pakicetus, a wolf-sized animal with four legs and the ear bones of a whale, lived about 49 million years ago; a jaw from India, Himalayacetus, was reported in 1998 as 53.5 million years old, but later work dates it to about 47 million.",
+  "text": "Whales descend from hoofed land mammals that began feeding in rivers and shallow seas. In about 10 million years their front legs became flippers, their back legs shrank away and their nostrils moved to the top of the head. Their closest living relatives are hippos.",
+  "sources": [
+   {
+    "title": "Wikipedia: Pakicetus",
+    "url": "https://en.wikipedia.org/wiki/Pakicetus"
+   },
+   {
+    "title": "Wikipedia: Himalayacetus",
+    "url": "https://en.wikipedia.org/wiki/Himalayacetus"
+   },
+   {
+    "title": "PNAS: A new Eocene archaeocete from India and the time of origin of whales (Bajpai & Gingerich 1998)",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC28065/"
+   },
+   {
+    "title": "Wikipedia: Evolution of cetaceans",
+    "url": "https://en.wikipedia.org/wiki/Evolution_of_cetaceans"
+   },
+   {
+    "title": "TimeTree: divergence time of dolphins and hippos",
+    "url": "http://timetree.temple.edu/api/pairwise/9739/9833"
+   }
+  ]
+ },
+ {
+  "id": "monkeys",
+  "name": "Monkeys (anthropoids)",
+  "sci": "Anthropoidea (Simiiformes)",
+  "group": "primates",
+  "parent": "primates",
+  "fossilMa": 45,
+  "claimMa": null,
+  "clockMa": [
+   40,
+   67
+  ],
+  "extinctMa": null,
+  "peakMa": null,
+  "oldest": {
+   "name": "Eosimias sinensis, the 'dawn monkey'",
+   "place": "Shanghuang, Jiangsu, China",
+   "lonlat": [
+    119.5,
+    31.6
+   ]
+  },
+  "dateLabel": "c. 45 million years ago",
+  "evidence": "fossil",
+  "evidenceNote": "Jaws and foot bones of thumb-sized primates from Chinese rocks about 45 million years old are widely accepted as the oldest members of the monkey and ape line.",
+  "text": "Anthropoids are the monkeys, apes and humans: primates with larger brains, forward-facing eyes shielded by bone and a liking for daylight. The earliest known ones were tiny tree-dwellers in Asia. Their descendants spread to Africa and, about 40 million years ago, to South America.",
+  "sources": [
+   {
+    "title": "Wikipedia: Eosimias",
+    "url": "https://en.wikipedia.org/wiki/Eosimias"
+   },
+   {
+    "title": "Wikipedia: Simian",
+    "url": "https://en.wikipedia.org/wiki/Simian"
+   },
+   {
+    "title": "Nature: A diverse new primate fauna from middle Eocene fissure-fillings in southeastern China (Beard et al. 1994)",
+    "url": "https://www.nature.com/articles/368604a0"
+   },
+   {
+    "title": "TimeTree: divergence time of humans and marmosets",
+    "url": "http://timetree.temple.edu/api/pairwise/9606/9483"
+   },
+   {
+    "title": "TimeTree: divergence time of humans and tarsiers",
+    "url": "http://timetree.temple.edu/api/pairwise/9606/1868482"
+   }
+  ]
+ },
+ {
+  "id": "apes",
+  "name": "Apes",
+  "sci": "Hominoidea",
+  "group": "primates",
+  "parent": "monkeys",
+  "fossilMa": 25.2,
+  "claimMa": null,
+  "clockMa": [
+   25,
+   30
+  ],
+  "extinctMa": null,
+  "peakMa": null,
+  "oldest": {
+   "name": "Rukwapithecus fleaglei",
+   "place": "Rukwa Rift, south-western Tanzania",
+   "lonlat": [
+    33.0,
+    -8.9
+   ]
+  },
+  "dateLabel": "c. 25.2 million years ago",
+  "evidence": "fossil",
+  "evidenceNote": "A piece of jaw with four teeth from Tanzania, dated precisely to 25.2 million years ago, is the oldest known ape; it agrees with gene studies that place the split between apes and Old World monkeys 25 to 30 million years ago.",
+  "text": "Apes are primates without tails, with broad chests and very flexible shoulders for hanging and swinging beneath branches. Gibbons, orangutans, gorillas, chimpanzees and humans are all apes. Rukwapithecus was found beside the oldest known Old World monkey, showing that the two groups had already parted.",
+  "sources": [
+   {
+    "title": "Wikipedia: Rukwapithecus",
+    "url": "https://en.wikipedia.org/wiki/Rukwapithecus"
+   },
+   {
+    "title": "Nature: Palaeontological evidence for an Oligocene divergence between Old World monkeys and apes (Stevens et al. 2013)",
+    "url": "https://www.nature.com/articles/nature12161"
+   },
+   {
+    "title": "Wikipedia: Ape",
+    "url": "https://en.wikipedia.org/wiki/Ape"
+   },
+   {
+    "title": "TimeTree: divergence time of humans and rhesus macaques",
+    "url": "http://timetree.temple.edu/api/pairwise/9606/9544"
+   }
+  ]
+ },
+ {
+  "id": "great-apes",
+  "name": "Great apes",
+  "sci": "Hominidae",
+  "group": "primates",
+  "parent": "apes",
+  "fossilMa": 13,
+  "claimMa": null,
+  "clockMa": [
+   15,
+   20
+  ],
+  "extinctMa": null,
+  "peakMa": null,
+  "oldest": {
+   "name": "Pierolapithecus catalaunicus (Sivapithecus from South Asia is nearly as old)",
+   "place": "Els Hostalets de Pierola, Catalonia, Spain",
+   "lonlat": [
+    1.77,
+    41.53
+   ]
+  },
+  "dateLabel": "c. 13 million years ago",
+  "evidence": "fossil",
+  "evidenceNote": "Fossil apes about 13 to 12 million years old from Spain and South Asia are among the oldest generally placed with the great apes; gene studies date the split of the orangutan line from our own to about 15 to 16 million years ago.",
+  "text": "The great apes are the orangutans, gorillas, chimpanzees, bonobos and humans: large-bodied, big-brained apes that grow up slowly and learn much from one another. Sivapithecus, from the foothills of the Himalayas, had a face like an orangutan's and may be near that animal's ancestry.",
+  "sources": [
+   {
+    "title": "Wikipedia: Pierolapithecus",
+    "url": "https://en.wikipedia.org/wiki/Pierolapithecus"
+   },
+   {
+    "title": "Wikipedia: Sivapithecus",
+    "url": "https://en.wikipedia.org/wiki/Sivapithecus"
+   },
+   {
+    "title": "Wikipedia: Hominidae",
+    "url": "https://en.wikipedia.org/wiki/Hominidae"
+   },
+   {
+    "title": "TimeTree: divergence time of humans and orangutans",
+    "url": "http://timetree.temple.edu/api/pairwise/9606/9601"
+   },
+   {
+    "title": "TimeTree: divergence time of humans and gibbons",
+    "url": "http://timetree.temple.edu/api/pairwise/9606/61853"
+   }
+  ]
+ },
+ {
+  "id": "hominins",
+  "name": "The human line (hominins)",
+  "sci": "Hominini",
+  "group": "humans",
+  "parent": "great-apes",
+  "fossilMa": 4.2,
+  "claimMa": 7,
+  "clockMa": [
+   5,
+   13
+  ],
+  "extinctMa": null,
+  "peakMa": null,
+  "oldest": {
+   "name": "Australopithecus anamensis, the oldest hominin whose upright walking is not disputed",
+   "place": "Kanapoi, Lake Turkana, Kenya",
+   "lonlat": [
+    36.07,
+    2.3
+   ]
+  },
+  "dateLabel": "c. 4.2 million years ago",
+  "evidence": "disputed",
+  "evidenceNote": "Sahelanthropus from Chad, about 7 million years old, is claimed as the first member of the human line because it may have walked upright: studies of its thigh bone in 2022 and 2026 say it did, studies in 2020 and 2024 say it did not. A shin bone 4.2 million years old from Kenya is the oldest proof of upright walking that nobody disputes.",
+  "text": "Hominins are humans and all our extinct relatives since our line parted from that of chimpanzees. DNA estimates of that split range from about 5 to 13 million years ago; the average of 90 studies collected by TimeTree is about 6.4 million. The first sign of the human line is walking on two legs, long before large brains or stone tools.",
+  "sources": [
+   {
+    "title": "Wikipedia: Sahelanthropus",
+    "url": "https://en.wikipedia.org/wiki/Sahelanthropus"
+   },
+   {
+    "title": "Smithsonian Human Origins: Sahelanthropus tchadensis",
+    "url": "https://humanorigins.si.edu/evidence/human-fossils/species/sahelanthropus-tchadensis"
+   },
+   {
+    "title": "Nature: Postcranial evidence of late Miocene hominin bipedalism in Chad (Daver et al. 2022)",
+    "url": "https://www.nature.com/articles/s41586-022-04901-z"
+   },
+   {
+    "title": "Max Planck Society: What about bipedalism in Sahelanthropus? (2024)",
+    "url": "https://mpg.de/22183908/what-about-bipedalism-in-sahelanthropus"
+   },
+   {
+    "title": "UChicago Knowledge: Earliest evidence of hominin bipedalism in Sahelanthropus tchadensis (Williams et al., Science Advances 2026)",
+    "url": "https://knowledge.uchicago.edu/records/p54a4-n6p31"
+   }
+  ]
+ },
+ {
+  "id": "australopiths",
+  "name": "Australopiths (Lucy's kind)",
+  "sci": "Australopithecus",
+  "group": "humans",
+  "parent": "hominins",
+  "fossilMa": 4.2,
+  "claimMa": null,
+  "clockMa": null,
+  "extinctMa": 1.9,
+  "peakMa": [
+   3.7,
+   2.0
+  ],
+  "oldest": {
+   "name": "Australopithecus anamensis",
+   "place": "Kanapoi, Lake Turkana, Kenya",
+   "lonlat": [
+    36.07,
+    2.3
+   ]
+  },
+  "dateLabel": "c. 4.2 million years ago",
+  "evidence": "fossil",
+  "evidenceNote": "Jaws, teeth and a shin bone from northern Kenya, dated between 4.2 and 3.9 million years ago using volcanic ash layers, are the oldest Australopithecus fossils; the last species lived about 1.9 million years ago.",
+  "text": "Australopiths walked upright on two legs but had brains little bigger than a chimpanzee's and were still good climbers. The best known is Lucy, a partial skeleton of Australopithecus afarensis from Ethiopia. One of the australopiths, or a close relative, gave rise to our own genus, Homo.",
+  "sources": [
+   {
+    "title": "Wikipedia: Australopithecus",
+    "url": "https://en.wikipedia.org/wiki/Australopithecus"
+   },
+   {
+    "title": "Wikipedia: Australopithecus anamensis",
+    "url": "https://en.wikipedia.org/wiki/Australopithecus_anamensis"
+   },
+   {
+    "title": "Smithsonian Human Origins: Australopithecus anamensis",
+    "url": "https://humanorigins.si.edu/evidence/human-fossils/species/australopithecus-anamensis"
+   },
+   {
+    "title": "Nature: New four-million-year-old hominid species from Kanapoi and Allia Bay, Kenya (Leakey et al. 1995)",
+    "url": "https://www.nature.com/articles/376565a0"
+   }
+  ]
+ },
+ {
+  "id": "homo",
+  "name": "The genus Homo",
+  "sci": "Homo",
+  "group": "humans",
+  "parent": "australopiths",
+  "fossilMa": 2.8,
+  "claimMa": null,
+  "clockMa": null,
+  "extinctMa": null,
+  "peakMa": null,
+  "oldest": {
+   "name": "LD 350-1, a lower jaw with teeth",
+   "place": "Ledi-Geraru, Afar, Ethiopia",
+   "lonlat": [
+    40.87,
+    11.37
+   ]
+  },
+  "dateLabel": "c. 2.8 million years ago",
+  "evidence": "fossil",
+  "evidenceNote": "Half a lower jaw found in Ethiopia in 2013, dated to between 2.80 and 2.75 million years ago by volcanic ash, mixes features of Australopithecus and Homo and is the oldest fossil assigned to our genus.",
+  "text": "Homo is the group of humans: species with smaller teeth, larger brains and a growing dependence on stone tools and meat. It appeared in eastern Africa as the climate became drier and more changeable. About 2 million years ago Homo erectus appeared and spread through Africa and into Europe and Asia.",
+  "sources": [
+   {
+    "title": "Wikipedia: LD 350-1",
+    "url": "https://en.wikipedia.org/wiki/LD_350-1"
+   },
+   {
+    "title": "Wikipedia: Homo",
+    "url": "https://en.wikipedia.org/wiki/Homo"
+   },
+   {
+    "title": "Europe PMC record: Early Homo at 2.8 Ma from Ledi-Geraru, Afar, Ethiopia (Science 2015)",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1126/science.aaa1343%22&resultType=core&format=json"
+   }
+  ]
+ },
+ {
+  "id": "neanderthals",
+  "name": "Neanderthals",
+  "sci": "Homo neanderthalensis",
+  "group": "humans",
+  "parent": "homo",
+  "fossilMa": 0.43,
+  "claimMa": null,
+  "clockMa": null,
+  "extinctMa": 0.04,
+  "peakMa": [
+   0.13,
+   0.045
+  ],
+  "oldest": {
+   "name": "Sima de los Huesos fossils, early members of the Neanderthal line",
+   "place": "Atapuerca, Burgos, Spain",
+   "lonlat": [
+    -3.52,
+    42.35
+   ]
+  },
+  "dateLabel": "c. 430,000 years ago",
+  "evidence": "fossil",
+  "evidenceNote": "Bones about 430,000 years old from a cave pit in Spain have DNA showing they were early relatives of Neanderthals; classic Neanderthals disappeared across Europe and most of Asia by about 40,000 years ago.",
+  "text": "Neanderthals were stocky, big-brained humans of Europe and western Asia, adapted to Ice Age cold. They made tools, used fire and buried their dead. They are our closest extinct relatives, and they met and had children with our own species, so most people today carry a little Neanderthal DNA.",
+  "sources": [
+   {
+    "title": "Wikipedia: Neanderthal",
+    "url": "https://en.wikipedia.org/wiki/Neanderthal"
+   },
+   {
+    "title": "Wikipedia: Sima de los Huesos hominins",
+    "url": "https://en.wikipedia.org/wiki/Sima_de_los_Huesos"
+   },
+   {
+    "title": "Nature: Nuclear DNA sequences from the Middle Pleistocene Sima de los Huesos hominins (Meyer et al. 2016)",
+    "url": "https://www.nature.com/articles/nature17405"
+   }
+  ]
+ },
+ {
+  "id": "homo-sapiens",
+  "name": "Our species, Homo sapiens",
+  "sci": "Homo sapiens",
+  "group": "humans",
+  "parent": "homo",
+  "fossilMa": 0.315,
+  "claimMa": null,
+  "clockMa": null,
+  "extinctMa": null,
+  "peakMa": null,
+  "oldest": {
+   "name": "Jebel Irhoud skulls, jaws and teeth",
+   "place": "Jebel Irhoud, Morocco",
+   "lonlat": [
+    -8.87,
+    31.85
+   ]
+  },
+  "dateLabel": "c. 315,000 years ago",
+  "evidence": "fossil",
+  "evidenceNote": "Fossils from a Moroccan cave are dated to about 315,000 years ago (give or take 34,000) by heat-altered flint tools found with them; their faces are modern but their skulls are longer and lower, and the oldest fossils with fully modern skulls, from Omo Kibish in Ethiopia, are at least 233,000 years old.",
+  "text": "Our own species arose in Africa. The Moroccan fossils have faces like ours but a braincase of an older shape, showing that the modern human form came together gradually and across the whole continent, not in one spot. From Africa our species later spread to every continent.",
+  "sources": [
+   {
+    "title": "Wikipedia: Jebel Irhoud",
+    "url": "https://en.wikipedia.org/wiki/Jebel_Irhoud"
+   },
+   {
+    "title": "Nature: New fossils from Jebel Irhoud, Morocco and the pan-African origin of Homo sapiens (Hublin et al. 2017)",
+    "url": "https://www.nature.com/articles/nature22336"
+   },
+   {
+    "title": "Nature: Age of the oldest known Homo sapiens from eastern Africa (Vidal et al. 2022)",
+    "url": "https://www.nature.com/articles/s41586-021-04275-8"
+   },
+   {
+    "title": "Smithsonian Human Origins: Our species arose at least 300,000 years ago",
+    "url": "https://humanorigins.si.edu/research/whats-hot-human-origins/our-species-arose-least-300000-years-ago"
+   },
+   {
+    "title": "Natural History Museum, London: Oldest known Homo sapiens fossils discovered in Morocco",
+    "url": "https://www.nhm.ac.uk/discover/news/2017/june/oldest-known-homo-sapiens-fossils-discovered-in-morocco.html"
+   }
+  ]
+ }
+]

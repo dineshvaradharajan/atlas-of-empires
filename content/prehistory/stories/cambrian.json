@@ -1,0 +1,1060 @@
+{
+ "id": "cambrian",
+ "title": "The Cambrian explosion",
+ "summary": "Between about 580 and 485 million years ago, life in the sea went from soft fronds and quilted mats to animals with shells, legs, eyes and backbones. Step through the fossil sites, from Newfoundland to the Burgess Shale and Morocco, that show how and when it happened, and why scientists still argue over the cause.",
+ "from": 580,
+ "to": 485,
+ "chapters": [
+  {
+   "id": "after-the-ice",
+   "title": "A warmer world after the ice",
+   "ma": 580,
+   "dateLabel": "c. 580 million years ago",
+   "focus": [
+    -53.62,
+    46.87
+   ],
+   "place": "Gaskiers, St. Mary's Bay, Newfoundland, Canada",
+   "text": "The Earth had come through two great freezes, the Sturtian and the Marinoan, when ice may have reached the tropics; the second ended 635 million years ago. One last, shorter ice age, the Gaskiers, left boulders dropped by melting ice in rocks at Gaskiers in Newfoundland, about 580 million years ago. It lasted only a few hundred thousand years and probably did not cover the whole planet. Meltwater rich in nutrients and a slow rise in oxygen may have helped larger living things to evolve, though how closely the ice and life are linked is debated. Within about ten million years the first large, complex organisms appear, in rocks just above the Gaskiers deposits.",
+   "species": [
+    "Microbial mats",
+    "Algae",
+    "Early sponges (known only from chemical traces)"
+   ],
+   "sites": [
+    {
+     "name": "Gaskiers glacial deposits",
+     "lonlat": [
+      -53.62,
+      46.87
+     ],
+     "ma": 580,
+     "note": "Thick beds of rubble and dropstones laid down by the short Gaskiers ice age."
+    }
+   ],
+   "route": null,
+   "refs": [
+    "e:marinoan-glaciation",
+    "e:sponge-biomarkers",
+    "e:gondwana-assembles"
+   ],
+   "imageIds": [
+    "snowball-earth-globe"
+   ],
+   "images": [
+    {
+     "id": "earth-600-ma-scotese-map",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Mollweide_Paleographic_Map_of_Earth%2C_600_Ma_%28Ediacaran_Period%29.png/1920px-Mollweide_Paleographic_Map_of_Earth%2C_600_Ma_%28Ediacaran_Period%29.png",
+     "page": "https://commons.wikimedia.org/wiki/File:Mollweide_Paleographic_Map_of_Earth,_600_Ma_(Ediacaran_Period).png",
+     "caption": "A map of the Earth about 600 million years ago, with present-day coastlines drawn on the drifting continents; most land lay in the far south.",
+     "credit": "C. R. Scotese and colleagues",
+     "license": "CC BY 4.0",
+     "note": "Positions of continents this long ago are uncertain; this map is one reconstruction.",
+     "width": 3610,
+     "height": 1810,
+     "type": "reconstruction"
+    },
+    {
+     "id": "cryogenian-ediacaran-boundary-enorama",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Cryogenian-Ediacaran_boundary_%28Nuccaleena_Formation_over_Elatina_Formation%2C_Neoproterozoic%3B_Enorama_Creek_section%2C_Flinders_Ranges%2C_South_Australia%29_7.jpg/1920px-Cryogenian-Ediacaran_boundary_%28Nuccaleena_Formation_over_Elatina_Formation%2C_Neoproterozoic%3B_Enorama_Creek_section%2C_Flinders_Ranges%2C_South_Australia%29_7.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Cryogenian-Ediacaran_boundary_(Nuccaleena_Formation_over_Elatina_Formation,_Neoproterozoic%3B_Enorama_Creek_section,_Flinders_Ranges,_South_Australia)_7.jpg",
+     "caption": "Pale 'cap' limestone lying on red glacial deposits at Enorama Creek, South Australia: the end of the Marinoan freeze and the start of the Ediacaran Period, 635 million years ago.",
+     "credit": "James St. John",
+     "license": "CC BY 2.0",
+     "note": "Shows the end of the earlier Marinoan glaciation in Australia, not the Gaskiers deposits of Newfoundland.",
+     "width": 2000,
+     "height": 3008,
+     "type": "rock"
+    }
+   ],
+   "evidence": "geology",
+   "evidenceNote": "Boulders scratched by ice and dropped into sea-floor mud are dated by uranium-lead measurements to between about 579.9 and 579.6 million years ago.",
+   "sources": [
+    {
+     "title": "Wikipedia: Gaskiers glaciation",
+     "url": "https://en.wikipedia.org/wiki/Gaskiers_glaciation"
+    },
+    {
+     "title": "Wikipedia: Snowball Earth",
+     "url": "https://en.wikipedia.org/wiki/Snowball_Earth"
+    },
+    {
+     "title": "Wikipedia: Gaskiers-Point La Haye",
+     "url": "https://en.wikipedia.org/wiki/Gaskiers-Point_La_Haye"
+    }
+   ]
+  },
+  {
+   "id": "fronds-of-mistaken-point",
+   "title": "Fronds on a deep sea floor",
+   "ma": 570,
+   "dateLabel": "c. 570 million years ago",
+   "focus": [
+    -53.19,
+    46.63
+   ],
+   "place": "Mistaken Point, Avalon Peninsula, Newfoundland, Canada",
+   "text": "On a dark sea floor, too deep for sunlight, stood feathery fronds and lay spindle-shaped Fractofusus, among the oldest large and complex living things known. Many were rangeomorphs, built from branches that repeat the shape of the whole, like a fern. With no mouth or gut, they may have soaked up food dissolved in the water, though some scientists think they filtered it. Falls of volcanic ash buried whole communities where they stood, and one ash layer is about 565 million years old. Mistaken Point became a UNESCO World Heritage Site in 2016.",
+   "species": [
+    "Fractofusus misrai",
+    "Charniodiscus",
+    "Rangeomorph fronds"
+   ],
+   "sites": [
+    {
+     "name": "Mistaken Point Ecological Reserve",
+     "lonlat": [
+      -53.19,
+      46.63
+     ],
+     "ma": 565,
+     "note": "Whole sea-floor communities preserved under volcanic ash."
+    }
+   ],
+   "route": null,
+   "refs": [
+    "e:mistaken-point",
+    "o:ediacaran-biota"
+   ],
+   "imageIds": [
+    "fractofusus-seafloor"
+   ],
+   "images": [
+    {
+     "id": "mistaken-point-frond-fossils",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Ediacaran_fossils_Mistaken_Point_Newfoundland.jpg/1280px-Ediacaran_fossils_Mistaken_Point_Newfoundland.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Ediacaran_fossils_Mistaken_Point_Newfoundland.jpg",
+     "caption": "Feathery frond fossils on a rock surface at Mistaken Point, Newfoundland, with a coin for scale.",
+     "credit": "Alicejmichel",
+     "license": "CC BY-SA 4.0",
+     "note": null,
+     "width": 1800,
+     "height": 1350,
+     "type": "fossil"
+    },
+    {
+     "id": "charnia-masoni-cast",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Charnia_masoni.jpg/1920px-Charnia_masoni.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Charnia_masoni.jpg",
+     "caption": "A cast of the first Charnia ever recognised, a frond found in Charnwood Forest, England, of the same rangeomorph kind that lived at Mistaken Point.",
+     "credit": "Kjoonlee",
+     "license": "CC BY 4.0",
+     "note": "Museum replica of the holotype from England, not a Mistaken Point specimen.",
+     "width": 3712,
+     "height": 5568,
+     "type": "fossil"
+    }
+   ],
+   "evidence": "fossil",
+   "evidenceNote": "The creatures left impressions in the sea floor where volcanic ash buried them, and crystals in the ash give their age.",
+   "sources": [
+    {
+     "title": "Wikipedia: Mistaken Point Ecological Reserve",
+     "url": "https://en.wikipedia.org/wiki/Mistaken_Point_Ecological_Reserve"
+    },
+    {
+     "title": "Wikipedia: Rangeomorph",
+     "url": "https://en.wikipedia.org/wiki/Rangeomorph"
+    },
+    {
+     "title": "Wikipedia: Ediacaran biota",
+     "url": "https://en.wikipedia.org/wiki/Ediacaran_biota"
+    }
+   ]
+  },
+  {
+   "id": "white-sea-first-animals",
+   "title": "The first proven animals",
+   "ma": 558,
+   "dateLabel": "c. 558 million years ago",
+   "focus": [
+    39.89,
+    65.49
+   ],
+   "place": "Winter Coast of the White Sea, Arkhangelsk region, Russia",
+   "text": "In shallow seas over what is now northern Russia, creatures lived on carpets of microbes covering the sea floor. Kimberella, up to 15 centimetres long, had a front and a back and seems to have scraped food from the mats, leaving fan-shaped scratch marks; many think it was a relative of the molluscs, though not all agree. Dickinsonia, a flat ribbed oval up to 1.4 metres long, left rows of resting marks where it fed. In 2018 Ilya Bobrovskiy and colleagues, working on ropes down cliffs 60 to 100 metres high, found that Dickinsonia fossils still hold cholesterol, a fat made by animals. That made Dickinsonia, about 558 million years old, the oldest animal confirmed by chemistry.",
+   "species": [
+    "Dickinsonia",
+    "Kimberella quadrata"
+   ],
+   "sites": [
+    {
+     "name": "Zimnie Gory cliffs, White Sea",
+     "lonlat": [
+      39.89,
+      65.49
+     ],
+     "ma": 555.3,
+     "note": "Volcanic ash between the fossil beds is dated to 555.3 million years; older beds hold Dickinsonia and Kimberella."
+    }
+   ],
+   "route": null,
+   "refs": [
+    "o:animals",
+    "o:bilaterians",
+    "o:molluscs",
+    "o:ediacaran-biota"
+   ],
+   "imageIds": [
+    "dickinsonia-fossil"
+   ],
+   "images": [
+    {
+     "id": "kimberella-reconstruction",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Kimberella.jpg/1920px-Kimberella.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Kimberella.jpg",
+     "caption": "A reconstruction of Kimberella, a slug-like animal with a front and a back, grazing on a microbial mat on the Ediacaran sea floor.",
+     "credit": "Oleg Kuznetsov (3depix)",
+     "license": "CC BY-SA 4.0",
+     "note": "Kimberella's soft body is known only from impressions; details of its shape are interpretation.",
+     "width": 1920,
+     "height": 1080,
+     "type": "reconstruction"
+    },
+    {
+     "id": "kimberella-quadrata-fossil",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Kimberella_quadrata.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Kimberella_quadrata.jpg",
+     "caption": "A fossil of Kimberella quadrata, a small oval impression about a centimetre across.",
+     "credit": "Aleksey Nagovitsyn",
+     "license": "CC BY-SA 4.0",
+     "note": null,
+     "width": 696,
+     "height": 672,
+     "type": "fossil"
+    }
+   ],
+   "evidence": "fossil",
+   "evidenceNote": "Body impressions and feeding traces lie in sandstone dated by volcanic ash, and molecules extracted from the fossils show animal cholesterol, though a few scientists doubt that the cholesterol came from Dickinsonia itself.",
+   "sources": [
+    {
+     "title": "ANU: Fat from 558 million years ago reveals earliest known animal",
+     "url": "https://science.anu.edu.au/news-events/news/fat-558-million-years-ago-reveals-earliest-known-animal"
+    },
+    {
+     "title": "Wikipedia: Kimberella",
+     "url": "https://en.wikipedia.org/wiki/Kimberella"
+    },
+    {
+     "title": "Wikipedia: Dickinsonia",
+     "url": "https://en.wikipedia.org/wiki/Dickinsonia"
+    },
+    {
+     "title": "Martin et al. 2000, Science: Age of Neoproterozoic bilaterian body and trace fossils, White Sea, Russia (Caltech record)",
+     "url": "https://authors.library.caltech.edu/38186"
+    }
+   ]
+  },
+  {
+   "id": "garden-of-ediacara",
+   "title": "The puzzle of the Ediacara Hills",
+   "ma": 555,
+   "dateLabel": "c. 555 million years ago",
+   "focus": [
+    138.13,
+    -30.81
+   ],
+   "place": "Ediacara Hills, Nilpena Ediacara National Park, South Australia",
+   "text": "The richest Ediacaran communities lived on shallow sandy sea floors like this one, where Reg Sprigg noticed fossils in 1946; the whole Ediacaran Period is named after these hills. Among quilted Dickinsonia and fronds lived Spriggina, with a shield-like head and a segmented body, and Ikaria, a worm the size of a grain of rice with a front, a back and probably a gut. Ikaria, named in 2020, is the likely maker of tiny burrows in the same rocks and one of the oldest known bilaterians, the group that includes worms, insects and us. What most Ediacaran creatures were is still argued: early animals, giant single cells, lichens, or a lost branch of life with no living relatives. Most of them disappear near the start of the Cambrian.",
+   "species": [
+    "Spriggina floundersi",
+    "Ikaria wariootia",
+    "Dickinsonia costata"
+   ],
+   "sites": [
+    {
+     "name": "Ediacara Hills (Nilpena Ediacara National Park)",
+     "lonlat": [
+      138.13,
+      -30.81
+     ],
+     "ma": 555,
+     "note": "Where Reg Sprigg found the first fossils in 1946; whole fossil sea floors are exposed in the park."
+    }
+   ],
+   "route": null,
+   "refs": [
+    "e:ediacara-hills",
+    "o:ediacaran-biota",
+    "o:bilaterians"
+   ],
+   "imageIds": [
+    "ediacaran-diorama-field-museum"
+   ],
+   "images": [
+    {
+     "id": "nilpena-fossil-bed",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Fossil_bed_at_Nilpena_Ediacara_National_Park.jpg/1280px-Fossil_bed_at_Nilpena_Ediacara_National_Park.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Fossil_bed_at_Nilpena_Ediacara_National_Park.jpg",
+     "caption": "An uncovered fossil sea floor in Nilpena Ediacara National Park, South Australia, where whole beds of Ediacaran fossils lie in the open.",
+     "credit": "Citronnel",
+     "license": "CC BY-SA 4.0",
+     "note": null,
+     "width": 1600,
+     "height": 1200,
+     "type": "landscape"
+    },
+    {
+     "id": "spriggina-in-situ-nilpena",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Spriggina_observed_in_situ_at_Nilpena_Ediacara_National_Park.jpg/960px-Spriggina_observed_in_situ_at_Nilpena_Ediacara_National_Park.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Spriggina_observed_in_situ_at_Nilpena_Ediacara_National_Park.jpg",
+     "caption": "A Spriggina fossil, a few centimetres long with a ridged, segmented body, still in the rock where it was found at Nilpena.",
+     "credit": "Citronnel",
+     "license": "CC BY-SA 4.0",
+     "note": null,
+     "width": 1200,
+     "height": 1600,
+     "type": "fossil"
+    },
+    {
+     "id": "ikaria-wariootia-reconstruction",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/3/36/Ikaria_wariootia.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Ikaria_wariootia.jpg",
+     "caption": "Rice-grain-sized Ikaria worms digging shallow burrows through a microbial mat, as imagined by an artist.",
+     "credit": "Apokryltaros",
+     "license": "CC BY-SA 4.0",
+     "note": null,
+     "width": 593,
+     "height": 800,
+     "type": "reconstruction"
+    }
+   ],
+   "evidence": "disputed",
+   "evidenceNote": "The fossils are clear impressions in sandstone, but their biology is argued over: many scientists see Dickinsonia, Kimberella and Ikaria as animals, while others have proposed giant single cells, lichens (Greg Retallack) or a separate extinct group (Adolf Seilacher's Vendobionta) for many of the quilted forms.",
+   "sources": [
+    {
+     "title": "Wikipedia: Ediacaran biota",
+     "url": "https://en.wikipedia.org/wiki/Ediacaran_biota"
+    },
+    {
+     "title": "UC Riverside: Ancestor of all animals identified in Australian fossils",
+     "url": "https://epsci.ucr.edu/news/2020/03/23/ancestor-all-animals-identified-australian-fossils"
+    },
+    {
+     "title": "Wikipedia: Nilpena Ediacara National Park",
+     "url": "https://en.wikipedia.org/wiki/Nilpena_Ediacara_National_Park"
+    },
+    {
+     "title": "Wikipedia: Dickinsonia",
+     "url": "https://en.wikipedia.org/wiki/Dickinsonia"
+    }
+   ]
+  },
+  {
+   "id": "first-shells-cloudina",
+   "title": "The first shells, and the first drills",
+   "ma": 550,
+   "dateLabel": "c. 550 million years ago",
+   "focus": [
+    16.7,
+    -23.9
+   ],
+   "place": "Nama Group rocks, central Namibia",
+   "text": "Near the end of the Ediacaran, some animals in shallow seas began to build hard skeletons. Cloudina, first found in the Nama Group of Namibia, made tubes of chalky cones stacked inside one another, a few millimetres wide, like a pile of paper cups. It has since been found from Namibia and Oman to China, Spain, Brazil and Nevada. In some places up to a fifth of Cloudina tubes have small round holes bored through them, among the earliest signs of a predator attacking prey. Armour and attack had begun their long race.",
+   "species": [
+    "Cloudina",
+    "Namacalathus",
+    "Swartpuntia",
+    "Pteridinium"
+   ],
+   "sites": [
+    {
+     "name": "Nama Group, Zaris Formation (central Namibia)",
+     "lonlat": [
+      16.7,
+      -23.9
+     ],
+     "ma": 547,
+     "note": "Cloudina occurs in the Zaris Formation, where a volcanic ash bed is dated to about 547 million years."
+    }
+   ],
+   "route": null,
+   "refs": [
+    "o:animals",
+    "o:ediacaran-biota"
+   ],
+   "imageIds": [],
+   "images": [
+    {
+     "id": "cloudina-fossils-brazil",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Cloudina_fossils_%28Neoproterozoic%3B_Corumba%2C_Brazil%29_%2845453979394%29.jpg/1920px-Cloudina_fossils_%28Neoproterozoic%3B_Corumba%2C_Brazil%29_%2845453979394%29.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Cloudina_fossils_(Neoproterozoic%3B_Corumba,_Brazil)_(45453979394).jpg",
+     "caption": "Small dark tubes of Cloudina, one of the first animals with a mineral skeleton, in late Ediacaran limestone from Corumbá, Brazil.",
+     "credit": "James St. John",
+     "license": "CC BY 2.0",
+     "note": null,
+     "width": 2814,
+     "height": 2003,
+     "type": "fossil"
+    },
+    {
+     "id": "cloudina-reconstruction",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Reconstruction_of_the_living_Cloudina%2C_family_Cloudinidae%2C_clade_Cloudinomorpha_%28Neoproterozoic_era%2C_Ediacarium_period%29.png/1280px-Reconstruction_of_the_living_Cloudina%2C_family_Cloudinidae%2C_clade_Cloudinomorpha_%28Neoproterozoic_era%2C_Ediacarium_period%29.png",
+     "page": "https://commons.wikimedia.org/wiki/File:Reconstruction_of_the_living_Cloudina,_family_Cloudinidae,_clade_Cloudinomorpha_(Neoproterozoic_era,_Ediacarium_period).png",
+     "caption": "A scientific drawing of living Cloudina, with tubes of stacked cones lying and standing on the sea floor; the number labels belong to the original paper's key.",
+     "credit": "Becker-Kerber, Pacheco, Rudnitzki et al.",
+     "license": "CC BY-SA 4.0",
+     "note": "What kind of animal built Cloudina, and how it fed, is uncertain.",
+     "width": 1500,
+     "height": 650,
+     "type": "reconstruction"
+    }
+   ],
+   "evidence": "fossil",
+   "evidenceNote": "The chalky tubes are preserved in limestones dated by volcanic ash layers in the Nama Group to about 550 to 539 million years ago; what kind of animal built them is uncertain.",
+   "sources": [
+    {
+     "title": "Wikipedia: Cloudina",
+     "url": "https://en.wikipedia.org/wiki/Cloudina"
+    },
+    {
+     "title": "Wikipedia: Nama Group",
+     "url": "https://en.wikipedia.org/wiki/Nama_Group"
+    },
+    {
+     "title": "Wikipedia: Small shelly fauna",
+     "url": "https://en.wikipedia.org/wiki/Small_shelly_fauna"
+    }
+   ]
+  },
+  {
+   "id": "burrows-at-fortune-head",
+   "title": "Burrows mark the Cambrian's start",
+   "ma": 538.8,
+   "dateLabel": "c. 539 million years ago",
+   "focus": [
+    -55.83,
+    47.08
+   ],
+   "place": "Fortune Head, Burin Peninsula, Newfoundland, Canada",
+   "text": "Rocks at Fortune Head mark the official start of the Cambrian Period, 538.8 million years ago. The marker is not a body but a burrow, Treptichnus pedum: a chain of short tunnels dug just under the sea floor by a worm-like animal probing for food. Earlier creatures had mostly lain or crawled on the surface; now animals were digging down and stirring the mud, breaking up the microbial mats that Ediacaran life depended on. Geologists later found Treptichnus a few metres below the official boundary, so the marker is not perfect, but the change it records is real.",
+   "species": [
+    "Treptichnus pedum (burrow)",
+    "Priapulid-like worms (likely burrow makers)"
+   ],
+   "sites": [
+    {
+     "name": "Fortune Head boundary section",
+     "lonlat": [
+      -55.83,
+      47.08
+     ],
+     "ma": 538.8,
+     "note": "The global reference point (golden spike) for the base of the Cambrian."
+    }
+   ],
+   "route": null,
+   "refs": [
+    "e:cambrian-explosion",
+    "o:bilaterians"
+   ],
+   "imageIds": [],
+   "images": [
+    {
+     "id": "fortune-head-gssp",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Fortune_Head_GSSP%2C_Newfoundland.jpg/1920px-Fortune_Head_GSSP%2C_Newfoundland.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Fortune_Head_GSSP,_Newfoundland.jpg",
+     "caption": "Geologists in hard hats on the tilted rock layers at Fortune Head, Newfoundland, the world reference point for the start of the Cambrian.",
+     "credit": "Liam Herringshaw",
+     "license": "CC BY-SA 3.0",
+     "note": null,
+     "width": 3888,
+     "height": 2592,
+     "type": "landscape"
+    },
+    {
+     "id": "treptichnus-pedum-diagram",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Treptichnus_pedum.png/960px-Treptichnus_pedum.png",
+     "page": "https://commons.wikimedia.org/wiki/File:Treptichnus_pedum.png",
+     "caption": "A drawing of the branching burrow pattern of Treptichnus pedum, made of short tunnels joined end to end.",
+     "credit": "Aleksey Nagovitsyn",
+     "license": "CC BY-SA 3.0",
+     "note": null,
+     "width": 1030,
+     "height": 757,
+     "type": "reconstruction"
+    }
+   ],
+   "evidence": "fossil",
+   "evidenceNote": "Trace fossils, the burrows themselves, record what animals were doing even where their soft bodies were not preserved; the age comes from volcanic ash dated elsewhere at the same boundary.",
+   "sources": [
+    {
+     "title": "Wikipedia: Fortunian",
+     "url": "https://en.wikipedia.org/wiki/Fortunian"
+    },
+    {
+     "title": "Wikipedia: Treptichnus",
+     "url": "https://en.wikipedia.org/wiki/Treptichnus"
+    },
+    {
+     "title": "Wikipedia: Cambrian",
+     "url": "https://en.wikipedia.org/wiki/Cambrian"
+    }
+   ]
+  },
+  {
+   "id": "burst-of-body-plans",
+   "title": "A burst of new body plans",
+   "ma": 535,
+   "dateLabel": "c. 535 million years ago",
+   "focus": [
+    102.59,
+    24.67
+   ],
+   "place": "Meishucun, Jinning, near Kunming, Yunnan, China",
+   "text": "In the first ten million years of the Cambrian, seas around the world filled with small shelly fossils: caps, tubes, spines and plates, mostly one or two millimetres long, from early molluscs, sponges, brachiopods and armoured animals whose soft bodies are rarely found. At Meishucun in Yunnan they appear and quickly become abundant in phosphate-rich rocks. Within about 13 to 25 million years most of the main animal body plans alive today had appeared. Why then? Scientists point to more oxygen, the first predators and an arms race of armour, new genes that control how bodies are built, and animals reshaping the sea floor for one another; many now think several of these worked together, and a 2019 study led by Rachel Wood argued that the burst came in pulses that began in the Ediacaran.",
+   "species": [
+    "Helcionellid molluscs",
+    "Anabarites",
+    "Hyoliths",
+    "Halkieriids",
+    "Sponge spicules",
+    "Early brachiopods"
+   ],
+   "sites": [
+    {
+     "name": "Meishucun section, Jinning",
+     "lonlat": [
+      102.59,
+      24.67
+     ],
+     "ma": 535,
+     "note": "Phosphate rocks where small shelly fossils suddenly become abundant; once a candidate for the base of the Cambrian."
+    }
+   ],
+   "route": null,
+   "refs": [
+    "e:cambrian-explosion",
+    "o:molluscs",
+    "o:sponges",
+    "o:brachiopods",
+    "o:arthropods",
+    "o:animals"
+   ],
+   "imageIds": [],
+   "images": [
+    {
+     "id": "small-shelly-fossils-shaanxi",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Small_shelly_fossils_from_the_Yangjiagou_Member%2C_Lowermost_Cambrian_of_Tongying_Formation%2C_southern_Shaanxi%2C_Northwestern_China.png",
+     "page": "https://commons.wikimedia.org/wiki/File:Small_shelly_fossils_from_the_Yangjiagou_Member,_Lowermost_Cambrian_of_Tongying_Formation,_southern_Shaanxi,_Northwestern_China.png",
+     "caption": "Small shelly fossils from the earliest Cambrian of Shaanxi, China, seen under an electron microscope: tiny tubes and plates less than a millimetre long.",
+     "credit": "Luo, Brock, Liang et al.",
+     "license": "CC BY-SA 4.0",
+     "note": null,
+     "width": 590,
+     "height": 484,
+     "type": "fossil"
+    },
+    {
+     "id": "halkieria-reconstruction",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Halkieria_reconstruction.png/1280px-Halkieria_reconstruction.png",
+     "page": "https://commons.wikimedia.org/wiki/File:Halkieria_reconstruction.png",
+     "caption": "A reconstruction of Halkieria, a slug-shaped early Cambrian animal covered in small scales with a shell at each end; its loose scales are common small shelly fossils.",
+     "credit": "Qohelet12",
+     "license": "CC BY-SA 4.0",
+     "note": "Halkieria's place in the animal family tree is debated.",
+     "width": 1828,
+     "height": 912,
+     "type": "reconstruction"
+    }
+   ],
+   "evidence": "disputed",
+   "evidenceNote": "That many animal groups appear quickly in the fossil record is clear; why it happened, and whether it was one burst or several pulses (Wood and colleagues, 2019) with roots deep in the Ediacaran as gene clocks suggest, is still debated.",
+   "sources": [
+    {
+     "title": "Wikipedia: Small shelly fauna",
+     "url": "https://en.wikipedia.org/wiki/Small_shelly_fauna"
+    },
+    {
+     "title": "Wikipedia: Cambrian explosion",
+     "url": "https://en.wikipedia.org/wiki/Cambrian_explosion"
+    },
+    {
+     "title": "EurekAlert (University of Edinburgh): Ancient records prompt rethink of animal evolution (Wood et al. 2019)",
+     "url": "https://www.eurekalert.org/news-releases/740120"
+    },
+    {
+     "title": "Crimes and Jiang 1986, Geological Magazine: Trace fossils from the Precambrian-Cambrian boundary candidate at Meishucun",
+     "url": "https://www.cambridge.org/core/journals/geological-magazine/article/trace-fossils-from-the-precambriancambrian-boundary-candidate-at-meishucun-jinning-yunnan-china/0E76F52179C60433C3F68C8912309F52"
+    },
+    {
+     "title": "Wikipedia: Kunyang Subdistrict",
+     "url": "https://en.wikipedia.org/wiki/Kunyang_Subdistrict"
+    }
+   ]
+  },
+  {
+   "id": "eyes-hunters-armour",
+   "title": "Eyes, hunters and armour",
+   "ma": 521,
+   "dateLabel": "c. 521 million years ago",
+   "focus": [
+    127.3,
+    61.1
+   ],
+   "place": "Siberian Platform, Yakutia, Russia",
+   "text": "About 521 million years ago trilobites appear, almost at once, in Siberia, North America, Morocco and Spain. They were arthropods with jointed armour hardened with minerals, and most had compound eyes. Eyes changed life in the sea: hunters could find prey from a distance, and prey needed shells, spines and places to hide. The top hunters were radiodonts such as Anomalocaris, swimmers with a pair of spiny grasping arms in front of the mouth; fossil eyes from Kangaroo Island in Australia, about 513 million years old, hold at least 16,000 lenses each, rivalling the sharpest eyes of living arthropods. Whether eyes actually set off the Cambrian explosion, as Andrew Parker's 'light switch' idea proposes, many scientists doubt.",
+   "species": [
+    "Profallotaspis jakutensis",
+    "Redlichia",
+    "Anomalocaris",
+    "Isoxys"
+   ],
+   "sites": [
+    {
+     "name": "Earliest trilobites, Siberia",
+     "lonlat": [
+      127.3,
+      61.1
+     ],
+     "ma": 521,
+     "note": "Profallotaspis, one of the oldest trilobites."
+    },
+    {
+     "name": "Emu Bay Shale, Kangaroo Island",
+     "lonlat": [
+      137.5,
+      -35.58
+     ],
+     "ma": 513,
+     "note": "Radiodont compound eyes with thousands of lenses, described in 2011."
+    }
+   ],
+   "route": null,
+   "refs": [
+    "o:trilobites",
+    "o:arthropods"
+   ],
+   "imageIds": [
+    "anomalocaris-hunting"
+   ],
+   "images": [
+    {
+     "id": "anomalocaris-eye-emu-bay",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Fossilised_Anomalocaris_eye.jpg/1920px-Fossilised_Anomalocaris_eye.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Fossilised_Anomalocaris_eye.jpg",
+     "caption": "A fossil Anomalocaris eye preserved in pyrite, showing its honeycomb of tiny lenses.",
+     "credit": "UNE Photos",
+     "license": "CC BY 2.0",
+     "note": null,
+     "width": 3187,
+     "height": 1505,
+     "type": "fossil"
+    },
+    {
+     "id": "olenellus-trilobite-vermont",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Olenellus_sp_fossil.jpg/1920px-Olenellus_sp_fossil.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Olenellus_sp_fossil.jpg",
+     "caption": "Olenellus, an early Cambrian trilobite from Vermont, on display in the National Museum of Natural History, Paris.",
+     "credit": "Skye McDavid",
+     "license": "CC BY-SA 4.0",
+     "note": "Olenellus lived somewhat after the very first trilobites.",
+     "width": 4592,
+     "height": 3448,
+     "type": "fossil"
+    }
+   ],
+   "evidence": "fossil",
+   "evidenceNote": "Hard trilobite shells appear suddenly in rocks of this age on several continents, and rare fossils preserve eyes in fine detail; the idea that eyes triggered the explosion is a hypothesis, not a finding.",
+   "sources": [
+    {
+     "title": "Wikipedia: Trilobite",
+     "url": "https://en.wikipedia.org/wiki/Trilobite"
+    },
+    {
+     "title": "Wikipedia: Anomalocaris",
+     "url": "https://en.wikipedia.org/wiki/Anomalocaris"
+    },
+    {
+     "title": "Wikipedia: Emu Bay Shale",
+     "url": "https://en.wikipedia.org/wiki/Emu_Bay_Shale"
+    },
+    {
+     "title": "Wikipedia: Cambrian explosion",
+     "url": "https://en.wikipedia.org/wiki/Cambrian_explosion"
+    }
+   ]
+  },
+  {
+   "id": "chengjiang-and-sirius-passet",
+   "title": "Windows into an early Cambrian sea",
+   "ma": 518,
+   "dateLabel": "c. 518 million years ago",
+   "focus": [
+    102.98,
+    24.67
+   ],
+   "place": "Maotianshan, Chengjiang, Yunnan, China",
+   "text": "At Maotianshan near Chengjiang, fine mud buried a whole early Cambrian sea floor so fast that legs, guts, gills and eyes survive. First recognised in 1984, it had yielded about 185 described species by 2006: radiodonts, trilobites with their legs and antennae, sponges, worms, spiny lobopodians and some of the first chordates. At Sirius Passet in far northern Greenland, rocks of about the same age hold a similar mix, including gilled relatives of the arthropods. In 2019 a third window opened, the Qingjiang biota on the Danshui River in Hubei, where more than half of the 101 kinds first described were new to science, among them many jellyfish and comb jellies. Together they show that busy food webs were already in place early in the Cambrian.",
+   "species": [
+    "Houcaris saron (formerly Anomalocaris saron)",
+    "Misszhouia",
+    "Kerygmachela",
+    "Pambdelurion",
+    "Yunnanozoon",
+    "Hallucigenia"
+   ],
+   "sites": [
+    {
+     "name": "Chengjiang Fossil Site, Maotianshan",
+     "lonlat": [
+      102.98,
+      24.67
+     ],
+     "ma": 518,
+     "note": "UNESCO World Heritage Site since 2012."
+    },
+    {
+     "name": "Sirius Passet, J.P. Koch Fjord, Greenland",
+     "lonlat": [
+      -42.23,
+      82.79
+     ],
+     "ma": 518,
+     "note": "Discovered in 1984; rocks about 523 to 518 million years old."
+    },
+    {
+     "name": "Qingjiang biota, Danshui River, Changyang, Hubei",
+     "lonlat": [
+      110.87,
+      30.47
+     ],
+     "ma": 518,
+     "note": "Reported in 2019; rich in jellyfish and comb jellies."
+    }
+   ],
+   "route": null,
+   "refs": [
+    "e:chengjiang",
+    "o:arthropods",
+    "o:chordates",
+    "o:sponges",
+    "o:cnidarians",
+    "o:trilobites"
+   ],
+   "imageIds": [
+    "hallucigenia-on-sponge"
+   ],
+   "images": [
+    {
+     "id": "maotianshan-shale-outcrop",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Maotianshan_shale_outcrop.JPG/1920px-Maotianshan_shale_outcrop.JPG",
+     "page": "https://commons.wikimedia.org/wiki/File:Maotianshan_shale_outcrop.JPG",
+     "caption": "The Maotianshan Shale near Chengjiang, Yunnan, where the Chengjiang fossils were found, now protected inside a museum building.",
+     "credit": "Martin Smith",
+     "license": "CC BY-SA 4.0",
+     "note": null,
+     "width": 4000,
+     "height": 3000,
+     "type": "rock"
+    },
+    {
+     "id": "retifacies-chengjiang-fossil",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Retifacies_abnormalis%2C_Chengjiang_biota.jpg/1920px-Retifacies_abnormalis%2C_Chengjiang_biota.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Retifacies_abnormalis,_Chengjiang_biota.jpg",
+     "caption": "Retifacies, an arthropod from Chengjiang with a net-patterned armour, preserved in yellow mudstone.",
+     "credit": "Woudloper",
+     "license": "CC BY-SA 4.0",
+     "note": null,
+     "width": 4096,
+     "height": 3072,
+     "type": "fossil"
+    },
+    {
+     "id": "kerygmachela-reconstruction",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Kerygmachela_life_restoration.jpg/960px-Kerygmachela_life_restoration.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Kerygmachela_life_restoration.jpg",
+     "caption": "Kerygmachela, a finned relative of the arthropods from Sirius Passet in Greenland, swimming with its long front limbs held forward.",
+     "credit": "Rebecca Gelernter",
+     "license": "CC BY 4.0",
+     "note": null,
+     "width": 1091,
+     "height": 753,
+     "type": "reconstruction"
+    }
+   ],
+   "evidence": "fossil",
+   "evidenceNote": "Animals buried quickly in fine mud kept their soft parts as thin films; the rock layers are dated to about 518 million years.",
+   "sources": [
+    {
+     "title": "Wikipedia: Chengjiang biota",
+     "url": "https://en.wikipedia.org/wiki/Chengjiang_biota"
+    },
+    {
+     "title": "Wikipedia: Sirius Passet",
+     "url": "https://en.wikipedia.org/wiki/Sirius_Passet"
+    },
+    {
+     "title": "Science News: Newfound fossils in China highlight a dizzying diversity of Cambrian life",
+     "url": "https://www.sciencenews.org/article/china-fossil-cache-cambrian-explosion"
+    },
+    {
+     "title": "Wikipedia: Qingjiang biota",
+     "url": "https://en.wikipedia.org/wiki/Qingjiang_biota"
+    }
+   ]
+  },
+  {
+   "id": "first-vertebrates",
+   "title": "The first animals with backbones",
+   "ma": 518,
+   "dateLabel": "c. 518 million years ago",
+   "focus": [
+    102.57,
+    24.78
+   ],
+   "place": "Haikou, near Kunming, Yunnan, China",
+   "text": "Among the Chengjiang fossils near Haikou are small fish-shaped animals: Haikouichthys, about 2.5 centimetres long, and Myllokunmingia, both described in 1999. They had a head, gills, fins, a stiffening rod along the back and zigzag blocks of muscle, the body plan of every later backboned animal, from sharks to people. More than 500 specimens of Haikouichthys are known. In 2026 a study reported that these first vertebrates had four camera-like eyes, two at the sides and two smaller ones on top of the head, which may have become the light-sensing pineal organ of later animals. Whether Haikouichthys and Myllokunmingia are two species or one is still argued.",
+   "species": [
+    "Haikouichthys ercaicunensis",
+    "Myllokunmingia fengjiaoa"
+   ],
+   "sites": [
+    {
+     "name": "Ercaicun, Haikou",
+     "lonlat": [
+      102.57,
+      24.78
+     ],
+     "ma": 518,
+     "note": "Find spot of Haikouichthys, in the Yuanshan Member of the Qiongzhusi Formation."
+    }
+   ],
+   "route": null,
+   "refs": [
+    "o:jawless-fish",
+    "o:chordates",
+    "e:chengjiang"
+   ],
+   "imageIds": [],
+   "images": [
+    {
+     "id": "haikouichthys-reconstruction",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Haikouichthys-ercaicunensis-restoration.jpg/1920px-Haikouichthys-ercaicunensis-restoration.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Haikouichthys-ercaicunensis-restoration.jpg",
+     "caption": "A painting of Haikouichthys, one of the first animals with a backbone, with gill openings behind the head and a long fin along the back.",
+     "credit": "Makergreen",
+     "license": "CC BY-SA 4.0",
+     "note": "Painted in 2024 with one pair of eyes; a 2026 study suggests it also had two small eyes on top of the head.",
+     "width": 2040,
+     "height": 1573,
+     "type": "reconstruction"
+    },
+    {
+     "id": "haikouichthys-fossil-ivpp",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Haikouichthys-IVPP.jpg/1920px-Haikouichthys-IVPP.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Haikouichthys-IVPP.jpg",
+     "caption": "A slab with Haikouichthys fossils, outlined and labelled in ink, at the Paleozoological Museum of China in Beijing.",
+     "credit": "Morosaurus millenii",
+     "license": "CC BY-SA 4.0",
+     "note": null,
+     "width": 2592,
+     "height": 1728,
+     "type": "fossil"
+    }
+   ],
+   "evidence": "fossil",
+   "evidenceNote": "Soft-bodied fossils preserve gills, fins, muscle blocks and pigment in the eyes; the four-eyed interpretation is new (2026) and still being tested.",
+   "sources": [
+    {
+     "title": "Wikipedia: Haikouichthys",
+     "url": "https://en.wikipedia.org/wiki/Haikouichthys"
+    },
+    {
+     "title": "University of Bristol: Lei et al. 2026, Nature, Four camera-type eyes in the earliest vertebrates from the Cambrian Period",
+     "url": "https://research-information.bris.ac.uk/en/publications/four-camera-type-eyes-in-the-earliest-vertebrates-from-the-cambri/"
+    },
+    {
+     "title": "Wikipedia: Chengjiang biota",
+     "url": "https://en.wikipedia.org/wiki/Chengjiang_biota"
+    }
+   ]
+  },
+  {
+   "id": "burgess-shale-oddities",
+   "title": "The strange animals of the Burgess Shale",
+   "ma": 508,
+   "dateLabel": "c. 508 million years ago",
+   "focus": [
+    -116.47,
+    51.44
+   ],
+   "place": "Burgess Shale, Yoho National Park, British Columbia, Canada",
+   "text": "High in the Canadian Rockies, mud flows buried animals on a sea floor about 508 million years ago and kept their soft bodies as dark films. Charles Walcott found the site in 1909 and collected over 65,000 specimens; later studies by Harry Whittington and his students showed how strange many were. Opabinia had five eyes and a long trunk ending in a claw; Hallucigenia, a spiny worm on legs, was long drawn upside down and back to front; scale-covered Wiwaxia was probably a relative of the molluscs; and Pikaia, about 5 centimetres long, is one of the earliest known chordates. In 2012 scientists found a rich new site at Marble Canyon in Kootenay National Park, 42 kilometres away, and collected 50 animal species there in just 15 days.",
+   "species": [
+    "Opabinia regalis",
+    "Hallucigenia sparsa",
+    "Wiwaxia corrugata",
+    "Pikaia gracilens",
+    "Anomalocaris canadensis",
+    "Olenoides serratus"
+   ],
+   "sites": [
+    {
+     "name": "Walcott Quarry, Burgess Shale",
+     "lonlat": [
+      -116.47,
+      51.44
+     ],
+     "ma": 508,
+     "note": "Walcott's 'Phyllopod bed', source of most classic Burgess Shale fossils."
+    },
+    {
+     "name": "Marble Canyon, Kootenay National Park",
+     "lonlat": [
+      -116.12,
+      51.19
+     ],
+     "ma": 507,
+     "note": "New Burgess Shale site found in 2012; exact spot kept secret, position approximate."
+    }
+   ],
+   "route": null,
+   "refs": [
+    "e:burgess-shale",
+    "o:arthropods",
+    "o:chordates",
+    "o:molluscs",
+    "o:trilobites"
+   ],
+   "imageIds": [
+    "opabinia-seafloor"
+   ],
+   "images": [
+    {
+     "id": "walcott-quarry-burgess-shale",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/WalcottQuarry080509.jpg/1920px-WalcottQuarry080509.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:WalcottQuarry080509.jpg",
+     "caption": "The Walcott Quarry high on a ridge in Yoho National Park, British Columbia, where most Burgess Shale fossils were dug.",
+     "credit": "Mark A. Wilson",
+     "license": "Public domain",
+     "note": null,
+     "width": 3000,
+     "height": 4000,
+     "type": "landscape"
+    },
+    {
+     "id": "wiwaxia-fossil-burgess",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Wiwaxia_3G_crop.JPG/1920px-Wiwaxia_3G_crop.JPG",
+     "page": "https://commons.wikimedia.org/wiki/File:Wiwaxia_3G_crop.JPG",
+     "caption": "A Burgess Shale fossil of Wiwaxia corrugata, an oval animal covered in overlapping scales with two rows of spines.",
+     "credit": "Martin R. Smith",
+     "license": "CC0",
+     "note": null,
+     "width": 3718,
+     "height": 3184,
+     "type": "fossil"
+    },
+    {
+     "id": "pikaia-reconstruction",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Pikaia_recon.png/960px-Pikaia_recon.png",
+     "page": "https://commons.wikimedia.org/wiki/File:Pikaia_recon.png",
+     "caption": "A reconstruction of Pikaia, a small eel-like swimmer from the Burgess Shale and one of the earliest known chordates.",
+     "credit": "Entelognathus",
+     "license": "CC BY-SA 4.0",
+     "note": "Pikaia's anatomy was reinterpreted in 2024 and is still debated.",
+     "width": 1252,
+     "height": 1069,
+     "type": "reconstruction"
+    }
+   ],
+   "evidence": "fossil",
+   "evidenceNote": "Animals were buried in fine mud that kept their soft tissues as thin dark films; the rocks are dated to about 508 to 505 million years.",
+   "sources": [
+    {
+     "title": "Wikipedia: Burgess Shale",
+     "url": "https://en.wikipedia.org/wiki/Burgess_Shale"
+    },
+    {
+     "title": "Royal Ontario Museum: Human's oldest ancestor found in Burgess Shale",
+     "url": "https://www.rom.on.ca/news-releases/humans-oldest-ancestor-found-burgess-shale"
+    },
+    {
+     "title": "Royal Ontario Museum: ROM researchers discover 'epic' new Burgess Shale site in Kootenay National Park",
+     "url": "https://www.rom.on.ca/news-releases/rom-researchers-discover-epic-new-burgess-shale-site-canadas-kootenay-national-park"
+    },
+    {
+     "title": "Wikipedia: Hallucigenia",
+     "url": "https://en.wikipedia.org/wiki/Hallucigenia"
+    },
+    {
+     "title": "Wikipedia: Wiwaxia",
+     "url": "https://en.wikipedia.org/wiki/Wiwaxia"
+    }
+   ]
+  },
+  {
+   "id": "fezouata-epilogue",
+   "title": "Epilogue: the survivors of Fezouata",
+   "ma": 485,
+   "dateLabel": "c. 485 to 478 million years ago",
+   "focus": [
+    -5.84,
+    30.45
+   ],
+   "place": "Fezouata Shale, north of Zagora, Draa Valley, Morocco",
+   "text": "For a long time the strange Burgess Shale animals seemed to vanish after the middle of the Cambrian. Then, in the late 1990s, the local collector Mohamed Ben Moula showed scientists soft-bodied fossils from the hills north of Zagora in Morocco, in rocks from early in the Ordovician Period; the richest beds are about 480 million years old. They hold Burgess Shale-type animals, including Aegirocassis, a radiodont about two metres long that sieved plankton instead of hunting. Their survival suggests that much of the apparent disappearance came from a lack of rocks that preserve soft bodies, not only from extinction. Here the Cambrian explosion runs on into the next great rise in the number of species, the Great Ordovician Biodiversification.",
+   "species": [
+    "Aegirocassis benmoulai",
+    "Trilobites",
+    "Early echinoderms",
+    "Sponges"
+   ],
+   "sites": [
+    {
+     "name": "Fezouata Shale, Jbel Tizagzaouine area north of Zagora",
+     "lonlat": [
+      -5.84,
+      30.45
+     ],
+     "ma": 480,
+     "note": "Thin layers of exceptional preservation, mostly late Tremadocian; position approximate."
+    }
+   ],
+   "route": null,
+   "refs": [
+    "o:arthropods",
+    "o:trilobites",
+    "o:echinoderms",
+    "o:sponges"
+   ],
+   "imageIds": [
+    "fezouata-biota-scene"
+   ],
+   "images": [
+    {
+     "id": "aegirocassis-reconstruction",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/20191205_Aegirocassis_benmoulai_Aegirocassis_benmoulae.png/1280px-20191205_Aegirocassis_benmoulai_Aegirocassis_benmoulae.png",
+     "page": "https://commons.wikimedia.org/wiki/File:20191205_Aegirocassis_benmoulai_Aegirocassis_benmoulae.png",
+     "caption": "A reconstruction of Aegirocassis, a two-metre radiodont from the Fezouata Shale whose bristled head arms sieved plankton from the water.",
+     "credit": "Junnn11",
+     "license": "CC BY-SA 4.0",
+     "note": null,
+     "width": 1900,
+     "height": 700,
+     "type": "reconstruction"
+    }
+   ],
+   "evidence": "fossil",
+   "evidenceNote": "Soft-bodied animals are preserved as flattened films in mudstones dated by graptolites and other fossils to the early Ordovician, about 480 million years ago.",
+   "sources": [
+    {
+     "title": "Wikipedia: Fezouata Formation",
+     "url": "https://en.wikipedia.org/wiki/Fezouata_Formation"
+    },
+    {
+     "title": "Van Roy et al. 2010, Nature: Ordovician faunas of Burgess Shale type (RePEc record)",
+     "url": "https://ideas.repec.org/a/nat/nature/v465y2010i7295d10.1038_nature09038.html"
+    },
+    {
+     "title": "Yale News: Giant sea creature hints at early arthropod evolution (2015)",
+     "url": "https://news.yale.edu/2015/03/11/giant-sea-creature-hints-early-arthropod-evolution"
+    },
+    {
+     "title": "Wikipedia: Zagora, Morocco",
+     "url": "https://en.wikipedia.org/wiki/Zagora,_Morocco"
+    }
+   ]
+  }
+ ]
+}

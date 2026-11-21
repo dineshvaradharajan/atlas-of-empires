@@ -1,0 +1,1136 @@
+{
+ "id": "great-dying",
+ "title": "The Great Dying and the recovery",
+ "summary": "About 252 million years ago eruptions in Siberia triggered the worst extinction in Earth's history, wiping out most life in the sea and much of it on land. This story follows the world before the disaster, the killing itself, and the slow recovery that ended with the first dinosaurs.",
+ "from": 262,
+ "to": 230,
+ "chapters": [
+  {
+   "id": "capitan-reef",
+   "title": "A Permian reef in Texas",
+   "ma": 262,
+   "dateLabel": "c. 265 to 260 million years ago",
+   "focus": [
+    -104.86,
+    31.88
+   ],
+   "place": "El Capitan, Guadalupe Mountains, Texas, USA",
+   "text": "Pangaea, the single supercontinent, stretched from pole to pole, and warm shallow seas lapped its edges. One of them, the Delaware Sea of today's Texas and New Mexico, was ringed by a great reef built mostly by lime-making algae, microbes, sponges and tiny colonial animals called bryozoans, not by corals as today. Around 260 million years ago falling sea level cut the sea off from the ocean, it dried out, and salt and mud buried the reef. Lifted by faults in the last 20 million years, the reef now stands as the cliff of El Capitan, and Carlsbad Caverns are carved into the same rock.",
+   "species": [
+    "Calcareous algae and microbes",
+    "Sponges",
+    "Bryozoans",
+    "Productid brachiopods",
+    "Fusulinid foraminifera"
+   ],
+   "sites": [
+    {
+     "name": "El Capitan, Guadalupe Mountains National Park",
+     "lonlat": [
+      -104.86,
+      31.88
+     ],
+     "ma": 262,
+     "note": "The thousand-foot cliff of El Capitan is made of Capitan Reef limestone."
+    },
+    {
+     "name": "Carlsbad Caverns",
+     "lonlat": [
+      -104.44,
+      32.18
+     ],
+     "ma": 262,
+     "note": "These caves were dissolved out of the same Permian reef limestone."
+    }
+   ],
+   "route": null,
+   "refs": [],
+   "imageIds": [],
+   "images": [
+    {
+     "id": "el-capitan-labeled",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/El_Capitan_labeled.jpg/1920px-El_Capitan_labeled.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:El_Capitan_labeled.jpg",
+     "width": 4681,
+     "height": 2971,
+     "type": "rock",
+     "caption": "El Capitan in Texas with its rock layers labelled; the pale Capitan Limestone at the top is the old reef, with the basin's layers below.",
+     "credit": "Kenneth Carpenter",
+     "license": "CC BY-SA 4.0",
+     "note": "Small text labels are part of the image."
+    },
+    {
+     "id": "guadalupe-el-capitan-2006",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Guadalupe_Mountains_and_El_Capitan_2006.jpg/1920px-Guadalupe_Mountains_and_El_Capitan_2006.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Guadalupe_Mountains_and_El_Capitan_2006.jpg",
+     "width": 3072,
+     "height": 2048,
+     "type": "landscape",
+     "caption": "The Guadalupe Mountains and the cliff of El Capitan rise above the desert of west Texas, a Permian reef lifted high above sea level.",
+     "credit": "Leaflet",
+     "license": "CC BY-SA 3.0",
+     "note": null
+    }
+   ],
+   "evidence": "geology",
+   "evidenceNote": "The reef limestone, its fossils and the salt layers that buried it can be traced through the Guadalupe Mountains, the world reference section for the Middle Permian.",
+   "sources": [
+    {
+     "title": "US National Park Service, Guadalupe Mountains: Geologic Formations",
+     "url": "https://www.nps.gov/gumo/learn/nature/geologicformations.htm"
+    },
+    {
+     "title": "US National Park Service, Guadalupe Mountains: Coral Reefs",
+     "url": "https://www.nps.gov/gumo/learn/nature/coralreefs.htm"
+    },
+    {
+     "title": "Wikipedia: Carlsbad Caverns National Park",
+     "url": "https://en.wikipedia.org/wiki/Carlsbad_Caverns_National_Park"
+    },
+    {
+     "title": "Wikipedia: El Capitan (Texas)",
+     "url": "https://en.wikipedia.org/wiki/El_Capitan_(Texas)"
+    }
+   ]
+  },
+  {
+   "id": "emeishan-crisis",
+   "title": "Lava in China, a first crisis",
+   "ma": 260,
+   "dateLabel": "c. 262 to 259 million years ago",
+   "focus": [
+    103.33,
+    29.52
+   ],
+   "place": "Mount Emei, Sichuan, China",
+   "text": "Around 260 million years ago lava flooded what is now south-west China, building the Emeishan Traps, named after Mount Emei. They still cover more than 250,000 square kilometres, though far smaller than the Siberian eruptions to come. At about the same time a crisis struck: big single-celled fusulinids, corals and tropical reefs collapsed in the sea, and in South Africa's Karoo the giant plant-eating and meat-eating dinocephalians vanished. How big this end-Capitanian extinction was is disputed: some count it among the great mass extinctions, others see a smaller or more local event.",
+   "species": [
+    "Dinocephalians (Anteosaurus)",
+    "Fusulinid foraminifera",
+    "Reef corals",
+    "Brachiopods"
+   ],
+   "sites": [
+    {
+     "name": "Mount Emei, Sichuan",
+     "lonlat": [
+      103.33,
+      29.52
+     ],
+     "ma": 260,
+     "note": "The mountain gives its name to the Emeishan lavas of south-west China."
+    },
+    {
+     "name": "Karoo Basin, South Africa",
+     "lonlat": [
+      24.54,
+      -32.25
+     ],
+     "ma": 260,
+     "note": "Dinocephalians disappear from the Karoo rocks around 260 million years ago."
+    }
+   ],
+   "route": null,
+   "refs": [
+    "o:therapsids"
+   ],
+   "imageIds": [],
+   "images": [
+    {
+     "id": "permian-world-260ma",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/260Ma_Mollweide.png/1920px-260Ma_Mollweide.png",
+     "page": "https://commons.wikimedia.org/wiki/File:260Ma_Mollweide.png",
+     "width": 3610,
+     "height": 1810,
+     "type": "scene",
+     "caption": "A map of the Earth 260 million years ago, with almost all land joined in Pangaea and the outlines of today's countries drawn on.",
+     "credit": "Christopher R. Scotese and colleagues",
+     "license": "CC BY 4.0",
+     "note": "A computer reconstruction; the edges of ancient coastlines are uncertain."
+    },
+    {
+     "id": "anteosaurus-bogdanov",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Anteosaurus_magnificus.jpg/1920px-Anteosaurus_magnificus.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Anteosaurus_magnificus.jpg",
+     "width": 2102,
+     "height": 911,
+     "type": "reconstruction",
+     "caption": "Anteosaurus, a huge dinocephalian from the Karoo; dinocephalians died out in the crisis about 260 million years ago.",
+     "credit": "Dmitry Bogdanov",
+     "license": "Public domain",
+     "note": "Skin and colour are guesses."
+    },
+    {
+     "id": "large-igneous-provinces-map",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Flood_Basalt_Map.jpg/960px-Flood_Basalt_Map.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Flood_Basalt_Map.jpg",
+     "width": 1152,
+     "height": 720,
+     "type": "scene",
+     "caption": "A world map of great lava floods, including the Emeishan Traps of China and the Siberian Traps.",
+     "credit": "Williamborg",
+     "license": "CC BY-SA 3.0",
+     "note": "Built on a US Geological Survey map; low resolution, with labels in boxes."
+    }
+   ],
+   "evidence": "disputed",
+   "evidenceNote": "Limestones inside the lava pile show sea life dying out just below the first eruptions, but estimates of the losses range from about 18 to 47 percent of marine genera.",
+   "sources": [
+    {
+     "title": "Wikipedia: Emeishan Traps",
+     "url": "https://en.wikipedia.org/wiki/Emeishan_Traps"
+    },
+    {
+     "title": "Wikipedia: Capitanian mass extinction event",
+     "url": "https://en.wikipedia.org/wiki/Capitanian_mass_extinction_event"
+    },
+    {
+     "title": "Wikipedia: Mount Emei",
+     "url": "https://en.wikipedia.org/wiki/Mount_Emei"
+    }
+   ]
+  },
+  {
+   "id": "karoo-before-the-fall",
+   "title": "Sabre-teeth and tusks in the Karoo",
+   "ma": 255,
+   "dateLabel": "c. 260 to 252 million years ago",
+   "focus": [
+    24.54,
+    -32.25
+   ],
+   "place": "Karoo Basin near Graaff-Reinet, South Africa",
+   "text": "In the last part of the Permian, rivers wound across the Karoo in the far south of Pangaea, lined by forests of Glossopteris, a seed-bearing tree with tongue-shaped leaves that grew across the southern continents. The commonest large animals were dicynodonts, beaked plant-eaters with two tusks, from burrowing Diictodon to much bigger kinds. They were hunted by gorgonopsians, sabre-toothed relatives of mammals up to about 3.5 metres long, such as Rubidgea and later Inostrancevia. Layer after layer of Karoo mud preserves this world right up to its end.",
+   "species": [
+    "Glossopteris",
+    "Diictodon",
+    "Dicynodon",
+    "Rubidgea",
+    "Inostrancevia"
+   ],
+   "sites": [
+    {
+     "name": "Karoo Basin, Beaufort Group rocks",
+     "lonlat": [
+      24.54,
+      -32.25
+     ],
+     "ma": 255,
+     "note": "River muds up to 6 kilometres thick hold one of the richest records of Permian land animals."
+    }
+   ],
+   "route": null,
+   "refs": [
+    "e:karoo-fossil-beds",
+    "o:therapsids",
+    "o:synapsids"
+   ],
+   "imageIds": [
+    "permian-lakeshore-karoo"
+   ],
+   "images": [
+    {
+     "id": "diictodon-burrow-pair",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Cuddling_Diictodon.jpg/1920px-Cuddling_Diictodon.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Cuddling_Diictodon.jpg",
+     "width": 5000,
+     "height": 3000,
+     "type": "reconstruction",
+     "caption": "Two Diictodon, small tusked plant-eaters, rest curled up together in their burrow.",
+     "credit": "LiterallyMiguel",
+     "license": "CC BY 4.0",
+     "note": "Skin and colour are guesses; based on fossils of pairs found in burrows."
+    },
+    {
+     "id": "diictodon-burrow-fossil",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Iziko_Diictodon_Hibernating_Pair.JPG/1920px-Iziko_Diictodon_Hibernating_Pair.JPG",
+     "page": "https://commons.wikimedia.org/wiki/File:Iziko_Diictodon_Hibernating_Pair.JPG",
+     "width": 4323,
+     "height": 3769,
+     "type": "fossil",
+     "caption": "Fossil skeletons of two Diictodon that curled up together in an underground burrow, on show at the Iziko South African Museum.",
+     "credit": "Nkansahrexford",
+     "license": "CC BY 3.0",
+     "note": "Museum display; part of a label shows behind the block."
+    },
+    {
+     "id": "rubidgea-bogdanov",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Rubigea2DB.jpg/1280px-Rubigea2DB.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Rubigea2DB.jpg",
+     "width": 1318,
+     "height": 2000,
+     "type": "reconstruction",
+     "caption": "Rubidgea, a heavily built sabre-toothed gorgonopsian from the late Permian of South Africa.",
+     "credit": "Dmitry Bogdanov",
+     "license": "CC BY 3.0",
+     "note": "Portrait format. Whether gorgonopsians had hair or whiskers is not known."
+    }
+   ],
+   "evidence": "fossil",
+   "evidenceNote": "Skeletons buried in river muds of the Beaufort Group, dated by volcanic ash layers, record the animals and plants of the late Permian.",
+   "sources": [
+    {
+     "title": "Wikipedia: Dicynodont",
+     "url": "https://en.wikipedia.org/wiki/Dicynodont"
+    },
+    {
+     "title": "Wikipedia: Gorgonopsia",
+     "url": "https://en.wikipedia.org/wiki/Gorgonopsia"
+    },
+    {
+     "title": "Wikipedia: Glossopteris",
+     "url": "https://en.wikipedia.org/wiki/Glossopteris"
+    },
+    {
+     "title": "Wikipedia: Beaufort Group",
+     "url": "https://en.wikipedia.org/wiki/Beaufort_Group"
+    }
+   ]
+  },
+  {
+   "id": "siberian-traps-erupt",
+   "title": "Siberia bursts into flame",
+   "ma": 252.24,
+   "dateLabel": "c. 252.2 million years ago",
+   "focus": [
+    94.16,
+    69.05
+   ],
+   "place": "Putorana Plateau, Siberia, Russia",
+   "text": "About 300,000 years before the great extinction, lava began to pour out across Siberia. Roughly two-thirds of all the Siberian Traps erupted in about 300,000 years, and about 7 million square kilometres of basalt survive today. Just as important, sheets of magma pushed sideways underground through a basin full of coal, limestone and salt. Baking these rocks released enormous amounts of carbon dioxide and other gases, including chlorine compounds that can harm the ozone layer.",
+   "species": [],
+   "sites": [
+    {
+     "name": "Putorana Plateau",
+     "lonlat": [
+      94.16,
+      69.05
+     ],
+     "ma": 252,
+     "note": "Stacked lava flows form the step-like cliffs of this remote plateau."
+    }
+   ],
+   "route": null,
+   "refs": [
+    "e:siberian-traps"
+   ],
+   "imageIds": [],
+   "images": [
+    {
+     "id": "putorana-plateau-satellite",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Putorana_Plateau%2C_Siberia_ESA367705.jpg/1920px-Putorana_Plateau%2C_Siberia_ESA367705.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Putorana_Plateau,_Siberia_ESA367705.jpg",
+     "width": 2000,
+     "height": 2000,
+     "type": "landscape",
+     "caption": "Snow picks out deep valleys cut into the lava plateau of Putorana in a satellite picture.",
+     "credit": "European Space Agency",
+     "license": "CC BY-SA 3.0 IGO",
+     "note": "Square satellite view; north is roughly up."
+    },
+    {
+     "id": "putorana-plateau-cliffs",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Plato_Putorana_03.jpg/1920px-Plato_Putorana_03.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Plato_Putorana_03.jpg",
+     "width": 2816,
+     "height": 2112,
+     "type": "landscape",
+     "caption": "A flat-topped mountain of stacked lava flows on the Putorana Plateau, seen from the air.",
+     "credit": "jxandreani",
+     "license": "CC BY 2.0",
+     "note": "The photographer's description says only 'Central Siberian Plateau'; the place is from the file name."
+    },
+    {
+     "id": "siberian-traps-native-iron",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Native_iron_in_basalt_%28Siberian_Traps_Flood_Basalt%2C_Permian-Triassic_boundary_times%2C_251_Ma%3B_Putoran_Plateau%2C_Siberia%2C_Russia%29_2_%2817338266745%29.jpg/1920px-Native_iron_in_basalt_%28Siberian_Traps_Flood_Basalt%2C_Permian-Triassic_boundary_times%2C_251_Ma%3B_Putoran_Plateau%2C_Siberia%2C_Russia%29_2_%2817338266745%29.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Native_iron_in_basalt_(Siberian_Traps_Flood_Basalt,_Permian-Triassic_boundary_times,_251_Ma;_Putoran_Plateau,_Siberia,_Russia)_2_(17338266745).jpg",
+     "width": 2197,
+     "height": 1266,
+     "type": "rock",
+     "caption": "A cut slab of Siberian Traps basalt from Putorana glittering with metallic iron, formed when magma reacted with coal underground.",
+     "credit": "James St. John",
+     "license": "CC BY 2.0",
+     "note": "The link between the iron and coal is the usual explanation for such rocks, not stated on the file page."
+    }
+   ],
+   "evidence": "geology",
+   "evidenceNote": "Uranium-lead dates on crystals from the lavas and the underground magma sheets match the age of the extinction.",
+   "sources": [
+    {
+     "title": "Burgess & Bowring 2015, Science Advances: High-precision geochronology confirms voluminous magmatism before, during, and after Earth's most severe extinction",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4643808/"
+    },
+    {
+     "title": "Wikipedia: Siberian Traps",
+     "url": "https://en.wikipedia.org/wiki/Siberian_Traps"
+    }
+   ]
+  },
+  {
+   "id": "meishan-boundary",
+   "title": "The Great Dying at Meishan",
+   "ma": 251.94,
+   "dateLabel": "c. 251.9 million years ago",
+   "focus": [
+    119.71,
+    31.08
+   ],
+   "place": "Meishan, Changxing, Zhejiang, China",
+   "text": "In a quarry at Meishan in eastern China, limestone full of fossils gives way within a few beds to rock where most of them are gone. Ash layers dated with great precision show that the main extinction began about 251.94 million years ago and was over within about 60,000 years, a blink in geological time. Just before it, the chemistry of carbon in the sea lurched, a sign of huge amounts of carbon entering the air. Meishan is the world's reference point for the start of the Triassic, marked by the first appearance of the tiny conodont Hindeodus parvus.",
+   "species": [
+    "Hindeodus parvus (conodont)",
+    "Brachiopods",
+    "Ammonoids",
+    "Fusulinid foraminifera"
+   ],
+   "sites": [
+    {
+     "name": "Meishan section, Permian-Triassic boundary stratotype",
+     "lonlat": [
+      119.71,
+      31.08
+     ],
+     "ma": 251.94,
+     "note": "Five dated ash beds bracket the extinction and the boundary."
+    }
+   ],
+   "route": null,
+   "refs": [
+    "e:end-permian-extinction"
+   ],
+   "imageIds": [],
+   "images": [
+    {
+     "id": "marine-extinction-intensity-graph",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/0/06/Extinction_intensity.svg",
+     "page": "https://commons.wikimedia.org/wiki/File:Extinction_intensity.svg",
+     "width": 531,
+     "height": 324,
+     "type": "scene",
+     "caption": "The share of sea animal genera dying out in each slice of time over 540 million years; the tallest spike, over 50 percent, is the end of the Permian.",
+     "credit": "Smith609 (data: Rohde and Muller 2005)",
+     "license": "CC BY-SA 3.0",
+     "note": "A graph, not a picture of the place; it counts genera, not species."
+    },
+    {
+     "id": "productid-brachiopod-texas",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Productid_Permian_Texas.JPG/1280px-Productid_Permian_Texas.JPG",
+     "page": "https://commons.wikimedia.org/wiki/File:Productid_Permian_Texas.JPG",
+     "width": 1528,
+     "height": 1105,
+     "type": "fossil",
+     "caption": "A spiny productid brachiopod from Permian Texas; nearly all productid species vanished in the Great Dying.",
+     "credit": "Wilson44691",
+     "license": "CC0",
+     "note": "From the Glass Mountains of Texas, about 270 million years old, not from Meishan."
+    }
+   ],
+   "evidence": "geology",
+   "evidenceNote": "Uranium-lead dates on zircon crystals from five volcanic ash beds at Meishan pin the extinction to between 251.94 and 251.88 million years ago.",
+   "sources": [
+    {
+     "title": "Burgess, Bowring & Shen 2014, PNAS: High-precision timeline for Earth's most severe extinction",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3948271"
+    },
+    {
+     "title": "Wikipedia: Permian-Triassic extinction event",
+     "url": "https://en.wikipedia.org/wiki/Permian%E2%80%93Triassic_extinction_event"
+    },
+    {
+     "title": "Wikipedia: Productida",
+     "url": "https://en.wikipedia.org/wiki/Productida"
+    }
+   ]
+  },
+  {
+   "id": "forests-fall",
+   "title": "Forests fall and the coal stops",
+   "ma": 251.9,
+   "dateLabel": "c. 252.3 to 251.9 million years ago",
+   "focus": [
+    151.62,
+    -33.19
+   ],
+   "place": "Frazer Beach, Sydney Basin, New South Wales, Australia",
+   "text": "On the coast near Sydney the last Permian coal seam is capped by grey lake mud: the Glossopteris forests that made the coal died out here a few hundred thousand years before the extinction in the sea. Worldwide about 81 percent of marine species and about 70 percent of land vertebrate species were lost. It was also the greatest known extinction of insects, and perhaps the only one that cut their diversity deeply. No coal at all is known from the earliest Triassic anywhere: peat-forming swamp forests took millions of years to return.",
+   "species": [
+    "Glossopteris",
+    "Insects",
+    "Lepidopteris",
+    "Pleuromeia"
+   ],
+   "sites": [
+    {
+     "name": "Frazer Beach, Munmorah State Conservation Area",
+     "lonlat": [
+      151.62,
+      -33.19
+     ],
+     "ma": 252.1,
+     "note": "The last Permian coal is overlain by lake muds laid down just after the Glossopteris forests died."
+    }
+   ],
+   "route": null,
+   "refs": [
+    "e:end-permian-extinction",
+    "o:insects"
+   ],
+   "imageIds": [],
+   "images": [
+    {
+     "id": "frazer-beach-boundary",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Permian-Triassic_boundary_at_Frazer_Beach%2C_NSW.jpg/1920px-Permian-Triassic_boundary_at_Frazer_Beach%2C_NSW.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Permian-Triassic_boundary_at_Frazer_Beach,_NSW.jpg",
+     "width": 3024,
+     "height": 4032,
+     "type": "rock",
+     "caption": "The Permian-Triassic boundary at Frazer Beach: the black band at the bottom is the last Permian coal, with grey and sandy Triassic layers above.",
+     "credit": "Dippiljemmy",
+     "license": "CC BY-SA 4.0",
+     "note": "Portrait format."
+    },
+    {
+     "id": "glossopteris-leaves-australia",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Glossopteris_sp._%28fossil_plant%29.jpg/1920px-Glossopteris_sp._%28fossil_plant%29.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Glossopteris_sp._(fossil_plant).jpg",
+     "width": 3528,
+     "height": 2659,
+     "type": "fossil",
+     "caption": "Tongue-shaped Glossopteris leaves from the late Permian of Australia, from the trees whose forests collapsed at the end of the Permian.",
+     "credit": "Bloopityboop",
+     "license": "CC BY-SA 4.0",
+     "note": "Shown at the Royal Tyrrell Museum, Canada."
+    }
+   ],
+   "evidence": "fossil",
+   "evidenceNote": "Fossil pollen and spores in rock layers dated by zircon crystals show the Glossopteris flora vanishing from the Sydney Basin before about 252.1 to 252.3 million years ago.",
+   "sources": [
+    {
+     "title": "Fielding et al. 2019, Nature Communications: Age and pattern of the southern high-latitude continental end-Permian extinction (abstract)",
+     "url": "https://ideas.repec.org/a/nat/natcom/v10y2019i1d10.1038_s41467-018-07934-z.html"
+    },
+    {
+     "title": "McLoughlin et al. 2021, Frontiers in Earth Science: Age and paleoenvironmental significance of the Frazer Beach Member",
+     "url": "https://www.frontiersin.org/articles/10.3389/feart.2020.600976"
+    },
+    {
+     "title": "Wikipedia: Permian-Triassic extinction event",
+     "url": "https://en.wikipedia.org/wiki/Permian%E2%80%93Triassic_extinction_event"
+    },
+    {
+     "title": "Wikipedia: Glossopteris",
+     "url": "https://en.wikipedia.org/wiki/Glossopteris"
+    }
+   ]
+  },
+  {
+   "id": "hot-acid-breathless",
+   "title": "Too hot, too acid, too breathless",
+   "ma": 251.8,
+   "dateLabel": "c. 251.9 to 247 million years ago",
+   "focus": [
+    106.5,
+    25.0
+   ],
+   "place": "Nanpanjiang Basin, Guizhou and Guangxi, China",
+   "text": "Oxygen in the tiny teeth of conodonts from south China works like a thermometer, and it suggests tropical seas warmed to around 40 degrees Celsius, with peaks that came and went for millions of years. Warmer water holds less oxygen while animals need more, and models suggest this alone explains over half of the losses in the sea. Shell chemistry also points to a sharp drop in ocean pH as the extinction began. How much each of these mattered, and whether the acid was global, is still disputed; ozone loss, acid rain and mercury poisoning may have added to the toll on land.",
+   "species": [
+    "Conodonts",
+    "Calcareous algae",
+    "Fish",
+    "Brachiopods"
+   ],
+   "sites": [
+    {
+     "name": "Nanpanjiang Basin sections, south China",
+     "lonlat": [
+      106.5,
+      25.0
+     ],
+     "ma": 251,
+     "note": "About 15,000 conodonts from rocks here were used to track Early Triassic sea temperatures."
+    },
+    {
+     "name": "Meishan, Zhejiang",
+     "lonlat": [
+      119.71,
+      31.08
+     ],
+     "ma": 251.9,
+     "note": "Sea surface temperature here rose about 10 degrees Celsius during the extinction."
+    }
+   ],
+   "route": null,
+   "refs": [
+    "e:end-permian-extinction"
+   ],
+   "imageIds": [],
+   "images": [
+    {
+     "id": "permian-triassic-climate-map",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Permian%E2%80%93Triassic_paleoclimate.jpg/1280px-Permian%E2%80%93Triassic_paleoclimate.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Permian–Triassic_paleoclimate.jpg",
+     "width": 1558,
+     "height": 788,
+     "type": "scene",
+     "caption": "Pangaea with modelled climate belts; after the extinction, land animals shifted away from the scorching tropics toward the poles.",
+     "credit": "Massimo Bernardi (MUSE), published by Michael J. Benton",
+     "license": "CC BY 4.0",
+     "note": "A simplified scientific diagram; the animal icons are symbols, not real finds."
+    },
+    {
+     "id": "hindeodus-conodont-elements",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Hindeodus_elements.jpg/1920px-Hindeodus_elements.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Hindeodus_elements.jpg",
+     "width": 2128,
+     "height": 1064,
+     "type": "fossil",
+     "caption": "The tooth-like elements of the conodont Hindeodus parvus, drawn as they sat in the animal's mouth; conodont teeth like these record ancient sea temperatures.",
+     "credit": "Muhui Zhang and colleagues",
+     "license": "CC BY 4.0",
+     "note": "A drawing from a scientific paper, not a photograph."
+    }
+   ],
+   "evidence": "disputed",
+   "evidenceNote": "Oxygen isotopes in conodont teeth and boron isotopes in brachiopod shells record heat and acid, but how severe and how widespread each was is argued over.",
+   "sources": [
+    {
+     "title": "EurekAlert (University of Leeds): Tropical collapse caused by lethal heat, on Sun et al. 2012, Science",
+     "url": "https://www.eurekalert.org/news-releases/489570"
+    },
+    {
+     "title": "University of Washington News: Biggest extinction in Earth's history caused by global warming leaving ocean animals gasping for breath (Penn et al. 2018)",
+     "url": "https://www.washington.edu/news/2018/12/06/biggest-extinction-in-earths-history-caused-by-global-warming-leaving-ocean-animals-gasping-for-breath/"
+    },
+    {
+     "title": "Jurikova et al. 2020, Nature Geoscience: Permian-Triassic mass extinction pulses driven by major marine carbon cycle perturbations (abstract)",
+     "url": "https://research-portal.st-andrews.ac.uk/en/publications/permiantriassic-mass-extinction-pulses-driven-by-major-marine-car/"
+    },
+    {
+     "title": "Wikipedia: Permian-Triassic extinction event",
+     "url": "https://en.wikipedia.org/wiki/Permian%E2%80%93Triassic_extinction_event"
+    },
+    {
+     "title": "Burgess, Bowring & Shen 2014, PNAS: High-precision timeline for Earth's most severe extinction",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3948271"
+    }
+   ]
+  },
+  {
+   "id": "lystrosaurus-everywhere",
+   "title": "Lystrosaurus inherits the Earth",
+   "ma": 251.5,
+   "dateLabel": "c. 252 to 249 million years ago",
+   "focus": [
+    162.42,
+    -84.23
+   ],
+   "place": "Coalsack Bluff, Transantarctic Mountains, Antarctica",
+   "text": "On land one survivor stood out: Lystrosaurus, a pig-sized dicynodont with a beak and two tusks. For a while about 95 percent of the backboned land animals in South Africa's earliest Triassic rocks were Lystrosaurus, something no other land animal has ever matched. Its bones turn up in South Africa, India, China and Russia, and in 1969 to 1970 Edwin Colbert's team found them at Coalsack Bluff in Antarctica, strong evidence that these lands were once joined. Growth marks in Antarctic tusks suggest it could slow down through the dark polar winters, a lifestyle that may have helped it survive.",
+   "species": [
+    "Lystrosaurus",
+    "Moschorhinus",
+    "Proterosuchus",
+    "Thrinaxodon"
+   ],
+   "sites": [
+    {
+     "name": "Coalsack Bluff, Antarctica",
+     "lonlat": [
+      162.42,
+      -84.23
+     ],
+     "ma": 251.5,
+     "note": "Where Early Triassic land animal fossils were first found in abundance in Antarctica."
+    },
+    {
+     "name": "Panchet Formation, Damodar Valley, India",
+     "lonlat": [
+      87.0,
+      23.6
+     ],
+     "ma": 251.5,
+     "note": "Lystrosaurus dominates the earliest Triassic fauna of these rocks."
+    },
+    {
+     "name": "Karoo Basin, South Africa",
+     "lonlat": [
+      24.54,
+      -32.25
+     ],
+     "ma": 251.5,
+     "note": "Most Lystrosaurus fossils come from the Karoo."
+    }
+   ],
+   "route": null,
+   "refs": [
+    "e:karoo-fossil-beds",
+    "o:therapsids"
+   ],
+   "imageIds": [
+    "lystrosaurus-bogdanov"
+   ],
+   "images": [
+    {
+     "id": "lystrosaurus-murrayi-skeleton",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Lystrosaurus_murrayi_7.JPG/1920px-Lystrosaurus_murrayi_7.JPG",
+     "page": "https://commons.wikimedia.org/wiki/File:Lystrosaurus_murrayi_7.JPG",
+     "width": 3152,
+     "height": 1820,
+     "type": "fossil",
+     "caption": "A mounted skeleton of Lystrosaurus murrayi in the Natural History Museum in Paris.",
+     "credit": "Ghedoghedo",
+     "license": "CC BY-SA 3.0",
+     "note": "Museum display behind glass."
+    },
+    {
+     "id": "gondwana-fossil-map",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Wegener_fossils-mapped.png/1920px-Wegener_fossils-mapped.png",
+     "page": "https://commons.wikimedia.org/wiki/File:Wegener_fossils-mapped.png",
+     "width": 2742,
+     "height": 1628,
+     "type": "scene",
+     "caption": "Finds of Lystrosaurus, Glossopteris and other fossils plotted on the southern continents as they fitted together, the classic evidence for drifting continents.",
+     "credit": "Trewick",
+     "license": "CC BY-SA 4.0",
+     "note": "A map; the continent outlines are a reconstruction."
+    },
+    {
+     "id": "transantarctic-mountains-beardmore",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Transantarctic_Mountains_%2810986929324%29.jpg/1920px-Transantarctic_Mountains_%2810986929324%29.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Transantarctic_Mountains_(10986929324).jpg",
+     "width": 2816,
+     "height": 1584,
+     "type": "landscape",
+     "caption": "The Transantarctic Mountains near the Beardmore Glacier, the region where Lystrosaurus was found in Antarctica, seen from a NASA survey plane.",
+     "credit": "NASA ICE",
+     "license": "Public domain",
+     "note": "Shows the region, not Coalsack Bluff itself; part of the plane's wing is visible."
+    }
+   ],
+   "evidence": "fossil",
+   "evidenceNote": "Many Lystrosaurus skeletons from rocks just above the extinction level, on continents now far apart, show how widely it spread.",
+   "sources": [
+    {
+     "title": "Wikipedia: Lystrosaurus",
+     "url": "https://en.wikipedia.org/wiki/Lystrosaurus"
+    },
+    {
+     "title": "Wikipedia: Coalsack Bluff",
+     "url": "https://en.wikipedia.org/wiki/Coalsack_Bluff"
+    },
+    {
+     "title": "Wikipedia: Panchet Formation",
+     "url": "https://en.wikipedia.org/wiki/Panchet_Formation"
+    }
+   ]
+  },
+  {
+   "id": "slow-patchy-recovery",
+   "title": "A slow and patchy recovery",
+   "ma": 248.9,
+   "dateLabel": "c. 251 to 247 million years ago",
+   "focus": [
+    -111.4,
+    42.23
+   ],
+   "place": "Paris Canyon, Bear Lake County, Idaho, USA",
+   "text": "For millions of years many seas were dominated by a few hardy survivors, such as the thin-shelled clam Claraia, and recovery kept stalling as new heat spikes and a further extinction about 249 million years ago struck. Yet some places bounced back early. Near Guiyang in south China a full food web of fish, shrimp and ammonoids was living about 250.8 million years ago, only a million years after the extinction, though some researchers doubt it lasted. At Paris in Idaho, rocks about 249 million years old hold sponges, ammonoids, fish and early squid relatives. Small reefs built by animals came back after a few million years, but corals of the modern kind appeared only in the Middle Triassic, about ten million years after the Great Dying.",
+   "species": [
+    "Claraia",
+    "Bajarunia (ammonoid)",
+    "Coelacanths",
+    "Early shrimps",
+    "Pleuromeia"
+   ],
+   "sites": [
+    {
+     "name": "Paris biota, Paris Canyon, Idaho",
+     "lonlat": [
+      -111.4,
+      42.23
+     ],
+     "ma": 248.9,
+     "note": "A rich Early Triassic sea-floor community, west of the town of Paris."
+    },
+    {
+     "name": "Guiyang biota, Guizhou, China",
+     "lonlat": [
+      106.63,
+      26.65
+     ],
+     "ma": 250.8,
+     "note": "The oldest known Mesozoic site with soft parts preserved, about a million years after the extinction."
+    }
+   ],
+   "route": null,
+   "refs": [
+    "o:ammonites"
+   ],
+   "imageIds": [
+    "triassic-bulgo-sandstone-landscape"
+   ],
+   "images": [
+    {
+     "id": "claraia-shell-bed",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Claraia_Clarai_Museum_Gr%C3%B6den.jpg/1920px-Claraia_Clarai_Museum_Gr%C3%B6den.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Claraia_Clarai_Museum_Gröden.jpg",
+     "width": 3035,
+     "height": 2475,
+     "type": "fossil",
+     "caption": "A slab crowded with the thin shells of Claraia, a clam that flourished in the emptied seas just after the extinction, from the Dolomites of Italy.",
+     "credit": "Wolfgang Moroder",
+     "license": "CC BY-SA 3.0",
+     "note": "From the Werfen Formation, Museum Gröden; not from Idaho."
+    },
+    {
+     "id": "bajarunia-ammonoid-idaho",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Bajarunia.jpg/1920px-Bajarunia.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Bajarunia.jpg",
+     "width": 2101,
+     "height": 1875,
+     "type": "fossil",
+     "caption": "Bajarunia, an Early Triassic ammonoid from the Thaynes Group of Idaho, at the New Mexico Museum of Natural History and Science.",
+     "credit": "Kent G. Budge",
+     "license": "CC BY-SA 4.0",
+     "note": "Museum display with part of a label visible."
+    }
+   ],
+   "evidence": "disputed",
+   "evidenceNote": "Fossil sites dated by ash beds show some ecosystems rebuilt within one to three million years, but whether these were lasting communities or short-lived pockets is argued over.",
+   "sources": [
+    {
+     "title": "Wikipedia: Paris biota",
+     "url": "https://en.wikipedia.org/wiki/Paris_biota"
+    },
+    {
+     "title": "Wikipedia: Guiyang biota",
+     "url": "https://en.wikipedia.org/wiki/Guiyang_biota"
+    },
+    {
+     "title": "Science News: In the wake of history's deadliest mass extinction, ocean life may have flourished",
+     "url": "https://www.sciencenews.org/article/historys-deadliest-mass-extinction-ocean-life"
+    },
+    {
+     "title": "Wikipedia: Permian-Triassic extinction event",
+     "url": "https://en.wikipedia.org/wiki/Permian%E2%80%93Triassic_extinction_event"
+    }
+   ]
+  },
+  {
+   "id": "reptiles-return-to-sea",
+   "title": "Reptiles go back to sea",
+   "ma": 248.4,
+   "dateLabel": "c. 250 to 248 million years ago",
+   "focus": [
+    117.89,
+    31.62
+   ],
+   "place": "Majiashan quarry, Chaohu, Anhui, China",
+   "text": "Within a few million years reptiles had taken to the emptied seas. At Chaohu in eastern China, rocks about 248 million years old hold Chaohusaurus, a metre-long early ichthyosaur, including a mother with babies, one apparently being born head first. Beside it lived Cartorhynchus, about 40 centimetres long with flipper-like limbs and a short snout, a close cousin of the ichthyosaurs that may still have crawled onto land. Tail bones from Spitsbergen about 250 million years old show ichthyosaurs already at sea, and their finders suggest the group began even before the extinction.",
+   "species": [
+    "Chaohusaurus",
+    "Cartorhynchus",
+    "Ichthyosaurs"
+   ],
+   "sites": [
+    {
+     "name": "Majiashan quarry, Chaohu",
+     "lonlat": [
+      117.89,
+      31.62
+     ],
+     "ma": 248.4,
+     "note": "Spathian limestones near Chaohu yield early ichthyosaurs and their relatives."
+    },
+    {
+     "name": "Flower's Valley, Spitsbergen, Svalbard",
+     "lonlat": [
+      16.0,
+      78.3
+     ],
+     "ma": 250,
+     "note": "Eleven ichthyosaur tail bones about 250 million years old were found here."
+    }
+   ],
+   "route": null,
+   "refs": [
+    "o:ichthyosaurs"
+   ],
+   "imageIds": [],
+   "images": [
+    {
+     "id": "chaohusaurus-skeleton",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Chaohusaurus.png",
+     "page": "https://commons.wikimedia.org/wiki/File:Chaohusaurus.png",
+     "width": 718,
+     "height": 614,
+     "type": "fossil",
+     "caption": "A nearly complete skeleton of the early ichthyosaur Chaohusaurus from Chaohu, about 248 million years old.",
+     "credit": "Ryosuke Motani and colleagues",
+     "license": "CC BY 2.5",
+     "note": "Scientific photograph with scale bars; the large bars are 10 centimetres."
+    },
+    {
+     "id": "cartorhynchus-tamura",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Cartorhynchus_NT.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Cartorhynchus_NT.jpg",
+     "width": 800,
+     "height": 600,
+     "type": "reconstruction",
+     "caption": "Cartorhynchus, a small short-snouted relative of the ichthyosaurs, swimming in an Early Triassic sea.",
+     "credit": "Nobu Tamura",
+     "license": "CC BY-SA 4.0",
+     "note": "Small image; skin and colour are guesses."
+    },
+    {
+     "id": "cartorhynchus-skeleton-model",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Cartorhynchus_lenticarpus_BMNHC.jpg/1920px-Cartorhynchus_lenticarpus_BMNHC.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Cartorhynchus_lenticarpus_BMNHC.jpg",
+     "width": 6048,
+     "height": 2382,
+     "type": "fossil",
+     "caption": "A skeletal model of Cartorhynchus at the National Natural History Museum of China in Beijing.",
+     "credit": "Jonathan Chen",
+     "license": "CC BY 4.0",
+     "note": "A reconstruction of the skeleton, not the original fossil."
+    }
+   ],
+   "evidence": "fossil",
+   "evidenceNote": "Skeletons in finely layered limestones at Chaohu, dated by their ammonoids and conodonts, record the first marine reptiles of the Triassic.",
+   "sources": [
+    {
+     "title": "Motani et al. 2014, PLOS ONE: Terrestrial origin of viviparity in Mesozoic marine reptiles indicated by Early Triassic embryonic fossils",
+     "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0088640"
+    },
+    {
+     "title": "Wikipedia: Cartorhynchus",
+     "url": "https://en.wikipedia.org/wiki/Cartorhynchus"
+    },
+    {
+     "title": "Natural History Museum London: Earliest ichthyosaur fossil discovered on remote Arctic island",
+     "url": "https://www.nhm.ac.uk/discover/news/2023/april/earliest-ichthyosaur-fossil-discovered-on-remote-arctic-island.html"
+    },
+    {
+     "title": "Wikipedia: Chaohu",
+     "url": "https://en.wikipedia.org/wiki/Chaohu"
+    }
+   ]
+  },
+  {
+   "id": "manda-dinosaur-cousins",
+   "title": "Ruling reptiles and dinosaur cousins",
+   "ma": 244,
+   "dateLabel": "c. 247 to 242 million years ago (disputed)",
+   "focus": [
+    35.2,
+    -10.3
+   ],
+   "place": "Ruhuhu Basin, southern Tanzania",
+   "text": "As the land recovered, the archosaurs, the 'ruling reptiles' that include crocodiles and dinosaurs, spread fast; sail-backed Ctenosauriscus lived in Germany about 248 million years ago. The Manda Beds of Tanzania show how early the dinosaur line split off. They hold Teleocrater, one of the oldest known reptiles on the bird and dinosaur side of the family, Asilisaurus, a slender silesaurid one to three metres long and close cousin of the dinosaurs, and Nyasasaurus, perhaps the earliest dinosaur of all. These rocks are usually dated to about 245 million years ago, but some scientists argue they are millions of years younger.",
+   "species": [
+    "Asilisaurus",
+    "Teleocrater",
+    "Nyasasaurus",
+    "Ctenosauriscus",
+    "Dicynodonts and cynodonts"
+   ],
+   "sites": [
+    {
+     "name": "Manda Beds, Ruhuhu Basin",
+     "lonlat": [
+      35.2,
+      -10.3
+     ],
+     "ma": 244,
+     "note": "Bonebeds here yielded Asilisaurus, Teleocrater and Nyasasaurus."
+    },
+    {
+     "name": "Near Gottingen, Germany",
+     "lonlat": [
+      9.9,
+      51.55
+     ],
+     "ma": 248,
+     "note": "Home of Ctenosauriscus, one of the oldest true archosaurs."
+    }
+   ],
+   "route": null,
+   "refs": [
+    "o:archosaurs",
+    "o:dinosaurs"
+   ],
+   "imageIds": [],
+   "images": [
+    {
+     "id": "asilisaurus-smokeybjb",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Asilisaurus.jpg/1920px-Asilisaurus.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Asilisaurus.jpg",
+     "width": 6000,
+     "height": 2515,
+     "type": "reconstruction",
+     "caption": "Asilisaurus, a long-legged silesaurid from the Manda Beds of Tanzania and a close cousin of the dinosaurs.",
+     "credit": "Smokeybjb",
+     "license": "CC BY-SA 3.0",
+     "note": "Skin and colour are guesses."
+    },
+    {
+     "id": "teleocrater-pezzoni",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Teleocrater_v1.png/1280px-Teleocrater_v1.png",
+     "page": "https://commons.wikimedia.org/wiki/File:Teleocrater_v1.png",
+     "width": 1800,
+     "height": 481,
+     "type": "reconstruction",
+     "caption": "Teleocrater, a four-legged, long-necked meat-eater and one of the oldest known members of the bird and dinosaur branch of reptiles.",
+     "credit": "Neil Pezzoni",
+     "license": "CC BY 4.0",
+     "note": "Wide, narrow image on a white background."
+    },
+    {
+     "id": "asilisaurus-skeleton-fmnh",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Asilisaurus_kongwe_FMNH.jpg/1920px-Asilisaurus_kongwe_FMNH.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Asilisaurus_kongwe_FMNH.jpg",
+     "width": 4032,
+     "height": 3024,
+     "type": "fossil",
+     "caption": "A mounted skeleton of Asilisaurus at the Field Museum in Chicago.",
+     "credit": "Zissoudisctrucker",
+     "license": "CC BY-SA 4.0",
+     "note": "Probably a cast; other mounts show in the background."
+    },
+    {
+     "id": "ctenosauriscus-arid",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Ctenosauriscus_koeneni_in_Arid_Environment.jpg/1920px-Ctenosauriscus_koeneni_in_Arid_Environment.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Ctenosauriscus_koeneni_in_Arid_Environment.jpg",
+     "width": 4000,
+     "height": 3000,
+     "type": "reconstruction",
+     "caption": "Ctenosauriscus, a sail-backed early archosaur, in a dry Early Triassic river landscape.",
+     "credit": "Driptosaurus",
+     "license": "CC BY-SA 4.0",
+     "note": "Painterly reconstruction; the sail shape is based on tall spines on its backbone."
+    }
+   ],
+   "evidence": "disputed",
+   "evidenceNote": "The fossils are not in doubt, but their age is: matching animals in South Africa suggest about 245 million years, while dates from rocks in Argentina with similar animals point to a younger, Late Triassic age.",
+   "sources": [
+    {
+     "title": "Wikipedia: Asilisaurus",
+     "url": "https://en.wikipedia.org/wiki/Asilisaurus"
+    },
+    {
+     "title": "Wikipedia: Teleocrater",
+     "url": "https://en.wikipedia.org/wiki/Teleocrater"
+    },
+    {
+     "title": "Wikipedia: Nyasasaurus",
+     "url": "https://en.wikipedia.org/wiki/Nyasasaurus"
+    },
+    {
+     "title": "Wikipedia: Manda Formation",
+     "url": "https://en.wikipedia.org/wiki/Manda_Formation"
+    }
+   ]
+  },
+  {
+   "id": "carnian-rains-dinosaurs-spread",
+   "title": "Rain falls and dinosaurs spread",
+   "ma": 233,
+   "dateLabel": "c. 234 to 231 million years ago",
+   "focus": [
+    11.85,
+    46.43
+   ],
+   "place": "Dolomites, northern Italy",
+   "text": "About 234 million years ago huge eruptions in what is now western North America warmed the planet, and for one to two million years the dry Triassic world turned rainy. Marine life suffered again, but on land the old plant-eaters such as most dicynodonts and rhynchosaurs declined. In the Dolomites, footprints show no dinosaurs before the rains, about 40 percent dinosaur tracks during them, and over 90 percent soon after. The oldest well-dated dinosaur skeletons, in Brazil and at Ischigualasto in Argentina, come from just this time: 20 million years after the Great Dying, the age of dinosaurs was beginning.",
+   "species": [
+    "Herrerasaurus",
+    "Eoraptor",
+    "Saturnalia",
+    "Staurikosaurus",
+    "Rhynchosaurs",
+    "Conifers"
+   ],
+   "sites": [
+    {
+     "name": "Dolomites footprint sites",
+     "lonlat": [
+      11.85,
+      46.43
+     ],
+     "ma": 234,
+     "note": "Dated trackways show dinosaurs appearing exactly when the rains began."
+    },
+    {
+     "name": "Santa Maria Formation, Rio Grande do Sul, Brazil",
+     "lonlat": [
+      -53.8,
+      -29.7
+     ],
+     "ma": 233.2,
+     "note": "Saturnalia and Staurikosaurus are dated to about 233 million years ago."
+    },
+    {
+     "name": "Ischigualasto, San Juan, Argentina",
+     "lonlat": [
+      -67.9,
+      -30.1
+     ],
+     "ma": 231.4,
+     "note": "Eoraptor and Herrerasaurus lived here soon after the rainy episode."
+    }
+   ],
+   "route": null,
+   "refs": [
+    "e:carnian-pluvial-episode",
+    "e:ischigualasto",
+    "o:dinosaurs"
+   ],
+   "imageIds": [
+    "herrerasaurus-wierum"
+   ],
+   "images": [
+    {
+     "id": "piz-ciavazes-carnian",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Piz_Ciavaces.jpg/1920px-Piz_Ciavaces.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Piz_Ciavaces.jpg",
+     "width": 2048,
+     "height": 1536,
+     "type": "rock",
+     "caption": "Piz Ciavazes in the Dolomites: the soft sloping layer between the cliffs records the Carnian rainy episode, when muddy rock replaced reef limestone.",
+     "credit": "Snowdog",
+     "license": "Public domain",
+     "note": null
+    },
+    {
+     "id": "ischigualasto-sphinx",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Ischigualasto02.jpg/1280px-Ischigualasto02.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Ischigualasto02.jpg",
+     "width": 1536,
+     "height": 1024,
+     "type": "landscape",
+     "caption": "'The Sphinx', a rock pillar in Ischigualasto Provincial Park, Argentina, where some of the oldest dinosaurs were found.",
+     "credit": "idobi",
+     "license": "CC BY-SA 3.0",
+     "note": null
+    }
+   ],
+   "evidence": "disputed",
+   "evidenceNote": "Climate signals in rock layers and dated footprints and skeletons tie the dinosaurs' spread to the rains, but some studies argue the rainy episode was not the main cause.",
+   "sources": [
+    {
+     "title": "Bernardi et al. 2018, Nature Communications: Dinosaur diversification linked with the Carnian Pluvial Episode",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5902586"
+    },
+    {
+     "title": "Wikipedia: Carnian pluvial episode",
+     "url": "https://en.wikipedia.org/wiki/Carnian_pluvial_episode"
+    },
+    {
+     "title": "Wikipedia: Dolomites",
+     "url": "https://en.wikipedia.org/wiki/Dolomites"
+    }
+   ]
+  }
+ ]
+}
