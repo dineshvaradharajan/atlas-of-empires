@@ -415,6 +415,37 @@ function strokeItem(c, it) { // outline that respects the coastline/crop clip of
   if (it.p.recon || it.p.crop || it.p.cut) { c.save(); clipFor(c, it); c.stroke(pathOf(it.f)); c.restore(); }
   else c.stroke(pathOf(it.f));
 }
+// Outlines (selection, hover, a journey's realms) follow only what is drawn in the realm's own colour. Where another
+// realm is drawn on top (a vassal inside it, or a neighbour whose border the data overlaps), the outline is erased and
+// that realm's edge is drawn instead, on the outlined side, so the line closes around what the reader sees.
+const olc = document.createElement("canvas"), olx = olc.getContext("2d");
+const boxOf = new WeakMap(), fbox = (f) => { let b = boxOf.get(f); if (!b) boxOf.set(f, (b = geoPath.bounds(f))); return b; };
+function strokeVisible(list, inGroup) { // list: items to outline with ctx's current stroke style and width
+  if (!list.length) return;
+  if (list.length > 30) { for (const it of list) strokeItem(ctx, it); return; } // a big group: plain outlines (cost)
+  const order = new Map(S.items.map((it, i) => [it, i])), m = ctx.getTransform(), w = ctx.lineWidth;
+  if (olc.width !== canvas.width || olc.height !== canvas.height) { olc.width = canvas.width; olc.height = canvas.height; }
+  for (const it of list) {
+    const b = fbox(it.f), i0 = order.get(it) ?? -1;
+    const above = S.items.filter((e, i) => i > i0 && e.kind === "state" && !inGroup(e) && (() => { const c = fbox(e.f); return c[0][0] < b[1][0] && c[1][0] > b[0][0] && c[0][1] < b[1][1] && c[1][1] > b[0][1]; })());
+    if (!above.length) { strokeItem(ctx, it); continue; }
+    // the screen rectangle this outline can touch
+    const pad = w * m.a + 4, x0 = Math.max(0, Math.floor(b[0][0] * m.a + m.e - pad)), y0 = Math.max(0, Math.floor(b[0][1] * m.d + m.f - pad));
+    const x1 = Math.min(olc.width, Math.ceil(b[1][0] * m.a + m.e + pad)), y1 = Math.min(olc.height, Math.ceil(b[1][1] * m.d + m.f + pad));
+    if (x1 <= x0 || y1 <= y0) continue;
+    olx.setTransform(1, 0, 0, 1, 0, 0); olx.clearRect(x0, y0, x1 - x0, y1 - y0);
+    olx.setTransform(m); olx.strokeStyle = ctx.strokeStyle; olx.lineWidth = w; olx.lineJoin = "round"; olx.setLineDash(ctx.getLineDash());
+    strokeItem(olx, it);
+    olx.globalCompositeOperation = "destination-out";
+    for (const e of above) { olx.save(); clipFor(olx, e); olx.fill(pathOf(e.f)); olx.restore(); }
+    olx.globalCompositeOperation = "source-over";
+    olx.save(); clipFor(olx, it); olx.clip(pathOf(it.f));
+    for (const e of above) { const p = new Path2D(); p.rect(-1e5, -1e5, 2e5, 2e5); p.addPath(pathOf(e.f)); olx.clip(p, "evenodd"); }
+    olx.lineWidth = 2 * w; for (const e of above) olx.stroke(pathOf(e.f));
+    olx.restore();
+    ctx.save(); ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.drawImage(olc, x0, y0, x1 - x0, y1 - y0, x0, y0, x1 - x0, y1 - y0); ctx.restore();
+  }
+}
 function clipFor(c, it) { // apply the clip a feature needs (coastline for reconstructions, box for crops)
   if (it.p.recon) c.clip(S.landClip);
   if (it.p.crop) c.clip(pathOf(it.p.crop));
@@ -882,6 +913,8 @@ const GL = (() => {
       if (f === "HATCH") { const a = rgba(theme.peoplesBg), b = rgba(theme.peoplesLine); gl.uniform4f(U.c, ...a); gl.uniform4f(U.c2, ...b); gl.uniform1f(U.hatch, 1); gl.uniform1f(U.a, alpha); }
       else color(f, alpha);
       gl.drawArrays(gl.TRIANGLES, r.f0, r.fn);
+      // its border right away, so a realm drawn on top (a vassal, an overlapping neighbour) hides the lines beneath it
+      if (r.ln && r.it.kind === "state") { bindPos(layer.lb); color(theme.borderLine || theme.border, alpha); gl.drawArrays(gl.LINES, r.l0, r.ln); bindPos(layer.fb); }
     }
     // clipped items (reconstructions to the coastline, crops to their box) via the stencil buffer
     // Consecutive reconstructions clipped only to the coastline share one stencil: the land is written once and each
@@ -929,9 +962,7 @@ const GL = (() => {
       bindPos(layer.fb); color(fillOf(r.it), alpha); gl.drawArrays(gl.TRIANGLES, r.f0, r.fn);
       gl.disable(gl.STENCIL_TEST);
     }
-    // borders of ordinary states (reconstructed/cropped borders are drawn on the 2D overlay)
-    bindPos(layer.lb); color(theme.borderLine || theme.border, alpha);
-    for (const r of layer.ranges) if (r.ln && r.it.kind === "state" && !r.it.p.recon && !r.it.p.crop && !r.it.p.cut) gl.drawArrays(gl.LINES, r.l0, r.ln);
+    // (borders of ordinary states are drawn with their fills; reconstructed/cropped borders on the 2D overlay)
   }
   // ---- world images draped on the map (data/relief.jpg terrain shading, data/shelf.png shallow seabed)
   // A lon/lat grid of vertices, projected on the CPU like every other shape, with texture coordinates in lon/lat.
@@ -1270,13 +1301,17 @@ function draw() {
     toCoast(!!it.p.recon);
     const fl = fillOf(it); ctx.fillStyle = fl === "HATCH" ? theme.hatch : fl;
     if (it.p.crop || it.p.cut) { ctx.save(); clipFor(ctx, { p: { crop: it.p.crop, cut: it.p.cut } }); ctx.fill(pathOf(it.f)); ctx.restore(); }
-    else ctx.fill(pathOf(it.f));
+    else {
+      ctx.fill(pathOf(it.f));
+      // its border right away, so a realm drawn on top (a vassal, an overlapping neighbour) hides the lines beneath it
+      if (it.kind === "state" && !it.p.recon) { ctx.lineJoin = "round"; ctx.lineWidth = 0.7 / t.k; ctx.setLineDash([]); ctx.strokeStyle = theme.border; ctx.stroke(pathOf(it.f)); }
+    }
   }
   toCoast(false);
   ctx.lineJoin = "round";
   ctx.lineWidth = 0.7 / t.k;
   for (const it of S.items) {
-    if (it.kind !== "state") continue;
+    if (it.kind !== "state" || !(it.p.recon || it.p.crop || it.p.cut)) continue; // ordinary borders went with their fills
     toCoast(!!it.p.recon);
     if (it.p.recon) { ctx.setLineDash([3 / t.k, 2.5 / t.k]); ctx.strokeStyle = theme.ink3; } else { ctx.setLineDash([]); ctx.strokeStyle = theme.border; }
     if (it.p.crop || it.p.cut) { ctx.save(); clipFor(ctx, { p: { crop: it.p.crop, cut: it.p.cut } }); ctx.stroke(pathOf(it.f)); ctx.restore(); }
@@ -1294,12 +1329,13 @@ function draw() {
     ctx.setLineDash([]);
   }
   drawRings();
-  if (S.journey) { ctx.strokeStyle = theme.ink; ctx.lineWidth = 1.4 / t.k; for (const it of S.items) if (inJourney(it)) strokeItem(ctx, it); }
+  if (S.journey) { ctx.strokeStyle = theme.ink; ctx.lineWidth = 1.4 / t.k; strokeVisible(S.items.filter(inJourney), inJourney); }
   if (sel) {
     ctx.strokeStyle = theme.ink; ctx.lineWidth = 1.4 / t.k;
-    for (const it of S.items) if (it.kind === "state" && (matches(it, sel) || (it.p.recon && it.p.n === sel))) strokeItem(ctx, it);
+    const isSel = (it) => it.kind === "state" && (matches(it, sel) || (it.p.recon && it.p.n === sel));
+    strokeVisible(S.items.filter(isSel), isSel);
   }
-  if (S.hover >= 0) { ctx.strokeStyle = theme.ink; ctx.lineWidth = 2 / t.k; strokeItem(ctx, S.items[S.hover]); }
+  if (S.hover >= 0) { const hv = S.items[S.hover]; ctx.strokeStyle = theme.ink; ctx.lineWidth = 2 / t.k; strokeVisible([hv], (e) => e === hv || (e.kind === "state" && hv.kind === "state" && e.key === hv.key)); }
   drawClaims();
   ctx.restore();
   if (S.labels) drawLabels();
@@ -1591,9 +1627,9 @@ function drawGL() {
     ctx.setLineDash([]);
   }
   drawRings();
-  if (S.journey) { ctx.strokeStyle = theme.ink; ctx.lineWidth = 1.4 / t.k; for (const it of S.items) if (inJourney(it)) strokeItem(ctx, it); }
-  if (sel) { ctx.strokeStyle = theme.ink; ctx.lineWidth = 1.4 / t.k; for (const it of S.items) if (it.kind === "state" && (matches(it, sel) || (it.p.recon && it.p.n === sel))) strokeItem(ctx, it); }
-  if (S.hover >= 0) { ctx.strokeStyle = theme.ink; ctx.lineWidth = 2 / t.k; strokeItem(ctx, S.items[S.hover]); }
+  if (S.journey) { ctx.strokeStyle = theme.ink; ctx.lineWidth = 1.4 / t.k; strokeVisible(S.items.filter(inJourney), inJourney); }
+  if (sel) { ctx.strokeStyle = theme.ink; ctx.lineWidth = 1.4 / t.k; const isSel = (it) => it.kind === "state" && (matches(it, sel) || (it.p.recon && it.p.n === sel)); strokeVisible(S.items.filter(isSel), isSel); }
+  if (S.hover >= 0) { const hv = S.items[S.hover]; ctx.strokeStyle = theme.ink; ctx.lineWidth = 2 / t.k; strokeVisible([hv], (e) => e === hv || (e.kind === "state" && hv.kind === "state" && e.key === hv.key)); }
   drawClaims();
   ctx.restore();
   if (S.labels) drawLabels();
@@ -2175,6 +2211,75 @@ function openSite(id) {
   const after = () => { S.view = "site"; S.site = st; renderCol(true); draw(); writeHash(); flyCenter(st.lonlat, Math.max(S.t.k, 5), 900); };
   if (inUse) after(); else go(Math.max(S.range[0], st.built)).then(after);
 }
+// ---------------------------------------------------------------- independent, vassal or overlord
+// Whom a realm answered to in a year, and who answered to it: the border data's allegiance, vassalage and personal-union
+// groups ("(Allegiance of A to B)"), the group its shapes belong to that year ("(British Empire)"), and realms drawn
+// almost wholly inside a larger realm of another group (a vassal or protected state under that realm's suzerainty).
+let RELS = null;
+const relRows = () => RELS || (RELS = Object.entries(S.clio.realms).flatMap(([g, r]) => {
+  const m = g.match(/^\((?:Allegiance|Vassalage) of (.+) to (.+)\)$/), u = g.match(/^\(Personal union of (.+) with (.+)\)$/);
+  return m ? [{ kind: "vassal", a: m[1], b: m[2], tl: r.tl }] : u ? [{ kind: "union", a: u[1], b: u[2], tl: r.tl }] : [];
+}));
+const RELGROUP = /^\((Allegiance|Vassalage|Alliance|Personal union) /;
+const gbox = new WeakMap(), geoBox = (f) => { let b = gbox.get(f); if (!b) gbox.set(f, (b = d3.geoBounds(f))); return b; };
+const boxIn = (a, b) => a[0][0] >= b[0][0] - 0.01 && a[1][0] <= b[1][0] + 0.01 && a[0][1] >= b[0][1] - 0.01 && a[1][1] <= b[1][1] + 0.01;
+function insidePts(f, n) { // points inside a shape: a grid over its bounds (its label point if the grid misses)
+  const [[x0, y0], [x1, y1]] = geoBox(f), out = [];
+  if (x1 >= x0) for (let i = 0; i < n; i++) for (let j = 0; j < n; j++) { const p = [x0 + ((x1 - x0) * (i + 0.5)) / n, y0 + ((y1 - y0) * (j + 0.5)) / n]; if (d3.geoContains(f, p)) out.push(p); }
+  if (!out.length && f.properties.l) out.push(f.properties.l);
+  return out;
+}
+const statusCache = new Map();
+function statusOf(key, y) {
+  const ck = `${key}|${y}|${S.states.length}`;
+  if (statusCache.has(ck)) return statusCache.get(ck);
+  const names = new Set([key, clean(key)]), res = { over: [], vassals: [], union: [], parent: null, suz: null };
+  for (const r of relRows()) {
+    if (!r.tl.some(([a, b]) => a <= y && y <= b)) continue;
+    if (r.kind === "vassal" && names.has(r.a)) res.over.push(r.b);
+    else if (r.kind === "vassal" && names.has(r.b)) res.vassals.push(r.a);
+    else if (r.kind === "union" && (names.has(r.a) || names.has(r.b))) res.union.push(names.has(r.a) ? r.b : r.a);
+  }
+  const mine = activeFeats(key);
+  if (mine.length) {
+    const grp = mine.find((f) => f.properties.n === key && f.properties.k && f.properties.k !== key)?.properties.k;
+    if (grp && !RELGROUP.test(grp) && clean(grp) !== clean(key) && displayName(grp) !== displayName(key)) res.parent = grp; // not its own group
+    const keyOf = (f) => f.properties.k || f.properties.n, mineA = mine.reduce((t, f) => t + (f.properties.a || 0), 0);
+    const big = mine.reduce((m, f) => ((f.properties.a || 0) > (m.properties.a || 0) ? f : m)), bb = geoBox(big);
+    const others = S.states.filter((f) => keyOf(f) !== key && f.properties.n !== key && keyOf(f) !== grp && !f.properties.recon);
+    // drawn inside a larger realm: the smallest one holding 90% of points sampled inside this realm's largest piece
+    const pts = insidePts(big, 6);
+    let best = null;
+    for (const f of others) {
+      if ((f.properties.a || 0) < mineA * 1.5 || !boxIn(bb, geoBox(f))) continue;
+      const n = pts.filter((p) => d3.geoContains(f, p)).length;
+      if (pts.length && n >= 0.9 * pts.length && (!best || f.properties.a < best.properties.a)) best = f;
+    }
+    if (best) res.suz = keyOf(best);
+    // smaller realms drawn inside this one
+    const inner = new Map();
+    for (const f of others) {
+      const k = keyOf(f);
+      if ((f.properties.a || 0) * 1.5 > mineA || inner.has(k) || !mine.some((m) => boxIn(geoBox(f), geoBox(m)))) continue;
+      const q = insidePts(f, 3), n = q.filter((p) => mine.some((m) => d3.geoContains(m, p))).length;
+      if (q.length && n >= 0.9 * q.length) inner.set(k, f.properties.a || 0);
+    }
+    for (const [k] of [...inner].sort((a, b) => b[1] - a[1])) if (!res.vassals.includes(k)) res.vassals.push(k);
+  }
+  statusCache.set(ck, res);
+  if (statusCache.size > 200) statusCache.delete(statusCache.keys().next().value);
+  return res;
+}
+function statusHTML(key, y) {
+  if (RELGROUP.test(key)) return "";
+  const s = statusOf(key, y), Y = shortYear(y);
+  const link = (k) => `<button class="linkish" data-key="${esc(k)}">${esc(displayName(k))}</button>`;
+  const list = (ks, max = 5) => ks.slice(0, max).map(link).join(", ") + (ks.length > max ? ` and ${ks.length - max} more` : "");
+  const head = s.over.length ? `Vassal of ${list(s.over)}` : s.suz ? `Under the suzerainty of ${link(s.suz)}` : s.parent ? `Part of ${link(s.parent)}` : "Independent";
+  let h = `<p class="status"><b>${Y}:</b> ${head}${s.union.length ? `, in personal union with ${list(s.union)}` : ""}.`;
+  if (s.vassals.length) h += ` Overlord of ${list(s.vassals)}.`;
+  return h + "</p>";
+}
 function realmHTML() {
   const key = S.sel, r = realm(key), y = S.year, emp = empireOf(key);
   const area = areaAt(key, y);
@@ -2187,6 +2292,7 @@ function realmHTML() {
   let h = S.placeBack ? cardHead(S.placeBack.name || "This spot", "", "back-place") : cardHead(`The world in ${plainYear(y)}`, "", "close");
   h += kick(alive && !r.group ? `Country · since ${shortYear(r.tl[0][0])}` : `${r.group ? "Empire" : "Realm"} · ${span.replace(" – ", " to ")}`) + `<h1 class="ttl xl">${esc(displayName(key))}</h1>`;
   if (emp && emp.name !== displayName(key) && !r.recon) h += `<p class="sub">${esc(emp.name)}</p>`;
+  if (!r.recon) h += statusHTML(key, y);
   if (r.recon) {
     const { sp, rg } = r.recon;
     if (sp.kind === "cultures") { // an archaeological culture: say how it is known

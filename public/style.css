@@ -265,6 +265,8 @@ h3.sec { margin: 4px 0 -4px; font: 600 12px var(--sans); letter-spacing: .12em; 
 .hrow.gap { color: var(--ink-3); cursor: default; }
 .hrow.gap:hover { background: none; }
 .hrow.gap i.sq { border: 1.5px dashed var(--ink-3); }
+.status { margin: 0; font-size: 14px; color: var(--ink-2); } /* independent, vassal of, overlord of (in the year shown) */
+.status b { font-weight: 600; color: var(--ink); }
 .hrows.rp { overflow-anchor: none; } /* earlier rulers slide in above the shown ones and push them down, in view */
 .hrow.more { color: var(--ink-2); }
 .hrow.more > svg { width: 12px; height: 16px; flex: none; }
