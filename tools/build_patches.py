@@ -11,10 +11,13 @@ the data files themselves, so the app, the checks and "this place through time" 
               with "replace": true the named realm's own rows in those years go
   drop_parts  rows of `realm` in `years` lose their polygon pieces that lie wholly inside `box` [w, s, e, n]
   ne          a new row named `name` for `years`, outlined from Natural Earth country `a3`
-              (island and enclave states the border data never drew); "replace": true as for copy
+              (island and enclave states the border data never drew); "replace": true as for copy; `box`
+              keeps only the country's polygons lying wholly inside [w, s, e, n] (one island group of a larger
+              country); `key` puts it in another realm's colour group; `wiki` and `wd` for its page
   drop_at     rows of `realm` in `years` lose the polygon pieces that contain any of the points `at`
   add_parts   rows of `realm` in `years` gain polygon pieces: those of `from` in year `year` (all, or the ones
-              containing the points `at`), or the explicit rings `coords`
+              containing the points `at`), the explicit rings `coords`, or with "ne": a3 Natural Earth's
+              islands of that country (only those inside `box` when given), skipping any a row already draws
   shape       a new row named `name` for `years` with the explicit rings `coords` (`wiki` and `wd` for its page;
               `key` puts it in another realm's colour group, e.g. "(British Empire)" for a small British post)
   holes       rows of `realm` in `years` lose the holes that lie inside `box` and get the rings `coords` as holes
@@ -107,6 +110,27 @@ def main():
     repl = {}    # row id -> [features] replacing it
     added = []   # (anchor row id or None, feature)
     pieces = own = None
+    ne_cache = {}
+
+    def ne_shape(a3, box=None):
+        """Natural Earth country a3 as a make_shape() result, limited to its polygons lying wholly inside box
+        [w, s, e, n] when given (one island group of a larger country, e.g. Réunion out of France)."""
+        nonlocal pieces, own
+        if pieces is None:
+            pieces = bm.load_pieces(sys.argv[1])
+            own = bm.piece_owners(pieces)
+        k = (a3, tuple(box) if box else None)
+        if k not in ne_cache:
+            if not box:
+                ne_cache[k] = bm.make_shape(pieces, frozenset([a3]), own, a3)
+            else:
+                w, s, e, n = box
+                polys = [q for q in pieces[a3]["polys"] if all(w <= x <= e and s <= y <= n for x, y in q[0])]
+                if not polys:
+                    sys.exit(f"patch: no polygon of Natural Earth {a3} lies wholly inside {box}")
+                tmp = {f"{a3}|box": {"polys": polys, "label": None}}  # small on its own, so its islets are kept
+                ne_cache[k] = bm.make_shape(tmp, frozenset(tmp), own)
+        return ne_cache[k]
 
     def current(name):
         """Every live feature of `name` as (row id, index in its replacement list, feature)."""
@@ -201,13 +225,12 @@ def main():
                     f = piece(src, a, b, {"n": name, "k": k})
                     anchor = row_id(src) if row_id(src) in rows else None
                 else:
-                    if pieces is None:
-                        pieces = bm.load_pieces(sys.argv[1])
-                        own = bm.piece_owners(pieces)
-                    sh = bm.make_shape(pieces, frozenset([op["a3"]]), own, op["a3"])
-                    f = {"type": "Feature", "properties": {"n": name, "f": a, "t": b, "a": sh["area"], "k": name, "l": sh["label"]},
+                    sh = ne_shape(op["a3"], op.get("box"))
+                    f = {"type": "Feature", "properties": {"n": name, "f": a, "t": b, "a": sh["area"], "k": op.get("key", name), "l": sh["label"]},
                          "geometry": {"type": "MultiPolygon", "coordinates": sh["coords"]}}
                     anchor = None
+                    if name not in idx["realms"] and op.get("wiki"):
+                        idx["realms"][name] = {"wiki": op["wiki"], "tl": [], **({"wd": op["wd"]} if op.get("wd") else {})}
                 added.append((anchor, f))
                 tl_edits.append((name, a, b, f["properties"]["a"], None))
             elif kind == "drop_parts":
@@ -242,6 +265,23 @@ def main():
                     sys.exit(f"patch {patch['id']}: no piece of {op['realm']!r} in {a}-{b} contains {op['at']}")
                 tl_edits.append((op["realm"], a, b, None, "recount"))
             elif kind == "add_parts":
+                if "ne" in op:  # islands from Natural Earth; any a row already draws are left as they are
+                    extra = ne_shape(op["ne"], op.get("box"))["coords"]
+
+                    def mid(q):
+                        r = q[0][:-1] if q[0][0] == q[0][-1] else q[0]
+                        return [sum(p[0] for p in r) / len(r), sum(p[1] for p in r) / len(r)]
+
+                    def gain_new(g, extra=extra):
+                        have = g["geometry"]["coordinates"]
+                        new = [q for q in extra if not any(inside_poly(mid(q), h) for h in have)]
+                        if not new:
+                            return g
+                        return piece(g, g["properties"]["f"], g["properties"]["t"], {"a": round(g["properties"]["a"] + sum(poly_km2(q) for q in new))}, have + new)
+                    if not edit(op["realm"], a, b, gain_new):
+                        sys.exit(f"patch {patch['id']}: {op['realm']!r} has no rows in {a}-{b}")
+                    tl_edits.append((op["realm"], a, b, None, "recount"))
+                    continue
                 if "coords" in op:
                     extra = [[closed(r)] for r in op["coords"]]
                 else:

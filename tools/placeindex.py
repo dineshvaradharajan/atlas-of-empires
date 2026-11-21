@@ -43,6 +43,18 @@ def cells_of(geom):
         for a, b in zip(xs[0::2], xs[1::2]):
             for c in range(math.ceil(a - 0.5), math.floor(b - 0.5) + 1):
                 out.append((c, r))
+    # an island smaller than a cell holds no cell centre: it still counts for the cell it lies in
+    have = set(out)
+    polys = geom["coordinates"] if geom["type"] == "MultiPolygon" else [geom["coordinates"]]
+    for p in polys:
+        r = p[0][:-1] if p[0][0] == p[0][-1] else p[0]
+        xs, ys = [q[0] * K for q in r], [q[1] * K for q in r]
+        if any(min(xs) - 0.5 <= c <= max(xs) - 0.5 and min(ys) - 0.5 <= rr <= max(ys) - 0.5 for c, rr in have):
+            continue
+        cell = (math.floor(sum(xs) / len(xs)), math.floor(sum(ys) / len(ys)))
+        if cell not in have:
+            have.add(cell)
+            out.append(cell)
     return out
 
 

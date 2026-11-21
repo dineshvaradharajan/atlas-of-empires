@@ -8045,6 +8045,3730 @@
      "url": "https://en.wikipedia.org/wiki/Yuan_dynasty"
     }
    ]
+  },
+  {
+   "id": "island-kingdom-of-tahiti",
+   "note": "The border data draws nothing in French Polynesia before 1992. Pōmare I made himself king of Tahiti and Moorea around 1788; France made the kingdom a protectorate in 1842 and annexed it in 1880, when Pōmare V ceded it. Drawn on Tahiti and Moorea; the kingdom's claims over the Tuamotu and some Austral islands are left out.",
+   "ops": [
+    {
+     "op": "ne",
+     "a3": "PYF",
+     "box": [
+      -150.1,
+      -18.0,
+      -149.1,
+      -17.4
+     ],
+     "name": "Kingdom of Tahiti",
+     "years": [
+      1788,
+      1879
+     ],
+     "wiki": "Kingdom of Tahiti",
+     "wd": "Q1529183"
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Kingdom of Tahiti",
+     "url": "https://en.wikipedia.org/wiki/Kingdom_of_Tahiti"
+    },
+    {
+     "title": "Wikipedia: Pōmare I",
+     "url": "https://en.wikipedia.org/wiki/Pōmare_I"
+    }
+   ]
+  },
+  {
+   "id": "island-french-polynesia",
+   "note": "French Polynesia is missing before 1992. France annexed the Marquesas in 1842, took Tahiti, the Tuamotu, the Gambier and the Austral islands in 1880-81 and the Leeward Society Islands in 1888 (resistance there lasted to 1897). The islands rallied to Free France in September 1940. They are added to France's own rows, as the data draws its Caribbean colonies.",
+   "ops": [
+    {
+     "op": "add_parts",
+     "realm": "Bourbon Kingdom of France",
+     "years": [
+      1842,
+      1847
+     ],
+     "ne": "PYF",
+     "box": [
+      -141.0,
+      -10.6,
+      -138.5,
+      -7.8
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "French Second Republic",
+     "years": [
+      1848,
+      1852
+     ],
+     "ne": "PYF",
+     "box": [
+      -141.0,
+      -10.6,
+      -138.5,
+      -7.8
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Second French Empire",
+     "years": [
+      1853,
+      1870
+     ],
+     "ne": "PYF",
+     "box": [
+      -141.0,
+      -10.6,
+      -138.5,
+      -7.8
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "French Third Republic",
+     "years": [
+      1871,
+      1939
+     ],
+     "ne": "PYF",
+     "box": [
+      -141.0,
+      -10.6,
+      -138.5,
+      -7.8
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Free French",
+     "years": [
+      1940,
+      1944
+     ],
+     "ne": "PYF",
+     "box": [
+      -141.0,
+      -10.6,
+      -138.5,
+      -7.8
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "French Fourth Republic",
+     "years": [
+      1945,
+      1957
+     ],
+     "ne": "PYF",
+     "box": [
+      -141.0,
+      -10.6,
+      -138.5,
+      -7.8
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "French Fifth Republic",
+     "years": [
+      1958,
+      1991
+     ],
+     "ne": "PYF",
+     "box": [
+      -141.0,
+      -10.6,
+      -138.5,
+      -7.8
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "French Third Republic",
+     "years": [
+      1880,
+      1939
+     ],
+     "ne": "PYF",
+     "box": [
+      -150.1,
+      -18.0,
+      -149.1,
+      -17.4
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Free French",
+     "years": [
+      1940,
+      1944
+     ],
+     "ne": "PYF",
+     "box": [
+      -150.1,
+      -18.0,
+      -149.1,
+      -17.4
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "French Fourth Republic",
+     "years": [
+      1945,
+      1957
+     ],
+     "ne": "PYF",
+     "box": [
+      -150.1,
+      -18.0,
+      -149.1,
+      -17.4
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "French Fifth Republic",
+     "years": [
+      1958,
+      1991
+     ],
+     "ne": "PYF",
+     "box": [
+      -150.1,
+      -18.0,
+      -149.1,
+      -17.4
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "French Third Republic",
+     "years": [
+      1880,
+      1939
+     ],
+     "ne": "PYF",
+     "box": [
+      -149.0,
+      -24.0,
+      -134.4,
+      -14.0
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Free French",
+     "years": [
+      1940,
+      1944
+     ],
+     "ne": "PYF",
+     "box": [
+      -149.0,
+      -24.0,
+      -134.4,
+      -14.0
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "French Fourth Republic",
+     "years": [
+      1945,
+      1957
+     ],
+     "ne": "PYF",
+     "box": [
+      -149.0,
+      -24.0,
+      -134.4,
+      -14.0
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "French Fifth Republic",
+     "years": [
+      1958,
+      1991
+     ],
+     "ne": "PYF",
+     "box": [
+      -149.0,
+      -24.0,
+      -134.4,
+      -14.0
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "French Third Republic",
+     "years": [
+      1880,
+      1939
+     ],
+     "ne": "PYF",
+     "box": [
+      -152.5,
+      -28.0,
+      -143.0,
+      -21.5
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Free French",
+     "years": [
+      1940,
+      1944
+     ],
+     "ne": "PYF",
+     "box": [
+      -152.5,
+      -28.0,
+      -143.0,
+      -21.5
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "French Fourth Republic",
+     "years": [
+      1945,
+      1957
+     ],
+     "ne": "PYF",
+     "box": [
+      -152.5,
+      -28.0,
+      -143.0,
+      -21.5
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "French Fifth Republic",
+     "years": [
+      1958,
+      1991
+     ],
+     "ne": "PYF",
+     "box": [
+      -152.5,
+      -28.0,
+      -143.0,
+      -21.5
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "French Third Republic",
+     "years": [
+      1888,
+      1939
+     ],
+     "ne": "PYF",
+     "box": [
+      -152.0,
+      -17.1,
+      -150.9,
+      -16.0
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Free French",
+     "years": [
+      1940,
+      1944
+     ],
+     "ne": "PYF",
+     "box": [
+      -152.0,
+      -17.1,
+      -150.9,
+      -16.0
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "French Fourth Republic",
+     "years": [
+      1945,
+      1957
+     ],
+     "ne": "PYF",
+     "box": [
+      -152.0,
+      -17.1,
+      -150.9,
+      -16.0
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "French Fifth Republic",
+     "years": [
+      1958,
+      1991
+     ],
+     "ne": "PYF",
+     "box": [
+      -152.0,
+      -17.1,
+      -150.9,
+      -16.0
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: French Polynesia",
+     "url": "https://en.wikipedia.org/wiki/French_Polynesia"
+    },
+    {
+     "title": "Wikipedia: Établissements français de l'Océanie",
+     "url": "https://en.wikipedia.org/wiki/Établissements_français_de_l'Océanie"
+    },
+    {
+     "title": "Wikipedia: Leeward War",
+     "url": "https://en.wikipedia.org/wiki/Leeward_War"
+    }
+   ]
+  },
+  {
+   "id": "island-wallis-futuna",
+   "note": "Wallis and Futuna are missing before 1992. They became French protectorates in 1887-88 and an overseas territory in 1961.",
+   "ops": [
+    {
+     "op": "add_parts",
+     "realm": "French Third Republic",
+     "years": [
+      1888,
+      1939
+     ],
+     "ne": "WLF"
+    },
+    {
+     "op": "add_parts",
+     "realm": "Vichy France",
+     "years": [
+      1940,
+      1943
+     ],
+     "ne": "WLF"
+    },
+    {
+     "op": "add_parts",
+     "realm": "Free French",
+     "years": [
+      1944,
+      1944
+     ],
+     "ne": "WLF"
+    },
+    {
+     "op": "add_parts",
+     "realm": "French Fourth Republic",
+     "years": [
+      1945,
+      1957
+     ],
+     "ne": "WLF"
+    },
+    {
+     "op": "add_parts",
+     "realm": "French Fifth Republic",
+     "years": [
+      1958,
+      1991
+     ],
+     "ne": "WLF"
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Wallis and Futuna",
+     "url": "https://en.wikipedia.org/wiki/Wallis_and_Futuna"
+    }
+   ]
+  },
+  {
+   "id": "island-new-caledonia",
+   "note": "France annexed New Caledonia in 1853. The border data draws it from 1856, and from 1860 to 1957 inside French Indochina, a separate colony on the other side of the Pacific (see the French Indochina note). It is drawn as its own colony from 1853, as the data names it in 1856-59; the Fifth Republic rows from 1958 already include it.",
+   "ops": [
+    {
+     "op": "drop_parts",
+     "realm": "French Indochina",
+     "years": [
+      1860,
+      1957
+     ],
+     "box": [
+      163.0,
+      -23.0,
+      169.0,
+      -19.5
+     ]
+    },
+    {
+     "op": "ne",
+     "a3": "NCL",
+     "name": "New Caledonia",
+     "years": [
+      1853,
+      1855
+     ]
+    },
+    {
+     "op": "ne",
+     "a3": "NCL",
+     "name": "New Caledonia",
+     "years": [
+      1860,
+      1957
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: New Caledonia",
+     "url": "https://en.wikipedia.org/wiki/New_Caledonia"
+    },
+    {
+     "title": "Wikipedia: History of New Caledonia",
+     "url": "https://en.wikipedia.org/wiki/History_of_New_Caledonia"
+    }
+   ]
+  },
+  {
+   "id": "island-tonga",
+   "note": "Tonga is drawn only from 1970. George Tupou I united the islands as one kingdom by 1845 and gave it a constitution in 1875; it was a British protected state from 1900 to 1970 but was never colonised.",
+   "ops": [
+    {
+     "op": "ne",
+     "a3": "TON",
+     "name": "Tonga",
+     "years": [
+      1845,
+      1969
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Tonga",
+     "url": "https://en.wikipedia.org/wiki/Tonga"
+    },
+    {
+     "title": "Wikipedia: George Tupou I",
+     "url": "https://en.wikipedia.org/wiki/George_Tupou_I"
+    }
+   ]
+  },
+  {
+   "id": "island-samoa",
+   "note": "Samoa is drawn only from 1962 and American Samoa only from 1992. The 1899 Tripartite Convention split the islands: Germany ruled Western Samoa from 1900 until New Zealand occupied it in August 1914 and governed it until independence in 1962; the United States took Tutuila in 1900 and the Manu'a islands in 1904.",
+   "ops": [
+    {
+     "op": "add_parts",
+     "realm": "German Empire",
+     "years": [
+      1900,
+      1913
+     ],
+     "ne": "WSM"
+    },
+    {
+     "op": "add_parts",
+     "realm": "British Colonial Empire",
+     "years": [
+      1914,
+      1947
+     ],
+     "ne": "WSM"
+    },
+    {
+     "op": "add_parts",
+     "realm": "British Colonial Empire",
+     "years": [
+      1948,
+      1957
+     ],
+     "ne": "WSM"
+    },
+    {
+     "op": "add_parts",
+     "realm": "New Zealand",
+     "years": [
+      1958,
+      1961
+     ],
+     "ne": "WSM"
+    },
+    {
+     "op": "add_parts",
+     "realm": "United States of America",
+     "years": [
+      1900,
+      1991
+     ],
+     "ne": "ASM"
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: German Samoa",
+     "url": "https://en.wikipedia.org/wiki/German_Samoa"
+    },
+    {
+     "title": "Wikipedia: Western Samoa Trust Territory",
+     "url": "https://en.wikipedia.org/wiki/Western_Samoa_Trust_Territory"
+    },
+    {
+     "title": "Wikipedia: American Samoa",
+     "url": "https://en.wikipedia.org/wiki/American_Samoa"
+    }
+   ]
+  },
+  {
+   "id": "island-cook-islands-niue",
+   "note": "The Cook Islands and Niue are missing before 1992. Both became British protectorates (1888, 1900) and were annexed to New Zealand in 1901; the Cook Islands became self-governing in free association with New Zealand in 1965 and Niue in 1974.",
+   "ops": [
+    {
+     "op": "add_parts",
+     "realm": "British Colonial Empire",
+     "years": [
+      1888,
+      1900
+     ],
+     "ne": "COK"
+    },
+    {
+     "op": "add_parts",
+     "realm": "British Colonial Empire",
+     "years": [
+      1901,
+      1947
+     ],
+     "ne": "COK"
+    },
+    {
+     "op": "add_parts",
+     "realm": "British Colonial Empire",
+     "years": [
+      1948,
+      1957
+     ],
+     "ne": "COK"
+    },
+    {
+     "op": "add_parts",
+     "realm": "New Zealand",
+     "years": [
+      1958,
+      1991
+     ],
+     "ne": "COK"
+    },
+    {
+     "op": "add_parts",
+     "realm": "British Colonial Empire",
+     "years": [
+      1900,
+      1900
+     ],
+     "ne": "NIU"
+    },
+    {
+     "op": "add_parts",
+     "realm": "British Colonial Empire",
+     "years": [
+      1901,
+      1947
+     ],
+     "ne": "NIU"
+    },
+    {
+     "op": "add_parts",
+     "realm": "British Colonial Empire",
+     "years": [
+      1948,
+      1957
+     ],
+     "ne": "NIU"
+    },
+    {
+     "op": "add_parts",
+     "realm": "New Zealand",
+     "years": [
+      1958,
+      1991
+     ],
+     "ne": "NIU"
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Cook Islands",
+     "url": "https://en.wikipedia.org/wiki/Cook_Islands"
+    },
+    {
+     "title": "Wikipedia: Niue",
+     "url": "https://en.wikipedia.org/wiki/Niue"
+    }
+   ]
+  },
+  {
+   "id": "island-gilbert-ellice",
+   "note": "Kiribati and Tuvalu are drawn only from independence (1979, 1978). Britain declared a protectorate over the Gilbert and Ellice Islands in 1892, annexed Banaba in 1900 and made them a colony in 1916; the Line Islands (annexed from 1888) joined it in 1919 and the Phoenix Islands in 1937 (Canton and Enderbury were shared with the United States from 1939). The Ellice Islands became the separate colony of Tuvalu in 1975-76.",
+   "ops": [
+    {
+     "op": "add_parts",
+     "realm": "British Colonial Empire",
+     "years": [
+      1892,
+      1978
+     ],
+     "ne": "KIR",
+     "box": [
+      172.0,
+      -3.0,
+      177.0,
+      3.6
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "British Colonial Empire",
+     "years": [
+      1900,
+      1978
+     ],
+     "ne": "KIR",
+     "box": [
+      169.4,
+      -1.0,
+      169.7,
+      -0.7
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "British Colonial Empire",
+     "years": [
+      1888,
+      1978
+     ],
+     "ne": "KIR",
+     "box": [
+      -161.0,
+      -12.0,
+      -150.0,
+      7.0
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "British Colonial Empire",
+     "years": [
+      1937,
+      1978
+     ],
+     "ne": "KIR",
+     "box": [
+      -175.0,
+      -5.0,
+      -170.0,
+      -2.0
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "British Colonial Empire",
+     "years": [
+      1892,
+      1977
+     ],
+     "ne": "TUV"
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Gilbert and Ellice Islands",
+     "url": "https://en.wikipedia.org/wiki/Gilbert_and_Ellice_Islands"
+    },
+    {
+     "title": "Wikipedia: Line Islands",
+     "url": "https://en.wikipedia.org/wiki/Line_Islands"
+    },
+    {
+     "title": "Wikipedia: Phoenix Islands",
+     "url": "https://en.wikipedia.org/wiki/Phoenix_Islands"
+    }
+   ]
+  },
+  {
+   "id": "island-nauru",
+   "note": "Nauru is drawn only from 1968. Germany annexed it in 1888; Australia took it in November 1914 and governed it (under a League of Nations, then UN mandate shared with Britain and New Zealand) until independence in 1968, except for the Japanese occupation of August 1942 to September 1945.",
+   "ops": [
+    {
+     "op": "add_parts",
+     "realm": "German Empire",
+     "years": [
+      1888,
+      1913
+     ],
+     "ne": "NRU"
+    },
+    {
+     "op": "add_parts",
+     "realm": "Commonwealth of Australia",
+     "years": [
+      1914,
+      1941
+     ],
+     "ne": "NRU"
+    },
+    {
+     "op": "add_parts",
+     "realm": "Empire of Japan",
+     "years": [
+      1942,
+      1945
+     ],
+     "ne": "NRU"
+    },
+    {
+     "op": "add_parts",
+     "realm": "Commonwealth of Australia",
+     "years": [
+      1946,
+      1967
+     ],
+     "ne": "NRU"
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Nauru",
+     "url": "https://en.wikipedia.org/wiki/Nauru"
+    },
+    {
+     "title": "Wikipedia: Japanese occupation of Nauru",
+     "url": "https://en.wikipedia.org/wiki/Japanese_occupation_of_Nauru"
+    }
+   ]
+  },
+  {
+   "id": "island-marshall-islands",
+   "note": "The Marshall Islands are drawn only from 1986. Germany declared a protectorate in 1885; Japan seized them in 1914 and held them under a League of Nations mandate until American forces took them in early 1944; they were then part of the US Trust Territory of the Pacific Islands until the Compact of Free Association (1986).",
+   "ops": [
+    {
+     "op": "add_parts",
+     "realm": "German Empire",
+     "years": [
+      1885,
+      1913
+     ],
+     "ne": "MHL"
+    },
+    {
+     "op": "add_parts",
+     "realm": "Empire of Japan",
+     "years": [
+      1914,
+      1943
+     ],
+     "ne": "MHL"
+    },
+    {
+     "op": "add_parts",
+     "realm": "United States of America",
+     "years": [
+      1944,
+      1985
+     ],
+     "ne": "MHL"
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Marshall Islands",
+     "url": "https://en.wikipedia.org/wiki/Marshall_Islands"
+    },
+    {
+     "title": "Wikipedia: South Seas Mandate",
+     "url": "https://en.wikipedia.org/wiki/South_Seas_Mandate"
+    },
+    {
+     "title": "Wikipedia: Trust Territory of the Pacific Islands",
+     "url": "https://en.wikipedia.org/wiki/Trust_Territory_of_the_Pacific_Islands"
+    }
+   ]
+  },
+  {
+   "id": "island-northern-marianas",
+   "note": "The Northern Mariana Islands (Saipan, Tinian, Rota) are missing before 1992. Spain ruled them with Guam from 1668; Germany bought them in 1899; Japan took them in 1914 and held them until the American invasions of mid-1944; the United States administered them as part of the Trust Territory and, from 1978, as a Commonwealth.",
+   "ops": [
+    {
+     "op": "add_parts",
+     "realm": "Spanish Empire",
+     "years": [
+      1670,
+      1872
+     ],
+     "ne": "MNP"
+    },
+    {
+     "op": "add_parts",
+     "realm": "First Spanish Republic",
+     "years": [
+      1873,
+      1876
+     ],
+     "ne": "MNP"
+    },
+    {
+     "op": "add_parts",
+     "realm": "Kingdom of Spain",
+     "years": [
+      1877,
+      1897
+     ],
+     "ne": "MNP"
+    },
+    {
+     "op": "add_parts",
+     "realm": "Kingdom of Spain",
+     "years": [
+      1898,
+      1898
+     ],
+     "ne": "MNP"
+    },
+    {
+     "op": "add_parts",
+     "realm": "German Empire",
+     "years": [
+      1899,
+      1913
+     ],
+     "ne": "MNP"
+    },
+    {
+     "op": "add_parts",
+     "realm": "Empire of Japan",
+     "years": [
+      1914,
+      1943
+     ],
+     "ne": "MNP"
+    },
+    {
+     "op": "add_parts",
+     "realm": "United States of America",
+     "years": [
+      1944,
+      1991
+     ],
+     "ne": "MNP"
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Northern Mariana Islands",
+     "url": "https://en.wikipedia.org/wiki/Northern_Mariana_Islands"
+    },
+    {
+     "title": "Wikipedia: Spanish East Indies",
+     "url": "https://en.wikipedia.org/wiki/Spanish_East_Indies"
+    },
+    {
+     "title": "Wikipedia: German New Guinea",
+     "url": "https://en.wikipedia.org/wiki/German_New_Guinea"
+    }
+   ]
+  },
+  {
+   "id": "island-carolines-palau",
+   "note": "Most of the Caroline Islands (Yap, Chuuk, Kosrae) are missing before 1987, and Palau before 1900. Spain made good its claim in 1885-86 and sold the islands to Germany in 1899; Japan took them in 1914 and held them until 1944-45; they were then part of the US Trust Territory. Islands the data already draws are left as they are.",
+   "ops": [
+    {
+     "op": "add_parts",
+     "realm": "Kingdom of Spain",
+     "years": [
+      1886,
+      1898
+     ],
+     "ne": "FSM"
+    },
+    {
+     "op": "add_parts",
+     "realm": "Kingdom of Spain",
+     "years": [
+      1886,
+      1898
+     ],
+     "ne": "PLW"
+    },
+    {
+     "op": "add_parts",
+     "realm": "German Empire",
+     "years": [
+      1899,
+      1913
+     ],
+     "ne": "FSM"
+    },
+    {
+     "op": "add_parts",
+     "realm": "German Empire",
+     "years": [
+      1899,
+      1913
+     ],
+     "ne": "PLW"
+    },
+    {
+     "op": "add_parts",
+     "realm": "Empire of Japan",
+     "years": [
+      1914,
+      1944
+     ],
+     "ne": "FSM"
+    },
+    {
+     "op": "add_parts",
+     "realm": "Empire of Japan",
+     "years": [
+      1914,
+      1944
+     ],
+     "ne": "PLW"
+    },
+    {
+     "op": "add_parts",
+     "realm": "United States of America",
+     "years": [
+      1945,
+      1986
+     ],
+     "ne": "FSM"
+    },
+    {
+     "op": "add_parts",
+     "realm": "United States of America",
+     "years": [
+      1945,
+      1991
+     ],
+     "ne": "PLW"
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Caroline Islands",
+     "url": "https://en.wikipedia.org/wiki/Caroline_Islands"
+    },
+    {
+     "title": "Wikipedia: German–Spanish Treaty (1899)",
+     "url": "https://en.wikipedia.org/wiki/German–Spanish_Treaty_(1899)"
+    },
+    {
+     "title": "Wikipedia: South Seas Mandate",
+     "url": "https://en.wikipedia.org/wiki/South_Seas_Mandate"
+    }
+   ]
+  },
+  {
+   "id": "island-us-minor-islands",
+   "note": "The small American islands of the Pacific are missing before 1992: Midway (annexed 1867), and Wake, Johnston, Palmyra, Kingman Reef, Baker, Howland and Jarvis (claimed between 1857 and 1899). Wake was under Japanese occupation from December 1941 to September 1945; that is not drawn.",
+   "ops": [
+    {
+     "op": "add_parts",
+     "realm": "United States of America",
+     "years": [
+      1867,
+      1991
+     ],
+     "ne": "UMI",
+     "box": [
+      -178.5,
+      28.0,
+      -177.0,
+      28.6
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "United States of America",
+     "years": [
+      1899,
+      1991
+     ],
+     "ne": "UMI"
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: United States Minor Outlying Islands",
+     "url": "https://en.wikipedia.org/wiki/United_States_Minor_Outlying_Islands"
+    },
+    {
+     "title": "Wikipedia: Midway Atoll",
+     "url": "https://en.wikipedia.org/wiki/Midway_Atoll"
+    }
+   ]
+  },
+  {
+   "id": "island-bonin-volcano",
+   "note": "The Bonin (Ogasawara) and Volcano islands, including Iwo Jima, are missing before 1992. Japan annexed them in 1876; the United States held them from 1945 until returning them in 1968.",
+   "ops": [
+    {
+     "op": "add_parts",
+     "realm": "Empire of Japan",
+     "years": [
+      1876,
+      1945
+     ],
+     "ne": "JPN",
+     "box": [
+      140.8,
+      24.0,
+      142.5,
+      27.8
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "United States of America",
+     "years": [
+      1946,
+      1967
+     ],
+     "ne": "JPN",
+     "box": [
+      140.8,
+      24.0,
+      142.5,
+      27.8
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Japan",
+     "years": [
+      1968,
+      1991
+     ],
+     "ne": "JPN",
+     "box": [
+      140.8,
+      24.0,
+      142.5,
+      27.8
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Bonin Islands",
+     "url": "https://en.wikipedia.org/wiki/Bonin_Islands"
+    },
+    {
+     "title": "Wikipedia: Volcano Islands",
+     "url": "https://en.wikipedia.org/wiki/Volcano_Islands"
+    }
+   ]
+  },
+  {
+   "id": "island-easter-juan-fernandez",
+   "note": "Easter Island (Rapa Nui) and the Juan Fernández Islands are drawn only from 1992. Chile annexed Easter Island in 1888; the Juan Fernández Islands passed to Chile with independence.",
+   "ops": [
+    {
+     "op": "add_parts",
+     "realm": "Republic of Chile",
+     "years": [
+      1888,
+      1991
+     ],
+     "ne": "CHL",
+     "box": [
+      -109.6,
+      -27.3,
+      -109.1,
+      -26.9
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Republic of Chile",
+     "years": [
+      1820,
+      1991
+     ],
+     "ne": "CHL",
+     "box": [
+      -81.0,
+      -34.0,
+      -78.6,
+      -33.4
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Easter Island",
+     "url": "https://en.wikipedia.org/wiki/Easter_Island"
+    },
+    {
+     "title": "Wikipedia: Juan Fernández Islands",
+     "url": "https://en.wikipedia.org/wiki/Juan_Fernández_Islands"
+    }
+   ]
+  },
+  {
+   "id": "island-pitcairn",
+   "note": "The Pitcairn Islands are missing before 1992. Settled by the Bounty mutineers in 1790, Pitcairn became a British colony in 1838.",
+   "ops": [
+    {
+     "op": "add_parts",
+     "realm": "British Colonial Empire",
+     "years": [
+      1838,
+      1991
+     ],
+     "ne": "PCN"
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Pitcairn Islands",
+     "url": "https://en.wikipedia.org/wiki/Pitcairn_Islands"
+    }
+   ]
+  },
+  {
+   "id": "island-norfolk-lord-howe",
+   "note": "Norfolk Island and Lord Howe Island are missing before 1992. Norfolk Island was settled from Sydney in 1788 (abandoned 1814-25) and was later a penal colony; it became an Australian territory in 1914. Lord Howe Island was settled in 1834 and is part of New South Wales.",
+   "ops": [
+    {
+     "op": "add_parts",
+     "realm": "British Colonial Empire",
+     "years": [
+      1788,
+      1904
+     ],
+     "ne": "NFK"
+    },
+    {
+     "op": "add_parts",
+     "realm": "Commonwealth of Australia",
+     "years": [
+      1905,
+      1991
+     ],
+     "ne": "NFK"
+    },
+    {
+     "op": "add_parts",
+     "realm": "British Colonial Empire",
+     "years": [
+      1834,
+      1904
+     ],
+     "ne": "AUS",
+     "box": [
+      158.9,
+      -31.9,
+      159.4,
+      -31.4
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Commonwealth of Australia",
+     "years": [
+      1905,
+      1991
+     ],
+     "ne": "AUS",
+     "box": [
+      158.9,
+      -31.9,
+      159.4,
+      -31.4
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Norfolk Island",
+     "url": "https://en.wikipedia.org/wiki/Norfolk_Island"
+    },
+    {
+     "title": "Wikipedia: Lord Howe Island",
+     "url": "https://en.wikipedia.org/wiki/Lord_Howe_Island"
+    }
+   ]
+  },
+  {
+   "id": "island-chatham",
+   "note": "The Chatham Islands are missing before 1992. They were included in New Zealand's boundaries in 1842.",
+   "ops": [
+    {
+     "op": "add_parts",
+     "realm": "British Colonial Empire",
+     "years": [
+      1842,
+      1947
+     ],
+     "ne": "NZL",
+     "box": [
+      -177.5,
+      -44.6,
+      -175.8,
+      -43.4
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "British Colonial Empire",
+     "years": [
+      1948,
+      1957
+     ],
+     "ne": "NZL",
+     "box": [
+      -177.5,
+      -44.6,
+      -175.8,
+      -43.4
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "New Zealand",
+     "years": [
+      1958,
+      1991
+     ],
+     "ne": "NZL",
+     "box": [
+      -177.5,
+      -44.6,
+      -175.8,
+      -43.4
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Chatham Islands",
+     "url": "https://en.wikipedia.org/wiki/Chatham_Islands"
+    }
+   ]
+  },
+  {
+   "id": "island-fiji-outer",
+   "note": "The border data's Fiji leaves out the Lau group, Rotuma and other outer islands. Fiji was ceded to Britain in 1874 and Rotuma was added in 1881.",
+   "ops": [
+    {
+     "op": "add_parts",
+     "realm": "British Colonial Empire",
+     "years": [
+      1881,
+      1970
+     ],
+     "ne": "FJI"
+    },
+    {
+     "op": "add_parts",
+     "realm": "Republic of Fiji",
+     "years": [
+      1971,
+      1991
+     ],
+     "ne": "FJI"
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Colony of Fiji",
+     "url": "https://en.wikipedia.org/wiki/Colony_of_Fiji"
+    },
+    {
+     "title": "Wikipedia: Rotuma",
+     "url": "https://en.wikipedia.org/wiki/Rotuma"
+    }
+   ]
+  },
+  {
+   "id": "island-maldives-sultanate",
+   "note": "The Maldives are drawn only from 1965. The islands were a Muslim sultanate from the conversion of 1153 until the republic of 1968. The Portuguese held Malé in 1558-73, and the sultanate was a British protected state from 1887 to 1965.",
+   "ops": [
+    {
+     "op": "ne",
+     "a3": "MDV",
+     "name": "Sultanate of the Maldives",
+     "years": [
+      1153,
+      1964
+     ],
+     "wiki": "Sultanate of the Maldives",
+     "wd": "Q2639519"
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Sultanate of the Maldives",
+     "url": "https://en.wikipedia.org/wiki/Sultanate_of_the_Maldives"
+    },
+    {
+     "title": "Wikipedia: History of the Maldives",
+     "url": "https://en.wikipedia.org/wiki/History_of_the_Maldives"
+    }
+   ]
+  },
+  {
+   "id": "island-lakshadweep",
+   "note": "The Lakshadweep (Laccadive, Amindivi and Minicoy) islands are drawn only from 1992. The Amindivi group passed to the British after Tipu Sultan's fall in 1799; the Arakkal rulers of Kannur kept the other islands under British control until the British took them over outright in 1908. They are drawn with the British from 1799 and with India from 1947.",
+   "ops": [
+    {
+     "op": "add_parts",
+     "realm": "British Empire",
+     "years": [
+      1799,
+      1858
+     ],
+     "ne": "IND",
+     "box": [
+      71.5,
+      8.0,
+      74.5,
+      12.5
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "British Raj",
+     "years": [
+      1859,
+      1946
+     ],
+     "ne": "IND",
+     "box": [
+      71.5,
+      8.0,
+      74.5,
+      12.5
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Republic of India",
+     "years": [
+      1947,
+      1991
+     ],
+     "ne": "IND",
+     "box": [
+      71.5,
+      8.0,
+      74.5,
+      12.5
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Lakshadweep",
+     "url": "https://en.wikipedia.org/wiki/Lakshadweep"
+    },
+    {
+     "title": "Wikipedia: Arakkal kingdom",
+     "url": "https://en.wikipedia.org/wiki/Arakkal_kingdom"
+    }
+   ]
+  },
+  {
+   "id": "island-nicobar",
+   "note": "The border data draws the Nicobar Islands inside the Dutch East Indies from 1809 to 1872. The Netherlands never held them: they were a Danish claim (the Frederiksøerne) with few settlers until Denmark sold its rights to Britain in 1868-69. Those pieces are removed, and the islands the British and Indian rows leave out (Car Nicobar among them) are added from 1869.",
+   "ops": [
+    {
+     "op": "drop_parts",
+     "realm": "Dutch East Indies",
+     "years": [
+      1809,
+      1872
+     ],
+     "box": [
+      92.5,
+      6.4,
+      94.2,
+      9.5
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "British Raj",
+     "years": [
+      1869,
+      1870
+     ],
+     "ne": "IND",
+     "box": [
+      92.5,
+      6.4,
+      94.2,
+      9.5
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "British Raj",
+     "years": [
+      1871,
+      1939
+     ],
+     "ne": "IND",
+     "box": [
+      92.5,
+      6.4,
+      94.2,
+      9.5
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "British Raj",
+     "years": [
+      1940,
+      1945
+     ],
+     "ne": "IND",
+     "box": [
+      92.5,
+      6.4,
+      94.2,
+      9.5
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "British Raj",
+     "years": [
+      1946,
+      1946
+     ],
+     "ne": "IND",
+     "box": [
+      92.5,
+      6.4,
+      94.2,
+      9.5
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Republic of India",
+     "years": [
+      1947,
+      1955
+     ],
+     "ne": "IND",
+     "box": [
+      92.5,
+      6.4,
+      94.2,
+      9.5
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Republic of India",
+     "years": [
+      1956,
+      1991
+     ],
+     "ne": "IND",
+     "box": [
+      92.5,
+      6.4,
+      94.2,
+      9.5
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Nicobar Islands",
+     "url": "https://en.wikipedia.org/wiki/Nicobar_Islands"
+    },
+    {
+     "title": "Wikipedia: Danish colonization of the Nicobar Islands",
+     "url": "https://en.wikipedia.org/wiki/Danish_colonization_of_the_Nicobar_Islands"
+    }
+   ]
+  },
+  {
+   "id": "island-chagos",
+   "note": "The Chagos Archipelago (Diego Garcia) is missing before 1992. French planters from Mauritius settled Diego Garcia in 1793; Britain took the islands with Mauritius in 1810-14 and governed them from Mauritius until 1965, when they became the British Indian Ocean Territory.",
+   "ops": [
+    {
+     "op": "add_parts",
+     "realm": "French First Republic",
+     "years": [
+      1793,
+      1795
+     ],
+     "ne": "IOT"
+    },
+    {
+     "op": "add_parts",
+     "realm": "French Directory",
+     "years": [
+      1796,
+      1799
+     ],
+     "ne": "IOT"
+    },
+    {
+     "op": "add_parts",
+     "realm": "French Consulate",
+     "years": [
+      1800,
+      1804
+     ],
+     "ne": "IOT"
+    },
+    {
+     "op": "add_parts",
+     "realm": "First French Empire",
+     "years": [
+      1805,
+      1810
+     ],
+     "ne": "IOT"
+    },
+    {
+     "op": "add_parts",
+     "realm": "British Colonial Empire",
+     "years": [
+      1811,
+      1814
+     ],
+     "ne": "IOT"
+    },
+    {
+     "op": "add_parts",
+     "realm": "British Colonial Empire",
+     "years": [
+      1815,
+      1964
+     ],
+     "ne": "IOT"
+    },
+    {
+     "op": "add_parts",
+     "realm": "British Colonial Empire",
+     "years": [
+      1965,
+      1991
+     ],
+     "ne": "IOT"
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Chagos Archipelago",
+     "url": "https://en.wikipedia.org/wiki/Chagos_Archipelago"
+    },
+    {
+     "title": "Wikipedia: British Indian Ocean Territory",
+     "url": "https://en.wikipedia.org/wiki/British_Indian_Ocean_Territory"
+    }
+   ]
+  },
+  {
+   "id": "island-mauritius-outer",
+   "note": "Mauritius's outer islands, Rodrigues and Agaléga, are missing before 1992. Both were governed from Mauritius (French from the 1720s-30s, British from 1810).",
+   "ops": [
+    {
+     "op": "add_parts",
+     "realm": "French India",
+     "years": [
+      1735,
+      1790
+     ],
+     "ne": "MUS",
+     "box": [
+      63.2,
+      -20.0,
+      63.6,
+      -19.6
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Kingdom of France",
+     "years": [
+      1791,
+      1791
+     ],
+     "ne": "MUS",
+     "box": [
+      63.2,
+      -20.0,
+      63.6,
+      -19.6
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "French First Republic",
+     "years": [
+      1792,
+      1795
+     ],
+     "ne": "MUS",
+     "box": [
+      63.2,
+      -20.0,
+      63.6,
+      -19.6
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "French Directory",
+     "years": [
+      1796,
+      1799
+     ],
+     "ne": "MUS",
+     "box": [
+      63.2,
+      -20.0,
+      63.6,
+      -19.6
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "French Consulate",
+     "years": [
+      1800,
+      1804
+     ],
+     "ne": "MUS",
+     "box": [
+      63.2,
+      -20.0,
+      63.6,
+      -19.6
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "First French Empire",
+     "years": [
+      1805,
+      1810
+     ],
+     "ne": "MUS",
+     "box": [
+      63.2,
+      -20.0,
+      63.6,
+      -19.6
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "British Colonial Empire",
+     "years": [
+      1811,
+      1814
+     ],
+     "ne": "MUS",
+     "box": [
+      63.2,
+      -20.0,
+      63.6,
+      -19.6
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "British Colonial Empire",
+     "years": [
+      1815,
+      1968
+     ],
+     "ne": "MUS",
+     "box": [
+      63.2,
+      -20.0,
+      63.6,
+      -19.6
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Mauritius",
+     "years": [
+      1969,
+      1991
+     ],
+     "ne": "MUS",
+     "box": [
+      63.2,
+      -20.0,
+      63.6,
+      -19.6
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "First French Empire",
+     "years": [
+      1810,
+      1810
+     ],
+     "ne": "MUS",
+     "box": [
+      56.4,
+      -10.6,
+      56.8,
+      -10.2
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "British Colonial Empire",
+     "years": [
+      1811,
+      1814
+     ],
+     "ne": "MUS",
+     "box": [
+      56.4,
+      -10.6,
+      56.8,
+      -10.2
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "British Colonial Empire",
+     "years": [
+      1815,
+      1968
+     ],
+     "ne": "MUS",
+     "box": [
+      56.4,
+      -10.6,
+      56.8,
+      -10.2
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Mauritius",
+     "years": [
+      1969,
+      1991
+     ],
+     "ne": "MUS",
+     "box": [
+      56.4,
+      -10.6,
+      56.8,
+      -10.2
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Rodrigues",
+     "url": "https://en.wikipedia.org/wiki/Rodrigues"
+    },
+    {
+     "title": "Wikipedia: Agaléga",
+     "url": "https://en.wikipedia.org/wiki/Agaléga"
+    }
+   ]
+  },
+  {
+   "id": "island-seychelles",
+   "note": "The border data draws the Seychelles with the Cape Colony (1811-84), British Africa (1885-1960), British East Africa (1961-72) and South Africa (1973-75). The islands were a dependency of Mauritius from 1814 and a separate British crown colony from 1903 until independence in June 1976; they were never part of South Africa.",
+   "ops": [
+    {
+     "op": "drop_parts",
+     "realm": "British Cape Colony",
+     "years": [
+      1811,
+      1884
+     ],
+     "box": [
+      45.0,
+      -11.0,
+      57.0,
+      -3.0
+     ]
+    },
+    {
+     "op": "drop_parts",
+     "realm": "British Africa",
+     "years": [
+      1885,
+      1960
+     ],
+     "box": [
+      45.0,
+      -11.0,
+      57.0,
+      -3.0
+     ]
+    },
+    {
+     "op": "drop_parts",
+     "realm": "British East Africa",
+     "years": [
+      1961,
+      1972
+     ],
+     "box": [
+      45.0,
+      -11.0,
+      57.0,
+      -3.0
+     ]
+    },
+    {
+     "op": "drop_parts",
+     "realm": "South Africa",
+     "years": [
+      1973,
+      1975
+     ],
+     "box": [
+      45.0,
+      -11.0,
+      57.0,
+      -3.0
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "British Colonial Empire",
+     "years": [
+      1811,
+      1975
+     ],
+     "ne": "SYC"
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Seychelles",
+     "url": "https://en.wikipedia.org/wiki/Seychelles"
+    },
+    {
+     "title": "Wikipedia: British Seychelles",
+     "url": "https://en.wikipedia.org/wiki/British_Seychelles"
+    }
+   ]
+  },
+  {
+   "id": "island-comoros",
+   "note": "The border data draws the Comoros inside French India from the 1670s and inside French Africa from 1846. The islands were ruled by their own sultans until France took Mayotte in 1841-43 and made the other three islands protectorates in 1886 (a colony from 1912). The sultanates are drawn from 1500, an approximate date for the Shirazi sultanates that ruled them; the corrections layer hides the French India row of 1815-19, which held only these islands.",
+   "ops": [
+    {
+     "op": "drop_parts",
+     "realm": "French India",
+     "years": [
+      1673,
+      1814
+     ],
+     "box": [
+      43.0,
+      -13.1,
+      45.4,
+      -11.2
+     ]
+    },
+    {
+     "op": "drop_parts",
+     "realm": "French India",
+     "years": [
+      1820,
+      1840
+     ],
+     "box": [
+      43.0,
+      -13.1,
+      45.4,
+      -11.2
+     ]
+    },
+    {
+     "op": "drop_parts",
+     "realm": "French India",
+     "years": [
+      1841,
+      1845
+     ],
+     "box": [
+      43.0,
+      -12.6,
+      44.8,
+      -11.2
+     ]
+    },
+    {
+     "op": "drop_parts",
+     "realm": "Bourbon Kingdom of France",
+     "years": [
+      1842,
+      1845
+     ],
+     "box": [
+      43.0,
+      -12.6,
+      44.8,
+      -11.2
+     ]
+    },
+    {
+     "op": "drop_parts",
+     "realm": "French Africa",
+     "years": [
+      1846,
+      1885
+     ],
+     "box": [
+      43.0,
+      -12.6,
+      44.8,
+      -11.2
+     ]
+    },
+    {
+     "op": "ne",
+     "a3": "COM",
+     "name": "Comoro sultanates",
+     "years": [
+      1500,
+      1885
+     ],
+     "wiki": "History of the Comoros"
+    },
+    {
+     "op": "add_parts",
+     "realm": "Comoro sultanates",
+     "years": [
+      1500,
+      1840
+     ],
+     "ne": "FRA",
+     "box": [
+      44.9,
+      -13.1,
+      45.4,
+      -12.6
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: History of the Comoros",
+     "url": "https://en.wikipedia.org/wiki/History_of_the_Comoros"
+    },
+    {
+     "title": "Wikipedia: Sultanate of Anjouan",
+     "url": "https://en.wikipedia.org/wiki/Sultanate_of_Anjouan"
+    },
+    {
+     "title": "Wikipedia: Mayotte",
+     "url": "https://en.wikipedia.org/wiki/Mayotte"
+    }
+   ]
+  },
+  {
+   "id": "island-reunion",
+   "note": "The border data draws Réunion inside New Caledonia (1856-59) and French Indochina (1860-1957). Réunion was a French colony in its own right and an overseas department from 1946. It is moved to France's own rows.",
+   "ops": [
+    {
+     "op": "drop_parts",
+     "realm": "New Caledonia",
+     "years": [
+      1856,
+      1859
+     ],
+     "box": [
+      54.9,
+      -21.6,
+      56.0,
+      -20.7
+     ]
+    },
+    {
+     "op": "drop_parts",
+     "realm": "French Indochina",
+     "years": [
+      1860,
+      1957
+     ],
+     "box": [
+      54.9,
+      -21.6,
+      56.0,
+      -20.7
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Second French Empire",
+     "years": [
+      1856,
+      1870
+     ],
+     "ne": "FRA",
+     "box": [
+      54.9,
+      -21.6,
+      56.0,
+      -20.7
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "French Third Republic",
+     "years": [
+      1871,
+      1939
+     ],
+     "ne": "FRA",
+     "box": [
+      54.9,
+      -21.6,
+      56.0,
+      -20.7
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Vichy France",
+     "years": [
+      1940,
+      1943
+     ],
+     "ne": "FRA",
+     "box": [
+      54.9,
+      -21.6,
+      56.0,
+      -20.7
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Free French",
+     "years": [
+      1944,
+      1944
+     ],
+     "ne": "FRA",
+     "box": [
+      54.9,
+      -21.6,
+      56.0,
+      -20.7
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "French Fourth Republic",
+     "years": [
+      1945,
+      1957
+     ],
+     "ne": "FRA",
+     "box": [
+      54.9,
+      -21.6,
+      56.0,
+      -20.7
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Réunion",
+     "url": "https://en.wikipedia.org/wiki/Réunion"
+    },
+    {
+     "title": "Wikipedia: History of Réunion",
+     "url": "https://en.wikipedia.org/wiki/History_of_Réunion"
+    }
+   ]
+  },
+  {
+   "id": "island-kerguelen",
+   "note": "The border data draws the Kerguelen, Crozet, Amsterdam and Saint-Paul islands inside French Indochina (1895-1957). France annexed them in 1892-93 and governed them from Madagascar; they became the French Southern and Antarctic Lands in 1955. They are moved to France's own rows.",
+   "ops": [
+    {
+     "op": "drop_parts",
+     "realm": "French Indochina",
+     "years": [
+      1895,
+      1957
+     ],
+     "box": [
+      37.0,
+      -50.0,
+      78.0,
+      -37.0
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "French Third Republic",
+     "years": [
+      1893,
+      1939
+     ],
+     "ne": "ATF",
+     "box": [
+      37.0,
+      -50.0,
+      78.0,
+      -37.0
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Vichy France",
+     "years": [
+      1940,
+      1943
+     ],
+     "ne": "ATF",
+     "box": [
+      37.0,
+      -50.0,
+      78.0,
+      -37.0
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Free French",
+     "years": [
+      1944,
+      1944
+     ],
+     "ne": "ATF",
+     "box": [
+      37.0,
+      -50.0,
+      78.0,
+      -37.0
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "French Fourth Republic",
+     "years": [
+      1945,
+      1957
+     ],
+     "ne": "ATF",
+     "box": [
+      37.0,
+      -50.0,
+      78.0,
+      -37.0
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Kerguelen Islands",
+     "url": "https://en.wikipedia.org/wiki/Kerguelen_Islands"
+    },
+    {
+     "title": "Wikipedia: French Southern and Antarctic Lands",
+     "url": "https://en.wikipedia.org/wiki/French_Southern_and_Antarctic_Lands"
+    }
+   ]
+  },
+  {
+   "id": "island-cocos-christmas",
+   "note": "The Cocos (Keeling) Islands and Christmas Island are missing before 1992. Britain annexed the Cocos in 1857 and Christmas Island in 1888 and governed both from Singapore; they passed to Australia in 1955 and 1958.",
+   "ops": [
+    {
+     "op": "add_parts",
+     "realm": "British Colonial Empire",
+     "years": [
+      1857,
+      1954
+     ],
+     "ne": "IOA",
+     "box": [
+      96.7,
+      -12.3,
+      97.0,
+      -11.8
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Commonwealth of Australia",
+     "years": [
+      1955,
+      1991
+     ],
+     "ne": "IOA",
+     "box": [
+      96.7,
+      -12.3,
+      97.0,
+      -11.8
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "British Colonial Empire",
+     "years": [
+      1888,
+      1957
+     ],
+     "ne": "IOA",
+     "box": [
+      105.5,
+      -10.6,
+      105.8,
+      -10.35
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Commonwealth of Australia",
+     "years": [
+      1958,
+      1991
+     ],
+     "ne": "IOA",
+     "box": [
+      105.5,
+      -10.6,
+      105.8,
+      -10.35
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Cocos (Keeling) Islands",
+     "url": "https://en.wikipedia.org/wiki/Cocos_(Keeling)_Islands"
+    },
+    {
+     "title": "Wikipedia: Christmas Island",
+     "url": "https://en.wikipedia.org/wiki/Christmas_Island"
+    }
+   ]
+  },
+  {
+   "id": "island-banda",
+   "note": "The Banda Islands, the only source of nutmeg, are drawn only from 1992. The Dutch East India Company conquered them in 1621; they then followed the Dutch Moluccas (British in 1810-17, Japanese in 1942-45).",
+   "ops": [
+    {
+     "op": "add_parts",
+     "realm": "Dutch Republic",
+     "years": [
+      1621,
+      1795
+     ],
+     "ne": "IDN",
+     "box": [
+      129.6,
+      -4.75,
+      130.1,
+      -4.4
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Batavian Republic",
+     "years": [
+      1796,
+      1799
+     ],
+     "ne": "IDN",
+     "box": [
+      129.6,
+      -4.75,
+      130.1,
+      -4.4
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Batavian Republic",
+     "years": [
+      1800,
+      1802
+     ],
+     "ne": "IDN",
+     "box": [
+      129.6,
+      -4.75,
+      130.1,
+      -4.4
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Dutch East Indies",
+     "years": [
+      1803,
+      1810
+     ],
+     "ne": "IDN",
+     "box": [
+      129.6,
+      -4.75,
+      130.1,
+      -4.4
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "British Colonial Empire",
+     "years": [
+      1811,
+      1816
+     ],
+     "ne": "IDN",
+     "box": [
+      129.6,
+      -4.75,
+      130.1,
+      -4.4
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Dutch East Indies",
+     "years": [
+      1817,
+      1941
+     ],
+     "ne": "IDN",
+     "box": [
+      129.6,
+      -4.75,
+      130.1,
+      -4.4
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Empire of Japan",
+     "years": [
+      1942,
+      1945
+     ],
+     "ne": "IDN",
+     "box": [
+      129.6,
+      -4.75,
+      130.1,
+      -4.4
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Dutch East Indies",
+     "years": [
+      1946,
+      1949
+     ],
+     "ne": "IDN",
+     "box": [
+      129.6,
+      -4.75,
+      130.1,
+      -4.4
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Republic of Indonesia",
+     "years": [
+      1950,
+      1991
+     ],
+     "ne": "IDN",
+     "box": [
+      129.6,
+      -4.75,
+      130.1,
+      -4.4
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Banda Islands",
+     "url": "https://en.wikipedia.org/wiki/Banda_Islands"
+    },
+    {
+     "title": "Wikipedia: Dutch conquest of the Banda Islands",
+     "url": "https://en.wikipedia.org/wiki/Dutch_conquest_of_the_Banda_Islands"
+    }
+   ]
+  },
+  {
+   "id": "island-penghu",
+   "note": "The Penghu (Pescadores) Islands are drawn only from 1992. They followed Taiwan: the Kingdom of Tungning (1662-83), the Qing (1683-1895), Japan (1895-1945) and the Republic of China.",
+   "ops": [
+    {
+     "op": "add_parts",
+     "realm": "Southern Ming",
+     "years": [
+      1662,
+      1682
+     ],
+     "ne": "TWN",
+     "box": [
+      119.2,
+      23.1,
+      119.8,
+      23.85
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Qing Dynasty",
+     "years": [
+      1683,
+      1894
+     ],
+     "ne": "TWN",
+     "box": [
+      119.2,
+      23.1,
+      119.8,
+      23.85
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Empire of Japan",
+     "years": [
+      1895,
+      1945
+     ],
+     "ne": "TWN",
+     "box": [
+      119.2,
+      23.1,
+      119.8,
+      23.85
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Republic of China",
+     "years": [
+      1946,
+      1991
+     ],
+     "ne": "TWN",
+     "box": [
+      119.2,
+      23.1,
+      119.8,
+      23.85
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Penghu",
+     "url": "https://en.wikipedia.org/wiki/Penghu"
+    }
+   ]
+  },
+  {
+   "id": "island-st-helena-dependencies",
+   "note": "St Helena, Ascension and Tristan da Cunha are missing before 1992. The English East India Company settled St Helena in 1659 (a crown colony from 1834); Britain garrisoned Ascension in 1815 and Tristan da Cunha in 1816.",
+   "ops": [
+    {
+     "op": "add_parts",
+     "realm": "English Colonial Empire",
+     "years": [
+      1659,
+      1708
+     ],
+     "ne": "SHN",
+     "box": [
+      -6.0,
+      -16.2,
+      -5.5,
+      -15.8
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "British Colonial Empire",
+     "years": [
+      1709,
+      1712
+     ],
+     "ne": "SHN",
+     "box": [
+      -6.0,
+      -16.2,
+      -5.5,
+      -15.8
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "British Colonial Empire",
+     "years": [
+      1713,
+      1991
+     ],
+     "ne": "SHN",
+     "box": [
+      -6.0,
+      -16.2,
+      -5.5,
+      -15.8
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "British Colonial Empire",
+     "years": [
+      1815,
+      1991
+     ],
+     "ne": "SHN",
+     "box": [
+      -14.5,
+      -8.1,
+      -14.2,
+      -7.8
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "British Colonial Empire",
+     "years": [
+      1816,
+      1991
+     ],
+     "ne": "SHN",
+     "box": [
+      -13.0,
+      -41.0,
+      -9.5,
+      -37.0
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Saint Helena",
+     "url": "https://en.wikipedia.org/wiki/Saint_Helena"
+    },
+    {
+     "title": "Wikipedia: Ascension Island",
+     "url": "https://en.wikipedia.org/wiki/Ascension_Island"
+    },
+    {
+     "title": "Wikipedia: Tristan da Cunha",
+     "url": "https://en.wikipedia.org/wiki/Tristan_da_Cunha"
+    }
+   ]
+  },
+  {
+   "id": "island-bahamas",
+   "note": "Most of the Bahamas, including New Providence (Nassau), are missing before 1973. English settlers arrived in 1648; the islands were a proprietary colony from 1670 and a crown colony from 1718 until independence in 1973.",
+   "ops": [
+    {
+     "op": "add_parts",
+     "realm": "English Colonial Empire",
+     "years": [
+      1670,
+      1708
+     ],
+     "ne": "BHS"
+    },
+    {
+     "op": "add_parts",
+     "realm": "British Colonial Empire",
+     "years": [
+      1709,
+      1712
+     ],
+     "ne": "BHS"
+    },
+    {
+     "op": "add_parts",
+     "realm": "British Colonial Empire",
+     "years": [
+      1713,
+      1972
+     ],
+     "ne": "BHS"
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: History of the Bahamas",
+     "url": "https://en.wikipedia.org/wiki/History_of_the_Bahamas"
+    }
+   ]
+  },
+  {
+   "id": "island-british-caribbean",
+   "note": "Several small British Caribbean colonies are missing before independence or 1992: St Kitts (English from 1623, shared with France until 1713) and Nevis, Montserrat (1632), Anguilla (1650), the British Virgin Islands (1672), the Cayman Islands (with Jamaica from 1670) and the Turks and Caicos (from 1799).",
+   "ops": [
+    {
+     "op": "add_parts",
+     "realm": "English Colonial Empire",
+     "years": [
+      1623,
+      1708
+     ],
+     "ne": "KNA"
+    },
+    {
+     "op": "add_parts",
+     "realm": "British Colonial Empire",
+     "years": [
+      1709,
+      1712
+     ],
+     "ne": "KNA"
+    },
+    {
+     "op": "add_parts",
+     "realm": "British Colonial Empire",
+     "years": [
+      1713,
+      1982
+     ],
+     "ne": "KNA"
+    },
+    {
+     "op": "add_parts",
+     "realm": "English Colonial Empire",
+     "years": [
+      1632,
+      1708
+     ],
+     "ne": "MSR"
+    },
+    {
+     "op": "add_parts",
+     "realm": "British Colonial Empire",
+     "years": [
+      1709,
+      1712
+     ],
+     "ne": "MSR"
+    },
+    {
+     "op": "add_parts",
+     "realm": "British Colonial Empire",
+     "years": [
+      1713,
+      1991
+     ],
+     "ne": "MSR"
+    },
+    {
+     "op": "add_parts",
+     "realm": "English Colonial Empire",
+     "years": [
+      1650,
+      1708
+     ],
+     "ne": "AIA"
+    },
+    {
+     "op": "add_parts",
+     "realm": "British Colonial Empire",
+     "years": [
+      1709,
+      1712
+     ],
+     "ne": "AIA"
+    },
+    {
+     "op": "add_parts",
+     "realm": "British Colonial Empire",
+     "years": [
+      1713,
+      1991
+     ],
+     "ne": "AIA"
+    },
+    {
+     "op": "add_parts",
+     "realm": "English Colonial Empire",
+     "years": [
+      1672,
+      1708
+     ],
+     "ne": "VGB"
+    },
+    {
+     "op": "add_parts",
+     "realm": "British Colonial Empire",
+     "years": [
+      1709,
+      1712
+     ],
+     "ne": "VGB"
+    },
+    {
+     "op": "add_parts",
+     "realm": "British Colonial Empire",
+     "years": [
+      1713,
+      1991
+     ],
+     "ne": "VGB"
+    },
+    {
+     "op": "add_parts",
+     "realm": "English Colonial Empire",
+     "years": [
+      1670,
+      1708
+     ],
+     "ne": "CYM"
+    },
+    {
+     "op": "add_parts",
+     "realm": "British Colonial Empire",
+     "years": [
+      1709,
+      1712
+     ],
+     "ne": "CYM"
+    },
+    {
+     "op": "add_parts",
+     "realm": "British Colonial Empire",
+     "years": [
+      1713,
+      1991
+     ],
+     "ne": "CYM"
+    },
+    {
+     "op": "add_parts",
+     "realm": "British Colonial Empire",
+     "years": [
+      1799,
+      1991
+     ],
+     "ne": "TCA"
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Saint Kitts and Nevis",
+     "url": "https://en.wikipedia.org/wiki/Saint_Kitts_and_Nevis"
+    },
+    {
+     "title": "Wikipedia: Montserrat",
+     "url": "https://en.wikipedia.org/wiki/Montserrat"
+    },
+    {
+     "title": "Wikipedia: Anguilla",
+     "url": "https://en.wikipedia.org/wiki/Anguilla"
+    },
+    {
+     "title": "Wikipedia: British Virgin Islands",
+     "url": "https://en.wikipedia.org/wiki/British_Virgin_Islands"
+    },
+    {
+     "title": "Wikipedia: Cayman Islands",
+     "url": "https://en.wikipedia.org/wiki/Cayman_Islands"
+    },
+    {
+     "title": "Wikipedia: Turks and Caicos Islands",
+     "url": "https://en.wikipedia.org/wiki/Turks_and_Caicos_Islands"
+    }
+   ]
+  },
+  {
+   "id": "island-danish-west-indies",
+   "note": "The US Virgin Islands are missing before 1992. They were the Danish West Indies (St Thomas from 1672, St John from 1718, St Croix from 1733) until Denmark sold them to the United States in 1917.",
+   "ops": [
+    {
+     "op": "add_parts",
+     "realm": "Denmark-Norway",
+     "years": [
+      1672,
+      1916
+     ],
+     "ne": "VIR"
+    },
+    {
+     "op": "add_parts",
+     "realm": "United States of America",
+     "years": [
+      1917,
+      1991
+     ],
+     "ne": "VIR"
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Danish West Indies",
+     "url": "https://en.wikipedia.org/wiki/Danish_West_Indies"
+    }
+   ]
+  },
+  {
+   "id": "island-bijagos",
+   "note": "The Bissagos (Bijagós) Islands are drawn only from 1992. They were part of Portuguese Guinea from 1879, although the islands were not brought under Portuguese control until 1936.",
+   "ops": [
+    {
+     "op": "add_parts",
+     "realm": "Kingdom of Portugal",
+     "years": [
+      1879,
+      1910
+     ],
+     "ne": "GNB",
+     "box": [
+      -16.9,
+      10.5,
+      -15.4,
+      11.7
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Portuguese Republic",
+     "years": [
+      1911,
+      1925
+     ],
+     "ne": "GNB",
+     "box": [
+      -16.9,
+      10.5,
+      -15.4,
+      11.7
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Estado Novo",
+     "years": [
+      1926,
+      1972
+     ],
+     "ne": "GNB",
+     "box": [
+      -16.9,
+      10.5,
+      -15.4,
+      11.7
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Republic of Guinea-Bissau",
+     "years": [
+      1973,
+      1975
+     ],
+     "ne": "GNB",
+     "box": [
+      -16.9,
+      10.5,
+      -15.4,
+      11.7
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Republic of Guinea-Bissau",
+     "years": [
+      1976,
+      1991
+     ],
+     "ne": "GNB",
+     "box": [
+      -16.9,
+      10.5,
+      -15.4,
+      11.7
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Bissagos Islands",
+     "url": "https://en.wikipedia.org/wiki/Bissagos_Islands"
+    }
+   ]
+  },
+  {
+   "id": "island-annobon",
+   "note": "Annobón is drawn only from 1992. It followed Bioko: Portuguese, then Spanish from 1778, and part of Equatorial Guinea from 1968.",
+   "ops": [
+    {
+     "op": "add_parts",
+     "realm": "Kingdom of Portugal",
+     "years": [
+      1497,
+      1501
+     ],
+     "ne": "GNQ",
+     "box": [
+      5.5,
+      -1.6,
+      5.75,
+      -1.3
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Kingdom of Portugal",
+     "years": [
+      1502,
+      1506
+     ],
+     "ne": "GNQ",
+     "box": [
+      5.5,
+      -1.6,
+      5.75,
+      -1.3
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Portuguese Africa",
+     "years": [
+      1507,
+      1581
+     ],
+     "ne": "GNQ",
+     "box": [
+      5.5,
+      -1.6,
+      5.75,
+      -1.3
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Spanish Empire",
+     "years": [
+      1582,
+      1639
+     ],
+     "ne": "GNQ",
+     "box": [
+      5.5,
+      -1.6,
+      5.75,
+      -1.3
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Portuguese Empire",
+     "years": [
+      1640,
+      1777
+     ],
+     "ne": "GNQ",
+     "box": [
+      5.5,
+      -1.6,
+      5.75,
+      -1.3
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Spanish Empire",
+     "years": [
+      1778,
+      1872
+     ],
+     "ne": "GNQ",
+     "box": [
+      5.5,
+      -1.6,
+      5.75,
+      -1.3
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "First Spanish Republic",
+     "years": [
+      1873,
+      1876
+     ],
+     "ne": "GNQ",
+     "box": [
+      5.5,
+      -1.6,
+      5.75,
+      -1.3
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Kingdom of Spain",
+     "years": [
+      1877,
+      1931
+     ],
+     "ne": "GNQ",
+     "box": [
+      5.5,
+      -1.6,
+      5.75,
+      -1.3
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Second Spanish Republic",
+     "years": [
+      1932,
+      1938
+     ],
+     "ne": "GNQ",
+     "box": [
+      5.5,
+      -1.6,
+      5.75,
+      -1.3
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Francoist Spain",
+     "years": [
+      1939,
+      1968
+     ],
+     "ne": "GNQ",
+     "box": [
+      5.5,
+      -1.6,
+      5.75,
+      -1.3
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Equatorial Guinea",
+     "years": [
+      1969,
+      1972
+     ],
+     "ne": "GNQ",
+     "box": [
+      5.5,
+      -1.6,
+      5.75,
+      -1.3
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Equatorial Guinea",
+     "years": [
+      1973,
+      1991
+     ],
+     "ne": "GNQ",
+     "box": [
+      5.5,
+      -1.6,
+      5.75,
+      -1.3
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Annobón",
+     "url": "https://en.wikipedia.org/wiki/Annobón"
+    }
+   ]
+  },
+  {
+   "id": "island-fernando-de-noronha",
+   "note": "Fernando de Noronha is drawn only from 1992. Portugal fortified it in 1737 after a French occupation; it passed to Brazil with independence.",
+   "ops": [
+    {
+     "op": "add_parts",
+     "realm": "Portuguese Empire",
+     "years": [
+      1737,
+      1821
+     ],
+     "ne": "BRA",
+     "box": [
+      -32.6,
+      -4.0,
+      -32.3,
+      -3.7
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Empire of Brazil",
+     "years": [
+      1822,
+      1889
+     ],
+     "ne": "BRA",
+     "box": [
+      -32.6,
+      -4.0,
+      -32.3,
+      -3.7
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Brazilian Republic",
+     "years": [
+      1890,
+      1931
+     ],
+     "ne": "BRA",
+     "box": [
+      -32.6,
+      -4.0,
+      -32.3,
+      -3.7
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Unitary State of Brazil",
+     "years": [
+      1932,
+      1945
+     ],
+     "ne": "BRA",
+     "box": [
+      -32.6,
+      -4.0,
+      -32.3,
+      -3.7
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Brazilian Republic",
+     "years": [
+      1946,
+      1966
+     ],
+     "ne": "BRA",
+     "box": [
+      -32.6,
+      -4.0,
+      -32.3,
+      -3.7
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Federated Republic of Brazil",
+     "years": [
+      1967,
+      1986
+     ],
+     "ne": "BRA",
+     "box": [
+      -32.6,
+      -4.0,
+      -32.3,
+      -3.7
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Republic of Brazil",
+     "years": [
+      1987,
+      1991
+     ],
+     "ne": "BRA",
+     "box": [
+      -32.6,
+      -4.0,
+      -32.3,
+      -3.7
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Fernando de Noronha",
+     "url": "https://en.wikipedia.org/wiki/Fernando_de_Noronha"
+    }
+   ]
+  },
+  {
+   "id": "island-knights-hospitaller",
+   "note": "The Knights Hospitaller (Order of Saint John) are missing. They ruled Rhodes and the nearby Dodecanese islands from 1310 until the Ottoman siege of 1522, and Malta from 1530 until Napoleon took it in 1798. Rhodes is drawn from 1314, where the data's Byzantine rows end; the Ottoman rows start in 1526, so Rhodes is added to them from 1523. Malta is taken out of the Kingdom of Spain's rows for 1530-33.",
+   "ops": [
+    {
+     "op": "ne",
+     "a3": "GRC",
+     "box": [
+      26.7,
+      35.85,
+      28.4,
+      37.2
+     ],
+     "name": "Knights Hospitaller",
+     "years": [
+      1314,
+      1522
+     ],
+     "wiki": "Knights Hospitaller",
+     "wd": "Q131140"
+    },
+    {
+     "op": "drop_parts",
+     "realm": "Kingdom of Spain",
+     "years": [
+      1530,
+      1533
+     ],
+     "box": [
+      14.1,
+      35.7,
+      14.7,
+      36.1
+     ]
+    },
+    {
+     "op": "ne",
+     "a3": "MLT",
+     "name": "Knights Hospitaller",
+     "years": [
+      1530,
+      1798
+     ]
+    },
+    {
+     "op": "add_parts",
+     "realm": "Ottoman Empire",
+     "years": [
+      1523,
+      1525
+     ],
+     "ne": "GRC",
+     "box": [
+      27.6,
+      35.8,
+      28.3,
+      36.5
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Knights Hospitaller",
+     "url": "https://en.wikipedia.org/wiki/Knights_Hospitaller"
+    },
+    {
+     "title": "Wikipedia: Hospitaller Rhodes",
+     "url": "https://en.wikipedia.org/wiki/Hospitaller_Rhodes"
+    },
+    {
+     "title": "Wikipedia: Hospitaller Malta",
+     "url": "https://en.wikipedia.org/wiki/Hospitaller_Malta"
+    }
+   ]
+  },
+  {
+   "id": "island-peoples",
+   "note": "Islands the border data leaves blank before a state or colony took them, drawn as the peoples who lived there (the corrections layer shows these rows as peoples, not states). Each ends where a state or colony begins.",
+   "ops": [
+    {
+     "op": "ne",
+     "a3": "PYF",
+     "name": "Tahitian chiefdoms",
+     "years": [
+      1000,
+      1787
+     ],
+     "wiki": "History of Tahiti",
+     "box": [
+      -150.1,
+      -18.0,
+      -149.1,
+      -17.4
+     ]
+    },
+    {
+     "op": "ne",
+     "a3": "PYF",
+     "name": "Leeward Society Islands chiefdoms",
+     "years": [
+      1000,
+      1887
+     ],
+     "wiki": "Society Islands",
+     "box": [
+      -152.0,
+      -17.1,
+      -150.9,
+      -16.0
+     ]
+    },
+    {
+     "op": "ne",
+     "a3": "PYF",
+     "name": "Marquesan chiefdoms",
+     "years": [
+      1100,
+      1841
+     ],
+     "wiki": "Marquesas Islands",
+     "box": [
+      -141.0,
+      -10.6,
+      -138.5,
+      -7.8
+     ]
+    },
+    {
+     "op": "ne",
+     "a3": "PYF",
+     "name": "Tuamotu and Mangareva chiefdoms",
+     "years": [
+      1100,
+      1879
+     ],
+     "wiki": "Tuamotus",
+     "box": [
+      -149.0,
+      -24.0,
+      -134.4,
+      -14.0
+     ]
+    },
+    {
+     "op": "ne",
+     "a3": "PYF",
+     "name": "Austral Islands chiefdoms",
+     "years": [
+      1200,
+      1879
+     ],
+     "wiki": "Austral Islands",
+     "box": [
+      -152.5,
+      -28.0,
+      -143.0,
+      -21.5
+     ]
+    },
+    {
+     "op": "ne",
+     "a3": "COK",
+     "name": "Cook Islands chiefdoms",
+     "years": [
+      1200,
+      1887
+     ],
+     "wiki": "History of the Cook Islands"
+    },
+    {
+     "op": "ne",
+     "a3": "NZL",
+     "name": "Moriori people",
+     "years": [
+      1500,
+      1841
+     ],
+     "wiki": "Moriori",
+     "box": [
+      -177.5,
+      -44.6,
+      -175.8,
+      -43.4
+     ]
+    },
+    {
+     "op": "ne",
+     "a3": "MNP",
+     "name": "Chamorro chiefdoms",
+     "years": [
+      -1500,
+      1669
+     ],
+     "wiki": "Chamorro people"
+    },
+    {
+     "op": "add_parts",
+     "realm": "Chamorro chiefdoms",
+     "years": [
+      -1500,
+      1669
+     ],
+     "ne": "GUM"
+    },
+    {
+     "op": "ne",
+     "a3": "PLW",
+     "name": "Palauan chiefdoms",
+     "years": [
+      -1000,
+      1885
+     ],
+     "wiki": "History of Palau"
+    },
+    {
+     "op": "ne",
+     "a3": "FSM",
+     "name": "Caroline Islands chiefdoms",
+     "years": [
+      0,
+      1885
+     ],
+     "wiki": "Caroline Islands"
+    },
+    {
+     "op": "ne",
+     "a3": "MHL",
+     "name": "Marshallese chiefdoms",
+     "years": [
+      0,
+      1884
+     ],
+     "wiki": "History of the Marshall Islands"
+    },
+    {
+     "op": "ne",
+     "a3": "KIR",
+     "name": "I-Kiribati chiefdoms",
+     "years": [
+      0,
+      1891
+     ],
+     "wiki": "History of Kiribati",
+     "box": [
+      172.0,
+      -3.0,
+      177.0,
+      3.6
+     ]
+    },
+    {
+     "op": "ne",
+     "a3": "NRU",
+     "name": "Nauruan clans",
+     "years": [
+      0,
+      1887
+     ],
+     "wiki": "History of Nauru"
+    },
+    {
+     "op": "ne",
+     "a3": "NCL",
+     "name": "Kanak chiefdoms",
+     "years": [
+      -499,
+      1852
+     ],
+     "wiki": "Kanak people"
+    },
+    {
+     "op": "ne",
+     "a3": "VUT",
+     "name": "Ni-Vanuatu chiefdoms",
+     "years": [
+      -499,
+      1889
+     ],
+     "wiki": "History of Vanuatu"
+    },
+    {
+     "op": "ne",
+     "a3": "SLB",
+     "name": "Solomon Islands chiefdoms",
+     "years": [
+      -499,
+      1889
+     ],
+     "wiki": "History of the Solomon Islands"
+    },
+    {
+     "op": "ne",
+     "a3": "BHS",
+     "name": "Lucayan chiefdoms",
+     "years": [
+      800,
+      1520
+     ],
+     "wiki": "Lucayan people"
+    },
+    {
+     "op": "ne",
+     "a3": "IND",
+     "name": "Andamanese peoples",
+     "years": [
+      -3400,
+      1857
+     ],
+     "wiki": "Andamanese peoples",
+     "box": [
+      92.2,
+      10.4,
+      94.0,
+      13.8
+     ]
+    },
+    {
+     "op": "ne",
+     "a3": "IND",
+     "name": "Nicobarese peoples",
+     "years": [
+      -1000,
+      1756
+     ],
+     "wiki": "Nicobarese people",
+     "box": [
+      92.5,
+      6.4,
+      94.2,
+      9.5
+     ]
+    },
+    {
+     "op": "ne",
+     "a3": "IND",
+     "name": "Nicobarese peoples",
+     "years": [
+      1800,
+      1867
+     ],
+     "wiki": "Nicobarese people",
+     "box": [
+      92.5,
+      6.4,
+      94.2,
+      9.5
+     ]
+    },
+    {
+     "op": "ne",
+     "a3": "COM",
+     "name": "Comorian chiefdoms",
+     "years": [
+      800,
+      1499
+     ],
+     "wiki": "History of the Comoros"
+    },
+    {
+     "op": "add_parts",
+     "realm": "Comorian chiefdoms",
+     "years": [
+      800,
+      1499
+     ],
+     "ne": "FRA",
+     "box": [
+      44.9,
+      -13.1,
+      45.4,
+      -12.6
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Polynesia",
+     "url": "https://en.wikipedia.org/wiki/Polynesia"
+    },
+    {
+     "title": "Wikipedia: Micronesia",
+     "url": "https://en.wikipedia.org/wiki/Micronesia"
+    },
+    {
+     "title": "Wikipedia: Melanesia",
+     "url": "https://en.wikipedia.org/wiki/Melanesia"
+    },
+    {
+     "title": "Wikipedia: Wilmshurst et al. (2011), High-precision radiocarbon dating shows recent and rapid initial human colonization of East Polynesia, PNAS 108(5)",
+     "url": "https://www.pnas.org/doi/10.1073/pnas.1015876108"
+    }
+   ]
+  },
+  {
+   "id": "island-maldives-buddhist",
+   "note": "Before Islam (1153) the Maldives were a Buddhist kingdom from about the 3rd century BCE, known from ruined stupas and monasteries. Dates approximate.",
+   "ops": [
+    {
+     "op": "ne",
+     "a3": "MDV",
+     "name": "Maldive kingdom (Buddhist period)",
+     "years": [
+      -200,
+      1152
+     ],
+     "wiki": "History of the Maldives"
+    }
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: History of the Maldives",
+     "url": "https://en.wikipedia.org/wiki/History_of_the_Maldives"
+    },
+    {
+     "title": "Wikipedia: Buddhism in the Maldives",
+     "url": "https://en.wikipedia.org/wiki/Buddhism_in_the_Maldives"
+    }
+   ]
   }
  ]
 }

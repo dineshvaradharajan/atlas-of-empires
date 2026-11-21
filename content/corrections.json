@@ -2754,7 +2754,7 @@
       "log": "reference check (refcheck-06.json)"
     },
     "French Indochina": {
-      "note": "Indochina was Vietnam, Laos, Cambodia and the leased port of Guangzhouwan; the far-off islands and Indian ports also shaded here (New Caledonia, Réunion, French India) were separate French colonies. The Indochinese Union was formed in 1887; before that France held Cochinchina (Saigon taken 1859, provinces ceded 1862 and 1867) and protectorates over Cambodia (1863) and Annam–Tonkin (1883–84). Laos and Cambodia became independent in 1953 and the Geneva Accords of July 1954 ended French Indochina.",
+      "note": "Indochina was Vietnam, Laos, Cambodia and the leased port of Guangzhouwan; the Indian ports also shaded here (French India) were a separate French colony. The Indochinese Union was formed in 1887; before that France held Cochinchina (Saigon taken 1859, provinces ceded 1862 and 1867) and protectorates over Cambodia (1863) and Annam–Tonkin (1883–84). Laos and Cambodia became independent in 1953 and the Geneva Accords of July 1954 ended French Indochina.",
       "sources": [
         {
           "title": "French Indochina (Wikipedia)",
@@ -3660,22 +3660,24 @@
       "log": "reference check (refcheck-10.json)"
     },
     "French India": {
-      "note": "Comoro sultanates",
+      "note": "The border data also drew the Comoros inside French India; they were ruled by their own sultans until France took Mayotte in 1841-43 and the other islands in 1886, and are drawn as the Comoro sultanates. In 1815-19 this row held only the Comoros, so it is hidden in those years.",
       "sources": [
         {
           "title": "French India (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/French_India"
-        }
-      ],
-      "relabel": [
+        },
         {
-          "from": 1815,
-          "to": 1819,
-          "name": "Comoro sultanates",
-          "key": "Comoro sultanates"
+          "title": "History of the Comoros (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/History_of_the_Comoros"
         }
       ],
-      "log": "reference check (refcheck-10.json)"
+      "hide": [
+        [
+          1815,
+          1819
+        ]
+      ],
+      "log": "reference check (refcheck-10.json); island coverage (patches.json island-comoros)"
     },
     "Russian-occupied territories": {
       "note": "Russian forces have held Transnistria since 1992; Abkhazia and South Ossetia are counted as occupied from 2008, Crimea from 2014, and parts of eastern and southern Ukraine from 2014 and 2022. This outline does not change over time, wrongly includes Moldova's Gagauzia, and leaves out Abkhazia, Crimea and occupied Ukraine.",
@@ -10266,6 +10268,415 @@
         }
       ],
       "log": "indonesia-malaysia-review.md"
+    },
+    "Tahitian chiefdoms": {
+      "asPeople": [
+        {
+          "from": 1000,
+          "to": 1787,
+          "name": "Tahitian chiefdoms"
+        }
+      ],
+      "note": "Polynesians settled the Society Islands around 1000 CE. Tahiti and Moorea were divided among rival chiefdoms until Pōmare I united them around 1788.",
+      "sources": [
+        {
+          "title": "Wikipedia: History of Tahiti",
+          "url": "https://en.wikipedia.org/wiki/History_of_Tahiti"
+        },
+        {
+          "title": "Wikipedia: Wilmshurst et al. (2011), High-precision radiocarbon dating shows recent and rapid initial human colonization of East Polynesia, PNAS 108(5)",
+          "url": "https://www.pnas.org/doi/10.1073/pnas.1015876108"
+        }
+      ],
+      "log": "island coverage (patches.json island-peoples)"
+    },
+    "Leeward Society Islands chiefdoms": {
+      "asPeople": [
+        {
+          "from": 1000,
+          "to": 1887,
+          "name": "Leeward Society Islands chiefdoms"
+        }
+      ],
+      "note": "Raiatea, Taha'a, Huahine and Bora Bora were ruled by their own chiefs and kings, with the sacred marae of Taputapuātea on Raiatea, until France annexed them in 1888.",
+      "sources": [
+        {
+          "title": "Wikipedia: Society Islands",
+          "url": "https://en.wikipedia.org/wiki/Society_Islands"
+        },
+        {
+          "title": "Wikipedia: Taputapuātea marae",
+          "url": "https://en.wikipedia.org/wiki/Taputapuātea_marae"
+        }
+      ],
+      "log": "island coverage (patches.json island-peoples)"
+    },
+    "Marquesan chiefdoms": {
+      "asPeople": [
+        {
+          "from": 1100,
+          "to": 1841,
+          "name": "Marquesan chiefdoms"
+        }
+      ],
+      "note": "Polynesians reached the Marquesas by about 1100 CE; the valleys of each island were held by rival chiefdoms until France annexed the islands in 1842.",
+      "sources": [
+        {
+          "title": "Wikipedia: Marquesas Islands",
+          "url": "https://en.wikipedia.org/wiki/Marquesas_Islands"
+        },
+        {
+          "title": "Wikipedia: Wilmshurst et al. (2011), High-precision radiocarbon dating shows recent and rapid initial human colonization of East Polynesia, PNAS 108(5)",
+          "url": "https://www.pnas.org/doi/10.1073/pnas.1015876108"
+        }
+      ],
+      "log": "island coverage (patches.json island-peoples)"
+    },
+    "Tuamotu and Mangareva chiefdoms": {
+      "asPeople": [
+        {
+          "from": 1100,
+          "to": 1879,
+          "name": "Tuamotu and Mangareva chiefdoms"
+        }
+      ],
+      "note": "The Tuamotu atolls and Mangareva in the Gambier Islands were settled by about 1100-1200 CE and were ruled by their own chiefs until France annexed them in 1880-81.",
+      "sources": [
+        {
+          "title": "Wikipedia: Tuamotus",
+          "url": "https://en.wikipedia.org/wiki/Tuamotus"
+        },
+        {
+          "title": "Wikipedia: Mangareva",
+          "url": "https://en.wikipedia.org/wiki/Mangareva"
+        },
+        {
+          "title": "Wikipedia: Wilmshurst et al. (2011), High-precision radiocarbon dating shows recent and rapid initial human colonization of East Polynesia, PNAS 108(5)",
+          "url": "https://www.pnas.org/doi/10.1073/pnas.1015876108"
+        }
+      ],
+      "log": "island coverage (patches.json island-peoples)"
+    },
+    "Austral Islands chiefdoms": {
+      "asPeople": [
+        {
+          "from": 1200,
+          "to": 1879,
+          "name": "Austral Islands chiefdoms"
+        }
+      ],
+      "note": "The Austral Islands were settled around 1200 CE; most passed to France with Tahiti in 1880, Rurutu and Rimatara in 1900.",
+      "sources": [
+        {
+          "title": "Wikipedia: Austral Islands",
+          "url": "https://en.wikipedia.org/wiki/Austral_Islands"
+        },
+        {
+          "title": "Wikipedia: Wilmshurst et al. (2011), High-precision radiocarbon dating shows recent and rapid initial human colonization of East Polynesia, PNAS 108(5)",
+          "url": "https://www.pnas.org/doi/10.1073/pnas.1015876108"
+        }
+      ],
+      "log": "island coverage (patches.json island-peoples)"
+    },
+    "Cook Islands chiefdoms": {
+      "asPeople": [
+        {
+          "from": 1200,
+          "to": 1887,
+          "name": "Cook Islands chiefdoms"
+        }
+      ],
+      "note": "Polynesians settled the Cook Islands around 1200 CE. Rarotonga and the other islands were ruled by ariki (high chiefs) until the British protectorate of 1888.",
+      "sources": [
+        {
+          "title": "Wikipedia: History of the Cook Islands",
+          "url": "https://en.wikipedia.org/wiki/History_of_the_Cook_Islands"
+        },
+        {
+          "title": "Wikipedia: Wilmshurst et al. (2011), High-precision radiocarbon dating shows recent and rapid initial human colonization of East Polynesia, PNAS 108(5)",
+          "url": "https://www.pnas.org/doi/10.1073/pnas.1015876108"
+        }
+      ],
+      "log": "island coverage (patches.json island-peoples)"
+    },
+    "Moriori people": {
+      "asPeople": [
+        {
+          "from": 1500,
+          "to": 1841,
+          "name": "Moriori people"
+        }
+      ],
+      "note": "Polynesians settled the Chatham Islands around 1500 CE and became the Moriori, known for their code of non-violence. Māori from Taranaki invaded in 1835, and the islands were placed within New Zealand's boundaries in 1842.",
+      "sources": [
+        {
+          "title": "Wikipedia: Moriori",
+          "url": "https://en.wikipedia.org/wiki/Moriori"
+        },
+        {
+          "title": "Wikipedia: Chatham Islands",
+          "url": "https://en.wikipedia.org/wiki/Chatham_Islands"
+        }
+      ],
+      "log": "island coverage (patches.json island-peoples)"
+    },
+    "Chamorro chiefdoms": {
+      "asPeople": [
+        {
+          "from": -1500,
+          "to": 1669,
+          "name": "Chamorro chiefdoms"
+        }
+      ],
+      "note": "The Mariana Islands were settled around 1500 BCE, among the earliest long ocean crossings anywhere. The Chamorro built latte-stone villages under chiefly clans until Spain conquered the islands from 1668.",
+      "sources": [
+        {
+          "title": "Wikipedia: Chamorro people",
+          "url": "https://en.wikipedia.org/wiki/Chamorro_people"
+        },
+        {
+          "title": "Wikipedia: Latte stone",
+          "url": "https://en.wikipedia.org/wiki/Latte_stone"
+        },
+        {
+          "title": "Wikipedia: Spanish–Chamorro wars",
+          "url": "https://en.wikipedia.org/wiki/Spanish–Chamorro_wars"
+        }
+      ],
+      "log": "island coverage (patches.json island-peoples)"
+    },
+    "Palauan chiefdoms": {
+      "asPeople": [
+        {
+          "from": -1000,
+          "to": 1885,
+          "name": "Palauan chiefdoms"
+        }
+      ],
+      "note": "Palau was settled by about 1000 BCE. Its villages were grouped in rival confederations led by Koror and Melekeok until Spain made good its claim in 1885.",
+      "sources": [
+        {
+          "title": "Wikipedia: History of Palau",
+          "url": "https://en.wikipedia.org/wiki/History_of_Palau"
+        }
+      ],
+      "log": "island coverage (patches.json island-peoples)"
+    },
+    "Caroline Islands chiefdoms": {
+      "asPeople": [
+        {
+          "from": 0,
+          "to": 1885,
+          "name": "Caroline Islands chiefdoms"
+        }
+      ],
+      "note": "The Caroline Islands were settled by about 2,000 years ago. Pohnpei was ruled by the Saudeleur dynasty from Nan Madol (c. 1100-1628) and then by the Nahnmwarki chiefdoms; Kosrae by kings at Leluh; Yap held a tribute network over the outer islands. Spain made good its claim in 1885-86.",
+      "sources": [
+        {
+          "title": "Wikipedia: Caroline Islands",
+          "url": "https://en.wikipedia.org/wiki/Caroline_Islands"
+        },
+        {
+          "title": "Wikipedia: Saudeleur dynasty",
+          "url": "https://en.wikipedia.org/wiki/Saudeleur_dynasty"
+        },
+        {
+          "title": "Wikipedia: Nan Madol",
+          "url": "https://en.wikipedia.org/wiki/Nan_Madol"
+        }
+      ],
+      "log": "island coverage (patches.json island-peoples)"
+    },
+    "Marshallese chiefdoms": {
+      "asPeople": [
+        {
+          "from": 0,
+          "to": 1884,
+          "name": "Marshallese chiefdoms"
+        }
+      ],
+      "note": "Micronesians settled the Marshall Islands about 2,000 years ago and navigated between the atolls with stick charts. Paramount chiefs (iroij) ruled until the German protectorate of 1885.",
+      "sources": [
+        {
+          "title": "Wikipedia: History of the Marshall Islands",
+          "url": "https://en.wikipedia.org/wiki/History_of_the_Marshall_Islands"
+        },
+        {
+          "title": "Wikipedia: Marshall Islands stick chart",
+          "url": "https://en.wikipedia.org/wiki/Marshall_Islands_stick_chart"
+        }
+      ],
+      "log": "island coverage (patches.json island-peoples)"
+    },
+    "I-Kiribati chiefdoms": {
+      "asPeople": [
+        {
+          "from": 0,
+          "to": 1891,
+          "name": "I-Kiribati chiefdoms"
+        }
+      ],
+      "note": "The Gilbert Islands were settled by Micronesians about 2,000 years ago (later with Samoan and Fijian influence). The islands were ruled by councils of elders and, in the north, by high chiefs until the British protectorate of 1892.",
+      "sources": [
+        {
+          "title": "Wikipedia: History of Kiribati",
+          "url": "https://en.wikipedia.org/wiki/History_of_Kiribati"
+        }
+      ],
+      "log": "island coverage (patches.json island-peoples)"
+    },
+    "Nauruan clans": {
+      "asPeople": [
+        {
+          "from": 0,
+          "to": 1887,
+          "name": "Nauruan clans"
+        }
+      ],
+      "note": "Nauru was settled by Micronesian and Polynesian peoples about 3,000 years ago and was organised in twelve clans until Germany annexed it in 1888.",
+      "sources": [
+        {
+          "title": "Wikipedia: History of Nauru",
+          "url": "https://en.wikipedia.org/wiki/History_of_Nauru"
+        }
+      ],
+      "log": "island coverage (patches.json island-peoples)"
+    },
+    "Kanak chiefdoms": {
+      "asPeople": [
+        {
+          "from": -499,
+          "to": 1852,
+          "name": "Kanak chiefdoms"
+        }
+      ],
+      "note": "The Kanak, descendants of the Lapita settlers, lived in chiefdoms across New Caledonia and the Loyalty Islands until France annexed them in 1853.",
+      "sources": [
+        {
+          "title": "Wikipedia: Kanak people",
+          "url": "https://en.wikipedia.org/wiki/Kanak_people"
+        },
+        {
+          "title": "Wikipedia: History of New Caledonia",
+          "url": "https://en.wikipedia.org/wiki/History_of_New_Caledonia"
+        }
+      ],
+      "log": "island coverage (patches.json island-peoples)"
+    },
+    "Ni-Vanuatu chiefdoms": {
+      "asPeople": [
+        {
+          "from": -499,
+          "to": 1889,
+          "name": "Ni-Vanuatu chiefdoms"
+        }
+      ],
+      "note": "The islands of Vanuatu, settled by the Lapita people, were home to many small societies led by chiefs and men of rank, speaking over a hundred languages, until Britain and France took joint control.",
+      "sources": [
+        {
+          "title": "Wikipedia: History of Vanuatu",
+          "url": "https://en.wikipedia.org/wiki/History_of_Vanuatu"
+        }
+      ],
+      "log": "island coverage (patches.json island-peoples)"
+    },
+    "Solomon Islands chiefdoms": {
+      "asPeople": [
+        {
+          "from": -499,
+          "to": 1889,
+          "name": "Solomon Islands chiefdoms"
+        }
+      ],
+      "note": "The Solomon Islands were home to many small societies led by chiefs and big men until Germany and Britain divided them in 1886-93.",
+      "sources": [
+        {
+          "title": "Wikipedia: History of the Solomon Islands",
+          "url": "https://en.wikipedia.org/wiki/History_of_the_Solomon_Islands"
+        }
+      ],
+      "log": "island coverage (patches.json island-peoples)"
+    },
+    "Lucayan chiefdoms": {
+      "asPeople": [
+        {
+          "from": 800,
+          "to": 1520,
+          "name": "Lucayan chiefdoms"
+        }
+      ],
+      "note": "The Lucayans, a Taíno people, settled the Bahamas around 800 CE. Columbus landed among them in 1492; within thirty years Spanish slave raids had carried off or killed almost all of them.",
+      "sources": [
+        {
+          "title": "Wikipedia: Lucayan people",
+          "url": "https://en.wikipedia.org/wiki/Lucayan_people"
+        }
+      ],
+      "log": "island coverage (patches.json island-peoples)"
+    },
+    "Andamanese peoples": {
+      "asPeople": [
+        {
+          "from": -3400,
+          "to": 1857,
+          "name": "Andamanese peoples"
+        }
+      ],
+      "note": "The Andaman Islands have been home to the Andamanese peoples, among them the Great Andamanese, Onge, Jarawa and Sentinelese, for many thousands of years. Britain founded a penal settlement at Port Blair in 1858; the Sentinelese still live independently.",
+      "sources": [
+        {
+          "title": "Wikipedia: Andamanese peoples",
+          "url": "https://en.wikipedia.org/wiki/Andamanese_peoples"
+        },
+        {
+          "title": "Wikipedia: Sentinelese",
+          "url": "https://en.wikipedia.org/wiki/Sentinelese"
+        }
+      ],
+      "log": "island coverage (patches.json island-peoples)"
+    },
+    "Nicobarese peoples": {
+      "asPeople": [
+        {
+          "from": -1000,
+          "to": 1756,
+          "name": "Nicobarese peoples"
+        },
+        {
+          "from": 1800,
+          "to": 1867,
+          "name": "Nicobarese peoples"
+        }
+      ],
+      "note": "The Nicobar Islands were home to the Nicobarese and, on Great Nicobar, the Shompen. Denmark claimed the islands from 1756 but its settlements rarely lasted; Britain took them over in 1868-69.",
+      "sources": [
+        {
+          "title": "Wikipedia: Nicobarese people",
+          "url": "https://en.wikipedia.org/wiki/Nicobarese_people"
+        },
+        {
+          "title": "Wikipedia: Shompen people",
+          "url": "https://en.wikipedia.org/wiki/Shompen_people"
+        }
+      ],
+      "log": "island coverage (patches.json island-peoples)"
+    },
+    "Comorian chiefdoms": {
+      "asPeople": [
+        {
+          "from": 800,
+          "to": 1499,
+          "name": "Comorian chiefdoms"
+        }
+      ],
+      "note": "The Comoros were settled by Bantu-speaking and Austronesian peoples from around the 8th century and became part of the Swahili trading world; local chiefs (fani) ruled until the Shirazi sultanates. Dates approximate.",
+      "sources": [
+        {
+          "title": "Wikipedia: History of the Comoros",
+          "url": "https://en.wikipedia.org/wiki/History_of_the_Comoros"
+        }
+      ],
+      "log": "island coverage (patches.json island-peoples)"
     }
   },
   "base": {
