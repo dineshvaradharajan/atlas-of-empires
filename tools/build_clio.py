@@ -18,6 +18,9 @@ two neighbours keep one shared line (simplifying each realm on its own split sha
 The real coast is Natural Earth 1:10m land as tools/build_detail.py stores it (public/data/coast/), so run that first
 when Natural Earth changes.
 
+Stairs: outlines traced from a grid run in stair steps; destair() cuts each step's corner at its midpoints, the same way
+in every realm that shares the border, so neighbours keep one line.
+
 Run: python3 -I tools/build_clio.py
 """
 import glob
@@ -143,10 +146,67 @@ class PinnedFor:
         return any(a <= self.t and self.f <= b for a, b in self.pinned.get(p, ()))
 
 
+STAIR_SEG = 0.3  # degrees: only short axis-aligned steps make a staircase (long straight borders keep their corners)
+
+
+def destair(feats):
+    """Smooth stair-stepped borders (outlines traced from a grid) by cutting each step's corner at the midpoints of its
+    two steps, which turns a staircase into a diagonal. The cut depends only on the corner and its two neighbours, and
+    a corner is cut in a row only if every row of overlapping years that has the point has the same two neighbours
+    there, so the realms on either side of a border change it identically (no gaps or overlaps open between them) and
+    points where three realms meet stay put."""
+    key = lambda q: (q[0], q[1])
+    occ = {}   # point -> [(row, from, to, neighbour pair)]
+    rings = []
+    for i, f in enumerate(feats):
+        p = f["properties"]
+        if p["Name"].startswith("("):
+            continue
+        fy, ty = int(p["FromYear"]), int(p["ToYear"])
+        for poly in polys_of(f["geometry"]):
+            for r in poly:
+                n = len(r) - 1
+                if n < 4:
+                    continue
+                rings.append((i, fy, ty, r))
+                for k in range(n):
+                    v, a, c = key(r[k]), key(r[k - 1] if k else r[n - 1]), key(r[k + 1])
+                    occ.setdefault(v, []).append((i, fy, ty, frozenset((a, c))))
+    def step(a, b):  # "h" or "v" for a short, (nearly) axis-aligned step; the grid's columns lean a little
+        dx, dy = abs(a[0] - b[0]), abs(a[1] - b[1])
+        if not 0 < max(dx, dy) <= STAIR_SEG:
+            return None
+        return "h" if dy <= 0.06 * dx else "v" if dx <= 0.06 * dy else None
+    def corner(a, v, c):
+        s1, s2 = step(a, v), step(v, c)
+        return bool(s1 and s2 and s1 != s2)
+    def agreed(v, i, fy, ty, pair):
+        return all(q == pair for j, f2, t2, q in occ[v] if j != i and f2 <= ty and fy <= t2)
+    mid = lambda a, b: [(a[0] + b[0]) / 2, (a[1] + b[1]) / 2]
+    cut = 0
+    for i, fy, ty, r in rings:
+        n, out = len(r) - 1, []
+        for k in range(n):
+            v, a, c = key(r[k]), key(r[k - 1] if k else r[n - 1]), key(r[k + 1])
+            if corner(a, v, c) and agreed(v, i, fy, ty, frozenset((a, c))):
+                pts = [mid(a, v), mid(v, c)]; cut += 1
+            else:
+                pts = [list(r[k][:2])]
+            for q in pts:
+                if not out or (q[0], q[1]) != (out[-1][0], out[-1][1]):
+                    out.append(q)
+        if len(out) > 1 and out[0] == out[-1]:
+            out.pop()
+        if len(out) >= 3:
+            r[:] = out + [list(out[0])]
+    return cut
+
+
 def main():
     src = sorted(glob.glob(os.path.join(ROOT, "data", "clio", "cliopatria_polities_only_v*.geojson")))[-1]
     feats = json.load(open(src))["features"]
     os.makedirs(OUT, exist_ok=True)
+    print(f"stairs: {destair(feats)} stair-step corners cut", flush=True)
     land = Land.tiles()
     if True:
         flags, pinned = shared_edges(feats)
