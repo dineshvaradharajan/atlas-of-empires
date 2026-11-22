@@ -26,9 +26,9 @@
 <link rel="icon" href="icon-512.png" type="image/png" sizes="512x512">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <meta name="theme-color" content="#ffffff">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="fonts/inter-latin.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="fonts/archivo-latin.woff2">
+<link rel="stylesheet" href="fonts/fonts.css">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -123,8 +123,8 @@
     </ul>
   </div>
 </noscript>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js" integrity="sha384-CjloA8y00+1SDAUkjs099PVfnY2KmDC2BZnws9kh8D/lX1s46w6EPhpXdqMfjK6i" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdn.jsdelivr.net/npm/earcut@2.2.4/dist/earcut.min.js" integrity="sha384-2H0pAXlHBLfkdkuPuERxxSBlz7fMZ2EqrwxccEG7J9Svyk1SbUDaknB5UCoel/ZX" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="vendor/d3-atlas.min.js?v=b6abf722fd"></script>
+<script src="vendor/earcut.min.js?v=8532bfc2db"></script>
 <script src="app.js"></script>
 </body>
 </html>

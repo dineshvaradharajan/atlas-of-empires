@@ -5,6 +5,7 @@
 # preloads the two data files the map needs first, writes the crawlable pages, sitemaps and llms.txt (tools/seo.py), and packs the map files (tools/compact.py).
 set -e
 cd "$(dirname "$0")/.."
+sh tools/vendor.sh check # the trimmed map library (public/vendor/) has every d3 name the scripts use, or nothing is deployed
 V=$(git rev-parse --short HEAD)
 D=$(mktemp -d)
 git archive HEAD public tools/seo.py tools/compact.py | tar -x -C "$D"

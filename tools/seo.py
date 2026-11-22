@@ -149,9 +149,7 @@ def page(path, title, description, body, crumbs=(), image=None, image_alt="", js
 <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta name="theme-color" content="#ffffff">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;800&amp;family=Inter:wght@400;600&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/fonts/fonts-pages.css">
 <link rel="stylesheet" href="/pages.css">
 <script type="application/ld+json">{json.dumps(ld if len(ld) > 1 else ld[0], ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")}</script>
 </head>
@@ -329,6 +327,15 @@ def main():
     recon = add_supplements(R, J("supplements.json"))
     culture_realm = {rg.get("key") or rg["name"]: n for n, lst in recon.items() for sp, rg in lst if sp.get("kind") == "cultures"}
     PRESENT = clio_ix["range"][1]
+    def story_whole(kind, item):  # a war or an empire story with its long texts, which tools/content.py keeps in data/story/<kind>-<id>.json
+        p = os.path.join(P, "data", "story", f"{kind}-{item['id']}.json")
+        if not os.path.exists(p): return item
+        d = json.load(open(p, encoding="utf-8")); details = d.pop("details", [])
+        item.update(d)
+        for e, t in zip(item.get("events", []), details):
+            if t is not None: e["detail"] = t
+        return item
+    C["wars"] = [story_whole("w", w) for w in C["wars"]]; C["journeys"] = [story_whole("e", j) for j in C["journeys"]]
     empires, wars, moments, journeys, eras = C["empires"], C["wars"], C["moments"], C["journeys"], C["eras"]
     eras = sorted(eras, key=lambda e: e["year"])
     moments = sorted(moments, key=lambda m: (m["year"], m["title"]))

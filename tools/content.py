@@ -104,6 +104,9 @@ def resolve_power(pw, year, act, by_profile):
     return best if score >= 0.5 else None
 
 
+STORY_LATER = {"w": ("summary", "casualties", "sources", "brief"), "e": ("summary", "sources")}  # the fields of a war and of an empire story kept out of content.json
+
+
 def main():
     all_names = set()
     for p in glob.glob(os.path.join(NAMES, "*.txt")):
@@ -431,8 +434,27 @@ def main():
         if isinstance(o, dict): return {k: public(v) for k, v in o.items() if k != "dataNote"}
         if isinstance(o, list): return [public(v) for v in o]
         return o
+    # The long texts of each war and each empire story (its summary, sources, brief, and the account of every event) go to a small
+    # file of their own, public/data/story/w-<id>.json and e-<id>.json, fetched when that story is opened. content.json, which the
+    # first map waits for, keeps what the lists, the search and "today in history" need: names, dates, places and event titles.
+    # tools/seo.py puts the two back together (story_whole) for the crawlable pages.
+    story_dir = os.path.join(ROOT, "public", "data", "story")
+    os.makedirs(story_dir, exist_ok=True)
+    for old in glob.glob(os.path.join(story_dir, "*.json")):
+        os.remove(old)
+    def light(items, later, prefix):
+        out_items = []
+        for it in public(items):
+            rest = {k: it[k] for k in later if k in it}
+            rest["details"] = [e.get("detail") for e in it.get("events", [])]
+            with open(os.path.join(story_dir, f"{prefix}-{it['id']}.json"), "w") as fh:
+                json.dump(rest, fh, ensure_ascii=False, separators=(",", ":"))
+            stub = {k: v for k, v in it.items() if k not in later}
+            stub["events"] = [{k: v for k, v in e.items() if k != "detail"} for e in it.get("events", [])]
+            out_items.append(stub)
+        return out_items
     with open(out, "w") as fh:
-        json.dump(public({"eras": eras, "empires": empires, "moments": moments, "journeys": journeys, "wars": wars}), fh, ensure_ascii=False, separators=(",", ":"))
+        json.dump({**public({"eras": eras, "empires": empires, "moments": moments}), "journeys": light(journeys, STORY_LATER["e"], "e"), "wars": light(wars, STORY_LATER["w"], "w")}, fh, ensure_ascii=False, separators=(",", ":"))
     with open(os.path.join(ROOT, "content", "empires.json"), "w") as fh:
         json.dump(empires, fh, ensure_ascii=False, indent=1)
     print(f"{len(eras)} eras, {len(empires)} empires, {len(moments)} moments, {len(journeys)} journeys, {len(wars)} wars, {len(seen_clio)} clio links, {len(seen_alias)} aliases -> {os.path.relpath(out, ROOT)} ({os.path.getsize(out) // 1024} KB)")

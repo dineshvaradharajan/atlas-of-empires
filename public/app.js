@@ -141,7 +141,7 @@ const rangeShort = (a, b) => (b >= S.range[1] ? `${shortYear(a)} to today` : a <
 const rangeText = (a, b) => `${shortYear(a)} to ${b >= S.range[1] ? "today" : shortYear(b)}`;
 // Period newspaper clippings and photos (events after 1850), each with its credit and licence.
 function mediaHTML(key) {
-  const items = (S.media || {})[key];
+  const items = mediaSet()[key];
   if (!items?.length) return "";
   const ok = (u) => /^https:\/\//i.test(u || "");
   return `<div class="media">${items.filter((m) => ok(m.image)).map((m) => `<figure class="mfig ${m.type === "newspaper" ? "news" : "photo"}">
@@ -324,23 +324,50 @@ let HOME_YEAR = 1683; // the year the atlas opens on: replaced at start-up by th
 const baseYearFor = (y) => S.baseYears.reduce((b, v) => (Math.abs(v - y) < Math.abs(b - y) ? v : b), S.baseYears[0]);
 const loadBase = (by) => memoW(S.bases, by, `data/${by}.json`, 8);
 
+// Loaded when first needed, not before the first map:
+// - pictures and reference maps (data/media.json, data/commons.json): the first page that asks gets an empty set and is drawn again
+//   when they arrive;
+// - the long texts of a war or an empire story (data/story/w-<id>.json, e-<id>.json: its summary, sources, brief and the account of
+//   each event), when the story is opened. content.json has the names, dates, places and event titles;
+// - terrain shading (data/relief.jpg), when it is switched on;
+// - the ice-age seabed and ice sheets (data/shelf.png, data/iceage.json), for years when the sea stood lower (up to ICE_UNTIL).
+const EMPTY = Object.freeze({}), LATER = {};
+function later(key, url) {
+  if (S[key]) return S[key];
+  LATER[key] ||= fetchJSON(url).then((d) => { S[key] = d; }).catch(() => { S[key] = {}; }).then(() => { if (S.items?.length) renderCol(); });
+  return EMPTY;
+}
+const mediaSet = () => later("media", "data/media.json"), commonsSet = () => later("commons", "data/commons.json");
+function ensureStory(kind, o) {
+  if (!o || o._whole) return Promise.resolve(o);
+  return (o._wholeP ||= fetchJSON(`data/story/${kind}-${encodeURIComponent(o.id)}.json`).then((d) => {
+    const { details, ...rest } = d; Object.assign(o, rest);
+    (details || []).forEach((t, i) => { if (t != null && o.events[i]) o.events[i].detail = t; });
+    o._whole = true; return o;
+  }).catch((e) => { o._wholeP = null; throw e; }));
+}
+const loadRelief = () => { if (GL) GL.loadTexture("relief", "data/relief.jpg"); };
+const ICE_UNTIL = -2000; // the sea-level curve reaches today's level here; the last ice-sheet outline is dated 6000 BCE
+function needIceAge() {
+  if (S.iceAsked) return; S.iceAsked = true;
+  if (GL) GL.loadTexture("shelf", "data/shelf.png"); // the seabed the lower sea left dry
+  fetchJSON("data/iceage.json").then((d) => { S.iceage = prepareIceage(d); draw(); if (S.items?.length) renderCol(); }).catch(() => {});
+  const im = new Image(); im.onload = () => { const c = document.createElement("canvas"); c.width = im.width; c.height = im.height; const x = c.getContext("2d", { willReadFrequently: true }); x.drawImage(im, 0, 0); S.shelfPix = { w: im.width, h: im.height, d: x.getImageData(0, 0, im.width, im.height).data }; }; im.src = V("data/shelf.png");
+}
+
 async function init() {
   readTheme();
-  const [clio, base, content, commons, corr, supps, media, sites] = await Promise.all([ // all at once, not one after another
+  const [clio, base, content, corr, supps, sites] = await Promise.all([ // all at once, not one after another; only what the first map and card need
     fetchJSON("data/clio/index.json"), fetchJSON("data/index.json"),
-    fetchJSON("data/content.json").catch(() => null), fetchJSON("data/commons.json").catch(() => ({})),
+    fetchJSON("data/content.json").catch(() => null),
     fetchJSON("data/corrections.json").catch(() => null), fetchJSON("data/supplements.json").catch(() => []),
-    fetchJSON("data/media.json").catch(() => ({})), fetchJSON("data/sites.json").catch(() => []),
+    fetchJSON("data/sites.json").catch(() => []),
   ]);
-  S.media = media;
-  S.clio = clio; S.range = [Math.min(EARLIEST, clio.range[0]), clio.range[1]]; S.baseYears = base.years; S.commons = commons;
+  S.clio = clio; S.range = [Math.min(EARLIEST, clio.range[0]), clio.range[1]]; S.baseYears = base.years;
   ERAS[ERAS.length - 1][1] = BREAKS[BREAKS.length - 1][0] = S.range[1]; // the last era and the time axis end at the present
   S.sites = sites;
   fetchJSON("data/physical.json").then(preparePhysical).then(() => draw()).catch(() => {}); // rivers, lakes, sea names: drawn once loaded
-  if (GL) { GL.loadTexture("relief", "data/relief.jpg"); GL.loadTexture("shelf", "data/shelf.png"); } // terrain shading; seabed for ice-age coasts
-  fetchJSON("data/iceage.json").then((d) => { S.iceage = prepareIceage(d); draw(); }).catch(() => {});
   fetchJSON("data/disputed.json").then((d) => { S.disputed = d.map((a) => ({ ...a, f: { type: "Feature", geometry: { type: "MultiPolygon", coordinates: a.coords.map(wind) }, properties: {} } })); draw(); }).catch(() => {});
-  { const im = new Image(); im.onload = () => { const c = document.createElement("canvas"); c.width = im.width; c.height = im.height; const x = c.getContext("2d", { willReadFrequently: true }); x.drawImage(im, 0, 0); S.shelfPix = { w: im.width, h: im.height, d: x.getImageData(0, 0, im.width, im.height).data }; }; im.src = V("data/shelf.png"); }
   if (corr) { S.corr = { realms: corr.realms || {}, base: corr.base || {} }; correctTimelines(); }
   S.supps = prepareSupplements(supps);
   if (content) {
@@ -356,8 +383,10 @@ async function init() {
   setupUI();
   setupDock();
   pickToday();
+  const todayP = S.today ? ensureStory("w", S.today.war).catch(() => {}) : null; // the home card quotes today's event: fetched alongside the first map
   S.restoring = true;
   await applyHash(parseHash(), true);
+  if (todayP) { await todayP; renderCol(); }
   if (!phone() && !S.sel && !S.war && !S.journey && !S.moment && !S.site && S.t.k <= (S.homeT?.k || 1) * 1.01) d3.select(canvas).call(S.zoom.transform, homeT()); // open on the world beside the card
   setTimeout(() => (S.restoring = false), 0);
   $("#loading").classList.add("done");
@@ -538,10 +567,13 @@ async function go(y, opts = {}) {
   S.year = y;
   const [chunk, base] = await Promise.all([loadChunk(chunkOf(y)), loadBase(baseYearFor(y))]);
   if (token !== S.token) return; // a newer year was requested while loading
-  S.base = base;
   const fs = chunk.features.filter((f) => f.properties.f <= y && y <= f.properties.t).map((f) => correctFeature(f, y)).filter(Boolean);
-  S.states = applySupplements(fs.filter((f) => !f.properties.people), y);
-  S.extraPeoples = fs.filter((f) => f.properties.people);
+  const states = applySupplements(fs.filter((f) => !f.properties.people), y), peoples = fs.filter((f) => f.properties.people);
+  await prepareShapes(base.features, [...states, ...peoples], () => token === S.token);
+  if (token !== S.token) return; // a newer year was requested while preparing
+  S.base = base;
+  S.states = states;
+  S.extraPeoples = peoples;
   renderAll();
   writeHash();
   if (GL && S.playing > 0) warmAhead(y);
@@ -549,6 +581,22 @@ async function go(y, opts = {}) {
   for (const k of [n[ci - 1], n[ci + 1]]) { // the neighbouring border files, ready for the next step through time
     if (k === undefined || S.chunks.has(k)) continue;
     if (dataWorker) dataWorker.warm(`data/clio/${k}.json`); else loadChunk(k).catch(() => {});
+  }
+}
+// A year far from the last one brings shapes that were never drawn: projecting and triangulating all of them in one go held the page
+// for 55 to 105 ms on a fast laptop, and several times that on a phone. They are prepared a few milliseconds at a time first, the
+// page staying responsive in between, and the map changes when they are ready. Shapes already drawn (a nearby year) cost nothing.
+const yieldNow = () => new Promise((r) => { const c = new MessageChannel(); c.port1.onmessage = () => r(); c.port2.postMessage(0); }); // a turn of the event loop, without a timer's delay
+async function prepareShapes(land, others, alive) {
+  const todo = [];
+  for (const f of [...land, ...others]) if (!pathCache.has(f) || !hitCache.has(f) || (GL && !GL.has(f))) todo.push(f);
+  if (todo.length < 12) return;
+  let end = performance.now() + 8;
+  for (const f of todo) {
+    pathOf(f);           // the outline the drawing layer clips and strokes with
+    if (GL) GL.build(f); // the triangles the map layer fills
+    hitGeo(f);           // the shape that says what is under a point: placing the names asks it
+    if (performance.now() > end) { await yieldNow(); if (!alive()) return; end = performance.now() + 8; }
   }
 }
 function warmAhead(y) { // during timeline playback, load and triangulate the next base map / border chunk before they are needed
@@ -635,6 +683,7 @@ function pickToday() {
 async function openTodayStory(step = 0, keepPlay) {
   const t = S.today; if (!t) return;
   if (!keepPlay) stopPlay();
+  await ensureStory("w", t.war).catch(() => {});
   const steps = todaySteps(); step = Math.max(0, Math.min(steps.length - 1, step));
   const st = steps[step];
   if (S.war?.id !== t.war.id) { S.from = null; await openWar(t.war.id, st.idx); }
@@ -830,18 +879,19 @@ const GL = (() => {
   function band(feature) {
     let g = bandGeo.get(feature);
     if (g) return g;
-    const h = bandUnits(), out = [];
-    for (const r of rings(feature)) {
-      for (let i = 0; i < r.length; i += 2) {
-        const j = (i + 2) % r.length, x1 = r[i], y1 = r[i + 1], x2 = r[j], y2 = r[j + 1], dx = x2 - x1, dy = y2 - y1, len = Math.hypot(dx, dy);
-        if (len > 0) {
-          const nx = (-dy / len) * h, ny = (dx / len) * h;
-          out.push(x1 + nx, y1 + ny, x1 - nx, y1 - ny, x2 + nx, y2 + ny, x2 + nx, y2 + ny, x1 - nx, y1 - ny, x2 - nx, y2 - ny);
-        }
-        out.push(x1 - h, y1 - h, x1 + h, y1 - h, x1 + h, y1 + h, x1 - h, y1 - h, x1 + h, y1 + h, x1 - h, y1 + h); // corner
+    // from the outline already projected for the border lines (four numbers a segment), not by projecting the shape a second time
+    const h = bandUnits(), ln = build(feature).line, out = new Float32Array(ln.length * 6); let o = 0;
+    for (let i = 0; i < ln.length; i += 4) {
+      const x1 = ln[i], y1 = ln[i + 1], x2 = ln[i + 2], y2 = ln[i + 3], dx = x2 - x1, dy = y2 - y1, len = Math.hypot(dx, dy);
+      if (len > 0) {
+        const nx = (-dy / len) * h, ny = (dx / len) * h;
+        out[o++] = x1 + nx; out[o++] = y1 + ny; out[o++] = x1 - nx; out[o++] = y1 - ny; out[o++] = x2 + nx; out[o++] = y2 + ny;
+        out[o++] = x2 + nx; out[o++] = y2 + ny; out[o++] = x1 - nx; out[o++] = y1 - ny; out[o++] = x2 - nx; out[o++] = y2 - ny;
       }
+      out[o++] = x1 - h; out[o++] = y1 - h; out[o++] = x1 + h; out[o++] = y1 - h; out[o++] = x1 + h; out[o++] = y1 + h; // corner
+      out[o++] = x1 - h; out[o++] = y1 - h; out[o++] = x1 + h; out[o++] = y1 + h; out[o++] = x1 - h; out[o++] = y1 + h;
     }
-    g = new Float32Array(out); bandGeo.set(feature, g);
+    g = o === out.length ? out : out.slice(0, o); bandGeo.set(feature, g);
     return g;
   }
   // A "layer" = one uploaded vertex buffer for a set of items, with per-item ranges.
@@ -1052,7 +1102,7 @@ const GL = (() => {
     gl.uniform2f(U.t, t.x, t.y); gl.uniform1f(U.k, t.k); gl.uniform2f(U.size, S.width, S.height); gl.uniform1f(U.dpr, S.dpr);
   }
   return {
-    loadTexture,
+    loadTexture, build, has: (f) => geo.has(f),
     resize(w, h, dpr) { for (const b of landBufs) gl.deleteBuffer(b); landBufs = []; cv.width = Math.round(w * dpr); cv.height = Math.round(h * dpr); geo = new WeakMap(); bandGeo = new WeakMap(); freeLayer(cur); freeLayer(prev); freeLayer(landLayer); cur = prev = landLayer = null; statics = null; mesh = null; },
     setItems,
     warm(features) { // triangulate shapes ahead of time, a few milliseconds at a time while the browser is idle
@@ -1068,16 +1118,17 @@ const GL = (() => {
     // stays responsive; the previous map stays on screen meanwhile) and onReady runs when they all are.
     ready(items, onReady) {
       if (cur && cur.items === items) return true;
-      const todo = [];
-      for (const it of items) { if (!geo.has(it.f)) todo.push(it.f); if (it.p.crop && !geo.has(it.p.crop)) todo.push(it.p.crop); }
-      if (todo.length < 12) return true; // a handful: quicker to do now than to wait
+      const todo = [], bands = []; // shapes to triangulate, then coast bands to lay out
+      for (const it of items) { if (!geo.has(it.f)) todo.push(it.f); if (it.p.crop && !geo.has(it.p.crop)) todo.push(it.p.crop); if (banded(it) && !bandGeo.has(it.f)) bands.push(it.f); }
+      if (todo.length + bands.length < 12) return true; // a handful: quicker to do now than to wait
       if (pending === items) return false;
       pending = items;
       const run = () => {
         if (pending !== items) return; // a newer map took over
         const end = performance.now() + 6;
         while (todo.length && performance.now() < end) build(todo.pop());
-        if (todo.length) setTimeout(run, 0); else { pending = null; onReady(); }
+        while (!todo.length && bands.length && performance.now() < end) band(bands.pop());
+        if (todo.length || bands.length) setTimeout(run, 0); else { pending = null; onReady(); }
       };
       setTimeout(run, 0);
       return false;
@@ -1377,6 +1428,7 @@ function scheduleDraw() { // at most one redraw per screen frame, however many z
 }
 function draw() {
   if (S.drawRaf) { cancelAnimationFrame(S.drawRaf); S.drawRaf = 0; } // a direct draw makes a pending one redundant
+  if (S.year <= ICE_UNTIL && !S.iceAsked) needIceAge();
   if (!S.items.length || !sphere2d) return;
   if (GL) return drawGL();
   const { t } = S;
@@ -2427,7 +2479,7 @@ function realmHTML() {
   const peak = r.tl.reduce((m, row) => (row[2] > m[2] ? row : m));
   const end = r.tl[r.tl.length - 1][1];
   const span = `${shortYear(r.tl[0][0])} – ${end >= S.range[1] ? "today" : shortYear(end)}`;
-  const media = S.commons[r.wiki] || (emp?.wiki && S.commons[emp.wiki]);
+  const media = commonsSet()[r.wiki] || (emp?.wiki && commonsSet()[emp.wiki]);
   const now = activeFeats(key);
   const alive = end >= S.range[1] - 1;
   let h = S.placeBack ? cardHead(S.placeBack.name || "This spot", "", "back-place") : cardHead(`The world in ${plainYear(y)}`, "", "close");
@@ -2464,7 +2516,7 @@ function realmHTML() {
   const jr = journeyForRealm(key);
   if (jr) h += `<button class="pillbtn dark block" data-journey="${esc(jr.id)}">${I.book}Follow ${esc(jr.name)} through its history</button>`;
 
-  const lead = emp && S.media[`empire:${emp.id}`]?.[0]; // the picture comes after who ruled this spot, so that list is seen first
+  const lead = emp && mediaSet()[`empire:${emp.id}`]?.[0]; // the picture comes after who ruled this spot, so that list is seen first
   if (lead) h += `<figure class="lead"><img src="${safeUrl(lead.image)}" alt="${esc(lead.caption)}" loading="lazy"><figcaption>${esc(lead.caption)} <a href="${safeUrl(lead.page)}" target="_blank" rel="noopener">${esc(lead.credit)} · ${esc(lead.license)}</a></figcaption></figure>`;
   h += `<h3 class="sec">Territory through time</h3>${extentChart(r)}
     <label class="toggle"><input type="checkbox" id="ghostToggle" ${S.showGhost ? "checked" : ""}> Outline greatest extent on the map</label>`;
@@ -2477,7 +2529,7 @@ function realmHTML() {
       <figcaption>${esc(media.desc || media.file.replace(/^File:/, ""))}<br>${esc(media.artist || "Unknown author")} · ${media.licenseUrl ? `<a href="${safeUrl(media.licenseUrl)}" target="_blank" rel="noopener">${esc(media.license)}</a>` : esc(media.license)} · <a href="${safeUrl(media.page)}" target="_blank" rel="noopener">Wikimedia Commons</a></figcaption></figure>`;
   }
   if (emp?.rulers?.length) {
-    const pic = (i, x) => { const m = S.media[`ruler:${emp.id}:${i}`]?.[0]; return m && m.caption.startsWith(x.name) ? m : null; }; // index-keyed: the name must still match
+    const pic = (i, x) => { const m = mediaSet()[`ruler:${emp.id}:${i}`]?.[0]; return m && m.caption.startsWith(x.name) ? m : null; }; // index-keyed: the name must still match
     const pics = emp.rulers.map((x, i) => pic(i, x));
     const any = pics.some(Boolean);
     h += `<h3 class="sec">Notable rulers</h3><ul class="rlist${any ? " withpic" : ""}">`;
@@ -2580,9 +2632,9 @@ function extentChart(r) {
 function sourcesHTML() { // the About page (#about; #sources still opens it)
   const L = (url, text) => `<a href="${safeUrl(url)}" target="_blank" rel="noopener">${text}</a>`;
   const n = (x) => x.toLocaleString("en");
-  const leads = Object.keys(S.media || {}).filter((k) => k.startsWith("empire:")).length;
-  const media = Object.keys(S.media || {}).filter((k) => k.startsWith("moment:")).length;
-  const portraits = Object.keys(S.media || {}).filter((k) => k.startsWith("ruler:")).length;
+  const leads = Object.keys(mediaSet()).filter((k) => k.startsWith("empire:")).length;
+  const media = Object.keys(mediaSet()).filter((k) => k.startsWith("moment:")).length;
+  const portraits = Object.keys(mediaSet()).filter((k) => k.startsWith("ruler:")).length;
   const sitePics = (S.sites || []).filter((x) => x.image?.image).length;
   return `${cardHead("Back to the map", "", "world")}
     ${kick("About")}<h1 class="ttl l">The World Atlas</h1>
@@ -2613,7 +2665,7 @@ function sourcesHTML() { // the About page (#about; #sources still opens it)
 
     <h3 class="sec">Pictures</h3>
     <ol class="sources-list">
-      <li><b>Wikimedia Commons</b>: ${n(Object.keys(S.commons || {}).length)} reference maps, ${n(leads)} empire pictures and ${n(sitePics)} site photos, each credited with its author and licence where it appears (CC BY, CC BY-SA, CC0 or public domain).</li>
+      <li><b>Wikimedia Commons</b>: ${n(Object.keys(commonsSet()).length)} reference maps, ${n(leads)} empire pictures and ${n(sitePics)} site photos, each credited with its author and licence where it appears (CC BY, CC BY-SA, CC0 or public domain).</li>
       <li><b>Period photos and newspapers</b> (${n(media)} moments): Wikimedia Commons, the Library of Congress (Chronicling America), the US National Archives, UN Archives and the Internet Archive, each credited where shown.</li>
       <li><b>Ruler portraits</b> (${n(portraits)}): lead images of Wikipedia articles, matched through Wikidata, freely licensed on Wikimedia Commons and credited per portrait.</li>
     </ol>
@@ -2670,6 +2722,7 @@ const evTime = (e) => (e.year >= 0 ? fracDate(e.date, e.year) : e.year);
 async function openWar(id, idx = 0, chap = null) {
   const w = warById(id);
   if (!w) return;
+  await ensureStory("w", w).catch(() => {}); // its summary, brief and the account of each event
   noteFrom();
   stopPlay();
   if (S.journey) exitJourney();
@@ -3424,6 +3477,7 @@ async function featuresOf(j, y) {
 async function openJourney(id, year) {
   const j = journeyById(id);
   if (!j) return;
+  await ensureStory("e", j).catch(() => {});
   noteFrom();
   stopPlay();
   if (S.war) exitWar();
@@ -3496,7 +3550,7 @@ function kingProfile(j, r) { // the empire profile's entry for this king, matche
   const nm = reignName(r).toLowerCase();
   const i = prof.rulers.findIndex((x) => { const a = x.name.toLowerCase(); return a === nm || nm.startsWith(a + " ") || a.startsWith(nm + " ") || nm.startsWith(a + ","); });
   if (i < 0) return {};
-  const m = S.media[`ruler:${prof.id}:${i}`]?.[0];
+  const m = mediaSet()[`ruler:${prof.id}:${i}`]?.[0];
   return { note: prof.rulers[i].note, pic: m && m.caption.startsWith(prof.rulers[i].name) ? m : null };
 }
 function kingHTML(j) {
@@ -4642,9 +4696,9 @@ function setupUI() {
   $("#labelsBtn").onchange = (ev) => { S.labels = ev.target.checked; draw(); };
   $("#peoplesBtn").onchange = (ev) => { S.peoples = ev.target.checked; buildItems(); draw(); };
   try { S.relief = localStorage.getItem("atlas.terrain") === "on"; } catch { S.relief = false; } // off unless the viewer turned it on
-  $("#terrainBtn").checked = !!S.relief;
+  $("#terrainBtn").checked = !!S.relief; if (S.relief) loadRelief();
   if (!GL) $("#terrainRow").hidden = true; // shading needs WebGL
-  $("#terrainBtn").onchange = (ev) => { S.relief = ev.target.checked; try { localStorage.setItem("atlas.terrain", S.relief ? "on" : "off"); } catch {} draw(); };
+  $("#terrainBtn").onchange = (ev) => { S.relief = ev.target.checked; if (S.relief) loadRelief(); try { localStorage.setItem("atlas.terrain", S.relief ? "on" : "off"); } catch {} draw(); };
   $("#compare").addEventListener("click", (ev) => { if (ev.target.closest("[data-act=compare]")) { S.compare = false; syncChrome(); renderDock(); } });
 
   const onStoryClick = async (ev) => { // clicks inside the card, the side card and the map popover

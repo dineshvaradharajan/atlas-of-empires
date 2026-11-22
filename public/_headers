@@ -1,5 +1,5 @@
 /*
-  Content-Security-Policy: default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: blob: https://upload.wikimedia.org https://thumb.wikimedia.org https://iiif.archive.org https://*.loc.gov; connect-src 'self' https://cloudflareinsights.com; worker-src 'self' blob:; frame-ancestors 'none'; base-uri 'self'; form-action 'none'; object-src 'none'; upgrade-insecure-requests
+  Content-Security-Policy: default-src 'self'; script-src 'self' https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: blob: https://upload.wikimedia.org https://thumb.wikimedia.org https://iiif.archive.org https://*.loc.gov; connect-src 'self' https://cloudflareinsights.com; worker-src 'self' blob:; frame-ancestors 'none'; base-uri 'self'; form-action 'none'; object-src 'none'; upgrade-insecure-requests
   X-Content-Type-Options: nosniff
   X-Frame-Options: DENY
   Referrer-Policy: strict-origin-when-cross-origin
@@ -14,6 +14,16 @@
   Cache-Control: public, max-age=31536000, immutable
 /data/*
   Cache-Control: public, max-age=31536000, immutable
+
+# Fonts and the map libraries, served from the site. A font file never changes under its name (a new version gets a new
+# name); the libraries carry ?v=<hash of the file> on their script tags (tools/vendor.sh)
+/fonts/*.woff2
+  Cache-Control: public, max-age=31536000, immutable
+/vendor/*
+  Cache-Control: public, max-age=31536000, immutable
+# The font stylesheets have no version on their links, so a day
+/fonts/*.css
+  Cache-Control: public, max-age=86400
 
 # Icons change rarely
 /*.png
