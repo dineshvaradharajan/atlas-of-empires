@@ -54,7 +54,7 @@ a:hover { color: var(--highlight); }
 svg { flex: none; }
 #app svg:not(.chart-s):not(.pc) { fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
 body.sdock { --dock-h: 144px; }
-body.jdock { --dock-h: 172px; }
+body.jdock { --dock-h: 112px; } /* an empire's story: territory, events and rulers in one 76 px lane (it was 144) */
 body.wdock { --dock-h: 84px; }
 body.nodock { --dock-h: 0px; --dock-b: 0px; }
 
@@ -576,23 +576,25 @@ body.sdock #dock { border-radius: 24px; }
 .ecap.l { transform: translateX(-10px); }
 .ecap.r { transform: translateX(calc(-100% + 10px)); }
 /* the empire timeline with its territory curve: area on top, events on its baseline, rulers below */
-.jt .jarea { position: absolute; left: 0; top: 0; width: 100%; height: 82px; overflow: visible; }
+.jt .jarea { position: absolute; left: 0; top: 10px; width: 100%; height: 34px; overflow: visible; } /* territory, as a band above the line */
 .jt .jarea .fillp { fill: var(--highlight); fill-opacity: .2; }
 .jt .jarea .linep { fill: none; stroke: var(--highlight); stroke-width: 2; vector-effect: non-scaling-stroke; }
-.jt .jpeak { position: absolute; right: 0; top: -2px; font: 500 12px var(--sans); color: var(--ink-3); pointer-events: none; }
-.jt .jpeak.l { left: 0; right: auto; top: 30px; }
-.jt .erail, .jt .edone { top: 82px; height: 3px; }
+.jt .jpeak { position: absolute; right: 0; top: -6px; font: 500 12px var(--sans); color: var(--ink-3); pointer-events: none; }
+.jt .jpeak.l { left: 0; right: auto; top: 18px; }
+.jt .erail, .jt .edone { top: 44px; height: 3px; }
 .jt .erail { background: var(--ink); opacity: .25; }
 .jt .ev { top: 76px; }
 .jt .ev.on { top: 73px; }
-.jt .ehead { top: 0; height: 88px; }
+.jt .ehead { top: 2px; height: 72px; }
 .jt .ecap { top: 98px; display: none; }
-.lane.jt { height: 144px; }
+.lane.jt { height: 76px; }
+body.jdock .eplay { gap: 6px; } body.jdock .eplay .play { width: 52px; height: 52px; border-radius: 26px; } body.jdock .eplay .play svg { width: 18px; height: 18px; }
+body.jdock .etl { padding: 10px 16px 10px 14px; }
 .cname { position: absolute; top: 31px; margin-left: -12px; padding-left: 2px; font: 500 11px/14px var(--sans); color: var(--ink-3); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; pointer-events: none; }
 .cname.on { color: var(--ink); font-weight: 700; }
 /* events: map pins standing on the baseline (kings are crowns below it) */
-.jt .ev, .jt .ev.on { top: 56px; width: 22px; height: 26px; margin-left: -11px; border: 0; border-radius: 0; background: none; color: var(--ink-3); display: grid; place-items: end center; }
-.jt .ev svg { width: 22px; height: 26px; }
+.jt .ev, .jt .ev.on { top: 24px; width: 18px; height: 22px; margin-left: -9px; border: 0; border-radius: 0; background: none; color: var(--ink-3); display: grid; place-items: end center; }
+.jt .ev svg { width: 18px; height: 22px; }
 #app .jt .ev svg path { fill: var(--bg); stroke: currentColor; stroke-width: 2; }
 #app .jt .ev svg circle { fill: currentColor; stroke: none; }
 #app .jt .ev.seen svg path { fill: var(--ink); stroke: var(--ink); }
@@ -602,10 +604,18 @@ body.sdock #dock { border-radius: 24px; }
 #app .jt .ev.on svg circle { fill: #fff; }
 .jt .ev.on { z-index: 3; transform: scale(1.25); transform-origin: 50% 100%; }
 .jt .ev:hover { transform: scale(1.2); transform-origin: 50% 100%; color: var(--ink); z-index: 4; }
-.jt .ev::after { bottom: 30px; }
+.jt .ev::after { bottom: 26px; }
 .jt .ev.l::after { left: 0; transform: none; }
 .jt .ev.r::after { left: auto; right: 0; transform: none; }
-.jt .crowns { position: absolute; left: 0; right: 0; top: 96px; height: 30px; }
+.jt .crowns { position: absolute; left: 0; right: 0; top: 54px; height: 20px; }
+.reign { position: absolute; top: 0; height: 20px; padding: 0 6px; border: 0; border-left: 2px solid var(--bg); border-radius: 4px; background: var(--chip); color: var(--ink-3); font: 500 11px/20px var(--sans); text-align: left; white-space: nowrap; cursor: pointer; }
+.reign span { display: block; overflow: hidden; text-overflow: ellipsis; }
+.reign:hover { background: var(--rule-2); color: var(--ink); z-index: 4; }
+.reign.on { min-width: max-content; background: var(--ink); color: var(--bg); font-weight: 700; z-index: 3; }
+.reign.on span { overflow: visible; }
+.reign::after { content: attr(data-label); display: none; position: absolute; bottom: 26px; left: 50%; transform: translateX(-50%); padding: 5px 10px; border-radius: 6px; background: var(--ink); color: var(--bg); font: 600 13px var(--sans); white-space: nowrap; pointer-events: none; z-index: 6; }
+.reign.l::after { left: 0; transform: none; } .reign.r::after { left: auto; right: 0; transform: none; }
+.reign:hover::after, .reign:focus-visible::after { display: block; }
 .crown { position: absolute; top: 0; width: 28px; height: 28px; margin-left: -14px; padding: 0; display: grid; place-items: center; border: 0; border-radius: 14px; background: var(--bg); color: var(--ink-3); }
 .crown svg { width: 18px; height: 18px; }
 .crown::before { content: ""; position: absolute; left: 50%; top: -11px; width: 1px; height: 11px; background: var(--rule-2); }
@@ -666,7 +676,7 @@ body.sdock #dock { border-radius: 24px; }
   /* the bar of sections, floating at the bottom; it steps aside during a story, a search and the year sheet */
   body[data-view="war"], body[data-view="journey"], body[data-view="tstory"], body[data-view="moment"], body.playing, body.searching, body.years { --tab-h: 0px; }
   body.sdock { --dock-ph: 128px; }
-  body.jdock { --dock-ph: 166px; }
+  body.jdock { --dock-ph: 104px; }
   body.wdock { --dock-ph: 82px; }
   #bar { top: calc(12px + env(safe-area-inset-top)); left: 16px; right: 72px; }
   #bar .tabs, #bar .sitesw { display: none; }
@@ -742,7 +752,8 @@ body.sdock #dock { border-radius: 24px; }
   .eplay .play { width: 48px; height: 48px; }
   .eyear { font-size: 14px; }
   .lane { height: 100px; }
-  .lane.jt { height: 142px; }
+  .lane.jt { height: 76px; }
+  body.jdock .eplay .play { width: 44px; height: 44px; }
   .jt .jpeak { font-size: 11px; }
   .rg { padding: 0 5px; }
   .rg:not(.on) b, .rg:not(.on) small { visibility: hidden; }

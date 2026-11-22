@@ -4359,22 +4359,20 @@ function renderDock() {
     h = storyDock(parts, chips, "Play the war", cy, "Years of the war", "Events this year");
   } else if (mode === "journey") { // the empire as one timeline: its rulers as named spans, its events as markers, one Play
     const j = S.journey, ei = jEventIdx(j), seen = new Set(P.e[j.id] || []), X = jx(j);
-    const cur = j.reigns.length ? reignOf(j, ei >= 0 ? j.events[ei].year : S.year) : -1;
-    const rgs = j.reigns.map((r, i) => { const x = X(Math.max(r.from, j.span[0])), lab = `${reignName(r)} · ${shortYear(r.from)}–${shortYear(r.to)}`; // a crown where each king's reign begins; the name on hover
-      return `<button class="crown${i === cur ? " on" : ""}${+x > 88 ? " r" : +x < 12 ? " l" : ""}" data-reign="${i}" style="left:${x}%" aria-label="${esc(reignName(r))}, ${shortYear(r.from)} to ${shortYear(r.to)}" data-label="${esc(lab)}">${I.crown}</button>`; }).join("");
+    const cur = S.jKing != null && j.reigns[S.jKing] ? S.jKing : j.reigns.length ? reignOf(j, ei >= 0 ? j.events[ei].year : S.year) : -1; // a ruler opened from the band stays the one marked
+    // the rulers as one slim band under the line: a segment for each reign, as long as it lasted, with the ruler's name inside it
+    // (cut short with … when the reign is short; the current ruler's name is always shown whole; every name on hover)
+    const rgs = j.reigns.map((r, i) => { const a = +X(Math.max(r.from, j.span[0])), b = +X(Math.min(r.to, j.span[1])), lab = `${reignName(r)} · ${shortYear(r.from)}–${shortYear(r.to)}`;
+      return `<button class="reign${i === cur ? " on" : ""}${a > 80 ? " r" : a < 12 ? " l" : ""}" data-reign="${i}" style="left:${a}%;width:${Math.max(.35, b - a).toFixed(2)}%" aria-label="${esc(reignName(r))}, ${shortYear(r.from)} to ${shortYear(r.to)}" data-label="${esc(lab)}"><span>${esc(reignName(r))}</span></button>`; }).join("");
     const evs = j.events.map((e, i) => { const t = evText(e), when = t.when || shortYear(e.year);
       const x = X(e.year); return `<button class="ev${i === ei ? " on" : seen.has(i) ? " seen" : ""}${+x > 88 ? " r" : +x < 12 ? " l" : ""}" data-jev="${i}" style="left:${x}%" aria-label="${esc(when)}: ${esc(t.text)}" data-label="${esc(when)} · ${esc(short(t.text, 40))}">${I.evpin}</button>`; }).join("");
-    // each king's name under his crown, in the room up to the next crown (cut short with … when they are close)
-    const starts = j.reigns.map((r) => +X(Math.max(r.from, j.span[0])));
-    const cnames = j.reigns.map((r, i) => { const gap = (i + 1 < starts.length ? Math.max(starts[i + 1], starts[i]) : 100 + 1.5) - starts[i];
-      return `<span class="cname${i === cur ? " on" : ""}" aria-hidden="true" style="left:${starts[i]}%;max-width:calc(${gap.toFixed(2)}% - 2px)">${esc(reignName(r))}</span>`; }).join("");
     let cap = "";
     if (ei >= 0) { const e = j.events[ei], t = evText(e), x = X(e.year); cap = `<div class="ecap${x < 18 ? " l" : x > 82 ? " r" : ""}" style="left:${x}%"><b>${esc(t.when || shortYear(e.year))}</b> ${esc(short(t.text, 56))}</div>`; }
     const A = journeyCurve(j);
     h = `<div class="etl"><div class="eplay"><button class="play" id="play" aria-label="Play the whole empire">${playSvg(S.playing)}</button><b class="eyear"></b></div>
       <div class="lane jt" role="group" aria-label="Timeline of ${esc(j.name)}: territory, rulers and events">
       ${A.max ? `<svg class="jarea" viewBox="0 0 1000 100" preserveAspectRatio="none" aria-hidden="true"><path class="fillp" d="${A.d}"/><path class="linep" d="${A.line}"/></svg><span class="jpeak">Largest: ${mkm(A.max)} million km², ${shortYear(A.peak)}</span>` : `<span class="jpeak l">No borders on the map for this empire</span>`}
-      <span class="erail"></span><span class="edone"></span>${evs}<span class="ehead"></span>${cap}<div class="crowns" role="group" aria-label="Kings of ${esc(j.name)}">${rgs}${cnames}</div></div>
+      <span class="erail"></span><span class="edone"></span>${evs}<span class="ehead"></span>${cap}<div class="crowns" role="group" aria-label="Rulers of ${esc(j.name)}">${rgs}</div></div>
       <button class="pillbtn" data-act="world-in" data-year="${ei >= 0 ? j.events[ei].year : S.year}">${I.globe}The world in ${shortYear(ei >= 0 ? j.events[ei].year : S.year)}</button></div>`;
   } else if (mode === "moment") {
     const m = S.moment, cur = ageOf(m.year);
@@ -4428,7 +4426,7 @@ function updateDock() {
     const hd = el.querySelector(".ehead"); if (hd) hd.style.left = `${x}%`;
     const dn = el.querySelector(".edone"); if (dn) dn.style.width = `${x}%`;
     const ey = el.querySelector(".eyear"); if (ey) ey.innerHTML = yearLabel(S.year);
-    if (S.playing) el.querySelectorAll(".crown").forEach((b, i) => b.classList.toggle("on", i === cur));
+    if (S.playing) el.querySelectorAll(".reign").forEach((b, i) => b.classList.toggle("on", i === cur));
     return;
   }
   if (el.dataset.mode !== "time") return;
@@ -4525,7 +4523,7 @@ function setupDock() {
     if (b.dataset.tstep != null) return openTodayStory(+b.dataset.tstep);
     if (b.dataset.chap != null && story()) { stopPlay(); return openChapter(+b.dataset.chap); }
     if (b.dataset.wev != null && S.war) { stopPlay(); return goWarEvent(+b.dataset.wev); }
-    if (b.dataset.reign != null && S.journey) return openKing(+b.dataset.reign); // a crown: that king
+    if (b.dataset.reign != null && S.journey) return openKing(+b.dataset.reign); // a reign: that ruler
     if (b.dataset.jev != null && S.journey) { stopPlay(); const i = +b.dataset.jev; S.jEvent = i; S.jKing = null; return go(S.journey.events[i].year); }
     if (b.dataset.age != null) { const ms = ageMoments(+b.dataset.age); if (ms.length) return openMoment((ms.find((m) => !P.m.includes(m.id)) || ms[0]).id); }
     if (b.dataset.moment) return openMoment(b.dataset.moment);
