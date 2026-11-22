@@ -376,6 +376,7 @@ async function init() {
     S.content.journeys = content.journeys || [];
     S.content.wars = content.wars || [];
     for (const e of content.empires || []) for (const n of e.clio || []) S.content.byClio[n] = e;
+    S.content.empIds = new Set((content.empires || []).map((e) => e.id));
   }
   setupMap();
   setupChart();
@@ -2179,7 +2180,11 @@ function syncChrome() {
   document.body.dataset.view = S.tstory && S.war ? "tstory" : S.war ? "war" : S.journey ? "journey" : S.view; // phones style each page's card
 }
 // Card building blocks.
-const cardHead = (back, right = "", act = "back") => `<div class="chead">${back ? `<button class="back" data-act="${act}">${I.left}${esc(back)}</button>` : "<span></span>"}${right ? `<span class="count">${right}</span>` : ""}</div>`;
+// The plain page of what the card shows (a war, a moment, an empire's story): the address to share, because a link into the map
+// (#w/...) always previews as the home page, while the plain page has its own picture and text, and opens the map at this view.
+const sharePage = () => (S.war ? { path: `wars/${S.war.id}/`, title: S.war.name } : S.view === "moment" && S.moment ? { path: `moments/${S.moment.id}/`, title: S.moment.title }
+  : S.journey ? { path: `empires/${S.content.empIds?.has(S.journey.profile) ? S.journey.profile : S.journey.id}/`, title: S.journey.name } : null);
+const cardHead = (back, right = "", act = "back") => `<div class="chead">${back ? `<button class="back" data-act="${act}">${I.left}${esc(back)}</button>` : "<span></span>"}${right ? `<span class="count">${right}</span>` : ""}${sharePage() ? `<button class="hshare" data-act="share-page" aria-label="Share this page">${I.share}</button>` : ""}</div>`;
 const progBar = (n, total) => `<div class="prog" role="img" aria-label="${n} of ${total}"><i style="width:${total ? (100 * n) / total : 0}%"></i></div>`;
 const kick = (t, grey) => `<div class="kicker${grey ? " grey" : ""}">${t}</div>`;
 const navRow = (prevAttr, next) => `<div class="navrow"><button class="round" ${prevAttr || "disabled"} aria-label="Earlier">${I.left}</button>${next
@@ -4733,6 +4738,12 @@ function setupUI() {
       if (act === "pickplace") { S.picking = true; canvas.classList.add("picking"); return toast("Click any spot on the map to see who ruled it."); }
       if (act === "myplace") { const mp = myPlace(); if (mp) return openPlace(mp.ll, { name: mp.name, from: "today" }); S.picking = true; canvas.classList.add("picking"); return toast("Click any spot on the map to see who ruled it."); }
       if (act === "continue") return continueStory();
+      if (act === "share-page") {
+        const sp = sharePage(); if (!sp) return;
+        const url = location.origin + "/" + sp.path, text = `${sp.title}, on The World Atlas`;
+        if (navigator.share) return navigator.share({ title: sp.title, text, url }).catch(() => {});
+        return navigator.clipboard?.writeText(url).then(() => toast("Link copied"), () => toast(url));
+      }
       if (act === "share") {
         // The link is to the atlas's home page, which shows this page in a frame (so not to /world, this page on its own), and it
         // opens today's story at its first step: the home page itself opens on the year, not on the story.

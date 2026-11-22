@@ -29,8 +29,9 @@
     /* the timeline of a Moments story (ages, and the moments in the current age), drawn like a war's: a round play button, one slim
        segment per age with its name under it, the moments of this age as small badges above the bar, and the way out at the right */
     @media (min-width: 761px) {
-      body.sdock { --dock-h: 92px; }
-      body.sdock #dock { border-radius: 30px; }
+      /* only that timeline: an empire's story (body.jdock) and a war told in stages (body.wdock) share the class, and keep their own heights */
+      body.sdock:not(.jdock):not(.wdock) { --dock-h: 92px; }
+      body.sdock:not(.jdock):not(.wdock) #dock { border-radius: 30px; }
       .sdock { display: grid; grid-template-columns: 44px minmax(0, 1fr) auto; grid-template-rows: 24px auto; column-gap: 16px; row-gap: 8px; align-items: center; padding: 10px 14px 8px 18px; }
       .sdock .row2 { display: contents; }
       .sdock .pillplay { grid-column: 1; grid-row: 1 / span 2; width: 44px; height: 44px; padding: 0; justify-content: center; }

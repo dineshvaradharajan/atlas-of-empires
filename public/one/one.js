@@ -173,10 +173,14 @@ function layout() {
 }
 function syncChrome() { // this page's brand, switch and card sit exactly where World history's brand, site switch and card are, at any window size
   if (PH()) return;
+  // the look switch sits just right of the brand, wherever the brand ends: measured on this page, so it is right before the frame
+  // underneath has loaded and after the brand's font arrives (it used to wait for the frame, and sat on the brand until then)
+  const placeSwitch = () => { const r = $(".brand").getBoundingClientRect(); if (r.width) $("#themeBtn").style.setProperty("--theme-x", Math.round(r.right + 12) + "px"); };
+  placeSwitch();
   try {
     const d = histWin().document, R = (q) => { const e = d.querySelector(q); const r = e && e.getBoundingClientRect(); return r && r.width ? r : null; };
     const b = R("#bar .brand"), sw = R("#bar .sitesw"), col = R("#col");
-    if (b) { const el = $(".brand"); el.style.width = b.width + "px"; el.style.height = b.height + "px"; $("#themeBtn").style.setProperty("--theme-x", 24 + b.width + 12 + "px"); }
+    if (b) { const el = $(".brand"); el.style.width = b.width + "px"; el.style.height = b.height + "px"; placeSwitch(); }
     const tb = R("#bar .tabs"); if (tb) $("#tabs").style.left = tb.left + tb.width / 2 - 24 + "px"; // the sections, centred where World history's are
     if (col) { const narrow = S.flat && S.mode === "deep" && innerWidth < 1200; // Flat view in a small window: a narrower Earth card, so the map has the width
       for (const el of [$("#card"), $("#story")]) { el.style.left = col.left + "px"; el.style.top = col.top + "px"; el.style.width = (narrow && el.id === "card" ? Math.min(col.width, Math.max(280, Math.round(innerWidth * .3))) : col.width) + "px"; } }
@@ -395,6 +399,11 @@ function histWhole() { // the whole world in the frame, so the copy covers the g
 function histFrame() { // the flat map framed for this page, on both sides of the join
   try {
     const iw = histWin(), d = iw.document, c = d.querySelector("#map"), r = c.getBoundingClientRect(); if (!r.width || !iw.d3) return;
+    // after a change of look (which reloads the page): the map exactly where it was left, not this page's own framing
+    let keep = null; try { keep = JSON.parse(sessionStorage.getItem("one.keep") || "null"); sessionStorage.removeItem("one.keep"); } catch (e) {}
+    if (keep && keep.w === innerWidth && keep.h === innerHeight && keep.k > 0) {
+      c.__zoom = iw.d3.zoomIdentity.translate(keep.x, keep.y).scale(keep.k);
+      c.dispatchEvent(new iw.WheelEvent("wheel", { deltaY: .01, clientX: r.width / 2, clientY: r.height / 2, bubbles: true, cancelable: true })); HT.changed = performance.now(); return; }
     const edge = []; for (let lon = -180; lon <= 180; lon += 5) edge.push([lon, 84], [lon, -57]);
     for (let lat = -57; lat <= 84; lat += 3) edge.push([-180, lat], [180, lat]);
     const small = r.width < 600, pj = iw.d3.geoNaturalEarth1().fitExtent(r.width <= 760 ? [[4, 72], [r.width - 4, Math.max(220, r.height - 300)]] : [[small ? 4 : 10, small ? 4 : 8], [r.width - (small ? 40 : 56), r.height - (small ? 4 : 30)]], { type: "MultiPoint", coordinates: edge });
@@ -613,7 +622,10 @@ function wire() {
     if (ST) storyEnd(); if (S.mode === "hist" && $("#app").dataset.app) histExplore(); // Explore: back to the map and the full timeline
   });
   $("#todayBtn").addEventListener("click", () => histTab("today"));
-  $("#themeBtn").addEventListener("click", () => { LOOK.toggle(); saveState(performance.now() + 1e4); location.reload(); }); // World history reads its colours when it starts; the address brings the page back to the same place
+  $("#themeBtn").addEventListener("click", () => { LOOK.toggle(); saveState(performance.now() + 1e4);
+    try { const c = histWin().document.querySelector("#map"), z = c && c.__zoom; // where the history map was panned and zoomed to
+      if (S.mode === "hist" && S.flat && z) sessionStorage.setItem("one.keep", JSON.stringify({ k: z.k, x: z.x, y: z.y, w: innerWidth, h: innerHeight })); } catch (e) {}
+    location.reload(); }); // World history reads its colours when it starts; the address brings the page back to the same place
   $("#sPlay").addEventListener("click", () => setPlaying(!S.playing));
   $("#sOut").addEventListener("click", () => storyEnd());
   $("#sdock").addEventListener("click", (e) => { const b = e.target.closest("[data-c]"); if (b) { setPlaying(false); storyGo(+b.dataset.c); } });
@@ -633,5 +645,6 @@ async function init() {
   leaves = D.units.filter((u) => !hasKids.has(u.id)).sort((a, b) => b.from - a.from);
   buildTimeline(); momentList(); layout(); wire(); window.PHONE?.init(); restoreState(); histInit(); renderCard();
   requestAnimationFrame(frame);
+  document.fonts?.ready.then(() => syncChrome()); // the brand is wider once its font is in
 }
 init().catch((e) => { console.error(e); document.body.insertAdjacentHTML("beforeend", '<p style="position:fixed;left:24px;bottom:130px;z-index:9">The prototype could not start. See the console.</p>'); });

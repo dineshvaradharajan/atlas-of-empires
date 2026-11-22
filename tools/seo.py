@@ -140,7 +140,7 @@ def page(path, title, description, body, crumbs=(), image=None, image_alt="", js
 <meta property="og:title" content="{esc(title)}">
 <meta property="og:description" content="{esc(description)}">
 <meta property="og:url" content="{esc(url)}">
-<meta property="og:image" content="{esc(image)}">
+<meta property="og:image" content="{esc(image)}">{'<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">' if image.startswith(SITE + "/og/") else ""}
 <meta property="og:image:alt" content="{esc(image_alt or title)}">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{esc(title)}">
@@ -338,6 +338,8 @@ def main():
         return item
     C["wars"] = [story_whole("w", w) for w in C["wars"]]; C["journeys"] = [story_whole("e", j) for j in C["journeys"]]
     empires, wars, moments, journeys, eras = C["empires"], C["wars"], C["moments"], C["journeys"], C["eras"]
+    def og_image(sec, id_):  # the share picture tools/og.mjs drew for this page (the map at that view, with a caption card), if there is one
+        return f"{SITE}/og/{sec}/{id_}.jpg" if os.path.exists(os.path.join(P, "og", sec, f"{id_}.jpg")) else None
     eras = sorted(eras, key=lambda e: e["year"])
     moments = sorted(moments, key=lambda m: (m["year"], m["title"]))
     sites = sorted(sites, key=lambda s: (s["built"] if s["built"] is not None else PRESENT, s["name"]))
@@ -495,8 +497,9 @@ def main():
             about["sameAs"] = same
         ld = article_ld(path, f"{e['name']} ({when})", desc, lead and lead["image"], about,
                         {"temporalCoverage": f"{iso(a)}/{iso(b) if b is not None and b < PRESENT else '..'}"})
+        oj = journey_of.get(e["id"]) or e.get("journeyOnly"); og = oj and og_image("empires", oj["id"])
         emit("empires", path, title, desc, page(path, title, desc, body, [("Empires", "/empires/"), (e["name"], path)],
-                                                lead and lead["image"], lead and lead["caption"], [ld]), f"{e['name']} ({when})")
+                                                og or (lead and lead["image"]), None if og else lead and lead["caption"], [ld]), f"{e['name']} ({when})")
 
     # ---- wars
     for w in wars:
@@ -535,7 +538,7 @@ def main():
         if same:
             about["sameAs"] = same
         ld = article_ld(path, f"{w['name']} ({w['dateLabel']})", desc, None, about, {"temporalCoverage": f"{iso(a)}/{iso(b)}"})
-        emit("wars", path, title, desc, page(path, title, desc, body, [("Wars", "/wars/"), (w["name"], path)], jsonld=[ld]),
+        emit("wars", path, title, desc, page(path, title, desc, body, [("Wars", "/wars/"), (w["name"], path)], image=og_image("wars", w["id"]), jsonld=[ld]),
              f"{w['name']} ({w['dateLabel']})")
 
     # ---- moments
@@ -561,8 +564,9 @@ def main():
         about = {"@type": "Event", "name": m["title"], "startDate": iso(m["year"]),
                  "location": {"@type": "Place", "name": m["place"], "geo": {"@type": "GeoCoordinates", "longitude": m["lonlat"][0], "latitude": m["lonlat"][1]}}}
         ld = article_ld(path, f"{m['title']} ({m['yearLabel']})", desc, img and img["image"], about, {"temporalCoverage": iso(m["year"])})
+        og = og_image("moments", m["id"])
         emit("moments", path, title, desc, page(path, title, desc, body, [("Moments", "/moments/"), (m["title"], path)],
-                                                img and img["image"], img and img["caption"], [ld]), f"{m['title']} ({m['yearLabel']})")
+                                                og or (img and img["image"]), None if og else img and img["caption"], [ld]), f"{m['title']} ({m['yearLabel']})")
 
     # ---- eras (the atlas's chapters)
     for i, e in enumerate(eras):
@@ -597,7 +601,7 @@ def main():
             nb.append((era_path(eras[i + 1]), f"The world in {yr(eras[i + 1]['year'])}: {eras[i + 1]['title']}", "next chapter"))
         body += links(nb, "More chapters") + sources(e["sources"])
         ld = article_ld(path, f"The world in {y}: {e['title']}", desc, None, None, {"temporalCoverage": iso(e["year"])})
-        emit("eras", path, title, desc, page(path, title, desc, body, [("Chapters", "/eras/"), (f"{y}: {e['title']}", path)], jsonld=[ld]),
+        emit("eras", path, title, desc, page(path, title, desc, body, [("Chapters", "/eras/"), (f"{y}: {e['title']}", path)], image=og_image("eras", e["year"]), jsonld=[ld]),
              f"The world in {y}: {e['title']}")
 
     # ---- realms (every state in the border data)

@@ -29,15 +29,21 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const J = (...p) => JSON.parse(readFileSync(join(ROOT, "public", "data", ...p), "utf8"));
 const C = J("content.json");
 const whole = (kind, o) => { const p = join(ROOT, "public", "data", "story", `${kind}-${o.id}.json`); return existsSync(p) ? { ...o, ...JSON.parse(readFileSync(p, "utf8")) } : o; };
-const first = (t, n = 1) => (String(t || "").match(/[^.!?]+(?:[.!?]+["'”’)]?|$)\s*/g) || []).slice(0, n).join("").trim();
+// the first whole sentence: not cut at "c." or an initial, nor inside brackets, nor so short that it says nothing
+const first = (t) => { let out = ""; for (const p of String(t || "").match(/[^.!?]+(?:[.!?]+["'”’)]?|$)\s*/g) || []) { out += p; const s = out.trim();
+  if (s.length >= 60 && !/(?:\b(?:c|ca|St|Mt|Dr|Mr|vs|No|approx)|\b[A-Z])\.$/.test(s) && (s.match(/\(/g) || []).length <= (s.match(/\)/g) || []).length) break; } return out.trim(); };
+const pts = (list) => (list || []).map((e) => e.lonlat).filter((p) => Array.isArray(p) && p.length === 2);
 const yr = (y) => (y < 0 ? `${-y} BCE` : y < 1000 ? `${y} CE` : String(y));
 const span = (a, b) => (a < 0 && b < 0 ? `${-a} to ${-b} BCE` : `${yr(a)} to ${b >= 2026 ? "today" : yr(b)}`);
 const items = [];
-for (const w0 of C.wars) { const w = whole("w", w0); items.push({ sec: "wars", id: w.id, hash: `w/${w.id}`, kick: `War, ${w.dateLabel || span(...w.span)}`, title: w.name, line: first(w.summary) }); }
-for (const m of C.moments) items.push({ sec: "moments", id: m.id, hash: `m/${m.id}`, kick: `A moment that changed the world, ${m.yearLabel || yr(m.year)}`, title: m.title, line: first(m.summary) });
-for (const j0 of C.journeys) { const j = whole("e", j0); items.push({ sec: "empires", id: j.id, hash: `e/${j.id}`, kick: `Empire, ${span(...j.span)}`, title: j.name, line: first(j.summary) }); }
+for (const w0 of C.wars) { const w = whole("w", w0); items.push({ sec: "wars", id: w.id, hash: `w/${w.id}`, focus: pts(w.events), kick: `War, ${w.dateLabel || span(...w.span)}`, title: w.name, line: first(w.summary) }); }
+for (const m of C.moments) items.push({ sec: "moments", id: m.id, hash: `m/${m.id}`, focus: pts([m]), kick: `A moment that changed the world, ${m.yearLabel || yr(m.year)}`, title: m.title, line: first(m.summary) });
+const EMP = Object.fromEntries(C.empires.map((e) => [e.id, e]));
+for (const j0 of C.journeys) { const j = whole("e", j0), pk = EMP[j.profile]?.peak?.year, at = pk != null && pk >= j.span[0] && pk <= j.span[1] ? pk : Math.round((j.span[0] + j.span[1]) / 2); // drawn at its height
+  items.push({ sec: "empires", id: j.id, hash: `e/${j.id}/${at}`, focus: pts(j.events), kick: `Empire, ${span(...j.span)}`, title: j.name, line: first(j.summary) }); }
 for (const e of C.eras) items.push({ sec: "eras", id: String(e.year), hash: String(e.year), kick: `The world in ${yr(e.year)}`, title: e.title, line: first(e.overview) });
 let todo = items.filter((it) => !ONLY.length || ONLY.includes(it.sec));
+if (!SAMPLE && !process.argv.includes("--force")) todo = todo.filter((it) => !existsSync(join(OUT, it.sec, `${it.id}.jpg`))); // a run that stopped picks up where it left off
 if (SAMPLE) { const pick = { wars: ["peloponnesian-war", "world-war-ii"], moments: ["egypt-unified", "moon-landing"], empires: ["rome", "mongol"], eras: ["1492", "-500"] };
   todo = Object.entries(pick).flatMap(([sec, ids]) => ids.map((id) => items.find((it) => it.sec === sec && it.id === id) || items.find((it) => it.sec === sec))).filter((v, i, a) => v && a.indexOf(v) === i); }
 
@@ -75,13 +81,25 @@ const caption = (it) => `(() => { const c = document.getElementById("ogcap"), h 
 // settled: the loading note is gone, the fonts are in, and nothing has been fetched for a moment (borders, a war's layers)
 const settle = async (min) => { await sleep(min); for (let i = 0; i < 40; i++) { const ok = await js(`(async () => { await document.fonts.ready; const n = performance.getEntriesByType("resource").length; await new Promise((r) => setTimeout(r, 450)); return !document.querySelector("#loading") && performance.getEntriesByType("resource").length === n; })()`); if (ok) return; } };
 
+// The atlas frames a view for its own page. Here the caption card is wider, so the subject (a moment's place, a war's or an empire's
+// events) is moved to the middle of the room beside the card, and the map zoomed out if they would not fit there.
+const FRAME = `((P, box) => { const c = document.querySelector("#map"), r = c.getBoundingClientRect(), z = c.__zoom; if (!z || !P.length) return false;
+  const edge = []; for (let lon = -180; lon <= 180; lon += 5) edge.push([lon, 84], [lon, -57]); for (let lat = -57; lat <= 84; lat += 3) edge.push([-180, lat], [180, lat]);
+  const pj = d3.geoNaturalEarth1().fitExtent([[10, 8], [r.width - 56, r.height - 30]], { type: "MultiPoint", coordinates: edge }), Q = P.map((p) => pj(p)).filter(Boolean); if (!Q.length) return false;
+  const xs = Q.map((q) => q[0]).sort((a, b) => a - b), ys = Q.map((q) => q[1]).sort((a, b) => a - b), cut = Q.length > 8 ? 1 : 0; // one far-off event does not set the frame
+  const x0 = xs[cut], x1 = xs[xs.length - 1 - cut], y0 = ys[cut], y1 = ys[ys.length - 1 - cut], [L, T, R, B] = box;
+  const k = Math.max(1, z.k * Math.min(1, (R - L) * .8 / Math.max(1, (x1 - x0) * z.k), (B - T) * .8 / Math.max(1, (y1 - y0) * z.k)));
+  c.__zoom = d3.zoomIdentity.translate((L + R) / 2 - k * (x0 + x1) / 2, (T + B) / 2 - k * (y0 + y1) / 2).scale(k);
+  c.dispatchEvent(new WheelEvent("wheel", { deltaY: .5, clientX: (L + R) / 2, clientY: (T + B) / 2, bubbles: true, cancelable: true })); return true; })`;
 let loaded = false, n = 0; const t0 = Date.now();
 for (const it of todo) {
   const url = `${BASE}/world.html#${it.hash}`;
   if (!loaded) { await cdp("Page.navigate", { url }); loaded = true; await settle(2500); }
   else { await js(`location.hash = ${JSON.stringify("#" + it.hash)}`); await settle(1400); }
-  await js(setup); await js(caption(it)); await sleep(350); // the map's cross-fade
-  const shot = await cdp("Page.captureScreenshot", { format: "jpeg", quality: 84, clip: { x: 0, y: 0, width: W, height: H, scale: 1 } });
+  await js(setup); await js(caption(it));
+  if (it.focus?.length) await js(`${FRAME}(${JSON.stringify(it.focus)}, [452, 36, ${W - 28}, ${H - 36}])`);
+  await sleep(450); // the map's cross-fade, and the redraw after the move
+  const shot = await cdp("Page.captureScreenshot", { format: "jpeg", quality: 78, clip: { x: 0, y: 0, width: W, height: H, scale: 1 } });
   const file = join(OUT, it.sec, `${it.id}.jpg`); mkdirSync(dirname(file), { recursive: true }); writeFileSync(file, Buffer.from(shot.data, "base64"));
   if (++n % 20 === 0 || SAMPLE) console.log(`og: ${n}/${todo.length} ${it.sec}/${it.id}`);
 }

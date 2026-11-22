@@ -25,6 +25,10 @@
 /fonts/*.css
   Cache-Control: public, max-age=86400
 
+# Share pictures (tools/og.mjs): redrawn under the same name when a page's content changes, so a day
+/og/*
+  Cache-Control: public, max-age=86400
+
 # Icons change rarely
 /*.png
   Cache-Control: public, max-age=2592000

@@ -129,6 +129,9 @@ body.searching #stage::after { content: ""; position: absolute; inset: 0; backgr
 #col[data-w="wide"] { --card-w: 540px; }
 #col[data-w="story"] { --card-w: 420px; }
 .chead { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 28px; }
+.chead .hshare { flex: none; width: 32px; height: 32px; margin: -2px 0; display: grid; place-items: center; border: 1px solid var(--rule-2); border-radius: 50%; background: var(--bg); color: var(--ink); }
+.chead .hshare:hover { background: var(--chip); } .chead .hshare svg { width: 15px; height: 15px; }
+.chead:has(.hshare) .count { margin-left: auto; }
 .back { display: inline-flex; align-items: center; gap: 6px; height: 36px; margin: -4px 0 -4px -8px; padding: 0 8px; border: 0; border-radius: 18px; background: none; font: 500 14px var(--sans); color: var(--ink); }
 .back svg { width: 16px; height: 16px; stroke-width: 2.2; }
 .back:hover { background: var(--chip); color: var(--ink); }
