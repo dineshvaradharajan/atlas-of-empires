@@ -75,8 +75,12 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .mile.extinction { border-color: var(--hot); color: var(--kick); }
 .mile.on { background: var(--btn); color: var(--btn-ink); } .mile.extinction.on { background: var(--hot); border-color: var(--hot); color: #fff; }
 .mile.hid { visibility: hidden; }
-#mileMarks { position: absolute; left: 0; top: -5px; height: 8px; pointer-events: none; }
-#mileMarks i { position: absolute; top: 0; width: 8px; height: 8px; margin-left: -4px; transform: rotate(45deg); background: var(--ink); box-shadow: 0 0 0 1.5px #fff; }
+#mileMarks { position: absolute; z-index: 3; left: 0; top: -5px; height: 8px; pointer-events: none; }
+#mileMarks i { position: absolute; top: 0; width: 8px; height: 8px; margin-left: -4px; transform: rotate(45deg); background: var(--ink); box-shadow: 0 0 0 1.5px #fff; pointer-events: auto; cursor: pointer; }
+#mileMarks i::before { content: ""; position: absolute; inset: -7px; } /* a bigger target than the diamond */
+#mileMarks i:hover { width: 11px; height: 11px; margin: -1.5px 0 0 -5.5px; }
+#mileMarks i::after { content: attr(data-label); display: none; position: absolute; left: 50%; bottom: 14px; transform: rotate(-45deg) translate(-30%, 0); transform-origin: 0 100%; padding: 4px 9px; border-radius: 6px; background: var(--btn); color: var(--btn-ink); font: 600 12px var(--sans); white-space: nowrap; pointer-events: none; z-index: 6; }
+#mileMarks i:hover::after { display: block; }
 #mileMarks i.extinction { background: var(--hot); }
 #mileMarks i.on { width: 11px; height: 11px; margin: -1.5px 0 0 -5.5px; }
 .turnbox { margin-top: 14px; padding: 10px 12px; border: 1px solid var(--hot); border-radius: 10px; }

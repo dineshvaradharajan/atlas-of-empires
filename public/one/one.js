@@ -323,9 +323,12 @@ function storyBar() { // the moment's timeline: a segment and a date per chapter
 function storyEnd() { ST = null; delete $("#app").dataset.story; $("#sdock").hidden = true; setPlaying(false); setTimeout(() => { layout(); shell(); }, 0); shown = ""; S.ma = Math.max(S.ma, JOIN); S.dirty = true; mk.getContext("2d").clearRect(0, 0, mk.width, mk.height); }
 const mk = $("#marks");
 function drawPins(M) { // the chapter's fossil sites, where they sat at the time (only on the round globe)
-  const x = mk.getContext("2d"); x.setTransform(dpr, 0, 0, dpr, 0, 0); x.clearRect(0, 0, W, H); if (!ST || S.t > .01) return;
+  const x = mk.getContext("2d"); x.setTransform(dpr, 0, 0, dpr, 0, 0); x.clearRect(0, 0, W, H); if (S.t > .01 || S.mode !== "deep") return;
+  // a story's sites; or else the turning point the time is on, where it happened (the asteroid at Chicxulub, the oldest fossils in the Pilbara)
+  let sites = ST ? ST.story.chapters[ST.i].sites || [] : [];
+  if (!ST && nearMile >= 0) { const it = MILES[nearMile].item; if (it && (it.then || (S.ma < 1 && it.lonlat))) sites = [{ name: it.place || MILES[nearMile].title, then: it.then, lonlat: it.lonlat }]; }
   const boxes = [];
-  for (const t of ST.story.chapters[ST.i].sites || []) {
+  for (const t of sites) {
     const ll = t.then || (S.ma < 1 ? t.lonlat : null); if (!ll) continue;
     const l = ll[0] * RAD, p = ll[1] * RAD, w = [Math.cos(p) * Math.sin(l), Math.sin(p), Math.cos(p) * Math.cos(l)], v = M.map((r) => r[0] * w[0] + r[1] * w[1] + r[2] * w[2]); if (v[2] < .08) continue;
     const px = G.cx + G.r * v[0], py = G.cy - G.r * v[1];
@@ -344,7 +347,7 @@ function buildTimeline() {
   // the turning points for life, as on the Earth history page: a diamond on the band and a name above it
   MILES = (D.milestones || []).filter((m) => m.ma > JOIN).map((m) => { const [t, id] = m.ref.split(":"); return { ...m, item: t === "e" ? D.events.find((e) => e.id === id) : D.origins.find((o) => o.id === id) }; }).filter((m) => m.item);
   $("#miles").innerHTML = MILES.map((m, i) => `<button type="button" class="mile ${m.kind}" data-m="${i}" title="${esc(m.title)}">${esc(m.label)}</button>`).join("");
-  $("#mileMarks").innerHTML = MILES.map((m, i) => `<i class="${m.kind}" data-m="${i}" style="left:${X(m.ma) * 100}%"></i>`).join("");
+  $("#mileMarks").innerHTML = MILES.map((m, i) => `<i class="${m.kind}" data-m="${i}" style="left:${X(m.ma) * 100}%" role="button" tabindex="-1" aria-label="${esc(m.title)}, ${esc(ageParts(m.ma).join(" "))}" data-label="${esc(m.label)} · ${esc(ageParts(m.ma).join(" ").replace(" million years ago", " M").replace(" billion years ago", " bn"))}"></i>`).join("");
   const bands = (named) => HERAS.map(([a, b, n, sh, col]) => `<i title="${esc(n)}"${named ? ` data-w="${HX(b) - HX(a)}" data-s="${esc(sh)}"` : ""} style="left:${HX(a) * 100}%;width:${(HX(b) - HX(a)) * 100}%;background:${col}">${named ? esc(n) : ""}</i>`).join("");
   $("#hbands").innerHTML = bands(true); $("#stripHist").innerHTML = bands(false);
 }
@@ -371,7 +374,7 @@ function drawTimeline(force) {
   }
   // the turning point the cursor is on: its name is filled, and the card says what happened
   let near = -1; if (S.mode === "deep" && !ST) { let best = .006; MILES.forEach((m, i) => { const d = Math.abs(X(m.ma) - X(S.ma)); if (d < best) { best = d; near = i; } }); }
-  if (near !== nearMile) { nearMile = near; document.querySelectorAll("#miles .mile, #mileMarks i").forEach((el) => el.classList.toggle("on", +el.dataset.m === near));
+  if (near !== nearMile) { nearMile = near; S.dirty = true; document.querySelectorAll("#miles .mile, #mileMarks i").forEach((el) => el.classList.toggle("on", +el.dataset.m === near));
     const tb = $("#turn"); tb.hidden = near < 0; if (near >= 0) { const m = MILES[near], it = m.item; tb.innerHTML = `<span>TURNING POINT \u00b7 ${esc(ageParts(m.ma).join(" "))}</span><b>${esc(m.title)}</b><p>${esc((it.text || "").split(". ").slice(0, 2).join(". ").replace(/\.?$/, "."))}</p>`; } }
   const x = S.mode === "deep" ? X(S.ma) * deep : deep + HX(S.year) * f;
   $("#cursor").style.left = $("#pill").style.left = x * 100 + "%";
@@ -602,7 +605,9 @@ function wire() {
     else { const x = HX(S.year) + d * .01; if (x < 0) enterDeep(.02); else { S.year = atHX(x); histYear(S.year); } }
   });
   $("#play").addEventListener("click", () => { if (ST) storyEnd(); setPlaying(!S.playing); });
-  $("#miles").addEventListener("click", (e) => { const b = e.target.closest("[data-m]"); if (!b) return; setPlaying(false); if (ST) storyEnd(); S.ma = MILES[+b.dataset.m].ma; S.dirty = true; const it = MILES[+b.dataset.m].item; if (it.then && !S.flat) fly = { lon0: S.lon, lat0: S.lat, dl: ((it.then[0] - S.lon + 540) % 360) - 180, dp: clamp(it.then[1], -70, 70) - S.lat, t: 0 }; });
+  const goMile = (e) => { const b = e.target.closest("[data-m]"); if (!b) return; e.stopPropagation(); e.preventDefault?.(); setPlaying(false); if (ST) storyEnd(); S.ma = MILES[+b.dataset.m].ma; S.dirty = true; const it = MILES[+b.dataset.m].item; if (it.then && !S.flat) fly = { lon0: S.lon, lat0: S.lat, dl: ((it.then[0] - S.lon + 540) % 360) - 180, dp: clamp(it.then[1], -70, 70) - S.lat, t: 0 }; };
+  $("#miles").addEventListener("click", goMile);
+  $("#mileMarks").addEventListener("pointerdown", (e) => { if (e.target.closest("[data-m]")) goMile(e); }); // before the timeline under it takes the press
   $("#more").addEventListener("click", () => { const open = $("#card").classList.toggle("open"); $("#more").textContent = open ? "Show less" : "Read more"; if (S.flat) { histFrame(); FIT = flatFit(); S.dirty = true; } });
   $("#mlist").addEventListener("click", (e) => { const c = e.target.closest("[data-s]"); if (c) storyStart(c.dataset.s); });
   $("#story").addEventListener("click", (e) => { const a = e.target.closest("[data-act]"); if (!a) return; if (a.dataset.act === "more") { const open = $("#story").classList.toggle("open"); a.textContent = open ? "Show less" : "Read the full chapter"; return; } if (a.dataset.act === "list") { storyEnd(); listOpen(true); } else if (a.dataset.act === "end" || (a.dataset.act === "next" && ST.i >= ST.story.chapters.length - 1)) { storyEnd(); listOpen(true); } else storyGo(ST.i + (a.dataset.act === "next" ? 1 : -1)); });
