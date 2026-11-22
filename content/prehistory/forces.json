@@ -1,0 +1,393 @@
+[
+ {
+  "id": "volcanism",
+  "title": "Volcanism",
+  "line": "Lava and volcanic gas warm the planet, and sometimes wreck it.",
+  "text": "Volcanoes carry heat and gas from the Earth's interior to the surface. Over millions of years the carbon dioxide they release, balanced by rain slowly washing it out of the air into rock, works like a thermostat that keeps the climate mild, and gas building up under the ice probably ended the Snowball Earth freezes. Rarely, lava floods cover areas the size of a country: the Siberian Traps left about 4 million cubic kilometres of basalt 252 million years ago, and their gases are the leading suspect for the worst mass extinction. Several other great lava floods coincide with extinctions, though how much each one caused is debated.",
+  "examples": [
+   {
+    "ma": 639,
+    "title": "Snowball Earth II ends",
+    "ref": "e:marinoan-glaciation"
+   },
+   {
+    "ma": 252,
+    "title": "The Siberian Traps erupt",
+    "ref": "e:siberian-traps"
+   },
+   {
+    "ma": 201.5,
+    "title": "The Central Atlantic lava floods",
+    "ref": "e:central-atlantic-magmatic-province"
+   },
+   {
+    "ma": 183,
+    "title": "The Karoo-Ferrar lava floods",
+    "ref": "e:karoo-ferrar-eruptions"
+   },
+   {
+    "ma": 66.3,
+    "title": "The Deccan Traps eruptions",
+    "ref": "e:deccan-traps"
+   },
+   {
+    "ma": 16.5,
+    "title": "The Columbia River lava floods",
+    "ref": "e:columbia-river-basalts"
+   }
+  ],
+  "evidence": "geology",
+  "sources": [
+   {
+    "title": "Wikipedia: Large igneous province",
+    "url": "https://en.wikipedia.org/wiki/Large_igneous_province"
+   },
+   {
+    "title": "Wikipedia: Siberian Traps",
+    "url": "https://en.wikipedia.org/wiki/Siberian_Traps"
+   },
+   {
+    "title": "Wikipedia: Carbonate–silicate cycle",
+    "url": "https://en.wikipedia.org/wiki/Carbonate%E2%80%93silicate_cycle"
+   },
+   {
+    "title": "Wikipedia: Snowball Earth",
+    "url": "https://en.wikipedia.org/wiki/Snowball_Earth"
+   }
+  ]
+ },
+ {
+  "id": "water",
+  "title": "Water",
+  "line": "Oceans, rain and rivers carve the land and steady the climate.",
+  "text": "Liquid water appeared early, probably in the Earth's first half-billion years, and the ocean still covers about 71 percent of the surface. Rain and rivers wear mountains down and carry away the sand and mud that become new rock. Rain also dissolves rock in a slow reaction that pulls carbon dioxide out of the air, which over millions of years helps keep the climate steady. When seas are cut off or break through, change can be sudden: the Atlantic refilled the dried-out Mediterranean within perhaps a few months to two years.",
+  "examples": [
+   {
+    "ma": 4404,
+    "title": "Oldest mineral grains hint at early oceans",
+    "ref": "e:jack-hills-zircons"
+   },
+   {
+    "ma": 233,
+    "title": "The Carnian Pluvial Episode",
+    "ref": "e:carnian-pluvial-episode"
+   },
+   {
+    "ma": 93,
+    "title": "A sea across North America",
+    "ref": "e:western-interior-seaway"
+   },
+   {
+    "ma": 5.96,
+    "title": "The Mediterranean dries out",
+    "ref": "e:messinian-salinity-crisis"
+   },
+   {
+    "ma": 5.33,
+    "title": "The Zanclean flood",
+    "ref": "e:zanclean-flood"
+   }
+  ],
+  "evidence": "geology",
+  "sources": [
+   {
+    "title": "Wikipedia: Ocean",
+    "url": "https://en.wikipedia.org/wiki/Ocean"
+   },
+   {
+    "title": "Wikipedia: Carbonate–silicate cycle",
+    "url": "https://en.wikipedia.org/wiki/Carbonate%E2%80%93silicate_cycle"
+   },
+   {
+    "title": "Wikipedia: Zanclean flood",
+    "url": "https://en.wikipedia.org/wiki/Zanclean_flood"
+   }
+  ]
+ },
+ {
+  "id": "oxygen",
+  "title": "Oxygen",
+  "line": "Microbes, then plants, filled the air with oxygen.",
+  "text": "The early air had almost no free oxygen. Cyanobacteria, microbes that use sunlight to split water, began to release it, and between about 2.46 and 2.06 billion years ago oxygen built up in the air for good, rusting iron out of the seas and probably helping to trigger ice ages. It rose again before the first animals appeared and once more as plants and forests spread over the land. Today oxygen makes up about 21 percent of the air, nearly all of it made by living things.",
+  "examples": [
+   {
+    "ma": 2950,
+    "title": "Microbes start making oxygen",
+    "ref": "e:oxygenic-photosynthesis"
+   },
+   {
+    "ma": 2460,
+    "title": "The seas rust: great iron formations",
+    "ref": "e:hamersley-iron-formations"
+   },
+   {
+    "ma": 2400,
+    "title": "The Great Oxidation Event",
+    "ref": "e:great-oxidation-event"
+   },
+   {
+    "ma": 470,
+    "title": "Land plants",
+    "ref": "o:land-plants"
+   },
+   {
+    "ma": 385,
+    "title": "The first forests: Gilboa",
+    "ref": "e:gilboa-forest"
+   }
+  ],
+  "evidence": "geology",
+  "sources": [
+   {
+    "title": "Wikipedia: Geological history of oxygen",
+    "url": "https://en.wikipedia.org/wiki/Geological_history_of_oxygen"
+   },
+   {
+    "title": "UC Museum of Paleontology: Introduction to the Cyanobacteria",
+    "url": "https://ucmp.berkeley.edu/bacteria/cyanointro.html"
+   }
+  ]
+ },
+ {
+  "id": "ice",
+  "title": "Ice",
+  "line": "Ice ages lock up water, lower the seas and carve landscapes.",
+  "text": "For most of its history the Earth has had little or no permanent ice, but at least five great ice ages broke the warmth. In two of them, about 2.4 billion and 717 to 635 million years ago, ice may have reached the equator, a 'Snowball Earth', though how complete the freeze was is disputed. For the last 2.6 million years or so, ice sheets have grown and melted in the north in step with small changes in the Earth's orbit. At the last peak, about 21,000 years ago, ice covered a quarter of the land and the sea stood about 125 metres lower than today.",
+  "examples": [
+   {
+    "ma": 2300,
+    "title": "The Huronian ice ages",
+    "ref": "e:huronian-glaciation"
+   },
+   {
+    "ma": 717,
+    "title": "Snowball Earth I: the Sturtian glaciation",
+    "ref": "e:sturtian-glaciation"
+   },
+   {
+    "ma": 300,
+    "title": "The Late Paleozoic ice age",
+    "ref": "e:late-paleozoic-ice-age"
+   },
+   {
+    "ma": 34,
+    "title": "Antarctica freezes over",
+    "ref": "e:antarctic-ice-sheet-forms"
+   },
+   {
+    "ma": 2.7,
+    "title": "Ice sheets grow in the north",
+    "ref": "e:northern-hemisphere-glaciation"
+   },
+   {
+    "ma": 0.0265,
+    "title": "The Last Glacial Maximum",
+    "ref": "e:last-glacial-maximum"
+   }
+  ],
+  "evidence": "geology",
+  "sources": [
+   {
+    "title": "Wikipedia: Ice age",
+    "url": "https://en.wikipedia.org/wiki/Ice_age"
+   },
+   {
+    "title": "Wikipedia: Snowball Earth",
+    "url": "https://en.wikipedia.org/wiki/Snowball_Earth"
+   },
+   {
+    "title": "Wikipedia: Last Glacial Maximum",
+    "url": "https://en.wikipedia.org/wiki/Last_Glacial_Maximum"
+   }
+  ]
+ },
+ {
+  "id": "drift",
+  "title": "Drifting continents",
+  "line": "Moving plates build mountains, open oceans and shuffle continents.",
+  "text": "The Earth's outer shell is broken into plates that move a few centimetres a year, about as fast as fingernails grow. Over hundreds of millions of years that is enough to gather the continents into a supercontinent and break it up again, a cycle that takes roughly 300 to 500 million years. Collisions raise mountains such as the Himalayas and the Alps, rifts open new oceans such as the Atlantic, and the shifting map changes sea level, ocean currents and climate, and splits or joins groups of living things. When the plates first began to move is still argued over.",
+  "examples": [
+   {
+    "ma": 3200,
+    "title": "The plates begin to move",
+    "ref": "e:plate-tectonics-begins"
+   },
+   {
+    "ma": 1800,
+    "title": "Supercontinent Columbia (Nuna) comes together",
+    "ref": "e:columbia-nuna"
+   },
+   {
+    "ma": 1100,
+    "title": "Rodinia assembles",
+    "ref": "e:rodinia-assembles"
+   },
+   {
+    "ma": 335,
+    "title": "Pangaea comes together",
+    "ref": "e:pangaea-assembles"
+   },
+   {
+    "ma": 55,
+    "title": "India collides with Asia",
+    "ref": "e:india-asia-collision"
+   },
+   {
+    "ma": 2.8,
+    "title": "The Isthmus of Panama forms",
+    "ref": "e:isthmus-of-panama"
+   }
+  ],
+  "evidence": "geology",
+  "sources": [
+   {
+    "title": "Wikipedia: Plate tectonics",
+    "url": "https://en.wikipedia.org/wiki/Plate_tectonics"
+   },
+   {
+    "title": "Wikipedia: Supercontinent cycle",
+    "url": "https://en.wikipedia.org/wiki/Supercontinent_cycle"
+   }
+  ]
+ },
+ {
+  "id": "impacts",
+  "title": "Impacts",
+  "line": "Rocks from space made the Moon and ended the dinosaurs.",
+  "text": "The young Earth was struck again and again as the planets grew, and most scientists think one giant collision, about 4.5 billion years ago, threw off the debris that became the Moon. Later impacts left huge scars, such as Vredefort in South Africa and Sudbury in Canada, about two billion years old. Today an asteroid about a kilometre across hits the Earth on average once every 500,000 years. The last known one about 10 kilometres wide struck Chicxulub in Mexico 66 million years ago, leaving a crater about 180 kilometres across and helping to end the age of the dinosaurs.",
+  "examples": [
+   {
+    "ma": 4510,
+    "title": "A giant impact forms the Moon",
+    "ref": "e:moon-forming-impact"
+   },
+   {
+    "ma": 2023,
+    "title": "The Vredefort impact",
+    "ref": "e:vredefort-impact"
+   },
+   {
+    "ma": 1849,
+    "title": "The Sudbury impact",
+    "ref": "e:sudbury-impact"
+   },
+   {
+    "ma": 66.0,
+    "title": "The Chicxulub impact",
+    "ref": "e:chicxulub-impact"
+   }
+  ],
+  "evidence": "geology",
+  "sources": [
+   {
+    "title": "Wikipedia: Impact event",
+    "url": "https://en.wikipedia.org/wiki/Impact_event"
+   },
+   {
+    "title": "NASA Science: Moon formation",
+    "url": "https://science.nasa.gov/moon/formation/"
+   }
+  ]
+ },
+ {
+  "id": "evolution",
+  "title": "Evolution",
+  "line": "Living things remake the air, the land and each other.",
+  "text": "Life has changed the planet as much as the planet has changed life. Microbes built layered mounds 3.5 billion years ago and later filled the air with oxygen; animals diversified in the Cambrian explosion from about 539 million years ago, and plants spread onto land from about 470 million years ago and later grew into forests. Mass extinctions cleared the way for new groups again and again, and the species alive today are fewer than one in a hundred of all that have ever lived.",
+  "examples": [
+   {
+    "ma": 3480,
+    "title": "Pilbara stromatolites: the oldest accepted fossils",
+    "ref": "e:pilbara-stromatolites"
+   },
+   {
+    "ma": 1650,
+    "title": "The first cells with a nucleus",
+    "ref": "e:first-eukaryotes"
+   },
+   {
+    "ma": 538.8,
+    "title": "The Cambrian explosion begins",
+    "ref": "e:cambrian-explosion"
+   },
+   {
+    "ma": 470,
+    "title": "Life moves onto land",
+    "ref": "s:land"
+   },
+   {
+    "ma": 130,
+    "title": "The first flowering plants",
+    "ref": "e:first-flowering-plants"
+   },
+   {
+    "ma": 66,
+    "title": "Mammals take over after the asteroid",
+    "ref": "s:mammals"
+   },
+   {
+    "ma": 7,
+    "title": "How humans evolved",
+    "ref": "s:humans"
+   }
+  ],
+  "evidence": "fossil",
+  "sources": [
+   {
+    "title": "Wikipedia: Evolutionary history of life",
+    "url": "https://en.wikipedia.org/wiki/Evolutionary_history_of_life"
+   },
+   {
+    "title": "UC Museum of Paleontology: Introduction to the Cyanobacteria",
+    "url": "https://ucmp.berkeley.edu/bacteria/cyanointro.html"
+   },
+   {
+    "title": "Wikipedia: Geological history of oxygen",
+    "url": "https://en.wikipedia.org/wiki/Geological_history_of_oxygen"
+   }
+  ]
+ },
+ {
+  "id": "people",
+  "title": "People",
+  "line": "One species now reshapes the land, life and climate.",
+  "text": "Humans became a force on the planet only very recently. Spreading modern humans probably helped wipe out many large animals in the last 50,000 years, though climate change may share the blame. Farming, which began about 11,700 years ago, turned forests and grasslands into fields. Burning coal, oil and gas has raised the carbon dioxide in the air from about 280 parts per million before industry to more than 420 today, higher than at any time for at least 3 million years.",
+  "examples": [
+   {
+    "ma": 0.315,
+    "title": "Our species, Homo sapiens",
+    "ref": "o:homo-sapiens"
+   },
+   {
+    "ma": 0.05,
+    "title": "The ice-age giants die out",
+    "ref": "e:megafauna-extinctions"
+   },
+   {
+    "ma": 0.0117,
+    "title": "Farming begins",
+    "ref": null
+   },
+   {
+    "ma": 7e-05,
+    "title": "The Anthropocene: proposed and rejected",
+    "ref": "e:anthropocene-proposal"
+   }
+  ],
+  "evidence": "geology",
+  "sources": [
+   {
+    "title": "Wikipedia: Neolithic Revolution",
+    "url": "https://en.wikipedia.org/wiki/Neolithic_Revolution"
+   },
+   {
+    "title": "Wikipedia: Carbon dioxide in Earth's atmosphere",
+    "url": "https://en.wikipedia.org/wiki/Carbon_dioxide_in_Earth%27s_atmosphere"
+   },
+   {
+    "title": "NOAA Global Monitoring Laboratory: Trends in atmospheric carbon dioxide, global",
+    "url": "https://gml.noaa.gov/ccgg/trends/global.html"
+   }
+  ]
+ }
+]

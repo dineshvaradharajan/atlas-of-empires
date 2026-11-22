@@ -270,3 +270,14 @@ body.light #now .trust.art { border-left-color: var(--highlight); }
 @media (max-width: 1180px) { body.light #now { width: 330px; padding: 20px; } }
 @media (max-width: 760px) { body.light #now { top: auto; bottom: calc(var(--dock-h) - 14px); width: auto; max-height: 42vh; padding: 16px 18px; } body.light .age b { font-size: 44px; } body.light .age span { font-size: 18px; } body.light #unitName { margin-top: 8px; font-size: 24px; } }
 body.light #now > .tabbody { flex: none; }
+
+/* forces in the Moments sheet */
+body.light #forces { border-top-color: var(--rule-2); }
+body.light #forces h2 { font: 800 24px/1.15 var(--display); }
+body.light .ftile { border-color: var(--rule-2); background: #fff; }
+body.light .ftile svg, body.light .fopen h3 svg { color: var(--ink); stroke: var(--ink); }
+body.light .ftile:hover { border-color: var(--ink); background: var(--chip); }
+body.light .ftile.on { border-color: var(--ink); background: var(--chip); box-shadow: inset 0 0 0 1px var(--ink); }
+body.light .fopen { border-color: var(--ink); }
+body.light .fopen .mlist li { border-bottom-color: var(--rule-2); }
+body.light .fopen .mrow:hover .mt b, body.light .fopen .src a:hover { color: var(--highlight); }

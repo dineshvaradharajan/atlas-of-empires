@@ -11,6 +11,8 @@ Reads   periods-a.json, periods-b.json   the time units (eons, eras, periods, ep
                                          place the globe turns to are carried back in time like the events
         milestones.json                  the turning points for life marked on the timeline; each names an event (e:) or
                                          a group (o:) above, whose researched date and sources it uses
+        forces.json                      the forces that shaped the Earth (volcanism, water, ice ...), each with examples
+                                         that point at an event (e:), a group (o:) or a story (s:)
         positions.json                   where each event and fossil site sat on the globe at its own time (see below)
         public/data/paleo/index.json     the ages that have a map (tools/paleo.py)
 
@@ -118,9 +120,15 @@ def main():
         if m["ref"] not in ev: sys.exit("milestones.json: no event or group called %s" % m["ref"])
         miles.append({**m, "ma": ev[m["ref"]][0], "title": ev[m["ref"]][1]})
     miles.sort(key=lambda m: -m["ma"])
+    sids = {s["id"] for s in stories}
+    forces = load("forces.json", [])
+    for f in forces:  # the forces that shaped the Earth: each example points at an event, a group or a story, or stands alone
+        for x in f.get("examples") or []:
+            r = x.get("ref")
+            if r and not (r in ev or (r.startswith("s:") and r[2:] in sids)): sys.exit("forces.json, %s: no event, group or story called %s" % (f["id"], r))
     maps = json.load(open(os.path.join(ROOT, "public", "data", "paleo", "index.json")))
     out = {"units": units, "events": events, "origins": origins, "curves": (load("curves.json") or {}).get("curves", []),
-           "images": images, "milestones": miles, "stories": stories, "maps": maps}
+           "images": images, "milestones": miles, "stories": stories, "forces": forces, "maps": maps}
     p = os.path.join(ROOT, "public", "data", "earth-history.json")
     json.dump(out, open(p, "w"), separators=(",", ":"), ensure_ascii=False)
     print("%d units, %d events, %d groups, %d curves, %d pictures, %d milestones, %d stories, %d maps -> %d KB" % (

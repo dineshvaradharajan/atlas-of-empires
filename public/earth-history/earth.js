@@ -306,7 +306,7 @@ function renderTab() { // the whole account of this time: the world, life, clima
 }
 // Highlight what a reader scans for: dates and amounts, and the names of places, creatures and continents.
 const HL_NUM = /\b(?:(?:about|around|c\.|over|nearly|almost|some) )?\d[\d,.]*(?:\s?(?:to|and|or|–|-)\s?\d[\d,.]*)?(?:\s(?:billion|million|thousand))?(?:\s(?:years?(?: ago| old| long| later| earlier)?|°C|degrees|per ?cent|%|metres|kilometres|km|centimetres|cm|ppm|tonnes|kg|species|genera))|\b\d+(?:\.\d+)?\s?%/g;
-const HL_NAME = /(?<=[a-z,;:)] )(?!The |This |These |That |Its |In |On |At |By |For |From |When |While |Then |But |And |So )([A-Z][a-zé]{2,}(?:[ -](?:[A-Z][a-zé]+|de|of|la))*)/g;
+const HL_NAME = /(?<=[a-z,;:)] )(?!The |This |These |That |Its |In |On |At |By |For |From |When |While |Then |But |And |So |Earth\b|Moon\b|Sun\b)([A-Z][a-zé]{2,}(?:[ -](?:[A-Z][a-zé]+|de|of|la))*)/g;
 function emph(text) {
   return esc(text).replace(HL_NUM, (m) => `<b class="hn">${m}</b>`).replace(HL_NAME, (m) => `<strong class="hw">${m}</strong>`);
 }
@@ -405,6 +405,46 @@ function storyCards() {
       <span class="sgo">Start</span></span></button>`;
   }
   $("#storyCards").innerHTML = h;
+}
+// ---------------------------------------------------------------- the forces that shaped the Earth (in the Moments sheet)
+const FICON = {
+  volcanism: '<path d="M3 20h18l-6-9h-6z"/><path d="M9 11l1.5-3h3L15 11"/><path d="M12 6V3M8.5 5 7 3.5M15.5 5 17 3.5"/>',
+  water: '<path d="M12 3c3.5 4.5 6 7.7 6 10.5a6 6 0 0 1-12 0C6 10.7 8.5 7.5 12 3z"/><path d="M9.5 14.5a2.6 2.6 0 0 0 2.5 2.5"/>',
+  oxygen: '<circle cx="8" cy="14" r="4"/><circle cx="16.5" cy="9" r="3"/><circle cx="17" cy="17.5" r="1.8"/><circle cx="10" cy="5" r="1.5"/>',
+  ice: '<path d="M12 2v20M3.3 7l17.4 10M3.3 17 20.7 7"/><path d="M9.5 3.5 12 6l2.5-2.5M9.5 20.5 12 18l2.5 2.5"/>',
+  drift: '<circle cx="12" cy="12" r="9"/><path d="M7 7.5c2 .3 3 1.8 2.5 3.5S7 13.5 6 15.5M14 5c-.5 2 1 3 2.5 3.5s2 2.5 1 4.5-3 2.5-3.5 4"/>',
+  impacts: '<circle cx="15" cy="15" r="5"/><path d="M11.5 11.5 4 4M13 9.8 8 3M9.8 13 3 8"/>',
+  evolution: '<path d="M8 3c0 6 8 6 8 12 0 3-2 5-4 6M16 3c0 6-8 6-8 12 0 3 2 5 4 6"/><path d="M9 7h6M9 17h6M10.5 12h3"/>',
+  people: '<path d="M4 21V11h4v10M10 21V5h4v16M16 21v-7h4v7M2 21h20"/>',
+};
+let FX = null;
+function forceCards() {
+  const F = D.forces || [];
+  $("#forces").hidden = $("#forcesBtn").hidden = !F.length;
+  $("#forceGrid").innerHTML = F.map((f, i) => `<button type="button" class="ftile" data-f="${i}" aria-expanded="false" aria-controls="forceOpen">
+    <svg viewBox="0 0 24 24" aria-hidden="true">${FICON[f.id] || FICON.drift}</svg><b>${esc(f.title)}</b><span>${esc(f.line || "")}</span></button>`).join("");
+}
+function forceShow(i) {
+  const F = D.forces || [], f = F[i], box = $("#forceOpen");
+  FX = f && FX !== i ? i : null;
+  document.querySelectorAll(".ftile").forEach((b) => { const on = +b.dataset.f === FX; b.classList.toggle("on", on); b.setAttribute("aria-expanded", on); });
+  if (FX === null) { box.hidden = true; return; }
+  const what = (r) => !r ? "" : r[0] === "s" ? "Moment" : r[0] === "o" ? "First appearance" : "";
+  const src = (f.sources || []).map((s) => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a></li>`).join("");
+  box.innerHTML = `<h3><svg viewBox="0 0 24 24" aria-hidden="true">${FICON[f.id] || FICON.drift}</svg>${esc(f.title)}</h3><p>${emph(f.text)}</p>
+    <ul class="mlist">${(f.examples || []).map((x, k) => `<li><button type="button" class="mrow" data-fx="${k}"><span class="my">${esc(ageShort(x.ma))}</span><span class="mt"><b>${esc(x.title)}</b>${what(x.ref) ? `<small>${what(x.ref)}${x.ref[0] === "s" ? ": start it" : ""}</small>` : ""}</span></button></li>`).join("")}</ul>
+    ${src ? `<ul class="src">${src}</ul>` : ""}`;
+  box.hidden = false;
+  box.scrollIntoView({ block: "nearest", behavior: "smooth" });
+}
+function forceGo(k) {
+  const x = (D.forces || [])[FX]?.examples?.[k]; if (!x) return;
+  const [t, id] = (x.ref || "").split(":");
+  $("#storyList").hidden = true; setPlaying(false);
+  if (t === "s") return storyStart(id);
+  if (ST) storyEnd();
+  const it = t === "e" ? D.events.find((e) => e.id === id) : t === "o" ? D.origins.find((o) => o.id === id) : null;
+  if (it) select(t === "e" ? "event" : "origin", it); else { select(null); setMa(x.ma); }
 }
 function storyStart(id, i = 0) {
   const s = (D.stories || []).find((x) => x.id === id); if (!s) return;
@@ -727,7 +767,9 @@ function wire() {
   let sx = null; $("#immerse").addEventListener("pointerdown", (e) => { sx = e.clientX; }); $("#immerse").addEventListener("pointerup", (e) => { if (sx != null && Math.abs(e.clientX - sx) > 50 && !e.target.closest(".imthumbs")) { IM.auto = false; imPlayIcon(); imShow(IM.i + (e.clientX < sx ? 1 : -1)); } sx = null; });
   const openStories = () => { $("#storyList").hidden = false; $("#storyListClose").focus(); };
   $("#storiesBtn").addEventListener("click", openStories); $("#storiesTab").addEventListener("click", openStories);
-  $("#storyList").addEventListener("click", (e) => { const c = e.target.closest("[data-s]"); if (c) storyStart(c.dataset.s); else if (e.target.id === "storyList" || e.target.closest("#storyListClose")) $("#storyList").hidden = true; });
+  $("#forcesBtn").addEventListener("click", () => { openStories(); $("#forces").scrollIntoView({ block: "start" }); $(".ftile")?.focus({ preventScroll: true }); });
+  $("#storyList").addEventListener("click", (e) => { const c = e.target.closest("[data-s]"), f = e.target.closest("[data-f]"), fx = e.target.closest("[data-fx]");
+    if (f) forceShow(+f.dataset.f); else if (fx) forceGo(+fx.dataset.fx); else if (c) storyStart(c.dataset.s); else if (e.target.id === "storyList" || e.target.closest("#storyListClose")) $("#storyList").hidden = true; });
   $("#story").addEventListener("click", (e) => { const a = e.target.closest("[data-act]"), r = e.target.closest("[data-ref]");
     if (r) { const x = storyRefs[+r.dataset.ref]; select(x.t, x.it, false); return; }
     if (!a) return; setPlaying(false); if (a.dataset.act === "prev") storyGo(ST.i - 1); else if (a.dataset.act === "next") storyGo(ST.i + 1); else storyEnd(); });
@@ -761,7 +803,7 @@ async function init() {
   $("#curvePick").innerHTML = CURVES.filter(([id]) => D.curves.some((c) => c.id === id)).map(([id, n]) => `<button type="button" data-c="${id}" aria-pressed="${id === S.curve}">${n}</button>`).join("");
   const h = parseFloat(location.hash.slice(1)); if (h >= 0 && h <= OLDEST) S.ma = h;
   let rec = false; try { rec = localStorage.getItem("deepRecords") === "1"; } catch (e) {} setRecords(rec, true);
-  buildMiles(); buildLife(); buildAbout(); storyCards(); wire(); setView(LIGHT ? "atlas" : "space"); renderNow(); imPlayIcon();
+  buildMiles(); buildLife(); buildAbout(); storyCards(); forceCards(); wire(); setView(LIGHT ? "atlas" : "space"); renderNow(); imPlayIcon();
   const sm = location.hash.match(/^#s\/([\w-]+)\/(\d+)/); if (sm) storyStart(sm[1], +sm[2] - 1);
   if (S.ma > MAPPED + 20) $("#loading").classList.add("done");
   if (S.ma > MAPPED) { want(MAPPED); want(MAPPED - 5); } // only fetch ahead for the oldest map when starting before it; otherwise draw() asks for the maps it needs

@@ -1,0 +1,863 @@
+{
+ "id": "mammals",
+ "title": "The age of mammals",
+ "summary": "Mammals spent their first 140 million years small and in the shadow of the dinosaurs, then came through the asteroid strike 66 million years ago and spread into the empty world. In the ages that followed they took to the trees, the sea and the grasslands, crossed between continents and grew into the giants of the ice ages, most of which vanished in the last 50,000 years.",
+ "from": 125,
+ "to": 0.004,
+ "chapters": [
+  {
+   "id": "small-mammals-dinosaur-world",
+   "title": "Small mammals in a dinosaur world",
+   "ma": 125,
+   "dateLabel": "c. 125 million years ago",
+   "focus": [
+    120.91,
+    41.6
+   ],
+   "place": "Lujiatun, near Beipiao, Liaoning, China",
+   "text": "Mammals appeared at almost the same time as the dinosaurs: shrew-sized Morganucodon, about 205 million years old, is usually counted among the first. For the next 140 million years most mammals stayed small and were probably active mainly at night. Yet they were more varied than once thought: by about 160 million years ago there were swimmers like the beaver-tailed Castorocauda, as well as gliders and diggers. About 125 million years ago, in what is now Liaoning, the opossum-sized Repenomamus even ate young dinosaurs, and one fossil shows it locked in combat with a Psittacosaurus when a volcanic mudflow buried them both.",
+   "species": [
+    "Morganucodon watsoni",
+    "Castorocauda lutrasimilis",
+    "Repenomamus robustus",
+    "Repenomamus giganticus"
+   ],
+   "sites": [
+    {
+     "name": "Lujiatun beds, Yixian Formation",
+     "lonlat": [
+      120.91,
+      41.6
+     ],
+     "ma": 125,
+     "note": "Volcanic deposits where Repenomamus was found with a young Psittacosaurus in its stomach, and another locked in a fight with one."
+    },
+    {
+     "name": "Limestone fissure fills, Glamorgan, Wales",
+     "lonlat": [
+      -3.5,
+      51.47
+     ],
+     "ma": 205,
+     "note": "Cracks in old limestone that filled with sediment and yielded most known fossils of Morganucodon; the point is the area, not one quarry."
+    }
+   ],
+   "route": null,
+   "refs": [
+    "o:mammals",
+    "e:jehol-biota"
+   ],
+   "imageIds": [
+    "morganucodon-funkmonk",
+    "repenomamus-psittacosaurus"
+   ],
+   "images": [
+    {
+     "id": "repenomamus-psittacosaurus-fossil",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Psittacosaurus_and_Repenomamus_fossil_-_Han_et_al_2023.png/1280px-Psittacosaurus_and_Repenomamus_fossil_-_Han_et_al_2023.png",
+     "page": "https://commons.wikimedia.org/wiki/File:Psittacosaurus_and_Repenomamus_fossil_-_Han_et_al_2023.png",
+     "width": 2007,
+     "height": 1566,
+     "type": "fossil",
+     "caption": "The fossil of a Repenomamus, an early mammal, entangled with the dinosaur Psittacosaurus, its teeth in the dinosaur's ribs, from 125-million-year-old rocks in Liaoning.",
+     "credit": "Han et al.",
+     "license": "CC BY 4.0",
+     "note": null
+    },
+    {
+     "id": "castorocauda-fossil-chaoyang",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Castorocauda_lutrasimilis_Chaoyang.jpg/1280px-Castorocauda_lutrasimilis_Chaoyang.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Castorocauda_lutrasimilis_Chaoyang.jpg",
+     "width": 6048,
+     "height": 3266,
+     "type": "fossil",
+     "caption": "Castorocauda, a Jurassic swimmer about 42 centimetres long, preserved with the outline of its fur and its flat, beaver-like tail, at the Chaoyang Paleontological Museum, China.",
+     "credit": "Jonathan Chen",
+     "license": "CC BY 4.0",
+     "note": "Castorocauda comes from the Daohugou beds of Inner Mongolia, about 164 to 159 million years old, not from Lujiatun."
+    }
+   ],
+   "evidence": "fossil",
+   "evidenceNote": "Skeletons buried in fine lake mud and volcanic ash keep fur, teeth and even stomach contents, showing what early mammals looked like and what they ate.",
+   "sources": [
+    {
+     "title": "Wikipedia: Morganucodon",
+     "url": "https://en.wikipedia.org/wiki/Morganucodon"
+    },
+    {
+     "title": "Wikipedia: Castorocauda",
+     "url": "https://en.wikipedia.org/wiki/Castorocauda"
+    },
+    {
+     "title": "Wikipedia: Repenomamus",
+     "url": "https://en.wikipedia.org/wiki/Repenomamus"
+    },
+    {
+     "title": "Wikipedia: Yixian Formation",
+     "url": "https://en.wikipedia.org/wiki/Yixian_Formation"
+    },
+    {
+     "title": "Paleobiology Database: occurrences of Repenomamus (find spot at Lujiatun)",
+     "url": "https://paleobiodb.org/data1.2/occs/list.txt?base_name=Repenomamus&show=coords,loc"
+    }
+   ]
+  },
+  {
+   "id": "mammals-rebound",
+   "title": "Mammals rebound after the asteroid",
+   "ma": 65.6,
+   "dateLabel": "c. 66–65 million years ago",
+   "focus": [
+    -104.59,
+    38.86
+   ],
+   "place": "Corral Bluffs, near Colorado Springs, Colorado, USA",
+   "text": "The asteroid that struck 66 million years ago wiped out about 93 percent of the mammal species known from western North America; the survivors were mostly common animals no bigger than a cat. Within about 140,000 years rat-sized Purgatorius, an early relative of the primates, was climbing trees in Montana. At Corral Bluffs, mammal skulls found inside egg-shaped stones show how fast the recovery went: mammal diversity doubled within about 100,000 years, and by 300,000 years pig-sized plant-eaters such as Carsioptychus lived in palm forests. By about 700,000 years, when the first bean pods appear, there were wolf-sized Eoconodon and Taeniolabis, a plant-eater of 34 to 56 kilograms, a hundred times heavier than the survivors.",
+   "species": [
+    "Purgatorius",
+    "Carsioptychus coarctatus",
+    "Loxolophus",
+    "Eoconodon coryphaeus",
+    "Taeniolabis taoensis"
+   ],
+   "sites": [
+    {
+     "name": "Corral Bluffs, Denver Basin",
+     "lonlat": [
+      -104.59,
+      38.86
+     ],
+     "ma": 65.6,
+     "note": "Rocks covering about the first million years after the impact, with complete mammal skulls, over 6,000 fossil leaves and early legume pods."
+    },
+    {
+     "name": "Tullock Formation, Garfield County, Montana",
+     "lonlat": [
+      -107.0,
+      47.6
+     ],
+     "ma": 65.9,
+     "note": "River channels near Hell Creek with some of the oldest Purgatorius teeth; the point marks the county, not the exact spot."
+    }
+   ],
+   "route": null,
+   "refs": [
+    "e:chicxulub-impact",
+    "e:end-cretaceous-extinction",
+    "o:placental-mammals"
+   ],
+   "imageIds": [
+    "taeniolabis-horsfall",
+    "paleocene-badlands-north-dakota"
+   ],
+   "images": [
+    {
+     "id": "carsioptychus-skull",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Carsioptychus_coarctatus_skull.jpg/960px-Carsioptychus_coarctatus_skull.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Carsioptychus_coarctatus_skull.jpg",
+     "width": 4000,
+     "height": 6000,
+     "type": "fossil",
+     "caption": "The skull and lower jaw of Carsioptychus, labelled 65.36 million years old, one of the pig-sized plant-eaters that appeared about 300,000 years after the asteroid.",
+     "credit": "mark byzewski",
+     "license": "CC BY 2.0",
+     "note": null
+    },
+    {
+     "id": "eoconodon-reconstruction",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Eoconodon_coryphaeusDB224.jpg/1280px-Eoconodon_coryphaeusDB224.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Eoconodon_coryphaeusDB224.jpg",
+     "width": 3898,
+     "height": 1999,
+     "type": "reconstruction",
+     "caption": "Eoconodon, a wolf-sized early Paleocene mammal with a sensitive, probably whiskered snout, which appeared about 680,000 years after the impact.",
+     "credit": "ДиБгд",
+     "license": "CC BY 4.0",
+     "note": "Fur colour and pattern are the artist's guess."
+    }
+   ],
+   "evidence": "fossil",
+   "evidenceNote": "Layers at Corral Bluffs are dated by volcanic ash, flips of Earth's magnetic field and the impact layer itself, so each skull and leaf can be placed in time after the extinction.",
+   "sources": [
+    {
+     "title": "Denver Museum of Nature & Science: Colorado discovery rocks the world (Corral Bluffs)",
+     "url": "https://dmns.org/science/research/rise-of-the-mammals/"
+    },
+    {
+     "title": "University of Washington: Fossils reveal how life on Earth recovered after the dinosaur-killing asteroid (Lyson et al. 2019, Science)",
+     "url": "https://www.washington.edu/news/2019/10/24/fossil-mammals-denver-basin/"
+    },
+    {
+     "title": "University of Bath: Mammals almost wiped out with the dinosaurs (Longrich et al. 2016)",
+     "url": "https://www.bath.ac.uk/announcements/mammals-almost-wiped-out-with-the-dinosaurs/"
+    },
+    {
+     "title": "University of Bristol: Humans' ancestors survived asteroid impact that killed the dinosaurs (Carlisle et al. 2023)",
+     "url": "https://www.bristol.ac.uk/news/2023/june/humans-ancestors-survived-asteroid-impact.html"
+    },
+    {
+     "title": "Wikipedia: Purgatorius",
+     "url": "https://en.wikipedia.org/wiki/Purgatorius"
+    }
+   ]
+  },
+  {
+   "id": "hothouse-newcomers",
+   "title": "A hothouse brings primates and horses",
+   "ma": 56.0,
+   "dateLabel": "c. 56 million years ago",
+   "focus": [
+    -108.2,
+    44.4
+   ],
+   "place": "Bighorn Basin, Wyoming, USA",
+   "text": "About 56 million years ago a huge release of carbon warmed the world by about 5 to 8 °C in less than 10,000 years, an episode called the Paleocene-Eocene Thermal Maximum. In this heat the first primates of modern type appear on all three northern continents, along with the earliest horses and some of the earliest even-toed hoofed animals, such as the deer-like Diacodexis. The tiny primate Teilhardina seems to have spread from Asia through Europe to North America in about 25,000 years. In Wyoming's Bighorn Basin the first horse, Sifrhippus, shrank by about 30 percent, to about 4 kilograms, as temperatures peaked and grew again as the climate cooled; about a third of mammal species there became smaller.",
+   "species": [
+    "Teilhardina brandti",
+    "Teilhardina asiatica",
+    "Sifrhippus sandrae",
+    "Diacodexis"
+   ],
+   "sites": [
+    {
+     "name": "Willwood Formation, Bighorn Basin",
+     "lonlat": [
+      -108.2,
+      44.4
+     ],
+     "ma": 56,
+     "note": "River muds whose fossil teeth record the shrinking of Sifrhippus and the arrival of Teilhardina; the point is the basin, not one quarry."
+    },
+    {
+     "name": "Lingcha Formation, Hunan, China",
+     "lonlat": [
+      112.6,
+      26.9
+     ],
+     "ma": 56,
+     "note": "Rocks that yielded Teilhardina asiatica, thought to be the oldest member of the genus."
+    }
+   ],
+   "route": null,
+   "refs": [
+    "e:paleocene-eocene-thermal-maximum",
+    "o:primates",
+    "o:horses"
+   ],
+   "imageIds": [
+    "sifrhippus-early-horse"
+   ],
+   "images": [
+    {
+     "id": "willwood-gooseberry-badlands",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Willwood_Formation_%28Lower_Eocene%3B_Gooseberry_Badlands%2C_Bighorn_Basin%2C_Wyoming%2C_USA%29_2.jpg/1280px-Willwood_Formation_%28Lower_Eocene%3B_Gooseberry_Badlands%2C_Bighorn_Basin%2C_Wyoming%2C_USA%29_2.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Willwood_Formation_(Lower_Eocene;_Gooseberry_Badlands,_Bighorn_Basin,_Wyoming,_USA)_2.jpg",
+     "width": 4000,
+     "height": 2792,
+     "type": "landscape",
+     "caption": "Red-banded early Eocene rocks of the Willwood Formation in the Gooseberry Badlands of Wyoming's Bighorn Basin today.",
+     "credit": "James St. John",
+     "license": "CC BY 2.0",
+     "note": null
+    },
+    {
+     "id": "teilhardina-bogdanov",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/TeilhardinaDB15.jpg/960px-TeilhardinaDB15.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:TeilhardinaDB15.jpg",
+     "width": 1400,
+     "height": 2362,
+     "type": "reconstruction",
+     "caption": "Teilhardina, one of the earliest primates of modern type, a tree-dweller weighing only a few tens of grams with a tail longer than its body.",
+     "credit": "Dmitry Bogdanov",
+     "license": "CC BY-SA 4.0",
+     "note": "Colours, eyes and ears are the artist's guess."
+    }
+   ],
+   "evidence": "fossil",
+   "evidenceNote": "Carbon isotopes in the rocks mark the start of the warming in Asia, Europe and North America alike, so the first appearance of each animal can be lined up across continents.",
+   "sources": [
+    {
+     "title": "Smith, Rose and Gingerich 2006, PNAS: Rapid Asia–Europe–North America geographic dispersal of earliest Eocene primate Teilhardina during the PETM",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1544069"
+    },
+    {
+     "title": "EarthSky: Change in size of earliest horses driven by climate change (Secord et al. 2012, Science)",
+     "url": "https://earthsky.org/earth/change-in-size-of-earliest-horses-driven-by-climate-change-says-study/"
+    },
+    {
+     "title": "Wikipedia: Sifrhippus",
+     "url": "https://en.wikipedia.org/wiki/Sifrhippus"
+    },
+    {
+     "title": "Wikipedia: Diacodexis",
+     "url": "https://en.wikipedia.org/wiki/Diacodexis"
+    },
+    {
+     "title": "Wikipedia: Teilhardina",
+     "url": "https://en.wikipedia.org/wiki/Teilhardina"
+    }
+   ]
+  },
+  {
+   "id": "eocene-lake-windows",
+   "title": "Windows on Eocene forests",
+   "ma": 47,
+   "dateLabel": "c. 52–47 million years ago",
+   "focus": [
+    8.76,
+    49.92
+   ],
+   "place": "Messel Pit, near Darmstadt, Hesse, Germany",
+   "text": "In the warm Eocene, lakes in Wyoming and Germany buried animals whole in fine mud. Fossil Lake in Wyoming, about 52.5 million years old, holds Onychonycteris, one of the oldest bats known from complete skeletons; it had claws on all five fingers and may have flown before bats could hunt by echolocation. The Messel Pit, a volcanic crater lake about 47 million years old, preserves early bats, fox-sized early horses, including a mare with her unborn foal, and the primate Darwinius, with the outline of her fur and the remains of her last meal of fruit and leaves. Why so many animals died in the lake is debated: volcanic gases and poisonous algae have both been suggested.",
+   "species": [
+    "Darwinius masillae",
+    "Eurohippus messelensis",
+    "Propalaeotherium",
+    "Palaeochiropteryx",
+    "Onychonycteris finneyi"
+   ],
+   "sites": [
+    {
+     "name": "Messel Pit",
+     "lonlat": [
+      8.76,
+      49.92
+     ],
+     "ma": 47,
+     "note": "Oil shale from a crater lake with over 1,400 kinds of fossil plants and animals; a UNESCO World Heritage Site since 1995."
+    },
+    {
+     "name": "Fossil Lake, Green River Formation, Wyoming",
+     "lonlat": [
+      -110.53,
+      41.82
+     ],
+     "ma": 52.5,
+     "note": "Fine lake limestone where the two known skeletons of Onychonycteris were found in 2003."
+    }
+   ],
+   "route": null,
+   "refs": [
+    "e:messel-pit",
+    "e:green-river-formation",
+    "o:bats"
+   ],
+   "imageIds": [
+    "darwinius-ida"
+   ],
+   "images": [
+    {
+     "id": "messel-pit-quarry",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Messel_Hesse_Messel-Pit-fossil-site-01.jpg/1280px-Messel_Hesse_Messel-Pit-fossil-site-01.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Messel_Hesse_Messel-Pit-fossil-site-01.jpg",
+     "width": 3398,
+     "height": 2549,
+     "type": "landscape",
+     "caption": "The Messel Pit near Darmstadt today: a former oil-shale quarry in the bed of a 47-million-year-old crater lake.",
+     "credit": "CEphoto, Uwe Aranas",
+     "license": "CC BY-SA 3.0",
+     "note": null
+    },
+    {
+     "id": "eurohippus-mare-with-foetus",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Urpferd%2C_Stute_mit_F%C3%B6tus_04.jpg/1280px-Urpferd%2C_Stute_mit_F%C3%B6tus_04.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Urpferd,_Stute_mit_F%C3%B6tus_04.jpg",
+     "width": 2676,
+     "height": 1992,
+     "type": "fossil",
+     "caption": "A small early horse, Eurohippus, from Messel: a mare that died while carrying an unborn foal, in the Hessian State Museum, Darmstadt.",
+     "credit": "JensKunstfreund",
+     "license": "CC BY-SA 4.0",
+     "note": null
+    },
+    {
+     "id": "onychonycteris-fossil",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Onychonycteris_finneyi_Fossil_Butte_National_Monument.jpg/1280px-Onychonycteris_finneyi_Fossil_Butte_National_Monument.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Onychonycteris_finneyi_Fossil_Butte_National_Monument.jpg",
+     "width": 2846,
+     "height": 2420,
+     "type": "fossil",
+     "caption": "An early bat skeleton from Wyoming's Fossil Lake shown at Fossil Butte National Monument, labelled Onychonycteris finneyi, with claws on its fingers.",
+     "credit": "Matthew Dillon",
+     "license": "CC BY 2.0",
+     "note": "Identified as Onychonycteris by the file name only; the photo description does not name the species."
+    }
+   ],
+   "evidence": "fossil",
+   "evidenceNote": "Lake mud with almost no oxygen kept skeletons whole and even fur outlines and stomach contents, and the rocks are dated by radioactive decay in nearby volcanic rock.",
+   "sources": [
+    {
+     "title": "Wikipedia: Messel pit",
+     "url": "https://en.wikipedia.org/wiki/Messel_pit"
+    },
+    {
+     "title": "Wikipedia: Darwinius",
+     "url": "https://en.wikipedia.org/wiki/Darwinius"
+    },
+    {
+     "title": "Wikipedia: Eurohippus",
+     "url": "https://en.wikipedia.org/wiki/Eurohippus"
+    },
+    {
+     "title": "Wikipedia: Onychonycteris",
+     "url": "https://en.wikipedia.org/wiki/Onychonycteris"
+    }
+   ]
+  },
+  {
+   "id": "whales-return-to-sea",
+   "title": "Whales walk back into the sea",
+   "ma": 40,
+   "dateLabel": "c. 49–40 million years ago",
+   "focus": [
+    30.04,
+    29.27
+   ],
+   "place": "Wadi Al-Hitan, Faiyum, Egypt",
+   "text": "Whales descend from land mammals: their closest living relatives are hippos, and early whales share the double-pulley ankle bone of even-toed hoofed animals. About 49 million years ago in what is now Pakistan, wolf-sized Pakicetus lived in and around water on four legs but already had the ear bones of a whale. A little later Ambulocetus swam like an otter in coastal waters, and Maiacetus, found with a fetus lying head first, may still have given birth on land. By about 40 million years ago Basilosaurus, up to about 18 metres long, and the smaller Dorudon swam in the sea that covered Egypt's Wadi Al-Hitan, keeping only tiny hind legs.",
+   "species": [
+    "Pakicetus attocki",
+    "Ambulocetus natans",
+    "Maiacetus inuus",
+    "Basilosaurus isis",
+    "Dorudon atrox"
+   ],
+   "sites": [
+    {
+     "name": "Wadi Al-Hitan (Valley of the Whales)",
+     "lonlat": [
+      30.04,
+      29.27
+     ],
+     "ma": 40,
+     "note": "About 1,500 skeletons of sea animals, mostly early whales, in an ancient sea floor; a UNESCO World Heritage Site since 2005."
+    },
+    {
+     "name": "Kuldana Formation, Kala Chitta Hills, Punjab, Pakistan",
+     "lonlat": [
+      72.19,
+      33.63
+     ],
+     "ma": 48.5,
+     "note": "Coastal and river deposits that yielded Pakicetus and Ambulocetus."
+    }
+   ],
+   "route": null,
+   "refs": [
+    "o:whales",
+    "e:fayum-and-wadi-al-hitan"
+   ],
+   "imageIds": [
+    "pakicetus",
+    "basilosaurus"
+   ],
+   "images": [
+    {
+     "id": "maiacetus-mother-and-fetus",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Adult_female_and_fetal_Maiacetus.jpg/1280px-Adult_female_and_fetal_Maiacetus.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Adult_female_and_fetal_Maiacetus.jpg",
+     "width": 2067,
+     "height": 1309,
+     "type": "fossil",
+     "caption": "The skeleton of a Maiacetus mother (red) with a fetus (blue) inside her, from 47.5-million-year-old rocks in Pakistan, labelled bone by bone.",
+     "credit": "Gingerich and colleagues",
+     "license": "CC BY 2.5",
+     "note": null
+    },
+    {
+     "id": "dorudon-wadi-el-hitan",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Dorudon_atrox_fossil_at_Wadi_El-Hitan%2C_Egypt%2C_March_2008.jpg/1280px-Dorudon_atrox_fossil_at_Wadi_El-Hitan%2C_Egypt%2C_March_2008.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Dorudon_atrox_fossil_at_Wadi_El-Hitan,_Egypt,_March_2008.jpg",
+     "width": 2544,
+     "height": 1696,
+     "type": "fossil",
+     "caption": "The backbone, ribs and skull of Dorudon, an early whale 3 to 5 metres long, lying where it was found in the desert at Wadi Al-Hitan.",
+     "credit": "Christoph Rohner",
+     "license": "CC BY-SA 3.0",
+     "note": null
+    }
+   ],
+   "evidence": "fossil",
+   "evidenceNote": "Skulls, ankle bones and limbs from Pakistan and Egypt, put in order by the rocks they lie in, show legs shrinking and hearing changing as whales moved into water; whether Maiacetus gave birth on land is disputed.",
+   "sources": [
+    {
+     "title": "Wikipedia: Pakicetus",
+     "url": "https://en.wikipedia.org/wiki/Pakicetus"
+    },
+    {
+     "title": "Wikipedia: Ambulocetus",
+     "url": "https://en.wikipedia.org/wiki/Ambulocetus"
+    },
+    {
+     "title": "Wikipedia: Maiacetus",
+     "url": "https://en.wikipedia.org/wiki/Maiacetus"
+    },
+    {
+     "title": "Wikipedia: Basilosaurus",
+     "url": "https://en.wikipedia.org/wiki/Basilosaurus"
+    },
+    {
+     "title": "Wikipedia: Wadi El Hitan",
+     "url": "https://en.wikipedia.org/wiki/Wadi_El_Hitan"
+    }
+   ]
+  },
+  {
+   "id": "grasslands-and-grazers",
+   "title": "Grasslands and the grazers",
+   "ma": 12,
+   "dateLabel": "c. 12 million years ago",
+   "focus": [
+    -98.16,
+    42.42
+   ],
+   "place": "Ashfall Fossil Beds, Antelope County, Nebraska, USA",
+   "text": "As the world cooled and dried, open grassland spread: tiny silica bodies from grasses show grass-dominated country on the Great Plains between about 26 and 22 million years ago. Grass is tough and gritty, and horses evolved high-crowned teeth to grind it; Merychippus, which appeared about 16 million years ago, is the first horse known to have grazed. About 12 million years ago ash from a huge eruption in what is now south-western Idaho, nearly 1,450 kilometres away, fell on a Nebraska waterhole. More than 100 barrel-bodied rhinos, along with three-toed horses, camels and birds, died there over days and weeks, and fossil grass seeds are still lodged between the rhinos' teeth.",
+   "species": [
+    "Teleoceras major",
+    "Cormohipparion",
+    "Merychippus insignis"
+   ],
+   "sites": [
+    {
+     "name": "Ashfall Fossil Beds",
+     "lonlat": [
+      -98.16,
+      42.42
+     ],
+     "ma": 12,
+     "note": "A waterhole buried in volcanic ash, with over 200 complete skeletons, found in 1971."
+    }
+   ],
+   "route": null,
+   "refs": [
+    "e:grasslands-spread",
+    "o:grasses",
+    "o:horses"
+   ],
+   "imageIds": [
+    "ashfall-rhinos",
+    "miocene-plains-knight"
+   ],
+   "images": [
+    {
+     "id": "ashfall-rhino-and-horse",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Ashfall_Fossil_Beds_-_Teleoceras_and_Cormohipparion.jpg/1280px-Ashfall_Fossil_Beds_-_Teleoceras_and_Cormohipparion.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Ashfall_Fossil_Beds_-_Teleoceras_and_Cormohipparion.jpg",
+     "width": 2333,
+     "height": 1859,
+     "type": "fossil",
+     "caption": "An adult Teleoceras rhinoceros (1) and a three-toed horse, Cormohipparion (2), lying where they died in the ash at Ashfall Fossil Beds.",
+     "credit": "Ammodramus",
+     "license": "CC0",
+     "note": "The identifications follow the site's own signs, as reported by the photographer."
+    },
+    {
+     "id": "merychippus-restoration",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Merychippus_insignis_life_restoration.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Merychippus_insignis_life_restoration.jpg",
+     "width": 916,
+     "height": 704,
+     "type": "reconstruction",
+     "caption": "Merychippus, a three-toed horse about a metre tall at the shoulder and the first horse known to graze, beside a human for scale.",
+     "credit": "Nobu Tamura",
+     "license": "CC BY-SA 4.0",
+     "note": "Coat colour and pattern are the artist's guess."
+    }
+   ],
+   "evidence": "fossil",
+   "evidenceNote": "Tooth shapes and fossil grass silica show the shift from forest to grassland, and the Ashfall skeletons lie in pure volcanic ash that dates and seals the scene.",
+   "sources": [
+    {
+     "title": "University of Nebraska State Museum: About Ashfall",
+     "url": "https://museum.unl.edu/ashfall/about-ashfall/"
+    },
+    {
+     "title": "University of Cincinnati: Prehistoric rhinos lived in mega-herds (Ward, Crowley and Secord 2025)",
+     "url": "https://www.uc.edu/news/articles/2025/04/uc-study-finds-evidence-that-prehistoric-rhinos-lived-in-huge-herds.html"
+    },
+    {
+     "title": "Strömberg 2005, PNAS: Decoupled taxonomic radiation and ecological expansion of open-habitat grasses in the Cenozoic of North America",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1189350"
+    },
+    {
+     "title": "Wikipedia: Merychippus",
+     "url": "https://en.wikipedia.org/wiki/Merychippus"
+    },
+    {
+     "title": "Wikipedia: Ashfall Fossil Beds",
+     "url": "https://en.wikipedia.org/wiki/Ashfall_Fossil_Beds"
+    }
+   ]
+  },
+  {
+   "id": "great-american-interchange",
+   "title": "Two continents swap their animals",
+   "ma": 2.5,
+   "dateLabel": "c. 2.5 million years ago",
+   "focus": [
+    -82.7,
+    29.84
+   ],
+   "place": "Santa Fe River, northern Florida, USA",
+   "text": "For tens of millions of years South America was an island continent with its own animals, such as ground sloths, armadillos, armoured glyptodonts and giant flightless 'terror birds'. Once the Isthmus of Panama joined the Americas, the main exchange began about 2.7 million years ago, although ground sloths and raccoon relatives had already crossed over water millions of years earlier. Fossils 2.6 to 2.3 million years old from Florida's Santa Fe River show southern newcomers: the terror bird Titanis, about 1.5 metres tall, the glyptodont Glyptotherium, ground sloths and armadillos. Going the other way, horses, camels, tapirs, deer, cats, dogs, bears and elephant relatives moved south, and they did far better: northern immigrants make up nearly half of South America's land mammal species, while many native South American hoofed mammals died out.",
+   "species": [
+    "Titanis walleri",
+    "Glyptotherium arizonae",
+    "Paramylodon garbonii",
+    "Megalonyx leptostomus",
+    "Holmesina floridanus"
+   ],
+   "sites": [
+    {
+     "name": "Santa Fe River 1",
+     "lonlat": [
+      -82.7,
+      29.84
+     ],
+     "ma": 2.45,
+     "note": "A river stretch where divers have collected most known Titanis fossils, with glyptodonts, ground sloths and armadillos."
+    },
+    {
+     "name": "Near Odem, San Patricio County, Texas",
+     "lonlat": [
+      -97.58,
+      27.87
+     ],
+     "ma": 5,
+     "note": "A single Titanis toe bone about 5 million years old, suggesting it reached North America before the land bridge was complete."
+    }
+   ],
+   "route": null,
+   "refs": [
+    "e:great-american-interchange",
+    "e:isthmus-of-panama"
+   ],
+   "imageIds": [
+    "isthmus-of-panama-satellite",
+    "glyptodonts-scene"
+   ],
+   "images": [
+    {
+     "id": "titanis-bogdanov",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/5/58/Life_reconstruction_of_the_terror_bird_Titanis_walleri.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Life_reconstruction_of_the_terror_bird_Titanis_walleri.jpg",
+     "width": 792,
+     "height": 1476,
+     "type": "reconstruction",
+     "caption": "Titanis, the only terror bird known from North America, a flightless hunter that walked north from South America.",
+     "credit": "Dmitry Bogdanov",
+     "license": "CC BY-SA 3.0",
+     "note": "Feather colours are the artist's guess; missing parts are based on its South American relatives."
+    },
+    {
+     "id": "gabi-examples-map",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Great_American_Biotic_Interchange_examples.svg/960px-Great_American_Biotic_Interchange_examples.svg.png",
+     "page": "https://commons.wikimedia.org/wiki/File:Great_American_Biotic_Interchange_examples.svg",
+     "width": 900,
+     "height": 1052,
+     "type": "map",
+     "caption": "Examples of animals that crossed between the Americas: southern migrants (olive) such as ground sloths, glyptodonts and terror birds went north; northern ones (blue) such as horses, camels, cats and elephant relatives went south.",
+     "credit": "Woudloper",
+     "license": "CC BY-SA 1.0",
+     "note": null
+    }
+   ],
+   "evidence": "fossil",
+   "evidenceNote": "South American animals appear in North American fossil beds, and northern ones in South America, from about 2.7 million years ago; when the land bridge was finally complete is still disputed.",
+   "sources": [
+    {
+     "title": "Wikipedia: Great American Biotic Interchange",
+     "url": "https://en.wikipedia.org/wiki/Great_American_Biotic_Interchange"
+    },
+    {
+     "title": "Florida Museum: Santa Fe River 1 [Blancan] fossil site",
+     "url": "https://www.floridamuseum.ufl.edu/florida-vertebrate-fossils/sites/santa-fe-river-1-blancan"
+    },
+    {
+     "title": "Florida Museum: Titanis walleri",
+     "url": "https://www.floridamuseum.ufl.edu/florida-vertebrate-fossils/species/titanis-walleri/"
+    },
+    {
+     "title": "Wikipedia: Titanis",
+     "url": "https://en.wikipedia.org/wiki/Titanis"
+    }
+   ]
+  },
+  {
+   "id": "mammoth-steppe-giants",
+   "title": "Giants of the mammoth steppe",
+   "ma": 0.036,
+   "dateLabel": "c. 36,000 years ago",
+   "focus": [
+    146.77,
+    67.69
+   ],
+   "place": "Badyarikha River, Yakutia (Sakha Republic), Russia",
+   "text": "During the later ice ages a cold, dry grassland called the mammoth steppe stretched from Spain across Asia to the Yukon in Canada, once the most extensive kind of landscape on Earth. It fed woolly mammoths, steppe bison, horses, reindeer and woolly rhinoceroses weighing up to about 2 tonnes, with front horns over a metre long, all hunted by cave lions, wolves and sabre-toothed cats. In 2020 the frozen body of a three-week-old cub of the sabre-tooth Homotherium was found in permafrost by the Badyarikha River. It died about 36,000 years ago and still has thick dark brown fur, paws and claws, and its small ears and paws suggest an animal built for the cold.",
+   "species": [
+    "Mammuthus primigenius",
+    "Coelodonta antiquitatis",
+    "Homotherium latidens",
+    "Bison priscus",
+    "Panthera spelaea"
+   ],
+   "sites": [
+    {
+     "name": "Badyarikhskoe, Badyarikha River",
+     "lonlat": [
+      146.77,
+      67.69
+     ],
+     "ma": 0.036,
+     "note": "Frozen loess of the Yedoma permafrost where the Homotherium cub was found among many bones of ice-age mammals."
+    }
+   ],
+   "route": null,
+   "refs": [
+    "e:northern-hemisphere-glaciation",
+    "o:carnivorans",
+    "o:elephants"
+   ],
+   "imageIds": [
+    "last-glacial-europe"
+   ],
+   "images": [
+    {
+     "id": "homotherium-cub-head",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Homotherium_cub_mummified_head.png/1280px-Homotherium_cub_mummified_head.png",
+     "page": "https://commons.wikimedia.org/wiki/File:Homotherium_cub_mummified_head.png",
+     "width": 1990,
+     "height": 1578,
+     "type": "fossil",
+     "caption": "The frozen head of a three-week-old Homotherium cub, a sabre-toothed cat, found in Siberian permafrost in 2020 with its fur intact.",
+     "credit": "Lopatin et al.",
+     "license": "CC BY 4.0",
+     "note": null
+    },
+    {
+     "id": "woolly-rhino-skeleton",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Coelodonta_antiquitatis_.jpg/1280px-Coelodonta_antiquitatis_.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Coelodonta_antiquitatis_.jpg",
+     "width": 6799,
+     "height": 3500,
+     "type": "fossil",
+     "caption": "A woolly rhinoceros skeleton with its two horns, the front one over a metre long.",
+     "credit": "Didier Descouens",
+     "license": "CC BY-SA 4.0",
+     "note": null
+    },
+    {
+     "id": "woolly-rhino-anton",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/3/34/Woolly_rhinoceros_%28Coelodonta_antiquitatis%29_-_Mauricio_Ant%C3%B3n.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Woolly_rhinoceros_(Coelodonta_antiquitatis)_-_Mauricio_Ant%C3%B3n.jpg",
+     "width": 683,
+     "height": 490,
+     "type": "reconstruction",
+     "caption": "A woolly rhinoceros on a snowy grassland in late Ice Age northern Spain.",
+     "credit": "Mauricio Antón",
+     "license": "CC BY 2.5",
+     "note": null
+    }
+   ],
+   "evidence": "fossil",
+   "evidenceNote": "Frozen carcasses and bones from the permafrost can be radiocarbon dated, and they keep fur and soft parts that show how these animals coped with the cold.",
+   "sources": [
+    {
+     "title": "Lopatin et al. 2024, Scientific Reports: Mummy of a juvenile sabre-toothed cat Homotherium latidens from the Upper Pleistocene of Siberia",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/11564651"
+    },
+    {
+     "title": "Wikipedia: Mammoth steppe",
+     "url": "https://en.wikipedia.org/wiki/Mammoth_steppe"
+    },
+    {
+     "title": "Wikipedia: Woolly rhinoceros",
+     "url": "https://en.wikipedia.org/wiki/Woolly_rhinoceros"
+    }
+   ]
+  },
+  {
+   "id": "the-giants-disappear",
+   "title": "The ice-age giants disappear",
+   "ma": 0.0129,
+   "dateLabel": "c. 13,000 years ago",
+   "focus": [
+    -118.36,
+    34.06
+   ],
+   "place": "Rancho La Brea, Los Angeles, California, USA",
+   "text": "Between about 50,000 and 10,000 years ago most of the world's largest land mammals died out, among them mammoths, woolly rhinos, giant ground sloths and sabre-toothed cats. At La Brea, new radiocarbon dates on 169 fossils show that sabre-toothed cats, dire wolves, American lions, ground sloths, horses, bison and camels had all vanished from southern California by about 12,900 years ago, within about 300 years of a thirty-fold jump in wildfires as the climate warmed and dried and human numbers grew. The last woolly rhinos lived in north-east Siberia about 14,000 years ago, and mammoths died out on the mainland about 10,000 years ago, but a small herd survived on Wrangel Island until about 4,000 years ago. How much hunting by people, climate change or both were to blame is still argued, and the answer probably differs from place to place.",
+   "species": [
+    "Smilodon fatalis",
+    "Panthera atrox",
+    "Mammuthus primigenius",
+    "Coelodonta antiquitatis"
+   ],
+   "sites": [
+    {
+     "name": "Rancho La Brea tar pits",
+     "lonlat": [
+      -118.36,
+      34.06
+     ],
+     "ma": 0.013,
+     "note": "Natural asphalt that trapped animals for tens of thousands of years; its dated bones and charcoal record the end of the giants."
+    },
+    {
+     "name": "Wrangel Island",
+     "lonlat": [
+      -179.42,
+      71.23
+     ],
+     "ma": 0.004,
+     "note": "Arctic island cut off by rising seas about 10,000 years ago, where the last woolly mammoths lived."
+    }
+   ],
+   "route": null,
+   "refs": [
+    "e:megafauna-extinctions",
+    "e:la-brea-tar-pits"
+   ],
+   "imageIds": [
+    "la-brea-knight",
+    "smilodon",
+    "wrangel-island-tundra"
+   ],
+   "images": [
+    {
+     "id": "la-brea-pit-91-bones",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Fossiized_bones_of_ice_age_creatures_found_in_Pit_91.jpg/1280px-Fossiized_bones_of_ice_age_creatures_found_in_Pit_91.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Fossiized_bones_of_ice_age_creatures_found_in_Pit_91.jpg",
+     "width": 3745,
+     "height": 2675,
+     "type": "fossil",
+     "caption": "Ice-age bones, including the pelvis of a ground sloth, emerging from the asphalt in Pit 91 at Rancho La Brea, marked with flags for digging.",
+     "credit": "Ruth Hartnup",
+     "license": "CC BY 2.0",
+     "note": null
+    }
+   ],
+   "evidence": "disputed",
+   "evidenceNote": "Radiocarbon dates on the last bones of each species are compared with signs of fire, climate and people; at La Brea fire, drying and people acted together, while elsewhere some researchers stress hunting and others climate change.",
+   "sources": [
+    {
+     "title": "Natural History Museum of Los Angeles County: New study by scientists at La Brea Tar Pits finds extinction of Ice Age mammals (O'Keefe et al. 2023, Science)",
+     "url": "https://nhm.org/press/new-study-scientists-la-brea-tar-pits-finds-extinction-ice-age-mammals-southern-california"
+    },
+    {
+     "title": "EurekAlert (Cell Press): World's last woolly mammoths were inbred, but not doomed (Dalén et al. 2024, Cell)",
+     "url": "https://www.eurekalert.org/news-releases/1048810"
+    },
+    {
+     "title": "Wikipedia: Wrangel Island",
+     "url": "https://en.wikipedia.org/wiki/Wrangel_Island"
+    },
+    {
+     "title": "Wikipedia: Woolly rhinoceros",
+     "url": "https://en.wikipedia.org/wiki/Woolly_rhinoceros"
+    }
+   ]
+  }
+ ]
+}

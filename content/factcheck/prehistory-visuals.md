@@ -354,3 +354,6 @@ changed: `marble-bar-banded-chert`, `snowball-earth-globe`, `fractofusus-seafloo
 ### Validation (round 2)
 - Both files parse with `json.load`; 274 ids unique across both files; 274 Commons pages unique; every `unit` and
   `type` from the allowed lists; every licence public domain, CC0, CC BY or CC BY-SA.
+- Every `image` URL in `images-more.json` returned HTTP 200 to a HEAD request (134 of 134), at one request every 3 to
+  4 seconds. Wikimedia answered many first requests with 429 (thumbnails not yet in its cache); those were retried
+  later in the run and all came back 200.

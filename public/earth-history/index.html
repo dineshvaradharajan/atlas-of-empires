@@ -26,6 +26,7 @@
     <nav class="sitesw" aria-label="Part of the atlas"><a href="../">World history</a><span aria-current="page">Earth history</span></nav>
     <nav class="tools">
       <button type="button" id="storiesBtn">Moments</button>
+      <button type="button" id="forcesBtn" hidden>Forces</button>
       <button type="button" id="lifeBtn" aria-pressed="false">Life through time</button>
       <button type="button" id="aboutBtn">About this map</button>
     </nav>
@@ -137,6 +138,12 @@
       <h2 id="storyListTitle">Moments</h2>
       <p class="intro">The turning points of life on Earth, told step by step on the globe.</p>
       <div id="storyCards"></div>
+      <section id="forces" hidden aria-labelledby="forcesTitle">
+        <h2 id="forcesTitle">The forces that shaped the Earth</h2>
+        <p class="intro">Eight forces lie behind almost every change on the globe. Open one to see when it struck hardest, and jump there.</p>
+        <div id="forceGrid" class="fgrid"></div>
+        <div id="forceOpen" class="fopen" hidden aria-live="polite"></div>
+      </section>
     </div>
   </div>
 

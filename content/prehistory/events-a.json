@@ -616,6 +616,40 @@
   ]
  },
  {
+  "id": "grypania",
+  "title": "Grypania: coiled ribbons in Michigan",
+  "ma": 1870,
+  "maRange": null,
+  "dateLabel": "c. 1.87 billion years ago",
+  "kind": "life",
+  "lonlat": [
+   -87.61,
+   46.46
+  ],
+  "place": "Empire Mine, near Palmer, Michigan, USA",
+  "evidence": "disputed",
+  "evidenceNote": "The coils are thin films of carbon in dated iron-rich rock; their regular shape suggests something living, but no cells are preserved to show what kind.",
+  "text": "Hundreds of coiled ribbons of carbon, each more than a centimetre long, lie in the Negaunee Iron Formation at the Empire Mine. Han and Runnegar (1992) named them Grypania, a seaweed-like eukaryote, and dated them to 2.1 billion years; the rock has since been redated to about 1.87 billion. If they are eukaryotes, they are the oldest big enough to see without a microscope. Disputed: unlike younger Grypania from Montana, China and India, about 1.45 to 1.4 billion years old, they show no segments, and they could be giant bacteria or bacterial colonies.",
+  "sources": [
+   {
+    "title": "Wikipedia: Grypania",
+    "url": "https://en.wikipedia.org/wiki/Grypania"
+   },
+   {
+    "title": "Bengtson et al. 2017, PLOS Biology: Three-dimensional preservation of cellular and subcellular structures suggests 1.6 billion-year-old crown-group red algae",
+    "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.2000735"
+   },
+   {
+    "title": "Knoll, Javaux, Hewitt & Cohen 2006, Philosophical Transactions of the Royal Society B: Eukaryotic organisms in Proterozoic oceans",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1578724/"
+   },
+   {
+    "title": "Miao et al. 2024, Science Advances: 1.63-billion-year-old multicellular eukaryotes from the Chuanlinggou Formation in North China",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10807817/"
+   }
+  ]
+ },
+ {
   "id": "sudbury-impact",
   "title": "The Sudbury impact",
   "ma": 1849,
@@ -684,27 +718,72 @@
   "place": "Changcheng Group, North China",
   "evidence": "fossil",
   "evidenceNote": "Microscopic fossils of this age are too large and too elaborately shaped to be bacteria; DNA comparisons suggest that such cells arose somewhat earlier.",
-  "text": "Eukaryotes are cells with a nucleus; all animals, plants and fungi are built of them. Their oldest widely accepted fossils, in rocks about 1.65 billion years old in North China, are already varied. Molecular clocks place the last common ancestor of living eukaryotes between about 1.2 and more than 1.8 billion years ago. Older candidates are doubtful: coiled Grypania, 1.87 billion years old, could be a giant bacterium or a colony of bacteria.",
+  "text": "Eukaryotes are cells with a nucleus; all animals, plants and fungi are built of them. Their oldest widely accepted fossils are acritarchs: tiny organic cases, mostly a few hundredths to a tenth of a millimetre across, made by organisms nobody can name. Ornamented ones in the Changcheng Group of North China and in northern Australia, about 1.65 billion years old, are already varied. Disputed: plainer acritarchs about 1.8 billion and even 2.1 billion years old may be early eukaryotes or just bacteria. Molecular clocks place the last common ancestor of living eukaryotes between about 1.2 and more than 1.8 billion years ago.",
   "sources": [
    {
     "title": "Wikipedia: Eukaryote",
     "url": "https://en.wikipedia.org/wiki/Eukaryote"
    },
    {
-    "title": "Wikipedia: Paleoproterozoic",
-    "url": "https://en.wikipedia.org/wiki/Paleoproterozoic"
+    "title": "Wikipedia: Acritarch",
+    "url": "https://en.wikipedia.org/wiki/Acritarch"
+   },
+   {
+    "title": "Knoll, Javaux, Hewitt & Cohen 2006, Philosophical Transactions of the Royal Society B: Eukaryotic organisms in Proterozoic oceans",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1578724/"
+   },
+   {
+    "title": "Miao et al. 2024, Science Advances: 1.63-billion-year-old multicellular eukaryotes from the Chuanlinggou Formation in North China",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10807817/"
+   },
+   {
+    "title": "Bengtson et al. 2017, PLOS Biology: Three-dimensional preservation of cellular and subcellular structures suggests 1.6 billion-year-old crown-group red algae",
+    "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.2000735"
+   },
+   {
+    "title": "Nanjing Institute of Geology and Palaeontology: Fossil evidence of early eukaryotes found in the early Proterozoic strata of the North China platform (Yin et al. 2020)",
+    "url": "https://english.nigpas.cas.cn/new/hs/rp/202207/t20220725_309203.html"
    },
    {
     "title": "Brocks et al. 2023, Nature: Lost world of complex life and the late rise of the eukaryotic crown",
     "url": "https://www.nature.com/articles/s41586-023-06170-w"
+   }
+  ]
+ },
+ {
+  "id": "roper-group-microfossils",
+  "title": "The Roper Group: a sea of early complex cells",
+  "ma": 1450,
+  "maRange": [
+   1500,
+   1400
+  ],
+  "dateLabel": "c. 1.5 to 1.4 billion years ago",
+  "kind": "fossil-site",
+  "lonlat": [
+   134.53,
+   -14.74
+  ],
+  "place": "Roper River area, Northern Territory, Australia",
+  "evidence": "fossil",
+  "evidenceNote": "Crystals in a volcanic ash layer low in the rocks are dated to 1,492 million years, and many of the fossil cell walls are too ornate and varied to be bacteria.",
+  "text": "Drill cores through more than 1,000 metres of mudstone and sandstone of the Roper Group hold 34 kinds of microfossil. Javaux and Knoll count five as certain eukaryotes, among them the acritarch Tappania, whose uneven, finger-like outgrowths suggest a growing cell; it has been compared with fungi. These early complex cells were commonest in shallow, well-oxygenated coastal seas. A 2026 study of rocks in northern Australia between 1.75 and 1.4 billion years old reached the same conclusion: the first complex cells lived on oxygen-rich sea floors near the shore.",
+  "sources": [
+   {
+    "title": "Javaux & Knoll 2017, Journal of Paleontology: Micropaleontology of the lower Mesoproterozoic Roper Group, Australia, and implications for early eukaryotic evolution",
+    "url": "https://www.cambridge.org/core/product/FF1441488B3ECCA24942FCA5EE22FBD8"
    },
    {
-    "title": "Rasmussen et al. 2008, Nature: Reassessing the first appearance of eukaryotes and cyanobacteria",
-    "url": "https://www.nature.com/articles/nature07381"
+    "title": "Javaux, Knoll & Walter 2001, Nature: Morphological and ecological complexity in early eukaryotic ecosystems (ORBi record)",
+    "url": "https://orbi.uliege.be/handle/2268/15812"
    },
    {
-    "title": "Wikipedia: Grypania",
-    "url": "https://en.wikipedia.org/wiki/Grypania"
+    "title": "Knoll, Javaux, Hewitt & Cohen 2006, Philosophical Transactions of the Royal Society B: Eukaryotic organisms in Proterozoic oceans",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1578724/"
+   },
+   {
+    "title": "Sci.News 2026: Early complex life forms were bottom-dwellers (on Lechte et al. 2026, Nature: Early fossil eukaryotes were benthic aerobes)",
+    "url": "https://www.sci.news/paleontology/bottom-dwelling-early-fossil-eukaryotes-14797.html"
    }
   ]
  },
@@ -939,6 +1018,39 @@
    {
     "title": "Wikipedia: Rodinia",
     "url": "https://en.wikipedia.org/wiki/Rodinia"
+   }
+  ]
+ },
+ {
+  "id": "wengan-biota",
+  "title": "Weng'an: spiny cysts and 'embryos'",
+  "ma": 590,
+  "maRange": [
+   609,
+   570
+  ],
+  "dateLabel": "c. 609 to 570 million years ago",
+  "kind": "fossil-site",
+  "lonlat": [
+   107.47,
+   27.08
+  ],
+  "place": "Weng'an County, Guizhou, China",
+  "evidence": "disputed",
+  "evidenceNote": "Calcium phosphate replaced soft cells before they rotted, so single cells survive; the clusters divide like embryos, but some algae and single-celled relatives of animals divide the same way.",
+  "text": "Phosphate rock of the Doushantuo Formation at Weng'an preserves microscopic life in three dimensions, down to single cells. Among the fossils are large spiny acritarchs and balls of dividing cells, often found inside them, that Xiao and colleagues (1998) read as the embryos of early animals. Disputed: Bailey and colleagues (2007) proposed giant sulfur bacteria; Cunningham and colleagues (2017) reject that but find nothing that proves an animal, and others suggest algae or single-celled relatives of animals. Identical spiny cases occur in South China soon after the Marinoan ice, about 632 million years ago.",
+  "sources": [
+   {
+    "title": "Cunningham et al. 2017, Journal of the Geological Society: The Weng'an Biota (Doushantuo Formation): an Ediacaran window on soft-bodied and multicellular microorganisms",
+    "url": "https://research-information.bris.ac.uk/ws/files/114083478/jgs2016_142.full.pdf"
+   },
+   {
+    "title": "Wikipedia: Doushantuo Formation",
+    "url": "https://en.wikipedia.org/wiki/Doushantuo_Formation"
+   },
+   {
+    "title": "Knoll, Javaux, Hewitt & Cohen 2006, Philosophical Transactions of the Royal Society B: Eukaryotic organisms in Proterozoic oceans",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1578724/"
    }
   ]
  },
