@@ -578,3 +578,6 @@ body.immersed #bar, body.immersed #tabbar { visibility: hidden; }
 .fopen .src li { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .fopen .src a { color: var(--ink-3); }
 @media (max-width: 760px) { .fgrid { grid-template-columns: repeat(2, 1fr); } .ftile span { display: none; } .ftile { align-items: center; } .ftile svg { grid-row: auto; } }
+/* phones: the age is already in big type on the card (and on the life chart's pill), so the label above the timeline, which ran over the
+   turning-point markers, is left out */
+@media (max-width: 760px) { #cursorLabel { display: none; } }
