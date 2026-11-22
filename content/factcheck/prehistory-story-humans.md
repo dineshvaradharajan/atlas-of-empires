@@ -192,3 +192,76 @@ Licence doubts:
   credit.
 - Several museum photos may show casts rather than originals (Ardi in Addis Ababa, Turkana Boy in Nairobi,
   Kenyanthropus); captions or notes say so where it is likely.
+
+## Source check, 2026-11-22
+
+Every page in each chapter's `sources` was fetched again (paper abstracts through the same Europe PMC REST URLs;
+a few timed out or returned 503 at first and were fetched again more slowly) and every claim in title, dateLabel,
+text, species, site notes and evidenceNote was compared with them. Where the cited pages did not settle a claim,
+the extra pages listed below were opened. No `ma` value was changed: every `ma` matches its dateLabel.
+
+### Corrections
+- [lucys-kind] text: "they are the oldest footprints that everyone agrees were made by a creature walking on two legs" → "they are widely accepted as the oldest footprints made by a creature walking on two legs" — the cited paper says "widely accepted as the oldest unequivocal evidence"; "everyone agrees" overstated it — https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1038%2Fs41586-021-04187-7%22&resultType=core&format=json
+- [first-of-our-genus] text: "named from fossils found at Olduvai Gorge in Tanzania in 1960" → "named in 1964 from fossils found at Olduvai Gorge in Tanzania from 1960 on" — the fossils were found 1960-1963 and the species was named in 1964 — https://humanorigins.si.edu/evidence/human-fossils/species/homo-habilis
+- [homo-erectus] text: "By about 1.76 million years ago, toolmakers at Kokiselei in Kenya were shaping the first hand-axes." → "By about 1.76 million years ago, toolmakers at Kokiselei in Kenya were shaping hand-axes, and finds from Melka Kunture in Ethiopia, reported in 2023, push the first ones back to about 1.95 million years." — Mussi et al. 2023 (Science) report the earliest known Acheulean, c. 1.95 Ma, at Garba IV, Melka Kunture; Kokiselei is no longer the oldest — https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1126%2Fscience.add9115%22&resultType=core&format=json ; https://en.wikipedia.org/wiki/Acheulean
+- [homo-erectus] site Kokiselei 4 note: "The oldest known hand-axes, about 1.76 million years old." → "Among the oldest known hand-axes, about 1.76 million years old; only finds at Melka Kunture in Ethiopia are older." — same reason — https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1126%2Fscience.add9115%22&resultType=core&format=json
+- [java-and-china] text: "the 'Peking Man' fossils from Zhoukoudian near Beijing are about 770,000 years old" → "the oldest 'Peking Man' fossils from Zhoukoudian near Beijing are about 770,000 years old" — Shen et al. 2009 date only the lower layers 7-10 to 0.77 Ma; Peking Man fossils span c. 800,000 to 230,000 years — https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1038%2Fnature07741%22&resultType=core&format=json ; https://en.wikipedia.org/wiki/Peking_Man
+- [our-species] text: "Fossils from Omo Kibish in Ethiopia, at least 233,000 years old, have fully modern skulls." → "The Omo I skull from Omo Kibish in Ethiopia, at least 233,000 years old, looks fully modern." — Omo I is the modern-looking one; Omo II keeps some primitive features — https://en.wikipedia.org/wiki/Omo_remains
+- [many-kinds-of-humans] text: "So Africa held at least three kinds of humans at the same time as early Homo sapiens," → "So Africa held at least three kinds of humans at the same time, early Homo sapiens among them," — Grün et al. 2020 count three contemporaneous African lineages including H. sapiens (H. sapiens, H. heidelbergensis/rhodesiensis, H. naledi), not three besides it — https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1038%2Fs41586-020-2165-4%22&resultType=core&format=json
+- [many-kinds-of-humans] site Rising Star note: "More than 15 Homo naledi individuals" → "At least 15 Homo naledi individuals" — Smithsonian: "at least 15" from the Dinaledi Chamber; also matches the chapter text — https://humanorigins.si.edu/evidence/human-fossils/species/homo-naledi
+- [denisovans] text: "DNA from a child's tiny finger bone" / "and one girl from the cave, nicknamed Denny," → "DNA from a young girl's tiny finger bone" / "and another girl from the cave, nicknamed Denny," — Denisova 3 was a juvenile (c. 13.5-year-old) female — https://en.wikipedia.org/wiki/Denisovan
+- [denisovans] text: "up to about 5 percent of the DNA of people in New Guinea and nearby islands comes from them." → "up to about 5 percent of the DNA of some people in New Guinea, Australia and the Philippines comes from them." — roughly 5% in Melanesians, Aboriginal Australians and Filipino Negritos; the highest known share is in the Ayta Magbukon of Luzon, not in New Guinea — https://en.wikipedia.org/wiki/Denisovan
+- [last-neanderthals] text: "They had shared Europe with incoming modern humans for between 2,600 and 5,400 years," → "They had shared Europe with incoming modern humans for several thousand years (2,600 to 5,400 by a 2014 estimate, at least 5,000 by a 2025 one)," — Sümer et al. 2025 put the overlap at least 5,000 years, longer than Higham et al. 2014's range — https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1038%2Fs41586-024-08420-x%22&resultType=core&format=json
+- [last-neanderthals] text: "Neanderthals survived until about 28,000 years ago." → "Neanderthals survived until about 28,000 radiocarbon years ago." — Finlayson et al. 2006 give 28 kyr BP in radiocarbon years (calendar age is older); the site note already said so — https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1038%2Fnature05195%22&resultType=core&format=json
+- [into-the-americas] text: "was argued in 2026 to be less than 8,000 years old," → "was argued in 2026 to be no older than about 8,200 years," — Surovell et al. 2026: Monte Verde "cannot be older than the Middle Holocene (8200 to 4200 years B.P.)" — https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1126%2Fscience.adw9217%22&resultType=core&format=json
+- [into-the-americas] site Monte Verde note: "re-dated in 2026 to under 8,000 years; disputed." → "re-dated in 2026 to no older than about 8,200 years; disputed." — same reason — same URL
+- [into-the-americas] text: "the Clovis people, named after finds at Blackwater Draw in New Mexico," → "the Clovis people, named after finds near the town of Clovis in New Mexico," — the culture is named after the town; Blackwater Draw Locality 1 is its type site near Clovis — https://en.wikipedia.org/wiki/Clovis_culture
+- [java-and-china] sources title: "EurekAlert (AAAS): Homo erectus arrived in Sangiran 300,000 years later than thought (Matsu'ura et al. 2020)" → "EurekAlert (AAAS): Early humans arrived in Southeast Asia later than previously believed (Matsu'ura et al. 2020)" — the page's real title — https://www.eurekalert.org/news-releases/766424
+- [across-the-sea-to-sahul] sources title: "University of Southampton: Ancient Australian settlers arrived about 60,000 years ago (Science Advances, 2025)" → "University of Southampton: New Guineans and Aboriginal Australians descend from two groups of settlers who arrived 60,000 years ago (Science Advances, 2025)" — the page's real title — https://www.southampton.ac.uk/news/2025/11/ancient-australian-settlers.page
+
+### Sources added
+- [homo-erectus] Mussi et al. 2023, Science (Europe PMC record, as above), for the 1.95 Ma Acheulean (now 6 sources; FACTCHECK.md allows up to 6).
+- [our-species] Wikipedia: Omo remains (https://en.wikipedia.org/wiki/Omo_remains), for Omo I versus Omo II.
+- [denisovans] Wikipedia: Baishiya Karst Cave (https://en.wikipedia.org/wiki/Baishiya_Karst_Cave), for the 3,280 m altitude in the Xiahe site note, which no cited page gave (now 6 sources).
+- [last-neanderthals] Sümer et al. 2025, Nature (Europe PMC record, as above), for the overlap of at least 5,000 years.
+
+### Dead or replaced sources
+- None dead. All 71 cited URLs answered HTTP 200 (seven Europe PMC records needed a second, slower try after timeouts or 503s).
+- The University of Cape Town news URL (homo-erectus) now redirects to a PDF of the same press release
+  (www.news.uct.ac.za/images/archive/releases/2020/2020.04.03_FossilDiscovery.pdf). The text still supports the
+  chapter ("more than 150 individual fragments", Drimolen "north of Johannesburg"), so the link was kept.
+
+### Softened, or not fully confirmed on an opened page
+- lucys-kind: "everyone agrees" softened to "widely accepted" (above).
+- our-species: "braincases were longer and lower" - Hublin et al. 2017's abstract says only that the neurocranium is
+  "more primitive" while face, jaw and teeth align with modern humans; "longer and lower" is the usual description
+  but was not on an opened page. Kept.
+- atapuerca evidenceNote: the dating methods (uranium-series on cave rock, luminescence) are not named in the
+  Arsuaga et al. 2014 abstract, which says only "a variety of techniques". Kept.
+- homo-erectus evidenceNote: Drimolen dated "from layers of flowstone"; the UCT release mentions dating speleothem
+  (cave rock) but the Herries et al. 2020 abstract names no method. Kept.
+- lucys-kind evidenceNote: Lucy's argon-argon dates (3.22 and 3.18 Ma) are on the Lucy page; argon dating of the
+  Laetoli footprint tuff was not stated on an opened page. Kept.
+- first-upright-apes: the DNA split range "13 and 5 million years ago" matches origins.json; Wikipedia's
+  Sahelanthropus page gives 14-7 Ma (most use 8-7 Ma). Left as is because it is hedged and agrees with origins.json.
+- many-kinds-of-humans: Martinón-Torres et al. 2024 (JHE) has no abstract in Europe PMC; only its title (which states
+  its position) was read.
+- first-stone-tools: "Nyayanga in western Kenya" - the opened pages say "Homa Peninsula, Kenya" (on Lake Victoria,
+  western Kenya); fine but not literally stated.
+- denisovans: "Denisovan DNA in the cave's layers goes back about 217,000 years" and the site range 217,000-55,000
+  come from Wikipedia (Denisovan), not from the Jacobs et al. 2019 abstract, which gives occupation c. 300,000-20,000.
+
+### Recent findings checked (last 5 years)
+- Acheulean at 1.95 Ma, Melka Kunture (Mussi et al. 2023) - used (correction above).
+- Overlap of at least 5,000 years and admixture 45,000-49,000 years ago (Sümer et al. 2025) - used.
+- Monte Verde re-dating (Surovell et al. 2026) - wording aligned with the paper's 8,200-4,200 BP bound.
+- Wikipedia (Settlement of the Americas) cites a 2025 radiocarbon study giving White Sands >23,600-17,000 cal BP;
+  the chapter's "about 23,000 to 21,000" (Pigati et al. 2023) is still within it. Not changed.
+
+### Counts
+- Chapters checked: 16 (all; no `ma` changes).
+- Pages fetched: 90 (71 cited sources plus 19 extra pages: Wikipedia Orrorin, OH 7, Omo remains, Acheulean,
+  Homo floresiensis, Homo luzonensis, Kabwe 1, Bacho Kiro cave, Monte Verde, Pestera cu Oase, Paisley Caves,
+  Blackwater Draw, Gorham's Cave, Neanderthal, Homo naledi, Baishiya Karst Cave; Smithsonian A. anamensis and
+  H. floresiensis; Mussi et al. 2023 via Europe PMC).
+- Corrections: 15 to facts (12 in chapter texts, 3 in site notes), 2 source titles fixed, 4 sources added.

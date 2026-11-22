@@ -162,3 +162,34 @@ Doubts and notes:
   guitar pick on the fossil); the Cincinnati Lepidodendron stump diorama (weak picture). No openly licensed photo of the
   Zachełmie quarry, the Somerset forest cliffs or the Riola/Vermilion Grove forest was found.
 
+
+## Source check, 2026-11-22
+
+Every chapter's title, dateLabel, text, species, site notes and evidenceNote re-checked against the cited pages (all
+fetched again, about one request every 2 s per site), with extra sources where a cited page did not settle a claim.
+
+Corrections:
+- [spores-on-bare-land] text: "and, a few million years later, in Saudi Arabia and Czechia" → "and, about ten million years later, in Saudi Arabia and Czechia" — Rubinstein et al. 2010: the Argentine spores (c. 473–471 Ma) predate the late Darriwilian Saudi and Czech ones (c. 463–461 Ma) by c. 8–12 million years — https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22Early%20Middle%20Ordovician%20evidence%20for%20land%20plants%20in%20Argentina%22&resultType=core&format=json&pageSize=2
+- [first-land-animals] text: "and probably fed on rotting plants" → "and may have fed on rotting plants, as most millipedes do today" — no fetched page gives Kampecaris's diet; Wikipedia says most millipedes are detritivores and lists Kampecaris obanensis among the earliest millipedes — https://en.wikipedia.org/wiki/Millipede
+- [first-land-animals] evidenceNote: "Zircon crystals in volcanic ash give the ages of the rocks" → "Zircon crystals in the rocks give the ages of the Kerrera and Stonehaven beds" — only the Stonehaven age comes from an ash bed (Suarez et al. 2017); the Kerrera age is from zircons in the millipede-bearing sediments (Brookfield et al. 2020), and Dolichophonus is dated by fossils (Telychian) — https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0179262
+- [first-land-animals] sources: "Wikipedia: Kampecaris" → "Wikipedia: Millipede" — the Millipede page backs the 425 Ma age and the diet hedge; the 425 Ma age and "oldest bug" remain backed by the UT Austin page — https://en.wikipedia.org/wiki/Millipede
+- [rhynie-chert] text: "Towering over everything was Prototaxites, a tall trunk-like column" → "Rising a metre or more above everything else was Prototaxites, a trunk-like column" — at Rhynie it grew "a metre or more taller than anything in the community"; the 8-metre trunks come from other sites — https://en.wikipedia.org/wiki/Rhynie_chert
+- [first-forests] text: "whose deep, spreading roots" → "whose extensive, spreading roots" — Stein et al. 2020 describe "spectacularly extensive" root systems comparable to modern seed plants, and stress their impact beyond "tree size or rooting depth alone"; "deep" was not supported — https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22Mid-Devonian%20Archaeopteris%20Roots%20Signal%20Revolutionary%20Change%20in%20Earliest%20Fossil%20Forests%22&resultType=core&format=json&pageSize=2
+- [tiktaalik] text: "about 395 million years old, suggest that animals with legs were already walking 20 million years earlier" → "about 390 million years old, suggest that animals with legs were already walking more than ten million years earlier" — the tracks are lower to middle Eifelian (Eifelian 393.47–387.95 Ma); Wikipedia gives them as "about 12 million years older than Tiktaalik"; the village article no longer gives 395 — https://en.wikipedia.org/wiki/Eifelian , https://en.wikipedia.org/wiki/Tiktaalik , https://en.wikipedia.org/wiki/Zachelmie_trackways
+- [tiktaalik] site "Zachełmie quarry" ma: 395 → 390 — same reason; now agrees with o:tetrapods (390). Site-level only; the chapter ma (375) is unchanged.
+- [tiktaalik] sources: "Wikipedia: Zachełmie, Świętokrzyskie Voivodeship" → "Wikipedia: Eifelian" — the village page (live) no longer states an age; the Eifelian page gives the current stage dates — https://en.wikipedia.org/wiki/Eifelian
+
+No chapter "ma" changed (only the one site ma above). All dateLabels agree with their ma.
+
+Dead or replaced sources:
+- None dead: all 42 distinct cited URLs (47 citations) returned HTTP 200 (the UCC Cooksonia page redirects from http to https).
+- Replaced (not dead): Wikipedia: Kampecaris → Wikipedia: Millipede; Wikipedia: Zachełmie village → Wikipedia: Eifelian.
+
+Softened or not confirmed on a fetched page:
+- [first-land-animals] "nobody can yet say whether [Dolichophonus] lived on land or in water": not on the Dolichophonus page; Wikipedia "Scorpion" (fetched) says whether early scorpions were marine or terrestrial "has been debated". Kept as written; the Scorpion page is not added because the chapter already has 5 sources.
+- [first-land-animals] Wikipedia "Millipede" gives an older millipede body fossil (Wenlock, about 427 Ma) than Kampecaris; the text already says "one of the oldest land animals", so no change.
+- [first-land-animals] site note "Pneumodesmus, the oldest animal with clear air-breathing holes": Wikipedia (Pneumodesmus) calls it the earliest documented arthropod with a tracheal system, but notes older land arthropods (Kerrera, Ludlow) exist; "clear air-breathing holes" keeps the claim narrow enough. Kept.
+- [insects-take-flight] Wikipedia "Evolution of insects" now gives Guandacol Formation (Argentina) insects as the oldest winged insects (as of 2025), followed by Delitzschala; the text says "one of the oldest", so no change. Gene-clock dates of about 400 Ma are called "likely analytical artefacts" by Wikipedia "Pterygota"; the evidenceNote already says no such fossils are known.
+- [cooksonia] the UCC page says Cooksonia was "a few millimetres high" and about 415 Ma; the text follows Wikipedia ("a few centimetres tall") and the 2024 zircon ages, as in the original log.
+
+Counts: 13 chapters checked; 45 pages fetched and read (the 42 distinct cited URLs, plus Wikipedia: Eifelian, Millipede and Scorpion; the first two are now cited; a Scientific Reports paper on early scorpions could not be opened, as the publisher redirects to a login, and is not used); 9 corrections (6 text or evidenceNote, 1 site ma, 2 sources), 0 chapter ma changes.

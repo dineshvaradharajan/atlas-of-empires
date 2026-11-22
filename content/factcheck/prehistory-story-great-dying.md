@@ -77,3 +77,34 @@ Licence and attribution doubts:
 - Claraia photo credit is given as "Wolfgang Moroder" from the author line, which also asks for notification of use.
 - Considered and rejected: Conodonts.jpg (public domain claimed but no author or source), two Merikanto temperature curves (own-work plots with no stated data source), Emeishan temple photos (not geology), Maternal Chaohusaurus (very narrow strip).
 - No openly licensed photo of the Meishan section itself was found on Commons; chapter 5 uses a graph and a Permian brachiopod from Texas, and says so in the notes.
+
+## Source check, 2026-11-22
+
+Every chapter's cited pages were fetched again and each claim in title, dateLabel, text, species, site notes and evidenceNote was checked against them; chapter "ma" values all fall inside their dateLabels and none was changed.
+
+### Corrections
+- [siberian-traps-erupt] text: "and about 7 million square kilometres of basalt survive today." → "and their lavas still cover about 2.5 million square kilometres of Siberia, with more buried under younger rocks to the west." — the 7 million km² figure (Wikipedia, after Masaitis) is the inferred full extent of the province including buried and offshore rocks; the outcrop on the Siberian craton is about 2.5 million km², with basalt subcrops under the West Siberian Basin (Reichow et al. 2009 put the whole province at up to 5 million km²) — https://www.igm.nsc.ru/labs/lab212/~safonova/pdf/epsl-reichow2009.pdf
+- [lystrosaurus-everywhere] text: "Lystrosaurus, a pig-sized dicynodont with a beak and two tusks." → "Lystrosaurus, a stocky dicynodont with a beak and two tusks, most kinds half a metre to a metre long." — the cited article gives L. murrayi about 50 cm and L. declivis just over 1 m; "pig-sized" overstated most species — https://en.wikipedia.org/wiki/Lystrosaurus
+- [manda-dinosaur-cousins] text: "Ctenosauriscus lived in Germany about 248 million years ago" → "about 247 million years ago" — its latest Olenekian beds are dated 247.5 to 247.2 million years old — https://en.wikipedia.org/wiki/Ctenosauriscus
+- [manda-dinosaur-cousins] site "Near Gottingen, Germany" ma: 248 → 247.4 — same reason (site pin date only; the chapter "ma" of 244 is unchanged) — https://en.wikipedia.org/wiki/Ctenosauriscus
+- [carnian-rains-dinosaurs-spread] text: "about 40 percent dinosaur tracks during them, and over 90 percent soon after." → "about 40 percent dinosaur tracks near their end, and over 90 percent in the layers above." — Bernardi et al. give 40% for early Tuvalian ichnosites (the end of the episode) and over 90% for late Tuvalian to Norian sites, which span millions of years, not "soon after" — https://pmc.ncbi.nlm.nih.gov/articles/PMC5902586
+- [carnian-rains-dinosaurs-spread] site note: "Dated trackways show dinosaurs appearing exactly when the rains began." → "Dated trackways show dinosaurs appearing during the rainy episode, not before it." — the paper shows dinosaurs absent from the pre-episode Julian formations and present in the Heiligkreuz-Travenanzes beds laid down during it; "exactly when the rains began" is more precise than the evidence — https://pmc.ncbi.nlm.nih.gov/articles/PMC5902586
+
+### Sources added or replaced
+- [capitan-reef] added Wikipedia: Guadalupian (https://en.wikipedia.org/wiki/Guadalupian): supports the evidenceNote's "world reference section for the Middle Permian" (the series is named after the Guadalupe Mountains and its base GSSP is at Stratotype Canyon there), which neither NPS page states.
+- [karoo-before-the-fall] added Wikipedia: Inostrancevia (https://en.wikipedia.org/wiki/Inostrancevia): supports Inostrancevia in South Africa after Rubidgea, and its length of 3 to 3.5 m; the Gorgonopsia page gives the size but not the Karoo record.
+- [siberian-traps-erupt] added Reichow et al. 2009 (university-hosted PDF of the EPSL paper) for the area figures.
+- [manda-dinosaur-cousins] added Wikipedia: Ctenosauriscus for its age and find spot near Göttingen, which no cited page covered.
+- No cited source was dead. Three are behind bot checks for scripted fetches but load normally: pmc.ncbi.nlm.nih.gov/articles/PMC4643808 (read through the Europe PMC full-text service instead), PMC3948271 (loaded on a second try) and the EurekAlert Leeds release (read with a browser-style fetch). They were kept.
+
+### Softened or not fully confirmed
+- [hot-acid-breathless] site note "About 15,000 conodonts from rocks here": the Leeds/EurekAlert release says 15,000 conodonts from two tonnes of rock "from South China", and the Sun et al. 2012 abstract (White Rose repository) names no basin. A search summary attributes the sections to the Nanpanjiang Basin, but I could not open a page that states it. Left unchanged.
+- [karoo-before-the-fall] evidenceNote "dated by volcanic ash layers": the Beaufort Group page lists tuff among its rocks, and the Capitanian page cites U-Pb dating of a Karoo tuff; the Beaufort page itself does not discuss ash dating. Left unchanged.
+- [siberian-traps-erupt] Burgess & Bowring 2015 find that the big sill pulse began with the extinction, not 300,000 years before it; the text does not date the sills, so it was left as is.
+- [manda-dinosaur-cousins] evidenceNote "a younger, Late Triassic age": the Argentine SHRIMP date is 233.8 to 237.8 million years (mostly early Carnian), and the Manda Formation page says late Ladinian to early Carnian for South American Dinodontosaurus beds. "Late Triassic" is at the young end of that range but was kept, as the chapter is already marked disputed.
+- Ctenosauriscus at about 247 million years is younger than the "c. 248" in o:archosaurs; that file was not edited (out of scope).
+
+### Counts
+- Chapters checked: 12
+- Source pages fetched: 45 (the 38 cited pages plus Europe PMC full text of Burgess & Bowring 2015, Reichow et al. 2009, Wikipedia Guadalupian, Inostrancevia, Rubidgea and Ctenosauriscus, and the White Rose record of Sun et al. 2012); 5 more failed (Leeds news 404, a CUG page with DNS failure, ADS, Figshare and Durham repository 403)
+- Corrections: 6 (5 text or note fixes, 1 site ma), plus 4 sources added

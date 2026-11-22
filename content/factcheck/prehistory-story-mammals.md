@@ -72,3 +72,31 @@ Thumbnail widths are 960 or 1280 px only; files narrower than 960 px use the ori
 ## Sources not reachable
 - UNESCO pages (403) and the Gingerich University of Michigan page (403) could not be opened, so they are not cited. The Secord et al. 2012 horse paper is cited through EarthSky's report, because the UNL and Smithsonian repository pages failed (500/403).
 - The Han et al. 2023 article page redirected to a login, so it is not cited directly; Wikipedia's Repenomamus article and the Commons figures (CC BY 4.0) were used.
+
+## Source check, 2026-11-22
+
+Every chapter's cited pages were fetched again and each claim in title, dateLabel, text, species, site notes and evidenceNote was checked against them; chapter "ma" values all fall inside their dateLabels and none was changed.
+
+### Corrections
+- [hothouse-newcomers] text: "warmed the world by about 5 to 8 °C in less than 10,000 years" → "in less than 20,000 years" — no cited page supported under 10,000 years; the PETM article gives the 5 to 8 °C rise and a rapid onset of the carbon isotope excursion of under 20,000 years (helium-3 records) — https://en.wikipedia.org/wiki/Paleocene%E2%80%93Eocene_Thermal_Maximum
+- [eocene-lake-windows] text: "fox-sized early horses" → "small early horses" — no cited page gives a fox-sized figure for the Messel horses (the Messel article calls them pygmy horses; the Eurohippus article gives no size) — https://en.wikipedia.org/wiki/Messel_pit
+- [mammoth-steppe-giants] text: "its small ears and paws suggest an animal built for the cold" → "its small ears and wide paws suggest an animal built for the cold" — Lopatin et al. 2024 describe the paw as wide, with square pads and no carpal pad, as snow adaptations; only the ears are small — https://pmc.ncbi.nlm.nih.gov/articles/PMC11564651/
+- [the-giants-disappear] text: "The last woolly rhinos lived in north-east Siberia about 14,000 years ago" → "The last reliably dated woolly rhinos lived in north-east Siberia about 14,000 years ago" — the cited article gives 14,000 years for the youngest reliable records but notes environmental DNA that may extend the species to about 9,800 years ago — https://en.wikipedia.org/wiki/Woolly_rhinoceros
+
+### Sources added or replaced
+- [small-mammals-dinosaur-world] Wikipedia: Yixian Formation replaced by Han et al. 2023, Scientific Reports (https://www.nature.com/articles/s41598-023-37545-8). The text's "a volcanic mudflow buried them both" was not on any cited page; the paper says a "lahar-type volcanic debris flow" and gives the Lujiatun beds' age as about 125.7 million years. The page now loads; the earlier log said it redirected to a login.
+- [hothouse-newcomers] Wikipedia: Sifrhippus replaced by Wikipedia: Paleocene–Eocene Thermal Maximum, for the size and speed of the warming. The Sifrhippus size figures are still covered by the EarthSky report on Secord et al. 2012.
+- No cited source was dead. The Denver Museum page refuses scripted fetches (403) but loads in a browser-style fetch; it confirms Carsioptychus at 300,000 years, Eoconodon (wolf-sized, 680,000 years), Taeniolabis (34 to 56 kg) and "a 100-fold increase in body size compared to the tiny survivors". The EurekAlert Cell Press release also needed a browser-style fetch; it confirms Wrangel's isolation about 10,000 years ago and 6,000 years of survival there.
+
+### Softened or not fully confirmed
+- [whales-return-to-sea] "About 49 million years ago ... Pakicetus": the cited article gives about 48.5 million years (range 48.7 to 45.4). Left as is because it matches origins.json (whales, 49) and is within rounding of the oldest date; a later pass could make it "about 48 million".
+- [eocene-lake-windows] site note "over 1,400 kinds of fossil plants and animals": the Messel article and Smith et al. 2024 (https://link.springer.com/article/10.1007/s12549-024-00633-2) give 1,409 taxa, including fungi. Taxa are not the same as species, since one plant can leave pollen, leaf and seed taxa. Kept, as "kinds" is loose enough.
+- [mammals-rebound] "mammal diversity doubled within about 100,000 years" is in the University of Washington release, not on the Denver Museum page.
+- [hothouse-newcomers] The Teilhardina "Asia to Europe to North America" route is hedged ("seems"); the Teilhardina article notes Wyoming finds once suggested a North American origin before the east-to-west model was preferred.
+- [great-american-interchange] Titanis height: the Florida Museum gives about 1.5 m and Wikipedia 1.4 to 2 m. Kept at "about 1.5 metres". Wikipedia dates the Florida Titanis finds to 2.2 to 1.8 million years; the text keeps the Florida Museum's 2.6 to 2.3 million years for Santa Fe River 1.
+- [the-giants-disappear] Wikipedia notes an environmental-DNA claim that mammoths survived on the Taymyr Peninsula until about 4,000 years ago, which has been questioned. The text's "mammoths died out on the mainland about 10,000 years ago" follows the mainstream radiocarbon view.
+
+### Counts
+- Chapters checked: 9
+- Source pages fetched: 43 (the 39 cited pages, counting the Denver Museum and EurekAlert pages read through a browser-style fetch, plus Han et al. 2023, Wikipedia PETM, Smith et al. 2024 on Springer and the Senckenberg Messel data portal); 2 failed (TU Darmstadt repository 403, publisso record with no text)
+- Corrections: 4, plus 2 sources replaced

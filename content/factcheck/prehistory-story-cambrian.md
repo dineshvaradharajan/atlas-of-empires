@@ -85,3 +85,29 @@ use the original) returned 429 both times, the second time after waiting the ful
 (696 px) returned 200. The 500 px thumbnails of both throttled files returned 200, so if the originals stay blocked, the
 fallbacks are `.../thumb/3/36/Ikaria_wariootia.jpg/500px-Ikaria_wariootia.jpg` and the matching 500px thumbnail of the
 small shelly fossils figure.
+
+## Source check, 2026-11-22
+
+Every chapter's title, dateLabel, text, species, site notes and evidenceNote re-checked against the cited pages (all
+fetched again, about one request every 2 s per site), with extra sources where a cited page did not settle a claim.
+
+Corrections:
+- [burst-of-body-plans] text: "mostly one or two millimetres long" → "many only a few millimetres long" — the cited page gives "many only a few millimetres long" (and notes they are "not always small"); "one or two" was over-precise — https://en.wikipedia.org/wiki/Small_shelly_fauna
+- [eyes-hunters-armour] text: "hold at least 16,000 lenses each" → "some with at least 16,000 lenses" — Paterson et al. 2011 eyes range from more than 3,000 lenses to at least 16,000 in some of them, not every eye — https://en.wikipedia.org/wiki/Emu_Bay_Shale
+- [burgess-shale-oddities] text: "Pikaia, about 5 centimetres long" → "Pikaia, up to about 5 centimetres long" — average length about 3.8 cm; Walcott's longest individuals were 5 cm — https://en.wikipedia.org/wiki/Pikaia
+- [fronds-of-mistaken-point] sources: added Matthews et al. 2020 (GSA Bulletin) — none of the cited pages gave the 565 Ma ash age in the text; this paper dates the E Surface to 565.00 ± 0.64 Ma and the oldest complex macrofossils at the reserve to 574.17 ± 0.66 Ma, which also supports "within about ten million years" of the Gaskiers in chapter 1 — https://ora.ox.ac.uk/objects/uuid:8891e6c5-3fef-459e-a45d-3a8ab82d4cae
+- [burgess-shale-oddities] sources: "Royal Ontario Museum: Human's oldest ancestor found in Burgess Shale" → "Wikipedia: Pikaia" — the 2012 ROM release (live, HTTP 200) gives no size and calls Pikaia "the most primitive known vertebrate", which is outdated; the Wikipedia page gives the size, the chordate features and the 2024 reinterpretation, keeping the list at 5 sources — https://en.wikipedia.org/wiki/Pikaia
+
+No "ma" values changed. All dateLabels agree with their ma.
+
+Dead or replaced sources:
+- None dead: all 40 distinct cited URLs (45 citations) returned HTTP 200 (the Caltech record redirects to its new address, authors.library.caltech.edu/records/32kvn-fa184; the Cambridge Meishucun page redirects to its /abs/ address).
+- Replaced (not dead): the ROM Pikaia release, as above.
+
+Softened or not confirmed on a fetched page:
+- [white-sea-first-animals] "the oldest animal confirmed by chemistry" is the ANU release's own claim; the Love and Zumberge (2021) doubt is already in evidenceNote. Kept.
+- [garden-of-ediacara] Ikaria "the size of a grain of rice" and its link to the burrows are not on the short UC Riverside page now online (it gives "tiny, wormlike" and "earliest bilaterian"); they match the 2020 PNAS paper as widely reported. Spriggina's "segmented body": Wikipedia (Ediacaran biota) notes its "segments" are offset halves (glide reflection), not true segments. Both left as written.
+- [fezouata-epilogue] the dateLabel "c. 485 to 478 million years ago" runs from the base of the Fezouata Formation to the main late Tremadocian beds; the upper exceptional interval is mid-Floian (about 474 Ma). Left, as the text gives "about 480 million years" for the richest beds.
+- [after-the-ice] Wikipedia gives two durations for the Gaskiers glaciation (about 250,000 years in its own article, 350,000 in Snowball Earth); the text's "a few hundred thousand years" covers both.
+
+Counts: 12 chapters checked; 42 pages fetched and read (the 40 distinct cited URLs, plus Wikipedia: Pikaia and Matthews et al. 2020 on ORA, both now cited; a Memorial University news page tried along the way returned 404 and is not used); 5 corrections (3 text, 2 sources), 0 ma changes.

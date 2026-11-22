@@ -1,5 +1,5 @@
 /* Earth history: a globe of the ancient Earth and a rock-column timeline. Data: ../data/earth-history.json (tools/prehistory.py),
-   maps: ../data/paleo/<Ma>.png (tools/paleo.py). Ages are in millions of years ago (Ma) throughout. */
+   maps: ../data/paleo/<Ma>.webp (tools/paleo.py, then tools/paleo_webp.py). Ages are in millions of years ago (Ma) throughout. */
 "use strict";
 const $ = (s) => document.querySelector(s);
 const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
