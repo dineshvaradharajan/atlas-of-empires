@@ -162,28 +162,49 @@ svg { fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round
 .k.gone { width: 2px; height: 11px; background: #ff6a4d; }
 .count { margin-left: auto !important; color: var(--ink-2) !important; }
 #lifeRows { flex: 1; overflow-y: auto; position: relative; scrollbar-width: thin; scrollbar-color: var(--rule) transparent; padding-bottom: 8px; }
-/* the family tree: lines share the timeline's scale (the same left and right padding as the track) */
-.tree { position: relative; margin: 6px var(--pad-r) 0 var(--pad-l); }
-.tbr { position: absolute; left: 0; right: 0; height: 22px; cursor: pointer; }
-.tbr .bar { position: absolute; top: 14px; height: 4px; border-radius: 2px; background: var(--g); }
-.tbr .clk { position: absolute; top: 15px; height: 2px; background: repeating-linear-gradient(90deg, var(--g) 0 3px, transparent 3px 6px); opacity: .7; }
-.tbr .end { position: absolute; top: 6px; margin-left: -3px; font: 700 12px/1 var(--sans); color: var(--ink-3); }
-.tbr .lab { position: absolute; top: 0; display: flex; align-items: center; gap: 4px; white-space: nowrap; }
-.tbr .nm { padding: 0; border: 0; background: none; font: 600 12px/14px var(--sans); color: var(--ink); text-shadow: 0 0 4px #05080f, 0 0 4px #05080f; }
-.tbr .more { min-width: 22px; height: 15px; padding: 0 5px; border: 1px solid var(--rule); border-radius: 8px; background: var(--panel); font: 700 10.5px/13px var(--sans); color: var(--ink-2); }
-.tbr .more:hover { border-color: var(--ink-2); color: var(--ink); }
-.tbr:hover .nm, .tbr.on .nm { color: var(--unit); }
-.tbr.on .bar { box-shadow: 0 0 0 2px var(--ink); }
-.tbr[data-st="fut"] .bar, .tbr[data-st="fut"] .clk { opacity: .18; }
-.tbr[data-st="fut"] .nm { color: var(--ink-3); font-weight: 500; opacity: .7; }
-.tbr[data-st="dead"] .bar { opacity: .45; }
-.tbr[data-st="dead"] .nm { color: var(--ink-3); font-weight: 500; }
-.tcn { position: absolute; width: 1.5px; margin-left: -.75px; background: var(--rule); pointer-events: none; }
-.tcn[data-st="alive"], .tcn[data-st="dead"] { background: var(--ink-3); opacity: .6; }
+/* when each group lived: a name column and a track; the track shares one scale with the strip of periods above it */
+#life { --nw: 270px; }
+#lifeScale, .lrow, .lcat { display: grid; grid-template-columns: var(--nw) 1fr; column-gap: 16px; padding: 0 22px 0 var(--gut); }
+.ltr { position: relative; min-width: 0; }
+#lifeScale { padding-top: 8px; padding-bottom: 4px; border-bottom: 1px solid var(--rule); }
+#lifeScale .ltr { height: 40px; }
+#lifeStrip span { position: absolute; top: 0; height: 20px; overflow: hidden; white-space: nowrap; font: 700 10.5px/20px var(--display); text-indent: 5px; color: #111; }
+#lifeTicks span { position: absolute; top: 24px; transform: translateX(-50%); font-size: 11px; color: var(--ink-3); white-space: nowrap; }
+#lifeTicks span:first-child { transform: none; }
+#lifeTicks span:last-child { transform: translateX(-100%); }
+#lifePill { position: absolute; z-index: 2; top: -1px; transform: translateX(-50%); padding: 2px 8px; border-radius: 10px; background: var(--unit); color: #fff; font: 800 11.5px/18px var(--display); white-space: nowrap; }
+#lifePill.edge { transform: none; } #lifePill.end { transform: translateX(-100%); }
+.lgrid { position: relative; padding-bottom: 8px; }
+.lcat { position: sticky; top: 0; z-index: 2; height: 30px; align-items: center; background: rgba(5, 8, 15, .97); border-top: 1px solid var(--rule); }
+.lcat .lnm { display: flex; align-items: center; gap: 8px; height: 30px; padding: 0; border: 0; background: none; font: 700 12.5px var(--sans); color: var(--ink); text-align: left; }
+.lcat svg { width: 12px; height: 12px; fill: none; stroke: currentColor; stroke-width: 2.4; flex: none; }
+.lcat .sw { width: 10px; height: 10px; border-radius: 3px; background: var(--g); flex: none; }
+.lcat .lcn { font-weight: 500; color: var(--ink-3); white-space: nowrap; }
+.lcat .lnm { min-width: 0; overflow: hidden; }
+.lcat b { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.lcat[data-st="none"] b { color: var(--ink-3); }
+.lcat .band { position: absolute; top: 12px; height: 6px; border-radius: 3px; background: var(--g); opacity: .35; }
+.lrow { height: 24px; align-items: center; cursor: pointer; }
+.lrow:hover, .lrow.on { background: rgba(244, 239, 230, .06); }
+.lrow .lnm { padding: 0 0 0 20px; border: 0; background: none; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; text-align: left; font: 500 12.5px var(--sans); color: var(--ink); }
+.lrow .lnm small { font-size: 11.5px; color: var(--ink-3); }
+.lrow .ltr { height: 24px; }
+.lrow .bar { position: absolute; top: 9px; height: 6px; border-radius: 3px; background: var(--g); }
+.lrow .clk { position: absolute; top: 11px; height: 2px; background: repeating-linear-gradient(90deg, var(--g) 0 3px, transparent 3px 6px); opacity: .75; }
+.lrow .lend, .lrow .lfrom { position: absolute; top: 5px; font-size: 11px; line-height: 14px; color: var(--ink-3); white-space: nowrap; }
+.lrow .lfrom { padding-right: 6px; display: none; }
+.lrow[data-st="fut"] .lfrom { display: block; }
+.lrow[data-st="fut"] .bar, .lrow[data-st="fut"] .clk { opacity: .2; }
+.lrow[data-st="fut"] .lnm, .lrow[data-st="dead"] .lnm { color: var(--ink-3); }
+.lrow[data-st="dead"] .bar { opacity: .45; }
+.lrow.on .lnm { color: var(--unit); font-weight: 600; }
+.lcur { position: absolute; top: 0; bottom: 0; left: calc(var(--gut) + var(--nw) + 16px); right: 22px; pointer-events: none; z-index: 3; }
+#lifeLine { position: absolute; top: 0; bottom: 0; width: 0; margin-left: -1px; border-left: 2px solid var(--unit); }
 .k.fut { background: var(--ink-2); opacity: .2; }
-.lall { height: 30px; padding: 0 12px; border: 1px solid var(--rule); border-radius: 15px; background: none; font: 600 12.5px var(--sans); color: var(--ink); }
-.lall:hover { border-color: var(--ink-2); }
-#lifeLine { position: absolute; top: -6px; bottom: 0; width: 0; margin-left: -1px; border-left: 2px solid var(--unit); pointer-events: none; z-index: 3; }
+.lspan { display: flex; height: 32px; padding: 3px; box-sizing: border-box; border: 1px solid var(--rule); border-radius: 16px; align-self: center; }
+.lspan button { padding: 0 12px; border: 0; border-radius: 13px; background: none; font: 500 12.5px var(--sans); color: var(--ink-2); white-space: nowrap; }
+.lspan button[aria-pressed="true"] { background: var(--ink); color: #0b0d12; font-weight: 600; }
+@media (max-width: 760px) { #life { --nw: 118px; } .lrow .lnm small, .lcat .lcn, .lrow .lend .lt { display: none; } .lrow .lnm { padding-left: 4px; } #lifeScale, .lrow, .lcat { column-gap: 8px; padding-right: 12px; } .lcur { left: calc(var(--gut) + var(--nw) + 8px); right: 12px; } }
 
 /* about */
 #about { position: absolute; z-index: 9; inset: 0; background: rgba(2, 3, 7, .72); display: grid; place-items: center; padding: 20px; }

@@ -634,70 +634,63 @@ function renderCurveNow() {
 }
 
 // ---------------------------------------------------------------- life through time
-// a family tree: each line is a group, from its oldest fossils to today (or to when it died out), branching off the group it grew
-// out of; the lines share the timeline's scale and sit right above it. The main branches show first; a branch opens its smaller groups.
-const MAIN = new Set(["first-life", "bacteria", "cyanobacteria", "archaea", "eukaryotes", "red-algae", "green-algae", "land-plants", "ferns", "seed-plants", "conifers",
-  "flowering-plants", "fungi", "animals", "sponges", "cnidarians", "arthropods", "trilobites", "insects", "molluscs", "ammonites", "chordates", "jawless-fish",
-  "cartilaginous-fish", "ray-finned-fish", "tetrapods", "amphibians", "amniotes", "turtles", "squamates", "plesiosaurs", "archosaurs", "crocodilians", "pterosaurs",
-  "dinosaurs", "tyrannosaurs", "birds", "synapsids", "mammals", "whales", "primates", "homo-sapiens"]);
-const LIFE = { open: new Set(), all: false, rows: [] }, LRH = 22;
-let lifeRows = [];
-function lifeShown(id) { return LIFE.all || MAIN.has(id) || LIFE.open.has(id); }
+// a chart of when each group lived: a row per group, from its oldest fossils to today or to when it died out, under a strip of the
+// periods. Two scales: the timeline's own (all 4.5 billion years) or the 540 million years since animals, where most groups live.
+// Each kind of life (fish, reptiles ...) is a heading that folds its rows away and says how many of them are alive at this time.
+const LIFE = { span: (() => { try { return localStorage.getItem("lifeSpan") || "animals"; } catch (e) { return "animals"; } })(), shut: new Set() };
+let lifeRows = [], lifeCats = [], lifeW = 0;
+const LX = (ma) => LIFE.span === "all" ? X(ma) : clamp((538.8 - ma) / 538.8, 0, 1);
 function buildLife() {
-  const O = new Map(D.origins.map((o) => [o.id, o])), up = (o) => { let p = o.parent; while (p && !lifeShown(p)) p = O.get(p)?.parent; return p ? O.get(p) : null; };
-  const kids = new Map(D.origins.map((o) => [o.id, []])), roots = [];
-  for (const o of D.origins) if (lifeShown(o.id)) { const p = up(o); (p ? kids.get(p.id) : roots).push(o); }
-  // hidden groups each shown branch would open: those whose nearest shown ancestor it is
-  const more = new Map();
-  for (const o of D.origins) if (!lifeShown(o.id)) { const p = up(o); if (p) more.set(p.id, (more.get(p.id) || 0) + 1); }
-  // smaller branches first, so that a big branch (the animals) does not push its small sisters (fungi) far below their parent
-  const size = new Map(), count = (o) => { let n = 1; for (const c of kids.get(o.id)) n += count(c); size.set(o.id, n); return n; };
-  for (const r of roots) count(r);
-  const order = [], walk = (o) => { order.push(o); for (const c of kids.get(o.id).sort((a, b) => size.get(a.id) - size.get(b.id) || b.fossilMa - a.fossilMa)) walk(c); };
-  for (const r of roots.sort((a, b) => b.fossilMa - a.fossilMa)) walk(r);
-  const row = new Map(order.map((o, i) => [o.id, i]));
   let h = "";
-  for (const o of order) {
-    const i = row.get(o.id), y = i * LRH, x0 = X(o.fossilMa), x1 = X(o.extinctMa || 0), ck = o.clockMa ? Math.max(...o.clockMa) : 0, p = up(o), n = more.get(o.id) || 0;
-    const flip = x0 > .78, col = gcol(o.group), opened = kids.get(o.id).some((c) => LIFE.open.has(c.id));
-    if (p) h += `<i class="tcn" style="left:${x0 * 100}%;top:${row.get(p.id) * LRH + 14}px;height:${y - row.get(p.id) * LRH}px" data-for="${o.id}"></i>`;
-    h += `<div class="tbr" data-id="${o.id}" style="top:${y}px;--g:${col}">` +
-      (ck > o.fossilMa ? `<i class="clk" style="left:${X(ck) * 100}%;width:${(x0 - X(ck)) * 100}%"></i>` : "") +
-      `<i class="bar" style="left:${x0 * 100}%;width:${Math.max(.2, (x1 - x0) * 100)}%"></i>` + (o.extinctMa ? `<i class="end" style="left:${x1 * 100}%">×</i>` : "") +
-      `<span class="lab" data-x="${x0}" style="${flip ? `right:calc(${(1 - x0) * 100}% + 6px)` : `left:calc(${x0 * 100}% + 6px)`}">` +
-      `<button type="button" class="nm" data-o="${o.id}">${esc(o.name.split(" (")[0])}</button>` +
-      (n ? `<button type="button" class="more" data-open="${o.id}" aria-label="Show ${n} smaller groups in ${esc(o.name.split(" (")[0])}">+${n}</button>` : opened && !LIFE.all ? `<button type="button" class="more" data-shut="${o.id}" aria-label="Hide the smaller groups">−</button>` : "") +
-      `</span></div>`;
+  for (const [g, name] of GROUPS) {
+    const rows = D.origins.filter((o) => o.group === g).sort((a, b) => b.fossilMa - a.fossilMa); if (!rows.length) continue;
+    const col = gcol(g), shut = LIFE.shut.has(g), st = Math.max(...rows.map((o) => o.fossilMa));
+    h += `<div class="lcat" data-g="${g}" style="--g:${col}"><button type="button" class="lnm" aria-expanded="${!shut}" data-fold="${g}"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="${shut ? "M9 6l6 6-6 6" : "M6 9l6 6 6-6"}"/></svg><i class="sw"></i><b>${esc(name)}</b><span class="lcn"></span></button>` +
+      `<span class="ltr">${shut ? `<i class="band" style="left:${LX(st) * 100}%;width:${(1 - LX(st)) * 100}%"></i>` : ""}</span></div>`;
+    if (shut) continue;
+    for (const o of rows) {
+      const x0 = LX(o.fossilMa), x1 = LX(o.extinctMa || 0), ck = o.clockMa ? Math.max(...o.clockMa) : 0, [nm, sub] = o.name.replace(/\)$/, "").split(" (");
+      h += `<div class="lrow" data-id="${o.id}" style="--g:${col}"><button type="button" class="lnm" title="${esc(o.name)}">${esc(nm)}${sub ? ` <small>${esc(sub)}</small>` : ""}</button><span class="ltr">` +
+        (ck > o.fossilMa && LX(ck) < x0 ? `<i class="clk" style="left:${LX(ck) * 100}%;width:${(x0 - LX(ck)) * 100}%"></i>` : "") +
+        `<i class="bar" style="left:${x0 * 100}%;width:${Math.max(.3, (x1 - x0) * 100)}%"></i>` +
+        (o.extinctMa ? `<span class="lend" style="${x1 > .9 ? `right:${(1 - x1) * 100}%;padding-right:6px` : `left:${x1 * 100}%;padding-left:6px`}">×<span class="lt"> died out ${esc(ageShort(o.extinctMa))}</span></span>` : "") +
+        `<span class="lfrom" style="right:${(1 - x0) * 100}%">${esc(ageShort(o.fossilMa))}</span></span></div>`;
+    }
   }
-  $("#lifeRows").innerHTML = `<div class="tree" style="height:${order.length * LRH + 10}px">${h}<div id="lifeLine"></div></div>`;
-  lifeRows = order.map((o) => ({ el: document.querySelector(`.tbr[data-id="${o.id}"]`), cn: document.querySelector(`.tcn[data-for="${o.id}"]`), o, st: null }));
-  $("#lifeAll").textContent = LIFE.all ? "Main branches only" : `Show all ${D.origins.length} groups`;
-  $("#lifeAll").setAttribute("aria-pressed", LIFE.all); lifeFitW = 0;
+  $("#lifeRows").innerHTML = `<div class="lgrid">${h}<div class="lcur" aria-hidden="true"><i id="lifeLine"></i></div></div>`;
+  lifeRows = [...document.querySelectorAll("#lifeRows .lrow")].map((el) => ({ el, o: D.origins.find((x) => x.id === el.dataset.id), st: null }));
+  lifeCats = [...document.querySelectorAll("#lifeRows .lcat")].map((el) => ({ el, rows: D.origins.filter((o) => o.group === el.dataset.g), n: -1 }));
+  document.querySelectorAll("#lifeSpan button").forEach((b) => b.setAttribute("aria-pressed", b.dataset.span === LIFE.span));
+  lifeW = 0;
+}
+function lifeScale() { // the strip of periods and the dates under it, only redrawn when the scale or the width changes
+  const tr = $("#lifeScale .ltr"), w = tr.clientWidth; if (!w || w === lifeW) return; lifeW = w;
+  const units = LIFE.span === "all" ? leaves : leaves.filter((u) => u.to < 538.8);
+  $("#lifeStrip").innerHTML = units.map((u) => { const a = LX(Math.min(u.from, LIFE.span === "all" ? u.from : 538.8)), b = LX(u.to), px = (b - a) * w;
+    return `<span style="left:${a * 100}%;width:${(b - a) * 100}%;background:${u.color}" title="${esc(u.name)}">${px > u.name.length * 6.4 + 8 ? esc(u.name) : ""}</span>`; }).join("");
+  const T = LIFE.span === "all" ? [[4567, "4.57 bn"], [2500, "2.5 bn"], [1000, "1 bn"], [538.8, "539 M"], [251.9, "252 M"], [66, "66 M"], [0, "today"]]
+    : [[538.8, "539 M"], [443.8, "444 M"], [358.9, "359 M"], [251.9, "252 M"], [201.4, "201 M"], [145, "145 M"], [66, "66 M"], [23, "23 M"], [0, "today"]];
+  let last = -99; $("#lifeTicks").innerHTML = T.map(([m, l]) => { const px = LX(m) * w; if (px - last < 46) return ""; last = px; return `<span style="left:${LX(m) * 100}%">${l}</span>`; }).join("");
 }
 function lifeTick() {
   if (!S.life) return; let n = 0;
   for (const g of D.origins) if (S.ma <= g.fossilMa && S.ma >= (g.extinctMa || 0)) n++;
   for (const r of lifeRows) {
     const st = S.ma > r.o.fossilMa ? "fut" : S.ma < (r.o.extinctMa || 0) ? "dead" : "alive";
-    if (st !== r.st) { r.st = st; r.el.dataset.st = st; if (r.cn) r.cn.dataset.st = st; }
+    if (st !== r.st) { r.st = st; r.el.dataset.st = st; }
     r.el.classList.toggle("on", S.sel?.item === r.o);
   }
+  for (const c of lifeCats) { const k = c.rows.filter((o) => S.ma <= o.fossilMa && S.ma >= (o.extinctMa || 0)).length; if (k !== c.n) { c.n = k; c.el.querySelector(".lcn").textContent = `${k} of ${c.rows.length} alive`; c.el.dataset.st = k ? "alive" : "none"; } }
   $("#lifeCount").textContent = `${n} of ${D.origins.length} groups alive ${S.ma < 0.0002 ? "today" : ageText(S.ma)}`;
-  $("#lifeLine").style.left = X(S.ma) * 100 + "%";
-  lifeFit();
+  const x = LX(S.ma), before = LIFE.span !== "all" && S.ma > 538.8;
+  $("#lifeLine").style.left = x * 100 + "%"; $("#lifeLine").hidden = before;
+  const pill = $("#lifePill"); pill.style.left = x * 100 + "%"; pill.textContent = before ? `${ageShort(S.ma)}: before animals` : S.ma < 0.0002 ? "today" : ageShort(S.ma); pill.classList.toggle("edge", before || x < .06); pill.classList.toggle("end", x > .94);
+  lifeScale();
 }
-let lifeFitW = 0;
-function lifeFit() { // a name that would run off the right edge goes to the left of its line's start instead
-  const tr = $("#lifeRows .tree"); if (!tr || !tr.clientWidth || tr.clientWidth === lifeFitW) return; lifeFitW = tr.clientWidth;
-  for (const l of tr.querySelectorAll(".lab")) {
-    const x = +l.dataset.x * lifeFitW; l.style.left = x + 6 + "px"; l.style.right = "auto";
-    if (x + 6 + l.offsetWidth > lifeFitW) { l.style.left = "auto"; l.style.right = lifeFitW - x + 6 + "px"; }
-  }
-}
-function lifeRebuild(keep) { const box = $("#lifeRows"), top = box.scrollTop; buildLife(); lifeFitW = 0; lifeTick(); box.scrollTop = keep ? top : 0; }
+function lifeRebuild() { const box = $("#lifeRows"), top = box.scrollTop; buildLife(); lifeTick(); box.scrollTop = top; }
 function setLife(on) {
   S.life = on; $("#life").hidden = !on; $("#lifeBtn").setAttribute("aria-pressed", on); $("#lifeTab").setAttribute("aria-pressed", on); $("#app").dataset.view = on ? "life" : "world";
-  for (const r of lifeRows) r.st = null; layout(); lifeTick();
+  for (const r of lifeRows) r.st = null; lifeW = 0; layout(); lifeTick();
 }
 
 // ---------------------------------------------------------------- about
@@ -834,12 +827,11 @@ function wire() {
   $("#lifeBtn").addEventListener("click", () => setLife(!S.life)); $("#lifeTab").addEventListener("click", () => setLife(!S.life));
   $("#aboutTab").addEventListener("click", () => { $("#about").hidden = false; $("#aboutClose").focus(); }); $("#lifeClose").addEventListener("click", () => setLife(false));
   $("#lifeRows").addEventListener("click", (e) => {
-    const op = e.target.closest("[data-open]"), sh = e.target.closest("[data-shut]"), b = e.target.closest(".tbr");
-    if (op) { const id = op.dataset.open; for (const o of D.origins) { let p = o.parent; while (p && p !== id && !lifeShown(p)) p = D.origins.find((x) => x.id === p)?.parent; if (p === id) LIFE.open.add(o.id); } return lifeRebuild(true); }
-    if (sh) { const id = sh.dataset.shut, under = (o) => { let p = o.parent; while (p) { if (p === id) return true; p = D.origins.find((x) => x.id === p)?.parent; } return false; }; for (const o of D.origins) if (under(o)) LIFE.open.delete(o.id); return lifeRebuild(true); }
+    const f = e.target.closest("[data-fold]"), b = e.target.closest(".lrow");
+    if (f) { const g = f.dataset.fold; LIFE.shut.has(g) ? LIFE.shut.delete(g) : LIFE.shut.add(g); return lifeRebuild(); }
     if (b) { setPlaying(false); select("origin", D.origins.find((o) => o.id === b.dataset.id)); }
   });
-  $("#lifeAll").addEventListener("click", () => { LIFE.all = !LIFE.all; if (!LIFE.all) LIFE.open.clear(); lifeRebuild(false); });
+  $("#lifeSpan").addEventListener("click", (e) => { const b = e.target.closest("[data-span]"); if (!b || b.dataset.span === LIFE.span) return; LIFE.span = b.dataset.span; try { localStorage.setItem("lifeSpan", LIFE.span); } catch (er) {} lifeRebuild(); });
   $("#themeBtn").addEventListener("click", () => setView(LIGHT ? "space" : "atlas"));
   $("#aboutBtn").addEventListener("click", () => { $("#about").hidden = false; $("#aboutClose").focus(); });
   $("#about").addEventListener("click", (e) => { if (e.target.id === "about" || e.target.closest("#aboutClose")) $("#about").hidden = true; });

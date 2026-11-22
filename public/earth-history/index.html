@@ -59,14 +59,15 @@
     </div>
   </aside>
 
-  <section id="life" hidden aria-label="How life branched: when each group of living things appears, and what it grew out of">
+  <section id="life" hidden aria-label="When each group of living things lived">
     <div class="lifehead">
-      <h2>How life branched</h2>
-      <p class="key"><span><i class="k solid"></i>alive at this time</span><span><i class="k gone"></i>× died out</span><span><i class="k fut"></i>not yet</span><span><i class="k clock"></i>older, by DNA estimates</span></p>
+      <h2>When each group lived</h2>
+      <div id="lifeSpan" class="lspan" role="group" aria-label="Time span"><button type="button" data-span="all" aria-pressed="false">All 4.5 billion years</button><button type="button" data-span="animals" aria-pressed="true">Since animals</button></div>
+      <p class="key"><span><i class="k solid"></i>known from fossils</span><span><i class="k clock"></i>older, by DNA estimates</span><span>× died out</span><span><i class="k fut"></i>not yet</span></p>
       <p id="lifeCount" class="count"></p>
-      <button type="button" id="lifeAll" class="lall" aria-pressed="false">Show all groups</button>
       <button type="button" class="x" id="lifeClose" aria-label="Close life through time"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
     </div>
+    <div id="lifeScale" aria-hidden="true"><span class="lnm"></span><span class="ltr"><span id="lifeStrip"></span><span id="lifeTicks"></span><b id="lifePill"></b></span></div>
     <div id="lifeRows"></div>
   </section>
 

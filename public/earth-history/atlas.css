@@ -98,18 +98,17 @@ body.light .k { background: var(--ink-2); }
 body.light .k.clock { background: repeating-linear-gradient(90deg, var(--ink-3) 0 3px, transparent 3px 6px); }
 body.light .k.claim { background: none; border-color: var(--highlight); }
 body.light .k.gone { background: var(--highlight); }
-body.light .tree { margin-left: calc(var(--pad-l) - var(--gut) - 1px); margin-right: calc(var(--pad-r) - var(--gut) - 1px); }
-body.light .tbr .nm { color: var(--ink); text-shadow: 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff; }
-body.light .tbr:hover .nm, body.light .tbr.on .nm { color: var(--highlight); }
-body.light .tbr[data-st="fut"] .nm, body.light .tbr[data-st="dead"] .nm { color: var(--ink-3); }
-body.light .tbr .end { color: var(--ink-2); }
-body.light .tbr .more { border-color: var(--rule-2); background: #fff; color: var(--ink-2); }
-body.light .tbr .more:hover { border-color: var(--ink); color: var(--ink); }
-body.light .tcn { background: var(--rule); }
-body.light .tcn[data-st="alive"], body.light .tcn[data-st="dead"] { background: var(--rule-2); opacity: 1; }
-body.light .lall { border-color: var(--ink); background: #fff; }
-body.light .lall:hover { background: var(--chip); }
+body.light #lifeScale { border-bottom-color: var(--rule-2); padding-left: 24px; }
+body.light .lrow, body.light .lcat { padding-left: 24px; }
+body.light .lcur { left: calc(24px + var(--nw) + 16px); }
+body.light .lcat { background: #fff; border-top-color: var(--rule); }
+body.light .lrow:hover, body.light .lrow.on { background: var(--chip); }
+body.light .lrow.on .lnm { color: var(--highlight); }
+body.light #lifePill { background: var(--highlight); }
 body.light #lifeLine { border-left-color: var(--highlight); }
+body.light .lspan { border-color: var(--ink); background: #fff; }
+body.light .lspan button { color: var(--ink-2); }
+body.light .lspan button[aria-pressed="true"] { background: var(--ink); color: #fff; }
 body.light #app[data-view="life"] #now, body.light #app[data-view="life"] #rail { bottom: calc(var(--dock-h) + min(46vh, 430px) + 12px); }
 body.light #app[data-view="life"] #now { max-height: calc(100% - 88px - var(--dock-h) - min(46vh, 430px) - 12px); overflow: hidden; }
 
@@ -288,5 +287,7 @@ body.light .fopen .mrow:hover .mt b, body.light .fopen .src a:hover { color: var
   body.light .lifehead { padding: 10px 52px 8px 16px; gap: 4px 12px; align-items: center; }
   body.light .lifehead h2 { font-size: 17px; flex-basis: 100%; }
   body.light .lifehead .count { margin-left: 0 !important; font-size: 12px; }
-  body.light .lall { height: 28px; padding: 0 10px; font-size: 12px; }
+  body.light #lifeScale, body.light .lrow, body.light .lcat { padding-left: 12px; }
+  body.light .lcur { left: calc(12px + var(--nw) + 8px); }
+  body.light .lspan button { padding: 0 9px; font-size: 12px; }
 }
