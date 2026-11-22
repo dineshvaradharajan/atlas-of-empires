@@ -13,6 +13,7 @@ committed (see .gitignore): tools/deploy.sh runs this on the exported release, a
 
   python3 -I tools/seo.py [--public DIR]
 """
+import datetime
 import argparse
 import html
 import json
@@ -830,7 +831,7 @@ def main():
     ])
     body += '<h3>Software and fonts</h3>' + ol([
         L("https://d3js.org/", "D3.js") + " by Mike Bostock (ISC) and " + L("https://github.com/mapbox/earcut", "earcut") + " by Mapbox (ISC).",
-        L("https://fonts.google.com/specimen/Bricolage+Grotesque", "Bricolage Grotesque") + " (Mathieu Triay) and " + L("https://rsms.me/inter/", "Inter") + " (Rasmus Andersson), both SIL Open Font License, served from this site.",
+        L("https://fonts.google.com/specimen/Source+Serif+4", "Source Serif 4") + " (Frank Grie\u00dfhammer, Adobe) and " + L("https://rsms.me/inter/", "Inter") + " (Rasmus Andersson), both SIL Open Font License, served from this site.",
         "Data prepared with Python and " + L("https://ffmpeg.org/", "FFmpeg") + "; hosted on Cloudflare Pages. Built with the help of Claude (Anthropic).",
     ])
     body += ('<h3>Licence</h3><p>The atlas\'s code and its own writing are released under the '
@@ -885,9 +886,14 @@ def main():
         sys.exit(f"{len(bad)} broken internal links")
 
     # ---- sitemaps
+    # The two interactive pages change with every release, so they carry the date of this one; the plain pages do not claim a date
+    # they cannot vouch for. "/" is the atlas itself: the Earth's past and World history under one timeline. World history on its own
+    # (/world) is the frame inside it and is not listed.
+    released = datetime.date.today().isoformat()
+    LIVE = {"/", "/earth-history/"}
     def urlset(items):
         return ('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
-                + "".join(f"<url><loc>{esc(SITE + p)}</loc></url>\n" for p in items) + "</urlset>\n")
+                + "".join(f"<url><loc>{esc(SITE + p)}</loc>{f'<lastmod>{released}</lastmod>' if p in LIVE else ''}</url>\n" for p in items) + "</urlset>\n")
     maps = []
     for sec, items in [("pages", ["/", "/earth-history/"] + [p for p, _, _ in pages["pages"]])] + [(k, [p for p, _, _ in pages[k]]) for k in SECTIONS]:
         name = f"sitemap-{sec}.xml"
@@ -895,15 +901,18 @@ def main():
         maps.append(name)
     open(os.path.join(P, "sitemap.xml"), "w", encoding="utf-8").write(
         '<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
-        + "".join(f"<sitemap><loc>{SITE}/{m}</loc></sitemap>\n" for m in maps) + "</sitemapindex>\n")
+        + "".join(f"<sitemap><loc>{SITE}/{m}</loc>{f'<lastmod>{released}</lastmod>' if m == 'sitemap-pages.xml' else ''}</sitemap>\n" for m in maps) + "</sitemapindex>\n")
 
     # ---- llms.txt (https://llmstxt.org)
     L = [f"# {NAME}", "",
          f"> {TAGLINE}: who ruled what in any year, how far every empire reached, the wars that redrew the map and the moments that "
          "changed it. State borders come from Cliopatria (Seshat Global History Databank, CC BY 4.0) and Natural Earth; the narrative "
          "text is written for the atlas and cites its sources on every page.", "",
-         f"The interactive map is at {SITE}/ . Every page below is plain HTML with the same text the map shows, and a link that "
-         "opens the map at that view. Years are written as in the atlas: negative or BCE years before the common era.", ""]
+         f"The interactive atlas is at {SITE}/ : one timeline from the Earth's formation 4.57 billion years ago to today. From 10,000 BCE "
+         "it is the map of peoples, states and empires; before that, a globe of the ancient Earth. Every page below is plain HTML with "
+         "the same text the map shows, and a link that opens the atlas at that view. Years are written as in the atlas: negative or BCE "
+         f"years before the common era. Addresses on the atlas: {SITE}/#1492 opens a year, {SITE}/#earth/150 opens the Earth "
+         "150 million years ago.", ""]
     def sec(title, key, limit=None):
         L.append(f"## {title}")
         L.append("")

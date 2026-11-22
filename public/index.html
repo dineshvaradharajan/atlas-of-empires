@@ -4,8 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>The World Atlas: interactive map of world history, 10,000 BCE to today</title>
-<meta name="description" content="An interactive world history map from 10,000 BCE to today: who ruled what in any year, how far every empire reached, and the wars and moments that changed the world.">
+<meta name="description" content="An interactive world history map from 10,000 BCE to today: who ruled what in any year, how far every empire reached, and the wars and moments that changed the world. One timeline runs on into the Earth's own past, back to its formation 4.5 billion years ago.">
 <meta name="author" content="Dinesh Varadharajan">
+<!-- The atlas: the Earth's past and World history under one timeline. World history itself is world.html, shown here in a frame;
+     the page's own layout and script are in one/ (one.css, phone.css, one.js, phone.js). -->
 <link rel="canonical" href="https://www.worldatlas.site/">
 <meta property="og:site_name" content="The World Atlas">
 <meta property="og:type" content="website">
@@ -27,85 +29,139 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <meta name="theme-color" content="#ffffff">
 <link rel="preload" as="font" type="font/woff2" crossorigin href="fonts/inter-latin.woff2">
-<link rel="preload" as="font" type="font/woff2" crossorigin href="fonts/bricolage-latin.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="fonts/source-serif-latin.woff2">
 <link rel="stylesheet" href="fonts/fonts.css">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="one/one.css?v=27">
+<link rel="stylesheet" href="one/phone.css?v=26">
 </head>
 <body>
-<div id="app">
-  <main id="stage">
-    <canvas id="gl" aria-hidden="true"></canvas>
-    <canvas id="map" aria-label="World map"></canvas>
-    <div id="cine" hidden aria-live="polite"><div class="cdate"><b id="cMonth"></b><span id="cYear"></span></div><div class="cinfo"><div id="cThe"></div><div id="cShot"></div><div id="cNow"></div><div id="cJoin"></div></div><div id="cSub"></div><div id="cCall"></div></div>
-    <div id="noRecords" hidden><b>No written records</b> · known from archaeology · areas approximate</div>
-    <div id="tooltip" hidden></div>
-    <div id="pop" hidden role="dialog" aria-label="On the map"></div>
-    <div id="loading">Loading the world…</div>
-  </main>
+<div id="app" data-mode="deep">
+  <iframe id="hist" title="The map of peoples and states" tabindex="-1"></iframe>
+  <canvas id="globe" aria-label="The Earth at the selected time"></canvas>
+  <canvas id="marks" aria-hidden="true"></canvas>
+  <div id="grab" aria-hidden="true"></div>
 
   <header id="bar">
-    <a class="brand pill" href="#" id="home"><img src="logo.png" alt="" width="34" height="24"><span>THE WORLD ATLAS</span></a>
-    <nav class="sitesw pill" aria-label="Part of the atlas"><span aria-current="page">World<span class="w">history</span></span><a href="earth-history/">Earth<span class="w">history</span></a></nav>
-    <nav class="tabs pill" aria-label="Sections">
-      <a href="#" data-tab="today">Today</a><a href="#" data-tab="map">Map</a><a href="#" data-tab="stories">Stories</a><a href="#about" data-tab="about">About</a>
+    <a class="brand" href="./"><img src="logo.png" alt="" width="34" height="24"><span>THE WORLD ATLAS</span></a>
+    <nav class="tabs" id="tabs" aria-label="Sections">
+      <button type="button" data-tab="explore" aria-current="page">Explore</button><button type="button" data-tab="stories">Stories</button><button type="button" data-tab="about">About</button>
     </nav>
-    <div class="search pill" role="search">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
-      <label for="search" class="sr">Search an empire, a place or a year</label>
-      <input id="search" type="search" placeholder="Search an empire, a place or a year" autocomplete="off">
-      <button type="button" class="cancel" id="searchCancel">Cancel</button>
-      <div id="results" hidden role="listbox" aria-label="Search results"></div>
-    </div>
+    <button type="button" class="pillbtn" id="searchBtn"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>Search</button>
   </header>
 
-  <div id="stopbar" hidden></div>
-  <div id="framebar" hidden></div>
-  <div id="sheet">
-    <button type="button" id="grab" aria-label="Show more" aria-expanded="false"></button>
-    <footer id="dock"></footer>
-    <section id="col" aria-live="polite"></section>
+  <button type="button" class="chipbtn" id="todayBtn">Today in history</button>
+  <div class="seg small" id="viewSeg" role="group" aria-label="The Earth as a globe or as a flat map">
+    <button type="button" data-v="globe" aria-pressed="true">Globe</button><button type="button" data-v="map" aria-pressed="false">Flat</button>
   </div>
-  <aside id="side" hidden></aside>
 
-  <div id="mapTools">
-    <button type="button" id="layersBtn" class="pillbtn" aria-expanded="false" aria-controls="layersPanel"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 9 5-9 5-9-5z"/><path d="m3 13 9 5 9-5"/></svg>Layers</button>
-    <div id="layersPanel" hidden>
-      <label class="sw-row">Names on the map<input type="checkbox" id="labelsBtn" checked><span class="switch" aria-hidden="true"></span></label>
-      <label class="sw-row">Peoples without states<input type="checkbox" id="peoplesBtn" checked><span class="switch" aria-hidden="true"></span></label>
-      <label class="sw-row" id="terrainRow">Mountains and terrain<input type="checkbox" id="terrainBtn"><span class="switch" aria-hidden="true"></span></label>
-      <div class="key">
-        <span><i class="sw others"></i>Other recorded states</span>
-        <span><i class="sw peoples"></i>Peoples (approximate)</span>
-        <span><i class="sw unknown"></i>No state recorded</span>
-        <span><i class="sw site"></i>Ancient site</span>
-      </div>
-      <a href="#about" id="sourcesLink" class="aboutlink">About the atlas and its sources</a>
-    </div>
-    <div class="zoom">
-      <button type="button" id="zoomIn" aria-label="Zoom in"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-      <button type="button" id="zoomOut" aria-label="Zoom out"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-      <button type="button" id="zoomReset" aria-label="Show the whole world"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.2 3 14.8 0 18M12 3c-3 3.2-3 14.8 0 18"/></svg></button>
-    </div>
-  </div>
-  <div id="legend" hidden></div>
-  <div id="bigyear" aria-hidden="true"><b></b><span></span></div>
-
-  <section id="compare" hidden aria-label="Compare empires">
-    <div class="dock-head">
-      <div class="dock-title"><span id="chartTitle">The great powers</span><span class="sub" id="chartSub">Territory in millions of km², stacked · drag across the chart to travel</span></div>
-      <button type="button" class="close" data-act="compare" aria-label="Close the chart"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
-    </div>
-    <div id="chart"></div>
+  <section id="card" aria-live="polite">
+    <div class="kicker" id="kick">THE EARTH</div>
+    <div class="age"><b id="ageNum"></b><span id="ageUnit"></span></div>
+    <div class="sub" id="ageSub"></div>
+    <div class="chip"><i id="chipSw"></i><span id="chipName"></span></div>
+    <h1 id="tagline"></h1>
+    <button type="button" class="pic" id="picOpen" hidden aria-label="Step into this world: pictures full screen"><img id="picImg" alt=""><span class="picgo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg>Step into this world</span><span class="picn" id="picN"></span></button>
+    <p id="body"></p>
+    <div class="turnbox" id="turn" hidden></div>
+    <p class="hint" id="hint" hidden></p>
+    <p class="trust" id="trust"></p>
+    <button type="button" id="more" class="more">Read more</button>
   </section>
 
-  <nav id="tabbar" aria-label="Sections">
-    <a href="#" data-tab="today"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M9 3v4M15 3v4"/></svg>Today</a>
-    <a href="#" data-tab="map"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.2 3 14.8 0 18M12 3c-3 3.2-3 14.8 0 18"/></svg>Map</a>
-    <a href="#" data-tab="stories"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h11a3 3 0 0 1 3 3v13H8a3 3 0 0 1-3-3z"/><path d="M5 17a3 3 0 0 1 3-3h11"/></svg>Stories</a>
-    <a href="earth-history/"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="4" width="17" height="16" rx="3"/><path d="M3.5 9.5c3 -1.6 5.5 1.4 8.5 0s5.5 -1.4 8.5 0M3.5 14.5c3 -1.6 5.5 1.4 8.5 0s5.5 -1.4 8.5 0"/></svg>Earth</a>
-    <a href="#about" data-tab="about"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.5"/></svg>About</a>
-    <a href="#" data-tab="search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>Search</a>
+  <section id="story" aria-live="polite"></section>
+
+  <section id="mlist" aria-label="The Earth's moments">
+    <div class="chead"><h1>Stories</h1><span class="count" id="mCount"></span></div>
+    <div class="mtab"><span>Moments &#183; <i id="mTotal"></i></span></div>
+    <div id="momentRows" class="erows"></div>
+  </section>
+
+  <div id="immerse" hidden role="dialog" aria-modal="true" aria-label="Pictures of this world, full screen">
+    <div class="imbg" id="imBg"></div>
+    <img id="imImg" alt="">
+    <button type="button" class="x imx" id="imClose" aria-label="Close the pictures"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    <button type="button" class="imnav prev" id="imPrev" aria-label="Previous picture"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+    <button type="button" class="imnav next" id="imNext" aria-label="Next picture"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+    <div class="imcap"><div class="imwhen" id="imWhen"></div><p id="imCap"></p><a id="imCred" target="_blank" rel="noopener"></a></div>
+    <div class="imthumbs" id="imThumbs"></div>
+  </div>
+
+  <footer id="sdock" hidden aria-label="This moment, chapter by chapter">
+    <button type="button" id="sPlay" aria-label="Play this moment"><svg viewBox="0 0 24 24" aria-hidden="true"><path id="sPlayIcon" d="M8 5v14l11-7z"/></svg></button>
+    <div id="sLane"><div id="sBadges" role="group" aria-label="Chapters"></div><div id="sBar" aria-hidden="true"></div><div id="sDates" aria-hidden="true"></div></div>
+    <button type="button" id="sOut"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.2 3 14.8 0 18M12 3c-3 3.2-3 14.8 0 18"/></svg>The Earth at this time</button>
+  </footer>
+
+  <div id="strip" hidden>
+    <span class="slab">ALL OF TIME</span>
+    <button type="button" id="stripEarth">&#9666; Earth</button>
+    <div id="stripBar" aria-hidden="true"><span id="stripStrata"></span><span id="stripHist"></span><i id="stripMark"></i></div>
+    <b id="stripNow"></b>
+    <button type="button" id="stripHistBtn">History &#9656;</button>
+  </div>
+
+  <footer id="dock">
+    <button type="button" id="play" aria-label="Play through time"><svg viewBox="0 0 24 24" aria-hidden="true"><path id="playIcon" d="M8 5v14l11-7z"/></svg></button>
+    <div class="caps"><span id="capDeep">THE EARTH &#183; 4.5 BILLION YEARS</span><span id="capHist">HISTORY &#183; 12,000 YEARS</span></div>
+    <div id="milesRow"><div id="miles" role="group" aria-label="Turning points for life"></div></div>
+    <div id="tl" role="slider" tabindex="0" aria-label="Time, from the Earth's formation to today" aria-valuemin="0" aria-valuemax="1" aria-valuenow="0">
+      <div id="tlDeep"><div id="strata"></div><button type="button" id="foldDeep" tabindex="-1">&#9666; Earth</button></div>
+      <div id="tlHist"><div id="hbands"></div><button type="button" id="foldHist" tabindex="-1">History &#9656;</button></div>
+      <div id="mileMarks" aria-hidden="true"></div>
+      <span id="cursor"></span><b id="pill"></b>
+    </div>
+    <div id="ticks"></div>
+  </footer>
+
+  <!-- the phone layout (760 px and narrower): see phone.css and phone.js -->
+  <div id="ptop"><button type="button" id="pSearch"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>Search a time or a place</button></div>
+  <section id="ps" data-stop="peek" aria-label="Time">
+    <button type="button" id="pGrab" aria-label="Open or close the card"></button>
+    <button type="button" id="pDate" aria-label="Jump to a time"><span class="l1"><b id="pNum"></b><span id="pUnit"></span></span><span class="pchip" id="pChip"><span id="pChipName"></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 9l7 7 7-7"/></svg></span></button>
+    <div class="pstep" role="group" aria-label="Step by period"><button type="button" id="pPrev" aria-label="Previous period"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button><button type="button" id="pNext" aria-label="Next period"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button></div>
+    <button type="button" id="pPlay" class="pplay dark" aria-label="Play through time"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></button>
+    <div id="pCol">
+      <div class="barw"><div id="pBar" role="slider" tabindex="0" aria-label="Time"><div class="fill"><span id="pStrata"></span><span id="pBands"></span></div><div id="pMarks" aria-hidden="true"></div><i id="pThumb"></i></div><div id="pTicks" aria-hidden="true"></div></div>
+      <div class="tilew"><button type="button" id="pTile" aria-label="The other part of time"><span id="pTileE"></span><span id="pTileH"></span></button><span id="pTileT"></span></div>
+    </div>
+    <div id="pBody">
+      <div id="pRow"><i class="dia" id="pDia"></i><b id="pRowText"></b><button type="button" id="pToday"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M9 3v4M15 3v4"/></svg>Today</button><button type="button" id="pUp" aria-label="Open the card"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 15l7-7 7 7"/></svg></button></div>
+      <button type="button" id="pPic" hidden aria-label="Step into this world: pictures full screen"><img id="pPicImg" alt=""><span class="go"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg>Step into this world</span><span class="n" id="pPicN"></span></button>
+      <div id="pTurn" hidden></div>
+      <p id="pText"></p>
+      <p id="pTrust"></p>
+    </div>
+  </section>
+  <nav id="ptabs" aria-label="Sections">
+    <button type="button" data-tab="explore" aria-current="page"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.2 3 14.8 0 18M12 3c-3 3.2-3 14.8 0 18"/></svg>Explore</button>
+    <button type="button" data-tab="stories"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h11a3 3 0 0 1 3 3v13H8a3 3 0 0 1-3-3z"/><path d="M5 17a3 3 0 0 1 3-3h11"/></svg>Stories</button>
+    <button type="button" data-tab="about"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.5"/></svg>About</button>
   </nav>
+  <section id="pidx" hidden aria-label="Jump to a time">
+    <div class="phead"><h2 id="pidxTitle">Jump to a time</h2><button type="button" class="px" data-close aria-label="Close"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
+    <div class="pseg" id="pidxSeg" role="group"><button type="button" data-t="earth">The Earth</button><button type="button" data-t="hist">History</button></div>
+    <div id="pidxRows"></div>
+  </section>
+  <section id="pst" aria-label="Stories">
+    <div class="phead"><h2>Stories</h2><span class="cnt" id="pstCount"></span><button type="button" class="px" data-close aria-label="Close"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
+    <div class="pseg" role="group"><button type="button" data-t="earth" aria-pressed="true" id="pstE">The Earth</button><button type="button" data-t="hist" aria-pressed="false">History</button></div>
+    <div id="pCards"></div>
+  </section>
+  <div id="pstory">
+    <button type="button" id="psBack" class="pf" aria-label="Back to Stories"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+    <button type="button" id="psCount" class="pf" aria-label="See all chapters"><span id="psN"></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 9l7 7 7-7"/></svg></button>
+    <button type="button" id="psPlay" class="pplay dark" aria-label="Play this story"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></button>
+    <button type="button" id="psAll" class="pf"><span class="mini" id="psMini" aria-hidden="true"></span>All of time</button>
+    <div id="psSegs" aria-hidden="true"></div>
+  </div>
+  <button type="button" id="pOwnBack"><span class="mini" id="pOwnMini" aria-hidden="true"></span>All of time</button>
+  <div id="pscrim" hidden></div>
+  <section id="pall" hidden aria-label="All of time">
+    <div class="phead"><h2>All of time</h2><button type="button" class="px" data-close aria-label="Close"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
+    <div id="paStrip"><span id="paNow"></span><div class="bars"><span id="paE"></span><span id="paH"></span></div><i id="paMark"></i><div class="ends"><span>The Earth, 4.5 billion years</span><span>History, 12,000 years</span></div></div>
+    <button type="button" id="paEarth" class="pbtn dark">The Earth at this time</button>
+    <button type="button" id="paHist" class="pbtn">History, from 10,000 BCE</button>
+  </section>
 </div>
 <noscript>
   <div class="noscript">
@@ -123,8 +179,7 @@
     </ul>
   </div>
 </noscript>
-<script src="vendor/d3-atlas.min.js?v=b6abf722fd"></script>
-<script src="vendor/earcut.min.js?v=8532bfc2db"></script>
-<script src="app.js"></script>
+<script src="one/phone.js?v=28"></script>
+<script src="one/one.js?v=30"></script>
 </body>
 </html>

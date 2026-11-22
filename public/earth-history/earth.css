@@ -8,7 +8,7 @@
   --ink-3: #8b877d;
   --rule: rgba(244, 239, 230, .16);
   --unit: #f04028;
-  --display: "Bricolage Grotesque", "Helvetica Neue", Arial, sans-serif;
+  --display: "Source Serif 4", Georgia, "Times New Roman", serif;
   --sans: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
   --gut: 24px;
   --dock-h: 186px;  /* turning points band 38 + record picker 26 + timeline 108 + padding */

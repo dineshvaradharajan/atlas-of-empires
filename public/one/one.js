@@ -136,7 +136,7 @@ const tex = new Map();
 function want(ma) {
   let o = tex.get(ma); if (o) return o;
   o = { ready: false, ma }; tex.set(ma, o);
-  fetch(`../data/paleo/${ma}.webp${VQ}`).then((r) => { if (!r.ok) throw new Error(r.status); return r.blob(); })
+  fetch(`data/paleo/${ma}.webp${VQ}`).then((r) => { if (!r.ok) throw new Error(r.status); return r.blob(); })
     .then((b) => createImageBitmap(b, { colorSpaceConversion: "none", premultiplyAlpha: "none" }))
     .then((bmp) => {
       o.t = gl.createTexture(); gl.bindTexture(gl.TEXTURE_2D, o.t);
@@ -306,7 +306,7 @@ function drawPins(M) { // the chapter's fossil sites, where they sat at the time
     const l = ll[0] * RAD, p = ll[1] * RAD, w = [Math.cos(p) * Math.sin(l), Math.sin(p), Math.cos(p) * Math.cos(l)], v = M.map((r) => r[0] * w[0] + r[1] * w[1] + r[2] * w[2]); if (v[2] < .08) continue;
     const px = G.cx + G.r * v[0], py = G.cy - G.r * v[1];
     x.fillStyle = "#e5402a"; x.strokeStyle = "#fff"; x.lineWidth = 2; x.beginPath(); x.arc(px, py, 6, 0, 7); x.fill(); x.stroke();
-    x.font = '700 13px "Bricolage Grotesque", sans-serif'; const tw = x.measureText(t.name).width, spots = [[px + 14, py + 4], [px - 14 - tw, py + 4], [px - tw / 2, py - 14], [px - tw / 2, py + 24]];
+    x.font = '700 13px "Source Serif 4", Georgia, serif'; const tw = x.measureText(t.name).width, spots = [[px + 14, py + 4], [px - 14 - tw, py + 4], [px - tw / 2, py - 14], [px - tw / 2, py + 24]];
     const at = spots.find(([a, b]) => boxes.every((o) => a + tw < o[0] || a > o[2] || b < o[1] || b - 14 > o[3])) || spots[0]; boxes.push([at[0], at[1] - 14, at[0] + tw, at[1]]);
     x.lineWidth = 4; x.strokeStyle = "rgba(255,255,255,.92)"; x.strokeText(t.name, at[0], at[1]); x.fillStyle = "#111"; x.fillText(t.name, at[0], at[1]);
   }
@@ -471,33 +471,45 @@ function setFlat(on) { // the round globe or the flat map, by choice, at any tim
 }
 
 // ---------------------------------------------------------------- the address keeps the state, so a refresh (or a shared link) comes back to the same place
-// #150 a time on the Earth (million years ago), #150/flat the same as the flat map, #stories the Earth's stories open,
-// #s/dinosaurs/13 a moment at its 13th chapter, #y/1492 a year in history, #h/... World history's own page (a list, a war, a profile)
+// History uses World history's own addresses, so every link made before the two atlases were joined still works:
+//   #1492  a year      #117/Roman%20Empire  a profile      #w/..., #e/..., #m/...  a story      #about, #empires ...  a page
+// The Earth's side has its own, under "earth":
+//   #earth/150  a time (million years ago)      #earth/150/flat  the same as the flat map
+//   #earth/stories  its stories open            #earth/s/dinosaurs/13  a moment at its 13th chapter
+// No address: history, in the year of today's event.
 let RESTORE = null, savedAt = 0; // what the address asked for that has to wait for the World history map underneath
+const startHash = (() => { try { return decodeURIComponent(location.hash.slice(1)); } catch (e) { return location.hash.slice(1); } })();
+const EARTH_AT = /^earth(?:\/|$)/.test(startHash);
+$("#hist").src = "world.html" + (EARTH_AT ? "#-10000" : location.hash); // the frame opens where the address says, or (for the Earth) waits at the join
 function stateHash() {
-  if (ST) return `#s/${ST.story.id}/${ST.i + 1}`;
-  if (S.mode === "hist") { let h = ""; try { h = histWin().location.hash; } catch (e) {} return !h || /^#-?\d+$/.test(h) ? `#y/${Math.round(S.year)}` : `#h/${h.slice(1)}`; }
-  if ($("#app").dataset.list) return "#stories";
-  return `#${S.ma >= 10 ? Math.round(S.ma * 10) / 10 : +S.ma.toPrecision(3)}${S.flat ? "/flat" : ""}`;
+  if (ST) return `#earth/s/${ST.story.id}/${ST.i + 1}`;
+  if (S.mode === "hist") { let h = ""; try { h = histWin().location.hash; } catch (e) {} return h && h !== "#" ? h : `#${Math.round(S.year)}`; }
+  if ($("#app").dataset.list) return "#earth/stories";
+  return `#earth/${S.ma >= 10 ? Math.round(S.ma * 10) / 10 : +S.ma.toPrecision(3)}${S.flat ? "/flat" : ""}`;
 }
 function saveState(now) { // twice a second at most: browsers limit how often an address may be rewritten
   if (RESTORE || now - savedAt < 500) return; savedAt = now;
   try { const h = stateHash(); if (h !== location.hash) history.replaceState(null, "", h); if (S.mode === "deep" && !S.flat && !ST) sessionStorage.setItem("one.view", `${S.lon.toFixed(1)},${S.lat.toFixed(1)}`); } catch (e) {}
 }
 function restoreState() { // at the start, from the address; what needs the map underneath waits for restoreLate()
-  let h = ""; try { h = decodeURIComponent(location.hash.slice(1)); } catch (e) {} let m;
+  let m;
   try { const v = (sessionStorage.getItem("one.view") || "").split(",").map(Number); if (v.length === 2 && v.every(isFinite)) { S.lon = v[0]; S.lat = clamp(v[1], -85, 85); } } catch (e) {} // the way the globe was turned
+  if (!EARTH_AT) { RESTORE = { hist: true }; S.ma = JOIN; return; } // history: the frame is already loading that address
+  const h = startHash.replace(/^earth\/?/, "");
   if ((m = /^s\/([\w-]+)\/(\d+)$/.exec(h))) { storyStart(m[1]); if (ST && +m[2] > 1) storyGo(+m[2] - 1); return; }
-  if ((m = /^y\/(-?\d+)$/.exec(h))) { RESTORE = { year: clamp(+m[1], Y0, NOW_YEAR) }; S.ma = JOIN; return; }
-  if ((m = /^h\/(.+)$/.exec(h))) { RESTORE = { app: m[1] }; S.ma = JOIN; return; }
   if (h === "stories") { PH() && window.PHONE ? PHONE.stories() : listOpen(true); return; }
   if ((m = /^([\d.]+)(\/flat)?$/.exec(h))) { const v = parseFloat(m[1]); if (v >= JOIN && v <= OLDEST) S.ma = v; if (m[2]) RESTORE = { flat: true }; }
 }
 function restoreLate() {
   const r = RESTORE; RESTORE = null; if (!r) return;
   if (r.flat) return setFlat(true);
-  if (r.year != null) return enterHistory(r.year);
-  HIST.sent = Y0; enterHistory(Y0); try { const l = histWin().location; l.replace(l.href.split("#")[0] + "#" + r.app); } catch (e) {} // World history's own page: it takes the screen as it was
+  // history: take the frame as it is. On a plain year (or no address: the year of today's event) this page's timeline is in charge;
+  // on anything else (a story, a profile, a list) World history has the screen, as histWatch() sees from its address.
+  let h = ""; try { h = histWin().location.hash; } catch (e) {}
+  let home = NaN; try { home = parseInt(histWin().document.documentElement.dataset.homeYear, 10); } catch (e) {} // the year of today's event
+  const m = /^#(-?\d+)$/.exec(h), y = m ? +m[1] : (!h || h === "#") && isFinite(home) ? home : histNow() ?? Y0;
+  if (h && h !== "#") HIST.sent = Math.round(y); // nothing to send: the frame is already there
+  enterHistory(clamp(y, Y0, NOW_YEAR));
 }
 
 // ---------------------------------------------------------------- time, play, input
@@ -581,7 +593,7 @@ function wire() {
 }
 async function init() {
   glInit();
-  D = await (await fetch("../data/earth-history.json" + VQ)).json();
+  D = await (await fetch("data/earth-history.json" + VQ)).json();
   for (const u of D.units) byUnit[u.id] = u;
   const hasKids = new Set(D.units.map((u) => u.parent));
   leaves = D.units.filter((u) => !hasKids.has(u.id)).sort((a, b) => b.from - a.from);

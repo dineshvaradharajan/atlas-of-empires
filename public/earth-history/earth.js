@@ -238,7 +238,7 @@ function drawMarks() {
     else ctx.arc(p.x, p.y, on || hov ? 6.5 : 4.5, 0, 7);
     ctx.fill(); ctx.stroke();
     if (on) { ctx.beginPath(); ctx.arc(p.x, p.y, 13, 0, 7); ctx.strokeStyle = col; ctx.lineWidth = 1.5; ctx.stroke();
-      const t = p.type === "origin" ? "Oldest " + p.item.name.toLowerCase() : p.item.title; ctx.font = '700 13px "Bricolage Grotesque", sans-serif'; ctx.lineWidth = 4; ctx.strokeStyle = LIGHT ? "rgba(255,255,255,.92)" : "rgba(4,6,12,.85)"; ctx.strokeText(t, p.x + 18, p.y + 4); ctx.fillStyle = INK; ctx.fillText(t, p.x + 18, p.y + 4); }
+      const t = p.type === "origin" ? "Oldest " + p.item.name.toLowerCase() : p.item.title; ctx.font = '700 13px "Source Serif 4", Georgia, serif'; ctx.lineWidth = 4; ctx.strokeStyle = LIGHT ? "rgba(255,255,255,.92)" : "rgba(4,6,12,.85)"; ctx.strokeText(t, p.x + 18, p.y + 4); ctx.fillStyle = INK; ctx.fillText(t, p.x + 18, p.y + 4); }
   }
   ctx.globalAlpha = 1;
 }
@@ -518,7 +518,7 @@ function drawStory() { // the chapter's sites where they sat at the time, and it
     ctx.beginPath(); ctx.arc(xy[0], xy[1], 12 + 3 * Math.sin(performance.now() / 300), 0, 7); ctx.strokeStyle = HOT; ctx.lineWidth = 1.5; ctx.stroke();
   }
   // labels: each tries right, left, above and below its pin, and takes the first spot clear of the other pins and labels
-  ctx.font = '700 13px "Bricolage Grotesque", sans-serif'; ctx.lineWidth = 4; ctx.strokeStyle = LIGHT ? "rgba(255,255,255,.92)" : "rgba(4,6,12,.85)"; ctx.fillStyle = INK;
+  ctx.font = '700 13px "Source Serif 4", Georgia, serif'; ctx.lineWidth = 4; ctx.strokeStyle = LIGHT ? "rgba(255,255,255,.92)" : "rgba(4,6,12,.85)"; ctx.fillStyle = INK;
   const cr = mk.getBoundingClientRect(), cards = ["#story", "#rail", "#now", "#bar", "#dock"].map((q) => document.querySelector(q)).filter((el) => el && !el.hidden && el.offsetParent)
     .map((el) => { const r = el.getBoundingClientRect(); return [r.left - cr.left - 6, r.top - cr.top - 6, r.right - cr.left + 6, r.bottom - cr.top + 6]; });
   const boxes = [...here.map(({ xy }) => [xy[0] - 14, xy[1] - 14, xy[0] + 14, xy[1] + 14]), ...cards], hit = (b) => boxes.some((o) => b[0] < o[2] && b[2] > o[0] && b[1] < o[3] && b[3] > o[1]);

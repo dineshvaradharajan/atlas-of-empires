@@ -6,6 +6,7 @@
       shows its dates only, with how far you have read as a ring on its mark instead of "3 of 15"; a moment shows its date without
       its group (Tech, Culture ...). */
 (() => {
+  if (window.top === window) return; // World history opened on its own (/world): nothing to change
   const get = HTMLCanvasElement.prototype.getContext;
   HTMLCanvasElement.prototype.getContext = function (type, opts) { return get.call(this, type, /webgl/.test(type) ? Object.assign({}, opts, { preserveDrawingBuffer: true }) : opts); };
 

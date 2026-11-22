@@ -383,6 +383,7 @@ async function init() {
   setupUI();
   setupDock();
   pickToday();
+  document.documentElement.dataset.homeYear = HOME_YEAR; // for the page that frames this one (index.html): the year the atlas opens on today
   const todayP = S.today ? ensureStory("w", S.today.war).catch(() => {}) : null; // the home card quotes today's event: fetched alongside the first map
   S.restoring = true;
   await applyHash(parseHash(), true);
@@ -1889,7 +1890,7 @@ function drawLabels() {
     let size = S.war ? Math.max(9, Math.min(r / 8, 12)) : Math.max(10, Math.min(r / 7.5, strong ? 16 : 12.5));
     if (an && Math.abs(an.size - size) < 1.5) size = an.size; // no small size changes from year to year
     const setFont = (sz) => {
-      ctx.font = culture ? `italic 500 ${sz}px Inter, sans-serif` : `${strong && !S.war ? 800 : 600} ${sz}px "Bricolage Grotesque", "Helvetica Neue", sans-serif`;
+      ctx.font = culture ? `italic 500 ${sz}px Inter, sans-serif` : `${strong && !S.war ? 800 : 600} ${sz}px "Source Serif 4", Georgia, serif`;
       ctx.letterSpacing = culture ? "0px" : `${(sz * (S.war ? 0.14 : 0.05)).toFixed(1)}px`;
     };
     const layout = () => { // the narrower of one line and the best two-line split, at the current font
@@ -2192,7 +2193,7 @@ const EVIDENCE = {
   disputed: ["Disputed · not proven", "ev-disputed"],
   legendary: ["Legendary · not proven", "ev-legend"],
 };
-const evidenceBadge = (ev) => { const e = EVIDENCE[ev] || EVIDENCE.archaeology; return `<span class="evb ${e[1]}">${esc(e[0])}</span>`; };
+const evidenceBadge = (ev, short) => { const e = EVIDENCE[ev] || EVIDENCE.archaeology; return `<span class="evb ${e[1]}">${esc(short ? e[0].split(" \u00b7 ")[0] : e[0])}</span>`; }; // short, in a list: "Archaeology only"
 // The sites layer is the ancient world: a site is drawn only in its own period. "until" missing means it still stands
 // today; then it shows until the end of antiquity (500 CE) or 200 years after it was built, whichever is later.
 // Nothing is drawn after 1500. Undated legends never appear on the timeline (search still finds every site).
@@ -2212,13 +2213,13 @@ function prehistoryHTML(y) {
   const cs = culturesNow(y);
   if (cs.length) {
     h += `<h3 class="sec">Cultures · ${plainYear(y)}</h3><ul class="mlist">`;
-    for (const rg of cs) h += `<li><button class="mrow" data-key="${esc(rg.name)}"><span class="my">${esc(rg.dateLabel || "")}</span><span class="mt">${esc(rg.name)} ${evidenceBadge(rg.evidence)}</span></button></li>`;
+    for (const rg of cs) h += `<li><button class="mrow" data-key="${esc(rg.name)}"><span class="my">${esc(rg.dateLabel || "")}</span><span class="mt">${esc(rg.name)} ${evidenceBadge(rg.evidence, true)}</span></button></li>`;
     h += `</ul>`;
   }
   const ss = sitesNow(y);
   if (ss.length) {
     h += `<h3 class="sec">Sites in use · ${plainYear(y)}</h3><ul class="mlist">`;
-    for (const st of ss) h += `<li><button class="mrow" data-site="${esc(st.id)}"><span class="my">${esc(st.dateLabel || shortYear(st.built))}</span><span class="mt">${esc(st.name)} ${evidenceBadge(st.evidence)}</span></button></li>`;
+    for (const st of ss) h += `<li><button class="mrow" data-site="${esc(st.id)}"><span class="my">${esc(st.dateLabel || shortYear(st.built))}</span><span class="mt">${esc(st.name)} ${evidenceBadge(st.evidence, true)}</span></button></li>`;
     h += `</ul>`;
   }
   if (!cs.length && !ss.length) h += `<p class="note">Nothing is mapped for this year yet. Try a later year, or the sites list in search.</p>`;
@@ -2679,7 +2680,7 @@ function sourcesHTML() { // the About page (#about; #sources still opens it)
     <h3 class="sec">Software and fonts</h3>
     <ol class="sources-list">
       <li>${L("https://d3js.org/", "D3.js")} by Mike Bostock (ISC) and ${L("https://github.com/mapbox/earcut", "earcut")} by Mapbox (ISC).</li>
-      <li>${L("https://fonts.google.com/specimen/Bricolage+Grotesque", "Bricolage Grotesque")} (Mathieu Triay) and ${L("https://rsms.me/inter/", "Inter")} (Rasmus Andersson), both SIL Open Font License, served from this site.</li>
+      <li>${L("https://fonts.google.com/specimen/Source+Serif+4", "Source Serif 4")} (Frank Grie\u00dfhammer, Adobe) and ${L("https://rsms.me/inter/", "Inter")} (Rasmus Andersson), both SIL Open Font License, served from this site.</li>
       <li>Data prepared with Python and ${L("https://ffmpeg.org/", "FFmpeg")}; hosted on Cloudflare Pages. Built with the help of Claude (Anthropic).</li>
     </ol>
 
@@ -3971,7 +3972,7 @@ function drawListPins() {
   for (const { p, x, y } of order) {
     const isHot = p.id === hot;
     if (isHot && cardsShown) continue;
-    ctx.font = isHot ? '800 13px "Bricolage Grotesque", "Helvetica Neue", sans-serif' : '600 11.5px Inter, sans-serif';
+    ctx.font = isHot ? '800 13px "Source Serif 4", Georgia, serif' : '600 11.5px Inter, sans-serif';
     const text = isHot ? `${p.name} · ${p.when}` : p.name, w = ctx.measureText(text).width;
     let box = [x + 8, y - 8, x + 14 + w, y + 8], tx = x + 10;
     if (box[2] > S.width - 4) { box = [x - 14 - w, y - 8, x - 8, y + 8]; tx = x - 10 - w; }
@@ -4833,7 +4834,7 @@ function setupUI() {
 }
 function openAbout() { leaveStories(); S.from = null; S.view = "sources"; renderCol(true); writeHash(); }
 
-Promise.all([document.fonts.load('800 40px "Bricolage Grotesque"'), document.fonts.load('600 14px "Bricolage Grotesque"'), document.fonts.load("400 14px Inter")])
+Promise.all([document.fonts.load('900 40px "Source Serif 4"'), document.fonts.load('600 14px "Source Serif 4"'), document.fonts.load("400 14px Inter")])
   .catch(() => {}).finally(() => init().catch((e) => {
     console.error(e);
     $("#loading").textContent = "Could not load the map. Please reload the page.";

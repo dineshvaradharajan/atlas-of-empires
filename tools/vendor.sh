@@ -6,7 +6,7 @@
 #
 #   tools/vendor.sh [folder]   build. Needs node and npm. Packages are installed into the folder (default: a temporary
 #                              one), never into the project. Also writes ?v=<hash of the file> on the two script tags in
-#                              public/index.html and public/one/hist.html, so the files can be cached for a year.
+#                              public/world.html, so the files can be cached for a year.
 #   tools/vendor.sh check      no build: fail if a site script uses a d3.<name> that is not in the bundle.
 #
 # When app.js starts using another d3 member: add it to the entry file below, run this, commit public/vendor/.
@@ -108,7 +108,7 @@ EOF
 check
 
 # The script tags carry a hash of the file, so a rebuilt file is fetched afresh while the old one stays cached for a year
-node - "$OUT" public/index.html public/one/hist.html <<'JS'
+node - "$OUT" public/world.html <<'JS'
 const fs = require("fs"), crypto = require("crypto"), [out, ...pages] = process.argv.slice(2);
 for (const page of pages) {
   let s = fs.readFileSync(page, "utf8"), was = s;

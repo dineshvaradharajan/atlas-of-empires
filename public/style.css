@@ -24,7 +24,7 @@
   --water: #9cc0dc;
   --water-label: #6f93ad;
   --shadow: 0 10px 30px rgba(0, 0, 0, .12);
-  --display: "Bricolage Grotesque", "Helvetica Neue", Arial, sans-serif;
+  --display: "Source Serif 4", Georgia, "Times New Roman", serif;
   --sans: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
   --gut: 24px;          /* screen edge to card, bar and tools */
   --top: 88px;          /* where the card and the tools start */
@@ -122,7 +122,7 @@ body.searching #stage::after { content: ""; position: absolute; inset: 0; backgr
 
 /* ---------- the card ---------- */
 #col { position: absolute; z-index: 4; left: var(--gut); top: var(--top); width: var(--card-w); max-width: calc(100vw - 2 * var(--gut));
-  max-height: calc(100% - var(--top) - var(--dock-h) - var(--dock-b) - 16px); overflow: auto; overscroll-behavior: contain;
+  max-height: calc(100% - var(--top) - var(--dock-h) - var(--dock-b) - 16px); overflow: hidden auto; overscroll-behavior: contain;
   display: flex; flex-direction: column; gap: 14px; padding: 24px; background: var(--bg); border: 1px solid var(--rule-strong); border-radius: 14px; box-shadow: var(--shadow); }
 #col:empty { display: none; }
 #col > * { flex-shrink: 0; }
@@ -331,7 +331,7 @@ ul.terr li:hover { color: var(--highlight); }
 ul.terr small { color: var(--ink-3); }
 ul.mlist { list-style: none; margin: 0; padding: 0; }
 ul.mlist li { border-bottom: 1px solid var(--rule); }
-.mrow { width: 100%; display: grid; grid-template-columns: 110px 1fr; gap: 12px; text-align: left; border: 0; background: none; padding: 9px 0; font-size: 14px; }
+.mrow { width: 100%; display: grid; grid-template-columns: 110px minmax(0, 1fr); gap: 12px; text-align: left; border: 0; background: none; padding: 9px 0; font-size: 14px; }
 .mrow:hover { color: var(--highlight); }
 .mrow .my { font: 800 12.5px var(--display); color: var(--ink-3); }
 p.links { margin: 0; font-size: 14px; }
@@ -370,7 +370,7 @@ figure.lead figcaption a { color: var(--ink-3); }
 .ev-arch { background: #ecebe4; color: #55534a; }
 .ev-disputed { background: #fbecd2; color: #8a5a00; }
 .ev-legend { background: #f8dcd6; color: #9b2c1a; }
-.mlist .mt .evb { margin-left: 6px; }
+.mlist .mt .evb { display: block; width: fit-content; max-width: 100%; margin: 3px 0 0; overflow: hidden; text-overflow: ellipsis; } /* on its own line, and never wider than the card */
 ul.changed { list-style: none; padding: 0; margin: 0; display: grid; gap: 6px; font-size: 13px; color: var(--ink-2); }
 ul.changed li { display: flex; align-items: center; gap: 10px; }
 ul.changed i { flex: none; width: 24px; display: inline-block; }
