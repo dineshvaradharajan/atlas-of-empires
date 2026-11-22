@@ -1,0 +1,279 @@
+/* One atlas, a prototype: the Earth's past and human history on one screen, with one timeline that folds at 10,000 BCE. */
+:root { --ink: #111; --ink-2: #2b2b28; --ink-3: #6b6b66; --rule: #e6e6e1; --rule-2: #c9c9c4; --chip: #f0f0ec; --hot: #e5402a; --kick: #c8321e;
+  --display: "Bricolage Grotesque", "Helvetica Neue", Arial, sans-serif; --sans: "Inter", system-ui, sans-serif; --shadow: 0 10px 30px rgba(0, 0, 0, .12); }
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; }
+body { background: #fff; color: var(--ink); font: 15px/1.5 var(--sans); -webkit-font-smoothing: antialiased; overflow: hidden; }
+button { font: inherit; color: inherit; cursor: pointer; }
+:focus-visible { outline: 2px solid var(--hot); outline-offset: 2px; }
+#app { position: fixed; inset: 0; }
+#hist { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; background: #fff; }
+#globe { position: absolute; inset: 0; width: 100%; height: 100%; display: block; pointer-events: none; transition: opacity .45s ease; }
+#app[data-mode="deep"] #globe { background: #fff; } /* before history nothing of the frame underneath shows; in history it is see-through round the globe */
+#app[data-mode="deep"] #hist { pointer-events: none; }
+#grab { position: absolute; z-index: 3; border-radius: 50%; cursor: grab; touch-action: none; }
+#grab.drag { cursor: grabbing; }
+#app[data-ready] #grab { display: none; }
+#app[data-mode="hist"][data-ready] #globe { opacity: 0; pointer-events: none; }
+
+#bar { position: absolute; z-index: 5; left: 24px; right: 24px; top: 16px; display: flex; align-items: center; gap: 12px; pointer-events: none; }
+#bar > * { pointer-events: auto; }
+.brand { display: flex; align-items: center; gap: 10px; height: 52px; padding: 0 18px; white-space: nowrap; box-sizing: border-box; border: 1px solid var(--ink); border-radius: 26px; background: #fff; font: 900 15px var(--display); letter-spacing: .08em; text-decoration: none; color: var(--ink); }
+.proto { height: 30px; padding: 0 12px; display: flex; align-items: center; border-radius: 15px; background: var(--chip); font: 600 12.5px var(--sans); color: var(--ink-2); }
+.brand img { width: auto; height: 24px; flex: none; }
+.seg { display: flex; height: 52px; padding: 4px; border: 1px solid var(--ink); border-radius: 26px; background: #fff; }
+.seg button { padding: 0 18px; border: 0; border-radius: 22px; background: none; font: 500 14px var(--sans); }
+.seg button[aria-pressed="true"] { background: var(--ink); color: #fff; font-weight: 600; }
+
+#card { position: absolute; z-index: 4; left: 24px; top: 88px; width: 380px; max-height: calc(100% - 88px - 164px); overflow-y: auto; padding: 24px; border: 1px solid var(--ink); border-radius: 14px; background: #fff; box-shadow: var(--shadow); transition: opacity .35s ease; }
+#app[data-mode="hist"] #card { opacity: 0; pointer-events: none; }
+.kicker { font: 600 12px var(--sans); letter-spacing: .12em; text-transform: uppercase; color: var(--kick); }
+.age { margin-top: 6px; display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+.age b { font: 900 64px/.95 var(--display); letter-spacing: -.02em; }
+.age span { font: 800 17px var(--display); }
+.sub { margin-top: 4px; min-height: 19px; font-size: 13px; color: var(--ink-3); }
+.chip { margin-top: 12px; display: flex; align-items: center; gap: 8px; font: 700 13px var(--sans); }
+.chip i { width: 12px; height: 12px; border-radius: 3px; border: 1px solid rgba(0, 0, 0, .15); }
+#card h1 { margin: 12px 0 6px; font: 800 22px/1.15 var(--display); }
+#card p { margin: 0; font-size: 15px; line-height: 1.55; color: var(--ink-2); }
+#card #body { display: -webkit-box; -webkit-line-clamp: 6; -webkit-box-orient: vertical; overflow: hidden; }
+#card .hint { margin-top: 14px; padding: 10px 12px; border-radius: 10px; background: var(--chip); font-size: 13px; line-height: 1.4; }
+#card .trust { margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--rule); font-size: 12.5px; color: var(--ink-3); }
+
+
+#dock { position: absolute; z-index: 5; left: 24px; right: 24px; bottom: 20px; height: 124px; transition: height .35s ease; border: 1px solid var(--ink); border-radius: 30px; background: #fff; box-shadow: var(--shadow); }
+#play { position: absolute; left: 18px; top: 55px; width: 44px; height: 44px; border: 0; border-radius: 22px; background: var(--ink); color: #fff; display: grid; place-items: center; }
+#play svg { width: 16px; height: 16px; fill: currentColor; }
+.caps { position: absolute; left: 96px; right: 40px; top: 6px; height: 14px; font: 700 10.5px var(--sans); letter-spacing: .1em; color: var(--ink-3); }
+.caps span { position: absolute; top: 0; white-space: nowrap; transition: opacity .3s; }
+#capDeep { left: 0; } #capHist { right: 0; opacity: 0; }
+#tl { position: absolute; left: 96px; right: 40px; top: 64px; height: 26px; cursor: ew-resize; touch-action: none; user-select: none; }
+#tlDeep, #tlHist { position: absolute; top: 0; bottom: 0; overflow: hidden; }
+#tlDeep { left: 0; border-radius: 8px 0 0 8px; }
+#tlHist { right: 0; border: 1px solid var(--ink); border-left: 0; border-radius: 0 8px 8px 0; background: var(--chip); }
+#strata { position: absolute; inset: 0; }
+#strata i { position: absolute; top: 0; bottom: 0; overflow: hidden; white-space: nowrap; font: 700 10.5px/26px var(--display); font-style: normal; text-indent: 5px; }
+#tlHist .axis { position: absolute; left: 0; right: 0; top: 11px; height: 2px; background: var(--ink); }
+#hmarks i { position: absolute; top: 8px; width: 1px; height: 8px; background: var(--ink); }
+#foldDeep, #foldHist { position: absolute; inset: 0; width: 100%; padding: 0; border: 0; font: 700 11.5px var(--sans); white-space: nowrap; opacity: 0; pointer-events: none; transition: opacity .25s; }
+#foldDeep { background: rgba(255, 255, 255, .74); color: var(--ink); border: 1px solid var(--ink); border-radius: 8px 0 0 8px; }
+#foldHist { background: var(--ink); color: #fff; }
+#tlDeep.folded #foldDeep, #tlHist.folded #foldHist { opacity: 1; pointer-events: auto; }
+#tlHist.folded .axis, #tlHist.folded #hmarks { visibility: hidden; }
+#cursor { position: absolute; top: -7px; width: 3px; height: 40px; margin-left: -1.5px; background: var(--ink); pointer-events: none; }
+#pill { position: absolute; z-index: 2; top: -23px; transform: translateX(-50%); padding: 2px 9px; border-radius: 10px; background: var(--hot); color: #fff; font: 800 11.5px/18px var(--display); white-space: nowrap; pointer-events: none; }
+#ticks { position: absolute; left: 96px; right: 40px; top: 96px; height: 16px; font-size: 11px; color: var(--ink-3); pointer-events: none; }
+#ticks span { position: absolute; transform: translateX(-50%); white-space: nowrap; }
+#narrow { display: none; position: absolute; z-index: 9; inset: 0; margin: 0; padding: 40px 24px; background: #fff; font-size: 16px; }
+@media (max-width: 779px) { #narrow { display: block; } } /* below this the World history page underneath switches to its phone layout */
+@media (prefers-reduced-motion: reduce) { #globe, #card { transition: none; } }
+
+/* turning points for life: names above the Earth part of the timeline, a diamond on the band */
+#milesRow { position: absolute; left: 96px; right: 40px; top: 20px; height: 20px; pointer-events: none; }
+#miles { position: relative; height: 20px; }
+.mile { position: absolute; top: 0; height: 20px; padding: 0 8px; border: 1px solid var(--ink); border-radius: 10px; background: #fff; font: 600 11.5px/18px var(--sans); white-space: nowrap; pointer-events: auto; }
+.mile.extinction { border-color: var(--hot); color: var(--kick); }
+.mile.on { background: var(--ink); color: #fff; } .mile.extinction.on { background: var(--hot); border-color: var(--hot); color: #fff; }
+.mile.hid { visibility: hidden; }
+#mileMarks { position: absolute; left: 0; top: -5px; height: 8px; pointer-events: none; }
+#mileMarks i { position: absolute; top: 0; width: 8px; height: 8px; margin-left: -4px; transform: rotate(45deg); background: var(--ink); box-shadow: 0 0 0 1.5px #fff; }
+#mileMarks i.extinction { background: var(--hot); }
+#mileMarks i.on { width: 11px; height: 11px; margin: -1.5px 0 0 -5.5px; }
+.turnbox { margin-top: 14px; padding: 10px 12px; border: 1px solid var(--hot); border-radius: 10px; }
+.turnbox span { display: block; font: 700 10.5px var(--sans); letter-spacing: .1em; color: var(--kick); }
+.turnbox b { display: block; margin: 3px 0 4px; font: 800 16px/1.2 var(--display); }
+#card .turnbox p { font-size: 13px; line-height: 1.45; }
+
+/* moments */
+#marks { position: absolute; z-index: 2; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+.pillbtn { margin-left: auto; height: 52px; padding: 0 22px; border: 1px solid var(--ink); border-radius: 26px; background: #fff; font: 500 14px var(--sans); }
+.pillbtn:hover { background: var(--chip); }
+.x { position: absolute; right: 12px; top: 12px; width: 32px; height: 32px; padding: 0; border: 1px solid var(--rule-2); border-radius: 16px; background: #fff; display: grid; place-items: center; }
+.x svg { width: 13px; height: 13px; fill: none; stroke: currentColor; stroke-width: 2.2; }
+#story { display: none; position: absolute; z-index: 4; left: 24px; top: 88px; width: 380px; max-height: calc(100% - 88px - 164px); overflow-y: auto; padding: 24px; border: 1px solid var(--ink); border-radius: 14px; background: #fff; box-shadow: var(--shadow); }
+#app[data-story] #story { display: block; } #app[data-story] #card { display: none; }
+#story .sub { margin-top: 2px; }
+#story figure { margin: 12px 0 0; } #story figure img { display: block; width: 100%; height: 150px; object-fit: cover; border-radius: 8px; background: var(--chip); }
+#story figcaption { margin-top: 3px; font-size: 11px; color: var(--ink-3); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+#story h1 { margin: 12px 0 2px; font: 800 21px/1.15 var(--display); }
+#story p { margin: 8px 0 0; font-size: 14px; line-height: 1.5; color: var(--ink-2); }
+.snav { display: flex; gap: 8px; margin-top: 14px; }
+.snav button { flex: 1; height: 40px; border: 1px solid var(--ink); border-radius: 20px; background: #fff; font: 600 13.5px var(--sans); }
+.snav button.go { background: var(--ink); color: #fff; } .snav button:disabled { opacity: .35; cursor: default; }
+#moments { position: absolute; z-index: 9; inset: 0; background: rgba(17, 17, 17, .32); display: grid; place-items: center; padding: 20px; }
+#moments[hidden] { display: none; }
+#moments .sheet { position: relative; width: min(820px, 100%); max-height: min(86vh, 800px); overflow-y: auto; padding: 26px 28px 22px; border: 1px solid var(--ink); border-radius: 14px; background: #fff; box-shadow: var(--shadow); }
+#moments h2 { margin: 0 40px 4px 0; font: 800 28px/1.1 var(--display); }
+#moments .intro { margin: 0 0 14px; color: var(--ink-2); }
+#momentCards { display: flex; flex-direction: column; gap: 10px; }
+.mcard { display: grid; grid-template-columns: 170px 1fr; gap: 16px; padding: 10px; border: 1px solid var(--rule-2); border-radius: 12px; background: #fff; text-align: left; }
+.mcard:hover { border-color: var(--ink); box-shadow: var(--shadow); }
+.mcard img, .mcard > i { width: 170px; height: 104px; object-fit: cover; border-radius: 8px; background: var(--chip); display: block; }
+.mcard b { display: block; font: 800 18px/1.2 var(--display); }
+.mcard small { display: block; margin: 3px 0 5px; font-size: 12.5px; color: var(--ink-3); }
+.mcard em { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; font-style: normal; font-size: 13.5px; line-height: 1.45; color: var(--ink-2); }
+
+/* history: no turning points above the band, so the timeline is as slim as World history's own */
+#app[data-mode="hist"] #dock { height: 86px; }
+#app[data-mode="hist"] #milesRow, #app[data-mode="hist"] #mileMarks { display: none; }
+#app[data-mode="hist"] .caps { top: 10px; } #app[data-mode="hist"] #tl { top: 34px; } #app[data-mode="hist"] #ticks { top: 64px; } #app[data-mode="hist"] #play { top: 21px; }
+/* short windows: smaller type in the card so the globe keeps its room */
+@media (max-height: 760px) {
+  #card, #story { padding: 16px 18px 14px; }
+  .age b { font-size: 44px; } .age span { font-size: 15px; }
+  #card h1 { font-size: 19px; margin: 8px 0 4px; } #story h1 { font-size: 19px; }
+  #card p, #story p { font-size: 13.5px; } #card #body { -webkit-line-clamp: 4; }
+  #story figure img { height: 110px; }
+}
+@media (max-height: 620px) { #card #body { -webkit-line-clamp: 2; } #card .trust { display: none; } }
+@media (max-width: 1180px) { .brand span { display: none; } .brand { padding: 0 15px; } .proto { display: none; } } /* as World history does */
+
+/* history: World history's own tabs and search show through in the header, so ours keeps to the left; the Earth's moments are an Earth thing */
+#app[data-mode="hist"] #momentsBtn, #app[data-mode="hist"] .proto { display: none; }
+/* World history running the show (today's story, a list, a war, a profile): the page as it is, with its own timeline */
+#app[data-app] #dock, #app[data-app] #viewSeg, #app[data-app] #grab { display: none; }
+#app[data-app] #globe, #app[data-app] #marks { opacity: 0; }
+
+/* Flat view: the map is the picture, so the Earth card keeps to its headline; "Read more" opens the rest */
+.more { display: none; margin-top: 10px; padding: 0; border: 0; background: none; font: 500 13.5px var(--sans); text-decoration: underline; text-decoration-color: var(--hot); text-underline-offset: 3px; }
+#app[data-flat] .more { display: inline-block; }
+#app[data-flat] #card:not(.open) #body, #app[data-flat] #card:not(.open) .hint, #app[data-flat] #card:not(.open) .trust, #app[data-flat] #card:not(.open) .turnbox p { display: none; }
+
+/* Earth | History: always in the header, where World history's own site switch sits, on every view */
+#eraSeg button { flex: 1; white-space: nowrap; }
+/* Globe | Flat: a smaller control at the lower right, just above the timeline */
+#viewSeg { position: absolute; z-index: 5; right: 24px; bottom: 156px; transition: bottom .35s ease; box-shadow: var(--shadow); }
+#app[data-mode="hist"] #viewSeg { bottom: 118px; }
+.seg.small { height: 40px; padding: 3px; border-radius: 20px; }
+.seg.small button { padding: 0 14px; border-radius: 17px; font-size: 13px; }
+
+/* the header: three sections in the middle, as World history's own tabs are placed; search at the right before history (in history its own search shows) */
+#bar { justify-content: space-between; }
+.tabs { position: absolute; left: 50%; top: 0; transform: translateX(-50%); display: flex; gap: 2px; height: 52px; padding: 4px; border: 1px solid var(--ink); border-radius: 26px; background: #fff; }
+.tabs button { height: 42px; padding: 0 22px; border: 0; border-radius: 21px; background: none; font: 500 14px var(--sans); }
+.tabs button:hover { background: var(--chip); }
+.tabs button[aria-current="page"] { background: var(--ink); color: #fff; font-weight: 600; }
+#searchBtn { display: flex; align-items: center; gap: 10px; padding: 0 20px 0 16px; color: var(--ink-3); }
+#searchBtn svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 2; }
+#app[data-mode="hist"] #searchBtn { visibility: hidden; }
+/* the Stories sheet: today, the Earth's moments, human history */
+.msec { margin: 18px 0 8px; font: 600 12px var(--sans); letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); }
+.mrow { display: grid; grid-template-columns: 1fr auto; gap: 2px 12px; width: 100%; padding: 14px 16px; border: 1px solid var(--rule-2); border-radius: 12px; background: #fff; text-align: left; }
+.mrow:hover { border-color: var(--ink); box-shadow: var(--shadow); }
+.mrow b { font: 800 17px/1.2 var(--display); } .mrow span { grid-column: 1; font-size: 13.5px; color: var(--ink-2); }
+.mrow i { grid-row: 1 / span 2; grid-column: 2; align-self: center; font: 400 24px var(--sans); font-style: normal; }
+/* all of time, in one slim strip: shown whenever a story (or another World history view) has the timeline, so the way to either timeline never goes */
+#strip { position: absolute; z-index: 6; left: 24px; right: 24px; bottom: 16px; height: 40px; display: flex; align-items: center; gap: 14px; padding: 0 8px 0 18px; border: 1px solid var(--ink); border-radius: 20px; background: #fff; box-shadow: var(--shadow); }
+#strip[hidden] { display: none; }
+#strip .slab { font: 700 10.5px var(--sans); letter-spacing: .1em; color: var(--ink-3); white-space: nowrap; }
+#strip button { height: 28px; padding: 0 12px; border: 1px solid var(--rule-2); border-radius: 14px; background: #fff; font: 600 12.5px var(--sans); white-space: nowrap; }
+#strip button:hover { border-color: var(--ink); }
+#strip button.here { border-color: var(--ink); background: var(--ink); color: #fff; }
+#stripBar { position: relative; flex: 1; height: 14px; }
+#stripStrata { position: absolute; left: 0; top: 0; bottom: 0; width: 26%; border-radius: 7px 0 0 7px; overflow: hidden; }
+#stripStrata i { position: absolute; top: 0; bottom: 0; }
+#stripHist { position: absolute; left: 26%; right: 0; top: 0; bottom: 0; border: 1px solid var(--ink); border-left: 0; border-radius: 0 7px 7px 0; background: var(--chip); }
+#stripMark { position: absolute; top: -4px; width: 3px; height: 22px; margin-left: -1.5px; background: var(--hot); }
+#stripNow { font: 800 12px var(--display); color: var(--kick); white-space: nowrap; }
+#app[data-story] #dock { display: none; }
+#app[data-story] #viewSeg { bottom: 72px; }
+@media (max-width: 1000px) { #strip .slab { display: none; } }
+
+.mrows { display: flex; flex-direction: column; gap: 8px; }
+.mrow b small { margin-left: 6px; font: 500 13px var(--sans); color: var(--ink-3); }
+.mrow span { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+
+/* history only: today's event, a small button beside Globe | Flat (World history's Today view) */
+.chipbtn { position: absolute; z-index: 5; right: 176px; bottom: 118px; height: 40px; padding: 0 16px; border: 1px solid var(--ink); border-radius: 20px; background: #fff; box-shadow: var(--shadow); font: 500 13px var(--sans); white-space: nowrap; }
+.chipbtn:hover { background: var(--chip); }
+#app[data-mode="deep"] .chipbtn, #app[data-app] .chipbtn { display: none; }
+
+/* step into this world: a picture of the time in the card, and all of them full screen */
+.pic { position: relative; display: block; width: 100%; margin: 12px 0 2px; padding: 0; border: 0; border-radius: 10px; overflow: hidden; background: var(--chip); }
+.pic[hidden] { display: none; }
+.pic img { display: block; width: 100%; height: 150px; object-fit: cover; }
+.picgo { position: absolute; left: 10px; bottom: 10px; display: flex; align-items: center; gap: 7px; height: 32px; padding: 0 13px; border: 1px solid var(--ink); border-radius: 16px; background: #fff; font: 600 13px var(--sans); }
+.picgo svg { width: 14px; height: 14px; fill: none; stroke: currentColor; stroke-width: 2; }
+.pic:hover .picgo { background: var(--ink); color: #fff; }
+.picn { position: absolute; right: 10px; top: 10px; height: 24px; padding: 0 9px; border-radius: 12px; background: rgba(17, 17, 17, .72); color: #fff; font: 600 12px/24px var(--sans); }
+#app[data-flat] #card:not(.open) .pic img { height: 90px; }
+#story figure { cursor: zoom-in; }
+#immerse { position: fixed; z-index: 20; inset: 0; background: #111; color: #fff; }
+#immerse[hidden] { display: none; }
+.imbg { position: absolute; inset: -40px; background-size: cover; background-position: center; filter: blur(40px) brightness(.35); }
+#imImg { position: absolute; left: 50%; top: 24px; transform: translateX(-50%); max-width: calc(100% - 160px); max-height: calc(100% - 210px); object-fit: contain; border-radius: 6px; box-shadow: 0 20px 60px rgba(0, 0, 0, .5); }
+.imx { position: absolute; right: 20px; top: 20px; width: 44px; height: 44px; border-radius: 22px; border: 0; background: rgba(255, 255, 255, .92); color: #111; }
+.imnav { position: absolute; top: 42%; width: 48px; height: 48px; border: 0; border-radius: 24px; background: rgba(255, 255, 255, .92); color: #111; display: grid; place-items: center; }
+.imnav svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2.4; }
+.imnav.prev { left: 20px; } .imnav.next { right: 20px; }
+.imcap { position: absolute; left: 40px; right: 40px; bottom: 96px; max-width: 900px; }
+.imwhen { font: 700 12px var(--sans); letter-spacing: .1em; text-transform: uppercase; color: rgba(255, 255, 255, .75); }
+.imcap p { margin: 4px 0 4px; font-size: 17px; line-height: 1.4; }
+.imcap a { font-size: 12.5px; color: rgba(255, 255, 255, .7); }
+.imthumbs { position: absolute; left: 40px; right: 40px; bottom: 20px; height: 60px; display: flex; gap: 8px; overflow-x: auto; scrollbar-width: none; }
+.imthumbs button { flex: none; width: 88px; height: 60px; padding: 0; border: 2px solid transparent; border-radius: 6px; overflow: hidden; background: #222; opacity: .6; }
+.imthumbs button.on { border-color: #fff; opacity: 1; }
+.imthumbs img { display: block; width: 100%; height: 100%; object-fit: cover; }
+
+/* a moment's own timeline, built like a war's in World history: play, one segment per chapter, dates under them, and a way out to
+   the time it is showing. The chapters' names sit above their segments as badges. */
+#sdock { position: absolute; z-index: 5; left: 24px; right: 24px; bottom: 64px; height: 108px; border: 1px solid var(--ink); border-radius: 30px; background: #fff; box-shadow: var(--shadow); }
+#sdock[hidden] { display: none; }
+#sPlay { position: absolute; left: 18px; top: 32px; width: 44px; height: 44px; border: 0; border-radius: 22px; background: var(--ink); color: #fff; display: grid; place-items: center; }
+#sPlay svg { width: 16px; height: 16px; fill: currentColor; }
+#sLane { position: absolute; left: 84px; right: 246px; top: 10px; bottom: 8px; }
+#sBadges { position: relative; height: 48px; }
+.sbadge { position: absolute; height: 21px; max-width: 230px; padding: 0 9px; border: 1px solid var(--rule-2); border-radius: 11px; background: #fff; font: 600 11.5px/19px var(--sans); color: var(--ink-2); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.sbadge:hover { border-color: var(--ink); color: var(--ink); }
+.sbadge.seen { border-color: var(--ink-3); color: var(--ink); }
+.sbadge.on { border-color: var(--ink); background: var(--ink); color: #fff; }
+.sbadge.hid { visibility: hidden; }
+#sBar { position: absolute; left: 0; right: 0; top: 54px; height: 8px; display: flex; gap: 3px; }
+.sseg { flex: 1; min-width: 0; padding: 0; border: 0; border-radius: 4px; background: var(--rule); position: relative; overflow: hidden; cursor: pointer; }
+.sseg.seen { background: var(--ink-3); }
+.sseg.on { background: var(--rule-2); }
+.sseg.on i { position: absolute; left: 0; top: 0; bottom: 0; width: 100%; background: var(--ink); }
+#sDates { position: absolute; left: 0; right: 0; top: 68px; height: 16px; font-size: 11px; color: var(--ink-3); }
+#sDates span { position: absolute; white-space: nowrap; } #sDates span.on { color: var(--ink); font-weight: 700; }
+#sOut { position: absolute; right: 14px; top: 30px; height: 48px; display: flex; align-items: center; gap: 8px; padding: 0 18px; border: 1px solid var(--ink); border-radius: 24px; background: #fff; font: 500 14px var(--sans); white-space: nowrap; }
+#sOut:hover { background: var(--chip); }
+#sOut svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 1.8; }
+#app[data-story] #viewSeg { bottom: 186px; }
+@media (max-width: 1000px) { #sOut { font-size: 0; gap: 0; padding: 0 14px; } #sLane { right: 76px; } }
+
+/* history's own bands: the ages of history, coloured and named as the Earth's periods are, so the history part reads as a timeline too */
+#tlHist { background: none; }
+#hbands { position: absolute; inset: 0; }
+#hbands i { position: absolute; top: 0; bottom: 0; overflow: hidden; white-space: nowrap; font: 700 10.5px/24px var(--display); font-style: normal; text-indent: 5px; color: #111; }
+#foldHist { background: rgba(255, 255, 255, .74); color: var(--ink); }
+#stripHist { overflow: hidden; background: none; }
+#stripHist i { position: absolute; top: 0; bottom: 0; }
+
+/* the Earth's moments, as a side pane like World history's Stories pane: a mark for how far each has been read, its name and dates,
+   and here a picture too */
+#mlist { display: none; position: absolute; z-index: 4; left: 24px; top: 88px; width: 400px; max-width: calc(100vw - 48px); max-height: calc(100% - 88px - 164px); overflow-y: auto; flex-direction: column; gap: 14px; padding: 24px; border: 1px solid var(--ink); border-radius: 14px; background: #fff; box-shadow: var(--shadow); }
+#app[data-list] #mlist { display: flex; } #app[data-list] #card { display: none; }
+.chead { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 28px; }
+.chead h1 { margin: 0; font: 800 28px/1.1 var(--display); }
+.chead .count { font-size: 13px; color: var(--ink-3); white-space: nowrap; }
+.mtab { display: flex; height: 44px; padding: 3px; border-radius: 22px; background: var(--chip); }
+.mtab span { flex: 1; display: flex; align-items: center; justify-content: center; gap: 4px; white-space: nowrap; border-radius: 19px; background: var(--ink); color: #fff; font: 600 13.5px var(--sans); } .mtab i { font-style: normal; }
+.erows { display: flex; flex-direction: column; margin: 0 -12px; }
+.erow { display: flex; align-items: center; gap: 12px; padding: 8px 12px; border: 0; border-radius: 8px; background: none; text-align: left; color: var(--ink); }
+.erow:hover { background: var(--chip); }
+.erow img, .erow .noimg { width: 76px; height: 52px; flex: none; border-radius: 6px; object-fit: cover; background: var(--chip); }
+.erow .t { flex: 1; min-width: 0; }
+.erow .t b { display: block; font: 600 15px/1.25 var(--sans); }
+.erow .t small { display: block; margin-top: 2px; font-size: 12.5px; color: var(--ink-3); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.erow > svg { width: 16px; height: 16px; flex: none; fill: none; stroke: currentColor; stroke-width: 2.2; }
+.mark { width: 20px; height: 20px; flex: none; border-radius: 10px; border: 2px solid var(--ink-3); position: relative; }
+.mark.done { background: var(--ink); border-color: var(--ink); }
+.mark.done::after { content: ""; position: absolute; left: 5px; top: 2px; width: 5px; height: 9px; border: solid #fff; border-width: 0 2px 2px 0; transform: rotate(45deg); }
+.mark.doing { border-color: transparent; background: conic-gradient(var(--hot) calc(var(--p, .12) * 1turn), var(--rule-2) 0); }
+.mark.doing::after { content: ""; position: absolute; inset: 2px; border-radius: 50%; background: #fff; }
+.erow:hover .mark.doing::after { background: var(--chip); }
+/* a moment's card: the way back to the list, as in World history */
+.back { display: inline-flex; align-items: center; gap: 6px; height: 36px; margin: -4px 0 -4px -8px; padding: 0 8px; border: 0; border-radius: 18px; background: none; font: 500 14px var(--sans); color: var(--ink); }
+.back:hover { background: var(--chip); }
+.back svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2.2; }
+#story .chead { margin-bottom: 10px; }

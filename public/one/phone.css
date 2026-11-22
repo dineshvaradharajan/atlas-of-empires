@@ -1,0 +1,166 @@
+/* One atlas prototype: the phone layout (760 px and narrower, where World history underneath is in its phone layout too).
+   White; the map first: it fills the screen and keeps its size, and the sheet slides over its lower edge. One bottom surface, edge to
+   edge: the sheet with the tabs under it. The one strong element is the rock column: a thick bar in the periods' own colours. */
+#ptop, #ps, #ptabs, #pidx, #pst, #pstory, #pall, #pscrim, #pOwnBack { display: none; }
+#story .rm { display: none; }
+
+@media (max-width: 760px) {
+  :root { --tabs: calc(80px + env(safe-area-inset-bottom)); --hair: #e3e3dd; --graph: #5e5e59; --float: 0 2px 10px rgba(17, 17, 17, .13); --lift: 0 -8px 30px rgba(17, 17, 17, .16); }
+  #narrow, #bar, #dock, #card, #mlist, #sdock, #strip, #todayBtn { display: none !important; }
+  #ptop svg, #ps svg, #ptabs svg, #pidx svg, #pst svg, #pstory svg, #pall svg { fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  .pplay svg { fill: currentColor !important; stroke: none !important; width: 16px; height: 16px; }
+
+  /* over the map: search (the Earth side; in history World history's own search and layers show), and Globe | Flat */
+  #ptop { display: block; position: absolute; z-index: 6; left: 16px; right: 16px; top: calc(12px + env(safe-area-inset-top)); }
+  #pSearch { display: flex; align-items: center; gap: 10px; width: 100%; height: 48px; padding: 0 16px; border: 1px solid var(--hair); border-radius: 24px; background: #fff; box-shadow: var(--float); font: 400 15px var(--sans); color: var(--graph); }
+  #pSearch svg { width: 18px; height: 18px; flex: none; }
+  #app[data-mode="hist"] #ptop, #app[data-story] #ptop { display: none; }
+  #app #viewSeg { top: calc(70px + env(safe-area-inset-top)); right: 16px; bottom: auto; height: 36px; padding: 2px; border: 1px solid var(--hair); border-radius: 18px; box-shadow: var(--float); transition: none; z-index: 6; }
+  #app #viewSeg button { padding: 0 14px; border-radius: 15px; font-size: 13px; color: var(--graph); }
+  #app #viewSeg button[aria-pressed="true"] { color: #fff; }
+  #app[data-story] #viewSeg, #app[data-app] #viewSeg, #app[data-mode="hist"] #viewSeg { display: none; } /* history is the flat map only on a phone: its labels are sized for the flat map and come out huge on the small globe */
+  #app[data-own] #pOwnBack { display: flex; position: absolute; z-index: 6; right: 16px; top: calc(70px + env(safe-area-inset-top)); align-items: center; gap: 8px; height: 36px; padding: 0 13px 0 9px; border: 1px solid var(--hair); border-radius: 18px; background: #fff; box-shadow: var(--float); font: 600 12.5px var(--sans); color: var(--ink); }
+
+  /* the bottom surface: the sheet, at three heights */
+  #ps { display: block; position: absolute; z-index: 7; left: 0; right: 0; bottom: 0; height: calc(196px + var(--tabs)); border-radius: 28px 28px 0 0; background: #fff; box-shadow: var(--lift); overflow: hidden; transition: height .28s ease; }
+  #ps[data-stop="half"] { height: min(58dvh, 500px); }
+  #ps[data-stop="full"] { height: calc(100dvh - 64px - env(safe-area-inset-top)); }
+  #app[data-app] #ps, #app[data-story] #ps { display: none; }
+  #pGrab { position: absolute; left: 0; right: 0; top: 0; height: 20px; border: 0; background: none; touch-action: none; }
+  #pGrab::before { content: ""; position: absolute; left: 50%; top: 8px; width: 36px; height: 4px; margin-left: -18px; border-radius: 2px; background: #cfcfc9; }
+  #pDate { position: absolute; left: 20px; top: 18px; max-width: calc(100% - 176px); padding: 0; border: 0; background: none; text-align: left; color: var(--ink); }
+  #pDate .l1 { display: block; white-space: nowrap; }
+  #pNum { font: 900 36px/36px var(--display); letter-spacing: -.01em; }
+  #pUnit { margin-left: 7px; font: 600 14.5px var(--sans); }
+  #pDate.long #pNum { font-size: 28px; } #pDate.long #pUnit { font-size: 12.5px; margin-left: 5px; }
+  .pchip { display: inline-flex; align-items: center; gap: 5px; height: 22px; margin-top: 5px; padding: 0 7px 0 9px; border-radius: 11px; font: 600 12px var(--sans); color: #111; white-space: nowrap; }
+  .pchip svg { width: 12px; height: 12px; stroke-width: 2.6; }
+  .pstep { position: absolute; right: 74px; top: 22px; height: 40px; display: flex; border: 1px solid var(--hair); border-radius: 20px; }
+  .pstep button { width: 40px; height: 38px; display: grid; place-items: center; border: 0; background: none; } .pstep button + button { border-left: 1px solid var(--hair); }
+  .pstep svg { width: 16px; height: 16px; }
+  .pplay.dark { display: grid; place-items: center; width: 44px; height: 44px; border: 0; border-radius: 50%; background: var(--ink); color: #fff; }
+  #pPlay { position: absolute; right: 20px; top: 20px; }
+
+  /* the rock column, and the other part of time as the block at its end */
+  #pCol { position: absolute; left: 20px; right: 20px; top: 98px; display: flex; gap: 8px; }
+  .barw { position: relative; flex: 1; min-width: 0; } .tilew { position: relative; flex: none; width: 58px; }
+  #app[data-mode="hist"] .tilew { order: -1; }
+  #pBar { position: relative; height: 28px; touch-action: none; cursor: ew-resize; }
+  #pBar::before { content: ""; position: absolute; left: 0; right: 0; top: -12px; bottom: -8px; } /* 48 px to grab */
+  #pBar .fill, #pTile { position: relative; display: block; width: 100%; height: 28px; border-radius: 9px; overflow: hidden; box-shadow: inset 0 0 0 1px rgba(17, 17, 17, .22); }
+  #pBar .fill span, #pTile span { position: absolute; inset: 0; } #pBar .fill i, #pTile i, #paStrip .bars i, .mini i, .pstrip i { position: absolute; top: 0; bottom: 0; }
+  #pBands, #pTileE { display: none; }
+  #app[data-mode="hist"] #pBands, #app[data-mode="hist"] #pTileE { display: block; } #app[data-mode="hist"] #pStrata, #app[data-mode="hist"] #pTileH, #app[data-mode="hist"] #pMarks { display: none; }
+  #pTile { padding: 0; border: 0; background: #fff; }
+  #pMarks i { position: absolute; top: -11px; width: 6px; height: 6px; margin-left: -3px; transform: rotate(45deg); background: var(--ink); }
+  #pMarks i.on { top: -13px; width: 9px; height: 9px; margin-left: -4.5px; background: var(--kick); }
+  #pThumb { position: absolute; top: -6px; width: 14px; height: 40px; margin-left: -7px; box-sizing: border-box; border: 2.5px solid var(--ink); border-radius: 7px; background: #fff; box-shadow: 0 2px 6px rgba(17, 17, 17, .3); pointer-events: none; }
+  #pTicks { position: relative; height: 14px; margin-top: 6px; font-size: 10.5px; line-height: 14px; color: var(--graph); white-space: nowrap; }
+  #pTicks span { position: absolute; top: 0; } #pTicks span.end { right: 0; }
+  #pTileT { display: block; margin-top: 6px; font: 700 10.5px/14px var(--sans); text-align: center; white-space: nowrap; }
+
+  /* under the column: one line (a turning point, or what the period was), then the card */
+  #pBody { position: absolute; left: 0; right: 0; top: 152px; bottom: var(--tabs); padding: 0 20px 16px; overflow: hidden; }
+  #ps[data-stop="half"] #pBody, #ps[data-stop="full"] #pBody { overflow-y: auto; }
+  #pRow { display: flex; align-items: center; gap: 9px; height: 43px; border-top: 1px solid var(--hair); font-size: 13.5px; }
+  #pRow .dia { flex: none; width: 8px; height: 8px; transform: rotate(45deg); background: var(--kick); } #pRow .dia[hidden] { display: none; }
+  #pRowText { flex: 1; min-width: 0; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  #pToday { display: none; flex: none; align-items: center; gap: 6px; height: 30px; padding: 0 11px 0 9px; border: 1px solid var(--hair); border-radius: 15px; background: #fff; font: 600 12px var(--sans); } #pToday svg { width: 14px; height: 14px; }
+  #app[data-mode="hist"] #pToday { display: flex; }
+  #pUp { flex: none; width: 30px; height: 30px; display: grid; place-items: center; border: 0; border-radius: 50%; background: #f1f1ec; } #pUp svg { width: 15px; height: 15px; stroke-width: 2.2; transition: transform .2s; }
+  #ps[data-stop="full"] #pUp svg { transform: rotate(180deg); }
+  #pPic { position: relative; display: block; width: 100%; height: 150px; margin-top: 6px; padding: 0; border: 0; border-radius: 14px; overflow: hidden; background: #222; } #pPic[hidden] { display: none; }
+  #pPic img { display: block; width: 100%; height: 100%; object-fit: cover; }
+  #pPic .go { position: absolute; left: 8px; bottom: 8px; height: 32px; display: flex; align-items: center; gap: 7px; padding: 0 13px 0 10px; border-radius: 16px; background: #fff; color: var(--ink); font: 600 13px var(--sans); } #pPic .go svg { width: 14px; height: 14px; }
+  #pPic .n { position: absolute; right: 8px; bottom: 8px; height: 24px; display: flex; align-items: center; padding: 0 9px; border-radius: 12px; background: rgba(0, 0, 0, .62); color: #fff; font-size: 11.5px; }
+  #pTurn { margin-top: 14px; padding-left: 12px; border-left: 3px solid var(--kick); } #pTurn[hidden] { display: none; }
+  #pTurn span { display: block; font: 600 11.5px/14px var(--sans); color: var(--kick); } #pTurn b { display: block; margin-top: 2px; font: 800 17px/21px var(--display); } #pTurn p { margin: 4px 0 0; font-size: 14px; line-height: 21px; color: var(--ink-2); }
+  #pText { margin: 14px 0 0; font-size: 15px; line-height: 23px; color: var(--ink-2); }
+  #pTrust { margin: 12px 0 0; font-size: 12px; line-height: 17px; color: var(--graph); }
+  #app[data-mode="hist"] #pPic, #app[data-mode="hist"] #pTurn, #app[data-mode="hist"] #pText, #app[data-mode="hist"] #pTrust { display: none; }
+
+  /* the tabs: a dark dock that floats over the bottom of the sheet (and over the map when World history has the screen). The tab you
+     are on is a white capsule, and its icon sits on the colour of the time you are in. */
+  #ptabs { display: flex; gap: 4px; position: absolute; z-index: 10; left: 50%; bottom: calc(10px + env(safe-area-inset-bottom)); width: min(calc(100% - 32px), 380px); height: 60px; box-sizing: border-box; padding: 6px; transform: translateX(-50%);
+    border: 1px solid rgba(255, 255, 255, .1); border-radius: 30px; background: rgba(20, 20, 19, .9); -webkit-backdrop-filter: blur(16px) saturate(1.5); backdrop-filter: blur(16px) saturate(1.5);
+    box-shadow: 0 12px 32px rgba(17, 17, 17, .3), 0 2px 6px rgba(17, 17, 17, .2), inset 0 1px 0 rgba(255, 255, 255, .14); }
+  #ptabs button { flex: 1 1 0; min-width: 0; height: 46px; display: flex; align-items: center; justify-content: center; gap: 8px; padding: 0 10px; border: 0; border-radius: 23px; background: none; font: 500 13px var(--sans); letter-spacing: .01em; color: rgba(255, 255, 255, .66);
+    transition: flex-grow .28s cubic-bezier(.3, .7, .2, 1), background-color .2s ease, color .2s ease; }
+  #ptabs svg { flex: none; width: 20px; height: 20px; stroke-width: 1.7; transition: background-color .3s ease; }
+  #ptabs button[aria-current] { flex-grow: 1.5; background: #fff; color: var(--ink); font-weight: 700; box-shadow: 0 1px 3px rgba(0, 0, 0, .25); }
+  #ptabs button[aria-current] svg { width: 32px; height: 32px; box-sizing: border-box; margin-left: -4px; padding: 6px; border-radius: 50%; background: var(--now, #e9e9e3); stroke-width: 2; }
+  #ptabs button:active { transform: scale(.97); }
+  #app[data-story] #ptabs, #app[data-notabs] #ptabs { display: none; }
+  @media (prefers-reduced-motion: reduce) { #ptabs button, #ptabs svg { transition: none; } }
+
+  /* lists open half way, so the map stays in view: jump to a time (the rock column as a list), and stories (cards to swipe) */
+  #app[data-list] #pst { height: auto !important; }
+  #pidx, #app[data-list] #pst { display: flex; flex-direction: column; position: absolute; z-index: 9; left: 0; right: 0; bottom: var(--tabs); height: min(58dvh, 500px); border-radius: 28px 28px 0 0; background: #fff; box-shadow: var(--lift); overflow: hidden; }
+  #pidx[hidden] { display: none; }
+  #app[data-story] #pidx { bottom: 0; z-index: 12; }
+  .phead { flex: none; display: flex; align-items: center; gap: 10px; height: 60px; padding: 4px 16px 0 20px; }
+  .phead h2 { flex: 1; min-width: 0; margin: 0; font: 800 22px/28px var(--display); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; } .phead .cnt { font-size: 12.5px; color: var(--graph); white-space: nowrap; }
+  .px { flex: none; width: 36px; height: 36px; display: grid; place-items: center; border: 0; border-radius: 50%; background: #f1f1ec; } .px svg { width: 16px; height: 16px; stroke-width: 2.2; }
+  .pseg { flex: none; display: flex; height: 38px; margin: 0 20px 10px; padding: 3px; border-radius: 19px; background: #f1f1ec; } .pseg[hidden] { display: none; }
+  .pseg button { flex: 1; border: 0; border-radius: 16px; background: none; font: 500 13.5px var(--sans); color: var(--graph); }
+  .pseg button[aria-pressed="true"] { background: #fff; color: var(--ink); font-weight: 600; box-shadow: 0 1px 4px rgba(17, 17, 17, .18); }
+  #pidxRows { flex: 1; min-height: 0; overflow-y: auto; padding-bottom: 12px; }
+  .irow { position: relative; display: flex; align-items: center; width: 100%; min-height: 46px; padding: 0 20px 0 50px; border: 0; background: none; text-align: left; font: 400 14px var(--sans); color: var(--ink); }
+  .irow .rail { position: absolute; left: 20px; top: 0; bottom: 0; width: 16px; box-shadow: inset 1px 0 0 rgba(17, 17, 17, .2), inset -1px 0 0 rgba(17, 17, 17, .2); }
+  .irow .d { position: absolute; left: 22px; top: 50%; width: 12px; height: 12px; margin-top: -6px; box-sizing: border-box; transform: rotate(45deg); border: 2px solid #fff; background: var(--ink); } .irow .d.extinction { background: var(--kick); }
+  .irow .n { flex: 1; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; } .irow.per .n { font: 800 16px var(--display); }
+  .irow .here { margin-left: 8px; padding: 3px 8px; border-radius: 10px; background: var(--ink); color: #fff; font: 600 10.5px var(--sans); vertical-align: 2px; }
+  .irow .v { flex: none; margin-left: 10px; font-size: 12.5px; color: var(--graph); white-space: nowrap; }
+  .irow.cur .n { font-weight: 700; }
+  #pCards { flex: 1; min-height: 0; display: flex; gap: 12px; padding: 4px 20px 14px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; } #pCards::-webkit-scrollbar { display: none; }
+  .pcard { position: relative; flex: none; width: 230px; height: min(272px, 36dvh); padding: 0; border: 1px solid var(--hair); border-radius: 18px; overflow: hidden; background: #fff; text-align: left; scroll-snap-align: center; color: var(--ink); display: flex; flex-direction: column; }
+  .pcard img, .pcard .noimg { flex: 1 1 0; min-height: 60px; width: 100%; object-fit: cover; background: #f1f1ec; }
+  .pstrip { position: relative; flex: none; height: 6px; }
+  .pcard b { flex: none; margin: 10px 14px 0; font: 800 17px/21px var(--display); }
+  .pcard small { flex: none; margin: 4px 14px 0; font-size: 12.5px; line-height: 16px; color: var(--graph); }
+  .pcard .prog { position: relative; flex: none; height: 4px; margin: 10px 14px 0; border-radius: 2px; background: var(--hair); } .pcard .prog i { position: absolute; left: 0; top: 0; bottom: 0; border-radius: 2px; background: var(--kick); }
+  .pcard em { flex: none; margin: 5px 14px 12px; font: 400 11.5px/14px var(--sans); font-style: normal; color: var(--graph); }
+
+  /* a story playing: its controls float at the top, the chapter is the sheet, the tabs are gone */
+  #app[data-story] #pstory { display: block; position: absolute; z-index: 6; left: 16px; right: 16px; top: calc(12px + env(safe-area-inset-top)); height: 62px; }
+  .pf { position: absolute; top: 0; height: 44px; display: flex; align-items: center; gap: 6px; border: 1px solid var(--hair); border-radius: 22px; background: #fff; box-shadow: var(--float); font: 600 13.5px var(--sans); color: var(--ink); }
+  .pf svg { width: 17px; height: 17px; }
+  #psBack { left: 0; width: 44px; justify-content: center; } #psCount { left: 52px; padding: 0 12px 0 15px; } #psCount svg { width: 13px; height: 13px; stroke-width: 2.4; }
+  #psAll { right: 0; padding: 0 14px 0 10px; font-size: 13px; } #psPlay { position: absolute; top: 0; right: 132px; }
+  .mini { position: relative; width: 24px; height: 12px; border-radius: 4px; overflow: hidden; box-shadow: inset 0 0 0 1px rgba(17, 17, 17, .25); }
+  #psSegs { position: absolute; left: 0; right: 0; top: 52px; height: 12px; display: flex; align-items: center; gap: 3px; }
+  #psSegs i { flex: 1; height: 6px; border-radius: 3px; box-shadow: inset 0 0 0 1px rgba(17, 17, 17, .16); } #psSegs i.todo { opacity: .38; } #psSegs i.on { height: 10px; box-shadow: 0 0 0 2px var(--ink); }
+  #app[data-story] #story { display: flex; flex-direction: column; z-index: 7; left: 0 !important; right: 0; top: auto !important; bottom: 0; width: auto !important; height: min(360px, 48dvh); max-height: none; box-sizing: border-box; padding: 22px 20px calc(14px + env(safe-area-inset-bottom)); border: 0; border-radius: 28px 28px 0 0; box-shadow: var(--lift); overflow: hidden; transition: height .28s ease; }
+  #app[data-story] #story.open { height: calc(100dvh - 96px - env(safe-area-inset-top)); overflow-y: auto; }
+  #story .chead { display: none; }
+  #story .kicker { flex: none; font: 600 12.5px/16px var(--sans); letter-spacing: 0; text-transform: none; color: var(--graph); }
+  #story figure { position: absolute; right: 20px; top: 22px; width: 68px; margin: 0; } #story figure img { height: 68px; border-radius: 14px; } #story figcaption { display: none; }
+  #story:has(figure) .kicker, #story:has(figure) h1, #story:has(figure) .sub { padding-right: 80px; }
+  #story h1 { flex: none; margin: 3px 0 2px; font: 800 23px/27px var(--display); }
+  #story .sub { flex: none; min-height: 17px; font-size: 13px; line-height: 17px; color: var(--graph); }
+  #story:has(figure) .sub { min-height: 22px; }
+  #story p { flex: 0 1 auto; min-height: 0; margin: 10px 0 0; font-size: 14.5px; line-height: 22px; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 4; }
+  #story.open p { display: block; overflow: visible; flex: none; }
+  #story .rm { display: block; flex: none; align-self: flex-start; height: 30px; margin-top: 8px; padding: 0 12px; border: 1px solid var(--hair); border-radius: 15px; background: #fff; font: 600 12.5px var(--sans); color: var(--ink); }
+  #story .snav { flex: none; margin-top: auto; padding-top: 12px; }
+  #story .snav button { flex: none; height: 48px; padding: 0 18px; border: 1px solid var(--hair); border-radius: 24px; font: 600 14px var(--sans); } #story .snav button.go { flex: 1; border: 0; }
+
+  /* all of time, inside a story: a small sheet that always lets you switch timelines */
+  #pscrim { display: block; position: absolute; z-index: 13; inset: 0; background: rgba(17, 17, 17, .42); } #pscrim[hidden] { display: none; }
+  #pall { display: block; position: absolute; z-index: 14; left: 0; right: 0; bottom: 0; padding-bottom: calc(22px + env(safe-area-inset-bottom)); border-radius: 28px 28px 0 0; background: #fff; box-shadow: var(--lift); } #pall[hidden] { display: none; }
+  #paStrip { position: relative; margin: 4px 20px 14px; padding-top: 28px; }
+  #paNow { position: absolute; top: 0; transform: translateX(-50%); padding: 3px 9px; border-radius: 10px; background: var(--kick); color: #fff; font: 600 11.5px/14px var(--sans); white-space: nowrap; }
+  #paStrip .bars { display: flex; gap: 4px; height: 28px; } #paStrip .bars span { position: relative; border-radius: 9px; overflow: hidden; box-shadow: inset 0 0 0 1px rgba(17, 17, 17, .22); } #paE { flex: 0 0 64%; } #paH { flex: 1; }
+  #paMark { position: absolute; top: 20px; width: 3px; height: 40px; margin-left: -1.5px; border-radius: 2px; background: var(--kick); }
+  #paStrip .ends { display: flex; justify-content: space-between; margin-top: 6px; font-size: 11px; line-height: 14px; color: var(--graph); }
+  .pbtn { display: block; width: calc(100% - 40px); height: 48px; margin: 8px 20px 0; border: 1px solid var(--hair); border-radius: 24px; background: #fff; font: 600 14.5px var(--sans); color: var(--ink); } .pbtn.dark { border: 0; background: var(--ink); color: #fff; }
+
+  /* the pictures, full screen */
+  #imImg { left: 0; top: 16%; transform: none; width: 100%; max-width: none; max-height: 42%; border-radius: 0; box-shadow: none; }
+  .imx { left: 16px; right: auto; top: calc(12px + env(safe-area-inset-top)); background: rgba(255, 255, 255, .16); color: #fff; }
+  .imcap { left: 20px; right: 20px; top: 60%; bottom: 84px; overflow-y: auto; } .imcap p { font-size: 16px; line-height: 24px; }
+  .imwhen { letter-spacing: 0; text-transform: none; font-size: 13px; }
+  .imthumbs { display: none; }
+  .imnav { top: auto; bottom: calc(24px + env(safe-area-inset-bottom)); width: 44px; height: 44px; background: rgba(255, 255, 255, .16); color: #fff; } .imnav.prev { left: 16px; } .imnav.next { right: 16px; }
+  @media (prefers-reduced-motion: reduce) { #ps, #app[data-story] #story { transition: none; } }
+}

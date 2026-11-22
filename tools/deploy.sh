@@ -8,7 +8,7 @@ cd "$(dirname "$0")/.."
 sh tools/vendor.sh check # the trimmed map library (public/vendor/) has every d3 name the scripts use, or nothing is deployed
 V=$(git rev-parse --short HEAD)
 D=$(mktemp -d)
-git archive HEAD public tools/seo.py tools/compact.py | tar -x -C "$D"
+git archive HEAD public tools/seo.py tools/compact.py tools/one.py | tar -x -C "$D"
 python3 -I "$D/tools/seo.py" --public "$D/public"
 python3 -I "$D/tools/compact.py" --public "$D/public" # border files and base maps in packed form (about half the download)
 python3 -I - "$D/public/index.html" "$V" <<'PY'
@@ -33,7 +33,10 @@ s = s.replace('"../fonts/fonts-earth.css"', f'"../fonts/fonts-earth.css?v={v}"')
 s = s.replace('<meta charset="utf-8">', f'<meta charset="utf-8">\n<meta name="data-version" content="{v}">', 1)
 open(p, "w").write(s)
 PY
+# The combined atlas (public/one/): its history frame is written from this release's index.html, and its own files get the version
+python3 -I "$D/tools/one.py" --public "$D/public" --version "$V"
 grep -q "data-version" "$D/public/index.html"
+grep -q "data-version" "$D/public/one/index.html" && grep -q '<base href="../">' "$D/public/one/hist.html"
 grep -q "data-version" "$D/public/earth-history/index.html"
 test -f "$D/public/sitemap.xml" && test -f "$D/public/404.html"
 wrangler pages deploy "$D/public" --project-name=worldatlas --branch=main --commit-dirty=true
