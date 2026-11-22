@@ -26,7 +26,6 @@
     <nav class="sitesw" aria-label="Part of the atlas"><a href="../">World history</a><span aria-current="page">Earth history</span></nav>
     <nav class="tools">
       <button type="button" id="storiesBtn">Moments</button>
-      <button type="button" id="forcesBtn" hidden>Forces</button>
       <button type="button" id="lifeBtn" aria-pressed="false">Life through time</button>
       <button type="button" id="aboutBtn">About this map</button>
     </nav>
@@ -60,11 +59,12 @@
     </div>
   </aside>
 
-  <section id="life" hidden aria-label="When each group of living things first appears">
+  <section id="life" hidden aria-label="How life branched: when each group of living things appears, and what it grew out of">
     <div class="lifehead">
-      <h2>When each group first appears</h2>
-      <p class="key"><span><i class="k solid"></i>known from fossils</span><span><i class="k clock"></i>older, by DNA estimates</span><span><i class="k claim"></i>oldest disputed claim</span><span><i class="k gone"></i>died out</span></p>
+      <h2>How life branched</h2>
+      <p class="key"><span><i class="k solid"></i>alive at this time</span><span><i class="k gone"></i>× died out</span><span><i class="k fut"></i>not yet</span><span><i class="k clock"></i>older, by DNA estimates</span></p>
       <p id="lifeCount" class="count"></p>
+      <button type="button" id="lifeAll" class="lall" aria-pressed="false">Show all groups</button>
       <button type="button" class="x" id="lifeClose" aria-label="Close life through time"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
     </div>
     <div id="lifeRows"></div>

@@ -98,15 +98,18 @@ body.light .k { background: var(--ink-2); }
 body.light .k.clock { background: repeating-linear-gradient(90deg, var(--ink-3) 0 3px, transparent 3px 6px); }
 body.light .k.claim { background: none; border-color: var(--highlight); }
 body.light .k.gone { background: var(--highlight); }
-body.light .grp { padding-left: 24px; background: #fff; letter-spacing: .12em; text-transform: uppercase; font: 600 11.5px var(--sans); }
-body.light .row:hover, body.light .row.on { background: var(--chip); }
-body.light .row .nm { left: 24px; text-shadow: 0 0 4px #fff, 0 0 4px #fff, 0 0 4px #fff; }
-body.light .row .tr { left: calc(var(--pad-l) - var(--gut) - 1px); right: calc(var(--pad-r) - var(--gut) - 1px); }
-body.light .row .bar { opacity: .3; }
-body.light .row.alive .bar { opacity: 1; }
-body.light .row .clm { border-color: var(--highlight); background: #fff; }
-body.light .row .end { background: var(--highlight); }
-body.light #lifeLine { border-left-color: var(--ink); margin-left: calc(-1 * var(--gut) - 1px); }
+body.light .tree { margin-left: calc(var(--pad-l) - var(--gut) - 1px); margin-right: calc(var(--pad-r) - var(--gut) - 1px); }
+body.light .tbr .nm { color: var(--ink); text-shadow: 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff; }
+body.light .tbr:hover .nm, body.light .tbr.on .nm { color: var(--highlight); }
+body.light .tbr[data-st="fut"] .nm, body.light .tbr[data-st="dead"] .nm { color: var(--ink-3); }
+body.light .tbr .end { color: var(--ink-2); }
+body.light .tbr .more { border-color: var(--rule-2); background: #fff; color: var(--ink-2); }
+body.light .tbr .more:hover { border-color: var(--ink); color: var(--ink); }
+body.light .tcn { background: var(--rule); }
+body.light .tcn[data-st="alive"], body.light .tcn[data-st="dead"] { background: var(--rule-2); opacity: 1; }
+body.light .lall { border-color: var(--ink); background: #fff; }
+body.light .lall:hover { background: var(--chip); }
+body.light #lifeLine { border-left-color: var(--highlight); }
 body.light #app[data-view="life"] #now, body.light #app[data-view="life"] #rail { bottom: calc(var(--dock-h) + min(46vh, 430px) + 12px); }
 body.light #app[data-view="life"] #now { max-height: calc(100% - 88px - var(--dock-h) - min(46vh, 430px) - 12px); overflow: hidden; }
 
@@ -281,3 +284,9 @@ body.light .ftile.on { border-color: var(--ink); background: var(--chip); box-sh
 body.light .fopen { border-color: var(--ink); }
 body.light .fopen .mlist li { border-bottom-color: var(--rule-2); }
 body.light .fopen .mrow:hover .mt b, body.light .fopen .src a:hover { color: var(--highlight); }
+@media (max-width: 760px) {
+  body.light .lifehead { padding: 10px 52px 8px 16px; gap: 4px 12px; align-items: center; }
+  body.light .lifehead h2 { font-size: 17px; flex-basis: 100%; }
+  body.light .lifehead .count { margin-left: 0 !important; font-size: 12px; }
+  body.light .lall { height: 28px; padding: 0 10px; font-size: 12px; }
+}

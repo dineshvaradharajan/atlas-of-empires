@@ -420,7 +420,7 @@ const FICON = {
 let FX = null;
 function forceCards() {
   const F = D.forces || [];
-  $("#forces").hidden = $("#forcesBtn").hidden = !F.length;
+  $("#forces").hidden = !F.length;
   $("#forceGrid").innerHTML = F.map((f, i) => `<button type="button" class="ftile" data-f="${i}" aria-expanded="false" aria-controls="forceOpen">
     <svg viewBox="0 0 24 24" aria-hidden="true">${FICON[f.id] || FICON.drift}</svg><b>${esc(f.title)}</b><span>${esc(f.line || "")}</span></button>`).join("");
 }
@@ -510,13 +510,25 @@ function drawStory() { // the chapter's sites where they sat at the time, and it
     if (last && prev) { const a = Math.atan2(last[1] - prev[1], last[0] - prev[0]); ctx.fillStyle = col; ctx.beginPath(); ctx.moveTo(last[0] + 9 * Math.cos(a), last[1] + 9 * Math.sin(a)); ctx.lineTo(last[0] + 9 * Math.cos(a + 2.5), last[1] + 9 * Math.sin(a + 2.5)); ctx.lineTo(last[0] + 9 * Math.cos(a - 2.5), last[1] + 9 * Math.sin(a - 2.5)); ctx.fill(); }
     if (prog < 1) S.dirty = true;
   }
+  const here = [];
   for (const t of c.sites || []) {
     if (!t.then) continue; const xy = project(t.then[0], t.then[1]); if (!xy) continue;
-    pins.push({ item: t, type: "site", ma: t.ma ?? c.ma, x: xy[0], y: xy[1] });
+    here.push({ t, xy }); pins.push({ item: t, type: "site", ma: t.ma ?? c.ma, x: xy[0], y: xy[1] });
     ctx.globalAlpha = .45 + .55 * xy[2]; ctx.fillStyle = HOT; ctx.strokeStyle = PAPER; ctx.lineWidth = 2;
     ctx.beginPath(); ctx.arc(xy[0], xy[1], 6, 0, 7); ctx.fill(); ctx.stroke();
     ctx.beginPath(); ctx.arc(xy[0], xy[1], 12 + 3 * Math.sin(performance.now() / 300), 0, 7); ctx.strokeStyle = HOT; ctx.lineWidth = 1.5; ctx.stroke();
-    ctx.font = "700 13px Archivo, sans-serif"; ctx.lineWidth = 4; ctx.strokeStyle = LIGHT ? "rgba(255,255,255,.92)" : "rgba(4,6,12,.85)"; ctx.strokeText(t.name, xy[0] + 16, xy[1] + 4); ctx.fillStyle = INK; ctx.fillText(t.name, xy[0] + 16, xy[1] + 4);
+  }
+  // labels: each tries right, left, above and below its pin, and takes the first spot clear of the other pins and labels
+  ctx.font = "700 13px Archivo, sans-serif"; ctx.lineWidth = 4; ctx.strokeStyle = LIGHT ? "rgba(255,255,255,.92)" : "rgba(4,6,12,.85)"; ctx.fillStyle = INK;
+  const cr = mk.getBoundingClientRect(), cards = ["#story", "#rail", "#now", "#bar", "#dock"].map((q) => document.querySelector(q)).filter((el) => el && !el.hidden && el.offsetParent)
+    .map((el) => { const r = el.getBoundingClientRect(); return [r.left - cr.left - 6, r.top - cr.top - 6, r.right - cr.left + 6, r.bottom - cr.top + 6]; });
+  const boxes = [...here.map(({ xy }) => [xy[0] - 14, xy[1] - 14, xy[0] + 14, xy[1] + 14]), ...cards], hit = (b) => boxes.some((o) => b[0] < o[2] && b[2] > o[0] && b[1] < o[3] && b[3] > o[1]);
+  for (const { t, xy } of here) {
+    const w = ctx.measureText(t.name).width, [x, y] = xy, h = 16;
+    const spots = [[x + 16, y + 4], [x - 16 - w, y + 4], [x - w / 2, y - 18], [x - w / 2, y + 26], [x + 16, y - 14], [x + 16, y + 22], [x - 16 - w, y - 14], [x - 16 - w, y + 22]];
+    let at = spots.find(([lx, ly]) => !hit([lx - 2, ly - h + 4, lx + w + 2, ly + 4])) || spots[0];
+    boxes.push([at[0] - 2, at[1] - h + 4, at[0] + w + 2, at[1] + 4]);
+    ctx.globalAlpha = .45 + .55 * xy[2]; ctx.strokeText(t.name, at[0], at[1]); ctx.fillText(t.name, at[0], at[1]);
   }
   ctx.globalAlpha = 1; if (!reduced && (c.sites || []).some((t) => t.then)) S.dirty = true; // the rings pulse
 }
@@ -622,32 +634,70 @@ function renderCurveNow() {
 }
 
 // ---------------------------------------------------------------- life through time
+// a family tree: each line is a group, from its oldest fossils to today (or to when it died out), branching off the group it grew
+// out of; the lines share the timeline's scale and sit right above it. The main branches show first; a branch opens its smaller groups.
+const MAIN = new Set(["first-life", "bacteria", "cyanobacteria", "archaea", "eukaryotes", "red-algae", "green-algae", "land-plants", "ferns", "seed-plants", "conifers",
+  "flowering-plants", "fungi", "animals", "sponges", "cnidarians", "arthropods", "trilobites", "insects", "molluscs", "ammonites", "chordates", "jawless-fish",
+  "cartilaginous-fish", "ray-finned-fish", "tetrapods", "amphibians", "amniotes", "turtles", "squamates", "plesiosaurs", "archosaurs", "crocodilians", "pterosaurs",
+  "dinosaurs", "tyrannosaurs", "birds", "synapsids", "mammals", "whales", "primates", "homo-sapiens"]);
+const LIFE = { open: new Set(), all: false, rows: [] }, LRH = 22;
 let lifeRows = [];
+function lifeShown(id) { return LIFE.all || MAIN.has(id) || LIFE.open.has(id); }
 function buildLife() {
+  const O = new Map(D.origins.map((o) => [o.id, o])), up = (o) => { let p = o.parent; while (p && !lifeShown(p)) p = O.get(p)?.parent; return p ? O.get(p) : null; };
+  const kids = new Map(D.origins.map((o) => [o.id, []])), roots = [];
+  for (const o of D.origins) if (lifeShown(o.id)) { const p = up(o); (p ? kids.get(p.id) : roots).push(o); }
+  // hidden groups each shown branch would open: those whose nearest shown ancestor it is
+  const more = new Map();
+  for (const o of D.origins) if (!lifeShown(o.id)) { const p = up(o); if (p) more.set(p.id, (more.get(p.id) || 0) + 1); }
+  // smaller branches first, so that a big branch (the animals) does not push its small sisters (fungi) far below their parent
+  const size = new Map(), count = (o) => { let n = 1; for (const c of kids.get(o.id)) n += count(c); size.set(o.id, n); return n; };
+  for (const r of roots) count(r);
+  const order = [], walk = (o) => { order.push(o); for (const c of kids.get(o.id).sort((a, b) => size.get(a.id) - size.get(b.id) || b.fossilMa - a.fossilMa)) walk(c); };
+  for (const r of roots.sort((a, b) => b.fossilMa - a.fossilMa)) walk(r);
+  const row = new Map(order.map((o, i) => [o.id, i]));
   let h = "";
-  for (const [g, name] of GROUPS) { const col = gcol(g);
-    const rows = D.origins.filter((o) => o.group === g); if (!rows.length) continue;
-    h += `<p class="grp">${name}</p>`;
-    for (const o of rows) {
-      const x0 = X(o.fossilMa), x1 = X(o.extinctMa || 0), ck = o.clockMa ? Math.max(...o.clockMa) : 0;
-      h += `<button type="button" class="row" data-id="${o.id}" style="--g:${col}"><span class="tr">` + (ck > o.fossilMa ? `<i class="clk" style="left:${X(ck) * 100}%;width:${(x0 - X(ck)) * 100}%"></i>` : "") +
-        `<i class="bar" style="left:${x0 * 100}%;width:${Math.max(.15, (x1 - x0) * 100)}%"></i>` + (o.claimMa ? `<i class="clm" style="left:${X(o.claimMa) * 100}%"></i>` : "") + (o.extinctMa ? `<i class="end" style="left:${x1 * 100}%"></i>` : "") +
-        `</span><span class="nm">${esc(o.name)}</span></button>`;
-    }
+  for (const o of order) {
+    const i = row.get(o.id), y = i * LRH, x0 = X(o.fossilMa), x1 = X(o.extinctMa || 0), ck = o.clockMa ? Math.max(...o.clockMa) : 0, p = up(o), n = more.get(o.id) || 0;
+    const flip = x0 > .78, col = gcol(o.group), opened = kids.get(o.id).some((c) => LIFE.open.has(c.id));
+    if (p) h += `<i class="tcn" style="left:${x0 * 100}%;top:${row.get(p.id) * LRH + 14}px;height:${y - row.get(p.id) * LRH}px" data-for="${o.id}"></i>`;
+    h += `<div class="tbr" data-id="${o.id}" style="top:${y}px;--g:${col}">` +
+      (ck > o.fossilMa ? `<i class="clk" style="left:${X(ck) * 100}%;width:${(x0 - X(ck)) * 100}%"></i>` : "") +
+      `<i class="bar" style="left:${x0 * 100}%;width:${Math.max(.2, (x1 - x0) * 100)}%"></i>` + (o.extinctMa ? `<i class="end" style="left:${x1 * 100}%">×</i>` : "") +
+      `<span class="lab" data-x="${x0}" style="${flip ? `right:calc(${(1 - x0) * 100}% + 6px)` : `left:calc(${x0 * 100}% + 6px)`}">` +
+      `<button type="button" class="nm" data-o="${o.id}">${esc(o.name.split(" (")[0])}</button>` +
+      (n ? `<button type="button" class="more" data-open="${o.id}" aria-label="Show ${n} smaller groups in ${esc(o.name.split(" (")[0])}">+${n}</button>` : opened && !LIFE.all ? `<button type="button" class="more" data-shut="${o.id}" aria-label="Hide the smaller groups">−</button>` : "") +
+      `</span></div>`;
   }
-  $("#lifeRows").innerHTML = h + '<div id="lifeLine"></div>';
-  lifeRows = [...document.querySelectorAll("#lifeRows .row")].map((el) => ({ el, o: D.origins.find((x) => x.id === el.dataset.id), alive: null }));
+  $("#lifeRows").innerHTML = `<div class="tree" style="height:${order.length * LRH + 10}px">${h}<div id="lifeLine"></div></div>`;
+  lifeRows = order.map((o) => ({ el: document.querySelector(`.tbr[data-id="${o.id}"]`), cn: document.querySelector(`.tcn[data-for="${o.id}"]`), o, st: null }));
+  $("#lifeAll").textContent = LIFE.all ? "Main branches only" : `Show all ${D.origins.length} groups`;
+  $("#lifeAll").setAttribute("aria-pressed", LIFE.all); lifeFitW = 0;
 }
 function lifeTick() {
   if (!S.life) return; let n = 0;
-  for (const r of lifeRows) { const a = S.ma <= r.o.fossilMa && S.ma >= (r.o.extinctMa || 0); if (a) n++; if (a !== r.alive) { r.alive = a; r.el.classList.toggle("alive", a); } r.el.classList.toggle("on", S.sel?.item === r.o); }
-  $("#lifeCount").textContent = `${n} of ${lifeRows.length} groups are known from fossils at this time`;
-  const tr = $("#track").getBoundingClientRect(), lr = $("#lifeRows"); const ln = $("#lifeLine");
-  ln.style.left = tr.left + X(S.ma) * tr.width + "px"; ln.style.height = lr.scrollHeight + "px";
+  for (const g of D.origins) if (S.ma <= g.fossilMa && S.ma >= (g.extinctMa || 0)) n++;
+  for (const r of lifeRows) {
+    const st = S.ma > r.o.fossilMa ? "fut" : S.ma < (r.o.extinctMa || 0) ? "dead" : "alive";
+    if (st !== r.st) { r.st = st; r.el.dataset.st = st; if (r.cn) r.cn.dataset.st = st; }
+    r.el.classList.toggle("on", S.sel?.item === r.o);
+  }
+  $("#lifeCount").textContent = `${n} of ${D.origins.length} groups alive ${S.ma < 0.0002 ? "today" : ageText(S.ma)}`;
+  $("#lifeLine").style.left = X(S.ma) * 100 + "%";
+  lifeFit();
 }
+let lifeFitW = 0;
+function lifeFit() { // a name that would run off the right edge goes to the left of its line's start instead
+  const tr = $("#lifeRows .tree"); if (!tr || !tr.clientWidth || tr.clientWidth === lifeFitW) return; lifeFitW = tr.clientWidth;
+  for (const l of tr.querySelectorAll(".lab")) {
+    const x = +l.dataset.x * lifeFitW; l.style.left = x + 6 + "px"; l.style.right = "auto";
+    if (x + 6 + l.offsetWidth > lifeFitW) { l.style.left = "auto"; l.style.right = lifeFitW - x + 6 + "px"; }
+  }
+}
+function lifeRebuild(keep) { const box = $("#lifeRows"), top = box.scrollTop; buildLife(); lifeFitW = 0; lifeTick(); box.scrollTop = keep ? top : 0; }
 function setLife(on) {
   S.life = on; $("#life").hidden = !on; $("#lifeBtn").setAttribute("aria-pressed", on); $("#lifeTab").setAttribute("aria-pressed", on); $("#app").dataset.view = on ? "life" : "world";
-  for (const r of lifeRows) r.alive = null; layout(); lifeTick();
+  for (const r of lifeRows) r.st = null; layout(); lifeTick();
 }
 
 // ---------------------------------------------------------------- about
@@ -767,7 +817,6 @@ function wire() {
   let sx = null; $("#immerse").addEventListener("pointerdown", (e) => { sx = e.clientX; }); $("#immerse").addEventListener("pointerup", (e) => { if (sx != null && Math.abs(e.clientX - sx) > 50 && !e.target.closest(".imthumbs")) { IM.auto = false; imPlayIcon(); imShow(IM.i + (e.clientX < sx ? 1 : -1)); } sx = null; });
   const openStories = () => { $("#storyList").hidden = false; $("#storyListClose").focus(); };
   $("#storiesBtn").addEventListener("click", openStories); $("#storiesTab").addEventListener("click", openStories);
-  $("#forcesBtn").addEventListener("click", () => { openStories(); $("#forces").scrollIntoView({ block: "start" }); $(".ftile")?.focus({ preventScroll: true }); });
   $("#storyList").addEventListener("click", (e) => { const c = e.target.closest("[data-s]"), f = e.target.closest("[data-f]"), fx = e.target.closest("[data-fx]");
     if (f) forceShow(+f.dataset.f); else if (fx) forceGo(+fx.dataset.fx); else if (c) storyStart(c.dataset.s); else if (e.target.id === "storyList" || e.target.closest("#storyListClose")) $("#storyList").hidden = true; });
   $("#story").addEventListener("click", (e) => { const a = e.target.closest("[data-act]"), r = e.target.closest("[data-ref]");
@@ -784,7 +833,13 @@ function wire() {
   $("#curvePick").addEventListener("click", (e) => { const b = e.target.closest("[data-c]"); if (b) { S.curve = b.dataset.c; drawCurve(); } });
   $("#lifeBtn").addEventListener("click", () => setLife(!S.life)); $("#lifeTab").addEventListener("click", () => setLife(!S.life));
   $("#aboutTab").addEventListener("click", () => { $("#about").hidden = false; $("#aboutClose").focus(); }); $("#lifeClose").addEventListener("click", () => setLife(false));
-  $("#lifeRows").addEventListener("click", (e) => { const b = e.target.closest(".row"); if (b) { setPlaying(false); select("origin", D.origins.find((o) => o.id === b.dataset.id)); } });
+  $("#lifeRows").addEventListener("click", (e) => {
+    const op = e.target.closest("[data-open]"), sh = e.target.closest("[data-shut]"), b = e.target.closest(".tbr");
+    if (op) { const id = op.dataset.open; for (const o of D.origins) { let p = o.parent; while (p && p !== id && !lifeShown(p)) p = D.origins.find((x) => x.id === p)?.parent; if (p === id) LIFE.open.add(o.id); } return lifeRebuild(true); }
+    if (sh) { const id = sh.dataset.shut, under = (o) => { let p = o.parent; while (p) { if (p === id) return true; p = D.origins.find((x) => x.id === p)?.parent; } return false; }; for (const o of D.origins) if (under(o)) LIFE.open.delete(o.id); return lifeRebuild(true); }
+    if (b) { setPlaying(false); select("origin", D.origins.find((o) => o.id === b.dataset.id)); }
+  });
+  $("#lifeAll").addEventListener("click", () => { LIFE.all = !LIFE.all; if (!LIFE.all) LIFE.open.clear(); lifeRebuild(false); });
   $("#themeBtn").addEventListener("click", () => setView(LIGHT ? "space" : "atlas"));
   $("#aboutBtn").addEventListener("click", () => { $("#about").hidden = false; $("#aboutClose").focus(); });
   $("#about").addEventListener("click", (e) => { if (e.target.id === "about" || e.target.closest("#aboutClose")) $("#about").hidden = true; });
