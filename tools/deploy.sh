@@ -16,6 +16,7 @@ import sys
 p, v = sys.argv[1], sys.argv[2]
 s = open(p).read()
 s = s.replace('href="style.css"', f'href="style.css?v={v}"').replace('src="app.js"', f'src="app.js?v={v}"')
+s = s.replace('href="fonts/fonts.css"', f'href="fonts/fonts.css?v={v}"')  # browsers keep the font list for a day: a new release must not wait for it
 head = (f'<meta name="data-version" content="{v}">\n'
         f'<link rel="preload" href="data/clio/index.json?v={v}" as="fetch" crossorigin>\n'
         f'<link rel="preload" href="data/content.json?v={v}" as="fetch" crossorigin>\n')
@@ -28,6 +29,7 @@ import sys
 p, v = sys.argv[1], sys.argv[2]
 s = open(p).read()
 for f in ("earth.js", "earth.css", "atlas.css"): s = s.replace(f'"{f}"', f'"{f}?v={v}"')
+s = s.replace('"../fonts/fonts-earth.css"', f'"../fonts/fonts-earth.css?v={v}"')
 s = s.replace('<meta charset="utf-8">', f'<meta charset="utf-8">\n<meta name="data-version" content="{v}">', 1)
 open(p, "w").write(s)
 PY
