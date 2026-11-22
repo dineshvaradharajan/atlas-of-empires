@@ -148,14 +148,14 @@ const tex = new Map(); // Ma -> {t, ready}
 function want(ma) {
   let o = tex.get(ma); if (o) return o;
   o = { ready: false, ma }; tex.set(ma, o);
-  fetch(`${ROOT}data/paleo/${ma}.png${VQ}`).then((r) => { if (!r.ok) throw new Error(r.status); return r.blob(); })
+  fetch(`${ROOT}data/paleo/${ma}.webp${VQ}`).then((r) => { if (!r.ok) throw new Error(r.status); return r.blob(); })
     .then((b) => createImageBitmap(b, { colorSpaceConversion: "none", premultiplyAlpha: "none" }))
     .then((bmp) => {
       o.t = gl.createTexture(); gl.bindTexture(gl.TEXTURE_2D, o.t);
       gl.texImage2D(gl.TEXTURE_2D, 0, gl.LUMINANCE, gl.LUMINANCE, gl.UNSIGNED_BYTE, bmp); bmp.close && bmp.close();
       gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR); gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.LINEAR);
       gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.REPEAT); gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
-      o.ready = true; S.dirty = true; $("#loading").classList.add("done");
+      o.ready = true; S.dirty = true; if (D) $("#loading").classList.add("done");
       if (tex.size > 30) { const far = [...tex.values()].filter((x) => x.ready).sort((a, b) => Math.abs(b.ma - S.ma) - Math.abs(a.ma - S.ma))[0]; if (far && far !== o) { gl.deleteTexture(far.t); tex.delete(far.ma); } }
     }).catch(() => { tex.delete(ma); });
   return o;
@@ -163,8 +163,7 @@ function want(ma) {
 let lastMa = OLDEST;
 function pair(ma) { // the two maps either side of this time, or the nearest one that has arrived
   const m = clamp(ma, 0, MAPPED), a = Math.floor(m / 5) * 5, b = Math.min(a + 5, MAPPED), A = want(a), B = want(b);
-  const dir = ma < lastMa ? -5 : 5; for (const k of [1, 2]) { const n = a + dir * k; if (n >= 0 && n <= MAPPED) want(n); }
-  if (A.ready && B.ready) return [A.t, B.t, (m - a) / 5];
+  if (A.ready && B.ready) { const dir = ma < lastMa ? -5 : 5; for (const k of [1, 2]) { const n = a + dir * k; if (n >= 0 && n <= MAPPED) want(n); } return [A.t, B.t, (m - a) / 5]; }
   let best = null; for (const o of tex.values()) if (o.ready && (!best || Math.abs(o.ma - m) < Math.abs(best.ma - m))) best = o;
   return best ? [best.t, best.t, 0] : null;
 }
@@ -179,11 +178,11 @@ function early(ma) {
 }
 function vegAt(ma) { return clamp((470 - ma) / 130, 0, 1); } // land plants from about 470 Ma, widespread forests by about 340 Ma
 
-let W = 0, H = 0, dpr = 1, G = { cx: 0, cy: 0, r: 100 }, Gt = null, M = null;
+let W = 0, H = 0, dpr = 1, rdpr = 1, G = { cx: 0, cy: 0, r: 100 }, Gt = null, M = null;
+function glSize(r) { rdpr = r; cv.width = Math.round(W * r); cv.height = Math.round(H * r); gl.viewport(0, 0, cv.width, cv.height); }
 function layout() {
   dpr = Math.min(devicePixelRatio || 1, 2); W = innerWidth; H = innerHeight;
-  for (const c of [cv, mk]) { c.width = Math.round(W * dpr); c.height = Math.round(H * dpr); }
-  gl.viewport(0, 0, cv.width, cv.height);
+  mk.width = Math.round(W * dpr); mk.height = Math.round(H * dpr); glSize(dpr);
   const wide = W > 980, phone = W <= 760, dock = parseFloat(getComputedStyle($("#app")).getPropertyValue("--dock-h")) || 148, lifeH = S.life ? Math.min(H * (phone ? .62 : .46), phone ? 9999 : 430) : 0;
   const top = LIGHT ? 84 : 62, bottom = H - dock - lifeH - (LIGHT ? 14 : 8), left = wide ? (W > 1180 ? 372 : 330) + 24 : 0, right = wide ? (W > 1180 ? 264 : 240) + 24 : 0;
   const cardTop = phone && !S.life ? $("#now").getBoundingClientRect().top : 0; // phones: the globe sits in the space above the card
@@ -191,7 +190,7 @@ function layout() {
   const r = Math.max(60, Math.min(availH, Math.max(availW, wide ? 420 : 0)) / 2 * .97);
   Gt = { cx: left + (W - left - right) / 2, cy: top + availH / 2, r };
   if (!G.set) { G = { ...Gt, set: true }; }
-  S.dirty = true; drawTrackStatics();
+  S.dirty = true; lifeW = 0; drawTrackStatics(); if (S.life && D) lifeTick();
 }
 function matrix() { // world -> view, for a globe centred on S.lon, S.lat
   const a = -S.lon * RAD, b = S.lat * RAD, ca = Math.cos(a), sa = Math.sin(a), cb = Math.cos(b), sb = Math.sin(b);
@@ -205,12 +204,12 @@ function project(lon, lat) {
 function draw() {
   M = matrix(); const R = G.r * S.zoom, real = clamp((560 - S.ma) / 20, 0, 1), e = early(S.ma);
   let pr = real > 0 ? pair(S.ma) : null;
-  gl.uniform2f(U.uC, G.cx * dpr, (H - G.cy) * dpr); gl.uniform1f(U.uR, R * dpr);
+  gl.uniform2f(U.uC, G.cx * rdpr, (H - G.cy) * rdpr); gl.uniform1f(U.uR, R * rdpr);
   gl.uniformMatrix3fv(U.uM, false, new Float32Array([M[0][0], M[1][0], M[2][0], M[0][1], M[1][1], M[2][1], M[0][2], M[1][2], M[2][2]]));
   gl.activeTexture(gl.TEXTURE0); gl.bindTexture(gl.TEXTURE_2D, pr ? pr[0] : blank); gl.activeTexture(gl.TEXTURE1); gl.bindTexture(gl.TEXTURE_2D, pr ? pr[1] : blank);
   gl.uniform1f(U.uMix, pr ? pr[2] : 0); gl.uniform2f(U.uTexel, 1 / D.maps.width, 1 / D.maps.height);
   gl.uniform1f(U.uLandMax, D.maps.landMax); gl.uniform1f(U.uSeaMax, D.maps.seaMax); gl.uniform1f(U.uVeg, vegAt(S.ma));
-  gl.uniform1f(U.uLight, LIGHT ? 1 : 0); gl.uniform3f(U.uBg, 1, 1, 1); gl.uniform1f(U.uTpp, D.maps.width / (2 * Math.PI) / (R * dpr));
+  gl.uniform1f(U.uLight, LIGHT ? 1 : 0); gl.uniform3f(U.uBg, 1, 1, 1); gl.uniform1f(U.uTpp, D.maps.width / (2 * Math.PI) / (R * rdpr));
   gl.uniform1f(U.uReal, pr ? real : 0); gl.uniform1f(U.uHeat, e.heat); gl.uniform1f(U.uIce, e.ice); gl.uniform1f(U.uSeed, e.seed); gl.uniform3fv(U.uW, e.w);
   const s = [-.46, .36, .81], sl = Math.hypot(...s); gl.uniform3f(U.uSun, s[0] / sl, s[1] / sl, s[2] / sl);
   const atm = real >= 1 ? [.42, .64, 1] : e.atm.map((v, i) => v + ([.42, .64, 1][i] - v) * real); gl.uniform3fv(U.uAtm, atm);
@@ -274,13 +273,13 @@ function trust(ma) {
 }
 
 // ---------------------------------------------------------------- the panels
-let shownUnit = null;
+let shownUnit = null, shownCurve = null, shownGauges = null, shownTrust = null, trackW = 800, milesW = 1;
 function renderNow() {
   const [n, u] = ageParts(S.ma); $("#ageNum").textContent = n; $("#ageUnit").textContent = u;
   const unit = unitAt(S.ma);
-  $("#gauges").innerHTML = gauges(S.ma);
-  const [cls, txt] = trust(S.ma); const tr = $("#trust"); tr.className = "trust " + cls; tr.innerHTML = txt.replace(/^<b>([^<]+?)\.?<\/b>\s*(.*)$/, "<b>$1</b><span>$2</span>");
-  const cl = $("#cursor"), x = X(S.ma); cl.style.left = x * 100 + "%"; cl.classList.toggle("flip", x > 1 - 175 / Math.max(200, $("#track").clientWidth)); $("#cursorLabel").textContent = ageText(S.ma);
+  const gh = gauges(S.ma); if (gh !== shownGauges) { shownGauges = gh; $("#gauges").innerHTML = gh; }
+  const [cls, txt] = trust(S.ma); if (txt !== shownTrust) { shownTrust = txt; const tr = $("#trust"); tr.className = "trust " + cls; tr.innerHTML = txt.replace(/^<b>([^<]+?)\.?<\/b>\s*(.*)$/, "<b>$1</b><span>$2</span>"); }
+  const cl = $("#cursor"), x = X(S.ma); cl.style.left = x * 100 + "%"; cl.classList.toggle("flip", x > 1 - 175 / Math.max(200, trackW)); $("#cursorLabel").textContent = ageText(S.ma);
   $("#track").setAttribute("aria-valuenow", Math.round(S.ma)); $("#track").setAttribute("aria-valuetext", ageText(S.ma) + ", " + unit.name);
   renderCurveNow(); lifeTick(); mileTick(); imText(); nudgeTick();
   if (unit !== shownUnit) {
@@ -582,7 +581,7 @@ function drawTrackStatics() {
   if (!D) return;
   const seg = (u) => `<span data-id="${u.id}" title="${esc(u.name)}" style="left:${X(u.from) * 100}%;width:${(X(u.to) - X(u.from)) * 100}%;background:${u.color}">${esc(u.name)}</span>`;
   $("#rowA").innerHTML = tops.map(seg).join(""); $("#rowB").innerHTML = leaves.map(seg).join("");
-  const tw = $("#track").clientWidth; // hide names that do not fit their band
+  const tw = trackW = $("#track").clientWidth || trackW; milesW = $("#milesIn").clientWidth || milesW; // hide names that do not fit their band
   document.querySelectorAll("#rowB span").forEach((el) => { const need = el.textContent.length * 6.6 + 8; if (el.clientWidth < need) el.style.fontSize = "0"; });
   const ticks = [[4567, "4.57 bn"], [2500, "2.5 bn"], [1000, "1 bn"], [538.8, "539 M"], [251.902, "252 M"], [66, "66 M"], [23.04, "23 M"], [2.58, "2.6 M"], [0, "today"]];
   $("#axis").innerHTML = ticks.filter((t) => tw > 700 || [4567, 251.902, 66, 0].includes(t[0])).map(([m, l]) => `<span style="left:${X(m) * 100}%">${l}</span>`).join("");
@@ -614,7 +613,7 @@ function layoutMiles() { // most important first; a label that has no room in ei
 }
 let mileOn = -1;
 function mileTick() { // the label at the cursor is filled; while playing, crossing one slows time and flashes it
-  let on = -1; const w = $("#milesIn").clientWidth || 1;
+  let on = -1; const w = milesW;
   miles.forEach((m, i) => { if (Math.abs(X(m.ma) - X(S.ma)) * w < 7) on = i; });
   if (on === mileOn) return; mileOn = on;
   document.querySelectorAll("#milesIn .mile, #mileMarks i").forEach((el) => el.classList.toggle("on", +el.dataset.m === on));
@@ -630,7 +629,8 @@ function drawCurve() {
 }
 function renderCurveNow() {
   const c = D.curves.find((x) => x.id === S.curve); if (!c) return; const v = sample(S.curve, S.ma);
-  $("#curveNow").innerHTML = v == null ? `${esc(c.title)}: the record starts ${ageText(c.points[0][0])}` : `${esc(c.title)}: <b>${sig(Array.isArray(v) ? (v[0] + v[1]) / 2 : v)}</b> ${esc(c.unit)}`;
+  const h = v == null ? `${esc(c.title)}: the record starts ${ageText(c.points[0][0])}` : `${esc(c.title)}: <b>${sig(Array.isArray(v) ? (v[0] + v[1]) / 2 : v)}</b> ${esc(c.unit)}`;
+  if (h !== shownCurve) { shownCurve = h; $("#curveNow").innerHTML = h; }
 }
 
 // ---------------------------------------------------------------- life through time
@@ -664,7 +664,7 @@ function buildLife() {
   lifeW = 0;
 }
 function lifeScale() { // the strip of periods and the dates under it, only redrawn when the scale or the width changes
-  const tr = $("#lifeScale .ltr"), w = tr.clientWidth; if (!w || w === lifeW) return; lifeW = w;
+  if (lifeW) return; const tr = $("#lifeScale .ltr"), w = tr.clientWidth; if (!w) return; lifeW = w;
   const units = LIFE.span === "all" ? leaves : leaves.filter((u) => u.to < 538.8);
   $("#lifeStrip").innerHTML = units.map((u) => { const a = LX(Math.min(u.from, LIFE.span === "all" ? u.from : 538.8)), b = LX(u.to), px = (b - a) * w;
     return `<span style="left:${a * 100}%;width:${(b - a) * 100}%;background:${u.color}" title="${esc(u.name)}">${px > u.name.length * 6.4 + 8 ? esc(u.name) : ""}</span>`; }).join("");
@@ -743,8 +743,8 @@ function nudgeTick(pop) {
   $("#nudgeKick").textContent = S.ma < 0.0002 ? "You have reached today" : "World history covers this time";
   if (pop && !reduced) { n.classList.remove("pop"); void n.offsetWidth; n.classList.add("pop"); }
 }
-function setPlaying(p) { S.playing = p; const ic = p ? "M7 5h4v14H7zM13 5h4v14h-4z" : "M8 5v14l11-7z"; $("#playIcon").setAttribute("d", ic); $("#sPlayIcon").setAttribute("d", ic); $("#sPlay").setAttribute("aria-label", p ? "Pause" : "Play this moment"); $("#play").setAttribute("aria-label", p ? "Pause" : "Play through time"); if (p && S.ma <= 0 && !ST) setMa(OLDEST); if (p && ST) ST.t = performance.now(); }
-let last = performance.now(), idle = 0, vel = [0, 0], flash = null;
+function setPlaying(p) { S.playing = p; const ic = p ? "M7 5h4v14H7zM13 5h4v14h-4z" : "M8 5v14l11-7z"; $("#playIcon").setAttribute("d", ic); $("#sPlayIcon").setAttribute("d", ic); $("#sPlay").setAttribute("aria-label", p ? "Pause" : "Play this moment"); $("#play").setAttribute("aria-label", p ? "Pause" : "Play through time"); if (p) idle = 0; if (p && S.ma <= 0 && !ST) setMa(OLDEST); if (p && ST) ST.t = performance.now(); }
+let last = performance.now(), idle = 0, vel = [0, 0], flash = null, spin = false, lastDraw = 0, movedAt = 0;
 function frame(now) {
   const dt = Math.min(.05, (now - last) / 1000); last = now;
   if (S.playing && ST) { const f = $("#sBar .on i"); if (f) f.style.width = Math.min(100, (now - ST.t) / 120) + "%"; if (now - ST.t > 12000) { if (ST.i < ST.story.chapters.length - 1) storyGo(ST.i + 1); else setPlaying(false); } }
@@ -757,10 +757,14 @@ function frame(now) {
   if (fly) { fly.t = Math.min(1, fly.t + dt / .9); const k = fly.t * fly.t * (3 - 2 * fly.t); S.lon = fly.lon0 + fly.dl * k; S.lat = fly.lat0 + fly.dp * k; S.dirty = true; if (fly.t >= 1) fly = null; }
   else if (!dragging) {
     if (Math.abs(vel[0]) + Math.abs(vel[1]) > .02) { S.lon -= vel[0] * dt; S.lat = clamp(S.lat + vel[1] * dt, -85, 85); vel[0] *= .93; vel[1] *= .93; S.dirty = true; }
-    else if (!reduced && !S.sel && !ST && !document.hidden) { idle += dt; if (idle > 2.5) { S.lon += dt * 2.2; S.dirty = true; } }
+    else if (!reduced && !S.sel && !ST && !document.hidden) { idle += dt; if (idle > 2.5 && idle < 62) { S.lon += dt * 2.2; spin = true; } } // a slow turn while nobody touches it, for a minute
   }
   if (Gt) for (const k of ["cx", "cy", "r"]) if (Math.abs(G[k] - Gt[k]) > .3) { G[k] += (Gt[k] - G[k]) * (reduced ? 1 : Math.min(1, dt * 8)); S.dirty = true; }
-  if (S.dirty && D) { S.dirty = false; draw(); }
+  // while the globe is dragged, flung, flown or played it is drawn at a lower resolution; sharp again once it settles
+  const moving = dragging || fly || S.playing || Math.abs(vel[0]) + Math.abs(vel[1]) > .02;
+  if (moving) movedAt = now;
+  if (dpr > 1.25) { const want = moving ? Math.max(1, dpr * .6) : dpr; if (want !== rdpr && (moving || now - movedAt > 200)) { glSize(want); S.dirty = true; } }
+  if (D && (S.dirty || (spin && now - lastDraw > 32))) { S.dirty = spin = false; lastDraw = now; draw(); } // the idle turn: 30 frames a second
   requestAnimationFrame(frame);
 }
 let dragging = null;
@@ -842,6 +846,7 @@ function wire() {
 // ---------------------------------------------------------------- start
 async function init() {
   try { glInit(); } catch (err) { $("#loading").textContent = "This page needs WebGL to draw the globe, and your browser did not start it."; console.error(err); return; }
+  { const h0 = parseFloat(location.hash.slice(1)); if (h0 >= 0 && h0 <= MAPPED + 20) { const a = Math.floor(Math.min(h0, MAPPED) / 5) * 5; want(a); want(Math.min(a + 5, MAPPED)); } }
   D = await (await fetch(ROOT + "data/earth-history.json" + VQ)).json();
   for (const u of D.units) byId[u.id] = u;
   const hasKids = new Set(D.units.map((u) => u.parent));
@@ -852,7 +857,7 @@ async function init() {
   let rec = false; try { rec = localStorage.getItem("deepRecords") === "1"; } catch (e) {} setRecords(rec, true);
   buildMiles(); buildLife(); buildAbout(); storyCards(); forceCards(); wire(); setView(LIGHT ? "atlas" : "space"); renderNow(); imPlayIcon();
   const sm = location.hash.match(/^#s\/([\w-]+)\/(\d+)/); if (sm) storyStart(sm[1], +sm[2] - 1);
-  if (S.ma > MAPPED + 20) $("#loading").classList.add("done");
+  if (S.ma > MAPPED + 20 || [...tex.values()].some((o) => o.ready)) $("#loading").classList.add("done");
   if (S.ma > MAPPED) { want(MAPPED); want(MAPPED - 5); } // only fetch ahead for the oldest map when starting before it; otherwise draw() asks for the maps it needs
   requestAnimationFrame(frame);
 }

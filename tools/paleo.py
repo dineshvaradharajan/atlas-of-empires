@@ -16,6 +16,7 @@ Output (equirectangular, -180..180 x 90..-90):
 Unlike the other tools this one needs numpy and netCDF4 (the maps are NetCDF-4 files):
   python3 -m venv .venv-paleo && .venv-paleo/bin/pip install numpy netCDF4
 Run: .venv-paleo/bin/python tools/paleo.py <the zip> [width, default 2048]
+Then: python3 -I tools/paleo_webp.py   turns the PNGs into lossless WebP (a quarter smaller), checked pixel for pixel; the page loads those.
 """
 import json, os, re, struct, sys, zipfile, zlib
 

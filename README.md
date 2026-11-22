@@ -35,6 +35,7 @@ python3 -I tools/placeindex.py   # borders as drawn (corrections + reconstructio
 python3 -I tools/commons.py      # Wikimedia Commons reference maps -> public/data/commons.json
 python3 -I tools/seo.py          # plain HTML pages, sitemaps and llms.txt for search engines (deploy.sh runs it; not committed)
 .venv-paleo/bin/python tools/paleo.py <PaleoDEMS 6-minute zip>  # the ancient Earth, 540 million years ago to today -> public/data/paleo/ (needs numpy, netCDF4)
+python3 -I tools/paleo_webp.py      # those maps as lossless WebP, checked pixel for pixel (needs cwebp and dwebp: brew install webp)
 python3 -I tools/prehistory.py   # content/prehistory -> public/data/earth-history.json (the Earth history page at /earth-history/, with an Atlas view and a Space view)
 ```
 
