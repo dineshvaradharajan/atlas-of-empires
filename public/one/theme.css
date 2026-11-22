@@ -18,7 +18,7 @@ html[data-theme="midnight"] #strata i, html[data-theme="midnight"] #hbands i { f
 #themeBtn svg { width: 19px; height: 19px; fill: none; stroke: currentColor; stroke-width: 1.9; stroke-linecap: round; stroke-linejoin: round; }
 #themeBtn .sun { display: none; } html[data-theme="midnight"] #themeBtn .sun { display: block; } html[data-theme="midnight"] #themeBtn .moon { display: none; }
 @media (max-width: 760px) {
-  #themeBtn { left: 20px; top: calc(70px + env(safe-area-inset-top)); width: 40px; height: 40px; border-color: var(--hair); box-shadow: var(--float); }
+  #themeBtn { left: 18px; top: calc(70px + env(safe-area-inset-top)); width: 44px; height: 44px; border-color: var(--hair); box-shadow: var(--float); }
   #themeBtn svg { width: 17px; height: 17px; }
   #app[data-app] #themeBtn, #app[data-story] #themeBtn { display: none; }
 }

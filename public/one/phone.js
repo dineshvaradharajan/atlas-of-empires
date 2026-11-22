@@ -111,7 +111,7 @@ window.PHONE = (() => {
     q("#pDate").addEventListener("click", () => idx(S.mode === "deep" ? "earth" : "hist"));
     q("#pPrev").addEventListener("click", () => step(-1)); q("#pNext").addEventListener("click", () => step(1));
     q("#pPlay").addEventListener("click", () => { stop("peek"); setPlaying(!S.playing); });
-    q("#pTile").addEventListener("click", () => S.mode === "deep" ? goYear(Y0) : goMa(.02));
+    q(".tilew").addEventListener("click", () => S.mode === "deep" ? goYear(Y0) : goMa(.02)); // the block or its name
     q("#pToday").addEventListener("click", () => histTab("today"));
     q("#pUp").addEventListener("click", () => { if (S.mode === "hist") { HIST.own = true; return; } const s = q("#ps").dataset.stop; stop(s === "peek" ? "half" : s === "half" ? "full" : "peek"); }); // in history: World history's own card for this year
     q("#pPic").addEventListener("click", () => { const u = unitAt(S.ma); imOpen(pics, 0, `${u.name}, ${ageParts(S.ma).join(" ")}`); });

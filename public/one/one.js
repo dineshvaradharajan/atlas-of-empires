@@ -167,7 +167,7 @@ function layout() {
   const left = 24 + ($("#card").offsetWidth || 380) + 20, top = 84, bottom = H - (ST ? 190 : 158), availH = bottom - top, availW = W - left - 40; // the same on both sides of the join, so the globe never jumps
   G = { cx: left + availW / 2, cy: top + availH / 2, r: Math.max(80, Math.min(availH, availW) / 2 * .97) };
   if (PH()) { // a phone: the globe fills the width above the sheet at its lowest stop, and keeps that size when the sheet is pulled up
-    const t = ST ? 84 : 64, b = H - (ST ? Math.min(360, H * .48) : 276) - 10; G = { cx: W / 2, cy: (t + b) / 2, r: Math.max(60, Math.min(b - t, W - 32) / 2) }; }
+    const t = ST ? 84 : 64, b = H - (ST ? Math.min(360, H * .48) : 284) - 10; G = { cx: W / 2, cy: (t + b) / 2, r: Math.max(60, Math.min(b - t, W - 32) / 2) }; }
   const gr = $("#grab"); gr.style.left = G.cx - G.r + "px"; gr.style.top = G.cy - G.r + "px"; gr.style.width = gr.style.height = G.r * 2 + "px";
   S.dirty = true; drawTimeline(true); storyBar();
 }
@@ -326,16 +326,31 @@ function drawPins(M) { // the chapter's fossil sites, where they sat at the time
   const x = mk.getContext("2d"); x.setTransform(dpr, 0, 0, dpr, 0, 0); x.clearRect(0, 0, W, H); if (S.t > .01 || S.mode !== "deep") return;
   // a story's sites; or else the turning point the time is on, where it happened (the asteroid at Chicxulub, the oldest fossils in the Pilbara)
   let sites = ST ? ST.story.chapters[ST.i].sites || [] : [];
-  if (!ST && nearMile >= 0) { const it = MILES[nearMile].item; if (it && (it.then || (S.ma < 1 && it.lonlat))) sites = [{ name: it.place || MILES[nearMile].title, then: it.then, lonlat: it.lonlat }]; }
+  let note = "";
+  if (!ST && nearMile >= 0) { const m = MILES[nearMile], it = m.item || {}, place = it.place || it.oldest?.place;
+    if (it.then || (S.ma < 1 && it.lonlat)) sites = [{ name: place || m.title, then: it.then, lonlat: it.lonlat }];
+    else note = place ? `${m.label}: found at ${place}. No map of the Earth this old can show where that was then.` : `${m.label}: a change across the whole planet, not in one place.`; }
+  if (note) { // under the globe, where it does not hide it
+    x.font = '500 13px "Inter", system-ui, sans-serif'; const words = note.split(" "), lines = [], maxW = Math.min(W - 40, G.r * 2.1); let ln = "";
+    for (const w of words) { const t = ln ? ln + " " + w : w; if (x.measureText(t).width > maxW && ln) { lines.push(ln); ln = w; } else ln = t; } lines.push(ln);
+    const lh = 18, bw = Math.max(...lines.map((l) => x.measureText(l).width)) + 28, bh = lines.length * lh + 16, bx = G.cx - bw / 2, by = Math.min(H - bh - 8, G.cy + G.r * .72);
+    const dark = document.documentElement.dataset.theme === "midnight";
+    x.fillStyle = dark ? "rgba(25,25,24,.94)" : "rgba(255,255,255,.95)"; x.strokeStyle = dark ? "#3a3a36" : "#d9e3dc"; x.lineWidth = 1;
+    x.beginPath(); x.roundRect(bx, by, bw, bh, 12); x.fill(); x.stroke();
+    x.fillStyle = dark ? "#f2f2ee" : "#15211b"; x.textAlign = "center"; x.textBaseline = "alphabetic"; lines.forEach((l, i) => x.fillText(l, G.cx, by + 8 + 13 + i * lh)); x.textAlign = "left"; }
   const boxes = [];
   for (const t of sites) {
     const ll = t.then || (S.ma < 1 ? t.lonlat : null); if (!ll) continue;
     const l = ll[0] * RAD, p = ll[1] * RAD, w = [Math.cos(p) * Math.sin(l), Math.sin(p), Math.cos(p) * Math.cos(l)], v = M.map((r) => r[0] * w[0] + r[1] * w[1] + r[2] * w[2]); if (v[2] < .08) continue;
     const px = G.cx + G.r * v[0], py = G.cy - G.r * v[1];
     x.fillStyle = "#e5402a"; x.strokeStyle = "#fff"; x.lineWidth = 2; x.beginPath(); x.arc(px, py, 6, 0, 7); x.fill(); x.stroke();
-    x.font = '700 13px "Source Serif 4", Georgia, serif'; const tw = x.measureText(t.name).width, spots = [[px + 14, py + 4], [px - 14 - tw, py + 4], [px - tw / 2, py - 14], [px - tw / 2, py + 24]];
-    const at = spots.find(([a, b]) => boxes.every((o) => a + tw < o[0] || a > o[2] || b < o[1] || b - 14 > o[3])) || spots[0]; boxes.push([at[0], at[1] - 14, at[0] + tw, at[1]]);
-    x.lineWidth = 4; x.strokeStyle = "rgba(255,255,255,.92)"; x.strokeText(t.name, at[0], at[1]); x.fillStyle = "#111"; x.fillText(t.name, at[0], at[1]);
+    // the name beside the pin, on screen and clear of the others: right, left, above, below; a long name loses its place after the first comma
+    x.font = '700 13px "Source Serif 4", Georgia, serif'; let name = t.name, tw = x.measureText(name).width;
+    const fits = (a) => a >= 8 && a + tw <= W - 8, room = (a, b) => boxes.every((o) => a + tw < o[0] || a > o[2] || b < o[1] || b - 14 > o[3]);
+    const spotsFor = () => [[px + 14, py + 4], [px - 14 - tw, py + 4], [px - tw / 2, py - 14], [px - tw / 2, py + 24]];
+    let spots = spotsFor(); if (!spots.some(([a]) => fits(a)) && name.includes(",")) { name = name.split(",")[0]; tw = x.measureText(name).width; spots = spotsFor(); }
+    const at = spots.find(([a, b]) => fits(a) && room(a, b)) || spots.find(([a]) => fits(a)) || [clamp(px - tw / 2, 8, W - 8 - tw), py - 14]; boxes.push([at[0], at[1] - 14, at[0] + tw, at[1]]);
+    x.lineWidth = 4; x.strokeStyle = "rgba(255,255,255,.92)"; x.strokeText(name, at[0], at[1]); x.fillStyle = "#111"; x.fillText(name, at[0], at[1]);
   }
 }
 
@@ -373,7 +388,10 @@ function drawTimeline(force) {
         if (placed.every(([a, b]) => r + 6 <= a || l >= b + 6)) { placed.push([l, r]); el.style.left = l + "px"; } else el.classList.add("hid"); } }
   }
   // the turning point the cursor is on: its name is filled, and the card says what happened
-  let near = -1; if (S.mode === "deep" && !ST) { let best = .006; MILES.forEach((m, i) => { const d = Math.abs(X(m.ma) - X(S.ma)); if (d < best) { best = d; near = i; } }); }
+  if (ENTRY_TURN && MILES.length) { ENTRY_TURN = false; let k = -1, best = .006; MILES.forEach((m, i) => { const d = Math.abs(X(m.ma) - X(S.ma)); if (d < best) { best = d; k = i; } });
+    const it = k >= 0 && MILES[k].item; if (it && it.then && !S.flat && !ST) { S.lon = it.then[0]; S.lat = clamp(it.then[1], -70, 70); S.dirty = true; } }
+  if (S.mileSel != null && (!MILES[S.mileSel] || Math.abs(X(MILES[S.mileSel].ma) - X(S.ma)) > .006)) S.mileSel = null;
+  let near = -1; if (S.mode === "deep" && !ST && S.mileSel != null) near = S.mileSel; else if (S.mode === "deep" && !ST) { let best = .006; MILES.forEach((m, i) => { const d = Math.abs(X(m.ma) - X(S.ma)); if (d < best) { best = d; near = i; } }); }
   if (near !== nearMile) { nearMile = near; S.dirty = true; document.querySelectorAll("#miles .mile, #mileMarks i").forEach((el) => el.classList.toggle("on", +el.dataset.m === near));
     const tb = $("#turn"); tb.hidden = near < 0; if (near >= 0) { const m = MILES[near], it = m.item; tb.innerHTML = `<span>TURNING POINT \u00b7 ${esc(ageParts(m.ma).join(" "))}</span><b>${esc(m.title)}</b><p>${esc((it.text || "").split(". ").slice(0, 2).join(". ").replace(/\.?$/, "."))}</p>`; } }
   const x = S.mode === "deep" ? X(S.ma) * deep : deep + HX(S.year) * f;
@@ -415,7 +433,7 @@ function histFrame() { // the flat map framed for this page, on both sides of th
     // right edge (the far Pacific), unless the window is wide enough for all of it, when it is centred in the room that is left.
     const b = iw.d3.geoPath(pj).bounds({ type: "MultiPoint", coordinates: edge });
     if (PH()) { // a phone: as World history's own phone view, the map fills the height above the sheet, centred on Europe, Africa and Asia
-      const T = 64, B = r.height - 284, k0 = clamp((B - T) / (b[1][1] - b[0][1]), 1, 4), fx = pj([35, 20])[0];
+      const T = 64, B = r.height - 292, k0 = clamp((B - T) / (b[1][1] - b[0][1]), 1, 4), fx = pj([35, 20])[0];
       c.__zoom = iw.d3.zoomIdentity.translate(r.width / 2 - k0 * fx, (T + B) / 2 - k0 * (b[0][1] + b[1][1]) / 2).scale(k0);
       c.dispatchEvent(new iw.WheelEvent("wheel", { deltaY: .5, clientX: r.width / 2, clientY: (T + B) / 2, bubbles: true, cancelable: true })); HT.changed = performance.now(); return; }
     let card = $("#card").getBoundingClientRect(); if (S.mode === "hist") { const cr = d.querySelector("#col")?.getBoundingClientRect(); if (cr && cr.width && cr.right < r.width * .6) card = cr; }
@@ -518,7 +536,7 @@ function setFlat(on) { // the round globe or the flat map, by choice, at any tim
 //   #earth/150  a time (million years ago)      #earth/150/flat  the same as the flat map
 //   #earth/stories  its stories open            #earth/s/dinosaurs/13  a moment at its 13th chapter
 // No address: history, in the year of today's event.
-let RESTORE = null, savedAt = 0; // what the address asked for that has to wait for the World history map underneath
+let RESTORE = null, savedAt = 0, ENTRY_TURN = false; // ENTRY_TURN: opened at a time; if it is a turning point, face where it happened // what the address asked for that has to wait for the World history map underneath
 const startHash = (() => { try { return decodeURIComponent(location.hash.slice(1)); } catch (e) { return location.hash.slice(1); } })();
 const EARTH_AT = /^earth(?:\/|$)/.test(startHash);
 $("#hist").src = "world.html" + (EARTH_AT ? "#-10000" : location.hash); // the frame opens where the address says, or (for the Earth) waits at the join
@@ -539,7 +557,7 @@ function restoreState() { // at the start, from the address; what needs the map 
   const h = startHash.replace(/^earth\/?/, "");
   if ((m = /^s\/([\w-]+)\/(\d+)$/.exec(h))) { storyStart(m[1]); if (ST && +m[2] > 1) storyGo(+m[2] - 1); return; }
   if (h === "stories") { PH() && window.PHONE ? PHONE.stories() : listOpen(true); return; }
-  if ((m = /^([\d.]+)(\/flat)?$/.exec(h))) { const v = parseFloat(m[1]); if (v >= JOIN && v <= OLDEST) S.ma = v; if (m[2]) RESTORE = { flat: true }; }
+  if ((m = /^([\d.]+)(\/flat)?$/.exec(h))) { const v = parseFloat(m[1]); if (v >= JOIN && v <= OLDEST) { S.ma = v; ENTRY_TURN = true; } if (m[2]) RESTORE = { flat: true }; }
 }
 function restoreLate() {
   const r = RESTORE; RESTORE = null; if (!r) return;
@@ -605,9 +623,11 @@ function wire() {
     else { const x = HX(S.year) + d * .01; if (x < 0) enterDeep(.02); else { S.year = atHX(x); histYear(S.year); } }
   });
   $("#play").addEventListener("click", () => { if (ST) storyEnd(); setPlaying(!S.playing); });
-  const goMile = (e) => { const b = e.target.closest("[data-m]"); if (!b) return; e.stopPropagation(); e.preventDefault?.(); setPlaying(false); if (ST) storyEnd(); S.ma = MILES[+b.dataset.m].ma; S.dirty = true; const it = MILES[+b.dataset.m].item; if (it.then && !S.flat) fly = { lon0: S.lon, lat0: S.lat, dl: ((it.then[0] - S.lon + 540) % 360) - 180, dp: clamp(it.then[1], -70, 70) - S.lat, t: 0 }; };
+  const goMile = (e, pick) => { const b = pick || e.target.closest("[data-m]"); if (!b) return; e.stopPropagation(); e.preventDefault?.(); S.mileSel = +b.dataset.m; setPlaying(false); if (ST) storyEnd(); S.ma = MILES[+b.dataset.m].ma; S.dirty = true; const it = MILES[+b.dataset.m].item; if (it.then && !S.flat) fly = { lon0: S.lon, lat0: S.lat, dl: ((it.then[0] - S.lon + 540) % 360) - 180, dp: clamp(it.then[1], -70, 70) - S.lat, t: 0 }; };
   $("#miles").addEventListener("click", goMile);
-  $("#mileMarks").addEventListener("pointerdown", (e) => { if (e.target.closest("[data-m]")) goMile(e); }); // before the timeline under it takes the press
+  $("#mileMarks").addEventListener("pointerdown", (e) => { if (!e.target.closest("[data-m]")) return;
+    let best = null, bd = 1e9; for (const d of $("#mileMarks").children) { const r = d.getBoundingClientRect(), dx = Math.abs(r.left + r.width / 2 - e.clientX); if (dx < bd) { bd = dx; best = d; } }
+    goMile(e, best); }); // before the timeline under it takes the press
   $("#more").addEventListener("click", () => { const open = $("#card").classList.toggle("open"); $("#more").textContent = open ? "Show less" : "Read more"; if (S.flat) { histFrame(); FIT = flatFit(); S.dirty = true; } });
   $("#mlist").addEventListener("click", (e) => { const c = e.target.closest("[data-s]"); if (c) storyStart(c.dataset.s); });
   $("#story").addEventListener("click", (e) => { const a = e.target.closest("[data-act]"); if (!a) return; if (a.dataset.act === "more") { const open = $("#story").classList.toggle("open"); a.textContent = open ? "Show less" : "Read the full chapter"; return; } if (a.dataset.act === "list") { storyEnd(); listOpen(true); } else if (a.dataset.act === "end" || (a.dataset.act === "next" && ST.i >= ST.story.chapters.length - 1)) { storyEnd(); listOpen(true); } else storyGo(ST.i + (a.dataset.act === "next" ? 1 : -1)); });
