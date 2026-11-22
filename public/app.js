@@ -357,6 +357,9 @@ function needIceAge() {
 
 async function init() {
   readTheme();
+  // A change of look while the page is open (the page that frames this one sets data-theme): colours re-read, everything redrawn,
+  // with no reload, so the map stays exactly where it is.
+  new MutationObserver(() => { readTheme(); S.occMasks = null; if (S.items?.length) { draw(); renderCol(); renderDock(); } }).observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
   const [clio, base, content, corr, supps, sites] = await Promise.all([ // all at once, not one after another; only what the first map and card need
     fetchJSON("data/clio/index.json"), fetchJSON("data/index.json"),
     fetchJSON("data/content.json").catch(() => null),

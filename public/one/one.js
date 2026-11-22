@@ -622,10 +622,8 @@ function wire() {
     if (ST) storyEnd(); if (S.mode === "hist" && $("#app").dataset.app) histExplore(); // Explore: back to the map and the full timeline
   });
   $("#todayBtn").addEventListener("click", () => histTab("today"));
-  $("#themeBtn").addEventListener("click", () => { LOOK.toggle(); saveState(performance.now() + 1e4);
-    try { const c = histWin().document.querySelector("#map"), z = c && c.__zoom; // where the history map was panned and zoomed to
-      if (S.mode === "hist" && S.flat && z) sessionStorage.setItem("one.keep", JSON.stringify({ k: z.k, x: z.x, y: z.y, w: innerWidth, h: innerHeight })); } catch (e) {}
-    location.reload(); }); // World history reads its colours when it starts; the address brings the page back to the same place
+  // the look changes in place: this page's colours by CSS, World history's in the frame by its own observer (no reload, nothing moves)
+  $("#themeBtn").addEventListener("click", () => { LOOK.toggle(); S.dirty = true; HT.changed = performance.now(); setTimeout(() => { HT.at = 0; }, 60); }); // World history reads its colours when it starts; the address brings the page back to the same place
   $("#sPlay").addEventListener("click", () => setPlaying(!S.playing));
   $("#sOut").addEventListener("click", () => storyEnd());
   $("#sdock").addEventListener("click", (e) => { const b = e.target.closest("[data-c]"); if (b) { setPlaying(false); storyGo(+b.dataset.c); } });
