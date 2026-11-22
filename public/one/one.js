@@ -250,7 +250,9 @@ function renderCard() {
   const key = n + u + unit.id + near; if (key === shown) return; shown = key;
   $("#ageNum").textContent = n; $("#ageUnit").textContent = u; $("#ageSub").textContent = sub;
   $("#chipSw").style.background = unit.color; $("#chipName").textContent = unit.name;
-  $("#tagline").textContent = unit.tagline || ""; $("#body").textContent = unit.world || "";
+  $("#tagline").textContent = unit.tagline || "";
+  // the period in full, as Earth history tells it: the world, life and climate (the card scrolls; the flat map keeps it short behind "Read more")
+  $("#body").innerHTML = [["The world", unit.world], ["Life", unit.life], ["Climate", unit.climate]].filter(([, t]) => t).map(([h, t]) => `<h2>${h}</h2><p>${esc(t)}</p>`).join("");
   if (unit.id !== picUnit) { picUnit = unit.id; cardPics = picsFor(unit); const po = $("#picOpen"); po.hidden = !cardPics.length;
     if (cardPics.length) { const im = $("#picImg"); im.dataset.fb = cardPics[0].image; im.src = sized(cardPics[0], 500); $("#picN").textContent = `${cardPics.length} pictures`; } }
   const hint = $("#hint"); hint.hidden = !near;

@@ -48,6 +48,7 @@
 
   /* the rock column, and the other part of time as the block at its end */
   #pCol { position: absolute; left: 20px; right: 20px; top: 98px; display: flex; gap: 8px; }
+  #pCol, #pDate, #ptabs, #pstory { -webkit-user-select: none; user-select: none; }
   .barw { position: relative; flex: 1; min-width: 0; } .tilew { position: relative; flex: none; width: 58px; cursor: pointer; } /* the block and its name are one 58 x 48 target */
   #app[data-mode="hist"] .tilew { order: -1; }
   #pBar { position: relative; height: 28px; touch-action: none; cursor: ew-resize; }

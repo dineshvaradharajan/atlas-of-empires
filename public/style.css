@@ -166,8 +166,10 @@ h3.sec { margin: 4px 0 -4px; font: 600 12px var(--sans); letter-spacing: .12em; 
 .fchip { display: inline-flex; align-items: center; height: 34px; padding: 0 10px; border: 1px solid var(--rule-2); border-radius: 17px; background: var(--bg); font: 500 13px var(--sans); color: var(--ink-2); white-space: nowrap; }
 .fchip:hover { border-color: var(--ink); }
 .fchip[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: var(--bg); }
-.pchip { display: inline-flex; align-items: center; gap: 8px; height: 32px; padding: 0 12px; border: 1px solid var(--rule); border-radius: 16px; background: var(--bg); font: 500 13px var(--sans); color: var(--ink); text-decoration: none; }
+.pchip { display: inline-flex; align-items: center; gap: 8px; min-height: 32px; max-width: 100%; padding: 6px 12px; border: 1px solid var(--rule); border-radius: 16px; background: var(--bg); font: 500 13px/1.3 var(--sans); color: var(--ink); text-align: left; text-decoration: none; } /* a long name wraps, left-aligned beside its colour */
 .pchip:hover { border-color: var(--ink); }
+/* dragging along a timeline moves through time; it must not select the names and dates on it */
+#dock, #chart { -webkit-user-select: none; user-select: none; }
 .pchip i { width: 10px; height: 10px; border-radius: 2px; flex: none; }
 .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
 .morebtn { display: flex; align-items: center; justify-content: space-between; height: 44px; padding: 0 14px; border: 1px solid var(--rule-strong); border-radius: 22px; background: var(--bg); font: 500 14px var(--sans); text-decoration: none; color: var(--ink); }
@@ -965,7 +967,7 @@ body.jdock .etl { padding: 10px 16px 10px 14px; }
   #bigyear b small { margin-left: .12em; font-size: .36em; font-weight: 800; letter-spacing: 0; }
   #bigyear span { margin-top: 6px; font: 600 12px var(--sans); letter-spacing: .1em; text-transform: uppercase; color: var(--kick); }
   /* touch targets: chips at least 40 px tall */
-  .fchip, .pchip { height: 40px; }
+  .fchip { height: 40px; } .pchip { min-height: 40px; border-radius: 20px; }
 }
 
 /* Without JavaScript: say what the atlas is and link to the plain pages (tools/seo.py) */

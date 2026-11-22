@@ -27,6 +27,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 
 #card { position: absolute; z-index: 4; left: 24px; top: 88px; width: 380px; max-height: calc(100% - 88px - 164px); overflow-y: auto; padding: 24px; border: 1px solid var(--ink); border-radius: 14px; background: var(--surf); box-shadow: var(--shadow); transition: opacity .35s ease; }
 #app[data-mode="hist"] #card { opacity: 0; pointer-events: none; }
+#dock, #sdock, #strip, #grab { -webkit-user-select: none; user-select: none; } /* a drag along the timeline or the globe selects nothing */
 .kicker { font: 600 12px var(--sans); letter-spacing: .12em; text-transform: uppercase; color: var(--kick); }
 .age { margin-top: 6px; display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
 .age b { font: 900 64px/.95 var(--display); letter-spacing: -.02em; }
@@ -36,7 +37,9 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .chip i { width: 12px; height: 12px; border-radius: 3px; border: 1px solid rgba(0, 0, 0, .15); }
 #card h1 { margin: 12px 0 6px; font: 800 22px/1.15 var(--display); }
 #card p { margin: 0; font-size: 15px; line-height: 1.55; color: var(--ink-2); }
-#card #body { display: -webkit-box; -webkit-line-clamp: 6; -webkit-box-orient: vertical; overflow: hidden; }
+#card #body h2 { margin: 16px 0 4px; font: 700 11px var(--sans); letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); }
+#card #body h2:first-child { margin-top: 14px; }
+#card #body p + h2 { margin-top: 14px; }
 #card .hint { margin-top: 14px; padding: 10px 12px; border-radius: 10px; background: var(--chip); font-size: 13px; line-height: 1.4; }
 #card .trust { margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--rule); font-size: 12.5px; color: var(--ink-3); }
 
@@ -126,10 +129,10 @@ button { font: inherit; color: inherit; cursor: pointer; }
   #card, #story { padding: 16px 18px 14px; }
   .age b { font-size: 44px; } .age span { font-size: 15px; }
   #card h1 { font-size: 19px; margin: 8px 0 4px; } #story h1 { font-size: 19px; }
-  #card p, #story p { font-size: 13.5px; } #card #body { -webkit-line-clamp: 4; }
+  #card p, #story p { font-size: 13.5px; }
   #story figure img { height: 110px; }
 }
-@media (max-height: 620px) { #card #body { -webkit-line-clamp: 2; } #card .trust { display: none; } }
+@media (max-height: 620px) { #card .trust { display: none; } }
 @media (max-width: 1180px) { .brand span { display: none; } .brand { padding: 0 15px; } .proto { display: none; } } /* as World history does */
 
 /* history: World history's own tabs and search show through in the header, so ours keeps to the left; the Earth's moments are an Earth thing */
@@ -141,7 +144,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 /* Flat view: the map is the picture, so the Earth card keeps to its headline; "Read more" opens the rest */
 .more { display: none; margin-top: 10px; padding: 0; border: 0; background: none; font: 500 13.5px var(--sans); text-decoration: underline; text-decoration-color: var(--hot); text-underline-offset: 3px; }
 #app[data-flat] .more { display: inline-block; }
-#app[data-flat] #card:not(.open) #body, #app[data-flat] #card:not(.open) .hint, #app[data-flat] #card:not(.open) .trust, #app[data-flat] #card:not(.open) .turnbox p { display: none; }
+#app[data-flat] #card:not(.open) #body p:not(:first-of-type), #app[data-flat] #card:not(.open) #body h2:not(:first-child), #app[data-flat] #card:not(.open) .hint, #app[data-flat] #card:not(.open) .trust, #app[data-flat] #card:not(.open) .turnbox p { display: none; }
 
 /* Earth | History: always in the header, where World history's own site switch sits, on every view */
 #eraSeg button { flex: 1; white-space: nowrap; }
