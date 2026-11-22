@@ -62,8 +62,9 @@ window.PHONE = (() => {
     if (d > 0) return goYear(HERAS[i + 1] ? HERAS[i + 1][0] : NOW_YEAR);
     return y > HERAS[i][0] ? goYear(HERAS[i][0]) : i > 0 ? goYear(HERAS[i - 1][0]) : goMa(.02);
   }
-  const histTab = (name) => { if (ST) storyEnd(); listOpen(false); if (S.mode !== "hist") enterHistory(S.lastYear ?? Y0); // a section of World history, which takes the screen in its own phone layout
-    setTimeout(() => { try { const d = histWin().document; (d.querySelector(`#tabbar [data-tab="${name}"]`) || d.querySelector(`#bar [data-tab="${name}"]`)).click(); } catch (e) {} }, 400); };
+  const histTab = (name) => { if (ST) storyEnd(); listOpen(false); const crossing = S.mode !== "hist"; if (crossing) enterHistory(S.lastYear ?? Y0); // a section of World history, which takes the screen in its own phone layout
+    const press = () => { try { const d = histWin().document; (d.querySelector(`#tabbar [data-tab="${name}"]`) || d.querySelector(`#bar [data-tab="${name}"]`)).click(); } catch (e) {} setTimeout(histWatch, 0); setTimeout(histWatch, 90); };
+    if (crossing) setTimeout(press, 400); else press(); }; // at once when already in history; after the crossing when coming from the Earth
 
   // ---------------------------------------------------------------- jump to a time: the rock column as a list (and a story's chapters)
   function idx(mode) {
@@ -125,7 +126,8 @@ window.PHONE = (() => {
     gr.addEventListener("pointerup", (e) => { if (g0 == null) return; const dy = e.clientY - g0, s = q("#ps").dataset.stop; g0 = null; if (S.mode === "hist") return;
       if (dy < -24 || Math.abs(dy) < 6) stop(s === "peek" ? "half" : "full"); else if (dy > 24) stop(s === "full" ? "half" : "peek"); });
     q("#ptabs").addEventListener("click", (e) => { const b = e.target.closest("[data-tab]"); if (!b) return; setPlaying(false); idxClose(); all(false);
-      if (b.dataset.tab === "explore") { if (ST) storyEnd(); listOpen(false); const own = HIST.own; HIST.own = false; if (S.mode === "hist" && q("#app").dataset.app && !own) histTab("map"); return; }
+      q("#ptabs").querySelectorAll("button").forEach((x) => { x === b ? x.setAttribute("aria-current", "page") : x.removeAttribute("aria-current"); }); // the pressed tab shows at once
+      if (b.dataset.tab === "explore") { if (ST) storyEnd(); listOpen(false); if (S.mode === "hist" && q("#app").dataset.app) histExplore(); else HIST.own = false; return; }
       HIST.own = false;
       if (b.dataset.tab === "stories") return S.mode === "hist" ? histTab("stories") : q("#app").dataset.list ? listOpen(false) : storiesOpen(); // each side's own stories
       histTab("about"); });

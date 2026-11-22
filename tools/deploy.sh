@@ -29,8 +29,8 @@ python3 -I - "$D/public/index.html" "$V" <<'PY'
 import sys, re
 p, v = sys.argv[1], sys.argv[2]
 s = open(p).read()
-s, n = re.subn(r'(one/(?:one|phone)\.(?:css|js))\?v=\d+', lambda m: f"{m.group(1)}?v={v}", s)
-if n != 4: sys.exit(f"index.html: expected 4 versioned files of its own, found {n}")
+s, n = re.subn(r'(one/(?:one|phone|theme)\.(?:css|js))\?v=\d+', lambda m: f"{m.group(1)}?v={v}", s)
+if n != 6: sys.exit(f"index.html: expected 6 versioned files of its own, found {n}")
 s = s.replace('href="fonts/fonts.css"', f'href="fonts/fonts.css?v={v}"')
 s = s.replace('<meta charset="utf-8">', f'<meta charset="utf-8">\n<meta name="data-version" content="{v}">\n<link rel="preload" href="data/earth-history.json?v={v}" as="fetch" crossorigin>', 1)
 open(p, "w").write(s)

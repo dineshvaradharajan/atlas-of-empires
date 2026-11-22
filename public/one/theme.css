@@ -1,0 +1,24 @@
+/* The atlas's two looks (see theme.js): "sage", a soft grey-green light theme, and "midnight", dark. The layouts in one.css and phone.css
+   draw every surface, line and button through these variables; World history in the frame gets matching values from one/hist-patch.js. */
+:root { --surf: #fff; --page: #fff; --soft: #f1f1ec; --btn: var(--ink); --btn-ink: #fff; --hair: #e3e3dd; --graph: #5e5e59;
+  --dock: rgba(20, 20, 19, .9); --dock-ink: rgba(255, 255, 255, .66); --dock-on: #fff; --dock-on-ink: #111; }
+html[data-theme="sage"] { --page: #f1f5f2; --surf: #fbfdfb; --soft: #e4ece6; --chip: #e4ece6; --ink: #15211b; --ink-2: #2a3a31; --ink-3: #586860; --graph: #586860;
+  --hair: #d9e3dc; --rule: #d9e3dc; --rule-2: #c3cfc7; --kick: #c2482e; --btn: #1d5a45; --btn-ink: #fff; --dock: rgba(21, 33, 27, .93); --dock-on: #fbfdfb; --dock-on-ink: #15211b; color-scheme: light; }
+html[data-theme="midnight"] { --page: #121211; --surf: #191918; --soft: #262624; --chip: #262624; --ink: #f2f2ee; --ink-2: #d6d6d0; --ink-3: #9a9a93; --graph: #9a9a93;
+  --hair: #2c2c29; --rule: #2c2c29; --rule-2: #3a3a36; --kick: #ff6b55; --hot: #ff5a43; --btn: #f2f2ee; --btn-ink: #121211;
+  --dock: rgba(44, 44, 41, .94); --dock-ink: rgba(242, 242, 238, .7); --dock-on: #f2f2ee; --dock-on-ink: #121211; --shadow: 0 10px 30px rgba(0, 0, 0, .5); color-scheme: dark; }
+html[data-theme] body, html[data-theme] #app[data-mode="deep"] #globe, html[data-theme] #hist { background: var(--page); }
+html[data-theme] body { color: var(--ink); }
+html[data-theme] #app #viewSeg { background: var(--surf); }
+html[data-theme] #story, html[data-theme] #card, html[data-theme] #mlist { color: var(--ink); }
+html[data-theme="midnight"] #plogo, html[data-theme="midnight"] .brand img { filter: none; }
+html[data-theme="midnight"] #strata i, html[data-theme="midnight"] #hbands i { filter: saturate(.9) brightness(.92); }
+/* the switch between the two: beside the brand on a wide screen, under the logo on a phone */
+#themeBtn { position: absolute; z-index: 6; left: var(--theme-x, 250px); top: 16px; width: 52px; height: 52px; display: grid; place-items: center; padding: 0; border: 1px solid var(--ink); border-radius: 50%; background: var(--surf); color: var(--ink); cursor: pointer; }
+#themeBtn svg { width: 19px; height: 19px; fill: none; stroke: currentColor; stroke-width: 1.9; stroke-linecap: round; stroke-linejoin: round; }
+#themeBtn .sun { display: none; } html[data-theme="midnight"] #themeBtn .sun { display: block; } html[data-theme="midnight"] #themeBtn .moon { display: none; }
+@media (max-width: 760px) {
+  #themeBtn { left: 20px; top: calc(70px + env(safe-area-inset-top)); width: 40px; height: 40px; border-color: var(--hair); box-shadow: var(--float); }
+  #themeBtn svg { width: 17px; height: 17px; }
+  #app[data-app] #themeBtn, #app[data-story] #themeBtn { display: none; }
+}

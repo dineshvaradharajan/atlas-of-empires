@@ -176,11 +176,31 @@ function syncChrome() { // this page's brand, switch and card sit exactly where 
   try {
     const d = histWin().document, R = (q) => { const e = d.querySelector(q); const r = e && e.getBoundingClientRect(); return r && r.width ? r : null; };
     const b = R("#bar .brand"), sw = R("#bar .sitesw"), col = R("#col");
-    if (b) { const el = $(".brand"); el.style.width = b.width + "px"; el.style.height = b.height + "px"; }
+    if (b) { const el = $(".brand"); el.style.width = b.width + "px"; el.style.height = b.height + "px"; $("#themeBtn").style.setProperty("--theme-x", 24 + b.width + 12 + "px"); }
     const tb = R("#bar .tabs"); if (tb) $("#tabs").style.left = tb.left + tb.width / 2 - 24 + "px"; // the sections, centred where World history's are
     if (col) { const narrow = S.flat && S.mode === "deep" && innerWidth < 1200; // Flat view in a small window: a narrower Earth card, so the map has the width
       for (const el of [$("#card"), $("#story")]) { el.style.left = col.left + "px"; el.style.top = col.top + "px"; el.style.width = (narrow && el.id === "card" ? Math.min(col.width, Math.max(280, Math.round(innerWidth * .3))) : col.width) + "px"; } }
   } catch (e) {}
+}
+// In history the card, the search box and the map buttons are World history's own, in the page underneath, while the globe (and the
+// map it opens into) is drawn on this page's canvas above them. So the canvas is cut away over each of them: the map opening out no
+// longer washes across the panel. Kept while the canvas fades out too, once the map underneath has taken over.
+let clipShown = "", clipAt = 0;
+function clipCard(now) {
+  if (now - clipAt < 80) return; clipAt = now;
+  let p = "";
+  if (S.mode === "hist") try {
+    const fw = histWin(), d = fw.document; let holes = "";
+    for (const q of ["#col", "#bar .search", "#layersBtn", "#mapTools .zoom", "#noRecords"]) {
+      const el = d.querySelector(q); if (!el || el.hidden) continue;
+      const r = el.getBoundingClientRect(); if (r.width < 8 || r.height < 8) continue;
+      const cs = fw.getComputedStyle(el); if (cs.visibility === "hidden" || cs.display === "none") continue;
+      const x = Math.round(r.left) - 1, y = Math.round(r.top) - 1, w = Math.round(r.width) + 2, h = Math.round(r.height) + 2, k = Math.max(1, Math.min((parseFloat(cs.borderTopLeftRadius) || 0) + 1, w / 2, h / 2));
+      holes += ` M${x + k} ${y}h${w - 2 * k}a${k} ${k} 0 0 1 ${k} ${k}v${h - 2 * k}a${k} ${k} 0 0 1 -${k} ${k}h-${w - 2 * k}a${k} ${k} 0 0 1 -${k} -${k}v-${h - 2 * k}a${k} ${k} 0 0 1 ${k} -${k}Z`;
+    }
+    if (holes) p = `path(evenodd, "M0 0H${W}V${H}H0Z${holes}")`;
+  } catch (e) {}
+  if (p !== clipShown) { clipShown = p; cv.style.clipPath = mk.style.clipPath = p; }
 }
 // where the flat map must land: exactly on the World history map in the frame underneath (its projection, then its pan and zoom)
 function flatFit() {
@@ -361,7 +381,7 @@ function histInit() {
   const fr = $("#hist");
   const hook = () => { try {
     const d = fr.contentDocument; if (!d || !d.head) return;
-    if (!d.getElementById("oneHide")) { const st = d.createElement("style"); st.id = "oneHide"; st.textContent = "#bar .brand,#bar .sitesw,#bar .tabs,#tabbar{visibility:hidden!important} .one-uni #dock{visibility:hidden!important} .one-globe #stage canvas{opacity:0!important;pointer-events:none!important} .one-globe #mapTools .zoom{display:none!important} @media (max-width:760px){.one-uni #sheet{display:none!important}}"; d.documentElement.classList.add("one-uni"); d.head.appendChild(st); }
+    if (!d.getElementById("oneHide")) { const st = d.createElement("style"); st.id = "oneHide"; st.textContent = "#bar .brand,#bar .sitesw,#bar .tabs,#tabbar{visibility:hidden!important} .one-uni #dock{visibility:hidden!important} .one-globe #stage canvas{opacity:0!important;pointer-events:none!important} .one-globe #mapTools .zoom{display:none!important} @media (max-width:760px){.one-uni #sheet{display:none!important} .one-uni #bar{left:72px!important}}"; d.documentElement.classList.add("one-uni"); d.head.appendChild(st); }
   } catch (e) {} };
   fr.addEventListener("load", hook); hook();
   const poll = setInterval(() => { try { const d = fr.contentDocument, c = d.querySelector("#map"), l = d.querySelector("#loading"); if (c && c.__zoom && (!l || l.hidden || getComputedStyle(l).display === "none" || l.classList.contains("done"))) { HIST.ready = true; clearInterval(poll); hook(); layout(); restoreLate(); } } catch (e) {} }, 300);
@@ -401,7 +421,7 @@ function histCapture() { // copy the frame's map (its WebGL layer and its drawin
     const iw = histWin(), d = iw.document, g = d.querySelector("#gl"), m = d.querySelector("#map"); if (!m || !m.width || !HIST.ready) return;
     const z = m.__zoom; if (!S.flat && z && (Math.abs(z.k - 1) > .02 || Math.abs(z.x) > 12 || Math.abs(z.y) > 12) && !d.documentElement.classList.contains("one-moving")) histWhole();
     const c = HT.cvs; if (c.width !== m.width || c.height !== m.height) { c.width = m.width; c.height = m.height; }
-    const x = c.getContext("2d"); x.fillStyle = "#fff"; x.fillRect(0, 0, c.width, c.height); if (g && g.width) x.drawImage(g, 0, 0, c.width, c.height); x.drawImage(m, 0, 0, c.width, c.height);
+    const x = c.getContext("2d"); x.fillStyle = iw.getComputedStyle(d.documentElement).getPropertyValue("--ocean").trim() || "#fff"; x.fillRect(0, 0, c.width, c.height); if (g && g.width) x.drawImage(g, 0, 0, c.width, c.height); x.drawImage(m, 0, 0, c.width, c.height);
     gl.activeTexture(gl.TEXTURE2); gl.bindTexture(gl.TEXTURE_2D, HT.tex); gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGB, gl.RGB, gl.UNSIGNED_BYTE, c); gl.activeTexture(gl.TEXTURE0);
     const r = m.getBoundingClientRect(), f = flatFit(); HT.aff = [f[0], f[1] - r.left, f[2] - r.top]; HT.size = [r.width, r.height]; HT.has = true; HT.at = performance.now(); S.dirty = true;
   } catch (e) {}
@@ -421,6 +441,14 @@ function histWatch() {
   const root = histWin().document.documentElement;
   if (app) { $("#app").dataset.app = "1"; root.classList.remove("one-uni", "one-globe"); root.style.setProperty("--dock-b", "64px"); setPlaying(false); }
   else { delete $("#app").dataset.app; root.classList.add("one-uni"); root.style.removeProperty("--dock-b"); if (!S.flat) histGlobe(true); else { delete $("#app").dataset.ready; histFrame(); FIT = flatFit(); } }
+}
+// Explore: back to the map on a plain year, whatever World history is showing (a story, a list, a realm's profile, About). Clicking
+// its own Map tab was not enough: on a realm's profile it is already on that tab, so nothing changed and this page stayed behind it.
+function histExplore() {
+  const y = clamp(histNow() ?? Math.round(S.year), Y0, NOW_YEAR);
+  HIST.own = false; S.year = y; HIST.sent = y; HIST.sentAt = HT.changed = performance.now();
+  try { const l = histWin().location; l.replace(l.href.split("#")[0] + "#" + y); } catch (e) {} // straight away, not through the timeline's throttle
+  histWatch(); // and this page takes the screen back in the same moment
 }
 function histYear(y) { // tell the World history map which year to show, at most a few times a second
   y = Math.round(y); if (y === HIST.sent) return;
@@ -448,10 +476,11 @@ function enterDeep(ma) {
 }
 // what the header and the strip show: which section is on, and, while a story has the timeline, where it sits in all of time
 // the year World history is showing: its address when that is a plain year or a story ending in its year, else its time bar
-function histNow() { try { const m = /(?:^#|\/)(-?\d{1,5})$/.exec(histWin().location.hash); if (m) return +m[1]; const tr = histWin().document.querySelector("#track"); if (tr && tr.getAttribute("aria-valuenow") != null) return +tr.getAttribute("aria-valuenow"); } catch (e) {} return null; }
+// (from the address: "#1492", a story ending in its year, or a profile such as "#-1250/Shang Dynasty")
+function histNow() { try { const h = histWin().location.hash, m = /(?:^#|\/)(-?\d{1,5})$/.exec(h) || /^#(-?\d{1,5})\//.exec(h); if (m) return +m[1]; const tr = histWin().document.querySelector("#track"); if (tr && tr.getAttribute("aria-valuenow") != null) return +tr.getAttribute("aria-valuenow"); } catch (e) {} return null; }
 function shell() {
   const app = !!$("#app").dataset.app; let h = ""; try { h = histWin().location.hash; } catch (e) {}
-  const tab = ST || $("#app").dataset.list ? "stories" : S.mode === "deep" ? "explore" : !app || h === "" || /^#t\//.test(h) || /^#-?\d+$/.test(h) ? "explore" : /^#about/.test(h) ? "about" : "stories";
+  const tab = ST || $("#app").dataset.list ? "stories" : S.mode === "deep" ? "explore" : !app || h === "" || /^#t\//.test(h) || /^#-?\d+(\/|$)/.test(h) || /^#p\//.test(h) ? "explore" : /^#about/.test(h) ? "about" : "stories";
   document.querySelectorAll("#tabs button, #ptabs button").forEach((b) => b.toggleAttribute("aria-current", b.dataset.tab === tab)); document.querySelectorAll("#tabs [aria-current], #ptabs [aria-current]").forEach((b) => b.setAttribute("aria-current", "page"));
   const strip = $("#strip"), on = !!ST || (S.mode === "hist" && app); strip.hidden = !on; if (!on) return;
   const earth = !!ST, y = earth ? null : histNow(); if (y != null) S.stripYear = y;
@@ -538,7 +567,7 @@ function frame(now) {
   if (!tlDrag && Math.abs(S.f - fT) > .0005) S.f += (fT - S.f) * Math.min(1, dt * 3);
   if (fly) { fly.t = Math.min(1, fly.t + dt / .9); const k = fly.t * fly.t * (3 - 2 * fly.t); S.lon = fly.lon0 + fly.dl * k; S.lat = fly.lat0 + fly.dp * k; S.dirty = true; if (fly.t >= 1) fly = null; }
   if (S.dirty && D) { S.dirty = false; draw(); if (S.mode === "deep" && !ST) renderCard(); }
-  drawTimeline(); window.PHONE?.tick(now); saveState(now);
+  drawTimeline(); window.PHONE?.tick(now); saveState(now); clipCard(now);
   requestAnimationFrame(frame);
 }
 function wire() {
@@ -572,14 +601,19 @@ function wire() {
   addEventListener("keydown", (e) => { if (!$("#immerse").hidden) { if (e.key === "Escape") imClose(); else if (e.key === "ArrowLeft") imShow(IM.i - 1); else if (e.key === "ArrowRight") imShow(IM.i + 1); e.stopPropagation(); return; }
     if (e.key === "Escape") { if ($("#app").dataset.list) listOpen(false); else if (ST) storyEnd(); } });
   $("#viewSeg").addEventListener("click", (e) => { const b = e.target.closest("[data-v]"); if (b) setFlat(b.dataset.v === "map"); });
-  const histTab = (name) => { if (ST) storyEnd(); if (S.mode !== "hist") enterHistory(S.lastYear ?? Y0); setTimeout(() => { try { histWin().document.querySelector(`#bar [data-tab="${name}"]`).click(); } catch (e) {} }, 350); }; // a section of World history
+  // A section of World history. Already in history, its tab is pressed at once and this page follows in the same moment (it used to
+  // wait a third of a second, then up to a quarter more for the next look at the frame); coming from the Earth it waits for the crossing.
+  const histTab = (name) => { if (ST) storyEnd(); const press = () => { try { histWin().document.querySelector(`#bar [data-tab="${name}"]`).click(); } catch (e) {} setTimeout(histWatch, 0); setTimeout(histWatch, 90); };
+    if (S.mode !== "hist") { enterHistory(S.lastYear ?? Y0); setTimeout(press, 350); } else press(); };
+  const markTab = (b) => document.querySelectorAll("#tabs button").forEach((x) => { x === b ? x.setAttribute("aria-current", "page") : x.removeAttribute("aria-current"); }); // the pressed tab shows at once
   $("#tabs").addEventListener("click", (e) => {
-    const b = e.target.closest("[data-tab]"); if (!b) return; setPlaying(false);
+    const b = e.target.closest("[data-tab]"); if (!b) return; setPlaying(false); markTab(b);
     if (b.dataset.tab === "stories") { if (S.mode === "hist") histTab("stories"); else { if (ST) storyEnd(); listOpen(true); } return; } // each side's own stories
-    listOpen(false); if (b.dataset.tab === "about") return histTab("about");
-    if (ST) storyEnd(); if (S.mode === "hist" && $("#app").dataset.app) histTab("map"); // Explore: back to the map and the full timeline
+    listOpen(false); markTab(b); if (b.dataset.tab === "about") return histTab("about");
+    if (ST) storyEnd(); if (S.mode === "hist" && $("#app").dataset.app) histExplore(); // Explore: back to the map and the full timeline
   });
   $("#todayBtn").addEventListener("click", () => histTab("today"));
+  $("#themeBtn").addEventListener("click", () => { LOOK.toggle(); saveState(performance.now() + 1e4); location.reload(); }); // World history reads its colours when it starts; the address brings the page back to the same place
   $("#sPlay").addEventListener("click", () => setPlaying(!S.playing));
   $("#sOut").addEventListener("click", () => storyEnd());
   $("#sdock").addEventListener("click", (e) => { const b = e.target.closest("[data-c]"); if (b) { setPlaying(false); storyGo(+b.dataset.c); } });
@@ -588,7 +622,7 @@ function wire() {
   $("#immerse").addEventListener("click", (e) => { const b = e.target.closest("[data-k]"); if (b) imShow(+b.dataset.k); else if (e.target.closest("#imPrev")) imShow(IM.i - 1); else if (e.target.closest("#imNext")) imShow(IM.i + 1); else if (e.target.closest("#imClose") || e.target.id === "immerse" || e.target.classList.contains("imbg")) imClose(); });
   $("#searchBtn").addEventListener("click", () => { if (ST) storyEnd(); enterHistory(S.lastYear ?? Y0); setTimeout(() => { try { histWin().document.querySelector("#search").focus(); } catch (e) {} }, 400); });
   $("#stripEarth").addEventListener("click", () => { if (ST) return storyEnd(); enterDeep(S.lastMa > JOIN ? S.lastMa : .02); });
-  $("#stripHistBtn").addEventListener("click", () => { if (ST) { storyEnd(); return enterHistory(S.lastYear ?? Y0); } histTab("map"); });
+  $("#stripHistBtn").addEventListener("click", () => { if (ST) { storyEnd(); return enterHistory(S.lastYear ?? Y0); } histExplore(); });
   addEventListener("resize", () => { if (window.PHONE?.changed()) return location.reload(); layout(); if (S.flat) histFrame(); FIT = null; S.dirty = true; });
 }
 async function init() {

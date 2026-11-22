@@ -204,7 +204,7 @@ function readTheme() {
   theme = { ocean: v("--ocean"), grat: v("--grat"), unknown: v("--unknown"), peoplesBg: v("--peoples-bg"), peoplesLine: v("--peoples-line"),
     other1: v("--other-1"), other2: v("--other-2"), other3: v("--other-3"), border: v("--border"), highlight: v("--highlight"),
     ink: v("--ink"), ink3: v("--ink-3"), bg: v("--bg"), labelSoft: v("--label-soft"), rule: v("--rule"),
-    water: v("--water"), waterLabel: v("--water-label"),
+    water: v("--water"), waterLabel: v("--water-label"), kick: v("--kick") || "#c8321e",
     dark: dt === "dark" };
   const c = document.createElement("canvas"); c.width = c.height = 6;
   const x = c.getContext("2d"); x.fillStyle = theme.peoplesBg; x.fillRect(0, 0, 6, 6);
@@ -3998,7 +3998,7 @@ function drawCallout(x, y, kicker, title) { // white card beside a pin: red kick
   rrect(ctx, lx, ly, w, h, 8); ctx.fillStyle = theme.bg; ctx.fill();
   ctx.shadowColor = "transparent"; ctx.lineWidth = 1; ctx.strokeStyle = theme.ink; ctx.stroke();
   ctx.textBaseline = "alphabetic"; ctx.textAlign = "left";
-  if (kicker) { ctx.font = '600 11px Inter, sans-serif'; ctx.fillStyle = "#c8321e"; ctx.letterSpacing = "1px"; ctx.fillText(kicker.toUpperCase(), lx + 14, ly + 22); ctx.letterSpacing = "0px"; }
+  if (kicker) { ctx.font = '600 11px Inter, sans-serif'; ctx.fillStyle = theme.kick; ctx.letterSpacing = "1px"; ctx.fillText(kicker.toUpperCase(), lx + 14, ly + 22); ctx.letterSpacing = "0px"; }
   ctx.font = '600 15px Inter, sans-serif'; ctx.fillStyle = theme.ink;
   let t = title; while (ctx.measureText(t).width > w - 28 && t.length > 4) t = t.slice(0, -2);
   ctx.fillText(t === title ? t : t.trimEnd() + "…", lx + 14, ly + (kicker ? 44 : 25));
@@ -4734,7 +4734,9 @@ function setupUI() {
       if (act === "myplace") { const mp = myPlace(); if (mp) return openPlace(mp.ll, { name: mp.name, from: "today" }); S.picking = true; canvas.classList.add("picking"); return toast("Click any spot on the map to see who ruled it."); }
       if (act === "continue") return continueStory();
       if (act === "share") {
-        const url = location.origin + location.pathname, text = S.today ? `${S.today.e.label}: ${S.today.e.text}` : "The World Atlas";
+        // The link is to the atlas's home page, which shows this page in a frame (so not to /world, this page on its own), and it
+        // opens today's story at its first step: the home page itself opens on the year, not on the story.
+        const url = location.origin + location.pathname.replace(/world(?:\.html)?$/, "") + (S.today ? "#t/1" : ""), text = S.today ? `${S.today.e.label}: ${S.today.e.text}` : "The World Atlas";
         if (navigator.share) return navigator.share({ title: "The World Atlas", text, url }).catch(() => {});
         return navigator.clipboard?.writeText(`${text} ${url}`).then(() => toast("Link copied"), () => toast(url));
       }

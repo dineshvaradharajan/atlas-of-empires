@@ -3,13 +3,13 @@
   --display: "Source Serif 4", Georgia, "Times New Roman", serif; --sans: "Inter", system-ui, sans-serif; --shadow: 0 10px 30px rgba(0, 0, 0, .12); }
 * { box-sizing: border-box; }
 html, body { margin: 0; height: 100%; }
-body { background: #fff; color: var(--ink); font: 15px/1.5 var(--sans); -webkit-font-smoothing: antialiased; overflow: hidden; }
+body { background: var(--surf); color: var(--ink); font: 15px/1.5 var(--sans); -webkit-font-smoothing: antialiased; overflow: hidden; }
 button { font: inherit; color: inherit; cursor: pointer; }
 :focus-visible { outline: 2px solid var(--hot); outline-offset: 2px; }
 #app { position: fixed; inset: 0; }
-#hist { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; background: #fff; }
+#hist { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; background: var(--surf); }
 #globe { position: absolute; inset: 0; width: 100%; height: 100%; display: block; pointer-events: none; transition: opacity .45s ease; }
-#app[data-mode="deep"] #globe { background: #fff; } /* before history nothing of the frame underneath shows; in history it is see-through round the globe */
+#app[data-mode="deep"] #globe { background: var(--surf); } /* before history nothing of the frame underneath shows; in history it is see-through round the globe */
 #app[data-mode="deep"] #hist { pointer-events: none; }
 #grab { position: absolute; z-index: 3; border-radius: 50%; cursor: grab; touch-action: none; }
 #grab.drag { cursor: grabbing; }
@@ -18,14 +18,14 @@ button { font: inherit; color: inherit; cursor: pointer; }
 
 #bar { position: absolute; z-index: 5; left: 24px; right: 24px; top: 16px; display: flex; align-items: center; gap: 12px; pointer-events: none; }
 #bar > * { pointer-events: auto; }
-.brand { display: flex; align-items: center; gap: 10px; height: 52px; padding: 0 18px; white-space: nowrap; box-sizing: border-box; border: 1px solid var(--ink); border-radius: 26px; background: #fff; font: 900 15px var(--display); letter-spacing: .08em; text-decoration: none; color: var(--ink); }
+.brand { display: flex; align-items: center; gap: 10px; height: 52px; padding: 0 18px; white-space: nowrap; box-sizing: border-box; border: 1px solid var(--ink); border-radius: 26px; background: var(--surf); font: 900 15px var(--display); letter-spacing: .08em; text-decoration: none; color: var(--ink); }
 .proto { height: 30px; padding: 0 12px; display: flex; align-items: center; border-radius: 15px; background: var(--chip); font: 600 12.5px var(--sans); color: var(--ink-2); }
 .brand img { width: auto; height: 24px; flex: none; }
-.seg { display: flex; height: 52px; padding: 4px; border: 1px solid var(--ink); border-radius: 26px; background: #fff; }
+.seg { display: flex; height: 52px; padding: 4px; border: 1px solid var(--ink); border-radius: 26px; background: var(--surf); }
 .seg button { padding: 0 18px; border: 0; border-radius: 22px; background: none; font: 500 14px var(--sans); }
-.seg button[aria-pressed="true"] { background: var(--ink); color: #fff; font-weight: 600; }
+.seg button[aria-pressed="true"] { background: var(--btn); color: var(--btn-ink); font-weight: 600; }
 
-#card { position: absolute; z-index: 4; left: 24px; top: 88px; width: 380px; max-height: calc(100% - 88px - 164px); overflow-y: auto; padding: 24px; border: 1px solid var(--ink); border-radius: 14px; background: #fff; box-shadow: var(--shadow); transition: opacity .35s ease; }
+#card { position: absolute; z-index: 4; left: 24px; top: 88px; width: 380px; max-height: calc(100% - 88px - 164px); overflow-y: auto; padding: 24px; border: 1px solid var(--ink); border-radius: 14px; background: var(--surf); box-shadow: var(--shadow); transition: opacity .35s ease; }
 #app[data-mode="hist"] #card { opacity: 0; pointer-events: none; }
 .kicker { font: 600 12px var(--sans); letter-spacing: .12em; text-transform: uppercase; color: var(--kick); }
 .age { margin-top: 6px; display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
@@ -41,8 +41,8 @@ button { font: inherit; color: inherit; cursor: pointer; }
 #card .trust { margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--rule); font-size: 12.5px; color: var(--ink-3); }
 
 
-#dock { position: absolute; z-index: 5; left: 24px; right: 24px; bottom: 20px; height: 124px; transition: height .35s ease; border: 1px solid var(--ink); border-radius: 30px; background: #fff; box-shadow: var(--shadow); }
-#play { position: absolute; left: 18px; top: 55px; width: 44px; height: 44px; border: 0; border-radius: 22px; background: var(--ink); color: #fff; display: grid; place-items: center; }
+#dock { position: absolute; z-index: 5; left: 24px; right: 24px; bottom: 20px; height: 124px; transition: height .35s ease; border: 1px solid var(--ink); border-radius: 30px; background: var(--surf); box-shadow: var(--shadow); }
+#play { position: absolute; left: 18px; top: 55px; width: 44px; height: 44px; border: 0; border-radius: 22px; background: var(--btn); color: var(--btn-ink); display: grid; place-items: center; }
 #play svg { width: 16px; height: 16px; fill: currentColor; }
 .caps { position: absolute; left: 96px; right: 40px; top: 6px; height: 14px; font: 700 10.5px var(--sans); letter-spacing: .1em; color: var(--ink-3); }
 .caps span { position: absolute; top: 0; white-space: nowrap; transition: opacity .3s; }
@@ -57,23 +57,23 @@ button { font: inherit; color: inherit; cursor: pointer; }
 #hmarks i { position: absolute; top: 8px; width: 1px; height: 8px; background: var(--ink); }
 #foldDeep, #foldHist { position: absolute; inset: 0; width: 100%; padding: 0; border: 0; font: 700 11.5px var(--sans); white-space: nowrap; opacity: 0; pointer-events: none; transition: opacity .25s; }
 #foldDeep { background: rgba(255, 255, 255, .74); color: var(--ink); border: 1px solid var(--ink); border-radius: 8px 0 0 8px; }
-#foldHist { background: var(--ink); color: #fff; }
+#foldHist { background: var(--btn); color: var(--btn-ink); }
 #tlDeep.folded #foldDeep, #tlHist.folded #foldHist { opacity: 1; pointer-events: auto; }
 #tlHist.folded .axis, #tlHist.folded #hmarks { visibility: hidden; }
 #cursor { position: absolute; top: -7px; width: 3px; height: 40px; margin-left: -1.5px; background: var(--ink); pointer-events: none; }
 #pill { position: absolute; z-index: 2; top: -23px; transform: translateX(-50%); padding: 2px 9px; border-radius: 10px; background: var(--hot); color: #fff; font: 800 11.5px/18px var(--display); white-space: nowrap; pointer-events: none; }
 #ticks { position: absolute; left: 96px; right: 40px; top: 96px; height: 16px; font-size: 11px; color: var(--ink-3); pointer-events: none; }
 #ticks span { position: absolute; transform: translateX(-50%); white-space: nowrap; }
-#narrow { display: none; position: absolute; z-index: 9; inset: 0; margin: 0; padding: 40px 24px; background: #fff; font-size: 16px; }
+#narrow { display: none; position: absolute; z-index: 9; inset: 0; margin: 0; padding: 40px 24px; background: var(--surf); font-size: 16px; }
 @media (max-width: 779px) { #narrow { display: block; } } /* below this the World history page underneath switches to its phone layout */
 @media (prefers-reduced-motion: reduce) { #globe, #card { transition: none; } }
 
 /* turning points for life: names above the Earth part of the timeline, a diamond on the band */
 #milesRow { position: absolute; left: 96px; right: 40px; top: 20px; height: 20px; pointer-events: none; }
 #miles { position: relative; height: 20px; }
-.mile { position: absolute; top: 0; height: 20px; padding: 0 8px; border: 1px solid var(--ink); border-radius: 10px; background: #fff; font: 600 11.5px/18px var(--sans); white-space: nowrap; pointer-events: auto; }
+.mile { position: absolute; top: 0; height: 20px; padding: 0 8px; border: 1px solid var(--ink); border-radius: 10px; background: var(--surf); font: 600 11.5px/18px var(--sans); white-space: nowrap; pointer-events: auto; }
 .mile.extinction { border-color: var(--hot); color: var(--kick); }
-.mile.on { background: var(--ink); color: #fff; } .mile.extinction.on { background: var(--hot); border-color: var(--hot); color: #fff; }
+.mile.on { background: var(--btn); color: var(--btn-ink); } .mile.extinction.on { background: var(--hot); border-color: var(--hot); color: #fff; }
 .mile.hid { visibility: hidden; }
 #mileMarks { position: absolute; left: 0; top: -5px; height: 8px; pointer-events: none; }
 #mileMarks i { position: absolute; top: 0; width: 8px; height: 8px; margin-left: -4px; transform: rotate(45deg); background: var(--ink); box-shadow: 0 0 0 1.5px #fff; }
@@ -86,11 +86,11 @@ button { font: inherit; color: inherit; cursor: pointer; }
 
 /* moments */
 #marks { position: absolute; z-index: 2; inset: 0; width: 100%; height: 100%; pointer-events: none; }
-.pillbtn { margin-left: auto; height: 52px; padding: 0 22px; border: 1px solid var(--ink); border-radius: 26px; background: #fff; font: 500 14px var(--sans); }
+.pillbtn { margin-left: auto; height: 52px; padding: 0 22px; border: 1px solid var(--ink); border-radius: 26px; background: var(--surf); font: 500 14px var(--sans); }
 .pillbtn:hover { background: var(--chip); }
-.x { position: absolute; right: 12px; top: 12px; width: 32px; height: 32px; padding: 0; border: 1px solid var(--rule-2); border-radius: 16px; background: #fff; display: grid; place-items: center; }
+.x { position: absolute; right: 12px; top: 12px; width: 32px; height: 32px; padding: 0; border: 1px solid var(--rule-2); border-radius: 16px; background: var(--surf); display: grid; place-items: center; }
 .x svg { width: 13px; height: 13px; fill: none; stroke: currentColor; stroke-width: 2.2; }
-#story { display: none; position: absolute; z-index: 4; left: 24px; top: 88px; width: 380px; max-height: calc(100% - 88px - 164px); overflow-y: auto; padding: 24px; border: 1px solid var(--ink); border-radius: 14px; background: #fff; box-shadow: var(--shadow); }
+#story { display: none; position: absolute; z-index: 4; left: 24px; top: 88px; width: 380px; max-height: calc(100% - 88px - 164px); overflow-y: auto; padding: 24px; border: 1px solid var(--ink); border-radius: 14px; background: var(--surf); box-shadow: var(--shadow); }
 #app[data-story] #story { display: block; } #app[data-story] #card { display: none; }
 #story .sub { margin-top: 2px; }
 #story figure { margin: 12px 0 0; } #story figure img { display: block; width: 100%; height: 150px; object-fit: cover; border-radius: 8px; background: var(--chip); }
@@ -98,15 +98,15 @@ button { font: inherit; color: inherit; cursor: pointer; }
 #story h1 { margin: 12px 0 2px; font: 800 21px/1.15 var(--display); }
 #story p { margin: 8px 0 0; font-size: 14px; line-height: 1.5; color: var(--ink-2); }
 .snav { display: flex; gap: 8px; margin-top: 14px; }
-.snav button { flex: 1; height: 40px; border: 1px solid var(--ink); border-radius: 20px; background: #fff; font: 600 13.5px var(--sans); }
-.snav button.go { background: var(--ink); color: #fff; } .snav button:disabled { opacity: .35; cursor: default; }
+.snav button { flex: 1; height: 40px; border: 1px solid var(--ink); border-radius: 20px; background: var(--surf); font: 600 13.5px var(--sans); }
+.snav button.go { background: var(--btn); color: var(--btn-ink); } .snav button:disabled { opacity: .35; cursor: default; }
 #moments { position: absolute; z-index: 9; inset: 0; background: rgba(17, 17, 17, .32); display: grid; place-items: center; padding: 20px; }
 #moments[hidden] { display: none; }
-#moments .sheet { position: relative; width: min(820px, 100%); max-height: min(86vh, 800px); overflow-y: auto; padding: 26px 28px 22px; border: 1px solid var(--ink); border-radius: 14px; background: #fff; box-shadow: var(--shadow); }
+#moments .sheet { position: relative; width: min(820px, 100%); max-height: min(86vh, 800px); overflow-y: auto; padding: 26px 28px 22px; border: 1px solid var(--ink); border-radius: 14px; background: var(--surf); box-shadow: var(--shadow); }
 #moments h2 { margin: 0 40px 4px 0; font: 800 28px/1.1 var(--display); }
 #moments .intro { margin: 0 0 14px; color: var(--ink-2); }
 #momentCards { display: flex; flex-direction: column; gap: 10px; }
-.mcard { display: grid; grid-template-columns: 170px 1fr; gap: 16px; padding: 10px; border: 1px solid var(--rule-2); border-radius: 12px; background: #fff; text-align: left; }
+.mcard { display: grid; grid-template-columns: 170px 1fr; gap: 16px; padding: 10px; border: 1px solid var(--rule-2); border-radius: 12px; background: var(--surf); text-align: left; }
 .mcard:hover { border-color: var(--ink); box-shadow: var(--shadow); }
 .mcard img, .mcard > i { width: 170px; height: 104px; object-fit: cover; border-radius: 8px; background: var(--chip); display: block; }
 .mcard b { display: block; font: 800 18px/1.2 var(--display); }
@@ -149,26 +149,26 @@ button { font: inherit; color: inherit; cursor: pointer; }
 
 /* the header: three sections in the middle, as World history's own tabs are placed; search at the right before history (in history its own search shows) */
 #bar { justify-content: space-between; }
-.tabs { position: absolute; left: 50%; top: 0; transform: translateX(-50%); display: flex; gap: 2px; height: 52px; padding: 4px; border: 1px solid var(--ink); border-radius: 26px; background: #fff; }
+.tabs { position: absolute; left: 50%; top: 0; transform: translateX(-50%); display: flex; gap: 2px; height: 52px; padding: 4px; border: 1px solid var(--ink); border-radius: 26px; background: var(--surf); }
 .tabs button { height: 42px; padding: 0 22px; border: 0; border-radius: 21px; background: none; font: 500 14px var(--sans); }
 .tabs button:hover { background: var(--chip); }
-.tabs button[aria-current="page"] { background: var(--ink); color: #fff; font-weight: 600; }
+.tabs button[aria-current="page"] { background: var(--btn); color: var(--btn-ink); font-weight: 600; }
 #searchBtn { display: flex; align-items: center; gap: 10px; padding: 0 20px 0 16px; color: var(--ink-3); }
 #searchBtn svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 2; }
 #app[data-mode="hist"] #searchBtn { visibility: hidden; }
 /* the Stories sheet: today, the Earth's moments, human history */
 .msec { margin: 18px 0 8px; font: 600 12px var(--sans); letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); }
-.mrow { display: grid; grid-template-columns: 1fr auto; gap: 2px 12px; width: 100%; padding: 14px 16px; border: 1px solid var(--rule-2); border-radius: 12px; background: #fff; text-align: left; }
+.mrow { display: grid; grid-template-columns: 1fr auto; gap: 2px 12px; width: 100%; padding: 14px 16px; border: 1px solid var(--rule-2); border-radius: 12px; background: var(--surf); text-align: left; }
 .mrow:hover { border-color: var(--ink); box-shadow: var(--shadow); }
 .mrow b { font: 800 17px/1.2 var(--display); } .mrow span { grid-column: 1; font-size: 13.5px; color: var(--ink-2); }
 .mrow i { grid-row: 1 / span 2; grid-column: 2; align-self: center; font: 400 24px var(--sans); font-style: normal; }
 /* all of time, in one slim strip: shown whenever a story (or another World history view) has the timeline, so the way to either timeline never goes */
-#strip { position: absolute; z-index: 6; left: 24px; right: 24px; bottom: 16px; height: 40px; display: flex; align-items: center; gap: 14px; padding: 0 8px 0 18px; border: 1px solid var(--ink); border-radius: 20px; background: #fff; box-shadow: var(--shadow); }
+#strip { position: absolute; z-index: 6; left: 24px; right: 24px; bottom: 16px; height: 40px; display: flex; align-items: center; gap: 14px; padding: 0 8px 0 18px; border: 1px solid var(--ink); border-radius: 20px; background: var(--surf); box-shadow: var(--shadow); }
 #strip[hidden] { display: none; }
 #strip .slab { font: 700 10.5px var(--sans); letter-spacing: .1em; color: var(--ink-3); white-space: nowrap; }
-#strip button { height: 28px; padding: 0 12px; border: 1px solid var(--rule-2); border-radius: 14px; background: #fff; font: 600 12.5px var(--sans); white-space: nowrap; }
+#strip button { height: 28px; padding: 0 12px; border: 1px solid var(--rule-2); border-radius: 14px; background: var(--surf); font: 600 12.5px var(--sans); white-space: nowrap; }
 #strip button:hover { border-color: var(--ink); }
-#strip button.here { border-color: var(--ink); background: var(--ink); color: #fff; }
+#strip button.here { border-color: var(--btn); background: var(--btn); color: var(--btn-ink); }
 #stripBar { position: relative; flex: 1; height: 14px; }
 #stripStrata { position: absolute; left: 0; top: 0; bottom: 0; width: 26%; border-radius: 7px 0 0 7px; overflow: hidden; }
 #stripStrata i { position: absolute; top: 0; bottom: 0; }
@@ -184,7 +184,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .mrow span { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 
 /* history only: today's event, a small button beside Globe | Flat (World history's Today view) */
-.chipbtn { position: absolute; z-index: 5; right: 176px; bottom: 118px; height: 40px; padding: 0 16px; border: 1px solid var(--ink); border-radius: 20px; background: #fff; box-shadow: var(--shadow); font: 500 13px var(--sans); white-space: nowrap; }
+.chipbtn { position: absolute; z-index: 5; right: 176px; bottom: 118px; height: 40px; padding: 0 16px; border: 1px solid var(--ink); border-radius: 20px; background: var(--surf); box-shadow: var(--shadow); font: 500 13px var(--sans); white-space: nowrap; }
 .chipbtn:hover { background: var(--chip); }
 #app[data-mode="deep"] .chipbtn, #app[data-app] .chipbtn { display: none; }
 
@@ -192,9 +192,9 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .pic { position: relative; display: block; width: 100%; margin: 12px 0 2px; padding: 0; border: 0; border-radius: 10px; overflow: hidden; background: var(--chip); }
 .pic[hidden] { display: none; }
 .pic img { display: block; width: 100%; height: 150px; object-fit: cover; }
-.picgo { position: absolute; left: 10px; bottom: 10px; display: flex; align-items: center; gap: 7px; height: 32px; padding: 0 13px; border: 1px solid var(--ink); border-radius: 16px; background: #fff; font: 600 13px var(--sans); }
+.picgo { position: absolute; left: 10px; bottom: 10px; display: flex; align-items: center; gap: 7px; height: 32px; padding: 0 13px; border: 1px solid var(--ink); border-radius: 16px; background: var(--surf); font: 600 13px var(--sans); }
 .picgo svg { width: 14px; height: 14px; fill: none; stroke: currentColor; stroke-width: 2; }
-.pic:hover .picgo { background: var(--ink); color: #fff; }
+.pic:hover .picgo { background: var(--btn); color: var(--btn-ink); }
 .picn { position: absolute; right: 10px; top: 10px; height: 24px; padding: 0 9px; border-radius: 12px; background: rgba(17, 17, 17, .72); color: #fff; font: 600 12px/24px var(--sans); }
 #app[data-flat] #card:not(.open) .pic img { height: 90px; }
 #story figure { cursor: zoom-in; }
@@ -217,16 +217,16 @@ button { font: inherit; color: inherit; cursor: pointer; }
 
 /* a moment's own timeline, built like a war's in World history: play, one segment per chapter, dates under them, and a way out to
    the time it is showing. The chapters' names sit above their segments as badges. */
-#sdock { position: absolute; z-index: 5; left: 24px; right: 24px; bottom: 64px; height: 108px; border: 1px solid var(--ink); border-radius: 30px; background: #fff; box-shadow: var(--shadow); }
+#sdock { position: absolute; z-index: 5; left: 24px; right: 24px; bottom: 64px; height: 108px; border: 1px solid var(--ink); border-radius: 30px; background: var(--surf); box-shadow: var(--shadow); }
 #sdock[hidden] { display: none; }
-#sPlay { position: absolute; left: 18px; top: 32px; width: 44px; height: 44px; border: 0; border-radius: 22px; background: var(--ink); color: #fff; display: grid; place-items: center; }
+#sPlay { position: absolute; left: 18px; top: 32px; width: 44px; height: 44px; border: 0; border-radius: 22px; background: var(--btn); color: var(--btn-ink); display: grid; place-items: center; }
 #sPlay svg { width: 16px; height: 16px; fill: currentColor; }
 #sLane { position: absolute; left: 84px; right: 246px; top: 10px; bottom: 8px; }
 #sBadges { position: relative; height: 48px; }
-.sbadge { position: absolute; height: 21px; max-width: 230px; padding: 0 9px; border: 1px solid var(--rule-2); border-radius: 11px; background: #fff; font: 600 11.5px/19px var(--sans); color: var(--ink-2); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.sbadge { position: absolute; height: 21px; max-width: 230px; padding: 0 9px; border: 1px solid var(--rule-2); border-radius: 11px; background: var(--surf); font: 600 11.5px/19px var(--sans); color: var(--ink-2); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .sbadge:hover { border-color: var(--ink); color: var(--ink); }
 .sbadge.seen { border-color: var(--ink-3); color: var(--ink); }
-.sbadge.on { border-color: var(--ink); background: var(--ink); color: #fff; }
+.sbadge.on { border-color: var(--btn); background: var(--btn); color: var(--btn-ink); }
 .sbadge.hid { visibility: hidden; }
 #sBar { position: absolute; left: 0; right: 0; top: 54px; height: 8px; display: flex; gap: 3px; }
 .sseg { flex: 1; min-width: 0; padding: 0; border: 0; border-radius: 4px; background: var(--rule); position: relative; overflow: hidden; cursor: pointer; }
@@ -235,7 +235,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .sseg.on i { position: absolute; left: 0; top: 0; bottom: 0; width: 100%; background: var(--ink); }
 #sDates { position: absolute; left: 0; right: 0; top: 68px; height: 16px; font-size: 11px; color: var(--ink-3); }
 #sDates span { position: absolute; white-space: nowrap; } #sDates span.on { color: var(--ink); font-weight: 700; }
-#sOut { position: absolute; right: 14px; top: 30px; height: 48px; display: flex; align-items: center; gap: 8px; padding: 0 18px; border: 1px solid var(--ink); border-radius: 24px; background: #fff; font: 500 14px var(--sans); white-space: nowrap; }
+#sOut { position: absolute; right: 14px; top: 30px; height: 48px; display: flex; align-items: center; gap: 8px; padding: 0 18px; border: 1px solid var(--ink); border-radius: 24px; background: var(--surf); font: 500 14px var(--sans); white-space: nowrap; }
 #sOut:hover { background: var(--chip); }
 #sOut svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 1.8; }
 #app[data-story] #viewSeg { bottom: 186px; }
@@ -251,13 +251,13 @@ button { font: inherit; color: inherit; cursor: pointer; }
 
 /* the Earth's moments, as a side pane like World history's Stories pane: a mark for how far each has been read, its name and dates,
    and here a picture too */
-#mlist { display: none; position: absolute; z-index: 4; left: 24px; top: 88px; width: 400px; max-width: calc(100vw - 48px); max-height: calc(100% - 88px - 164px); overflow-y: auto; flex-direction: column; gap: 14px; padding: 24px; border: 1px solid var(--ink); border-radius: 14px; background: #fff; box-shadow: var(--shadow); }
+#mlist { display: none; position: absolute; z-index: 4; left: 24px; top: 88px; width: 400px; max-width: calc(100vw - 48px); max-height: calc(100% - 88px - 164px); overflow-y: auto; flex-direction: column; gap: 14px; padding: 24px; border: 1px solid var(--ink); border-radius: 14px; background: var(--surf); box-shadow: var(--shadow); }
 #app[data-list] #mlist { display: flex; } #app[data-list] #card { display: none; }
 .chead { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 28px; }
 .chead h1 { margin: 0; font: 800 28px/1.1 var(--display); }
 .chead .count { font-size: 13px; color: var(--ink-3); white-space: nowrap; }
 .mtab { display: flex; height: 44px; padding: 3px; border-radius: 22px; background: var(--chip); }
-.mtab span { flex: 1; display: flex; align-items: center; justify-content: center; gap: 4px; white-space: nowrap; border-radius: 19px; background: var(--ink); color: #fff; font: 600 13.5px var(--sans); } .mtab i { font-style: normal; }
+.mtab span { flex: 1; display: flex; align-items: center; justify-content: center; gap: 4px; white-space: nowrap; border-radius: 19px; background: var(--btn); color: var(--btn-ink); font: 600 13.5px var(--sans); } .mtab i { font-style: normal; }
 .erows { display: flex; flex-direction: column; margin: 0 -12px; }
 .erow { display: flex; align-items: center; gap: 12px; padding: 8px 12px; border: 0; border-radius: 8px; background: none; text-align: left; color: var(--ink); }
 .erow:hover { background: var(--chip); }
@@ -270,7 +270,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .mark.done { background: var(--ink); border-color: var(--ink); }
 .mark.done::after { content: ""; position: absolute; left: 5px; top: 2px; width: 5px; height: 9px; border: solid #fff; border-width: 0 2px 2px 0; transform: rotate(45deg); }
 .mark.doing { border-color: transparent; background: conic-gradient(var(--hot) calc(var(--p, .12) * 1turn), var(--rule-2) 0); }
-.mark.doing::after { content: ""; position: absolute; inset: 2px; border-radius: 50%; background: #fff; }
+.mark.doing::after { content: ""; position: absolute; inset: 2px; border-radius: 50%; background: var(--surf); }
 .erow:hover .mark.doing::after { background: var(--chip); }
 /* a moment's card: the way back to the list, as in World history */
 .back { display: inline-flex; align-items: center; gap: 6px; height: 36px; margin: -4px 0 -4px -8px; padding: 0 8px; border: 0; border-radius: 18px; background: none; font: 500 14px var(--sans); color: var(--ink); }

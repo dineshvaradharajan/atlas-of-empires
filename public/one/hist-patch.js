@@ -7,6 +7,12 @@
       its group (Tech, Culture ...). */
 (() => {
   if (window.top === window) return; // World history opened on its own (/world): nothing to change
+  // The page that frames this one has two looks (one/theme.js). "midnight" is World history's own dark theme; "sage" is given here:
+  // the same grey-green surfaces, and a map whose sea is the page's colour. Set before app.js reads the theme for the map.
+  try { const look = parent.document.documentElement.dataset.theme; if (look === "midnight") document.documentElement.dataset.theme = "dark"; else if (look === "sage") document.documentElement.dataset.theme = "sage"; } catch (e) {}
+  { const st = document.createElement("style"); st.textContent = `:root[data-theme="sage"] { --bg: #fbfdfb; --ink: #15211b; --ink-2: #2a3a31; --ink-3: #586860; --rule: #d9e3dc; --rule-2: #c3cfc7; --rule-strong: #15211b;
+      --kick: #c2482e; --chip: #e4ece6; --ocean: #f1f5f2; --grat: #e3ebe5; --unknown: #dce5de; --peoples-bg: #e5ece6; --peoples-line: #d2ddd5;
+      --other-1: #c9d4cc; --other-2: #bfcbc2; --other-3: #d1dbd3; --border: #f1f5f2; --label-soft: #44524a; }`; document.head.appendChild(st); }
   const get = HTMLCanvasElement.prototype.getContext;
   HTMLCanvasElement.prototype.getContext = function (type, opts) { return get.call(this, type, /webgl/.test(type) ? Object.assign({}, opts, { preserveDrawingBuffer: true }) : opts); };
 
