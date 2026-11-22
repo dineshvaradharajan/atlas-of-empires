@@ -1889,7 +1889,7 @@ function drawLabels() {
     let size = S.war ? Math.max(9, Math.min(r / 8, 12)) : Math.max(10, Math.min(r / 7.5, strong ? 16 : 12.5));
     if (an && Math.abs(an.size - size) < 1.5) size = an.size; // no small size changes from year to year
     const setFont = (sz) => {
-      ctx.font = culture ? `italic 500 ${sz}px Inter, sans-serif` : `${strong && !S.war ? 800 : 600} ${sz}px Archivo, "Helvetica Neue", sans-serif`;
+      ctx.font = culture ? `italic 500 ${sz}px Inter, sans-serif` : `${strong && !S.war ? 800 : 600} ${sz}px "Bricolage Grotesque", "Helvetica Neue", sans-serif`;
       ctx.letterSpacing = culture ? "0px" : `${(sz * (S.war ? 0.14 : 0.05)).toFixed(1)}px`;
     };
     const layout = () => { // the narrower of one line and the best two-line split, at the current font
@@ -2679,7 +2679,7 @@ function sourcesHTML() { // the About page (#about; #sources still opens it)
     <h3 class="sec">Software and fonts</h3>
     <ol class="sources-list">
       <li>${L("https://d3js.org/", "D3.js")} by Mike Bostock (ISC) and ${L("https://github.com/mapbox/earcut", "earcut")} by Mapbox (ISC).</li>
-      <li>${L("https://fonts.google.com/specimen/Archivo", "Archivo")} (Omnibus-Type) and ${L("https://rsms.me/inter/", "Inter")} (Rasmus Andersson), both SIL Open Font License, via Google Fonts.</li>
+      <li>${L("https://fonts.google.com/specimen/Bricolage+Grotesque", "Bricolage Grotesque")} (Mathieu Triay) and ${L("https://rsms.me/inter/", "Inter")} (Rasmus Andersson), both SIL Open Font License, served from this site.</li>
       <li>Data prepared with Python and ${L("https://ffmpeg.org/", "FFmpeg")}; hosted on Cloudflare Pages. Built with the help of Claude (Anthropic).</li>
     </ol>
 
@@ -3971,7 +3971,7 @@ function drawListPins() {
   for (const { p, x, y } of order) {
     const isHot = p.id === hot;
     if (isHot && cardsShown) continue;
-    ctx.font = isHot ? '800 13px Archivo, "Helvetica Neue", sans-serif' : '600 11.5px Inter, sans-serif';
+    ctx.font = isHot ? '800 13px "Bricolage Grotesque", "Helvetica Neue", sans-serif' : '600 11.5px Inter, sans-serif';
     const text = isHot ? `${p.name} · ${p.when}` : p.name, w = ctx.measureText(text).width;
     let box = [x + 8, y - 8, x + 14 + w, y + 8], tx = x + 10;
     if (box[2] > S.width - 4) { box = [x - 14 - w, y - 8, x - 8, y + 8]; tx = x - 10 - w; }
@@ -4833,7 +4833,7 @@ function setupUI() {
 }
 function openAbout() { leaveStories(); S.from = null; S.view = "sources"; renderCol(true); writeHash(); }
 
-Promise.all([document.fonts.load("900 40px Archivo"), document.fonts.load("600 14px Archivo"), document.fonts.load("400 14px Inter")])
+Promise.all([document.fonts.load('800 40px "Bricolage Grotesque"'), document.fonts.load('600 14px "Bricolage Grotesque"'), document.fonts.load("400 14px Inter")])
   .catch(() => {}).finally(() => init().catch((e) => {
     console.error(e);
     $("#loading").textContent = "Could not load the map. Please reload the page.";

@@ -1,7 +1,7 @@
 /* The World Atlas: the plain reading pages (/empires/, /wars/, …) written by tools/seo.py. Same type and colours as the map. */
 :root {
   --bg: #ffffff; --ink: #111111; --ink-2: #2b2b28; --ink-3: #6b6b66; --rule: #e6e6e1; --kick: #c8321e; --chip: #f0f0ec;
-  --display: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  --display: "Bricolage Grotesque", "Helvetica Neue", Arial, sans-serif;
   --sans: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
   color-scheme: light dark;
 }

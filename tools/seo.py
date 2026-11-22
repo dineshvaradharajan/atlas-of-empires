@@ -830,7 +830,7 @@ def main():
     ])
     body += '<h3>Software and fonts</h3>' + ol([
         L("https://d3js.org/", "D3.js") + " by Mike Bostock (ISC) and " + L("https://github.com/mapbox/earcut", "earcut") + " by Mapbox (ISC).",
-        L("https://fonts.google.com/specimen/Archivo", "Archivo") + " (Omnibus-Type) and " + L("https://rsms.me/inter/", "Inter") + " (Rasmus Andersson), both SIL Open Font License, via Google Fonts.",
+        L("https://fonts.google.com/specimen/Bricolage+Grotesque", "Bricolage Grotesque") + " (Mathieu Triay) and " + L("https://rsms.me/inter/", "Inter") + " (Rasmus Andersson), both SIL Open Font License, served from this site.",
         "Data prepared with Python and " + L("https://ffmpeg.org/", "FFmpeg") + "; hosted on Cloudflare Pages. Built with the help of Claude (Anthropic).",
     ])
     body += ('<h3>Licence</h3><p>The atlas\'s code and its own writing are released under the '
