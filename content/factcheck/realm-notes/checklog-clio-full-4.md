@@ -1,0 +1,129 @@
+# Check log: Cliopatria realm notes, batch 4 (full source check)
+
+- [Taifa of Algeciras] verified — https://en.wikipedia.org/wiki/Taifa_of_Algeciras
+- [Taifa of Seville] verified — https://en.wikipedia.org/wiki/Taifa_of_Seville
+- [Norman Italy] verified — https://en.wikipedia.org/wiki/Norman_conquest_of_southern_Italy
+- [County of Pallars Jussà] corrected: "c. 1040-1191, the lower half... Its seat was Tremp, and it lay along the frontier" → "created in 1011... in 1192 its last countess handed it to the Crown of Aragon"; capital Tremp → Segur — Tremp is the modern comarca seat; the county's capital was Segur — https://en.wikipedia.org/wiki/County_of_Pallars_Juss%C3%A0
+- [County of Pallars Sobirà] corrected: "Its seat was Sort" → removed; added 1011 division, Comminges c. 1199, end 1487; capital Sort removed — Sort is the modern comarca seat, no medieval capital in source — https://en.wikipedia.org/wiki/County_of_Pallars_Sobir%C3%A0
+- [Taifa of Ronda] verified — https://en.wikipedia.org/wiki/Taifa_of_Ronda
+- [Taifa of Silves] verified — https://en.wikipedia.org/wiki/Taifa_of_Silves
+- [Takrur] verified text; capital "Morfil" removed — Morfil (Île à Morphil) is a floodplain island region, the article names no capital town — https://en.wikipedia.org/wiki/Takrur
+- [Kediri Kingdom] corrected: "c. 1045-1222" → "c. 1042-1222"; capital "Kediri" → "Daha (near modern Kediri)" — article dates and capital Dahanapura/Daha — https://en.wikipedia.org/wiki/Kediri_kingdom
+- [Eastern Ganga Kingdom] verified text; capital added "Kalinganagara; later Kataka (Cuttack)" — https://en.wikipedia.org/wiki/Eastern_Ganga_dynasty
+- [Great Principality of Duklja] verified — https://en.wikipedia.org/wiki/Duklja
+- [Halych-Volhynia occupation] verified — https://en.wikipedia.org/wiki/Kingdom_of_Galicia%E2%80%93Volhynia
+- [Principality of Chernigov] corrected: "For a time only Kiev outranked it, until the Mongols struck in 1239" → "For a time it ranked second only to Kiev, and its princes came from the line of Sviatoslav" — Mongol date not in source; rank not said to last until 1239 — https://en.wikipedia.org/wiki/Principality_of_Chernigov
+- [Principality of Pereyaslavl] corrected: "bore the brunt of nomad raids until the Mongols overran it c. 1239" → "stretched east toward the steppe of the nomad Cumans... sacked its capital in March 1239" — "brunt of raids" unsupported; source gives exact date — https://en.wikipedia.org/wiki/Principality_of_Pereyaslavl
+- [Principality of Polotsky] corrected: "stayed under its own branch of princes, separate from Kiev, for a long time" → "often defied Kiev, was strongest under Prince Vseslav (1044-1101), and from 1240 fell under Lithuanian overlordship"; capital Polotsk added — https://en.wikipedia.org/wiki/Polotsk
+- [Principality of Rostov-Suzdal] corrected: "among forests between the Volga and Oka rivers... moved its centre to Suzdal" → "in today's central Russia... moved its capital from Rostov to Suzdal in 1125... to Vladimir in 1157" — geography detail not in source; added sourced dates — https://en.wikipedia.org/wiki/Vladimir-Suzdal
+- [Principality of Volhynia] verified — https://en.wikipedia.org/wiki/Principality_of_Volhynia
+- [Sulayhid Dynasty] verified text; capital added "Sanaa; later Jibla" — https://en.wikipedia.org/wiki/Sulayhid_dynasty
+- [Zirid dynasty] verified — https://en.wikipedia.org/wiki/Zirid_dynasty
+- [Najahid Dynasty] verified — https://en.wikipedia.org/wiki/Najahid_dynasty
+- [Taifa of Ceuta] verified (dates from Wikidata; article puts Almoravid conquest of the area 1078-79) — https://en.wikipedia.org/wiki/Taifa_of_Ceuta
+- [Kingdom of Duklja] verified — https://en.wikipedia.org/wiki/Duklja
+- [Kingdom of Polonnaruwa] corrected: "united the island from about 1070... built grand works and sent his armies overseas" → "spread across the island after the Cholas were driven out around 1070. Under Parakramabahu the Great it unified the island and fought campaigns in southern India and Burma" — article says unification came under Parakramabahu; "grand works" cut — https://en.wikipedia.org/wiki/Kingdom_of_Polonnaruwa
+- [Norse Greenland] corrected: "on the southwest and east coasts... founded around 985" → "on Greenland's southwest coast, founded in the late 10th century" — both settlements were on the west/southwest coast; article gives no exact year — https://en.wikipedia.org/wiki/Norse_colonization_of_North_America
+- [Sena Dynasty] corrected: "it ended with Turkic conquests early in the 13th century" → "c. 1203-04 the Ghurid general Bakhtiyar Khalji seized its capital, though Sena kings held on in eastern Bengal" — article says successors kept independence in the south and east — https://en.wikipedia.org/wiki/Sena_dynasty
+- [Uyunid Emirate] corrected: "c. 1076-1238... later replaced by the Usfurids" → "in 1077-78... fell to the Usfurids in 1253" — article dates — https://en.wikipedia.org/wiki/Uyunid_dynasty
+- [Gahadavala Dynasty] verified text; capital added "Banaras (Varanasi)" — https://en.wikipedia.org/wiki/Gahadavala_dynasty
+- [Principality of Terebovlia] verified text; capital added "Terebovlia" — https://en.wikipedia.org/wiki/Principality_of_Terebovlia
+- [Zurayid dynasty] corrected: "who grew rich on the port's sea trade... allied with the Fatimids and were destroyed" → "at first as tributaries of the Sulayhids... loyal to the Fatimid caliphs... the Ayyubids took their lands and executed them" — trade wealth not in source — https://en.wikipedia.org/wiki/Zurayid_dynasty
+- [Grand Principality of Serbia] verified — https://en.wikipedia.org/wiki/Grand_Principality_of_Serbia
+- [Northern Fujiwara] corrected: "famed for the gilded Chūson-ji temple" → "built temples such as Chūson-ji at their seat"; added gold and horses — gilding not in source — https://en.wikipedia.org/wiki/Northern_Fujiwara
+- [Principality of Ryazan] corrected: "on the Oka River" → removed; added wars with Vladimir — river not in source — https://en.wikipedia.org/wiki/Principality_of_Ryazan
+- [Kingdom of Jerusalem] verified text; capital "Jerusalem" → "Jerusalem; later Acre" — Acre was capital from 1192 — https://en.wikipedia.org/wiki/Kingdom_of_Jerusalem
+- [Principality of Antioch] verified — https://en.wikipedia.org/wiki/Principality_of_Antioch
+- [Kauaʻi chiefdoms] corrected: "northernmost main Hawaiian island... finally agreed to join his kingdom in 1810" → "one of the main Hawaiian Islands... in 1810 agreed to become his vassal, with the island to pass to Hawaii on his death" — 1810 deal was vassalage plus cession at death — https://en.wikipedia.org/wiki/Kaua%CA%BBi
+- [Marquesan chiefdoms] corrected: "many valley chiefdoms... skilled navigators... France took control in the early 1840s" → "settled by Polynesian voyagers around the 10th century... carvers famed for wooden ancestor figures; France claimed the islands in 1842" — https://en.wikipedia.org/wiki/Marquesas_Islands
+- [Tuamotu and Mangareva chiefdoms] corrected: "Mangareva, a volcanic island... Atoll peoples lived by fishing and pearl shells... until French control" → "the world's largest chain of coral atolls... within the sphere of Tahiti's Pōmare dynasty until France claimed them in the 19th century" — way-of-life claims unsupported — https://en.wikipedia.org/wiki/Tuamotus
+- [Principality of Drutsk] verified — https://en.wikipedia.org/wiki/Principality_of_Drutsk
+- [Principality of Koknese] corrected: "conquered by Bishop Albert of Riga's crusaders in 1206" → "Vetseke rebelled against Bishop Albert... by 1209 the crusading Brothers of the Sword held it" — article chronology — https://en.wikipedia.org/wiki/Principality_of_Koknese
+- [Principality of Minsk] verified — https://en.wikipedia.org/wiki/Principality_of_Minsk
+- [Duchy of Greater Poland] corrected: "stayed Piast-ruled until reunited" → "divided and reunited more than once before being absorbed" — Wenceslaus of Bohemia held it before 1305 — https://en.wikipedia.org/wiki/Duchy_of_Greater_Poland
+- [Duchy of Masovia] verified — https://en.wikipedia.org/wiki/Duchy_of_Masovia
+- [Duchy of Sandomierz] verified — https://en.wikipedia.org/wiki/Duchy_of_Sandomierz
+- [Duchy of Silesia] verified — https://en.wikipedia.org/wiki/Duchy_of_Silesia
+- [Duchy of Łęczyca] corrected: "a minor holding of the Piast princes; the town later gave its name to a voivodeship" → "a separate Piast land... Władysław the Short later reunited it with Poland as the Łęczyca Voivodeship" — https://en.wikipedia.org/wiki/%C5%81%C4%99czyca_Voivodeship
+- [Kingdom of Navarre] corrected: "Spain conquered its southern part in 1512, while the northern part, Lower Navarre, remained French" → "After a union with Aragon ended in 1134 it had its own kings, then passed to the counts of Champagne and was joined to France in 1285-1328" — Lower Navarre was not French in 1512; refocused on map years 1139-1428 — https://en.wikipedia.org/wiki/Kingdom_of_Navarre
+- [Kingdom of Sicily] corrected: "later passed to Hohenstaufen, Angevin and Aragonese rulers, and lasted in some form until 1816" → adds 1282 Vespers split; capital "Palermo; later Naples" → "Palermo" — Naples was capital of the separate mainland kingdom — https://en.wikipedia.org/wiki/Kingdom_of_Sicily
+- [Sultanate of Kedah] corrected: "A Malay Muslim state... one of its oldest... now one of the Malaysian states with its own sultan" → "Its annals date the first sultan to 1136, though historians doubt this and Kedah may have stayed Hindu-Buddhist until the 15th century" — https://en.wikipedia.org/wiki/Kedah_Sultanate
+- [Principality of Halych] corrected: "in the Carpathian foothills... Established in the 1120s, it merged with Volhynia" → "ruled from Halych, first recorded as a princely seat around 1124... in 1199 Roman the Great joined it with Volhynia" — Carpathian detail not in source — https://en.wikipedia.org/wiki/Principality_of_Galicia
+- [Taifa of Córdoba] corrected: note described only the 1031-1070 taifa, but map years are 1147-1249 → keeps the sourced 1031-1070 facts and says the entry covers the Córdoba area after Almoravid rule broke down in the 1140s; "It was a small city-state" kept as general — DOUBTFUL map entry — https://en.wikipedia.org/wiki/Taifa_of_C%C3%B3rdoba
+- [Taifa of Tejada] verified text; capital "Paterna del Campo" → "Tejada" — article centres the taifa on the town of Tejada — https://en.wikipedia.org/wiki/Taifa_of_Tejada
+- [Kingdom of Africa] verified — https://en.wikipedia.org/wiki/Kingdom_of_Africa
+- [Puebloans - Aztec Regional System] corrected: "These farmers built stone pueblos and great houses before the region was gradually abandoned" → "built in the 12th and 13th centuries. American settlers later named the site after the Aztecs by mistake" — https://en.wikipedia.org/wiki/Aztec_Ruins_National_Monument
+- [Sultanate of the Maldives] verified — https://en.wikipedia.org/wiki/Sultanate_of_the_Maldive_Islands
+- [Crown of Aragon] corrected: "also held other crowns such as Valencia and Barcelona... dominated the western Mediterranean" → "also Count of Barcelona and later King of Valencia... built a sea empire including the Balearics, Sardinia, Sicily and southern Italy" — Barcelona was a county — https://en.wikipedia.org/wiki/Crown_of_Aragon
+- [Duchy of Wrocław] verified — https://en.wikipedia.org/wiki/Duchy_of_Silesia
+- [Kingdom of Powys Wenwynwyn] corrected: "Its seat was around Welshpool" → "lost its old royal seat at Mathrafal in 1212"; capital "Welshpool" → "Mathrafal; later Welshpool" — Welshpool became capital only in 1215, after the map years — https://en.wikipedia.org/wiki/Southern_Powys_(medieval)
+- [Mahdids] verified (map years 1169-1506 run far past the dynasty's 1159-1174; note kept to the sourced dynasty) — https://en.wikipedia.org/wiki/Mahdids
+- [Nabhani Dynasty] corrected: "from Bahla" → "from interior strongholds such as Nizwa and Bahla" — seat moved between Nizwa, Bahla and Maqniyat — https://en.wikipedia.org/wiki/Nabhani_dynasty
+- [Duchy of Opole] corrected: "formed in the 1170s... lasted until 1532" → "created in 1172 for Duke Jarosław... its Piast line died out in 1532" — the duchy itself continued under Bohemia — https://en.wikipedia.org/wiki/Duchy_of_Opole
+- [Kakatiya Dynasty] verified — https://en.wikipedia.org/wiki/Kakatiya_dynasty
+- [Banate of Bosnia] verified (capital Bobovac from Wikidata) — https://en.wikipedia.org/wiki/Banate_of_Bosnia
+- [County of Boulogne] verified — https://en.wikipedia.org/wiki/County_of_Boulogne
+- [Duchy of Kuyavia] corrected: "around Inowrocław, created during the fragmentation... ruled by Piast princes" → "once centred on Kruszwica... attached to Masovia, and in 1233 it became a separate Piast duchy"; capital Inowrocław removed — the duchy and its Inowrocław seat date from after the map years (1188-1205) — https://en.wikipedia.org/wiki/Duchy_of_Kuyavia
+- [Principality of Turov and Pinsk] corrected: "in the Pripet marshes" → removed; added Galicia-Volhynia and Lithuania — marsh detail not in source — https://en.wikipedia.org/wiki/Principality_of_Turov
+- [Yadava Dynasty] verified — https://en.wikipedia.org/wiki/Seuna_dynasty
+- [Kingdom of Cyprus] verified — https://en.wikipedia.org/wiki/Kingdom_of_Cyprus
+- [Austral Islands chiefdoms] verified — https://en.wikipedia.org/wiki/Austral_Islands
+- [Cook Islands chiefdoms] corrected: "hereditary chiefs (ariki). Britain took them under its wing late in the 19th century" → "paramount chiefs called ariki. Britain declared a protectorate in 1888..." — https://en.wikipedia.org/wiki/History_of_the_Cook_Islands
+- [(Kingdom of Bohemia)] verified — https://en.wikipedia.org/wiki/Kingdom_of_Bohemia
+- [Livonian Brothers of the Sword] corrected: "crushing defeat by Lithuanians at Saule in 1236, it was merged into" → "by Samogitians and Semigallians... its survivors were taken into" — https://en.wikipedia.org/wiki/Livonian_Brothers_of_the_Sword
+- [Principality of Galicia-Volhynia] verified — https://en.wikipedia.org/wiki/Kingdom_of_Galicia%E2%80%93Volhynia
+- [Sosso Empire] corrected: "defeated by Sundiata of Mali around 1235" → "defeated by Sundiata Keita of the rising Mali Empire"; capital "Koulikoro" → "Sosso" — article gives no date; Koulikoro is the modern region, the capital was the town of Sosso — https://en.wikipedia.org/wiki/Sosso_Empire
+- [County of Armagnac] corrected: "with Auch as its capital. The title of count of Armagnac dates from 960, and the family became a powerful house in French politics" → "split off as a separate county in 960... one of the three great lordships of the French south, adding Rodez..." (capital Auch kept from Wikidata, but DOUBTFUL for the medieval counts) — https://en.wikipedia.org/wiki/County_of_Armagnac
+- [County of Auvergne] corrected: "ruled by its own counts until the French crown took it over in the late Middle Ages" → "Philip II joined most of it to the royal lands... remnant around Vic-le-Comte... passed to the crown only in the 16th century" — https://en.wikipedia.org/wiki/Auvergne
+- [County of Poitou] corrected: "the English crown and Plantagenets fought over it" → "seized by Philip II of France in 1205, and Henry III of England failed to win it back" — https://en.wikipedia.org/wiki/County_of_Poitou
+- [County of Périgord] verified text; capital added "Périgueux" — https://en.wikipedia.org/wiki/County_of_P%C3%A9rigord
+- [Domain of Rhodes] corrected: "It was in local Greek hands after 1204, before the Hospitallers took it in 1310" → "independent domain under Leo Gabalas and his brother John. Genoa seized it in 1248-1250, and the Empire of Nicaea then made it one of its provinces" — fitted to map years 1206-1249 — https://en.wikipedia.org/wiki/Rhodes
+- [Duchy of Athens] corrected: "then Florentines" → "then the Italian Acciaioli family"; "took Athens" → "conquered it" — https://en.wikipedia.org/wiki/Duchy_of_Athens
+- [Empire of Trebizond] verified — https://en.wikipedia.org/wiki/Empire_of_Trebizond
+- [Kingdom of Thessalonica] corrected: "Epirus conquered it c. 1224" → "the Despotate of Epirus conquered it in 1224" — https://en.wikipedia.org/wiki/Kingdom_of_Thessalonica
+- [Latin Empire] corrected: "when Michael VIII took the city" → "when the Nicaean forces of Michael VIII Palaiologos retook the city" — https://en.wikipedia.org/wiki/Latin_Empire
+- [Nicaean Empire] verified — https://en.wikipedia.org/wiki/Empire_of_Nicaea
+- [Principality of Achaea] verified — https://en.wikipedia.org/wiki/Principality_of_Achaea
+- [Duchy of Kalisz] verified — https://en.wikipedia.org/wiki/Duchy_of_Kalisz
+- [Duchy of the Archipelago] verified — https://en.wikipedia.org/wiki/Duchy_of_the_Archipelago
+- [Pandya Empire] corrected: "shown here in its second empire, the 13th-14th centuries" → "In the 13th century, the period shown here, it entered a golden age, and Marco Polo visited the kingdom in 1288 and 1293" — "second empire" not the source's term — https://en.wikipedia.org/wiki/Pandya_dynasty
+- [County of Foix] corrected: "in the Pyrenees foothills... later became a French province" → "ruled by counts from their castle above the town of Foix... after gaining Béarn in 1290 they mostly lived there" — https://en.wikipedia.org/wiki/County_of_Foix
+- [Empire of Thessalonica] corrected: "c. 1224-1246, ruled by Theodore... his state fell to Nicaea" → "1224-1246, founded by Theodore... after his defeat by Bulgaria in 1230 it shrank... gave up the imperial title in 1242, and Nicaea annexed the city in 1246" — Theodore did not rule it in the map years 1236-1249 — https://en.wikipedia.org/wiki/Empire_of_Thessalonica
+- [Rasulid Dynasty] verified (capital Taiz from Wikidata) — https://en.wikipedia.org/wiki/Rasulid_dynasty
+- [Teutonic Order] verified — https://en.wikipedia.org/wiki/Teutonic_Order
+- [Zayyanid dynasty] verified — https://en.wikipedia.org/wiki/Zayyanid_dynasty
+- [Emirate of Granada] verified — https://en.wikipedia.org/wiki/Emirate_of_Granada
+- [Sukhothai Kingdom] corrected: "often seen as an early Thai state... it was absorbed in 1438" → "after a revolt against Khmer-dominated overlords. It was largest under Ram Khamhaeng (1279-1298) and fell under neighbouring Ayutthaya's sway in 1438" — https://en.wikipedia.org/wiki/Sukhothai_Kingdom
+- [Capetian House of Anjou] verified — https://en.wikipedia.org/wiki/Capetian_House_of_Anjou
+- [Duchy of Głogów] verified — https://en.wikipedia.org/wiki/Duchy_of_G%C5%82og%C3%B3w
+- [Marinid Sultanate] verified — https://en.wikipedia.org/wiki/Marinid_dynasty
+- [County of Brabant] corrected: "A fief... around Brussels, between the Dender and Zenne rivers. It later became a duchy and the core of Belgium's Brabant" → "The Duchy of Brabant... created in 1183 from the small Landgraviate... gained Limburg after Worringen in 1288... passed to Philip the Good of Burgundy in 1430" — linked article is the landgraviate (1085-1183), but the map years 1260-1430 are the duchy — https://en.wikipedia.org/wiki/Duchy_of_Brabant
+- [County of Holland] verified — https://en.wikipedia.org/wiki/County_of_Holland
+- [County of Savoy] corrected: "and the house later united Italy" → "made Chambéry their capital after 1220, gained Nice in 1388" — Italian unification not in source and far past map years — https://en.wikipedia.org/wiki/County_of_Savoy
+- [Dauphiné] verified — https://en.wikipedia.org/wiki/Dauphin%C3%A9
+- [Duchy of Bavaria] verified — https://en.wikipedia.org/wiki/Duchy_of_Bavaria
+- [House of Ascania] corrected: "with its home in the Harz area... Its lands are shown here c. 1260-1486, and they ruled Brandenburg for a time" → "ancestral seats in the Anhalt region... Albert the Bear... branches ruled Brandenburg, Anhalt and Saxe-Wittenberg, whose dukes became electors in 1356" — https://en.wikipedia.org/wiki/House_of_Ascania
+- [House of Habsburg] corrected: "It rose in the 13th century and ruled the Holy Roman Empire, Austria, Spain and its empire for centuries" → "Rudolph was elected King of the Romans in 1273 and... made his sons dukes of Austria" — fitted to map years 1260-1515 — https://en.wikipedia.org/wiki/House_of_Habsburg
+- [House of Hohenstaufen] verified — https://en.wikipedia.org/wiki/Hohenstaufen
+- [House of Luxembourg] verified — https://en.wikipedia.org/wiki/House_of_Luxembourg
+- [House of Wittelsbach] corrected: "produced two Holy Roman Emperors" → "Three of its members were elected kings or emperors of the Holy Roman Empire"; added Palatinate from 1214 (Wikidata) — https://en.wikipedia.org/wiki/House_of_Wittelsbach
+- [Margraviate of Brandenburg] verified — https://en.wikipedia.org/wiki/Margraviate_of_Brandenburg
+- [Principality of Orange] verified — https://en.wikipedia.org/wiki/Principality_of_Orange
+
+## Rewording only (to remove 7+ word runs shared with the source article; facts unchanged)
+County of Périgord, Zayyanid dynasty, Emirate of Granada, County of Holland, Dauphiné, Margraviate of Brandenburg, Principality of Orange; also re-reworded after correction: Principality of Rostov-Suzdal, Sena Dynasty, Northern Fujiwara, Kingdom of Navarre, Sosso Empire, County of Poitou, Domain of Rhodes, Kingdom of Thessalonica, Pandya Empire, County of Brabant, County of Savoy, House of Habsburg. A final script check found no 7-word overlaps with the source text in any of the 109 notes; all are 25-60 words and at most 380 characters.
+
+## Counts
+- Notes read and compared against a source: 109 (all 109 realms in batch 4; English Wikipedia plain text from clio-wp/, plus four extra Wikipedia articles fetched into w4c/: County of Pallars Jussà, County of Pallars Sobirà, Aztec Ruins National Monument, Duchy of Brabant)
+- Verified, unchanged: 44
+- Verified text, capital changed only: 8
+- Reworded only (no factual change): 6 (plus Périgord, counted above)
+- Text corrected or cut back to what the source supports: 51 (Taifa of Córdoba refocused/reduced because its map years do not match the article)
+- Capitals: 6 added (Eastern Ganga, Polotsky, Sulayhid, Gahadavala, Terebovlia, Périgord), 7 changed (Pallars Jussà, Kediri, Jerusalem, Tejada, Sicily, Powys Wenwynwyn, Sosso), 3 removed (Pallars Sobirà, Takrur, Kuyavia)
+
+## Still doubtful
+- Taifa of Córdoba: map years 1147-1249 do not match the article's taifa (1031-1070); note now states the sourced facts and says the entry covers the later period.
+- Mahdids: map years 1169-1506 run far past the dynasty (1159-1174); note kept to the sourced dynasty.
+- County of Armagnac: capital Auch comes from Wikidata (province); medieval counts' seat not given in the article.
+- Taifa of Ceuta: dates 1061-1084 come from Wikidata; the article puts the Almoravid conquest in 1078-79.
+- Banate of Bosnia (Bobovac) and Rasulid (Taiz) capitals rest on Wikidata only.

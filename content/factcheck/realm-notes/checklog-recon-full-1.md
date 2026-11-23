@@ -1,0 +1,87 @@
+# Full recon check, batch 1 (out-recon-1.json)
+Sources are English Wikipedia pages fetched via the MediaWiki API in this task. Notes already logged in checklog-recon-1-2.md were skipped.
+
+- [Licchavi kingdom of Nepal] corrected: "The Licchavi kingdom of the Kathmandu Valley in Nepal, c. 400-879 CE. It is the first Nepalese state with well-documented rulers, known from inscriptions such as those of Manadeva I. Tibet claimed overlordship in the mid-7th century, and the Thakuris followed." → "The Licchavi kingdom of the Kathmandu Valley in Nepal, c. 400-879 CE, known from inscriptions; its best-remembered kings include Manadeva and Amshuverma. Tibet claimed overlordship in the mid-7th century, and the Thakuris followed." — 'first Nepalese state with well-documented rulers' and 'Manadeva I' not on the page; page names Manadeva and Amshuverma; Tibet/Thakuri from region data — https://en.wikipedia.org/wiki/Licchavis_of_Nepal
+- [Chera kingdom (Kuda Nadu, Malabar coast)] corrected: "One of the three great Tamil kingdoms of the Sangam age, c. 300 BCE-300 CE, on the Malabar coast of Kerala. It grew rich on pepper trade with Rome; its king Senguttuvan is a famous hero of Tamil tradition." → "One of the three great Tamil kingdoms of the Sangam age, c. 300 BCE-300 CE, on the Malabar coast of Kerala. Its kings are known from Sangam poems and Graeco-Roman accounts, which attest a pepper and spice trade with Graeco-Roman merchants; Senguttuvan is among its rulers." — 'grew rich', 'Rome' and 'famous hero' not on page; page attests spice/pepper trade with Graeco-Roman merchants; Senguttuvan only in region data — https://en.wikipedia.org/wiki/Chera_dynasty
+- [Kingdom of Ceredigion] corrected: "A Welsh kingdom between the Teifi and Dyfi rivers, c. 500-730 CE, traditionally founded by Ceredig son of Cunedda. In the 8th century Seisyll ap Clydog added Ystrad Tywi, forming the kingdom of Seisyllwg." → "Ceredigion, between the Teifi and the Dyfi, traditionally founded by Ceredig son of Cunedda. Its king Seisyll ap Clydog is regarded as the founder of Seisyllwg, which joined Ceredigion with Ystrad Tywi; the kingdom ceased to exist as a separate entity around 872." — 'In the 8th century ... added' replaced: Seisyllwg page says Seisyll was king in the 7th or early 8th century and Seisyllwg was Ceredigion plus Ystrad Tywi; Ceredigion page says independence ended c. 872 — https://en.wikipedia.org/wiki/Kingdom_of_Ceredigion ; https://en.wikipedia.org/wiki/Seisyllwg
+- [Mauro-Roman Kingdom] corrected: "A Berber-Roman kingdom in western Mauretania, in modern Algeria, c. 430-578 CE. An inscription of 508 at Altava names Masuna as king of the Moors and Romans. It lasted until the defeat of its king Garmul in 578." → "A Berber-Roman kingdom in western Mauretania, in modern Algeria, c. 430-578 CE. An inscription of 508 at Altava names Masuna as king of the Moors and Romans. Some historians count the military leader Garmul, killed by the Byzantines in 578, as a later king." — 'lasted until the defeat of its king Garmul' overstated; page says some historians identify Garmul as a successor king — https://en.wikipedia.org/wiki/Mauro-Roman_Kingdom
+- [First Islamic state (Medina)] corrected: "The first Islamic state, founded by Muhammad at Medina in Arabia in 622 and lasting to his death in 632. It began with the Medina oasis under the Constitution of Medina, then grew to most of the Arabian peninsula after the conquest of Mecca in 630." → "The first Islamic state, founded by Muhammad at Medina in Arabia in 622 and lasting to his death in 632. It began with the Medina oasis under the Constitution of Medina, then grew after the conquest of Mecca in 630 to hold the Hejaz and western Najd, with looser allegiance from the rest of Arabia." — 'most of the Arabian peninsula' not on page; extent narrowed to region data — https://en.wikipedia.org/wiki/First_Islamic_state
+- [Emirate of Multan] corrected: "A Muslim emirate in southern Punjab, in present-day Pakistan, c. 855-1000, ruled from Multan. The Banu Munabbih emirs ruled first, then Isma'ili rulers from the later 10th century; Mahmud of Ghazni conquered it in 1010." → "A Muslim emirate in southern Punjab, in present-day Pakistan, c. 855-1000, ruled from Multan. The Banu Munabbih emirs ruled first, then Isma'ili rulers, who took power in the 10th century; Mahmud of Ghazni conquered it in 1010." — page dates the Isma'ili takeover 959 / 985-1010, so 'later 10th century' replaced; Ghaznavid conquest 1010 confirmed — https://en.wikipedia.org/wiki/Emirate_of_Multan
+- [Chera Perumal kingdom (Makotai)] corrected: "A kingdom of central Kerala, c. 844-1000 on this map, ruled from Mahodayapuram, today's Kodungallur. Its kings, such as Sthanu Ravi Kulasekhara, were also patrons of overseas trade; recent scholars see it as a looser state than once thought." → "A kingdom of central Kerala, c. 844-1000 on this map, ruled from Mahodayapuram, today's Kodungallur. Its kings included Sthanu Ravi Kulasekhara, and most of its revenue came from maritime spice trade; recent scholars see it as a looser state than once thought." — 'patrons of overseas trade' replaced by page's statement that most revenue came from maritime trade; Sthanu Ravi from region data — https://en.wikipedia.org/wiki/Chera_Perumals_of_Kerala
+- [Mirdasid dynasty] corrected: "An Arab dynasty of the Banu Kilab ruling the emirate of Aleppo in Syria, c. 1024-1080. Salih ibn Mirdas captured the city in 1024, and the dynasty held it more or less continuously until 1080." → "An Arab dynasty of the Banu Kilab ruling the emirate of Aleppo in Syria, c. 1024-1080 on this map. Salih ibn Mirdas founded it, and the dynasty held Aleppo more or less continuously until 1080; some dates for its start are earlier, from 1014." — page dates the emirate 1014-1080; 1024 capture only from region data — https://en.wikipedia.org/wiki/Mirdasid_dynasty
+- [Marwanids] wiki added/changed to "Marwanid dynasty (Diyar Bakr)" — 'Marwanids' is a disambiguation page — https://en.wikipedia.org/wiki/Marwanid_dynasty_(Diyar_Bakr)
+- [Mazyadid dynasty (Banu Mazyad)] wiki added/changed to "Banu Mazyad" — no wiki given; page confirms Kufa/Hit, Buyids, Hilla, Sadaqa I 1086-1108 — https://en.wikipedia.org/wiki/Banu_Mazyad
+- [Kachchhapaghatas of Gwalior] wiki added/changed to "Kachchhapaghata dynasty" — no wiki given; page confirms Chandela vassalage ended after Vidyadhara 1035 — https://en.wikipedia.org/wiki/Kachchhapaghata_dynasty
+- [Yamhad] verified — https://en.wikipedia.org/wiki/Yamhad and region data
+- [Kizzuwatna] verified — https://en.wikipedia.org/wiki/Kizzuwatna and region data
+- [Arzawa] verified — https://en.wikipedia.org/wiki/Arzawa and region data
+- [Ugarit] verified — https://en.wikipedia.org/wiki/Ugarit and region data
+- [Ammon] verified — https://en.wikipedia.org/wiki/Ammon and region data
+- [Bit Adini] verified — https://en.wikipedia.org/wiki/Bit_Adini and region data
+- [Aram-Damascus] verified — https://en.wikipedia.org/wiki/Aram-Damascus and region data
+- [Moab] verified — https://en.wikipedia.org/wiki/Moab and region data
+- [Edom] verified — https://en.wikipedia.org/wiki/Edom and region data
+- [Mannaea] verified — https://en.wikipedia.org/wiki/Mannaea and region data
+- [Irukkuvel chiefdom (Kodumbalur)] reduced to region data — no matching article; note checked against region data in in-recon-1.json only, nothing beyond it
+- [Nannan of Chenkanma (Cheyyar valley)] reduced to region data — no matching article; note checked against region data in in-recon-1.json only, nothing beyond it
+- [Nannan of Ezhimalai (Pali)] reduced to region data — no matching article; note checked against region data in in-recon-1.json only, nothing beyond it
+- [Pekan of the Avi clan (Palani hills)] reduced to region data — no matching article; note checked against region data in in-recon-1.json only, nothing beyond it
+- [Elymais] verified — https://en.wikipedia.org/wiki/Elymais and region data
+- [Characene] verified — https://en.wikipedia.org/wiki/Characene and region data
+- [Dacia under Burebista] verified — https://en.wikipedia.org/wiki/Burebista and region data
+- [Kuttanad in the country of the Aioi] reduced to region data — no matching article; note checked against region data in in-recon-1.json only, nothing beyond it
+- [Kingdom of Araba (Hatra)] verified — https://en.wikipedia.org/wiki/Hatra and region data
+- [Kongu under the Irumporai Cheras (Karuvur)] reduced to region data — no matching article; note checked against region data in in-recon-1.json only, nothing beyond it
+- [Parambu after Pari's fall] reduced to region data — no matching article; note checked against region data in in-recon-1.json only, nothing beyond it
+- [Aruva Nadu under Chola overlordship] reduced to region data — no matching article; note checked against region data in in-recon-1.json only, nothing beyond it
+- [Ikshvaku kingdom of Vijayapuri] verified — https://en.wikipedia.org/wiki/Andhra_Ikshvaku and region data
+- [Western Ganga kingdom (Gangavadi)] verified — https://en.wikipedia.org/wiki/Western_Ganga_dynasty and region data
+- [Kingdom of Dyfed] verified — https://en.wikipedia.org/wiki/Kingdom_of_Dyfed and region data
+- [Vishnukundina kingdom] verified — https://en.wikipedia.org/wiki/Vishnukundina_dynasty and region data
+- [Fortriu (northern Picts)] verified — https://en.wikipedia.org/wiki/Fortriu and region data
+- [Kindah Kingdom] verified — https://en.wikipedia.org/wiki/Kingdom_of_Kinda and region data
+- [Kingdom of the Aurès] verified — https://en.wikipedia.org/wiki/Kingdom_of_the_Aurès and region data
+- [Elmet] verified — https://en.wikipedia.org/wiki/Kingdom_of_Elmet and region data
+- [Abasgia] verified — https://en.wikipedia.org/wiki/Abasgia and region data
+- [Kalachuri kingdom of Mahishmati] verified — https://en.wikipedia.org/wiki/Kalachuris_of_Mahishmati and region data
+- [Sharabhapuriya kingdom (Dakshina Kosala)] verified — https://en.wikipedia.org/wiki/Sharabhapuriya_dynasty and region data
+- [Panduvamshi kingdom (Dakshina Kosala)] verified — https://en.wikipedia.org/wiki/Panduvamshis_of_Dakshina_Kosala and region data
+- [Shailodbhava kingdom (Kongoda)] verified — https://en.wikipedia.org/wiki/Shailodbhava_dynasty and region data
+- [Eastern Chalukya kingdom of Vengi] verified — https://en.wikipedia.org/wiki/Eastern_Chalukyas and region data
+- [Later Gupta kingdom of Magadha] verified — https://en.wikipedia.org/wiki/Later_Gupta_dynasty and region data
+- [Pictland (kingdom of Fortriu)] verified — https://en.wikipedia.org/wiki/Fortriu and region data
+- [Kingdom of Meath (Mide)] verified — https://en.wikipedia.org/wiki/Kingdom_of_Meath and region data
+- [Kingdom of Osraige (Ossory)] verified — https://en.wikipedia.org/wiki/Osraige and region data
+- [Kalachuri kingdom of Tripuri (Chedi)] verified — https://en.wikipedia.org/wiki/Kalachuris_of_Tripuri and region data
+- [Hindu Shahi kingdom] verified — https://en.wikipedia.org/wiki/Hindu_Shahis and region data
+- [Somavamshi kingdom] verified — https://en.wikipedia.org/wiki/Somavamshi_dynasty and region data
+- [Deheubarth] verified — https://en.wikipedia.org/wiki/Deheubarth and region data
+- [Ikhshidid dynasty] verified — https://en.wikipedia.org/wiki/Ikhshidid_dynasty and region data
+- [Sallarid dynasty] verified — https://en.wikipedia.org/wiki/Sallarid_dynasty and region data
+- [Shaddadids] verified — https://en.wikipedia.org/wiki/Shaddadids and region data
+- [Hasanwayhids] verified — https://en.wikipedia.org/wiki/Hasanwayhids and region data
+- [County of Luxembourg] verified — https://en.wikipedia.org/wiki/County_of_Luxembourg and region data
+- [Kingdom of Vanand (Kars)] verified — https://en.wikipedia.org/wiki/Kingdom_of_Vanand and region data
+- [County of Provence] verified — https://en.wikipedia.org/wiki/County_of_Provence and region data
+- [County of Namur] verified — https://en.wikipedia.org/wiki/County_of_Namur and region data
+- [Rawadid dynasty] verified — https://en.wikipedia.org/wiki/Rawwadid_dynasty and region data
+- [Prince-Bishopric of Liège] verified — https://en.wikipedia.org/wiki/Prince-Bishopric_of_Liège and region data
+- [Kingdom of Syunik] verified — https://en.wikipedia.org/wiki/Kingdom_of_Syunik and region data
+- [Principality of Tmutarakan] verified — https://en.wikipedia.org/wiki/Tmutarakan and region data
+- [Chera Perumal kingdom (Mahodayapuram)] verified — https://en.wikipedia.org/wiki/Chera_Perumals_of_Kerala and region data
+- [Chudasama kingdom (Sorath)] verified — https://en.wikipedia.org/wiki/Chudasama_dynasty and region data
+- [Guge kingdom] verified — https://en.wikipedia.org/wiki/Guge and region data
+- [Kalachuris of Tripuri (Chedi)] verified — https://en.wikipedia.org/wiki/Kalachuris_of_Tripuri and region data
+- [Kilwa Sultanate] verified — https://en.wikipedia.org/wiki/Kilwa_Sultanate and region data
+- [Kingdom of Breifne] verified — https://en.wikipedia.org/wiki/Kingdom_of_Breifne and region data
+- [Kingdom of Kano] verified — https://en.wikipedia.org/wiki/Kingdom_of_Kano and region data
+- [Kingdom of Maryul (Ladakh)] verified — https://en.wikipedia.org/wiki/Kingdom_of_Maryul and region data
+- [Kingdom of Mewar (Guhilas)] verified — https://en.wikipedia.org/wiki/Guhila_dynasty and region data
+- [Kakuyids] verified — https://en.wikipedia.org/wiki/Kakuyids and region data
+- [Taifa of Málaga (Hammudid)] verified — https://en.wikipedia.org/wiki/Taifa_of_Málaga and region data
+- [Chandela Kingdom (Jhansi country)] verified — https://en.wikipedia.org/wiki/Chandela_Empire and region data
+- [Kingdom of Kangra (Trigarta)] reduced to region data: "in the old land of Trigarta, in Himachal Pradesh" → "between the Beas and the Ravi" (region data) — no matching article; note checked against region data in in-recon-1.json only, nothing beyond it
+- [Tomaras of Delhi] verified — https://en.wikipedia.org/wiki/Tomaras_of_Delhi and region data
+- [Sulayhid dynasty] verified — https://en.wikipedia.org/wiki/Sulayhid_dynasty and region data
+- [Chahamanas of Naddula] verified — https://en.wikipedia.org/wiki/Chahamanas_of_Naddula and region data
+- [Duchy of Limburg] verified — https://en.wikipedia.org/wiki/Duchy_of_Limburg and region data

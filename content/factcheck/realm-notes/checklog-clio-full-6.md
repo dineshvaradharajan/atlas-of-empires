@@ -1,0 +1,114 @@
+# Checklog clio-full batch 6
+
+- [Khanate of Khiva] verified — https://en.wikipedia.org/wiki/Khanate_of_Khiva
+- [Sultanate of Bone] corrected: "adopting Islam in the early 1600s ... making Bone the leading power in the region" → "adopting Islam in 1611 ... helping to capture Makassar in 1669 ... until a Dutch military defeat in 1905" — map article (Sultan) is wrong; "leading power" unsupported — https://en.wikipedia.org/wiki/Bone_State
+- [Sultanate of Aceh] corrected: "until Dutch conquest in 1904" → "until its sultan surrendered to the Dutch in 1903" — article gives 1903 — https://en.wikipedia.org/wiki/Aceh_Sultanate
+- [Balinese Kingdom] corrected: whole-island 900s-1900s description → Gelgel kingdom (fits map 1519-1686): refugees after Majapahit, Dalem Baturenggong ruling Lombok/W. Sumbawa, break-up after 1651, Klungkung 1686; capital added "Gelgel" (article: Majapahit capital in Bali at Samprangan then Gelgel) — https://en.wikipedia.org/wiki/Bali_Kingdom
+- [Eastern Moghulistan] corrected: "Ili region ... Real power often lay with local Dughlat emirs" → Turpan/Yarkand-Kashgar oasis khans, fell to Dzungars late 1600s — Dughlat administration ended 1514, before map years — https://en.wikipedia.org/wiki/Moghulistan
+- [Golconda Sultanate] verified — https://en.wikipedia.org/wiki/Golconda_Sultanate
+- [Sasak kingdoms] reduced: "After that date Balinese rulers from neighbouring Bali took over most of the island" → Islam late 1500s-early 1600s, Gelgel attempts at domination — post-1740 Balinese takeover not in article — https://en.wikipedia.org/wiki/Sasak_people
+- [Western Moghulistan] corrected: "pressure from the Timurids" → losing pastures to Uzbeks and Kyrgyz, moving south to Tarim oases — Timurids gone by map years (1519+) — https://en.wikipedia.org/wiki/Moghulistan
+- [Sultanate of Banjar] corrected: "dominated the south coast of the island for centuries" → Banjarmasin War of 1859, abolished 1860 — "dominated" unsupported — https://en.wikipedia.org/wiki/Sultanate_of_Banjar
+- [Eastern Hungarian Kingdom] verified — https://en.wikipedia.org/wiki/Eastern_Hungarian_Kingdom
+- [Nayaks of Madurai] verified — https://en.wikipedia.org/wiki/Madurai_Nayak_dynasty
+- [Sultanate of Johor] verified — https://en.wikipedia.org/wiki/Johor_Sultanate
+- [Kalaallit (Greenland Inuit)] reduced: "ancestors came from the Arctic of Canada ... under the missionary Hans Egede" → Thule settlement c.1200-1400, hunting seals/narwhals/walruses, European resettlement 1721 — Egede not in article — https://en.wikipedia.org/wiki/Greenlandic_Inuit
+- [Hussain Shahi Dynasty] verified (Gaur as capital and Sher Shah Suri confirmed in Bengal Sultanate article) — https://en.wikipedia.org/wiki/Hussain_Shahi_dynasty
+- [Nayaks of Thanjavur] verified — https://en.wikipedia.org/wiki/Thanjavur_Nayak_kingdom
+- [Itza Mayans] reduced: "the last independent Maya state" → "stayed independent long after Spain conquered the rest of the region, finally submitting in 1697" — superlative not in article — https://en.wikipedia.org/wiki/Itza_people
+- [Sultanate of Harar] verified — https://en.wikipedia.org/wiki/Adal_Sultanate
+- [Don Cossacks] corrected: "the Don Host lasted until the Russian Revolution" → "in 1637 they captured the Ottoman fortress of Azov" — fits map years 1552-1641; frontier role reworded to article — https://en.wikipedia.org/wiki/Don_Cossacks
+- [Kingdom of Pajana] corrected: "probably the sultanate of Pajang ... absorbed by Mataram" → Pajang near Surakarta (map point 110.88E 7.43S confirms), founded by Jaka Tingkir as successor of Demak, Sutawijaya of Mataram seized palace — map wiki (Lontara script) wrong — https://en.wikipedia.org/wiki/Pajang
+- [Patani Kingdom] verified — https://en.wikipedia.org/wiki/Patani_Kingdom
+- [Principality of Transylvania] corrected: "under Ottoman overlordship from 1570 to 1711" → "from 1570 to 1711, mostly as an Ottoman vassal" — Habsburg rule from the 1690s — https://en.wikipedia.org/wiki/Principality_of_Transylvania_%281570%E2%80%931711%29
+- [Trịnh lords] verified — https://en.wikipedia.org/wiki/Tr%E1%BB%8Bnh_lords
+- [Iberian Union] verified — https://en.wikipedia.org/wiki/Iberian_Union
+- [Gorkha Kingdom] verified — https://en.wikipedia.org/wiki/Gorkha_kingdom
+- [Mataram Sultanate] corrected: "the most powerful state in Indonesia" → "one of the strongest states in the Indonesian islands" — article: one of the most powerful — https://en.wikipedia.org/wiki/Mataram_Sultanate
+- [Lan Na] verified — https://en.wikipedia.org/wiki/Lanna_Kingdom
+- [Oyo Empire] verified — https://en.wikipedia.org/wiki/Oyo_Empire
+- [Sultanate of Mempawah] corrected: "its rulers later became a sultan's house" → Opu Daeng Menambun (Bugis descent) took the throne in the 1700s and made Islam official — vague claim replaced with article facts — https://en.wikipedia.org/wiki/Mempawah_Kingdom
+- [Sultanate of Sambas] verified — https://en.wikipedia.org/wiki/Sultanate_of_Sambas
+- [Sultanate of Sukadana] corrected: "successor to the older Tanjungpura kingdom ... capital moved several times" → same kingdom renamed Sukadana when capital moved there after conversion, later moved to Matan — https://en.wikipedia.org/wiki/Tanjungpura_Kingdom
+- [Sultanate of Bima] verified — https://en.wikipedia.org/wiki/Bima_Sultanate
+- [Republic of San Marino] verified — https://en.wikipedia.org/wiki/San_Marino
+- [Kalmyk Khanate] reworded: "both raided and allied with Russia" (7-word overlap) → "were by turns allies and raiders of Russia" — https://en.wikipedia.org/wiki/Kalmyk_Khanate
+- [Kingdom of Bhutan] verified — https://en.wikipedia.org/wiki/Bhutan
+- [Catalonia] verified, reworded: "accepted Louis XIII of France as their count" → "recognised Louis XIII ... as their Count of Barcelona" (17 and 23 Jan 1641) — https://en.wikipedia.org/wiki/Reapers%27_War
+- [Irish Catholic Confederation] verified — https://en.wikipedia.org/wiki/Confederate_Ireland
+- [Principality of Monaco] verified — https://en.wikipedia.org/wiki/Monaco
+- [Kutai Kingdom] corrected: "Indonesia's oldest Hindu inscriptions, from about 400 ... later Kutai Kartanegara" → Muslim Kutai Kartanegara took over Kutai Martadipura in 1635; Sanskrit pillars late 300s — https://en.wikipedia.org/wiki/Kutai
+- [Zaporozhian Cossacks] verified — https://en.wikipedia.org/wiki/Zaporozhian_Cossacks
+- [Principality of Upper Hungary] verified — https://en.wikipedia.org/wiki/Principality_of_Upper_Hungary
+- [British Bencoolen] reduced: "in return for Malacca" → "under the Anglo-Dutch Treaty of 1824" — Malacca exchange not in article — https://en.wikipedia.org/wiki/British_Bencoolen
+- [Peoples of Vancouver Island] reduced: "fished, traded and carved cedar" → peoples' regions, Spanish ships 1770s, Cook at Nootka 1778, sea-otter fur trade — cedar carving not in article — https://en.wikipedia.org/wiki/Vancouver_Island
+- [Beylik of Tunis] verified — https://en.wikipedia.org/wiki/Beylik_of_Tunis
+- [Regency of Algiers] verified — https://en.wikipedia.org/wiki/Regency_of_Algiers
+- [Khanate of Kokand] verified — https://en.wikipedia.org/wiki/Khanate_of_Kokand
+- [Kingdom of Luang Phrabang] verified (Siamese vassalage from 1779 and 1707 split confirmed in Lan Xang article) — https://en.wikipedia.org/wiki/Luang_Prabang
+- [Kingdom of Lunda] reduced: "grew rich by trade and spread Lunda political ideas widely" → tributary chiefdoms under the Mwata Yamvo, title traditionally c.1665 — unsupported — https://en.wikipedia.org/wiki/Lunda_Empire
+- [Vientiane] verified (Anouvong's rebellion and 1827-28 destruction confirmed in Lan Xang article) — https://en.wikipedia.org/wiki/Vientiane
+- [Bamana Empire] verified — https://en.wikipedia.org/wiki/S%C3%A9gou_Empire
+- [Karamanli Dynasty] verified — https://en.wikipedia.org/wiki/Karamanli_dynasty
+- [Ainu and Nivkh peoples (Sakhalin)] verified — https://en.wikipedia.org/wiki/Sakhalin
+- [Nawabs of Bengal] verified — https://en.wikipedia.org/wiki/Nawabs_of_Bengal
+- [Principality of Liechtenstein] verified — https://en.wikipedia.org/wiki/Liechtenstein
+- [Hyderabad State] verified — https://en.wikipedia.org/wiki/Hyderabad_State
+- [Sultanate of Terengganu] verified — https://en.wikipedia.org/wiki/Sultan_of_Terengganu
+- [Duchy of Courland] verified — https://en.wikipedia.org/wiki/Duchy_of_Courland_and_Semigallia
+- [Sultan of Yogyakarta] verified (Giyanti 1755 and Mangkubumi confirmed in Surakarta Sunanate article) — https://en.wikipedia.org/wiki/Hamengkubuwono
+- [Sultanate of Selangor] corrected: "British influence grew after 1874" → British involvement began in the Klang War under Sultan Abdul Samad, first British Resident — 1874 not in article — https://en.wikipedia.org/wiki/Sultan_of_Selangor
+- [Surakarta Sunanate] verified — https://en.wikipedia.org/wiki/Surakarta_Sunanate
+- [Khanates of the Caucasus] verified — https://en.wikipedia.org/wiki/Khanates_of_the_Caucasus
+- [Corsican Republic] verified — https://en.wikipedia.org/wiki/Corsican_Republic
+- [Kuwait] reworded: "at the head of the Persian Gulf" (7-word overlap) → "at the northern tip of the Persian Gulf" — https://en.wikipedia.org/wiki/Kuwait
+- [Kingdom of Naples (Napoleonic)] verified — https://en.wikipedia.org/wiki/Kingdom_of_Naples_%28Napoleonic%29
+- [Pontianak Kadriyah Sultanate] corrected: "of Arab-Malay descent ... where two rivers meet" → "son of a Hadhrami Arab cleric ... where the Landak and Kapuas rivers meet" — article: Hadhrami; three-river junction — https://en.wikipedia.org/wiki/Pontianak_Sultanate
+- [Negeri Sembilan] verified — https://en.wikipedia.org/wiki/Negeri_Sembilan
+- [Nepal] verified — https://en.wikipedia.org/wiki/Nepal
+- [Tây Sơn dynasty] verified — https://en.wikipedia.org/wiki/T%C3%A2y_S%C6%A1n_dynasty
+- [House of Khalifa] verified — https://en.wikipedia.org/wiki/House_of_Khalifa
+- [Penang] verified — https://en.wikipedia.org/wiki/Penang
+- [Kingdom of Tahiti] verified — https://en.wikipedia.org/wiki/Kingdom_of_Tahiti
+- [Nguyễn dynasty] verified — https://en.wikipedia.org/wiki/Nguy%E1%BB%85n_dynasty
+- [Cisalpine Republic] verified — https://en.wikipedia.org/wiki/Cisalpine_Republic
+- [Grand Duchy of Tuscany] verified — https://en.wikipedia.org/wiki/Grand_Duchy_of_Tuscany
+- [Helvetic Republic] verified — https://en.wikipedia.org/wiki/Helvetic_Republic
+- [Revolutionary Roman Republic] verified — https://en.wikipedia.org/wiki/Roman_Republic_%281798%E2%80%931799%29
+- [Cispadane Republic] verified — https://en.wikipedia.org/wiki/Cispadane_Republic
+- [Septinsular Republic] verified — https://en.wikipedia.org/wiki/Septinsular_Republic
+- [Electorate of Baden] verified — https://en.wikipedia.org/wiki/Electorate_of_Baden
+- [Electorate of Hesse] verified — https://en.wikipedia.org/wiki/Electorate_of_Hesse
+- [Electorate of Salzburg] verified — https://en.wikipedia.org/wiki/Electorate_of_Salzburg
+- [Electorate of Württemberg] corrected: "Napoleon made it a kingdom in 1806" → "On 1 January 1806 its ruler took the title of king" — article wording — https://en.wikipedia.org/wiki/Electorate_of_W%C3%BCrttemberg
+- [Kingdom of Hanover] verified — https://en.wikipedia.org/wiki/Kingdom_of_Hanover
+- [Duchy of Anhalt] corrected: "ruled by the Ascanian dynasty" → branch states (Anhalt-Dessau, Anhalt-Bernburg) reunited 1863, capital Dessau — "Ascanian" not in article — https://en.wikipedia.org/wiki/Duchy_of_Anhalt
+- [Duchy of Mecklenburg] corrected: "dukes who later became grand dukes ... lasted until 1918" → 1701 split into Schwerin/Strelitz, Schwerin raised to grand duchy 1815, ruled until 1918 — https://en.wikipedia.org/wiki/Grand_Duchy_of_Mecklenburg-Schwerin
+- [Duchy of Nassau] verified — https://en.wikipedia.org/wiki/Duchy_of_Nassau
+- [Duchy of Oldenburg] corrected: "became a duchy in 1774" → "raised to a duchy in the 1770s" — article says 1777, Wikidata 1774; added 1871 German Empire — https://en.wikipedia.org/wiki/Duchy_of_Oldenburg
+- [Free City of Bremen] corrected: "independent for most of its long history ... remains a German city-state" → Free Imperial City 1646, Hanseatic, annexed by Napoleon 1811, freedom regained after 1813 (fits map 1806-1870) — https://en.wikipedia.org/wiki/History_of_Bremen
+- [Free City of Lübeck] verified — https://en.wikipedia.org/wiki/Free_City_of_L%C3%BCbeck
+- [Grand Duchy of Baden] reworded: "on the east bank of the Rhine" (overlap) → "east of the upper Rhine" — https://en.wikipedia.org/wiki/Grand_Duchy_of_Baden
+- [Grand Duchy of Hesse] verified — https://en.wikipedia.org/wiki/Grand_Duchy_of_Hesse
+- [Grand Duchy of Saxe-Weimar-Eisenach] verified — https://en.wikipedia.org/wiki/Saxe-Weimar-Eisenach
+- [Grand Duchy of Würzburg] corrected: "Archduke Ferdinand of Tuscany" → "Ferdinand, the former Grand Duke of Tuscany" — https://en.wikipedia.org/wiki/Grand_Duchy_of_W%C3%BCrzburg
+- [Kingdom of Bavaria] corrected: "second largest state in the German Empire" → "federated state of the German Empire in 1871 ... Wittelsbach monarchy ended in 1918" — article says second largest south of the Main (pre-1871) — https://en.wikipedia.org/wiki/Kingdom_of_Bavaria
+- [Kingdom of Saxony] verified — https://en.wikipedia.org/wiki/Kingdom_of_Saxony
+- [Principality of Hohenzollern-Sigmaringen] verified — https://en.wikipedia.org/wiki/Hohenzollern-Sigmaringen
+- [Principality of Lippe] verified — https://en.wikipedia.org/wiki/Principality_of_Lippe
+- [Principality of Regensberg] verified — https://en.wikipedia.org/wiki/Principality_of_Regensburg
+- [Principality of Reuss-Gera] verified — https://en.wikipedia.org/wiki/Principality_of_Reuss-Gera
+- [Principality of Waldeck and Pyrmont] verified — https://en.wikipedia.org/wiki/Principality_of_Waldeck_and_Pyrmont
+- [Saxe-Altenburg] verified — https://en.wikipedia.org/wiki/Saxe-Altenburg
+- [Confederation of the Rhine] verified — https://en.wikipedia.org/wiki/Confederation_of_the_Rhine
+- [Duchy of Warsaw] verified — https://en.wikipedia.org/wiki/Duchy_of_Warsaw
+- [Free City of Danzig] reworded: "in 1807, to 1814" → "from 1807 to 1814"; "until Germany invaded Poland in 1939" — https://en.wikipedia.org/wiki/Free_City_of_Danzig
+- [Kingdom of Westphalia] reworded: "Napoleon's brother Jérôme Bonaparte" (overlap) → "ruled by Napoleon's brother Jérôme" — https://en.wikipedia.org/wiki/Kingdom_of_Westphalia
+
+## Counts
+- Notes read: 104
+- Verified unchanged: 70
+- Corrected (facts changed or fitted to map years): 22
+- Reduced to supported content: 6
+- Reworded only, facts verified (Catalonia, Kalmyk Khanate, Kuwait, Grand Duchy of Baden, Kingdom of Westphalia, Free City of Danzig): 6
+- Capitals changed/added: 1 (Balinese Kingdom: added Gelgel); removed: 0

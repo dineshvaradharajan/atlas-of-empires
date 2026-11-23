@@ -17,6 +17,7 @@ sys.path.insert(0, os.path.join(ROOT, "tools"))
 from coast import Land, snap_occupations  # noqa: E402
 
 _land = []
+RELGROUP = re.compile(r"^\((Allegiance|Vassalage|Alliance|Personal union) ")  # Cliopatria's groupings of realms (app.js RELGROUP)
 
 
 def coast_land():  # the real coastline, read once (public/data/coast/, tools/build_detail.py)
@@ -166,7 +167,7 @@ def main():
                     seen_clio[n] = e["id"]
                     ck.append(n)
             e["clio"] = ck
-            if not ck and realms:
+            if not ck and realms and not e.get("recon"):  # recon: tied to a reconstruction layer instead (checked below)
                 problems.append(f"empire {e['id']}: no Cliopatria link")
             empires.append(e)
 
@@ -268,6 +269,38 @@ def main():
                             "regions": regions, "sources": []})
     with open(os.path.join(ROOT, "public", "data", "supplements.json"), "w") as fh:
         json.dump(supplements, fh, ensure_ascii=False, separators=(",", ":"))
+    # A profile of a state the border data lacks names the reconstruction region(s) that draw it ("recon"); the app opens it there.
+    recon_names = {rg["name"] for sup in supplements for rg in sup.get("regions", [])}
+    for e in empires:
+        for n in e.get("recon", []):
+            if n not in recon_names:
+                problems.append(f"empire {e['id']}: recon region not in content/supplements: {n!r}")
+
+    # Short notes (content/realm-notes.json) for every map state without a profile: a sentence or two and the capital,
+    # written for this atlas from Wikipedia and Wikidata. Published as public/data/realm-notes.json, fetched when a card needs one.
+    notes_src = os.path.join(ROOT, "content", "realm-notes.json")
+    notes = {}
+    if os.path.exists(notes_src):
+        for n, v in json.load(open(notes_src)).items():
+            t = (v.get("text") or "").strip()
+            if realms and n not in realms and n not in recon_names:
+                problems.append(f"realm note: not in Cliopatria or content/supplements: {n!r}")
+            elif n in seen_clio or any(n in e.get("recon", []) for e in empires):
+                pass  # has a full profile, which the card shows instead
+            elif not 40 <= len(t) <= 600:
+                problems.append(f"realm note {n!r}: text length {len(t)} (want 40-600)")
+            else:
+                notes[n] = {k: v[k] for k in ("text", "capital", "wiki", "sources") if v.get(k)}  # wiki: the article used, where the map gives none
+        with open(os.path.join(ROOT, "public", "data", "realm-notes.json"), "w") as fh:
+            json.dump(notes, fh, ensure_ascii=False, separators=(",", ":"))
+    if realms:
+        with_prof = set(seen_clio) | {n for e in empires for n in e.get("recon", [])}
+        recon_states = {rg["name"] for sup in supplements if sup.get("kind") != "cultures" for rg in sup.get("regions", [])} - set(realms)
+        for label, pool in (("Cliopatria states", [n for n in realms if not RELGROUP.match(n)]), ("reconstruction-layer states", sorted(recon_states))):
+            bare = [n for n in pool if n not in with_prof and n not in notes]
+            print(f"{label}: {len(pool)}; {sum(n in with_prof for n in pool)} with a profile, {sum(n in notes for n in pool)} with a short note, {len(bare)} with neither")
+            for n in bare[:10]:
+                problems.append(f"{label}: no description: {n!r}")
 
     # Ancient sites and monuments (content/ancient/sites-*.json): points shown while in use, with an evidence label.
     sites, sids = [], set()

@@ -1,0 +1,93 @@
+# Check log: Cliopatria realm notes, batch 1 (full source check)
+
+Every note was compared against its downloaded Wikipedia article (clio-wp/), plus Wikidata facts; a few points were confirmed with fetched pages (Sacred Band of Thebes, Numidia, Lysimachia (Thrace), Nicomedia/Nicomedes I). All 75 notes were also checked for 7+ word overlaps with the article text and for length (25-60 words, max 380 characters).
+
+- [Andamanese peoples] corrected: "especially after the British settlement of 1858" → "after sustained contact began in the late 1700s and British penal colonies were set up in the mid-1800s" — article gives 1789 and mid-19th-century penal colonies, not 1858 — https://en.wikipedia.org/wiki/Andamanese_peoples
+- [Peoples of the Bismarck Archipelago and Bougainville] reduced: "They lived in many small independent communities" → settlement 30,000+ years ago, Lapita, German annexation 1884 — community structure not in source — https://en.wikipedia.org/wiki/Bismarck_Archipelago
+- [Elam] corrected: "sacked Susa around 647 BCE and Elam faded away" → "Ashurbanipal sacked Susa in 646 BCE; a weakened Elam was later absorbed by the Persians" — article gives 646 BCE and a Neo-Elamite III phase to 539 — https://en.wikipedia.org/wiki/Elam
+- [Hyksos] verified — https://en.wikipedia.org/wiki/Hyksos
+- [First Sealand Dynasty] corrected: "stayed independent of Babylon after it fell to the Hittites ... ended around 1475 BCE" → "broke away from the Old Babylonian kingdom ... until a Kassite army from Babylon conquered the Sealand, very roughly around 1475 BCE" — article: broke free under Samsu-iluna, ended by Ulam-Buriash; dates very speculative — https://en.wikipedia.org/wiki/First_Sealand_dynasty
+- [Chamorro chiefdoms] corrected: "living in clans led by chiefs ... after Spain colonized the islands in 1668" → "organised in a caste society with a ruling upper caste ... after Spain annexed and colonized the islands in the late 1600s" — article describes a caste system; 1668 not in source — https://en.wikipedia.org/wiki/Chamorro_people
+- [Mitanni] corrected: "c. 1500-1260 BCE" → "c. 1550-1260 BCE" — article dates; capital Washukanni confirmed — https://en.wikipedia.org/wiki/Mitanni
+- [Mycenaean Greece] corrected: "destroyed or abandoned around 1200-1100 BCE" → "in waves from about 1250 BCE ... faded by c. 1050 BCE"; capital "Mycenae" removed (a network of palace-states, no single capital) — https://en.wikipedia.org/wiki/Mycenaean_Greece
+- [Philistia] verified — https://en.wikipedia.org/wiki/Philistia
+- [Greek Dark Ages] corrected: "c. 1100-800 BCE ... little writing ... grew the independent city-states, the Olympic Games and the Greek alphabet" → "c. 1180-800 BCE ... no writing ... new ways of organising society, alphabet adopted from the Phoenicians by about 800 BCE" — article dates; first Olympics (776) falls after the period — https://en.wikipedia.org/wiki/Greek_Dark_Ages
+- [Kingdom of Judah] verified — https://en.wikipedia.org/wiki/Kingdom_of_Judah
+- [Phrygia] corrected: "until the Cimmerians raided it around 700 BCE" → "until Cimmerian invaders sacked its capital Gordion around 675 BCE" — excavations date destruction c. 675 BCE — https://en.wikipedia.org/wiki/Phrygia
+- [Kingdom of Urartu] corrected: "irrigation canals" → "royal irrigation works" — wording fit to source — https://en.wikipedia.org/wiki/Urartu
+- [Sabaeans] corrected: "Its famous queen of Sheba appears in the Bible" → "A legendary queen of Sheba appears in the Bible" — article calls the account legendary — https://en.wikipedia.org/wiki/Sheba
+- [Etruscans] corrected: "famed for tombs, bronze and gold work. Their culture shaped early Rome, which gradually conquered the cities by about 265 BCE" → "rich families filled great tombs with imported luxuries ... From the late 300s BCE the expanding Roman Republic conquered their cities" — bronze/gold, influence on Rome and 265 BCE not in source — https://en.wikipedia.org/wiki/Etruscan_civilization
+- [Wey] corrected: "northern Yellow River plain ... a brother of King Wu" → "today's northeastern Henan ... Its first ruler was Kang Shu, King Wu of Zhou's younger brother" — precision from source — https://en.wikipedia.org/wiki/Wey_(state)
+- [Zheng] verified; reworded: "strong at the start of the Spring and Autumn period" → "the strongest vassal state when the Eastern Zhou began" (wording overlap with article) — https://en.wikipedia.org/wiki/Zheng_(state)
+- [Hadhramaut] verified — https://en.wikipedia.org/wiki/Hadhramaut
+- [Phoenician Colonies] reduced: "including North Africa, Sicily, Sardinia and Spain" → "reaching as far west as Spain and Morocco"; Carthage founded by settlers from Tyre — Sicily/Sardinia not in source — https://en.wikipedia.org/wiki/Colonies_in_antiquity
+- [Janapada of Anga] verified — https://en.wikipedia.org/wiki/Anga
+- [Janapada of Avanti] verified — https://en.wikipedia.org/wiki/Avanti_(region)
+- [Janapada of Cedī] corrected: "area of Bundelkhand ... appear in early Vedic literature and the epic Mahabharata" → "eastern part of Bundelkhand ... the Caidyas, already appear in the Rigveda"; capital Suktimati added from article — Mahabharata not in source — https://en.wikipedia.org/wiki/Cedi_(tribe)
+- [Janapada of Kosala] verified — https://en.wikipedia.org/wiki/Kosala
+- [Janapada of Kuru] verified (capitals Indraprastha/Hastinapura named as main Kuru cities) — https://en.wikipedia.org/wiki/Kuru_Kingdom
+- [Janapada of Kāśī] corrected: "one of the sixteen great realms and famed for its cotton cloth. It was a strong power in the early sixth century BCE before neighbouring Kosala annexed it" → "ranked among the strongest states ... Kosala conquered it for good shortly before the Buddha's lifetime, and Magadha later took it over" — cotton cloth and the dating not in source — https://en.wikipedia.org/wiki/Kashi_(kingdom)
+- [Janapada of Magadha] corrected: "ruled in turn by Haryanka, Shishunaga and Nanda kings" → "Ruled first by the Haryanka kings, it later became the heartland of the Nanda and Maurya empires" — Shishunaga not in source; fits map years 600-501 BCE — https://en.wikipedia.org/wiki/Magadha
+- [Janapada of Malla] verified — https://en.wikipedia.org/wiki/Malla_(tribe)
+- [Janapada of Matsya] reduced: "Tradition links it with the Mahabharata, where the Pandavas spend a year in hiding at its court" → Rigveda mention, kept monarchy, conquered by Magadha — Pandava episode not in source — https://en.wikipedia.org/wiki/Matsya_(tribe)
+- [Janapada of Pañcāla] verified — https://en.wikipedia.org/wiki/Panchala
+- [Janapada of Vajji] verified — https://en.wikipedia.org/wiki/Vajjika_League
+- [Janapada of Vatsa] corrected: "on the Yamuna River ... its capital Kaushambi was a busy trading city. Avanti and then Magadha overshadowed it" → "ruled from Kaushambi by a branch of the old Kuru royal line ... Avanti and later Magadha annexed it" — trading claim not in source — https://en.wikipedia.org/wiki/Vatsa
+- [Peloponnesian League] verified — https://en.wikipedia.org/wiki/Peloponnesian_League
+- [Magadha - Haryanka dynasty] verified — https://en.wikipedia.org/wiki/Haryanka_dynasty
+- [Yue] corrected: "crushed by Chu around 334 BCE" → "partitioned by Chu and Qi around 333 BCE"; added swords — article date 333 BC — https://en.wikipedia.org/wiki/Yue_(state)
+- [Zapotec Civilization] reduced: "Monte Alban was abandoned around 800 CE" → state centred on Monte Alban dominated much of Oaxaca; ball courts, tombs, early writing — abandonment date not in source — https://en.wikipedia.org/wiki/Zapotec_civilization
+- [Kanak chiefdoms] verified — https://en.wikipedia.org/wiki/Kanak_people
+- [Ni-Vanuatu chiefdoms] corrected: "They lived in small chiefdoms on separate islands, speaking over a hundred languages" → later Melanesian migrants, chiefs such as Roi Mata buried in grand tombs — language count not in source — https://en.wikipedia.org/wiki/History_of_Vanuatu
+- [Solomon Islands chiefdoms] corrected: "living in small chiefdoms and villages ... Europeans first reached them in the 1500s, and the British later made them a protectorate" → Papuan settlement 30,000+ years ago, Austronesians, Spanish 1568, British protectorate 1893, independence 1978 — social claim not in source; dates added from source — https://en.wikipedia.org/wiki/History_of_the_Solomon_Islands
+- [Odrysian Kingdom] corrected: "c. 450-338 BCE ... It was rich and traded with the Greeks. Philip II of Macedon later forced it to submit" → "founded by Teres I in the early 400s BCE ... Long an ally of Athens, it later split among rival kings, and Philip II of Macedon conquered them in 340 BCE" — article dates — https://en.wikipedia.org/wiki/Odrysian_kingdom
+- [Cimmerian Bosporus] verified (grain exports to Athens, Panticapaeum) — https://en.wikipedia.org/wiki/Bosporan_Kingdom
+- [Yuezhi] verified — https://en.wikipedia.org/wiki/Yuezhi
+- [Minaeans] corrected: "grew rich from the incense trade ... wrote in their own script, and it was eventually absorbed by neighbouring Saba" → caravan trade, towns Qarnawu and Baraqish, end still debated — absorption by Saba not in source (end disputed, perhaps 1st c. CE) — https://en.wikipedia.org/wiki/Ma%27in
+- [Sacred Band of Thebes] corrected: "briefly led all Greece ... 300 hand-picked soldiers, and Philip II destroyed the Band" → "briefly became the leading Greek power ... an elite corps of 300 soldiers, which Philip II of Macedon wiped out at Chaeronea" — https://en.wikipedia.org/wiki/Thebes,_Greece ; https://en.wikipedia.org/wiki/Sacred_Band_of_Thebes
+- [Second Athenian League] verified (378-355 BCE; no tribute or garrisons; Social War; meetings at Athens) — https://en.wikipedia.org/wiki/Second_Athenian_League
+- [Qataban] corrected: "swallowed by Hadhramaut and then Himyar" → "in the late first century CE Hadhramaut and Himyar divided its lands between them" — https://en.wikipedia.org/wiki/Qataban
+- [Kingdom of Bithynia] verified (capital Nicomedia confirmed via Nicomedes I sources) — https://en.wikipedia.org/wiki/Kingdom_of_Bithynia ; https://www.livius.org/articles/person/nicomedes-i-of-bithynia/
+- [Minyue] corrected: "It rebelled several times, and Han forces finally annexed and emptied it" → founded by Yue royals; after its king turned against the Han, Han armies conquered it and moved its people to the Yangtze region — one revolt, not several — https://en.wikipedia.org/wiki/Minyue
+- [Cyrenaica] corrected: "founded in about 630 BCE ... until Rome inherited it" → "Greeks from Thera who founded Cyrene in about 631 BCE ... Ptolemy Apion left it to Rome in 96 BCE" — article dates — https://en.wikipedia.org/wiki/Cyrenaica
+- [Kingdom of Lysimachus] verified (capital Lysimachia: Wikipedia says he "no doubt" made it his capital) — https://en.wikipedia.org/wiki/Lysimachus ; https://en.wikipedia.org/wiki/Lysimachia_(Thrace)
+- [Polyperchon] corrected: "by 316 BCE had driven him out of most of Greece" → "by 316 BCE held Macedon, leaving Polyperchon only strongholds in the Peloponnese" — he kept Corinth and Sicyon — https://en.wikipedia.org/wiki/Polyperchon
+- [Colchis] corrected: "a kingdom of Georgian-speaking tribes that traded gold and timber" → "an early Georgian state of mixed peoples that sold gold, iron, timber and honey to Greek cities" — article notes disputed, diverse ethnic makeup — https://en.wikipedia.org/wiki/Colchis
+- [Anurādhapura] corrected: "It lasted until Chola invasions around 1017 CE"; capital "Anuradhapura; later Polonnaruwa" → "Chola invaders ... sacked the city in 993 CE, and power shifted to Polonnaruwa"; capital "Anuradhapura" — article gives 993; Polonnaruwa belongs to the successor period — https://en.wikipedia.org/wiki/Anuradhapura
+- [Early Cheras] verified — https://en.wikipedia.org/wiki/Chera_dynasty
+- [Aetolian League] corrected: "lost its independence to Rome in 189 BCE" → "fought Rome alongside the Seleucids and became a Roman client state in 188 BCE" — https://en.wikipedia.org/wiki/Aetolian_League
+- [Kingdom of Pontus] corrected: "fought three wars against Rome before Pompey defeated him in 63 BCE" → "fought Rome in the long Mithridatic Wars, until Rome conquered Pontus in 63 BCE" — Pompey/three wars not in source text — https://en.wikipedia.org/wiki/Kingdom_of_Pontus
+- [Galatia] corrected: "settled by Celtic tribes from Gaul ... until they were forced to settle" → "Celtic Gauls who crossed from the Balkans in the 270s BCE as hired soldiers and then raided Greek cities. It later became a kingdom" — article: Gauls from Thrace, hired by Nicomedes I — https://en.wikipedia.org/wiki/Galatia
+- [Kingdom of Pergamon] corrected: "its library, which rivalled Alexandria" → "its great library and the Pergamon Altar" — rivalry not in source — https://en.wikipedia.org/wiki/Kingdom_of_Pergamon
+- [Illyrian Kingdom] corrected: "Queen Teuta's piracy led Rome to fight the Illyrian Wars from 229 BCE" → piracy-funded state under Agron and Teuta; "Teuta's wars with Rome ended with her submission around 227 BCE" — article dates — https://en.wikipedia.org/wiki/Illyrian_kingdom
+- [Kingdom of Sophene] corrected: "absorbed it around 94 BCE, though it kept some identity under Rome" → "conquered it around 95 BCE, after which it passed between Armenian, Cappadocian and Roman-backed rulers" — article: c. 95 BCE — https://en.wikipedia.org/wiki/Kingdom_of_Sophene
+- [Âu Lạc] verified — https://en.wikipedia.org/wiki/%C3%82u_L%E1%BA%A1c
+- [Kingdom of Cappadocia] corrected: "ruled by a line of kings named Ariarathes" → Ariarathids, then houses of Ariobarzanes and Archelaus — three dynasties in source; capital Mazaca confirmed — https://en.wikipedia.org/wiki/Kingdom_of_Cappadocia
+- [Nanyue] verified — https://en.wikipedia.org/wiki/Nanyue
+- [Maldive kingdom (Buddhist period)] verified (conversion 1153, or 1193 per some grants; Malé) — https://en.wikipedia.org/wiki/History_of_the_Maldives
+- [Kingdom of Numidia] corrected: "Rome annexed it after Caesar's victory in 46 BCE" → "Rome annexed its eastern part after Caesar's victory at Thapsus in 46 BCE" — western Numidia followed in 40 BCE; capital Cirta confirmed — https://en.wikipedia.org/wiki/Numidia ; https://en.wikipedia.org/wiki/Jugurtha
+- [Molossians] corrected: "Rome crushed Epirus in 167 BCE, selling about 150,000 of its people into slavery" → "After they sided with Macedon ... the Romans reportedly enslaved some 150,000 Epirotes" — article hedges the figure as possibly symbolic; year not in source — https://en.wikipedia.org/wiki/Molossians
+- [Wusun] corrected: "steppe people of nomadic herders ... Ili valley in today's Kazakhstan ... a princess" → "semi-nomadic ... Ili valley, on today's border of China and Kazakhstan, around 130 BCE ... sending princesses" — https://en.wikipedia.org/wiki/Wusun
+- [Nabataeans] corrected: "grew rich guiding incense and spice caravans. They carved the rock-cut city of Petra" → "grew rich from a far-reaching trade network, centred on the city of Petra"; Trajan 106 CE — incense specifics not in source — https://en.wikipedia.org/wiki/Nabataeans
+- [Judea] verified — https://en.wikipedia.org/wiki/Judea
+- [Himyarite Kingdom] corrected: "by about 280 CE ... Aksum of Ethiopia invaded in 525 CE" → "by the late third century CE ... conquered it in the 520s CE" — article: conquest 525-530 — https://en.wikipedia.org/wiki/Himyarite_Kingdom
+- [Byeonhan] corrected: "on the south coast near the Nakdong River. It was known for iron" → "south and west of the Nakdong River valley. Its chiefdoms produced growing numbers of iron weapons" — wording fit to source — https://en.wikipedia.org/wiki/Byeonhan_confederacy
+- [Jinhan] verified — https://en.wikipedia.org/wiki/Jinhan_confederacy
+- [Caucasian Iberia] corrected: "adopted Christianity in the early 300s CE" → "made Christianity its state religion in the fourth century under King Mirian III" — https://en.wikipedia.org/wiki/Kingdom_of_Iberia
+- [Kingdom of Adiabene] verified — https://en.wikipedia.org/wiki/Adiabene
+- [Kingdom of Commagene] corrected: "a hilltop tomb on Mount Nemrut ... Rome annexed it in 72 CE" → "a mountaintop sanctuary ... Rome annexed it for good in 72 CE" — source calls it a sanctuary; first annexed 17 CE — https://en.wikipedia.org/wiki/Commagene
+- [Kingdom of Osroene] corrected: "Rome annexed it in 244 CE" → "Rome deposed the Abgarids around 213 CE and made most of it a province" — article: c. 213, rump revived briefly under Gordian III; map ends 214 — https://en.wikipedia.org/wiki/Osroene
+
+## Counts
+- Notes read: 75
+- Verified unchanged: 26
+- Verified, reworded only (wording overlap): 1 (Zheng)
+- Corrected: 44
+- Reduced (unsupported specifics cut back): 4 (Bismarck Archipelago peoples, Phoenician Colonies, Janapada of Matsya, Zapotec Civilization)
+- Capitals: removed 1 (Mycenaean Greece: Mycenae); changed 1 (Anurādhapura: dropped "later Polonnaruwa"); added 1 (Janapada of Cedī: Suktimati, from article)
+
+## Still doubtful
+- Minyue capital "Ye": rests on Wikidata (Yecheng) only; the article mentions an unnamed stone city.
+- Kingdom of Bithynia capital Nicomedia: confirmed from search-result snippets (Livius, Nicomedes I article), not from the Kingdom of Bithynia article itself.
+- Cimmerian Bosporus: the note gives the kingdom's full span (c. 438 BCE - c. 527 CE), wider than the map years (404 BCE - 372 CE); left as is.
+- Second Athenian League keeps capital "Athens" (league meetings held there); Sacred Band of Thebes keeps "Thebes" (the map entry is the city).

@@ -1,0 +1,124 @@
+# Check log: Cliopatria realm notes, batch 3 (full source check)
+
+Each note compared against the full Wikipedia article text in clio-wp/ (plus Wikidata facts); extra pages fetched where the map article was missing or off-topic (Yashovarman, Oghuz Yabgu State, Barghawata, County of Barcelona, Gorm the Old).
+
+- [Gurjara-Pratihara Dynasty] corrected: "became the strongest power of the north under Mihira Bhoja" → "reached the height of its power under Mihira Bhoja" — article makes it most powerful already under Nagabhata II, with its peak under Bhoja — https://en.wikipedia.org/wiki/Pratihara_dynasty
+- [Kannauj-Varman Dynasty] corrected: "Ganges city ... Yashovarman is its best-remembered king; after him the Ayudha rulers" → Varman dynasty, Yashovarman c. 725-752; Ayudhas only "later" — no record links the two dynasties; Ganges not in sources — https://en.wikipedia.org/wiki/Yashovarman
+- [Duchy of Croatia] verified — https://en.wikipedia.org/wiki/Duchy_of_Croatia
+- [Mataram Kingdom] corrected: capital "Mamratipura; later East Java" → "Mamratipura; later Tamwlang and Watugaluh" — East Java is a region, article names Tamwlang and Watugaluh as later capitals — https://en.wikipedia.org/wiki/Mataram_kingdom
+- [Oghuz Turks] corrected: facts verified (Oghuz Yabgu State 750-1055, Seljuks broke away from it); reworded "east of the Caspian Sea and Aral Sea" to avoid 7-word overlap — https://en.wikipedia.org/wiki/Oghuz_Yabgu_State
+- [Papal States] verified — https://en.wikipedia.org/wiki/Papal_States
+- [Duchy of Gascony] corrected: "home of the Gascon-speaking Basque-related Vascones ... ruled c. 602 to 1453 on paper ... passed under English kings" → frontier march of 602, Basque dukes from 864, joined to Aquitaine by 1053 — fits map years 768-1065; odd ethnic phrasing removed — https://en.wikipedia.org/wiki/Duchy_of_Gascony
+- [Rustamid dynasty] verified — https://en.wikipedia.org/wiki/Rustamid_dynasty
+- [Barghawata Conference] corrected: "a faith with a Quran in the Berber language, and the Almoravids finally destroyed the group" → own scripture of 80 chapters; Almoravid leader killed fighting them 1058 (final elimination only by Almohads 1149) — https://en.wikipedia.org/wiki/Barghawata
+- [Obotrites] corrected: "kept their independence for centuries against German neighbours" → allies of Charlemagne, victory of 798, long wars with Danish kings (they accepted imperial suzerainty in 1170) — https://en.wikipedia.org/wiki/Obotrites
+- [Viking settlements] verified — https://en.wikipedia.org/wiki/Vikings
+- [Aghlabid Dynasty] verified — https://en.wikipedia.org/wiki/Aghlabid_dynasty
+- [Comorian chiefdoms] corrected: "People settled the islands from c. 800, and Swahili and Arab traders later shaped their culture and religion" → settled c. 800-1000; Shirazi- and Hadhrami-linked ruling houses tied them to the Swahili corridor (religion not in source) — https://en.wikipedia.org/wiki/History_of_the_Comoros
+- [Lucayan chiefdoms] verified — https://en.wikipedia.org/wiki/Lucayan_people
+- [Lucayan chiefdoms (Turks and Caicos)] corrected: "After the Spanish arrived in the early 1500s" → contact from 1492, islands nearly empty by 1520; resettlement c. 1200 added — https://en.wikipedia.org/wiki/Lucayan_people
+- [Great Moravia] corrected: "Hungarian attacks brought it down around 906" → c. 907; core area and 863 date from article — https://en.wikipedia.org/wiki/Great_Moravia
+- [Kingdom of the Iberians] verified — https://en.wikipedia.org/wiki/Kingdom_of_the_Iberians
+- [Principality of Nitra] corrected: "Prince Pribina had a church built there around 828, and it was soon merged into Great Moravia" → church consecrated at an unspecified date (821-836); annexation date debated (833 or 870) — https://en.wikipedia.org/wiki/Principality_of_Nitra
+- [Kingdom of Brittany] corrected: "grew in strength against both the Franks and the Vikings before sliding back into a duchy" → it fell under Norse occupation before the duchy of 939 — https://en.wikipedia.org/wiki/Kingdom_of_Brittany
+- [Kingdom of Pamplona] verified — https://en.wikipedia.org/wiki/Kingdom_of_Navarre
+- [Shirvan] corrected: "Despite pressure from Persians, Mongols and Ottomans, it survived under local rulers until the 1500s" → Shirvanshahs from 809, independent or vassal, until Safavid rule (Ottomans came only in 1578, after the map years) — https://en.wikipedia.org/wiki/Shirvan
+- [County of Aragon] verified — https://en.wikipedia.org/wiki/County_of_Aragon
+- [Emirate of Crete] corrected: "Andalusi adventurers who had been expelled from Spain" → Andalusi exiles (Córdoban origin disputed) who were expelled from Alexandria before taking Crete — https://en.wikipedia.org/wiki/Emirate_of_Crete
+- [Principality of Capua] verified — https://en.wikipedia.org/wiki/Principality_of_Capua
+- [Principality of Salerno] verified — https://en.wikipedia.org/wiki/Principality_of_Salerno
+- [Ganzhou Kingdom] corrected: "from about 860s to 1030s ... controlled a key stretch of the Silk Road" → founded c. 894 (Wikidata 848), ended 1036; Hexi Corridor as route to Central Asia — https://en.wikipedia.org/wiki/Ganzhou_Uyghur_Kingdom
+- [Lower Burgundy] corrected: "Boso of Provence" → "Count Boso of Vienne" (article title) — https://en.wikipedia.org/wiki/Lower_Burgundy
+- [Qocho Kingdom] corrected: capital "Qocho; later Beiting" → winter capital Qocho, summer capital Beiting (Beshbalik), not a later move — https://en.wikipedia.org/wiki/Qocho
+- [Old Kingdom of Norway] verified — https://en.wikipedia.org/wiki/Norway
+- [Zaydi Alid dynasties] corrected: "held this mountainous region apart from the Abbasids" → unsupported; replaced with 864/900/914/928 sequence from article — https://en.wikipedia.org/wiki/Alid_dynasties_of_northern_Iran
+- [Ziyadid dynasty] corrected: "Sunni ... Zabid, which became a centre of learning ... first regime to control this Tihama coast under Abbasid authority" → learning/Sunni not in source; founder and Abbasid overlordship from article — https://en.wikipedia.org/wiki/Ziyadid_dynasty
+- [County of Urgell] corrected: "lasted as a title into the 1400s" → absorbed 1413 after revolt; capital adds later Balaguer (article) — https://en.wikipedia.org/wiki/County_of_Urgell
+- [County of Pallars] verified — de facto independent, Sort chief city, divided into Pallars Jussà and Sobirà — https://en.wikipedia.org/wiki/County_of_Pallars
+- [Toltec] corrected: "after the fall of Teotihuacan" → not in source; replaced with c. 950-1150 peak — https://en.wikipedia.org/wiki/Toltec
+- [Tulunids] verified — https://en.wikipedia.org/wiki/Tulunids
+- [Danelaw] verified — https://en.wikipedia.org/wiki/Danelaw
+- [Kingdom of Seisyllwg] corrected: "in the 9th century" → date of emergence unknown; 920 merger added — https://en.wikipedia.org/wiki/Seisyllwg
+- [Bagratid Armenia] verified — https://en.wikipedia.org/wiki/Bagratid_Armenia
+- [Kingdom of Khotan] verified — https://en.wikipedia.org/wiki/Kingdom_of_Khotan
+- [Hubaekje] verified — https://en.wikipedia.org/wiki/Later_Paekche
+- [County of Rosellón] verified — https://en.wikipedia.org/wiki/Roussillon
+- [Duchy of Bohemia] verified — https://en.wikipedia.org/wiki/Duchy_of_Bohemia
+- [County of Barcelona] corrected: "most powerful ... grew from the Frankish Spanish March ... in 1137 joined to Aragon" → founded 801; independence c. 988; 1137 marriage, personal union 1162 (map wiki pointed to Girona, so checked against the County of Barcelona article) — https://en.wikipedia.org/wiki/County_of_Barcelona
+- [County of Besalú] verified — https://en.wikipedia.org/wiki/County_of_Besal%C3%BA
+- [Sajid Dynasty] verified — https://en.wikipedia.org/wiki/Sajid_dynasty
+- [Qarmatians] verified — https://en.wikipedia.org/wiki/Qarmatians
+- [Kingdom of Alba] corrected: "descended from Kenneth MacAlpin, united the Picts and Gaels" → not in source; first "ri Alban" and addition of Fortriu from article — https://en.wikipedia.org/wiki/Kingdom_of_Alba
+- [Kingdom of Lower Burgundy] verified — https://en.wikipedia.org/wiki/Lower_Burgundy
+- [Southern Chu] corrected: "Hunan and Hubei" → Hunan (and NE Guangxi) per article; silk added to exports — https://en.wikipedia.org/wiki/Ma_Chu
+- [Wuyue] corrected: "lower Yangtze region ... kept the peace ... handed it to the Song without a fight" → territory per article; submission in face of certain annihilation — https://en.wikipedia.org/wiki/Wuyue
+- [Kingdom of Galicia] verified — https://en.wikipedia.org/wiki/Kingdom_of_Galicia
+- [Kingdom of Germany] verified — https://en.wikipedia.org/wiki/Kingdom_of_Germany
+- [Kingdom of Vaspurakan] corrected: "built the island church of Akdamar" → building projects on Aghtamar island (church not named in source) — https://en.wikipedia.org/wiki/Kingdom_of_Vaspurakan
+- [Taebong] corrected: capital "Kaesong" → "Songak (Kaesong); later Cheorwon" — capital moved to Cheorwon in 905, before the map years 911-921 — https://en.wikipedia.org/wiki/Taebong
+- [Early Balinese Kingdoms] corrected: "kept its own Hindu traditions, which survive there today" → not in source; replaced with court-culture blend from article — https://en.wikipedia.org/wiki/Bali_Kingdom
+- [Upper Burgundy and Italy] corrected: "took the Italian crown in 922 ... covered parts of northern Italy" → 922 not in source; Italian campaign, expulsion 926 and renunciation 933 from article — https://en.wikipedia.org/wiki/Upper_Burgundy
+- [(Kingdom of Denmark)] corrected: "Gorm and Harald Bluetooth, who set up the royal seat at Jelling" → Gorm ruled from Jelling; Harald won all Denmark; union with Norway made specific (Kalmar 1397) — https://en.wikipedia.org/wiki/Gorm_the_Old
+- [Icelandic Commonwealth] verified — https://en.wikipedia.org/wiki/Icelandic_Commonwealth
+- [Kingdom of Arles] verified — https://en.wikipedia.org/wiki/Kingdom_of_Arles
+- [Kingdom of Denmark] corrected: same correction as "(Kingdom of Denmark)" — https://en.wikipedia.org/wiki/Gorm_the_Old
+- [Ziyarid dynasty] corrected: capital "Isfahan; later Amol, Ray" → "Isfahan; later Gorgan" — Gorgan (Hyrcania) is the later Ziyarid seat in article and Wikidata — https://en.wikipedia.org/wiki/Ziyarid_dynasty
+- [Duchy of Brittany] corrected: "Its last duchess, Anne" → Anne was the heiress, not the last duchess (Claude followed); "Celtic language" cut; 1532 union added — https://en.wikipedia.org/wiki/Duchy_of_Brittany
+- [Kingdom of Dali] verified — https://en.wikipedia.org/wiki/Dali_Kingdom
+- [Zagwe dynasty] verified — https://en.wikipedia.org/wiki/Zagwe_dynasty
+- [Chandela Kingdom] corrected: "Bundelkhand ... c. 831 to 1315 ... now a World Heritage Site" → end c. early 1300s (Wikidata 1311), power faded c. 1200; unsupported specifics cut — https://en.wikipedia.org/wiki/Chandela_Empire
+- [Republic of Amalfi] verified — https://en.wikipedia.org/wiki/Duchy_of_Amalfi
+- [Kingdom of Castile] verified — https://en.wikipedia.org/wiki/Kingdom_of_Castile
+- [Chauhan Dynasty] corrected: "Prithviraj III, who beat Muhammad of Ghor in 1191" → 1191 victory not in source; kept 1192 defeat at Tarain — https://en.wikipedia.org/wiki/Chauhan_dynasty
+- [Paramara Dynasty] corrected: "he is said to have founded the city of Bhopal" → not in source; capital adds later Mandu — https://en.wikipedia.org/wiki/Paramara_dynasty
+- [County of Blôis] verified — https://en.wikipedia.org/wiki/County_of_Blois
+- [County of Champagne] corrected: "fairs at Troyes and Provins ... when Joan I married Philip IV" → Philip was still the king's son in 1284; capital "Troyes; later Provins" → "Troyes" — https://en.wikipedia.org/wiki/County_of_Champagne
+- [County of Flanders] verified — https://en.wikipedia.org/wiki/County_of_Flanders
+- [County of Maine] verified — https://en.wikipedia.org/wiki/Maine_(province)
+- [County of Osona] verified — https://en.wikipedia.org/wiki/County_of_Osona
+- [County of Rouergue] reduced: "the counts of Toulouse were closely linked to it" → not in the short article; reduced to geography — https://en.wikipedia.org/wiki/Rouergue
+- [County of Toulouse] corrected: "Raymond IV led the First Crusade" → led its largest contingent — https://en.wikipedia.org/wiki/County_of_Toulouse
+- [County of Vermandois] corrected: "Gallic tribe ... passed to the crown in 1215" → 1215 not in source; king took Peronne in 1191, rest after 1213 — https://en.wikipedia.org/wiki/Vermandois
+- [County of Vexin] verified — https://en.wikipedia.org/wiki/Vexin
+- [Duchy of Aquitaine] corrected: "one of the richest lands of medieval Europe" → unsupported, cut — https://en.wikipedia.org/wiki/Duchy_of_Aquitaine
+- [Western Xia] corrected: "Genghis Khan's Mongols" → "the Mongols" (article) — https://en.wikipedia.org/wiki/Western_Xia
+- [Bandanese chiefdoms] corrected: "Local chiefs ... killed or enslaved most Bandanese" → orang kaya oligarchy; numbers killed/expelled uncertain, about 1,000 survived as forced labour — https://en.wikipedia.org/wiki/Banda_Islands
+- [County of Ampuria] corrected: "site of the ancient Greek colony of Emporion ... vassal of Barcelona and Aragon" → not in source; capital adds Castelló d'Empúries (Wikidata) — https://en.wikipedia.org/wiki/County_of_Emp%C3%BAries
+- [Leeward Society Islands chiefdoms] corrected: "Taputapuatea marae was a major religious center ... annexed in the 1880s" → marae not in source; French rule late 1800s — https://en.wikipedia.org/wiki/Society_Islands
+- [Mentawai peoples] corrected: "by hunting, sago and farming" → hunter-gatherer lifestyle per article — https://en.wikipedia.org/wiki/Mentawai_people
+- [Mi'kmaq people] verified — https://en.wikipedia.org/wiki/Mi%EA%9E%8Ckmaq
+- [Nias chiefdoms] reduced: "Village chiefdoms ... the Dutch took full control in the 1800s" → Dutch rule not in source, cut — https://en.wikipedia.org/wiki/Nias
+- [Tahitian chiefdoms] corrected: "aided by European weapons" → not in source, cut — https://en.wikipedia.org/wiki/Tahiti
+- [Duchy of Burgundy] verified — https://en.wikipedia.org/wiki/Duchy_of_Burgundy
+- [Lohara Dynasty] corrected: "it lasted into the 1300s" → about 1175 (Wikidata gives 1320); capital Srinagar added from article — https://en.wikipedia.org/wiki/Lohara_dynasty
+- [(Taifas of Iberia)] verified — https://en.wikipedia.org/wiki/Taifa
+- [County of Nevers] corrected: "on the Loire ... vassals of the dukes of Burgundy" → not in source; "frequently associated" with Burgundy — https://en.wikipedia.org/wiki/County_of_Nevers
+- [Republic of Genoa] verified — https://en.wikipedia.org/wiki/Republic_of_Genoa
+- [Republic of Pisa] corrected: "It built the Leaning Tower" → not in source, cut — https://en.wikipedia.org/wiki/Republic_of_Pisa
+- [Taifa of Alpuente] corrected: "was absorbed by larger neighbours" → not in source; ruling family added — https://en.wikipedia.org/wiki/Taifa_of_Alpuente
+- [Taifa of Dénia] verified — https://en.wikipedia.org/wiki/Taifa_of_D%C3%A9nia
+- [Taifa of Toledo] corrected: "a major turning point in the Reconquista" → not in source; Dhunnunids were Berber — https://en.wikipedia.org/wiki/Taifa_of_Toledo
+- [Taifa of Valencia] corrected: "lost to Aragon's James I" → "Crown of Aragon" (article); intervening rule added — https://en.wikipedia.org/wiki/Taifa_of_Valencia
+- [Kingdom of Aragon] verified — https://en.wikipedia.org/wiki/Kingdom_of_Aragon
+- [Taifa of Albarracín] corrected: "when the Almoravids took it" → not in source, cut — https://en.wikipedia.org/wiki/Taifa_of_Albarrac%C3%ADn
+- [Taifa of Almería] verified — https://en.wikipedia.org/wiki/Taifa_of_Almer%C3%ADa
+- [Taifa of Granada] corrected: "from about 1012" → 1013 — https://en.wikipedia.org/wiki/Taifa_of_Granada
+- [Taifa of Morón] verified — https://en.wikipedia.org/wiki/Taifa_of_Mor%C3%B3n
+- [Taifa of Niebla] verified — https://en.wikipedia.org/wiki/Taifa_of_Niebla
+- [Taifa of Zaragoza] corrected: "under the Banu Hud family, who built the Aljaferia palace" → Aljaferia not in source; Tujibids ruled before the Banu Hud — https://en.wikipedia.org/wiki/Taifa_of_Zaragoza
+- [Hammadid Dynasty] corrected: "is a World Heritage Site" → not in source, cut; 1152 end added — https://en.wikipedia.org/wiki/Hammadid_dynasty
+- [North Sea Empire] corrected: "by 1042 an English-born king held the English throne again" → not in source; ended with Harthacnut's death in 1042 — https://en.wikipedia.org/wiki/North_Sea_Empire
+- [Taifa of Santa Maria do Algarve] verified — https://en.wikipedia.org/wiki/Taifa_of_Santa_Maria_do_Algarve
+
+## Counts
+- Notes read: 107
+- Verified unchanged: 47
+- Corrected: 58
+- Reduced: 2
+- Capitals changed: 9 (Mataram Kingdom: set to "Mamratipura; later Tamwlang and Watugaluh"; Qocho Kingdom: set to "Qocho (winter); Beiting (summer)"; County of Urgell: set to "La Seu d'Urgell; later Balaguer"; Taebong: set to "Songak (Kaesong); later Cheorwon"; Ziyarid dynasty: set to "Isfahan; later Gorgan"; Paramara Dynasty: set to "Dhar; later Mandu"; County of Champagne: set to "Troyes"; County of Ampuria: set to "Empúries; later Castelló d'Empúries"; Lohara Dynasty: set to "Srinagar"); capitals removed: 0
+
+## Still doubtful
+- Duchy of Aquitaine: capital "Poitiers" kept (the dukes were counts of Poitiers); Wikidata gives Toulouse, which fits the earlier Carolingian kingdom rather than the map years 990-1439.
+- Great Moravia: capital "Veligrad" rests only on Wikidata; the site of Veligrad is not securely identified.
+- Kingdom of Denmark and (Kingdom of Denmark): two map entries with near-identical notes; wording varied slightly.
+- County of Urgell is drawn 870..1808 on the map (realm name from Cliopatria) though the county ended in 1413; the note describes the medieval county.

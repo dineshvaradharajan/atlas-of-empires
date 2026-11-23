@@ -1,0 +1,115 @@
+# Source check log — Cliopatria realm notes, batch 5 (full check)
+
+Every note in unchecked_clio.json key "5" (103 realms) compared against the downloaded Wikipedia article (clio-wp/), its Wikidata facts, and where needed a fetched Wikipedia page. Edits applied to notes/out-clio-5.json only.
+
+- [Samudera Pasai Sultanate] verified — https://en.wikipedia.org/wiki/Samudera_Pasai_Sultanate
+- [Duchy of Legnica] corrected: "it outlived most of its neighbours, surviving until the last Piast duke died in 1675" → "later accepted Bohemian overlordship and lasted until its last Piast duke died in 1675" — "outlived its neighbours" unsupported; added founder Bolesław II — https://en.wikipedia.org/wiki/Duchy_of_Legnica
+- [Grand Duchy of Kraków] corrected: note described the 1846-1918 Austrian title → now describes the medieval Duchy of Kraków for the map years 1279-1293 (Leszek II 1279, Wenceslaus II 1291) — map years do not fit the 1846 entity — https://en.wikipedia.org/wiki/Duchy_of_Krak%C3%B3w
+- [Kingdom of Majorca] corrected: "Its ruler was a vassal of Aragon, and in 1343 Peter IV of Aragon took the islands back, though the title lingered" → "From 1279 its king was a vassal of Aragon, and in 1343 to 1344 Peter IV of Aragon conquered it, after which it stayed a separate kingdom" — vassalage dates from 1279; conquest 1343-44 — https://en.wikipedia.org/wiki/Kingdom_of_Majorca
+- [Duchy of Bytom] verified — https://en.wikipedia.org/wiki/Duchy_of_Bytom
+- [Kampili Kingdom] corrected: "northern Karnataka" → "northeastern Karnataka" — article wording — https://en.wikipedia.org/wiki/Kampili_kingdom
+- [Kingdom of Naples] verified — https://en.wikipedia.org/wiki/Kingdom_of_Naples
+- [Kingdom of Syrmia] corrected: "Around 1282 the Hungarian-linked Serbian king Stefan Dragutin was given Syrmia to rule, making it for a time a small kingdom beside his Serbian lands" → "From 1282 ... Stefan Dragutin ruled Syrmia, at first as a vassal of Hungary, and his son Vladislav II held it ... until he was defeated in 1324" — fits map 1285-1325 — https://en.wikipedia.org/wiki/Syrmia
+- [Pskov Republic] verified — https://en.wikipedia.org/wiki/Pskov_Republic
+- [Galicia-Volhynia] verified; capital "Halych; later Lviv" → "Halych; later Chełm and Lviv" — Leo moved the capital from Chełm to Lviv in 1272 — https://en.wikipedia.org/wiki/Kingdom_of_Galicia%E2%80%93Volhynia
+- [Kingdom of Scotland] corrected: "its crown passed to James VI in 1603, who also became king of England" → "in 1603 its king, James VI, also inherited the English throne" — James VI was already king of Scots — https://en.wikipedia.org/wiki/Kingdom_of_Scotland
+- [Myinsaing Kingdom] verified (1313 Pinya succession from Pinya Kingdom article) — https://en.wikipedia.org/wiki/Myinsaing_Kingdom
+- [Phayao Kingdom] corrected: "centred on the city of Phayao and its lake" / "absorbed ... around 1338" → removed lake; "In 1338 armies from Chiang Saen and Nan sacked it ... Phayao itself annexed by Lan Na" — lake not in source; detail per article — https://en.wikipedia.org/wiki/Phayao_Kingdom
+- [Principality of Beloozero] verified — https://en.wikipedia.org/wiki/Principality_of_Beloozero
+- [Principality of Pinsk] corrected: "lay in the marshes of Polesia" → removed; added early-1300s peaceful union with Lithuania under Narimantas son of Gediminas — Polesia claim not in source — https://en.wikipedia.org/wiki/Principality_of_Turov
+- [Principality of Turov] verified — https://en.wikipedia.org/wiki/Principality_of_Turov
+- [Principality of Vladimir-Suzdal] corrected: "whose prince Yury Dolgoruky is said to have founded Moscow ... ruined by the Mongols in 1238" → fragmentation into appanages under the Golden Horde and Moscow's rise — to fit map years 1294-1486 and avoid overstating Yury's role — https://en.wikipedia.org/wiki/Vladimir-Suzdal
+- [Shan States] verified — https://en.wikipedia.org/wiki/Shan_States
+- [Swiss Confederation] verified — https://en.wikipedia.org/wiki/Switzerland
+- [Beylik of Aydin] verified — https://en.wikipedia.org/wiki/Aydinids
+- [Beylik of Hamid] verified — https://en.wikipedia.org/wiki/Hamidids
+- [Beylik of Isfendiyar] verified — https://en.wikipedia.org/wiki/Candar_dynasty
+- [Beylik of Karaman] verified — https://en.wikipedia.org/wiki/Karamanids
+- [Beylik of Karasi] corrected: "Its lands passed to the growing Ottoman state in the 1340s, giving the Ottomans a navy and experienced troops to cross into Europe" → "in the 1330s or 1340s (sources disagree) the Ottoman sultan Orhan took its lands and gave them to his son Suleiman" — navy/Europe claim not in source; date disputed (1335 vs 1348/9) — https://en.wikipedia.org/wiki/Karasids
+- [Kingdom of Singapura] verified — https://en.wikipedia.org/wiki/Kingdom_of_Singapura
+- [Michoacán] corrected: "a powerful kingdom with its centre at Tzintzuntzan rose in the 1400s. The Aztecs never conquered it, but Spanish forces took it in 1520s" → "state took shape around Lake Pátzcuaro from the 1200s ... rivalled the Aztecs. Its ruler Tanganxoan II submitted to the Spanish in the 1520s" — article dates the state to the 13th century; "never conquered" not in source — https://en.wikipedia.org/wiki/Michoac%C3%A1n
+- [Beylik of Saruhan] corrected: "founded around 1313" / "held the rich Gediz valley" → "founded in the early 1300s" / naval power in the Aegean; Ottomans absorbed it in 1412 — article gives c.1300 founding; "rich" unsupported — https://en.wikipedia.org/wiki/Sarukhanids
+- [Chüzan] verified — https://en.wikipedia.org/wiki/Ch%C5%ABzan
+- [Hokuzan] corrected: "It was the smallest in wealth" → "It was the largest of the three but the poorest and most thinly peopled" — article wording — https://en.wikipedia.org/wiki/Hokuzan
+- [Nanzan] verified — https://en.wikipedia.org/wiki/Nanzan
+- [Principality of Wallachia] verified; capital "Câmpulung; later Curtea de Argeș, Târgoviște, Bucharest" → "Câmpulung; later Târgoviște, then Bucharest" — Curtea de Argeș as capital not in article/Wikidata — https://en.wikipedia.org/wiki/Wallachia
+- [Beylik of Teke] verified — https://en.wikipedia.org/wiki/Beylik_of_Teke
+- [Sagaing Kingdom] verified — https://en.wikipedia.org/wiki/Sagaing_kingdom
+- [Free County of Burgundy] corrected: "in this period it passed into the hands of the dukes of Burgundy" → "from 1330 to 1361 it shared a ruler with the neighbouring Duchy of Burgundy" — precise personal-union dates for map 1333-1384 — https://en.wikipedia.org/wiki/County_of_Burgundy
+- [House of Bourbon] corrected: "whose lands lay around the Bourbonnais" / "he entered Paris in 1594" → origin in 1272 marriage and 1327 dukedom / "was crowned in 1594" — article: crowned at Chartres 27 Feb 1594; Paris entry not stated — https://en.wikipedia.org/wiki/House_of_Bourbon
+- [Kenmu Restoration] verified — https://en.wikipedia.org/wiki/Kenmu_Restoration
+- [Principality of Theodoro] corrected: "on the south coast of Crimea, based in the mountain fortress of Mangup" → "in the mountains of southern Crimea ... ruled from the fortress town of Mangup"; added Gedik Ahmed Pasha 1475 — article: foothills of the Crimean Mountains, coast only from the 15th century — https://en.wikipedia.org/wiki/Principality_of_Theodoro
+- [Principality of Valona] corrected: "created in 1346 by a local lord who first served the Serbian Empire" → "set up in 1346 when the Serbian ruler Stefan Dušan put his brother-in-law John Komnenos Asen in charge ... independent after ... 1355" — John Asen was Dušan's appointee, not a local lord — https://en.wikipedia.org/wiki/Principality_of_Valona
+- [Ashikaga Shogunate] verified — https://en.wikipedia.org/wiki/Ashikaga_shogunate
+- [Beylik of Dulkadir] verified (1522 from Wikidata) — https://en.wikipedia.org/wiki/Beylik_of_Dulkadir
+- [Chobanids] corrected: "the Golden Horde khan Jani Beg conquered the city" → "forces of the Golden Horde overran their lands and took the city" — khan's name not in source — https://en.wikipedia.org/wiki/Chobanids
+- [Commune of the Zealots] corrected: "Ordinary townspeople seized power from the rich landowners, making it one of the unusual popular regimes" → Zealots seized aristocrats' property; townspeople rose against them 1349; Kantakouzenos entered 1350 — map article (Thessaloniki) lacks detail; checked dedicated article — https://en.wikipedia.org/wiki/Zealots_of_Thessalonica
+- [Injuids] verified — https://en.wikipedia.org/wiki/Injuids
+- [Kartids] verified — https://en.wikipedia.org/wiki/Kart_dynasty
+- [Kashmiri Sultanate] corrected: "from 1339 the Shah Mir dynasty continued it" → "the Shah Mir dynasty ruled from 1339 and the Chaks from 1561" — Chaks ruled the last decades — https://en.wikipedia.org/wiki/Kashmir_Sultanate
+- [Sarbadars] corrected: "Its rulers included dervishes, and Timur ended it in 1381" → "Its leaders mixed dervishes and secular rulers, and its last ruler submitted to Timur in 1381" — article: Ali-yi Mu'ayyad submitted to Timur — https://en.wikipedia.org/wiki/Sarbadars
+- [Sultanate of Bengal] verified — https://en.wikipedia.org/wiki/Bengal_Sultanate
+- [Bahmani Sultanate] corrected: "founded in 1347 when Hasan Gangu rebelled against Delhi" / "in the early 1500s it broke up" → "founded in 1347 by Hasan Gangu during a revolt of Deccan nobles against the Delhi Sultan" / "in the late 1400s and early 1500s" — the 1347 revolt was led by Ismail Mukh; breakup began with late-15th-c. revolts — https://en.wikipedia.org/wiki/Bahmani_Kingdom
+- [Serbian Empire] corrected: "who crowned himself emperor in 1346" / "quickly fractured into rival lords by 1371" → "who proclaimed himself tsar in 1345 and founded the empire in 1346" / "slowly fractured ... ending with his son Uroš V's death in 1371" — article: proclaimed tsar 1345 at Serres; decline was gradual under Uroš — https://en.wikipedia.org/wiki/Serbian_Empire
+- [Despotate of Dobruja] corrected: "led by local despots until the Ottomans conquered it in 1395" → "until the Ottomans took Varna in 1389"; capital "Karvuna (Kavarna)" → "Karvuna (Balchik); later Kaliakra, then Varna" — article: Karvuna is Balchik, not Kavarna; capital moved Kaliakra→Varna 1386; Varna fell 1389 — https://en.wikipedia.org/wiki/Despotate_of_Dobruja
+- [Despotate of Vidin] verified — https://en.wikipedia.org/wiki/Tsardom_of_Vidin
+- [Electorate of Saxony] verified — https://en.wikipedia.org/wiki/Electorate_of_Saxony
+- [House of Valois-Anjou] verified — https://en.wikipedia.org/wiki/House_of_Valois-Anjou
+- [Lan Xang] corrected: "It split into three kingdoms in 1707" → "In 1707 it split into two kingdoms, Luang Prabang and Vientiane, and Champasak broke away in 1713"; capital move dated 1560 — article — https://en.wikipedia.org/wiki/Lan_Xang
+- [Principality of Moldavia] verified — https://en.wikipedia.org/wiki/Moldavia
+- [Sultanate of Brunei] corrected: "grew powerful in the 1400s and 1500s. It later lost land to Britain" → "became a sovereign power around the 1400s and later spread along the coasts of Borneo and the Philippines. It lost much land to Western powers and Sarawak's Brooke rajahs" — article lists Spain, Brooke, Britain, Americans; capital Bandar Seri Begawan kept for the modern state (well-established, not in this article) — https://en.wikipedia.org/wiki/Sultanate_of_Brunei_(1368%E2%80%931888)
+- [Ava Kingdom] corrected: "named after its capital Inwa, near present-day Mandalay" / "overthrown by Toungoo in 1555" → founded by Thado Minbya; Shan sack of 1527 added (map ends 1528); Toungoo 1555 — Mandalay not in source — https://en.wikipedia.org/wiki/Kingdom_of_Ava
+- [Despotate of Arta] verified — https://en.wikipedia.org/wiki/Despotate_of_Arta
+- [Qara Qoyunlu] verified — https://en.wikipedia.org/wiki/Qara_Qoyunlu
+- [Tondo] corrected: "A Tagalog trade city" / "traded with China and Southeast Asia before the Spanish arrived in the 1570s" → "A Tagalog and Kapampangan trading town" / shared monopoly on Chinese goods; Spanish took Manila Bay towns 1570-1571 — article — https://en.wikipedia.org/wiki/Tondo_(historical_polity)
+- [County of Béarn] corrected: "Its famous count, Gaston Fébus, ruled in the late 1300s and was known as a hunter, writer and shrewd political player" → "In 1347 its viscount Gaston Fébus declared that he held Béarn from God alone ... sovereign principality"; court moved Orthez→Pau 1464 — Béarn was a viscounty; hunter/writer not in source — https://en.wikipedia.org/wiki/B%C3%A9arn
+- [Kingdom of Bosnia] verified — https://en.wikipedia.org/wiki/Kingdom_of_Bosnia
+- [Margraviate of Moravia] verified — https://en.wikipedia.org/wiki/Margraviate_of_Moravia
+- [Ramadanid Emirate] corrected: "ruled from Adana after the Armenian kingdom there fell in 1375. It acted as a protectorate of the Mamluk Sultanate" → founded 1352 by Ramazan Beg; Mamluk protectorate, then largely independent, Ottoman protection from 1517 — article: founded 1352, Mamluk protectorate only to end of 14th c. — https://en.wikipedia.org/wiki/Ramadanid_Emirate
+- [Republic of Ragusa] corrected: "Its motto was freedom" → "Its Latin motto said liberty should not be sold for any amount of gold" — actual motto — https://en.wikipedia.org/wiki/Republic_of_Ragusa
+- [Principality of Valona and Kanina] corrected: "started in 1346 by a lord who first served the Serbian Empire" → "founded in 1346 under Serbian overlordship. From 1396 it was held by Mrkša Žarković, then ... by Rugina" — founder was Dušan's appointee; map years 1395-1421 fit Mrkša/Rugina — https://en.wikipedia.org/wiki/Principality_of_Valona
+- [Duchy of Milan] corrected: "bought the title of duke from the emperor. It grew rich on silk, weapons and farming ... then to Spain" → "obtained the title of duke from Wenceslaus, King of the Romans ... Sforza ... brought in silk-making ... passed to the Spanish Habsburgs" — purchase, weapons and farming not in source — https://en.wikipedia.org/wiki/Duchy_of_Milan
+- [Adal Sultanate] corrected: "founded in the early 1400s" / "Its general Ahmad Gragn almost conquered Christian Ethiopia in the 1530s"; capital "Zeila; later Harar" → founded 1415 on the Harar plateau; "From 1529 Imam Ahmad ibn Ibrahim overran much of Christian Ethiopia ... Wayna Daga in 1543"; capital "Dakkar; later Harar" — article: Sabr ad-Din III set his capital at Dakkar, moved to Harar 1520 — https://en.wikipedia.org/wiki/Adal_Sultanate
+- [Makuria Kingdom] corrected: "with its capital at Dongola ... faded out by about 1500"; capital "Dongola" → rump state after 1365 civil war lost Dongola; last recorded king c.1460; capital "Dongola; later probably Gebel Adda" — fits map years 1415-1518 — https://en.wikipedia.org/wiki/Makuria
+- [Duchy of Luxembourg] corrected: "Raised to a duchy in 1353, it was seized by Philip the Good" → "Raised to a duchy in 1353 to 1354, it passed in the 1440s to Philip the Good of Burgundy, who bought out its heiress Elisabeth" — article: elevated 1354; Elisabeth sold it, paid off 1444 — https://en.wikipedia.org/wiki/Duchy_of_Luxembourg
+- [Ryukyu Kingdom] verified — https://en.wikipedia.org/wiki/Ryukyu_Kingdom
+- [Duchy of Lorraine] corrected: "Duke René II beat Charles the Bold of Burgundy near Nancy in 1477" → "Charles the Bold of Burgundy, who tried to seize it, was defeated and killed at the Battle of Nancy in 1477" — René II not named in source — https://en.wikipedia.org/wiki/Duchy_of_Lorraine
+- [Khanate of Kazan] corrected: "formed in the 1430s" / "Ivan the Terrible conquered it in 1552, opening Russia's way east" → "founded in about 1438 or 1445" / "the army of Ivan IV of Russia stormed Kazan in 1552" — founding date disputed in article; "way east" unsupported — https://en.wikipedia.org/wiki/Khanate_of_Kazan
+- [Ambrosian Republic] verified — https://en.wikipedia.org/wiki/Golden_Ambrosian_Republic
+- [Haudenosaunee] verified — https://en.wikipedia.org/wiki/Haudenosaunee
+- [Nogai Horde] verified — https://en.wikipedia.org/wiki/Nogai_Horde
+- [Duchy of Saint Sava] verified — https://en.wikipedia.org/wiki/Duchy_of_Saint_Sava
+- [Qasim Khanate] corrected: "created in 1452 by Moscow's grand prince for a Tatar prince, who served him as a loyal ally" → "created in 1452 when Grand Prince Vasily II of Moscow granted lands to the Kazan prince Qasim Khan, and it stayed dependent on Moscow" — "loyal ally" unsupported — https://en.wikipedia.org/wiki/Qasim_Khanate
+- [Sultanate of Palembang] corrected: "It was a major pepper and tin exporter until the Dutch ended it in the early 1820s" → earlier Demak-linked rule; Dutch captured the city 1821, abolished 1823 — pepper/tin not in source — https://en.wikipedia.org/wiki/Palembang_Sultanate
+- [Sultanate of Sulu] corrected: "held off Spanish conquest for centuries, and traded in pearls and sea products"; capital "Maimbung; later Jolo" → independence from Brunei 1578; trade and slave raiding; Spain forced surrender 1878; capital "Jolo; later Maimbung" — article: capital moved to Maimbung after Spain took Jolo in 1876 — https://en.wikipedia.org/wiki/Sultanate_of_Sulu
+- [Tahirid Sultanate] corrected: "ruling in the late 1400s and early 1500s. They controlled the trading port of Aden until the Egyptian Mamluks conquered their lands in 1517" → "The brothers Amir and Ali bin Tahir seized Aden in 1454, and their sultans ruled from Zabid until a Mamluk expedition ... overthrew them in 1517"; capital Zabid added — map wiki is the Khorasan dynasty; checked Yemen article (Aden actually held out after 1517) — https://en.wikipedia.org/wiki/Tahirid_Sultanate
+- [Astrakhan Khanate] verified; capital "Astrakhan" → "Xacitarxan (Astrakhan)" — article: capital Xacitarxan, 12 km north of the modern city — https://en.wikipedia.org/wiki/Astrakhan_Khanate
+- [Kingdom of Imereti] corrected: "Its kings were often forced to pay tribute to the Ottomans" → "For centuries it was fought over by Georgian and Ottoman forces" — tribute not in source — https://en.wikipedia.org/wiki/Kingdom_of_Imereti
+- [Kingdom of Kakheti] corrected: "centred on the wine country of Kakheti" → "centred on the province of Kakheti" — wine not in source — https://en.wikipedia.org/wiki/Kingdom_of_Kakheti
+- [Principality of Abkhazia] verified — https://en.wikipedia.org/wiki/Principality_of_Abkhazia
+- [Principality of Guria] corrected: "was pulled between the Ottomans and Russia until Russia abolished it in 1829" → "fought constant border wars with Georgian neighbours and the Ottomans, who took its coastline, until Russia annexed it in 1829" — article wording — https://en.wikipedia.org/wiki/Principality_of_Guria
+- [Principality of Mingrelia] corrected: "It was nominally under neighbouring Imereti or the Ottomans at times, and eventually came under Russian protection in the 1800s" → "became an independent principality in 1557, accepted Russian protection in 1803 ... Russia abolished it in 1867" — Ottoman claim not in source — https://en.wikipedia.org/wiki/Principality_of_Mingrelia
+- [Samtskhe-Saatabago] corrected: "It was powerful for centuries and was absorbed into the Ottoman Empire in the 1500s and early 1600s" → Jaqeli atabegs from 1268; broke away 1465; Ottoman vassal 1540s; line ruled to c.1628 — precise dates from article — https://en.wikipedia.org/wiki/Samtskhe-Saatabago
+- [Demak Sultanate] verified — https://en.wikipedia.org/wiki/Demak_Sultanate
+- [Prome Kingdom] verified — https://en.wikipedia.org/wiki/Prome_kingdom
+- [Sultanate of Cirebon] verified — https://en.wikipedia.org/wiki/Sultanate_of_Cirebon
+- [Berar Sultanate] corrected: "It was the smallest of the five successors" → removed; added Imad Shahi dynasty and Ellichpur — "smallest" not in source — https://en.wikipedia.org/wiki/Berar_Sultanate
+- [Bidar Sultanate] verified — https://en.wikipedia.org/wiki/Bidar_Sultanate
+- [Bijapur Sultanate] corrected: "The strongest of the five Deccan sultanates" → "One of the five Deccan sultanates ... At its peak it was among the most powerful states in India"; founder Yusuf Adil Shah 1490 — article wording — https://en.wikipedia.org/wiki/Bijapur_Sultanate
+- [Rajahnate of Cebu] verified — https://en.wikipedia.org/wiki/Cebu_(historical_polity)
+- [Comoro sultanates] corrected: "France took control in the late 1800s, and the islands became independent in 1975" → "France took the islands in the 1800s, starting with Mayotte in 1841, and in 1975 the Comoros declared independence, though Mayotte stayed French" — Mayotte ceded 1841 and remains French — https://en.wikipedia.org/wiki/History_of_the_Comoros
+- [Kalinago (Island Carib) chiefdoms] corrected: "They lived in village communities under local leaders and resisted European settlement for generations" → "They raided European plantations and long defended their independence against English and French colonists" — village/leader claim not in source — https://en.wikipedia.org/wiki/Kalinago
+- [Moriori people] verified; reworded "invaders from the Māori mainland" → "Māori invaders from mainland New Zealand", named the law of Nunuku — https://en.wikipedia.org/wiki/Moriori
+- [Taíno chiefdoms] verified — https://en.wikipedia.org/wiki/Ta%C3%ADno
+- [Trinidad peoples] corrected: "when Columbus saw it in 1498 ... Spanish rule followed, and the island's native population declined" → named Nepoya, Shebaya, Yao; "Columbus reached the island in 1498 ... from 1511 Spanish slavers raided it" — Columbus landed; Spanish settlement came only in 1592, so "Spanish rule followed" overstated for map 1500-1533 — https://en.wikipedia.org/wiki/History_of_Trinidad_and_Tobago
+- [Funj Sultanate] corrected: "grew rich from trade in gold and slaves, and fell when Egypt invaded in 1821" → "was at its height in the late 1600s, and its last sultan surrendered to Turco-Egyptian invaders in 1821" — gold/slave trade wealth not in source — https://en.wikipedia.org/wiki/Funj_Sultanate
+- [Jaffna kingdom] corrected: "It was a trading power in the Indian Ocean, and the Portuguese took it over in 1619" → "It drew wealth from pearls, elephant exports and trade with South India, and the Portuguese ended its independence in 1619" — article wording — https://en.wikipedia.org/wiki/Jaffna_kingdom
+- [Kingdom of Pinya] corrected: "Its power was limited by the rival state of Sagaing nearby, and it lasted to about 1365, when Ava took its place" → weakened by Sagaing's secession and feuds among Thihathu's sons; Maw raid 1364; Ava founded 1365 — article — https://en.wikipedia.org/wiki/Pinya_kingdom
+
+## Counts
+- Notes read and checked: 103
+- Verified, text unchanged: 47 (3 of them had only the capital changed: Galicia-Volhynia, Principality of Wallachia, Astrakhan Khanate)
+- Corrected (text changed): 56 (incl. Moriori people, wording-only)
+- Reduced to a cautious note: 0
+- Capitals changed: 8 (Galicia-Volhynia, Principality of Wallachia, Despotate of Dobruja, Adal Sultanate, Makuria Kingdom, Sultanate of Sulu, Astrakhan Khanate; Tahirid Sultanate added Zabid); capitals removed: 0
+- Extra pages fetched: Duchy_of_Krak%C3%B3w, Seniorate_Province, Zealots_of_Thessalonica, Tahirid_Sultanate (Wikipedia)

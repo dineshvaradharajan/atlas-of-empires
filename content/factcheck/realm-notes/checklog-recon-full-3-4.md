@@ -1,0 +1,187 @@
+- [Ankole (Nkore)] corrected: "known for its long-horned cattle herds" → "known for its cattle herds" — long-horned not in article; cattle central to Ankole — https://en.wikipedia.org/wiki/Ankole
+- [Bunyoro (Bunyoro-Kitara)] corrected: "and the kingdom ended when the British defeated King Kabalega in 1899" → "and Kabalega's resistance to the British ended with his capture in 1899" — article: in 1899 Omukama Kabalega was captured and exiled; kingdom itself not said to end — https://en.wikipedia.org/wiki/Bunyoro
+- [Arghun dynasty (Sindh)] corrected: "A dynasty of Afghan-based Turkic warlords in Sindh" → "A Turko-Mongol dynasty from Kandahar that ruled in Sindh" — article calls the Arghuns a Turko-Mongol dynasty — https://en.wikipedia.org/wiki/Arghun_dynasty
+- [Arghun dynasty (Sindh)] corrected: "Shah Hasan" → "Shah Husayn" — article names the son Husayn Beg / Shah Husayn — https://en.wikipedia.org/wiki/Arghun_dynasty
+- [Kingdom of Imerina] corrected: "After the death of Andriamasinavalona c. 1710 it split into four rival parts, later reunited." → "Andriamasinavalona divided it among four sons c. 1710, and it split into four rival parts that Andrianampoinimerina later reunited." — article: Andriamasinavalona quartered kingdom among four sons; Andrianampoinimerina reunited (1787 on) — https://en.wikipedia.org/wiki/Kingdom_of_Imerina
+- [Central India Agency (other states): Charkhari] corrected: "acceded to India in 1947" → "acceded to India in 1947-48" — region data: all acceded in 1947–48
+- [Central India Agency (other states): Datia, Samthar] corrected: "acceded to India in 1947" → "acceded to India in 1947-48" — region data: all acceded in 1947–48
+- [Central India Agency (other states): Dewas, Dhar, Ratlam, Jaora, Rajgarh, Sitamau, Jhabua, Alirajpur, Barwani, Sailana, Kurwai, Gwalior (Ujjain district), Gwalior (Mandsaur district)] corrected: "acceded to India in 1947" → "acceded to India in 1947-48" — region data: all acceded in 1947–48
+- [Central India Agency (other states): Orchha, Panna, Chhatarpur, Ajaigarh, Bijawar, Nagod, Maihar] corrected: "acceded to India in 1947" → "acceded to India in 1947-48" — region data: all acceded in 1947–48
+- [Central India Agency (other states): small Bundelkhand states near Baoni] corrected: "acceded to India in 1947" → "acceded to India in 1947-48" — region data: all acceded in 1947–48
+- [Rajputana Agency (other states): Alwar, Bharatpur, Dholpur, Karauli, Bundi, Tonk] corrected: "All acceded to India in 1947. Like other princely states, it kept its own ruler under British overlordship until 1947." → "All kept their own rulers under British overlordship until they acceded to India in 1947." — awkward singular "it" for a group; region data supports — https://en.wikipedia.org/wiki/Rajputana_Agency
+- WIKI [Kingdom of Imerina] "Imerina" → "Kingdom of Imerina" — redirect to the state article — https://en.wikipedia.org/wiki/Kingdom_of_Imerina
+- WIKI [Kingdom of Sikkim] "Sikkim" → "Kingdom of Sikkim" — "Sikkim" is the modern Indian state — https://en.wikipedia.org/wiki/Kingdom_of_Sikkim
+- [Principality of Ansbach] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Principality_of_Ansbach
+- [Principality of Bayreuth] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Principality_of_Bayreuth
+- [Duchy of Württemberg] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Duchy_of_Württemberg
+- [Principality of Calenberg] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Principality_of_Calenberg
+- [Ajuran Sultanate] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Ajuran_Sultanate
+- [Buganda] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Buganda
+- [Free Imperial City of Nuremberg] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Free_Imperial_City_of_Nuremberg
+- [Kingdom of Kebbi] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Kingdom_of_Kebbi
+- [Kingdom of Sitawaka] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Kingdom_of_Sitawaka
+- [United Duchies of Jülich-Cleves-Berg] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/United_Duchies_of_Jülich-Cleves-Berg
+- [Gujarat Sultanate (with Malwa)] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Gujarat_Sultanate
+- [Margraviate of Baden-Baden] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Margraviate_of_Baden-Baden
+- [Margraviate of Baden-Durlach] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Margraviate_of_Baden-Durlach
+- [Kaabu] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Kaabu
+- [Odisha under the Bhoi dynasty] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Bhoi_dynasty
+- [Ahom kingdom (Assam)] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Ahom_kingdom
+- [Cayor] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Cayor
+- [Cutch (Kingdom of Kutch)] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Cutch_State
+- [Jaintia Kingdom] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Jaintia_Kingdom
+- [Kingdom of Calicut (the Zamorin)] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Calicut_kingdom
+- [Kingdom of Cochin] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Kingdom_of_Cochin
+- [Kingdom of Jolof] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Kingdom_of_Jolof
+- [Kingdom of Kumaon (Chand dynasty)] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Kingdom_of_Kumaon
+- [Kingdom of Manipur] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Manipur_(princely_state)
+- [Kingdom of Mewar (Udaipur)] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Kingdom_of_Mewar
+- [Tripura (Twipra Kingdom)] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Tripura_(princely_state)
+- [Venad (early Travancore)] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Venadu_kingdom
+- [Waalo] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Waalo
+- [Kingdom of Ndongo] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Kingdom_of_Ndongo
+- [Keladi Nayakas (Ikkeri / Bednur)] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Nayakas_of_Keladi
+- [Kingdom of Loango] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Kingdom_of_Loango
+- [Kingdom of Mysore (Wodeyar principality)] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Kingdom_of_Mysore
+- [Nayaks of Gingee] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Nayaks_of_Gingee
+- [Vijayanagara Empire (Aravidu dynasty, Penukonda and Chandragiri)] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Vijayanagara_Empire
+- [Duchy of Montferrat] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Duchy_of_Montferrat
+- [Kingdom of Allada (Ardra)] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Kingdom_of_Ardra
+- [Kingdom of Rwanda] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Kingdom_of_Rwanda
+- [Dendi Kingdom] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Dendi_(province)
+- [Warsangali Sultanate] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Warsangali_Sultanate
+- [Vijayanagara Empire (Aravidu dynasty, Chandragiri and Vellore)] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Vijayanagara_Empire
+- [Denkyira] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Kingdom_of_Denkyira
+- [Kasanje Kingdom] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Kasanje_Kingdom
+- [Kingdom of Dahomey] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Dahomey
+- [Kingdom of Matamba] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Kingdom_of_Matamba
+- [Emirate of Trarza] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Emirate_of_Trarza
+- [Kingdom of Sikkim] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Sikkim
+- [Kingdom of Whydah] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Kingdom_of_Whydah
+- [Khanate of Kalat (Brahui confederacy)] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Khanate_of_Kalat
+- [Bani Khalid Emirate] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Bani_Khalid_Emirate
+- [Emirate of Brakna] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Emirate_of_Brakna
+- [Kingdom of Burundi] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Kingdom_of_Burundi
+- [Lunda Empire] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Lunda_Empire
+- [Boina Kingdom] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Boina_Kingdom
+- [Bundu] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Bundu_(state)
+- [Prince-Bishopric of Montenegro] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Prince-Bishopric_of_Montenegro
+- [Geledi Sultanate] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Sultanate_of_the_Geledi
+- [Kong Empire] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Kong_Empire
+- [Kingdom of Zamfara] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Kingdom_of_Zamfara
+- [Imamate of Futa Jallon] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Imamate_of_Futa_Jallon
+- [Sultanate of Lahej] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Sultanate_of_Lahej
+- [Sultanate of Damagaram] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Sultanate_of_Damagaram
+- [Sultanate of Aussa] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Sultanate_of_Aussa
+- [Kingdom of Kazembe] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Kazembe
+- [Shaki Khanate] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Shaki_Khanate
+- [Baku Khanate] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Baku_Khanate
+- [Erivan Khanate] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Erivan_Khanate
+- [Ganja Khanate] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Ganja_Khanate
+- [Nakhichevan Khanate] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Nakhichevan_Khanate
+- [Bahawalpur State] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Bahawalpur_(princely_state)
+- [Karabakh Khanate] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Karabakh_Khanate
+- [Rohilkhand (Rohilla state)] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Rohilkhand
+- [Lozi Kingdom (Barotseland)] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Lozi_kingdom
+- [Banswara State] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Banswara_State
+- [Bharatpur (Jat kingdom)] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Bharatpur_State
+- [Bikaner State] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Bikaner_State
+- [Bundi State] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Bundi_State
+- [Dungarpur State] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Dungarpur_State
+- [Karauli State] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Karauli_State
+- [Kingdom of Marwar (Jodhpur)] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Kingdom_of_Marwar
+- [Kingdom of Mewar (Udaipur State)] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Kingdom_of_Mewar
+- [Kota State] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Kota_State
+- [Kingdom of Travancore] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Travancore
+- [Kaarta] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Kaarta
+- [Khanate of Kalat (Nasir Khan's khanate and successors)] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Khanate_of_Kalat
+- [Kingdom of Gumma] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Kingdom_of_Gumma
+- [Alwar State] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/State_of_Alwar
+- [Imamate of Futa Toro] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Imamate_of_Futa_Toro
+- [Kingdom of Gomma] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Kingdom_of_Gomma
+- [Ndwandwe] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Ndwandwe
+- [Kingdom of Jimma] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Kingdom_of_Jimma
+- [Hyderabad State (the Nizam's dominions)] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Hyderabad_State
+- [Kingdom of Mysore (restored Wodeyars)] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Kingdom_of_Mysore
+- [Limmu-Ennarea] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Kingdom_of_Limmu-Ennarea
+- [Kingdom of Awadh (Oudh), reduced] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Oudh_State
+- [Hyderabad State (with Berar)] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Hyderabad_State
+- [Dholpur State] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Dholpur_State
+- [Duchy of Lucca] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Duchy_of_Lucca
+- [Tonk State] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Tonk_State
+- [Tonk State (Aligarh)] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Tonk_State
+- [Tonk State (Nimbahera)] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Tonk_State
+- [Ajmer (British): Kekri tract] reduced to region data — no article; note rests on the region data (Ajmer-Merwara/Wikipedia-derived), nothing beyond it — region data in-recon
+- [Baroda State (Gaekwad; Baroda district)] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Baroda_State
+- [Indore State (Holkar)] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Indore_State
+- [Indore State (Rampura–Bhanpura)] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Indore_State
+- [Kingdom of Nagpur (Bhonsle)] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Kingdom_of_Nagpur
+- [Satara State (Bhonsle rump)] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Satara_State
+- [Ajmer-Merwara (British)] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Ajmer-Merwara
+- [Ajmer-Merwara (British): Kekri tract] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Ajmer-Merwara
+- [Gaza Empire] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Gaza_Empire
+- [Kénédougou Kingdom] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Kénédougou_Kingdom
+- [Kingdom of Gera] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Kingdom_of_Gera
+- [Jhalawar State] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Jhalawar_State
+- [Toucouleur Empire] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Tukulor_Empire
+- [Bahawalpur] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Bahawalpur_(princely_state)
+- [Baroda (Amreli)] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Baroda_State
+- [Baroda (Baroda division)] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Baroda_State
+- [Baroda (Kadi division)] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Baroda_State
+- [Baroda (Kodinar)] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Baroda_State
+- [Baroda (Navsari division)] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Baroda_State
+- [Berar (Hyderabad Assigned Districts)] reduced to region data — no article; note rests on the region data (Ajmer-Merwara/Wikipedia-derived), nothing beyond it — region data in-recon
+- [Bhopal] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Bhopal_State
+- [Chhattisgarh feudatory states: Kanker] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Kanker_State
+- [Chhattisgarh feudatory states: Nandgaon, Khairagarh] reduced to region data — no article; note rests on the region data (Ajmer-Merwara/Wikipedia-derived), nothing beyond it — region data in-recon
+- [Chhattisgarh feudatory states: Raigarh, Sarangarh, Sakti, Korea, Jashpur, Udaipur (Dharamjaigarh)] reduced to region data — no article; note rests on the region data (Ajmer-Merwara/Wikipedia-derived), nothing beyond it — region data in-recon
+- [Cochin] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Kingdom_of_Cochin
+- [Cutch] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Cutch_State
+- [Deccan states: Akalkot] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Akkalkot_State
+- [Deccan states: Bhor] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Bhor_State
+- [Deccan states: Phaltan] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Phaltan_State
+- [Deccan states: Sangli, Miraj, Jamkhandi, Mudhol, Ramdurg, Jath] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Deccan_States_Agency
+- [Deccan states: Savantvadi] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Sawantwadi_State
+- [Deccan states: small tract near Kurundvad] reduced to region data — no article; note rests on the region data (Ajmer-Merwara/Wikipedia-derived), nothing beyond it — region data in-recon
+- [Deccan states: small tract south of Kolhapur] reduced to region data — no article; note rests on the region data (Ajmer-Merwara/Wikipedia-derived), nothing beyond it — region data in-recon
+- [Gujarat states: Dharampur and Bansda] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Dharampur_State
+- [Gujarat states: Palanpur, Radhanpur, Idar, Rajpipla, Lunavada, Chhota Udaipur] reduced to region data — no article; note rests on the region data (Ajmer-Merwara/Wikipedia-derived), nothing beyond it — region data in-recon
+- [Gujarat states: tract near Cambay] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Cambay_State
+- [Hill Tippera (Tripura)] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Tripura_(princely_state)
+- [Indore] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Indore_State
+- [Jaipur] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Kingdom_of_Amber
+- [Jaisalmer] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Kingdom_of_Jaisalmer
+- [Jammu and Kashmir] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Jammu_and_Kashmir_(princely_state)
+- [Jodhpur (Marwar)] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Kingdom_of_Marwar
+- [Junagadh] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Junagadh_State
+- [Kolhapur] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Kolhapur_State
+- [Kotah (with Jhalawar)] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Kota_State
+- [Manipur] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Manipur_(princely_state)
+- [Mayurbhanj] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Mayurbhanj_State
+- [Mysore (under British commission)] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Kingdom_of_Mysore
+- [Orissa feudatory states: Patna, Kalahandi, Sonpur, Bamra, Gangpur, Keonjhar, Dhenkanal, Bonai, Nayagarh, Baud, Talcher, Nilgiri, Athmallik] reduced to region data — no article; note rests on the region data (Ajmer-Merwara/Wikipedia-derived), nothing beyond it — region data in-recon
+- [Pudukkottai] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Pudukkottai_Kingdom
+- [Punjab hill states: Chamba] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Chamba_State
+- [Punjab hill states: Mandi, Suket, Bilaspur, Sirmur, Nalagarh] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Punjab_States_Agency
+- [Punjab states: Faridkot] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Faridkot_State
+- [Punjab states: Jind] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Jind_State
+- [Punjab states: Kapurthala] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Kapurthala_State
+- [Rajputana Agency (other states): Kishangarh] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Kishangarh_State
+- [Rajputana Agency (other states): Tonk (Chhabra)] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Tonk_State
+- [Rajputana Agency (other states): Tonk (Sironj)] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Tonk_State
+- [Rajputana Agency (other states): detached tracts near Pirawa and Gangdhar] reduced to region data — no article; note rests on the region data (Ajmer-Merwara/Wikipedia-derived), nothing beyond it — region data in-recon
+- [Rewa] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Rewa_(princely_state)
+- [Saraikela and Kharsawan (Chota Nagpur states)] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Saraikela_State
+- [Udaipur (Mewar)] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Kingdom_of_Mewar
+- [Sikkim] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Kingdom_of_Sikkim
+- [Chitral] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Kingdom_of_Chitral
+- [Slovak Republic] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Slovak_Republic_(1939–1945)
+- [American zone] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/American_occupation_zone_in_Germany
+- [British zone] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/British_occupation_zone_in_Germany
+- [French zone] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/French_occupation_zone_in_Germany
+- [Polish People's Republic] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Polish_People's_Republic
+- [Soviet zone] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Soviet_occupation_zone_in_Germany
+- [Free Territory of Trieste] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Free_Territory_of_Trieste
+- [Saar Protectorate] verified — note agrees with fetched article and region data — https://en.wikipedia.org/wiki/Saar_Protectorate
+
+Counts: notes read 181; verified unchanged 163; no-article notes resting on region data 9.

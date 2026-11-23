@@ -1,0 +1,95 @@
+# Check log: Cliopatria realm notes, batch 2 (full source check)
+
+- [Goguryeo] verified — https://en.wikipedia.org/wiki/Goguryeo
+- [Caroline Islands chiefdoms] verified — https://en.wikipedia.org/wiki/Caroline_Islands
+- [I-Kiribati chiefdoms] reduced: "led by elders and clan heads" → cut — not in the article; added the Polynesian/Melanesian influences it describes — https://en.wikipedia.org/wiki/History_of_Kiribati
+- [Marshallese chiefdoms] verified — https://en.wikipedia.org/wiki/History_of_the_Marshall_Islands
+- [Rotuman chiefdoms] corrected: "Polynesian-influenced people" → "Polynesian people"; "Britain took it" → chiefs ceded it in 1881 — article says Rotumans are Polynesians and the chiefs asked for annexation — https://en.wikipedia.org/wiki/Rotuma
+- [Goths] corrected: "first noted by Roman writers in the 3rd century, living north of the Black Sea" → Gutones on the Vistula in the 1st century, then Black Sea/Danube — map years 30–206 fit the earlier Vistula stage — https://en.wikipedia.org/wiki/Goths
+- [Trưng sisters] verified — https://en.wikipedia.org/wiki/Trưng_sisters
+- [Funan] corrected: "1st to 6th century" → "1st to the 7th century"; trade claim tied to the Oc Eo finds — article gives 1st–7th c. — https://en.wikipedia.org/wiki/Funan
+- [Pyu City-States] verified — https://en.wikipedia.org/wiki/Pyu_city-states
+- [Protectorate of the Western Regions] corrected: "Founded in 60 BCE" → "59 or 60 BCE"; "kept trade routes open and the Xiongnu at bay" → "aiming to"; added end date 439 — https://en.wikipedia.org/wiki/Protectorate_of_the_Western_Regions
+- [Burgundians] corrected: note was about the 411–534 kingdom (a separate map entry) → rewritten for the people as drawn 154–409; capital "Worms; later Lyon" removed (kingdom capitals, after map years) — https://en.wikipedia.org/wiki/Burgundians
+- [Chámpa] verified — https://en.wikipedia.org/wiki/Champa
+- [Shu Han] verified — https://en.wikipedia.org/wiki/Shu_Han
+- [Indo-Sasanian Empire] corrected: "branch of the Persian Sasanian family" → sub-kingdom set up by the Sasanian Empire; "coins mixing Persian and Kushan styles until about 365" → known from coins, lost to Kidarites c. 360–370 — https://en.wikipedia.org/wiki/Kushano-Sasanian_Kingdom
+- [Vakataka Kingdom] corrected: "patrons of the Ajanta cave paintings" → caves carved under king Harishena; added Gupta marriage tie — https://en.wikipedia.org/wiki/Vakataka_dynasty
+- [Gallic Empire] verified — https://en.wikipedia.org/wiki/Gallic_Empire
+- [Lakhmid Kingdom] verified — https://en.wikipedia.org/wiki/Lakhmid_kingdom
+- [Saxons] verified — https://en.wikipedia.org/wiki/Saxons
+- [Cheng Han] corrected: "Di leader" → "of the Ba-Di people" — article — https://en.wikipedia.org/wiki/Cheng-Han
+- [Former Zhao] verified: capital "Linfen" → "Pingyang (Linfen)" (wording only) — https://en.wikipedia.org/wiki/Han-Zhao
+- [Yaudheya Republic] corrected: "the Gupta empire eventually absorbed them" → submitted to Samudragupta, then gradual break-up — https://en.wikipedia.org/wiki/Yaudheya
+- [Former Liang] corrected: "founded ... around 320" → built up from 301 (no clear founding date); cut "oasis of order"; capital Guzang added — https://en.wikipedia.org/wiki/Former_Liang
+- [Former Yan] verified: capital "Ji; later Ye" → "Longcheng; later Ji; later Ye" — article lists all three — https://en.wikipedia.org/wiki/Former_Yan
+- [Vandals] corrected: note covered the later kingdom (sack of Rome 455, fall 534; separate map entry) → rewritten for the people as drawn 337–438; capital Carthage removed (taken 439) — https://en.wikipedia.org/wiki/Vandals
+- [Alodia] corrected: "until the Funj took over around 1504" → Soba fell c. 1500 to Arabs or the Funj — article — https://en.wikipedia.org/wiki/Alodia
+- [Baekje] corrected: "fine craftsmanship" → "continental culture" — article wording of what it passed to Japan — https://en.wikipedia.org/wiki/Baekje
+- [Makuria] corrected: "around 651" → siege 652, then Baqt; "lasted until the 1400s" → probably collapsed late 15th c. — https://en.wikipedia.org/wiki/Makuria
+- [Nobatia] corrected: "by about 650 merged with Makuria" → annexed by Makuria in the 7th century, circumstances unknown — https://en.wikipedia.org/wiki/Nobatia
+- [Kadamba Empire] corrected: "ran a steady state until the Chalukyas replaced them" → Chalukyas, former vassals, conquered it c. 540 — https://en.wikipedia.org/wiki/Kadamba_dynasty
+- [Kamarupa Kingdom] verified: capital "Haruppeswara" → article spelling "Hadapeshvara", added Durjaya — https://en.wikipedia.org/wiki/Kamarupa
+- [Kidarites] verified — https://en.wikipedia.org/wiki/Kidarites
+- [Tarumanagara] verified — https://en.wikipedia.org/wiki/Tarumanagara
+- [Silla] verified — https://en.wikipedia.org/wiki/Silla
+- [Later Liang] verified: capital Guzang added from article — https://en.wikipedia.org/wiki/Later_Liang_(Sixteen_Kingdoms)
+- [Later Qin] verified — https://en.wikipedia.org/wiki/Later_Qin
+- [Xionites] corrected: "likely fed into the later Huns of the region" → "some scholars link them with the later Kidarites and Hephthalites"; added treaty year 358 — https://en.wikipedia.org/wiki/Xionites
+- [Visigoths] verified — https://en.wikipedia.org/wiki/Visigoths
+- [Northern Liang] verified — https://en.wikipedia.org/wiki/Northern_Liang
+- [Northern Yan] verified — https://en.wikipedia.org/wiki/Northern_Yan
+- [Alans] verified — https://en.wikipedia.org/wiki/Alans
+- [Burgundian Kingdom] corrected: "set up by Germanic settlers in Savoy" → added the earlier Rhine kingdom and the 443 resettlement; capital "Lyon" → "Geneva; later Lyon" — https://en.wikipedia.org/wiki/Kingdom_of_the_Burgundians
+- [Kingdom of the Suebi] verified — https://en.wikipedia.org/wiki/Kingdom_of_the_Suebi
+- [Visigothic Kingdom] corrected: "ended when Muslim armies crushed King Roderic in 711" → "collapsed after" (remnants lasted a few more years) — https://en.wikipedia.org/wiki/Visigothic_Kingdom
+- [Brythons] corrected: "their language survives as Welsh" → "lives on in Welsh, Cornish and Breton"; added Cumbrians — https://en.wikipedia.org/wiki/Celtic_Britons
+- [Vandal Kingdom] corrected: "founded by King Geiseric in 439" → set up 435, Carthage from 439; "fleet ruled" → "raided"; capital adds Hippo Regius (Wikidata) — https://en.wikipedia.org/wiki/Vandal_Kingdom
+- [(Brythonic Kingdoms)] verified: Celtic Britons article for the kingdoms; Edward I's conquest completed 1283 — https://en.wikipedia.org/wiki/Celtic_Britons ; https://en.wikipedia.org/wiki/Conquest_of_Wales_by_Edward_I
+- [(Anglo-Saxon England)] verified — https://en.wikipedia.org/wiki/History_of_Anglo-Saxon_England
+- [Anglo-Saxon England] verified — https://en.wikipedia.org/wiki/History_of_Anglo-Saxon_England
+- [Ostrogoths] corrected: "fell to Byzantium in 553" → "in the early 550s" (Gothic War ran to 554) — https://en.wikipedia.org/wiki/Ostrogoths
+- [Kingdom of Soissons] verified — https://en.wikipedia.org/wiki/Kingdom_of_Soissons
+- [Maitraka Dynasty] corrected: "major centre of Buddhist learning" → seat of learning compared with Nalanda; "Arab raids and a new regional power ended their dynasty" → Arab raids weakened it, end unknown; "to 767" → "late 700s" (article 776/783, Wikidata 767) — https://en.wikipedia.org/wiki/Maitraka_dynasty
+- [Lombards] corrected: note was about Lombard Italy to 774 → rewritten for map years 480–586 (Danube, Pannonia, invasion of Italy) — https://en.wikipedia.org/wiki/Lombards
+- [Kingdom of Kent] verified — https://en.wikipedia.org/wiki/Kingdom_of_Kent
+- [Kingdom of Sussex] corrected: "taken over by Wessex in the 8th and 9th centuries" → Mercian control by c. 772, annexed by Wessex c. 827 — https://en.wikipedia.org/wiki/Kingdom_of_Sussex
+- [Ghassanids] verified — https://en.wikipedia.org/wiki/Ghassanids
+- [Kingdom of the Gepids] verified — https://en.wikipedia.org/wiki/Gepids
+- [Wihtgar] corrected: "Wihtgar is the early English name for the Isle of Wight" → Wihtgar is the (possibly legendary) first king; "last part of England to accept Christianity" → last pagan king Arwald killed 686 — https://en.wikipedia.org/wiki/Wihtwara
+- [Eastern Wei] verified: capital Ye confirmed (Wikidata says Luoyang) — https://en.wikipedia.org/wiki/Eastern_Wei ; https://en.wikipedia.org/wiki/Ye_(Hebei)
+- [Kingdom of Deira] corrected: cut "Pope Gregory ... calling them angels" — not in the article; added extent and Ælla — https://en.wikipedia.org/wiki/Deira
+- [Kingdom of East Anglia] verified — https://en.wikipedia.org/wiki/Kingdom_of_East_Anglia
+- [Kingdom of Essex] corrected: "turned Christian early but lost power to Mercia, and later joined Wessex" → bishop 604, overlords, ceded to Wessex 825 — https://en.wikipedia.org/wiki/Kingdom_of_Essex
+- [Kingdom of Lindsey] corrected: "absorbed by them in the 7th century" → alternating control, faded by 7th/early 8th c. — https://en.wikipedia.org/wiki/Kingdom_of_Lindsey
+- [Kingdom of Mercia] verified — https://en.wikipedia.org/wiki/Mercia
+- [Western Wei] verified — https://en.wikipedia.org/wiki/Western_Wei
+- [Bavarians] corrected: "absorbed into Charlemagne's realm in 788" → Charlemagne deposed Tassilo III in 788 (absorption itself not stated) — https://en.wikipedia.org/wiki/Bavarians ; https://en.wikipedia.org/wiki/Tassilo_III_of_Bavaria
+- [Dál Riata] verified — https://en.wikipedia.org/wiki/Dál_Riata
+- [Kingdom of Brycheiniog] verified — https://en.wikipedia.org/wiki/Brycheiniog
+- [Kingdom of Gwent] verified — https://en.wikipedia.org/wiki/Kingdom_of_Gwent
+- [Kingdom of Gwynedd] verified: Aberffraw palace/court in article — https://en.wikipedia.org/wiki/Kingdom_of_Gwynedd
+- [Kingdom of Morgannwg] verified — https://en.wikipedia.org/wiki/Kingdom_of_Morgannwg
+- [Kingdom of Powys] verified: capital "Pengwern; later Mathrafal" → adds earlier Caer Guricon/Wroxeter (article and Wikidata) — https://en.wikipedia.org/wiki/Kingdom_of_Powys
+- [(Chenla)] corrected: "from about the 6th to 8th century" → "late 6th to the early 9th"; added loose-confederation view and the post-706 split as the article gives it — https://en.wikipedia.org/wiki/Chenla
+- [Kingdom of Bernicia] verified — https://en.wikipedia.org/wiki/Bernicia
+- [Northern Qi] corrected: "strong armies but cruel rulers" → strongest state at first, weakened by violent/incompetent emperors, conquered 577 — https://en.wikipedia.org/wiki/Northern_Qi
+- [Duchy of Thuringia] corrected: note jumped to the later landgraviate and Saxon rule → rewritten for map years 567–723 (Frankish frontier, Duke Radulf c. 631) — https://en.wikipedia.org/wiki/Duchy_of_Thuringia
+- [Duchy of Benevento] corrected: "broke up amid rival princes and Normans in the 11th century" → cut (not in article); added founding doubt and ~300 years as a principality — https://en.wikipedia.org/wiki/Duchy_of_Benevento
+- [Duchy of Spoleto] corrected: "sometimes fighting the pope" → cut (not supported); added Faroald I and the gradual papal absorption — https://en.wikipedia.org/wiki/Duchy_of_Spoleto
+- [Duchy of Tuscia] corrected: cut "served as the Lombard link to the south" (unsupported) and the 774 ending (after map years 577–586; Wikidata and article short description disagree); added Lucca/Florence detail — https://en.wikipedia.org/wiki/Duchy_of_Tuscia
+- [Hwicce] verified — https://en.wikipedia.org/wiki/Hwicce
+- [Pandya Dynasty] corrected: "rose strongly in the 6th century and were revived again in the medieval period" → Kadungon revival late 6th c., decline as Cholas rose in 9th c. (fits map years 592–921) — https://en.wikipedia.org/wiki/Pandya_dynasty
+- [Gauda Kingdom] corrected: "began around the early 7th century" → known from 4th c. or earlier; "remembered for conflicts with the Maukhari rulers" → cut; end: divided between Harsha and Bhaskaravarman — https://en.wikipedia.org/wiki/Gauda_Kingdom
+- [Kingdom of Northumbria] corrected: "fell to Viking attack in the 9th century" → broken up by Viking raids and conquests (a rump survived at Bamburgh) — https://en.wikipedia.org/wiki/Northumbria
+- [Haripuñjaya] verified — https://en.wikipedia.org/wiki/Haripuñjaya
+- [Galuh Kingdom] corrected: "its rulers were Hindu and Buddhist" → Hindu kingdom; added origin from Tarumanagara split; capital added from article — https://en.wikipedia.org/wiki/Galuh_Kingdom
+- [Sunda Kingdom] verified: capital "Pakuan Pajajaran" → "Kawali; later Pakuan Pajajaran" (article and Wikidata) — https://en.wikipedia.org/wiki/Sunda_Kingdom
+- [Principality of Iberia] corrected: "its capital was Tbilisi" → Tbilisi lost to an Arab emir in the 730s, princes then at Uplistsikhe; "The Bagrationi family later rose from it" → restored kingship 888 — https://en.wikipedia.org/wiki/Principality_of_Iberia
+- [Unified Silla] corrected: "ruled most of the Korean peninsula" → centre and south (Balhae held the north); "built Bulguksa temple" → cut (not in article) — https://en.wikipedia.org/wiki/Unified_Silla
+- [Balhae] corrected: "borrowed Tang culture and was well organised" → adopted Tang-style offices, later friendly ties (cultural origins disputed) — https://en.wikipedia.org/wiki/Balhae
+- [Land Chenla] corrected: "centred on the hills and plains around the middle Mekong" → cut (not in article); "rulers later helped form the Khmer Empire" → under Jayavarman II, 802 — https://en.wikipedia.org/wiki/Chenla
+- [Kingdom of Asturias] verified: capital adds Pravia (article) — https://en.wikipedia.org/wiki/Kingdom_of_Asturias
+- [Kingdom of Neustria] corrected: "between the Loire and the Channel" → "from the Loire to the Silva Carbonaria" — article — https://en.wikipedia.org/wiki/Neustria
+
+Counts: 91 notes read; verified unchanged text 45 (of which some had capital wording fixed); corrected 45; reduced 1; capitals changed/added 12; capitals removed 2.

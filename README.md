@@ -30,7 +30,7 @@ python3 -I tools/build_detail.py <ne_10m_admin_0_countries.geojson> # Natural Ea
 python3 -I tools/build_clio.py   # Cliopatria -> public/data/clio/<chunk>.json + index.json (state borders, coasts carried to public/data/coast/)
 python3 -I tools/build_patches.py <ne_10m_admin_0_countries.geojson> # content/borders/patches.json: sourced fixes to rows before 1992
 python3 -I tools/build_modern.py <ne_10m_admin_0_countries.geojson>  # Natural Earth -> clio/1992.json (borders from 1992 to today)
-python3 -I tools/content.py      # content/eras + content/empires -> public/data/content.json, links to Cliopatria
+python3 -I tools/content.py      # content/eras + content/empires + content/realm-notes.json -> public/data/content.json and realm-notes.json, links to Cliopatria
 python3 -I tools/placeindex.py   # borders as drawn (corrections + reconstruction layers) -> public/data/place/ ("this place through time")
 python3 -I tools/commons.py      # Wikimedia Commons reference maps -> public/data/commons.json
 python3 -I tools/seo.py          # plain HTML pages, sitemaps and llms.txt for search engines (deploy.sh runs it; not committed)
@@ -58,7 +58,7 @@ with a source, or send a pull request; see [CONTRIBUTING.md](CONTRIBUTING.md). O
 | Borders from 1992 to today; island and micro states before 1992 | [Natural Earth](https://www.naturalearthdata.com/) 1:10m countries, in its default view of disputed places, with the border changes since 1992 dated by hand. Geometry simplified for the web. | Public domain |
 | Peoples & other polities layer | [historical-basemaps](https://github.com/aourednik/historical-basemaps), A. Ourednik | GPL-3.0 |
 | Reference maps | [Wikimedia Commons](https://commons.wikimedia.org/). Each image is credited with its author and licence in the app. | Per file (CC BY-SA, CC BY, PD, …) |
-| Narrative text | Written for this project. Structure follows the 12 regional rows of the SenseForMaps decade-by-decade timeline. | MIT |
+| Narrative text | Written for this project. Structure follows the 12 regional rows of the SenseForMaps decade-by-decade timeline. Short notes for states without a profile (`content/realm-notes.json`) are written for this project from Wikipedia and Wikidata, not copied. | MIT |
 | Rivers, lakes, sea names, disputed areas | [Natural Earth](https://www.naturalearthdata.com/) 1:50m and 1:10m | Public domain |
 | Terrain shading, ice-age coastline | [NOAA ETOPO5](https://www.ngdc.noaa.gov/mgg/global/relief/ETOPO5/TOPO/ETOPO5/) | Public domain |
 | Ice-age sea level | Lambeck et al. 2014, *PNAS* 111:15296, [doi:10.1073/pnas.1411762111](https://doi.org/10.1073/pnas.1411762111) | (cited; values digitised) |

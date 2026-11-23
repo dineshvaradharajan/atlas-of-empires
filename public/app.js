@@ -378,7 +378,7 @@ async function init() {
     S.content.moments = (content.moments || []).sort((a, b) => a.year - b.year);
     S.content.journeys = content.journeys || [];
     S.content.wars = content.wars || [];
-    for (const e of content.empires || []) for (const n of e.clio || []) S.content.byClio[n] = e;
+    for (const e of content.empires || []) for (const n of [...(e.clio || []), ...(e.recon || [])]) S.content.byClio[n] = e; // recon: a reconstruction region drawing a state the border data lacks
     S.content.empIds = new Set((content.empires || []).map((e) => e.id));
   }
   setupMap();
@@ -2482,13 +2482,53 @@ function statusHTML(key, y) {
   if (s.vassals.length) h += ` Overlord of ${list(s.vassals)}.`;
   return h + "</p>";
 }
+// A short note for a realm with no profile (content/realm-notes.json, written for this atlas from Wikipedia and Wikidata;
+// tools/content.py publishes it as data/realm-notes.json). Fetched the first time a card needs one; the card redraws when it arrives.
+function realmNote(key) {
+  if (S.realmNotes) return S.realmNotes[key] || null;
+  S.realmNotesP ||= fetchJSON("data/realm-notes.json").then((d) => { S.realmNotes = d; if (S.sel && d[S.sel] && !empireOf(S.sel)) renderCol(false); })
+    .catch(() => { S.realmNotesP = null; }); // not cached on failure: the next card that asks tries again
+  return null;
+}
+// The note names its own article where the map links the wrong one (Bone links "Sultan"); the map's Wikidata item is then wrong too.
+const noteMoved = (r, note) => !!note?.wiki && note.wiki !== r.wiki;
+function noteSourceHTML(r, note) {
+  const wt = note?.wiki || r.wiki;
+  const wiki = wt && `<a href="https://en.wikipedia.org/wiki/${encodeURIComponent(wt.replace(/ /g, "_"))}" target="_blank" rel="noopener">Wikipedia</a>`;
+  const wd = r.wd && !noteMoved(r, note) && `<a href="https://www.wikidata.org/wiki/${esc(r.wd)}" target="_blank" rel="noopener">Wikidata</a>`;
+  const from = r.recon ? [wiki, "the sources listed below"] : [wiki, wd]; // a reconstruction region is drawn from its layer's own sources
+  return `<p class="note notesrc">A short note written for this atlas from ${from.filter(Boolean).join(" and ") || "Wikipedia and Wikidata"}. No full profile yet.</p>`;
+}
+function summaryHTML(emp) {
+  if (!emp?.summary) return "";
+  const [lead, rest] = splitLead(emp.summary);
+  return `<p class="prose">${esc(lead)}</p>` + (rest ? `<details class="more"><summary>Read more</summary><p class="prose">${esc(rest)}</p></details>` : "");
+}
+function leadPicHTML(emp) {
+  const lead = emp && mediaSet()[`empire:${emp.id}`]?.[0];
+  return lead ? `<figure class="lead"><img src="${safeUrl(lead.image)}" alt="${esc(lead.caption)}" loading="lazy"><figcaption>${esc(lead.caption)} <a href="${safeUrl(lead.page)}" target="_blank" rel="noopener">${esc(lead.credit)} · ${esc(lead.license)}</a></figcaption></figure>` : "";
+}
+function rulersHTML(emp) {
+  if (!emp?.rulers?.length) return "";
+  const pic = (i, x) => { const m = mediaSet()[`ruler:${emp.id}:${i}`]?.[0]; return m && m.caption.startsWith(x.name) ? m : null; }; // index-keyed: the name must still match
+  const pics = emp.rulers.map((x, i) => pic(i, x));
+  const any = pics.some(Boolean);
+  let h = `<h3 class="sec">Notable rulers</h3><ul class="rlist${any ? " withpic" : ""}">`;
+  emp.rulers.forEach((x, i) => {
+    const m = pics[i];
+    const img = !any ? "" : m ? `<a class="pp" href="${safeUrl(m.page)}" target="_blank" rel="noopener" title="${esc(m.article)} · ${esc(m.credit)} · ${esc(m.license)}"><img src="${safeUrl(m.image)}" alt="${esc(x.name)}" loading="lazy"></a>` : `<span class="pp none" aria-hidden="true">${esc(x.name.trim()[0] || "")}</span>`;
+    h += `<li>${img}<b>${esc(x.name)}</b><span class="r">${esc(x.reign || "")}</span>${x.note ? `<span class="n">${esc(x.note)}</span>` : ""}</li>`;
+  });
+  h += `</ul>`;
+  if (any) h += `<details class="more credits"><summary>Portrait credits</summary><p class="note">${pics.map((m, i) => m && `${esc(emp.rulers[i].name)}: <a href="${safeUrl(m.page)}" target="_blank" rel="noopener">${esc(m.credit)}</a> (${esc(m.license)})`).filter(Boolean).join(" · ")}</p></details>`;
+  return h;
+}
 function realmHTML() {
   const key = S.sel, r = realm(key), y = S.year, emp = empireOf(key);
   const area = areaAt(key, y);
   const peak = r.tl.reduce((m, row) => (row[2] > m[2] ? row : m));
   const end = r.tl[r.tl.length - 1][1];
   const span = `${shortYear(r.tl[0][0])} – ${end >= S.range[1] ? "today" : shortYear(end)}`;
-  const media = commonsSet()[r.wiki] || (emp?.wiki && commonsSet()[emp.wiki]);
   const now = activeFeats(key);
   const alive = end >= S.range[1] - 1;
   let h = S.placeBack ? cardHead(S.placeBack.name || "This spot", "", "back-place") : cardHead(`The world in ${plainYear(y)}`, "", "close");
@@ -2506,27 +2546,37 @@ function realmHTML() {
       h += sourcesList(rg.sources || sp.sources);
       return h;
     }
+    const note = emp ? null : realmNote(key); // the state itself (its profile, else a short note) comes above the note on its borders
+    if (emp) h += summaryHTML(emp);
+    else if (note) h += `<p class="prose">${esc(note.text)}</p>` + noteSourceHTML(r, note);
     h += `<aside class="mapnote recon"><b>Approximate borders</b>${rg.note ? `<p>${esc(rg.note)}</p>` : ""}`;
-    if (rg.capital) h += `<p><strong>Capital:</strong> ${esc(rg.capital)}</p>`;
+    if (rg.capital || note?.capital) h += `<p><strong>Capital:</strong> ${esc(rg.capital || note.capital)}</p>`;
     if (rg.ports?.length) h += `<p><strong>Ports:</strong> ${esc(rg.ports.join(", "))}</p>`;
     if (rg.rulers?.length) h += `<p><strong>Rulers named in the sources:</strong> ${rg.rulers.map((x) => `${esc(x.name)}${x.when ? ` (${esc(x.when)})` : ""}`).join("; ")}</p>`;
     if (rg.attested) h += `<p><strong>Attested in:</strong> ${esc(rg.attested)}</p>`;
     h += `</aside>`;
     const rj = journeyForRealm(rg.key || rg.name);
     if (rj) h += `<button class="pillbtn dark block" data-journey="${esc(rj.id)}">${I.book}Follow ${esc(rj.name)} through its history</button>`;
+    if (emp) { // a profile written for this state (its "recon" names this region)
+      h += leadPicHTML(emp) + rulersHTML(emp);
+      if (emp.legacy) h += `<h3 class="sec">Legacy</h3><p class="prose">${esc(emp.legacy)}</p>`;
+    }
     if (sp.summary) h += `<h3 class="sec">${esc(sp.title)}</h3><p class="prose">${esc(sp.summary)}</p>`;
-    h += sourcesList(sp.sources);
+    h += sourcesList([...(emp?.sources || []), ...(sp.sources || []).filter((x) => !(emp?.sources || []).some((e) => e.url === x.url))]);
     return h;
   }
-  if (emp?.summary) { const [lead, rest] = splitLead(emp.summary); h += `<p class="prose">${esc(lead)}</p>`; if (rest) h += `<details class="more"><summary>Read more</summary><p class="prose">${esc(rest)}</p></details>`; }
+  const note = emp ? null : realmNote(key), moved = noteMoved(r, note), wt = moved ? note.wiki : r.wiki;
+  const media = (!moved && commonsSet()[r.wiki]) || (emp?.wiki && commonsSet()[emp.wiki]);
+  if (emp?.summary) h += summaryHTML(emp);
+  else if (note) h += `<p class="prose">${esc(note.text)}</p>` + noteSourceHTML(r, note);
   h += realmPlaceHTML(key);
-  h += `<div class="facts">${emp?.capital ? `<div><span>Capital</span><b>${esc(emp.capital.split(";")[0])}</b></div>` : ""}<div><span>Area in ${shortYear(y)}</span><b>${area ? `${mkm(area)} million km²` : "Not drawn"}</b></div><div><span>At its peak</span><b>${shortYear(peak[0])}, ${mkm(peak[2])} million km²</b></div></div>`;
+  const cap = emp?.capital || note?.capital;
+  h += `<div class="facts">${cap ? `<div><span>Capital</span><b>${esc(cap.split(";")[0])}</b></div>` : ""}<div><span>Area in ${shortYear(y)}</span><b>${area ? `${mkm(area)} million km²` : "Not drawn"}</b></div><div><span>At its peak</span><b>${shortYear(peak[0])}, ${mkm(peak[2])} million km²</b></div></div>`;
   if (r.memberOf?.length) h += `<p class="note">Part of ${r.memberOf.map((g) => `<button class="linkish" data-key="${esc(g)}">${esc(displayName(g))}</button>`).join(", ")}</p>`;
   const jr = journeyForRealm(key);
   if (jr) h += `<button class="pillbtn dark block" data-journey="${esc(jr.id)}">${I.book}Follow ${esc(jr.name)} through its history</button>`;
 
-  const lead = emp && mediaSet()[`empire:${emp.id}`]?.[0]; // the picture comes after who ruled this spot, so that list is seen first
-  if (lead) h += `<figure class="lead"><img src="${safeUrl(lead.image)}" alt="${esc(lead.caption)}" loading="lazy"><figcaption>${esc(lead.caption)} <a href="${safeUrl(lead.page)}" target="_blank" rel="noopener">${esc(lead.credit)} · ${esc(lead.license)}</a></figcaption></figure>`;
+  h += leadPicHTML(emp); // the picture comes after who ruled this spot, so that list is seen first
   h += `<h3 class="sec">Territory through time</h3>${extentChart(r)}
     <label class="toggle"><input type="checkbox" id="ghostToggle" ${S.showGhost ? "checked" : ""}> Outline greatest extent on the map</label>`;
   if (media) {
@@ -2537,19 +2587,7 @@ function realmHTML() {
     h += `<figure class="ref"><a href="${safeUrl(media.page)}" target="_blank" rel="noopener"><img src="${safeUrl(media.thumb)}" alt="${esc(media.desc || media.file)}" loading="lazy"></a>
       <figcaption>${esc(media.desc || media.file.replace(/^File:/, ""))}<br>${esc(media.artist || "Unknown author")} · ${media.licenseUrl ? `<a href="${safeUrl(media.licenseUrl)}" target="_blank" rel="noopener">${esc(media.license)}</a>` : esc(media.license)} · <a href="${safeUrl(media.page)}" target="_blank" rel="noopener">Wikimedia Commons</a></figcaption></figure>`;
   }
-  if (emp?.rulers?.length) {
-    const pic = (i, x) => { const m = mediaSet()[`ruler:${emp.id}:${i}`]?.[0]; return m && m.caption.startsWith(x.name) ? m : null; }; // index-keyed: the name must still match
-    const pics = emp.rulers.map((x, i) => pic(i, x));
-    const any = pics.some(Boolean);
-    h += `<h3 class="sec">Notable rulers</h3><ul class="rlist${any ? " withpic" : ""}">`;
-    emp.rulers.forEach((x, i) => {
-      const m = pics[i];
-      const img = !any ? "" : m ? `<a class="pp" href="${safeUrl(m.page)}" target="_blank" rel="noopener" title="${esc(m.article)} · ${esc(m.credit)} · ${esc(m.license)}"><img src="${safeUrl(m.image)}" alt="${esc(x.name)}" loading="lazy"></a>` : `<span class="pp none" aria-hidden="true">${esc(x.name.trim()[0] || "")}</span>`;
-      h += `<li>${img}<b>${esc(x.name)}</b><span class="r">${esc(x.reign || "")}</span>${x.note ? `<span class="n">${esc(x.note)}</span>` : ""}</li>`;
-    });
-    h += `</ul>`;
-    if (any) h += `<details class="more credits"><summary>Portrait credits</summary><p class="note">${pics.map((m, i) => m && `${esc(emp.rulers[i].name)}: <a href="${safeUrl(m.page)}" target="_blank" rel="noopener">${esc(m.credit)}</a> (${esc(m.license)})`).filter(Boolean).join(" · ")}</p></details>`;
-  }
+  h += rulersHTML(emp);
   if (emp?.legacy) h += `<h3 class="sec">Legacy</h3><p class="prose">${esc(emp.legacy)}</p>`;
   if (now.length > 1 || (now.length === 1 && now[0].properties.n !== key)) {
     const sorted = [...now].sort((a, b) => b.properties.a - a.properties.a);
@@ -2560,11 +2598,11 @@ function realmHTML() {
   const mc = corrOf(key) || (now[0] && corrOf(now[0].properties.fixed || now[0].properties.n));
   if (mc?.scholarly) // published estimates of the realm's size (the notes beside it are for the people who maintain the map)
     h += `<details class="more mapacc"><summary>How big did it get?</summary><aside class="mapnote"><p>Scholarly peak estimate: <strong>${mkm(mc.scholarly.km2)}M km²</strong>${mc.scholarly.year != null ? ` c. ${shortYear(mc.scholarly.year)}` : ""} (${esc(mc.scholarly.source)}), against ${mkm(peak[2])}M km² on this map.</p></aside></details>`;
-  const links = [r.wiki && `<a href="https://en.wikipedia.org/wiki/${encodeURIComponent(r.wiki.replace(/ /g, "_"))}" target="_blank" rel="noopener">Wikipedia</a>`,
-    r.wd && `<a href="https://www.wikidata.org/wiki/${esc(r.wd)}" target="_blank" rel="noopener">Wikidata</a>`,
+  const links = [wt && `<a href="https://en.wikipedia.org/wiki/${encodeURIComponent(wt.replace(/ /g, "_"))}" target="_blank" rel="noopener">Wikipedia</a>`,
+    r.wd && !moved && `<a href="https://www.wikidata.org/wiki/${esc(r.wd)}" target="_blank" rel="noopener">Wikidata</a>`,
     r.seshat && `<a href="https://seshat-db.com/core/polity/${esc(r.seshat)}" target="_blank" rel="noopener">Seshat</a>`].filter(Boolean);
   if (links.length) h += `<h3 class="sec">Read more</h3><p class="links">${links.join(" · ")}</p>`;
-  h += sourcesList(emp?.sources);
+  h += sourcesList(emp?.sources || note?.sources);
   return h;
 }
 // A realm's page: every state recorded at one spot of it (where it was clicked, else its middle), in time order as on
@@ -2682,6 +2720,7 @@ function sourcesHTML() { // the About page (#about; #sources still opens it)
     <h3 class="sec">Facts and writing</h3>
     <ol class="sources-list">
       <li>Chapters, empire profiles, moments, wars and journeys are written for this atlas and fact-checked against ${L("https://en.wikipedia.org/", "Wikipedia")} (cited statements only), ${L("https://www.wikidata.org/", "Wikidata")}, ${L("https://seshat-db.com/", "Seshat")}, Britannica-level references, museum and university pages, Taagepera and Turchin for empire areas, and regional authorities such as Schwartzberg, Majumdar, the Imperial Gazetteer and the <i>Cambridge Ancient History</i>. Every page lists its own sources.</li>
+      <li>States without a full profile carry a short note of a sentence or two, written for this atlas from ${L("https://en.wikipedia.org/", "Wikipedia")} and ${L("https://www.wikidata.org/", "Wikidata")} and checked one by one against those articles; each card says so where it appears.</li>
       <li>The twelve world regions follow the rows of the SenseForMaps decade-by-decade timeline poster.</li>
     </ol>
 
@@ -4566,7 +4605,8 @@ function setupSearch() {
   for (const e of Object.values(C.byClio)) {
     if (seenEmp.has(e.id)) continue; seenEmp.add(e.id);
     for (const x of e.rulers || []) {
-      const ys = reignYears(x.reign || ""), clio = (e.clio || []).find((k) => realm(k) && ys && realm(k).tl.some(([f, t]) => f <= ys[0] && ys[0] <= t)) || (e.clio || []).find((k) => realm(k));
+      const ks = [...(e.clio || []), ...(e.recon || [])];
+      const ys = reignYears(x.reign || ""), clio = ks.find((k) => realm(k) && ys && realm(k).tl.some(([f, t]) => f <= ys[0] && ys[0] <= t)) || ks.find((k) => realm(k));
       if (clio) all.push({ key: `ruler:${clio}@${ys ? ys[0] : ""}`, name: x.name, raw: e.name, from: ys?.[0], to: ys?.[1], when: x.reign, kind: "Ruler", area: 0 });
     }
   }

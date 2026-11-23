@@ -328,6 +328,7 @@ def main():
     R = clio_ix["realms"]
     correct_timelines(R, J("corrections.json").get("realms") or {})
     recon = add_supplements(R, J("supplements.json"))
+    notes = J("realm-notes.json") if os.path.exists(os.path.join(P, "data", "realm-notes.json")) else {}  # tools/content.py
     culture_realm = {rg.get("key") or rg["name"]: n for n, lst in recon.items() for sp, rg in lst if sp.get("kind") == "cultures"}
     PRESENT = clio_ix["range"][1]
     def story_whole(kind, item):  # a war or an empire story with its long texts, which tools/content.py keeps in data/story/<kind>-<id>.json
@@ -618,6 +619,8 @@ def main():
             when = rg0.get("dateLabel") if culture and rg0.get("dateLabel") else span(a, b)
             text = rg0.get("summary") if culture else " ".join(dict.fromkeys(squash(rg.get("note")) for _, rg in regs if rg.get("note")))
             text = text or regs[0][0].get("summary") or ""
+            if not culture and notes.get(n):  # the short note on the state itself leads; the border notes follow
+                text = notes[n]["text"] + " " + text
             desc = clip(f"{name} ({when}): {sentences(text, 2)}")
             title = ttl(f"{name} ({when if len(when) <= 24 else span(a, b)})", ": archaeological culture" if culture else ": history and map", " on the map")
             body = f'<p class="kicker">{"Archaeological culture" if culture else "Realm · approximate borders"} · {esc(when)}</p><h1>{esc(name)}</h1>'
@@ -656,23 +659,29 @@ def main():
         if group:
             intro = (f"{name} brings together several realms, from {yr(a)} to {'today' if alive else yr(b)}. "
                      f"At its greatest recorded extent, in {yr(pk[0])}, its lands covered about {km2(pk[2])}.")
-        desc = clip(intro + (f" Part of {emp['name']}." if emp and emp["name"] != name else ""))
+        note = None if emp else notes.get(n)  # a short note written for this atlas, for a realm with no profile
+        desc = clip((f"{note['text']} " if note else "") + intro + (f" Part of {emp['name']}." if emp and emp["name"] != name else ""))
         title = ttl(f"{name}{', all member realms' if group and slug(name) in plain_slugs else ''} ({when})", ": territory and map", " on the map")
-        img = commons.get(r.get("wiki")) or (emp and commons.get(emp.get("name")))
+        moved = bool(note and note.get("wiki") and note["wiki"] != r.get("wiki"))  # the note names the right article; the map's links are wrong
+        wt, wd = (note["wiki"], None) if moved else (r.get("wiki"), r.get("wd"))
+        img = (None if moved else commons.get(r.get("wiki"))) or (emp and commons.get(emp.get("name")))
         body = f'<p class="kicker">{what} · {esc(when)}</p><h1>{esc(name)}</h1><p class="lede">{esc(intro)}</p>'
         if emp:
             if emp["name"] != name:
                 body += f'<p>One of the realms of <a href="{esc(emp_path[emp["id"]])}">{esc(emp["name"])}</a>. {esc(sentences(emp["summary"], 2))}</p>'
             else:
                 body += f'<p>{esc(sentences(emp["summary"], 3))} <a href="{esc(emp_path[emp["id"]])}">More about {esc(emp["name"])}</a>.</p>'
+        elif note:
+            body += f'<p>{esc(note["text"])}</p>'
         body += cta(app_realm(pk[0], n), f"See {name} on the map in {yr(pk[0])}")
         if img and img.get("thumb"):
             body += figure({"image": img["thumb"], "page": img.get("page"), "caption": f"Reference map: {re.sub(r'^File:|\.[a-z]+$', '', img.get('file') or '')}",
                             "credit": img.get("artist"), "license": img.get("license")})
-        ext = [f'<a href="{esc(wiki(r["wiki"]))}" rel="noopener">Wikipedia: {esc(r["wiki"])}</a>'] if r.get("wiki") else []
-        if r.get("wd"):
-            ext.append(f'<a href="https://www.wikidata.org/wiki/{esc(r["wd"])}" rel="noopener">Wikidata {esc(r["wd"])}</a>')
-        body += facts([("On the map", esc(span(a, b) if not alive else f"{yr(a)} – today")),
+        ext = [f'<a href="{esc(wiki(wt))}" rel="noopener">Wikipedia: {esc(wt)}</a>'] if wt else []
+        if wd:
+            ext.append(f'<a href="https://www.wikidata.org/wiki/{esc(wd)}" rel="noopener">Wikidata {esc(wd)}</a>')
+        body += facts([("Capital", esc((note or {}).get("capital") or "")),
+                       ("On the map", esc(span(a, b) if not alive else f"{yr(a)} – today")),
                        ("Greatest extent", esc(f"{yr(pk[0])}, about {km2(pk[2])}")),
                        ("Part of", ", ".join(realm_text_link(g) for g in r.get("memberOf") or [])),
                        ("Read more", " · ".join(ext))])
@@ -689,7 +698,7 @@ def main():
         rel += [(era_path(x), f"The world in {yr(x['year'])}: {x['title']}", "chapter") for x in eras_by_clio.get(n, [])]
         body += links(rel, "Related")
         about = {"@type": "Country", "name": name}
-        same = ([wiki(r["wiki"])] if r.get("wiki") else []) + ([f"https://www.wikidata.org/wiki/{r['wd']}"] if r.get("wd") else [])
+        same = ([wiki(wt)] if wt else []) + ([f"https://www.wikidata.org/wiki/{wd}"] if wd else [])
         if same:
             about["sameAs"] = same
         ld = article_ld(path, f"{name} ({when})", desc, img and img.get("thumb"), about,

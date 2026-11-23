@@ -1,0 +1,129 @@
+# Check log: Cliopatria realm notes, batch 7 (full source check)
+
+Every note compared against the downloaded Wikipedia article in clio-wp/ (plus Wikidata facts); web sources where stated.
+
+- [Paraguay] corrected: "which is unusual for a country's everyday life" → "most of its people speak both Spanish and Guaraní ... both have official status" — clumsy, sharpened to what article says — https://en.wikipedia.org/wiki/Paraguay
+- [Bessarabia] verified — https://en.wikipedia.org/wiki/Bessarabia
+- [Republic of Chile] verified — https://en.wikipedia.org/wiki/Chile
+- [Duchy of Brunswick] verified — https://en.wikipedia.org/wiki/Duchy_of_Brunswick
+- [Free City of Hamburg] corrected: "a member of the German Confederation" → "joined the North German Confederation in 1866" — article supports sovereign city-state, NGC 1866 and German Empire 1871, not the 1815 Confederation membership — https://en.wikipedia.org/wiki/Hamburg
+- [Imamate of Yemen] verified — https://en.wikipedia.org/wiki/Imams_of_Yemen
+- [Kingdom of Norway] corrected: "wrote its own constitution at Eidsvoll" → "adopted its own liberal constitution" — Eidsvoll not in article; "forced into" union per article — https://en.wikipedia.org/wiki/Norway
+- [Duchy of Parma and Piacenza] verified — https://en.wikipedia.org/wiki/Duchy_of_Parma_and_Piacenza
+- [Free City of Krakow] verified — https://en.wikipedia.org/wiki/Free_City_of_Cracow
+- [Kingdom of Monaco] verified — https://en.wikipedia.org/wiki/Monaco
+- [Kingdom of the Two Sicilies] verified — https://en.wikipedia.org/wiki/Kingdom_of_the_Two_Sicilies
+- [Principality of Andorra] verified — https://en.wikipedia.org/wiki/Andorra
+- [Massina Empire] verified — https://en.wikipedia.org/wiki/Caliphate_of_Hamdullahi
+- [Principality of Lichtenberg] verified — https://en.wikipedia.org/wiki/Principality_of_Lichtenberg
+- [Riau-Lingga Sultanate] verified — https://en.wikipedia.org/wiki/Riau-Lingga_Sultanate
+- [Talpur Dynasty] corrected: "were conquered by the British in 1843" → "Hyderabad and Mirpur Khas fell ... 1843, but the Khairpur branch survived as a princely state until 1947"; cut "Baloch" — map runs to 1894, Khairpur branch continued; Baloch identity not stated in article — https://en.wikipedia.org/wiki/Talpur_dynasty
+- [Trucial States] verified — https://en.wikipedia.org/wiki/Trucial_States
+- [First Hellenic Republic] corrected: "Historians gave it this name to stress its written constitution and elections" → "a later label, used by scholars to stress the regime's constitutional and democratic character" — "elections" beyond article — https://en.wikipedia.org/wiki/First_Hellenic_Republic
+- [Republic of Peru] verified — https://en.wikipedia.org/wiki/Peru
+- [United Provinces of Central America] corrected: "tore it apart by 1839 to 1841" → "wore it down until it broke apart between 1839 and 1841" — clumsy wording — https://en.wikipedia.org/wiki/Federal_Republic_of_Central_America
+- [Emirate of Jabal Shammar] verified — https://en.wikipedia.org/wiki/Emirate_of_Jabal_Shammar
+- [Caucasian Imamate] verified — https://en.wikipedia.org/wiki/Caucasian_Imamate (capitals from Wikidata)
+- [Oriental Republic of Uruguay] verified — https://en.wikipedia.org/wiki/Uruguay
+- [Republic of Ecuador] verified — https://en.wikipedia.org/wiki/Ecuador
+- [Venezuela] corrected: "huge oil reserves discovered in the twentieth century" → "holds the largest known oil reserves in the world" — discovery date not in article; added strongmen fact from article — https://en.wikipedia.org/wiki/Venezuela
+- [Riograndense Republic] verified — https://en.wikipedia.org/wiki/Riograndense_Republic
+- [Saxe-Coburg and Gotha] verified — https://en.wikipedia.org/wiki/Saxe-Coburg_and_Gotha
+- [Guatemala] corrected: "became a fully separate republic in 1840" → "declared itself separate from it in 1839" — article: 17 April 1839 — https://en.wikipedia.org/wiki/Guatemala
+- [Los Altos] verified — https://en.wikipedia.org/wiki/Los_Altos_(state)
+- [Luxembourg] corrected: "It has kept its independence since the Congress of Vienna in 1815" → "Restored after Napoleon's defeat in 1815, it won full independence in 1867 following the Luxembourg Crisis" — article: regained independence 1867 — https://en.wikipedia.org/wiki/Luxembourg
+- [Ottoman Tripolitania] verified — https://en.wikipedia.org/wiki/Ottoman_Tripolitania
+- [Republic of Costa Rica] corrected: "It abolished its army in 1948 and is known for its rainforests and stable democracy" → "its new constitution of 1949 abolished the army" — article dates abolition to 1949; rainforests not in article — https://en.wikipedia.org/wiki/Costa_Rica
+- [Republic of El Salvador] verified — https://en.wikipedia.org/wiki/El_Salvador
+- [Republic of Nicaragua] verified — https://en.wikipedia.org/wiki/Nicaragua
+- [Republic of the Rio Grande] corrected: "set up by federalists around 1840 ... collapsed within a year when Mexican troops defeated it" → "set up in January 1840 ... made peace at Camargo in November 1840"; added that its documents never used "republic" — article — https://en.wikipedia.org/wiki/Republic_of_the_Rio_Grande
+- [Kingdom of Sarawak] corrected: "made Rajah by the Sultan of Brunei" → "granted the territory by the rulers of Brunei" — article: granted by Raja Muda Hashim, concessions from the Sultan — https://en.wikipedia.org/wiki/Raj_of_Sarawak
+- [Tonga] corrected: "about 170 islands" → "171 islands"; "unified in the 1840s under King George Tupou I" → "united in 1845 by ... Tāufaʻāhau, who had been baptised George"; "never colonised" → "never gave up its sovereignty" — article wording/dates; capital spelling fixed — https://en.wikipedia.org/wiki/Tonga
+- [California Republic] verified — https://en.wikipedia.org/wiki/California_Republic
+- [Kashmir and Jammu] corrected: "in the Himalayas ... the Dogra ruler Gulab Singh" → "sold it to Gulab Singh, the Raja of Jammu"; ending sharpened to article (accession, war, division) — "Himalayas"/"Dogra" not in article; capital Srinagar from Wikidata — https://en.wikipedia.org/wiki/Jammu_and_Kashmir_(princely_state)
+- [Duchy of Holstein] verified — https://en.wikipedia.org/wiki/Duchy_of_Holstein
+- [Montenegro] corrected: "became a secular principality in 1853" → "first as a church state and then as a secular principality" — year not in article (secularisation was 1852); "held out against the Ottomans" softened to semi-autonomy per article — https://en.wikipedia.org/wiki/Montenegro
+- [Mosquito Kingdom] verified — https://en.wikipedia.org/wiki/Mosquito_Coast
+- [New Caledonia] verified+tightened: added "from 1864" for penal colony and nickel discovery — article — https://en.wikipedia.org/wiki/New_Caledonia
+- [Pahang Sultanate] corrected: "the ruler took the title of sultan in the 1880s before British protection came in 1888" → "broke from Johor in 1853 ... Wan Ahmad ... proclaimed sultan in 1881, and accepted a British Resident in 1888" — linked article covers the older 1470-1623 sultanate; checked against Pahang article (history section) — https://en.wikipedia.org/wiki/Pahang
+- [Republic of Baja California] corrected: "hoping to build his own country. It lasted only a few months before he was forced to retreat" → "never recognised and never controlled the peninsula ... gave up in 1854 and surrendered to US forces" — article — https://en.wikipedia.org/wiki/Republic_of_Baja_California
+- [State of Buenos Aires] corrected: "until its defeat at the Battle of Pavón in 1861" → "its own victory at the Battle of Pavón led it to rejoin" — article: Buenos Aires won at Pavón — https://en.wikipedia.org/wiki/State_of_Buenos_Aires
+- [Taiping Heavenly Kingdom] corrected: "one of history's deadliest wars" → "a long, bloody war"; added 30 million people — superlative not in article — https://en.wikipedia.org/wiki/Taiping_Heavenly_Kingdom
+- [Majeerteen Sultanate] corrected: "grew rich on trade ... until Italy conquered it in the 1920s" → "strong trading network ... Italian protectorate in 1889 ... absorbed ... after a war in the 1920s" — map ends 1889 at protectorate treaty, per article — https://en.wikipedia.org/wiki/Majeerteen_Sultanate
+- [Panthay Rebellion] corrected: "which the Qing army crushed in 1872 to 1873" → "held the city of Dali from 1856 ... until Qing forces took it in 1872; the last resistance ended in 1873" — clumsy; dates per article — https://en.wikipedia.org/wiki/Panthay_Rebellion
+- [Kingdom of Fiji] corrected: "led by Ratu Cakobau, who had united many chiefs. Debts and settler pressure" → "first unified Fijian state ... settlers held much of the real power. Heavy debts and unrest" — article says rival chiefs saw him only as first among equals — https://en.wikipedia.org/wiki/Kingdom_of_Fiji
+- [Principality of Bulgaria] verified — https://en.wikipedia.org/wiki/Principality_of_Bulgaria
+- [Sultanate of Hobyo] corrected: "founded in the 1870s ... resisted European rule for decades but was taken over by Italy in the 1920s" → "founded between the 1870s and 1884 ... Italian protectorate in 1889 ... absorbed ... in 1927" — article — https://en.wikipedia.org/wiki/Sultanate_of_Hobyo
+- [Nieuwe Republiek] verified — https://en.wikipedia.org/wiki/Nieuwe_Republiek
+- [Swaziland] verified — https://en.wikipedia.org/wiki/Eswatini
+- [New Hebrides] verified — https://en.wikipedia.org/wiki/New_Hebrides
+- [Korean Empire] verified — https://en.wikipedia.org/wiki/Korean_Empire
+- [Republic of Cuba] verified — https://en.wikipedia.org/wiki/Cuba
+- [Albania] corrected: "ruled by Ahmet Zogu, who became King Zog" → "the strongman Zog, who turned the republic into a monarchy in 1928" — article names him Zog and gives 1928 — https://en.wikipedia.org/wiki/Albania
+- [Republic of Uryankhay] corrected: removed "Little detail is available here"; "declared itself free of Qing China in 1911 to 1912" → "proclaimed in late 1911 ... Russian protection in 1914, when it became Uryankhay Krai" — clio-wp file empty; checked via web search of Wikipedia (Uryankhay Republic, Uryankhay Krai) — https://en.wikipedia.org/wiki/Uryankhay_Republic ; https://en.wikipedia.org/wiki/Uryankhay_Krai
+- [Tangier International Zone] corrected: "It was a busy, cosmopolitan trading city" → cut; added 1923 convention and wartime Spanish occupation — "cosmopolitan trading" not in article — https://en.wikipedia.org/wiki/Tangier_International_Zone
+- [Imamate of Oman] corrected: "until the sultan's forces ended it in the 1950s" → "until the sultan, backed by British forces, defeated it in the Jebel Akhdar War, which ended in 1959" — article — https://en.wikipedia.org/wiki/Imamate_of_Oman
+- [Kingdom of Hejaz] verified — https://en.wikipedia.org/wiki/Kingdom_of_Hejaz
+- [Armenia] verified — https://en.wikipedia.org/wiki/Armenia
+- [Azerbaijan Democratic Republic] verified — https://en.wikipedia.org/wiki/Azerbaijan
+- [Kingdom of Iceland] verified — https://en.wikipedia.org/wiki/Kingdom_of_Iceland
+- [Republic of Finland] verified — https://en.wikipedia.org/wiki/Finland
+- [Serbia] verified — https://en.wikipedia.org/wiki/Serbia
+- [Czechoslovakia] corrected: "split peacefully ... in 1993" → "at the end of 1992"; "Germany broke it up in 1938 to 1939" → "Nazi Germany dismantled it between 1938 and 1939" — article: split on 31 December 1992 — https://en.wikipedia.org/wiki/Czechoslovakia
+- [Estonia] verified — https://en.wikipedia.org/wiki/Estonia
+- [Hungarian Republic] corrected: "about two thirds of its land" → "about 70 percent"; "a kingdom without a king, run by Admiral Miklós Horthy" → "Formally still a kingdom, it was run by the regent Miklós Horthy" — article: 71% of territory; title Admiral not in article — https://en.wikipedia.org/wiki/Hungary
+- [Kingdom of Romania] corrected: "nearly doubled in size" → "gained Bessarabia, Bukovina, Banat and Transylvania" — size claim not in article — https://en.wikipedia.org/wiki/Kingdom_of_Romania
+- [North Yemen] verified — https://en.wikipedia.org/wiki/North_Yemen
+- [Second Polish Republic] reworded: overlap "after more than a century of partition" rewritten; facts verified — https://en.wikipedia.org/wiki/Second_Polish_Republic
+- [Yugoslavia] verified — https://en.wikipedia.org/wiki/Yugoslavia
+- [Republic of Latvia] verified — https://en.wikipedia.org/wiki/Latvia
+- [Irish Free State] verified — https://en.wikipedia.org/wiki/Irish_Free_State
+- [Provisional Priamurye Government] corrected: "until the Red Army took the region in 1922 to 1923" → "when the Japanese left that year the Far Eastern Republic's army won back most of its land"; added 1921 coup, tsar proclamation — article — https://en.wikipedia.org/wiki/Provisional_Priamurye_Government
+- [Republic of the Rif] verified, reworded: added Annual; ending per article (joint task force, surrender 1926) — https://en.wikipedia.org/wiki/Republic_of_the_Rif
+- [Vatican City] verified — https://en.wikipedia.org/wiki/Vatican_City
+- [Kingdom of Iraq] verified — https://en.wikipedia.org/wiki/Kingdom_of_Iraq
+- [Independent State of Croatia] verified — https://en.wikipedia.org/wiki/Independent_State_of_Croatia
+- [Ethiopia] corrected: "one of the oldest in the world" → "heir to the ancient kingdom of Aksum ... with Liberia the only African land never fully colonised" — "oldest in world" not in article — https://en.wikipedia.org/wiki/Ethiopia
+- [Lebanon] verified — https://en.wikipedia.org/wiki/Lebanon
+- [Denmark] verified — https://en.wikipedia.org/wiki/Denmark
+- [Kingdom of Greece] corrected: "restored by a 1946 vote after the German occupation" → "after the German occupation ended in 1944"; added colonels — 1946 plebiscite not in article — https://en.wikipedia.org/wiki/Kingdom_of_Greece
+- [People's Socialist Republic of Albania] corrected: "built thousands of bunkers" → cut; added Hoxha dates — bunkers not in article — https://en.wikipedia.org/wiki/People's_Socialist_Republic_of_Albania
+- [Republic of Iceland] verified — https://en.wikipedia.org/wiki/Iceland
+- [Second Syrian Republic] verified — https://en.wikipedia.org/wiki/Second_Syrian_Republic
+- [Socialist Federal Republic of Yugoslavia] verified — https://en.wikipedia.org/wiki/Socialist_Federal_Republic_of_Yugoslavia
+- [Hungary] verified — https://en.wikipedia.org/wiki/Hungary
+- [Kingdom of Bulgaria] verified — https://en.wikipedia.org/wiki/Kingdom_of_Bulgaria
+- [Republic of the Philippines] verified — https://en.wikipedia.org/wiki/Philippines
+- [Democratic People's Republic of Korea] reworded: overlap "the northern half of the Korean peninsula" rewritten; facts verified — https://en.wikipedia.org/wiki/North_Korea
+- [People's Republic of Bulgaria] corrected: "Todor Zhivkov led it for decades. It gave way to democracy in 1989 to 1990" → "led the party from 1954 until he was removed in 1989 ... gave way to democracy in 1990" — clumsy; dates per article — https://en.wikipedia.org/wiki/People's_Republic_of_Bulgaria
+- [Republic of Korea] corrected: "It grew from a poor country into a wealthy democracy" → "economy grew at one of the fastest rates ... became a democracy in 1987" — sharpened to article — https://en.wikipedia.org/wiki/South_Korea
+- [Socialist Republic of Romania] verified — https://en.wikipedia.org/wiki/Socialist_Republic_of_Romania
+- [Sri Lanka] verified — https://en.wikipedia.org/wiki/Sri_Lanka
+- [Netherlands New Guinea] corrected: "passed to Indonesia in 1962 to 1963. The Dutch named its main town Hollandia" → "passed to a UN authority in 1962 and to Indonesia in 1963"; Hollandia as seat of government — article + Jayapura article (capital since 1945) — https://en.wikipedia.org/wiki/Dutch_New_Guinea ; https://en.wikipedia.org/wiki/Jayapura
+- [Kingdom of Libya] verified — https://en.wikipedia.org/wiki/Kingdom_of_Libya
+- [Republic of Egypt] verified — https://en.wikipedia.org/wiki/Egypt
+- [Republic of Poland] verified — https://en.wikipedia.org/wiki/Poland
+- [Democratic Republic of Vietnam] verified — https://en.wikipedia.org/wiki/North_Vietnam
+- [Kingdom of Cambodia] verified — https://en.wikipedia.org/wiki/Cambodia
+- [Kingdom of Laos] corrected: "independent from 1947 to 1975" → "self-rule ... in 1947 and full independence in 1953"; cut "The king lived at Luang Prabang" — article: independence 22 Oct 1953; royal residence not in article (Luang Prabang only in Wikidata capitals) — https://en.wikipedia.org/wiki/Kingdom_of_Laos
+- [Republic of Sudan] verified — https://en.wikipedia.org/wiki/Sudan
+- [Republic of Tunisia] verified — https://en.wikipedia.org/wiki/Tunisia
+- [Republic of Vietnam] verified — https://en.wikipedia.org/wiki/South_Vietnam
+- [Ghana] verified — https://en.wikipedia.org/wiki/Ghana
+- [Arab Federation] corrected: "It ended in July 1958" → "collapsed when a revolution overthrew Iraq's King Faisal II in July 1958 and was formally dissolved that August"; capital "Baghdad; Amman" → "Baghdad" — article: dissolved 2 Aug 1958; Amman not supported by article or Wikidata — https://en.wikipedia.org/wiki/Arab_Federation
+- [Republic of Texas] corrected: "joined the United States as a state in 1845 to 1846" → "annexed it in December 1845, and power passed to the new state government in February 1846"; Houston as first elected president — article — https://en.wikipedia.org/wiki/Republic_of_Texas
+
+## Counts
+- Notes read: 110
+- Verified unchanged: 66
+- Corrected (facts or unsupported claims fixed): 40
+- Reworded only (7-word overlap with article removed, facts verified): 2
+- Verified with small additions: 2
+- Reduced to cautious statement: 0 (Uryankhay Republic article file was empty; rewritten from Wikipedia via web search instead)
+- Capitals changed: 2 (Arab Federation "Baghdad; Amman" → "Baghdad"; Tonga spelling → Nukuʻalofa); removed: 0
+- Capitals supported only by Wikidata (not article text): Caucasian Imamate (Dargo; later Vedeno), Kashmir and Jammu (Srinagar), Kingdom of Laos (Vientiane), Swaziland (Mbabane; Lobamba), North Yemen (article: Sanaa)
+
+## Still doubtful
+- Netherlands New Guinea: capital Hollandia supported by the Jayapura article (capital from 1945), not by the Dutch New Guinea article.
+- Talpur Dynasty: map runs 1820-1894; note now covers the Khairpur branch surviving to 1947.
+- Republic of Uryankhay: sources (Wikipedia via search) differ on 14 vs 17 April 1914 for the protectorate; note says only 1914.

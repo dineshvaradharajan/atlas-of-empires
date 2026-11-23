@@ -1,0 +1,88 @@
+# Full check, recon-2 (out-recon-2.json)
+Method: English Wikipedia article text fetched via the MediaWiki API for each note's wiki title (plus Cutch State, Karnat dynasty, Principality of Albania (medieval)); notes checked against the article and the region data in in-recon-2.json. Realms already verified or corrected in checklog-recon-1-2.md were skipped (52 notes).
+
+- [Mengujekids] corrected: "Turkmen beylik" → "Turkish beylik" — https://en.wikipedia.org/wiki/House_of_Mengüjek
+- [Bavand dynasty] corrected: "Ispahbadiyya" → "Ispahbadhiyya" (article spelling) — https://en.wikipedia.org/wiki/Bavand_dynasty
+- [Kingdom of Mapungubwe] verified (details beyond the article, e.g. extra dates, rest on the region data) — https://en.wikipedia.org/wiki/Kingdom_of_Mapungubwe
+- [Margraviate of Meissen] verified (details beyond the article, e.g. extra dates, rest on the region data) — https://en.wikipedia.org/wiki/Margravate_of_Meissen
+- [Duchy of Cleves] verified (details beyond the article, e.g. extra dates, rest on the region data) — https://en.wikipedia.org/wiki/Duchy_of_Cleves
+- [Karnats of Mithila (Tirhut)] corrected: text verified; wiki None → "Karnats of Mithila" — https://en.wikipedia.org/wiki/Karnats_of_Mithila
+- [Ahlatshahs (Shah-Armens)] corrected: "A Turkmen dynasty" → "An Armenian-Turkic Muslim dynasty" — https://en.wikipedia.org/wiki/Shah-Armens
+- [Duchy of Jülich] verified (details beyond the article, e.g. extra dates, rest on the region data) — https://en.wikipedia.org/wiki/Duchy_of_Jülich
+- [Khasa Malla kingdom] verified (details beyond the article, e.g. extra dates, rest on the region data) — https://en.wikipedia.org/wiki/Khasa_Kingdom
+- [Artuqids] verified (details beyond the article, e.g. extra dates, rest on the region data) — https://en.wikipedia.org/wiki/Artuqids
+- [Manipur (Kangleipak)] verified (details beyond the article, e.g. extra dates, rest on the region data) — https://en.wikipedia.org/wiki/Manipur_(princely_state)
+- [Kingdom of Thomond] verified (details beyond the article, e.g. extra dates, rest on the region data) — https://en.wikipedia.org/wiki/Thomond
+- [Kingdom of Cochin (Perumpadappu Swaroopam)] verified (details beyond the article, e.g. extra dates, rest on the region data) — https://en.wikipedia.org/wiki/Kingdom_of_Cochin
+- [Venad (Kingdom of Quilon)] corrected: "campaign to Kanchi in 1312-13" → "expedition north as far as Kanchi in the early 14th century" (page: Kanchi inscription 1314) — https://en.wikipedia.org/wiki/Venadu_kingdom
+- [Duchy of Guelders] verified (details beyond the article, e.g. extra dates, rest on the region data) — https://en.wikipedia.org/wiki/Duchy_of_Guelders
+- [Eldiguzids (Atabegs of Azerbaijan)] verified (details beyond the article, e.g. extra dates, rest on the region data) — https://en.wikipedia.org/wiki/Eldiguzids
+- [Kutch (Samma-Jadeja chiefs)] corrected: "capital moved to Bhuj in 1549" → "united it in 1549 and later moved the capital to Bhuj"; wiki None → Cutch State — https://en.wikipedia.org/wiki/Cutch_State
+- [Chauhan Dynasty (Delhi and Hansi)] verified (details beyond the article, e.g. extra dates, rest on the region data) — https://en.wikipedia.org/wiki/Chauhan_dynasty
+- [Deheubarth (the Lord Rhys)] verified (details beyond the article, e.g. extra dates, rest on the region data) — https://en.wikipedia.org/wiki/Deheubarth
+- [Hazaraspids] verified (details beyond the article, e.g. extra dates, rest on the region data) — https://en.wikipedia.org/wiki/Hazaraspids
+- [Kingdom of Jaisalmer] verified (details beyond the article, e.g. extra dates, rest on the region data) — https://en.wikipedia.org/wiki/Kingdom_of_Jaisalmer
+- [Chahamanas of Jalor] verified (details beyond the article, e.g. extra dates, rest on the region data) — https://en.wikipedia.org/wiki/Chahamanas_of_Jalor
+- [Republic of Lucca] verified (details beyond the article, e.g. extra dates, rest on the region data) — https://en.wikipedia.org/wiki/Republic_of_Lucca
+- [County of Oldenburg] verified (details beyond the article, e.g. extra dates, rest on the region data) — https://en.wikipedia.org/wiki/County_of_Oldenburg
+- [Duchy of Pomerania] corrected: "Sweden occupied and divided it" → occupied by Sweden after 1637, divided with Brandenburg 1648 — https://en.wikipedia.org/wiki/Duchy_of_Pomerania
+- [Duchy of Brabant] verified (details beyond the article, e.g. extra dates, rest on the region data) — https://en.wikipedia.org/wiki/Duchy_of_Brabant
+- [Principality of Arbanon] verified (details beyond the article, e.g. extra dates, rest on the region data) — https://en.wikipedia.org/wiki/Principality_of_Arbanon
+- [Chahamanas of Ranthambore] verified (details beyond the article, e.g. extra dates, rest on the region data) — https://en.wikipedia.org/wiki/Chahamanas_of_Ranastambhapura
+- [Electorate of Mainz] verified (details beyond the article, e.g. extra dates, rest on the region data) — https://en.wikipedia.org/wiki/Electorate_of_Mainz
+- [Kingdom of Benin] verified (details beyond the article, e.g. extra dates, rest on the region data) — https://en.wikipedia.org/wiki/Kingdom_of_Benin
+- [Republic of Siena] verified (details beyond the article, e.g. extra dates, rest on the region data) — https://en.wikipedia.org/wiki/Republic_of_Siena
+- [Tyrconnell (Tír Chonaill)] verified (details beyond the article, e.g. extra dates, rest on the region data) — https://en.wikipedia.org/wiki/Tyrconnell
+- [Triarchy of Negroponte] verified (details beyond the article, e.g. extra dates, rest on the region data) — https://en.wikipedia.org/wiki/Triarchy_of_Negroponte
+- [Qabacha's sultanate (Multan and Uch)] verified (details beyond the article, e.g. extra dates, rest on the region data) — https://en.wikipedia.org/wiki/Nasir_ad-Din_Qabacha
+- [Electoral Palatinate] verified (details beyond the article, e.g. extra dates, rest on the region data) — https://en.wikipedia.org/wiki/Electoral_Palatinate
+- [Qutlugh-Khanids] verified (details beyond the article, e.g. extra dates, rest on the region data) — https://en.wikipedia.org/wiki/Qutlugh-Khanids
+- [Sultanate of Mogadishu] verified (details beyond the article, e.g. extra dates, rest on the region data) — https://en.wikipedia.org/wiki/Sultanate_of_Mogadishu
+- [Archbishopric of Riga] verified (details beyond the article, e.g. extra dates, rest on the region data) — https://en.wikipedia.org/wiki/Archbishopric_of_Riga
+- [Signoria of Milan] verified (details beyond the article, e.g. extra dates, rest on the region data) — https://en.wikipedia.org/wiki/Lordship_of_Milan
+- [Beylik of Lâdik (İnançoğulları)] verified (details beyond the article, e.g. extra dates, rest on the region data) — https://en.wikipedia.org/wiki/Beylik_of_Lâdik
+- [Landgraviate of Hesse] verified (details beyond the article, e.g. extra dates, rest on the region data) — https://en.wikipedia.org/wiki/Landgraviate_of_Hesse
+- [Lordship of Ferrara (Este)] verified (details beyond the article, e.g. extra dates, rest on the region data) — https://en.wikipedia.org/wiki/Duchy_of_Ferrara
+- [Principality of Brunswick-Wolfenbüttel] verified (details beyond the article, e.g. extra dates, rest on the region data) — https://en.wikipedia.org/wiki/Principality_of_Brunswick-Wolfenbüttel
+- [Principality of Lüneburg] verified (details beyond the article, e.g. extra dates, rest on the region data) — https://en.wikipedia.org/wiki/Principality_of_Lüneburg
+- [Este state: Ferrara, Modena and Reggio] verified (details beyond the article, e.g. extra dates, rest on the region data) — https://en.wikipedia.org/wiki/Duchy_of_Ferrara
+- [Beylik of Alaiye] corrected: removed "1243" (page: 1242) and "Cyprus" (Peter I attempt failed 1366); added Mamluk purchase 1427 — https://en.wikipedia.org/wiki/Alaiye
+- [Duchy of Saxe-Lauenburg] verified (details beyond the article, e.g. extra dates, rest on the region data) — https://en.wikipedia.org/wiki/Saxe-Lauenburg
+- [Duchy of Saxe-Wittenberg] verified (details beyond the article, e.g. extra dates, rest on the region data) — https://en.wikipedia.org/wiki/Saxe-Wittenberg
+- [Kingdom of Mewar (Sisodias)] verified (details beyond the article, e.g. extra dates, rest on the region data) — https://en.wikipedia.org/wiki/Kingdom_of_Mewar
+- [Lordship of Mantua] verified (details beyond the article, e.g. extra dates, rest on the region data) — https://en.wikipedia.org/wiki/Marquisate_of_Mantua
+- [Prince-Archbishopric of Salzburg] verified (details beyond the article, e.g. extra dates, rest on the region data) — https://en.wikipedia.org/wiki/Prince-Archbishopric_of_Salzburg
+- [Madurai Sultanate (Ma'bar)] corrected: "ruled the old Pandya country" → "Madurai and parts of the old Pandya country" (page: Madurai, Tiruchirapalli, South Arcot) — https://en.wikipedia.org/wiki/Madurai_Sultanate
+- [Early Vijayanagara (Sangama brothers)] verified (details beyond the article, e.g. extra dates, rest on the region data) — https://en.wikipedia.org/wiki/Vijayanagara_Empire
+- [Musunuri Nayakas] corrected: removed "around 1365" (page gives no date for the Golconda cession) — https://en.wikipedia.org/wiki/Musunuri_Nayakas
+- [Kingdom of Gampola] corrected: "south-west and centre" → "central hills near Kandy" — https://en.wikipedia.org/wiki/Kingdom_of_Gampola
+- [Beylik of Tacettin] corrected: "between Trebizond, the Eretnids and the Ottomans" → Ottomans and Kadi Burhan al-Din at Sivas (page) — https://en.wikipedia.org/wiki/Emirate_of_Limnia
+- [Kingdom of Katsina] verified (details beyond the article, e.g. extra dates, rest on the region data) — https://en.wikipedia.org/wiki/Kingdom_of_Katsina
+- [Beylik of Erzincan (Emirate of Erzincan)] verified (details beyond the article, e.g. extra dates, rest on the region data) — https://en.wikipedia.org/wiki/Emirate_of_Erzincan
+- [Garhwal Kingdom] verified (details beyond the article, e.g. extra dates, rest on the region data) — https://en.wikipedia.org/wiki/Garhwal_kingdom
+- [Jolof Empire] verified (details beyond the article, e.g. extra dates, rest on the region data) — https://en.wikipedia.org/wiki/Jolof_Empire
+- [Principality of Albania (Thopia)] corrected: text verified; wiki "Karl Thopia" (person) → "Principality of Albania (medieval)" — https://en.wikipedia.org/wiki/Principality_of_Albania_(medieval)
+- [Recherla Nayakas (Velamas)] verified (details beyond the article, e.g. extra dates, rest on the region data) — https://en.wikipedia.org/wiki/Recherla_Nayakas
+- [Kadi Burhan al-Din's state] verified (details beyond the article, e.g. extra dates, rest on the region data) — https://en.wikipedia.org/wiki/Kadi_Burhan_al-Din
+- [Duchy of Athens (Acciaioli)] verified (details beyond the article, e.g. extra dates, rest on the region data) — https://en.wikipedia.org/wiki/Duchy_of_Athens
+- [Tomaras of Gwalior] verified (details beyond the article, e.g. extra dates, rest on the region data) — https://en.wikipedia.org/wiki/Tomaras_of_Gwalior
+- [Kingdom of Marwar (Mandore)] verified (details beyond the article, e.g. extra dates, rest on the region data) — https://en.wikipedia.org/wiki/Kingdom_of_Marwar
+- [Sultanate of Agadez] verified (details beyond the article, e.g. extra dates, rest on the region data) — https://en.wikipedia.org/wiki/Sultanate_of_Agadez
+- [Gujarat Sultanate] verified (details beyond the article, e.g. extra dates, rest on the region data) — https://en.wikipedia.org/wiki/Gujarat_Sultanate
+- [Kingdom of Kotte] verified (details beyond the article, e.g. extra dates, rest on the region data) — https://en.wikipedia.org/wiki/Kingdom_of_Kotte
+- [Sultanate of Tuggurt] verified (details beyond the article, e.g. extra dates, rest on the region data) — https://en.wikipedia.org/wiki/Sultanate_of_Tuggurt
+- [Jabrid dynasty] verified (details beyond the article, e.g. extra dates, rest on the region data) — https://en.wikipedia.org/wiki/Jabrids
+- [Kingdom of Dagbon] verified (details beyond the article, e.g. extra dates, rest on the region data) — https://en.wikipedia.org/wiki/Kingdom_of_Dagbon
+- [Kingdom of Mewar] verified (details beyond the article, e.g. extra dates, rest on the region data) — https://en.wikipedia.org/wiki/Kingdom_of_Mewar
+- [Marquisate of Mantua] verified (details beyond the article, e.g. extra dates, rest on the region data) — https://en.wikipedia.org/wiki/Marquisate_of_Mantua
+- [Garha kingdom (Garha-Mandla)] verified (details beyond the article, e.g. extra dates, rest on the region data) — https://en.wikipedia.org/wiki/Garha_kingdom
+- [League of Lezhë] corrected: "league dissolved after 1468" → fragile alliance that fragmented soon after forming (page: no official dissolution date) — https://en.wikipedia.org/wiki/League_of_Lezh%C3%AB
+- [Langah Sultanate] corrected: "Qutb ud-Din Mahmud (Rai Sahra)" → "according to Firishta, Rai Sahra" (page: founder disputed) — https://en.wikipedia.org/wiki/Langah_Sultanate
+- [Gobir] verified (details beyond the article, e.g. extra dates, rest on the region data) — https://en.wikipedia.org/wiki/Gobir
+- [Karagwe] verified (details beyond the article, e.g. extra dates, rest on the region data) — https://en.wikipedia.org/wiki/Kingdom_of_Karagwe
+- [Kingdom of Butua (Torwa)] verified (details beyond the article, e.g. extra dates, rest on the region data) — https://en.wikipedia.org/wiki/Kingdom_of_Butua
+- [Kingdom of Marwar] verified (details beyond the article, e.g. extra dates, rest on the region data) — https://en.wikipedia.org/wiki/Kingdom_of_Marwar
+- [Bikaner kingdom] verified (details beyond the article, e.g. extra dates, rest on the region data) — https://en.wikipedia.org/wiki/Bikaner_State
+- [Maravi] verified (details beyond the article, e.g. extra dates, rest on the region data) — https://en.wikipedia.org/wiki/Maravi
+
+Counts: notes read 83 (of 135; 52 skipped as already checked); verified unchanged 68; corrected 15; reduced to region data 0; wiki titles changed/added 3 (Kutch, Karnats of Mithila, Thopia).

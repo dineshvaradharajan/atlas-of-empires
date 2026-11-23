@@ -1287,6 +1287,9 @@
    "Great Zimbabwe"
   ],
   "clio": [],
+  "recon": [
+   "Kingdom of Zimbabwe"
+  ],
   "region": "southern-africa",
   "start": 1220,
   "end": 1450,
@@ -6011,6 +6014,9 @@
    "Tiahuanaco Empire"
   ],
   "clio": [],
+  "recon": [
+   "Tiwanaku"
+  ],
   "region": "northern-south-america",
   "start": 500,
   "end": 1000,
@@ -6047,6 +6053,9 @@
    "Huari Empire"
   ],
   "clio": [],
+  "recon": [
+   "Wari Empire"
+  ],
   "region": "northern-south-america",
   "start": 600,
   "end": 1000,
@@ -9728,6 +9737,9 @@
    "Mwenemutapa"
   ],
   "clio": [],
+  "recon": [
+   "Kingdom of Mutapa"
+  ],
   "region": "southern-africa",
   "start": 1430,
   "end": 1760,
@@ -10728,6 +10740,4108 @@
    {
     "title": "Wikipedia: Capital of New Zealand",
     "url": "https://en.wikipedia.org/wiki/Capital_of_New_Zealand"
+   }
+  ]
+ },
+ {
+  "id": "scythians",
+  "name": "Scythians",
+  "aliases": [],
+  "clio": [
+   "Scythia"
+  ],
+  "region": "europe",
+  "start": -700,
+  "end": -200,
+  "capital": "In the Kuban valley until the late 7th century BCE; later Kamianka (Kamenskoe) on the Dnieper; after the fall, Scythian Neapolis in Crimea",
+  "peak": {
+   "year": -400,
+   "areaKm2": 1000000,
+   "note": "c. 1.0M km² c. 400 BCE (Turchin 2009); this map draws c. 1.7M km² c. 650 – 550 BCE"
+  },
+  "rulers": [
+   {
+    "name": "Bartatua",
+    "reign": "c. 679 – 665 BCE",
+    "note": "Married a daughter of the Assyrian king Esarhaddon"
+   },
+   {
+    "name": "Madyes",
+    "reign": "c. 658 – 625 BCE",
+    "note": "Led the Scythians at the height of their power in western Asia; Herodotus says they ruled Media for 28 years"
+   },
+   {
+    "name": "Idanthyrsus",
+    "reign": "c. 513 BCE",
+    "note": "Led the resistance when Darius I of Persia invaded"
+   },
+   {
+    "name": "Ateas",
+    "reign": "c. 360s – 339 BCE",
+    "note": "United the tribes from the Danube to the Sea of Azov; killed fighting Philip II of Macedon"
+   }
+  ],
+  "summary": "The Scythians were Iranian-speaking nomads, famous as horse archers, who ruled the steppes north of the Black Sea from about 700 to 200 BCE. Moving west from Central Asia, they reached the plains north of the Caucasus in the 8th century BCE and raided deep into the Middle East. Under King Madyes they dominated western Asia for nearly thirty years, and Scythian warriors helped the Medes bring down Assyria. Back on the Pontic steppe, they traded with Greek colonies on the coast, and Greek luxury goods filled the great burial mounds, or kurgans, of their kings. When the Persian king Darius I invaded around 513 BCE, the Scythians kept retreating before him and he gained nothing. King Ateas united the tribes from the Danube to the Sea of Azov but was killed fighting Philip II of Macedon in 339 BCE. From the 3rd century BCE the Sarmatians overran Scythia, though a smaller Scythian kingdom in Crimea lasted until Goths and other peoples overwhelmed it in the 3rd century CE.",
+  "legacy": "Scythian gold from royal kurgans such as Solokha and Chertomlyk is world famous, and Herodotus's long account of the Scythians is one of our main windows on the early steppe peoples.",
+  "sources": [
+   {
+    "title": "Wikipedia: Scythians",
+    "url": "https://en.wikipedia.org/wiki/Scythians"
+   },
+   {
+    "title": "Wikipedia: Ateas",
+    "url": "https://en.wikipedia.org/wiki/Ateas"
+   },
+   {
+    "title": "Wikipedia: Idanthyrsus",
+    "url": "https://en.wikipedia.org/wiki/Idanthyrsus"
+   },
+   {
+    "title": "Turchin (2009), A theory for formation of large empires",
+    "url": "https://cdn.sanity.io/files/h96r8f9p/ds_1/4f5d7c534b86b3833e1e27381113584873e35ec7.pdf"
+   }
+  ]
+ },
+ {
+  "id": "median-kingdom",
+  "name": "Median kingdom",
+  "aliases": [],
+  "clio": [
+   "Median Kingdom"
+  ],
+  "region": "middle-east-south-asia",
+  "start": -678,
+  "end": -550,
+  "capital": "Ecbatana (modern Hamadan)",
+  "peak": {
+   "year": -585,
+   "areaKm2": 2800000,
+   "note": "Under Cyaxares, from north-eastern Iran to the Halys River in Anatolia; c. 2.8M km² c. 585 BCE (Taagepera 1979; Turchin, Adams & Hall 2006)"
+  },
+  "rulers": [
+   {
+    "name": "Deioces",
+    "reign": "c. 700 – 678 BCE",
+    "note": "Founder in Herodotus' account, which gives him 53 years (c. 700 – 647 BCE); his story is partly legendary"
+   },
+   {
+    "name": "Phraortes",
+    "reign": "c. 678 – 625 BCE",
+    "note": "Herodotus gives him 22 years (c. 647 – 625 BCE); dates here follow the view that Median rule began with him c. 678"
+   },
+   {
+    "name": "Cyaxares",
+    "reign": "c. 625 – 585 BCE",
+    "note": "Destroyed Assyria together with Babylon and fought Lydia"
+   },
+   {
+    "name": "Astyages",
+    "reign": "c. 585 – 550 BCE",
+    "note": "Last king; handed over to Cyrus by his own army"
+   }
+  ],
+  "summary": "The Median kingdom, centred on Ecbatana (modern Hamadan), was a state of an Iranian people that helped bring down the Assyrian Empire before Cyrus the Great absorbed it into Persia. In the 8th and 7th centuries BCE the Medes were a loose federation of tribes, and the Greek historian Herodotus later told of a line of kings beginning with Deioces, who supposedly united them. The most powerful was Cyaxares, who took Assur in 614 BCE and, allied with Nabopolassar of Babylon, sacked Nineveh in 612, destroying Assyria. Cyaxares then pushed west and fought King Alyattes of Lydia in a war whose last battle, by the Halys River, is dated to 585 BCE. His successor Astyages ruled for about 35 years, until in 550 BCE his own army turned on him and handed him to Cyrus, a Persian prince. With so little Median writing or archaeology surviving, historians still debate whether the Medes built a true empire or a looser tribal alliance.",
+  "legacy": "Cyrus's capture of Ecbatana and the Median treasure launched the Persian Achaemenid Empire, which took over the Medes' lands and rose to rule from Egypt to the Indus.",
+  "sources": [
+   {
+    "title": "Wikipedia: Medes",
+    "url": "https://en.wikipedia.org/wiki/Medes"
+   },
+   {
+    "title": "Wikipedia: Median dynasty",
+    "url": "https://en.wikipedia.org/wiki/Median_dynasty"
+   },
+   {
+    "title": "Livius: Medes",
+    "url": "https://www.livius.org/articles/people/medes/"
+   },
+   {
+    "title": "Turchin, Adams & Hall (2006), East-West Orientation of Historical Empires, Journal of World-Systems Research 12(2), Table 1",
+    "url": "https://jwsr.pitt.edu/ojs/jwsr/article/download/369/381"
+   },
+   {
+    "title": "Wikipedia: List of largest empires",
+    "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+   }
+  ]
+ },
+ {
+  "id": "nanda-empire",
+  "name": "Nanda Empire",
+  "aliases": [],
+  "clio": [
+   "Nanda Empire"
+  ],
+  "region": "middle-east-south-asia",
+  "start": -345,
+  "end": -322,
+  "capital": "Pataliputra (near modern Patna)",
+  "peak": {
+   "year": -345,
+   "areaKm2": 1000000,
+   "note": "Magadha under the Nandas, across the Ganges plain and perhaps into Kalinga; Taagepera (1978) puts Magadha at c. 1.0M km² around 350 BCE, while this map draws c. 1.6M km²"
+  },
+  "rulers": [
+   {
+    "name": "Mahapadma Nanda",
+    "reign": "c. 345 BCE – ? (dates disputed)",
+    "note": "Founder, called sole sovereign and destroyer of the old warrior clans in the Puranas"
+   },
+   {
+    "name": "Sukalpa and other sons of Mahapadma",
+    "reign": "c. 12 years in all, per the Puranas",
+    "note": "Eight successors in tradition, but only one is named"
+   },
+   {
+    "name": "Dhana Nanda",
+    "reign": "c. 329 – 322 BCE",
+    "note": "Last king, probably the Agrammes of Greek writers; overthrown by Chandragupta Maurya"
+   }
+  ],
+  "summary": "The Nanda dynasty turned the kingdom of Magadha, in the eastern Ganges plain, into an empire that dominated northern India in the 4th century BCE. Its founder, Mahapadma Nanda, was remembered in Greek, Jain and Puranic traditions as a man of humble birth, perhaps a barber's son, who seized the throne around 345 BCE, though some scholars date him earlier. The Puranas say he wiped out the old warrior clans, and his realm covered the Ganges valley and may have reached Kalinga on the east coast. From their capital at Pataliputra the Nandas levied heavy taxes, hoarded famous treasure and kept a vast army; Greek writers claimed it had thousands of war elephants. Fear of that army helped persuade Alexander the Great's weary soldiers to refuse to march further into India. Yet the last king, Dhana Nanda, was unpopular, and later tradition branded him greedy. Around 322 BCE Chandragupta Maurya, guided by the Brahmin Chanakya, took Pataliputra and founded the Maurya Empire.",
+  "legacy": "The Nandas' tax system, army and capital at Pataliputra became the foundation on which the Mauryas built an empire covering most of the subcontinent.",
+  "sources": [
+   {
+    "title": "Wikipedia: Nanda Empire",
+    "url": "https://en.wikipedia.org/wiki/Nanda_Empire"
+   },
+   {
+    "title": "Wikipedia: Mahapadma Nanda",
+    "url": "https://en.wikipedia.org/wiki/Mahapadma_Nanda"
+   },
+   {
+    "title": "Wikipedia: Dhana Nanda",
+    "url": "https://en.wikipedia.org/wiki/Dhana_Nanda"
+   },
+   {
+    "title": "Taagepera (1978), Size and Duration of Empires: Systematics of Size",
+    "url": "https://escholarship.org/content/qt8vx325vq/qt8vx325vq.pdf"
+   }
+  ]
+ },
+ {
+  "id": "greco-bactrian-kingdom",
+  "name": "Greco-Bactrian Kingdom",
+  "aliases": [],
+  "clio": [
+   "Greco-Bactrian Kingdom"
+  ],
+  "region": "north-central-asia",
+  "start": -250,
+  "end": -130,
+  "capital": "Bactra (modern Balkh); Ai-Khanoum was another royal city",
+  "peak": {
+   "year": -184,
+   "areaKm2": 2500000,
+   "note": "Under the Euthydemid kings, from Sogdiana to the edge of India; c. 2.5M km² c. 184 BCE (Taagepera 1979, as cited by Wikipedia), while Taagepera (1978) tabulates Bactria at c. 1.8M km² for 200 BCE and c. 2.0M km² for 150 BCE"
+  },
+  "rulers": [
+   {
+    "name": "Diodotus I",
+    "reign": "c. 256 – 235 BCE",
+    "note": "Seleucid governor who broke away and made himself king"
+   },
+   {
+    "name": "Euthydemus I",
+    "reign": "c. 230 – 200 BCE",
+    "note": "Usurper who withstood a long siege by Antiochus III"
+   },
+   {
+    "name": "Demetrius I",
+    "reign": "c. 200 – 180 BCE",
+    "note": "Led the Greek push across the Hindu Kush into India"
+   },
+   {
+    "name": "Eucratides I",
+    "reign": "c. 171 – 145 BCE",
+    "note": "Seized the throne, fought rival kings and was murdered by his son"
+   },
+   {
+    "name": "Heliocles I",
+    "reign": "c. 145 – 130 BCE",
+    "note": "Last Greek king to hold Bactria"
+   }
+  ],
+  "summary": "The Greco-Bactrian Kingdom was a Greek state in Central Asia, centred on the fertile land of Bactria in what is now northern Afghanistan. It grew out of Alexander the Great's conquests: his Seleucid successors settled Greeks there, and around 250 BCE their governor Diodotus broke away and made himself king. A later king, Euthydemus, held his capital Bactra through a siege of about three years by the Seleucid ruler Antiochus III, who finally recognised him around 206 BCE. Under Euthydemus's son Demetrius the Greeks crossed the Hindu Kush into north-west India, founding the Indo-Greek kingdoms. Bactria, called the land of a thousand cities, blended Greek and local ways, as the theatre and gymnasium of Ai-Khanoum and its fine portrait coins show. Civil wars and pressure from Parthia weakened it, especially after King Eucratides was murdered by his own son around 145 BCE. Nomads, first Sakas and then the Yuezhi, overran the country from about 130 BCE.",
+  "legacy": "Greek rule in Bactria carried Hellenistic art and coinage deep into Asia, feeding the Greco-Buddhist art of Gandhara, and the Yuezhi who replaced it went on to found the Kushan Empire.",
+  "sources": [
+   {
+    "title": "Wikipedia: Greco-Bactrian Kingdom",
+    "url": "https://en.wikipedia.org/wiki/Greco-Bactrian_Kingdom"
+   },
+   {
+    "title": "Wikipedia: List of largest empires",
+    "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+   },
+   {
+    "title": "Taagepera (1978), Size and Duration of Empires: Systematics of Size",
+    "url": "https://escholarship.org/content/qt8vx325vq/qt8vx325vq.pdf"
+   },
+   {
+    "title": "Wikipedia: Heliocles I",
+    "url": "https://en.wikipedia.org/wiki/Heliocles_I"
+   }
+  ]
+ },
+ {
+  "id": "eighteen-kingdoms",
+  "name": "Eighteen Kingdoms",
+  "aliases": [],
+  "clio": [
+   "(Eighteen Kingdoms)",
+   "Zhai"
+  ],
+  "region": "east-asia",
+  "start": -206,
+  "end": -202,
+  "capital": "No common capital; the overlord Xiang Yu ruled Western Chu from Pengcheng (modern Xuzhou), and each king had his own seat, such as Gaonu for Zhai",
+  "peak": {
+   "year": -206,
+   "areaKm2": 1600000,
+   "note": "The former Qin empire divided among the kingdoms; together c. 1.6M km² as drawn on this map for 206 BCE (no scholarly figure for the grouping)"
+  },
+  "rulers": [
+   {
+    "name": "Xiang Yu",
+    "reign": "206 – 202 BCE",
+    "note": "Hegemon-King of Western Chu, who carved up the empire and was defeated at Gaixia"
+   },
+   {
+    "name": "Emperor Yi of Chu (Xiong Xin)",
+    "reign": "206 BCE",
+    "note": "Nominal sovereign over the kings, exiled and murdered on Xiang Yu's orders"
+   },
+   {
+    "name": "Liu Bang",
+    "reign": "206 – 202 BCE",
+    "note": "King of Han in the southwest; won the civil war and founded the Han dynasty"
+   },
+   {
+    "name": "Zhang Han",
+    "reign": "206 – 205 BCE",
+    "note": "Former Qin general made King of Yong, one of the Three Qins; died when Feiqiu fell"
+   },
+   {
+    "name": "Dong Yi",
+    "reign": "206 BCE",
+    "note": "King of Zhai (also read Di) in northern Shaanxi; surrendered to Liu Bang without a fight"
+   }
+  ],
+  "summary": "The Eighteen Kingdoms were the states into which the rebel general Xiang Yu divided China in 206 BCE, after the fall of the Qin empire. Rebellions had spread across the Qin empire, and Xiang Yu crushed the main Qin army at Julu in 207 BCE. When the last Qin ruler surrendered, Xiang Yu took the title Hegemon-King of Western Chu and handed out kingdoms to rebel leaders, old royal families and even surrendered Qin generals. Three of these generals received the Qin homeland as the Three Qins: Yong, Sai and Zhai. Liu Bang, who had reached the Qin capital first, was pushed off to the kingdom of Han in the remote southwest. Many leaders felt cheated, and within months the settlement collapsed into civil war. Liu Bang seized the Three Qins, and after four years of fighting, known as the Chu–Han Contention, he trapped Xiang Yu at Gaixia in 202 BCE and became the first Han emperor.",
+  "legacy": "The failure of Xiang Yu's patchwork of kingdoms opened the way for Liu Bang's Han dynasty to reunite China, and the Chu–Han rivalry lives on in the river drawn across the Chinese chessboard.",
+  "sources": [
+   {
+    "title": "Wikipedia: Eighteen Kingdoms",
+    "url": "https://en.wikipedia.org/wiki/Eighteen_Kingdoms"
+   },
+   {
+    "title": "Wikipedia: Chu–Han Contention",
+    "url": "https://en.wikipedia.org/wiki/Chu%E2%80%93Han_Contention"
+   },
+   {
+    "title": "Wikipedia: Xiang Yu",
+    "url": "https://en.wikipedia.org/wiki/Xiang_Yu"
+   },
+   {
+    "title": "Wikipedia: Three Qins",
+    "url": "https://en.wikipedia.org/wiki/Three_Qins"
+   },
+   {
+    "title": "Wikipedia: Emperor Yi of Chu",
+    "url": "https://en.wikipedia.org/wiki/Emperor_Yi_of_Chu"
+   }
+  ]
+ },
+ {
+  "id": "shunga-empire",
+  "name": "Shunga Empire",
+  "aliases": [],
+  "clio": [
+   "Shunga Empire"
+  ],
+  "region": "middle-east-south-asia",
+  "start": -185,
+  "end": -73,
+  "capital": "Pataliputra; later kings also held court at Vidisha (Besnagar)",
+  "peak": {
+   "year": -150,
+   "areaKm2": 1200000,
+   "note": "Under Pushyamitra and Agnimitra, from the Ganges valley to the Narmada; c. 1.2M km² (as drawn on this map)"
+  },
+  "rulers": [
+   {
+    "name": "Pushyamitra Shunga",
+    "reign": "c. 185 – 149 BCE",
+    "note": "Founder; killed the last Maurya and performed the Vedic horse sacrifice"
+   },
+   {
+    "name": "Agnimitra",
+    "reign": "c. 149 – 141 BCE",
+    "note": "Son of Pushyamitra, hero of Kalidasa's play Malavikagnimitra"
+   },
+   {
+    "name": "Vasumitra",
+    "reign": "c. 131 – 124 BCE",
+    "note": "Credited with driving back Greek invaders"
+   },
+   {
+    "name": "Bhagabhadra",
+    "reign": "c. 110 BCE",
+    "note": "Probably the king who received the Greek envoy Heliodorus at Vidisha"
+   },
+   {
+    "name": "Devabhuti",
+    "reign": "c. 83 – 73 BCE",
+    "note": "Last king, murdered by his minister Vasudeva Kanva"
+   }
+  ],
+  "summary": "The Shunga dynasty ruled the Ganges heartland of northern India for more than a century after the fall of the Mauryas. Around 185 BCE the general Pushyamitra Shunga killed Brihadratha, the last Maurya emperor, and took the throne at Pataliputra. He conquered Vidarbha in the northern Deccan, fought Greek invaders from Bactria and, in a theory most historians now doubt, Kharavela of Kalinga, and performed the ancient Vedic horse sacrifice twice to proclaim his power. Buddhist texts later accused him of persecuting monks, but many historians doubt this, since the great Buddhist monuments at Bharhut and Sanchi were enlarged in Shunga times. The grammarian Patanjali worked in this period, and a Greek envoy, Heliodorus, set up a pillar to the god Vasudeva at Vidisha. After Agnimitra the realm shrank as provinces broke away, and around 73 BCE the last king, Devabhuti, was murdered by his minister Vasudeva, who founded the Kanva dynasty.",
+  "legacy": "Shunga rule saw a revival of Brahmanical ritual alongside lasting Buddhist art at Bharhut and Sanchi, bridging the Maurya and later classical ages.",
+  "sources": [
+   {
+    "title": "Wikipedia: Shunga Empire",
+    "url": "https://en.wikipedia.org/wiki/Shunga_Empire"
+   },
+   {
+    "title": "Wikipedia: Pushyamitra Shunga",
+    "url": "https://en.wikipedia.org/wiki/Pushyamitra_Shunga"
+   },
+   {
+    "title": "e-PG Pathshala (INFLIBNET): Sunga, Kanva and Satavahana dynasties",
+    "url": "https://ebooks.inflibnet.ac.in/icp01/chapter/sunga-kanva-and-satavahana-dynasties/"
+   },
+   {
+    "title": "Wikipedia: Kharavela",
+    "url": "https://en.wikipedia.org/wiki/Kharavela"
+   }
+  ]
+ },
+ {
+  "id": "mahameghavahana",
+  "name": "Mahameghavahana dynasty (Kalinga)",
+  "aliases": [],
+  "clio": [
+   "Mahameghavahana Dynasty"
+  ],
+  "region": "middle-east-south-asia",
+  "start": -170,
+  "end": 320,
+  "capital": "Kalinganagara (probably Sisupalgarh, near Bhubaneswar); Toshali is also named",
+  "peak": {
+   "year": -50,
+   "areaKm2": 1700000,
+   "note": "Under Kharavela, whose campaigns reached Magadha and the Tamil south; the year is approximate, since most scholars place him in the 1st century BCE and some in the 2nd. This map draws c. 1.7M km² (as drawn on this map), which is clearly far larger than the kingdom scholars describe: it counts lands he only raided, while his rule was based in Kalinga (coastal Odisha); no scholarly area figure exists"
+  },
+  "rulers": [
+   {
+    "name": "Mahameghavahana",
+    "reign": "2nd or 1st century BCE",
+    "note": "Founder after whom the dynasty is named"
+   },
+   {
+    "name": "Vriddharaja",
+    "reign": "uncertain",
+    "note": "Possibly Kharavela's predecessor"
+   },
+   {
+    "name": "Kharavela",
+    "reign": "2nd or 1st century BCE (dates disputed)",
+    "note": "Warrior king and Jain patron known from the Hathigumpha inscription"
+   },
+   {
+    "name": "Kudepasiri (Vakradeva)",
+    "reign": "after Kharavela",
+    "note": "Known only from minor cave inscriptions at Udayagiri"
+   }
+  ],
+  "summary": "The Mahameghavahana dynasty ruled Kalinga, on India's east coast in modern Odisha, and is known above all through one king, Kharavela. After Mauryan power faded, a local line named after its founder, Mahameghavahana, took control of Kalinga, sometime in the 2nd or 1st century BCE; exact dates are still argued over. Almost everything we know comes from the Hathigumpha inscription, a 17-line Prakrit text carved above a cave on Udayagiri hill near Bhubaneswar, which records Kharavela's reign year by year. It says he repaired his storm-damaged capital, extended a canal first dug by a Nanda king, sent an army west toward the Satavahana lands, raided Rajagriha and Magadha, where he brought back a Jain image once carried off by the Nandas, and took tribute from the Pandya king in the far south. A devout Jain who honoured all faiths, he supported monks in the rock-cut caves of Udayagiri. His successors are barely known, and the dynasty fades from the record by the early 4th century CE.",
+  "legacy": "The Hathigumpha inscription is one of the most important early records of eastern India and of royal patronage of Jainism, and Kharavela remains a celebrated hero in Odisha.",
+  "sources": [
+   {
+    "title": "Wikipedia: Kharavela",
+    "url": "https://en.wikipedia.org/wiki/Kharavela"
+   },
+   {
+    "title": "Wikipedia: Mahameghavahana dynasty",
+    "url": "https://en.wikipedia.org/wiki/Mahameghavahana_dynasty"
+   },
+   {
+    "title": "Wikipedia: Hathigumpha inscription",
+    "url": "https://en.wikipedia.org/wiki/Hathigumpha_inscription"
+   },
+   {
+    "title": "e-PG Pathshala (INFLIBNET): Sunga, Kanva and Satavahana dynasties",
+    "url": "https://ebooks.inflibnet.ac.in/icp01/chapter/sunga-kanva-and-satavahana-dynasties/"
+   }
+  ]
+ },
+ {
+  "id": "indo-scythians",
+  "name": "Indo-Scythians",
+  "aliases": [],
+  "clio": [
+   "Indo-Scythians"
+  ],
+  "region": "middle-east-south-asia",
+  "start": -150,
+  "end": 395,
+  "capital": "Taxila and Mathura in the north; later Ujjain under the Western Satraps",
+  "peak": {
+   "year": 20,
+   "areaKm2": 2600000,
+   "note": "Saka rule across the Indus lands and north-west India; c. 2.6M km² c. 20 CE (Taagepera 1979, as cited by Wikipedia). The realm drawn on this map runs from c. 144 BCE to 282 CE and includes the Western Satraps"
+  },
+  "rulers": [
+   {
+    "name": "Maues",
+    "reign": "c. 85 – 60 BCE",
+    "note": "First Saka king in India; took Taxila and Gandhara from the Indo-Greeks"
+   },
+   {
+    "name": "Azes I",
+    "reign": "c. 57 – 35 or c. 48 – 25 BCE (dates debated)",
+    "note": "Completed Saka control of the north-west; gave his name to the Azes era"
+   },
+   {
+    "name": "Rajuvula",
+    "reign": "c. 10 CE",
+    "note": "Satrap of Mathura who ended the last Indo-Greek rule there"
+   },
+   {
+    "name": "Rudradaman I",
+    "reign": "c. 130 – 150 CE",
+    "note": "Western Satrap; fought the Satavahanas and left the Junagadh inscription"
+   },
+   {
+    "name": "Rudrasimha III",
+    "reign": "c. 388 – 395 CE",
+    "note": "Last Western Satrap, defeated by the Gupta king Chandragupta II"
+   }
+  ],
+  "summary": "The Indo-Scythians were Saka nomads from Central Asia who ruled kingdoms in north-western and western India from the 2nd century BCE to the 4th century CE. Pushed south when the Yuezhi migrated out of their homeland, the Sakas first settled in Drangiana, later called Sakastan (Sistan), then moved into the Indus region. Around 80 BCE their king Maues took Taxila and Gandhara from the Indo-Greeks, and Azes I completed Saka control of the north-west; the Azes era is often equated with India's Vikrama calendar, which begins in 58 BCE. Saka governors called satraps ruled Mathura, where the inscribed lion capital records their gifts to Buddhism. In the north the Kushans absorbed their lands in the 1st century CE, but the Western Satraps held Gujarat and Malwa for three more centuries, and Rudradaman I left a Sanskrit inscription at Junagadh in about 150 CE. The Gupta king Chandragupta II ended the last of these Saka rulers around 395 CE.",
+  "legacy": "Saka rulers patronised Buddhism and left landmark records such as Rudradaman's Sanskrit inscription at Junagadh, and their dated coins and eras are key tools for building ancient India's chronology.",
+  "sources": [
+   {
+    "title": "Wikipedia: Indo-Scythians",
+    "url": "https://en.wikipedia.org/wiki/Indo-Scythians"
+   },
+   {
+    "title": "Wikipedia: Western Satraps",
+    "url": "https://en.wikipedia.org/wiki/Western_Satraps"
+   },
+   {
+    "title": "Wikipedia: Maues",
+    "url": "https://en.wikipedia.org/wiki/Maues"
+   },
+   {
+    "title": "Wikipedia: Azes I",
+    "url": "https://en.wikipedia.org/wiki/Azes_I"
+   },
+   {
+    "title": "Wikipedia: Rudradaman I",
+    "url": "https://en.wikipedia.org/wiki/Rudradaman_I"
+   },
+   {
+    "title": "Wikipedia: List of largest empires",
+    "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+   }
+  ]
+ },
+ {
+  "id": "kanva-dynasty",
+  "name": "Kanva dynasty",
+  "aliases": [],
+  "clio": [
+   "Kanva Dynasty"
+  ],
+  "region": "middle-east-south-asia",
+  "start": -73,
+  "end": -28,
+  "capital": "Pataliputra, per the Puranas; most of its coins are found around Vidisha",
+  "peak": {
+   "year": -73,
+   "areaKm2": 1200000,
+   "note": "At its founding, inheriting what was left of the Shunga lands. This map draws the Kanva realm at the full Shunga extent, c. 1.2M km² (as drawn on this map), which is clearly too large: scholars describe a small kingdom around Pataliputra and Vidisha, and no scholarly area figure exists"
+  },
+  "rulers": [
+   {
+    "name": "Vasudeva Kanva",
+    "reign": "c. 73 – 64 BCE",
+    "note": "Brahmin minister who killed the last Shunga king and took the throne"
+   },
+   {
+    "name": "Bhumimitra",
+    "reign": "c. 64 – 50 BCE",
+    "note": "His coins are found in the Panchala region"
+   },
+   {
+    "name": "Narayana",
+    "reign": "c. 50 – 38 BCE",
+    "note": "Son of Bhumimitra"
+   },
+   {
+    "name": "Susharman",
+    "reign": "c. 38 – 28 BCE",
+    "note": "Last king, overthrown by the Satavahanas according to the Puranas"
+   }
+  ],
+  "summary": "The Kanva dynasty was a short-lived line of four Brahmin kings who ruled Magadha in the 1st century BCE. Its founder, Vasudeva Kanva, was a minister of the last Shunga emperor, Devabhuti, whom he killed around 73 BCE to seize the throne. He let surviving Shunga princes go on ruling in obscurity in a corner of their old lands. The Puranas give the Kanvas about 45 years in all, and say they ruled from Pataliputra, but most of their coins, some stamped simply with the family name, turn up around Vidisha in central India. Their realm was far smaller than the Mauryan or even the Shunga state. According to the Puranas the last king, Susharman, was overthrown around 28 BCE by the Satavahanas from the Deccan, though historians think this may have been a local defeat in central India.",
+  "legacy": "After the Kanvas, Pataliputra was no longer the seat of a major empire until the Guptas rose in the 4th century CE.",
+  "sources": [
+   {
+    "title": "Wikipedia: Kanva dynasty",
+    "url": "https://en.wikipedia.org/wiki/Kanva_dynasty"
+   },
+   {
+    "title": "e-PG Pathshala (INFLIBNET): Sunga, Kanva and Satavahana dynasties",
+    "url": "https://ebooks.inflibnet.ac.in/icp01/chapter/sunga-kanva-and-satavahana-dynasties/"
+   },
+   {
+    "title": "Wikipedia: Shunga Empire",
+    "url": "https://en.wikipedia.org/wiki/Shunga_Empire"
+   }
+  ]
+ },
+ {
+  "id": "xianbei",
+  "name": "Xianbei",
+  "aliases": [],
+  "clio": [
+   "Xianbei"
+  ],
+  "region": "north-central-asia",
+  "start": 156,
+  "end": 235,
+  "capital": "Mount Danhan, north of the Great Wall (near modern Shangyi, Hebei), under Tanshihuai; otherwise mobile chiefs' camps",
+  "peak": {
+   "year": 177,
+   "areaKm2": 4500000,
+   "note": "Under Tanshihuai (c. 156 – 181), from Manchuria west to the Wusun lands; c. 4.5M km², a figure Scheidel (2020) gives for c. 200, as listed in Wikipedia's List of largest empires"
+  },
+  "rulers": [
+   {
+    "name": "Tanshihuai",
+    "reign": "c. 156 – 181",
+    "note": "United the Xianbei tribes and defeated a Han army in 177"
+   },
+   {
+    "name": "Helian",
+    "reign": "c. 181 – 189",
+    "note": "His son; half the tribes broke away and he died raiding China"
+   },
+   {
+    "name": "Kuitou",
+    "reign": "c. 189 – 205",
+    "note": "Elected chief; rivalry with Helian's son ended Xianbei unity"
+   },
+   {
+    "name": "Kebineng",
+    "reign": "c. 207 – 235",
+    "note": "Built a new confederacy near the Great Wall; assassinated by a Wei agent"
+   }
+  ],
+  "summary": "The Xianbei were nomads of the eastern steppe who replaced the Xiongnu as the leading power in Mongolia during the 2nd century CE. Chinese histories describe them as a branch of the Donghu, a people broken by the Xiongnu around 208 BCE. After Han armies crushed the Northern Xiongnu in 91 CE, Xianbei bands moved onto the Mongolian plateau, filling the space the Xiongnu had left. Around the 150s the chieftain Tanshihuai united the tribes, held court at Mount Danhan just north of the Great Wall, and divided his realm into eastern, central and western parts. He raided Han China again and again, routed a large Han army in 177, and turned down the title of king offered to buy peace. After his death in 181 the confederation split into rival groups. Kebineng later built a strong new confederacy, but his murder by an agent of the Wei state in 235 ended the last Xianbei union on the steppe.",
+  "legacy": "Xianbei clans went on to found many states in northern China, above all the Tuoba Northern Wei (386 – 535), and the title khagan, later used by Turkic and Mongol rulers, seems to have begun among them.",
+  "sources": [
+   {
+    "title": "Wikipedia: Xianbei",
+    "url": "https://en.wikipedia.org/wiki/Xianbei"
+   },
+   {
+    "title": "Wikipedia: Tanshihuai",
+    "url": "https://en.wikipedia.org/wiki/Tanshihuai"
+   },
+   {
+    "title": "Wikipedia: Kebineng",
+    "url": "https://en.wikipedia.org/wiki/Kebineng"
+   },
+   {
+    "title": "Wikipedia: List of largest empires (Scheidel 2020 figure)",
+    "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+   },
+   {
+    "title": "Wikipedia: Great Khan (title khagan)",
+    "url": "https://en.wikipedia.org/wiki/Great_Khan"
+   }
+  ]
+ },
+ {
+  "id": "cao-wei",
+  "name": "Cao Wei",
+  "aliases": [],
+  "clio": [
+   "Cao Cao",
+   "Cao Wei"
+  ],
+  "region": "east-asia",
+  "start": 220,
+  "end": 266,
+  "capital": "Luoyang, made the capital by Cao Pi in 220 (some accounts date the move to 226); Xuchang, where Cao Cao had kept the Han court since 196, before that",
+  "peak": {
+   "year": 263,
+   "areaKm2": 2000000,
+   "note": "After the conquest of Shu; c. 2.0M km² in 263 (Taagepera 1979)"
+  },
+  "rulers": [
+   {
+    "name": "Cao Cao",
+    "reign": "196 – 220",
+    "note": "Warlord who controlled the Han court; King of Wei from 216, honoured after death as Emperor Wu"
+   },
+   {
+    "name": "Cao Pi (Emperor Wen)",
+    "reign": "220 – 226",
+    "note": "Took the throne from the last Han emperor"
+   },
+   {
+    "name": "Cao Rui (Emperor Ming)",
+    "reign": "226 – 239",
+    "note": "Second emperor of Wei"
+   },
+   {
+    "name": "Cao Fang",
+    "reign": "239 – 254",
+    "note": "Boy emperor; Sima Yi seized real power in 249"
+   },
+   {
+    "name": "Cao Huan",
+    "reign": "260 – 266",
+    "note": "Last emperor; abdicated to Sima Yan"
+   }
+  ],
+  "summary": "Cao Wei was the strongest of the Three Kingdoms, built on the conquests of the warlord Cao Cao in northern China. Cao Cao rose fighting the Yellow Turban rebels, took the young Han emperor under his control in 196 and moved the court to Xuchang, then beat his great rival Yuan Shao at Guandu in 200. By 207 he had united the north, but his push south ended in defeat at Red Cliffs in 208. He became Duke and then King of Wei, while the Han emperor reigned in name only. After Cao Cao died in 220, his son Cao Pi made the last Han emperor abdicate and declared the Wei dynasty, ruling from Luoyang. Wei created the nine-rank system for choosing officials and fought its rivals Shu and Wu to the south and west. From 249 the Sima family held real power; Wei armies conquered Shu in 263, and in 266 Sima Yan forced the last Wei emperor to hand over the throne.",
+  "legacy": "Wei's nine-rank system for selecting officials lasted until the Sui replaced it with examinations, and Cao Cao, general, statesman and poet, remains one of the most debated figures in Chinese history.",
+  "sources": [
+   {
+    "title": "Wikipedia: Cao Wei",
+    "url": "https://en.wikipedia.org/wiki/Cao_Wei"
+   },
+   {
+    "title": "Wikipedia: Cao Cao",
+    "url": "https://en.wikipedia.org/wiki/Cao_Cao"
+   },
+   {
+    "title": "Wikipedia: Luoyang (Wei and Jin dynasties)",
+    "url": "https://en.wikipedia.org/wiki/Luoyang"
+   },
+   {
+    "title": "Wikipedia: List of largest empires (areas from Taagepera 1979)",
+    "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+   }
+  ]
+ },
+ {
+  "id": "eastern-wu",
+  "name": "Eastern Wu",
+  "aliases": [],
+  "clio": [
+   "Eastern Wu"
+  ],
+  "region": "east-asia",
+  "start": 222,
+  "end": 280,
+  "capital": "Jianye (modern Nanjing) from 229; Wuchang (modern Ezhou) before that and again in 265–266",
+  "peak": {
+   "year": 221,
+   "areaKm2": 1500000,
+   "note": "Across southern China after Sun Quan took southern Jing province; c. 1.5M km² c. 221 (Taagepera 1979), dated to the year Sun Quan was named King of Wu, just before he broke with Wei"
+  },
+  "rulers": [
+   {
+    "name": "Sun Ce",
+    "reign": "c. 194 – 200",
+    "note": "Conquered the lands south of the Yangtze that became Wu's core"
+   },
+   {
+    "name": "Sun Quan",
+    "reign": "222 – 252",
+    "note": "Led the Sun family from 200; King of Wu, then emperor from 229"
+   },
+   {
+    "name": "Sun Liang",
+    "reign": "252 – 258",
+    "note": "Second emperor"
+   },
+   {
+    "name": "Sun Xiu",
+    "reign": "258 – 264",
+    "note": "Third emperor"
+   },
+   {
+    "name": "Sun Hao",
+    "reign": "264 – 280",
+    "note": "Last emperor; surrendered to the Jin"
+   }
+  ],
+  "summary": "Eastern Wu was the Three Kingdoms state of the lower Yangtze and the far south, ruled by the Sun family. Sun Ce conquered the lands south of the Yangtze in the 190s, and after his murder in 200 his younger brother Sun Quan took over. Allied with the warlord Liu Bei, Sun Quan helped defeat Cao Cao at Red Cliffs in 208, then turned on his ally, seizing southern Jing province in 219 and crushing Liu Bei's army at Xiaoting in 222. That year he broke with the Wei court, and in 229 he declared himself emperor and moved his capital to Jianye, modern Nanjing. Wu was a land of rivers, shipyards and river trade, and in 230 it even sent an expedition across the sea to an island that may have been Taiwan. Three more emperors followed Sun Quan, who died in 252, and in 280 the last of them, Sun Hao, surrendered to the invading Jin.",
+  "legacy": "Wu's half-century of rule from Jianye began the rise of the lower Yangtze as a centre of Chinese power, and the city, modern Nanjing, became the capital of the southern dynasties that followed.",
+  "sources": [
+   {
+    "title": "Wikipedia: Eastern Wu",
+    "url": "https://en.wikipedia.org/wiki/Eastern_Wu"
+   },
+   {
+    "title": "Wikipedia: Jin dynasty (266–420)",
+    "url": "https://en.wikipedia.org/wiki/Jin_dynasty_(266–420)"
+   },
+   {
+    "title": "Wikipedia: List of largest empires (areas from Taagepera 1979)",
+    "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+   }
+  ]
+ },
+ {
+  "id": "palmyrene-empire",
+  "name": "Palmyrene Empire",
+  "aliases": [],
+  "clio": [
+   "Palmyrene Empire"
+  ],
+  "region": "middle-east-south-asia",
+  "start": 260,
+  "end": 273,
+  "capital": "Palmyra",
+  "peak": {
+   "year": 271,
+   "areaKm2": 1000000,
+   "note": "Under Zenobia by August 271, with Syria, Arabia, Egypt and much of Anatolia; this map draws the realm at up to c. 1.0M km² (as drawn on this map) for 261–269, before those conquests"
+  },
+  "rulers": [
+   {
+    "name": "Odaenathus",
+    "reign": "260 – 267",
+    "note": "King of Palmyra and king of kings of the East; defeated the Persians"
+   },
+   {
+    "name": "Zenobia",
+    "reign": "267 – 272",
+    "note": "Regent for her son; conquered Egypt and broke with Rome"
+   },
+   {
+    "name": "Vaballathus",
+    "reign": "267 – 272",
+    "note": "Son of Odaenathus, proclaimed Augustus in 271 or 272"
+   },
+   {
+    "name": "Antiochus",
+    "reign": "273",
+    "note": "Proclaimed in the final revolt before Aurelian razed Palmyra"
+   }
+  ],
+  "summary": "The Palmyrene Empire was a short-lived breakaway state carved out of the Roman East by the rulers of Palmyra, a rich caravan city in a desert oasis in Syria. When the Persian king Shapur I captured the Roman emperor Valerian in 260, Palmyra's lord Odaenathus struck back, driving the Persians out of Syria, reaching their capital Ctesiphon and crushing rival Roman usurpers. Officially loyal to Rome, he ruled the East almost as an independent king until he was murdered in 267. His widow Zenobia then governed for their young son Vaballathus, with the philosopher Longinus at her court. In 270 her armies took Arabia and Egypt, and in 271 they pushed into Anatolia. Late in 271 or early in 272 she had Vaballathus proclaimed emperor, an open break with Rome. The emperor Aurelian struck back at once, beat her armies at Immae and Emesa, besieged Palmyra and captured Zenobia as she fled toward Persia. When the city rebelled again in 273, Aurelian levelled it.",
+  "legacy": "Zenobia became a lasting legend as the warrior queen who defied Rome, and modern Syrians have claimed the Palmyrene Empire as a symbol of national pride.",
+  "sources": [
+   {
+    "title": "Wikipedia: Palmyrene Empire",
+    "url": "https://en.wikipedia.org/wiki/Palmyrene_Empire"
+   },
+   {
+    "title": "Wikipedia: Odaenathus",
+    "url": "https://en.wikipedia.org/wiki/Odaenathus"
+   },
+   {
+    "title": "Wikipedia: Zenobia",
+    "url": "https://en.wikipedia.org/wiki/Zenobia"
+   },
+   {
+    "title": "Wikipedia: Palmyra",
+    "url": "https://en.wikipedia.org/wiki/Palmyra"
+   }
+  ]
+ },
+ {
+  "id": "jin-dynasty-266-420",
+  "name": "Jin dynasty (266–420)",
+  "aliases": [],
+  "clio": [
+   "Western Jin"
+  ],
+  "region": "east-asia",
+  "start": 266,
+  "end": 420,
+  "capital": "Luoyang; Chang'an under the last Western Jin emperor (313–316); later Jiankang (modern Nanjing) for the Eastern Jin, from 317",
+  "peak": {
+   "year": 280,
+   "areaKm2": 3100000,
+   "note": "After the conquest of Wu reunited China; c. 3.1M km² in 280 (Taagepera 1979). The southern Eastern Jin reached c. 2.8M km² in 347 (Taagepera 1979)"
+  },
+  "rulers": [
+   {
+    "name": "Emperor Wu (Sima Yan)",
+    "reign": "266 – 290",
+    "note": "Founder; ended Wei and conquered Wu in 280"
+   },
+   {
+    "name": "Emperor Hui",
+    "reign": "290 – 307",
+    "note": "Weak ruler during the War of the Eight Princes"
+   },
+   {
+    "name": "Emperor Huai",
+    "reign": "307 – 313",
+    "note": "Captured when Han-Zhao forces sacked Luoyang in 311; put to death in 313"
+   },
+   {
+    "name": "Emperor Yuan (Sima Rui)",
+    "reign": "318 – 323",
+    "note": "King of Jin at Jiankang from 317; refounded the dynasty there as the Eastern Jin"
+   },
+   {
+    "name": "Emperor Xiaowu",
+    "reign": "372 – 396",
+    "note": "Reigned when Jin routed the Former Qin at the Fei River"
+   },
+   {
+    "name": "Emperor Gong",
+    "reign": "419 – 420",
+    "note": "Last emperor; gave up the throne to Liu Yu"
+   }
+  ],
+  "summary": "The Jin dynasty briefly reunited China after the Three Kingdoms era, then lasted another century as a southern state. Sima Yan forced the last Wei emperor to abdicate in 266, and in 280 his armies conquered Wu, putting all of China under one throne for the first time since the fall of the Han. The peace was short. After his death in 290, Sima princes fought each other in the War of the Eight Princes and frontier peoples rose up; Han-Zhao armies sacked Luoyang in 311 and took Chang'an in 316, ending the Western Jin. A Sima prince, Sima Rui, refounded the dynasty at Jiankang, modern Nanjing, and this Eastern Jin held the south while rival kingdoms fought over the north. Refugees streamed south, Buddhism spread and the painter Gu Kaizhi worked at court. In 383 a much smaller Jin army routed the invading Former Qin at the Fei River, but in 420 the general Liu Yu took the throne for himself.",
+  "legacy": "The Jin flight south made the Yangtze valley a second heartland of Chinese culture, and the Eastern Jin's survival kept the south under Chinese-ruled courts until the Sui reunified the country in 589.",
+  "sources": [
+   {
+    "title": "Wikipedia: Jin dynasty (266–420)",
+    "url": "https://en.wikipedia.org/wiki/Jin_dynasty_(266–420)"
+   },
+   {
+    "title": "Wikipedia: Battle of Fei River",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Fei_River"
+   },
+   {
+    "title": "Wikipedia: List of largest empires (areas from Taagepera 1979)",
+    "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+   }
+  ]
+ },
+ {
+  "id": "former-qin",
+  "name": "Former Qin",
+  "aliases": [],
+  "clio": [
+   "Former Qin"
+  ],
+  "region": "east-asia",
+  "start": 351,
+  "end": 394,
+  "capital": "Chang'an; after 385 a series of temporary seats, including Jinyang",
+  "peak": {
+   "year": 376,
+   "areaKm2": 2000000,
+   "note": "After the conquests of Former Liang and Dai united northern China; c. 2.0M km² in 376 (Taagepera 1979)"
+  },
+  "rulers": [
+   {
+    "name": "Fu Jiàn (Emperor Jingming)",
+    "reign": "351 – 355",
+    "note": "Di chief who took Chang'an and founded the state"
+   },
+   {
+    "name": "Fu Sheng",
+    "reign": "355 – 357",
+    "note": "Clashed with his family and officials; overthrown in 357"
+   },
+   {
+    "name": "Fu Jiān (Emperor Xuanzhao)",
+    "reign": "357 – 385",
+    "note": "Unified the north with his minister Wang Meng; defeated at the Fei River"
+   },
+   {
+    "name": "Fu Deng",
+    "reign": "386 – 394",
+    "note": "Kept the state alive until executed by the Later Qin ruler Yao Xing"
+   }
+  ],
+  "summary": "The Former Qin was a kingdom founded by the Di people that, for a few years, united all of northern China. In 351, as the north fell into chaos, the Di chief Fu Jian took Chang'an and proclaimed himself Heavenly King. A relative with a similar name, Fu Jian (spelled differently in Chinese), seized the throne in 357 and, with his able chief minister Wang Meng, restored order. Former Qin armies conquered the Former Yan in 370, the Sichuan basin in 373, and Former Liang and Dai in 376, bringing the whole north under one ruler. Fu Jian also welcomed Buddhist teachers such as the monk Dao'an. In 383 he marched south to conquer the Eastern Jin with a huge army, said in the records to number 870,000, though historians think that figure is exaggerated, and it was routed at the Fei River. Conquered peoples rebelled at once, Fu Jian was killed by the rebel Yao Chang in 385, and the last remnants of the state fell in 394.",
+  "legacy": "The collapse of the Former Qin after the Fei River left China divided between north and south for two more centuries, and Fu Jian's patronage of monks such as Dao'an helped Buddhism grow in the north.",
+  "sources": [
+   {
+    "title": "Wikipedia: Former Qin",
+    "url": "https://en.wikipedia.org/wiki/Former_Qin"
+   },
+   {
+    "title": "Wikipedia: Battle of Fei River",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Fei_River"
+   },
+   {
+    "title": "Wikipedia: Dao'an",
+    "url": "https://en.wikipedia.org/wiki/Dao%27an"
+   },
+   {
+    "title": "Wikipedia: List of largest empires (areas from Taagepera 1979)",
+    "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+   }
+  ]
+ },
+ {
+  "id": "northern-wei",
+  "name": "Northern Wei",
+  "aliases": [],
+  "clio": [
+   "Northern Wei"
+  ],
+  "region": "east-asia",
+  "start": 386,
+  "end": 535,
+  "capital": "Pingcheng (modern Datong) from 398; later Luoyang (from 493–494); Shengle at first",
+  "peak": {
+   "year": 450,
+   "areaKm2": 2000000,
+   "note": "After uniting northern China under Emperor Taiwu; c. 2.0M km² in 450 (Taagepera 1979)"
+  },
+  "rulers": [
+   {
+    "name": "Tuoba Gui (Emperor Daowu)",
+    "reign": "386 – 409",
+    "note": "Founder; proclaimed emperor in 399"
+   },
+   {
+    "name": "Tuoba Tao (Emperor Taiwu)",
+    "reign": "423 – 452",
+    "note": "Completed the conquest of northern China in 439"
+   },
+   {
+    "name": "Empress Dowager Feng",
+    "reign": "476 – 490",
+    "note": "Regent who introduced the equal-field system"
+   },
+   {
+    "name": "Emperor Xiaowen",
+    "reign": "471 – 499",
+    "note": "Moved the capital to Luoyang and adopted Chinese customs"
+   }
+  ],
+  "summary": "The Northern Wei was a dynasty of the Tuoba, a Xianbei people from the northern steppe, who reunited northern China and blended steppe and Chinese ways. Tuoba Gui revived his clan's state in 386 as the Former Qin broke apart, took the title of emperor in 399 and ruled from Pingcheng, modern Datong. His grandson Emperor Taiwu conquered the last rival kingdoms, finishing with the Northern Liang in 439 and ending the era of the Sixteen Kingdoms. Taiwu persecuted Buddhism, but later rulers became great patrons, carving cave temples at Yungang and later Longmen. In 485, under the regent Empress Dowager Feng, the equal-field system began handing out state land to farming families. Emperor Xiaowen moved the capital to Luoyang in 493–494 and ordered the Xianbei elite to adopt Chinese dress, language and surnames. Soldiers left behind on the frontier resented these changes, and their revolts from about 523, followed by a massacre of the court in 528, split the empire in two in 534–535.",
+  "legacy": "Its equal-field system and blend of steppe and Chinese traditions laid foundations that the Sui built on when they reunified China, and the Yungang and Longmen cave temples are among the great monuments of Buddhist art.",
+  "sources": [
+   {
+    "title": "Wikipedia: Northern Wei",
+    "url": "https://en.wikipedia.org/wiki/Northern_Wei"
+   },
+   {
+    "title": "Wikipedia: Emperor Taiwu of Northern Wei",
+    "url": "https://en.wikipedia.org/wiki/Emperor_Taiwu_of_Northern_Wei"
+   },
+   {
+    "title": "Wikipedia: Emperor Xiaowen of Northern Wei",
+    "url": "https://en.wikipedia.org/wiki/Emperor_Xiaowen_of_Northern_Wei"
+   },
+   {
+    "title": "Wikipedia: Datong (Pingcheng)",
+    "url": "https://en.wikipedia.org/wiki/Pingcheng"
+   },
+   {
+    "title": "Wikipedia: List of largest empires (areas from Taagepera 1979)",
+    "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+   }
+  ]
+ },
+ {
+  "id": "rouran-khaganate",
+  "name": "Rouran Khaganate",
+  "aliases": [],
+  "clio": [
+   "Rouran Khaganate"
+  ],
+  "region": "north-central-asia",
+  "start": 402,
+  "end": 555,
+  "capital": "A mobile royal court on the Mongolian steppe; later sources name a town, Mumocheng, whose site is unknown",
+  "peak": {
+   "year": 405,
+   "areaKm2": 2800000,
+   "note": "Soon after Shelun united the tribes, across Mongolia and the steppe north of China; c. 2.8M km² c. 405 (Turchin, Adams & Hall 2006; Taagepera 1979)"
+  },
+  "rulers": [
+   {
+    "name": "Shelun",
+    "reign": "402 – 410",
+    "note": "Founder; first ruler known to take the title khagan"
+   },
+   {
+    "name": "Datan",
+    "reign": "414 – 429",
+    "note": "Fought the Northern Wei, who struck back hard in 429"
+   },
+   {
+    "name": "Chounu",
+    "reign": "508 – 520",
+    "note": "Recovered from a defeat by the Tiele and beat them in 516"
+   },
+   {
+    "name": "Anagui",
+    "reign": "520 – 552",
+    "note": "Twice khagan; defeated by the Turks and took his own life"
+   }
+  ],
+  "summary": "The Rouran were a many-peopled confederation that ruled the Mongolian steppe from the early 5th century until the rise of the Turks in the 550s. Their ruling Yujiulü clan traced itself to Mugulü, said to have been a slave of the Xianbei. In 402 his descendant Shelun united the chiefs and took the title khagan, and the Rouran are the first rulers known to use this title and its shorter form khan in place of the old Xiongnu chanyu. They raided northern China often and fought a long series of wars with the Northern Wei, whose emperors sent great expeditions against them, above all in 429. To the west they held the Hephthalites as vassals for a time. Under Anagui, who married his family into the rival Wei courts, the khaganate relied on subject peoples such as the Turks. When Anagui refused a Rouran bride to the Turkic leader Bumin, Bumin rebelled, defeated him in 552, and by 555 the last Rouran had been crushed or scattered.",
+  "legacy": "The Rouran handed the title khagan to the Turks and Mongols who followed them, and some historians link Rouran refugees to the Avars who later settled in Hungary, though that link is disputed.",
+  "sources": [
+   {
+    "title": "Wikipedia: Rouran Khaganate",
+    "url": "https://en.wikipedia.org/wiki/Rouran_Khaganate"
+   },
+   {
+    "title": "Wikipedia: Yujiulü Anagui",
+    "url": "https://en.wikipedia.org/wiki/Yujiul%C3%BC_Anagui"
+   },
+   {
+    "title": "Wikipedia: Xianbei",
+    "url": "https://en.wikipedia.org/wiki/Xianbei"
+   },
+   {
+    "title": "Turchin, Adams & Hall (2006), East-West Orientation of Historical Empires",
+    "url": "https://web.archive.org/web/20200707181315/http://peterturchin.com/PDF/Turchin_Adams_Hall_2006.pdf"
+   }
+  ]
+ },
+ {
+  "id": "liu-song",
+  "name": "Liu Song dynasty",
+  "aliases": [],
+  "clio": [
+   "Liu Song Dynasty"
+  ],
+  "region": "east-asia",
+  "start": 420,
+  "end": 479,
+  "capital": "Jiankang (modern Nanjing)",
+  "peak": {
+   "year": 450,
+   "areaKm2": 2000000,
+   "note": "Before the loss of its northern provinces to the Northern Wei in 466–469; c. 2.0M km² in 450 (Taagepera 1979)"
+  },
+  "rulers": [
+   {
+    "name": "Liu Yu (Emperor Wu)",
+    "reign": "420 – 422",
+    "note": "General who overthrew the Jin and founded the dynasty"
+   },
+   {
+    "name": "Emperor Wen",
+    "reign": "424 – 453",
+    "note": "Long Yuanjia reign of good government; murdered by his heir"
+   },
+   {
+    "name": "Emperor Xiaowu",
+    "reign": "453 – 464",
+    "note": "Capable but harsh; curbed the power of princes and officials"
+   },
+   {
+    "name": "Emperor Ming",
+    "reign": "466 – 472",
+    "note": "Killed many relatives; lost the northern provinces"
+   }
+  ],
+  "summary": "The Liu Song was the first of the four Southern Dynasties, which ruled southern China from Jiankang, modern Nanjing, while northern dynasties held the north. Its founder Liu Yu came from a poor family, once selling straw sandals, and rose through the army to become one of the great generals of his age. He overthrew the usurper Huan Xuan in 404, destroyed the Southern Yan and Later Qin, and retook the old capitals Luoyang and Chang'an, before replacing the Jin emperor in 420. His son Emperor Wen ruled for nearly thirty years, the Yuanjia era, remembered for good government and fine literature. But his northern campaign of 450 collapsed, and Northern Wei armies swept to the Yangtze opposite the capital. Wen was murdered by his own heir in 453, later emperors killed many of their relatives, and under Emperor Ming the dynasty's northern provinces went over to Wei for good. In 479 the general Xiao Daocheng took the throne.",
+  "legacy": "As the first of the Southern Dynasties, the Liu Song began the line of southern courts at Jiankang that lasted until the Sui conquest of 589, and Emperor Wen's reign produced lasting works such as the anecdote collection Shishuo Xinyu, compiled by the prince Liu Yiqing.",
+  "sources": [
+   {
+    "title": "Wikipedia: Liu Song dynasty",
+    "url": "https://en.wikipedia.org/wiki/Liu_Song_dynasty"
+   },
+   {
+    "title": "Wikipedia: Emperor Wu of Liu Song",
+    "url": "https://en.wikipedia.org/wiki/Emperor_Wu_of_Song"
+   },
+   {
+    "title": "Wikipedia: Emperor Wen of Liu Song",
+    "url": "https://en.wikipedia.org/wiki/Emperor_Wen_of_Song"
+   },
+   {
+    "title": "Wikipedia: Emperor Ming of Liu Song",
+    "url": "https://en.wikipedia.org/wiki/Emperor_Ming_of_Song"
+   },
+   {
+    "title": "Wikipedia: List of largest empires (areas from Taagepera 1979)",
+    "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+   }
+  ]
+ },
+ {
+  "id": "hephthalites",
+  "name": "Hephthalites (White Huns)",
+  "aliases": [],
+  "clio": [
+   "White Huns"
+  ],
+  "region": "north-central-asia",
+  "start": 450,
+  "end": 560,
+  "capital": "Kunduz (Badian) and Balkh in Bactria (Tokharistan)",
+  "peak": {
+   "year": 500,
+   "areaKm2": 1700000,
+   "note": "From Bactria north into Sogdiana and east into the Tarim Basin; c. 1.7M km² c. 500 (Turchin 2009), though Taagepera (1979) gives up to 4.0M km² c. 470; the map draws a larger area that takes in Hun rule in northern India"
+  },
+  "rulers": [
+   {
+    "name": "Akhshunwar (Khushnavaz)",
+    "reign": "c. 458 – 484",
+    "note": "Helped Peroz I to the Persian throne, then defeated him; Akhshunwar may be a royal title, and some sources name the king who killed Peroz in 484 Kun-khi"
+   },
+   {
+    "name": "Yilituo Yandai",
+    "reign": "c. 516",
+    "note": "King named by Chinese records as sending an embassy to the Liang court"
+   },
+   {
+    "name": "Gatfar (Ghadfar)",
+    "reign": "c. 560",
+    "note": "King defeated by the Turks and Persians"
+   },
+   {
+    "name": "Faghanish",
+    "reign": "c. 560s",
+    "note": "Ruler of Chaghaniyan raised in Gatfar's place after the defeat"
+   }
+  ],
+  "summary": "The Hephthalites, also called the White Huns, were a nomadic people who built an empire across Bactria and Central Asia in the later 5th and early 6th centuries. They came with the Hunnic migrations into Central Asia and, after a time as vassals of the Rouran, were a major power in Bactria by about 450. Their kings meddled in Sasanian Persia: they helped Peroz I take the throne, then beat him in three wars and killed him in 484, and in 488 their army put Kavad I on the throne. Persia paid them large sums in coin. They spread north into Sogdiana and east into the Tarim Basin as far as Turfan, and sent embassies to Chinese courts. Their rule was loose, through local princes who paid tribute. Around 560 the newly risen Turks and Khosrow I of Persia crushed them in Sogdiana and split their lands along the Oxus, though small Hephthalite principalities lasted in Afghanistan until about 710.",
+  "legacy": "The Hephthalites humbled Sasanian Persia for decades, and Indian sources lumped them with the Huna invaders of India, whose kings Toramana and Mihirakula are now usually assigned to the separate Alchon Huns.",
+  "sources": [
+   {
+    "title": "Wikipedia: Hephthalites",
+    "url": "https://en.wikipedia.org/wiki/Hephthalites"
+   },
+   {
+    "title": "Encyclopaedia Iranica: Hephthalites (A. D. H. Bivar)",
+    "url": "https://www.iranicaonline.org/articles/hephthalites"
+   },
+   {
+    "title": "Turchin (2009), A theory for formation of large empires, Journal of Global History",
+    "url": "https://web.archive.org/web/2020/http://peterturchin.com/PDF/Turchin_JGH_2009.pdf"
+   },
+   {
+    "title": "Wikipedia: List of largest empires",
+    "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+   }
+  ]
+ },
+ {
+  "id": "southern-qi",
+  "name": "Southern Qi",
+  "aliases": [],
+  "clio": [
+   "Southern Qi"
+  ],
+  "region": "east-asia",
+  "start": 479,
+  "end": 502,
+  "capital": "Jiankang (modern Nanjing)",
+  "peak": {
+   "year": 480,
+   "areaKm2": 2400000,
+   "note": "Southern China at its founding, before losses to the Northern Wei in 497; c. 2.4M km² (as drawn on this map)"
+  },
+  "rulers": [
+   {
+    "name": "Xiao Daocheng (Emperor Gao)",
+    "reign": "479 – 482",
+    "note": "General who took the throne from the Liu Song"
+   },
+   {
+    "name": "Emperor Wu",
+    "reign": "482 – 493",
+    "note": "His Yongming era was remembered as peaceful and prosperous"
+   },
+   {
+    "name": "Xiao Luan (Emperor Ming)",
+    "reign": "494 – 498",
+    "note": "Seized power in a coup and killed many princes"
+   },
+   {
+    "name": "Xiao Baojuan",
+    "reign": "498 – 501",
+    "note": "Violent ruler, overthrown in Xiao Yan's rebellion"
+   }
+  ],
+  "summary": "The Southern Qi was the shortest of the four Southern Dynasties, ruling southern China from Jiankang, modern Nanjing, for just 23 years. Its founder, the general Xiao Daocheng, forced the last Liu Song emperor to abdicate in 479 and named his dynasty after his fief, which covered the old land of Qi. The Northern Wei attacked at once but failed to take the border city of Shouyang, and peace was agreed in 490. The reign of his son Emperor Wu, the Yongming era, was remembered as calm and prosperous, and it gave its name to a style of poetry whose leading figure, Shen Yue, worked out rules for the tones of verse. In 494 a relative, Xiao Luan, seized the throne and killed many princes, and Northern Wei invasions followed, taking Wancheng and Xinye in 497–498. The next ruler, Xiao Baojuan, executed officials on a whim until the general Xiao Yan rebelled; Xiao Baojuan was killed by his own officers in 501, and Xiao Yan founded the Liang in 502.",
+  "legacy": "The Yongming poets of the Qi court, above all Shen Yue, developed tonal rules that grew into the regulated verse of the Tang.",
+  "sources": [
+   {
+    "title": "Wikipedia: Southern Qi",
+    "url": "https://en.wikipedia.org/wiki/Southern_Qi"
+   },
+   {
+    "title": "Wikipedia: Emperor Ming of Southern Qi",
+    "url": "https://en.wikipedia.org/wiki/Emperor_Ming_of_Southern_Qi"
+   },
+   {
+    "title": "Wikipedia: Xiao Baojuan",
+    "url": "https://en.wikipedia.org/wiki/Xiao_Baojuan"
+   },
+   {
+    "title": "Wikipedia: Yongming poetry",
+    "url": "https://en.wikipedia.org/wiki/Yongming_poetry"
+   },
+   {
+    "title": "Wikipedia: Emperor Wu of Southern Qi",
+    "url": "https://en.wikipedia.org/wiki/Emperor_Wu_of_Southern_Qi"
+   }
+  ]
+ },
+ {
+  "id": "liang-dynasty",
+  "name": "Liang dynasty",
+  "aliases": [],
+  "clio": [
+   "Liang Dynasty"
+  ],
+  "region": "east-asia",
+  "start": 502,
+  "end": 557,
+  "capital": "Jiankang (modern Nanjing); Jiangling under Emperor Yuan (552–555)",
+  "peak": {
+   "year": 502,
+   "areaKm2": 1300000,
+   "note": "Southern China under Emperor Wu; c. 1.3M km² for 502 and 549 (Taagepera 1979; Turchin, Adams & Hall 2006 give the same figure, dated 579). This map draws it much larger"
+  },
+  "rulers": [
+   {
+    "name": "Emperor Wu (Xiao Yan)",
+    "reign": "502 – 549",
+    "note": "Founder; patron of learning and devout Buddhist"
+   },
+   {
+    "name": "Emperor Jianwen",
+    "reign": "549 – 551",
+    "note": "Puppet of the rebel Hou Jing, who killed him"
+   },
+   {
+    "name": "Emperor Yuan (Xiao Yi)",
+    "reign": "552 – 555",
+    "note": "Destroyed Hou Jing; killed when Western Wei took Jiangling"
+   },
+   {
+    "name": "Emperor Jing (Xiao Fangzhi)",
+    "reign": "555 – 557",
+    "note": "Last emperor; gave up the throne to Chen Baxian"
+   }
+  ],
+  "summary": "The Liang dynasty ruled southern China from Jiankang, modern Nanjing, and under its Buddhist founder, Emperor Wu, became a centre of learning and art before ending in disaster. Xiao Yan, a general from the same Xiao clan as the Qi emperors, rebelled against the tyrant Xiao Baojuan and took the throne in 502. He reigned for 47 years, supporting Confucian schools and writing poetry, while his court produced the Wenxuan anthology of literature. He ate only vegetarian food and four times gave himself to a monastery, each time ransomed back by his officials. In 548 the general Hou Jing rebelled and besieged the capital, which fell in 549; the old emperor died a prisoner that year. His son Xiao Yi crushed Hou Jing and ruled from Jiangling, but a Western Wei army took the city and killed him in 555, after he had burned his library of over 140,000 volumes. In 557 the general Chen Baxian ended the dynasty, though a Liang puppet state survived until 587.",
+  "legacy": "The Liang is the best-documented of the Southern Dynasties, remembered for the Wenxuan anthology and its literary criticism, and Emperor Wu became known as the Bodhisattva Emperor for his piety.",
+  "sources": [
+   {
+    "title": "Wikipedia: Liang dynasty",
+    "url": "https://en.wikipedia.org/wiki/Liang_dynasty"
+   },
+   {
+    "title": "Wikipedia: Emperor Wu of Liang",
+    "url": "https://en.wikipedia.org/wiki/Emperor_Wu_of_Liang"
+   },
+   {
+    "title": "Wikipedia: Emperor Yuan of Liang",
+    "url": "https://en.wikipedia.org/wiki/Emperor_Yuan_of_Liang"
+   },
+   {
+    "title": "Wikipedia: List of largest empires (areas from Taagepera 1979)",
+    "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+   },
+   {
+    "title": "Turchin, Adams & Hall (2006), East-West Orientation of Historical Empires (JWSR)",
+    "url": "https://jwsr.pitt.edu/ojs/jwsr/article/view/369/381"
+   }
+  ]
+ },
+ {
+  "id": "chen-dynasty",
+  "name": "Chen dynasty",
+  "aliases": [],
+  "clio": [
+   "Chen Dynasty"
+  ],
+  "region": "east-asia",
+  "start": 557,
+  "end": 589,
+  "capital": "Jiankang (modern Nanjing)",
+  "peak": {
+   "year": 576,
+   "areaKm2": 1000000,
+   "note": "Southern China below the Yangtze, plus the land between the Huai and the Yangtze taken from the Northern Qi in 573 and lost to the Northern Zhou by 580; c. 1.0M km² as drawn on this map, which does not show the 573 gains (no Taagepera figure)"
+  },
+  "rulers": [
+   {
+    "name": "Emperor Wu (Chen Baxian)",
+    "reign": "557 – 559",
+    "note": "Liang general who seized power and founded the dynasty"
+   },
+   {
+    "name": "Emperor Wen (Chen Qian)",
+    "reign": "559 – 566",
+    "note": "Nephew of the founder; steadied the new state"
+   },
+   {
+    "name": "Emperor Xuan (Chen Xu)",
+    "reign": "569 – 582",
+    "note": "Won back the Huai region in 573, then lost it to Northern Zhou"
+   },
+   {
+    "name": "Chen Shubao (Houzhu)",
+    "reign": "582 – 589",
+    "note": "Last emperor, remembered as a poet who neglected the state; captured by the Sui"
+   }
+  ],
+  "summary": "The Chen was the fourth and last of the Southern Dynasties, a short-lived empire that ruled southern China from Jiankang, today's Nanjing, between 557 and 589. Its founder, Chen Baxian, was a general of the Liang dynasty who helped crush the rebel Hou Jing and then, in 557, pushed aside the last Liang emperor and took the throne himself. The new state was smaller than its predecessors, because Sichuan and much land north of the Yangtze had already fallen to northern rivals. Emperor Xuan briefly won back the plain between the Huai and Yangtze rivers in 573, but the Northern Zhou, having swallowed the Northern Qi, seized it by 580. Jiankang stayed a lively centre of Buddhism, poetry and painting, visited by monks and merchants from India and Southeast Asia. In 589 the armies of the new Sui dynasty crossed the Yangtze almost unopposed, and the last emperor, Chen Shubao, was found hiding in a well. His fall ended the long split of China into rival northern and southern dynasties.",
+  "legacy": "The Sui conquest of the Chen reunited northern and southern China, and Jiankang's refined southern culture passed into the Sui and Tang.",
+  "sources": [
+   {
+    "title": "Wikipedia: Chen dynasty",
+    "url": "https://en.wikipedia.org/wiki/Chen_dynasty"
+   },
+   {
+    "title": "Wikipedia: Chen Shubao",
+    "url": "https://en.wikipedia.org/wiki/Chen_Shubao"
+   },
+   {
+    "title": "Archontology: Chen (557–589), polity",
+    "url": "https://archontology.org/nations/china/chen/01_polity.php"
+   }
+  ]
+ },
+ {
+  "id": "northern-zhou",
+  "name": "Northern Zhou",
+  "aliases": [],
+  "clio": [
+   "Northern Zhou"
+  ],
+  "region": "east-asia",
+  "start": 557,
+  "end": 581,
+  "capital": "Chang'an",
+  "peak": {
+   "year": 577,
+   "areaKm2": 1500000,
+   "note": "After conquering the Northern Qi in 577; c. 1.5M km² (Taagepera 1979), a rounded figure that equals his estimate for the Northern Qi alone and is probably low; this map draws it larger"
+  },
+  "rulers": [
+   {
+    "name": "Emperor Xiaomin (Yuwen Jue)",
+    "reign": "557",
+    "note": "First emperor; deposed and killed by the regent Yuwen Hu"
+   },
+   {
+    "name": "Emperor Ming (Yuwen Yu)",
+    "reign": "557 – 560",
+    "note": "Poisoned on Yuwen Hu's orders"
+   },
+   {
+    "name": "Emperor Wu (Yuwen Yong)",
+    "reign": "560 – 578",
+    "note": "Killed Yuwen Hu in 572; conquered the Northern Qi"
+   },
+   {
+    "name": "Emperor Xuan",
+    "reign": "578 – 579",
+    "note": "Erratic ruler who handed the throne to his young son"
+   },
+   {
+    "name": "Emperor Jing",
+    "reign": "579 – 581",
+    "note": "Child emperor; abdicated to Yang Jian"
+   }
+  ],
+  "summary": "The Northern Zhou was a northern Chinese dynasty, led by the Yuwen family of the Xianbei, that reunited the north and set the stage for the Sui. Its power was built by Yuwen Tai, the general who ran the Western Wei state in the northwest. After his death, his nephew Yuwen Hu forced the last Western Wei emperor to give up the throne in 557 to Yuwen Jue, who ruled from Chang'an. Yuwen Hu went on to dominate, and kill, the first two emperors, until Emperor Wu killed him in 572. Emperor Wu was a forceful ruler: in 574 he banned Buddhism and Taoism and sent their monks back to ordinary life, and in 577 he destroyed the rival Northern Qi, uniting northern China. Surviving artifacts show contact with Sogdian merchants and Turkic peoples, and Emperor Wu took a Turkic empress. After Wu died in 578 his son ruled erratically, and in 581 the regent Yang Jian took the throne and founded the Sui, which reunified China in 589.",
+  "legacy": "By reuniting northern China, the Northern Zhou built the state that Yang Jian took over and used to reunify the whole country under the Sui.",
+  "sources": [
+   {
+    "title": "Wikipedia: Northern Zhou",
+    "url": "https://en.wikipedia.org/wiki/Northern_Zhou"
+   },
+   {
+    "title": "Wikipedia: Emperor Wu of Northern Zhou",
+    "url": "https://en.wikipedia.org/wiki/Emperor_Wu_of_Northern_Zhou"
+   },
+   {
+    "title": "Wikipedia: Emperor Xuan of Northern Zhou",
+    "url": "https://en.wikipedia.org/wiki/Emperor_Xuan_of_Northern_Zhou"
+   },
+   {
+    "title": "Wikipedia: List of largest empires (areas from Taagepera 1979)",
+    "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+   }
+  ]
+ },
+ {
+  "id": "avar-khaganate",
+  "name": "Avar Khaganate",
+  "aliases": [],
+  "clio": [
+   "Avar Khaganate"
+  ],
+  "region": "europe",
+  "start": 567,
+  "end": 822,
+  "capital": "The Ring, a fortified royal camp, probably on the plain between the Danube and the Tisza",
+  "peak": {
+   "year": 600,
+   "areaKm2": 800000,
+   "note": "c. 0.8M km² c. 600, from modern Austria to the Black Sea steppe (Taagepera 1979, as listed in Wikipedia's List of largest empires); this map draws up to c. 1.0M km² c. 620"
+  },
+  "rulers": [
+   {
+    "name": "Bayan I",
+    "reign": "562 – 602",
+    "note": "Led the Avars into the Carpathian Basin; destroyed the Gepids and took Sirmium"
+   },
+   {
+    "name": "Bayan II",
+    "reign": "602 – c. 617",
+    "note": "Son and successor of Bayan I"
+   },
+   {
+    "name": "Bayan III",
+    "reign": "c. 617 – 630",
+    "note": "Name from modern lists; the sources on the failed siege of Constantinople in 626 do not name the khagan who led it"
+   },
+   {
+    "name": "Theodorus",
+    "reign": "c. 795 – 805",
+    "note": "Christian Avar ruler under Frankish overlordship, called capcanus (kapkhan) in the Frankish annals; in 805 Charlemagne settled his people between Savaria and Carnuntum; succeeded by Abraham"
+   }
+  ],
+  "summary": "The Avar Khaganate was an empire of nomadic horsemen from Central Asia who ruled the Carpathian Basin, in today's Hungary, for more than two centuries. The Avars, whose leaders may have descended from the Rouran of Mongolia, sent their first embassy to Constantinople in 557 or 558 and offered to fight the empire's enemies for gold. In 567 they joined the Lombards to destroy the Gepids, and soon made Pannonia their own. Under the khagan Bayan I they ruled over Slavs, Gepids and Bulgars, took Sirmium and squeezed rich tributes from Byzantium. By 600 their power reached from modern Austria to the Black Sea steppe. After a failed siege of Constantinople alongside the Persians in 626, revolts by Bulgars and Slavs cut the khaganate back. Over time many Avars took up farming, but from 791 Charlemagne's Franks attacked, and in 795 – 796 they plundered the Ring, the khagan's camp. Avar envoys appear at a Frankish assembly for the last time in 822.",
+  "legacy": "Their fall left the middle Danube to the Franks, Bulgarians and Slavs, and their graves, rich in Central Asian-style stirrups and griffin-decorated belt fittings, are a key source for early medieval Europe.",
+  "sources": [
+   {
+    "title": "Wikipedia: Pannonian Avars",
+    "url": "https://en.wikipedia.org/wiki/Pannonian_Avars"
+   },
+   {
+    "title": "Wikipedia: Bayan I",
+    "url": "https://en.wikipedia.org/wiki/Bayan_I"
+   },
+   {
+    "title": "Wikipedia: Avar Wars",
+    "url": "https://en.wikipedia.org/wiki/Avar_Wars"
+   },
+   {
+    "title": "Preiser-Kapeller, The Climate of the Khagan (arXiv 1803.06221)",
+    "url": "https://arxiv.org/abs/1803.06221"
+   },
+   {
+    "title": "Wikipedia: List of largest empires",
+    "url": "https://en.wikipedia.org/wiki/List_of_largest_empires"
+   },
+   {
+    "title": "Wikipedia: Abraham (Avar khagan)",
+    "url": "https://en.wikipedia.org/wiki/Abraham_(Avar_khagan)"
+   }
+  ]
+ },
+ {
+  "id": "harsha-empire",
+  "name": "Empire of Harsha",
+  "aliases": [],
+  "clio": [
+   "Harsha's Empire"
+  ],
+  "region": "middle-east-south-asia",
+  "start": 606,
+  "end": 647,
+  "capital": "Kannauj (Kanyakubja); earlier Thanesar (Sthanvishvara)",
+  "peak": {
+   "year": 625,
+   "areaKm2": 1000000,
+   "note": "Across the northern plains to the Narmada River; c. 1.0M km² c. 625–648 (Taagepera 1997), and c. 1.0M km² for 648 (Turchin, Adams & Hall 2006)"
+  },
+  "rulers": [
+   {
+    "name": "Prabhakaravardhana",
+    "reign": "c. 580 – 605",
+    "note": "Harsha's father, king of Thanesar"
+   },
+   {
+    "name": "Rajyavardhana",
+    "reign": "605 – 606",
+    "note": "Harsha's elder brother, murdered by Shashanka of Gauda"
+   },
+   {
+    "name": "Harsha (Harshavardhana)",
+    "reign": "606 – 647",
+    "note": "Built the empire from Kannauj; poet and patron of learning"
+   }
+  ],
+  "summary": "The empire of Harsha united much of northern India for some forty years in the early 7th century, built almost entirely by one remarkable king. Harsha, of the Pushyabhuti family that ruled Thanesar north of Delhi, came to the throne at about sixteen in 606, after his elder brother Rajyavardhana was murdered by Shashanka, king of Gauda in Bengal. He rescued his sister Rajyashri and made the old city of Kannauj on the Ganges his capital. At its height his realm stretched across the northern plains down to the Narmada River, but his push into the Deccan was stopped by the Chalukya king Pulakeshin II around 618, and the river became their border. Harsha is credited with three Sanskrit plays, and the court poet Bana wrote his life story. The Chinese pilgrim Xuanzang praised his justice, generosity and support for Buddhism, though his own inscriptions present him as a devotee of Shiva. He died in 647 without an heir, and his empire quickly broke apart.",
+  "legacy": "Harsha's reign is one of the best-documented of early India, thanks to Bana and Xuanzang, and it made Kannauj the prize that northern India's powers fought over for centuries.",
+  "sources": [
+   {
+    "title": "Wikipedia: Harsha",
+    "url": "https://en.wikipedia.org/wiki/Harsha"
+   },
+   {
+    "title": "Wikipedia: Pushyabhuti dynasty",
+    "url": "https://en.wikipedia.org/wiki/Pushyabhuti_dynasty"
+   },
+   {
+    "title": "Taagepera (1997), Expansion and Contraction Patterns of Large Polities",
+    "url": "https://escholarship.org/content/qt3cn68807/qt3cn68807.pdf"
+   },
+   {
+    "title": "Turchin, Adams & Hall (2006), East-West Orientation of Historical Empires",
+    "url": "https://jwsr.pitt.edu/ojs/jwsr/article/download/369/381/454"
+   }
+  ]
+ },
+ {
+  "id": "rashidun-caliphate",
+  "name": "Rashidun Caliphate",
+  "aliases": [],
+  "clio": [
+   "Rashidun Caliphate"
+  ],
+  "region": "middle-east-south-asia",
+  "start": 632,
+  "end": 661,
+  "capital": "Medina; later Kufa (from 656)",
+  "peak": {
+   "year": 655,
+   "areaKm2": 6400000,
+   "note": "From Libya and Egypt to eastern Iran, after the fall of the Sasanian Empire; c. 6.4M km² in 655 (Taagepera 1997)"
+  },
+  "rulers": [
+   {
+    "name": "Abu Bakr",
+    "reign": "632 – 634",
+    "note": "Muhammad's companion and father-in-law; fought the Ridda wars and sent armies into Iraq and Syria"
+   },
+   {
+    "name": "Umar",
+    "reign": "634 – 644",
+    "note": "Oversaw the conquest of Syria, Iraq and Egypt; murdered at prayer"
+   },
+   {
+    "name": "Uthman",
+    "reign": "644 – 656",
+    "note": "Had a standard text of the Quran compiled; killed by rebels in Medina"
+   },
+   {
+    "name": "Ali",
+    "reign": "656 – 661",
+    "note": "Muhammad's cousin and son-in-law; fought the First Fitna and was killed by a Kharijite"
+   }
+  ],
+  "summary": "The Rashidun Caliphate was the first Muslim state after the death of the Prophet Muhammad, led from 632 to 661 by four of his closest companions, remembered as the rightly guided caliphs. Abu Bakr held Arabia together in the Ridda wars and sent armies north against the Byzantine and Sasanian Persian empires. Under Umar those armies swept through Syria, Iraq and Palestine by 640 and Egypt by 642, and the Sasanian state collapsed entirely by 651. The caliphs ruled this sudden empire from Medina through governors in each province. Uthman had an official text of the Quran written down and sent copies to the major cities. Yet Umar, Uthman and Ali were all murdered, and Uthman's killing in 656 set off the First Fitna, a civil war in which Ali moved his capital to Kufa. After Ali was assassinated in 661, Muawiya, governor of Syria, took power and founded the Umayyad dynasty.",
+  "legacy": "In thirty years the Rashidun turned a movement in Arabia into an empire from Libya to Iran. Sunni Muslims honour all four as rightly guided caliphs, while Shia Muslims hold that Ali should have led first, a disagreement that still divides the two traditions.",
+  "sources": [
+   {
+    "title": "Wikipedia: Rashidun Caliphate",
+    "url": "https://en.wikipedia.org/wiki/Rashidun_Caliphate"
+   },
+   {
+    "title": "Wikipedia: Ali",
+    "url": "https://en.wikipedia.org/wiki/Ali"
+   },
+   {
+    "title": "Taagepera (1997), Expansion and Contraction Patterns of Large Polities",
+    "url": "https://escholarship.org/content/qt3cn68807/qt3cn68807.pdf"
+   }
+  ]
+ },
+ {
+  "id": "turgesh",
+  "name": "Türgesh Khaganate",
+  "aliases": [],
+  "clio": [
+   "Türgesh"
+  ],
+  "region": "north-central-asia",
+  "start": 699,
+  "end": 766,
+  "capital": "Suyab (taken in 703); Taraz as a second seat",
+  "peak": {
+   "year": 730,
+   "areaKm2": 4000000,
+   "note": "Under Suluk, when the Türgesh held the Seven Rivers country and fought for Sogdiana and Ferghana; c. 4.0M km² (as drawn on this map)"
+  },
+  "rulers": [
+   {
+    "name": "Wuzhile",
+    "reign": "699 – 706",
+    "note": "Founder; took Suyab in 703"
+   },
+   {
+    "name": "Saqal",
+    "reign": "706 – 711",
+    "note": "Killed when the eastern Turks under Qapaghan crushed the Türgesh at Bolchu"
+   },
+   {
+    "name": "Suluk",
+    "reign": "c. 716 – 738",
+    "note": "Revived the khaganate and fought the Arabs for a decade"
+   },
+   {
+    "name": "Kül Chor",
+    "reign": "739 – 744",
+    "note": "Murdered Suluk; submitted to the Tang, rebelled, and was executed"
+   }
+  ],
+  "summary": "The Türgesh were a Turkic people of the Western Turkic On Oq union who ruled the Seven Rivers country of today's Kazakhstan and Kyrgyzstan in the early 8th century. Their chief Wuzhile founded the khaganate in 699, after the Western Turkic Khaganate fell apart, and took the city of Suyab in 703. In 711 the eastern Turks under Qapaghan beat them at Bolchu and killed their khagan Saqal. The Türgesh rose again under Suluk, chosen leader around 716, whom Tang China accepted as khagan and gave a princess as his bride. From about 720 they backed the Sogdian princes against the Arab armies of the Umayyad Caliphate, winning the Day of Thirst in 724 and inflicting crippling losses at the Battle of the Defile in 731. After Suluk was beaten at Kharistan in 737, his commander Kül Chor murdered him in 738, and the Yellow and Black factions fought a civil war while China meddled. The Karluks took the Seven Rivers country in 766 and ended the khaganate.",
+  "legacy": "For about two decades the Türgesh were the main obstacle to the Arab conquest of Central Asia beyond the Oxus.",
+  "sources": [
+   {
+    "title": "Wikipedia: Türgesh",
+    "url": "https://en.wikipedia.org/wiki/T%C3%BCrgesh"
+   },
+   {
+    "title": "Wikipedia: Suluk (Türgesh khagan)",
+    "url": "https://en.wikipedia.org/wiki/Suluk_(T%C3%BCrgesh_khagan)"
+   },
+   {
+    "title": "Wikipedia: Muslim conquest of Transoxiana",
+    "url": "https://en.wikipedia.org/wiki/Muslim_conquest_of_Transoxiana"
+   },
+   {
+    "title": "Wikipedia: Kül-chor",
+    "url": "https://en.wikipedia.org/wiki/K%C3%BCl-chor"
+   },
+   {
+    "title": "Wikipedia: Battle of the Defile",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_the_Defile"
+   }
+  ]
+ },
+ {
+  "id": "uyghur-khaganate",
+  "name": "Uyghur Khaganate",
+  "aliases": [],
+  "clio": [
+   "Uyghur Khaganate"
+  ],
+  "region": "north-central-asia",
+  "start": 744,
+  "end": 840,
+  "capital": "Ordu-Baliq on the Orkhon River (built under Bayanchur); before that the Ötüken highlands",
+  "peak": {
+   "year": 800,
+   "areaKm2": 3100000,
+   "note": "Mongolia and parts of Turkestan; c. 3.1M km² c. 800 (Taagepera 1997; Turchin, Adams & Hall 2006)"
+  },
+  "rulers": [
+   {
+    "name": "Kutlug Bilge",
+    "reign": "744 – 747",
+    "note": "Founder; overthrew the last Göktürk khagans"
+   },
+   {
+    "name": "Bayanchur",
+    "reign": "747 – 759",
+    "note": "Built Ordu-Baliq and sent horsemen to help the Tang crush rebels"
+   },
+   {
+    "name": "Bögü",
+    "reign": "759 – 780",
+    "note": "Adopted Manichaeism as the state religion in 762"
+   },
+   {
+    "name": "Baoyi",
+    "reign": "808 – 821",
+    "note": "The Karabalgasun inscription praising the khagans dates from his reign"
+   },
+   {
+    "name": "Qasar",
+    "reign": "839 – 840",
+    "note": "Usurper killed when the Kyrgyz sacked the capital"
+   }
+  ],
+  "summary": "The Uyghur Khaganate was a Turkic steppe empire centred on the Orkhon valley in Mongolia, which ruled the eastern steppe from 744 until 840. The Uyghurs joined the Karluks and Basmyls in a revolt against the Second Turkic Khaganate in 742, and in 744 their leader Kutlug Bilge made himself khagan. His son Bayanchur built a walled capital, Ordu-Baliq, on the Orkhon River. When the An Lushan rebellion shook Tang China, Uyghur horsemen helped retake Chang'an and Luoyang in 757, and the Tang paid them in silk, much of it through a trade set at 40 rolls of silk for each horse. In 762 Bögü Khagan took up Manichaeism, which became the state religion. A Muslim envoy in 821 found Ordu-Baliq crowded with markets, with twelve iron gates and a golden tent where the khagan held court. Around 790 the Uyghurs fought Tibet for the oases of the Tarim Basin. In 840 the Yenisei Kyrgyz sacked Ordu-Baliq, and the Uyghurs scattered south, founding new kingdoms in Gansu and around Turpan.",
+  "legacy": "Uyghur kingdoms in Gansu and around Turpan grew from its ruin, and the Kingdom of Qocho lasted until 1335, carrying Uyghur rule into the Tarim Basin.",
+  "sources": [
+   {
+    "title": "Wikipedia: Uyghur Khaganate",
+    "url": "https://en.wikipedia.org/wiki/Uyghur_Khaganate"
+   },
+   {
+    "title": "Wikipedia: Ordu-Baliq",
+    "url": "https://en.wikipedia.org/wiki/Ordu-Baliq"
+   },
+   {
+    "title": "Taagepera (1997), Expansion and Contraction Patterns of Large Polities",
+    "url": "https://escholarship.org/content/qt3cn68807/qt3cn68807.pdf"
+   },
+   {
+    "title": "Turchin, Adams & Hall (2006), East-West Orientation of Historical Empires",
+    "url": "https://web.archive.org/web/20200707181315/http://peterturchin.com/PDF/Turchin_Adams_Hall_2006.pdf"
+   }
+  ]
+ },
+ {
+  "id": "pala-empire",
+  "name": "Pala Empire",
+  "aliases": [],
+  "clio": [
+   "Pala Empire"
+  ],
+  "region": "middle-east-south-asia",
+  "start": 750,
+  "end": 1161,
+  "capital": "No fixed capital: royal seats in Bengal and Bihar included Pataliputra, Monghyr and Gauda; Ramavati under Ramapala and his successors",
+  "peak": {
+   "year": 850,
+   "areaKm2": 1400000,
+   "note": "Under Devapala (c. 810 – 850), when the empire reached its widest, across the Ganges plain toward the Vindhya hills; the year is approximate. c. 1.4M km² (as drawn on this map)"
+  },
+  "rulers": [
+   {
+    "name": "Gopala",
+    "reign": "c. 750 – 770",
+    "note": "Chosen king by the chiefs of Gauda to end years of disorder"
+   },
+   {
+    "name": "Dharmapala",
+    "reign": "c. 770 – 810",
+    "note": "Fought for Kannauj; founded the Vikramashila and Somapura monasteries"
+   },
+   {
+    "name": "Devapala",
+    "reign": "c. 810 – 850",
+    "note": "Ruled the empire at its widest; endowed Nalanda"
+   },
+   {
+    "name": "Mahipala I",
+    "reign": "c. 988 – 1036",
+    "note": "Revived the dynasty; faced the Chola invasion of Rajendra I"
+   },
+   {
+    "name": "Ramapala",
+    "reign": "c. 1077 – 1130",
+    "note": "Crushed the Kaivarta revolt and restored Pala power for a last time"
+   }
+  ],
+  "summary": "The Pala Empire ruled Bengal and Bihar for about four centuries and was famous as a patron of Buddhist learning. After a long period of disorder in Bengal, local chiefs chose a leader named Gopala as king around 750. His son Dharmapala made the Palas a great power, placing his own candidate on the throne of Kannauj and joining a long three-way struggle for northern India with the Gurjara-Pratiharas and the Rashtrakutas. Under Devapala the empire reached across the Ganges plain toward the Vindhya hills. The Palas founded the monastery-universities of Vikramashila and Somapura and supported Nalanda, which drew monks from as far as Java, and Pala scholars such as Atisha carried Buddhism to Tibet. Though Buddhist themselves, the kings also endowed Brahmins and Hindu temples. After a revival under Mahipala I and a raid by the Chola king Rajendra I, a revolt led by the Kaivarta chief Divya shook the realm. Ramapala restored it, but after him the Senas took Bengal, and Pala rule ended around 1161.",
+  "legacy": "Pala-era monasteries and sculpture shaped Buddhist art and teaching across Tibet, Nepal, Burma and Java long after Buddhism faded in India itself.",
+  "sources": [
+   {
+    "title": "Wikipedia: Pala Empire",
+    "url": "https://en.wikipedia.org/wiki/Pala_Empire"
+   },
+   {
+    "title": "Banglapedia: Pala Dynasty",
+    "url": "https://en.banglapedia.org/index.php/Pala_Dynasty"
+   },
+   {
+    "title": "Wikipedia: Devapala (Pala dynasty)",
+    "url": "https://en.wikipedia.org/wiki/Devapala_(Pala_dynasty)"
+   }
+  ]
+ },
+ {
+  "id": "rashtrakuta-dynasty",
+  "name": "Rashtrakuta dynasty",
+  "aliases": [],
+  "clio": [
+   "Rashtrakuta Dynasty"
+  ],
+  "region": "middle-east-south-asia",
+  "start": 753,
+  "end": 982,
+  "capital": "Manyakheta (Malkhed) from the reign of Amoghavarsha I; earlier seats included Mayurakhandi under Govinda III and probably Achalapura (Elichpur)",
+  "peak": {
+   "year": 800,
+   "areaKm2": 1100000,
+   "note": "Under Govinda III, whose control reached Kanchi in the south and whose northern campaign of c. 800 brought the rulers of Kannauj, the Pratiharas and the Palas to submit; c. 1.1M km² (as drawn on this map)"
+  },
+  "rulers": [
+   {
+    "name": "Dantidurga",
+    "reign": "753 – 756",
+    "note": "Founder; overthrew the Chalukyas of Badami"
+   },
+   {
+    "name": "Krishna I",
+    "reign": "756 – 774",
+    "note": "Commissioned the rock-cut Kailasa temple at Ellora"
+   },
+   {
+    "name": "Govinda III",
+    "reign": "793 – 814",
+    "note": "The most successful general of the line, campaigning from Kannauj to the far south"
+   },
+   {
+    "name": "Amoghavarsha I",
+    "reign": "814 – 878",
+    "note": "Built Manyakheta; Jain patron, credited with the Kannada Kavirajamarga"
+   },
+   {
+    "name": "Krishna III",
+    "reign": "939 – 967",
+    "note": "Defeated the Cholas at Takkolam c. 949"
+   }
+  ],
+  "summary": "The Rashtrakutas were a dynasty from the Deccan plateau that, between the 8th and 10th centuries, built one of the strongest powers in India. Dantidurga, a vassal of the Chalukyas of Badami, defeated his overlord in 753 and founded the empire. His successor Krishna I had the immense Kailasa temple at Ellora carved out of solid rock. Kings Dhruva and Govinda III marched north to defeat the Pratiharas and Palas in the contest for Kannauj, the prize city of northern India. Amoghavarsha I ruled for over sixty years from his new capital, Manyakheta; a patron of Jain scholars, he is credited with the earliest surviving book in Kannada, and the Arab merchant Sulaiman counted him among the four great kings of the world. Around 949 Krishna III crushed the Cholas at Takkolam. But in 972 the Paramara king Siyaka sacked Manyakheta, the vassal Tailapa II broke away to restore Chalukya rule, and the last Rashtrakuta, Indra IV, died in 982.",
+  "legacy": "The Rashtrakutas left the Kailasa temple at Ellora, one of the world's great rock-cut monuments, and their patronage launched classical Kannada literature.",
+  "sources": [
+   {
+    "title": "Wikipedia: Rashtrakuta dynasty",
+    "url": "https://en.wikipedia.org/wiki/Rashtrakuta_dynasty"
+   },
+   {
+    "title": "Wikipedia: Amoghavarsha",
+    "url": "https://en.wikipedia.org/wiki/Amoghavarsha"
+   },
+   {
+    "title": "Wikipedia: Krishna III",
+    "url": "https://en.wikipedia.org/wiki/Krishna_III"
+   },
+   {
+    "title": "Wikipedia: Govinda III",
+    "url": "https://en.wikipedia.org/wiki/Govinda_III"
+   }
+  ]
+ },
+ {
+  "id": "samanid-empire",
+  "name": "Samanid Empire",
+  "aliases": [],
+  "clio": [
+   "Samanid Empire"
+  ],
+  "region": "north-central-asia",
+  "start": 819,
+  "end": 999,
+  "capital": "Samarkand; later Bukhara (from 892)",
+  "peak": {
+   "year": 928,
+   "areaKm2": 2850000,
+   "note": "Transoxiana, Khorasan and neighbouring lands under Nasr II; c. 2.85M km² in 928 (Taagepera 1997; Turchin, Adams & Hall 2006)"
+  },
+  "rulers": [
+   {
+    "name": "Nasr I",
+    "reign": "864 – 892",
+    "note": "Held Samarkand and was recognised by the caliph as ruler of Transoxiana"
+   },
+   {
+    "name": "Ismail Samani",
+    "reign": "892 – 907",
+    "note": "Made Bukhara the capital and defeated the Saffarids in 900; buried in the famous Samanid Mausoleum"
+   },
+   {
+    "name": "Nasr II",
+    "reign": "914 – 943",
+    "note": "Ruled the realm at its widest; his court patronised the poet Rudaki"
+   },
+   {
+    "name": "Nuh II",
+    "reign": "976 – 997",
+    "note": "Struggled against Karakhanid invaders and his own generals"
+   }
+  ],
+  "summary": "The Samanids were a Persian dynasty who ruled Transoxiana and Khorasan from Bukhara and made it one of the brightest centres of culture in the Islamic world. They descended from Saman Khuda, a Zoroastrian landowner from Balkh who converted to Islam, and in 819 four of his grandsons were given cities to govern, including Samarkand and Herat. Ismail Samani united the family's lands in 892, moved the capital to Bukhara, and in 900 defeated the Saffarid ruler Amr ibn al-Layth to win Khorasan. The Samanids still recognised the caliph but governed on their own, and grew rich on farming and trade, above all the trade in Turkic slaves; their silver coins have turned up as far away as Scandinavia. Their court revived Persian as a language of poetry and government, supporting poets such as Rudaki, and Ferdowsi completed the first version of his Shahnameh under their rule. By the late 900s Turkic generals held the real power, and in 999 the Karakhanids took Bukhara while the Ghaznavids took Khorasan.",
+  "legacy": "The Samanids made New Persian a language of literature again after the Arab conquest, laying the ground for the Shahnameh and later Persian classics; Tajikistan names its currency, the somoni, and its highest peak after Ismail Samani.",
+  "sources": [
+   {
+    "title": "Wikipedia: Samanid Empire",
+    "url": "https://en.wikipedia.org/wiki/Samanid_Empire"
+   },
+   {
+    "title": "Wikipedia: Ismail Samani",
+    "url": "https://en.wikipedia.org/wiki/Ismail_Samani"
+   },
+   {
+    "title": "Taagepera (1997), Expansion and Contraction Patterns of Large Polities",
+    "url": "https://escholarship.org/content/qt3cn68807/qt3cn68807.pdf"
+   },
+   {
+    "title": "Turchin, Adams & Hall (2006), East-West Orientation of Historical Empires, Journal of World-Systems Research 12(2), Table 1",
+    "url": "https://jwsr.pitt.edu/ojs/jwsr/article/download/369/381"
+   }
+  ]
+ },
+ {
+  "id": "kara-khanids",
+  "name": "Kara-Khanid Khanate",
+  "aliases": [],
+  "clio": [
+   "Kara-Khanids",
+   "Eastern Kara-Khanids",
+   "Western Karakhanid Khanate"
+  ],
+  "region": "north-central-asia",
+  "start": 840,
+  "end": 1212,
+  "capital": "Balasagun and Kashgar; Samarkand for the western khans",
+  "peak": {
+   "year": 1040,
+   "areaKm2": 1300000,
+   "note": "From the Oxus to the Tarim Basin, including Transoxiana, Ferghana, the Seven Rivers country, Kashgar and Khotan, just before the split into eastern and western khanates; c. 1.3M km² (as drawn on this map)"
+  },
+  "rulers": [
+   {
+    "name": "Satuq Bughra Khan",
+    "reign": "c. 920 – 955",
+    "note": "First of the dynasty to become a Muslim; took Kashgar"
+   },
+   {
+    "name": "Yusuf Qadir Khan",
+    "reign": "c. 1026 – 1032",
+    "note": "Conquered Buddhist Khotan in 1006 before becoming khan"
+   },
+   {
+    "name": "Ibrahim Tamghach Khan",
+    "reign": "c. 1040 – 1068",
+    "note": "Built up the western khanate; remembered as just and devout"
+   },
+   {
+    "name": "Abu Ali al-Hasan",
+    "reign": "1075 – 1102",
+    "note": "Eastern khan at Kashgar for 27 years; the eastern khanate had taken Kucha in 1050"
+   },
+   {
+    "name": "Uthman",
+    "reign": "c. 1204 – 1212",
+    "note": "Last western khan, executed by the Khwarazmshah"
+   }
+  ],
+  "summary": "The Kara-Khanids were one of the first Muslim Turkic dynasties of Central Asia, ruling from the Tarim Basin to the Oxus River. They grew out of a union of the Karluk, Chigil and Yaghma tribes, whose leaders saw themselves as heirs of the old Turkic khaganate. In the mid-10th century the prince Satuq Bughra Khan became a Muslim and seized Kashgar, and mass conversions followed. His heirs pushed west against the Samanids, and in 999 they divided the Samanid lands with the Ghaznavids, taking Transoxiana with Bukhara and Samarkand; Khotan fell to them soon after. The realm was family property, shared among senior and junior khans and princes, and around 1040 it split in two. Towns, crafts and trade grew, and Turkic writing flourished in works such as the Kutadgu Bilig and Mahmud al-Kashgari's dictionary of Turkic. The Seljuks made the khans vassals in 1089, the Qara Khitai took over as overlords between 1134 and 1141, and the Khwarazmshah ended the last khanate in 1212.",
+  "legacy": "The Kara-Khanids helped make Central Asia both Turkic and Muslim, and Satuq Bughra Khan and the writers of their age are still celebrated by the Uyghurs and in Kyrgyzstan.",
+  "sources": [
+   {
+    "title": "Encyclopaedia Iranica: Ilak-khanids (Qara-khanids)",
+    "url": "https://www.iranicaonline.org/articles/ilak-khanids"
+   },
+   {
+    "title": "Wikipedia: Kara-Khanid Khanate",
+    "url": "https://en.wikipedia.org/wiki/Kara-Khanid_Khanate"
+   },
+   {
+    "title": "Wikipedia: Battle of Qatwan",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Qatwan"
+   },
+   {
+    "title": "Wikipedia: Timeline of the Karluks",
+    "url": "https://en.wikipedia.org/wiki/Timeline_of_the_Karluks"
+   }
+  ]
+ },
+ {
+  "id": "tibet-after-empire",
+  "name": "Tibet after the empire",
+  "aliases": [],
+  "clio": [
+   "Tibetans",
+   "Tibet"
+  ],
+  "region": "east-asia",
+  "start": 842,
+  "end": 1951,
+  "capital": "No capital during the Era of Fragmentation (842 to the 1240s); then Sakya under Mongol overlordship; Nêdong under the Phagmodrupa (from 1354); Shigatse under the Tsangpa (1565–1642); Lhasa under the Dalai Lamas from 1642",
+  "peak": {
+   "year": 1700,
+   "areaKm2": 1600000,
+   "note": "The Dalai Lamas' Ganden Phodrang state, c. 1.6M km² as drawn on this map c. 1683–1701. The map's larger 'Tibetans' shape for 850–1249 (c. 1.9M km²) covers many rival lordships, not one state"
+  },
+  "rulers": [
+   {
+    "name": "Changchub Gyaltsen",
+    "reign": "1354 – 1364",
+    "note": "Overthrew Sakya rule and founded the Phagmodrupa regime, taking the title desi (regent)"
+   },
+   {
+    "name": "5th Dalai Lama (Ngawang Lobsang Gyatso)",
+    "reign": "1642 – 1682",
+    "note": "The Great Fifth, made ruler of Tibet by Güshi Khan; began the Potala Palace"
+   },
+   {
+    "name": "13th Dalai Lama (Thubten Gyatso)",
+    "reign": "1895 – 1933",
+    "note": "Declared Tibet's independence in 1913 after the Qing collapse and began modernising reforms"
+   },
+   {
+    "name": "14th Dalai Lama (Tenzin Gyatso)",
+    "reign": "1950 – 1959",
+    "note": "Took power at 15 as Chinese troops invaded; fled to India in 1959"
+   }
+  ],
+  "summary": "Between the collapse of the Tibetan Empire in 842 and the Chinese takeover of 1951, Tibet was ruled in turn by rival lords, Buddhist abbots and, from 1642, the Dalai Lamas. The death of the last emperor, Langdarma, set off a civil war, and for four centuries no one ruled the whole plateau; small kingdoms such as Guge rose in the west, and Buddhism revived with teachers like Atisha. In the 1240s the Mongols made the abbots of Sakya their governors. In 1354 Changchub Gyaltsen of the Phagmodrupa ended Sakya rule, and power later passed to the Rinpungpa and then the Tsangpa kings of Shigatse. In 1642 the Mongol chief Güshi Khan defeated the Tsangpa and made the 5th Dalai Lama ruler, founding a government based at Lhasa. From 1720 Tibet was a Qing protectorate, but after the Qing fell the 13th Dalai Lama declared independence in 1913. In 1950 Chinese troops invaded eastern Tibet, and in 1951 Tibet was annexed by the People's Republic of China.",
+  "legacy": "These centuries made Tibet a land led by Buddhist lamas, created the office of the Dalai Lama as head of state and produced the Potala Palace, and Tibet's status remains disputed today.",
+  "sources": [
+   {
+    "title": "Wikipedia: History of Tibet",
+    "url": "https://en.wikipedia.org/wiki/History_of_Tibet"
+   },
+   {
+    "title": "Wikipedia: Phagmodrupa dynasty",
+    "url": "https://en.wikipedia.org/wiki/Phagmodrupa_dynasty"
+   },
+   {
+    "title": "Wikipedia: Ganden Phodrang",
+    "url": "https://en.wikipedia.org/wiki/Ganden_Phodrang"
+   },
+   {
+    "title": "Wikipedia: 13th Dalai Lama",
+    "url": "https://en.wikipedia.org/wiki/13th_Dalai_Lama"
+   },
+   {
+    "title": "Wikipedia: 14th Dalai Lama",
+    "url": "https://en.wikipedia.org/wiki/14th_Dalai_Lama"
+   },
+   {
+    "title": "Wikipedia: Annexation of Tibet by the People's Republic of China",
+    "url": "https://en.wikipedia.org/wiki/Annexation_of_Tibet_by_the_People%27s_Republic_of_China"
+   }
+  ]
+ },
+ {
+  "id": "saffarid-dynasty",
+  "name": "Saffarid dynasty",
+  "aliases": [],
+  "clio": [
+   "Saffarid Dynasty"
+  ],
+  "region": "middle-east-south-asia",
+  "start": 861,
+  "end": 1002,
+  "capital": "Zaranj",
+  "peak": {
+   "year": 898,
+   "areaKm2": 2400000,
+   "note": "Under Amr ibn al-Layth, who held Sistan, Khorasan, Kerman and Fars and was named governor of Transoxiana by the caliph in 898; c. 2.4M km² c. 898 (as drawn on this map)"
+  },
+  "rulers": [
+   {
+    "name": "Ya'qub ibn al-Layth",
+    "reign": "861 – 879",
+    "note": "Coppersmith turned warlord; conquered Khorasan and Fars and marched on Baghdad"
+   },
+   {
+    "name": "Amr ibn al-Layth",
+    "reign": "879 – 901",
+    "note": "Ya'qub's brother; defeated and captured by the Samanid Ismail in 900, executed in Baghdad in 902"
+   },
+   {
+    "name": "Tahir ibn Muhammad",
+    "reign": "901 – 908",
+    "note": "Fought the Abbasids for Fars as the realm shrank"
+   },
+   {
+    "name": "Ahmad ibn Muhammad",
+    "reign": "922 – 963",
+    "note": "Restored Saffarid rule in Sistan"
+   },
+   {
+    "name": "Khalaf ibn Ahmad",
+    "reign": "963 – 1002",
+    "note": "Last ruler, deposed by Mahmud of Ghazni"
+   }
+  ],
+  "summary": "The Saffarids were a dynasty from Sistan, on today's border of Iran and Afghanistan, founded by a coppersmith who nearly toppled the Abbasid caliphs. Ya'qub ibn al-Layth took his name from his trade (saffar means coppersmith) and rose as a leader of the ayyars, bands of armed volunteers, before making himself emir of Sistan in 861. From his capital at Zaranj he conquered Kabul and the lands south of the Hindu Kush, took Herat in 870 and drove the Tahirids out of Nishapur in 873, and seized Kerman and Fars. In 876 he marched on Baghdad itself, but the caliph's army beat him at Dayr al-Aqul, and he died in 879. His brother Amr held most of these lands until 900, when the Samanid Ismail defeated and captured him near Balkh. The family was pushed back to Sistan, where it survived as a minor local power until Mahmud of Ghazni deposed the last ruler, Khalaf ibn Ahmad, in 1002.",
+  "legacy": "Ya'qub, who spoke no Arabic, made Persian an official language at his court, and Saffarid patronage of Persian poets helped revive New Persian literature after two centuries of Arabic rule.",
+  "sources": [
+   {
+    "title": "Wikipedia: Saffarid dynasty",
+    "url": "https://en.wikipedia.org/wiki/Saffarid_dynasty"
+   },
+   {
+    "title": "Wikipedia: Ya'qub ibn al-Layth al-Saffar",
+    "url": "https://en.wikipedia.org/wiki/Ya%27qub_ibn_al-Layth_al-Saffar"
+   },
+   {
+    "title": "Wikipedia: Amr ibn al-Layth",
+    "url": "https://en.wikipedia.org/wiki/Amr_ibn_al-Layth"
+   }
+  ]
+ },
+ {
+  "id": "kimek-kipchak",
+  "name": "Kimek–Kipchak confederation",
+  "aliases": [],
+  "clio": [
+   "Kimek-Kipchak confederation"
+  ],
+  "region": "north-central-asia",
+  "start": 880,
+  "end": 1241,
+  "capital": "Imakia on the Irtysh (near modern Pavlodar), the Kimek khagan's seat; the later Kipchak tribes had no single capital",
+  "peak": {
+   "year": 1090,
+   "areaKm2": 3000000,
+   "note": "Kipchak tribes from the Irtysh to the Volga and beyond; c. 3.0M km² (as drawn on this map)"
+  },
+  "rulers": [
+   {
+    "name": "Kimek khagans",
+    "reign": "c. 880 – 1050",
+    "note": "Heads of the seven-tribe Kimek union, from the Tatar clan in the 10th and 11th centuries; few names survive"
+   },
+   {
+    "name": "Kipchak khans",
+    "reign": "c. 1050 – 1241",
+    "note": "Once a Kimek tribe, the Kipchaks took the lead in a loose confederation whose khans acted on their own"
+   },
+   {
+    "name": "Köten",
+    "reign": "c. 1223 – 1241",
+    "note": "Cuman-Kipchak khan who fought the Mongols at the Kalka and led his people into Hungary, where he was murdered"
+   },
+   {
+    "name": "Bachman",
+    "reign": "c. 1229 – 1236",
+    "note": "Leader on the lower Volga who resisted the Mongols"
+   }
+  ],
+  "summary": "The Kimek–Kipchak confederation was a loose union of Turkic tribes that dominated the steppes of today's Kazakhstan and western Siberia for several centuries. By around 900 the Kimeks of the middle Irtysh River led a union of seven tribes, among them the Kipchaks and the Tatars, and their khagan's seat was at Imakia near modern Pavlodar. The Arab geographer al-Idrisi described Kimek fields of wheat, millet and rice and well-fortified towns. In the 11th century the Kimeks and Kipchaks pushed the Oghuz Turks south and west, and the Kipchaks became the leading people while the Kimeks fell under them. Kipchak tribes spread from the Irtysh to the Danube, a vast grassland Persian and Arab writers called the Dasht-i Qipchaq, and their western branch was known in Europe as the Cumans. They never built one state: their khans acted on their own. The Mongols beat them at the Kalka River in 1223, crossed the Volga in 1236, and by 1241 had overrun their steppe.",
+  "legacy": "Kipchak slave soldiers founded the Mamluk Sultanate of Egypt in 1250, and the Kipchak branch of the Turkic languages descends from their speech.",
+  "sources": [
+   {
+    "title": "Wikipedia: Kimak–Kipchak confederation",
+    "url": "https://en.wikipedia.org/wiki/Kimak%E2%80%93Kipchak_confederation"
+   },
+   {
+    "title": "Wikipedia: Kipchaks",
+    "url": "https://en.wikipedia.org/wiki/Kipchaks"
+   },
+   {
+    "title": "Wikipedia: Cumans",
+    "url": "https://en.wikipedia.org/wiki/Cumans"
+   },
+   {
+    "title": "Wikipedia: Köten",
+    "url": "https://en.wikipedia.org/wiki/K%C3%B6ten"
+   }
+  ]
+ },
+ {
+  "id": "hamdanid-dynasty",
+  "name": "Hamdanid dynasty",
+  "aliases": [],
+  "clio": [
+   "Hamdanid Emirates"
+  ],
+  "region": "middle-east-south-asia",
+  "start": 890,
+  "end": 1004,
+  "capital": "Mosul; and Aleppo (from 944)",
+  "peak": {
+   "year": 950,
+   "areaKm2": 480000,
+   "note": "Northern Iraq under Nasir al-Dawla and northern Syria under Sayf al-Dawla; c. 0.48M km² c. 950 (as drawn on this map). The map keeps a realm of this name after the dynasty ended, which this profile does not cover"
+  },
+  "rulers": [
+   {
+    "name": "Nasir al-Dawla",
+    "reign": "935 – 967",
+    "note": "Emir of Mosul; briefly ran the caliph's government in Baghdad in 942 – 943"
+   },
+   {
+    "name": "Sayf al-Dawla",
+    "reign": "945 – 967",
+    "note": "Founded the emirate of Aleppo and fought Byzantium for two decades"
+   },
+   {
+    "name": "Sa'd al-Dawla",
+    "reign": "967 – 991",
+    "note": "Ruled Aleppo as a Byzantine tributary"
+   },
+   {
+    "name": "Sa'id al-Dawla",
+    "reign": "991 – 1002",
+    "note": "Last effective ruler of Aleppo; died in 1002, reportedly poisoned on the orders of the slave-soldier Lu'lu'"
+   }
+  ],
+  "summary": "The Hamdanids were an Arab Shia dynasty of the Taghlib tribe who ruled northern Iraq and northern Syria in the 10th century from Mosul and Aleppo. Their founder Hamdan ibn Hamdun seized the fortress of Mardin in the early 890s, and his descendants became governors of Mosul for the weakening Abbasid caliphs. Nasir al-Dawla even ran the caliph's government in Baghdad in 942–943 before he was driven back to Mosul. His brother Sayf al-Dawla entered Aleppo in 944 and built a separate emirate across northern Syria. For two decades Sayf al-Dawla raided deep into Byzantine lands, and his court drew the poets al-Mutanabbi and Abu Firas and the philosopher al-Farabi. But the Byzantines under Nikephoros Phokas struck back, sacking Aleppo in 962, and by 969 the emirate paid them tribute. The Mosul branch lost its lands by 990, and the Aleppo line ended soon after 1000, when the slave-soldier Lu'lu', long the power behind the throne, set the last Hamdanid heirs aside.",
+  "legacy": "Sayf al-Dawla is remembered as a model of Arab chivalry and a hero of the holy war against Byzantium, and al-Mutanabbi's odes written at his Aleppo court are classics of Arabic poetry.",
+  "sources": [
+   {
+    "title": "Wikipedia: Hamdanid dynasty",
+    "url": "https://en.wikipedia.org/wiki/Hamdanid_dynasty"
+   },
+   {
+    "title": "Wikipedia: Sayf al-Dawla",
+    "url": "https://en.wikipedia.org/wiki/Sayf_al-Dawla"
+   },
+   {
+    "title": "Wikipedia: Nasir al-Dawla",
+    "url": "https://en.wikipedia.org/wiki/Nasir_al-Dawla"
+   },
+   {
+    "title": "Wikipedia: Sa'id al-Dawla",
+    "url": "https://en.wikipedia.org/wiki/Sa%27id_al-Dawla"
+   }
+  ]
+ },
+ {
+  "id": "five-dynasties",
+  "name": "Five Dynasties and Ten Kingdoms",
+  "aliases": [],
+  "clio": [
+   "(Five Dynasties and Ten Kingdoms)",
+   "Later Liang Dynasty",
+   "Later Tang",
+   "Later Jin",
+   "Later Han",
+   "Former Shu",
+   "Later Shu",
+   "Southern Tang",
+   "Southern Wu",
+   "Southern Han",
+   "Northern Han",
+   "Jingnan",
+   "Qi Kingdom",
+   "Yan Kingdom"
+  ],
+  "region": "east-asia",
+  "start": 907,
+  "end": 979,
+  "capital": "No single capital: the northern dynasties ruled mostly from Kaifeng, the Later Tang from Luoyang; the southern kingdoms from cities such as Jinling (Nanjing), Hangzhou, Chengdu and Guangzhou",
+  "peak": {
+   "year": 923,
+   "areaKm2": 1300000,
+   "note": "No single state; the largest was the Later Tang after it swallowed the Later Liang, c. 1.3M km² in 923 (Taagepera 1997, marked uncertain); all the rival states together cover c. 3.0M km² as drawn on this map"
+  },
+  "rulers": [
+   {
+    "name": "Zhu Wen (Taizu of Later Liang)",
+    "reign": "907 – 912",
+    "note": "Former rebel who ended the Tang and founded the first of the five dynasties"
+   },
+   {
+    "name": "Qian Liu (Wuyue)",
+    "reign": "907 – 932",
+    "note": "Founding king of Wuyue at Hangzhou; famed for seawalls and waterworks"
+   },
+   {
+    "name": "Li Cunxu (Zhuangzong of Later Tang)",
+    "reign": "923 – 926",
+    "note": "Shatuo Turkic general who destroyed the Later Liang; assassinated"
+   },
+   {
+    "name": "Shi Jingtang (Gaozu of Later Jin)",
+    "reign": "936 – 942",
+    "note": "Took the throne with Khitan help and gave up the Sixteen Prefectures around Beijing"
+   },
+   {
+    "name": "Chai Rong (Shizong of Later Zhou)",
+    "reign": "954 – 959",
+    "note": "Able ruler who seized Southern Tang lands north of the Yangtze"
+   },
+   {
+    "name": "Li Yu (Southern Tang)",
+    "reign": "961 – 975",
+    "note": "Poet-king of Nanjing who surrendered to the Song"
+   }
+  ],
+  "summary": "The Five Dynasties and Ten Kingdoms was the age of division between the fall of the Tang in 907 and the Song reunification of China, completed in 979. In the north, five short-lived dynasties followed one another in quick succession: the Later Liang, Later Tang, Later Jin, Later Han and Later Zhou; the Later Tang was ruled by Shatuo Turks from the northern frontier. Each fell to a coup or an invasion. In 936 the founder of the Later Jin paid for Khitan help by giving them the Sixteen Prefectures around modern Beijing, a costly loss of the northern frontier. The south broke into about ten kingdoms, such as Wuyue, Southern Tang, Former and Later Shu and Southern Han, which were often more peaceful and prosperous than the north. Trade, woodblock printing, poetry and landscape painting flourished in their courts. In 960 the general Zhao Kuangyin founded the Song, which conquered or absorbed the kingdoms one by one and took the last, Northern Han, in 979.",
+  "legacy": "The southern kingdoms' trade, printing and court culture fed straight into the Song golden age, while the lost Sixteen Prefectures left the north open to the Khitan Liao and later invaders.",
+  "sources": [
+   {
+    "title": "Wikipedia: Five Dynasties and Ten Kingdoms period",
+    "url": "https://en.wikipedia.org/wiki/Five_Dynasties_and_Ten_Kingdoms_period"
+   },
+   {
+    "title": "Wikipedia: Later Tang",
+    "url": "https://en.wikipedia.org/wiki/Later_Tang"
+   },
+   {
+    "title": "Wikipedia: Later Jin (Five Dynasties)",
+    "url": "https://en.wikipedia.org/wiki/Later_Jin_(Five_Dynasties)"
+   },
+   {
+    "title": "Wikipedia: Later Zhou",
+    "url": "https://en.wikipedia.org/wiki/Later_Zhou"
+   },
+   {
+    "title": "Wikipedia: Wuyue",
+    "url": "https://en.wikipedia.org/wiki/Wuyue"
+   },
+   {
+    "title": "Taagepera (1997), Expansion and Contraction Patterns of Large Polities",
+    "url": "https://escholarship.org/content/qt3cn68807/qt3cn68807.pdf"
+   }
+  ]
+ },
+ {
+  "id": "liao-dynasty",
+  "name": "Liao dynasty",
+  "aliases": [],
+  "clio": [
+   "Liao Dynasty"
+  ],
+  "region": "east-asia",
+  "start": 916,
+  "end": 1125,
+  "capital": "Shangjing, the Supreme Capital, in modern Inner Mongolia, first of several regional capitals",
+  "peak": {
+   "year": 947,
+   "areaKm2": 2600000,
+   "note": "Mongolia, Manchuria and the Sixteen Prefectures of northern China around Beijing; c. 2.6M km² in 947 (Taagepera 1997, +/- 0.5M; Turchin, Adams & Hall 2006)"
+  },
+  "rulers": [
+   {
+    "name": "Abaoji (Taizu)",
+    "reign": "907 – 926",
+    "note": "Khitan chief who made himself sole ruler in 907 and emperor in 916; conquered Balhae"
+   },
+   {
+    "name": "Yelü Deguang (Taizong)",
+    "reign": "926 – 947",
+    "note": "Gained the Sixteen Prefectures; overthrew the Later Jin in 947"
+   },
+   {
+    "name": "Shengzong",
+    "reign": "982 – 1031",
+    "note": "Forced the Song into the Treaty of Chanyuan in 1005"
+   },
+   {
+    "name": "Daozong",
+    "reign": "1055 – 1101",
+    "note": "Ruled during the long peace with the Song; restored the dynastic name Great Liao in 1066"
+   },
+   {
+    "name": "Tianzuo",
+    "reign": "1101 – 1125",
+    "note": "Last emperor, captured by the Jurchen"
+   }
+  ],
+  "summary": "The Liao was an empire of the Khitan, a nomadic people from eastern Inner Mongolia, who ruled Mongolia, Manchuria and a slice of northern China from 916 to 1125. Their leader Abaoji made himself sole ruler in 907, declared a Chinese-style dynasty in 916 and conquered the kingdom of Balhae in 926. In 936 the Khitan helped the Shatuo general Shi Jingtang found the Later Jin and were rewarded with the Sixteen Prefectures, a band of farmland and fortresses around modern Beijing. When the Song tried to win them back, the Khitan marched deep into China, and the Treaty of Chanyuan in 1005 made the Song pay 200,000 bolts of silk and 100,000 taels of silver every year. Peace then lasted for over a century. The Liao ran a dual government, one branch for the nomads of the steppe and another for the Chinese farmers, and invented their own Khitan scripts. In the early 1100s their Jurchen subjects rebelled, and by 1125 the last emperor was a prisoner.",
+  "legacy": "Through the Khitan, northern China became known to Central Asians, Russians and medieval Europeans as Khitai or Cathay, and a Liao prince founded the Qara Khitai empire in Central Asia.",
+  "sources": [
+   {
+    "title": "Wikipedia: Liao dynasty",
+    "url": "https://en.wikipedia.org/wiki/Liao_dynasty"
+   },
+   {
+    "title": "Wikipedia: Chanyuan Treaty",
+    "url": "https://en.wikipedia.org/wiki/Chanyuan_Treaty"
+   },
+   {
+    "title": "University of Washington, Silk Road Seattle: The Khitan and the Liao Dynasty",
+    "url": "https://depts.washington.edu/silkroad/exhibit/khitans/essay.html"
+   },
+   {
+    "title": "Taagepera (1997), Expansion and Contraction Patterns of Large Polities",
+    "url": "https://escholarship.org/content/qt3cn68807/qt3cn68807.pdf"
+   },
+   {
+    "title": "Turchin, Adams & Hall (2006), East-West Orientation of Historical Empires",
+    "url": "https://jwsr.pitt.edu/ojs/jwsr/article/download/369/381"
+   },
+   {
+    "title": "Wikipedia: Shi Jingtang",
+    "url": "https://en.wikipedia.org/wiki/Shi_Jingtang"
+   }
+  ]
+ },
+ {
+  "id": "buyid-dynasty",
+  "name": "Buyid dynasty",
+  "aliases": [],
+  "clio": [
+   "Buyid Dynasty"
+  ],
+  "region": "middle-east-south-asia",
+  "start": 934,
+  "end": 1062,
+  "capital": "Shiraz, Rayy and Baghdad, seats of separate branches of the family",
+  "peak": {
+   "year": 980,
+   "areaKm2": 1600000,
+   "note": "Under Adud al-Dawla, western and southern Iran, Iraq and Oman; c. 1.6M km² in 980 (Taagepera 1997; Turchin, Adams & Hall 2006)"
+  },
+  "rulers": [
+   {
+    "name": "Imad al-Dawla (Ali)",
+    "reign": "934 – 949",
+    "note": "Eldest brother; took Shiraz and ruled Fars"
+   },
+   {
+    "name": "Rukn al-Dawla (Hasan)",
+    "reign": "935 – 976",
+    "note": "Ruled the Jibal from Rayy"
+   },
+   {
+    "name": "Mu'izz al-Dawla (Ahmad)",
+    "reign": "945 – 967",
+    "note": "Took Baghdad and deposed the caliph al-Mustakfi"
+   },
+   {
+    "name": "Adud al-Dawla",
+    "reign": "949 – 983",
+    "note": "Greatest of the line; ruled Fars and from 978 Iraq, taking the title shahanshah"
+   }
+  ],
+  "summary": "The Buyids were a Shia dynasty from Daylam, the mountains south of the Caspian Sea, who ruled western Iran and Iraq and for a century controlled the caliphs of Baghdad. Three brothers, sons of a Daylamite named Buya, carved out realms of their own: Ali took Shiraz in 934, Hasan won Rayy, and Ahmad entered Baghdad in 945. Ahmad soon deposed and blinded the caliph al-Mustakfi, and from then on the Sunni Abbasid caliphs were figureheads under Buyid protection. The family ruled through separate branches based at Shiraz, Rayy and Baghdad, and some princes revived the old Persian title shahanshah, king of kings. Adud al-Dawla, the greatest of them, ruled from Shiraz, added Iraq in 978, and built the Band-e Amir dam and a famous hospital in Baghdad. After his death in 983 the branches quarrelled; Mahmud of Ghazni took Rayy in 1029, the Seljuk Tughril took Baghdad in 1055, and the last Buyid line, in Fars, ended in 1062.",
+  "legacy": "The Buyids turned the Abbasid caliphs into rulers in name only, and Adud al-Dawla's dams, hospital and patronage of scholars made him one of the most admired princes of medieval Iran.",
+  "sources": [
+   {
+    "title": "Wikipedia: Buyid dynasty",
+    "url": "https://en.wikipedia.org/wiki/Buyid_dynasty"
+   },
+   {
+    "title": "Wikipedia: 'Adud al-Dawla",
+    "url": "https://en.wikipedia.org/wiki/%27Adud_al-Dawla"
+   },
+   {
+    "title": "Wikipedia: Mu'izz al-Dawla",
+    "url": "https://en.wikipedia.org/wiki/Mu%27izz_al-Dawla"
+   },
+   {
+    "title": "Taagepera (1997), Expansion and Contraction Patterns of Large Polities",
+    "url": "https://escholarship.org/content/qt3cn68807/qt3cn68807.pdf"
+   },
+   {
+    "title": "Turchin, Adams & Hall (2006), East-West Orientation of Historical Empires, Journal of World-Systems Research 12(2), Table 1",
+    "url": "https://jwsr.pitt.edu/ojs/jwsr/article/download/369/381"
+   }
+  ]
+ },
+ {
+  "id": "ghaznavid-empire",
+  "name": "Ghaznavid Empire",
+  "aliases": [],
+  "clio": [
+   "Ghaznavid Empire"
+  ],
+  "region": "middle-east-south-asia",
+  "start": 977,
+  "end": 1186,
+  "capital": "Ghazni; later Lahore (from 1163)",
+  "peak": {
+   "year": 1029,
+   "areaKm2": 3400000,
+   "note": "Under Mahmud, from Rayy in western Iran to the Punjab; c. 3.4M km² in 1029 (Taagepera 1997; Turchin, Adams & Hall 2006)"
+  },
+  "rulers": [
+   {
+    "name": "Sabuktigin",
+    "reign": "977 – 997",
+    "note": "Former slave-soldier who became governor of Ghazni and founded the dynasty"
+   },
+   {
+    "name": "Mahmud of Ghazni",
+    "reign": "998 – 1030",
+    "note": "Led some seventeen raids into India; brought al-Biruni to his court, and Ferdowsi dedicated the Shahnameh to him"
+   },
+   {
+    "name": "Mas'ud I",
+    "reign": "1030 – 1040",
+    "note": "Lost Khorasan to the Seljuks at Dandanaqan in 1040; deposed by his own troops soon after and killed in prison"
+   },
+   {
+    "name": "Bahram Shah",
+    "reign": "1117 – 1157",
+    "note": "Saw Ghazni burned by the Ghurids in 1151"
+   },
+   {
+    "name": "Khusrau Malik",
+    "reign": "1160 – 1186",
+    "note": "Last sultan, ruling from Lahore until Muhammad of Ghor took it"
+   }
+  ],
+  "summary": "The Ghaznavids were a Turkic dynasty, ruling from Ghazni in Afghanistan, who built an empire from eastern and central Iran into the plains of northern India. Their founder Sabuktigin was a former slave-soldier who became governor of Ghazni in 977, nominally for the Samanids, and his son Mahmud turned the province into an empire of his own. Mahmud led about seventeen expeditions into northern India, sacking Mathura in 1018 and raiding the temple of Somnath in 1026, and carried vast plunder home. He also brought the scholar al-Biruni to Ghazni, the poet Ferdowsi dedicated his Shahnameh to him, and the Turkic dynasty adopted Persian language and culture. In 1040 the Seljuk Turks crushed Mahmud's son Mas'ud at Dandanaqan and took the western lands, leaving the Ghaznavids with Afghanistan and the Punjab. In 1151 the Ghurid ruler Ala al-Din Husayn burned Ghazni, and the last sultans ruled from Lahore until Muhammad of Ghor captured it in 1186.",
+  "legacy": "The Ghaznavids carried Persian court culture into the Punjab and opened the way for the Ghurid conquest of northern India, from which the Delhi Sultanate grew.",
+  "sources": [
+   {
+    "title": "Wikipedia: Ghaznavids",
+    "url": "https://en.wikipedia.org/wiki/Ghaznavids"
+   },
+   {
+    "title": "Taagepera (1997), Expansion and Contraction Patterns of Large Polities",
+    "url": "https://escholarship.org/content/qt3cn68807/qt3cn68807.pdf"
+   },
+   {
+    "title": "Turchin, Adams & Hall (2006), East-West Orientation of Historical Empires, Journal of World-Systems Research 12(2), Table 1",
+    "url": "https://jwsr.pitt.edu/ojs/jwsr/article/download/369/381"
+   },
+   {
+    "title": "Wikipedia: Mas'ud I of Ghazni",
+    "url": "https://en.wikipedia.org/wiki/Mas%27ud_I_of_Ghazni"
+   },
+   {
+    "title": "Wikipedia: Samanid Empire (Ferdowsi and the Shahnameh)",
+    "url": "https://en.wikipedia.org/wiki/Samanid_Empire"
+   }
+  ]
+ },
+ {
+  "id": "almoravid-dynasty",
+  "name": "Almoravid dynasty",
+  "aliases": [],
+  "clio": [
+   "Almoravid Dynasty"
+  ],
+  "region": "northern-africa",
+  "start": 1056,
+  "end": 1147,
+  "capital": "Marrakesh (founded c. 1070, or 1062 in some sources); before that Aghmat (from 1058)",
+  "peak": {
+   "year": 1120,
+   "areaKm2": 1000000,
+   "note": "Under Ali ibn Yusuf, from the western Sahara through Morocco and western Algeria to al-Andalus; c. 1.0M km² c. 1120 (Turchin, Adams & Hall 2006)"
+  },
+  "rulers": [
+   {
+    "name": "Abdallah ibn Yasin",
+    "reign": "1040s – 1059",
+    "note": "Religious teacher whose strict reform movement founded the Almoravids; killed fighting the Barghawata in 1059"
+   },
+   {
+    "name": "Abu Bakr ibn Umar",
+    "reign": "1056 – 1087",
+    "note": "Military amir; left the north to Yusuf and led the Saharan branch"
+   },
+   {
+    "name": "Yusuf ibn Tashfin",
+    "reign": "c. 1061 – 1106",
+    "note": "Completed Marrakesh as his capital, conquered Morocco and won the Battle of Sagrajas in Spain in 1086"
+   },
+   {
+    "name": "Ali ibn Yusuf",
+    "reign": "1106 – 1143",
+    "note": "Ruled the empire at its greatest extent; faced the Almohad revolt"
+   },
+   {
+    "name": "Ishaq ibn Ali",
+    "reign": "1146 – 1147",
+    "note": "Last ruler, killed when the Almohads took Marrakesh"
+   }
+  ],
+  "summary": "The Almoravids were a Berber Muslim dynasty from the western Sahara who built an empire stretching from present-day Mauritania to Spain in the 11th century. They began among the Sanhaja tribes, especially the Lamtuna, as a strict Maliki Sunni reform movement led by the preacher Abdallah ibn Yasin; their name is linked to the ribat, a fortified frontier monastery. In 1054–55 they seized Sijilmasa and Awdaghust, the towns at either end of the trans-Saharan trade routes, and then pushed north into Morocco. Yusuf ibn Tashfin made the new city of Marrakesh, begun c. 1070, his capital and conquered Morocco and western Algeria. When Christian Castile took Toledo in 1085, the Muslim kings of al-Andalus begged him for help; he won at Sagrajas in 1086 and then removed those kings and annexed their lands himself. The empire peaked under his son Ali, but Christian advances in Spain and the rival Almohad movement wore it down until Marrakesh fell to the Almohads in 1147.",
+  "legacy": "The Almoravids were the first Berber dynasty to unite the western Maghreb and al-Andalus under one government, founded Marrakesh, and for a time halted the advance of the Christian kingdoms in Spain.",
+  "sources": [
+   {
+    "title": "Wikipedia: Almoravid dynasty",
+    "url": "https://en.wikipedia.org/wiki/Almoravid_dynasty"
+   },
+   {
+    "title": "Wikipedia: Yusuf ibn Tashfin",
+    "url": "https://en.wikipedia.org/wiki/Yusuf_ibn_Tashfin"
+   },
+   {
+    "title": "Wikipedia: Abu Bakr ibn Umar",
+    "url": "https://en.wikipedia.org/wiki/Abu_Bakr_ibn_Umar"
+   },
+   {
+    "title": "Wikipedia: Marrakesh",
+    "url": "https://en.wikipedia.org/wiki/Marrakesh"
+   },
+   {
+    "title": "Turchin, Adams & Hall (2006), East-West Orientation of Historical Empires",
+    "url": "https://jwsr.pitt.edu/ojs/jwsr/article/download/369/381"
+   },
+   {
+    "title": "Wikipedia: Abdallah ibn Yasin",
+    "url": "https://en.wikipedia.org/wiki/Abdallah_ibn_Yasin"
+   }
+  ]
+ },
+ {
+  "id": "khwarazmian-empire",
+  "name": "Khwarazmian Empire",
+  "aliases": [],
+  "clio": [
+   "Khwarezmid Empire",
+   "Khwarezmid Dynasty"
+  ],
+  "region": "north-central-asia",
+  "start": 1077,
+  "end": 1231,
+  "capital": "Gurganj (Urgench); later Samarkand (1212 – 1220), then Tabriz under Jalal al-Din",
+  "peak": {
+   "year": 1218,
+   "areaKm2": 3600000,
+   "note": "Under Ala al-Din Muhammad II, from the Syr Darya to western Iran and Afghanistan, on the eve of the Mongol invasion; c. 3.6M km² in 1218 (Taagepera 1997), while Turchin, Adams & Hall (2006) give c. 2.3M km² for 1210"
+  },
+  "rulers": [
+   {
+    "name": "Anush Tegin",
+    "reign": "c. 1077 – 1097",
+    "note": "Turkic former slave made governor of Khwarazm by the Seljuks"
+   },
+   {
+    "name": "Atsiz",
+    "reign": "1127 – 1156",
+    "note": "Defied the Seljuk sultan Sanjar; later a vassal of the Qara Khitai"
+   },
+   {
+    "name": "Tekish",
+    "reign": "1172 – 1200",
+    "note": "Defeated and killed the last Great Seljuk sultan, Toghrul III, in 1194"
+   },
+   {
+    "name": "Ala al-Din Muhammad II",
+    "reign": "1200 – 1220",
+    "note": "Built the empire to its peak, then lost it to Genghis Khan"
+   },
+   {
+    "name": "Jalal al-Din Mangburni",
+    "reign": "1220 – 1231",
+    "note": "Fought the Mongols across Afghanistan, India and Iran; murdered in 1231"
+   }
+  ],
+  "summary": "The Khwarazmian Empire grew out of Khwarazm, the oasis on the lower Amu Darya south of the Aral Sea, and for a few years before 1220 it was the greatest power in the eastern Islamic world. It began in about 1077, when the Seljuks made Anush Tegin, a Turkic former slave, governor of Khwarazm; his descendants ruled there as shahs, first under the Seljuks and then under the Qara Khitai. Tekish broke free in 1194 by defeating and killing the last Great Seljuk sultan, Toghrul III, and taking western Iran. His son Muhammad II beat the Qara Khitai, ended the western Karakhanid state, moved the capital to Samarkand and overran the Ghurids. In 1218 one of his governors seized a Mongol merchant caravan at Otrar, and the shah had at least one of Genghis Khan's protesting envoys executed. The Mongol invasion of 1219 sacked Otrar, Bukhara, Samarkand and Gurganj, and Muhammad died a fugitive on a Caspian island. His son Jalal al-Din fought on until his murder in 1231.",
+  "legacy": "By provoking Genghis Khan, the shah drew the Mongol conquest into the Islamic world, and the campaign of 1219 – 1221 wrecked famous cities such as Bukhara, Samarkand and Gurganj.",
+  "sources": [
+   {
+    "title": "Wikipedia: Khwarazmian Empire",
+    "url": "https://en.wikipedia.org/wiki/Khwarazmian_Empire"
+   },
+   {
+    "title": "Wikipedia: Anushtegin dynasty",
+    "url": "https://en.wikipedia.org/wiki/Anushtegin_dynasty"
+   },
+   {
+    "title": "Taagepera (1997), Expansion and Contraction Patterns of Large Polities",
+    "url": "https://escholarship.org/content/qt3cn68807/qt3cn68807.pdf"
+   },
+   {
+    "title": "Turchin, Adams & Hall (2006), East-West Orientation of Historical Empires, Journal of World-Systems Research 12(2), Table 1",
+    "url": "https://jwsr.pitt.edu/ojs/jwsr/article/download/369/381"
+   }
+  ]
+ },
+ {
+  "id": "jin-dynasty-1115",
+  "name": "Jin dynasty (1115–1234)",
+  "aliases": [],
+  "clio": [
+   "Great Jin"
+  ],
+  "region": "east-asia",
+  "start": 1115,
+  "end": 1234,
+  "capital": "Huining, in Manchuria; from 1153 Zhongdu (modern Beijing); from 1214 Kaifeng; finally Caizhou",
+  "peak": {
+   "year": 1126,
+   "areaKm2": 2300000,
+   "note": "Manchuria and northern China after the capture of the Song capital (the border settled on the Qinling–Huai line only in 1141); c. 2.3M km² in 1126 (Taagepera 1997; Turchin, Adams & Hall 2006)"
+  },
+  "rulers": [
+   {
+    "name": "Aguda (Taizu)",
+    "reign": "1115 – 1123",
+    "note": "Jurchen chief who rebelled against the Liao and founded the Jin"
+   },
+   {
+    "name": "Wuqimai (Taizong)",
+    "reign": "1123 – 1135",
+    "note": "Destroyed the Liao in 1125 and took the Song capital Kaifeng in 1127"
+   },
+   {
+    "name": "Wanyan Liang (Prince of Hailing)",
+    "reign": "1150 – 1161",
+    "note": "Moved the capital to Zhongdu; killed by his own officers after a failed invasion of the Song"
+   },
+   {
+    "name": "Shizong",
+    "reign": "1161 – 1189",
+    "note": "Longest and most stable reign; promoted the Jurchen language and customs"
+   },
+   {
+    "name": "Aizong",
+    "reign": "1224 – 1234",
+    "note": "Took his own life as the Mongols stormed his last refuge, Caizhou"
+   }
+  ],
+  "summary": "The Jin, or Great Jin, was an empire of the Jurchen, a people of Manchuria, who ruled northern China from 1115 to 1234. Their chief Aguda rose against his Khitan overlords and declared the dynasty in 1115, and within ten years the Jin had destroyed the Liao empire. Turning on their Song allies, the Jurchen captured the Song capital Kaifeng in 1127 and carried two Song emperors off into captivity. A treaty in 1141 fixed the border along the Huai River and made the Southern Song pay a yearly tribute of silver and silk. Ruling a mostly Chinese population, the Jin moved their capital to Zhongdu, modern Beijing, and adopted Chinese government, though Emperor Shizong tried to keep Jurchen language and customs alive. From 1211 Genghis Khan's Mongols invaded, drove the court south to Kaifeng in 1214 and took Zhongdu in 1215. Allied with the Song, the Mongols finished the Jin at Caizhou in 1234.",
+  "legacy": "The Jin pushed the Song south and turned Beijing into a great imperial capital, and four centuries later the Manchus took the name Later Jin to claim the Jurchen heritage.",
+  "sources": [
+   {
+    "title": "Wikipedia: Jin dynasty (1115–1234)",
+    "url": "https://en.wikipedia.org/wiki/Jin_dynasty_(1115%E2%80%931234)"
+   },
+   {
+    "title": "Wikipedia: Jingkang incident",
+    "url": "https://en.wikipedia.org/wiki/Jingkang_incident"
+   },
+   {
+    "title": "Wikipedia: Treaty of Shaoxing",
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_Shaoxing"
+   },
+   {
+    "title": "Wikipedia: Emperor Shizong of Jin",
+    "url": "https://en.wikipedia.org/wiki/Emperor_Shizong_of_Jin"
+   },
+   {
+    "title": "Wikipedia: Mongol conquest of the Jin dynasty",
+    "url": "https://en.wikipedia.org/wiki/Mongol_conquest_of_the_Jin_dynasty"
+   },
+   {
+    "title": "Taagepera (1997), Expansion and Contraction Patterns of Large Polities",
+    "url": "https://escholarship.org/content/qt3cn68807/qt3cn68807.pdf"
+   }
+  ]
+ },
+ {
+  "id": "qara-khitai",
+  "name": "Qara Khitai (Western Liao)",
+  "aliases": [],
+  "clio": [
+   "Kara-Khitans"
+  ],
+  "region": "north-central-asia",
+  "start": 1124,
+  "end": 1218,
+  "capital": "Balasagun (from 1134); before that a base on the Emil River",
+  "peak": {
+   "year": 1210,
+   "areaKm2": 1500000,
+   "note": "From the Tarim Basin to the Oxus, with Khwarazm, the Kara-Khanids and the Uyghurs of Qocho as vassals; c. 1.5M km² c. 1210 (Turchin, Adams & Hall 2006), against c. 1.0M km² in 1130 (Taagepera 1997)"
+  },
+  "rulers": [
+   {
+    "name": "Yelü Dashi",
+    "reign": "1124 – 1143",
+    "note": "Founder; took the title Gurkhan and won at Qatwan in 1141"
+   },
+   {
+    "name": "Xiao Tabuyan",
+    "reign": "1144 – 1150",
+    "note": "His widow, regent as Empress Gantian"
+   },
+   {
+    "name": "Yelü Yilie",
+    "reign": "1150 – 1164",
+    "note": "Son of Yelü Dashi and Xiao Tabuyan"
+   },
+   {
+    "name": "Yelü Pusuwan",
+    "reign": "1164 – 1178",
+    "note": "Daughter of Yelü Dashi, ruling as regent"
+   },
+   {
+    "name": "Yelü Zhilugu",
+    "reign": "1178 – 1211",
+    "note": "Last Gurkhan; overthrown by his son-in-law Kuchlug"
+   },
+   {
+    "name": "Kuchlug",
+    "reign": "1211 – 1218",
+    "note": "Naiman prince who usurped the throne; killed by the Mongols"
+   }
+  ],
+  "summary": "Qara Khitai, also called the Western Liao, was an empire in Central Asia founded by Khitan refugees from northern China. When the Jurchen destroyed the Khitan Liao dynasty in 1125, the Khitan commander Yelü Dashi, who had proclaimed himself king the year before, later led his followers west. He set up a base on the Emil River and in 1132 took the titles of emperor and Gurkhan. In 1134 a Kara-Khanid khan asked for his help against rebel nomads, and Yelü Dashi took Balasagun and made it his capital. In 1141 he crushed the Seljuk sultan Sanjar at Qatwan near Samarkand, becoming overlord of Transoxiana. The Khitans ruled a mostly Muslim population through vassal kings, kept Chinese-style titles, coins and calendar, and were Buddhists who did not force their religion on others. Later its vassal Khwarazm turned against it, and in 1211 the Naiman prince Kuchlug, a refugee from Genghis Khan, seized the throne and turned on the Muslims. The Mongol general Jebe hunted Kuchlug down in 1218.",
+  "legacy": "Ruling Muslim Central Asia with Chinese-style government, the Qara Khitai linked the Chinese and Islamic worlds, and their defeat of Sanjar at Qatwan began the decline of the Great Seljuks.",
+  "sources": [
+   {
+    "title": "Wikipedia: Qara Khitai",
+    "url": "https://en.wikipedia.org/wiki/Qara_Khitai"
+   },
+   {
+    "title": "Wikipedia: Yelü Dashi",
+    "url": "https://en.wikipedia.org/wiki/Yel%C3%BC_Dashi"
+   },
+   {
+    "title": "Wikipedia: Kuchlug",
+    "url": "https://en.wikipedia.org/wiki/Kuchlug"
+   },
+   {
+    "title": "Encyclopaedia Iranica: Ilak-khanids (Qara-khanids)",
+    "url": "https://www.iranicaonline.org/articles/ilak-khanids"
+   },
+   {
+    "title": "Turchin, Adams & Hall (2006), East-West Orientation of Historical Empires",
+    "url": "https://web.archive.org/web/20200707181315/http://peterturchin.com/PDF/Turchin_Adams_Hall_2006.pdf"
+   },
+   {
+    "title": "Taagepera (1997), Expansion and Contraction Patterns of Large Polities",
+    "url": "https://escholarship.org/content/qt3cn68807/qt3cn68807.pdf"
+   }
+  ]
+ },
+ {
+  "id": "zengid-dynasty",
+  "name": "Zengid dynasty",
+  "aliases": [],
+  "clio": [
+   "Zengid dynasty"
+  ],
+  "region": "middle-east-south-asia",
+  "start": 1127,
+  "end": 1250,
+  "capital": "Mosul; Aleppo, then Damascus (1154 – 1174) under Nur al-Din",
+  "peak": {
+   "year": 1170,
+   "areaKm2": 1200000,
+   "note": "Under Nur al-Din, Syria and the Jazira plus Egypt, governed in his name by Shirkuh and then Saladin; c. 1.2M km² c. 1170 (as drawn on this map)"
+  },
+  "rulers": [
+   {
+    "name": "Imad al-Din Zengi",
+    "reign": "1127 – 1146",
+    "note": "Atabeg of Mosul and Aleppo; took Edessa from the crusaders in 1144"
+   },
+   {
+    "name": "Sayf al-Din Ghazi I",
+    "reign": "1146 – 1149",
+    "note": "Zengi's son; ruled Mosul"
+   },
+   {
+    "name": "Nur al-Din",
+    "reign": "1146 – 1174",
+    "note": "United Muslim Syria, took Damascus in 1154 and sent Shirkuh and Saladin to Egypt"
+   },
+   {
+    "name": "Qutb al-Din Mawdud",
+    "reign": "1149 – 1170",
+    "note": "Ruled Mosul under his brother Nur al-Din's overlordship"
+   }
+  ],
+  "summary": "The Zengids were a Turkic dynasty that ruled northern Iraq and Syria in the 12th century and led the first great Muslim counter-attack against the crusader states. Their founder Imad al-Din Zengi was made atabeg, a governor-guardian, of Mosul by the Seljuks in 1127 and took Aleppo the next year. In 1144 he captured the crusader city of Edessa, a blow that led to the Second Crusade, but he was murdered in his camp in 1146. His son Nur al-Din took Aleppo, crushed the army of Antioch at Inab in 1149 and won Damascus in 1154, uniting Muslim Syria. He sponsored about twenty madrasas and several hospitals, and sent his general Shirkuh, with Shirkuh's nephew Saladin, to take over Fatimid Egypt in 1169. After Nur al-Din died in 1174, Saladin seized Damascus and later Aleppo, ending Zengid rule in Syria. Other branches of the family held Mosul until 1234 and parts of the Jazira until 1250.",
+  "legacy": "Nur al-Din's union of Syria and his move into Egypt built the base from which Saladin later retook Jerusalem; Nur al-Din himself lies in the madrasa he founded in Damascus.",
+  "sources": [
+   {
+    "title": "Wikipedia: Zengid dynasty",
+    "url": "https://en.wikipedia.org/wiki/Zengid_dynasty"
+   },
+   {
+    "title": "Wikipedia: Imad al-Din Zengi",
+    "url": "https://en.wikipedia.org/wiki/Imad_al-Din_Zengi"
+   },
+   {
+    "title": "Wikipedia: Nur ad-Din (died 1174)",
+    "url": "https://en.wikipedia.org/wiki/Nur_ad-Din_(died_1174)"
+   }
+  ]
+ },
+ {
+  "id": "novgorod-republic",
+  "name": "Novgorod Republic",
+  "aliases": [],
+  "clio": [
+   "Novgorod Republic"
+  ],
+  "region": "europe",
+  "start": 1136,
+  "end": 1478,
+  "capital": "Novgorod (Veliky Novgorod)",
+  "peak": {
+   "year": 1470,
+   "areaKm2": 1600000,
+   "note": "In the 15th century its lands ran from the Gulf of Finland and the White Sea to the northern Urals; c. 1.6M km² (as drawn on this map)"
+  },
+  "rulers": [
+   {
+    "name": "Vsevolod Mstislavich",
+    "reign": "1117 – 1136",
+    "note": "Prince whose expulsion by the townspeople in 1136 began the republic"
+   },
+   {
+    "name": "Alexander Nevsky",
+    "reign": "1236 – 1240, 1241 – 1252",
+    "note": "Prince who beat the Swedes on the Neva in 1240 and the Teutonic Knights on Lake Peipus in 1242"
+   },
+   {
+    "name": "Feofil",
+    "reign": "1470 – 1480",
+    "note": "Last archbishop of the free city, in office when Moscow conquered it"
+   },
+   {
+    "name": "Marfa Boretskaya",
+    "reign": "fl. 1470s",
+    "note": "Widow of a posadnik, traditionally blamed for seeking Lithuanian help against Moscow"
+   },
+   {
+    "name": "Ivan III",
+    "reign": "1462 – 1478",
+    "note": "Grand prince of Moscow and nominal prince of Novgorod who abolished the republic"
+   }
+  ],
+  "summary": "The Novgorod Republic was a self-governing merchant state in northern Russia that chose and dismissed its own princes for more than three centuries. It began in 1136, when the townspeople threw out Prince Vsevolod Mstislavich and their assembly, the veche, took the right to invite princes on its own terms. Real power lay with wealthy boyar families, who supplied the elected posadnik, or mayor, while the archbishop was also chosen locally. Novgorod's fur trappers and tribute collectors pushed its control north to the White Sea and east to the Urals, making it one of the largest Russian states by area. German merchants of the Hanseatic League kept a trading post, the Peterhof, in the city, which grew rich above all on the fur trade. Moscow's rise ended this freedom: Ivan III crushed Novgorod's army on the Shelon River in 1471, and in 1478 he abolished the veche and carried its bell away to Moscow.",
+  "legacy": "Over a thousand letters written on birch bark, found in Novgorod since the 1950s, give a rare view of everyday medieval life, and its veche is remembered as Russia's boldest early experiment in self-rule.",
+  "sources": [
+   {
+    "title": "Wikipedia: Novgorod Republic",
+    "url": "https://en.wikipedia.org/wiki/Novgorod_Republic"
+   },
+   {
+    "title": "Encyclopedia of Russian History (via Encyclopedia.com): Novgorod the Great",
+    "url": "https://www.encyclopedia.com/history/encyclopedias-almanacs-transcripts-and-maps/novgorod-great"
+   },
+   {
+    "title": "Wikipedia: Prince of Novgorod",
+    "url": "https://en.wikipedia.org/wiki/Prince_of_Novgorod"
+   }
+  ]
+ },
+ {
+  "id": "ghurid-dynasty",
+  "name": "Ghurid dynasty",
+  "aliases": [],
+  "clio": [
+   "Ghurid Dynasty"
+  ],
+  "region": "middle-east-south-asia",
+  "start": 1149,
+  "end": 1215,
+  "capital": "Firozkoh; also Ghazni (from 1173) and Herat",
+  "peak": {
+   "year": 1203,
+   "areaKm2": 2100000,
+   "note": "Under Ghiyath al-Din and Mu'izz al-Din, from Khorasan to the Ganges plain, with raids reaching Bengal; c. 2.1M km² c. 1203 (as drawn on this map)"
+  },
+  "rulers": [
+   {
+    "name": "Ala al-Din Husayn",
+    "reign": "1149 – 1161",
+    "note": "Burned Ghazni in 1151, earning the name Jahansuz, world-burner"
+   },
+   {
+    "name": "Ghiyath al-Din Muhammad",
+    "reign": "1163 – 1203",
+    "note": "Senior sultan at Firozkoh, ruling jointly with his brother"
+   },
+   {
+    "name": "Mu'izz al-Din Muhammad (Muhammad of Ghor)",
+    "reign": "1173 – 1206",
+    "note": "Ruled from Ghazni and conquered northern India; won the second battle of Tarain in 1192"
+   }
+  ],
+  "summary": "The Ghurids were an eastern Iranian (Tajik) dynasty from Ghor, the rugged mountains of central Afghanistan, who in the late 1100s built an empire from Khorasan to northern India. For generations their Shansabani family were local chiefs, but Ala al-Din Husayn made Ghor a power in its own right and in 1151 burned the Ghaznavid capital, Ghazni, earning the name Jahansuz, world-burner. His nephews Ghiyath al-Din Muhammad and Mu'izz al-Din Muhammad, often called Muhammad of Ghor, then ruled together, the elder from the capital Firozkoh and the younger from Ghazni. Mu'izz al-Din took Lahore from the last Ghaznavid in 1186, lost to the Rajput king Prithviraj Chauhan at Tarain in 1191, and beat him there the next year, opening northern India to conquest. The Minaret of Jam, dated by its inscription to 1174 or 1194, still stands from their age. After Mu'izz al-Din was killed in 1206 his generals divided his Indian lands, and the Khwarazmian shah took Ghazni in 1215, ending the dynasty.",
+  "legacy": "The Ghurid conquests founded Muslim rule in northern India: Mu'izz al-Din's general Qutb al-Din Aibak became the first sultan of Delhi.",
+  "sources": [
+   {
+    "title": "Wikipedia: Ghurid dynasty",
+    "url": "https://en.wikipedia.org/wiki/Ghurid_dynasty"
+   },
+   {
+    "title": "Wikipedia: Muhammad of Ghor",
+    "url": "https://en.wikipedia.org/wiki/Muhammad_of_Ghor"
+   },
+   {
+    "title": "Wikipedia: Ghaznavids",
+    "url": "https://en.wikipedia.org/wiki/Ghaznavids"
+   },
+   {
+    "title": "Wikipedia: Minaret of Jam",
+    "url": "https://en.wikipedia.org/wiki/Minaret_of_Jam"
+   }
+  ]
+ },
+ {
+  "id": "ayyubid-sultanate",
+  "name": "Ayyubid Sultanate",
+  "aliases": [],
+  "clio": [
+   "Ayyubid Sultanate"
+  ],
+  "region": "middle-east-south-asia",
+  "start": 1171,
+  "end": 1260,
+  "capital": "Cairo; Damascus (1174 – 1218); Cairo again (1218 – 1250); Aleppo (1250 – 1260)",
+  "peak": {
+   "year": 1190,
+   "areaKm2": 2000000,
+   "note": "Under Saladin, Egypt, Syria, the Jazira, Yemen and the Hejaz; c. 2.0M km² c. 1190 (Turchin, Adams & Hall 2006), while Taagepera (1997) gives c. 1.7M km² for 1200"
+  },
+  "rulers": [
+   {
+    "name": "Saladin",
+    "reign": "1174 – 1193",
+    "note": "Ended the Fatimid caliphate in 1171, became sultan, won at Hattin and took Jerusalem in 1187"
+   },
+   {
+    "name": "Al-Adil I",
+    "reign": "1200 – 1218",
+    "note": "Saladin's brother; won the sultanate after a family struggle"
+   },
+   {
+    "name": "Al-Kamil",
+    "reign": "1218 – 1238",
+    "note": "Beat the Fifth Crusade at Mansura in 1221; gave Jerusalem to Frederick II by treaty in 1229"
+   },
+   {
+    "name": "As-Salih Ayyub",
+    "reign": "1240 – 1249",
+    "note": "Reunited most of Syria and relied on Mamluk slave-soldiers"
+   }
+  ],
+  "summary": "The Ayyubids were a Sunni dynasty of Kurdish origin, founded by Saladin, who ruled Egypt, Syria and nearby lands from 1171 to 1260 and won Jerusalem back from the crusaders. Saladin and his uncle Shirkuh came to Egypt as commanders of the Zengid ruler Nur al-Din; Saladin became vizier to the Fatimid caliph and in 1171 abolished the Fatimid caliphate altogether. After Nur al-Din died in 1174, Saladin made himself sultan and brought Damascus, Aleppo, Yemen and the Hejaz under his rule. In 1187 he destroyed the crusader army at Hattin and took Jerusalem, and the Third Crusade under Richard the Lionheart failed to win it back. After Saladin's death in 1193 his heirs fought over the realm until his brother al-Adil won the sultanate, followed by al-Adil's son al-Kamil, who even handed Jerusalem to the emperor Frederick II by treaty in 1229. In 1250 the dynasty's own Mamluk slave-soldiers seized power in Egypt, and the Mongols overran Ayyubid Syria in 1260.",
+  "legacy": "Saladin's recapture of Jerusalem made him one of the most famous figures of the crusading age, and the Mamluk soldiers the Ayyubids had trained founded their own sultanate and drove the Mongols out of Syria in 1260; a minor Ayyubid line ruled Hama until 1341.",
+  "sources": [
+   {
+    "title": "Wikipedia: Ayyubid dynasty",
+    "url": "https://en.wikipedia.org/wiki/Ayyubid_dynasty"
+   },
+   {
+    "title": "Wikipedia: Zengid dynasty",
+    "url": "https://en.wikipedia.org/wiki/Zengid_dynasty"
+   },
+   {
+    "title": "Taagepera (1997), Expansion and Contraction Patterns of Large Polities",
+    "url": "https://escholarship.org/content/qt3cn68807/qt3cn68807.pdf"
+   },
+   {
+    "title": "Turchin, Adams & Hall (2006), East-West Orientation of Historical Empires, Journal of World-Systems Research 12(2), Table 1",
+    "url": "https://jwsr.pitt.edu/ojs/jwsr/article/download/369/381"
+   }
+  ]
+ },
+ {
+  "id": "northern-yuan",
+  "name": "Northern Yuan (Mongol Khanate)",
+  "aliases": [],
+  "clio": [
+   "Mongol Khanate"
+  ],
+  "region": "north-central-asia",
+  "start": 1368,
+  "end": 1635,
+  "capital": "Shangdu (1368 – 1369), Yingchang (1369 – 1370), then Karakorum (1371 – 1388); later the mobile courts of the khans, and under Ligdan Khan the Chahar seat of Chaghan Baishin",
+  "peak": {
+   "year": 1368,
+   "areaKm2": 5000000,
+   "note": "c. 5M km² (plus or minus 1.5M) in 1368, just after China was lost (Taagepera 1997, Mongol-Yüan series); this map draws c. 5.1M km² c. 1520 under Dayan Khan's heirs"
+  },
+  "rulers": [
+   {
+    "name": "Toghon Temür",
+    "reign": "1368 – 1370",
+    "note": "Last Yuan emperor; fled north from Dadu and died at Yingchang"
+   },
+   {
+    "name": "Biligtü Khan Ayushiridara",
+    "reign": "1370 – 1378",
+    "note": "Kept the Yuan court alive in the steppe"
+   },
+   {
+    "name": "Uskhal Khan Tögüs Temür",
+    "reign": "1378 – 1388",
+    "note": "Crushed by the Ming at Buir Lake in 1388"
+   },
+   {
+    "name": "Dayan Khan",
+    "reign": "c. 1480 – 1517 (some say 1543)",
+    "note": "Raised to the throne as a boy by Queen Mandukhai; reunited the eastern Mongols in six tumens"
+   },
+   {
+    "name": "Tümen Zasagt Khan",
+    "reign": "1557 – 1592",
+    "note": "Assembled the six tumens and issued a new law code; Altan Khan recognised his authority"
+   },
+   {
+    "name": "Ligdan Khan",
+    "reign": "1604 – 1634",
+    "note": "Last great khan; driven west by the Manchus, died of smallpox"
+   }
+  ],
+  "summary": "The Northern Yuan was the Mongol state that carried on in the steppe after the Yuan dynasty lost China to the Ming in 1368. The last Yuan emperor, Toghon Temür, fled north from Dadu (modern Beijing), and his heirs kept the title of Great Khan, first at Shangdu and Yingchang and then at Karakorum. After a crushing Ming victory at Buir Lake in 1388, real power slipped to warlords, and the western Mongols, the Oirats, became kingmakers; their leader Esen even captured a Ming emperor in 1449. Order returned under Dayan Khan, put on the throne as a boy by Queen Mandukhai around 1480, who reunited the eastern Mongols and divided them into six tumens ruled by his sons. In the 16th century princes such as Altan Khan raided China and took up Tibetan Buddhism. The last great khan, Ligdan, tried to restore central rule but was driven west by the Manchus and died in 1634; his son surrendered in 1635.",
+  "legacy": "The Northern Yuan kept Genghis Khan's line and the idea of one Mongol nation alive for almost three centuries, and its turn to Tibetan Buddhism in the 1570s shaped Mongolian culture ever after.",
+  "sources": [
+   {
+    "title": "Wikipedia: Northern Yuan",
+    "url": "https://en.wikipedia.org/wiki/Northern_Yuan"
+   },
+   {
+    "title": "Wikipedia: Dayan Khan",
+    "url": "https://en.wikipedia.org/wiki/Dayan_Khan"
+   },
+   {
+    "title": "Wikipedia: Ligdan Khan",
+    "url": "https://en.wikipedia.org/wiki/Ligdan_Khan"
+   },
+   {
+    "title": "Taagepera (1997), Expansion and Contraction Patterns of Large Polities",
+    "url": "https://escholarship.org/content/qt3cn68807/qt3cn68807.pdf"
+   }
+  ]
+ },
+ {
+  "id": "aq-qoyunlu",
+  "name": "Aq Qoyunlu",
+  "aliases": [],
+  "clio": [
+   "Aq Qoyunlu"
+  ],
+  "region": "middle-east-south-asia",
+  "start": 1378,
+  "end": 1508,
+  "capital": "Diyarbakır (Amid); later Tabriz (from 1468)",
+  "peak": {
+   "year": 1478,
+   "areaKm2": 1700000,
+   "note": "At Uzun Hasan's death, from eastern Anatolia and the Caucasus to Iraq and most of Iran; c. 1.7M km² c. 1478 (as drawn on this map)"
+  },
+  "rulers": [
+   {
+    "name": "Qara Yuluk Uthman",
+    "reign": "1378 – 1435",
+    "note": "Fought for Timur against the Ottomans and was granted Diyarbakır in 1402"
+   },
+   {
+    "name": "Uzun Hasan",
+    "reign": "1452 – 1478",
+    "note": "Defeated the Black Sheep and the Timurids and moved the capital to Tabriz; beaten by the Ottomans at Otlukbeli in 1473"
+   },
+   {
+    "name": "Ya'qub",
+    "reign": "1478 – 1490",
+    "note": "Kept a brilliant court of poets and artists at Tabriz"
+   }
+  ],
+  "summary": "The Aq Qoyunlu, or White Sheep Turkomans, were a Sunni confederation of Turkic tribes, led by the Bayandur clan, that grew from a chiefdom in eastern Anatolia into an empire covering most of Iran. Their name probably comes from the white sheep on their banners. Under Qara Yuluk Uthman, who led them from 1378, they fought alongside Timur against the Ottomans and in 1402 were rewarded with Diyarbakır, which became their base. Their greatest ruler, Uzun Hasan, crushed Jahan Shah of the rival Qara Qoyunlu, the Black Sheep, in 1467 and the Timurid Abu Sa'id in 1469, then moved his court to Tabriz. He sought an alliance with Venice against the Ottomans, but Sultan Mehmed II defeated him at Otlukbeli in 1473, ending his expansion. His son Ya'qub kept a splendid court of poets and painters at Tabriz until 1490, after which the family split in civil war. In 1501 Uzun Hasan's own grandson Ismail, leader of the Safavids, defeated them, and their last lands fell by 1508.",
+  "legacy": "The Aq Qoyunlu held Iran in the generation before the Safavids, whose founder Ismail I was Uzun Hasan's grandson, and Uzun Hasan's dealings with Venice brought Venetian envoys to his court.",
+  "sources": [
+   {
+    "title": "Wikipedia: Aq Qoyunlu",
+    "url": "https://en.wikipedia.org/wiki/Aq_Qoyunlu"
+   },
+   {
+    "title": "Wikipedia: Uzun Hasan",
+    "url": "https://en.wikipedia.org/wiki/Uzun_Hasan"
+   },
+   {
+    "title": "Wikipedia: Qara Yuluk Uthman Beg",
+    "url": "https://en.wikipedia.org/wiki/Qara_Yuluk_Uthman_Beg"
+   },
+   {
+    "title": "Wikipedia: Yaqub (Aq Qoyunlu)",
+    "url": "https://en.wikipedia.org/wiki/Yaqub_(Aq_Qoyunlu)"
+   }
+  ]
+ },
+ {
+  "id": "jagiellonian-union",
+  "name": "Jagiellonian Poland–Lithuania",
+  "aliases": [],
+  "clio": [
+   "House of Jagiellon"
+  ],
+  "region": "europe",
+  "start": 1386,
+  "end": 1572,
+  "capital": "Kraków (Polish royal seat at Wawel Castle) and Vilnius (capital of Lithuania)",
+  "peak": {
+   "year": 1480,
+   "areaKm2": 1100000,
+   "note": "Poland and the Grand Duchy of Lithuania together, from the Baltic to the Black Sea steppe; c. 1.1M km² c. 1480 (Turchin, Adams & Hall 2006); Taagepera (1997) gives c. 1.0M km² in 1520"
+  },
+  "rulers": [
+   {
+    "name": "Władysław II Jagiełło (Jogaila)",
+    "reign": "1386 – 1434",
+    "note": "Lithuanian grand duke who was baptised, married Queen Jadwiga and became king of Poland"
+   },
+   {
+    "name": "Vytautas the Great",
+    "reign": "1401 – 1430",
+    "note": "Jogaila's cousin, grand duke of Lithuania, who carried its borders toward the Black Sea"
+   },
+   {
+    "name": "Casimir IV Jagiellon",
+    "reign": "1447 – 1492",
+    "note": "Won western Prussia from the Teutonic Knights; his sons took the thrones of Bohemia and Hungary"
+   },
+   {
+    "name": "Sigismund I the Old",
+    "reign": "1506 – 1548",
+    "note": "King during the flowering of the Polish Renaissance"
+   },
+   {
+    "name": "Sigismund II Augustus",
+    "reign": "1548 – 1572",
+    "note": "Elected in his father's lifetime in 1529 and crowned in 1530; sealed the Union of Lublin and died the last male Jagiellon"
+   }
+  ],
+  "summary": "For nearly two centuries the Jagiellonian dynasty ruled both the Kingdom of Poland and the Grand Duchy of Lithuania, two separate states joined by sharing one family of rulers. It began with the Union of Krewo in 1385, when Jogaila, the pagan grand duke of Lithuania, agreed to be baptised and marry Poland's young queen Jadwiga; he was crowned King Władysław II Jagiełło in 1386. Together the two states crushed the Teutonic Knights at Grunwald in 1410, and by 1440 Lithuania stretched from the Baltic to the Black Sea. Casimir IV won western Prussia and an outlet to the Baltic in 1466, and his sons also became kings of Bohemia and Hungary. At home the nobility gained power, and from 1505 no new law could pass without their parliament, the Sejm. Under the two Sigismunds, Poland enjoyed a Renaissance golden age. In 1569 the Union of Lublin fused the realms into the Polish–Lithuanian Commonwealth, and the male line died out in 1572.",
+  "legacy": "The Jagiellonian union created one of Europe's largest states and laid the foundations of the Polish–Lithuanian Commonwealth, whose shared history still links Poland, Lithuania, Belarus and Ukraine.",
+  "sources": [
+   {
+    "title": "Wikipedia: Jagiellonian dynasty",
+    "url": "https://en.wikipedia.org/wiki/Jagiellonian_dynasty"
+   },
+   {
+    "title": "Wikipedia: History of Poland during the Jagiellonian dynasty",
+    "url": "https://en.wikipedia.org/wiki/History_of_Poland_during_the_Jagiellonian_dynasty"
+   },
+   {
+    "title": "Wikipedia: Grand Duchy of Lithuania",
+    "url": "https://en.wikipedia.org/wiki/Grand_Duchy_of_Lithuania"
+   },
+   {
+    "title": "Wikipedia: List of Polish monarchs",
+    "url": "https://en.wikipedia.org/wiki/List_of_Polish_monarchs"
+   },
+   {
+    "title": "Turchin, Adams & Hall (2006), East-West Orientation of Historical Empires",
+    "url": "https://jwsr.pitt.edu/ojs/jwsr/article/download/369/381"
+   },
+   {
+    "title": "Taagepera (1997), Expansion and Contraction Patterns of Large Polities",
+    "url": "https://escholarship.org/content/qt3cn68807/qt3cn68807.pdf"
+   }
+  ]
+ },
+ {
+  "id": "kalmar-union",
+  "name": "Kalmar Union",
+  "aliases": [],
+  "clio": [
+   "Kalmar Union",
+   "(Kalmar Union)",
+   "House of Oldenburg"
+  ],
+  "region": "europe",
+  "start": 1397,
+  "end": 1523,
+  "capital": "Copenhagen (de facto); no formal union capital",
+  "peak": {
+   "year": 1497,
+   "areaKm2": 1300000,
+   "note": "Denmark, Norway and Sweden (with Finland) under one king, as in 1497–1501 under Hans; c. 1.3M km² (as drawn on this map)"
+  },
+  "rulers": [
+   {
+    "name": "Margaret I",
+    "reign": "1397 – 1412",
+    "note": "Queen who designed the union and held real power over all three kingdoms until her death"
+   },
+   {
+    "name": "Eric of Pomerania",
+    "reign": "1397 – 1439",
+    "note": "Margaret's grandnephew, crowned union king at Kalmar; deposed in Denmark and Sweden in 1439 and in Norway in 1442"
+   },
+   {
+    "name": "Christian I",
+    "reign": "1448 – 1481",
+    "note": "First Oldenburg king; ruled Denmark and Norway, and Sweden in 1457–1464"
+   },
+   {
+    "name": "Hans (John)",
+    "reign": "1482 – 1513",
+    "note": "Won back the Swedish crown in 1497 and lost it in 1501"
+   },
+   {
+    "name": "Christian II",
+    "reign": "1513 – 1523",
+    "note": "Reconquered Sweden in 1520 and ordered the Stockholm Bloodbath, which broke the union"
+   }
+  ],
+  "summary": "The Kalmar Union joined the kingdoms of Denmark, Norway and Sweden under a single monarch, on and off, from 1397 to 1523. It was the work of Queen Margaret I of Denmark, who already ruled all three realms and had her young grandnephew Eric of Pomerania crowned union king at Kalmar in 1397. Each kingdom kept its own laws and council, but Swedish nobles resented Danish officials, high taxes and wars, and in 1434 Engelbrekt Engelbrektsson led a revolt that helped topple Eric. After 1448 Sweden often chose its own kings or regents, while the Danish king Christian I, founder of the House of Oldenburg, joined Norway to Denmark in 1450; this map labels the union by his dynasty in the 1450s. Christian won Sweden in 1457 but lost it in 1464. In 1520 Christian II retook Stockholm and executed nearly 100 opponents in the Stockholm Bloodbath, and the outrage made Gustav Vasa king of an independent Sweden in 1523.",
+  "legacy": "Denmark and Norway stayed joined under the Oldenburg kings until 1814, while Vasa Sweden became Denmark's great rival for control of the Baltic.",
+  "sources": [
+   {
+    "title": "Wikipedia: Kalmar Union",
+    "url": "https://en.wikipedia.org/wiki/Kalmar_Union"
+   },
+   {
+    "title": "Swedish History Museum: Queen Margaret and the Union of Kalmar",
+    "url": "https://historiska.se/en/explore-history/history-hub/queen-margaret-and-the-union-of-kalmar/"
+   },
+   {
+    "title": "Wikipedia: Christian I of Denmark",
+    "url": "https://en.wikipedia.org/wiki/Christian_I_of_Denmark"
+   },
+   {
+    "title": "Wikipedia: John, King of Denmark",
+    "url": "https://en.wikipedia.org/wiki/John,_King_of_Denmark"
+   },
+   {
+    "title": "Wikipedia: Denmark–Norway",
+    "url": "https://en.wikipedia.org/wiki/Denmark%E2%80%93Norway"
+   },
+   {
+    "title": "Wikipedia: Stockholm Bloodbath",
+    "url": "https://en.wikipedia.org/wiki/Stockholm_Bloodbath"
+   }
+  ]
+ },
+ {
+  "id": "oirats",
+  "name": "Oirat Confederation",
+  "aliases": [],
+  "clio": [
+   "Four Oirats",
+   "Oirat Confederation"
+  ],
+  "region": "north-central-asia",
+  "start": 1399,
+  "end": 1634,
+  "capital": "No fixed capital; mobile courts in western Mongolia, under Esen centred on the north-west of the Mongolian Plateau",
+  "peak": {
+   "year": 1450,
+   "areaKm2": 4000000,
+   "note": "c. 4.0M km² c. 1450 – 1467, after Esen's victories (as drawn on this map)"
+  },
+  "rulers": [
+   {
+    "name": "Batula (Mahmud)",
+    "reign": "1399 – 1416",
+    "note": "Early Oirat leader; beaten by the Ming in 1414 and killed by the eastern Mongol Arughtai in 1416"
+   },
+   {
+    "name": "Toghon",
+    "reign": "c. 1416 – 1438",
+    "note": "Led the Oirats as they rose with Ming backing; father of Esen"
+   },
+   {
+    "name": "Esen Taishi",
+    "reign": "1438 – 1454",
+    "note": "Captured the Ming emperor at Tumu in 1449; declared himself khan in 1453 and was killed in a revolt"
+   }
+  ],
+  "summary": "The Oirats, or Four Oirats, were the western Mongols, a league of tribes that challenged the descendants of Genghis Khan for mastery of the steppe after the Yuan dynasty fell. Once forest people of the far north, they formed their alliance around 1399; its four core tribes are usually listed as the Dzungar (Choros), Torghut, Dörbet and Khoshut. Helped at first by Ming support, the chiefs Batula and Toghon grew strong, and Toghon's son Esen united Mongolia under a puppet khan. In 1449 Esen destroyed a Ming army at Tumu and captured the Zhengtong Emperor. When he declared himself khan in 1453, though not of Genghis Khan's line, revolts broke out and he was killed. Oirat power faded, and Altan Khan's Tümed later took Karakorum from them. In the 17th century the league split: Torghuts moved to the Volga as the Kalmyks, Khoshuts under Güshi Khan took Tibet, and the Choros built the Dzungar Khanate. This map also uses the name for Oirat lands in 1619 – 1676.",
+  "legacy": "The league's heirs were the Dzungar and Kalmyk khanates, and the Khoshut prince Güshi Khan's conquest of Tibet in the late 1630s and early 1640s, made at the request of the Gelug school, helped bring the Dalai Lamas' order to power.",
+  "sources": [
+   {
+    "title": "Wikipedia: Oirats",
+    "url": "https://en.wikipedia.org/wiki/Oirats"
+   },
+   {
+    "title": "Wikipedia: Oirat Confederation",
+    "url": "https://en.wikipedia.org/wiki/Oirat_Confederation"
+   },
+   {
+    "title": "Wikipedia: Esen Taishi",
+    "url": "https://en.wikipedia.org/wiki/Esen_Taishi"
+   },
+   {
+    "title": "Wikipedia: Northern Yuan",
+    "url": "https://en.wikipedia.org/wiki/Northern_Yuan"
+   }
+  ]
+ },
+ {
+  "id": "khanate-of-sibir",
+  "name": "Khanate of Sibir",
+  "aliases": [],
+  "clio": [
+   "Khanate of Sibir"
+  ],
+  "region": "north-central-asia",
+  "start": 1468,
+  "end": 1598,
+  "capital": "Chimgi-Tura (Tyumen); later Qashliq (Isker) on the Irtysh",
+  "peak": {
+   "year": 1500,
+   "areaKm2": 2800000,
+   "note": "No scholarly area estimate found. This map draws the khanate itself at c. 2.8M km² c. 1487 – 1581, a generous outline; its larger figure of c. 4.4M km² c. 1440 – 1481 includes Abu'l-Khayr Khan's Uzbek lands, which the map labels Sibir from 1429"
+  },
+  "rulers": [
+   {
+    "name": "Ibak Khan",
+    "reign": "1468 – c. 1495",
+    "note": "Shaybanid; made Chimgi-Tura the seat of an independent khanate"
+   },
+   {
+    "name": "Muhammad Taibuga",
+    "reign": "c. 1495 – 1502",
+    "note": "Taibugid; killed Ibak and moved the capital to Qashliq"
+   },
+   {
+    "name": "Yadegar",
+    "reign": "1530 – 1563",
+    "note": "Taibugid; with his brother Bekbulat agreed to pay tribute to Moscow"
+   },
+   {
+    "name": "Kuchum",
+    "reign": "1563 – 1598",
+    "note": "Shaybanid; last khan, defeated by Yermak's Cossacks and finally by Russian forces on the Ob"
+   }
+  ],
+  "summary": "The Khanate of Sibir was a Muslim Tatar state in western Siberia, east of the Ural Mountains, that grew out of the breakup of the Golden Horde. Two rival dynasties, the Shaybanids and the Taibugids, fought over its throne. Around 1468 the Shaybanid Ibak Khan made Chimgi-Tura, today's Tyumen, the seat of an independent khanate, but about 1495 he was killed by the Taibugid Muhammad, who moved the capital to Qashliq on the Irtysh River. After Russia took Kazan in 1552, the khans Yadegar and Bekbulat agreed to pay Moscow tribute. In 1563 the Shaybanid Kuchum seized power, stopped paying and pressed Islam on his subjects. The Stroganov merchants then backed Cossacks under Yermak, who beat Kuchum and entered Qashliq in 1582. Kuchum's men killed Yermak in 1584 or 1585, but Russian forts crept forward, and his defeat on the Ob in 1598 ended the khanate. This map uses the name from 1429, covering the earlier realm of Abu'l-Khayr Khan.",
+  "legacy": "Yermak's capture of Qashliq is traditionally seen as the start of the Russian conquest of Siberia.",
+  "sources": [
+   {
+    "title": "Wikipedia: Khanate of Sibir",
+    "url": "https://en.wikipedia.org/wiki/Khanate_of_Sibir"
+   },
+   {
+    "title": "Wikipedia: Kuchum Khan",
+    "url": "https://en.wikipedia.org/wiki/Kuchum"
+   },
+   {
+    "title": "Wikipedia: List of Sibir khans",
+    "url": "https://en.wikipedia.org/wiki/List_of_Sibir_khans"
+   },
+   {
+    "title": "Wikipedia: Yermak Timofeyevich",
+    "url": "https://en.wikipedia.org/wiki/Yermak_Timofeyevich"
+   }
+  ]
+ },
+ {
+  "id": "shaybanids",
+  "name": "Shaybanid Khanate",
+  "aliases": [],
+  "clio": [
+   "Shaybanids"
+  ],
+  "region": "north-central-asia",
+  "start": 1500,
+  "end": 1599,
+  "capital": "Samarkand, with Bukhara, Tashkent and Balkh as seats of other princes; later Bukhara (permanent capital by 1562)",
+  "peak": {
+   "year": 1507,
+   "areaKm2": 1700000,
+   "note": "c. 1.7M km² c. 1507 – 1510, after Muhammad Shaybani took Herat (as drawn on this map)"
+  },
+  "rulers": [
+   {
+    "name": "Abu'l-Khayr Khan",
+    "reign": "1428 – 1468",
+    "note": "Grandfather of Muhammad Shaybani; united the Uzbek tribes"
+   },
+   {
+    "name": "Muhammad Shaybani",
+    "reign": "1500 – 1510",
+    "note": "Conqueror of Transoxiana and Herat; killed fighting Shah Ismail near Merv"
+   },
+   {
+    "name": "Kuchkunji",
+    "reign": "1512 – 1531",
+    "note": "Ruled from Samarkand after the Uzbeks won back their lands"
+   },
+   {
+    "name": "Ubaydullah",
+    "reign": "1534 – 1539",
+    "note": "Held Bukhara while Kuchkunji ruled from Samarkand"
+   },
+   {
+    "name": "Abdullah Khan II",
+    "reign": "1583 – 1598",
+    "note": "Master of Bukhara from 1557; reunited the khanate and took Khorasan and Khwarazm"
+   }
+  ],
+  "summary": "The Shaybanids were a dynasty of Uzbek khans, descended from Genghis Khan's grandson Shiban, who took Transoxiana from the Timurids and ruled it for most of the 16th century. Their power was founded by Abu'l-Khayr Khan, who united the Uzbek tribes of the steppe and led them to the Syr Darya. His grandson Muhammad Shaybani drove the Timurids out of Samarkand in 1500, took Bukhara in 1501, beat the young Babur, and captured Herat, the last Timurid capital, in 1507. In 1510 he was killed fighting Shah Ismail of Iran near Merv. His kinsmen kept Transoxiana but split it into four domains, ruled from Samarkand, Bukhara, Tashkent and Balkh. Abdullah Khan II, master of Bukhara from 1557, reunited these lands and conquered Badakhshan, Khorasan and Khwarazm. He died in 1598, his son was soon killed, and the Janid dynasty took over in 1599. The map shows only the conquest years, 1497 – 1511.",
+  "legacy": "The Shaybanid conquest planted the Uzbeks in the cities of Transoxiana, today's Uzbekistan, and their builders gave Bukhara landmarks such as the Mir-i Arab and Abdullah Khan madrasas.",
+  "sources": [
+   {
+    "title": "Wikipedia: Shaybanids",
+    "url": "https://en.wikipedia.org/wiki/Shaybanids"
+   },
+   {
+    "title": "Wikipedia: Muhammad Shaybani",
+    "url": "https://en.wikipedia.org/wiki/Muhammad_Shaybani"
+   },
+   {
+    "title": "Wikipedia: Abdullah Khan II",
+    "url": "https://en.wikipedia.org/wiki/Abdullah_Khan_II"
+   },
+   {
+    "title": "Wikipedia: Khanate of Bukhara",
+    "url": "https://en.wikipedia.org/wiki/Khanate_of_Bukhara"
+   }
+  ]
+ },
+ {
+  "id": "sur-empire",
+  "name": "Sur Empire",
+  "aliases": [],
+  "clio": [
+   "Sur Empire"
+  ],
+  "region": "middle-east-south-asia",
+  "start": 1540,
+  "end": 1556,
+  "capital": "Delhi; Sasaram in Bihar was the family's home base and Sher Shah's burial place",
+  "peak": {
+   "year": 1545,
+   "areaKm2": 1300000,
+   "note": "At Sher Shah's death, across the Indo-Gangetic plain from Balochistan to Bengal; c. 1.3M km² (as drawn on this map)"
+  },
+  "rulers": [
+   {
+    "name": "Sher Shah Suri",
+    "reign": "1540 – 1545",
+    "note": "Founder; drove out Humayun and reformed the administration and coinage"
+   },
+   {
+    "name": "Islam Shah Suri",
+    "reign": "1545 – 1554",
+    "note": "Sher Shah's son; kept the nobles in check and continued his reforms"
+   },
+   {
+    "name": "Muhammad Adil Shah",
+    "reign": "1554 – 1557 (only in the east after 1555)",
+    "note": "Seized the throne by killing Islam Shah's young son; his general Hemu fought the Mughals"
+   },
+   {
+    "name": "Sikandar Shah Suri",
+    "reign": "1555",
+    "note": "Rival claimant who lost Delhi to Humayun and surrendered to Akbar's forces in 1557"
+   }
+  ],
+  "summary": "The Sur Empire was a short-lived Afghan state that pushed the Mughals out of northern India for fifteen years. Its founder, Farid Khan, came from a Pashtun family of the Sur clan settled at Sasaram in Bihar, and was named Sher Khan, meaning tiger, after killing one. After rising to rule Bihar, he overran Bengal in 1538, then beat the Mughal emperor Humayun at Chausa in 1539 and at Kannauj in 1540, sending him into exile. As Sher Shah he ruled the Indo-Gangetic plain from Delhi. In five years he reorganised the realm into provinces, districts and parganas, issued the silver rupiya, forerunner of the rupee, and rebuilt the Grand Trunk Road with wells, shade trees and inns. He died in 1545 in a gunpowder explosion at the siege of Kalinjar. His son Islam Shah held the empire together, but after 1554 rival princes split it, Humayun retook Delhi in 1555, and the Mughal victory over the general Hemu at Panipat in 1556 ended Sur power.",
+  "legacy": "Sher Shah's silver rupiya, his roads and his provincial divisions outlived his dynasty, and the Mughals built on them after they returned to power.",
+  "sources": [
+   {
+    "title": "Wikipedia: Sur Empire",
+    "url": "https://en.wikipedia.org/wiki/Sur_Empire"
+   },
+   {
+    "title": "Wikipedia: Sher Shah Suri",
+    "url": "https://en.wikipedia.org/wiki/Sher_Shah_Suri"
+   },
+   {
+    "title": "Wikipedia: Islam Shah Suri",
+    "url": "https://en.wikipedia.org/wiki/Islam_Shah_Suri"
+   },
+   {
+    "title": "Wikipedia: Hemu",
+    "url": "https://en.wikipedia.org/wiki/Hemu"
+   },
+   {
+    "title": "Wikipedia: Adil Shah Suri",
+    "url": "https://en.wikipedia.org/wiki/Adil_Shah_Suri"
+   }
+  ]
+ },
+ {
+  "id": "tumed",
+  "name": "Tümed Mongols (Altan Khan)",
+  "aliases": [],
+  "clio": [
+   "Tümed"
+  ],
+  "region": "north-central-asia",
+  "start": 1542,
+  "end": 1632,
+  "capital": "Köke Khota (Hohhot), built up from 1557 and called Guihua by the Ming from 1575; before that a mobile court",
+  "peak": {
+   "year": 1552,
+   "areaKm2": 2600000,
+   "note": "c. 2.6M km² c. 1552 – 1581, at the height of Altan Khan's power (as drawn on this map)"
+  },
+  "rulers": [
+   {
+    "name": "Altan Khan",
+    "reign": "1542 – 1582",
+    "note": "Leader of the Mongol right wing; besieged Beijing in 1550, made peace with the Ming in 1571 and named the Dalai Lama in 1578"
+   },
+   {
+    "name": "Sengge Düüreng Khan",
+    "reign": "1583 – 1585",
+    "note": "Son of Altan; succeeded with Ming support"
+   },
+   {
+    "name": "Namudai Sechen Khan",
+    "reign": "1586 – 1607",
+    "note": "Successor of Sengge Düüreng as khan of the Tümed"
+   },
+   {
+    "name": "Boshugtu",
+    "reign": "1608 – 1636",
+    "note": "Lost Köke Khota to Ligdan Khan of the Chahar in 1627"
+   }
+  ],
+  "summary": "The Tümed were one of the six tumens, or great tribal divisions, of the eastern Mongols, and under Altan Khan in the 16th century they became one of the strongest powers on the Mongolian steppe. Altan, a grandson of Dayan Khan, led the right wing of the Mongols from 1542. He raided Ming China again and again, broke through the Great Wall and burned the suburbs of Beijing in 1550, and fought the Oirats, taking back Karakorum. In 1571 he made peace with the Ming, who named him a prince and opened trade. Around his base on the Tümed plain grew the city of Köke Khota, today's Hohhot. In 1578 Altan gave the Tibetan lama Sonam Gyatso the title Dalai Lama, and the Mongols turned to Tibetan Buddhism. After Altan died in 1582 the Tümed weakened; Ligdan Khan of the Chahar seized Köke Khota in 1627, and the Tümed then submitted to the Manchus. On this map they appear until 1699, by then part of the Qing empire.",
+  "legacy": "Altan Khan's meeting with Sonam Gyatso created the title of Dalai Lama and tied Mongolia to Tibetan Buddhism, and his city of Hohhot is today the capital of China's Inner Mongolia.",
+  "sources": [
+   {
+    "title": "Wikipedia: Tumed",
+    "url": "https://en.wikipedia.org/wiki/Tumed"
+   },
+   {
+    "title": "Wikipedia: Altan Khan",
+    "url": "https://en.wikipedia.org/wiki/Altan_Khan"
+   },
+   {
+    "title": "Wikipedia: Hohhot",
+    "url": "https://en.wikipedia.org/wiki/Hohhot"
+   },
+   {
+    "title": "Wikipedia: Chahar–Jurchen War",
+    "url": "https://en.wikipedia.org/wiki/Chahar-Jurchen_War"
+   },
+   {
+    "title": "Wikipedia: Ligdan Khan",
+    "url": "https://en.wikipedia.org/wiki/Ligdan_Khan"
+   }
+  ]
+ },
+ {
+  "id": "later-jin-1616",
+  "name": "Later Jin (1616–1636)",
+  "aliases": [],
+  "clio": [
+   "Later Jin Dynasty"
+  ],
+  "region": "east-asia",
+  "start": 1616,
+  "end": 1636,
+  "capital": "Hetu Ala; from 1622 Liaoyang; from 1625 Mukden (modern Shenyang)",
+  "peak": {
+   "year": 1635,
+   "areaKm2": 3400000,
+   "note": "Manchuria plus Inner Mongolia, counting Korea as a dependency; c. 3.4M km² in 1635 (Taagepera 1997, in his Manchu–PRC series, which starts with the Jurchen state in 1600 and runs on through the Qing). The map draws a much smaller core until 1636, and its larger shapes after that are the early Qing"
+  },
+  "rulers": [
+   {
+    "name": "Nurhaci",
+    "reign": "1616 – 1626",
+    "note": "Unified the Jurchen tribes, created the Eight Banners and declared war on the Ming"
+   },
+   {
+    "name": "Hong Taiji",
+    "reign": "1626 – 1636",
+    "note": "Forced terms on Korea in 1627 and subdued the Chahar Mongols; renamed his people Manchu and the state Qing"
+   }
+  ],
+  "summary": "The Later Jin was the Jurchen khanate in Manchuria that grew into the Qing dynasty, China's last imperial house. Nurhaci, a chief of the Jianzhou Jurchen, spent decades uniting the Jurchen tribes, organised his people into the Eight Banners, military and social units, and had a script made for their language. In 1616 he proclaimed himself khan of a state called Jin, recalling the Jurchen Jin dynasty that had ruled northern China centuries before; historians call it the Later Jin. In 1618 he declared war on the Ming with his Seven Grievances, and the next year he smashed a large Ming army at Sarhu. He took Liaoyang and moved his capital to Mukden, but was beaten at Ningyuan in 1626 and died later that year. His son Hong Taiji forced Korea to make peace on his terms in 1627, built an artillery corps and defeated Ligdan Khan of the Chahar Mongols. In 1635 he renamed the Jurchen as Manchus, and in 1636 he renamed the state Great Qing.",
+  "legacy": "The Banners, the Manchu identity and the Mongol alliances forged under the Later Jin carried the Qing to the conquest of China from 1644.",
+  "sources": [
+   {
+    "title": "Wikipedia: Later Jin (1616–1636)",
+    "url": "https://en.wikipedia.org/wiki/Later_Jin_(1616%E2%80%931636)"
+   },
+   {
+    "title": "Wikipedia: Nurhaci",
+    "url": "https://en.wikipedia.org/wiki/Nurhaci"
+   },
+   {
+    "title": "Wikipedia: Hong Taiji",
+    "url": "https://en.wikipedia.org/wiki/Hong_Taiji"
+   },
+   {
+    "title": "Taagepera (1997), Expansion and Contraction Patterns of Large Polities",
+    "url": "https://escholarship.org/content/qt3cn68807/qt3cn68807.pdf"
+   },
+   {
+    "title": "Wikipedia: Later Jin invasion of Joseon",
+    "url": "https://en.wikipedia.org/wiki/Later_Jin_invasion_of_Joseon"
+   }
+  ]
+ },
+ {
+  "id": "dzungar-khanate",
+  "name": "Dzungar Khanate",
+  "aliases": [],
+  "clio": [
+   "Dzungar Khanate"
+  ],
+  "region": "north-central-asia",
+  "start": 1634,
+  "end": 1758,
+  "capital": "Khobak Sari, Erdeni Batur's stone town and monastery near modern Tacheng; later Ghulja (Yining) in the Ili valley; the khans' court was often on the move",
+  "peak": {
+   "year": 1688,
+   "areaKm2": 3600000,
+   "note": "c. 3.6M km² (Bang, Bayly & Scheidel 2020, The Oxford World History of Empire, as cited by Wikipedia, which pairs it with the year 1650); this map draws c. 3.65M km² c. 1687 – 1695, after Galdan's conquest of the Tarim Basin"
+  },
+  "rulers": [
+   {
+    "name": "Erdeni Batur",
+    "reign": "1634 – 1653",
+    "note": "Founder; Choros chief who set up the khanate"
+   },
+   {
+    "name": "Sengge",
+    "reign": "1653 – 1671",
+    "note": "Second khan, after Erdeni Batur"
+   },
+   {
+    "name": "Galdan Boshugtu Khan",
+    "reign": "1671 – 1697",
+    "note": "Conquered the Tarim Basin; defeated by the Kangxi Emperor at Jao Modo in 1696"
+   },
+   {
+    "name": "Tsewang Rabtan",
+    "reign": "1697 – 1727",
+    "note": "Rebuilt Dzungar power; seized Tibet in 1717"
+   },
+   {
+    "name": "Galdan Tseren",
+    "reign": "1727 – 1745",
+    "note": "Strong ruler whose death led to civil war"
+   },
+   {
+    "name": "Dawachi",
+    "reign": "1753 – 1755",
+    "note": "Last khan; captured by the Qing"
+   }
+  ],
+  "summary": "The Dzungar Khanate was the last great nomadic empire of the steppe, built by the western Mongols, or Oirats, in what is now northern Xinjiang and western Mongolia. Its founder Erdeni Batur, a Choros chief, set up the khanate in 1634 and built a stone capital, Khobak Sari. Under Galdan, who took power in 1671, the Dzungars conquered the oasis cities of the Tarim Basin by 1680 and in 1688 invaded the Khalkha Mongols, which drew the Qing Kangxi Emperor into war. Galdan was checked at Ulan Butung in 1690 and at Jao Modo in 1696, and died the next year. Tsewang Rabtan rebuilt Dzungar strength and seized Tibet in 1717, until Qing armies drove the Dzungars out in 1720. After Galdan Tseren died in 1745, rival princes fought over the throne. The Qianlong Emperor invaded in 1755, and by 1758 Qing soldiers, smallpox and starvation had wiped out most of the Dzungar people.",
+  "legacy": "The destruction of the Dzungars, which historians such as Peter Perdue call genocide, let the Qing take Dzungaria and the Tarim Basin, the lands later made the province of Xinjiang.",
+  "sources": [
+   {
+    "title": "Wikipedia: Dzungar Khanate",
+    "url": "https://en.wikipedia.org/wiki/Dzungar_Khanate"
+   },
+   {
+    "title": "Hamilton College, Central Asian History: China expands west",
+    "url": "https://academics.hamilton.edu/central-asian-history/keller-china-expands-west"
+   },
+   {
+    "title": "Wikipedia: Oirats",
+    "url": "https://en.wikipedia.org/wiki/Oirats"
+   }
+  ]
+ },
+ {
+  "id": "southern-ming",
+  "name": "Southern Ming",
+  "aliases": [],
+  "clio": [
+   "Southern Ming"
+  ],
+  "region": "east-asia",
+  "start": 1644,
+  "end": 1662,
+  "capital": "Nanjing (1644–1645); then Fuzhou and Zhaoqing; afterwards the Yongli Emperor's court moved from place to place across the southwest",
+  "peak": {
+   "year": 1644,
+   "areaKm2": 2300000,
+   "note": "Ming China south of the Huai River after the fall of Beijing; c. 2.3M km² in 1644 (Taagepera 1997, +/- 0.8M: his Ming series at the Manchu conquest of north China, which he then runs down to zero by 1690; he has no separate Southern Ming series); c. 2.2M km² as drawn on this map for 1645–47, shrinking fast after that"
+  },
+  "rulers": [
+   {
+    "name": "Hongguang Emperor (Zhu Yousong)",
+    "reign": "1644 – 1645",
+    "note": "Enthroned at Nanjing; fled the city as the Qing closed in (1645) and was captured soon after"
+   },
+   {
+    "name": "Longwu Emperor (Zhu Yujian)",
+    "reign": "1645 – 1646",
+    "note": "Ruled from Fuzhou; killed by the Qing"
+   },
+   {
+    "name": "Shaowu Emperor (Zhu Yuyue)",
+    "reign": "1646 – 1647",
+    "note": "Short-lived rival court at Guangzhou"
+   },
+   {
+    "name": "Yongli Emperor (Zhu Youlang)",
+    "reign": "1646 – 1662",
+    "note": "Last Ming claimant; handed over by Burma and executed by Wu Sangui"
+   }
+  ],
+  "summary": "The Southern Ming was the string of Ming loyalist regimes that tried to hold southern China against the Manchu Qing after Beijing fell in 1644. When rebels took the capital and the last Ming emperor died, a prince was crowned at Nanjing as the Hongguang Emperor. His court was torn by quarrels, and in 1645 Qing armies stormed Yangzhou, killing its defender Shi Kefa and massacring the city, and then took Nanjing without a fight. Other princes set up courts at Fuzhou, Guangzhou and Zhaoqing, sometimes fighting each other as much as the Qing. The longest-lasting, the Yongli Emperor, survived for sixteen years with the help of generals such as Li Dingguo and the sea lord Koxinga, who failed to retake Nanjing. Pushed into Yunnan and then into Burma, Yongli was handed over to the Qing general Wu Sangui and executed in 1662. Koxinga's heirs held Taiwan in the Ming name until 1683.",
+  "legacy": "Southern Ming loyalism became a lasting symbol of resistance to Manchu rule, and Koxinga's seizure of Taiwan from the Dutch brought the island firmly into Chinese history.",
+  "sources": [
+   {
+    "title": "Wikipedia: Southern Ming",
+    "url": "https://en.wikipedia.org/wiki/Southern_Ming"
+   },
+   {
+    "title": "Wikipedia: Hongguang Emperor",
+    "url": "https://en.wikipedia.org/wiki/Hongguang_Emperor"
+   },
+   {
+    "title": "Wikipedia: Shaowu Emperor",
+    "url": "https://en.wikipedia.org/wiki/Shaowu_Emperor"
+   },
+   {
+    "title": "Wikipedia: Yongli Emperor",
+    "url": "https://en.wikipedia.org/wiki/Yongli_Emperor"
+   },
+   {
+    "title": "Wikipedia: Koxinga",
+    "url": "https://en.wikipedia.org/wiki/Koxinga"
+   },
+   {
+    "title": "Taagepera (1997), Expansion and Contraction Patterns of Large Polities",
+    "url": "https://escholarship.org/content/qt3cn68807/qt3cn68807.pdf"
+   }
+  ]
+ },
+ {
+  "id": "hotak-dynasty",
+  "name": "Hotak dynasty",
+  "aliases": [],
+  "clio": [
+   "Hotaki Dynasty"
+  ],
+  "region": "middle-east-south-asia",
+  "start": 1709,
+  "end": 1738,
+  "capital": "Kandahar; Isfahan (1722 – 1729)",
+  "peak": {
+   "year": 1728,
+   "areaKm2": 1900000,
+   "note": "Under Ashraf, southern Afghanistan and much of central and southern Iran; c. 1.9M km² c. 1728 (as drawn on this map)"
+  },
+  "rulers": [
+   {
+    "name": "Mirwais Hotak",
+    "reign": "1709 – 1715",
+    "note": "Killed the Safavid governor of Kandahar and made the region independent"
+   },
+   {
+    "name": "Mahmud Hotak",
+    "reign": "1717 – 1725",
+    "note": "Took Isfahan in 1722 and became shah of Iran"
+   },
+   {
+    "name": "Ashraf Hotak",
+    "reign": "1725 – 1729",
+    "note": "Beat an Ottoman army but was driven from Iran by Nader"
+   },
+   {
+    "name": "Hussain Hotak",
+    "reign": "1725 – 1738",
+    "note": "Ruled Kandahar while Ashraf held Isfahan; last ruler, until Nader Shah took the city"
+   }
+  ],
+  "summary": "The Hotak dynasty was a short-lived Afghan state, founded by Ghilji Pashtuns of Kandahar, whose armies overthrew the Safavid shahs of Iran in 1722. In 1709 the Ghilji chief Mirwais Hotak killed Kandahar's harsh Safavid governor, the Georgian prince Gurgin Khan, drove out his garrison and ruled the region as an independent emir until he died in 1715. His son Mahmud seized power in 1717, invaded Iran, routed the Safavid army at Gulnabad in March 1722 and besieged Isfahan for about six months, until Shah Sultan Husayn gave up his crown to him. Mahmud never held the whole country: the Ottomans and Russians grabbed Iranian provinces, and a Safavid prince, Tahmasp II, held out in the north. Growing paranoid, Mahmud massacred nobles and Safavid princes before his cousin Ashraf overthrew him in 1725. Ashraf beat back an Ottoman army, but in 1729 Tahmasp's general Nader drove the Afghans out of Iran, and in 1738 Nader captured Kandahar from the last Hotak ruler, Hussain.",
+  "legacy": "The Hotak conquest ended two centuries of Safavid rule and opened the way for Nader Shah, while Afghans honour Mirwais Hotak, called Mirwais Nika, the grandfather, as a national hero buried in Kandahar.",
+  "sources": [
+   {
+    "title": "Wikipedia: Hotak dynasty",
+    "url": "https://en.wikipedia.org/wiki/Hotak_dynasty"
+   },
+   {
+    "title": "Wikipedia: Mirwais Hotak",
+    "url": "https://en.wikipedia.org/wiki/Mirwais_Hotak"
+   },
+   {
+    "title": "Wikipedia: Mahmud Hotak",
+    "url": "https://en.wikipedia.org/wiki/Mahmud_Hotak"
+   },
+   {
+    "title": "Wikipedia: Ashraf Hotak",
+    "url": "https://en.wikipedia.org/wiki/Ashraf_Hotak"
+   },
+   {
+    "title": "Wikipedia: Hussain Hotak",
+    "url": "https://en.wikipedia.org/wiki/Hussain_Hotak"
+   }
+  ]
+ },
+ {
+  "id": "egypt-muhammad-ali",
+  "name": "Egypt under the Muhammad Ali dynasty",
+  "aliases": [],
+  "clio": [
+   "Muhammad Ali dynasty",
+   "Khedivate of Egypt",
+   "Kingdom of Egypt"
+  ],
+  "region": "northern-africa",
+  "start": 1805,
+  "end": 1953,
+  "capital": "Cairo",
+  "peak": {
+   "year": 1879,
+   "areaKm2": 3000000,
+   "note": "Under Khedive Ismail, Egyptian rule ran up the Nile through Sudan toward Equatoria and along the Red Sea coast; c. 3.0M km² (as drawn on this map)"
+  },
+  "rulers": [
+   {
+    "name": "Muhammad Ali",
+    "reign": "1805 – 1848",
+    "note": "Albanian Ottoman officer who seized power and built a modern army and state"
+   },
+   {
+    "name": "Ismail",
+    "reign": "1863 – 1879",
+    "note": "Gained the title khedive in 1867, opened the Suez Canal and ran up ruinous debts"
+   },
+   {
+    "name": "Tewfik",
+    "reign": "1879 – 1892",
+    "note": "Khedive under whom Britain occupied Egypt in 1882"
+   },
+   {
+    "name": "Fuad I",
+    "reign": "1922 – 1936",
+    "note": "First king after Britain recognised Egypt's independence"
+   },
+   {
+    "name": "Farouk",
+    "reign": "1936 – 1952",
+    "note": "Last ruling king, overthrown by the Free Officers"
+   }
+  ],
+  "summary": "For almost 150 years Egypt was ruled by the descendants of Muhammad Ali, an Albanian Ottoman officer who won a three-way struggle for Cairo after the French occupation of 1798–1801. Appointed governor by the Ottoman sultan in 1805, he massacred the old Mamluk elite in 1811 and built a conscript army, factories and schools paid for by state control of farming and cotton. His armies conquered Sudan and Syria, but in 1840 the European powers forced him back, granting his family hereditary rule over Egypt and leaving him Sudan instead. His grandson Ismail took the title khedive in 1867, opened the Suez Canal in 1869 and pushed Egypt's frontier deep into Africa, but his borrowing bankrupted the state. Britain occupied Egypt in 1882, and Sudan was lost to the Mahdist revolt by 1885. Britain recognised Egypt's independence in 1922 under King Fuad I, but its troops stayed, and in 1952 army officers overthrew King Farouk; the monarchy was abolished in 1953.",
+  "legacy": "Muhammad Ali is widely considered the founder of modern Egypt, and the Suez Canal and cotton economy of his dynasty's era shaped the country that became a republic in 1953.",
+  "sources": [
+   {
+    "title": "Wikipedia: History of Egypt under the Muhammad Ali dynasty",
+    "url": "https://en.wikipedia.org/wiki/History_of_Egypt_under_the_Muhammad_Ali_dynasty"
+   },
+   {
+    "title": "Library of Congress Country Studies: Egypt, Muhammad Ali, 1805–48",
+    "url": "https://countrystudies.us/egypt/21.htm"
+   },
+   {
+    "title": "Wikipedia: Muhammad Ali of Egypt",
+    "url": "https://en.wikipedia.org/wiki/Muhammad_Ali_of_Egypt"
+   },
+   {
+    "title": "Wikipedia: Khedivate of Egypt",
+    "url": "https://en.wikipedia.org/wiki/Khedivate_of_Egypt"
+   },
+   {
+    "title": "Wikipedia: Kingdom of Egypt",
+    "url": "https://en.wikipedia.org/wiki/Kingdom_of_Egypt"
+   },
+   {
+    "title": "Wikipedia: Isma'il Pasha",
+    "url": "https://en.wikipedia.org/wiki/Isma%27il_Pasha"
+   }
+  ]
+ },
+ {
+  "id": "colombia",
+  "name": "Colombia",
+  "aliases": [],
+  "clio": [
+   "New Granada",
+   "Republic of New Granada",
+   "Granadine Confederation",
+   "United States of Colombia",
+   "Republic of Colombia"
+  ],
+  "region": "northern-south-america",
+  "start": 1810,
+  "end": 2026,
+  "capital": "Bogotá",
+  "peak": {
+   "year": 1850,
+   "areaKm2": 1400000,
+   "note": "The Republic of New Granada, which still included Panama until 1903; c. 1.4M km² (as drawn on this map)"
+  },
+  "rulers": [
+   {
+    "name": "Francisco de Paula Santander",
+    "reign": "1832 – 1837",
+    "note": "First president of the Republic of New Granada"
+   },
+   {
+    "name": "Tomás Cipriano de Mosquera",
+    "reign": "1845 – 1849, 1861 – 1864, 1866 – 1867",
+    "note": "Liberal general who won the civil war of 1860–62, sold off church lands and led the new federation"
+   },
+   {
+    "name": "Rafael Núñez",
+    "reign": "1880 – 1882, 1884 – 1886, 1887 – 1888, 1892 – 1894",
+    "note": "Led the Regeneration and the centralist constitution of 1886; wrote the national anthem's lyrics; in his last term Miguel Antonio Caro governed for him"
+   },
+   {
+    "name": "Gustavo Rojas Pinilla",
+    "reign": "1953 – 1957",
+    "note": "General who seized power in a coup during La Violencia"
+   },
+   {
+    "name": "Juan Manuel Santos",
+    "reign": "2010 – 2018",
+    "note": "Signed the 2016 peace deal with the FARC and won the Nobel Peace Prize"
+   }
+  ],
+  "summary": "Colombia grew out of the Spanish Viceroyalty of New Granada, and it dates its independence to 20 July 1810, when a staged quarrel over a flower vase the patriots asked to borrow sparked an uprising and a ruling junta in Bogotá. Its first republic, the United Provinces of New Granada, was split between federalists and centralists, and Spain reconquered it in 1815–16, until Bolívar's victory at Boyacá in 1819 made it the core of Gran Colombia. After Venezuela and Ecuador left in 1830, the Republic of New Granada, which still included Panama, became the Granadine Confederation in 1858 and the federal United States of Colombia in 1863. Rafael Núñez's centralist constitution of 1886 created the Republic of Colombia. Liberals and Conservatives fought repeated civil wars, and the Thousand Days' War of 1899–1902 killed over 100,000 people; Panama broke away with US backing in 1903. La Violencia after 1948 cost over 200,000 more lives, and war with FARC guerrillas, founded in 1964, lasted until a 2016 peace deal.",
+  "legacy": "Núñez's constitution of 1886 lasted until 1991, and the peace agreement that ended the FARC's half-century insurgency won President Juan Manuel Santos the 2016 Nobel Peace Prize.",
+  "sources": [
+   {
+    "title": "Wikipedia: History of Colombia",
+    "url": "https://en.wikipedia.org/wiki/History_of_Colombia"
+   },
+   {
+    "title": "Library of Congress Country Studies: Colombia, The Independence Movement",
+    "url": "https://countrystudies.us/colombia/12.htm"
+   },
+   {
+    "title": "Library of Congress Country Studies: Colombia, The Nationalists",
+    "url": "https://countrystudies.us/colombia/17.htm"
+   },
+   {
+    "title": "Library of Congress Country Studies: Colombia, La Violencia",
+    "url": "https://countrystudies.us/colombia/22.htm"
+   },
+   {
+    "title": "Wikipedia: Colombian Declaration of Independence",
+    "url": "https://en.wikipedia.org/wiki/Colombian_Declaration_of_Independence"
+   },
+   {
+    "title": "Wikipedia: Republic of New Granada",
+    "url": "https://en.wikipedia.org/wiki/Republic_of_New_Granada"
+   }
+  ]
+ },
+ {
+  "id": "peru-bolivian-confederation",
+  "name": "Peru–Bolivian Confederation",
+  "aliases": [],
+  "clio": [
+   "Peru-Bolivian Confederation"
+  ],
+  "region": "northern-south-america",
+  "start": 1836,
+  "end": 1839,
+  "capital": "Tacna (official capital); North Peru was governed from Lima and South Peru from Tacna",
+  "peak": {
+   "year": 1836,
+   "areaKm2": 3200000,
+   "note": "Peru and Bolivia together, including Bolivia's Pacific coast and vast claimed Amazon lands; c. 3.2M km² (as drawn on this map)"
+  },
+  "rulers": [
+   {
+    "name": "Andrés de Santa Cruz",
+    "reign": "1836 – 1839",
+    "note": "President of Bolivia who made himself Supreme Protector of the confederation"
+   },
+   {
+    "name": "Luis José de Orbegoso",
+    "reign": "1837 – 1838",
+    "note": "President of North Peru who broke away from the confederation in July 1838"
+   },
+   {
+    "name": "Ramón Herrera y Rodado",
+    "reign": "1837 – 1838",
+    "note": "First president of South Peru"
+   }
+  ],
+  "summary": "The Peru–Bolivian Confederation was a short-lived union of Peru and Bolivia created by the Bolivian leader Andrés de Santa Cruz and destroyed by Chile after barely three years. Santa Cruz, president of Bolivia since 1829, dreamed of joining Peru with Bolivia, which was still often called Upper Peru. When civil war tore Peru apart, President Orbegoso let his troops cross the border; Santa Cruz beat his rivals Gamarra and Salaverry in 1835 and 1836, and had Salaverry executed. In October 1836 he decreed a confederation of three states, North Peru, South Peru and Bolivia, with himself as Supreme Protector. Chile, fearing a powerful neighbour, declared war in December 1836, and Argentina's ruler Rosas joined in 1837. A first Chilean invasion ended in a truce, but a second army under the Chilean general Manuel Bulnes and the exiled Peruvian Agustín Gamarra routed Santa Cruz at Yungay on 20 January 1839. He fled into exile, and in August 1839 the union was declared dissolved.",
+  "legacy": "Its defeat confirmed Peru and Bolivia as separate nations; Chile had gone to war partly to protect its port of Valparaíso against Peru's Callao in the trade of the South Pacific.",
+  "sources": [
+   {
+    "title": "Wikipedia: Peru–Bolivian Confederation",
+    "url": "https://en.wikipedia.org/wiki/Peru%E2%80%93Bolivian_Confederation"
+   },
+   {
+    "title": "Encyclopedia of Latin American History and Culture (via Encyclopedia.com): Peru–Bolivia Confederation",
+    "url": "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/peru-bolivia-confederation"
+   },
+   {
+    "title": "Wikipedia: Andrés de Santa Cruz",
+    "url": "https://en.wikipedia.org/wiki/Andr%C3%A9s_de_Santa_Cruz"
+   },
+   {
+    "title": "Wikipedia: Republic of North Peru",
+    "url": "https://en.wikipedia.org/wiki/Republic_of_North_Peru"
+   },
+   {
+    "title": "Wikipedia: Republic of South Peru",
+    "url": "https://en.wikipedia.org/wiki/Republic_of_South_Peru"
+   }
+  ]
+ },
+ {
+  "id": "mahdist-state",
+  "name": "Mahdist State",
+  "aliases": [],
+  "clio": [
+   "Mahdist State"
+  ],
+  "region": "northern-africa",
+  "start": 1885,
+  "end": 1899,
+  "capital": "Omdurman",
+  "peak": {
+   "year": 1890,
+   "areaKm2": 2300000,
+   "note": "Most of present-day Sudan, including most of Darfur, but only part of Equatoria and never the Red Sea port of Suakin; c. 2.3M km² (as drawn on this map)"
+  },
+  "rulers": [
+   {
+    "name": "Muhammad Ahmad (the Mahdi)",
+    "reign": "1881 – 1885",
+    "note": "Sufi teacher who proclaimed himself the Mahdi and led the revolt that took Khartoum"
+   },
+   {
+    "name": "Abdallahi ibn Muhammad (the Khalifa)",
+    "reign": "1885 – 1899",
+    "note": "The Mahdi's successor, who ruled from Omdurman and died fighting at Umm Diwaykarat"
+   }
+  ],
+  "summary": "The Mahdist State was an Islamic state in Sudan born from a revolt against Egyptian rule and destroyed by a British-led army fourteen years after its founding. In 1881 Muhammad Ahmad, a boatbuilder's son and Sufi teacher, proclaimed himself the Mahdi, a redeemer sent by God, and called for holy war against the Egyptian administration and its tax collectors. His followers, the Ansar, wiped out Egyptian armies sent against them and in January 1885 stormed Khartoum, killing its British governor, Charles Gordon. The Mahdi died months later, and his successor, the Khalifa Abdallahi, ruled from the new capital at Omdurman. His armies invaded Ethiopia, where Emperor Yohannes IV fell at Gallabat in 1889, but an attack on Egypt was crushed at Toski (Tushkah) the same year, and famine from 1888 to 1892 devastated the country. From 1896 Herbert Kitchener's Anglo-Egyptian army advanced up the Nile, shattering the Mahdists at Omdurman in 1898; the Khalifa was killed in 1899.",
+  "legacy": "Britain then ruled Sudan, in name jointly with Egypt, until 1956, but the Mahdi's memory endured: the modern Ansar movement stayed a political force, and his great-grandson Sadiq al-Mahdi became prime minister after Sudan's 1986 elections.",
+  "sources": [
+   {
+    "title": "Wikipedia: Mahdist State",
+    "url": "https://en.wikipedia.org/wiki/Mahdist_State"
+   },
+   {
+    "title": "Library of Congress Country Studies: Sudan, The Mahdiyah",
+    "url": "https://countrystudies.us/sudan/12.htm"
+   },
+   {
+    "title": "Library of Congress Country Studies: Sudan, The Khalifa",
+    "url": "https://countrystudies.us/sudan/13.htm"
+   },
+   {
+    "title": "Library of Congress Country Studies: Sudan, The Reconquest of Sudan",
+    "url": "https://countrystudies.us/sudan/14.htm"
    }
   ]
  }

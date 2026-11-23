@@ -1,0 +1,122 @@
+# Checklog clio-full batch 8
+
+114 realms (all modern states and groups, map years 1958-2026). Each note compared with its clio-wp Wikipedia article (and Wikidata facts); extra pages fetched where noted.
+
+- [Cuban Communists] verified (PCC founded 1965 per PCC article; Sierra Maestra, Batista flight 1 Jan 1959 per https://en.wikipedia.org/wiki/Cuba) — https://en.wikipedia.org/wiki/Communist_Party_of_Cuba
+- [United Arab Republic] verified — https://en.wikipedia.org/wiki/United_Arab_Republic
+- [Communist Cuba] verified — https://en.wikipedia.org/wiki/Cuba
+- [Democratic Republic of the Congo] verified — https://en.wikipedia.org/wiki/Democratic_Republic_of_the_Congo
+- [Federal Republic of Somalia] verified — https://en.wikipedia.org/wiki/Somalia
+- [Guinea] corrected: "the only French colony to vote against staying in a French community ... who ruled it harshly" → "the only French territory to reject the new French constitution and choose immediate independence ... He ruled it until his death in 1984" — referendum wording per source; "harshly" not stated; accents fixed — also https://en.wikipedia.org/wiki/1958_Guinean_constitutional_referendum — https://en.wikipedia.org/wiki/Guinea
+- [Iraqi Republic] verified — https://en.wikipedia.org/wiki/Iraq
+- [Madagascar] verified — https://en.wikipedia.org/wiki/Madagascar
+- [Republic of Cameroon] verified — https://en.wikipedia.org/wiki/Cameroon
+- [Republic of Cyprus] verified — https://en.wikipedia.org/wiki/Cyprus
+- [Togo] corrected: "Gnassingbe" → "Gnassingbé" — spelling only; facts verified — https://en.wikipedia.org/wiki/Togo
+- [Burkina Faso] verified — https://en.wikipedia.org/wiki/Burkina_Faso
+- [Central African Republic] corrected: "died before independence" → "died in a plane crash before independence"; accents on Barthélemy, Jean-Bédel — facts verified (crash 29 Mar 1959, crowned 1977) — https://en.wikipedia.org/wiki/Central_African_Republic
+- [Federal Republic of Nigeria] verified (1963 republic from Wikidata inception; Lagos→Abuja 12 Dec 1991 confirmed at https://en.wikipedia.org/wiki/Abuja) — https://en.wikipedia.org/wiki/Nigeria
+- [Gabon] verified — https://en.wikipedia.org/wiki/Gabon
+- [Republic of Benin] corrected: "after the sea bight rather than the old Benin kingdom of Nigeria" → "from the Bight of Benin off its coast (itself named for the old Benin kingdom in Nigeria)" — article says the bight is named after the kingdom; old wording implied no link — https://en.wikipedia.org/wiki/Benin
+- [Republic of Côte d'Ivoire] corrected: "his home town" → "his home village"; accents on Félix Houphouët-Boigny — facts verified — https://en.wikipedia.org/wiki/Ivory_Coast
+- [Republic of Senegal] corrected: "Leopold" → "Léopold" — spelling; "poet" confirmed at https://en.wikipedia.org/wiki/L%C3%A9opold_S%C3%A9dar_Senghor — https://en.wikipedia.org/wiki/Senegal
+- [Republic of Syria] verified — https://en.wikipedia.org/wiki/Syria
+- [Republic of the Congo] corrected: "from 1970 until 1991" → "from 1969 until 1992" — article gives Marxist-Leninist state 1969-1992 — https://en.wikipedia.org/wiki/Republic_of_the_Congo
+- [Republic of the Niger] reduced: "Its river valley in the southwest is its farming heartland, and it is a major source of uranium" → "Most people live in the less dry south and west, where farming is possible, and it exports uranium ore" — article supports only this — https://en.wikipedia.org/wiki/Niger
+- [Sierra Leone] corrected: "Its capital, Freetown, was founded in 1787 as a home for freed Black Londoners" → "Freed Black settlers from London arrived in 1787, Black Loyalists from Nova Scotia founded Freetown in 1792" — 1787 settlement was Granville Town; Freetown founded 11 Mar 1792 — https://en.wikipedia.org/wiki/Sierra_Leone
+- [State of Kuwait] corrected: "Iraq claimed it immediately" → "Iraq at first refused to recognise it, claiming it as Iraqi land"; "head of" → "top of" (overlap) — article wording — https://en.wikipedia.org/wiki/Kuwait
+- [Tanzania] verified — https://en.wikipedia.org/wiki/Tanzania
+- [Samoa] verified — https://en.wikipedia.org/wiki/Samoa
+- [Ba'athist Syria] verified — https://en.wikipedia.org/wiki/Syria
+- [Malaysia] verified — https://en.wikipedia.org/wiki/Malaysia
+- [Republic of Burundi] verified — https://en.wikipedia.org/wiki/Burundi
+- [Republic of Kenya] verified — https://en.wikipedia.org/wiki/Kenya
+- [Republic of Rwanda] corrected: "about 800,000 people" → "between half a million and a million people"; "central Africa" → "Africa's Great Lakes region" — article gives 500,000-1,000,000 — https://en.wikipedia.org/wiki/Rwanda
+- [Republic of Trinidad and Tobago] verified; reworded only to remove a 7-word overlap with the article — https://en.wikipedia.org/wiki/Trinidad_and_Tobago
+- [Republic of Uganda] reduced: "includes much of Lake Victoria's shore and the source of the Nile" → "takes in a large part of Lake Victoria and lies in the basin of the Nile" — source of the Nile not stated as in Uganda — https://en.wikipedia.org/wiki/Uganda
+- [Malawi] verified — https://en.wikipedia.org/wiki/Malawi
+- [Maldives] verified — https://en.wikipedia.org/wiki/Maldives
+- [Republic of Singapore] verified — https://en.wikipedia.org/wiki/Singapore
+- [Republic of The Gambia] reduced: "Its borders follow a colonial-era river boundary" → strip "along both banks of the Gambia River, surrounded by Senegal except on its Atlantic coast" — colonial-boundary claim not in article — https://en.wikipedia.org/wiki/The_Gambia
+- [Zambia] verified — https://en.wikipedia.org/wiki/Zambia
+- [Antigua and Barbuda] reduced: "Its sheltered harbour at English Harbour once served Nelson's navy" → "Nelson's Dockyard at English Harbour, an old naval base, is a World Heritage Site" — article only names Nelson's Dockyard (UNESCO 2016) — https://en.wikipedia.org/wiki/Antigua_and_Barbuda
+- [Barbados] verified — https://en.wikipedia.org/wiki/Barbados
+- [Greek junta] verified — https://en.wikipedia.org/wiki/Greek_junta
+- [Guyana] verified; reworded only to remove a 7-word overlap with the article — https://en.wikipedia.org/wiki/Guyana
+- [Lesotho] verified — https://en.wikipedia.org/wiki/Lesotho
+- [Republic of Botswana] verified — https://en.wikipedia.org/wiki/Botswana
+- [Nauru] verified — https://en.wikipedia.org/wiki/Nauru
+- [People's Democratic Republic of Yemen] verified — https://en.wikipedia.org/wiki/South_Yemen
+- [Equatorial Guinea] capital changed: "Malabo" → "Malabo; later Ciudad de la Paz" — article: capital Ciudad de la Paz since January 2026 (map runs to 2026); text verified — https://en.wikipedia.org/wiki/Equatorial_Guinea
+- [Eswatini] corrected: "one of the last absolute monarchies in the world" → "the last absolute monarchy in Africa"; capital "Mbabane; Lobamba" → "Mbabane (Lobamba is the legislative capital)" — article wording; old capital format implied a move — https://en.wikipedia.org/wiki/Eswatini
+- [Libyan Arab Republic] verified — https://en.wikipedia.org/wiki/History_of_Libya_under_Muammar_Gaddafi
+- [Kingdom of Bahrain] verified — https://en.wikipedia.org/wiki/Bahrain
+- [People's Republic of Bangladesh] verified — https://en.wikipedia.org/wiki/Bangladesh
+- [United Arab Emirates] corrected: added "(Ras Al Khaimah joined weeks later)" — six emirates formed the union on 2 Dec 1971, RAK joined 10 Jan 1972 — https://en.wikipedia.org/wiki/United_Arab_Emirates
+- [Arab Republic of Egypt] verified — https://en.wikipedia.org/wiki/Egypt
+- [Commonwealth of The Bahamas] verified — https://en.wikipedia.org/wiki/The_Bahamas
+- [Syria] verified — https://en.wikipedia.org/wiki/Syria
+- [Zaire] verified; reworded only to remove a 7-word overlap with the article also "Laurent Kabila" → "Laurent-Désiré Kabila" — https://en.wikipedia.org/wiki/Zaire
+- [Grenada] corrected: "known as the Spice Isle for its nutmeg" → "called the Island of Spice for its nutmeg and mace"; "US invasion" → "US-led invasion" — article wording — https://en.wikipedia.org/wiki/Grenada
+- [Communist Laos] verified — https://en.wikipedia.org/wiki/Laos
+- [Khmer Rouge] verified — https://en.wikipedia.org/wiki/Khmer_Rouge
+- [Mozambique] verified — https://en.wikipedia.org/wiki/Mozambique
+- [People's Republic of Angola] verified — https://en.wikipedia.org/wiki/Angola
+- [Republic of Cabo Verde] verified — https://en.wikipedia.org/wiki/Cape_Verde
+- [Seychelles] verified — https://en.wikipedia.org/wiki/Seychelles
+- [Socialist Republic of Vietnam] reduced: "and Saigon was renamed Ho Chi Minh City" → "which began market reforms in 1986" — renaming not in article; 1986 reforms are — https://en.wikipedia.org/wiki/Vietnam
+- [São Tomé and Príncipe] verified — https://en.wikipedia.org/wiki/S%C3%A3o_Tom%C3%A9_and_Pr%C3%ADncipe
+- [Third Hellenic Republic] corrected: "A referendum then abolished the monarchy, and the country became a parliamentary republic" → "A referendum chose not to bring back the monarchy, and a republican constitution followed in 1975" — article wording; "European Community" → "European Communities" — https://en.wikipedia.org/wiki/Third_Hellenic_Republic
+- [Turkish Republic of Northern Cyprus] verified — https://en.wikipedia.org/wiki/Northern_Cyprus
+- [Republic of Djibouti] verified — https://en.wikipedia.org/wiki/Djibouti
+- [Commonwealth of Dominica] verified — https://en.wikipedia.org/wiki/Dominica
+- [Kiribati] verified — https://en.wikipedia.org/wiki/Kiribati
+- [People's Republic of Kampuchea] verified — https://en.wikipedia.org/wiki/People%27s_Republic_of_Kampuchea
+- [Saint Lucia] verified — https://en.wikipedia.org/wiki/Saint_Lucia
+- [Solomon Islands] corrected: "of nearly 1,000 islands" → "made up of six main islands and more than a thousand smaller ones" — article: six major islands and over 1,000 smaller — https://en.wikipedia.org/wiki/Solomon_Islands
+- [Belize] verified — https://en.wikipedia.org/wiki/Belize
+- [Republic of Zimbabwe] verified — https://en.wikipedia.org/wiki/Zimbabwe
+- [Saint Kitts and Nevis] verified — https://en.wikipedia.org/wiki/Saint_Kitts_and_Nevis
+- [Vanuatu] reduced: "an ancestor of bungee jumping" → description of the land-diving ritual — bungee link not in article — https://en.wikipedia.org/wiki/Vanuatu
+- [Marshall Islands] verified — https://en.wikipedia.org/wiki/Marshall_Islands
+- [Namibia] verified — https://en.wikipedia.org/wiki/Namibia
+- [Republic of Lithuania] verified — https://en.wikipedia.org/wiki/Lithuania
+- [Republic of Albania] verified — https://en.wikipedia.org/wiki/Albania
+- [Republic of Bulgaria] verified — https://en.wikipedia.org/wiki/Bulgaria
+- [(Commonwealth of Nations)] verified — https://en.wikipedia.org/wiki/Commonwealth_of_Nations
+- [Angola] verified — https://en.wikipedia.org/wiki/Angola
+- [Bosnia and Herzegovina] verified — https://en.wikipedia.org/wiki/Bosnia_and_Herzegovina
+- [British Crown Dependencies] reduced: "and they make their own laws and set their own taxes" → "each has its own parliament that makes laws on local matters" — taxes not in article; list order changed (overlap) — https://en.wikipedia.org/wiki/Crown_Dependencies
+- [Cuba] verified — https://en.wikipedia.org/wiki/Cuba
+- [Ireland] verified; reworded only to remove a 7-word overlap with the article also "island nation" → "country covering most of the island of Ireland" (state covers five-sixths of the island) — https://en.wikipedia.org/wiki/Republic_of_Ireland
+- [Kazakhstan] corrected: "mostly steppe" → "a land of vast steppes" — article: plateaus and plains; facts verified — https://en.wikipedia.org/wiki/Kazakhstan
+- [Kyrgyzstan] verified — https://en.wikipedia.org/wiki/Kyrgyzstan
+- [Laos] verified — https://en.wikipedia.org/wiki/Laos
+- [North Macedonia] verified — https://en.wikipedia.org/wiki/North_Macedonia
+- [Republic of Armenia] verified — https://en.wikipedia.org/wiki/Armenia
+- [Republic of Belarus] verified — https://en.wikipedia.org/wiki/Belarus
+- [Republic of Croatia] verified — https://en.wikipedia.org/wiki/Croatia
+- [Republic of Estonia] verified; reworded only to remove a 7-word overlap with the article — https://en.wikipedia.org/wiki/Estonia
+- [Republic of Iraq] verified — https://en.wikipedia.org/wiki/Iraq
+- [Republic of Moldova] verified — https://en.wikipedia.org/wiki/Moldova
+- [Republic of Slovenia] corrected: "the first part of Yugoslavia to break away. It declared independence in June 1991 after a ten-day war" → "declared independence from Yugoslavia in June 1991. A brief ten-day war followed" — war came after the declaration; "first" not supported (Croatia declared same day) — https://en.wikipedia.org/wiki/Slovenia
+- [Republic of Tajikistan] verified — https://en.wikipedia.org/wiki/Tajikistan
+- [Republic of Uzbekistan] verified — https://en.wikipedia.org/wiki/Uzbekistan
+- [Saint Vincent and the Grenadines] verified — https://en.wikipedia.org/wiki/Saint_Vincent_and_the_Grenadines
+- [Serbia-Montenegro] verified — https://en.wikipedia.org/wiki/Serbia_and_Montenegro
+- [Somaliland] corrected: "but no country has formally recognised it" → "Israel recognised it in December 2025, the first UN member to do so" — article: Israel recognised Somaliland 26 Dec 2025 — https://en.wikipedia.org/wiki/Somaliland
+- [State of Libya] verified — https://en.wikipedia.org/wiki/Libya
+- [Turkmenistan] verified — https://en.wikipedia.org/wiki/Turkmenistan
+- [United Kingdom] verified; reworded only to remove a 7-word overlap with the article — https://en.wikipedia.org/wiki/United_Kingdom
+- [Czech Republic] corrected: "in what is called the Velvet Divorce" removed; "Bohemia and Moravia" → "Bohemia, Moravia and part of Silesia" — article's three historic lands — https://en.wikipedia.org/wiki/Czech_Republic
+- [Slovakia] verified — https://en.wikipedia.org/wiki/Slovakia
+- [State of Eritrea] verified — https://en.wikipedia.org/wiki/Eritrea
+- [Palau] reduced: "is known for its coral reefs and Jellyfish Lake" → "its Rock Islands are a World Heritage Site" — Jellyfish Lake not in article; free-association wording rephrased (overlap) — https://en.wikipedia.org/wiki/Palau
+- [Kosovo] verified — https://en.wikipedia.org/wiki/Kosovo
+- [East Timor] verified; reworded only to remove a 7-word overlap with the article — https://en.wikipedia.org/wiki/Timor-Leste
+- [Republic of Serbia] verified (Sava/Danube confluence confirmed at https://en.wikipedia.org/wiki/Belgrade) — https://en.wikipedia.org/wiki/Serbia
+- [South Sudan] verified; reworded only to remove a 7-word overlap with the article — https://en.wikipedia.org/wiki/South_Sudan
+
+Counts: notes read 114; verified unchanged 78; verified but reworded (overlap only) 8; corrected 20; reduced 8; capitals changed 2 (Equatorial Guinea, Eswatini), removed 0.
+Overlap rewordings also applied inside corrected notes: Republic of Benin, State of Kuwait, Somaliland, British Crown Dependencies, Palau.
+Doubtful / notes for reviewer: State of Kuwait and Libyan Arab Republic notes mention events after their map end years (1989, 1991) as endings, which is true but outside the drawn span. Cuban Communists is a 1958-59 rebel zone linked to the 1965 party article; the note explains this.
