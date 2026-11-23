@@ -1,0 +1,164 @@
+/* "Report an issue": the small flag button near the bottom of every page and the panel it opens (report.js).
+   Drawn in the atlas's own looks: "sage" (the home page's light look), "classic" (white and black: Earth history's light look and
+   the plain reading pages) and "midnight" (dark everywhere). report.js picks one and puts it on data-look. */
+.rp-fab, .rp-root {
+  --rp-surf: #fbfdfb; --rp-soft: #e4ece6; --rp-ink: #15211b; --rp-ink2: #2a3a31; --rp-ink3: #586860; --rp-hair: #d9e3dc; --rp-rule2: #c3cfc7;
+  --rp-kick: #c2482e; --rp-hot: #e5402a; --rp-btn: #1d5a45; --rp-btn-ink: #fff; --rp-ok: #1d5a45; --rp-err-bg: #fbeae6;
+  --rp-shadow: 0 10px 30px rgba(17, 17, 17, .14); --rp-float: 0 2px 10px rgba(17, 17, 17, .13); --rp-scrim: rgba(17, 17, 17, .3);
+  --rp-display: "Source Serif 4", Georgia, "Times New Roman", serif; --rp-sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  color-scheme: light;
+}
+.rp-fab[data-look="classic"], .rp-root[data-look="classic"] {
+  --rp-surf: #fff; --rp-soft: #f0f0ec; --rp-ink: #111; --rp-ink2: #2b2b28; --rp-ink3: #6b6b66; --rp-hair: #e3e3dd; --rp-rule2: #c9c9c4;
+  --rp-kick: #c8321e; --rp-btn: #111; --rp-btn-ink: #fff; --rp-ok: #1d5a45;
+}
+.rp-fab[data-look="midnight"], .rp-root[data-look="midnight"] {
+  --rp-surf: #191918; --rp-soft: #262624; --rp-ink: #f2f2ee; --rp-ink2: #d6d6d0; --rp-ink3: #9a9a93; --rp-hair: #2c2c29; --rp-rule2: #3a3a36;
+  --rp-kick: #ff6b55; --rp-hot: #ff5a43; --rp-btn: #f2f2ee; --rp-btn-ink: #121211; --rp-ok: #7fd1a8; --rp-err-bg: #3a1f1a;
+  --rp-shadow: 0 10px 30px rgba(0, 0, 0, .5); --rp-float: 0 2px 12px rgba(0, 0, 0, .45); --rp-scrim: rgba(0, 0, 0, .5);
+  color-scheme: dark;
+}
+
+/* ---- the button. report.js moves it (--rp-x, --rp-y) to the lowest free spot on the right, clear of the timeline, the sheets and the tabs */
+.rp-fab { position: fixed; z-index: 60; left: 0; top: 0; transform: translate(var(--rp-x, -200px), var(--rp-y, -200px)); width: 40px; height: 40px; display: grid; place-items: center;
+  margin: 0; padding: 0; border: 1px solid var(--rp-ink); border-radius: 50%; background: var(--rp-surf); color: var(--rp-ink); box-shadow: var(--rp-shadow); cursor: pointer;
+  -webkit-tap-highlight-color: transparent; transition: transform .25s cubic-bezier(.3, .7, .2, 1), opacity .2s ease, background-color .15s ease; font: 500 13px var(--rp-sans); }
+.rp-fab.rp-still { transition: opacity .2s ease, background-color .15s ease; } /* the first placement: no slide in from the corner */
+.rp-fab svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 1.9; stroke-linecap: round; stroke-linejoin: round; }
+.rp-fab:hover { background: var(--rp-soft); }
+.rp-fab:focus-visible { outline: 2px solid var(--rp-hot); outline-offset: 2px; }
+.rp-fab[data-hide] { opacity: 0; pointer-events: none; visibility: hidden; transition: opacity .15s ease, visibility 0s .15s; }
+.rp-fab[aria-expanded="true"] { opacity: 0; pointer-events: none; }
+.rp-fab .rp-tip { position: absolute; right: calc(100% + 8px); top: 50%; transform: translate(4px, -50%); padding: 5px 10px; border-radius: 8px; background: var(--rp-btn); color: var(--rp-btn-ink);
+  font: 600 12.5px/1.2 var(--rp-sans); white-space: nowrap; pointer-events: none; opacity: 0; transition: opacity .15s ease, transform .15s ease; }
+.rp-fab[data-tip="right"] .rp-tip { right: auto; left: calc(100% + 8px); transform: translate(-4px, -50%); }
+@media (hover: hover) { .rp-fab:hover .rp-tip { opacity: 1; transform: translate(0, -50%); } }
+.rp-fab:focus-visible .rp-tip { opacity: 1; transform: translate(0, -50%); }
+.rp-fab.rp-phone { width: 44px; height: 44px; border-color: var(--rp-hair); box-shadow: var(--rp-float); }
+.rp-fab.rp-phone .rp-tip { display: none; }
+.rp-fab.rp-plain { border-color: var(--rp-rule2); box-shadow: var(--rp-float); }
+
+/* ---- the panel: a card above the button on a wide screen, a sheet from the bottom on a phone */
+.rp-root { position: fixed; inset: 0; z-index: 1000; font: 15px/1.5 var(--rp-sans); color: var(--rp-ink); -webkit-font-smoothing: antialiased; }
+.rp-root[hidden] { display: none; }
+.rp-root *, .rp-root *::before, .rp-root *::after { box-sizing: border-box; }
+.rp-scrim { position: absolute; inset: 0; background: var(--rp-scrim); opacity: 0; transition: opacity .2s ease; }
+.rp-panel { position: absolute; right: var(--rp-pr, 24px); bottom: var(--rp-pb, 24px); width: min(410px, calc(100vw - 32px)); max-height: calc(100dvh - 32px); overflow-y: auto; overscroll-behavior: contain;
+  padding: 20px 22px 20px; border: 1px solid var(--rp-ink); border-radius: 14px; background: var(--rp-surf); box-shadow: var(--rp-shadow);
+  opacity: 0; transform: translateY(10px) scale(.97); transform-origin: var(--rp-origin, 100% 100%); transition: opacity .18s ease, transform .22s cubic-bezier(.3, .7, .2, 1); }
+.rp-root.rp-open .rp-scrim { opacity: 1; }
+.rp-root.rp-open .rp-panel { opacity: 1; transform: none; }
+.rp-grab { display: none; }
+
+.rp-head { position: relative; padding-right: 44px; }
+.rp-kick { margin: 0; font: 600 12px/16px var(--rp-sans); letter-spacing: .12em; text-transform: uppercase; color: var(--rp-kick); }
+.rp-title { margin: 4px 0 0; font: 800 23px/1.15 var(--rp-display); color: var(--rp-ink); }
+.rp-x { position: absolute; right: -6px; top: -6px; width: 40px; height: 40px; display: grid; place-items: center; padding: 0; border: 0; border-radius: 50%; background: var(--rp-soft); color: var(--rp-ink); cursor: pointer; }
+.rp-x svg { width: 15px; height: 15px; fill: none; stroke: currentColor; stroke-width: 2.2; stroke-linecap: round; }
+.rp-x:hover { background: var(--rp-hair); }
+.rp-root :focus-visible { outline: 2px solid var(--rp-hot); outline-offset: 2px; }
+
+.rp-form { margin: 0; }
+.rp-form fieldset { margin: 0; padding: 0; border: 0; min-width: 0; }
+.rp-form .rp-sec { margin-top: 16px; }
+.rp-form .rp-types { margin-top: 18px; }
+.rp-label, .rp-types legend { display: flex; align-items: baseline; gap: 8px; margin: 0 0 7px; padding: 0; font: 600 13.5px/1.3 var(--rp-sans); color: var(--rp-ink); }
+.rp-opt, .rp-req { font: 500 12px var(--rp-sans); color: var(--rp-ink3); }
+.rp-req { color: var(--rp-kick); }
+
+/* what kind of problem: four pills */
+.rp-chips { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+.rp-chip { position: relative; display: block; cursor: pointer; }
+.rp-chip input { position: absolute; opacity: 0; width: 1px; height: 1px; margin: 0; }
+.rp-chip span { display: flex; align-items: center; gap: 8px; min-height: 40px; padding: 7px 11px; border: 1px solid var(--rp-rule2); border-radius: 12px; background: var(--rp-surf);
+  font: 500 13px/1.25 var(--rp-sans); color: var(--rp-ink2); transition: background-color .12s ease, border-color .12s ease, color .12s ease; }
+.rp-chip svg { flex: none; width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.9; stroke-linecap: round; stroke-linejoin: round; }
+.rp-chip:hover span { border-color: var(--rp-ink); color: var(--rp-ink); }
+.rp-chip input:checked + span { border-color: var(--rp-btn); background: var(--rp-btn); color: var(--rp-btn-ink); font-weight: 600; }
+.rp-chip input:focus-visible + span { outline: 2px solid var(--rp-hot); outline-offset: 2px; }
+
+.rp-field { display: block; width: 100%; margin: 0; padding: 10px 12px; border: 1px solid var(--rp-rule2); border-radius: 12px; background: var(--rp-surf); color: var(--rp-ink);
+  font: 400 15px/1.45 var(--rp-sans); transition: border-color .12s ease, box-shadow .12s ease; }
+.rp-field::placeholder { color: var(--rp-ink3); opacity: .85; }
+.rp-field:hover { border-color: var(--rp-ink3); }
+.rp-field:focus { outline: none; border-color: var(--rp-ink); box-shadow: 0 0 0 3px color-mix(in srgb, var(--rp-btn) 22%, transparent); }
+.rp-field[aria-invalid="true"] { border-color: var(--rp-kick); }
+textarea.rp-field { min-height: 108px; max-height: 40dvh; resize: vertical; }
+input.rp-field { height: 44px; }
+.rp-under { display: flex; justify-content: space-between; gap: 12px; margin-top: 5px; font-size: 12.5px; line-height: 1.35; color: var(--rp-ink3); }
+.rp-count { flex: none; font-variant-numeric: tabular-nums; }
+.rp-count.rp-near { color: var(--rp-kick); }
+.rp-ferr { margin: 5px 0 0; font: 500 12.5px/1.35 var(--rp-sans); color: var(--rp-kick); }
+.rp-ferr[hidden] { display: none; }
+.rp-hint { margin: 5px 0 0; font-size: 12.5px; line-height: 1.35; color: var(--rp-ink3); }
+.rp-hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+
+/* what we'll include */
+.rp-ctx { margin-top: 16px; padding: 11px 13px 10px; border-radius: 12px; background: var(--rp-soft); }
+.rp-ctxtop { display: flex; align-items: center; gap: 8px; min-height: 24px; }
+.rp-ctxk { flex: 1; font: 600 11px/1.3 var(--rp-sans); letter-spacing: .1em; text-transform: uppercase; color: var(--rp-ink3); }
+.rp-link { position: relative; padding: 0; border: 0; background: none; font: 600 12.5px var(--rp-sans); color: var(--rp-ink); text-decoration: underline; text-decoration-color: var(--rp-kick); text-underline-offset: 3px; cursor: pointer; }
+.rp-link::before { content: ""; position: absolute; inset: -12px -8px; } /* 44 px to tap */
+.rp-sum { margin: 3px 0 0; font: 700 14px/1.35 var(--rp-sans); color: var(--rp-ink); overflow-wrap: anywhere; }
+.rp-ctx details { margin-top: 6px; }
+.rp-ctx summary { display: inline-flex; align-items: center; gap: 5px; min-height: 28px; font: 500 12.5px var(--rp-sans); color: var(--rp-ink2); cursor: pointer; list-style: none; }
+.rp-ctx summary::-webkit-details-marker { display: none; }
+.rp-ctx summary svg { width: 12px; height: 12px; fill: none; stroke: currentColor; stroke-width: 2.4; transition: transform .15s ease; }
+.rp-ctx details[open] summary svg { transform: rotate(90deg); }
+.rp-ctx dl { display: grid; grid-template-columns: auto 1fr; gap: 3px 12px; margin: 6px 0 2px; font-size: 12.5px; line-height: 1.4; }
+.rp-ctx dt { color: var(--rp-ink3); white-space: nowrap; }
+.rp-ctx dd { margin: 0; color: var(--rp-ink2); overflow-wrap: anywhere; }
+.rp-ctx.rp-off .rp-sum { font-weight: 500; color: var(--rp-ink3); }
+
+/* sending, and when it fails */
+.rp-alert { display: flex; gap: 10px; margin: 14px 0 0; padding: 11px 13px; border: 1px solid color-mix(in srgb, var(--rp-kick) 45%, transparent); border-radius: 12px; background: var(--rp-err-bg); font-size: 13.5px; line-height: 1.4; color: var(--rp-ink); }
+.rp-alert[hidden] { display: none; }
+.rp-alert svg { flex: none; width: 18px; height: 18px; margin-top: 1px; fill: none; stroke: var(--rp-kick); stroke-width: 2; stroke-linecap: round; }
+.rp-alert b { display: block; font-weight: 700; }
+.rp-alert .rp-link { margin-top: 4px; }
+.rp-actions { display: flex; align-items: center; gap: 12px; margin-top: 18px; }
+.rp-send { position: relative; flex: 1; height: 46px; display: inline-flex; align-items: center; justify-content: center; gap: 9px; padding: 0 20px; border: 0; border-radius: 23px;
+  background: var(--rp-btn); color: var(--rp-btn-ink); font: 600 15px var(--rp-sans); cursor: pointer; transition: opacity .15s ease; }
+.rp-send:hover { opacity: .9; }
+.rp-send:disabled { cursor: progress; opacity: .8; }
+.rp-spin { display: none; width: 16px; height: 16px; border: 2px solid currentColor; border-right-color: transparent; border-radius: 50%; animation: rp-spin .7s linear infinite; }
+.rp-form[aria-busy="true"] .rp-spin { display: inline-block; }
+@keyframes rp-spin { to { transform: rotate(360deg); } }
+.rp-privacy { margin: 10px 0 0; font-size: 12px; line-height: 1.4; color: var(--rp-ink3); text-align: center; }
+
+/* thank you */
+.rp-done { padding: 14px 0 2px; text-align: center; }
+.rp-done[hidden] { display: none; }
+.rp-done:focus { outline: none; }
+.rp-check { width: 56px; height: 56px; margin: 4px auto 12px; display: grid; place-items: center; border-radius: 50%; background: var(--rp-btn); color: var(--rp-btn-ink); }
+.rp-check svg { width: 26px; height: 26px; fill: none; stroke: currentColor; stroke-width: 2.6; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 30; stroke-dashoffset: 30; }
+.rp-done:not([hidden]) .rp-check { animation: rp-pop .35s cubic-bezier(.3, 1.5, .5, 1) both; }
+.rp-done:not([hidden]) .rp-check svg { animation: rp-draw .35s .15s ease-out forwards; }
+@keyframes rp-pop { from { transform: scale(.6); opacity: 0; } }
+@keyframes rp-draw { to { stroke-dashoffset: 0; } }
+.rp-done h3 { margin: 0; font: 800 24px/1.15 var(--rp-display); color: var(--rp-ink); }
+.rp-done p { margin: 8px auto 0; max-width: 32ch; font-size: 14.5px; line-height: 1.5; color: var(--rp-ink2); }
+.rp-done .rp-actions { flex-direction: column; gap: 4px; }
+.rp-done .rp-send { width: 100%; flex: none; }
+.rp-ghost { height: 44px; padding: 0 16px; border: 0; border-radius: 22px; background: none; font: 600 14px var(--rp-sans); color: var(--rp-ink); cursor: pointer; }
+.rp-ghost:hover { background: var(--rp-soft); }
+
+/* a phone: a sheet from the bottom, the whole width, clear of the home indicator */
+.rp-root.rp-sheet .rp-panel { left: 0; right: 0; bottom: 0; width: auto; max-height: calc(100dvh - 12px - env(safe-area-inset-top)); padding: 10px 20px calc(18px + env(safe-area-inset-bottom));
+  border: 0; border-radius: 28px 28px 0 0; box-shadow: 0 -8px 30px rgba(17, 17, 17, .18); transform: translateY(104%); transition: transform .3s cubic-bezier(.3, .7, .2, 1), opacity .15s ease; opacity: 1; }
+.rp-root.rp-sheet.rp-open .rp-panel { transform: none; }
+.rp-root.rp-sheet .rp-grab { display: block; width: 36px; height: 4px; margin: 0 auto 12px; border-radius: 2px; background: var(--rp-rule2); }
+.rp-root.rp-sheet .rp-x { top: -4px; right: -4px; width: 44px; height: 44px; }
+.rp-root.rp-sheet .rp-chip span { min-height: 44px; }
+.rp-root.rp-sheet .rp-send { height: 50px; border-radius: 25px; }
+.rp-root.rp-sheet .rp-field { font-size: 16px; } /* 16 px: iOS does not zoom into the field */
+@media (max-width: 360px) { .rp-chips { grid-template-columns: 1fr; } }
+
+@media (prefers-reduced-motion: reduce) {
+  .rp-fab, .rp-scrim, .rp-panel, .rp-root.rp-sheet .rp-panel, .rp-fab .rp-tip { transition: none !important; }
+  .rp-done .rp-check, .rp-done .rp-check svg { animation: none !important; stroke-dashoffset: 0; }
+}
+/* the plain reading pages: room at the end so the button never sits on the footer's last line */
+html[data-rp-page="plain"] body { padding-bottom: 76px; }
+@media print { .rp-fab, .rp-root { display: none !important; } }
+.rp-panel:focus { outline: none; }

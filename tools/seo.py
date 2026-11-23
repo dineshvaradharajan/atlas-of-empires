@@ -152,6 +152,7 @@ def page(path, title, description, body, crumbs=(), image=None, image_alt="", js
 <meta name="theme-color" content="#ffffff">
 <link rel="stylesheet" href="/fonts/fonts-pages.css">
 <link rel="stylesheet" href="/pages.css">
+<link rel="stylesheet" href="/report/report.css">
 <script type="application/ld+json">{json.dumps(ld if len(ld) > 1 else ld[0], ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")}</script>
 </head>
 <body>
@@ -161,6 +162,7 @@ def page(path, title, description, body, crumbs=(), image=None, image_alt="", js
 {body}
 </main>
 <footer class="foot"><p><a href="/">{NAME}</a>: an interactive map of world history from 10,000 BCE to today. Made by {AUTHOR}, inspired by <a href="https://www.bharatrajya.com/">Bharat Rajya</a>. <a href="/about/">About, sources and credits</a>.</p><nav aria-label="Browse">{nav}</nav></footer>
+<script src="/report/report.js" data-page="plain" defer></script>
 </body>
 </html>
 """

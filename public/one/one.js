@@ -673,3 +673,34 @@ async function init() {
   document.fonts?.ready.then(() => syncChrome()); // the brand is wider once its font is in
 }
 init().catch((e) => { console.error(e); document.body.insertAdjacentHTML("beforeend", '<p style="position:fixed;left:24px;bottom:130px;z-index:9">The prototype could not start. See the console.</p>'); });
+
+// "Report an issue" (report/report.js) asks what the reader is looking at, so each report says where it came from: on the Earth's
+// side the time, the period, a turning point or a moment's chapter; in history what World history in the frame is showing.
+window.atlasReportContext = () => {
+  const app = $("#app"), phone = matchMedia("(max-width: 760px)").matches, txt = (s) => (document.querySelector(s)?.textContent || "").trim();
+  const r = { section: txt(phone ? "#ptabs [aria-current]" : '#tabs [aria-current="page"]') };
+  if (S.mode === "deep") {
+    r.page = "The Earth";
+    r.time = phone ? `${txt("#pNum")} ${txt("#pUnit")}` : `${txt("#ageNum")} ${txt("#ageUnit")}`;
+    r.period = leaves.length ? unitAt(S.ma)?.name || "" : "";
+    const turn = phone ? $("#pTurn") : $("#turn");
+    if (turn && !turn.hidden) r.focus = (turn.querySelector("b")?.textContent || "").trim();
+    if (ST) { const n = ST.story.chapters.length, ch = ST.story.chapters[ST.i]; r.story = ST.story.title; r.chapter = `${ST.i + 1} of ${n}${ch?.title ? ": " + ch.title : ""}`; }
+    if (app.dataset.list) r.view = "Stories list";
+    r.map = S.flat ? "Flat map" : "Globe";
+    return r;
+  }
+  r.page = "World history";
+  let A = null; try { A = histWin().__atlas; } catch (e) {}
+  if (!A) return r;
+  const clean = (n) => String(n || "").replace(/^\((.*)\)$/, "$1");
+  if (A.year != null) r.year = A.year < 0 ? `${-A.year} BCE` : `${A.year}`;
+  r.focus = A.war ? A.war.name : A.journey ? A.journey.name : A.view === "moment" && A.moment ? A.moment.title : A.view === "site" && A.site ? A.site.name
+    : A.view === "place" && A.place ? A.place.name || `Place at ${A.place.ll.map((v) => v.toFixed(2)).join(", ")}` : A.sel ? clean(A.sel) : "";
+  const chs = A.war && A.cine?.chapters;
+  if (chs?.length && A.chap != null && chs[A.chap]) r.chapter = `${A.chap + 1} of ${chs.length}: ${chs[A.chap].title}`;
+  r.view = { world: "Map", realm: "Realm", today: "Today in history", wars: "Wars list", empires: "Empires list", moments: "Moments list", sources: "About and sources",
+    war: "War", journey: "Empire story", moment: "Moment", site: "Ancient site", place: "Place" }[A.view] || A.view || "";
+  r.map = app.dataset.app || S.flat ? "Flat map" : "Globe";
+  return r;
+};

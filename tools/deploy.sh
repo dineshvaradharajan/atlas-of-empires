@@ -8,7 +8,7 @@ cd "$(dirname "$0")/.."
 sh tools/vendor.sh check # the trimmed map library (public/vendor/) has every d3 name the scripts use, or nothing is deployed
 V=$(git rev-parse --short HEAD)
 D=$(mktemp -d)
-git archive HEAD public tools/seo.py tools/compact.py | tar -x -C "$D"
+git archive HEAD public functions tools/seo.py tools/compact.py | tar -x -C "$D" # functions/: the server side (POST /api/report)
 python3 -I "$D/tools/seo.py" --public "$D/public"
 python3 -I "$D/tools/compact.py" --public "$D/public" # border files and base maps in packed form (about half the download)
 # World history (public/world.html, the frame inside the home page): the version on its script, styles and data requests
@@ -49,6 +49,7 @@ grep -q "data-version" "$D/public/index.html"
 grep -q "data-version" "$D/public/world.html"
 grep -q "data-version" "$D/public/earth-history/index.html"
 test -f "$D/public/sitemap.xml" && test -f "$D/public/404.html"
-wrangler pages deploy "$D/public" --project-name=worldatlas --branch=main --commit-dirty=true
+# from the export, so wrangler takes the committed functions/ (Pages Functions) alongside public/
+(cd "$D" && wrangler pages deploy public --project-name=worldatlas --branch=main --commit-dirty=true)
 rm -rf "$D"
 echo "Deployed release $V"

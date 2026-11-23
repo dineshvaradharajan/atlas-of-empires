@@ -862,3 +862,13 @@ async function init() {
   requestAnimationFrame(frame);
 }
 init();
+
+// "Report an issue" (../report/report.js) asks what the reader is looking at, so each report says where it came from
+window.atlasReportContext = () => {
+  const it = S.sel?.item, r = { page: "Earth history", time: ageText(S.ma), period: leaves.length ? unitAt(S.ma)?.name || "" : "" };
+  if (it) r.focus = it.title || it.name || "";
+  if (ST) { const n = ST.story.chapters.length, ch = ST.story.chapters[ST.i]; r.story = ST.story.title; r.chapter = `${ST.i + 1} of ${n}${ch?.title ? ": " + ch.title : ""}`; }
+  r.view = S.life ? "Life through time" : document.querySelector("#app")?.dataset.records ? `Climate records: ${S.curve}` : "Globe";
+  r.map = LIGHT ? "Atlas look" : "Space look";
+  return r;
+};

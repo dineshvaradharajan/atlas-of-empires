@@ -39,3 +39,6 @@ data/chgis/
 data/prehistory/
 # Build environment for tools/paleo.py (numpy, netCDF4): python3 -m venv .venv-paleo && .venv-paleo/bin/pip install numpy netCDF4
 .venv-paleo/
+
+# wrangler pages dev (trying functions/ locally) keeps its cache here
+.wrangler/
