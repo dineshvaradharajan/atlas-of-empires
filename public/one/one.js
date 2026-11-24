@@ -7,6 +7,18 @@
    the sphere, through an "unbent" sphere, to its place on the flat map. Ages are in millions of years ago (Ma); history is in years. */
 "use strict";
 const REL = document.querySelector('meta[name="data-version"]')?.content, VQ = REL ? "?v=" + REL : ""; // the release, on every data request (they are cached for a year)
+// Every response of a release names it (X-Release, which tools/deploy.sh adds to _headers). A deploy takes a minute to reach
+// every Cloudflare server, and meanwhile a request for ?v=<new> can be answered by the old release, which the browser would then
+// keep for a year (the cards lost every profile that way once). Such an answer is fetched again past the browser's cache, a few
+// times over a few seconds, then taken as it is. Locally there is no release, so nothing is checked.
+async function relFetch(url, rel) {
+  let r = await fetch(url);
+  for (let i = 0; rel && r.ok && r.headers.get("x-release") !== rel && i < 3; i++) {
+    if (i) await new Promise((ok) => setTimeout(ok, 1500 * i));
+    r = await fetch(url, { cache: "reload" });
+  }
+  return r;
+}
 const $ = (q) => document.querySelector(q), clamp = (v, a, b) => Math.max(a, Math.min(b, v)), RAD = Math.PI / 180;
 const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 const OLDEST = 4567, MAPPED = 540, NOW_YEAR = 2026, Y0 = -10000, JOIN = (NOW_YEAR - Y0) / 1e6; // the join: 10,000 BCE, 12,026 years ago
@@ -136,7 +148,7 @@ const tex = new Map();
 function want(ma) {
   let o = tex.get(ma); if (o) return o;
   o = { ready: false, ma }; tex.set(ma, o);
-  fetch(`data/paleo/${ma}.webp${VQ}`).then((r) => { if (!r.ok) throw new Error(r.status); return r.blob(); })
+  relFetch(`data/paleo/${ma}.webp${VQ}`, REL).then((r) => { if (!r.ok) throw new Error(r.status); return r.blob(); })
     .then((b) => createImageBitmap(b, { colorSpaceConversion: "none", premultiplyAlpha: "none" }))
     .then((bmp) => {
       o.t = gl.createTexture(); gl.bindTexture(gl.TEXTURE_2D, o.t);
@@ -664,7 +676,7 @@ function wire() {
 }
 async function init() {
   glInit();
-  D = await (await fetch("data/earth-history.json" + VQ)).json();
+  D = await (await relFetch("data/earth-history.json" + VQ, REL)).json();
   for (const u of D.units) byUnit[u.id] = u;
   const hasKids = new Set(D.units.map((u) => u.parent));
   leaves = D.units.filter((u) => !hasKids.has(u.id)).sort((a, b) => b.from - a.from);

@@ -218,7 +218,19 @@ function readTheme() {
 // every data file for a year and a new release is never served stale. Locally there is no stamp and nothing is added.
 const DATA_V = document.querySelector('meta[name="data-version"]')?.content || "";
 const V = (url) => (DATA_V ? `${url}${url.includes("?") ? "&" : "?"}v=${DATA_V}` : url);
-async function fetchJSON(url) { const r = await fetch(V(url)); if (!r.ok) throw new Error(`${r.status} ${url}`); return r.json(); }
+// Every response of a release names it (X-Release, which tools/deploy.sh adds to _headers). A deploy takes a minute to reach
+// every Cloudflare server, and meanwhile a request for ?v=<new> can be answered by the old release, which the browser would then
+// keep for a year (the cards lost every profile that way once). Such an answer is fetched again past the browser's cache, a few
+// times over a few seconds, then taken as it is. Locally there is no release, so nothing is checked.
+async function relFetch(url, rel) {
+  let r = await fetch(url);
+  for (let i = 0; rel && r.ok && r.headers.get("x-release") !== rel && i < 3; i++) {
+    if (i) await new Promise((ok) => setTimeout(ok, 1500 * i));
+    r = await fetch(url, { cache: "reload" });
+  }
+  return r;
+}
+async function fetchJSON(url) { const r = await relFetch(V(url), DATA_V); if (!r.ok) throw new Error(`${r.status} ${url}`); return r.json(); }
 // Loaded files are kept for reuse, but a cache with `max` keeps only the most recently used ones: jumping around in time
 // used to keep every border file and base map (and their GPU shapes) for the whole visit, until the tab ran out of memory.
 function memo(map, key, url, post = (x) => x, max = 0) {
@@ -272,7 +284,9 @@ ${unpackGeo.toString()}
 const kept = new Map(), ready = new Map();
 const flipsOf = (fc) => { const out = []; let i = 0; for (const f of fc.features) for (const poly of f.geometry.coordinates) { if (ringArea(poly[0]) > 2 * Math.PI) out.push(i); i++; } return out; };
 const rewind = (fc) => { const fl = new Set(flipsOf(fc)); let i = 0; for (const f of fc.features) for (const poly of f.geometry.coordinates) { if (fl.has(i)) poly.forEach((r) => r.reverse()); i++; } return fc; };
-const text = (url) => fetch(url).then((r) => { if (!r.ok) throw new Error(r.status + " " + url); return r.arrayBuffer(); });
+${relFetch.toString()}
+const REL = ${JSON.stringify(DATA_V)};
+const text = (url) => relFetch(url, REL).then((r) => { if (!r.ok) throw new Error(r.status + " " + url); return r.arrayBuffer(); });
 onmessage = async (e) => {
   const { id, op, url, key, year } = e.data;
   try {

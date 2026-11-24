@@ -13,6 +13,18 @@ let LIGHT = (() => { let v = new URLSearchParams(location.search).get("view"); t
 document.body.classList.toggle("light", LIGHT);
 // the release, stamped on the page by tools/deploy.sh: data files are cached for a year, so every request names it
 const REL = document.querySelector('meta[name="data-version"]')?.content, VQ = REL ? "?v=" + REL : "";
+// Every response of a release names it (X-Release, which tools/deploy.sh adds to _headers). A deploy takes a minute to reach
+// every Cloudflare server, and meanwhile a request for ?v=<new> can be answered by the old release, which the browser would then
+// keep for a year (the cards lost every profile that way once). Such an answer is fetched again past the browser's cache, a few
+// times over a few seconds, then taken as it is. Locally there is no release, so nothing is checked.
+async function relFetch(url, rel) {
+  let r = await fetch(url);
+  for (let i = 0; rel && r.ok && r.headers.get("x-release") !== rel && i < 3; i++) {
+    if (i) await new Promise((ok) => setTimeout(ok, 1500 * i));
+    r = await fetch(url, { cache: "reload" });
+  }
+  return r;
+}
 const ROOT = "../";
 
 // ---------------------------------------------------------------- the time scale
@@ -148,7 +160,7 @@ const tex = new Map(); // Ma -> {t, ready}
 function want(ma) {
   let o = tex.get(ma); if (o) return o;
   o = { ready: false, ma }; tex.set(ma, o);
-  fetch(`${ROOT}data/paleo/${ma}.webp${VQ}`).then((r) => { if (!r.ok) throw new Error(r.status); return r.blob(); })
+  relFetch(`${ROOT}data/paleo/${ma}.webp${VQ}`, REL).then((r) => { if (!r.ok) throw new Error(r.status); return r.blob(); })
     .then((b) => createImageBitmap(b, { colorSpaceConversion: "none", premultiplyAlpha: "none" }))
     .then((bmp) => {
       o.t = gl.createTexture(); gl.bindTexture(gl.TEXTURE_2D, o.t);
@@ -847,7 +859,7 @@ function wire() {
 async function init() {
   try { glInit(); } catch (err) { $("#loading").textContent = "This page needs WebGL to draw the globe, and your browser did not start it."; console.error(err); return; }
   { const h0 = parseFloat(location.hash.slice(1)); if (h0 >= 0 && h0 <= MAPPED + 20) { const a = Math.floor(Math.min(h0, MAPPED) / 5) * 5; want(a); want(Math.min(a + 5, MAPPED)); } }
-  D = await (await fetch(ROOT + "data/earth-history.json" + VQ)).json();
+  D = await (await relFetch(ROOT + "data/earth-history.json" + VQ, REL)).json();
   for (const u of D.units) byId[u.id] = u;
   const hasKids = new Set(D.units.map((u) => u.parent));
   leaves = D.units.filter((u) => !hasKids.has(u.id)).sort((a, b) => b.from - a.from);

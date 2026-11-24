@@ -1,5 +1,5 @@
 #!/bin/sh
-# Deploy the committed site to Cloudflare Pages (project "worldatlas" -> www.worldatlas.site).
+# Deploy the committed site to Cloudflare Pages (project "worldatlas" -> www.worldatlas.site). --dry-run builds the export only.
 # Exports HEAD (never uncommitted work), stamps the release version on index.html so app.js, style.css and
 # every data request carry ?v=<commit>, which lets browsers and the edge cache them for a year (public/_headers),
 # preloads the two data files the map needs first, writes the crawlable pages, sitemaps and llms.txt (tools/seo.py), and packs the map files (tools/compact.py).
@@ -11,6 +11,16 @@ D=$(mktemp -d)
 git archive HEAD public functions tools/seo.py tools/compact.py | tar -x -C "$D" # functions/: the server side (POST /api/report)
 python3 -I "$D/tools/seo.py" --public "$D/public"
 python3 -I "$D/tools/compact.py" --public "$D/public" # border files and base maps in packed form (about half the download)
+# Every response names its release (X-Release): a deploy takes a minute to reach every Cloudflare server, and a page loaded
+# meanwhile can be given the old release's files under the new ?v=, which browsers keep for a year. The pages check the stamp and
+# fetch such a file again (relFetch in app.js, one.js and earth.js; public/release.js for scripts and styles).
+python3 -I - "$D/public/_headers" "$V" <<'PY'
+import sys
+p, v = sys.argv[1], sys.argv[2]
+s = open(p).read()
+assert s.startswith("/*\n"), "_headers: expected the /* block first"
+open(p, "w").write(f"/*\n  X-Release: {v}\n" + s[3:])
+PY
 # World history (public/world.html, the frame inside the home page): the version on its script, styles and data requests
 python3 -I - "$D/public/world.html" "$V" <<'PY'
 import sys
@@ -49,6 +59,7 @@ grep -q "data-version" "$D/public/index.html"
 grep -q "data-version" "$D/public/world.html"
 grep -q "data-version" "$D/public/earth-history/index.html"
 test -f "$D/public/sitemap.xml" && test -f "$D/public/404.html"
+if [ "$1" = "--dry-run" ]; then echo "Built release $V in $D/public (not deployed)"; exit 0; fi # to look at or serve the export first
 # from the export, so wrangler takes the committed functions/ (Pages Functions) alongside public/
 (cd "$D" && wrangler pages deploy public --project-name=worldatlas --branch=main --commit-dirty=true)
 rm -rf "$D"
