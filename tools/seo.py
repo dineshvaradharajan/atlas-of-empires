@@ -15,6 +15,7 @@ committed (see .gitignore): tools/deploy.sh runs this on the exported release, a
 """
 import datetime
 import argparse
+import hashlib
 import html
 import json
 import math
@@ -407,7 +408,9 @@ def main():
     C["wars"] = [story_whole("w", w) for w in C["wars"]]; C["journeys"] = [story_whole("e", j) for j in C["journeys"]]
     empires, wars, moments, journeys, eras = C["empires"], C["wars"], C["moments"], C["journeys"], C["eras"]
     def og_image(sec, id_):  # the share picture tools/og.mjs drew for this page (the map at that view, with a caption card), if there is one
-        return f"{SITE}/og/{sec}/{id_}.jpg" if os.path.exists(os.path.join(P, "og", sec, f"{id_}.jpg")) else None
+        # with a fingerprint of the file: pictures are kept for a day under their address (public/_headers), and a redrawn one must show at once
+        f = os.path.join(P, "og", sec, f"{id_}.jpg")
+        return f"{SITE}/og/{sec}/{id_}.jpg?v={hashlib.md5(open(f, 'rb').read()).hexdigest()[:8]}" if os.path.exists(f) else None
     eras = sorted(eras, key=lambda e: e["year"])
     moments = sorted(moments, key=lambda m: (m["year"], m["title"]))
     sites = sorted(sites, key=lambda s: (s["built"] if s["built"] is not None else PRESENT, s["name"]))

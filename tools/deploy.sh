@@ -47,13 +47,24 @@ open(p, "w").write(s)
 PY
 # Earth history (public/earth-history/): the same version on its page, its scripts and styles; earth.js adds it to every data request
 python3 -I - "$D/public/earth-history/index.html" "$V" <<'PY'
-import sys
+import hashlib, sys
 p, v = sys.argv[1], sys.argv[2]
 s = open(p).read()
 for f in ("earth.js", "earth.css", "atlas.css"): s = s.replace(f'"{f}"', f'"{f}?v={v}"')
+pic = p.replace("earth-history/index.html", "og/earth/earth-history.jpg") # its share picture, with the file's fingerprint as tools/seo.py gives the others
+s = s.replace("/og/earth/earth-history.jpg", "/og/earth/earth-history.jpg?v=" + hashlib.md5(open(pic, "rb").read()).hexdigest()[:8])
 s = s.replace('"../fonts/fonts-earth.css"', f'"../fonts/fonts-earth.css?v={v}"')
 s = s.replace('<meta charset="utf-8">', f'<meta charset="utf-8">\n<meta name="data-version" content="{v}">', 1)
 open(p, "w").write(s)
+PY
+# The share dialog (share.js, share.css), on all three pages
+python3 -I - "$V" "$D/public/index.html" "$D/public/world.html" "$D/public/earth-history/index.html" <<'PY'
+import sys
+v = sys.argv[1]
+for p in sys.argv[2:]:
+    s = open(p).read()
+    if 'share.js"' not in s or 'share.css"' not in s: sys.exit(f"{p}: expected share.js and share.css")
+    open(p, "w").write(s.replace('share.js"', f'share.js?v={v}"').replace('share.css"', f'share.css?v={v}"'))
 PY
 grep -q "data-version" "$D/public/index.html"
 grep -q "data-version" "$D/public/world.html"

@@ -41,7 +41,9 @@ window.atlasShare = async function (sp, opener) {
   q('[data-sh="whatsapp"]').href = `https://wa.me/?text=${e(`${text} ${url}`)}`;
   // The picture is fetched now, not on the tap: a phone opens its share sheet only straight after one.
   const load = async (src) => { const r = await fetch(src); if (!r.ok || !/^image/.test(r.headers.get("content-type") || "")) throw new Error("no picture"); return r.blob(); };
-  (sp.pic ? load(`/og/${sp.pic}.jpg`).catch(() => load("/og.png")) : load("/og.png")).then((b) => {
+  // Its address is the one the shared page names (with the fingerprint of the file, so a redrawn picture is never an old copy).
+  const named = async () => { const h = await (await fetch(`/${sp.path}`)).text(), u = new URL(h.match(/<meta property="og:image" content="([^"]+)"/)[1].replace(/&amp;/g, "&")); if (!u.pathname.startsWith("/og/")) throw new Error("not ours"); return load(u.pathname + u.search); };
+  (sp.pic ? named().catch(() => load(`/og/${sp.pic}.jpg`)).catch(() => load("/og.png")) : load("/og.png")).then((b) => {
     if (!D.isConnected) return;
     file = new File([b], `${(sp.pic || "the-world-atlas").split("/").pop()}.${b.type === "image/png" ? "png" : "jpg"}`, { type: b.type });
     pic = URL.createObjectURL(b); q("figure img").src = pic; q("figure img").alt = `The picture shown with the link: ${sp.title}`;
