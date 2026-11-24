@@ -1831,6 +1831,7 @@ function drawGL() {
   ctx.translate(t.x, t.y); ctx.scale(t.k, t.k);
   ctx.lineJoin = "round";
   if (S.detail) strokeCoast();
+  if (S.ogTop?.length) { ctx.save(); if (S.detail) ctx.clip(S.detail.land); ctx.fillStyle = theme.highlight; for (const it of S.ogTop) { ctx.save(); if (it.p.recon || it.p.crop || it.p.cut) clipFor(ctx, it); ctx.fill(pathOf(it.f)); ctx.restore(); } ctx.restore(); } // share pictures only (atlasSelBox)
   drawWater();
   drawIce();
   drawDisputed();
@@ -2118,6 +2119,13 @@ window.atlasSelBox = () => {
   let fs = key ? activeFeats(key) : [];
   if (!fs.length && key) fs = S.states.filter(({ properties: p }) => realm(p.n)?.memberOf?.includes(key) || two.includes(clean(p.n)) || two.includes(clean(p.k)));
   S.ogFill = new Set(fs.map((f) => f.properties)); scheduleDraw();
+  // covered: a shape painted later (corrected ones are painted last) and at least half as large lies over its main part. Such a
+  // realm is painted again on top (drawGL); a small vassal drawn inside it is not a cover.
+  const late = (p) => !!(p.recon || p.crop || p.cut), at = new Map(S.items.map((it, i) => [it.p, i]));
+  S.ogTop = S.items.filter((it) => it.kind === "state" && S.ogFill.has(it.p)).filter((it) => {
+    const g = it.f.geometry, polys = (g.type === "Polygon" ? [g.coordinates] : g.coordinates).map((c) => ({ type: "Polygon", coordinates: c })), main = polys.sort((a, b) => d3.geoArea(b) - d3.geoArea(a))[0], c = d3.geoCentroid(main);
+    return S.items.some((o) => o.kind === "state" && o !== it && !S.ogFill.has(o.p) && o.p.a >= it.p.a / 2 && (late(o.p) !== late(it.p) ? late(o.p) : at.get(o.p) > at.get(it.p)) && d3.geoContains(o.f, c));
+  });
   const parts = []; for (const f of fs) for (const poly of f.geometry.type === "Polygon" ? [f.geometry.coordinates] : f.geometry.coordinates) { const g = { type: "Polygon", coordinates: poly }; parts.push({ g, a: d3.geoArea(g) }); }
   const big = Math.max(0, ...parts.map((p) => p.a)), main = parts.filter((p) => p.a >= big * 0.02).map((p) => p.g.coordinates);
   if (!main.length) return null;
