@@ -26,6 +26,7 @@
 <link rel="stylesheet" href="earth.css">
 <link rel="stylesheet" href="atlas.css">
 <link rel="stylesheet" href="../report/report.css">
+<link rel="stylesheet" href="../share.css">
 <script src="../release.js" defer></script>
 </head>
 <body>
@@ -46,7 +47,7 @@
   </header>
 
   <section id="now" aria-live="polite">
-    <div class="kicker" id="nowKick">The Earth</div>
+    <div class="nowhead"><div class="kicker" id="nowKick">The Earth</div><button type="button" class="hshare" id="nowShare" aria-label="Share this time"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7 8l5-5 5 5"/><path d="M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg></button></div>
     <div class="age"><b id="ageNum"></b><span id="ageUnit"></span></div>
     <h1 id="unitName"></h1>
     <p id="unitLine" class="line"></p>
@@ -171,6 +172,7 @@
   <div id="loading">Loading the Earth…</div>
 </div>
 <noscript><p style="padding:24px;font:16px system-ui">This page draws a globe of the ancient Earth and needs JavaScript. <a href="../">Back to The World Atlas</a>.</p></noscript>
+<script src="../share.js"></script>
 <script src="earth.js"></script>
 <script src="../report/report.js" data-page="earth" defer></script>
 </body>

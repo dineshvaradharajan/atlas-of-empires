@@ -397,6 +397,14 @@ function imStep(d) { // earlier or later time (a story: chapter)
 function imPlayIcon() { $("#imPlayIcon").setAttribute("d", IM.auto ? "M7 5h4v14H7zM13 5h4v14h-4z" : "M8 5v14l11-7z"); $("#imPlay").setAttribute("aria-label", IM.auto ? "Pause the slideshow" : "Play the slideshow"); }
 
 // ---------------------------------------------------------------- stories: one thread of the Earth's history in chapters
+// Share (../share.js): the plain page of the story or of the period the reader is in, each with its own picture (tools/seo.py);
+// the last 12,000 years have no period page, so there this page itself.
+function share(opener) {
+  const u = unitAt(S.ma);
+  atlasShare(ST ? { path: `earth/stories/${ST.story.id}/`, pic: `earth/story-${ST.story.id}`, title: ST.story.title }
+    : u.id === "holocene" ? { path: "earth-history/", pic: "earth/earth-history", title: "Earth history" }
+    : { path: `earth/${u.id}/`, pic: `earth/${u.id}`, title: `The Earth in the ${u.name}` }, opener);
+}
 let ST = null; // { story, i, t }
 function storyCards() {
   const S2 = D.stories || [];
@@ -482,6 +490,7 @@ function renderStory() {
   const refs = (c.refs || []).map((r) => { const [t, id] = r.split(":"), it = t === "e" ? D.events.find((e) => e.id === id) : D.origins.find((o) => o.id === id); return it ? { t: t === "e" ? "event" : "origin", it } : null; }).filter(Boolean);
   $("#story").innerHTML = `<button type="button" class="x" data-act="end" aria-label="Leave this moment">${'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>'}</button>
     <p class="skick">${esc(s.title)}<span>Chapter ${ST.i + 1} of ${n}</span></p>
+    <button type="button" class="hshare" data-act="share" aria-label="Share this story"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7 8l5-5 5 5"/><path d="M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg></button>
     <div class="sprog"><i style="width:${(ST.i + 1) / n * 100}%"></i></div>
     <h1>${esc(c.title)}</h1>
     <p class="swhen">${esc(c.dateLabel || ageText(c.ma))}${c.place ? `. ${esc(c.place)}` : ""}</p>
@@ -828,7 +837,8 @@ function wire() {
   $("#storiesBtn").addEventListener("click", openStories); $("#storiesTab").addEventListener("click", openStories);
   $("#storyList").addEventListener("click", (e) => { const c = e.target.closest("[data-s]"), f = e.target.closest("[data-f]"), fx = e.target.closest("[data-fx]");
     if (f) forceShow(+f.dataset.f); else if (fx) forceGo(+fx.dataset.fx); else if (c) storyStart(c.dataset.s); else if (e.target.id === "storyList" || e.target.closest("#storyListClose")) $("#storyList").hidden = true; });
-  $("#story").addEventListener("click", (e) => { const a = e.target.closest("[data-act]"), r = e.target.closest("[data-ref]");
+  $("#nowShare").addEventListener("click", (e) => share(e.currentTarget));
+  $("#story").addEventListener("click", (e) => { const a = e.target.closest("[data-act]"), r = e.target.closest("[data-ref]"); if (a?.dataset.act === "share") return share(a);
     if (r) { const x = storyRefs[+r.dataset.ref]; select(x.t, x.it, false); return; }
     if (!a) return; setPlaying(false); if (a.dataset.act === "prev") storyGo(ST.i - 1); else if (a.dataset.act === "next") storyGo(ST.i + 1); else storyEnd(); });
   $("#sBar").addEventListener("click", (e) => { const b = e.target.closest("[data-c]"); if (b) { setPlaying(false); storyGo(+b.dataset.c); } });

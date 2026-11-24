@@ -291,3 +291,8 @@ body.light .fopen .mrow:hover .mt b, body.light .fopen .src a:hover { color: var
   body.light .lcur { left: calc(12px + var(--nw) + 8px); }
   body.light .lspan button { padding: 0 9px; font-size: 12px; }
 }
+
+body.light .hshare { border-color: var(--rule-2); background: #fff; }
+body.light .hshare:hover { background: var(--chip); }
+body.light #story .hshare { top: 14px; right: 50px; }
+body.light #share { --surf: #fff; --chip: #f0f0ec; --rule-2: #c9c9c4; --btn: #111; --btn-ink: #fff; --shadow: 0 10px 30px rgba(0, 0, 0, .12); }

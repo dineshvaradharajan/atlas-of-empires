@@ -581,3 +581,15 @@ body.immersed #bar, body.immersed #tabbar { visibility: hidden; }
 /* phones: the age is already in big type on the card (and on the life chart's pill), so the label above the timeline, which ran over the
    turning-point markers, is left out */
 @media (max-width: 760px) { #cursorLabel { display: none; } }
+
+/* share (../share.js): a small round button on the card and beside a story's close button; the dialog's colours in the Space view */
+.nowhead { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.hshare { flex: none; width: 32px; height: 32px; display: grid; place-items: center; border: 1px solid var(--rule); border-radius: 50%; color: var(--ink); }
+.hshare:hover { background: rgba(244, 239, 230, .12); }
+.hshare svg { width: 15px; height: 15px; }
+.nowhead .hshare { position: relative; margin: -6px 0; }
+.hshare::before { content: ""; position: absolute; inset: -6px; } /* a larger area to tap */
+#story .hshare::before { inset: -8px -4px; }
+#story .hshare { position: absolute; top: 0; right: 40px; width: 28px; height: 28px; }
+#story .skick { margin-right: 80px; }
+#share { --surf: #0d1322; --chip: rgba(244, 239, 230, .1); --rule-2: rgba(244, 239, 230, .28); --btn: #f4efe6; --btn-ink: #04060c; --shadow: 0 10px 30px rgba(0, 0, 0, .5); }

@@ -66,8 +66,11 @@ for (const [dir, pre] of [[ED, ""], [join(ED, "stories"), "story-"]]) if (exists
   const f = join(dir, slug, "index.html"); if (!existsSync(f) || slug === "stories") continue;
   const h = readFileSync(f, "utf8"), m = h.match(/href="\/#(earth\/[^"]+)"/); if (!m) continue;
   const st = pre && EH.stories.find((x) => x.id === slug), kicker = unesc(h.match(/<p class="kicker">([^<]*)/)?.[1] || "");
+  // a period: its tagline, then the opening sentences of its text until they fill two or three lines (a long one is cut with an ellipsis)
+  const u = !pre && EH.units.find((x) => x.id === slug); let open = "";
+  for (const t of u ? `${u.world || ""} ${u.life || ""}`.trim().split(/(?<=[.!?])\s+(?=[A-Z])/) : []) { if (open.length >= 80) break; open = `${open} ${t}`.trim(); } // in order, none skipped: "they" and "that" must keep what they point to
   const at = st ? `earth/${st.chapters[Math.floor(st.chapters.length / 2)].ma}` : m[1]; // a story: the globe of its middle chapter
-  items.push({ sec: "earth", id: pre + slug, page: "index.html?theme=sage", hash: at, kicker, kick: kicker, title: unesc(h.match(/<h1>([^<]*)/)?.[1] || slug), line: first(unesc(h.match(/<p class="lede">([^<]*)/)?.[1] || "")) });
+  items.push({ sec: "earth", id: pre + slug, page: "index.html?theme=sage", hash: at, kicker, kick: kicker, title: unesc(h.match(/<h1>([^<]*)/)?.[1] || slug), tag: u?.tagline || "", line: u ? open : first(unesc(h.match(/<p class="lede">([^<]*)/)?.[1] || "")) });
 }
 let todo = items.filter((it) => !ONLY.length || ONLY.includes(it.sec));
 if (!SAMPLE && !process.argv.includes("--force")) todo = todo.filter((it) => !existsSync(join(OUT, it.sec, `${it.id}.jpg`))); // a run that stopped picks up where it left off
@@ -111,7 +114,7 @@ const STYLES = { card: `
     border: 1px solid #111; border-radius: 16px; background: #fff; box-shadow: 0 12px 34px rgba(0,0,0,.14); color: #111; font-family: Inter, system-ui, sans-serif; }
   #ogcap .b { display: flex; align-items: center; gap: 10px; font: 800 15px/1 "Source Serif 4", Georgia, serif; letter-spacing: .1em; }
   #ogcap .b img { width: 34px; height: 24px; }
-  #ogcap .t { display: contents; }
+  #ogcap .t { display: contents; } #ogcap .g:empty { display: none; }
   #ogcap .k { margin-top: auto; font: 600 15px/1.35 Inter, sans-serif; color: #c8321e; }
   #ogcap h1 { margin: 10px 0 0; font: 800 44px/1.06 "Source Serif 4", Georgia, serif; letter-spacing: -.01em; overflow-wrap: break-word; }
   #ogcap h1.m { font-size: 37px; } #ogcap h1.s { font-size: 31px; }
@@ -135,6 +138,8 @@ const STYLES = { card: `
   html[data-theme] { --page: #fff !important; }
   #globe { transform: translateX(90px); }
   #ogcap { zoom: 1.33333; }
+  #ogcap .g { margin: 18px 0 0; width: 352px; font: 600 17px/1.4 Inter, sans-serif; color: #111; }
+  #ogcap .g:not(:empty) + p { margin-top: 8px; }
   #ogcap .y small { display: block; margin-top: 8px; font: 600 18px/1 Inter, sans-serif; letter-spacing: 0; }`,
   bare: `
   #ogcap { display: none !important; }`,
@@ -144,14 +149,14 @@ const BOXES = { card: [452, 36, W - 28, H - 36], note: [440, 60, W - 50, H - 40]
 const styleOf = (it) => arg("--style", it.sec === "realms" ? "note" : it.sec === "earth" ? "globe" : "card");
 const boxOf = (it) => (arg("--box", "") ? arg("--box").split(",").map(Number) : BOXES[styleOf(it)]);
 const setup = `(() => { if (document.getElementById("ogcap")) return; const s = document.createElement("style"); s.id = "ogstyle"; document.head.append(s);
-  const d = document.createElement("div"); d.id = "ogcap"; d.innerHTML = '<div class="b"><img src="logo.png" alt="">THE WORLD ATLAS</div><div class="t"><div class="k"></div><h1></h1><p></p></div><div class="y"></div><div class="u">worldatlas.site</div>'; document.body.append(d); })()`;
+  const d = document.createElement("div"); d.id = "ogcap"; d.innerHTML = '<div class="b"><img src="logo.png" alt="">THE WORLD ATLAS</div><div class="t"><div class="k"></div><h1></h1><div class="g"></div><p></p></div><div class="y"></div><div class="u">worldatlas.site</div>'; document.body.append(d); })()`;
 // note: the kicker ("Realm · approximate borders · 1574–1708") splits into its label and the years, which get the numerals
 const caption = (it) => { const st = styleOf(it), parts = it.kicker ? it.kicker.split(" · ") : [], yrs = (st === "note" || st === "globe") && parts.length > 1 && /\d/.test(parts.at(-1)) ? parts.pop().replace(/ \(.*\)$/, "") : "";
   const yl = st === "globe" ? yrs.replace(/ to /, "–").replace(/ (?:billion |million )?years ago$/, "").length : yrs.length;
   const kick = (st === "note" || st === "globe") && it.kicker ? parts.join(", ") : it.kick;
   return `(() => { document.getElementById("ogstyle").textContent = ${JSON.stringify(HIDE + STYLES[st])};
   const c = document.getElementById("ogcap"), h = c.querySelector("h1"), y = c.querySelector(".y"); c.querySelector(".k").textContent = ${JSON.stringify(kick)}; h.textContent = ${JSON.stringify(it.title)};
-  h.className = ${JSON.stringify(it.title)}.length > 44 ? "s" : ${JSON.stringify(it.title)}.length > 24 ? "m" : ""; c.querySelector("p").textContent = ${JSON.stringify(it.line)};
+  h.className = ${JSON.stringify(it.title)}.length > 44 ? "s" : ${JSON.stringify(it.title)}.length > 24 ? "m" : ""; c.querySelector("p").textContent = ${JSON.stringify(it.line)}; c.querySelector(".g").textContent = ${JSON.stringify(it.tag || "")};
   h.style.fontSize = ""; if (${(st === "note" || st === "globe")}) for (const z of [48, 40, 34, 29, 25, 22]) { if (h.offsetHeight <= 182 && h.scrollWidth <= h.clientWidth) break; h.style.fontSize = z + "px"; } // the whole name, never cut off
   y.innerHTML = ${JSON.stringify(st === "globe" ? yrs.replace(/ to /, "–").replace(/ ((?:billion |million )?years ago)$/, "<small>$1</small>") : yrs)}; y.className = "y" + (${yl} > 13 ? " s" : ${yl} > 9 ? " m" : ""); })()`; };
 // settled: the loading note is gone, the fonts are in, and nothing has been fetched for a moment (borders, a war's layers)
