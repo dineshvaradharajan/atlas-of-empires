@@ -151,10 +151,15 @@ function mediaHTML(key) {
 }
 // Every link built from data goes through here: only http(s) addresses, escaped (a "javascript:" link would run code).
 const safeUrl = (u) => (/^https?:\/\//i.test(String(u || "")) ? esc(u) : "#");
-function sourcesList(list, title = "Sources") {
+// The first three show; the rest fold under "Show all N sources" (not worth a fold for just one more).
+function sourcesList(list, title = "Sources", show = 3) {
   const ok = (list || []).filter((x) => x && /^https?:\/\//i.test(x.url || ""));
   if (!ok.length) return "";
-  return `<h3 class="sec">${title}</h3><ol class="refs">${ok.map((x) => `<li><a href="${safeUrl(x.url)}" target="_blank" rel="noopener">${esc(x.title || x.url)}</a></li>`).join("")}</ol>`;
+  const li = (x) => `<li><a href="${safeUrl(x.url)}" target="_blank" rel="noopener">${esc(x.title || x.url)}</a></li>`;
+  if (ok.length <= show + 1) return `<h3 class="sec">${title}</h3><ol class="refs">${ok.map(li).join("")}</ol>`;
+  return `<h3 class="sec">${title}</h3><ol class="refs">${ok.slice(0, show).map(li).join("")}</ol>`
+    + `<details class="refs-more"><summary><span class="when-shut">Show all ${ok.length} sources</span><span class="when-open">Show fewer</span></summary>`
+    + `<ol class="refs" start="${show + 1}">${ok.slice(show).map(li).join("")}</ol></details>`;
 }
 const vivid = () => (theme.dark ? VIVID_DARK : VIVID_LIGHT);
 const RECON_COLORS = ["#C0662F", "#2F7D6D", "#7A5FB0", "#A67C00", "#5E8FC4", "#B5487A", "#3B6E3B", "#8C4A2F"];
@@ -567,6 +572,47 @@ function prepareSupplements(list) {
     });
   }
   return list;
+}
+// A layer keeps one source list for all its regions; a region's card lists only those about it. Its own: a source whose title
+// or address names it (its name, key or a bracketed other name, with or without "Kingdom of" and the like), or that its note
+// cites in quotes (Wikipedia 'Jolof Empire', Commons 'Map of the Jolof Empire'). Then the layer's atlas and gazetteer plates
+// that name no other region, when the years in their titles (not the year an atlas came out, in brackets) come within 50 years
+// of the realm's, or they give none: a plate of one area when the realm's note names that area, a general one only when the
+// realm has nothing of its own. Articles and loose maps about other states are left out; the card folds the layer's whole list.
+const foldTxt = (s) => ` ${String(s || "").normalize("NFKD").replace(/[̀-ͯ]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim()} `;
+const TITLE_WORDS = /^ (the )?(grand duchy|prince bishopric|archbishopric|bishopric|kingdom|duchy|sultanate|empire|county|margraviate|landgraviate|electorate|principality|emirate|khanate|republic|state|dynasty|confederacy|paramountcy|caliphate|lordship|beylik|atabegate|imamate|chiefdom|realm)( of)? /;
+function regionNames(rg) {
+  const raws = [rg.name, rg.key, ...[...`${rg.note || ""} ${rg.dataNote || ""}`.matchAll(/'([^']{4,}?)'/g)].map((m) => m[1])], out = new Set();
+  for (const raw of raws.filter(Boolean)) for (const part of [raw.replace(/\(.*?\)/g, ""), ...[...raw.matchAll(/\(([^)]*)\)/g)].map((m) => m[1])]) {
+    const n = foldTxt(part); if (n.length > 5) out.add(n);
+    const core = n.replace(TITLE_WORDS, " "); if (core.length > 5) out.add(core);
+  }
+  return [...out];
+}
+function srcTxt(x) { let tail = String(x.url || "").split("/").pop(); try { tail = decodeURIComponent(tail); } catch (e) {} return foldTxt(x.title) + foldTxt(tail.replace(/_/g, " ")); }
+function reconSources(sp, rg, span) {
+  const all = (sp.sources || []).filter((x) => x && /^https?:\/\//i.test(x.url || ""));
+  const names = (sp.srcNames ||= sp.regions.map(regionNames)), txt = (sp.srcTxt ||= all.map(srcTxt));
+  const about = (i, ns) => ns.some((n) => txt[i].includes(n));
+  // plates: atlas pages about no one region. One that covers one area (a word no other plate has, like "Rajputana" or
+  // "Netherlands", that some region's note or name uses) goes only to the regions whose text uses it.
+  const rtxt = (sp.srcRegionTxt ||= sp.regions.map((x) => foldTxt(`${x.name} ${x.note || ""} ${x.dataNote || ""}`)));
+  if (!sp.srcPlates) {
+    const plates = all.map((x, i) => /atlas|gazetteer/i.test(x.title || "") && !names.some((ns) => about(i, ns)) ? i : -1).filter((i) => i >= 0);
+    const words = (i) => { const ws = foldTxt(String(all[i].title || "").replace(/\(\d{4}\)/g, "")).trim().split(" ").filter((w) => !/\d/.test(w)); // words, and pairs ("central india")
+      return new Set([...ws.filter((w) => w.length >= 6), ...ws.slice(1).map((w, k) => [ws[k], w]).filter(([p, q]) => p.length >= 4 && q.length >= 4).map((pq) => pq.join(" "))]); };
+    const used = (w) => rtxt.filter((t) => t.includes(` ${w} `)).length; // an area word: some regions use it, but not a quarter of them ("indian")
+    sp.srcPlates = new Map(plates.map((i) => [i, [...words(i)].filter((w) => !plates.some((j) => j !== i && words(j).has(w)) && used(w) >= 1 && used(w) <= rtxt.length / 4)]));
+  }
+  const mine = regionNames(rg), here = foldTxt(`${rg.name} ${rg.note || ""} ${rg.dataNote || ""}`), [a, b] = span;
+  const ownList = all.filter((x, i) => about(i, mine));
+  const plateList = all.filter((x, i) => {
+    const area = sp.srcPlates.get(i); if (!area || about(i, mine)) return false;
+    if (area.length ? !area.some((w) => here.includes(` ${w} `)) : ownList.length) return false; // a general plate only for a realm with nothing of its own
+    const t = String(x.title || "").replace(/\(\d{4}\)/g, ""), ys = [...t.matchAll(/\b(\d{3,4})\b/g)].map((m) => +m[1] * (/\bB\.?\s?C/.test(t) ? -1 : 1));
+    return !ys.length || (Math.min(...ys) <= b + 50 && Math.max(...ys) >= a - 50);
+  });
+  return [...ownList, ...plateList];
 }
 function applySupplements(states, y) {
   const act = S.supps.filter((sp) => sp.from <= y && y <= sp.to);
@@ -2063,6 +2109,12 @@ function boundsOf(feats) {
   return b;
 }
 const activeFeats = (key) => S.states.filter((f) => f.properties.k === key || f.properties.n === key);
+// For tools/og.mjs, which draws the share pictures: the lon/lat box round the main body of the selected realm, as boundsOf frames it.
+window.atlasSelBox = () => {
+  const parts = []; for (const f of S.sel ? activeFeats(S.sel) : []) for (const poly of f.geometry.type === "Polygon" ? [f.geometry.coordinates] : f.geometry.coordinates) { const g = { type: "Polygon", coordinates: poly }; parts.push({ g, a: d3.geoArea(g) }); }
+  const big = Math.max(0, ...parts.map((p) => p.a)), main = parts.filter((p) => p.a >= big * 0.02).map((p) => p.g.coordinates);
+  return main.length ? d3.geoBounds({ type: "MultiPolygon", coordinates: main }) : null;
+};
 function flyToRegion(bb) {
   const pts = [bb[0], bb[1], [bb[0][0], bb[1][1]], [bb[1][0], bb[0][1]]].map((p) => projection(p));
   flyTo([[Math.min(...pts.map((p) => p[0])), Math.min(...pts.map((p) => p[1]))], [Math.max(...pts.map((p) => p[0])), Math.max(...pts.map((p) => p[1]))]], 6);
@@ -2557,7 +2609,7 @@ function realmHTML() {
       if (rg.summary) h += `<p class="prose">${esc(rg.summary)}</p>`;
       const ss = (S.sites || []).filter((x) => x.culture === rg.key);
       if (ss.length) h += `<h3 class="sec">Sites</h3><ul class="mlist">${ss.map((x) => `<li><button class="mrow" data-site="${esc(x.id)}"><span class="my">${esc(x.dateLabel || "")}</span><span class="mt">${esc(x.name)}</span></button></li>`).join("")}</ul>`;
-      h += sourcesList(rg.sources || sp.sources);
+      h += sourcesList(rg.sources || reconSources(sp, rg, [r.tl[0][0], Math.max(...r.tl.map((t) => t[1]))]));
       return h;
     }
     const note = emp ? null : realmNote(key); // the state itself (its profile, else a short note) comes above the note on its borders
@@ -2576,7 +2628,11 @@ function realmHTML() {
       if (emp.legacy) h += `<h3 class="sec">Legacy</h3><p class="prose">${esc(emp.legacy)}</p>`;
     }
     if (sp.summary) h += `<h3 class="sec">${esc(sp.title)}</h3><p class="prose">${esc(sp.summary)}</p>`;
-    h += sourcesList([...(emp?.sources || []), ...(sp.sources || []).filter((x) => !(emp?.sources || []).some((e) => e.url === x.url))]);
+    const own = emp?.sources || [], mine = reconSources(sp, rg, [r.tl[0][0], Math.max(...r.tl.map((t) => t[1]))]);
+    h += sourcesList([...own, ...mine.filter((x) => !own.some((e) => e.url === x.url))]) || (sp.sources?.length ? `<h3 class="sec">Sources</h3>` : "");
+    const layer = (sp.sources || []).filter((x) => x && /^https?:\/\//i.test(x.url || ""));
+    if (layer.length > mine.length) h += `<details class="refs-more"><summary><span class="when-shut">All ${layer.length} sources for the layer “${esc(sp.title)}”</span><span class="when-open">Hide the layer’s sources</span></summary>`
+      + `<ol class="refs">${layer.map((x) => `<li><a href="${safeUrl(x.url)}" target="_blank" rel="noopener">${esc(x.title || x.url)}</a></li>`).join("")}</ol></details>`;
     return h;
   }
   const note = emp ? null : realmNote(key), moved = noteMoved(r, note), wt = moved ? note.wiki : r.wiki;
@@ -2602,6 +2658,7 @@ function realmHTML() {
   }
   h += rulersHTML(emp);
   if (emp?.legacy) h += `<h3 class="sec">Legacy</h3><p class="prose">${esc(emp.legacy)}</p>`;
+  h += realmPlaceHTML(key); // who ruled this spot, before and after: after the legacy
   if (now.length > 1 || (now.length === 1 && now[0].properties.n !== key)) {
     const sorted = [...now].sort((a, b) => b.properties.a - a.properties.a);
     h += `<h3 class="sec">Made up of, in ${plainYear(y)} (${now.length})</h3><ul class="terr">`;
@@ -2616,7 +2673,6 @@ function realmHTML() {
     r.seshat && `<a href="https://seshat-db.com/core/polity/${esc(r.seshat)}" target="_blank" rel="noopener">Seshat</a>`].filter(Boolean);
   if (links.length) h += `<h3 class="sec">Read more</h3><p class="links">${links.join(" · ")}</p>`;
   h += sourcesList(emp?.sources || note?.sources);
-  h += realmPlaceHTML(key); // who ruled this spot, before and after: the last section
   return h;
 }
 // A realm's page: every state recorded at one spot of it (where it was clicked, else its middle), in time order as on

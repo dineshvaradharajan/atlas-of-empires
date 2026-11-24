@@ -24,6 +24,7 @@ import shutil
 import sys
 import unicodedata
 from urllib.parse import quote
+import urllib.parse
 
 SITE = "https://www.worldatlas.site"
 NAME = "The World Atlas"
@@ -209,6 +210,70 @@ def sources(src):
         return ""
     lis = "".join(f'<li><a href="{esc(s["url"])}" rel="noopener">{esc(s.get("title") or s["url"])}</a></li>' for s in src)
     return f'<section class="sources"><h2>Sources</h2><ul>{lis}</ul></section>'
+
+
+# A reconstruction layer keeps one source list for all its regions; a region's page lists only those about it. The same rule as
+# reconSources() in public/app.js: sources that name the region or that its note cites in quotes, then the layer's atlas and
+# gazetteer plates of its years (a plate of one area only when the note names that area; a general one only when the region has
+# nothing of its own). Keep the two in step.
+def _fold(t):
+    t = unicodedata.normalize("NFKD", str(t or "")).encode("ascii", "ignore").decode().lower()
+    return " " + re.sub(r"[^a-z0-9]+", " ", t).strip() + " "
+
+
+_TITLE_WORDS = re.compile(r"^ (the )?(grand duchy|prince bishopric|archbishopric|bishopric|kingdom|duchy|sultanate|empire|county|margraviate|landgraviate|electorate|principality|emirate|khanate|republic|state|dynasty|confederacy|paramountcy|caliphate|lordship|beylik|atabegate|imamate|chiefdom|realm)( of)? ")
+
+
+def _region_names(rg):
+    raws = [rg.get("name"), rg.get("key")] + re.findall(r"'([^']{4,}?)'", f'{rg.get("note") or ""} {rg.get("dataNote") or ""}')
+    out = []
+    for raw in filter(None, raws):
+        for part in [re.sub(r"\(.*?\)", "", raw)] + re.findall(r"\(([^)]*)\)", raw):
+            n = _fold(part)
+            for v in (n, _TITLE_WORDS.sub(" ", n)):
+                if len(v) > 5 and v not in out:
+                    out.append(v)
+    return out
+
+
+def _src_txt(x):
+    tail = urllib.parse.unquote(str(x.get("url") or "").split("/")[-1])
+    return _fold(x.get("title")) + _fold(tail.replace("_", " "))
+
+
+_RECON_SRC = {}
+
+
+def recon_sources(sp, rg, a, b):
+    allsrc = [x for x in sp.get("sources") or [] if str(x.get("url") or "").lower().startswith(("http://", "https://"))]
+    if id(sp) not in _RECON_SRC:
+        names = [_region_names(r) for r in sp["regions"]]
+        txt = [_src_txt(x) for x in allsrc]
+        rtxt = [_fold(f'{r.get("name")} {r.get("note") or ""} {r.get("dataNote") or ""}') for r in sp["regions"]]
+        about_any = [any(n in txt[i] for ns in names for n in ns) for i in range(len(allsrc))]
+        plates = [i for i, x in enumerate(allsrc) if re.search(r"atlas|gazetteer", x.get("title") or "", re.I) and not about_any[i]]
+
+        def words(i):
+            ws = [w for w in _fold(re.sub(r"\(\d{4}\)", "", allsrc[i].get("title") or "")).split() if not re.search(r"\d", w)]
+            return {w for w in ws if len(w) >= 6} | {f"{p} {q}" for p, q in zip(ws, ws[1:]) if len(p) >= 4 and len(q) >= 4}
+        pw = {i: words(i) for i in plates}
+        used = lambda w: sum(f" {w} " in t for t in rtxt)
+        area = {i: [w for w in pw[i] if not any(w in pw[j] for j in plates if j != i) and 1 <= used(w) <= len(rtxt) / 4] for i in plates}
+        _RECON_SRC[id(sp)] = (txt, area)
+    txt, area = _RECON_SRC[id(sp)]
+    mine, here = _region_names(rg), _fold(f'{rg.get("name")} {rg.get("note") or ""} {rg.get("dataNote") or ""}')
+    own = [x for i, x in enumerate(allsrc) if any(n in txt[i] for n in mine)]
+    out = []
+    for i, x in enumerate(allsrc):
+        if i not in area or any(n in txt[i] for n in mine):
+            continue
+        if (not any(f" {w} " in here for w in area[i])) if area[i] else own:
+            continue
+        t = re.sub(r"\(\d{4}\)", "", x.get("title") or "")
+        ys = [int(m) * (-1 if re.search(r"\bB\.?\s?C", t) else 1) for m in re.findall(r"\b(\d{3,4})\b", t)]
+        if not ys or (min(ys) <= b + 50 and max(ys) >= a - 50):
+            out.append(x)
+    return own + out
 
 
 def timeline(events, title="Timeline"):
@@ -643,10 +708,12 @@ def main():
                 for sp in sps:
                     if sp.get("summary"):
                         body += f'<section><h2>{esc(sp["title"])}</h2><p>{esc(sp["summary"])}</p></section>'
-            body += sources(rg0.get("sources") if culture and rg0.get("sources") else [x for sp in sps for x in sp.get("sources") or []])
+            src = list({x["url"]: x for sp, rg in regs for x in recon_sources(sp, rg, a, b)}.values())  # only the layer's sources about this realm
+            body += sources(rg0.get("sources") if culture and rg0.get("sources") else src or [x for sp in sps for x in sp.get("sources") or []])  # nothing of its own: the layer's list
             ld = article_ld(path, f"{name} ({when})", desc, None, {"@type": "Place" if culture else "Country", "name": name},
                             {"temporalCoverage": f"{iso(a)}/{iso(b)}"})
-            emit("realms", path, title, desc, page(path, title, desc, body, [("Realms", "/realms/"), (name, path)], jsonld=[ld]), f"{name} ({when})")
+            og = og_image("realms", path.strip("/").split("/")[-1])  # tools/og.mjs: the map at this realm, with a caption card
+            emit("realms", path, title, desc, page(path, title, desc, body, [("Realms", "/realms/"), (name, path)], og, f"{name} on The World Atlas" if og else None, [ld]), f"{name} ({when})")
             continue
         alive = b >= PRESENT - 1
         pk = peak_of(n)
@@ -703,8 +770,9 @@ def main():
             about["sameAs"] = same
         ld = article_ld(path, f"{name} ({when})", desc, img and img.get("thumb"), about,
                         {"temporalCoverage": f"{iso(a)}/{'..' if alive else iso(b)}"})
+        og = og_image("realms", path.strip("/").split("/")[-1])  # tools/og.mjs: the map at this realm, with a caption card; else its reference map
         emit("realms", path, title, desc, page(path, title, desc, body, [("Realms", "/realms/"), (name, path)],
-                                               img and img.get("thumb"), "Reference map of " + name, [ld]), f"{name} ({when})")
+                                               og or (img and img.get("thumb")), f"{name} on The World Atlas" if og else "Reference map of " + name, [ld]), f"{name} ({when})")
 
     # ---- ancient sites
     def dist(p, q):
