@@ -2229,9 +2229,9 @@ function culturesNow(y = S.year) { // archaeological-culture regions active this
 }
 function prehistoryHTML(y) {
   let h = kick("The world in") + `<p class="bigy live">${yearLabel(y)}</p><h1 class="ttl">Before the first states</h1>`;
-  h += `<aside class="mapnote norecords"><b>No written records</b><p>Writing begins around ${shortYear(WRITING)} in Mesopotamia and Egypt. Everything the map shows for this time is known from archaeology: excavated sites, radiocarbon dates and the spread of tools, pottery and farming. Areas are approximate, and blank land means no culture has been mapped there, not that no one lived there.</p></aside>`;
+  h += `<details class="mapnote norecords"><summary><b>No written records</b></summary><p>Writing begins around ${shortYear(WRITING)} in Mesopotamia and Egypt. Everything the map shows for this time is known from archaeology: excavated sites, radiocarbon dates and the spread of tools, pottery and farming. Areas are approximate, and blank land means no culture has been mapped there, not that no one lived there.</p></details>`;
   const drop = seaDrop(y), ice = iceNow(y);
-  if (drop >= 1 || ice.length) h += `<aside class="mapnote iceage"><b>The end of the ice age</b><p>${drop >= 1 ? `The sea stood about <strong>${Math.round(drop)} m lower</strong> than today, so shallow seabed was dry land (drawn grey beyond today's coasts). ` : ""}${ice.length ? `Ice sheets (white, dashed edge) still covered ${esc(iceRegions(ice))}.` : ""} Reconstructions are approximate; see Sources.</p></aside>`;
+  if (drop >= 1 || ice.length) h += `<details class="mapnote iceage"><summary><b>The end of the ice age</b></summary><p>${drop >= 1 ? `The sea stood about <strong>${Math.round(drop)} m lower</strong> than today, so shallow seabed was dry land (drawn grey beyond today's coasts). ` : ""}${ice.length ? `Ice sheets (white, dashed edge) still covered ${esc(iceRegions(ice))}.` : ""} Reconstructions are approximate; see Sources.</p></details>`;
   const cs = culturesNow(y);
   if (cs.length) {
     h += `<h3 class="sec">Cultures · ${plainYear(y)}</h3><ul class="mlist">`;
@@ -2403,7 +2403,7 @@ function siteHTML() {
   let h = cardHead(backLabel(`The world in ${plainYear(S.year)}`), "", "close-site");
   h += kick(`${esc((st.kind || "site").replace("-", " "))} · ${esc(st.dateLabel || shortYear(st.built))}${st.unesco ? " · UNESCO World Heritage" : ""}`) + `<h1 class="ttl l">${esc(st.name)}</h1>`;
   if (st.altNames?.length) h += `<p class="note">Also: ${esc(st.altNames.join(", "))}</p>`;
-  h += `<aside class="mapnote evnote">${evidenceBadge(st.evidence)}<p>${esc(st.evidenceNote || "")}</p></aside>`;
+  h += `<details class="mapnote evnote"><summary>${evidenceBadge(st.evidence)}</summary><p>${esc(st.evidenceNote || "")}</p></details>`;
   if (st.image?.image) h += `<figure class="mfig"><img src="${safeUrl(st.image.image)}" alt="${esc(st.image.caption || st.name)}" loading="lazy"><figcaption>${esc(st.image.caption || "")} <a href="${safeUrl(st.image.page)}" target="_blank" rel="noopener">${esc(st.image.credit || "Wikimedia Commons")} · ${esc(st.image.license || "")}</a></figcaption></figure>`;
   if (st.summary) h += `<p class="prose">${esc(st.summary)}</p>`;
   const tooOld = st.built != null && (st.until ?? st.built) < S.range[0];
@@ -2552,7 +2552,7 @@ function realmHTML() {
   if (r.recon) {
     const { sp, rg } = r.recon;
     if (sp.kind === "cultures") { // an archaeological culture: say how it is known
-      h += `<aside class="mapnote evnote">${evidenceBadge(rg.evidence)}<p>${esc(rg.evidenceNote || "")}</p></aside>`;
+      h += `<details class="mapnote evnote"><summary>${evidenceBadge(rg.evidence)}</summary><p>${esc(rg.evidenceNote || "")}</p></details>`;
       if (rg.dateLabel) h += `<p class="note">${esc(rg.dateLabel)} · its extent is approximate, from where its sites have been found.</p>`;
       if (rg.summary) h += `<p class="prose">${esc(rg.summary)}</p>`;
       const ss = (S.sites || []).filter((x) => x.culture === rg.key);
@@ -2563,12 +2563,12 @@ function realmHTML() {
     const note = emp ? null : realmNote(key); // the state itself (its profile, else a short note) comes above the note on its borders
     if (emp) h += summaryHTML(emp);
     else if (note) h += `<p class="prose">${esc(note.text)}</p>` + noteSourceHTML(r, note);
-    h += `<aside class="mapnote recon"><b>Approximate borders</b>${rg.note ? `<p>${esc(rg.note)}</p>` : ""}`;
+    h += `<details class="mapnote recon"><summary><b>Approximate borders</b></summary>${rg.note ? `<p>${esc(rg.note)}</p>` : ""}`;
     if (rg.capital || note?.capital) h += `<p><strong>Capital:</strong> ${esc(rg.capital || note.capital)}</p>`;
     if (rg.ports?.length) h += `<p><strong>Ports:</strong> ${esc(rg.ports.join(", "))}</p>`;
     if (rg.rulers?.length) h += `<p><strong>Rulers named in the sources:</strong> ${rg.rulers.map((x) => `${esc(x.name)}${x.when ? ` (${esc(x.when)})` : ""}`).join("; ")}</p>`;
     if (rg.attested) h += `<p><strong>Attested in:</strong> ${esc(rg.attested)}</p>`;
-    h += `</aside>`;
+    h += `</details>`;
     const rj = journeyForRealm(rg.key || rg.name);
     if (rj) h += `<button class="pillbtn dark block" data-journey="${esc(rj.id)}">${I.book}Follow ${esc(rj.name)} through its history</button>`;
     if (emp) { // a profile written for this state (its "recon" names this region)
@@ -2583,14 +2583,13 @@ function realmHTML() {
   const media = (!moved && commonsSet()[r.wiki]) || (emp?.wiki && commonsSet()[emp.wiki]);
   if (emp?.summary) h += summaryHTML(emp);
   else if (note) h += `<p class="prose">${esc(note.text)}</p>` + noteSourceHTML(r, note);
-  h += realmPlaceHTML(key);
   const cap = emp?.capital || note?.capital;
   h += `<div class="facts">${cap ? `<div><span>Capital</span><b>${esc(cap.split(";")[0])}</b></div>` : ""}<div><span>Area in ${shortYear(y)}</span><b>${area ? `${mkm(area)} million km²` : "Not drawn"}</b></div><div><span>At its peak</span><b>${shortYear(peak[0])}, ${mkm(peak[2])} million km²</b></div></div>`;
   if (r.memberOf?.length) h += `<p class="note">Part of ${r.memberOf.map((g) => `<button class="linkish" data-key="${esc(g)}">${esc(displayName(g))}</button>`).join(", ")}</p>`;
   const jr = journeyForRealm(key);
   if (jr) h += `<button class="pillbtn dark block" data-journey="${esc(jr.id)}">${I.book}Follow ${esc(jr.name)} through its history</button>`;
 
-  h += leadPicHTML(emp); // the picture comes after who ruled this spot, so that list is seen first
+  h += leadPicHTML(emp);
   h += `<h3 class="sec">Territory through time</h3>${extentChart(r)}
     <label class="toggle"><input type="checkbox" id="ghostToggle" ${S.showGhost ? "checked" : ""}> Outline greatest extent on the map</label>`;
   if (media) {
@@ -2617,6 +2616,7 @@ function realmHTML() {
     r.seshat && `<a href="https://seshat-db.com/core/polity/${esc(r.seshat)}" target="_blank" rel="noopener">Seshat</a>`].filter(Boolean);
   if (links.length) h += `<h3 class="sec">Read more</h3><p class="links">${links.join(" · ")}</p>`;
   h += sourcesList(emp?.sources || note?.sources);
+  h += realmPlaceHTML(key); // who ruled this spot, before and after: the last section
   return h;
 }
 // A realm's page: every state recorded at one spot of it (where it was clicked, else its middle), in time order as on
