@@ -259,13 +259,14 @@ let shown = "", picUnit = null, cardPics = [];
 function renderCard() {
   const [n, u] = ageParts(S.ma), unit = unitAt(S.ma), near = S.ma < .1;
   const sub = `${unit.name} ${unit.rank}` + (near ? ` · ${yearText(Math.round((NOW_YEAR - S.ma * 1e6) / 1000) * 1000)}` : "");
-  const key = n + u + unit.id + near; if (key === shown) return; shown = key;
+  const gallery = nearMile >= 0 ? MILES[nearMile]?.item?.gallery : null;
+  const key = n + u + unit.id + near + (gallery?.story || ""); if (key === shown) return; shown = key;
   $("#ageNum").textContent = n; $("#ageUnit").textContent = u; $("#ageSub").textContent = sub;
   $("#chipSw").style.background = unit.color; $("#chipName").textContent = unit.name;
   $("#tagline").textContent = unit.tagline || "";
   // the period in full, as Earth history tells it: the world, life and climate (the card scrolls; the flat map keeps it short behind "Read more")
   $("#body").innerHTML = [["The world", unit.world], ["Life", unit.life], ["Climate", unit.climate]].filter(([, t]) => t).map(([h, t]) => `<h2>${h}</h2><p>${esc(t)}</p>`).join("");
-  if (unit.id !== picUnit) { picUnit = unit.id; cardPics = picsFor(unit); const po = $("#picOpen"); po.hidden = !cardPics.length;
+  const at = unit.id + (gallery?.story || ""); if (at !== picUnit) { picUnit = at; cardPics = picsFor(unit, gallery); const po = $("#picOpen"); po.hidden = !cardPics.length;
     if (cardPics.length) { const im = $("#picImg"); im.dataset.fb = cardPics[0].image; im.src = sized(cardPics[0], 500); $("#picN").textContent = `${cardPics.length} pictures`; } }
   const hint = $("#hint"); hint.hidden = !near;
   if (near) { const y = Math.max(0, Math.round((S.ma - JOIN) * 1e6 / 1000) * 1000); hint.innerHTML = y ? `<b>History begins in ${num(y)} years.</b> Keep going and the first peoples and states appear on the globe.` : "<b>History begins here.</b>"; }
@@ -276,7 +277,12 @@ function renderCard() {
 const STD = [120, 250, 330, 500, 960, 1280, 1920]; // the thumbnail widths Wikimedia serves
 function sized(p, w) { const u = p.image; if (!/\/\d+px-/.test(u)) return u; const fit = STD.filter((x) => !p.width || x <= p.width); if (!fit.length) return u; return u.replace(/\/\d+px-/, `/${fit.find((x) => x >= w) || fit[fit.length - 1]}px-`); }
 let byUnit = {};
-function picsFor(u) { // the period's own pictures, then its parents' until there are at least six
+function picsFor(u, gallery) { // event-specific pictures, otherwise the period's own pictures and its parents'
+  if (gallery) {
+    const story = (D.stories || []).find((s) => s.id === gallery.story), all = (story?.chapters || []).flatMap((c) => c.pics || []), byId = new Map([...all, ...(D.images || [])].map((p) => [p.id, p]));
+    const selected = [...(gallery.images || []), ...(gallery.fossils || [])].map((id) => { const p = byId.get(id), note = gallery.notes?.[id]; return p && note ? { ...p, caption: p.caption + " " + note } : p; }).filter(Boolean);
+    if (selected.length) return selected;
+  }
   let list = (D.images || []).filter((p) => p.unit === u.id).sort((a, b) => (b.quality || 0) - (a.quality || 0));
   for (let p = byUnit[u.parent]; p && list.length < 6; p = byUnit[p.parent]) list = list.concat((D.images || []).filter((q) => q.unit === p.id));
   return list;
@@ -674,7 +680,7 @@ function wire() {
   $("#sPlay").addEventListener("click", () => setPlaying(!S.playing));
   $("#sOut").addEventListener("click", () => storyEnd());
   $("#sdock").addEventListener("click", (e) => { const b = e.target.closest("[data-c]"); if (b) { setPlaying(false); storyGo(+b.dataset.c); } });
-  $("#picOpen").addEventListener("click", () => { const u = unitAt(S.ma); imOpen(cardPics, 0, `${u.name}, ${ageParts(S.ma).join(" ")}`); });
+  $("#picOpen").addEventListener("click", () => { const u = unitAt(S.ma); imOpen(cardPics, 0, nearMile >= 0 && MILES[nearMile]?.item?.gallery ? MILES[nearMile].title : `${u.name}, ${ageParts(S.ma).join(" ")}`); });
   $("#story").addEventListener("click", (e) => { if (e.target.closest("figure") && ST) { const c = ST.story.chapters[ST.i]; imOpen(c.pics || [], 0, c.title); } });
   $("#immerse").addEventListener("click", (e) => { const b = e.target.closest("[data-k]"); if (b) imShow(+b.dataset.k); else if (e.target.closest("#imPrev")) imShow(IM.i - 1); else if (e.target.closest("#imNext")) imShow(IM.i + 1); else if (e.target.closest("#imClose") || e.target.id === "immerse" || e.target.classList.contains("imbg")) imClose(); });
   $("#searchBtn").addEventListener("click", () => { if (ST) storyEnd(); enterHistory(S.lastYear ?? Y0); setTimeout(() => { try { histWin().document.querySelector("#search").focus(); } catch (e) {} }, 400); });

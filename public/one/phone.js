@@ -9,7 +9,7 @@ window.PHONE = (() => {
   const short = (ma) => ma < .0001 ? "today" : ageParts(ma).join(" ").replace(" million years ago", " M").replace(" billion years ago", " bn").replace(" years ago", " yr");
   const era = (y) => HERAS.find((e) => y < e[1]) || HERAS[HERAS.length - 1];
   const before = (ma) => unitAt(Math.min(OLDEST, ma * 1.0001 + 1e-6)); // the period a moment at a boundary closes, not the one it opens
-  let was = null, key = "", unitShown = "", pics = [], idxMode = "earth", n = 0;
+  let was = null, key = "", unitShown = "", pics = [], picWhen = "", idxMode = "earth", n = 0;
 
   function init() {
     was = on(); if (!was) return;
@@ -38,7 +38,8 @@ window.PHONE = (() => {
       q("#pMarks").querySelectorAll("i").forEach((el) => el.classList.toggle("on", +el.dataset.m === near));
       const tb = q("#pTurn"); tb.hidden = near < 0;
       if (near >= 0) { const m = MILES[near]; tb.innerHTML = `<span>Turning point, ${esc(ageParts(m.ma).join(" "))}</span><b>${esc(m.title)}</b><p>${esc((m.item.text || "").split(". ").slice(0, 2).join(". ").replace(/\.?$/, "."))}</p>`; }
-      if (u.id !== unitShown) { unitShown = u.id; pics = picsFor(u); const po = q("#pPic"); po.hidden = !pics.length;
+      const gallery = near >= 0 ? MILES[near].item?.gallery : null; picWhen = gallery ? MILES[near].title : "";
+      const at = u.id + (gallery?.story || ""); if (at !== unitShown) { unitShown = at; pics = picsFor(u, gallery); const po = q("#pPic"); po.hidden = !pics.length;
         if (pics.length) { const im = q("#pPicImg"); im.dataset.fb = pics[0].image; im.src = sized(pics[0], 500); q("#pPicN").textContent = `1 of ${pics.length}`; }
         q("#pText").textContent = [u.world, u.life].filter(Boolean).join(" "); }
       q("#pTrust").textContent = S.ma > MAPPED ? "Artist's impression: no map of the Earth this old is drawn here." : S.ma > 300 ? "Rough map: reconstructions of this time differ by 600 to 1,600 km." : "Reconstructed map: PALEOMAP, Scotese and Wright 2018.";
@@ -114,7 +115,7 @@ window.PHONE = (() => {
     q(".tilew").addEventListener("click", () => S.mode === "deep" ? goYear(Y0) : goMa(.02)); // the block or its name
     q("#pToday").addEventListener("click", () => histTab("today"));
     q("#pUp").addEventListener("click", () => { if (S.mode === "hist") { HIST.own = true; return; } const s = q("#ps").dataset.stop; stop(s === "peek" ? "half" : s === "half" ? "full" : "peek"); }); // in history: World history's own card for this year
-    q("#pPic").addEventListener("click", () => { const u = unitAt(S.ma); imOpen(pics, 0, `${u.name}, ${ageParts(S.ma).join(" ")}`); });
+    q("#pPic").addEventListener("click", () => { const u = unitAt(S.ma); imOpen(pics, 0, picWhen || `${u.name}, ${ageParts(S.ma).join(" ")}`); });
     const bar = q("#pBar"); let scrub = false; // the column: drag for rough moves (the steps and the list are for exact ones)
     const at = (e) => { const r = bar.getBoundingClientRect(), f = clamp((e.clientX - r.left) / r.width, 0, 1); if (S.mode === "deep") { S.ma = Math.max(JOIN, atX(f)); S.dirty = true; } else { S.year = atHX(f); histYear(S.year); } };
     bar.addEventListener("pointerdown", (e) => { bar.setPointerCapture(e.pointerId); scrub = true; setPlaying(false); stop("peek"); at(e); });
