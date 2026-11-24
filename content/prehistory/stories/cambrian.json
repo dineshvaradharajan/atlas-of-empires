@@ -39,9 +39,31 @@
     "e:gondwana-assembles"
    ],
    "imageIds": [
-    "snowball-earth-globe"
+    "ai-snowball-earth-globe"
    ],
    "images": [
+    {
+     "id": "ai-cambrian-new-gaskiers",
+     "image": "/scenes/cambrian/new-gaskiers.png",
+     "page": "https://pubs.geoscienceworld.org/gsa/geology/article-abstract/44/11/955/195128/Dodging-snowballs-Geochronology-of-the-Gaskiers",
+     "caption": "An imagined coastal landscape during the Gaskiers glaciation, about 580 million years ago. The shoreline, ice cover and microbial mats are interpretive; the glaciation was not necessarily global.",
+     "credit": "AI-generated illustration",
+     "license": "Artist’s impression",
+     "width": 1672,
+     "height": 941,
+     "type": "scene"
+    },
+    {
+     "id": "ai-cambrian-new-timeline",
+     "image": "/scenes/cambrian/new-timeline.png",
+     "page": "https://stratigraphy.org/chart",
+     "caption": "A visual timeline, from left to right: ice-age coasts around 580 million years ago; deep Ediacaran communities around 565 million years ago; microbial-mat animals around 555 million years ago; a Cambrian marine community around 508 million years ago; and an Early Ordovician sea around 480 million years ago. The panels show different times and are not to scale.",
+     "credit": "AI-generated illustration",
+     "license": "Artist’s impression",
+     "width": 2172,
+     "height": 724,
+     "type": "scene"
+    },
     {
      "id": "earth-600-ma-scotese-map",
      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Mollweide_Paleographic_Map_of_Earth%2C_600_Ma_%28Ediacaran_Period%29.png/1920px-Mollweide_Paleographic_Map_of_Earth%2C_600_Ma_%28Ediacaran_Period%29.png",
@@ -116,10 +138,19 @@
     "e:mistaken-point",
     "o:ediacaran-biota"
    ],
-   "imageIds": [
-    "fractofusus-seafloor"
-   ],
+   "imageIds": [],
    "images": [
+    {
+     "id": "ai-cambrian-new-mistaken-point",
+     "image": "/scenes/cambrian/new-mistaken-point.png",
+     "page": "https://www.cambridge.org/core/journals/geological-magazine/article/morphological-variation-in-the-rangeomorph-organism-fractofusus-misrai-from-the-ediacaran-of-newfoundland-canada/7B405D3A13987524FE3B7DFCDEA37854",
+     "caption": "Fractofusus and other rangeomorphs on a deep Ediacaran seafloor at Mistaken Point, around 565 million years ago. Fractofusus lay along the sediment; colours and the appearance of its living neighbours are uncertain.",
+     "credit": "AI-generated illustration",
+     "license": "Artist’s impression",
+     "width": 1672,
+     "height": 941,
+     "type": "scene"
+    },
     {
      "id": "mistaken-point-frond-fossils",
      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Ediacaran_fossils_Mistaken_Point_Newfoundland.jpg/1280px-Ediacaran_fossils_Mistaken_Point_Newfoundland.jpg",
@@ -204,16 +235,33 @@
    ],
    "images": [
     {
-     "id": "kimberella-reconstruction",
-     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Kimberella.jpg/1920px-Kimberella.jpg",
-     "page": "https://commons.wikimedia.org/wiki/File:Kimberella.jpg",
-     "caption": "A reconstruction of Kimberella, a slug-like animal with a front and a back, grazing on a microbial mat on the Ediacaran sea floor.",
-     "credit": "Oleg Kuznetsov (3depix)",
-     "license": "CC BY-SA 4.0",
-     "note": "Kimberella's soft body is known only from impressions; details of its shape are interpretation.",
-     "width": 1920,
-     "height": 1080,
-     "type": "reconstruction"
+     "id": "ai-cambrian-new-dickinsonia",
+     "image": "/scenes/cambrian/new-dickinsonia.png",
+     "page": "https://www.science.org/doi/10.1126/science.aat7228",
+     "caption": "Dickinsonia rests on a microbial mat. Fossil impressions and repeated surface marks suggest it moved between feeding positions, but its soft anatomy, colour and behaviour remain uncertain.",
+     "credit": "AI-generated illustration",
+     "license": "Artist’s impression",
+     "width": 1672,
+     "height": 941,
+     "type": "scene",
+     "size": {
+      "name": "Dickinsonia",
+      "height": "Unknown",
+      "length": "Up to about 1.4 m",
+      "weight": "Unknown",
+      "note": "Maximum reported fossil length; individual sizes varied.",
+      "sizeSource": "https://www.tandfonline.com/doi/full/10.1080/03115510701484705"
+     }
+    },
+    {
+     "id": "ai-kimberella-reconstruction",
+     "image": "/scenes/cambrian/ai-kimberella-reconstruction.png",
+     "page": "https://www.nhm.ac.uk/discover/the-cambrian-period.html",
+     "caption": "Kimberella on a microbial mat. Fossils and nearby feeding traces suggest a mobile animal that grazed on the seafloor; its colour and detailed appearance are uncertain. Background life and scale are imagined.",
+     "credit": "AI-generated illustration",
+     "license": "Artist’s impression",
+     "width": 1672,
+     "height": 941
     },
     {
      "id": "kimberella-quadrata-fossil",
@@ -287,6 +335,36 @@
    ],
    "images": [
     {
+     "id": "ai-cambrian-new-ediacara",
+     "image": "/scenes/cambrian/new-ediacara.png",
+     "page": "https://www.npsa.sa.gov.au/parks/nilpena-ediacara-national-park",
+     "caption": "An imagined Ediacaran seafloor with Dickinsonia and smaller quilted, frond-like organisms. Their soft anatomy, colours and exact community remain uncertain; their appearance is inferred from fossils.",
+     "credit": "AI-generated illustration",
+     "license": "Artist’s impression",
+     "width": 1672,
+     "height": 941,
+     "type": "scene"
+    },
+    {
+     "id": "ai-cambrian-new-ikaria",
+     "image": "/scenes/cambrian/new-ikaria.png",
+     "page": "https://pmc.ncbi.nlm.nih.gov/articles/7149385/",
+     "caption": "A tiny Ikaria-like animal beneath an Ediacaran microbial mat. Fossils and burrows suggest a millimetre-scale bilaterian; its soft anatomy, behaviour and role as the burrow maker remain interpretations.",
+     "credit": "AI-generated illustration",
+     "license": "Artist’s impression",
+     "width": 1672,
+     "height": 941,
+     "type": "scene",
+     "size": {
+      "name": "Ikaria",
+      "height": "Unknown",
+      "length": "About 2–7 mm",
+      "weight": "Unknown",
+      "note": "Rounded from measured fossils, 1.9–6.7 mm; living appearance uncertain.",
+      "sizeSource": "https://pmc.ncbi.nlm.nih.gov/articles/7149385/"
+     }
+    },
+    {
      "id": "nilpena-fossil-bed",
      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Fossil_bed_at_Nilpena_Ediacara_National_Park.jpg/1280px-Fossil_bed_at_Nilpena_Ediacara_National_Park.jpg",
      "page": "https://commons.wikimedia.org/wiki/File:Fossil_bed_at_Nilpena_Ediacara_National_Park.jpg",
@@ -309,18 +387,6 @@
      "width": 1200,
      "height": 1600,
      "type": "fossil"
-    },
-    {
-     "id": "ikaria-wariootia-reconstruction",
-     "image": "https://upload.wikimedia.org/wikipedia/commons/3/36/Ikaria_wariootia.jpg",
-     "page": "https://commons.wikimedia.org/wiki/File:Ikaria_wariootia.jpg",
-     "caption": "Rice-grain-sized Ikaria worms digging shallow burrows through a microbial mat, as imagined by an artist.",
-     "credit": "Apokryltaros",
-     "license": "CC BY-SA 4.0",
-     "note": null,
-     "width": 593,
-     "height": 800,
-     "type": "reconstruction"
     }
    ],
    "evidence": "disputed",
@@ -380,6 +446,25 @@
    "imageIds": [],
    "images": [
     {
+     "id": "ai-cambrian-new-cloudina",
+     "image": "/scenes/cambrian/new-cloudina.png",
+     "page": "https://www.nature.com/articles/s41598-017-05753-8",
+     "caption": "Tiny Cloudina tubes on a microbial mat, with a small hole in one tube. Fossil holes may record attacks by predators, but the identity of any predator and Cloudina’s soft anatomy are uncertain.",
+     "credit": "AI-generated illustration",
+     "license": "Artist’s impression",
+     "width": 1672,
+     "height": 941,
+     "type": "scene",
+     "size": {
+      "name": "Cloudina tubes",
+      "height": "Not applicable",
+      "length": "Up to 15 cm (tube)",
+      "weight": "Unknown",
+      "note": "Maximum reported tube length; widths up to about 7 mm. Sizes varied.",
+      "sizeSource": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5378091/"
+     }
+    },
+    {
      "id": "cloudina-fossils-brazil",
      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Cloudina_fossils_%28Neoproterozoic%3B_Corumba%2C_Brazil%29_%2845453979394%29.jpg/1920px-Cloudina_fossils_%28Neoproterozoic%3B_Corumba%2C_Brazil%29_%2845453979394%29.jpg",
      "page": "https://commons.wikimedia.org/wiki/File:Cloudina_fossils_(Neoproterozoic%3B_Corumba,_Brazil)_(45453979394).jpg",
@@ -390,18 +475,6 @@
      "width": 2814,
      "height": 2003,
      "type": "fossil"
-    },
-    {
-     "id": "cloudina-reconstruction",
-     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Reconstruction_of_the_living_Cloudina%2C_family_Cloudinidae%2C_clade_Cloudinomorpha_%28Neoproterozoic_era%2C_Ediacarium_period%29.png/1280px-Reconstruction_of_the_living_Cloudina%2C_family_Cloudinidae%2C_clade_Cloudinomorpha_%28Neoproterozoic_era%2C_Ediacarium_period%29.png",
-     "page": "https://commons.wikimedia.org/wiki/File:Reconstruction_of_the_living_Cloudina,_family_Cloudinidae,_clade_Cloudinomorpha_(Neoproterozoic_era,_Ediacarium_period).png",
-     "caption": "A scientific drawing of living Cloudina, with tubes of stacked cones lying and standing on the sea floor; the number labels belong to the original paper's key.",
-     "credit": "Becker-Kerber, Pacheco, Rudnitzki et al.",
-     "license": "CC BY-SA 4.0",
-     "note": "What kind of animal built Cloudina, and how it fed, is uncertain.",
-     "width": 1500,
-     "height": 650,
-     "type": "reconstruction"
     }
    ],
    "evidence": "fossil",
@@ -455,6 +528,17 @@
    "imageIds": [],
    "images": [
     {
+     "id": "ai-cambrian-new-treptichnus",
+     "image": "/scenes/cambrian/new-treptichnus.png",
+     "page": "https://stratigraphy.org/gssps/fortunian",
+     "caption": "An interpretive cutaway inspired by Treptichnus pedum, a trace fossil of linked probing burrows. Fossil traces preserve patterns of activity, not the identity of the animal that made them.",
+     "credit": "AI-generated illustration",
+     "license": "Artist’s impression",
+     "width": 1752,
+     "height": 897,
+     "type": "scene"
+    },
+    {
      "id": "fortune-head-gssp",
      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Fortune_Head_GSSP%2C_Newfoundland.jpg/1920px-Fortune_Head_GSSP%2C_Newfoundland.jpg",
      "page": "https://commons.wikimedia.org/wiki/File:Fortune_Head_GSSP,_Newfoundland.jpg",
@@ -465,18 +549,6 @@
      "width": 3888,
      "height": 2592,
      "type": "landscape"
-    },
-    {
-     "id": "treptichnus-pedum-diagram",
-     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Treptichnus_pedum.png/960px-Treptichnus_pedum.png",
-     "page": "https://commons.wikimedia.org/wiki/File:Treptichnus_pedum.png",
-     "caption": "A drawing of the branching burrow pattern of Treptichnus pedum, made of short tunnels joined end to end.",
-     "credit": "Aleksey Nagovitsyn",
-     "license": "CC BY-SA 3.0",
-     "note": null,
-     "width": 1030,
-     "height": 757,
-     "type": "reconstruction"
     }
    ],
    "evidence": "fossil",
@@ -538,6 +610,24 @@
    "imageIds": [],
    "images": [
     {
+     "id": "ai-cambrian-new-halkieria",
+     "image": "/scenes/cambrian/new-halkieria.png",
+     "page": "https://onlinelibrary.wiley.com/doi/full/10.1111/j.1463-6409.2005.00177.x",
+     "caption": "Halkieria, an early Cambrian animal with a covering of small scales and a shell at each end. Its soft tissues, colour and this seafloor are interpretations based on fossils.",
+     "credit": "AI-generated illustration",
+     "license": "Artist’s impression",
+     "width": 1672,
+     "height": 941,
+     "type": "scene",
+     "size": {
+      "name": "Halkieria",
+      "height": "Unknown",
+      "length": "A few centimetres",
+      "weight": "Unknown",
+      "note": "Approximate; individuals varied."
+     }
+    },
+    {
      "id": "small-shelly-fossils-shaanxi",
      "image": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Small_shelly_fossils_from_the_Yangjiagou_Member%2C_Lowermost_Cambrian_of_Tongying_Formation%2C_southern_Shaanxi%2C_Northwestern_China.png",
      "page": "https://commons.wikimedia.org/wiki/File:Small_shelly_fossils_from_the_Yangjiagou_Member,_Lowermost_Cambrian_of_Tongying_Formation,_southern_Shaanxi,_Northwestern_China.png",
@@ -548,18 +638,6 @@
      "width": 590,
      "height": 484,
      "type": "fossil"
-    },
-    {
-     "id": "halkieria-reconstruction",
-     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Halkieria_reconstruction.png/1280px-Halkieria_reconstruction.png",
-     "page": "https://commons.wikimedia.org/wiki/File:Halkieria_reconstruction.png",
-     "caption": "A reconstruction of Halkieria, a slug-shaped early Cambrian animal covered in small scales with a shell at each end; its loose scales are common small shelly fossils.",
-     "credit": "Qohelet12",
-     "license": "CC BY-SA 4.0",
-     "note": "Halkieria's place in the animal family tree is debated.",
-     "width": 1828,
-     "height": 912,
-     "type": "reconstruction"
     }
    ],
    "evidence": "disputed",
@@ -629,10 +707,27 @@
     "o:trilobites",
     "o:arthropods"
    ],
-   "imageIds": [
-    "anomalocaris-hunting"
-   ],
+   "imageIds": [],
    "images": [
+    {
+     "id": "ai-cambrian-new-anomalocaris",
+     "image": "/scenes/cambrian/new-anomalocaris.png",
+     "page": "https://burgess-shale.rom.on.ca/fossils/anomalocaris-canadensis/",
+     "caption": "An imagined Anomalocaris canadensis swimming above trilobites. Its Burgess Shale fossils date to about 508 million years ago, later than the 521-million-year-old events in this chapter. The surroundings, colours and behaviour are reconstructed.",
+     "credit": "AI-generated illustration",
+     "license": "Artist’s impression",
+     "width": 1672,
+     "height": 941,
+     "type": "scene",
+     "size": {
+      "name": "Anomalocaris canadensis",
+      "height": "Not applicable",
+      "length": "25 cm (complete fossil)",
+      "weight": "Unknown",
+      "note": "Isolated fragments suggest larger individuals, perhaps up to 1 m; that maximum is an estimate.",
+      "sizeSource": "https://burgess-shale.rom.on.ca/fossils/anomalocaris-canadensis/"
+     }
+    },
     {
      "id": "anomalocaris-eye-emu-bay",
      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Fossilised_Anomalocaris_eye.jpg/1920px-Fossilised_Anomalocaris_eye.jpg",
@@ -737,9 +832,39 @@
     "o:trilobites"
    ],
    "imageIds": [
-    "hallucigenia-on-sponge"
+    "ai-hallucigenia-on-sponge"
    ],
    "images": [
+    {
+     "id": "ai-cambrian-new-chengjiang",
+     "image": "/scenes/cambrian/new-chengjiang.png",
+     "page": "https://whc.unesco.org/en/list/1389/",
+     "caption": "An imagined early Cambrian Chengjiang sea with fish-like animals, trilobites and sponges. These groups are known from fossils, but the precise forms, surroundings and encounter are reconstructed.",
+     "credit": "AI-generated illustration",
+     "license": "Artist’s impression",
+     "width": 1672,
+     "height": 941,
+     "type": "scene"
+    },
+    {
+     "id": "ai-cambrian-new-sirius-passet",
+     "image": "/scenes/cambrian/new-sirius-passet.png",
+     "page": "https://www.nature.com/articles/s41467-018-03464-w",
+     "caption": "Kerygmachela in an imagined early Cambrian Sirius Passet sea. Fossils preserve repeated lateral flaps, frontal appendages and a tail spine; colours and behaviour are uncertain.",
+     "credit": "AI-generated illustration",
+     "license": "Artist’s impression",
+     "width": 1672,
+     "height": 941,
+     "type": "scene",
+     "size": {
+      "name": "Kerygmachela",
+      "height": "Not applicable",
+      "length": "Not reliably estimated",
+      "weight": "Unknown",
+      "note": "Fossils preserve the body; total length is uncertain.",
+      "sizeSource": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5844904/"
+     }
+    },
     {
      "id": "maotianshan-shale-outcrop",
      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Maotianshan_shale_outcrop.JPG/1920px-Maotianshan_shale_outcrop.JPG",
@@ -763,18 +888,6 @@
      "width": 4096,
      "height": 3072,
      "type": "fossil"
-    },
-    {
-     "id": "kerygmachela-reconstruction",
-     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Kerygmachela_life_restoration.jpg/960px-Kerygmachela_life_restoration.jpg",
-     "page": "https://commons.wikimedia.org/wiki/File:Kerygmachela_life_restoration.jpg",
-     "caption": "Kerygmachela, a finned relative of the arthropods from Sirius Passet in Greenland, swimming with its long front limbs held forward.",
-     "credit": "Rebecca Gelernter",
-     "license": "CC BY 4.0",
-     "note": null,
-     "width": 1091,
-     "height": 753,
-     "type": "reconstruction"
     }
    ],
    "evidence": "fossil",
@@ -833,16 +946,22 @@
    "imageIds": [],
    "images": [
     {
-     "id": "haikouichthys-reconstruction",
-     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Haikouichthys-ercaicunensis-restoration.jpg/1920px-Haikouichthys-ercaicunensis-restoration.jpg",
-     "page": "https://commons.wikimedia.org/wiki/File:Haikouichthys-ercaicunensis-restoration.jpg",
-     "caption": "A painting of Haikouichthys, one of the first animals with a backbone, with gill openings behind the head and a long fin along the back.",
-     "credit": "Makergreen",
-     "license": "CC BY-SA 4.0",
-     "note": "Painted in 2024 with one pair of eyes; a 2026 study suggests it also had two small eyes on top of the head.",
-     "width": 2040,
-     "height": 1573,
-     "type": "reconstruction"
+     "id": "ai-cambrian-new-haikouichthys",
+     "image": "/scenes/cambrian/new-haikouichthys.png",
+     "page": "https://www.nature.com/articles/s41586-025-09966-0",
+     "caption": "Haikouichthys, a tiny early vertebrate from Chengjiang. A 2026 study interpreted two lateral eyes and two smaller eyes on top of the head; their appearance, the mouth, colour and soft tissues are reconstructed.",
+     "credit": "AI-generated illustration",
+     "license": "Artist’s impression",
+     "width": 1672,
+     "height": 941,
+     "type": "scene",
+     "size": {
+      "name": "Haikouichthys",
+      "height": "Not applicable",
+      "length": "About 2.5 cm",
+      "weight": "Unknown",
+      "note": "Approximate; fossil individuals vary."
+     }
     },
     {
      "id": "haikouichthys-fossil-ivpp",
@@ -922,9 +1041,28 @@
     "o:trilobites"
    ],
    "imageIds": [
-    "opabinia-seafloor"
+    "ai-opabinia-seafloor"
    ],
    "images": [
+    {
+     "id": "ai-cambrian-new-burgess",
+     "image": "/scenes/cambrian/new-burgess.png",
+     "page": "https://burgess-shale.rom.on.ca/main-gallery/",
+     "caption": "An imagined Burgess Shale community with Opabinia, Wiwaxia and Pikaia. Pikaia has no known fossil evidence of eyes; colours, behaviour and surroundings are interpretive.",
+     "credit": "AI-generated illustration",
+     "license": "Artist’s impression",
+     "width": 1672,
+     "height": 941,
+     "type": "scene",
+     "size": {
+      "name": "Opabinia",
+      "height": "Unknown",
+      "length": "About 4.3–7 cm",
+      "weight": "Unknown",
+      "note": "Fossil body lengths, excluding the proboscis.",
+      "sizeSource": "https://burgess-shale.rom.on.ca/fossils/opabinia-regalis/"
+     }
+    },
     {
      "id": "walcott-quarry-burgess-shale",
      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/WalcottQuarry080509.jpg/1920px-WalcottQuarry080509.jpg",
@@ -950,16 +1088,14 @@
      "type": "fossil"
     },
     {
-     "id": "pikaia-reconstruction",
-     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Pikaia_recon.png/960px-Pikaia_recon.png",
-     "page": "https://commons.wikimedia.org/wiki/File:Pikaia_recon.png",
-     "caption": "A reconstruction of Pikaia, a small eel-like swimmer from the Burgess Shale and one of the earliest known chordates.",
-     "credit": "Entelognathus",
-     "license": "CC BY-SA 4.0",
-     "note": "Pikaia's anatomy was reinterpreted in 2024 and is still debated.",
-     "width": 1252,
-     "height": 1069,
-     "type": "reconstruction"
+     "id": "ai-pikaia-reconstruction",
+     "image": "/scenes/cambrian/ai-pikaia-reconstruction.png",
+     "page": "https://burgess-shale.rom.on.ca/fossils/pikaia-gracilens/",
+     "caption": "Pikaia in the Burgess Shale sea. Fossils show a small, segmented early chordate; its anatomy is debated and this living appearance is an interpretation. Background life and scale are imagined.",
+     "credit": "AI-generated illustration",
+     "license": "Artist’s impression",
+     "width": 1672,
+     "height": 941
     }
    ],
    "evidence": "fossil",
@@ -1023,20 +1159,27 @@
     "o:sponges"
    ],
    "imageIds": [
-    "fezouata-biota-scene"
+    "ai-fezouata-biota-scene"
    ],
    "images": [
     {
-     "id": "aegirocassis-reconstruction",
-     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/20191205_Aegirocassis_benmoulai_Aegirocassis_benmoulae.png/1280px-20191205_Aegirocassis_benmoulai_Aegirocassis_benmoulae.png",
-     "page": "https://commons.wikimedia.org/wiki/File:20191205_Aegirocassis_benmoulai_Aegirocassis_benmoulae.png",
-     "caption": "A reconstruction of Aegirocassis, a two-metre radiodont from the Fezouata Shale whose bristled head arms sieved plankton from the water.",
-     "credit": "Junnn11",
-     "license": "CC BY-SA 4.0",
-     "note": null,
-     "width": 1900,
-     "height": 700,
-     "type": "reconstruction"
+     "id": "ai-cambrian-new-fezouata",
+     "image": "/scenes/cambrian/new-fezouata.png",
+     "page": "https://www.nature.com/articles/nature14256",
+     "caption": "Aegirocassis filters food above an imagined Early Ordovician Fezouata seafloor. Fossils indicate a radiodont more than two metres long; the scene and colours are reconstructed. This is after the Cambrian.",
+     "credit": "AI-generated illustration",
+     "license": "Artist’s impression",
+     "width": 1672,
+     "height": 941,
+     "type": "scene",
+     "size": {
+      "name": "Aegirocassis",
+      "height": "Not applicable",
+      "length": "More than 2 m",
+      "weight": "Unknown",
+      "note": "Approximate body length reconstructed from fossil material.",
+      "sizeSource": "https://www.nature.com/articles/nature14256"
+     }
     }
    ],
    "evidence": "fossil",
