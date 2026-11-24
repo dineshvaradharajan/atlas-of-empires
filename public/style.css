@@ -75,7 +75,8 @@ body.nodock { --dock-h: 0px; --dock-b: 0px; }
 .pillbtn:hover { background: var(--chip); color: var(--ink); }
 .pillbtn.dark, .pillbtn[aria-expanded="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); font-weight: 600; }
 .pillbtn.dark:hover { background: #2b2b28; }
-.pillbtn.block { width: 100%; }
+.pillbtn.block { width: 100%; height: auto; min-height: 44px; padding: 9px 18px; white-space: normal; line-height: 1.3; text-wrap: balance; } /* a long name wraps ("Follow ... through its history") */
+.pillbtn.block svg { flex: none; }
 .round { width: 56px; height: 56px; flex: none; display: grid; place-items: center; border: 1px solid var(--rule-strong); border-radius: 28px; background: var(--bg); color: var(--ink); padding: 0; }
 .round svg { width: 20px; height: 20px; }
 .round:hover { background: var(--chip); }
@@ -243,9 +244,12 @@ h3.sec { margin: 4px 0 -4px; font: 600 12px var(--sans); letter-spacing: .12em; 
 .facts span { font: 600 11px var(--sans); letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); }
 .facts b { font: 400 14px/1.4 var(--sans); color: var(--ink); }
 
-.kpic { margin: 0; }
-.kpic img { display: block; width: 100%; max-height: 190px; object-fit: cover; object-position: 50% 20%; border-radius: 10px; background: var(--chip); }
-.kpic figcaption { margin-top: 6px; font-size: 11px; color: var(--ink-3); }
+/* A card's picture is shown whole, at most 300px high. A tall one is narrow, so its caption goes beside it when there is room (the
+   figure's items wrap: the caption asks for 110px), and below it when there is not. */
+figure.lead, .kpic { margin: 0; display: flex; flex-wrap: wrap; align-items: flex-end; gap: 6px 14px; }
+figure.lead img, .kpic img { display: block; flex: none; width: auto; height: auto; max-width: 100%; max-height: 300px; border-radius: 8px; background: var(--chip); }
+figure.lead figcaption, .kpic figcaption { flex: 1 1 110px; min-width: 0; }
+.kpic figcaption { font-size: 11px; color: var(--ink-3); }
 .kpic figcaption a { color: var(--ink-3); }
 .facts em { font: 600 12px var(--sans); font-style: normal; color: var(--ink-3); }
 .facts em.up { color: #1d6b3a; }
@@ -388,9 +392,7 @@ details.credits .note { font-size: 12px; }
 .mfig img { width: 100%; display: block; border: 1px solid var(--rule); border-radius: 8px; background: #f6f3ea; }
 .mfig.news img { filter: contrast(1.05); }
 .mfig figcaption { font-size: 12px; color: var(--ink-2); margin-top: 5px; line-height: 1.45; }
-figure.lead { margin: 0; }
-figure.lead img { width: 100%; height: 200px; object-fit: cover; display: block; background: var(--chip); border-radius: 8px; }
-figure.lead figcaption { font-size: 12px; color: var(--ink-3); margin-top: 6px; line-height: 1.45; }
+figure.lead figcaption { font-size: 12px; color: var(--ink-3); line-height: 1.45; }
 figure.lead figcaption a { color: var(--ink-3); }
 .evb { display: inline-block; padding: 1px 7px; border-radius: 10px; font: 700 10px/1.6 var(--sans); letter-spacing: .04em; text-transform: uppercase; vertical-align: middle; white-space: nowrap; }
 .ev-written { background: #dfeee3; color: #1d6b3a; }

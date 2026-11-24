@@ -8,6 +8,7 @@
 
      node tools/og.mjs --sample DIR          a few of each kind into DIR, to look at
      node tools/og.mjs [--only wars,moments] [--out public/og]     the full run
+     node tools/og.mjs --only realms --shard 1/3                   one of three runs side by side
      Realm pages are read from public/realms/, so run tools/seo.py first.
 
    Needs the site served locally (python3 tools/serve.py, or any static server on public/) and Google Chrome installed.
@@ -61,6 +62,8 @@ if (existsSync(RD)) {
 }
 let todo = items.filter((it) => !ONLY.length || ONLY.includes(it.sec));
 if (!SAMPLE && !process.argv.includes("--force")) todo = todo.filter((it) => !existsSync(join(OUT, it.sec, `${it.id}.jpg`))); // a run that stopped picks up where it left off
+const [SH, OF] = arg("--shard", "1/1").split("/").map(Number); // --shard 2/3: every third page, from the second, to run three at once
+todo = todo.filter((it, i) => i % OF === SH - 1);
 if (SAMPLE && IDS.length) todo = IDS.map((id) => todo.find((it) => it.id === id)).filter(Boolean);
 else if (SAMPLE) { const pick = { wars: ["peloponnesian-war", "world-war-ii"], moments: ["egypt-unified", "moon-landing"], empires: ["rome", "mongol"], eras: ["1492", "-500"], realms: ["kanva-dynasty", "mahan", "jalayirid-sultanate", "licchavi-kingdom-of-nepal", "republic-of-india"] };
   todo = Object.entries(pick).filter(([sec]) => !ONLY.length || ONLY.includes(sec)).flatMap(([sec, ids]) => ids.map((id) => items.find((it) => it.sec === sec && it.id === id) || items.find((it) => it.sec === sec))).filter((v, i, a) => v && a.indexOf(v) === i); }
@@ -112,9 +115,9 @@ const STYLES = { card: `
   #ogcap .b img { width: 30px; height: 21px; }
   #ogcap .t { position: absolute; left: 52px; top: 121px; width: 400px; }
   #ogcap .k { font: 600 13px/1.2 Inter, sans-serif; letter-spacing: .18em; text-transform: uppercase; color: #c8321e; }
-  #ogcap h1 { margin: 12px 0 0; font: 800 58px/1 "Source Serif 4", Georgia, serif; letter-spacing: -.015em; overflow-wrap: break-word; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; overflow: hidden; }
+  #ogcap h1 { margin: 12px 0 0; font: 800 58px/1.02 "Source Serif 4", Georgia, serif; letter-spacing: -.015em; overflow-wrap: break-word; }
   #ogcap h1.m { font-size: 48px; } #ogcap h1.s { font-size: 40px; }
-  #ogcap p { margin: 18px 0 0; width: 370px; font: 400 17px/1.5 Inter, sans-serif; color: #3b3b37; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; overflow: hidden; }
+  #ogcap p { margin: 20px 0 0; width: 352px; font: 400 17px/1.5 Inter, sans-serif; color: #3b3b37; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; overflow: hidden; }
   #ogcap .y { position: absolute; left: 52px; bottom: 68px; font: 800 76px/.9 "Source Serif 4", Georgia, serif; letter-spacing: -.02em; color: #c8321e; white-space: nowrap; }
   #ogcap .y.m { font-size: 58px; } #ogcap .y.s { font-size: 44px; }
   #ogcap .u { position: absolute; left: 52px; bottom: 44px; font: 500 14px/1 Inter, sans-serif; color: #5e5e59; }`,
@@ -127,18 +130,19 @@ const boxOf = (it) => (arg("--box", "") ? arg("--box").split(",").map(Number) : 
 const setup = `(() => { if (document.getElementById("ogcap")) return; const s = document.createElement("style"); s.id = "ogstyle"; document.head.append(s);
   const d = document.createElement("div"); d.id = "ogcap"; d.innerHTML = '<div class="b"><img src="logo.png" alt="">THE WORLD ATLAS</div><div class="t"><div class="k"></div><h1></h1><p></p></div><div class="y"></div><div class="u">worldatlas.site</div>'; document.body.append(d); })()`;
 // note: the kicker ("Realm · approximate borders · 1574–1708") splits into its label and the years, which get the numerals
-const caption = (it) => { const st = styleOf(it), parts = it.kicker ? it.kicker.split(" · ") : [], yrs = st === "note" && parts.length > 1 && /\d/.test(parts.at(-1)) ? parts.pop() : "";
+const caption = (it) => { const st = styleOf(it), parts = it.kicker ? it.kicker.split(" · ") : [], yrs = st === "note" && parts.length > 1 && /\d/.test(parts.at(-1)) ? parts.pop().replace(/ \(.*\)$/, "") : "";
   const kick = st === "note" && it.kicker ? parts.join(", ") : it.kick;
   return `(() => { document.getElementById("ogstyle").textContent = ${JSON.stringify(HIDE + STYLES[st])};
   const c = document.getElementById("ogcap"), h = c.querySelector("h1"), y = c.querySelector(".y"); c.querySelector(".k").textContent = ${JSON.stringify(kick)}; h.textContent = ${JSON.stringify(it.title)};
   h.className = ${JSON.stringify(it.title)}.length > 44 ? "s" : ${JSON.stringify(it.title)}.length > 24 ? "m" : ""; c.querySelector("p").textContent = ${JSON.stringify(it.line)};
+  h.style.fontSize = ""; if (${st === "note"}) for (const z of [48, 40, 34, 29, 25, 22]) { if (h.offsetHeight <= 182 && h.scrollWidth <= h.clientWidth) break; h.style.fontSize = z + "px"; } // the whole name, never cut off
   y.textContent = ${JSON.stringify(yrs)}; y.className = "y" + (${yrs.length} > 13 ? " s" : ${yrs.length} > 9 ? " m" : ""); })()`; };
 // settled: the loading note is gone, the fonts are in, and nothing has been fetched for a moment (borders, a war's layers)
 const settle = async (min) => { await sleep(min); for (let i = 0; i < 40; i++) { const ok = await js(`(async () => { await document.fonts.ready; const n = performance.getEntriesByType("resource").length; await new Promise((r) => setTimeout(r, 450)); return !document.querySelector("#loading") && performance.getEntriesByType("resource").length === n; })()`); if (ok) return; } };
 
 // The atlas frames a view for its own page. Here the caption card is wider, so the subject (a moment's place, a war's or an empire's
 // events) is moved to the middle of the room beside the card, and the map zoomed out if they would not fit there.
-const FRAME = `((P, box, zin) => { const c = document.querySelector("#map"), r = c.getBoundingClientRect(), z = c.__zoom; if (!z || !P.length) return false;
+const FRAME = `((P, box, zin, area) => { const c = document.querySelector("#map"), r = c.getBoundingClientRect(), z = c.__zoom; if (!z || !P.length) return false;
   const edge = []; for (let lon = -180; lon <= 180; lon += 5) edge.push([lon, 84], [lon, -57]); for (let lat = -57; lat <= 84; lat += 3) edge.push([-180, lat], [180, lat]);
   const pj = d3.geoNaturalEarth1().fitExtent([[10, 8], [r.width - 56, r.height - 30]], { type: "MultiPoint", coordinates: edge }), Q = P.map((p) => pj(p)).filter(Boolean); if (!Q.length) return false;
   const xs = Q.map((q) => q[0]).sort((a, b) => a - b), ys = Q.map((q) => q[1]).sort((a, b) => a - b), cut = Q.length > 8 ? 1 : 0; // one far-off event does not set the frame
@@ -146,6 +150,10 @@ const FRAME = `((P, box, zin) => { const c = document.querySelector("#map"), r =
   const fit = Math.min((R - L) * (zin ? .6 : .8) / Math.max(1e-6, (x1 - x0) * z.k), (B - T) * (zin ? .6 : .8) / Math.max(1e-6, (y1 - y0) * z.k));
   const k = zin ? Math.max(1, Math.min(zin, z.k * fit)) : Math.max(1, z.k * Math.min(1, fit)); // zin: may zoom in, up to that scale, to a realm's shape
   c.__zoom = d3.zoomIdentity.translate((L + R) / 2 - k * (x0 + x1) / 2, (T + B) / 2 - k * (y0 + y1) / 2).scale(k);
+  document.getElementById("ogring")?.remove();
+  if (area && area * k * k < 320) { // too small to see: a red ring round it (an oval clear of the corners of its box)
+    const m = c.__zoom, d = document.createElement("div"), w = (x1 - x0) * k * 1.42 + 40, h = (y1 - y0) * k * 1.42 + 40; d.id = "ogring";
+    d.style.cssText = "position:fixed;z-index:98;box-sizing:border-box;border:3px solid #e8432d;border-radius:50%;width:" + w + "px;height:" + h + "px;left:" + (r.left + m.applyX((x0 + x1) / 2) - w / 2) + "px;top:" + (r.top + m.applyY((y0 + y1) / 2) - h / 2) + "px"; document.body.append(d); }
   c.dispatchEvent(new WheelEvent("wheel", { deltaY: .5, clientX: (L + R) / 2, clientY: (T + B) / 2, bubbles: true, cancelable: true })); return true; })`;
 let loaded = 0, n = 0; const t0 = Date.now(), failed = [];
 const draw = async (it) => {
@@ -153,10 +161,10 @@ const draw = async (it) => {
   if (!loaded || loaded > 100) { await cdp("Page.navigate", { url }); loaded = 1; await settle(2500); } // a fresh page every 100 pictures
   else { await js(`location.hash = ${JSON.stringify("#" + it.hash)}`); loaded++; await settle(1400); }
   await js(setup); await js(caption(it));
-  let focus = it.focus, zin = 0;
+  let focus = it.focus, zin = 0, area = 0;
   if (it.sec === "realms") { const bb = await js("window.atlasSelBox ? window.atlasSelBox() : null"); // the realm's own shape, filling about 60% of the room
-    if (bb && bb[0][0] <= bb[1][0]) { focus = [bb[0], bb[1], [bb[0][0], bb[1][1]], [bb[1][0], bb[0][1]]]; zin = 24; } } // 24: as close as the atlas itself goes
-  if (focus?.length) await js(`${FRAME}(${JSON.stringify(focus)}, ${JSON.stringify(boxOf(it))}, ${zin})`);
+    if (bb && bb[0][0] <= bb[1][0]) { focus = [bb[0], bb[1], [bb[0][0], bb[1][1]], [bb[1][0], bb[0][1]]]; zin = 24; area = bb[2]; } else console.log(`og: ${it.id}: ${bb ? "crosses the date line" : "no shape on the map"}; the atlas's own view is used`); } // 24: as close as the atlas itself goes
+  if (focus?.length) await js(`${FRAME}(${JSON.stringify(focus)}, ${JSON.stringify(boxOf(it))}, ${zin}, ${area})`);
   await sleep(450); // the map's cross-fade, and the redraw after the move
   const shot = await cdp("Page.captureScreenshot", { format: "jpeg", quality: 78, clip: { x: 0, y: 0, width: W, height: H, scale: 1 } });
   const file = join(OUT, it.sec, `${it.id}.jpg`); mkdirSync(dirname(file), { recursive: true }); writeFileSync(file, Buffer.from(shot.data, "base64")); };

@@ -1485,6 +1485,7 @@ function fillOf(it) { // the fill for an item; "HATCH" = peoples pattern
   if (it.kind === "culture") return S.war ? theme.unknown : "HATCH";
   if (S.journey && inJourney(it)) return theme.highlight;
   if (it.p.recon && it.p.n === S.sel) return theme.highlight;
+  if (S.ogFill?.has(it.p)) return theme.highlight; // share pictures only (atlasSelBox)
   if (S.war) { const sd = warSideOf(it); return sd >= 0 ? sideTint(sd) : theme.unknown; } // only the warring sides keep (soft) colour
   return colorOf(it.key);
 }
@@ -2109,11 +2110,19 @@ function boundsOf(feats) {
   return b;
 }
 const activeFeats = (key) => S.states.filter((f) => f.properties.k === key || f.properties.n === key);
-// For tools/og.mjs, which draws the share pictures: the lon/lat box round the main body of the selected realm, as boundsOf frames it.
+// For tools/og.mjs, which draws the share pictures: fills the selected realm (a member of a group too, which the atlas only
+// outlines) and gives the lon/lat box round its main body, as boundsOf frames it. A group with no shapes of its own that year is
+// its members; a relation ("(Allegiance of A to B)") is the realms it names.
 window.atlasSelBox = () => {
-  const parts = []; for (const f of S.sel ? activeFeats(S.sel) : []) for (const poly of f.geometry.type === "Polygon" ? [f.geometry.coordinates] : f.geometry.coordinates) { const g = { type: "Polygon", coordinates: poly }; parts.push({ g, a: d3.geoArea(g) }); }
+  const key = S.sel || "", two = (key.match(/^\((?:Allegiance|Vassalage) of (.+) to (.+)\)$/) || key.match(/^\((?:Alliance|Personal union) (?:between|of) (.+) (?:and|with) (.+)\)$/) || []).slice(1);
+  let fs = key ? activeFeats(key) : [];
+  if (!fs.length && key) fs = S.states.filter(({ properties: p }) => realm(p.n)?.memberOf?.includes(key) || two.includes(clean(p.n)) || two.includes(clean(p.k)));
+  S.ogFill = new Set(fs.map((f) => f.properties)); scheduleDraw();
+  const parts = []; for (const f of fs) for (const poly of f.geometry.type === "Polygon" ? [f.geometry.coordinates] : f.geometry.coordinates) { const g = { type: "Polygon", coordinates: poly }; parts.push({ g, a: d3.geoArea(g) }); }
   const big = Math.max(0, ...parts.map((p) => p.a)), main = parts.filter((p) => p.a >= big * 0.02).map((p) => p.g.coordinates);
-  return main.length ? d3.geoBounds({ type: "MultiPolygon", coordinates: main }) : null;
+  if (!main.length) return null;
+  const mp = { type: "MultiPolygon", coordinates: main };
+  return [...d3.geoBounds(mp), geoPath.area(mp)]; // and its size in pixels at zoom 1
 };
 function flyToRegion(bb) {
   const pts = [bb[0], bb[1], [bb[0][0], bb[1][1]], [bb[1][0], bb[0][1]]].map((p) => projection(p));
