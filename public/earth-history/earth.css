@@ -296,6 +296,14 @@ svg { fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round
 /* ---------------------------------------------------------------- the picture card: open full screen, thumbnails */
 .picopen { position: relative; display: block; width: 100%; padding: 0; border: 0; background: none; cursor: zoom-in; }
 .picopen img { display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: cover; }
+.animal-size { color: #fff; background: rgba(8, 13, 19, .86); border: 1px solid rgba(255,255,255,.24); border-radius: 9px; padding: 8px 10px; text-align: left; font: 500 12px/1.4 var(--sans); }
+.animal-size[hidden] { display: none; }
+.animal-size strong, .animal-size span, .animal-size small { display: block; }
+.animal-size strong { font-size: 13px; }
+.animal-size small { color: #d0d5d7; font-size: 10px; }
+#picSize { position: absolute; right: 8px; bottom: 8px; max-width: 55%; font-size: 10px; padding: 5px 7px; }
+#picSize strong { font-size: 11px; }
+#picSize small { font-size: 9px; }
 .picgo { position: absolute; left: 10px; bottom: 10px; display: flex; align-items: center; gap: 7px; height: 30px; padding: 0 12px; border-radius: 15px; background: rgba(4, 6, 12, .72); color: #fff; font: 600 12.5px var(--sans); }
 .picgo svg { width: 14px; height: 14px; }
 .picopen:hover .picgo { background: var(--ink); color: #0b0d12; }
@@ -329,6 +337,8 @@ svg { fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round
 .imnav svg { width: 22px; height: 22px; }
 .imnav.prev { left: 22px; } .imnav.next { right: 22px; }
 .imtext { position: absolute; left: 44px; bottom: 116px; width: min(680px, calc(100% - 88px)); z-index: 2; }
+#imSize { position: fixed; right: 44px; bottom: 116px; width: 235px; box-sizing: border-box; }
+#immerse.has-size .imtext { width: min(680px, calc(100% - 360px)); }
 .imwhen { margin: 0; font: 700 13px var(--sans); letter-spacing: .1em; text-transform: uppercase; color: rgba(255, 255, 255, .78); }
 #imTitle { margin: 6px 0 12px; font: 900 clamp(34px, 5.2vw, 64px)/1 var(--display); letter-spacing: -.01em; text-shadow: 0 2px 18px rgba(0, 0, 0, .5); }
 .imcap { margin: 0 0 6px; max-width: 58ch; font: 500 17px/1.45 var(--sans); text-shadow: 0 1px 10px rgba(0, 0, 0, .7); }
@@ -346,7 +356,8 @@ svg { fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round
 .imthumbs img { width: 100%; height: 100%; object-fit: cover; display: block; }
 body.immersed #bar, body.immersed #tabbar { visibility: hidden; }
 @media (max-width: 760px) {
-  .imtext { left: 18px; bottom: 92px; width: calc(100% - 36px); }
+  .imtext, #immerse.has-size .imtext { left: 18px; bottom: 92px; width: calc(100% - 36px); }
+  #imSize { position: static; margin: 0 0 10px auto; width: max-content; max-width: 100%; }
   #imTitle { font-size: 32px; } .imcap { font-size: 15px; }
   .imthumbs { left: 18px; right: 18px; bottom: 16px; height: 56px; } .imthumbs button { width: 80px; height: 52px; }
   .imnav { top: 38%; width: 42px; height: 42px; } .imnav.prev { left: 10px; } .imnav.next { right: 10px; }

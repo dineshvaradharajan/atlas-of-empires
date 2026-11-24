@@ -286,8 +286,9 @@ function imOpen(list, i, when) { if (!list.length) return; IM.list = list; IM.wh
   $("#imThumbs").innerHTML = list.map((p, k) => `<button type="button" data-k="${k}" aria-label="Picture ${k + 1}"><img src="${esc(sized(p, 250))}" data-fb="${esc(p.image)}" alt="" loading="lazy"></button>`).join(""); imShow(i || 0); $("#imClose").focus(); }
 function imShow(i) { const n = IM.list.length; IM.i = (i + n) % n; const p = IM.list[IM.i], src = sized(p, innerWidth * Math.min(devicePixelRatio || 1, 2) > 1400 ? 1920 : 1280);
   const im = $("#imImg"); im.dataset.fb = p.image; im.src = src; im.alt = p.caption || ""; $("#imBg").style.backgroundImage = `url("${sized(p, 500)}")`;
+  const size = p.size, badge = $("#imSize"); badge.hidden = !size; badge.innerHTML = size ? `<strong>${esc(size.name)}</strong><span>Height: ${esc(size.height)} · Length: ${esc(size.length)} · Weight: ${esc(size.weight)}</span><small>${esc(size.note || "Estimated; varies by individual")}</small>` : "";
   $("#imWhen").textContent = `${IM.when}${IM.when ? " \u00b7 " : ""}${IM.i + 1} of ${n}`; $("#imCap").textContent = p.caption || "";
-  const a = $("#imCred"); a.textContent = [p.credit, p.license, "Wikimedia Commons"].filter(Boolean).join(", "); a.href = p.page || p.image;
+  const a = $("#imCred"); a.textContent = [p.credit, p.license, p.id?.startsWith("ai-") ? "Read the source" : "Wikimedia Commons"].filter(Boolean).join(", "); a.href = p.page || p.image;
   document.querySelectorAll("#imThumbs button").forEach((b) => b.classList.toggle("on", +b.dataset.k === IM.i)); $("#imThumbs .on")?.scrollIntoView({ inline: "center", block: "nearest" });
   $("#imPrev").hidden = $("#imNext").hidden = n < 2; }
 function imClose() { $("#immerse").hidden = true; }

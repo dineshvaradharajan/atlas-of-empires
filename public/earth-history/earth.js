@@ -341,10 +341,14 @@ function thumb(url, w, ow) {
 const fallback = (q) => `data-fb="${esc(q.image)}"`; // if a size is refused, the listed (checked) one; see the error listener in wire()
 addEventListener("error", (e) => { const t = e.target; if (t.tagName === "IMG" && t.dataset.fb && t.src !== t.dataset.fb) t.src = t.dataset.fb; }, true);
 const FIT = new Set(["fossil", "reconstruction", "rock"]); // shown whole on a blurred backdrop rather than cropped to fill the screen
+function animalSize(el, size) {
+  el.hidden = !size;
+  el.innerHTML = size ? `<strong>${esc(size.name)}</strong><span>Height: ${esc(size.height)} · Length: ${esc(size.length)} · Weight: ${esc(size.weight)}</span><small>${esc(size.note || "Estimated; varies by individual")}</small>` : "";
+}
 function renderPic() {
   const f = $("#pic"); f.hidden = !pics.length; if (!pics.length) return;
   const p = pics[picI]; $("#picImg").onerror = () => { $("#picImg").onerror = null; $("#picImg").src = p.image; }; $("#picImg").src = thumb(p.image, 960, p.width); $("#picImg").alt = p.caption; $("#picLink").href = p.page;
-  $("#picCap").textContent = p.caption; $("#picLink").textContent = `${p.credit}, ${p.license}, Wikimedia Commons`; $("#picN").textContent = `${picI + 1} of ${pics.length}`;
+  animalSize($("#picSize"), p.size); $("#picCap").textContent = p.caption; $("#picLink").textContent = `${p.credit}, ${p.license}, ${p.id?.startsWith("ai-") ? "Read the source" : "Wikimedia Commons"}`; $("#picN").textContent = `${picI + 1} of ${pics.length}`;
   document.querySelector(".picnav").hidden = pics.length < 2;
   const n = 5, start = clamp(picI - 2, 0, Math.max(0, pics.length - n));
   $("#picThumbs").innerHTML = pics.length < 2 ? "" : pics.slice(start, start + n).map((q, k) => `<button type="button" data-p="${start + k}" class="${start + k === picI ? "on" : ""}" aria-label="${esc(q.subject || q.caption)}"><img src="${esc(thumb(q.image, 120, q.width))}" ${fallback(q)} alt="" loading="lazy"></button>`).join("") + (pics.length > n ? `<span>${pics.length} pictures</span>` : "");
@@ -371,7 +375,7 @@ function imShow(i) {
   };
   const load = (u, again) => { nx.src = u; (nx.decode ? nx.decode() : Promise.resolve()).then(go, () => (again && u !== p.image ? load(p.image, false) : go())); };
   nx.alt = p.caption; load(url, true);
-  $("#imCap").textContent = p.caption; $("#imCred").textContent = `${p.credit}, ${p.license}, Wikimedia Commons`; $("#imCred").href = p.page;
+  animalSize($("#imSize"), p.size); $("#immerse").classList.toggle("has-size", !!p.size); $("#imCap").textContent = p.caption; $("#imCred").textContent = `${p.credit}, ${p.license}, ${p.id?.startsWith("ai-") ? "Read the source" : "Wikimedia Commons"}`; $("#imCred").href = p.page;
   $("#imThumbs").innerHTML = L.map((q, k) => `<button type="button" data-k="${k}" class="${k === IM.i ? "on" : ""}" aria-label="${esc(q.subject || q.caption)}"><img src="${esc(thumb(q.image, 250, q.width))}" ${fallback(q)} alt="" loading="lazy"></button>`).join("");
   const on = $("#imThumbs .on"); if (on) on.scrollIntoView({ block: "nearest", inline: "center" });
   if (L.length > 1) { const q = L[(IM.i + 1) % L.length]; new Image().src = thumb(q.image, innerWidth * Math.min(devicePixelRatio || 1, 2) > 1400 ? 1920 : 1280, q.width); }

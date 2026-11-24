@@ -62,7 +62,7 @@
   <aside id="rail">
     <div id="detail" hidden></div>
     <figure id="pic" hidden>
-      <button type="button" id="picOpen" class="picopen" aria-label="Step into this world: show the pictures full screen"><img id="picImg" alt="" loading="lazy"><span class="picgo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg>Step into this world</span></button>
+      <button type="button" id="picOpen" class="picopen" aria-label="Step into this world: show the pictures full screen"><img id="picImg" alt="" loading="lazy"><span id="picSize" class="animal-size" hidden></span><span class="picgo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg>Step into this world</span></button>
       <figcaption><span id="picCap"></span> <small><a id="picLink" target="_blank" rel="noopener"></a></small></figcaption>
       <div id="picThumbs" class="picthumbs"></div>
       <div class="picnav"><button type="button" id="picPrev" aria-label="Previous picture"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button><span id="picN"></span><button type="button" id="picNext" aria-label="Next picture"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button></div>
@@ -138,6 +138,7 @@
     <button type="button" class="imnav prev" id="imPrev" aria-label="Previous picture"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button>
     <button type="button" class="imnav next" id="imNext" aria-label="Next picture"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
     <div class="imtext">
+      <div id="imSize" class="animal-size" hidden></div>
       <p class="imwhen" id="imWhen"></p>
       <h2 id="imTitle"></h2>
       <p class="imcap" id="imCap"></p>

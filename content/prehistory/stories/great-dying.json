@@ -48,6 +48,17 @@
    "imageIds": [],
    "images": [
     {
+     "id": "ai-great-dying-reef",
+     "image": "/scenes/great-dying/reef.png",
+     "page": "https://www.nps.gov/gumo/learn/nature/coralreefs.htm",
+     "caption": "The living Capitan Reef in what is now Texas, about 262 million years ago. Sponges, brachiopods and microbial communities contributed to a reef unlike most modern coral reefs. The reef stopped growing millions of years before the end-Permian extinction.",
+     "credit": "AI-generated illustration",
+     "license": "Artist’s impression",
+     "width": 1672,
+     "height": 941,
+     "type": "scene"
+    },
+    {
      "id": "el-capitan-labeled",
      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/El_Capitan_labeled.jpg/1920px-El_Capitan_labeled.jpg",
      "page": "https://commons.wikimedia.org/wiki/File:El_Capitan_labeled.jpg",
@@ -141,6 +152,17 @@
    "imageIds": [],
    "images": [
     {
+     "id": "ai-great-dying-emeishan",
+     "image": "/scenes/great-dying/emeishan-corrected.png",
+     "page": "https://www.nature.com/articles/s43247-024-01631-0",
+     "caption": "A view of Emeishan flood-basalt eruptions in what is now China, around 260 million years ago. These eruptions and the associated crisis came before the Siberian Traps and the end-Permian extinction.",
+     "credit": "AI-generated illustration",
+     "license": "Artist’s impression",
+     "width": 1672,
+     "height": 941,
+     "type": "scene"
+    },
+    {
      "id": "permian-world-260ma",
      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/260Ma_Mollweide.png/1920px-260Ma_Mollweide.png",
      "page": "https://commons.wikimedia.org/wiki/File:260Ma_Mollweide.png",
@@ -151,18 +173,6 @@
      "credit": "Christopher R. Scotese and colleagues",
      "license": "CC BY 4.0",
      "note": "A computer reconstruction; the edges of ancient coastlines are uncertain."
-    },
-    {
-     "id": "anteosaurus-bogdanov",
-     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Anteosaurus_magnificus.jpg/1920px-Anteosaurus_magnificus.jpg",
-     "page": "https://commons.wikimedia.org/wiki/File:Anteosaurus_magnificus.jpg",
-     "width": 2102,
-     "height": 911,
-     "type": "reconstruction",
-     "caption": "Anteosaurus, a huge dinocephalian from the Karoo; dinocephalians died out in the crisis about 260 million years ago.",
-     "credit": "Dmitry Bogdanov",
-     "license": "Public domain",
-     "note": "Skin and colour are guesses."
     },
     {
      "id": "large-igneous-provinces-map",
@@ -229,21 +239,43 @@
     "o:therapsids",
     "o:synapsids"
    ],
-   "imageIds": [
-    "permian-lakeshore-karoo"
-   ],
+   "imageIds": [],
    "images": [
     {
-     "id": "diictodon-burrow-pair",
-     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Cuddling_Diictodon.jpg/1920px-Cuddling_Diictodon.jpg",
-     "page": "https://commons.wikimedia.org/wiki/File:Cuddling_Diictodon.jpg",
-     "width": 5000,
-     "height": 3000,
-     "type": "reconstruction",
-     "caption": "Two Diictodon, small tusked plant-eaters, rest curled up together in their burrow.",
-     "credit": "LiterallyMiguel",
-     "license": "CC BY 4.0",
-     "note": "Skin and colour are guesses; based on fossils of pairs found in burrows."
+     "id": "ai-great-dying-diictodon",
+     "image": "/scenes/great-dying/diictodon-corrected.png",
+     "page": "https://www.sciencedirect.com/science/article/pii/S0031018221000961",
+     "caption": "Diictodon, a small tusked plant-eating relative of mammals, beside a burrow in the Late Permian Karoo. Fossils found inside burrow casts show that these animals used underground shelters.",
+     "credit": "AI-generated illustration",
+     "license": "Artist’s impression",
+     "width": 1672,
+     "height": 941,
+     "type": "scene",
+     "size": {
+      "name": "Diictodon",
+      "height": "Unknown",
+      "length": "About 45 cm",
+      "weight": "About 1.9–9.4 kg",
+      "note": "Body masses are estimates; individuals vary."
+     }
+    },
+    {
+     "id": "ai-great-dying-rubidgea",
+     "image": "/scenes/great-dying/rubidgea-corrected.png",
+     "page": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4730894/",
+     "caption": "Rubidgea, a sabre-toothed predator from the Late Permian Karoo. Its heavily built fossil skull had few teeth behind the upper canines and none behind the lower canines; body form, covering and colour are uncertain.",
+     "credit": "AI-generated illustration",
+     "license": "Artist’s impression",
+     "width": 1672,
+     "height": 941,
+     "type": "scene",
+     "size": {
+      "name": "Rubidgea",
+      "height": "Unknown",
+      "length": "Body uncertain; skull up to 45 cm",
+      "weight": "Unknown",
+      "note": "Skull measurement; body size is reconstructed."
+     }
     },
     {
      "id": "diictodon-burrow-fossil",
@@ -256,18 +288,6 @@
      "credit": "Nkansahrexford",
      "license": "CC BY 3.0",
      "note": "Museum display; part of a label shows behind the block."
-    },
-    {
-     "id": "rubidgea-bogdanov",
-     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Rubigea2DB.jpg/1280px-Rubigea2DB.jpg",
-     "page": "https://commons.wikimedia.org/wiki/File:Rubigea2DB.jpg",
-     "width": 1318,
-     "height": 2000,
-     "type": "reconstruction",
-     "caption": "Rubidgea, a heavily built sabre-toothed gorgonopsian from the late Permian of South Africa.",
-     "credit": "Dmitry Bogdanov",
-     "license": "CC BY 3.0",
-     "note": "Portrait format. Whether gorgonopsians had hair or whiskers is not known."
     }
    ],
    "evidence": "fossil",
@@ -292,6 +312,18 @@
     {
      "title": "Wikipedia: Inostrancevia",
      "url": "https://en.wikipedia.org/wiki/Inostrancevia"
+    },
+    {
+     "title": "Diictodon size, Heinz Maier-Leibnitz Zentrum",
+     "url": "https://mlz-garching.de/aktuelles-und-presse/newsartikel/raetsel-um-beule-in-der-hirnkapsel-geloest.html?back=yes"
+    },
+    {
+     "title": "Diictodon body mass, Farmer 2015 (figure 4)",
+     "url": "https://farmer.biology.utah.edu/manuscripts/2015%20Farmer%20Physiology%20The%20Evolution%20of%20Unidirectional%20Flow.pdf"
+    },
+    {
+     "title": "Rubidgea skull and dentition, Kammerer 2016",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4730894/"
     }
    ]
   },
@@ -324,6 +356,17 @@
    ],
    "imageIds": [],
    "images": [
+    {
+     "id": "ai-great-dying-siberia",
+     "image": "/scenes/great-dying/siberia-corrected.png",
+     "page": "https://www.nature.com/articles/s43017-021-00259-4",
+     "caption": "Successive lava flows of the Siberian Traps, interpreted as a landscape around 252 million years ago. The appearance and timing of individual eruptions are not known; the flows accumulated over time.",
+     "credit": "AI-generated illustration",
+     "license": "Artist’s impression",
+     "width": 1672,
+     "height": 941,
+     "type": "scene"
+    },
     {
      "id": "putorana-plateau-satellite",
      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Putorana_Plateau%2C_Siberia_ESA367705.jpg/1920px-Putorana_Plateau%2C_Siberia_ESA367705.jpg",
@@ -413,6 +456,28 @@
    "imageIds": [],
    "images": [
     {
+     "id": "ai-great-dying-marine-before",
+     "image": "/scenes/great-dying/marine-before.png",
+     "page": "https://www.nature.com/articles/s43017-021-00259-4",
+     "caption": "A diverse Permian seafloor before the end-Permian extinction, with brachiopods and other marine animals. This is a representative community, not a reconstruction of a particular moment at Meishan.",
+     "credit": "AI-generated illustration",
+     "license": "Artist’s impression",
+     "width": 1672,
+     "height": 941,
+     "type": "scene"
+    },
+    {
+     "id": "ai-great-dying-marine-after",
+     "image": "/scenes/great-dying/marine-after-corrected.png",
+     "page": "https://www.nature.com/articles/s44185-025-00117-2",
+     "caption": "A less diverse Early Triassic seabed, with bivalves and microbial mats. Extinction and recovery unfolded over time and varied between places; not every animal died at once.",
+     "credit": "AI-generated illustration",
+     "license": "Artist’s impression",
+     "width": 1536,
+     "height": 1024,
+     "type": "scene"
+    },
+    {
      "id": "marine-extinction-intensity-graph",
      "image": "https://upload.wikimedia.org/wikipedia/commons/0/06/Extinction_intensity.svg",
      "page": "https://commons.wikimedia.org/wiki/File:Extinction_intensity.svg",
@@ -489,6 +554,28 @@
    ],
    "imageIds": [],
    "images": [
+    {
+     "id": "ai-great-dying-glossopteris",
+     "image": "/scenes/great-dying/glossopteris.png",
+     "page": "https://www.britannica.com/plant/Glossopteris",
+     "caption": "A southern Permian forest of Glossopteris seed ferns beside a river. Fossil leaves and coal beds record these forests before their collapse around the end-Permian crisis.",
+     "credit": "AI-generated illustration",
+     "license": "Artist’s impression",
+     "width": 1672,
+     "height": 941,
+     "type": "scene"
+    },
+    {
+     "id": "ai-great-dying-land-after",
+     "image": "/scenes/great-dying/land-after-corrected.png",
+     "page": "https://www.nature.com/articles/s43017-021-00259-4",
+     "caption": "A sparsely vegetated Early Triassic river plain after the extinction. Forest loss and erosion are recorded in rocks, but the landscape varied and some plants survived.",
+     "credit": "AI-generated illustration",
+     "license": "Artist’s impression",
+     "width": 1672,
+     "height": 941,
+     "type": "scene"
+    },
     {
      "id": "frazer-beach-boundary",
      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Permian-Triassic_boundary_at_Frazer_Beach%2C_NSW.jpg/1920px-Permian-Triassic_boundary_at_Frazer_Beach%2C_NSW.jpg",
@@ -579,6 +666,17 @@
    "imageIds": [],
    "images": [
     {
+     "id": "ai-great-dying-stressed-ocean",
+     "image": "/scenes/great-dying/stressed-ocean.png",
+     "page": "https://www.nature.com/articles/s41561-020-00646-4",
+     "caption": "A conceptual view of a stressed marine community during the crisis. Warming, low oxygen and ocean acidification are inferred from geological evidence; these conditions cannot be identified from a picture alone.",
+     "credit": "AI-generated illustration",
+     "license": "Artist’s impression",
+     "width": 1672,
+     "height": 941,
+     "type": "scene"
+    },
+    {
      "id": "permian-triassic-climate-map",
      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Permian%E2%80%93Triassic_paleoclimate.jpg/1280px-Permian%E2%80%93Triassic_paleoclimate.jpg",
      "page": "https://commons.wikimedia.org/wiki/File:Permian–Triassic_paleoclimate.jpg",
@@ -589,18 +687,6 @@
      "credit": "Massimo Bernardi (MUSE), published by Michael J. Benton",
      "license": "CC BY 4.0",
      "note": "A simplified scientific diagram; the animal icons are symbols, not real finds."
-    },
-    {
-     "id": "hindeodus-conodont-elements",
-     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Hindeodus_elements.jpg/1920px-Hindeodus_elements.jpg",
-     "page": "https://commons.wikimedia.org/wiki/File:Hindeodus_elements.jpg",
-     "width": 2128,
-     "height": 1064,
-     "type": "fossil",
-     "caption": "The tooth-like elements of the conodont Hindeodus parvus, drawn as they sat in the animal's mouth; conodont teeth like these record ancient sea temperatures.",
-     "credit": "Muhui Zhang and colleagues",
-     "license": "CC BY 4.0",
-     "note": "A drawing from a scientific paper, not a photograph."
     }
    ],
    "evidence": "disputed",
@@ -679,10 +765,26 @@
     "e:karoo-fossil-beds",
     "o:therapsids"
    ],
-   "imageIds": [
-    "lystrosaurus-bogdanov"
-   ],
+   "imageIds": [],
    "images": [
+    {
+     "id": "ai-great-dying-lystrosaurus",
+     "image": "/scenes/great-dying/lystrosaurus.png",
+     "page": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0345016",
+     "caption": "Lystrosaurus, a beaked and tusked plant-eating relative of mammals, on an Early Triassic river plain. Several species survived the extinction; their sizes varied and their life appearance is uncertain.",
+     "credit": "AI-generated illustration",
+     "license": "Artist’s impression",
+     "width": 1672,
+     "height": 941,
+     "type": "scene",
+     "size": {
+      "name": "Lystrosaurus",
+      "height": "Unknown",
+      "length": "Varied by species",
+      "weight": "About 9, 19 or 50 kg",
+      "note": "Different published estimates; not a measured range."
+     }
+    },
     {
      "id": "lystrosaurus-murrayi-skeleton",
      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Lystrosaurus_murrayi_7.JPG/1920px-Lystrosaurus_murrayi_7.JPG",
@@ -734,6 +836,10 @@
     {
      "title": "Wikipedia: Panchet Formation",
      "url": "https://en.wikipedia.org/wiki/Panchet_Formation"
+    },
+    {
+     "title": "Lystrosaurus body mass estimates, Benoit and colleagues 2026",
+     "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0345016"
     }
    ]
   },
@@ -779,10 +885,19 @@
    "refs": [
     "o:ammonites"
    ],
-   "imageIds": [
-    "triassic-bulgo-sandstone-landscape"
-   ],
+   "imageIds": [],
    "images": [
+    {
+     "id": "ai-great-dying-recovery-seabed",
+     "image": "/scenes/great-dying/recovery-seabed.png",
+     "page": "https://www.nature.com/articles/s44185-025-00117-2",
+     "caption": "Small bivalves and ammonoids inhabit a recovering Early Triassic seabed. Marine communities recovered at different rates in different places, over millions of years.",
+     "credit": "AI-generated illustration",
+     "license": "Artist’s impression",
+     "width": 1672,
+     "height": 941,
+     "type": "scene"
+    },
     {
      "id": "claraia-shell-bed",
      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Claraia_Clarai_Museum_Gr%C3%B6den.jpg/1920px-Claraia_Clarai_Museum_Gr%C3%B6den.jpg",
@@ -872,6 +987,24 @@
    "imageIds": [],
    "images": [
     {
+     "id": "ai-great-dying-cartorhynchus",
+     "image": "/scenes/great-dying/cartorhynchus-corrected.png",
+     "page": "https://www.nature.com/articles/s42003-022-04162-6",
+     "caption": "Cartorhynchus, a short-snouted marine reptile related to ichthyosaurs, swims in an Early Triassic sea. The known fossil was probably a juvenile, and its tail and life appearance are reconstructed.",
+     "credit": "AI-generated illustration",
+     "license": "Artist’s impression",
+     "width": 1672,
+     "height": 941,
+     "type": "scene",
+     "size": {
+      "name": "Cartorhynchus",
+      "height": "Not applicable",
+      "length": "About 40 cm (specimen)",
+      "weight": "Unknown",
+      "note": "Tail estimated; specimen was probably juvenile."
+     }
+    },
+    {
      "id": "chaohusaurus-skeleton",
      "image": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Chaohusaurus.png",
      "page": "https://commons.wikimedia.org/wiki/File:Chaohusaurus.png",
@@ -882,18 +1015,6 @@
      "credit": "Ryosuke Motani and colleagues",
      "license": "CC BY 2.5",
      "note": "Scientific photograph with scale bars; the large bars are 10 centimetres."
-    },
-    {
-     "id": "cartorhynchus-tamura",
-     "image": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Cartorhynchus_NT.jpg",
-     "page": "https://commons.wikimedia.org/wiki/File:Cartorhynchus_NT.jpg",
-     "width": 800,
-     "height": 600,
-     "type": "reconstruction",
-     "caption": "Cartorhynchus, a small short-snouted relative of the ichthyosaurs, swimming in an Early Triassic sea.",
-     "credit": "Nobu Tamura",
-     "license": "CC BY-SA 4.0",
-     "note": "Small image; skin and colour are guesses."
     },
     {
      "id": "cartorhynchus-skeleton-model",
@@ -926,6 +1047,14 @@
     {
      "title": "Wikipedia: Chaohu",
      "url": "https://en.wikipedia.org/wiki/Chaohu"
+    },
+    {
+     "title": "Cartorhynchus size, California Academy of Sciences",
+     "url": "https://www.calacademy.org/explore-science/fossil-finds"
+    },
+    {
+     "title": "Cartorhynchus juvenile and habitat, 2022 study",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9663502/"
     }
    ]
   },
@@ -975,28 +1104,40 @@
    "imageIds": [],
    "images": [
     {
-     "id": "asilisaurus-smokeybjb",
-     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Asilisaurus.jpg/1920px-Asilisaurus.jpg",
-     "page": "https://commons.wikimedia.org/wiki/File:Asilisaurus.jpg",
-     "width": 6000,
-     "height": 2515,
-     "type": "reconstruction",
-     "caption": "Asilisaurus, a long-legged silesaurid from the Manda Beds of Tanzania and a close cousin of the dinosaurs.",
-     "credit": "Smokeybjb",
-     "license": "CC BY-SA 3.0",
-     "note": "Skin and colour are guesses."
+     "id": "ai-great-dying-asilisaurus",
+     "image": "/scenes/great-dying/asilisaurus.png",
+     "page": "https://www.nature.com/articles/nature08718",
+     "caption": "Asilisaurus, a four-legged dinosaur relative from Middle Triassic Tanzania. It was not itself a dinosaur; its skin and colouring are unknown.",
+     "credit": "AI-generated illustration",
+     "license": "Artist’s impression",
+     "width": 1672,
+     "height": 941,
+     "type": "scene",
+     "size": {
+      "name": "Asilisaurus",
+      "height": "About 0.5–1 m at hip",
+      "length": "About 1–3 m",
+      "weight": "About 10–30 kg",
+      "note": "Estimates; measurements vary by individual."
+     }
     },
     {
-     "id": "teleocrater-pezzoni",
-     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Teleocrater_v1.png/1280px-Teleocrater_v1.png",
-     "page": "https://commons.wikimedia.org/wiki/File:Teleocrater_v1.png",
-     "width": 1800,
-     "height": 481,
-     "type": "reconstruction",
-     "caption": "Teleocrater, a four-legged, long-necked meat-eater and one of the oldest known members of the bird and dinosaur branch of reptiles.",
-     "credit": "Neil Pezzoni",
-     "license": "CC BY 4.0",
-     "note": "Wide, narrow image on a white background."
+     "id": "ai-great-dying-teleocrater",
+     "image": "/scenes/great-dying/teleocrater-corrected.png",
+     "page": "https://www.paleo.geos.vt.edu/latest-research",
+     "caption": "Teleocrater, a long-necked four-legged predator from Middle Triassic Tanzania, belonged to the bird and dinosaur branch of archosaurs but was not a dinosaur. Its skull, hands, feet and tail are incompletely known; their appearance is reconstructed.",
+     "credit": "AI-generated illustration",
+     "license": "Artist’s impression",
+     "width": 1672,
+     "height": 941,
+     "type": "scene",
+     "size": {
+      "name": "Teleocrater",
+      "height": "About 0.5–0.75 m at hip",
+      "length": "About 2–3 m",
+      "weight": "About 10–30 kg",
+      "note": "Estimates; measurements vary by individual."
+     }
     },
     {
      "id": "asilisaurus-skeleton-fmnh",
@@ -1009,18 +1150,6 @@
      "credit": "Zissoudisctrucker",
      "license": "CC BY-SA 4.0",
      "note": "Probably a cast; other mounts show in the background."
-    },
-    {
-     "id": "ctenosauriscus-arid",
-     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Ctenosauriscus_koeneni_in_Arid_Environment.jpg/1920px-Ctenosauriscus_koeneni_in_Arid_Environment.jpg",
-     "page": "https://commons.wikimedia.org/wiki/File:Ctenosauriscus_koeneni_in_Arid_Environment.jpg",
-     "width": 4000,
-     "height": 3000,
-     "type": "reconstruction",
-     "caption": "Ctenosauriscus, a sail-backed early archosaur, in a dry Early Triassic river landscape.",
-     "credit": "Driptosaurus",
-     "license": "CC BY-SA 4.0",
-     "note": "Painterly reconstruction; the sail shape is based on tall spines on its backbone."
     }
    ],
    "evidence": "disputed",
@@ -1045,6 +1174,14 @@
     {
      "title": "Wikipedia: Ctenosauriscus",
      "url": "https://en.wikipedia.org/wiki/Ctenosauriscus"
+    },
+    {
+     "title": "Asilisaurus size, University of Utah",
+     "url": "https://www.eurekalert.org/news-releases/545623"
+    },
+    {
+     "title": "Teleocrater dimensions, Virginia Tech",
+     "url": "https://www.paleo.geos.vt.edu/latest-research"
     }
    ]
   },
@@ -1102,10 +1239,26 @@
     "e:ischigualasto",
     "o:dinosaurs"
    ],
-   "imageIds": [
-    "herrerasaurus-wierum"
-   ],
+   "imageIds": [],
    "images": [
+    {
+     "id": "ai-great-dying-herrerasaurus",
+     "image": "/scenes/great-dying/herrerasaurus.png",
+     "page": "https://visit.museum.wa.gov.au/boolabardip/herrerasaurus-ischigualastensis",
+     "caption": "Herrerasaurus, an early predatory dinosaur of Late Triassic Argentina, lived around 230 million years ago, more than 20 million years after the Great Dying. Its appearance is an interpretation.",
+     "credit": "AI-generated illustration",
+     "license": "Artist’s impression",
+     "width": 1672,
+     "height": 941,
+     "type": "scene",
+     "size": {
+      "name": "Herrerasaurus",
+      "height": "About 1.1 m at hip",
+      "length": "About 3–6 m",
+      "weight": "About 210–250 kg",
+      "note": "Estimates may refer to different individuals."
+     }
+    },
     {
      "id": "piz-ciavazes-carnian",
      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Piz_Ciavaces.jpg/1920px-Piz_Ciavaces.jpg",
@@ -1145,6 +1298,10 @@
     {
      "title": "Wikipedia: Dolomites",
      "url": "https://en.wikipedia.org/wiki/Dolomites"
+    },
+    {
+     "title": "Herrerasaurus size estimates, Western Australian Museum",
+     "url": "https://visit.museum.wa.gov.au/boolabardip/herrerasaurus-ischigualastensis"
     }
    ]
   }

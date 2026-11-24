@@ -170,6 +170,11 @@
   #imImg { left: 0; top: 16%; transform: none; width: 100%; max-width: none; max-height: 42%; border-radius: 0; box-shadow: none; }
   .imx { left: 16px; right: auto; top: calc(12px + env(safe-area-inset-top)); background: rgba(255, 255, 255, .16); color: #fff; }
   .imcap { left: 20px; right: 20px; top: 60%; bottom: 84px; overflow-y: auto; } .imcap p { font-size: 16px; line-height: 24px; }
+  #immerse:not(.sc) #imImg { top: 12%; max-height: 40%; }
+  .imsize { right: 12px; top: calc(12% + min(40vh, 56.28vw) - 58px); bottom: auto; max-width: 65%; font-size: 10px; padding: 5px 7px; }
+  .imsize strong { font-size: 11px; } .imsize small { font-size: 9px; }
+  #immerse:not(.sc) .imcap { left: 16px; right: 16px; top: 56%; bottom: auto; max-height: calc(44% - 84px - env(safe-area-inset-bottom)); padding: 16px; border-radius: 14px; }
+  #immerse:not(.sc) .imcap p { font-size: 15px; line-height: 1.5; }
   .imwhen { letter-spacing: 0; text-transform: none; font-size: 13px; }
   .imthumbs { display: none; }
   .imnav { top: auto; bottom: calc(24px + env(safe-area-inset-bottom)); width: 44px; height: 44px; background: rgba(255, 255, 255, .16); color: #fff; } .imnav.prev { left: 16px; } .imnav.next { right: 16px; }
