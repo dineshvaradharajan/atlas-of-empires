@@ -60,6 +60,15 @@ if (existsSync(RD)) {
     items.push({ sec: "realms", id: slug, hash: `${m[1]}/${m[2]}`, kicker: unesc(h.match(/<p class="kicker">([^<]*)/)?.[1] || ""), kick: unesc(h.match(/<p class="kicker">([^<]*)/)?.[1] || "").replace(" · ", ", "), title, line: first(prof[name]?.summary || notes[name]?.text || lede) });
   }
 }
+// The Earth's periods and stories (/earth/..., also from the pages tools/seo.py wrote): the globe of the home page at that time
+const ED = join(ROOT, "public", "earth"), EH = J("earth-history.json");
+for (const [dir, pre] of [[ED, ""], [join(ED, "stories"), "story-"]]) if (existsSync(dir)) for (const slug of readdirSync(dir).sort()) {
+  const f = join(dir, slug, "index.html"); if (!existsSync(f) || slug === "stories") continue;
+  const h = readFileSync(f, "utf8"), m = h.match(/href="\/#(earth\/[^"]+)"/); if (!m) continue;
+  const st = pre && EH.stories.find((x) => x.id === slug), kicker = unesc(h.match(/<p class="kicker">([^<]*)/)?.[1] || "");
+  const at = st ? `earth/${st.chapters[Math.floor(st.chapters.length / 2)].ma}` : m[1]; // a story: the globe of its middle chapter
+  items.push({ sec: "earth", id: pre + slug, page: "index.html?theme=sage", hash: at, kicker, kick: kicker, title: unesc(h.match(/<h1>([^<]*)/)?.[1] || slug), line: first(unesc(h.match(/<p class="lede">([^<]*)/)?.[1] || "")) });
+}
 let todo = items.filter((it) => !ONLY.length || ONLY.includes(it.sec));
 if (!SAMPLE && !process.argv.includes("--force")) todo = todo.filter((it) => !existsSync(join(OUT, it.sec, `${it.id}.jpg`))); // a run that stopped picks up where it left off
 const [SH, OF] = arg("--shard", "1/1").split("/").map(Number); // --shard 2/3: every third page, from the second, to run three at once
@@ -92,7 +101,8 @@ const js = async (expression) => { const r = await cdp("Runtime.evaluate", { exp
 
 // The page's own controls go; the caption card takes the place of the atlas's card, which the map is already framed beside.
 const HIDE = `
-  #bar, #dock, #col, #mapTools, #legend, #noRecords, #tooltip, #pop, #side, #chart, #tabbar, #toast, #cine, #sheet, #compare, #stopbar, #framebar { display: none !important; }`;
+  #bar, #dock, #col, #mapTools, #legend, #noRecords, #tooltip, #pop, #side, #chart, #tabbar, #toast, #cine, #sheet, #compare, #stopbar, #framebar,
+  #strip, #viewSeg, #todayBtn, #card, #story, #sdock, #marks, #themeBtn, #ps, #ptabs, #plogo, #ptop, .rp-fab { display: none !important; }`;
 // Two layouts, each with BOX, the room it leaves the subject. card (wars, moments, empires, eras): a caption card at the left,
 // the map beside it. note (realms): the map fades into white paper at the left, under the name, a line and the years in big
 // numerals. --style picks one for every page; bare (the map alone, for designing a layout) takes --box x0,y0,x1,y1.
@@ -115,28 +125,35 @@ const STYLES = { card: `
   #ogcap .b img { width: 30px; height: 21px; }
   #ogcap .t { position: absolute; left: 52px; top: 121px; width: 400px; }
   #ogcap .k { font: 600 13px/1.2 Inter, sans-serif; letter-spacing: .18em; text-transform: uppercase; color: #c8321e; }
-  #ogcap h1 { margin: 12px 0 0; font: 800 58px/1.02 "Source Serif 4", Georgia, serif; letter-spacing: -.015em; overflow-wrap: break-word; }
+  #ogcap h1 { margin: 12px 0 0; font: 800 58px/1.02 "Source Serif 4", Georgia, serif; letter-spacing: -.015em; }
   #ogcap h1.m { font-size: 48px; } #ogcap h1.s { font-size: 40px; }
   #ogcap p { margin: 20px 0 0; width: 352px; font: 400 17px/1.5 Inter, sans-serif; color: #3b3b37; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; overflow: hidden; }
   #ogcap .y { position: absolute; left: 52px; bottom: 68px; font: 800 76px/.9 "Source Serif 4", Georgia, serif; letter-spacing: -.02em; color: #c8321e; white-space: nowrap; }
   #ogcap .y.m { font-size: 58px; } #ogcap .y.s { font-size: 44px; }
   #ogcap .u { position: absolute; left: 52px; bottom: 44px; font: 500 14px/1 Inter, sans-serif; color: #5e5e59; }`,
+  globe: `
+  html[data-theme] { --page: #fff !important; }
+  #globe { transform: translateX(90px); }
+  #ogcap { zoom: 1.33333; }
+  #ogcap .y small { display: block; margin-top: 8px; font: 600 18px/1 Inter, sans-serif; letter-spacing: 0; }`,
   bare: `
   #ogcap { display: none !important; }`,
 };
+STYLES.globe = STYLES.note + STYLES.globe; // the Earth: the same paper, over the globe (drawn in a larger window, so the globe fills more of it)
 const BOXES = { card: [452, 36, W - 28, H - 36], note: [440, 60, W - 50, H - 40], bare: [28, 28, W - 28, H - 28] };
-const styleOf = (it) => arg("--style", it.sec === "realms" ? "note" : "card");
+const styleOf = (it) => arg("--style", it.sec === "realms" ? "note" : it.sec === "earth" ? "globe" : "card");
 const boxOf = (it) => (arg("--box", "") ? arg("--box").split(",").map(Number) : BOXES[styleOf(it)]);
 const setup = `(() => { if (document.getElementById("ogcap")) return; const s = document.createElement("style"); s.id = "ogstyle"; document.head.append(s);
   const d = document.createElement("div"); d.id = "ogcap"; d.innerHTML = '<div class="b"><img src="logo.png" alt="">THE WORLD ATLAS</div><div class="t"><div class="k"></div><h1></h1><p></p></div><div class="y"></div><div class="u">worldatlas.site</div>'; document.body.append(d); })()`;
 // note: the kicker ("Realm · approximate borders · 1574–1708") splits into its label and the years, which get the numerals
-const caption = (it) => { const st = styleOf(it), parts = it.kicker ? it.kicker.split(" · ") : [], yrs = st === "note" && parts.length > 1 && /\d/.test(parts.at(-1)) ? parts.pop().replace(/ \(.*\)$/, "") : "";
-  const kick = st === "note" && it.kicker ? parts.join(", ") : it.kick;
+const caption = (it) => { const st = styleOf(it), parts = it.kicker ? it.kicker.split(" · ") : [], yrs = (st === "note" || st === "globe") && parts.length > 1 && /\d/.test(parts.at(-1)) ? parts.pop().replace(/ \(.*\)$/, "") : "";
+  const yl = st === "globe" ? yrs.replace(/ to /, "–").replace(/ (?:billion |million )?years ago$/, "").length : yrs.length;
+  const kick = (st === "note" || st === "globe") && it.kicker ? parts.join(", ") : it.kick;
   return `(() => { document.getElementById("ogstyle").textContent = ${JSON.stringify(HIDE + STYLES[st])};
   const c = document.getElementById("ogcap"), h = c.querySelector("h1"), y = c.querySelector(".y"); c.querySelector(".k").textContent = ${JSON.stringify(kick)}; h.textContent = ${JSON.stringify(it.title)};
   h.className = ${JSON.stringify(it.title)}.length > 44 ? "s" : ${JSON.stringify(it.title)}.length > 24 ? "m" : ""; c.querySelector("p").textContent = ${JSON.stringify(it.line)};
-  h.style.fontSize = ""; if (${st === "note"}) for (const z of [48, 40, 34, 29, 25, 22]) { if (h.offsetHeight <= 182 && h.scrollWidth <= h.clientWidth) break; h.style.fontSize = z + "px"; } // the whole name, never cut off
-  y.textContent = ${JSON.stringify(yrs)}; y.className = "y" + (${yrs.length} > 13 ? " s" : ${yrs.length} > 9 ? " m" : ""); })()`; };
+  h.style.fontSize = ""; if (${(st === "note" || st === "globe")}) for (const z of [48, 40, 34, 29, 25, 22]) { if (h.offsetHeight <= 182 && h.scrollWidth <= h.clientWidth) break; h.style.fontSize = z + "px"; } // the whole name, never cut off
+  y.innerHTML = ${JSON.stringify(st === "globe" ? yrs.replace(/ to /, "–").replace(/ ((?:billion |million )?years ago)$/, "<small>$1</small>") : yrs)}; y.className = "y" + (${yl} > 13 ? " s" : ${yl} > 9 ? " m" : ""); })()`; };
 // settled: the loading note is gone, the fonts are in, and nothing has been fetched for a moment (borders, a war's layers)
 const settle = async (min) => { await sleep(min); for (let i = 0; i < 40; i++) { const ok = await js(`(async () => { await document.fonts.ready; const n = performance.getEntriesByType("resource").length; await new Promise((r) => setTimeout(r, 450)); return !document.querySelector("#loading") && performance.getEntriesByType("resource").length === n; })()`); if (ok) return; } };
 
@@ -157,16 +174,18 @@ const FRAME = `((P, box, zin, area) => { const c = document.querySelector("#map"
   c.dispatchEvent(new WheelEvent("wheel", { deltaY: .5, clientX: (L + R) / 2, clientY: (T + B) / 2, bubbles: true, cancelable: true })); return true; })`;
 let loaded = 0, n = 0; const t0 = Date.now(), failed = [];
 const draw = async (it) => {
-  const url = `${BASE}/world.html#${it.hash}`;
+  const url = `${BASE}/${it.page || "world.html"}#${it.hash}`, big = it.sec === "earth" ? 4 / 3 : 1;
+  if (it.page) { loaded = 0; await cdp("Emulation.setDeviceMetricsOverride", { width: W * big, height: H * big, deviceScaleFactor: 1, mobile: false }); await cdp("Page.navigate", { url: "about:blank" }); await sleep(200); } // a page of its own each time
   if (!loaded || loaded > 100) { await cdp("Page.navigate", { url }); loaded = 1; await settle(2500); } // a fresh page every 100 pictures
   else { await js(`location.hash = ${JSON.stringify("#" + it.hash)}`); loaded++; await settle(1400); }
   await js(setup); await js(caption(it));
   let focus = it.focus, zin = 0, area = 0;
+  if (it.sec === "earth") await js("S.lon = 12; S.lat = 6; fly = null; S.dirty = true"); // every globe faces the same way (its page turns to a turning point)
   if (it.sec === "realms") { const bb = await js("window.atlasSelBox ? window.atlasSelBox() : null"); // the realm's own shape, filling about 60% of the room
     if (bb && bb[0][0] <= bb[1][0]) { focus = [bb[0], bb[1], [bb[0][0], bb[1][1]], [bb[1][0], bb[0][1]]]; zin = 24; area = bb[2]; } else console.log(`og: ${it.id}: ${bb ? "crosses the date line" : "no shape on the map"}; the atlas's own view is used`); } // 24: as close as the atlas itself goes
   if (focus?.length) await js(`${FRAME}(${JSON.stringify(focus)}, ${JSON.stringify(boxOf(it))}, ${zin}, ${area})`);
   await sleep(450); // the map's cross-fade, and the redraw after the move
-  const shot = await cdp("Page.captureScreenshot", { format: "jpeg", quality: 78, clip: { x: 0, y: 0, width: W, height: H, scale: 1 } });
+  const shot = await cdp("Page.captureScreenshot", { format: "jpeg", quality: 78, clip: { x: 0, y: 0, width: W * big, height: H * big, scale: 1 / big } });
   const file = join(OUT, it.sec, `${it.id}.jpg`); mkdirSync(dirname(file), { recursive: true }); writeFileSync(file, Buffer.from(shot.data, "base64")); };
 for (const it of todo) {
   let ok = false;

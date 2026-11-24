@@ -293,6 +293,12 @@ function imShow(i) { const n = IM.list.length; IM.i = (i + n) % n; const p = IM.
 function imClose() { $("#immerse").hidden = true; }
 
 // ---------------------------------------------------------------- moments: a thread of the Earth's history told in chapters on the globe
+const SHARE_ICON = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7 8l5-5 5 5"/><path d="M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg>';
+// Share (share.js): the plain page of a period or a story, which has its own picture of the globe (tools/seo.py, tools/og.mjs)
+function earthShare(opener) {
+  if (ST) return atlasShare({ path: `earth/stories/${ST.story.id}/`, pic: `earth/story-${ST.story.id}`, title: ST.story.title }, opener);
+  const u = unitAt(S.ma); atlasShare({ path: `earth/${u.id}/`, pic: `earth/${u.id}`, title: `The Earth in the ${u.name}` }, opener);
+}
 let ST = null, fly = null;
 const rangeOf = (s) => `${ageParts(s.from).join(" ").replace(" ago", "")} to ${s.to < .001 ? "today" : ageParts(s.to).join(" ")}`;
 const thumb = (u) => /\/\d+px-/.test(u) ? u.replace(/\/\d+px-/, "/500px-") : u;
@@ -316,10 +322,10 @@ function storyGo(i) {
   S.ma = clamp(c.ma, 0, OLDEST); S.dirty = true;
   const to = c.then || (c.ma < 1 ? c.focus : null); if (to) fly = { lon0: S.lon, lat0: S.lat, dl: ((to[0] - S.lon + 540) % 360) - 180, dp: clamp(to[1], -70, 70) - S.lat, t: 0 };
   if ((SEEN[s.id] || 0) < ST.i + 1) { SEEN[s.id] = ST.i + 1; try { localStorage.setItem("one.moments", JSON.stringify(SEEN)); } catch (e) {} }
-  $("#story").innerHTML = `<div class="chead"><button type="button" class="back" data-act="list"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>Stories</button><span class="count">${ST.i + 1} of ${s.chapters.length}</span></div>
+  $("#story").innerHTML = `<div class="chead"><button type="button" class="back" data-act="list"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>Stories</button><span class="count">${ST.i + 1} of ${s.chapters.length}</span><button type="button" class="hshare" data-act="share" aria-label="Share this story">${SHARE_ICON}</button></div>
     <div class="kicker">${esc(s.title)}</div>
     ${p ? `<figure><img src="${esc(thumb(p.image))}" data-fb="${esc(p.image)}" alt="${esc(p.caption || "")}"><figcaption>${esc(p.credit || "")}${p.license ? ", " + esc(p.license) : ""}</figcaption></figure>` : ""}
-    <h1>${esc(c.title)}</h1><div class="sub">${esc(c.dateLabel || "")}${c.place ? " \u00b7 " + esc(c.place) : ""}</div><p>${esc(c.text)}</p><button type="button" class="rm" data-act="more">Read the full chapter</button>
+    <h1>${esc(c.title)}</h1><div class="sub">${esc(c.dateLabel || "")}${c.place ? " \u00b7 " + esc(c.place) : ""}</div><p>${esc(c.text)}</p><div class="rms"><button type="button" class="rm" data-act="more">Read the full chapter</button><button type="button" class="rm" data-act="share">Share</button></div>
     <div class="snav"><button type="button" data-act="prev" ${ST.i ? "" : "disabled"}>Previous</button><button type="button" class="go" data-act="next">${ST.i < s.chapters.length - 1 ? "Next chapter" : "Finish"}</button></div>`;
   $("#story").classList.remove("open"); $("#story").scrollTop = 0; ST.t0 = performance.now(); storyBar(); shell(); window.PHONE?.story();
 }
@@ -642,9 +648,10 @@ function wire() {
   $("#mileMarks").addEventListener("pointerdown", (e) => { if (!e.target.closest("[data-m]")) return;
     let best = null, bd = 1e9; for (const d of $("#mileMarks").children) { const r = d.getBoundingClientRect(), dx = Math.abs(r.left + r.width / 2 - e.clientX); if (dx < bd) { bd = dx; best = d; } }
     goMile(e, best); }); // before the timeline under it takes the press
+  for (const b of [$("#eShare"), $("#pShare")]) b.addEventListener("click", () => earthShare(b));
   $("#more").addEventListener("click", () => { const open = $("#card").classList.toggle("open"); $("#more").textContent = open ? "Show less" : "Read more"; if (S.flat) { histFrame(); FIT = flatFit(); S.dirty = true; } });
   $("#mlist").addEventListener("click", (e) => { const c = e.target.closest("[data-s]"); if (c) storyStart(c.dataset.s); });
-  $("#story").addEventListener("click", (e) => { const a = e.target.closest("[data-act]"); if (!a) return; if (a.dataset.act === "more") { const open = $("#story").classList.toggle("open"); a.textContent = open ? "Show less" : "Read the full chapter"; return; } if (a.dataset.act === "list") { storyEnd(); listOpen(true); } else if (a.dataset.act === "end" || (a.dataset.act === "next" && ST.i >= ST.story.chapters.length - 1)) { storyEnd(); listOpen(true); } else storyGo(ST.i + (a.dataset.act === "next" ? 1 : -1)); });
+  $("#story").addEventListener("click", (e) => { const a = e.target.closest("[data-act]"); if (!a) return; if (a.dataset.act === "share") return earthShare(a); if (a.dataset.act === "more") { const open = $("#story").classList.toggle("open"); a.textContent = open ? "Show less" : "Read the full chapter"; return; } if (a.dataset.act === "list") { storyEnd(); listOpen(true); } else if (a.dataset.act === "end" || (a.dataset.act === "next" && ST.i >= ST.story.chapters.length - 1)) { storyEnd(); listOpen(true); } else storyGo(ST.i + (a.dataset.act === "next" ? 1 : -1)); });
   addEventListener("error", (e) => { const t = e.target; if (t.tagName === "IMG" && t.dataset.fb && t.src !== t.dataset.fb) t.src = t.dataset.fb; }, true);
   addEventListener("keydown", (e) => { if (!$("#immerse").hidden) { if (e.key === "Escape") imClose(); else if (e.key === "ArrowLeft") imShow(IM.i - 1); else if (e.key === "ArrowRight") imShow(IM.i + 1); e.stopPropagation(); return; }
     if (e.key === "Escape") { if ($("#app").dataset.list) listOpen(false); else if (ST) storyEnd(); } });

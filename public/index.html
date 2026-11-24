@@ -32,10 +32,11 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="fonts/source-serif-latin.woff2">
 <script src="one/theme.js?v=1"></script>
 <link rel="stylesheet" href="fonts/fonts.css">
-<link rel="stylesheet" href="one/one.css?v=31">
-<link rel="stylesheet" href="one/phone.css?v=32">
+<link rel="stylesheet" href="one/one.css?v=32">
+<link rel="stylesheet" href="one/phone.css?v=33">
 <link rel="stylesheet" href="one/theme.css?v=2">
 <link rel="stylesheet" href="report/report.css">
+<link rel="stylesheet" href="share.css">
 <script src="release.js" defer></script>
 </head>
 <body>
@@ -59,7 +60,7 @@
   </div>
 
   <section id="card" aria-live="polite">
-    <div class="kicker" id="kick">THE EARTH</div>
+    <div class="khead"><div class="kicker" id="kick">THE EARTH</div><button type="button" class="hshare" id="eShare" aria-label="Share this time"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7 8l5-5 5 5"/><path d="M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg></button></div>
     <div class="age"><b id="ageNum"></b><span id="ageUnit"></span></div>
     <div class="sub" id="ageSub"></div>
     <div class="chip"><i id="chipSw"></i><span id="chipName"></span></div>
@@ -131,7 +132,7 @@
       <div class="tilew"><button type="button" id="pTile" aria-label="The other part of time"><span id="pTileE"></span><span id="pTileH"></span></button><span id="pTileT"></span></div>
     </div>
     <div id="pBody">
-      <div id="pRow"><i class="dia" id="pDia"></i><b id="pRowText"></b><button type="button" id="pToday"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M9 3v4M15 3v4"/></svg>Today</button><button type="button" id="pUp" aria-label="Open the card"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 15l7-7 7 7"/></svg></button></div>
+      <div id="pRow"><i class="dia" id="pDia"></i><b id="pRowText"></b><button type="button" id="pShare" aria-label="Share this time"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7 8l5-5 5 5"/><path d="M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg>Share</button><button type="button" id="pToday"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M9 3v4M15 3v4"/></svg>Today</button><button type="button" id="pUp" aria-label="Open the card"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 15l7-7 7 7"/></svg></button></div>
       <button type="button" id="pPic" hidden aria-label="Step into this world: pictures full screen"><img id="pPicImg" alt=""><span class="go"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg>Step into this world</span><span class="n" id="pPicN"></span></button>
       <div id="pTurn" hidden></div>
       <p id="pText"></p>
@@ -185,8 +186,9 @@
     </ul>
   </div>
 </noscript>
-<script src="one/phone.js?v=33"></script>
-<script src="one/one.js?v=42"></script>
+<script src="share.js"></script>
+<script src="one/phone.js?v=34"></script>
+<script src="one/one.js?v=43"></script>
 <script src="report/report.js" data-page="home" defer></script>
 </body>
 </html>

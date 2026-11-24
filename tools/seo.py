@@ -30,7 +30,7 @@ SITE = "https://www.worldatlas.site"
 NAME = "The World Atlas"
 TAGLINE = "An interactive map of world history from 10,000 BCE to today"
 SECTIONS = {"empires": "Empires", "wars": "Wars", "moments": "Moments", "eras": "Chapters", "realms": "Realms", "sites": "Ancient sites"}
-OUTPUTS = list(SECTIONS) + ["about", "sitemap.xml", "llms.txt", "404.html"]  # plus sitemap-<section>.xml
+OUTPUTS = list(SECTIONS) + ["earth", "about", "sitemap.xml", "llms.txt", "404.html"]  # plus sitemap-<section>.xml
 REGIONS = {"southern-africa": "Southern Africa", "northern-africa": "Northern Africa", "europe": "Europe",
            "middle-east-south-asia": "Middle East & South Asia", "north-central-asia": "Northern & Central Asia",
            "east-asia": "East Asia", "southeast-asia": "Southeast Asia", "northern-north-america": "Northern North America",
@@ -482,7 +482,7 @@ def main():
     def realm_text_link(n):
         return f'<a href="{esc(realm_path(n))}">{esc(clean(n))}</a>' if n in R else esc(clean(n))
 
-    pages = {k: [] for k in ["pages"] + list(SECTIONS)}  # (path, title, description) for the sitemap and llms.txt
+    pages = {k: [] for k in ["pages", "earth"] + list(SECTIONS)}  # (path, title, description) for the sitemap and llms.txt
     out = []  # (path, html)
 
     def emit(section, path, title, description, html_, label=None):
@@ -938,6 +938,51 @@ def main():
     out.append(("/404.html", page("/404.html", f"Page not found | {NAME}", "This page isn't in the atlas.", body404, kind="website")
                 .replace('<link rel="canonical" href="https://www.worldatlas.site/404.html">\n', '<meta name="robots" content="noindex">\n')))
 
+    # ---- the Earth's periods and stories: what the share button on the Earth's side of the atlas links to (public/one/one.js, earthShare)
+    EH = J("earth-history.json")
+    join = 0.012026  # 10,000 BCE in millions of years ago: the Earth's side ends there
+    def ago(ma):
+        n, u = (ma / 1000, "billion") if ma >= 1000 else (ma, "million") if ma >= 1 else (round(ma * 1e6, -3), "")
+        return f"{f'{n:,.2f}'.rstrip('0').rstrip('.') if u else f'{n:,.0f}'}{f' {u}' if u else ''} years ago"
+    def between(a, b):
+        x, y = ago(a), ago(max(b, join))
+        u = x.split(" ", 1)[1]
+        return f"{x.split(' ')[0]} to {y}" if y.split(" ", 1)[1] == u else f"{x.replace(' years ago', '')} to {y}"
+    parents = {u["parent"] for u in EH["units"]}
+    eunits = sorted([u for u in EH["units"] if u["id"] not in parents and u["from"] > join and u["to"] < u["from"] and u["id"] != "holocene"], key=lambda u: -u["from"])
+    estories = sorted(EH["stories"], key=lambda s: -s["from"])
+    e_hash = lambda u: (lambda m: f"earth/{round(m, 1) if m >= 10 else round(m, 2):g}")((u["from"] + max(u["to"], join)) / 2)
+    crumb = ("The ancient Earth", "/earth/")
+    for i, u in enumerate(eunits):
+        path, when, name = f"/earth/{u['id']}/", between(u["from"], u["to"]), u["name"]
+        desc = clip(f"{name} ({when}): {sentences(u['world'], 2)}")
+        body = f'<p class="kicker">The Earth · {esc(u["rank"])} · {esc(when)}</p><h1>{esc(name)}</h1><p class="lede">{esc(u.get("tagline") or "")}</p>'
+        body += cta(app(e_hash(u)), f"See the Earth in the {name}")
+        for h, k in (("The world", "world"), ("Life", "life"), ("Climate", "climate")):
+            if u.get(k):
+                body += f"<section><h2>{h}</h2><p>{esc(u[k])}</p></section>"
+        if u.get("evidenceNote"):
+            body += f'<section><h2>How we know</h2><p>{esc(u["evidenceNote"])}</p></section>'
+        body += links([(f"/earth/{x['id']}/", x["name"], between(x["from"], x["to"])) for x in eunits[max(0, i - 1):i] + eunits[i + 1:i + 2]], "Before and after")
+        body += sources(u.get("sources"))
+        emit("earth", path, ttl(f"The {name} ({when})", ": the ancient Earth"), desc, page(path, ttl(f"The {name} ({when})", ": the ancient Earth"), desc, body, [crumb, (name, path)],
+             og_image("earth", u["id"]), f"A globe of the Earth in the {name}", [article_ld(path, f"The {name} ({when})", desc, None)]), f"{name} ({when})")
+    for s in estories:
+        path, when = f"/earth/stories/{s['id']}/", between(s["from"], s["to"])
+        desc = clip(s["summary"])
+        body = f'<p class="kicker">The Earth · story · {esc(when)}</p><h1>{esc(s["title"])}</h1>' + lede(s["summary"]) + cta(app(f"earth/s/{s['id']}/1"), "Follow this story on the globe")
+        body += "".join(f'<section><h2>{esc(c["title"])}</h2><p class="note">{esc(c.get("dateLabel") or ago(c["ma"]))}{" · " + esc(c["place"]) if c.get("place") else ""}</p><p>{esc(c["text"])}</p></section>' for c in s["chapters"])
+        body += links([(f"/earth/stories/{x['id']}/", x["title"], between(x["from"], x["to"])) for x in estories if x is not s], "More stories")
+        body += sources(list({x["url"]: x for c in s["chapters"] for x in c.get("sources") or []}.values()))
+        emit("earth", path, ttl(s["title"], ": a story of the ancient Earth"), desc, page(path, ttl(s["title"], ": a story of the ancient Earth"), desc, body, [crumb, (s["title"], path)],
+             og_image("earth", f"story-{s['id']}"), s["title"], [article_ld(path, s["title"], desc, None)]), s["title"])
+    desc = "The ancient Earth, from its formation 4.57 billion years ago to the first peoples: every geological period and six stories of life, each on a globe of its time."
+    body = ('<h1>The ancient Earth</h1><p class="lede">' + esc(desc) + "</p>" + cta(app("earth/150"), "Open the globe")
+            + links([(f"/earth/stories/{s['id']}/", s["title"], between(s["from"], s["to"])) for s in estories], "Stories")
+            + links([(f"/earth/{u['id']}/", u["name"], between(u["from"], u["to"])) for u in eunits], "Periods"))
+    pages["earth"].insert(0, ("/earth/", "The ancient Earth", desc))
+    out.append(("/earth/", page("/earth/", ttl("The ancient Earth", ": periods and stories"), desc, body, [crumb], og_image("earth", "earth-history"), "A globe of the ancient Earth", (), "website")))
+
     # ---- write
     for k in OUTPUTS:
         p = os.path.join(P, k)
@@ -978,7 +1023,7 @@ def main():
         return ('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
                 + "".join(f"<url><loc>{esc(SITE + p)}</loc>{f'<lastmod>{released}</lastmod>' if p in LIVE else ''}</url>\n" for p in items) + "</urlset>\n")
     maps = []
-    for sec, items in [("pages", ["/", "/earth-history/"] + [p for p, _, _ in pages["pages"]])] + [(k, [p for p, _, _ in pages[k]]) for k in SECTIONS]:
+    for sec, items in [("pages", ["/", "/earth-history/"] + [p for p, _, _ in pages["pages"]])] + [(k, [p for p, _, _ in pages[k]]) for k in ["earth"] + list(SECTIONS)]:
         name = f"sitemap-{sec}.xml"
         open(os.path.join(P, name), "w", encoding="utf-8").write(urlset(items))
         maps.append(name)
