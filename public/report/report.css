@@ -20,6 +20,7 @@
 }
 
 /* ---- the button. report.js moves it (--rp-x, --rp-y) to the lowest free spot on the right, clear of the timeline, the sheets and the tabs */
+html.sharing .rp-fab { visibility: hidden; } /* the share dialog is open (app.js) */
 .rp-fab { position: fixed; z-index: 60; left: 0; top: 0; transform: translate(var(--rp-x, -200px), var(--rp-y, -200px)); width: 40px; height: 40px; display: grid; place-items: center;
   margin: 0; padding: 0; border: 1px solid var(--rp-ink); border-radius: 50%; background: var(--rp-surf); color: var(--rp-ink); box-shadow: var(--rp-shadow); cursor: pointer;
   -webkit-tap-highlight-color: transparent; transition: transform .25s cubic-bezier(.3, .7, .2, 1), opacity .2s ease, background-color .15s ease; font: 500 13px var(--rp-sans); }

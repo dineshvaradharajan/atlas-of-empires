@@ -133,6 +133,30 @@ body.searching #stage::after { content: ""; position: absolute; inset: 0; backgr
 .chead .hshare { flex: none; width: 32px; height: 32px; margin: -2px 0; display: grid; place-items: center; border: 1px solid var(--rule-2); border-radius: 50%; background: var(--bg); color: var(--ink); }
 .chead .hshare:hover { background: var(--chip); } .chead .hshare svg { width: 15px; height: 15px; }
 .chead:has(.hshare) .count { margin-left: auto; }
+/* the share dialog (openShare in app.js) */
+#share { width: min(480px, calc(100vw - 32px)); max-height: calc(100dvh - 32px); padding: 0; border: 1px solid var(--rule-strong); border-radius: 20px; background: var(--bg); color: var(--ink); box-shadow: var(--shadow); overflow: auto; overscroll-behavior: contain; }
+#share::backdrop { background: rgba(0, 0, 0, .45); }
+#share .shbody { padding: 14px 20px 18px; }
+#share .shhead { display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; }
+#share h2 { margin: 0; font: 800 20px/1.2 var(--display); }
+#share .shx { width: 44px; height: 44px; margin-right: -10px; display: grid; place-items: center; border: 0; border-radius: 50%; background: none; }
+#share .shx:hover, #share .shto > *:hover { background: var(--chip); color: var(--ink); }
+#share .shx svg { width: 20px; height: 20px; }
+#share figure { margin: 0; border: 1px solid var(--rule-2); border-radius: 12px; overflow: hidden; background: var(--chip); }
+#share figure img { display: block; width: 100%; height: auto; aspect-ratio: 1200 / 630; }
+#share figure img:not([src]) { visibility: hidden; }
+#share .shtitle { margin: 10px 0 12px; font: 600 15px/1.35 var(--sans); }
+#share .shlink { display: flex; gap: 8px; }
+#share .shlink input { flex: 1; min-width: 0; height: 44px; padding: 0 14px; border: 1px solid var(--rule-2); border-radius: 22px; background: var(--bg); color: var(--ink-2); font: 400 14px var(--sans); text-overflow: ellipsis; }
+#share .shto { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; margin-top: 14px; }
+#share .shto > * { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; min-height: 68px; padding: 8px 4px; border: 1px solid var(--rule-2); border-radius: 14px; background: none; color: var(--ink); font: 500 13px/1.2 var(--sans); text-decoration: none; text-align: center; }
+#share .shto svg { width: 22px; height: 22px; }
+#share .shmore { display: flex; gap: 8px; margin-top: 8px; }
+#share .shmore .pillbtn { flex: 1; border-color: var(--rule-2); }
+#app #share svg.shmark { fill: currentColor; stroke: none; }
+#share .shnote { margin: 12px 0 0; font: 400 13px/1.45 var(--sans); color: var(--ink-2); }
+#share .shnote:empty { display: none; }
+@media (max-width: 760px) { #share .shlink input { font-size: 16px; } #share .shto > * { font-size: 12px; } }
 .back { display: inline-flex; align-items: center; gap: 6px; height: 36px; margin: -4px 0 -4px -8px; padding: 0 8px; border: 0; border-radius: 18px; background: none; font: 500 14px var(--sans); color: var(--ink); }
 .back svg { width: 16px; height: 16px; stroke-width: 2.2; }
 .back:hover { background: var(--chip); color: var(--ink); }

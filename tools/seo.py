@@ -1017,6 +1017,8 @@ def main():
           f"- [Ancient sites]({SITE}/sites/): {len(sites)} archaeological sites",
           f"- [Sitemap]({SITE}/sitemap.xml)",
           "- [Source code and data](https://github.com/dineshvaradharajan/atlas-of-empires)", ""]
+    # every realm's page, for the share button on its card in the atlas (public/app.js: realmPages)
+    json.dump(realm_slug, open(os.path.join(P, "data", "realm-pages.json"), "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
     open(os.path.join(P, "llms.txt"), "w", encoding="utf-8").write("\n".join(L))
 
     n = {k: len(v) for k, v in pages.items()}
