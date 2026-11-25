@@ -285,7 +285,7 @@ function picsFor(u, gallery) { // event-specific pictures, otherwise the period'
     if (selected.length) return selected;
   }
   let list = (D.images || []).filter((p) => p.unit === u.id && !p.storyOnly).sort((a, b) => (b.quality || 0) - (a.quality || 0));
-  for (let p = byUnit[u.parent]; p && list.length < 6; p = byUnit[p.parent]) list = list.concat((D.images || []).filter((q) => q.unit === p.id && !q.storyOnly));
+  for (let p = byUnit[u.parent]; p && (list.length < 6 || u.id === "paleoproterozoic"); p = byUnit[p.parent]) list = list.concat((D.images || []).filter((q) => q.unit === p.id && !q.storyOnly && (u.id !== "paleoproterozoic" || imageKind(q)[0] === "evidence")));
   return list;
 }
 // Image type records describe the subject, so a museum model can be tagged as a reconstruction even though the image is a photograph.
@@ -317,7 +317,7 @@ function imStory() { // one continuous picture journey, starting at the chapter 
 function imShow(i) { const n = IM.list.length; IM.i = (i + n) % n; const p = IM.list[IM.i], src = sized(p, innerWidth * Math.min(devicePixelRatio || 1, 2) > 1400 ? 1920 : 1280);
   const im = $("#imImg"); im.dataset.fb = p.image; im.src = src; im.alt = p.caption || ""; $("#imBg").style.backgroundImage = `url("${sized(p, 500)}")`;
   const size = p.size, badge = $("#imSize"); badge.hidden = !size; badge.innerHTML = size ? `<strong>${esc(size.name)}</strong><span>Height: ${esc(size.height)} · Length: ${esc(size.length)} · Weight: ${esc(size.weight)}</span><small>${esc(size.note || "Estimated; varies by individual")}</small>` : "";
-  const chapter = p.storyChapter; $("#imWhen").textContent = `${IM.when}${IM.when ? " \u00b7 " : ""}${chapter ? `${chapter.title}${chapter.date ? " \u00b7 " + chapter.date : ""} \u00b7 ` : ""}${imageKind(p)[1]} \u00b7 ${IM.i + 1} of ${n}`; $("#imCap").textContent = p.caption || "";
+  const chapter = p.storyChapter, when = !chapter && p.imageDateLabel ? `${byUnit[p.unit]?.name || ""} · ${p.imageDateLabel}` : IM.when; $("#imWhen").textContent = `${when}${when ? " \u00b7 " : ""}${chapter ? `${chapter.title}${chapter.date ? " \u00b7 " + chapter.date : ""} \u00b7 ` : ""}${imageKind(p)[1]} \u00b7 ${IM.i + 1} of ${n}`; $("#imCap").textContent = p.caption || "";
   const a = $("#imCred"); a.textContent = [p.credit, p.license, p.id?.startsWith("ai-") ? "Read the source" : "Wikimedia Commons"].filter(Boolean).join(", "); a.href = p.page || p.image;
   document.querySelectorAll("#imThumbs button").forEach((b) => b.classList.toggle("on", +b.dataset.k === IM.i)); $("#imThumbs .on")?.scrollIntoView({ inline: "center", block: "nearest" });
   $("#imPrev").hidden = $("#imNext").hidden = n < 2; }
