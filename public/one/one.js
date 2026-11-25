@@ -232,6 +232,7 @@ function flatFit() {
 }
 let FIT = null;
 function draw() {
+  if (S.mode === "hist" && S.t >= 1 && $("#app").dataset.ready && performance.now() - (S.readyAt ?? -1e4) > 600) return; // the map underneath has taken over and this canvas has faded out: nothing to draw, and no globe pictures to ask for
   const a = -S.lon * RAD, b = S.lat * RAD, ca = Math.cos(a), sa = Math.sin(a), cb = Math.cos(b), sb = Math.sin(b);
   const M = [[ca, 0, sa], [sa * sb, cb, -ca * sb], [-sa * cb, sb, ca * cb]]; // world -> view
   const real = clamp((560 - S.ma) / 20, 0, 1), e = early(S.ma), pr = real > 0 ? pair(S.ma) : null;
@@ -428,15 +429,17 @@ function drawTimeline(force) {
 }
 
 // ---------------------------------------------------------------- the World history map underneath
-const HIST = { ready: false, sent: null, sentAt: 0, timer: 0 };
-function histInit() {
-  const fr = $("#hist");
-  const hook = () => { try {
-    const d = fr.contentDocument; if (!d || !d.head) return;
+const HIST = { ready: false, sent: null, sentAt: 0, timer: 0, want: false }; // want: a year was chosen here before the map underneath was ready
+function histHook(d) { // also called by hist-patch.js, as the frame's own page starts
+  try {
+    if (!d || !d.head) return;
     if (!d.getElementById("oneHide")) { const st = d.createElement("style"); st.id = "oneHide"; st.textContent = "#bar .brand,#bar .sitesw,#bar .tabs,#tabbar{visibility:hidden!important} .one-uni #dock{visibility:hidden!important} .one-globe #stage canvas{opacity:0!important;pointer-events:none!important} .one-globe #mapTools .zoom{display:none!important} @media (max-width:760px){.one-uni #sheet{display:none!important} .one-uni #bar{left:72px!important}}"; d.documentElement.classList.add("one-uni"); d.head.appendChild(st); }
-  } catch (e) {} };
+  } catch (e) {}
+}
+function histInit() {
+  const fr = $("#hist"), hook = () => { try { histHook(fr.contentDocument); } catch (e) {} };
   fr.addEventListener("load", hook); hook();
-  const poll = setInterval(() => { try { const d = fr.contentDocument, c = d.querySelector("#map"), l = d.querySelector("#loading"); if (c && c.__zoom && (!l || l.hidden || getComputedStyle(l).display === "none" || l.classList.contains("done"))) { HIST.ready = true; clearInterval(poll); hook(); layout(); restoreLate(); } } catch (e) {} }, 300);
+  const poll = setInterval(() => { try { const d = fr.contentDocument, c = d.querySelector("#map"), l = d.querySelector("#loading"); if (c && c.__zoom && (!l || l.hidden || getComputedStyle(l).display === "none" || l.classList.contains("done"))) { HIST.ready = true; clearInterval(poll); hook(); layout(); restoreLate(); if (HIST.want) { HIST.want = false; histYear(S.year); } } } catch (e) {} }, 60); // often: the map's own "Loading" fades in 300 ms, and the framing is set under it
 }
 const histWin = () => $("#hist").contentWindow;
 function histGlobe(on) { try { histWin().document.documentElement.classList.toggle("one-globe", on); if (on) histWhole(); } catch (e) {} } // the frame's own map hidden while the globe shows it
@@ -502,6 +505,7 @@ function histWatch() {
 // Explore: back to the map on a plain year, whatever World history is showing (a story, a list, a realm's profile, About). Clicking
 // its own Map tab was not enough: on a realm's profile it is already on that tab, so nothing changed and this page stayed behind it.
 function histExplore() {
+  if (!HIST.ready) return;
   const y = clamp(histNow() ?? Math.round(S.year), Y0, NOW_YEAR);
   HIST.own = false; S.year = y; HIST.sent = y; HIST.sentAt = HT.changed = performance.now();
   try { const l = histWin().location; l.replace(l.href.split("#")[0] + "#" + y); } catch (e) {} // straight away, not through the timeline's throttle
@@ -509,6 +513,7 @@ function histExplore() {
 }
 function histYear(y) { // tell the World history map which year to show, at most a few times a second
   y = Math.round(y); if (y === HIST.sent) return;
+  if (!HIST.ready) { HIST.want = true; delete $("#app").dataset.boot; return; } // still loading: sent when it is ready (a new address now would start its loading again)
   const go = () => { HIST.timer = 0; if (HIST.sent === Math.round(S.year)) return; HIST.sent = Math.round(S.year); HIST.sentAt = HT.changed = performance.now(); try { const l = $("#hist").contentWindow.location; l.replace(l.href.split("#")[0] + "#" + HIST.sent); } catch (e) {} }; // a full address: a bare "#year" would resolve against this page
   if (!HIST.timer) HIST.timer = setTimeout(go, performance.now() - HIST.sentAt > 140 ? 0 : 140);
 }
@@ -524,7 +529,9 @@ function enterHistory(year) {
 }
 function enterDeep(ma) {
   if (S.mode === "deep") { S.ma = ma; return; }
-  S.lastYear = S.year; S.year = Y0; histYear(Y0); // leave the map underneath at the join, so the next crossing lands on the same coasts
+  if (RESTORE?.hist) { RESTORE = null; delete $("#app").dataset.boot; } // left before the map was ready: do not come back for it
+  else { S.lastYear = S.year; if (!HT.has) histCapture(); } // the globe opens wearing the map as it was
+  S.year = Y0; histYear(Y0); // leave the map underneath at the join, so the next crossing lands on the same coasts
   S.mode = "deep"; S.ma = ma; $("#app").dataset.mode = "deep"; delete $("#app").dataset.ready; delete $("#app").dataset.app; shown = ""; S.dirty = true;
   if (S.flat) setFlat(false); // the Earth always opens as the round globe
   try { const r = histWin().document.documentElement; r.classList.add("one-uni"); r.style.removeProperty("--dock-b"); } catch (e) {}
@@ -566,6 +573,11 @@ function setFlat(on) { // the round globe or the flat map, by choice, at any tim
 let RESTORE = null, savedAt = 0, ENTRY_TURN = false; // ENTRY_TURN: opened at a time; if it is a turning point, face where it happened // what the address asked for that has to wait for the World history map underneath
 const startHash = (() => { try { return decodeURIComponent(location.hash.slice(1)); } catch (e) { return location.hash.slice(1); } })();
 const EARTH_AT = /^earth(?:\/|$)/.test(startHash);
+// An address in history opens on the flat map underneath, with its own "Loading", and nothing of the Earth's side: its globe, its
+// card and their pictures (1.2 MB) used to load first and be covered up as soon as the map was ready.
+if (EARTH_AT) $("#app").dataset.mode = "deep";
+else { const a = $("#app"); a.dataset.mode = "hist"; a.dataset.flat = a.dataset.ready = a.dataset.boot = "1"; if (startHash && !/^-?\d+$/.test(startHash)) a.dataset.app = "1"; // a profile or a story: World history has the screen
+  Object.assign(S, { mode: "hist", flat: true, t: 1, tT: 1, lon: 0, lat: 0, pol: 1, f: .92, ma: JOIN, lastMa: JOIN }); }
 $("#hist").src = "world.html" + (EARTH_AT ? "#-10000" : location.hash); // the frame opens where the address says, or (for the Earth) waits at the join
 function stateHash() {
   if (ST) return `#earth/s/${ST.story.id}/${ST.i + 1}`;
@@ -580,7 +592,7 @@ function saveState(now) { // twice a second at most: browsers limit how often an
 function restoreState() { // at the start, from the address; what needs the map underneath waits for restoreLate()
   let m;
   try { const v = (sessionStorage.getItem("one.view") || "").split(",").map(Number); if (v.length === 2 && v.every(isFinite)) { S.lon = v[0]; S.lat = clamp(v[1], -85, 85); } } catch (e) {} // the way the globe was turned
-  if (!EARTH_AT) { RESTORE = { hist: true }; S.ma = JOIN; return; } // history: the frame is already loading that address
+  if (!EARTH_AT) { RESTORE = { hist: true }; S.lon = S.lat = 0; document.querySelectorAll("#viewSeg button").forEach((b) => b.setAttribute("aria-pressed", b.dataset.v === "map")); return; } // history: the frame is already loading that address
   const h = startHash.replace(/^earth\/?/, "");
   if ((m = /^s\/([\w-]+)\/(\d+)$/.exec(h))) { storyStart(m[1]); if (ST && +m[2] > 1) storyGo(+m[2] - 1); return; }
   if (h === "stories") { PH() && window.PHONE ? PHONE.stories() : listOpen(true); return; }
@@ -593,9 +605,17 @@ function restoreLate() {
   // on anything else (a story, a profile, a list) World history has the screen, as histWatch() sees from its address.
   let h = ""; try { h = histWin().location.hash; } catch (e) {}
   let home = NaN; try { home = parseInt(histWin().document.documentElement.dataset.homeYear, 10); } catch (e) {} // the year of today's event
-  const m = /^#(-?\d+)$/.exec(h), y = m ? +m[1] : (!h || h === "#") && isFinite(home) ? home : histNow() ?? Y0;
-  if (h && h !== "#") HIST.sent = Math.round(y); // nothing to send: the frame is already there
+  const m = /^#(-?\d+)$/.exec(h), y = HIST.want ? S.year : m ? +m[1] : (!h || h === "#") && isFinite(home) ? home : histNow() ?? Y0;
+  if (h && h !== "#" && !HIST.want) HIST.sent = Math.round(y); // nothing to send: the frame is already there
+  delete $("#app").dataset.boot; delete $("#app").dataset.app;
   enterHistory(clamp(y, Y0, NOW_YEAR));
+  histFrame(); FIT = flatFit();
+  if (!m && h && h !== "#") histWatch(); // a profile or a story keeps the screen, with no moment of this page's timeline in between
+  setTimeout(() => (window.requestIdleCallback || setTimeout)(warmEarth), 2500);
+}
+function warmEarth() { // the globe's two pictures, once the map is up and nothing else is wanted, so that crossing to the Earth shows it at once
+  const c = navigator.connection; if (tex.size || c?.saveData || /2g|3g/.test(c?.effectiveType || "")) return; // a slow or metered line: on the crossing itself
+  want(0); want(5);
 }
 
 // ---------------------------------------------------------------- time, play, input
@@ -616,7 +636,7 @@ function frame(now) {
     if (S.t === S.tT) turn = null;
   }
   if (flatAt && now > flatAt) { flatAt = 0; if (S.flat && S.mode === "hist") { FIT = flatFit(); S.tT = 1; turn = { lon0: ((S.lon + 540) % 360) - 180, lat0: S.lat, lon1: 0, lat1: 0 }; } }
-  if (S.mode === "hist" && S.flat && S.t >= 1 && HIST.ready && !$("#app").dataset.ready) { histGlobe(false); $("#app").dataset.ready = "1"; } // flat: the frame underneath takes over
+  if (S.mode === "hist" && S.flat && S.t >= 1 && HIST.ready && !$("#app").dataset.ready) { histGlobe(false); $("#app").dataset.ready = "1"; S.readyAt = now; } // flat: the frame underneath takes over
   const polT = S.mode === "hist" ? 1 : 0; if (S.pol !== polT) { S.pol = polT > S.pol ? Math.min(1, S.pol + dt / .8) : Math.max(0, S.pol - dt / .5); S.dirty = true; } // borders fade onto the globe
   if (now - watchAt > 250) { watchAt = now; histWatch(); }
   if (S.mode === "hist" && !$("#app").dataset.ready && !$("#app").dataset.app && HIST.ready && now - HT.at > (now - (HT.changed || 0) < 2500 ? 160 : 1000)) histCapture();
@@ -694,7 +714,7 @@ async function init() {
   for (const u of D.units) byUnit[u.id] = u;
   const hasKids = new Set(D.units.map((u) => u.parent));
   leaves = D.units.filter((u) => !hasKids.has(u.id)).sort((a, b) => b.from - a.from);
-  buildTimeline(); momentList(); layout(); wire(); window.PHONE?.init(); restoreState(); histInit(); renderCard();
+  buildTimeline(); momentList(); layout(); wire(); window.PHONE?.init(); restoreState(); histInit(); if (S.mode === "deep") renderCard();
   requestAnimationFrame(frame);
   document.fonts?.ready.then(() => syncChrome()); // the brand is wider once its font is in
 }

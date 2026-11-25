@@ -7,6 +7,7 @@
       its group (Tech, Culture ...). */
 (() => {
   if (window.top === window) return; // World history opened on its own (/world): nothing to change
+  try { parent.histHook(document); } catch (e) {} // its own bar, dock and tabs hidden before they are ever painted (the page above draws those)
   // The page that frames this one has two looks (one/theme.js). "midnight" is World history's own dark theme; "sage" is given here:
   // the same grey-green surfaces, and a map whose sea is the page's colour. Set before app.js reads the theme for the map.
   const follow = () => { try { const look = parent.document.documentElement.dataset.theme, t = look === "midnight" ? "dark" : look === "sage" ? "sage" : null;

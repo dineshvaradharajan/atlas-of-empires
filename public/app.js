@@ -174,7 +174,8 @@ function colorOf(key) {
   if (S.war) { const m = S.warMap || warSides(S.war, warT()); return m.has(key) ? SIDE_COLORS[m.get(key) % SIDE_COLORS.length] : [theme.other1, theme.other2, theme.other3][hash(clean(key)) % 3]; }
   if (key === PRINCELY && key !== S.sel && !S.journey) return tint(colorOf("(British Empire)"), 0.5); // under British paramountcy, not British-ruled: a lighter shade of the Raj
   if (S.reconKeys?.has(key) && key !== S.sel) { // reconstruction groups: distinct, stable inks (e.g. all Chola lands share one)
-    const ks = [...S.reconKeys]; return RECON_COLORS[ks.indexOf(key) % RECON_COLORS.length];
+    if (S.reconOf !== S.reconKeys) { S.reconOf = S.reconKeys; S.reconAt = new Map([...S.reconKeys].map((k, i) => [k, i])); } // asked for every realm, every frame
+    return RECON_COLORS[S.reconAt.get(key) % RECON_COLORS.length];
   }
   if (S.journey) return chainKeys(S.journey, S.year).has(key) ? theme.highlight : [theme.other1, theme.other2, theme.other3][hash(clean(key)) % 3];
   if (key === S.sel) return theme.highlight;
@@ -975,16 +976,19 @@ const GL = (() => {
     let ob = 0;
     bs.forEach((g, i) => { if (g && g.length) { bandArr.set(g, ob); bandRanges.push({ it: items[i], b0: ob / 2, bn: g.length / 2 }); ob += g.length; } });
     const bb = gl.createBuffer(); gl.bindBuffer(gl.ARRAY_BUFFER, bb); gl.bufferData(gl.ARRAY_BUFFER, bandArr, gl.STATIC_DRAW);
-    return { items, fb, lb, ranges, bb, bandRanges };
+    return { items, fb, lb, ranges, bb, bandRanges, total: nf / 2 }; // total: every fill in one call, for the land's stencil (shape by shape, it was three quarters of all the drawing)
   }
   const freeLayer = (l) => { if (l) { gl.deleteBuffer(l.fb); gl.deleteBuffer(l.lb); gl.deleteBuffer(l.bb); } };
   let cur = null, prev = null, fadeT0 = 0, statics = null, landLayer = null, pending = null;
-  const FADE = 260;
+  const FADE = 160; // each frame of it draws two whole maps: kept short, and cut short where they take long to draw (fadeLate)
+  let fadeYear = null, fadeAt = 0, fadeLate = 0;
   function setItems(items) {
     if (cur && cur.items === items) return;
+    const near = fadeYear != null && !S.war && !S.journey && Math.abs(S.year - fadeYear) <= yearStep(fadeYear); fadeYear = S.year; fadeAt = fadeLate = 0;
     // During playback (the timeline or an empire journey) years arrive faster than a cross-fade can finish, and fading
     // each one in made the map pulse; consecutive years differ little, so playback swaps layers instantly.
-    if (S.playing > 0) { freeLayer(prev); freeLayer(cur); prev = null; }
+    // A press of the step buttons (yearStep) is the same, and gets its answer at once.
+    if (S.playing > 0 || near) { freeLayer(prev); freeLayer(cur); prev = null; }
     else { // a new year arriving mid-fade fades from whichever layer is mostly on screen (no jump to a half-faded layer)
       const e = prev ? (performance.now() - fadeT0) / FADE : 1;
       if (prev && e < 0.5) freeLayer(cur); else { freeLayer(prev); prev = cur; }
@@ -1038,7 +1042,7 @@ const GL = (() => {
             gl.enable(gl.STENCIL_TEST); gl.clearStencil(0); gl.clear(gl.STENCIL_BUFFER_BIT);
             gl.colorMask(false, false, false, false); gl.stencilFunc(gl.ALWAYS, 1, 0xff); gl.stencilOp(gl.KEEP, gl.KEEP, gl.REPLACE);
             if (!landLayer) landLayer = makeLayer(S.items.filter((it) => it.kind !== "state"));
-            bindPos(landLayer.fb); color("#000"); for (const q of landLayer.ranges) if (q.fn) gl.drawArrays(gl.TRIANGLES, q.f0, q.fn);
+            bindPos(landLayer.fb); color("#000"); gl.drawArrays(gl.TRIANGLES, 0, landLayer.total);
             gl.colorMask(true, true, true, true); gl.stencilOp(gl.KEEP, gl.KEEP, gl.KEEP); gl.stencilFunc(gl.EQUAL, 1, 0xff);
           }
           bindPos(layer.bb);
@@ -1067,7 +1071,7 @@ const GL = (() => {
           gl.clearStencil(0); gl.clear(gl.STENCIL_BUFFER_BIT);
           gl.colorMask(false, false, false, false); sf(gl.ALWAYS, 1, 0xff); gl.stencilOp(gl.KEEP, gl.KEEP, gl.REPLACE);
           if (!landLayer) landLayer = makeLayer(S.items.filter((it) => it.kind !== "state"));
-          bindPos(landLayer.fb); color("#000"); for (const q of landLayer.ranges) if (q.fn) gl.drawArrays(gl.TRIANGLES, q.f0, q.fn);
+          bindPos(landLayer.fb); color("#000"); gl.drawArrays(gl.TRIANGLES, 0, landLayer.total);
           gl.colorMask(true, true, true, true); gl.stencilOp(gl.KEEP, gl.KEEP, gl.KEEP); sf(gl.EQUAL, 1, 0xff);
           landStencil = true;
         }
@@ -1082,7 +1086,7 @@ const GL = (() => {
       gl.colorMask(false, false, false, false); sf(gl.ALWAYS, 1, 0xff); gl.stencilOp(gl.KEEP, gl.KEEP, gl.REPLACE);
       if (r.it.p.recon) {
         if (!landLayer) landLayer = makeLayer(S.items.filter((it) => it.kind !== "state"));
-        bindPos(landLayer.fb); color("#000"); for (const q of landLayer.ranges) if (q.fn) gl.drawArrays(gl.TRIANGLES, q.f0, q.fn);
+        bindPos(landLayer.fb); color("#000"); gl.drawArrays(gl.TRIANGLES, 0, landLayer.total);
       }
       if (r.it.p.crop) {
         const g = build(r.it.p.crop), b = gl.createBuffer();
@@ -1213,6 +1217,7 @@ const GL = (() => {
         landStencil(S.detail);
         bindPos(statics.sphereFill.b); color(theme.unknown); gl.drawArrays(gl.TRIANGLES, 0, statics.sphereFill.n);
       }
+      if (prev) { const n = performance.now(); if (fadeAt && n - fadeAt > 50 && ++fadeLate > 1) fadeT0 = n - FADE; fadeAt = n; } // two slow frames: the new map at once
       const e = prev ? Math.min(1, (performance.now() - fadeT0) / FADE) : 1;
       if (prev && e < 1) drawLayer(prev, fillOf, 1);
       if (cur) drawLayer(cur, fillOf, prev && e < 1 ? e * e * (3 - 2 * e) : 1);

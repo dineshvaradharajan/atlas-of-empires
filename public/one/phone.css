@@ -74,6 +74,7 @@
   #pRowText { flex: 1; min-width: 0; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   #pShare svg { width: 15px; height: 15px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
   #pShare, #pToday { display: none; position: relative; flex: none; align-items: center; gap: 6px; height: 36px; padding: 0 13px 0 11px; border: 1px solid var(--hair); border-radius: 15px; background: var(--surf); font: 600 12px var(--sans); } #pToday svg { width: 14px; height: 14px; }
+  #app[data-boot] #pDate > *, #app[data-boot] #pThumb, #app[data-boot] #pRowText { visibility: hidden; }
   #app[data-mode="deep"] #pShare { display: flex; }
   #app[data-mode="hist"] #pToday { display: flex; }
   #pShare::before, #pToday::before, #story .rm::before { content: ""; position: absolute; left: 0; right: 0; top: -4px; bottom: -4px; } /* 44 px to tap, drawn smaller */
