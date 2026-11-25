@@ -12,7 +12,8 @@
   "credit": "NASA/JPL-Caltech",
   "license": "Public domain",
   "quality": 4,
-  "note": "Painted for a planetary system around a pair of distant stars, not the early Solar System; a stand-in for Earth's era of giant impacts."
+  "note": "Painted for a planetary system around a pair of distant stars, not the early Solar System; a stand-in for Earth's era of giant impacts.",
+  "storyOnly": true
  },
  {
   "id": "lunar-cataclysm-bombardment",
@@ -27,7 +28,8 @@
   "credit": "Tim Wetherell",
   "license": "CC BY-SA 3.0",
   "quality": 3,
-  "note": "Whether a sharp 'late heavy bombardment' spike happened about 3.9 billion years ago is now debated; many scientists favour a slower decline in impacts. Portrait format, with a small artist's credit in a corner."
+  "note": "Whether a sharp 'late heavy bombardment' spike happened about 3.9 billion years ago is now debated; many scientists favour a slower decline in impacts. Portrait format, with a small artist's credit in a corner.",
+  "storyOnly": true
  },
  {
   "id": "submarine-lava-west-mata",
@@ -657,7 +659,8 @@
   "credit": "NASA Goddard Space Flight Center Conceptual Image Lab",
   "license": "Public domain",
   "quality": 5,
-  "note": "An artist's impression; how much of the Hadean surface was molten, and when oceans first formed, is still debated (zircons hint at liquid water by 4.4 billion years ago). Very wide banner."
+  "note": "An artist's impression; how much of the Hadean surface was molten, and when oceans first formed, is still debated (zircons hint at liquid water by 4.4 billion years ago). Very wide banner.",
+  "storyOnly": true
  },
  {
   "id": "protoplanetary-disc-eso",
@@ -672,7 +675,8 @@
   "credit": "ESO/L. Calçada",
   "license": "CC BY 4.0",
   "quality": 4,
-  "note": "Shows another young star, not the Sun; a stand-in for the birth of the Solar System."
+  "note": "Shows another young star, not the Sun; a stand-in for the birth of the Solar System.",
+  "storyOnly": true
  },
  {
   "id": "apollo-17-lunar-highlands",
@@ -2265,5 +2269,131 @@
    "weight": "Unknown",
    "note": "The scene is a reconstruction; fossil individuals varied in size."
   }
+ },
+ {
+  "id": "ai-early-earth-lava",
+  "subject": "Early Earth Lava",
+  "unit": "hadean",
+  "type": "scene",
+  "image": "/scenes/early-earth/early-earth-lava.png",
+  "page": "https://science.nasa.gov/earth/earth-observatory/ancient-crystals-suggest-earlier-ocean/",
+  "width": 1672,
+  "height": 941,
+  "caption": "A volcanic landscape on the young Earth. Ancient zircon crystals suggest that a solid crust and liquid water existed by about 4.4 billion years ago; this lava lake and sky are imagined.",
+  "credit": "AI-generated illustration",
+  "license": "Artist’s impression",
+  "quality": 6
+ },
+ {
+  "id": "ai-moon-forming-impact",
+  "subject": "Moon Forming Impact",
+  "unit": "hadean",
+  "type": "scene",
+  "image": "/scenes/early-earth/moon-forming-impact.png",
+  "page": "https://science.nasa.gov/moon/formation/",
+  "width": 1672,
+  "height": 941,
+  "caption": "A possible Moon-forming impact. One leading explanation is that a large body struck the young Earth and debris gathered to form the Moon; the details remain uncertain.",
+  "credit": "AI-generated illustration",
+  "license": "Artist’s impression",
+  "quality": 6
+ },
+ {
+  "id": "ai-early-earth-dusk",
+  "subject": "Early Earth Dusk",
+  "unit": "hadean",
+  "type": "scene",
+  "image": "/scenes/early-earth/early-earth-dusk.png",
+  "page": "https://science.nasa.gov/earth/earth-observatory/ancient-crystals-suggest-earlier-ocean/",
+  "width": 1672,
+  "height": 941,
+  "caption": "An imagined Hadean coastline under a young Moon. Ancient crystals point to liquid water, but the shape of the coastline and the appearance of the sky are unknown.",
+  "credit": "AI-generated illustration",
+  "license": "Artist’s impression",
+  "quality": 6
+ },
+ {
+  "id": "ai-planets-before-impact",
+  "subject": "Planets Before Impact",
+  "unit": "hadean",
+  "type": "scene",
+  "image": "/scenes/early-earth/planets-before-impact.png",
+  "page": "https://science.nasa.gov/moon/formation/",
+  "width": 1672,
+  "height": 941,
+  "caption": "Two young rocky bodies before an imagined collision. In the giant-impact hypothesis, a body often called Theia struck the early Earth; its exact appearance and orbit are unknown.",
+  "credit": "AI-generated illustration",
+  "license": "Artist’s impression",
+  "quality": 6
+ },
+ {
+  "id": "ai-young-solar-disc",
+  "subject": "Young Solar Disc",
+  "unit": "hadean",
+  "type": "scene",
+  "image": "/scenes/early-earth/young-solar-disc.png",
+  "page": "https://science.nasa.gov/solar-system/solar-system-facts/",
+  "width": 1672,
+  "height": 941,
+  "caption": "An imagined young Sun surrounded by a disc of gas and dust. The planets formed from material in the early solar system; the detailed appearance of our Sun’s disc is unknown.",
+  "credit": "AI-generated illustration",
+  "license": "Artist’s impression",
+  "quality": 6
+ },
+ {
+  "id": "ai-young-moon-highlands",
+  "subject": "Young Moon Highlands",
+  "unit": "hadean",
+  "type": "scene",
+  "image": "/scenes/early-earth/young-moon-highlands.png",
+  "page": "https://science.nasa.gov/moon/formation/",
+  "width": 1672,
+  "height": 941,
+  "caption": "The young Moon’s pale highlands, imagined from orbit. Lunar samples show that an early molten Moon cooled to form a light-coloured crust; this particular terrain is invented.",
+  "credit": "AI-generated illustration",
+  "license": "Artist’s impression",
+  "quality": 6
+ },
+ {
+  "id": "ai-hadean-crater-lava",
+  "subject": "Hadean Crater Lava",
+  "unit": "hadean",
+  "type": "scene",
+  "image": "/scenes/early-earth/hadean-crater-lava.png",
+  "page": "https://science.nasa.gov/earth/earth-observatory/ancient-crystals-suggest-earlier-ocean/",
+  "width": 1672,
+  "height": 941,
+  "caption": "A lava lake viewed from an imagined crater rim. Volcanism shaped the early Earth, but no evidence tells us what this particular landscape looked like.",
+  "credit": "AI-generated illustration",
+  "license": "Artist’s impression",
+  "quality": 6
+ },
+ {
+  "id": "ai-young-moon-impact",
+  "subject": "Young Moon Impact",
+  "unit": "hadean",
+  "type": "scene",
+  "image": "/scenes/early-earth/young-moon-impact.png",
+  "page": "https://science.nasa.gov/moon/formation/",
+  "width": 1672,
+  "height": 941,
+  "caption": "An imagined impact on the young Moon. Its ancient cratered surface preserves evidence of collisions early in solar system history; this impact is not a record of a specific event.",
+  "credit": "AI-generated illustration",
+  "license": "Artist’s impression",
+  "quality": 6
+ },
+ {
+  "id": "ai-early-earth-seafloor",
+  "subject": "Early Earth Seafloor",
+  "unit": "hadean",
+  "type": "scene",
+  "image": "/scenes/early-earth/early-earth-seafloor.png",
+  "page": "https://science.nasa.gov/earth/earth-observatory/ancient-crystals-suggest-earlier-ocean/",
+  "width": 1672,
+  "height": 941,
+  "caption": "An imagined volcanic seafloor. Ancient zircon chemistry suggests liquid water existed on the young Earth, but the location and appearance of its earliest seafloor are unknown.",
+  "credit": "AI-generated illustration",
+  "license": "Artist’s impression",
+  "quality": 6
  }
 ]
