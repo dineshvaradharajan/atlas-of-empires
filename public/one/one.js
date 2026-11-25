@@ -578,7 +578,13 @@ const EARTH_AT = /^earth(?:\/|$)/.test(startHash);
 if (EARTH_AT) $("#app").dataset.mode = "deep";
 else { const a = $("#app"); a.dataset.mode = "hist"; a.dataset.flat = a.dataset.ready = a.dataset.boot = "1"; if (startHash && !/^-?\d+$/.test(startHash)) a.dataset.app = "1"; // a profile or a story: World history has the screen
   Object.assign(S, { mode: "hist", flat: true, t: 1, tT: 1, lon: 0, lat: 0, pol: 1, f: .92, ma: JOIN, lastMa: JOIN }); }
-$("#hist").src = "world.html" + (EARTH_AT ? "#-10000" : location.hash); // the frame opens where the address says, or (for the Earth) waits at the join
+// No WebGL (blocked by the browser or its graphics driver): this page is its globe, so World history takes over on its own page, which
+// draws its flat map without WebGL. The Earth's side has no flat map of its own, so its addresses go to the plain pages (tools/seo.py).
+function noGlobe() {
+  const s = /^earth\/s\/([\w-]+)/.exec(startHash);
+  location.replace(EARTH_AT ? "earth/" + (s ? `stories/${s[1]}/` : "") : "world.html" + location.search + location.hash);
+}
+if (gl) $("#hist").src = "world.html" + (EARTH_AT ? "#-10000" : location.hash); // the frame opens where the address says, or (for the Earth) waits at the join
 function stateHash() {
   if (ST) return `#earth/s/${ST.story.id}/${ST.i + 1}`;
   if (S.mode === "hist") { let h = ""; try { h = histWin().location.hash; } catch (e) {} return h && h !== "#" ? h : `#${Math.round(S.year)}`; }
@@ -709,7 +715,7 @@ function wire() {
   addEventListener("resize", () => { if (window.PHONE?.changed()) return location.reload(); layout(); if (S.flat) histFrame(); FIT = null; S.dirty = true; });
 }
 async function init() {
-  glInit();
+  try { if (!gl) throw new Error("no WebGL"); glInit(); } catch (e) { console.warn("The globe could not start.", e); return noGlobe(); }
   D = await (await relFetch("data/earth-history.json" + VQ, REL)).json();
   for (const u of D.units) byUnit[u.id] = u;
   const hasKids = new Set(D.units.map((u) => u.parent));
