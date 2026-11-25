@@ -1625,8 +1625,25 @@
   "name": "Four-legged animals (tetrapods)",
   "gallery": {
    "story": "land",
-   "images": ["ai-tetrapod-devonian-shallows", "ai-tetrapod-tiktaalik-shallows", "ai-tetrapod-acanthostega-water", "ai-tetrapod-ichthyostega-water", "ai-tetrapod-fin-limb-comparison", "ai-tetrapod-devonian-trackway", "ai-tetrapod-dunkleosteus", "ai-tetrapod-hyneria", "ai-tetrapod-gooloogongia", "ai-tetrapod-jaekelopterus"],
-   "fossils": ["tiktaalik-fossil", "dunkleosteus-skull", "walliserops-trilobite", "gilboa-stump"],
+   "images": [
+    "ai-tetrapod-devonian-shallows",
+    "ai-tetrapod-tiktaalik-shallows",
+    "ai-tetrapod-acanthostega-water",
+    "ai-tetrapod-ichthyostega-water",
+    "ai-tetrapod-shoreline-transition",
+    "ai-tetrapod-fin-limb-comparison",
+    "ai-tetrapod-devonian-trackway",
+    "ai-tetrapod-dunkleosteus",
+    "ai-tetrapod-hyneria",
+    "ai-tetrapod-gooloogongia",
+    "ai-tetrapod-jaekelopterus"
+   ],
+   "fossils": [
+    "tiktaalik-fossil",
+    "dunkleosteus-skull",
+    "walliserops-trilobite",
+    "gilboa-stump"
+   ],
    "notes": {
     "ai-tetrapod-devonian-trackway": "These traces predate the 375-million-year event; their interpretation is debated.",
     "ai-tetrapod-jaekelopterus": "This sea scorpion lived earlier in the Devonian and is shown for wider context."

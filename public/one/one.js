@@ -290,15 +290,20 @@ function picsFor(u, gallery) { // event-specific pictures, otherwise the period'
 }
 const IM = { list: [], i: 0, when: "" };
 function imOpen(list, i, when) { if (!list.length) return; IM.list = list; IM.when = when || ""; setPlaying(false); $("#immerse").hidden = false;
-  $("#imThumbs").innerHTML = list.map((p, k) => `<button type="button" data-k="${k}" aria-label="Picture ${k + 1}"><img src="${esc(sized(p, 250))}" data-fb="${esc(p.image)}" alt="" loading="lazy"></button>`).join(""); imShow(i || 0); $("#imClose").focus(); }
+  $("#imThumbs").innerHTML = list.map((p, k) => `<button type="button" data-k="${k}" aria-label="${esc(p.storyChapter ? `${p.storyChapter.title}, picture ${k + 1}` : `Picture ${k + 1}`)}"><img src="${esc(sized(p, 250))}" data-fb="${esc(p.image)}" alt="" loading="lazy"></button>`).join(""); imShow(i || 0); $("#imClose").focus(); }
+function imStory() { // one continuous picture journey, starting at the chapter the reader opened
+  if (!ST) return; const list = []; let start = 0;
+  ST.story.chapters.forEach((c, i) => { if (i === ST.i) start = list.length; (c.pics || []).forEach((p) => list.push({ ...p, storyChapter: { i, title: c.title, date: c.dateLabel || "" } })); });
+  imOpen(list, start, ST.story.title);
+}
 function imShow(i) { const n = IM.list.length; IM.i = (i + n) % n; const p = IM.list[IM.i], src = sized(p, innerWidth * Math.min(devicePixelRatio || 1, 2) > 1400 ? 1920 : 1280);
   const im = $("#imImg"); im.dataset.fb = p.image; im.src = src; im.alt = p.caption || ""; $("#imBg").style.backgroundImage = `url("${sized(p, 500)}")`;
   const size = p.size, badge = $("#imSize"); badge.hidden = !size; badge.innerHTML = size ? `<strong>${esc(size.name)}</strong><span>Height: ${esc(size.height)} · Length: ${esc(size.length)} · Weight: ${esc(size.weight)}</span><small>${esc(size.note || "Estimated; varies by individual")}</small>` : "";
-  $("#imWhen").textContent = `${IM.when}${IM.when ? " \u00b7 " : ""}${IM.i + 1} of ${n}`; $("#imCap").textContent = p.caption || "";
+  const chapter = p.storyChapter; $("#imWhen").textContent = `${IM.when}${IM.when ? " \u00b7 " : ""}${chapter ? `${chapter.title}${chapter.date ? " \u00b7 " + chapter.date : ""} \u00b7 ` : ""}${IM.i + 1} of ${n}`; $("#imCap").textContent = p.caption || "";
   const a = $("#imCred"); a.textContent = [p.credit, p.license, p.id?.startsWith("ai-") ? "Read the source" : "Wikimedia Commons"].filter(Boolean).join(", "); a.href = p.page || p.image;
   document.querySelectorAll("#imThumbs button").forEach((b) => b.classList.toggle("on", +b.dataset.k === IM.i)); $("#imThumbs .on")?.scrollIntoView({ inline: "center", block: "nearest" });
   $("#imPrev").hidden = $("#imNext").hidden = n < 2; }
-function imClose() { $("#immerse").hidden = true; }
+function imClose() { const chapter = IM.list[IM.i]?.storyChapter; $("#immerse").hidden = true; if (chapter && ST && chapter.i !== ST.i) storyGo(chapter.i); }
 
 // ---------------------------------------------------------------- moments: a thread of the Earth's history told in chapters on the globe
 const SHARE_ICON = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7 8l5-5 5 5"/><path d="M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg>';
@@ -707,7 +712,7 @@ function wire() {
   $("#sOut").addEventListener("click", () => storyEnd());
   $("#sdock").addEventListener("click", (e) => { const b = e.target.closest("[data-c]"); if (b) { setPlaying(false); storyGo(+b.dataset.c); } });
   $("#picOpen").addEventListener("click", () => { const u = unitAt(S.ma); imOpen(cardPics, 0, nearMile >= 0 && MILES[nearMile]?.item?.gallery ? MILES[nearMile].title : `${u.name}, ${ageParts(S.ma).join(" ")}`); });
-  $("#story").addEventListener("click", (e) => { if (e.target.closest("figure") && ST) { const c = ST.story.chapters[ST.i]; imOpen(c.pics || [], 0, c.title); } });
+  $("#story").addEventListener("click", (e) => { if (e.target.closest("figure") && ST) imStory(); });
   $("#immerse").addEventListener("click", (e) => { const b = e.target.closest("[data-k]"); if (b) imShow(+b.dataset.k); else if (e.target.closest("#imPrev")) imShow(IM.i - 1); else if (e.target.closest("#imNext")) imShow(IM.i + 1); else if (e.target.closest("#imClose") || e.target.id === "immerse" || e.target.classList.contains("imbg")) imClose(); });
   $("#searchBtn").addEventListener("click", () => { if (ST) storyEnd(); enterHistory(S.lastYear ?? Y0); setTimeout(() => { try { histWin().document.querySelector("#search").focus(); } catch (e) {} }, 400); });
   $("#stripEarth").addEventListener("click", () => { if (ST) return storyEnd(); enterDeep(S.lastMa > JOIN ? S.lastMa : .02); });

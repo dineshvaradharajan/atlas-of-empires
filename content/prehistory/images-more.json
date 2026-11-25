@@ -2244,5 +2244,26 @@
   "credit": "AI-generated illustration",
   "license": "Artist’s impression",
   "quality": 5
+ },
+ {
+  "id": "ai-tetrapod-shoreline-transition",
+  "subject": "An early tetrapod at the water’s edge",
+  "unit": "devonian",
+  "type": "scene",
+  "image": "/scenes/tetrapods/shoreline-transition.png",
+  "page": "https://www.nature.com/articles/nature11124",
+  "width": 1752,
+  "height": 897,
+  "caption": "An imagined Ichthyostega-like tetrapod at a muddy shoreline around 365 million years ago, later than the 375-million-year event. It may have used its forelimbs to move on land, though its gait and how often it left the water are uncertain. The transition from aquatic to terrestrial life happened over many generations, not in a single crossing.",
+  "credit": "AI-generated illustration",
+  "license": "Artist’s impression",
+  "quality": 5,
+  "size": {
+   "name": "Ichthyostega-like tetrapod",
+   "height": "Unknown",
+   "length": "Uncertain",
+   "weight": "Unknown",
+   "note": "The scene is a reconstruction; fossil individuals varied in size."
+  }
  }
 ]
