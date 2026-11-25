@@ -285,7 +285,8 @@ function picsFor(u, gallery) { // event-specific pictures, otherwise the period'
     if (selected.length) return selected;
   }
   let list = (D.images || []).filter((p) => p.unit === u.id && !p.storyOnly).sort((a, b) => (b.quality || 0) - (a.quality || 0));
-  for (let p = byUnit[u.parent]; p && (list.length < 6 || u.id === "paleoproterozoic"); p = byUnit[p.parent]) list = list.concat((D.images || []).filter((q) => q.unit === p.id && !q.storyOnly && (u.id !== "paleoproterozoic" || imageKind(q)[0] === "evidence")));
+  const keepProterozoicEvidence = u.id === "paleoproterozoic" || u.id === "mesoproterozoic";
+  for (let p = byUnit[u.parent]; p && (list.length < 6 || keepProterozoicEvidence); p = byUnit[p.parent]) list = list.concat((D.images || []).filter((q) => q.unit === p.id && !q.storyOnly && (!keepProterozoicEvidence || imageKind(q)[0] === "evidence")));
   return list;
 }
 // Image type records describe the subject, so a museum model can be tagged as a reconstruction even though the image is a photograph.
