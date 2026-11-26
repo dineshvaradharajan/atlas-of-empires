@@ -35,6 +35,8 @@ python3 -I tools/placeindex.py   # borders as drawn (corrections + reconstructio
 python3 -I tools/commons.py      # Wikimedia Commons reference maps -> public/data/commons.json
 python3 -I tools/seo.py          # plain HTML pages, sitemaps and llms.txt for search engines (deploy.sh runs it; not committed)
 .venv-paleo/bin/python tools/paleo.py <PaleoDEMS 6-minute zip>  # the ancient Earth, 540 million years ago to today -> public/data/paleo/ (needs numpy, netCDF4)
+.venv-paleo/bin/python tools/climate.py                        # land colour from simulated climate, every 20 million years, and today's -> public/data/paleo/climate.png, climate-now.png (needs the Pohl et al. NetCDF files in data/prehistory/koppen/nc/ and Beck_KG_V1_present_0p083.tif in data/prehistory/koppen/beck/tif/)
+.venv-paleo/bin/python tools/glacial.py                        # the last ice age's ice sheets, 25,000 to 12,000 years ago -> public/data/paleo/glacial.png (needs the NADI-1 OPTIMAL and DATED-1 mc shapefiles in data/prehistory/ice/)
 python3 -I tools/paleo_webp.py      # those maps as lossless WebP, checked pixel for pixel (needs cwebp and dwebp: brew install webp)
 python3 -I tools/prehistory.py   # content/prehistory -> public/data/earth-history.json (the Earth history page at /earth-history/, with an Atlas view and a Space view)
 ```
@@ -65,6 +67,9 @@ with a source, or send a pull request; see [CONTRIBUTING.md](CONTRIBUTING.md). O
 | Ice sheets | NADI-1, Dalton et al. 2023 ([Zenodo](https://zenodo.org/records/8161764)); DATED-1, Hughes et al. 2016 ([PANGAEA](https://doi.pangaea.de/10.1594/PANGAEA.848117)) | CC BY 4.0 / CC BY 3.0 |
 | Empire pictures, ruler portraits, period photos | Wikimedia Commons, Library of Congress, US National Archives, UN Archives, Internet Archive; each credited in the app | Per item |
 | Earth history globe (`/earth-history/`): land height and sea depth, 540 million years ago to today | PALEOMAP PaleoDEMs, C. R. Scotese & N. M. Wright 2018, [doi:10.5281/zenodo.5460860](https://doi.org/10.5281/zenodo.5460860); places carried back in time with the PALEOMAP plate model through the [GPlates Web Service](https://gwsdoc.gplates.org) | CC BY 4.0 |
+| Home page globe: land colour from climate, 540 million years ago to today | A. Pohl, T. Wong Hearing, A. Franc, P. Sepulchre & C. R. Scotese 2022, Phanerozoic continental climate and Köppen–Geiger climate classes, *Data in Brief* 43, 108424; data [doi:10.5281/zenodo.6620748](https://doi.org/10.5281/zenodo.6620748). Ice sheets added from geological evidence (`iceAt` in `public/one/one.js`) | CC BY 4.0 |
+| Home page globe: today's climate, blended in over the last few million years | H. E. Beck, N. E. Zimmermann, T. R. McVicar, N. Vergopolan, A. Berg & E. F. Wood 2018, Present and future Köppen–Geiger climate classification maps at 1-km resolution, *Scientific Data* 5:180214; data [doi:10.6084/m9.figshare.6396959](https://doi.org/10.6084/m9.figshare.6396959) | CC BY 4.0 |
+| Home page globe: the last ice age's ice sheets, 25,000 to 12,000 years ago | NADI-1, Dalton et al. 2023 ([Zenodo](https://zenodo.org/records/8161764)); DATED-1, Hughes et al. 2016 ([PANGAEA](https://doi.pangaea.de/10.1594/PANGAEA.848117)), the same outlines as World history's ice | CC BY 4.0 / CC BY 3.0 |
 | Deep-time records (temperature, CO2, oxygen, sea level, sea life, day length) and pictures | Listed with their licences in `content/prehistory/curves.json` and `images.json`, and on the page under "About this map" | CC BY 4.0, CC0, CC BY-SA or public domain, per item |
 | Libraries and fonts | D3.js, earcut (ISC); Archivo, Inter (SIL OFL) | as stated |
 

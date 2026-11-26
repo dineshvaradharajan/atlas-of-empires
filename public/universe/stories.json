@@ -1,0 +1,19 @@
+{
+  "note": "The universe's stories for the atlas's Stories list (one/one.js, one/phone.js) and for /universe/, which plays them. A chapter names one of the film's turning points by its title (MOMENTS in universe.js), or carries its own scene (s), seconds into it (at), title, when, text and src.",
+  "stories": [
+    {"id": "u-first-minutes", "title": "The first three minutes", "range": "13.8 billion years ago: the first 20 minutes", "img": "universe/img/first-minutes.jpg",
+     "summary": "From the edge of known physics to the first atomic nuclei: how the universe's raw ingredients were made in a few minutes.",
+     "chapters": [{"m": "The edge of known physics"}, {"m": "Inflation ends"}, {"m": "The Higgs field switches on"}, {"m": "Protons and neutrons form"}, {"m": "Neutrinos break free"}, {"m": "Matter survives antimatter"}, {"m": "The first nuclei"}]},
+    {"id": "u-first-light", "title": "From first light to the first stars", "range": "50,000 to 200 million years after the Big Bang", "img": "universe/img/first-light.jpg",
+     "summary": "The fog clears, the universe goes dark, and gravity slowly gathers matter until the first stars switch on.",
+     "chapters": [{"m": "Matter takes over from light"}, {"m": "First light"},
+       {"s": 5, "at": 5, "title": "The dark ages", "when": "380,000 to about 100 million years", "text": "No stars yet. In the dark, gravity draws dark matter and gas into a web of strands and knots, while the leftover light cools from 3,000 K to about 85 K.", "src": "Planck Collaboration 2018, dark and ordinary matter"},
+       {"m": "Cosmic dawn"}]},
+    {"id": "u-first-galaxies", "title": "The first galaxies", "range": "About 280 million to 1 billion years after the Big Bang", "img": "universe/img/first-galaxies.jpg",
+     "summary": "Young galaxies, giant black holes, and the light that cleared the hydrogen haze between them.",
+     "chapters": [{"m": "The oldest galaxies seen"}, {"m": "Giant black holes appear"}, {"m": "Reionization ends"}]},
+    {"id": "u-galaxy-and-sun", "title": "Our galaxy and the Sun", "range": "Over 12 billion to 4.6 billion years ago", "img": "universe/img/galaxy-and-sun.jpg",
+     "summary": "How the Milky Way grew, swallowed a neighbour, and finally made the Sun, where the Earth's own story begins.",
+     "chapters": [{"m": "The Milky Way begins forming"}, {"m": "Cosmic noon"}, {"m": "Gaia-Enceladus is swallowed"}, {"m": "Dark energy takes over"}, {"m": "The Sun is born"}]}
+  ]
+}

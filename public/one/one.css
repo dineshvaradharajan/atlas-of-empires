@@ -317,3 +317,24 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .back:hover { background: var(--chip); }
 .back svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2.2; }
 #story .chead { margin-bottom: 10px; }
+
+/* the universe before the Earth: a tile just before the Earth's first period, the way History waits at the other end; it opens the film
+   at universe/ (13.8 billion years ago to the young Earth). On the Earth side the timeline moves right to make room; History hides it */
+#uniTile { position: absolute; left: 96px; top: 64px; width: 76px; height: 26px; display: flex; align-items: center; justify-content: center; border-radius: 8px 0 0 8px;
+  background: radial-gradient(circle at 30% 40%, rgba(255, 255, 255, .95) 0 .7px, transparent 1.3px) 0 0 / 11px 9px, radial-gradient(circle at 70% 65%, rgba(205, 218, 255, .8) 0 .6px, transparent 1.1px) 3px 2px / 7px 13px,
+    linear-gradient(90deg, #f6dfae 0%, #9a6fd0 38%, #2a2468 70%, #0b1230 100%);
+  box-shadow: inset 0 0 0 1px rgba(17, 17, 17, .25); font: 700 11.5px var(--sans); color: #fff; text-shadow: 0 1px 2px rgba(0, 0, 0, .7); text-decoration: none; white-space: nowrap; }
+#uniTile::after { content: "13.8 bn"; position: absolute; left: 0; top: 32px; font: 400 11px var(--sans); color: var(--ink-3); text-shadow: none; }
+#uniTile:hover { filter: brightness(1.12); } #uniTile:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+#app:not([data-mode="hist"]) #tl, #app:not([data-mode="hist"]) #ticks, #app:not([data-mode="hist"]) #milesRow, #app:not([data-mode="hist"]) .caps { left: 180px; }
+#app[data-mode="hist"] #uniTile, #app[data-app] #uniTile, #app[data-story] #uniTile { display: none; }
+#pUniW { display: none; }
+@media (max-width: 760px) {
+  #uniTile { display: none; }
+  #pUniW { display: block; position: relative; flex: none; width: 58px; text-decoration: none; color: inherit; } /* the block and its name are one 58 x 48 target, like the History tile */
+  #pUni { display: block; height: 28px; border-radius: 9px; box-shadow: inset 0 0 0 1px rgba(17, 17, 17, .22);
+    background: radial-gradient(circle at 30% 40%, rgba(255, 255, 255, .95) 0 .7px, transparent 1.3px) 0 0 / 9px 8px, linear-gradient(90deg, #f6dfae 0%, #9a6fd0 40%, #2a2468 72%, #0b1230 100%); }
+  #pUniT { display: block; margin-top: 6px; font: 700 10.5px/14px var(--sans); text-align: center; white-space: nowrap; }
+  #app[data-mode="hist"] #pUniW { display: none; }
+}
+a.erow, a.pcard { text-decoration: none; } a.pcard { color: inherit; } /* the universe's stories are links to the film */

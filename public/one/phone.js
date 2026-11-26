@@ -89,8 +89,10 @@ window.PHONE = (() => {
     return leaves.filter((u) => u.from > s.to && u.to < s.from).map((u) => { const l = (X(Math.min(u.from, s.from)) - a) / w, r = (X(Math.max(u.to, s.to, JOIN)) - a) / w; return `<i style="left:${l * 100}%;width:${(r - l) * 100}%;background:${u.color}"></i>`; }).join(""); }
   function cards() {
     const L = [...(D.stories || [])].sort((a, b) => b.from - a.from), box = q("#pCards");
-    q("#pstCount").textContent = `${L.filter((s) => (SEEN[s.id] || 0) >= s.chapters.length).length} of ${L.length} finished`; q("#pstE").textContent = `The Earth, ${L.length}`;
-    box.innerHTML = L.map((s) => { const p = s.chapters.flatMap((c) => c.pics || [])[0], t = s.chapters.length, d = Math.min(SEEN[s.id] || 0, t);
+    const U = typeof USTORIES !== "undefined" ? USTORIES : [], all = [...U, ...L]; // the universe's stories first: they open the film (universe/)
+    q("#pstCount").textContent = `${all.filter((s) => (SEEN[s.id] || 0) >= s.chapters.length).length} of ${all.length} finished`; q("#pstE").textContent = U.length ? `Universe and Earth, ${all.length}` : `The Earth, ${L.length}`;
+    box.innerHTML = U.map((s) => { const t = s.chapters.length, d = Math.min(SEEN[s.id] || 0, t);
+      return `<a class="pcard${d && d < t ? " doing" : ""}" href="${esc(uniHref(s))}"><img src="${esc(s.img)}" alt="" loading="lazy"><span class="pstrip"><i style="left:0;width:100%;background:linear-gradient(90deg,#f6dfae,#9a6fd0 40%,#2a2468 72%,#0b1230)"></i></span><b>${esc(s.title)}</b><small>${esc(s.range)}</small><span class="prog"><i style="width:${d / t * 100}%"></i></span><em>${!d ? "Not started" : d >= t ? "Finished" : `Chapter ${d} of ${t}`}</em></a>`; }).join("") + L.map((s) => { const p = s.chapters.flatMap((c) => c.pics || [])[0], t = s.chapters.length, d = Math.min(SEEN[s.id] || 0, t);
       return `<button type="button" class="pcard${d && d < t ? " doing" : ""}" data-s="${esc(s.id)}">${p ? `<img src="${esc(sized(p, 500))}" data-fb="${esc(p.image)}" alt="" loading="lazy">` : '<span class="noimg"></span>'}<span class="pstrip">${strip(s)}</span><b>${esc(s.title)}</b><small>${esc(spanOf(s))}</small><span class="prog"><i style="width:${d / t * 100}%"></i></span><em>${!d ? "Not started" : d >= t ? "Finished" : `Chapter ${d} of ${t}`}</em></button>`; }).join("");
     const c = box.querySelector(".doing"); box.scrollLeft = c ? c.offsetLeft - (box.clientWidth - c.offsetWidth) / 2 : 0;
   }

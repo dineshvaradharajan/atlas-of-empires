@@ -47,6 +47,7 @@ function ageParts(ma) {
 }
 const yearText = (y) => { y = Math.round(y); return y < 0 ? `${num(-y)} BCE` : y < 1000 ? `${y} CE` : String(y); };
 
+const CALM = matchMedia("(prefers-reduced-motion: reduce)"); // readers who ask for less motion get a still molten Earth
 const PH = () => matchMedia("(max-width: 760px)").matches; // a phone: World history underneath is in its phone layout too (see phone.js)
 const S = { mode: "deep", ma: 66, year: Y0, t: 0, tT: 0, f: .08, lon: 20, lat: 14, playing: false, flat: false, pol: 0, dirty: true };
 let D = null, leaves = [];
@@ -68,7 +69,7 @@ void main(){
 }`;
 const FS = `precision highp float;
 uniform float uR; uniform mat3 uM; uniform sampler2D uA, uB; uniform float uMix; uniform vec2 uTexel;
-uniform float uLandMax, uSeaMax, uVeg, uReal, uHeat, uIce, uSeed, uTpp, uT, uPol; uniform vec3 uW, uSun, uH; uniform vec2 uHs; uniform sampler2D uHist;
+uniform float uLandMax, uSeaMax, uVeg, uReal, uHeat, uIce, uSeed, uTpp, uT, uPol, uClock; uniform vec3 uW, uSun, uH, uClimT; uniform vec4 uIceE, uGlacT; uniform sampler2D uClim, uNow, uGlac; uniform float uNowW; uniform vec2 uHs; uniform sampler2D uHist;
 vec2 ne(float l, float p){ float p2=p*p, p4=p2*p2;
   return vec2(l*(0.8707-0.131979*p2+p4*(-0.013791+p4*(0.003971*p2-0.001529*p4))), p*(1.007226+p2*(0.015085+p4*(-0.044475+0.028874*p2-0.005916*p4)))); }
 varying vec3 vGeo; varying float vFace;
@@ -77,40 +78,120 @@ float noise(vec3 x){ vec3 i=floor(x), f=fract(x); f=f*f*(3.-2.*f);
   return mix(mix(mix(hash(i),hash(i+vec3(1,0,0)),f.x),mix(hash(i+vec3(0,1,0)),hash(i+vec3(1,1,0)),f.x),f.y),
              mix(mix(hash(i+vec3(0,0,1)),hash(i+vec3(1,0,1)),f.x),mix(hash(i+vec3(0,1,1)),hash(i+vec3(1,1,1)),f.x),f.y),f.z); }
 float fbm(vec3 p){ float a=.5, s=0.; for(int i=0;i<5;i++){ s+=a*noise(p); p=p*2.03+vec3(7.1,3.3,5.7); a*=.5; } return s; }
+// weather for the artist's early worlds: bands that drift at different speeds by latitude, broken into wisps (n is fixed to the planet, so the clouds move over it)
+// The whole layer turns at one rate and changes slowly in place (its noise drifts through depth): a rate that varied with latitude would
+// shear the pattern a little more every second until, minutes later, it was smeared into flickering streaks. Fewer octaves keep it cheap,
+// since the globe is redrawn continuously on the Earth side
+float fbm2(vec3 p){ return .5*noise(p)+.25*noise(p*2.03+vec3(7.1,3.3,5.7)); }
+float fbm4(vec3 p){ float a=.5, s=0.; for(int i=0;i<4;i++){ s+=a*noise(p); p=p*2.03+vec3(7.1,3.3,5.7); a*=.5; } return s; }
+float clouds(vec3 n, float tk){
+  float a=tk*.014, ca=cos(a), sa=sin(a);
+  vec3 p=vec3(n.x*ca-n.z*sa, n.y, n.x*sa+n.z*ca);
+  return smoothstep(.5,.72,fbm4(p*vec3(2.2,4.5,2.2)+vec3(0.,0.,tk*.006)+fbm2(p*3.+vec3(tk*.01))*.9));
+}
 float dec(float v){ float x=v*255.; return x>127.5 ? pow(max(x-128.,0.)/127.,2.)*uLandMax+step(128.,x)*.5 : -pow((127.-min(x,127.))/127.,2.)*uSeaMax; }
 float elev(vec2 uv){ return mix(dec(texture2D(uA,uv).r), dec(texture2D(uB,uv).r), uMix); }
-vec3 seaL(float d){ vec3 c=mix(vec3(.74,.85,.93),vec3(.88,.93,.97),smoothstep(120.,1500.,d)); return mix(c,vec3(.95,.97,.985),smoothstep(1500.,5200.,d)); }
+// the sea in natural blues, darker where deeper: light turquoise over the shelves, mid blue down the slope, a rich blue in the deep ocean.
+// Only the colour per depth is a choice; the depths are the reconstruction's. Kept light enough for the pale land, coastlines and grid to read
+vec3 seaL(float d){ vec3 c=mix(vec3(.66,.86,.87),vec3(.42,.68,.84),smoothstep(60.,700.,d)); c=mix(c,vec3(.30,.54,.78),smoothstep(700.,2600.,d)); return mix(c,vec3(.22,.44,.71),smoothstep(2600.,5400.,d)); }
 vec3 landL(float h){
   vec3 c=mix(vec3(.875,.865,.825),vec3(.80,.78,.73),smoothstep(0.,1300.,h)); c=mix(c,vec3(.69,.67,.61),smoothstep(1300.,3200.,h)); c=mix(c,vec3(.55,.53,.47),smoothstep(3200.,5400.,h));
   return mix(c,vec3(.78,.84,.71),uVeg*.6*(1.-smoothstep(700.,2600.,h))); }
+// Land in natural colour, from simulated climate (tools/climate.py: Pohl et al. 2022, one tile per 20 million years, 0 to 540 Ma):
+// uClimT = the two tiles either side of the time and how far between them. Ice sheets are not in that model, so they come from
+// geological evidence (iceAt in the script): uIceE = (the edge of the southern ice in degrees of latitude, Greenland's ice on or off,
+// icehouse or hothouse for the snowline, the climate texture loaded). High ground turns to rock and, above the snowline, snow
+vec3 climTile(float i, vec2 ll){ float col=mod(i,7.), row=floor(i/7.+.001);
+  return texture2D(uClim,(vec2(col,row)*130.+1.+vec2(ll.x/2.8125,(ll.y+90.)/1.40625))/vec2(910.,520.)).rgb; }
+vec3 landC(float h, float lon, float lat){
+  if(uIceE.w<.5) return landL(h);
+  vec2 ll=vec2(mod(degrees(lon)+360.,360.),degrees(lat));
+  vec3 g=vec3(cos(lat)*sin(lon),sin(lat),cos(lat)*cos(lon)); // where the climate is read is nudged by up to about a cell, so the model's 2.8-degree boxes come out as organic edges
+  vec2 lw=ll+(vec2(fbm2(g*7.),fbm2(g*7.+11.))-.375)*vec2(7.,3.5);
+  vec3 c=mix(climTile(uClimT.x,lw),climTile(uClimT.y,lw),uClimT.z);
+  if(uNowW>0.) c=mix(c,texture2D(uNow,vec2((degrees(lon)+180.)/360.,(90.-degrees(lat))/180.)).rgb,uNowW); // today's climate over the last few million years: the model runs cold in the north
+  c=mix(c,vec3(.55,.50,.45),smoothstep(1800.,4500.,h)*.55);
+  float sl=mix(5200.,700.,smoothstep(10.,75.,abs(ll.y)))*mix(1.25,1.,uIceE.z);
+  c=mix(c,vec3(.94,.95,.97),smoothstep(sl,sl+800.,h));
+  float nz=(fbm2(vec3(lon*3.,lat*3.,1.7))-.37)*8.;
+  float ice=max(smoothstep(1.5,-1.5,ll.y-uIceE.x+nz), uIceE.y*step(60.,ll.y+nz*.5)*smoothstep(800.,1400.,h));
+  return mix(c,vec3(.93,.95,.97),ice); }
+// the last ice age's ice sheets (tools/glacial.py: NADI-1 and DATED-1), one frame per thousand years from 25,000 to 12,000 years ago,
+// 35 to 90 deg N: uGlacT = (the two frames either side of the time, how far between them, how strongly shown)
+float glacAt(float lon, float lat){
+  float la=degrees(lat); if(uGlacT.w<.001||la<35.) return 0.;
+  vec2 p=vec2((degrees(lon)+180.)/360.*1024.,clamp((la-35.)/55.*160.,.5,159.5));
+  float a=texture2D(uGlac,vec2(p.x,uGlacT.x*160.+p.y)/vec2(1024.,2240.)).r, b=texture2D(uGlac,vec2(p.x,uGlacT.y*160.+p.y)/vec2(1024.,2240.)).r;
+  return smoothstep(.35,.65,mix(a,b,uGlacT.z))*uGlacT.w; }
 void main(){
   vec3 n=normalize(vGeo); vec3 L=uSun*uM; float z=clamp(vFace,0.,1.);
   float lat=asin(clamp(n.y,-1.,1.)); float lon=atan(n.x,n.z); vec2 uv=vec2(lon/6.2831853+.5,.5-lat/3.14159265);
   float base=dot(n,L); float relief=0.; float glow=0.; vec3 real=vec3(0.);
   if(uReal>.001){
     float e=elev(uv); float dx=uTexel.x/max(cos(lat),.1);
-    float ex=elev(uv+vec2(dx,0.))-elev(uv-vec2(dx,0.)); float ey=elev(uv-vec2(0.,uTexel.y))-elev(uv+vec2(0.,uTexel.y));
+    float eE=elev(uv+vec2(dx,0.)), eW=elev(uv-vec2(dx,0.)), eN=elev(uv-vec2(0.,uTexel.y)), eS=elev(uv+vec2(0.,uTexel.y));
+    float ex=eE-eW; float ey=eN-eS;
+    // a coastline only where land and sea actually meet: flat lowland a metre above the sea (the lowest land step) has almost no slope,
+    // so the distance test below alone painted whole plains in the coastline's grey, more so on a small globe or while two maps blend
+    float shore=step(min(min(min(eE,eW),min(eN,eS)),e),0.)*step(.25,max(max(max(eE,eW),max(eN,eS)),e));
     vec3 east=normalize(vec3(n.z,0.,-n.x)); vec3 north=cross(n,east); float k=(e>0.?46.:13.)/(uTexel.y*40030000.);
     vec3 nn=normalize(n-(east*ex+north*ey)*k); relief=(dot(nn,L)-base)*uReal;
-    real=e>0.?landL(e):seaL(-e);
+    real=e>0.?landC(e,lon,lat):seaL(-e);
+    float glac=glacAt(lon,lat); real=mix(real,vec3(.93,.95,.97)-.04*fbm2(n*40.),glac); // on land and over the seas the ice sheets covered
     float u=lon*1.9098593, w2=lat*1.9098593, lw=1.9098593/uR;
     float gd=min(abs(u-floor(u+.5))*max(cos(lat),.05),abs(w2-floor(w2+.5)));
     real=mix(real,vec3(.80,.83,.85),(1.-smoothstep(lw*.6,lw*1.5,gd))*step(200.,-e)*.9);
     float dpx=abs(e)/max(length(vec2(ex,ey))*.5,.5)/uTpp;
-    real=mix(real,vec3(.47,.46,.41),(1.-smoothstep(.5,1.3,dpx))*.8);
+    real=mix(real,vec3(.47,.46,.41),(1.-smoothstep(.5,1.3,dpx))*.8*shore*(1.-glac)); // no coastline drawn through an ice sheet
+    // motion that adds no data: the sea shimmers and thin weather drifts over the round globe. Both fade out as it flattens into a map,
+    // and the coastlines, relief and ice underneath stay exactly as the reconstruction has them
+    float still=1.-uT;
+    if(e<0.) real+=real*(noise(n*30.+vec3(uClock*.12,0.,uClock*.09))-.5)*.05*still;
+    real*=1.-clouds(normalize(n-L*.025),uClock)*.12*still; // each cloud's faint shadow, a little away from the Sun, so thin white cloud reads on a pale map
+    real=mix(real,vec3(.985,.99,1.),clouds(n,uClock)*.32*still);
   }
   vec3 art=vec3(0.);
+  float sun=mix(.5+.62*max(base,0.),1.,uT); // the early worlds are lit from one side on the globe, evenly once flattened into a map
   if(uReal<.999){
     vec3 q=n+vec3(uSeed,uSeed*.37,-uSeed*.61);
-    if(uW.x>.001){ float f=fbm(q*3.2); float cr=1.-smoothstep(0.,.05,abs(fbm(q*5.5+3.)-.48)); float m=smoothstep(.92-.62*uHeat,1.08-.50*uHeat,f*.9+cr*.45);
-      vec3 crust=mix(vec3(.075,.052,.05),vec3(.21,.14,.11),fbm(q*13.)); vec3 lava=mix(vec3(.78,.11,.02),vec3(1.,.46,.07),smoothstep(.25,1.,m));
-      art+=uW.x*mix(crust,lava,m); glow+=uW.x*m; }
+    if(uW.x>.001){ // the molten Hadean, as in the Before the Earth film: dark crust rafting on magma, glowing seams and lava lakes, lit from one side.
+      // It churns slowly (uClock), the seams pulse, and now and then a late impact flashes. uHeat thins the lava as the crust cools towards 4,000 million years ago
+      float tk=uClock;
+      vec3 wq=q+vec3(fbm2(q*1.6+tk*.015),fbm2(q*1.6+vec3(4.1,0.,0.)-tk*.012),0.)*.47;
+      float crust=fbm(wq*3.), det=fbm(q*11.+5.+vec3(0.,tk*.05,0.));
+      float r1=1.-abs(2.*fbm(wq*4.6+3.)-1.), r2=1.-abs(2.*fbm(wq*9.+8.)-1.);
+      float cracks=(pow(r1,18.)+pow(r2,28.)*.5)*smoothstep(.34,.56,crust)*(.5+.5*uHeat);
+      float lt=.68-.10*uHeat, lake=smoothstep(lt,lt+.025,crust), shore=smoothstep(lt-.035,lt,crust)*(1.-lake);
+      float flow=fbm4(q*7.+vec3(tk*.06,0.,tk*.04));
+      float pulse=.82+.18*sin(tk*1.3+det*14.), diff=max(base,0.), hot=pulse*(.8+.4*(1.-smoothstep(-.15,.35,base)));
+      vec3 c=mix(vec3(.10,.085,.075),vec3(.25,.19,.145),det)*(.55+.7*crust)*mix(.3+.95*diff,1.,uT);
+      c+=mix(vec3(.85,.3,.05),vec3(1.,.72,.3),det)*cracks*1.3*hot;
+      c=mix(c,mix(vec3(.78,.22,.03),vec3(1.,.66,.24),smoothstep(.4,.78,flow))*hot,lake*(.55+.45*uHeat));
+      c+=vec3(1.,.55,.15)*shore*.8*hot*(.5+.5*uHeat);
+      vec3 g=floor(n*9.); float ph=tk*.7+hash(g)*20., age=fract(ph), hit=step(hash(g+floor(ph)*.13),.003);
+      float dd=length(n-normalize((g+.5)/9.+(vec3(hash(g+1.),hash(g+2.),hash(g+3.))-.5)*.08));
+      c+=vec3(1.,.85,.6)*hit*exp(-age*5.)*exp(-dd*dd*2500.)*1.5;
+      c+=vec3(1.,.55,.3)*pow(1.-z,2.5)*(.1+.4*max(base+.35,0.))*.6*(1.-uT); // a hazy limb of steam and rock vapour, on the globe only
+      art+=uW.x*c; glow+=uW.x*clamp(cracks*1.3+lake+shore,0.,1.); }
     if(uW.y>.001){ float f=fbm(q*2.7+11.); float ld=smoothstep(.640,.660,f); vec3 sea=mix(vec3(.04,.24,.30),vec3(.11,.47,.45),smoothstep(.3,.7,fbm(q*5.+2.)));
-      art+=uW.y*mix(sea,mix(vec3(.24,.19,.16),vec3(.38,.29,.22),fbm(q*15.)),ld); }
+      // the ocean world: its sea shimmers, a few volcanic islands glow, weather drifts over it
+      sea+=sea*(noise(q*28.+vec3(uClock*.15,0.,uClock*.11))-.5)*.25;
+      vec3 c=mix(sea,mix(vec3(.24,.19,.16),vec3(.38,.29,.22),fbm(q*15.)),ld);
+      float hs=pow(fbm(q*9.+31.),5.)*ld*(.65+.35*sin(uClock*1.1+f*40.));
+      c=c*sun+vec3(1.,.42,.1)*hs*1.6;
+      c=mix(c,vec3(.93,.94,.96)*(.45+.65*max(base,0.)),clouds(n,uClock)*.7);
+      art+=uW.y*c; glow+=uW.y*clamp(hs*1.6,0.,1.); }
     if(uW.z>.001){ float f=fbm(q*1.9+23.); float ld=smoothstep(.555,.575,f); vec3 sea=mix(vec3(.03,.13,.36),vec3(.11,.40,.63),smoothstep(.30,.55,f));
       vec3 rock=mix(vec3(.58,.38,.25),vec3(.40,.29,.23),fbm(q*9.)); vec3 c=mix(sea,rock,ld);
       float ic=smoothstep(0.,.06,abs(lat)-mix(1.75,-.12,uIce)+(fbm(q*7.)-.5)*.34);
-      vec3 icec=mix(vec3(.62,.75,.87),vec3(.97,.98,1.),smoothstep(.3,.68,fbm(q*6.+5.)))-ld*.07-(1.-smoothstep(0.,.014,abs(fbm(q*9.+1.)-.49)))*.20; c=mix(c,icec,ic); art+=uW.z*c; }
+      vec3 icec=mix(vec3(.62,.75,.87),vec3(.97,.98,1.),smoothstep(.3,.68,fbm(q*6.+5.)))-ld*.07-(1.-smoothstep(0.,.014,abs(fbm(q*9.+1.)-.49)))*.20; c=mix(c,icec,ic);
+      // the Snowball: on the ice, wind-blown snow streams along the latitude bands and the sheet glints where the Sun is high
+      float sa=uClock*.02, cs=cos(sa), sn=sin(sa); vec3 wp=vec3(n.x*cs-n.z*sn, n.y, n.x*sn+n.z*cs);
+      float drift=smoothstep(.5,.8,fbm4(wp*vec3(3.,24.,3.)+vec3(uClock*.04,0.,0.)+fbm2(wp*5.)*.8));
+      c=mix(c,vec3(.99,1.,1.),ic*drift*.4);
+      c=mix(c*sun,vec3(.95,.96,.98)*(.45+.65*max(base,0.)),clouds(n,uClock)*.6*(1.-.5*uIce)); // light from one side and drifting weather (thinner over a frozen, dry world)
+      c+=vec3(.9,.95,1.)*ic*pow(max(base,0.),14.)*.18*(1.-uT);
+      art+=uW.z*c; }
   }
   vec3 col=mix(art,real,uReal);
   float litL=(mix(.89+.11*z,1.,uT))*(1.+relief*.9); col=col*mix(litL,1.,glow*.7);
@@ -132,7 +213,7 @@ function glInit() {
   NV = k / 2;
   const b = gl.createBuffer(); gl.bindBuffer(gl.ARRAY_BUFFER, b); gl.bufferData(gl.ARRAY_BUFFER, v, gl.STATIC_DRAW);
   const a = gl.getAttribLocation(pr, "a"); gl.enableVertexAttribArray(a); gl.vertexAttribPointer(a, 2, gl.FLOAT, false, 0, 0);
-  for (const n of ["uMi", "uT", "uCg", "uView", "uRg", "uF", "uR", "uM", "uA", "uB", "uMix", "uTexel", "uLandMax", "uSeaMax", "uVeg", "uReal", "uHeat", "uIce", "uSeed", "uTpp", "uW", "uSun", "uHist", "uH", "uHs", "uPol"]) U[n] = gl.getUniformLocation(pr, n);
+  for (const n of ["uMi", "uT", "uCg", "uView", "uRg", "uF", "uR", "uM", "uA", "uB", "uMix", "uTexel", "uLandMax", "uSeaMax", "uVeg", "uReal", "uHeat", "uIce", "uSeed", "uTpp", "uW", "uSun", "uHist", "uH", "uHs", "uPol", "uClock", "uClim", "uClimT", "uIceE", "uNow", "uNowW", "uGlac", "uGlacT"]) U[n] = gl.getUniformLocation(pr, n);
   gl.uniform1i(U.uA, 0); gl.uniform1i(U.uB, 1);
   gl.pixelStorei(gl.UNPACK_COLORSPACE_CONVERSION_WEBGL, gl.NONE); gl.pixelStorei(gl.UNPACK_PREMULTIPLY_ALPHA_WEBGL, false); gl.pixelStorei(gl.UNPACK_ALIGNMENT, 1);
   blank = gl.createTexture(); gl.bindTexture(gl.TEXTURE_2D, blank); gl.texImage2D(gl.TEXTURE_2D, 0, gl.LUMINANCE, 1, 1, 0, gl.LUMINANCE, gl.UNSIGNED_BYTE, new Uint8Array([60]));
@@ -140,9 +221,35 @@ function glInit() {
   HT.tex = gl.createTexture(); gl.activeTexture(gl.TEXTURE2); gl.bindTexture(gl.TEXTURE_2D, HT.tex); gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGB, 1, 1, 0, gl.RGB, gl.UNSIGNED_BYTE, new Uint8Array([255, 255, 255]));
   for (const k of [gl.TEXTURE_MIN_FILTER, gl.TEXTURE_MAG_FILTER]) gl.texParameteri(gl.TEXTURE_2D, k, gl.LINEAR);
   gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE); gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
-  gl.uniform1i(U.uHist, 2); gl.activeTexture(gl.TEXTURE0);
+  gl.uniform1i(U.uHist, 2);
+  // the land's colour layers: until each arrives the globe draws without it (plain map colours, no glacial ice)
+  layerTex(CLIM, 3, U.uClim, "climate.png", gl.RGB); layerTex(NOWC, 4, U.uNow, "climate-now.png", gl.RGB); layerTex(GLAC, 5, U.uGlac, "glacial.png", gl.LUMINANCE);
+}
+function layerTex(o, unit, loc, file, fmt) {
+  o.tex = gl.createTexture(); gl.activeTexture(gl.TEXTURE0 + unit); gl.bindTexture(gl.TEXTURE_2D, o.tex);
+  gl.texImage2D(gl.TEXTURE_2D, 0, fmt, 1, 1, 0, fmt, gl.UNSIGNED_BYTE, new Uint8Array(fmt === gl.RGB ? [200, 196, 186] : [0]));
+  for (const k of [gl.TEXTURE_MIN_FILTER, gl.TEXTURE_MAG_FILTER]) gl.texParameteri(gl.TEXTURE_2D, k, gl.LINEAR);
+  gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE); gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
+  gl.uniform1i(loc, unit); gl.activeTexture(gl.TEXTURE0);
+  relFetch(`data/paleo/${file}${VQ}`, REL).then((r) => { if (!r.ok) throw new Error(r.status); return r.blob(); })
+    .then((b) => createImageBitmap(b, { colorSpaceConversion: "none", premultiplyAlpha: "none" }))
+    .then((bmp) => { gl.activeTexture(gl.TEXTURE0 + unit); gl.bindTexture(gl.TEXTURE_2D, o.tex); gl.texImage2D(gl.TEXTURE_2D, 0, fmt, fmt, gl.UNSIGNED_BYTE, bmp); bmp.close && bmp.close(); gl.activeTexture(gl.TEXTURE0); o.ready = true; S.dirty = true; })
+    .catch(() => {});
 }
 let blank = null;
+const CLIM = { tex: null, ready: false }, NOWC = { tex: null, ready: false }, GLAC = { tex: null, ready: false }; // land colour from simulated climate, one tile per 20 million years, and today's climate (tools/climate.py); the last ice age's ice sheets (tools/glacial.py)
+// Ice sheets, which the climate model leaves out, from geological evidence: Antarctica from the Eocene-Oligocene boundary (34 Ma),
+// growing to its full size by the mid-Miocene (about 14 Ma); southern Gondwana in the Late Palaeozoic Ice Age (about 335-290 Ma, largest
+// near 300 Ma); the brief Hirnantian glaciation (about 445 Ma); Greenland's ice sheet from about 2.7 Ma. The Pleistocene ice sheets of
+// North America and Europe come and go too fast for these maps and are left out. Returns [southern edge (deg), Greenland 0/1, icehouse 0/1]
+function iceAt(ma) {
+  const r = (a, b, v) => clamp((v - a) / (b - a), 0, 1);
+  let s = -95, cold = 0;
+  if (ma <= 34) { s = -62 - 8 * r(14, 34, ma); cold = 1; }
+  else if (ma >= 288 && ma <= 337) { s = -66 + 18 * Math.min(r(288, 298, ma), r(337, 318, ma)); cold = 1; }
+  else if (ma >= 440 && ma <= 449) { s = -70 + 18 * Math.min(r(440, 443, ma), r(449, 446, ma)); cold = 1; }
+  return [s, ma <= 2.7 ? 1 : 0, cold];
+}
 const HT = { tex: null, cvs: document.createElement("canvas"), aff: [1, 0, 0], size: [1, 1], at: 0, has: false }; // the World history map, copied to a texture
 const tex = new Map();
 function want(ma) {
@@ -231,7 +338,7 @@ function flatFit() {
   } catch (e) { const a = (G.r * 2.6) / (2 * Math.PI * .8707); return [a, G.cx, G.cy]; }
 }
 let FIT = null;
-function draw() {
+function draw(ambient) { // ambient: only the slow motion has changed, so the 2D pins on top need no redrawing
   if (S.mode === "hist" && S.t >= 1 && $("#app").dataset.ready && performance.now() - (S.readyAt ?? -1e4) > 600) return; // the map underneath has taken over and this canvas has faded out: nothing to draw, and no globe pictures to ask for
   const a = -S.lon * RAD, b = S.lat * RAD, ca = Math.cos(a), sa = Math.sin(a), cb = Math.cos(b), sb = Math.sin(b);
   const M = [[ca, 0, sa], [sa * sb, cb, -ca * sb], [-sa * cb, sb, ca * cb]]; // world -> view
@@ -248,10 +355,16 @@ function draw() {
   gl.uniform1f(U.uLandMax, D.maps.landMax); gl.uniform1f(U.uSeaMax, D.maps.seaMax); gl.uniform1f(U.uVeg, clamp((470 - S.ma) / 130, 0, 1));
   gl.uniform1f(U.uR, pxRad); gl.uniform1f(U.uTpp, D.maps.width / (2 * Math.PI) / pxRad);
   gl.uniform1f(U.uReal, pr ? real : 0); gl.uniform1f(U.uHeat, e.heat); gl.uniform1f(U.uIce, e.ice); gl.uniform1f(U.uSeed, e.seed); gl.uniform3fv(U.uW, e.w);
+  gl.uniform1f(U.uClock, CALM.matches ? 0 : performance.now() / 1000 % 3600);
+  const cm = clamp(S.ma, 0, 540) / 20, ci = Math.floor(cm), ice = iceAt(S.ma); gl.uniform3f(U.uClimT, ci, Math.min(ci + 1, 27), cm - ci);
+  gl.uniform4f(U.uIceE, ice[0], ice[1], ice[2], CLIM.ready ? 1 : 0);
+  gl.uniform1f(U.uNowW, NOWC.ready ? clamp((10 - S.ma) / 7.4, 0, 1) : 0); // today's climate in full from 2.6 million years ago, none before 10
+  const ka = S.ma * 1000, gf = clamp(25 - ka, 0, 13), gi = Math.floor(gf); // the glacial ice: drawn where its maps exist, 25,000 to 12,000 years ago
+  gl.uniform4f(U.uGlacT, gi, Math.min(gi + 1, 13), gf - gi, GLAC.ready ? clamp(26 - ka, 0, 1) : 0); // the molten Earth's slow churn; still for readers who ask for less motion
   gl.uniform1f(U.uPol, HT.has ? S.pol : 0); gl.uniform3f(U.uH, HT.aff[0], HT.aff[1], HT.aff[2]); gl.uniform2f(U.uHs, HT.size[0], HT.size[1]);
   const s = [-.46, .36, .81], sl = Math.hypot(...s); gl.uniform3f(U.uSun, s[0] / sl, s[1] / sl, s[2] / sl);
   gl.drawArrays(gl.TRIANGLES, 0, NV);
-  drawPins(M);
+  if (!ambient) drawPins(M);
 }
 
 // ---------------------------------------------------------------- the card (the Earth part; in history the World history card shows)
@@ -346,15 +459,19 @@ function earthShare(opener) {
   if (ST) return atlasShare({ path: `earth/stories/${ST.story.id}/`, pic: `earth/story-${ST.story.id}`, title: ST.story.title }, opener);
   const u = unitAt(S.ma); atlasShare({ path: `earth/${u.id}/`, pic: `earth/${u.id}`, title: `The Earth in the ${u.name}` }, opener);
 }
-let ST = null, fly = null;
+const SHOW_UNI_STORIES = false; // the universe's stories are switched off for now (they repeated the film's scene cards); true lists them again
+let ST = null, fly = null, USTORIES = []; // USTORIES: the universe's stories (universe/stories.json), listed before the Earth's and played on the universe page
+const uniHref = (s) => `universe/#s/${encodeURIComponent(s.id)}/${Math.min((SEEN[s.id] || 0) + 1, s.chapters.length)}`; // opened at the first chapter not yet read
 const rangeOf = (s) => `${ageParts(s.from).join(" ").replace(" ago", "")} to ${s.to < .001 ? "today" : ageParts(s.to).join(" ")}`;
 const thumb = (u) => /\/\d+px-/.test(u) ? u.replace(/\/\d+px-/, "/500px-") : u;
 // how far each moment has been read, kept in this browser (as World history keeps its own)
 const SEEN = (() => { try { return JSON.parse(localStorage.getItem("one.moments") || "{}") || {}; } catch (e) { return {}; } })();
 function momentList() { // the Earth's moments as a side pane, oldest first
   const L = [...(D.stories || [])].sort((a, b) => b.from - a.from);
-  $("#mTotal").textContent = L.length; $("#mCount").textContent = `${L.filter((s) => (SEEN[s.id] || 0) >= s.chapters.length).length} of ${L.length} finished`;
-  $("#momentRows").innerHTML = L.map((s) => { const p = s.chapters.flatMap((c) => c.pics || [])[0], n = Math.min(SEEN[s.id] || 0, s.chapters.length), st = !n ? "" : n >= s.chapters.length ? "done" : "doing";
+  const all = [...USTORIES, ...L];
+  $("#mTotal").textContent = all.length; $("#mCount").textContent = `${all.filter((s) => (SEEN[s.id] || 0) >= s.chapters.length).length} of ${all.length} finished`;
+  $("#momentRows").innerHTML = USTORIES.map((s) => { const n = Math.min(SEEN[s.id] || 0, s.chapters.length), st = !n ? "" : n >= s.chapters.length ? "done" : "doing";
+    return `<a class="erow" href="${esc(uniHref(s))}"><span class="mark ${st}" style="--p:${Math.max(.06, n / s.chapters.length)}" aria-label="${st === "done" ? "Finished" : st ? `Started: ${n} of ${s.chapters.length} read` : "Not started"}"></span><img src="${esc(s.img)}" alt="" loading="lazy"><span class="t"><b>${esc(s.title)}</b><small>${esc(s.range)}</small></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></a>`; }).join("") + L.map((s) => { const p = s.chapters.flatMap((c) => c.pics || [])[0], n = Math.min(SEEN[s.id] || 0, s.chapters.length), st = !n ? "" : n >= s.chapters.length ? "done" : "doing";
     return `<button type="button" class="erow" data-s="${esc(s.id)}"><span class="mark ${st}" style="--p:${Math.max(.06, n / s.chapters.length)}" aria-label="${st === "done" ? "Finished" : st ? `Started: ${n} of ${s.chapters.length} read` : "Not started"}"></span>${p ? `<img src="${esc(sized(p, 250))}" data-fb="${esc(p.image)}" alt="" loading="lazy">` : '<span class="noimg"></span>'}<span class="t"><b>${esc(s.title)}</b><small>${esc(spanOf(s))}</small></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>`; }).join("");
 }
 function spanOf(s) { const a = ageParts(s.from), b = ageParts(Math.max(s.to, .001)); return a[1] === b[1] ? `${a[0]} to ${b[0]} ${a[1]}` : `${a[0]} ${a[1].replace(" years ago", "")} to ${b[0]} ${b[1]}`; } // "252 to 66 million years ago"
@@ -666,7 +783,7 @@ function warmEarth() { // the globe's two pictures, once the map is up and nothi
 // ---------------------------------------------------------------- time, play, input
 function setPlaying(p) { S.playing = p; if (p && ST) ST.t0 = performance.now(); $("#sPlayIcon").setAttribute("d", p ? "M7 5h4v14H7zM13 5h4v14h-4z" : "M8 5v14l11-7z"); $("#sPlay").setAttribute("aria-label", p ? "Pause" : "Play this moment");
   $("#playIcon").setAttribute("d", p ? "M7 5h4v14H7zM13 5h4v14h-4z" : "M8 5v14l11-7z"); $("#play").setAttribute("aria-label", p ? "Pause" : "Play through time"); document.querySelectorAll(".pplay path").forEach((el) => el.setAttribute("d", p ? "M7 5h4v14H7zM13 5h4v14h-4z" : "M8 5v14l11-7z")); if (p && S.mode === "hist" && S.year >= NOW_YEAR) { enterDeep(OLDEST); } }
-let last = performance.now(), dragging = null, tlDrag = false, watchAt = 0;
+let last = performance.now(), dragging = null, tlDrag = false, watchAt = 0, ambientAt = 0;
 function frame(now) {
   const dt = Math.min(.05, (now - last) / 1000); last = now;
   if (S.playing) {
@@ -689,6 +806,7 @@ function frame(now) {
   if (!tlDrag && Math.abs(S.f - fT) > .0005) S.f += (fT - S.f) * Math.min(1, dt * 3);
   if (fly) { fly.t = Math.min(1, fly.t + dt / .9); const k = fly.t * fly.t * (3 - 2 * fly.t); S.lon = fly.lon0 + fly.dl * k; S.lat = fly.lat0 + fly.dp * k; S.dirty = true; if (fly.t >= 1) fly = null; }
   if (S.dirty && D) { S.dirty = false; draw(); if (S.mode === "deep" && !ST) renderCard(); }
+  else if (D && S.mode === "deep" && !CALM.matches && now - ambientAt > 32) { ambientAt = now; draw(true); } // the Earth side moves (molten seams, shimmering seas, drifting weather, blowing snow): about 30 redraws a second, enough for motion this slow; dragging and scrubbing still redraw every frame
   drawTimeline(); window.PHONE?.tick(now); saveState(now); clipCard(now);
   requestAnimationFrame(frame);
 }
@@ -756,6 +874,7 @@ function wire() {
 async function init() {
   try { if (!gl) throw new Error("no WebGL"); glInit(); } catch (e) { console.warn("The globe could not start.", e); return noGlobe(); }
   D = await (await relFetch("data/earth-history.json" + VQ, REL)).json();
+  if (SHOW_UNI_STORIES) relFetch("universe/stories.json" + VQ, REL).then((r) => r.json()).then((u) => { USTORIES = u.stories || []; if ($("#app").dataset.list) PH() && window.PHONE ? PHONE.stories() : momentList(); }).catch(() => {}); // the universe before the Earth: its stories open the film (universe/)
   for (const u of D.units) byUnit[u.id] = u;
   const hasKids = new Set(D.units.map((u) => u.parent));
   leaves = D.units.filter((u) => !hasKids.has(u.id)).sort((a, b) => b.from - a.from);
