@@ -327,7 +327,7 @@ let pics = [], picI = 0;
 function picsFor(u) {
   const ids = [u.id, ...chain(u).map((p) => p.id)], rank = { scene: 0, landscape: 1, reconstruction: 2, rock: 3, fossil: 4 };
   const out = []; // the unit's own pictures first, then its parents' until there are enough for a slideshow
-  for (const id of ids) { if (out.length >= 6) break; out.push(...D.images.filter((i) => i.unit === id).sort((a, b) => (b.quality | 0) - (a.quality | 0) || rank[a.type] - rank[b.type])); }
+  for (const id of ids) { if (out.length >= 6) break; out.push(...D.images.filter((i) => i.unit === id && !i.storyOnly).sort((a, b) => (a.galleryOrder ?? Infinity) - (b.galleryOrder ?? Infinity) || (b.quality | 0) - (a.quality | 0) || rank[a.type] - rank[b.type])); }
   return out;
 }
 // a Commons thumbnail at another width. Wikimedia serves only these widths, and none wider than the original file
@@ -343,12 +343,14 @@ addEventListener("error", (e) => { const t = e.target; if (t.tagName === "IMG" &
 const FIT = new Set(["fossil", "reconstruction", "rock"]); // shown whole on a blurred backdrop rather than cropped to fill the screen
 function animalSize(el, size) {
   el.hidden = !size;
-  el.innerHTML = size ? `<strong>${esc(size.name)}</strong><span>Height: ${esc(size.height)} · Length: ${esc(size.length)} · Weight: ${esc(size.weight)}</span><small>${esc(size.note || "Estimated; varies by individual")}</small>` : "";
+  const measures = size ? ["height", "length", "width", "weight"].filter((key) => size[key]).map((key) => `${key[0].toUpperCase() + key.slice(1)}: ${esc(size[key])}`).join(" · ") : "";
+  el.innerHTML = size ? `<strong>${esc(size.name)}</strong><span>${measures}</span><small>${esc(size.note || "Estimated; varies by individual")}</small>` : "";
 }
+const pictureCaption = (p) => p.imageDateLabel ? `${p.imageDateLabel} · ${p.caption}` : p.caption;
 function renderPic() {
   const f = $("#pic"); f.hidden = !pics.length; if (!pics.length) return;
   const p = pics[picI]; $("#picImg").onerror = () => { $("#picImg").onerror = null; $("#picImg").src = p.image; }; $("#picImg").src = thumb(p.image, 960, p.width); $("#picImg").alt = p.caption; $("#picLink").href = p.page;
-  animalSize($("#picSize"), p.size); $("#picCap").textContent = p.caption; $("#picLink").textContent = `${p.credit}, ${p.license}, ${p.id?.startsWith("ai-") ? "Read the source" : "Wikimedia Commons"}`; $("#picN").textContent = `${picI + 1} of ${pics.length}`;
+  animalSize($("#picSize"), p.size); $("#picCap").textContent = pictureCaption(p); $("#picLink").textContent = `${p.credit}, ${p.license}, ${p.id?.startsWith("ai-") ? "Read the source" : "Wikimedia Commons"}`; $("#picN").textContent = `${picI + 1} of ${pics.length}`;
   document.querySelector(".picnav").hidden = pics.length < 2;
   const n = 5, start = clamp(picI - 2, 0, Math.max(0, pics.length - n));
   $("#picThumbs").innerHTML = pics.length < 2 ? "" : pics.slice(start, start + n).map((q, k) => `<button type="button" data-p="${start + k}" class="${start + k === picI ? "on" : ""}" aria-label="${esc(q.subject || q.caption)}"><img src="${esc(thumb(q.image, 120, q.width))}" ${fallback(q)} alt="" loading="lazy"></button>`).join("") + (pics.length > n ? `<span>${pics.length} pictures</span>` : "");
@@ -375,7 +377,7 @@ function imShow(i) {
   };
   const load = (u, again) => { nx.src = u; (nx.decode ? nx.decode() : Promise.resolve()).then(go, () => (again && u !== p.image ? load(p.image, false) : go())); };
   nx.alt = p.caption; load(url, true);
-  animalSize($("#imSize"), p.size); $("#immerse").classList.toggle("has-size", !!p.size); $("#imCap").textContent = p.caption; $("#imCred").textContent = `${p.credit}, ${p.license}, ${p.id?.startsWith("ai-") ? "Read the source" : "Wikimedia Commons"}`; $("#imCred").href = p.page;
+  animalSize($("#imSize"), p.size); $("#immerse").classList.toggle("has-size", !!p.size); $("#imCap").textContent = pictureCaption(p); $("#imCred").textContent = `${p.credit}, ${p.license}, ${p.id?.startsWith("ai-") ? "Read the source" : "Wikimedia Commons"}`; $("#imCred").href = p.page;
   $("#imThumbs").innerHTML = L.map((q, k) => `<button type="button" data-k="${k}" class="${k === IM.i ? "on" : ""}" aria-label="${esc(q.subject || q.caption)}"><img src="${esc(thumb(q.image, 250, q.width))}" ${fallback(q)} alt="" loading="lazy"></button>`).join("");
   const on = $("#imThumbs .on"); if (on) on.scrollIntoView({ block: "nearest", inline: "center" });
   if (L.length > 1) { const q = L[(IM.i + 1) % L.length]; new Image().src = thumb(q.image, innerWidth * Math.min(devicePixelRatio || 1, 2) > 1400 ? 1920 : 1280, q.width); }

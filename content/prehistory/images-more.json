@@ -294,7 +294,8 @@
   "credit": "Wawrow",
   "license": "CC BY-SA 4.0",
   "quality": 4,
-  "note": "Small artist's name in the lower right corner."
+  "note": "Small artist's name in the lower right corner.",
+  "storyOnly": true
  },
  {
   "id": "guiyu-silurian-sea",
@@ -309,7 +310,8 @@
   "credit": "Brian Choo",
   "license": "CC BY 2.5",
   "quality": 3,
-  "note": "Portrait format."
+  "note": "Portrait format.",
+  "storyOnly": true
  },
  {
   "id": "pterygotus-anglicus",
@@ -324,7 +326,8 @@
   "credit": "Dmitry Bogdanov",
   "license": "CC BY-SA 4.0",
   "quality": 3,
-  "note": "Drawn on a white background."
+  "note": "Drawn on a white background.",
+  "storyOnly": true
  },
  {
   "id": "cooksonia-pertoni-render",
@@ -339,7 +342,8 @@
   "credit": "Smith609",
   "license": "CC BY 3.0",
   "quality": 3,
-  "note": "Small file (900 px). Simple 3D render."
+  "note": "Small file (900 px). Simple 3D render.",
+  "storyOnly": true
  },
  {
   "id": "silurian-knight-shore",
@@ -354,7 +358,8 @@
   "credit": "Charles R. Knight",
   "license": "Public domain",
   "quality": 3,
-  "note": "Early 20th-century painting; the reef colours are imagined."
+  "note": "Early 20th-century painting; the reef colours are imagined.",
+  "storyOnly": true
  },
  {
   "id": "gooloogongia",
@@ -369,7 +374,8 @@
   "credit": "Dmitry Bogdanov",
   "license": "CC BY-SA 4.0",
   "quality": 3,
-  "note": null
+  "note": null,
+  "storyOnly": true
  },
  {
   "id": "jaekelopterus",
@@ -384,7 +390,8 @@
   "credit": "Dmitry Bogdanov",
   "license": "CC BY-SA 4.0",
   "quality": 3,
-  "note": null
+  "note": null,
+  "storyOnly": true
  },
  {
   "id": "terataspis-diorama",
@@ -414,7 +421,8 @@
   "credit": "SeismicShrimp",
   "license": "CC BY 4.0",
   "quality": 3,
-  "note": "Very wide cut-out on a white background."
+  "note": "Very wide cut-out on a white background.",
+  "storyOnly": true
  },
  {
   "id": "arthropleura-cutout",
@@ -2157,7 +2165,9 @@
   "caption": "Lobe-finned fish lived in watery habitats during the Late Devonian, about 375 million years ago.",
   "credit": "AI-generated illustration",
   "license": "Artist’s impression",
-  "quality": 5
+  "quality": 5,
+  "galleryOrder": 9,
+  "imageDateLabel": "About 375 million years ago"
  },
  {
   "id": "ai-tetrapod-tiktaalik-shallows",
@@ -2169,7 +2179,9 @@
   "caption": "Tiktaalik, a fossil fish from about 375 million years ago, had a broad head, a neck and sturdy fins with rays.",
   "credit": "AI-generated illustration",
   "license": "Artist’s impression",
-  "quality": 5
+  "quality": 5,
+  "galleryOrder": 10,
+  "imageDateLabel": "About 375 million years ago"
  },
  {
   "id": "ai-tetrapod-acanthostega-water",
@@ -2181,7 +2193,9 @@
   "caption": "Acanthostega was a largely aquatic early tetrapod. Fossils show limbs with digits and a fish-like tail.",
   "credit": "AI-generated illustration",
   "license": "Artist’s impression",
-  "quality": 5
+  "quality": 5,
+  "galleryOrder": 16,
+  "imageDateLabel": "Late Devonian"
  },
  {
   "id": "ai-tetrapod-ichthyostega-water",
@@ -2193,7 +2207,9 @@
   "caption": "The robust skeleton and limbs of Ichthyostega are known from fossils; exactly how it moved on land is still debated.",
   "credit": "AI-generated illustration",
   "license": "Artist’s impression",
-  "quality": 5
+  "quality": 5,
+  "galleryOrder": 17,
+  "imageDateLabel": "Late Devonian"
  },
  {
   "id": "ai-tetrapod-fin-limb-comparison",
@@ -2205,7 +2221,9 @@
   "caption": "An illustrative comparison of a Tiktaalik-like fin and an Acanthostega-like limb. The generated skeletons are schematic, not anatomically exact or to scale; Acanthostega fossils show eight digits on the forelimb.",
   "credit": "AI-generated illustration",
   "license": "Artist’s impression",
-  "quality": 5
+  "quality": 5,
+  "galleryOrder": 19,
+  "imageDateLabel": "Late Devonian"
  },
  {
   "id": "ai-tetrapod-devonian-trackway",
@@ -2217,7 +2235,9 @@
   "caption": "Devonian traces in Poland record early trackways, although the makers of some tracks are debated.",
   "credit": "AI-generated illustration",
   "license": "Artist’s impression",
-  "quality": 5
+  "quality": 5,
+  "galleryOrder": 5,
+  "imageDateLabel": "Early Middle Devonian"
  },
  {
   "id": "ai-tetrapod-dunkleosteus",
@@ -2229,7 +2249,9 @@
   "caption": "Dunkleosteus terrelli was an armoured fish of the Late Devonian. Fossils preserve the bony head armour and cutting jaw plates; its colour, fins, body shape and the surrounding sea are an artist’s interpretation. Its full size remains debated.",
   "credit": "AI-generated illustration",
   "license": "Artist’s impression",
-  "quality": 5
+  "quality": 5,
+  "galleryOrder": 13,
+  "imageDateLabel": "Late Devonian"
  },
  {
   "id": "ai-tetrapod-hyneria",
@@ -2241,7 +2263,9 @@
   "caption": "Hyneria lindae was a large predatory lobe-finned fish that lived in Late Devonian waters of what is now Pennsylvania.",
   "credit": "AI-generated illustration",
   "license": "Artist’s impression",
-  "quality": 5
+  "quality": 5,
+  "galleryOrder": 15,
+  "imageDateLabel": "Late Devonian"
  },
  {
   "id": "ai-tetrapod-gooloogongia",
@@ -2253,7 +2277,9 @@
   "caption": "Gooloogongia loomesi was a lobe-finned fish known from Late Devonian fossils at Canowindra in Australia.",
   "credit": "AI-generated illustration",
   "license": "Artist’s impression",
-  "quality": 5
+  "quality": 5,
+  "galleryOrder": 14,
+  "imageDateLabel": "Late Devonian"
  },
  {
   "id": "ai-tetrapod-jaekelopterus",
@@ -2265,7 +2291,9 @@
   "caption": "Jaekelopterus rhenaniae was a large aquatic arthropod from the Early Devonian of what is now Germany. Fossils preserve parts including its claws.",
   "credit": "AI-generated illustration",
   "license": "Artist’s impression",
-  "quality": 5
+  "quality": 5,
+  "galleryOrder": 3,
+  "imageDateLabel": "Early Devonian"
  },
  {
   "id": "ai-tetrapod-shoreline-transition",
@@ -2286,7 +2314,9 @@
    "length": "Uncertain",
    "weight": "Unknown",
    "note": "The scene is a reconstruction; fossil individuals varied in size."
-  }
+  },
+  "galleryOrder": 18,
+  "imageDateLabel": "About 365 million years ago"
  },
  {
   "id": "ai-early-earth-lava",
@@ -3796,5 +3826,291 @@
   "height": 3184,
   "type": "fossil",
   "unit": "cambrian"
+ },
+ {
+  "id": "ai-silurian-gallery-orbit",
+  "unit": "silurian",
+  "subject": "Earth from space",
+  "type": "scene",
+  "image": "/scenes/silurian/gallery-orbit.webp",
+  "width": 1672,
+  "height": 941,
+  "page": "https://doi.org/10.5281/zenodo.5460860",
+  "caption": "Gondwana covered much of the south while the Iapetus Ocean narrowed between Laurentia, Baltica and Avalonia. The positions and coastlines are approximate.",
+  "credit": "AI-generated illustration",
+  "license": "Artist’s impression",
+  "quality": 6,
+  "imageDateLabel": "About 430 million years ago",
+  "galleryOrder": 0
+ },
+ {
+  "id": "ai-silurian-gallery-summit",
+  "unit": "silurian",
+  "subject": "From a Caledonian mountaintop",
+  "type": "scene",
+  "image": "/scenes/silurian/gallery-summit.webp",
+  "width": 1672,
+  "height": 941,
+  "page": "https://webapps.bgs.ac.uk/Memoirs/docs/GCR34_Chapter1Lewisian.html",
+  "caption": "Continental collisions raised the Caledonian mountains as the Iapetus Ocean closed. Parts of the range survive in Scotland, Norway and Greenland.",
+  "credit": "AI-generated illustration",
+  "license": "Artist’s impression",
+  "quality": 6,
+  "imageDateLabel": "About 425 million years ago",
+  "galleryOrder": 1
+ },
+ {
+  "id": "ai-silurian-chongqing-fish",
+  "unit": "silurian",
+  "subject": "Early jawed fish in Chongqing",
+  "type": "scene",
+  "image": "/scenes/silurian/chongqing-fish.webp",
+  "width": 1672,
+  "height": 941,
+  "page": "https://www.nature.com/articles/s41586-022-05136-8",
+  "caption": "The small armoured Xiushanosteus and the early shark relative Shenacanthus are known from unusually complete fossils in the same fossil beds in Chongqing, China.",
+  "credit": "AI-generated illustration",
+  "license": "Artist’s impression",
+  "quality": 6,
+  "imageDateLabel": "About 436 million years ago",
+  "galleryOrder": 2,
+  "size": {
+   "name": "Xiushanosteus",
+   "length": "About 3 cm",
+   "note": "Shenacanthus measures about 2.2 cm from snout to anal fin in the fossil"
+  }
+ },
+ {
+  "id": "ai-silurian-cooksonia",
+  "unit": "silurian",
+  "subject": "Cooksonia on wet ground",
+  "type": "scene",
+  "image": "/scenes/silurian/cooksonia.webp",
+  "width": 1672,
+  "height": 941,
+  "page": "https://doi.org/10.1144/jgs2022-072",
+  "caption": "Cooksonia stood only a few centimetres tall. Fossils preserve simple forked stems and spore capsules at their tips.",
+  "credit": "AI-generated illustration",
+  "license": "Artist’s impression",
+  "quality": 6,
+  "imageDateLabel": "About 430–427 million years ago",
+  "galleryOrder": 3
+ },
+ {
+  "id": "ai-silurian-herefordshire-seabed",
+  "unit": "silurian",
+  "subject": "Sollasina on the Herefordshire seabed",
+  "type": "scene",
+  "image": "/scenes/silurian/herefordshire-seabed.webp",
+  "width": 1672,
+  "height": 941,
+  "page": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6501687/",
+  "caption": "Sollasina was a small relative of sea cucumbers. Its Herefordshire fossil preserves fleshy tube feet, which probably helped it move and feed.",
+  "credit": "AI-generated illustration",
+  "license": "Artist’s impression",
+  "quality": 6,
+  "imageDateLabel": "About 430 million years ago",
+  "galleryOrder": 4,
+  "size": {
+   "name": "Sollasina",
+   "width": "About 1.5 cm (body)",
+   "note": "About 3 cm across the fossil, including tube feet"
+  }
+ },
+ {
+  "id": "ai-silurian-gotland-reef",
+  "unit": "silurian",
+  "subject": "Gotland’s living reef",
+  "type": "scene",
+  "image": "/scenes/silurian/gotland-reef.webp",
+  "width": 1672,
+  "height": 941,
+  "page": "https://www.app.pan.pl/article/item/app53-293.html",
+  "caption": "Stromatoporoid sponges and ancient corals built reefs in the Silurian sea. Reef limestone survives in the cliffs and sea stacks of Gotland, Sweden.",
+  "credit": "AI-generated illustration",
+  "license": "Artist’s impression",
+  "quality": 6,
+  "imageDateLabel": "About 425 million years ago",
+  "galleryOrder": 5
+ },
+ {
+  "id": "ai-silurian-guiyu",
+  "unit": "silurian",
+  "subject": "A bony fish in the Yunnan sea",
+  "type": "scene",
+  "image": "/scenes/silurian/guiyu.webp",
+  "width": 1672,
+  "height": 941,
+  "page": "https://www.nature.com/articles/s41598-019-40845-7",
+  "caption": "Guiyu was an early bony fish from what is now Yunnan, China. Its closely packed, diamond-shaped scales and parts of its bony armour are preserved in the fossil.",
+  "credit": "AI-generated illustration",
+  "license": "Artist’s impression",
+  "quality": 6,
+  "imageDateLabel": "About 425 million years ago",
+  "galleryOrder": 6,
+  "size": {
+   "name": "Guiyu",
+   "length": "About 33 cm",
+   "note": "Estimated from a fossil missing the tail fin"
+  }
+ },
+ {
+  "id": "ai-silurian-eurypterus",
+  "unit": "silurian",
+  "subject": "Sea scorpions in the shallows",
+  "type": "scene",
+  "image": "/scenes/silurian/eurypterus.webp",
+  "width": 1672,
+  "height": 941,
+  "page": "https://www.digitalatlasofancientlife.org/vc/arthropoda/chelicerata/eurypterida/",
+  "caption": "Eurypterus swam with broad paddles on its rear pair of limbs. Fossils from New York preserve the paddles, segmented body and straight tail spine.",
+  "credit": "AI-generated illustration",
+  "license": "Artist’s impression",
+  "quality": 6,
+  "imageDateLabel": "Late Silurian",
+  "galleryOrder": 7,
+  "size": {
+   "name": "Eurypterus remipes",
+   "length": "About 12.5 cm",
+   "note": "Measured specimen PRI 70770"
+  }
+ },
+ {
+  "id": "ai-devonian-gallery-orbit",
+  "unit": "devonian",
+  "subject": "Earth from space",
+  "type": "scene",
+  "image": "/scenes/devonian/gallery-orbit.webp",
+  "width": 1672,
+  "height": 941,
+  "page": "https://doi.org/10.5281/zenodo.5460860",
+  "caption": "Laurussia lay near the equator and Gondwana stretched far to the south. Shallow seas covered parts of the continental margins.",
+  "credit": "AI-generated illustration",
+  "license": "Artist’s impression",
+  "quality": 6,
+  "imageDateLabel": "About 385 million years ago",
+  "galleryOrder": 0
+ },
+ {
+  "id": "ai-devonian-gallery-summit",
+  "unit": "devonian",
+  "subject": "Above the Old Red Sandstone rivers",
+  "type": "scene",
+  "image": "/scenes/devonian/gallery-summit.webp",
+  "width": 1672,
+  "height": 941,
+  "page": "https://webapps.bgs.ac.uk/Memoirs/docs/B06846.html",
+  "caption": "Rivers in what is now eastern Scotland deposited red sand and gravel. Those deposits are visible today in cliffs around Arbroath and Auchmithie.",
+  "credit": "AI-generated illustration",
+  "license": "Artist’s impression",
+  "quality": 6,
+  "imageDateLabel": "About 410 million years ago",
+  "galleryOrder": 1
+ },
+ {
+  "id": "ai-devonian-rhynie-wetland",
+  "unit": "devonian",
+  "subject": "Rhynie hot-spring wetland",
+  "type": "scene",
+  "image": "/scenes/devonian/rhynie-wetland.webp",
+  "width": 1672,
+  "height": 941,
+  "page": "https://www.nature.com/articles/s41467-023-43276-1",
+  "caption": "Small plants such as Rhynia and Asteroxylon grew in a wetland around hot springs. Silica from the spring water preserved parts of this ecosystem in the Rhynie chert.",
+  "credit": "AI-generated illustration",
+  "license": "Artist’s impression",
+  "quality": 6,
+  "imageDateLabel": "About 407 million years ago",
+  "galleryOrder": 2
+ },
+ {
+  "id": "ai-devonian-gilboa-forest",
+  "unit": "devonian",
+  "subject": "Inside the Gilboa forest",
+  "type": "scene",
+  "image": "/scenes/devonian/gilboa-forest.webp",
+  "width": 1672,
+  "height": 941,
+  "page": "https://www.nature.com/articles/nature05705",
+  "caption": "Fossil stumps and an attached crown show how Wattieza grew. Tall trunks carried crowns of forked branches above the damp forest floor.",
+  "credit": "AI-generated illustration",
+  "license": "Artist’s impression",
+  "quality": 6,
+  "imageDateLabel": "About 385 million years ago",
+  "galleryOrder": 6
+ },
+ {
+  "id": "ai-devonian-gogo-reef",
+  "unit": "devonian",
+  "subject": "Along the Gogo barrier reef",
+  "type": "scene",
+  "image": "/scenes/devonian/gogo-reef.webp",
+  "width": 1672,
+  "height": 941,
+  "page": "https://doi.org/10.1002/ar.70075",
+  "caption": "Fossils from the Gogo reef complex in Western Australia include armoured fish such as Mcnamaraspis and lobe-finned fish such as Gogonasus.",
+  "credit": "AI-generated illustration",
+  "license": "Artist’s impression",
+  "quality": 6,
+  "imageDateLabel": "About 380 million years ago",
+  "galleryOrder": 7,
+  "size": {
+   "name": "Mcnamaraspis",
+   "length": "5.6 cm (head)",
+   "note": "Measured fossil head"
+  }
+ },
+ {
+  "id": "ai-devonian-materpiscis",
+  "unit": "devonian",
+  "subject": "A fish carrying young",
+  "type": "scene",
+  "image": "/scenes/devonian/materpiscis.webp",
+  "width": 1672,
+  "height": 941,
+  "page": "https://www.nature.com/articles/nature06966",
+  "caption": "A Materpiscis fossil from Gogo preserves an embryo and its umbilical cord. It is direct evidence that some Devonian armoured fish gave birth to live young.",
+  "credit": "AI-generated illustration. Anatomy reference by Kym Haines and Jon Augier, Museums Victoria (CC BY 4.0)",
+  "license": "Artist’s impression",
+  "quality": 6,
+  "imageDateLabel": "About 380 million years ago",
+  "galleryOrder": 8,
+  "size": {
+   "name": "Materpiscis",
+   "length": "About 25 cm",
+   "note": "Based on the fossil specimen"
+  }
+ },
+ {
+  "id": "ai-devonian-kellwasser-before",
+  "unit": "devonian",
+  "subject": "A reef before the Kellwasser crisis",
+  "type": "scene",
+  "image": "/scenes/devonian/kellwasser-before.webp",
+  "width": 1672,
+  "height": 941,
+  "page": "https://www.sciencedirect.com/science/article/pii/S0921818118306258",
+  "caption": "Reef-building sponges and corals supported diverse seafloor communities before the Kellwasser extinction. This coastal reef sets the scene for the next picture.",
+  "credit": "AI-generated illustration",
+  "license": "Artist’s impression",
+  "quality": 6,
+  "imageDateLabel": "About 372 million years ago",
+  "galleryOrder": 11
+ },
+ {
+  "id": "ai-devonian-kellwasser-after",
+  "unit": "devonian",
+  "subject": "A reef after the Kellwasser crisis",
+  "type": "scene",
+  "image": "/scenes/devonian/kellwasser-after.webp",
+  "width": 1672,
+  "height": 941,
+  "page": "https://www.sciencedirect.com/science/article/pii/S0031018217308210",
+  "caption": "A reduced reef community after the Kellwasser extinction pulse. Trace fossils and sediment chemistry indicate low and variable oxygen in some seas.",
+  "credit": "AI-generated illustration",
+  "license": "Artist’s impression",
+  "quality": 6,
+  "imageDateLabel": "About 372 million years ago",
+  "galleryOrder": 12
  }
 ]

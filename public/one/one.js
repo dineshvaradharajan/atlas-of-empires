@@ -317,7 +317,9 @@ function imStory() { // one continuous picture journey, starting at the chapter 
 }
 function imShow(i) { const n = IM.list.length; IM.i = (i + n) % n; const p = IM.list[IM.i], src = sized(p, innerWidth * Math.min(devicePixelRatio || 1, 2) > 1400 ? 1920 : 1280);
   const im = $("#imImg"); im.dataset.fb = p.image; im.src = src; im.alt = p.caption || ""; $("#imBg").style.backgroundImage = `url("${sized(p, 500)}")`;
-  const size = p.size, badge = $("#imSize"); badge.hidden = !size; badge.innerHTML = size ? `<strong>${esc(size.name)}</strong><span>Height: ${esc(size.height)} · Length: ${esc(size.length)} · Weight: ${esc(size.weight)}</span><small>${esc(size.note || "Estimated; varies by individual")}</small>` : "";
+  const size = p.size, badge = $("#imSize"); badge.hidden = !size;
+  const measures = size ? ["height", "length", "width", "weight"].filter((key) => size[key]).map((key) => `${key[0].toUpperCase() + key.slice(1)}: ${esc(size[key])}`).join(" · ") : "";
+  badge.innerHTML = size ? `<strong>${esc(size.name)}</strong><span>${measures}</span><small>${esc(size.note || "Estimated; varies by individual")}</small>` : "";
   const chapter = p.storyChapter, when = !chapter && p.imageDateLabel ? `${byUnit[p.unit]?.name || ""} · ${p.imageDateLabel}` : IM.when; $("#imWhen").textContent = `${when}${when ? " \u00b7 " : ""}${chapter ? `${chapter.title}${chapter.date ? " \u00b7 " + chapter.date : ""} \u00b7 ` : ""}${imageKind(p)[1]} \u00b7 ${IM.i + 1} of ${n}`; $("#imCap").textContent = p.caption || "";
   const a = $("#imCred"); a.textContent = [p.credit, p.license, p.id?.startsWith("ai-") ? "Read the source" : "Wikimedia Commons"].filter(Boolean).join(", "); a.href = p.page || p.image;
   document.querySelectorAll("#imThumbs button").forEach((b) => b.classList.toggle("on", +b.dataset.k === IM.i)); $("#imThumbs .on")?.scrollIntoView({ inline: "center", block: "nearest" });
