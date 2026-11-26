@@ -244,6 +244,15 @@ button { font: inherit; color: inherit; cursor: pointer; }
 #immerse:not(.sc) .imcap { left: 40px; right: 40px; bottom: 94px; max-width: none; max-height: 156px; overflow-y: auto; padding: 16px 20px; border: 1px solid rgba(255, 255, 255, .14); border-radius: 14px; background: rgba(16, 18, 18, .9); }
 #immerse:not(.sc) .imcap p { max-width: 80ch; margin: 7px 0; font: 400 16px/1.5 var(--sans); }
 #immerse:not(.sc) .imcap a { display: inline-block; color: rgba(255, 255, 255, .82); line-height: 1.45; text-underline-offset: 3px; }
+/* Desktop: a picture is drawn as large as the space allows at its own shape (--ar, width / height, set when it loads),
+   not at its file's pixel size. Wide pictures sit between the section switch and the caption; tall ones (.tall) take the
+   full height on the left and the caption moves to a pane on the right. */
+@media (min-width: 761px) {
+  #immerse:not(.sc) #imImg { max-width: none; max-height: none; height: auto; width: min(calc(100vw - 176px), calc((100vh - 334px) * var(--ar, 1.5))); top: calc(72px + (100vh - 334px) / 2); transform: translate(-50%, -50%); }
+  #immerse.tall:not(.sc) #imImg { left: calc(96px + (100vw - 616px) / 2); top: calc(72px + (100vh - 180px) / 2); width: min(calc(100vw - 616px), calc((100vh - 180px) * var(--ar, .75))); }
+  #immerse.tall:not(.sc) .imcap { left: auto; right: 96px; top: 72px; bottom: auto; width: 400px; max-height: calc(100vh - 180px); }
+  #immerse.tall:not(.sc) .imsize { right: 532px; bottom: 120px; }
+}
 /* a moment's own timeline, built like a war's in World history: play, one segment per chapter, dates under them, and a way out to
    the time it is showing. The chapters' names sit above their segments as badges. */
 #sdock { position: absolute; z-index: 5; left: 24px; right: 24px; bottom: 64px; height: 108px; border: 1px solid var(--ink); border-radius: 30px; background: var(--surf); box-shadow: var(--shadow); }

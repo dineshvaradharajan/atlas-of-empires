@@ -316,7 +316,9 @@ function imStory() { // one continuous picture journey, starting at the chapter 
   imOpen(list, start, ST.story.title);
 }
 function imShow(i) { const n = IM.list.length; IM.i = (i + n) % n; const p = IM.list[IM.i], src = sized(p, innerWidth * Math.min(devicePixelRatio || 1, 2) > 1400 ? 1920 : 1280);
-  const im = $("#imImg"); im.dataset.fb = p.image; im.src = src; im.alt = p.caption || ""; $("#imBg").style.backgroundImage = `url("${sized(p, 500)}")`;
+  const im = $("#imImg"); im.dataset.fb = p.image;
+  im.onload = () => { const ar = im.naturalWidth / im.naturalHeight || 1.5; im.style.setProperty("--ar", ar); $("#immerse").classList.toggle("tall", ar < 1); }; // shape for the desktop layout (one.css)
+  im.src = src; im.alt = p.caption || ""; $("#imBg").style.backgroundImage = `url("${sized(p, 500)}")`;
   const size = p.size, badge = $("#imSize"); badge.hidden = !size;
   const measures = size ? ["height", "length", "width", "weight"].filter((key) => size[key]).map((key) => `${key[0].toUpperCase() + key.slice(1)}: ${esc(size[key])}`).join(" · ") : "";
   badge.innerHTML = size ? `<strong>${esc(size.name)}</strong><span>${measures}</span><small>${esc(size.note || "Estimated; varies by individual")}</small>` : "";
