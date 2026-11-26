@@ -32,8 +32,8 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="fonts/source-serif-latin.woff2">
 <script src="one/theme.js?v=1"></script>
 <link rel="stylesheet" href="fonts/fonts.css">
-<link rel="stylesheet" href="one/one.css?v=32">
-<link rel="stylesheet" href="one/phone.css?v=33">
+<link rel="stylesheet" href="one/one.css?v=33">
+<link rel="stylesheet" href="one/phone.css?v=34">
 <link rel="stylesheet" href="one/theme.css?v=2">
 <link rel="stylesheet" href="report/report.css">
 <link rel="stylesheet" href="share.css">
@@ -82,14 +82,15 @@
   </section>
 
   <div id="immerse" hidden role="dialog" aria-modal="true" aria-label="Pictures of this world, full screen">
-    <div class="imbg" id="imBg"></div>
     <div class="imsections" id="imSections" role="group" aria-label="Picture sections"><button type="button" data-section="world" aria-pressed="true">Experience this world</button><button type="button" data-section="evidence" aria-pressed="false">Fossils &amp; evidence</button></div>
-    <img id="imImg" alt="">
-    <div id="imSize" class="imsize" hidden></div>
+    <div class="imstage"><img id="imImg" alt=""></div>
     <button type="button" class="x imx" id="imClose" aria-label="Close the pictures"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
     <button type="button" class="imnav prev" id="imPrev" aria-label="Previous picture"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
     <button type="button" class="imnav next" id="imNext" aria-label="Next picture"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
-    <div class="imcap"><div class="imwhen" id="imWhen"></div><p id="imCap"></p><a id="imCred" target="_blank" rel="noopener"></a></div>
+    <div class="imdetails">
+      <div class="imcap"><div class="imwhen" id="imWhen"></div><h2 id="imTitle" hidden></h2><p id="imCap" aria-live="polite"></p><a id="imCred" target="_blank" rel="noopener"></a></div>
+      <div class="imtools"><a id="imFull" target="_blank" rel="noopener" hidden>Open full size</a><div id="imSize" class="imsize" hidden></div></div>
+    </div>
     <div class="imthumbs" id="imThumbs"></div>
   </div>
 
@@ -190,7 +191,7 @@
 </noscript>
 <script src="share.js"></script>
 <script src="one/phone.js?v=34"></script>
-<script src="one/one.js?v=43"></script>
+<script src="one/one.js?v=44"></script>
 <script src="report/report.js" data-page="home" defer></script>
 </body>
 </html>

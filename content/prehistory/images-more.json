@@ -5426,5 +5426,35 @@
    "name": "Barylambda",
    "note": "Fossil femur shaft circumference: 25 cm"
   }
+ },
+ {
+  "id": "homo-species-poster",
+  "unit": "pleistocene",
+  "subject": "Humans of the genus Homo",
+  "type": "comparison",
+  "image": "/scenes/pleistocene/homo-species-poster.webp",
+  "width": 3600,
+  "height": 2740,
+  "page": "https://humanorigins.si.edu/evidence/human-fossils/species",
+  "caption": "Compare 12 Homo groups on a shared timeline and map of fossil sites. The poster marks individual finds, fossil date ranges and cases where ancient DNA confirms interbreeding.",
+  "credit": "The World Atlas",
+  "quality": 6,
+  "imageDateLabel": "2.8 million years ago to today",
+  "galleryOrder": -15
+ },
+ {
+  "id": "homo-species-poster-pliocene",
+  "unit": "pliocene",
+  "subject": "Humans of the genus Homo",
+  "type": "comparison",
+  "image": "/scenes/pleistocene/homo-species-poster.webp",
+  "width": 3600,
+  "height": 2740,
+  "page": "https://doi.org/10.1126/science.aaa1343",
+  "caption": "A jaw from Ledi-Geraru, Ethiopia, puts early Homo in the late Pliocene about 2.8 million years ago. The poster follows the fossil record from that find through later Homo groups to the present.",
+  "credit": "The World Atlas",
+  "quality": 6,
+  "imageDateLabel": "2.8 million years ago to today",
+  "galleryOrder": 3
  }
 ]

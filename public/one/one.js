@@ -292,7 +292,8 @@ function picsFor(u, gallery) { // event-specific pictures, otherwise the period'
 // Image type records describe the subject, so a museum model can be tagged as a reconstruction even though the image is a photograph.
 function imageKind(p) {
   const id = p.id || "", desc = `${p.caption || ""} ${p.note || ""}`.toLowerCase();
-  if (p.scene || id.startsWith("ai-") || /ai.generated/i.test(p.credit || "")) return ["world", "AI reconstruction"];
+  if (p.type === "comparison") return ["world", "Illustrated comparison"];
+  if (id.startsWith("ai-") || /ai.generated/i.test(p.credit || "")) return ["world", "AI reconstruction"];
   if (p.type === "fossil") return ["evidence", /\b(cast|replica)\b/.test(desc) ? "Photograph of a fossil cast" : "Fossil photograph"];
   if (p.type === "rock") return ["evidence", "Geology photograph"];
   if (p.type === "landscape") return ["evidence", "Photograph of a place today"];
@@ -301,14 +302,16 @@ function imageKind(p) {
   return ["world", "Artist’s reconstruction"];
 }
 const IM = { all: [], list: [], i: 0, when: "", section: "world" };
+const imTitle = (p) => p.subject || p.storyChapter?.title || imageKind(p)[1];
 function imSection(section, anchor) {
   const list = IM.all.filter((p) => imageKind(p)[0] === section); if (!list.length) return;
   IM.section = section; IM.list = list;
   document.querySelectorAll("#imSections [data-section]").forEach((b) => { const k = b.dataset.section; b.setAttribute("aria-pressed", k === section ? "true" : "false"); b.disabled = !IM.all.some((p) => imageKind(p)[0] === k); });
-  $("#imThumbs").innerHTML = list.map((p, k) => `<button type="button" data-k="${k}" aria-label="${esc(p.storyChapter ? `${p.storyChapter.title}, picture ${k + 1}` : `Picture ${k + 1}`)}"><img src="${esc(sized(p, 250))}" data-fb="${esc(p.image)}" alt="" loading="lazy"></button>`).join("");
+  $("#imThumbs").hidden = list.length < 2;
+  $("#imThumbs").innerHTML = list.map((p, k) => `<button type="button" data-k="${k}" aria-label="${esc(`${imTitle(p)}, picture ${k + 1}`)}"><img src="${esc(sized(p, 250))}" data-fb="${esc(p.image)}" alt="" loading="lazy"></button>`).join("");
   let i = list.indexOf(anchor); if (i < 0 && anchor?.storyChapter) { i = list.findIndex((p) => p.storyChapter?.i >= anchor.storyChapter.i); if (i < 0) i = list.length - 1; } imShow(Math.max(0, i));
 }
-function imOpen(list, i, when) { if (!list.length) return; IM.all = list; IM.when = when || ""; setPlaying(false); $("#immerse").hidden = false;
+function imOpen(list, i, when) { if (!list.length) return; IM.all = list; IM.when = when || ""; setPlaying(false); IM.back = document.activeElement; $("#immerse").hidden = false;
   const anchor = list[i || 0], section = list.some((p) => imageKind(p)[0] === "world") ? "world" : "evidence"; imSection(section, anchor); $("#imClose").focus(); }
 function imStory() { // one continuous picture journey, starting at the chapter the reader opened
   if (!ST) return; const list = []; let start = 0;
@@ -317,16 +320,24 @@ function imStory() { // one continuous picture journey, starting at the chapter 
 }
 function imShow(i) { const n = IM.list.length; IM.i = (i + n) % n; const p = IM.list[IM.i], src = sized(p, innerWidth * Math.min(devicePixelRatio || 1, 2) > 1400 ? 1920 : 1280);
   const im = $("#imImg"); im.dataset.fb = p.image;
-  im.onload = () => { const ar = im.naturalWidth / im.naturalHeight || 1.5; im.style.setProperty("--ar", ar); $("#immerse").classList.toggle("tall", ar < 1); }; // shape for the desktop layout (one.css)
-  im.src = src; im.alt = p.caption || ""; $("#imBg").style.backgroundImage = `url("${sized(p, 500)}")`;
+  const stage = im.parentElement;
+  stage.style.setProperty("--im-aspect", p.width && p.height ? p.width / p.height : 1.5);
+  im.onload = () => { if (im.naturalHeight) stage.style.setProperty("--im-aspect", im.naturalWidth / im.naturalHeight); };
+  im.src = src;
+  im.alt = imTitle(p);
+  const title = $("#imTitle"), full = $("#imFull"); title.hidden = full.hidden = false;
+  title.textContent = imTitle(p); full.href = sized(p, p.width || 1920);
   const size = p.size, badge = $("#imSize"); badge.hidden = !size;
   const measures = size ? ["height", "length", "width", "weight"].filter((key) => size[key]).map((key) => `${key[0].toUpperCase() + key.slice(1)}: ${esc(size[key])}`).join(" · ") : "";
   badge.innerHTML = size ? `<strong>${esc(size.name)}</strong><span>${measures}</span><small>${esc(size.note || "Estimated; varies by individual")}</small>` : "";
-  const chapter = p.storyChapter, when = !chapter && p.imageDateLabel ? `${byUnit[p.unit]?.name || ""} · ${p.imageDateLabel}` : IM.when; $("#imWhen").textContent = `${when}${when ? " \u00b7 " : ""}${chapter ? `${chapter.title}${chapter.date ? " \u00b7 " + chapter.date : ""} \u00b7 ` : ""}${imageKind(p)[1]} \u00b7 ${IM.i + 1} of ${n}`; $("#imCap").textContent = p.caption || "";
-  const a = $("#imCred"); a.textContent = [p.credit, p.license, p.id?.startsWith("ai-") ? "Read the source" : "Wikimedia Commons"].filter(Boolean).join(", "); a.href = p.page || p.image;
-  document.querySelectorAll("#imThumbs button").forEach((b) => b.classList.toggle("on", +b.dataset.k === IM.i)); $("#imThumbs .on")?.scrollIntoView({ inline: "center", block: "nearest" });
+  const chapter = p.storyChapter, context = chapter ? chapter.title : p.imageDateLabel ? byUnit[p.unit]?.name : IM.when;
+  $("#imWhen").textContent = [context, p.imageDateLabel || chapter?.date, imageKind(p)[1], `${IM.i + 1} of ${n}`].filter(Boolean).join(" · ");
+  $("#imCap").textContent = p.caption || "";
+  const a = $("#imCred"); a.textContent = [p.credit, p.license, /commons\.wikimedia\.org/.test(p.page || "") ? "Wikimedia Commons" : "Source"].filter(Boolean).join(" · "); a.href = p.page || p.image;
+  document.querySelectorAll("#imThumbs button").forEach((b) => { if (+b.dataset.k === IM.i) b.setAttribute("aria-current", "true"); else b.removeAttribute("aria-current"); });
+  $("#imThumbs [aria-current]")?.scrollIntoView({ inline: "center", block: "nearest" });
   $("#imPrev").hidden = $("#imNext").hidden = n < 2; }
-function imClose() { const chapter = IM.list[IM.i]?.storyChapter; $("#immerse").hidden = true; if (chapter && ST && chapter.i !== ST.i) storyGo(chapter.i); }
+function imClose() { const chapter = IM.list[IM.i]?.storyChapter; $("#immerse").hidden = true; if (chapter && ST && chapter.i !== ST.i) storyGo(chapter.i); if (IM.back?.isConnected && IM.back !== document.body) IM.back.focus(); else document.activeElement?.blur(); } // Safari does not focus a clicked button
 
 // ---------------------------------------------------------------- moments: a thread of the Earth's history told in chapters on the globe
 const SHARE_ICON = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7 8l5-5 5 5"/><path d="M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg>';
@@ -360,7 +371,7 @@ function storyGo(i) {
   if ((SEEN[s.id] || 0) < ST.i + 1) { SEEN[s.id] = ST.i + 1; try { localStorage.setItem("one.moments", JSON.stringify(SEEN)); } catch (e) {} }
   $("#story").innerHTML = `<div class="chead"><button type="button" class="back" data-act="list"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>Stories</button><span class="count">${ST.i + 1} of ${s.chapters.length}</span><button type="button" class="hshare" data-act="share" aria-label="Share this story">${SHARE_ICON}</button></div>
     <div class="kicker">${esc(s.title)}</div>
-    ${p ? `<figure><img src="${esc(thumb(p.image))}" data-fb="${esc(p.image)}" alt="${esc(p.caption || "")}"><figcaption>${esc(p.credit || "")}${p.license ? ", " + esc(p.license) : ""}</figcaption></figure>` : ""}
+    ${p ? `<figure><button type="button" class="story-photo${p.type === "comparison" ? " comparison" : ""}" aria-label="Open picture gallery"><img src="${esc(thumb(p.image))}" data-fb="${esc(p.image)}" alt="${esc(p.caption || "")}"></button><figcaption>${esc(p.credit || "")}${p.license ? ", " + esc(p.license) : ""}</figcaption></figure>` : ""}
     <h1>${esc(c.title)}</h1><div class="sub">${esc(c.dateLabel || "")}${c.place ? " \u00b7 " + esc(c.place) : ""}</div><p>${esc(c.text)}</p><div class="rms"><button type="button" class="rm" data-act="more">Read the full chapter</button><button type="button" class="rm" data-act="share">Share</button></div>
     <div class="snav"><button type="button" data-act="prev" ${ST.i ? "" : "disabled"}>Previous</button><button type="button" class="go" data-act="next">${ST.i < s.chapters.length - 1 ? "Next chapter" : "Finish"}</button></div>`;
   $("#story").classList.remove("open"); $("#story").scrollTop = 0; ST.t0 = performance.now(); storyBar(); shell(); window.PHONE?.story();
@@ -735,8 +746,8 @@ function wire() {
   $("#sOut").addEventListener("click", () => storyEnd());
   $("#sdock").addEventListener("click", (e) => { const b = e.target.closest("[data-c]"); if (b) { setPlaying(false); storyGo(+b.dataset.c); } });
   $("#picOpen").addEventListener("click", () => { const u = unitAt(S.ma); imOpen(cardPics, 0, nearMile >= 0 && MILES[nearMile]?.item?.gallery ? MILES[nearMile].title : `${u.name}, ${ageParts(S.ma).join(" ")}`); });
-  $("#story").addEventListener("click", (e) => { if (e.target.closest("figure") && ST) imStory(); });
-  $("#immerse").addEventListener("click", (e) => { const section = e.target.closest("[data-section]"), b = e.target.closest("[data-k]"); if (section) imSection(section.dataset.section, IM.list[IM.i]); else if (b) imShow(+b.dataset.k); else if (e.target.closest("#imPrev")) imShow(IM.i - 1); else if (e.target.closest("#imNext")) imShow(IM.i + 1); else if (e.target.closest("#imClose") || e.target.id === "immerse" || e.target.classList.contains("imbg")) imClose(); });
+  $("#story").addEventListener("click", (e) => { if (e.target.closest(".story-photo") && ST) imStory(); });
+  $("#immerse").addEventListener("click", (e) => { const section = e.target.closest("[data-section]"), b = e.target.closest("[data-k]"); if (section) imSection(section.dataset.section, IM.list[IM.i]); else if (b) imShow(+b.dataset.k); else if (e.target.closest("#imPrev")) imShow(IM.i - 1); else if (e.target.closest("#imNext")) imShow(IM.i + 1); else if (e.target.closest("#imClose") || e.target.id === "immerse") imClose(); });
   $("#searchBtn").addEventListener("click", () => { if (ST) storyEnd(); enterHistory(S.lastYear ?? Y0); setTimeout(() => { try { histWin().document.querySelector("#search").focus(); } catch (e) {} }, 400); });
   $("#stripEarth").addEventListener("click", () => { if (ST) return storyEnd(); enterDeep(S.lastMa > JOIN ? S.lastMa : .02); });
   $("#stripHistBtn").addEventListener("click", () => { if (ST) { storyEnd(); return enterHistory(S.lastYear ?? Y0); } histExplore(); });

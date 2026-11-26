@@ -213,17 +213,16 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .pic:hover .picgo { background: var(--btn); color: var(--btn-ink); }
 .picn { position: absolute; right: 10px; top: 10px; height: 24px; padding: 0 9px; border-radius: 12px; background: rgba(17, 17, 17, .72); color: #fff; font: 600 12px/24px var(--sans); }
 #app[data-flat] #card:not(.open) .pic img { height: 90px; }
-#story figure { cursor: zoom-in; }
+#story .story-photo { display: block; width: 100%; border: 0; padding: 0; border-radius: 8px; background: transparent; cursor: zoom-in; }
+#story .story-photo.comparison img { object-fit: contain; background: #101318; }
 #immerse { position: fixed; z-index: 20; inset: 0; background: #111; color: #fff; }
 #immerse[hidden] { display: none; }
-.imbg { position: absolute; inset: -40px; background-size: cover; background-position: center; filter: blur(40px) brightness(.35); }
 .imsections { position: absolute; z-index: 3; top: 14px; left: 50%; transform: translateX(-50%); display: flex; gap: 4px; padding: 4px; border: 1px solid rgba(255,255,255,.18); border-radius: 24px; background: rgba(16,18,18,.92); }
 .imsections button { min-height: 38px; padding: 0 14px; border: 0; border-radius: 20px; white-space: nowrap; background: transparent; color: #ddd; font: 600 13px var(--sans); }
 .imsections button[aria-pressed="true"] { background: #f2f1eb; color: #17201a; }
 .imsections button:disabled { opacity: .4; }
-#imImg { position: absolute; left: 50%; top: 24px; transform: translateX(-50%); max-width: calc(100% - 160px); max-height: calc(100% - 210px); object-fit: contain; border-radius: 6px; box-shadow: 0 20px 60px rgba(0, 0, 0, .5); }
-.imsize { position: absolute; right: 90px; bottom: 280px; max-width: min(300px, 45%); padding: 8px 10px; border: 1px solid rgba(255,255,255,.24); border-radius: 9px; background: rgba(8,13,19,.86); color: #fff; font: 500 12px/1.4 var(--sans); }
-.imsize[hidden] { display: none; }
+.imsize { max-width: 280px; font: 500 12px/1.4 var(--sans); }
+#imFull[hidden], #imImg[hidden], .imsize[hidden], .imnav[hidden], .imthumbs[hidden] { display: none; }
 .imsize strong, .imsize span, .imsize small { display: block; }
 .imsize strong { font-size: 13px; } .imsize small { color: #d0d5d7; font-size: 10px; }
 .imx { position: absolute; right: 20px; top: 20px; width: 44px; height: 44px; border-radius: 22px; border: 0; background: rgba(255, 255, 255, .92); color: #111; }
@@ -236,22 +235,25 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .imcap a { font-size: 12.5px; color: rgba(255, 255, 255, .7); }
 .imthumbs { position: absolute; left: 40px; right: 40px; bottom: 20px; height: 60px; display: flex; gap: 8px; overflow-x: auto; scrollbar-width: none; }
 .imthumbs button { flex: none; width: 88px; height: 60px; padding: 0; border: 2px solid transparent; border-radius: 6px; overflow: hidden; background: #222; opacity: .6; }
-.imthumbs button.on { border-color: #fff; opacity: 1; }
+.imthumbs button[aria-current] { border-color: #fff; opacity: 1; }
 .imthumbs img { display: block; width: 100%; height: 100%; object-fit: cover; }
-
-/* Keep the explanation on its own quiet panel, clear of both the picture and the thumbnail rail. */
-#immerse:not(.sc) #imImg { top: 72px; max-height: calc(100% - 318px); }
-#immerse:not(.sc) .imcap { left: 40px; right: 40px; bottom: 94px; max-width: none; max-height: 156px; overflow-y: auto; padding: 16px 20px; border: 1px solid rgba(255, 255, 255, .14); border-radius: 14px; background: rgba(16, 18, 18, .9); }
-#immerse:not(.sc) .imcap p { max-width: 80ch; margin: 7px 0; font: 400 16px/1.5 var(--sans); }
-#immerse:not(.sc) .imcap a { display: inline-block; color: rgba(255, 255, 255, .82); line-height: 1.45; text-underline-offset: 3px; }
-/* Desktop: a picture is drawn as large as the space allows at its own shape (--ar, width / height, set when it loads),
-   not at its file's pixel size. Wide pictures sit between the section switch and the caption; tall ones (.tall) take the
-   full height on the left and the caption moves to a pane on the right. */
-@media (min-width: 761px) {
-  #immerse:not(.sc) #imImg { max-width: none; max-height: none; height: auto; width: min(calc(100vw - 176px), calc((100vh - 334px) * var(--ar, 1.5))); top: calc(72px + (100vh - 334px) / 2); transform: translate(-50%, -50%); }
-  #immerse.tall:not(.sc) #imImg { left: calc(96px + (100vw - 616px) / 2); top: calc(72px + (100vh - 180px) / 2); width: min(calc(100vw - 616px), calc((100vh - 180px) * var(--ar, .75))); }
-  #immerse.tall:not(.sc) .imcap { left: auto; right: 96px; top: 72px; bottom: auto; width: 400px; max-height: calc(100vh - 180px); }
-  #immerse.tall:not(.sc) .imsize { right: 532px; bottom: 120px; }
+/* Let the picture use the remaining height as captions and thumbnails change. */
+#immerse:not([hidden]) { display: grid; grid-template: 52px minmax(0, 1fr) auto auto / minmax(0, 1fr); gap: 8px; padding: calc(8px + env(safe-area-inset-top)) 20px calc(12px + env(safe-area-inset-bottom)); background: #101318; }
+.imstage { grid-area: 2 / 1; min-height: 0; margin-inline: 54px; }
+#imImg { display: block; width: 100%; height: 100%; object-fit: contain; }
+#immerse .imnav { position: relative; grid-area: 2 / 1; inset: auto; align-self: center; z-index: 1; background: #272d35; color: #fff; }
+#immerse .imnav.prev { justify-self: start; }
+#immerse .imnav.next { justify-self: end; }
+#immerse .imdetails { grid-area: 3 / 1; display: flex; justify-content: space-between; gap: 16px; max-height: 31dvh; overflow: auto; padding: 10px 0; border-top: 1px solid #3d424b; }
+#immerse .imcap { position: static; max-width: 78ch; }
+#imTitle { margin: 3px 0; color: #fff; font: 700 clamp(17px, 2.3vw, 24px)/1.2 var(--sans); }
+#immerse .imcap p { margin: 4px 0; color: #d6dce3; font: 400 14px/1.4 var(--sans); }
+.imtools { flex: none; display: flex; flex-direction: column; align-items: flex-end; gap: 6px; text-align: right; }
+#imFull { display: inline-flex; min-height: 44px; align-items: center; padding: 0 12px; border: 1px solid #515a68; border-radius: 8px; color: #fff; font: 600 13px var(--sans); white-space: nowrap; text-underline-offset: 3px; }
+#immerse .imthumbs { position: static; grid-area: 4 / 1; height: auto; padding: 2px; }
+#immerse .imthumbs button { width: 78px; height: 46px; }
+@media (max-height: 460px) {
+  #immerse .imdetails { max-height: 24dvh; }
 }
 /* a moment's own timeline, built like a war's in World history: play, one segment per chapter, dates under them, and a way out to
    the time it is showing. The chapters' names sit above their segments as badges. */
