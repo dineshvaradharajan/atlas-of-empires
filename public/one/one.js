@@ -284,8 +284,8 @@ function picsFor(u, gallery) { // event-specific pictures, otherwise the period'
     const selected = [...(gallery.images || []), ...(gallery.fossils || [])].map((id) => { const p = byId.get(id), note = gallery.notes?.[id]; return p && note ? { ...p, caption: p.caption + " " + note } : p; }).filter(Boolean);
     if (selected.length) return selected;
   }
-  let list = (D.images || []).filter((p) => p.unit === u.id && !p.storyOnly).sort((a, b) => (b.quality || 0) - (a.quality || 0));
-  const keepProterozoicEvidence = u.id === "paleoproterozoic" || u.id === "mesoproterozoic";
+  let list = (D.images || []).filter((p) => p.unit === u.id && !p.storyOnly).sort((a, b) => (a.galleryOrder ?? 2) - (b.galleryOrder ?? 2) || (b.quality || 0) - (a.quality || 0));
+  const keepProterozoicEvidence = u.id === "paleoproterozoic" || u.id === "mesoproterozoic" || u.id === "tonian" || u.id === "cryogenian";
   for (let p = byUnit[u.parent]; p && (list.length < 6 || keepProterozoicEvidence); p = byUnit[p.parent]) list = list.concat((D.images || []).filter((q) => q.unit === p.id && !q.storyOnly && (!keepProterozoicEvidence || imageKind(q)[0] === "evidence")));
   return list;
 }

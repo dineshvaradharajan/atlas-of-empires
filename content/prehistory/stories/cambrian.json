@@ -46,7 +46,7 @@
      "id": "ai-cambrian-new-gaskiers",
      "image": "/scenes/cambrian/new-gaskiers.png",
      "page": "https://pubs.geoscienceworld.org/gsa/geology/article-abstract/44/11/955/195128/Dodging-snowballs-Geochronology-of-the-Gaskiers",
-     "caption": "An imagined coastal landscape during the Gaskiers glaciation, about 580 million years ago. The shoreline, ice cover and microbial mats are interpretive; the glaciation was not necessarily global.",
+     "caption": "The Gaskiers glaciation occurred about 580 million years ago; it was not necessarily global.",
      "credit": "AI-generated illustration",
      "license": "Artist’s impression",
      "width": 1672,
@@ -257,7 +257,7 @@
      "id": "ai-kimberella-reconstruction",
      "image": "/scenes/cambrian/ai-kimberella-reconstruction.png",
      "page": "https://www.nhm.ac.uk/discover/the-cambrian-period.html",
-     "caption": "Kimberella on a microbial mat. Fossils and nearby feeding traces suggest a mobile animal that grazed on the seafloor; its colour and detailed appearance are uncertain. Background life and scale are imagined.",
+     "caption": "Fossils and nearby feeding traces suggest Kimberella was a mobile animal that grazed on the seafloor; its detailed appearance is uncertain.",
      "credit": "AI-generated illustration",
      "license": "Artist’s impression",
      "width": 1672,
@@ -338,7 +338,7 @@
      "id": "ai-cambrian-new-ediacara",
      "image": "/scenes/cambrian/new-ediacara.png",
      "page": "https://www.npsa.sa.gov.au/parks/nilpena-ediacara-national-park",
-     "caption": "An imagined Ediacaran seafloor with Dickinsonia and smaller quilted, frond-like organisms. Their soft anatomy, colours and exact community remain uncertain; their appearance is inferred from fossils.",
+     "caption": "Dickinsonia and other quilted and frond-like organisms lived on Ediacaran seafloors; their soft anatomy and exact communities remain uncertain.",
      "credit": "AI-generated illustration",
      "license": "Artist’s impression",
      "width": 1672,
@@ -531,7 +531,7 @@
      "id": "ai-cambrian-new-treptichnus",
      "image": "/scenes/cambrian/new-treptichnus.png",
      "page": "https://stratigraphy.org/gssps/fortunian",
-     "caption": "An interpretive cutaway inspired by Treptichnus pedum, a trace fossil of linked probing burrows. Fossil traces preserve patterns of activity, not the identity of the animal that made them.",
+     "caption": "Treptichnus pedum consists of linked probing burrows. Fossil traces preserve patterns of activity, but the identity of the animal that made them is uncertain.",
      "credit": "AI-generated illustration",
      "license": "Artist’s impression",
      "width": 1752,
@@ -710,25 +710,6 @@
    "imageIds": [],
    "images": [
     {
-     "id": "ai-cambrian-new-anomalocaris",
-     "image": "/scenes/cambrian/new-anomalocaris.png",
-     "page": "https://burgess-shale.rom.on.ca/fossils/anomalocaris-canadensis/",
-     "caption": "An imagined Anomalocaris canadensis swimming above trilobites. Its Burgess Shale fossils date to about 508 million years ago, later than the 521-million-year-old events in this chapter. The surroundings, colours and behaviour are reconstructed.",
-     "credit": "AI-generated illustration",
-     "license": "Artist’s impression",
-     "width": 1672,
-     "height": 941,
-     "type": "scene",
-     "size": {
-      "name": "Anomalocaris canadensis",
-      "height": "Not applicable",
-      "length": "25 cm (complete fossil)",
-      "weight": "Unknown",
-      "note": "Isolated fragments suggest larger individuals, perhaps up to 1 m; that maximum is an estimate.",
-      "sizeSource": "https://burgess-shale.rom.on.ca/fossils/anomalocaris-canadensis/"
-     }
-    },
-    {
      "id": "anomalocaris-eye-emu-bay",
      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Fossilised_Anomalocaris_eye.jpg/1920px-Fossilised_Anomalocaris_eye.jpg",
      "page": "https://commons.wikimedia.org/wiki/File:Fossilised_Anomalocaris_eye.jpg",
@@ -831,15 +812,13 @@
     "o:cnidarians",
     "o:trilobites"
    ],
-   "imageIds": [
-    "ai-hallucigenia-on-sponge"
-   ],
+   "imageIds": [],
    "images": [
     {
      "id": "ai-cambrian-new-chengjiang",
      "image": "/scenes/cambrian/new-chengjiang.png",
      "page": "https://whc.unesco.org/en/list/1389/",
-     "caption": "An imagined early Cambrian Chengjiang sea with fish-like animals, trilobites and sponges. These groups are known from fossils, but the precise forms, surroundings and encounter are reconstructed.",
+     "caption": "Fish-like animals, trilobites and sponges are known from early Cambrian Chengjiang fossils.",
      "credit": "AI-generated illustration",
      "license": "Artist’s impression",
      "width": 1672,
@@ -850,7 +829,7 @@
      "id": "ai-cambrian-new-sirius-passet",
      "image": "/scenes/cambrian/new-sirius-passet.png",
      "page": "https://www.nature.com/articles/s41467-018-03464-w",
-     "caption": "Kerygmachela in an imagined early Cambrian Sirius Passet sea. Fossils preserve repeated lateral flaps, frontal appendages and a tail spine; colours and behaviour are uncertain.",
+     "caption": "Fossils of Kerygmachela from the early Cambrian Sirius Passet preserve lateral flaps, frontal appendages and a tail spine; colours and behaviour are uncertain.",
      "credit": "AI-generated illustration",
      "license": "Artist’s impression",
      "width": 1672,
@@ -949,7 +928,7 @@
      "id": "ai-cambrian-new-haikouichthys",
      "image": "/scenes/cambrian/new-haikouichthys.png",
      "page": "https://www.nature.com/articles/s41586-025-09966-0",
-     "caption": "Haikouichthys, a tiny early vertebrate from Chengjiang. A 2026 study interpreted two lateral eyes and two smaller eyes on top of the head; their appearance, the mouth, colour and soft tissues are reconstructed.",
+     "caption": "Haikouichthys was a tiny early vertebrate from Chengjiang. A 2026 study interpreted two lateral eyes and two smaller eyes on top of the head; their appearance and soft tissues are uncertain.",
      "credit": "AI-generated illustration",
      "license": "Artist’s impression",
      "width": 1672,
@@ -1041,14 +1020,15 @@
     "o:trilobites"
    ],
    "imageIds": [
-    "ai-opabinia-seafloor"
+    "ai-opabinia-seafloor",
+    "ai-hallucigenia-on-sponge"
    ],
    "images": [
     {
      "id": "ai-cambrian-new-burgess",
      "image": "/scenes/cambrian/new-burgess.png",
      "page": "https://burgess-shale.rom.on.ca/main-gallery/",
-     "caption": "An imagined Burgess Shale community with Opabinia, Wiwaxia and Pikaia. Pikaia has no known fossil evidence of eyes; colours, behaviour and surroundings are interpretive.",
+     "caption": "Opabinia, Wiwaxia and Pikaia are known from Burgess Shale fossils. Pikaia has no known fossil evidence of eyes.",
      "credit": "AI-generated illustration",
      "license": "Artist’s impression",
      "width": 1672,
@@ -1062,6 +1042,26 @@
       "note": "Fossil body lengths, excluding the proboscis.",
       "sizeSource": "https://burgess-shale.rom.on.ca/fossils/opabinia-regalis/"
      }
+    },
+    {
+     "id": "ai-cambrian-new-anomalocaris",
+     "image": "/scenes/cambrian/new-anomalocaris.png",
+     "page": "https://burgess-shale.rom.on.ca/fossils/anomalocaris-canadensis/",
+     "caption": "Burgess Shale fossils of Anomalocaris canadensis preserve its large eyes, grasping appendages and swimming flaps.",
+     "credit": "AI-generated illustration",
+     "license": "Artist’s impression",
+     "width": 1672,
+     "height": 941,
+     "type": "scene",
+     "size": {
+      "name": "Anomalocaris canadensis",
+      "height": "Not applicable",
+      "length": "25 cm (complete fossil)",
+      "weight": "Unknown",
+      "note": "Isolated fragments suggest larger individuals, perhaps up to 1 m; that maximum is an estimate.",
+      "sizeSource": "https://burgess-shale.rom.on.ca/fossils/anomalocaris-canadensis/"
+     },
+     "imageDateLabel": "About 508 million years ago"
     },
     {
      "id": "walcott-quarry-burgess-shale",
@@ -1091,7 +1091,7 @@
      "id": "ai-pikaia-reconstruction",
      "image": "/scenes/cambrian/ai-pikaia-reconstruction.png",
      "page": "https://burgess-shale.rom.on.ca/fossils/pikaia-gracilens/",
-     "caption": "Pikaia in the Burgess Shale sea. Fossils show a small, segmented early chordate; its anatomy is debated and this living appearance is an interpretation. Background life and scale are imagined.",
+     "caption": "Pikaia was a small, segmented early chordate known from the Burgess Shale; its anatomy remains debated.",
      "credit": "AI-generated illustration",
      "license": "Artist’s impression",
      "width": 1672,
@@ -1166,7 +1166,7 @@
      "id": "ai-cambrian-new-fezouata",
      "image": "/scenes/cambrian/new-fezouata.png",
      "page": "https://www.nature.com/articles/nature14256",
-     "caption": "Aegirocassis filters food above an imagined Early Ordovician Fezouata seafloor. Fossils indicate a radiodont more than two metres long; the scene and colours are reconstructed. This is after the Cambrian.",
+     "caption": "Aegirocassis was an Early Ordovician filter-feeding radiodont that grew more than two metres long, after the Cambrian.",
      "credit": "AI-generated illustration",
      "license": "Artist’s impression",
      "width": 1672,
