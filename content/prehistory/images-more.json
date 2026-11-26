@@ -1211,7 +1211,8 @@
   "credit": "Erwin S. Christman",
   "license": "Public domain",
   "quality": 3,
-  "note": "Gastornis lived from the late Paleocene into the Eocene. Black-and-white drawing; the bird's feathering is a guess."
+  "note": "Gastornis lived from the late Paleocene into the Eocene. Black-and-white drawing; the bird's feathering is a guess.",
+  "storyOnly": true
  },
  {
   "id": "painted-canyon-sentinel-butte",
@@ -1287,7 +1288,8 @@
   "credit": "Dmitry Bogdanov",
   "license": "CC BY 3.0",
   "quality": 3,
-  "note": "Cut-out on a white background."
+  "note": "Cut-out on a white background.",
+  "storyOnly": true
  },
  {
   "id": "painted-canyon-overlook-clouds",
@@ -1574,7 +1576,8 @@
   "credit": "Dmitry Bogdanov",
   "license": "CC BY 4.0",
   "quality": 3,
-  "note": "Cut-out with labels and a scale bar."
+  "note": "Cut-out with labels and a scale bar.",
+  "storyOnly": true
  },
  {
   "id": "alcidedorbignya",
@@ -1589,7 +1592,8 @@
   "credit": "Dmitry Bogdanov",
   "license": "CC BY 4.0",
   "quality": 3,
-  "note": "Cut-out on white with a 5 cm scale bar."
+  "note": "Cut-out on white with a 5 cm scale bar.",
+  "storyOnly": true
  },
  {
   "id": "wilpena-pound-sunset",
@@ -2041,7 +2045,8 @@
   "credit": "R. Bruce Horsfall",
   "license": "Public domain",
   "quality": 2,
-  "note": "Early 20th-century drawing of the head only."
+  "note": "Early 20th-century drawing of the head only.",
+  "storyOnly": true
  },
  {
   "id": "snowball-earth-art",
@@ -5019,5 +5024,407 @@
   "note": "Scientific photograph with scale bars; the large bars are 10 centimetres.",
   "unit": "triassic",
   "imageDateLabel": "Early Triassic"
+ },
+ {
+  "id": "ai-cretaceous-gallery-orbit",
+  "unit": "cretaceous",
+  "subject": "Earth from space",
+  "type": "scene",
+  "image": "/scenes/cretaceous/gallery-orbit.webp",
+  "width": 1200,
+  "height": 675,
+  "page": "https://doi.org/10.5281/zenodo.5460860",
+  "caption": "The Western Interior Seaway split North America into eastern and western landmasses. The Paleocene globe uses the same viewpoint, so the change in coastline is easy to see.",
+  "credit": "PALEOMAP PaleoDEMs · C. R. Scotese and N. M. Wright",
+  "license": "CC BY 4.0",
+  "quality": 6,
+  "imageDateLabel": "About 75 million years ago",
+  "galleryOrder": 0
+ },
+ {
+  "id": "ai-cretaceous-gallery-summit",
+  "unit": "cretaceous",
+  "subject": "Above an Arctic dinosaur floodplain",
+  "type": "scene",
+  "image": "/scenes/cretaceous/gallery-summit.webp",
+  "width": 832,
+  "height": 466,
+  "page": "https://pubmed.ncbi.nlm.nih.gov/34171301/",
+  "caption": "From a ridge above the ancient North Slope of Alaska, channels wind through a wooded polar floodplain. Pachyrhinosaurus had a thick boss on its nose. Fossils of very young dinosaurs show that several groups nested at these latitudes.",
+  "credit": "AI-generated illustration",
+  "license": "Artist’s impression",
+  "quality": 6,
+  "imageDateLabel": "About 70 million years ago",
+  "galleryOrder": 1,
+  "size": {
+   "name": "Pachyrhinosaurus",
+   "note": "Approximate adult length of the Alaskan species",
+   "length": "About 5 m"
+  }
+ },
+ {
+  "id": "ai-cretaceous-size-comparison",
+  "unit": "cretaceous",
+  "subject": "Cretaceous animals by size",
+  "type": "scene",
+  "image": "/scenes/cretaceous/size-comparison.webp",
+  "width": 1584,
+  "height": 1848,
+  "page": "/earth-life-sizes/cretaceous/",
+  "caption": "Eleven featured animals, from Patagotitan to a flower-visiting beetle. Body lengths, wingspans and fossil measurements each have their own size order. Open the full-size chart and fossil references from the source link.",
+  "credit": "AI-generated illustrations",
+  "license": "Artist’s impression",
+  "quality": 6,
+  "imageDateLabel": "Cretaceous",
+  "galleryOrder": 2
+ },
+ {
+  "id": "ai-cretaceous-jehol-lakeshore",
+  "unit": "cretaceous",
+  "subject": "Feathers at a Jehol lakeshore",
+  "type": "scene",
+  "image": "/scenes/cretaceous/jehol-lakeshore.webp",
+  "width": 832,
+  "height": 466,
+  "page": "https://www.naturalhistory.si.edu/sites/default/files/media/translated_publications/Wang%26amp%3B_99.pdf",
+  "caption": "Fossils from the Jehol Biota of northeastern China preserve the simple feathers and banded tail of Sinosauropteryx. Some Confuciusornis fossils preserve a pair of long tail feathers. This early bird was about 30 cm long by one museum estimate.",
+  "credit": "AI-generated illustration",
+  "license": "Artist’s impression",
+  "quality": 6,
+  "imageDateLabel": "About 125 million years ago",
+  "galleryOrder": 3,
+  "size": {
+   "name": "Sinosauropteryx",
+   "note": "Approximate total length, including the tail",
+   "length": "About 1.1 m"
+  }
+ },
+ {
+  "id": "ai-cretaceous-patagotitan-floodplain",
+  "unit": "cretaceous",
+  "subject": "At the feet of Patagotitan",
+  "type": "scene",
+  "image": "/scenes/cretaceous/patagotitan-floodplain.webp",
+  "width": 832,
+  "height": 466,
+  "page": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5563814/",
+  "caption": "Bones from several Patagotitan individuals were buried in floodplain deposits in Patagonia. The skeleton gives an estimate of its length. Weight estimates depend on how the body is modeled.",
+  "credit": "AI-generated illustration",
+  "license": "Artist’s impression",
+  "quality": 6,
+  "imageDateLabel": "About 102 million years ago",
+  "galleryOrder": 4,
+  "size": {
+   "name": "Patagotitan",
+   "note": "Natural History Museum estimates",
+   "length": "About 37.5 m",
+   "weight": "About 57 tonnes"
+  }
+ },
+ {
+  "id": "ai-cretaceous-angimordella",
+  "unit": "cretaceous",
+  "subject": "A beetle among flowers",
+  "type": "scene",
+  "image": "/scenes/cretaceous/angimordella.webp",
+  "width": 832,
+  "height": 466,
+  "page": "https://link.springer.com/article/10.1186/s12915-026-02572-0",
+  "caption": "Amber from northern Myanmar preserves Angimordella alongside flowering-plant pollen. Its exact role in pollination is debated, and the flower here represents a possible encounter.",
+  "credit": "AI-generated illustration",
+  "license": "Artist’s impression",
+  "quality": 6,
+  "imageDateLabel": "About 99 million years ago",
+  "galleryOrder": 5,
+  "size": {
+   "name": "Angimordella",
+   "note": "Measured body length of the amber specimen",
+   "length": "4.25 mm"
+  }
+ },
+ {
+  "id": "ai-cretaceous-western-interior-sea",
+  "unit": "cretaceous",
+  "subject": "Below the Western Interior Seaway",
+  "type": "scene",
+  "image": "/scenes/cretaceous/western-interior-sea.webp",
+  "width": 1672,
+  "height": 941,
+  "page": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7583613/",
+  "caption": "Tylosaurus swam in the shallow sea that covered the interior of North America. Ammonites such as Placenticeras shared these waters. Their shells fossilize far more readily than their soft bodies.",
+  "credit": "AI-generated illustration",
+  "license": "Artist’s impression",
+  "quality": 6,
+  "imageDateLabel": "About 83 million years ago",
+  "galleryOrder": 6,
+  "size": {
+   "name": "Tylosaurus",
+   "note": "Approximate length of the large Bunker mount",
+   "length": "12.8 m"
+  }
+ },
+ {
+  "id": "ai-cretaceous-quetzalcoatlus",
+  "unit": "cretaceous",
+  "subject": "A giant pterosaur on the floodplain",
+  "type": "scene",
+  "image": "/scenes/cretaceous/quetzalcoatlus.webp",
+  "width": 832,
+  "height": 466,
+  "page": "https://www.jsg.utexas.edu/txvp/pterosaurs/",
+  "caption": "Quetzalcoatlus fossils come from ancient river and floodplain deposits at Big Bend, Texas. The giant species Q. northropi is known from fragmentary remains, and its span is estimated using related fossils.",
+  "credit": "AI-generated illustration",
+  "license": "Artist’s impression",
+  "quality": 6,
+  "imageDateLabel": "About 68 million years ago",
+  "galleryOrder": 7,
+  "size": {
+   "name": "Quetzalcoatlus northropi",
+   "note": "Estimated wingspan of the giant species",
+   "width": "About 10 m"
+  }
+ },
+ {
+  "id": "ai-cretaceous-hell-creek",
+  "unit": "cretaceous",
+  "subject": "The last dinosaur floodplain",
+  "type": "scene",
+  "image": "/scenes/cretaceous/hell-creek.webp",
+  "width": 832,
+  "height": 466,
+  "page": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3049066/",
+  "caption": "Triceratops crosses the river, Edmontosaurus moves along the far bank, and Tyrannosaurus watches from the trees. Fossils of all three are known from the Hell Creek Formation.",
+  "credit": "AI-generated illustration",
+  "license": "Artist’s impression",
+  "quality": 6,
+  "imageDateLabel": "About 67–66 million years ago",
+  "galleryOrder": 8,
+  "size": {
+   "name": "Tyrannosaurus rex",
+   "note": "Approximate dimensions of the SUE mount",
+   "length": "About 12.3 m",
+   "height": "About 4 m at the hip"
+  }
+ },
+ {
+  "id": "ai-cretaceous-chicxulub-impact",
+  "unit": "cretaceous",
+  "subject": "Chicxulub strikes",
+  "type": "scene",
+  "image": "/scenes/cretaceous/chicxulub-impact.webp",
+  "width": 832,
+  "height": 466,
+  "page": "https://doi.org/10.1073/pnas.1909479116",
+  "caption": "The asteroid struck a shallow sea near present-day Yucatán. Drill cores record impact melt, broken rock and sediments that accumulated on the first day. The Paleocene gallery picks up with recovery.",
+  "credit": "AI-generated illustration",
+  "license": "Artist’s impression",
+  "quality": 6,
+  "imageDateLabel": "66 million years ago",
+  "galleryOrder": 9
+ },
+ {
+  "id": "ai-paleocene-gallery-orbit",
+  "unit": "paleocene",
+  "subject": "Earth from space",
+  "type": "scene",
+  "image": "/scenes/paleocene/gallery-orbit.webp",
+  "width": 1200,
+  "height": 675,
+  "page": "https://doi.org/10.5281/zenodo.5460860",
+  "caption": "The Western Interior Seaway had largely retreated. The globe uses the same viewpoint as the Cretaceous image to show how North America changed.",
+  "credit": "PALEOMAP PaleoDEMs · C. R. Scotese and N. M. Wright",
+  "license": "CC BY 4.0",
+  "quality": 6,
+  "imageDateLabel": "About 60 million years ago",
+  "galleryOrder": 0
+ },
+ {
+  "id": "ai-paleocene-gallery-summit",
+  "unit": "paleocene",
+  "subject": "Above the Paleocene Denver Basin",
+  "type": "scene",
+  "image": "/scenes/paleocene/gallery-summit.webp",
+  "width": 764,
+  "height": 508,
+  "page": "https://pubs.geoscienceworld.org/georef/record/6/2617847/Evidence-for-an-in-situ-early-Paleocene-rainforest",
+  "caption": "Morning mist hangs above a broadleaf forest. The Castle Rock fossil site in Colorado preserves a diverse early Paleocene flora from the forest floor.",
+  "credit": "AI-generated illustration",
+  "license": "Artist’s impression",
+  "quality": 6,
+  "imageDateLabel": "About 64 million years ago",
+  "galleryOrder": 1
+ },
+ {
+  "id": "ai-paleocene-size-comparison",
+  "unit": "paleocene",
+  "subject": "Paleocene animals by size",
+  "type": "scene",
+  "image": "/scenes/paleocene/size-comparison.webp",
+  "width": 1584,
+  "height": 1568,
+  "page": "/earth-life-sizes/paleocene/",
+  "caption": "Seven featured animals, from Titanoboa to an early penguin. Body lengths, body masses and fossil measurements each have their own size order. Open the full-size chart and fossil references from the source link.",
+  "credit": "AI-generated illustrations",
+  "license": "Artist’s impression",
+  "quality": 6,
+  "imageDateLabel": "Paleocene",
+  "galleryOrder": 2
+ },
+ {
+  "id": "ai-paleocene-fern-recovery",
+  "unit": "paleocene",
+  "subject": "Ferns after the impact",
+  "type": "scene",
+  "image": "/scenes/paleocene/fern-recovery.webp",
+  "width": 764,
+  "height": 508,
+  "page": "https://pubmed.ncbi.nlm.nih.gov/11721051/",
+  "caption": "In New Zealand, an abundance of fossil fern spores appears just above the boundary. The spores record a local phase of disturbed ground and early plant recovery.",
+  "credit": "AI-generated illustration",
+  "license": "Artist’s impression",
+  "quality": 6,
+  "imageDateLabel": "Shortly after 66 million years ago",
+  "galleryOrder": 3
+ },
+ {
+  "id": "ai-paleocene-chicxulub-recovery",
+  "unit": "paleocene",
+  "subject": "Life returns to the crater",
+  "type": "scene",
+  "image": "/scenes/paleocene/chicxulub-recovery.webp",
+  "width": 764,
+  "height": 508,
+  "page": "https://doi.org/10.1029/2021PA004241",
+  "caption": "Sediments from the flooded crater record renewed marine productivity. The inset shows the microscopic scale of planktonic foraminifera, whose shells help track the recovery.",
+  "credit": "AI-generated illustration",
+  "license": "Artist’s impression",
+  "quality": 6,
+  "imageDateLabel": "Within about 30,000 years of the impact",
+  "galleryOrder": 4
+ },
+ {
+  "id": "ai-paleocene-corral-bluffs",
+  "unit": "paleocene",
+  "subject": "Mammals grow larger at Corral Bluffs",
+  "type": "scene",
+  "image": "/scenes/paleocene/corral-bluffs.webp",
+  "width": 764,
+  "height": 508,
+  "page": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8667543/",
+  "caption": "The early Paleocene fossil sequence in Colorado records changes in both plants and mammals. The heavy skull of Taeniolabis and its prominent front teeth distinguish this multituberculate.",
+  "credit": "AI-generated illustration",
+  "license": "Artist’s impression",
+  "quality": 6,
+  "imageDateLabel": "About 65 million years ago",
+  "galleryOrder": 5,
+  "size": {
+   "name": "Taeniolabis",
+   "note": "One skull-based estimate, with substantial uncertainty",
+   "weight": "About 34 kg"
+  }
+ },
+ {
+  "id": "ai-paleocene-pantolambda",
+  "unit": "paleocene",
+  "subject": "Pantolambda and its young",
+  "type": "scene",
+  "image": "/scenes/paleocene/pantolambda.webp",
+  "width": 764,
+  "height": 508,
+  "page": "https://www.nature.com/articles/s41586-022-05150-w",
+  "caption": "Growth lines and chemistry in fossil teeth provide evidence of gestation and nursing in Pantolambda, one of the early large-bodied placental mammals.",
+  "credit": "AI-generated illustration",
+  "license": "Artist’s impression",
+  "quality": 6,
+  "imageDateLabel": "About 62 million years ago",
+  "galleryOrder": 6,
+  "size": {
+   "name": "Pantolambda",
+   "note": "Published estimate from limb-bone dimensions",
+   "weight": "About 42 kg"
+  }
+ },
+ {
+  "id": "ai-paleocene-early-penguin",
+  "unit": "paleocene",
+  "subject": "An early penguin dives",
+  "type": "scene",
+  "image": "/scenes/paleocene/early-penguin.webp",
+  "width": 764,
+  "height": 508,
+  "page": "https://doi.org/10.1093/molbev/msj124",
+  "caption": "Waimanu fossils come from marine sediments in what is now New Zealand. Its skeleton shows early adaptations for swimming underwater with its wings.",
+  "credit": "AI-generated illustration",
+  "license": "Artist’s impression",
+  "quality": 6,
+  "imageDateLabel": "About 61 million years ago",
+  "galleryOrder": 7,
+  "size": {
+   "name": "Waimanu",
+   "note": "Measured fossil foot bone: 7.8 cm"
+  }
+ },
+ {
+  "id": "ai-paleocene-wannagan-swamp",
+  "unit": "paleocene",
+  "subject": "A crocodilian in the Wannagan swamp",
+  "type": "scene",
+  "image": "/scenes/paleocene/wannagan-swamp.webp",
+  "width": 1532,
+  "height": 508,
+  "page": "https://smm.org/collections/wannagan/",
+  "caption": "Borealosuchus fossils are abundant at Wannagan Creek, North Dakota. The site preserves a freshwater ecosystem with fish, turtles and several types of reptiles.",
+  "credit": "AI-generated illustration",
+  "license": "Artist’s impression",
+  "quality": 6,
+  "imageDateLabel": "About 60 million years ago",
+  "galleryOrder": 8,
+  "size": {
+   "name": "Borealosuchus",
+   "note": "Approximate length from the museum collection",
+   "length": "About 4.3 m"
+  }
+ },
+ {
+  "id": "ai-paleocene-cerrejon",
+  "unit": "paleocene",
+  "subject": "Titanoboa in a tropical river",
+  "type": "scene",
+  "image": "/scenes/paleocene/cerrejon.webp",
+  "width": 764,
+  "height": 508,
+  "page": "https://doi.org/10.1038/nature07671",
+  "caption": "Leaves from the Cerrejón coal beds in Colombia record a tropical forest. Fossil vertebrae reveal the size of Titanoboa. The turtle Carbonemys is known from a skull about 24 cm long.",
+  "credit": "AI-generated illustration",
+  "license": "Artist’s impression",
+  "quality": 6,
+  "imageDateLabel": "About 58 million years ago",
+  "galleryOrder": 9,
+  "size": {
+   "name": "Titanoboa",
+   "note": "Body-length and weight estimates from fossil vertebrae",
+   "length": "About 13 m",
+   "weight": "About 1.1 tonnes"
+  }
+ },
+ {
+  "id": "ai-paleocene-barylambda",
+  "unit": "paleocene",
+  "subject": "Barylambda in a Colorado woodland",
+  "type": "scene",
+  "image": "/scenes/paleocene/barylambda.webp",
+  "width": 1532,
+  "height": 508,
+  "page": "https://libsysdigi.library.uiuc.edu/OCA/Books2009-01/newpantodontadin624patt/newpantodontadin624patt.pdf",
+  "caption": "Fossils from western Colorado preserve the heavy limbs and large tail of Barylambda. Its exact body mass depends on which fossil and scaling method are used.",
+  "credit": "AI-generated illustration",
+  "license": "Artist’s impression",
+  "quality": 6,
+  "imageDateLabel": "Late Paleocene",
+  "galleryOrder": 10,
+  "size": {
+   "name": "Barylambda",
+   "note": "Fossil femur shaft circumference: 25 cm"
+  }
  }
 ]
