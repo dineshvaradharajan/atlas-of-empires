@@ -1,0 +1,13 @@
+html { color-scheme: dark; background: #101923; color: #e9eef3; font: 1rem/1.55 system-ui, sans-serif; }
+body { margin: 0; }
+main { max-width: 78rem; padding: 1.25rem clamp(1rem, 4vw, 3rem) 3rem; margin: auto; }
+nav { display: flex; flex-wrap: wrap; gap: 0.4rem 1.3rem; }
+a { color: #9cddd2; text-underline-offset: 0.16em; }
+h1, h2 { font-family: Georgia, serif; line-height: 1.12; }
+h1 { font-size: clamp(2rem, 6vw, 4rem); margin-bottom: .5rem; }
+p { max-width: 75ch; }
+.chart { display: block; width: 100%; height: auto; margin-top: 1rem; border-radius: .5rem; }
+.table { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; }
+th, td { border-bottom: 1px solid #43515d; text-align: left; padding: .5rem .75rem; }
+thead { background: #213344; }
