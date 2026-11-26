@@ -11,3 +11,5 @@ p { max-width: 75ch; }
 table { border-collapse: collapse; width: 100%; }
 th, td { border-bottom: 1px solid #43515d; text-align: left; padding: .5rem .75rem; }
 thead { background: #213344; }
+h3 { margin: 1.75rem 0 .5rem; }
+small { display: block; color: #c2ccd6; }
