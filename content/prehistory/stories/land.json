@@ -40,6 +40,18 @@
    "imageIds": [],
    "images": [
     {
+     "id": "ai-story-land-spores-on-bare-land",
+     "type": "scene",
+     "image": "/scenes/land/spores-on-bare-land.webp",
+     "width": 1672,
+     "height": 941,
+     "subject": "The first plants at a damp stream margin",
+     "imageDateLabel": "About 470 million years ago",
+     "caption": "Microscopic spores from rocks in Argentina are evidence for early plants on land. The parent plants may have formed low patches, but their shape is unknown.",
+     "page": "https://doi.org/10.1111/j.1469-8137.2010.03433.x",
+     "credit": "AI-generated illustration"
+    },
+    {
      "id": "land-soil-crust-utah",
      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Biological_soil_crusts_near_Butler_Wash_Ruins%2C_February_2019.jpg/1920px-Biological_soil_crusts_near_Butler_Wash_Ruins%2C_February_2019.jpg",
      "page": "https://commons.wikimedia.org/wiki/File:Biological_soil_crusts_near_Butler_Wash_Ruins,_February_2019.jpg",
@@ -236,6 +248,18 @@
    "imageIds": [],
    "images": [
     {
+     "id": "ai-story-land-first-land-animals",
+     "type": "scene",
+     "image": "/scenes/land/first-land-animals.webp",
+     "width": 1672,
+     "height": 941,
+     "subject": "A Silurian millipede beside a lake",
+     "imageDateLabel": "About 425 million years ago",
+     "caption": "Rocks from Kerrera, Scotland, preserve Kampecaris, a small segmented animal related to millipedes. Its fossils are among the early records of land animals.",
+     "page": "https://doi.org/10.1080/08912963.2020.1761351",
+     "credit": "AI-generated illustration"
+    },
+    {
      "id": "land-pneumodesmus-fossil",
      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Pneumodesmus_newmani.jpg/1280px-Pneumodesmus_newmani.jpg",
      "page": "https://commons.wikimedia.org/wiki/File:Pneumodesmus_newmani.jpg",
@@ -245,18 +269,6 @@
      "note": "The fragment is about 1 cm long. Once dated to the Silurian; zircon dating in 2017 put it at about 414 million years old.",
      "width": 1280,
      "height": 1024,
-     "type": "fossil"
-    },
-    {
-     "id": "land-pocock-silurian-scorpion",
-     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Pocock%2C_The_Scottish_Silurian_Scorpion_pl._19.jpg/960px-Pocock%2C_The_Scottish_Silurian_Scorpion_pl._19.jpg",
-     "page": "https://commons.wikimedia.org/wiki/File:Pocock,_The_Scottish_Silurian_Scorpion_pl._19.jpg",
-     "caption": "A 1901 drawing of the Silurian scorpion from the Pentland Hills, Scotland, now called Dolichophonus, the oldest known scorpion.",
-     "credit": "Reginald Innes Pocock",
-     "license": "Public domain",
-     "note": "Drawn by R. I. Pocock in 1901, when it was called Palaeophonus loudonensis; some details of the drawing reflect interpretations of the time.",
-     "width": 991,
-     "height": 1799,
      "type": "fossil"
     },
     {
@@ -294,6 +306,10 @@
     {
      "title": "Wikipedia: Dolichophonus",
      "url": "https://en.wikipedia.org/wiki/Dolichophonus"
+    },
+    {
+     "title": "R. I. Pocock (1901): published plate of the Scottish Silurian scorpion",
+     "url": "https://commons.wikimedia.org/wiki/File:Pocock,_The_Scottish_Silurian_Scorpion_pl._19.jpg"
     }
    ]
   },
@@ -630,6 +646,18 @@
    ],
    "images": [
     {
+     "id": "ai-story-land-late-devonian-extinction",
+     "type": "scene",
+     "image": "/scenes/land/late-devonian-extinction.webp",
+     "width": 1672,
+     "height": 941,
+     "subject": "A Devonian reef during the Kellwasser crisis",
+     "imageDateLabel": "About 372 million years ago",
+     "caption": "Stromatoporoid sponges and corals built Devonian reefs. These communities suffered severe losses around the Kellwasser events. Sediments and fossils provide evidence of low oxygen in some seas.",
+     "page": "https://eprints.whiterose.ac.uk/id/eprint/3460/",
+     "credit": "AI-generated illustration"
+    },
+    {
      "id": "land-kellwasser-valley",
      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Kellwasser_01.jpg/1920px-Kellwasser_01.jpg",
      "page": "https://commons.wikimedia.org/wiki/File:Kellwasser_01.jpg",
@@ -699,6 +727,18 @@
    ],
    "imageIds": [],
    "images": [
+    {
+     "id": "ai-story-land-greenland-tetrapods",
+     "type": "scene",
+     "image": "/scenes/land/greenland-tetrapods.webp",
+     "width": 1672,
+     "height": 941,
+     "subject": "Acanthostega in shallow Devonian water",
+     "imageDateLabel": "About 365 million years ago",
+     "caption": "Fossils from East Greenland show Acanthostega had eight digits on each forelimb and a tail suited to swimming. Its anatomy points to a life spent mainly in water.",
+     "page": "https://doi.org/10.1038/347066a0",
+     "credit": "AI-generated illustration"
+    },
     {
      "id": "land-acanthostega-model",
      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Acanthostega_model.jpg/1280px-Acanthostega_model.jpg",

@@ -59,6 +59,18 @@
    "imageIds": [],
    "images": [
     {
+     "id": "ai-story-humans-first-upright-apes",
+     "type": "scene",
+     "image": "/scenes/humans/first-upright-apes.webp",
+     "width": 1672,
+     "height": 941,
+     "subject": "Sahelanthropus beside a wooded lake",
+     "imageDateLabel": "About 7 million years ago",
+     "caption": "The Toumaï skull and limb bones from Chad help constrain the appearance of Sahelanthropus. Limb anatomy supports some upright movement, and its climbing and walking habits are still debated.",
+     "page": "https://doi.org/10.1126/sciadv.adv0130",
+     "credit": "AI-generated illustration"
+    },
+    {
      "id": "sahelanthropus-toumai-cast",
      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Sahelanthropus_tchadensis_-_TM_266-01-060-1.jpg/1920px-Sahelanthropus_tchadensis_-_TM_266-01-060-1.jpg",
      "page": "https://commons.wikimedia.org/wiki/File:Sahelanthropus_tchadensis_-_TM_266-01-060-1.jpg",
@@ -224,6 +236,18 @@
    "imageIds": [],
    "images": [
     {
+     "id": "ai-story-humans-first-stone-tools",
+     "type": "scene",
+     "image": "/scenes/humans/first-stone-tools.webp",
+     "width": 1672,
+     "height": 941,
+     "subject": "Making a stone flake at Lomekwi",
+     "imageDateLabel": "About 3.3 million years ago",
+     "caption": "Large battered cores and thick flakes from Lomekwi, Kenya, give clues to early stoneworking. The identity of the toolmaker remains unknown.",
+     "page": "https://doi.org/10.1038/nature14464",
+     "credit": "AI-generated illustration"
+    },
+    {
      "id": "kenyanthropus-skull",
      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Kenyanthropus_platyops_IMG_2945.JPG/1920px-Kenyanthropus_platyops_IMG_2945.JPG",
      "page": "https://commons.wikimedia.org/wiki/File:Kenyanthropus_platyops_IMG_2945.JPG",
@@ -324,6 +348,18 @@
    ],
    "imageIds": [],
    "images": [
+    {
+     "id": "ai-story-humans-first-of-our-genus",
+     "type": "scene",
+     "image": "/scenes/humans/first-of-our-genus.webp",
+     "width": 1672,
+     "height": 941,
+     "subject": "A floodplain at Ledi-Geraru",
+     "imageDateLabel": "About 2.8 million years ago",
+     "caption": "A partial lower jaw from this part of Ethiopia is the earliest fossil assigned to Homo. The scene keeps the figure distant because the find preserves only part of the jaw.",
+     "page": "https://doi.org/10.1126/science.aaa1343",
+     "credit": "AI-generated illustration"
+    },
     {
      "id": "ld-350-1-jaw",
      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/LD_350-1_mandible.jpg/1920px-LD_350-1_mandible.jpg",
@@ -436,6 +472,18 @@
    ],
    "imageIds": [],
    "images": [
+    {
+     "id": "ai-story-humans-homo-erectus",
+     "type": "scene",
+     "image": "/scenes/humans/homo-erectus.webp",
+     "width": 1672,
+     "height": 941,
+     "subject": "A long-legged walker near Lake Turkana",
+     "imageDateLabel": "About 1.5–1.6 million years ago",
+     "caption": "The Turkana Boy skeleton from Nariokotome, Kenya, preserves the long legs and relatively short arms of a young Homo erectus. Its leg bones help explain the long stride shown here.",
+     "page": "https://humanorigins.si.edu/evidence/human-fossils/fossils/knm-wt-15000",
+     "credit": "AI-generated illustration"
+    },
     {
      "id": "turkana-boy-nairobi",
      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Ni%C3%B1o_de_Turkana_-_Museo_Nacional_de_Nairobi.jpg/1920px-Ni%C3%B1o_de_Turkana_-_Museo_Nacional_de_Nairobi.jpg",
@@ -573,6 +621,18 @@
    "imageIds": [],
    "images": [
     {
+     "id": "ai-story-humans-out-of-africa",
+     "type": "scene",
+     "image": "/scenes/humans/out-of-africa.webp",
+     "width": 1672,
+     "height": 941,
+     "subject": "Early humans in the southern Caucasus",
+     "imageDateLabel": "About 1.8 million years ago",
+     "caption": "Skulls and stone tools at Dmanisi, Georgia, record early Homo in Eurasia. The landscape shows the regional setting in which these groups moved.",
+     "page": "https://doi.org/10.1073/pnas.1106638108",
+     "credit": "AI-generated illustration"
+    },
+    {
      "id": "dmanisi-skull-5",
      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Dmanisi_hominin_skull_D4500_and_mandible_D2600._National_Museum_of_Georgia.jpg/1920px-Dmanisi_hominin_skull_D4500_and_mandible_D2600._National_Museum_of_Georgia.jpg",
      "page": "https://commons.wikimedia.org/wiki/File:Dmanisi_hominin_skull_D4500_and_mandible_D2600._National_Museum_of_Georgia.jpg",
@@ -703,6 +763,18 @@
    "imageIds": [],
    "images": [
     {
+     "id": "ai-story-humans-java-and-china",
+     "type": "scene",
+     "image": "/scenes/humans/java-and-china.webp",
+     "width": 1672,
+     "height": 941,
+     "subject": "Homo erectus on Java",
+     "imageDateLabel": "About 1.3 million years ago",
+     "caption": "The Sangiran beds in central Java preserve early Asian Homo erectus. Fossil skulls from the area have a low braincase and prominent brow ridges.",
+     "page": "https://doi.org/10.1126/science.aau8556",
+     "credit": "AI-generated illustration"
+    },
+    {
      "id": "sangiran-17-replica",
      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Sangiran_17-01.JPG/1920px-Sangiran_17-01.JPG",
      "page": "https://commons.wikimedia.org/wiki/File:Sangiran_17-01.JPG",
@@ -814,6 +886,18 @@
    "imageIds": [],
    "images": [
     {
+     "id": "ai-story-humans-atapuerca",
+     "type": "scene",
+     "image": "/scenes/humans/atapuerca.webp",
+     "width": 1672,
+     "height": 941,
+     "subject": "An early member of the Neanderthal line",
+     "imageDateLabel": "About 430,000 years ago",
+     "caption": "Skulls from Sima de los Huesos in Spain already show some Neanderthal facial features. Ancient DNA places the people who left these bones on the Neanderthal line.",
+     "page": "https://doi.org/10.1038/nature17405",
+     "credit": "AI-generated illustration"
+    },
+    {
      "id": "sima-de-los-huesos-cranium-5",
      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Natural_History_Museum_054_%288043309935%29.jpg/1920px-Natural_History_Museum_054_%288043309935%29.jpg",
      "page": "https://commons.wikimedia.org/wiki/File:Natural_History_Museum_054_%288043309935%29.jpg",
@@ -903,6 +987,18 @@
    ],
    "imageIds": [],
    "images": [
+    {
+     "id": "ai-story-humans-our-species",
+     "type": "scene",
+     "image": "/scenes/humans/our-species.webp",
+     "width": 1672,
+     "height": 941,
+     "subject": "Early Homo sapiens at Jebel Irhoud",
+     "imageDateLabel": "About 315,000 years ago",
+     "caption": "The Jebel Irhoud fossils from Morocco combine faces like ours with longer, lower braincases. The scene shows the surrounding landscape and keeps the figures at a distance.",
+     "page": "https://doi.org/10.1038/nature22336",
+     "credit": "AI-generated illustration"
+    },
     {
      "id": "jebel-irhoud-1-cast",
      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Jebel_Irhoud-1_NMNH.jpg/1280px-Jebel_Irhoud-1_NMNH.jpg",
@@ -1102,6 +1198,18 @@
    "imageIds": [],
    "images": [
     {
+     "id": "ai-story-humans-denisovans",
+     "type": "scene",
+     "image": "/scenes/humans/denisovans.webp",
+     "width": 1672,
+     "height": 941,
+     "subject": "A Denisovan from northeast China",
+     "imageDateLabel": "At least 146,000 years ago",
+     "caption": "DNA recovered from dental calculus links the Harbin skull to Denisovans. Its broad brow and low vault are preserved in bone. Skin and hair are unknown.",
+     "page": "https://doi.org/10.1016/j.cell.2025.05.040",
+     "credit": "AI-generated illustration"
+    },
+    {
      "id": "baishiya-karst-cave",
      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Baishiya_Karst_Cave.jpg/1920px-Baishiya_Karst_Cave.jpg",
      "page": "https://commons.wikimedia.org/wiki/File:Baishiya_Karst_Cave.jpg",
@@ -1203,6 +1311,18 @@
    "refs": [],
    "imageIds": [],
    "images": [
+    {
+     "id": "ai-story-humans-island-humans",
+     "type": "scene",
+     "image": "/scenes/humans/island-humans.webp",
+     "width": 1672,
+     "height": 941,
+     "subject": "Homo floresiensis near Liang Bua",
+     "imageDateLabel": "About 100,000–60,000 years ago",
+     "caption": "The LB1 skeleton from Flores, Indonesia, belonged to an adult about a metre tall. It preserves short legs and proportionately long feet.",
+     "page": "https://doi.org/10.1038/nature02999",
+     "credit": "AI-generated illustration"
+    },
     {
      "id": "liang-bua-cave",
      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Homo_floresiensis_cave.jpg/1920px-Homo_floresiensis_cave.jpg",
@@ -1345,6 +1465,18 @@
    "imageIds": [],
    "images": [
     {
+     "id": "ai-story-humans-across-the-sea-to-sahul",
+     "type": "scene",
+     "image": "/scenes/humans/across-the-sea-to-sahul.webp",
+     "width": 1672,
+     "height": 941,
+     "subject": "Crossing the seas of Wallacea",
+     "imageDateLabel": "About 65,000–50,000 years ago",
+     "caption": "Ice Age sea levels exposed more land, but people still crossed open water to reach Sahul. The timing of arrival remains debated, and the type of watercraft is unknown.",
+     "page": "https://doi.org/10.1038/nature22968",
+     "credit": "AI-generated illustration"
+    },
+    {
      "id": "arnhem-escarpment",
      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Arnhem_Escarpment%2C_Northern_Territory_%288851990389%29.jpg/1920px-Arnhem_Escarpment%2C_Northern_Territory_%288851990389%29.jpg",
      "page": "https://commons.wikimedia.org/wiki/File:Arnhem_Escarpment%2C_Northern_Territory_%288851990389%29.jpg",
@@ -1484,6 +1616,18 @@
    ],
    "images": [
     {
+     "id": "ai-story-humans-meeting-neanderthals",
+     "type": "scene",
+     "image": "/scenes/humans/meeting-neanderthals.webp",
+     "width": 1672,
+     "height": 941,
+     "subject": "Early Homo sapiens on a cold European steppe",
+     "imageDateLabel": "About 45,000 years ago",
+     "caption": "Bones from Ilsenhöhle cave at Ranis, Germany, show Homo sapiens lived this far north. DNA from early Europeans records recent Neanderthal ancestry.",
+     "page": "https://doi.org/10.1038/s41586-024-08420-x",
+     "credit": "AI-generated illustration"
+    },
+    {
      "id": "ilsenhohle-ranis",
      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Ilsenh%C3%B6hle_unter_der_Burg_Ranis%2C_151002%2C_ako.jpg/1920px-Ilsenh%C3%B6hle_unter_der_Burg_Ranis%2C_151002%2C_ako.jpg",
      "page": "https://commons.wikimedia.org/wiki/File:Ilsenh%C3%B6hle_unter_der_Burg_Ranis%2C_151002%2C_ako.jpg",
@@ -1565,6 +1709,18 @@
     "neanderthal-skull"
    ],
    "images": [
+    {
+     "id": "ai-story-humans-last-neanderthals",
+     "type": "scene",
+     "image": "/scenes/humans/last-neanderthals.webp",
+     "width": 1672,
+     "height": 941,
+     "subject": "Late Neanderthals in southern Iberia",
+     "imageDateLabel": "About 41,000–39,000 years ago",
+     "caption": "Dated sites indicate that Neanderthals disappeared from Europe at different times. This coastal setting evokes southern Iberia, where the dates of the latest finds remain debated.",
+     "page": "https://doi.org/10.1038/nature13621",
+     "credit": "AI-generated illustration"
+    },
     {
      "id": "gorhams-cave",
      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Gorham%27s_Cave.jpg/1920px-Gorham%27s_Cave.jpg",
@@ -1702,6 +1858,18 @@
    ],
    "imageIds": [],
    "images": [
+    {
+     "id": "ai-story-humans-into-the-americas",
+     "type": "scene",
+     "image": "/scenes/humans/into-the-americas.webp",
+     "width": 1672,
+     "height": 941,
+     "subject": "Footprints by the Ice Age lake at White Sands",
+     "imageDateLabel": "About 23,000–21,000 years ago",
+     "caption": "Footprints in sediments at White Sands, New Mexico, record people walking along the margin of an Ice Age lake. Independent dating of pollen and sediment supports their age.",
+     "page": "https://doi.org/10.1126/science.adh5007",
+     "credit": "AI-generated illustration"
+    },
     {
      "id": "white-sands-footprints",
      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Human_fossil_tracks_at_White_Sands_New_Mexico.jpg/1920px-Human_fossil_tracks_at_White_Sands_New_Mexico.jpg",

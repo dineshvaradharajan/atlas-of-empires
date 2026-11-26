@@ -510,6 +510,18 @@
    "imageIds": [],
    "images": [
     {
+     "id": "ai-story-dinosaurs-feathers-before-flight",
+     "type": "scene",
+     "image": "/scenes/dinosaurs/feathers-before-flight.webp",
+     "width": 1672,
+     "height": 941,
+     "subject": "Anchiornis beside a Jurassic lake",
+     "imageDateLabel": "About 160 million years ago",
+     "caption": "Anchiornis fossils from Liaoning preserve long feathers on the forelimbs and hindlimbs. Microscopic pigment structures support a largely grey and black animal with pale wing feathers and a reddish crest.",
+     "page": "https://doi.org/10.1126/science.1186290",
+     "credit": "AI-generated illustration"
+    },
+    {
      "id": "anchiornis-feathers-fossil",
      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Anchiornis_feathers.jpg/1920px-Anchiornis_feathers.jpg",
      "page": "https://commons.wikimedia.org/wiki/File:Anchiornis_feathers.jpg",
