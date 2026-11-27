@@ -960,6 +960,44 @@ window.addEventListener('resize',()=>{dirty=true;});
 document.addEventListener('visibilitychange',()=>{last=performance.now();});
 cv.addEventListener('webglcontextlost',e=>{e.preventDefault();});
 
+/* ---------------------------------------------------------------- narration: a spoken commentary for beginners (narration/narration.json,
+   recorded by tools/narration.py). Each line plays when the film reaches its scene's start plus its 'at' seconds, follows pause, play and
+   seeking (a line picked up halfway starts halfway), and shows as a subtitle while it is spoken. The last line plays over the closing slate.
+   Off until the reader turns it on, since browsers allow sound only after a click */
+const NARR={on:false,cues:[],audio:[],cur:-1};
+fetch('narration/narration.json').then(r=>r.json()).then(s=>{
+  NARR.cues=s.cues.map(c=>({...c,t:c.scene==='end'?TOTAL:START[c.scene]+c.at}));
+  $('nar').hidden=false;
+}).catch(()=>{});
+function narrSet(v){
+  NARR.on=v;$('nar').setAttribute('aria-pressed',String(v));document.body.classList.toggle('narrating',v);
+  if(v){
+    if(!NARR.audio.length)NARR.audio=NARR.cues.map(c=>{const a=new Audio('narration/'+c.file);a.preload='auto';return a;});
+    if(!started||ended){if(ended)T=0;begin();}else if(!playing)setPlaying(true);
+  }else{narrStop();}
+  dirty=true;
+}
+function narrStop(){const a=NARR.audio[NARR.cur];if(a)a.pause();NARR.cur=-1;const sb=$('sub');sb.hidden=true;sb.textContent='';}
+function narrTick(){
+  if(NARR.on&&NARR.cues.length){
+    const x=ended?TOTAL+tail:T;
+    let k=-1;for(let i=0;i<NARR.cues.length;i++){const c=NARR.cues[i];if(x>=c.t&&x<c.t+c.dur){k=i;break;}}
+    if(k!==NARR.cur){const a=NARR.audio[NARR.cur];if(a)a.pause();NARR.cur=k;const sb=$('sub');sb.hidden=k<0;sb.textContent=k<0?'':NARR.cues[k].text;}
+    const a=NARR.audio[k];
+    if(a){
+      const want=x-NARR.cues[k].t;
+      if(playing||ended){
+        if(Math.abs(a.currentTime-want)>.35)a.currentTime=want; // after a seek, or if the film and the voice drift apart
+        if(a.paused)a.play().catch(()=>{});
+      }else if(!a.paused)a.pause();
+    }
+  }
+  requestAnimationFrame(narrTick);
+}
+requestAnimationFrame(narrTick);
+$('nar').addEventListener('click',()=>narrSet(!NARR.on));
+document.addEventListener('keydown',e=>{if(!e.metaKey&&!e.ctrlKey&&!e.altKey&&(e.key==='n'||e.key==='N')&&!/^(INPUT|TEXTAREA)$/.test(e.target.tagName))narrSet(!NARR.on);});
+
 document.body.classList.add('pre');
 hud(0,0);
 requestAnimationFrame(t=>{last=t;frame(t);});

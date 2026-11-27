@@ -37,6 +37,7 @@ python3 -I tools/seo.py          # plain HTML pages, sitemaps and llms.txt for s
 .venv-paleo/bin/python tools/paleo.py <PaleoDEMS 6-minute zip>  # the ancient Earth, 540 million years ago to today -> public/data/paleo/ (needs numpy, netCDF4)
 .venv-paleo/bin/python tools/climate.py                        # land colour from simulated climate, every 20 million years, and today's -> public/data/paleo/climate.png, climate-now.png (needs the Pohl et al. NetCDF files in data/prehistory/koppen/nc/ and Beck_KG_V1_present_0p083.tif in data/prehistory/koppen/beck/tif/)
 .venv-paleo/bin/python tools/glacial.py                        # the last ice age's ice sheets, 25,000 to 12,000 years ago -> public/data/paleo/glacial.png (needs the NADI-1 OPTIMAL and DATED-1 mc shapefiles in data/prehistory/ice/)
+python3 -I tools/narration.py     # the universe film's spoken commentary: public/universe/narration/narration.json -> one .m4a per line (macOS say and afconvert)
 python3 -I tools/paleo_webp.py      # those maps as lossless WebP, checked pixel for pixel (needs cwebp and dwebp: brew install webp)
 python3 -I tools/prehistory.py   # content/prehistory -> public/data/earth-history.json (the Earth history page at /earth-history/, with an Atlas view and a Space view)
 ```
