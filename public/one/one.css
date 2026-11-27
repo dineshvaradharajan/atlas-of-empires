@@ -339,3 +339,28 @@ button { font: inherit; color: inherit; cursor: pointer; }
   #app[data-mode="hist"] #pUniW { display: none; }
 }
 a.erow, a.pcard { text-decoration: none; } a.pcard { color: inherit; } /* the universe's stories are links to the film */
+
+/* a chart or poster (#immerse.full): the picture fills the window and can be zoomed (one.js, imZoom); its caption shrinks to a strip along the
+   bottom that keeps the credit, and the thumbnails step aside. The selectors outrank the gallery's own layout on every screen size */
+#immerse.full:not([hidden]) .imstage { position: fixed; z-index: 1; inset: calc(60px + env(safe-area-inset-top)) 0 calc(58px + env(safe-area-inset-bottom)) 0; margin: 0; height: auto; max-height: none; overflow: hidden; cursor: zoom-in; touch-action: none; }
+#immerse.full:not([hidden]) .imstage.zoomed { cursor: grab; }
+#immerse.full:not([hidden]) #imImg { transform-origin: 0 0; user-select: none; -webkit-user-drag: none; }
+#immerse.full:not([hidden]) .imthumbs { display: none; }
+#immerse.full:not([hidden]) .imdetails { position: fixed; z-index: 2; left: 0; right: 0; bottom: 0; max-height: none; overflow: hidden; padding: 8px 20px calc(8px + env(safe-area-inset-bottom)); border-top: 1px solid #3d424b; background: rgba(16, 19, 24, .92); display: flex; align-items: center; gap: 14px; }
+#immerse.full:not([hidden]) .imcap { min-width: 0; display: flex; align-items: baseline; gap: 12px; white-space: nowrap; }
+#immerse.full:not([hidden]) .imcap p, #immerse.full:not([hidden]) .imwhen, #immerse.full:not([hidden]) #imSize { display: none; }
+#immerse.full:not([hidden]) #imTitle { margin: 0; font-size: 15px; }
+#immerse.full:not([hidden]) .imtools { flex-direction: row; align-items: center; margin-left: auto; }
+#immerse.full:not([hidden]) .imtools::before { content: "Click to zoom in, drag to move"; color: #aeb6c0; font: 400 12.5px var(--sans); white-space: nowrap; margin-right: 6px; }
+#immerse.full:not([hidden]) .imnav { position: fixed; z-index: 3; top: 50%; transform: translateY(-50%); }
+#immerse.full:not([hidden]) .imnav.prev { left: 12px; } #immerse.full:not([hidden]) .imnav.next { right: 12px; }
+#immerse.full:not([hidden]) .imsections, #immerse.full:not([hidden]) .imx { z-index: 3; }
+#immerse.full:not([hidden]) #imTitle { overflow: hidden; text-overflow: ellipsis; }
+@media (max-width: 760px) { /* on a phone the strip wraps: title, then the credit, left-aligned */
+  #immerse.full:not([hidden]) .imdetails { flex-direction: row; align-items: center; padding-inline: 12px; }
+  #immerse.full:not([hidden]) .imcap { flex-direction: column; align-items: flex-start; gap: 2px; white-space: normal; overflow: hidden; }
+  #immerse.full:not([hidden]) #imTitle { font-size: 14px; white-space: nowrap; max-width: 100%; }
+  #immerse.full:not([hidden]) #imCred { font-size: 11.5px; }
+  #immerse.full:not([hidden]) .imtools::before { content: "Tap to zoom"; }
+  #immerse.full:not([hidden]) #imFull { display: none; }
+}

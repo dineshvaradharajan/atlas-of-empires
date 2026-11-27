@@ -433,6 +433,7 @@ function imStory() { // one continuous picture journey, starting at the chapter 
 function imShow(i) { const n = IM.list.length; IM.i = (i + n) % n; const p = IM.list[IM.i], src = sized(p, innerWidth * Math.min(devicePixelRatio || 1, 2) > 1400 ? 1920 : 1280);
   const im = $("#imImg"); im.dataset.fb = p.image;
   const stage = im.parentElement;
+  $("#immerse").classList.toggle("full", !p.scene && (p.type === "comparison" || /size-comparison|poster/.test(p.id || ""))); imZoom(1); // a chart or poster fills the window
   stage.style.setProperty("--im-aspect", p.width && p.height ? p.width / p.height : 1.5);
   im.onload = () => { if (im.naturalHeight) stage.style.setProperty("--im-aspect", im.naturalWidth / im.naturalHeight); };
   im.src = src;
@@ -449,6 +450,24 @@ function imShow(i) { const n = IM.list.length; IM.i = (i + n) % n; const p = IM.
   document.querySelectorAll("#imThumbs button").forEach((b) => { if (+b.dataset.k === IM.i) b.setAttribute("aria-current", "true"); else b.removeAttribute("aria-current"); });
   $("#imThumbs [aria-current]")?.scrollIntoView({ inline: "center", block: "nearest" });
   $("#imPrev").hidden = $("#imNext").hidden = n < 2; }
+// A chart or poster (the comparisons, size charts and the Homo poster) is too dense to read beside its caption, so it fills the window:
+// a click zooms in 2.5 times where it lands, dragging moves around it, the wheel zooms, and a click while zoomed goes back
+const IZ = { z: 1, x: 0, y: 0, drag: null, moved: false };
+function imZoom(z, cx, cy) {
+  const im = $("#imImg"), st = im.parentElement, r = st.getBoundingClientRect();
+  if (z <= 1) { IZ.z = 1; IZ.x = 0; IZ.y = 0; }
+  else { const px = (cx ?? r.left + r.width / 2) - r.left, py = (cy ?? r.top + r.height / 2) - r.top; IZ.x = px - (px - IZ.x) * z / IZ.z; IZ.y = py - (py - IZ.y) * z / IZ.z; IZ.z = z; }
+  im.style.transform = IZ.z > 1 ? `translate(${IZ.x}px, ${IZ.y}px) scale(${IZ.z})` : ""; st.classList.toggle("zoomed", IZ.z > 1);
+}
+function imZoomWire() {
+  const st = $(".imstage"), full = () => $("#immerse").classList.contains("full"); if (!st) return;
+  st.addEventListener("pointerdown", (e) => { if (!full()) return; IZ.drag = { x: e.clientX, y: e.clientY }; IZ.moved = false; try { st.setPointerCapture(e.pointerId); } catch (err) { /* not every pointer can be captured */ } });
+  st.addEventListener("pointermove", (e) => { if (!IZ.drag) return; const dx = e.clientX - IZ.drag.x, dy = e.clientY - IZ.drag.y; if (Math.abs(dx) + Math.abs(dy) > 3) IZ.moved = true;
+    if (IZ.moved && IZ.z > 1) { IZ.x += dx; IZ.y += dy; IZ.drag = { x: e.clientX, y: e.clientY }; $("#imImg").style.transform = `translate(${IZ.x}px, ${IZ.y}px) scale(${IZ.z})`; } });
+  const up = (e) => { if (!IZ.drag) return; if (!IZ.moved) imZoom(IZ.z > 1 ? 1 : 2.5, e.clientX, e.clientY); IZ.drag = null; };
+  st.addEventListener("pointerup", up); st.addEventListener("pointercancel", () => { IZ.drag = null; });
+  st.addEventListener("wheel", (e) => { if (!full()) return; e.preventDefault(); imZoom(clamp(IZ.z * Math.exp(-clamp(e.deltaY, -120, 120) * .002), 1, 6), e.clientX, e.clientY); }, { passive: false });
+}
 function imClose() { const chapter = IM.list[IM.i]?.storyChapter; $("#immerse").hidden = true; if (chapter && ST && chapter.i !== ST.i) storyGo(chapter.i); if (IM.back?.isConnected && IM.back !== document.body) IM.back.focus(); else document.activeElement?.blur(); } // Safari does not focus a clicked button
 
 // ---------------------------------------------------------------- moments: a thread of the Earth's history told in chapters on the globe
@@ -867,6 +886,7 @@ function wire() {
   $("#sdock").addEventListener("click", (e) => { const b = e.target.closest("[data-c]"); if (b) { setPlaying(false); storyGo(+b.dataset.c); } });
   $("#picOpen").addEventListener("click", () => { const u = unitAt(S.ma); imOpen(cardPics, 0, nearMile >= 0 && MILES[nearMile]?.item?.gallery ? MILES[nearMile].title : `${u.name}, ${ageParts(S.ma).join(" ")}`); });
   $("#story").addEventListener("click", (e) => { if (e.target.closest(".story-photo") && ST) imStory(); });
+  imZoomWire();
   $("#immerse").addEventListener("click", (e) => { const section = e.target.closest("[data-section]"), b = e.target.closest("[data-k]"); if (section) imSection(section.dataset.section, IM.list[IM.i]); else if (b) imShow(+b.dataset.k); else if (e.target.closest("#imPrev")) imShow(IM.i - 1); else if (e.target.closest("#imNext")) imShow(IM.i + 1); else if (e.target.closest("#imClose") || e.target.id === "immerse") imClose(); });
   $("#searchBtn").addEventListener("click", () => { if (ST) storyEnd(); enterHistory(S.lastYear ?? Y0); setTimeout(() => { try { histWin().document.querySelector("#search").focus(); } catch (e) {} }, 400); });
   $("#stripEarth").addEventListener("click", () => { if (ST) return storyEnd(); enterDeep(S.lastMa > JOIN ? S.lastMa : .02); });

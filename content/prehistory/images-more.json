@@ -2388,6 +2388,7 @@
  },
  {
   "id": "ai-tetrapod-fin-limb-comparison",
+  "storyOnly": true,
   "subject": "Fin Limb Comparison",
   "unit": "devonian",
   "type": "scene",
@@ -2399,6 +2400,23 @@
   "quality": 5,
   "galleryOrder": 19,
   "imageDateLabel": "Late Devonian"
+ },
+ {
+  "id": "acanthostega-fossil-brussels",
+  "unit": "devonian",
+  "subject": "Acanthostega",
+  "type": "fossil",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Acanthostega_gunnari_enclosed.JPG/1280px-Acanthostega_gunnari_enclosed.JPG",
+  "page": "https://commons.wikimedia.org/wiki/File:Acanthostega_gunnari_enclosed.JPG",
+  "width": 1356,
+  "height": 1294,
+  "caption": "A slab with Acanthostega skeletons from the Late Devonian rocks of East Greenland, about 365 million years old, on display in Brussels. Acanthostega had eight digits on its front limbs, yet kept gills: legs evolved in animals that still lived in water.",
+  "credit": "Ghedoghedo",
+  "license": "CC BY-SA 3.0",
+  "quality": 4,
+  "imageDateLabel": "Late Devonian, about 365 million years ago",
+  "note": "Its limbs were described by Coates and Clack in 1990 (Nature 347:66), its gills in 1991 (Nature 352:234).",
+  "galleryOrder": 19
  },
  {
   "id": "ai-tetrapod-devonian-trackway",
@@ -5889,6 +5907,7 @@
  },
  {
   "id": "ai-miocene-amazon-drainage",
+  "storyOnly": true,
   "unit": "miocene",
   "subject": "The Amazon begins to drain east",
   "type": "scene",
@@ -5901,6 +5920,23 @@
   "license": "Scientific diagram",
   "quality": 6,
   "imageDateLabel": "About 9.4–9 million years ago",
+  "galleryOrder": -18
+ },
+ {
+  "id": "miocene-amazon-mouth-iss",
+  "unit": "miocene",
+  "subject": "The Amazon reaches the Atlantic",
+  "type": "landscape",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/ISS-56_Brazil%2C_Amazon_River_mouth.jpg/1280px-ISS-56_Brazil%2C_Amazon_River_mouth.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:ISS-56_Brazil,_Amazon_River_mouth.jpg",
+  "width": 5568,
+  "height": 3712,
+  "caption": "The Amazon pouring brown, sediment-laden water into the Atlantic, photographed from the International Space Station in 2018. Sediments laid down off this coast carry minerals from the Andes: one study dates the start of a river right across the continent to about 9.4 to 9 million years ago.",
+  "credit": "NASA (ISS Expedition 56)",
+  "license": "Public domain",
+  "quality": 5,
+  "imageDateLabel": "Today",
+  "note": "The dating is from Hoorn et al. 2017, Global and Planetary Change; when the river fully connected across South America is still debated.",
   "galleryOrder": -18
  },
  {
@@ -6155,6 +6191,23 @@
   "credit": "The World Atlas",
   "quality": 6,
   "imageDateLabel": "2.8 million years ago to today",
+  "galleryOrder": -15
+ },
+ {
+  "id": "hominin-skull-tree-amnh",
+  "unit": "pleistocene",
+  "subject": "Skulls of our relatives",
+  "type": "fossil",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Hominid_tree_AMNH.jpg/1280px-Hominid_tree_AMNH.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Hominid_tree_AMNH.jpg",
+  "width": 4000,
+  "height": 3000,
+  "caption": "Casts of the skulls of human relatives, arranged as a family tree at the American Museum of Natural History in New York. Several kinds of Homo lived through the Pleistocene, some at the same time; today only our own species remains.",
+  "credit": "Cathrotterdam",
+  "license": "CC BY-SA 4.0",
+  "quality": 4,
+  "imageDateLabel": "2.8 million years ago to today",
+  "note": "Each skull is a cast of a fossil found in Africa, Europe or Asia. The branches are the museum's interpretation; some links between them are debated.",
   "galleryOrder": -15
  },
  {
