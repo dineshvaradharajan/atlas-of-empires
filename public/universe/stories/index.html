@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Stories of the universe · The World Atlas</title>
+<meta name="description" content="Six animated stories: the Earth beside the other planets, the Sun beside other stars, the nearest stars and galaxies, how big the universe is, and the planets of other stars.">
+<link rel="icon" href="../../logo.png">
+<link rel="stylesheet" href="../../fonts/fonts.css">
+<link rel="stylesheet" href="../universe.css">
+<link rel="stylesheet" href="stories.css">
+</head>
+<body class="picking">
+<canvas id="cv" aria-hidden="true"></canvas>
+<div class="scrim"></div>
+
+<header id="bar">
+  <a class="brand" href="../../"><img src="../../logo.png" alt="" width="34" height="24"><span>THE WORLD ATLAS</span></a>
+  <nav class="tabs" aria-label="Sections">
+    <a href="../">Explore</a><a href="./" id="tabStories" aria-current="page">Stories</a><a href="../../#about">About</a>
+  </nav>
+  <div class="tools">
+    <a class="pb stbtn" href="../">Film</a>
+    <button type="button" class="pb" id="cc" aria-pressed="true" title="Show or hide the text (C)">Hide text</button>
+    <button type="button" class="rb" id="fs" aria-label="Full screen" title="Full screen (F)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button>
+  </div>
+</header>
+<span class="impr" id="impr">Sizes to scale; colours and glows are an artist's impression</span>
+
+<section class="picker" id="picker" aria-labelledby="pickTitle">
+  <div class="eyebrow">THE UNIVERSE · STORIES</div>
+  <h1 id="pickTitle">How big, how near, how many</h1>
+  <p class="lede">Six short animated stories about our place among the planets, the stars and the galaxies. Each number comes with its source.</p>
+  <div class="cards" id="cards"></div>
+</section>
+
+<section class="scene" id="cap" aria-live="polite" hidden>
+  <div class="eyebrow" id="kick"></div>
+  <h1 id="title"></h1>
+  <p class="lede" id="text"></p>
+  <div class="live" id="live"></div>
+  <dl class="readings" id="facts"></dl>
+  <p class="src" id="src"></p>
+  <div class="snext" id="snext" hidden></div>
+</section>
+
+<nav class="dock" id="dock" aria-label="Story chapters" hidden>
+  <button type="button" class="play" id="play" aria-label="Pause"><svg viewBox="0 0 24 24" id="playicon" aria-hidden="true"><path d="M7 5h4v14H7zM13 5h4v14h-4z"/></svg></button>
+  <div class="caps"><span id="dname"></span><span id="dcount"></span></div>
+  <div class="tl" id="tl" role="group" aria-label="Chapters">
+    <div class="bands" id="bands"></div>
+    <i class="cursor" id="cursor" style="left:0%"></i><span class="pill" id="pill" style="left:0%"></span>
+  </div>
+  <div class="ticks" id="ticks" aria-hidden="true"></div>
+  <div class="snav2"><button type="button" class="rb sm" id="prev" aria-label="Previous chapter"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button><button type="button" class="rb sm" id="next" aria-label="Next chapter"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button></div>
+</nav>
+
+<script src="stories.js"></script>
+</body>
+</html>

@@ -48,7 +48,8 @@ const SCENES=[
   lede:'Stars gather into galaxies, and their light clears space a second time.',
   temp:'Cleared gas heated to about 10,000 K',what:'Small, bright galaxies and the first big black holes',sure:'Well supported: seen by telescopes',
   more:'The James Webb Space Telescope has seen galaxies as they were less than 300 million years after the Big Bang: MoM-z14 at about 280 million years, and JADES-GS-z14-0 at about 290. Their ultraviolet light split hydrogen atoms apart again, opening bubbles (the clear patches) in the grey haze of neutral gas. The bubbles grew and merged; by about a billion years the gas between galaxies had been cleared.',
-  src:'Sources: Carniani et al. 2024, Nature, JADES-GS-z14-0; Naidu et al. 2025, MoM-z14',dur:13,acc:'#4fd1c5',aot:.021},
+  src:'Sources: Carniani et al. 2024, Nature, JADES-GS-z14-0; Naidu et al. 2025, MoM-z14',dur:13,acc:'#4fd1c5',aot:.021,
+  live:(t)=>t>10.5?'Closer in: one young galaxy like these grew into the Milky Way':''},
  {era:'Cosmic noon',clock:'3.8',unit:'billion years after the Big Bang',ago:'10 billion years ago · peak from about 2 to 6 billion years',title:'Our galaxy takes shape',
   lede:'Galaxies grow by making stars and swallowing their neighbours. The Milky Way is one.',
   temp:'Leftover light under 10 K',what:'Galaxies everywhere; ours with a disc and a halo',sure:'Well supported',
@@ -93,6 +94,9 @@ mat2 rot(float a){float c=cos(a),s=sin(a);return mat2(c,-s,s,c);}
 vec3 aces(vec3 x){return clamp((x*(2.51*x+.03))/(x*(2.43*x+.59)+.14),0.,1.);}
 vec3 bb(float t){t=clamp(t,0.,1.6);return pow(vec3(t),vec3(1.,2.2,4.))*vec3(2.,1.45,1.15);}
 float px(){return 2.*uZ/uRes.y;}
+// one camera move from the first galaxies (scene 8) into our galaxy (scene 9): tau counts seconds from 2 s before the cross-fade,
+// and both scenes scale by this same curve, so the young galaxy and the spiral are the same size on screen as one fades into the other
+float zoomG(float tau){return exp(2.81*smoothstep(0.,6.,tau));}
 // one star per lit cell; sizes are set in screen pixels so they stay sharp at any resolution
 // integer hash for the star field: the float hash above leaves a faint column of extra stars where cell numbers line up
 float hs(vec2 p){uvec2 q=uvec2(ivec2(p)+ivec2(65536));q=1103515245U*((q>>1U)^q.yx);uint n=1103515245U*(q.x^(q.y>>3U));return float(n)*(1./4294967295.);}
@@ -441,6 +445,21 @@ vec3 galaxy(vec2 d,float sz,float h,float t){
  float r2=dot(d,d)/(sz*sz);
  return c*1.05+vec3(.4,.55,1.)*exp(-r2*1.1)*.28+vec3(.85,.9,1.)*exp(-r2*14.)*.3;
 }
+// the Milky Way's own ancestor, at the centre: the same kind of lumpy young galaxy, with more knots and loose stars to hold up close
+vec3 hero(vec2 d,float t){
+ const float sz=.05; vec3 c=vec3(0);
+ for(int i=0;i<7;i++){
+  float fi=float(i);
+  vec2 o=(vec2(h21(vec2(fi,13.)),h21(vec2(fi,31.)))-.5)*sz*1.5;
+  o=rot(t*.02+fi)*o;
+  float s=sz*(.12+.16*h21(vec2(fi,5.)));
+  vec2 k=d-o;
+  c+=vec3(.52,.7,1.)*exp(-dot(k,k)/(s*s))*(.5+.7*h21(vec2(fi,11.)));
+ }
+ float r2=dot(d,d)/(sz*sz);
+ c+=stars(d/sz*1.4,16.,.45,5.)*exp(-r2*.9)*2.2;
+ return c+vec3(.4,.55,1.)*exp(-r2*1.)*.3*(.7+.6*fbm4(d/sz*3.))+vec3(.85,.9,1.)*exp(-r2*12.)*.35;
+}
 vec3 voro(vec2 p){vec2 i=floor(p),f=fract(p);float d1=8.,d2=8.,d3=8.;
  for(int y=-1;y<=1;y++)for(int x=-1;x<=1;x++){vec2 g=vec2(x,y);vec2 r=g+h22(i+g)-f;float d=dot(r,r);
   if(d<d1){d3=d2;d2=d1;d1=d;}else if(d<d2){d3=d2;d2=d;}else if(d<d3){d3=d;}}
@@ -452,7 +471,7 @@ float webd(vec2 p){
  vec3 v=voro(p); float e=v.y-v.x, k=v.z-v.x;
  return clamp(exp(-e*e/.025)*.75+exp(-k*6.)*.8,0.,1.);}
 vec3 scene(vec2 uv,float t){
- vec2 p=uv*(1.06-.06*t/15.);
+ vec2 p=uv*(1.06-.06*t/15.)/zoomG(t-11.); // in the last seconds the camera flies in to the galaxy at the centre
  float fogn=fbm(p*1.6+vec2(t*.02,0.))*.7+fbm4(p*4.5-t*.01)*.3;
  float F=0.; vec3 gc=vec3(0);
  float cs=.3;
@@ -470,6 +489,8 @@ vec3 scene(vec2 uv,float t){
   F+=step(.001,age)*exp(-dot(d,d)/max(sig*sig,1e-5));
   gc+=galaxy(d,.034+.02*hh,hh,t)*smoothstep(birth-.8,birth+.6,t);
  }
+ F+=exp(-dot(p,p)/.06)*smoothstep(.4,3.,t)*1.4; // the ancestor's own clear bubble, opened early: the camera flies in through it
+ gc+=hero(p,t)*smoothstep(.2,1.6,t);
  F+=smoothstep(9.5,15.5,t)*.75;
  float thr=.5+(fogn-.5)*.55+(fbm4(p*8.+t*.05)-.5)*.32;
  float ion=smoothstep(thr-.05,thr+.05,F);
@@ -487,6 +508,7 @@ vec3 scene(vec2 uv,float t){
 /* 9 Our galaxy: a barred spiral, turning slowly, with the Sun's future orbit and a swallowed neighbour */
 `vec3 scene(vec2 uv,float t){
  vec3 col=stars(uv,22.,.35,2.)*.7+stars(uv,60.,.22,8.)*.5;
+ uv*=max(1.,1./(.06*zoomG(t+2.))); // the camera is still flying in from the young galaxy: the spiral grows to full size by t = 4
  float incl=mix(1.0,1.12,smoothstep(0.,16.,t));
  float ci=cos(incl);
  vec2 q=rot(.28)*uv;

@@ -92,7 +92,7 @@ float clouds(vec3 n, float tk){
 float dec(float v){ float x=v*255.; return x>127.5 ? pow(max(x-128.,0.)/127.,2.)*uLandMax+step(128.,x)*.5 : -pow((127.-min(x,127.))/127.,2.)*uSeaMax; }
 float elev(vec2 uv){ return mix(dec(texture2D(uA,uv).r), dec(texture2D(uB,uv).r), uMix); }
 // the sea in natural blues, darker where deeper: light turquoise over the shelves, mid blue down the slope, a rich blue in the deep ocean.
-// Only the colour per depth is a choice; the depths are the reconstruction's. Kept light enough for the pale land, coastlines and grid to read
+// Only the colour per depth is a choice; the depths are the reconstruction's. Kept light enough for the pale land and coastlines to read
 vec3 seaL(float d){ vec3 c=mix(vec3(.66,.86,.87),vec3(.42,.68,.84),smoothstep(60.,700.,d)); c=mix(c,vec3(.30,.54,.78),smoothstep(700.,2600.,d)); return mix(c,vec3(.22,.44,.71),smoothstep(2600.,5400.,d)); }
 vec3 landL(float h){
   vec3 c=mix(vec3(.875,.865,.825),vec3(.80,.78,.73),smoothstep(0.,1300.,h)); c=mix(c,vec3(.69,.67,.61),smoothstep(1300.,3200.,h)); c=mix(c,vec3(.55,.53,.47),smoothstep(3200.,5400.,h));
@@ -138,9 +138,7 @@ void main(){
     vec3 nn=normalize(n-(east*ex+north*ey)*k); relief=(dot(nn,L)-base)*uReal;
     real=e>0.?landC(e,lon,lat):seaL(-e);
     float glac=glacAt(lon,lat); real=mix(real,vec3(.93,.95,.97)-.04*fbm2(n*40.),glac); // on land and over the seas the ice sheets covered
-    float u=lon*1.9098593, w2=lat*1.9098593, lw=1.9098593/uR;
-    float gd=min(abs(u-floor(u+.5))*max(cos(lat),.05),abs(w2-floor(w2+.5)));
-    real=mix(real,vec3(.80,.83,.85),(1.-smoothstep(lw*.6,lw*1.5,gd))*step(200.,-e)*.9);
+    // no latitude and longitude grid: the Earth reads better without it
     float dpx=abs(e)/max(length(vec2(ex,ey))*.5,.5)/uTpp;
     real=mix(real,vec3(.47,.46,.41),(1.-smoothstep(.5,1.3,dpx))*.8*shore*(1.-glac)); // no coastline drawn through an ice sheet
     // motion that adds no data: the sea shimmers and thin weather drifts over the round globe. Both fade out as it flattens into a map,
