@@ -49,12 +49,12 @@ function star(x, y, r, c, t = 0, seed = 1, big = 1) {
   disc(x, y, r, gr);
   if (r > 14) { // convection cells: a few big ones on a supergiant, many small ones otherwise
     // soft-edged cells, small on an ordinary star and few and huge on a supergiant (as in images of Betelgeuse and Antares)
-    const R = rng(seed), n = Math.round(clamp(r * 1.2, 30, 220) / (big * big));
+    const R = rng(seed), n = Math.round(big > 1 ? clamp(r * 1.2, 30, 220) / (big * big) : clamp(r * 2.5, 40, 500));
     g.save(); g.beginPath(); g.arc(x, y, r, 0, TAU); g.clip();
     for (let i = 0; i < n; i++) {
-      const a = R() * TAU + t * .015 * (R() - .5), d = Math.sqrt(R()) * r, s = r * (.025 + .045 * R()) * big * big;
+      const a = R() * TAU + t * .015 * (R() - .5), d = Math.sqrt(R()) * r, s = r * (big > 1 ? (.025 + .045 * R()) * big * big : .012 + .02 * R());
       const px = x + Math.cos(a) * d, py = y + Math.sin(a) * d, f = .5 + .5 * Math.sin(t * .5 + i * 1.7), cc = R() < .55 ? mixc(c, BLACK, .3) : mixc(c, WHITE, .4);
-      const gr = g.createRadialGradient(px, py, 0, px, py, s); gr.addColorStop(0, rgba(cc, .1 + .08 * f)); gr.addColorStop(1, rgba(cc, 0));
+      const al = big > 1 ? .1 + .08 * f : .05 + .04 * f, gr = g.createRadialGradient(px, py, 0, px, py, s); gr.addColorStop(0, rgba(cc, al)); gr.addColorStop(1, rgba(cc, 0));
       g.fillStyle = gr; g.fillRect(px - s, py - s, 2 * s, 2 * s);
     }
     g.restore();
@@ -85,9 +85,110 @@ function blobsOnSphere(x, y, r, list, spin, col, alpha) {
     g.fillStyle = typeof col === 'function' ? col(k) : col; g.globalAlpha = alpha * clamp(vz * 3 + .3, 0, 1); g.fill(); g.globalAlpha = 1;
   }
 }
+// ---------------------------------------------------------------- the planets as they look: a map of each surface wrapped on a lit sphere
+// Each planet has an equirectangular map (built once: the Earth from the atlas's own present-day height map and land colours, the others
+// painted from what spacecraft show), turned on its axis and tilted by its real axial tilt. Each frame a sphere is shaded from that map.
+// how each axis is drawn: [lean across the picture, tip towards us], degrees. The leans are the axial tilts from the NASA fact sheets; Saturn's
+// 26.7° is split so that its rings open towards us as they often do seen from the Earth; Uranus lies on its side (97.8°)
+const ORI = { mercury: [0, 0], venus: [0, 0], earth: [23.4, 0], moon: [6.7, 0], mars: [25.2, 0], jupiter: [3.1, 0], saturn: [12, 17.5], uranus: [97.8, 0], neptune: [28.3, 0] };
+const SPIN = { mercury: .03, venus: .02, earth: .12, moon: .02, mars: .12, jupiter: .25, saturn: .22, uranus: .1, neptune: .15 };
+const GAS = { jupiter: 1, saturn: 1, uranus: 1, neptune: 1, venus: 1 };
+const hash3 = (x, y, z) => { let h = (x * 374761393 + y * 668265263 + z * 2147483647) | 0; h = (h ^ (h >>> 13)) * 1274126177; return ((h ^ (h >>> 16)) >>> 0) / 4294967296; };
+function vnoise(x, y, z) {
+  const xi = Math.floor(x), yi = Math.floor(y), zi = Math.floor(z), xf = x - xi, yf = y - yi, zf = z - zi, u = xf * xf * (3 - 2 * xf), v = yf * yf * (3 - 2 * yf), w = zf * zf * (3 - 2 * zf);
+  const c = (a, b, d) => hash3(xi + a, yi + b, zi + d);
+  return lerp(lerp(lerp(c(0, 0, 0), c(1, 0, 0), u), lerp(c(0, 1, 0), c(1, 1, 0), u), v), lerp(lerp(c(0, 0, 1), c(1, 0, 1), u), lerp(c(0, 1, 1), c(1, 1, 1), u), v), w);
+}
+const fbm3 = (x, y, z, o = 4) => { let s = 0, a = .5, f = 1; for (let i = 0; i < o; i++) { s += a * vnoise(x * f, y * f, z * f); f *= 2.03; a *= .5; } return s; };
+// craters: a fixed list of bowls on the sphere, dark floors and bright rims, with a few bright ray systems
+const CRATERS = (() => { const R = rng(19), a = []; for (let i = 0; i < 260; i++) { const z = R() * 2 - 1, th = R() * TAU, s = Math.sqrt(1 - z * z); a.push([s * Math.cos(th), s * Math.sin(th), z, .015 + Math.pow(R(), 3) * .16]); } return a; })();
+function crater(p) { let k = 0; for (const [x, y, z, r] of CRATERS) { const d = Math.acos(clamp(p[0] * x + p[1] * y + p[2] * z, -1, 1)); if (d < r * 1.25) { const q = d / r; k += q < .85 ? -.16 * (1 - q * q) : q < 1.1 ? .14 : 0; } } return k; }
+// a belt or zone colour by latitude, blended over a degree or so at each edge: hard edges turn to stairs when a planet is drawn large
+const band = (lat, table) => { const i = Math.max(0, table.findIndex(([lo, hi]) => lat >= lo && lat < hi)), [lo, hi, c] = table[i], w = 1.1;
+  if (lat - lo < w && i > 0) return mixc(table[i - 1][2], c, .5 + .5 * (lat - lo) / w); if (hi - lat < w && i < table.length - 1) return mixc(table[i + 1][2], c, .5 + .5 * (hi - lat) / w); return c; };
+const JUP = [[-90, -45, [168, 160, 150]], [-45, -33, [226, 214, 192]], [-33, -27, [176, 128, 96]], [-27, -19, [238, 228, 206]], [-19, -7, [168, 112, 78]], [-7, 7, [232, 216, 184]],
+  [7, 18, [154, 98, 68]], [18, 24, [236, 224, 200]], [24, 31, [170, 122, 90]], [31, 45, [222, 210, 188]], [45, 91, [164, 158, 150]]]; // belts and zones, after Cassini and Juno images
+const SAT = [[-90, -62, [196, 184, 150]], [-62, -40, [222, 202, 158]], [-40, -30, [206, 180, 130]], [-30, -20, [228, 208, 164]], [-20, -10, [214, 186, 134]], [-10, 10, [234, 214, 170]],
+  [10, 20, [212, 184, 132]], [20, 30, [228, 206, 160]], [30, 40, [204, 178, 128]], [40, 62, [220, 200, 158]], [62, 75, [196, 186, 156]], [75, 91, [150, 162, 172]]]; // the blue-grey hexagon at the north pole
+const PAINTS = {
+  mercury: (lon, lat, p) => { const n = fbm3(p[0] * 4, p[1] * 4, p[2] * 4), k = crater(p); const c = mixc([118, 112, 106], [178, 170, 160], n); return mixc(c, k < 0 ? [70, 66, 62] : [214, 206, 196], Math.min(1, Math.abs(k) * 2.2)); },
+  moon: (lon, lat, p) => { const n = fbm3(p[0] * 3, p[1] * 3, p[2] * 3), mare = fbm3(p[0] * 1.6 + 5, p[1] * 1.6, p[2] * 1.6) > .55 && p[0] > -.2, k = crater(p);
+    let c = mare ? mixc([84, 82, 80], [110, 108, 104], n) : mixc([150, 148, 142], [196, 194, 188], n); return mixc(c, k < 0 ? [70, 68, 66] : [226, 224, 218], Math.min(1, Math.abs(k) * 2)); },
+  venus: (lon, lat, p) => { const n = fbm3(p[0] * 2 + lat * 3, p[1] * 2, p[2] * 6); return mixc([214, 186, 132], [240, 222, 180], n); }, // sulphuric-acid cloud tops: pale and almost featureless in visible light
+  mars: (lon, lat, p) => { const n = fbm3(p[0] * 2.4, p[1] * 2.4, p[2] * 2.4), f = fbm3(p[0] * 9, p[1] * 9, p[2] * 9);
+    let c = mixc([196, 108, 64], [214, 140, 92], f); if (n > .53) c = mixc(c, [112, 66, 46], clamp((n - .53) * 6, 0, .85)); // dark regions such as Syrtis Major
+    const dl = lon * 180 / Math.PI, dp = lat * 180 / Math.PI; if (dp > -10 && dp < -3 && dl > -100 && dl < -40) c = mixc(c, [96, 56, 40], .55 * (1 - Math.abs(dp + 6.5) / 3.5)); // Valles Marineris
+    if (dp > 78 || dp < -83) c = mixc(c, [242, 240, 236], clamp((Math.abs(dp) - (dp > 0 ? 78 : 83)) / 3, 0, 1)); return c; },
+  jupiter: (lon, lat, p) => { const dp = lat * 180 / Math.PI + (fbm3(p[0] * 7, p[1] * 7, p[2] * 7) - .5) * 3.2 + Math.sin(lon * 9 + lat * 30) * .5;
+    let c = band(dp, JUP); c = mixc(c, mixc(c, WHITE, .25), fbm3(p[0] * 16, p[1] * 16, p[2] * 16) * .5);
+    c = mixc(c, mixc(c, [120, 80, 60], .5), Math.max(0, fbm3(p[0] * 45 + dp * .2, p[1] * 45, p[2] * 45, 3) - .5) * .9); // small eddies, seen up close
+    const gx = lon / (14.5 * Math.PI / 180) * 2, gy = (lat * 180 / Math.PI + 22.5) / 4.5, gd = gx * gx + gy * gy; // the Great Red Spot: 16,350 km x about 11,000 km, at 22.5° S (2017)
+    if (gd < 1.3) c = mixc(c, gd < 1 ? [222, 116, 80] : [240, 224, 204], gd < 1 ? .92 * (1 - gd * .35) : .7);
+    return c; },
+  saturn: (lon, lat, p) => { const dp = lat * 180 / Math.PI + (fbm3(p[0] * 5, p[1] * 5, p[2] * 5) - .5) * 2; let c = band(dp, SAT); return mixc(c, mixc(c, WHITE, .2), fbm3(p[0] * 12, p[1] * 12, p[2] * 12) * .4); },
+  uranus: (lon, lat, p) => { const dp = Math.abs(lat * 180 / Math.PI); return mixc([158, 212, 220], [190, 232, 236], clamp((dp - 20) / 60, 0, 1) * .8 + fbm3(p[0] * 3, p[1] * 3, p[2] * 3) * .15); },
+  neptune: (lon, lat, p) => { const dp = lat * 180 / Math.PI, n = fbm3(p[0] * 4, p[1] * 4 + dp * .05, p[2] * 4); let c = mixc([52, 92, 200], [76, 120, 222], n);
+    if (Math.abs(dp) > 18 && Math.abs(dp) < 50) c = mixc(c, [44, 80, 182], .4);
+    const streak = fbm3(lon * 1.5, dp * .35, 3); if ((Math.abs(dp + 24) < 4 || Math.abs(dp - 32) < 3) && streak > .58) c = mixc(c, [236, 242, 255], clamp((streak - .58) * 6, 0, .9)); return c; },
+};
+const TX = {};
+function buildTex(kind, fn, w = 512, h = 256) {
+  const d = new Uint8ClampedArray(w * h * 3);
+  for (let j = 0; j < h; j++) { const lat = (.5 - (j + .5) / h) * Math.PI, cl = Math.cos(lat), sl = Math.sin(lat);
+    for (let i = 0; i < w; i++) { const lon = ((i + .5) / w) * TAU - Math.PI, c = fn(lon, lat, [cl * Math.cos(lon), cl * Math.sin(lon), sl]), o = (j * w + i) * 3; d[o] = c[0]; d[o + 1] = c[1]; d[o + 2] = c[2]; } }
+  TX[kind] = { w, h, d };
+}
+// the Earth from the atlas's data: land and sea depth from the present-day height map (data/paleo/0.webp, PALEOMAP), land colour from today's
+// climate classes (data/paleo/climate-now.png, Beck et al. 2018), and clouds painted over the storm belts
+function pixels(url) { return fetch(url).then((r) => r.blob()).then((b) => createImageBitmap(b, { colorSpaceConversion: 'none' })).then((bm) => { const c = document.createElement('canvas'); c.width = bm.width; c.height = bm.height; const x = c.getContext('2d'); x.drawImage(bm, 0, 0); return { w: bm.width, h: bm.height, d: x.getImageData(0, 0, bm.width, bm.height).data }; }); }
+Promise.all([pixels('../../data/paleo/0.webp'), pixels('../../data/paleo/climate-now.png')]).then(([hm, cl]) => {
+  const at = (im, lon, lat) => { const i = clamp(Math.floor((lon / TAU + .5) * im.w), 0, im.w - 1), j = clamp(Math.floor((.5 - lat / Math.PI) * im.h), 0, im.h - 1); return (j * im.w + i) * 4; };
+  buildTex('earth', (lon, lat, p) => {
+    const e = hm.d[at(hm, lon, lat)]; let c;
+    if (e > 128) { const k = at(cl, lon, lat); c = [cl.d[k], cl.d[k + 1], cl.d[k + 2]]; if (lat < -1.1) c = [236, 240, 244]; }
+    else c = mixc([8, 30, 82], [30, 84, 150], Math.pow(e / 127, 2.2));
+    const dp = Math.abs(lat * 180 / Math.PI), belt = Math.exp(-dp * dp / 40) * .5 + Math.exp(-Math.pow(dp - 55, 2) / 180) * .6 + .15;
+    const cloud = clamp((fbm3(p[0] * 3.5, p[1] * 3.5, p[2] * 3.5, 5) - .62 + belt * .25) * 3.2, 0, .85);
+    return mixc(c, [250, 252, 255], cloud);
+  }, 1024, 512);
+}).catch(() => {});
+const SPH = new Map();
+function sphereImg(kind, D, spin) {
+  if (!TX[kind]) { if (!PAINTS[kind]) return null; buildTex(kind, PAINTS[kind]); }
+  D = Math.round(D); const big = D >= 360 && PAINTS[kind]; D = Math.max(6, Math.min(big ? 900 : 560, D));
+  const key = kind + D + '|' + Math.round(spin * 300);
+  if (SPH.has(key)) return SPH.get(key);
+  const direct = big ? PAINTS[kind] : null; // drawn large, a planet is painted point by point (sharper): its map would show its pixels
+  const tx = TX[kind], c = document.createElement('canvas'); c.width = c.height = D; const x = c.getContext('2d'), im = x.createImageData(D, D), o = im.data, R = D / 2;
+  const [rl, nd] = ORI[kind] || [0, 0], tl = rl * Math.PI / 180, ct = Math.cos(tl), st = Math.sin(tl), cn = Math.cos(nd * Math.PI / 180), sn = Math.sin(nd * Math.PI / 180), gas = GAS[kind];
+  const L = [-.74, .36, .57], Ln = Math.hypot(...L), l0 = L[0] / Ln, l1 = L[1] / Ln, l2 = L[2] / Ln;
+  for (let py = 0; py < D; py++) for (let px = 0; px < D; px++) {
+    const nx = (px + .5 - R) / R, ny = (R - py - .5) / R, rr = nx * nx + ny * ny; if (rr > 1) continue;
+    const nz = Math.sqrt(1 - rr), ax = nx * ct - ny * st, ay0 = nx * st + ny * ct; // the axis leans across the picture, then tips towards us
+    const ay = ay0 * cn + nz * sn, az = nz * cn - ay0 * sn, lat = Math.asin(clamp(ay, -1, 1)), lon = Math.atan2(ax, az) + spin;
+    let cr, cg, cb;
+    if (direct) { const L2 = lon - TAU * Math.round(lon / TAU), cl = Math.cos(lat), c = direct(L2, lat, [cl * Math.cos(L2), cl * Math.sin(L2), Math.sin(lat)]); cr = c[0]; cg = c[1]; cb = c[2]; }
+    else { const u = (((lon / TAU + .5) % 1) + 1) % 1, v = .5 - lat / Math.PI, ti = (Math.min(tx.h - 1, Math.floor(v * tx.h)) * tx.w + Math.min(tx.w - 1, Math.floor(u * tx.w))) * 3; cr = tx.d[ti]; cg = tx.d[ti + 1]; cb = tx.d[ti + 2]; }
+    const dif = Math.max(0, nx * l0 + ny * l1 + nz * l2), lit = (.035 + .965 * Math.pow(dif, gas ? .8 : 1)) * (gas ? .6 + .4 * Math.sqrt(nz) : 1);
+    const a = clamp((1 - Math.sqrt(rr)) * R * 1.6, 0, 1), k = (py * D + px) * 4;
+    o[k] = cr * lit; o[k + 1] = cg * lit; o[k + 2] = cb * lit; o[k + 3] = 255 * a;
+  }
+  x.putImageData(im, 0, 0);
+  if (SPH.size > 80) SPH.clear(); SPH.set(key, c); return c;
+}
 function planet(x, y, r, kind, t = 0, o = {}) {
   const L = LOOK[kind] || LOOK.rock;
   if (r < 1.4) { disc(x, y, Math.max(.8, r), rgba(mixc(L.base, WHITE, .3))); glow(x, y, 5, L.base, .5); return; }
+  if (PAINTS[kind] || kind === 'earth') { // the real look, once its map is ready (the Earth's needs two images to load)
+    const img = sphereImg(kind, 2 * r * Math.min(DPR, 2), o.spin ?? t * SPIN[kind]);
+    if (img) {
+      if (o.ringsBack) o.ringsBack();
+      g.drawImage(img, x - r, y - r, 2 * r, 2 * r);
+      if (kind === 'earth' || kind === 'venus' || kind === 'neptune' || kind === 'uranus') { g.beginPath(); g.arc(x, y, r * 1.012, -2.2, .9); g.strokeStyle = rgba(kind === 'earth' ? [120, 180, 255] : kind === 'venus' ? [255, 236, 200] : [170, 210, 255], .45); g.lineWidth = Math.max(1, r * .025); g.stroke(); }
+      if (o.ringsFront) o.ringsFront();
+      return;
+    }
+  }
   if (o.ringsBack) o.ringsBack();
   g.save(); g.beginPath(); g.arc(x, y, r, 0, TAU); g.clip();
   g.fillStyle = rgba(L.base); g.fillRect(x - r, y - r, 2 * r, 2 * r);
@@ -121,9 +222,10 @@ function planet(x, y, r, kind, t = 0, o = {}) {
 }
 // Saturn's rings as ellipses, the half behind the planet drawn first; radii in planet radii (C ring 1.24 to A ring 2.27)
 function saturnRings(x, y, r, tilt = .3, t = 0) {
+  tilt = Math.sin(ORI.saturn[1] * Math.PI / 180); const rot = ORI.saturn[0] * Math.PI / 180; // the same orientation as the planet's bands
   const draw = (front) => {
-    g.save(); g.beginPath(); if (front) g.rect(x - r * 3, y, r * 6, r * 3); else g.rect(x - r * 3, y - r * 3, r * 6, r * 3); g.clip();
-    const bands = [[1.24, 1.53, .25, [176, 160, 130]], [1.53, 1.95, .85, [228, 212, 176]], [2.03, 2.27, .65, [210, 194, 160]]];
+    g.save(); g.translate(x, y); g.rotate(rot); g.translate(-x, -y); g.beginPath(); if (front) g.rect(x - r * 3, y, r * 6, r * 3); else g.rect(x - r * 3, y - r * 3, r * 6, r * 3); g.clip();
+    const bands = [[1.24, 1.53, .22, [150, 136, 112]], [1.53, 1.95, .88, [230, 214, 178]], [2.03, 2.2, .66, [208, 192, 158]], [2.215, 2.27, .55, [204, 188, 154]]]; // C ring, B ring, Cassini division, A ring, Encke gap
     for (const [a, b, al, c] of bands) for (let k = 0; k < 10; k++) {
       const rr = r * lerp(a, b, (k + .5) / 10);
       g.beginPath(); g.ellipse(x, y, rr, rr * tilt, 0, 0, TAU); g.strokeStyle = rgba(c, al * (.65 + .35 * Math.sin(k * 2.3 + a * 9))); g.lineWidth = r * (b - a) / 10 * 1.1; g.stroke();
@@ -213,14 +315,15 @@ const halfW = (n) => n === 'Saturn' ? KM.Saturn * 2.27 : KM[n];
 function layout(names, s) { let x = 0; const pos = {}; names.forEach((n, i) => { const r = halfW(n) * s; x += (i ? Math.max(14, r * .25) : 0) + r; pos[n] = x; x += r; }); return { pos, total: x }; }
 const fitScale = (names, width) => { let s = width / names.reduce((a, n) => a + halfW(n) * 2.25, 0); for (let i = 0; i < 4; i++) s *= width / layout(names, s).total; return s; };
 function lineup(v, names, s, off, t, pop, hl) {
-  const { pos } = layout(names, s);
+  const { pos } = layout(names, s); let lastX = -1e9, bump = false;
   names.forEach((n, i) => {
     const k = pop ? pop(n, i) : 1; if (k <= 0) return;
     const x = off + pos[n], r = KM[n] * s * easeO(k), y = v.cy;
     let o = {};
     if (n === 'Saturn') { const rg = saturnRings(x, y, r, .28, t); o = { ringsBack: rg.back, ringsFront: rg.front }; }
     planet(x, y, r, KIND[n], t + i * 3, o);
-    const ly = y + Math.max(r * (n === 'Saturn' ? .9 : 1), 3) + 22 + (r < 9 && i % 2 ? 15 : 0); // small neighbours take turns, so their names do not run together
+    const close = i > 0 && x - lastX < 70; lastX = x; bump = close ? !bump : false;
+    const ly = y + Math.max(r * (n === 'Saturn' ? .9 : 1), 3) + 22 + (bump ? 15 : 0); // close neighbours take turns, so their names do not run together
     label(x, ly, n, null, { a: clamp(k, 0, 1) * (hl && hl !== n ? .7 : 1), color: hl === n ? '#ffd27a' : '#f4efe6' });
   });
   return pos;
@@ -251,9 +354,9 @@ const S1 = {
       draw(v, t) {
         const R = v.h * 1.25, s = R / KM.Jupiter, jx = v.cx - R * .3, jy = v.cy - R * .37;
         g.save(); g.beginPath(); g.rect(v.x0 - 40, 0, v.W, v.H); g.clip();
-        planet(jx, jy, R, 'jupiter', t * .4, { lx: -.9, ly: -.1, night: .6 });
+        planet(jx, jy, R, 'jupiter', t * .4, { spin: -.2706 }); // turned so the Red Spot (22.5° S) faces us a little right of centre
         g.restore();
-        const gx = jx + R * .25, gy = jy + R * .37, a = 8175 * s, b = R * .07;
+        const gx = jx + R * .25, gy = jy + R * .383, a = 8175 * s * .96, b = R * .072;
         const k = ease((t - 1) / 2.5), ex = lerp(v.x1 - 6371 * s - 10, gx, k), ey = lerp(gy + b * 2.6, gy, k);
         ring(gx, gy, a, 'rgba(255,210,122,.8)', 1.5, [6, 5], b);
         planet(ex, ey, 6371 * s, 'earth', t, { night: .55 });
