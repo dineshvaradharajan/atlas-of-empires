@@ -410,7 +410,8 @@ async function init() {
   document.documentElement.dataset.homeYear = HOME_YEAR; // for the page that frames this one (index.html): the year the atlas opens on today
   const todayP = S.today ? ensureStory("w", S.today.war).catch(() => {}) : null; // the home card quotes today's event: fetched alongside the first map
   S.restoring = true;
-  await applyHash(parseHash(), true);
+  const asked = parseHash(); await applyHash(asked, true);
+  if (asked.search) { document.body.classList.add("searching"); $("#search").focus(); }
   if (todayP) { await todayP; renderCol(); }
   if (!phone() && !S.sel && !S.war && !S.journey && !S.moment && !S.site && S.t.k <= (S.homeT?.k || 1) * 1.01) d3.select(canvas).call(S.zoom.transform, homeT()); // open on the world beside the card
   setTimeout(() => (S.restoring = false), 0);
@@ -718,6 +719,7 @@ function parseHash() {
   const je = raw.match(/^e\/([^/]+)(?:\/(-?\d+))?$/);
   if (je) return { year: je[2] != null ? +je[2] : null, key: null, journey: je[1] };
   if (LISTS.has(raw) || raw === "about") return { year: null, key: null, list: raw === "about" ? "sources" : raw };
+  if (raw === "search") return { year: null, key: null, search: true }; // the home page with the search box open (the universe page's Search leads here)
   const m = raw.match(/^(-?\d+)(?:\/(.+))?$/);
   return m ? { year: +m[1], key: m[2] || null } : { year: null, key: null, bad: !!raw };
 }
@@ -4690,6 +4692,32 @@ function reignYears(text) { // "c. 2589 – 2566 BCE" → [-2589, -2566]; "27 BC
   if (/\b(BCE|BC)\b/.test(t)) { if (/\b(CE|AD)\b/.test(t)) ys[0] = -ys[0]; else for (let i = 0; i < ys.length; i++) ys[i] = -ys[i]; }
   return [ys[0], ys[ys.length - 1]];
 }
+// The universe film (public/universe/, its ten scenes in universe.js SCENES; #<n> opens scene n) and its stories (universe/stories/,
+// STORIES in stories.js). Keep the names in step with those files; "words" are extra terms a reader might type.
+const UNIVERSE = [
+  ["A quantum beginning", "13.8 billion years ago", "universe/#1", "big bang start origin quantum gravity"],
+  ["Space stretches", "10⁻³⁶ seconds after the Big Bang", "universe/#2", "inflation cosmic inflation big bang"],
+  ["A soup of quarks", "10⁻¹² seconds after the Big Bang", "universe/#3", "quark gluon plasma protons neutrons"],
+  ["The first nuclei", "3 to 20 minutes after the Big Bang", "universe/#4", "nucleosynthesis helium hydrogen"],
+  ["The first light", "380,000 years after the Big Bang", "universe/#5", "cosmic microwave background cmb recombination atoms"],
+  ["The dark ages", "Up to 200 million years after the Big Bang", "universe/#6", "dark matter cosmic web"],
+  ["The first stars", "About 200 million years after the Big Bang", "universe/#7", "population iii supernova carbon oxygen iron"],
+  ["The first galaxies", "About 290 million years after the Big Bang", "universe/#8", "reionization james webb jwst"],
+  ["Our galaxy takes shape", "From about 3.8 billion years after the Big Bang", "universe/#9", "milky way gaia enceladus sagittarius"],
+  ["The Sun and the Earth", "4.57 billion years ago", "universe/#10", "solar system sun birth protoplanetary disc planets formation"],
+  ["The Earth among the planets", "Universe story", "universe/stories/#planets/1", "planet sizes mercury venus mars jupiter saturn uranus neptune pluto", 1],
+  ["The Sun among the stars", "Universe story", "universe/stories/#stars/1", "star sizes betelgeuse sirius red giant dwarf supergiant", 1],
+  ["The nearest stars", "Universe story", "universe/stories/#nearest-stars/1", "proxima centauri alpha centauri barnard light years neighbours", 1],
+  ["The nearest galaxies", "Universe story", "universe/stories/#nearest-galaxies/1", "andromeda magellanic clouds local group triangulum", 1],
+  ["How big is the universe?", "Universe story", "universe/stories/#how-big/1", "size of the universe number of stars galaxies observable light year", 1],
+  ["The curious case of exoplanets", "Universe story", "universe/stories/#exoplanets/1", "exoplanet trappist kepler hot jupiter habitable zone", 1],
+].map(([name, when, href, words, story]) => ({ name, when, href, words, story: !!story }));
+const EARTH_JOIN = (2026 + 10000) / 1e6; // million years ago: where the Earth's side ends and World history (10,000 BCE) begins, as JOIN in one/one.js
+// The Earth's side belongs to the home page above this frame (one/one.js): there it opens at once; opened on its own, this page goes there.
+function toEarth(ma, story) {
+  try { if (parent !== window && parent.enterDeep && parent.storyStart) { if (story) parent.storyStart(story); else parent.enterDeep(Math.max(ma, EARTH_JOIN)); return; } } catch (e) { /* a page of another origin above */ }
+  location.href = "/#earth/" + (story ? `s/${encodeURIComponent(story)}/1` : +ma.toPrecision(4));
+}
 function setupSearch() {
   const input = $("#search"), list = $("#results");
   const all = Object.entries(S.clio.realms).filter(([k]) => !NOT_A_REALM.test(k)).map(([key, r]) => ({
@@ -4713,11 +4741,26 @@ function setupSearch() {
       if (clio) all.push({ key: `ruler:${clio}@${ys ? ys[0] : ""}`, name: x.name, raw: e.name, from: ys?.[0], to: ys?.[1], when: x.reign, kind: "Ruler", area: 0 });
     }
   }
+  // Beyond World history, the rest of the one timeline: the universe film and its stories (UNIVERSE), and the Earth's side, its periods,
+  // events, first appearances and stories (data/earth-history.json, fetched on the first search, and shared with the page above).
+  for (const u of UNIVERSE) all.push({ key: "uni:" + u.href, name: u.name, raw: u.words || "", when: u.when, kind: u.story ? "Universe story" : "Universe", side: "universe", area: 1e9, emp: false });
+  let deep = null;
+  const deepLoad = () => deep || (deep = fetchJSON("data/earth-history.json").then((d) => {
+    const parts = (ma) => ma >= 1000 ? [+(ma / 1000).toFixed(2), "billion years ago"] : ma >= 1 ? [+ma.toFixed(ma < 10 ? 1 : 0), "million years ago"] : [Math.round(ma * 1e6).toLocaleString("en-GB"), "years ago"];
+    const at = (ma) => parts(ma).join(" ");
+    const span = (a, b) => { if (b < EARTH_JOIN) return `${at(a).replace(" ago", "")} ago to today`; const [x, u] = parts(a), [y, v] = parts(b); return u === v ? `${x} to ${y} ${u}` : `${x} ${u.replace(" years ago", "")} to ${y} ${v}`; };
+    const add = (key, name, raw, when, kind, area) => all.push({ key, name, raw: raw || "", when, kind, side: "earth", area, emp: false });
+    for (const u of d.units || []) add(`earth:${(u.from + u.to) / 2}`, u.name, u.tagline, `${u.rank ? u.rank[0].toUpperCase() + u.rank.slice(1) + ", " : ""}${span(u.from, u.to)}`, "Period", 3e9);
+    for (const st of d.stories || []) add(`estory:${st.id}`, st.title, st.summary, `Earth story · ${span(st.from, st.to)}`, "Earth story", 4e9);
+    for (const o of d.origins || []) { const ma = o.fossilMa ?? o.claimMa; if (ma > EARTH_JOIN) add(`earth:${ma}`, o.name, [o.sci, o.oldest?.name].filter(Boolean).join(" "), `First appear, ${o.dateLabel || at(ma)}`, "First", 1e8); }
+    for (const e of d.events || []) if (e.ma > EARTH_JOIN) add(`earth:${e.ma}`, e.title, e.place || "", e.dateLabel || at(e.ma), "Earth event", 2e8);
+    if (input.value.trim()) render();
+  }).catch(() => { deep = null; }));
   let active = 0, shown = [];
-  const GROUPS = [["year", "Go to a year", 1], ["realm", "Empires and countries", 5], ["place", "Places", 3], ["story", "Stories", 5], ["Ruler", "Rulers", 3], ["event", "Battles and events", 3]];
-  const groupOf = (e) => (e.kind === "Year" ? "year" : !e.kind ? "realm" : e.site ? "place" : e.kind === "Empire" || e.kind === "War" || e.kind === "Moment" ? "story" : e.kind === "Ruler" ? "Ruler" : "event");
-  const mark = (e) => !e.kind ? `<span class="mk"><i style="background:${colorOf(e.key)}"></i></span>` : `<span class="mk">${e.site ? I.pin : e.kind === "War" || e.kind === "Battle" ? I.sword : e.kind === "Empire" ? I.book : e.kind === "Ruler" ? I.crown : e.kind === "Year" ? I.globe : I.today}</span>`;
-  const meta = (e) => e.legend ? "Legend · not proven" : e.kind === "Empire" ? "Empire story" : e.kind === "War" ? `War story · ${shortYear(e.from)} to ${shortYear(e.to)}` : e.kind === "Moment" ? `Moment, ${esc(e.when || shortYear(e.from))}` : e.kind === "Year" ? "The world that year"
+  const GROUPS = [["year", "Go to a year", 1], ["realm", "Empires and countries", 5], ["place", "Places", 3], ["story", "Stories", 5], ["earth", "The Earth", 4], ["universe", "The universe", 3], ["Ruler", "Rulers", 3], ["event", "Battles and events", 3]];
+  const groupOf = (e) => (e.side ? e.side : e.kind === "Year" ? "year" : !e.kind ? "realm" : e.site ? "place" : e.kind === "Empire" || e.kind === "War" || e.kind === "Moment" ? "story" : e.kind === "Ruler" ? "Ruler" : "event");
+  const mark = (e) => !e.kind ? `<span class="mk"><i style="background:${colorOf(e.key)}"></i></span>` : `<span class="mk">${e.side === "universe" ? I.star : e.side === "earth" ? I.globe : e.site ? I.pin : e.kind === "War" || e.kind === "Battle" ? I.sword : e.kind === "Empire" ? I.book : e.kind === "Ruler" ? I.crown : e.kind === "Year" ? I.globe : I.today}</span>`;
+  const meta = (e) => e.side ? esc(e.when || "") : e.legend ? "Legend · not proven" : e.kind === "Empire" ? "Empire story" : e.kind === "War" ? `War story · ${shortYear(e.from)} to ${shortYear(e.to)}` : e.kind === "Moment" ? `Moment, ${esc(e.when || shortYear(e.from))}` : e.kind === "Year" ? "The world that year"
     : e.when ? esc(e.when) : e.from == null ? "" : e.from === e.to ? shortYear(e.from) : rangeText(e.from, e.to);
   const render = () => {
     const q = input.value.trim().toLowerCase();
@@ -4733,7 +4776,7 @@ function setupSearch() {
       const items = pool.filter((e) => groupOf(e) === g).slice(0, n);
       if (!items.length) continue;
       h += `<div class="grp">${title}</div>`;
-      for (const e of items) { const i = shown.length; shown.push(e); h += `<div class="res${i ? "" : " active"}" role="option" data-k="${esc(e.key)}">${mark(e)}<span class="nm">${esc(e.name)}${e.raw && e.kind && e.kind !== "Moment" ? ` <small>· ${esc(e.raw)}</small>` : ""}</span><span class="meta">${meta(e)}</span>${i ? "" : `<span class="enter">Enter</span>`}</div>`; }
+      for (const e of items) { const i = shown.length; shown.push(e); h += `<div class="res${i ? "" : " active"}" role="option" data-k="${esc(e.key)}">${mark(e)}<span class="nm">${esc(e.name)}${e.raw && e.kind && e.kind !== "Moment" && !e.side ? ` <small>· ${esc(e.raw)}</small>` : ""}</span><span class="meta">${meta(e)}</span>${i ? "" : `<span class="enter">Enter</span>`}</div>`; }
     }
     active = 0;
     list.innerHTML = shown.length ? h + `<div class="foot"><span>Type a year, such as 1857, to jump straight to it.</span><span>Enter to open</span></div>` : `<p class="none">Nothing matches “${esc(input.value.trim())}”. Try a year, such as 1857.</p>`;
@@ -4743,6 +4786,9 @@ function setupSearch() {
     list.hidden = true; input.value = ""; input.blur(); document.body.classList.remove("searching");
     const [kind, rest] = [key.slice(0, key.indexOf(":")), key.slice(key.indexOf(":") + 1)];
     if (kind === "year") return leaveToWorld(+rest);
+    if (kind === "earth") return toEarth(+rest);
+    if (kind === "estory") return toEarth(null, rest);
+    if (kind === "uni") { try { top.location.href = "/" + rest; } catch (e) { location.href = "/" + rest; } return; }
     if (kind === "site") return openSite(rest);
     if (kind === "journey") { S.from = null; return openJourney(rest); }
     if (kind === "moment") { S.from = null; return openMoment(rest); }
@@ -4751,8 +4797,8 @@ function setupSearch() {
     if (kind === "ruler") { const at = rest.lastIndexOf("@"), k = rest.slice(0, at), y = rest.slice(at + 1); return jumpTo(k, y ? +y : bestYear(k)); }
     jumpTo(key, bestYear(key));
   };
-  input.addEventListener("input", render);
-  input.addEventListener("focus", () => { if (phone()) document.body.classList.add("searching"); render(); });
+  input.addEventListener("input", () => { deepLoad(); render(); });
+  input.addEventListener("focus", () => { deepLoad(); if (phone()) document.body.classList.add("searching"); render(); });
   input.addEventListener("keydown", (ev) => {
     if (ev.key === "Escape") { input.value = ""; render(); input.blur(); document.body.classList.remove("searching"); return; }
     if (list.hidden || !shown.length) return;

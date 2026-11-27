@@ -1,12 +1,12 @@
 {
- "about": "Spoken commentary for the universe film (public/universe/): one line per cue, played when the film reaches its scene's start plus 'at' seconds. Written for beginners; every claim follows the scene cards and their sources. tools/narration.py records the files (engine 'say' or 'elevenlabs') and fills in 'dur' (seconds).",
+ "about": "Spoken commentary for the universe film (public/universe/), written to be heard: a narrator telling the story to a beginner. The lines of each scene play one after another with short pauses; while narration is on, the film slows each scene just enough for its lines (universe.js, narrPlan). Every claim follows the scene cards and their sources. tools/narration.py records the files (engine 'say' or 'elevenlabs') and fills in 'dur' (seconds).",
  "voice": "George",
  "engine": "elevenlabs",
  "model": "eleven_multilingual_v2",
  "settings": {
-  "stability": 0.55,
+  "stability": 0.45,
   "similarity_boost": 0.75,
-  "style": 0.15,
+  "style": 0.25,
   "use_speaker_boost": true,
   "speed": 0.95
  },
@@ -14,185 +14,225 @@
  "cues": [
   {
    "scene": 0,
-   "at": 0,
-   "text": "Thirteen point eight billion years ago, everything began.",
-   "file": "01-a94f57d944.m4a",
-   "dur": 3.89
-  },
-  {
-   "scene": 0,
-   "at": 4,
-   "text": "Here we reach the very edge of what science can explain.",
-   "file": "02-a962bf1f88.m4a",
-   "dur": 3.53
-  },
-  {
-   "scene": 1,
-   "at": 0,
-   "text": "Then, in a tiny fraction of a second, space may have stretched enormously.",
-   "file": "03-db6d3fae36.m4a",
-   "dur": 4.68
-  },
-  {
-   "scene": 1,
-   "at": 5.0,
-   "text": "Watch the three gaps grow together, like dots on a balloon being blown up.",
-   "file": "04-b5726c8000.m4a",
-   "dur": 4.6
-  },
-  {
-   "scene": 1,
-   "at": 11,
-   "text": "And then it stops.",
-   "file": "05-30ef79e559.m4a",
-   "dur": 1.7
-  },
-  {
-   "scene": 2,
-   "at": 0,
-   "text": "The young universe is hotter than the centre of any star: a boiling soup of tiny particles called quarks.",
-   "file": "06-405e9ea857.m4a",
-   "dur": 7.0
-  },
-  {
-   "scene": 2,
-   "at": 8,
-   "text": "As it cools, they clump into protons and neutrons.",
-   "file": "07-d4a591d068.m4a",
-   "dur": 3.42
-  },
-  {
-   "scene": 3,
-   "at": 0,
-   "text": "Three minutes in, the whole universe is like one giant furnace.",
-   "file": "08-2c3ec51d43.m4a",
-   "dur": 4.0
-  },
-  {
-   "scene": 3,
-   "at": 4.1,
-   "text": "Protons and neutrons fuse. Each flash is a new helium nucleus.",
-   "file": "09-8c160a52ea.m4a",
-   "dur": 4.83
-  },
-  {
-   "scene": 3,
-   "at": 9.0,
-   "text": "Twenty minutes later: three quarters hydrogen, one quarter helium.",
-   "file": "10-7433cd1943.m4a",
-   "dur": 4.18
-  },
-  {
-   "scene": 4,
-   "at": 0.4,
-   "text": "For three hundred and eighty thousand years, space is a glowing fog that light can't cross.",
-   "file": "11-c0cec64514.m4a",
-   "dur": 5.67
-  },
-  {
-   "scene": 4,
-   "at": 7,
-   "text": "Then the fog clears. That first light still reaches us today, from every direction.",
-   "file": "12-7d5e243af2.m4a",
-   "dur": 5.88
-  },
-  {
-   "scene": 5,
-   "at": 0,
-   "text": "Now comes a long darkness. No stars, nothing shining.",
-   "file": "13-54a61a1964.m4a",
-   "dur": 4.44
-  },
-  {
-   "scene": 5,
-   "at": 4.6,
-   "text": "But gravity is quietly at work, pulling gas and invisible dark matter into a vast web.",
-   "file": "14-5526fb7915.m4a",
-   "dur": 6.09
-  },
-  {
-   "scene": 6,
-   "at": 0,
-   "text": "About two hundred million years in, the first stars switch on in the knots of that web.",
-   "file": "15-57edd48e9c.m4a",
-   "dur": 5.46
-  },
-  {
-   "scene": 6,
-   "at": 6,
-   "text": "They were probably giants, and they died young: their explosions made the first carbon, oxygen and iron.",
-   "file": "16-ed652c642b.m4a",
-   "dur": 7.05
-  },
-  {
-   "scene": 7,
-   "at": 0.3,
-   "text": "Stars gather into galaxies, and their light clears the haze, bubble by bubble.",
-   "file": "17-8e82226d70.m4a",
+   "text": "Let's go back to the very beginning, about thirteen point eight billion years ago.",
+   "file": "01-4aba56ba13.m4a",
    "dur": 5.02
   },
   {
-   "scene": 7,
-   "at": 5.4,
-   "text": "The James Webb telescope has seen galaxies this old.",
-   "file": "18-fb30afc117.m4a",
-   "dur": 3.42
+   "scene": 0,
+   "text": "Some scientists think that, right at the start, even space and time didn't exist the way we know them.",
+   "file": "02-8571a25f66.m4a",
+   "dur": 6.03
   },
   {
-   "scene": 7,
-   "at": 9,
-   "text": "One of them will grow into our own.",
-   "file": "19-ee2f1575e5.m4a",
-   "dur": 2.32
+   "scene": 0,
+   "text": "Honestly, nobody's sure what happened here. This is the very edge of what science can explain.",
+   "file": "03-faba40902e.m4a",
+   "dur": 5.8
   },
   {
-   "scene": 8,
-   "at": 0,
-   "text": "Billions of years pass. Our galaxy, the Milky Way, grows by making stars and swallowing smaller galaxies.",
-   "file": "20-784febbf62.m4a",
-   "dur": 7.94
+   "scene": 1,
+   "text": "Then, in far less than the blink of an eye, space itself may have stretched, enormously.",
+   "file": "04-c586daf7ad.m4a",
+   "dur": 5.67
   },
   {
-   "scene": 8,
-   "at": 8.1,
-   "text": "The faint trail is one it swallowed.",
-   "file": "21-efad48bf66.m4a",
-   "dur": 2.22
+   "scene": 1,
+   "text": "Imagine dots drawn on a balloon. As you blow it up, every dot moves away from every other.",
+   "file": "05-f07e606a2b.m4a",
+   "dur": 6.22
   },
   {
-   "scene": 8,
-   "at": 10.4,
-   "text": "The dashed ring shows where our Sun circles today.",
-   "file": "22-9cad64fe64.m4a",
+   "scene": 1,
+   "text": "Watch these three gaps: they grow together, just like that.",
+   "file": "06-e3e027c5b4.m4a",
    "dur": 3.6
   },
   {
-   "scene": 9,
-   "at": 0.2,
-   "text": "Four and a half billion years ago, a cloud of gas and dust collapses, and our Sun is born.",
-   "file": "23-9e7fa58dc7.m4a",
-   "dur": 6.27
+   "scene": 1,
+   "text": "And then, as suddenly as it began, the stretching stops.",
+   "file": "07-141880b6fa.m4a",
+   "dur": 3.34
   },
   {
-   "scene": 9,
-   "at": 7,
-   "text": "Around it, dust clumps into rocks, and rocks into planets.",
-   "file": "24-3af243ce9d.m4a",
-   "dur": 4.36
+   "scene": 2,
+   "text": "What's left is unimaginably hot, far hotter than the centre of any star.",
+   "file": "08-8e49eff805.m4a",
+   "dur": 4.96
   },
   {
-   "scene": 9,
-   "at": 11.5,
-   "text": "One of them is the Earth: hot, molten, and still being hit by leftover rock.",
-   "file": "25-3ee49fc303.m4a",
+   "scene": 2,
+   "text": "Everything is a boiling soup of tiny particles called quarks, zipping around freely.",
+   "file": "09-ba8d4b3689.m4a",
    "dur": 5.62
   },
   {
+   "scene": 2,
+   "text": "But the universe is cooling fast. Within about ten millionths of a second, the quarks huddle together in threes.",
+   "file": "10-69150eb088.m4a",
+   "dur": 7.11
+  },
+  {
+   "scene": 2,
+   "text": "They form protons and neutrons, the building blocks of every atom.",
+   "file": "11-054465ff39.m4a",
+   "dur": 4.44
+  },
+  {
+   "scene": 3,
+   "text": "About three minutes in, the whole universe works like a giant nuclear furnace.",
+   "file": "12-7b41922e11.m4a",
+   "dur": 4.91
+  },
+  {
+   "scene": 3,
+   "text": "Protons and neutrons slam together and stick. Every flash you see is a new helium nucleus being born.",
+   "file": "13-e4e37f463c.m4a",
+   "dur": 7.37
+  },
+  {
+   "scene": 3,
+   "text": "By around twenty minutes, it's all over.",
+   "file": "14-83f6b8f6cf.m4a",
+   "dur": 2.87
+  },
+  {
+   "scene": 3,
+   "text": "The mix is set: about three quarters hydrogen and one quarter helium, the same mix we still find in the oldest clouds of gas today.",
+   "file": "15-6af389a586.m4a",
+   "dur": 9.01
+  },
+  {
+   "scene": 4,
+   "text": "For the next three hundred and eighty thousand years, space is filled with a glowing fog, so thick that light can't get through.",
+   "file": "16-ed63375a06.m4a",
+   "dur": 7.47
+  },
+  {
+   "scene": 4,
+   "text": "Then it cools enough for atoms to form, and the fog finally clears.",
+   "file": "17-b3fe4d5ad2.m4a",
+   "dur": 4.44
+  },
+  {
+   "scene": 4,
+   "text": "Light streams out in every direction, for the very first time.",
+   "file": "18-3aa5df0ab1.m4a",
+   "dur": 4.36
+  },
+  {
+   "scene": 4,
+   "text": "And here's the amazing part: that same ancient light is still reaching us today, from every direction in the sky.",
+   "file": "19-7f745a1a4a.m4a",
+   "dur": 7.78
+  },
+  {
+   "scene": 5,
+   "text": "After that comes a long, dark stretch. There are no stars yet, nothing shining at all.",
+   "file": "20-cc06154cfa.m4a",
+   "dur": 6.03
+  },
+  {
+   "scene": 5,
+   "text": "But in the darkness, gravity is busy.",
+   "file": "21-fd90aa7864.m4a",
+   "dur": 2.4
+  },
+  {
+   "scene": 5,
+   "text": "It slowly pulls gas, and invisible dark matter, into long strands and clumps, like a giant cosmic spider web.",
+   "file": "22-5edb323fc6.m4a",
+   "dur": 7.65
+  },
+  {
+   "scene": 6,
+   "text": "About two hundred million years in, where those strands meet, the first stars switch on.",
+   "file": "23-f73ebc6518.m4a",
+   "dur": 5.67
+  },
+  {
+   "scene": 6,
+   "text": "They were probably giants, much bigger than our Sun, and they burned out in just a few million years.",
+   "file": "24-a02933da05.m4a",
+   "dur": 6.11
+  },
+  {
+   "scene": 6,
+   "text": "When they exploded, they made the first carbon, oxygen and iron.",
+   "file": "25-a7d8952872.m4a",
+   "dur": 4.44
+  },
+  {
+   "scene": 6,
+   "text": "That was the start of the atoms that, much later, would build planets, and people like you.",
+   "file": "26-9c1b78385a.m4a",
+   "dur": 5.88
+  },
+  {
+   "scene": 7,
+   "text": "Next, stars gather into galaxies, and their light clears away the haze around them, bubble by bubble.",
+   "file": "27-aabcbd27d0.m4a",
+   "dur": 6.71
+  },
+  {
+   "scene": 7,
+   "text": "The James Webb Space Telescope has actually seen galaxies this old.",
+   "file": "28-0f30594563.m4a",
+   "dur": 4.55
+  },
+  {
+   "scene": 7,
+   "text": "And one young galaxy, just like these, would grow up to become our own.",
+   "file": "29-dd17f903a6.m4a",
+   "dur": 5.09
+  },
+  {
+   "scene": 8,
+   "text": "Billions of years pass, and our galaxy, the Milky Way, keeps growing.",
+   "file": "30-11be2c08dd.m4a",
+   "dur": 4.83
+  },
+  {
+   "scene": 8,
+   "text": "It makes new stars, and it swallows smaller galaxies that wander too close.",
+   "file": "31-62632dcc4c.m4a",
+   "dur": 4.96
+  },
+  {
+   "scene": 8,
+   "text": "That faint trail of stars is one of them, still on the move today.",
+   "file": "32-4d3cf7aa7d.m4a",
+   "dur": 4.21
+  },
+  {
+   "scene": 8,
+   "text": "And the dashed ring shows where our Sun travels around the galaxy now.",
+   "file": "33-b5efd54743.m4a",
+   "dur": 4.02
+  },
+  {
+   "scene": 9,
+   "text": "Finally, about four and a half billion years ago, a cloud of gas and dust collapses, and right at its centre, our Sun is born.",
+   "file": "34-b9dfb6f0cd.m4a",
+   "dur": 8.12
+  },
+  {
+   "scene": 9,
+   "text": "Around it, a spinning disc of dust slowly clumps into pebbles, then rocks, then whole planets.",
+   "file": "35-91ea748c79.m4a",
+   "dur": 6.82
+  },
+  {
+   "scene": 9,
+   "text": "One of them is the Earth: hot, glowing and molten, and still being hit by leftover rock.",
+   "file": "36-9aee29e15d.m4a",
+   "dur": 6.03
+  },
+  {
    "scene": "end",
-   "at": 0,
-   "text": "And so our home begins its story.",
-   "file": "26-c492d5260a.m4a",
-   "dur": 2.27
+   "text": "And that's where our home's own story begins.",
+   "file": "37-10b27cd95e.m4a",
+   "dur": 2.87
   }
  ]
 }

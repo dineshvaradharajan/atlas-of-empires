@@ -751,7 +751,7 @@ function frame(now){
   const dt=Math.min(.25,(now-last)/1000); last=now;
   const live=!started||playing||ended;
   if(live) G+=dt;
-  if(playing){T+=dt;if(STORY&&T>=STORY.hold){T=STORY.hold;setPlaying(false);}if(T>=TOTAL){T=TOTAL;finish();}} // in a story the film pauses at each chapter's moment
+  if(playing){T+=dt*(narrHeard()?NARR.rate[locate(T)]:1);if(STORY&&T>=STORY.hold){T=STORY.hold;setPlaying(false);}if(T>=TOTAL){T=TOTAL;finish();}} // in a story the film pauses at each chapter's moment
   if(ended) tail+=dt;
   size();
   if(live||dirty){
@@ -773,7 +773,7 @@ function frame(now){
   }
   if(!started){
     const ok0=ready(progs[0])&&ready(comp);
-    if(ok0&&!/^#s\//.test(location.hash))begin(); // straight into the film as soon as its first scene is ready (a story link starts at its chapter instead)
+    if(ok0&&!/^#s\//.test(location.hash)){const sc=/^#(\d{1,2})$/.exec(location.hash);if(sc){T=START[clamp(+sc[1],1,N)-1];history.replaceState(null,'',location.pathname);}begin();} // #3: straight to the third scene (the atlas's search links here) // straight into the film as soon as its first scene is ready (a story link starts at its chapter instead)
   }
   progs.forEach(ready); // collect finished compiles as they land
   requestAnimationFrame(frame);
@@ -961,42 +961,79 @@ document.addEventListener('visibilitychange',()=>{last=performance.now();});
 cv.addEventListener('webglcontextlost',e=>{e.preventDefault();});
 
 /* ---------------------------------------------------------------- narration: a spoken commentary for beginners (narration/narration.json,
-   recorded by tools/narration.py). Each line plays when the film reaches its scene's start plus its 'at' seconds, follows pause, play and
-   seeking (a line picked up halfway starts halfway), and shows as a subtitle while it is spoken. The last line plays over the closing slate.
-   Off until the reader turns it on, since browsers allow sound only after a click */
-const NARR={on:false,cues:[],audio:[],cur:-1};
-fetch('narration/narration.json').then(r=>r.json()).then(s=>{
-  NARR.cues=s.cues.map(c=>({...c,t:c.scene==='end'?TOTAL:START[c.scene]+c.at}));
-  $('nar').hidden=false;
-}).catch(()=>{});
-function narrSet(v){
-  NARR.on=v;$('nar').setAttribute('aria-pressed',String(v));document.body.classList.toggle('narrating',v);
-  if(v){
-    if(!NARR.audio.length)NARR.audio=NARR.cues.map(c=>{const a=new Audio('narration/'+c.file);a.preload='auto';return a;});
-    if(!started||ended){if(ended)T=0;begin();}else if(!playing)setPlaying(true);
-  }else{narrStop();}
-  dirty=true;
+   recorded by tools/narration.py). It plays with the film unless the reader mutes it (the speaker button or N; remembered on this browser).
+   A scene's lines are spoken one after another, like a person telling the story: a breath before the first, a short pause between them.
+   Spoken lines take longer than some scenes, so while the voice is heard the film runs each such scene more slowly (NARR.rate, film seconds
+   per real second) until its lines fit; muted, it keeps its own pace. The voice follows pause, play and seeking (a line picked up halfway
+   starts halfway). The last line plays over the closing slate.
+   Browsers allow sound only after the reader has clicked or tapped the page, and the film starts by itself, so the first line may be refused:
+   the film then runs at its own pace, the button shows the voice as off, and the next click or tap anywhere brings it in. One audio element
+   plays every line (Safari on a phone lets an element play once a tap has started it, not each new one); a second only fetches the next line */
+const NARR={on:true,blocked:false,cues:[],rate:SCENES.map(()=>1),el:new Audio(),warm:new Audio(),loaded:-1,lastX:0};
+NARR.el.preload='auto';NARR.warm.preload='auto';
+try{if(localStorage.getItem('universe.narration')==='off')NARR.on=false;}catch(e){/* storage can be blocked: the voice is then on */}
+const narrHeard=()=>NARR.on&&!NARR.blocked&&NARR.cues.length>0;
+function narrPlan(cues){ // real seconds: before a scene's first line, between lines, after its last; gaps grow up to GMAX where a scene has room
+  const LEAD=.5,GAP=.45,END=.7,GMAX=1.2;
+  for(let k=0;k<N;k++){
+    const mine=cues.filter(c=>c.scene===k);if(!mine.length)continue;
+    const speech=mine.reduce((a,c)=>a+c.dur,0), need=LEAD+speech+GAP*(mine.length-1)+END;
+    const gap=mine.length>1?Math.min(GMAX,GAP+Math.max(0,SCENES[k].dur-need)/mine.length):0;
+    const r=NARR.rate[k]=SCENES[k].dur/Math.max(SCENES[k].dur,LEAD+speech+gap*(mine.length-1)+END);
+    let o=LEAD;for(const c of mine){c.t=START[k]+o*r;c.win=c.dur*r;c.r=r;o+=c.dur+gap;}
+  }
+  for(const c of cues)if(c.scene==='end'){c.t=TOTAL+.6;c.win=c.dur;c.r=1;}
+  return cues;
 }
-function narrStop(){const a=NARR.audio[NARR.cur];if(a)a.pause();NARR.cur=-1;const sb=$('sub');sb.hidden=true;sb.textContent='';}
+function narrShow(){
+  const b=$('nar'),heard=NARR.on&&!NARR.blocked;
+  b.classList.toggle('off',!heard);b.classList.toggle('ask',NARR.on&&NARR.blocked);
+  b.setAttribute('aria-pressed',String(!heard));
+  b.setAttribute('aria-label',heard?'Mute the narration':'Play the narration');b.title=(heard?'Mute the narration':'Play the narration')+' (N)';
+}
+fetch('narration/narration.json').then(r=>r.json()).then(s=>{
+  if(!s.cues.every(c=>c.file&&c.dur))return; // a script edited but not yet recorded
+  NARR.cues=narrPlan(s.cues.map(c=>({...c})));
+  $('nar').hidden=false;narrShow();
+}).catch(()=>{});
+function narrCue(x){for(let i=0;i<NARR.cues.length;i++){const c=NARR.cues[i];if(x>=c.t&&x<c.t+c.win)return i;}return -1;}
+function narrPlay(){ // inside a click or tap this also unlocks the element for the rest of the visit
+  const p=NARR.el.play();
+  if(p&&p.catch)p.catch(e=>{if(e&&e.name==='NotAllowedError'&&!NARR.blocked){NARR.blocked=true;narrShow();}});
+}
+function narrSet(v){
+  NARR.on=v;NARR.blocked=false;
+  try{localStorage.setItem('universe.narration',v?'on':'off');}catch(e){/* remembered for this visit only */}
+  if(v){if(narrCue(ended?TOTAL+tail:T)>=0&&(playing||ended))narrPlay();}else NARR.el.pause();
+  narrShow();dirty=true;
+}
 function narrTick(){
-  if(NARR.on&&NARR.cues.length){
-    const x=ended?TOTAL+tail:T;
-    let k=-1;for(let i=0;i<NARR.cues.length;i++){const c=NARR.cues[i];if(x>=c.t&&x<c.t+c.dur){k=i;break;}}
-    if(k!==NARR.cur){const a=NARR.audio[NARR.cur];if(a)a.pause();NARR.cur=k;const sb=$('sub');sb.hidden=k<0;sb.textContent=k<0?'':NARR.cues[k].text;}
-    const a=NARR.audio[k];
-    if(a){
-      const want=x-NARR.cues[k].t;
-      if(playing||ended){
-        if(Math.abs(a.currentTime-want)>.35)a.currentTime=want; // after a seek, or if the film and the voice drift apart
-        if(a.paused)a.play().catch(()=>{});
-      }else if(!a.paused)a.pause();
+  if(NARR.cues.length){
+    const x=ended?TOTAL+tail:T, jumped=Math.abs(x-NARR.lastX)>.75;NARR.lastX=x;
+    const k=narrCue(x), el=NARR.el, moving=playing||ended;
+    if(!narrHeard()){if(!el.paused)el.pause();}
+    else if(k>=0){
+      const c=NARR.cues[k], want=(x-c.t)/c.r; // film seconds back to the recording's own seconds
+      if(k!==NARR.loaded){
+        NARR.loaded=k;el.src='narration/'+c.file;el.currentTime=Math.max(0,want);
+        const nx=NARR.cues[k+1];if(nx)NARR.warm.src='narration/'+nx.file; // fetched now, so the next line starts on time
+      }else if(jumped||(el.readyState>0&&Math.abs(el.currentTime-want)>1))el.currentTime=Math.max(0,want); // after a seek, or a real drift
+      if(moving){if(el.paused&&!el.ended)narrPlay();}else if(!el.paused)el.pause();
+    }else{
+      // between lines: a line that started a moment late may still be finishing its last words; let it, unless the film jumped or stopped
+      if(jumped||!moving){if(!el.paused)el.pause();if(jumped)NARR.loaded=-1;}
     }
   }
   requestAnimationFrame(narrTick);
 }
 requestAnimationFrame(narrTick);
-$('nar').addEventListener('click',()=>narrSet(!NARR.on));
-document.addEventListener('keydown',e=>{if(!e.metaKey&&!e.ctrlKey&&!e.altKey&&(e.key==='n'||e.key==='N')&&!/^(INPUT|TEXTAREA)$/.test(e.target.tagName))narrSet(!NARR.on);});
+$('nar').addEventListener('click',()=>narrSet(!(NARR.on&&!NARR.blocked)));
+['pointerdown','keydown'].forEach(ev=>document.addEventListener(ev,e=>{ // the first click or tap anywhere lets a refused voice in
+  if(!NARR.blocked||e.target.closest&&e.target.closest('#nar'))return;
+  NARR.blocked=false;narrShow();
+  if(NARR.on&&narrCue(ended?TOTAL+tail:T)>=0&&(playing||ended))narrPlay();
+},true));
+document.addEventListener('keydown',e=>{if(!e.metaKey&&!e.ctrlKey&&!e.altKey&&(e.key==='n'||e.key==='N')&&!/^(INPUT|TEXTAREA)$/.test(e.target.tagName))narrSet(!(NARR.on&&!NARR.blocked));});
 
 document.body.classList.add('pre');
 hud(0,0);
