@@ -58,7 +58,8 @@ const SCENES=[
   lede:'A cloud of gas and dust collapses. A star lights up, and rock gathers around it.',
   temp:'The young Sun glows as it contracts; fusion comes later',what:'A young Sun and a disc of dust, ice and rock',sure:'Well supported: dated in meteorites',
   more:'The cloud’s gas held atoms made by generations of earlier stars. Beyond the snow line (where the disc turns paler) water freezes into ice. The rings and gaps follow ALMA’s 2014 picture of the young star HL Tauri. The Earth grows from dust to a planet over roughly 10 to 100 million years, hot and molten at first. The young Sun shone at first by contracting; steady fusion in its core began within tens of millions of years. The oldest solids in the solar system are 4,567 million years old.',
-  src:'Sources: Connelly et al. 2012, Science, the solar system’s first solids; ALMA Partnership 2015, HL Tauri; Montmerle et al. 2006, the first 100 million years',dur:18,acc:'#ffb15a',aot:.669},
+  src:'Sources: Connelly et al. 2012, Science, the solar system’s first solids; ALMA Partnership 2015, HL Tauri; Montmerle et al. 2006, the first 100 million years',dur:18,acc:'#ffb15a',aot:.669,
+  live:(t)=>t<11.5?'The young Sun and its disc: 4,567 million years ago':'Closer in, and later: the young Earth, 10 to 100 million years on, still molten'}, // the camera's move to the Earth also skips ahead in time
 ];
 function clamp(x,a,b){return Math.min(b,Math.max(a,x));}
 const N=SCENES.length, START=[]; let TOTAL=0;
@@ -402,9 +403,11 @@ vec3 scene(vec2 uv,float t){
  if(te<0.){
   col+=vec3(.7,.82,1.)*(exp(-rs*rs/(px()*px()*6.))*3.+exp(-rs*40.)*.35)*smoothstep(1.,2.5,t);
  } else {
-  float Rs=.03+.34*sqrt(te*.4);
+  // the remnant stays small against the web: a first star's supernova spreads its new elements over a few thousand light years,
+  // while the strands around it are tens of times longer (Bromm 2013), so even exaggerated it covers only a knot
+  float Rs=.02+.1*sqrt(te*.4);
   float rag=fbm4(sn*7./Rs+te*.15);
-  float sh=exp(-pow((rs-Rs*(.85+.3*rag))*20.,2.))*(.2+1.4*rag*rag);
+  float sh=exp(-pow((rs-Rs*(.85+.3*rag))*48.,2.))*(.2+1.4*rag*rag);
   col+=mix(vec3(.3,.9,1.),vec3(1.,.5,.22),fbm4(sn*5.+3.))*sh*exp(-te*.18)*1.3;
   col+=vec3(1.)*exp(-te*2.)*exp(-rs*rs*300.)*6.;
   col+=vec3(.8,.9,1.)*exp(-te*.9)*exp(-rs*14.)*.8;
@@ -414,14 +417,20 @@ vec3 scene(vec2 uv,float t){
 
 /* 8 First galaxies: young galaxies blow clear bubbles in the grey haze of neutral hydrogen.
    The bubbles come from one summed field of starlight, so where they overlap they merge, and a glowing edge shows only on the outside */
-`vec3 galaxy(vec2 d,float sz,float h,float t){
- d=rot(h*6.28+t*.04)*d;
- vec2 e=d/sz; e.y*=1.3+h*.8;
- float r2=dot(e,e);
- float core=exp(-r2*4.);
- float body=exp(-r2*1.2);
- float clump=pow(vn(e*2.6+h*10.+t*.05),4.)*exp(-r2*.7);
- return vec3(1.,.9,.78)*core*1.4+vec3(.6,.75,1.)*body*.35+vec3(.55,.78,1.)*clump*2.2+vec3(1.,.5,.75)*pow(vn(e*5.+h*3.),8.)*body*2.;
+`// a galaxy this young is small, compact and lumpy, not a spiral: JWST measures JADES-GS-z14-0 at about 260 pc in radius and MoM-z14 under 100 pc,
+// blue with young stars (Carniani et al. 2024; Naidu et al. 2025). So: a few bright knots of star birth in a faint blue glow
+vec3 galaxy(vec2 d,float sz,float h,float t){
+ vec3 c=vec3(0);
+ for(int i=0;i<4;i++){
+  float fi=float(i);
+  vec2 o=(vec2(h21(vec2(h*17.+fi,3.)),h21(vec2(h*29.+fi,7.)))-.5)*sz*1.3;
+  o=rot(t*.03*(h-.5))*o;
+  float s=sz*(.18+.2*h21(vec2(h*5.+fi,1.)));
+  vec2 k=d-o;
+  c+=vec3(.52,.7,1.)*exp(-dot(k,k)/(s*s))*(.4+.8*h21(vec2(fi,h*11.)));
+ }
+ float r2=dot(d,d)/(sz*sz);
+ return c*1.05+vec3(.4,.55,1.)*exp(-r2*1.1)*.28+vec3(.85,.9,1.)*exp(-r2*14.)*.3;
 }
 vec3 scene(vec2 uv,float t){
  vec2 p=uv*(1.06-.06*t/15.);
@@ -446,7 +455,8 @@ vec3 scene(vec2 uv,float t){
  float thr=.5+(fogn-.5)*.55+(fbm4(p*8.+t*.05)-.5)*.32;
  float ion=smoothstep(thr-.05,thr+.05,F);
  float front=exp(-pow((F-thr)/.045,2.));
- vec3 fog=vec3(.3,.28,.26)*(.2+.8*fogn)*.5;
+ float dense=vn(p*1.4+4.)*.7+vn(p*3.1+1.)*.3; // the same density the galaxies are placed by: the haze is thickest where they crowd, and clears there first
+ vec3 fog=vec3(.3,.28,.26)*(.2+.8*fogn)*.5*(.65+.7*dense);
  vec3 bub=vec3(.008,.025,.045)+vec3(.05,.13,.2)*smoothstep(.5,2.,F)*.35;
  vec3 col=mix(fog,bub,ion);
  col+=vec3(.6,.85,1.)*front*.2*(1.-smoothstep(13.,16.,t)*.6);
