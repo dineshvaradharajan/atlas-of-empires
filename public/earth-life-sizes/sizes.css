@@ -6,7 +6,16 @@ a { color: #9cddd2; text-underline-offset: 0.16em; }
 h1, h2 { font-family: Georgia, serif; line-height: 1.12; }
 h1 { font-size: clamp(2rem, 6vw, 4rem); margin-bottom: .5rem; }
 p { max-width: 75ch; }
-.chart { display: block; width: 100%; height: auto; margin-top: 1rem; border-radius: .5rem; }
+/* the chart spans the whole window and is sized to fit the screen; a click opens it full screen to zoom (sizes.js) */
+.chart { display: block; width: 100vw; max-width: none; height: auto; max-height: calc(100svh - 1.5rem); margin: 1rem 0 0 calc(50% - 50vw); object-fit: contain; background: #0b131b; cursor: zoom-in; }
+.chart:focus-visible { outline: 2px solid #9cddd2; outline-offset: -2px; }
+.zoombox { position: fixed; inset: 0; z-index: 10; background: #0b131b; overflow: hidden; touch-action: none; }
+.zoombox[hidden] { display: none; }
+.zoombox img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; transform-origin: 0 0; cursor: zoom-in; user-select: none; -webkit-user-drag: none; }
+.zoombox.zoomed img { cursor: grab; }
+.zclose { position: absolute; z-index: 1; top: 12px; right: 12px; width: 44px; height: 44px; border: 1px solid #43515d; border-radius: 50%; background: #101923; color: #e9eef3; font-size: 22px; line-height: 1; cursor: pointer; }
+.zclose:focus-visible { outline: 2px solid #9cddd2; outline-offset: 2px; }
+.zhint { position: absolute; left: 50%; bottom: 12px; transform: translateX(-50%); margin: 0; padding: 3px 10px; border-radius: 11px; background: rgba(16, 25, 35, .85); font-size: .8rem; color: #c2ccd6; white-space: nowrap; pointer-events: none; }
 .table { overflow-x: auto; }
 table { border-collapse: collapse; width: 100%; }
 th, td { border-bottom: 1px solid #43515d; text-align: left; padding: .5rem .75rem; }
