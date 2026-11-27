@@ -387,17 +387,21 @@ vec3 scene(vec2 uv,float t){
  vec2 o=(h22(id+5.1)-.5)*.6;
  vec2 ws=web((id+.5+o)/gs);
  float ign=1.2+h21(id+1.7)*9.5;
- float on=smoothstep(.22,.5,ws.y+ws.x*.6)*step(h21(id+5.3),.8)*smoothstep(ign,ign+.5,t);
+ float on=smoothstep(.12,.4,ws.y+ws.x*.6)*step(h21(id+5.3),.85)*smoothstep(ign,ign+.5,t); // one star to a dense patch: many across the web, none in the voids
  vec2 d=(f-o)/gs;
  float pp=1.4*z*px();
  float r2=dot(d,d);
  float core=exp(-r2/(pp*pp*3.));
- // halo and spikes are sized in cell units (a cell is 0.22 wide), so they fade out well inside the cell at any resolution
+ // halo and bubble are sized in cell units (a cell is 0.22 wide), so they fade out well inside the cell at any resolution.
+ // No four-point spikes: those are made by a telescope's struts, and nothing here is seen through one
  float halo=exp(-sqrt(r2)/.011)*.35;
- float sx=exp(-abs(d.y)/(pp*.7))*exp(-abs(d.x)/.014);
- float sy=exp(-abs(d.x)/(pp*.7))*exp(-abs(d.y)/.014);
  float birth=1.+2.5*exp(-max(t-ign,0.)*1.5);
- col+=vec3(.68,.8,1.)*(core*3.+halo+(sx+sy)*.45)*on*birth;
+ col+=vec3(.68,.8,1.)*(core*3.+halo)*on*birth;
+ // each star's ultraviolet splits the hydrogen around it, opening a small glowing bubble that grows for the star's few million
+ // years of life: the first, local step of the clearing the next scene shows (Bromm 2013)
+ float age=max(t-ign,0.), Rb=.012+.034*(1.-exp(-age*.45));
+ float rb=sqrt(r2)/Rb*(1.+.25*(vn(d*90.+id)-.5));
+ col+=(vec3(.16,.32,.75)*smoothstep(1.,.15,rb)*.5+vec3(.3,.55,1.)*exp(-pow((rb-1.)*5.,2.))*.3)*on;
  vec2 sn=uv-vec2(.32,.16);
  float te=t-8.5, rs=length(sn);
  if(te<0.){
@@ -405,10 +409,15 @@ vec3 scene(vec2 uv,float t){
  } else {
   // the remnant stays small against the web: a first star's supernova spreads its new elements over a few thousand light years,
   // while the strands around it are tens of times longer (Bromm 2013), so even exaggerated it covers only a knot
+  // a cloud, not a ring: hot gas fills the remnant, brightest at its rim where it sweeps up the gas around it, blue-white
+  // at first and redder as it cools; its newly made carbon, oxygen and iron go out with it
   float Rs=.02+.1*sqrt(te*.4);
   float rag=fbm4(sn*7./Rs+te*.15);
-  float sh=exp(-pow((rs-Rs*(.85+.3*rag))*48.,2.))*(.2+1.4*rag*rag);
-  col+=mix(vec3(.3,.9,1.),vec3(1.,.5,.22),fbm4(sn*5.+3.))*sh*exp(-te*.18)*1.3;
+  float x=rs/(Rs*(.88+.24*rag));
+  float fill=smoothstep(1.08,.2,x)*(.35+.65*fbm4(sn*16./Rs-te*.2));
+  float rim=exp(-pow((x-.94)*4.5,2.))*(.2+.9*rag*rag);
+  vec3 hot=mix(vec3(.55,.8,1.),vec3(1.,.55,.28),smoothstep(.5,4.5,te)*(.4+.6*fbm4(sn*5.+3.)));
+  col+=hot*(fill*.4+rim*.75)*exp(-te*.2);
   col+=vec3(1.)*exp(-te*2.)*exp(-rs*rs*300.)*6.;
   col+=vec3(.8,.9,1.)*exp(-te*.9)*exp(-rs*14.)*.8;
  }
@@ -432,21 +441,31 @@ vec3 galaxy(vec2 d,float sz,float h,float t){
  float r2=dot(d,d)/(sz*sz);
  return c*1.05+vec3(.4,.55,1.)*exp(-r2*1.1)*.28+vec3(.85,.9,1.)*exp(-r2*14.)*.3;
 }
+vec3 voro(vec2 p){vec2 i=floor(p),f=fract(p);float d1=8.,d2=8.,d3=8.;
+ for(int y=-1;y<=1;y++)for(int x=-1;x<=1;x++){vec2 g=vec2(x,y);vec2 r=g+h22(i+g)-f;float d=dot(r,r);
+  if(d<d1){d3=d2;d2=d1;d1=d;}else if(d<d2){d3=d2;d2=d;}else if(d<d3){d3=d;}}
+ return sqrt(vec3(d1,d2,d3));}
+// the cosmic web of the scene before, simplified: near 1 on its strands and in its knots, near 0 in the voids. Galaxies form
+// along it, crowded where strands meet, and the neutral gas is thickest there too (as in the THESAN and CoDa simulations)
+float webd(vec2 p){
+ p+=(vec2(vn(p*.9),vn(p*.9+5.3))-.5)*.5;
+ vec3 v=voro(p); float e=v.y-v.x, k=v.z-v.x;
+ return clamp(exp(-e*e/.025)*.75+exp(-k*6.)*.8,0.,1.);}
 vec3 scene(vec2 uv,float t){
  vec2 p=uv*(1.06-.06*t/15.);
  float fogn=fbm(p*1.6+vec2(t*.02,0.))*.7+fbm4(p*4.5-t*.01)*.3;
  float F=0.; vec3 gc=vec3(0);
- float cs=.5;
+ float cs=.3;
  vec2 id=floor(p/cs);
  for(int y=-2;y<=2;y++)for(int x=-2;x<=2;x++){
   vec2 cid=id+vec2(x,y);
   float hh=h21(cid*1.3+.7);
   vec2 cp=(cid+.5+(h22(cid)-.5)*.6)*cs;
-  float web=vn(cp*1.4+4.)*.7+vn(cp*3.1+1.)*.3;
-  if(hh>.35+.8*web) continue;
-  float birth=.6+(1.-web)*8.+hh*2.5;
+  float web=webd(cp*1.3+3.);
+  if(hh>.15+1.1*web) continue; // most galaxies on the strands, few in the voids
+  float birth=.6+(1.-web)*8.+hh*2.5; // and the densest places first: the clearing starts there (inside-out reionization)
   float age=max(t-birth,0.);
-  float sig=.33*(1.-exp(-age*.3))*(.7+.3*h21(cid+9.));
+  float sig=.25*(1.-exp(-age*.3))*(.7+.3*h21(cid+9.)); // kept within the 5 x 5 cells summed, so no seams where the cells change
   vec2 d=p-cp;
   F+=step(.001,age)*exp(-dot(d,d)/max(sig*sig,1e-5));
   gc+=galaxy(d,.034+.02*hh,hh,t)*smoothstep(birth-.8,birth+.6,t);
@@ -455,8 +474,8 @@ vec3 scene(vec2 uv,float t){
  float thr=.5+(fogn-.5)*.55+(fbm4(p*8.+t*.05)-.5)*.32;
  float ion=smoothstep(thr-.05,thr+.05,F);
  float front=exp(-pow((F-thr)/.045,2.));
- float dense=vn(p*1.4+4.)*.7+vn(p*3.1+1.)*.3; // the same density the galaxies are placed by: the haze is thickest where they crowd, and clears there first
- vec3 fog=vec3(.3,.28,.26)*(.2+.8*fogn)*.5*(.65+.7*dense);
+ float dense=webd(p*1.3+3.); // the same web the galaxies are placed by: the haze is thickest along its strands
+ vec3 fog=vec3(.3,.28,.26)*(.2+.8*fogn)*.5*(.45+.95*dense);
  vec3 bub=vec3(.008,.025,.045)+vec3(.05,.13,.2)*smoothstep(.5,2.,F)*.35;
  vec3 col=mix(fog,bub,ion);
  col+=vec3(.6,.85,1.)*front*.2*(1.-smoothstep(13.,16.,t)*.6);
