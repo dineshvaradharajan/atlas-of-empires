@@ -57,6 +57,16 @@ s = s.replace('"../fonts/fonts-earth.css"', f'"../fonts/fonts-earth.css?v={v}"')
 s = s.replace('<meta charset="utf-8">', f'<meta charset="utf-8">\n<meta name="data-version" content="{v}">', 1)
 open(p, "w").write(s)
 PY
+# The universe film (public/universe/) and its stories (public/universe/stories/): their scripts and styles are kept for four hours under a
+# fixed address, so a new release would reach returning readers late; the release on each address makes a new one every deploy
+python3 -I - "$V" "$D/public/universe/index.html" "$D/public/universe/stories/index.html" <<'PY'
+import sys
+v = sys.argv[1]
+for p in sys.argv[2:]:
+    s = open(p).read()
+    for f in ("universe.js", "universe.css", "../universe.css", "stories.js", "stories.css"): s = s.replace(f'"{f}"', f'"{f}?v={v}"')
+    open(p, "w").write(s)
+PY
 # The share dialog (share.js, share.css), on all three pages
 python3 -I - "$V" "$D/public/index.html" "$D/public/world.html" "$D/public/earth-history/index.html" <<'PY'
 import sys
