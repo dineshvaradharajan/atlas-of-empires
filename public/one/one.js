@@ -382,7 +382,8 @@ function renderCard() {
     if (cardPics.length) { const im = $("#picImg"); im.dataset.fb = cardPics[0].image; im.src = sized(cardPics[0], 500); $("#picN").textContent = `${cardPics.length} pictures`; } }
   const hint = $("#hint"); hint.hidden = !near;
   if (near) { const y = Math.max(0, Math.round((S.ma - JOIN) * 1e6 / 1000) * 1000); hint.innerHTML = y ? `<b>History begins in ${num(y)} years.</b> Keep going and the first peoples and states appear on the globe.` : "<b>History begins here.</b>"; }
-  $("#trust").textContent = S.ma > MAPPED ? "Artist's impression: no map of the Earth this old is drawn here." : S.ma > 300 ? "Rough map: reconstructions of this time differ by 600 to 1,600 km." : "Reconstructed map: PALEOMAP, Scotese and Wright 2018.";
+  $("#trust").textContent = S.ma > MAPPED ? "Artist's impression: no map of the Earth this old is drawn here." : (S.ma > 300 ? "Rough map: reconstructions of this time differ by 600 to 1,600 km." : "Reconstructed map: PALEOMAP, Scotese and Wright 2018.")
+    + " Land colours: a climate model (Pohl et al. 2022), and today's climate for recent times (Beck et al. 2018). Ice sheets: geological evidence; the last ice age's from NADI-1 and DATED-1.";
 }
 
 // ---------------------------------------------------------------- step into this world: the pictures of a time, full screen
