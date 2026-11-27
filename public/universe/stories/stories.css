@@ -20,6 +20,7 @@ body:not(.picking) .picker{display:none}
 
 /* inside a story */
 .readings:empty{display:none}
+.scene .image-credit{display:block}
 .snext{margin-top:14px}
 .snext a{display:inline-flex;align-items:center;gap:8px;height:44px;padding:0 18px;border-radius:22px;background:var(--btn);color:var(--btnink);font:600 14px var(--sans);text-decoration:none}
 body.notext .scene{opacity:0;pointer-events:none}

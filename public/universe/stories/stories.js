@@ -70,7 +70,7 @@ const LOOK = {
   jupiter: { base: [214, 186, 150], bands: [[236, 222, 198], [176, 126, 92], [226, 204, 170], [160, 112, 82], [240, 230, 212], [196, 150, 112]], grs: 1 },
   saturn: { base: [226, 204, 156], bands: [[238, 222, 182], [204, 176, 124], [232, 214, 170], [214, 190, 140]] },
   uranus: { base: [168, 220, 226], bands: [[178, 228, 232], [156, 210, 218]], soft: 1 },
-  neptune: { base: [70, 112, 214], bands: [[86, 130, 228], [58, 96, 196]], soft: 1 },
+  neptune: { base: [142, 188, 205], bands: [[153, 198, 214], [130, 177, 196]], soft: 1 },
   rock: { base: [140, 120, 104], spots: [[104, 88, 76], [170, 150, 130]] },
   lava: { base: [60, 40, 34] }, hot: { base: [220, 120, 70], bands: [[240, 150, 90], [200, 100, 60]] }, ice: { base: [196, 214, 230], spots: [[170, 190, 210], [220, 232, 242]] },
 };
@@ -91,7 +91,7 @@ function blobsOnSphere(x, y, r, list, spin, col, alpha) {
 // how each axis is drawn: [lean across the picture, tip towards us], degrees. The leans are the axial tilts from the NASA fact sheets; Saturn's
 // 26.7° is split so that its rings open towards us as they often do seen from the Earth; Uranus lies on its side (97.8°)
 const ORI = { mercury: [0, 0], venus: [0, 0], earth: [23.4, 0], moon: [6.7, 0], mars: [25.2, 0], jupiter: [3.1, 0], saturn: [12, 17.5], uranus: [97.8, 0], neptune: [28.3, 0] };
-const SPIN = { mercury: .03, venus: .02, earth: .12, moon: .02, mars: .12, jupiter: .25, saturn: .22, uranus: .1, neptune: .15 };
+const SPIN = { mercury: .03, venus: -.02, earth: .12, moon: .02, mars: .12, jupiter: .25, saturn: .22, uranus: .1, neptune: .15 };
 const GAS = { jupiter: 1, saturn: 1, uranus: 1, neptune: 1, venus: 1 };
 const hash3 = (x, y, z) => { let h = (x * 374761393 + y * 668265263 + z * 2147483647) | 0; h = (h ^ (h >>> 13)) * 1274126177; return ((h ^ (h >>> 16)) >>> 0) / 4294967296; };
 function vnoise(x, y, z) {
@@ -101,8 +101,8 @@ function vnoise(x, y, z) {
 }
 const fbm3 = (x, y, z, o = 4) => { let s = 0, a = .5, f = 1; for (let i = 0; i < o; i++) { s += a * vnoise(x * f, y * f, z * f); f *= 2.03; a *= .5; } return s; };
 // craters: a fixed list of bowls on the sphere, dark floors and bright rims, with a few bright ray systems
-const CRATERS = (() => { const R = rng(19), a = []; for (let i = 0; i < 260; i++) { const z = R() * 2 - 1, th = R() * TAU, s = Math.sqrt(1 - z * z); a.push([s * Math.cos(th), s * Math.sin(th), z, .015 + Math.pow(R(), 3) * .16]); } return a; })();
-function crater(p) { let k = 0; for (const [x, y, z, r] of CRATERS) { const d = Math.acos(clamp(p[0] * x + p[1] * y + p[2] * z, -1, 1)); if (d < r * 1.25) { const q = d / r; k += q < .85 ? -.16 * (1 - q * q) : q < 1.1 ? .14 : 0; } } return k; }
+const CRATERS = (() => { const R = rng(19), a = []; for (let i = 0; i < 260; i++) { const z = R() * 2 - 1, th = R() * TAU, s = Math.sqrt(1 - z * z); const r = .015 + Math.pow(R(), 3) * .16; a.push([s * Math.cos(th), s * Math.sin(th), z, r, Math.cos(r * 1.25)]); } return a; })();
+function crater(p) { let k = 0; for (const [x, y, z, r, edge] of CRATERS) { const dot = p[0] * x + p[1] * y + p[2] * z; if (dot > edge) { const q = Math.acos(Math.min(1, dot)) / r; k += q < .85 ? -.16 * (1 - q * q) : q < 1.1 ? .14 : 0; } } return k; }
 // a belt or zone colour by latitude, blended over a degree or so at each edge: hard edges turn to stairs when a planet is drawn large
 const band = (lat, table) => { const i = Math.max(0, table.findIndex(([lo, hi]) => lat >= lo && lat < hi)), [lo, hi, c] = table[i], w = 1.1;
   if (lat - lo < w && i > 0) return mixc(table[i - 1][2], c, .5 + .5 * (lat - lo) / w); if (hi - lat < w && i < table.length - 1) return mixc(table[i + 1][2], c, .5 + .5 * (hi - lat) / w); return c; };
@@ -123,12 +123,16 @@ const PAINTS = {
     let c = band(dp, JUP); c = mixc(c, mixc(c, WHITE, .25), fbm3(p[0] * 16, p[1] * 16, p[2] * 16) * .5);
     c = mixc(c, mixc(c, [120, 80, 60], .5), Math.max(0, fbm3(p[0] * 45 + dp * .2, p[1] * 45, p[2] * 45, 3) - .5) * .9); // small eddies, seen up close
     const gx = lon / (14.5 * Math.PI / 180) * 2, gy = (lat * 180 / Math.PI + 22.5) / 4.5, gd = gx * gx + gy * gy; // the Great Red Spot: 16,350 km x about 11,000 km, at 22.5° S (2017)
-    if (gd < 1.3) c = mixc(c, gd < 1 ? [222, 116, 80] : [240, 224, 204], gd < 1 ? .92 * (1 - gd * .35) : .7);
+    if (gd < 1.3) {
+      const swirl = .5 + .5 * Math.sin(Math.sqrt(gd) * 17 + Math.atan2(gy, gx) * 2 + 2 * Math.sin(gx * 4));
+      const spot = mixc([174, 68, 49], [232, 151, 110], .28 + .62 * swirl);
+      c = mixc(c, gd < 1 ? spot : [240, 224, 204], gd < 1 ? .94 * (1 - gd * .22) : .7 * (1.3 - gd) / .3);
+    }
     return c; },
   saturn: (lon, lat, p) => { const dp = lat * 180 / Math.PI + (fbm3(p[0] * 5, p[1] * 5, p[2] * 5) - .5) * 2; let c = band(dp, SAT); return mixc(c, mixc(c, WHITE, .2), fbm3(p[0] * 12, p[1] * 12, p[2] * 12) * .4); },
   uranus: (lon, lat, p) => { const dp = Math.abs(lat * 180 / Math.PI); return mixc([158, 212, 220], [190, 232, 236], clamp((dp - 20) / 60, 0, 1) * .8 + fbm3(p[0] * 3, p[1] * 3, p[2] * 3) * .15); },
-  neptune: (lon, lat, p) => { const dp = lat * 180 / Math.PI, n = fbm3(p[0] * 4, p[1] * 4 + dp * .05, p[2] * 4); let c = mixc([52, 92, 200], [76, 120, 222], n);
-    if (Math.abs(dp) > 18 && Math.abs(dp) < 50) c = mixc(c, [44, 80, 182], .4);
+  neptune: (lon, lat, p) => { const dp = lat * 180 / Math.PI, n = fbm3(p[0] * 4, p[1] * 4 + dp * .05, p[2] * 4); let c = mixc([125, 171, 190], [158, 202, 217], n);
+    if (Math.abs(dp) > 18 && Math.abs(dp) < 50) c = mixc(c, [109, 158, 183], .35);
     const streak = fbm3(lon * 1.5, dp * .35, 3); if ((Math.abs(dp + 24) < 4 || Math.abs(dp - 32) < 3) && streak > .58) c = mixc(c, [236, 242, 255], clamp((streak - .58) * 6, 0, .9)); return c; },
 };
 const TX = {};
@@ -153,28 +157,48 @@ Promise.all([pixels('../../data/paleo/0.webp'), pixels('../../data/paleo/climate
   }, 1024, 512);
 }).catch(() => {});
 const SPH = new Map();
+// Equatorial and polar radii relative to the mean radius (NASA fact sheets).
+const OBLATE = { jupiter: [71492 / 69911, 66854 / 69911], saturn: [60268 / 58232, 54364 / 58232] };
+function planetPoint(x, y, kind) {
+  const shape = OBLATE[kind];
+  if (!shape) return [x, y];
+  const roll = ORI[kind][0] * Math.PI / 180, tip = ORI[kind][1] * Math.PI / 180;
+  const c = Math.cos(roll), s = Math.sin(roll), [equator, pole] = shape;
+  const a = (x * c + y * s) * equator, b = (y * c - x * s) * Math.hypot(pole * Math.cos(tip), equator * Math.sin(tip));
+  return [a * c - b * s, a * s + b * c];
+}
 function sphereImg(kind, D, spin) {
   if (!TX[kind]) { if (!PAINTS[kind]) return null; buildTex(kind, PAINTS[kind]); }
-  D = Math.round(D); const big = D >= 360 && PAINTS[kind]; D = Math.max(6, Math.min(big ? 900 : 560, D));
-  const key = kind + D + '|' + Math.round(spin * 300);
-  if (SPH.has(key)) return SPH.get(key);
-  const direct = big ? PAINTS[kind] : null; // drawn large, a planet is painted point by point (sharper): its map would show its pixels
-  const tx = TX[kind], c = document.createElement('canvas'); c.width = c.height = D; const x = c.getContext('2d'), im = x.createImageData(D, D), o = im.data, R = D / 2;
+  // Sample the map at a bounded resolution. Keep one raster per planet so zooming and rotation do not allocate a canvas every frame.
+  D = D < 24 ? clamp(Math.round(D), 6, 24) : Math.min(240, Math.round(D / 8) * 8);
+  spin = Math.round(spin * 150) / 150;
+  const tx = TX[kind];
+  let raster = SPH.get(kind);
+  if (!raster) { const canvas = document.createElement('canvas'); raster = { canvas, ctx: canvas.getContext('2d') }; SPH.set(kind, raster); }
+  if (raster.canvas.width !== D || !raster.image) {
+    raster.canvas.width = raster.canvas.height = D;
+    raster.image = raster.ctx.createImageData(D, D);
+    raster.spin = null;
+  }
+  if (raster.spin === spin && raster.texture === tx) return raster.canvas;
+  const o = raster.image.data, R = D / 2;
   const [rl, nd] = ORI[kind] || [0, 0], tl = rl * Math.PI / 180, ct = Math.cos(tl), st = Math.sin(tl), cn = Math.cos(nd * Math.PI / 180), sn = Math.sin(nd * Math.PI / 180), gas = GAS[kind];
-  const L = [-.74, .36, .57], Ln = Math.hypot(...L), l0 = L[0] / Ln, l1 = L[1] / Ln, l2 = L[2] / Ln;
+  const L = [-.52, .24, .82], Ln = Math.hypot(...L), l0 = L[0] / Ln, l1 = L[1] / Ln, l2 = L[2] / Ln;
   for (let py = 0; py < D; py++) for (let px = 0; px < D; px++) {
     const nx = (px + .5 - R) / R, ny = (R - py - .5) / R, rr = nx * nx + ny * ny; if (rr > 1) continue;
     const nz = Math.sqrt(1 - rr), ax = nx * ct - ny * st, ay0 = nx * st + ny * ct; // the axis leans across the picture, then tips towards us
     const ay = ay0 * cn + nz * sn, az = nz * cn - ay0 * sn, lat = Math.asin(clamp(ay, -1, 1)), lon = Math.atan2(ax, az) + spin;
-    let cr, cg, cb;
-    if (direct) { const L2 = lon - TAU * Math.round(lon / TAU), cl = Math.cos(lat), c = direct(L2, lat, [cl * Math.cos(L2), cl * Math.sin(L2), Math.sin(lat)]); cr = c[0]; cg = c[1]; cb = c[2]; }
-    else { const u = (((lon / TAU + .5) % 1) + 1) % 1, v = .5 - lat / Math.PI, ti = (Math.min(tx.h - 1, Math.floor(v * tx.h)) * tx.w + Math.min(tx.w - 1, Math.floor(u * tx.w))) * 3; cr = tx.d[ti]; cg = tx.d[ti + 1]; cb = tx.d[ti + 2]; }
+    const u = (((lon / TAU + .5) % 1) + 1) % 1 * tx.w, v = clamp((.5 - lat / Math.PI) * tx.h, 0, tx.h - 1);
+    const ix = Math.floor(u), iy = Math.floor(v), fx = u - ix, fy = v - iy;
+    const i0 = (iy * tx.w + ix) * 3, i1 = (iy * tx.w + (ix + 1) % tx.w) * 3;
+    const row = iy < tx.h - 1 ? tx.w * 3 : 0;
     const dif = Math.max(0, nx * l0 + ny * l1 + nz * l2), lit = (.035 + .965 * Math.pow(dif, gas ? .8 : 1)) * (gas ? .6 + .4 * Math.sqrt(nz) : 1);
     const a = clamp((1 - Math.sqrt(rr)) * R * 1.6, 0, 1), k = (py * D + px) * 4;
-    o[k] = cr * lit; o[k + 1] = cg * lit; o[k + 2] = cb * lit; o[k + 3] = 255 * a;
+    for (let q = 0; q < 3; q++) o[k + q] = lerp(lerp(tx.d[i0 + q], tx.d[i1 + q], fx), lerp(tx.d[i0 + row + q], tx.d[i1 + row + q], fx), fy) * lit;
+    o[k + 3] = 255 * a;
   }
-  x.putImageData(im, 0, 0);
-  if (SPH.size > 80) SPH.clear(); SPH.set(key, c); return c;
+  raster.ctx.putImageData(raster.image, 0, 0);
+  raster.spin = spin; raster.texture = tx; return raster.canvas;
 }
 function planet(x, y, r, kind, t = 0, o = {}) {
   const L = LOOK[kind] || LOOK.rock;
@@ -183,7 +207,9 @@ function planet(x, y, r, kind, t = 0, o = {}) {
     const img = sphereImg(kind, 2 * r * Math.min(DPR, 2), o.spin ?? t * SPIN[kind]);
     if (img) {
       if (o.ringsBack) o.ringsBack();
-      g.drawImage(img, x - r, y - r, 2 * r, 2 * r);
+      g.save(); g.translate(x, y);
+      if (OBLATE[kind]) { const u = planetPoint(1, 0, kind), v = planetPoint(0, 1, kind); g.transform(u[0], u[1], v[0], v[1], 0, 0); }
+      g.drawImage(img, -r, -r, 2 * r, 2 * r); g.restore();
       if (kind === 'earth' || kind === 'venus' || kind === 'neptune' || kind === 'uranus') { g.beginPath(); g.arc(x, y, r * 1.012, -2.2, .9); g.strokeStyle = rgba(kind === 'earth' ? [120, 180, 255] : kind === 'venus' ? [255, 236, 200] : [170, 210, 255], .45); g.lineWidth = Math.max(1, r * .025); g.stroke(); }
       if (o.ringsFront) o.ringsFront();
       return;
@@ -220,15 +246,22 @@ function planet(x, y, r, kind, t = 0, o = {}) {
   if (kind === 'earth' || kind === 'venus' || kind === 'neptune' || kind === 'uranus') { g.beginPath(); g.arc(x, y, r * 1.015, 0, TAU); g.strokeStyle = rgba(kind === 'earth' ? [120, 180, 255] : mixc(L.base, WHITE, .4), .35); g.lineWidth = Math.max(1, r * .03); g.stroke(); }
   if (o.ringsFront) o.ringsFront();
 }
-// Saturn's rings as ellipses, the half behind the planet drawn first; radii in planet radii (C ring 1.24 to A ring 2.27)
-function saturnRings(x, y, r, tilt = .3, t = 0) {
-  tilt = Math.sin(ORI.saturn[1] * Math.PI / 180); const rot = ORI.saturn[0] * Math.PI / 180; // the same orientation as the planet's bands
+// Main ring boundaries in km from Saturn’s centre (Cassini). Compress the annuli in their plane before rotating them.
+const SATURN_RING_EDGE = 136775;
+function saturnRings(x, y, scale) {
+  const tilt = Math.sin(ORI.saturn[1] * Math.PI / 180), rot = ORI.saturn[0] * Math.PI / 180;
+  const bands = [[74658, 92000, .24, [171, 157, 136]], [92000, 117580, .88, [231, 219, 191]],
+    [122170, 133410, .68, [214, 203, 177]], [133730, SATURN_RING_EDGE, .58, [214, 203, 177]]];
   const draw = (front) => {
-    g.save(); g.translate(x, y); g.rotate(rot); g.translate(-x, -y); g.beginPath(); if (front) g.rect(x - r * 3, y, r * 6, r * 3); else g.rect(x - r * 3, y - r * 3, r * 6, r * 3); g.clip();
-    const bands = [[1.24, 1.53, .22, [150, 136, 112]], [1.53, 1.95, .88, [230, 214, 178]], [2.03, 2.2, .66, [208, 192, 158]], [2.215, 2.27, .55, [204, 188, 154]]]; // C ring, B ring, Cassini division, A ring, Encke gap
-    for (const [a, b, al, c] of bands) for (let k = 0; k < 10; k++) {
-      const rr = r * lerp(a, b, (k + .5) / 10);
-      g.beginPath(); g.ellipse(x, y, rr, rr * tilt, 0, 0, TAU); g.strokeStyle = rgba(c, al * (.65 + .35 * Math.sin(k * 2.3 + a * 9))); g.lineWidth = r * (b - a) / 10 * 1.1; g.stroke();
+    const edge = SATURN_RING_EDGE * scale;
+    g.save(); g.translate(x, y); g.rotate(rot); g.scale(1, tilt);
+    g.beginPath(); g.rect(-edge, front ? 0 : -edge, 2 * edge, edge); g.clip();
+    for (const [inner, outer, alpha, color] of bands) {
+      for (let i = 0; i < 14; i++) {
+        const a = lerp(inner, outer, i / 14) * scale, b = lerp(inner, outer, (i + 1.07) / 14) * scale;
+        g.beginPath(); g.arc(0, 0, b, 0, TAU); g.moveTo(a, 0); g.arc(0, 0, a, 0, TAU);
+        g.fillStyle = rgba(color, alpha * (.83 + .17 * Math.sin(i * 2.1 + inner))); g.fill('evenodd');
+      }
     }
     g.restore();
   };
@@ -248,7 +281,7 @@ function ring(x, y, r, c = 'rgba(244,239,230,.3)', w = 1, dash, ry) { g.save(); 
 // a measuring bar with end ticks, drawn out over k (0..1)
 function measure(x0, y, x1, k, text, sub, c = 'rgba(255,210,122,.9)') {
   const xe = lerp(x0, x1, easeO(k)); line(x0, y, xe, y, c, 1.5); line(x0, y - 5, x0, y + 5, c, 1.5); if (k > .98) line(x1, y - 5, x1, y + 5, c, 1.5);
-  if (k > .6) label((x0 + x1) / 2, y - 10, text, sub, { a: ease((k - .6) / .4), color: '#ffd27a' });
+  if (k > .6) label((x0 + x1) / 2, y - (sub ? 20 : 10), text, sub, { a: ease((k - .6) / .4), color: '#ffd27a' });
 }
 
 // the sky behind every chapter: fixed random stars, twinkling a little
@@ -262,7 +295,7 @@ function sky(w, h, t, dim = 1, drift = 0) {
   }
 }
 // galaxy pictures, drawn once into small canvases and then scaled: a barred spiral (the Milky Way), Andromeda seen almost edge on,
-// irregular dwarfs, and many small background galaxies for the deep field
+// and irregular dwarfs
 function sprite(n, fn) { const c = document.createElement('canvas'); c.width = c.height = n; const x = c.getContext('2d'); const old = g; g = x; fn(n); g = old; return c; }
 function spiralSprite(n, seed, arms = 2, warm = [255, 226, 180], cool = [150, 180, 255], bar = 1) {
   // a disc of faint stars thinning outwards, brighter arms along logarithmic spirals (with minor arms between when arms is 4),
@@ -288,46 +321,39 @@ function spiralSprite(n, seed, arms = 2, warm = [255, 226, 180], cool = [150, 18
 function blobSprite(n, seed, c1 = [200, 214, 255]) { return sprite(n, () => { const R = rng(seed), c = n / 2; g.globalCompositeOperation = 'lighter'; for (let i = 0; i < 2600; i++) { const a = R() * TAU, d = Math.pow(R(), 1.6) * n * .45; g.fillStyle = rgba(mixc(c1, [255, 230, 200], R()), .5); g.fillRect(c + Math.cos(a) * d * (1 + .3 * Math.sin(a * 3 + seed)), c + Math.sin(a) * d * .7, 1.6, 1.6); } glow(c, c, n * .35, c1, .55); }); }
 // the galaxy types of a deep field, as Hubble shows them: smooth yellow-orange ellipticals, spirals with blue arms and yellow cores,
 // thin edge-on discs split by a dust lane, lumpy blue irregulars, and the most distant as small red smudges
-function ellSprite(n, c) { return sprite(n, () => { const k = n / 2, gr = g.createRadialGradient(k, k, 0, k, k, k);
-  gr.addColorStop(0, rgba(mixc(c, WHITE, .65))); gr.addColorStop(.06, rgba(c, .9)); gr.addColorStop(.25, rgba(c, .4)); gr.addColorStop(.6, rgba(c, .08)); gr.addColorStop(1, rgba(c, 0)); g.fillStyle = gr; g.fillRect(0, 0, n, n); }); }
-function edgeSprite(n, c) { return sprite(n, () => { const k = n / 2; g.save(); g.translate(k, k); g.scale(1, .16); const gr = g.createRadialGradient(0, 0, 0, 0, 0, k);
-  gr.addColorStop(0, rgba(mixc(c, WHITE, .5))); gr.addColorStop(.3, rgba(c, .55)); gr.addColorStop(1, rgba(c, 0)); g.fillStyle = gr; g.fillRect(-k, -k, n, n); g.restore();
-  glow(k, k, n * .12, [255, 226, 180], .8); g.fillStyle = 'rgba(30,18,12,.55)'; g.fillRect(n * .12, k - .6, n * .76, 1.2); }); }
-function irrSprite(n, seed) { return sprite(n, () => { const R = rng(seed), k = n / 2; for (let i = 0; i < 9; i++) { const x = k + (R() - .5) * n * .5, y = k + (R() - .5) * n * .35;
-  glow(x, y, n * (.08 + .14 * R()), R() < .3 ? [255, 150, 200] : [170, 200, 255], .7); } }); }
-let MW = null, M31 = null, M33 = null, LMC = null, SMC = null, SGR = null, FIELD = null;
+let MW = null, M31 = null, M33 = null, LMC = null, SMC = null, SGR = null;
 function sprites() {
   if (MW) return;
   MW = spiralSprite(640, 5, 4); M31 = spiralSprite(512, 9, 2, [255, 214, 170], [170, 190, 255], 0); M33 = spiralSprite(256, 13, 2, [220, 220, 255], [140, 180, 255], 0);
   LMC = blobSprite(192, 21); SMC = blobSprite(128, 23); SGR = blobSprite(128, 27, [255, 214, 170]);
-  // 0-2 spirals, 3-4 ellipticals, 5 edge-on disc, 6-7 irregulars, 8 a distant red smudge
-  FIELD = [spiralSprite(128, 40, 2, [255, 230, 190], [130, 170, 255], 0), spiralSprite(128, 41, 2, [255, 214, 170], [150, 180, 255], 1), spiralSprite(128, 42, 4, [255, 236, 210], [120, 160, 255], 0),
-    ellSprite(64, [255, 206, 150]), ellSprite(64, [255, 182, 120]), edgeSprite(96, [255, 214, 170]), irrSprite(64, 61), irrSprite(64, 62), ellSprite(32, [255, 118, 86])];
+
 }
-function drawSprite(img, x, y, size, rot = 0, squash = 1, a = 1, plain = 0) { if (size < 2) { glow(x, y, 6, [230, 230, 255], .6 * a); return; }
-  if (size < 70 && !plain) glow(x, y, size * .7, [235, 225, 255], a * (1 - size / 70) * .9); /* drawn small, a picture fades to nothing: a glow keeps it seen */ g.save(); g.globalAlpha = a; g.globalCompositeOperation = 'lighter'; g.translate(x, y); g.rotate(rot); g.scale(1, squash); g.drawImage(img, -size / 2, -size / 2, size, size); g.restore(); }
+function drawSprite(img, x, y, size, rot = 0, squash = 1, a = 1) { if (size < 2) { glow(x, y, 6, [230, 230, 255], .6 * a); return; }
+  if (size < 70) glow(x, y, size * .7, [235, 225, 255], a * (1 - size / 70) * .9); /* drawn small, a picture fades to nothing: a glow keeps it seen */ g.save(); g.globalAlpha = a; g.globalCompositeOperation = 'lighter'; g.translate(x, y); g.rotate(rot); g.scale(1, squash); g.drawImage(img, -size / 2, -size / 2, size, size); g.restore(); }
 
 // ---------------------------------------------------------------- story 1: the Earth among the planets
 const KM = { Mercury: 2439.7, Venus: 6051.8, Earth: 6371, Mars: 3389.5, Jupiter: 69911, Saturn: 58232, Uranus: 25362, Neptune: 24622, Moon: 1737.4, Sun: 695700 }; // mean radii, NASA planetary fact sheets
 const KIND = { Mercury: 'mercury', Venus: 'venus', Earth: 'earth', Mars: 'mars', Jupiter: 'jupiter', Saturn: 'saturn', Uranus: 'uranus', Neptune: 'neptune' };
 const ROCKY = ['Mercury', 'Venus', 'Earth', 'Mars'], ALL8 = ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune'];
-const halfW = (n) => n === 'Saturn' ? KM.Saturn * 2.27 : KM[n];
+const halfW = (n) => n === 'Saturn' ? SATURN_RING_EDGE : KM[n];
 function layout(names, s) { let x = 0; const pos = {}; names.forEach((n, i) => { const r = halfW(n) * s; x += (i ? Math.max(14, r * .25) : 0) + r; pos[n] = x; x += r; }); return { pos, total: x }; }
 const fitScale = (names, width) => { let s = width / names.reduce((a, n) => a + halfW(n) * 2.25, 0); for (let i = 0; i < 4; i++) s *= width / layout(names, s).total; return s; };
-function lineup(v, names, s, off, t, pop, hl) {
+function lineup(v, names, s, off, spinTime, pop, hl) {
   const { pos } = layout(names, s); let lastX = -1e9, bump = false;
   names.forEach((n, i) => {
     const k = pop ? pop(n, i) : 1; if (k <= 0) return;
     const x = off + pos[n], r = KM[n] * s * easeO(k), y = v.cy;
     let o = {};
-    if (n === 'Saturn') { const rg = saturnRings(x, y, r, .28, t); o = { ringsBack: rg.back, ringsFront: rg.front }; }
-    planet(x, y, r, KIND[n], t + i * 3, o);
+    if (n === 'Saturn') { const rg = saturnRings(x, y, r / KM.Saturn); o = { ringsBack: rg.back, ringsFront: rg.front }; }
+    planet(x, y, r, KIND[n], spinTime + i * 3, o);
     const close = i > 0 && x - lastX < 70; lastX = x; bump = close ? !bump : false;
     const ly = y + Math.max(r * (n === 'Saturn' ? .9 : 1), 3) + 22 + (bump ? 15 : 0); // close neighbours take turns, so their names do not run together
     label(x, ly, n, null, { a: clamp(k, 0, 1) * (hl && hl !== n ? .7 : 1), color: hl === n ? '#ffd27a' : '#f4efe6' });
   });
   return pos;
 }
+const voyagerPhoto = new Image();
+voyagerPhoto.src = '../img/pale-blue-dot.jpg';
 const S1 = {
   thumb: 1, id: 'planets', title: 'The Earth among the planets', short: 'Planets', accent: '#7cc0ff',
   blurb: 'Four rocky worlds, four giants and a Sun that could hold more than a million Earths.',
@@ -336,42 +362,46 @@ const S1 = {
       text: 'The four planets nearest the Sun are made of rock and metal. The Earth is the largest of them, with Venus close behind; Mars is about half the Earth\'s width and Mercury little more than a third.',
       facts: [['Earth', '12,742 km across'], ['Venus', '95% of the Earth\'s width'], ['Mars', '53%'], ['Mercury', '38%']],
       src: 'Source: NASA Planetary Fact Sheet (mean radii)', dur: 10,
-      draw(v, t) { const s = fitScale(ROCKY, v.w * .8), L = layout(ROCKY, s); lineup(v, ROCKY, s, v.cx - L.total / 2, t, (n, i) => (t - .2 - i * .35) / .9, 'Earth'); } },
+      draw(v, t, spinTime = t) { const s = fitScale(ROCKY, v.w * .8), L = layout(ROCKY, s); lineup(v, ROCKY, s, v.cx - L.total / 2, spinTime, (n, i) => (t - .2 - i * .35) / .9, 'Earth'); } },
     { short: 'Giants', title: 'Then the giants',
       text: 'Beyond Mars the planets are giants of gas and ice. Jupiter is eleven times as wide as the Earth: about 1,300 Earths would fit inside it. Saturn, with its rings, is nearly as big; Uranus and Neptune are about four Earths across.',
       facts: [['Jupiter', '11.0 Earths across'], ['Saturn', '9.1 (rings: 21)'], ['Uranus', '4.0'], ['Neptune', '3.9']],
-      src: 'Source: NASA Planetary Fact Sheet', dur: 12,
-      draw(v, t) {
+      src: 'Sources: NASA Planetary Fact Sheet; Irwin et al. 2024 (Uranus and Neptune colours)', dur: 12,
+      draw(v, t, spinTime = t) {
         const s0 = fitScale(ROCKY, v.w * .8), s1 = fitScale(ALL8, v.w * .96), k = ease((t - .4) / 3), s = lerpLog(s0, s1, k);
         const L0 = layout(ROCKY, s0), e0 = v.cx - L0.total / 2 + L0.pos.Earth, L1 = layout(ALL8, s1), e1 = v.cx - L1.total / 2 + L1.pos.Earth;
         const L = layout(ALL8, s), off = lerp(e0, e1, k) - L.pos.Earth;
-        lineup(v, ALL8, s, off, t, (n, i) => i < 4 ? 1 : (t - 1.5 - (i - 4) * .45) / 1, 'Earth');
+        lineup(v, ALL8, s, off, spinTime, (n, i) => i < 4 ? 1 : (t - 1.5 - (i - 4) * .45) / 1, 'Earth');
       } },
     { short: 'Red Spot', title: 'A storm wider than the Earth',
       text: 'Jupiter\'s Great Red Spot is a storm that has been watched since at least 1831. It has been shrinking, but in 2017 it was still about 16,350 km wide: the whole Earth would fit inside it.',
       facts: [['Great Red Spot', 'about 16,350 km (2017)'], ['Earth', '12,742 km'], ['Watched since', 'at least 1831']],
       src: 'Source: Simon et al. 2018, Astronomical Journal 155:151; NASA', dur: 11,
       draw(v, t) {
-        const R = v.h * 1.25, s = R / KM.Jupiter, jx = v.cx - R * .3, jy = v.cy - R * .37;
+        const R = v.s * (v.ph ? 1.05 : 1.25), s = R / KM.Jupiter, jx = v.cx - R * .3, jy = v.cy - R * .37;
         g.save(); g.beginPath(); g.rect(v.x0 - 40, 0, v.W, v.H); g.clip();
         planet(jx, jy, R, 'jupiter', t * .4, { spin: -.2706 }); // turned so the Red Spot (22.5° S) faces us a little right of centre
         g.restore();
-        const gx = jx + R * .25, gy = jy + R * .383, a = 8175 * s * .96, b = R * .072;
-        const k = ease((t - 1) / 2.5), ex = lerp(v.x1 - 6371 * s - 10, gx, k), ey = lerp(gy + b * 2.6, gy, k);
+        const lat = -22.5 * Math.PI / 180, roll = ORI.jupiter[0] * Math.PI / 180;
+        const ax = Math.sin(.2706) * Math.cos(lat), ay = Math.sin(lat);
+        const [dx, dy] = planetPoint(ax * Math.cos(roll) + ay * Math.sin(roll), ax * Math.sin(roll) - ay * Math.cos(roll), 'jupiter');
+        const gx = jx + R * dx, gy = jy + R * dy, a = 8175 * s * .96, b = R * .072;
+        const er = KM.Earth * s, k = ease((t - 1) / 2.5);
+        const ex = lerp(v.x1 - er - 10, gx, k), ey = gy + b + er + 10;
         ring(gx, gy, a, 'rgba(255,210,122,.8)', 1.5, [6, 5], b);
-        planet(ex, ey, 6371 * s, 'earth', t, { night: .55 });
+        planet(ex, ey, er, 'earth', t, { night: .55 });
         if (t > 1) label(gx, gy - b - 14, 'Great Red Spot, 2017', '16,350 km across', { a: ease(t - 1), color: '#ffd27a' });
-        label(ex, ey + 6371 * s + 22, 'The Earth', '12,742 km', { a: ease(t - .3) });
+        label(ex, ey + er + 18, 'The Earth', '12,742 km', { a: ease(t - .3) });
       } },
     { short: 'Rings', title: 'Saturn\'s rings',
       text: 'Saturn\'s bright main rings measure about 273,000 km from edge to edge, more than two thirds of the way from the Earth to the Moon. Yet in most places they are only about ten metres thick: ice, from grains to boulders.',
       facts: [['Main rings', 'about 273,000 km across'], ['Earth to Moon', '384,400 km'], ['Thickness', 'mostly about 10 m']],
       src: 'Sources: NASA Saturn Fact Sheet; NASA Cassini mission', dur: 12,
       draw(v, t) {
-        const s = (v.w * .8) / 384400, sx = v.cx, sy = v.cy - v.h * .1, r = KM.Saturn * s, rg = saturnRings(sx, sy, r, .3, t);
+        const s = (v.w * .8) / 384400, sx = v.cx, sy = v.cy - v.h * .1, r = KM.Saturn * s, rg = saturnRings(sx, sy, s);
         planet(sx, sy, r, 'saturn', t, { ringsBack: rg.back, ringsFront: rg.front });
-        const yb = sy + r * 2.27 * .3 + 34;
-        measure(sx - r * 2.27, yb, sx + r * 2.27, (t - .8) / 1.6, 'Main rings', '273,000 km');
+        const outer = SATURN_RING_EDGE * s, yb = sy + outer * .35 + 34;
+        measure(sx - outer, yb, sx + outer, (t - .8) / 1.6, 'Main rings', '273,000 km');
         const ey = v.cy + v.h * .34, ex0 = v.cx - 384400 * s / 2, ex1 = ex0 + 384400 * s;
         const k = (t - 3) / 2.2;
         if (k > 0) {
@@ -397,13 +427,18 @@ const S1 = {
     { short: 'Blue dot', title: 'A pale blue dot',
       text: 'On 14 February 1990, Voyager 1 turned its camera back from about 6 billion km away and photographed the Earth. In that picture our planet is less than a single pixel, caught in a band of scattered sunlight.',
       facts: [['Distance', 'about 6 billion km'], ['Size in the picture', 'less than a pixel'], ['Taken', '14 February 1990']],
-      src: 'Source: NASA/JPL, Voyager 1 "Pale Blue Dot" (PIA00452)', dur: 11,
+      src: 'Photo: NASA/JPL-Caltech, Voyager 1 Pale Blue Dot (PIA00452)', photo: true, dur: 11,
       draw(v, t) {
-        const bands = [[.18, [150, 96, 60]], [.38, [120, 86, 70]], [.55, [200, 150, 110]], [.74, [90, 80, 110]]];
-        for (const [x, c] of bands) { const bx = v.x0 + x * v.w + Math.sin(t * .1 + x * 9) * 6, gr = g.createLinearGradient(bx - v.w * .09, 0, bx + v.w * .09, 0); gr.addColorStop(0, rgba(c, 0)); gr.addColorStop(.5, rgba(c, .28)); gr.addColorStop(1, rgba(c, 0)); g.fillStyle = gr; g.fillRect(bx - v.w * .09, v.y0 - 60, v.w * .18, v.h + 120); }
-        const ex = v.x0 + .55 * v.w + 4, ey = v.cy + v.h * .12;
-        disc(ex, ey, 1.1, 'rgba(170,200,255,1)'); glow(ex, ey, 5, [140, 180, 255], .7);
-        const k = ease((t - 2) / 1.5); if (k > 0) { ring(ex, ey, 26 - 8 * k, `rgba(255,210,122,${.8 * k})`, 1.5); label(ex, ey - 40, 'The Earth', 'from about 6 billion km', { a: k, color: '#ffd27a' }); }
+        if (!voyagerPhoto.naturalWidth) return;
+        const h = Math.min(v.h * .95, v.w * .9 * voyagerPhoto.naturalHeight / voyagerPhoto.naturalWidth);
+        const w = h * voyagerPhoto.naturalWidth / voyagerPhoto.naturalHeight;
+        const k = ease((t - 1) / 5), z = lerp(1, 1.8, k);
+        const ex = lerp(v.cx + w * .26, v.cx, k), ey = lerp(v.cy + h * .06, v.cy, k);
+        g.save(); g.beginPath(); g.rect(v.x0, v.y0, v.w, v.h); g.clip();
+        g.drawImage(voyagerPhoto, ex - w * z * 345 / 453, ey - h * z * 345 / 614, w * z, h * z);
+        g.restore();
+        const a = ease((t - 2) / 1.5);
+        if (a > 0) { ring(ex, ey, 17, `rgba(255,210,122,${.8 * a})`, 1.5); label(ex, ey - 30, 'The Earth', 'from about 6 billion km', { a, color: '#ffd27a' }); }
       } },
   ],
 };
@@ -635,14 +670,12 @@ function solar(v, t, pxAU, cx, cy, fade = 1, speed = 1) {
     if (r > 40 && fade > .5) label(cx + Math.cos(th) * r, cy + Math.sin(th) * r - 10, n, null, { size: 11, a: fade * .85 }); }
   star(cx, cy, clamp(pxAU * .004652, 2.5, 18), [255, 220, 150], t);
 }
-const FIELDGX = (() => { const R = rng(29), a = []; for (let i = 0; i < 560; i++) { const u = R(); let kind, sz, sq = .35 + R() * .65;
-  if (u < .38) { kind = 8; sz = .004 + R() * .006; sq = 1; } else if (u < .58) { kind = 3 + (R() * 2 | 0); sz = .008 + Math.pow(R(), 3) * .04; sq = .55 + R() * .45; }
-  else if (u < .72) { kind = R() * 3 | 0; sz = .01 + Math.pow(R(), 4) * .055; } else if (u < .8) { kind = 5; sz = .012 + R() * .035; sq = 1; } else { kind = 6 + (R() * 2 | 0); sz = .008 + R() * .028; }
-  a.push([R(), R(), sz, kind, R() * TAU, sq, kind < 3 ? .35 + R() * .4 : .55 + R() * .45]); } return a; })();
+const deepFieldPhoto = new Image();
+deepFieldPhoto.src = '../img/hubble-ultra-deep-field.jpg';
 const WEB = (() => { const R = rng(31), nodes = [], links = []; for (let i = 0; i < 300; i++) { const a = R() * TAU, d = 2.3 * Math.sqrt(R()); nodes.push([Math.cos(a) * d, Math.sin(a) * d]); }
   nodes.forEach((p, i) => { const d = nodes.map((q, j) => [Math.hypot(q[0] - p[0], q[1] - p[1]), j]).sort((a, b) => a[0] - b[0]); for (let k = 1; k <= 3; k++) if (d[k][1] > i) links.push([i, d[k][1]]); }); return { nodes, links }; })();
 const S5 = {
-  thumb: 4, id: 'how-big', title: 'How big is the universe?', short: 'Enormity', accent: '#4fd1c5',
+  thumb: 5, thumbT: 3, id: 'how-big', title: 'How big is the universe?', short: 'Enormity', accent: '#4fd1c5',
   blurb: 'From eight light-minutes to the Sun to two trillion galaxies, one step at a time.',
   chapters: [
     { short: 'The Sun', title: 'Eight minutes from the Sun',
@@ -673,14 +706,16 @@ const S5 = {
       src: 'Source: NASA, The Milky Way galaxy', dur: 12, live: (t) => `Stars counted: ${fmt(Math.pow(clamp((t - .5) / 7, 0, 1), 3) * 1e11)}${t > 7.5 ? ' … and perhaps 300 billion more' : ''}`,
       draw(v, t) { sprites(); const sz = lerpLog(v.s * .2, v.s * 1.05, ease(t / 6)); drawSprite(MW, v.cx, v.cy, sz, CALM ? 0 : t * .02); const sp = [v.cx, v.cy + sz * .27]; disc(sp[0], sp[1], 2.2, '#ffd27a'); glow(sp[0], sp[1], 10, [255, 210, 122], .8); label(sp[0] + 8, sp[1] + 4, 'You are here', null, { align: 'left', size: 12, color: '#ffd27a' }); } },
     { short: 'Deep field', title: 'A tiny patch of sky',
-      text: 'The Hubble Ultra Deep Field looked at a patch of sky about a tenth the width of the full Moon, which seemed empty. In it were about 10,000 galaxies. Every direction you look holds as many.',
+      text: 'The Hubble Ultra Deep Field looked at a patch of sky about a tenth the width of the full Moon, which seemed empty. The long exposure revealed about 10,000 galaxies in this small field.',
       facts: [['Patch of sky', 'a tenth of the Moon\'s width'], ['Galaxies in it', 'about 10,000'], ['Oldest light', 'over 13 billion years old']],
-      src: 'Source: NASA/ESA, Hubble Ultra Deep Field (2004, 2014)', dur: 12,
-      draw(v, t) { sprites(); const k = ease((t - 1.2) / 4.5), sz = lerpLog(10, Math.max(v.w, v.h) * 1.15, k), x0 = v.cx - sz / 2, y0 = v.cy - sz / 2;
-        g.save(); g.beginPath(); g.rect(x0, y0, sz, sz); g.clip(); g.fillStyle = '#020309'; g.fillRect(x0, y0, sz, sz);
-        for (const [fx, fy, fs, kind, rot, sq, al] of FIELDGX) drawSprite(FIELD[kind], x0 + fx * sz, y0 + fy * sz, Math.max(2.5, fs * sz * 2), rot, sq, al, 1);
-        g.restore(); ring(v.cx, v.cy, 0, 'rgba(0,0,0,0)'); g.strokeStyle = `rgba(79,209,197,${.9 - .7 * k})`; g.lineWidth = 1.5; g.strokeRect(x0, y0, sz, sz);
-        if (k < .3) label(v.cx, y0 - 12, 'This patch of sky', null, { color: '#7fe3d8', size: 12.5 }); } },
+      src: 'Image: NASA, ESA, S. Beckwith (STScI) and the HUDF Team, Hubble Ultra Deep Field (2004)', photo: true, dur: 12,
+      draw(v, t) {
+        const k = ease((t - 1.2) / 4.5), sz = lerpLog(10, v.s * .94, k);
+        const x = v.cx - sz / 2, y = v.cy - sz / 2;
+        if (deepFieldPhoto.naturalWidth) g.drawImage(deepFieldPhoto, x, y, sz, sz);
+        g.strokeStyle = `rgba(79,209,197,${.9 - .7 * k})`; g.lineWidth = 1.5; g.strokeRect(x, y, sz, sz);
+        if (k < .3) label(v.cx, y - 12, 'This patch of sky', null, { color: '#7fe3d8', size: 12.5 });
+      } },
     { short: 'Everything', title: 'The observable universe',
       text: 'The part of the universe we can see is about 93 billion light years across. It holds somewhere between 200 billion and 2 trillion galaxies, strung along a web of filaments, and perhaps 10²² to 10²⁴ stars: more than the grains of sand on all the Earth\'s beaches.',
       facts: [['Width', 'about 93 billion light years'], ['Galaxies', '200 billion to 2 trillion'], ['Stars', 'about 10²² to 10²⁴']],
@@ -723,13 +758,14 @@ const S6 = {
       src: 'Sources: NASA Exoplanet Archive (milestones; the curve between them is approximate); Wolszczan & Frail 1992, Nature 355:145', dur: 12,
       draw(v, t) { chart(v, t); } },
     { short: 'Transit', title: 'A shadow on a star',
-      text: 'Most exoplanets are found by the dip in a star\'s light when a planet passes in front of it. The dip is tiny: a Jupiter dims a Sun-like star by about 1%, an Earth by less than 0.01%. Here the planet is enlarged so the dip shows.',
+      text: 'Most exoplanets are found by the dip in a star\'s light when a planet passes in front of it. A Jupiter-sized planet dims a Sun-like star by about 1%. An Earth-sized planet dims it by less than 0.01%. The graph magnifies the change in light.',
       facts: [['Jupiter in front of the Sun', 'about 1% dimmer'], ['Earth in front of the Sun', '0.008% dimmer'], ['Found this way', 'about three in four']],
       src: 'Sources: NASA Kepler and TESS missions; NASA Exoplanet Archive', dur: 12,
-      draw(v, t) { const R = v.h * .22, sx = v.cx, sy = v.y0 + R + 10, rp = R * .2, ph = ((t - .5) % 9) / 9, px = lerp(sx - R * 1.8, sx + R * 1.8, ph);
+      draw(v, t) { const R = v.s * .22, sx = v.cx, sy = v.y0 + R + 10, rp = R * .1, ph = clamp((t - .5) / 9, 0, 1), px = lerp(sx - R * 1.8, sx + R * 1.8, ph);
         star(sx, sy, R, [255, 226, 170], t, 6); if (Math.abs(px - sx) < R + rp) disc(px, sy + R * .15, rp, '#05070d'); else disc(px, sy + R * .15, rp, 'rgba(40,50,70,.9)');
-        const gx0 = v.x0 + 30, gx1 = v.x1 - 30, gy = v.y1 - 40, hgt = v.h * .2, F = (p) => { const x = lerp(sx - R * 1.8, sx + R * 1.8, p), d = Math.abs(x - sx); return d > R + rp ? 1 : d < R - rp ? 1 - .04 : 1 - .04 * (R + rp - d) / (2 * rp); };
-        line(gx0, gy, gx1, gy, 'rgba(244,239,230,.15)'); g.beginPath(); for (let i = 0; i <= 200; i++) { const p = i / 200; if (p > ph) break; const x = lerp(gx0, gx1, p), y = gy - (F(p) - .96) / .04 * hgt; i ? g.lineTo(x, y) : g.moveTo(x, y); } g.strokeStyle = '#ffd27a'; g.lineWidth = 2; g.stroke();
+        const gx0 = v.x0 + 30, gx1 = v.x1 - 30, gy = v.y1 - 40, hgt = v.h * .2;
+        const blocked = (p) => { const d = Math.hypot(lerp(-1.8, 1.8, p), .15); return ease((1.1 - d) / .2); };
+        line(gx0, gy, gx1, gy, 'rgba(244,239,230,.15)'); g.beginPath(); for (let i = 0; i <= 200; i++) { const p = i / 200; if (p > ph) break; const x = lerp(gx0, gx1, p), y = gy - (1 - blocked(p)) * hgt; i ? g.lineTo(x, y) : g.moveTo(x, y); } g.strokeStyle = '#ffd27a'; g.lineWidth = 2; g.stroke();
         label(gx0, gy - hgt - 10, 'Starlight', null, { align: 'left', size: 11.5, color: '#9a9a93' }); } },
     { short: 'Wobble', title: 'The wobble that found 51 Pegasi b',
       text: 'A planet tugs its star around in a small circle. As the star moves towards us its light is shifted bluer, then redder as it moves away. In 1995 this wobble revealed 51 Pegasi b, a giant planet that circles its star in just 4.2 days. Its discoverers won the 2019 Nobel Prize.',
@@ -757,22 +793,25 @@ const S6 = {
         ring(cx, cy, .7048 * sc, 'rgba(244,239,230,.2)', 1, [4, 4], .7048 * sc * .45); ring(cx, cy, sep * qb, 'rgba(244,239,230,.12)', 1, null, sep * qb * .45);
         star(cx - Math.cos(thb) * sep * qa, cy - Math.sin(thb) * sep * qa * .45, 9, [255, 180, 110], t); star(cx + Math.cos(thb) * sep * qb, cy + Math.sin(thb) * sep * qb * .45, 5, [255, 110, 70], t);
         const px = cx + Math.cos(thp) * .7048 * sc, py = cy + Math.sin(thp) * .7048 * sc * .45; planet(px, py, 6, 'saturn', t); label(px, py - 12, 'Kepler-16b', null, { size: 11.5 }); } },
-    { short: 'Iron rain', title: 'Where it rains iron',
-      text: 'WASP-76b is a giant planet so close to its star that one side always faces it, at about 2,400 °C: hot enough to boil iron. Winds carry the iron vapour to the cooler night side, where it seems to condense and fall as rain.',
+    { short: 'Iron rain', title: 'Could it rain iron?',
+      text: 'WASP-76b is a giant planet so close to its star that one side always faces it, at about 2,400 °C: hot enough to boil iron. Astronomers detected a difference in iron absorption between its limbs. Iron could condense on the cooler side, and temperature differences could also explain the signal.',
       facts: [['Day side', 'about 2,400 °C'], ['Its year', '1.8 days'], ['Distance', 'about 640 light years']],
-      src: 'Source: Ehrenreich et al. 2020, Nature 580:597', dur: 12,
-      draw(v, t) { const R = v.h * .36, cx = v.cx + v.w * .05, cy = v.cy; glow(v.x0 - 40, cy, v.w * .5, [255, 200, 140], .5);
+      src: 'Sources: Ehrenreich et al. 2020, Nature 580:597; Wardenier et al. 2021, MNRAS 506:1258', dur: 12,
+      draw(v, t) { const R = v.s * .36, cx = v.cx + v.w * .05, cy = v.cy; glow(v.x0 - 40, cy, v.w * .5, [255, 200, 140], .5);
         g.save(); g.beginPath(); g.arc(cx, cy, R, 0, TAU); g.clip(); const gr = g.createLinearGradient(cx - R, 0, cx + R, 0); gr.addColorStop(0, '#fff2c8'); gr.addColorStop(.3, '#ff9a4a'); gr.addColorStop(.5, '#a8402a'); gr.addColorStop(.6, '#2a1830'); gr.addColorStop(1, '#0a0c1a'); g.fillStyle = gr; g.fillRect(cx - R, cy - R, 2 * R, 2 * R);
-        const RR = rng(3); for (let i = 0; i < 90; i++) { const x = cx + R * (.15 + .7 * RR()), y0 = cy - R + RR() * 2 * R, fall = ((CALM ? 0 : t) * (40 + 30 * RR()) + RR() * 200) % (R * .5); line(x, y0 + fall, x - 2, y0 + fall + 9, 'rgba(200,210,230,.55)', 1); }
+        const RR = rng(3); for (let i = 0; i < 90; i++) { const x = cx + R * (.15 + .7 * RR()), y0 = cy - R + RR() * 2 * R, fall = ((CALM ? 0 : t) * (40 + 30 * RR()) + RR() * 200) % (R * .5); line(x, y0 + fall, x - 2, y0 + fall + 9, `rgba(200,210,230,${.38 * Math.sin(Math.PI * fall / (R * .5))})`, 1); }
         g.restore();
         for (let i = 0; i < 3; i++) { const y = cy - R * (.75 - i * .55), ph = ((CALM ? 0 : t) * .3 + i * .3) % 1; g.beginPath(); g.moveTo(cx - R * .6, y); g.quadraticCurveTo(cx, y - R * .25, cx + R * .6, y); g.strokeStyle = 'rgba(255,210,122,.4)'; g.lineWidth = 1.5; g.setLineDash([6, 8]); g.lineDashOffset = -ph * 56; g.stroke(); g.setLineDash([]); }
-        label(cx - R * .55, cy + R + 26, 'Day side, facing the star', null, { size: 12, color: '#ffd27a' }); label(cx + R * .55, cy + R + 26, 'Night side: iron rain', null, { size: 12, color: '#bcc8e0' }); } },
+        label(cx - R * .55, cy + R + 26, 'Day side', null, { size: 12, color: '#ffd27a' }); label(cx + R * .55, cy + R + 26, 'Possible iron rain', null, { size: 12, color: '#bcc8e0' }); } },
   ],
 };
 STORIES.push(S3, S4, S5, S6);
 
 // ---------------------------------------------------------------- the page: picker, chapters, dock, playback
-let cur = null, ci = 0, ct = 0, prevCh = null, fadeT = 1, playing = !CALM, textOn = true, last = performance.now();
+const FADE = .9;
+const nextFrame = document.createElement('canvas'), nextContext = nextFrame.getContext('2d');
+const interruptedFrame = document.createElement('canvas');
+let cur = null, ci = 0, ct = 0, chapterStart = 0, prevCh = null, fadeT = 1, playing = !CALM, textOn = true, last = performance.now();
 const cards = $('cards');
 function storyUrl(s, i) { return `#${s.id}/${i + 1}`; }
 function buildCards() {
@@ -787,12 +826,23 @@ function buildCards() {
   });
 }
 function openStory(s, i) {
-  if (cur !== s) { cur = s; prevCh = null; buildDock(); } else if (i !== ci) prevCh = { ch: s.chapters[ci], t: ct };
-  ci = clamp(i, 0, s.chapters.length - 1); ct = 0; fadeT = prevCh ? 0 : 1;
+  i = clamp(i, 0, s.chapters.length - 1);
+  const same = cur === s;
+  if (same && i === ci) return;
+  if (!same) { cur = s; prevCh = null; buildDock(); }
+  else if (!CALM) {
+    if (prevCh && fadeT < 1) {
+      // A quick second chapter change should start from the image the reader can actually see.
+      interruptedFrame.width = cv.width; interruptedFrame.height = cv.height;
+      interruptedFrame.getContext('2d').drawImage(cv, 0, 0);
+      prevCh = { image: interruptedFrame };
+    } else prevCh = { ch: s.chapters[ci], t: ct, start: chapterStart };
+  }
+  ci = i; ct = 0; chapterStart = s.chapters.slice(0, i).reduce((total, c) => total + c.dur, 0); fadeT = prevCh ? 0 : 1;
   document.body.classList.remove('picking'); $('cap').hidden = false; $('dock').hidden = false; $('tabStories').removeAttribute('aria-current');
-  showText(); setPlaying(!CALM);
+  showText(); if (!same) setPlaying(!CALM);
 }
-function closeStory() { cur = null; document.body.classList.add('picking'); $('cap').hidden = true; $('dock').hidden = true; $('tabStories').setAttribute('aria-current', 'page'); }
+function closeStory() { cur = null; prevCh = null; document.body.classList.add('picking'); $('cap').hidden = true; $('dock').hidden = true; $('tabStories').setAttribute('aria-current', 'page'); }
 function route() {
   const m = /^#([\w-]+)\/(\d+)$/.exec(location.hash), s = m && STORIES.find((x) => x.id === m[1]);
   if (s) openStory(s, +m[2] - 1); else closeStory();
@@ -803,7 +853,7 @@ function showText() {
   $('kick').textContent = `${cur.title.toUpperCase()} · ${ci + 1} OF ${n}`; $('kick').style.color = cur.accent;
   $('title').textContent = ch.title; $('text').textContent = ch.text; $('live').textContent = '';
   $('facts').innerHTML = (ch.facts || []).map(([a, b]) => `<dt>${esc(a.toUpperCase())}</dt><dd>${esc(b)}</dd>`).join('');
-  $('src').textContent = ch.src || '';
+  $('src').textContent = ch.src || ''; $('src').classList.toggle('image-credit', !!ch.photo);
   const nx = STORIES[idx + 1]; $('snext').hidden = !(ci === n - 1);
   $('snext').innerHTML = ci === n - 1 ? (nx ? `<a href="${storyUrl(nx, 0)}">Next story: ${esc(nx.title)} ›</a>` : '<a href="./">All stories</a>') : '';
   const cap = $('cap'); cap.classList.remove('in'); void cap.offsetWidth; cap.classList.add('in');
@@ -817,23 +867,46 @@ function buildDock() {
 }
 function setPlaying(p) { playing = p; $('play').setAttribute('aria-label', p ? 'Pause' : 'Play'); $('playicon').innerHTML = p ? '<path d="M7 5h4v14H7zM13 5h4v14h-4z"/>' : '<path d="M8 5v14l11-7z"/>'; }
 
+function drawChapter(ctx, ch, v, t, clock) {
+  const old = g; g = ctx; ctx.save();
+  try {
+    ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
+    ctx.fillStyle = '#04060c'; ctx.fillRect(0, 0, W, H);
+    sky(W, H, 0, .9);
+    ch.draw(v, t, clock);
+  } finally { ctx.restore(); g = old; }
+}
 function frame(now) {
   const dt = Math.min(.1, (now - last) / 1000); last = now;
   size();
   g.setTransform(DPR, 0, 0, DPR, 0, 0);
-  g.fillStyle = '#04060c'; g.fillRect(0, 0, W, H);
   const T = now / 1000;
-  if (!cur) { sky(W, H, T, 1, CALM ? 0 : T * .3); }
+  if (!cur) { g.fillStyle = '#04060c'; g.fillRect(0, 0, W, H); sky(W, H, CALM ? 0 : T, 1, CALM ? 0 : T * .3); }
   else {
-    const ch = cur.chapters[ci];
-    if (playing) { ct += dt; if (ct > ch.dur) { if (ci < cur.chapters.length - 1) go(ci + 1); else { ct = ch.dur; setPlaying(false); } } }
-    else if (!CALM) ct += 0; // paused: the picture holds
-    fadeT = Math.min(1, fadeT + dt / .9);
-    const v = viewport(W, H, textOn);
-    sky(W, H, T, .9);
-    const animT = CALM ? ch.dur * .8 : ct;
-    if (prevCh && fadeT < 1) { g.save(); g.globalAlpha = 1 - ease(fadeT); try { prevCh.ch.draw(v, prevCh.t + fadeT * .9); } catch (e) { console.error(e); } g.restore(); }
-    g.save(); g.globalAlpha = ease(fadeT); try { ch.draw(v, animT); } catch (e) { console.error(e); } g.restore();
+    if (playing) {
+      ct += dt;
+      const end = cur.chapters[ci].dur;
+      if (ct >= end) {
+        const carry = ct - end;
+        ct = end;
+        if (ci < cur.chapters.length - 1) { go(ci + 1); ct = carry; }
+        else setPlaying(false);
+      }
+      if (prevCh?.ch) prevCh.t += dt;
+    }
+    const ch = cur.chapters[ci], v = viewport(W, H, textOn), animT = CALM ? ch.dur * .8 : ct;
+    const clock = chapterStart + animT;
+    fadeT = Math.min(1, fadeT + dt / FADE);
+    if (fadeT < 1 && prevCh) {
+      if (prevCh.image) g.drawImage(prevCh.image, 0, 0, W, H);
+      else drawChapter(g, prevCh.ch, v, prevCh.t, prevCh.start + prevCh.t);
+      if (nextFrame.width !== cv.width || nextFrame.height !== cv.height) {
+        nextFrame.width = cv.width; nextFrame.height = cv.height;
+      }
+      drawChapter(nextContext, ch, v, animT, clock);
+      // Blend complete frames so a chapter's internal opacity and additive glows cannot bypass the fade.
+      g.save(); g.globalAlpha = ease(fadeT); g.drawImage(nextFrame, 0, 0, W, H); g.restore();
+    } else { prevCh = null; drawChapter(g, ch, v, animT, clock); }
     if (ch.live) { const lv = ch.live(animT); if ($('live').textContent !== lv) $('live').textContent = lv; }
     const n = cur.chapters.length, p = (ci + clamp(ct / ch.dur, 0, 1)) / n * 100;
     $('cursor').style.left = p + '%'; const pill = $('pill'); pill.style.left = p + '%'; if (pill.textContent !== ch.short) pill.textContent = ch.short;
@@ -854,7 +927,7 @@ addEventListener('keydown', (e) => {
   else if (e.key === 'c' || e.key === 'C') $('cc').click(); else if (e.key === 'f' || e.key === 'F') $('fs').click();
 });
 addEventListener('hashchange', route);
-document.fonts?.ready.then(() => buildCards()); buildCards();
+buildCards();
 route();
 requestAnimationFrame((t) => { last = t; frame(t); });
 })();
