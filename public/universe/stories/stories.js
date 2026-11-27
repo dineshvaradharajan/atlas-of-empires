@@ -60,6 +60,44 @@ function star(x, y, r, c, t = 0, seed = 1, big = 1) {
     g.restore();
   }
 }
+// a star in the colour of its surface temperature (Tanner Helland's fit to the colour of a blackbody, with the saturation raised so the
+// differences read on screen) and with the surface of its kind: hot blue-white stars smooth; a dwarf like the Sun with fine granulation
+// (and the Sun's spots); a giant mottled; a red supergiant lumpy-edged, with a few huge convection cells and a bright patch, as in the
+// VLT and ALMA images of Betelgeuse and Antares, inside a reddish haze of the gas and dust it sheds
+function bb(T) {
+  const k = T / 100, r = k <= 66 ? 255 : 329.698727446 * Math.pow(k - 60, -.1332047592);
+  const gg = k <= 66 ? 99.4708025861 * Math.log(k) - 161.1195681661 : 288.1221695283 * Math.pow(k - 60, -.0755148492);
+  const b = k >= 66 ? 255 : k <= 19 ? 0 : 138.5177312231 * Math.log(k - 10) - 305.0447927307;
+  const c = [r, gg, b].map((v) => clamp(v, 0, 255)), m = (c[0] + c[1] + c[2]) / 3; return c.map((v) => clamp(m + (v - m) * 1.6, 0, 255));
+}
+function starT(x, y, r, T, t, seed, cls, o = {}) {
+  const c = bb(T), hot = T > 7000;
+  if (r < 1.6) { glow(x, y, 7 + r * 5, c, .9); disc(x, y, Math.max(.9, r), rgba(mixc(c, WHITE, .5))); return; }
+  if (o.nebula) { const R = rng(seed + 9); for (let i = 0; i < 14; i++) { const a = R() * TAU, d = r * (1.3 + R() * 1.4); glow(x + Math.cos(a) * d, y + Math.sin(a) * d * .8, r * (.35 + .5 * R()), [220, 110, 70], .12); } } // VY CMa's cloud of shed dust, after Hubble's image
+  glow(x, y, r * (hot ? 2.7 : cls === 'super' ? 1.7 : 2.1), c, hot ? .55 : .42);
+  if (cls === 'super' && !hot) glow(x, y, r * 1.3, mixc(c, [255, 80, 40], .55), .4);
+  const R = rng(seed), wob = cls === 'super' && !hot ? .012 : 0, ph = seed * 1.7; // a slightly uneven edge: its outer layers are not sharp
+  g.save(); g.beginPath();
+  for (let k = 0; k <= 72; k++) { const a = k / 72 * TAU, rr = r * (1 + wob * (Math.sin(a * 3 + ph) + .6 * Math.sin(a * 5 + ph * 2 + t * .05))); k ? g.lineTo(x + Math.cos(a) * rr, y + Math.sin(a) * rr) : g.moveTo(x + Math.cos(a) * rr, y + Math.sin(a) * rr); }
+  g.closePath(); g.clip();
+  const edge = hot ? mixc(c, BLACK, .22) : mixc(mixc(c, [190, 50, 25], cls === 'super' ? .55 : .35), BLACK, cls === 'super' ? .5 : .4);
+  const gr = g.createRadialGradient(x - r * .08, y - r * .08, 0, x, y, r * 1.04);
+  const wc = hot ? .6 : T < 4500 ? .18 : .45; // cool stars keep their orange to the centre
+  gr.addColorStop(0, rgba(mixc(c, WHITE, wc))); gr.addColorStop(.5, rgba(mixc(c, WHITE, wc * .4))); gr.addColorStop(.85, rgba(c)); gr.addColorStop(1, rgba(edge));
+  g.fillStyle = gr; g.fillRect(x - r * 1.1, y - r * 1.1, r * 2.2, r * 2.2);
+  if (!hot && r > 8) {
+    const n = cls === 'super' ? 11 : cls === 'giant' ? Math.round(clamp(r * 1.2, 40, 240)) : Math.round(clamp(r * 3, 60, 600));
+    for (let i = 0; i < n; i++) {
+      const a = R() * TAU + t * .012 * (R() - .5), d = Math.sqrt(R()) * r, sz = r * (cls === 'super' ? .22 + .25 * R() : cls === 'giant' ? .03 + .05 * R() : .01 + .018 * R());
+      const px = x + Math.cos(a) * d, py = y + Math.sin(a) * d, f = .5 + .5 * Math.sin(t * .4 + i * 1.7), cc = R() < .55 ? mixc(c, [120, 30, 10], .45) : mixc(c, WHITE, .35);
+      const al = (cls === 'super' ? .26 : cls === 'giant' ? .1 : .05) + .05 * f, cg = g.createRadialGradient(px, py, 0, px, py, sz);
+      cg.addColorStop(0, rgba(cc, al)); cg.addColorStop(1, rgba(cc, 0)); g.fillStyle = cg; g.fillRect(px - sz, py - sz, 2 * sz, 2 * sz);
+    }
+    if (cls === 'super') { const hx = x + r * .22, hy = y - r * .18, hg = g.createRadialGradient(hx, hy, 0, hx, hy, r * .5); hg.addColorStop(0, rgba(mixc(c, WHITE, .45), .5)); hg.addColorStop(1, rgba(c, 0)); g.fillStyle = hg; g.fillRect(hx - r * .5, hy - r * .5, r, r); }
+    if (o.spots) for (const [sx, sy, k] of [[-.32, .14, 1], [-.27, .17, .6], [-.35, .1, .5], [.2, -.24, .8], [.24, -.22, .5]]) { const px = x + sx * r, py = y + sy * r; disc(px, py, r * .016 * k, rgba(mixc(c, [110, 50, 15], .55), .6)); disc(px, py, r * .008 * k, 'rgba(60,25,10,.8)'); } // two sunspot groups, each spot smaller than a hundredth of the disc
+  }
+  g.restore();
+}
 // planets: banded giants, rocky worlds, the Earth with land, sea, cloud and ice; lit from the left
 const LOOK = {
   mercury: { base: [150, 144, 138], spots: [[110, 104, 98], [178, 172, 164]] },
@@ -445,11 +483,13 @@ const S1 = {
 
 // ---------------------------------------------------------------- story 2: the Sun among the stars
 // radii in Sun radii; each with its source in the chapter that brings it in
+// T: surface temperature (kelvin), which sets the colour: Proxima, Ségransan et al. 2003; the Sun, IAU 2015; Sirius A, Adelman 2004; Sirius B, Barstow et al. 2005;
+// Arcturus and Aldebaran, as their radii; Rigel, Przybilla et al. 2006; Antares, Ohnaka et al. 2013; Betelgeuse, Levesque & Massey 2020; VY CMa, Wittkowski et al. 2012
 const SR = [
-  { n: 'Earth', r: .00916, p: 'earth' }, { n: 'Jupiter', r: .10045, p: 'jupiter' }, { n: 'Sirius B', r: .0084, c: C.WD },
-  { n: 'Proxima Centauri', r: .1542, c: C.M }, { n: 'The Sun', r: 1, c: [255, 220, 150] }, { n: 'Sirius A', r: 1.711, c: C.A },
-  { n: 'Arcturus', r: 25.4, c: C.K }, { n: 'Aldebaran', r: 44.2, c: [255, 160, 96] }, { n: 'Rigel', r: 78.9, c: C.B },
-  { n: 'Antares', r: 680, c: [255, 110, 70] }, { n: 'Betelgeuse', r: 764, c: [255, 128, 80] }, { n: 'VY Canis Majoris', r: 1420, c: [255, 100, 66] },
+  { n: 'Earth', r: .00916, p: 'earth' }, { n: 'Jupiter', r: .10045, p: 'jupiter' }, { n: 'Sirius B', r: .0084, T: 25000, k: 'dwarf' },
+  { n: 'Proxima Centauri', r: .1542, T: 3042, k: 'dwarf' }, { n: 'The Sun', r: 1, T: 5772, k: 'dwarf', spots: 1 }, { n: 'Sirius A', r: 1.711, T: 9940, k: 'dwarf' },
+  { n: 'Arcturus', r: 25.4, T: 4286, k: 'giant' }, { n: 'Aldebaran', r: 44.2, T: 3900, k: 'giant' }, { n: 'Rigel', r: 78.9, T: 12100, k: 'super' },
+  { n: 'Antares', r: 680, T: 3660, k: 'super' }, { n: 'Betelgeuse', r: 764, T: 3600, k: 'super' }, { n: 'VY Canis Majoris', r: 1420, T: 3490, k: 'super', nebula: 1 },
 ];
 const SRn = Object.fromEntries(SR.map((s) => [s.n, s]));
 const AU = 215.03; // Sun radii in one astronomical unit
@@ -466,7 +506,7 @@ function starRow(v, names, fresh, t, prevNames, orbitsOn) {
   list.forEach((st, i) => {
     const k = fresh.includes(st.n) ? easeO((t - .6 - fresh.indexOf(st.n) * .5) / 1.2) : 1; if (k <= 0) return;
     const px = pos[i] + shift, r = st.r * s * k, y = v.cy;
-    if (st.p) planet(px, y, r, st.p, t); else star(px, y, r, st.c, t, i + 3, st.r > 300 ? 2.4 : st.r > 20 ? 1.5 : 1);
+    if (st.p) planet(px, y, r, st.p, t); else starT(px, y, r, st.T, t, i + 3, st.k, { spots: st.spots, nebula: st.nebula });
     if (orbitsOn && st.n === names[names.length - 1]) {
       const ko = ease((t - 2.5) / 1.5);
       if (ko > 0) [['Earth', 1], ['Mars', 1.524], ['Jupiter', 5.203]].forEach(([n, au]) => {
@@ -476,7 +516,7 @@ function starRow(v, names, fresh, t, prevNames, orbitsOn) {
     }
     const small = r < 22, ly = small ? y - Math.max(r, 3) - 30 - (i % 2) * 34 : y + r + 22;
     if (small) line(px, y - Math.max(r, 3) - 4, px, ly + 4, 'rgba(244,239,230,.35)');
-    label(px, ly, st.n, st.r >= 1 ? `${st.r >= 10 ? fmt(st.r) : st.r} × the Sun` : st.p ? `${(st.r * 109.1).toFixed(st.r < .05 ? 0 : 1)} × the Earth` : `${st.r.toFixed(st.r < .05 ? 4 : 2)} × the Sun`, { a: clamp(k, 0, 1), size: 12.5, color: st.n === 'The Sun' ? '#ffd27a' : '#f4efe6' });
+    label(px, ly, st.n, (st.r >= 1 ? `${st.r >= 10 ? fmt(st.r) : st.r} × the Sun` : st.p ? `${(st.r * 109.1).toFixed(st.r < .05 ? 0 : 1)} × the Earth` : `${st.r.toFixed(st.r < .05 ? 4 : 2)} × the Sun`) + (st.T ? ` · ${fmt(Math.round(st.T / 100) * 100)} K` : ''), { a: clamp(k, 0, 1), size: 12.5, color: st.n === 'The Sun' ? '#ffd27a' : '#f4efe6' });
   });
 }
 const S2 = {
@@ -484,8 +524,8 @@ const S2 = {
   blurb: 'From red dwarfs barely bigger than Jupiter to supergiants that would swallow Mars\'s orbit.',
   chapters: [
     { short: 'Red dwarfs', title: 'Smaller than you might think',
-      text: 'Our nearest star, Proxima Centauri, is a red dwarf only about one and a half times as wide as Jupiter. Red dwarfs like it are the most common stars of all: about three in four of the stars near the Sun.',
-      facts: [['Proxima Centauri', '0.15 × the Sun'], ['Jupiter', '0.10 × the Sun'], ['Red dwarfs near us', 'about 3 in 4']],
+      text: 'Our nearest star, Proxima Centauri, is a red dwarf only about one and a half times as wide as Jupiter. Red dwarfs like it are the most common stars of all: about three in four of the stars near the Sun. Each star here is drawn in the colour its surface temperature gives it: cooler stars orange, hotter ones blue-white.',
+      facts: [['Proxima Centauri', '0.15 × the Sun, 3,000 K'], ['Jupiter', '0.10 × the Sun'], ['Red dwarfs near us', 'about 3 in 4'], ['The Sun\'s true colour', 'white; it looks yellow through our air']],
       src: 'Sources: Kervella et al. 2017, A&A 598:L7 (Proxima); RECONS census of nearby stars', dur: 11,
       draw(v, t) { starRow(v, ['Earth', 'Jupiter', 'Proxima Centauri', 'The Sun'], ['Earth', 'Jupiter', 'Proxima Centauri', 'The Sun'], t); } },
     { short: 'Sirius', title: 'A brighter neighbour',
