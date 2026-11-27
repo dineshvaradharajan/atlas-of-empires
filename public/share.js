@@ -33,7 +33,9 @@ window.atlasShare = async function (sp, opener) {
   let file = null, pic = null;
   D.addEventListener("close", () => { if (pic) URL.revokeObjectURL(pic); D.remove(); if (opener?.isConnected) opener.focus(); });
   D.addEventListener("keydown", (ev) => ev.stopPropagation()); // the arrows and the space bar move the atlas's time
+  D.addEventListener("click", (ev) => { if (ev.target === D || ev.target.closest(".shx")) D.close(); });
   if (sp.find) sp = { ...sp, ...(await sp.find()) }; // the address is looked up now
+  if (!D.isConnected || !D.open) return; // closing during the lookup must not start more work
   const url = `${SITE}/${sp.path}`, text = sp.text || `${sp.title}, on The World Atlas`, e = encodeURIComponent;
   q("input").value = url;
   q('[data-sh="x"]').href = `https://x.com/intent/post?text=${e(text)}&url=${e(url)}`;
@@ -51,7 +53,6 @@ window.atlasShare = async function (sp, opener) {
   const copy = async () => { try { await navigator.clipboard.writeText(url); return true; } catch (err) { q("input").select(); return document.execCommand("copy"); } };
   const save = () => { const a = document.createElement("a"); a.href = pic; a.download = file.name; D.append(a); a.click(); a.remove(); };
   D.addEventListener("click", async (ev) => {
-    if (ev.target === D || ev.target.closest(".shx")) return D.close();
     const k = ev.target.closest("[data-sh]")?.dataset.sh;
     if (k === "copy") return note((await copy()) ? "Link copied." : "Select the link above and copy it.");
     if (k === "more") return navigator.share({ title: sp.title, text, url }).catch(() => {});

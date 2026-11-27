@@ -696,7 +696,10 @@ function enterDeep(ma) {
 // what the header and the strip show: which section is on, and, while a story has the timeline, where it sits in all of time
 // the year World history is showing: its address when that is a plain year or a story ending in its year, else its time bar
 // (from the address: "#1492", a story ending in its year, or a profile such as "#-1250/Shang Dynasty")
-function histNow() { try { const h = histWin().location.hash, m = /(?:^#|\/)(-?\d{1,5})$/.exec(h) || /^#(-?\d{1,5})\//.exec(h); if (m) return +m[1]; const tr = histWin().document.querySelector("#track"); if (tr && tr.getAttribute("aria-valuenow") != null) return +tr.getAttribute("aria-valuenow"); } catch (e) {} return null; }
+function histNow() { try { const iw = histWin(); if (Number.isFinite(iw.__atlas?.year)) return iw.__atlas.year;
+    const h = iw.location.hash, m = /^#(-?\d{1,5})(?:\/|$)/.exec(h) || /^#e\/[^/]+\/(-?\d{1,5})$/.exec(h); if (m) return +m[1]; // a war's trailing number is an event, not a year
+    const v = iw.document.querySelector("#track")?.getAttribute("aria-valuenow"); if (v != null && Number.isFinite(+v)) return +v;
+  } catch (e) {} return null; }
 function shell() {
   const app = !!$("#app").dataset.app; let h = ""; try { h = histWin().location.hash; } catch (e) {}
   const tab = ST || $("#app").dataset.list ? "stories" : S.mode === "deep" ? "explore" : !app || h === "" || /^#t\//.test(h) || /^#-?\d+(\/|$)/.test(h) || /^#p\//.test(h) ? "explore" : /^#about/.test(h) ? "about" : "stories";

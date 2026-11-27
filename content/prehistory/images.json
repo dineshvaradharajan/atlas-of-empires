@@ -11,9 +11,9 @@
   "caption": "A Moon-sized body smashes into a rocky planet in a NASA artist's concept, the kind of giant collision thought to have made our Moon.",
   "credit": "NASA/JPL-Caltech",
   "license": "Public domain",
+  "storyOnly": true,
   "quality": 5,
-  "note": "Painted to show a collision seen around the star HD 172555, not the Earth itself. It is a stand-in for the Theia impact, whose details are still debated.",
-  "storyOnly": true
+  "note": "Painted to show a collision seen around the star HD 172555, not the Earth itself. It is a stand-in for the Theia impact, whose details are still debated."
  },
  {
   "id": "hadean-earth-landscape",
@@ -27,9 +27,9 @@
   "caption": "An artist's view of the young Earth's surface, with lava flows, falling meteors and a huge Moon hanging close overhead.",
   "credit": "Tim Bertelink",
   "license": "CC BY-SA 4.0",
+  "storyOnly": true,
   "quality": 4,
-  "note": "Artistic impression. The Moon really was much closer then, but nobody knows what the surface looked like, and newer work suggests oceans may have formed early in the Hadean.",
-  "storyOnly": true
+  "note": "Artistic impression. The Moon really was much closer then, but nobody knows what the surface looked like, and newer work suggests oceans may have formed early in the Hadean."
  },
  {
   "id": "marble-bar-banded-chert",
@@ -1521,7 +1521,8 @@
   "credit": "Larry Felder, National Park Service (NPS)",
   "license": "Public domain",
   "quality": 5,
-  "note": "Based on the plant and animal fossils of the Clarno Nut Beds (about 44 million years old). Very wide panorama."
+  "note": "Based on the plant and animal fossils of the Clarno Nut Beds (about 44 million years old). Very wide panorama.",
+  "storyOnly": true
  },
  {
   "id": "darwinius-ida",
@@ -1566,7 +1567,8 @@
   "credit": "Dominik Hammelsbruch",
   "license": "CC BY-SA 4.0",
   "quality": 4,
-  "note": "Skin colour and the exact body outline are guesses; the tail fluke is inferred from the tail bones."
+  "note": "Skin colour and the exact body outline are guesses; the tail fluke is inferred from the tail bones.",
+  "storyOnly": true
  },
  {
   "id": "messel-early-horse-fossil",
@@ -1596,7 +1598,8 @@
   "credit": "Zerosmany",
   "license": "CC BY-SA 4.0",
   "quality": 4,
-  "note": "Fur and colour are guesses; how much time it spent in water is still discussed."
+  "note": "Fur and colour are guesses; how much time it spent in water is still discussed.",
+  "storyOnly": true
  },
  {
   "id": "uintatherium-orohippus-knight",
@@ -1611,7 +1614,8 @@
   "credit": "Charles R. Knight",
   "license": "Public domain",
   "quality": 4,
-  "note": "Painted in 1931 by Charles R. Knight. Still broadly reasonable, but the animals' build and the plants follow the knowledge of that time."
+  "note": "Painted in 1931 by Charles R. Knight. Still broadly reasonable, but the animals' build and the plants follow the knowledge of that time.",
+  "storyOnly": true
  },
  {
   "id": "ambulocetus-skeleton-and-model",
@@ -1641,7 +1645,8 @@
   "credit": "Juandertal",
   "license": "CC BY-SA 4.0",
   "quality": 3,
-  "note": "The spotted coat is a guess, modelled on small forest animals of today. The artist's signature is on the picture."
+  "note": "The spotted coat is a guess, modelled on small forest animals of today. The artist's signature is on the picture.",
+  "storyOnly": true
  },
  {
   "id": "badlands-south-dakota",
@@ -1671,7 +1676,8 @@
   "credit": "ABelov2014",
   "license": "CC BY-SA 3.0",
   "quality": 5,
-  "note": "Known from incomplete skeletons, so the exact size, neck length and skin are estimates."
+  "note": "Known from incomplete skeletons, so the exact size, neck length and skin are estimates.",
+  "storyOnly": true
  },
  {
   "id": "turtle-cove-mural",
@@ -1686,7 +1692,8 @@
   "credit": "Bureau of Land Management Oregon and Washington",
   "license": "Public domain",
   "quality": 5,
-  "note": "Mural by Roger Witter for the John Day Fossil Beds, based on the fossils of the Turtle Cove beds. Commons marks it public domain as a US government work."
+  "note": "Mural by Roger Witter for the John Day Fossil Beds, based on the fossils of the Turtle Cove beds. Commons marks it public domain as a US government work.",
+  "storyOnly": true
  },
  {
   "id": "arsinoitherium",
@@ -1701,7 +1708,8 @@
   "credit": "Mauricio Antón",
   "license": "CC BY 4.0",
   "quality": 4,
-  "note": "Pencil drawing by Mauricio Antón. It looks like a rhinoceros but was more closely related to elephants."
+  "note": "Pencil drawing by Mauricio Antón. It looks like a rhinoceros but was more closely related to elephants.",
+  "storyOnly": true
  },
  {
   "id": "megalodon-scene",
