@@ -1,6 +1,8 @@
 /* Stories of the universe (public/universe/stories/): the film page's look (../universe.css gives the top bar, the scene card and the dock),
    with a picker of six stories and, inside a story, its chapters as the dock's bands. The pictures are drawn on one 2D canvas by stories.js */
-canvas#cv{position:fixed;inset:0;width:100%;height:100%;display:block;background:var(--void)}
+canvas#cv{position:fixed;inset:0;width:100%;height:100%;display:block;background:var(--void);touch-action:none;cursor:grab}
+canvas#cv:active{cursor:grabbing}
+body.picking canvas#cv{cursor:default}
 [hidden]{display:none !important}
 
 /* the picker: a heading on the left, the six stories as cards, each with a still from its first chapter */
@@ -39,4 +41,15 @@ body.notext .scene{opacity:0;pointer-events:none}
   .snav2{display:none}
   .caps > span:first-child{visibility:hidden} /* the story's name is on the card; the pill would cover it */
   .scene .readings{display:none}
+}
+
+/* the view buttons: zoom in, zoom out, reset; on the right above the dock (on a phone, under the top bar) */
+.zoomer{position:fixed;z-index:6;right:max(24px,env(safe-area-inset-right,0px));bottom:calc(148px + env(safe-area-inset-bottom,0px));display:flex;flex-direction:column;align-items:flex-end;gap:8px}
+.zoomer .rb.sm svg{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
+.zhint{padding:3px 10px;border-radius:11px;background:rgba(8,12,22,.6);font-size:12px;color:var(--mute);white-space:nowrap;animation:zh 6s 1.5s both}
+@keyframes zh{0%,80%{opacity:1}100%{opacity:0;visibility:hidden}}
+body.notext .zhint{display:none}
+@media (max-width:760px){
+  .zoomer{top:calc(72px + env(safe-area-inset-top,0px));bottom:auto;right:max(16px,env(safe-area-inset-right,0px));flex-direction:row}
+  .zhint{display:none}
 }

@@ -55,6 +55,13 @@
   <div class="snav2"><button type="button" class="rb sm" id="prev" aria-label="Previous chapter"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button><button type="button" class="rb sm" id="next" aria-label="Next chapter"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button></div>
 </nav>
 
+<div class="zoomer" id="zoomer" hidden role="group" aria-label="View">
+  <button type="button" class="rb sm" id="zin" aria-label="Zoom in" title="Zoom in (+)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+  <button type="button" class="rb sm" id="zout" aria-label="Zoom out" title="Zoom out (−)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+  <button type="button" class="rb sm" id="zreset" aria-label="Reset the view" title="Reset the view (0)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12a8 8 0 1 0 2.4-5.7M4 4v4h4"/></svg></button>
+  <span class="zhint">Scroll or pinch to zoom · drag to move</span>
+</div>
+
 <script src="stories.js"></script>
 </body>
 </html>

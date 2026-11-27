@@ -242,7 +242,7 @@ function planet(x, y, r, kind, t = 0, o = {}) {
   const L = LOOK[kind] || LOOK.rock;
   if (r < 1.4) { disc(x, y, Math.max(.8, r), rgba(mixc(L.base, WHITE, .3))); glow(x, y, 5, L.base, .5); return; }
   if (PAINTS[kind] || kind === 'earth') { // the real look, once its map is ready (the Earth's needs two images to load)
-    const img = sphereImg(kind, 2 * r * Math.min(DPR, 2), o.spin ?? t * SPIN[kind]);
+    const img = sphereImg(kind, 2 * r * Math.min(DPR, 2) * ZOOM, o.spin ?? t * SPIN[kind]);
     if (img) {
       if (o.ringsBack) o.ringsBack();
       g.save(); g.translate(x, y);
@@ -306,20 +306,25 @@ function saturnRings(x, y, scale) {
   return { back: () => draw(false), front: () => draw(true) };
 }
 let THUMB = false; // a card's still: no labels, they are unreadable at that size
+// the reader's camera: zoom and pan (and, on the 3D star map, turning). While zoomed, text and lines keep their size on screen and
+// planets are redrawn at the size they are shown, so they stay sharp
+const CAM = { z: 1, x: 0, y: 0, yaw: 0, pitch: 0 };
+let ZOOM = 1;
 function label(x, y, text, sub, o = {}) {
   if (THUMB) return;
+  const sz = (o.size || 13) / ZOOM;
   g.save(); g.textAlign = o.align || 'center'; g.textBaseline = 'alphabetic'; g.globalAlpha = o.a ?? 1;
-  g.font = `${o.w || 600} ${o.size || 13}px Inter, system-ui, sans-serif`; g.fillStyle = o.color || '#f4efe6';
+  g.font = `${o.w || 600} ${sz}px Inter, system-ui, sans-serif`; g.fillStyle = o.color || '#f4efe6';
   g.shadowColor = 'rgba(0,0,0,.85)'; g.shadowBlur = 6; g.fillText(text, x, y);
-  if (sub) { g.font = `400 ${(o.size || 13) - 1.5}px Inter, system-ui, sans-serif`; g.fillStyle = o.subColor || '#c3beb2'; g.fillText(sub, x, y + (o.size || 13) + 3); }
+  if (sub) { g.font = `400 ${sz - 1.5 / ZOOM}px Inter, system-ui, sans-serif`; g.fillStyle = o.subColor || '#c3beb2'; g.fillText(sub, x, y + sz + 3 / ZOOM); }
   g.restore();
 }
-function line(x0, y0, x1, y1, c = 'rgba(244,239,230,.55)', w = 1, dash) { g.save(); g.beginPath(); g.moveTo(x0, y0); g.lineTo(x1, y1); g.strokeStyle = c; g.lineWidth = w; if (dash) g.setLineDash(dash); g.stroke(); g.restore(); }
-function ring(x, y, r, c = 'rgba(244,239,230,.3)', w = 1, dash, ry) { g.save(); g.beginPath(); g.ellipse(x, y, Math.max(r, .1), Math.max(ry ?? r, .1), 0, 0, TAU); g.strokeStyle = c; g.lineWidth = w; if (dash) g.setLineDash(dash); g.stroke(); g.restore(); }
+function line(x0, y0, x1, y1, c = 'rgba(244,239,230,.55)', w = 1, dash) { g.save(); g.beginPath(); g.moveTo(x0, y0); g.lineTo(x1, y1); g.strokeStyle = c; g.lineWidth = w / ZOOM; if (dash) g.setLineDash(dash.map((d) => d / ZOOM)); g.stroke(); g.restore(); }
+function ring(x, y, r, c = 'rgba(244,239,230,.3)', w = 1, dash, ry) { g.save(); g.beginPath(); g.ellipse(x, y, Math.max(r, .1), Math.max(ry ?? r, .1), 0, 0, TAU); g.strokeStyle = c; g.lineWidth = w / ZOOM; if (dash) g.setLineDash(dash.map((d) => d / ZOOM)); g.stroke(); g.restore(); }
 // a measuring bar with end ticks, drawn out over k (0..1)
 function measure(x0, y, x1, k, text, sub, c = 'rgba(255,210,122,.9)') {
-  const xe = lerp(x0, x1, easeO(k)); line(x0, y, xe, y, c, 1.5); line(x0, y - 5, x0, y + 5, c, 1.5); if (k > .98) line(x1, y - 5, x1, y + 5, c, 1.5);
-  if (k > .6) label((x0 + x1) / 2, y - (sub ? 20 : 10), text, sub, { a: ease((k - .6) / .4), color: '#ffd27a' });
+  const xe = lerp(x0, x1, easeO(k)), tk = 5 / ZOOM; line(x0, y, xe, y, c, 1.5); line(x0, y - tk, x0, y + tk, c, 1.5); if (k > .98) line(x1, y - tk, x1, y + tk, c, 1.5);
+  if (k > .6) label((x0 + x1) / 2, y - (sub ? 20 : 10) / ZOOM, text, sub, { a: ease((k - .6) / .4), color: '#ffd27a' });
 }
 
 // the sky behind every chapter: fixed random stars, twinkling a little
@@ -519,6 +524,70 @@ function starRow(v, names, fresh, t, prevNames, orbitsOn) {
     label(px, ly, st.n, (st.r >= 1 ? `${st.r >= 10 ? fmt(st.r) : st.r} × the Sun` : st.p ? `${(st.r * 109.1).toFixed(st.r < .05 ? 0 : 1)} × the Earth` : `${st.r.toFixed(st.r < .05 ? 4 : 2)} × the Sun`) + (st.T ? ` · ${fmt(Math.round(st.T / 100) * 100)} K` : ''), { a: clamp(k, 0, 1), size: 12.5, color: st.n === 'The Sun' ? '#ffd27a' : '#f4efe6' });
   });
 }
+
+// every size at once: a ladder of three panels, each to scale, each shrinking the one before; the biggest body of a panel is boxed in the
+// next, with lines out to the panel it opens (the layout chosen on the design canvas, option A). Side by side on a wide screen, stacked on a phone
+const LADDER = [
+  { names: ['Earth', 'Jupiter', 'Proxima Centauri', 'The Sun'], wgt: 290, cap: 'Planets and the nearest star' },
+  { names: ['The Sun', 'Sirius A', 'Arcturus', 'Aldebaran'], wgt: 380, cap: 'A brighter neighbour and two giants', box: 'The Sun' },
+  { names: ['The Sun', 'Aldebaran', 'Rigel', 'Antares', 'Betelgeuse', 'VY Canis Majoris'], wgt: 600, cap: 'A blue and three red supergiants', box: 'Aldebaran' },
+];
+function ladder(v, t) {
+  const across = v.w > v.h * 1.25, gap = across ? Math.max(18, v.w * .025) : Math.max(12, v.h * .03), n = LADDER.length, tot = LADDER.reduce((a, p) => a + p.wgt, 0);
+  const free = (across ? v.w : v.h) - gap * (n - 1); let at = across ? v.x0 : v.y0;
+  const panels = LADDER.map((p) => { const len = free * (across ? p.wgt / tot : 1 / n), r = across ? { x: at, y: v.y0, w: len, h: v.h } : { x: v.x0, y: at, w: v.w, h: len }; at += len + gap; return { ...p, ...r }; });
+  // each panel's scale (px per Sun radius): the bodies side by side fill its width, the largest no taller than half the panel
+  for (const P of panels) {
+    const L = P.names.map((nm) => SRn[nm]).sort((a, b) => a.r - b.r), pad = Math.min(16, P.w * .05), big = L[L.length - 1].r;
+    let sc = Math.min((P.h * (across ? .52 : .66)) / (2 * big), (P.w - 2 * pad) / (2 * L.reduce((a, b) => a + b.r, 0) * 1.08));
+    let x = P.x + P.w - pad; const pos = {};
+    for (let i = L.length - 1; i >= 0; i--) { const r = Math.max(L[i].r * sc, 1.2); x -= r; pos[L[i].n] = x; x -= r + Math.max(6, L[i].r * sc * .08); }
+    Object.assign(P, { L, sc, pos, base: P.y + P.h * .72, big: big * sc });
+  }
+  if (across) { // side by side the panels need only the height of their largest body plus the names: trim them and centre the row
+    const hh = Math.min(v.h, Math.max(...panels.map((P) => P.big * 2)) + 190 / ZOOM), top = v.cy - hh / 2;
+    for (const P of panels) { P.y = top; P.h = hh; P.base = top + hh - 64 / ZOOM; }
+  }
+  panels.forEach((P, k) => {
+    const kk = easeO((t - .3 - k * 2.3) / 1.1); if (kk <= 0) return;
+    g.save(); g.globalAlpha *= kk;
+    g.beginPath(); g.roundRect(P.x, P.y, P.w, P.h, 16 / ZOOM); g.fillStyle = 'rgba(10,13,22,.88)'; g.fill(); g.strokeStyle = 'rgba(244,239,230,.18)'; g.lineWidth = 1 / ZOOM; g.stroke();
+    const step = k ? Math.round(panels[k - 1].sc / P.sc) : 0;
+    label(P.x + 14 / ZOOM, P.y + 22 / ZOOM, k ? `PANEL ${k + 1} · ${step} TIMES SMALLER${k > 1 ? ' AGAIN' : ''}` : 'PANEL 1 · TO SCALE', null, { align: 'left', size: 11, w: 700, color: '#9a9a93' });
+    if (across) label(P.x + 14 / ZOOM, P.y + P.h - 14 / ZOOM, P.cap, null, { align: 'left', size: 11.5, w: 400, color: '#9a9a93' });
+    line(P.x, P.base, P.x + P.w, P.base, 'rgba(244,239,230,.12)');
+    g.save(); g.beginPath(); g.rect(P.x, P.y, P.w, P.h); g.clip();
+    // a body big enough carries its name on its disc; the others are named in a legend down the panel's free left side, with a leader line
+    // the legend keeps to the space left of the bodies; when the full names and numbers do not fit there, it lists the names alone, closer together
+    const nSmall = P.L.filter((st) => st.r * P.sc * ZOOM <= 46).length, left = Math.min(...P.L.map((st) => P.pos[st.n] - st.r * P.sc)), roomW = (left - P.x) * ZOOM - 20;
+    let rowH = 30, colW = 132, compact = false, rows = Math.max(1, Math.floor((P.h * ZOOM - 46 - (across ? 30 : 8)) / rowH));
+    if (rows * Math.max(1, Math.floor(roomW / colW)) < nSmall) { compact = true; rowH = 15; colW = 96; rows = Math.max(1, Math.floor((P.h * ZOOM - 40 - 6) / rowH)); }
+    let li = 0;
+    P.L.forEach((st, i) => {
+      const r = st.r * P.sc, px = P.pos[st.n], y = P.base - Math.max(r, 1.2), grow = easeO((t - .5 - k * 2.3 - i * .12) / .9); if (grow <= 0) return;
+      if (st.p) planet(px, y, Math.max(r, .9) * grow, st.p, t); else starT(px, y, Math.max(r, .9) * grow, st.T, t, i + 3 + k * 7, st.k, { spots: st.spots, nebula: st.nebula && r > 30 });
+      const sub = `${st.r >= 10 ? fmt(st.r) : st.r >= 1 ? st.r : st.r.toFixed(st.r < .05 ? 3 : 2)}${st.T ? ' · ' + fmt(Math.round(st.T / 100) * 100) + ' K' : ''}`;
+      const hl = st.n === P.box || st.n === 'The Sun' ? '#ffd27a' : '#f4efe6';
+      if (r * ZOOM > 46) { label(px, y - 2 / ZOOM, st.n, sub, { size: 12, a: grow, color: '#1d1206', subColor: '#3a2614' }); return; }
+      const col = Math.floor(li / rows), row = li % rows; li++;
+      const lx = P.x + (14 + col * colW) / ZOOM, ly = P.y + ((compact ? 42 : 48) + row * rowH) / ZOOM;
+      label(lx, ly, compact ? st.n.replace(' Centauri', '') : st.n, compact ? null : sub, { align: 'left', size: compact ? 10.5 : 11.5, a: grow, color: hl });
+      g.font = `600 ${(compact ? 10.5 : 11.5) / ZOOM}px Inter, system-ui, sans-serif`; const tw = g.measureText(compact ? st.n.replace(' Centauri', '') : st.n).width, top = P.base - Math.max(2 * r, 3) - 3 / ZOOM, x0 = lx + tw + 6 / ZOOM, yl = ly - 4 / ZOOM;
+      g.save(); g.globalAlpha *= grow; g.beginPath(); g.moveTo(x0, yl); g.lineTo(px, yl); g.lineTo(px, top); g.strokeStyle = 'rgba(244,239,230,.28)'; g.lineWidth = 1 / ZOOM; g.stroke(); g.restore();
+    });
+    g.restore();
+    // the box: where the panel before sits inside this one, with lines back to it
+    if (P.box) {
+      const kb = ease((t - 1.4 - k * 2.3) / .8), st = SRn[P.box], r = Math.max(st.r * P.sc, 1.2), cx = P.pos[P.box], cy = P.base - r, half = Math.max(r * 1.6, 7 / ZOOM), Q = panels[k - 1];
+      if (kb > 0) {
+        g.save(); g.globalAlpha *= kb; g.strokeStyle = '#ffd27a'; g.lineWidth = 1.5 / ZOOM; g.setLineDash([4 / ZOOM, 3 / ZOOM]); g.strokeRect(cx - half, cy - half, 2 * half, 2 * half); g.restore();
+        const a = across ? [[cx - half, cy - half, Q.x + Q.w, Q.y], [cx - half, cy + half, Q.x + Q.w, Q.y + Q.h]] : [[cx - half, cy - half, Q.x, Q.y + Q.h], [cx + half, cy - half, Q.x + Q.w, Q.y + Q.h]];
+        for (const [x1, y1, x2, y2] of a) line(x1, y1, lerp(x1, x2, kb), lerp(y1, y2, kb), 'rgba(255,210,122,.45)', 1, [4, 4]);
+      }
+    }
+    g.restore();
+  });
+}
 const S2 = {
   thumb: 4, id: 'stars', title: 'The Sun among the stars', short: 'Stars', accent: '#ffb15a',
   blurb: 'From red dwarfs barely bigger than Jupiter to supergiants that would swallow Mars\'s orbit.',
@@ -553,6 +622,11 @@ const S2 = {
       facts: [['VY Canis Majoris', 'about 1,420 × the Sun'], ['In our place', 'past Jupiter'], ['How sure', 'this estimate ± 120; others differ']],
       src: 'Source: Wittkowski et al. 2012, A&A 540:L12', dur: 13,
       draw(v, t) { starRow(v, ['The Sun', 'Rigel', 'Betelgeuse', 'VY Canis Majoris'], ['VY Canis Majoris'], t, ['The Sun', 'Rigel', 'Antares', 'Betelgeuse'], true); } },
+    { short: 'All at once', title: 'Every size at once',
+      text: 'From the Earth to VY Canis Majoris, widths grow about 155,000 times: too much for one scale. So here are three panels, each to scale, each shrinking the one before. The dashed box in each panel is the whole of the panel before it. Zoom in to look closer.',
+      facts: [['Earth to VY Canis Majoris', 'about 155,000 times as wide'], ['Each panel', 'tens of times smaller than the last'], ['Colours', 'from surface temperature']],
+      src: 'Sources: the radii and temperatures of the chapters before (NASA; Kervella et al. 2017; Davis et al. 2011; Ramírez & Allende Prieto 2011; Richichi & Roccatagliata 2005; Moravveji et al. 2012; Ohnaka et al. 2013; Joyce et al. 2020; Wittkowski et al. 2012)', dur: 14,
+      draw(v, t) { ladder(v, t); } },
   ],
 };
 
@@ -574,7 +648,8 @@ const NEAR = [
 const NEARM = NEAR.filter((s) => s.ty === 'M').length;
 const TYC = { M: C.M, K: C.K, G: C.G, F: C.F, A: C.A, WD: C.WD, BD: C.BD }, TYR = { M: 3.4, K: 4.6, G: 5.4, F: 5.8, A: 6.6, WD: 2, BD: 2.4 };
 function starMap(v, t, o = {}) {
-  const yaw = (o.yaw ?? 0.6) + (CALM ? 0 : t * .07), pitch = .5, sc = v.s * .44 / 12.5 * (o.zoom || 1), f = 46, cx = v.cx, cy = v.cy + v.h * .04;
+  const yaw = (o.yaw ?? 0.6) + (CALM ? 0 : t * .07) + CAM.yaw, pitch = clamp(.5 + CAM.pitch, -1.2, 1.45), // the reader can turn it by dragging
+    sc = v.s * .44 / 12.5 * (o.zoom || 1), f = 46, cx = v.cx, cy = v.cy + v.h * .04;
   const P = (p) => { const x = p[0] * Math.cos(yaw) - p[1] * Math.sin(yaw), y = p[0] * Math.sin(yaw) + p[1] * Math.cos(yaw), z = p[2];
     const dep = y * Math.cos(pitch) + z * Math.sin(pitch), up = z * Math.cos(pitch) - y * Math.sin(pitch), k = f / (f + dep); return [cx + x * sc * k, cy - up * sc * k, dep, k]; };
   for (const R of [5, 10]) { g.beginPath(); for (let i = 0; i <= 72; i++) { const a = i / 72 * TAU, q = P([R * Math.cos(a), R * Math.sin(a), 0]); i ? g.lineTo(q[0], q[1]) : g.moveTo(q[0], q[1]); } g.strokeStyle = 'rgba(124,192,255,.28)'; g.lineWidth = 1; g.stroke();
@@ -592,7 +667,7 @@ function starMap(v, t, o = {}) {
   return P;
 }
 const S3 = {
-  thumb: 0, id: 'nearest-stars', title: 'The nearest stars', short: 'Near stars', accent: '#9fd0ff',
+  thumb: 0, spin3d: true, id: 'nearest-stars', title: 'The nearest stars', short: 'Near stars', accent: '#9fd0ff',
   blurb: 'Every star and brown dwarf within 12 light years of the Sun, in three dimensions.',
   chapters: [
     { short: 'Neighbours', title: 'Our neighbourhood',
@@ -852,6 +927,7 @@ const FADE = .9;
 const nextFrame = document.createElement('canvas'), nextContext = nextFrame.getContext('2d');
 const interruptedFrame = document.createElement('canvas');
 let cur = null, ci = 0, ct = 0, chapterStart = 0, prevCh = null, fadeT = 1, playing = !CALM, textOn = true, last = performance.now();
+let held = false; // the reader is exploring: the animation runs on, but the story waits on this chapter until Play
 const cards = $('cards');
 function storyUrl(s, i) { return `#${s.id}/${i + 1}`; }
 function buildCards() {
@@ -879,10 +955,11 @@ function openStory(s, i) {
     } else prevCh = { ch: s.chapters[ci], t: ct, start: chapterStart };
   }
   ci = i; ct = 0; chapterStart = s.chapters.slice(0, i).reduce((total, c) => total + c.dur, 0); fadeT = prevCh ? 0 : 1;
+  resetView(); held = false; $('zoomer').hidden = false;
   document.body.classList.remove('picking'); $('cap').hidden = false; $('dock').hidden = false; $('tabStories').removeAttribute('aria-current');
   showText(); if (!same) setPlaying(!CALM);
 }
-function closeStory() { cur = null; prevCh = null; document.body.classList.add('picking'); $('cap').hidden = true; $('dock').hidden = true; $('tabStories').setAttribute('aria-current', 'page'); }
+function closeStory() { cur = null; prevCh = null; $('zoomer').hidden = true; document.body.classList.add('picking'); $('cap').hidden = true; $('dock').hidden = true; $('tabStories').setAttribute('aria-current', 'page'); }
 function route() {
   const m = /^#([\w-]+)\/(\d+)$/.exec(location.hash), s = m && STORIES.find((x) => x.id === m[1]);
   if (s) openStory(s, +m[2] - 1); else closeStory();
@@ -913,8 +990,9 @@ function drawChapter(ctx, ch, v, t, clock) {
     ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
     ctx.fillStyle = '#04060c'; ctx.fillRect(0, 0, W, H);
     sky(W, H, 0, .9);
+    ctx.translate(v.cx + CAM.x, v.cy + CAM.y); ctx.scale(CAM.z, CAM.z); ctx.translate(-v.cx, -v.cy); ZOOM = CAM.z;
     ch.draw(v, t, clock);
-  } finally { ctx.restore(); g = old; }
+  } finally { ctx.restore(); g = old; ZOOM = 1; }
 }
 function frame(now) {
   const dt = Math.min(.1, (now - last) / 1000); last = now;
@@ -923,7 +1001,8 @@ function frame(now) {
   const T = now / 1000;
   if (!cur) { g.fillStyle = '#04060c'; g.fillRect(0, 0, W, H); sky(W, H, CALM ? 0 : T, 1, CALM ? 0 : T * .3); }
   else {
-    if (playing) {
+    if (playing && held) ct += dt; // exploring: keep the picture moving, stay on this chapter
+    else if (playing) {
       ct += dt;
       const end = cur.chapters[ci].dur;
       if (ct >= end) {
@@ -949,6 +1028,7 @@ function frame(now) {
     } else { prevCh = null; drawChapter(g, ch, v, animT, clock); }
     if (ch.live) { const lv = ch.live(animT); if ($('live').textContent !== lv) $('live').textContent = lv; }
     const n = cur.chapters.length, p = (ci + clamp(ct / ch.dur, 0, 1)) / n * 100;
+    const dc = `CHAPTER ${ci + 1} OF ${n}${held ? ' · EXPLORING' : ''}`; if ($('dcount').textContent !== dc) $('dcount').textContent = dc;
     $('cursor').style.left = p + '%'; const pill = $('pill'); pill.style.left = p + '%'; if (pill.textContent !== ch.short) pill.textContent = ch.short;
   }
   requestAnimationFrame(frame);
@@ -956,7 +1036,10 @@ function frame(now) {
 
 $('bands').addEventListener('click', (e) => { const b = e.target.closest('[data-k]'); if (b) go(+b.dataset.k); });
 $('prev').addEventListener('click', () => go(ci - 1)); $('next').addEventListener('click', () => go(ci + 1));
-$('play').addEventListener('click', () => { if (!playing && cur && ci === cur.chapters.length - 1 && ct >= cur.chapters[ci].dur) { ct = 0; } setPlaying(!playing); });
+$('play').addEventListener('click', () => {
+  if (held) { held = false; resetView(); if (ct >= cur.chapters[ci].dur) { if (ci < cur.chapters.length - 1) go(ci + 1); else ct = 0; } setPlaying(true); return; }
+  if (!playing && cur && ci === cur.chapters.length - 1 && ct >= cur.chapters[ci].dur) { ct = 0; } setPlaying(!playing);
+});
 $('cc').addEventListener('click', () => { textOn = !textOn; document.body.classList.toggle('notext', !textOn); $('cc').setAttribute('aria-pressed', textOn); $('cc').textContent = textOn ? 'Hide text' : 'Show text'; });
 $('fs').addEventListener('click', () => { document.fullscreenElement ? document.exitFullscreen() : document.documentElement.requestFullscreen?.(); });
 addEventListener('keydown', (e) => {
@@ -965,7 +1048,35 @@ addEventListener('keydown', (e) => {
   if (e.key === 'ArrowRight') { e.preventDefault(); go(ci + 1); } else if (e.key === 'ArrowLeft') { e.preventDefault(); go(ci - 1); }
   else if (e.key === ' ') { e.preventDefault(); $('play').click(); } else if (e.key === 'Escape') { location.hash = ''; }
   else if (e.key === 'c' || e.key === 'C') $('cc').click(); else if (e.key === 'f' || e.key === 'F') $('fs').click();
+  else if (e.key === '+' || e.key === '=') zoomBy(1.4); else if (e.key === '-' || e.key === '_') zoomBy(1 / 1.4); else if (e.key === '0') resetView();
 });
+// ---------------------------------------------------------------- the reader's camera: scroll or pinch to zoom, drag to move (or to turn the
+// star map), double-click or the reset button to go back. Zooming keeps the point under the cursor or between the fingers still
+function explore() { held = true; }
+function resetView() { CAM.z = 1; CAM.x = 0; CAM.y = 0; CAM.yaw = 0; CAM.pitch = 0; }
+function zoomAt(sx, sy, f) {
+  const v = viewport(W, H, textOn), z2 = clamp(CAM.z * f, .4, 16);
+  const wx = v.cx + (sx - v.cx - CAM.x) / CAM.z, wy = v.cy + (sy - v.cy - CAM.y) / CAM.z;
+  CAM.z = z2; CAM.x = sx - v.cx - (wx - v.cx) * z2; CAM.y = sy - v.cy - (wy - v.cy) * z2; explore();
+}
+function zoomBy(f) { if (!cur) return; const v = viewport(W, H, textOn); zoomAt(v.cx, v.cy, f); }
+const ptrs = new Map(); let pinch = null;
+cv.addEventListener('pointerdown', (e) => {
+  if (!cur) return; try { cv.setPointerCapture(e.pointerId); } catch (err) { /* not every pointer can be captured */ } ptrs.set(e.pointerId, { x: e.clientX, y: e.clientY });
+  if (ptrs.size === 2) { const [a, b] = [...ptrs.values()]; pinch = { d: Math.hypot(a.x - b.x, a.y - b.y), mx: (a.x + b.x) / 2, my: (a.y + b.y) / 2 }; }
+});
+cv.addEventListener('pointermove', (e) => {
+  const p = ptrs.get(e.pointerId); if (!p || !cur) return;
+  const dx = e.clientX - p.x, dy = e.clientY - p.y; p.x = e.clientX; p.y = e.clientY;
+  if (ptrs.size === 1) { if (Math.abs(dx) + Math.abs(dy) < .5) return; if (cur.spin3d) { CAM.yaw += dx * .008; CAM.pitch = clamp(CAM.pitch + dy * .006, -1.7, .95); } else { CAM.x += dx; CAM.y += dy; } explore(); }
+  else if (ptrs.size === 2 && pinch) { const [a, b] = [...ptrs.values()], d = Math.hypot(a.x - b.x, a.y - b.y), mx = (a.x + b.x) / 2, my = (a.y + b.y) / 2;
+    CAM.x += mx - pinch.mx; CAM.y += my - pinch.my; zoomAt(mx, my, d / Math.max(pinch.d, 1)); pinch = { d, mx, my }; }
+});
+const lift = (e) => { ptrs.delete(e.pointerId); if (ptrs.size < 2) pinch = null; };
+cv.addEventListener('pointerup', lift); cv.addEventListener('pointercancel', lift);
+cv.addEventListener('wheel', (e) => { if (!cur) return; e.preventDefault(); zoomAt(e.clientX, e.clientY, Math.exp(-clamp(e.deltaY, -120, 120) * .0018)); }, { passive: false });
+cv.addEventListener('dblclick', () => { if (cur) resetView(); });
+$('zin').addEventListener('click', () => zoomBy(1.5)); $('zout').addEventListener('click', () => zoomBy(1 / 1.5)); $('zreset').addEventListener('click', () => resetView());
 addEventListener('hashchange', route);
 buildCards();
 route();
