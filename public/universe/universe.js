@@ -594,12 +594,12 @@ vec3 disc(vec2 uv,float t,float zk,float zf){
  col+=vec3(1.,.66,.4)*(exp(-ed*ed/(es*es*6.))*2.4+exp(-ed*60./(zf*min(1./zf,3.)))*.25);
  return col;
 }
-vec3 earth(vec2 uv,float t,float sk){ // sk: the scale it is drawn at (scene); the stars stay at the screen's own scale while the camera closes in
+vec3 earth(vec2 uv,float t,vec2 su){ // su: the point on the screen, for what stays fixed there while the camera closes in (scene)
  float R=.62;
- vec3 col=stars(uv*sk,25.,.3,3.)*.5;
+ vec3 col=stars(su,25.,.3,3.)*.5;
  vec2 L2=normalize(vec2(-.85,.32));
  vec3 L=normalize(vec3(L2*.9,.42));
- col+=vec3(1.,.8,.55)*exp(-length(uv*sk-vec2(-2.6,1.))*1.2)*.45; // the Sun's light from off to the left, fixed on the screen like the stars
+ col+=vec3(1.,.8,.55)*exp(-length(su-vec2(-2.6,1.))*1.2)*.45; // the Sun's light from off to the left, fixed on the screen like the stars
  float r=length(uv);
  if(r<R){
   vec3 n=vec3(uv,sqrt(R*R-r*r))/R;
@@ -644,16 +644,16 @@ vec3 scene(vec2 uv,float t){
  // made the speck jump into a planet a third of the screen wide.)
  const float ZF=250.;
  float k=smoothstep(10.,16.,t), Z=exp(log(ZF)*k), s=Z/ZF; // Z: the disc's magnification; s: the planet's scale, 1 when it fills the view
+ vec2 ep=toScreen(earthDisc(t)); float pan=smoothstep(0.,.3,k); // the camera turns to the Earth in the first part of the zoom
+ vec2 c=ep*(1.-pan)*Z; // where the speck is on the screen meanwhile: the planet is drawn there, so it grows out of the speck (on a sharp
+                       // screen the speck is planet-sized while the camera is still turning)
  float m=smoothstep(5.*px(),12.*px(),.62*s);
  // the planet takes the speck's place at once, but the glowing dust around it thins away over a couple of seconds
- float fd=smoothstep(.45,.8,k), on=smoothstep(.62+1.5*px()/s,.62-1.5*px()/s,length(uv/s));
+ float fd=smoothstep(.45,.8,k), on=smoothstep(.62+1.5*px()/s,.62-1.5*px()/s,length((uv-c)/s));
  float w=m*max(on,fd);
  vec3 col=vec3(0);
- if(w<1.){
-  vec2 ep=toScreen(earthDisc(t));
-  col=stars(uv,25.,.3,3.)*.6+disc(ep*smoothstep(0.,.3,k)+uv/Z,t,k,1./Z)*(1.-.55*k);
- }
- if(w>0.) col=mix(col,earth(uv/s,t,s),w);
+ if(w<1.) col=stars(uv,25.,.3,3.)*.6+disc(ep*pan+uv/Z,t,k,1./Z)*(1.-.55*k);
+ if(w>0.) col=mix(col,earth((uv-c)/s,t,uv),w);
  return col;
 }`,
 ];
