@@ -58,8 +58,8 @@ const SCENES=[
  {era:'The solar system forms',clock:'9.22',unit:'billion years after the Big Bang',ago:'4,567 million years ago',title:'The Sun and the Earth',
   lede:'A cloud of gas and dust collapses. A star lights up, and rock gathers around it.',
   temp:'The young Sun glows as it contracts; fusion comes later',what:'A young Sun and a disc of dust, ice and rock',sure:'Well supported: dated in meteorites',
-  more:'The cloud’s gas held atoms made by generations of earlier stars. Beyond the snow line (where the disc turns paler) water freezes into ice. The rings and gaps follow ALMA’s 2014 picture of the young star HL Tauri. The Earth grows from dust to a planet over roughly 10 to 100 million years, hot and molten at first. The young Sun shone at first by contracting; steady fusion in its core began within tens of millions of years. The oldest solids in the solar system are 4,567 million years old.',
-  src:'Sources: Connelly et al. 2012, Science, the solar system’s first solids; ALMA Partnership 2015, HL Tauri; Montmerle et al. 2006, the first 100 million years',dur:18,acc:'#ffb15a',aot:.669,
+  more:'The cloud’s gas held atoms made by generations of earlier stars. Beyond the snow line (where the disc turns paler) water freezes into ice. The rings and gaps follow ALMA’s 2014 radio picture of the young star HL Tauri; most young discs seen since have rings too, but uneven ones, so these are drawn uneven. The Earth grows from dust to a planet over roughly 10 to 100 million years, hot and molten at first. The young Sun shone at first by contracting; steady fusion in its core began within tens of millions of years. The oldest solids in the solar system are 4,567 million years old.',
+  src:'Sources: Connelly et al. 2012, Science, the solar system’s first solids; ALMA Partnership 2015, HL Tauri; Andrews et al. 2018, the DSHARP survey of young discs; Montmerle et al. 2006, the first 100 million years',dur:18,acc:'#ffb15a',aot:.669,
   live:(t)=>t<11.5?'The young Sun and its disc: 4,567 million years ago':'Closer in, and later: the young Earth, 10 to 100 million years on, still molten'}, // the camera's move to the Earth also skips ahead in time
 ];
 function clamp(x,a,b){return Math.min(b,Math.max(a,x));}
@@ -552,6 +552,9 @@ vec3 scene(vec2 uv,float t){
 const float EORB=.24;
 vec2 earthDisc(float t){return rot(t*.05/pow(EORB,1.5))*(EORB*vec2(cos(1.4),sin(1.4)));}
 vec2 toScreen(vec2 dp){return rot(ROLL)*(vec2(dp.x,dp.y*cos(INC))*DS);}
+// a dark gap, as uneven as real ones: its depth and width change round the disc (dir: the direction from the star, turning with the dust)
+float gap(float rq,vec2 dir,float c,float w,float d,float s){
+ return d*(.3+.7*vn(dir*2.6+s))*exp(-pow((rq-c)*w*(.75+.5*vn(dir*1.9+s+4.)),2.));}
 vec3 disc(vec2 uv,float t,float zk,float zf){
  float pz=px()*zf;
  vec3 col=vec3(0);
@@ -563,14 +566,22 @@ vec3 disc(vec2 uv,float t,float zk,float zf){
  vec2 sp=rot(-t*.05/pow(rr+.08,1.5))*dp;
  float tex=fbm4(sp*6.)*.7+fbm4(sp*18.)*.3;
  float dens=exp(-rr*1.6)*smoothstep(1.12,.75,rr)*smoothstep(.03,.1,rr);
- // bright rings and dark gaps, as in the ALMA image of HL Tauri
- float gaps=1.-.9*exp(-pow((rr-.33)*70.,2.))-.75*exp(-pow((rr-.48)*60.,2.))-.9*exp(-pow((rr-.62)*55.,2.))
-             -.8*exp(-pow((rr-.76)*65.,2.))-.7*exp(-pow((rr-.9)*70.,2.));
- float rings=.85+.15*sin(rr*95.);
+ // bright rings and dark gaps, as in the ALMA image of HL Tauri (ALMA Partnership 2015), but not as tidy as a drawing would make them:
+ // most young discs ALMA has resolved show rings and gaps, yet each is uneven, some lopsided, a few with spirals or crescents (DSHARP:
+ // Andrews et al. 2018; Huang et al. 2018). So the rings are slightly off-centre and lumpy, the gaps vary round the disc, the dust is
+ // brighter on one side, and the young Sun sits in a little leftover murk
+ vec2 dir=sp/max(rr,1e-4), dfix=dp/max(rr,1e-4);
+ float rq=rr*(1.+(vn(dir*2.2+7.)-.5)*.05+.025*dot(dfix,vec2(.8,.6)));
+ float gaps=1.-gap(rq,dir,.33,70.,.9,1.)-gap(rq,dir,.48,60.,.75,2.)-gap(rq,dir,.62,55.,.9,3.)-gap(rq,dir,.76,65.,.8,5.)-gap(rq,dir,.9,70.,.7,6.);
+ float rings=.8+.4*vn(vec2(rq*34.,0.)+dir*2.3)*(.6+.4*vn(dir*5.+rq*9.));
+ rings*=1.+.28*dot(dfix,normalize(vec2(-.5,.85))); // lopsided: one side of the disc brighter than the other
  float snow=smoothstep(.36,.42,rr);
  vec3 dust=mix(vec3(1.,.56,.27),vec3(.85,.8,.95),snow*.4);
  col+=dust*dens*gaps*rings*(.45+.7*tex)*.9;
  col+=vec3(1.,.72,.45)*exp(-rr*7.)*dens*.5;
+ // what is left of the cloud: faint uneven murk around the young star, thinning as the camera closes in on the Earth
+ float rs=length(uv);
+ col+=vec3(.42,.27,.18)*pow(fbm(uv*2.3+vec2(-t*.012,t*.008)),2.2)*exp(-rs*1.6)*.55*(1.-zk);
  // a few rocky bodies, sweeping round
  vec2 g=sp*30.,id=floor(g),f=fract(g)-.5;
  float hh=h21(id+2.);
