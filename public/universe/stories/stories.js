@@ -1081,7 +1081,8 @@ $('zin').addEventListener('click', () => zoomBy(1.5)); $('zout').addEventListene
 // ---------------------------------------------------------------- narration (narration/narration.json, recorded by tools/narration.py): one
 // spoken line per chapter, starting just after the chapter opens, shown as a subtitle while it is spoken. While the voice is heard a chapter
 // lasts until its line has finished (chEnd); muted, the story keeps its own pace. A story plays its voice the first time; once a reader has
-// heard half of it, later visits to that story start muted and the speaker button (or N) plays it. Muting is remembered with the film's.
+// heard half of it, later visits to that story start muted and the speaker button (or N) plays it. A click on that button is
+// remembered with the film's ('universe.narration'): 'on' plays every story's voice on every visit, heard or not; 'off' keeps them muted.
 // Browsers allow sound only after a click or tap: until then the story runs at its own pace, the button shows muted and glows, and the next
 // click or tap anywhere brings the voice in. One audio element plays every line (Safari on a phone lets an element play once a tap has started it)
 const NAR = { on: true, blocked: false, lines: {}, el: new Audio(), key: null, done: new Set() }, LEAD = .6, TAIL = 1.1;
@@ -1091,7 +1092,7 @@ const stored = (k) => { try { return localStorage.getItem(k); } catch (e) { retu
 const lineOf = (k = ci) => cur && NAR.lines[cur.id]?.[k];
 const narAudible = () => NAR.on && !NAR.blocked && !!lineOf();
 function chEnd(k = ci) { const ch = cur.chapters[k], l = NAR.on && !NAR.blocked && lineOf(k); return l ? Math.max(ch.dur, LEAD + l.dur + TAIL) : ch.dur; }
-function narStory(s) { NAR.on = stored('universe.narration') !== 'off' && !stored('stories.heard.' + s.id); NAR.done = new Set(); narShow(); }
+function narStory(s) { const ch = stored('universe.narration'); NAR.on = ch === 'on' || (ch !== 'off' && !stored('stories.heard.' + s.id)); NAR.done = new Set(); narShow(); }
 function narShow() {
   const b = $('nar'), heard = NAR.on && !NAR.blocked, say = heard ? 'Mute the narration' : 'Play the narration';
   b.classList.toggle('off', !heard); b.classList.toggle('ask', NAR.on && NAR.blocked);
@@ -1120,7 +1121,7 @@ fetch('narration/narration.json').then((r) => r.json()).then((s) => {
 }).catch(() => {});
 $('nar').addEventListener('click', () => {
   if (NAR.on && !NAR.blocked) { NAR.on = false; store('universe.narration', 'off'); NAR.el.pause(); }
-  else { NAR.on = true; NAR.blocked = false; store('universe.narration', null); if (narWithin() && playing) narPlay(); }
+  else { NAR.on = true; NAR.blocked = false; store('universe.narration', 'on'); if (narWithin() && playing) narPlay(); }
   narShow();
 });
 ['pointerdown', 'keydown'].forEach((ev) => document.addEventListener(ev, (e) => { // the first click or tap anywhere lets a refused voice in
