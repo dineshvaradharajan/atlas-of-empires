@@ -594,12 +594,12 @@ vec3 disc(vec2 uv,float t,float zk,float zf){
  col+=vec3(1.,.66,.4)*(exp(-ed*ed/(es*es*6.))*2.4+exp(-ed*60./(zf*min(1./zf,3.)))*.25);
  return col;
 }
-vec3 earth(vec2 uv,float t){
+vec3 earth(vec2 uv,float t,float sk){ // sk: the scale it is drawn at (scene); the stars stay at the screen's own scale while the camera closes in
  float R=.62;
- vec3 col=stars(uv,25.,.3,3.)*.5;
+ vec3 col=stars(uv*sk,25.,.3,3.)*.5;
  vec2 L2=normalize(vec2(-.85,.32));
  vec3 L=normalize(vec3(L2*.9,.42));
- col+=vec3(1.,.8,.55)*exp(-length(uv-vec2(-2.6,1.))*1.2)*.45;
+ col+=vec3(1.,.8,.55)*exp(-length(uv*sk-vec2(-2.6,1.))*1.2)*.45; // the Sun's light from off to the left, fixed on the screen like the stars
  float r=length(uv);
  if(r<R){
   vec3 n=vec3(uv,sqrt(R*R-r*r))/R;
@@ -638,18 +638,22 @@ vec3 earth(vec2 uv,float t){
  return col;
 }
 vec3 scene(vec2 uv,float t){
- float k=smoothstep(10.,16.,t);
- float m=smoothstep(.5,.92,k);
+ // One steady zoom from the whole disc to the Earth filling the view: the view grows by the same factor in each moment (an exponential
+ // zoom, eased in and out), and the speck that marks the Earth in the disc gives way to the planet when the planet is drawn at about the
+ // speck's size, a few pixels across. (Two separate zooms, the disc's to 15 times and then the planet's from a sixteenth of its size,
+ // made the speck jump into a planet a third of the screen wide.)
+ const float ZF=250.;
+ float k=smoothstep(10.,16.,t), Z=exp(log(ZF)*k), s=Z/ZF; // Z: the disc's magnification; s: the planet's scale, 1 when it fills the view
+ float m=smoothstep(5.*px(),12.*px(),.62*s);
+ // the planet takes the speck's place at once, but the glowing dust around it thins away over a couple of seconds
+ float fd=smoothstep(.45,.8,k), on=smoothstep(.62+1.5*px()/s,.62-1.5*px()/s,length(uv/s));
+ float w=m*max(on,fd);
  vec3 col=vec3(0);
- if(m<1.){
+ if(w<1.){
   vec2 ep=toScreen(earthDisc(t));
-  float zoom=1.+k*k*14.;
-  col=stars(uv,25.,.3,3.)*.6+disc(ep*smoothstep(0.,.3,k)+uv/zoom,t,k,1./zoom)*(1.-.55*k);
+  col=stars(uv,25.,.3,3.)*.6+disc(ep*smoothstep(0.,.3,k)+uv/Z,t,k,1./Z)*(1.-.55*k);
  }
- if(m>0.){
-  vec3 e=earth(uv/mix(.06,1.,m*m),t);
-  col=mix(col,e,m);
- }
+ if(w>0.) col=mix(col,earth(uv/s,t,s),w);
  return col;
 }`,
 ];
