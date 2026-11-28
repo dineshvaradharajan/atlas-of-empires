@@ -13,6 +13,16 @@ const fmt = (n) => Math.round(n).toLocaleString('en');
 const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 function rng(seed) { let s = (seed * 2654435761) >>> 0 || 1; return () => { s ^= s << 13; s >>>= 0; s ^= s >>> 17; s ^= s << 5; s >>>= 0; return s / 4294967296; }; }
 const CALM = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const idle = (f) => window.requestIdleCallback ? requestIdleCallback(f, { timeout: 1000 }) : setTimeout(f, 50);
+// The picture is drawn again only when something in it can have changed (see frame); REV counts what arrives later and changes it: a map,
+// a photograph, the fonts of the labels
+let REV = 0; const redraw = () => { REV++; };
+// What only some chapters need (the Earth's two maps and two photographs, about 1.1 MB) loads once a story opens or the page has been idle
+// a moment, so it does not compete with what the first view needs
+const LATER = []; let later = false;
+function loadLater() { if (later) return; later = true; for (const f of LATER) f(); }
+addEventListener('load', () => setTimeout(() => idle(loadLater), 1500));
+document.fonts?.ready.then(redraw);
 
 const cv = $('cv'); let g = cv.getContext('2d'); // g is swapped for a card's canvas while its still is drawn
 let W = 0, H = 0, DPR = 1;
@@ -140,7 +150,23 @@ function vnoise(x, y, z) {
 const fbm3 = (x, y, z, o = 4) => { let s = 0, a = .5, f = 1; for (let i = 0; i < o; i++) { s += a * vnoise(x * f, y * f, z * f); f *= 2.03; a *= .5; } return s; };
 // craters: a fixed list of bowls on the sphere, dark floors and bright rims, with a few bright ray systems
 const CRATERS = (() => { const R = rng(19), a = []; for (let i = 0; i < 260; i++) { const z = R() * 2 - 1, th = R() * TAU, s = Math.sqrt(1 - z * z); const r = .015 + Math.pow(R(), 3) * .16; a.push([s * Math.cos(th), s * Math.sin(th), z, r, Math.cos(r * 1.25)]); } return a; })();
-function crater(p) { let k = 0; for (const [x, y, z, r, edge] of CRATERS) { const dot = p[0] * x + p[1] * y + p[2] * z; if (dot > edge) { const q = Math.acos(Math.min(1, dot)) / r; k += q < .85 ? -.16 * (1 - q * q) : q < 1.1 ? .14 : 0; } } return k; }
+// Each crater is also filed under the cells of a 24 x 12 latitude-longitude grid that its bowl can reach, so a point of the map tests the few
+// craters of its own cell instead of all 260: the same picture, built about eight times faster (Mercury's and the Moon's maps took 200 ms each)
+const CGX = 24, CGY = 12, CGRID = (() => {
+  const grid = Array.from({ length: CGX * CGY }, () => []);
+  for (const c of CRATERS) {
+    const lat = Math.asin(c[2]), lon = Math.atan2(c[1], c[0]), pad = c[3] * 1.25 + .02; // the bowl's angular reach, as in crater()'s edge test, and a margin
+    for (let j = 0; j < CGY; j++) {
+      const la0 = -Math.PI / 2 + j * Math.PI / CGY, la1 = la0 + Math.PI / CGY; if (lat + pad < la0 || lat - pad > la1) continue;
+      const far = Math.max(Math.abs(la0), Math.abs(la1), Math.abs(lat)) + pad, dl = far > 1.4 ? Math.PI : pad / Math.cos(far); // near a pole, every longitude
+      for (let i = 0; i < CGX; i++) { const mid = -Math.PI + (i + .5) * TAU / CGX, d = Math.abs(((lon - mid + 3 * Math.PI) % TAU) - Math.PI); if (d - Math.PI / CGX <= dl) grid[j * CGX + i].push(c); }
+    }
+  }
+  return grid;
+})();
+function crater(p) {
+  const j = Math.min(CGY - 1, Math.floor((Math.asin(clamp(p[2], -1, 1)) / Math.PI + .5) * CGY)), i = Math.min(CGX - 1, Math.floor((Math.atan2(p[1], p[0]) / TAU + .5) * CGX));
+  let k = 0; for (const [x, y, z, r, edge] of CGRID[j * CGX + i]) { const dot = p[0] * x + p[1] * y + p[2] * z; if (dot > edge) { const q = Math.acos(Math.min(1, dot)) / r; k += q < .85 ? -.16 * (1 - q * q) : q < 1.1 ? .14 : 0; } } return k; }
 // a belt or zone colour by latitude, blended over a degree or so at each edge: hard edges turn to stairs when a planet is drawn large
 const band = (lat, table) => { const i = Math.max(0, table.findIndex(([lo, hi]) => lat >= lo && lat < hi)), [lo, hi, c] = table[i], w = 1.1;
   if (lat - lo < w && i > 0) return mixc(table[i - 1][2], c, .5 + .5 * (lat - lo) / w); if (hi - lat < w && i < table.length - 1) return mixc(table[i + 1][2], c, .5 + .5 * (hi - lat) / w); return c; };
@@ -183,7 +209,7 @@ function buildTex(kind, fn, w = 512, h = 256) {
 // the Earth from the atlas's data: land and sea depth from the present-day height map (data/paleo/0.webp, PALEOMAP), land colour from today's
 // climate classes (data/paleo/climate-now.png, Beck et al. 2018), and clouds painted over the storm belts
 function pixels(url) { return fetch(url).then((r) => r.blob()).then((b) => createImageBitmap(b, { colorSpaceConversion: 'none' })).then((bm) => { const c = document.createElement('canvas'); c.width = bm.width; c.height = bm.height; const x = c.getContext('2d'); x.drawImage(bm, 0, 0); return { w: bm.width, h: bm.height, d: x.getImageData(0, 0, bm.width, bm.height).data }; }); }
-Promise.all([pixels('../../data/paleo/0.webp'), pixels('../../data/paleo/climate-now.png')]).then(([hm, cl]) => {
+LATER.push(() => Promise.all([pixels('../../data/paleo/0.webp'), pixels('../../data/paleo/climate-now.png')]).then(([hm, cl]) => {
   const at = (im, lon, lat) => { const i = clamp(Math.floor((lon / TAU + .5) * im.w), 0, im.w - 1), j = clamp(Math.floor((.5 - lat / Math.PI) * im.h), 0, im.h - 1); return (j * im.w + i) * 4; };
   buildTex('earth', (lon, lat, p) => {
     const e = hm.d[at(hm, lon, lat)]; let c;
@@ -192,8 +218,9 @@ Promise.all([pixels('../../data/paleo/0.webp'), pixels('../../data/paleo/climate
     const dp = Math.abs(lat * 180 / Math.PI), belt = Math.exp(-dp * dp / 40) * .5 + Math.exp(-Math.pow(dp - 55, 2) / 180) * .6 + .15;
     const cloud = clamp((fbm3(p[0] * 3.5, p[1] * 3.5, p[2] * 3.5, 5) - .62 + belt * .25) * 3.2, 0, .85);
     return mixc(c, [250, 252, 255], cloud);
-  }, 1024, 512);
-}).catch(() => {});
+  }, 512, 256); // as fine as the largest drawing of a planet needs (sphereImg: 240 pixels across); 1024 x 512 took four times as long
+  redraw();
+}).catch(() => {}));
 const SPH = new Map();
 // Equatorial and polar radii relative to the mean radius (NASA fact sheets).
 const OBLATE = { jupiter: [71492 / 69911, 66854 / 69911], saturn: [60268 / 58232, 54364 / 58232] };
@@ -365,12 +392,10 @@ function blobSprite(n, seed, c1 = [200, 214, 255]) { return sprite(n, () => { co
 // the galaxy types of a deep field, as Hubble shows them: smooth yellow-orange ellipticals, spirals with blue arms and yellow cores,
 // thin edge-on discs split by a dust lane, lumpy blue irregulars, and the most distant as small red smudges
 let MW = null, M31 = null, M33 = null, LMC = null, SMC = null, SGR = null;
-function sprites() {
-  if (MW) return;
-  MW = spiralSprite(640, 5, 4); M31 = spiralSprite(512, 9, 2, [255, 214, 170], [170, 190, 255], 0); M33 = spiralSprite(256, 13, 2, [220, 220, 255], [140, 180, 255], 0);
-  LMC = blobSprite(192, 21); SMC = blobSprite(128, 23); SGR = blobSprite(128, 27, [255, 214, 170]);
-
-}
+// one step per picture, so that the cards can make them one idle moment at a time (buildCards); a chapter makes any still missing
+const SPRITES = [() => { MW ||= spiralSprite(640, 5, 4); }, () => { M31 ||= spiralSprite(512, 9, 2, [255, 214, 170], [170, 190, 255], 0); }, () => { M33 ||= spiralSprite(256, 13, 2, [220, 220, 255], [140, 180, 255], 0); },
+  () => { LMC ||= blobSprite(192, 21); }, () => { SMC ||= blobSprite(128, 23); }, () => { SGR ||= blobSprite(128, 27, [255, 214, 170]); }];
+function sprites() { if (!SGR || !MW) for (const f of SPRITES) f(); }
 function drawSprite(img, x, y, size, rot = 0, squash = 1, a = 1) { if (size < 2) { glow(x, y, 6, [230, 230, 255], .6 * a); return; }
   if (size < 70) glow(x, y, size * .7, [235, 225, 255], a * (1 - size / 70) * .9); /* drawn small, a picture fades to nothing: a glow keeps it seen */ g.save(); g.globalAlpha = a; g.globalCompositeOperation = 'lighter'; g.translate(x, y); g.rotate(rot); g.scale(1, squash); g.drawImage(img, -size / 2, -size / 2, size, size); g.restore(); }
 
@@ -396,7 +421,7 @@ function lineup(v, names, s, off, spinTime, pop, hl) {
   return pos;
 }
 const voyagerPhoto = new Image();
-voyagerPhoto.src = '../img/pale-blue-dot.jpg';
+voyagerPhoto.onload = redraw; LATER.push(() => { voyagerPhoto.src = '../img/pale-blue-dot.jpg'; });
 const S1 = {
   thumb: 1, id: 'planets', title: 'The Earth among the planets', short: 'Planets', accent: '#7cc0ff',
   blurb: 'Four rocky worlds, four giants and a Sun that could hold more than a million Earths.',
@@ -786,7 +811,7 @@ function solar(v, t, pxAU, cx, cy, fade = 1, speed = 1) {
   star(cx, cy, clamp(pxAU * .004652, 2.5, 18), [255, 220, 150], t);
 }
 const deepFieldPhoto = new Image();
-deepFieldPhoto.src = '../img/hubble-ultra-deep-field.jpg';
+deepFieldPhoto.onload = redraw; LATER.push(() => { deepFieldPhoto.src = '../img/hubble-ultra-deep-field.jpg'; });
 const WEB = (() => { const R = rng(31), nodes = [], links = []; for (let i = 0; i < 300; i++) { const a = R() * TAU, d = 2.3 * Math.sqrt(R()); nodes.push([Math.cos(a) * d, Math.sin(a) * d]); }
   nodes.forEach((p, i) => { const d = nodes.map((q, j) => [Math.hypot(q[0] - p[0], q[1] - p[1]), j]).sort((a, b) => a[0] - b[0]); for (let k = 1; k <= 3; k++) if (d[k][1] > i) links.push([i, d[k][1]]); }); return { nodes, links }; })();
 const S5 = {
@@ -927,24 +952,31 @@ const FADE = .9;
 const nextFrame = document.createElement('canvas'), nextContext = nextFrame.getContext('2d');
 const interruptedFrame = document.createElement('canvas');
 let cur = null, ci = 0, ct = 0, chapterStart = 0, prevCh = null, fadeT = 1, playing = !CALM, textOn = true, last = performance.now();
+let shown = ''; // what the canvas shows now (frame): the same again is not redrawn
 let held = false; // the reader is exploring: the animation runs on, but the story waits on this chapter until Play
 const cards = $('cards');
 function storyUrl(s, i) { return `#${s.id}/${i + 1}`; }
+// The cards' stills are drawn while the page is idle, after it has appeared, one small step at a time: each planet's map, then the first three
+// cards, each galaxy picture, then the rest. Drawn all at once they held the page up for half a second on a fast computer, two on a slow phone
 function buildCards() {
-  sprites();
   cards.innerHTML = STORIES.map((s, i) => `<a class="card" href="${storyUrl(s, 0)}"><canvas width="480" height="270" data-i="${i}"></canvas><div><small>STORY ${i + 1} OF ${STORIES.length}</small><b>${esc(s.title)}</b><p>${esc(s.blurb)}</p></div></a>`).join('');
-  cards.querySelectorAll('canvas').forEach((c) => {
-    const s = STORIES[+c.dataset.i], ch = s.chapters[s.thumb ?? (s.chapters.length > 1 ? 1 : 0)], x = c.getContext('2d'), old = g;
-    g = x; THUMB = true; x.fillStyle = '#04060c'; x.fillRect(0, 0, 480, 270); sky(480, 270, 2, .8);
-    const tv = { x0: 16, x1: 464, y0: 16, y1: 254, w: 448, h: 238, cx: 240, cy: 135, W: 480, H: 270, ph: false, s: 238 };
-    try { ch.draw(tv, s.thumbT ?? 9); } catch (e) { /* a still that fails leaves the card dark */ }
-    THUMB = false; g = old;
-  });
+  const card = [...cards.querySelectorAll('canvas')].map((c) => () => drawCard(c));
+  const todo = [...Object.keys(PAINTS).map((k) => () => { if (!TX[k]) buildTex(k, PAINTS[k]); }), ...card.slice(0, 3), ...SPRITES, ...card.slice(3)];
+  const next = () => { const f = todo.shift(); if (f) { f(); idle(next); } };
+  idle(next);
+}
+function drawCard(c) {
+  const s = STORIES[+c.dataset.i], ch = s.chapters[s.thumb ?? (s.chapters.length > 1 ? 1 : 0)], x = c.getContext('2d'), old = g;
+  g = x; THUMB = true; x.fillStyle = '#04060c'; x.fillRect(0, 0, 480, 270); sky(480, 270, 2, .8);
+  const tv = { x0: 16, x1: 464, y0: 16, y1: 254, w: 448, h: 238, cx: 240, cy: 135, W: 480, H: 270, ph: false, s: 238 };
+  try { ch.draw(tv, s.thumbT ?? 9); } catch (e) { /* a still that fails leaves the card dark */ }
+  THUMB = false; g = old;
 }
 function openStory(s, i) {
   i = clamp(i, 0, s.chapters.length - 1);
   const same = cur === s;
   if (same && i === ci) return;
+  loadLater();
   if (!same) { cur = s; prevCh = null; buildDock(); narStory(s); }
   else if (!CALM) {
     if (prevCh && fadeT < 1) {
@@ -997,9 +1029,10 @@ function drawChapter(ctx, ch, v, t, clock) {
 function frame(now) {
   const dt = Math.min(.1, (now - last) / 1000); last = now;
   size();
+  if (!W || !H) { requestAnimationFrame(frame); return; } // a window with no size yet (opened hidden): a chapter laid out in it has no scale, and the error stopped the loop for good
   g.setTransform(DPR, 0, 0, DPR, 0, 0);
   const T = now / 1000;
-  if (!cur) { g.fillStyle = '#04060c'; g.fillRect(0, 0, W, H); sky(W, H, CALM ? 0 : T, 1, CALM ? 0 : T * .3); }
+  if (!cur) { g.fillStyle = '#04060c'; g.fillRect(0, 0, W, H); sky(W, H, CALM ? 0 : T, 1, CALM ? 0 : T * .3); shown = ''; }
   else {
     if (playing && held) ct += dt; // exploring: keep the picture moving, stay on this chapter
     else if (playing) {
@@ -1016,7 +1049,11 @@ function frame(now) {
     const ch = cur.chapters[ci], v = viewport(W, H, textOn), animT = CALM ? ch.dur * .8 : ct;
     const clock = chapterStart + animT;
     fadeT = Math.min(1, fadeT + dt / FADE);
-    if (fadeT < 1 && prevCh) {
+    // A chapter's picture depends only on its time, the camera, the window and what has loaded, so while it is paused or stopped at its end
+    // (or the reader has asked for less motion) the same picture is not drawn sixty times a second
+    const still = [cur.id, ci, animT, prevCh ? fadeT : 1, CAM.z, CAM.x, CAM.y, CAM.yaw, CAM.pitch, W, H, DPR, textOn, REV].join();
+    if (still === shown) { /* nothing has changed */ }
+    else if (fadeT < 1 && prevCh) {
       if (prevCh.image) g.drawImage(prevCh.image, 0, 0, W, H);
       else drawChapter(g, prevCh.ch, v, prevCh.t, prevCh.start + prevCh.t);
       if (nextFrame.width !== cv.width || nextFrame.height !== cv.height) {
@@ -1026,6 +1063,7 @@ function frame(now) {
       // Blend complete frames so a chapter's internal opacity and additive glows cannot bypass the fade.
       g.save(); g.globalAlpha = ease(fadeT); g.drawImage(nextFrame, 0, 0, W, H); g.restore();
     } else { prevCh = null; drawChapter(g, ch, v, animT, clock); }
+    shown = still;
     if (ch.live) { const lv = ch.live(animT); if ($('live').textContent !== lv) $('live').textContent = lv; }
     narTick();
     const n = cur.chapters.length, p = (ci + clamp(ct / chEnd(), 0, 1)) / n * 100;
