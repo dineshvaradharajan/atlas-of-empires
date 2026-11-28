@@ -52,9 +52,9 @@ const SCENES=[
   live:(t)=>t>10.5?'Closer in: one young galaxy like these grew into the Milky Way':''},
  {era:'Cosmic noon',clock:'3.8',unit:'billion years after the Big Bang',ago:'10 billion years ago · peak from about 2 to 6 billion years',title:'Our galaxy takes shape',
   lede:'Galaxies grow by making stars and swallowing their neighbours. The Milky Way is one.',
-  temp:'Leftover light under 10 K',what:'Galaxies everywhere; ours with a disc and a halo',sure:'Well supported',
-  more:'Star birth across the universe peaked about 3.5 billion years after the Big Bang, at roughly ten times today’s rate. The Milky Way’s oldest stars are over 12 billion years old. The faint arc of stars is Gaia-Enceladus, a smaller galaxy it swallowed, still traceable by the Gaia satellite. The dashed ring marks the Sun’s orbit today, about 27,000 light-years from the centre. The Sun, born 5 billion years later, probably formed several thousand light-years farther in and drifted outward.',
-  src:'Sources: Madau and Dickinson 2014; Helmi et al. 2018, Nature; GRAVITY Collaboration 2019; Minchev et al. 2013, radial migration',dur:14,acc:'#f2c46d',aot:.276},
+  temp:'Leftover light under 10 K',what:'Galaxies everywhere; ours a thick, lumpy disc and a halo',sure:'Well supported',
+  more:'Star birth across the universe peaked about 3.5 billion years after the Big Bang, at roughly ten times today’s rate. The Milky Way’s oldest stars are over 12 billion years old. At this age it was smaller than today, thick and lumpy, lit by giant clumps of new stars rather than tidy spiral arms; its bar formed later, about 8 billion years ago. The galaxy falling in and being torn apart is Gaia-Enceladus, about a quarter of the Milky Way’s mass. It stirred the young disc into a thick one, and its stars are still traceable by the Gaia satellite. The dashed ring marks the Sun’s orbit today, about 27,000 light-years from the centre. The Sun, born 5 billion years later, probably formed several thousand light-years farther in and drifted outward.',
+  src:'Sources: Madau and Dickinson 2014; Bournaud et al. 2009, clumpy young discs; van Dokkum et al. 2013, Milky Way-like galaxies through time; Sanders et al. 2024, the bar’s age; Helmi et al. 2018, Nature; GRAVITY Collaboration 2019; Minchev et al. 2013, radial migration',dur:14,acc:'#f2c46d',aot:.276},
  {era:'The solar system forms',clock:'9.22',unit:'billion years after the Big Bang',ago:'4,567 million years ago',title:'The Sun and the Earth',
   lede:'A cloud of gas and dust collapses. A star lights up, and rock gathers around it.',
   temp:'The young Sun glows as it contracts; fusion comes later',what:'A young Sun and a disc of dust, ice and rock',sure:'Well supported: dated in meteorites',
@@ -95,7 +95,7 @@ vec3 aces(vec3 x){return clamp((x*(2.51*x+.03))/(x*(2.43*x+.59)+.14),0.,1.);}
 vec3 bb(float t){t=clamp(t,0.,1.6);return pow(vec3(t),vec3(1.,2.2,4.))*vec3(2.,1.45,1.15);}
 float px(){return 2.*uZ/uRes.y;}
 // one camera move from the first galaxies (scene 8) into our galaxy (scene 9): tau counts seconds from 2 s before the cross-fade,
-// and both scenes scale by this same curve, so the young galaxy and the spiral are the same size on screen as one fades into the other
+// and both scenes scale by this same curve, so the young galaxy and the grown disc are the same size on screen as one fades into the other
 float zoomG(float tau){return exp(2.81*smoothstep(0.,6.,tau));}
 // one star per lit cell; sizes are set in screen pixels so they stay sharp at any resolution
 // integer hash for the star field: the float hash above leaves a faint column of extra stars where cell numbers line up
@@ -505,34 +505,46 @@ vec3 scene(vec2 uv,float t){
  return col;
 }`,
 
-/* 9 Our galaxy: a barred spiral, turning slowly, with the Sun's future orbit and a swallowed neighbour */
-`vec3 scene(vec2 uv,float t){
+/* 9 Our galaxy about 10 billion years ago: still small, thick and clumpy, with no bar yet, while Gaia-Enceladus falls in and is torn apart */
+`// A Milky Way-like galaxy at this age was gas-rich and turbulent: a thick disc lit by a few giant clumps of star birth rather than tidy
+// spiral arms (Bournaud et al. 2009), well short of today's size and mass (van Dokkum et al. 2013), and without its bar, which formed about
+// 8 billion years ago (Sanders et al. 2024). Gaia-Enceladus, about a quarter of its mass, was falling in at this time and puffed the young
+// disc up into the thick disc (Helmi et al. 2018)
+// a giant clump of star birth: a knot of blue-white young stars in a pink glow of hydrogen
+vec3 clump(vec2 d,float s,float h){float r2=dot(d,d)/(s*s);return (vec3(.62,.76,1.)*exp(-r2*3.)*1.4+vec3(1.,.36,.6)*exp(-r2*.9)*.5)*(.55+.7*h);}
+vec3 scene(vec2 uv,float t){
  vec3 col=stars(uv,22.,.35,2.)*.7+stars(uv,60.,.22,8.)*.5;
- uv*=max(1.,1./(.06*zoomG(t+2.))); // the camera is still flying in from the young galaxy: the spiral grows to full size by t = 4
+ uv*=max(1.,1./(.06*zoomG(t+2.))); // the camera is still flying in from the young galaxy: the disc grows to full size by t = 4
  float incl=mix(1.0,1.12,smoothstep(0.,16.,t));
  float ci=cos(incl);
  vec2 q=rot(.28)*uv;
  vec2 dp=vec2(q.x,q.y/ci)/1.08;
  float rr=length(dp);
  float spin=t*.035;
+ // the disc: smaller than today's, so the dashed ring of the Sun's present orbit lies out at its edge, and thick: puffed up, so seen
+ // tilted it is a fat ellipse with a soft glow above and below, not a thin plate
+ float disc=exp(-rr*2.2)*.8*smoothstep(.82,.3,rr); // flatter than a grown spiral's: no dominant centre yet
+ vec2 tq=vec2(q.x,q.y*1.9);
+ float thick=exp(-dot(tq,tq)*7.)*.45+exp(-dot(tq,tq)*2.6)*.18;
+ // loose, broken arms: no grand design yet, only patchy hints wound up by the rotation
  float ang=atan(dp.y,dp.x)+spin;
- float pitch=.24;
- float lr=log(rr+.03)/tan(pitch);
- float nz=fbm4(dp*4.+3.)-.5;
- float a1=.5+.5*cos(2.*ang-2.*lr+nz*2.5);
- float a2=.5+.5*cos(2.*ang-2.*lr+PI+.6+nz*2.5);
- float arms=pow(a1,4.)+.7*pow(a2,4.);
- float disc=exp(-rr*3.)*smoothstep(1.15,.55,rr);
- vec2 br=rot(-spin+.4)*dp;
- float bar=exp(-dot(vec2(br.x*.42,br.y*1.5),vec2(br.x*.42,br.y*1.5))*60.);
- float dust=pow(.5+.5*cos(2.*ang-2.*lr-.55+nz*2.5),8.)*smoothstep(.1,.3,rr)*smoothstep(1.,.4,rr);
- vec3 dc=vec3(.55,.68,1.)*arms*disc*2.4+vec3(1.,.85,.66)*disc*.9;
- dc+=vec3(1.,.35,.58)*pow(vn(dp*26.),6.)*arms*smoothstep(.15,.4,rr)*disc*8.;
- dc+=stars(dp,90.,.5,4.)*arms*disc*6.;
- dc*=1.-dust*.75;
- dc+=vec3(1.,.8,.55)*bar*1.1;
- float b=length(vec2(q.x,q.y*1.25));
- col+=dc+vec3(1.,.82,.56)*(exp(-b*b*55.)*2.2+exp(-b*7.)*.45);
+ float lr=log(rr+.05)/tan(.42);
+ float nz=fbm4(dp*5.+3.)-.5;
+ float arms=pow(.5+.5*cos(2.*ang-2.*lr+nz*6.),2.)*(.3+.9*fbm4(dp*6.5+vec2(9.,spin)));
+ // the giant clumps, turning with the disc, the inner ones faster
+ vec3 cl=vec3(0);
+ for(int i=0;i<10;i++){
+  float fi=float(i), r=.06+.36*fract(fi*.618+.31+.3*h21(vec2(fi,3.1))), a=fi*2.39996+.8*h21(vec2(fi,7.7))+spin*.35/(r+.12); // spread over the disc, not bunched or in a ring
+  cl+=clump(dp-r*vec2(cos(a),sin(a)),.016+.036*h21(vec2(fi,1.9)),h21(vec2(fi,5.3)));
+ }
+ vec3 dc=vec3(.66,.74,1.)*disc*(.22+.75*arms)+vec3(1.,.84,.66)*thick*.17;
+ dc+=cl*1.3*smoothstep(.7,.3,rr);
+ dc+=stars(dp,90.,.5,4.)*disc*(.6+2.2*arms);
+ dc*=1.-.55*smoothstep(.52,.75,fbm4(dp*8.+5.))*smoothstep(.06,.2,rr)*smoothstep(.7,.35,rr); // ragged lanes of dust
+ // a compact bright centre: the young bulge, but no bar
+ float b=length(vec2(q.x,q.y*1.3));
+ col+=dc+vec3(1.,.84,.6)*(exp(-b*b*110.)*1.1+exp(-b*12.)*.2);
+ // the Sun's orbit today, dashed, and a marker on it (the Sun is not born for another 5 billion years)
  float dash=step(.45,fract((ang-spin)*48./TAU));
  col+=vec3(1.,.82,.5)*exp(-pow((rr-.52)*160.,2.))*dash*.28;
  float a0=2.3-spin;
@@ -540,10 +552,17 @@ vec3 scene(vec2 uv,float t){
  vec2 ms=rot(-.28)*(vec2(mp.x,mp.y*ci)*1.08);
  float md=length(uv-ms);
  col+=vec3(1.,.85,.5)*(exp(-md*md/(px()*px()*9.))*2.+exp(-md*30.)*.3)*(.8+.2*sin(uG*3.));
- vec2 e=rot(-.9)*(uv-vec2(.05,.0));
+ // Gaia-Enceladus: a dwarf galaxy a quarter of the Milky Way's mass, falling in on a plunging orbit. It sinks and is pulled apart as the
+ // scene runs: its core fades while its stars spread along its path ahead of it and behind, the debris that fills the inner halo today
+ float k=smoothstep(0.,14.,t);
+ vec2 e=rot(-.9)*(uv-vec2(.05,0.));
+ float R0=mix(1.25,.95,k);
+ float pe=atan(e.y*2.6,e.x), pc=mix(-.3,-1.15,k); // along its orbit towards the Milky Way, and lower
+ float dphi=mod(pe-pc+PI,TAU)-PI;
  float ell=length(vec2(e.x,e.y*2.6));
- float strm=exp(-pow((ell-1.28)*10.,2.))*smoothstep(-.6,.9,e.x);
- col+=stars(uv,80.,.4,21.)*strm*1.6+vec3(.6,.62,.75)*strm*.03;
+ float tail=exp(-pow((ell-R0)*mix(7.,5.,k),2.))*exp(-dphi*dphi/pow(mix(.35,1.1,k),2.));
+ float core=exp(-pow((ell-R0)/.07,2.)-pow(dphi*R0*.6/mix(.08,.2,k),2.))*mix(1.,.35,k); // stretched along its path as it is torn
+ col+=vec3(1.,.9,.74)*(core*.8+tail*.12)+stars(uv,80.,.45,21.)*(tail*2.2+core*1.4);
  return col;
 }`,
 
