@@ -711,7 +711,7 @@ function target(w,h){
 }
 function drop(T){if(T){gl.deleteTexture(T.tex);gl.deleteFramebuffer(T.fb);}}
 
-// Render scale adapts to the GPU: full device resolution (up to 2x) when it keeps up, less when it does not.
+// Render scale adapts to the GPU: full device resolution (up to 2x) when it keeps up, less when it does not (see frame).
 let scale=.8, A=null, B=null, W=0, H=0, off=[0,0], zoom=1;
 function size(){
   const dpr=Math.min(window.devicePixelRatio||1,2);
@@ -744,12 +744,22 @@ function composite(mix,vignette){
 
 /* ---------------------------------------------------------------- timeline */
 let T=0, G=0, tail=0, playing=false, started=false, ended=false, dirty=true, shown=-1, last=performance.now();
-let ema=16, lastAdapt=0;
+let ema=16, lastAdapt=0, credit=1e3, lastRaf=performance.now();
+// the highest render scale each scene has held 55 frames a second at: a scene once too slow at a scale is not raised straight back to it, so
+// the resolution settles instead of swinging between too slow and fast enough (scenes 7 and 8 cost several times the others)
+const CEIL=SCENES.map(()=>1);
+const PACE=1000/60, ENDRUN=60; // at most 60 frames a second; after this many seconds on the closing slate the picture holds still
 function locate(x){let i=0;while(i<N-1&&x>=START[i+1])i++;return i;}
 
 function frame(now){
+  // The film moves slowly, so 60 frames a second looks the same as the 120 a fast screen offers, for half the work (and battery). Skipping
+  // by a running credit of time, not every other frame, keeps 60 on a 90 Hz screen too, and a 60 Hz screen's frames arriving a little early
+  // or late are never skipped
+  credit=Math.min(credit+now-lastRaf,2*PACE);lastRaf=now;
+  if(credit<PACE-4){requestAnimationFrame(frame);return;}
+  credit=Math.max(0,credit-PACE);
   const dt=Math.min(.25,(now-last)/1000); last=now;
-  const live=!started||playing||ended;
+  const live=!started||playing||(ended&&tail<ENDRUN); // the closing slate shows the young Earth moving behind it for a minute, then still
   if(live) G+=dt;
   if(playing){T+=dt*(narrHeard()?NARR.rate[locate(T)]:1);if(STORY&&T>=STORY.hold){T=STORY.hold;setPlaying(false);}if(T>=TOTAL){T=TOTAL;finish();}} // in a story the film pauses at each chapter's moment
   if(ended) tail+=dt;
@@ -764,11 +774,15 @@ function frame(now){
     composite(mix,i===0?0:i===1?mix:1);
     dirty=false;
     hud(mix>.5?j:i,T);
-    // adapt resolution
-    ema=ema*.92+dt*1000*.08;
-    if(live&&now-lastAdapt>1500){
-      if(ema>26&&scale>.42){scale=Math.max(.42,scale*.82);lastAdapt=now;}
-      else if(ema<18.5&&scale<1){scale=Math.min(1,scale*1.1);lastAdapt=now;}
+    // adapt resolution: lower it while the scene runs below about 55 frames a second, and remember that it was too slow there; raise it
+    // again only up to what the scene has kept up at. Cross-fades, which draw two scenes, are left out of the reckoning
+    ema=ema*.92+Math.min(dt*1000,25)*.08; // one long frame (a scene change, a page hiccup) cannot lower it alone; a run of slow ones does
+    const k=mix>.5?j:i;
+    if(scale>CEIL[k]){scale=CEIL[k];lastAdapt=now;} // a scene already known to be slow starts at the scale it held
+    else if(live&&j<0&&now-lastAdapt>1200){
+      if(ema>18.2&&scale>.42){CEIL[k]=Math.max(.42,scale*.97);scale=Math.max(.42,scale*.86);lastAdapt=now;}
+      else if(ema<17.4&&scale<CEIL[k]){scale=Math.min(CEIL[k],scale*1.12);lastAdapt=now;}
+      else if(ema<17.4&&scale<1&&now-lastAdapt>6000){CEIL[k]=scale=Math.min(1,scale*1.06);lastAdapt=now;} // smooth for a while at its ceiling: try a little higher (the slowness may have been passing)
     }
   }
   if(!started){
