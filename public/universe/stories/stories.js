@@ -945,7 +945,7 @@ function openStory(s, i) {
   i = clamp(i, 0, s.chapters.length - 1);
   const same = cur === s;
   if (same && i === ci) return;
-  if (!same) { cur = s; prevCh = null; buildDock(); }
+  if (!same) { cur = s; prevCh = null; buildDock(); narStory(s); }
   else if (!CALM) {
     if (prevCh && fadeT < 1) {
       // A quick second chapter change should start from the image the reader can actually see.
@@ -959,7 +959,7 @@ function openStory(s, i) {
   document.body.classList.remove('picking'); $('cap').hidden = false; $('dock').hidden = false; $('tabStories').removeAttribute('aria-current');
   showText(); if (!same) setPlaying(!CALM);
 }
-function closeStory() { cur = null; prevCh = null; $('zoomer').hidden = true; document.body.classList.add('picking'); $('cap').hidden = true; $('dock').hidden = true; $('tabStories').setAttribute('aria-current', 'page'); }
+function closeStory() { cur = null; prevCh = null; NAR.el.pause(); NAR.key = null; $('sub').hidden = true; $('zoomer').hidden = true; document.body.classList.add('picking'); $('cap').hidden = true; $('dock').hidden = true; $('tabStories').setAttribute('aria-current', 'page'); }
 function route() {
   const m = /^#([\w-]+)\/(\d+)$/.exec(location.hash), s = m && STORIES.find((x) => x.id === m[1]);
   if (s) openStory(s, +m[2] - 1); else closeStory();
@@ -1004,7 +1004,7 @@ function frame(now) {
     if (playing && held) ct += dt; // exploring: keep the picture moving, stay on this chapter
     else if (playing) {
       ct += dt;
-      const end = cur.chapters[ci].dur;
+      const end = chEnd();
       if (ct >= end) {
         const carry = ct - end;
         ct = end;
@@ -1027,7 +1027,8 @@ function frame(now) {
       g.save(); g.globalAlpha = ease(fadeT); g.drawImage(nextFrame, 0, 0, W, H); g.restore();
     } else { prevCh = null; drawChapter(g, ch, v, animT, clock); }
     if (ch.live) { const lv = ch.live(animT); if ($('live').textContent !== lv) $('live').textContent = lv; }
-    const n = cur.chapters.length, p = (ci + clamp(ct / ch.dur, 0, 1)) / n * 100;
+    narTick();
+    const n = cur.chapters.length, p = (ci + clamp(ct / chEnd(), 0, 1)) / n * 100;
     const dc = `CHAPTER ${ci + 1} OF ${n}${held ? ' · EXPLORING' : ''}`; if ($('dcount').textContent !== dc) $('dcount').textContent = dc;
     $('cursor').style.left = p + '%'; const pill = $('pill'); pill.style.left = p + '%'; if (pill.textContent !== ch.short) pill.textContent = ch.short;
   }
@@ -1037,8 +1038,8 @@ function frame(now) {
 $('bands').addEventListener('click', (e) => { const b = e.target.closest('[data-k]'); if (b) go(+b.dataset.k); });
 $('prev').addEventListener('click', () => go(ci - 1)); $('next').addEventListener('click', () => go(ci + 1));
 $('play').addEventListener('click', () => {
-  if (held) { held = false; resetView(); if (ct >= cur.chapters[ci].dur) { if (ci < cur.chapters.length - 1) go(ci + 1); else ct = 0; } setPlaying(true); return; }
-  if (!playing && cur && ci === cur.chapters.length - 1 && ct >= cur.chapters[ci].dur) { ct = 0; } setPlaying(!playing);
+  if (held) { held = false; resetView(); if (ct >= chEnd()) { if (ci < cur.chapters.length - 1) go(ci + 1); else ct = 0; } setPlaying(true); return; }
+  if (!playing && cur && ci === cur.chapters.length - 1 && ct >= chEnd()) { ct = 0; } setPlaying(!playing);
 });
 $('cc').addEventListener('click', () => { textOn = !textOn; document.body.classList.toggle('notext', !textOn); $('cc').setAttribute('aria-pressed', textOn); $('cc').textContent = textOn ? 'Hide text' : 'Show text'; });
 $('fs').addEventListener('click', () => { document.fullscreenElement ? document.exitFullscreen() : document.documentElement.requestFullscreen?.(); });
@@ -1047,7 +1048,7 @@ addEventListener('keydown', (e) => {
   if (!cur) return;
   if (e.key === 'ArrowRight') { e.preventDefault(); go(ci + 1); } else if (e.key === 'ArrowLeft') { e.preventDefault(); go(ci - 1); }
   else if (e.key === ' ') { e.preventDefault(); $('play').click(); } else if (e.key === 'Escape') { location.hash = ''; }
-  else if (e.key === 'c' || e.key === 'C') $('cc').click(); else if (e.key === 'f' || e.key === 'F') $('fs').click();
+  else if (e.key === 'c' || e.key === 'C') $('cc').click(); else if (e.key === 'n' || e.key === 'N') $('nar').click(); else if (e.key === 'f' || e.key === 'F') $('fs').click();
   else if (e.key === '+' || e.key === '=') zoomBy(1.4); else if (e.key === '-' || e.key === '_') zoomBy(1 / 1.4); else if (e.key === '0') resetView();
 });
 // ---------------------------------------------------------------- the reader's camera: scroll or pinch to zoom, drag to move (or to turn the
@@ -1077,6 +1078,55 @@ cv.addEventListener('pointerup', lift); cv.addEventListener('pointercancel', lif
 cv.addEventListener('wheel', (e) => { if (!cur) return; e.preventDefault(); zoomAt(e.clientX, e.clientY, Math.exp(-clamp(e.deltaY, -120, 120) * .0018)); }, { passive: false });
 cv.addEventListener('dblclick', () => { if (cur) resetView(); });
 $('zin').addEventListener('click', () => zoomBy(1.5)); $('zout').addEventListener('click', () => zoomBy(1 / 1.5)); $('zreset').addEventListener('click', () => resetView());
+// ---------------------------------------------------------------- narration (narration/narration.json, recorded by tools/narration.py): one
+// spoken line per chapter, starting just after the chapter opens, shown as a subtitle while it is spoken. While the voice is heard a chapter
+// lasts until its line has finished (chEnd); muted, the story keeps its own pace. A story plays its voice the first time; once a reader has
+// heard half of it, later visits to that story start muted and the speaker button (or N) plays it. Muting is remembered with the film's.
+// Browsers allow sound only after a click or tap: until then the story runs at its own pace, the button shows muted and glows, and the next
+// click or tap anywhere brings the voice in. One audio element plays every line (Safari on a phone lets an element play once a tap has started it)
+const NAR = { on: true, blocked: false, lines: {}, el: new Audio(), key: null, done: new Set() }, LEAD = .6, TAIL = 1.1;
+NAR.el.preload = 'auto';
+const store = (k, v) => { try { if (v == null) localStorage.removeItem(k); else localStorage.setItem(k, v); } catch (e) { /* this visit only */ } };
+const stored = (k) => { try { return localStorage.getItem(k); } catch (e) { return null; } };
+const lineOf = (k = ci) => cur && NAR.lines[cur.id]?.[k];
+const narAudible = () => NAR.on && !NAR.blocked && !!lineOf();
+function chEnd(k = ci) { const ch = cur.chapters[k], l = NAR.on && !NAR.blocked && lineOf(k); return l ? Math.max(ch.dur, LEAD + l.dur + TAIL) : ch.dur; }
+function narStory(s) { NAR.on = stored('universe.narration') !== 'off' && !stored('stories.heard.' + s.id); NAR.done = new Set(); narShow(); }
+function narShow() {
+  const b = $('nar'), heard = NAR.on && !NAR.blocked, say = heard ? 'Mute the narration' : 'Play the narration';
+  b.classList.toggle('off', !heard); b.classList.toggle('ask', NAR.on && NAR.blocked);
+  b.setAttribute('aria-pressed', String(!heard)); b.setAttribute('aria-label', say); b.title = say + ' (N)';
+}
+function narPlay() { const p = NAR.el.play(); if (p && p.catch) p.catch((e) => { if (e && e.name === 'NotAllowedError' && !NAR.blocked) { NAR.blocked = true; narShow(); } }); }
+const narWithin = () => { const l = lineOf(), w = ct - LEAD; return l && w >= 0 && w < l.dur + .3; };
+function narTick() {
+  const el = NAR.el, l = lineOf(), sb = $('sub');
+  if (!cur || !l || !narAudible()) { if (!el.paused) el.pause(); if (!sb.hidden) { sb.hidden = true; sb.textContent = ''; } return; }
+  const key = cur.id + '/' + ci, want = ct - LEAD;
+  if (NAR.key !== key) { NAR.key = key; el.src = 'narration/' + l.file; }
+  if (want < 0) { if (!el.paused) el.pause(); if (el.currentTime > 0 && el.readyState > 0) el.currentTime = 0; }
+  else if (want < l.dur + .3) {
+    if (playing) { if (el.readyState > 0 && Math.abs(el.currentTime - want) > 1 && !el.ended) el.currentTime = want; if (el.paused && !el.ended) narPlay(); } // a drift of more than a second: after a seek
+    else if (!el.paused) el.pause();
+  }
+  if (el.ended && !NAR.done.has(key)) { NAR.done.add(key); if (NAR.done.size >= cur.chapters.length / 2) store('stories.heard.' + cur.id, '1'); } // heard: later visits start muted
+  const said = want >= 0 && (want < l.dur + .3 || !el.paused) ? l.text : '';
+  if (sb.textContent !== said) { sb.textContent = said; sb.hidden = !said; }
+}
+fetch('narration/narration.json').then((r) => r.json()).then((s) => {
+  if (!s.cues.every((c) => c.file && c.dur)) return; // a script edited but not yet recorded
+  for (const c of s.cues) (NAR.lines[c.story] = NAR.lines[c.story] || [])[c.chapter - 1] = c;
+  $('nar').hidden = false; if (cur) narStory(cur); else narShow();
+}).catch(() => {});
+$('nar').addEventListener('click', () => {
+  if (NAR.on && !NAR.blocked) { NAR.on = false; store('universe.narration', 'off'); NAR.el.pause(); }
+  else { NAR.on = true; NAR.blocked = false; store('universe.narration', null); if (narWithin() && playing) narPlay(); }
+  narShow();
+});
+['pointerdown', 'keydown'].forEach((ev) => document.addEventListener(ev, (e) => { // the first click or tap anywhere lets a refused voice in
+  if (!NAR.blocked || e.target.closest?.('#nar')) return;
+  NAR.blocked = false; narShow(); if (NAR.on && narWithin() && playing) narPlay();
+}, true));
 addEventListener('hashchange', route);
 buildCards();
 route();

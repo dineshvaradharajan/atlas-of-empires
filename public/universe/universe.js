@@ -961,7 +961,8 @@ document.addEventListener('visibilitychange',()=>{last=performance.now();});
 cv.addEventListener('webglcontextlost',e=>{e.preventDefault();});
 
 /* ---------------------------------------------------------------- narration: a spoken commentary for beginners (narration/narration.json,
-   recorded by tools/narration.py). It plays with the film unless the reader mutes it (the speaker button or N; remembered on this browser).
+   recorded by tools/narration.py). On a first visit it plays with the film; once a reader has heard it (half a minute of it), later visits
+   start muted and the speaker button (or N) plays it. Muting is remembered on this browser too.
    A scene's lines are spoken one after another, like a person telling the story: a breath before the first, a short pause between them.
    Spoken lines take longer than some scenes, so while the voice is heard the film runs each such scene more slowly (NARR.rate, film seconds
    per real second) until its lines fit; muted, it keeps its own pace. The voice follows pause, play and seeking (a line picked up halfway
@@ -969,9 +970,9 @@ cv.addEventListener('webglcontextlost',e=>{e.preventDefault();});
    Browsers allow sound only after the reader has clicked or tapped the page, and the film starts by itself, so the first line may be refused:
    the film then runs at its own pace, the button shows the voice as off, and the next click or tap anywhere brings it in. One audio element
    plays every line (Safari on a phone lets an element play once a tap has started it, not each new one); a second only fetches the next line */
-const NARR={on:true,blocked:false,cues:[],rate:SCENES.map(()=>1),el:new Audio(),warm:new Audio(),loaded:-1,lastX:0};
+const NARR={on:true,blocked:false,cues:[],rate:SCENES.map(()=>1),el:new Audio(),warm:new Audio(),loaded:-1,lastX:0,heard:0,at:0};
 NARR.el.preload='auto';NARR.warm.preload='auto';
-try{if(localStorage.getItem('universe.narration')==='off')NARR.on=false;}catch(e){/* storage can be blocked: the voice is then on */}
+try{if(localStorage.getItem('universe.narration')==='off'||localStorage.getItem('universe.heard'))NARR.on=false;}catch(e){/* storage can be blocked: the voice is then on */}
 const narrHeard=()=>NARR.on&&!NARR.blocked&&NARR.cues.length>0;
 function narrPlan(cues){ // real seconds: before a scene's first line, between lines, after its last; gaps grow up to GMAX where a scene has room
   const LEAD=.5,GAP=.45,END=.7,GMAX=1.2;
@@ -1003,14 +1004,16 @@ function narrPlay(){ // inside a click or tap this also unlocks the element for 
 }
 function narrSet(v){
   NARR.on=v;NARR.blocked=false;
-  try{localStorage.setItem('universe.narration',v?'on':'off');}catch(e){/* remembered for this visit only */}
+  try{if(v)localStorage.removeItem('universe.narration');else localStorage.setItem('universe.narration','off');}catch(e){/* remembered for this visit only */}
   if(v){if(narrCue(ended?TOTAL+tail:T)>=0&&(playing||ended))narrPlay();}else NARR.el.pause();
   narrShow();dirty=true;
 }
 function narrTick(){
   if(NARR.cues.length){
     const x=ended?TOTAL+tail:T, jumped=Math.abs(x-NARR.lastX)>.75;NARR.lastX=x;
-    const k=narrCue(x), el=NARR.el, moving=playing||ended;
+    const k=narrCue(x), el=NARR.el, moving=playing||ended, now=performance.now();
+    if(narrHeard()&&!el.paused&&NARR.heard<30){NARR.heard+=Math.min(.25,(now-NARR.at)/1000);if(NARR.heard>=30)try{localStorage.setItem('universe.heard','1');}catch(e){}} // heard: later visits start muted
+    NARR.at=now;
     if(!narrHeard()){if(!el.paused)el.pause();}
     else if(k>=0){
       const c=NARR.cues[k], want=(x-c.t)/c.r; // film seconds back to the recording's own seconds

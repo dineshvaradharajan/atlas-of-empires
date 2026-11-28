@@ -21,10 +21,12 @@
   </nav>
   <div class="tools">
     <a class="pb stbtn" href="../">Film</a>
-    <button type="button" class="pb" id="cc" aria-pressed="true" title="Show or hide the text (C)">Hide text</button>
+    <button type="button" class="rb nar" id="nar" aria-pressed="false" aria-label="Mute the narration" title="Mute the narration (N)" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path class="spk" d="M4 9v6h4l5 4V5L8 9H4z"/><path class="w" d="M16 9a4 4 0 0 1 0 6M18.5 6.5a7.5 7.5 0 0 1 0 11"/><path class="x" d="M16.5 9.5l5 5M21.5 9.5l-5 5"/></svg></button>
+    <button type="button" class="pb" id="cc" aria-pressed="true" title="Show or hide the text (C)" hidden>Hide text</button>
     <button type="button" class="rb" id="fs" aria-label="Full screen" title="Full screen (F)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button>
   </div>
 </header>
+<p id="sub" hidden aria-live="polite"></p>
 <span class="impr" id="impr">Scale varies by chapter. Illustrations unless credited as images.</span>
 
 <section class="picker" id="picker" aria-labelledby="pickTitle">

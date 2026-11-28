@@ -1,0 +1,268 @@
+{
+ "about": "Spoken commentary for the universe stories (public/universe/stories/), one line per chapter, in the order of STORIES in stories.js. Each line starts just after its chapter opens; while it is heard, a chapter waits for its line to finish. tools/narration.py records the files and fills in 'dur' (seconds).",
+ "voice": "George",
+ "engine": "elevenlabs",
+ "model": "eleven_multilingual_v2",
+ "voice_id": "JBFqnCBsd6RMkjVDRZzb",
+ "settings": {
+  "stability": 0.45,
+  "similarity_boost": 0.75,
+  "style": 0.25,
+  "use_speaker_boost": true,
+  "speed": 0.95
+ },
+ "cues": [
+  {
+   "story": "planets",
+   "chapter": 1,
+   "text": "Let's start close to home. The four planets nearest the Sun are made of rock, and the Earth is the biggest of them, just ahead of Venus.",
+   "file": "01-ade6107690.m4a",
+   "dur": 8.36
+  },
+  {
+   "story": "planets",
+   "chapter": 2,
+   "text": "Beyond Mars come the giants. Jupiter is eleven Earths wide. You could fit about thirteen hundred Earths inside it.",
+   "file": "02-08b7de9ee3.m4a",
+   "dur": 7.65
+  },
+  {
+   "story": "planets",
+   "chapter": 3,
+   "text": "That red spot on Jupiter is a storm, watched since at least 1831. It's been shrinking, but the whole Earth would still fit inside it.",
+   "file": "03-03fedf63d6.m4a",
+   "dur": 10.11
+  },
+  {
+   "story": "planets",
+   "chapter": 4,
+   "text": "Saturn's rings stretch about two hundred and seventy thousand kilometres. Yet in most places, they're only about ten metres thick.",
+   "file": "04-d14fc4cba4.m4a",
+   "dur": 8.12
+  },
+  {
+   "story": "planets",
+   "chapter": 5,
+   "text": "And the Sun? It's a hundred and nine times as wide as the Earth. More than a million Earths would fit inside it.",
+   "file": "05-0ce0eedd15.m4a",
+   "dur": 7.05
+  },
+  {
+   "story": "planets",
+   "chapter": 6,
+   "text": "In 1990, Voyager 1 looked back from six billion kilometres away. And there we are: less than a single pixel. A pale blue dot.",
+   "file": "06-be9591eb34.m4a",
+   "dur": 9.38
+  },
+  {
+   "story": "stars",
+   "chapter": 1,
+   "text": "Our nearest star, Proxima Centauri, is a red dwarf, not much wider than Jupiter. Most of the stars around us are small, cool red dwarfs like this.",
+   "file": "07-58f1327e89.m4a",
+   "dur": 10.27
+  },
+  {
+   "story": "stars",
+   "chapter": 2,
+   "text": "Sirius, the brightest star in our sky, is a little wider than the Sun. Its tiny companion is a white dwarf, about the size of the Earth.",
+   "file": "08-c16d3c2630.m4a",
+   "dur": 9.04
+  },
+  {
+   "story": "stars",
+   "chapter": 3,
+   "text": "Arcturus and Aldebaran are old stars that have swollen into giants. In about five billion years, our Sun will swell like this too.",
+   "file": "09-e216942a02.m4a",
+   "dur": 9.56
+  },
+  {
+   "story": "stars",
+   "chapter": 4,
+   "text": "Rigel, in Orion, is a blue supergiant: young, hot, and about seventy-nine times as wide as the Sun. Stars like it burn out in just a few million years.",
+   "file": "10-9a23b711df.m4a",
+   "dur": 11.78
+  },
+  {
+   "story": "stars",
+   "chapter": 5,
+   "text": "Betelgeuse is a red supergiant. Put it where the Sun is, and it would reach past the orbit of Mars. One day, both of these stars will explode.",
+   "file": "11-9c06496858.m4a",
+   "dur": 10.16
+  },
+  {
+   "story": "stars",
+   "chapter": 6,
+   "text": "This is one of the biggest stars we know: about fourteen hundred times as wide as the Sun. In our place, it would reach past Jupiter.",
+   "file": "12-d5dd36ac1f.m4a",
+   "dur": 8.39
+  },
+  {
+   "story": "stars",
+   "chapter": 7,
+   "text": "Here's every size at once, in three panels. Each dashed box is the whole of the panel before it. Go on, zoom in and take a closer look.",
+   "file": "13-0c9c157a2d.m4a",
+   "dur": 8.8
+  },
+  {
+   "story": "nearest-stars",
+   "chapter": 1,
+   "text": "These are all the stars we know of within about twelve light years of the Sun. This is our neighbourhood.",
+   "file": "14-0e222af139.m4a",
+   "dur": 5.98
+  },
+  {
+   "story": "nearest-stars",
+   "chapter": 2,
+   "text": "The closest is Proxima Centauri, four point two light years away. Even Voyager 1 would need about seventy-five thousand years to get there.",
+   "file": "15-f0b1547a5f.m4a",
+   "dur": 9.09
+  },
+  {
+   "story": "nearest-stars",
+   "chapter": 3,
+   "text": "Barnard's Star moves across our sky faster than any other star. It's getting closer, and it has at least four small planets.",
+   "file": "16-078b8ac629.m4a",
+   "dur": 8.39
+  },
+  {
+   "story": "nearest-stars",
+   "chapter": 4,
+   "text": "Sirius looks so bright because it's close, just eight point six light years away, and it's about twenty-five times as bright as the Sun.",
+   "file": "17-79df0641c2.m4a",
+   "dur": 8.59
+  },
+  {
+   "story": "nearest-stars",
+   "chapter": 5,
+   "text": "Some of our neighbours were only found recently: brown dwarfs, too small to shine like real stars. One of them is about as cold as a freezer.",
+   "file": "18-7eacc4400a.m4a",
+   "dur": 9.2
+  },
+  {
+   "story": "nearest-galaxies",
+   "chapter": 1,
+   "text": "This is our galaxy, the Milky Way, a hundred thousand light years across. The Sun takes about two hundred and thirty million years to go once around.",
+   "file": "19-86a8a9e0a6.m4a",
+   "dur": 9.74
+  },
+  {
+   "story": "nearest-galaxies",
+   "chapter": 2,
+   "text": "This little galaxy is being torn apart by ours. Its stars are stretched into a stream that loops right around the Milky Way.",
+   "file": "20-31ca11998e.m4a",
+   "dur": 8.18
+  },
+  {
+   "story": "nearest-galaxies",
+   "chapter": 3,
+   "text": "The Magellanic Clouds are two small galaxies close to ours. From the southern hemisphere, you can see them with your own eyes.",
+   "file": "21-875d436c20.m4a",
+   "dur": 8.02
+  },
+  {
+   "story": "nearest-galaxies",
+   "chapter": 4,
+   "text": "Andromeda is two and a half million light years away. The light we see from it left before our species even existed.",
+   "file": "22-4767fa43f8.m4a",
+   "dur": 7.89
+  },
+  {
+   "story": "nearest-galaxies",
+   "chapter": 5,
+   "text": "And Andromeda is heading our way. Will the two galaxies merge? Astronomers now put the chance at about one in two, within ten billion years.",
+   "file": "23-2068113188.m4a",
+   "dur": 9.98
+  },
+  {
+   "story": "nearest-galaxies",
+   "chapter": 6,
+   "text": "Together, these galaxies make up the Local Group: a family of more than eighty, and we're still finding new ones.",
+   "file": "24-5258084159.m4a",
+   "dur": 6.5
+  },
+  {
+   "story": "how-big",
+   "chapter": 1,
+   "text": "Light is the fastest thing there is. Even so, sunlight takes about eight minutes to reach us.",
+   "file": "25-6c061b15ec.m4a",
+   "dur": 6.5
+  },
+  {
+   "story": "how-big",
+   "chapter": 2,
+   "text": "To reach Neptune, the outermost planet, sunlight needs about four hours.",
+   "file": "26-6784677d99.m4a",
+   "dur": 4.78
+  },
+  {
+   "story": "how-big",
+   "chapter": 3,
+   "text": "Now zoom out to the nearest star, and the whole solar system shrinks to a dot.",
+   "file": "27-e7579bc778.m4a",
+   "dur": 4.96
+  },
+  {
+   "story": "how-big",
+   "chapter": 4,
+   "text": "Keep going, and you get the Milky Way. If you counted one star a second, a hundred billion of them would take you more than three thousand years.",
+   "file": "28-cb43c61028.m4a",
+   "dur": 8.72
+  },
+  {
+   "story": "how-big",
+   "chapter": 5,
+   "text": "Hubble stared at a tiny patch of sky that looked empty. It found about ten thousand galaxies.",
+   "file": "29-00afd2a269.m4a",
+   "dur": 6.69
+  },
+  {
+   "story": "how-big",
+   "chapter": 6,
+   "text": "And the whole universe we can see? Up to two trillion galaxies, and more stars than there are grains of sand on all the Earth's beaches.",
+   "file": "30-7d1ea918ab.m4a",
+   "dur": 7.65
+  },
+  {
+   "story": "exoplanets",
+   "chapter": 1,
+   "text": "Until 1992, we didn't know of a single planet outside our solar system. Now we know more than six thousand. Most stars have planets.",
+   "file": "31-8ac033902a.m4a",
+   "dur": 9.64
+  },
+  {
+   "story": "exoplanets",
+   "chapter": 2,
+   "text": "Most are found like this: a planet passes in front of its star, and the star's light dips, just a tiny bit.",
+   "file": "32-d68b2931bc.m4a",
+   "dur": 7.37
+  },
+  {
+   "story": "exoplanets",
+   "chapter": 3,
+   "text": "A planet also makes its star wobble. In 1995, that wobble revealed a giant planet with a year of just four days.",
+   "file": "33-28d88ef6d6.m4a",
+   "dur": 8.39
+  },
+  {
+   "story": "exoplanets",
+   "chapter": 4,
+   "text": "Trappist-1 has seven planets about the size of the Earth, and three of them could have liquid water.",
+   "file": "34-0827ea242d.m4a",
+   "dur": 6.16
+  },
+  {
+   "story": "exoplanets",
+   "chapter": 5,
+   "text": "This planet circles two stars at once. Stand on it, and you'd see two sunsets.",
+   "file": "35-8f0a08301f.m4a",
+   "dur": 5.46
+  },
+  {
+   "story": "exoplanets",
+   "chapter": 6,
+   "text": "And on this planet, one side is hot enough to boil iron. It might even rain iron on the cooler side.",
+   "file": "36-0033e7661f.m4a",
+   "dur": 6.35
+  }
+ ]
+}
