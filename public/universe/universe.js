@@ -965,7 +965,7 @@ cv.addEventListener('webglcontextlost',e=>{e.preventDefault();});
    A scene's lines are spoken one after another, like a person telling the story: a breath before the first, a short pause between them.
    Spoken lines take longer than some scenes, so while the voice is heard the film runs each such scene more slowly (NARR.rate, film seconds
    per real second) until its lines fit; muted, it keeps its own pace. The voice follows pause, play and seeking (a line picked up halfway
-   starts halfway). The last line plays over the closing slate.
+   starts halfway), and the line being spoken shows as a subtitle. The last line plays over the closing slate.
    Browsers allow sound only after the reader has clicked or tapped the page, and the film starts by itself, so the first line may be refused:
    the film then runs at its own pace, the button shows the voice as off, and the next click or tap anywhere brings it in. One audio element
    plays every line (Safari on a phone lets an element play once a tap has started it, not each new one); a second only fetches the next line */
@@ -1023,6 +1023,9 @@ function narrTick(){
       // between lines: a line that started a moment late may still be finishing its last words; let it, unless the film jumped or stopped
       if(jumped||!moving){if(!el.paused)el.pause();if(jumped)NARR.loaded=-1;}
     }
+    // the subtitle: the line the voice is on, kept while it finishes its last words, gone when it is silent or muted
+    const said=narrHeard()&&NARR.loaded>=0&&(k>=0||!el.paused)?NARR.cues[k>=0?k:NARR.loaded].text:'', sb=$('sub');
+    if(sb.textContent!==said){sb.textContent=said;sb.hidden=!said;}
   }
   requestAnimationFrame(narrTick);
 }

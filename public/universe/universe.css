@@ -203,4 +203,11 @@ body.story .scene{display:none}
 .rb.nar.ask{animation:narask 2.4s ease-in-out infinite}
 @keyframes narask{50%{box-shadow:0 0 0 6px rgba(255,210,122,.28)}}
 @media (prefers-reduced-motion:reduce){.rb.nar.ask{animation:none;box-shadow:0 0 0 3px rgba(255,210,122,.35)}}
+/* the line being spoken, as a subtitle centred above the dock (on a phone, under the top bar, clear of the scene card) */
+#sub{position:fixed;z-index:6;left:470px;right:40px;width:fit-content;max-width:720px;margin:0 auto;bottom:calc(140px + env(safe-area-inset-bottom,0px));padding:8px 16px;border-radius:12px;
+  background:rgba(4,6,12,.78);color:var(--ink);font:500 19px/1.4 var(--sans);text-align:center;text-wrap:balance;box-shadow:0 6px 24px rgba(0,0,0,.4)}
+#sub[hidden]{display:none}
+body.notext #sub{left:24px;right:24px;max-width:760px}
+body.ended #sub{top:calc(96px + env(safe-area-inset-top,0px));bottom:auto} /* over the closing slate: at the top, clear of its text */
+@media (max-width:760px){ #sub{left:16px;right:16px;max-width:none;top:calc(72px + env(safe-area-inset-top,0px));bottom:auto;font-size:16px} }
 @media (max-width:1180px) and (min-width:761px){ #bar .pillbtn{display:none} } /* Search only leads back to the atlas; the logo does too */ /* with the scene card hidden, centred on the whole picture */
